@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/SubredditHovercard.a1eea320251c84666bd9.js
-// Retrieved at 1/18/2020, 8:30:22 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 8:45:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {

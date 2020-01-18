@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5cc91befe9b5388a38a4.js
-// Retrieved at 1/18/2020, 8:30:22 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 8:45:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
