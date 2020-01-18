@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.c0e808323891f3da58b8.js
-// Retrieved at 1/18/2020, 1:45:20 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 2:00:22 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, n, o) {
