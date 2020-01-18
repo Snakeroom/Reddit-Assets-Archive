@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.117a9b61548ff5c8b895.js
-// Retrieved at 1/18/2020, 10:00:23 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 10:15:23 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
