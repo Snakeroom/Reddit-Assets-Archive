@@ -3,6 +3,3 @@
 /coins
 /premium
 /r/all
-/r/popular
-/r/aww
-/u/andytuba
