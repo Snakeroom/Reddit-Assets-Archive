@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~Reddit.9c96a3a80dacda67c077.js
-// Retrieved at 1/18/2020, 6:00:27 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 6:15:25 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/google-tag-manager/compiled.js": function(e, t, o) {
