@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Coins.60299a96836113fb4290.js
-// Retrieved at 1/17/2020, 8:55:22 PM by Reddit Dataminer v1.0.0
+// Retrieved at 1/17/2020, 9:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
