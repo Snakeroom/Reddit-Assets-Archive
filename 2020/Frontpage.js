@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Frontpage.d04b229d0dc113e04189.js
-// Retrieved at 1/18/2020, 12:30:24 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 12:45:23 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "PostDraft~RichTextEditor~StructuredStyles", "FrontpageSidebar"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
