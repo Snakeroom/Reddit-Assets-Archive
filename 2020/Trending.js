@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Trending.e19d252aaee508c9c93f.js
-// Retrieved at 1/17/2020, 8:45:21 PM by Reddit Dataminer v1.0.0
+// Retrieved at 1/17/2020, 8:50:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less": function(e, t, s) {
