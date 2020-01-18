@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e.ca3ea4da0cbaa18e947a.js
-// Retrieved at 1/17/2020, 9:00:22 PM by Reddit Dataminer v1.0.0
+// Retrieved at 1/17/2020, 9:15:21 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
