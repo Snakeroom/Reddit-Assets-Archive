@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings.bcb3e30b7cc262c73863.js
-// Retrieved at 1/18/2020, 2:45:21 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 3:00:27 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, s) {
