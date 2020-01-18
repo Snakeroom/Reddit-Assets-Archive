@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~Subreddit.4785e118bdb75b914a5d.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Subreddit"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {

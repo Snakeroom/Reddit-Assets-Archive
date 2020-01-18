@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.3df98b722f0d0f06c5b4.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {

@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.eb699e9f72509db37e05.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/reddit/components/Governance/VotingBanner/index.m.less": function(e, t, n) {
