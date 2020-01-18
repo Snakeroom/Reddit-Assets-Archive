@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Reddit.1d6ddd75e612d3f4352c.js
-// Retrieved at 1/18/2020, 1:00:22 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 1:15:22 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
