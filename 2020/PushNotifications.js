@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/PushNotifications.bcc727be3c5311eb87cf.js
-// Retrieved at 1/18/2020, 7:45:19 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 8:00:20 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
