@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/AwardTooltip.6d43bb1a1f2e3f5606ae.js
-// Retrieved at 1/18/2020, 5:45:21 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 6:00:27 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {

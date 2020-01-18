@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326.8e70670e8f5250ddf823.js
-// Retrieved at 1/18/2020, 5:45:21 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 6:00:27 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
