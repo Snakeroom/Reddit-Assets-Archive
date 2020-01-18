@@ -1,0 +1,4 @@
+/
+/rpan
+/coins
+/premium
