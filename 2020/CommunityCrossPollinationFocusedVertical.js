@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/CommunityCrossPollinationFocusedVertical.85915ceec2e128cf9e15.js
-// Retrieved at 1/18/2020, 5:15:24 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 5:30:24 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityCrossPollinationFocusedVertical"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, s) {
