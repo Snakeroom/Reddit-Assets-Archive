@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Governance~Reddit.3bcd28217a96c5293520.js
-// Retrieved at 1/18/2020, 4:00:23 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 4:15:26 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
