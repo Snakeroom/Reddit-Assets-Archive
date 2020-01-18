@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~bc44510a.a7e4df1d25079ceac148.js
-// Retrieved at 1/18/2020, 7:00:24 AM by Reddit Dataminer v1.0.0
+// Retrieved at 1/18/2020, 7:15:23 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~bc44510a"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
