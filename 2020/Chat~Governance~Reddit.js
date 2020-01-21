@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.57c674d1d5eef900cdf2.js
-// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1bd41a4c8fbdd9413fc4.js
+// Retrieved at 1/21/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -5327,29 +5327,6 @@
 								body: {
 									en: "Switching to markdown will remove any images, gifs or videos from your post."
 								}
-							},
-							currentPost: {
-								details: {
-									en: "Do you want to save a draft of your post?"
-								},
-								details2: {
-									en: "Returning to the previous page will discard your post."
-								},
-								title: {
-									en: "Save draft"
-								},
-								title2: {
-									en: "Discard Post"
-								},
-								discardPost: {
-									en: "Discard post"
-								},
-								editPost: {
-									en: "Edit post"
-								},
-								saveDraft: {
-									en: "Save draft"
-								}
 							}
 						},
 						draft: {
@@ -5961,12 +5938,6 @@
 						modBanner: {
 							title: {
 								en: "Create the ideal %{displayText} post"
-							},
-							description: {
-								en: "A post was generated using the community name and description."
-							},
-							subdescription: {
-								en: "Try creating your own!"
 							},
 							button: {
 								en: "Create Post"
@@ -12506,14 +12477,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("e680d9d-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("d9e640b-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e680d9d-production",
+						release: "d9e640b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new r.Integrations.Breadcrumbs({
@@ -13013,7 +12984,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "e680d9d-production",
+							releaseClient: "d9e640b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18663,4 +18634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.57c674d1d5eef900cdf2.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.1bd41a4c8fbdd9413fc4.js.map

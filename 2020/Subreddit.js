@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8b9ba73524c243a97aca.js
-// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d30a58866e8522dda97a.js
+// Retrieved at 1/21/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449", "PostDraft~RichTextEditor~StructuredStyles", "Explore~InFeedChaining", "Explore~ProfileSnoobuilder", "CategoriesNavigation", "GovernanceLeaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -2820,7 +2820,9 @@
 				x = s("./src/reddit/models/Toast/index.ts"),
 				y = s("./src/reddit/components/CreatePostBanner/index.m.less"),
 				f = s.n(y);
-			const v = Object(i.b)(null, (e, t) => {
+			const {
+				fbt: v
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), E = Object(i.b)(null, (e, t) => {
 				let {
 					language: s
 				} = t;
@@ -2833,7 +2835,7 @@
 					}
 				}
 			});
-			class E extends o.a.Component {
+			class O extends o.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
 						Object(p.F)(n.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
@@ -2881,11 +2883,11 @@
 						}
 					})), o.a.createElement("div", {
 						className: f.a.text
-					}, o.a.createElement(m.a, {
-						msgId: "postCreation.modBanner.description"
-					}), o.a.createElement("div", null, o.a.createElement(m.a, {
-						msgId: "postCreation.modBanner.subdescription"
-					}))), o.a.createElement("div", {
+					}, v._("Content is an important part of any new community.", null, {
+						hk: "4nsVy"
+					}), o.a.createElement("br", null), v._("Try creating your own post now!", null, {
+						hk: "1KCWqr"
+					})), o.a.createElement("div", {
 						className: f.a.buttonWrapper
 					}, o.a.createElement(u.g, {
 						className: f.a.button,
@@ -2897,7 +2899,7 @@
 					})))) : null
 				}
 			}
-			t.a = v(Object(l.b)(E))
+			t.a = E(Object(l.b)(O))
 		},
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -23868,4 +23870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.8b9ba73524c243a97aca.js.map
+//# sourceMappingURL=Subreddit.d30a58866e8522dda97a.js.map
