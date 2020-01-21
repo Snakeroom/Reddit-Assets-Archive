@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e.ebbe677fc6ed0c3017c6.js
-// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e.bbe202cf1f220554788c.js
+// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -154,7 +154,7 @@
 					}, e.children)
 				},
 				v = Object(c.c)({
-					postPermalink: b.I,
+					postPermalink: b.H,
 					shouldOpenPostInNewTab: f.W
 				}),
 				I = Object(i.b)(v);
@@ -1820,4 +1820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e.ebbe677fc6ed0c3017c6.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNot~7e52de2e.bbe202cf1f220554788c.js.map

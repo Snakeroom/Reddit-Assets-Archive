@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a27b714c0dca3ed59b6b.js
-// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1e7476ff9b953950b2be.js
+// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -6026,7 +6026,7 @@
 					isSuspended: Pt.O,
 					isFPR: Pt.H,
 					isM2MTopBannerVariant: Xl.c,
-					posts: ed.M,
+					posts: ed.L,
 					profileCollectionsEnabled: Il.a,
 					shouldRedirectToHome: e => Object(G.z)(e) && Object(Xl.d)(Object(Xl.f)(e)),
 					showAccountCompletenessBanner: e => Object(Xl.c)(e) && Object(G.k)(e),
@@ -6343,7 +6343,7 @@
 				c = s("./src/reddit/selectors/posts.ts"),
 				l = s("./src/lib/classNames/index.ts");
 			const d = Object(i.a)(() => Object(r.c)({
-					post: c.J
+					post: c.I
 				})),
 				m = e => {
 					let {
@@ -15462,8 +15462,7 @@
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = s("./src/lib/constants/index.ts"),
 				r = s("./src/reddit/actions/page.ts");
-			const o = "/rpan/:streamId?",
-				i = Object(n.a)({
+			const o = Object(n.a)({
 					resolved: {},
 					chunkName: () => "PublicAccessNetwork",
 					isReady(e) {
@@ -15483,18 +15482,18 @@
 						return "./src/reddit/pages/PublicAccessNetwork/index.tsx"
 					}
 				}),
-				c = {
+				i = {
 					action: r.F,
 					chunk: a.o.PUBLIC_ACCESS_NETWORK,
-					component: i,
+					component: o,
 					exact: !0,
 					meta: {
 						name: a.xb.PUBLIC_ACCESS_NETWORK
 					},
-					path: o,
+					path: ["/rpan/r/:subreddit/:streamId?", "/rpan/:streamId?"],
 					prefetches: [a.o.PUBLIC_ACCESS_NETWORK]
 				};
-			t.a = c
+			t.a = i
 		},
 		"./src/reddit/routes/report/index.ts": function(e, t, s) {
 			"use strict";
@@ -16123,4 +16122,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~EconHelperActions~Reddit", "vendors~Reddit", "Chat~Governance~Reddit", "Governance~Reddit", "EconHelperActions"]
 	]
 ]);
-//# sourceMappingURL=Reddit.a27b714c0dca3ed59b6b.js.map
+//# sourceMappingURL=Reddit.1e7476ff9b953950b2be.js.map

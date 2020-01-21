@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.9876c4f296d62cc744c2.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.1979663af5b03ad540a7.js
+// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@babel/runtime/helpers/esm/extends.js": function(e, t, n) {
@@ -24190,4 +24190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.9876c4f296d62cc744c2.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.1979663af5b03ad540a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a25bccf52bb97d50dc7c.js
-// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.58b3184d6d490554d342.js
+// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, s) {
@@ -110,7 +110,7 @@
 				R = s("./src/reddit/selectors/posts.ts"),
 				V = s("./src/reddit/selectors/subreddit.ts");
 			const H = Object(_.a)(T.b.Popular, C.N.TOP),
-				Q = Object(o.a)(e => Object(R.O)(e, {
+				Q = Object(o.a)(e => Object(R.N)(e, {
 					listingKey: H
 				}), e => U()(e.map(e => e.belongsTo.id))),
 				K = (Object(o.a)(e => {
@@ -129,9 +129,9 @@
 						key: s
 					})
 				}),
-				J = Object(o.a)(K, D.d);
-			var Z = s("./src/reddit/components/RailsWidgets/GeopopularPosts/index.m.less"),
-				G = s.n(Z);
+				Z = Object(o.a)(K, D.d);
+			var G = s("./src/reddit/components/RailsWidgets/GeopopularPosts/index.m.less"),
+				J = s.n(G);
 			const q = 2,
 				X = 5,
 				Y = Object(o.c)({
@@ -140,13 +140,13 @@
 					}),
 					geoObject: I.a,
 					posts: e => {
-						const t = J(e),
+						const t = Z(e),
 							s = Object(_.a)(t, C.N.HOT);
 						return Object(P.b)(e, {
 							listingKey: s
 						})
 					},
-					subredditName: J
+					subredditName: Z
 				});
 			class z extends a.a.Component {
 				constructor() {
@@ -179,7 +179,7 @@
 					}, a.a.createElement(v.a, {
 						showIcon: !0
 					}, a.a.createElement("span", {
-						className: G.a.GeoObject
+						className: J.a.GeoObject
 					}, t), a.a.createElement(E.c, null, "trends")), a.a.createElement(P.a, {
 						listingKey: r,
 						listingName: T.b.Popular,
@@ -262,7 +262,7 @@
 				xe = s.n(ge);
 			const Ee = e => e.type === he.f.Nsfw || e.type === he.f.Spoiler,
 				ke = Object(o.c)({
-					subredditOrProfile: R.U
+					subredditOrProfile: R.T
 				});
 			class ye extends a.a.PureComponent {
 				constructor() {
@@ -554,9 +554,9 @@
 				He = s("./node_modules/lodash/sampleSize.js"),
 				Qe = s.n(He),
 				Ke = s("./node_modules/request-idle-callback/index.js"),
-				Je = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				Ze = s("./src/reddit/constants/localStorage.ts"),
-				Ge = s("./src/reddit/contexts/ApiContext.tsx"),
+				Ze = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				Ge = s("./src/reddit/constants/localStorage.ts"),
+				Je = s("./src/reddit/contexts/ApiContext.tsx"),
 				qe = s("./src/reddit/featureFlags/component.tsx"),
 				Xe = s("./src/reddit/helpers/localStorage/index.ts"),
 				Ye = s("./src/lib/makeApiRequest/index.ts"),
@@ -579,13 +579,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = it.cachedData || Object(Xe.n)(Ze.B) || null;
+					let e = it.cachedData || Object(Xe.n)(Ge.B) || null;
 					if (!e || Date.now() - e.fetchedAt > rt) {
 						const t = await et(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Xe.Q)(Ze.B, e))
+						}, Object(Xe.Q)(Ge.B, e))
 					}
 					return it.cachedData = e, e ? e.subreddits : []
 				}
@@ -607,7 +607,7 @@
 						className: st.a.main
 					}, a.a.createElement("div", {
 						className: st.a.title
-					}, a.a.createElement(Je.b, {
+					}, a.a.createElement(Ze.b, {
 						className: st.a.icon
 					}), nt._("Subreddit adoption week", null, {
 						hk: "LxkrU"
@@ -624,7 +624,7 @@
 				}
 			}
 			it.cachedData = null;
-			var ct = Object(qe.a)("srAdoptionWeek", Object(Ge.b)(it)),
+			var ct = Object(qe.a)("srAdoptionWeek", Object(Je.b)(it)),
 				dt = s("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				lt = s("./src/reddit/actions/post.ts"),
 				mt = s("./src/reddit/components/MiniPost/index.tsx"),
@@ -662,7 +662,7 @@
 				Nt = s("./src/reddit/selectors/user.ts");
 			const jt = Object(o.c)({
 				language: Nt.S,
-				recentPosts: R.R
+				recentPosts: R.Q
 			});
 			var Ct = Object(r.b)(jt, (e, t) => ({
 					openLightbox: t => () => e(Object(de.a)(t.permalink))
@@ -768,9 +768,9 @@
 				Ht = s("./src/reddit/helpers/createBannerProperties/index.ts"),
 				Qt = s("./src/reddit/actions/tooltip.ts"),
 				Kt = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				Jt = s("./src/reddit/models/MonthsToMinutes/index.ts"),
-				Zt = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				Gt = s("./src/reddit/actions/subscription/index.ts"),
+				Zt = s("./src/reddit/models/MonthsToMinutes/index.ts"),
+				Gt = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				Jt = s("./src/reddit/actions/subscription/index.ts"),
 				qt = s("./src/reddit/constants/posts.ts"),
 				Xt = s("./src/reddit/helpers/trackers/monthsToMinutes.ts"),
 				Yt = s("./src/reddit/icons/svgs/Clear/index.tsx"),
@@ -794,12 +794,12 @@
 					} = this.props;
 					return t ? a.a.createElement("div", {
 						className: Object(oe.a)($t.a.container, e)
-					}, a.a.createElement(Je.b, {
+					}, a.a.createElement(Ze.b, {
 						className: $t.a.icon,
 						subredditOrProfile: t
 					}), a.a.createElement("div", {
 						className: $t.a.name
-					}, a.a.createElement(Zt.a, {
+					}, a.a.createElement(Gt.a, {
 						className: $t.a.link,
 						to: t.url,
 						onMouseDown: this.sendClickEvent
@@ -817,7 +817,7 @@
 							name: t.subredditName,
 							type: qt.a.SUBREDDIT
 						};
-						e(Object(Gt.d)([s], !1))
+						e(Object(Jt.d)([s], !1))
 					}
 				}))(Object(f.b)(ts)),
 				ns = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
@@ -830,7 +830,7 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(oe.a)(os.a.container, t)
-					}, a.a.createElement(Je.b, {
+					}, a.a.createElement(Ze.b, {
 						className: os.a.icon,
 						primaryColor: e.theme ? Object(as.a)(e).field : void 0
 					}), a.a.createElement("div", {
@@ -864,7 +864,7 @@
 						className: e,
 						onHideTooltip: t,
 						subredditNames: s
-					} = this.props, n = Jt.b - s.length;
+					} = this.props, n = Zt.b - s.length;
 					return a.a.createElement(g.a, {
 						className: e
 					}, a.a.createElement("div", {
@@ -1002,7 +1002,7 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				E = s.n(x);
-			const k = Object(o.a)(e => e, b.J, b.c, g.S, (e, t, s, n) => {
+			const k = Object(o.a)(e => e, b.I, b.c, g.S, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
@@ -1571,4 +1571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.a25bccf52bb97d50dc7c.js.map
+//# sourceMappingURL=FrontpageSidebar.58b3184d6d490554d342.js.map

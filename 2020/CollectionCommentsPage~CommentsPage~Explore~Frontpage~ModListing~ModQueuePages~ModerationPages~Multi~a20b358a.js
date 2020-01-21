@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.5638d65c23c1a21cdb17.js
-// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.ff95871913640c2e6351.js
+// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a"], {
 		"./src/lib/timezone/index.ts": function(e, t, o) {
@@ -190,7 +190,7 @@
 			})), o.d(t, "h", (function() {
 				return Z
 			})), o.d(t, "f", (function() {
-				return H
+				return Y
 			})), o.d(t, "d", (function() {
 				return ne
 			}));
@@ -246,7 +246,7 @@
 					} = r;
 					if ((await x(i(), e, t)).ok) {
 						const r = c(),
-							i = Object(k.J)(r, {
+							i = Object(k.I)(r, {
 								postId: t
 							}),
 							l = i && i.title || "",
@@ -263,7 +263,7 @@
 									collectionId: e
 								}),
 								s = o && o.postIds && o.postIds[u] || "",
-								r = Object(k.J)(t, {
+								r = Object(k.I)(t, {
 									postId: s
 								});
 							r && r.permalink && n(Object(_.a)(r.permalink))
@@ -296,7 +296,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const n = Object(k.J)(i, {
+						const n = Object(k.I)(i, {
 								postId: t
 							}),
 							c = Object(E.q)(i, {
@@ -362,10 +362,10 @@
 						}))
 					}
 					return l
-				}, V = Object(r.a)(i.l), J = Object(r.a)(i.m), Q = Object(r.a)(i.k), H = e => async (t, o) => {
+				}, V = Object(r.a)(i.l), Q = Object(r.a)(i.m), H = Object(r.a)(i.k), Y = e => async (t, o) => {
 					const s = o().platform.currentPage.locationState;
 					t(!(!s || !s[l.a.IsOverlay]) ? Object(_.a)(e.permalink) : Object(n.b)(Object(I.b)(e.permalink)))
-				}, Y = Object(r.a)(i.i), X = Object(r.a)(i.j), $ = Object(r.a)(i.h), ee = Object(r.a)(i.p), te = Object(r.a)(i.o), oe = Object(r.a)(i.q), ne = e => async t => {
+				}, J = Object(r.a)(i.i), X = Object(r.a)(i.j), $ = Object(r.a)(i.h), ee = Object(r.a)(i.p), te = Object(r.a)(i.o), oe = Object(r.a)(i.q), ne = e => async t => {
 					const o = [],
 						{
 							collectionId: n,
@@ -378,7 +378,7 @@
 						let {
 							apiContext: r
 						} = c;
-						o(Y());
+						o(J());
 						const i = await w(r(), e, t);
 						let l = !1;
 						const d = n();
@@ -402,7 +402,7 @@
 						const i = await C(r(), e, t);
 						let l = !1;
 						const d = n();
-						if (i.ok) o(J({
+						if (i.ok) o(Q({
 							collectionId: e,
 							newDescription: t
 						})), o(Object(a.e)({
@@ -411,7 +411,7 @@
 						})), l = !0;
 						else {
 							const e = i.error;
-							o(Q(e)), o(Object(a.e)({
+							o(H(e)), o(Object(a.e)({
 								kind: y.b.Error,
 								text: Object(s.a)(d.user.language, "error.type.generic")
 							}))
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.5638d65c23c1a21cdb17.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.ff95871913640c2e6351.js.map

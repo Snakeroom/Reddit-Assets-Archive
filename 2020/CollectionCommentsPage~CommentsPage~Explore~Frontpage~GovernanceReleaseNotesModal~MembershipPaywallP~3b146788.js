@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.242cbcb1f4ac9e4a92c2.js
-// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.77222bc99ee6bd3d33a1.js
+// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -1405,7 +1405,7 @@
 					metadata: D.g,
 					muxSamplingAVariant: k,
 					muxSamplingBVariant: N,
-					postUrl: A.L,
+					postUrl: A.K,
 					started: D.i,
 					volume: j.b
 				}), (e, t) => {
@@ -2222,4 +2222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.242cbcb1f4ac9e4a92c2.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.77222bc99ee6bd3d33a1.js.map
