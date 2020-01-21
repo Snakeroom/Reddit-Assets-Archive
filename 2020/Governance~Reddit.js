@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4e56830a904c5bac0307.js
-// Retrieved at 1/21/2020, 11:10:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c3fbe69240b651447c63.js
+// Retrieved at 1/21/2020, 2:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -8121,7 +8121,7 @@
 							routes: i
 						} = s;
 						const c = r();
-						Object($e.a)(e, i, c) ? n(Object(o.b)(e)) : t ? Object(V.c)(e, "_blank") : window.location.assign(e)
+						Object($e.a)(e, i, c) ? n(Object(o.b)(e)) : t ? Object(V.d)(e, "_blank") : window.location.assign(e)
 					}
 				},
 				Vt = "PAGE__FRONTPAGE_PENDING",
@@ -23372,7 +23372,7 @@
 					return a = Object.assign({}, a, {
 						href: d,
 						rel: l.a,
-						target: l.b.BLANK
+						target: l.c.BLANK
 					}), !o || (e => {
 						const {
 							outboundUrlCreated: t,
@@ -64458,4 +64458,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.4e56830a904c5bac0307.js.map
+//# sourceMappingURL=Governance~Reddit.c3fbe69240b651447c63.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4b5461024b81e692a36a.js
-// Retrieved at 1/21/2020, 11:10:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.215fed1bc09d895c253b.js
+// Retrieved at 1/21/2020, 2:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -12506,14 +12506,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("2521e6e-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("7bf9491-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2521e6e-production",
+						release: "7bf9491-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new r.Integrations.Breadcrumbs({
@@ -13013,7 +13013,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "2521e6e-production",
+							releaseClient: "7bf9491-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -13452,10 +13452,12 @@
 		},
 		"./src/lib/opener/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "c", (function() {
 				return n
+			})), i.d(t, "b", (function() {
+				return l
 			})), i.d(t, "a", (function() {
-				return r
+				return a
 			}));
 			const n = {
 					SELF: "_self",
@@ -13463,9 +13465,13 @@
 					PARENT: "_parent",
 					TOP: "_top"
 				},
-				s = "noreferrer",
-				r = "".concat("noopener", " ").concat(s);
-			t.c = function(e) {
+				s = "noopener",
+				r = "noreferrer",
+				o = "nofollow",
+				d = "ugc",
+				l = "".concat(s, " ").concat(r),
+				a = "".concat(s, " ").concat(r, " ").concat(o, " ").concat(d);
+			t.d = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : n.SELF,
 					i = arguments.length > 2 ? arguments[2] : void 0;
 				if (t === n.BLANK) {
@@ -18656,4 +18662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.4b5461024b81e692a36a.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.215fed1bc09d895c253b.js.map

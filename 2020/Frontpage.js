@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.16ba100f7fddd355733f.js
-// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e8320877cef261ce0048.js
+// Retrieved at 1/21/2020, 2:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "PostDraft~RichTextEditor~StructuredStyles", "FrontpageSidebar"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -8851,7 +8851,7 @@
 					const s = "click-".concat(e);
 					let n = V.get(s);
 					return void 0 === n && (n = (e, s) => {
-						s.isSponsored && Object(N.a)(s.events, O.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(g.c)(s.source.outboundUrl, g.b.BLANK) : t.openPost({
+						s.isSponsored && Object(N.a)(s.events, O.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(g.d)(s.source.outboundUrl, g.c.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(w.a)(e)
 						})
@@ -9931,7 +9931,7 @@
 				ne = b.a.wrapped(N.a, "PostContainer", G.a),
 				re = 640,
 				oe = (e, t) => {
-					Object(I.a)(t.events, _.a.Click), t.source ? t.source.outboundUrl ? Object(S.c)(t.source.outboundUrl, S.b.BLANK) : Object(S.c)(t.source.url, S.b.BLANK) : Object(S.c)(t.permalink, S.b.BLANK)
+					Object(I.a)(t.events, _.a.Click), t.source ? t.source.outboundUrl ? Object(S.d)(t.source.outboundUrl, S.c.BLANK) : Object(S.d)(t.source.url, S.c.BLANK) : Object(S.d)(t.permalink, S.c.BLANK)
 				},
 				ae = e => Object(B.a)(e.title, 100),
 				ie = e => {
@@ -14073,4 +14073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.16ba100f7fddd355733f.js.map
+//# sourceMappingURL=Frontpage.e8320877cef261ce0048.js.map
