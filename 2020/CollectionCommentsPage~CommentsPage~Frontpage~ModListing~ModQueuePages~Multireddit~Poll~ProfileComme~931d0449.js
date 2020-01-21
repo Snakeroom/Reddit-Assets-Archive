@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.0280721216bb8f847994.js
-// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.6671c99a7ec6e025238f.js
+// Retrieved at 1/21/2020, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -57,8 +57,8 @@
 				_ = Object(r.a)(v.s),
 				L = Object(r.a)(v.t),
 				N = Object(r.a)(v.u),
-				T = Object(r.a)(v.v),
-				w = Object(r.a)(v.w),
+				w = Object(r.a)(v.v),
+				T = Object(r.a)(v.w),
 				M = Object(r.a)(v.x),
 				R = Object(r.a)(v.y),
 				B = (e, t) => async (s, n, r) => {
@@ -133,9 +133,9 @@
 					let {
 						apiContext: r
 					} = n;
-					t(w());
+					t(T());
 					const o = await Object(m.a)(r(), e);
-					o.ok ? t(M(o.body)) : t(T({
+					o.ok ? t(M(o.body)) : t(w({
 						error: o.error
 					}))
 				}, H = (e, t) => async (s, r, o) => {
@@ -238,8 +238,8 @@
 					shouldOpenPostInNewTab: v.W,
 					subreddit: g.U
 				}),
-				T = Object(o.b)(N);
-			t.a = T(e => {
+				w = Object(o.b)(N);
+			t.a = w(e => {
 				const {
 					className: t,
 					isCurrentUserProfilePost: s,
@@ -262,13 +262,13 @@
 					d = t;
 				return o && !o.media ? r.a.createElement(k, {
 					className: d
-				}, r.a.createElement(_, null, r.a.createElement(E, null, r.a.createElement(m.a, i)), w(o), o.source && r.a.createElement(b.a, {
+				}, r.a.createElement(_, null, r.a.createElement(E, null, r.a.createElement(m.a, i)), T(o), o.source && r.a.createElement(b.a, {
 					post: o
 				}), R(e)), A(e)) : r.a.createElement(h, {
 					className: d
-				}, r.a.createElement(E, null, r.a.createElement(m.a, i)), w(o), M(e), R(e))
+				}, r.a.createElement(E, null, r.a.createElement(m.a, i)), T(o), M(e), R(e))
 			});
-			const w = e => r.a.createElement(S, {
+			const T = e => r.a.createElement(S, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
@@ -385,10 +385,10 @@
 				_ = s("./src/reddit/icons/svgs/Automoderator/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				N = s("./src/reddit/components/PostBadges/index.m.less"),
-				T = s.n(N);
+				w = s.n(N);
 
-			function w() {
-				return (w = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -396,8 +396,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = e => r.a.createElement("span", w({
-					className: T.a.removalReason
+			const M = e => r.a.createElement("span", T({
+					className: w.a.removalReason
 				}, e), e.children),
 				R = Object(d.e)("posts.archived"),
 				B = Object(d.e)("modTools.commentsLocked"),
@@ -467,104 +467,104 @@
 				return r.a.createElement("div", {
 					className: t
 				}, i && s && W.distinguishType === u.B.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(L.a, {
-					className: T.a.modIcon,
+					className: w.a.modIcon,
 					desc: A(y, {
 						displayText: s
 					}),
 					id: Y,
 					onMouseEnter: D(Y),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: Y,
 					text: A(y, {
 						displayText: s
 					})
 				}, q))), W.isArchived && r.a.createElement(n.Fragment, null, r.a.createElement(E.a, {
-					className: T.a.archivedIcon,
+					className: w.a.archivedIcon,
 					desc: R(y),
 					id: z,
 					onMouseEnter: D(z),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: z,
 					text: R(y)
 				}, q))), W.isLocked && r.a.createElement(n.Fragment, null, r.a.createElement(S.a, {
-					className: T.a.lockIcon,
+					className: w.a.lockIcon,
 					desc: B(y),
 					id: Q,
 					onMouseEnter: D(Q),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: Q,
 					text: B(y)
 				}, q))), o && Object(j.k)(W) && !d && r.a.createElement(n.Fragment, null, r.a.createElement(k.a, {
-					className: T.a.stickyIcon,
+					className: w.a.stickyIcon,
 					desc: F(y),
 					id: se,
 					onMouseEnter: D(se),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: se,
 					text: F(y)
 				}, q))), g && m && r.a.createElement(n.Fragment, null, r.a.createElement(k.a, {
-					className: T.a.stickyIcon,
+					className: w.a.stickyIcon,
 					desc: H(y),
 					id: ne,
 					onMouseEnter: D(ne),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: ne,
 					text: H(y)
 				}, q))), (W.isApproved || W.approvedBy) && r.a.createElement(n.Fragment, null, r.a.createElement(h.a, {
-					className: T.a.approveIcon,
+					className: w.a.approveIcon,
 					desc: Object(O.a)(y, W),
 					id: X,
 					onMouseEnter: D(X),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: X,
 					text: Object(O.a)(y, W)
 				}, q))), Object(v.a)(W) && r.a.createElement(n.Fragment, null, r.a.createElement(I.a, {
-					className: T.a.removeIcon,
+					className: w.a.removeIcon,
 					desc: Object(O.c)(y, W),
 					id: $,
 					onMouseEnter: D($),
 					onMouseLeave: U
 				}), V && r.a.createElement(b.a, {
-					className: T.a.addRemovalReason,
+					className: w.a.addRemovalReason,
 					onClick: J,
 					text: Object(c.c)("Add a removal reason")
 				}), (W.modRemovalReason || W.modNote) && r.a.createElement(M, {
 					onMouseEnter: D($),
 					onMouseLeave: U
-				}, r.a.createElement(a.c, null, "Removal reason")), r.a.createElement(p.c, w({
+				}, r.a.createElement(a.c, null, "Removal reason")), r.a.createElement(p.c, T({
 					tooltipId: $,
 					text: Object(O.c)(y, W)
 				}, q))), W.bannedBy && W.isSpam && r.a.createElement(n.Fragment, null, r.a.createElement(C.a, {
-					className: T.a.spamIcon,
+					className: w.a.spamIcon,
 					desc: Object(O.e)(y, W),
 					id: te,
 					onMouseEnter: D(te),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: te,
 					text: Object(O.e)(y, W)
 				}, q))), ("AutoModerator" === W.approvedBy || "AutoModerator" === W.bannedBy) && r.a.createElement(n.Fragment, null, r.a.createElement(_.a, {
-					className: Object(l.a)(T.a.automoderator, !!W.bannedBy && T.a.isRemoved),
+					className: Object(l.a)(w.a.automoderator, !!W.bannedBy && w.a.isRemoved),
 					desc: Object(O.b)(y),
 					id: K,
 					onMouseEnter: D(K),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: K,
 					text: Object(O.b)(y)
 				}, q))), Object(f.a)(W) && !N && r.a.createElement(n.Fragment, null, r.a.createElement(P.a, {
-					className: T.a.reportIcon,
+					className: w.a.reportIcon,
 					desc: Object(O.d)(y, W.numReports),
 					id: ee,
 					onMouseEnter: D(ee),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, T({
 					tooltipId: ee,
 					text: Object(O.d)(y, W.numReports)
 				}, q))))
@@ -1137,7 +1137,7 @@
 				o = s("./src/reddit/selectors/platform.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			const c = new Set(["pollstest", "whatssnoo"]),
-				i = new Set([""]),
+				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
 				d = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: a.J,
 					experimentName: n.bb
@@ -1298,4 +1298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.0280721216bb8f847994.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.6671c99a7ec6e025238f.js.map

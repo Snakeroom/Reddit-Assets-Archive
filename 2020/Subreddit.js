@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b876ae7d5d9fec78cf28.js
-// Retrieved at 1/21/2020, 2:10:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c3105fa0638c3bc8224a.js
+// Retrieved at 1/21/2020, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449", "PostDraft~RichTextEditor~StructuredStyles", "Explore~InFeedChaining", "Explore~ProfileSnoobuilder", "CategoriesNavigation", "GovernanceLeaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -23273,7 +23273,7 @@
 				a = s("./src/reddit/selectors/platform.ts"),
 				o = s("./src/reddit/selectors/user.ts");
 			const i = new Set(["pollstest", "whatssnoo"]),
-				c = new Set([""]),
+				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
 				d = e => i.has((Object(a.e)(e) || "").toLowerCase()) || c.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.J,
 					experimentName: n.bb
@@ -23446,4 +23446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.b876ae7d5d9fec78cf28.js.map
+//# sourceMappingURL=Subreddit.c3105fa0638c3bc8224a.js.map
