@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d04b229d0dc113e04189.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.16ba100f7fddd355733f.js
+// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "PostDraft~RichTextEditor~StructuredStyles", "FrontpageSidebar"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -6564,7 +6564,7 @@
 						showEditFlair: me,
 						subredditOrProfile: ue,
 						userIsOp: he
-					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], xe = ge ? void 0 : p, ye = Object(d.a)(Z), fe = X && ye, ve = Object(c.a)(Z), Oe = Object(F.c)(ce), Ce = !!ce.media && ce.media.type === h.n.RTJSON, je = he && Ce, Se = s ? s - V.a : void 0, we = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Ne = !(v && O), _e = (e => e === re.kb.OnlyTitles)(de) && !Object(se.a)(ce), Pe = (e => e === re.kb.MediumHeight)(de) && !Object(se.a)(ce), ke = (e => {
+					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], xe = ge ? void 0 : p, ye = Object(d.a)(Z), fe = X && ye, ve = Object(c.a)(Z), Oe = Object(F.c)(ce), Ce = !!ce.media && ce.media.type === h.n.RTJSON, je = he && Ce, Se = s ? s - V.a : void 0, we = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Ne = !(v && O), _e = (e => e === re.jb.OnlyTitles)(de) && !Object(se.a)(ce), Pe = (e => e === re.jb.MediumHeight)(de) && !Object(se.a)(ce), ke = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -13884,7 +13884,7 @@
 			const T = 44,
 				I = "home-left-category-tooltip",
 				L = Object(a.a)(e => Object(C.t)(e, {
-					categoriesOrder: g.Y
+					categoriesOrder: g.X
 				}), e => e.map(e => Object.assign({
 					anchorProps: {
 						rel: "nofollow"
@@ -14056,7 +14056,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Sb)(t)
+				return !!t && !Object(n.Rb)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -14073,4 +14073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.d04b229d0dc113e04189.js.map
+//# sourceMappingURL=Frontpage.16ba100f7fddd355733f.js.map

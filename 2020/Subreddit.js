@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4f722c65e6c3ed6ba83b.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1bba71084119c4bc3972.js
+// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449", "PostDraft~RichTextEditor~StructuredStyles", "Explore~InFeedChaining", "Explore~ProfileSnoobuilder", "CategoriesNavigation", "GovernanceLeaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -1006,7 +1006,7 @@
 				le = s.n(de);
 			const me = Object(o.c)({
 					categories: (e, t) => {
-						const s = Object(w.a)(e, t) ? U.Y : void 0;
+						const s = Object(w.a)(e, t) ? U.X : void 0;
 						return Object(G.t)(e, {
 							categoriesOrder: s
 						})
@@ -4237,9 +4237,9 @@
 				x = s("./src/reddit/constants/experiments.ts"),
 				y = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				f = s("./src/reddit/selectors/user.ts");
-			const v = e => Object(f.G)(e) || x.Fb.ShowTopContent === Object(y.c)(e, {
+			const v = e => Object(f.G)(e) || x.Eb.ShowTopContent === Object(y.c)(e, {
 				experimentEligibilitySelector: y.a,
-				experimentName: x.Ab
+				experimentName: x.zb
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				C = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -9477,7 +9477,7 @@
 						showEditFlair: me,
 						subredditOrProfile: pe,
 						userIsOp: he
-					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], xe = ge ? void 0 : u, ye = Object(d.a)(Y), ve = X && ye, Ee = Object(c.a)(Y), Ce = Object(F.c)(ce), Oe = !!ce.media && ce.media.type === h.n.RTJSON, je = he && Oe, Se = s ? s - W.a : void 0, we = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Ne = !(E && C), _e = (e => e === re.kb.OnlyTitles)(de) && !Object(se.a)(ce), Pe = (e => e === re.kb.MediumHeight)(de) && !Object(se.a)(ce), Ie = (e => {
+					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], xe = ge ? void 0 : u, ye = Object(d.a)(Y), ve = X && ye, Ee = Object(c.a)(Y), Ce = Object(F.c)(ce), Oe = !!ce.media && ce.media.type === h.n.RTJSON, je = he && Oe, Se = s ? s - W.a : void 0, we = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Ne = !(E && C), _e = (e => e === re.jb.OnlyTitles)(de) && !Object(se.a)(ce), Pe = (e => e === re.jb.MediumHeight)(de) && !Object(se.a)(ce), Ie = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -23087,7 +23087,7 @@
 			const k = 44,
 				L = "home-left-category-tooltip",
 				T = Object(o.a)(e => Object(O.t)(e, {
-					categoriesOrder: g.Y
+					categoriesOrder: g.X
 				}), e => e.map(e => Object.assign({
 					anchorProps: {
 						rel: "nofollow"
@@ -23259,7 +23259,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Sb)(t)
+				return !!t && !Object(n.Rb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
@@ -23276,8 +23276,8 @@
 				c = new Set([""]),
 				d = e => i.has((Object(a.e)(e) || "").toLowerCase()) || c.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.J,
-					experimentName: n.cb
-				}) === n.jb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -23446,4 +23446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.4f722c65e6c3ed6ba83b.js.map
+//# sourceMappingURL=Subreddit.1bba71084119c4bc3972.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.3df98b722f0d0f06c5b4.js
-// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.242cbcb1f4ac9e4a92c2.js
+// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -847,19 +847,19 @@
 			const k = e => {
 					const t = Object(F.c)(e, {
 						experimentEligibilitySelector: F.a,
-						experimentName: B.Z
+						experimentName: B.Y
 					});
-					return Object(B.Sb)(t) ? void 0 : t
+					return Object(B.Rb)(t) ? void 0 : t
 				},
-				O = e => e === B.bb.On,
+				O = e => e === B.ab.On,
 				N = e => {
 					const t = Object(F.c)(e, {
 						experimentEligibilitySelector: F.a,
-						experimentName: B.ab
+						experimentName: B.Z
 					});
-					return Object(B.Sb)(t) ? void 0 : t
+					return Object(B.Rb)(t) ? void 0 : t
 				},
-				R = e => e === B.bb.On;
+				R = e => e === B.ab.On;
 			var j = s("./src/reddit/selectors/media.ts"),
 				H = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/reddit/selectors/posts.ts"),
@@ -2222,4 +2222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.3df98b722f0d0f06c5b4.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~MembershipPaywallP~3b146788.242cbcb1f4ac9e4a92c2.js.map

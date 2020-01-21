@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1d6ddd75e612d3f4352c.js
-// Retrieved at 1/18/2020, 12:30:29 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a27b714c0dca3ed59b6b.js
+// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -10919,9 +10919,9 @@
 				Te = s("./src/reddit/constants/experiments.ts"),
 				Le = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				Re = s("./src/reddit/selectors/user.ts");
-			const Fe = e => Object(Re.G)(e) || Te.Ob.Treatment1 === Object(Le.c)(e, {
+			const Fe = e => Object(Re.G)(e) || Te.Nb.Treatment1 === Object(Le.c)(e, {
 				experimentEligibilitySelector: Le.a,
-				experimentName: Te.Lb
+				experimentName: Te.Kb
 			});
 			var Ae = s("./src/reddit/selectors/platform.ts"),
 				De = s("./src/reddit/selectors/searchResults.ts"),
@@ -13950,8 +13950,8 @@
 			const jn = {
 					displayDelay: 15,
 					displayOnRoutes: [f.xb.SUBREDDIT, f.xb.COMMENTS],
-					experimentName: yn.O,
-					experimentVariant: yn.V.On,
+					experimentName: yn.N,
+					experimentVariant: yn.U.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -15977,8 +15977,8 @@
 					experimentEligibilitySelector: e => !e.user.temporaryGQL.isLoggedIn,
 					experimentName: a.x
 				}), o.a),
-				c = e => e === a.P.TopBanner || e === a.P.All,
-				l = e => e === a.P.SortView || e === a.P.All
+				c = e => e === a.O.TopBanner || e === a.O.All,
+				l = e => e === a.O.SortView || e === a.O.All
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
@@ -15988,9 +15988,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.G)(e) || !(n.Nb.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.G)(e) || !(n.Mb.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Kb
+				experimentName: n.Jb
 			}))
 		},
 		"./src/reddit/selectors/index.ts": function(e, t, s) {
@@ -16123,4 +16123,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~EconHelperActions~Reddit", "vendors~Reddit", "Chat~Governance~Reddit", "Governance~Reddit", "EconHelperActions"]
 	]
 ]);
-//# sourceMappingURL=Reddit.1d6ddd75e612d3f4352c.js.map
+//# sourceMappingURL=Reddit.a27b714c0dca3ed59b6b.js.map

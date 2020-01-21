@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.3ad797d23d89ea81596a.js
-// Retrieved at 1/18/2020, 1:16:30 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.70ecb7d9a4d8e1860299.js
+// Retrieved at 1/21/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Explore~ProfileSnoobuilder", "PostDraft~ProfileSnoobuilder"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -4028,7 +4028,7 @@
 						showEditFlair: me,
 						subredditOrProfile: ue,
 						userIsOp: he
-					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ge = xe ? void 0 : p, ve = Object(d.a)(Y), fe = X && ve, Ee = Object(c.a)(Y), ye = Object(A.c)(ce), Ce = !!ce.media && ce.media.type === h.n.RTJSON, we = he && Ce, je = s ? s - V.a : void 0, Se = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Pe = !(E && y), Ie = (e => e === ne.kb.OnlyTitles)(de) && !Object(se.a)(ce), Ne = (e => e === ne.kb.MediumHeight)(de) && !Object(se.a)(ce), _e = (e => {
+					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ge = xe ? void 0 : p, ve = Object(d.a)(Y), fe = X && ve, Ee = Object(c.a)(Y), ye = Object(A.c)(ce), Ce = !!ce.media && ce.media.type === h.n.RTJSON, we = he && Ce, je = s ? s - V.a : void 0, Se = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Pe = !(E && y), Ie = (e => e === ne.jb.OnlyTitles)(de) && !Object(se.a)(ce), Ne = (e => e === ne.jb.MediumHeight)(de) && !Object(se.a)(ce), _e = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -11495,7 +11495,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.a
 				});
-				return !!t && !Object(o.Sb)(t)
+				return !!t && !Object(o.Rb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/goldAwardedCommentHighlight.ts": function(e, t, s) {
@@ -11511,7 +11511,7 @@
 					experimentEligibilitySelector: e => Object(r.J)(e),
 					experimentName: o.E
 				});
-				return Object(o.Sb)(t) ? void 0 : t
+				return Object(o.Rb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/goldProfileGildedAwards.ts": function(e, t, s) {
@@ -11525,9 +11525,9 @@
 			const a = e => !!(e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(r.J)(e),
-					experimentName: o.I
+					experimentName: o.H
 				});
-				return Object(o.Sb)(t) ? void 0 : t
+				return Object(o.Rb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -11540,9 +11540,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.ib
+					experimentName: o.hb
 				});
-				return Object(o.Sb)(t) ? void 0 : t
+				return Object(o.Rb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, s) {
@@ -11575,4 +11575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.3ad797d23d89ea81596a.js.map
+//# sourceMappingURL=ProfileOverview.70ecb7d9a4d8e1860299.js.map
