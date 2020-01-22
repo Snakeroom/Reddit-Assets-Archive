@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326.8e70670e8f5250ddf823.js
-// Retrieved at 1/18/2020, 1:07:53 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326.96820e23ce137d88dfdc.js
+// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -155,8 +155,8 @@
 				onLoadRichTextContentIfNeeded: t => e(Object(N.r)(t))
 			}))(W);
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function B() {
+				return (B = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -164,7 +164,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var B = function(e, t) {
+			var D = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -185,7 +185,7 @@
 						isTitleOnly: l,
 						postId: c,
 						showFull: h
-					} = e, p = B(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
+					} = e, p = D(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
 					const m = {
 							[P.a.richTextContainerFull]: h,
 							[P.a.richTextContainerTitleOnly]: l && !h,
@@ -194,7 +194,7 @@
 						u = {};
 					h || (u.maxHeight = "".concat(l ? I.l : n ? I.k : I.j, "px")), o && (u.maxWidth = "".concat(M.e, "px"));
 					const g = a && h;
-					return r.a.createElement("div", D({
+					return r.a.createElement("div", B({
 						className: Object(S.a)(m, i),
 						style: u
 					}, p), s, g && r.a.createElement(F, {
@@ -204,8 +204,8 @@
 					}))
 				},
 				V = s("./src/lib/intersectionObserver/index.ts"),
-				H = s("./src/reddit/i18n/components.tsx"),
-				_ = s("./src/reddit/i18n/utils.ts"),
+				_ = s("./src/reddit/i18n/components.tsx"),
+				H = s("./src/reddit/i18n/utils.ts"),
 				k = s("./src/reddit/components/Media/TwitterEmbed/index.m.less"),
 				A = s.n(k);
 
@@ -220,8 +220,8 @@
 			}
 			const G = 350,
 				z = 100,
-				J = 300;
-			class Q extends r.a.Component {
+				Q = 300;
+			class q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						isFullyLoaded: !1
@@ -251,7 +251,7 @@
 						title: n
 					} = this.props, {
 						isFullyLoaded: a
-					} = this.state, d = s.height || (t.isDeleted ? z : J);
+					} = this.state, d = s.height || (t.isDeleted ? z : Q);
 					return r.a.createElement(O.a, U({}, s, {
 						alwaysWrapMedia: !0,
 						height: d,
@@ -259,7 +259,7 @@
 						width: G
 					}), e && r.a.createElement(r.a.Fragment, null, (!s.height || !a) && (t.isDeleted ? r.a.createElement("p", {
 						className: A.a.tweetDeleted
-					}, Object(_.c)("This Tweet has been deleted.")) : r.a.createElement("div", {
+					}, Object(H.c)("This Tweet has been deleted.")) : r.a.createElement("div", {
 						className: Object(S.a)(Object(j.a)({
 							isLoading: !0
 						}), A.a.tweetPlaceholder)
@@ -280,12 +280,12 @@
 						width: G
 					}), s.isListing && d > I.i && r.a.createElement("div", {
 						className: A.a.seeMore
-					}, r.a.createElement(H.c, null, "see full tweet"))))
+					}, r.a.createElement(_.c, null, "see full tweet"))))
 				}
 			}
-			var X = s("./src/reddit/components/Media/VideoBox/index.tsx"),
+			var J = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				Y = s("./src/reddit/components/PlayButton/index.tsx"),
-				q = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				X = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				K = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				Z = s("./src/reddit/components/RawHTMLDisplay/index.tsx");
 
@@ -313,7 +313,7 @@
 					} = e, s = ee(e, ["flairStyleTemplate"]);
 					return r.a.createElement(Z.a, $({
 						style: {
-							color: Object(K.a)(Object(q.a)(Object.assign({
+							color: Object(K.a)(Object(X.a)(Object.assign({
 								flairStyleTemplate: t
 							}, s)))
 						}
@@ -653,14 +653,14 @@
 							height: T,
 							width: P
 						},
-						D = Object.assign({}, F, {
+						B = Object.assign({}, F, {
 							className: e,
 							forceAspectRatio: i,
 							viewportWidth: S
 						}),
-						B = this.shouldBlur(),
+						D = this.shouldBlur(),
 						V = !(!m.isSponsored || !m.source);
-					if (j && B) return r.a.createElement(O.a, fe({}, D, {
+					if (j && D) return r.a.createElement(O.a, fe({}, B, {
 						blurSrc: j
 					}), r.a.createElement(Ce, {
 						isVisible: b
@@ -674,7 +674,7 @@
 						isVideoThumbnail: !!m.media && m.media.type === I.n.VIDEO,
 						onClick: this.onImageBoxClick,
 						postId: m.id,
-						shouldBlur: B,
+						shouldBlur: D,
 						source: j,
 						outboundUrl: V && m.source.outboundUrl || void 0,
 						originalSource: N
@@ -725,7 +725,7 @@
 							}
 							return null;
 						case I.n.EMBED:
-							return this.props.isMiniCard && m.preview && m.preview.url ? r.a.createElement(O.a, fe({}, D, {
+							return this.props.isMiniCard && m.preview && m.preview.url ? r.a.createElement(O.a, fe({}, B, {
 								alwaysWrapMedia: !0
 							}), r.a.createElement(Ce, {
 								isVisible: b
@@ -739,18 +739,18 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								postId: m.id,
-								shouldBlur: B,
+								shouldBlur: D,
 								source: m.preview.url,
 								originalSource: m.preview.url
-							})), r.a.createElement(Y.a, null)))) : I.h.has(m.media.provider) ? m.media.provider === I.t.Twitter ? r.a.createElement(Q, {
+							})), r.a.createElement(Y.a, null)))) : I.h.has(m.media.provider) ? m.media.provider === I.t.Twitter ? r.a.createElement(q, {
 								canLoadContent: b,
 								embedBoxChildRef: this.storeChildRef,
 								media: m.media,
-								mediaContainerProps: D,
+								mediaContainerProps: B,
 								onIframeLoaded: this.onIframeLoaded,
 								source: N,
 								title: m.title
-							}) : r.a.createElement(O.a, fe({}, D, {
+							}) : r.a.createElement(O.a, fe({}, B, {
 								alwaysWrapMedia: !0,
 								height: n ? T : I.i,
 								width: n ? P : I.i * (16 / 9)
@@ -765,7 +765,7 @@
 								showFull: g,
 								source: N,
 								title: m.title
-							})) : r.a.createElement(O.a, fe({}, D, {
+							})) : r.a.createElement(O.a, fe({}, B, {
 								alwaysWrapMedia: !0
 							}), b && r.a.createElement(C.a, fe({}, F, {
 								isResponsive: n || m.media.provider === I.t.IFrameEmbed,
@@ -778,11 +778,11 @@
 						case I.n.GIFVIDEO: {
 							let e = T,
 								t = P;
-							return e > I.i && (t = P / T * (e = I.i)), r.a.createElement(O.a, fe({}, D, {
+							return e > I.i && (t = P / T * (e = I.i)), r.a.createElement(O.a, fe({}, B, {
 								blurSrc: W ? m.media.gifBackgroundImage : void 0
 							}), r.a.createElement(Ce, {
 								isVisible: b
-							}, r.a.createElement(X.a, fe({}, F, {
+							}, r.a.createElement(J.a, fe({}, F, {
 								isNotCardView: d,
 								height: n ? void 0 : e,
 								width: n ? void 0 : t,
@@ -795,7 +795,7 @@
 						}
 						case I.n.VIDEO: {
 							const e = m.media.posterUrl || m.preview && m.preview.url;
-							return this.props.isMiniCard && e ? r.a.createElement(O.a, fe({}, D, {
+							return this.props.isMiniCard && e ? r.a.createElement(O.a, fe({}, B, {
 								alwaysWrapMedia: !0
 							}), r.a.createElement(Ce, {
 								isVisible: b
@@ -809,10 +809,10 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								postId: m.id,
-								shouldBlur: B,
+								shouldBlur: D,
 								source: e,
 								originalSource: e
-							})), r.a.createElement(Y.a, null)))) : r.a.createElement(O.a, fe({}, D, {
+							})), r.a.createElement(Y.a, null)))) : r.a.createElement(O.a, fe({}, B, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), b && r.a.createElement(v.b, {
@@ -836,7 +836,7 @@
 							const f = this.state.viewportHeight - 2 * we,
 								E = this.state.viewportWidth - 2 * we;
 							let S = N;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(c.a)(m.thumbnail.url) ? S = m.thumbnail.url : m.preview && Object(c.a)(m.preview.url) && (S = m.preview.url)), r.a.createElement(O.a, fe({}, D, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(c.a)(m.thumbnail.url) ? S = m.thumbnail.url : m.preview && Object(c.a)(m.preview.url) && (S = m.preview.url)), r.a.createElement(O.a, fe({}, B, {
 								blurSrc: W ? S : void 0,
 								isExpando: !!n
 							}), r.a.createElement(Ce, {
@@ -853,7 +853,7 @@
 								maxHeight: n ? f : void 0,
 								maxWidth: n ? E : void 0,
 								postId: m.id,
-								shouldBlur: B,
+								shouldBlur: D,
 								source: S,
 								outboundUrl: V && m.source.outboundUrl || void 0,
 								originalSource: m.media.content
@@ -878,7 +878,37 @@
 				const t = e && e.media;
 				return !!t && (t.type === i.n.TEXT && !!t.content || t.type === i.n.RTJSON && !Object(o.F)(t.richtextContent))
 			}
+		},
+		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, s) {
+			e.exports = {
+				loadingBackground: "fzTkuBRFT8iIn1XnJX_Yn",
+				"m-loading": "_34yMY7-6MNnz3utfjExvIq",
+				mLoading: "_34yMY7-6MNnz3utfjExvIq",
+				gradientAnimation: "vnt666wwqSK5qL63sBn9P",
+				loadingBar: "_3giTODNeZ-Po90u8Ghs4aI",
+				loadingContainer: "VRC9QT7CgUxvhK0ceQSrn"
+			}
+		},
+		"./src/reddit/helpers/styles/mixins/loading.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			})), s.d(t, "b", (function() {
+				return r
+			}));
+			var i = s("./src/lib/classNames/index.ts"),
+				o = s("./src/reddit/helpers/styles/mixins/loading.m.less"),
+				n = s.n(o);
+			const a = e => {
+					let {
+						isLoading: t
+					} = e;
+					return Object(i.a)(n.a.loadingBackground, {
+						[n.a["m-loading"]]: t
+					})
+				},
+				r = e => Object(i.a)(n.a.loadingBar, a(e))
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326.8e70670e8f5250ddf823.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueu~c06ba326.96820e23ce137d88dfdc.js.map

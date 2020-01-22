@@ -6,3 +6,5 @@
 /r/popular
 /r/aww
 /u/andytuba
+/r/datamine/about/edit
+/r/aww/wiki/index
