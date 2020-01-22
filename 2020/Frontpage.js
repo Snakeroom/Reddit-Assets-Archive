@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4b89a4eb59bcdb3137d6.js
-// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.13447a3cc3b533d5bc6a.js
+// Retrieved at 1/22/2020, 1:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "PostDraft~RichTextEditor~StructuredStyles", "FrontpageSidebar"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -4765,9 +4765,7 @@
 				let {
 					isLoading: t
 				} = e;
-				return r.a.createElement(m, {
-					className: c.a.container
-				}, r.a.createElement(l, {
+				return r.a.createElement(m, null, r.a.createElement(l, {
 					gradientType: "posts",
 					isLoading: t,
 					className: c.a.banner
@@ -6072,7 +6070,6 @@
 		},
 		"./src/reddit/components/IdCard/placeholder.m.less": function(e, t, s) {
 			e.exports = {
-				container: "_3Tqjvz23rS-5hNHwFjEkoG",
 				banner: "c_dVyWK3BXRxSN3ULLJ_t",
 				title: "_1OQL3FCA9BfgI57ghHHgV3",
 				icon: "_33jgwegeMTJ-FJaaHMeOjV",
@@ -6090,7 +6087,8 @@
 				Shimmer: "_3640Mx-3jD362-XXyVwXur",
 				shimmer: "_3640Mx-3jD362-XXyVwXur",
 				gradientAnimation: "_3XkHjK4wMgxtjzC1TvoXrb",
-				Container: "_3Tqjvz23rS-5hNHwFjEkoG"
+				Container: "_3Tqjvz23rS-5hNHwFjEkoG",
+				container: "_3Tqjvz23rS-5hNHwFjEkoG"
 			}
 		},
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, s) {
@@ -14500,4 +14498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.4b89a4eb59bcdb3137d6.js.map
+//# sourceMappingURL=Frontpage.13447a3cc3b533d5bc6a.js.map
