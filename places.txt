@@ -8,3 +8,6 @@
 /u/andytuba
 /r/datamine/about/edit
 /r/aww/wiki/index
+/settings
+/message/inbox
+/submit
