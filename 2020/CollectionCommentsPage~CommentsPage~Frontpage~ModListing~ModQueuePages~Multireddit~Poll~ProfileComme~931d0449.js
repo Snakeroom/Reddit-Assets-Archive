@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.c3fa71c6aee2ec842886.js
-// Retrieved at 1/21/2020, 5:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.2194f5b8c6fbced987d6.js
+// Retrieved at 1/22/2020, 12:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -56,9 +56,9 @@
 				k = Object(r.a)(v.r),
 				_ = Object(r.a)(v.s),
 				L = Object(r.a)(v.t),
-				N = Object(r.a)(v.u),
+				w = Object(r.a)(v.u),
 				T = Object(r.a)(v.v),
-				w = Object(r.a)(v.w),
+				N = Object(r.a)(v.w),
 				M = Object(r.a)(v.x),
 				R = Object(r.a)(v.y),
 				B = (e, t) => async (s, n, r) => {
@@ -114,7 +114,7 @@
 					}));
 					if (p.ok) {
 						const c = r().user.language;
-						s(N(Object.assign({}, p.body, {
+						s(w(Object.assign({}, p.body, {
 							subredditId: e.subredditId
 						}))), s(Object(i.e)({
 							kind: b.b.SuccessCommunity,
@@ -133,7 +133,7 @@
 					let {
 						apiContext: r
 					} = n;
-					t(w());
+					t(N());
 					const o = await Object(m.a)(r(), e);
 					o.ok ? t(M(o.body)) : t(T({
 						error: o.error
@@ -231,14 +231,14 @@
 				k = j.a.wrapped(h, "LinkContainer", f.a),
 				_ = j.a.div("Content", f.a),
 				L = j.a.div("ThumbnailContainer", f.a),
-				N = Object(c.c)({
+				w = Object(c.c)({
 					isCurrentUserProfilePost: g.h,
 					language: v.S,
 					post: g.I,
 					shouldOpenPostInNewTab: v.W,
 					subreddit: g.T
 				}),
-				T = Object(o.b)(N);
+				T = Object(o.b)(w);
 			t.a = T(e => {
 				const {
 					className: t,
@@ -262,13 +262,13 @@
 					d = t;
 				return o && !o.media ? r.a.createElement(k, {
 					className: d
-				}, r.a.createElement(_, null, r.a.createElement(E, null, r.a.createElement(m.a, i)), w(o), o.source && r.a.createElement(b.a, {
+				}, r.a.createElement(_, null, r.a.createElement(E, null, r.a.createElement(m.a, i)), N(o), o.source && r.a.createElement(b.a, {
 					post: o
 				}), R(e)), A(e)) : r.a.createElement(h, {
 					className: d
-				}, r.a.createElement(E, null, r.a.createElement(m.a, i)), w(o), M(e), R(e))
+				}, r.a.createElement(E, null, r.a.createElement(m.a, i)), N(o), M(e), R(e))
 			});
-			const w = e => r.a.createElement(S, {
+			const N = e => r.a.createElement(S, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
@@ -384,11 +384,11 @@
 				k = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				_ = s("./src/reddit/icons/svgs/Automoderator/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				N = s("./src/reddit/components/PostBadges/index.m.less"),
-				T = s.n(N);
+				w = s("./src/reddit/components/PostBadges/index.m.less"),
+				T = s.n(w);
 
-			function w() {
-				return (w = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -396,7 +396,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = e => r.a.createElement("span", w({
+			const M = e => r.a.createElement("span", N({
 					className: T.a.removalReason
 				}, e), e.children),
 				R = Object(d.e)("posts.archived"),
@@ -443,7 +443,7 @@
 					isPinned: m,
 					isProfilePostListing: g,
 					language: y,
-					modModeEnabled: N,
+					modModeEnabled: w,
 					onHideTooltip: U,
 					onOpenRemovalReasonModal: D,
 					onShowTooltip: J,
@@ -474,7 +474,7 @@
 					id: Y,
 					onMouseEnter: J(Y),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: Y,
 					text: A(y, {
 						displayText: s
@@ -485,7 +485,7 @@
 					id: z,
 					onMouseEnter: J(z),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: z,
 					text: R(y)
 				}, q))), W.isLocked && r.a.createElement(n.Fragment, null, r.a.createElement(S.a, {
@@ -494,7 +494,7 @@
 					id: Q,
 					onMouseEnter: J(Q),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: Q,
 					text: B(y)
 				}, q))), o && Object(j.k)(W) && !d && r.a.createElement(n.Fragment, null, r.a.createElement(k.a, {
@@ -503,7 +503,7 @@
 					id: se,
 					onMouseEnter: J(se),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: se,
 					text: F(y)
 				}, q))), g && m && r.a.createElement(n.Fragment, null, r.a.createElement(k.a, {
@@ -512,7 +512,7 @@
 					id: ne,
 					onMouseEnter: J(ne),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: ne,
 					text: H(y)
 				}, q))), (W.isApproved || W.approvedBy) && r.a.createElement(n.Fragment, null, r.a.createElement(h.a, {
@@ -521,7 +521,7 @@
 					id: X,
 					onMouseEnter: J(X),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: X,
 					text: Object(O.a)(y, W)
 				}, q))), Object(v.a)(W) && r.a.createElement(n.Fragment, null, r.a.createElement(I.a, {
@@ -537,7 +537,7 @@
 				}), (W.modRemovalReason || W.modNote) && r.a.createElement(M, {
 					onMouseEnter: J($),
 					onMouseLeave: U
-				}, r.a.createElement(a.c, null, "Removal reason")), r.a.createElement(p.c, w({
+				}, r.a.createElement(a.c, null, "Removal reason")), r.a.createElement(p.c, N({
 					tooltipId: $,
 					text: Object(O.c)(y, W)
 				}, q))), W.bannedBy && W.isSpam && r.a.createElement(n.Fragment, null, r.a.createElement(C.a, {
@@ -546,7 +546,7 @@
 					id: te,
 					onMouseEnter: J(te),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: te,
 					text: Object(O.e)(y, W)
 				}, q))), ("AutoModerator" === W.approvedBy || "AutoModerator" === W.bannedBy) && r.a.createElement(n.Fragment, null, r.a.createElement(_.a, {
@@ -555,16 +555,16 @@
 					id: K,
 					onMouseEnter: J(K),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: K,
 					text: Object(O.b)(y)
-				}, q))), Object(f.a)(W) && !N && r.a.createElement(n.Fragment, null, r.a.createElement(P.a, {
+				}, q))), Object(f.a)(W) && !w && r.a.createElement(n.Fragment, null, r.a.createElement(P.a, {
 					className: T.a.reportIcon,
 					desc: Object(O.d)(y, W.numReports),
 					id: ee,
 					onMouseEnter: J(ee),
 					onMouseLeave: U
-				}), r.a.createElement(p.c, w({
+				}), r.a.createElement(p.c, N({
 					tooltipId: ee,
 					text: Object(O.d)(y, W.numReports)
 				}, q))))
@@ -1130,6 +1130,8 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return d
+			})), s.d(t, "b", (function() {
+				return l
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/constants/experiments.ts"),
@@ -1138,7 +1140,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const c = new Set(["pollstest", "whatssnoo"]),
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
-				d = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
+				d = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
+				l = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: a.J,
 					experimentName: n.bb
 				}) === n.ib.Enabled
@@ -1146,59 +1149,60 @@
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return l
-			})), s.d(t, "c", (function() {
 				return u
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "c", (function() {
 				return m
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return p
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "e", (function() {
 				return b
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "g", (function() {
 				return x
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "h", (function() {
 				return g
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "i", (function() {
 				return v
-			})), s.d(t, "o", (function() {
+			})), s.d(t, "j", (function() {
 				return O
-			})), s.d(t, "p", (function() {
+			})), s.d(t, "o", (function() {
 				return f
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "p", (function() {
 				return j
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "n", (function() {
 				return y
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return h
-			})), s.d(t, "s", (function() {
+			})), s.d(t, "l", (function() {
 				return E
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "s", (function() {
 				return S
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "a", (function() {
 				return I
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "f", (function() {
 				return P
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "q", (function() {
 				return C
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "m", (function() {
 				return k
+			})), s.d(t, "r", (function() {
+				return _
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				r = s("./src/reddit/endpoints/governance/crypto.ts"),
 				o = s("./src/reddit/featureFlags/index.ts"),
-				a = s("./src/reddit/selectors/experiments/pollsGA.ts");
-			const c = [],
-				i = {},
-				d = {
+				a = s("./src/reddit/selectors/experiments/pollsGA.ts"),
+				c = s("./src/reddit/selectors/postCreations.ts");
+			const i = [],
+				d = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				},
-				l = (e, t) => {
+				u = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					const n = E(e, {
+					const n = S(e, {
 						subredditId: s
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.harberger ? n.extra.contracts.harberger : {
@@ -1209,24 +1213,27 @@
 						token: void 0
 					}
 				},
-				u = (e, t) => {
-					const s = y(e, t);
+				m = (e, t) => {
+					const s = h(e, t);
 					if (s) return s.mainHeader
 				},
-				m = (e, t) => {
-					const s = y(e, t);
+				p = (e, t) => {
+					const s = h(e, t);
 					return s && s.mainHeader ? s.mainHeader.price : "0"
 				},
-				p = (e, t) => {
-					const s = y(e, t);
+				b = (e, t) => {
+					const s = h(e, t);
 					return s && s.mainHeader ? {
 						owner: s.mainHeader.owner,
 						ownerId: s.mainHeader.ownerId
-					} : i
+					} : d
 				},
-				b = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				x = (e, t) => {
-					if (Object(a.a)(e)) return !0;
+				x = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				g = (e, t) => {
+					if (Object(a.b)(e)) {
+						const t = Object(c.g)(e);
+						return !!t.allowedPostTypes && t.allowedPostTypes.polls
+					}
 					const s = o.d.spPolls(e) || o.d.spKarmaPoints(e),
 						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (n) {
@@ -1235,37 +1242,37 @@
 					}
 					return s
 				},
-				g = (e, t) => {
+				v = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				v = (e, t) => {
+				O = (e, t) => {
 					const s = Object(n.m)(e, t);
-					return s && e.subreddits.gov.releaseNotes[s] || c
+					return s && e.subreddits.gov.releaseNotes[s] || i
 				},
-				O = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				f = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || d,
-				j = (e, t) => {
-					const s = P(e, t);
+				f = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
+				y = (e, t) => {
+					const s = C(e, t);
 					return s && s.decimals ? "1" + "0".repeat(s.decimals) : "1"
 				},
-				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				h = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				E = (e, t) => {
-					const s = h(e, t);
+				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				E = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				S = (e, t) => {
+					const s = E(e, t);
 					return s && s.walletProvider
 				},
-				S = (e, t) => {
-					const s = E(e, t),
-						n = h(e, t);
+				I = (e, t) => {
+					const s = S(e, t),
+						n = E(e, t);
 					return s && s.provider || n && n.provider
 				},
-				I = (e, t) => {
-					const s = S(e, t);
+				P = (e, t) => {
+					const s = I(e, t);
 					return s === r.a.Ethereum || s === r.a.Rinkeby
 				},
-				P = (e, t) => {
-					const s = E(e, t),
-						n = S(e, t);
+				C = (e, t) => {
+					const s = S(e, t),
+						n = I(e, t);
 					if (s && !s.inTransition && n === r.a.Stellar) return {
 						address: s.extra && s.extra.issuerAddress || "",
 						decimals: s.extra && s.extra.decimals || 7,
@@ -1280,22 +1287,22 @@
 						image: a.image
 					}
 				},
-				C = (e, t) => {
+				k = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					const n = E(e, {
+					const n = S(e, {
 						subredditId: s
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.subscriptions ? n.extra.contracts.subscriptions : {
 						address: void 0
 					}
 				},
-				k = (e, t) => {
-					const s = h(e, t);
+				_ = (e, t) => {
+					const s = E(e, t);
 					return !!s && !!s.walletProvider && !s.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.c3fa71c6aee2ec842886.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~931d0449.2194f5b8c6fbced987d6.js.map
