@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.15a3da95851c4c7ee34c.js
-// Retrieved at 1/22/2020, 12:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d57c989645e729563320.js
+// Retrieved at 1/22/2020, 12:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -46268,24 +46268,24 @@
 			const yf = e => {
 				const {
 					options: t,
-					userSelection: n
+					totalVoteCount: n,
+					userSelection: r
 				} = e;
-				let r = 0;
 				return {
 					options: t.reduce((e, t) => {
 						let {
-							id: s,
-							voteCount: o
+							id: n,
+							voteCount: s
 						} = t;
-						return r += o, Object.assign({}, e, {
-							[s.toString()]: {
-								id: s,
-								votes: (o || 0).toString(),
-								userSelected: s === n
+						return Object.assign({}, e, {
+							[n.toString()]: {
+								id: n,
+								votes: (s || 0).toString(),
+								userSelected: n === r
 							}
 						})
 					}, {}),
-					totalVotes: (r || 0).toString()
+					totalVotes: n.toString()
 				}
 			};
 			var _f = e => {
@@ -64678,4 +64678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.15a3da95851c4c7ee34c.js.map
+//# sourceMappingURL=Governance~Reddit.d57c989645e729563320.js.map
