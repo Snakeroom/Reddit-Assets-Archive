@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3a1c7da81b855d642731.js
-// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.453b264ba2e580d43152.js
+// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "GovernanceLeaderboard"], {
 		"./node_modules/lodash/orderBy.js": function(e, t, s) {
@@ -2457,12 +2457,12 @@
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js");
 			t.a = Object(n.a)({
 				resolved: {},
-				chunkName: () => "reddit-components-IdCard",
+				chunkName: () => "IdCard",
 				isReady(e) {
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => s.e("reddit-components-IdCard").then(s.bind(null, "./src/reddit/components/IdCard/index.tsx")),
+				importAsync: () => s.e("IdCard").then(s.bind(null, "./src/reddit/components/IdCard/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -3737,7 +3737,11 @@
 						redditStyle: u
 					}, i.a.createElement(Oe, {
 						"data-before-content": Object(o.a)("en", "sidebar.sponsored")
-					}))) : b ? i.a.createElement(me.a, null, i.a.createElement(k, null)) : fe(s) ? i.a.createElement(me.a, null, i.a.createElement(le, {
+					}))) : b ? i.a.createElement(me.a, null, i.a.createElement(ke, {
+						className: e,
+						contentOnly: !0,
+						redditStyle: u
+					}, i.a.createElement(k, null))) : fe(s) ? i.a.createElement(me.a, null, i.a.createElement(le, {
 						post: s,
 						refreshKey: a,
 						listingName: d,
@@ -5199,7 +5203,7 @@
 						subredditName: s
 					} = t;
 					return {
-						loadMorePosts: () => e(Object(me.u)({
+						loadMorePosts: () => e(Object(me.r)({
 							sort: c.N.TOP,
 							subredditName: s,
 							t: c.Ob.WEEK
@@ -8822,4 +8826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.3a1c7da81b855d642731.js.map
+//# sourceMappingURL=SubredditWiki.453b264ba2e580d43152.js.map

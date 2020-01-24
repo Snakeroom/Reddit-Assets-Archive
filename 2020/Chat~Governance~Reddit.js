@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08b4717283953f167021.js
-// Retrieved at 1/22/2020, 4:50:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7eb8d89cbc2975967649.js
+// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3256,14 +3256,6 @@
 						}
 					},
 					error: l.a,
-					events: {
-						eventStartedSuccessfully: {
-							en: "Following event has started successfully: %{title}"
-						},
-						eventTimeUpdatedSuccessfully: {
-							en: "Following event time is updated successfully: %{title}"
-						}
-					},
 					euCookiePolicy: {
 						buttonText: {
 							en: "I Agree"
@@ -12512,14 +12504,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d1e99aa-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("63b92e8-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d1e99aa-production",
+						release: "63b92e8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new r.Integrations.Breadcrumbs({
@@ -13019,7 +13011,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "d1e99aa-production",
+							releaseClient: "63b92e8-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -14979,12 +14971,14 @@
 		},
 		"./src/reddit/models/NewStructuredStyles/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
-				return y
+			i.d(t, "d", (function() {
+				return u
+			})), i.d(t, "c", (function() {
+				return f
 			})), i.d(t, "a", (function() {
-				return T
-			})), i.d(t, "b", (function() {
 				return S
+			})), i.d(t, "b", (function() {
+				return F
 			}));
 			var n = i("./node_modules/polished/dist/polished.es.js"),
 				s = i("./src/reddit/models/Theme/NewColorSystem/index.ts"),
@@ -15023,7 +15017,9 @@
 					pageHeader: "#0079D3",
 					postFlairText: "#1A1A1B"
 				},
-				a = Object.assign({}, l, {
+				a = (e, t, i) => Object(n.d)(i, (e => e ? "#FFFFFF" : "#000000")(t), e),
+				u = (e, t) => a(e, t, .2),
+				c = Object.assign({}, l, {
 					actionIconAlpha50: Object(n.j)(l.actionIcon, .5),
 					actionIconShaded80: Object(n.l)(.8, l.actionIcon),
 					bodyAlpha50: Object(n.j)(l.body, .5),
@@ -15043,7 +15039,7 @@
 					linkTextWithBody: Object(n.d)(.75, l.linkText, l.body),
 					navIconFaded10: Object(n.j)(l.navIcon, .1)
 				}),
-				u = {
+				m = {
 					downvote: r.a.downvote,
 					downvoteShaded80: Object(n.l)(.8, r.a.downvote),
 					downvoteTinted80: Object(n.m)(.8, r.a.downvote),
@@ -15051,7 +15047,7 @@
 					upvoteShaded80: Object(n.l)(.8, r.a.upvote),
 					upvoteTinted80: Object(n.m)(.8, r.a.upvote)
 				},
-				c = {
+				h = {
 					active: "#24A0ED",
 					banner: {
 						backgroundColor: "#24A0ED",
@@ -15085,7 +15081,7 @@
 						backgroundColor: "#24A0ED",
 						backgroundImage: void 0,
 						hoverLink: d.highlight,
-						inactiveLink: a.inactive,
+						inactiveLink: c.inactive,
 						inactiveSubmenuCaret: Object(n.k)(.6, "#24A0ED"),
 						inactiveSubmenuLink: Object(n.k)(.6, "#24A0ED"),
 						submenuBackgroundColor: Object(n.k)(.93, "#24A0ED"),
@@ -15094,7 +15090,7 @@
 					post: "#FFFFFF",
 					postFlairText: "#1A1A1B",
 					titleText: "#1A1A1B",
-					voteText: Object.assign({}, u, {
+					voteText: Object.assign({}, m, {
 						base: "#878A8C"
 					}),
 					voteIcons: {
@@ -15105,6 +15101,7 @@
 					},
 					widgetColors: {
 						sidebarWidgetBackgroundColor: "#FFFFFF",
+						sidebarWidgetBorderColor: u("#FFFFFF", !1),
 						sidebarWidgetHeaderColor: "#FFFFFF",
 						sidebarWidgetHeaderColorAlpha60: Object(n.j)("#FFFFFF", .6),
 						sidebarWidgetTextColor: "#1A1A1B",
@@ -15113,26 +15110,26 @@
 						lineColor: Object(s.b)("#1A1A1B")
 					}
 				},
-				m = Object.assign({}, c, {
-					postTransparent20: Object(n.o)(.2, c.post),
-					postError: Object(n.d)(.1, "#FF0000", c.post),
-					activeAlpha10: Object(n.j)(c.active, .1),
-					activeAlpha50: Object(n.j)(c.active, .5),
-					activeLight60: Object(n.k)(.6, c.active),
-					activeTinted05: Object(n.m)(.05, c.active),
-					buttonAlpha05: Object(n.j)(c.button, .05),
-					buttonAlpha10: Object(n.j)(c.button, .1),
-					buttonAlpha20: Object(n.j)(c.button, .2),
-					buttonAlpha40: Object(n.j)(c.button, .4),
-					buttonAlpha50: Object(n.j)(c.button, .5),
-					buttonAlpha80: Object(n.j)(c.button, .8),
-					buttonShaded80: Object(n.l)(.8, c.button),
-					buttonTinted20: Object(n.m)(.2, c.button),
-					buttonTinted50: Object(n.m)(.5, c.button),
-					buttonTinted80: Object(n.m)(.8, c.button),
-					postTinted20: Object(n.m)(.2, c.post)
+				p = Object.assign({}, h, {
+					postTransparent20: Object(n.o)(.2, h.post),
+					postError: Object(n.d)(.1, "#FF0000", h.post),
+					activeAlpha10: Object(n.j)(h.active, .1),
+					activeAlpha50: Object(n.j)(h.active, .5),
+					activeLight60: Object(n.k)(.6, h.active),
+					activeTinted05: Object(n.m)(.05, h.active),
+					buttonAlpha05: Object(n.j)(h.button, .05),
+					buttonAlpha10: Object(n.j)(h.button, .1),
+					buttonAlpha20: Object(n.j)(h.button, .2),
+					buttonAlpha40: Object(n.j)(h.button, .4),
+					buttonAlpha50: Object(n.j)(h.button, .5),
+					buttonAlpha80: Object(n.j)(h.button, .8),
+					buttonShaded80: Object(n.l)(.8, h.button),
+					buttonTinted20: Object(n.m)(.2, h.button),
+					buttonTinted50: Object(n.m)(.5, h.button),
+					buttonTinted80: Object(n.m)(.8, h.button),
+					postTinted20: Object(n.m)(.2, h.post)
 				}),
-				h = {
+				_ = {
 					actionIcon: "#818384",
 					body: "#1A1A1B",
 					bodyFade: "#1A1A1B00",
@@ -15164,7 +15161,7 @@
 					postLine: "#343536",
 					report: "#1C1402",
 					titleText: "#D7DADC",
-					voteText: Object.assign({}, u, {
+					voteText: Object.assign({}, m, {
 						base: "#818384"
 					}),
 					voteIcons: {
@@ -15175,6 +15172,7 @@
 					},
 					widgetColors: {
 						sidebarWidgetBackgroundColor: "#1A1A1B",
+						sidebarWidgetBorderColor: u("#1A1A1B", !0),
 						sidebarWidgetHeaderColor: "#1A1A1B",
 						sidebarWidgetHeaderColorAlpha60: Object(n.j)("#1A1A1B", .6),
 						sidebarWidgetTextColor: "#D7DADC",
@@ -15183,46 +15181,46 @@
 						lineColor: "#343536"
 					}
 				},
-				p = Object.assign({}, h, {
-					actionIconAlpha50: Object(n.j)(h.actionIcon, .5),
-					actionIconShaded80: Object(n.l)(.8, h.actionIcon),
-					bodyAlpha50: Object(n.j)(h.body, .5),
-					bodyAlpha80: Object(n.j)(h.body, .8),
-					bodyShaded80: Object(n.l)(.8, h.body),
-					bodyTinted50: Object(n.m)(.5, h.body),
-					bodyTinted80: Object(n.m)(.8, h.body),
-					bodyTextAlpha03: Object(n.j)(h.bodyText, .03),
-					bodyTextAlpha20: Object(n.j)(h.bodyText, .2),
-					bodyTextShaded20: Object(n.l)(.2, h.bodyText),
-					bodyTextTinted20: Object(n.m)(.2, h.bodyText),
-					buttonAlpha05: Object(n.j)(h.button, .05),
-					buttonAlpha10: Object(n.j)(h.button, .1),
-					buttonAlpha20: Object(n.j)(h.button, .2),
-					buttonAlpha40: Object(n.j)(h.button, .4),
-					buttonAlpha50: Object(n.j)(h.button, .5),
-					buttonAlpha80: Object(n.j)(h.button, .8),
-					buttonShaded80: Object(n.l)(.8, h.button),
-					buttonTinted20: Object(n.m)(.2, h.button),
-					buttonTinted50: Object(n.m)(.5, h.button),
-					buttonTinted80: Object(n.m)(.8, h.button),
+				g = Object.assign({}, _, {
+					actionIconAlpha50: Object(n.j)(_.actionIcon, .5),
+					actionIconShaded80: Object(n.l)(.8, _.actionIcon),
+					bodyAlpha50: Object(n.j)(_.body, .5),
+					bodyAlpha80: Object(n.j)(_.body, .8),
+					bodyShaded80: Object(n.l)(.8, _.body),
+					bodyTinted50: Object(n.m)(.5, _.body),
+					bodyTinted80: Object(n.m)(.8, _.body),
+					bodyTextAlpha03: Object(n.j)(_.bodyText, .03),
+					bodyTextAlpha20: Object(n.j)(_.bodyText, .2),
+					bodyTextShaded20: Object(n.l)(.2, _.bodyText),
+					bodyTextTinted20: Object(n.m)(.2, _.bodyText),
+					buttonAlpha05: Object(n.j)(_.button, .05),
+					buttonAlpha10: Object(n.j)(_.button, .1),
+					buttonAlpha20: Object(n.j)(_.button, .2),
+					buttonAlpha40: Object(n.j)(_.button, .4),
+					buttonAlpha50: Object(n.j)(_.button, .5),
+					buttonAlpha80: Object(n.j)(_.button, .8),
+					buttonShaded80: Object(n.l)(.8, _.button),
+					buttonTinted20: Object(n.m)(.2, _.button),
+					buttonTinted50: Object(n.m)(.5, _.button),
+					buttonTinted80: Object(n.m)(.8, _.button),
 					lightTextAlpha75: Object(n.j)("#FFFFFF", .75),
-					navIconFaded10: Object(n.j)(h.navIcon, .1),
-					linkTextAlpha80: Object(n.j)(h.linkText, .5),
-					linkTextShaded80: Object(n.l)(.8, h.linkText),
-					linkTextTinted80: Object(n.m)(.8, h.linkText),
-					linkTextWithBody: Object(n.d)(.75, h.linkText, h.body),
-					postTransparent20: Object(n.o)(.2, h.post),
-					postError: Object(n.d)(.1, "#FF0000", h.post),
-					postTinted20: Object(n.m)(.2, h.post)
+					navIconFaded10: Object(n.j)(_.navIcon, .1),
+					linkTextAlpha80: Object(n.j)(_.linkText, .5),
+					linkTextShaded80: Object(n.l)(.8, _.linkText),
+					linkTextTinted80: Object(n.m)(.8, _.linkText),
+					linkTextWithBody: Object(n.d)(.75, _.linkText, _.body),
+					postTransparent20: Object(n.o)(.2, _.post),
+					postError: Object(n.d)(.1, "#FF0000", _.post),
+					postTinted20: Object(n.m)(.2, _.post)
 				}),
-				_ = {
-					lineShadedNinety: Object(n.l)(.9, p.line),
-					primaryButtonShadedEighty: Object(n.l)(.8, p.button),
-					primaryButtonTintedEighty: Object(n.m)(.8, p.button),
-					primaryButtonTintedSixty: Object(n.m)(.6, p.button),
-					primaryButtonTintedFifty: Object(n.m)(.5, p.button)
+				w = {
+					lineShadedNinety: Object(n.l)(.9, g.line),
+					primaryButtonShadedEighty: Object(n.l)(.8, g.button),
+					primaryButtonTintedEighty: Object(n.m)(.8, g.button),
+					primaryButtonTintedSixty: Object(n.m)(.6, g.button),
+					primaryButtonTintedFifty: Object(n.m)(.5, g.button)
 				},
-				g = {
+				y = {
 					active: "#0079D3",
 					banner: {
 						backgroundColor: "#24A0ED",
@@ -15255,68 +15253,67 @@
 						useOverlay: !1
 					}
 				},
-				w = Object.assign({}, g, {
-					activeAlpha10: Object(n.j)(g.active, .1),
-					activeAlpha50: Object(n.j)(g.active, .1),
-					activeLight60: Object(n.k)(.6, g.active),
-					activeTinted05: Object(n.m)(.05, g.active)
+				v = Object.assign({}, y, {
+					activeAlpha10: Object(n.j)(y.active, .1),
+					activeAlpha50: Object(n.j)(y.active, .1),
+					activeLight60: Object(n.k)(.6, y.active),
+					activeTinted05: Object(n.m)(.05, y.active)
 				}),
-				y = (e, t, i) => i ? v(e) : f(e, t),
-				v = e => Object.assign({}, S, {
-					activeAlpha10: e.active ? Object(n.j)(e.active, .1) : w.activeAlpha10,
-					activeAlpha50: e.active ? Object(n.j)(e.active, .5) : w.activeAlpha50,
-					activeLight60: e.active ? Object(n.k)(.6, e.active) : w.activeLight60,
-					activeTinted05: e.active ? Object(n.m)(.05, e.active) : w.activeTinted05,
-					banner: e.banner || w.banner,
-					navBar: e.navBar || w.navBar
+				f = (e, t, i) => i ? b(e) : T(e, t),
+				b = e => Object.assign({}, F, {
+					activeAlpha10: e.active ? Object(n.j)(e.active, .1) : v.activeAlpha10,
+					activeAlpha50: e.active ? Object(n.j)(e.active, .5) : v.activeAlpha50,
+					activeLight60: e.active ? Object(n.k)(.6, e.active) : v.activeLight60,
+					activeTinted05: e.active ? Object(n.m)(.05, e.active) : v.activeTinted05,
+					banner: e.banner || v.banner,
+					navBar: e.navBar || v.navBar
 				}),
-				f = (e, t) => {
+				T = (e, t) => {
 					let i;
 					if (e.post) {
-						const s = b(e.post, !1, .89);
-						(i = Object.assign({}, a, t, e, {
+						const s = a(e.post, !1, .89);
+						(i = Object.assign({}, c, t, e, {
 							bodyText: s,
 							bodyTextAlpha03: Object(n.j)(s, .03),
 							bodyTextAlpha20: Object(n.j)(s, .2),
 							bodyTextShaded20: Object(n.l)(.2, s),
 							bodyTextTinted20: Object(n.m)(.2, s),
-							activeAlpha10: e.active ? Object(n.j)(e.active, .1) : m.activeAlpha10,
-							activeAlpha50: e.active ? Object(n.j)(e.active, .5) : m.activeAlpha50,
-							activeLight60: e.active ? Object(n.k)(.6, e.active) : m.activeLight60,
-							activeTinted05: e.active ? Object(n.m)(.05, e.active) : m.activeTinted05,
-							buttonAlpha05: e.button ? Object(n.j)(e.button, .05) : m.buttonAlpha05,
-							buttonAlpha10: e.button ? Object(n.j)(e.button, .1) : m.buttonAlpha10,
-							buttonAlpha20: e.button ? Object(n.j)(e.button, .2) : m.buttonAlpha20,
-							buttonAlpha40: e.button ? Object(n.j)(e.button, .4) : m.buttonAlpha40,
-							buttonAlpha50: e.button ? Object(n.j)(e.button, .5) : m.buttonAlpha50,
-							buttonAlpha80: e.button ? Object(n.j)(e.button, .8) : m.buttonAlpha80,
-							buttonShaded80: e.button ? Object(n.l)(.8, e.button) : m.buttonShaded80,
-							buttonTinted20: e.button ? Object(n.m)(.2, e.button) : c.button,
-							buttonTinted50: e.button ? Object(n.m)(.5, e.button) : m.buttonTinted50,
-							buttonTinted80: e.button ? Object(n.m)(.8, e.button) : m.buttonTinted80,
-							metaText: b(e.post, !1, .51),
-							placeholder: b(e.post, !1, .16),
+							activeAlpha10: e.active ? Object(n.j)(e.active, .1) : p.activeAlpha10,
+							activeAlpha50: e.active ? Object(n.j)(e.active, .5) : p.activeAlpha50,
+							activeLight60: e.active ? Object(n.k)(.6, e.active) : p.activeLight60,
+							activeTinted05: e.active ? Object(n.m)(.05, e.active) : p.activeTinted05,
+							buttonAlpha05: e.button ? Object(n.j)(e.button, .05) : p.buttonAlpha05,
+							buttonAlpha10: e.button ? Object(n.j)(e.button, .1) : p.buttonAlpha10,
+							buttonAlpha20: e.button ? Object(n.j)(e.button, .2) : p.buttonAlpha20,
+							buttonAlpha40: e.button ? Object(n.j)(e.button, .4) : p.buttonAlpha40,
+							buttonAlpha50: e.button ? Object(n.j)(e.button, .5) : p.buttonAlpha50,
+							buttonAlpha80: e.button ? Object(n.j)(e.button, .8) : p.buttonAlpha80,
+							buttonShaded80: e.button ? Object(n.l)(.8, e.button) : p.buttonShaded80,
+							buttonTinted20: e.button ? Object(n.m)(.2, e.button) : h.button,
+							buttonTinted50: e.button ? Object(n.m)(.5, e.button) : p.buttonTinted50,
+							buttonTinted80: e.button ? Object(n.m)(.8, e.button) : p.buttonTinted80,
+							metaText: a(e.post, !1, .51),
+							placeholder: a(e.post, !1, .16),
 							postError: Object(n.d)(.1, "#FF0000", e.post),
-							postIcon: b(e.post, !1, .46),
-							postLine: b(e.post, !1, .2),
+							postIcon: a(e.post, !1, .46),
+							postLine: a(e.post, !1, .2),
 							postTransparent20: Object(n.o)(.2, e.post),
 							postTinted20: Object(n.m)(.2, e.post),
 							report: Object(n.d)(.1, "#FFB000", e.post)
-						})).voteText.base = b(e.post, !1, .46), e.active ? i.highlight = Object(n.d)(.1, e.active, e.post) : i.highlight = b(e.post, !1, .1)
-					} else(i = Object.assign({}, e, a, {
-						active: m.active,
-						postTransparent20: Object(n.o)(.2, m.post),
-						postError: Object(n.d)(.1, "#FF0000", m.post),
-						activeAlpha10: m.activeAlpha10,
-						activeAlpha50: m.activeAlpha50,
-						activeLight60: m.activeLight60,
-						activeTinted05: m.activeTinted05
-					})).voteText.base = m.voteText.base;
+						})).voteText.base = a(e.post, !1, .46), e.active ? i.highlight = Object(n.d)(.1, e.active, e.post) : i.highlight = a(e.post, !1, .1)
+					} else(i = Object.assign({}, e, c, {
+						active: p.active,
+						postTransparent20: Object(n.o)(.2, p.post),
+						postError: Object(n.d)(.1, "#FF0000", p.post),
+						activeAlpha10: p.activeAlpha10,
+						activeAlpha50: p.activeAlpha50,
+						activeLight60: p.activeLight60,
+						activeTinted05: p.activeTinted05
+					})).voteText.base = p.voteText.base;
 					return i
 				},
-				b = (e, t, i) => Object(n.d)(i, (e => e ? "#FFFFFF" : "#000000")(t), e),
-				T = Object.assign({}, m, d, a),
-				S = Object.assign({}, w, _, p)
+				S = Object.assign({}, p, d, c),
+				F = Object.assign({}, v, w, g)
 		},
 		"./src/reddit/models/Search/index.ts": function(e, t, i) {
 			"use strict";
@@ -15642,15 +15639,16 @@
 			function C(e, t) {
 				const i = e.highlightColor ? I(e.highlightColor) : r.a.linkText,
 					s = S(e.sidebarWidgetBackgroundColor || r.a.widgetColors.sidebarWidgetBackgroundColor),
-					o = i,
-					l = Object.assign({}, r.a.voteText);
+					o = e.sidebarWidgetBackgroundColor || r.a.widgetColors.sidebarWidgetBackgroundColor,
+					l = i,
+					u = Object.assign({}, r.a.voteText);
 				if (e.postUpvoteCountColor) {
 					const t = e.postUpvoteCountColor;
-					l.upvote = t, l.upvoteShaded80 = Object(n.l)(.8, t), l.upvoteTinted80 = Object(n.m)(.8, t)
+					u.upvote = t, u.upvoteShaded80 = Object(n.l)(.8, t), u.upvoteTinted80 = Object(n.m)(.8, t)
 				}
 				if (e.postDownvoteCountColor) {
 					const t = e.postDownvoteCountColor;
-					l.downvote = t, l.downvoteShaded80 = Object(n.l)(.8, t), l.downvoteTinted80 = Object(n.m)(.8, t)
+					u.downvote = t, u.downvoteShaded80 = Object(n.l)(.8, t), u.downvoteTinted80 = Object(n.m)(.8, t)
 				}
 				return {
 					subredditContext: t,
@@ -15679,10 +15677,10 @@
 						canvasImgUrl: e.backgroundImage,
 						canvasImgPosition: e.backgroundImagePosition,
 						lineShadedNinety: T(.9, r.a.line),
-						linkText: o,
-						linkTextAlpha80: Object(n.j)(o, .5),
-						linkTextShaded80: T(.8, o),
-						linkTextTinted80: F(.8, o),
+						linkText: l,
+						linkTextAlpha80: Object(n.j)(l, .5),
+						linkTextShaded80: T(.8, l),
+						linkTextTinted80: F(.8, l),
 						menu: e.menuBackgroundColor || r.a.menu,
 						menuActiveText: e.menuLinkColorActive || r.a.menuActiveText,
 						menuInactiveText: e.menuLinkColorInactive || r.a.menuInactiveText,
@@ -15706,7 +15704,7 @@
 						primaryButtonTintedFifty: F(.5, e.primaryColor || r.a.button),
 						titleText: e.postTitleColor && !t.isOverlay ? e.postTitleColor : r.a.titleText,
 						textTransparentizedEighty: E(.8, r.a.bodyText),
-						voteText: l,
+						voteText: u,
 						voteIcons: {
 							upvoteActive: "custom" === e.postVoteIcons ? e.postUpvoteIconActive : void 0,
 							upvoteInactive: "custom" === e.postVoteIcons ? e.postUpvoteIconInactive : void 0,
@@ -15714,13 +15712,14 @@
 							downvoteInactive: "custom" === e.postVoteIcons ? e.postDownvoteIconInactive : void 0
 						},
 						widgetColors: {
-							sidebarWidgetBackgroundColor: e.sidebarWidgetBackgroundColor || r.a.widgetColors.sidebarWidgetBackgroundColor,
+							sidebarWidgetBackgroundColor: o,
+							sidebarWidgetBorderColor: Object(r.d)(o, !1),
 							sidebarWidgetHeaderColor: e.sidebarWidgetHeaderColor || r.a.widgetColors.sidebarWidgetHeaderColor,
 							sidebarWidgetHeaderColorAlpha60: e.sidebarWidgetHeaderColor && Object(n.j)(e.sidebarWidgetHeaderColor, .6) || Object(n.j)(r.a.widgetColors.sidebarWidgetHeaderColor, .6),
 							sidebarWidgetTextColor: s,
 							sidebarWidgetTextColorShaded80: Object(n.l)(.8, s),
 							sidebarWidgetTitleColor: S(e.sidebarWidgetHeaderColor || r.a.widgetColors.sidebarWidgetHeaderColor),
-							lineColor: Object(d.b)(S(e.sidebarWidgetBackgroundColor))
+							lineColor: Object(d.b)(S(o))
 						}
 					}, {
 						backgroundImage: t.isOverlay ? void 0 : e.postBackgroundImage,
@@ -18666,4 +18665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.08b4717283953f167021.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.7eb8d89cbc2975967649.js.map

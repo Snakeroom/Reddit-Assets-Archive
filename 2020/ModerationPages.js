@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.33f072580bdc1c910963.js
-// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.42f301563bfdecdce259.js
+// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e", "Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~Sear~eb23b26b", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -3663,6 +3663,8 @@
 		},
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, t, s) {
 			e.exports = {
+				CommentAuthorLink: "f3THgbzMYccGW8vbqZBUH",
+				commentAuthorLink: "f3THgbzMYccGW8vbqZBUH",
 				badgeIconStyle: "_2MlVoXUc3Eo3KGWDukM9xn",
 				modBadgeIconStyle: "_1kqPGnOAdnd9gPUXDU2_AS",
 				DonationAmount: "_3sY3k4LLYR5dbXRxnGkhwG",
@@ -4131,6 +4133,7 @@
 				}))),
 				He = e => {
 					const t = n.a.createElement(b.a, {
+						className: ae.a.CommentAuthorLink,
 						author: e.comment.author,
 						isAdmin: e.comment.isAdmin,
 						isAdminEmeritus: e.comment.distinguishType === l.B.ALUMNI_ADMIN,
@@ -6964,7 +6967,7 @@
 					onOpenUserDropdown: async () => {
 						e(Object(d.f)({
 							tooltipId: t.tooltipId
-						})), t.authorOrSubredditName && e(Object(p.v)(t.authorOrSubredditName))
+						})), t.authorOrSubredditName && e(Object(p.s)(t.authorOrSubredditName))
 					}
 				})),
 				g = s("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
@@ -7187,7 +7190,7 @@
 			const ie = Object(r.a)(y.N, e => e.some(re.c)),
 				ce = Object(r.a)(ie, e => e),
 				de = (e, t) => Object(oe.c)(e, {
-					experimentName: ne.y,
+					experimentName: ne.z,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -7311,7 +7314,7 @@
 						showEditFlair: me,
 						subredditOrProfile: pe,
 						userIsOp: he
-					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], Ee = ge ? void 0 : u, xe = Object(d.a)(X), fe = Y && xe, Ce = Object(c.a)(X), Oe = Object(F.c)(ce), je = !!ce.media && ce.media.type === h.n.RTJSON, ye = he && je, ke = s ? s - U.a : void 0, we = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Se = !(C && O), Te = (e => e === ne.jb.OnlyTitles)(de) && !Object(se.a)(ce), Ne = (e => e === ne.jb.MediumHeight)(de) && !Object(se.a)(ce), _e = (e => {
+					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], Ee = ge ? void 0 : u, xe = Object(d.a)(X), fe = Y && xe, Ce = Object(c.a)(X), Oe = Object(F.c)(ce), je = !!ce.media && ce.media.type === h.n.RTJSON, ye = he && je, ke = s ? s - U.a : void 0, we = !!ie && !!Object.keys(ie.options).filter(e => ie.options[e].userSelected).length, Se = !(C && O), Te = (e => e === ne.kb.OnlyTitles)(de) && !Object(se.a)(ce), Ne = (e => e === ne.kb.MediumHeight)(de) && !Object(se.a)(ce), _e = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -18960,7 +18963,7 @@
 						value: u,
 						onChange: e => i(e.target.value, "crowdControlChatLevel"),
 						label: Object(G.c)("Adjust Crowd Control for Chat Posts"),
-						subtext: Object(G.c)(b[m].subText)
+						subtext: Object(G.c)(b[u].subText)
 					}), r.a.createElement(Ys.a, null, r.a.createElement(_e.c, null, "Privacy")), r.a.createElement($s.n, {
 						on: d,
 						onClick: () => i(!d, "contentVisible"),
@@ -29124,7 +29127,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: a.a
 				});
-				return !!t && !Object(a.Rb)(t)
+				return !!t && !Object(a.Sb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/goldProfileGildedAwards.ts": function(e, t, s) {
@@ -29138,9 +29141,9 @@
 			const r = e => !!(e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(o.J)(e),
-					experimentName: a.H
+					experimentName: a.I
 				});
-				return Object(a.Rb)(t) ? void 0 : t
+				return Object(a.Sb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -29153,9 +29156,9 @@
 			const o = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.hb
+					experimentName: a.ib
 				});
-				return Object(a.Rb)(t) ? void 0 : t
+				return Object(a.Sb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -29351,4 +29354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.33f072580bdc1c910963.js.map
+//# sourceMappingURL=ModerationPages.42f301563bfdecdce259.js.map

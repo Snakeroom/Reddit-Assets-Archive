@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.733e30efb2ddad27ada0.js
-// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.80cdd5a342d5122f35c0.js
+// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, s) {
@@ -445,7 +445,7 @@
 					onOpenUserDropdown: async () => {
 						e(Object(d.f)({
 							tooltipId: t.tooltipId
-						})), t.authorOrSubredditName && e(Object(p.v)(t.authorOrSubredditName))
+						})), t.authorOrSubredditName && e(Object(p.s)(t.authorOrSubredditName))
 					}
 				})),
 				C = s("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
@@ -907,11 +907,11 @@
 			const o = e => !!(e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.J)(e),
-					experimentName: r.H
+					experimentName: r.I
 				});
-				return Object(r.Rb)(t) ? void 0 : t
+				return Object(r.Sb)(t) ? void 0 : t
 			})(e)
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.733e30efb2ddad27ada0.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.80cdd5a342d5122f35c0.js.map
