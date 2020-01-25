@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~dc5241f9.0ca87855c18ee16bf0f6.js
-// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~dc5241f9.0822bfe1a7f1cd448577.js
+// Retrieved at 1/24/2020, 7:57:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~dc5241f9"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -246,8 +246,8 @@
 				W = l.a.wrapped(T.a, "Spam", M.a),
 				G = l.a.wrapped(R.a, "Show", M.a),
 				V = l.a.wrapped(I, "DistinguishShield", M.a),
-				H = Object(g.t)(),
-				U = e => "Distinguish--Dropdown--".concat(e),
+				U = Object(g.t)(),
+				H = e => "Distinguish--Dropdown--".concat(e),
 				K = Object(a.c)({
 					currentUser: j.i,
 					collapsedBecauseCrowdControl: (e, t) => {
@@ -262,7 +262,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(E.b)(U(s.id))(e)
+						return Object(E.b)(H(s.id))(e)
 					},
 					moderatorPermissions: (e, t) => {
 						const {
@@ -286,11 +286,11 @@
 						onSpamComment: () => e(Object(p.cb)(s.id, !0)),
 						onShowComment: () => e(Object(p.Y)(s.id)),
 						onToggleDistinguishDropdown: () => e(Object(m.g)({
-							tooltipId: U(s.id)
+							tooltipId: H(s.id)
 						}))
 					}
 				});
-			t.c = H(J(l.a.wrapped(Object(x.b)(e => {
+			t.c = U(J(l.a.wrapped(Object(x.b)(e => {
 				var {
 					className: t,
 					comment: s,
@@ -369,7 +369,7 @@
 					isUserMod: P,
 					onDistinguishComment: x,
 					sendEventWithName: R,
-					tooltipId: U(s.id)
+					tooltipId: H(s.id)
 				})), T && r.a.createElement(A, {
 					text: o.fbt._("Show Comment", null, {
 						hk: "2ki02n"
@@ -857,11 +857,6 @@
 				}))
 			}
 		},
-		"./src/reddit/components/Flatlist/ResponsiveRow.m.less": function(e, t, s) {
-			e.exports = {
-				responsiveRow: "_3tRpmsTw--cwH6_MAO3ZOm"
-			}
-		},
 		"./src/reddit/components/Flatlist/ResponsiveRow.tsx": function(e, t, s) {
 			"use strict";
 			s("./node_modules/core-js/modules/es6.symbol.js");
@@ -870,7 +865,7 @@
 				r = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/components/Flatlist/getFlatlistBreakpoints.ts"),
 				a = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				d = s("./src/reddit/components/Flatlist/ResponsiveRow.m.less"),
+				d = s("./src/reddit/components/Flatlist/index.m.less"),
 				c = s.n(d);
 
 			function l() {
@@ -985,6 +980,7 @@
 		"./src/reddit/components/Flatlist/index.m.less": function(e, t, s) {
 			e.exports = {
 				flatlistContainer: "_3-miAEojrCvx_4FQ8x3P-s",
+				responsiveRow: "YszYBnnIoNY8pZ6UwCivd",
 				flatlistSeparator: "x7sinePdvDKj7bf-cdm4Z",
 				flexSpacer: "_21pmAV9gWG6F_UKVe7YIE0",
 				modActionsIcon: "_15c1hqseW25EvRu0WP2Dq5",
@@ -1081,8 +1077,8 @@
 				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				G = s("./src/reddit/components/ViewReportsDropdown/index.tsx"),
 				V = s("./src/reddit/constants/postLayout.ts"),
-				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				U = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				H = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				K = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				J = s("./src/reddit/i18n/utils.ts"),
 				z = s("./src/reddit/selectors/user.ts"),
@@ -1142,25 +1138,25 @@
 					return n.a.createElement($.a, be({}, s, {
 						className: Object(d.a)(ue.a.modActionsIcon, t),
 						style: {
-							color: Object(K.a)(Object(U.a)(s), se.a.actionIcon, se.b.actionIcon)
+							color: Object(K.a)(Object(H.a)(s), se.a.actionIcon, se.b.actionIcon)
 						}
 					}))
 				}),
 				ve = e => n.a.createElement("div", be({}, e, {
 					className: Object(d.a)(ue.a.flatlistSeparator, e.className)
 				})),
-				Ee = Object(H.t)({
-					currentProfileName: H.h,
-					isCommentPermalink: H.v,
-					isCommentsPage: H.w,
-					isProfilePostListing: H.I,
+				Ee = Object(U.t)({
+					currentProfileName: U.h,
+					isCommentPermalink: U.v,
+					isCommentsPage: U.w,
+					isProfilePostListing: U.I,
 					pageLayer: e => e
 				}),
 				je = Object(i.c)({
 					activeModalId: pe.a,
-					layout: H.M,
+					layout: U.M,
 					userIsOp: z.jb,
-					subreddit: H.q
+					subreddit: U.q
 				}),
 				ye = Object(r.b)(je, (e, t) => {
 					let {
@@ -1264,10 +1260,10 @@
 						showEditFlair: S,
 						showEditPost: B,
 						subreddit: W,
-						toggleEditStartTimeModal: H,
-						tooltipType: U,
+						toggleEditStartTimeModal: U,
+						tooltipType: H,
 						userIsOp: K
-					} = this.props, z = !!r && Object(ne.f)(r) === I.author, X = Object(ae.a)("View--Reports", I.id, U), $ = Object(ae.a)("View--GiveAward", I.id, U), se = Object(N.c)(I), de = Pe("-mod-actions-menu", I.id, b, x), pe = Object(N.a)(I), me = I.postId, be = C === V.g.Large, he = !m && be || c && v, ge = !(b || m || l), ve = r && I.isGildable;
+					} = this.props, z = !!r && Object(ne.f)(r) === I.author, X = Object(ae.a)("View--Reports", I.id, H), $ = Object(ae.a)("View--GiveAward", I.id, H), se = Object(N.c)(I), de = Pe("-mod-actions-menu", I.id, b, x), pe = Object(N.a)(I), me = I.postId, be = C === V.g.Large, he = !m && be || c && v, ge = !(b || m || l), ve = r && I.isGildable;
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: Object(d.a)(ue.a.flatlistContainer, s)
 					}, n.a.createElement(f.a, {
@@ -1390,8 +1386,8 @@
 						showEditPost: !!B,
 						showEditFlair: !!S,
 						useFlatlistBreakpoints: this.props.useFlatlistBreakpoints,
-						toggleAddEventStartTimeModal: H,
-						toggleEditStartTimeModal: H
+						toggleAddEventStartTimeModal: U,
+						toggleEditStartTimeModal: U
 					}), e === Object(oe.t)(I.id, b) && n.a.createElement(ce.a, {
 						subredditId: I.belongsTo.id,
 						onClose: this.onToggleCurrentModal,
@@ -1402,7 +1398,7 @@
 						isOverlay: b
 					}), e === Object(oe.s)(I.id, b, oe.j.POST_OVERFLOW_MENU) && xe && n.a.createElement(xe, {
 						onChange: t,
-						onClose: H,
+						onClose: U,
 						schedule: Object(p.c)(I),
 						shouldShowDeleteButton: !1
 					}), e === Object(oe.u)(I.id, b) && n.a.createElement(le.a, {
@@ -1979,8 +1975,8 @@
 				W = s("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				G = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				V = s("./src/reddit/components/ReportFlow/index.tsx"),
-				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				U = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
+				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				H = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
 				K = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				J = s("./src/reddit/components/Flatlist/constants.ts"),
 				z = s("./src/reddit/components/Flatlist/getFlatlistBreakpoints.ts"),
@@ -2043,7 +2039,7 @@
 				we = p.a.wrapped(v.a, "CalendarIcon", pe.a),
 				Ie = p.a.wrapped(I.a, "LinkIcon", pe.a),
 				_e = p.a.wrapped(K.b, "DropdownRow", pe.a),
-				Se = p.a.wrapped(U.a, "PostCheckboxMenuItem", pe.a),
+				Se = p.a.wrapped(H.a, "PostCheckboxMenuItem", pe.a),
 				Te = e => {
 					let {
 						gild: t = !0,
@@ -2092,7 +2088,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, o = me(t, ["isProfilePostListing"]);
-						return Object(H.C)(e, o) && s && Object(oe.jb)(e, o) && Object(oe.ib)(e, {
+						return Object(U.C)(e, o) && s && Object(oe.jb)(e, o) && Object(oe.ib)(e, {
 							userName: Object(te.I)(e, {
 								postId: o.postId
 							}).author
@@ -3024,4 +3020,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~dc5241f9.0ca87855c18ee16bf0f6.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~dc5241f9.0822bfe1a7f1cd448577.js.map
