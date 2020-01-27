@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5fd9ca083794d3be1294.js
-// Retrieved at 1/27/2020, 12:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f564208b081d2534b37d.js
+// Retrieved at 1/27/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "Explore~ProfileSnoobuilder~SubredditWiki", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -7500,10 +7500,22 @@
 					let {
 						listingName: s
 					} = t;
+					return s
+				}, (e, t) => {
+					let {
+						listingName: s
+					} = t;
 					return Object(i.n)(e, {
 						subreddit: s
 					})
-				}, i.l, (e, t, s, n, r) => !(!e || r.isPermanentlyCanceled || s) && (t ? !!n && n.show_discovery_unit : !!r.global.viewer_enabled)),
+				}, i.l, (e, t, s, n, a, o) => {
+					if (!e) return !1;
+					if (o.isPermanentlyCanceled) return !1;
+					if (s) return !1;
+					if (t) return !!a && a.show_discovery_unit;
+					if (!o.global.viewer_enabled) return !1;
+					return [r.R, "r/popular"].indexOf(n) > -1
+				}),
 				d = Object(n.a)(a.b, (e, t) => {
 					let {
 						listingName: s
@@ -7518,7 +7530,7 @@
 					})
 				}, i.m, (e, t, s, n) => {
 					if (!e) {
-						const e = "home" === t ? n.home_feed_discovery_unit_index : "popular" === t ? n.popular_feed_discovery_unit_index : r.h;
+						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : r.h;
 						return "number" == typeof e ? e : r.h
 					}
 					return s ? s.discovery_unit_index : r.h
@@ -7801,4 +7813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.5fd9ca083794d3be1294.js.map
+//# sourceMappingURL=Frontpage.f564208b081d2534b37d.js.map
