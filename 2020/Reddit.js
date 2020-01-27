@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.79505a5cc74fbbc78894.js
-// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a4b27b48eaca13fe10e4.js
+// Retrieved at 1/27/2020, 5:20:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -8566,25 +8566,28 @@
 		"./src/reddit/helpers/tabBadging/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return r
+				return o
 			})), s.d(t, "b", (function() {
-				return i
+				return d
 			})), s.d(t, "c", (function() {
-				return c
+				return l
 			}));
-			const n = "/img/favicon/badged-favicon-32x32.png",
-				a = "/img/favicon/badged-favicon-16x16.png",
-				r = "badgeCountSync",
-				o = e => window.document.querySelector('link[href="'.concat(e, '"]')),
-				i = function() {
+			const n = "https://www.redditstatic.com/desktop2x",
+				a = "/img/favicon/badged-favicon-32x32.png",
+				r = "/img/favicon/badged-favicon-16x16.png",
+				o = "badgeCountSync",
+				i = e => window.document.querySelector('link[href="'.concat(e, '"]')),
+				c = (e, t) => "".concat(e).concat(t),
+				d = function() {
 					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-					const t = o(e ? "/img/favicon/favicon-32x32.png" : n),
-						s = o(e ? "/img/favicon/favicon-16x16.png" : a);
-					t && s && (t.href = e ? n : "/img/favicon/favicon-32x32.png", s.href = e ? a : "/img/favicon/favicon-16x16.png")
+					const t = n,
+						s = i(c(t, e ? "/img/favicon/favicon-32x32.png" : a)),
+						o = i(c(t, e ? "/img/favicon/favicon-16x16.png" : r));
+					s && o && (s.href = c(t, e ? a : "/img/favicon/favicon-32x32.png"), o.href = c(t, e ? r : "/img/favicon/favicon-16x16.png"))
 				},
-				c = e => {
+				l = e => {
 					navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
-						command: r,
+						command: o,
 						badgeCounts: e
 					})
 				}
@@ -12008,4 +12011,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~EconHelperActions~Reddit", "vendors~Reddit", "Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.79505a5cc74fbbc78894.js.map
+//# sourceMappingURL=Reddit.a4b27b48eaca13fe10e4.js.map
