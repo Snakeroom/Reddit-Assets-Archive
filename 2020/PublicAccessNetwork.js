@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.77ea2854148276b916ce.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.54c674e43149ee047bf8.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -1033,9 +1033,9 @@
 				U = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				W = s("./src/reddit/constants/history.ts"),
 				H = s("./src/reddit/constants/keycodes.ts"),
-				z = s("./src/reddit/helpers/dom/index.ts"),
-				J = s("./src/reddit/helpers/trackers/rpan.ts"),
-				K = s("./src/reddit/helpers/trackers/screenview.ts"),
+				K = s("./src/reddit/helpers/dom/index.ts"),
+				z = s("./src/reddit/helpers/trackers/rpan.ts"),
+				J = s("./src/reddit/helpers/trackers/screenview.ts"),
 				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				Y = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				q = s("./src/reddit/selectors/media.ts"),
@@ -1251,7 +1251,7 @@
 						}));
 						this.props.vote(t.post.id, e), this.setState(Object.assign({}, this.state, {
 							displayedVoteState: e
-						})), e === we.a.upvoted ? this.props.sendEvent(Object(J.f)(t)) : this.props.sendEvent(Object(J.c)(t))
+						})), e === we.a.upvoted ? this.props.sendEvent(Object(z.f)(t)) : this.props.sendEvent(Object(z.c)(t))
 					}
 				}
 			}
@@ -1260,7 +1260,7 @@
 						let {
 							apiContext: o
 						} = n;
-						if (!Object(Ce.J)(r())) return void s(Object(u.e)());
+						if (!Object(Ce.K)(r())) return void s(Object(u.e)());
 						await Object(h.i)(e);
 						const i = Object(X.l)(r(), e);
 						null !== i.post.voteState && Object(we.e)(i.post.voteState) === t || await Object(Se.g)(o(), e, t)
@@ -1294,19 +1294,19 @@
 					d: "M42.59 27.9447L35.18 21.5931C34.8212 21.2847 34.3292 21.2175 33.8984 21.4143C33.4676 21.6123 33.2 22.0299 33.2 22.5039V24.7995C29.5004 24.7995 26.5472 26.0031 24.4232 28.3755C21.6128 31.5159 20.4992 36.5271 21.2036 42.8667C21.2372 43.1715 21.4952 43.3995 21.7988 43.3995C21.8108 43.3995 21.8216 43.3995 21.8336 43.3983C22.1504 43.3815 22.4 43.1187 22.4 42.7995C22.4 39.3039 23.5508 36.4155 25.7276 34.4451C27.7148 32.6475 30.4868 31.7307 33.14 31.9971C33.1604 31.9983 33.1796 31.9911 33.2 31.9911V34.2951C33.2 34.7691 33.4676 35.1879 33.8984 35.3859C34.0616 35.4603 34.2332 35.4975 34.4036 35.4975C34.682 35.4975 34.9568 35.3979 35.18 35.2071L42.59 28.8555C42.7232 28.7415 42.8 28.5747 42.8 28.3995C42.8 28.2243 42.7232 28.0587 42.59 27.9447Z"
 				}))),
 				He = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
-				ze = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/index.m.less"),
-				Je = s.n(ze);
-			const Ke = e => {
+				Ke = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/index.m.less"),
+				ze = s.n(Ke);
+			const Je = e => {
 					let {
 						onClick: t
 					} = e;
 					return i.a.createElement("button", {
-						className: Je.a.shareButton,
+						className: ze.a.shareButton,
 						onClick: t,
 						"aria-label": Object(Oe.c)("share video"),
 						value: "share"
 					}, i.a.createElement(Ve.a, {
-						className: Je.a.menuIcon
+						className: ze.a.menuIcon
 					}))
 				},
 				Ge = e => {
@@ -1315,17 +1315,17 @@
 						onToggle: s
 					} = e;
 					return i.a.createElement("button", {
-						className: Je.a.muteButton,
+						className: ze.a.muteButton,
 						onClick: s,
 						"aria-label": Object(Oe.c)("mute video"),
 						value: "mute"
 					}, t ? i.a.createElement(De.a, {
-						className: Je.a.volumeIcon
+						className: ze.a.volumeIcon
 					}) : i.a.createElement(He.a, {
-						className: Je.a.volumeIcon
+						className: ze.a.volumeIcon
 					}))
 				},
-				Ye = ke.a.wrapped(Le.a, "menuIcon", Je.a),
+				Ye = ke.a.wrapped(Le.a, "menuIcon", ze.a),
 				qe = e => {
 					let {
 						onClick: t,
@@ -1333,43 +1333,43 @@
 						onReportClick: r
 					} = e;
 					return i.a.createElement(re.b, {
-						className: Je.a.menuButton,
+						className: ze.a.menuButton,
 						defaultButtonOutline: !0,
 						dropdownId: "rpan-overlay-menu",
 						icon: i.a.createElement(Ye, null),
 						onClick: t
 					}, i.a.createElement(ne.b, {
-						className: Je.a.overflowItem,
+						className: ze.a.overflowItem,
 						displayText: Object(Oe.c)("View rules"),
-						iconWrapperClassName: Je.a.overflowItemIconWrapper,
+						iconWrapperClassName: ze.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-rules"),
 						onClick: () => Object(_e.d)(O.S, _e.c.BLANK)
 					}, i.a.createElement(Ae.a, {
-						className: Je.a.overflowItemIcon
+						className: ze.a.overflowItemIcon
 					})), i.a.createElement(ne.b, {
-						className: Je.a.overflowItem,
+						className: ze.a.overflowItem,
 						displayText: Object(Oe.c)("Visit RPAN community"),
-						iconWrapperClassName: Je.a.overflowItemIconWrapper,
+						iconWrapperClassName: ze.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-community"),
 						onClick: () => Object(_e.d)(O.Q, _e.c.BLANK)
 					}, i.a.createElement(Me.a, {
-						className: Je.a.overflowItemIcon
+						className: ze.a.overflowItemIcon
 					})), i.a.createElement(ne.b, {
-						className: Je.a.overflowItem,
+						className: ze.a.overflowItem,
 						displayText: Object(Oe.c)("Report"),
-						iconWrapperClassName: Je.a.overflowItemIconWrapper,
+						iconWrapperClassName: ze.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-report"),
 						onClick: r
 					}, i.a.createElement(Re.a, {
-						className: Je.a.overflowItemIcon
+						className: ze.a.overflowItemIcon
 					})), i.a.createElement(ne.b, {
-						className: Je.a.overflowItem,
+						className: ze.a.overflowItem,
 						displayText: Object(Oe.c)("Hide"),
-						iconWrapperClassName: Je.a.overflowItemIconWrapper,
+						iconWrapperClassName: ze.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-hide"),
 						onClick: s
 					}, i.a.createElement(Te.a, {
-						className: Je.a.overflowItemIcon
+						className: ze.a.overflowItemIcon
 					})))
 				},
 				Xe = e => {
@@ -1377,7 +1377,7 @@
 						onClick: t
 					} = e;
 					return i.a.createElement("button", {
-						className: Je.a.promptButton,
+						className: ze.a.promptButton,
 						onClick: t
 					}, i.a.createElement(Fe.a, null), i.a.createElement("span", null, i.a.createElement(Ee.c, null, "Replay Video")))
 				},
@@ -1386,7 +1386,7 @@
 						onClick: t
 					} = e;
 					return i.a.createElement("button", {
-						className: Je.a.promptButton,
+						className: ze.a.promptButton,
 						onClick: t
 					}, i.a.createElement(We, null), i.a.createElement("span", null, i.a.createElement(Ee.c, null, "Share Video")))
 				},
@@ -1459,7 +1459,7 @@
 							onShareVideo: s,
 							sendEvent: r
 						} = this.props;
-						t && (e("".concat(Q.a.redditUrl).concat(t.share_link)), s(), r(Object(J.e)(t)))
+						t && (e("".concat(Q.a.redditUrl).concat(t.share_link)), s(), r(Object(z.e)(t)))
 					}, this.state = {
 						isHovered: !1,
 						settingChange: void 0
@@ -1490,8 +1490,8 @@
 						volume: w
 					} = this.props;
 					return i.a.createElement("div", {
-						className: Object(l.a)(Je.a.overlay, {
-							[Je.a.visible]: this.isVisible()
+						className: Object(l.a)(ze.a.overlay, {
+							[ze.a.visible]: this.isVisible()
 						}),
 						onMouseDown: this.onMouseDown,
 						onMouseEnter: this.onMouseEnter,
@@ -1499,19 +1499,19 @@
 						onMouseMove: this.onMouseMove,
 						onMouseUp: this.onMouseUp
 					}, !s && i.a.createElement("div", {
-						className: Je.a.overlayTop
-					}, t && this.renderRecommendedViewerSubreddit(), e && !a && i.a.createElement(i.a.Fragment, null, !t && this.renderTitleContainer(), i.a.createElement(Ke, {
+						className: ze.a.overlayTop
+					}, t && this.renderRecommendedViewerSubreddit(), e && !a && i.a.createElement(i.a.Fragment, null, !t && this.renderTitleContainer(), i.a.createElement(Je, {
 						onClick: this.onCopyLink
 					}), i.a.createElement(qe, {
 						onClick: u,
 						onHideClick: c,
 						onReportClick: d
 					}))), t && e && !s && !a && i.a.createElement("div", {
-						className: Je.a.overlayTitle
+						className: ze.a.overlayTitle
 					}, this.renderTitleContainer()), i.a.createElement("div", {
-						className: Je.a.overlayCenter
+						className: ze.a.overlayCenter
 					}, this.getContent()), e && !s && !a && i.a.createElement("div", {
-						className: Je.a.overlayBottom
+						className: ze.a.overlayBottom
 					}, i.a.createElement(Ne, {
 						currentStreamId: e.post.id,
 						isLive: r,
@@ -1545,7 +1545,7 @@
 					"home" === s ? (n = "All", o = "All") : "r/popular" === s ? (n = "Popular", o = "r/popular") : r ? (n = r.replace(/^r\//, ""), o = r) : (n = "All", o = "All");
 					const a = t.filter(e => e.prefixedName !== o);
 					return i.a.createElement("div", {
-						className: Je.a.menuContainer
+						className: ze.a.menuContainer
 					}, i.a.createElement(de, {
 						label: n,
 						onSelect: e,
@@ -1558,11 +1558,11 @@
 						isLive: t
 					} = this.props;
 					if (e) return i.a.createElement("div", {
-						className: Je.a.titleContainer
+						className: ze.a.titleContainer
 					}, i.a.createElement("h1", {
-						className: Je.a.videoTitle
+						className: ze.a.videoTitle
 					}, e.post.title), !t && i.a.createElement("div", {
-						className: Je.a.RecordedLabel
+						className: ze.a.RecordedLabel
 					}, Qe._("Recorded Live", null, {
 						hk: "3NZqt4"
 					})))
@@ -1586,26 +1586,26 @@
 						toggleMute: b
 					} = this.props;
 					return h || a && o || t && s || !t && r ? i.a.createElement("div", {
-						className: Je.a.prompt
+						className: ze.a.prompt
 					}, Qe._("Connection issues", null, {
 						hk: "24LpRV"
 					})) : a ? i.a.createElement("div", {
-						className: Je.a.intro
+						className: ze.a.intro
 					}, i.a.createElement(Ge, {
 						isMuted: d,
 						onToggle: b
 					})) : l || !t && !r && !n && m ? null : c ? i.a.createElement("div", {
-						className: Je.a.prompt
+						className: ze.a.prompt
 					}, Qe._("Tuning...", null, {
 						hk: "dhDpR"
 					})) : e && e.stream.state === te.b.DISCONNECTED ? i.a.createElement("div", {
-						className: Je.a.prompt
+						className: ze.a.prompt
 					}, Qe._("Broadcast paused", null, {
 						hk: "1dtsGI"
 					})) : p ? i.a.createElement("div", {
-						className: Je.a.prompt
+						className: ze.a.prompt
 					}, i.a.createElement("div", {
-						className: Je.a.promptButtonSet
+						className: ze.a.promptButtonSet
 					}, i.a.createElement(Xe, {
 						onClick: u
 					}), i.a.createElement(Ze, {
@@ -1711,7 +1711,7 @@
 				isDisabled: (e, t) => Object(X.e)(e, {
 					streamIdFromPath: t.postId
 				}),
-				isLoggedIn: Ce.J,
+				isLoggedIn: Ce.K,
 				isPostDataLoaded: (e, t) => {
 					let {
 						postId: s
@@ -1720,12 +1720,12 @@
 						postId: s
 					})
 				},
-				language: Ce.S
+				language: Ce.T
 			});
 			class xt extends o.Component {
 				constructor(e) {
 					super(e), this.onChatClick = () => {
-						this.props.sendEvent(Object(J.b)(this.props.postId))
+						this.props.sendEvent(Object(z.b)(this.props.postId))
 					}
 				}
 				componentDidMount() {
@@ -1936,7 +1936,7 @@
 						leading: !0,
 						trailing: !1
 					}), this.onNextStreamKeyHandler = e => {
-						Object(z.g)(e.target) ? e.stopPropagation() : e.keyCode === H.a.ArrowRight ? this.onNextStream() : e.keyCode === H.a.ArrowLeft && this.onPreviousStream()
+						Object(K.g)(e.target) ? e.stopPropagation() : e.keyCode === H.a.ArrowRight ? this.onNextStream() : e.keyCode === H.a.ArrowLeft && this.onPreviousStream()
 					}, this.onPlayPauseToggle = () => {
 						this.cancelSwitchingOnStreamEnded(), this.state.isVideoPaused ? this.playVideo() : this.pauseVideo()
 					}, this.onToggleMuteVideo = () => {
@@ -1957,7 +1957,7 @@
 						const t = this.hlsVideoApi;
 						t && (e || t.setVolume(this.props.volume))
 					}, this.goToSubreddit = e => {
-						this.props.sendEvent(Object(J.g)(e)), this.props.onNavigation(e.path)
+						this.props.sendEvent(Object(z.g)(e)), this.props.onNavigation(e.path)
 					}, this.isCurrentStreamWatchable = () => this.props.playbackState === X.a.LIVE || this.props.playbackState === X.a.VOD, this.state = {
 						isUnavailableVideoJustFinished: !1,
 						isVodStreamJustFinished: !1,
@@ -1972,7 +1972,7 @@
 					}, this.onAutoPlayPrevented = this.onAutoPlayPrevented.bind(this), this.onClose = this.onClose.bind(this), this.onEnded = this.onEnded.bind(this), this.onNextStream = this.onNextStream.bind(this), this.onPlayerError = this.onPlayerError.bind(this), this.onPreviousStream = this.onPreviousStream.bind(this), this.onReport = this.onReport.bind(this), this.onVideoPlayerLevelLoaded = this.onVideoPlayerLevelLoaded.bind(this), this.onVideoPlayerLoadedData = this.onVideoPlayerLoadedData.bind(this), this.onVideoPlayerLoadingData = this.onVideoPlayerLoadingData.bind(this), this.onVideoPlayerResourceRemoved = this.onVideoPlayerResourceRemoved.bind(this), this.scheduleSwitchingOnStreamEnded = this.scheduleSwitchingOnStreamEnded.bind(this)
 				}
 				componentDidMount() {
-					this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(K.n)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
+					this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(J.n)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
 				}
 				componentDidUpdate(e) {
 					const {
@@ -2141,14 +2141,14 @@
 						}), t) return n(!0), void this.setState(Object.assign({}, this.state, {
 						isLoading: !!e
 					}));
-					e && r(Object(J.i)(e)), s !== X.a.VOD || this.state.isVodStreamJustFinished || this.setState({
+					e && r(Object(z.i)(e)), s !== X.a.VOD || this.state.isVodStreamJustFinished || this.setState({
 						isVodStreamJustFinished: !0
 					}), this.isCurrentStreamWatchable() || this.state.isUnavailableVideoJustFinished || this.setState({
 						isUnavailableVideoJustFinished: !0
 					})
 				}
 				onPlayerError() {
-					this.props.sendEvent(Object(J.j)(this.props.currentStream)), this.setState(Object.assign({}, this.state, {
+					this.props.sendEvent(Object(z.j)(this.props.currentStream)), this.setState(Object.assign({}, this.state, {
 						isError: !0
 					}))
 				}
@@ -2159,7 +2159,7 @@
 					this.props.isOverlay && this.props.closeLocation()
 				}
 				onReport() {
-					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id), this.props.sendEvent(Object(J.d)(this.props.currentStream)))
+					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id), this.props.sendEvent(Object(z.d)(this.props.currentStream)))
 				}
 				hideStreamEndedPrompt() {
 					this.state.showStreamEndedPrompt && this.setState({
@@ -2236,7 +2236,7 @@
 					e && (this.setState({
 						videoCurrentTime: 0,
 						videoTotalTime: 0
-					}), r(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), t(e.post.id), this.syncLocationWithCurrentStreamId(), s(Object(J.k)(e)), this.showOverlayAfterStreamSwitching())
+					}), r(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), t(e.post.id), this.syncLocationWithCurrentStreamId(), s(Object(z.k)(e)), this.showOverlayAfterStreamSwitching())
 				}
 				showOverlayAfterStreamSwitching() {
 					window.clearTimeout(this.overlayVisibilityTimeout), this.overlayVisibilityTimeout = window.setTimeout(() => this.setState({
@@ -2285,7 +2285,7 @@
 				Ut = s("./src/reddit/helpers/overlay/index.ts"),
 				Wt = s("./src/reddit/pages/PublicAccessNetwork/index.m.less"),
 				Ht = s.n(Wt);
-			const zt = Object(d.c)({
+			const Kt = Object(d.c)({
 					isEnabled: Y.a,
 					isIntroInProgress: Z.b,
 					isOnboardingModal: e => e.publicAccessNetwork.userSettings.shouldShowOnboardingModal && !0,
@@ -2299,7 +2299,7 @@
 						return "home" === o || "r/popular" === o ? o : "popular" === i ? "r/popular" : i ? void 0 : "home"
 					}
 				}),
-				Jt = Object(a.b)(zt, (e, t) => ({
+				zt = Object(a.b)(Kt, (e, t) => ({
 					onOpenLoginModal: () => e(Object(u.e)()),
 					onStreamByIdRequested: t => e(Object(h.i)(t)),
 					updateLocation: (t, s) => {
@@ -2312,7 +2312,7 @@
 						e(o(i))
 					}
 				}));
-			class Kt extends i.a.Component {
+			class Jt extends i.a.Component {
 				constructor(e) {
 					super(e), this.onNavigation = this.onNavigation.bind(this)
 				}
@@ -2369,7 +2369,7 @@
 			const Gt = () => i.a.createElement("div", {
 				className: Object(l.a)(Ht.a.rpanContainer, Ht.a.forbiddenScreen)
 			}, i.a.createElement("h2", null, i.a.createElement(Ee.c, null, "Not Found")));
-			t.default = Jt(Object(U.b)(Object(Bt.b)(Kt)))
+			t.default = zt(Object(U.b)(Object(Bt.b)(Jt)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
@@ -2623,4 +2623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.77ea2854148276b916ce.js.map
+//# sourceMappingURL=PublicAccessNetwork.54c674e43149ee047bf8.js.map

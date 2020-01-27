@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a18455e95617632eb086.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fe55ea07225d0dce64aa.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -490,9 +490,9 @@
 				y = s("./src/reddit/selectors/posts.ts");
 			var E = Object(r.b)(() => Object(o.c)({
 				post: y.I,
-				subredditOrProfile: y.T,
+				subredditOrProfile: y.U,
 				isModerator: (e, t) => {
-					const s = Object(y.T)(e, t);
+					const s = Object(y.U)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => a.a.createElement(b, {
@@ -526,11 +526,11 @@
 				}
 			}));
 			var j = Object(r.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(y.T)(e, {
+				subredditOrProfile: (e, t) => Object(y.U)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(y.T)(e, {
+					const s = Object(y.U)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -553,9 +553,9 @@
 			}));
 			var w = Object(r.b)(() => Object(o.c)({
 				post: y.I,
-				subredditOrProfile: y.T,
+				subredditOrProfile: y.U,
 				isModerator: (e, t) => {
-					const s = Object(y.T)(e, t);
+					const s = Object(y.U)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => a.a.createElement(b, {
@@ -824,7 +824,7 @@
 				}).apply(this, arguments)
 			}
 			const M = Object(f.c)({
-					language: _.S
+					language: _.T
 				}),
 				T = o.a.div("Container", P.a),
 				B = o.a.div("Body", P.a),
@@ -872,8 +872,8 @@
 					let {
 						profileName: s
 					} = t;
-					return Object(_.kb)(e, s)
-				}, _.S, (e, t, s) => ({
+					return Object(_.lb)(e, s)
+				}, _.T, (e, t, s) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					language: s,
 					postKarma: t ? t.postKarma : 0,
@@ -1409,7 +1409,7 @@
 					hasPaypalSubscription: j.u,
 					isGold: j.q,
 					isPremiumSubscriber: j.r,
-					language: j.S,
+					language: j.T,
 					updateCardModalIsOpen: Object(E.b)(N)
 				}),
 				I = Object(o.b)(P, e => ({
@@ -2323,7 +2323,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				c = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(a.c)({
-				language: c.S,
+				language: c.T,
 				subscribeReminderTooltipId: o.C,
 				subscribeTooltipId: o.D,
 				userIsSubscriber: i.cb
@@ -2347,7 +2347,7 @@
 				a = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = Object(a.c)({
-				language: r.S
+				language: r.T
 			});
 
 			function i(e) {
@@ -3463,7 +3463,7 @@
 				};
 			const Y = Object(o.c)({
 					hasVerifiedEmail: C.x,
-					isFPR: C.H
+					isFPR: C.I
 				}),
 				Q = Object(r.b)(Y, e => ({
 					openChangeEmailModal: () => e(Object(f.i)(V.a)),
@@ -3528,7 +3528,7 @@
 				je = Object(o.c)({
 					twitterAccount: me.a,
 					isTwitterConnectionPending: me.b,
-					language: C.S
+					language: C.T
 				}),
 				we = Object(r.b)(je, e => ({
 					onConnectAccount: t => {
@@ -3605,7 +3605,7 @@
 					deactivateModalOpen: Object(se.b)("deactivate_modal_id"),
 					email: C.l,
 					inRedesignBeta: C.D,
-					language: C.S,
+					language: C.T,
 					optoutModalOpen: Object(se.b)("settins_optout_modal_id"),
 					user: C.i
 				});
@@ -4320,7 +4320,7 @@
 					isChrome: ks.d,
 					isFirefox: ks.e,
 					isOpera: ks.f,
-					language: C.S,
+					language: C.T,
 					preferences: Ns.d
 				});
 			class Zs extends a.a.Component {
@@ -4796,7 +4796,7 @@
 				In = s.n(Pn);
 			const Mn = 30,
 				Tn = 200,
-				Bn = Object(o.a)(C.S, C.i, kn.a, C.lb, Sn.o, se.a, (e, t, s, n, a, r) => {
+				Bn = Object(o.a)(C.T, C.i, kn.a, C.mb, Sn.o, se.a, (e, t, s, n, a, r) => {
 					const o = t && t.profileId,
 						i = o && a[o] ? a[o].bannerBackgroundImage : void 0;
 					return {
@@ -5282,7 +5282,7 @@
 					savedPayments: jt.o,
 					userIsWhitelistedCreator: jt.z,
 					allowNavigationCallback: Sa.a,
-					language: C.S,
+					language: C.T,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.specialMemberships.allSubscriptionsFetched) {
@@ -5452,4 +5452,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.a18455e95617632eb086.js.map
+//# sourceMappingURL=Settings.fe55ea07225d0dce64aa.js.map

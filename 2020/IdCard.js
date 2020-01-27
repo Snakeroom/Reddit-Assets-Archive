@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f5356e60fbc56d9b7d56.js
-// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1a569d4148063cc7ddc3.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1373,7 +1373,7 @@
 				D = n("./src/reddit/selectors/meta.ts"),
 				L = n("./src/reddit/selectors/user.ts");
 			const A = Object(u.c)({
-				isLoggedIn: L.J,
+				isLoggedIn: L.K,
 				origin: D.g
 			});
 			class H extends i.a.Component {
@@ -1426,7 +1426,7 @@
 				return n
 			};
 			const Q = Object(u.c)({
-				isLoggedIn: L.J
+				isLoggedIn: L.K
 			});
 			var G = Object(o.b)(Q, e => ({
 				openLoginModal: () => {
@@ -1765,7 +1765,7 @@
 				St = Object(u.c)({
 					badgesEnabled: De.d.spBadges,
 					currentUser: L.i,
-					language: L.S,
+					language: L.T,
 					userFlairData: ft.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -1845,8 +1845,8 @@
 			const Wt = re.a.wrapped(B.n, "TertiaryButton", Ut.a),
 				qt = Object(u.c)({
 					shouldShowFlairPicker: ft.b,
-					stylesDisabledForSubreddit: L.eb,
-					stylesDisabledGlobally: L.fb
+					stylesDisabledForSubreddit: L.fb,
+					stylesDisabledGlobally: L.gb
 				});
 			class Vt extends i.a.Component {
 				constructor(e) {
@@ -1922,9 +1922,9 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(xe.h)(e, Ye.e.Post),
-					isLoggedIn: L.J,
+					isLoggedIn: L.K,
 					isM2MEnabled: rt.w,
-					language: L.S,
+					language: L.T,
 					m2mHomeRedirectVariant: nt.f,
 					moderatorPermissions: (e, t) => {
 						const n = Object(xe.G)(e, t.listingName);
@@ -3067,7 +3067,7 @@
 				a = n("./src/reddit/selectors/subreddit.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: c.S,
+				language: c.T,
 				subscribeReminderTooltipId: o.C,
 				subscribeTooltipId: o.D,
 				userIsSubscriber: a.cb
@@ -3678,7 +3678,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.i.Treatment1 === Object(r.c)(e, {
+				return Object(i.H)(e) || s.i.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.c
 				})
@@ -3686,4 +3686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.f5356e60fbc56d9b7d56.js.map
+//# sourceMappingURL=IdCard.1a569d4148063cc7ddc3.js.map

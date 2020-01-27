@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.7c969244630990731a3a.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.826a5b1113083e5d95f8.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4"], {
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
@@ -66,10 +66,10 @@
 				C = S.a.div("ThumbnailContainer", g.a),
 				M = Object(c.c)({
 					isCurrentUserProfilePost: E.h,
-					language: v.S,
+					language: v.T,
 					post: E.I,
-					shouldOpenPostInNewTab: v.W,
-					subreddit: E.T
+					shouldOpenPostInNewTab: v.X,
+					subreddit: E.U
 				}),
 				k = Object(a.b)(M);
 			t.a = k(e => {
@@ -238,7 +238,7 @@
 					},
 					modModeEnabled: E.O
 				}),
-				W = Object(a.b)(G, (e, t) => ({
+				U = Object(a.b)(G, (e, t) => ({
 					onHideTooltip: () => e(Object(m.h)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -247,7 +247,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = J(W(e => {
+			t.a = J(U(e => {
 				let {
 					className: t,
 					displayText: s,
@@ -260,62 +260,62 @@
 					modModeEnabled: M,
 					onHideTooltip: J,
 					onOpenRemovalReasonModal: G,
-					onShowTooltip: W,
-					post: U,
+					onShowTooltip: U,
+					post: W,
 					tooltipType: X
 				} = e;
 				const K = {
 						caretOnTop: !1
 					},
-					V = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === x.a.SUBREDDIT,
-					Z = D("Approve", U.id, X),
-					q = D("Archived", U.id, X),
-					z = D("Automod", U.id, X),
-					Q = D("Lock", U.id, X),
-					Y = D("Mod", U.id, X),
-					$ = D("Remove", U.id, X),
-					ee = D("Report", U.id, X),
-					te = D("Spam", U.id, X),
-					se = D("Sticky", U.id, X),
-					ne = D("Pinned", U.id, X);
+					V = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === x.a.SUBREDDIT,
+					Z = D("Approve", W.id, X),
+					q = D("Archived", W.id, X),
+					z = D("Automod", W.id, X),
+					Q = D("Lock", W.id, X),
+					Y = D("Mod", W.id, X),
+					$ = D("Remove", W.id, X),
+					ee = D("Report", W.id, X),
+					te = D("Spam", W.id, X),
+					se = D("Sticky", W.id, X),
+					ne = D("Pinned", W.id, X);
 				return o.a.createElement("div", {
 					className: t
-				}, i && s && U.distinguishType === u.B.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
+				}, i && s && W.distinguishType === u.B.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
 					className: k.a.modIcon,
 					desc: A(P, {
 						displayText: s
 					}),
 					id: Y,
-					onMouseEnter: W(Y),
+					onMouseEnter: U(Y),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: Y,
 					text: A(P, {
 						displayText: s
 					})
-				}, K))), U.isArchived && o.a.createElement(n.Fragment, null, o.a.createElement(y.a, {
+				}, K))), W.isArchived && o.a.createElement(n.Fragment, null, o.a.createElement(y.a, {
 					className: k.a.archivedIcon,
 					desc: B(P),
 					id: q,
-					onMouseEnter: W(q),
+					onMouseEnter: U(q),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: q,
 					text: B(P)
-				}, K))), U.isLocked && o.a.createElement(n.Fragment, null, o.a.createElement(h.a, {
+				}, K))), W.isLocked && o.a.createElement(n.Fragment, null, o.a.createElement(h.a, {
 					className: k.a.lockIcon,
 					desc: F(P),
 					id: Q,
-					onMouseEnter: W(Q),
+					onMouseEnter: U(Q),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: Q,
 					text: F(P)
-				}, K))), a && Object(S.k)(U) && !d && o.a.createElement(n.Fragment, null, o.a.createElement(f.a, {
+				}, K))), a && Object(S.k)(W) && !d && o.a.createElement(n.Fragment, null, o.a.createElement(f.a, {
 					className: k.a.stickyIcon,
 					desc: w(P),
 					id: se,
-					onMouseEnter: W(se),
+					onMouseEnter: U(se),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: se,
@@ -324,63 +324,63 @@
 					className: k.a.stickyIcon,
 					desc: H(P),
 					id: ne,
-					onMouseEnter: W(ne),
+					onMouseEnter: U(ne),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: ne,
 					text: H(P)
-				}, K))), (U.isApproved || U.approvedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(_.a, {
+				}, K))), (W.isApproved || W.approvedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(_.a, {
 					className: k.a.approveIcon,
-					desc: Object(O.a)(P, U),
+					desc: Object(O.a)(P, W),
 					id: Z,
-					onMouseEnter: W(Z),
+					onMouseEnter: U(Z),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: Z,
-					text: Object(O.a)(P, U)
-				}, K))), Object(v.a)(U) && o.a.createElement(n.Fragment, null, o.a.createElement(j.a, {
+					text: Object(O.a)(P, W)
+				}, K))), Object(v.a)(W) && o.a.createElement(n.Fragment, null, o.a.createElement(j.a, {
 					className: k.a.removeIcon,
-					desc: Object(O.c)(P, U),
+					desc: Object(O.c)(P, W),
 					id: $,
-					onMouseEnter: W($),
+					onMouseEnter: U($),
 					onMouseLeave: J
 				}), V && o.a.createElement(b.a, {
 					className: k.a.addRemovalReason,
 					onClick: G,
 					text: Object(c.c)("Add a removal reason")
-				}), (U.modRemovalReason || U.modNote) && o.a.createElement(R, {
-					onMouseEnter: W($),
+				}), (W.modRemovalReason || W.modNote) && o.a.createElement(R, {
+					onMouseEnter: U($),
 					onMouseLeave: J
 				}, o.a.createElement(r.c, null, "Removal reason")), o.a.createElement(p.c, N({
 					tooltipId: $,
-					text: Object(O.c)(P, U)
-				}, K))), U.bannedBy && U.isSpam && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
+					text: Object(O.c)(P, W)
+				}, K))), W.bannedBy && W.isSpam && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
 					className: k.a.spamIcon,
-					desc: Object(O.e)(P, U),
+					desc: Object(O.e)(P, W),
 					id: te,
-					onMouseEnter: W(te),
+					onMouseEnter: U(te),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: te,
-					text: Object(O.e)(P, U)
-				}, K))), ("AutoModerator" === U.approvedBy || "AutoModerator" === U.bannedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(T.a, {
-					className: Object(l.a)(k.a.automoderator, !!U.bannedBy && k.a.isRemoved),
+					text: Object(O.e)(P, W)
+				}, K))), ("AutoModerator" === W.approvedBy || "AutoModerator" === W.bannedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(T.a, {
+					className: Object(l.a)(k.a.automoderator, !!W.bannedBy && k.a.isRemoved),
 					desc: Object(O.b)(P),
 					id: z,
-					onMouseEnter: W(z),
+					onMouseEnter: U(z),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: z,
 					text: Object(O.b)(P)
-				}, K))), Object(g.a)(U) && !M && o.a.createElement(n.Fragment, null, o.a.createElement(L.a, {
+				}, K))), Object(g.a)(W) && !M && o.a.createElement(n.Fragment, null, o.a.createElement(L.a, {
 					className: k.a.reportIcon,
-					desc: Object(O.d)(P, U.numReports),
+					desc: Object(O.d)(P, W.numReports),
 					id: ee,
-					onMouseEnter: W(ee),
+					onMouseEnter: U(ee),
 					onMouseLeave: J
 				}), o.a.createElement(p.c, N({
 					tooltipId: ee,
-					text: Object(O.d)(P, U.numReports)
+					text: Object(O.d)(P, W.numReports)
 				}, K))))
 			}))
 		},
@@ -709,4 +709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.7c969244630990731a3a.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.826a5b1113083e5d95f8.js.map

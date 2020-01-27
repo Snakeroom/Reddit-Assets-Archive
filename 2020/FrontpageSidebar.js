@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.7f1515f3382da08568d6.js
-// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4587614d1e972d953e41.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, s) {
@@ -110,7 +110,7 @@
 				V = s("./src/reddit/selectors/posts.ts"),
 				R = s("./src/reddit/selectors/subreddit.ts");
 			const H = Object(v.a)(T.b.Popular, j.N.TOP),
-				Q = Object(i.a)(e => Object(V.N)(e, {
+				Q = Object(i.a)(e => Object(V.O)(e, {
 					listingKey: H
 				}), e => U()(e.map(e => e.belongsTo.id))),
 				K = (Object(i.a)(e => {
@@ -262,7 +262,7 @@
 				xe = s.n(ge);
 			const Ee = e => e.type === he.f.Nsfw || e.type === he.f.Spoiler,
 				ke = Object(i.c)({
-					subredditOrProfile: V.T
+					subredditOrProfile: V.U
 				});
 			class ye extends a.a.PureComponent {
 				constructor() {
@@ -587,8 +587,8 @@
 			var tt = ze(et),
 				st = s("./src/reddit/selectors/user.ts");
 			const nt = Object(i.c)({
-				language: st.S,
-				recentPosts: V.Q
+				language: st.T,
+				recentPosts: V.R
 			});
 			var at = Object(r.b)(nt, (e, t) => ({
 					openLightbox: t => () => e(Object(de.a)(t.permalink))
@@ -822,7 +822,7 @@
 				}))
 			}))(Jt);
 			const qt = Object(i.c)({
-					isMod: st.K,
+					isMod: st.L,
 					isLoggedIn: e => e.user.temporaryGQL.isLoggedIn,
 					isUpAndComingExperiment: kt.b,
 					trendingSubredditIds: R.ab,
@@ -929,7 +929,7 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				E = s.n(x);
-			const k = Object(i.a)(e => e, b.I, b.c, g.S, (e, t, s, n) => {
+			const k = Object(i.a)(e => e, b.I, b.c, g.T, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
@@ -1487,4 +1487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.7f1515f3382da08568d6.js.map
+//# sourceMappingURL=FrontpageSidebar.4587614d1e972d953e41.js.map

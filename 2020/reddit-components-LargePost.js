@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a879ddf2ecb291b38b92.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.047be7ab5c18618ae3b3.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -1073,7 +1073,7 @@
 				}))
 			}
 			const re = Object(c.c)({
-				language: $.S,
+				language: $.T,
 				poll: (e, t) => {
 					let {
 						pollId: s
@@ -1366,10 +1366,10 @@
 				se = s("./src/reddit/constants/experiments.ts"),
 				oe = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				ne = s("./src/reddit/helpers/getRichTextContent/index.ts");
-			const re = Object(a.a)(C.N, e => e.some(ne.c)),
+			const re = Object(a.a)(C.O, e => e.some(ne.c)),
 				ae = Object(a.a)(re, e => e),
 				ie = (e, t) => Object(oe.c)(e, {
-					experimentName: se.z,
+					experimentName: se.D,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -1388,7 +1388,7 @@
 					const {
 						listingKey: s
 					} = t;
-					return s ? Object(C.N)(e, {
+					return s ? Object(C.O)(e, {
 						listingKey: s
 					}) : void 0
 				},
@@ -1409,7 +1409,7 @@
 					isCurrentUserProfilePost: C.h,
 					isFrontpageHome: j.g,
 					isM2MHomeRedirectEnabled: f.c,
-					language: P.S,
+					language: P.T,
 					isActive: C.g,
 					isPostChainDismissed: y.c,
 					isPostChained: y.d,
@@ -1428,8 +1428,8 @@
 					postHeightVariant: ie,
 					postIds: be,
 					showEditFlair: ce.a,
-					subredditOrProfile: C.T,
-					userIsOp: P.jb
+					subredditOrProfile: C.U,
+					userIsOp: P.kb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -1490,7 +1490,7 @@
 						showEditFlair: be,
 						subredditOrProfile: he,
 						userIsOp: ge
-					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ve = xe ? void 0 : u, fe = Object(l.a)(Q), ye = oe && fe, Oe = Object(c.a)(Q), je = Object(A.c)(le), Ce = !!le.media && le.media.type === b.n.RTJSON, Pe = ge && Ce, Ee = s ? s - F.a : void 0, we = !!ce && !!Object.keys(ce.options).filter(e => ce.options[e].userSelected).length, _e = !(O && j), Ne = (e => e === se.kb.OnlyTitles)(pe) && !Object(ee.a)(le), Ie = (e => e === se.kb.MediumHeight)(pe) && !Object(ee.a)(le), Se = (e => {
+					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ve = xe ? void 0 : u, fe = Object(l.a)(Q), ye = oe && fe, Oe = Object(c.a)(Q), je = Object(A.c)(le), Ce = !!le.media && le.media.type === b.n.RTJSON, Pe = ge && Ce, Ee = s ? s - F.a : void 0, we = !!ce && !!Object.keys(ce.options).filter(e => ce.options[e].userSelected).length, _e = !(O && j), Ne = (e => e === se.ob.OnlyTitles)(pe) && !Object(ee.a)(le), Ie = (e => e === se.ob.MediumHeight)(pe) && !Object(ee.a)(le), Se = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -2337,9 +2337,9 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
 				l = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => i.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
-					experimentEligibilitySelector: a.J,
-					experimentName: o.cb
-				}) === o.jb.Enabled
+					experimentEligibilitySelector: a.K,
+					experimentName: o.gb
+				}) === o.nb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -2500,4 +2500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.a879ddf2ecb291b38b92.js.map
+//# sourceMappingURL=reddit-components-LargePost.047be7ab5c18618ae3b3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.8bb7a5e766d29cd27c52.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.07e94a7b07f90a0824f9.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -346,7 +346,7 @@
 				j = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				y = s.n(j);
 			const C = Object(i.b)(() => Object(o.c)({
-				labelNSFW: c.R
+				labelNSFW: c.S
 			}));
 			t.a = C(Object(a.b)(e => {
 				let {
@@ -563,8 +563,8 @@
 					})
 				}
 			}
-			const R = Object(m.a)(W),
-				B = Object(m.a)(e => {
+			const B = Object(m.a)(W),
+				R = Object(m.a)(e => {
 					let t = "",
 						s = !1;
 					const r = e.richtext.map((r, n) => {
@@ -617,8 +617,8 @@
 					})
 				}),
 				z = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(N.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(N.a)(e).post, j.a.black, j.a.white) : e.textColor === S.e.Dark ? j.a.black : j.a.white,
-				H = u.a.wrapped(R, "TextFlair", T.a),
-				q = u.a.wrapped(B, "RichTextFlair", T.a),
+				H = u.a.wrapped(B, "TextFlair", T.a),
+				q = u.a.wrapped(R, "RichTextFlair", T.a),
 				Z = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -750,7 +750,7 @@
 				m = s("./src/reddit/models/Flair/index.ts"),
 				u = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: u.R
+					labelNSFW: u.S
 				}),
 				b = Object(a.b)(p),
 				h = e => {
@@ -1377,9 +1377,9 @@
 			s.d(t, "b", (function() {
 				return W
 			})), s.d(t, "a", (function() {
-				return B
+				return R
 			}));
-			var W, R = function(e, t) {
+			var W, B = function(e, t) {
 				var s = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1391,7 +1391,7 @@
 			! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(W || (W = {}));
-			const B = m.a.wrapped(Object(d.a)(e => {
+			const R = m.a.wrapped(Object(d.a)(e => {
 					var {
 						size: t,
 						titleColor: s,
@@ -1400,7 +1400,7 @@
 						children: o,
 						className: a,
 						redditStyle: c
-					} = e, d = R(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle"]);
+					} = e, d = B(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle"]);
 					let m = "";
 					switch (t) {
 						case W.ExtraLarge:
@@ -1436,7 +1436,7 @@
 						className: t,
 						disableVisited: s,
 						titleColor: r
-					} = e, n = R(e, ["className", "disableVisited", "titleColor"]);
+					} = e, n = B(e, ["className", "disableVisited", "titleColor"]);
 					return i.a.createElement(a.a, D({}, n, {
 						className: Object(l.a)(t, M.a.styledLink, {
 							[M.a.isVisitedEnabled]: !s
@@ -1447,7 +1447,7 @@
 					var {
 						disableVisited: t,
 						nowrap: s
-					} = e, r = R(e, ["disableVisited", "nowrap"]);
+					} = e, r = B(e, ["disableVisited", "nowrap"]);
 					return i.a.createElement("div", D({}, r, {
 						className: Object(l.a)(M.a.titleContainer, r.className, {
 							[M.a.isNoWrap]: s,
@@ -1484,7 +1484,7 @@
 							subredditId: s.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: L.W
+					shouldOpenPostInNewTab: L.X
 				}),
 				Q = Object(o.b)(Z),
 				G = e => {
@@ -1516,7 +1516,7 @@
 						leftFlair: t,
 						post: s
 					} = e, r = e.format ? e.format(s) : s.title, n = e.isCommentsPage ? I.a.PostComments : I.a.PostItem;
-					return i.a.createElement(B, {
+					return i.a.createElement(R, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -1760,10 +1760,10 @@
 						className: e.linkTextClassName
 					}, e.text)))
 				},
-				R = e => i.a.createElement(A, I({}, e, {
+				B = e => i.a.createElement(A, I({}, e, {
 					className: Object(o.a)(_.a.blurredThumbnail, e.className)
 				})),
-				B = Object(a.a)(e => {
+				R = Object(a.a)(e => {
 					const {
 						className: t,
 						containerClassName: s,
@@ -1807,7 +1807,7 @@
 				},
 				H = (e, t, s, n, o, a, c, l, d, m, u, p, b, h) => {
 					const f = e.source && !e.isSponsored || !1;
-					return Object(r.a)(c) ? n ? i.a.createElement(R, {
+					return Object(r.a)(c) ? n ? i.a.createElement(B, {
 						"data-click-id": "image",
 						src: c,
 						className: t,
@@ -1844,7 +1844,7 @@
 						type: e.media ? e.media.type : null
 					})
 				};
-			t.a = B
+			t.a = R
 		},
 		"./src/reddit/components/VerticalVotes/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1877,7 +1877,7 @@
 				g = s.n(x);
 			const v = Object(a.c)({
 					m2mIsEnabled: h.w,
-					isNightmode: f.U
+					isNightmode: f.V
 				}),
 				j = Object(o.b)(v),
 				y = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
@@ -2772,9 +2772,9 @@
 			})), s.d(t, "n", (function() {
 				return W
 			})), s.d(t, "c", (function() {
-				return R
-			})), s.d(t, "x", (function() {
 				return B
+			})), s.d(t, "x", (function() {
+				return R
 			})), s.d(t, "u", (function() {
 				return z
 			}));
@@ -3033,17 +3033,17 @@
 					}
 					return null
 				},
-				R = (e, t) => {
+				B = (e, t) => {
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				B = (e, t) => {
+				R = (e, t) => {
 					const s = t && e.economics.gifs[t];
 					return !!s && s.hasGifProduct
 				},
 				z = (e, t, s) => {
 					const n = r.d.spGiphy(e),
-						o = B(e, t),
+						o = R(e, t),
 						a = "replyToPost" !== s && Object(u.n)(e, {
 							commentId: s
 						}),
@@ -3109,4 +3109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.8bb7a5e766d29cd27c52.js.map
+//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.07e94a7b07f90a0824f9.js.map

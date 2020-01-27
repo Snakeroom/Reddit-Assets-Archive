@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cf2a76b43b0cdee5add0.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c43238fe1ba546e03cca.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "PostDraft~ProfilePosts~ProfileSnoobuilder"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -871,7 +871,7 @@
 						error: h,
 						metadata: f
 					} = await async function(e, t, n, o) {
-						const s = Object(j.S)(e),
+						const s = Object(j.T)(e),
 							a = n && n.allowedPostTypes,
 							c = n && n.name,
 							l = await Object(g.g)(t) || t.type,
@@ -1123,7 +1123,7 @@
 							subredditId: u.id
 						}));
 						const e = "/r/".concat(u.name, "/about/content");
-						return void t(Object(c.H)(e, !1))
+						return void t(Object(c.I)(e, !1))
 					}
 					const C = g.error;
 					t(U(C))
@@ -1145,7 +1145,7 @@
 						const e = p.body.data.createScheduledPost.scheduledPost;
 						e && Object(r.a)(Object(O.i)(Object(E.a)(e))(i));
 						const n = "/r/".concat(u.name, "/about/content");
-						return void t(Object(c.H)(n, !1))
+						return void t(Object(c.I)(n, !1))
 					}
 					const m = p.error;
 					t(U(m))
@@ -1213,7 +1213,7 @@
 								poll: n.poll
 							})), !p) {
 							const o = (n.path || "/user/".concat(Object(k.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
-							t(Object(c.H)(o, !1))
+							t(Object(c.I)(o, !1))
 						}
 					} else if (f) {
 						const e = C.error;
@@ -1403,7 +1403,7 @@
 				E = n("./src/reddit/components/CategoryTagList/index.m.less"),
 				y = n.n(E);
 			const v = Object(r.b)(() => Object(i.c)({
-				labelNSFW: c.R
+				labelNSFW: c.S
 			}));
 			t.a = v(Object(a.b)(e => {
 				let {
@@ -2201,10 +2201,10 @@
 				_ = E.a.div("ThumbnailContainer", C.a),
 				P = Object(a.c)({
 					isCurrentUserProfilePost: g.h,
-					language: f.S,
+					language: f.T,
 					post: g.I,
-					shouldOpenPostInNewTab: f.W,
-					subreddit: g.T
+					shouldOpenPostInNewTab: f.X,
+					subreddit: g.U
 				}),
 				M = Object(r.b)(P);
 			t.a = M(e => {
@@ -2669,7 +2669,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				p = n("./src/reddit/selectors/user.ts");
 			const m = Object(c.c)({
-					labelNSFW: p.R
+					labelNSFW: p.S
 				}),
 				h = Object(a.b)(m),
 				b = e => {
@@ -4598,7 +4598,7 @@
 					[m]: x
 				},
 				E = Object(i.c)({
-					language: c.S
+					language: c.T
 				}),
 				y = Object(r.b)(E),
 				v = (e, t) => ({
@@ -5069,7 +5069,7 @@
 				G = d.a.div("ErrorMessage", k.a),
 				Z = d.a.wrapped(E.b, "TrashIcon", k.a),
 				J = Object(i.c)({
-					language: O.S
+					language: O.T
 				}),
 				Q = Object(r.b)(J);
 			class X extends s.a.PureComponent {
@@ -5617,7 +5617,7 @@
 							subredditId: n.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: R.W
+					shouldOpenPostInNewTab: R.X
 				}),
 				q = Object(i.b)(z),
 				G = e => {
@@ -5834,7 +5834,7 @@
 				N = ["right", "top"];
 			var R = Object(r.b)(() => Object(i.c)({
 					post: O.I,
-					language: j.S
+					language: j.T
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(v.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -6171,7 +6171,7 @@
 						}))
 					},
 					isCreationPagePending: h.B,
-					language: j.S,
+					language: j.T,
 					profile: (e, t) => {
 						let {
 							pageLayer: n,
@@ -6359,7 +6359,7 @@
 				}).apply(this, arguments)
 			}
 			const M = Object(f.c)({
-					language: T.S
+					language: T.T
 				}),
 				N = i.a.div("Container", _.a),
 				R = i.a.div("Body", _.a),
@@ -6407,8 +6407,8 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(T.kb)(e, n)
-				}, T.S, (e, t, n) => ({
+					return Object(T.lb)(e, n)
+				}, T.T, (e, t, n) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					language: n,
 					postKarma: t ? t.postKarma : 0,
@@ -6664,9 +6664,9 @@
 					coinsToSpend: E.d,
 					givePremiumModalIsOpen: B.c,
 					hasFetchedModerators: f.k,
-					isEmployee: E.G,
-					isLoggedIn: E.J,
-					language: E.S,
+					isEmployee: E.H,
+					isLoggedIn: E.K,
+					language: E.T,
 					profile: f.j
 				}),
 				V = e => {
@@ -6832,7 +6832,7 @@
 						let {
 							profileName: n
 						} = t;
-						return Object(E.ib)(e, {
+						return Object(E.jb)(e, {
 							userName: n
 						})
 					},
@@ -6841,7 +6841,7 @@
 						let {
 							profileName: n
 						} = t;
-						return Object(E.hb)(e, {
+						return Object(E.ib)(e, {
 							userName: n
 						})
 					},
@@ -10144,7 +10144,7 @@
 				}, (e, t) => t ? e[t] : void 0),
 				dn = Object(c.b)((e, t) => ({
 					upload: ln(e, t),
-					language: Object(Ue.S)(e),
+					language: Object(Ue.T)(e),
 					isThumbnailSelectorOpen: Object(Ke.a)(e) === cn(t.block),
 					isRteVideoPosterEnabled: E.d.rteVideoPoster(e)
 				}), (e, t) => ({
@@ -15226,10 +15226,10 @@
 							o = t.redditStyle || Object(x.m)(e, {
 								subredditId: n
 							}),
-							s = Object(C.U)(e);
+							s = Object(C.V)(e);
 						return o || s
 					},
-					nigtmode: C.U,
+					nigtmode: C.V,
 					subredditId: u.m,
 					topPostVariant: f.d
 				}));
@@ -15338,7 +15338,7 @@
 				s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
-				language: r.S
+				language: r.T
 			});
 
 			function a(e) {
@@ -16882,7 +16882,7 @@
 				H = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
 				W = n.n(H);
 			const V = Object(d.c)({
-				language: v.S
+				language: v.T
 			});
 			class z extends s.a.Component {
 				constructor(e) {
@@ -20175,7 +20175,7 @@
 			function Nt(e, t) {
 				const n = Object(i.c)({
 					isOpen: e => Object(xe.a)(e) === t,
-					language: _.S
+					language: _.T
 				});
 				class o extends s.a.Component {
 					componentDidMount() {
@@ -20610,7 +20610,7 @@
 						const {
 							allowedPostTypes: t,
 							name: n
-						} = Object(T.g)(e), o = mo(e), s = Object(_.S)(e);
+						} = Object(T.g)(e), o = mo(e), s = Object(_.T)(e);
 						if (!o || !t) return null;
 						let r = "";
 						return !o.total || t.images || t.videos ? o.video && !t.videos ? r = "postCreation.mediaInput.videosAreNotAllowed" : !o.image && !o.gifvideo || t.images || (r = "postCreation.mediaInput.imagesAreNotAllowed") : r = "postCreation.mediaInput.mediaAreNotAllowed", r ? Object(ne.a)(s, r, {
@@ -20619,7 +20619,7 @@
 					})(e);
 					return o ? [o] : (e => {
 						const t = mo(e),
-							n = Object(_.S)(e);
+							n = Object(_.T)(e);
 						if (!t) return bo;
 						const o = [];
 						return t.image > p.R && o.push(Object(ne.a)(n, "postCreation.mediaInput.imagesLimitExceeded")), t.video + t.gifvideo > p.V && o.push(Object(ne.a)(n, "postCreation.mediaInput.videosLimitExceeded")), o
@@ -20638,10 +20638,10 @@
 							isProfile: i,
 							name: a
 						} = Object(T.g)(e),
-						c = Object(_.S)(e);
+						c = Object(_.T)(e);
 					if (!n) return Object(ne.a)(c, "postCreation.crosspostInput.sourcePostIdRequired");
 					if (!r) return Object(ne.a)(c, "postCreation.crosspostInput.destinationRequired");
-					const l = i ? Object(_.Y)(e, {
+					const l = i ? Object(_.Z)(e, {
 						userId: r
 					}) : r;
 					if (l) {
@@ -20746,7 +20746,7 @@
 						return !!n.name || Object(T.y)(e) || a
 					},
 					isScheduledPost: T.G,
-					language: _.S,
+					language: _.T,
 					postSchedule: T.S,
 					isEditingScheduledPost: e => !!Object(V.j)(e),
 					showContributorRequestFlow: e => Object(k.t)(e, f.e.Post),
@@ -20955,7 +20955,7 @@
 					return c ? Object(Io.b)(Object(_o.c)(a), null, o, r) : Object(Io.b)(Object(_o.b)(a), s, null, r)
 				}),
 				Fo = Object(i.c)({
-					language: _.S,
+					language: _.T,
 					pending: T.Q,
 					pickerValue: Lo
 				}),
@@ -21202,8 +21202,8 @@
 				Ys = Object(i.c)({
 					drafts: w.c,
 					isPending: w.b,
-					language: _.S,
-					maxDrafts: _.T
+					language: _.T,
+					maxDrafts: _.U
 				}),
 				$s = Object(r.b)(Ys);
 			class er extends s.a.PureComponent {
@@ -21288,7 +21288,7 @@
 				mr = n.n(pr);
 			const hr = Object(ne.e)("postCreation.pasteUrlHere"),
 				br = Object(i.c)({
-					language: _.S,
+					language: _.T,
 					pending: T.Q,
 					postCreationFieldErrors: $t,
 					subreddit: v.q,
@@ -21682,7 +21682,7 @@
 				Hi = Object(i.c)({
 					activeModalId: xe.a,
 					isPostPending: T.Q,
-					language: _.S,
+					language: _.T,
 					upload: e => e.uploads[g.m],
 					value: T.K
 				}),
@@ -21842,7 +21842,7 @@
 					isMediaUploadPending: T.L,
 					isPostPending: T.cb,
 					isPublicLink: T.F,
-					language: _.S,
+					language: _.T,
 					postToTwitter: T.U,
 					sendReplies: T.W,
 					sharingLink: w.i,
@@ -21923,7 +21923,7 @@
 				Ia = Te.a.wrapped(be.a, "PencilIcon", wa.a),
 				_a = Object(i.c)({
 					eventSchedule: T.o,
-					language: _.S,
+					language: _.T,
 					postSchedule: T.S
 				});
 			var Pa = Object(r.b)(_a, (e, t) => ({
@@ -22021,7 +22021,7 @@
 					destSubredditAboutInfo: T.f,
 					draftsCount: _.j,
 					isPending: T.Q,
-					language: _.S
+					language: _.T
 				});
 			var Ya = Object(r.b)(Xa, e => ({
 					showDraftsList: () => {
@@ -22055,7 +22055,7 @@
 				tc = n("./src/reddit/components/Governance/PollHelpText/index.m.less"),
 				nc = n.n(tc);
 			const oc = Object(i.c)({
-				language: _.S,
+				language: _.T,
 				subredditGovInfo: (e, t) => {
 					let {
 						subreddit: n
@@ -22500,7 +22500,7 @@
 					draft: w.d,
 					editorMode: T.m,
 					govType: e => e.creations.formData.govType,
-					language: _.S,
+					language: _.T,
 					markdownBody: T.J,
 					pending: T.Q,
 					poll: e => e.creations.formData.polls || void 0,
@@ -22676,7 +22676,7 @@
 				Tl = Object(i.c)({
 					canPostAsModerator: T.d,
 					disableTitleEdits: e => e.creations.formData.govType === Rc.a.ReplaceTopMod || e.creations.formData.govType === Rc.a.Spinoff,
-					language: _.S,
+					language: _.T,
 					pending: T.Q,
 					postCreationFieldErrors: $t,
 					postRequirements: T.db,
@@ -22784,7 +22784,7 @@
 				Al = Te.a.div("OverlayContent", Fl.a),
 				Kl = Te.a.div("ExplanationText", Fl.a),
 				Ul = Object(i.c)({
-					language: _.S
+					language: _.T
 				});
 			var Hl = Object(r.b)(Ul, (e, t) => ({
 				onChange: n => {
@@ -23056,7 +23056,7 @@
 					destSubreddit: T.g,
 					govType: e => e.creations.formData.govType,
 					isTabsDisabled: Kd,
-					language: _.S,
+					language: _.T,
 					pending: T.Q,
 					submissionType: T.a,
 					subreddit: v.q
@@ -23168,11 +23168,11 @@
 					flair: T.q,
 					hasError: T.r,
 					havePostContent: T.w,
-					language: _.S,
+					language: _.T,
 					linkBody: T.I,
 					markdownBody: T.J,
 					rteBody: T.V,
-					maxDrafts: _.T,
+					maxDrafts: _.U,
 					modalId: T.M,
 					needsCaptcha: T.N,
 					nextSubreddit: T.O,
@@ -23479,7 +23479,7 @@
 				iu = n("./src/telemetry/models/Timer.ts");
 			const au = Object(i.c)({
 					destSubreddit: T.g,
-					language: _.S,
+					language: _.T,
 					user: _.i
 				}),
 				cu = Object(r.b)(au, (e, t) => {
@@ -23906,10 +23906,10 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const i = e => !!(e => {
 				const t = Object(s.c)(e, {
-					experimentEligibilitySelector: e => Object(r.J)(e),
-					experimentName: o.I
+					experimentEligibilitySelector: e => Object(r.K)(e),
+					experimentName: o.M
 				});
-				return Object(o.Sb)(t) ? void 0 : t
+				return Object(o.Wb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
@@ -23928,9 +23928,9 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
 				l = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
-					experimentEligibilitySelector: i.J,
-					experimentName: o.cb
-				}) === o.jb.Enabled
+					experimentEligibilitySelector: i.K,
+					experimentName: o.gb
+				}) === o.nb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -24195,4 +24195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.cf2a76b43b0cdee5add0.js.map
+//# sourceMappingURL=PostCreation.c43238fe1ba546e03cca.js.map

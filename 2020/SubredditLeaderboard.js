@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.65fc5ad8af71f97aa94b.js
-// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c0fd6ae5c51f8fb46990.js
+// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, a) {
@@ -661,7 +661,7 @@
 						} = t;
 						return Object(B.b)(e, a)
 					},
-					isMod: A.K,
+					isMod: A.L,
 					rankings: (e, t) => {
 						let {
 							categoryId: a
@@ -748,10 +748,10 @@
 			var V = Object(m.b)(F(U)),
 				Z = a("./src/reddit/components/CategoryPickerWidget/index.tsx"),
 				Q = a("./src/lib/lessComponent.tsx"),
-				K = a("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				Y = a("./src/reddit/components/CommunitiesDirectoryWidget/index.m.less"),
-				G = a.n(Y);
-			const q = Q.a.a("Link", G.a),
+				Y = a("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				G = a("./src/reddit/components/CommunitiesDirectoryWidget/index.m.less"),
+				K = a.n(G);
+			const q = Q.a.a("Link", K.a),
 				X = e => {
 					const t = "#" === e ? "0" : e.toLowerCase();
 					return o.a.createElement(q, {
@@ -759,14 +759,14 @@
 						key: e
 					}, e)
 				};
-			var J = e => o.a.createElement(K.a, {
-					className: G.a.Widget,
+			var J = e => o.a.createElement(Y.a, {
+					className: K.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
 				}, o.a.createElement("div", {
-					className: G.a.Title
+					className: K.a.Title
 				}, o.a.createElement(C.c, null, "Browse Communities A-Z")), o.a.createElement("div", {
-					className: G.a.LinkContainer
+					className: K.a.LinkContainer
 				}, Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ#").map(X))),
 				z = a("./src/reddit/components/SidebarContainer/index.tsx"),
 				$ = a("./src/reddit/components/SidebarSpacer/index.tsx"),
@@ -812,7 +812,7 @@
 					} = t;
 					return Object(b.b)(a.params.categoryName || "")
 				},
-				le = Object(u.Rb)(g.f),
+				le = Object(u.Vb)(g.f),
 				me = Object(i.c)({
 					categories: e => Object(ne.e)(e, {
 						categoriesOrder: le
@@ -901,4 +901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.65fc5ad8af71f97aa94b.js.map
+//# sourceMappingURL=SubredditLeaderboard.c0fd6ae5c51f8fb46990.js.map
