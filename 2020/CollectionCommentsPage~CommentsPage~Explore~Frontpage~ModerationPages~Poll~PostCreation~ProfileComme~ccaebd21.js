@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.836fc95cae586473aeaa.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.75a73cdeb4ac947df76c.js
+// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21"], {
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
@@ -64,8 +64,8 @@
 				p = s("./src/reddit/actions/postCreation/general.ts"),
 				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = s("./src/reddit/constants/keycodes.ts"),
-				h = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/controls/Input/index.tsx"),
+				x = s("./src/reddit/controls/Button/index.tsx"),
+				h = s("./src/reddit/controls/Input/index.tsx"),
 				C = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				b = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Search/index.tsx"),
@@ -75,19 +75,19 @@
 				_ = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/lib/timeAgo/index.ts"),
 				j = s("./src/reddit/controls/MetaSeparator/index.tsx"),
-				T = s("./src/reddit/helpers/name/index.ts"),
-				w = s("./src/reddit/models/Subreddit/index.ts"),
-				I = s("./src/reddit/models/User/index.ts"),
+				I = s("./src/reddit/helpers/name/index.ts"),
+				T = s("./src/reddit/models/Subreddit/index.ts"),
+				w = s("./src/reddit/models/User/index.ts"),
 				y = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
 				M = s.n(P),
-				B = s("./src/lib/lessComponent.tsx");
-			const N = B.a.div("Container", M.a),
-				S = B.a.h2("PostTitle", M.a),
-				k = B.a.div("MetaLine", M.a),
-				F = B.a.span("SubredditName", M.a),
-				L = B.a.time("InfoSpan", M.a),
-				R = Object(c.c)({
+				N = s("./src/lib/lessComponent.tsx");
+			const B = N.a.div("Container", M.a),
+				S = N.a.h2("PostTitle", M.a),
+				k = N.a.div("MetaLine", M.a),
+				F = N.a.span("SubredditName", M.a),
+				L = N.a.time("InfoSpan", M.a),
+				A = Object(c.c)({
 					subreddit: (e, t) => {
 						let {
 							collection: {
@@ -100,7 +100,7 @@
 					},
 					user: _.i
 				});
-			class A extends a.a.PureComponent {
+			class R extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						this.props.onClick(this.props.collection.id)
@@ -113,8 +113,8 @@
 						subreddit: s,
 						user: o,
 						onHoverActionText: r
-					} = this.props, i = s && Object(w.e)(s) && o ? Object(T.c)(Object(I.f)(o)) : s ? s.displayText : "", c = e.postIds.length;
-					return a.a.createElement(N, {
+					} = this.props, i = s && Object(T.e)(s) && o ? Object(I.c)(Object(w.f)(o)) : s ? s.displayText : "", c = e.postIds.length;
+					return a.a.createElement(B, {
 						onClick: this.onClick,
 						className: M.a.container
 					}, a.a.createElement(S, {
@@ -130,7 +130,7 @@
 					}, a.a.createElement("span", null, r)))
 				}
 			}
-			var D = Object(i.b)(R)(A),
+			var D = Object(i.b)(A)(R),
 				X = s("./src/reddit/helpers/trackers/postCollection.ts"),
 				W = s("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				H = s.n(W);
@@ -140,20 +140,20 @@
 				V = Object(n.e)("postCreation.collections.collectionsListTitle"),
 				G = Object(n.e)("postCreation.collections.createCollection"),
 				Q = "".concat(o.a.assetPath, "/img/snoo-drafts.png"),
-				Z = B.a.div("TopRow", H.a),
-				z = B.a.div("TitleRow", H.a),
-				Y = B.a.div("DetailsContainer", H.a),
-				q = B.a.wrapped(v.a, "ButtonRow", H.a),
-				$ = B.a.div("CloseWrapper", H.a),
-				ee = B.a.wrapped(C.a, "Close", H.a),
-				te = B.a.div("Empty", H.a),
-				se = B.a.img("EmptyImage", H.a),
-				ne = B.a.p("EmptyText", H.a),
-				oe = B.a.div("FilterWrapper", H.a),
-				re = B.a.wrapped(x.a, "FilterInput", H.a),
-				ae = B.a.wrapped(f.a, "SearchIcon", H.a),
-				ie = B.a.wrapped(b.a, "PlusIcon", H.a),
-				ce = B.a.wrapped(h.j, "CreateCollectionButton", H.a),
+				Z = N.a.div("TopRow", H.a),
+				z = N.a.div("TitleRow", H.a),
+				q = N.a.div("DetailsContainer", H.a),
+				Y = N.a.wrapped(v.a, "ButtonRow", H.a),
+				$ = N.a.div("CloseWrapper", H.a),
+				ee = N.a.wrapped(C.a, "Close", H.a),
+				te = N.a.div("Empty", H.a),
+				se = N.a.img("EmptyImage", H.a),
+				ne = N.a.p("EmptyText", H.a),
+				oe = N.a.div("FilterWrapper", H.a),
+				re = N.a.wrapped(h.a, "FilterInput", H.a),
+				ae = N.a.wrapped(f.a, "SearchIcon", H.a),
+				ie = N.a.wrapped(b.a, "PlusIcon", H.a),
+				ce = N.a.wrapped(x.j, "CreateCollectionButton", H.a),
 				le = Object(d.a)((e, t) => {
 					const s = t.toLowerCase();
 					return e.filter(e => e.title.toLowerCase().includes(s))
@@ -237,7 +237,7 @@
 						placeholder: J(t),
 						value: this.state.filterStr,
 						onChange: this.onFilterStringChange
-					}))), a.a.createElement(Y, null, n), a.a.createElement(q, null, a.a.createElement(ce, {
+					}))), a.a.createElement(q, null, n), a.a.createElement(Y, null, a.a.createElement(ce, {
 						onClick: this.handleCreateCollectionClicked
 					}, a.a.createElement(ie, null), G(t))))
 				}
@@ -290,8 +290,8 @@
 				p = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				m = s("./src/reddit/constants/postCreation.ts"),
 				u = s("./src/reddit/controls/Button/index.tsx"),
-				h = s("./src/reddit/controls/ErrorText/index.tsx"),
-				x = s("./src/reddit/controls/Input/index.tsx"),
+				x = s("./src/reddit/controls/ErrorText/index.tsx"),
+				h = s("./src/reddit/controls/Input/index.tsx"),
 				C = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				b = s("./src/reddit/icons/svgs/AddCollection/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -301,28 +301,28 @@
 				_ = s("./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.m.less"),
 				O = s.n(_),
 				j = s("./src/lib/lessComponent.tsx");
-			const T = Object(i.e)("postCreation.cancel"),
-				w = Object(i.e)("postCreation.create"),
-				I = Object(i.e)("postCreation.save"),
+			const I = Object(i.e)("postCreation.cancel"),
+				T = Object(i.e)("postCreation.create"),
+				w = Object(i.e)("postCreation.save"),
 				y = Object(i.e)("postCreation.collections.createCollection"),
 				P = Object(i.e)("postCreation.collections.createModal.details"),
 				M = Object(i.e)("postCreation.collections.createModal.giveATitle"),
-				B = Object(i.e)("postCreation.collections.createModal.editTitle"),
-				N = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
+				N = Object(i.e)("postCreation.collections.createModal.editTitle"),
+				B = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
 				S = j.a.div("Container", O.a),
 				k = j.a.div("Content", O.a),
 				F = j.a.div("TitleRow", O.a),
 				L = j.a.div("Details", O.a),
-				R = j.a.wrapped(p.e, "Footer", O.a),
-				A = j.a.wrapped(u.i, "CancelButton", O.a),
+				A = j.a.wrapped(p.e, "Footer", O.a),
+				R = j.a.wrapped(u.i, "CancelButton", O.a),
 				D = j.a.div("CloseWrapper", O.a),
 				X = j.a.wrapped(f.a, "CloseIcon", O.a),
 				W = j.a.label("Label", O.a),
-				H = j.a.wrapped(x.a, "TitleInput", O.a),
+				H = j.a.wrapped(h.a, "TitleInput", O.a),
 				U = j.a.wrapped(b.a, "AddCollectionIcon", O.a),
 				K = j.a.wrapped(u.f, "PrimaryActionButton", O.a),
 				J = j.a.wrapped(C.a, "LoadingIcon", O.a),
-				V = j.a.wrapped(h.b, "ErrorText", O.a),
+				V = j.a.wrapped(x.b, "ErrorText", O.a),
 				G = Object(a.c)({
 					collection: g.q,
 					error: g.c,
@@ -368,17 +368,17 @@
 						error: t,
 						isPending: s,
 						language: n
-					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? w : I, c = r ? M : B;
+					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? T : w, c = r ? M : N;
 					return o.a.createElement(S, null, o.a.createElement(D, {
 						onClick: this.props.onCancel
 					}, o.a.createElement(X, null)), o.a.createElement(k, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(F, null, o.a.createElement(U, null), y(n)), o.a.createElement(L, null, P(n))), o.a.createElement(W, null, c(n), o.a.createElement(H, {
 						maxLength: m.e,
 						onChange: this.onTitleChange,
-						placeholder: N(n),
+						placeholder: B(n),
 						value: this.state.collectionTitle
-					}))), o.a.createElement(R, null, o.a.createElement(v.a, null, o.a.createElement(A, {
+					}))), o.a.createElement(A, null, o.a.createElement(v.a, null, o.a.createElement(R, {
 						onClick: this.props.onCancel
-					}, T(n)), o.a.createElement(K, {
+					}, I(n)), o.a.createElement(K, {
 						onClick: this.onPrimaryButtonClick,
 						disabled: s || !a
 					}, s ? o.a.createElement(J, {
@@ -399,7 +399,7 @@
 		"./src/reddit/components/PostFlairPicker/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return T
+				return I
 			}));
 			var n, o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -411,8 +411,8 @@
 				p = s("./src/reddit/components/FlairPickerTitle/index.tsx"),
 				m = s("./src/reddit/components/FlairPickerWrapper/index.tsx"),
 				u = s("./src/reddit/components/FlairPreview/index.tsx"),
-				h = s("./src/reddit/components/FlairSearch/index.tsx"),
-				x = s("./src/reddit/controls/Button/index.tsx"),
+				x = s("./src/reddit/components/FlairSearch/index.tsx"),
+				h = s("./src/reddit/controls/Button/index.tsx"),
 				C = s("./src/reddit/i18n/utils.ts"),
 				b = s("./src/reddit/models/Flair/index.ts"),
 				f = s("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -425,17 +425,17 @@
 			! function(e) {
 				e.UNSET = "unset", e.MOD_FLATLIST = "postModFlatlist", e.POST_OVERFLOW = "postOverlay"
 			}(n || (n = {}));
-			const T = function(e) {
+			const I = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 						s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.UNSET;
 					return "PostFlair__Modal-[postId: ".concat(e, "]-isOverlay[").concat(t, "]-position[").concat(s, "]")
 				},
-				w = Object(i.c)({
+				T = Object(i.c)({
 					flairData: v.d,
 					subreddit: g.S,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
-			class I extends r.a.Component {
+			class w extends r.a.Component {
 				constructor(e) {
 					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
 						const {
@@ -492,7 +492,7 @@
 						flair: t,
 						flairTemplateType: b.d.LinkFlair,
 						placeholderText: Object(C.c)("Post Title")
-					}), r.a.createElement(h.a, {
+					}), r.a.createElement(x.a, {
 						flair: t,
 						flairTemplateType: b.d.LinkFlair,
 						subredditId: o.id,
@@ -501,18 +501,18 @@
 						onChange: this.setSelectedFlair
 					}), r.a.createElement("div", {
 						className: j.a.buttonsRow
-					}, r.a.createElement(x.f, {
+					}, r.a.createElement(h.f, {
 						disabled: !l,
 						onClick: this.onApply
-					}, Object(C.c)("Apply")), r.a.createElement(x.i, {
+					}, Object(C.c)("Apply")), r.a.createElement(h.i, {
 						className: j.a.clearButton,
 						onClick: this.onClear
 					}, Object(C.c)("Clear Flair"))))
 				}
 			}
-			const y = Object(a.b)(w, (e, t) => ({
+			const y = Object(a.b)(T, (e, t) => ({
 				closeModal: () => e(Object(d.i)(t.modalId))
-			}))(I);
+			}))(w);
 			t.a = Object(l.a)(Object(c.b)(y))
 		},
 		"./src/reddit/components/RestrictedFlatlistButton/index.m.less": function(e, t, s) {
@@ -665,13 +665,13 @@
 				p = s("./src/lib/classNames/index.ts"),
 				m = s("./src/reddit/actions/modal.ts"),
 				u = s("./src/reddit/i18n/utils.ts"),
-				h = s("./src/reddit/selectors/activeModalId.ts"),
-				x = s("./src/higherOrderComponents/asModal/index.tsx"),
+				x = s("./src/reddit/selectors/activeModalId.ts"),
+				h = s("./src/higherOrderComponents/asModal/index.tsx"),
 				C = s("./src/reddit/controls/Button/index.tsx"),
 				b = s("./src/reddit/layout/row/Inline/index.tsx"),
 				f = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				v = s.n(f);
-			var g = Object(x.a)(e => {
+			var g = Object(h.a)(e => {
 					const {
 						children: t,
 						title: s
@@ -692,12 +692,12 @@
 				E = s("./src/reddit/controls/ErrorText/index.m.less"),
 				_ = s.n(E);
 			s.d(t, "a", (function() {
-				return w
+				return T
 			})), s.d(t, "c", (function() {
-				return I
+				return w
 			}));
 			const O = Object(d.c)({
-				activeModalId: h.a
+				activeModalId: x.a
 			});
 			class j extends c.a.Component {
 				constructor(e) {
@@ -750,10 +750,10 @@
 					}, n || e))
 				}
 			}
-			const T = Object(l.b)(O, e => ({
+			const I = Object(l.b)(O, e => ({
 					toggleErrorTextModal: t => e(Object(m.i)(t))
 				}))(j),
-				w = e => {
+				T = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -763,17 +763,17 @@
 					} = e, a = r.length ? r : o ? [o] : [];
 					return a.length ? c.a.createElement("div", {
 						className: t
-					}, a.map((e, t) => c.a.createElement(T, {
+					}, a.map((e, t) => c.a.createElement(I, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				I = e => c.a.createElement(w, {
+				w = e => c.a.createElement(T, {
 					fallbackMessage: Object(u.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = T
+			t.b = I
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
 			"use strict";
@@ -781,6 +781,36 @@
 				o = s("./src/reddit/controls/Input/index.m.less"),
 				r = s.n(o);
 			t.a = n.a.input("input", r.a)
+		},
+		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, s) {
+			e.exports = {
+				loadingIcon: "_3LwT7hgGcSjmJ7ng7drAuq",
+				spin: "ibDwUVR1CAykturOgqOS5",
+				mCentered: "_2qr28EeyPvBWAsPKl-KuWN"
+			}
+		},
+		"./src/reddit/controls/LoadingIcon/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				r = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/controls/LoadingIcon/index.m.less"),
+				i = s.n(a);
+			t.a = e => {
+				let {
+					center: t,
+					className: s,
+					sizePx: n
+				} = e;
+				return o.a.createElement("div", {
+					className: Object(r.a)(i.a.loadingIcon, s, {
+						[i.a.mCentered]: t
+					}),
+					style: {
+						"--sizePx": "".concat(n, "px")
+					}
+				})
+			}
 		},
 		"./src/reddit/icons/fonts/Calendar/index.tsx": function(e, t, s) {
 			"use strict";
@@ -956,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.836fc95cae586473aeaa.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.75a73cdeb4ac947df76c.js.map

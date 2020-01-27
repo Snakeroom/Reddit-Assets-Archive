@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337.44a66937fad893595c11.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337.17ade11b2edbc8707e1c.js
+// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337"], {
 		"./src/lib/timezone/index.ts": function(e, t, o) {
@@ -54,7 +54,7 @@
 					let s = "";
 					try {
 						s = new Intl.DateTimeFormat("en-US", c).format(new Date(o))
-					} catch (g) {
+					} catch (f) {
 						return
 					}
 					const [r, i, l] = s.replace(", ", " ").split(" "), [a, d, u] = r.trim().split("/").map(Number), [p, b, m] = i.trim().split(":").map(Number), O = Date.UTC(u, a - 1, d, p, b, m), j = new Date(o).setMilliseconds(0) - O;
@@ -126,12 +126,12 @@
 						collection_id: t
 					}
 				}),
-				g = o("./src/config.ts");
-			var f = (e, t) => Object(u.b)(Object(p.a)(e, [b.a]), {
-				endpoint: "".concat(g.a.gatewayUrl, "/desktopapi/v1/subreddit_collections/").concat(t),
+				f = o("./src/config.ts");
+			var g = (e, t) => Object(u.b)(Object(p.a)(e, [b.a]), {
+				endpoint: "".concat(f.a.gatewayUrl, "/desktopapi/v1/subreddit_collections/").concat(t),
 				method: d.bb.GET
 			});
-			var x = (e, t, o) => Object(u.b)(Object(p.a)(e, [b.a]), {
+			var C = (e, t, o) => Object(u.b)(Object(p.a)(e, [b.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/v1/collections/remove_post_in_collection.json"),
 				method: d.bb.POST,
 				data: {
@@ -139,7 +139,7 @@
 					link_fullname: o
 				}
 			});
-			var C = (e, t, o) => Object(u.b)(Object(p.a)(e, [b.a]), {
+			var x = (e, t, o) => Object(u.b)(Object(p.a)(e, [b.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/v1/collections/update_collection_title.json"),
 				method: d.bb.POST,
 				data: {
@@ -173,24 +173,24 @@
 				}),
 				w = o("./src/reddit/helpers/overlay/index.ts"),
 				E = o("./src/reddit/helpers/path/index.ts"),
-				y = o("./src/reddit/models/Toast/index.ts"),
-				k = o("./src/reddit/selectors/postCollection.ts"),
+				k = o("./src/reddit/models/Toast/index.ts"),
+				y = o("./src/reddit/selectors/postCollection.ts"),
 				h = o("./src/reddit/selectors/posts.ts"),
 				M = o("./src/reddit/selectors/subreddit.ts");
 			o.d(t, "b", (function() {
 				return P
 			})), o.d(t, "e", (function() {
-				return L
-			})), o.d(t, "g", (function() {
 				return U
+			})), o.d(t, "g", (function() {
+				return N
 			})), o.d(t, "a", (function() {
-				return q
+				return z
 			})), o.d(t, "c", (function() {
-				return K
+				return W
 			})), o.d(t, "h", (function() {
 				return Z
 			})), o.d(t, "f", (function() {
-				return H
+				return J
 			})), o.d(t, "d", (function() {
 				return ne
 			}));
@@ -228,38 +228,38 @@
 						o(D(e))
 					}
 					return i
-				}, A = Object(r.a)(i.f), L = e => async (t, o, n) => {
+				}, A = Object(r.a)(i.f), U = e => async (t, o, n) => {
 					let {
 						apiContext: s
 					} = n;
 					const r = o(),
 						i = r.postCollection.subredditToIds || {};
 					if (Object.keys(i).length > 0) return;
-					const a = await f(s(), e);
+					const a = await g(s(), e);
 					a.ok ? t(A(a.body)) : t(Object(l.e)({
-						kind: y.b.Error,
+						kind: k.b.Error,
 						text: Object(c.a)(r.user.language, "error.type.generic")
 					}))
-				}, N = Object(r.a)(i.g), U = (e, t, o) => async (n, s, r) => {
+				}, L = Object(r.a)(i.g), N = (e, t, o) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
-					if ((await x(i(), e, t)).ok) {
+					if ((await C(i(), e, t)).ok) {
 						const r = s(),
 							i = Object(h.I)(r, {
 								postId: t
 							}),
 							a = i && i.title || "",
-							d = Object(k.q)(r, {
+							d = Object(y.q)(r, {
 								collectionId: e
 							}),
 							u = (d && d.postIds && d.postIds.indexOf(t) || -1) - 1;
-						if (n(N({
+						if (n(L({
 								collectionId: e,
 								postId: t
 							})), o && u >= 0) {
 							const t = s(),
-								o = Object(k.q)(t, {
+								o = Object(y.q)(t, {
 									collectionId: e
 								}),
 								c = o && o.postIds && o.postIds[u] || "",
@@ -269,21 +269,21 @@
 							r && r.permalink && n(Object(w.a)(r.permalink))
 						}
 						n(Object(l.e)({
-							kind: y.b.SuccessMod,
+							kind: k.b.SuccessMod,
 							text: Object(c.a)(r.user.language, "collection.postRemovedSuccess", {
 								postTitle: a
 							}),
 							buttonText: Object(c.a)(r.user.language, "collection.undo"),
-							buttonAction: q(e, t)
+							buttonAction: z(e, t)
 						}))
 					} else {
 						const e = s();
 						n(Object(l.e)({
-							kind: y.b.Error,
+							kind: k.b.Error,
 							text: Object(c.a)(e.user.language, "error.type.generic")
 						}))
 					}
-				}, B = Object(r.a)(i.a), F = Object(r.a)(i.t), q = (e, t) => async (o, n, s) => {
+				}, B = Object(r.a)(i.a), F = Object(r.a)(i.t), z = (e, t) => async (o, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -299,12 +299,12 @@
 						const n = Object(h.I)(i, {
 								postId: t
 							}),
-							s = Object(k.q)(i, {
+							s = Object(y.q)(i, {
 								collectionId: e
 							}),
 							r = s && s.title || "";
 						o(Object(l.e)({
-							kind: y.b.SuccessMod,
+							kind: k.b.SuccessMod,
 							text: Object(c.a)(i.user.language, "collection.postAddedSuccess", {
 								title: r
 							}),
@@ -312,10 +312,10 @@
 							buttonAction: Object(w.a)(n.permalink)
 						}))
 					} else o(Object(l.e)({
-						kind: y.b.Error,
+						kind: k.b.Error,
 						text: Object(c.a)(i.user.language, "error.type.generic")
 					}))
-				}, z = Object(r.a)(i.e), K = (e, t) => async (o, r, i) => {
+				}, K = Object(r.a)(i.e), W = (e, t) => async (o, r, i) => {
 					let {
 						apiContext: a
 					} = i;
@@ -323,46 +323,46 @@
 					if ((await j(a(), e)).ok) {
 						const {
 							url: r
-						} = d.platform.currentPage, i = Object(k.q)(d, {
+						} = d.platform.currentPage, i = Object(y.q)(d, {
 							collectionId: e
 						}), a = i && i.title || "", u = i && i.subredditId, p = u ? Object(M.c)(d, u) : "/";
-						o(z({
+						o(K({
 							collectionId: e,
 							collection: i
 						})), o(t ? Object(n.c)(Object(s.a)(r, ["collection"])) : Object(n.b)(p)), o(Object(l.e)({
-							kind: y.b.SuccessMod,
+							kind: k.b.SuccessMod,
 							text: Object(c.a)(d.user.language, "collection.collectionDeletedSuccess", {
 								title: a
 							})
 						}))
 					} else o(Object(l.e)({
-						kind: y.b.Error,
+						kind: k.b.Error,
 						text: Object(c.a)(d.user.language, "error.type.generic")
 					}))
-				}, W = Object(r.a)(i.r), G = Object(r.a)(i.n), R = Object(r.a)(i.s), Z = (e, t) => async (o, n, s) => {
+				}, q = Object(r.a)(i.r), G = Object(r.a)(i.n), R = Object(r.a)(i.s), Z = (e, t) => async (o, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					o(W());
-					const i = await C(r(), e, t);
+					o(q());
+					const i = await x(r(), e, t);
 					let a = !1;
 					const d = n();
 					if (i.ok) o(R({
 						collectionId: e,
 						newTitle: t
 					})), o(Object(l.e)({
-						kind: y.b.SuccessMod,
+						kind: k.b.SuccessMod,
 						text: Object(c.a)(d.user.language, "collection.editModal.titleUpdateSuccess")
 					})), a = !0;
 					else {
 						const e = i.error;
 						o(G(e)), o(Object(l.e)({
-							kind: y.b.Error,
+							kind: k.b.Error,
 							text: Object(c.a)(d.user.language, "error.type.generic")
 						}))
 					}
 					return a
-				}, V = Object(r.a)(i.l), Y = Object(r.a)(i.m), J = Object(r.a)(i.k), H = e => async (t, o) => {
+				}, Y = Object(r.a)(i.l), V = Object(r.a)(i.m), H = Object(r.a)(i.k), J = e => async (t, o) => {
 					const c = o().platform.currentPage.locationState;
 					t(!(!c || !c[a.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(n.b)(Object(E.b)(e.permalink)))
 				}, X = Object(r.a)(i.i), Q = Object(r.a)(i.j), $ = Object(r.a)(i.h), ee = Object(r.a)(i.p), te = Object(r.a)(i.o), oe = Object(r.a)(i.q), ne = e => async t => {
@@ -386,33 +386,33 @@
 							collectionId: e,
 							postIds: t
 						})), o(Object(l.e)({
-							kind: y.b.SuccessMod,
+							kind: k.b.SuccessMod,
 							text: Object(c.a)(d.user.language, "collection.editModal.reorderCollectionSuccess")
 						})), a = !0) : (o($({
 							error: i.error
 						})), o(Object(l.e)({
-							kind: y.b.Error,
+							kind: k.b.Error,
 							text: Object(c.a)(d.user.language, "error.type.generic")
 						}))), a
 					})(n, i))), a && o.push(t(Z(n, a))), void 0 !== s && o.push(t(((e, t) => async (o, n, s) => {
 						let {
 							apiContext: r
 						} = s;
-						o(V());
+						o(Y());
 						const i = await I(r(), e, t);
 						let a = !1;
 						const d = n();
-						if (i.ok) o(Y({
+						if (i.ok) o(V({
 							collectionId: e,
 							newDescription: t
 						})), o(Object(l.e)({
-							kind: y.b.SuccessMod,
+							kind: k.b.SuccessMod,
 							text: Object(c.a)(d.user.language, "collection.editModal.descriptionUpdateSuccess")
 						})), a = !0;
 						else {
 							const e = i.error;
-							o(J(e)), o(Object(l.e)({
-								kind: y.b.Error,
+							o(H(e)), o(Object(l.e)({
+								kind: k.b.Error,
 								text: Object(c.a)(d.user.language, "error.type.generic")
 							}))
 						}
@@ -429,13 +429,13 @@
 							collectionId: e,
 							newLayout: t
 						})), o(Object(l.e)({
-							kind: y.b.SuccessMod,
+							kind: k.b.SuccessMod,
 							text: Object(c.a)(d.user.language, "collection.editModal.layoutUpdateSuccess")
 						})), a = !0;
 						else {
 							const e = i.error;
 							o(te(e)), o(Object(l.e)({
-								kind: y.b.Error,
+								kind: k.b.Error,
 								text: Object(c.a)(d.user.language, "error.type.generic")
 							}))
 						}
@@ -522,12 +522,12 @@
 				m = o("./src/reddit/icons/fonts/Menu/index.tsx"),
 				O = o("./src/reddit/selectors/tooltip.ts"),
 				j = o("./src/reddit/components/OverflowMenu/index.m.less"),
-				g = o.n(j);
-			const f = l.a.wrapped(p.a, "_Dropdown", g.a),
-				x = Object(u.a)(f),
-				C = l.a.button("MenuButton", g.a),
-				_ = l.a.wrapped(m.a, "MenuIcon", g.a),
-				I = l.a.wrapped(b.b, "DropdownRow", g.a),
+				f = o.n(j);
+			const g = l.a.wrapped(p.a, "_Dropdown", f.a),
+				C = Object(u.a)(g),
+				x = l.a.button("MenuButton", f.a),
+				_ = l.a.wrapped(m.a, "MenuIcon", f.a),
+				I = l.a.wrapped(b.b, "DropdownRow", f.a),
 				v = Object(r.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
@@ -549,18 +549,18 @@
 				E = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = w(e => c.a.createElement(C, {
+			t.b = w(e => c.a.createElement(x, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": Object(d.c)("more options"),
 				className: Object(i.a)(e.className, {
-					[g.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+					[f.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
 				onClick: E(e),
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
-			}, e.icon ? e.icon : c.a.createElement(_, null), c.a.createElement(x, {
+			}, e.icon ? e.icon : c.a.createElement(_, null), c.a.createElement(C, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -568,36 +568,6 @@
 				targetPosition: e.targetPosition,
 				tooltipPosition: e.tooltipPosition
 			}, e.children)))
-		},
-		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, o) {
-			e.exports = {
-				loadingIcon: "_3LwT7hgGcSjmJ7ng7drAuq",
-				spin: "ibDwUVR1CAykturOgqOS5",
-				mCentered: "_2qr28EeyPvBWAsPKl-KuWN"
-			}
-		},
-		"./src/reddit/controls/LoadingIcon/index.tsx": function(e, t, o) {
-			"use strict";
-			var n = o("./node_modules/react/index.js"),
-				c = o.n(n),
-				s = o("./src/lib/classNames/index.ts"),
-				r = o("./src/reddit/controls/LoadingIcon/index.m.less"),
-				i = o.n(r);
-			t.a = e => {
-				let {
-					center: t,
-					className: o,
-					sizePx: n
-				} = e;
-				return c.a.createElement("div", {
-					className: Object(s.a)(i.a.loadingIcon, o, {
-						[i.a.mCentered]: t
-					}),
-					style: {
-						"--sizePx": "".concat(n, "px")
-					}
-				})
-			}
 		},
 		"./src/reddit/helpers/trackers/postCollection.ts": function(e, t, o) {
 			"use strict";
@@ -618,11 +588,11 @@
 			})), o.d(t, "m", (function() {
 				return j
 			})), o.d(t, "b", (function() {
-				return f
+				return g
 			})), o.d(t, "p", (function() {
-				return x
-			})), o.d(t, "c", (function() {
 				return C
+			})), o.d(t, "c", (function() {
+				return x
 			})), o.d(t, "j", (function() {
 				return _
 			})), o.d(t, "q", (function() {
@@ -634,7 +604,7 @@
 			})), o.d(t, "i", (function() {
 				return E
 			})), o.d(t, "d", (function() {
-				return y
+				return k
 			}));
 			var n, c, s = o("./src/reddit/constants/tracking.ts"),
 				r = o("./src/reddit/helpers/trackers/postEvent.ts"),
@@ -685,35 +655,35 @@
 						})
 					})
 				},
-				b = e => Object.assign({}, g(e), {
+				b = e => Object.assign({}, f(e), {
 					action: s.c.VIEW,
 					noun: c.collectionEducation
 				}),
-				m = e => Object.assign({}, g(e), {
+				m = e => Object.assign({}, f(e), {
 					action: s.c.CLICK,
 					noun: c.collectionEducationGotIt
 				}),
-				O = e => Object.assign({}, g(e), {
+				O = e => Object.assign({}, f(e), {
 					action: s.c.VIEW,
 					noun: c.eventEducation
 				}),
-				j = e => Object.assign({}, g(e), {
+				j = e => Object.assign({}, f(e), {
 					action: s.c.CLICK,
 					noun: c.eventEducationGotIt
 				}),
-				g = e => Object.assign({}, l.defaults(e), {
+				f = e => Object.assign({}, l.defaults(e), {
 					subreddit: l.subreddit(e),
 					source: n.postComposer
 				}),
-				f = (e, t) => o => Object.assign({}, p(o, e), {
+				g = (e, t) => o => Object.assign({}, p(o, e), {
 					source: t || n.postOverflowMenu,
 					noun: c.collectionAddPost
 				}),
-				x = e => t => Object.assign({}, p(t, e), {
+				C = e => t => Object.assign({}, p(t, e), {
 					source: n.collectionComposer,
 					noun: c.collectionRemovePost
 				}),
-				C = () => e => Object.assign({}, p(e), {
+				x = () => e => Object.assign({}, p(e), {
 					source: n.collectionComposer,
 					noun: c.collectionCancel
 				}),
@@ -748,7 +718,7 @@
 					source: n.collectionComposer,
 					noun: c.startEvent
 				}),
-				y = () => e => {
+				k = () => e => {
 					const t = Object(i.o)(e) || void 0;
 					return Object.assign({}, p(e, t), {
 						source: n.collectionComposer,
@@ -768,11 +738,11 @@
 			})), o.d(t, "e", (function() {
 				return j
 			})), o.d(t, "b", (function() {
-				return g
-			})), o.d(t, "c", (function() {
 				return f
+			})), o.d(t, "c", (function() {
+				return g
 			})), o.d(t, "d", (function() {
-				return x
+				return C
 			}));
 			var n, c = o("./src/lib/constants/index.ts"),
 				s = o("./src/lib/eventTools/index.ts"),
@@ -803,7 +773,7 @@
 						action: i.c.CLICK,
 						noun: "event_edit",
 						subreddit: u.subreddit(e),
-						postEvent: C(e),
+						postEvent: x(e),
 						postComposer: _(e)
 					}))
 				},
@@ -812,24 +782,24 @@
 					action: i.c.VIEW,
 					noun: i.b.SCREEN,
 					actionInfo: b(e),
-					postEvent: C(e)
+					postEvent: x(e)
 				}),
-				g = e => t => Object.assign({}, w(t, Object(a.o)(t)), {
+				f = e => t => Object.assign({}, w(t, Object(a.o)(t)), {
 					source: n.postComposer,
 					noun: "apply",
 					postComposer: I(e)
 				}),
-				f = () => e => Object.assign({}, w(e, Object(a.o)(e)), {
+				g = () => e => Object.assign({}, w(e, Object(a.o)(e)), {
 					noun: "cancel",
 					actionInfo: b(e)
 				}),
-				x = e => t => Object.assign({}, w(t, Object(a.o)(t)), {
+				C = e => t => Object.assign({}, w(t, Object(a.o)(t)), {
 					noun: "delete",
 					actionInfo: b(t),
 					postComposer: _(t),
 					postEvent: v(e)
 				}),
-				C = e => {
+				x = e => {
 					const t = Object(d.o)(e);
 					return t && v(t)
 				},
@@ -886,4 +856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337.44a66937fad893595c11.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337.17ade11b2edbc8707e1c.js.map

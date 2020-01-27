@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.105bc05fbb60781c735c.js
-// Retrieved at 1/22/2020, 4:50:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.6098f1db9a539187e2ea.js
+// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(t, e, o) {
@@ -341,15 +341,6 @@
 				return e.__actions__ = s(t.__actions__), e.__index__ = t.__index__, e.__values__ = t.__values__, e
 			}
 		},
-		"./node_modules/lodash/compact.js": function(t, e) {
-			t.exports = function(t) {
-				for (var e = -1, o = null == t ? 0 : t.length, n = 0, r = []; ++e < o;) {
-					var s = t[e];
-					s && (r[n++] = s)
-				}
-				return r
-			}
-		},
 		"./node_modules/lodash/every.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_arrayEvery.js"),
 				r = o("./node_modules/lodash/_baseEvery.js"),
@@ -413,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~PostCreation.105bc05fbb60781c735c.js.map
+//# sourceMappingURL=vendors~PostCreation.6098f1db9a539187e2ea.js.map
