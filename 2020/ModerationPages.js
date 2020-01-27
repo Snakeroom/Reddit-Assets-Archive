@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.dc13aef654376ebe6b8a.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b5f5465775f1f2c86592.js
+// Retrieved at 1/27/2020, 5:40:18 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -3423,24 +3423,29 @@
 				let {
 					onStartChat: t,
 					children: s,
-					className: n
+					className: n,
+					sendEvent: o,
+					contextId: r
 				} = e;
 				return a.a.createElement(c.f, {
-					onClick: t,
+					onClick: () => {
+						t(), o(Object(d.b)(r))
+					},
 					className: n
 				}, s)
 			};
 			l.displayName = "ChatButton";
-			const m = Object(o.b)(null, (e, t) => ({
-				onStartChat: () => {
-					const {
-						contextId: s,
-						userId: n,
-						sendEvent: a
-					} = t;
-					e(Object(r.a)(n, s)), a(Object(d.b)(s))
+			const m = Object(o.b)(null, (e, t) => {
+				let {
+					contextId: s,
+					userId: n
+				} = t;
+				return {
+					onStartChat: () => {
+						e(Object(r.a)(n, s))
+					}
 				}
-			}));
+			});
 			t.a = m(Object(i.b)(l))
 		},
 		"./src/reddit/components/ClassicPost/Placeholder.tsx": function(e, t, s) {
@@ -28607,4 +28612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.dc13aef654376ebe6b8a.js.map
+//# sourceMappingURL=ModerationPages.b5f5465775f1f2c86592.js.map

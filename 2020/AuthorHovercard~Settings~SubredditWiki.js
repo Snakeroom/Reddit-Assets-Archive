@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.cf7973ae4a0aa334ed48.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.26ad064e8b6f6ba754f0.js
+// Retrieved at 1/27/2020, 5:40:18 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -15,24 +15,29 @@
 				let {
 					onStartChat: t,
 					children: r,
-					className: n
+					className: n,
+					sendEvent: a,
+					contextId: o
 				} = e;
 				return s.a.createElement(i.f, {
-					onClick: t,
+					onClick: () => {
+						t(), a(Object(c.b)(o))
+					},
 					className: n
 				}, r)
 			};
 			l.displayName = "ChatButton";
-			const u = Object(a.b)(null, (e, t) => ({
-				onStartChat: () => {
-					const {
-						contextId: r,
-						userId: n,
-						sendEvent: s
-					} = t;
-					e(Object(o.a)(n, r)), s(Object(c.b)(r))
+			const u = Object(a.b)(null, (e, t) => {
+				let {
+					contextId: r,
+					userId: n
+				} = t;
+				return {
+					onStartChat: () => {
+						e(Object(o.a)(n, r))
+					}
 				}
-			}));
+			});
 			t.a = u(Object(d.b)(l))
 		},
 		"./src/reddit/components/Hovercards/AuthorHovercard/HoverCard.tsx": function(e, t, r) {
@@ -942,4 +947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.cf7973ae4a0aa334ed48.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.26ad064e8b6f6ba754f0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f274d47f64c18e4901d9.js
-// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3c94d2bd39bc4e08c347.js
+// Retrieved at 1/27/2020, 5:40:18 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -47,24 +47,29 @@
 				let {
 					onStartChat: t,
 					children: n,
-					className: r
+					className: r,
+					sendEvent: a,
+					contextId: o
 				} = e;
 				return s.a.createElement(c.f, {
-					onClick: t,
+					onClick: () => {
+						t(), a(Object(d.b)(o))
+					},
 					className: r
 				}, n)
 			};
 			l.displayName = "ChatButton";
-			const m = Object(a.b)(null, (e, t) => ({
-				onStartChat: () => {
-					const {
-						contextId: n,
-						userId: r,
-						sendEvent: s
-					} = t;
-					e(Object(o.a)(r, n)), s(Object(d.b)(n))
+			const m = Object(a.b)(null, (e, t) => {
+				let {
+					contextId: n,
+					userId: r
+				} = t;
+				return {
+					onStartChat: () => {
+						e(Object(o.a)(r, n))
+					}
 				}
-			}));
+			});
 			t.a = m(Object(i.b)(l))
 		},
 		"./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx": function(e, t, n) {
@@ -1083,4 +1088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.f274d47f64c18e4901d9.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.3c94d2bd39bc4e08c347.js.map
