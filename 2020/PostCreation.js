@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.547b53b001b5d64ec54a.js
-// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cf2a76b43b0cdee5add0.js
+// Retrieved at 1/27/2020, 1:40:18 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "PostDraft~ProfileSnoobuilder"], {
+	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "PostDraft~ProfilePosts~ProfileSnoobuilder"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"7e85bf548364"}')
 		},
@@ -213,6 +213,47 @@
 					l = t ? i(s, n) + ", " : "";
 				return "".concat(r, " ").concat(l).concat(c(s, n))
 			}
+		},
+		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "b", (function() {
+				return a
+			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			let o;
+			const s = new Map,
+				r = new Map;
+			"undefined" != typeof window && (n("./node_modules/intersection-observer/intersection-observer.js"), o = new IntersectionObserver(e => {
+				e.forEach(e => {
+					const t = e.target,
+						n = e.intersectionRatio > 0;
+					if (n !== !!r.get(t)) {
+						r.set(t, n);
+						const o = s.get(t);
+						if (o) {
+							o(e, n && !!r.get(t))
+						}
+					}
+				})
+			}, {
+				threshold: [.001]
+			}));
+			const i = (e, t) => {
+					try {
+						s.set(e, t), o && o.observe(e)
+					} catch (n) {
+						0
+					}
+				},
+				a = e => {
+					try {
+						s.delete(e), o && o.unobserve(e)
+					} catch (t) {
+						0
+					}
+				}
 		},
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
 			"use strict";
@@ -15481,6 +15522,102 @@
 				contentTypeIcon: "_3CquMWJ6RMh8E9D-_84AtZ"
 			}
 		},
+		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return f
+			}));
+			n("./node_modules/core-js/modules/es6.symbol.js");
+			var o = n("./node_modules/lodash/throttle.js"),
+				s = n.n(o),
+				r = n("./node_modules/react/index.js"),
+				i = n.n(r),
+				a = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
+				l = n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
+				d = n("./src/reddit/layout/row/InlineButton/index.tsx"),
+				u = n("./src/reddit/controls/Dropdown/index.m.less"),
+				p = n.n(u),
+				m = n("./src/reddit/controls/Dropdown/row.m.less"),
+				h = n.n(m);
+
+			function b() {
+				return (b = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var g = function(e, t) {
+				var n = {};
+				for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (n[o] = e[o]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var s = 0;
+					for (o = Object.getOwnPropertySymbols(e); s < o.length; s++) t.indexOf(o[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[s]) && (n[o[s]] = e[o[s]])
+				}
+				return n
+			};
+			class f extends i.a.Component {
+				constructor() {
+					super(...arguments), this.handleMouseMove = s()(() => {
+						const {
+							props: e
+						} = this;
+						e.handleActivateRow && e.handleActivateRow(e.index)
+					}, 500)
+				}
+				render() {
+					const {
+						props: e
+					} = this, t = e.skipRoleAttr ? null : {
+						role: "menuitem"
+					}, n = Object(a.a)(h.a.iconWrapper, e.iconWrapperClassName);
+					return e.href ? i.a.createElement(c.a, b({}, t, {
+						id: e.id,
+						className: e.className,
+						onBlur: e.onBlur,
+						onClick: e.onClick,
+						onMouseDown: e.onMouseDown,
+						onMouseMove: this.handleMouseMove,
+						onKeyDown: e.onKeydown,
+						rel: e.rel,
+						to: e.href
+					}), e.children && i.a.createElement("span", {
+						className: n
+					}, e.children), i.a.createElement("span", {
+						className: Object(a.a)(h.a.text, e.textClassName)
+					}, e.displayText)) : i.a.createElement(d.a, b({}, t, {
+						id: e.id,
+						className: e.className,
+						onBlur: e.onBlur,
+						onClick: e.onClick,
+						onKeyDown: e.onKeydown,
+						onMouseDown: e.onMouseDown,
+						onMouseMove: s()(this.handleMouseMove, 500)
+					}), e.children && (e.noIcon ? i.a.createElement("div", null, e.children) : i.a.createElement("span", {
+						className: n
+					}, e.children)), e.displayText && i.a.createElement("span", {
+						className: Object(a.a)(h.a.text, e.textClassName)
+					}, e.displayText), e.showDropdownTriangle && i.a.createElement(l.a, {
+						className: p.a.dropdownTriangle
+					}))
+				}
+			}
+			t.b = e => {
+				var {
+					className: t
+				} = e, n = g(e, ["className"]);
+				const o = Object(a.a)(h.a.row, t, {
+					[h.a.mIsInteractive]: !n.noHover,
+					[h.a.mIsSelected]: n.isSelected
+				});
+				return i.a.createElement(f, b({
+					className: o
+				}, n))
+			}
+		},
 		"./src/reddit/controls/Dropdown/index.m.less": function(e, t, n) {
 			e.exports = {
 				dropdownTriangle: "_1oxgVV3q47KbjEKqP5CHuM",
@@ -15520,6 +15657,16 @@
 						tabIndex: -1
 					}, e.children)
 				}
+			}
+		},
+		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, n) {
+			e.exports = {
+				iconWrapper: "pthKOcceozMuXLYrLlbL1",
+				iconStyles: "_2XOVBjNLHjJIznEsn35vs2",
+				text: "_2-cXnP74241WI7fpcpfPmg",
+				row: "_3LwUIE7yX7CZQKmD2L87vf",
+				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
+				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
 			}
 		},
 		"./src/reddit/controls/FileDrop/index.tsx": function(e, t, n) {
@@ -17099,6 +17246,19 @@
 				u = o.a.p("metadata", r.a);
 			o.a.p("metadata3", r.a)
 		},
+		"./src/reddit/controls/UnstyledInternalLink/index.m.less": function(e, t, n) {
+			e.exports = {
+				unstyledInternalLink: "_39Glgtoolpdt4PIzcnjPSW"
+			}
+		},
+		"./src/reddit/controls/UnstyledInternalLink/index.tsx": function(e, t, n) {
+			"use strict";
+			var o = n("./src/lib/lessComponent.tsx"),
+				s = n("./src/reddit/controls/InternalLink/index.tsx"),
+				r = n("./src/reddit/controls/UnstyledInternalLink/index.m.less"),
+				i = n.n(r);
+			t.a = o.a.wrapped(s.a, "unstyledInternalLink", i.a)
+		},
 		"./src/reddit/endpoints/economics/emojis.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -17672,6 +17832,36 @@
 				r = "Noto Mono, ".concat("Menlo, Monaco, Consolas, monospace");
 			"\n  font-family: ".concat(s, ";\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 21px;\n")
 		},
+		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, n) {
+			e.exports = {
+				loadingBackground: "fzTkuBRFT8iIn1XnJX_Yn",
+				"m-loading": "_34yMY7-6MNnz3utfjExvIq",
+				mLoading: "_34yMY7-6MNnz3utfjExvIq",
+				gradientAnimation: "vnt666wwqSK5qL63sBn9P",
+				loadingBar: "_3giTODNeZ-Po90u8Ghs4aI",
+				loadingContainer: "VRC9QT7CgUxvhK0ceQSrn"
+			}
+		},
+		"./src/reddit/helpers/styles/mixins/loading.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "b", (function() {
+				return a
+			}));
+			var o = n("./src/lib/classNames/index.ts"),
+				s = n("./src/reddit/helpers/styles/mixins/loading.m.less"),
+				r = n.n(s);
+			const i = e => {
+					let {
+						isLoading: t
+					} = e;
+					return Object(o.a)(r.a.loadingBackground, {
+						[r.a["m-loading"]]: t
+					})
+				},
+				a = e => Object(o.a)(r.a.loadingBar, i(e))
+		},
 		"./src/reddit/helpers/toggleBodyScroll/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -17954,6 +18144,24 @@
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave
 			}, s.a.createElement(i.a, null, e.desc))
+		},
+		"./src/reddit/icons/fonts/DropdownTriangle/index.m.less": function(e, t, n) {
+			e.exports = {
+				DropdownTriangle: "_28O0gzb6GMS8lbDeySdpwp",
+				dropdownTriangle: "_28O0gzb6GMS8lbDeySdpwp"
+			}
+		},
+		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, n) {
+			"use strict";
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
+				r = n("./src/reddit/icons/fonts/helpers.tsx"),
+				i = n("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
+				a = n.n(i);
+			const c = n("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
+				className: "".concat(Object(r.b)("dropdownTriangle"), " ").concat(e.className)
+			}), "DropdownTriangle", a.a);
+			t.a = c
 		},
 		"./src/reddit/icons/fonts/Expandos/Media/Video/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -23987,4 +24195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.547b53b001b5d64ec54a.js.map
+//# sourceMappingURL=PostCreation.cf2a76b43b0cdee5add0.js.map
