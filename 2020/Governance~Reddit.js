@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.17c34480a35988086ae5.js
-// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b9d3baed2ea184704b9f.js
+// Retrieved at 1/28/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -69667,4 +69667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.17c34480a35988086ae5.js.map
+//# sourceMappingURL=Governance~Reddit.b9d3baed2ea184704b9f.js.map
