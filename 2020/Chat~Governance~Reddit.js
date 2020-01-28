@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e78de22dae9b4392a8a2.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1f22e61dc5257addf432.js
+// Retrieved at 1/28/2020, 2:10:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -12505,14 +12505,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("7dbfba5-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("fba396d-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7dbfba5-production",
+						release: "fba396d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new r.Integrations.Breadcrumbs({
@@ -13012,7 +13012,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "7dbfba5-production",
+							releaseClient: "fba396d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -15827,11 +15827,12 @@
 				s = i.n(n),
 				r = i("./node_modules/set-cookie-parser/lib/set-cookie.js"),
 				o = i.n(r),
-				d = (i("./src/lib/constants/index.ts"), i("./src/lib/constants/cookie.ts")),
-				l = i("./src/lib/constants/headers.ts");
+				d = i("./src/lib/constants/index.ts"),
+				l = i("./src/lib/constants/cookie.ts"),
+				a = i("./src/lib/constants/headers.ts");
 			i("./node_modules/core-js/modules/es6.regexp.split.js");
-			const a = e => e.version < 1 ? e.loid : "".concat(e.loid, ".").concat(e.version, ".").concat(e.loidCreated, ".").concat(e.blob),
-				u = (e, t) => {
+			const u = e => e.version < 1 ? e.loid : "".concat(e.loid, ".").concat(e.version, ".").concat(e.loidCreated, ".").concat(e.blob),
+				c = (e, t) => {
 					if (e.includes(".")) {
 						const [t, i, n, s] = e.split(".");
 						return {
@@ -15848,64 +15849,76 @@
 						version: 0
 					}
 				};
-			var c = i("./src/lib/permanentCookieOptions.ts"),
-				m = i("./src/lib/sample/index.ts"),
-				h = i("./src/lib/sentry/index.ts"),
-				p = i("./src/config.ts");
-			const _ = () => {},
-				g = () => {},
-				w = (e, t, i, n) => {
+			var m = i("./src/lib/permanentCookieOptions.ts"),
+				h = i("./src/lib/sample/index.ts"),
+				p = i("./src/lib/sentry/index.ts"),
+				_ = i("./src/config.ts"),
+				g = i("./src/lib/makeRequest/index.ts");
+
+			function w(e) {
+				Object(g.b)({
+					method: d.bb.POST,
+					endpoint: "/setreddaidcounter",
+					data: {
+						appName: e.statsAppName
+					},
+					type: "json"
+				})
+			}
+			const y = () => {},
+				v = () => {},
+				f = (e, t, i, n) => {
 					e.set(t, i, n)
 				};
 
-			function y(e, t, i) {
-				return (n, s) => {
-					const r = {
-							domain: p.a.cookieDomain
+			function b(e, t, i, n) {
+				return (s, r) => {
+					const d = {
+							domain: _.a.cookieDomain
 						},
-						_ = t.getState(),
-						g = a(_.user.loid),
-						y = _.user.sessionTracker,
-						v = _.user.reddaid,
-						f = l.a in n.headers || l.c in n.headers || l.b in n.headers;
-					let b = e.get(d.b);
-					const T = c.a;
-					if (f) {
-						if (s.allowSetEmptyLoid && l.a in n.headers) {
-							const s = u(n.headers[l.a], b),
-								r = T();
-							w(e, d.a, n.headers[l.a], r), t.dispatch(i.loidReceived(s))
+						g = t.getState(),
+						y = u(g.user.loid),
+						v = g.user.sessionTracker,
+						b = g.user.reddaid,
+						T = a.a in s.headers || a.c in s.headers || a.b in s.headers;
+					let S = e.get(l.b);
+					const F = m.a;
+					if (T) {
+						if (r.allowSetEmptyLoid && a.a in s.headers) {
+							const n = c(s.headers[a.a], S),
+								r = F();
+							f(e, l.a, s.headers[a.a], r), t.dispatch(i.loidReceived(n))
 						}
-						if (l.c in n.headers) {
-							const s = n.headers[l.c],
-								o = r;
-							w(e, d.f, s, o), t.dispatch(i.sessionTrackerReceived(s))
+						if (a.c in s.headers) {
+							const n = s.headers[a.c],
+								r = d;
+							f(e, l.f, n, r), t.dispatch(i.sessionTrackerReceived(n))
 						}
-						if (l.b in n.headers) {
-							const s = n.headers[l.b];
-							w(e, d.e, s, r), t.dispatch(i.reddaidReceived(s))
+						if (a.b in s.headers) {
+							const r = s.headers[a.b];
+							f(e, l.e, r, d), t.dispatch(i.reddaidReceived(r)), w(n)
 						}
-					} else if (l.d in n.headers) {
-						const a = o()(n.headers[l.d]).map(e => ({
+					} else if (a.d in s.headers) {
+						const u = o()(s.headers[a.d]).map(e => ({
 							[e.name]: e.value
 						})).reduce((e, t) => Object.assign({}, e, t), {});
-						if (d.b in a && (b = a[d.b]), d.a in a)
-							if (s.allowSetEmptyLoid && !g) {
-								const n = a[d.a],
-									s = u(n, b),
-									r = T();
-								w(e, d.a, n, r), t.dispatch(i.loidReceived(s))
-							} else g || Object(m.a)(p.a.logSample.failToSetLOID) && h.c.captureMessage("LOID failing to be set on user without LOID");
-						if (d.f in a) {
-							const n = a[d.f];
-							if (n !== y) {
-								const s = r;
-								w(e, d.f, n, s), t.dispatch(i.sessionTrackerReceived(n))
+						if (l.b in u && (S = u[l.b]), l.a in u)
+							if (r.allowSetEmptyLoid && !y) {
+								const n = u[l.a],
+									s = c(n, S),
+									r = F();
+								f(e, l.a, n, r), t.dispatch(i.loidReceived(s))
+							} else y || Object(h.a)(_.a.logSample.failToSetLOID) && p.c.captureMessage("LOID failing to be set on user without LOID");
+						if (l.f in u) {
+							const n = u[l.f];
+							if (n !== v) {
+								const s = d;
+								f(e, l.f, n, s), t.dispatch(i.sessionTrackerReceived(n))
 							}
 						}
-						if (d.e in a) {
-							const n = a[d.e];
-							n !== v && (w(e, d.e, n, r), t.dispatch(i.reddaidReceived(n)))
+						if (l.e in u) {
+							const s = u[l.e];
+							s !== b && (f(e, l.e, s, d), t.dispatch(i.reddaidReceived(s)), w(n))
 						}
 					}
 				}
@@ -15918,24 +15931,24 @@
 					onBeforeRequestFactory: r,
 					customApiContextGenerator: o,
 					receivedActions: d,
-					statsAppName: u
+					statsAppName: l
 				} = e, c = {
-					apiUrl: p.a.apiUrl,
+					apiUrl: _.a.apiUrl,
 					headers: {},
-					onBeforeRequest: _,
-					onResponse: g,
-					statsAppName: u
+					onBeforeRequest: y,
+					onResponse: v,
+					statsAppName: l
 				};
 				return {
 					apiContext: o ? o(c, n) : () => c,
 					middleware: e => {
-						c.onResponse === g && (c = Object.assign({}, c, {
-							onResponse: y(n, e, t)
+						c.onResponse === v && (c = Object.assign({}, c, {
+							onResponse: b(n, e, t, c)
 						})), r && (c = Object.assign({}, c, {
 							onBeforeRequest: r(e)
 						}));
 						const o = e.getState(),
-							u = function(e) {
+							l = function(e) {
 								let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 								const i = Object.keys(t);
 								return (n, r) => {
@@ -15943,32 +15956,32 @@
 										case e.loidReceived:
 											return Object.assign({}, n, {
 												headers: Object.assign({}, n.headers, {
-													[l.a]: a(r.payload)
+													[a.a]: u(r.payload)
 												})
 											});
 										case e.sessionTrackerReceived:
 											return Object.assign({}, n, {
 												headers: Object.assign({}, n.headers, {
-													[l.c]: r.payload
+													[a.c]: r.payload
 												})
 											});
 										case e.reddaidReceived:
 											return Object.assign({}, n, {
 												headers: Object.assign({}, n.headers, {
-													[l.b]: r.payload
+													[a.b]: r.payload
 												})
 											});
 										case e.userAuthenticated:
 										case e.userReauthenticated:
 											return Object.assign({}, n, {
-												apiUrl: p.a.oauthUrl,
+												apiUrl: _.a.oauthUrl,
 												headers: Object.assign({}, t, n.headers, {
 													Authorization: "Bearer ".concat(r.payload.accessToken)
 												})
 											});
 										case e.userLoggedOut:
 											return Object.assign({}, n, {
-												apiUrl: p.a.apiUrl,
+												apiUrl: _.a.apiUrl,
 												headers: s()(n.headers, [...i, "Authorization"])
 											});
 										case e.headersReceived:
@@ -15980,19 +15993,19 @@
 									}
 								}
 							}(d, i);
-						return o.user.account && (c = u(c, {
+						return o.user.account && (c = l(c, {
 							type: d.userAuthenticated,
 							payload: o.user.session
-						})), o.user.loid && (c = u(c, {
+						})), o.user.loid && (c = l(c, {
 							type: d.loidReceived,
 							payload: o.user.loid
-						})), o.user.sessionTracker && (c = u(c, {
+						})), o.user.sessionTracker && (c = l(c, {
 							type: d.sessionTrackerReceived,
 							payload: o.user.sessionTracker
-						})), o.user.reddaid && (c = u(c, {
+						})), o.user.reddaid && (c = l(c, {
 							type: d.reddaidReceived,
 							payload: o.user.reddaid
-						})), e => t => (c = u(c, t), e(t))
+						})), e => t => (c = l(c, t), e(t))
 					}
 				}
 			}
@@ -18666,4 +18679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.e78de22dae9b4392a8a2.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.1f22e61dc5257addf432.js.map
