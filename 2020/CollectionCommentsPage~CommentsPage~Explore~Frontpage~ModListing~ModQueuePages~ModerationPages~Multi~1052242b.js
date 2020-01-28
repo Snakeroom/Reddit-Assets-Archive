@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.879891748d873540f1a0.js
-// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.7fce56af4d4287b45bc7.js
+// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b"], {
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
@@ -69,8 +69,8 @@
 				C = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				b = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				_ = s("./src/reddit/layout/row/Inline/index.tsx"),
-				g = s("./src/reddit/models/PostCreationForm/index.ts"),
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = s("./src/reddit/models/PostCreationForm/index.ts"),
 				f = s("./src/reddit/selectors/postCollection.ts"),
 				E = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/lib/timeAgo/index.ts"),
@@ -78,14 +78,14 @@
 				y = s("./src/reddit/helpers/name/index.ts"),
 				I = s("./src/reddit/models/Subreddit/index.ts"),
 				P = s("./src/reddit/models/User/index.ts"),
-				w = s("./src/reddit/selectors/subreddit.ts"),
-				T = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
-				B = s.n(T),
+				T = s("./src/reddit/selectors/subreddit.ts"),
+				w = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
+				B = s.n(w),
 				F = s("./src/lib/lessComponent.tsx");
 			const S = F.a.div("Container", B.a),
 				M = F.a.h2("PostTitle", B.a),
-				k = F.a.div("MetaLine", B.a),
-				L = F.a.span("SubredditName", B.a),
+				L = F.a.div("MetaLine", B.a),
+				k = F.a.span("SubredditName", B.a),
 				N = F.a.time("InfoSpan", B.a),
 				A = Object(c.c)({
 					subreddit: (e, t) => {
@@ -94,7 +94,7 @@
 								subredditId: s
 							}
 						} = t;
-						return s ? Object(w.S)(e, {
+						return s ? Object(T.S)(e, {
 							subredditId: s
 						}) : void 0
 					},
@@ -119,9 +119,9 @@
 						className: B.a.container
 					}, a.a.createElement(M, {
 						"data-redditstyle": !0
-					}, e.title), a.a.createElement(k, {
+					}, e.title), a.a.createElement(L, {
 						"data-redditstyle": !0
-					}, i && a.a.createElement(L, {
+					}, i && a.a.createElement(k, {
 						"data-redditstyle": !0
 					}, i), i && a.a.createElement(j.b, null), a.a.createElement(N, null, Object(n.c)(t, "postCreation.postsCount", c)), a.a.createElement(j.b, null), a.a.createElement(N, null, Object(n.a)(t, "postCreation.collections.creationTime", {
 						time: Object(O.d)(t, e.createdAtUTC)
@@ -136,14 +136,14 @@
 				U = s.n(W);
 			const H = Object(n.e)("postCreation.collections.collectionsListEmptyText"),
 				K = Object(n.e)("postCreation.collections.noCollectionMatchingFilter"),
-				Z = Object(n.e)("postCreation.collections.filterPlaceholder"),
-				J = Object(n.e)("postCreation.collections.collectionsListTitle"),
-				Q = Object(n.e)("postCreation.collections.createCollection"),
-				V = "".concat(o.a.assetPath, "/img/snoo-drafts.png"),
-				G = F.a.div("TopRow", U.a),
+				J = Object(n.e)("postCreation.collections.filterPlaceholder"),
+				V = Object(n.e)("postCreation.collections.collectionsListTitle"),
+				Z = Object(n.e)("postCreation.collections.createCollection"),
+				G = "".concat(o.a.assetPath, "/img/snoo-drafts.png"),
+				Q = F.a.div("TopRow", U.a),
 				z = F.a.div("TitleRow", U.a),
 				q = F.a.div("DetailsContainer", U.a),
-				Y = F.a.wrapped(_.a, "ButtonRow", U.a),
+				Y = F.a.wrapped(g.a, "ButtonRow", U.a),
 				$ = F.a.div("CloseWrapper", U.a),
 				ee = F.a.wrapped(C.a, "Close", U.a),
 				te = F.a.div("Empty", U.a),
@@ -160,7 +160,7 @@
 				}),
 				de = Object(c.c)({
 					collections: f.v,
-					language: E.S
+					language: E.T
 				}),
 				pe = Object(i.b)(de, (e, t) => {
 					let {
@@ -169,8 +169,8 @@
 					} = t;
 					return {
 						onOpenCreateCollectionModal: () => {
-							let t = g.b;
-							s && (t = Object(g.u)(s, !!n)), e(Object(p.y)(t))
+							let t = _.b;
+							s && (t = Object(_.u)(s, !!n)), e(Object(p.y)(t))
 						}
 					}
 				});
@@ -206,7 +206,7 @@
 				}
 				renderNoCollections() {
 					return a.a.createElement(te, null, a.a.createElement(se, {
-						src: V
+						src: G
 					}), a.a.createElement(ne, null, H(this.props.language)))
 				}
 				renderNoFilterMatches() {
@@ -227,19 +227,19 @@
 					return a.a.createElement("div", {
 						className: U.a.wrapper,
 						"data-redditstyle": !0
-					}, a.a.createElement(G, null, a.a.createElement(z, {
+					}, a.a.createElement(Q, null, a.a.createElement(z, {
 						"data-redditstyle": !0
-					}, s || J(t), a.a.createElement($, {
+					}, s || V(t), a.a.createElement($, {
 						onClick: this.close
 					}, a.a.createElement(ee, {
 						"data-redditstyle": !0
 					}))), a.a.createElement(oe, null, a.a.createElement(ae, null), a.a.createElement(re, {
-						placeholder: Z(t),
+						placeholder: J(t),
 						value: this.state.filterStr,
 						onChange: this.onFilterStringChange
 					}))), a.a.createElement(q, null, n), a.a.createElement(Y, null, a.a.createElement(ce, {
 						onClick: this.handleCreateCollectionClicked
-					}, a.a.createElement(ie, null), Q(t))))
+					}, a.a.createElement(ie, null), Z(t))))
 				}
 			}
 			const ue = Object(l.a)(pe(Object(m.b)(me)));
@@ -295,8 +295,8 @@
 				C = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				b = s("./src/reddit/icons/svgs/AddCollection/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				_ = s("./src/reddit/layout/row/Inline/index.tsx"),
-				g = s("./src/reddit/selectors/postCollection.ts"),
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = s("./src/reddit/selectors/postCollection.ts"),
 				f = s("./src/reddit/selectors/user.ts"),
 				E = s("./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.m.less"),
 				O = s.n(E),
@@ -304,14 +304,14 @@
 			const y = Object(i.e)("postCreation.cancel"),
 				I = Object(i.e)("postCreation.create"),
 				P = Object(i.e)("postCreation.save"),
-				w = Object(i.e)("postCreation.collections.createCollection"),
-				T = Object(i.e)("postCreation.collections.createModal.details"),
+				T = Object(i.e)("postCreation.collections.createCollection"),
+				w = Object(i.e)("postCreation.collections.createModal.details"),
 				B = Object(i.e)("postCreation.collections.createModal.giveATitle"),
 				F = Object(i.e)("postCreation.collections.createModal.editTitle"),
 				S = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
 				M = j.a.div("Container", O.a),
-				k = j.a.div("Content", O.a),
-				L = j.a.div("TitleRow", O.a),
+				L = j.a.div("Content", O.a),
+				k = j.a.div("TitleRow", O.a),
 				N = j.a.div("Details", O.a),
 				A = j.a.wrapped(p.e, "Footer", O.a),
 				R = j.a.wrapped(u.i, "CancelButton", O.a),
@@ -321,19 +321,19 @@
 				U = j.a.wrapped(x.a, "TitleInput", O.a),
 				H = j.a.wrapped(b.a, "AddCollectionIcon", O.a),
 				K = j.a.wrapped(u.f, "PrimaryActionButton", O.a),
-				Z = j.a.wrapped(C.a, "LoadingIcon", O.a),
-				J = j.a.wrapped(h.b, "ErrorText", O.a),
-				Q = Object(a.c)({
-					collection: g.q,
-					error: g.c,
-					isPending: g.g,
-					language: f.S
+				J = j.a.wrapped(C.a, "LoadingIcon", O.a),
+				V = j.a.wrapped(h.b, "ErrorText", O.a),
+				Z = Object(a.c)({
+					collection: _.q,
+					error: _.c,
+					isPending: _.g,
+					language: f.T
 				}),
-				V = Object(r.b)(Q, (e, t) => ({
+				G = Object(r.b)(Z, (e, t) => ({
 					onCreate: (t, s) => e(Object(d.b)(t, s)),
 					onUpdate: s => e(Object(d.h)(t.collectionId, s))
 				}));
-			class G extends o.a.PureComponent {
+			class Q extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.onTitleChange = e => {
 						this.setState({
@@ -371,24 +371,24 @@
 					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? I : P, c = r ? B : F;
 					return o.a.createElement(M, null, o.a.createElement(X, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(D, null)), o.a.createElement(k, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(L, null, o.a.createElement(H, null), w(n)), o.a.createElement(N, null, T(n))), o.a.createElement(W, null, c(n), o.a.createElement(U, {
+					}, o.a.createElement(D, null)), o.a.createElement(L, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(k, null, o.a.createElement(H, null), T(n)), o.a.createElement(N, null, w(n))), o.a.createElement(W, null, c(n), o.a.createElement(U, {
 						maxLength: m.e,
 						onChange: this.onTitleChange,
 						placeholder: S(n),
 						value: this.state.collectionTitle
-					}))), o.a.createElement(A, null, o.a.createElement(_.a, null, o.a.createElement(R, {
+					}))), o.a.createElement(A, null, o.a.createElement(g.a, null, o.a.createElement(R, {
 						onClick: this.props.onCancel
 					}, y(n)), o.a.createElement(K, {
 						onClick: this.onPrimaryButtonClick,
 						disabled: s || !a
-					}, s ? o.a.createElement(Z, {
+					}, s ? o.a.createElement(J, {
 						sizePx: 10
-					}) : i(n))), t && o.a.createElement(J, {
+					}) : i(n))), t && o.a.createElement(V, {
 						language: n
 					}, Object(l.a)(n, t))))
 				}
 			}
-			t.a = Object(c.a)(V(G))
+			t.a = Object(c.a)(G(Q))
 		},
 		"./src/reddit/components/PostFlairPicker/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -416,8 +416,8 @@
 				C = s("./src/reddit/i18n/utils.ts"),
 				b = s("./src/reddit/models/Flair/index.ts"),
 				v = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				_ = s("./src/reddit/selectors/postFlair.ts"),
-				g = s("./src/reddit/selectors/subreddit.ts"),
+				g = s("./src/reddit/selectors/postFlair.ts"),
+				_ = s("./src/reddit/selectors/subreddit.ts"),
 				f = s("./src/reddit/selectors/telemetry.ts"),
 				E = s("./src/reddit/components/PostFlairPicker/helpers.ts"),
 				O = s("./src/reddit/components/PostFlairPicker/index.m.less"),
@@ -431,8 +431,8 @@
 					return "PostFlair__Modal-[postId: ".concat(e, "]-isOverlay[").concat(t, "]-position[").concat(s, "]")
 				},
 				I = Object(i.c)({
-					flairData: _.d,
-					subreddit: g.S,
+					flairData: g.d,
+					subreddit: _.S,
 					isMod: (e, t) => !!Object(v.j)(e, t)
 				});
 			class P extends r.a.Component {
@@ -510,10 +510,10 @@
 					}, Object(C.c)("Clear Flair"))))
 				}
 			}
-			const w = Object(a.b)(I, (e, t) => ({
+			const T = Object(a.b)(I, (e, t) => ({
 				closeModal: () => e(Object(d.i)(t.modalId))
 			}))(P);
-			t.a = Object(l.a)(Object(c.b)(w))
+			t.a = Object(l.a)(Object(c.b)(T))
 		},
 		"./src/reddit/components/RestrictedFlatlistButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -577,7 +577,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				c = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: c.S,
+				language: c.T,
 				subscribeReminderTooltipId: a.C,
 				subscribeTooltipId: a.D,
 				userIsSubscriber: i.cb
@@ -642,6 +642,36 @@
 				o = s("./src/reddit/controls/Input/index.m.less"),
 				r = s.n(o);
 			t.a = n.a.input("input", r.a)
+		},
+		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, s) {
+			e.exports = {
+				loadingIcon: "_3LwT7hgGcSjmJ7ng7drAuq",
+				spin: "ibDwUVR1CAykturOgqOS5",
+				mCentered: "_2qr28EeyPvBWAsPKl-KuWN"
+			}
+		},
+		"./src/reddit/controls/LoadingIcon/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				r = s("./src/lib/classNames/index.ts"),
+				a = s("./src/reddit/controls/LoadingIcon/index.m.less"),
+				i = s.n(a);
+			t.a = e => {
+				let {
+					center: t,
+					className: s,
+					sizePx: n
+				} = e;
+				return o.a.createElement("div", {
+					className: Object(r.a)(i.a.loadingIcon, s, {
+						[i.a.mCentered]: t
+					}),
+					style: {
+						"--sizePx": "".concat(n, "px")
+					}
+				})
+			}
 		},
 		"./src/reddit/icons/fonts/Calendar/index.tsx": function(e, t, s) {
 			"use strict";
@@ -817,4 +847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.879891748d873540f1a0.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.7fce56af4d4287b45bc7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.90feef363d961efe43f9.js
-// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.e308cf87e77dd8e09f49.js
+// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, s) {
@@ -275,7 +275,7 @@
 					return t && (o = "".concat(o, "--").concat(t)), o
 				},
 				L = Object(a.c)({
-					isLoggedIn: w.J,
+					isLoggedIn: w.K,
 					allAwards: e => e.awards.models
 				}),
 				k = Object(n.b)(L, (e, t) => {
@@ -841,9 +841,9 @@
 				E = s("./src/reddit/selectors/posts.ts");
 			var y = Object(n.b)(() => Object(a.c)({
 				post: E.I,
-				subredditOrProfile: E.T,
+				subredditOrProfile: E.U,
 				isModerator: (e, t) => {
-					const s = Object(E.T)(e, t);
+					const s = Object(E.U)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -877,11 +877,11 @@
 				}
 			}));
 			var w = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(E.T)(e, {
+				subredditOrProfile: (e, t) => Object(E.U)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(E.T)(e, {
+					const s = Object(E.U)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -904,9 +904,9 @@
 			}));
 			var T = Object(n.b)(() => Object(a.c)({
 				post: E.I,
-				subredditOrProfile: E.T,
+				subredditOrProfile: E.U,
 				isModerator: (e, t) => {
-					const s = Object(E.T)(e, t);
+					const s = Object(E.U)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1743,4 +1743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.90feef363d961efe43f9.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.e308cf87e77dd8e09f49.js.map

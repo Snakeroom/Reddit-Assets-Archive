@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Multireddit~P~2dc56ce2.248f97892d1b11b96006.js
-// Retrieved at 1/24/2020, 9:19:31 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Multireddit~P~2dc56ce2.d67bfd320450a012b0c5.js
+// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Multireddit~P~2dc56ce2"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -233,10 +233,10 @@
 				L = j.a.div("ThumbnailContainer", f.a),
 				w = Object(c.c)({
 					isCurrentUserProfilePost: g.h,
-					language: v.S,
+					language: v.T,
 					post: g.I,
-					shouldOpenPostInNewTab: v.W,
-					subreddit: g.T
+					shouldOpenPostInNewTab: v.X,
+					subreddit: g.U
 				}),
 				T = Object(o.b)(w);
 			t.a = T(e => {
@@ -453,8 +453,8 @@
 				const q = {
 						caretOnTop: !1
 					},
-					V = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === x.a.SUBREDDIT,
-					X = G("Approve", W.id, Z),
+					X = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === x.a.SUBREDDIT,
+					V = G("Approve", W.id, Z),
 					z = G("Archived", W.id, Z),
 					K = G("Automod", W.id, Z),
 					Q = G("Lock", W.id, Z),
@@ -518,11 +518,11 @@
 				}, q))), (W.isApproved || W.approvedBy) && r.a.createElement(n.Fragment, null, r.a.createElement(h.a, {
 					className: T.a.approveIcon,
 					desc: Object(O.a)(y, W),
-					id: X,
-					onMouseEnter: J(X),
+					id: V,
+					onMouseEnter: J(V),
 					onMouseLeave: U
 				}), r.a.createElement(p.c, N({
-					tooltipId: X,
+					tooltipId: V,
 					text: Object(O.a)(y, W)
 				}, q))), Object(v.a)(W) && r.a.createElement(n.Fragment, null, r.a.createElement(I.a, {
 					className: T.a.removeIcon,
@@ -530,7 +530,7 @@
 					id: $,
 					onMouseEnter: J($),
 					onMouseLeave: U
-				}), V && r.a.createElement(b.a, {
+				}), X && r.a.createElement(b.a, {
 					className: T.a.addRemovalReason,
 					onClick: D,
 					text: Object(c.c)("Add a removal reason")
@@ -1142,9 +1142,9 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
 				d = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
-					experimentEligibilitySelector: a.J,
-					experimentName: n.cb
-				}) === n.jb.Enabled
+					experimentEligibilitySelector: a.K,
+					experimentName: n.gb
+				}) === n.nb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -1305,4 +1305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Multireddit~P~2dc56ce2.248f97892d1b11b96006.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Multireddit~P~2dc56ce2.d67bfd320450a012b0c5.js.map
