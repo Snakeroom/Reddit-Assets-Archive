@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ee87eeab6636bae5ce47.js
-// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.09437fc6ed57db9c5477.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2", "Explore~ProfileSnoobuilder~SubredditWiki", "Explore~InFeedChaining", "CategoriesNavigation"], {
 		"./src/graphql/operations/SubredditLayers.json": function(e) {
@@ -145,7 +145,7 @@
 				l = s("./src/reddit/selectors/user.ts");
 			const m = Object(c.t)(),
 				u = Object(o.c)({
-					language: l.T,
+					language: l.S,
 					multireddit: d.a,
 					subredditCategory: c.l
 				}),
@@ -441,7 +441,7 @@
 					isEligibleCountry: w.d,
 					isHomeLinkEnabled: P.m,
 					isM2MEnabled: P.w,
-					isNightmode: _.V
+					isNightmode: _.U
 				}),
 				D = Object(a.b)(F, e => ({
 					visitPopulatedHome: () => e(Object(l.b)({}))
@@ -652,7 +652,7 @@
 			var te = Object(a.b)(() => {
 				const e = Object(G.c)();
 				return Object(o.c)({
-					language: _.T,
+					language: _.S,
 					subreddits: (t, s) => {
 						let {
 							category: r
@@ -861,8 +861,8 @@
 					},
 					categoriesPlacementVariant: w.a,
 					exploreV2Variant: z.a,
-					isLoggedIn: _.K,
-					isNightmode: _.V,
+					isLoggedIn: _.J,
+					isNightmode: _.U,
 					layout: v.M
 				}),
 				ue = Object(a.b)(me),
@@ -1252,7 +1252,7 @@
 						} = t;
 						return Object(U.o)(e, s)
 					},
-					language: V.T,
+					language: V.S,
 					moderatorPermissions: A.i,
 					modModeEnabled: B.O,
 					post: U.I,
@@ -1263,7 +1263,7 @@
 					showEditFlair: H.a,
 					showMedia: B.r,
 					subredditOrProfile: U.U,
-					userIsOp: V.kb,
+					userIsOp: V.jb,
 					flairStyleTemplate: B.Q
 				},
 				z = (e, t) => {
@@ -1905,7 +1905,7 @@
 					flairStyleTemplate: ae.Q,
 					isActive: w.g,
 					isExpanded: w.j,
-					language: P.T,
+					language: P.S,
 					layout: ae.M,
 					moderatorPermissions: j.i,
 					modModeEnabled: ae.O,
@@ -1916,7 +1916,7 @@
 					post: w.I,
 					showEditFlair: S.a,
 					subredditOrProfile: w.U,
-					userIsOp: P.kb,
+					userIsOp: P.jb,
 					isInAdLeftSidebarExperiment: C.a
 				}), (e, t) => {
 					let {
@@ -3299,7 +3299,7 @@
 				x = s("./src/reddit/constants/experiments.ts"),
 				y = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				f = s("./src/reddit/selectors/user.ts");
-			const v = e => Object(f.H)(e) || x.Kb.ShowTopContent === Object(y.c)(e, {
+			const v = e => Object(f.G)(e) || x.Kb.ShowTopContent === Object(y.c)(e, {
 				experimentEligibilitySelector: y.a,
 				experimentName: x.Fb
 			});
@@ -3308,7 +3308,7 @@
 				C = s.n(O);
 			const j = Object(i.b)(() => Object(d.c)({
 				inSubredditTopContentExperiment: v,
-				language: f.T,
+				language: f.S,
 				subredditUrl: E.d
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, s) => g.f(s(), t)),
@@ -4898,7 +4898,7 @@
 				}, t))
 			}
 			const X = Object(i.c)({
-				isLoggedIn: C.K,
+				isLoggedIn: C.J,
 				provider: l.a,
 				tokenName: l.o,
 				tokenDisplayConversion: l.n,
@@ -5513,7 +5513,7 @@
 					className: y.a.icon
 				}),
 				v = Object(o.c)({
-					language: b.T,
+					language: b.S,
 					subreddit: h.B,
 					subredditAboutInfo: h.y
 				}),
@@ -5749,7 +5749,7 @@
 					isCurrentUserProfilePost: C.h,
 					isFrontpageHome: O.g,
 					isM2MHomeRedirectEnabled: f.c,
-					language: j.T,
+					language: j.S,
 					isActive: C.g,
 					isPostChainDismissed: v.c,
 					isPostChained: v.d,
@@ -5769,7 +5769,7 @@
 					postIds: he,
 					showEditFlair: ce.a,
 					subredditOrProfile: C.U,
-					userIsOp: j.kb
+					userIsOp: j.jb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -8242,7 +8242,7 @@
 				B = Object(v.t)(),
 				R = Object(o.c)({
 					dropdownIsOpen: Object(j.b)("StateSort--StateSortPicker"),
-					language: S.T
+					language: S.S
 				}),
 				F = Object(a.b)(R, e => ({
 					onOpenDropdown: () => e(Object(u.g)({
@@ -8291,7 +8291,7 @@
 			const V = Object(v.t)(),
 				G = Object(o.c)({
 					dropdownIsOpen: Object(j.b)("CountrySort--CountrySortPicker"),
-					language: S.T
+					language: S.S
 				});
 			var z = V(Object(a.b)(G, e => ({
 					onOpenDropdown: t => e(Object(u.g)({
@@ -8343,7 +8343,7 @@
 				}),
 				ee = Object(o.c)({
 					currentUser: S.i,
-					language: S.T,
+					language: S.S,
 					isPopularListing: v.D,
 					redditStyle: v.B
 				}),
@@ -8589,7 +8589,7 @@
 				D = Object(o.c)({
 					user: C.i,
 					dropdownIsOpen: (e, t) => Object(O.b)(t.dropdownId || k)(e),
-					language: C.T
+					language: C.S
 				}),
 				A = Object(a.b)(D, (e, t) => {
 					let {
@@ -8940,13 +8940,13 @@
 					flairStyleTemplate: f.Q,
 					hideNSFWPref: N.z,
 					isActive: _.g,
-					language: N.T,
+					language: N.S,
 					moderatorPermissions: w.i,
 					modModeEnabled: f.O,
 					post: _.I,
 					showEditFlair: P.a,
 					subredditOrProfile: _.U,
-					userIsOp: N.kb
+					userIsOp: N.jb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -9456,7 +9456,7 @@
 			const xe = Object(c.c)({
 				isAutocompletePending: be.c,
 				items: be.e,
-				language: ge.T
+				language: ge.S
 			});
 			class ye extends o.a.Component {
 				constructor() {
@@ -9891,7 +9891,7 @@
 						let {
 							language: s
 						} = t;
-						return s || Object(ge.T)(e)
+						return s || Object(ge.S)(e)
 					}
 				}),
 				tt = Object(i.b)(et, (e, t) => {
@@ -11605,7 +11605,7 @@
 				minimizedLength: l.Db
 			};
 			const C = Object(c.c)({
-				language: g.T
+				language: g.S
 			});
 			t.a = Object(i.b)(C)(O)
 		},
@@ -11820,7 +11820,7 @@
 				S = s.n(j);
 			const w = e => e.type === E.f.Nsfw || e.type === E.f.Spoiler,
 				P = Object(o.c)({
-					language: C.T,
+					language: C.S,
 					post: b.I,
 					subredditOrProfile: b.U
 				});
@@ -12500,7 +12500,7 @@
 			const X = Object(c.c)({
 					isCollectionReady: N.e,
 					isModerator: P.e,
-					language: k.T,
+					language: k.S,
 					selectedSubreddit: _.S,
 					shouldRequestCollection: N.f,
 					subredditChannels: N.a
@@ -13164,7 +13164,7 @@
 			const ee = Object(d.a)("spPolls", N),
 				te = Object(c.t)(),
 				se = Object(o.c)({
-					language: l.T,
+					language: l.S,
 					layout: c.M,
 					widget: m.f
 				}),
@@ -13251,7 +13251,7 @@
 				K = e => "SubredditChannels--Menu--".concat(e),
 				q = Object(c.c)({
 					isModerator: F.g,
-					language: A.T,
+					language: A.S,
 					isDropdownOpen: (e, t) => Object(D.b)(K(t.subredditId))(e)
 				}),
 				Q = l.a.wrapped(e => {
@@ -13646,7 +13646,7 @@
 						} = t;
 						return Object(nt.c)(e, s)
 					},
-					language: A.T,
+					language: A.S,
 					showGovernance: $.d.spPoints,
 					showLeaderboard: $.d.spLeaderboard,
 					widgets: te.u
@@ -14179,7 +14179,7 @@
 				T = Object(y.t)(),
 				M = Object(c.c)({
 					dropdownIsOpen: Object(C.b)(N),
-					language: j.T
+					language: j.S
 				}),
 				B = Object(i.b)(M, e => ({
 					onOpenDropdown: () => e(Object(p.g)({
@@ -14301,7 +14301,7 @@
 				h = s("./src/reddit/actions/subscription/index.ts"),
 				b = s("./src/reddit/selectors/user.ts");
 			const g = Object(i.c)({
-				language: b.T
+				language: b.S
 			});
 			var x = Object(a.b)(g, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -14377,7 +14377,7 @@
 				}, e.bottomButtonText)))),
 				I = Object(i.c)({
 					hideNSFWPref: b.z,
-					language: b.T
+					language: b.S
 				}),
 				L = Object(a.b)(I)(e => n.a.createElement("div", {
 					className: _.a.communityItemContainer
@@ -14896,10 +14896,10 @@
 							r = t.redditStyle || Object(y.m)(e, {
 								subredditId: s
 							}),
-							n = Object(f.V)(e);
+							n = Object(f.U)(e);
 						return r || n
 					},
-					nigtmode: f.V,
+					nigtmode: f.U,
 					subredditId: m.m,
 					topPostVariant: x.d
 				}));
@@ -15061,7 +15061,7 @@
 				w = u.a.wrapped(i.a, "RawHTMLDisplay", v.a);
 			var P = Object(a.b)(() => Object(o.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: y.V
+					isNightmodeOn: y.U
 				}))(e => n.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -15109,7 +15109,7 @@
 				}
 			}
 			const V = Object(o.c)({
-				language: y.T
+				language: y.S
 			});
 			var G = Object(a.b)(V)(e => n.a.createElement(c.a, {
 					styles: e.widget.styles,
@@ -15427,7 +15427,7 @@
 				n = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/reddit/selectors/user.ts");
 			const o = Object(n.c)({
-				language: a.T
+				language: a.S
 			});
 
 			function i(e) {
@@ -15686,7 +15686,7 @@
 				}],
 				I = Object(x.t)(),
 				L = Object(o.c)({
-					language: f.T,
+					language: f.S,
 					postLayout: x.M,
 					redditStyle: x.B
 				}),
@@ -16576,7 +16576,7 @@
 					isM2MHomeRedirectEnabled: G.c,
 					isPostChainDismissed: z.c,
 					isPostChained: z.d,
-					language: J.T,
+					language: J.S,
 					moderatorPermissions: K.i,
 					modModeEnabled: R.O,
 					post: Z.I,
@@ -17796,14 +17796,14 @@
 						match: s
 					} = t;
 					return s.params.sort
-				}, Re, Ne.Y, (e, t, s, r) => {
+				}, Re, Ne.X, (e, t, s, r) => {
 					let n = t;
 					!n && Object(v.a)(e) && (n = j.N.HOT);
 					const a = Object(P.f)(s, r);
 					return Object(P.g)(e, n, s, a)
 				}),
 				De = Object(g.c)({
-					isTopContentDismissed: Ne.Q
+					isTopContentDismissed: Ne.P
 				}),
 				Ae = Object(g.c)({
 					subreddit: (e, t) => Object(_e.B)(e, {
@@ -17815,7 +17815,7 @@
 					geopopular: Ne.m
 				}),
 				He = Object(g.c)({
-					isLoggedIn: Ne.K
+					isLoggedIn: Ne.J
 				}),
 				Ue = Object(C.a)((e, t) => {
 					const {
@@ -17885,7 +17885,7 @@
 				qe = Object(g.c)({
 					subredditPremiumEnabled: de.d.spPremiumUpsells,
 					isBlacklistedTopContentPage: ge.j,
-					language: Ne.T,
+					language: Ne.S,
 					layersEmbedEnabledOnSubreddit: de.d.layersEmbed,
 					listingKey: Fe,
 					railsWidgetsVariant: ve.d,
@@ -17920,7 +17920,7 @@
 						})
 					}
 				}),
-				Ze = () => Object(g.a)(Ne.Y, We, Re, De, Ae, (e, t) => {
+				Ze = () => Object(g.a)(Ne.X, We, Re, De, Ae, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -18361,7 +18361,7 @@
 				a = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				o = s("./src/reddit/selectors/user.ts"),
 				i = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const c = Object(r.a)(a.a, a.b, o.O, (e, t) => {
+			const c = Object(r.a)(a.a, a.b, o.N, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -18678,4 +18678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.ee87eeab6636bae5ce47.js.map
+//# sourceMappingURL=Subreddit.09437fc6ed57db9c5477.js.map

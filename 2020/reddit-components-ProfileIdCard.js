@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7a87eaede677b2f9f1b8.js
-// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a7a01f1c63bf994e2a53.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -207,7 +207,7 @@
 				}).apply(this, arguments)
 			}
 			const L = Object(f.c)({
-					language: y.T
+					language: y.S
 				}),
 				k = o.a.div("Container", N.a),
 				T = o.a.div("Body", N.a),
@@ -251,24 +251,24 @@
 				}))(Object(O.b)(A)),
 				F = n("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				W = n.n(F);
-			const K = Object(f.a)(w.j, (e, t) => {
+			const R = Object(f.a)(w.j, (e, t) => {
 					let {
 						profileName: n
 					} = t;
-					return Object(y.lb)(e, n)
-				}, y.T, (e, t, n) => ({
+					return Object(y.kb)(e, n)
+				}, y.S, (e, t, n) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					language: n,
 					postKarma: t ? t.postKarma : 0,
 					profileCreated: t ? t.created : 0,
 					subscribers: e && e.subscribers || 0
 				})),
-				R = o.a.div("Container", W.a);
+				H = o.a.div("Container", W.a);
 
-			function H(e, t) {
+			function K(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
 			}
-			var G = Object(x.b)(K)(Object(O.b)(e => {
+			var G = Object(x.b)(R)(Object(O.b)(e => {
 					const {
 						profileCreated: t,
 						isOverlay: n,
@@ -276,8 +276,8 @@
 						commentKarma: s,
 						postKarma: o,
 						subscribers: i
-					} = e, c = H(n, "karma"), d = H(n, "cakeday"), m = Object(l.c)("".concat(Object(l.b)("postKarmaNumber", Object(v.b)(o, !0)), " Post Karma")), u = Object(l.c)("".concat(Object(l.b)("commentKarmaNumber", Object(v.b)(s, !0)), " Comment Karma"));
-					return a.a.createElement(R, null, a.a.createElement(U, {
+					} = e, c = K(n, "karma"), d = K(n, "cakeday"), m = Object(l.c)("".concat(Object(l.b)("postKarmaNumber", Object(v.b)(o, !0)), " Post Karma")), u = Object(l.c)("".concat(Object(l.b)("commentKarmaNumber", Object(v.b)(s, !0)), " Comment Karma"));
+					return a.a.createElement(H, null, a.a.createElement(U, {
 						icon: a.a.createElement(E.a, {
 							className: W.a.icon,
 							key: "karma"
@@ -458,40 +458,39 @@
 				m = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/constants/posts.ts"),
 				p = n("./src/reddit/controls/Button/index.tsx"),
-				g = n("./src/reddit/featureFlags/index.ts"),
-				b = n("./src/reddit/i18n/components.tsx"),
-				x = n("./src/reddit/selectors/platform.ts"),
-				f = n("./src/reddit/selectors/profile.ts"),
-				h = n("./src/reddit/selectors/structuredStyles.ts"),
-				v = n("./src/reddit/selectors/tooltip.ts"),
-				C = n("./src/reddit/selectors/user.ts"),
-				O = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
-				I = n("./node_modules/lodash/compact.js"),
-				E = n.n(I),
-				j = n("./src/lib/classNames/index.ts"),
-				w = n("./src/reddit/actions/gold/modals.ts"),
-				y = n("./src/reddit/actions/profile/index.ts"),
-				P = n("./src/higherOrderComponents/makeAsync.tsx"),
-				_ = n("./src/lib/loadWithRetries/index.ts");
-			var M = Object(P.a)({
-					getComponent: () => Object(_.a)(() => n.e("GivePremiumModal").then(n.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
+				g = n("./src/reddit/i18n/components.tsx"),
+				b = n("./src/reddit/selectors/platform.ts"),
+				x = n("./src/reddit/selectors/profile.ts"),
+				f = n("./src/reddit/selectors/structuredStyles.ts"),
+				h = n("./src/reddit/selectors/tooltip.ts"),
+				v = n("./src/reddit/selectors/user.ts"),
+				C = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
+				O = n("./node_modules/lodash/compact.js"),
+				I = n.n(O),
+				E = n("./src/lib/classNames/index.ts"),
+				j = n("./src/reddit/actions/gold/modals.ts"),
+				w = n("./src/reddit/actions/profile/index.ts"),
+				y = n("./src/higherOrderComponents/makeAsync.tsx"),
+				P = n("./src/lib/loadWithRetries/index.ts");
+			var _ = Object(y.a)({
+					getComponent: () => Object(P.a)(() => n.e("GivePremiumModal").then(n.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				N = n("./src/reddit/controls/InternalLink/index.tsx"),
-				S = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				L = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				k = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				T = n("./src/reddit/actions/modal.ts"),
-				D = n("./src/reddit/actions/multireddit/index.ts"),
-				B = n("./src/reddit/constants/modals.ts"),
-				A = n("./src/reddit/models/Gold/Premium/index.ts"),
-				U = n("./src/reddit/selectors/premium.ts"),
-				F = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
-				W = n.n(F);
+				M = n("./src/reddit/controls/InternalLink/index.tsx"),
+				N = n("./src/reddit/controls/OutboundLink/index.tsx"),
+				S = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				L = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				k = n("./src/reddit/actions/modal.ts"),
+				T = n("./src/reddit/actions/multireddit/index.ts"),
+				D = n("./src/reddit/constants/modals.ts"),
+				B = n("./src/reddit/models/Gold/Premium/index.ts"),
+				A = n("./src/reddit/selectors/premium.ts"),
+				U = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
+				F = n.n(U);
 
-			function K() {
-				return (K = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -509,26 +508,26 @@
 				return n
 			};
 			const H = Object(i.c)({
-					areModeratedSubredditsPending: f.a,
-					coinsToSpend: C.d,
-					givePremiumModalIsOpen: U.c,
-					hasFetchedModerators: f.k,
-					isEmployee: C.H,
-					isLoggedIn: C.K,
-					language: C.T,
-					profile: f.j
+					areModeratedSubredditsPending: x.a,
+					coinsToSpend: v.d,
+					givePremiumModalIsOpen: A.c,
+					hasFetchedModerators: x.k,
+					isEmployee: v.G,
+					isLoggedIn: v.J,
+					language: v.S,
+					profile: x.j
 				}),
-				G = e => {
+				K = e => {
 					var {
 						isLoading: t
 					} = e, n = R(e, ["isLoading"]);
-					return a.a.createElement("div", K({}, n, {
-						className: Object(j.a)(W.a.Shimmer, Object(k.b)({
+					return a.a.createElement("div", W({}, n, {
+						className: Object(E.a)(F.a.Shimmer, Object(L.b)({
 							isLoading: t
 						}))
 					}))
 				};
-			class V extends a.a.Component {
+			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -537,7 +536,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						Object(L.d)(L.a.GiftPremiumFlow), e();
+						Object(S.d)(S.a.GiftPremiumFlow), e();
 						const {
 							clickGivePremiumEvent: r
 						} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -554,36 +553,36 @@
 							isOwnProfile: c,
 							profileName: d,
 							profile: l
-						} = this.props, m = o && Object(A.b)(n, a).length && !c || a, u = E()([(c || i) && s ? {
-							text: O.fbt._("Profile Moderation", null, {
+						} = this.props, m = o && Object(B.b)(n, a).length && !c || a, u = I()([(c || i) && s ? {
+							text: C.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
 							url: "/user/".concat(d, "/about/edit/moderation"),
 							isInternalLink: !0
 						} : void 0, c ? void 0 : {
-							text: O.fbt._("Send Message", null, {
+							text: C.fbt._("Send Message", null, {
 								hk: "2oAlZ5"
 							}),
 							url: "".concat(r.a.redditUrl, "/message/compose/?to=").concat(d)
 						}, !c && t ? {
-							text: O.fbt._("View Snoovatar", null, {
+							text: C.fbt._("View Snoovatar", null, {
 								hk: "31JWSq"
 							}),
 							url: "".concat(r.a.redditUrl, "/user/").concat(d, "/snoo")
 						} : void 0, c ? void 0 : {
-							text: O.fbt._("Report User", null, {
+							text: C.fbt._("Report User", null, {
 								hk: "4hFoE2"
 							}),
 							url: "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-should-i-do-if-i-see-something-i"
 						}, o && l && !l.isQuarantined ? {
 							onClick: e,
-							text: O.fbt._("Add to custom feed", null, {
+							text: C.fbt._("Add to custom feed", null, {
 								hk: "8zqUU"
 							})
 						} : void 0]);
 						return m && u.splice(1, 0, {
 							onClick: this.clickGivePremium,
-							text: O.fbt._("Give Premium", null, {
+							text: C.fbt._("Give Premium", null, {
 								hk: "2wyUqF"
 							})
 						}), u
@@ -611,132 +610,131 @@
 						expanded: t
 					} = this.state, n = this.makeMenuItems();
 					if (0 === n.length) return null;
-					const r = (t ? n : []).map(e => e.url ? e.isInternalLink ? a.a.createElement(N.a, {
+					const r = (t ? n : []).map(e => e.url ? e.isInternalLink ? a.a.createElement(M.a, {
 						key: e.url,
 						onClick: e.onClick,
 						to: e.url,
-						className: W.a.menuItem
-					}, e.text) : a.a.createElement(S.a, {
+						className: F.a.menuItem
+					}, e.text) : a.a.createElement(N.a, {
 						key: e.url,
 						href: e.url,
 						isSponsored: !1,
 						onClick: e.onClick,
 						source: void 0,
-						className: W.a.menuItem
+						className: F.a.menuItem
 					}, e.text) : a.a.createElement(p.n, {
-						className: W.a.menuItem,
+						className: F.a.menuItem,
 						key: e.text,
 						onClick: e.onClick
 					}, e.text));
 					this.state.expanded && this.isLoadingMods() && (r.unshift(a.a.createElement("div", {
-						className: W.a.menuItem,
+						className: F.a.menuItem,
 						key: "loading-1"
-					}, a.a.createElement(G, {
+					}, a.a.createElement(K, {
 						isLoading: this.props.areModeratedSubredditsPending
 					}))), r.unshift(a.a.createElement("div", {
-						className: W.a.menuItem,
+						className: F.a.menuItem,
 						key: "loading-2"
-					}, a.a.createElement(G, {
+					}, a.a.createElement(K, {
 						isLoading: this.props.areModeratedSubredditsPending
 					}))));
-					const s = t ? O.fbt._("Fewer Options", null, {
+					const s = t ? C.fbt._("Fewer Options", null, {
 						hk: "4ixXKg"
-					}) : O.fbt._("More Options", null, {
+					}) : C.fbt._("More Options", null, {
 						hk: "4ix9v1"
 					});
 					return a.a.createElement("div", {
-						className: W.a.container
+						className: F.a.container
 					}, r, a.a.createElement("div", {
-						className: W.a.expandContainer
+						className: F.a.expandContainer
 					}, a.a.createElement(p.n, {
-						className: W.a.expandButton,
+						className: F.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, s)), e && a.a.createElement(M, null))
+					}, s)), e && a.a.createElement(_, null))
 				}
 			}
-			var z = Object(o.b)(H, (e, t) => {
+			var V = Object(o.b)(H, (e, t) => {
 					let {
 						profileName: n
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(D.g)(!0, !0)), e(Object(T.h)(B.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(T.g)(!0, !0)), e(Object(k.h)(D.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
-						onClickGivePremium: () => e(Object(w.e)(n)),
-						onModeratorsRequested: () => e(Object(y.b)(n))
+						onClickGivePremium: () => e(Object(j.e)(n)),
+						onModeratorsRequested: () => e(Object(w.b)(n))
 					}
-				})(V),
-				Z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
-				q = n.n(Z);
-			const J = Object(i.c)({
-					account: C.i,
-					activeTooltipId: v.a,
-					currentUserHasSubreddit: C.g,
-					hideNSFWPref: C.z,
-					isModerator: f.f,
-					profile: f.j,
-					profileAboutInfo: f.h,
-					structuredStyle: (e, t) => Object(h.n)(e, Object(f.m)(e, t.profileName)),
+				})(G),
+				z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
+				Z = n.n(z);
+			const q = Object(i.c)({
+					account: v.i,
+					activeTooltipId: h.a,
+					currentUserHasSubreddit: v.g,
+					hideNSFWPref: v.z,
+					isModerator: x.f,
+					profile: x.j,
+					profileAboutInfo: x.h,
+					structuredStyle: (e, t) => Object(f.n)(e, Object(x.m)(e, t.profileName)),
 					userHasSubreddit: (e, t) => {
 						let {
 							profileName: n
 						} = t;
-						return Object(C.jb)(e, {
+						return Object(v.ib)(e, {
 							userName: n
 						})
 					},
-					userInChat: g.d.userInChat,
 					user: (e, t) => {
 						let {
 							profileName: n
 						} = t;
-						return Object(C.ib)(e, {
+						return Object(v.hb)(e, {
 							userName: n
 						})
 					},
-					page: x.b
+					page: b.b
 				}),
-				X = e => {
+				J = e => {
 					let {
 						username: t,
 						currentUserHasSubreddit: n
 					} = e;
 					return a.a.createElement("div", {
-						className: q.a.actionItem
+						className: Z.a.actionItem
 					}, a.a.createElement(p.h, {
-						className: q.a.button,
+						className: Z.a.button,
 						to: n ? "/user/".concat(t, "/submit") : "/submit"
-					}, a.a.createElement(b.c, null, "New post")))
+					}, a.a.createElement(g.c, null, "New post")))
 				},
-				Q = e => {
+				X = e => {
 					let {
 						profileName: t,
 						onToggleFollow: n,
 						userIsSubscriber: r
 					} = e;
 					return a.a.createElement("div", {
-						className: q.a.actionItem
+						className: Z.a.actionItem
 					}, r ? a.a.createElement(p.i, {
-						className: q.a.button,
+						className: Z.a.button,
 						onClick: () => n(t, r)
-					}, a.a.createElement(b.c, null, "Unfollow")) : a.a.createElement(p.f, {
-						className: q.a.button,
+					}, a.a.createElement(g.c, null, "Unfollow")) : a.a.createElement(p.f, {
+						className: Z.a.button,
 						onClick: () => n(t, r)
-					}, a.a.createElement(b.c, null, "Follow")))
+					}, a.a.createElement(g.c, null, "Follow")))
 				},
-				Y = e => {
+				Q = e => {
 					let {
 						userId: t
 					} = e;
 					return a.a.createElement("div", {
-						className: q.a.actionItem
+						className: Z.a.actionItem
 					}, a.a.createElement(d.a, {
 						contextId: t,
-						className: q.a.button,
+						className: Z.a.button,
 						userId: t
-					}, a.a.createElement(b.c, null, "Chat")))
+					}, a.a.createElement(g.c, null, "Chat")))
 				};
-			t.default = Object(o.b)(J, e => ({
+			t.default = Object(o.b)(q, e => ({
 				onToggleFollow: (t, n) => e(Object(c.d)([{
 					name: t,
 					type: u.a.PROFILE
@@ -755,49 +753,48 @@
 					sendEvent: p,
 					structuredStyle: g,
 					userHasSubreddit: b,
-					userInChat: x,
-					user: f,
-					page: h
+					user: x,
+					page: f
 				} = e;
-				if (!f) return null;
+				if (!x) return null;
 				const {
-					accountIcon: v,
-					awardedLastMonth: C,
-					id: O,
-					isEmployee: I,
-					isGold: E,
-					prefShowSnoovatar: j,
-					username: w
-				} = f, y = !!t && t.id === O, P = g && g.bannerBackgroundImage, _ = m && m.isNSFW && s, M = !(!u || !u.userIsSubscriber), N = "/user/".concat(w, "/"), S = h && h.url === N;
+					accountIcon: h,
+					awardedLastMonth: v,
+					id: C,
+					isEmployee: O,
+					isGold: I,
+					prefShowSnoovatar: E,
+					username: j
+				} = x, w = !!t && t.id === C, y = g && g.bannerBackgroundImage, P = m && m.isNSFW && s, _ = !(!u || !u.userIsSubscriber), M = "/user/".concat(j, "/"), N = f && f.url === M;
 				return a.a.createElement(l.a, {
-					isEmployee: I,
-					isGold: E,
+					isEmployee: O,
+					isGold: I,
 					isOverlay: i,
 					publicDescription: u ? u.publicDescription : void 0,
 					title: m ? m.title : void 0,
-					url: S ? null : N,
-					username: w,
-					recentAwardings: C,
-					actions: a.a.createElement(a.a.Fragment, null, y && !c && X({
-						username: w,
+					url: N ? null : M,
+					username: j,
+					recentAwardings: v,
+					actions: a.a.createElement(a.a.Fragment, null, w && !c && J({
+						username: j,
 						currentUserHasSubreddit: n
-					}), !y && b && Q({
-						profileName: w,
+					}), !w && b && X({
+						profileName: j,
 						onToggleFollow: d,
-						userIsSubscriber: M
-					}), !!t && !y && x && Y({
-						userId: O
+						userIsSubscriber: _
+					}), !!t && !w && Q({
+						userId: C
 					})),
-					footer: a.a.createElement(z, {
+					footer: a.a.createElement(V, {
 						hasSubreddit: b,
 						isModerator: o,
-						isOwnProfile: y,
-						allowViewSnoovatar: j,
-						profileName: w,
+						isOwnProfile: w,
+						allowViewSnoovatar: E,
+						profileName: j,
 						sendEvent: p
 					}),
-					profileIcon: _ ? "".concat(r.a.assetPath, "/img/avatar_over18_square.png") : v,
-					bannerBackgroundImage: _ ? void 0 : P
+					profileIcon: P ? "".concat(r.a.assetPath, "/img/avatar_over18_square.png") : h,
+					bannerBackgroundImage: P ? void 0 : y
 				})
 			}))
 		},
@@ -1064,7 +1061,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => !!(e => {
 				const t = Object(s.c)(e, {
-					experimentEligibilitySelector: e => Object(a.K)(e),
+					experimentEligibilitySelector: e => Object(a.J)(e),
 					experimentName: r.N
 				});
 				return Object(r.Xb)(t) ? void 0 : t
@@ -1088,4 +1085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.7a87eaede677b2f9f1b8.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.a7a01f1c63bf994e2a53.js.map

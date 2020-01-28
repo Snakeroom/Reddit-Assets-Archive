@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.dbfeabc909e7cfdaa13f.js
-// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.a5cf9534fef11740a26d.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, s) {
@@ -57,8 +57,8 @@
 				v = s("./src/config.ts"),
 				C = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				g = s("./src/lib/lessComponent.tsx"),
-				x = s("./src/lib/prettyPrintNumber/index.ts"),
-				h = s("./src/lib/timeAgo/index.ts"),
+				h = s("./src/lib/prettyPrintNumber/index.ts"),
+				x = s("./src/lib/timeAgo/index.ts"),
 				I = s("./src/reddit/i18n/components.tsx"),
 				E = s("./src/reddit/components/ChatButton/index.tsx"),
 				L = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -90,7 +90,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(p.ib)(e, {
+				user: (e, t) => Object(p.hb)(e, {
 					userName: t.username
 				})
 			});
@@ -200,8 +200,8 @@
 				ve = g.a.div("UserInfoContainer", re.a),
 				Ce = g.a.div("PostKarma", re.a),
 				ge = g.a.div("CommentKarma", re.a),
-				xe = g.a.div("KarmaCount", re.a),
-				he = g.a.div("KarmaLabel", re.a),
+				he = g.a.div("KarmaCount", re.a),
+				xe = g.a.div("KarmaLabel", re.a),
 				Ie = g.a.div("BannerImage", re.a),
 				Ee = g.a.div("UserContainer", re.a),
 				Le = g.a.div("BottomSpacer", re.a),
@@ -213,8 +213,8 @@
 					title: Object(M.c)("Reddit admin")
 				}), e.user.isGold && n.a.createElement(C.a, {
 					to: "/premium"
-				}, n.a.createElement(de, null))), n.a.createElement(ue, null, e.user.username && n.a.createElement(me, null, e.user.username, n.a.createElement(pe, null, "•")), n.a.createElement(me, null, Object(h.d)(e.language, e.user.created)))),
-				je = e => n.a.createElement(ve, null, n.a.createElement(ie, null), n.a.createElement(Ce, null, n.a.createElement(xe, null, Object(x.b)(e.user.postKarma)), n.a.createElement(he, null, n.a.createElement(I.c, null, "Post Karma"))), n.a.createElement(ge, null, n.a.createElement(xe, null, Object(x.b)(e.user.commentKarma)), n.a.createElement(he, null, n.a.createElement(I.c, null, "Comment Karma")))),
+				}, n.a.createElement(de, null))), n.a.createElement(ue, null, e.user.username && n.a.createElement(me, null, e.user.username, n.a.createElement(pe, null, "•")), n.a.createElement(me, null, Object(x.d)(e.language, e.user.created)))),
+				je = e => n.a.createElement(ve, null, n.a.createElement(ie, null), n.a.createElement(Ce, null, n.a.createElement(he, null, Object(h.b)(e.user.postKarma)), n.a.createElement(xe, null, n.a.createElement(I.c, null, "Post Karma"))), n.a.createElement(ge, null, n.a.createElement(he, null, Object(h.b)(e.user.commentKarma)), n.a.createElement(xe, null, n.a.createElement(I.c, null, "Comment Karma")))),
 				Oe = Object(_.a)(e => {
 					const {
 						className: t,
@@ -236,8 +236,8 @@
 					if (!C) return n.a.createElement(_e, {
 						style: m
 					});
-					const x = C.isNSFW && r,
-						h = C.accountIcon || "".concat(v.a.assetPath, "/img/snoo_user_placeholder.png"),
+					const h = C.isNSFW && r,
+						x = C.accountIcon || "".concat(v.a.assetPath, "/img/snoo_user_placeholder.png"),
 						I = l && l.flair,
 						E = l && l.access,
 						_ = g && g.templateIds && g.templateIds.length > 0,
@@ -245,8 +245,8 @@
 						{
 							awardedLastMonth: O
 						} = C,
-						N = x ? "".concat(v.a.assetPath, "/img/user-info-banner.png") : e.user.bannerImage,
-						f = x ? "".concat(v.a.assetPath, "/img/avatar_over18_square.png") : h;
+						N = h ? "".concat(v.a.assetPath, "/img/user-info-banner.png") : e.user.bannerImage,
+						f = h ? "".concat(v.a.assetPath, "/img/avatar_over18_square.png") : x;
 					return n.a.createElement(_e, {
 						className: t,
 						id: a,
@@ -313,12 +313,12 @@
 						const s = Object(p.i)(e);
 						return !!s && Object(i.f)(s) === t.userName
 					},
-					isLoggedIn: p.K,
+					isLoggedIn: p.J,
 					hideNSFWPref: p.z,
-					language: p.T,
+					language: p.S,
 					moderatorPermissions: u.j,
 					origin: l.g,
-					user: p.ib,
+					user: p.hb,
 					userFlair: b.c
 				}),
 				He = Object(a.b)(fe, (e, t) => ({
@@ -460,7 +460,7 @@
 			})), s.d(t, "b", (function() {
 				return E
 			}));
-			class x extends n.a.Component {
+			class h extends n.a.Component {
 				constructor() {
 					super(...arguments), this.closeHovercardTimeoutId = 0, this.openHovercardTimeoutId = 0, this.isHovering = !1, this.hoverEl = void 0, this.onHoverElMouseEnter = () => {
 						this.isHovering = !0
@@ -501,9 +501,9 @@
 					}, e)
 				}
 			}
-			const h = a.a.wrapped(x, "HoverDiv", g.a),
-				I = m(h),
-				E = v(h)
+			const x = a.a.wrapped(h, "HoverDiv", g.a),
+				I = m(x),
+				E = v(x)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -662,15 +662,15 @@
 				}
 				return s
 			};
-			const x = v.a.button("IconButton", p.a),
-				h = v.a.wrapped(l.a, "SubscribeIcon", p.a),
+			const h = v.a.button("IconButton", p.a),
+				x = v.a.wrapped(l.a, "SubscribeIcon", p.a),
 				I = v.a.wrapped(d.a, "UnsubscribeIcon", p.a),
 				E = v.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
 					} = e, r = g(e, ["border", "small"]);
-					return n.a.createElement(x, r, n.a.createElement(h, {
+					return n.a.createElement(h, r, n.a.createElement(x, {
 						className: Object(b.a)(r.className, {
 							[p.a.isSmall]: s
 						})
@@ -712,7 +712,7 @@
 						small: r,
 						type: a
 					} = e, c = g(e, ["border", "language", "small", "type"]);
-					return n.a.createElement(x, c, n.a.createElement(I, {
+					return n.a.createElement(h, c, n.a.createElement(I, {
 						className: Object(b.a)(o.o, c.className, {
 							[p.a.isSmall]: r
 						})
@@ -911,7 +911,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const o = e => !!(e => {
 				const t = Object(n.c)(e, {
-					experimentEligibilitySelector: e => Object(a.K)(e),
+					experimentEligibilitySelector: e => Object(a.J)(e),
 					experimentName: r.N
 				});
 				return Object(r.Xb)(t) ? void 0 : t
@@ -919,4 +919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.dbfeabc909e7cfdaa13f.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.a5cf9534fef11740a26d.js.map

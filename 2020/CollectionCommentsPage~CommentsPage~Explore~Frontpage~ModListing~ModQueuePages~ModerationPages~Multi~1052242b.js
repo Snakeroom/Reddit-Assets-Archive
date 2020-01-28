@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.7fce56af4d4287b45bc7.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.0dd8132953e133ba57e3.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b"], {
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
@@ -78,15 +78,15 @@
 				y = s("./src/reddit/helpers/name/index.ts"),
 				I = s("./src/reddit/models/Subreddit/index.ts"),
 				P = s("./src/reddit/models/User/index.ts"),
-				T = s("./src/reddit/selectors/subreddit.ts"),
-				w = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
-				B = s.n(w),
-				F = s("./src/lib/lessComponent.tsx");
-			const S = F.a.div("Container", B.a),
-				M = F.a.h2("PostTitle", B.a),
-				L = F.a.div("MetaLine", B.a),
-				k = F.a.span("SubredditName", B.a),
-				N = F.a.time("InfoSpan", B.a),
+				w = s("./src/reddit/selectors/subreddit.ts"),
+				T = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
+				B = s.n(T),
+				S = s("./src/lib/lessComponent.tsx");
+			const F = S.a.div("Container", B.a),
+				M = S.a.h2("PostTitle", B.a),
+				L = S.a.div("MetaLine", B.a),
+				k = S.a.span("SubredditName", B.a),
+				N = S.a.time("InfoSpan", B.a),
 				A = Object(c.c)({
 					subreddit: (e, t) => {
 						let {
@@ -94,7 +94,7 @@
 								subredditId: s
 							}
 						} = t;
-						return s ? Object(T.S)(e, {
+						return s ? Object(w.S)(e, {
 							subredditId: s
 						}) : void 0
 					},
@@ -114,7 +114,7 @@
 						user: o,
 						onHoverActionText: r
 					} = this.props, i = s && Object(I.e)(s) && o ? Object(y.c)(Object(P.f)(o)) : s ? s.displayText : "", c = e.postIds.length;
-					return a.a.createElement(S, {
+					return a.a.createElement(F, {
 						onClick: this.onClick,
 						className: B.a.container
 					}, a.a.createElement(M, {
@@ -140,27 +140,27 @@
 				V = Object(n.e)("postCreation.collections.collectionsListTitle"),
 				Z = Object(n.e)("postCreation.collections.createCollection"),
 				G = "".concat(o.a.assetPath, "/img/snoo-drafts.png"),
-				Q = F.a.div("TopRow", U.a),
-				z = F.a.div("TitleRow", U.a),
-				q = F.a.div("DetailsContainer", U.a),
-				Y = F.a.wrapped(g.a, "ButtonRow", U.a),
-				$ = F.a.div("CloseWrapper", U.a),
-				ee = F.a.wrapped(C.a, "Close", U.a),
-				te = F.a.div("Empty", U.a),
-				se = F.a.img("EmptyImage", U.a),
-				ne = F.a.p("EmptyText", U.a),
-				oe = F.a.div("FilterWrapper", U.a),
-				re = F.a.wrapped(x.a, "FilterInput", U.a),
-				ae = F.a.wrapped(v.a, "SearchIcon", U.a),
-				ie = F.a.wrapped(b.a, "PlusIcon", U.a),
-				ce = F.a.wrapped(h.j, "CreateCollectionButton", U.a),
+				Q = S.a.div("TopRow", U.a),
+				z = S.a.div("TitleRow", U.a),
+				q = S.a.div("DetailsContainer", U.a),
+				Y = S.a.wrapped(g.a, "ButtonRow", U.a),
+				$ = S.a.div("CloseWrapper", U.a),
+				ee = S.a.wrapped(C.a, "Close", U.a),
+				te = S.a.div("Empty", U.a),
+				se = S.a.img("EmptyImage", U.a),
+				ne = S.a.p("EmptyText", U.a),
+				oe = S.a.div("FilterWrapper", U.a),
+				re = S.a.wrapped(x.a, "FilterInput", U.a),
+				ae = S.a.wrapped(v.a, "SearchIcon", U.a),
+				ie = S.a.wrapped(b.a, "PlusIcon", U.a),
+				ce = S.a.wrapped(h.j, "CreateCollectionButton", U.a),
 				le = Object(d.a)((e, t) => {
 					const s = t.toLowerCase();
 					return e.filter(e => e.title.toLowerCase().includes(s))
 				}),
 				de = Object(c.c)({
 					collections: f.v,
-					language: E.T
+					language: E.S
 				}),
 				pe = Object(i.b)(de, (e, t) => {
 					let {
@@ -304,11 +304,11 @@
 			const y = Object(i.e)("postCreation.cancel"),
 				I = Object(i.e)("postCreation.create"),
 				P = Object(i.e)("postCreation.save"),
-				T = Object(i.e)("postCreation.collections.createCollection"),
-				w = Object(i.e)("postCreation.collections.createModal.details"),
+				w = Object(i.e)("postCreation.collections.createCollection"),
+				T = Object(i.e)("postCreation.collections.createModal.details"),
 				B = Object(i.e)("postCreation.collections.createModal.giveATitle"),
-				F = Object(i.e)("postCreation.collections.createModal.editTitle"),
-				S = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
+				S = Object(i.e)("postCreation.collections.createModal.editTitle"),
+				F = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
 				M = j.a.div("Container", O.a),
 				L = j.a.div("Content", O.a),
 				k = j.a.div("TitleRow", O.a),
@@ -327,7 +327,7 @@
 					collection: _.q,
 					error: _.c,
 					isPending: _.g,
-					language: f.T
+					language: f.S
 				}),
 				G = Object(r.b)(Z, (e, t) => ({
 					onCreate: (t, s) => e(Object(d.b)(t, s)),
@@ -368,13 +368,13 @@
 						error: t,
 						isPending: s,
 						language: n
-					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? I : P, c = r ? B : F;
+					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? I : P, c = r ? B : S;
 					return o.a.createElement(M, null, o.a.createElement(X, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(D, null)), o.a.createElement(L, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(k, null, o.a.createElement(H, null), T(n)), o.a.createElement(N, null, w(n))), o.a.createElement(W, null, c(n), o.a.createElement(U, {
+					}, o.a.createElement(D, null)), o.a.createElement(L, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(k, null, o.a.createElement(H, null), w(n)), o.a.createElement(N, null, T(n))), o.a.createElement(W, null, c(n), o.a.createElement(U, {
 						maxLength: m.e,
 						onChange: this.onTitleChange,
-						placeholder: S(n),
+						placeholder: F(n),
 						value: this.state.collectionTitle
 					}))), o.a.createElement(A, null, o.a.createElement(g.a, null, o.a.createElement(R, {
 						onClick: this.props.onCancel
@@ -510,10 +510,10 @@
 					}, Object(C.c)("Clear Flair"))))
 				}
 			}
-			const T = Object(a.b)(I, (e, t) => ({
+			const w = Object(a.b)(I, (e, t) => ({
 				closeModal: () => e(Object(d.i)(t.modalId))
 			}))(P);
-			t.a = Object(l.a)(Object(c.b)(T))
+			t.a = Object(l.a)(Object(c.b)(w))
 		},
 		"./src/reddit/components/RestrictedFlatlistButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -577,7 +577,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				c = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: c.T,
+				language: c.S,
 				subscribeReminderTooltipId: a.C,
 				subscribeTooltipId: a.D,
 				userIsSubscriber: i.cb
@@ -847,4 +847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.7fce56af4d4287b45bc7.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~1052242b.0dd8132953e133ba57e3.js.map

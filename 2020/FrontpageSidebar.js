@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.867b80ed8706867c2bc3.js
-// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.9b50c2533b724ef979cc.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, s) {
@@ -587,7 +587,7 @@
 			var tt = ze(et),
 				st = s("./src/reddit/selectors/user.ts");
 			const nt = Object(i.c)({
-				language: st.T,
+				language: st.S,
 				recentPosts: V.R
 			});
 			var at = Object(r.b)(nt, (e, t) => ({
@@ -822,7 +822,7 @@
 				}))
 			}))(Jt);
 			const qt = Object(i.c)({
-					isMod: st.L,
+					isMod: st.K,
 					isLoggedIn: e => e.user.temporaryGQL.isLoggedIn,
 					isUpAndComingExperiment: kt.b,
 					trendingSubredditIds: R.ab,
@@ -929,7 +929,7 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				E = s.n(x);
-			const k = Object(i.a)(e => e, b.I, b.c, g.T, (e, t, s, n) => {
+			const k = Object(i.a)(e => e, b.I, b.c, g.S, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
@@ -1487,4 +1487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.867b80ed8706867c2bc3.js.map
+//# sourceMappingURL=FrontpageSidebar.9b50c2533b724ef979cc.js.map

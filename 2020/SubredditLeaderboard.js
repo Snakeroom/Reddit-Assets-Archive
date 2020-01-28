@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6db640b2072869012d4c.js
-// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2974a392f35164ef8fb2.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1066,10 +1066,10 @@
 							n = t.redditStyle || Object(E.m)(e, {
 								subredditId: r
 							}),
-							s = Object(f.V)(e);
+							s = Object(f.U)(e);
 						return n || s
 					},
-					nigtmode: f.V,
+					nigtmode: f.U,
 					subredditId: m.m,
 					topPostVariant: y.d
 				}));
@@ -1303,7 +1303,7 @@
 						} = t;
 						return Object(F.b)(e, r)
 					},
-					isMod: R.L,
+					isMod: R.K,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -1387,8 +1387,8 @@
 					})))))
 				}
 			}
-			var V = Object(m.b)(M(Q)),
-				G = r("./src/reddit/components/CategoryPickerWidget/index.tsx"),
+			var G = Object(m.b)(M(Q)),
+				V = r("./src/reddit/components/CategoryPickerWidget/index.tsx"),
 				J = r("./src/lib/lessComponent.tsx"),
 				K = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				U = r("./src/reddit/components/CommunitiesDirectoryWidget/index.m.less"),
@@ -1419,7 +1419,7 @@
 					const t = e.categoryName && Object(re.f)(e.categoryName);
 					return o.a.createElement("div", {
 						className: k.a.SidebarLeft
-					}, o.a.createElement(q.a, null, o.a.createElement(G.a, {
+					}, o.a.createElement(q.a, null, o.a.createElement(V.a, {
 						categories: e.categories,
 						currentCategoryName: t,
 						initialNumberOfCategories: 12,
@@ -1522,7 +1522,7 @@
 						d = this.props.categoryId ? this.props.categoryId : a ? p.g : p.a;
 					return o.a.createElement(l.a, null, o.a.createElement(f.a, {
 						className: Object(c.a)(e, k.a.mainContent),
-						content: o.a.createElement(V, {
+						content: o.a.createElement(G, {
 							categoryId: d,
 							categoryName: i
 						}),
@@ -1543,4 +1543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.6db640b2072869012d4c.js.map
+//# sourceMappingURL=SubredditLeaderboard.2974a392f35164ef8fb2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5218f9c62e1c3a6ef3dc.js
-// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.742a922d4c9a5000dd7b.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -822,7 +822,7 @@
 						error: h,
 						metadata: f
 					} = await async function(e, t, n, o) {
-						const s = Object(j.T)(e),
+						const s = Object(j.S)(e),
 							a = n && n.allowedPostTypes,
 							c = n && n.name,
 							l = await Object(g.g)(t) || t.type,
@@ -1354,7 +1354,7 @@
 				E = n("./src/reddit/components/CategoryTagList/index.m.less"),
 				y = n.n(E);
 			const v = Object(r.b)(() => Object(i.c)({
-				labelNSFW: c.S
+				labelNSFW: c.R
 			}));
 			t.a = v(Object(a.b)(e => {
 				let {
@@ -2119,9 +2119,9 @@
 				I = E.a.div("ThumbnailContainer", C.a),
 				P = Object(a.c)({
 					isCurrentUserProfilePost: g.h,
-					language: f.T,
+					language: f.S,
 					post: g.I,
-					shouldOpenPostInNewTab: f.X,
+					shouldOpenPostInNewTab: f.W,
 					subreddit: g.U
 				}),
 				M = Object(r.b)(P);
@@ -2587,7 +2587,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				p = n("./src/reddit/selectors/user.ts");
 			const m = Object(c.c)({
-					labelNSFW: p.S
+					labelNSFW: p.R
 				}),
 				h = Object(a.b)(m),
 				b = e => {
@@ -4516,7 +4516,7 @@
 					[m]: x
 				},
 				E = Object(i.c)({
-					language: c.T
+					language: c.S
 				}),
 				y = Object(r.b)(E),
 				v = (e, t) => ({
@@ -4987,7 +4987,7 @@
 				G = d.a.div("ErrorMessage", w.a),
 				J = d.a.wrapped(E.b, "TrashIcon", w.a),
 				Z = Object(i.c)({
-					language: O.T
+					language: O.S
 				}),
 				Q = Object(r.b)(Z);
 			class X extends s.a.PureComponent {
@@ -5535,7 +5535,7 @@
 							subredditId: n.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: N.X
+					shouldOpenPostInNewTab: N.W
 				}),
 				q = Object(i.b)(z),
 				G = e => {
@@ -6005,7 +6005,7 @@
 				R = Object(l.c)({
 					hasIdCardWidgetData: M,
 					isCreationPagePending: f.B,
-					language: E.T,
+					language: E.S,
 					profile: (e, t) => {
 						let {
 							pageLayer: n,
@@ -9251,7 +9251,7 @@
 				}, (e, t) => t ? e[t] : void 0),
 				dn = Object(c.b)((e, t) => ({
 					upload: ln(e, t),
-					language: Object(Ue.T)(e),
+					language: Object(Ue.S)(e),
 					isThumbnailSelectorOpen: Object(Ke.a)(e) === cn(t.block),
 					isRteVideoPosterEnabled: E.d.rteVideoPoster(e)
 				}), (e, t) => ({
@@ -14188,7 +14188,7 @@
 				_ = ["right", "top"];
 			var I = Object(c.b)(() => Object(l.c)({
 					post: C.I,
-					language: E.T
+					language: E.S
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(x.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -14427,10 +14427,10 @@
 							o = t.redditStyle || Object(x.m)(e, {
 								subredditId: n
 							}),
-							s = Object(C.V)(e);
+							s = Object(C.U)(e);
 						return o || s
 					},
-					nigtmode: C.V,
+					nigtmode: C.U,
 					subredditId: u.m,
 					topPostVariant: f.d
 				}));
@@ -14539,7 +14539,7 @@
 				s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
-				language: r.T
+				language: r.S
 			});
 
 			function a(e) {
@@ -15977,7 +15977,7 @@
 				H = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
 				W = n.n(H);
 			const V = Object(d.c)({
-				language: v.T
+				language: v.S
 			});
 			class z extends s.a.Component {
 				constructor(e) {
@@ -19102,7 +19102,7 @@
 			function Rt(e, t) {
 				const n = Object(i.c)({
 					isOpen: e => Object(xe.a)(e) === t,
-					language: I.T
+					language: I.S
 				});
 				class o extends s.a.Component {
 					componentDidMount() {
@@ -19537,7 +19537,7 @@
 						const {
 							allowedPostTypes: t,
 							name: n
-						} = Object(T.g)(e), o = mo(e), s = Object(I.T)(e);
+						} = Object(T.g)(e), o = mo(e), s = Object(I.S)(e);
 						if (!o || !t) return null;
 						let r = "";
 						return !o.total || t.images || t.videos ? o.video && !t.videos ? r = "postCreation.mediaInput.videosAreNotAllowed" : !o.image && !o.gifvideo || t.images || (r = "postCreation.mediaInput.imagesAreNotAllowed") : r = "postCreation.mediaInput.mediaAreNotAllowed", r ? Object(ne.a)(s, r, {
@@ -19546,7 +19546,7 @@
 					})(e);
 					return o ? [o] : (e => {
 						const t = mo(e),
-							n = Object(I.T)(e);
+							n = Object(I.S)(e);
 						if (!t) return bo;
 						const o = [];
 						return t.image > p.R && o.push(Object(ne.a)(n, "postCreation.mediaInput.imagesLimitExceeded")), t.video + t.gifvideo > p.V && o.push(Object(ne.a)(n, "postCreation.mediaInput.videosLimitExceeded")), o
@@ -19565,10 +19565,10 @@
 							isProfile: i,
 							name: a
 						} = Object(T.g)(e),
-						c = Object(I.T)(e);
+						c = Object(I.S)(e);
 					if (!n) return Object(ne.a)(c, "postCreation.crosspostInput.sourcePostIdRequired");
 					if (!r) return Object(ne.a)(c, "postCreation.crosspostInput.destinationRequired");
-					const l = i ? Object(I.Z)(e, {
+					const l = i ? Object(I.Y)(e, {
 						userId: r
 					}) : r;
 					if (l) {
@@ -19673,7 +19673,7 @@
 						return !!n.name || Object(T.y)(e) || a
 					},
 					isScheduledPost: T.G,
-					language: I.T,
+					language: I.S,
 					postSchedule: T.S,
 					isEditingScheduledPost: e => !!Object(V.j)(e),
 					showContributorRequestFlow: e => Object(w.t)(e, f.e.Post),
@@ -19882,7 +19882,7 @@
 					return c ? Object(_o.b)(Object(Io.c)(a), null, o, r) : Object(_o.b)(Object(Io.b)(a), s, null, r)
 				}),
 				Do = Object(i.c)({
-					language: I.T,
+					language: I.S,
 					pending: T.Q,
 					pickerValue: Lo
 				}),
@@ -20129,8 +20129,8 @@
 				Ys = Object(i.c)({
 					drafts: k.c,
 					isPending: k.b,
-					language: I.T,
-					maxDrafts: I.U
+					language: I.S,
+					maxDrafts: I.T
 				}),
 				$s = Object(r.b)(Ys);
 			class er extends s.a.PureComponent {
@@ -20215,7 +20215,7 @@
 				mr = n.n(pr);
 			const hr = Object(ne.e)("postCreation.pasteUrlHere"),
 				br = Object(i.c)({
-					language: I.T,
+					language: I.S,
 					pending: T.Q,
 					postCreationFieldErrors: $t,
 					subreddit: v.q,
@@ -20609,7 +20609,7 @@
 				Hi = Object(i.c)({
 					activeModalId: xe.a,
 					isPostPending: T.Q,
-					language: I.T,
+					language: I.S,
 					upload: e => e.uploads[g.m],
 					value: T.K
 				}),
@@ -20769,7 +20769,7 @@
 					isMediaUploadPending: T.L,
 					isPostPending: T.cb,
 					isPublicLink: T.F,
-					language: I.T,
+					language: I.S,
 					postToTwitter: T.U,
 					sendReplies: T.W,
 					sharingLink: k.i,
@@ -20850,7 +20850,7 @@
 				_a = Te.a.wrapped(be.a, "PencilIcon", ka.a),
 				Ia = Object(i.c)({
 					eventSchedule: T.o,
-					language: I.T,
+					language: I.S,
 					postSchedule: T.S
 				});
 			var Pa = Object(r.b)(Ia, (e, t) => ({
@@ -20948,7 +20948,7 @@
 					destSubredditAboutInfo: T.f,
 					draftsCount: I.j,
 					isPending: T.Q,
-					language: I.T
+					language: I.S
 				});
 			var Ya = Object(r.b)(Xa, e => ({
 					showDraftsList: () => {
@@ -20982,7 +20982,7 @@
 				tc = n("./src/reddit/components/Governance/PollHelpText/index.m.less"),
 				nc = n.n(tc);
 			const oc = Object(i.c)({
-				language: I.T,
+				language: I.S,
 				subredditGovInfo: (e, t) => {
 					let {
 						subreddit: n
@@ -21427,7 +21427,7 @@
 					draft: k.d,
 					editorMode: T.m,
 					govType: e => e.creations.formData.govType,
-					language: I.T,
+					language: I.S,
 					markdownBody: T.J,
 					pending: T.Q,
 					poll: e => e.creations.formData.polls || void 0,
@@ -21603,7 +21603,7 @@
 				Tl = Object(i.c)({
 					canPostAsModerator: T.d,
 					disableTitleEdits: e => e.creations.formData.govType === Nc.a.ReplaceTopMod || e.creations.formData.govType === Nc.a.Spinoff,
-					language: I.T,
+					language: I.S,
 					pending: T.Q,
 					postCreationFieldErrors: $t,
 					postRequirements: T.db,
@@ -21711,7 +21711,7 @@
 				Al = Te.a.div("OverlayContent", Dl.a),
 				Kl = Te.a.div("ExplanationText", Dl.a),
 				Ul = Object(i.c)({
-					language: I.T
+					language: I.S
 				});
 			var Hl = Object(r.b)(Ul, (e, t) => ({
 				onChange: n => {
@@ -21983,7 +21983,7 @@
 					destSubreddit: T.g,
 					govType: e => e.creations.formData.govType,
 					isTabsDisabled: Kd,
-					language: I.T,
+					language: I.S,
 					pending: T.Q,
 					submissionType: T.a,
 					subreddit: v.q
@@ -22095,11 +22095,11 @@
 					flair: T.q,
 					hasError: T.r,
 					havePostContent: T.w,
-					language: I.T,
+					language: I.S,
 					linkBody: T.I,
 					markdownBody: T.J,
 					rteBody: T.V,
-					maxDrafts: I.U,
+					maxDrafts: I.T,
 					modalId: T.M,
 					needsCaptcha: T.N,
 					nextSubreddit: T.O,
@@ -22406,7 +22406,7 @@
 				iu = n("./src/telemetry/models/Timer.ts");
 			const au = Object(i.c)({
 					destSubreddit: T.g,
-					language: I.T,
+					language: I.S,
 					user: I.i
 				}),
 				cu = Object(r.b)(au, (e, t) => {
@@ -22839,7 +22839,7 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
 				l = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
-					experimentEligibilitySelector: i.K,
+					experimentEligibilitySelector: i.J,
 					experimentName: o.hb
 				}) === o.ob.Enabled
 		},
@@ -23090,4 +23090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5218f9c62e1c3a6ef3dc.js.map
+//# sourceMappingURL=PostCreation.742a922d4c9a5000dd7b.js.map

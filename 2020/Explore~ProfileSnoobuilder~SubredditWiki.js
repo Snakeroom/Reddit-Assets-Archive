@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Explore~ProfileSnoobuilder~SubredditWiki.38df1dedeedcb81df9c7.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Explore~ProfileSnoobuilder~SubredditWiki.72aa6802c7e805f8b918.js
+// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Explore~ProfileSnoobuilder~SubredditWiki"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
@@ -309,7 +309,7 @@
 				p = s("./src/reddit/actions/subscription/index.ts"),
 				g = s("./src/reddit/selectors/user.ts");
 			const b = Object(o.c)({
-				language: g.T
+				language: g.S
 			});
 			var y = Object(i.b)(b, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -385,7 +385,7 @@
 				}, e.bottomButtonText)))),
 				B = Object(o.c)({
 					hideNSFWPref: g.z,
-					language: g.T
+					language: g.S
 				}),
 				W = Object(i.b)(B)(e => r.a.createElement("div", {
 					className: T.a.communityItemContainer
@@ -558,10 +558,10 @@
 							n = t.redditStyle || Object(x.m)(e, {
 								subredditId: s
 							}),
-							r = Object(w.V)(e);
+							r = Object(w.U)(e);
 						return n || r
 					},
-					nigtmode: w.V,
+					nigtmode: w.U,
 					subredditId: m.m,
 					topPostVariant: y.d
 				}));
@@ -671,4 +671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Explore~ProfileSnoobuilder~SubredditWiki.38df1dedeedcb81df9c7.js.map
+//# sourceMappingURL=Explore~ProfileSnoobuilder~SubredditWiki.72aa6802c7e805f8b918.js.map
