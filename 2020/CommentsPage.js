@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.cb5a9caabb1a11d546cf.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.952bce3769f7637de184.js
+// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Explore~ProfileSnoobuilder~SubredditWiki"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2961,19 +2961,19 @@
 							discoveryUnit: e,
 							subreddit: t
 						} = this.props;
-						e && this.props.sendEvent(Object(x.H)(e, t))
+						e && this.props.sendEvent(Object(x.J)(e, t))
 					}, this.trackPostClicked = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: s
 						} = this.props;
-						t && this.props.sendEvent(Object(x.w)(t, e, void 0, s))
+						t && this.props.sendEvent(Object(x.x)(t, e, void 0, s))
 					}, this.trackPostViewed = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: s
 						} = this.props;
-						t && this.props.sendEvent(Object(x.B)(t, e, void 0, s))
+						t && this.props.sendEvent(Object(x.C)(t, e, void 0, s))
 					}, this.trackFooterClicked = () => {
 						const {
 							discoveryUnit: e,
@@ -11884,4 +11884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.cb5a9caabb1a11d546cf.js.map
+//# sourceMappingURL=CommentsPage.952bce3769f7637de184.js.map

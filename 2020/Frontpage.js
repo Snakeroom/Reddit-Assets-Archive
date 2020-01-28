@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5ffcddde28ac8551f95c.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6c23675f2e4cc6345b4e.js
+// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "Explore~ProfileSnoobuilder~SubredditWiki", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -929,9 +929,9 @@
 					}, this.trackViewed = () => {
 						this.props.discoveryUnit && this.props.sendEvent(Object(L.g)(this.props.discoveryUnit))
 					}, this.trackPostClicked = e => {
-						this.props.discoveryUnit && this.props.sendEvent(Object(L.w)(this.props.discoveryUnit, e))
+						this.props.discoveryUnit && this.props.sendEvent(Object(L.x)(this.props.discoveryUnit, e))
 					}, this.trackPostViewed = e => {
-						this.props.discoveryUnit && this.props.sendEvent(Object(L.B)(this.props.discoveryUnit, e))
+						this.props.discoveryUnit && this.props.sendEvent(Object(L.C)(this.props.discoveryUnit, e))
 					}
 				}
 				componentDidMount() {
@@ -984,9 +984,9 @@
 					super(...arguments), this.trackViewed = () => {
 						this.props.discoveryUnit && this.props.sendEvent(Object(L.g)(this.props.discoveryUnit))
 					}, this.trackPostClicked = e => {
-						this.props.discoveryUnit && this.props.sendEvent(Object(L.w)(this.props.discoveryUnit, e))
+						this.props.discoveryUnit && this.props.sendEvent(Object(L.x)(this.props.discoveryUnit, e))
 					}, this.trackPostViewed = e => {
-						this.props.discoveryUnit && this.props.sendEvent(Object(L.B)(this.props.discoveryUnit, e))
+						this.props.discoveryUnit && this.props.sendEvent(Object(L.C)(this.props.discoveryUnit, e))
 					}, this.loadMorePosts = (e, t) => {
 						t - e <= te && this.props.loadMorePosts()
 					}
@@ -1171,7 +1171,7 @@
 				Ne = s("./src/reddit/selectors/trending.ts");
 			const _e = Object(o.c)({
 				discoveryUnit: e => Object(B.f)(e, {
-					unitName: T.t
+					unitName: T.u
 				}),
 				trendingSearches: Object(o.a)(Ne.a, e => e.filter(e => e.post))
 			});
@@ -1180,9 +1180,9 @@
 					super(...arguments), this.trackViewed = () => {
 						this.props.discoveryUnit && this.props.sendEvent(Object(L.g)(this.props.discoveryUnit))
 					}, this.trackPostClicked = e => {
-						this.props.discoveryUnit && this.props.sendEvent(Object(L.w)(this.props.discoveryUnit, e))
+						this.props.discoveryUnit && this.props.sendEvent(Object(L.x)(this.props.discoveryUnit, e))
 					}, this.trackPostViewed = e => {
-						this.props.discoveryUnit && this.props.sendEvent(Object(L.B)(this.props.discoveryUnit, e))
+						this.props.discoveryUnit && this.props.sendEvent(Object(L.C)(this.props.discoveryUnit, e))
 					}
 				}
 				componentDidMount() {
@@ -7966,4 +7966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.5ffcddde28ac8551f95c.js.map
+//# sourceMappingURL=Frontpage.6c23675f2e4cc6345b4e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.dbeb872e0741f5aa6668.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.756101f8a6d50a3a7b6f.js
+// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2", "Explore~ProfileSnoobuilder~SubredditWiki", "Explore~InFeedChaining", "CategoriesNavigation"], {
 		"./src/graphql/operations/SubredditLayers.json": function(e) {
@@ -481,7 +481,7 @@
 							onMouseDown: () => this.sendCategoryClickEvent(r),
 							rel: "nofollow",
 							tabIndex: t < s ? 0 : -1,
-							to: Object(f.a)(r)
+							to: Object(f.b)(r)
 						}, r)
 					}, this.renderHiddenCategory = e => {
 						const t = Object(C.f)(e.name),
@@ -491,7 +491,7 @@
 								[k.a.active]: s
 							}),
 							displayText: t,
-							href: Object(f.a)(t),
+							href: Object(f.b)(t),
 							isSelected: s,
 							key: t,
 							onClick: () => this.sendCategoryClickEvent(t),
@@ -972,7 +972,7 @@
 				} = e, s = d(e, ["eventCategory"]);
 				return n.a.createElement(i.a, c({}, s, {
 					rel: "nofollow",
-					to: Object(o.a)(a.b)
+					to: Object(o.b)(a.b)
 				}), t.name)
 			}
 		},
@@ -1070,7 +1070,7 @@
 						c = C(e, ["changeButtonClassName", "geoObject", "isModalOpen", "sendEvent", "toggleModal"]);
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement(p.a, O({}, c, {
 						rel: "nofollow",
-						to: Object(u.a)(m.c)
+						to: Object(u.b)(m.c)
 					}), n.a.createElement(g, {
 						className: E.a.Icon
 					}), " ", s), n.a.createElement("button", {
@@ -3063,8 +3063,8 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(l.a)(t.permalink)),
-						trackPostClick: (t, s) => e((e, n) => r ? m.v(n(), r, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? m.x(n(), s, t) : r ? m.x(n(), r, t) : null)
+						trackPostClick: (t, s) => e((e, n) => r ? m.w(n(), r, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? m.y(n(), s, t) : r ? m.y(n(), r, t) : null)
 					}
 				});
 			class ce extends d.c {
@@ -3081,7 +3081,7 @@
 							discoveryUnitSubreddit: s,
 							searchDiscoveryUnit: r
 						} = this.props;
-						return (r ? m.J() : m.u(t, s))(e)
+						return (r ? m.L() : m.v(t, s))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -3298,7 +3298,7 @@
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, s) => g.f(s(), t)),
 				trackDismissClick: t => e((e, s) => g.h(s(), t)),
-				trackPostView: n()((t, s, r) => e((e, n) => g.A(n(), t, s, r)), (e, t) => {
+				trackPostView: n()((t, s, r) => e((e, n) => g.B(n(), t, s, r)), (e, t) => {
 					let {
 						id: s
 					} = e;
@@ -13343,7 +13343,7 @@
 				})),
 				Ee = Object(c.c)({
 					discoveryUnit: e => Object(be.f)(e, {
-						unitName: he.q
+						unitName: he.r
 					}),
 					listingKey: ve,
 					posts: (e, t) => {
@@ -13367,13 +13367,13 @@
 							discoveryUnit: t,
 							subreddit: s
 						} = this.props;
-						t && this.props.sendEvent(Object(pe.w)(t, e, void 0, s))
+						t && this.props.sendEvent(Object(pe.x)(t, e, void 0, s))
 					}, this.trackPostViewed = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: s
 						} = this.props;
-						t && this.props.sendEvent(Object(pe.B)(t, e, void 0, s))
+						t && this.props.sendEvent(Object(pe.C)(t, e, void 0, s))
 					}
 				}
 				componentDidMount() {
@@ -15486,15 +15486,6 @@
 					[r.Pb.YEAR]: Object(n.c)("This year"),
 					[r.Pb.ALL]: Object(n.c)("All time")
 				}
-		},
-		"./src/reddit/constants/topic.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return a
-			}));
-			var r = s("./src/reddit/constants/categories.tsx"),
-				n = s("./src/reddit/constants/listings.ts");
-			const a = e => "".concat(n.c[n.b.Topic]).concat(Object(r.f)(e), "/")
 		},
 		"./src/reddit/contexts/Tooltip.ts": function(e, t, s) {
 			"use strict";
@@ -18628,4 +18619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.dbeb872e0741f5aa6668.js.map
+//# sourceMappingURL=Subreddit.756101f8a6d50a3a7b6f.js.map

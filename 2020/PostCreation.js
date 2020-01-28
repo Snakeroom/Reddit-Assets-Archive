@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d5581b9557ea3159a47b.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fd91cf7bf925bc643de0.js
+// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -13119,7 +13119,7 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e[e.Collection = 0] = "Collection", e[e.HeaderSelector = 1] = "HeaderSelector", e[e.PostComments = 2] = "PostComments", e[e.PostItem = 3] = "PostItem", e[e.Widget = 4] = "Widget"
+				e[e.Collection = 0] = "Collection", e[e.HeaderSelector = 1] = "HeaderSelector", e[e.PostComments = 2] = "PostComments", e[e.PostItem = 3] = "PostItem", e[e.TopicHeader = 4] = "TopicHeader", e[e.Widget = 5] = "Widget"
 			}(o || (o = {})),
 			function(e) {
 				e[e.H1 = 1] = "H1", e[e.H2 = 2] = "H2", e[e.H3 = 3] = "H3", e[e.H4 = 4] = "H4", e[e.H5 = 5] = "H5", e[e.H6 = 6] = "H6"
@@ -13133,9 +13133,10 @@
 						s = e === l.yb.COLLECTION_COMMENTS || t && Object(d.a)(t),
 						r = l.M.has(e),
 						i = l.pb.has(e),
-						a = e === l.yb.SUBREDDIT;
-					let c, p, m;
-					return r && !a || i ? c = o.HeaderSelector : s ? c = o.Collection : n && (c = o.PostComments), (r || i || s || n) && (p = o.Widget), (r || n) && (m = o.PostItem), [c, p, m]
+						a = e === l.yb.SUBREDDIT,
+						c = e === l.yb.TOPIC;
+					let p, m, h;
+					return r && !a || i ? p = o.HeaderSelector : s ? p = o.Collection : n ? p = o.PostComments : c && (p = o.TopicHeader), (r || i || s || n) && (m = o.Widget), (r || n) && (h = o.PostItem), [p, m, h]
 				};
 			var m = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				h = n("./src/reddit/selectors/platform.ts"),
@@ -23030,4 +23031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.d5581b9557ea3159a47b.js.map
+//# sourceMappingURL=PostCreation.fd91cf7bf925bc643de0.js.map

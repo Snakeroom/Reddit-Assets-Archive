@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1e1df90580d984c0f1a7.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b855d5100856b63366c7.js
+// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2445,7 +2445,7 @@
 							};
 						case "topic": {
 							const t = Object(kn.s)(s),
-								n = t && Object(Rn.b)(e, t, !0);
+								n = t && Object(Rn.c)(e, t, !0);
 							if (n) return {
 								type: yn.Topic,
 								model: n
@@ -8555,7 +8555,7 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e[e.Collection = 0] = "Collection", e[e.HeaderSelector = 1] = "HeaderSelector", e[e.PostComments = 2] = "PostComments", e[e.PostItem = 3] = "PostItem", e[e.Widget = 4] = "Widget"
+				e[e.Collection = 0] = "Collection", e[e.HeaderSelector = 1] = "HeaderSelector", e[e.PostComments = 2] = "PostComments", e[e.PostItem = 3] = "PostItem", e[e.TopicHeader = 4] = "TopicHeader", e[e.Widget = 5] = "Widget"
 			}(n || (n = {})),
 			function(e) {
 				e[e.H1 = 1] = "H1", e[e.H2 = 2] = "H2", e[e.H3 = 3] = "H3", e[e.H4 = 4] = "H4", e[e.H5 = 5] = "H5", e[e.H6 = 6] = "H6"
@@ -8569,9 +8569,10 @@
 						a = e === l.yb.COLLECTION_COMMENTS || t && Object(d.a)(t),
 						r = l.M.has(e),
 						o = l.pb.has(e),
-						i = e === l.yb.SUBREDDIT;
-					let c, u, p;
-					return r && !i || o ? c = n.HeaderSelector : a ? c = n.Collection : s && (c = n.PostComments), (r || o || a || s) && (u = n.Widget), (r || s) && (p = n.PostItem), [c, u, p]
+						i = e === l.yb.SUBREDDIT,
+						c = e === l.yb.TOPIC;
+					let u, p, h;
+					return r && !i || o ? u = n.HeaderSelector : a ? u = n.Collection : s ? u = n.PostComments : c && (u = n.TopicHeader), (r || o || a || s) && (p = n.Widget), (r || s) && (h = n.PostItem), [u, p, h]
 				};
 			var p = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				h = s("./src/reddit/selectors/platform.ts"),
@@ -15732,4 +15733,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~EconHelperActions~Reddit", "vendors~Reddit", "Chat~Governance~Reddit", "Governance~Reddit", "EconHelperActions"]
 	]
 ]);
-//# sourceMappingURL=Reddit.1e1df90580d984c0f1a7.js.map
+//# sourceMappingURL=Reddit.b855d5100856b63366c7.js.map
