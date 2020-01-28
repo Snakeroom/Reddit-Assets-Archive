@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4c8035af54b8d5161871.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8f4723a5a28eac342b46.js
+// Retrieved at 1/28/2020, 2:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Explore~ProfileSnoobuilder~SubredditWiki"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4064,7 +4064,7 @@
 					}),
 					he = T.removedByCategory === _.g.AuthorDeleted,
 					be = n && (n.displayText === T.author || n.username === T.author),
-					ge = !he && (be || i || !(T.removedByCategory && T.media && (Object(I.D)(T.media) || Object(I.C)(T.media)))),
+					ge = !he && (be || i || !(T.removedByCategory && T.media && (Object(I.E)(T.media) || Object(I.D)(T.media)))),
 					xe = T.removedByCategory === _.g.Reddit && Object(l.e)(T.created) > 24,
 					Ce = T.removedByCategory && T.removedByCategory !== _.g.Reddit || xe,
 					ve = o.a.createElement(Le, {
@@ -5169,7 +5169,7 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = e.media && !Object(W.E)(e.media) ? e.media.content : "",
+					const t = !e.media || Object(W.F)(e.media) || Object(W.C)(e.media) ? "" : e.media.content,
 						{
 							type: s
 						} = e.media;
@@ -11884,4 +11884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.4c8035af54b8d5161871.js.map
+//# sourceMappingURL=CommentsPage.8f4723a5a28eac342b46.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.65bb3e8fd687dfe73aa3.js
-// Retrieved at 1/28/2020, 2:10:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.1dc21d0d11f3b0e51224.js
+// Retrieved at 1/28/2020, 2:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -49,10 +49,10 @@
 			e.exports = JSON.parse('{"id":"8e39ae6fa332"}')
 		},
 		"./src/graphql/operations/FocusVerticalSubredditRecommendations.json": function(e) {
-			e.exports = JSON.parse('{"id":"b3fe6a8eae7e"}')
+			e.exports = JSON.parse('{"id":"0ac5f0bec727"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"e895443d0fc2"}')
+			e.exports = JSON.parse('{"id":"3f0b0f437f92"}')
 		},
 		"./src/graphql/operations/GetPostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"4231b7734ef9"}')
@@ -64,10 +64,10 @@
 			e.exports = JSON.parse('{"id":"3c148c0b5100"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"2886e38af0e9"}')
+			e.exports = JSON.parse('{"id":"cd35344248cc"}')
 		},
 		"./src/graphql/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"92223943b497"}')
+			e.exports = JSON.parse('{"id":"709c27677471"}')
 		},
 		"./src/graphql/operations/RedditorMultireddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3d04e2bb92b5"}')
@@ -76,7 +76,7 @@
 			e.exports = JSON.parse('{"id":"fc24b7b690ad"}')
 		},
 		"./src/graphql/operations/SinglePost.json": function(e) {
-			e.exports = JSON.parse('{"id":"7b5014f7e628"}')
+			e.exports = JSON.parse('{"id":"31046d047a3f"}')
 		},
 		"./src/graphql/operations/SubredditAbout.json": function(e) {
 			e.exports = JSON.parse('{"id":"7d0ee544a263"}')
@@ -88,13 +88,13 @@
 			e.exports = JSON.parse('{"id":"d98849822078"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"7faf0c31756a"}')
+			e.exports = JSON.parse('{"id":"2254494f9497"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
 		},
 		"./src/graphql/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"04417bfe478c"}')
+			e.exports = JSON.parse('{"id":"21c4b68a1398"}')
 		},
 		"./src/graphql/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"43275c35dbb6"}')
@@ -106,7 +106,7 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"b0b26048d3d3"}')
+			e.exports = JSON.parse('{"id":"c5016765e0b9"}')
 		},
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
@@ -11921,7 +11921,7 @@
 							postId: e
 						}),
 						c = Object(G.T)(s);
-					if (!(o && o.media && Object(_.C)(o.media) && o.media.isRichtextPreview)) return;
+					if (!(o && o.media && Object(_.D)(o.media) && o.media.isRichtextPreview)) return;
 					const a = await ((e, t) => Object(v.a)(e, Object.assign({}, S, {
 						variables: t
 					})))(r.gqlContext(), {
@@ -33031,6 +33031,8 @@
 							return l.n.VIDEO;
 						case p.e.Embed:
 							return l.n.EMBED;
+						case p.e.RPAN:
+							return l.n.LIVEVIDEO;
 						default:
 							return null
 					}
@@ -33067,6 +33069,10 @@
 								posterUrl: i && i.url || void 0
 							}
 						}
+						case l.n.LIVEVIDEO:
+							return {
+								type: t, obfuscated: null, hlsUrl: n && n.RPAN && n.RPAN.hlsUrl || "", scrubberThumbSource: n && n.RPAN && n.RPAN.scrubberMediaUrl || ""
+							};
 						case l.n.TEXT:
 							return {
 								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", content: "", rteMode: w(e)
@@ -34461,6 +34467,14 @@
 							width: t.width,
 							height: t.height,
 							type: o.n.VIDEO
+						}
+					}
+					if (e.media && e.media.rpan_video) {
+						const t = e.media.rpan_video;
+						return {
+							hlsUrl: t.hls_url,
+							scrubberThumbSource: t.scrubber_media_url,
+							type: o.n.LIVEVIDEO
 						}
 					}
 					if (e.secure_media && e.secure_media.oembed) {
@@ -39008,66 +39022,68 @@
 			"use strict";
 			n.d(t, "t", (function() {
 				return r
-			})), n.d(t, "D", (function() {
-				return i
 			})), n.d(t, "E", (function() {
+				return i
+			})), n.d(t, "F", (function() {
 				return c
-			})), n.d(t, "B", (function() {
-				return a
 			})), n.d(t, "C", (function() {
+				return a
+			})), n.d(t, "B", (function() {
 				return d
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "D", (function() {
 				return u
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "n", (function() {
 				return l
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return p
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "j", (function() {
 				return m
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return f
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "l", (function() {
 				return g
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "w", (function() {
 				return O
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "c", (function() {
 				return h
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "m", (function() {
 				return y
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "o", (function() {
 				return j
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "p", (function() {
 				return _
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "e", (function() {
 				return E
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "f", (function() {
 				return v
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "r", (function() {
 				return I
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "s", (function() {
 				return S
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "h", (function() {
 				return T
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "b", (function() {
 				return x
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "q", (function() {
 				return C
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return w
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "u", (function() {
 				return P
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return D
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "g", (function() {
 				return R
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "x", (function() {
 				return A
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "A", (function() {
 				return k
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "y", (function() {
 				return N
+			})), n.d(t, "z", (function() {
+				return L
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r, s = n("./node_modules/url/url.js"),
@@ -39077,49 +39093,51 @@
 			}(r || (r = {}));
 			const i = e => "text" === e.type,
 				c = e => "video" === e.type,
-				a = e => "image" === e.type,
-				d = e => "rtjson" === e.type,
-				u = {
+				a = e => "rpan" === e.type,
+				d = e => "image" === e.type,
+				u = e => "rtjson" === e.type,
+				l = {
 					TEXT: "text",
 					VIDEO: "video",
 					IMAGE: "image",
 					EMBED: "embed",
 					GIFVIDEO: "gifvideo",
-					RTJSON: "rtjson"
+					RTJSON: "rtjson",
+					LIVEVIDEO: "rpan"
 				},
-				l = new Set([u.TEXT, u.IMAGE, u.RTJSON]),
-				b = 512,
-				p = 250,
-				m = 60,
-				f = 0,
-				g = 608,
-				O = .5625,
-				h = 869,
-				y = 273,
-				j = 486,
-				_ = 700,
-				E = 822,
-				v = 363,
-				I = 645,
-				S = new Set([r.Gfycat, r.GfycatOld, r.Giphy, r.SoundCloud, r.Spotify, r.Twitter, r.Vimeo, r.YouTube]),
-				T = new Set([r.BandCamp, r.Gfycat, r.GfycatOld, r.Giphy, r.Imgur, r.SoundCloud, r.Spotify, r.Streamable, r.Twitch, r.Twitter, r.YouTube, r.Vimeo]),
-				x = new Set([r.SoundCloud, r.Spotify, r.Streamable, r.Twitter, r.Vimeo, r.YouTube]),
-				C = new Set([r.Gfycat, r.GfycatOld, r.Imgur]),
-				w = ["gif", "jpeg", "jpg", "png", "tiff"],
-				P = new Set([u.VIDEO, u.GIFVIDEO, u.EMBED]);
-			var D, R;
+				b = new Set([l.TEXT, l.IMAGE, l.RTJSON]),
+				p = 512,
+				m = 250,
+				f = 60,
+				g = 0,
+				O = 608,
+				h = .5625,
+				y = 869,
+				j = 273,
+				_ = 486,
+				E = 700,
+				v = 822,
+				I = 363,
+				S = 645,
+				T = new Set([r.Gfycat, r.GfycatOld, r.Giphy, r.SoundCloud, r.Spotify, r.Twitter, r.Vimeo, r.YouTube]),
+				x = new Set([r.BandCamp, r.Gfycat, r.GfycatOld, r.Giphy, r.Imgur, r.SoundCloud, r.Spotify, r.Streamable, r.Twitch, r.Twitter, r.YouTube, r.Vimeo]),
+				C = new Set([r.SoundCloud, r.Spotify, r.Streamable, r.Twitter, r.Vimeo, r.YouTube]),
+				w = new Set([r.Gfycat, r.GfycatOld, r.Imgur]),
+				P = ["gif", "jpeg", "jpg", "png", "tiff"],
+				D = new Set([l.VIDEO, l.GIFVIDEO, l.EMBED]);
+			var R, A;
 			! function(e) {
 				e.Mute = "mute", e.Pause = "pause", e.Play = "play"
-			}(D || (D = {})),
+			}(R || (R = {})),
 			function(e) {
 				e.Pause = "pauseVideo", e.Play = "playVideo", e.Mute = "mute"
-			}(R || (R = {}));
-			const A = e => e.source ? e.source.url : e.media && e.media.type !== u.VIDEO && e.media.content ? e.media.content : "",
-				k = e => {
+			}(A || (A = {}));
+			const k = e => e.source ? e.source.url : e.media && e.media.type !== l.VIDEO && e.media.type !== l.LIVEVIDEO && e.media.content ? e.media.content : "",
+				N = e => {
 					const t = o.a.parse(e);
 					if (t && t.pathname) return t.pathname.split("/")[1]
 				},
-				N = e => {
+				L = e => {
 					if (!c(e)) return;
 					const t = e;
 					let n;
@@ -39128,7 +39146,7 @@
 						if (!t.dashUrl) return;
 						n = t.dashUrl
 					}
-					return k(n)
+					return N(n)
 				}
 		},
 		"./src/reddit/models/ModQueue/index.ts": function(e, t, n) {
@@ -39563,7 +39581,7 @@
 				e.Post = "POST", e.Comment = "COMMENT"
 			}(f || (f = {})),
 			function(e) {
-				e.Embed = "EMBED", e.Image = "IMAGE", e.Video = "VIDEO", e.Gifvideo = "GIFVIDEO"
+				e.Embed = "EMBED", e.Image = "IMAGE", e.Video = "VIDEO", e.Gifvideo = "GIFVIDEO", e.RPAN = "RPAN"
 			}(g || (g = {})),
 			function(e) {
 				e.Richtext = "RICHTEXT", e.Markdown = "MARKDOWN"
@@ -51872,7 +51890,7 @@
 				},
 				Vg = e => t => {
 					const n = e[t.id];
-					return t && t.media && n && n.media && Object(Ag.C)(t.media) && t.media.isRichtextPreview && Object(Ag.C)(n.media) && !n.media.isRichtextPreview && (t.media.richtextContent = n.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && n && n.media && Object(Ag.D)(t.media) && t.media.isRichtextPreview && Object(Ag.D)(n.media) && !n.media.isRichtextPreview && (t.media.richtextContent = n.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				qg = e => {
 					let t = e.source;
@@ -52153,7 +52171,7 @@
 							postId: n,
 							richtextContent: r
 						} = t.payload, s = e[n];
-						return s && s.media && Object(Ag.C)(s.media) ? Object.assign({}, e, {
+						return s && s.media && Object(Ag.D)(s.media) ? Object.assign({}, e, {
 							[n]: Object.assign({}, s, {
 								media: Object.assign({}, s.media, {
 									richtextContent: r,
@@ -64462,7 +64480,7 @@
 					});
 					let s = null;
 					return r && (r.media && r.media.type !== a.n.GIFVIDEO && (s = Object(c.e)(r, 2 * o.b, 2 * o.a) || Object(c.e)(r, o.b, o.a)), !s && r.thumbnail && r.thumbnail.width && r.thumbnail.height && (s = r.thumbnail, (r.isNSFW || r.isSpoiler) && (s = (e => {
-						if (!e || e.type === a.n.RTJSON || e.type === a.n.TEXT) return null;
+						if (!e || e.type === a.n.RTJSON || e.type === a.n.TEXT || e.type === a.n.LIVEVIDEO) return null;
 						const t = e.obfuscated;
 						return t ? {
 							url: t,
@@ -69510,4 +69528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.65bb3e8fd687dfe73aa3.js.map
+//# sourceMappingURL=Governance~Reddit.1dc21d0d11f3b0e51224.js.map

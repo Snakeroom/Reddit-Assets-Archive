@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.290fa6927ab755f875d0.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6fa65de0e6fde479f4a8.js
+// Retrieved at 1/28/2020, 2:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "Explore~ProfileSnoobuilder~SubredditWiki", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4389,7 +4389,7 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = e.media && !Object(U.E)(e.media) ? e.media.content : "",
+					const t = !e.media || Object(U.F)(e.media) || Object(U.C)(e.media) ? "" : e.media.content,
 						{
 							type: s
 						} = e.media;
@@ -7966,4 +7966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.290fa6927ab755f875d0.js.map
+//# sourceMappingURL=Frontpage.6fa65de0e6fde479f4a8.js.map
