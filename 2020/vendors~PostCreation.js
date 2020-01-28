@@ -1,25 +1,25 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.6098f1db9a539187e2ea.js
-// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.4e734817c05bcd5ddb65.js
+// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
-		"./node_modules/brcast/dist/brcast.es.js": function(t, e, o) {
+		"./node_modules/brcast/dist/brcast.es.js": function(t, e, n) {
 			"use strict";
 			e.a = function(t) {
 				var e = {},
-					o = 1,
-					n = t;
+					n = 1,
+					o = t;
 				return {
 					getState: function() {
-						return n
+						return o
 					},
 					setState: function(t) {
-						n = t;
-						for (var o = Object.keys(e), r = 0, s = o.length; r < s; r++) e[o[r]] && e[o[r]](t)
+						o = t;
+						for (var n = Object.keys(e), r = 0, i = n.length; r < i; r++) e[n[r]] && e[n[r]](t)
 					},
 					subscribe: function(t) {
 						if ("function" != typeof t) throw new Error("listener must be a function.");
-						var n = o;
-						return e[n] = t, o += 1, n
+						var o = n;
+						return e[o] = t, n += 1, o
 					},
 					unsubscribe: function(t) {
 						e[t] = void 0
@@ -36,7 +36,7 @@
 					}
 				});
 				else {
-					var o = [];
+					var n = [];
 					r.prototype.THROTTLE_TIMEOUT = 100, r.prototype.POLL_INTERVAL = null, r.prototype.observe = function(t) {
 						if (!this._observationTargets.some((function(e) {
 								return e.element == t
@@ -58,9 +58,9 @@
 						return this._queuedEntries = [], t
 					}, r.prototype._initThresholds = function(t) {
 						var e = t || [0];
-						return Array.isArray(e) || (e = [e]), e.sort().filter((function(t, e, o) {
+						return Array.isArray(e) || (e = [e]), e.sort().filter((function(t, e, n) {
 							if ("number" != typeof t || isNaN(t) || t < 0 || t > 1) throw new Error("threshold must be a number between 0 and 1 inclusively");
-							return t !== o[e - 1]
+							return t !== n[e - 1]
 						}))
 					}, r.prototype._parseRootMargin = function(t) {
 						var e = (t || "0px").split(/\s+/).map((function(t) {
@@ -73,17 +73,17 @@
 						}));
 						return e[1] = e[1] || e[0], e[2] = e[2] || e[0], e[3] = e[3] || e[1], e
 					}, r.prototype._monitorIntersections = function() {
-						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(t, "resize", this._checkForIntersections, !0), s(e, "scroll", this._checkForIntersections, !0), "MutationObserver" in t && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(e, {
+						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (i(t, "resize", this._checkForIntersections, !0), i(e, "scroll", this._checkForIntersections, !0), "MutationObserver" in t && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(e, {
 							attributes: !0,
 							childList: !0,
 							characterData: !0,
 							subtree: !0
 						}))))
 					}, r.prototype._unmonitorIntersections = function() {
-						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, i(t, "resize", this._checkForIntersections, !0), i(e, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
+						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, s(t, "resize", this._checkForIntersections, !0), s(e, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
 					}, r.prototype._checkForIntersections = function() {
 						var e = this._rootIsInDom(),
-							o = e ? this._getRootRect() : {
+							n = e ? this._getRootRect() : {
 								top: 0,
 								bottom: 0,
 								left: 0,
@@ -92,85 +92,85 @@
 								height: 0
 							};
 						this._observationTargets.forEach((function(r) {
-							var s = r.element,
-								i = a(s),
-								h = this._rootContainsTarget(s),
+							var i = r.element,
+								s = h(i),
+								c = this._rootContainsTarget(i),
 								u = r.entry,
-								d = e && h && this._computeTargetAndRootIntersection(s, o),
-								_ = r.entry = new n({
+								a = e && c && this._computeTargetAndRootIntersection(i, n),
+								d = r.entry = new o({
 									time: t.performance && performance.now && performance.now(),
-									target: s,
-									boundingClientRect: i,
-									rootBounds: o,
-									intersectionRect: d
+									target: i,
+									boundingClientRect: s,
+									rootBounds: n,
+									intersectionRect: a
 								});
-							u ? e && h ? this._hasCrossedThreshold(u, _) && this._queuedEntries.push(_) : u && u.isIntersecting && this._queuedEntries.push(_) : this._queuedEntries.push(_)
+							u ? e && c ? this._hasCrossedThreshold(u, d) && this._queuedEntries.push(d) : u && u.isIntersecting && this._queuedEntries.push(d) : this._queuedEntries.push(d)
 						}), this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
-					}, r.prototype._computeTargetAndRootIntersection = function(o, n) {
-						if ("none" != t.getComputedStyle(o).display) {
-							for (var r, s, i, h, d, _, c, l, p = a(o), f = u(o), m = !1; !m;) {
-								var v = null,
-									g = 1 == f.nodeType ? t.getComputedStyle(f) : {};
+					}, r.prototype._computeTargetAndRootIntersection = function(n, o) {
+						if ("none" != t.getComputedStyle(n).display) {
+							for (var r, i, s, c, a, d, l, f, _ = h(n), p = u(n), v = !1; !v;) {
+								var m = null,
+									g = 1 == p.nodeType ? t.getComputedStyle(p) : {};
 								if ("none" == g.display) return;
-								if (f == this.root || f == e ? (m = !0, v = n) : f != e.body && f != e.documentElement && "visible" != g.overflow && (v = a(f)), v && (r = v, s = p, i = void 0, h = void 0, d = void 0, _ = void 0, c = void 0, l = void 0, i = Math.max(r.top, s.top), h = Math.min(r.bottom, s.bottom), d = Math.max(r.left, s.left), _ = Math.min(r.right, s.right), l = h - i, !(p = (c = _ - d) >= 0 && l >= 0 && {
-										top: i,
-										bottom: h,
-										left: d,
-										right: _,
-										width: c,
-										height: l
+								if (p == this.root || p == e ? (v = !0, m = o) : p != e.body && p != e.documentElement && "visible" != g.overflow && (m = h(p)), m && (r = m, i = _, s = void 0, c = void 0, a = void 0, d = void 0, l = void 0, f = void 0, s = Math.max(r.top, i.top), c = Math.min(r.bottom, i.bottom), a = Math.max(r.left, i.left), d = Math.min(r.right, i.right), f = c - s, !(_ = (l = d - a) >= 0 && f >= 0 && {
+										top: s,
+										bottom: c,
+										left: a,
+										right: d,
+										width: l,
+										height: f
 									}))) break;
-								f = u(f)
+								p = u(p)
 							}
-							return p
+							return _
 						}
 					}, r.prototype._getRootRect = function() {
 						var t;
-						if (this.root) t = a(this.root);
+						if (this.root) t = h(this.root);
 						else {
-							var o = e.documentElement,
-								n = e.body;
+							var n = e.documentElement,
+								o = e.body;
 							t = {
 								top: 0,
 								left: 0,
-								right: o.clientWidth || n.clientWidth,
-								width: o.clientWidth || n.clientWidth,
-								bottom: o.clientHeight || n.clientHeight,
-								height: o.clientHeight || n.clientHeight
+								right: n.clientWidth || o.clientWidth,
+								width: n.clientWidth || o.clientWidth,
+								bottom: n.clientHeight || o.clientHeight,
+								height: n.clientHeight || o.clientHeight
 							}
 						}
 						return this._expandRectByRootMargin(t)
 					}, r.prototype._expandRectByRootMargin = function(t) {
-						var e = this._rootMarginValues.map((function(e, o) {
-								return "px" == e.unit ? e.value : e.value * (o % 2 ? t.width : t.height) / 100
+						var e = this._rootMarginValues.map((function(e, n) {
+								return "px" == e.unit ? e.value : e.value * (n % 2 ? t.width : t.height) / 100
 							})),
-							o = {
+							n = {
 								top: t.top - e[0],
 								right: t.right + e[1],
 								bottom: t.bottom + e[2],
 								left: t.left - e[3]
 							};
-						return o.width = o.right - o.left, o.height = o.bottom - o.top, o
+						return n.width = n.right - n.left, n.height = n.bottom - n.top, n
 					}, r.prototype._hasCrossedThreshold = function(t, e) {
-						var o = t && t.isIntersecting ? t.intersectionRatio || 0 : -1,
-							n = e.isIntersecting ? e.intersectionRatio || 0 : -1;
-						if (o !== n)
+						var n = t && t.isIntersecting ? t.intersectionRatio || 0 : -1,
+							o = e.isIntersecting ? e.intersectionRatio || 0 : -1;
+						if (n !== o)
 							for (var r = 0; r < this.thresholds.length; r++) {
-								var s = this.thresholds[r];
-								if (s == o || s == n || s < o != s < n) return !0
+								var i = this.thresholds[r];
+								if (i == n || i == o || i < n != i < o) return !0
 							}
 					}, r.prototype._rootIsInDom = function() {
-						return !this.root || h(e, this.root)
+						return !this.root || c(e, this.root)
 					}, r.prototype._rootContainsTarget = function(t) {
-						return h(this.root || e, t)
+						return c(this.root || e, t)
 					}, r.prototype._registerInstance = function() {
-						o.indexOf(this) < 0 && o.push(this)
+						n.indexOf(this) < 0 && n.push(this)
 					}, r.prototype._unregisterInstance = function() {
-						var t = o.indexOf(this); - 1 != t && o.splice(t, 1)
-					}, t.IntersectionObserver = r, t.IntersectionObserverEntry = n
+						var t = n.indexOf(this); - 1 != t && n.splice(t, 1)
+					}, t.IntersectionObserver = r, t.IntersectionObserverEntry = o
 				}
 
-				function n(t) {
+				function o(t) {
 					this.time = t.time, this.target = t.target, this.rootBounds = t.rootBounds, this.boundingClientRect = t.boundingClientRect, this.intersectionRect = t.intersectionRect || {
 						top: 0,
 						bottom: 0,
@@ -180,38 +180,38 @@
 						height: 0
 					}, this.isIntersecting = !!t.intersectionRect;
 					var e = this.boundingClientRect,
-						o = e.width * e.height,
-						n = this.intersectionRect,
-						r = n.width * n.height;
-					this.intersectionRatio = o ? r / o : this.isIntersecting ? 1 : 0
+						n = e.width * e.height,
+						o = this.intersectionRect,
+						r = o.width * o.height;
+					this.intersectionRatio = n ? r / n : this.isIntersecting ? 1 : 0
 				}
 
 				function r(t, e) {
-					var o, n, r, s = e || {};
+					var n, o, r, i = e || {};
 					if ("function" != typeof t) throw new Error("callback must be a function");
-					if (s.root && 1 != s.root.nodeType) throw new Error("root must be an Element");
-					this._checkForIntersections = (o = this._checkForIntersections.bind(this), n = this.THROTTLE_TIMEOUT, r = null, function() {
+					if (i.root && 1 != i.root.nodeType) throw new Error("root must be an Element");
+					this._checkForIntersections = (n = this._checkForIntersections.bind(this), o = this.THROTTLE_TIMEOUT, r = null, function() {
 						r || (r = setTimeout((function() {
-							o(), r = null
-						}), n))
-					}), this._callback = t, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(s.rootMargin), this.thresholds = this._initThresholds(s.threshold), this.root = s.root || null, this.rootMargin = this._rootMarginValues.map((function(t) {
+							n(), r = null
+						}), o))
+					}), this._callback = t, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(i.rootMargin), this.thresholds = this._initThresholds(i.threshold), this.root = i.root || null, this.rootMargin = this._rootMarginValues.map((function(t) {
 						return t.value + t.unit
 					})).join(" ")
 				}
 
-				function s(t, e, o, n) {
-					"function" == typeof t.addEventListener ? t.addEventListener(e, o, n || !1) : "function" == typeof t.attachEvent && t.attachEvent("on" + e, o)
+				function i(t, e, n, o) {
+					"function" == typeof t.addEventListener ? t.addEventListener(e, n, o || !1) : "function" == typeof t.attachEvent && t.attachEvent("on" + e, n)
 				}
 
-				function i(t, e, o, n) {
-					"function" == typeof t.removeEventListener ? t.removeEventListener(e, o, n || !1) : "function" == typeof t.detatchEvent && t.detatchEvent("on" + e, o)
+				function s(t, e, n, o) {
+					"function" == typeof t.removeEventListener ? t.removeEventListener(e, n, o || !1) : "function" == typeof t.detatchEvent && t.detatchEvent("on" + e, n)
 				}
 
-				function a(t) {
+				function h(t) {
 					var e;
 					try {
 						e = t.getBoundingClientRect()
-					} catch (o) {}
+					} catch (n) {}
 					return e ? (e.width && e.height || (e = {
 						top: e.top,
 						right: e.right,
@@ -229,10 +229,10 @@
 					}
 				}
 
-				function h(t, e) {
-					for (var o = e; o;) {
-						if (o == t) return !0;
-						o = u(o)
+				function c(t, e) {
+					for (var n = e; n;) {
+						if (n == t) return !0;
+						n = u(n)
 					}
 					return !1
 				}
@@ -243,165 +243,73 @@
 				}
 			}(window, document)
 		},
-		"./node_modules/lodash/_LazyWrapper.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_baseCreate.js"),
-				r = o("./node_modules/lodash/_baseLodash.js"),
-				s = 4294967295;
-
-			function i(t) {
-				this.__wrapped__ = t, this.__actions__ = [], this.__dir__ = 1, this.__filtered__ = !1, this.__iteratees__ = [], this.__takeCount__ = s, this.__views__ = []
-			}
-			i.prototype = n(r.prototype), i.prototype.constructor = i, t.exports = i
-		},
-		"./node_modules/lodash/_LodashWrapper.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_baseCreate.js"),
-				r = o("./node_modules/lodash/_baseLodash.js");
-
-			function s(t, e) {
-				this.__wrapped__ = t, this.__actions__ = [], this.__chain__ = !!e, this.__index__ = 0, this.__values__ = void 0
-			}
-			s.prototype = n(r.prototype), s.prototype.constructor = s, t.exports = s
-		},
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
 			t.exports = function(t, e) {
-				for (var o = -1, n = null == t ? 0 : t.length; ++o < n;)
-					if (!e(t[o], o, t)) return !1;
+				for (var n = -1, o = null == t ? 0 : t.length; ++n < o;)
+					if (!e(t[n], n, t)) return !1;
 				return !0
 			}
 		},
-		"./node_modules/lodash/_baseEvery.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_baseEach.js");
+		"./node_modules/lodash/_baseEvery.js": function(t, e, n) {
+			var o = n("./node_modules/lodash/_baseEach.js");
 			t.exports = function(t, e) {
-				var o = !0;
-				return n(t, (function(t, n, r) {
-					return o = !!e(t, n, r)
-				})), o
-			}
-		},
-		"./node_modules/lodash/_baseFindKey.js": function(t, e) {
-			t.exports = function(t, e, o) {
-				var n;
+				var n = !0;
 				return o(t, (function(t, o, r) {
-					if (e(t, o, r)) return n = o, !1
+					return n = !!e(t, o, r)
 				})), n
 			}
 		},
-		"./node_modules/lodash/_baseLodash.js": function(t, e) {
-			t.exports = function() {}
-		},
-		"./node_modules/lodash/_getData.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_metaMap.js"),
-				r = o("./node_modules/lodash/noop.js"),
-				s = n ? function(t) {
-					return n.get(t)
-				} : r;
-			t.exports = s
-		},
-		"./node_modules/lodash/_getFuncName.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_realNames.js"),
-				r = Object.prototype.hasOwnProperty;
-			t.exports = function(t) {
-				for (var e = t.name + "", o = n[e], s = r.call(n, e) ? o.length : 0; s--;) {
-					var i = o[s],
-						a = i.func;
-					if (null == a || a == t) return i.name
-				}
-				return e
+		"./node_modules/lodash/_baseFindKey.js": function(t, e) {
+			t.exports = function(t, e, n) {
+				var o;
+				return n(t, (function(t, n, r) {
+					if (e(t, n, r)) return o = n, !1
+				})), o
 			}
 		},
-		"./node_modules/lodash/_isLaziable.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_LazyWrapper.js"),
-				r = o("./node_modules/lodash/_getData.js"),
-				s = o("./node_modules/lodash/_getFuncName.js"),
-				i = o("./node_modules/lodash/wrapperLodash.js");
-			t.exports = function(t) {
-				var e = s(t),
-					o = i[e];
-				if ("function" != typeof o || !(e in n.prototype)) return !1;
-				if (t === o) return !0;
-				var a = r(o);
-				return !!a && t === a[0]
+		"./node_modules/lodash/every.js": function(t, e, n) {
+			var o = n("./node_modules/lodash/_arrayEvery.js"),
+				r = n("./node_modules/lodash/_baseEvery.js"),
+				i = n("./node_modules/lodash/_baseIteratee.js"),
+				s = n("./node_modules/lodash/isArray.js"),
+				h = n("./node_modules/lodash/_isIterateeCall.js");
+			t.exports = function(t, e, n) {
+				var c = s(t) ? o : r;
+				return n && h(t, e, n) && (e = void 0), c(t, i(e, 3))
 			}
 		},
-		"./node_modules/lodash/_metaMap.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_WeakMap.js"),
-				r = n && new n;
-			t.exports = r
-		},
-		"./node_modules/lodash/_realNames.js": function(t, e) {
-			t.exports = {}
-		},
-		"./node_modules/lodash/_wrapperClone.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_LazyWrapper.js"),
-				r = o("./node_modules/lodash/_LodashWrapper.js"),
-				s = o("./node_modules/lodash/_copyArray.js");
-			t.exports = function(t) {
-				if (t instanceof n) return t.clone();
-				var e = new r(t.__wrapped__, t.__chain__);
-				return e.__actions__ = s(t.__actions__), e.__index__ = t.__index__, e.__values__ = t.__values__, e
-			}
-		},
-		"./node_modules/lodash/every.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_arrayEvery.js"),
-				r = o("./node_modules/lodash/_baseEvery.js"),
-				s = o("./node_modules/lodash/_baseIteratee.js"),
-				i = o("./node_modules/lodash/isArray.js"),
-				a = o("./node_modules/lodash/_isIterateeCall.js");
-			t.exports = function(t, e, o) {
-				var h = i(t) ? n : r;
-				return o && a(t, e, o) && (e = void 0), h(t, s(e, 3))
-			}
-		},
-		"./node_modules/lodash/findKey.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_baseFindKey.js"),
-				r = o("./node_modules/lodash/_baseForOwn.js"),
-				s = o("./node_modules/lodash/_baseIteratee.js");
+		"./node_modules/lodash/findKey.js": function(t, e, n) {
+			var o = n("./node_modules/lodash/_baseFindKey.js"),
+				r = n("./node_modules/lodash/_baseForOwn.js"),
+				i = n("./node_modules/lodash/_baseIteratee.js");
 			t.exports = function(t, e) {
-				return n(t, s(e, 3), r)
+				return o(t, i(e, 3), r)
 			}
 		},
-		"./node_modules/lodash/times.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_baseTimes.js"),
-				r = o("./node_modules/lodash/_castFunction.js"),
-				s = o("./node_modules/lodash/toInteger.js"),
-				i = 9007199254740991,
-				a = 4294967295,
-				h = Math.min;
+		"./node_modules/lodash/times.js": function(t, e, n) {
+			var o = n("./node_modules/lodash/_baseTimes.js"),
+				r = n("./node_modules/lodash/_castFunction.js"),
+				i = n("./node_modules/lodash/toInteger.js"),
+				s = 9007199254740991,
+				h = 4294967295,
+				c = Math.min;
 			t.exports = function(t, e) {
-				if ((t = s(t)) < 1 || t > i) return [];
-				var o = a,
-					u = h(t, a);
-				e = r(e), t -= a;
-				for (var d = n(u, e); ++o < t;) e(o);
-				return d
+				if ((t = i(t)) < 1 || t > s) return [];
+				var n = h,
+					u = c(t, h);
+				e = r(e), t -= h;
+				for (var a = o(u, e); ++n < t;) e(n);
+				return a
 			}
 		},
-		"./node_modules/lodash/uniqueId.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/toString.js"),
+		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
+			var o = n("./node_modules/lodash/toString.js"),
 				r = 0;
 			t.exports = function(t) {
 				var e = ++r;
-				return n(t) + e
+				return o(t) + e
 			}
-		},
-		"./node_modules/lodash/wrapperLodash.js": function(t, e, o) {
-			var n = o("./node_modules/lodash/_LazyWrapper.js"),
-				r = o("./node_modules/lodash/_LodashWrapper.js"),
-				s = o("./node_modules/lodash/_baseLodash.js"),
-				i = o("./node_modules/lodash/isArray.js"),
-				a = o("./node_modules/lodash/isObjectLike.js"),
-				h = o("./node_modules/lodash/_wrapperClone.js"),
-				u = Object.prototype.hasOwnProperty;
-
-			function d(t) {
-				if (a(t) && !i(t) && !(t instanceof n)) {
-					if (t instanceof r) return t;
-					if (u.call(t, "__wrapped__")) return h(t)
-				}
-				return new r(t)
-			}
-			d.prototype = s.prototype, d.prototype.constructor = d, t.exports = d
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~PostCreation.6098f1db9a539187e2ea.js.map
+//# sourceMappingURL=vendors~PostCreation.4e734817c05bcd5ddb65.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.55c1bc146c08c49be214.js
-// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.92ba080d0225e7ab36b6.js
+// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"], {
 		"./node_modules/asap/browser-asap.js": function(e, t, n) {
@@ -1221,6 +1221,25 @@
 					default: r
 				}
 		},
+		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseCreate.js"),
+				o = n("./node_modules/lodash/_baseLodash.js"),
+				a = 4294967295;
+
+			function i(e) {
+				this.__wrapped__ = e, this.__actions__ = [], this.__dir__ = 1, this.__filtered__ = !1, this.__iteratees__ = [], this.__takeCount__ = a, this.__views__ = []
+			}
+			i.prototype = r(o.prototype), i.prototype.constructor = i, e.exports = i
+		},
+		"./node_modules/lodash/_LodashWrapper.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseCreate.js"),
+				o = n("./node_modules/lodash/_baseLodash.js");
+
+			function a(e, t) {
+				this.__wrapped__ = e, this.__actions__ = [], this.__chain__ = !!t, this.__index__ = 0, this.__values__ = void 0
+			}
+			a.prototype = r(o.prototype), a.prototype.constructor = a, e.exports = a
+		},
 		"./node_modules/lodash/_baseIntersection.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_SetCache.js"),
 				o = n("./node_modules/lodash/_arrayIncludes.js"),
@@ -1242,14 +1261,17 @@
 						D = t ? t(_) : _;
 					if (_ = n || 0 !== _ ? _ : 0, !(b ? u(b, D) : l(v, D, n))) {
 						for (p = f; --p;) {
-							var O = h[p];
-							if (!(O ? u(O, D) : l(e[p], D, n))) continue e
+							var j = h[p];
+							if (!(j ? u(j, D) : l(e[p], D, n))) continue e
 						}
 						b && b.push(D), v.push(_)
 					}
 				}
 				return v
 			}
+		},
+		"./node_modules/lodash/_baseLodash.js": function(e, t) {
+			e.exports = function() {}
 		},
 		"./node_modules/lodash/_castArrayLikeObject.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/isArrayLikeObject.js");
@@ -1295,6 +1317,58 @@
 				}))
 			}
 		},
+		"./node_modules/lodash/_getData.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_metaMap.js"),
+				o = n("./node_modules/lodash/noop.js"),
+				a = r ? function(e) {
+					return r.get(e)
+				} : o;
+			e.exports = a
+		},
+		"./node_modules/lodash/_getFuncName.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_realNames.js"),
+				o = Object.prototype.hasOwnProperty;
+			e.exports = function(e) {
+				for (var t = e.name + "", n = r[t], a = o.call(r, t) ? n.length : 0; a--;) {
+					var i = n[a],
+						s = i.func;
+					if (null == s || s == e) return i.name
+				}
+				return t
+			}
+		},
+		"./node_modules/lodash/_isLaziable.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_LazyWrapper.js"),
+				o = n("./node_modules/lodash/_getData.js"),
+				a = n("./node_modules/lodash/_getFuncName.js"),
+				i = n("./node_modules/lodash/wrapperLodash.js");
+			e.exports = function(e) {
+				var t = a(e),
+					n = i[t];
+				if ("function" != typeof n || !(t in r.prototype)) return !1;
+				if (e === n) return !0;
+				var s = o(n);
+				return !!s && e === s[0]
+			}
+		},
+		"./node_modules/lodash/_metaMap.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_WeakMap.js"),
+				o = r && new r;
+			e.exports = o
+		},
+		"./node_modules/lodash/_realNames.js": function(e, t) {
+			e.exports = {}
+		},
+		"./node_modules/lodash/_wrapperClone.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_LazyWrapper.js"),
+				o = n("./node_modules/lodash/_LodashWrapper.js"),
+				a = n("./node_modules/lodash/_copyArray.js");
+			e.exports = function(e) {
+				if (e instanceof r) return e.clone();
+				var t = new o(e.__wrapped__, e.__chain__);
+				return t.__actions__ = a(e.__actions__), t.__index__ = e.__index__, t.__values__ = e.__values__, t
+			}
+		},
 		"./node_modules/lodash/flow.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_createFlow.js")();
 			e.exports = r
@@ -1318,6 +1392,24 @@
 					return a(e) ? r(e, t) : []
 				}));
 			e.exports = i
+		},
+		"./node_modules/lodash/wrapperLodash.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_LazyWrapper.js"),
+				o = n("./node_modules/lodash/_LodashWrapper.js"),
+				a = n("./node_modules/lodash/_baseLodash.js"),
+				i = n("./node_modules/lodash/isArray.js"),
+				s = n("./node_modules/lodash/isObjectLike.js"),
+				u = n("./node_modules/lodash/_wrapperClone.js"),
+				d = Object.prototype.hasOwnProperty;
+
+			function l(e) {
+				if (s(e) && !i(e) && !(e instanceof r)) {
+					if (e instanceof o) return e;
+					if (d.call(e, "__wrapped__")) return u(e)
+				}
+				return new o(e)
+			}
+			l.prototype = a.prototype, l.prototype.constructor = l, e.exports = l
 		},
 		"./node_modules/react-dnd-html5-backend/lib/BrowserDetector.js": function(e, t, n) {
 			"use strict";
@@ -1754,10 +1846,10 @@
 					f.push(u[u.length - 1]);
 					for (var m = [], b = [], _ = void 0, D = 0; D < f.length - 1; D++) {
 						_ = u[D];
-						var O = f[D],
-							j = 1 / s[D],
-							w = O + f[D + 1] - _ - _;
-						m.push((_ - O - w) * j), b.push(w * j * j)
+						var j = f[D],
+							O = 1 / s[D],
+							w = j + f[D + 1] - _ - _;
+						m.push((_ - j - w) * O), b.push(w * O * O)
 					}
 					this.xs = t, this.ys = n, this.c1s = f, this.c2s = m, this.c3s = b
 				}
@@ -2880,8 +2972,8 @@
 					b = e.containerDisplayName,
 					_ = e.getType,
 					D = e.collect,
-					O = e.options.arePropsEqual,
-					j = void 0 === O ? p.default : O,
+					j = e.options.arePropsEqual,
+					O = void 0 === j ? p.default : j,
 					w = h.displayName || h.name || "Component",
 					S = (n = t = function(e) {
 						function t(e, n) {
@@ -2917,7 +3009,7 @@
 						}, {
 							key: "shouldComponentUpdate",
 							value: function(e, t) {
-								return !j(e, this.props) || !(0, f.default)(t, this.state)
+								return !O(e, this.props) || !(0, f.default)(t, this.state)
 							}
 						}]), a(t, [{
 							key: "componentDidMount",
@@ -2927,7 +3019,7 @@
 						}, {
 							key: "componentWillReceiveProps",
 							value: function(e) {
-								j(e, this.props) || (this.receiveProps(e), this.handleChange())
+								O(e, this.props) || (this.receiveProps(e), this.handleChange())
 							}
 						}, {
 							key: "componentWillUnmount",
@@ -3390,4 +3482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.55c1bc146c08c49be214.js.map
+//# sourceMappingURL=vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.92ba080d0225e7ab36b6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fd91cf7bf925bc643de0.js
-// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0bd804de36480741825e.js
+// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -125,6 +125,21 @@
 			n("./src/lib/logs/console.ts");
 			t.a = function(e, t) {
 				return t => s.a.createElement(e, t)
+			}
+		},
+		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			var o = n("./node_modules/bignumber.js/bignumber.js");
+
+			function s(e, t) {
+				const n = new o.BigNumber(e),
+					s = new o.BigNumber(t),
+					r = new o.BigNumber(n.dividedBy(s)),
+					i = new o.BigNumber("100").multipliedBy(r);
+				return new o.BigNumber(i).toNumber()
 			}
 		},
 		"./src/lib/convertToCamelCase/index.ts": function(e, t, n) {
@@ -16597,6 +16612,50 @@
 				}) : e)
 			}
 		},
+		"./src/reddit/endpoints/governance/wallet.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "b", (function() {
+				return a
+			}));
+			var o = n("./src/config.ts"),
+				s = (n("./src/lib/bigNumberUtils/percent.ts"), n("./src/lib/constants/index.ts")),
+				r = n("./src/reddit/endpoints/governance/requester.ts");
+
+			function i(e, t) {
+				return Object(r.a)(e, {
+					endpoint: "".concat(o.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
+					method: s.bb.GET
+				}).then(e => {
+					if (e.ok) {
+						const n = e.body,
+							o = {
+								[t.subredditId]: n
+							};
+						return Object.assign({}, e, {
+							body: o
+						})
+					}
+					return e
+				})
+			}
+
+			function a(e, t) {
+				return Object(r.a)(e, {
+					headers: {
+						"X-HTTP-Method-Override": "GET"
+					},
+					endpoint: "".concat(o.a.metaUrl, "/wallets/").concat(t.subredditId),
+					method: s.bb.POST,
+					data: t.userIds
+				}).then(e => e.ok ? Object.assign({}, e, {
+					body: {
+						wallets: e.body
+					}
+				}) : e)
+			}
+		},
 		"./src/reddit/endpoints/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -23031,4 +23090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.fd91cf7bf925bc643de0.js.map
+//# sourceMappingURL=PostCreation.0bd804de36480741825e.js.map

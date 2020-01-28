@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2173fa8765d2e7dac397.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3535df19026e10c0c1ad.js
+// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e", "CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -183,6 +183,21 @@
 						}
 					})
 				}))(e)
+			}
+		},
+		"./src/lib/bigNumberUtils/percent.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			}));
+			var a = s("./node_modules/bignumber.js/bignumber.js");
+
+			function n(e, t) {
+				const s = new a.BigNumber(e),
+					n = new a.BigNumber(t),
+					o = new a.BigNumber(s.dividedBy(n)),
+					r = new a.BigNumber("100").multipliedBy(o);
+				return new a.BigNumber(r).toNumber()
 			}
 		},
 		"./src/lib/convertToCamelCase/index.ts": function(e, t, s) {
@@ -15603,6 +15618,50 @@
 				e.Uploaded = "uploaded", e.Approved = "approved", e.Rejected = "rejected"
 			}(n || (n = {}))
 		},
+		"./src/reddit/endpoints/governance/wallet.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			})), s.d(t, "b", (function() {
+				return i
+			}));
+			var a = s("./src/config.ts"),
+				n = (s("./src/lib/bigNumberUtils/percent.ts"), s("./src/lib/constants/index.ts")),
+				o = s("./src/reddit/endpoints/governance/requester.ts");
+
+			function r(e, t) {
+				return Object(o.a)(e, {
+					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
+					method: n.bb.GET
+				}).then(e => {
+					if (e.ok) {
+						const s = e.body,
+							a = {
+								[t.subredditId]: s
+							};
+						return Object.assign({}, e, {
+							body: a
+						})
+					}
+					return e
+				})
+			}
+
+			function i(e, t) {
+				return Object(o.a)(e, {
+					headers: {
+						"X-HTTP-Method-Override": "GET"
+					},
+					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId),
+					method: n.bb.POST,
+					data: t.userIds
+				}).then(e => e.ok ? Object.assign({}, e, {
+					body: {
+						wallets: e.body
+					}
+				}) : e)
+			}
+		},
 		"./src/reddit/endpoints/page/subredditWiki.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -29519,4 +29578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.2173fa8765d2e7dac397.js.map
+//# sourceMappingURL=ModerationPages.3535df19026e10c0c1ad.js.map

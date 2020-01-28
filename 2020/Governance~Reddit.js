@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b9d3baed2ea184704b9f.js
-// Retrieved at 1/28/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.aefd806b5388c5b2b46a.js
+// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -217,21 +217,6 @@
 			}));
 			window.atob;
 			const r = window.btoa
-		},
-		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			var r = n("./node_modules/bignumber.js/bignumber.js");
-
-			function s(e, t) {
-				const n = new r.BigNumber(e),
-					s = new r.BigNumber(t),
-					o = new r.BigNumber(n.dividedBy(s)),
-					i = new r.BigNumber("100").multipliedBy(o);
-				return new r.BigNumber(i).toNumber()
-			}
 		},
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
 			"use strict";
@@ -3580,7 +3565,7 @@
 				return r
 			}));
 			const r = e => async t => {
-				const r = await (() => Promise.all([n.e("vendors~EconHelperActions~Reddit"), n.e("EconHelperActions")]).then(n.bind(null, "./src/reddit/actions/economics/helpers/index.ts")).then(e => e.fetchAll))();
+				const r = await (() => Promise.all([n.e("vendors~EconHelperActions~SubredditPremiumBadgeManagement"), n.e("EconHelperActions")]).then(n.bind(null, "./src/reddit/actions/economics/helpers/index.ts")).then(e => e.fetchAll))();
 				await t(r(e))
 			}
 		},
@@ -5644,32 +5629,6 @@
 					}
 				}
 		},
-		"./src/reddit/actions/governance/communityDetails.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return c
-			}));
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/reddit/endpoints/governance/community.ts"),
-				o = n("./src/reddit/actions/governance/constants.ts");
-			const i = Object(r.a)(o.a),
-				c = e => {
-					let {
-						subredditId: t
-					} = e;
-					return async (e, n, r) => {
-						let {
-							apiContext: o
-						} = r;
-						const c = await Object(s.a)(o(), {
-							subredditId: t
-						});
-						c.ok && e(i(Object.assign({
-							subredditId: t
-						}, c.body)))
-					}
-				}
-		},
 		"./src/reddit/actions/governance/constants.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -5763,29 +5722,6 @@
 					duration: 5e3,
 					kind: o.b.Error,
 					text: Object(s.a)(t)
-				}))
-			}
-		},
-		"./src/reddit/actions/governance/publicWalletsFetched.ts": function(e, t, n) {
-			"use strict";
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/reddit/endpoints/governance/wallet.ts"),
-				o = n("./src/reddit/actions/governance/constants.ts");
-			const i = Object(r.a)(o.n),
-				c = Object(r.a)(o.o),
-				a = Object(r.a)(o.m);
-			t.a = e => async (t, n, r) => {
-				let {
-					apiContext: o
-				} = r;
-				t(i({
-					subredditId: e.subredditId
-				}));
-				const d = await Object(s.b)(o(), e);
-				d.ok ? t(c(Object.assign({
-					subredditId: e.subredditId
-				}, d.body))) : t(a({
-					error: d.error
 				}))
 			}
 		},
@@ -28891,50 +28827,6 @@
 						status: e.status
 					}
 				})
-			}
-		},
-		"./src/reddit/endpoints/governance/wallet.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return c
-			}));
-			var r = n("./src/config.ts"),
-				s = (n("./src/lib/bigNumberUtils/percent.ts"), n("./src/lib/constants/index.ts")),
-				o = n("./src/reddit/endpoints/governance/requester.ts");
-
-			function i(e, t) {
-				return Object(o.a)(e, {
-					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.bb.GET
-				}).then(e => {
-					if (e.ok) {
-						const n = e.body,
-							r = {
-								[t.subredditId]: n
-							};
-						return Object.assign({}, e, {
-							body: r
-						})
-					}
-					return e
-				})
-			}
-
-			function c(e, t) {
-				return Object(o.a)(e, {
-					headers: {
-						"X-HTTP-Method-Override": "GET"
-					},
-					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.bb.POST,
-					data: t.userIds
-				}).then(e => e.ok ? Object.assign({}, e, {
-					body: {
-						wallets: e.body
-					}
-				}) : e)
 			}
 		},
 		"./src/reddit/endpoints/me/index.ts": function(e, t, n) {
@@ -69667,4 +69559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.b9d3baed2ea184704b9f.js.map
+//# sourceMappingURL=Governance~Reddit.aefd806b5388c5b2b46a.js.map
