@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e.8625994f75fa764ac27f.js
-// Retrieved at 1/28/2020, 2:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e.e5eb5dab0e39f6679eaa.js
+// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e"], {
 		"./src/reddit/components/EventPost/EventMetaHeader/index.m.less": function(e, t, s) {
@@ -125,7 +125,7 @@
 					let x, N;
 					if (this.state.mounted || u === a.a.Live) x = function(e, t, s, n) {
 						const o = Object(a.e)(e, t),
-							i = new Date(e * l.Bb);
+							i = new Date(e * l.Cb);
 						let d;
 						if (o === a.a.Live || n) return Object(r.a)(s, "posts.event.inProgress");
 						o === a.a.Future ? d = Object(a.d)(e) ? Object(r.a)(s, "posts.event.today") : Object(a.b)(e) >= 5 ? c(i, s) : function(e, t) {
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e.8625994f75fa764ac27f.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e.e5eb5dab0e39f6679eaa.js.map

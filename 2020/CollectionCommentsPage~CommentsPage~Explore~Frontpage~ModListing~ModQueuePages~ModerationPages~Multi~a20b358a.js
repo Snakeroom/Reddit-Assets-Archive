@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.6928ea5c312f33c88476.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.df584a27943dcd94c8b6.js
+// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a"], {
 		"./src/lib/timezone/index.ts": function(e, t, o) {
@@ -81,8 +81,8 @@
 							eventEnd: o
 						} = e.eventInfo;
 						return {
-							startDate: d(new Date(t * n.Bb)),
-							endDate: d(new Date(o * n.Bb)),
+							startDate: d(new Date(t * n.Cb)),
+							endDate: d(new Date(o * n.Cb)),
 							submitTime: c.i.Now,
 							timezoneName: r() || s
 						}
@@ -926,12 +926,12 @@
 				w = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === l.i.AtEventTime ? Object(r.f)(e.startDate).getTime() / c.Bb : void 0
+						submitScheduledTime: e && e.submitTime === l.i.AtEventTime ? Object(r.f)(e.startDate).getTime() / c.Cb : void 0
 					}
 				},
 				I = e => {
-					const t = Object(r.f)(e.startDate).getTime() / c.Bb,
-						o = Object(r.f)(e.endDate).getTime() / c.Bb;
+					const t = Object(r.f)(e.startDate).getTime() / c.Cb,
+						o = Object(r.f)(e.endDate).getTime() / c.Cb;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: o,
@@ -993,4 +993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.6928ea5c312f33c88476.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~ModerationPages~Multi~a20b358a.df584a27943dcd94c8b6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.8f4723a5a28eac342b46.js
-// Retrieved at 1/28/2020, 2:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.cb5a9caabb1a11d546cf.js
+// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Explore~ProfileSnoobuilder~SubredditWiki"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4718,7 +4718,7 @@
 					}, c.a.createElement(j.a, {
 						className: R.a.seeMorePostsText,
 						to: Object(m.a)(C, {
-							type: u.Jb.Posts
+							type: u.Kb.Posts
 						})
 					}, c.a.createElement(y.a, {
 						msgId: "search.seeMorePosts"
@@ -6148,7 +6148,7 @@
 				}, e.text))),
 				R = s("./src/lib/constants/index.ts");
 			const A = Object(d.t)(),
-				B = [R.xb.SUBREDDIT, R.xb.COMMENTS, R.xb.COLLECTION_COMMENTS],
+				B = [R.yb.SUBREDDIT, R.yb.COMMENTS, R.yb.COLLECTION_COMMENTS],
 				F = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && B.indexOf(t.pageLayer.meta.name) > -1
@@ -6227,7 +6227,7 @@
 					homeUrl: t,
 					isTopBannerVariant: s,
 					pageLayer: n
-				} = e, r = !!n && !!n.meta && n.meta.name === R.xb.SUBREDDIT_WIKI, a = "wiki/".concat(X.i), i = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
+				} = e, r = !!n && !!n.meta && n.meta.name === R.yb.SUBREDDIT_WIKI, a = "wiki/".concat(X.i), i = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
 				return o.a.createElement(f, {
 					isActive: r,
 					isTopBannerVariant: s,
@@ -8986,7 +8986,7 @@
 				});
 			class bt extends d.a.Component {
 				constructor(e) {
-					super(e), this.isHomeUpsellVisible = () => this.props.isOverlay ? this.state.shouldShowHomeUpsell : this.props.shouldShowHomeUpsell, this.scrollContainer = () => this.props.isOverlay ? document.getElementById(V.d) : null, this.onViewed = (e, t) => Object(st.d)(this.listingKey(), x.N.TOP, t, e, x.Ob.WEEK), this.onFooterClick = e => {
+					super(e), this.isHomeUpsellVisible = () => this.props.isOverlay ? this.state.shouldShowHomeUpsell : this.props.shouldShowHomeUpsell, this.scrollContainer = () => this.props.isOverlay ? document.getElementById(V.d) : null, this.onViewed = (e, t) => Object(st.d)(this.listingKey(), x.N.TOP, t, e, x.Pb.WEEK), this.onFooterClick = e => {
 						this.isHomeUpsellVisible() && (e.preventDefault(), this.props.goToHomeFeed()), this.props.sendEvent(Object(tt.c)("recommended_footer"))
 					}, this.loadMoreHomeFeedPosts = () => {
 						const {
@@ -9004,7 +9004,7 @@
 						subredditOrProfile: t
 					} = this.props;
 					return this.isHomeUpsellVisible() ? Object(Je.a)(e, x.N.HOT) : Object(Je.a)(t.name, x.N.TOP, {
-						t: x.Ob.WEEK
+						t: x.Pb.WEEK
 					})
 				}
 				renderHomeBanner() {
@@ -11884,4 +11884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.8f4723a5a28eac342b46.js.map
+//# sourceMappingURL=CommentsPage.cb5a9caabb1a11d546cf.js.map

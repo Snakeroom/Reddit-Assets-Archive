@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.ab7c14974cef97f8d4dd.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.be5da573ac6f809030a4.js
+// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -559,7 +559,7 @@
 				}
 				componentDidMount() {
 					E.f() || E.g();
-					const e = u.xb.PREMIUM;
+					const e = u.yb.PREMIUM;
 					b.c.has(e) && this.props.sendEvent(Object(k.i)(f.TimerType.InApp, b.c.end(e))), Object(p.a)()
 				}
 				render() {
@@ -667,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.ab7c14974cef97f8d4dd.js.map
+//# sourceMappingURL=Premium.be5da573ac6f809030a4.js.map

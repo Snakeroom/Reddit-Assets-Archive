@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.942526e0a76bd908de9b.js
-// Retrieved at 1/28/2020, 2:50:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.b6bd21e5b6c783a3a210.js
+// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/orderBy.js": function(e, t, s) {
@@ -246,7 +246,7 @@
 							const {
 								pageName: e
 							} = t;
-							f = e === o.Mb.WikiContributors, j = e === o.Mb.WikiBanned
+							f = e === o.Nb.WikiContributors, j = e === o.Nb.WikiBanned
 						}
 						const w = r(),
 							C = (h || n) && !z(w, d),
@@ -4448,7 +4448,7 @@
 				}, e.text))),
 				R = s("./src/lib/constants/index.ts");
 			const L = Object(d.t)(),
-				B = [R.xb.SUBREDDIT, R.xb.COMMENTS, R.xb.COLLECTION_COMMENTS],
+				B = [R.yb.SUBREDDIT, R.yb.COMMENTS, R.yb.COLLECTION_COMMENTS],
 				A = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && B.indexOf(t.pageLayer.meta.name) > -1
@@ -4527,7 +4527,7 @@
 					homeUrl: t,
 					isTopBannerVariant: s,
 					pageLayer: n
-				} = e, r = !!n && !!n.meta && n.meta.name === R.xb.SUBREDDIT_WIKI, a = "wiki/".concat(Q.i), o = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
+				} = e, r = !!n && !!n.meta && n.meta.name === R.yb.SUBREDDIT_WIKI, a = "wiki/".concat(Q.i), o = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
 				return i.a.createElement(w, {
 					isActive: r,
 					isTopBannerVariant: s,
@@ -4730,7 +4730,7 @@
 				ke = s.n(xe);
 			const Oe = 10,
 				fe = Object(d.a)((e, t) => t.subredditName, e => Object(le.a)(e, c.N.TOP, {
-					t: c.Ob.WEEK
+					t: c.Pb.WEEK
 				})),
 				ve = Object(d.c)({
 					discoveryUnit: e => Object(he.f)(e, {
@@ -4808,7 +4808,7 @@
 						loadMorePosts: () => e(Object(me.r)({
 							sort: c.N.TOP,
 							subredditName: s,
-							t: c.Ob.WEEK
+							t: c.Pb.WEEK
 						}))
 					}
 				})(Object(Q.b)(je)),
@@ -8480,4 +8480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.942526e0a76bd908de9b.js.map
+//# sourceMappingURL=SubredditWiki.b6bd21e5b6c783a3a210.js.map

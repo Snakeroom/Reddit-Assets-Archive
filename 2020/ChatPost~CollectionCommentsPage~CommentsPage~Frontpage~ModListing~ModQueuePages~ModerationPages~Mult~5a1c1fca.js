@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.e308cf87e77dd8e09f49.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.710e8176a1b5df410836.js
+// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, s) {
@@ -1158,7 +1158,7 @@
 						showTimestamp: M = !0,
 						subredditOrProfile: P,
 						tooltipType: _
-					} = this.props, B = b && b.meta && b.meta.name === i.xb.COMMENTS, L = Object(p.a)(h), H = a === k.b.Left, R = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, F = !s && !B, W = r.a.createElement(r.a.Fragment, null, !L && r.a.createElement(q, {
+					} = this.props, B = b && b.meta && b.meta.name === i.yb.COMMENTS, L = Object(p.a)(h), H = a === k.b.Left, R = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, F = !s && !B, W = r.a.createElement(r.a.Fragment, null, !L && r.a.createElement(q, {
 						style: {
 							color: z(this.props)
 						}
@@ -1743,4 +1743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.e308cf87e77dd8e09f49.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~ModerationPages~Mult~5a1c1fca.710e8176a1b5df410836.js.map
