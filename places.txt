@@ -13,3 +13,4 @@
 /submit
 /subreddits/leaderboard
 /r/aww/comments/90bu6w/heat_index_was_110_degrees_so_we_offered_him_a
+/framedGild/t3_e95nr5

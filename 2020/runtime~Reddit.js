@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f8dc9d258dfdceecb242.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.5f4c19a7c2c02f9f1d2f.js
+// Retrieved at 1/28/2020, 4:10:14 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, u = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && u.push(r[d][0]), r[d] = 0;
@@ -384,7 +384,7 @@
 					ProfileOverview: "c20e592392dfb5034483",
 					ProfilePosts: "395845ee24d115712138",
 					ProfilePrivate: "2752e0d9d8a979de5bd3",
-					SearchResults: "64ff65754cdfe87c6473",
+					SearchResults: "907d982ff10b7202dc2d",
 					Topic: "877ea904d50c8a13bc76",
 					"Explore~ProfileSnoobuilder~SubredditWiki": "9407799c7f9501888bfe",
 					"Explore~InFeedChaining": "accf08822677c7510f8b",
@@ -768,7 +768,7 @@
 						ProfileOverview: "a29ff4c6b5c92af399ba",
 						ProfilePosts: "1a2e248ebda751d8f404",
 						ProfilePrivate: "54d9cb1d6f2d68b39d6c",
-						SearchResults: "b6567c274a5574c8bddd",
+						SearchResults: "b8274c50fbece92b310b",
 						Topic: "a7f2ab717e2e4f9cc530",
 						"Explore~ProfileSnoobuilder~SubredditWiki": "38df1dedeedcb81df9c7",
 						"Explore~InFeedChaining": "d8d1564ab264cdf023a4",
@@ -985,4 +985,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.f8dc9d258dfdceecb242.js.map
+//# sourceMappingURL=runtime~Reddit.5f4c19a7c2c02f9f1d2f.js.map

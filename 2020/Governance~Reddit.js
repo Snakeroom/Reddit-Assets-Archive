@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5424422e938a66f7bf23.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.443b8707a65d4e895416.js
+// Retrieved at 1/28/2020, 4:10:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -654,12 +654,12 @@
 							t: n,
 							type: r
 						};
-					return void 0 !== e.include_over_18 && (i.include_over_18 = u(d(e.include_over_18))), void 0 !== e.restrict_sr && (i.restrict_sr = u(d(e.restrict_sr))), e.is_multi && (i.is_multi = u(d(e.is_multi))), e.category && (i.category = e.category), e[o.b] && (i.category_name = e.category_name), e[o.s] && (i.source = e.source), i
+					return void 0 !== e.restrict_sr && (i.restrict_sr = u(d(e.restrict_sr))), e.is_multi && (i.is_multi = u(d(e.is_multi))), e.category && (i.category = e.category), e[o.b] && (i.category_name = e.category_name), e[o.s] && (i.source = e.source), i
 				};
 			t.b = function(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
 					r = e || "!";
-				return t && (r = "".concat(r, "--[user:").concat(t, "]")), void 0 !== n.include_over_18 && (r = "".concat(r, "--[include_over_18:").concat(n.include_over_18, "]")), n.q && (r = "".concat(r, "--[q:").concat(n.q, "]")), n.restrict_sr && (r = "".concat(r, "--[restrict_sr:").concat(n.restrict_sr, "]")), n.sort && (r = "".concat(r, "--[sort:").concat(n.sort, "]")), n.t && (r = "".concat(r, "--[t:").concat(n.t, "]")), n.category && (r = "".concat(r, "--[c:").concat(n.category, "]")), n.type && (r = "".concat(r, "--[type:").concat(i(n.type), "]")), r.toLowerCase()
+				return t && (r = "".concat(r, "--[user:").concat(t, "]")), n.q && (r = "".concat(r, "--[q:").concat(n.q, "]")), n.restrict_sr && (r = "".concat(r, "--[restrict_sr:").concat(n.restrict_sr, "]")), n.sort && (r = "".concat(r, "--[sort:").concat(n.sort, "]")), n.t && (r = "".concat(r, "--[t:").concat(n.t, "]")), n.category && (r = "".concat(r, "--[c:").concat(n.category, "]")), n.type && (r = "".concat(r, "--[type:").concat(i(n.type), "]")), r.toLowerCase()
 			}
 		},
 		"./src/lib/objectSelector/index.ts": function(e, t, n) {
@@ -26515,7 +26515,7 @@
 				I = "feature",
 				S = ["ad", "adHash", "clickUrl", g, I],
 				T = ["after", "before"],
-				C = ["ad", "include_over_18", "q", "restrict_sr", "sort", "t", "type", I, a, r, s, j]
+				C = ["ad", "q", "restrict_sr", "sort", "t", "type", I, a, r, s, j]
 		},
 		"./src/reddit/constants/postCollection.ts": function(e, t, n) {
 			"use strict";
@@ -69560,4 +69560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.5424422e938a66f7bf23.js.map
+//# sourceMappingURL=Governance~Reddit.443b8707a65d4e895416.js.map
