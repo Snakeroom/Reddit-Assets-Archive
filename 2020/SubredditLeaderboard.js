@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.29041e1d1492c0a1c103.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6db640b2072869012d4c.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -816,7 +816,7 @@
 					return Object(F.a)(t)
 				}
 			};
-			class V extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor(e) {
 					super(e), this.fetchTopSubreddits = () => {
 						const {
@@ -878,7 +878,7 @@
 					}, this.props))
 				}
 			}
-			t.a = Object(W.b)(Object(P.b)(V))
+			t.a = Object(W.b)(Object(P.b)(Q))
 		},
 		"./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx": function(e, t, r) {
 			"use strict";
@@ -1315,7 +1315,7 @@
 				M = Object(i.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
 				}));
-			class V extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
@@ -1387,7 +1387,7 @@
 					})))))
 				}
 			}
-			var Q = Object(m.b)(M(V)),
+			var V = Object(m.b)(M(Q)),
 				G = r("./src/reddit/components/CategoryPickerWidget/index.tsx"),
 				J = r("./src/lib/lessComponent.tsx"),
 				K = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
@@ -1454,7 +1454,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				le = Object(u.Vb)(p.f),
+				le = Object(u.Wb)(p.f),
 				me = Object(d.c)({
 					categories: e => Object(ae.e)(e, {
 						categoriesOrder: le
@@ -1522,7 +1522,7 @@
 						d = this.props.categoryId ? this.props.categoryId : a ? p.g : p.a;
 					return o.a.createElement(l.a, null, o.a.createElement(f.a, {
 						className: Object(c.a)(e, k.a.mainContent),
-						content: o.a.createElement(Q, {
+						content: o.a.createElement(V, {
 							categoryId: d,
 							categoryName: i
 						}),
@@ -1543,4 +1543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.29041e1d1492c0a1c103.js.map
+//# sourceMappingURL=SubredditLeaderboard.6db640b2072869012d4c.js.map

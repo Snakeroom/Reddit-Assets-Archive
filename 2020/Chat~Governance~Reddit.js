@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.db8cf921001f4eb18115.js
-// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.69df61c489cf45fa0aa2.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -12505,14 +12505,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("97e31c7-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("1967d3b-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "97e31c7-production",
+						release: "1967d3b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new r.Integrations.Breadcrumbs({
@@ -13012,7 +13012,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "97e31c7-production",
+							releaseClient: "1967d3b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18421,34 +18421,36 @@
 				return c
 			})), i.d(t, "GidAppreciation", (function() {
 				return m
-			})), i.d(t, "GidCommunity", (function() {
+			})), i.d(t, "GidPremium", (function() {
 				return h
-			})), i.d(t, "GidMod", (function() {
+			})), i.d(t, "GidCommunity", (function() {
 				return p
-			})), i.d(t, "CoinsGid1", (function() {
+			})), i.d(t, "GidMod", (function() {
 				return _
-			})), i.d(t, "CoinsGid2", (function() {
+			})), i.d(t, "CoinsGid1", (function() {
 				return g
-			})), i.d(t, "CoinsGid3", (function() {
+			})), i.d(t, "CoinsGid2", (function() {
 				return w
-			})), i.d(t, "CoinsGidCommunity", (function() {
+			})), i.d(t, "CoinsGid3", (function() {
 				return y
-			})), i.d(t, "CoinsGidMod", (function() {
+			})), i.d(t, "CoinsGidCommunity", (function() {
 				return v
-			})), i.d(t, "Premium", (function() {
+			})), i.d(t, "CoinsGidMod", (function() {
 				return f
-			})), i.d(t, "Coins", (function() {
+			})), i.d(t, "Premium", (function() {
 				return b
-			})), i.d(t, "HideAds", (function() {
+			})), i.d(t, "Coins", (function() {
 				return T
-			})), i.d(t, "PremiumMarketing", (function() {
+			})), i.d(t, "HideAds", (function() {
 				return S
-			})), i.d(t, "CoinsMarketing", (function() {
+			})), i.d(t, "PremiumMarketing", (function() {
 				return F
-			})), i.d(t, "GiveGold", (function() {
+			})), i.d(t, "CoinsMarketing", (function() {
 				return E
-			})), i.d(t, "toThrift", (function() {
+			})), i.d(t, "GiveGold", (function() {
 				return I
+			})), i.d(t, "toThrift", (function() {
+				return B
 			}));
 			var n = i("./src/telemetry/eventSchemas/gold_types.js");
 			const s = "new",
@@ -18460,20 +18462,21 @@
 				u = "gid_2",
 				c = "gid_3",
 				m = "gid_appreciation",
-				h = "gid_community",
-				p = "gid_mod",
-				_ = "coins_gid_1",
-				g = "coins_gid_2",
-				w = "coins_gid_3",
-				y = "coins_gid_community",
-				v = "coins_gid_mod",
-				f = "premium",
-				b = "coins",
-				T = "hide_ads",
-				S = "premium_marketing",
-				F = "coins_marketing",
-				E = "give_gold",
-				I = e => new n.GoldPurchase({
+				h = "gid_premium",
+				p = "gid_community",
+				_ = "gid_mod",
+				g = "coins_gid_1",
+				w = "coins_gid_2",
+				y = "coins_gid_3",
+				v = "coins_gid_community",
+				f = "coins_gid_mod",
+				b = "premium",
+				T = "coins",
+				S = "hide_ads",
+				F = "premium_marketing",
+				E = "coins_marketing",
+				I = "give_gold",
+				B = e => new n.GoldPurchase({
 					default_option: e.defaultOption,
 					default_anonymous: e.defaultAnonymous,
 					gilded_content: e.gildedContent,
@@ -18686,4 +18689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.db8cf921001f4eb18115.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.69df61c489cf45fa0aa2.js.map

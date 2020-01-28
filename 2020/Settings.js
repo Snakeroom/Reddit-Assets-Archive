@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a73bded0e18feb3299ea.js
-// Retrieved at 1/28/2020, 3:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4cf7e823ee2c6bde01c8.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -5455,8 +5455,8 @@
 				l = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => i.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
 					experimentEligibilitySelector: o.K,
-					experimentName: n.gb
-				}) === n.nb.Enabled
+					experimentName: n.hb
+				}) === n.ob.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -5617,4 +5617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.a73bded0e18feb3299ea.js.map
+//# sourceMappingURL=Settings.4cf7e823ee2c6bde01c8.js.map

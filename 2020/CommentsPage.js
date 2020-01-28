@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.952bce3769f7637de184.js
-// Retrieved at 1/28/2020, 4:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.279b2723f9ca09940c5d.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Explore~ProfileSnoobuilder~SubredditWiki"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -11852,7 +11852,7 @@
 					experimentEligibilitySelector: e => Object(r.K)(e),
 					experimentName: n.J
 				});
-				return Object(n.Wb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -11865,9 +11865,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.mb
+					experimentName: n.nb
 				});
-				return Object(n.Wb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -11884,4 +11884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.952bce3769f7637de184.js.map
+//# sourceMappingURL=CommentsPage.279b2723f9ca09940c5d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.2e9da4bc19070e1b080b.js
-// Retrieved at 1/28/2020, 1:50:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.dbfeabc909e7cfdaa13f.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, s) {
@@ -135,7 +135,7 @@
 					})))
 				}
 			}
-			var W = Object(a.b)(Q, (e, t) => {
+			var q = Object(a.b)(Q, (e, t) => {
 					let {
 						username: s,
 						subredditId: r,
@@ -162,13 +162,13 @@
 						}
 					}
 				})(z),
-				q = s("./src/reddit/actions/userFlair.ts"),
+				W = s("./src/reddit/actions/userFlair.ts"),
 				X = s("./src/reddit/icons/svgs/Tag/index.tsx"),
 				G = s("./src/reddit/components/Hovercards/AuthorHovercard/ModFlairActions.m.less"),
 				$ = s.n(G);
 			const ee = g.a.wrapped(X.a, "FlairIcon", $.a);
 			var te = Object(a.b)(null, (e, t) => ({
-					onToggleUserFlairModal: () => e(Object(q.p)(t.subredditId, t.username))
+					onToggleUserFlairModal: () => e(Object(W.p)(t.subredditId, t.username))
 				}))(e => n.a.createElement(T.a, {
 					role: "button",
 					onClick: () => {
@@ -282,7 +282,7 @@
 						},
 						getEventFactory: e => Object(j.g)(e ? "unfollow" : "follow", s),
 						small: !0
-					})), E && s && !o && p && n.a.createElement(W, {
+					})), E && s && !o && p && n.a.createElement(q, {
 						contextId: s,
 						language: d,
 						subredditId: p,
@@ -912,11 +912,11 @@
 			const o = e => !!(e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.K)(e),
-					experimentName: r.M
+					experimentName: r.N
 				});
-				return Object(r.Wb)(t) ? void 0 : t
+				return Object(r.Xb)(t) ? void 0 : t
 			})(e)
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.2e9da4bc19070e1b080b.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.dbfeabc909e7cfdaa13f.js.map

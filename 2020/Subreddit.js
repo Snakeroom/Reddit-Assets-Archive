@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1848e16284a40f4ba981.js
-// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ee87eeab6636bae5ce47.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2", "Explore~ProfileSnoobuilder~SubredditWiki", "Explore~InFeedChaining", "CategoriesNavigation"], {
 		"./src/graphql/operations/SubredditLayers.json": function(e) {
@@ -854,7 +854,7 @@
 				le = s.n(de);
 			const me = Object(o.c)({
 					categories: (e, t) => {
-						const s = Object(w.a)(e, t) ? U.cb : void 0;
+						const s = Object(w.a)(e, t) ? U.db : void 0;
 						return Object(G.s)(e, {
 							categoriesOrder: s
 						})
@@ -3299,9 +3299,9 @@
 				x = s("./src/reddit/constants/experiments.ts"),
 				y = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				f = s("./src/reddit/selectors/user.ts");
-			const v = e => Object(f.H)(e) || x.Jb.ShowTopContent === Object(y.c)(e, {
+			const v = e => Object(f.H)(e) || x.Kb.ShowTopContent === Object(y.c)(e, {
 				experimentEligibilitySelector: y.a,
-				experimentName: x.Eb
+				experimentName: x.Fb
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				O = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -5830,7 +5830,7 @@
 						showEditFlair: he,
 						subredditOrProfile: be,
 						userIsOp: ge
-					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ye = xe ? void 0 : u, fe = Object(d.a)(X), ve = re && fe, Ee = Object(c.a)(X), Oe = Object(R.c)(de), Ce = !!de.media && de.media.type === h.n.RTJSON, je = ge && Ce, Se = s ? s - A.a : void 0, we = !!ce && !!Object.keys(ce.options).filter(e => ce.options[e].userSelected).length, Pe = !(E && O), _e = (e => e === se.ob.OnlyTitles)(me) && !Object(ee.a)(de), Ne = (e => e === se.ob.MediumHeight)(me) && !Object(ee.a)(de), ke = (e => {
+					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ye = xe ? void 0 : u, fe = Object(d.a)(X), ve = re && fe, Ee = Object(c.a)(X), Oe = Object(R.c)(de), Ce = !!de.media && de.media.type === h.n.RTJSON, je = ge && Ce, Se = s ? s - A.a : void 0, we = !!ce && !!Object.keys(ce.options).filter(e => ce.options[e].userSelected).length, Pe = !(E && O), _e = (e => e === se.pb.OnlyTitles)(me) && !Object(ee.a)(de), Ne = (e => e === se.pb.MediumHeight)(me) && !Object(ee.a)(de), ke = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -18678,4 +18678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.1848e16284a40f4ba981.js.map
+//# sourceMappingURL=Subreddit.ee87eeab6636bae5ce47.js.map

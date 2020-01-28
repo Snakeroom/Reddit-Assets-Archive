@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2.8f02d6fa560820778f3d.js
-// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2.65f9b5ba84e3d87a22b1.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, s) {
@@ -1293,7 +1293,7 @@
 						showEditFlair: be,
 						subredditOrProfile: xe,
 						userIsOp: he
-					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], ye = ge ? void 0 : p, Oe = Object(c.a)(q), fe = oe && Oe, Pe = Object(d.a)(q), Ee = Object(F.c)(ce), ve = !!ce.media && ce.media.type === b.n.RTJSON, je = he && ve, Ce = s ? s - B.a : void 0, Se = !!de && !!Object.keys(de.options).filter(e => de.options[e].userSelected).length, ke = !(P && E), Ne = (e => e === se.ob.OnlyTitles)(me) && !Object(ee.a)(ce), _e = (e => e === se.ob.MediumHeight)(me) && !Object(ee.a)(ce), Ie = (e => {
+					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], ye = ge ? void 0 : p, Oe = Object(c.a)(q), fe = oe && Oe, Pe = Object(d.a)(q), Ee = Object(F.c)(ce), ve = !!ce.media && ce.media.type === b.n.RTJSON, je = he && ve, Ce = s ? s - B.a : void 0, Se = !!de && !!Object.keys(de.options).filter(e => de.options[e].userSelected).length, ke = !(P && E), Ne = (e => e === se.pb.OnlyTitles)(me) && !Object(ee.a)(ce), _e = (e => e === se.pb.MediumHeight)(me) && !Object(ee.a)(ce), Ie = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -2268,4 +2268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2.8f02d6fa560820778f3d.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2.65f9b5ba84e3d87a22b1.js.map

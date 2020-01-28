@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3535df19026e10c0c1ad.js
-// Retrieved at 1/28/2020, 5:50:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.005d4c6e1e3f5a2139a0.js
+// Retrieved at 1/28/2020, 6:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~Poll~ProfileComme~ae80d57e", "CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~Multireddit~ProfileComments~ProfileOverv~3f5eede2", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -7343,7 +7343,7 @@
 						showEditFlair: be,
 						subredditOrProfile: he,
 						userIsOp: ge
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], xe = Ee ? void 0 : u, ve = Object(d.a)(Y), fe = ae && ve, Oe = Object(c.a)(Y), Ce = Object(D.c)(de), je = !!de.media && de.media.type === b.n.RTJSON, ye = ge && je, ke = s ? s - B.a : void 0, we = !!ce && !!Object.keys(ce.options).filter(e => ce.options[e].userSelected).length, Se = !(O && C), Ne = (e => e === se.ob.OnlyTitles)(me) && !Object(ee.a)(de), Te = (e => e === se.ob.MediumHeight)(me) && !Object(ee.a)(de), _e = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], xe = Ee ? void 0 : u, ve = Object(d.a)(Y), fe = ae && ve, Oe = Object(c.a)(Y), Ce = Object(D.c)(de), je = !!de.media && de.media.type === b.n.RTJSON, ye = ge && je, ke = s ? s - B.a : void 0, we = !!ce && !!Object.keys(ce.options).filter(e => ce.options[e].userSelected).length, Se = !(O && C), Ne = (e => e === se.pb.OnlyTitles)(me) && !Object(ee.a)(de), Te = (e => e === se.pb.MediumHeight)(me) && !Object(ee.a)(de), _e = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -29351,7 +29351,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: a.a
 				});
-				return !!t && !Object(a.Wb)(t)
+				return !!t && !Object(a.Xb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/goldProfileGildedAwards.ts": function(e, t, s) {
@@ -29365,9 +29365,9 @@
 			const r = e => !!(e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(o.K)(e),
-					experimentName: a.M
+					experimentName: a.N
 				});
-				return Object(a.Wb)(t) ? void 0 : t
+				return Object(a.Xb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -29380,9 +29380,9 @@
 			const o = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.mb
+					experimentName: a.nb
 				});
-				return Object(a.Wb)(t) ? void 0 : t
+				return Object(a.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -29578,4 +29578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.3535df19026e10c0c1ad.js.map
+//# sourceMappingURL=ModerationPages.005d4c6e1e3f5a2139a0.js.map
