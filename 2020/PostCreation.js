@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1ad9697ce5d38463d15b.js
-// Retrieved at 1/29/2020, 12:20:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a3cbb1cc0b0662d0cf9f.js
+// Retrieved at 1/29/2020, 1:10:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -22836,7 +22836,7 @@
 				r = n("./src/reddit/selectors/platform.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const a = new Set(["pollstest", "whatssnoo"]),
-				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
+				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl"]),
 				l = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.J,
@@ -23090,4 +23090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.1ad9697ce5d38463d15b.js.map
+//# sourceMappingURL=PostCreation.a3cbb1cc0b0662d0cf9f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f893a6176c95a3a26d05.js
-// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ed628522c9d60d6e08fd.js
+// Retrieved at 1/29/2020, 1:10:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -5451,7 +5451,7 @@
 				r = s("./src/reddit/selectors/platform.ts"),
 				o = s("./src/reddit/selectors/user.ts");
 			const i = new Set(["pollstest", "whatssnoo"]),
-				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing"]),
+				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl"]),
 				l = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => i.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
 					experimentEligibilitySelector: o.J,
@@ -5617,4 +5617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.f893a6176c95a3a26d05.js.map
+//# sourceMappingURL=Settings.ed628522c9d60d6e08fd.js.map
