@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.a4c5c37565a84697aa00.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.5e51941fae2836fdd37a.js
+// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -490,7 +490,7 @@
 				n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = Object(n.c)({
-				language: r.T
+				language: r.S
 			});
 
 			function c(e) {
@@ -662,9 +662,9 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: a.a
 				});
-				return !!t && !Object(a.Wb)(t)
+				return !!t && !Object(a.Xb)(t)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.a4c5c37565a84697aa00.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.5e51941fae2836fdd37a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.75a73cdeb4ac947df76c.js
-// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.254738c97731aa9b4122.js
+// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21"], {
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
@@ -76,9 +76,9 @@
 				O = s("./src/lib/timeAgo/index.ts"),
 				j = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				I = s("./src/reddit/helpers/name/index.ts"),
-				T = s("./src/reddit/models/Subreddit/index.ts"),
-				w = s("./src/reddit/models/User/index.ts"),
-				y = s("./src/reddit/selectors/subreddit.ts"),
+				w = s("./src/reddit/models/Subreddit/index.ts"),
+				y = s("./src/reddit/models/User/index.ts"),
+				T = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
 				M = s.n(P),
 				N = s("./src/lib/lessComponent.tsx");
@@ -94,7 +94,7 @@
 								subredditId: s
 							}
 						} = t;
-						return s ? Object(y.S)(e, {
+						return s ? Object(T.S)(e, {
 							subredditId: s
 						}) : void 0
 					},
@@ -113,7 +113,7 @@
 						subreddit: s,
 						user: o,
 						onHoverActionText: r
-					} = this.props, i = s && Object(T.e)(s) && o ? Object(I.c)(Object(w.f)(o)) : s ? s.displayText : "", c = e.postIds.length;
+					} = this.props, i = s && Object(w.e)(s) && o ? Object(I.c)(Object(y.f)(o)) : s ? s.displayText : "", c = e.postIds.length;
 					return a.a.createElement(B, {
 						onClick: this.onClick,
 						className: M.a.container
@@ -160,7 +160,7 @@
 				}),
 				de = Object(c.c)({
 					collections: E.v,
-					language: _.T
+					language: _.S
 				}),
 				pe = Object(i.b)(de, (e, t) => {
 					let {
@@ -302,9 +302,9 @@
 				O = s.n(_),
 				j = s("./src/lib/lessComponent.tsx");
 			const I = Object(i.e)("postCreation.cancel"),
-				T = Object(i.e)("postCreation.create"),
-				w = Object(i.e)("postCreation.save"),
-				y = Object(i.e)("postCreation.collections.createCollection"),
+				w = Object(i.e)("postCreation.create"),
+				y = Object(i.e)("postCreation.save"),
+				T = Object(i.e)("postCreation.collections.createCollection"),
 				P = Object(i.e)("postCreation.collections.createModal.details"),
 				M = Object(i.e)("postCreation.collections.createModal.giveATitle"),
 				N = Object(i.e)("postCreation.collections.createModal.editTitle"),
@@ -327,7 +327,7 @@
 					collection: g.q,
 					error: g.c,
 					isPending: g.g,
-					language: E.T
+					language: E.S
 				}),
 				Q = Object(r.b)(G, (e, t) => ({
 					onCreate: (t, s) => e(Object(d.b)(t, s)),
@@ -368,10 +368,10 @@
 						error: t,
 						isPending: s,
 						language: n
-					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? T : w, c = r ? M : N;
+					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? w : y, c = r ? M : N;
 					return o.a.createElement(S, null, o.a.createElement(D, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(X, null)), o.a.createElement(k, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(F, null, o.a.createElement(U, null), y(n)), o.a.createElement(L, null, P(n))), o.a.createElement(W, null, c(n), o.a.createElement(H, {
+					}, o.a.createElement(X, null)), o.a.createElement(k, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(F, null, o.a.createElement(U, null), T(n)), o.a.createElement(L, null, P(n))), o.a.createElement(W, null, c(n), o.a.createElement(H, {
 						maxLength: m.e,
 						onChange: this.onTitleChange,
 						placeholder: B(n),
@@ -430,12 +430,12 @@
 						s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.UNSET;
 					return "PostFlair__Modal-[postId: ".concat(e, "]-isOverlay[").concat(t, "]-position[").concat(s, "]")
 				},
-				T = Object(i.c)({
+				w = Object(i.c)({
 					flairData: v.d,
 					subreddit: g.S,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
-			class w extends r.a.Component {
+			class y extends r.a.Component {
 				constructor(e) {
 					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
 						const {
@@ -510,10 +510,10 @@
 					}, Object(C.c)("Clear Flair"))))
 				}
 			}
-			const y = Object(a.b)(T, (e, t) => ({
+			const T = Object(a.b)(w, (e, t) => ({
 				closeModal: () => e(Object(d.i)(t.modalId))
-			}))(w);
-			t.a = Object(l.a)(Object(c.b)(y))
+			}))(y);
+			t.a = Object(l.a)(Object(c.b)(T))
 		},
 		"./src/reddit/components/RestrictedFlatlistButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -577,7 +577,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				c = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: c.T,
+				language: c.S,
 				subscribeReminderTooltipId: a.C,
 				subscribeTooltipId: a.D,
 				userIsSubscriber: i.cb
@@ -692,9 +692,9 @@
 				E = s("./src/reddit/controls/ErrorText/index.m.less"),
 				_ = s.n(E);
 			s.d(t, "a", (function() {
-				return T
-			})), s.d(t, "c", (function() {
 				return w
+			})), s.d(t, "c", (function() {
+				return y
 			}));
 			const O = Object(d.c)({
 				activeModalId: x.a
@@ -753,7 +753,7 @@
 			const I = Object(l.b)(O, e => ({
 					toggleErrorTextModal: t => e(Object(m.i)(t))
 				}))(j),
-				T = e => {
+				w = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -769,7 +769,7 @@
 						key: t
 					}, e))) : null
 				},
-				w = e => c.a.createElement(T, {
+				y = e => c.a.createElement(w, {
 					fallbackMessage: Object(u.c)("Something went wrong"),
 					messages: e
 				});
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.75a73cdeb4ac947df76c.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.254738c97731aa9b4122.js.map

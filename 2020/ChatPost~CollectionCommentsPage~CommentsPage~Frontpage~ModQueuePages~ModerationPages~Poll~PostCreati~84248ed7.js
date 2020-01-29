@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.d6b120aff730f133bfd6.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.ea5bfe9df1548a0caa26.js
+// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, s) {
@@ -275,7 +275,7 @@
 					return t && (o = "".concat(o, "--").concat(t)), o
 				},
 				L = Object(a.c)({
-					isLoggedIn: w.K,
+					isLoggedIn: w.J,
 					allAwards: e => e.awards.models
 				}),
 				k = Object(n.b)(L, (e, t) => {
@@ -1158,7 +1158,7 @@
 						showTimestamp: P = !0,
 						subredditOrProfile: M,
 						tooltipType: B
-					} = this.props, _ = b && b.meta && b.meta.name === i.xb.COMMENTS, L = Object(p.a)(h), H = a === k.b.Left, R = h.authorIsContractor && !!M && M.type === D.c.EmployeesOnly, F = !s && !_, Q = r.a.createElement(r.a.Fragment, null, !L && r.a.createElement(J, {
+					} = this.props, _ = b && b.meta && b.meta.name === i.yb.COMMENTS, L = Object(p.a)(h), H = a === k.b.Left, R = h.authorIsContractor && !!M && M.type === D.c.EmployeesOnly, F = !s && !_, Q = r.a.createElement(r.a.Fragment, null, !L && r.a.createElement(J, {
 						style: {
 							color: V(this.props)
 						}
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.d6b120aff730f133bfd6.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.ea5bfe9df1548a0caa26.js.map

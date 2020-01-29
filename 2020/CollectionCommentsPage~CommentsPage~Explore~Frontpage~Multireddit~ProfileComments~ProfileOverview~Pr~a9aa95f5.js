@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5.f65d78974c54c527a045.js
-// Retrieved at 1/27/2020, 4:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5.da993ef3c5073441c709.js
+// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
@@ -509,7 +509,7 @@
 				b = s("./src/reddit/actions/subscription/index.ts"),
 				h = s("./src/reddit/selectors/user.ts");
 			const g = Object(o.c)({
-				language: h.T
+				language: h.S
 			});
 			var y = Object(i.b)(g, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -585,7 +585,7 @@
 				}, e.bottomButtonText)))),
 				T = Object(o.c)({
 					hideNSFWPref: h.z,
-					language: h.T
+					language: h.S
 				}),
 				W = Object(i.b)(T)(e => r.a.createElement("div", {
 					className: N.a.communityItemContainer
@@ -758,10 +758,10 @@
 							n = t.redditStyle || Object(x.m)(e, {
 								subredditId: s
 							}),
-							r = Object(E.V)(e);
+							r = Object(E.U)(e);
 						return n || r
 					},
-					nigtmode: E.V,
+					nigtmode: E.U,
 					subredditId: m.m,
 					topPostVariant: y.d
 				}));
@@ -871,4 +871,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5.f65d78974c54c527a045.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5.da993ef3c5073441c709.js.map
