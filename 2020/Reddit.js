@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4a7cfd1ffc986a12030f.js
-// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.84f720c08b2970cf05cb.js
+// Retrieved at 1/29/2020, 4:10:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -11569,28 +11569,28 @@
 		"./src/reddit/helpers/tabBadging/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return o
+				return c
 			})), s.d(t, "b", (function() {
-				return d
-			})), s.d(t, "c", (function() {
 				return l
+			})), s.d(t, "c", (function() {
+				return u
 			}));
-			const n = "https://www.redditstatic.com/desktop2x",
-				a = "/img/favicon/badged-favicon-32x32.png",
-				r = "/img/favicon/badged-favicon-16x16.png",
-				o = "badgeCountSync",
-				i = e => window.document.querySelector('link[href="'.concat(e, '"]')),
-				c = (e, t) => "".concat(e).concat(t),
-				d = function() {
+			var n = s("./src/config.ts");
+			const a = "".concat(n.a.assetPath, "/img/favicon/badged-favicon-32x32.png"),
+				r = "".concat(n.a.assetPath, "/img/favicon/badged-favicon-16x16.png"),
+				o = "".concat(n.a.assetPath, "/img/favicon/favicon-32x32.png"),
+				i = "".concat(n.a.assetPath, "/img/favicon/favicon-16x16.png"),
+				c = "badgeCountSync",
+				d = e => window.document.querySelector('link[href="'.concat(e, '"]')),
+				l = function() {
 					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-					const t = n,
-						s = i(c(t, e ? "/img/favicon/favicon-32x32.png" : a)),
-						o = i(c(t, e ? "/img/favicon/favicon-16x16.png" : r));
-					s && o && (s.href = c(t, e ? a : "/img/favicon/favicon-32x32.png"), o.href = c(t, e ? r : "/img/favicon/favicon-16x16.png"))
+					const t = d(e ? o : a),
+						s = d(e ? i : r);
+					t && s && (t.href = e ? a : o, s.href = e ? r : i)
 				},
-				l = e => {
+				u = e => {
 					navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
-						command: o,
+						command: c,
 						badgeCounts: e
 					})
 				}
@@ -16498,4 +16498,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.4a7cfd1ffc986a12030f.js.map
+//# sourceMappingURL=Reddit.84f720c08b2970cf05cb.js.map
