@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4c26dfc9396822de6d2e.js
-// Retrieved at 1/30/2020, 10:30:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.cfd512b0488c5c5f100a.js
+// Retrieved at 1/30/2020, 12:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -26260,10 +26260,12 @@
 				return c
 			})), n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return d
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return u
+			})), n.d(t, "g", (function() {
+				return l
 			}));
 			const r = "ModerationPage--Modal--AddAward",
 				s = "ModerationPage--Modal--DeleteAwardConfirmation",
@@ -26272,7 +26274,8 @@
 				c = 1e4,
 				a = .2,
 				d = .1,
-				u = .1
+				u = .1,
+				l = 500
 		},
 		"./src/reddit/constants/graphql.ts": function(e, t, n) {
 			"use strict";
@@ -69575,4 +69578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.4c26dfc9396822de6d2e.js.map
+//# sourceMappingURL=Governance~Reddit.cfd512b0488c5c5f100a.js.map
