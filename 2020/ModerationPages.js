@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7d6c80759ae06df8c3d2.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.dc5a96a37a300697b8ff.js
+// Retrieved at 1/30/2020, 10:30:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1861,10 +1861,11 @@
 							const n = (s.path || "/user/".concat(Object(N.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
 							t(Object(c.I)(n, !1))
 						}
-					} else if (E) {
-						const e = f.error;
-						t(W(e))
 					} else {
+						if (E) {
+							const e = f.error;
+							t(W(e))
+						}
 						const e = f.error;
 						if (e.type === n.D.BAD_CAPTCHA_ERROR) t(z());
 						else if (e.type === n.D.VALIDATION_ERROR) t(q(e));
@@ -28671,4 +28672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.7d6c80759ae06df8c3d2.js.map
+//# sourceMappingURL=ModerationPages.dc5a96a37a300697b8ff.js.map

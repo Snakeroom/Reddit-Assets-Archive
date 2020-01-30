@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7ac5e6cba4ea49082472.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a2dac672fe863a57c88e.js
+// Retrieved at 1/30/2020, 10:30:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -1207,10 +1207,11 @@
 							const o = (n.path || "/user/".concat(Object(k.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
 							t(Object(c.I)(o, !1))
 						}
-					} else if (f) {
-						const e = C.error;
-						t(H(e))
 					} else {
+						if (f) {
+							const e = C.error;
+							t(H(e))
+						}
 						const e = C.error;
 						if (e.type === o.D.BAD_CAPTCHA_ERROR) t(z());
 						else if (e.type === o.D.VALIDATION_ERROR) t(W(e));
@@ -23298,4 +23299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.7ac5e6cba4ea49082472.js.map
+//# sourceMappingURL=PostCreation.a2dac672fe863a57c88e.js.map
