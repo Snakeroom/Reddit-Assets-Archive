@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e6fff3a344b625904e81.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.81e105edcdf0d51b8d8c.js
+// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, a) {
@@ -751,10 +751,10 @@
 				K = a("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				Y = a("./src/reddit/components/CommunitiesDirectoryWidget/index.m.less"),
 				G = a.n(Y);
-			const q = Q.a.a("Link", G.a),
-				X = e => {
+			const X = Q.a.a("Link", G.a),
+				q = e => {
 					const t = "#" === e ? "0" : e.toLowerCase();
-					return o.a.createElement(q, {
+					return o.a.createElement(X, {
 						href: "/subreddits/".concat(t, "-1"),
 						key: e
 					}, e)
@@ -767,7 +767,7 @@
 					className: G.a.Title
 				}, o.a.createElement(C.c, null, "Browse Communities A-Z")), o.a.createElement("div", {
 					className: G.a.LinkContainer
-				}, Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ#").map(X))),
+				}, Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ#").map(q))),
 				z = a("./src/reddit/components/SidebarContainer/index.tsx"),
 				$ = a("./src/reddit/components/SidebarSpacer/index.tsx"),
 				ee = a("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -812,7 +812,7 @@
 					} = t;
 					return Object(b.b)(a.params.categoryName || "")
 				},
-				le = Object(u.Wb)(g.f),
+				le = Object(u.Xb)(g.f),
 				me = Object(i.c)({
 					categories: e => Object(ne.e)(e, {
 						categoriesOrder: le
@@ -901,4 +901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.e6fff3a344b625904e81.js.map
+//# sourceMappingURL=SubredditLeaderboard.81e105edcdf0d51b8d8c.js.map

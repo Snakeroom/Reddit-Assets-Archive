@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.dfa5f164b8c04b89c930.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1b6e07f4f25b80602d9e.js
+// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "Explore~Multireddit", "SubredditLeaderboard~Topic", "CategoriesNavigation"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -962,7 +962,7 @@
 				le = s.n(de);
 			const me = Object(o.c)({
 					categories: (e, t) => {
-						const s = Object(w.a)(e, t) ? U.db : void 0;
+						const s = Object(w.a)(e, t) ? U.eb : void 0;
 						return Object(G.s)(e, {
 							categoriesOrder: s
 						})
@@ -2400,9 +2400,9 @@
 				x = s("./src/reddit/constants/experiments.ts"),
 				y = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				f = s("./src/reddit/selectors/user.ts");
-			const v = e => Object(f.G)(e) || x.Kb.ShowTopContent === Object(y.c)(e, {
+			const v = e => Object(f.G)(e) || x.Lb.ShowTopContent === Object(y.c)(e, {
 				experimentEligibilitySelector: y.a,
-				experimentName: x.Fb
+				experimentName: x.Gb
 			});
 			var C = s("./src/reddit/selectors/subreddit.ts"),
 				E = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -17052,8 +17052,8 @@
 				d = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				l = e => i.has((Object(a.e)(e) || "").toLowerCase()) || c.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.J,
-					experimentName: n.hb
-				}) === n.ob.Enabled
+					experimentName: n.ib
+				}) === n.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -17226,4 +17226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.dfa5f164b8c04b89c930.js.map
+//# sourceMappingURL=Subreddit.1b6e07f4f25b80602d9e.js.map

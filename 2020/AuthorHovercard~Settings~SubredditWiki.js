@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.791195ced8e45cbad4a8.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.7024f65ff4accd37f631.js
+// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -84,7 +84,7 @@
 				K = r.n(D);
 			const {
 				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = C.a.wrapped(k.a, "BanIcon", K.a), q = C.a.wrapped(S.a, "MuteIcon", K.a), z = C.a.wrapped(B.a, "UnbanIcon", K.a), Y = Object(o.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = C.a.wrapped(k.a, "BanIcon", K.a), Y = C.a.wrapped(S.a, "MuteIcon", K.a), q = C.a.wrapped(B.a, "UnbanIcon", K.a), z = Object(o.c)({
 				hasModMailPermissions: Object(u.a)(F.c.mail),
 				isUserBanned: (e, t) => !!Object(Z.g)(e, {
 					subredditId: t.subredditId,
@@ -116,7 +116,7 @@
 						onClick: () => {
 							a(this.props.user.id), o(_.e(t))
 						}
-					}, s.a.createElement(z, null), R._("Unban User", null, {
+					}, s.a.createElement(q, null), R._("Unban User", null, {
 						hk: "1aASyW"
 					})) : s.a.createElement(A.a, {
 						role: "button",
@@ -130,12 +130,12 @@
 						onClick: () => {
 							i(), o(_.d(t))
 						}
-					}, s.a.createElement(q, null), R._("Mute User", null, {
+					}, s.a.createElement(Y, null), R._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
 			}
-			var Q = Object(a.b)(Y, (e, t) => {
+			var Q = Object(a.b)(z, (e, t) => {
 					let {
 						username: r,
 						subredditId: n,
@@ -765,7 +765,7 @@
 					experimentEligibilitySelector: e => Object(a.J)(e),
 					experimentName: n.N
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Yb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
@@ -785,8 +785,8 @@
 				c = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => d.has((Object(a.e)(e) || "").toLowerCase()) || i.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: o.J,
-					experimentName: n.hb
-				}) === n.ob.Enabled
+					experimentName: n.ib
+				}) === n.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -947,4 +947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.791195ced8e45cbad4a8.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.7024f65ff4accd37f631.js.map

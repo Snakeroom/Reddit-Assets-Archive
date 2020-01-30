@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c402e9f8786267dbad4b.js
-// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e59dd3184c848f143027.js
+// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -328,20 +328,20 @@
 				K = a("./src/reddit/helpers/createEmojiText/index.tsx"),
 				H = a("./src/reddit/icons/fonts/Coin/index.tsx"),
 				Q = a("./src/reddit/components/TimeLeft/index.m.less"),
-				X = a.n(Q),
-				J = a("./src/lib/timeAgo/index.ts"),
-				W = a("./src/reddit/icons/svgs/Clock/index.tsx");
+				J = a.n(Q),
+				W = a("./src/lib/timeAgo/index.ts"),
+				X = a("./src/reddit/icons/svgs/Clock/index.tsx");
 			var z = e => {
 				const {
 					className: t,
 					expirationDate: a
-				} = e, n = Math.floor(a.getTime() / 1e3), r = Object(J.b)(n);
+				} = e, n = Math.floor(a.getTime() / 1e3), r = Object(W.b)(n);
 				return s.a.createElement("div", {
 					className: Object(d.a)(t)
-				}, s.a.createElement(W.a, {
-					className: X.a.clockIcon
+				}, s.a.createElement(X.a, {
+					className: J.a.clockIcon
 				}), s.a.createElement("span", {
-					className: X.a.timeLeft
+					className: J.a.timeLeft
 				}, r))
 			};
 			a("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -1312,9 +1312,9 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.nb
+					experimentName: n.ob
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Yb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
@@ -1326,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.c402e9f8786267dbad4b.js.map
+//# sourceMappingURL=FramedGild~GildModal.e59dd3184c848f143027.js.map

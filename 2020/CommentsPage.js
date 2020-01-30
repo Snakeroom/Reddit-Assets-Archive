@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.47fc0ec587751bbb2487.js
-// Retrieved at 1/30/2020, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7bcccf969c58d0927df7.js
+// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ChatPost~ModQueuePages"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -13345,7 +13345,7 @@
 					experimentEligibilitySelector: e => Object(r.J)(e),
 					experimentName: n.J
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Yb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
@@ -13365,8 +13365,8 @@
 				c = e => i.has(e.toLowerCase()) || d.has(e.toLowerCase()),
 				l = e => i.has((Object(r.e)(e) || "").toLowerCase()) || d.has((Object(r.e)(e) || "").toLowerCase()) && Object(o.c)(e, {
 					experimentEligibilitySelector: a.J,
-					experimentName: n.hb
-				}) === n.ob.Enabled
+					experimentName: n.ib
+				}) === n.pb.Enabled
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
 			"use strict";
@@ -13378,9 +13378,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.nb
+					experimentName: n.ob
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Yb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -13554,4 +13554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.47fc0ec587751bbb2487.js.map
+//# sourceMappingURL=CommentsPage.7bcccf969c58d0927df7.js.map
