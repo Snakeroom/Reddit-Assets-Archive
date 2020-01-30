@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a05c1b7cfa1319d8b895.js
-// Retrieved at 1/30/2020, 3:20:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3fd51cf0666036247da5.js
+// Retrieved at 1/30/2020, 4:10:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -11532,7 +11532,7 @@
 						e.isSponsored && (Object(k.a)(e.events, D.a.Impression), t(ue({
 							postId: e.id
 						})))
-					})(e)), void(e.isBlank || N.h(r(), e.id))) : void n((e => async t => {
+					})(e)), void(e.isBlank || N.h(r(), e.postId))) : void n((e => async t => {
 						e.isSponsored && (Object(k.a)(e.events, D.a.ViewableImpression), t(le({
 							postId: e.id
 						})))
@@ -69578,4 +69578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a05c1b7cfa1319d8b895.js.map
+//# sourceMappingURL=Governance~Reddit.3fd51cf0666036247da5.js.map
