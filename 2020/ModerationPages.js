@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a5ce85a53ada9387bfe0.js
-// Retrieved at 1/30/2020, 12:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e6e0b3d14c36c9045b92.js
+// Retrieved at 1/30/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -9971,29 +9971,6 @@
 					}
 				}))
 			}
-		},
-		"./src/reddit/components/RawHTMLDisplay/Listing.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				o = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				r = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				i = s("./src/reddit/components/RawHTMLDisplay/index.tsx");
-
-			function c() {
-				return (c = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = Object(o.a)(e => a.a.createElement(i.a, c({
-				style: {
-					color: Object(r.a)(e).post
-				}
-			}, e)))
 		},
 		"./src/reddit/components/RemovalReasons/AddRemovalReasonModal/RemovalReasonsDropdown.m.less": function(e, t, s) {
 			e.exports = {
@@ -25763,7 +25740,7 @@
 				}
 			}
 			var ax = Object(nt.a)(sx(nx)),
-				ox = s("./src/reddit/components/RawHTMLDisplay/Listing.tsx"),
+				ox = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				rx = s("./src/reddit/components/RichTextJson/index.tsx"),
 				ix = s("./src/lib/humanizeUTCDate/index.tsx");
 			var cx = (e, t) => {
@@ -28672,4 +28649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.a5ce85a53ada9387bfe0.js.map
+//# sourceMappingURL=ModerationPages.e6e0b3d14c36c9045b92.js.map
