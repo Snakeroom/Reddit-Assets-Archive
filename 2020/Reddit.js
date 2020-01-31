@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9f21313b7a7dd74252b3.js
-// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e9e17e6fe5e0f2e477ba.js
+// Retrieved at 1/30/2020, 7:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -7706,40 +7706,33 @@
 				}
 			};
 			var Ce = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				Pe = s("./node_modules/lodash/isEqual.js"),
-				ve = s.n(Pe),
-				ye = s("./node_modules/lodash/xorWith.js"),
-				Ee = s.n(ye),
-				Oe = (e, t) => {
-					const s = Ee()(e, t, ve.a);
-					return !(!s || 0 !== s.length)
-				},
-				je = s("./src/reddit/helpers/localStorage/index.ts"),
-				we = s("./src/reddit/helpers/name/index.ts"),
-				Se = s("./src/reddit/helpers/trackers/searchResults.ts"),
-				Me = s("./src/reddit/i18n/utils.ts"),
-				Ne = s("./src/reddit/selectors/category.ts"),
-				Ie = s("./src/reddit/selectors/experiments/categories.ts"),
-				ke = s("./src/reddit/selectors/experiments/searchFix.ts"),
-				_e = s("./src/reddit/selectors/experiments/trending.ts"),
-				Te = s("./src/reddit/constants/experiments.ts"),
-				Le = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				Re = s("./src/reddit/selectors/user.ts");
-			const Ae = e => Object(Re.G)(e) || Te.Ub.Treatment1 === Object(Le.c)(e, {
-				experimentEligibilitySelector: Le.a,
-				experimentName: Te.Rb
+				Pe = s("./src/reddit/helpers/isArrayEqual.ts"),
+				ve = s("./src/reddit/helpers/localStorage/index.ts"),
+				ye = s("./src/reddit/helpers/name/index.ts"),
+				Ee = s("./src/reddit/helpers/trackers/searchResults.ts"),
+				Oe = s("./src/reddit/i18n/utils.ts"),
+				je = s("./src/reddit/selectors/category.ts"),
+				we = s("./src/reddit/selectors/experiments/categories.ts"),
+				Se = s("./src/reddit/selectors/experiments/searchFix.ts"),
+				Me = s("./src/reddit/selectors/experiments/trending.ts"),
+				Ne = s("./src/reddit/constants/experiments.ts"),
+				Ie = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				ke = s("./src/reddit/selectors/user.ts");
+			const _e = e => Object(ke.G)(e) || Ne.Ub.Treatment1 === Object(Ie.c)(e, {
+				experimentEligibilitySelector: Ie.a,
+				experimentName: Ne.Rb
 			});
-			var Fe = s("./src/reddit/selectors/platform.ts"),
-				De = s("./src/reddit/selectors/searchResults.ts"),
-				Be = s("./src/reddit/selectors/tooltip.ts"),
-				Ue = s("./src/reddit/selectors/trending.ts"),
-				He = s("./src/reddit/controls/Search/index.m.less"),
-				Ve = s.n(He);
-			const Qe = Object(de.t)({
+			var Te = s("./src/reddit/selectors/platform.ts"),
+				Le = s("./src/reddit/selectors/searchResults.ts"),
+				Re = s("./src/reddit/selectors/tooltip.ts"),
+				Ae = s("./src/reddit/selectors/trending.ts"),
+				Fe = s("./src/reddit/controls/Search/index.m.less"),
+				De = s.n(Fe);
+			const Be = Object(de.t)({
 					searchQuery: de.U,
 					pageLayer: e => e
 				}),
-				qe = (e, t, s) => e(e => Object.assign({}, Object(Se.b)(e), {
+				Ue = (e, t, s) => e(e => Object.assign({}, Object(Ee.b)(e), {
 					source: "search",
 					action: "click",
 					noun: t,
@@ -7747,28 +7740,28 @@
 					actionInfo: N.actionInfo(e),
 					search: N.search(e, s)
 				})),
-				We = Object(c.b)(() => Object(l.c)({
-					categoriesLoaded: Ne.i,
-					categoriesNameToId: Ne.k,
-					currentSubredditName: Fe.e,
-					currentUser: Re.i,
-					dropdownIsOpen: Object(Be.b)(se),
-					typeaheadIdsByQuery: De.c,
-					isInCategoriesExperiment: Ie.a,
-					isInTrendingExperiment: _e.a,
-					isInTypeaheadExperiment: Ae,
-					isLoggedIn: Re.J,
+				He = Object(c.b)(() => Object(l.c)({
+					categoriesLoaded: je.i,
+					categoriesNameToId: je.k,
+					currentSubredditName: Te.e,
+					currentUser: ke.i,
+					dropdownIsOpen: Object(Re.b)(se),
+					typeaheadIdsByQuery: Le.c,
+					isInCategoriesExperiment: we.a,
+					isInTrendingExperiment: Me.a,
+					isInTypeaheadExperiment: _e,
+					isLoggedIn: ke.J,
 					isSearchFixActiveVariant: e => {
-						const t = Object(ke.c)(e);
-						return Object(ke.b)(t)
+						const t = Object(Se.c)(e);
+						return Object(Se.b)(t)
 					},
-					isSubredditSearchAllowed: ke.f,
-					language: Re.S,
+					isSubredditSearchAllowed: Se.f,
+					language: ke.S,
 					multireddit: de.d,
-					routeName: Fe.r,
+					routeName: Te.r,
 					subreddit: de.q,
-					trendingItems: Ue.a,
-					typeaheadSuggestions: De.i
+					trendingItems: Ae.a,
+					typeaheadSuggestions: Le.i
 				}), (e, t) => ({
 					fetchTrendingItems: () => e(Object(x.b)()),
 					onChange: t => e(Object(f.j)({
@@ -7821,23 +7814,23 @@
 					onFocusSearchBar: () => {
 						Object(Ce.c)(Ce.a.SearchResults) || Object(Ce.d)(Ce.a.SearchResults);
 						const e = s.searchOptions || Object(b.c)({});
-						qe(s.sendEvent, N.OriginElement.SearchBar, e)
+						Ue(s.sendEvent, N.OriginElement.SearchBar, e)
 					}
 				})),
-				Ge = e => {
+				Ve = e => {
 					let {
 						isSearchFixActiveVariant: t,
 						language: s,
 						multireddit: n,
 						subreddit: a
 					} = e;
-					return t ? Object(Me.c)("Search") : a ? Object(p.a)(s, "header.searchSubreddit", {
+					return t ? Object(Oe.c)("Search") : a ? Object(p.a)(s, "header.searchSubreddit", {
 						subreddit: a.name
 					}) : n ? Object(p.a)(s, "header.searchMultireddit", {
 						multireddit: n.name
-					}) : Object(Me.c)("Search Reddit")
+					}) : Object(Oe.c)("Search Reddit")
 				};
-			class ze extends i.a.Component {
+			class Qe extends i.a.Component {
 				constructor(e) {
 					super(e), this.container = null, this.makeCategoriesApiRequest = async e => {
 						const t = await Object(le.a)(this.props.apiContext());
@@ -7883,7 +7876,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(je.D)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(ve.D)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -7893,7 +7886,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(je.Y)(Object.assign({}, e, {
+							recentSearches: Object(ve.Y)(Object.assign({}, e, {
 								section: M.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -7929,7 +7922,7 @@
 									}
 								}
 							}
-							this.props.isInCategoriesExperiment && this.props.categoriesLoaded && (t = this.props.categoriesNameToId[Object(we.f)(s.searchQuery)]), t || this.onSetRecentSearch(s), this.props.onSearch(e, s, t), this.onClearSearchQuery()
+							this.props.isInCategoriesExperiment && this.props.categoriesLoaded && (t = this.props.categoriesNameToId[Object(ye.f)(s.searchQuery)]), t || this.onSetRecentSearch(s), this.props.onSearch(e, s, t), this.onClearSearchQuery()
 						}
 					}, this.onClearSearchQuery = () => {
 						this.setState({
@@ -7944,7 +7937,7 @@
 							structureType: s,
 							searchQuery: this.props.searchQuery
 						};
-						this.props.sendEvent(Object(Se.l)(n, a))
+						this.props.sendEvent(Object(Ee.l)(n, a))
 					}, this.onSendDropdownViewEvent = (e, t, s, n) => {
 						const a = {
 							displayQuery: s,
@@ -7952,7 +7945,7 @@
 							searchQuery: this.props.searchQuery,
 							structureType: t
 						};
-						this.props.sendEvent(Object(Se.m)(e, a))
+						this.props.sendEvent(Object(Ee.m)(e, a))
 					}, this.onKeyDown = e => {
 						if (e.key === ie.b.Escape && this.close(), e.key === ie.b.Tab && this.close(), e.key === ie.b.ArrowDown) {
 							if (e.preventDefault(), 0 === this.state.itemList.length || !this.props.dropdownIsOpen) return;
@@ -7981,7 +7974,7 @@
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (this.props.dropdownIsOpen || !this.props.subreddit) {
 							if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser && !this.props.subreddit) {
-								const e = Object(je.w)(this.props.currentUser.id);
+								const e = Object(ve.w)(this.props.currentUser.id);
 								e.length > 0 && (this.setState({
 									recentSearches: this.props.isLoggedIn ? e : [],
 									itemList: [...e, ...this.props.trendingItems]
@@ -7996,7 +7989,7 @@
 					}, this.onFormSubmit = e => {
 						e.preventDefault(), this.onSearch(e);
 						const t = this.props.searchOptions || Object(b.c)({});
-						t.q || (t.q = this.state.searchQuery), qe(this.props.sendEvent, "full_search_button", t)
+						t.q || (t.q = this.state.searchQuery), Ue(this.props.sendEvent, "full_search_button", t)
 					}, this.state = {
 						fetchedTrending: !1,
 						focusedItemIndex: -1,
@@ -8009,8 +8002,8 @@
 					}
 				}
 				componentDidUpdate(e) {
-					const t = Oe(e.typeaheadSuggestions, this.props.typeaheadSuggestions),
-						s = Oe(e.trendingItems, this.props.trendingItems);
+					const t = Object(Pe.a)(e.typeaheadSuggestions, this.props.typeaheadSuggestions),
+						s = Object(Pe.a)(e.trendingItems, this.props.trendingItems);
 					if (this.props.searchQuery !== e.searchQuery || !t || !s) {
 						const n = this.props.typeaheadSuggestions.length ? this.props.typeaheadSuggestions : [...this.state.recentSearches, ...this.props.trendingItems];
 						this.setState(() => {
@@ -8031,16 +8024,16 @@
 						state: t
 					} = this;
 					return i.a.createElement("div", {
-						className: Object(h.a)(Ve.a.relativeWrapper, X.a.container, e.className, {
+						className: Object(h.a)(De.a.relativeWrapper, X.a.container, e.className, {
 							"m-open": this.props.dropdownIsOpen
 						}),
 						id: se,
 						ref: this.setContainerRef
 					}, i.a.createElement("label", {
-						className: Ve.a.iconContainer,
+						className: De.a.iconContainer,
 						htmlFor: "header-search-bar"
 					}, i.a.createElement(S.a, {
-						className: Ve.a.icon
+						className: De.a.icon
 					})), i.a.createElement("form", {
 						action: "/search/",
 						autoComplete: "off",
@@ -8051,12 +8044,12 @@
 					}, i.a.createElement("input", {
 						id: "header-search-bar",
 						name: "q",
-						className: Ve.a.input,
+						className: De.a.input,
 						onChange: this.onChange,
 						onClick: this.toggleDropdownAndGetTrending,
 						onKeyDown: this.onKeyDown,
 						key: e.searchQuery,
-						placeholder: Ge(e),
+						placeholder: Ve(e),
 						type: "search",
 						value: this.state.searchQuery
 					})), !e.subreddit && i.a.createElement(re, {
@@ -8081,7 +8074,7 @@
 					}))
 				}
 			}
-			t.a = Object(oe.b)(Qe(Object(ce.b)(We(ze))))
+			t.a = Object(oe.b)(Be(Object(ce.b)(He(Qe))))
 		},
 		"./src/reddit/controls/ToggleSwitch/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -11015,8 +11008,12 @@
 		},
 		"./src/reddit/routes/moderationPages/index.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
-				return u
+			s.d(t, "d", (function() {
+				return d
+			})), s.d(t, "b", (function() {
+				return l
+			})), s.d(t, "c", (function() {
+				return h
 			}));
 			var n = s("./node_modules/core-js/modules/web.dom.iterable.js"),
 				a = s.n(n),
@@ -11024,7 +11021,9 @@
 				o = s("./node_modules/react-router/esm/react-router.js"),
 				i = s("./src/lib/constants/index.ts");
 			const c = Object.keys(i.Nb).map(e => i.Nb[e]).join("|"),
-				d = Object(r.a)({
+				d = e => "/".concat(e, "/about/scheduledposts"),
+				l = e => "/".concat(e, "/about/eventposts"),
+				m = Object(r.a)({
 					resolved: {},
 					chunkName: () => "ModerationPages",
 					isReady(e) {
@@ -11044,26 +11043,26 @@
 						return "./src/reddit/pages/ModHub/index.tsx"
 					}
 				}),
-				l = ["/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(revisions|wikibanned|wikicontributors)", "/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(edit|create|settings|revisions)/:wikiPageName+", "/r/:subredditName/about/:pageName(wiki)/:wikiPageName*"],
-				m = ["/r/:subredditName/about", "/r/:subredditName/about/:pageName(".concat(c, ")"), ...l],
-				u = e => !!Object(o.h)(e, {
+				u = ["/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(revisions|wikibanned|wikicontributors)", "/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(edit|create|settings|revisions)/:wikiPageName+", "/r/:subredditName/about/:pageName(wiki)/:wikiPageName*"],
+				p = ["/r/:subredditName/about", "/r/:subredditName/about/:pageName(".concat(c, ")"), ...u],
+				h = e => !!Object(o.h)(e, {
 					path: "/r/:subredditName/about"
 				}),
-				p = {
+				b = {
 					action: e => async (t, n, a) => {
 						const r = await Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), s.e("vendors~ModerationPages~SubredditWiki"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~20a7252d"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~f56e25d5"), s.e("CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4"), s.e("ModerationPages")]).then(s.bind(null, "./src/reddit/actions/pages/moderationPages/index.ts")).then(e => e.moderationPageRequested);
 						await r(e)(t, n, a)
 					},
 					chunk: i.o.MODERATION_PAGES,
-					component: d,
+					component: m,
 					exact: !0,
 					meta: {
 						name: i.yb.MODERATION_PAGES
 					},
-					path: m,
+					path: p,
 					prefetches: [i.o.SUBREDDIT]
 				};
-			t.a = p
+			t.a = b
 		},
 		"./src/reddit/routes/multireddit/index.ts": function(e, t, s) {
 			"use strict";
@@ -11797,7 +11796,7 @@
 				i = s("./src/reddit/routes/moderationPages/index.ts");
 			t.a = (e, t) => {
 				const s = t.wikiSubRoute === r.l.Settings,
-					n = Object(o.a)(t, Object(i.b)(e) || s),
+					n = Object(o.a)(t, Object(i.c)(e) || s),
 					c = a.a.parse(e);
 				return (c.pathname || "").replace(/\/$/, "") !== n ? (c.pathname = n, a.a.format(c)) : e
 			}
@@ -12015,4 +12014,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.9f21313b7a7dd74252b3.js.map
+//# sourceMappingURL=Reddit.e9e17e6fe5e0f2e477ba.js.map

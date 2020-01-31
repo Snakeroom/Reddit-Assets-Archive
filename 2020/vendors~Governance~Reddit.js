@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.2d68f26c0aacc9d5e950.js
-// Retrieved at 1/22/2020, 4:32:02 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.7dc4f7a2035aa6ab9ac5.js
+// Retrieved at 1/30/2020, 7:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, n, o) {
@@ -276,7 +276,7 @@
 						} else _.c = [_.e = 0]
 					}
 
-					function V(e, n, o, s) {
+					function W(e, n, o, s) {
 						var r, t, i, a, u;
 						if (null == o ? o = T : b(o, 0, 8), !e.c) return e.toString();
 						if (r = e.c[0], i = e.e, null == n) u = g(e.c), u = 1 == s || 2 == s && i <= M ? O(u, i) : x(u, i, "0");
@@ -291,7 +291,7 @@
 						return e.s < 0 && r ? "-" + u : u
 					}
 
-					function W(e, n) {
+					function V(e, n) {
 						var o, s, r = 0;
 						for (w(e[0]) && (e = e[0]), o = new G(e[0]); ++r < e.length;) {
 							if (!(s = new G(e[r])).s) {
@@ -385,9 +385,9 @@
 					}, G.isBigNumber = function(e) {
 						return e instanceof G || e && !0 === e._isBigNumber || !1
 					}, G.maximum = G.max = function() {
-						return W(arguments, I.lt)
+						return V(arguments, I.lt)
 					}, G.minimum = G.min = function() {
-						return W(arguments, I.gt)
+						return V(arguments, I.gt)
 					}, G.random = (t = 9007199254740992 * Math.random() & 2097151 ? function() {
 						return u(9007199254740992 * Math.random())
 					} : function() {
@@ -669,9 +669,9 @@
 									d += 4, u += 4, r = 1
 								} return X(s, s.e + C + 1, T, e)
 					}, I.toExponential = function(e, n) {
-						return null != e && (b(e, 0, v), e++), V(this, e, n, 1)
+						return null != e && (b(e, 0, v), e++), W(this, e, n, 1)
 					}, I.toFixed = function(e, n) {
-						return null != e && (b(e, 0, v), e = e + this.e + 1), V(this, e, n)
+						return null != e && (b(e, 0, v), e = e + this.e + 1), W(this, e, n)
 					}, I.toFormat = function(e, n) {
 						var o = this.toFixed(e, n);
 						if (this.c) {
@@ -701,7 +701,7 @@
 					}, I.toNumber = function() {
 						return +this
 					}, I.toPrecision = function(e, n) {
-						return null != e && b(e, 1, v), V(this, e, n, 2)
+						return null != e && b(e, 1, v), W(this, e, n, 2)
 					}, I.toString = function(e) {
 						var n, o = this,
 							r = o.s,
@@ -1575,6 +1575,18 @@
 				}));
 			e.exports = a
 		},
+		"./node_modules/lodash/xorWith.js": function(e, n, o) {
+			var s = o("./node_modules/lodash/_arrayFilter.js"),
+				r = o("./node_modules/lodash/_baseRest.js"),
+				t = o("./node_modules/lodash/_baseXor.js"),
+				i = o("./node_modules/lodash/isArrayLikeObject.js"),
+				a = o("./node_modules/lodash/last.js"),
+				u = r((function(e) {
+					var n = a(e);
+					return n = "function" == typeof n ? n : void 0, t(s(e, i), void 0, n)
+				}));
+			e.exports = u
+		},
 		"./node_modules/path-browserify/index.js": function(e, n, o) {
 			(function(e) {
 				function o(e, n) {
@@ -1718,4 +1730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Governance~Reddit.2d68f26c0aacc9d5e950.js.map
+//# sourceMappingURL=vendors~Governance~Reddit.7dc4f7a2035aa6ab9ac5.js.map
