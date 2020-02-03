@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6850be9ca8a944cf709a.js
-// Retrieved at 2/3/2020, 2:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a2fc09ccd23082d80693.js
+// Retrieved at 2/3/2020, 2:40:16 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, r, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) r = n[l], Object.prototype.hasOwnProperty.call(d, r) && d[r] && P.push(d[r][0]), d[r] = 0;
@@ -892,7 +892,7 @@
 						MembershipPaywallPage: "4da92ec6702acb136608",
 						FlairEdit: "3a235d767cfad066b8d5",
 						"vendors~Chat~RedesignChat": "1e07342f205c421b2b97",
-						"Chat~RedesignChat": "7e43110a281377317cd0",
+						"Chat~RedesignChat": "6e26b9198167a6981253",
 						RedesignChat: "3fbabf741ffe6bafe658",
 						"vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~61cbc843": "3418b2a2f71e10177228",
 						CoinsPurchaseModal: "30ab1cf59ac98965dd92",
@@ -975,7 +975,7 @@
 						EmotesTooltip: "e2c99cbbe82d944d26a9",
 						GifTooltip: "e6c20e798fc094d36ade",
 						SubredditPremiumBlockchainCheckoutModal: "9f77d4da5197db01b88f",
-						ChatEmpty: "7776743c9d719c6f7c2a",
+						ChatEmpty: "13652d9a195314d8f44d",
 						ChatMinimize: "9ce99e36f85f623ea5b8",
 						ChatPage: "1d2649ede5b1f5e14d54",
 						ChatReportFlow: "2c7f07b94162e20f0bf1",
@@ -1064,4 +1064,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.6850be9ca8a944cf709a.js.map
+//# sourceMappingURL=runtime~Reddit.a2fc09ccd23082d80693.js.map
