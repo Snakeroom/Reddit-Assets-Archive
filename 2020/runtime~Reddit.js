@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f90d2a6b8a4a40a13491.js
-// Retrieved at 2/3/2020, 4:20:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f593cb6b362e0d667a88.js
+// Retrieved at 2/3/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, r, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) r = n[l], Object.prototype.hasOwnProperty.call(d, r) && d[r] && P.push(d[r][0]), d[r] = 0;
@@ -837,18 +837,18 @@
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5": "da993ef3c5073441c709",
 						CollectionCommentsPage: "b04d25388f5ead69a5bc",
 						CommentsPage: "957bffbe539ca29e50bb",
-						Frontpage: "42b3574cc998bdc47b05",
+						Frontpage: "a2b8b926275cd4c5e9ab",
 						ProfileComments: "0a808061b03166318c89",
 						ProfileOverview: "315604ab2220d655efed",
 						ProfilePrivate: "55cee08fb2a9dc164794",
-						SearchResults: "83f65b5b14e3249a038f",
+						SearchResults: "0a1e43b1219ff8f22f74",
 						"ChatPost~ModQueuePages": "a904173f23244ed72d95",
 						"ModQueue~ModQueuePages": "38b7f077b2280d31edd9",
 						ModQueuePages: "4eec96af94f0cdab7267",
 						Coins: "4f1f8513616c4a7ff7ee",
 						CoinsMobile: "9076d1ef91ff2fc01f76",
 						"Explore~Multireddit": "6a41de086a0e328fe290",
-						Explore: "b3168691a769befb837e",
+						Explore: "bf1170b41f363eeb2914",
 						GovernanceReleaseNotesModal: "c86a5273566cdc53599d",
 						"ModListing~Multireddit~ProfilePosts": "9e1f2ec7d5dbfb375a96",
 						Multireddit: "fbd9a18a77f10c488073",
@@ -891,7 +891,7 @@
 						RichTextJsonEmoteTooltip: "be65e4ab52bbe5cec0e2",
 						SpezModalLoader: "42241ba23ac70d37f9e0",
 						SubredditHovercard: "6dc712ecd8609a449aa7",
-						SubredditLeaderboard: "81e105edcdf0d51b8d8c",
+						SubredditLeaderboard: "73e8318e557c7f7370e3",
 						SubredditMentionWithIcon: "8f0a1b4b41a30bb9e0be",
 						SubredditPremiumPurchaseModal: "d938ec1a1c1c63d4f345",
 						UserDataRequestPage: "9ca36f2afa74a3c95c17",
@@ -940,7 +940,7 @@
 						"vendors~PublicAccessNetwork": "137881f9d17af562346f",
 						PublicAccessNetwork: "6ae552893ae3811b05e3",
 						"vendors~Subreddit": "9810fcd6fc95c281b11f",
-						Subreddit: "3aaa8ca8f0c7b2eb0444",
+						Subreddit: "10c68897e1fe543b0b60",
 						"vendors~css-vars-ponyfill": "e873f2d6dbf1a4683b13",
 						"vendors~dashjs": "ea4a5615e62a98ef98b2",
 						AuthorHovercard: "b62b97e65e3ae253570c",
@@ -961,7 +961,7 @@
 						ChatPost: "e5fd59395d1d7a73f7d4",
 						EconomicsTopTippersPostLeaderboard: "5b15769770e4ff5ef92f",
 						HarbergerTaxBannerPurchaseCTA: "4d98a11d8dcfaef88d3f",
-						IdCard: "d9957f131d167bf74c21",
+						IdCard: "0a981fd8b8cf834a14ab",
 						ReportFlow: "12f86b44d08eb95c57f7",
 						"reddit-components-Governance-Leaderboard": "7215b5b161060fd2a6ab",
 						"reddit-components-Governance-Proposal": "550384cac234bbb84678",
@@ -976,13 +976,13 @@
 						EconomicsEntryPointsPostFlatlistSupportCTA: "16b57955085dd6623ca8",
 						editCollectionModal: "d8a07a4b1927fc5c25be",
 						"vendors~CryptoLibEthers": "653da795909edd8c198d",
-						CategoriesNavigation: "ee4045f3f16cac931767",
+						CategoriesNavigation: "d03c33fa8a35ce1956bd",
 						CommunityCrossPollinationFocusedVertical: "86dfa39ed0550e1229bc",
 						RpanListingUnit: "894a222b23765250de6a",
 						Trending: "3db2e737b8e8558504e9",
 						"reddit-components-InFeedPostCreation": "52bf6be74b29ff11ec1b",
 						"reddit-components-TabBadger-Component": "6166a2f8eb4c676c6667",
-						"reddit-pages-Topic-SidebarLeft-index": "eea5bc3df83129dea6e6",
+						"reddit-pages-Topic-SidebarLeft-index": "3565d121672353e971c0",
 						"InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit": "150d5c69dc4442555a15",
 						InFeedChaining: "8b60f98e7dd5f8806755",
 						"reddit-components-BlankPost": "0345c951ed320351640a",
@@ -1079,4 +1079,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.f90d2a6b8a4a40a13491.js.map
+//# sourceMappingURL=runtime~Reddit.f593cb6b362e0d667a88.js.map

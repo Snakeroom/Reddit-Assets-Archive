@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3aaa8ca8f0c7b2eb0444.js
-// Retrieved at 2/3/2020, 3:30:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.10c68897e1fe543b0b60.js
+// Retrieved at 2/3/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "Explore~Multireddit", "SubredditLeaderboard~Topic", "CategoriesNavigation"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -954,7 +954,7 @@
 			const me = Object(a.c)({
 					categories: (e, t) => {
 						const s = Object(S.a)(e, t) ? U.eb : void 0;
-						return Object(G.s)(e, {
+						return Object(G.r)(e, {
 							categoriesOrder: s
 						})
 					},
@@ -14237,4 +14237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.3aaa8ca8f0c7b2eb0444.js.map
+//# sourceMappingURL=Subreddit.10c68897e1fe543b0b60.js.map

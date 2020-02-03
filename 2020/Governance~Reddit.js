@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0653a9983e1f64fdf69c.js
-// Retrieved at 2/3/2020, 4:20:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.810047bf2074a0b73d3a.js
+// Retrieved at 2/3/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1331,115 +1331,135 @@
 		},
 		"./src/reddit/actions/category.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return b
-			})), n.d(t, "b", (function() {
-				return p
-			})), n.d(t, "a", (function() {
-				return m
-			})), n.d(t, "l", (function() {
-				return g
-			})), n.d(t, "h", (function() {
-				return h
-			})), n.d(t, "g", (function() {
-				return y
-			})), n.d(t, "f", (function() {
-				return j
-			})), n.d(t, "e", (function() {
-				return _
-			})), n.d(t, "i", (function() {
-				return I
-			})), n.d(t, "j", (function() {
-				return T
-			})), n.d(t, "d", (function() {
-				return C
-			})), n.d(t, "k", (function() {
-				return w
-			}));
 			var r = n("./node_modules/lodash/isEmpty.js"),
 				s = n.n(r),
 				o = n("./node_modules/react-router-redux/es/index.js"),
 				i = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/reddit/constants/categories.tsx"),
-				a = n("./src/reddit/endpoints/category/categoryList.ts"),
-				d = n("./src/reddit/endpoints/category/subreddits.ts"),
-				u = n("./src/reddit/helpers/localStorage/index.ts"),
-				l = n("./src/reddit/selectors/category.ts");
-			const b = "CATEGORY__LIST_PENDING",
-				p = "CATEGORY__LIST_LOADED",
-				m = "CATEGORY__LIST_FAILED",
-				f = Object(i.a)(b),
-				g = Object(i.a)(p),
-				O = Object(i.a)(m),
-				h = () => async (e, t, n) => {
+				a = n("./src/lib/constants/index.ts"),
+				d = n("./src/lib/makeApiRequest/index.ts"),
+				u = n("./src/lib/omitHeaders/index.ts"),
+				l = n("./src/reddit/constants/headers.ts");
+			var b = n("./src/reddit/endpoints/category/subreddits.ts"),
+				p = n("./src/reddit/helpers/localStorage/index.ts"),
+				m = n("./src/reddit/selectors/category.ts");
+			n.d(t, "c", (function() {
+				return f
+			})), n.d(t, "b", (function() {
+				return g
+			})), n.d(t, "a", (function() {
+				return O
+			})), n.d(t, "h", (function() {
+				return _
+			})), n.d(t, "g", (function() {
+				return E
+			})), n.d(t, "f", (function() {
+				return v
+			})), n.d(t, "e", (function() {
+				return S
+			})), n.d(t, "i", (function() {
+				return x
+			})), n.d(t, "j", (function() {
+				return w
+			})), n.d(t, "d", (function() {
+				return P
+			})), n.d(t, "k", (function() {
+				return A
+			}));
+			const f = "CATEGORY__LIST_PENDING",
+				g = "CATEGORY__LIST_LOADED",
+				O = "CATEGORY__LIST_FAILED",
+				h = Object(i.a)(f),
+				y = Object(i.a)(g),
+				j = Object(i.a)(O),
+				_ = () => async (e, t, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const s = t(),
-						o = Object(l.j)(s),
-						i = Object(l.i)(s);
+						o = Object(m.j)(s),
+						i = Object(m.i)(s);
 					if (o || i) return;
-					e(f());
-					const c = await Object(a.a)(r());
-					if (c.ok) {
+					e(h());
+					const b = await (e => Object(d.b)(Object(u.a)(e, [l.a]), {
+						endpoint: "".concat(e.apiUrl, "/api/available_subreddit_categories.json?use_extended_categories=true"),
+						method: a.bb.GET
+					}))(r());
+					if (b.ok) {
 						const {
 							categories: t,
 							categoryIds: n
-						} = Object(a.b)(c.body);
-						e(g({
+						} = (e => {
+							const t = {},
+								n = [];
+							return e.forEach((e, r) => {
+								const s = {
+									attr: e.category_attr,
+									color: e.category_color || c.a[r % c.a.length],
+									icon: e.category_icon,
+									id: e.category_id,
+									name: e.category_name
+								};
+								n.push(s.id), t[s.id] = s
+							}), {
+								categories: t,
+								categoryIds: n
+							}
+						})(b.body);
+						e(y({
 							categories: t,
 							categoryIds: n
 						}))
-					} else e(O(c.error))
-				}, y = "CATEGORY__SUBREDDITS_PENDING", j = "CATEGORY__SUBREDDITS_LOADED", _ = "CATEGORY__SUBREDDITS_FAILED", E = Object(i.a)(y), v = Object(i.a)(j), S = Object(i.a)(_), I = (e, t) => async (n, r, s) => {
+					} else e(j(b.error))
+				}, E = "CATEGORY__SUBREDDITS_PENDING", v = "CATEGORY__SUBREDDITS_LOADED", S = "CATEGORY__SUBREDDITS_FAILED", I = Object(i.a)(E), T = Object(i.a)(v), C = Object(i.a)(S), x = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: o
 					} = s;
 					const i = r(),
-						c = Object(l.o)(i, {
+						c = Object(m.n)(i, {
 							id: e
 						}),
-						a = Object(l.n)(i, {
+						a = Object(m.m)(i, {
 							id: e
 						});
 					if (c || a) return;
-					n(E({
+					n(I({
 						categoryId: e
 					}));
-					const u = await Object(d.a)(o(), e, t);
-					if (u.ok) {
-						const t = Object(d.b)(u.body);
-						n(v(Object.assign({
+					const d = await Object(b.a)(o(), e, t);
+					if (d.ok) {
+						const t = Object(b.b)(d.body);
+						n(T(Object.assign({
 							categoryId: e
 						}, t)))
-					} else n(S({
+					} else n(C({
 						categoryId: e,
-						error: u.error
+						error: d.error
 					}))
-				}, T = e => async (t, n, r) => {
+				}, w = e => async (t, n, r) => {
 					let {
 						apiContext: i
 					} = r;
-					await t(I(e));
+					await t(x(e));
 					const a = n(),
-						d = Object(l.m)(a, {
+						d = Object(m.l)(a, {
 							id: e
 						});
 					if (!d) return;
 					const {
 						name: u
-					} = d, b = Object(l.c)()(a, {
+					} = d, l = Object(m.c)()(a, {
 						categoryName: u
 					});
-					s()(b) || t(Object(o.b)(Object(c.e)(b)))
-				}, C = "CATEGORY__RANK_SET", x = Object(i.a)(C), w = e => async (t, n) => {
-					const r = Object(l.l)(n(), {
+					s()(l) || t(Object(o.b)(Object(c.e)(l)))
+				}, P = "CATEGORY__RANK_SET", D = Object(i.a)(P), A = e => async (t, n) => {
+					const r = Object(m.k)(n(), {
 						id: e
 					});
-					t(x({
+					t(D({
 						categoryId: e,
 						rank: r + 1
-					})), Object(u.G)(Object(l.g)(n()))
+					})), Object(p.G)(Object(m.g)(n()))
 				}
 		},
 		"./src/reddit/actions/chat/constants.ts": function(e, t, n) {
@@ -27875,38 +27895,6 @@
 				},
 				endpoint: "".concat(e.apiUrl, "/api/remove_whitelisted"),
 				method: r.bb.POST
-			})
-		},
-		"./src/reddit/endpoints/category/categoryList.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return a
-			}));
-			var r = n("./src/lib/constants/index.ts"),
-				s = n("./src/lib/makeApiRequest/index.ts"),
-				o = n("./src/lib/omitHeaders/index.ts"),
-				i = n("./src/reddit/constants/categories.tsx"),
-				c = n("./src/reddit/constants/headers.ts");
-			const a = e => {
-				const t = {},
-					n = [];
-				return e.forEach((e, r) => {
-					const s = {
-						attr: e.category_attr,
-						color: e.category_color || i.a[r % i.a.length],
-						icon: e.category_icon,
-						id: e.category_id,
-						name: e.category_name
-					};
-					n.push(s.id), t[s.id] = s
-				}), {
-					categories: t,
-					categoryIds: n
-				}
-			};
-			t.a = e => Object(s.b)(Object(o.a)(e, [c.a]), {
-				endpoint: "".concat(e.apiUrl, "/api/available_subreddit_categories.json?use_extended_categories=true"),
-				method: r.bb.GET
 			})
 		},
 		"./src/reddit/endpoints/category/subreddits.ts": function(e, t, n) {
@@ -62144,40 +62132,38 @@
 				return p
 			})), n.d(t, "j", (function() {
 				return m
-			})), n.d(t, "n", (function() {
-				return f
-			})), n.d(t, "o", (function() {
-				return g
 			})), n.d(t, "m", (function() {
+				return f
+			})), n.d(t, "n", (function() {
+				return g
+			})), n.d(t, "l", (function() {
 				return O
-			})), n.d(t, "k", (function() {
-				return h
 			})), n.d(t, "h", (function() {
-				return y
+				return h
 			})), n.d(t, "e", (function() {
-				return _
+				return j
 			})), n.d(t, "a", (function() {
-				return v
+				return E
 			})), n.d(t, "b", (function() {
-				return S
+				return v
 			})), n.d(t, "d", (function() {
-				return I
+				return S
 			})), n.d(t, "c", (function() {
+				return I
+			})), n.d(t, "o", (function() {
 				return T
 			})), n.d(t, "p", (function() {
 				return C
 			})), n.d(t, "q", (function() {
 				return x
-			})), n.d(t, "r", (function() {
-				return w
 			})), n.d(t, "f", (function() {
-				return D
+				return P
 			})), n.d(t, "g", (function() {
+				return D
+			})), n.d(t, "k", (function() {
 				return A
-			})), n.d(t, "l", (function() {
-				return R
-			})), n.d(t, "s", (function() {
-				return L
+			})), n.d(t, "r", (function() {
+				return N
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/pickBy.js"),
@@ -62210,8 +62196,7 @@
 					} = t;
 					return n ? e.categories.models[n] : void 0
 				},
-				h = e => e.categories.nameToId,
-				y = (e, t) => {
+				h = (e, t) => {
 					let {
 						categoryName: n
 					} = t;
@@ -62220,8 +62205,8 @@
 						id: r
 					})
 				},
-				j = new Set(["nba", "nfl"]),
-				_ = Object(o.a)((e, t) => t.categoriesOrder || c.db, (e, t) => t.excludedCategories || j, e => e.categories.ids, e => e.categories.models, (e, t, n, r) => {
+				y = new Set(["nba", "nfl"]),
+				j = Object(o.a)((e, t) => t.categoriesOrder || c.db, (e, t) => t.excludedCategories || y, e => e.categories.ids, e => e.categories.models, (e, t, n, r) => {
 					const s = {};
 					let o = 1e3;
 					const i = [];
@@ -62233,35 +62218,35 @@
 						return (e[t.name] || s[t.name]) - (e[n.name] || s[n.name])
 					})
 				}),
-				E = (e, t) => {
+				_ = (e, t) => {
 					let {
 						categoryName: n
 					} = t;
-					const r = y(e, {
+					const r = h(e, {
 						categoryName: n
 					});
 					return r && e.subreddits.byCategory[r.id] || b
 				},
-				v = Object(o.a)((e, t) => {
+				E = Object(o.a)((e, t) => {
 					let {
 						id: n
 					} = t;
 					if (!n) return b;
 					return e.subreddits.byCategory[n] || b
 				}, l.Y, e => e.subreddits.about, (e, t, n) => e.map(e => Object(d.i)(t[e], n[e]))),
-				S = () => Object(i.a)(Object(o.a)(E, l.Y, l.z, (e, t, n) => e.map(e => Object(d.i)(t[e], n[e])))),
-				I = Object(o.a)(E, l.Y, (e, t) => 0 === e.length ? b : e.map(e => t[e])),
-				T = () => Object(i.a)(Object(o.a)(E, l.Y, (e, t) => 0 === e.length ? b : e.map(e => {
+				v = () => Object(i.a)(Object(o.a)(_, l.Y, l.z, (e, t, n) => e.map(e => Object(d.i)(t[e], n[e])))),
+				S = Object(o.a)(_, l.Y, (e, t) => 0 === e.length ? b : e.map(e => t[e])),
+				I = () => Object(i.a)(Object(o.a)(_, l.Y, (e, t) => 0 === e.length ? b : e.map(e => {
 					const n = t[e];
 					return n ? n.name : ""
 				}).filter(Boolean))),
-				C = Object(o.a)((e, t) => e.listings.listingOrder.ids[t.listingKey] || b, e => e.categories.models, (e, t) => e.map(e => t[e])),
-				x = Object(i.a)(Object(o.a)((e, t) => e.listings.listingOrder.ids[t.listingKey] || b, e => e.subreddits.models, (e, t) => e.map(e => t[e]))),
-				w = (e, t) => {
+				T = Object(o.a)((e, t) => e.listings.listingOrder.ids[t.listingKey] || b, e => e.categories.models, (e, t) => e.map(e => t[e])),
+				C = Object(i.a)(Object(o.a)((e, t) => e.listings.listingOrder.ids[t.listingKey] || b, e => e.subreddits.models, (e, t) => e.map(e => t[e]))),
+				x = (e, t) => {
 					const n = t ? e.posts.models[t] : null;
 					return n && n.postCategories ? n.postCategories : null
 				},
-				P = Object(o.a)(e => e.subreddits.byCategory, l.Y, (e, t) => Object.keys(e).reduce((n, r) => {
+				w = Object(o.a)(e => e.subreddits.byCategory, l.Y, (e, t) => Object.keys(e).reduce((n, r) => {
 					const s = e[r];
 					if (!s || 0 === s.length) return n;
 					for (const e of s) {
@@ -62273,29 +62258,29 @@
 					}
 					return n
 				}, {})),
-				D = Object(o.a)((e, t) => t.subredditName, P, (e, t) => t[Object(a.f)(e)] || b),
-				A = e => e.categories.ranking,
-				R = (e, t) => {
+				P = Object(o.a)((e, t) => t.subredditName, w, (e, t) => t[Object(a.f)(e)] || b),
+				D = e => e.categories.ranking,
+				A = (e, t) => {
 					let {
 						id: n
 					} = t;
 					return n && e.categories.ranking[n] || 0
 				},
-				k = Object(o.a)(_, A, (e, t) => {
+				R = Object(o.a)(j, D, (e, t) => {
 					const n = s()(t, e => e >= 3);
 					return 0 === Object.keys(n).length ? e : [...e].sort((e, t) => {
 						const r = n[e.id] || 0;
 						return (n[t.id] || 0) - r
 					})
 				}),
-				N = Object(o.a)(() => Object(u.b)(), e => {
-					if (!e) return j;
-					const t = new Set(j);
+				k = Object(o.a)(() => Object(u.b)(), e => {
+					if (!e) return y;
+					const t = new Set(y);
 					return t.delete(e.name), t
 				}),
-				L = (e, t) => {
-					const n = N(e);
-					return k(e, Object.assign({}, t, {
+				N = (e, t) => {
+					const n = k(e);
+					return R(e, Object.assign({}, t, {
 						excludedCategories: n
 					}))
 				}
@@ -70181,4 +70166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.0653a9983e1f64fdf69c.js.map
+//# sourceMappingURL=Governance~Reddit.810047bf2074a0b73d3a.js.map
