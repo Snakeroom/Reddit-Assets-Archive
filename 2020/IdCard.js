@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.0a981fd8b8cf834a14ab.js
-// Retrieved at 2/3/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.14b43c247f7aadac30b7.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1373,8 +1373,8 @@
 				D = n("./src/reddit/selectors/meta.ts"),
 				L = n("./src/reddit/selectors/user.ts");
 			const A = Object(u.c)({
-				isLoggedIn: L.J,
-				origin: D.g
+				isLoggedIn: L.G,
+				origin: D.h
 			});
 			class H extends i.a.Component {
 				constructor() {
@@ -1426,7 +1426,7 @@
 				return n
 			};
 			const Q = Object(u.c)({
-				isLoggedIn: L.J
+				isLoggedIn: L.G
 			});
 			var G = Object(o.b)(Q, e => ({
 				openLoginModal: () => {
@@ -1765,7 +1765,7 @@
 				St = Object(u.c)({
 					badgesEnabled: De.d.spBadges,
 					currentUser: L.i,
-					language: L.S,
+					language: L.P,
 					userFlairData: ft.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -1845,8 +1845,8 @@
 			const Wt = re.a.wrapped(B.n, "TertiaryButton", Ut.a),
 				qt = Object(u.c)({
 					shouldShowFlairPicker: ft.b,
-					stylesDisabledForSubreddit: L.eb,
-					stylesDisabledGlobally: L.fb
+					stylesDisabledForSubreddit: L.ab,
+					stylesDisabledGlobally: L.bb
 				});
 			class Vt extends i.a.Component {
 				constructor(e) {
@@ -1922,9 +1922,9 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(xe.h)(e, Ye.e.Post),
-					isLoggedIn: L.J,
+					isLoggedIn: L.G,
 					isM2MEnabled: rt.w,
-					language: L.S,
+					language: L.P,
 					m2mHomeRedirectVariant: nt.f,
 					moderatorPermissions: (e, t) => {
 						const n = Object(xe.G)(e, t.listingName);
@@ -3109,7 +3109,7 @@
 				a = n("./src/reddit/selectors/subreddit.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: c.S,
+				language: c.P,
 				subscribeReminderTooltipId: o.C,
 				subscribeTooltipId: o.D,
 				userIsSubscriber: a.cb
@@ -3750,7 +3750,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.i.Treatment1 === Object(r.c)(e, {
+				return Object(i.D)(e) || s.i.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.c
 				})
@@ -3758,4 +3758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.0a981fd8b8cf834a14ab.js.map
+//# sourceMappingURL=IdCard.14b43c247f7aadac30b7.js.map

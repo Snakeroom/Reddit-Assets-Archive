@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.72da9198f4ba11dd2095.js
-// Retrieved at 2/3/2020, 5:20:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3ddc8173ec8f2fa70117.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -522,7 +522,7 @@
 							response: g.body
 						}))
 					} else {
-						const e = Object(x.S)(r());
+						const e = Object(x.P)(r());
 						o(m(g.error)), o(Object(c.e)({
 							kind: b.b.Error,
 							text: Object(n.a)(e, "subredditModeration.modQueue.toastText.somethingWentWrong")
@@ -546,7 +546,7 @@
 					});
 					if (h.ok) t(F(h.body)), h.body.moderatedAfter ? t(B()) : t(A());
 					else {
-						const e = Object(x.S)(s());
+						const e = Object(x.P)(s());
 						t(Object(c.e)({
 							kind: b.b.Error,
 							text: Object(n.a)(e, "subredditModeration.modQueue.toastText.somethingWentWrong")
@@ -619,7 +619,7 @@
 									username: m
 								})));
 								else {
-									const s = Object(x.S)(t());
+									const s = Object(x.P)(t());
 									e(W(u.error)), e(Object(c.e)({
 										kind: b.b.Error,
 										text: Object(n.a)(s, "subredditModeration.modQueue.toastText.somethingWentWrong")
@@ -831,7 +831,7 @@
 					H = y.listings.postOrder.api.pending[j];
 				if (U) return;
 				if (H || B && !U) Object(p.e)(s(), !0, f);
-				else if (await t(Object(S.i)(j, f, {})), !Object(re.J)(s()) && C !== o.Nb.Moderators) return void Object(m.a)(t, s());
+				else if (await t(Object(S.i)(j, f, {})), !Object(re.G)(s()) && C !== o.Nb.Moderators) return void Object(m.a)(t, s());
 				if (!C) return;
 				let W, q, V, z, K, Q, G, J, Z;
 				switch (C) {
@@ -914,7 +914,7 @@
 					}),
 					de = Object(c.a)(ce),
 					le = Object(oe.Y)(y),
-					me = Object(re.G)(X),
+					me = Object(re.D)(X),
 					ue = Object(se.b)(X),
 					pe = Object(ne.j)(X, {
 						subredditId: ie
@@ -1057,7 +1057,7 @@
 					const {
 						canShowFailToast: o,
 						wikiPageName: c
-					} = e, d = c === P.j, l = Object(H.S)(s()), m = Object.assign({}, e, {
+					} = e, d = c === P.j, l = Object(H.P)(s()), m = Object.assign({}, e, {
 						includePageData: e.includePageData && !d
 					}), u = c ? Object(L.a)(Object.assign({}, e, {
 						wikiPageName: c
@@ -3051,7 +3051,7 @@
 						} = t;
 						return Object(W.o)(e, s)
 					},
-					language: q.S,
+					language: q.P,
 					moderatorPermissions: B.i,
 					modModeEnabled: L.O,
 					post: W.I,
@@ -3062,7 +3062,7 @@
 					showEditFlair: H.a,
 					showMedia: L.r,
 					subredditOrProfile: W.U,
-					userIsOp: q.jb,
+					userIsOp: q.fb,
 					flairStyleTemplate: L.Q
 				},
 				z = (e, t) => {
@@ -4089,7 +4089,7 @@
 				P = Object(r.c)({
 					comment: (e, t) => Object(v.n)(e, t),
 					flair: v.e,
-					language: C.S,
+					language: C.P,
 					subreddit: f.J
 				}),
 				M = Object(o.b)(P, (e, t) => {
@@ -4447,7 +4447,7 @@
 						subredditId: s
 					})
 				},
-				language: l.S
+				language: l.P
 			});
 			t.a = Object(o.b)(m)(e => a.a.createElement(a.a.Fragment, null, Object(i.a)(e.language, "communityTopics.numSelected", {
 				part: e.selectedOptions.length,
@@ -4533,7 +4533,7 @@
 								const r = o();
 								Object(f.r)(r, {
 									subredditId: s
-								}).length >= x.a ? e(Object(l.e)(Object.assign({}, Object(l.d)(Object(i.a)(Object(C.S)(o()), "communityTopics.maxTopicsHit", {
+								}).length >= x.a ? e(Object(l.e)(Object.assign({}, Object(l.d)(Object(i.a)(Object(C.P)(o()), "communityTopics.maxTopicsHit", {
 									max: x.a
 								}), v.b.Error), {
 									duration: l.a
@@ -4626,7 +4626,7 @@
 						subredditId: s
 					})
 				},
-				language: e => Object(g.S)(e)
+				language: e => Object(g.P)(e)
 			});
 			class f extends a.a.Component {
 				constructor() {
@@ -4718,7 +4718,7 @@
 						})
 					}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(d.e)(Object.assign({}, Object(d.d)(Object(i.a)(Object(g.S)(t()), "communityTopics.maxTopicsHit", {
+						e(Object(d.e)(Object.assign({}, Object(d.d)(Object(i.a)(Object(g.P)(t()), "communityTopics.maxTopicsHit", {
 							max: p.a
 						}), b.b.Error), {
 							duration: d.a
@@ -4976,7 +4976,7 @@
 					flairStyleTemplate: ie.Q,
 					isActive: S.g,
 					isExpanded: S.j,
-					language: N.S,
+					language: N.P,
 					layout: ie.M,
 					moderatorPermissions: k.i,
 					modModeEnabled: ie.O,
@@ -4987,7 +4987,7 @@
 					post: S.I,
 					showEditFlair: w.a,
 					subredditOrProfile: S.U,
-					userIsOp: N.jb,
+					userIsOp: N.fb,
 					isInAdLeftSidebarExperiment: y.a
 				}), (e, t) => {
 					let {
@@ -5734,7 +5734,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(p.hb)(e, {
+				user: (e, t) => Object(p.db)(e, {
 					userName: t.username
 				})
 			});
@@ -5957,12 +5957,12 @@
 						const s = Object(p.i)(e);
 						return !!s && Object(c.f)(s) === t.userName
 					},
-					isLoggedIn: p.J,
-					hideNSFWPref: p.z,
-					language: p.S,
+					isLoggedIn: p.G,
+					hideNSFWPref: p.y,
+					language: p.P,
 					moderatorPermissions: m.j,
-					origin: l.g,
-					user: p.hb,
+					origin: l.h,
+					user: p.db,
 					userFlair: b.c
 				}),
 				Te = Object(o.b)(Ne, (e, t) => ({
@@ -7025,7 +7025,7 @@
 			const T = u.a.wrapped(y.b, "Row", N.a),
 				_ = Object(i.c)({
 					currentPage: e => e.platform.currentPage,
-					origin: w.g
+					origin: w.h
 				});
 			var I = Object(r.b)(_)(e => o.a.createElement("div", null, o.a.createElement(k.a, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -7060,7 +7060,7 @@
 				}),
 				A = Object(i.c)({
 					moderatingSubreddits: R.k,
-					origin: w.g
+					origin: w.h
 				}),
 				B = Object(r.b)(A),
 				U = u.a.div("DropdownContainer", D.a),
@@ -7798,7 +7798,7 @@
 					isModQueueListingPending: ye.b,
 					loadMore: ye.d,
 					modQueueListingItems: ye.c,
-					origin: je.g,
+					origin: je.h,
 					selectedItems: ye.f,
 					subredditId: (e, t) => t.subredditName ? Object(ke.G)(e, t.subredditName) : null
 				}),
@@ -13968,7 +13968,7 @@
 				a = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/selectors/user.ts");
 			const r = Object(a.c)({
-				language: o.S
+				language: o.P
 			});
 
 			function i(e) {
@@ -14780,7 +14780,7 @@
 				}],
 				I = Object(E.t)(),
 				P = Object(r.c)({
-					language: v.S,
+					language: v.P,
 					postLayout: E.M,
 					redditStyle: E.B
 				}),
@@ -17352,7 +17352,7 @@
 					approvedSubmittersListPending: st.a,
 					isAddUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(tt.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--RemoveUserConfirmation" === Object(tt.a)(e),
-					language: L.S,
+					language: L.P,
 					loadMoreToken: st.b,
 					searchPending: st.c,
 					searchResult: st.d
@@ -17558,7 +17558,7 @@
 					bannedUsers: st.m,
 					bannedUsersList: st.i,
 					bannedUsersListPending: st.h,
-					language: L.S,
+					language: L.P,
 					loadMoreToken: st.j,
 					isBanUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(tt.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--BanUserConfirmation" === Object(tt.a)(e),
@@ -18478,8 +18478,8 @@
 				crowdControlModeEnabled: Ds.d.enableCrowdControlMode,
 				crowdControlLevelEnabled: Ds.d.enableCrowdControlLevel,
 				isChatPostsCreationEnabled: (e, t) => Object(Js.c)(e, t.subredditId),
-				isEmployee: L.G,
-				language: L.S,
+				isEmployee: L.D,
+				language: L.P,
 				restrictions: R.o,
 				settings: (e, t) => Object(R.U)(e, t.subredditId),
 				showAllowPolls: (e, t) => Object(Zs.a)(t.subredditName),
@@ -18900,7 +18900,7 @@
 					isFlairedUsersListPending: e => e.flairedUsers.api.pending,
 					isSearchPending: e => e.flairedUsers.search.api.pending,
 					isUserFlairEnabled: ca.a,
-					origin: ia.g,
+					origin: ia.h,
 					pageInfo: (e, t) => {
 						const s = Object(et.d)(t.subredditId, t.after, t.before);
 						return e.flairedUsers.pageInfo[s]
@@ -19532,7 +19532,7 @@
 						} = t;
 						return ((e, t) => e.moderationLog.moderators[t] || [])(e, s)
 					},
-					language: L.S
+					language: L.P
 				});
 			class _o extends r.a.Component {
 				constructor(e) {
@@ -20072,7 +20072,7 @@
 				dr = Object(c.c)({
 					actionsList: jo,
 					endCursor: yo,
-					language: L.S,
+					language: L.P,
 					nextPage: (e, t) => {
 						let {
 							subredditId: s
@@ -20265,7 +20265,7 @@
 				hr = s("./src/reddit/components/ModeratorsList/AddModeratorModal/index.m.less"),
 				gr = s.n(hr);
 			const Er = Object(c.c)({
-					language: L.S
+					language: L.P
 				}),
 				xr = Object(i.b)(Er, (e, t) => {
 					let {
@@ -20444,7 +20444,7 @@
 				Ur = s("./src/reddit/components/ModeratorsList/InvitePendingModal.m.less"),
 				Hr = s.n(Ur);
 			const Wr = Object(c.c)({
-					language: L.S
+					language: L.P
 				}),
 				qr = Object(i.b)(Wr, (e, t) => {
 					let {
@@ -20480,7 +20480,7 @@
 				Yr = s("./src/reddit/components/ModeratorsList/ResignAsModeratorModal/index.m.less"),
 				$r = s.n(Yr);
 			const ei = Object(c.c)({
-					language: L.S
+					language: L.P
 				}),
 				ti = Object(i.b)(ei, (e, t) => {
 					let {
@@ -20540,8 +20540,8 @@
 					isInvitePendingModalOpen: Object(tt.b)("ModerationPage--Modal--InvitePending"),
 					isModeratorListPending: st.v,
 					isResignAsModeratorModalOpen: Object(tt.b)("ModerationPage--Modal--Resign"),
-					language: L.S,
-					origin: ia.g,
+					language: L.P,
+					origin: ia.h,
 					searchPending: st.z,
 					searchResult: st.A
 				}),
@@ -21270,7 +21270,7 @@
 				Kd = Object(c.c)({
 					emojis: sc.d,
 					isSnoomojiSubreddit: R.m,
-					language: L.S,
+					language: L.P,
 					reservedEmojiNames: sc.e
 				}),
 				Qd = Object(i.b)(Kd, (e, t) => {
@@ -21528,7 +21528,7 @@
 			const Yd = m.a.div("UploaderContainer", Xc.a),
 				$d = m.a.wrapped(Yd, "editEmojiDisplay", Xc.a),
 				el = Object(c.c)({
-					language: L.S,
+					language: L.P,
 					reduxImage: (e, t) => {
 						let {
 							pendingImage: s
@@ -22141,7 +22141,7 @@
 						} = t;
 						return Object(Da.b)(s)(e)
 					},
-					language: L.S
+					language: L.P
 				});
 			var Wm = Object(i.b)(Hm, (e, t) => ({
 					onToggleDropdown: () => e(Object(Yt.g)(t))
@@ -24746,7 +24746,7 @@
 				fh = Object(c.c)({
 					isAddUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(tt.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--RemoveUserConfirmation" === Object(tt.a)(e),
-					language: L.S,
+					language: L.P,
 					loadMoreToken: st.E,
 					mutedUsers: st.H,
 					mutedUsersListPending: st.D,
@@ -25661,7 +25661,7 @@
 					const r = Object(R.S)(n(), {
 							subredditId: e
 						}).name,
-						i = Object(L.S)(n()),
+						i = Object(L.P)(n()),
 						c = "success-block-".concat(t.rule),
 						d = "error-block-".concat(t.rule),
 						l = await Object(aE.a)(o(), r, t);
@@ -25687,7 +25687,7 @@
 					const r = Object(R.S)(n(), {
 							subredditId: e
 						}).name,
-						i = Object(L.S)(n()),
+						i = Object(L.P)(n()),
 						c = Object(R.O)(n(), {
 							subredditId: e
 						}),
@@ -25764,7 +25764,7 @@
 						const i = Object(R.S)(a(), {
 								subredditId: e
 							}).name,
-							c = Object(L.S)(a()),
+							c = Object(L.P)(a()),
 							d = "success-block-".concat(t.rule),
 							l = "error-block-".concat(t.rule),
 							m = await Object(aE.f)(r(), i, t, s);
@@ -26050,7 +26050,7 @@
 					isConfirmModalOpen: e => "SubredditRule--Modal--DeleteConfirmation" === Object(tt.a)(e),
 					isRuleEditorOpen: e => "SubredditRule--Editor--Modal" === Object(tt.a)(e),
 					isSubredditRulesPending: e => Object(R.Q)(e),
-					language: L.S,
+					language: L.P,
 					ruleOrder: (e, t) => Object(R.O)(e, {
 						subredditId: t.subreddit.id
 					}),
@@ -26180,7 +26180,7 @@
 						const i = Object(R.S)(a(), {
 								subredditId: e
 							}).name,
-							c = Object(L.S)(a()),
+							c = Object(L.P)(a()),
 							d = Object(R.R)(a(), {
 								subredditId: e
 							})[s],
@@ -27781,7 +27781,7 @@
 						subredditName: t.match.params.subredditName
 					})
 				}),
-				Kv = Object(i.b)(() => Object(c.a)(Wv, L.G, I.b, L.S, v.M, Vv, L.X, M.Y, zv, qv, (e, t) => t.match.params.pageName, (e, t, s, n, a, o, r, i, c, d, l) => {
+				Kv = Object(i.b)(() => Object(c.a)(Wv, L.D, I.b, L.P, v.M, Vv, L.U, M.Y, zv, qv, (e, t) => t.match.params.pageName, (e, t, s, n, a, o, r, i, c, d, l) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -27968,7 +27968,7 @@
 				selectedOptions: f.j,
 				isLoading: f.x,
 				currentInput: f.g,
-				language: C.S
+				language: C.P
 			});
 			class k extends o.a.Component {
 				constructor() {
@@ -28031,7 +28031,7 @@
 					})),
 					onSearchBarFocused: () => e((e, t) => {}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(h.e)(Object.assign({}, Object(h.d)(Object(p.a)(Object(C.S)(t()), "communityTopics.maxTopicsHit", {
+						e(Object(h.e)(Object.assign({}, Object(h.d)(Object(p.a)(Object(C.P)(t()), "communityTopics.maxTopicsHit", {
 							max: x.a
 						}), v.b.Error), {
 							duration: h.a
@@ -28101,10 +28101,10 @@
 				pe = Object(c.c)({
 					error: X.i,
 					isCreatePending: X.l,
-					isEmployee: C.G,
-					language: C.S,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(C.db)(e),
-					userIsSuspended: C.O,
+					isEmployee: C.D,
+					language: C.P,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(C.Z)(e),
+					userIsSuspended: C.L,
 					allTags: f.e,
 					existingTags: f.h,
 					newTags: f.i,
@@ -28460,7 +28460,7 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const r = e => !!(e => {
 				const t = Object(a.c)(e, {
-					experimentEligibilitySelector: e => Object(o.J)(e),
+					experimentEligibilitySelector: e => Object(o.G)(e),
 					experimentName: n.N
 				});
 				return Object(n.Yb)(t) ? void 0 : t
@@ -28482,7 +28482,7 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl"]),
 				d = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				l = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
-					experimentEligibilitySelector: r.J,
+					experimentEligibilitySelector: r.G,
 					experimentName: n.ib
 				}) === n.pb.Enabled
 		},
@@ -28851,4 +28851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.72da9198f4ba11dd2095.js.map
+//# sourceMappingURL=ModerationPages.3ddc8173ec8f2fa70117.js.map

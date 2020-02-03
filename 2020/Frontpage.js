@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b6d567b1e021f79ab953.js
-// Retrieved at 2/3/2020, 5:20:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.852959fc560821ec48c7.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -705,7 +705,7 @@
 				U = c.a.wrapped(g.a, "CloseButton", N.a),
 				V = Object(i.c)({
 					featuredLiveThread: e => e.live.featured,
-					language: E.S
+					language: E.P
 				}),
 				W = Object(a.b)(V);
 			class H extends o.a.Component {
@@ -890,7 +890,7 @@
 					const t = {
 							city: Object(U.a)(e),
 							country: Object(U.b)(e),
-							region: Object(U.h)(e)
+							region: Object(U.i)(e)
 						},
 						s = Object(D.a)(t);
 					return Object(W.q)(e, {
@@ -1355,7 +1355,7 @@
 			var tt = Xe(et),
 				st = s("./src/reddit/selectors/user.ts");
 			const nt = Object(a.c)({
-				language: st.S,
+				language: st.P,
 				recentPosts: V.R
 			});
 			var rt = Object(o.b)(nt, (e, t) => ({
@@ -1590,7 +1590,7 @@
 				}))
 			}))(zt);
 			const Zt = Object(a.c)({
-					isMod: st.K,
+					isMod: st.H,
 					isLoggedIn: e => e.user.temporaryGQL.isLoggedIn,
 					isUpAndComingExperiment: vt.b,
 					trendingSubredditIds: W.ab,
@@ -2416,7 +2416,7 @@
 				B = Object(O.t)(),
 				A = Object(a.c)({
 					dropdownIsOpen: Object(P.b)("StateSort--StateSortPicker"),
-					language: E.S
+					language: E.P
 				}),
 				D = Object(o.b)(A, e => ({
 					onOpenDropdown: () => e(Object(p.g)({
@@ -2465,7 +2465,7 @@
 			const H = Object(O.t)(),
 				K = Object(a.c)({
 					dropdownIsOpen: Object(P.b)("CountrySort--CountrySortPicker"),
-					language: E.S
+					language: E.P
 				});
 			var q = H(Object(o.b)(K, e => ({
 					onOpenDropdown: t => e(Object(p.g)({
@@ -2517,7 +2517,7 @@
 				}),
 				ee = Object(a.c)({
 					currentUser: E.i,
-					language: E.S,
+					language: E.P,
 					isPopularListing: O.D,
 					redditStyle: O.B
 				}),
@@ -2763,7 +2763,7 @@
 				R = Object(a.c)({
 					user: C.i,
 					dropdownIsOpen: (e, t) => Object(j.b)(t.dropdownId || k)(e),
-					language: C.S
+					language: C.P
 				}),
 				F = Object(o.b)(R, (e, t) => {
 					let {
@@ -3095,15 +3095,15 @@
 					crosspostSubredditOrProfile: _.d,
 					currentUser: w.i,
 					flairStyleTemplate: v.Q,
-					hideNSFWPref: w.z,
+					hideNSFWPref: w.y,
 					isActive: _.g,
-					language: w.S,
+					language: w.P,
 					moderatorPermissions: S.i,
 					modModeEnabled: v.O,
 					post: _.I,
 					showEditFlair: N.a,
 					subredditOrProfile: _.U,
-					userIsOp: w.jb
+					userIsOp: w.fb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -3264,7 +3264,7 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				y = s.n(x);
-			const v = Object(a.a)(e => e, b.I, b.c, g.S, (e, t, s, n) => {
+			const v = Object(a.a)(e => e, b.I, b.c, g.P, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
@@ -4681,7 +4681,7 @@
 						listingName: s,
 						pageLayer: n
 					}),
-					o = Object(c.y)(e),
+					o = Object(c.x)(e),
 					a = Object(i.e)(e);
 				return {
 					canShowAd: r && !o,
@@ -4814,7 +4814,7 @@
 				E = s.n(P);
 			const S = e => e.type === f.f.Nsfw || e.type === f.f.Spoiler,
 				N = Object(a.c)({
-					language: C.S,
+					language: C.P,
 					post: h.I,
 					subredditOrProfile: h.U
 				});
@@ -5145,7 +5145,7 @@
 				T = Object(y.t)(),
 				M = Object(c.c)({
 					dropdownIsOpen: Object(C.b)(w),
-					language: P.S
+					language: P.P
 				}),
 				B = Object(i.b)(M, e => ({
 					onOpenDropdown: () => e(Object(u.g)({
@@ -5851,7 +5851,7 @@
 				}],
 				L = Object(x.t)(),
 				I = Object(a.c)({
-					language: v.S,
+					language: v.P,
 					postLayout: x.M,
 					redditStyle: x.B
 				}),
@@ -6786,7 +6786,7 @@
 					},
 					generalCleanupVariant: G.a,
 					isInTrendingEntrypointExperiment: z.a,
-					isLoggedIn: ee.J,
+					isLoggedIn: ee.G,
 					isPopular: F.D,
 					isRpanDuVisible: e => Object($.a)(e, {
 						listingName: se.R
@@ -7037,7 +7037,7 @@
 				o = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				a = s("./src/reddit/selectors/user.ts"),
 				i = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const c = Object(n.a)(o.a, o.b, a.N, (e, t) => {
+			const c = Object(n.a)(o.a, o.b, a.K, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -7338,7 +7338,7 @@
 				a = (s("./src/reddit/selectors/experiments/categoriesPlacement.ts"), s("./src/reddit/selectors/meta.ts"));
 			s("./src/reddit/selectors/subreddit.ts");
 			Object(o.c)();
-			const i = Object(n.a)(a.a, a.h, a.b, (e, t, s) => e || t || r.a[s] || s)
+			const i = Object(n.a)(a.a, a.i, a.b, (e, t, s) => e || t || r.a[s] || s)
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
@@ -7354,4 +7354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.b6d567b1e021f79ab953.js.map
+//# sourceMappingURL=Frontpage.852959fc560821ec48c7.js.map

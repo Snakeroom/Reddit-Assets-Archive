@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.055f12ec70f7122bf2f3.js
-// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.6fccfd6f1c2085a2f3fd.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -490,7 +490,7 @@
 				n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = Object(n.c)({
-				language: r.S
+				language: r.P
 			});
 
 			function c(e) {
@@ -667,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.055f12ec70f7122bf2f3.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd.6fccfd6f1c2085a2f3fd.js.map

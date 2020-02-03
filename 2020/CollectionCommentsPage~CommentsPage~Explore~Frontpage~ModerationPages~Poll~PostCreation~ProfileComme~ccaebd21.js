@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.9cf91267aeb4bd21480e.js
-// Retrieved at 1/30/2020, 7:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.2b3fec1fb27997a597bb.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21"], {
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
@@ -82,9 +82,9 @@
 				P = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
 				k = s.n(P),
 				M = s("./src/lib/lessComponent.tsx");
-			const S = M.a.div("Container", k.a),
-				N = M.a.h2("PostTitle", k.a),
-				B = M.a.div("MetaLine", k.a),
+			const N = M.a.div("Container", k.a),
+				B = M.a.h2("PostTitle", k.a),
+				S = M.a.div("MetaLine", k.a),
 				F = M.a.span("SubredditName", k.a),
 				L = M.a.time("InfoSpan", k.a),
 				A = Object(a.c)({
@@ -114,12 +114,12 @@
 						user: o,
 						onHoverActionText: r
 					} = this.props, i = s && Object(w.e)(s) && o ? Object(y.c)(Object(I.f)(o)) : s ? s.displayText : "", a = e.postIds.length;
-					return c.a.createElement(S, {
+					return c.a.createElement(N, {
 						onClick: this.onClick,
 						className: k.a.container
-					}, c.a.createElement(N, {
+					}, c.a.createElement(B, {
 						"data-redditstyle": !0
-					}, e.title), c.a.createElement(B, {
+					}, e.title), c.a.createElement(S, {
 						"data-redditstyle": !0
 					}, i && c.a.createElement(F, {
 						"data-redditstyle": !0
@@ -160,7 +160,7 @@
 				}),
 				de = Object(a.c)({
 					collections: v.v,
-					language: O.S
+					language: O.P
 				}),
 				ue = Object(i.b)(de, (e, t) => {
 					let {
@@ -308,9 +308,9 @@
 				P = Object(i.e)("postCreation.collections.createModal.details"),
 				k = Object(i.e)("postCreation.collections.createModal.giveATitle"),
 				M = Object(i.e)("postCreation.collections.createModal.editTitle"),
-				S = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
-				N = j.a.div("Container", E.a),
-				B = j.a.div("Content", E.a),
+				N = Object(i.e)("postCreation.collections.createModal.titlePlaceholderText"),
+				B = j.a.div("Container", E.a),
+				S = j.a.div("Content", E.a),
 				F = j.a.div("TitleRow", E.a),
 				L = j.a.div("Details", E.a),
 				A = j.a.wrapped(u.e, "Footer", E.a),
@@ -327,7 +327,7 @@
 					collection: C.q,
 					error: C.c,
 					isPending: C.g,
-					language: v.S
+					language: v.P
 				}),
 				J = Object(r.b)(z, (e, t) => ({
 					onCreate: (t, s) => e(Object(d.b)(t, s)),
@@ -369,12 +369,12 @@
 						isPending: s,
 						language: n
 					} = this.props, r = !e, c = !!this.state.collectionTitle.trim(), i = r ? w : I, a = r ? k : M;
-					return o.a.createElement(N, null, o.a.createElement(D, {
+					return o.a.createElement(B, null, o.a.createElement(D, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(X, null)), o.a.createElement(B, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(F, null, o.a.createElement(U, null), T(n)), o.a.createElement(L, null, P(n))), o.a.createElement(W, null, a(n), o.a.createElement(H, {
+					}, o.a.createElement(X, null)), o.a.createElement(S, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(F, null, o.a.createElement(U, null), T(n)), o.a.createElement(L, null, P(n))), o.a.createElement(W, null, a(n), o.a.createElement(H, {
 						maxLength: p.e,
 						onChange: this.onTitleChange,
-						placeholder: S(n),
+						placeholder: N(n),
 						value: this.state.collectionTitle
 					}))), o.a.createElement(A, null, o.a.createElement(g.a, null, o.a.createElement(R, {
 						onClick: this.props.onCancel
@@ -577,7 +577,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: a.S,
+				language: a.P,
 				subscribeReminderTooltipId: c.C,
 				subscribeTooltipId: c.D,
 				userIsSubscriber: i.cb
@@ -865,11 +865,11 @@
 			})), s.d(t, "n", (function() {
 				return M
 			})), s.d(t, "g", (function() {
-				return S
-			})), s.d(t, "D", (function() {
 				return N
-			})), s.d(t, "z", (function() {
+			})), s.d(t, "D", (function() {
 				return B
+			})), s.d(t, "z", (function() {
+				return S
 			})), s.d(t, "a", (function() {
 				return F
 			})), s.d(t, "x", (function() {
@@ -1030,17 +1030,17 @@
 					action: "click",
 					noun: "schedule_post_cta"
 				}, r(e)),
-				S = () => e => Object.assign({
+				N = () => e => Object.assign({
 					source: "recurring_post_module",
 					action: "click",
 					noun: "edit_recurring_post"
 				}, r(e)),
-				N = () => e => Object.assign({
+				B = () => e => Object.assign({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer"
 				}, r(e)),
-				B = () => (e, t) => Object.assign({
+				S = () => (e, t) => Object.assign({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "update"
@@ -1252,4 +1252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.9cf91267aeb4bd21480e.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21.2b3fec1fb27997a597bb.js.map

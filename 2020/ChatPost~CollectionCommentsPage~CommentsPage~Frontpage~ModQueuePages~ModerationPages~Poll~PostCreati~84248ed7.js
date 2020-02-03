@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.ea5bfe9df1548a0caa26.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.a01a3ed60f2f884b246e.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, s) {
@@ -275,7 +275,7 @@
 					return t && (o = "".concat(o, "--").concat(t)), o
 				},
 				L = Object(a.c)({
-					isLoggedIn: w.J,
+					isLoggedIn: w.G,
 					allAwards: e => e.awards.models
 				}),
 				k = Object(n.b)(L, (e, t) => {
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.ea5bfe9df1548a0caa26.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~84248ed7.a01a3ed60f2f884b246e.js.map

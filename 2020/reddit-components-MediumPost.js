@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.3011cf33e5250a0cf612.js
-// Retrieved at 2/3/2020, 2:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.bf930621ca99a7fa6095.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -502,14 +502,14 @@
 				crosspost: U.c,
 				currentUser: H.i,
 				flairStyleTemplate: N.Q,
-				hideNSFWPref: H.z,
+				hideNSFWPref: H.y,
 				isActive: U.g,
 				isCurrentUserProfilePost: U.h,
 				isFrontpageHome: z.g,
 				isM2MHomeRedirectEnabled: F.c,
 				isPostChainDismissed: V.c,
 				isPostChained: V.d,
-				language: H.S,
+				language: H.P,
 				moderatorPermissions: W.i,
 				modModeEnabled: N.O,
 				post: U.I,
@@ -1564,7 +1564,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				n = s("./src/reddit/selectors/user.ts");
 			const a = e => {
-				return Object(n.G)(e) || o.i.Treatment1 === Object(r.c)(e, {
+				return Object(n.D)(e) || o.i.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.c
 				})
@@ -1572,4 +1572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.3011cf33e5250a0cf612.js.map
+//# sourceMappingURL=reddit-components-MediumPost.bf930621ca99a7fa6095.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.4f1f8513616c4a7ff7ee.js
-// Retrieved at 1/28/2020, 6:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.de69002b2cf08ef41a8a.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -431,8 +431,8 @@
 				w = t("./src/reddit/i18n/components.tsx"),
 				_ = t("./src/reddit/i18n/utils.ts"),
 				C = t("./src/reddit/models/Gold/Award.ts"),
-				f = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
-				P = t("./src/reddit/actions/login.ts"),
+				P = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				f = t("./src/reddit/actions/login.ts"),
 				j = t("./src/reddit/contexts/PageLayer/index.tsx"),
 				O = t("./src/reddit/models/Gold/Coins/index.ts"),
 				A = t("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -442,8 +442,8 @@
 				M = t.n(y),
 				G = t("./src/lib/classNames/index.ts"),
 				L = t("./src/reddit/controls/Button/index.tsx"),
-				S = t("./src/reddit/icons/svgs/Coin/index.tsx"),
-				F = e => o.a.createElement("svg", {
+				F = t("./src/reddit/icons/svgs/Coin/index.tsx"),
+				S = e => o.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 96 96",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -477,7 +477,7 @@
 						className: M.a.badge
 					}, a), (u || p) && o.a.createElement("div", {
 						className: Object(G.a)(M.a.stamp, h)
-					}, o.a.createElement(F, {
+					}, o.a.createElement(S, {
 						className: M.a.stampIcon
 					}), !!u && o.a.createElement("div", {
 						className: Object(G.a)(M.a.stampValue, h)
@@ -487,7 +487,7 @@
 						className: Object(G.a)(M.a.contentContainer, h)
 					}, o.a.createElement("div", {
 						className: Object(G.a)(M.a.price, h)
-					}, o.a.createElement(S.a, {
+					}, o.a.createElement(F.a, {
 						className: M.a.priceCoinIcon
 					}), o.a.createElement("div", null, o.a.createElement("div", {
 						className: M.a.priceValue
@@ -553,16 +553,16 @@
 					isCompletePaypal: e => !!Object(j.R)(e).thanks
 				}),
 				W = Object(p.c)({
-					isGold: T.q,
-					language: T.S,
-					isLoggedIn: T.J,
+					isGold: T.p,
+					language: T.P,
+					isLoggedIn: T.G,
 					shouldShowCoinPurchaseModal: A.d
 				}),
 				J = Object(m.b)(W, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(d.b)("/settings/gold")),
 					onRouteToPremium: () => e(Object(d.b)("/premium")),
-					onOpenLoginModal: () => e(Object(P.e)()),
-					onPurchasePackage: a => e(Object(f.i)({
+					onOpenLoginModal: () => e(Object(f.e)()),
+					onPurchasePackage: a => e(Object(P.i)({
 						coinPackage: a,
 						correlationId: h.e()
 					}))
@@ -798,4 +798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.4f1f8513616c4a7ff7ee.js.map
+//# sourceMappingURL=Coins.de69002b2cf08ef41a8a.js.map

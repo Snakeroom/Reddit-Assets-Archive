@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.b99e84e15f29ca45b7b3.js
-// Retrieved at 1/29/2020, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.429a072b079732d8c5f6.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4"], {
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
@@ -66,9 +66,9 @@
 				C = S.a.div("ThumbnailContainer", g.a),
 				M = Object(c.c)({
 					isCurrentUserProfilePost: E.h,
-					language: v.S,
+					language: v.P,
 					post: E.I,
-					shouldOpenPostInNewTab: v.W,
+					shouldOpenPostInNewTab: v.T,
 					subreddit: E.U
 				}),
 				k = Object(a.b)(M);
@@ -709,4 +709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.b99e84e15f29ca45b7b3.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~d01aa6d4.429a072b079732d8c5f6.js.map

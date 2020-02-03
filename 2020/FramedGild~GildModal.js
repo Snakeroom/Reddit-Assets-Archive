@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e59dd3184c848f143027.js
-// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.bb3c9d65a21b067a5d15.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -57,7 +57,7 @@
 			})), a.d(t, "gildPending", (function() {
 				return T
 			})), a.d(t, "gildFailed", (function() {
-				return G
+				return L
 			})), a.d(t, "gildSuccessful", (function() {
 				return F
 			}));
@@ -94,9 +94,9 @@
 								id: e,
 								subredditCoins: n.subredditCoins
 							}))
-						} else await a(G(d))
+						} else await a(L(d))
 					} catch (d) {
-						await a(G(d))
+						await a(L(d))
 					} finally {
 						Object(x.b)(x.a.GildingFlow)
 					}
@@ -104,7 +104,7 @@
 					e(k()), window.setTimeout(() => {
 						t().gild.api.pending && e(_())
 					}, 2e3)
-				}, B = Object(s.a)(N.m), G = e => async (t, a) => {
+				}, B = Object(s.a)(N.m), L = e => async (t, a) => {
 					await t(B(e));
 					const s = a().gild.api.error;
 					if (s) {
@@ -119,7 +119,7 @@
 							text: a
 						}))
 					}
-				}, L = Object(s.a)(N.q), R = (e, t) => {
+				}, G = Object(s.a)(N.q), R = (e, t) => {
 					const {
 						id: a
 					} = t, n = Object(O.a)(a) ? Object(u.I)(e, {
@@ -131,7 +131,7 @@
 					} = r, d = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, i = n ? n.author : void 0, l = Object(g.K)(e, {
 						thingId: a
 					});
-					return L(Object.assign({}, t, {
+					return G(Object.assign({}, t, {
 						gilder: d,
 						gildee: i,
 						subredditId: l && l.id
@@ -318,8 +318,8 @@
 				k = a.n(_),
 				T = a("./src/reddit/i18n/components.tsx"),
 				B = a("./src/reddit/i18n/utils.ts"),
-				G = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				L = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				L = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				G = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				R = a("./src/reddit/controls/RadioInput/index.tsx"),
 				F = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Eye/index.tsx"),
@@ -504,7 +504,7 @@
 							value: U.PRIVATE
 						}, s.a.createElement(T.c, null, "Give anonymously")))
 					}
-					return s.a.createElement(L.a, {
+					return s.a.createElement(G.a, {
 						className: k.a.giver,
 						isSelected: t,
 						text: Object(B.c)("Make my gift anonymous"),
@@ -516,7 +516,7 @@
 						forcePublic: e,
 						message: t
 					} = this.props;
-					return e ? null : s.a.createElement(G.q, {
+					return e ? null : s.a.createElement(L.q, {
 						className: k.a.textArea,
 						"data-redditstyle": !0,
 						maxLength: 2048,
@@ -927,7 +927,7 @@
 					}, this.renderEmojiSubText())), s.a.createElement("button", {
 						className: Ie.a.closeBtn,
 						onClick: this.handleCloseIconClick
-					}, s.a.createElement(G.b, {
+					}, s.a.createElement(L.b, {
 						className: Ie.a.closeBtnIcon
 					})))
 				}
@@ -975,8 +975,8 @@
 					errorMessage: I.a,
 					isAnonymous: I.g,
 					iFramed: I.h,
-					isEmployee: P.G,
-					language: P.S,
+					isEmployee: P.D,
+					language: P.P,
 					message: I.b,
 					pending: I.e,
 					postOrComment: (e, t) => {
@@ -1326,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.e59dd3184c848f143027.js.map
+//# sourceMappingURL=FramedGild~GildModal.bb3c9d65a21b067a5d15.js.map

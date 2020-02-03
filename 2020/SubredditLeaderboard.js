@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.73e8318e557c7f7370e3.js
-// Retrieved at 2/3/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.de4922d217070f6abad0.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, a) {
@@ -661,7 +661,7 @@
 						} = t;
 						return Object(B.b)(e, a)
 					},
-					isMod: A.K,
+					isMod: A.H,
 					rankings: (e, t) => {
 						let {
 							categoryId: a
@@ -748,10 +748,10 @@
 			var V = Object(m.b)(F(U)),
 				Z = a("./src/reddit/components/CategoryPickerWidget/index.tsx"),
 				Q = a("./src/lib/lessComponent.tsx"),
-				K = a("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				Y = a("./src/reddit/components/CommunitiesDirectoryWidget/index.m.less"),
-				G = a.n(Y);
-			const X = Q.a.a("Link", G.a),
+				Y = a("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				G = a("./src/reddit/components/CommunitiesDirectoryWidget/index.m.less"),
+				K = a.n(G);
+			const X = Q.a.a("Link", K.a),
 				q = e => {
 					const t = "#" === e ? "0" : e.toLowerCase();
 					return o.a.createElement(X, {
@@ -759,14 +759,14 @@
 						key: e
 					}, e)
 				};
-			var J = e => o.a.createElement(K.a, {
-					className: G.a.Widget,
+			var J = e => o.a.createElement(Y.a, {
+					className: K.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
 				}, o.a.createElement("div", {
-					className: G.a.Title
+					className: K.a.Title
 				}, o.a.createElement(C.c, null, "Browse Communities A-Z")), o.a.createElement("div", {
-					className: G.a.LinkContainer
+					className: K.a.LinkContainer
 				}, Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ#").map(q))),
 				z = a("./src/reddit/components/SidebarContainer/index.tsx"),
 				$ = a("./src/reddit/components/SidebarSpacer/index.tsx"),
@@ -901,4 +901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.73e8318e557c7f7370e3.js.map
+//# sourceMappingURL=SubredditLeaderboard.de4922d217070f6abad0.js.map

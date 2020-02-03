@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.c170121bfc5fd0d43407.js
-// Retrieved at 1/30/2020, 7:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.60abb8a5876d742481f8.js
+// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -346,7 +346,7 @@
 				j = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				y = s.n(j);
 			const C = Object(i.b)(() => Object(o.c)({
-				labelNSFW: c.R
+				labelNSFW: c.O
 			}));
 			t.a = C(Object(a.b)(e => {
 				let {
@@ -750,7 +750,7 @@
 				m = s("./src/reddit/models/Flair/index.ts"),
 				u = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: u.R
+					labelNSFW: u.O
 				}),
 				b = Object(a.b)(p),
 				h = e => {
@@ -1484,7 +1484,7 @@
 							subredditId: s.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: L.W
+					shouldOpenPostInNewTab: L.T
 				}),
 				Q = Object(o.b)(Z),
 				G = e => {
@@ -1879,7 +1879,7 @@
 				g = s.n(x);
 			const v = Object(a.c)({
 					m2mIsEnabled: h.w,
-					isNightmode: f.U
+					isNightmode: f.R
 				}),
 				j = Object(o.b)(v),
 				y = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
@@ -3111,4 +3111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.c170121bfc5fd0d43407.js.map
+//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.60abb8a5876d742481f8.js.map
