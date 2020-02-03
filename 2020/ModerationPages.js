@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3fcfbad06e4ca1f59617.js
-// Retrieved at 2/3/2020, 1:00:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c6880fd366be0d721e79.js
+// Retrieved at 2/3/2020, 3:00:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileCo~ae34fcbd", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4925,7 +4925,7 @@
 				se = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				ne = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				ae = s("./src/reddit/components/VerticalVotes/index.tsx"),
-				oe = s("./src/reddit/components/ViewReportsDropdown/index.tsx"),
+				oe = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				re = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				ie = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				ce = s("./src/reddit/controls/Checkbox/index.tsx"),
@@ -28851,4 +28851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.3fcfbad06e4ca1f59617.js.map
+//# sourceMappingURL=ModerationPages.c6880fd366be0d721e79.js.map

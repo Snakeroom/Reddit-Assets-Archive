@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.f34e9f5cc2129bef7bbe.js
-// Retrieved at 1/30/2020, 7:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3760320f53027bd34fd5.js
+// Retrieved at 2/3/2020, 3:00:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ChatPost~ModQueuePages"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2840,7 +2840,7 @@
 				ue = s("./src/reddit/components/ReportFlow/index.tsx"),
 				he = s("./src/reddit/components/ShareMenu/index.tsx"),
 				be = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				ge = s("./src/reddit/components/ViewReportsDropdown/index.tsx"),
+				ge = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				xe = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
 				ve = s("./src/reddit/helpers/trackers/modTools.ts"),
 				Ce = s("./src/reddit/layout/row/Inline/index.tsx"),
@@ -13557,4 +13557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.f34e9f5cc2129bef7bbe.js.map
+//# sourceMappingURL=CommentsPage.3760320f53027bd34fd5.js.map

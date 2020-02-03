@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a2fc09ccd23082d80693.js
-// Retrieved at 2/3/2020, 2:40:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6c4be3374d58cf5c141e.js
+// Retrieved at 2/3/2020, 3:00:14 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, r, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) r = n[l], Object.prototype.hasOwnProperty.call(d, r) && d[r] && P.push(d[r][0]), d[r] = 0;
@@ -156,6 +156,7 @@
 			ReportFlow: 1,
 			"reddit-components-Governance-Leaderboard": 1,
 			"reddit-components-ProfileIdCard": 1,
+			"reddit-components-ViewReportsDropdown-index": 1,
 			"reddit-pages-CommentsPage-OtherDiscussions": 1,
 			schedulePickerModal: 1,
 			ChatMessageInput: 1,
@@ -343,6 +344,7 @@
 					ReportFlow: "ReportFlow",
 					"reddit-components-Governance-Leaderboard": "reddit-components-Governance-Leaderboard",
 					"reddit-components-ProfileIdCard": "reddit-components-ProfileIdCard",
+					"reddit-components-ViewReportsDropdown-index": "reddit-components-ViewReportsDropdown-index",
 					"reddit-pages-CommentsPage-OtherDiscussions": "reddit-pages-CommentsPage-OtherDiscussions",
 					schedulePickerModal: "schedulePickerModal",
 					ChatMessageInput: "ChatMessageInput",
@@ -405,7 +407,7 @@
 					Topic: "5ecad39c2a1860fc38f8",
 					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337": "b673ef0686c2abe959cc",
 					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21": "1998a700e567d2bcc8ea",
-					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd": "361ff027cb13c4534d02",
+					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd": "0e90e7e4e3779d07a49a",
 					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5": "d3a2779101fbe3bb37f8",
 					CollectionCommentsPage: "a75e9cbf662cc6d71ed5",
 					CommentsPage: "a75e9cbf662cc6d71ed5",
@@ -537,6 +539,7 @@
 					ReportFlow: "74fd9b99e9f3514a2735",
 					"reddit-components-Governance-Leaderboard": "8270dc7da1fc9506d637",
 					"reddit-components-ProfileIdCard": "687c66b899e9759d4bfb",
+					"reddit-components-ViewReportsDropdown-index": "03182ad22d9e5da359ce",
 					"reddit-pages-CommentsPage-OtherDiscussions": "19be4d4e1638a83b8df9",
 					schedulePickerModal: "3350a12e1d47b4cb5146",
 					ChatMessageInput: "d4f399656539af040a65",
@@ -759,6 +762,7 @@
 						ReportFlow: "ReportFlow",
 						"reddit-components-Governance-Leaderboard": "reddit-components-Governance-Leaderboard",
 						"reddit-components-ProfileIdCard": "reddit-components-ProfileIdCard",
+						"reddit-components-ViewReportsDropdown-index": "reddit-components-ViewReportsDropdown-index",
 						"reddit-pages-CommentsPage-OtherDiscussions": "reddit-pages-CommentsPage-OtherDiscussions",
 						schedulePickerModal: "schedulePickerModal",
 						ChatMessageInput: "ChatMessageInput",
@@ -821,14 +825,14 @@
 						Topic: "e871863b725e3a84dde0",
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~PostDraft~Pr~17e24337": "09d654703b5c94a7e95d",
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21": "9cf91267aeb4bd21480e",
-						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd": "82a0593e060a35bed545",
+						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd": "31460c276b429d8e4b56",
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5": "da993ef3c5073441c709",
-						CollectionCommentsPage: "462a8a84cddc4bf4f2db",
-						CommentsPage: "f34e9f5cc2129bef7bbe",
+						CollectionCommentsPage: "3e022575d34779c7d383",
+						CommentsPage: "3760320f53027bd34fd5",
 						Frontpage: "42b3574cc998bdc47b05",
-						ProfileComments: "265074092c9347df1656",
-						ProfileOverview: "98e3b39ead5aa1e857df",
-						ProfilePrivate: "a2686f170beb3fd415a4",
+						ProfileComments: "0a808061b03166318c89",
+						ProfileOverview: "99ca4e8e8a63b0bf22cc",
+						ProfilePrivate: "55cee08fb2a9dc164794",
 						SearchResults: "83f65b5b14e3249a038f",
 						"ChatPost~ModQueuePages": "a904173f23244ed72d95",
 						"ModQueue~ModQueuePages": "38b7f077b2280d31edd9",
@@ -913,7 +917,7 @@
 						"vendors~PostCreation": "4e734817c05bcd5ddb65",
 						PostCreation: "8063c290eeefeb86d486",
 						"vendors~ModerationPages~SubredditWiki": "926f2e0c1656f5babfc3",
-						ModerationPages: "3fcfbad06e4ca1f59617",
+						ModerationPages: "c6880fd366be0d721e79",
 						"vendors~EconHelperActions~SubredditPremiumBadgeManagement": "d1cf1838505b58032d67",
 						EconHelperActions: "46d6b979ead29c435ed4",
 						SubredditPremiumBadgeManagement: "e4aa14473f0613f443b0",
@@ -934,7 +938,7 @@
 						AuthorHovercard: "b62b97e65e3ae253570c",
 						AwardTooltip: "274fb51905091741520c",
 						"reddit-components-ClassicPost": "613915c6405c3233468f",
-						"reddit-components-CompactPost": "914d166af4121f5987aa",
+						"reddit-components-CompactPost": "182a10ab2aa75a03245e",
 						"reddit-components-LargePost": "b87e698d2c0d1c7ef1ec",
 						"reddit-components-MediumPost": "3011cf33e5250a0cf612",
 						CustomBadgeHovercardTooltip: "040cd8fcefd41c3d50cf",
@@ -953,6 +957,7 @@
 						ReportFlow: "12f86b44d08eb95c57f7",
 						"reddit-components-Governance-Leaderboard": "7215b5b161060fd2a6ab",
 						"reddit-components-ProfileIdCard": "14fb3f398f883447a198",
+						"reddit-components-ViewReportsDropdown-index": "a477642335f52d48c721",
 						"reddit-pages-CommentsPage-OtherDiscussions": "69dace6f3bb3429a60df",
 						schedulePickerModal: "96525e07f46051a46791",
 						ChatMessageInput: "90a0481e81c18e53ee01",
@@ -1064,4 +1069,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.a2fc09ccd23082d80693.js.map
+//# sourceMappingURL=runtime~Reddit.6c4be3374d58cf5c141e.js.map

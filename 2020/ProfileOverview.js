@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.98e3b39ead5aa1e857df.js
-// Retrieved at 2/3/2020, 2:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.99ca4e8e8a63b0bf22cc.js
+// Retrieved at 2/3/2020, 3:00:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1762,7 +1762,7 @@
 				k = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
 				M = s("./src/reddit/components/ModActionsMenu/index.tsx"),
 				R = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				A = s("./src/reddit/components/ViewReportsDropdown/index.tsx"),
+				A = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				B = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				F = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				D = s("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -9811,4 +9811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.98e3b39ead5aa1e857df.js.map
+//# sourceMappingURL=ProfileOverview.99ca4e8e8a63b0bf22cc.js.map
