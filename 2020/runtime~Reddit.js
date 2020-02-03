@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8fa35deff7797895f94d.js
-// Retrieved at 2/3/2020, 3:30:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ec4ffa696a92f96a1ae4.js
+// Retrieved at 2/3/2020, 3:50:14 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, r, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) r = n[l], Object.prototype.hasOwnProperty.call(d, r) && d[r] && P.push(d[r][0]), d[r] = 0;
@@ -155,6 +155,7 @@
 			IdCard: 1,
 			ReportFlow: 1,
 			"reddit-components-Governance-Leaderboard": 1,
+			"reddit-components-Governance-Proposal": 1,
 			"reddit-components-ProfileIdCard": 1,
 			"reddit-components-ViewReportsDropdown-index": 1,
 			"reddit-pages-CommentsPage-OtherDiscussions": 1,
@@ -344,6 +345,7 @@
 					IdCard: "IdCard",
 					ReportFlow: "ReportFlow",
 					"reddit-components-Governance-Leaderboard": "reddit-components-Governance-Leaderboard",
+					"reddit-components-Governance-Proposal": "reddit-components-Governance-Proposal",
 					"reddit-components-ProfileIdCard": "reddit-components-ProfileIdCard",
 					"reddit-components-ViewReportsDropdown-index": "reddit-components-ViewReportsDropdown-index",
 					"reddit-pages-CommentsPage-OtherDiscussions": "reddit-pages-CommentsPage-OtherDiscussions",
@@ -411,11 +413,11 @@
 					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21": "1998a700e567d2bcc8ea",
 					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd": "0e90e7e4e3779d07a49a",
 					"CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5": "d3a2779101fbe3bb37f8",
-					CollectionCommentsPage: "a75e9cbf662cc6d71ed5",
-					CommentsPage: "a75e9cbf662cc6d71ed5",
+					CollectionCommentsPage: "ab1aced2c264aa07c5da",
+					CommentsPage: "ab1aced2c264aa07c5da",
 					Frontpage: "78dadf5a734ea1833bd5",
 					ProfileComments: "5e6b042e88e4c5740662",
-					ProfileOverview: "cdb34a5c228da5757a63",
+					ProfileOverview: "2da73ddd612068d5a77f",
 					ProfilePrivate: "7aefd604a139b6129131",
 					SearchResults: "940a9fb06a56f5f0545e",
 					"ChatPost~ModQueuePages": "5342041f4a181b1f801c",
@@ -523,7 +525,7 @@
 					AwardTooltip: "f28c26b1c011f9803acc",
 					"reddit-components-ClassicPost": "cd9cd4a7af17e376ead5",
 					"reddit-components-CompactPost": "4f8ce1bb7cf76e93f399",
-					"reddit-components-LargePost": "d94f52b40e1a591fb676",
+					"reddit-components-LargePost": "e52033195580dd61850c",
 					"reddit-components-MediumPost": "b8a44c3816b566f37607",
 					CustomBadgeHovercardTooltip: "73de744e16f52fbcf7a0",
 					EconomicsSupportDonationAmount: "f91d70a391dd5faeb8ca",
@@ -540,6 +542,7 @@
 					IdCard: "51e473820df377ff7486",
 					ReportFlow: "74fd9b99e9f3514a2735",
 					"reddit-components-Governance-Leaderboard": "8270dc7da1fc9506d637",
+					"reddit-components-Governance-Proposal": "7fefb4c776805b1e1012",
 					"reddit-components-ProfileIdCard": "687c66b899e9759d4bfb",
 					"reddit-components-ViewReportsDropdown-index": "03182ad22d9e5da359ce",
 					"reddit-pages-CommentsPage-OtherDiscussions": "19be4d4e1638a83b8df9",
@@ -764,6 +767,7 @@
 						IdCard: "IdCard",
 						ReportFlow: "ReportFlow",
 						"reddit-components-Governance-Leaderboard": "reddit-components-Governance-Leaderboard",
+						"reddit-components-Governance-Proposal": "reddit-components-Governance-Proposal",
 						"reddit-components-ProfileIdCard": "reddit-components-ProfileIdCard",
 						"reddit-components-ViewReportsDropdown-index": "reddit-components-ViewReportsDropdown-index",
 						"reddit-pages-CommentsPage-OtherDiscussions": "reddit-pages-CommentsPage-OtherDiscussions",
@@ -831,11 +835,11 @@
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~PostCreation~ProfileComme~ccaebd21": "9cf91267aeb4bd21480e",
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd": "31460c276b429d8e4b56",
 						"CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5": "da993ef3c5073441c709",
-						CollectionCommentsPage: "3e022575d34779c7d383",
-						CommentsPage: "3760320f53027bd34fd5",
+						CollectionCommentsPage: "b04d25388f5ead69a5bc",
+						CommentsPage: "957bffbe539ca29e50bb",
 						Frontpage: "42b3574cc998bdc47b05",
 						ProfileComments: "0a808061b03166318c89",
-						ProfileOverview: "99ca4e8e8a63b0bf22cc",
+						ProfileOverview: "315604ab2220d655efed",
 						ProfilePrivate: "55cee08fb2a9dc164794",
 						SearchResults: "83f65b5b14e3249a038f",
 						"ChatPost~ModQueuePages": "a904173f23244ed72d95",
@@ -943,7 +947,7 @@
 						AwardTooltip: "274fb51905091741520c",
 						"reddit-components-ClassicPost": "613915c6405c3233468f",
 						"reddit-components-CompactPost": "182a10ab2aa75a03245e",
-						"reddit-components-LargePost": "b87e698d2c0d1c7ef1ec",
+						"reddit-components-LargePost": "35360ebc21e0efc73a87",
 						"reddit-components-MediumPost": "3011cf33e5250a0cf612",
 						CustomBadgeHovercardTooltip: "040cd8fcefd41c3d50cf",
 						EconomicsSupportDonationAmount: "3dd9a0ddcb92b48642c4",
@@ -960,6 +964,7 @@
 						IdCard: "d9957f131d167bf74c21",
 						ReportFlow: "12f86b44d08eb95c57f7",
 						"reddit-components-Governance-Leaderboard": "7215b5b161060fd2a6ab",
+						"reddit-components-Governance-Proposal": "550384cac234bbb84678",
 						"reddit-components-ProfileIdCard": "14fb3f398f883447a198",
 						"reddit-components-ViewReportsDropdown-index": "a477642335f52d48c721",
 						"reddit-pages-CommentsPage-OtherDiscussions": "69dace6f3bb3429a60df",
@@ -1074,4 +1079,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.8fa35deff7797895f94d.js.map
+//# sourceMappingURL=runtime~Reddit.ec4ffa696a92f96a1ae4.js.map
