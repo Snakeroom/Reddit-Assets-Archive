@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3e5912e668a2c55e1bfc.js
-// Retrieved at 1/30/2020, 6:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b87e698d2c0d1c7ef1ec.js
+// Retrieved at 2/3/2020, 2:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -574,7 +574,7 @@
 			var o = s("./src/higherOrderComponents/makeAsync.tsx"),
 				n = s("./src/lib/loadWithRetries/index.ts");
 			const r = Object(o.a)({
-				getComponent: () => Object(n.a)(() => Promise.all([s.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~20a7252d"), s.e("InFeedChaining")]).then(s.bind(null, "./src/reddit/components/DiscoveryUnit/InFeedChaining/index.tsx"))).then(e => e.default),
+				getComponent: () => Object(n.a)(() => Promise.all([s.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), s.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~20a7252d"), s.e("InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"), s.e("InFeedChaining")]).then(s.bind(null, "./src/reddit/components/DiscoveryUnit/InFeedChaining/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => null,
 				LoadingComponent: () => null
 			});
@@ -967,11 +967,11 @@
 					})))
 				}
 			}
-			const z = Object(c.c)({
+			const U = Object(c.c)({
 				language: e => e.user.language,
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var U = Object(i.b)(z)(Object(g.b)(W)),
+			var z = Object(i.b)(U)(Object(g.b)(W)),
 				G = s("./src/reddit/components/Poll/index.m.less"),
 				Z = s.n(G);
 			class K extends a.a.Component {
@@ -1016,7 +1016,7 @@
 						poll: o,
 						result: n,
 						subredditId: r
-					}) : a.a.createElement(U, {
+					}) : a.a.createElement(z, {
 						poll: o,
 						onVoteSelection: s,
 						voteInProgress: c,
@@ -1359,12 +1359,12 @@
 				H = s("./src/reddit/components/PostMedia/index.tsx"),
 				D = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				W = s("./src/reddit/i18n/components.tsx"),
-				z = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				U = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
-				G = s.n(U);
+				U = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
+				z = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
+				G = s.n(z);
 			var Z = () => n.a.createElement("div", {
 					className: G.a.container
-				}, n.a.createElement(z.a, {
+				}, n.a.createElement(U.a, {
 					className: G.a.pinnedIcon
 				}), n.a.createElement("span", {
 					className: G.a.metaText
@@ -1488,8 +1488,8 @@
 						isM2MHomeRedirectEnabled: C,
 						isOverlay: P,
 						isPostChainDismissed: W,
-						isPostChained: z,
-						language: U,
+						isPostChained: U,
+						language: z,
 						listingKey: G,
 						listingName: X,
 						moderatorPermissions: Q,
@@ -1551,7 +1551,7 @@
 						redditStyle: ve
 					}, n.a.createElement(S.a, {
 						post: de,
-						language: U
+						language: z
 					}), Se && Se.showPinnnedHeader && n.a.createElement(Z, null), n.a.createElement(Y.a, {
 						className: ue.a.postTopLine,
 						hideNSFWPref: v,
@@ -1561,7 +1561,7 @@
 						isCompactPinnedPost: !!Se,
 						isCurrentUserProfilePost: y,
 						isOverlay: !!P,
-						language: U,
+						language: z,
 						post: de,
 						shouldShowSubscribeButton: _e,
 						showSubreddit: !x && !de.isSponsored,
@@ -1615,7 +1615,7 @@
 						isSponsored: de.isSponsored,
 						source: de.source
 					}, de.callToAction)), oe && fe && je && n.a.createElement(M.a, {
-						language: U,
+						language: z,
 						onIgnoreReports: re,
 						reportable: de
 					}), n.a.createElement(R.d, {
@@ -1634,7 +1634,7 @@
 						hasModPostPerms: fe,
 						isLargePost: !0,
 						isOverlay: !!P,
-						language: U,
+						language: z,
 						modModeEnabled: oe,
 						onIgnoreReports: re,
 						onOpenReportsDropdown: ae,
@@ -1648,7 +1648,7 @@
 							report: !1
 						})
 					}))));
-					return n.a.createElement(n.a.Fragment, null, ke, z && !W && n.a.createElement(I.a, {
+					return n.a.createElement(n.a.Fragment, null, ke, U && !W && n.a.createElement(I.a, {
 						className: ue.a.chain,
 						listingKey: G,
 						listingName: X,
@@ -2559,4 +2559,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.3e5912e668a2c55e1bfc.js.map
+//# sourceMappingURL=reddit-components-LargePost.b87e698d2c0d1c7ef1ec.js.map
