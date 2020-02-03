@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.315604ab2220d655efed.js
-// Retrieved at 2/3/2020, 3:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.5e60e782fa88d2d8c482.js
+// Retrieved at 2/3/2020, 5:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -5132,7 +5132,7 @@
 					const s = "click-".concat(e);
 					let o = W.get(s);
 					return void 0 === o && (o = (e, s) => {
-						s.isSponsored && Object(S.a)(s.events, y.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(x.d)(s.source.outboundUrl, x.c.BLANK) : t.openPost({
+						s.isSponsored && Object(S.a)(s.events, y.a.Click, s), s.isSponsored && s.source && s.source.outboundUrl ? Object(x.d)(s.source.outboundUrl, x.c.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(w.a)(e)
 						})
@@ -5738,7 +5738,7 @@
 					const s = "click-".concat(e);
 					let o = I.get(s);
 					return void 0 === o && (o = (e, s) => {
-						s.isSponsored && Object(g.a)(s.events, l.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(d.d)(s.source.outboundUrl, d.c.BLANK) : t.openPost({
+						s.isSponsored && Object(g.a)(s.events, l.a.Click, s), s.isSponsored && s.source && s.source.outboundUrl ? Object(d.d)(s.source.outboundUrl, d.c.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(x.a)(e)
 						})
@@ -8703,4 +8703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.315604ab2220d655efed.js.map
+//# sourceMappingURL=ProfileOverview.5e60e782fa88d2d8c482.js.map
