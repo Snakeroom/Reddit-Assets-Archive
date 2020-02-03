@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ec4ffa696a92f96a1ae4.js
-// Retrieved at 2/3/2020, 3:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f90d2a6b8a4a40a13491.js
+// Retrieved at 2/3/2020, 4:20:13 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, r, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) r = n[l], Object.prototype.hasOwnProperty.call(d, r) && d[r] && P.push(d[r][0]), d[r] = 0;
@@ -904,7 +904,7 @@
 						MembershipPaywallPage: "4da92ec6702acb136608",
 						FlairEdit: "3a235d767cfad066b8d5",
 						"vendors~Chat~RedesignChat": "1e07342f205c421b2b97",
-						"Chat~RedesignChat": "6e26b9198167a6981253",
+						"Chat~RedesignChat": "6490d106a266f6608e23",
 						RedesignChat: "3fbabf741ffe6bafe658",
 						"vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~61cbc843": "3418b2a2f71e10177228",
 						CoinsPurchaseModal: "30ab1cf59ac98965dd92",
@@ -1079,4 +1079,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.ec4ffa696a92f96a1ae4.js.map
+//# sourceMappingURL=runtime~Reddit.f90d2a6b8a4a40a13491.js.map
