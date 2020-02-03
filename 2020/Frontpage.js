@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a2b8b926275cd4c5e9ab.js
-// Retrieved at 2/3/2020, 5:10:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b6d567b1e021f79ab953.js
+// Retrieved at 2/3/2020, 5:20:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3539,7 +3539,7 @@
 					const s = "click-".concat(e);
 					let n = V.get(s);
 					return void 0 === n && (n = (e, s) => {
-						s.isSponsored && Object(N.a)(s.events, j.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(g.d)(s.source.outboundUrl, g.c.BLANK) : t.openPost({
+						s.isSponsored && Object(N.a)(s.events, j.a.Click, s), s.isSponsored && s.source && s.source.outboundUrl ? Object(g.d)(s.source.outboundUrl, g.c.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(S.a)(e)
 						})
@@ -4480,7 +4480,7 @@
 				ne = b.a.wrapped(N.a, "PostContainer", G.a),
 				re = 640,
 				oe = (e, t) => {
-					Object(I.a)(t.events, _.a.Click), t.source ? t.source.outboundUrl ? Object(E.d)(t.source.outboundUrl, E.c.BLANK) : Object(E.d)(t.source.url, E.c.BLANK) : Object(E.d)(t.permalink, E.c.BLANK)
+					Object(I.a)(t.events, _.a.Click, t), t.source ? t.source.outboundUrl ? Object(E.d)(t.source.outboundUrl, E.c.BLANK) : Object(E.d)(t.source.url, E.c.BLANK) : Object(E.d)(t.permalink, E.c.BLANK)
 				},
 				ae = e => Object(B.a)(e.title, 100),
 				ie = e => {
@@ -7354,4 +7354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.a2b8b926275cd4c5e9ab.js.map
+//# sourceMappingURL=Frontpage.b6d567b1e021f79ab953.js.map

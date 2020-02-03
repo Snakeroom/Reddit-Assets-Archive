@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.35140c11cf5093706154.js
-// Retrieved at 2/3/2020, 1:00:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.47b5c5e9627fda42abc4.js
+// Retrieved at 2/3/2020, 5:20:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/orderBy.js": function(e, t, s) {
@@ -3452,7 +3452,7 @@
 				ne = b.a.wrapped(N.a, "PostContainer", q.a),
 				ie = 640,
 				re = (e, t) => {
-					Object(T.a)(t.events, P.a.Click), t.source ? t.source.outboundUrl ? Object(C.d)(t.source.outboundUrl, C.c.BLANK) : Object(C.d)(t.source.url, C.c.BLANK) : Object(C.d)(t.permalink, C.c.BLANK)
+					Object(T.a)(t.events, P.a.Click, t), t.source ? t.source.outboundUrl ? Object(C.d)(t.source.outboundUrl, C.c.BLANK) : Object(C.d)(t.source.url, C.c.BLANK) : Object(C.d)(t.permalink, C.c.BLANK)
 				},
 				ae = e => Object(L.a)(e.title, 100),
 				oe = e => {
@@ -9115,4 +9115,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.35140c11cf5093706154.js.map
+//# sourceMappingURL=SubredditWiki.47b5c5e9627fda42abc4.js.map
