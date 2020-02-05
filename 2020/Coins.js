@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.de69002b2cf08ef41a8a.js
-// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.95dc2792351af0a5e4aa.js
+// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -503,8 +503,8 @@
 					}, t))))
 				},
 				V = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				R = t("./src/reddit/components/GildMarketingDescription/index.tsx"),
-				B = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				B = t("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				R = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				z = t("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
 				q = t.n(z);
 			const Q = e => {
@@ -550,7 +550,7 @@
 					fill: "#FFF"
 				}));
 			const Y = Object(j.t)({
-					isCompletePaypal: e => !!Object(j.R)(e).thanks
+					isCompletePaypal: e => !!Object(j.Q)(e).thanks
 				}),
 				W = Object(p.c)({
 					isGold: T.p,
@@ -602,7 +602,7 @@
 					} = this.props;
 					return o.a.createElement("div", {
 						className: e
-					}, this.renderHero(), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), this.renderModal(), o.a.createElement(B.a, null))
+					}, this.renderHero(), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), this.renderModal(), o.a.createElement(R.a, null))
 				}
 				renderHero() {
 					return o.a.createElement("div", {
@@ -633,7 +633,7 @@
 						className: v.a.detailDesription
 					}, o.a.createElement(w.c, null, "Spend your Coins on these Awards reserved exclusively for the finest Reddit contributors. Awarding a post or comment highlights it for all to see, and some Awards also grant the honoree special bonuses.")), o.a.createElement("div", {
 						className: v.a.gridContainer
-					}, o.a.createElement(R.a, {
+					}, o.a.createElement(B.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: "".concat(s.a.assetPath, "/img/gold/badges/award-silver-large.png")
@@ -643,7 +643,7 @@
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
 						}, o.a.createElement(H.a, null), C.k.coinPrice)
-					})), o.a.createElement(R.a, {
+					})), o.a.createElement(B.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: "".concat(s.a.assetPath, "/img/gold/badges/award-gold-large.png")
@@ -656,7 +656,7 @@
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
 						}, o.a.createElement(H.a, null), C.i.coinPrice)
-					})), o.a.createElement(R.a, {
+					})), o.a.createElement(B.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: "".concat(s.a.assetPath, "/img/gold/badges/award-platinum-large.png")
@@ -798,4 +798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.de69002b2cf08ef41a8a.js.map
+//# sourceMappingURL=Coins.95dc2792351af0a5e4aa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.c0c31b9e62d872e2e447.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.5424da0f656a33c857ac.js
+// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -362,7 +362,7 @@
 				}),
 				xe = Object(o.b)(pe, (e, t) => ({
 					openDropdown: () => {
-						e(Object(i.g)({
+						e(Object(i.h)({
 							tooltipId: t.id
 						}))
 					}
@@ -834,4 +834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.c0c31b9e62d872e2e447.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.5424da0f656a33c857ac.js.map

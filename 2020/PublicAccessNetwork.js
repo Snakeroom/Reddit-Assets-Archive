@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cb7603f6aea646d69015.js
-// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a79d4332fb02e9794b99.js
+// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -352,7 +352,7 @@
 						dropdownId: s
 					} = t;
 					return {
-						toggleDropdown: () => e(Object(d.g)({
+						toggleDropdown: () => e(Object(d.h)({
 							tooltipId: s
 						}))
 					}
@@ -1792,7 +1792,7 @@
 						postId: s
 					} = t;
 					return {
-						loadComments: () => e(Object(ut.r)(s, void 0, {
+						loadComments: () => e(Object(ut.q)(s, void 0, {
 							sort: dt.q.CHAT
 						}, dt.q.CHAT)),
 						openLoginModal: () => e(Object(u.e)()),
@@ -2624,4 +2624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.cb7603f6aea646d69015.js.map
+//# sourceMappingURL=PublicAccessNetwork.a79d4332fb02e9794b99.js.map

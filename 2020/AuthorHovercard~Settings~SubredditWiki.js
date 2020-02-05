@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.ee5ba02730f9a4a17d18.js
-// Retrieved at 2/4/2020, 1:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.0b9fd1acc233af0a35c1.js
+// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -84,7 +84,7 @@
 				K = r.n(D);
 			const {
 				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = C.a.wrapped(k.a, "BanIcon", K.a), Y = C.a.wrapped(S.a, "MuteIcon", K.a), q = C.a.wrapped(B.a, "UnbanIcon", K.a), z = Object(o.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = C.a.wrapped(k.a, "BanIcon", K.a), q = C.a.wrapped(S.a, "MuteIcon", K.a), Y = C.a.wrapped(B.a, "UnbanIcon", K.a), z = Object(o.c)({
 				hasModMailPermissions: Object(u.a)(F.c.mail),
 				isUserBanned: (e, t) => !!Object(Z.g)(e, {
 					subredditId: t.subredditId,
@@ -116,7 +116,7 @@
 						onClick: () => {
 							a(this.props.user.id), o(_.e(t))
 						}
-					}, s.a.createElement(q, null), R._("Unban User", null, {
+					}, s.a.createElement(Y, null), R._("Unban User", null, {
 						hk: "1aASyW"
 					})) : s.a.createElement(A.a, {
 						role: "button",
@@ -130,7 +130,7 @@
 						onClick: () => {
 							i(), o(_.d(t))
 						}
-					}, s.a.createElement(Y, null), R._("Mute User", null, {
+					}, s.a.createElement(q, null), R._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
@@ -322,7 +322,7 @@
 					userFlair: v.c
 				}),
 				Me = Object(a.b)(He, (e, t) => ({
-					onHideTooltip: () => e(Object(d.h)())
+					onHideTooltip: () => e(Object(d.i)())
 				}));
 			t.a = Me(e => s.a.createElement("div", {
 				className: e.className,
@@ -434,7 +434,7 @@
 				dropdownIsOpen: (e, t) => Object(l.b)(t.tooltipId)(e)
 			});
 			var m = Object(o.b)(u, (e, t) => ({
-					onCloseUserDropdown: () => e(Object(c.h)()),
+					onCloseUserDropdown: () => e(Object(c.i)()),
 					onOpenUserDropdown: async () => {
 						e(Object(c.f)({
 							tooltipId: t.tooltipId
@@ -446,7 +446,7 @@
 				dropdownIsOpen: (e, t) => Object(l.b)(t.tooltipId)(e)
 			});
 			var b = Object(o.b)(v, (e, t) => ({
-					onCloseUserDropdown: () => e(Object(c.h)()),
+					onCloseUserDropdown: () => e(Object(c.i)()),
 					onOpenUserDropdown: async () => {
 						e(Object(c.f)({
 							tooltipId: t.tooltipId
@@ -763,9 +763,9 @@
 			const o = e => !!(e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.G)(e),
-					experimentName: n.N
+					experimentName: n.L
 				});
-				return Object(n.Yb)(t) ? void 0 : t
+				return Object(n.Sb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
@@ -785,8 +785,8 @@
 				c = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => d.has((Object(a.e)(e) || "").toLowerCase()) || i.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: o.G,
-					experimentName: n.ib
-				}) === n.pb.Enabled
+					experimentName: n.eb
+				}) === n.lb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -947,4 +947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.ee5ba02730f9a4a17d18.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.0b9fd1acc233af0a35c1.js.map

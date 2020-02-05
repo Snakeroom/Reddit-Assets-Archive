@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.472bfdc3c3bf2f8ad774.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4f91c7cb7409560bcc45.js
+// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -862,7 +862,7 @@
 				}
 			}
 			var U = Object(g.b)(M, e => ({
-					toggleTooltip: t => e(Object(S.g)({
+					toggleTooltip: t => e(Object(S.h)({
 						tooltipId: t
 					}))
 				}))(Object(O.b)(A)),
@@ -2015,7 +2015,7 @@
 						type: r
 					} = e, i = f(e, ["border", "language", "small", "type"]);
 					return a.a.createElement(x, i, a.a.createElement(y, {
-						className: Object(b.a)(o.o, i.className, {
+						className: Object(b.a)(o.n, i.className, {
 							[p.a.isSmall]: n
 						})
 					}))
@@ -2195,7 +2195,7 @@
 					left: 0,
 					position: "fixed",
 					right: 0,
-					top: m.g,
+					top: m.f,
 					willChange: "transform",
 					zIndex: u.f
 				};
@@ -2319,14 +2319,11 @@
 			var n = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/actions/subscription/index.ts"),
-				o = s("./src/reddit/selectors/monthsToMinutes.ts"),
-				i = s("./src/reddit/selectors/subreddit.ts"),
-				c = s("./src/reddit/selectors/user.ts");
+				o = s("./src/reddit/selectors/subreddit.ts"),
+				i = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(a.c)({
-				language: c.P,
-				subscribeReminderTooltipId: o.C,
-				subscribeTooltipId: o.D,
-				userIsSubscriber: i.cb
+				language: i.P,
+				userIsSubscriber: o.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -4149,7 +4146,7 @@
 			}
 			var qt = Object(r.b)(Zt, (e, t) => ({
 					openDropdown: () => {
-						e(Object(Ft.g)({
+						e(Object(Ft.h)({
 							tooltipId: t.dropdownId
 						}))
 					}
@@ -5604,4 +5601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.472bfdc3c3bf2f8ad774.js.map
+//# sourceMappingURL=Settings.4f91c7cb7409560bcc45.js.map
