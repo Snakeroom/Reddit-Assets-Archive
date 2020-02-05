@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e2f58dd55b3f5e75ba0c.js
-// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.67f20570a26d6ec89ecd.js
+// Retrieved at 2/5/2020, 12:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -1035,8 +1035,8 @@
 				H = s("./src/reddit/constants/keycodes.ts"),
 				z = s("./src/reddit/helpers/dom/index.ts"),
 				K = s("./src/reddit/helpers/trackers/rpan.ts"),
-				G = s("./src/reddit/helpers/trackers/screenview.ts"),
-				J = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				J = s("./src/reddit/helpers/trackers/screenview.ts"),
+				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				Y = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				q = s("./src/reddit/selectors/media.ts"),
 				X = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -1296,7 +1296,7 @@
 				He = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
 				ze = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/index.m.less"),
 				Ke = s.n(ze);
-			const Ge = e => {
+			const Je = e => {
 					let {
 						onClick: t
 					} = e;
@@ -1309,7 +1309,7 @@
 						className: Ke.a.menuIcon
 					}))
 				},
-				Je = e => {
+				Ge = e => {
 					let {
 						isMuted: t,
 						onToggle: s
@@ -1500,7 +1500,7 @@
 						onMouseUp: this.onMouseUp
 					}, !s && i.a.createElement("div", {
 						className: Ke.a.overlayTop
-					}, t && this.renderRecommendedViewerSubreddit(), e && !a && i.a.createElement(i.a.Fragment, null, !t && this.renderTitleContainer(), i.a.createElement(Ge, {
+					}, t && this.renderRecommendedViewerSubreddit(), e && !a && i.a.createElement(i.a.Fragment, null, !t && this.renderTitleContainer(), i.a.createElement(Je, {
 						onClick: this.onCopyLink
 					}), i.a.createElement(qe, {
 						onClick: u,
@@ -1591,7 +1591,7 @@
 						hk: "24LpRV"
 					})) : a ? i.a.createElement("div", {
 						className: Ke.a.intro
-					}, i.a.createElement(Je, {
+					}, i.a.createElement(Ge, {
 						isMuted: d,
 						onToggle: b
 					})) : l || !t && !r && !n && m ? null : c ? i.a.createElement("div", {
@@ -1972,7 +1972,7 @@
 					}, this.onAutoPlayPrevented = this.onAutoPlayPrevented.bind(this), this.onClose = this.onClose.bind(this), this.onEnded = this.onEnded.bind(this), this.onNextStream = this.onNextStream.bind(this), this.onPlayerError = this.onPlayerError.bind(this), this.onPreviousStream = this.onPreviousStream.bind(this), this.onReport = this.onReport.bind(this), this.onVideoPlayerLevelLoaded = this.onVideoPlayerLevelLoaded.bind(this), this.onVideoPlayerLoadedData = this.onVideoPlayerLoadedData.bind(this), this.onVideoPlayerLoadingData = this.onVideoPlayerLoadingData.bind(this), this.onVideoPlayerResourceRemoved = this.onVideoPlayerResourceRemoved.bind(this), this.scheduleSwitchingOnStreamEnded = this.scheduleSwitchingOnStreamEnded.bind(this)
 				}
 				componentDidMount() {
-					this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(G.n)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
+					this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(J.n)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
 				}
 				componentDidUpdate(e) {
 					const {
@@ -1988,7 +1988,9 @@
 					}));
 					!s && e.isIntroInProgress && this.handleNewStream(), s || e.isIntroInProgress || !Dt(t, e.currentStream) || this.handleNewStream(), this.state.isSwitchingOnStreamEndedScheduled || s || !(!t && !this.state.isLoading || n === X.a.VOD && this.state.isVodStreamJustFinished || !this.isCurrentStreamWatchable() && this.state.isUnavailableVideoJustFinished) || (this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.scheduleSwitchingOnStreamEnded()), this.state.isVodStreamJustFinished && (this.setState({
 						isVodStreamJustFinished: !1
-					}), this.showStreamEndedPrompt()), s || t || this.state.isLoading || this.state.isError || this.setState(Object.assign({}, this.state, {
+					}), this.showStreamEndedPrompt()), this.state.isUnavailableVideoJustFinished && this.setState({
+						isUnavailableVideoJustFinished: !1
+					}), s || t || this.state.isLoading || this.state.isError || this.setState(Object.assign({}, this.state, {
 						isError: !0
 					})), r && this.state.isVideoPaused && this.setState({
 						isVideoPaused: !0
@@ -2222,7 +2224,6 @@
 					} = this.props, r = e.post.id;
 					this.cancelSwitchingOnStreamEnded(), this.hideStreamEndedPrompt(), s(r), this.setState({
 						isLoading: !0,
-						isUnavailableVideoJustFinished: !1,
 						isVideoPaused: !1
 					}), t(this.getStreamLocation(e))
 				}
@@ -2275,7 +2276,7 @@
 						"aria-label": g.fbt._("close button", null, {
 							hk: "2l5YIS"
 						})
-					}, i.a.createElement(J.a, {
+					}, i.a.createElement(G.a, {
 						className: Vt.a.closeIcon
 					}))
 				},
@@ -2312,7 +2313,7 @@
 						e(o(i))
 					}
 				}));
-			class Gt extends i.a.Component {
+			class Jt extends i.a.Component {
 				constructor(e) {
 					super(e), this.onNavigation = this.onNavigation.bind(this)
 				}
@@ -2363,13 +2364,13 @@
 						related: a,
 						streamIdFromPath: d,
 						subreddit: c && "r/".concat(c)
-					}), s && !t && i.a.createElement(v, null)) : i.a.createElement(Jt, null)
+					}), s && !t && i.a.createElement(v, null)) : i.a.createElement(Gt, null)
 				}
 			}
-			const Jt = () => i.a.createElement("div", {
+			const Gt = () => i.a.createElement("div", {
 				className: Object(l.a)(Ht.a.rpanContainer, Ht.a.forbiddenScreen)
 			}, i.a.createElement("h2", null, i.a.createElement(Ee.c, null, "Not Found")));
-			t.default = Kt(Object(U.b)(Object(Bt.b)(Gt)))
+			t.default = Kt(Object(U.b)(Object(Bt.b)(Jt)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
@@ -2623,4 +2624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.e2f58dd55b3f5e75ba0c.js.map
+//# sourceMappingURL=PublicAccessNetwork.67f20570a26d6ec89ecd.js.map
