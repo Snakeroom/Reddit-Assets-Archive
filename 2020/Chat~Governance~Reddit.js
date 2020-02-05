@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c97279aa60bbdd19035c.js
-// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b4cfd381ee5c6e993eb.js
+// Retrieved at 2/5/2020, 1:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3255,32 +3255,6 @@
 							en: "Cookies help us deliver our Services. By using our Services or clicking I agree, you agree to our use of cookies."
 						}
 					},
-					explore: {
-						categories: {
-							description: {
-								en: "Breaking news, sports, TV fan theories, and never-ending streams of cute animals. The conversation starts here."
-							},
-							title: {
-								en: "Find your community on Reddit"
-							}
-						},
-						communities: {
-							title: {
-								en: "Explore %{categoryName}"
-							}
-						},
-						lookingForPopular: {
-							en: "Looking for the Popular feed?"
-						},
-						upsell: {
-							description: {
-								en: "Reddit is home to thousands of communities, endless conversation, and authentic human connection. Create your account now!"
-							},
-							title: {
-								en: "Find your communities. Customize your Home feed."
-							}
-						}
-					},
 					flair: {
 						addUserFlair: {
 							en: "add user flair"
@@ -3784,9 +3758,6 @@
 						filter: {
 							en: "Filter"
 						},
-						explore: {
-							en: "Explore"
-						},
 						hamburgerMenu: {
 							en: "My Communities Menu"
 						},
@@ -3960,17 +3931,6 @@
 						},
 						errorTitle: {
 							en: "We couldn't load this listing"
-						},
-						explore: {
-							howRedditWorks: {
-								en: "How Reddit works"
-							},
-							longDescription: {
-								en: 'Find your breaking news, sports,<br />TV fan theories, or never-ending<br />streams of cute animals.<br />See what’s <a href="/r/popular">trending on r/popular</a>.'
-							},
-							title: {
-								en: "Explore"
-							}
 						},
 						home: {
 							title: {
@@ -4535,82 +4495,6 @@
 						},
 						unmarkSpoiler: {
 							en: "Unmark as Spoiler"
-						}
-					},
-					monthsToMinutes: {
-						accountCompleteness: {
-							collapse: {
-								en: "Close"
-							},
-							collapsed: {
-								title: {
-									communities: {
-										en: "and %{count} other communities"
-									},
-									from: {
-										en: "from"
-									},
-									posts: {
-										en: "%{count} new posts"
-									}
-								}
-							},
-							expand: {
-								en: "Expand"
-							},
-							expanded: {
-								title: {
-									en: "%{count} new posts from communities we think you’ll love"
-								}
-							},
-							newPostsForYou: {
-								en: "new posts for you"
-							},
-							otherCommunitiesAdded: {
-								en: "+ %{count} other communities added"
-							},
-							seeNewPosts: {
-								en: "See new posts"
-							},
-							seePosts: {
-								en: "See posts"
-							}
-						},
-						subscribeCapToast: {
-							title: {
-								en: "Oops! You need to Sign Up to join more communities"
-							},
-							subTitle: {
-								en: ""
-							},
-							content: {
-								en: "Sign up to save your communities and secure your account"
-							}
-						},
-						subscribeProfileFailToast: {
-							en: "Oops! You need to sign up to follow other users."
-						},
-						tooltips: {
-							disabled: {
-								en: "Check out more posts to unlock your home."
-							},
-							unlock: {
-								cancel: {
-									en: "Maybe later"
-								},
-								description: {
-									en: "We've added communities and posts to your home that we think you'll love."
-								},
-								subTitle: {
-									en: "%{count} New Posts in Your Home"
-								},
-								success: {
-									en: "See posts"
-								},
-								title: {
-									en: "Your Home's unlocked"
-								}
-							}
 						}
 					},
 					multireddit: {
@@ -11802,7 +11686,6 @@
 					COLLECTION_COMMENTS_PAGE: "CollectionCommentsPage",
 					COMMENTS_PAGE: "CommentsPage",
 					EMPTY: "Empty",
-					EXPLORE: "Explore",
 					DASHBOARD: "UiDashboard",
 					FRONTPAGE: "Frontpage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "MetaMemberhipPaywallPage",
@@ -12493,14 +12376,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d3dff98-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("66d9eed-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d3dff98-production",
+						release: "66d9eed-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new r.Integrations.Breadcrumbs({
@@ -13000,7 +12883,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "d3dff98-production",
+							releaseClient: "66d9eed-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -14222,10 +14105,8 @@
 				return I
 			})), i.d(t, "z", (function() {
 				return B
-			})), i.d(t, "A", (function() {
-				return R
 			})), i.d(t, "r", (function() {
-				return x
+				return R
 			}));
 			const n = "announcement-banner-seen-store",
 				s = "banner_dismissed_store",
@@ -14246,14 +14127,13 @@
 				v = "local_persisted_experiments_store",
 				f = "mod-onboarding-store",
 				b = "modal_dismissed_store",
-				T = "m2m",
-				S = "post-chain-dismissal-store",
-				F = "post-chain-store",
-				E = "post-creation-edu-tooltip-store",
-				I = "profile-pinned-posts-store",
-				B = "recent_searches",
-				R = "rpan-user-settings-store",
-				x = "low-activity-call-to-action-store"
+				T = "post-chain-dismissal-store",
+				S = "post-chain-store",
+				F = "post-creation-edu-tooltip-store",
+				E = "profile-pinned-posts-store",
+				I = "recent_searches",
+				B = "rpan-user-settings-store",
+				R = "low-activity-call-to-action-store"
 		},
 		"./src/reddit/constants/postLayout.ts": function(e, t, i) {
 			"use strict";
@@ -14575,7 +14455,7 @@
 						section: h.c.recent,
 						id: _()()
 					}))
-				})(localStorage, u.z, e),
+				})(localStorage, u.y, e),
 				O = (e, t) => ((e, t, i, n) => {
 					let s = (g(e, n) || {})[t] || [],
 						r = -1;
@@ -14587,22 +14467,22 @@
 						})
 					}), -1 !== r && s.splice(r, 1), s.length >= 5 && (s = s.slice(0, 4));
 					const o = {
-						[u.z]: s
+						[u.y]: s
 					};
 					return s.unshift(i), w(e, n, o), s
-				})(localStorage, u.z, e, t),
+				})(localStorage, u.y, e, t),
 				N = (e, t) => ((e, t, i, n) => {
 					const s = g(e, n);
 					let r = [];
 					if (s && s[t]) {
 						r = s[t].filter(e => !o()(e, i));
 						const d = {
-							[u.z]: r
+							[u.y]: r
 						};
 						w(e, n, d)
 					}
 					return r
-				})(localStorage, u.z, e, t),
+				})(localStorage, u.y, e, t),
 				j = (e, t) => ((e, t, i, n) => {
 					const s = g(e, t) || {};
 					return s[i] = n, w(e, t, s)
@@ -14628,11 +14508,11 @@
 				U = (e, t) => {
 					Object(n.a)() && localStorage.setItem(e, t)
 				},
-				q = () => A(u.y),
-				W = () => L(u.y),
-				z = e => y(u.x, e),
+				q = () => A(u.x),
+				W = () => L(u.x),
+				z = e => y(u.w, e),
 				H = () => {
-					const e = v(u.x);
+					const e = v(u.w);
 					if (e) return e;
 					const t = A("post-creation-event-tooltip-store");
 					t && localStorage.removeItem("post-creation-event-tooltip-store");
@@ -14681,7 +14561,7 @@
 				ne = (e, t) => E(localStorage, u.t, e, t),
 				se = () => {
 					try {
-						return v(u.w) || {}
+						return v(u.v) || {}
 					} catch (e) {
 						return {}
 					}
@@ -14694,10 +14574,10 @@
 							when: Date.now()
 						}
 					});
-					y(u.w, i)
+					y(u.v, i)
 				},
-				oe = () => 1 === v(u.v),
-				de = e => y(u.v, e ? 1 : 0),
+				oe = () => 1 === v(u.u),
+				de = e => y(u.u, e ? 1 : 0),
 				le = () => v(u.i) || 0,
 				ae = () => {
 					y(u.i, 3)
@@ -15544,16 +15424,14 @@
 				return S
 			})), i.d(t, "c", (function() {
 				return B
-			})), i.d(t, "h", (function() {
-				return x
-			})), i.d(t, "j", (function() {
-				return C
 			})), i.d(t, "i", (function() {
-				return k
+				return x
+			})), i.d(t, "h", (function() {
+				return C
 			})), i.d(t, "b", (function() {
-				return O
+				return k
 			})), i.d(t, "d", (function() {
-				return N
+				return O
 			}));
 			const l = {
 					small: 64,
@@ -15621,17 +15499,13 @@
 				I = e => {
 					return Object(n.b)(e) > .9 ? Object(n.a)(.1, e) : e
 				},
-				B = C(o.c, b);
+				B = x(o.c, b);
 
 			function R(e) {
 				return e.bannerBackgroundColor || h(.6, e.primaryColor) || r.a.banner.backgroundColor
 			}
 
-			function x(e, t, i) {
-				return e || t && h(.6, t) || i && h(.6, i) || r.a.banner.backgroundColor
-			}
-
-			function C(e, t) {
+			function x(e, t) {
 				const i = e.highlightColor ? I(e.highlightColor) : r.a.linkText,
 					s = S(e.sidebarWidgetBackgroundColor || r.a.widgetColors.sidebarWidgetBackgroundColor),
 					o = e.sidebarWidgetBackgroundColor || r.a.widgetColors.sidebarWidgetBackgroundColor,
@@ -15727,7 +15601,7 @@
 				}
 			}
 
-			function k(e, t) {
+			function C(e, t) {
 				return {
 					subredditContext: t,
 					communityTheme: {},
@@ -15765,10 +15639,10 @@
 					newRedditTheme: Object(d.c)(r.b, {}, !0)
 				}
 			}
-			const O = k(o.c, b),
-				N = {
+			const k = C(o.c, b),
+				O = {
 					[s.b.REDDIT]: B,
-					[s.b.NIGHT]: O
+					[s.b.NIGHT]: k
 				}
 		},
 		"./src/reddit/singleton/tracing/index.ts": function(e, t, i) {
@@ -18683,4 +18557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.c97279aa60bbdd19035c.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.8b4cfd381ee5c6e993eb.js.map

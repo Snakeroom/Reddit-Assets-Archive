@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.e1e2f30fc7939d8b70e6.js
-// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.7b5731d86c774f6b5d5d.js
+// Retrieved at 2/5/2020, 1:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1607,32 +1607,31 @@
 						disableFlair: t,
 						flairPosition: s,
 						isCommentsPage: r,
-						isM2MHomeRedirectEnabled: n,
-						isMeta: a,
-						isOverlay: o,
-						poll: c,
-						post: d,
-						showNSFWSpoilerFlairsOnly: m
-					} = this.props, u = s === v.b.Left, p = Object(O.b)(a, d), b = m ? p.filter(e => e.type === v.f.Nsfw || e.type === v.f.Spoiler) : u ? p.filter(e => Object(f.p)(e.type)) : [], h = m ? [] : u ? p.filter(e => !Object(f.p)(e.type)) : p, x = n || !o && !r, g = !t && b && b.length > 0 && x, y = !t && h && h.length > 0 && x;
+						isMeta: n,
+						isOverlay: a,
+						poll: o,
+						post: c,
+						showNSFWSpoilerFlairsOnly: d
+					} = this.props, m = s === v.b.Left, u = Object(O.b)(n, c), p = d ? u.filter(e => e.type === v.f.Nsfw || e.type === v.f.Spoiler) : m ? u.filter(e => Object(f.p)(e.type)) : [], b = d ? [] : m ? u.filter(e => !Object(f.p)(e.type)) : u, h = !a && !r, x = !t && p && p.length > 0 && h, g = !t && b && b.length > 0 && h;
 					return i.a.createElement("div", {
-						className: Object(l.a)(e, d.id)
-					}, !m && g && i.a.createElement(O.a, {
+						className: Object(l.a)(e, c.id)
+					}, !d && x && i.a.createElement(O.a, {
 						isFlairFilter: !0,
-						titleFlair: b,
+						titleFlair: p,
 						nowrap: !0,
-						post: d,
+						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
 					}), i.a.createElement(G, D({}, this.props, {
-						leftFlair: m ? b : void 0
-					})), c && i.a.createElement(_, {
+						leftFlair: d ? p : void 0
+					})), o && i.a.createElement(_, {
 						className: M.a.pollMeta,
-						pollId: c.id
-					}), i.a.createElement(Y, this.props), y && i.a.createElement(O.a, {
+						pollId: o.id
+					}), i.a.createElement(Y, this.props), g && i.a.createElement(O.a, {
 						isFlairFilter: !0,
-						titleFlair: h,
+						titleFlair: b,
 						nowrap: !0,
-						post: d,
+						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
 					}), i.a.createElement("div", {
@@ -1897,7 +1896,7 @@
 		"./src/reddit/components/VerticalVotes/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return j
+				return y
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -1911,17 +1910,15 @@
 				u = s("./src/reddit/components/VerticalVotes/votes.tsx"),
 				p = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				b = s("./src/reddit/models/Vote/index.ts"),
-				h = s("./src/reddit/selectors/monthsToMinutes.ts"),
-				f = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/components/VerticalVotes/index.m.less"),
-				g = s.n(x);
-			const v = Object(o.c)({
-					m2mIsEnabled: h.w,
-					isNightmode: f.R
+				h = s("./src/reddit/selectors/user.ts"),
+				f = s("./src/reddit/components/VerticalVotes/index.m.less"),
+				x = s.n(f);
+			const g = Object(o.c)({
+					isNightmode: h.R
 				}),
-				y = Object(a.b)(v),
-				j = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
-			class C extends i.a.Component {
+				v = Object(a.b)(g),
+				y = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
+			class j extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						voted: b.a.notVoted
@@ -1954,75 +1951,70 @@
 							upvoteButtonClassName: a
 						} = e,
 						o = !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
-						l = j(e),
-						{
-							voted: h
-						} = this.state,
-						f = e.model.voteState,
-						x = e.m2mIsEnabled && h === b.a.upvoted ? g.a.bounceUp : "",
-						v = e.m2mIsEnabled && h === b.a.downvoted ? g.a.bounceDown : "";
+						l = y(e),
+						h = e.model.voteState;
 					return i.a.createElement("div", {
-						className: Object(c.a)(g.a.votesContainer, e.className)
+						className: Object(c.a)(x.a.votesContainer, e.className)
 					}, o ? i.a.createElement(u.b, {
 						"aria-label": r.fbt._("upvote", null, {
 							hk: "G6dJB"
 						}),
-						"aria-pressed": f === b.a.upvoted,
+						"aria-pressed": h === b.a.upvoted,
 						"data-click-id": "upvote",
 						compact: e.compact,
 						className: e.upvoteClassName,
 						id: e.upvoteTooltipId,
 						isNightmode: s,
 						onClick: this.onUpvote,
-						voteState: f
+						voteState: h
 					}) : i.a.createElement("button", {
 						"aria-label": r.fbt._("upvote", null, {
 							hk: "RguWS"
 						}),
-						"aria-pressed": f === b.a.upvoted,
-						className: Object(c.a)(d.p, a, x),
+						"aria-pressed": h === b.a.upvoted,
+						className: Object(c.a)(d.o, a),
 						onClick: this.onUpvote,
 						"data-click-id": "upvote",
 						id: e.upvoteTooltipId
 					}, i.a.createElement(u.d, {
 						compact: e.compact,
 						className: e.upvoteClassName,
-						voteState: f
+						voteState: h
 					})), !e.compact && n && i.a.createElement(m.a, {
 						className: e.scoreClassName,
 						flairStyleTemplate: e.flairStyleTemplate,
 						light: e.light,
 						score: e.model.score,
-						voteState: f,
+						voteState: h,
 						isScoreHidden: e.model.isScoreHidden
 					}), l ? i.a.createElement(u.a, {
 						"aria-label": r.fbt._("downvote", null, {
 							hk: "tNfDV"
 						}),
-						"aria-pressed": f === b.a.downvoted,
+						"aria-pressed": h === b.a.downvoted,
 						"data-click-id": "downvote",
 						className: e.downvoteClassName,
 						compact: e.compact,
 						isNightmode: s,
 						onClick: this.onDownvote,
-						voteState: f
+						voteState: h
 					}) : i.a.createElement("button", {
 						"aria-label": r.fbt._("downvote", null, {
 							hk: "1mDjTw"
 						}),
-						"aria-pressed": f === b.a.downvoted,
-						className: Object(c.a)(d.p, t, v),
+						"aria-pressed": h === b.a.downvoted,
+						className: Object(c.a)(d.o, t),
 						onClick: this.onDownvote,
 						"data-click-id": "downvote"
 					}, i.a.createElement(u.c, {
 						className: e.downvoteClassName,
 						compact: e.compact,
-						voteState: f
+						voteState: h
 					})))
 				}
 			}
-			const O = Object(l.a)(y(C));
-			t.a = O
+			const C = Object(l.a)(v(j));
+			t.a = C
 		},
 		"./src/reddit/connectors/PostViewable/index.ts": function(e, t, s) {
 			"use strict";
@@ -3149,4 +3141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.e1e2f30fc7939d8b70e6.js.map
+//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.7b5731d86c774f6b5d5d.js.map
