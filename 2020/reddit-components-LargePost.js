@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.87d403127da1469005d2.js
-// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6aad1a9dc18db6e69bc9.js
+// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, o) {
@@ -392,7 +392,7 @@
 			var s = o("./src/higherOrderComponents/makeAsync.tsx"),
 				n = o("./src/lib/loadWithRetries/index.ts");
 			const r = Object(s.a)({
-				getComponent: () => Object(n.a)(() => Promise.all([o.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), o.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~20a7252d"), o.e("InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"), o.e("InFeedChaining")]).then(o.bind(null, "./src/reddit/components/DiscoveryUnit/InFeedChaining/index.tsx"))).then(e => e.default),
+				getComponent: () => Object(n.a)(() => Promise.all([o.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), o.e("CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~9f2e39dd"), o.e("InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"), o.e("InFeedChaining")]).then(o.bind(null, "./src/reddit/components/DiscoveryUnit/InFeedChaining/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => null,
 				LoadingComponent: () => null
 			});
@@ -1451,4 +1451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.87d403127da1469005d2.js.map
+//# sourceMappingURL=reddit-components-LargePost.6aad1a9dc18db6e69bc9.js.map
