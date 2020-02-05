@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b4cfd381ee5c6e993eb.js
-// Retrieved at 2/5/2020, 1:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a41113845ae1445eab6.js
+// Retrieved at 2/5/2020, 2:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -9259,6 +9259,16 @@
 			const n = "PROMO__DISPLAY_PROMO",
 				s = "PROMO__HIDE_PROMO"
 		},
+		"./src/chat/constants/channelRemovalReason.ts": function(e, t, i) {
+			"use strict";
+			var n;
+			i.d(t, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e.DEFAULT = "default", e.BANNED = "banned", e.KICKED = "kicked"
+				}(n || (n = {}))
+		},
 		"./src/chat/constants/channels.ts": function(e, t, i) {
 			"use strict";
 			var n, s;
@@ -10249,22 +10259,6 @@
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
-			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n, s = i("./node_modules/lodash/flatten.js"),
-				r = i.n(s),
-				o = i("./node_modules/lodash/sortBy.js"),
-				d = i.n(o),
-				l = i("./node_modules/lodash/toArray.js"),
-				a = i.n(l),
-				u = i("./node_modules/lodash/uniqBy.js"),
-				c = i.n(u),
-				m = i("./node_modules/lodash/values.js"),
-				h = i.n(m);
-			! function(e) {
-				e.DEFAULT = "default", e.BANNED = "banned", e.KICKED = "kicked"
-			}(n || (n = {}));
-			var p = i("./src/chat/constants/channels.ts");
-			i("./src/chat/models/Channel/index.ts");
 			i.d(t, "n", (function() {
 				return _
 			})), i.d(t, "r", (function() {
@@ -10350,27 +10344,41 @@
 			})), i.d(t, "B", (function() {
 				return se
 			}));
+			i("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = i("./node_modules/lodash/flatten.js"),
+				s = i.n(n),
+				r = i("./node_modules/lodash/sortBy.js"),
+				o = i.n(r),
+				d = i("./node_modules/lodash/toArray.js"),
+				l = i.n(d),
+				a = i("./node_modules/lodash/uniqBy.js"),
+				u = i.n(a),
+				c = i("./node_modules/lodash/values.js"),
+				m = i.n(c),
+				h = i("./src/chat/constants/channelRemovalReason.ts"),
+				p = i("./src/chat/constants/channels.ts");
+			i("./src/chat/models/Channel/index.ts");
 			const _ = e => e.channels.invited.sortedKeys.length,
 				g = e => e.channels.joined.sortedKeys.length,
-				w = e => r()(a()(e.channels.subreddit.joined.sortedKeys)).length,
+				w = e => s()(l()(e.channels.subreddit.joined.sortedKeys)).length,
 				y = (e, t, i) => {
-					const n = t && h()(t.channels) || i || [],
-						s = (e => {
+					const n = t && m()(t.channels) || i || [],
+						r = (e => {
 							const {
 								models: t,
 								subreddit: {
 									joined: i
 								}
 							} = e.channels;
-							return r()(h()(i.sortedKeys)).map(e => t[e])
+							return s()(m()(i.sortedKeys)).map(e => t[e])
 						})(e),
-						o = c()([...s, ...n], e => e.channelId),
+						o = u()([...r, ...n], e => e.channelId),
 						d = v(e, o);
 					return f(e, d)
 				},
 				v = (e, t) => {
 					const i = e.subreddits.models;
-					return d()(t, [e => i[e.customData.subredditId].name.toLowerCase()], e => e.name.toLowerCase())
+					return o()(t, [e => i[e.customData.subredditId].name.toLowerCase()], e => e.name.toLowerCase())
 				},
 				f = (e, t) => {
 					const i = e.subreddits.models;
@@ -10428,15 +10436,15 @@
 				N = e => {
 					const t = [],
 						i = e.user.account.id;
-					return h()(e.channels.models).forEach(e => {
+					return m()(e.channels.models).forEach(e => {
 						if (e && e.members) {
 							const n = e.members.filter(e => e.id !== i).map(e => e.id);
 							n.length && t.push(n)
 						}
 					}), t.length && t
 				},
-				j = e => h()(e.messages.models).filter(t => t.channelId === e.channels.selected.channelId),
-				P = e => h()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
+				j = e => m()(e.messages.models).filter(t => t.channelId === e.channels.selected.channelId),
+				P = e => m()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
 				A = (e, t) => {
 					const i = E(e);
 					return i && i[t]
@@ -10486,7 +10494,7 @@
 				$ = e => e.channels.subreddit.invited.hasMoreChannels,
 				ee = e => e.channels.subreddit.invited.fetchingChannels,
 				te = (e, t) => {
-					if (t) return e.channels.subreddit.kicked.sortedKeys.includes(t) ? n.KICKED : e.channels.subreddit.banned.sortedKeys.includes(t) ? n.BANNED : n.DEFAULT
+					if (t) return e.channels.subreddit.kicked.sortedKeys.includes(t) ? h.a.KICKED : e.channels.subreddit.banned.sortedKeys.includes(t) ? h.a.BANNED : h.a.DEFAULT
 				},
 				ie = e => {
 					const t = B(e);
@@ -12376,14 +12384,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("66d9eed-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5cb036e-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "66d9eed-production",
+						release: "5cb036e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new r.Integrations.Breadcrumbs({
@@ -12883,7 +12891,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "66d9eed-production",
+							releaseClient: "5cb036e-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18557,4 +18565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.8b4cfd381ee5c6e993eb.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.9a41113845ae1445eab6.js.map
