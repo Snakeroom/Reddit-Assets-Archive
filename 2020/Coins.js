@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.95dc2792351af0a5e4aa.js
-// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.1b10943c375dc9a9379c.js
+// Retrieved at 2/5/2020, 5:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -429,28 +429,29 @@
 				b = t("./src/app/strings/index.ts"),
 				x = t("./src/reddit/helpers/createEmojiText/index.tsx"),
 				w = t("./src/reddit/i18n/components.tsx"),
-				_ = t("./src/reddit/i18n/utils.ts"),
-				C = t("./src/reddit/models/Gold/Award.ts"),
+				C = t("./src/reddit/i18n/utils.ts"),
+				_ = t("./src/reddit/models/Gold/Award.ts"),
 				P = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				f = t("./src/reddit/actions/login.ts"),
 				j = t("./src/reddit/contexts/PageLayer/index.tsx"),
 				O = t("./src/reddit/models/Gold/Coins/index.ts"),
-				A = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				T = t("./src/reddit/selectors/user.ts"),
-				I = t("./src/reddit/components/CoinPurchaseModal/Loader.tsx"),
-				y = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
-				M = t.n(y),
-				G = t("./src/lib/classNames/index.ts"),
+				A = t("./src/reddit/selectors/gold/coinSale.ts"),
+				T = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				I = t("./src/reddit/selectors/user.ts"),
+				y = t("./src/reddit/components/CoinPurchaseModal/Loader.tsx"),
+				M = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
+				G = t.n(M),
+				S = t("./src/lib/classNames/index.ts"),
 				L = t("./src/reddit/controls/Button/index.tsx"),
 				F = t("./src/reddit/icons/svgs/Coin/index.tsx"),
-				S = e => o.a.createElement("svg", {
+				D = e => o.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 96 96",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, o.a.createElement("path", {
 					d: "M45.31.614c1.411.984 3.72.984 5.13 0 1.412-.984 3.527-.761 4.703.494 1.175 1.256 3.434 1.736 5.018 1.067 1.584-.67 3.608-.012 4.495 1.461.89 1.472 2.998 2.412 4.687 2.087 1.69-.326 3.532.738 4.096 2.363.562 1.627 2.43 2.982 4.15 3.017 1.72.032 3.3 1.455 3.513 3.162.213 1.707 1.758 3.423 3.432 3.813 1.676.39 2.926 2.11 2.78 3.824-.147 1.715 1.007 3.714 2.565 4.444 1.558.729 2.423 2.672 1.923 4.319-.5 1.646.214 3.841 1.585 4.879 1.372 1.037 1.815 3.118.983 4.625-.83 1.506-.59 3.802.536 5.101 1.126 1.3 1.126 3.428 0 4.729-1.126 1.3-1.367 3.596-.536 5.102.832 1.506.39 3.586-.983 4.624-1.371 1.037-2.086 3.233-1.585 4.878.5 1.646-.365 3.591-1.923 4.32-1.558.73-2.712 2.729-2.565 4.443.146 1.714-1.104 3.435-2.78 3.825-1.674.39-3.22 2.106-3.432 3.812-.212 1.707-1.794 3.13-3.513 3.164-1.72.032-3.588 1.39-4.15 3.015-.564 1.626-2.406 2.69-4.096 2.365-1.689-.326-3.797.614-4.687 2.086-.887 1.473-2.911 2.13-4.495 1.461-1.584-.67-3.843-.19-5.018 1.066-1.176 1.257-3.291 1.48-4.703.495-1.41-.984-3.719-.984-5.13 0-1.41.985-3.526.762-4.702-.495-1.175-1.256-3.434-1.736-5.018-1.066-1.584.669-3.608.012-4.496-1.461-.889-1.472-2.997-2.412-4.687-2.086-1.689.325-3.531-.739-4.095-2.365-.562-1.625-2.43-2.983-4.15-3.015-1.72-.033-3.3-1.457-3.513-3.164-.213-1.706-1.758-3.422-3.432-3.812-1.676-.39-2.926-2.111-2.78-3.825.147-1.714-1.007-3.713-2.565-4.443-1.558-.729-2.423-2.674-1.923-4.32.5-1.645-.213-3.84-1.585-4.878-1.372-1.038-1.815-3.118-.983-4.624.83-1.506.59-3.802-.537-5.102-1.125-1.301-1.125-3.43 0-4.729 1.127-1.3 1.368-3.595.537-5.1-.832-1.508-.39-3.589.983-4.626 1.372-1.038 2.086-3.233 1.585-4.88-.5-1.646.365-3.59 1.923-4.318 1.558-.73 2.712-2.73 2.566-4.444-.147-1.714 1.103-3.434 2.779-3.824 1.674-.39 3.22-2.106 3.432-3.813.212-1.707 1.794-3.13 3.513-3.162 1.72-.035 3.588-1.39 4.15-3.017.564-1.625 2.406-2.69 4.095-2.363 1.69.325 3.798-.615 4.687-2.087.888-1.473 2.912-2.131 4.496-1.46 1.584.668 3.843.188 5.018-1.068C41.784-.147 43.9-.37 45.31.614"
 				}));
-			var D = e => {
+			var V = e => {
 					const {
 						badgeText: a,
 						buttonText: t,
@@ -463,51 +464,51 @@
 						priceInCoins: d,
 						stampText: p,
 						stampValue: u
-					} = e, h = r ? M.a.large : "";
+					} = e, h = r ? G.a.large : "";
 					return o.a.createElement("div", {
-						className: Object(G.a)(n, M.a.coinPurchasePackage, h)
+						className: Object(S.a)(n, G.a.coinPurchasePackage, h)
 					}, o.a.createElement("div", {
-						className: Object(G.a)(h, M.a.imageContainer),
+						className: Object(S.a)(h, G.a.imageContainer),
 						style: {
 							backgroundImage: 'url("'.concat(s.a.assetPath, '/img/gold/coins-package-bg.jpg")')
 						}
 					}, o.a.createElement("img", {
 						src: l
 					}), a && o.a.createElement("div", {
-						className: M.a.badge
+						className: G.a.badge
 					}, a), (u || p) && o.a.createElement("div", {
-						className: Object(G.a)(M.a.stamp, h)
-					}, o.a.createElement(S, {
-						className: M.a.stampIcon
+						className: Object(S.a)(G.a.stamp, h)
+					}, o.a.createElement(D, {
+						className: G.a.stampIcon
 					}), !!u && o.a.createElement("div", {
-						className: Object(G.a)(M.a.stampValue, h)
+						className: Object(S.a)(G.a.stampValue, h)
 					}, u), !!p && o.a.createElement("div", {
-						className: Object(G.a)(M.a.stampText, h)
+						className: Object(S.a)(G.a.stampText, h)
 					}, p))), o.a.createElement("div", {
-						className: Object(G.a)(M.a.contentContainer, h)
+						className: Object(S.a)(G.a.contentContainer, h)
 					}, o.a.createElement("div", {
-						className: Object(G.a)(M.a.price, h)
+						className: Object(S.a)(G.a.price, h)
 					}, o.a.createElement(F.a, {
-						className: M.a.priceCoinIcon
+						className: G.a.priceCoinIcon
 					}), o.a.createElement("div", null, o.a.createElement("div", {
-						className: M.a.priceValue
+						className: G.a.priceValue
 					}, Number(d).toLocaleString()), o.a.createElement("div", {
-						className: M.a.priceCurrency
+						className: G.a.priceCurrency
 					}, m))), o.a.createElement("div", {
-						className: Object(G.a)(M.a.description, h)
+						className: Object(S.a)(G.a.description, h)
 					}, c), o.a.createElement("div", {
-						className: M.a.ctaContainer
+						className: G.a.ctaContainer
 					}, o.a.createElement(L.f, {
-						className: Object(G.a)(M.a.cta, h),
+						className: Object(S.a)(G.a.cta, h),
 						onClick: i
 					}, t))))
 				},
-				V = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				B = t("./src/reddit/components/GildMarketingDescription/index.tsx"),
-				R = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
-				z = t("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
-				q = t.n(z);
-			const Q = e => {
+				B = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				R = t("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				z = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				q = t("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
+				Q = t.n(q);
+			const H = e => {
 				const {
 					className: a,
 					isGold: t,
@@ -515,24 +516,24 @@
 					onManagePremium: n
 				} = e, l = "".concat(s.a.assetPath, "/img/gold/coins-premium-g.png");
 				return o.a.createElement("div", {
-					className: Object(G.a)(q.a.premiumBanner, a)
+					className: Object(S.a)(Q.a.premiumBanner, a)
 				}, o.a.createElement("img", {
-					className: q.a.premiumCrest,
+					className: Q.a.premiumCrest,
 					src: l
 				}), o.a.createElement("h2", {
-					className: q.a.premiumDescription
+					className: Q.a.premiumDescription
 				}, o.a.createElement(w.c, null, "Get 700 Coins every month with Reddit Premium and browse ads-free")), t ? o.a.createElement(L.f, {
-					className: q.a.premiumCTA,
+					className: Q.a.premiumCTA,
 					onClick: n
 				}, o.a.createElement(w.c, null, "Manage")) : o.a.createElement(L.f, {
-					className: q.a.premiumCTA,
+					className: Q.a.premiumCTA,
 					onClick: c
 				}, o.a.createElement(w.c, null, o.a.createElement(w.b, {
 					name: "monthly-price"
 				}, "$5.99"), "/Month")))
 			};
-			var H = t("./src/reddit/icons/fonts/Coin/index.tsx"),
-				U = e => o.a.createElement("svg", {
+			var U = t("./src/reddit/icons/fonts/Coin/index.tsx"),
+				Y = e => o.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 446 96",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -549,16 +550,17 @@
 					d: "M59 58.001c-2.757 0-5-2.243-5-5a5.006 5.006 0 0 1 5-5c2.757 0 5 2.242 5 5 0 2.757-2.243 5-5 5m.88 8.211c-3.412 3.408-9.95 3.673-11.874 3.673-1.924 0-8.463-.265-11.872-3.673a1.296 1.296 0 1 1 1.833-1.833c2.151 2.151 6.752 2.915 10.04 2.915 3.285 0 7.888-.764 10.042-2.915a1.296 1.296 0 0 1 1.831 1.833M32 53c0-2.757 2.244-5 5.002-5A5.005 5.005 0 0 1 42 53a5.004 5.004 0 0 1-4.998 5A5.006 5.006 0 0 1 32 53m47.992-5a7 7 0 0 0-7-7 6.97 6.97 0 0 0-4.855 1.964c-4.784-3.453-11.377-5.683-18.72-5.94l3.188-15.002 10.418 2.215C63.15 26.887 65.32 29 68 29a5 5 0 0 0 0-10c-1.965 0-3.646 1.143-4.465 2.79l-11.633-2.473a1.251 1.251 0 0 0-1.482.963l-3.56 16.741c-7.452.207-14.149 2.44-18.996 5.93a6.972 6.972 0 0 0-4.84-1.95 7 7 0 0 0-7 7 7 7 0 0 0 4.135 6.382c-.11.7-.166 1.408-.167 2.117 0 10.77 12.536 19.5 28 19.5s28-8.73 28-19.5c0-.71-.058-1.412-.165-2.103A7 7 0 0 0 79.992 48",
 					fill: "#FFF"
 				}));
-			const Y = Object(j.t)({
+			const W = Object(j.t)({
 					isCompletePaypal: e => !!Object(j.Q)(e).thanks
 				}),
-				W = Object(p.c)({
-					isGold: T.p,
-					language: T.P,
-					isLoggedIn: T.G,
-					shouldShowCoinPurchaseModal: A.d
+				J = Object(p.c)({
+					activeCoinSale: A.a,
+					isGold: I.p,
+					language: I.P,
+					isLoggedIn: I.G,
+					shouldShowCoinPurchaseModal: T.d
 				}),
-				J = Object(m.b)(W, (e, a) => ({
+				X = Object(m.b)(J, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(d.b)("/settings/gold")),
 					onRouteToPremium: () => e(Object(d.b)("/premium")),
 					onOpenLoginModal: () => e(Object(f.e)()),
@@ -567,8 +569,8 @@
 						correlationId: h.e()
 					}))
 				})),
-				X = 8;
-			class K extends o.a.Component {
+				K = 8;
+			class Z extends o.a.Component {
 				constructor() {
 					super(...arguments), this.purchaseSection = o.a.createRef(), this.perksSection = o.a.createRef(), this.onClickGetCoins = () => {
 						this.props.sendEvent(h.b()), this.purchaseSection.current && window.scrollTo({
@@ -581,8 +583,8 @@
 							onPurchasePackage: t,
 							onOpenLoginModal: s,
 							sendEvent: c
-						} = this.props;
-						a && c(h.a(e.coins)), a ? t(e) : s()
+						} = this.props, n = O.a[e.name];
+						a && c(h.a(n.coins)), a ? t(n) : s()
 					}, this.onClickGetPremium = () => {
 						const {
 							onRouteToPremium: e,
@@ -602,7 +604,7 @@
 					} = this.props;
 					return o.a.createElement("div", {
 						className: e
-					}, this.renderHero(), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), this.renderModal(), o.a.createElement(R.a, null))
+					}, this.renderHero(), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), this.renderModal(), o.a.createElement(z.a, null))
 				}
 				renderHero() {
 					return o.a.createElement("div", {
@@ -614,7 +616,7 @@
 						className: v.a.heroInner
 					}, o.a.createElement("h1", {
 						className: v.a.heroTitle
-					}, o.a.createElement(U, {
+					}, o.a.createElement(Y, {
 						className: v.a.heroLogo
 					})), o.a.createElement("p", {
 						className: v.a.heroDescription
@@ -633,49 +635,50 @@
 						className: v.a.detailDesription
 					}, o.a.createElement(w.c, null, "Spend your Coins on these Awards reserved exclusively for the finest Reddit contributors. Awarding a post or comment highlights it for all to see, and some Awards also grant the honoree special bonuses.")), o.a.createElement("div", {
 						className: v.a.gridContainer
-					}, o.a.createElement(B.a, {
+					}, o.a.createElement(R.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: "".concat(s.a.assetPath, "/img/gold/badges/award-silver-large.png")
 						}),
-						title: Object(_.c)("Silver Award")
-					}, Object(x.a)(Object(_.c)("Shows a Silver Award on the post or comment and ... that’s it. You’ll need :coin_price: Coins."), {
+						title: Object(C.c)("Silver Award")
+					}, Object(x.a)(Object(C.c)("Shows a Silver Award on the post or comment and ... that’s it. You’ll need :coin_price: Coins."), {
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(H.a, null), C.k.coinPrice)
-					})), o.a.createElement(B.a, {
+						}, o.a.createElement(U.a, null), _.k.coinPrice)
+					})), o.a.createElement(R.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: "".concat(s.a.assetPath, "/img/gold/badges/award-gold-large.png")
 						}),
-						title: Object(_.c)("Gold Award")
-					}, Object(x.a)(Object(_.c)("Gives the recipient a week of Reddit Premium (including :coin_benefit: Coins) and shows a Gold Award on the post or comment. You’ll need :coin_price: Coins."), {
+						title: Object(C.c)("Gold Award")
+					}, Object(x.a)(Object(C.c)("Gives the recipient a week of Reddit Premium (including :coin_benefit: Coins) and shows a Gold Award on the post or comment. You’ll need :coin_price: Coins."), {
 						":coin_benefit:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(H.a, null), "100"),
+						}, o.a.createElement(U.a, null), "100"),
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(H.a, null), C.i.coinPrice)
-					})), o.a.createElement(B.a, {
+						}, o.a.createElement(U.a, null), _.i.coinPrice)
+					})), o.a.createElement(R.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
 							src: "".concat(s.a.assetPath, "/img/gold/badges/award-platinum-large.png")
 						}),
-						title: Object(_.c)("Platinum Award")
-					}, Object(x.a)(Object(_.c)("Gives the recipient a month of Reddit Premium, which includes :coin_benefit: Coins for that month, and shows a Platinum Award on the post or comment. You’ll need :coin_price: Coins."), {
+						title: Object(C.c)("Platinum Award")
+					}, Object(x.a)(Object(C.c)("Gives the recipient a month of Reddit Premium, which includes :coin_benefit: Coins for that month, and shows a Platinum Award on the post or comment. You’ll need :coin_price: Coins."), {
 						":coin_benefit:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(H.a, null), "700"),
+						}, o.a.createElement(U.a, null), "700"),
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(H.a, null), C.j.coinPrice)
+						}, o.a.createElement(U.a, null), _.j.coinPrice)
 					}))))
 				}
 				renderPurchase() {
 					const {
-						isGold: e,
-						onRouteToManagePremium: a
-					} = this.props, t = [O.a.coins1800, O.a.coins500, O.a.coins1100, O.a.coins7200, O.a.coins40000];
+						activeCoinSale: e,
+						isGold: a,
+						onRouteToManagePremium: t
+					} = this.props, c = [O.a.coins1800, O.a.coins500, O.a.coins1100, O.a.coins7200, O.a.coins40000].map(a => Object(O.b)(a, e));
 					return o.a.createElement("div", {
 						className: v.a.purchasePackagesSection,
 						ref: this.purchaseSection,
@@ -684,85 +687,85 @@
 						}
 					}, o.a.createElement("h2", {
 						className: v.a.purchaseTitle
-					}, o.a.createElement(U, {
+					}, o.a.createElement(Y, {
 						className: v.a.purchaseLogo
 					})), o.a.createElement("div", {
 						className: v.a.purchasePackages
-					}, o.a.createElement(D, {
+					}, o.a.createElement(V, {
 						className: v.a.purchasePackage,
-						buttonText: "$".concat(t[0].pennies / 100),
-						imgSrc: t[0].assetPath,
+						buttonText: "$".concat(c[0].pennies / 100),
+						imgSrc: c[0].assetPath,
 						isLargeView: !0,
-						onClick: () => this.onClickPurchase(t[0]),
-						priceCurrency: Object(_.c)("coins"),
-						priceInCoins: t[0].coins,
+						onClick: () => this.onClickPurchase(c[0]),
+						priceCurrency: Object(C.c)("coins"),
+						priceInCoins: c[0].coins,
 						stampValue: "20%",
-						stampText: Object(_.c)("bonus"),
-						badgeText: Object(_.c)("Finest option")
+						stampText: Object(C.c)("bonus"),
+						badgeText: Object(C.c)("Finest option")
 					}, o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "Give one Platinum Award, ")), o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "or 3 Gold Awards, ")), o.a.createElement("div", {
 						className: v.a.packageText
-					}, o.a.createElement(w.c, null, "or 18 Silver Awards."))), o.a.createElement(D, {
+					}, o.a.createElement(w.c, null, "or 18 Silver Awards."))), o.a.createElement(V, {
 						className: v.a.purchasePackage,
-						buttonText: "$".concat(t[1].pennies / 100),
-						imgSrc: t[1].assetPath,
-						onClick: () => this.onClickPurchase(t[1]),
-						priceCurrency: Object(_.c)("coins"),
-						priceInCoins: t[1].coins
+						buttonText: "$".concat(c[1].pennies / 100),
+						imgSrc: c[1].assetPath,
+						onClick: () => this.onClickPurchase(c[1]),
+						priceCurrency: Object(C.c)("coins"),
+						priceInCoins: c[1].coins
 					}, o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "Give one Gold Award ")), o.a.createElement("div", {
 						className: v.a.packageText
-					}, o.a.createElement(w.c, null, "or 5 Silver Awards."))), o.a.createElement(D, {
+					}, o.a.createElement(w.c, null, "or 5 Silver Awards."))), o.a.createElement(V, {
 						className: v.a.purchasePackage,
-						buttonText: "$".concat(t[2].pennies / 100),
-						imgSrc: t[2].assetPath,
-						onClick: () => this.onClickPurchase(t[2]),
-						priceCurrency: Object(_.c)("coins"),
-						priceInCoins: t[2].coins,
+						buttonText: "$".concat(c[2].pennies / 100),
+						imgSrc: c[2].assetPath,
+						onClick: () => this.onClickPurchase(c[2]),
+						priceCurrency: Object(C.c)("coins"),
+						priceInCoins: c[2].coins,
 						stampValue: "10%",
-						stampText: Object(_.c)("bonus")
+						stampText: Object(C.c)("bonus")
 					}, o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "Give 2 Gold Awards, ")), o.a.createElement("div", {
 						className: v.a.packageText
-					}, o.a.createElement(w.c, null, "or 11 Silver Awards."))), o.a.createElement(D, {
+					}, o.a.createElement(w.c, null, "or 11 Silver Awards."))), o.a.createElement(V, {
 						className: v.a.purchasePackage,
-						buttonText: "$".concat(t[3].pennies / 100),
-						imgSrc: t[3].assetPath,
-						onClick: () => this.onClickPurchase(t[3]),
-						priceCurrency: Object(_.c)("coins"),
-						priceInCoins: t[3].coins,
+						buttonText: "$".concat(c[3].pennies / 100),
+						imgSrc: c[3].assetPath,
+						onClick: () => this.onClickPurchase(c[3]),
+						priceCurrency: Object(C.c)("coins"),
+						priceInCoins: c[3].coins,
 						stampValue: "43%",
-						stampText: Object(_.c)("bonus")
+						stampText: Object(C.c)("bonus")
 					}, o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "Give 4 Platinum Awards, ")), o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "or 14 Gold Awards, ")), o.a.createElement("div", {
 						className: v.a.packageText
-					}, o.a.createElement(w.c, null, "or 72 Silver Awards."))), o.a.createElement(D, {
+					}, o.a.createElement(w.c, null, "or 72 Silver Awards."))), o.a.createElement(V, {
 						className: v.a.purchasePackage,
-						buttonText: "$".concat(t[4].pennies / 100),
-						imgSrc: t[4].assetPath,
-						onClick: () => this.onClickPurchase(t[4]),
-						priceCurrency: Object(_.c)("coins"),
-						priceInCoins: t[4].coins,
+						buttonText: "$".concat(c[4].pennies / 100),
+						imgSrc: c[4].assetPath,
+						onClick: () => this.onClickPurchase(c[4]),
+						priceCurrency: Object(C.c)("coins"),
+						priceInCoins: c[4].coins,
 						stampValue: "59%",
-						stampText: Object(_.c)("bonus")
+						stampText: Object(C.c)("bonus")
 					}, o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "Give 22 Platinum Awards, ")), o.a.createElement("div", {
 						className: v.a.packageText
 					}, o.a.createElement(w.c, null, "or 80 Gold Awards, ")), o.a.createElement("div", {
 						className: v.a.packageText
-					}, o.a.createElement(w.c, null, "or 400 Silver Awards."))), o.a.createElement(Q, {
-						isGold: e,
+					}, o.a.createElement(w.c, null, "or 400 Silver Awards."))), o.a.createElement(H, {
+						isGold: a,
 						onGetPremium: this.onClickGetPremium,
-						onManagePremium: a
+						onManagePremium: t
 					})))
 				}
 				renderFAQSection() {
@@ -775,7 +778,7 @@
 						className: v.a.faqsTitle
 					}, o.a.createElement(w.c, null, "Coins FAQ")), o.a.createElement("div", {
 						className: v.a.faqs
-					}, r()(X, a => o.a.createElement(V.a, {
+					}, r()(K, a => o.a.createElement(B.a, {
 						defaultClosed: !0,
 						question: Object(b.a)(e, "gold.coinsFAQ.item".concat(a + 1, ".question")),
 						key: a
@@ -786,7 +789,7 @@
 						isCompletePaypal: e,
 						shouldShowCoinPurchaseModal: a
 					} = this.props;
-					return a && o.a.createElement(I.a, {
+					return a && o.a.createElement(y.a, {
 						isCompletePaypal: e
 					})
 				}
@@ -794,8 +797,8 @@
 					h.d()
 				}
 			}
-			a.default = Y(J(Object(u.b)(K)))
+			a.default = W(X(Object(u.b)(Z)))
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.95dc2792351af0a5e4aa.js.map
+//# sourceMappingURL=Coins.1b10943c375dc9a9379c.js.map

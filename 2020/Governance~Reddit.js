@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.86a1b67078b5fa2b3afa.js
-// Retrieved at 2/5/2020, 3:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4bf973320dbb20fdb2b0.js
+// Retrieved at 2/5/2020, 5:30:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4939,7 +4939,7 @@
 					s(I({
 						thingId: n
 					}));
-					const o = Object(f.b)(e, t),
+					const o = Object(f.c)(e, t),
 						i = Object(b.c)(b.a.GoldPayment);
 					s(D({
 						coinPackage: o,
@@ -8269,7 +8269,7 @@
 						const r = await Promise.resolve().then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.selectPaymentMethod);
 						setTimeout(() => {
 							const e = parseInt(c.qty),
-								n = Object(q.c)(e);
+								n = Object(q.d)(e);
 							t(Y.g({
 								coinPackage: n
 							})), t(r(G.tb))
@@ -38292,44 +38292,52 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "b", (function() {
-				return o
 			})), n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "d", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return c
 			}));
 			var r = n("./src/config.ts");
 			const s = {
 					coins500: {
 						coins: 500,
+						name: "coins500",
 						pennies: 199,
 						assetPath: "".concat(r.a.assetPath, "/img/gold/coins-package-500.png")
 					},
 					coins1100: {
 						coins: 1100,
+						name: "coins1100",
 						pennies: 399,
 						assetPath: "".concat(r.a.assetPath, "/img/gold/coins-package-1100.png"),
 						percentBonus: 10
 					},
 					coins1800: {
 						coins: 1800,
+						name: "coins1800",
 						pennies: 599,
 						assetPath: "".concat(r.a.assetPath, "/img/gold/coins-package-1800.png"),
 						percentBonus: 20
 					},
 					coins7200: {
 						coins: 7200,
+						name: "coins7200",
 						pennies: 1999,
 						assetPath: "".concat(r.a.assetPath, "/img/gold/coins-package-7200.png"),
 						percentBonus: 43
 					},
 					coins40000: {
 						coins: 4e4,
+						name: "coins40000",
 						pennies: 9999,
 						assetPath: "".concat(r.a.assetPath, "/img/gold/coins-package-40000.png"),
 						percentBonus: 59
 					},
 					coinsVariable: {
 						coins: 1 / 0,
+						name: "coinsVariable",
 						pennies: 1 / 0,
 						assetPath: "".concat(r.a.assetPath, "/img/gold/coins-package-40000.png")
 					}
@@ -38348,6 +38356,17 @@
 					const n = t.pennies / t.coins,
 						r = s.coinsVariable;
 					return r.coins = e, r.pennies = Math.ceil(n * e), r
+				},
+				c = (e, t) => {
+					if (!t) return e;
+					const {
+						coinBonusMultiplier: n,
+						discountPriceMultiplier: r
+					} = t, s = n && n > 0 ? n : 1, o = r && r > 0 ? r : 1;
+					return Object.assign({}, e, {
+						coins: e.coins * s,
+						pennies: e.pennies * o
+					})
 				}
 		},
 		"./src/reddit/models/GqlTopLevelField.ts": function(e, t, n) {
@@ -68234,4 +68253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.86a1b67078b5fa2b3afa.js.map
+//# sourceMappingURL=Governance~Reddit.4bf973320dbb20fdb2b0.js.map

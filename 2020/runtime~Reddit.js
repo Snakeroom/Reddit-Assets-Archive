@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.65b098fd156849ee5be5.js
-// Retrieved at 2/5/2020, 2:30:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.97c13338a85c5021a0c5.js
+// Retrieved at 2/5/2020, 5:30:15 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -832,7 +832,7 @@
 						"ChatPost~ModQueuePages": "d51acc84d3611a2340f0",
 						"ModQueue~ModQueuePages": "c37e9fde8c0264671f64",
 						ModQueuePages: "7723b234b87de50c98f1",
-						Coins: "95dc2792351af0a5e4aa",
+						Coins: "1b10943c375dc9a9379c",
 						CoinsMobile: "76f4a706eccf772c9e0f",
 						GovernanceReleaseNotesModal: "40678cb830d2ec87440a",
 						"ModListing~Multireddit": "c10574cae01c1d658164",
@@ -892,7 +892,7 @@
 						"Chat~RedesignChat": "efceaa62d5ae465de8a8",
 						RedesignChat: "be2b6dfe4bd0ce04991c",
 						"vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~61cbc843": "3418b2a2f71e10177228",
-						CoinsPurchaseModal: "b37b2aa2c837e91e6c7f",
+						CoinsPurchaseModal: "2c5ab27af4b7871f235c",
 						"EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad08f508": "58be7393472fce15dfff",
 						"EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1": "cfe159ab2924b596fc82",
 						FramedModal: "586c760433bba0660170",
@@ -1064,4 +1064,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.65b098fd156849ee5be5.js.map
+//# sourceMappingURL=runtime~Reddit.97c13338a85c5021a0c5.js.map
