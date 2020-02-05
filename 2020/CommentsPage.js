@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.ed6b50e7d24f019ad195.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.86e7e1262192cde9889e.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ChatPost~ModQueuePages"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -435,7 +435,7 @@
 							const {
 								postId: e
 							} = c, t = o.posts.models[e];
-							t && t.voteState === b.a.notVoted && s(Object(i.N)(e))
+							t && t.voteState === b.a.notVoted && s(Object(i.Q)(e))
 						}
 					} else s(j({
 						pollId: e,
@@ -1496,7 +1496,7 @@
 					i = "error-block-".concat(t),
 					c = "success-block-".concat(t);
 				if (a.ok) {
-					s(Object(u.E)({
+					s(Object(u.H)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -1702,7 +1702,7 @@
 						},
 						onSetSuggestedSort: t => e(O(s, t)),
 						hideTooltip: () => e(Object(l.h)()),
-						setContestMode: t => e(Object(u.I)(t, s)),
+						setContestMode: t => e(Object(u.L)(t, s)),
 						showTooltip: () => e(Object(l.g)({
 							tooltipId: te
 						})),
@@ -4667,7 +4667,7 @@
 				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				I = s.n(k);
 			const _ = Object(r.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.p)({
+					toggle: () => e(Object(l.s)({
 						postId: t.post.id
 					}))
 				})),
@@ -6294,10 +6294,10 @@
 							}))
 						},
 						handleVote: t => {
-							const n = t === P.a.upvoted ? Object(l.N)(s) : Object(l.o)(s);
+							const n = t === P.a.upvoted ? Object(l.Q)(s) : Object(l.r)(s);
 							e(n)
 						},
-						onIgnoreReports: () => e(Object(l.L)(s)),
+						onIgnoreReports: () => e(Object(l.O)(s)),
 						onOpenReportsDropdown: t => e(Object(p.g)({
 							tooltipId: t
 						}))
@@ -7022,12 +7022,12 @@
 						postId: s
 					} = t;
 					return {
-						onIgnoreReports: () => e(Object(v.L)(s)),
+						onIgnoreReports: () => e(Object(v.O)(s)),
 						onOpenReportsDropdown: t => e(Object(C.g)({
 							tooltipId: t
 						})),
 						onVoteClick: t => {
-							const n = t === T.a.upvoted ? Object(v.N)(s) : Object(v.o)(s);
+							const n = t === T.a.upvoted ? Object(v.Q)(s) : Object(v.r)(s);
 							e(n)
 						}
 					}
@@ -7428,7 +7428,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.s)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.v)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(c.b)(h))
 		},
@@ -9642,7 +9642,7 @@
 					shouldShowCollectionEditOptions: v.s
 				}),
 				_ = Object(i.b)(I, (e, t) => ({
-					copyLink: () => e(Object(m.t)(t.permalink)),
+					copyLink: () => e(Object(m.w)(t.permalink)),
 					onCreatePost: s => {
 						t.shouldShowCreatePost && e(Object(d.b)(s))
 					},
@@ -10499,13 +10499,13 @@
 						}))
 					},
 					openPost: t => {
-						e(i.x(t))
+						e(i.A(t))
 					},
 					trackOnPostEnteredViewport: (t, s, n) => {
-						e(i.A(t, n))
+						e(i.D(t, n))
 					},
 					trackOnPostExitedViewport: (t, s, n, o) => {
-						e(i.B(t, n, o))
+						e(i.E(t, n, o))
 					}
 				}),
 				j = Object(n.b)(E, P, (e, t, s) => Object.assign({}, e, t, s, {
@@ -12996,4 +12996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.ed6b50e7d24f019ad195.js.map
+//# sourceMappingURL=CommentsPage.86e7e1262192cde9889e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.128ad95d0ede661d91d8.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.92ca878f7192713e10e3.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~Poll~ProfileComments~ProfileOverview~ProfilePrivate~Se~6c1532d7", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "AdminCommunityTopics~SubredditInlineEditing", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1329,7 +1329,7 @@
 						v = e[0],
 						j = Object(i.a)(v) ? k.e.Post : k.e.Comment,
 						y = j === k.e.Post ? E.posts.models[v] : E.comments.models[v],
-						w = j === k.e.Post ? p.E : m.R;
+						w = j === k.e.Post ? p.H : m.R;
 					if (!y || !x) return;
 					u(G()), u(w({
 						[v]: {
@@ -2946,10 +2946,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === M.a.upvoted ? Object(I.N)(a) : Object(I.o)(a);
+							const s = t === M.a.upvoted ? Object(I.Q)(a) : Object(I.r)(a);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(I.L)(a)),
+						onIgnoreReports: () => e(Object(I.O)(a)),
 						onOpenReportsDropdown: t => e(Object(P.g)({
 							tooltipId: t
 						}))
@@ -4763,10 +4763,10 @@
 							}))
 						},
 						handleVote: t => {
-							const s = t === v.a.upvoted ? Object(f.N)(a) : Object(f.o)(a);
+							const s = t === v.a.upvoted ? Object(f.Q)(a) : Object(f.r)(a);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(f.L)(a)),
+						onIgnoreReports: () => e(Object(f.O)(a)),
 						onOpenReportsDropdown: t => e(Object(O.g)({
 							tooltipId: t
 						}))
@@ -5469,7 +5469,7 @@
 				S = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				N = s.n(S);
 			const T = Object(o.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.p)({
+					toggle: () => e(Object(l.s)({
 						postId: t.post.id
 					}))
 				})),
@@ -7695,7 +7695,7 @@
 					bulkUnselectItems: t => e(Object(p.c)({
 						ids: t
 					})),
-					openPost: t => e(Object(b.x)(t))
+					openPost: t => e(Object(b.A)(t))
 				})),
 				zt = e => e.page ? parseInt(e.page, 10) : Oe.b,
 				Kt = e => zt(e) + 1,
@@ -8985,7 +8985,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.s)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.v)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(d.b)(b))
 		},
@@ -22480,7 +22480,7 @@
 				Cu = Object(i.b)(fu, (e, t) => ({
 					deleteExamplePost: () => e(Ym(Ea.e)),
 					makeExamplePost: s => e($m(t.subredditId, s)),
-					updateExamplePost: t => e(Object(eu.E)({
+					updateExamplePost: t => e(Object(eu.H)({
 						[Ea.e]: {
 							flair: [t]
 						}
@@ -28893,4 +28893,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.128ad95d0ede661d91d8.js.map
+//# sourceMappingURL=ModerationPages.92ca878f7192713e10e3.js.map

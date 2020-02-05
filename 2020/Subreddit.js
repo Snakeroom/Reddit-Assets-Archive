@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bc95f51f491f1c639e4a.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8857b38920fb6ee0abf6.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "CollectionCommentsPage~CommentsPage~Explore~Frontpage~Multireddit~ProfileComments~ProfileOverview~Pr~a9aa95f5", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "Explore~Multireddit", "SubredditLeaderboard~Topic", "CategoriesNavigation"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -153,7 +153,7 @@
 							const {
 								postId: e
 							} = d, t = r.posts.models[e];
-							t && t.voteState === h.a.notVoted && s(Object(i.N)(e))
+							t && t.voteState === h.a.notVoted && s(Object(i.Q)(e))
 						}
 					} else s(w({
 						pollId: e,
@@ -4795,10 +4795,10 @@
 							}))
 						},
 						handleVote: t => {
-							const n = t === j.a.upvoted ? Object(l.N)(s) : Object(l.o)(s);
+							const n = t === j.a.upvoted ? Object(l.Q)(s) : Object(l.r)(s);
 							e(n)
 						},
-						onIgnoreReports: () => e(Object(l.L)(s)),
+						onIgnoreReports: () => e(Object(l.O)(s)),
 						onOpenReportsDropdown: t => e(Object(u.g)({
 							tooltipId: t
 						}))
@@ -10950,13 +10950,13 @@
 						}))
 					},
 					openPost: t => {
-						e(i.x(t))
+						e(i.A(t))
 					},
 					trackOnPostEnteredViewport: (t, s, n) => {
-						e(i.A(t, n))
+						e(i.D(t, n))
 					},
 					trackOnPostExitedViewport: (t, s, n, r) => {
-						e(i.B(t, n, r))
+						e(i.E(t, n, r))
 					}
 				}),
 				w = Object(n.b)(E, j, (e, t, s) => Object.assign({}, e, t, s, {
@@ -14235,4 +14235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.bc95f51f491f1c639e4a.js.map
+//# sourceMappingURL=Subreddit.8857b38920fb6ee0abf6.js.map

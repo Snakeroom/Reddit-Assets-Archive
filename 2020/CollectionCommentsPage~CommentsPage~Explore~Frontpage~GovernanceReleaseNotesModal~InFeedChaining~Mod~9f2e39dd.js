@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~9f2e39dd.2564b992c2ff8714a51b.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~9f2e39dd.834517c18400418d8f72.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~9f2e39dd"], {
 		"./src/reddit/components/Media/RichTextContainer/index.m.less": function(e, t, s) {
@@ -111,7 +111,7 @@
 				}
 			}
 			var F = Object(L.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(M.r)(t))
+				onLoadRichTextContentIfNeeded: t => e(Object(M.u)(t))
 			}))(W);
 
 			function B() {
@@ -868,4 +868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~9f2e39dd.2564b992c2ff8714a51b.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~GovernanceReleaseNotesModal~InFeedChaining~Mod~9f2e39dd.834517c18400418d8f72.js.map

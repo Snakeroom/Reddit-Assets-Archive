@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.0345c951ed320351640a.js
-// Retrieved at 1/27/2020, 2:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.551b5fd5531fd09a7eb5.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -27,19 +27,19 @@
 						return i[1] = i[1] || i[0], i[2] = i[2] || i[0], i[3] = i[3] || i[1], i.join(" ")
 					}(e.rootMargin),
 					r = Array.isArray(e.threshold) ? e.threshold : [void 0 !== e.threshold ? e.threshold : 0],
-					n = c.keys(),
+					n = l.keys(),
 					o = Array.isArray(n),
 					a = 0;
 				for (n = o ? n : n[Symbol.iterator]();;) {
-					var l;
+					var c;
 					if (o) {
 						if (a >= n.length) break;
-						l = n[a++]
+						c = n[a++]
 					} else {
 						if ((a = n.next()).done) break;
-						l = a.value
+						c = a.value
 					}
-					var d = l;
+					var d = c;
 					if (![
 							[t, d.root],
 							[i, d.rootMargin],
@@ -50,8 +50,8 @@
 				}
 				return null
 			}
-			var c = new Map,
-				l = function() {
+			var l = new Map,
+				c = function() {
 					function e() {
 						! function(e, t) {
 							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -60,7 +60,7 @@
 					return e.create = function(e, t) {
 						return a(t) || new IntersectionObserver(e, t)
 					}, e.findElement = function(e, t) {
-						var i = c.get(t);
+						var i = l.get(t);
 						if (i) {
 							var r = i.values(),
 								n = Array.isArray(r),
@@ -81,16 +81,16 @@
 						return null
 					}, e.observe = function(e) {
 						var t = void 0;
-						c.has(e.observer) ? t = c.get(e.observer) : (t = new Set, c.set(e.observer, t)), t.add(e), e.observer.observe(e.target)
+						l.has(e.observer) ? t = l.get(e.observer) : (t = new Set, l.set(e.observer, t)), t.add(e), e.observer.observe(e.target)
 					}, e.unobserve = function(e) {
-						if (c.has(e.observer)) {
-							var t = c.get(e.observer);
-							t.delete(e) && (t.size > 0 ? e.observer.unobserve(e.target) : (e.observer.disconnect(), c.delete(e.observer)))
+						if (l.has(e.observer)) {
+							var t = l.get(e.observer);
+							t.delete(e) && (t.size > 0 ? e.observer.unobserve(e.target) : (e.observer.disconnect(), l.delete(e.observer)))
 						}
 					}, e.clear = function() {
-						c.clear()
+						l.clear()
 					}, e.count = function() {
-						return c.size
+						return l.size
 					}, e
 				}(),
 				d = function() {
@@ -110,13 +110,13 @@
 				return !t || "object" != typeof t && "function" != typeof t ? e : t
 			}
 
-			function p(e, t) {
+			function h(e, t) {
 				e.forEach((function(e) {
-					var i = l.findElement(e, t);
+					var i = c.findElement(e, t);
 					i && i.handleChange(e)
 				}))
 			}
-			var h = ["root", "rootMargin", "threshold"],
+			var p = ["root", "rootMargin", "threshold"],
 				m = Object.prototype,
 				b = function(e) {
 					function t() {
@@ -143,9 +143,9 @@
 						}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 					}(t, e), t.prototype.observe = function() {
 						var e;
-						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(o.findDOMNode)(this.target)), this.observer = l.create(p, this.options), l.observe(this)
+						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(o.findDOMNode)(this.target)), this.observer = c.create(h, this.options), c.observe(this)
 					}, t.prototype.unobserve = function() {
-						l.unobserve(this)
+						c.unobserve(this)
 					}, t.prototype.reobserve = function() {
 						this.unobserve(), this.props.disabled || this.observe()
 					}, t.prototype.componentDidMount = function() {
@@ -156,7 +156,7 @@
 						this.shouldResetObserver && this.reobserve()
 					}, t.prototype.componentWillUpdate = function(e) {
 						var t = this;
-						this.shouldResetObserver = h.concat(["disabled"]).some((function(i) {
+						this.shouldResetObserver = p.concat(["disabled"]).some((function(i) {
 							return s(e[i], t.props[i])
 						}))
 					}, t.prototype.render = function() {
@@ -167,7 +167,7 @@
 						key: "options",
 						get: function() {
 							var e = this;
-							return h.reduce((function(t, i) {
+							return p.reduce((function(t, i) {
 								if (m.hasOwnProperty.call(e.props, i)) {
 									var r, n = e.props[i];
 									return "root" === i && "[object String]" === m.toString.call(e.props[i]) && (n = document.querySelector(n)), Object.assign({}, t, ((r = {})[i] = n, r))
@@ -178,9 +178,9 @@
 					}]), t
 				}(n.a.Component);
 			b.displayName = "IntersectionObserver";
-			var f = b;
+			var v = b;
 			i.d(t, "a", (function() {
-				return f
+				return v
 			}))
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, i) {
@@ -232,71 +232,102 @@
 		"./src/reddit/components/AdViewability/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return v
+				return V
 			}));
 			var r = i("./node_modules/lodash/isEqual.js"),
 				n = i.n(r),
 				o = i("./node_modules/react/index.js"),
 				s = i.n(o),
 				a = i("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				c = i("./src/reddit/constants/viewabilityEvents.ts");
-			const l = .01,
+				l = i("./src/reddit/constants/viewabilityEvents.ts");
+			const c = .01,
 				d = .5,
 				u = 1,
-				p = [d, u, l],
-				h = 1e3,
-				m = 0,
-				b = 2e3,
-				f = 3e3;
-			class v extends o.Component {
+				h = [d, u, c],
+				p = 1e3,
+				m = 100,
+				b = 5e3,
+				v = 15e3,
+				f = 0,
+				y = 2e3,
+				w = 3e3,
+				g = e => "boolean" == typeof e.cumulative;
+			class V extends o.Component {
 				constructor(e) {
 					super(e), this.viewableImpression = {
 						timer: null,
-						event: c.a.Viewable,
+						event: l.a.Viewable,
 						threshold: d,
-						viewabilityMinimum: h,
+						viewabilityMinimum: p,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.impression = {
 						timer: null,
-						event: c.a.Impression,
-						threshold: l,
+						event: l.a.Impression,
+						threshold: c,
+						viewabilityMinimum: f,
+						fired: !1,
+						timeViewingInitialized: 0
+					}, this.vendorFullyViewable = {
+						timer: null,
+						event: l.a.VendorFullyViewable,
+						threshold: u,
 						viewabilityMinimum: m,
 						fired: !1,
 						timeViewingInitialized: 0
-					}, this.videoViewable = {
+					}, this.vendorFullyViewableSeconds5 = {
 						timer: null,
-						event: c.a.VideoViewable,
+						event: l.a.VendorFullyViewableSeconds5,
 						threshold: d,
 						viewabilityMinimum: b,
 						fired: !1,
 						timeViewingInitialized: 0,
-						elapsedTime: 0,
 						remainingTime: b,
+						timeViewingInterrupted: 0,
+						cumulative: !0,
+						cumulativeElapsedTime: 0
+					}, this.vendorFullyViewableSeconds15 = {
+						timer: null,
+						event: l.a.VendorFullyViewableSeconds15,
+						threshold: d,
+						viewabilityMinimum: v,
+						fired: !1,
+						timeViewingInitialized: 0,
+						remainingTime: v,
+						timeViewingInterrupted: 0,
+						cumulative: !0,
+						cumulativeElapsedTime: 0
+					}, this.videoViewable = {
+						timer: null,
+						event: l.a.VideoViewable,
+						threshold: d,
+						viewabilityMinimum: y,
+						fired: !1,
+						timeViewingInitialized: 0,
+						remainingTime: y,
 						timeViewingInterrupted: 0
 					}, this.videoFullyViewable = {
 						timer: null,
-						event: c.a.VideoFullyViewable,
+						event: l.a.VideoFullyViewable,
 						threshold: u,
-						viewabilityMinimum: f,
+						viewabilityMinimum: w,
 						fired: !1,
 						timeViewingInitialized: 0,
-						elapsedTime: 0,
-						remainingTime: f,
+						remainingTime: w,
 						timeViewingInterrupted: 0
 					}, this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e)
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
 							event: e
-						}), this.checkViewability(e, this.viewableImpression), this.checkViewability(e, this.impression), this.props.trackVideoMetrics && (this.checkViewability(e, this.videoViewable), this.checkViewability(e, this.videoFullyViewable))
+						}), this.checkViewability(e, this.viewableImpression), this.checkViewability(e, this.impression), this.checkViewability(e, this.vendorFullyViewable), this.checkViewability(e, this.vendorFullyViewableSeconds5), this.checkViewability(e, this.vendorFullyViewableSeconds15), this.props.trackVideoMetrics && (this.checkViewability(e, this.videoViewable), this.checkViewability(e, this.videoFullyViewable))
 					}, this.state = {
 						event: null,
 						currentContinuousViewingStartedAt: e.continuousViewingStartedAt
 					}
 				}
 				componentDidUpdate() {
-					this.state.currentContinuousViewingStartedAt === this.props.continuousViewingStartedAt ? this.props.trackVideoMetrics ? this.checkViewabilityByType(this.state.event) : (this.updateViewableStats(this.videoViewable), this.updateViewableStats(this.videoFullyViewable)) : this.resetTimers()
+					this.state.currentContinuousViewingStartedAt === this.props.continuousViewingStartedAt ? this.props.trackVideoMetrics ? this.checkViewabilityByType(this.state.event) : (this.pauseViewableStats(this.videoViewable), this.pauseViewableStats(this.videoFullyViewable)) : this.resetTimers()
 				}
 				resetTimers() {
 					this.resetTimer(this.videoViewable), this.resetTimer(this.videoFullyViewable), this.setState({
@@ -304,11 +335,18 @@
 					})
 				}
 				resetTimer(e) {
-					this.clearTimer(e.timer), e.timer = null, e.timeViewingInitialized = 0, e.elapsedTime = 0, e.remainingTime = e.viewabilityMinimum
+					this.clearTimer(e.timer), e.timer = null, e.timeViewingInitialized = 0, e.remainingTime = e.viewabilityMinimum
 				}
-				updateViewableStats(e) {
+				pauseViewableStats(e) {
 					let t;
-					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.elapsedTime = e.timeViewingInterrupted - e.timeViewingInitialized, t = e.viewabilityMinimum - e.elapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e.timer))
+					if (!e.timer || e.fired) return;
+					e.timeViewingInterrupted = Date.now();
+					const i = e.timeViewingInterrupted - e.timeViewingInitialized;
+					t = e.viewabilityMinimum - i, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e.timer)
+				}
+				pauseCumulativeStats(e) {
+					let t;
+					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = e.viewabilityMinimum - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e.timer))
 				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.isIntersecting && e.intersectionRatio >= t
@@ -318,13 +356,13 @@
 						const e = this.getLengthForTimer(t);
 						return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 					}
-					this.clearTimer(t.timer)
+					g(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
 				}
 				clearTimer(e) {
 					e && clearTimeout(e)
 				}
 				getLengthForTimer(e) {
-					return e.remainingTime || e.viewabilityMinimum || 0
+					return void 0 !== e.remainingTime ? e.remainingTime : e.viewabilityMinimum || 0
 				}
 				fireStat(e) {
 					setTimeout(() => this.props.onViewable(e.event), 0), e.fired = !0
@@ -336,9 +374,9 @@
 				}
 				render() {
 					return s.a.createElement(a.a, {
-						threshold: p,
+						threshold: h,
 						onChange: this.handleViewabilityChange,
-						disabled: this.viewableImpression.fired && this.videoViewable.fired && this.impression.fired && this.videoFullyViewable.fired || this.viewableImpression.fired && this.impression.fired && !this.props.trackVideoMetrics
+						disabled: this.viewableImpression.fired && this.videoViewable.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && this.videoFullyViewable.fired || this.viewableImpression.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && !this.props.trackVideoMetrics
 					}, this.props.children)
 				}
 			}
@@ -353,10 +391,10 @@
 				o = i("./node_modules/reselect/es/index.js"),
 				s = i("./src/reddit/components/AdViewability/index.tsx"),
 				a = i("./src/reddit/connectors/PostViewable/index.ts"),
-				c = i("./src/reddit/selectors/posts.ts"),
-				l = i("./src/lib/classNames/index.ts");
+				l = i("./src/reddit/selectors/posts.ts"),
+				c = i("./src/lib/classNames/index.ts");
 			const d = Object(a.a)(() => Object(o.c)({
-					post: c.I
+					post: l.I
 				})),
 				u = e => {
 					let {
@@ -367,7 +405,7 @@
 					return i.isSponsored ? n.a.createElement(s.a, {
 						onViewable: e => r(i, e),
 						children: n.a.createElement("div", {
-							className: Object(l.a)(t, "Blank ".concat(i.id))
+							className: Object(c.a)(t, "Blank ".concat(i.id))
 						}),
 						trackVideoMetrics: !1
 					}) : null
@@ -381,10 +419,10 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: n.C
+					onPostViewable: n.F
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.0345c951ed320351640a.js.map
+//# sourceMappingURL=reddit-components-BlankPost.551b5fd5531fd09a7eb5.js.map

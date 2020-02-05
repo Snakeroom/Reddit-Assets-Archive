@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0f2a8bfbaed3583566a3.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.676c487d99ef2723f422.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "ModListing~ModQueuePages~Multireddit~ProfilePosts~SearchResults~Topic", "ModListing~Multireddit~ProfilePosts", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1337,7 +1337,7 @@
 				Je = s("./src/lib/lessComponent.tsx");
 			const Xe = Object(o.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(de.a)(t.permalink)),
-					clearLinks: () => e(Object(Ke.m)())
+					clearLinks: () => e(Object(Ke.p)())
 				})),
 				$e = Je.a.button("ClearButton", Ze.a);
 			class et extends r.a.Component {
@@ -3122,10 +3122,10 @@
 							}))
 						},
 						handleVote: t => {
-							const n = t === P.a.upvoted ? Object(l.N)(s) : Object(l.o)(s);
+							const n = t === P.a.upvoted ? Object(l.Q)(s) : Object(l.r)(s);
 							e(n)
 						},
-						onIgnoreReports: () => e(Object(l.L)(s)),
+						onIgnoreReports: () => e(Object(l.O)(s)),
 						onOpenReportsDropdown: t => e(Object(p.g)({
 							tooltipId: t
 						}))
@@ -5630,13 +5630,13 @@
 						}))
 					},
 					openPost: t => {
-						e(i.x(t))
+						e(i.A(t))
 					},
 					trackOnPostEnteredViewport: (t, s, n) => {
-						e(i.A(t, n))
+						e(i.D(t, n))
 					},
 					trackOnPostExitedViewport: (t, s, n, r) => {
-						e(i.B(t, n, r))
+						e(i.E(t, n, r))
 					}
 				}),
 				E = Object(n.b)(C, P, (e, t, s) => Object.assign({}, e, t, s, {
@@ -7354,4 +7354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0f2a8bfbaed3583566a3.js.map
+//# sourceMappingURL=Frontpage.676c487d99ef2723f422.js.map

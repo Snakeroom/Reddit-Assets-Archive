@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f326d617030dc91bf5cc.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.15abd6ab6bdd941c1ee8.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -531,8 +531,8 @@
 							postId: r
 						}))
 					},
-					handleVote: t => t === A.a.upvoted ? e(Object(l.N)(r)) : e(Object(l.o)(r)),
-					onIgnoreReports: () => e(Object(l.L)(r)),
+					handleVote: t => t === A.a.upvoted ? e(Object(l.Q)(r)) : e(Object(l.r)(r)),
+					onIgnoreReports: () => e(Object(l.O)(r)),
 					onOpenReportsDropdown: t => e(Object(u.g)({
 						tooltipId: t
 					}))
@@ -1572,4 +1572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.f326d617030dc91bf5cc.js.map
+//# sourceMappingURL=reddit-components-MediumPost.15abd6ab6bdd941c1ee8.js.map

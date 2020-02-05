@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.45fa15636a43c16b554d.js
-// Retrieved at 2/4/2020, 1:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.de766c06e53257ac2bc4.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -619,7 +619,7 @@
 							const {
 								postId: e
 							} = l, t = s.posts.models[e];
-							t && t.voteState === b.a.notVoted && n(Object(a.N)(e))
+							t && t.voteState === b.a.notVoted && n(Object(a.Q)(e))
 						}
 					} else n(S({
 						pollId: e,
@@ -14140,7 +14140,7 @@
 					shouldShowCollectionEditOptions: x.s
 				}),
 				I = Object(a.b)(k, (e, t) => ({
-					copyLink: () => e(Object(u.t)(t.permalink)),
+					copyLink: () => e(Object(u.w)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -20974,7 +20974,7 @@
 							s && O.g(o(), s, n)
 						})
 					},
-					copyLink: t => e(Object(zi.t)(t)),
+					copyLink: t => e(Object(zi.w)(t)),
 					trackConnectAccountsClick: () => e((e, t) => O.b(t()))
 				}), (e, t, n) => Object.assign({}, e, t, n, {
 					onTogglePostToTwitter: () => t.togglePostToTwitter(!e.postToTwitter),
@@ -23276,4 +23276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.45fa15636a43c16b554d.js.map
+//# sourceMappingURL=PostCreation.de766c06e53257ac2bc4.js.map

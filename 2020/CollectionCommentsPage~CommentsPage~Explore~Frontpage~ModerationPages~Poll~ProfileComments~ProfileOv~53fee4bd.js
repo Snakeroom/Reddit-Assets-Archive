@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd.b9b52eb09edeee270d75.js
-// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd.2b8bd4fb22d23d1f7a66.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -348,7 +348,7 @@
 							text: Object(o.a)(d.user.language, "postCreation.editing.success")
 						})), t(T(c.id));
 						const e = Object(g.a)(p.body);
-						t(Object(r.E)({
+						t(Object(r.H)({
 							[c.id]: e
 						}))
 					} else t(w(p.error))
@@ -1267,8 +1267,8 @@
 				H = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				K = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				J = s("./src/reddit/i18n/utils.ts"),
-				z = s("./src/reddit/selectors/user.ts"),
-				q = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				q = s("./src/reddit/selectors/user.ts"),
+				z = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				X = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				Q = s("./src/reddit/helpers/trackers/modTools.ts"),
 				Y = s("./src/reddit/helpers/trackers/post.ts"),
@@ -1341,7 +1341,7 @@
 				je = Object(i.c)({
 					activeModalId: pe.a,
 					layout: U.M,
-					userIsOp: z.fb,
+					userIsOp: q.fb,
 					subreddit: U.q
 				}),
 				Pe = Object(r.b)(je, (e, t) => {
@@ -1353,8 +1353,8 @@
 					return {
 						addPostToCollection: (t, s) => e(Object(de.a)(t, s)),
 						onToggleModal: t => e(Object(u.i)(t)),
-						onToggleSave: () => e(Object(b.G)(o.postId)),
-						onHide: t => e(Object(b.K)(o.postId, !o.hidden, n, !0)),
+						onToggleSave: () => e(Object(b.J)(o.postId)),
+						onHide: t => e(Object(b.N)(o.postId, !o.hidden, n, !0)),
 						onReportClick: () => e(Object(g.j)(o.postId, n)),
 						onEdit: () => {
 							const t = !n && !r;
@@ -1449,7 +1449,7 @@
 						toggleEditStartTimeModal: U,
 						tooltipType: H,
 						userIsOp: K
-					} = this.props, z = !!r && Object(ne.f)(r) === w.author, X = Object(ae.a)("View--Reports", w.id, H), $ = Object(ae.a)("View--GiveAward", w.id, H), se = Object(M.c)(w), de = Ie("-mod-actions-menu", w.id, b, x), pe = Object(M.a)(w), me = w.postId, be = v === V.g.Large, he = !m && be || c && C, ge = !(b || m || l), Ce = r && w.isGildable;
+					} = this.props, q = !!r && Object(ne.f)(r) === w.author, X = Object(ae.a)("View--Reports", w.id, H), $ = Object(ae.a)("View--GiveAward", w.id, H), se = Object(M.c)(w), de = Ie("-mod-actions-menu", w.id, b, x), pe = Object(M.a)(w), me = w.postId, be = v === V.g.Large, he = !m && be || c && C, ge = !(b || m || l), Ce = r && w.isGildable;
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: Object(d.a)(ue.a.flatlistContainer, s)
 					}, n.a.createElement(f.a, {
@@ -1469,7 +1469,7 @@
 						renderInPortal: ge,
 						subredditId: B.id,
 						targetName: w.author
-					}), Ce && n.a.createElement(n.a.Fragment, null, n.a.createElement(q.a, {
+					}), Ce && n.a.createElement(n.a.Fragment, null, n.a.createElement(z.a, {
 						displayText: Object(J.c)("Give Award"),
 						flatlistItem: re.a.Gild,
 						isLoggedIn: !!r,
@@ -1498,28 +1498,28 @@
 						className: ue.a.shareIcon
 					}), n.a.createElement("span", {
 						className: ue.a.shareText
-					}, n.a.createElement(k.c, null, "share")))), G && !he && n.a.createElement(q.a, {
+					}, n.a.createElement(k.c, null, "share")))), G && !he && n.a.createElement(z.a, {
 						displayText: Object(J.c)("Edit post"),
 						flatlistItem: re.a.EditPost,
 						isLoggedIn: !!r,
 						isUserOp: K,
 						onClick: this.props.onEdit,
 						skipRoleAttr: !0
-					}, n.a.createElement(D.b, null)), (!c || !C) && n.a.createElement(q.a, {
+					}, n.a.createElement(D.b, null)), (!c || !C) && n.a.createElement(z.a, {
 						displayText: Object(a.a)(g, "posts.".concat(w.saved ? "unsave" : "save")),
 						flatlistItem: re.a.Save,
 						isLoggedIn: !!r,
 						isUserOp: K,
 						onClick: this.onSaveClick,
 						skipRoleAttr: !0
-					}, w.saved ? n.a.createElement(D.e, null) : n.a.createElement(D.d, null)), !w.isSponsored && !he && n.a.createElement(q.a, {
+					}, w.saved ? n.a.createElement(D.e, null) : n.a.createElement(D.d, null)), !w.isSponsored && !he && n.a.createElement(z.a, {
 						displayText: Object(a.a)(g, "posts.".concat(w.hidden ? "unhide" : "hide")),
 						flatlistItem: re.a.Hide,
 						isLoggedIn: !!r,
 						isUserOp: K,
 						onClick: this.onHideClick,
 						skipRoleAttr: !0
-					}, n.a.createElement(D.a, null)), !z && !w.isSponsored && !he && n.a.createElement(q.a, {
+					}, n.a.createElement(D.a, null)), !q && !w.isSponsored && !he && n.a.createElement(z.a, {
 						displayText: Object(J.c)("report"),
 						flatlistItem: re.a.Report,
 						isLoggedIn: !!r,
@@ -1539,7 +1539,7 @@
 						canEditFlair: i && !!S,
 						hasModPostPerms: c,
 						isOverlay: !!b,
-						isPostAuthor: z,
+						isPostAuthor: q,
 						language: g,
 						modModeEnabled: C,
 						post: w,
@@ -1812,12 +1812,12 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(p.l)(s.id)),
+						onApprovePost: () => e(Object(p.o)(s.id)),
 						onOpenPostModModeDropdown: t => e(Object(m.g)({
 							tooltipId: t
 						})),
-						onRemovePost: () => e(Object(p.F)(s.id, !1)),
-						onSpamPost: () => e(Object(p.F)(s.id, !0)),
+						onRemovePost: () => e(Object(p.I)(s.id, !1)),
+						onSpamPost: () => e(Object(p.I)(s.id, !0)),
 						onFlairPost: t => () => e(Object(l.i)(t))
 					}
 				});
@@ -2113,8 +2113,8 @@
 				H = s("./src/reddit/components/ReportFlow/index.tsx"),
 				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				J = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
-				z = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				q = s("./src/reddit/components/Flatlist/constants.ts"),
+				q = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				z = s("./src/reddit/components/Flatlist/constants.ts"),
 				X = s("./src/reddit/components/Flatlist/getFlatlistBreakpoints.ts"),
 				Q = s("./src/reddit/constants/postLayout.ts"),
 				Y = s("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -2174,7 +2174,7 @@
 				we = m.a.wrapped(T.a, "LiveIcon", ue.a),
 				_e = m.a.wrapped(j.a, "CalendarIcon", ue.a),
 				Se = m.a.wrapped(S.a, "LinkIcon", ue.a),
-				Te = m.a.wrapped(z.b, "DropdownRow", ue.a),
+				Te = m.a.wrapped(q.b, "DropdownRow", ue.a),
 				Ne = m.a.wrapped(J.a, "PostCheckboxMenuItem", ue.a),
 				Me = e => {
 					let {
@@ -2186,12 +2186,12 @@
 						hide: i = !0
 					} = e;
 					return {
-						[q.a.Gild]: t,
-						[q.a.Save]: s,
-						[q.a.Share]: o,
-						[q.a.Report]: n,
-						[q.a.EditPost]: r,
-						[q.a.Hide]: i
+						[z.a.Gild]: t,
+						[z.a.Save]: s,
+						[z.a.Share]: o,
+						[z.a.Report]: n,
+						[z.a.EditPost]: r,
+						[z.a.Hide]: i
 					}
 				},
 				Re = Object(a.b)(() => Object(c.c)({
@@ -2256,16 +2256,16 @@
 						isCommentsPage: r
 					} = t;
 					return {
-						onCopyLink: () => e(Object(g.t)(s)),
-						onDelete: t => e(Object(g.z)(o, t, n)),
-						onDistinguishPost: t => e(Object(g.n)(o, t)),
+						onCopyLink: () => e(Object(g.w)(s)),
+						onDelete: t => e(Object(g.C)(o, t, n)),
+						onDistinguishPost: t => e(Object(g.q)(o, t)),
 						onGildClick: () => e(Object(b.d)(o, n)),
-						onToggleSave: () => e(Object(g.G)(o)),
-						onToggleNSFW: () => e(Object(g.v)(o)),
-						onToggleOC: () => e(Object(g.w)(o)),
+						onToggleSave: () => e(Object(g.J)(o)),
+						onToggleNSFW: () => e(Object(g.y)(o)),
+						onToggleOC: () => e(Object(g.z)(o)),
 						onTogglePinned: () => e(Object(x.i)(o)),
-						onToggleSpoiler: () => e(Object(g.J)(o)),
-						onHide: t => e(Object(g.K)(o, !t, n, !0)),
+						onToggleSpoiler: () => e(Object(g.M)(o)),
+						onHide: t => e(Object(g.N)(o, !t, n, !0)),
 						onReportClick: () => e(Object(f.j)(o, n)),
 						onStartEventNow: () => {
 							e((e, t) => Object(l.a)(Object(C.p)()(t()))), e(Object(u.startEventNowRequested)(o))
@@ -2275,7 +2275,7 @@
 							e(Object(O.a)(o, t))
 						},
 						onFlairPost: () => e(Object(h.i)(Object(ae.b)(o, n))),
-						onToggleSendReplies: () => e(Object(g.H)(o)),
+						onToggleSendReplies: () => e(Object(g.K)(o)),
 						showCollectionsList: (t, s) => {
 							e(Object(de.e)(t)).then(() => {
 								const t = Object(le.t)(s, n);
@@ -2348,7 +2348,7 @@
 					} = this, t = e.layout === Q.g.Classic;
 					if (!(e.ignoreBreakpoints || e.modModeWithPost || e.userIsOp || !e.isCommentsPage && !t)) return Object(X.b)({
 						breakpointType: X.a.HideIfVWLarger,
-						flatlistItem: q.a.PostOverflowMenu,
+						flatlistItem: z.a.PostOverflowMenu,
 						isLoggedIn: !!e.currentUser,
 						isUserOp: e.userIsOp
 					})
@@ -2370,13 +2370,13 @@
 						userIsOp: b
 					} = e, h = e.currentUser && e.currentUser.isEmployee, x = Object(Z.a)(e.post), g = e.post.belongsTo.type === v.a.PROFILE || Object(te.d)(e.postSubredditAboutInfo), O = t && d.isGildable, f = Object($.a)(e.post);
 					return i.a.createElement("div", null, O && i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.Gild),
+						className: this.getBreakpointClass(z.a.Gild),
 						displayText: o.fbt._("Give Award", null, {
 							hk: "3mYeGJ"
 						}),
 						onClick: this.handleGild
 					}, i.a.createElement(Ce, null)), i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.Share),
+						className: this.getBreakpointClass(z.a.Share),
 						displayText: o.fbt._("Copy link", null, {
 							hk: "ETZxA"
 						}),
@@ -2384,7 +2384,7 @@
 							this.handlePostEvent("share_copy"), e.onCopyLink()
 						}
 					}, i.a.createElement(Se, null)), i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.Share),
+						className: this.getBreakpointClass(z.a.Share),
 						displayText: o.fbt._("Embed", null, {
 							hk: "3u0v6r"
 						}),
@@ -2392,7 +2392,7 @@
 							this.handlePostEvent("share_embed"), window.open("https://embed.redditmedia.com/widgets/embed?url=".concat(e.post.permalink), "RedditEmbed", "height=500,width=650,modal=yes,alwaysRaised=yes")
 						}
 					}, i.a.createElement(je, null)), e.showEditPost && i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.EditPost),
+						className: this.getBreakpointClass(z.a.EditPost),
 						displayText: o.fbt._("Edit post", null, {
 							hk: "3gVzz0"
 						}),
@@ -2405,7 +2405,7 @@
 						onClick: e.onFlairPost,
 						isSelected: e.isHidden
 					}, i.a.createElement(ke, null)), i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.Save),
+						className: this.getBreakpointClass(z.a.Save),
 						displayText: e.isSaved ? o.fbt._("unsave", null, {
 							hk: "HDDPm"
 						}) : o.fbt._("save", null, {
@@ -2421,7 +2421,7 @@
 						}),
 						onClick: this.togglePinned
 					}, this.props.isPinned ? i.a.createElement(ye, null) : i.a.createElement(Pe, null)), !e.isSponsored && i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.Hide),
+						className: this.getBreakpointClass(z.a.Hide),
 						displayText: e.isHidden ? o.fbt._("unhide", null, {
 							hk: "1P4IxC"
 						}) : o.fbt._("hide", null, {
@@ -2430,7 +2430,7 @@
 						onClick: this.toggleHide,
 						isSelected: e.isHidden
 					}, i.a.createElement(he, null)), !e.isSponsored && !b && i.a.createElement(Te, {
-						className: this.getBreakpointClass(q.a.Report),
+						className: this.getBreakpointClass(z.a.Report),
 						displayText: o.fbt._("report", null, {
 							hk: "128RPn"
 						}),
@@ -2613,7 +2613,7 @@
 								tooltipId: s
 							}))
 						},
-						copyLink: () => e(Object(m.t)(Object(p.a)(o, {
+						copyLink: () => e(Object(m.w)(Object(p.a)(o, {
 							utm_source: "share",
 							utm_medium: "web2x"
 						})))
@@ -3054,4 +3054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd.b9b52eb09edeee270d75.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Explore~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOv~53fee4bd.2b8bd4fb22d23d1f7a66.js.map

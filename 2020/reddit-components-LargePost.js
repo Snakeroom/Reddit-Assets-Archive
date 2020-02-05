@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6aad1a9dc18db6e69bc9.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.632856d0d0769547c0e4.js
+// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, o) {
@@ -768,10 +768,10 @@
 							}))
 						},
 						handleVote: t => {
-							const o = t === v.a.upvoted ? Object(u.N)(n) : Object(u.o)(n);
+							const o = t === v.a.upvoted ? Object(u.Q)(n) : Object(u.r)(n);
 							e(o)
 						},
-						onIgnoreReports: () => e(Object(u.L)(n)),
+						onIgnoreReports: () => e(Object(u.O)(n)),
 						onOpenReportsDropdown: t => e(Object(m.g)({
 							tooltipId: t
 						}))
@@ -1139,7 +1139,7 @@
 					post: o
 				} = t;
 				return {
-					onFollow: () => e(Object(c.s)(o.isSponsored ? o.postId : o.id))
+					onFollow: () => e(Object(c.v)(o.isSponsored ? o.postId : o.id))
 				}
 			})(Object(d.b)(b))
 		},
@@ -1451,4 +1451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.6aad1a9dc18db6e69bc9.js.map
+//# sourceMappingURL=reddit-components-LargePost.632856d0d0769547c0e4.js.map
