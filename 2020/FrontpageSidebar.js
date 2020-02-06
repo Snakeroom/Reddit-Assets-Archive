@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.0aaedab1f78c640563e9.js
-// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ec6683fc5dc20226597c.js
+// Retrieved at 2/6/2020, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -36,8 +36,8 @@
 				h = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/i18n/components.tsx"),
 				k = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				_ = n("./src/reddit/components/PremiumCTA/index.m.less"),
-				y = n.n(_);
+				y = n("./src/reddit/components/PremiumCTA/index.m.less"),
+				_ = n.n(y);
 			class N extends a.a.Component {
 				render() {
 					const {
@@ -48,17 +48,17 @@
 						className: e,
 						contentOnly: !0
 					}, a.a.createElement("div", {
-						className: y.a.wrapper
+						className: _.a.wrapper
 					}, a.a.createElement(k.a, {
-						className: y.a.icon
+						className: _.a.icon
 					}), a.a.createElement("div", {
-						className: y.a.content
+						className: _.a.content
 					}, a.a.createElement("div", {
-						className: y.a.title
+						className: _.a.title
 					}, a.a.createElement(x.c, null, "Reddit Premium")), a.a.createElement("div", {
-						className: y.a.description
+						className: _.a.description
 					}, a.a.createElement(x.c, null, "The best Reddit experience, with monthly Coins"))), a.a.createElement(h.e, {
-						className: y.a.cta,
+						className: _.a.cta,
 						onClick: t
 					}, a.a.createElement(x.c, null, "Try Now")))))
 				}
@@ -181,8 +181,8 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var w = P,
-				I = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
+			var I = P,
+				w = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				B = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				A = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				D = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
@@ -190,8 +190,8 @@
 				R = n("./src/app/strings/index.ts"),
 				U = n("./src/lib/prettyPrintNumber/index.ts"),
 				Q = n("./src/lib/timeAgo/index.ts"),
-				H = n("./src/reddit/components/SubredditNameLink/index.tsx"),
-				J = n("./src/reddit/components/Thumbnail/index.tsx"),
+				J = n("./src/reddit/components/SubredditNameLink/index.tsx"),
+				H = n("./src/reddit/components/Thumbnail/index.tsx"),
 				X = n("./src/reddit/helpers/overlay/index.ts"),
 				Z = n("./src/reddit/selectors/posts.ts"),
 				M = n("./src/reddit/selectors/subreddit.ts"),
@@ -242,14 +242,14 @@
 					}, a.a.createElement("div", {
 						className: Y.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
-					}, a.a.createElement(J.a, {
+					}, a.a.createElement(H.a, {
 						post: t
 					})), a.a.createElement("div", {
 						className: Y.a.postDetails
 					}, a.a.createElement("p", {
 						className: Y.a.title,
 						title: t.title
-					}, t.title), n && s && s.displayText && a.a.createElement(H.a, {
+					}, t.title), n && s && s.displayText && a.a.createElement(J.a, {
 						to: s.url,
 						onClick: this.onClickSubreddit
 					}, s.displayText), a.a.createElement("div", null, a.a.createElement("span", {
@@ -336,12 +336,12 @@
 				he = n("./src/reddit/selectors/telemetry.ts"),
 				xe = n("./src/reddit/selectors/widgets.ts"),
 				ke = n("./src/telemetry/models/Subreddit.ts");
-			const _e = e => t => n => Object.assign({}, he.defaults(n), Object(xe.b)(n, e), {
+			const ye = e => t => n => Object.assign({}, he.defaults(n), Object(xe.b)(n, e), {
 					source: "trending_community_card",
 					action: Ee.c.CLICK,
 					noun: Object(ke.getSubscribeEventNoun)(e.type, t)
 				}),
-				ye = e => t => Object.assign({}, he.defaults(t), Object(xe.b)(t, e), {
+				_e = e => t => Object.assign({}, he.defaults(t), Object(xe.b)(t, e), {
 					source: "trending_community_card",
 					action: Ee.c.CLICK,
 					noun: "community"
@@ -391,23 +391,23 @@
 						first: 5,
 						shouldDisplayDelta: this.props.isMod,
 						to: r ? "".concat(ge.e).concat(ge.m) : ge.e
-					}), l && a.a.createElement(g.a, null, a.a.createElement(p, null)), a.a.createElement(I.a, {
+					}), l && a.a.createElement(g.a, null, a.a.createElement(p, null)), a.a.createElement(w.a, {
 						placement: Se.c.ABOVE_THE_FOLD,
 						listingName: o,
 						position: Oe.a.FIRST,
 						sizes: Se.h,
 						placementIndex: e++
 					}), Te(this.props) && a.a.createElement(C, null), ve(this.props) && a.a.createElement(g.a, null, a.a.createElement(pe, {
-						getClickEventFactory: ye,
-						getSubscribeEventFactoryHandler: _e,
+						getClickEventFactory: _e,
+						getSubscribeEventFactoryHandler: ye,
 						subredditIds: i,
 						title: Object(d.c)("Trending Communities")
 					})), s && a.a.createElement(g.a, null, a.a.createElement(c.a, {
 						listingName: o
-					})), fe(this.props) && a.a.createElement(le, null), n && a.a.createElement(g.a, null, a.a.createElement(w, {
+					})), fe(this.props) && a.a.createElement(le, null), n && a.a.createElement(g.a, null, a.a.createElement(I, {
 						links: n
 					})), a.a.createElement(A.a, {
-						adComponent: a.a.createElement(I.a, {
+						adComponent: a.a.createElement(w.a, {
 							placement: Se.c.BELOW_THE_FOLD,
 							listingName: o,
 							position: Oe.a.BOTTOM,
@@ -493,6 +493,20 @@
 				widget: "_3Fe8ia7wR8lbatMEJ6BchP"
 			}
 		},
+		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, n) {
+			e.exports = {
+				SubredditName: "_3ryJoIoycVkA88fy40qNJc",
+				subredditName: "_3ryJoIoycVkA88fy40qNJc"
+			}
+		},
+		"./src/reddit/components/SubredditNameLink/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				a = n("./src/reddit/components/SubredditNameLink/index.m.less"),
+				r = n.n(a);
+			const o = n("./src/lib/lessComponent.tsx").a.wrapped(s.a, "SubredditName", r.a);
+			t.a = o
+		},
 		"./src/reddit/components/TopSubredditsWidget/Container.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/lodash/sampleSize.js"),
@@ -512,10 +526,10 @@
 				h = n("./src/reddit/constants/subredditLeaderboard.ts"),
 				x = n("./src/reddit/controls/Button/index.tsx"),
 				k = n("./src/reddit/controls/Chip/index.m.less"),
-				_ = n.n(k);
-			var y = e => {
+				y = n.n(k);
+			var _ = e => {
 					const t = e.to ? m.a : "div",
-						n = Object(p.a)(_.a.chip, e.isActive && _.a.active, e.className);
+						n = Object(p.a)(y.a.chip, e.isActive && y.a.active, e.className);
 					return o.a.createElement(t, {
 						className: n,
 						to: e.to || ""
@@ -573,7 +587,7 @@
 				},
 				L = e => o.a.createElement("div", {
 					className: O.a.categoryPicker
-				}, e.categories && e.categories.map(e => o.a.createElement(y, {
+				}, e.categories && e.categories.map(e => o.a.createElement(_, {
 					className: O.a.chip,
 					key: e.name,
 					to: "".concat(h.e).concat(Object(N.f)(e.name), "/")
@@ -609,8 +623,8 @@
 					}))
 				},
 				P = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				w = n("./src/reddit/contexts/ApiContext.tsx"),
-				I = n("./src/reddit/endpoints/subreddit/models.ts"),
+				I = n("./src/reddit/contexts/ApiContext.tsx"),
+				w = n("./src/reddit/endpoints/subreddit/models.ts"),
 				B = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				A = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
 				D = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
@@ -634,7 +648,7 @@
 				}
 			}, Q = async e => {
 				const t = a()(W.a, 5),
-					n = await Object(I.a)(e, {
+					n = await Object(w.a)(e, {
 						names: t
 					});
 				if (n && n.ok) {
@@ -643,7 +657,7 @@
 					return Object(A.a)(t)
 				}
 			};
-			class H extends o.a.Component {
+			class J extends o.a.Component {
 				constructor(e) {
 					super(e), this.fetchTopSubreddits = () => {
 						const {
@@ -705,7 +719,7 @@
 					}, this.props))
 				}
 			}
-			t.a = Object(w.b)(Object(P.b)(H))
+			t.a = Object(I.b)(Object(P.b)(J))
 		},
 		"./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx": function(e, t, n) {
 			"use strict";
@@ -892,4 +906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.0aaedab1f78c640563e9.js.map
+//# sourceMappingURL=FrontpageSidebar.ec6683fc5dc20226597c.js.map
