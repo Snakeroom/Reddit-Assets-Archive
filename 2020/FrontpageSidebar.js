@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ec6683fc5dc20226597c.js
-// Retrieved at 2/6/2020, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.23823729227bc1d3c55e.js
+// Retrieved at 2/6/2020, 4:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -541,12 +541,13 @@
 				O = n.n(S);
 			const j = e => {
 					const t = !(!e.rankings || !e.rankings.length),
-						n = !t && O.a.communityBannerPlaceholder;
+						n = !t && O.a.communityBannerPlaceholder,
+						s = e.bannerBackgroundImage ? {
+							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
+						} : void 0;
 					return o.a.createElement("div", {
 						className: Object(p.a)(e.className, O.a.communityBanner, n),
-						style: {
-							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
-						}
+						style: s
 					}, t && o.a.createElement("h2", {
 						className: O.a.communityBannerText
 					}, o.a.createElement(m.a, {
@@ -906,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.ec6683fc5dc20226597c.js.map
+//# sourceMappingURL=FrontpageSidebar.23823729227bc1d3c55e.js.map

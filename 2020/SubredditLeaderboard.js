@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.dbeeaf522bf9e03519ac.js
-// Retrieved at 2/6/2020, 4:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7ba73cd36d3dbb498baf.js
+// Retrieved at 2/6/2020, 4:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -573,12 +573,13 @@
 				v = r.n(S);
 			const N = e => {
 					const t = !(!e.rankings || !e.rankings.length),
-						r = !t && v.a.communityBannerPlaceholder;
+						r = !t && v.a.communityBannerPlaceholder,
+						n = e.bannerBackgroundImage ? {
+							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
+						} : void 0;
 					return o.a.createElement("div", {
 						className: Object(p.a)(e.className, v.a.communityBanner, r),
-						style: {
-							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
-						}
+						style: n
 					}, t && o.a.createElement("h2", {
 						className: v.a.communityBannerText
 					}, o.a.createElement(m.a, {
@@ -1527,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.dbeeaf522bf9e03519ac.js.map
+//# sourceMappingURL=SubredditLeaderboard.7ba73cd36d3dbb498baf.js.map
