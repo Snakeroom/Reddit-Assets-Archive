@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c5d28c9db9278ee80557.js
-// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.01b82d56e71194db06f3.js
+// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -178,9 +178,9 @@
 					}]), t
 				}(s.a.Component);
 			h.displayName = "IntersectionObserver";
-			var x = h;
+			var f = h;
 			r.d(t, "a", (function() {
-				return x
+				return f
 			}))
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, r) {
@@ -464,8 +464,8 @@
 				m = r("./src/reddit/components/CallToActionButton/index.tsx"),
 				b = r("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
 				h = r("./src/reddit/components/DiscoveryUnit/InFeedChaining/Loader.tsx"),
-				x = r("./src/reddit/components/FlairWrapper/index.tsx"),
-				f = r("./src/reddit/components/Flatlist/index.tsx"),
+				f = r("./src/reddit/components/FlairWrapper/index.tsx"),
+				x = r("./src/reddit/components/Flatlist/index.tsx"),
 				y = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				g = r("./src/reddit/components/ModModeReports/index.tsx"),
 				v = r("./src/reddit/components/ModModeReports/helpers.ts"),
@@ -569,7 +569,7 @@
 					sendEvent: se,
 					subredditOrProfile: ne,
 					toggleCheckbox: ie
-				} = e, ae = ee ? void 0 : c, de = Object(L.a)(X), ce = Q && de, le = Object(A.a)(X), pe = Object(v.c)($), ue = Object(I.a)($), me = p && !oe, be = me && !!$.source && !o, he = !(B && F || R), xe = s.a.createElement(S.a, {
+				} = e, ae = ee ? void 0 : c, de = Object(L.a)(X), ce = Q && de, le = Object(A.a)(X), pe = Object(v.c)($), ue = Object(I.a)($), me = p && !oe, be = me && !!$.source && !o, he = !(B && F || R), fe = s.a.createElement(S.a, {
 					className: Object(d.a)(Y.a.container, r, G.a.largeAndMediumPostStyles, G.a.largeAndMediumActiveStyles, Object(M.a)(e), {
 						[G.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 					}),
@@ -620,7 +620,7 @@
 					size: j.b.Large,
 					titleColor: ae && ae.postTitleColor,
 					isOverlay: W
-				}), N && ($.flair && $.flair.length > 0 || e.isInCategoriesExperiment) && s.a.createElement(x.a, {
+				}), N && ($.flair && $.flair.length > 0 || e.isInCategoriesExperiment) && s.a.createElement(f.a, {
 					className: N ? Y.a.leftPadding : null,
 					disableFlair: !N,
 					post: $,
@@ -668,7 +668,7 @@
 					redditStyle: ee,
 					model: $,
 					onVoteClick: e.handleVote
-				}), s.a.createElement(f.c, {
+				}), s.a.createElement(x.c, {
 					currentUser: n,
 					hasModFlairPerms: le,
 					hasModPostPerms: de,
@@ -687,7 +687,7 @@
 						report: !1
 					})
 				}))));
-				return s.a.createElement(s.a.Fragment, null, xe, z && !V && s.a.createElement(h.a, {
+				return s.a.createElement(s.a.Fragment, null, fe, z && !V && s.a.createElement(h.a, {
 					className: Y.a.chain,
 					listingKey: Z,
 					listingName: H,
@@ -856,8 +856,8 @@
 				m = r("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				b = r("./src/reddit/constants/posts.ts"),
 				h = r("./src/reddit/controls/OutboundLink/index.tsx"),
-				x = r("./src/reddit/helpers/trackers/post.ts"),
-				f = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				f = r("./src/reddit/helpers/trackers/post.ts"),
+				x = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				y = r("./src/reddit/models/Media/index.ts"),
 				g = r("./src/reddit/models/Subreddit/index.ts"),
 				v = r("./src/reddit/components/PostTopLine/index.m.less"),
@@ -926,7 +926,7 @@
 					tooltipType: E ? l.c.Lightbox : void 0,
 					thing: w
 				})), M && A && T && !P && s.a.createElement(m.a, {
-					getEventFactory: e => Object(x.f)(w.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(f.f)(w.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: M.name,
 						type: Object(g.e)(M) ? b.a.PROFILE : b.a.SUBREDDIT
@@ -937,7 +937,7 @@
 					isSponsored: w.isSponsored,
 					href: Object(y.A)(e.post),
 					source: w.source
-				}, s.a.createElement(f.a, {
+				}, s.a.createElement(x.a, {
 					className: O.a.outboundLinkIcon
 				})))
 			}
@@ -1019,9 +1019,9 @@
 					}, d))
 				},
 				h = b(c.a),
-				x = b(d);
+				f = b(d);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? x : e.isCheckboxSelected ? h : i.a;
+				const t = e.isHalfCheckboxSelected ? f : e.isCheckboxSelected ? h : i.a;
 				return s.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -1048,6 +1048,10 @@
 				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === o.a.SELF || e.thumbnail.url === o.a.NSFW)
 			}
 		},
+		"./src/reddit/helpers/hasModFlairPermissions/index.ts": function(e, t, r) {
+			"use strict";
+			t.a = e => !!e && !!e.flair
+		},
 		"./src/reddit/helpers/styles/mixins/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "e", (function() {
@@ -1057,9 +1061,9 @@
 			})), r.d(t, "b", (function() {
 				return h
 			})), r.d(t, "a", (function() {
-				return x
-			})), r.d(t, "d", (function() {
 				return f
+			})), r.d(t, "d", (function() {
+				return x
 			}));
 			var o = r("./node_modules/polished/dist/polished.es.js"),
 				s = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
@@ -1088,8 +1092,8 @@
 				h = e => e && e.postBackgroundColor ? {
 					backgroundColor: b(e.postBackgroundColor)
 				} : p,
-				x = e => e.isActive ? l.a.mIsActive : void 0,
-				f = e => {
+				f = e => e.isActive ? l.a.mIsActive : void 0,
+				x = e => {
 					const t = Object(n.a)(Object(s.a)(e), i.a.actionIcon, i.b.actionIcon);
 					return {
 						color: t,
@@ -1115,4 +1119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.c5d28c9db9278ee80557.js.map
+//# sourceMappingURL=reddit-components-MediumPost.01b82d56e71194db06f3.js.map

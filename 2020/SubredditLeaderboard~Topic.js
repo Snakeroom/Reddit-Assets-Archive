@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard~Topic.06dd6719981646814268.js
-// Retrieved at 2/5/2020, 1:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard~Topic.ce62d9be017e62b42dfe.js
+// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard~Topic"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, r) {
@@ -189,7 +189,7 @@
 				return r
 			};
 			const S = d.e[1] + 24,
-				C = g.g + 8 + 152 + 32 + 16,
+				C = g.f + 8 + 152 + 32 + 16,
 				v = C + S + 8,
 				k = E.a.div("Container", _.a),
 				T = E.a.wrapped(e => {
@@ -257,16 +257,15 @@
 							categoriesPlacementVariant: t,
 							children: r,
 							className: n,
-							hideFooter: s,
-							railsWidgetsVariant: o
+							hideFooter: s
 						}
-					} = this, i = this.state.isAdSticky && !(!e && !r);
+					} = this, o = this.state.isAdSticky && !(!e && !r);
 					return a.a.createElement(k, {
 						className: n,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(O, {
 						categoriesPlacementVariant: t,
-						isSticky: i || !!o
+						isSticky: o
 					}, e, r, !s && a.a.createElement(p.a, null)), !this.props.hideBackToTop && a.a.createElement(T, null))
 				}
 			}
@@ -633,4 +632,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard~Topic.06dd6719981646814268.js.map
+//# sourceMappingURL=SubredditLeaderboard~Topic.ce62d9be017e62b42dfe.js.map

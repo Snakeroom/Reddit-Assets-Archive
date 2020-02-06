@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.7b5731d86c774f6b5d5d.js
-// Retrieved at 2/5/2020, 1:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.cb66a9c00d6868079fe1.js
+// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -657,7 +657,7 @@
 				z = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(N.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(N.a)(e).post, y.a.black, y.a.white) : e.textColor === S.e.Dark ? y.a.black : y.a.white,
 				H = u.a.wrapped(R, "TextFlair", T.a),
 				q = u.a.wrapped(B, "RichTextFlair", T.a),
-				Z = e => {
+				Q = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -667,8 +667,8 @@
 							return Object(i.m)(.1, Object(N.a)(n()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Q = u.a.wrapped(e => {
-					const t = Z(e),
+				Z = u.a.wrapped(e => {
+					const t = Q(e),
 						s = o.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -745,7 +745,7 @@
 						});
 					case S.f.Nsfw:
 					case S.f.Spoiler:
-						return o.a.createElement(Q, {
+						return o.a.createElement(Z, {
 							className: t,
 							text: r.text,
 							type: r.type
@@ -1154,7 +1154,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(g.S)(e, {
+						return Object(g.Q)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					}
@@ -1497,7 +1497,7 @@
 					isCommentPermalink: p.v,
 					pageLayer: e => e
 				}),
-				Z = Object(c.c)({
+				Q = Object(c.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
@@ -1518,13 +1518,13 @@
 						let {
 							post: s
 						} = t;
-						return Object(P.S)(e, {
+						return Object(P.Q)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					},
 					shouldOpenPostInNewTab: L.T
 				}),
-				Q = Object(a.b)(Z),
+				Z = Object(a.b)(Q),
 				G = e => {
 					const {
 						post: t
@@ -1642,7 +1642,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = m.a.wrapped(q(Q(Object(d.a)(Object(u.b)(X)))), "Component", M.a)
+			t.c = m.a.wrapped(q(Z(Object(d.a)(Object(u.b)(X)))), "Component", M.a)
 		},
 		"./src/reddit/components/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3141,4 +3141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.7b5731d86c774f6b5d5d.js.map
+//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.cb66a9c00d6868079fe1.js.map

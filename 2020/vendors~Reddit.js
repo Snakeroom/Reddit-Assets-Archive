@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.f9ea936e5b985e20a6ae.js
-// Retrieved at 1/30/2020, 7:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.6634c64e0fcc6c3323bd.js
+// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/google-tag-manager/compiled.js": function(e, t, o) {
@@ -25,11 +25,11 @@
 			var i = "gtm-" + (0, n.v4)(),
 				a = !1,
 				l = [],
-				c = function() {
+				u = function() {
 					var e = document.getElementById(i);
 					return e && e.contentWindow ? e : null
 				},
-				u = t.getLocation = function() {
+				c = t.getLocation = function() {
 					return {
 						href: location.href,
 						hostname: location.hostname,
@@ -39,8 +39,8 @@
 						hash: location.hash.replace(/^#/, "")
 					}
 				},
-				p = t.trigger = function(e, t) {
-					var o = c();
+				d = t.trigger = function(e, t) {
+					var o = u();
 					o && a ? (t && s.postMessage(o.contentWindow, "data.gtm", t), s.postMessage(o.contentWindow, "event.gtm", {
 						event: e
 					})) : function(e, t) {
@@ -50,13 +50,13 @@
 						})
 					}(e, t)
 				},
-				d = function() {
-					if (c() && a) {
+				p = function() {
+					if (u() && a) {
 						var e = l.slice();
 						l = [], e.forEach((function(e) {
 							var t = e.eventName,
 								o = e.payload;
-							return p(t, o)
+							return d(t, o)
 						}))
 					}
 				};
@@ -72,7 +72,7 @@
 						var l = document.createElement("iframe");
 						l.style.display = "none", l.id = i, l.name = JSON.stringify(r({
 							referrer: document.referrer
-						}, u(), n)), l.src = o + "?id=" + t, l.onload = d, document.body.appendChild(l)
+						}, c(), n)), l.src = o + "?id=" + t, l.onload = p, document.body.appendChild(l)
 					} else console.warn("GTM#setup: No `jailUrl` specified, skipping.");
 				else console.warn("GTM#setup: No `containerId` specified, skipping.")
 			}
@@ -117,21 +117,21 @@
 				i = [1 | s[0], s[1], s[2], s[3], s[4], s[5]],
 				a = 16383 & (s[6] << 8 | s[7]),
 				l = 0,
-				c = 0;
+				u = 0;
 			e.exports = function(e, t, o) {
 				var r = t && o || 0,
 					s = t || [],
-					u = void 0 !== (e = e || {}).clockseq ? e.clockseq : a,
-					p = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
-					d = void 0 !== e.nsecs ? e.nsecs : c + 1,
-					f = p - l + (d - c) / 1e4;
-				if (f < 0 && void 0 === e.clockseq && (u = u + 1 & 16383), (f < 0 || p > l) && void 0 === e.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				l = p, c = d, a = u;
-				var b = (1e4 * (268435455 & (p += 122192928e5)) + d) % 4294967296;
-				s[r++] = b >>> 24 & 255, s[r++] = b >>> 16 & 255, s[r++] = b >>> 8 & 255, s[r++] = 255 & b;
-				var m = p / 4294967296 * 1e4 & 268435455;
-				s[r++] = m >>> 8 & 255, s[r++] = 255 & m, s[r++] = m >>> 24 & 15 | 16, s[r++] = m >>> 16 & 255, s[r++] = u >>> 8 | 128, s[r++] = 255 & u;
-				for (var y = e.node || i, h = 0; h < 6; ++h) s[r + h] = y[h];
+					c = void 0 !== (e = e || {}).clockseq ? e.clockseq : a,
+					d = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+					p = void 0 !== e.nsecs ? e.nsecs : u + 1,
+					f = d - l + (p - u) / 1e4;
+				if (f < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (f < 0 || d > l) && void 0 === e.nsecs && (p = 0), p >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				l = d, u = p, a = c;
+				var m = (1e4 * (268435455 & (d += 122192928e5)) + p) % 4294967296;
+				s[r++] = m >>> 24 & 255, s[r++] = m >>> 16 & 255, s[r++] = m >>> 8 & 255, s[r++] = 255 & m;
+				var b = d / 4294967296 * 1e4 & 268435455;
+				s[r++] = b >>> 8 & 255, s[r++] = 255 & b, s[r++] = b >>> 24 & 15 | 16, s[r++] = b >>> 16 & 255, s[r++] = c >>> 8 | 128, s[r++] = 255 & c;
+				for (var h = e.node || i, y = 0; y < 6; ++y) s[r + y] = h[y];
 				return t || n(s)
 			}
 		},
@@ -176,27 +176,27 @@
 					s = Array.isArray(n),
 					a = 0;
 				for (n = s ? n : n[Symbol.iterator]();;) {
-					var c;
+					var u;
 					if (s) {
 						if (a >= n.length) break;
-						c = n[a++]
+						u = n[a++]
 					} else {
 						if ((a = n.next()).done) break;
-						c = a.value
+						u = a.value
 					}
-					var u = c;
+					var c = u;
 					if (![
-							[t, u.root],
-							[o, u.rootMargin],
-							[r, u.thresholds]
+							[t, c.root],
+							[o, c.rootMargin],
+							[r, c.thresholds]
 						].some((function(e) {
 							return i.apply(void 0, e)
-						}))) return u
+						}))) return c
 				}
 				return null
 			}
 			var l = new Map,
-				c = function() {
+				u = function() {
 					function e() {
 						! function(e, t) {
 							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -238,7 +238,7 @@
 						return l.size
 					}, e
 				}(),
-				u = function() {
+				c = function() {
 					function e(e, t) {
 						for (var o = 0; o < t.length; o++) {
 							var r = t[o];
@@ -250,31 +250,31 @@
 					}
 				}();
 
-			function p(e, t) {
+			function d(e, t) {
 				if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return !t || "object" != typeof t && "function" != typeof t ? e : t
 			}
 
-			function d(e, t) {
+			function p(e, t) {
 				e.forEach((function(e) {
-					var o = c.findElement(e, t);
+					var o = u.findElement(e, t);
 					o && o.handleChange(e)
 				}))
 			}
 			var f = ["root", "rootMargin", "threshold"],
-				b = Object.prototype,
-				m = function(e) {
+				m = Object.prototype,
+				b = function(e) {
 					function t() {
 						var o, r;
 						! function(e, t) {
 							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 						}(this, t);
 						for (var n = arguments.length, s = Array(n), i = 0; i < n; i++) s[i] = arguments[i];
-						return o = r = p(this, e.call.apply(e, [this].concat(s))), r.handleChange = function(e) {
+						return o = r = d(this, e.call.apply(e, [this].concat(s))), r.handleChange = function(e) {
 							r.props.onChange(e), r.props.onlyOnce && e.isIntersecting && r.unobserve()
 						}, r.handleNode = function(e) {
 							"function" == typeof r.props.children.ref && r.props.children.ref(e), r.currentTarget && e && r.currentTarget !== e && (r.unobserve(), r.shouldResetObserver = !0), r.target = e
-						}, p(r, o)
+						}, d(r, o)
 					}
 					return function(e, t) {
 						if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -288,9 +288,9 @@
 						}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 					}(t, e), t.prototype.observe = function() {
 						var e;
-						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(s.findDOMNode)(this.target)), this.observer = c.create(d, this.options), c.observe(this)
+						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(s.findDOMNode)(this.target)), this.observer = u.create(p, this.options), u.observe(this)
 					}, t.prototype.unobserve = function() {
-						c.unobserve(this)
+						u.unobserve(this)
 					}, t.prototype.reobserve = function() {
 						this.unobserve(), this.props.disabled || this.observe()
 					}, t.prototype.componentDidMount = function() {
@@ -308,24 +308,24 @@
 						return this.currentTarget = this.target, n.a.cloneElement(n.a.Children.only(this.props.children), {
 							ref: this.handleNode
 						})
-					}, u(t, [{
+					}, c(t, [{
 						key: "options",
 						get: function() {
 							var e = this;
 							return f.reduce((function(t, o) {
-								if (b.hasOwnProperty.call(e.props, o)) {
+								if (m.hasOwnProperty.call(e.props, o)) {
 									var r, n = e.props[o];
-									return "root" === o && "[object String]" === b.toString.call(e.props[o]) && (n = document.querySelector(n)), Object.assign({}, t, ((r = {})[o] = n, r))
+									return "root" === o && "[object String]" === m.toString.call(e.props[o]) && (n = document.querySelector(n)), Object.assign({}, t, ((r = {})[o] = n, r))
 								}
 								return t
 							}), {})
 						}
 					}]), t
 				}(n.a.Component);
-			m.displayName = "IntersectionObserver";
-			var y = m;
+			b.displayName = "IntersectionObserver";
+			var h = b;
 			o.d(t, "a", (function() {
-				return y
+				return h
 			}))
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, o) {
@@ -445,8 +445,8 @@
 				}
 				s.sequenceLevels[e] = 0;
 				for (var l = 0; l < t.length; ++l) {
-					var c = l + 1 === t.length ? a : i(n || s.getKeyInfo(t[l + 1]).action);
-					s.bindSingle(t[l], c, n, e, l)
+					var u = l + 1 === t.length ? a : i(n || s.getKeyInfo(t[l + 1]).action);
+					s.bindSingle(t[l], u, n, e, l)
 				}
 			}
 		},
@@ -491,30 +491,30 @@
 		"./node_modules/combokeys/Combokeys/prototype/getKeyInfo.js": function(e, t, o) {
 			"use strict";
 			e.exports = function(e, t) {
-				var r, n, s, i, a, l, c = [];
-				for (r = o("./node_modules/combokeys/helpers/keysFromString.js")(e), i = o("./node_modules/combokeys/helpers/special-aliases.js"), a = o("./node_modules/combokeys/helpers/shift-map.js"), l = o("./node_modules/combokeys/helpers/isModifier.js"), s = 0; s < r.length; ++s) i[n = r[s]] && (n = i[n]), t && "keypress" !== t && a[n] && (n = a[n], c.push("shift")), l(n) && c.push(n);
+				var r, n, s, i, a, l, u = [];
+				for (r = o("./node_modules/combokeys/helpers/keysFromString.js")(e), i = o("./node_modules/combokeys/helpers/special-aliases.js"), a = o("./node_modules/combokeys/helpers/shift-map.js"), l = o("./node_modules/combokeys/helpers/isModifier.js"), s = 0; s < r.length; ++s) i[n = r[s]] && (n = i[n]), t && "keypress" !== t && a[n] && (n = a[n], u.push("shift")), l(n) && u.push(n);
 				return {
 					key: n,
-					modifiers: c,
-					action: t = this.pickBestAction(n, c, t)
+					modifiers: u,
+					action: t = this.pickBestAction(n, u, t)
 				}
 			}
 		},
 		"./node_modules/combokeys/Combokeys/prototype/getMatches.js": function(e, t, o) {
 			"use strict";
 			e.exports = function(e, t, r, n, s, i) {
-				var a, l, c, u, p = [],
-					d = r.type;
-				"keypress" !== d || r.code && "Arrow" === r.code.slice(0, 5) || (this.callbacks["any-character"] || []).forEach((function(e) {
-					p.push(e)
+				var a, l, u, c, d = [],
+					p = r.type;
+				"keypress" !== p || r.code && "Arrow" === r.code.slice(0, 5) || (this.callbacks["any-character"] || []).forEach((function(e) {
+					d.push(e)
 				}));
-				if (!this.callbacks[e]) return p;
-				for (c = o("./node_modules/combokeys/helpers/isModifier.js"), "keyup" === d && c(e) && (t = [e]), a = 0; a < this.callbacks[e].length; ++a)
-					if (l = this.callbacks[e][a], (n || !l.seq || this.sequenceLevels[l.seq] === l.level) && d === l.action && (u = o("./node_modules/combokeys/Combokeys/prototype/modifiersMatch.js"), "keypress" === d && !r.metaKey && !r.ctrlKey || u(t, l.modifiers))) {
+				if (!this.callbacks[e]) return d;
+				for (u = o("./node_modules/combokeys/helpers/isModifier.js"), "keyup" === p && u(e) && (t = [e]), a = 0; a < this.callbacks[e].length; ++a)
+					if (l = this.callbacks[e][a], (n || !l.seq || this.sequenceLevels[l.seq] === l.level) && p === l.action && (c = o("./node_modules/combokeys/Combokeys/prototype/modifiersMatch.js"), "keypress" === p && !r.metaKey && !r.ctrlKey || c(t, l.modifiers))) {
 						var f = !n && l.combo === s,
-							b = n && l.seq === n && l.level === i;
-						(f || b) && this.callbacks[e].splice(a, 1), p.push(l)
-					} return p
+							m = n && l.seq === n && l.level === i;
+						(f || m) && this.callbacks[e].splice(a, 1), d.push(l)
+					} return d
 			}
 		},
 		"./node_modules/combokeys/Combokeys/prototype/getReverseMap.js": function(e, t, o) {
@@ -530,15 +530,15 @@
 			"use strict";
 			e.exports = function(e, t, r) {
 				var n, s, i, a, l = {},
-					c = 0,
-					u = !1;
-				for (n = this.getMatches(e, t, r), s = 0; s < n.length; ++s) n[s].seq && (c = Math.max(c, n[s].level));
+					u = 0,
+					c = !1;
+				for (n = this.getMatches(e, t, r), s = 0; s < n.length; ++s) n[s].seq && (u = Math.max(u, n[s].level));
 				for (s = 0; s < n.length; ++s)
 					if (n[s].seq) {
-						if (n[s].level !== c) continue;
-						u = !0, l[n[s].seq] = 1, this.fireCallback(n[s].callback, r, n[s].combo, n[s].seq)
-					} else u || this.fireCallback(n[s].callback, r, n[s].combo);
-				a = "keypress" === r.type && this.ignoreNextKeypress, i = o("./node_modules/combokeys/helpers/isModifier.js"), r.type !== this.nextExpectedAction || i(e) || a || this.resetSequences(l), this.ignoreNextKeypress = u && "keydown" === r.type
+						if (n[s].level !== u) continue;
+						c = !0, l[n[s].seq] = 1, this.fireCallback(n[s].callback, r, n[s].combo, n[s].seq)
+					} else c || this.fireCallback(n[s].callback, r, n[s].combo);
+				a = "keypress" === r.type && this.ignoreNextKeypress, i = o("./node_modules/combokeys/helpers/isModifier.js"), r.type !== this.nextExpectedAction || i(e) || a || this.resetSequences(l), this.ignoreNextKeypress = c && "keydown" === r.type
 			}
 		},
 		"./node_modules/combokeys/Combokeys/prototype/handleKeyEvent.js": function(e, t, o) {
@@ -760,6 +760,14 @@
 				return !0
 			}
 		},
+		"./node_modules/lodash/_arraySampleSize.js": function(e, t, o) {
+			var r = o("./node_modules/lodash/_baseClamp.js"),
+				n = o("./node_modules/lodash/_copyArray.js"),
+				s = o("./node_modules/lodash/_shuffleSelf.js");
+			e.exports = function(e, t) {
+				return s(n(e), r(t, 0, e.length))
+			}
+		},
 		"./node_modules/lodash/_baseEvery.js": function(e, t, o) {
 			var r = o("./node_modules/lodash/_baseEach.js");
 			e.exports = function(e, t) {
@@ -767,6 +775,36 @@
 				return r(e, (function(e, r, n) {
 					return o = !!t(e, r, n)
 				})), o
+			}
+		},
+		"./node_modules/lodash/_baseRandom.js": function(e, t) {
+			var o = Math.floor,
+				r = Math.random;
+			e.exports = function(e, t) {
+				return e + o(r() * (t - e + 1))
+			}
+		},
+		"./node_modules/lodash/_baseSampleSize.js": function(e, t, o) {
+			var r = o("./node_modules/lodash/_baseClamp.js"),
+				n = o("./node_modules/lodash/_shuffleSelf.js"),
+				s = o("./node_modules/lodash/values.js");
+			e.exports = function(e, t) {
+				var o = s(e);
+				return n(o, r(t, 0, o.length))
+			}
+		},
+		"./node_modules/lodash/_shuffleSelf.js": function(e, t, o) {
+			var r = o("./node_modules/lodash/_baseRandom.js");
+			e.exports = function(e, t) {
+				var o = -1,
+					n = e.length,
+					s = n - 1;
+				for (t = void 0 === t ? n : t; ++o < t;) {
+					var i = r(o, s),
+						a = e[i];
+					e[i] = e[o], e[o] = a
+				}
+				return e.length = t, e
 			}
 		},
 		"./node_modules/lodash/every.js": function(e, t, o) {
@@ -778,6 +816,16 @@
 			e.exports = function(e, t, o) {
 				var l = i(e) ? r : n;
 				return o && a(e, t, o) && (t = void 0), l(e, s(t, 3))
+			}
+		},
+		"./node_modules/lodash/sampleSize.js": function(e, t, o) {
+			var r = o("./node_modules/lodash/_arraySampleSize.js"),
+				n = o("./node_modules/lodash/_baseSampleSize.js"),
+				s = o("./node_modules/lodash/isArray.js"),
+				i = o("./node_modules/lodash/_isIterateeCall.js"),
+				a = o("./node_modules/lodash/toInteger.js");
+			e.exports = function(e, t, o) {
+				return t = (o ? i(e, t, o) : void 0 === t) ? 1 : a(t), (s(e) ? r : n)(e, t)
 			}
 		},
 		"./node_modules/platform/platform.js": function(e, t, o) {
@@ -792,28 +840,28 @@
 						i = s[typeof window] && window || this,
 						a = s[typeof t] && t,
 						l = s[typeof e] && e && !e.nodeType && e,
-						c = a && l && "object" == typeof r && r;
-					!c || c.global !== c && c.window !== c && c.self !== c || (i = c);
-					var u = Math.pow(2, 53) - 1,
-						p = /\bOpera/,
-						d = Object.prototype,
-						f = d.hasOwnProperty,
-						b = d.toString;
+						u = a && l && "object" == typeof r && r;
+					!u || u.global !== u && u.window !== u && u.self !== u || (i = u);
+					var c = Math.pow(2, 53) - 1,
+						d = /\bOpera/,
+						p = Object.prototype,
+						f = p.hasOwnProperty,
+						m = p.toString;
 
-					function m(e) {
+					function b(e) {
 						return (e = String(e)).charAt(0).toUpperCase() + e.slice(1)
 					}
 
-					function y(e) {
-						return e = k(e), /^(?:webOS|i(?:OS|P))/.test(e) ? e : m(e)
+					function h(e) {
+						return e = k(e), /^(?:webOS|i(?:OS|P))/.test(e) ? e : b(e)
 					}
 
-					function h(e, t) {
+					function y(e, t) {
 						for (var o in e) f.call(e, o) && t(e[o], o, e)
 					}
 
 					function v(e) {
-						return null == e ? m(e) : b.call(e).slice(8, -1)
+						return null == e ? b(e) : m.call(e).slice(8, -1)
 					}
 
 					function g(e) {
@@ -825,9 +873,9 @@
 						return function(e, t) {
 							var o = -1,
 								r = e ? e.length : 0;
-							if ("number" == typeof r && r > -1 && r <= u)
+							if ("number" == typeof r && r > -1 && r <= c)
 								for (; ++o < r;) t(e[o], o, e);
-							else h(e, t)
+							else y(e, t)
 						}(e, (function(r, n) {
 							o = t(o, r, n, e)
 						})), o
@@ -843,8 +891,8 @@
 						var n = o.navigator || {},
 							s = n.userAgent || "";
 						t || (t = s);
-						var a, l, c, u, d, f = r ? !!n.likeChrome : /\bChrome\b/.test(t) && !/internal|\n/i.test(b.toString()),
-							m = r ? "Object" : "ScriptBridgingProxyObject",
+						var a, l, u, c, p, f = r ? !!n.likeChrome : /\bChrome\b/.test(t) && !/internal|\n/i.test(m.toString()),
+							b = r ? "Object" : "ScriptBridgingProxyObject",
 							x = r ? "Object" : "Environment",
 							S = r && o.java ? "JavaPackage" : v(o.java),
 							j = r ? "Object" : "RuntimeObject",
@@ -854,7 +902,7 @@
 							C = E ? "b" : "β",
 							M = o.document || {},
 							P = o.operamini || o.opera,
-							T = p.test(T = r && P ? P["[[Class]]"] : v(P)) ? T : P = null,
+							T = d.test(T = r && P ? P["[[Class]]"] : v(P)) ? T : P = null,
 							A = t,
 							N = [],
 							R = null,
@@ -1023,7 +1071,7 @@
 											"4.0": "NT",
 											"4.90": "ME"
 										};
-										return t && o && /^Win/i.test(e) && !/^Windows Phone /i.test(e) && (r = r[/[\d.]+$/.exec(e)]) && (e = "Windows " + r), e = String(e), t && o && (e = e.replace(RegExp(t, "i"), o)), e = y(e.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1").replace(/\b(Chrome OS \w+) [\d.]+\b/, "$1").split(" on ")[0])
+										return t && o && /^Win/i.test(e) && !/^Windows Phone /i.test(e) && (r = r[/[\d.]+$/.exec(e)]) && (e = "Windows " + r), e = String(e), t && o && (e = e.replace(RegExp(t, "i"), o)), e = h(e.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1").replace(/\b(Chrome OS \w+) [\d.]+\b/, "$1").split(" on ")[0])
 									}(e, r, o.label || o)), e
 								}))
 							}(["Windows Phone", "Android", "CentOS", {
@@ -1034,13 +1082,13 @@
 						function G(e) {
 							return _(e, (function(e, o) {
 								var r = o.pattern || g(o);
-								return !e && (e = RegExp("\\b" + r + " *\\d+[.\\w_]*", "i").exec(t) || RegExp("\\b" + r + " *\\w+-[\\w]*", "i").exec(t) || RegExp("\\b" + r + "(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)", "i").exec(t)) && ((e = String(o.label && !RegExp(r, "i").test(o.label) ? o.label : e).split("/"))[1] && !/[\d.]+/.test(e[0]) && (e[0] += " " + e[1]), o = o.label || o, e = y(e[0].replace(RegExp(r, "i"), o).replace(RegExp("; *(?:" + o + "[_-])?", "i"), " ").replace(RegExp("(" + o + ")[-_.]?(\\w)", "i"), "$1 $2"))), e
+								return !e && (e = RegExp("\\b" + r + " *\\d+[.\\w_]*", "i").exec(t) || RegExp("\\b" + r + " *\\w+-[\\w]*", "i").exec(t) || RegExp("\\b" + r + "(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)", "i").exec(t)) && ((e = String(o.label && !RegExp(r, "i").test(o.label) ? o.label : e).split("/"))[1] && !/[\d.]+/.test(e[0]) && (e[0] += " " + e[1]), o = o.label || o, e = h(e[0].replace(RegExp(r, "i"), o).replace(RegExp("; *(?:" + o + "[_-])?", "i"), " ").replace(RegExp("(" + o + ")[-_.]?(\\w)", "i"), "$1 $2"))), e
 							}))
 						}
 						if (B && (B = [B]), L && !F && (F = G([L])), (a = /\bGoogle TV\b/.exec(F)) && (F = a[0]), /\bSimulator\b/i.test(t) && (F = (F ? F + " " : "") + "Simulator"), "Opera Mini" == W && /\bOPiOS\b/.test(t) && N.push("running in Turbo/Uncompressed mode"), "IE" == W && /\blike iPhone OS\b/.test(t) ? (L = (a = e(t.replace(/like iPhone OS/, ""))).manufacturer, F = a.product) : /^iP/.test(F) ? (W || (W = "Safari"), q = "iOS" + ((a = / OS ([\d_]+)/i.exec(t)) ? " " + a[1].replace(/_/g, ".") : "")) : "Konqueror" != W || /buntu/i.test(q) ? L && "Google" != L && (/Chrome/.test(W) && !/\bMobile Safari\b/i.test(t) || /\bVita\b/.test(F)) || /\bAndroid\b/.test(q) && /^Chrome/.test(W) && /\bVersion\//i.test(t) ? (W = "Android Browser", q = /\bAndroid\b/.test(q) ? q : "Android") : "Silk" == W ? (/\bMobi/i.test(t) || (q = "Android", N.unshift("desktop mode")), /Accelerated *= *true/i.test(t) && N.unshift("accelerated")) : "PaleMoon" == W && (a = /\bFirefox\/([\d.]+)\b/.exec(t)) ? N.push("identifying as Firefox " + a[1]) : "Firefox" == W && (a = /\b(Mobile|Tablet|TV)\b/i.exec(t)) ? (q || (q = "Firefox OS"), F || (F = a[1])) : !W || (a = !/\bMinefield\b/i.test(t) && /\b(?:Firefox|Safari)\b/.exec(W)) ? (W && !F && /[\/,]|^[^(]+?\)/.test(t.slice(t.indexOf(a + "/") + 8)) && (W = null), (a = F || L || q) && (F || L || /\b(?:Android|Symbian OS|Tablet OS|webOS)\b/.test(q)) && (W = /[a-z]+(?: Hat)?/i.exec(/\bAndroid\b/.test(q) ? q : a) + " Browser")) : "Electron" == W && (a = (/\bChrome\/([\d.]+)\b/.exec(t) || 0)[1]) && N.push("Chromium " + a) : q = "Kubuntu", K || (K = _(["(?:Cloud9|CriOS|CrMo|Edge|FxiOS|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|SamsungBrowser|Silk(?!/[\\d.]+$))", "Version", g(W), "(?:Firefox|Minefield|NetFront)"], (function(e, o) {
 								return e || (RegExp(o + "(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)", "i").exec(t) || 0)[1] || null
 							}))), (a = ("iCab" == B && parseFloat(K) > 3 ? "WebKit" : /\bOpera\b/.test(W) && (/\bOPR\b/.test(t) ? "Blink" : "Presto")) || /\b(?:Midori|Nook|Safari)\b/i.test(t) && !/^(?:Trident|EdgeHTML)$/.test(B) && "WebKit" || !B && /\bMSIE\b/i.test(t) && ("Mac OS" == q ? "Tasman" : "Trident") || "WebKit" == B && /\bPlayStation\b(?! Vita\b)/i.test(W) && "NetFront") && (B = [a]), "IE" == W && (a = (/; *(?:XBLWP|ZuneWP)(\d+)/i.exec(t) || 0)[1]) ? (W += " Mobile", q = "Windows Phone " + (/\+$/.test(a) ? a : a + ".x"), N.unshift("desktop mode")) : /\bWPDesktop\b/i.test(t) ? (W = "IE Mobile", q = "Windows Phone 8.x", N.unshift("desktop mode"), K || (K = (/\brv:([\d.]+)/.exec(t) || 0)[1])) : "IE" != W && "Trident" == B && (a = /\brv:([\d.]+)/.exec(t)) && (W && N.push("identifying as " + W + (K ? " " + K : "")), W = "IE", K = a[1]), I) {
-							if (u = "global", d = null != (c = o) ? typeof c[u] : "number", /^(?:boolean|number|string|undefined)$/.test(d) || "object" == d && !c[u]) v(a = o.runtime) == m ? (W = "Adobe AIR", q = a.flash.system.Capabilities.os) : v(a = o.phantom) == j ? (W = "PhantomJS", K = (a = a.version || null) && a.major + "." + a.minor + "." + a.patch) : "number" == typeof M.documentMode && (a = /\bTrident\/(\d+)/i.exec(t)) ? (K = [K, M.documentMode], (a = +a[1] + 4) != K[1] && (N.push("IE " + K[1] + " mode"), B && (B[1] = ""), K[1] = a), K = "IE" == W ? String(K[1].toFixed(1)) : K[0]) : "number" == typeof M.documentMode && /^(?:Chrome|Firefox)\b/.test(W) && (N.push("masking as " + W + " " + K), W = "IE", K = "11.0", B = ["Trident"], q = "Windows");
+							if (c = "global", p = null != (u = o) ? typeof u[c] : "number", /^(?:boolean|number|string|undefined)$/.test(p) || "object" == p && !u[c]) v(a = o.runtime) == b ? (W = "Adobe AIR", q = a.flash.system.Capabilities.os) : v(a = o.phantom) == j ? (W = "PhantomJS", K = (a = a.version || null) && a.major + "." + a.minor + "." + a.patch) : "number" == typeof M.documentMode && (a = /\bTrident\/(\d+)/i.exec(t)) ? (K = [K, M.documentMode], (a = +a[1] + 4) != K[1] && (N.push("IE " + K[1] + " mode"), B && (B[1] = ""), K[1] = a), K = "IE" == W ? String(K[1].toFixed(1)) : K[0]) : "number" == typeof M.documentMode && /^(?:Chrome|Firefox)\b/.test(W) && (N.push("masking as " + W + " " + K), W = "IE", K = "11.0", B = ["Trident"], q = "Windows");
 							else if (E && (A = (a = E.lang.System).getProperty("os.arch"), q = q || a.getProperty("os.name") + " " + a.getProperty("os.version")), w) {
 								try {
 									K = o.require("ringo/engine").version.join("."), W = "RingoJS"
@@ -1049,7 +1097,7 @@
 								}
 								W || (W = "Rhino")
 							} else "object" == typeof o.process && !o.process.browser && (a = o.process) && ("object" == typeof a.versions && ("string" == typeof a.versions.electron ? (N.push("Node " + a.versions.node), W = "Electron", K = a.versions.electron) : "string" == typeof a.versions.nw && (N.push("Chromium " + K, "Node " + a.versions.node), W = "NW.js", K = a.versions.nw)), W || (W = "Node.js", A = a.arch, q = a.platform, K = (K = /[\d.]+/.exec(a.version)) ? K[0] : null));
-							q = q && y(q)
+							q = q && h(q)
 						}
 						if (K && (a = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(K) || /(?:alpha|beta)(?: ?\d)?/i.exec(t + ";" + (I && n.appMinorVersion)) || /\bMinefield\b/i.test(t) && "a") && (R = /b/i.test(a) ? "beta" : "alpha", K = K.replace(RegExp(a + "\\+?$"), "") + ("beta" == R ? C : O) + (/\d+\+?/.exec(a) || "")), "Fennec" == W || "Firefox" == W && /\b(?:Android|Firefox OS)\b/.test(q)) W = "Firefox Mobile";
 						else if ("Maxthon" == W && K) K = K.replace(/\.[\d.]+/, ".x");
@@ -1059,7 +1107,7 @@
 								null === o.external && N.unshift("platform preview")
 							} catch (D) {
 								N.unshift("embedded")
-							} else(/\bBlackBerry\b/.test(F) || /\bBB10\b/.test(t)) && (a = (RegExp(F.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || K) ? (q = ((a = [a, /BB10/.test(t)])[1] ? (F = null, L = "BlackBerry") : "Device Software") + " " + a[0], K = null) : this != h && "Wii" != F && (I && P || /Opera/.test(W) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == W && /\bOS X (?:\d+\.){2,}/.test(q) || "IE" == W && (q && !/^Win/.test(q) && K > 5.5 || /\bWindows XP\b/.test(q) && K > 8 || 8 == K && !/\bTrident\b/.test(t))) && !p.test(a = e.call(h, t.replace(p, "") + ";")) && a.name && (a = "ing as " + a.name + ((a = a.version) ? " " + a : ""), p.test(W) ? (/\bIE\b/.test(a) && "Mac OS" == q && (q = null), a = "identify" + a) : (a = "mask" + a, W = T ? y(T.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(a) && (q = null), I || (K = null)), B = ["Presto"], N.push(a));
+							} else(/\bBlackBerry\b/.test(F) || /\bBB10\b/.test(t)) && (a = (RegExp(F.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || K) ? (q = ((a = [a, /BB10/.test(t)])[1] ? (F = null, L = "BlackBerry") : "Device Software") + " " + a[0], K = null) : this != y && "Wii" != F && (I && P || /Opera/.test(W) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == W && /\bOS X (?:\d+\.){2,}/.test(q) || "IE" == W && (q && !/^Win/.test(q) && K > 5.5 || /\bWindows XP\b/.test(q) && K > 8 || 8 == K && !/\bTrident\b/.test(t))) && !d.test(a = e.call(y, t.replace(d, "") + ";")) && a.name && (a = "ing as " + a.name + ((a = a.version) ? " " + a : ""), d.test(W) ? (/\bIE\b/.test(a) && "Mac OS" == q && (q = null), a = "identify" + a) : (a = "mask" + a, W = T ? h(T.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(a) && (q = null), I || (K = null)), B = ["Presto"], N.push(a));
 							else W += " Mobile";
 						(a = (/\bAppleWebKit\/([\d.]+\+?)/i.exec(t) || 0)[1]) && (a = [parseFloat(a.replace(/\.(\d)$/, ".0$1")), a], "Safari" == W && "+" == a[1].slice(-1) ? (W = "WebKit Nightly", R = "alpha", K = a[1].slice(0, -1)) : K != a[1] && K != (a[2] = (/\bSafari\/([\d.]+\+?)/i.exec(t) || 0)[1]) || (K = null), a[1] = (/\bChrome\/([\d.]+)/i.exec(t) || 0)[1], 537.36 == a[0] && 537.36 == a[2] && parseFloat(a[1]) >= 28 && "WebKit" == B && (B = ["Blink"]), I && (f || a[1]) ? (B && (B[1] = "like Chrome"), a = a[1] || ((a = a[0]) < 530 ? 1 : a < 532 ? 2 : a < 532.05 ? 3 : a < 533 ? 4 : a < 534.03 ? 5 : a < 534.07 ? 6 : a < 534.1 ? 7 : a < 534.13 ? 8 : a < 534.16 ? 9 : a < 534.24 ? 10 : a < 534.3 ? 11 : a < 535.01 ? 12 : a < 535.02 ? "13+" : a < 535.07 ? 15 : a < 535.11 ? 16 : a < 535.19 ? 17 : a < 536.05 ? 18 : a < 536.1 ? 19 : a < 537.01 ? 20 : a < 537.11 ? "21+" : a < 537.13 ? 23 : a < 537.18 ? 24 : a < 537.24 ? 25 : a < 537.36 ? 26 : "Blink" != B ? "27" : "28")) : (B && (B[1] = "like Safari"), a = (a = a[0]) < 400 ? 1 : a < 500 ? 2 : a < 526 ? 3 : a < 533 ? 4 : a < 534 ? "4+" : a < 535 ? 5 : a < 537 ? 6 : a < 538 ? 7 : a < 601 ? 8 : "8"), B && (B[1] += " " + (a += "number" == typeof a ? ".x" : /[.+]/.test(a) ? "" : "+")), "Safari" == W && (!K || parseInt(K) > 45) && (K = a)), "Opera" == W && (a = /\bzbov|zvav$/.exec(q)) ? (W += " ", N.unshift("desktop mode"), "zvav" == a ? (W += "Mini", K = null) : W += "Mobile", q = q.replace(RegExp(" *" + a + "$"), "")) : "Safari" == W && /\bChrome\b/.exec(B && B[1]) && (N.unshift("desktop mode"), W = "Chrome Mobile", K = null, /\bOS X\b/.test(q) ? (L = "Apple", q = "iOS 4.3+") : q = null), K && 0 == K.indexOf(a = /[\d.]+$/.exec(q)) && t.indexOf("/" + a + "-") > -1 && (q = k(q.replace(a, ""))), B && !/\b(?:Avant|Nook)\b/.test(W) && (/Browser|Lunascape|Maxthon/.test(W) || "Safari" != W && /^iOS/.test(q) && /\bSafari\b/.test(B[1]) || /^(?:Adobe|Arora|Breach|Midori|Opera|Phantom|Rekonq|Rock|Samsung Internet|Sleipnir|Web)/.test(W) && B[1]) && (a = B[B.length - 1]) && N.push(a), N.length && (N = ["(" + N.join("; ") + ")"]), L && F && F.indexOf(L) < 0 && N.push("on " + L), F && N.push((/^on /.test(N[N.length - 1]) ? "" : "on ") + F), q && (a = / ([\d.+]+)$/.exec(q), l = a && "/" == q.charAt(q.length - a[0].length - 1), q = {
 							architecture: 32,
@@ -1108,30 +1156,30 @@
 						return o && e(t.prototype, o), r && e(t, r), t
 					}
 				}(),
-				n = c(o("./node_modules/react/index.js")),
-				s = c(o("./node_modules/invariant/browser.js")),
-				i = c(o("./node_modules/combokeys/Combokeys/index.js")),
-				a = c(o("./node_modules/react-shortcuts/node_modules/prop-types/index.js")),
-				l = c(o("./node_modules/react-shortcuts/lib/helpers.js"));
+				n = u(o("./node_modules/react/index.js")),
+				s = u(o("./node_modules/invariant/browser.js")),
+				i = u(o("./node_modules/combokeys/Combokeys/index.js")),
+				a = u(o("./node_modules/react-shortcuts/node_modules/prop-types/index.js")),
+				l = u(o("./node_modules/react-shortcuts/lib/helpers.js"));
 
-			function c(e) {
+			function u(e) {
 				return e && e.__esModule ? e : {
 					default: e
 				}
 			}
 
-			function u(e, t) {
+			function c(e, t) {
 				if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return !t || "object" != typeof t && "function" != typeof t ? e : t
 			}
-			var p = function(e) {
+			var d = function(e) {
 				function t() {
 					var e, o, r;
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					}(this, t);
-					for (var n = arguments.length, a = Array(n), c = 0; c < n; c++) a[c] = arguments[c];
-					return o = r = u(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(a))), r._combokeys = null, r._lastEvent = null, r._bindShortcuts = function(e) {
+					for (var n = arguments.length, a = Array(n), u = 0; u < n; u++) a[u] = arguments[u];
+					return o = r = c(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(a))), r._combokeys = null, r._lastEvent = null, r._bindShortcuts = function(e) {
 						var t = r._getElementToBind();
 						t.setAttribute("tabindex", r.props.tabIndex), r._combokeys = new i.default(t), r._decorateCombokeys(), r._combokeys.bind(e, r._handleShortcuts, r.props.eventType), r.props.global && t.addEventListener("shortcuts:global", r._customGlobalHandler)
 					}, r._customGlobalHandler = function(e) {
@@ -1177,7 +1225,7 @@
 							var o = r.context.shortcuts.findShortcutName(t, r.props.name);
 							r.props.handler && r.props.handler(o, e)
 						}
-					}, u(r, o)
+					}, c(r, o)
 				}
 				return function(e, t) {
 					if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -1213,9 +1261,9 @@
 					}
 				}]), t
 			}(n.default.Component);
-			p.displayName = "Shortcuts", p.contextTypes = {
+			d.displayName = "Shortcuts", d.contextTypes = {
 				shortcuts: a.default.object.isRequired
-			}, p.propTypes = {
+			}, d.propTypes = {
 				children: a.default.node,
 				handler: a.default.func,
 				name: a.default.string,
@@ -1228,7 +1276,7 @@
 				global: a.default.bool,
 				isolate: a.default.bool,
 				alwaysFireHandler: a.default.bool
-			}, p.defaultProps = {
+			}, d.defaultProps = {
 				tabIndex: -1,
 				className: null,
 				eventType: null,
@@ -1238,7 +1286,7 @@
 				global: !1,
 				isolate: !1,
 				alwaysFireHandler: !1
-			}, t.default = p, e.exports = t.default
+			}, t.default = d, e.exports = t.default
 		},
 		"./node_modules/react-shortcuts/lib/helpers.js": function(e, t, o) {
 			"use strict";
@@ -1283,18 +1331,18 @@
 							return o && e(t.prototype, o), r && e(t, r), t
 						}
 					}(),
-					s = u(o("./node_modules/just-reduce-object/index.js")),
-					i = u(o("./node_modules/invariant/browser.js")),
+					s = c(o("./node_modules/just-reduce-object/index.js")),
+					i = c(o("./node_modules/invariant/browser.js")),
 					a = o("./node_modules/node-libs-browser/node_modules/events/events.js"),
-					l = u(o("./node_modules/react-shortcuts/lib/helpers.js")),
-					c = o("./node_modules/react-shortcuts/lib/utils.js");
+					l = c(o("./node_modules/react-shortcuts/lib/helpers.js")),
+					u = o("./node_modules/react-shortcuts/lib/utils.js");
 
-				function u(e) {
+				function c(e) {
 					return e && e.__esModule ? e : {
 						default: e
 					}
 				}
-				var p = function(e) {
+				var d = function(e) {
 					function t() {
 						var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 						! function(e, t) {
@@ -1305,7 +1353,7 @@
 							return !t || "object" != typeof t && "function" != typeof t ? e : t
 						}(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
 						return o._platformName = l.default.getPlatformName(), o._parseShortcutDescriptor = function(e) {
-							return (0, c.isPlainObject)(e) ? e[o._platformName] : e
+							return (0, u.isPlainObject)(e) ? e[o._platformName] : e
 						}, o._keymap = e, o
 					}
 					return function(e, t) {
@@ -1348,7 +1396,7 @@
 						value: function(e) {
 							return function t(o) {
 								return (0, s.default)(o, (function(o, r, n) {
-									if ((0, c.isPlainObject)(n)) {
+									if ((0, u.isPlainObject)(n)) {
 										if (!n[e]) return o[r] = t(n), o;
 										n = n[e]
 									}
@@ -1366,14 +1414,14 @@
 						value: function(e) {
 							(0, i.default)(e, "getShortcuts: name argument is not defined or falsy.");
 							var t = this._keymap[e];
-							if (t) return (0, c.compact)((0, c.flatten)((0, c.map)(t, this._parseShortcutDescriptor)))
+							if (t) return (0, u.compact)((0, u.flatten)((0, u.map)(t, this._parseShortcutDescriptor)))
 						}
 					}, {
 						key: "_parseShortcutKeyName",
 						value: function(e, t) {
 							var o = this;
-							return (0, c.findKey)(e, (function(e) {
-								if ((0, c.isPlainObject)(e) && (e = e[o._platformName]), (0, c.isArray)(e)) {
+							return (0, u.findKey)(e, (function(e) {
+								if ((0, u.isPlainObject)(e) && (e = e[o._platformName]), (0, u.isArray)(e)) {
 									var r = e.indexOf(t);
 									r >= 0 && (e = e[r])
 								}
@@ -1389,7 +1437,7 @@
 						}
 					}]), t
 				}(a.EventEmitter);
-				p.CHANGE_EVENT = "shortcuts:update", t.default = p, e.exports = t.default
+				d.CHANGE_EVENT = "shortcuts:update", t.default = d, e.exports = t.default
 			}).call(this, o("./node_modules/process/browser.js"))
 		},
 		"./node_modules/react-shortcuts/lib/utils.js": function(e, t, o) {
@@ -1483,4 +1531,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Reddit.f9ea936e5b985e20a6ae.js.map
+//# sourceMappingURL=vendors~Reddit.6634c64e0fcc6c3323bd.js.map

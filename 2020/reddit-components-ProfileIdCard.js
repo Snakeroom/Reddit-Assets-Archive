@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.2960d6f52bb01bd33632.js
-// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bfe49a6408df63a8c4ca.js
+// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -263,12 +263,12 @@
 					profileCreated: t ? t.created : 0,
 					subscribers: e && e.subscribers || 0
 				})),
-				G = o.a.div("Container", W.a);
+				K = o.a.div("Container", W.a);
 
-			function H(e, t) {
+			function G(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
 			}
-			var K = Object(x.b)(R)(Object(I.b)(e => {
+			var H = Object(x.b)(R)(Object(I.b)(e => {
 					const {
 						profileCreated: t,
 						isOverlay: n,
@@ -276,8 +276,8 @@
 						commentKarma: s,
 						postKarma: o,
 						subscribers: i
-					} = e, c = H(n, "karma"), d = H(n, "cakeday"), m = Object(l.c)("".concat(Object(l.b)("postKarmaNumber", Object(v.b)(o, !0)), " Post Karma")), u = Object(l.c)("".concat(Object(l.b)("commentKarmaNumber", Object(v.b)(s, !0)), " Comment Karma"));
-					return a.a.createElement(G, null, a.a.createElement(U, {
+					} = e, c = G(n, "karma"), d = G(n, "cakeday"), m = Object(l.c)("".concat(Object(l.b)("postKarmaNumber", Object(v.b)(o, !0)), " Post Karma")), u = Object(l.c)("".concat(Object(l.b)("commentKarmaNumber", Object(v.b)(s, !0)), " Comment Karma"));
+					return a.a.createElement(K, null, a.a.createElement(U, {
 						icon: a.a.createElement(E.a, {
 							className: W.a.icon,
 							key: "karma"
@@ -321,7 +321,7 @@
 			n.d(t, "a", (function() {
 				return de
 			}));
-			var X = function(e, t) {
+			var Q = function(e, t) {
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -330,7 +330,7 @@
 				}
 				return n
 			};
-			const Q = o.a.div("BannerWrapper", q.a),
+			const X = o.a.div("BannerWrapper", q.a),
 				Y = o.a.div("BannerImage", q.a),
 				$ = o.a.div("SnooIcon", q.a),
 				ee = o.a.wrapped(i.b, "Widget", q.a),
@@ -340,7 +340,7 @@
 				se = e => {
 					var {
 						url: t
-					} = e, n = X(e, ["url"]);
+					} = e, n = Q(e, ["url"]);
 					return t ? a.a.createElement(c.a, J({}, n, {
 						className: q.a.userName,
 						to: t
@@ -388,7 +388,7 @@
 					} = this.props;
 					return a.a.createElement(ee, {
 						className: n
-					}, a.a.createElement(Q, null, t && a.a.createElement(Y, {
+					}, a.a.createElement(X, null, t && a.a.createElement(Y, {
 						style: {
 							backgroundImage: "url(".concat(t, ")")
 						}
@@ -410,7 +410,7 @@
 					}), i && a.a.createElement("a", {
 						title: Object(l.c)("".concat(Object(l.b)("username", b), " has Reddit Premium")),
 						href: "".concat(r.a.redditUrl, "/premium")
-					}, a.a.createElement(ne, null)), a.a.createElement(re, null, u), a.a.createElement(K, {
+					}, a.a.createElement(ne, null)), a.a.createElement(re, null, u), a.a.createElement(H, {
 						profileName: b,
 						isOverlay: c
 					}), this.renderAwardedLastMonth(), a.a.createElement(ae, null, e), s)
@@ -507,7 +507,7 @@
 				}
 				return n
 			};
-			const G = Object(i.c)({
+			const K = Object(i.c)({
 					areModeratedSubredditsPending: x.a,
 					coinsToSpend: v.d,
 					givePremiumModalIsOpen: A.c,
@@ -517,7 +517,7 @@
 					language: v.P,
 					profile: x.j
 				}),
-				H = e => {
+				G = e => {
 					var {
 						isLoading: t
 					} = e, n = R(e, ["isLoading"]);
@@ -527,7 +527,7 @@
 						}))
 					}))
 				};
-			class K extends a.a.Component {
+			class H extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -630,12 +630,12 @@
 					this.state.expanded && this.isLoadingMods() && (r.unshift(a.a.createElement("div", {
 						className: F.a.menuItem,
 						key: "loading-1"
-					}, a.a.createElement(H, {
+					}, a.a.createElement(G, {
 						isLoading: this.props.areModeratedSubredditsPending
 					}))), r.unshift(a.a.createElement("div", {
 						className: F.a.menuItem,
 						key: "loading-2"
-					}, a.a.createElement(H, {
+					}, a.a.createElement(G, {
 						isLoading: this.props.areModeratedSubredditsPending
 					}))));
 					const s = t ? C.fbt._("Fewer Options", null, {
@@ -653,7 +653,7 @@
 					}, s)), e && a.a.createElement(P, null))
 				}
 			}
-			var V = Object(o.b)(G, (e, t) => {
+			var V = Object(o.b)(K, (e, t) => {
 					let {
 						profileName: n
 					} = t;
@@ -664,7 +664,7 @@
 						onClickGivePremium: () => e(Object(j.e)(n)),
 						onModeratorsRequested: () => e(Object(y.b)(n))
 					}
-				})(K),
+				})(H),
 				Z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
 				z = n.n(Z);
 			const q = Object(i.c)({
@@ -706,7 +706,7 @@
 						to: n ? "/user/".concat(t, "/submit") : "/submit"
 					}, a.a.createElement(g.c, null, "New post")))
 				},
-				X = e => {
+				Q = e => {
 					let {
 						profileName: t,
 						onToggleFollow: n,
@@ -722,7 +722,7 @@
 						onClick: () => n(t, r)
 					}, a.a.createElement(g.c, null, "Follow")))
 				},
-				Q = e => {
+				X = e => {
 					let {
 						userId: t
 					} = e;
@@ -778,11 +778,11 @@
 					actions: a.a.createElement(a.a.Fragment, null, y && !c && J({
 						username: j,
 						currentUserHasSubreddit: n
-					}), !y && b && X({
+					}), !y && b && Q({
 						profileName: j,
 						onToggleFollow: d,
 						userIsSubscriber: P
-					}), !!t && !y && Q({
+					}), !!t && !y && X({
 						userId: C
 					})),
 					footer: a.a.createElement(V, {
@@ -1061,9 +1061,9 @@
 			const o = e => !!(e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.G)(e),
-					experimentName: r.L
+					experimentName: r.K
 				});
-				return Object(r.Sb)(t) ? void 0 : t
+				return Object(r.Qb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, n) {
@@ -1084,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.2960d6f52bb01bd33632.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.bfe49a6408df63a8c4ca.js.map

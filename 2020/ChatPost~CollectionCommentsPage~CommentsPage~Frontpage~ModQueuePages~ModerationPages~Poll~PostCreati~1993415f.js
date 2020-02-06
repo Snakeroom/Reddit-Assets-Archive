@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~1993415f.5fa2bd7337995883a712.js
-// Retrieved at 2/5/2020, 2:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~1993415f.f5e2fe69542e55edab67.js
+// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~1993415f"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, s) {
@@ -761,7 +761,7 @@
 				x = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(h.n)(e, t),
-					o = Object(x.J)(e, t);
+					o = Object(x.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!o || !o.name) && !!e.moderatingSubreddits[o.name],
@@ -799,7 +799,7 @@
 			}));
 			const v = (e, t) => {
 				const s = Object(h.n)(e, t),
-					o = Object(x.J)(e, t);
+					o = Object(x.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!o || !o.name) && !!e.moderatingSubreddits[o.name],
@@ -825,7 +825,7 @@
 				}
 			}));
 			var j = Object(n.b)(() => Object(a.c)({
-					subreddit: x.S
+					subreddit: x.Q
 				}))(e => r.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -937,7 +937,7 @@
 				}
 			}));
 			var A = Object(n.b)(() => Object(a.c)({
-				subreddit: x.S
+				subreddit: x.Q
 			}))(e => r.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -950,7 +950,7 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(x.M)(e, {
+				subredditOrProfile: (e, t) => Object(x.K)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(b, {
@@ -969,7 +969,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(x.S)(e, {
+					return s ? Object(x.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -1098,8 +1098,8 @@
 				}(h || (h = {}));
 			const V = e => Object(_.a)(Object(B.a)(e), H.a.metaText, H.b.metaText),
 				Z = m.a.wrapped(M.b, "MetaSeparator", z.a),
-				J = m.a.span("text", z.a),
-				q = Object(Q.t)(),
+				q = m.a.span("text", z.a),
+				J = Object(Q.t)(),
 				G = Object(n.b)(() => Object(a.c)({
 					authorFlair: R.a,
 					createdTooltipId: (e, t) => {
@@ -1158,13 +1158,13 @@
 						showTimestamp: P = !0,
 						subredditOrProfile: M,
 						tooltipType: B
-					} = this.props, _ = b && b.meta && b.meta.name === i.yb.COMMENTS, L = Object(p.a)(h), H = a === k.b.Left, R = h.authorIsContractor && !!M && M.type === D.c.EmployeesOnly, F = !s && !_, Q = r.a.createElement(r.a.Fragment, null, !L && r.a.createElement(J, {
+					} = this.props, _ = b && b.meta && b.meta.name === i.yb.COMMENTS, L = Object(p.a)(h), H = a === k.b.Left, R = h.authorIsContractor && !!M && M.type === D.c.EmployeesOnly, F = !s && !_, Q = r.a.createElement(r.a.Fragment, null, !L && r.a.createElement(q, {
 						style: {
 							color: V(this.props)
 						}
 					}, "Posted by"), L && r.a.createElement(o.Fragment, null, r.a.createElement(x, {
 						className: z.a.crosspostIcon
-					}), r.a.createElement(J, {
+					}), r.a.createElement(q, {
 						style: {
 							color: V(this.props)
 						}
@@ -1248,7 +1248,7 @@
 					})))
 				}
 			}
-			t.d = q(Object(P.b)(Object(c.a)(G(X))))
+			t.d = J(Object(P.b)(Object(c.a)(G(X))))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~1993415f.5fa2bd7337995883a712.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~Frontpage~ModQueuePages~ModerationPages~Poll~PostCreati~1993415f.f5e2fe69542e55edab67.js.map
