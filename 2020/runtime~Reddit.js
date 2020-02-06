@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4fa54eacc23f3e7fb42f.js
-// Retrieved at 2/6/2020, 4:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.4c527de03f97f7223565.js
+// Retrieved at 2/6/2020, 5:20:14 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -541,7 +541,7 @@
 					"reddit-components-SidebarNativeAd": "35c61c4dc8069b9d9f95",
 					RpanListingUnit: "5741fe39099aa9f6a236",
 					CommunityCrossPollinationFocusedVertical: "8d601b72f38a57911396",
-					IdCard: "045839a36269617700cc",
+					IdCard: "85bee69f2f559267015c",
 					Trending: "d787f9177f97d01e8333",
 					"reddit-components-InFeedPostCreation": "6970e25055c9d4de2fbc",
 					"reddit-components-TabBadger-Component": "2657dff2ae5e75ab441c",
@@ -979,7 +979,7 @@
 						"reddit-components-SidebarNativeAd": "aed20e2180004831fc1d",
 						RpanListingUnit: "2f6b31490c2003ac2760",
 						CommunityCrossPollinationFocusedVertical: "0c48258eec619d50ecd7",
-						IdCard: "0993612bbbf2f823b0d3",
+						IdCard: "7a76e0ba01c549f486a2",
 						Trending: "cd3ee0f04daf5653f24b",
 						"reddit-components-InFeedPostCreation": "e5b490940e629f206782",
 						"reddit-components-TabBadger-Component": "05a0e3410709f44c6d7a",
@@ -1112,4 +1112,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.4fa54eacc23f3e7fb42f.js.map
+//# sourceMappingURL=runtime~Reddit.4c527de03f97f7223565.js.map
