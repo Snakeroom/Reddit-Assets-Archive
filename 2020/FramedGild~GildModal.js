@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d617fde5611f71f189b5.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.67348a068ccd0271c86c.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -128,7 +128,7 @@
 						commentId: a
 					}), s = Object(p.i)(e), r = e.gild, {
 						isAnonymous: c
-					} = r, d = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, i = n ? n.author : void 0, l = Object(g.I)(e, {
+					} = r, d = !c && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, i = n ? n.author : void 0, l = Object(g.H)(e, {
 						thingId: a
 					});
 					return G(Object.assign({}, t, {
@@ -153,10 +153,10 @@
 						})
 					}
 					if (u.awardType === d.c.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(g.I)(n, {
+						const t = Object(g.H)(n, {
 								thingId: o
 							}),
-							a = t && Object(g.B)(n, {
+							a = t && Object(g.A)(n, {
 								subredditName: t.name
 							});
 						a && (e.subredditCoins = a - u.coinPrice)
@@ -324,24 +324,24 @@
 				F = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Eye/index.tsx"),
 				D = a("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				V = a("./src/app/strings/index.ts"),
-				H = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				H = a("./src/app/strings/index.ts"),
+				V = a("./src/reddit/helpers/createEmojiText/index.tsx"),
 				K = a("./src/reddit/icons/fonts/Coin/index.tsx"),
 				Q = a("./src/reddit/components/TimeLeft/index.m.less"),
-				J = a.n(Q),
-				W = a("./src/lib/timeAgo/index.ts"),
-				X = a("./src/reddit/icons/svgs/Clock/index.tsx");
-			var z = e => {
+				z = a.n(Q),
+				J = a("./src/lib/timeAgo/index.ts"),
+				W = a("./src/reddit/icons/svgs/Clock/index.tsx");
+			var X = e => {
 				const {
 					className: t,
 					expirationDate: a
-				} = e, n = Math.floor(a.getTime() / 1e3), r = Object(W.b)(n);
+				} = e, n = Math.floor(a.getTime() / 1e3), r = Object(J.b)(n);
 				return s.a.createElement("div", {
 					className: Object(d.a)(t)
-				}, s.a.createElement(X.a, {
-					className: J.a.clockIcon
+				}, s.a.createElement(W.a, {
+					className: z.a.clockIcon
 				}), s.a.createElement("span", {
-					className: J.a.timeLeft
+					className: z.a.timeLeft
 				}, r))
 			};
 			a("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -428,11 +428,11 @@
 						src: c
 					})), s.a.createElement("div", {
 						className: k.a.awardName
-					}, Object(V.a)(a, "gold.gildModal.awardNameAward", {
+					}, Object(H.a)(a, "gold.gildModal.awardNameAward", {
 						awardName: e.name
 					})), s.a.createElement("div", {
 						className: k.a.coinPrice
-					}, Object(H.a)(Object(V.a)(a, "gold.gildModal.spendCoin", {
+					}, Object(V.a)(Object(H.a)(a, "gold.gildModal.spendCoin", {
 						cost: e.coinPrice.toLocaleString()
 					}), {
 						":coin:": s.a.createElement(K.a, null)
@@ -442,7 +442,7 @@
 						award: e,
 						postOrComment: n,
 						subredditName: r
-					})), e.endsAt && s.a.createElement(z, {
+					})), e.endsAt && s.a.createElement(X, {
 						className: k.a.expiresText,
 						expirationDate: new Date(e.endsAt)
 					}))
@@ -615,11 +615,11 @@
 						className: re.a.title
 					}, e.name), s.a.createElement("div", {
 						className: re.a.metaText
-					}, Object(H.a)(Object(V.a)(a, "gold.gildModal.spendCoin", {
+					}, Object(V.a)(Object(H.a)(a, "gold.gildModal.spendCoin", {
 						cost: e.coinPrice.toLocaleString()
 					}), {
 						":coin:": s.a.createElement(K.a, null)
-					})), e.endsAt && s.a.createElement(z, {
+					})), e.endsAt && s.a.createElement(X, {
 						className: re.a.expiresText,
 						expirationDate: new Date(e.endsAt)
 					})))
@@ -738,7 +738,7 @@
 					}, s.a.createElement(ce.b, {
 						className: re.a.awardSectionIcon,
 						subredditOrProfile: d
-					}), Object(V.a)(a, "gold.gildModal.subredditAwards", {
+					}), Object(H.a)(a, "gold.gildModal.subredditAwards", {
 						subredditName: i
 					})), s.a.createElement("div", {
 						className: re.a.awardSection
@@ -770,7 +770,7 @@
 						className: re.a.awardSectionTitle
 					}, s.a.createElement(D.a, {
 						className: Object(d.a)(re.a.modIcon, re.a.awardSectionIcon)
-					}), Object(V.a)(a, "gold.gildModal.modAwards", {
+					}), Object(H.a)(a, "gold.gildModal.modAwards", {
 						subredditName: i
 					})), s.a.createElement("div", {
 						className: re.a.awardSection
@@ -897,8 +897,8 @@
 						language: e,
 						postOrComment: t
 					} = this.props;
-					return Object(H.a)(Object(V.a)(e, "gold.gildModal.spendCoinsToHighlightPostOrComment", {
-						postOrComment: Object(V.a)(e, "gold.postOrComment.".concat(t))
+					return Object(V.a)(Object(H.a)(e, "gold.gildModal.spendCoinsToHighlightPostOrComment", {
+						postOrComment: Object(H.a)(e, "gold.postOrComment.".concat(t))
 					}), {
 						":learnMoreLink:": s.a.createElement("a", {
 							className: Ie.a.learnLink,
@@ -920,8 +920,8 @@
 						className: Ie.a.headerText
 					}, s.a.createElement("div", {
 						className: Ie.a.mainText
-					}, s.a.createElement("span", null, Object(V.a)(t, "gold.gildModal.giveAwardToThisPostOrComment", {
-						postOrComment: Object(V.a)(t, "gold.postOrComment.".concat(a))
+					}, s.a.createElement("span", null, Object(H.a)(t, "gold.gildModal.giveAwardToThisPostOrComment", {
+						postOrComment: Object(H.a)(t, "gold.postOrComment.".concat(a))
 					}))), s.a.createElement("div", {
 						className: Ie.a.subText
 					}, this.renderEmojiSubText())), s.a.createElement("button", {
@@ -940,7 +940,7 @@
 							subredditId: n
 						} = t, s = n;
 						if (!n) {
-							const t = Object(y.I)(e, {
+							const t = Object(y.H)(e, {
 								thingId: a
 							});
 							s = t && t.id
@@ -961,7 +961,7 @@
 							subredditId: n
 						} = t, s = n;
 						if (!n) {
-							const t = Object(y.I)(e, {
+							const t = Object(y.H)(e, {
 								thingId: a
 							});
 							if (!t) return !1;
@@ -993,17 +993,17 @@
 					showCoinPurchaseModal: f.d,
 					showPremiumAwards: x.a,
 					selectedAward: j.a,
-					subreddit: y.I,
+					subreddit: y.H,
 					subredditCoins: (e, t) => {
 						let {
 							thingId: a,
 							subredditId: n
 						} = t;
-						const s = Object(y.I)(e, {
+						const s = Object(y.H)(e, {
 								thingId: a
 							}),
 							r = s ? s.id : n;
-						return Object(y.A)(e, {
+						return Object(y.z)(e, {
 							subredditId: r
 						})
 					},
@@ -1312,9 +1312,9 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.jb
+					experimentName: n.gb
 				});
-				return Object(n.Qb)(t) ? void 0 : t
+				return Object(n.Nb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
@@ -1326,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.d617fde5611f71f189b5.js.map
+//# sourceMappingURL=FramedGild~GildModal.67348a068ccd0271c86c.js.map

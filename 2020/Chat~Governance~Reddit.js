@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.12767444cff1b1ed35ca.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.facebb5a2393f9a5a542.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11271,21 +11271,76 @@
 		},
 		"./src/lib/DeprecatedBrowserProvider/index.tsx": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return o
-			})), i.d(t, "b", (function() {
-				return d
-			}));
 			var n = i("./node_modules/react/index.js"),
 				s = i.n(n),
-				r = i("./src/lib/isBrowserDeprecated/index.ts");
-			const o = s.a.createContext(r.a);
-			class d extends s.a.Component {
+				r = i("./node_modules/ua-parser-js/src/ua-parser.js"),
+				o = i.n(r);
+			const d = "Apple",
+				l = "iOS",
+				a = "https://www.google.com/chrome/",
+				u = "https://www.microsoft.com/windows/microsoft-edge",
+				c = "https://www.mozilla.org/firefox/",
+				m = "https://www.apple.com/safari/",
+				h = "https://www.opera.com",
+				p = "https://www.ucweb.com",
+				_ = {
+					isDeprecated: !1,
+					updateLink: null
+				};
+			i.d(t, "a", (function() {
+				return g
+			})), i.d(t, "b", (function() {
+				return w
+			}));
+			const g = s.a.createContext(_);
+			class w extends s.a.Component {
 				constructor(e) {
-					super(e), this.contextValue = Object(r.b)(e.userAgent)
+					super(e), this.contextValue = function(e) {
+						if (!e) return _;
+						const t = new o.a(e),
+							i = t.getDevice(),
+							n = t.getOS();
+						if (i && i.vendor === d || n && n.name === l) return {
+							isDeprecated: !0,
+							updateLink: null
+						};
+						let s = _.isDeprecated,
+							r = _.updateLink;
+						const g = t.getBrowser();
+						switch (g.name) {
+							case "Chrome":
+							case "Chrome Headless":
+							case "Chrome WebView":
+								s = parseInt(g.version || "") < 49, r = a;
+								break;
+							case "Edge":
+								s = parseInt(g.version || "") < 15, r = u;
+								break;
+							case "Firefox":
+								s = parseInt(g.version || "") < 45, r = c;
+								break;
+							case "IE":
+							case "Mobile IE":
+								s = !0, r = u;
+								break;
+							case "Safari":
+							case "Mobile Safari":
+								s = parseInt(g.version || "") < 11, r = m;
+								break;
+							case "Opera":
+								s = parseInt(g.version || "") < 35, r = h;
+								break;
+							case "UCBrowser":
+								s = parseFloat((g.version || "").slice(0, 5)) < 11.5, r = p
+						}
+						return {
+							isDeprecated: s,
+							updateLink: r
+						}
+					}(e.userAgent)
 				}
 				render() {
-					return s.a.createElement(o.Provider, {
+					return s.a.createElement(g.Provider, {
 						value: this.contextValue
 					}, this.props.children)
 				}
@@ -12384,14 +12439,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("a54cec4-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("06c7cae-production") + " %cpublic url %c".concat(f.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(f.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: f.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a54cec4-production",
+						release: "06c7cae-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new r.Integrations.Breadcrumbs({
@@ -12497,72 +12552,6 @@
 					}), Object(C.e)(C.b.InitClientEnd), {
 						store: f
 					}
-			}
-		},
-		"./src/lib/isBrowserDeprecated/index.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return h
-			})), i.d(t, "b", (function() {
-				return p
-			}));
-			var n = i("./node_modules/ua-parser-js/src/ua-parser.js"),
-				s = i.n(n);
-			const r = "Apple",
-				o = "iOS",
-				d = "https://www.google.com/chrome/",
-				l = "https://www.microsoft.com/windows/microsoft-edge",
-				a = "https://www.mozilla.org/firefox/",
-				u = "https://www.apple.com/safari/",
-				c = "https://www.opera.com",
-				m = "https://www.ucweb.com",
-				h = {
-					isDeprecated: !1,
-					updateLink: null
-				};
-
-			function p(e) {
-				if (!e) return h;
-				const t = new s.a(e),
-					i = t.getDevice(),
-					n = t.getOS();
-				if (i && i.vendor === r || n && n.name === o) return {
-					isDeprecated: !0,
-					updateLink: null
-				};
-				let p = h.isDeprecated,
-					_ = h.updateLink;
-				const g = t.getBrowser();
-				switch (g.name) {
-					case "Chrome":
-					case "Chrome Headless":
-					case "Chrome WebView":
-						p = parseInt(g.version || "") < 49, _ = d;
-						break;
-					case "Edge":
-						p = parseInt(g.version || "") < 15, _ = l;
-						break;
-					case "Firefox":
-						p = parseInt(g.version || "") < 45, _ = a;
-						break;
-					case "IE":
-					case "Mobile IE":
-						p = !0, _ = l;
-						break;
-					case "Safari":
-					case "Mobile Safari":
-						p = parseInt(g.version || "") < 11, _ = u;
-						break;
-					case "Opera":
-						p = parseInt(g.version || "") < 35, _ = c;
-						break;
-					case "UCBrowser":
-						p = parseFloat((g.version || "").slice(0, 5)) < 11.5, _ = m
-				}
-				return {
-					isDeprecated: p,
-					updateLink: _
-				}
 			}
 		},
 		"./src/lib/isUrl/index.ts": function(e, t, i) {
@@ -12891,7 +12880,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "a54cec4-production",
+							releaseClient: "06c7cae-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18565,4 +18554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.12767444cff1b1ed35ca.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.facebb5a2393f9a5a542.js.map

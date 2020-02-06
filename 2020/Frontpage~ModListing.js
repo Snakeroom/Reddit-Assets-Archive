@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.9b7b0a517ee0af864187.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.26c058780b360843a69c.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -151,13 +151,13 @@
 				F = new R.a(B),
 				V = new R.a(B),
 				H = new R.a(B),
-				W = {
+				D = {
 					LARGE: 1,
 					MEDIUM: 1,
 					CLASSIC: 3,
 					COMPACT: 5
 				},
-				D = g.a.div("SeeMore", T.a),
+				W = g.a.div("SeeMore", T.a),
 				U = g.a.wrapped(j.a, "ArrowRight", T.a),
 				Z = (e, t, s, o, r, n, i, a) => {
 					const d = s ? "last-".concat(o, "-").concat(r) : "",
@@ -445,7 +445,7 @@
 						className: r,
 						isLoading: !!t,
 						layout: o,
-						countOverride: W[o]
+						countOverride: D[o]
 					}), !!e && c.a.createElement(f.a, {
 						apiError: e,
 						onTryAgain: n
@@ -489,7 +489,7 @@
 						preventScrollOnMount: this.props.preventScrollOnMount,
 						trackingName: b,
 						viewportTopPadding: C.f
-					}, y), P && c.a.createElement(D, {
+					}, y), P && c.a.createElement(W, {
 						className: T.a.seeMoreButton
 					}, c.a.createElement(I.a, {
 						className: T.a.seeMorePostsText,
@@ -550,7 +550,7 @@
 					apiError: g.c,
 					apiPending: g.d,
 					measureScrollFPS: u.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.K)(e, t),
 					loadMore: g.g,
 					postsById: y.T,
 					postIds: Object(n.a)((e, t) => {
@@ -561,9 +561,9 @@
 						} = t;
 						return Object(y.F)(e, s, o, r)
 					}),
-					subredditsById: b.W,
+					subredditsById: b.V,
 					viewportDataLoaded: P.a,
-					pageReferrer: l.O,
+					pageReferrer: l.N,
 					postListPlaceholderComponent: () => h.a
 				},
 				L = Object(r.c)(x),
@@ -618,4 +618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing.9b7b0a517ee0af864187.js.map
+//# sourceMappingURL=Frontpage~ModListing.26c058780b360843a69c.js.map

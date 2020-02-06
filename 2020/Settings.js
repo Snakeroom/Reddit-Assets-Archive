@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1066e5717d9eaeda7fe0.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d9ae9b32011c0bedd8d9.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -410,7 +410,7 @@
 				g = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(h.n)(e, t),
-					n = Object(g.H)(e, t);
+					n = Object(g.G)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -448,7 +448,7 @@
 			}));
 			const x = (e, t) => {
 				const s = Object(h.n)(e, t),
-					n = Object(g.H)(e, t);
+					n = Object(g.G)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -474,7 +474,7 @@
 				}
 			}));
 			var y = Object(r.b)(() => Object(o.c)({
-					subreddit: g.Q
+					subreddit: g.P
 				}))(e => a.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -586,7 +586,7 @@
 				}
 			}));
 			var _ = Object(r.b)(() => Object(o.c)({
-				subreddit: g.Q
+				subreddit: g.P
 			}))(e => a.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -599,7 +599,7 @@
 				}
 			}));
 			var S = Object(r.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(g.K)(e, {
+				subredditOrProfile: (e, t) => Object(g.J)(e, {
 					identifier: t
 				})
 			}))(e => a.a.createElement(b, {
@@ -618,7 +618,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(g.Q)(e, {
+					return s ? Object(g.P)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -2323,7 +2323,7 @@
 				i = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(a.c)({
 				language: i.P,
-				userIsSubscriber: o.ab
+				userIsSubscriber: o.Z
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -5464,4 +5464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.1066e5717d9eaeda7fe0.js.map
+//# sourceMappingURL=Settings.d9ae9b32011c0bedd8d9.js.map

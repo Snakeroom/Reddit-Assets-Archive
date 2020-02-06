@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3ef0401304fcfd2ec2cf.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.fbe7ad4dab051a66bd51.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -394,7 +394,7 @@
 				g = Object(s.a)(o.q),
 				x = Object(s.a)(o.o),
 				f = (e, t, n) => async (s, r, o) => {
-					const i = Object(p.z)(r(), {
+					const i = Object(p.y)(r(), {
 						subredditName: e
 					});
 					if (i) return v(i, t, n)(s, r, o)
@@ -1469,7 +1469,7 @@
 				de = n("./src/reddit/selectors/subreddit.ts");
 			const le = 6,
 				ue = Object(u.c)({
-					apiPending: de.R,
+					apiPending: de.Q,
 					unsavedChangesModalIsOpen: Object(ce.b)(ne.a)
 				});
 			class me extends o.a.Component {
@@ -1885,28 +1885,28 @@
 					isLoggedIn: F.G,
 					language: F.P,
 					moderatorPermissions: (e, t) => {
-						const n = Object(de.E)(e, t.listingName);
+						const n = Object(de.D)(e, t.listingName);
 						if (n) return Object(et.j)(e, {
 							subredditId: n
 						})
 					},
 					isInCategoriesExperiment: Xe.a,
-					showContributorRequestFlow: e => Object(de.r)(e, Ge.e.Post),
+					showContributorRequestFlow: e => Object(de.q)(e, Ge.e.Post),
 					showCreatePollButton: e => (e => Object($e.c)(e, {
 						experimentEligibilitySelector: $e.a,
 						experimentName: Ze.h
-					}) === Ze.m.Treatment)(e) && !Object(oe.f)(),
-					subreddit: (e, t) => Object(de.z)(e, {
+					}) === Ze.l.Treatment)(e) && !Object(oe.f)(),
+					subreddit: (e, t) => Object(de.y)(e, {
 						subredditName: t.listingName
 					}),
-					subredditAboutInfo: (e, t) => Object(de.w)(e, {
+					subredditAboutInfo: (e, t) => Object(de.v)(e, {
 						subredditName: t.listingName
 					}),
 					subredditCoins: (e, t) => {
 						let {
 							listingName: n
 						} = t;
-						return Object(de.B)(e, {
+						return Object(de.A)(e, {
 							subredditName: n
 						})
 					},
@@ -1918,7 +1918,7 @@
 						let {
 							listingName: n
 						} = t;
-						const s = Object(de.z)(e, {
+						const s = Object(de.y)(e, {
 							subredditName: n
 						});
 						return !!s && Object(l.a)(e, {
@@ -3138,7 +3138,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
 				language: a.P,
-				userIsSubscriber: i.ab
+				userIsSubscriber: i.Z
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -3650,4 +3650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.3ef0401304fcfd2ec2cf.js.map
+//# sourceMappingURL=IdCard.fbe7ad4dab051a66bd51.js.map

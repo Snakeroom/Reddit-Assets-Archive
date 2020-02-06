@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~Multireddit~ProfileComments~ProfileOverview~ProfilePos~123d3507.e6999890d5a212bd8f62.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~Multireddit~ProfileComments~ProfileOverview~ProfilePos~123d3507.5329c76b69bc88b59a62.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~Multireddit~ProfileComments~ProfileOverview~ProfilePos~123d3507"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
@@ -153,13 +153,12 @@
 				p = s("./src/reddit/components/SidebarFooter/index.tsx"),
 				h = s("./src/reddit/constants/componentSizes.ts"),
 				y = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				g = s("./src/reddit/selectors/experiments/categoriesPlacement.ts"),
-				E = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				f = s.n(E),
+				g = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				E = s.n(g),
 				w = s("./src/lib/lessComponent.tsx");
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -167,7 +166,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var C = function(e, t) {
+			var x = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -176,40 +175,38 @@
 				}
 				return s
 			};
-			const S = c.e[1] + 24,
-				_ = h.f + 8 + 152 + 32 + 16,
-				v = _ + S + 8,
-				O = w.a.div("Container", f.a),
-				k = w.a.wrapped(e => {
+			const C = c.e[1] + 24,
+				S = h.f + 8 + 152 + 32 + 16,
+				_ = S + C + 8,
+				v = w.a.div("Container", E.a),
+				O = w.a.wrapped(e => {
 					var {
 						className: t
-					} = e, s = C(e, ["className"]);
-					return o.a.createElement(b, x({
+					} = e, s = x(e, ["className"]);
+					return o.a.createElement(b, f({
 						className: t,
 						style: {
 							top: "calc(100vh - ".concat(40, "px)")
 						}
 					}, s))
-				}, "BackToTop", f.a),
-				N = e => {
+				}, "BackToTop", E.a),
+				k = e => {
 					let {
-						categoriesPlacementVariant: t,
-						children: s,
-						className: r,
-						isSticky: i
+						children: t,
+						className: s,
+						isSticky: r
 					} = e;
 					return o.a.createElement("div", {
-						className: Object(n.a)(r, {
-							[f.a.StickyStyles]: i,
-							[f.a.LargeOffset]: Object(g.f)(t)
+						className: Object(n.a)(s, {
+							[E.a.StickyStyles]: r
 						})
-					}, s)
+					}, t)
 				};
-			class j extends a.Component {
+			class N extends a.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > v,
-						shouldFooterSticky: this.windowHeight > _
+						shouldAdSticky: this.windowHeight > _,
+						shouldFooterSticky: this.windowHeight > S
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -242,23 +239,21 @@
 					const {
 						props: {
 							adComponent: e,
-							categoriesPlacementVariant: t,
-							children: s,
-							className: n,
-							hideFooter: r
+							children: t,
+							className: s,
+							hideFooter: n
 						}
-					} = this, i = this.state.isAdSticky && !(!e && !s);
-					return o.a.createElement(O, {
-						className: n,
+					} = this, r = this.state.isAdSticky && !(!e && !t);
+					return o.a.createElement(v, {
+						className: s,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(N, {
-						categoriesPlacementVariant: t,
-						isSticky: i
-					}, e, s, !r && o.a.createElement(p.a, null)), !this.props.hideBackToTop && o.a.createElement(k, null))
+					}, o.a.createElement(k, {
+						isSticky: r
+					}, e, t, !n && o.a.createElement(p.a, null)), !this.props.hideBackToTop && o.a.createElement(O, null))
 				}
 			}
-			const B = Object(y.t)();
-			t.a = B(j)
+			const j = Object(y.t)();
+			t.a = j(N)
 		},
 		"./src/reddit/components/SubscribeButton/Base.m.less": function(e, t, s) {
 			e.exports = {
@@ -323,14 +318,14 @@
 				return s
 			};
 			const E = h.a.button("IconButton", b.a),
-				f = h.a.wrapped(l.a, "SubscribeIcon", b.a),
-				w = h.a.wrapped(d.a, "UnsubscribeIcon", b.a),
+				w = h.a.wrapped(l.a, "SubscribeIcon", b.a),
+				f = h.a.wrapped(d.a, "UnsubscribeIcon", b.a),
 				x = h.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
 					} = e, n = g(e, ["border", "small"]);
-					return r.a.createElement(E, n, r.a.createElement(f, {
+					return r.a.createElement(E, n, r.a.createElement(w, {
 						className: Object(p.a)(n.className, {
 							[b.a.isSmall]: s
 						})
@@ -372,7 +367,7 @@
 						small: n,
 						type: i
 					} = e, o = g(e, ["border", "language", "small", "type"]);
-					return r.a.createElement(E, o, r.a.createElement(w, {
+					return r.a.createElement(E, o, r.a.createElement(f, {
 						className: Object(p.a)(a.n, o.className, {
 							[b.a.isSmall]: n
 						})
@@ -487,8 +482,8 @@
 				})(s("./src/reddit/components/SubscribeButton/Base.tsx").a),
 				g = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				E = s("./src/reddit/constants/componentSizes.ts"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				w = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				w = s("./src/reddit/controls/Button/index.tsx"),
+				f = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				x = s("./src/reddit/i18n/utils.ts"),
 				C = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				S = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
@@ -520,7 +515,7 @@
 					widgetKind: e.widget && e.widget.kind
 				}, r.a.createElement("div", {
 					className: k.a.container
-				}, e.isLoading ? r.a.createElement(w.a, {
+				}, e.isLoading ? r.a.createElement(f.a, {
 					className: k.a.loadingIcon,
 					sizePx: 32
 				}) : r.a.createElement(r.a.Fragment, null, e.isError ? r.a.createElement("p", {
@@ -540,7 +535,7 @@
 					useTertiaryButton: e.useTertiaryButton,
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
-				})))), e.bottomButtonText && e.onBottomButtonClick && r.a.createElement(f.n, {
+				})))), e.bottomButtonText && e.onBottomButtonClick && r.a.createElement(w.n, {
 					className: k.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
@@ -577,10 +572,10 @@
 						type: _.f.Nsfw,
 						text: "nsfw"
 					}
-				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? r.a.createElement(w.a, {
+				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? r.a.createElement(f.a, {
 					className: Object(d.a)(k.a.communityCta, k.a.smallLoadingIcon),
 					sizePx: 12
-				}) : r.a.createElement(f.n, {
+				}) : r.a.createElement(w.n, {
 					className: Object(d.a)(k.a.communityCta, {
 						[k.a.showOnHover]: e.showTertiaryButtonOnHover
 					}),
@@ -693,18 +688,18 @@
 				y = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				g = s("./src/reddit/selectors/experiments/topPosts.ts"),
 				E = s("./src/reddit/selectors/structuredStyles.ts"),
-				f = s("./src/reddit/selectors/user.ts"),
-				w = s("./src/reddit/models/Theme/index.ts"),
+				w = s("./src/reddit/selectors/user.ts"),
+				f = s("./src/reddit/models/Theme/index.ts"),
 				x = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			const C = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
 				S = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
 				_ = e => {
 					const t = C(e);
-					return Object(w.f)(t)
+					return Object(f.f)(t)
 				},
 				v = e => {
 					const t = S(e);
-					return Object(w.f)(t)
+					return Object(f.f)(t)
 				};
 			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
 				k = s.n(O);
@@ -715,10 +710,10 @@
 							n = t.redditStyle || Object(E.m)(e, {
 								subredditId: s
 							}),
-							r = Object(f.R)(e);
+							r = Object(w.R)(e);
 						return n || r
 					},
-					nigtmode: f.R,
+					nigtmode: w.R,
 					subredditId: m.m,
 					topPostVariant: g.d
 				}));
@@ -828,4 +823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~Multireddit~ProfileComments~ProfileOverview~ProfilePos~123d3507.e6999890d5a212bd8f62.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~Multireddit~ProfileComments~ProfileOverview~ProfilePos~123d3507.5329c76b69bc88b59a62.js.map

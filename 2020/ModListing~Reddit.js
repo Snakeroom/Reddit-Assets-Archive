@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.212b6165a7a886919cd2.js
-// Retrieved at 2/5/2020, 1:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.0d607ab675121c7c803b.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -939,45 +939,31 @@
 		},
 		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
-				return a
-			})), n.d(t, "b", (function() {
-				return i
+			n.d(t, "b", (function() {
+				return o
 			})), n.d(t, "a", (function() {
-				return c
+				return a
 			})), n.d(t, "c", (function() {
-				return d
-			})), n.d(t, "e", (function() {
-				return l
+				return i
 			}));
-			var s = n("./src/reddit/constants/categories.tsx"),
-				r = n("./src/reddit/selectors/telemetry.ts");
-			const o = e => ({
-					screen: r.screen(e),
-					profile: r.profile(e),
-					subreddit: r.subreddit(e)
+			n("./src/reddit/constants/categories.tsx");
+			var s = n("./src/reddit/selectors/telemetry.ts");
+			const r = e => ({
+					screen: s.screen(e),
+					profile: s.profile(e),
+					subreddit: s.subreddit(e)
 				}),
-				a = e => t => Object.assign({
+				o = e => t => Object.assign({
 					source: "nav",
 					action: "click",
 					noun: e
-				}, o(t)),
-				i = e => t => Object.assign({}, o(t), {
-					source: "nav",
-					action: "click",
-					noun: "category_".concat(Object(s.f)(e))
-				}),
-				c = e => t => Object.assign({}, o(t), {
-					source: "nav",
-					action: "change",
-					noun: "category_".concat(Object(s.f)(e))
-				}),
-				d = e => t => Object.assign({}, o(t), {
+				}, r(t)),
+				a = e => t => Object.assign({}, r(t), {
 					source: "sort_switch",
 					action: "click",
 					noun: e
 				}),
-				l = e => t => Object.assign({}, o(t), {
+				i = e => t => Object.assign({}, r(t), {
 					source: "time_sort_switch",
 					action: "click",
 					noun: e
@@ -1232,7 +1218,7 @@
 			const v = Object(d.t)(),
 				h = Object(a.c)({
 					isEditing: l.j,
-					layout: (e, t) => t.forcedLayout || Object(d.L)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.K)(e, t)
 				}),
 				x = Object(o.b)(h),
 				y = e => {
@@ -1456,4 +1442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.212b6165a7a886919cd2.js.map
+//# sourceMappingURL=ModListing~Reddit.0d607ab675121c7c803b.js.map

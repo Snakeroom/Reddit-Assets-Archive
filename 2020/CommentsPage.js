@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.45b2a31ed343baee743a.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8d23ff18ba4b2832ef04.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost", "ChatPost~ModQueuePages"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -643,7 +643,7 @@
 					const n = e.platform.currentPage;
 					if (!n) return {};
 					const s = "".concat(e.meta.protocol, "://").concat(e.meta.domain);
-					return Object(p.b)(t.placement, e.user, Object(i.a)("".concat(s).concat(n.url), n.queryParams), Object(u.z)(e, {
+					return Object(p.b)(t.placement, e.user, Object(i.a)("".concat(s).concat(n.url), n.queryParams), Object(u.y)(e, {
 						subredditName: t.listingName
 					}), t.position)
 				}),
@@ -1012,7 +1012,7 @@
 					galleryThumbnail: w.e,
 					isFutureEvent: w.i,
 					language: W.P,
-					layout: O.L,
+					layout: O.K,
 					post: I.I,
 					shouldShowCollectionPostEdits: w.s,
 					subredditOrProfile: I.U
@@ -2114,7 +2114,7 @@
 						return !!Object(O.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(ee.H)(e, {
+						const n = Object(ee.G)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -2940,7 +2940,7 @@
 						let {
 							subreddit: n
 						} = t;
-						return n ? Object(Q.w)(e, {
+						return n ? Object(Q.v)(e, {
 							subredditName: n.name
 						}) : void 0
 					},
@@ -3261,7 +3261,7 @@
 							subredditId: n.subredditId
 						}) : null
 					},
-					modModeEnabled: nt.N,
+					modModeEnabled: nt.M,
 					errorMsgs: v.E,
 					replyFormOpen: v.H,
 					subreddit: nt.q,
@@ -4135,7 +4135,7 @@
 				M = Object(c.c)({
 					isLoggedIn: _.G,
 					postSEOV2IdCardVariant: I.i,
-					widgets: Object(p.a)(P.s)
+					widgets: Object(p.a)(P.r)
 				}),
 				R = Object(d.b)(M);
 			class A extends i.a.Component {
@@ -5730,8 +5730,8 @@
 				}),
 				O = Object(a.c)({
 					language: b.P,
-					subreddit: h.z,
-					subredditAboutInfo: h.w
+					subreddit: h.y,
+					subredditAboutInfo: h.v
 				}),
 				f = Object(r.b)(O);
 			t.a = f(e => {
@@ -6433,7 +6433,7 @@
 				}),
 				De = Object(r.b)(() => Object(i.c)({
 					activeModalId: S.a,
-					flairStyleTemplate: ce.P,
+					flairStyleTemplate: ce.O,
 					currentUser: A.i,
 					crosspost: R.c,
 					hideNSFWPref: A.y,
@@ -6452,7 +6452,7 @@
 					metaId: (e, t) => e.posts.metaMap[t.postId],
 					moderatorPermissions: N.i,
 					publicAwardersEnabled: e => !!Object(me.a)(e),
-					modModeEnabled: ce.N,
+					modModeEnabled: ce.M,
 					isInCategoriesExperiment: L.a,
 					showEditFlair: pe.a,
 					subredditOrProfile: R.U,
@@ -8494,7 +8494,7 @@
 				te = Object(d.t)(),
 				ne = Object(a.c)({
 					language: l.P,
-					layout: d.L,
+					layout: d.K,
 					widget: m.f
 				}),
 				se = Object(r.b)(ne);
@@ -8880,11 +8880,11 @@
 			};
 			const I = 129,
 				P = Object(b.t)({
-					filterName: e => Object(b.Q)(e)[h.f],
-					url: e => Object(b.U)(e)
+					filterName: e => Object(b.P)(e)[h.f],
+					url: e => Object(b.T)(e)
 				}),
 				_ = Object(i.c)({
-					subredditId: (e, t) => Object(f.E)(e, t.subredditName)
+					subredditId: (e, t) => Object(f.D)(e, t.subredditName)
 				}),
 				k = Object(a.b)(_),
 				T = l.a.div("WidgetContent", E.a),
@@ -9521,7 +9521,7 @@
 					apiError: b.c,
 					apiPending: b.d,
 					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.K)(e, t),
 					loadMore: b.g,
 					postsById: g.T,
 					postIds: Object(r.a)((e, t) => {
@@ -9532,9 +9532,9 @@
 						} = t;
 						return Object(g.F)(e, n, s, o)
 					}),
-					subredditsById: x.W,
+					subredditsById: x.V,
 					viewportDataLoaded: v.a,
-					pageReferrer: l.O,
+					pageReferrer: l.N,
 					postListPlaceholderComponent: () => u.a
 				},
 				y = Object(o.c)(f),
@@ -10896,7 +10896,7 @@
 						let {
 							subredditName: n
 						} = t;
-						return n ? Object(ce.w)(e, {
+						return n ? Object(ce.v)(e, {
 							subredditName: n
 						}) : void 0
 					},
@@ -11581,9 +11581,9 @@
 			const a = e => !!(e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: e => Object(r.G)(e),
-					experimentName: s.G
+					experimentName: s.E
 				});
-				return Object(s.Qb)(t) ? void 0 : t
+				return Object(s.Nb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
@@ -11603,8 +11603,8 @@
 				c = e => i.has(e.toLowerCase()) || d.has(e.toLowerCase()),
 				l = e => i.has((Object(r.e)(e) || "").toLowerCase()) || d.has((Object(r.e)(e) || "").toLowerCase()) && Object(o.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.db
-				}) === s.kb.Enabled
+					experimentName: s.ab
+				}) === s.hb.Enabled
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, n) {
 			"use strict";
@@ -11616,9 +11616,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.jb
+					experimentName: s.gb
 				});
-				return Object(s.Qb)(t) ? void 0 : t
+				return Object(s.Nb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -11792,4 +11792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.45b2a31ed343baee743a.js.map
+//# sourceMappingURL=CommentsPage.8d23ff18ba4b2832ef04.js.map

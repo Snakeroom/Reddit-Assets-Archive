@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.c8e2e20e49553e1a5aa2.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.b692cd6e7cace9042e4d.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -916,9 +916,9 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.a
 				});
-				return !!t && !Object(o.Qb)(t)
+				return !!t && !Object(o.Nb)(t)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.c8e2e20e49553e1a5aa2.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.b692cd6e7cace9042e4d.js.map

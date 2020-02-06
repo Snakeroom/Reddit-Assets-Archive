@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~8a4d9936.feae5ad2083700c8b1b1.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~8a4d9936.97a568519af5e4383ed8.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~8a4d9936"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -165,7 +165,7 @@
 							postId: n.id
 						})
 					},
-					modModeEnabled: v.N
+					modModeEnabled: v.M
 				}),
 				z = Object(r.b)(X, (e, t) => ({
 					onHideTooltip: () => e(Object(m.i)()),
@@ -196,8 +196,8 @@
 				const J = {
 						caretOnTop: !1
 					},
-					K = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === x.a.SUBREDDIT,
-					Z = G("Approve", W.id, U),
+					Z = W.isRemoved && !W.modRemovalReason && !W.modNote && W.belongsTo.type === x.a.SUBREDDIT,
+					K = G("Approve", W.id, U),
 					D = G("Archived", W.id, U),
 					q = G("Automod", W.id, U),
 					Q = G("Lock", W.id, U),
@@ -261,11 +261,11 @@
 				}, J))), (W.isApproved || W.approvedBy) && o.a.createElement(s.Fragment, null, o.a.createElement(E.a, {
 					className: P.a.approveIcon,
 					desc: Object(g.a)(j, W),
-					id: Z,
-					onMouseEnter: z(Z),
+					id: K,
+					onMouseEnter: z(K),
 					onMouseLeave: H
 				}), o.a.createElement(p.c, T({
-					tooltipId: Z,
+					tooltipId: K,
 					text: Object(g.a)(j, W)
 				}, J))), Object(O.a)(W) && o.a.createElement(s.Fragment, null, o.a.createElement(k.a, {
 					className: P.a.removeIcon,
@@ -273,7 +273,7 @@
 					id: $,
 					onMouseEnter: z($),
 					onMouseLeave: H
-				}), K && o.a.createElement(b.a, {
+				}), Z && o.a.createElement(b.a, {
 					className: P.a.addRemovalReason,
 					onClick: X,
 					text: Object(a.c)("Add a removal reason")
@@ -714,7 +714,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
 				language: a.P,
-				userIsSubscriber: c.ab
+				userIsSubscriber: c.Z
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -838,4 +838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~8a4d9936.feae5ad2083700c8b1b1.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModerationPages~Poll~ProfileComments~ProfileOverview~P~8a4d9936.97a568519af5e4383ed8.js.map

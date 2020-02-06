@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.df59756998747984a2ec.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.4e149c9c705390282b1f.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -94,7 +94,7 @@
 					userName: t.username
 				})
 			});
-			class Q extends s.a.Component {
+			class G extends s.a.Component {
 				componentDidMount() {
 					this.props.requestUserBanInfo()
 				}
@@ -135,7 +135,7 @@
 					})))
 				}
 			}
-			var G = Object(a.b)(z, (e, t) => {
+			var Q = Object(a.b)(z, (e, t) => {
 					let {
 						username: r,
 						subredditId: n,
@@ -161,7 +161,7 @@
 							})), e(Object(P.i)(T.a.MUTE_USER))
 						}
 					}
-				})(Q),
+				})(G),
 				W = r("./src/reddit/actions/userFlair.ts"),
 				J = r("./src/reddit/icons/svgs/Tag/index.tsx"),
 				X = r("./src/reddit/components/Hovercards/AuthorHovercard/ModFlairActions.m.less"),
@@ -282,7 +282,7 @@
 						},
 						getEventFactory: e => Object(_.g)(e ? "unfollow" : "follow", r),
 						small: !0
-					})), L && r && !o && p && s.a.createElement(G, {
+					})), L && r && !o && p && s.a.createElement(Q, {
 						contextId: r,
 						language: c,
 						subredditId: p,
@@ -763,9 +763,9 @@
 			const o = e => !!(e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.G)(e),
-					experimentName: n.K
+					experimentName: n.I
 				});
-				return Object(n.Qb)(t) ? void 0 : t
+				return Object(n.Nb)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
@@ -785,8 +785,8 @@
 				c = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => d.has((Object(a.e)(e) || "").toLowerCase()) || i.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: o.G,
-					experimentName: n.db
-				}) === n.kb.Enabled
+					experimentName: n.ab
+				}) === n.hb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -947,4 +947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.df59756998747984a2ec.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.4e149c9c705390282b1f.js.map

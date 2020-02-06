@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b13f706591f791a2be0e.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fe6b79ebd1f1003b9810.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -3102,7 +3102,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(x.Q)(e, {
+						return Object(x.P)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					}
@@ -3812,7 +3812,7 @@
 							postId: n.id
 						})
 					},
-					modModeEnabled: g.N
+					modModeEnabled: g.M
 				}),
 				W = Object(r.b)(H, (e, t) => ({
 					onHideTooltip: () => e(Object(p.i)()),
@@ -5685,7 +5685,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(R.Q)(e, {
+						return Object(R.P)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					},
@@ -6140,7 +6140,7 @@
 					const o = Object(b.q)(e, {
 						pageLayer: n
 					});
-					return o && Object(C.P)(e, {
+					return o && Object(C.O)(e, {
 						subredditId: o.id
 					})
 				}, e => (e || []).filter(e => P.has(e.kind))),
@@ -14746,7 +14746,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(o.b)(() => Object(s.c)({
 				language: a.P,
-				userIsSubscriber: i.ab
+				userIsSubscriber: i.Z
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -18677,7 +18677,7 @@
 			const b = Object(l.t)(),
 				g = Object(i.c)({
 					isEditing: d.j,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(l.K)(e, t)
 				}),
 				f = Object(r.b)(g),
 				x = e => {
@@ -19944,7 +19944,7 @@
 					if (o.source) return !s.links && Object(ne.a)(c, "postCreation.crosspostInput.linksAreNotAllowed");
 					const {
 						isCrosspostableSubreddit: d
-					} = Object(w.w)(e, {
+					} = Object(w.v)(e, {
 						subredditName: a
 					});
 					if (!d) return Object(b.c)("This community does not allow for crossposting of any posts");
@@ -20025,7 +20025,7 @@
 					language: P.P,
 					postSchedule: T.S,
 					isEditingScheduledPost: e => !!Object(V.q)(e),
-					showContributorRequestFlow: e => Object(w.r)(e, f.e.Post),
+					showContributorRequestFlow: e => Object(w.q)(e, f.e.Post),
 					showScheduledPosts: T.Y,
 					submissionType: T.a,
 					submitMode: T.bb,
@@ -20341,7 +20341,7 @@
 								subredditId: n
 							}
 						} = t;
-						return n ? Object(w.Q)(e, {
+						return n ? Object(w.P)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -22418,7 +22418,7 @@
 					draftId: v.u,
 					isPostCreationPage: v.D,
 					pageLayer: e => e,
-					sourcePostId: e => Object(v.R)(e).source_id
+					sourcePostId: e => Object(v.Q)(e).source_id
 				}),
 				Xd = Object(i.c)({
 					submissionType: T.a,
@@ -22428,7 +22428,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						const o = Object(v.O)(e, {
+						const o = Object(v.N)(e, {
 							pageLayer: n
 						});
 						return !!o && "/" === o[0]
@@ -23189,8 +23189,8 @@
 				l = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: o.db
-				}) === o.kb.Enabled
+					experimentName: o.ab
+				}) === o.hb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -23439,4 +23439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b13f706591f791a2be0e.js.map
+//# sourceMappingURL=PostCreation.fe6b79ebd1f1003b9810.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~ProfileComments~ProfileOvervie~630d0282.cf30204c5639596a8e6b.js
-// Retrieved at 2/6/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~ProfileComments~ProfileOvervie~630d0282.5be5827aa5c99472af56.js
+// Retrieved at 2/6/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~ProfileComments~ProfileOvervie~630d0282"], {
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, n) {
@@ -94,7 +94,7 @@
 								subredditId: n
 							}
 						} = t;
-						return n ? Object(T.Q)(e, {
+						return n ? Object(T.P)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -133,27 +133,27 @@
 			var D = Object(i.b)(A)(R),
 				H = n("./src/reddit/helpers/trackers/postCollection.ts"),
 				W = n("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
-				Q = n.n(W);
-			const X = Object(s.e)("postCreation.collections.collectionsListEmptyText"),
-				U = Object(s.e)("postCreation.collections.noCollectionMatchingFilter"),
+				X = n.n(W);
+			const U = Object(s.e)("postCreation.collections.collectionsListEmptyText"),
+				Q = Object(s.e)("postCreation.collections.noCollectionMatchingFilter"),
 				V = Object(s.e)("postCreation.collections.filterPlaceholder"),
 				K = Object(s.e)("postCreation.collections.collectionsListTitle"),
 				q = Object(s.e)("postCreation.collections.createCollection"),
 				G = "".concat(o.a.assetPath, "/img/snoo-drafts.png"),
-				J = M.a.div("TopRow", Q.a),
-				z = M.a.div("TitleRow", Q.a),
-				Y = M.a.div("DetailsContainer", Q.a),
-				Z = M.a.wrapped(g.a, "ButtonRow", Q.a),
-				$ = M.a.div("CloseWrapper", Q.a),
-				ee = M.a.wrapped(b.a, "Close", Q.a),
-				te = M.a.div("Empty", Q.a),
-				ne = M.a.img("EmptyImage", Q.a),
-				se = M.a.p("EmptyText", Q.a),
-				oe = M.a.div("FilterWrapper", Q.a),
-				re = M.a.wrapped(_.a, "FilterInput", Q.a),
-				ce = M.a.wrapped(x.a, "SearchIcon", Q.a),
-				ie = M.a.wrapped(f.a, "PlusIcon", Q.a),
-				ae = M.a.wrapped(h.j, "CreateCollectionButton", Q.a),
+				J = M.a.div("TopRow", X.a),
+				z = M.a.div("TitleRow", X.a),
+				Y = M.a.div("DetailsContainer", X.a),
+				Z = M.a.wrapped(g.a, "ButtonRow", X.a),
+				$ = M.a.div("CloseWrapper", X.a),
+				ee = M.a.wrapped(b.a, "Close", X.a),
+				te = M.a.div("Empty", X.a),
+				ne = M.a.img("EmptyImage", X.a),
+				se = M.a.p("EmptyText", X.a),
+				oe = M.a.div("FilterWrapper", X.a),
+				re = M.a.wrapped(_.a, "FilterInput", X.a),
+				ce = M.a.wrapped(x.a, "SearchIcon", X.a),
+				ie = M.a.wrapped(f.a, "PlusIcon", X.a),
+				ae = M.a.wrapped(h.j, "CreateCollectionButton", X.a),
 				le = Object(d.a)((e, t) => {
 					const n = t.toLowerCase();
 					return e.filter(e => e.title.toLowerCase().includes(n))
@@ -207,10 +207,10 @@
 				renderNoCollections() {
 					return c.a.createElement(te, null, c.a.createElement(ne, {
 						src: G
-					}), c.a.createElement(se, null, X(this.props.language)))
+					}), c.a.createElement(se, null, U(this.props.language)))
 				}
 				renderNoFilterMatches() {
-					return c.a.createElement(te, null, c.a.createElement(se, null, U(this.props.language)))
+					return c.a.createElement(te, null, c.a.createElement(se, null, Q(this.props.language)))
 				}
 				render() {
 					const {
@@ -225,7 +225,7 @@
 						s = 0 === t.length ? this.renderNoFilterMatches() : t.map(this.renderItem)
 					}
 					return c.a.createElement("div", {
-						className: Q.a.wrapper,
+						className: X.a.wrapper,
 						"data-redditstyle": !0
 					}, c.a.createElement(J, null, c.a.createElement(z, {
 						"data-redditstyle": !0
@@ -318,9 +318,9 @@
 				D = j.a.div("CloseWrapper", E.a),
 				H = j.a.wrapped(x.a, "CloseIcon", E.a),
 				W = j.a.label("Label", E.a),
-				Q = j.a.wrapped(_.a, "TitleInput", E.a),
-				X = j.a.wrapped(f.a, "AddCollectionIcon", E.a),
-				U = j.a.wrapped(m.f, "PrimaryActionButton", E.a),
+				X = j.a.wrapped(_.a, "TitleInput", E.a),
+				U = j.a.wrapped(f.a, "AddCollectionIcon", E.a),
+				Q = j.a.wrapped(m.f, "PrimaryActionButton", E.a),
 				V = j.a.wrapped(b.a, "LoadingIcon", E.a),
 				K = j.a.wrapped(h.b, "ErrorText", E.a),
 				q = Object(c.c)({
@@ -371,14 +371,14 @@
 					} = this.props, r = !e, c = !!this.state.collectionTitle.trim(), i = r ? w : P, a = r ? k : M;
 					return o.a.createElement(S, null, o.a.createElement(D, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(H, null)), o.a.createElement(B, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(N, null, o.a.createElement(X, null), T(s)), o.a.createElement(L, null, I(s))), o.a.createElement(W, null, a(s), o.a.createElement(Q, {
+					}, o.a.createElement(H, null)), o.a.createElement(B, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(N, null, o.a.createElement(U, null), T(s)), o.a.createElement(L, null, I(s))), o.a.createElement(W, null, a(s), o.a.createElement(X, {
 						maxLength: p.e,
 						onChange: this.onTitleChange,
 						placeholder: F(s),
 						value: this.state.collectionTitle
 					}))), o.a.createElement(A, null, o.a.createElement(g.a, null, o.a.createElement(R, {
 						onClick: this.props.onCancel
-					}, y(s)), o.a.createElement(U, {
+					}, y(s)), o.a.createElement(Q, {
 						onClick: this.onPrimaryButtonClick,
 						disabled: n || !c
 					}, n ? o.a.createElement(V, {
@@ -432,7 +432,7 @@
 				},
 				w = Object(i.c)({
 					flairData: g.d,
-					subreddit: C.Q,
+					subreddit: C.P,
 					isMod: (e, t) => !!Object(x.j)(e, t)
 				});
 			class P extends r.a.Component {
@@ -1098,4 +1098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~ProfileComments~ProfileOvervie~630d0282.cf30204c5639596a8e6b.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~ProfileComments~ProfileOvervie~630d0282.5be5827aa5c99472af56.js.map
