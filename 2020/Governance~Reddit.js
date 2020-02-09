@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0cee7e6be6bab9ba7877.js
-// Retrieved at 2/6/2020, 7:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.408a6e6e42d0e504cb62.js
+// Retrieved at 2/9/2020, 5:20:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3055,22 +3055,24 @@
 				return O
 			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "j", (function() {
-				return _
 			})), n.d(t, "k", (function() {
-				return y
-			})), n.d(t, "m", (function() {
-				return h
-			})), n.d(t, "n", (function() {
-				return E
-			})), n.d(t, "o", (function() {
-				return I
+				return _
 			})), n.d(t, "l", (function() {
-				return S
+				return y
+			})), n.d(t, "n", (function() {
+				return h
+			})), n.d(t, "o", (function() {
+				return E
 			})), n.d(t, "p", (function() {
+				return I
+			})), n.d(t, "m", (function() {
+				return S
+			})), n.d(t, "q", (function() {
 				return v
 			})), n.d(t, "i", (function() {
 				return T
+			})), n.d(t, "j", (function() {
+				return C
 			}));
 			var r = n("./src/config.ts"),
 				s = n("./node_modules/js-cookie/src/js.cookie.js"),
@@ -3095,20 +3097,19 @@
 				I = Object(i.a)(b),
 				S = Object(i.a)(O),
 				v = Object(i.a)(g),
-				T = () => async (e, t, n) => {
+				T = () => {
+					const e = new Date;
+					e.setFullYear(e.getFullYear() + 2), o.a.set(c.f, "1", {
+						expires: e,
+						domain: r.a.cookieDomain
+					})
+				},
+				C = () => async (e, t, n) => {
 					let {
-						apiContext: s
+						apiContext: r
 					} = n;
-					const i = t();
-					if (Object(d.G)(i) && i.platform.currentPage) await Object(a.f)(s());
-					else {
-						const e = new Date;
-						e.setFullYear(e.getFullYear() + 2), o.a.set(c.f, "1", {
-							expires: e,
-							domain: r.a.cookieDomain
-						})
-					}
-					e(j({
+					const s = t();
+					Object(d.G)(s) && s.platform.currentPage && await Object(a.f)(r()), e(j({
 						over18: !0
 					}))
 				}
@@ -8978,7 +8979,7 @@
 							type: w.body.reason
 						} : w.error,
 						key: y
-					})), w.body.reason === O.a.DeletedProfile && t(Object(d.l)({
+					})), w.body.reason === O.a.DeletedProfile && t(Object(d.m)({
 						profileName: _
 					})), void t(p.m(w.status));
 					const A = w.body;
@@ -9175,7 +9176,7 @@
 									type: u.body.reason
 								} : u.error,
 								key: e
-							})), u.body.reason === I.a.DeletedProfile && r(Object(g.l)({
+							})), u.body.reason === I.a.DeletedProfile && r(Object(g.m)({
 								profileName: t
 							})), r(Object(y.m)(u.status))
 						})(r, A, M))
@@ -9219,7 +9220,7 @@
 									type: u.body.reason
 								} : u.error,
 								key: e
-							})), u.body.reason === I.a.DeletedProfile && r(Object(g.l)({
+							})), u.body.reason === I.a.DeletedProfile && r(Object(g.m)({
 								profileName: t
 							})), r(Object(y.m)(u.status))
 						})(r, A, M))
@@ -9337,7 +9338,7 @@
 							type: L.body.reason
 						} : L.error,
 						key: E
-					})), L.body.reason === m.a.DeletedProfile && t(Object(c.l)({
+					})), L.body.reason === m.a.DeletedProfile && t(Object(c.m)({
 						profileName: h
 					})), void t(b.m(L.status));
 					const U = L.body;
@@ -9796,14 +9797,14 @@
 						}
 					} = e, o = r ? r.account : void 0, i = r && r.features || void 0, c = t ? t.toLowerCase() : "";
 					if (404 === e.status)
-						if (s === b.a.NotFoundSubreddit) n(g.k({
+						if (s === b.a.NotFoundSubreddit) n(g.l({
 							account: o,
 							features: i,
 							subredditName: c
 						}));
 						else if (s === b.a.BannedSubreddit) {
 						const e = r ? r.banMessage : void 0;
-						n(g.j({
+						n(g.k({
 							banMessage: e,
 							account: o,
 							features: i,
@@ -9811,12 +9812,12 @@
 						}))
 					}
 					if (403 === e.status)
-						if (s === b.a.GoldSubreddit) n(g.m({
+						if (s === b.a.GoldSubreddit) n(g.n({
 							account: o,
 							features: i,
 							subredditName: c
 						}));
-						else if (s === b.a.PrivateSubreddit) n(g.n({
+						else if (s === b.a.PrivateSubreddit) n(g.o({
 						account: o,
 						features: i,
 						subredditDescription: r.description || "",
@@ -9824,7 +9825,7 @@
 					}));
 					else if (s === b.a.QuarantinedSubreddit) {
 						const e = !r || void 0 === r.quarantineRequiresEmailOptin || r.quarantineRequiresEmailOptin;
-						n(g.o({
+						n(g.p({
 							account: o,
 							features: i,
 							subredditName: c,
@@ -13101,7 +13102,7 @@
 							raw_json: 1
 						}
 					}))(i(), e);
-					l.ok ? (l.body && l.body.data && l.body.data.is_suspended && t(Object(o.p)({
+					l.ok ? (l.body && l.body.data && l.body.data.is_suspended && t(Object(o.q)({
 						profileName: e
 					})), t(S(function(e) {
 						const {
@@ -62395,4 +62396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.0cee7e6be6bab9ba7877.js.map
+//# sourceMappingURL=Governance~Reddit.408a6e6e42d0e504cb62.js.map
