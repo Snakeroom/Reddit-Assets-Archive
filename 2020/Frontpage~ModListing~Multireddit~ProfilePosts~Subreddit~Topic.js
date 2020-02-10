@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.e9db0738a712d4793fe7.js
-// Retrieved at 2/6/2020, 4:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2d85da5bf6cec1ae025d.js
+// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
@@ -43,8 +43,8 @@
 				x = s("./src/reddit/components/Translated/index.tsx"),
 				E = s("./src/reddit/constants/adEvents.ts"),
 				C = s("./src/reddit/constants/componentSizes.ts"),
-				k = s("./src/reddit/constants/postLayout.ts"),
-				P = s("./src/reddit/controls/InternalLink/index.tsx"),
+				P = s("./src/reddit/constants/postLayout.ts"),
+				k = s("./src/reddit/controls/InternalLink/index.tsx"),
 				v = s("./src/reddit/helpers/getClickInfo.ts"),
 				O = s("./src/reddit/helpers/pixels.ts"),
 				L = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
@@ -248,76 +248,78 @@
 						isCommentsPage: i,
 						isFrontpage: d,
 						isProfilePostListing: c,
-						listingKey: l,
-						listingName: p,
-						pageLayer: h,
-						pageReferrer: u,
-						postClickEvent: g,
-						redditStyle: y
-					} = this.props, f = 0 === t, w = s ? "last-index" : "", S = "post-".concat(r, "-").concat(e, "-").concat(t, "-").concat(w, "-").concat(p, "-").concat(l, "-").concat(u);
-					let x;
-					if (void 0 === (x = this.scrollChildCache.get(S))) {
+						isTopicPage: l,
+						listingKey: p,
+						listingName: h,
+						pageLayer: u,
+						pageReferrer: g,
+						postClickEvent: y,
+						redditStyle: f
+					} = this.props, w = 0 === t, S = s ? "last-index" : "", x = "post-".concat(r, "-").concat(e, "-").concat(t, "-").concat(S, "-").concat(h, "-").concat(p, "-").concat(g);
+					let E;
+					if (void 0 === (E = this.scrollChildCache.get(x))) {
 						const {
-							inSubredditOrProfile: w,
-							postsById: E
-						} = this.props, C = E[e], P = C.crosspostRootId && E[C.crosspostRootId] ? E[C.crosspostRootId] : C;
-						C.crosspostRootId && !E[C.crosspostRootId] && b.c.withScope(e => {
-							e.setExtra("errorType", m.p.API), e.setExtra("description", "Post ".concat(C.id, " is crosspost of ").concat(C.crosspostRootId, ", but ") + "".concat(C.crosspostRootId, " details are missing in the state")), b.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: S,
+							postsById: C
+						} = this.props, k = C[e], v = k.crosspostRootId && C[k.crosspostRootId] ? C[k.crosspostRootId] : k;
+						k.crosspostRootId && !C[k.crosspostRootId] && b.c.withScope(e => {
+							e.setExtra("errorType", m.p.API), e.setExtra("description", "Post ".concat(k.id, " is crosspost of ").concat(k.crosspostRootId, ", but ") + "".concat(k.crosspostRootId, " details are missing in the state")), b.c.captureMessage("Crosspost parent details are missing")
 						});
-						const v = this.props.postComponentForLayout({
-								isCrosspost: !!C.crosspostRootId,
-								isFirstPost: f,
+						const O = this.props.postComponentForLayout({
+								isCrosspost: !!k.crosspostRootId,
+								isFirstPost: w,
 								layout: r,
-								post: P
+								post: v
 							}),
-							O = "post-list-item-[layout: ".concat(r, "]-[postId: ").concat(e, "]"),
-							j = z(e, r, s, l, p, u, this.props, t),
-							R = J(e, r, this.props, t),
-							T = Z(e, this.props),
-							I = P.media && P.media.type === _.n.EMBED ? P.media.provider : null;
-						x = {
-							estHeight: Object(L.c)(C, r),
+							j = "post-list-item-[layout: ".concat(r, "]-[postId: ").concat(e, "]"),
+							R = z(e, r, s, p, h, g, this.props, t),
+							T = J(e, r, this.props, t),
+							I = Z(e, this.props),
+							N = v.media && v.media.type === _.n.EMBED ? v.media.provider : null;
+						E = {
+							estHeight: Object(L.c)(k, r),
 							id: e,
-							isFocusable: !(!P.media || r !== k.g.Large) && (_.d.has(P.media.type) && (!I || !_.q.has(I)) && !P.isSpoiler && !P.isNSFW),
-							trackOnEnteredViewport: j,
-							trackOnExitedViewport: R,
+							isFocusable: !(!v.media || r !== P.g.Large) && (_.d.has(v.media.type) && (!N || !_.q.has(N)) && !v.isSpoiler && !v.isNSFW),
+							trackOnEnteredViewport: R,
+							trackOnExitedViewport: T,
 							render: t => {
 								let {
 									className: r,
 									height: m,
-									width: u,
+									width: g,
 									remeasure: b,
-									setScrollerChildRef: S,
-									shouldLoadInitially: x
+									setScrollerChildRef: x,
+									shouldLoadInitially: E
 								} = t;
-								return a.a.createElement(v, {
+								return a.a.createElement(O, {
 									className: r,
 									currentProfileName: o,
-									key: O,
-									availableWidth: u,
-									eventFactory: g,
-									first: f,
-									forceLoadMedia: x,
-									inSubredditOrProfile: w,
+									key: j,
+									availableWidth: g,
+									eventFactory: y,
+									first: w,
+									forceLoadMedia: E,
+									inSubredditOrProfile: S,
 									isCommentPermalink: n,
 									isCommentsPage: i,
 									isFrontpage: d,
 									isProfilePostListing: c,
-									listingKey: l,
-									listingName: p,
-									pageLayer: h,
+									isTopicPage: l,
+									listingKey: p,
+									listingName: h,
+									pageLayer: u,
 									last: s,
-									onClickPost: T,
+									onClickPost: I,
 									onSizeChanged: b,
 									postId: e,
-									redditStyle: y,
+									redditStyle: f,
 									sendEvent: this.props.sendEvent,
-									scrollerItemRef: S
+									scrollerItemRef: x
 								})
 							}
-						}, this.scrollChildCache.set(S, x)
+						}, this.scrollChildCache.set(x, E)
 					}
-					return x
+					return E
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -409,7 +411,7 @@
 						viewportTopPadding: C.f
 					}, y), f && a.a.createElement(D, {
 						className: M.a.seeMoreButton
-					}, a.a.createElement(P.a, {
+					}, a.a.createElement(k.a, {
 						className: M.a.seeMorePostsText,
 						to: Object(p.a)(f, {
 							type: m.Kb.Posts
@@ -596,8 +598,8 @@
 			};
 			const E = c.e[1] + 24,
 				C = g.f + 8 + 152 + 32 + 16,
-				k = C + E + 8,
-				P = w.a.div("Container", f.a),
+				P = C + E + 8,
+				k = w.a.div("Container", f.a),
 				v = w.a.wrapped(e => {
 					var {
 						className: t
@@ -624,7 +626,7 @@
 			class L extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > k,
+						shouldAdSticky: this.windowHeight > P,
 						shouldFooterSticky: this.windowHeight > C
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
@@ -663,7 +665,7 @@
 							hideFooter: r
 						}
 					} = this, o = this.state.isAdSticky && !(!e && !t);
-					return d.a.createElement(P, {
+					return d.a.createElement(k, {
 						className: s,
 						innerRef: this.setWrapperRef
 					}, d.a.createElement(O, {
@@ -719,11 +721,11 @@
 				x = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			const E = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
 				C = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
-				k = e => {
+				P = e => {
 					const t = E(e);
 					return Object(S.f)(t)
 				},
-				P = e => {
+				k = e => {
 					const t = C(e);
 					return Object(S.f)(t)
 				};
@@ -766,11 +768,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = E(this.props), e.borderColor = Object(y.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = k(this.props), e
+					return e.backgroundColor = E(this.props), e.borderColor = Object(y.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = P(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = C(this.props), e.color = e.fill = P(this.props), e
+					return e.backgroundColor = C(this.props), e.color = e.fill = k(this.props), e
 				}
 				render() {
 					const {
@@ -849,6 +851,7 @@
 					isCommentsPage: l.w,
 					isFrontpage: l.y,
 					isProfilePostListing: l.H,
+					isTopicPage: l.K,
 					pageLayer: e => e
 				})
 			}
@@ -857,7 +860,7 @@
 					apiError: g.c,
 					apiPending: g.d,
 					measureScrollFPS: u.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.K)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t),
 					loadMore: g.g,
 					postsById: y.T,
 					postIds: Object(n.a)((e, t) => {
@@ -870,7 +873,7 @@
 					}),
 					subredditsById: b.V,
 					viewportDataLoaded: f.a,
-					pageReferrer: l.N,
+					pageReferrer: l.O,
 					postListPlaceholderComponent: () => m.a
 				},
 				E = Object(o.c)(x),
@@ -891,11 +894,11 @@
 						e(d.E(t, r, o))
 					}
 				}),
-				k = Object(r.b)(E, C, (e, t, s) => Object.assign({}, e, t, s, {
+				P = Object(r.b)(E, C, (e, t, s) => Object.assign({}, e, t, s, {
 					postClickEvent: h.f,
 					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(a.b)(S(k(e)))
+			t.a = e => Object(a.b)(S(P(e)))
 		},
 		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, s) {
 			"use strict";
@@ -937,4 +940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.e9db0738a712d4793fe7.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2d85da5bf6cec1ae025d.js.map

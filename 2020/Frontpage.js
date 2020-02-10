@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.cb01ecbcd23fd9d7dd24.js
-// Retrieved at 2/10/2020, 12:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ea349525e26b14d060bb.js
+// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -688,7 +688,7 @@
 				k = Object(b.t)(),
 				D = Object(i.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: b.K,
+					postLayout: b.L,
 					redditStyle: b.A
 				}),
 				T = Object(o.b)(D, e => ({
@@ -2058,7 +2058,7 @@
 					rpanInjectionIndex: e => Object(Q.b)(e, {
 						listingName: z.R
 					}),
-					layout: U.K
+					layout: U.L
 				}),
 				oe = () => Object(h.a)(ne, se, re, e => Object(Q.a)(e, {
 					listingName: z.R
@@ -2519,4 +2519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.cb01ecbcd23fd9d7dd24.js.map
+//# sourceMappingURL=Frontpage.ea349525e26b14d060bb.js.map

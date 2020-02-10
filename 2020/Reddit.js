@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.12dce3d710f545f9cc61.js
-// Retrieved at 2/10/2020, 12:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3f878d0d256b1cbb7847.js
+// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2195,7 +2195,7 @@
 						pageLayer: s
 					} = t;
 					const n = !!e.user.account,
-						a = Object(Nn.R)(s);
+						a = Object(Nn.S)(s);
 					switch (a) {
 						case "index":
 						case "listing":
@@ -2268,7 +2268,7 @@
 								type: yn.Settings, model: r
 							}
 					}
-					const o = Object(Nn.L)(e, {
+					const o = Object(Nn.M)(e, {
 						pageLayer: s
 					});
 					if ("all" === o) return {
@@ -4062,7 +4062,7 @@
 				Vr = s("./src/reddit/controls/Search/index.m.less"),
 				zr = s.n(Vr);
 			const Zr = Object(Nn.t)({
-					searchQuery: Nn.S,
+					searchQuery: Nn.T,
 					pageLayer: e => e
 				}),
 				Kr = (e, t, s) => e(e => Object.assign({}, Object(Dr.b)(e), {
@@ -11659,4 +11659,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Poll~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.12dce3d710f545f9cc61.js.map
+//# sourceMappingURL=Reddit.3f878d0d256b1cbb7847.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c2356648fd8fcb1207a0.js
-// Retrieved at 2/6/2020, 4:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.baae0bd54a9ba068ec42.js
+// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1096,7 +1096,7 @@
 				T = Object(b.t)(),
 				L = Object(a.c)({
 					dropdownIsOpen: Object(E.b)(N),
-					postLayout: b.K,
+					postLayout: b.L,
 					redditStyle: b.A
 				}),
 				D = Object(i.b)(L, e => ({
@@ -5107,7 +5107,7 @@
 				te = Object(d.t)(),
 				se = Object(a.c)({
 					language: l.P,
-					layout: d.K,
+					layout: d.L,
 					widget: m.f
 				}),
 				ne = Object(i.b)(se);
@@ -6362,8 +6362,8 @@
 			};
 			const w = 129,
 				_ = Object(h.t)({
-					filterName: e => Object(h.P)(e)[b.f],
-					url: e => Object(h.T)(e)
+					filterName: e => Object(h.Q)(e)[b.f],
+					url: e => Object(h.U)(e)
 				}),
 				N = Object(o.c)({
 					subredditId: (e, t) => Object(v.D)(e, t.subredditName)
@@ -6982,12 +6982,12 @@
 				crosspostRoot: p.c,
 				crosspostSubredditOrProfile: p.d,
 				currentUser: b.i,
-				flairStyleTemplate: c.O,
+				flairStyleTemplate: c.P,
 				hideNSFWPref: b.y,
 				isActive: p.g,
 				language: b.P,
 				moderatorPermissions: m.i,
-				modModeEnabled: c.M,
+				modModeEnabled: c.N,
 				post: p.I,
 				showEditFlair: u.a,
 				subredditOrProfile: p.U,
@@ -8333,7 +8333,7 @@
 				We = Object(g.c)({
 					showCreatePostBanner: De,
 					contentGateInfo: (e, t) => Object(fe.f)(e, t.match.params.subredditName),
-					layout: ne.K,
+					layout: ne.L,
 					isRpanDuVisible: (e, t) => {
 						let {
 							match: s
@@ -9037,4 +9037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.c2356648fd8fcb1207a0.js.map
+//# sourceMappingURL=Subreddit.baae0bd54a9ba068ec42.js.map

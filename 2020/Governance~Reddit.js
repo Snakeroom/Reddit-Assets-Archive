@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2b88712ee9c0045baf68.js
-// Retrieved at 2/10/2020, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.74e5cd7d00faee81edf0.js
+// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4250,7 +4250,7 @@
 									isMobile: Object(o.e)(y.meta.userAgent),
 									sort: h,
 									t: Object(d.a)(h, P),
-									layout: f.e[Object(m.K)(y, {})],
+									layout: f.e[Object(m.L)(y, {})],
 									useMockData: e
 								}); {
 								const e = y.platform.lastPage,
@@ -7622,7 +7622,7 @@
 				Ht = (e, t) => async (n, r, s) => {
 					const o = r();
 					if (o.listings.postOrder.api.pending[e]) return;
-					const c = pe.e[Object(me.K)(o, {})];
+					const c = pe.e[Object(me.L)(o, {})];
 					t.isMobile = Object(a.e)(o.meta.userAgent), t.recentPostIds = o.posts.recent, t.layout = c, t.useMockData = !!o.platform.currentPage && (!!o.platform.currentPage.queryParams.useMockData && Object(He.b)(o)), n(Ft({
 						key: e
 					})); {
@@ -8044,7 +8044,7 @@
 					if (u.listings.postOrder.api.pending[e]) return;
 					o(mn({
 						key: e
-					})), r.layout = pe.e[Object(me.K)(u, {})];
+					})), r.layout = pe.e[Object(me.L)(u, {})];
 					const l = {
 							path: Object(Se.h)(t, n).replace(/\/$/, ""),
 							includeIdentity: !0,
@@ -9023,7 +9023,7 @@
 						sort: l,
 						t: p
 					}, i()(d, g.k), {
-						layout: Object(_.K)(o, {}).toLowerCase()
+						layout: Object(_.L)(o, {}).toLowerCase()
 					}));
 					if (E.ok) {
 						const t = Object(D.f)(o, {
@@ -9130,7 +9130,7 @@
 						t: D
 					} = Object(i.a)(n(), O), {
 						profileName: P
-					} = T, w = u.e[Object(b.K)(n(), {})], A = P.toLowerCase(), M = Object.assign({}, s()(e.queryParams, l.k), {
+					} = T, w = u.e[Object(b.L)(n(), {})], A = P.toLowerCase(), M = Object.assign({}, s()(e.queryParams, l.k), {
 						sort: C,
 						layout: w,
 						t: D
@@ -9321,7 +9321,7 @@
 						return
 					}
 					const k = Object.assign({}, s()(e.queryParams, [...O.k, ...O.j, O.g]), {
-						layout: Object(g.K)(D, {}).toLowerCase(),
+						layout: Object(g.L)(D, {}).toLowerCase(),
 						sort: y,
 						t: Object(S.a)(y, j)
 					});
@@ -9390,7 +9390,7 @@
 							sort: l,
 							t: b
 						}, s()(a, O.k), {
-							layout: Object(g.K)(o, {}).toLowerCase()
+							layout: Object(g.L)(o, {}).toLowerCase()
 						}),
 						h = await I(r(), p, j),
 						E = o.listings.postOrder.ids[f],
@@ -9840,7 +9840,7 @@
 				const p = t !== G.c.All && t !== G.c.Popular || !l.posts.recent.length ? n : Object.assign({}, n, {
 					recentPostIds: l.posts.recent
 				});
-				p.layout = q.e[Object(V.K)(l, {})], s(ue({
+				p.layout = q.e[Object(V.L)(l, {})], s(ue({
 					key: e
 				}));
 				const f = Object(te.b)(l) ? () => Object(K.b)(d.gqlContext(), Object(K.c)(l, t, p), b) : () => Object(K.a)(d.apiContext(), t, p),
@@ -15339,7 +15339,7 @@
 					const T = Object.assign({
 						after: O.token,
 						dist: O.dist,
-						layout: y.e[Object(j.K)(p, {})],
+						layout: y.e[Object(j.L)(p, {})],
 						sort: E,
 						t: l
 					}, s()(f, [..._.k, _.g]));
@@ -21275,6 +21275,8 @@
 				return o.R
 			})), n.d(t, "T", (function() {
 				return o.S
+			})), n.d(t, "U", (function() {
+				return o.T
 			}));
 			const i = s.a.createContext(null),
 				c = (e, t) => void 0 !== t ? Object.keys(t).reduce((n, r) => (n[r] = t[r](e), n), {}) : {
@@ -21390,95 +21392,98 @@
 				return R
 			})), n.d(t, "D", (function() {
 				return x
-			})), n.d(t, "K", (function() {
+			})), n.d(t, "J", (function() {
 				return N
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "L", (function() {
 				return k
-			})), n.d(t, "B", (function() {
+			})), n.d(t, "w", (function() {
 				return L
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "B", (function() {
 				return U
-			})), n.d(t, "Q", (function() {
+			})), n.d(t, "z", (function() {
 				return M
-			})), n.d(t, "v", (function() {
-				return F
-			})), n.d(t, "u", (function() {
-				return G
-			})), n.d(t, "y", (function() {
-				return B
-			})), n.d(t, "I", (function() {
-				return q
-			})), n.d(t, "C", (function() {
-				return H
-			})), n.d(t, "G", (function() {
-				return W
-			})), n.d(t, "E", (function() {
-				return Y
-			})), n.d(t, "H", (function() {
-				return z
-			})), n.d(t, "c", (function() {
-				return J
-			})), n.d(t, "a", (function() {
-				return Q
-			})), n.d(t, "s", (function() {
-				return X
-			})), n.d(t, "d", (function() {
-				return $
-			})), n.d(t, "n", (function() {
-				return Z
-			})), n.d(t, "q", (function() {
-				return ee
-			})), n.d(t, "m", (function() {
-				return te
-			})), n.d(t, "o", (function() {
-				return ne
-			})), n.d(t, "p", (function() {
-				return re
-			})), n.d(t, "F", (function() {
-				return se
-			})), n.d(t, "h", (function() {
-				return oe
-			})), n.d(t, "i", (function() {
-				return ie
-			})), n.d(t, "j", (function() {
-				return ce
-			})), n.d(t, "k", (function() {
-				return ae
-			})), n.d(t, "A", (function() {
-				return de
-			})), n.d(t, "g", (function() {
-				return ue
-			})), n.d(t, "M", (function() {
-				return le
-			})), n.d(t, "O", (function() {
-				return be
 			})), n.d(t, "R", (function() {
+				return F
+			})), n.d(t, "v", (function() {
+				return G
+			})), n.d(t, "u", (function() {
+				return B
+			})), n.d(t, "y", (function() {
+				return q
+			})), n.d(t, "I", (function() {
+				return V
+			})), n.d(t, "C", (function() {
+				return K
+			})), n.d(t, "G", (function() {
+				return Y
+			})), n.d(t, "E", (function() {
+				return z
+			})), n.d(t, "H", (function() {
+				return J
+			})), n.d(t, "c", (function() {
+				return Q
+			})), n.d(t, "a", (function() {
+				return X
+			})), n.d(t, "s", (function() {
+				return $
+			})), n.d(t, "d", (function() {
+				return Z
+			})), n.d(t, "n", (function() {
+				return ee
+			})), n.d(t, "q", (function() {
+				return te
+			})), n.d(t, "m", (function() {
+				return ne
+			})), n.d(t, "o", (function() {
+				return re
+			})), n.d(t, "p", (function() {
+				return se
+			})), n.d(t, "F", (function() {
+				return oe
+			})), n.d(t, "h", (function() {
+				return ie
+			})), n.d(t, "i", (function() {
+				return ce
+			})), n.d(t, "j", (function() {
+				return ae
+			})), n.d(t, "k", (function() {
+				return de
+			})), n.d(t, "A", (function() {
+				return ue
+			})), n.d(t, "g", (function() {
+				return le
+			})), n.d(t, "N", (function() {
+				return be
+			})), n.d(t, "P", (function() {
 				return pe
 			})), n.d(t, "S", (function() {
 				return fe
-			})), n.d(t, "J", (function() {
+			})), n.d(t, "T", (function() {
 				return me
-			})), n.d(t, "L", (function() {
+			})), n.d(t, "K", (function() {
 				return Oe
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "M", (function() {
 				return ge
-			})), n.d(t, "N", (function() {
+			})), n.d(t, "r", (function() {
 				return _e
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "O", (function() {
 				return ye
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "b", (function() {
 				return je
-			})), n.d(t, "P", (function() {
+			})), n.d(t, "t", (function() {
 				return he
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "Q", (function() {
 				return Ee
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "f", (function() {
 				return Ie
+			})), n.d(t, "l", (function() {
+				return Se
 			}));
 			const A = e => e ? e.url : "",
 				R = e => !!(e && e.routeMatch && i.o.FRONTPAGE.includes(e.routeMatch.route.chunk)),
 				x = e => e && e.routeMatch && [i.o.FRONTPAGE, i.o.MULTIREDDIT, i.o.SUBREDDIT].includes(e.routeMatch.route.chunk),
-				N = (e, t) => {
+				N = e => !(!e || !e.meta || e.meta.name !== i.yb.TOPIC),
+				k = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -21492,53 +21497,53 @@
 					});
 					return o ? o.name : s
 				},
-				k = (e, t) => {
-					let {
-						pageLayer: n
-					} = t;
-					const r = N(e, {
-						pageLayer: n
-					});
-					return !!r && Object(c.a)(r)
-				},
 				L = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = N(e, {
+					const r = k(e, {
+						pageLayer: n
+					});
+					return !!r && Object(c.a)(r)
+				},
+				U = (e, t) => {
+					let {
+						pageLayer: n
+					} = t;
+					const r = k(e, {
 							pageLayer: n
 						}),
 						s = R(n),
 						o = Object(w.G)(e);
 					return r === l.f || !o && s
 				},
-				U = (e, t) => {
+				M = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = N(e, {
+					const r = k(e, {
 						pageLayer: n
 					});
 					return !(r && !Object(c.a)(r))
 				},
-				M = e => {
+				F = e => {
 					if (!e || !e.routeMatch) return;
 					const {
 						route: t
 					} = e.routeMatch;
 					return t.meta.name
 				},
-				F = e => !(!e || !e.meta || e.meta.name !== i.yb.COMMENTS),
-				G = e => !!(e && e.meta && e.meta.name === i.yb.COMMENTS && e.urlParams.partialCommentId),
-				B = e => !(!e || !e.meta || e.meta.name !== i.yb.SEARCH_RESULTS || e.urlParams.subredditName),
-				q = e => !!(e && e.meta && e.meta.name === i.yb.SEARCH_RESULTS && e.urlParams.subredditName),
-				V = e => !(!e || !e.meta || e.meta.name !== i.yb.COMMENTS || f.b[e.urlParams.routePrefix] !== f.a.PROFILE),
-				H = e => !(!e || !e.meta || e.meta.name !== i.yb.POST_CREATION),
-				K = e => !(!e || !e.meta || e.meta.name !== i.yb.POST_DRAFT),
-				W = e => !!(e && e.meta && i.ob.has(e.meta.name)),
-				Y = e => !!(e && e.meta && i.mb.has(e.meta.name)),
-				z = e => !!(e && e.meta && i.Hb.has(e.meta.name)),
-				J = e => {
+				G = e => !(!e || !e.meta || e.meta.name !== i.yb.COMMENTS),
+				B = e => !!(e && e.meta && e.meta.name === i.yb.COMMENTS && e.urlParams.partialCommentId),
+				q = e => !(!e || !e.meta || e.meta.name !== i.yb.SEARCH_RESULTS || e.urlParams.subredditName),
+				V = e => !!(e && e.meta && e.meta.name === i.yb.SEARCH_RESULTS && e.urlParams.subredditName),
+				H = e => !(!e || !e.meta || e.meta.name !== i.yb.COMMENTS || f.b[e.urlParams.routePrefix] !== f.a.PROFILE),
+				K = e => !(!e || !e.meta || e.meta.name !== i.yb.POST_CREATION),
+				W = e => !(!e || !e.meta || e.meta.name !== i.yb.POST_DRAFT),
+				Y = e => !!(e && e.meta && i.ob.has(e.meta.name)),
+				z = e => !!(e && e.meta && i.mb.has(e.meta.name)),
+				J = e => !!(e && e.meta && i.Hb.has(e.meta.name)),
+				Q = e => {
 					const t = e && e.urlParams;
 					if (!t) return;
 					const {
@@ -21550,19 +21555,19 @@
 						username: r
 					}
 				},
-				Q = e => {
+				X = e => {
 					const t = e && e.urlParams;
 					return t ? t.categoryName : void 0
 				},
-				X = e => {
+				$ = e => {
 					const t = e && e.urlParams;
 					return t ? t.topicSlug : void 0
 				},
-				$ = (e, t) => {
+				Z = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = J(n);
+					const r = Q(n);
 					if (!r) return null;
 					const {
 						multiredditName: s,
@@ -21573,12 +21578,12 @@
 						username: o
 					}) : null
 				},
-				Z = (e, t) => {
+				ee = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					if (K(n)) {
-						const t = je(n);
+					if (W(n)) {
+						const t = he(n);
 						return Object(T.e)(e, {
 							draftId: t
 						})
@@ -21586,29 +21591,29 @@
 					const r = n && n.urlParams;
 					return r ? r.subredditName : void 0
 				},
-				ee = (e, t) => {
+				te = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
 					if (n && n.urlParams && f.b[n.urlParams.routePrefix] === f.a.PROFILE) return null;
-					const r = Z(e, {
+					const r = ee(e, {
 						pageLayer: n
 					});
 					return r ? Object(D.y)(e, {
 						subredditName: r
 					}) : null
 				},
-				te = (e, t) => {
+				ne = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = Z(e, {
+					const r = ee(e, {
 						pageLayer: n
 					});
 					return r ? Object(D.D)(e, r) : null
 				},
-				ne = (e, t) => ee(e, t) || ce(e, t),
-				re = (e, t) => {
+				re = (e, t) => te(e, t) || ae(e, t),
+				se = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -21616,7 +21621,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						const r = te(e, {
+						const r = ne(e, {
 							pageLayer: n
 						});
 						return r ? e.postFlair[r] : null
@@ -21625,56 +21630,56 @@
 					});
 					return r ? r.displaySettings.position : E.b.Right
 				},
-				se = e => !!(e && e.routeMatch && i.pb.has(e.routeMatch.route.meta.name)) || V(e) || (e => !(!e || !e.meta || e.meta.name !== i.yb.COLLECTION_COMMENTS || f.b[e.urlParams.routePrefix] !== f.a.PROFILE))(e),
-				oe = e => {
+				oe = e => !!(e && e.routeMatch && i.pb.has(e.routeMatch.route.meta.name)) || H(e) || (e => !(!e || !e.meta || e.meta.name !== i.yb.COLLECTION_COMMENTS || f.b[e.urlParams.routePrefix] !== f.a.PROFILE))(e),
+				ie = e => {
 					const t = e && e.urlParams;
 					return t ? t.profileName : void 0
 				},
-				ie = e => {
-					if (e && e.routeMatch && M(e) === i.yb.PROFILE_PRIVATE) return e.routeMatch.match.params.listingType
-				},
-				ce = (e, t) => {
-					let {
-						pageLayer: n
-					} = t;
-					const r = V(n) ? Z(e, {
-						pageLayer: n
-					}) : oe(n);
-					return r ? Object(C.j)(e, {
-						profileName: r
-					}) : null
+				ce = e => {
+					if (e && e.routeMatch && F(e) === i.yb.PROFILE_PRIVATE) return e.routeMatch.match.params.listingType
 				},
 				ae = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = V(n) ? Z(e, {
+					const r = H(n) ? ee(e, {
 						pageLayer: n
-					}) : oe(n);
-					return r ? Object(w.db)(e, {
-						userName: r
+					}) : ie(n);
+					return r ? Object(C.j)(e, {
+						profileName: r
 					}) : null
 				},
 				de = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = ce(e, {
+					const r = H(n) ? ee(e, {
+						pageLayer: n
+					}) : ie(n);
+					return r ? Object(w.db)(e, {
+						userName: r
+					}) : null
+				},
+				ue = (e, t) => {
+					let {
+						pageLayer: n
+					} = t;
+					const r = ae(e, {
 							pageLayer: n
 						}),
 						s = Object(w.i)(e),
 						o = s && (s.username ? s.username : s.displayText);
 					return !(!o || !r || o !== r.name)
 				},
-				ue = (e, t) => {
+				le = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					if (de(e, {
+					if (ue(e, {
 							pageLayer: n
 						})) return m
 				},
-				le = (e, t) => {
+				be = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -21684,18 +21689,18 @@
 					} = n;
 					return e.platform.referrers[r]
 				},
-				be = e => e ? e.queryParams : {},
-				pe = e => {
-					const t = M(e);
+				pe = e => e ? e.queryParams : {},
+				fe = e => {
+					const t = F(e);
 					if (e && t && t === i.yb.SEARCH_RESULTS) return e.queryParams[b.b] ? Object(d.a)(e.queryParams[b.b]) : Object(d.a)(e.queryParams[b.o])
 				},
-				fe = e => e ? e.url : "",
-				me = (e, t) => {
+				me = e => e ? e.url : "",
+				Oe = (e, t) => {
 					let n, {
 						pageLayer: r
 					} = t;
 					if (void 0 !== (n = void 0 === r ? e.platform.currentPage : r)) {
-						const t = M(n);
+						const t = F(n);
 						if (t === i.yb.POST_CREATION) return p.g.Large;
 						if (t === i.yb.SUBREDDIT_WIKI) return p.g.Classic;
 						if (t === i.yb.EXPLORE) return p.g.Classic;
@@ -21706,7 +21711,7 @@
 								let {
 									pageLayer: n
 								} = t;
-								const r = te(e, {
+								const r = ne(e, {
 									pageLayer: n
 								});
 								if (r) {
@@ -21720,31 +21725,31 @@
 							if (t) return p.b[t]
 						}
 						if (i.pb.has(t)) {
-							return Oe(e, {
+							return ge(e, {
 								pageLayer: r
 							}) ? t === i.yb.PROFILE_POSTS || t === i.yb.PROFILE_PRIVATE ? p.g.Classic : p.g.Compact : t === i.yb.PROFILE_OVERVIEW ? p.g.Large : p.g.Classic
 						}
 					}
 					return e.user.prefs.layout ? p.b[e.user.prefs.layout] : p.g.Classic
 				},
-				Oe = (e, t) => {
+				ge = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
 					return !!Object(P.t)(e) || !(!n || !n.meta) && n.meta.name === i.yb.MODQUEUE_PAGES
 				},
-				ge = (e, t) => {
+				_e = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
-					const r = te(e, {
+					const r = ne(e, {
 						pageLayer: n
 					});
 					if (!r) return !0;
 					const s = e.subreddits.about[r];
 					return !s || s.showMedia
 				},
-				_e = Object(a.a)((e, t) => {
+				ye = Object(a.a)((e, t) => {
 					let {
 						pageLayer: n,
 						postId: r,
@@ -21754,7 +21759,7 @@
 					if (!o) return;
 					const c = o.flair.find(e => Object(O.p)(e.type));
 					if (!c || void 0 === c.templateId) return;
-					const a = te(e, {
+					const a = ne(e, {
 						pageLayer: n
 					});
 					if (!a || a !== o.belongsTo.id) return;
@@ -21774,17 +21779,17 @@
 					}
 					return Object.keys(l).filter(e => l[e] !== I.c).reduce((e, t) => (e[t] = l[t], e), {})
 				}),
-				ye = (e, t) => {
+				je = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
 					return n ? h(e, n) : void 0
 				},
-				je = e => {
-					if (e) return K(e) ? e.urlParams.draftId : e.queryParams.draft
+				he = e => {
+					if (e) return W(e) ? e.urlParams.draftId : e.queryParams.draft
 				},
-				he = e => e && e.queryParams || {},
-				Ee = (e, t) => {
+				Ee = e => e && e.queryParams || {},
+				Ie = (e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -21793,7 +21798,7 @@
 						collectionId: r
 					}) : void 0
 				},
-				Ie = Object(o.a)(Z, e => e.categories.models, e => e.subreddits.models, e => e.subreddits.byCategory, (e, t, n, r) => {
+				Se = Object(o.a)(ee, e => e.categories.models, e => e.subreddits.models, e => e.subreddits.byCategory, (e, t, n, r) => {
 					if (!e) return;
 					const o = Object.keys(t).find(t => {
 						const o = r[t];
@@ -61096,7 +61101,7 @@
 					return null
 				},
 				Ae = (e, t) => {
-					const n = Object(E.K)(e, {});
+					const n = Object(E.L)(e, {});
 					let r;
 					Object(G.g)(e) && (r = Object(G.h)(e) ? "lightbox" : "post_detail");
 					let s = "default";
@@ -62328,4 +62333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.2b88712ee9c0045baf68.js.map
+//# sourceMappingURL=Governance~Reddit.74e5cd7d00faee81edf0.js.map
