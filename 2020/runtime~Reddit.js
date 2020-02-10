@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f6d87833f423b4394454.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.12bfed33ce078b2f224d.js
+// Retrieved at 2/10/2020, 5:50:19 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -911,7 +911,7 @@
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "714733dc9229d7dd2beb",
 						MembershipPaywallPage: "7640e5f1507f89da4f5f",
 						"vendors~Chat~RedesignChat": "0ad8dfea7190509d4244",
-						"Chat~RedesignChat": "e66b4a4adcfeb1e8b58b",
+						"Chat~RedesignChat": "82b5ae127a2652846ad6",
 						RedesignChat: "be2b6dfe4bd0ce04991c",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit": "0fbb841463155b07b288",
 						Subreddit: "baae0bd54a9ba068ec42",
@@ -1112,4 +1112,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.f6d87833f423b4394454.js.map
+//# sourceMappingURL=runtime~Reddit.12bfed33ce078b2f224d.js.map

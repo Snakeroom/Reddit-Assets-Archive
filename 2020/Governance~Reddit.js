@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b525e8f7be8d519877c6.js
-// Retrieved at 2/10/2020, 2:30:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.fd9b790dccf81c529bb4.js
+// Retrieved at 2/10/2020, 5:50:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -61116,27 +61116,26 @@
 				},
 				Re = e => {
 					const t = s.a.get(f.f),
-						n = e.user.sessionTracker,
-						r = (t || n).split("."),
-						o = r[0],
-						i = parseInt(r[2], 10);
-					let c = {};
+						n = (e.user.sessionTracker || t).split("."),
+						r = n[0],
+						o = parseInt(n[2], 10);
+					let i = {};
 					const {
-						sessionReferrer: a
+						sessionReferrer: c
 					} = e.platform;
-					if (a) {
+					if (c) {
 						const {
 							hostname: e
-						} = l.a.parse(a);
-						c = {
+						} = l.a.parse(c);
+						i = {
 							referrerDomain: e,
-							referrerUrl: a
+							referrerUrl: c
 						}
 					}
 					return Object.assign({
-						id: o,
-						createdTimestamp: i
-					}, c)
+						id: r,
+						createdTimestamp: o
+					}, i)
 				},
 				xe = e => {
 					const {
@@ -62335,4 +62334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.b525e8f7be8d519877c6.js.map
+//# sourceMappingURL=Governance~Reddit.fd9b790dccf81c529bb4.js.map
