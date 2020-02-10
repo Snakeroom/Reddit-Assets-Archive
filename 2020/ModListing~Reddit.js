@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.45917c9cc52745a4bf97.js
-// Retrieved at 2/6/2020, 4:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.c42c7e82bc341c3221c3.js
+// Retrieved at 2/10/2020, 12:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2305,6 +2305,7 @@
 				body: "_1vyLCp-v-tE5QvZovwrASa",
 				Sidebar: "_1BFbVxT49QnrAN3fqGZ1z8",
 				sidebar: "_1BFbVxT49QnrAN3fqGZ1z8",
+				defaultLayout: "_1tvThPWQpORoc2taKebHxs",
 				"m-collectionLayout": "K1OCXipJxqOt01sOdQXEx",
 				mCollectionLayout: "K1OCXipJxqOt01sOdQXEx",
 				outerContainer: "qYj03fU5CXf5t2Fc5iSvg",
@@ -2391,7 +2392,7 @@
 						marginTop: t
 					},
 					r = e.sidebar && o.a.createElement(j, {
-						className: e.isCollectionLayout ? x.a["m-collectionLayout"] : void 0,
+						className: e.isCollectionLayout ? x.a["m-collectionLayout"] : x.a.defaultLayout,
 						style: n
 					}, e.sidebar),
 					i = o.a.createElement(s.a, {
@@ -2502,4 +2503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.45917c9cc52745a4bf97.js.map
+//# sourceMappingURL=ModListing~Reddit.c42c7e82bc341c3221c3.js.map

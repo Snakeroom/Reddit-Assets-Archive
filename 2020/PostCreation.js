@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.29976d6f5479132463d7.js
-// Retrieved at 2/6/2020, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4ae3b79029fc67c9a03c.js
+// Retrieved at 2/10/2020, 12:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -23611,6 +23611,7 @@
 				body: "_1vyLCp-v-tE5QvZovwrASa",
 				Sidebar: "_1BFbVxT49QnrAN3fqGZ1z8",
 				sidebar: "_1BFbVxT49QnrAN3fqGZ1z8",
+				defaultLayout: "_1tvThPWQpORoc2taKebHxs",
 				"m-collectionLayout": "K1OCXipJxqOt01sOdQXEx",
 				mCollectionLayout: "K1OCXipJxqOt01sOdQXEx",
 				outerContainer: "qYj03fU5CXf5t2Fc5iSvg",
@@ -23697,7 +23698,7 @@
 						marginTop: t
 					},
 					o = e.sidebar && s.a.createElement(j, {
-						className: e.isCollectionLayout ? C.a["m-collectionLayout"] : void 0,
+						className: e.isCollectionLayout ? C.a["m-collectionLayout"] : C.a.defaultLayout,
 						style: n
 					}, e.sidebar),
 					a = s.a.createElement(r.a, {
@@ -28419,4 +28420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.29976d6f5479132463d7.js.map
+//# sourceMappingURL=PostCreation.4ae3b79029fc67c9a03c.js.map

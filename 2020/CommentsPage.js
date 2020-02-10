@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.d03c0803419fb51e1a52.js
-// Retrieved at 2/9/2020, 5:20:34 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1b271d262a83f1113002.js
+// Retrieved at 2/10/2020, 12:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "reddit-components-ClassicPost~reddit-components-CompactPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -780,7 +780,8 @@
 				galleryThumbnailPlaceholder: "_3HsMbUHP3qlXSnSNv10i__",
 				thumbnailContainerClassName: "_22Rd8vdnxySvffllxDpbGs",
 				galleryPostPlaceholderThumbnailOverride: "_2XLoayiHEZSUCfwO0UAbso",
-				commonThumbnailOverride: "_2tS9NgDPCzFiHnYMa3o1SV"
+				commonThumbnailOverride: "_2tS9NgDPCzFiHnYMa3o1SV",
+				defaultPostOverflowMenu: "Q8lxJgZLCmNGj_Ep4EMmD"
 			}
 		},
 		"./src/reddit/components/Collection/index.m.less": function(e, t, s) {
@@ -917,6 +918,7 @@
 						post: b,
 						language: l
 					}), g && o.a.createElement(M.a, {
+						className: V.a.defaultPostOverflowMenu,
 						onRemoveClick: p,
 						dropdownId: "collection-post-item-".concat(b.id),
 						isFutureEvent: r,
@@ -15203,6 +15205,7 @@
 				mIsFakeOverlay: "_2gEUIJsfk7ZZ0euRwRyv08",
 				mNotCollectionLayout: "Dx3UxiK86VcfkFQVHNXNi",
 				lightboxSidebar: "_2Xq-4oyrEvHjL5U_EeMnK8",
+				defaultLightboxSidebar: "_20b4i5iUhjZQqDZ1BM_Q-9",
 				fakeOverlay: "_1QwQLdEXq0cZZb7vcte4KK",
 				fakeOverlayContainer: "_3OGqXkiUb_0ZMlksb26boO",
 				fakeOverlayContent: "_3KaECfUAGLfWQPO5eNjMNl",
@@ -15239,6 +15242,7 @@
 				l = e => o.a.createElement("div", {
 					className: Object(r.a)(i.a.lightboxSidebar, {
 						[i.a.mIsFakeOverlay]: e.isFakeOverlay,
+						[i.a.defaultLightboxSidebar]: !e.isCollectionLayout,
 						[i.a.mIsCollectionLayout]: e.isCollectionLayout
 					})
 				}, e.children);
@@ -16462,4 +16466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.d03c0803419fb51e1a52.js.map
+//# sourceMappingURL=CommentsPage.1b271d262a83f1113002.js.map
