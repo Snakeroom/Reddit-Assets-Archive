@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.74e5cd7d00faee81edf0.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b525e8f7be8d519877c6.js
+// Retrieved at 2/10/2020, 2:30:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -657,24 +657,26 @@
 		"./src/lib/search/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "b", (function() {
-				return o
-			})), n.d(t, "c", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "c", (function() {
+				return a
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.replace.js");
-			var r = n("./src/lib/addQueryParams/index.ts");
-			const s = function() {
+			var r = n("./node_modules/decode-uri-component/index.js"),
+				s = n.n(r),
+				o = n("./src/lib/addQueryParams/index.ts");
+			const i = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
-					return decodeURIComponent(e).replace(/\+/g, " ")
+					return s()(e)
 				},
-				o = function() {
+				c = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 					return encodeURIComponent(e)
 				},
-				i = (e, t, n) => {
-					return Object(r.a)(e, n).replace(/(\?|&)(q=)([^&]*)/, (e, n, r) => e ? "".concat(n).concat(r).concat(t) : e)
+				a = (e, t, n) => {
+					return Object(o.a)(e, n).replace(/(\?|&)(q=)([^&]*)/, (e, n, r) => e ? "".concat(n).concat(r).concat(t) : e)
 				}
 		},
 		"./src/lib/timezone/index.ts": function(e, t, n) {
@@ -62333,4 +62335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.74e5cd7d00faee81edf0.js.map
+//# sourceMappingURL=Governance~Reddit.b525e8f7be8d519877c6.js.map
