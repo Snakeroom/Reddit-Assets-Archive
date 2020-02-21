@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.445e0477696fbef01a1c.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b93e0ffcf76fc6f3bf1e.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -357,56 +357,57 @@
 				m = r("./src/reddit/components/CallToActionButton/index.tsx"),
 				h = r("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
 				b = r("./src/reddit/components/DiscoveryUnit/InFeedChaining/Loader.tsx"),
-				f = r("./src/reddit/components/FlairWrapper/index.tsx"),
-				g = r("./src/reddit/components/Flatlist/index.tsx"),
-				x = r("./src/reddit/components/JSAPIContainers/index.tsx"),
-				y = r("./src/reddit/components/ModModeReports/index.tsx"),
-				v = r("./src/reddit/components/ModModeReports/helpers.ts"),
-				P = r("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				S = r("./src/reddit/components/PostContainer/index.tsx"),
-				O = r("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				C = r("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				E = r("./src/reddit/components/PostTitle/index.tsx"),
-				_ = r("./src/reddit/components/PostTopLine/index.tsx"),
-				w = r("./src/reddit/components/PostTopMeta/index.tsx"),
-				j = r("./src/reddit/components/SourceLink/index.tsx"),
-				T = r("./src/reddit/contexts/InsideOverlay.tsx"),
-				I = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				N = r("./src/reddit/controls/OutboundLink/styled.tsx"),
-				k = r("./src/reddit/helpers/canRenderThumbnail.ts"),
-				M = r("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				R = r("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				A = r("./src/reddit/helpers/styles/mixins/index.tsx"),
-				L = r("./src/reddit/models/Vote/index.ts"),
-				F = r("./src/reddit/selectors/experiments/categories.ts"),
-				B = r("./src/reddit/selectors/inFeedChaining.ts"),
-				D = r("./src/reddit/selectors/moderatorPermissions.ts"),
-				U = r("./src/reddit/selectors/postFlair.ts"),
-				W = r("./src/reddit/selectors/posts.ts"),
-				V = r("./src/reddit/selectors/user.ts"),
-				z = r("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
-				G = r("./src/reddit/helpers/styles/mixins/index.m.less"),
-				H = r.n(G),
-				K = r("./src/reddit/components/MediumPost/index.m.less"),
-				Z = r.n(K);
-			const J = Object(n.b)(() => Object(i.c)({
-				crosspost: W.c,
-				currentUser: V.i,
-				flairStyleTemplate: I.P,
-				hideNSFWPref: V.y,
-				isActive: W.g,
-				isCurrentUserProfilePost: W.h,
-				isLoggedIn: V.G,
-				isPostChainDismissed: B.c,
-				isPostChained: B.d,
-				language: V.P,
-				moderatorPermissions: D.i,
-				modModeEnabled: I.N,
-				post: W.I,
-				showEditFlair: U.a,
-				showMedia: I.r,
-				isInCategoriesExperiment: F.a,
-				subredditOrProfile: W.U
+				f = r("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
+				g = r("./src/reddit/components/FlairWrapper/index.tsx"),
+				x = r("./src/reddit/components/Flatlist/index.tsx"),
+				y = r("./src/reddit/components/JSAPIContainers/index.tsx"),
+				v = r("./src/reddit/components/ModModeReports/index.tsx"),
+				P = r("./src/reddit/components/ModModeReports/helpers.ts"),
+				S = r("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				O = r("./src/reddit/components/PostContainer/index.tsx"),
+				C = r("./src/reddit/components/PostOverflowMenu/index.tsx"),
+				E = r("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				_ = r("./src/reddit/components/PostTitle/index.tsx"),
+				w = r("./src/reddit/components/PostTopLine/index.tsx"),
+				j = r("./src/reddit/components/PostTopMeta/index.tsx"),
+				T = r("./src/reddit/components/SourceLink/index.tsx"),
+				I = r("./src/reddit/contexts/InsideOverlay.tsx"),
+				N = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				k = r("./src/reddit/controls/OutboundLink/styled.tsx"),
+				M = r("./src/reddit/helpers/canRenderThumbnail.ts"),
+				R = r("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				A = r("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				L = r("./src/reddit/helpers/styles/mixins/index.tsx"),
+				F = r("./src/reddit/models/Vote/index.ts"),
+				B = r("./src/reddit/selectors/experiments/categories.ts"),
+				D = r("./src/reddit/selectors/inFeedChaining.ts"),
+				U = r("./src/reddit/selectors/moderatorPermissions.ts"),
+				W = r("./src/reddit/selectors/postFlair.ts"),
+				V = r("./src/reddit/selectors/posts.ts"),
+				z = r("./src/reddit/selectors/user.ts"),
+				G = r("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
+				H = r("./src/reddit/helpers/styles/mixins/index.m.less"),
+				K = r.n(H),
+				Z = r("./src/reddit/components/MediumPost/index.m.less"),
+				J = r.n(Z);
+			const q = Object(n.b)(() => Object(i.c)({
+				crosspost: V.c,
+				currentUser: z.i,
+				flairStyleTemplate: N.P,
+				hideNSFWPref: z.y,
+				isActive: V.g,
+				isCurrentUserProfilePost: V.h,
+				isLoggedIn: z.G,
+				isPostChainDismissed: D.c,
+				isPostChained: D.d,
+				language: z.P,
+				moderatorPermissions: U.i,
+				modModeEnabled: N.N,
+				post: V.I,
+				showEditFlair: W.a,
+				showMedia: N.r,
+				isInCategoriesExperiment: B.a,
+				subredditOrProfile: V.U
 			}), (e, t) => {
 				let {
 					listingKey: r,
@@ -421,14 +422,14 @@
 							postId: s
 						}))
 					},
-					handleVote: t => t === L.a.upvoted ? e(Object(l.Q)(s)) : e(Object(l.r)(s)),
+					handleVote: t => t === F.a.upvoted ? e(Object(l.Q)(s)) : e(Object(l.r)(s)),
 					onIgnoreReports: () => e(Object(l.O)(s)),
 					onOpenReportsDropdown: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				}
 			});
-			t.default = J(Object(T.b)(e => {
+			t.default = q(Object(I.b)(e => {
 				const {
 					chainPost: t,
 					className: r,
@@ -438,155 +439,158 @@
 					flairStyleTemplate: c,
 					hideNSFWPref: l,
 					inSubredditOrProfile: u = !1,
-					isCheckboxSelected: T,
-					isCommentsPage: I,
-					isCurrentUserProfilePost: L,
-					isFrontpage: F,
-					isLoggedIn: B,
-					isOverlay: D,
-					isPostChainDismissed: U,
-					isPostChained: W,
-					isTopicPage: V,
-					language: G,
-					listingKey: K,
-					listingName: J,
-					moderatorPermissions: q,
-					modModeEnabled: X,
-					onClickPost: Y,
-					onIgnoreReports: Q,
-					onOpenReportsDropdown: $,
-					post: ee,
-					redditStyle: te,
-					showBulkActionCheckbox: re,
-					showEditFlair: oe,
-					showMedia: se,
-					sendEvent: ne,
-					subredditOrProfile: ie,
-					toggleCheckbox: ae
-				} = e, de = te ? void 0 : c, ce = Object(R.a)(q), le = X && ce, ue = Object(M.a)(q), pe = Object(v.c)(ee), me = Object(k.a)(ee), he = u && !se, be = he && !!ee.source && !o, fe = !(F && B || L), ge = s.a.createElement(S.a, {
-					className: Object(d.a)(Z.a.container, r, H.a.largeAndMediumPostStyles, H.a.largeAndMediumActiveStyles, Object(A.a)(e), {
-						[H.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
+					isCheckboxSelected: I,
+					isCommentsPage: N,
+					isCurrentUserProfilePost: F,
+					isFrontpage: B,
+					isLoggedIn: D,
+					isOverlay: U,
+					isPostChainDismissed: W,
+					isPostChained: V,
+					isTopicPage: z,
+					language: H,
+					listingKey: Z,
+					listingName: q,
+					moderatorPermissions: X,
+					modModeEnabled: Y,
+					onClickPost: Q,
+					onIgnoreReports: $,
+					onOpenReportsDropdown: ee,
+					post: te,
+					redditStyle: re,
+					showBulkActionCheckbox: oe,
+					showEditFlair: se,
+					showMedia: ne,
+					sendEvent: ie,
+					subredditOrProfile: ae,
+					toggleCheckbox: de
+				} = e, ce = re ? void 0 : c, le = Object(A.a)(X), ue = Y && le, pe = Object(R.a)(X), me = Object(P.c)(te), he = Object(M.a)(te), be = u && !ne, fe = be && !!te.source && !o, ge = !(B && D || z || F), xe = s.a.createElement(O.a, {
+					className: Object(d.a)(J.a.container, r, K.a.largeAndMediumPostStyles, K.a.largeAndMediumActiveStyles, Object(L.a)(e), {
+						[K.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 					}),
-					isOverlay: D,
-					style: Object(A.b)(e.flairStyleTemplate),
-					post: ee,
-					onClick: Y,
+					isOverlay: U,
+					style: Object(L.b)(e.flairStyleTemplate),
+					post: te,
+					onClick: Q,
 					onPostContentClick: t,
 					eventFactory: i
-				}, s.a.createElement(C.a, {
-					model: ee,
+				}, s.a.createElement(E.a, {
+					model: te,
 					handleVote: e.handleVote,
-					showBulkActionCheckbox: re,
-					isCheckboxSelected: T,
-					toggleCheckbox: ae,
-					flairStyleTemplate: de,
-					redditStyle: te
-				}), s.a.createElement(P.a, {
-					className: Z.a.backgroundWrapper,
+					showBulkActionCheckbox: oe,
+					isCheckboxSelected: I,
+					toggleCheckbox: de,
+					flairStyleTemplate: ce,
+					redditStyle: re
+				}), s.a.createElement(S.a, {
+					className: J.a.backgroundWrapper,
 					"data-click-id": "background",
-					flairStyleTemplate: de,
-					post: ee,
-					redditStyle: te
-				}, s.a.createElement("article", {
-					className: Z.a.mainBody
+					flairStyleTemplate: ce,
+					post: te,
+					redditStyle: re
+				}, s.a.createElement(f.a, {
+					language: H,
+					post: te
+				}), s.a.createElement("article", {
+					className: J.a.mainBody
 				}, s.a.createElement("div", {
-					className: Z.a.content,
+					className: J.a.content,
 					"data-click-id": "body"
-				}, s.a.createElement(_.a, {
-					className: Z.a.postTopLine,
+				}, s.a.createElement(w.a, {
+					className: J.a.postTopLine,
 					hideNSFWPref: l,
-					iconClassName: Z.a.postTopLineIcon,
+					iconClassName: J.a.postTopLineIcon,
 					inSubredditOrProfile: u,
-					isCommentsPage: I,
-					isCurrentUserProfilePost: L,
-					isOverlay: !!D,
-					isTopicPage: !!V,
-					language: G,
-					post: ee,
+					isCommentsPage: N,
+					isCurrentUserProfilePost: F,
+					isOverlay: !!U,
+					isTopicPage: !!z,
+					language: H,
+					post: te,
 					shouldShowSubscribeButton: !1,
-					showCornerOutboundLink: be,
-					showSubreddit: !u && !ee.isSponsored,
+					showCornerOutboundLink: fe,
+					showSubreddit: !u && !te.isSponsored,
 					showSubredditIcon: !0,
-					subredditOrProfile: ie
-				}), s.a.createElement(E.c, {
-					className: Z.a.postTitle,
-					post: ee,
-					redditStyle: te,
-					size: E.b.Large,
-					titleColor: de && de.postTitleColor,
-					isOverlay: D
-				}), I && (ee.flair && ee.flair.length > 0 || e.isInCategoriesExperiment) && s.a.createElement(f.a, {
-					className: I ? Z.a.leftPadding : null,
-					disableFlair: !I,
-					post: ee,
-					sendEvent: ne,
-					showCategoryTag: e.isInCategoriesExperiment && I
-				}), ee.source && !ee.isSponsored && !o && s.a.createElement(j.a, {
-					className: Z.a.sourceLink,
-					isCommentsPage: I,
-					post: ee
-				})), !he && me && s.a.createElement(z.a, {
-					crosspost: o ? ee : void 0,
-					hasModPostPerms: ce,
-					isCommentsPage: I,
-					isOverlay: D,
-					modModeEnabled: X,
-					post: o || ee,
-					redditStyle: te,
-					shouldShowSubscribeButton: fe && !u,
-					subredditOrProfile: ie,
-					templatePlaceholderImage: de && de.postPlaceholderImage
-				})), ee.source && ee.source.url && ee.isSponsored && s.a.createElement(p.a, {
-					className: Z.a.adLinkWrapper
-				}, s.a.createElement(N.a, {
-					href: ee.source.url.replace(a.a.redditUrl, ""),
-					isSponsored: ee.isSponsored,
-					source: ee.source
-				}, ee.source.displayText), ee.callToAction && s.a.createElement(m.a, {
-					href: ee.source.url.replace(a.a.redditUrl, ""),
-					isSponsored: ee.isSponsored,
-					source: ee.source,
+					subredditOrProfile: ae
+				}), s.a.createElement(_.c, {
+					className: J.a.postTitle,
+					post: te,
+					redditStyle: re,
+					size: _.b.Large,
+					titleColor: ce && ce.postTitleColor,
+					isOverlay: U
+				}), N && (te.flair && te.flair.length > 0 || e.isInCategoriesExperiment) && s.a.createElement(g.a, {
+					className: N ? J.a.leftPadding : null,
+					disableFlair: !N,
+					post: te,
+					sendEvent: ie,
+					showCategoryTag: e.isInCategoriesExperiment && N
+				}), te.source && !te.isSponsored && !o && s.a.createElement(T.a, {
+					className: J.a.sourceLink,
+					isCommentsPage: N,
+					post: te
+				})), !be && he && s.a.createElement(G.a, {
+					crosspost: o ? te : void 0,
+					hasModPostPerms: le,
+					isCommentsPage: N,
+					isOverlay: U,
+					modModeEnabled: Y,
+					post: o || te,
+					redditStyle: re,
+					shouldShowSubscribeButton: ge && !u,
+					subredditOrProfile: ae,
+					templatePlaceholderImage: ce && ce.postPlaceholderImage
+				})), te.source && te.source.url && te.isSponsored && s.a.createElement(p.a, {
+					className: J.a.adLinkWrapper
+				}, s.a.createElement(k.a, {
+					href: te.source.url.replace(a.a.redditUrl, ""),
+					isSponsored: te.isSponsored,
+					source: te.source
+				}, te.source.displayText), te.callToAction && s.a.createElement(m.a, {
+					href: te.source.url.replace(a.a.redditUrl, ""),
+					isSponsored: te.isSponsored,
+					source: te.source,
 					isNotCardView: !0
-				}, ee.callToAction)), X && ce && pe && s.a.createElement(y.a, {
-					className: Z.a.modModeReports,
-					language: G,
-					onIgnoreReports: Q,
-					reportable: ee
-				}), s.a.createElement(x.d, {
-					postId: ee.id
+				}, te.callToAction)), Y && le && me && s.a.createElement(v.a, {
+					className: J.a.modModeReports,
+					language: H,
+					onIgnoreReports: $,
+					reportable: te
+				}), s.a.createElement(y.d, {
+					postId: te.id
 				}), s.a.createElement("div", {
-					className: Z.a.flatlistContainer
+					className: J.a.flatlistContainer
 				}, s.a.createElement(h.a, {
-					className: Z.a.horizontalVotes,
+					className: J.a.horizontalVotes,
 					compact: !1,
-					flairStyleTemplate: de,
-					redditStyle: te,
-					model: ee,
+					flairStyleTemplate: ce,
+					redditStyle: re,
+					model: te,
 					onVoteClick: e.handleVote
-				}), s.a.createElement(g.c, {
+				}), s.a.createElement(x.c, {
 					currentUser: n,
-					hasModFlairPerms: ue,
-					hasModPostPerms: ce,
-					isOverlay: !!D,
-					language: G,
-					modModeEnabled: X,
-					onIgnoreReports: Q,
-					onOpenReportsDropdown: $,
-					post: ee,
-					showEditFlair: oe,
-					tooltipType: D ? w.c.Lightbox : void 0,
-					useFlatlistBreakpoints: Object(O.h)({
-						editPost: !le,
-						save: !le,
+					hasModFlairPerms: pe,
+					hasModPostPerms: le,
+					isOverlay: !!U,
+					language: H,
+					modModeEnabled: Y,
+					onIgnoreReports: $,
+					onOpenReportsDropdown: ee,
+					post: te,
+					showEditFlair: se,
+					tooltipType: U ? j.c.Lightbox : void 0,
+					useFlatlistBreakpoints: Object(C.h)({
+						editPost: !ue,
+						save: !ue,
 						hide: !1,
 						report: !1
 					})
 				}))));
-				return s.a.createElement(s.a.Fragment, null, ge, W && !U && s.a.createElement(b.a, {
-					className: Z.a.chain,
-					listingKey: K,
-					listingName: J,
-					postId: ee.id
+				return s.a.createElement(s.a.Fragment, null, xe, V && !W && s.a.createElement(b.a, {
+					className: J.a.chain,
+					listingKey: Z,
+					listingName: q,
+					postId: te.id
 				}))
 			}))
 		},
@@ -773,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.445e0477696fbef01a1c.js.map
+//# sourceMappingURL=reddit-components-MediumPost.b93e0ffcf76fc6f3bf1e.js.map

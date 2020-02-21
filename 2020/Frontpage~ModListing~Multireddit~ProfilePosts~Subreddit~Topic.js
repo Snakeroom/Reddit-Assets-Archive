@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2d85da5bf6cec1ae025d.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.73c910c30866e8826c97.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
@@ -263,7 +263,7 @@
 							postsById: C
 						} = this.props, k = C[e], v = k.crosspostRootId && C[k.crosspostRootId] ? C[k.crosspostRootId] : k;
 						k.crosspostRootId && !C[k.crosspostRootId] && b.c.withScope(e => {
-							e.setExtra("errorType", m.p.API), e.setExtra("description", "Post ".concat(k.id, " is crosspost of ").concat(k.crosspostRootId, ", but ") + "".concat(k.crosspostRootId, " details are missing in the state")), b.c.captureMessage("Crosspost parent details are missing")
+							e.setExtra("errorType", m.q.API), e.setExtra("description", "Post ".concat(k.id, " is crosspost of ").concat(k.crosspostRootId, ", but ") + "".concat(k.crosspostRootId, " details are missing in the state")), b.c.captureMessage("Crosspost parent details are missing")
 						});
 						const O = this.props.postComponentForLayout({
 								isCrosspost: !!k.crosspostRootId,
@@ -414,7 +414,7 @@
 					}, a.a.createElement(k.a, {
 						className: M.a.seeMorePostsText,
 						to: Object(p.a)(f, {
-							type: m.Kb.Posts
+							type: m.Lb.Posts
 						})
 					}, a.a.createElement(x.a, {
 						msgId: "search.seeMorePosts"
@@ -642,7 +642,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = n()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.F), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -940,4 +940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2d85da5bf6cec1ae025d.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.73c910c30866e8826c97.js.map

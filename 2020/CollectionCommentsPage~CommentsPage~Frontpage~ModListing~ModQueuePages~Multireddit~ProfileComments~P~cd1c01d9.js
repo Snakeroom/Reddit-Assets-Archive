@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.ab20d0a259a3a826484d.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.f4679b4cc28434af5acd.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -347,10 +347,10 @@
 				O = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				j = s.n(O),
 				L = s("./src/reddit/components/LargePost/placeholder.m.less"),
-				_ = s.n(L);
+				E = s.n(L);
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -378,13 +378,13 @@
 						voteState: C.a.notVoted
 					};
 					return i.a.createElement("div", {
-						className: _.a.emptyVerticalVotes
-					}, i.a.createElement(x.d, E({
+						className: E.a.emptyVerticalVotes
+					}, i.a.createElement(x.d, _({
 						key: "u"
 					}, t)), i.a.createElement("div", {
-						className: _.a.emptyScore,
+						className: E.a.emptyScore,
 						key: "s"
-					}), i.a.createElement(x.c, E({
+					}), i.a.createElement(x.c, _({
 						key: "d"
 					}, t)))
 				},
@@ -392,7 +392,7 @@
 					var {
 						isLoading: t
 					} = e, s = w(e, ["isLoading"]);
-					return i.a.createElement(v.b, E({
+					return i.a.createElement(v.b, _({
 						className: Object(y.a)({
 							isLoading: t
 						})
@@ -409,35 +409,35 @@
 				}, i.a.createElement(g.b, {
 					key: "a"
 				}, i.a.createElement(S, n)), i.a.createElement("div", {
-					className: _.a.content,
+					className: E.a.content,
 					key: "b"
 				}, i.a.createElement("div", {
-					className: _.a.topLine,
+					className: E.a.topLine,
 					key: "ba"
 				}, n.isFakeSubreddit && i.a.createElement(k, {
 					key: "baa",
 					isLoading: !1
 				}), i.a.createElement("div", {
 					key: "bab",
-					className: Object(h.a)(_.a.topMetaOne, Object(y.b)(n))
+					className: Object(h.a)(E.a.topMetaOne, Object(y.b)(n))
 				}), i.a.createElement("div", {
 					key: "bac",
-					className: Object(h.a)(_.a.topMetaTwo, Object(y.b)(n))
+					className: Object(h.a)(E.a.topMetaTwo, Object(y.b)(n))
 				})), i.a.createElement("div", {
 					key: "bb",
-					className: Object(h.a)(_.a.title, Object(y.b)(n))
+					className: Object(h.a)(E.a.title, Object(y.b)(n))
 				})), i.a.createElement("div", {
 					key: "c",
-					className: Object(h.a)(_.a.media, Object(y.a)(n))
+					className: Object(h.a)(E.a.media, Object(y.a)(n))
 				}), i.a.createElement("div", {
-					className: _.a.content,
+					className: E.a.content,
 					key: "d"
 				}, i.a.createElement("div", {
-					className: _.a.flatlist
+					className: E.a.flatlist
 				}, i.a.createElement("div", {
-					className: Object(h.a)(_.a.flatlistItemOne, Object(y.b)(n))
+					className: Object(h.a)(E.a.flatlistItemOne, Object(y.b)(n))
 				}), i.a.createElement("div", {
-					className: Object(h.a)(_.a.flatListItemTwo, Object(y.b)(n))
+					className: Object(h.a)(E.a.flatListItemTwo, Object(y.b)(n))
 				}))))
 			}));
 			const A = {
@@ -449,11 +449,11 @@
 			function V(e) {
 				return A[e]
 			}
-			const D = .1,
-				T = Object(l.c)({
+			const T = .1,
+				D = Object(l.c)({
 					loadingPostComponentForLayout: () => V
 				}),
-				F = Object(d.b)(T);
+				F = Object(d.b)(D);
 			class U extends i.a.Component {
 				constructor() {
 					super(...arguments), this.mounted = !1, this.state = {
@@ -461,7 +461,7 @@
 					}, this.setWrapperRef = e => {
 						e !== this.wrapperRef && (this.wrapperRef && p.b(this.wrapperRef), e && p.a(e, this.updateVisibleState)), this.wrapperRef = e
 					}, this.updateVisibleState = e => {
-						const t = e.intersectionRatio >= D;
+						const t = e.intersectionRatio >= T;
 						m.a.write(() => {
 							this.mounted && this.setState(e => e.visible !== t ? {
 								visible: t
@@ -694,15 +694,15 @@
 					language: a
 				} = e;
 				switch (t.type) {
-					case n.D.AUTHORIZATION_ERROR:
+					case n.E.AUTHORIZATION_ERROR:
 						return s ? Object(o.a)(a, "error.type.notLoggedIn") : Object(o.a)(a, "error.type.notAuthorized");
-					case n.D.VALIDATION_ERROR:
+					case n.E.VALIDATION_ERROR:
 						return Object(o.a)(a, "error.type.validation");
-					case n.D.NOT_FOUND_ERROR:
+					case n.E.NOT_FOUND_ERROR:
 						return Object(o.a)(a, "error.type.notFound");
-					case n.D.SERVER_ERROR:
+					case n.E.SERVER_ERROR:
 						return Object(o.a)(a, "error.type.server");
-					case n.D.LIKELY_UBLOCK_ERROR:
+					case n.E.LIKELY_UBLOCK_ERROR:
 						return Object(o.a)(a, "error.type.blocked");
 					default:
 						return Object(o.a)(a, "error.type.generic")
@@ -758,7 +758,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"), s.e("CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187"), s.e("Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"), s.e("reddit-components-ClassicPost~reddit-components-CompactPost"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"), s.e("CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187"), s.e("Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -778,7 +778,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"), s.e("CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187"), s.e("Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"), s.e("reddit-components-ClassicPost~reddit-components-CompactPost"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"), s.e("CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187"), s.e("Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -916,9 +916,9 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.a
 				});
-				return !!t && !Object(o.Nb)(t)
+				return !!t && !Object(o.Lb)(t)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.ab20d0a259a3a826484d.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9.f4679b4cc28434af5acd.js.map

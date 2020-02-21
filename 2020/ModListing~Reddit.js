@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.329f5f5ead431caa37ec.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.a1e6f7d26493d8e4404f.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -21,7 +21,7 @@
 				class n extends a.Component {
 					constructor(e) {
 						super(e), this.handleKeyDown = e => {
-							e.keyCode === d.E && this.props.onKeyDown(e)
+							e.keyCode === d.F && this.props.onKeyDown(e)
 						}, this.handleMouseClick = e => {
 							this.props.onMouseClick(e)
 						}, this.handleResize = s()(e => {
@@ -950,15 +950,15 @@
 			}(o || (o = {}));
 			var d = n("./src/lib/constants/index.ts"),
 				l = n("./src/reddit/helpers/postCollection.ts");
-			const u = [d.yb.COMMENTS, d.yb.COLLECTION_COMMENTS],
+			const u = [d.zb.COMMENTS, d.zb.COLLECTION_COMMENTS],
 				p = (e, t) => {
 					if (!e) return [];
 					const n = u.includes(e),
-						o = e === d.yb.COLLECTION_COMMENTS || t && Object(l.a)(t),
-						s = d.M.has(e),
-						a = d.pb.has(e),
-						i = e === d.yb.SUBREDDIT,
-						c = e === d.yb.TOPIC;
+						o = e === d.zb.COLLECTION_COMMENTS || t && Object(l.a)(t),
+						s = d.N.has(e),
+						a = d.qb.has(e),
+						i = e === d.zb.SUBREDDIT,
+						c = e === d.zb.TOPIC;
 					let p, m, f;
 					return s && !i || a ? p = r.HeaderSelector : o ? p = r.Collection : n ? p = r.PostComments : c && (p = r.TopicHeader), (s || a || o || n) && (m = r.Widget), (s || n) && (f = r.PostItem), [p, m, f]
 				};
@@ -2499,8 +2499,8 @@
 			}));
 			var r = n("./src/lib/constants/index.ts");
 			const o = e => !s(e) && !!e.user.prefs.subscriptionsPinned,
-				s = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.yb.MODERATION_PAGES)
+				s = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.zb.MODERATION_PAGES)
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.329f5f5ead431caa37ec.js.map
+//# sourceMappingURL=ModListing~Reddit.a1e6f7d26493d8e4404f.js.map

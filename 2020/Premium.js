@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.e2eb5880b22ac89768ef.js
-// Retrieved at 2/3/2020, 5:50:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.08bd31d4a35f54180fe4.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -439,9 +439,9 @@
 					fill: "#FFF"
 				})),
 				T = a("./src/lib/classNames/index.ts"),
-				B = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				z = a("./src/reddit/pages/Premium/PurchaseSection/index.m.less"),
-				D = a.n(z);
+				z = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				B = a("./src/reddit/pages/Premium/PurchaseSection/index.m.less"),
+				D = a.n(B);
 			class R extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClaimGoldClick = () => {
@@ -488,11 +488,11 @@
 						className: D.a.premiumPerks
 					}, r.a.createElement("li", {
 						className: D.a.premiumPerk
-					}, r.a.createElement(B.a, {
+					}, r.a.createElement(z.a, {
 						className: D.a.checkmark
 					}), r.a.createElement(G.c, null, "Ads-free experience")), r.a.createElement("li", {
 						className: D.a.premiumPerk
-					}, r.a.createElement(B.a, {
+					}, r.a.createElement(z.a, {
 						className: D.a.checkmark
 					}), r.a.createElement(G.c, null, r.a.createElement(G.b, {
 						name: "monthly-coins"
@@ -559,7 +559,7 @@
 				}
 				componentDidMount() {
 					E.f() || E.g();
-					const e = u.yb.PREMIUM;
+					const e = u.zb.PREMIUM;
 					b.c.has(e) && this.props.sendEvent(Object(k.i)(f.TimerType.InApp, b.c.end(e))), Object(p.a)()
 				}
 				render() {
@@ -667,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.e2eb5880b22ac89768ef.js.map
+//# sourceMappingURL=Premium.08bd31d4a35f54180fe4.js.map

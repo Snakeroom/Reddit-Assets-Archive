@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b1a0c712657ca599f1ae.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.4a9d24ed84f210292052.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -315,7 +315,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = a()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.F), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -1439,7 +1439,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				Ee = Object(u.Mb)(p.f),
+				Ee = Object(u.Kb)(p.f),
 				fe = Object(d.c)({
 					categories: e => Object(pe.c)(e, {
 						categoriesOrder: Ee
@@ -1528,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.b1a0c712657ca599f1ae.js.map
+//# sourceMappingURL=SubredditLeaderboard.4a9d24ed84f210292052.js.map

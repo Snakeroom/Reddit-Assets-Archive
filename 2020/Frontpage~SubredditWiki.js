@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.ce7379b970504e4941ef.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.7d5d4a5bebaed8c1cd43.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, n) {
@@ -581,7 +581,7 @@
 					className: N.a.communityInfoContainer
 				}, !!e.subscribers && r.a.createElement("p", {
 					className: N.a.subscriberCount
-				}, Object(d.c)(e.language, "listings.subscribers", e.subscribers, {
+				}, Object(d.b)(e.language, "listings.subscribers", e.subscribers, {
 					count: Object(l.b)(e.subscribers)
 				})), e.isNSFW && r.a.createElement(m.b, {
 					flair: {
@@ -721,4 +721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~SubredditWiki.ce7379b970504e4941ef.js.map
+//# sourceMappingURL=Frontpage~SubredditWiki.7d5d4a5bebaed8c1cd43.js.map

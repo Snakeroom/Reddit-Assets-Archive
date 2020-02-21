@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.eb92065d4ad02e3f44e8.js
-// Retrieved at 2/10/2020, 1:40:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2cd9bfff91534fb41c96.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -105,11 +105,11 @@
 						post: t
 					}) : r.a.createElement(r.a.Fragment, null, !t.isScoreHidden && r.a.createElement(r.a.Fragment, null, r.a.createElement(b, {
 						"data-click-id": "score"
-					}, Object(i.c)(s, "posts.points.noun", t.score, {
+					}, Object(i.b)(s, "posts.points.noun", t.score, {
 						count: Object(o.b)(t.score)
 					})), r.a.createElement(b, null, "·")), r.a.createElement(b, {
 						"data-click-id": "comments"
-					}, Object(i.c)(s, "posts.comments.noun", t.numComments, {
+					}, Object(i.b)(s, "posts.comments.noun", t.numComments, {
 						count: Object(o.b)(t.numComments)
 					})))
 				}
@@ -666,7 +666,7 @@
 					let m, j;
 					if (this.state.mounted || p === o.a.Live) m = function(e, t, s, n) {
 						const r = Object(o.e)(e, t),
-							d = new Date(e * c.Cb);
+							d = new Date(e * c.Db);
 						let l;
 						if (r === o.a.Live || n) return Object(i.a)(s, "posts.event.inProgress");
 						r === o.a.Future ? l = Object(o.d)(e) ? Object(i.a)(s, "posts.event.today") : Object(o.b)(e) >= 5 ? a(d, s) : function(e, t) {
@@ -1047,7 +1047,7 @@
 				};
 			const b = i.a.span("metaText", l.a),
 				p = e => r.a.createElement(b, e, " · "),
-				m = Object(o.d)("comment.point"),
+				m = Object(o.c)("comment.point"),
 				h = e => {
 					var {
 						isScoreHidden: t,
@@ -1063,7 +1063,7 @@
 					return r.a.createElement(b, i, p)
 				},
 				v = (e, t) => {
-					const s = Object(o.c)(t, "posts.comments.noun", e, {
+					const s = Object(o.b)(t, "posts.comments.noun", e, {
 						count: Object(c.b)(e)
 					});
 					return r.a.createElement(b, null, s)
@@ -1246,4 +1246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.eb92065d4ad02e3f44e8.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2cd9bfff91534fb41c96.js.map

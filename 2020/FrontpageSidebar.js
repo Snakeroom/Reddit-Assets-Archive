@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.23823729227bc1d3c55e.js
-// Retrieved at 2/6/2020, 4:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.363095e97ca38e1379e1.js
+// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -254,11 +254,11 @@
 						onClick: this.onClickSubreddit
 					}, s.displayText), a.a.createElement("div", null, a.a.createElement("span", {
 						className: Y.a.meta
-					}, Object(R.c)(this.props.language, "posts.points.noun", t.score, {
+					}, Object(R.b)(this.props.language, "posts.points.noun", t.score, {
 						count: Object(U.b)(t.score)
 					})), a.a.createElement("span", {
 						className: Y.a.meta
-					}, Object(R.c)(this.props.language, "posts.comments.noun", t.numComments, {
+					}, Object(R.b)(this.props.language, "posts.comments.noun", t.numComments, {
 						count: Object(U.b)(t.numComments)
 					})), a.a.createElement("span", {
 						className: Y.a.meta
@@ -411,7 +411,7 @@
 							placement: Se.c.BELOW_THE_FOLD,
 							listingName: o,
 							position: Oe.a.BOTTOM,
-							sizes: Se.m,
+							sizes: Se.n,
 							placementIndex: e++
 						})
 					}))
@@ -907,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.23823729227bc1d3c55e.js.map
+//# sourceMappingURL=FrontpageSidebar.363095e97ca38e1379e1.js.map
