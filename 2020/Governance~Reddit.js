@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f57736087c7ea9dac9cf.js
-// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9e78996e54c95009d2ca.js
+// Retrieved at 2/24/2020, 1:40:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -48118,14 +48118,16 @@
 								isPending: !1,
 								global: Object.assign({}, t.payload)
 							});
-						case ih.v:
+						case ih.v: {
+							const n = t.payload.name.toLowerCase();
 							return Object.assign({}, e, {
 								isError: !1,
 								isPending: !1,
 								subreddits: Object.assign({}, e.subreddits, {
-									[t.payload.name]: Object.assign({}, t.payload.config)
+									[n]: Object.assign({}, t.payload.config)
 								})
-							});
+							})
+						}
 						case ih.D:
 							return Object.assign({}, e, {
 								isPending: !0
@@ -55032,7 +55034,10 @@
 						subreddit: n
 					} = t;
 					return n
-				}, c, (e, t) => t.subreddits[e]),
+				}, c, (e, t) => {
+					const n = e.toLowerCase();
+					return t.subreddits[n]
+				}),
 				m = Object(r.a)(c, e => e.global.rpan_intro_video_url),
 				O = Object(r.a)(c, e => e.global.url_to_show_for_unavailable_video),
 				g = Object(r.a)(c, e => !e.global.lastUpdated || !!e.global.rpan_intro_video_url),
@@ -62528,4 +62533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.f57736087c7ea9dac9cf.js.map
+//# sourceMappingURL=Governance~Reddit.9e78996e54c95009d2ca.js.map
