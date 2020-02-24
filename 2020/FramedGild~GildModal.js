@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9416efe170d4aa4d56b8.js
-// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a5864bd08d16835ccc00.js
+// Retrieved at 2/24/2020, 12:50:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -41,8 +41,8 @@
 			var x = a("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				f = a("./src/reddit/helpers/awards/message.ts"),
 				O = a("./src/reddit/helpers/correlationIdTracker.ts"),
-				I = a("./src/reddit/helpers/isPost.ts"),
-				j = a("./src/reddit/helpers/trackers/gild.ts"),
+				j = a("./src/reddit/helpers/isPost.ts"),
+				I = a("./src/reddit/helpers/trackers/gild.ts"),
 				N = a("./src/reddit/i18n/utils.ts"),
 				P = a("./src/telemetry/index.ts"),
 				y = a("./src/reddit/actions/gold/constants.ts");
@@ -84,7 +84,7 @@
 								message: Object(f.d)(d.message, d.selectedAward, c),
 								nodeId: e
 							},
-							n = Object(I.a)(e) ? v : A,
+							n = Object(j.a)(e) ? v : A,
 							s = await n(r(), {
 								input: t
 							}, i);
@@ -128,7 +128,7 @@
 				}, F = Object(r.a)(y.q), q = (e, t) => {
 					const {
 						id: a
-					} = t, n = Object(I.a)(a) ? Object(p.I)(e, {
+					} = t, n = Object(j.a)(a) ? Object(p.K)(e, {
 						postId: a
 					}) : Object(l.n)(e, {
 						commentId: a
@@ -172,13 +172,13 @@
 							id: a
 						})))
 					});
-					const b = Object(I.a)(l) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", p.name)], {
+					const b = Object(j.a)(l) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", p.name)], {
 							hk: "1Ndi4Z"
 						}) : n.fbt._("Success! You have given this comment the {awardName} Award", [n.fbt._param("awardName", p.name)], {
 							hk: "2sIK9Y"
 						}),
 						g = p.coinPrice;
-					Object(P.a)(Object(j.viewSuccessAwardEvent)(l, g, p)(s)), t(Object(i.e)({
+					Object(P.a)(Object(I.viewSuccessAwardEvent)(l, g, p)(s)), t(Object(i.e)({
 						kind: o.b.SuccessCommunity,
 						text: b
 					})), setTimeout(() => {
@@ -324,8 +324,8 @@
 				x = a("./src/reddit/selectors/communityAwards.ts"),
 				f = a("./src/reddit/selectors/experiments/goldPremiumAwards.ts"),
 				O = a("./src/reddit/selectors/experiments/publicAwarding.ts"),
-				I = a("./src/reddit/selectors/gild.ts"),
-				j = a("./src/reddit/selectors/gold/giveAwards.ts"),
+				j = a("./src/reddit/selectors/gild.ts"),
+				I = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				N = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				P = a("./src/reddit/selectors/posts.ts"),
 				y = a("./src/reddit/selectors/subreddit.ts"),
@@ -868,8 +868,8 @@
 				fe = a("./src/reddit/controls/LoadingIcon/index.tsx");
 			const {
 				fbt: Oe
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), Ie = 10;
-			class je extends s.a.PureComponent {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), je = 10;
+			class Ie extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleQuestionMarkClick = () => this.props.sendEvent(Object(m.clickQuestionMarkEvent)(this.props.thingId))
 				}
@@ -936,13 +936,13 @@
 						onClick: r ? c : e ? o : d
 					}, l ? s.a.createElement(fe.a, {
 						className: ve.a.loadingIcon,
-						sizePx: Ie
+						sizePx: je
 					}) : this.renderButtonText())), a && s.a.createElement("div", {
 						className: ve.a.errorText
 					}, a))
 				}
 			}
-			var Ne = je,
+			var Ne = Ie,
 				Pe = a("./src/reddit/components/GildModalContent/index.m.less"),
 				ye = a.n(Pe);
 			class _e extends s.a.PureComponent {
@@ -1005,7 +1005,7 @@
 							s = t && t.id
 						}
 						if (!s && Object(o.a)(a)) {
-							const t = Object(P.I)(e, {
+							const t = Object(P.K)(e, {
 								postId: a
 							});
 							s = t && t.belongsTo.id
@@ -1031,18 +1031,18 @@
 						})
 					},
 					currentUser: _.i,
-					errorMessage: I.a,
-					isAnonymous: I.g,
-					iFramed: I.h,
+					errorMessage: j.a,
+					isAnonymous: j.g,
+					iFramed: j.h,
 					isEmployee: _.D,
 					language: _.P,
-					message: I.b,
-					pending: I.e,
+					message: j.b,
+					pending: j.e,
 					postOrComment: (e, t) => {
 						let {
 							thingId: a
 						} = t;
-						return Object(o.a)(a) ? Object(P.I)(e, {
+						return Object(o.a)(a) ? Object(P.K)(e, {
 							postId: a
 						}) : Object(A.n)(e, {
 							commentId: a
@@ -1051,7 +1051,7 @@
 					publicAwardingEnabled: e => !!Object(O.a)(e),
 					showCoinPurchaseModal: N.d,
 					showPremiumAwards: f.a,
-					selectedAward: j.a,
+					selectedAward: I.a,
 					subreddit: y.H,
 					subredditCoins: (e, t) => {
 						let {
@@ -1187,8 +1187,8 @@
 						selectedAward: x,
 						sendEvent: f,
 						showCoinPurchaseModal: O,
-						showPremiumAwards: I,
-						subreddit: j,
+						showPremiumAwards: j,
+						subreddit: I,
 						subredditCoins: N,
 						subredditName: P,
 						thingId: y,
@@ -1199,7 +1199,7 @@
 					if (L && (L && !p)) return s.a.createElement(S.a, {
 						isCompletePaypal: !1
 					});
-					const B = j ? j.name : P,
+					const B = I ? I.name : P,
 						G = ke.includes(B) ? "pan" : B,
 						R = !c || !c.isGold && x.awardSubType === u.b.Premium;
 					return s.a.createElement("div", {
@@ -1221,8 +1221,8 @@
 						},
 						selectedAward: x,
 						sendEvent: f,
-						showPremiumAwards: I,
-						subreddit: j,
+						showPremiumAwards: j,
+						subreddit: I,
 						subredditName: G,
 						thingId: y
 					}), s.a.createElement(re, {
@@ -1250,7 +1250,7 @@
 						pending: E,
 						selectedAward: x,
 						sendEvent: f,
-						subreddit: j,
+						subreddit: I,
 						subredditName: G,
 						subredditCoins: N,
 						thingId: y,
@@ -1425,4 +1425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.9416efe170d4aa4d56b8.js.map
+//# sourceMappingURL=FramedGild~GildModal.a5864bd08d16835ccc00.js.map
