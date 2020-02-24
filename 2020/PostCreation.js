@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.205a2ab502e38e892b8d.js
-// Retrieved at 2/24/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b9125dcac089cb900378.js
+// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -1380,7 +1380,7 @@
 							const {
 								postId: e
 							} = l, t = s.posts.models[e];
-							t && t.voteState === b.a.notVoted && n(Object(a.V)(e))
+							t && t.voteState === b.a.notVoted && n(Object(a.Q)(e))
 						}
 					} else n(S({
 						pollId: e,
@@ -1621,7 +1621,7 @@
 					} = i;
 					if ((await C(a(), e, t)).ok) {
 						const i = r(),
-							a = Object(k.K)(i, {
+							a = Object(k.I)(i, {
 								postId: t
 							}),
 							l = a && a.title || "",
@@ -1638,7 +1638,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(k.K)(t, {
+								i = Object(k.I)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(j.a)(i.permalink))
@@ -1671,7 +1671,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(k.K)(a, {
+						const o = Object(k.I)(a, {
 								postId: t
 							}),
 							r = Object(w.q)(a, {
@@ -4066,12 +4066,12 @@
 				I = O.a.div("Content", y.a),
 				P = O.a.div("ThumbnailContainer", y.a),
 				M = Object(a.c)({
-					isCurrentUserProfilePost: f.i,
+					isCurrentUserProfilePost: f.h,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.zb.TOPIC),
 					language: x.P,
-					post: f.K,
+					post: f.I,
 					shouldOpenPostInNewTab: x.T,
-					subreddit: f.W
+					subreddit: f.U
 				}),
 				N = Object(r.b)(M);
 			t.a = N(e => {
@@ -5017,7 +5017,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(f.p)(e, {
+						return Object(f.o)(e, {
 							postId: n.id
 						})
 					},
@@ -5028,7 +5028,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(f.A)(e, n)
+						return Object(f.z)(e, n)
 					},
 					subredditName: (e, t) => {
 						let {
@@ -5513,10 +5513,10 @@
 				})),
 				v = n("./src/reddit/selectors/posts.ts");
 			var E = Object(r.b)(() => Object(i.c)({
-				post: v.K,
-				subredditOrProfile: v.W,
+				post: v.I,
+				subredditOrProfile: v.U,
 				isModerator: (e, t) => {
-					const n = Object(v.W)(e, t);
+					const n = Object(v.U)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => s.a.createElement(h, {
@@ -5550,11 +5550,11 @@
 				}
 			}));
 			var j = Object(r.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(v.W)(e, {
+				subredditOrProfile: (e, t) => Object(v.U)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const n = Object(v.W)(e, {
+					const n = Object(v.U)(e, {
 						postId: t.post.id
 					});
 					return n && !!e.moderatingSubreddits[n.name] || !1
@@ -5576,10 +5576,10 @@
 				}
 			}));
 			var S = Object(r.b)(() => Object(i.c)({
-				post: v.K,
-				subredditOrProfile: v.W,
+				post: v.I,
+				subredditOrProfile: v.U,
 				isModerator: (e, t) => {
-					const n = Object(v.W)(e, t);
+					const n = Object(v.U)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => s.a.createElement(h, {
@@ -6293,7 +6293,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(O.s)(e, {
+						return Object(O.r)(e, {
 							postId: n.id
 						})
 					},
@@ -8676,7 +8676,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(M.p)(e, {
+						return Object(M.o)(e, {
 							postId: n.id
 						})
 					},
@@ -17696,7 +17696,7 @@
 					shouldShowCollectionEditOptions: x.s
 				}),
 				_ = Object(a.b)(k, (e, t) => ({
-					copyLink: () => e(Object(u.B)(t.permalink)),
+					copyLink: () => e(Object(u.w)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -17941,7 +17941,7 @@
 			const _ = ["right", "bottom"],
 				I = ["right", "top"];
 			var P = Object(c.b)(() => Object(l.c)({
-					post: y.K,
+					post: y.I,
 					language: O.P
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(C.g)(t.collectionId, t.postId))
@@ -25051,7 +25051,7 @@
 									sort: "new",
 									crossposts_only: !0
 								}));
-								return 0 !== o.length && Object(ye.C)(e, o[0])
+								return 0 !== o.length && Object(ye.B)(e, o[0])
 							})(e, l, n)) return Object(ne.a)(c, "postCreation.crosspostInput.within24HoursAreNotAllowed")
 					}
 					if (!s || !o) return null;
@@ -26251,7 +26251,7 @@
 							s && E.g(o(), s, n)
 						})
 					},
-					copyLink: t => e(Object(zi.B)(t)),
+					copyLink: t => e(Object(zi.w)(t)),
 					trackConnectAccountsClick: () => e((e, t) => E.b(t()))
 				}), (e, t, n) => Object.assign({}, e, t, n, {
 					onTogglePostToTwitter: () => t.togglePostToTwitter(!e.postToTwitter),
@@ -28586,4 +28586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.205a2ab502e38e892b8d.js.map
+//# sourceMappingURL=PostCreation.b9125dcac089cb900378.js.map

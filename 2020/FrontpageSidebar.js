@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.375756e0c45535841284.js
-// Retrieved at 2/24/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.363095e97ca38e1379e1.js
+// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -198,7 +198,7 @@
 				K = n("./src/reddit/selectors/user.ts"),
 				V = n("./src/reddit/components/MiniPost/index.m.less"),
 				Y = n.n(V);
-			const G = Object(o.a)(e => e, Z.K, Z.c, K.P, (e, t, n, s) => {
+			const G = Object(o.a)(e => e, Z.I, Z.c, K.P, (e, t, n, s) => {
 				return {
 					crosspost: n,
 					language: s,
@@ -283,7 +283,7 @@
 				ae = n("./src/lib/lessComponent.tsx");
 			const re = Object(r.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(X.a)(t.permalink)),
-					clearLinks: () => e(Object(W.r)())
+					clearLinks: () => e(Object(W.p)())
 				})),
 				oe = ae.a.button("ClearButton", se.a);
 			class ce extends a.a.Component {
@@ -301,7 +301,7 @@
 			var ie = re(ce);
 			const de = Object(o.c)({
 				language: K.P,
-				recentPosts: Z.T
+				recentPosts: Z.R
 			});
 			var le = Object(r.b)(de, (e, t) => ({
 					openLightbox: t => () => e(Object(X.a)(t.permalink))
@@ -907,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.375756e0c45535841284.js.map
+//# sourceMappingURL=FrontpageSidebar.363095e97ca38e1379e1.js.map

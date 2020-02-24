@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.60a6d367390d32707f9d.js
-// Retrieved at 2/24/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b93e0ffcf76fc6f3bf1e.js
+// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -369,8 +369,8 @@
 				E = r("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				_ = r("./src/reddit/components/PostTitle/index.tsx"),
 				w = r("./src/reddit/components/PostTopLine/index.tsx"),
-				T = r("./src/reddit/components/PostTopMeta/index.tsx"),
-				j = r("./src/reddit/components/SourceLink/index.tsx"),
+				j = r("./src/reddit/components/PostTopMeta/index.tsx"),
+				T = r("./src/reddit/components/SourceLink/index.tsx"),
 				I = r("./src/reddit/contexts/InsideOverlay.tsx"),
 				N = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				k = r("./src/reddit/controls/OutboundLink/styled.tsx"),
@@ -381,9 +381,9 @@
 				F = r("./src/reddit/models/Vote/index.ts"),
 				B = r("./src/reddit/selectors/experiments/categories.ts"),
 				D = r("./src/reddit/selectors/inFeedChaining.ts"),
-				W = r("./src/reddit/selectors/moderatorPermissions.ts"),
-				V = r("./src/reddit/selectors/postFlair.ts"),
-				U = r("./src/reddit/selectors/posts.ts"),
+				U = r("./src/reddit/selectors/moderatorPermissions.ts"),
+				W = r("./src/reddit/selectors/postFlair.ts"),
+				V = r("./src/reddit/selectors/posts.ts"),
 				z = r("./src/reddit/selectors/user.ts"),
 				G = r("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
 				H = r("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -391,23 +391,23 @@
 				Z = r("./src/reddit/components/MediumPost/index.m.less"),
 				J = r.n(Z);
 			const q = Object(n.b)(() => Object(i.c)({
-				crosspost: U.c,
+				crosspost: V.c,
 				currentUser: z.i,
 				flairStyleTemplate: N.P,
 				hideNSFWPref: z.y,
-				isActive: U.h,
-				isCurrentUserProfilePost: U.i,
+				isActive: V.g,
+				isCurrentUserProfilePost: V.h,
 				isLoggedIn: z.G,
 				isPostChainDismissed: D.c,
 				isPostChained: D.d,
 				language: z.P,
-				moderatorPermissions: W.i,
+				moderatorPermissions: U.i,
 				modModeEnabled: N.N,
-				post: U.K,
-				showEditFlair: V.a,
+				post: V.I,
+				showEditFlair: W.a,
 				showMedia: N.r,
 				isInCategoriesExperiment: B.a,
-				subredditOrProfile: U.W
+				subredditOrProfile: V.U
 			}), (e, t) => {
 				let {
 					listingKey: r,
@@ -422,8 +422,8 @@
 							postId: s
 						}))
 					},
-					handleVote: t => t === F.a.upvoted ? e(Object(l.V)(s)) : e(Object(l.t)(s)),
-					onIgnoreReports: () => e(Object(l.T)(s)),
+					handleVote: t => t === F.a.upvoted ? e(Object(l.Q)(s)) : e(Object(l.r)(s)),
+					onIgnoreReports: () => e(Object(l.O)(s)),
 					onOpenReportsDropdown: t => e(Object(u.h)({
 						tooltipId: t
 					}))
@@ -444,9 +444,9 @@
 					isCurrentUserProfilePost: F,
 					isFrontpage: B,
 					isLoggedIn: D,
-					isOverlay: W,
-					isPostChainDismissed: V,
-					isPostChained: U,
+					isOverlay: U,
+					isPostChainDismissed: W,
+					isPostChained: V,
 					isTopicPage: z,
 					language: H,
 					listingKey: Z,
@@ -468,7 +468,7 @@
 					className: Object(d.a)(J.a.container, r, K.a.largeAndMediumPostStyles, K.a.largeAndMediumActiveStyles, Object(L.a)(e), {
 						[K.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 					}),
-					isOverlay: W,
+					isOverlay: U,
 					style: Object(L.b)(e.flairStyleTemplate),
 					post: te,
 					onClick: Q,
@@ -503,7 +503,7 @@
 					inSubredditOrProfile: u,
 					isCommentsPage: N,
 					isCurrentUserProfilePost: F,
-					isOverlay: !!W,
+					isOverlay: !!U,
 					isTopicPage: !!z,
 					language: H,
 					post: te,
@@ -518,14 +518,14 @@
 					redditStyle: re,
 					size: _.b.Large,
 					titleColor: ce && ce.postTitleColor,
-					isOverlay: W
+					isOverlay: U
 				}), N && (te.flair && te.flair.length > 0 || e.isInCategoriesExperiment) && s.a.createElement(g.a, {
 					className: N ? J.a.leftPadding : null,
 					disableFlair: !N,
 					post: te,
 					sendEvent: ie,
 					showCategoryTag: e.isInCategoriesExperiment && N
-				}), te.source && !te.isSponsored && !o && s.a.createElement(j.a, {
+				}), te.source && !te.isSponsored && !o && s.a.createElement(T.a, {
 					className: J.a.sourceLink,
 					isCommentsPage: N,
 					post: te
@@ -533,7 +533,7 @@
 					crosspost: o ? te : void 0,
 					hasModPostPerms: le,
 					isCommentsPage: N,
-					isOverlay: W,
+					isOverlay: U,
 					modModeEnabled: Y,
 					post: o || te,
 					redditStyle: re,
@@ -571,14 +571,14 @@
 					currentUser: n,
 					hasModFlairPerms: pe,
 					hasModPostPerms: le,
-					isOverlay: !!W,
+					isOverlay: !!U,
 					language: H,
 					modModeEnabled: Y,
 					onIgnoreReports: $,
 					onOpenReportsDropdown: ee,
 					post: te,
 					showEditFlair: se,
-					tooltipType: W ? T.c.Lightbox : void 0,
+					tooltipType: U ? j.c.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(C.h)({
 						editPost: !ue,
 						save: !ue,
@@ -586,7 +586,7 @@
 						report: !1
 					})
 				}))));
-				return s.a.createElement(s.a.Fragment, null, xe, U && !V && s.a.createElement(b.a, {
+				return s.a.createElement(s.a.Fragment, null, xe, V && !W && s.a.createElement(b.a, {
 					className: J.a.chain,
 					listingKey: Z,
 					listingName: q,
@@ -680,8 +680,8 @@
 					isCompactPinnedPost: E,
 					isCurrentUserProfilePost: _,
 					isOverlay: w,
-					isTopicPage: T,
-					language: j,
+					isTopicPage: j,
+					language: T,
 					post: I,
 					publicAwardersEnabled: N,
 					shouldShowSubscribeButton: k,
@@ -689,7 +689,7 @@
 					showSubreddit: R,
 					showSubredditIcon: A,
 					subredditOrProfile: L
-				} = e, F = C && N, B = T;
+				} = e, F = C && N, B = j;
 				return s.a.createElement(S, {
 					className: t
 				}, R && L && s.a.createElement("div", {
@@ -710,7 +710,7 @@
 					className: P.a.postTopMeta,
 					flairStyleTemplate: r,
 					tooltipType: w ? l.c.Lightbox : void 0,
-					language: j,
+					language: T,
 					post: I,
 					showSub: R,
 					subredditOrProfile: L
@@ -718,7 +718,7 @@
 					className: P.a.postBadges,
 					displayText: L ? L.displayText : null,
 					inSubredditOrProfile: O,
-					language: j,
+					language: T,
 					isCompactPinnedPost: E,
 					post: I,
 					tooltipType: w ? l.c.Lightbox : void 0
@@ -777,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.60a6d367390d32707f9d.js.map
+//# sourceMappingURL=reddit-components-MediumPost.b93e0ffcf76fc6f3bf1e.js.map

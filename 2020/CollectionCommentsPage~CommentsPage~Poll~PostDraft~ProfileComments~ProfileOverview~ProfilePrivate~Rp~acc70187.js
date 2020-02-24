@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187.595b576ed839a4b31eed.js
-// Retrieved at 2/24/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187.899c50de5153aec73272.js
+// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -95,9 +95,9 @@
 			})), o.d(e, "e", (function() {
 				return L
 			})), o.d(e, "g", (function() {
-				return K
+				return B
 			})), o.d(e, "a", (function() {
-				return q
+				return K
 			})), o.d(e, "c", (function() {
 				return G
 			})), o.d(e, "h", (function() {
@@ -153,13 +153,13 @@
 						kind: y.b.Error,
 						text: Object(c.a)(i.user.language, "error.type.generic")
 					}))
-				}, A = Object(i.a)(r.g), K = (t, e, o) => async (n, s, i) => {
+				}, A = Object(i.a)(r.g), B = (t, e, o) => async (n, s, i) => {
 					let {
 						apiContext: r
 					} = i;
 					if ((await _(r(), t, e)).ok) {
 						const i = s(),
-							r = Object(S.K)(i, {
+							r = Object(S.I)(i, {
 								postId: e
 							}),
 							a = r && r.title || "",
@@ -176,7 +176,7 @@
 									collectionId: t
 								}),
 								c = o && o.postIds && o.postIds[u] || "",
-								i = Object(S.K)(e, {
+								i = Object(S.I)(e, {
 									postId: c
 								});
 							i && i.permalink && n(Object(x.a)(i.permalink))
@@ -187,7 +187,7 @@
 								postTitle: a
 							}),
 							buttonText: Object(c.a)(i.user.language, "collection.undo"),
-							buttonAction: q(t, e)
+							buttonAction: K(t, e)
 						}))
 					} else {
 						const t = s();
@@ -196,20 +196,20 @@
 							text: Object(c.a)(t.user.language, "error.type.generic")
 						}))
 					}
-				}, B = Object(i.a)(r.a), R = Object(i.a)(r.t), q = (t, e) => async (o, n, s) => {
+				}, R = Object(i.a)(r.a), q = Object(i.a)(r.t), K = (t, e) => async (o, n, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const r = n();
 					if ((await O(i(), t, e)).ok) {
-						o(B({
+						o(R({
 							collectionId: t,
 							postId: e
-						})), o(R({
+						})), o(q({
 							collectionId: t,
 							postId: e
 						}));
-						const n = Object(S.K)(r, {
+						const n = Object(S.I)(r, {
 								postId: e
 							}),
 							s = Object(E.q)(r, {
@@ -710,4 +710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187.595b576ed839a4b31eed.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187.899c50de5153aec73272.js.map
