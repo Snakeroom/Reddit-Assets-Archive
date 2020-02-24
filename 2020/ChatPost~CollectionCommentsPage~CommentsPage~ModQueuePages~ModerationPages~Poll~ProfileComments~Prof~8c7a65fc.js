@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.171d604943b2b5b8a749.js
-// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a7efd6b6613ede3a5a80.js
+// Retrieved at 2/24/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -161,7 +161,7 @@
 				}),
 				C = s("./src/reddit/components/AddAwardHoverButton/index.m.less"),
 				N = s.n(C);
-			class I extends n.a.PureComponent {
+			class S extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						isHovered: !1
@@ -192,7 +192,7 @@
 					}), n.a.createElement(y.c, null, "Add"))
 				}
 			}
-			var S = I,
+			var I = S,
 				M = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				P = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				_ = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -486,7 +486,7 @@
 						className: Object(i.a)(t, W.a.awardBadges)
 					}, e, this.renderAwardings(p), x && n.a.createElement(V, {
 						onClick: this.handleAddAward
-					}), c && this.renderAwarders(p), f && n.a.createElement(S, {
+					}), c && this.renderAwarders(p), f && n.a.createElement(I, {
 						onClick: this.handleAddAward
 					}), a && s && this.state.selectedAward && n.a.createElement(M.a, {
 						actionText: o.fbt._("Hide", null, {
@@ -552,7 +552,7 @@
 			})), s.d(t, "c", (function() {
 				return N
 			})), s.d(t, "a", (function() {
-				return I
+				return S
 			}));
 			const w = "add-custom-badge-tooltip",
 				j = 100,
@@ -658,7 +658,7 @@
 					onOpenUploadDialog: () => e(Object(c.i)())
 				}),
 				N = Object(n.b)(A, C)(E),
-				I = Object(n.b)(T, C)(E)
+				S = Object(n.b)(T, C)(E)
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -993,10 +993,10 @@
 				})),
 				j = s("./src/reddit/selectors/posts.ts");
 			var y = Object(n.b)(() => Object(a.c)({
-				post: j.I,
-				subredditOrProfile: j.U,
+				post: j.K,
+				subredditOrProfile: j.W,
 				isModerator: (e, t) => {
-					const s = Object(j.U)(e, t);
+					const s = Object(j.W)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1030,11 +1030,11 @@
 				}
 			}));
 			var E = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(j.U)(e, {
+				subredditOrProfile: (e, t) => Object(j.W)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(j.U)(e, {
+					const s = Object(j.W)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -1056,10 +1056,10 @@
 				}
 			}));
 			var A = Object(n.b)(() => Object(a.c)({
-				post: j.I,
-				subredditOrProfile: j.U,
+				post: j.K,
+				subredditOrProfile: j.W,
 				isModerator: (e, t) => {
-					const s = Object(j.U)(e, t);
+					const s = Object(j.W)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1223,8 +1223,8 @@
 				T = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				C = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
 				N = s("./src/reddit/components/SponsoredLabel/index.tsx"),
-				I = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				S = s("./src/reddit/constants/posts.ts"),
+				S = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				I = s("./src/reddit/constants/posts.ts"),
 				M = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				P = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				_ = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
@@ -1360,7 +1360,7 @@
 						flair: f,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: F
-					})), h.belongsTo.type === S.a.SUBREDDIT && !Object(U.h)(h.author) && r.a.createElement(j.a, {
+					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(U.h)(h.author) && r.a.createElement(j.a, {
 						className: z.a.publicWallet,
 						contentId: h.id,
 						subredditId: h.belongsTo.id,
@@ -1373,7 +1373,7 @@
 						postId: h.id,
 						subredditName: P.name,
 						tooltipType: _
-					}, r.a.createElement(I.a, {
+					}, r.a.createElement(S.a, {
 						"data-click-id": "subreddit",
 						to: P.url
 					}, P.displayText)), P && P.isQuarantined && r.a.createElement(C.a, null), g && !k && r.a.createElement(Z, {
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.171d604943b2b5b8a749.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a7efd6b6613ede3a5a80.js.map

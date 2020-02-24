@@ -1,17 +1,17 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.551b5fd5531fd09a7eb5.js
-// Retrieved at 2/5/2020, 1:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.c75342259af05d916b3c.js
+// Retrieved at 2/24/2020, 1:00:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
 			"use strict";
 			var r = i("./node_modules/react/index.js"),
 				n = i.n(r),
-				o = i("./node_modules/react-dom/index.js");
+				s = i("./node_modules/react-dom/index.js");
 			i("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), i("./node_modules/invariant/browser.js");
 
-			function s(e, t) {
+			function o(e, t) {
 				return Array.isArray(e) && Array.isArray(t) && e.length === t.length ? e.some((function(i, r) {
-					return s(e[r], t[r])
+					return o(e[r], t[r])
 				})) : e !== t
 			}
 
@@ -28,25 +28,25 @@
 					}(e.rootMargin),
 					r = Array.isArray(e.threshold) ? e.threshold : [void 0 !== e.threshold ? e.threshold : 0],
 					n = l.keys(),
-					o = Array.isArray(n),
+					s = Array.isArray(n),
 					a = 0;
-				for (n = o ? n : n[Symbol.iterator]();;) {
+				for (n = s ? n : n[Symbol.iterator]();;) {
 					var c;
-					if (o) {
+					if (s) {
 						if (a >= n.length) break;
 						c = n[a++]
 					} else {
 						if ((a = n.next()).done) break;
 						c = a.value
 					}
-					var d = c;
+					var u = c;
 					if (![
-							[t, d.root],
-							[i, d.rootMargin],
-							[r, d.thresholds]
+							[t, u.root],
+							[i, u.rootMargin],
+							[r, u.thresholds]
 						].some((function(e) {
-							return s.apply(void 0, e)
-						}))) return d
+							return o.apply(void 0, e)
+						}))) return u
 				}
 				return null
 			}
@@ -64,17 +64,17 @@
 						if (i) {
 							var r = i.values(),
 								n = Array.isArray(r),
-								o = 0;
+								s = 0;
 							for (r = n ? r : r[Symbol.iterator]();;) {
-								var s;
+								var o;
 								if (n) {
-									if (o >= r.length) break;
-									s = r[o++]
+									if (s >= r.length) break;
+									o = r[s++]
 								} else {
-									if ((o = r.next()).done) break;
-									s = o.value
+									if ((s = r.next()).done) break;
+									o = s.value
 								}
-								var a = s;
+								var a = o;
 								if (a.target === e.target) return a
 							}
 						}
@@ -93,7 +93,7 @@
 						return l.size
 					}, e
 				}(),
-				d = function() {
+				u = function() {
 					function e(e, t) {
 						for (var i = 0; i < t.length; i++) {
 							var r = t[i];
@@ -105,7 +105,7 @@
 					}
 				}();
 
-			function u(e, t) {
+			function d(e, t) {
 				if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return !t || "object" != typeof t && "function" != typeof t ? e : t
 			}
@@ -124,12 +124,12 @@
 						! function(e, t) {
 							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 						}(this, t);
-						for (var n = arguments.length, o = Array(n), s = 0; s < n; s++) o[s] = arguments[s];
-						return i = r = u(this, e.call.apply(e, [this].concat(o))), r.handleChange = function(e) {
+						for (var n = arguments.length, s = Array(n), o = 0; o < n; o++) s[o] = arguments[o];
+						return i = r = d(this, e.call.apply(e, [this].concat(s))), r.handleChange = function(e) {
 							r.props.onChange(e), r.props.onlyOnce && e.isIntersecting && r.unobserve()
 						}, r.handleNode = function(e) {
 							"function" == typeof r.props.children.ref && r.props.children.ref(e), r.currentTarget && e && r.currentTarget !== e && (r.unobserve(), r.shouldResetObserver = !0), r.target = e
-						}, u(r, i)
+						}, d(r, i)
 					}
 					return function(e, t) {
 						if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -143,7 +143,7 @@
 						}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 					}(t, e), t.prototype.observe = function() {
 						var e;
-						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(o.findDOMNode)(this.target)), this.observer = c.create(h, this.options), c.observe(this)
+						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(s.findDOMNode)(this.target)), this.observer = c.create(h, this.options), c.observe(this)
 					}, t.prototype.unobserve = function() {
 						c.unobserve(this)
 					}, t.prototype.reobserve = function() {
@@ -157,13 +157,13 @@
 					}, t.prototype.componentWillUpdate = function(e) {
 						var t = this;
 						this.shouldResetObserver = p.concat(["disabled"]).some((function(i) {
-							return s(e[i], t.props[i])
+							return o(e[i], t.props[i])
 						}))
 					}, t.prototype.render = function() {
 						return this.currentTarget = this.target, n.a.cloneElement(n.a.Children.only(this.props.children), {
 							ref: this.handleNode
 						})
-					}, d(t, [{
+					}, u(t, [{
 						key: "options",
 						get: function() {
 							var e = this;
@@ -189,8 +189,8 @@
 
 			function n() {}
 			e.exports = function() {
-				function e(e, t, i, n, o, s) {
-					if (s !== r) {
+				function e(e, t, i, n, s, o) {
+					if (o !== r) {
 						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw a.name = "Invariant Violation", a
 					}
@@ -236,28 +236,28 @@
 			}));
 			var r = i("./node_modules/lodash/isEqual.js"),
 				n = i.n(r),
-				o = i("./node_modules/react/index.js"),
-				s = i.n(o),
+				s = i("./node_modules/react/index.js"),
+				o = i.n(s),
 				a = i("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
 				l = i("./src/reddit/constants/viewabilityEvents.ts");
 			const c = .01,
-				d = .5,
-				u = 1,
-				h = [d, u, c],
+				u = .5,
+				d = 1,
+				h = [u, d, c],
 				p = 1e3,
 				m = 100,
 				b = 5e3,
 				v = 15e3,
 				f = 0,
-				y = 2e3,
-				w = 3e3,
+				w = 2e3,
+				y = 3e3,
 				g = e => "boolean" == typeof e.cumulative;
-			class V extends o.Component {
+			class V extends s.Component {
 				constructor(e) {
 					super(e), this.viewableImpression = {
 						timer: null,
 						event: l.a.Viewable,
-						threshold: d,
+						threshold: u,
 						viewabilityMinimum: p,
 						fired: !1,
 						timeViewingInitialized: 0
@@ -271,14 +271,14 @@
 					}, this.vendorFullyViewable = {
 						timer: null,
 						event: l.a.VendorFullyViewable,
-						threshold: u,
+						threshold: d,
 						viewabilityMinimum: m,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewableSeconds5 = {
 						timer: null,
 						event: l.a.VendorFullyViewableSeconds5,
-						threshold: d,
+						threshold: u,
 						viewabilityMinimum: b,
 						fired: !1,
 						timeViewingInitialized: 0,
@@ -289,7 +289,7 @@
 					}, this.vendorFullyViewableSeconds15 = {
 						timer: null,
 						event: l.a.VendorFullyViewableSeconds15,
-						threshold: d,
+						threshold: u,
 						viewabilityMinimum: v,
 						fired: !1,
 						timeViewingInitialized: 0,
@@ -300,27 +300,31 @@
 					}, this.videoViewable = {
 						timer: null,
 						event: l.a.VideoViewable,
-						threshold: d,
-						viewabilityMinimum: y,
-						fired: !1,
-						timeViewingInitialized: 0,
-						remainingTime: y,
-						timeViewingInterrupted: 0
-					}, this.videoFullyViewable = {
-						timer: null,
-						event: l.a.VideoFullyViewable,
 						threshold: u,
 						viewabilityMinimum: w,
 						fired: !1,
 						timeViewingInitialized: 0,
 						remainingTime: w,
 						timeViewingInterrupted: 0
+					}, this.videoFullyViewable = {
+						timer: null,
+						event: l.a.VideoFullyViewable,
+						threshold: d,
+						viewabilityMinimum: y,
+						fired: !1,
+						timeViewingInitialized: 0,
+						remainingTime: y,
+						timeViewingInterrupted: 0
 					}, this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e)
+					}, this.checkThresholdViewability = e => {
+						h.forEach(t => {
+							this.isAdequatelyInView(e, t) ? this.props.pixelPostHasEnteredView(t) : this.props.pixelPostHasExitedView(t)
+						})
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
 							event: e
-						}), this.checkViewability(e, this.viewableImpression), this.checkViewability(e, this.impression), this.checkViewability(e, this.vendorFullyViewable), this.checkViewability(e, this.vendorFullyViewableSeconds5), this.checkViewability(e, this.vendorFullyViewableSeconds15), this.props.trackVideoMetrics && (this.checkViewability(e, this.videoViewable), this.checkViewability(e, this.videoFullyViewable))
+						}), this.checkThresholdViewability(e), this.checkViewability(e, this.viewableImpression), this.checkViewability(e, this.impression), this.checkViewability(e, this.vendorFullyViewable), this.checkViewability(e, this.vendorFullyViewableSeconds5), this.checkViewability(e, this.vendorFullyViewableSeconds15), this.props.trackVideoMetrics && (this.checkViewability(e, this.videoViewable), this.checkViewability(e, this.videoFullyViewable))
 					}, this.state = {
 						event: null,
 						currentContinuousViewingStartedAt: e.continuousViewingStartedAt
@@ -373,10 +377,9 @@
 					}, t)
 				}
 				render() {
-					return s.a.createElement(a.a, {
+					return o.a.createElement(a.a, {
 						threshold: h,
-						onChange: this.handleViewabilityChange,
-						disabled: this.viewableImpression.fired && this.videoViewable.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && this.videoFullyViewable.fired || this.viewableImpression.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && !this.props.trackVideoMetrics
+						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
 			}
@@ -384,33 +387,37 @@
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "BlankPost", (function() {
-				return u
+				return d
 			}));
 			var r = i("./node_modules/react/index.js"),
 				n = i.n(r),
-				o = i("./node_modules/reselect/es/index.js"),
-				s = i("./src/reddit/components/AdViewability/index.tsx"),
+				s = i("./node_modules/reselect/es/index.js"),
+				o = i("./src/reddit/components/AdViewability/index.tsx"),
 				a = i("./src/reddit/connectors/PostViewable/index.ts"),
 				l = i("./src/reddit/selectors/posts.ts"),
 				c = i("./src/lib/classNames/index.ts");
-			const d = Object(a.a)(() => Object(o.c)({
-					post: l.I
+			const u = Object(a.a)(() => Object(s.c)({
+					post: l.K
 				})),
-				u = e => {
+				d = e => {
 					let {
 						className: t,
 						post: i,
-						onPostViewable: r
+						onPostViewable: r,
+						pixelPostHasEnteredView: s,
+						pixelPostHasExitedView: a
 					} = e;
-					return i.isSponsored ? n.a.createElement(s.a, {
+					return i.isSponsored ? n.a.createElement(o.a, {
 						onViewable: e => r(i, e),
+						pixelPostHasEnteredView: e => s(i, e),
+						pixelPostHasExitedView: e => a(i, e),
 						children: n.a.createElement("div", {
 							className: Object(c.a)(t, "Blank ".concat(i.id))
 						}),
 						trackVideoMetrics: !1
 					}) : null
 				};
-			t.default = d(u)
+			t.default = u(d)
 		},
 		"./src/reddit/connectors/PostViewable/index.ts": function(e, t, i) {
 			"use strict";
@@ -419,10 +426,12 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: n.F
+					onPostViewable: n.K,
+					pixelPostHasEnteredView: n.y,
+					pixelPostHasExitedView: n.z
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.551b5fd5531fd09a7eb5.js.map
+//# sourceMappingURL=reddit-components-BlankPost.c75342259af05d916b3c.js.map
