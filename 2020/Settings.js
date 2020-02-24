@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.23733a788c9d659cf118.js
-// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7f8cb2fbf26d11e32df7.js
+// Retrieved at 2/24/2020, 5:30:21 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -4402,7 +4402,6 @@
 						label: Js._("Live Events", null, {
 							hk: "2hC5bX"
 						}),
-						last: !0,
 						on: c,
 						onClick: this.handleLiveEventClick,
 						subtext: Js._("Notify me during live events", null, {
@@ -4412,6 +4411,7 @@
 						label: Js._("New followers", null, {
 							hk: "32VNj1"
 						}),
+						last: !0,
 						on: b,
 						onClick: this.handleUserNewFollowersClick,
 						subtext: Js._("Notify me when another user follows me", null, {
@@ -5416,4 +5416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.23733a788c9d659cf118.js.map
+//# sourceMappingURL=Settings.7f8cb2fbf26d11e32df7.js.map
