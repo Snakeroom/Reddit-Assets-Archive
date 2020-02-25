@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.603581ad48b52f646618.js
-// Retrieved at 2/24/2020, 5:30:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.418813331b8e8094b354.js
+// Retrieved at 2/24/2020, 7:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -12401,107 +12401,114 @@
 				s = n.n(r),
 				o = n("./src/lib/constants/index.ts"),
 				i = n("./src/lib/makeActionCreator/index.ts"),
-				c = n("./src/reddit/actions/toaster.ts"),
-				a = n("./src/graphql/operations/GetPostRequirements.json"),
-				d = n("./src/lib/makeGqlRequest/index.ts"),
-				u = n("./src/graphql/operations/UpdatePostRequirements.json"),
-				l = n("./src/reddit/endpoints/subreddit/about.ts"),
-				b = n("./src/reddit/i18n/utils.ts"),
-				p = n("./src/reddit/models/Toast/index.ts"),
-				f = n("./src/reddit/selectors/postRequirements.ts"),
-				m = n("./src/reddit/selectors/subreddit.ts"),
-				O = n("./src/reddit/actions/postRequirements/constants.ts");
+				c = n("./src/lib/sentry/index.ts"),
+				a = n("./src/reddit/actions/toaster.ts"),
+				d = n("./src/graphql/operations/GetPostRequirements.json"),
+				u = n("./src/lib/makeGqlRequest/index.ts"),
+				l = n("./src/graphql/operations/UpdatePostRequirements.json"),
+				b = n("./src/reddit/endpoints/subreddit/about.ts"),
+				p = n("./src/reddit/i18n/utils.ts"),
+				f = n("./src/reddit/models/Toast/index.ts"),
+				m = n("./src/reddit/selectors/postRequirements.ts"),
+				O = n("./src/reddit/selectors/subreddit.ts"),
+				g = n("./src/reddit/actions/postRequirements/constants.ts");
 			n.d(t, "a", (function() {
-				return h
+				return y
 			})), n.d(t, "b", (function() {
-				return E
+				return I
 			}));
-			const g = Object(i.a)(O.b),
-				_ = Object(i.a)(O.c),
-				j = Object(i.a)(O.a),
-				h = e => async (t, n, r) => {
+			const _ = Object(i.a)(g.b),
+				j = Object(i.a)(g.c),
+				h = Object(i.a)(g.a),
+				y = e => async (t, n, r) => {
 					let {
 						gqlContext: s
 					} = r;
 					const i = {
 						subredditName: e.toLowerCase()
 					};
-					if (Object(f.a)(n(), i)) return;
-					t(_(i));
-					let c = Object(m.D)(n(), e);
-					if (!c) {
-						const n = await Object(l.a)(s(), e, !1);
+					if (Object(m.a)(n(), i)) return;
+					t(j(i));
+					let a = Object(O.D)(n(), e);
+					if (!a) {
+						const n = await Object(b.a)(s(), e, !1);
 						if (n.ok) {
-							c = n.body.data.subreddit.id
+							a = n.body.data.subreddit.id
 						}
-						if (!c) {
+						if (!a) {
 							const e = n.error || {
 								type: o.E.NOT_FOUND_ERROR
 							};
-							return void t(j(Object.assign({}, i, {
+							return void t(h(Object.assign({}, i, {
 								error: e
 							})))
 						}
 					}
-					let u = null;
-					const b = await ((e, t) => Object(d.a)(e, Object.assign({}, a, {
+					let l = null;
+					const p = await ((e, t) => Object(u.a)(e, Object.assign({}, d, {
 						variables: t
 					})))(s(), {
-						subredditId: c
+						subredditId: a
 					});
-					if (b.ok) {
-						const e = b.body;
-						u = e.data.subreddit && e.data.subreddit.postRequirements
+					if (p.ok) {
+						const e = p.body;
+						l = e.data.subreddit && e.data.subreddit.postRequirements
 					}
-					if (u) t(g(Object.assign({}, i, {
-						requirements: u
+					if (l) t(_(Object.assign({}, i, {
+						requirements: l
 					})));
 					else {
-						const e = b.error || {
+						const n = p.error || {
 							type: o.E.UNKNOWN_ERROR
 						};
-						t(j(Object.assign({}, i, {
-							error: e
-						})))
+						t(h(Object.assign({}, i, {
+							error: n
+						}))), c.c.withScope(t => {
+							t.setExtra("info", {
+								subredditName: e,
+								responseBody: p.body,
+								responseOk: p.ok
+							}), c.c.captureMessage("Missing post requirements data!")
+						})
 					}
-				}, y = Object(i.a)(O.d), E = (e, t) => async (n, r, s) => {
+				}, E = Object(i.a)(g.d), I = (e, t) => async (n, r, s) => {
 					let {
 						gqlContext: o
 					} = s;
 					const i = e.toLowerCase(),
-						a = Object(m.D)(r(), e);
-					if (!a) return {
+						c = Object(O.D)(r(), e);
+					if (!c) return {
 						success: !1
 					};
-					const l = Object.assign({
-							subredditId: a
+					const d = Object.assign({
+							subredditId: c
 						}, t),
-						f = await ((e, t) => Object(d.a)(e, Object.assign({}, u, {
+						b = await ((e, t) => Object(u.a)(e, Object.assign({}, l, {
 							variables: t
 						})))(o(), {
-							input: l
+							input: d
 						});
-					let O = !1,
+					let m = !1,
 						g = null;
-					if (f.ok) {
-						const e = f.body;
-						O = e.data.updatePostRequirements.ok, g = I(e.data.updatePostRequirements.fieldErrors)
+					if (b.ok) {
+						const e = b.body;
+						m = e.data.updatePostRequirements.ok, g = S(e.data.updatePostRequirements.fieldErrors)
 					}
-					return O ? (n(y({
+					return m ? (n(E({
 						subredditName: i,
 						partialRequirements: t
 					})), {
 						success: !0
-					}) : (n(Object(c.e)({
-						duration: c.a,
+					}) : (n(Object(a.e)({
+						duration: a.a,
 						id: "REQUIREMENTS_SAVE_ERROR",
-						kind: p.b.Error,
-						text: g && g.length ? g[0].message : Object(b.c)("Something went wrong")
+						kind: f.b.Error,
+						text: g && g.length ? g[0].message : Object(p.c)("Something went wrong")
 					})), {
 						success: !1,
 						errors: g || void 0
 					})
-				}, I = e => e && e.map(e => Object.assign({}, e, {
+				}, S = e => e && e.map(e => Object.assign({}, e, {
 					field: s()(e.field)
 				}))
 		},
@@ -62533,4 +62540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.603581ad48b52f646618.js.map
+//# sourceMappingURL=Governance~Reddit.418813331b8e8094b354.js.map
