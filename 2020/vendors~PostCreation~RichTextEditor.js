@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~PostCreation~RichTextEditor.ad9be4301349c0672fd7.js
-// Retrieved at 2/6/2020, 4:10:16 PM by Reddit Dataminer v1.0.0
+// Retrieved at 2/29/2020, 12:36:29 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation~RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {

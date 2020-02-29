@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.617c6c35e17b77c798a4.js
-// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.60d01515cf09bff61e02.js
+// Retrieved at 2/29/2020, 12:36:29 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -146,18 +146,18 @@
 						style: n
 					})
 				},
-				v = e => {
+				C = e => {
 					const t = {};
 					return (!e.showFull && j(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = "".concat(m.i, "px"), e.shouldBlur && (t.maxWidth = j(e.height, e.width) ? "".concat(m.w, "px") : "".concat(e.width, "px"))), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = "".concat(e.maxHeight, "px")), o.a.createElement("div", {
 						className: Object(d.a)(E.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				C = Object(c.c)({
-					postPermalink: b.H,
+				v = Object(c.c)({
+					postPermalink: b.J,
 					shouldOpenPostInNewTab: f.T
 				}),
-				I = Object(i.b)(C);
+				I = Object(i.b)(v);
 			t.a = I(e => e.outboundUrl ? o.a.createElement("a", {
 				href: e.outboundUrl,
 				target: "_blank"
@@ -194,7 +194,7 @@
 						hk: "4CErse"
 					}) : n.isSpoiler && (a = s.fbt._("Click to see spoiler", null, {
 						hk: "1x3iUE"
-					})), o.a.createElement(v, O({}, n, {
+					})), o.a.createElement(C, O({}, n, {
 						className: "".concat(r ? "".concat(x.a, " ") : "").concat(n.className || "")
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
@@ -402,7 +402,7 @@
 					metadata: m.g,
 					started: m.i
 				}),
-				v = Object(a.b)(w, (e, t) => {
+				C = Object(a.b)(w, (e, t) => {
 					let {
 						postId: n
 					} = t;
@@ -427,7 +427,7 @@
 						onWatchedPercent: t => e(l.O(t, n))
 					}
 				});
-			class C extends i.a.Component {
+			class v extends i.a.Component {
 				constructor() {
 					super(...arguments), this.percentTriggered = 0, this._checkForConsumption = r()(e => {
 						if (this.props.consumed) return;
@@ -493,7 +493,7 @@
 					}, this.renderVideoPlayer()))
 				}
 			}
-			t.a = v(C)
+			t.a = C(v)
 		},
 		"./src/reddit/components/RichTextJson/Emote/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -700,9 +700,9 @@
 			})), n.d(t, "m", (function() {
 				return w
 			})), n.d(t, "n", (function() {
-				return v
-			})), n.d(t, "t", (function() {
 				return C
+			})), n.d(t, "t", (function() {
+				return v
 			})), n.d(t, "p", (function() {
 				return I
 			})), n.d(t, "o", (function() {
@@ -747,8 +747,8 @@
 				j = e => r.a.createElement("del", e),
 				_ = c.a.sub("Sub", a.a),
 				w = c.a.sup("Sup", a.a),
-				v = c.a.table("Table", a.a),
-				C = c.a.tr("Tr", a.a),
+				C = c.a.table("Table", a.a),
+				v = c.a.tr("Tr", a.a),
 				I = c.a.td("Tdl", a.a),
 				S = c.a.td("Tdc", a.a),
 				T = c.a.td("Tdr", a.a),
@@ -770,7 +770,7 @@
 			n.d(t, "c", (function() {
 				return w
 			})), n.d(t, "b", (function() {
-				return v
+				return C
 			})), n.d(t, "a", (function() {
 				return I
 			}));
@@ -825,8 +825,8 @@
 				}),
 				_ = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.u || !!e.c && !e.c.every(e => e.e === h.A && !e.t),
 				w = e => r()(e, _),
-				v = e => e.findIndex(_),
-				C = e => {
+				C = e => e.findIndex(_),
+				v = e => {
 					const {
 						className: t,
 						content: n,
@@ -835,7 +835,7 @@
 						renderMediaAsLinks: o,
 						rtJsonElementProps: c,
 						useExplicitTextColor: d
-					} = e, u = n.document, p = [], f = e.mediaMetadata || null, x = v(u), g = w(u);
+					} = e, u = n.document, p = [], f = e.mediaMetadata || null, x = C(u), g = w(u);
 					if (-1 !== x)
 						for (let i = x; i <= g; i++) {
 							const e = u[i];
@@ -901,7 +901,7 @@
 						n = O(e, ["renderFallback"]);
 					if (this.hasError || this.state.hasError) return t();
 					try {
-						return C(n)
+						return v(n)
 					} catch (s) {
 						return this.hasError = !0, this.logError(s), t()
 					}
@@ -971,14 +971,14 @@
 				j = g.a.wrapped(b.a, "A", x.a),
 				_ = g.a.wrapped(d.a, "ImageBox", x.a),
 				w = g.a.wrapped(e => r.a.createElement("p", e), "Caption", x.a),
-				v = g.a.div("Placeholder", x.a),
-				C = g.a.wrapped(e => {
+				C = g.a.div("Placeholder", x.a),
+				v = g.a.wrapped(e => {
 					var {
 						className: t,
 						e: n
 					} = e, s = O(e, ["className", "e"]);
 					const o = n === m.D ? Object(h.c)("Processing video...") : Object(h.c)("Processing image...");
-					return r.a.createElement(v, E({
+					return r.a.createElement(C, E({
 						className: t,
 						style: {
 							"--placeholder-content-text": "'".concat(o, "'")
@@ -1134,7 +1134,7 @@
 						})))
 					})(d, t, !!e.c, c)) : h.push(function(e, t) {
 						let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "en";
-						return r.a.createElement(C, {
+						return r.a.createElement(v, {
 							e,
 							key: t,
 							language: n
@@ -1234,8 +1234,8 @@
 			}
 			var _ = Object(u.b)(j),
 				w = n("./src/reddit/components/RichTextJson/media.tsx"),
-				v = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
-				C = n("./node_modules/react-redux/es/index.js"),
+				C = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
+				v = n("./node_modules/react-redux/es/index.js"),
 				I = n("./node_modules/reselect/es/index.js"),
 				S = n("./src/lib/loadWithRetries/index.ts"),
 				T = n("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -1289,7 +1289,7 @@
 					isUserInTreatment: M.e,
 					userVariant: M.a
 				});
-			var U = Object(C.b)(R)(e => {
+			var U = Object(v.b)(R)(e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -1302,12 +1302,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.vb.SmIcon:
+						case N.wb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.vb.SmIconHc:
+						case N.wb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1468,7 +1468,7 @@
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
 						if (r.e === h.A) s.push(Q(r, o));
-						else if (r.e === h.x) s.push(a.a.createElement(v.a, {
+						else if (r.e === h.x) s.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
@@ -1769,12 +1769,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.rb
+						experimentName: s.sb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.vb.SmIcon || t === s.vb.SmIconHc
+					return t === s.wb.SmIcon || t === s.wb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1800,4 +1800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.617c6c35e17b77c798a4.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.60d01515cf09bff61e02.js.map

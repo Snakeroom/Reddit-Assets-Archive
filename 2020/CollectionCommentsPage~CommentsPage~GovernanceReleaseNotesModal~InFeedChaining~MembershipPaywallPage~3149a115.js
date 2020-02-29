@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.acb3e6ef36a6980bf126.js
-// Retrieved at 2/24/2020, 7:00:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.8abb0779bc1a928b1f0f.js
+// Retrieved at 2/29/2020, 12:36:29 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -848,31 +848,31 @@
 			const O = e => {
 					const t = Object(k.c)(e, {
 						experimentEligibilitySelector: k.a,
-						experimentName: V.V
+						experimentName: V.W
 					});
-					return Object(V.Lb)(t) ? void 0 : t
+					return Object(V.Mb)(t) ? void 0 : t
 				},
-				N = e => e === V.X.On,
+				N = e => e === V.Y.On,
 				R = e => {
 					const t = Object(k.c)(e, {
 						experimentEligibilitySelector: k.a,
-						experimentName: V.W
+						experimentName: V.X
 					});
-					return Object(V.Lb)(t) ? void 0 : t
+					return Object(V.Mb)(t) ? void 0 : t
 				},
-				j = e => e === V.X.On;
+				j = e => e === V.Y.On;
 			var H = s("./src/reddit/selectors/experiments/utils.ts");
 			const A = Object(m.a)(e => Object(k.c)(e, {
-					experimentName: V.Ib,
+					experimentName: V.Jb,
 					experimentEligibilitySelector: k.a
 				}), H.a),
 				I = Object(m.a)(A, (function(e) {
 					switch (e) {
-						case V.Jb.BufferTwoSeconds:
+						case V.Kb.BufferTwoSeconds:
 							return 2;
-						case V.Jb.BufferFiveSeconds:
+						case V.Kb.BufferFiveSeconds:
 							return 5;
-						case V.Jb.BufferTenSeconds:
+						case V.Kb.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1423,7 +1423,7 @@
 					metadata: G.g,
 					muxSamplingAVariant: O,
 					muxSamplingBVariant: R,
-					postUrl: z.K,
+					postUrl: z.M,
 					started: G.i,
 					videoBufferTime: I,
 					videoBufferVariant: A,
@@ -1614,18 +1614,10 @@
 					}, this.handleClick = e => {
 						e.stopPropagation()
 					}, this.setContainerRef = e => this.HTML5StreamPlayerContainer = e, this.setControlBarRef = e => this.controlBar = e, this.setControlBarApi = e => this.controlBarApi = e, this.setVolumeRef = e => this.volumeControl = e, this.setSeekBarRef = e => this.seekBar = e, this.setSettingRef = e => this.settingControl = e, this.onCanPlay = () => {
-						if (this.HTML5StreamPlayerVideo && !this.state.videoLoaded) {
-							this.setState({
-								videoLoaded: !0,
-								videoWaiting: !1
-							});
-							let t = !0;
-							try {
-								const e = localStorage.getItem("preview_video");
-								(t = !e || JSON.parse(e)) || this.props.setVideoMuted(!1)
-							} catch (e) {}
-							this.props.autoPlay && (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref) || this.props.isExpando ? this.playVideo() : this.pauseVideo()
-						}
+						this.HTML5StreamPlayerVideo && !this.state.videoLoaded && (this.setState({
+							videoLoaded: !0,
+							videoWaiting: !1
+						}), this.props.autoPlay && (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref) || this.props.isExpando ? this.playVideo() : this.pauseVideo())
 					}, this.clearControlBarFadeTimer = () => {
 						const {
 							controlBarFadeTimer: e
@@ -1684,9 +1676,7 @@
 							const e = !this.state.isMuted;
 							this.setVideoMute(e);
 							const t = e ? "mute" : "unmute";
-							this.sendEvent("click", t);
-							const s = e ? "true" : "false";
-							localStorage.setItem("preview_video", s)
+							this.sendEvent("click", t)
 						}
 					}, this.setVideoMute = e => {
 						const t = this.HTML5StreamPlayerVideo;
@@ -1805,8 +1795,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("cf8549b-production", " ").concat(t);
-									return i && (s += " [".concat(V.Ib, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("52dcf9e-production", " ").concat(t);
+									return i && (s += " [".concat(V.Jb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2260,4 +2250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.acb3e6ef36a6980bf126.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.8abb0779bc1a928b1f0f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.9ddc39140008a1d3ffaf.js
-// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.2373e512f344bd101ed0.js
+// Retrieved at 2/29/2020, 12:36:29 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -85,7 +85,7 @@
 					eventHandler: e
 				});
 
-			function T(e) {
+			function x(e) {
 				let {
 					fn: t,
 					subscriber: i,
@@ -130,7 +130,7 @@
 					}
 				}
 			}
-			var x = i("./src/lib/scheduler/index.ts"),
+			var T = i("./src/lib/scheduler/index.ts"),
 				M = i("./src/lib/domUtils/index.ts"),
 				O = i("./src/lib/LinkedListMap/index.ts");
 			const V = (e, t) => e < 0 ? t + e : e % t;
@@ -218,10 +218,10 @@
 			};
 			var E = i("./src/reddit/components/ResizeSensor/index.tsx"),
 				z = i("./src/reddit/constants/componentSizes.ts"),
-				W = i("./src/reddit/constants/elementClassNames.ts"),
-				k = i("./src/reddit/contexts/InsideOverlay.tsx"),
-				j = i("./src/reddit/selectors/platform.ts"),
-				L = i("./src/telemetry/helpers/sendEvent.ts"),
+				k = i("./src/reddit/constants/elementClassNames.ts"),
+				W = i("./src/reddit/contexts/InsideOverlay.tsx"),
+				L = i("./src/reddit/selectors/platform.ts"),
+				j = i("./src/telemetry/helpers/sendEvent.ts"),
 				_ = i("./src/telemetry/helpers/sendTiming.ts"),
 				A = i("./src/reddit/components/Scroller/Simple.m.less"),
 				N = i.n(A);
@@ -230,11 +230,11 @@
 			}));
 			const U = z.g,
 				D = 5 * u.G,
-				q = 3,
-				B = Object(p.c)({
-					isOverlayOpen: j.h
+				B = 3,
+				q = Object(p.c)({
+					isOverlayOpen: L.h
 				}),
-				K = Object(a.b)(B),
+				K = Object(a.b)(q),
 				G = {};
 
 			function Q(e) {
@@ -286,7 +286,7 @@
 						const t = {
 							name: this.props.trackingName
 						};
-						L.b.enqueue(new x.a({
+						j.b.enqueue(new T.a({
 							args: [e, t],
 							cb: (e, t) => Object(_.a)(u.l.Redesign, {
 								data: e,
@@ -452,7 +452,7 @@
 								} = h, u = !!this.itemsInViewport.get(a);
 								if (this.elementIsUnmountable(d)) c && u && h.loaded && h.isFocusable && o.push(c.pauseContent);
 								else if (c && this.loadItemIfPossible(h, c, t, i, s, o), this.elementIsVisible(d)) {
-									n.push(h), !u && p && L.b.enqueue(new x.a({
+									n.push(h), !u && p && j.b.enqueue(new T.a({
 										cb: p,
 										args: void 0
 									}));
@@ -466,7 +466,7 @@
 									id: t,
 									trackOnExitedViewport: i
 								} = e;
-								i && !n.has(t) && L.b.enqueue(new x.a({
+								i && !n.has(t) && j.b.enqueue(new T.a({
 									cb: i,
 									args: [!1]
 								}))
@@ -484,7 +484,7 @@
 								const s = this.getChildRectangle(i);
 								s && this.elementIsUnmountable(s) && i.loaded && t.push(i)
 							}), !t.length) return;
-						const i = Math.min(Math.ceil(e.timeRemaining() / q), t.length),
+						const i = Math.min(Math.ceil(e.timeRemaining() / B), t.length),
 							s = [];
 						for (let n = 0; n < i; n++) {
 							const e = t[n];
@@ -556,7 +556,7 @@
 					})
 				}
 				setupScrollHandler() {
-					this.fpsMeter = this.props.trackingName ? T({
+					this.fpsMeter = this.props.trackingName ? x({
 						fn: this.handleScroll,
 						subscriber: this.sendFPSData,
 						timeout: D
@@ -711,7 +711,7 @@
 							id: t,
 							trackOnExitedViewport: i
 						} = e;
-						i && L.b.enqueue(new x.a({
+						i && j.b.enqueue(new T.a({
 							cb: i,
 							args: [!0]
 						}))
@@ -738,7 +738,7 @@
 					}, h.a.createElement("div", {
 						className: this.hiddenChildren[e.id] ? N.a.Hidden : void 0
 					}, e.render({
-						className: W.k,
+						className: k.k,
 						height: e.estHeight,
 						placeholderRecommended: !1,
 						remeasure: this.remeasureChild,
@@ -758,7 +758,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = K(Object(k.b)(ae))
+			t.b = K(Object(W.b)(ae))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, i) {
 			"use strict";
@@ -793,7 +793,20 @@
 					})
 				},
 				o = e => Object(s.a)(l.a.loadingBar, r(e))
+		},
+		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, i) {
+			"use strict";
+			var s = i("./node_modules/react/index.js"),
+				n = i.n(s);
+			t.a = e => n.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 22",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, n.a.createElement("g", null, n.a.createElement("path", {
+				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
+				fill: "inherit"
+			})))
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.9ddc39140008a1d3ffaf.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.2373e512f344bd101ed0.js.map
