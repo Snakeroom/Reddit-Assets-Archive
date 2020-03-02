@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.da89495665f15e2bd1f7.js
-// Retrieved at 2/29/2020, 12:36:29 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/2/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
