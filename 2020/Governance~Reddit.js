@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7529b847f7fb84c64550.js
-// Retrieved at 3/2/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.fcac3e3186bad18b59e6.js
+// Retrieved at 3/2/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -51486,9 +51486,10 @@
 						case qT.a: {
 							const {
 								primaryTagId: n
-							} = t.payload;
-							return Object.assign({}, e, {
-								selectedPrimaryTagId: n
+							} = t.payload, r = e.selectedOptions.findIndex(e => e.id === n), s = [...e.selectedOptions];
+							return r >= 0 && s.splice(r, 1), Object.assign({}, e, {
+								selectedPrimaryTagId: n,
+								selectedOptions: s
 							})
 						}
 						default:
@@ -53866,6 +53867,25 @@
 								[n]: r
 							})
 						})
+					}
+					case a.i:
+					case a.h: {
+						const {
+							subredditId: n,
+							primaryTagId: r
+						} = t.payload;
+						if (!r || !n) return e;
+						const s = e.selectedOptions[n];
+						if (s) {
+							const t = s.findIndex(e => e.id === r),
+								o = [...s];
+							return t >= 0 && o.splice(t, 1), Object.assign({}, e, {
+								selectedOptions: Object.assign({}, e.selectedOptions, {
+									[n]: o
+								})
+							})
+						}
+						return e
 					}
 					default:
 						return e
@@ -61901,4 +61921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7529b847f7fb84c64550.js.map
+//# sourceMappingURL=Governance~Reddit.fcac3e3186bad18b59e6.js.map
