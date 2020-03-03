@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6e93e112ce6eec37e58a.js
-// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bb79c646e32cd1650254.js
+// Retrieved at 3/3/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -821,7 +821,7 @@
 							l = t();
 						Object(c.G)(l) || s.push(e(Object(o.u)()));
 						const m = Object(n.a)(d, null);
-						s.push(e(Object(r.h)(m, d, {}))), await Promise.all(s);
+						s.push(e(Object(r.i)(m, d, {}))), await Promise.all(s);
 						const u = Object(i.D)(t(), d);
 						await e(Object(a.a)({
 							subredditId: u,
@@ -9777,7 +9777,7 @@
 						case Wt.e:
 						case Vt.e:
 						case qt.e:
-						case zt.b: {
+						case zt.c: {
 							const {
 								key: e,
 								token: t
@@ -11467,7 +11467,7 @@
 				d = Object.keys(o.O).map(e => "/r/:subredditName/:sort(".concat(o.O[e], ")?")),
 				l = ["/r/:subredditName", ...d],
 				m = {
-					action: i.j,
+					action: i.l,
 					chunk: o.p.SUBREDDIT,
 					component: c,
 					exact: !0,
@@ -11865,4 +11865,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.6e93e112ce6eec37e58a.js.map
+//# sourceMappingURL=Reddit.bb79c646e32cd1650254.js.map

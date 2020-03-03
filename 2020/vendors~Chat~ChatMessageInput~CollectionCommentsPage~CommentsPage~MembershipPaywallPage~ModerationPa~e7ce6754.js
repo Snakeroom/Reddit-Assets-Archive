@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754.7091ae90dbdddb4a4a9f.js
-// Retrieved at 3/3/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"], {
 		"./node_modules/linkify-it/index.js": function(e, t, a) {

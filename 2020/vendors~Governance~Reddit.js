@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.e51a0d3719646add6b72.js
-// Retrieved at 3/2/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.a799ad02e412e4826d64.js
+// Retrieved at 3/3/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, n, o) {
@@ -109,13 +109,13 @@
 						}
 					}
 				}
-				var A = n.listen = function(e) {
+				var x = n.listen = function(e) {
 					-1 === d.indexOf(e) && (d.push(e), f = u(d)), m || (p("message", O), m = !0)
 				};
 				n.stopListening = function(e) {
 					var n = d.indexOf(e); - 1 !== n && (d.splice(n, 1), d.length ? f = u(d) : (_("message", O), m = !1))
 				}, n.proxy = function(e, n) {
-					A(e), Array.isArray(n) || (n = [n]);
+					x(e), Array.isArray(n) || (n = [n]);
 					var o = h[e];
 					o ? o.targets = [].concat(o.targets, n) : o = {
 						targets: n
@@ -187,7 +187,7 @@
 					return (e.length > 1 ? e.charAt(0) + "." + e.slice(1) : e) + (n < 0 ? "e" : "e+") + n
 				}
 
-				function A(e, n, o) {
+				function x(e, n, o) {
 					var r, t;
 					if (n < 0) {
 						for (t = o + "."; ++n; t += o);
@@ -198,7 +198,7 @@
 					} else n < r && (e = e.slice(0, n) + "." + e.slice(n));
 					return e
 				}(s = function e(n) {
-					var o, r, t, s, x, E, N, I, S, R = $.prototype = {
+					var o, r, t, s, A, E, I, N, S, R = $.prototype = {
 							constructor: $,
 							toString: null,
 							valueOf: null
@@ -207,8 +207,8 @@
 						L = 20,
 						P = 4,
 						F = -7,
-						M = 21,
-						k = -1e7,
+						k = 21,
+						M = -1e7,
 						U = 1e7,
 						D = !1,
 						T = 1,
@@ -264,7 +264,7 @@
 						if (_ = _.slice(d, ++p)) {
 							if (p -= d, m && $.DEBUG && p > 15 && (e > h || e !== l(e))) throw Error(c + g.s * e);
 							if ((a = a - d - 1) > U) g.c = g.e = null;
-							else if (a < k) g.c = [g.e = 0];
+							else if (a < M) g.c = [g.e = 0];
 							else {
 								if (g.e = a, g.c = [], d = (a + 1) % f, a < 0 && (d += f), d < p) {
 									for (d && g.c.push(+_.slice(0, d)), p -= f; d < p;) g.c.push(+_.slice(d, d += f));
@@ -279,11 +279,11 @@
 					function z(e, n, o, r) {
 						var t, s, i, u, l;
 						if (null == o ? o = P : b(o, 0, 8), !e.c) return e.toString();
-						if (t = e.c[0], i = e.e, null == n) l = v(e.c), l = 1 == r || 2 == r && i <= F ? O(l, i) : A(l, i, "0");
+						if (t = e.c[0], i = e.e, null == n) l = v(e.c), l = 1 == r || 2 == r && i <= F ? O(l, i) : x(l, i, "0");
 						else if (s = (e = W(new $(e), n, o)).e, u = (l = v(e.c)).length, 1 == r || 2 == r && (n <= s || s <= F)) {
 							for (; u < n; l += "0", u++);
 							l = O(l, s)
-						} else if (n -= i, l = A(l, s, "0"), s + 1 > u) {
+						} else if (n -= i, l = x(l, s, "0"), s + 1 > u) {
 							if (--n > 0)
 								for (l += "."; n--; l += "0");
 						} else if ((n += s - u) > 0)
@@ -306,7 +306,7 @@
 					function H(e, n, o) {
 						for (var r = 1, t = n.length; !n[--t]; n.pop());
 						for (t = n[0]; t >= 10; t /= 10, r++);
-						return (o = r + o * f - 1) > U ? e.c = e.e = null : o < k ? e.c = [e.e = 0] : (e.e = o, e.c = n), e
+						return (o = r + o * f - 1) > U ? e.c = e.e = null : o < M ? e.c = [e.e = 0] : (e.e = o, e.c = n), e
 					}
 
 					function W(e, n, o, r) {
@@ -342,7 +342,7 @@
 									}
 								for (s = _.length; 0 === _[--s]; _.pop());
 							}
-							e.e > U ? e.c = e.e = null : e.e < k && (e.c = [e.e = 0])
+							e.e > U ? e.c = e.e = null : e.e < M && (e.c = [e.e = 0])
 						}
 						return e
 					}
@@ -350,11 +350,11 @@
 						var n, o;
 						if (null != e) {
 							if ("object" != typeof e) throw Error(a + "Object expected: " + e);
-							if (e.hasOwnProperty(n = "DECIMAL_PLACES") && (b(o = e[n], 0, _, n), L = o), e.hasOwnProperty(n = "ROUNDING_MODE") && (b(o = e[n], 0, 8, n), P = o), e.hasOwnProperty(n = "EXPONENTIAL_AT") && (y(o = e[n]) ? (b(o[0], -_, 0, n), b(o[1], 0, _, n), F = o[0], M = o[1]) : (b(o, -_, _, n), F = -(M = o < 0 ? -o : o))), e.hasOwnProperty(n = "RANGE"))
-								if (y(o = e[n])) b(o[0], -_, -1, n), b(o[1], 1, _, n), k = o[0], U = o[1];
+							if (e.hasOwnProperty(n = "DECIMAL_PLACES") && (b(o = e[n], 0, _, n), L = o), e.hasOwnProperty(n = "ROUNDING_MODE") && (b(o = e[n], 0, 8, n), P = o), e.hasOwnProperty(n = "EXPONENTIAL_AT") && (y(o = e[n]) ? (b(o[0], -_, 0, n), b(o[1], 0, _, n), F = o[0], k = o[1]) : (b(o, -_, _, n), F = -(k = o < 0 ? -o : o))), e.hasOwnProperty(n = "RANGE"))
+								if (y(o = e[n])) b(o[0], -_, -1, n), b(o[1], 1, _, n), M = o[0], U = o[1];
 								else {
 									if (b(o, -_, _, n), !o) throw Error(a + n + " cannot be zero: " + o);
-									k = -(U = o < 0 ? -o : o)
+									M = -(U = o < 0 ? -o : o)
 								} if (e.hasOwnProperty(n = "CRYPTO")) {
 								if ((o = e[n]) !== !!o) throw Error(a + n + " not true or false: " + o);
 								if (o) {
@@ -374,8 +374,8 @@
 						return {
 							DECIMAL_PLACES: L,
 							ROUNDING_MODE: P,
-							EXPONENTIAL_AT: [F, M],
-							RANGE: [k, U],
+							EXPONENTIAL_AT: [F, k],
+							RANGE: [M, U],
 							CRYPTO: D,
 							MODULO_MODE: T,
 							POW_PRECISION: B,
@@ -426,15 +426,15 @@
 							var u, l, a, c, d, f, h, m, p = n.indexOf("."),
 								_ = L,
 								g = P;
-							for (p >= 0 && (c = B, B = 0, n = n.replace(".", ""), f = (m = new $(r)).pow(n.length - p), B = c, m.c = e(A(v(f.c), f.e, "0"), 10, t, "0123456789"), m.e = m.c.length), a = c = (h = e(n, r, t, i ? (u = G, "0123456789") : (u = "0123456789", G))).length; 0 == h[--c]; h.pop());
+							for (p >= 0 && (c = B, B = 0, n = n.replace(".", ""), f = (m = new $(r)).pow(n.length - p), B = c, m.c = e(x(v(f.c), f.e, "0"), 10, t, "0123456789"), m.e = m.c.length), a = c = (h = e(n, r, t, i ? (u = G, "0123456789") : (u = "0123456789", G))).length; 0 == h[--c]; h.pop());
 							if (!h[0]) return u.charAt(0);
-							if (p < 0 ? --a : (f.c = h, f.e = a, f.s = s, h = (f = o(f, m, _, g, t)).c, d = f.r, a = f.e), p = h[l = a + _ + 1], c = t / 2, d = d || l < 0 || null != h[l + 1], d = g < 4 ? (null != p || d) && (0 == g || g == (f.s < 0 ? 3 : 2)) : p > c || p == c && (4 == g || d || 6 == g && 1 & h[l - 1] || g == (f.s < 0 ? 8 : 7)), l < 1 || !h[0]) n = d ? A(u.charAt(1), -_, u.charAt(0)) : u.charAt(0);
+							if (p < 0 ? --a : (f.c = h, f.e = a, f.s = s, h = (f = o(f, m, _, g, t)).c, d = f.r, a = f.e), p = h[l = a + _ + 1], c = t / 2, d = d || l < 0 || null != h[l + 1], d = g < 4 ? (null != p || d) && (0 == g || g == (f.s < 0 ? 3 : 2)) : p > c || p == c && (4 == g || d || 6 == g && 1 & h[l - 1] || g == (f.s < 0 ? 8 : 7)), l < 1 || !h[0]) n = d ? x(u.charAt(1), -_, u.charAt(0)) : u.charAt(0);
 							else {
 								if (h.length = l, d)
 									for (--t; ++h[--l] > t;) h[l] = 0, l || (++a, h = [1].concat(h));
 								for (c = h.length; !h[--c];);
 								for (p = 0, n = ""; p <= c; n += u.charAt(h[p++]));
-								n = A(n, a, u.charAt(0))
+								n = x(n, a, u.charAt(0))
 							}
 							return n
 						}
@@ -464,25 +464,25 @@
 							for (; !e[0] && e.length > 1; e.splice(0, 1));
 						}
 						return function(r, t, s, i, u) {
-							var a, c, h, m, p, _, v, j, b, y, w, O, A, x, E, N, I, S = r.s == t.s ? 1 : -1,
+							var a, c, h, m, p, _, v, j, b, y, w, O, x, A, E, I, N, S = r.s == t.s ? 1 : -1,
 								R = r.c,
 								C = t.c;
 							if (!(R && R[0] && C && C[0])) return new $(r.s && t.s && (R ? !C || R[0] != C[0] : C) ? R && 0 == R[0] || !C ? 0 * S : S / 0 : NaN);
 							for (b = (j = new $(S)).c = [], S = s + (c = r.e - t.e) + 1, u || (u = d, c = g(r.e / f) - g(t.e / f), S = S / f | 0), h = 0; C[h] == (R[h] || 0); h++);
 							if (C[h] > (R[h] || 0) && c--, S < 0) b.push(1), m = !0;
 							else {
-								for (x = R.length, N = C.length, h = 0, S += 2, (p = l(u / (C[0] + 1))) > 1 && (C = e(C, p, u), R = e(R, p, u), N = C.length, x = R.length), A = N, w = (y = R.slice(0, N)).length; w < N; y[w++] = 0);
-								I = C.slice(), I = [0].concat(I), E = C[0], C[1] >= u / 2 && E++;
+								for (A = R.length, I = C.length, h = 0, S += 2, (p = l(u / (C[0] + 1))) > 1 && (C = e(C, p, u), R = e(R, p, u), I = C.length, A = R.length), x = I, w = (y = R.slice(0, I)).length; w < I; y[w++] = 0);
+								N = C.slice(), N = [0].concat(N), E = C[0], C[1] >= u / 2 && E++;
 								do {
-									if (p = 0, (a = n(C, y, N, w)) < 0) {
-										if (O = y[0], N != w && (O = O * u + (y[1] || 0)), (p = l(O / E)) > 1)
-											for (p >= u && (p = u - 1), v = (_ = e(C, p, u)).length, w = y.length; 1 == n(_, y, v, w);) p--, o(_, N < v ? I : C, v, u), v = _.length, a = 1;
+									if (p = 0, (a = n(C, y, I, w)) < 0) {
+										if (O = y[0], I != w && (O = O * u + (y[1] || 0)), (p = l(O / E)) > 1)
+											for (p >= u && (p = u - 1), v = (_ = e(C, p, u)).length, w = y.length; 1 == n(_, y, v, w);) p--, o(_, I < v ? N : C, v, u), v = _.length, a = 1;
 										else 0 == p && (a = p = 1), v = (_ = C.slice()).length;
 										if (v < w && (_ = [0].concat(_)), o(y, _, w, u), w = y.length, -1 == a)
-											for (; n(C, y, N, w) < 1;) p++, o(y, N < w ? I : C, w, u), w = y.length
+											for (; n(C, y, I, w) < 1;) p++, o(y, I < w ? N : C, w, u), w = y.length
 									} else 0 === a && (p++, y = [0]);
-									b[h++] = p, y[0] ? y[w++] = R[A] || 0 : (y = [R[A]], w = 1)
-								} while ((A++ < x || null != y[0]) && S--);
+									b[h++] = p, y[0] ? y[w++] = R[x] || 0 : (y = [R[x]], w = 1)
+								} while ((x++ < A || null != y[0]) && S--);
 								m = null != y[0], b[0] || b.splice(0, 1)
 							}
 							if (u == d) {
@@ -491,13 +491,13 @@
 							} else j.e = c, j.r = +m;
 							return j
 						}
-					}(), x = /^(-?)0([xbo])(?=\w[\w.]*$)/i, E = /^([^.]+)\.$/, N = /^\.([^.]+)$/, I = /^-?(Infinity|NaN)$/, S = /^\s*\+(?=[\w.])|^\s+|\s+$/g, t = function(e, n, o, r) {
+					}(), A = /^(-?)0([xbo])(?=\w[\w.]*$)/i, E = /^([^.]+)\.$/, I = /^\.([^.]+)$/, N = /^-?(Infinity|NaN)$/, S = /^\s*\+(?=[\w.])|^\s+|\s+$/g, t = function(e, n, o, r) {
 						var t, s = o ? n : n.replace(S, "");
-						if (I.test(s)) e.s = isNaN(s) ? null : s < 0 ? -1 : 1, e.c = e.e = null;
+						if (N.test(s)) e.s = isNaN(s) ? null : s < 0 ? -1 : 1, e.c = e.e = null;
 						else {
-							if (!o && (s = s.replace(x, (function(e, n, o) {
+							if (!o && (s = s.replace(A, (function(e, n, o) {
 									return t = "x" == (o = o.toLowerCase()) ? 16 : "b" == o ? 2 : 8, r && r != t ? e : n
-								})), r && (t = r, s = s.replace(E, "$1").replace(N, "0.$1")), n != s)) return new $(s, t);
+								})), r && (t = r, s = s.replace(E, "$1").replace(I, "0.$1")), n != s)) return new $(s, t);
 							if ($.DEBUG) throw Error(a + "Not a" + (r ? " base " + r : "") + " number: " + n);
 							e.c = e.e = e.s = null
 						}
@@ -706,11 +706,11 @@
 						var n, o = this,
 							t = o.s,
 							s = o.e;
-						return null === s ? t ? (n = "Infinity", t < 0 && (n = "-" + n)) : n = "NaN" : (n = v(o.c), null == e ? n = s <= F || s >= M ? O(n, s) : A(n, s, "0") : (b(e, 2, G.length, "Base"), n = r(A(n, s, "0"), 10, e, t, !0)), t < 0 && o.c[0] && (n = "-" + n)), n
+						return null === s ? t ? (n = "Infinity", t < 0 && (n = "-" + n)) : n = "NaN" : (n = v(o.c), null == e ? n = s <= F || s >= k ? O(n, s) : x(n, s, "0") : (b(e, 2, G.length, "Base"), n = r(x(n, s, "0"), 10, e, t, !0)), t < 0 && o.c[0] && (n = "-" + n)), n
 					}, R.valueOf = R.toJSON = function() {
 						var e, n = this,
 							o = n.e;
-						return null === o ? n.toString() : (e = v(n.c), e = o <= F || o >= M ? O(e, o) : A(e, o, "0"), n.s < 0 ? "-" + e : e)
+						return null === o ? n.toString() : (e = v(n.c), e = o <= F || o >= k ? O(e, o) : x(e, o, "0"), n.s < 0 ? "-" + e : e)
 					}, R._isBigNumber = !0, null != n && $.set(n), $
 				}()).default = s.BigNumber = s, void 0 === (r = function() {
 					return s
@@ -1007,18 +1007,18 @@
 			e.exports = function(e, n, o, v, j, b, y) {
 				var w = _(e, o),
 					O = _(n, o),
-					A = y.get(O);
-				if (A) r(e, o, A);
+					x = y.get(O);
+				if (x) r(e, o, x);
 				else {
-					var x = b ? b(w, O, o + "", e, n, y) : void 0,
-						E = void 0 === x;
+					var A = b ? b(w, O, o + "", e, n, y) : void 0,
+						E = void 0 === A;
 					if (E) {
-						var N = a(O),
-							I = !N && d(O),
-							S = !N && !I && p(O);
-						x = O, N || I || S ? a(w) ? x = w : c(w) ? x = i(w) : I ? (E = !1, x = t(O, !0)) : S ? (E = !1, x = s(O, !0)) : x = [] : m(O) || l(O) ? (x = w, l(w) ? x = g(w) : h(w) && !f(w) || (x = u(O))) : E = !1
+						var I = a(O),
+							N = !I && d(O),
+							S = !I && !N && p(O);
+						A = O, I || N || S ? a(w) ? A = w : c(w) ? A = i(w) : N ? (E = !1, A = t(O, !0)) : S ? (E = !1, A = s(O, !0)) : A = [] : m(O) || l(O) ? (A = w, l(w) ? A = g(w) : h(w) && !f(w) || (A = u(O))) : E = !1
 					}
-					E && (y.set(O, x), j(x, O, v, b, y), y.delete(O)), r(e, o, x)
+					E && (y.set(O, A), j(A, O, v, b, y), y.delete(O)), r(e, o, A)
 				}
 			}
 		},
@@ -1217,6 +1217,34 @@
 				}));
 			e.exports = t
 		},
+		"./node_modules/lodash/negate.js": function(e, n) {
+			var o = "Expected a function";
+			e.exports = function(e) {
+				if ("function" != typeof e) throw new TypeError(o);
+				return function() {
+					var n = arguments;
+					switch (n.length) {
+						case 0:
+							return !e.call(this);
+						case 1:
+							return !e.call(this, n[0]);
+						case 2:
+							return !e.call(this, n[0], n[1]);
+						case 3:
+							return !e.call(this, n[0], n[1], n[2])
+					}
+					return !e.apply(this, n)
+				}
+			}
+		},
+		"./node_modules/lodash/omitBy.js": function(e, n, o) {
+			var r = o("./node_modules/lodash/_baseIteratee.js"),
+				t = o("./node_modules/lodash/negate.js"),
+				s = o("./node_modules/lodash/pickBy.js");
+			e.exports = function(e, n) {
+				return s(e, t(r(n)))
+			}
+		},
 		"./node_modules/lodash/set.js": function(e, n, o) {
 			var r = o("./node_modules/lodash/_baseSet.js");
 			e.exports = function(e, n, o) {
@@ -1399,4 +1427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Governance~Reddit.e51a0d3719646add6b72.js.map
+//# sourceMappingURL=vendors~Governance~Reddit.a799ad02e412e4826d64.js.map
