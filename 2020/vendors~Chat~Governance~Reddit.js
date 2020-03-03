@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.35f9e513bca4e60dedae.js
-// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@babel/runtime/helpers/esm/extends.js": function(e, t, n) {

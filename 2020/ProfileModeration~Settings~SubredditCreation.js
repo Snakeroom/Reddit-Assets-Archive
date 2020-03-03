@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.713de75ff24170652cd6.js
-// Retrieved at 2/6/2020, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.29d4a464a289835617dd.js
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -147,9 +147,9 @@
 			})), n.d(t, "m", (function() {
 				return Q
 			})), n.d(t, "j", (function() {
-				return Y
+				return K
 			})), n.d(t, "k", (function() {
-				return q
+				return U
 			})), n.d(t, "n", (function() {
 				return Z
 			})), n.d(t, "h", (function() {
@@ -193,8 +193,8 @@
 				_ = n.n(w),
 				y = n("./src/reddit/controls/Button/index.tsx"),
 				O = n("./src/reddit/layout/row/Inline/index.tsx"),
-				N = n("./src/reddit/models/Flair/index.ts"),
-				k = n("./src/reddit/selectors/tooltip.ts"),
+				k = n("./src/reddit/models/Flair/index.ts"),
+				N = n("./src/reddit/selectors/tooltip.ts"),
 				S = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				j = n.n(S),
 				T = n("./src/lib/lessComponent.tsx");
@@ -248,7 +248,7 @@
 				z = T.a.wrapped(E.a, "LinkIcon", j.a),
 				V = T.a.button("LinkButton", j.a),
 				J = T.a.wrapped(v.a, "ArrowRight", j.a),
-				Y = e => r.a.createElement(A, {
+				K = e => r.a.createElement(A, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -257,14 +257,14 @@
 				}, r.a.createElement(H, {
 					className: e.textContainerClassName
 				}, r.a.createElement(P, null, e.label, e.isRequired && r.a.createElement(D, null)), r.a.createElement(L, null, e.subtext)), r.a.createElement(G, null, e.children)),
-				K = T.a.div("StyledFlair", j.a),
-				X = T.a.wrapped(K, "SpoilerFlair", j.a),
-				U = T.a.wrapped(K, "NSFWFlair", j.a),
-				q = e => {
+				Y = T.a.div("StyledFlair", j.a),
+				X = T.a.wrapped(Y, "SpoilerFlair", j.a),
+				q = T.a.wrapped(Y, "NSFWFlair", j.a),
+				U = e => {
 					switch (e.flair) {
-						case N.f.Nsfw:
-							return r.a.createElement(U, null, "NSFW");
-						case N.f.Spoiler:
+						case k.f.Nsfw:
+							return r.a.createElement(q, null, "NSFW");
+						case k.f.Spoiler:
 							return r.a.createElement(X, null, "SPOILER");
 						default:
 							return null
@@ -358,7 +358,7 @@
 				me = T.a.wrapped(g.b, "DropdownTriangle", j.a),
 				ue = T.a.div("DescriptionsRow", j.a),
 				pe = Object(o.c)({
-					isOpen: (e, t) => Object(k.b)(t.id)(e)
+					isOpen: (e, t) => Object(N.b)(t.id)(e)
 				}),
 				xe = Object(s.b)(pe, (e, t) => ({
 					openDropdown: () => {
@@ -393,7 +393,7 @@
 					indent: e.indent,
 					last: e.last
 				}, r.a.createElement(H, null, r.a.createElement(P, null, e.label), r.a.createElement(L, null, e.subtext)), r.a.createElement(G, null, e.children)),
-				be = e => r.a.createElement(Y, {
+				be = e => r.a.createElement(K, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -412,7 +412,7 @@
 					maxChars: e.maxChars,
 					text: e.value
 				})),
-				fe = e => r.a.createElement(Y, {
+				fe = e => r.a.createElement(K, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -596,7 +596,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return v
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var a = n("./node_modules/lodash/throttle.js"),
@@ -606,14 +606,15 @@
 				l = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
 				c = n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
-				d = n("./src/reddit/layout/row/InlineButton/index.tsx"),
-				m = n("./src/reddit/controls/Dropdown/index.m.less"),
-				u = n.n(m),
-				p = n("./src/reddit/controls/Dropdown/row.m.less"),
-				x = n.n(p);
+				d = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				m = n("./src/reddit/layout/row/InlineButton/index.tsx"),
+				u = n("./src/reddit/controls/Dropdown/index.m.less"),
+				p = n.n(u),
+				x = n("./src/reddit/controls/Dropdown/row.m.less"),
+				h = n.n(x);
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -621,7 +622,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var b = function(e, t) {
+			var f = function(e, t) {
 				var n = {};
 				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -630,7 +631,7 @@
 				}
 				return n
 			};
-			class f extends o.a.Component {
+			class v extends o.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = r()(() => {
 						const {
@@ -644,8 +645,8 @@
 						props: e
 					} = this, t = e.skipRoleAttr ? null : {
 						role: "menuitem"
-					}, n = Object(l.a)(x.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? o.a.createElement(i.a, h({}, t, {
+					}, n = Object(l.a)(h.a.iconWrapper, e.iconWrapperClassName);
+					return e.href ? o.a.createElement(i.a, b({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -658,8 +659,8 @@
 					}), e.children && o.a.createElement("span", {
 						className: n
 					}, e.children), o.a.createElement("span", {
-						className: Object(l.a)(x.a.text, e.textClassName)
-					}, e.displayText)) : o.a.createElement(d.a, h({}, t, {
+						className: Object(l.a)(h.a.text, e.textClassName)
+					}, e.displayText)) : o.a.createElement(m.a, b({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -670,21 +671,24 @@
 					}), e.children && (e.noIcon ? o.a.createElement("div", null, e.children) : o.a.createElement("span", {
 						className: n
 					}, e.children)), e.displayText && o.a.createElement("span", {
-						className: Object(l.a)(x.a.text, e.textClassName)
-					}, e.displayText), e.showDropdownTriangle && o.a.createElement(c.a, {
-						className: u.a.dropdownTriangle
+						className: Object(l.a)(h.a.text, e.textClassName)
+					}, e.displayText), e.showSelectedCheckmark && e.isSelected && o.a.createElement(d.a, {
+						className: h.a.checkmark
+					}), e.showDropdownTriangle && o.a.createElement(c.a, {
+						className: p.a.dropdownTriangle
 					}))
 				}
 			}
 			t.b = e => {
 				var {
 					className: t
-				} = e, n = b(e, ["className"]);
-				const a = Object(l.a)(x.a.row, t, {
-					[x.a.mIsInteractive]: !n.noHover,
-					[x.a.mIsSelected]: n.isSelected
+				} = e, n = f(e, ["className"]);
+				const a = Object(l.a)(h.a.row, t, {
+					[h.a.mIsInteractive]: !n.noHover,
+					[h.a.mIsSelected]: n.isSelected,
+					[h.a.topics]: n.isTopicsStyle
 				});
-				return o.a.createElement(f, h({
+				return o.a.createElement(v, b({
 					className: a
 				}, n))
 			}
@@ -695,6 +699,8 @@
 				iconStyles: "_2XOVBjNLHjJIznEsn35vs2",
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
+				topics: "kR_ljR-F8vtc-ORj1uipB",
+				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
 			}
@@ -755,9 +761,9 @@
 				E = n("./src/reddit/controls/ErrorText/index.m.less"),
 				w = n.n(E);
 			n.d(t, "a", (function() {
-				return N
-			})), n.d(t, "c", (function() {
 				return k
+			})), n.d(t, "c", (function() {
+				return N
 			}));
 			const _ = Object(d.c)({
 				activeModalId: x.a
@@ -816,7 +822,7 @@
 			const O = Object(c.b)(_, e => ({
 					toggleErrorTextModal: t => e(Object(u.i)(t))
 				}))(y),
-				N = e => {
+				k = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -832,7 +838,7 @@
 						key: t
 					}, e))) : null
 				},
-				k = e => i.a.createElement(N, {
+				N = e => i.a.createElement(k, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
@@ -1137,4 +1143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.713de75ff24170652cd6.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.29d4a464a289835617dd.js.map

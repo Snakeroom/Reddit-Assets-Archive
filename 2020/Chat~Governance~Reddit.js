@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.55e81aa0dcd874fe64f4.js
-// Retrieved at 3/3/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},

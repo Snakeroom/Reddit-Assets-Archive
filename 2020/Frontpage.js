@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Frontpage.4f2d3b05a975e0b757f1.js
-// Retrieved at 3/3/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {

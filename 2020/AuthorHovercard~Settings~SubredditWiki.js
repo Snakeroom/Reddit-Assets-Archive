@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.bb1efae490cdce441b77.js
-// Retrieved at 2/20/2020, 8:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.4215ed67993712a78300.js
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -84,7 +84,7 @@
 				K = r.n(D);
 			const {
 				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = C.a.wrapped(k.a, "BanIcon", K.a), Y = C.a.wrapped(S.a, "MuteIcon", K.a), q = C.a.wrapped(B.a, "UnbanIcon", K.a), z = Object(o.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = C.a.wrapped(k.a, "BanIcon", K.a), q = C.a.wrapped(S.a, "MuteIcon", K.a), Y = C.a.wrapped(B.a, "UnbanIcon", K.a), z = Object(o.c)({
 				hasModMailPermissions: Object(u.a)(F.c.mail),
 				isUserBanned: (e, t) => !!Object(Z.g)(e, {
 					subredditId: t.subredditId,
@@ -116,7 +116,7 @@
 						onClick: () => {
 							a(this.props.user.id), o(_.e(t))
 						}
-					}, s.a.createElement(q, null), R._("Unban User", null, {
+					}, s.a.createElement(Y, null), R._("Unban User", null, {
 						hk: "1aASyW"
 					})) : s.a.createElement(A.a, {
 						role: "button",
@@ -130,7 +130,7 @@
 						onClick: () => {
 							i(), o(_.d(t))
 						}
-					}, s.a.createElement(Y, null), R._("Mute User", null, {
+					}, s.a.createElement(q, null), R._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
@@ -307,7 +307,7 @@
 				}, e))
 			};
 			const Oe = Object(o.c)({
-					tokenName: c.o,
+					tokenName: c.p,
 					activeTooltipId: m.a,
 					isCurrentUser: (e, t) => {
 						const r = Object(p.i)(e);
@@ -762,8 +762,8 @@
 				c = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => d.has((Object(a.e)(e) || "").toLowerCase()) || i.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: o.G,
-					experimentName: n.Y
-				}) === n.fb.Enabled
+					experimentName: n.Z
+				}) === n.gb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -783,15 +783,15 @@
 				return C
 			})), r.d(t, "j", (function() {
 				return x
-			})), r.d(t, "o", (function() {
-				return I
 			})), r.d(t, "p", (function() {
+				return I
+			})), r.d(t, "q", (function() {
 				return h
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "o", (function() {
 				return L
-			})), r.d(t, "k", (function() {
-				return E
 			})), r.d(t, "l", (function() {
+				return E
+			})), r.d(t, "m", (function() {
 				return w
 			})), r.d(t, "s", (function() {
 				return f
@@ -799,11 +799,11 @@
 				return _
 			})), r.d(t, "f", (function() {
 				return j
-			})), r.d(t, "q", (function() {
-				return H
-			})), r.d(t, "m", (function() {
-				return O
 			})), r.d(t, "r", (function() {
+				return H
+			})), r.d(t, "n", (function() {
+				return O
+			})), r.d(t, "k", (function() {
 				return M
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -924,4 +924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.bb1efae490cdce441b77.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.4215ed67993712a78300.js.map

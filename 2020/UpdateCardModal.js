@@ -1,0 +1,355 @@
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.ea3dcb5dc35c51d8c2a0.js
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+(window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
+	["UpdateCardModal"], {
+		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
+			e.exports = {
+				formCellWide: "_3WoE3ObhsRzGd3NqoVTQ6D",
+				formCell: "_1JGAet5jPDcpg7Tru23HMo",
+				cardInput: "_1anVEbF9dn-ObJGVmmlFwL",
+				cardInputError: "cNiLkxu8bhSFHcvFVbfAM",
+				nameOnCard: "yS2Q83Vi28PL7t1XJExTA",
+				errorMessage: "oGQBXeEv9yu4mXmkfKI4Y",
+				elementPlaceholder: "_1wqbqqyQ0kPt-0QYCJqWdf"
+			}
+		},
+		"./src/reddit/components/CheckoutForm/index.tsx": function(e, t, a) {
+			"use strict";
+			var r = a("./node_modules/react/index.js"),
+				n = a.n(r),
+				s = a("./node_modules/react-redux/es/index.js"),
+				c = a("./node_modules/reselect/es/index.js"),
+				d = a("./src/lib/classNames/index.ts"),
+				o = a("./node_modules/react-stripe-elements/es/index.js"),
+				l = a("./src/reddit/i18n/utils.ts"),
+				i = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				m = a("./src/reddit/selectors/goldPurchaseModals.ts"),
+				p = a("./src/reddit/components/CheckoutForm/index.m.less"),
+				u = a.n(p);
+			const C = Object(c.c)({
+					cardCvcValidation: m.h,
+					cardExpiryValidation: m.i,
+					cardName: m.j,
+					cardNumberValidation: m.k,
+					nameOnCardValidation: m.m,
+					postalCodeValidation: m.n
+				}),
+				b = Object(s.b)(C, (e, t) => ({
+					onCardElementChange: t => e(Object(i.cardElementChange)(t)),
+					onNameInput: t => e(Object(i.cardNameInput)({
+						cardName: t
+					}))
+				}));
+			class h extends n.a.Component {
+				constructor() {
+					super(...arguments), this.computedStyle = getComputedStyle(document.body), this.state = {
+						cardNumberReady: !1,
+						cardExpiryReady: !1,
+						cardCVCReady: !1,
+						postalCodeReady: !1
+					}, this.onChange = e => {
+						const t = e.currentTarget.value;
+						t !== this.props.cardName && this.props.onNameInput(t)
+					}, this.onCardNumberReady = () => this.setState({
+						cardNumberReady: !0
+					}), this.onCardExpiryReady = () => this.setState({
+						cardExpiryReady: !0
+					}), this.onCardCVCReady = () => this.setState({
+						cardCVCReady: !0
+					}), this.onPostalCodeReady = () => this.setState({
+						postalCodeReady: !0
+					})
+				}
+				render() {
+					const {
+						className: e,
+						cardCvcValidation: t,
+						cardExpiryValidation: a,
+						cardName: r,
+						cardNumberValidation: s,
+						onCardElementChange: c,
+						nameOnCardValidation: i,
+						postalCodeValidation: m
+					} = this.props, {
+						cardNumberReady: p,
+						cardExpiryReady: C,
+						cardCVCReady: b,
+						postalCodeReady: h
+					} = this.state, E = {
+						base: {
+							lineHeight: "40px",
+							color: this.computedStyle.getPropertyValue("--newRedditTheme-bodyText"),
+							"::placeholder": {
+								color: this.computedStyle.getPropertyValue("--newRedditTheme-metaText")
+							}
+						}
+					};
+					return n.a.createElement("div", {
+						className: Object(d.a)(u.a.checkoutForm, e)
+					}, n.a.createElement("div", {
+						className: u.a.formCellWide
+					}, n.a.createElement("input", {
+						className: Object(d.a)(u.a.cardInput, u.a.nameOnCard, {
+							[u.a.cardInputError]: !!i
+						}),
+						type: "text",
+						placeholder: Object(l.c)("NAME ON CARD"),
+						onChange: this.onChange,
+						value: r
+					})), n.a.createElement("div", {
+						className: u.a.formCell
+					}, n.a.createElement(o.CardNumberElement, {
+						className: Object(d.a)(u.a.cardInput, {
+							[u.a.cardInputError]: !!s
+						}),
+						onChange: c,
+						onReady: this.onCardNumberReady,
+						placeholder: Object(l.c)("CARD NUMBER"),
+						style: E
+					}), !p && n.a.createElement("div", {
+						className: u.a.elementPlaceholder
+					}, Object(l.c)("CARD NUMBER"))), n.a.createElement("div", {
+						className: u.a.formCell
+					}, n.a.createElement(o.CardExpiryElement, {
+						className: Object(d.a)(u.a.cardInput, {
+							[u.a.cardInputError]: !!a
+						}),
+						onChange: c,
+						onReady: this.onCardExpiryReady,
+						placeholder: Object(l.c)("MM/YY"),
+						style: E
+					}), !C && n.a.createElement("div", {
+						className: u.a.elementPlaceholder
+					}, Object(l.c)("MM/YY"))), n.a.createElement("div", {
+						className: u.a.formCell
+					}, n.a.createElement(o.CardCVCElement, {
+						className: Object(d.a)(u.a.cardInput, {
+							[u.a.cardInputError]: !!t
+						}),
+						onChange: c,
+						onReady: this.onCardCVCReady,
+						placeholder: Object(l.c)("CCV"),
+						style: E
+					}), !b && n.a.createElement("div", {
+						className: u.a.elementPlaceholder
+					}, Object(l.c)("CCV"))), n.a.createElement("div", {
+						className: u.a.formCell
+					}, n.a.createElement(o.PostalCodeElement, {
+						className: Object(d.a)(u.a.cardInput, {
+							[u.a.cardInputError]: !!m
+						}),
+						onChange: c,
+						onReady: this.onPostalCodeReady,
+						placeholder: Object(l.c)("ZIP CODE"),
+						style: E
+					}), !h && n.a.createElement("div", {
+						className: u.a.elementPlaceholder
+					}, Object(l.c)("ZIP CODE"))))
+				}
+			}
+			t.a = Object(o.injectStripe)(b(h))
+		},
+		"./src/reddit/components/UpdateCardModal/index.m.less": function(e, t, a) {
+			e.exports = {
+				updateCardModal: "os7Z68gjeVRl7RuPuGdC2",
+				descriptionText: "YkayV3NPfGSSJNBYEMGfk",
+				poweredByStripeIcon: "G3cUFBALhoZEboe63P47m",
+				agreementLink: "_1a6aYfR0raBv5P0pBXS2JB",
+				updateButton: "ysTohje3Abv2wK8ZJRYjg"
+			}
+		},
+		"./src/reddit/components/UpdateCardModal/index.tsx": function(e, t, a) {
+			"use strict";
+			a.r(t);
+			var r = a("./src/config.ts"),
+				n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				s = a("./node_modules/react/index.js"),
+				c = a.n(s),
+				d = a("./node_modules/react-redux/es/index.js"),
+				o = a("./node_modules/react-stripe-elements/es/index.js"),
+				l = a("./node_modules/reselect/es/index.js"),
+				i = a("./src/lib/classNames/index.ts"),
+				m = a("./src/reddit/components/UpdateCardModal/index.m.less"),
+				p = a.n(m),
+				u = a("./src/higherOrderComponents/asModal/index.tsx"),
+				C = a("./src/app/strings/index.ts"),
+				b = a("./src/lib/constants/index.ts"),
+				h = a("./src/lib/makeActionCreator/index.ts"),
+				E = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				y = a("./src/reddit/actions/modal.ts"),
+				O = a("./src/reddit/actions/toaster.ts"),
+				x = a("./src/reddit/components/Settings/PremiumForm.tsx"),
+				j = a("./src/reddit/endpoints/gold/purchase.ts"),
+				g = a("./src/reddit/models/Toast/index.ts"),
+				N = a("./src/reddit/selectors/activeModalId.ts"),
+				R = a("./src/reddit/selectors/goldPurchaseModals.ts"),
+				_ = a("./src/reddit/selectors/user.ts"),
+				f = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const P = Object(h.a)(f.c),
+				v = () => async (e, t) => {
+					Object(N.b)(x.a)(t()) && (e(Object(y.i)(x.a)), e(P()))
+				}, I = Object(h.a)(f.u), S = Object(h.a)(f.t), k = (e, t) => {
+					switch (e && e.error && e.error.type) {
+						case b.E.USER_DOESNT_EXIST:
+						case b.E.VALIDATION_ERROR:
+							return Object(C.a)(t, "error.type.invalidUser");
+						case b.E.NO_STRIPE_SUBSCRIPTION:
+							return Object(C.a)(t, "error.type.noStripeSubscription");
+						case b.E.CREDIT_CARD_FAILURE:
+							return e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg || Object(C.a)(t, "error.generic");
+						case b.E.AUTHENTICATION_ERROR:
+							return Object(C.a)(t, "error.authentication");
+						default:
+							return Object(C.a)(t, "error.generic")
+					}
+				}, M = e => async t => {
+					await t(S()), t(Object(O.e)({
+						kind: g.b.Error,
+						duration: O.a,
+						text: e
+					}))
+				}, w = Object(h.a)(f.v), V = e => async (t, a) => {
+					t(w(e)), t(v());
+					const r = a(),
+						n = Object(_.P)(r),
+						s = Object(C.a)(n, "gold.checkoutForm.infoSuccessfullyUpdated");
+					t(Object(O.e)({
+						kind: g.b.SuccessCommunity,
+						text: s
+					}))
+				};
+			var T = a("./src/reddit/components/CheckoutForm/index.tsx"),
+				A = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				D = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				B = a("./src/reddit/controls/TextButton/index.tsx"),
+				L = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+
+			function U() {
+				return (U = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var a = arguments[t];
+						for (var r in a) Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const F = Object(l.c)({
+					isPending: R.v
+				}),
+				Y = Object(d.b)(F, (e, t) => ({
+					closeModal: () => e(v()),
+					submitCard: t => e((e => async (t, a, r) => {
+						let {
+							apiContext: n
+						} = r;
+						t(I()), t(Object(E.stripeTokenPending)());
+						const s = a(),
+							c = Object(_.P)(s),
+							d = await t(Object(E.validateAndCreateStripeToken)(e));
+						if (!d) {
+							const e = Object(R.l)(a()) || Object(C.a)(c, "error.type.genericCardValidation");
+							return await t(M(e))
+						}
+						try {
+							const e = await Object(j.g)(n(), c, d);
+							if (e.ok) {
+								const a = e.body,
+									{
+										brand: r,
+										card_id: n,
+										last4: s,
+										exp_month: c,
+										exp_year: d
+									} = a;
+								await t(V({
+									brand: r,
+									cardId: n,
+									last4: s,
+									expirationMonth: c,
+									expirationYear: d
+								}))
+							} else {
+								const a = k(e, c);
+								await t(M(a))
+							}
+						} catch (o) {
+							const e = Object(C.a)(c, "error.generic");
+							await t(M(e))
+						}
+					})(t))
+				})),
+				K = 15;
+			class G extends c.a.Component {
+				constructor() {
+					super(...arguments), this.handleEscapeKey = e => {
+						27 === e.keyCode && this.props.closeModal()
+					}, this.handleSubmitCard = () => {
+						const {
+							stripe: e,
+							submitCard: t
+						} = this.props;
+						e && t(e)
+					}
+				}
+				componentWillUnmount() {
+					document.removeEventListener("keydown", this.handleEscapeKey)
+				}
+				componentDidMount() {
+					document.addEventListener("keydown", this.handleEscapeKey)
+				}
+				render() {
+					const {
+						className: e,
+						closeModal: t,
+						isPending: a
+					} = this.props;
+					return c.a.createElement(A.c, {
+						className: Object(i.a)(e, p.a.updateCardModal)
+					}, c.a.createElement(A.g, null, c.a.createElement(L.a, null, c.a.createElement(A.n, null, n.fbt._("Update Payment Information", null, {
+						hk: "1PrvDp"
+					})), c.a.createElement(B.a, {
+						onClick: t
+					}, c.a.createElement(A.b, null))), c.a.createElement(A.m, {
+						className: p.a.descriptionText
+					}, n.fbt._("Change the Credit Card associated with your Premium subscription. This will be reflected in your next billing cycle.", null, {
+						hk: "1btBv6"
+					}))), c.a.createElement(A.j, null, c.a.createElement(T.a, {
+						className: p.a.creditCard
+					}), c.a.createElement("a", {
+						href: "https://stripe.com",
+						target: "_blank"
+					}, c.a.createElement("img", {
+						className: p.a.poweredByStripeIcon,
+						src: "".concat(r.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
+					})), c.a.createElement("div", {
+						className: p.a.agreementLink
+					}, n.fbt._("By purchasing Coins, you agree to the {agreement}", [n.fbt._param("agreement", c.a.createElement("a", {
+						href: "https://www.redditinc.com/policies/user-agreement",
+						target: "_blank"
+					}, n.fbt._("Reddit User Agreement", null, {
+						hk: "2oIYsO"
+					})))], {
+						hk: "3VFT3g"
+					}))), c.a.createElement(A.e, null, c.a.createElement(A.o, {
+						className: p.a.updateButton,
+						"data-redditstyle": !0,
+						disabled: a,
+						onClick: this.handleSubmitCard
+					}, a ? c.a.createElement(D.a, {
+						sizePx: K
+					}) : n.fbt._("update", null, {
+						hk: "4FAt0s"
+					}))))
+				}
+			}
+			const J = Object(o.injectStripe)(Object(u.a)(G));
+			t.default = Y(e => c.a.createElement(o.StripeProvider, {
+				apiKey: r.a.stripe.apiKey
+			}, c.a.createElement(o.Elements, null, c.a.createElement(J, U({}, e, {
+				withOverlay: !0,
+				onOverlayClick: e.closeModal
+			})))))
+		}
+	}
+]);
+//# sourceMappingURL=UpdateCardModal.ea3dcb5dc35c51d8c2a0.js.map

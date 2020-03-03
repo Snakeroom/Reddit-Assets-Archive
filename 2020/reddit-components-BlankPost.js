@@ -1,186 +1,158 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.551b5fd5531fd09a7eb5.js
-// Retrieved at 2/24/2020, 1:10:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.23914b64f413625cb41d.js
+// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
 			"use strict";
 			var r = i("./node_modules/react/index.js"),
 				n = i.n(r),
-				o = i("./node_modules/react-dom/index.js");
-			i("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), i("./node_modules/invariant/browser.js");
+				o = i("./node_modules/react-dom/index.js"),
+				s = (i("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
 
-			function s(e, t) {
+			function a(e, t) {
 				return Array.isArray(e) && Array.isArray(t) && e.length === t.length ? e.some((function(i, r) {
-					return s(e[r], t[r])
+					return a(e[r], t[r])
 				})) : e !== t
 			}
+			var l = new Map;
 
-			function a() {
-				var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-					t = e.root || null,
-					i = function(e) {
-						var t = /^-?\d*\.?\d+(px|%)$/,
-							i = (e || "0px").split(/\s+/).map((function(e) {
-								if (!t.test(e)) throw new Error("rootMargin must be specified in pixels or percent");
+			function d(e) {
+				void 0 === e && (e = {});
+				for (var t, i = e.root || null, r = function(e) {
+						var t = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
+								if (!s.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
 								return e
-							}));
-						return i[1] = i[1] || i[0], i[2] = i[2] || i[0], i[3] = i[3] || i[1], i.join(" ")
-					}(e.rootMargin),
-					r = Array.isArray(e.threshold) ? e.threshold : [void 0 !== e.threshold ? e.threshold : 0],
-					n = l.keys(),
-					o = Array.isArray(n),
-					a = 0;
-				for (n = o ? n : n[Symbol.iterator]();;) {
-					var c;
-					if (o) {
-						if (a >= n.length) break;
-						c = n[a++]
-					} else {
-						if ((a = n.next()).done) break;
-						c = a.value
-					}
-					var d = c;
-					if (![
-							[t, d.root],
-							[i, d.rootMargin],
-							[r, d.thresholds]
-						].some((function(e) {
-							return s.apply(void 0, e)
-						}))) return d
+							})),
+							i = t[0],
+							r = void 0 === i ? "0px" : i,
+							n = t[1],
+							o = void 0 === n ? r : n,
+							a = t[2],
+							l = void 0 === a ? r : a,
+							d = t[3];
+						return r + " " + o + " " + l + " " + (void 0 === d ? o : d)
+					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], o = l.keys(); t = o.next().value;) {
+					if (!(i !== t.root || r !== t.rootMargin || a(n, t.thresholds))) return t
 				}
 				return null
 			}
-			var l = new Map,
-				c = function() {
-					function e() {
-						! function(e, t) {
-							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-						}(this, e)
-					}
-					return e.create = function(e, t) {
-						return a(t) || new IntersectionObserver(e, t)
-					}, e.findElement = function(e, t) {
-						var i = l.get(t);
-						if (i) {
-							var r = i.values(),
-								n = Array.isArray(r),
-								o = 0;
-							for (r = n ? r : r[Symbol.iterator]();;) {
-								var s;
-								if (n) {
-									if (o >= r.length) break;
-									s = r[o++]
-								} else {
-									if ((o = r.next()).done) break;
-									s = o.value
-								}
-								var a = s;
-								if (a.target === e.target) return a
-							}
-						}
-						return null
-					}, e.observe = function(e) {
-						var t = void 0;
-						l.has(e.observer) ? t = l.get(e.observer) : (t = new Set, l.set(e.observer, t)), t.add(e), e.observer.observe(e.target)
-					}, e.unobserve = function(e) {
-						if (l.has(e.observer)) {
-							var t = l.get(e.observer);
-							t.delete(e) && (t.size > 0 ? e.observer.unobserve(e.target) : (e.observer.disconnect(), l.delete(e.observer)))
-						}
-					}, e.clear = function() {
-						l.clear()
-					}, e.count = function() {
-						return l.size
-					}, e
-				}(),
-				d = function() {
-					function e(e, t) {
-						for (var i = 0; i < t.length; i++) {
-							var r = t[i];
-							r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
-						}
-					}
-					return function(t, i, r) {
-						return i && e(t.prototype, i), r && e(t, r), t
-					}
-				}();
+
+			function c(e, t) {
+				var i = l.get(e);
+				if (i)
+					for (var r, n = i.values(); r = n.next().value;)
+						if (r.target === t.target) return r;
+				return null
+			}
 
 			function u(e, t) {
-				if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-				return !t || "object" != typeof t && "function" != typeof t ? e : t
+				for (var i = 0; i < e.length; i++) {
+					var r = c(t, e[i]);
+					r && r.handleChange(e[i])
+				}
 			}
 
-			function h(e, t) {
-				e.forEach((function(e) {
-					var i = c.findElement(e, t);
-					i && i.handleChange(e)
-				}))
+			function h(e) {
+				return d(e) || new IntersectionObserver(u, e)
 			}
-			var p = ["root", "rootMargin", "threshold"],
-				m = Object.prototype,
-				b = function(e) {
-					function t() {
-						var i, r;
-						! function(e, t) {
-							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-						}(this, t);
-						for (var n = arguments.length, o = Array(n), s = 0; s < n; s++) o[s] = arguments[s];
-						return i = r = u(this, e.call.apply(e, [this].concat(o))), r.handleChange = function(e) {
-							r.props.onChange(e), r.props.onlyOnce && e.isIntersecting && r.unobserve()
-						}, r.handleNode = function(e) {
-							"function" == typeof r.props.children.ref && r.props.children.ref(e), r.currentTarget && e && r.currentTarget !== e && (r.unobserve(), r.shouldResetObserver = !0), r.target = e
-						}, u(r, i)
-					}
-					return function(e, t) {
-						if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-						e.prototype = Object.create(t && t.prototype, {
-							constructor: {
-								value: e,
-								enumerable: !1,
-								writable: !0,
-								configurable: !0
-							}
-						}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-					}(t, e), t.prototype.observe = function() {
-						var e;
-						this.target = (e = this.target, n.a.isValidElement(e) && "string" == typeof e.type ? this.target : Object(o.findDOMNode)(this.target)), this.observer = c.create(h, this.options), c.observe(this)
-					}, t.prototype.unobserve = function() {
-						c.unobserve(this)
-					}, t.prototype.reobserve = function() {
-						this.unobserve(), this.props.disabled || this.observe()
-					}, t.prototype.componentDidMount = function() {
-						this.props.disabled || this.observe()
-					}, t.prototype.componentWillUnmount = function() {
-						this.unobserve()
-					}, t.prototype.componentDidUpdate = function() {
-						this.shouldResetObserver && this.reobserve()
-					}, t.prototype.componentWillUpdate = function(e) {
-						var t = this;
-						this.shouldResetObserver = p.concat(["disabled"]).some((function(i) {
-							return s(e[i], t.props[i])
-						}))
-					}, t.prototype.render = function() {
-						return this.currentTarget = this.target, n.a.cloneElement(n.a.Children.only(this.props.children), {
-							ref: this.handleNode
-						})
-					}, d(t, [{
-						key: "options",
+			var m = i("./node_modules/invariant/browser.js"),
+				p = i.n(m),
+				v = {},
+				b = Object.create(null, {
+					errorReporter: {
+						configurable: !1,
 						get: function() {
-							var e = this;
-							return p.reduce((function(t, i) {
-								if (m.hasOwnProperty.call(e.props, i)) {
-									var r, n = e.props[i];
-									return "root" === i && "[object String]" === m.toString.call(e.props[i]) && (n = document.querySelector(n)), Object.assign({}, t, ((r = {})[i] = n, r))
-								}
-								return t
-							}), {})
+							return v.errorReporter || function(e) {
+								return p()(!1, e)
+							}
+						},
+						set: function(e) {
+							if ("function" != typeof e) throw new Error("ReactIntersectionObserver: `Config.errorReporter` must be a callable");
+							v.errorReporter = e
 						}
-					}]), t
+					}
+				});
+
+			function w(e) {
+				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+				return e
+			}
+
+			function f(e, t, i) {
+				return t in e ? Object.defineProperty(e, t, {
+					value: i,
+					enumerable: !0,
+					configurable: !0,
+					writable: !0
+				}) : e[t] = i, e
+			}
+			var g = ["root", "rootMargin", "threshold"],
+				y = ["root", "rootMargin", "threshold", "disabled"],
+				V = Object.prototype,
+				T = V.hasOwnProperty,
+				_ = V.toString,
+				x = function(e) {
+					return g.reduce((function(t, i) {
+						if (T.call(e, i)) {
+							var r = "root" === i && "[object String]" === _.call(e[i]);
+							t[i] = r ? document.querySelector(e[i]) : e[i]
+						}
+						return t
+					}), {})
+				},
+				S = function(e) {
+					var t, i;
+
+					function r() {
+						for (var t, i = arguments.length, r = new Array(i), n = 0; n < i; n++) r[n] = arguments[n];
+						return f(w(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
+							t.props.onChange(e, t.externalUnobserve)
+						})), f(w(t), "handleNode", (function(e) {
+							var i = t.props.children;
+							if (null != i) {
+								var r = i.ref;
+								r && ("function" == typeof r ? r(e) : "object" == typeof r && (r.current = e))
+							}
+							t.targetNode = e && Object(o.findDOMNode)(e)
+						})), f(w(t), "observe", (function() {
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(x(t.props)), t.target = t.targetNode, e = w(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (b.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							var e
+						})), f(w(t), "unobserve", (function(e) {
+							! function(e, t) {
+								if (l.has(e.observer)) {
+									var i = l.get(e.observer);
+									i.delete(e) && (i.size > 0 ? e.observer.unobserve(t) : (e.observer.disconnect(), l.delete(e.observer)))
+								}
+							}(w(t), e)
+						})), f(w(t), "externalUnobserve", (function() {
+							t.unobserve(t.targetNode)
+						})), t
+					}
+					i = e, (t = r).prototype = Object.create(i.prototype), t.prototype.constructor = t, t.__proto__ = i;
+					var s = r.prototype;
+					return s.getSnapshotBeforeUpdate = function(e) {
+						var t = this;
+						this.prevTargetNode = this.targetNode;
+						var i = y.some((function(i) {
+							return a(t.props[i], e[i])
+						}));
+						return i && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), i
+					}, s.componentDidUpdate = function(e, t, i) {
+						var r = !1;
+						i || (r = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (i || r) && this.observe()
+					}, s.componentDidMount = function() {
+						this.observe()
+					}, s.componentWillUnmount = function() {
+						this.targetNode && this.unobserve(this.targetNode)
+					}, s.render = function() {
+						var e = this.props.children;
+						return null != e ? n.a.cloneElement(n.a.Children.only(e), {
+							ref: this.handleNode
+						}) : null
+					}, r
 				}(n.a.Component);
-			b.displayName = "IntersectionObserver";
-			var v = b;
-			i.d(t, "a", (function() {
-				return v
+			f(S, "displayName", "IntersectionObserver"), i.d(t, "a", (function() {
+				return S
 			}))
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, i) {
@@ -188,7 +160,9 @@
 			var r = i("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function n() {}
-			e.exports = function() {
+
+			function o() {}
+			o.resetWarningCache = n, e.exports = function() {
 				function e(e, t, i, n, o, s) {
 					if (s !== r) {
 						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -211,15 +185,18 @@
 					any: e,
 					arrayOf: t,
 					element: e,
+					elementType: e,
 					instanceOf: t,
 					node: e,
 					objectOf: t,
 					oneOf: t,
 					oneOfType: t,
 					shape: t,
-					exact: t
+					exact: t,
+					checkPropTypes: o,
+					resetWarningCache: n
 				};
-				return i.checkPropTypes = n, i.PropTypes = i, i
+				return i.PropTypes = i, i
 			}
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, t, i) {
@@ -240,56 +217,45 @@
 				s = i.n(o),
 				a = i("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
 				l = i("./src/reddit/constants/viewabilityEvents.ts");
-			const c = .01,
-				d = .5,
+			const d = .01,
+				c = .5,
 				u = 1,
-				h = [d, u, c],
-				p = 1e3,
-				m = 100,
-				b = 5e3,
-				v = 15e3,
-				f = 0,
-				y = 2e3,
-				w = 3e3,
-				g = e => "boolean" == typeof e.cumulative;
+				h = [c, u, d],
+				m = 1e3,
+				p = 100,
+				v = 5e3,
+				b = 15e3,
+				w = 0,
+				f = 2e3,
+				g = 3e3,
+				y = e => "boolean" == typeof e.cumulative;
 			class V extends o.Component {
 				constructor(e) {
 					super(e), this.viewableImpression = {
 						timer: null,
 						event: l.a.Viewable,
-						threshold: d,
-						viewabilityMinimum: p,
+						threshold: c,
+						viewabilityMinimum: m,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.impression = {
 						timer: null,
 						event: l.a.Impression,
-						threshold: c,
-						viewabilityMinimum: f,
+						threshold: d,
+						viewabilityMinimum: w,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewable = {
 						timer: null,
 						event: l.a.VendorFullyViewable,
 						threshold: u,
-						viewabilityMinimum: m,
+						viewabilityMinimum: p,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewableSeconds5 = {
 						timer: null,
 						event: l.a.VendorFullyViewableSeconds5,
-						threshold: d,
-						viewabilityMinimum: b,
-						fired: !1,
-						timeViewingInitialized: 0,
-						remainingTime: b,
-						timeViewingInterrupted: 0,
-						cumulative: !0,
-						cumulativeElapsedTime: 0
-					}, this.vendorFullyViewableSeconds15 = {
-						timer: null,
-						event: l.a.VendorFullyViewableSeconds15,
-						threshold: d,
+						threshold: c,
 						viewabilityMinimum: v,
 						fired: !1,
 						timeViewingInitialized: 0,
@@ -297,26 +263,37 @@
 						timeViewingInterrupted: 0,
 						cumulative: !0,
 						cumulativeElapsedTime: 0
+					}, this.vendorFullyViewableSeconds15 = {
+						timer: null,
+						event: l.a.VendorFullyViewableSeconds15,
+						threshold: c,
+						viewabilityMinimum: b,
+						fired: !1,
+						timeViewingInitialized: 0,
+						remainingTime: b,
+						timeViewingInterrupted: 0,
+						cumulative: !0,
+						cumulativeElapsedTime: 0
 					}, this.videoViewable = {
 						timer: null,
 						event: l.a.VideoViewable,
-						threshold: d,
-						viewabilityMinimum: y,
+						threshold: c,
+						viewabilityMinimum: f,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: y,
+						remainingTime: f,
 						timeViewingInterrupted: 0
 					}, this.videoFullyViewable = {
 						timer: null,
 						event: l.a.VideoFullyViewable,
 						threshold: u,
-						viewabilityMinimum: w,
+						viewabilityMinimum: g,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: w,
+						remainingTime: g,
 						timeViewingInterrupted: 0
 					}, this.handleViewabilityChange = e => {
-						this.checkViewabilityByType(e)
+						this.checkViewabilityByType(e), this.handleThresholds(e)
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
 							event: e
@@ -348,6 +325,15 @@
 					let t;
 					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = e.viewabilityMinimum - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e.timer))
 				}
+				handleThresholds(e) {
+					const {
+						pixelPostHasEnteredView: t,
+						pixelPostHasExitedView: i
+					} = this.props, r = h.filter(t => this.isAdequatelyInView(e, t));
+					r.length > 0 && t(r);
+					const n = h.filter(t => !this.isAdequatelyInView(e, t));
+					n.length > 0 && i(n)
+				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.isIntersecting && e.intersectionRatio >= t
 				}
@@ -356,7 +342,7 @@
 						const e = this.getLengthForTimer(t);
 						return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 					}
-					g(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
+					y(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
 				}
 				clearTimer(e) {
 					e && clearTimeout(e)
@@ -375,8 +361,7 @@
 				render() {
 					return s.a.createElement(a.a, {
 						threshold: h,
-						onChange: this.handleViewabilityChange,
-						disabled: this.viewableImpression.fired && this.videoViewable.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && this.videoFullyViewable.fired || this.viewableImpression.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && !this.props.trackVideoMetrics
+						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
 			}
@@ -392,25 +377,28 @@
 				s = i("./src/reddit/components/AdViewability/index.tsx"),
 				a = i("./src/reddit/connectors/PostViewable/index.ts"),
 				l = i("./src/reddit/selectors/posts.ts"),
-				c = i("./src/lib/classNames/index.ts");
-			const d = Object(a.a)(() => Object(o.c)({
-					post: l.I
+				d = i("./src/lib/classNames/index.ts");
+			const c = Object(a.a)(() => Object(o.c)({
+					post: l.M
 				})),
 				u = e => {
 					let {
 						className: t,
 						post: i,
-						onPostViewable: r
+						onPostViewable: r,
+						pixelPostHasEnteredView: o,
+						pixelPostHasExitedView: a
 					} = e;
 					return i.isSponsored ? n.a.createElement(s.a, {
 						onViewable: e => r(i, e),
-						children: n.a.createElement("div", {
-							className: Object(c.a)(t, "Blank ".concat(i.id))
-						}),
+						pixelPostHasEnteredView: e => o(i, e),
+						pixelPostHasExitedView: e => a(i, e),
 						trackVideoMetrics: !1
-					}) : null
+					}, n.a.createElement("div", {
+						className: Object(d.a)(t, "Blank ".concat(i.id))
+					})) : null
 				};
-			t.default = d(u)
+			t.default = c(u)
 		},
 		"./src/reddit/connectors/PostViewable/index.ts": function(e, t, i) {
 			"use strict";
@@ -419,10 +407,12 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: n.F
+					onPostViewable: n.M,
+					pixelPostHasEnteredView: n.z,
+					pixelPostHasExitedView: n.A
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.551b5fd5531fd09a7eb5.js.map
+//# sourceMappingURL=reddit-components-BlankPost.23914b64f413625cb41d.js.map
