@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/FramedGild.e72a4d523f744f6f55e3.js
-// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild"], {
 		"./src/reddit/pages/FramedGildPage/index.m.less": function(e, d, s) {
