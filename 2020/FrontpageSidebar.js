@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a8f7f5fc15f0da37c906.js
-// Retrieved at 3/3/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2327d19fd7f372045470.js
+// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -202,11 +202,11 @@
 				M = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
 				Z = n.n(M),
 				X = n("./src/lib/lessComponent.tsx");
-			const K = Object(r.b)(null, (e, t) => ({
+			const V = Object(r.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(H.a)(t.permalink)),
-					clearLinks: () => e(Object(U.q)())
+					clearLinks: () => e(Object(U.s)())
 				})),
-				V = X.a.button("ClearButton", Z.a);
+				K = X.a.button("ClearButton", Z.a);
 			class G extends a.a.Component {
 				render() {
 					return a.a.createElement(R.b, null, a.a.createElement(J, {
@@ -214,17 +214,17 @@
 						headerText: Object(d.c)("Recent posts"),
 						language: this.props.language,
 						posts: this.props.posts
-					}), a.a.createElement(V, {
+					}), a.a.createElement(K, {
 						onClick: this.props.clearLinks
 					}, Object(d.c)("Clear")))
 				}
 			}
-			var Y = K(G),
+			var Y = V(G),
 				q = n("./src/reddit/selectors/posts.ts"),
 				z = n("./src/reddit/selectors/user.ts");
 			const $ = Object(o.c)({
 				language: z.P,
-				recentPosts: q.T
+				recentPosts: q.V
 			});
 			var ee = Object(r.b)($, (e, t) => ({
 					openLightbox: t => () => e(Object(H.a)(t.permalink))
@@ -378,7 +378,7 @@
 				x = n("./src/reddit/selectors/user.ts"),
 				E = n("./src/reddit/components/MiniPost/index.m.less"),
 				h = n.n(E);
-			const k = Object(o.a)(e => e, b.K, b.c, x.P, (e, t, n, s) => {
+			const k = Object(o.a)(e => e, b.M, b.c, x.P, (e, t, n, s) => {
 					return {
 						crosspost: n,
 						language: s,
@@ -934,4 +934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.a8f7f5fc15f0da37c906.js.map
+//# sourceMappingURL=FrontpageSidebar.2327d19fd7f372045470.js.map

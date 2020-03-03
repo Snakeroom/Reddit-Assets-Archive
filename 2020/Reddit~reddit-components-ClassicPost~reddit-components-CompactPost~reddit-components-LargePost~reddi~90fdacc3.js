@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d773acd35cc525030894.js
-// Retrieved at 3/2/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.283fb6cf187f41ce799f.js
+// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -270,7 +270,7 @@
 						remainingTime: v,
 						timeViewingInterrupted: 0
 					}, this.handleViewabilityChange = e => {
-						this.checkViewabilityByType(e)
+						this.checkViewabilityByType(e), this.handleThresholds(e)
 					}, this.checkViewabilityByType = e => {
 						r()(this.state.event, e) || this.setState({
 							event: e
@@ -302,6 +302,15 @@
 					let t;
 					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = e.viewabilityMinimum - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e.timer))
 				}
+				handleThresholds(e) {
+					const {
+						pixelPostHasEnteredView: t,
+						pixelPostHasExitedView: s
+					} = this.props, n = m.filter(t => this.isAdequatelyInView(e, t));
+					n.length > 0 && t(n);
+					const r = m.filter(t => !this.isAdequatelyInView(e, t));
+					r.length > 0 && s(r)
+				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.isIntersecting && e.intersectionRatio >= t
 				}
@@ -329,8 +338,7 @@
 				render() {
 					return o.a.createElement(a.a, {
 						threshold: m,
-						onChange: this.handleViewabilityChange,
-						disabled: this.viewableImpression.fired && this.videoViewable.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && this.videoFullyViewable.fired || this.viewableImpression.fired && this.impression.fired && this.vendorFullyViewable.fired && this.vendorFullyViewableSeconds5.fired && this.vendorFullyViewableSeconds15.fired && !this.props.trackVideoMetrics
+						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
 			}
@@ -1217,7 +1225,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(x.o)(e, {
+						return Object(x.p)(e, {
 							postId: s.id
 						})
 					},
@@ -1228,7 +1236,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(x.B)(e, s)
+						return Object(x.C)(e, s)
 					},
 					subredditName: (e, t) => {
 						let {
@@ -1638,7 +1646,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(F.o)(e, {
+						return Object(F.p)(e, {
 							postId: s.id
 						})
 					},
@@ -2183,7 +2191,9 @@
 			t.a = (e, t) => Object(n.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: r.H
+					onPostViewable: r.M,
+					pixelPostHasEnteredView: r.z,
+					pixelPostHasExitedView: r.A
 				})
 			}(t))
 		},
@@ -3485,4 +3495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d773acd35cc525030894.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.283fb6cf187f41ce799f.js.map

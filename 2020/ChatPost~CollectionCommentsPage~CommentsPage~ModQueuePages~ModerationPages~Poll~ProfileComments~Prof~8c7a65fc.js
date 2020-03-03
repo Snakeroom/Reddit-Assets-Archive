@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a580539227b8b91dda2a.js
-// Retrieved at 3/3/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.23fc3f525018377141c3.js
+// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -352,7 +352,7 @@
 						onToggleHideAwardModal: () => e(Object(O.i)("AwardBadges--Modal--HideAwardConfirmation"))
 					}
 				});
-			class K extends n.a.Component {
+			class Y extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async () => {
 						const {
@@ -508,7 +508,7 @@
 					}))
 				}
 			}
-			t.a = G(Object(_.b)(K))
+			t.a = G(Object(_.b)(Y))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -993,10 +993,10 @@
 				})),
 				j = s("./src/reddit/selectors/posts.ts");
 			var y = Object(n.b)(() => Object(a.c)({
-				post: j.K,
-				subredditOrProfile: j.W,
+				post: j.M,
+				subredditOrProfile: j.Y,
 				isModerator: (e, t) => {
-					const s = Object(j.W)(e, t);
+					const s = Object(j.Y)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1030,11 +1030,11 @@
 				}
 			}));
 			var E = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(j.W)(e, {
+				subredditOrProfile: (e, t) => Object(j.Y)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(j.W)(e, {
+					const s = Object(j.Y)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -1056,10 +1056,10 @@
 				}
 			}));
 			var A = Object(n.b)(() => Object(a.c)({
-				post: j.K,
-				subredditOrProfile: j.W,
+				post: j.M,
+				subredditOrProfile: j.Y,
 				isModerator: (e, t) => {
-					const s = Object(j.W)(e, t);
+					const s = Object(j.Y)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1244,7 +1244,7 @@
 				})), s.d(t, "a", (function() {
 					return Z
 				})), s.d(t, "b", (function() {
-					return K
+					return Y
 				})),
 				function(e) {
 					e.StickyPost = "sticky", e.Lightbox = "lightbox"
@@ -1274,7 +1274,7 @@
 						tooltipId: t
 					}))
 				})),
-				K = e => {
+				Y = e => {
 					const t = !e.isDeleted && e.post.distinguishType === i.C.ADMIN;
 					return r.a.createElement(g.a, {
 						className: z.a.authorLink,
@@ -1291,7 +1291,7 @@
 						className: z.a.contractorIcon
 					}), !1)
 				};
-			class X extends r.a.PureComponent {
+			class K extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onShowCreatedTooltip = () => this.props.onShowTooltip(this.props.createdTooltipId)
 				}
@@ -1328,7 +1328,7 @@
 						flair: f,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: F
-					})), Object(U.h)(h.author) ? r.a.createElement(K, {
+					})), Object(U.h)(h.author) ? r.a.createElement(Y, {
 						post: h,
 						isDeleted: !0,
 						renderContractorBadge: R,
@@ -1347,7 +1347,7 @@
 						ignore: Object(U.h)(h.author) || !!h.distinguishType && h.distinguishType !== i.C.NONE,
 						subredditId: h.belongsTo.id,
 						userId: h.authorId
-					}, r.a.createElement(K, {
+					}, r.a.createElement(Y, {
 						post: h,
 						renderContractorBadge: R,
 						style: {
@@ -1401,7 +1401,7 @@
 					})))
 				}
 			}
-			t.d = J(Object(M.b)(Object(c.a)(G(X))))
+			t.d = J(Object(M.b)(Object(c.a)(G(K))))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a580539227b8b91dda2a.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.23fc3f525018377141c3.js.map

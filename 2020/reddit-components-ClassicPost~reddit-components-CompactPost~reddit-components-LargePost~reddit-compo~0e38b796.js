@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.a97612019dd9925b47ea.js
-// Retrieved at 3/3/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.fa36feaed9c727943c17.js
+// Retrieved at 3/3/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -478,7 +478,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(E.r)(e, {
+						return Object(E.s)(e, {
 							postId: s.id
 						})
 					},
@@ -705,42 +705,46 @@
 				}
 				render() {
 					const {
-						afterClickTracking: e,
-						buffering: t,
-						children: s,
-						className: n,
-						continuousViewingStartedAt: r,
-						gildModalIsOpen: a,
-						makePostContainerId: d,
-						playing: u,
-						post: m,
-						onClick: b,
-						onPostContentClick: x,
-						onPostViewable: g,
-						style: f,
-						ref: O
-					} = this.props, E = o.a.createElement("div", {
-						style: f,
-						ref: O,
+						pixelPostHasEnteredView: e,
+						pixelPostHasExitedView: t,
+						afterClickTracking: s,
+						buffering: n,
+						children: r,
+						className: a,
+						continuousViewingStartedAt: d,
+						gildModalIsOpen: u,
+						makePostContainerId: m,
+						playing: b,
+						post: x,
+						onClick: g,
+						onPostContentClick: f,
+						onPostViewable: O,
+						style: E,
+						ref: j
+					} = this.props, y = o.a.createElement("div", {
+						style: E,
+						ref: j,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
-						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => b && b(t, m))(t), x && h(t) && x(t, m))
+						onClick: e => {
+							!this.cancelClick && e.button < 2 && (s(() => g && g(e, x))(e), f && h(e) && f(e, x))
 						},
-						className: Object(p.a)(v.a.WrappedPost, n, "Post ".concat(m.id), {
-							promotedlink: m.isSponsored
+						className: Object(p.a)(v.a.WrappedPost, a, "Post ".concat(x.id), {
+							promotedlink: x.isSponsored
 						}),
-						id: d ? d(m.id) : m.id,
+						id: m ? m(x.id) : x.id,
 						tabIndex: -1
-					}, s, a && o.a.createElement(i.a, null)), j = !!m.media && m.media.type === l.n.VIDEO;
-					return m.isSponsored || j ? o.a.createElement(c.a, {
-						onViewable: e => g(m, e),
-						trackVideoMetrics: j && !t && u,
-						continuousViewingStartedAt: r
-					}, E) : E
+					}, r, u && o.a.createElement(i.a, null)), k = !!x.media && x.media.type === l.n.VIDEO;
+					return x.isSponsored || k ? o.a.createElement(c.a, {
+						onViewable: e => O(x, e),
+						pixelPostHasEnteredView: t => e(x, t),
+						pixelPostHasExitedView: e => t(x, e),
+						trackVideoMetrics: k && !n && b,
+						continuousViewingStartedAt: d
+					}, y) : y
 				}
 			}
 			t.a = f(Object(b.c)(O))
@@ -826,7 +830,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(i.w)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(i.B)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(d.b)(b))
 		},
@@ -1284,4 +1288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.a97612019dd9925b47ea.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.fa36feaed9c727943c17.js.map
