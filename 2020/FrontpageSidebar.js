@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/FrontpageSidebar.a8f7f5fc15f0da37c906.js
-// Retrieved at 3/3/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {

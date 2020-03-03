@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cc1ff025c3958feaad02.js
-// Retrieved at 3/3/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0f753afd1f0dfd5ed2b1.js
+// Retrieved at 3/3/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -16,7 +16,7 @@
 			e.exports = JSON.parse('{"id":"38852e4f82b0"}')
 		},
 		"./src/graphql/operations/CreateGlobalAward.json": function(e) {
-			e.exports = JSON.parse('{"id":"b8d79cda0dae"}')
+			e.exports = JSON.parse('{"id":"7eec9fdb8e57"}')
 		},
 		"./src/graphql/operations/CreateLayer.json": function(e) {
 			e.exports = JSON.parse('{"id":"eb0c351cea1c"}')
@@ -4499,43 +4499,41 @@
 					daysOfPremium: o,
 					description: c,
 					endsAt: a,
-					iconFormat: d,
-					iconHeight: u,
-					iconUrl: l,
-					iconWidth: b,
-					isNew: p,
-					name: f,
-					startsAt: m,
-					subredditCoinReward: g
+					iconHeight: d,
+					iconUrl: u,
+					iconWidth: l,
+					isNew: b,
+					name: p,
+					startsAt: f,
+					subredditCoinReward: m
 				} = e;
-				return async (e, _, h) => {
+				return async (e, g, _) => {
 					let {
-						gqlContext: y
-					} = h;
+						gqlContext: h
+					} = _;
 					e(E());
 					try {
 						if ((await Object(O.b)({
 								awardSubType: t,
 								coinPrice: n,
 								coinReward: r,
-								context: y(),
+								context: h(),
 								daysOfDripExtension: s,
 								daysOfPremium: o,
 								description: c,
 								endsAt: a,
-								iconFormat: d,
-								iconHeight: u,
-								iconUrl: l,
-								iconWidth: b,
-								isNew: p,
-								name: f,
-								startsAt: m,
-								subredditCoinReward: g
+								iconHeight: d,
+								iconUrl: u,
+								iconWidth: l,
+								isNew: b,
+								name: p,
+								startsAt: f,
+								subredditCoinReward: m
 							})).error) {
 							const t = Object(i.c)("There was an error creating the award. Please try again.");
 							await e(S(t))
 						}
-					} catch (j) {
+					} catch (y) {
 						const t = Object(i.c)("There was an error creating the award. Please try again.");
 						await e(S(t))
 					}
@@ -4637,7 +4635,7 @@
 						}
 					} catch (i) {}
 					await t(k({
-						awards: d.i,
+						awards: d.h,
 						subredditOrProfileId: e
 					}))
 				}
@@ -5026,7 +5024,7 @@
 							return void i(t({
 								awardId: f,
 								awardings: r && r.length ? Object(b.a)(r).map(e => ({
-									award: Object(p.e)(e),
+									award: Object(p.d)(e),
 									total: e.count
 								})) : [],
 								coins: s,
@@ -5159,7 +5157,7 @@
 							s(i({
 								awardId: m,
 								awardings: Object(b.a)(e).map(e => ({
-									award: Object(p.e)(e),
+									award: Object(p.d)(e),
 									total: e.count
 								})),
 								coins: r,
@@ -22466,32 +22464,30 @@
 						daysOfPremium: c,
 						description: a,
 						endsAt: d,
-						iconFormat: u,
-						iconHeight: l,
-						iconUrl: p,
-						iconWidth: f,
-						isNew: m,
-						name: O,
-						startsAt: g,
-						subredditCoinReward: _
+						iconHeight: u,
+						iconUrl: l,
+						iconWidth: p,
+						isNew: f,
+						name: m,
+						startsAt: O,
+						subredditCoinReward: g
 					} = e;
 					return Object(o.a)(s, Object.assign({}, b, {
 						variables: {
 							awardSubType: t,
-							iconFormat: u,
-							iconHeight: l,
-							iconWidth: f,
-							iconUrl: p,
-							isNew: m,
+							iconHeight: u,
+							iconWidth: p,
+							iconUrl: l,
+							isNew: f,
 							daysOfPremium: c,
 							daysOfDripExtension: i,
 							description: a,
 							coinPrice: n,
 							coinReward: r,
-							name: O,
-							startsAt: g,
+							name: m,
+							startsAt: O,
 							endsAt: d,
-							subredditCoinReward: _
+							subredditCoinReward: g
 						}
 					}))
 				}, v = (e, t) => Object(o.a)(e, Object.assign({}, u, {
@@ -26326,7 +26322,7 @@
 						total: s
 					} = t;
 					if (void 0 !== n.icon) {
-						const t = Object(r.f)(n, s);
+						const t = Object(r.e)(n, s);
 						e.push(t)
 					}
 					return e
@@ -28269,7 +28265,7 @@
 					});
 					return {
 						awardType: e.award_type.toUpperCase(),
-						awardSubType: e.award_sub_type ? e.award_sub_type.toUpperCase() : r.c.Global,
+						awardSubType: e.award_sub_type ? e.award_sub_type.toUpperCase() : r.b.Global,
 						coinPrice: e.coin_price,
 						coinReward: e.coin_reward,
 						daysOfDripExtension: e.days_of_drip_extension,
@@ -30473,7 +30469,7 @@
 				s = n("./src/reddit/selectors/telemetry.ts"),
 				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = n("./src/reddit/helpers/isComment.ts");
-			const c = e => e.awardType === r.d.Global && e.awardSubType === r.c.Appreciation ? "gid_appreciation" : e.awardType === r.d.Global && e.awardSubType === r.c.Premium ? "gid_premium" : e.awardType === r.d.Community ? "gid_community" : e.awardType === r.d.Moderator ? "gid_mod" : e.id,
+			const c = e => e.awardType === r.c.Global && e.awardSubType === r.b.Appreciation ? "gid_appreciation" : e.awardType === r.c.Global && e.awardSubType === r.b.Premium ? "gid_premium" : e.awardType === r.c.Community ? "gid_community" : e.awardType === r.c.Moderator ? "gid_mod" : e.id,
 				a = e => ({
 					awardId: e.id,
 					awardName: e.name,
@@ -31782,36 +31778,34 @@
 		},
 		"./src/reddit/models/Gold/Award.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "c", (function() {
 				return r
-			})), n.d(t, "c", (function() {
-				return s
 			})), n.d(t, "b", (function() {
-				return o
-			})), n.d(t, "l", (function() {
+				return s
+			})), n.d(t, "k", (function() {
+				return c
+			})), n.d(t, "i", (function() {
 				return a
 			})), n.d(t, "j", (function() {
 				return d
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "h", (function() {
 				return u
-			})), n.d(t, "i", (function() {
-				return l
 			})), n.d(t, "a", (function() {
-				return p
+				return b
+			})), n.d(t, "f", (function() {
+				return f
 			})), n.d(t, "g", (function() {
 				return m
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "l", (function() {
 				return O
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "d", (function() {
 				return g
 			})), n.d(t, "e", (function() {
 				return _
-			})), n.d(t, "f", (function() {
-				return h
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.symbol.js");
-			var r, s, o, i = n("./src/config.ts"),
-				c = function(e, t) {
+			var r, s, o = n("./src/config.ts"),
+				i = function(e, t) {
 					var n = {};
 					for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -31825,11 +31819,8 @@
 			}(r || (r = {})),
 			function(e) {
 				e.Global = "GLOBAL", e.Moderator = "MODERATOR", e.Community = "COMMUNITY", e.Appreciation = "APPRECIATION", e.Premium = "PREMIUM"
-			}(s || (s = {})),
-			function(e) {
-				e.png = "PNG", e.apng = "APNG", e.jpg = "JPG", e.gif = "GIF"
-			}(o || (o = {}));
-			const a = {
+			}(s || (s = {}));
+			const c = {
 					awardType: r.Global,
 					awardSubType: s.Global,
 					coinPrice: 100,
@@ -31837,7 +31828,7 @@
 					description: "",
 					daysOfDripExtension: 0,
 					icon: {
-						url: "".concat(i.a.assetPath, "/img/gold/badges/award-silver-medium.png?v=2")
+						url: "".concat(o.a.assetPath, "/img/gold/badges/award-silver-medium.png?v=2")
 					},
 					id: "gid_1",
 					isEnabled: !0,
@@ -31845,7 +31836,7 @@
 					name: "Silver",
 					daysOfPremium: 0
 				},
-				d = {
+				a = {
 					awardType: r.Global,
 					awardSubType: s.Global,
 					coinPrice: 500,
@@ -31853,7 +31844,7 @@
 					description: "",
 					daysOfDripExtension: 0,
 					icon: {
-						url: "".concat(i.a.assetPath, "/img/gold/badges/award-gold-medium.png?v=2")
+						url: "".concat(o.a.assetPath, "/img/gold/badges/award-gold-medium.png?v=2")
 					},
 					id: "gid_2",
 					isEnabled: !0,
@@ -31861,7 +31852,7 @@
 					name: "Gold",
 					daysOfPremium: 7
 				},
-				u = {
+				d = {
 					awardType: r.Global,
 					awardSubType: s.Global,
 					coinPrice: 1800,
@@ -31869,7 +31860,7 @@
 					description: "",
 					daysOfDripExtension: 31,
 					icon: {
-						url: "".concat(i.a.assetPath, "/img/gold/badges/award-platinum-medium.png?v=2")
+						url: "".concat(o.a.assetPath, "/img/gold/badges/award-platinum-medium.png?v=2")
 					},
 					id: "gid_3",
 					isEnabled: !0,
@@ -31877,16 +31868,16 @@
 					name: "Platinum",
 					daysOfPremium: 31
 				},
-				l = [a, d, u];
-			l.reduce((e, t) => (e[t.id] = t, e), {});
-			var b, p;
+				u = [c, a, d];
+			u.reduce((e, t) => (e[t.id] = t, e), {});
+			var l, b;
 			! function(e) {
 				e.Global = "global", e.Community = "community", e.Moderator = "moderator"
-			}(b || (b = {})),
+			}(l || (l = {})),
 			function(e) {
 				e.Global = "global", e.Community = "community", e.Moderator = "moderator", e.Appreciation = "appreciation", e.Premium = "premium"
-			}(p || (p = {}));
-			const f = {
+			}(b || (b = {}));
+			const p = {
 					500: 8,
 					1e3: 4,
 					2e3: 1,
@@ -31894,16 +31885,16 @@
 					1e4: 1,
 					4e4: 1
 				},
-				m = e => {
+				f = e => {
 					const t = e.reduce((e, t) => t.awardType !== r.Community ? e : (e[t.coinPrice] = (e[t.coinPrice] || 0) + 1, e), {}),
 						n = e.map(e => ({
 							price: e.coinPrice,
 							filled: !0,
 							award: e
 						}));
-					return Object.keys(f).forEach(e => {
+					return Object.keys(p).forEach(e => {
 						const r = t[e] || 0,
-							s = Math.max(f[e] - r, 0);
+							s = Math.max(p[e] - r, 0);
 						s > 0 && n.push({
 							filled: !1,
 							price: parseInt(e),
@@ -31911,63 +31902,63 @@
 						})
 					}), n
 				},
-				O = e => {
+				m = e => {
 					const t = e.reduce((e, t) => t.awardType !== r.Community ? e : (e[t.coinPrice] = (e[t.coinPrice] || 0) + 1, e), {});
-					return Object.keys(f).reduce((e, n) => {
+					return Object.keys(p).reduce((e, n) => {
 						const r = t[n] || 0;
-						return f[n] - r > 0 ? [...e, parseInt(n)] : e
+						return p[n] - r > 0 ? [...e, parseInt(n)] : e
 					}, [])
 				};
 
-			function g(e) {
+			function O(e) {
 				return e.sort((e, t) => e.awardType === r.Moderator && t.awardType !== r.Moderator ? -1 : t.awardType === r.Moderator && e.awardType !== r.Moderator ? 1 : t.coinPrice - e.coinPrice)
 			}
 
-			function _(e) {
+			function g(e) {
 				const {
 					count: t,
 					iconUrl: n,
 					resizedIcons: r
-				} = e, s = c(e, ["count", "iconUrl", "resizedIcons"]);
-				let o, i;
+				} = e, s = i(e, ["count", "iconUrl", "resizedIcons"]);
+				let o, c;
 				for (const {
-						url: c,
+						url: i,
 						width: a
 					} of r || []) 32 === a && (o = {
-					url: c
-				}), 128 === a && (i = {
-					url: c
+					url: i
+				}), 128 === a && (c = {
+					url: i
 				});
 				return Object.assign({}, s, {
 					icon: {
 						url: n
 					},
 					icon32: o,
-					icon128: i,
+					icon128: c,
 					awardType: s.awardType.toUpperCase(),
 					awardSubType: s.awardSubType.toUpperCase()
 				})
 			}
 
-			function h(e, t) {
+			function _(e, t) {
 				const {
 					awardType: n,
 					awardSubType: r,
 					icon: s,
 					icon32: o,
-					icon128: i
-				} = e, a = c(e, ["awardType", "awardSubType", "icon", "icon32", "icon128"]), d = [];
+					icon128: c
+				} = e, a = i(e, ["awardType", "awardSubType", "icon", "icon32", "icon128"]), d = [];
 				return o && d.push({
 					height: 32,
 					url: o.url,
 					width: 32
-				}), i && d.push({
+				}), c && d.push({
 					height: 128,
-					url: i.url,
+					url: c.url,
 					width: 128
 				}), Object.assign({
 					awardType: n.toLowerCase(),
-					awardSubType: r ? r.toLowerCase() : p.Global,
+					awardSubType: r ? r.toLowerCase() : b.Global,
 					count: t,
 					iconUrl: s.url,
 					resizedIcons: d
@@ -35058,7 +35049,7 @@
 							s = t.payload.comments || [];
 						for (const e in r) {
 							const t = r[e].allAwardings || [];
-							for (const e of t) n[e.id] = Ye(Object(ke.e)(e))
+							for (const e of t) n[e.id] = Ye(Object(ke.d)(e))
 						}
 						for (const e in s) {
 							const t = s[e],
@@ -35066,7 +35057,7 @@
 									associatedAward: r,
 									allAwardings: o = []
 								} = t;
-							for (const e of o) n[e.id] = Ye(Object(ke.e)(e));
+							for (const e of o) n[e.id] = Ye(Object(ke.d)(e));
 							r && (n[r.id] = Ye(r))
 						}
 						return Object.assign({}, e, n)
@@ -40036,7 +40027,7 @@
 						return e
 				}
 			};
-			const od = ke.j;
+			const od = ke.i;
 			var id = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : od,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -61921,4 +61912,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.cc1ff025c3958feaad02.js.map
+//# sourceMappingURL=Governance~Reddit.0f753afd1f0dfd5ed2b1.js.map
