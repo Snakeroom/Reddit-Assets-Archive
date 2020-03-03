@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.05b74dbae56947fcd703.js
-// Retrieved at 3/3/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.648daeaa2ef625b834ab.js
+// Retrieved at 3/3/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -587,7 +587,7 @@
 					EconomicsCommunityTipJar: "b03873244128c058a014",
 					AuthorHovercard: "bf1f4e883aa5214f11ca",
 					AwardTooltip: "2b0287d913d0b5aed779",
-					ChatPost: "30f6de7a1cf8ea1bac02",
+					ChatPost: "c25337aee9396cb77ae0",
 					EconomicsSupportDonationAmount: "f91d70a391dd5faeb8ca",
 					EconomicsTopTippersPostLeaderboard: "800bb2c929388d9323e3",
 					GildModal: "498c37fa2c935fe00041",
@@ -873,7 +873,7 @@
 						FrontpageSidebar: "2327d19fd7f372045470",
 						Frontpage: "4f2d3b05a975e0b757f1",
 						Topic: "040f6c952ecfa65e0f37",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "d653fc40114128f929e7",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "1bd8116a98376711cd18",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "68f51c92928deec695e7",
 						"CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187": "4583b140a0cd30f86393",
 						PostDraft: "e54667f7edf83fda71f7",
@@ -1012,7 +1012,7 @@
 						"EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip": "ccaf584e2798544c5283",
 						SubredditPremiumBadgeHovercardTooltip: "7d9356b8864b8d7dfbe3",
 						EmotesTooltip: "ca4dab87456becfa878b",
-						GifTooltip: "cfc4e35e8e8aa7caa167",
+						GifTooltip: "91050944be1c70cea6f3",
 						SubredditPremiumBlockchainCheckoutModal: "58ba8e99c7b2eebead62",
 						ChatEmpty: "13652d9a195314d8f44d",
 						ChatMinimize: "9ce99e36f85f623ea5b8",
@@ -1033,7 +1033,7 @@
 						EconomicsCommunityTipJar: "2d6d1e92c28ed0f09519",
 						AuthorHovercard: "7f9278df557cc6c37879",
 						AwardTooltip: "ed75db9ab8f91868c753",
-						ChatPost: "b1b584fe74fe2ce7c7f2",
+						ChatPost: "477c75cbc98ec10680d0",
 						EconomicsSupportDonationAmount: "8e0ead5b524c0613f623",
 						EconomicsTopTippersPostLeaderboard: "82d021fa42142b3e3e0d",
 						GildModal: "692da95f96dac4184e68",
@@ -1131,4 +1131,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.05b74dbae56947fcd703.js.map
+//# sourceMappingURL=runtime~Reddit.648daeaa2ef625b834ab.js.map
