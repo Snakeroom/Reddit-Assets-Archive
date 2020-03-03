@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.3c2351cdcf123fea23a5.js
-// Retrieved at 3/3/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.27f6356a3adf0c640cba.js
+// Retrieved at 3/3/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -1795,7 +1795,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("963df1e-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("cb77e23-production", " ").concat(t);
 									return i && (s += " [".concat(V.Jb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2250,4 +2250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.3c2351cdcf123fea23a5.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.27f6356a3adf0c640cba.js.map

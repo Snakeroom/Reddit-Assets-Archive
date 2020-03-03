@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~dashjs.ea4a5615e62a98ef98b2.js
-// Retrieved at 3/3/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/3/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~dashjs"], {
 		"./node_modules/codem-isoboxer/dist/iso_boxer.js": function(e, t, r) {
