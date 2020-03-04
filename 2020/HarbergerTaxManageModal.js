@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.380162140af14abd1b0d.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.74c90f19b3400965caee.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -92,8 +92,8 @@
 				N = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				I = a("./src/reddit/endpoints/governance/imageLease.ts"),
 				O = a("./src/reddit/helpers/media/index.ts"),
-				j = a("./src/reddit/i18n/utils.ts"),
-				_ = a("./src/reddit/icons/svgs/Remove/index.tsx"),
+				_ = a("./src/reddit/i18n/utils.ts"),
+				j = a("./src/reddit/icons/svgs/Remove/index.tsx"),
 				C = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Banner/index.m.less"),
 				w = a.n(C);
 			const T = "bannerBackgroundImage";
@@ -150,7 +150,7 @@
 						className: w.a.imageUpload,
 						controlName: "banner",
 						isUploading: this.state.imageUploadInProgress,
-						label: Object(j.c)("Drag and Drop or Upload Image"),
+						label: Object(_.c)("Drag and Drop or Upload Image"),
 						tabIndex: a,
 						value: s,
 						onChange: this.handleBannerImageUpload
@@ -169,7 +169,7 @@
 						tabIndex: a ? a + 1 : void 0,
 						on: this.props.tiled,
 						onToggle: this.props.onTilingChange
-					}), i.a.createElement(h.c, null, "Tile")), i.a.createElement(_.a, {
+					}), i.a.createElement(h.c, null, "Tile")), i.a.createElement(j.a, {
 						className: w.a.remove,
 						tabIndex: a ? a + 2 : void 0,
 						onClick: this.handleBannerImageDelete
@@ -216,36 +216,36 @@
 				U = a("./src/lib/currency/cleanNumber/index.ts"),
 				L = a("./src/reddit/controls/FormFields/index.tsx"),
 				V = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Price/index.m.less"),
-				q = a.n(V);
-			var G = function(e) {
+				G = a.n(V);
+			var q = function(e) {
 				return i.a.createElement("div", {
-					className: Object(S.a)(q.a.container, e.className)
+					className: Object(S.a)(G.a.container, e.className)
 				}, i.a.createElement("div", {
-					className: q.a.title
+					className: G.a.title
 				}, i.a.createElement(h.c, null, "Price and Hamburger Tax")), i.a.createElement("div", {
-					className: q.a.explanation
+					className: G.a.explanation
 				}, i.a.createElement(h.c, null, "You can protect your ownership by raising the price. This also increases the daily tax. If you're unable to pay the tax, the price goes to 0.")), i.a.createElement("div", {
-					className: q.a.tax
+					className: G.a.tax
 				}, i.a.createElement(L.c, {
 					redditStyle: !0,
-					className: q.a.input,
-					label: Object(j.c)("banner price"),
+					className: G.a.input,
+					label: Object(_.c)("banner price"),
 					placeholder: "0",
 					tabIndex: e.tabIndex,
 					type: "text",
 					value: Object(B.a)(e.price),
 					onChange: t => e.onPriceChange(Object(U.a)(t.currentTarget.value))
 				}), i.a.createElement(P.a, {
-					className: q.a.token,
+					className: G.a.token,
 					subredditId: e.subredditId
 				}), i.a.createElement("div", {
-					className: q.a.equals
+					className: G.a.equals
 				}, "="), i.a.createElement("div", {
-					className: q.a.dailyTax
+					className: G.a.dailyTax
 				}, i.a.createElement("div", {
-					className: q.a.taxRate
+					className: G.a.taxRate
 				}, i.a.createElement(h.c, null, "1% daily tax")), i.a.createElement("div", {
-					className: q.a.taxAmount
+					className: G.a.taxAmount
 				}, Object(B.a)((.01 * parseInt(e.price || "0")).toFixed(2))))))
 			};
 			class z extends i.a.Component {
@@ -282,7 +282,7 @@
 						className: x.a.container
 					}, i.a.createElement(m.a, {
 						className: x.a.title
-					}, i.a.createElement(h.c, null, "Manage Banner")), i.a.createElement(G, {
+					}, i.a.createElement(h.c, null, "Manage Banner")), i.a.createElement(q, {
 						className: x.a.price,
 						price: this.state.price,
 						subredditId: e.id,
@@ -384,37 +384,40 @@
 				u = a("./src/reddit/actions/modal.ts"),
 				p = a("./src/reddit/i18n/utils.ts"),
 				h = a("./src/reddit/selectors/activeModalId.ts"),
-				g = a("./src/higherOrderComponents/asModal/index.tsx"),
-				b = a("./src/reddit/controls/Button/index.tsx"),
-				x = a("./src/reddit/layout/row/Inline/index.tsx"),
-				v = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				E = a.n(v);
-			var f = Object(g.a)(e => {
+				g = a("./node_modules/fbt/lib/FbtPublic.js"),
+				b = a("./src/higherOrderComponents/asModal/index.tsx"),
+				x = a("./src/reddit/controls/Button/index.tsx"),
+				v = a("./src/reddit/layout/row/Inline/index.tsx"),
+				E = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				f = a.n(E);
+			var N = Object(b.a)(e => {
 					const {
 						children: t,
 						title: a
 					} = e;
 					return o.a.createElement("div", {
-						className: E.a.wrapper
-					}, o.a.createElement(x.a, {
-						className: E.a.titleRow
+						className: f.a.wrapper
+					}, o.a.createElement(v.a, {
+						className: f.a.titleRow
 					}, a), o.a.createElement("div", {
-						className: E.a.detailsContainer
-					}, t), o.a.createElement(x.a, {
-						className: E.a.buttonRow
-					}, o.a.createElement(b.f, {
-						className: E.a.confirmButton,
+						className: f.a.detailsContainer
+					}, t), o.a.createElement(v.a, {
+						className: f.a.buttonRow
+					}, o.a.createElement(x.f, {
+						className: f.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, g.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				N = a("./src/reddit/controls/ErrorText/index.m.less"),
-				I = a.n(N);
+				I = a("./src/reddit/controls/ErrorText/index.m.less"),
+				O = a.n(I);
 			a.d(t, "a", (function() {
-				return C
-			})), a.d(t, "c", (function() {
 				return w
+			})), a.d(t, "c", (function() {
+				return T
 			}));
-			const O = Object(d.c)({
+			const _ = Object(d.c)({
 				activeModalId: h.a
 			});
 			class j extends o.a.Component {
@@ -455,23 +458,23 @@
 						textHasOverflowed: l
 					} = this.state;
 					return o.a.createElement("div", {
-						className: Object(m.a)(I.a.wrapper, a)
+						className: Object(m.a)(O.a.wrapper, a)
 					}, o.a.createElement("span", {
-						className: I.a.description,
+						className: O.a.description,
 						ref: this.spanRef
 					}, e), l && o.a.createElement("span", {
-						className: I.a.moreText,
+						className: O.a.moreText,
 						onClick: this.toggleModal
-					}, r), t === i && o.a.createElement(f, {
+					}, r), t === i && o.a.createElement(N, {
 						onConfirmed: this.toggleModal,
 						title: s
 					}, n || e))
 				}
 			}
-			const _ = Object(c.b)(O, e => ({
+			const C = Object(c.b)(_, e => ({
 					toggleErrorTextModal: t => e(Object(u.i)(t))
 				}))(j),
-				C = e => {
+				w = e => {
 					const {
 						className: t,
 						errorClassName: a,
@@ -481,17 +484,17 @@
 					} = e, i = r.length ? r : s ? [s] : [];
 					return i.length ? o.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => o.a.createElement(_, {
+					}, i.map((e, t) => o.a.createElement(C, {
 						className: a,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				w = e => o.a.createElement(C, {
+				T = e => o.a.createElement(w, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = _
+			t.b = C
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -722,4 +725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxManageModal.380162140af14abd1b0d.js.map
+//# sourceMappingURL=HarbergerTaxManageModal.74c90f19b3400965caee.js.map

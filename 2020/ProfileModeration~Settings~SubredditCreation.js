@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.29d4a464a289835617dd.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.3062bc981daffab38252.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -149,7 +149,7 @@
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "k", (function() {
-				return U
+				return q
 			})), n.d(t, "n", (function() {
 				return Z
 			})), n.d(t, "h", (function() {
@@ -259,11 +259,11 @@
 				}, r.a.createElement(P, null, e.label, e.isRequired && r.a.createElement(D, null)), r.a.createElement(L, null, e.subtext)), r.a.createElement(G, null, e.children)),
 				Y = T.a.div("StyledFlair", j.a),
 				X = T.a.wrapped(Y, "SpoilerFlair", j.a),
-				q = T.a.wrapped(Y, "NSFWFlair", j.a),
-				U = e => {
+				U = T.a.wrapped(Y, "NSFWFlair", j.a),
+				q = e => {
 					switch (e.flair) {
 						case k.f.Nsfw:
-							return r.a.createElement(q, null, "NSFW");
+							return r.a.createElement(U, null, "NSFW");
 						case k.f.Spoiler:
 							return r.a.createElement(X, null, "SPOILER");
 						default:
@@ -735,40 +735,43 @@
 				u = n("./src/reddit/actions/modal.ts"),
 				p = n("./src/reddit/i18n/utils.ts"),
 				x = n("./src/reddit/selectors/activeModalId.ts"),
-				h = n("./src/higherOrderComponents/asModal/index.tsx"),
-				b = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/layout/row/Inline/index.tsx"),
-				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				C = n.n(v);
-			var g = Object(h.a)(e => {
+				h = n("./node_modules/fbt/lib/FbtPublic.js"),
+				b = n("./src/higherOrderComponents/asModal/index.tsx"),
+				f = n("./src/reddit/controls/Button/index.tsx"),
+				v = n("./src/reddit/layout/row/Inline/index.tsx"),
+				C = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				g = n.n(C);
+			var E = Object(b.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return i.a.createElement("div", {
-						className: C.a.wrapper
-					}, i.a.createElement(f.a, {
-						className: C.a.titleRow
+						className: g.a.wrapper
+					}, i.a.createElement(v.a, {
+						className: g.a.titleRow
 					}, n), i.a.createElement("div", {
-						className: C.a.detailsContainer
-					}, t), i.a.createElement(f.a, {
-						className: C.a.buttonRow
-					}, i.a.createElement(b.f, {
-						className: C.a.confirmButton,
+						className: g.a.detailsContainer
+					}, t), i.a.createElement(v.a, {
+						className: g.a.buttonRow
+					}, i.a.createElement(f.f, {
+						className: g.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, h.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				E = n("./src/reddit/controls/ErrorText/index.m.less"),
-				w = n.n(E);
+				w = n("./src/reddit/controls/ErrorText/index.m.less"),
+				_ = n.n(w);
 			n.d(t, "a", (function() {
-				return k
-			})), n.d(t, "c", (function() {
 				return N
+			})), n.d(t, "c", (function() {
+				return S
 			}));
-			const _ = Object(d.c)({
+			const y = Object(d.c)({
 				activeModalId: x.a
 			});
-			class y extends i.a.Component {
+			class O extends i.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = i.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -806,23 +809,23 @@
 						textHasOverflowed: l
 					} = this.state;
 					return i.a.createElement("div", {
-						className: Object(m.a)(w.a.wrapper, n)
+						className: Object(m.a)(_.a.wrapper, n)
 					}, i.a.createElement("span", {
-						className: w.a.description,
+						className: _.a.description,
 						ref: this.spanRef
 					}, e), l && i.a.createElement("span", {
-						className: w.a.moreText,
+						className: _.a.moreText,
 						onClick: this.toggleModal
-					}, s), t === o && i.a.createElement(g, {
+					}, s), t === o && i.a.createElement(E, {
 						onConfirmed: this.toggleModal,
 						title: r
 					}, a || e))
 				}
 			}
-			const O = Object(c.b)(_, e => ({
+			const k = Object(c.b)(y, e => ({
 					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(y),
-				k = e => {
+				}))(O),
+				N = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -832,17 +835,17 @@
 					} = e, o = s.length ? s : r ? [r] : [];
 					return o.length ? i.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => i.a.createElement(O, {
+					}, o.map((e, t) => i.a.createElement(k, {
 						className: n,
 						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				N = e => i.a.createElement(k, {
+				S = e => i.a.createElement(N, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = O
+			t.b = k
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1143,4 +1146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.29d4a464a289835617dd.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.3062bc981daffab38252.js.map

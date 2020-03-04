@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.aff4a2172624338a1ed8.js
-// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4f0346d0ea7d672463d9.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -24132,75 +24132,75 @@
 			})), n.d(t, "i", (function() {
 				return I
 			}));
-			var r = n("./node_modules/lodash/omit.js"),
-				s = n.n(r),
-				o = n("./src/config.ts"),
-				i = n("./src/lib/constants/index.ts"),
-				c = n("./src/lib/constants/headers.ts"),
-				a = n("./src/lib/makeRequest/index.ts"),
-				d = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				u = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				l = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				b = n("./src/reddit/i18n/utils.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/omit.js"),
+				o = n.n(s),
+				i = n("./src/config.ts"),
+				c = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/constants/headers.ts"),
+				d = n("./src/lib/makeRequest/index.ts"),
+				u = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				l = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				b = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				p = n("./src/reddit/models/PostCreationForm/index.ts"),
 				f = n("./src/reddit/models/Vote/index.ts");
-			const m = async e => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/rpan_config_v1"),
-				method: i.cb.GET,
-				headers: s()(e.headers(), [c.c, c.b]),
+			const m = async e => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/rpan_config_v1"),
+				method: c.cb.GET,
+				headers: o()(e.headers(), [a.c, a.b]),
 				timeoutMs: void 0
 			}).then(T), O = async (e, t) => {
 				let n;
-				return n = t === d.O ? "/config" : "/".concat(t, "/config"), Object(a.b)({
-					endpoint: "".concat(o.a.streamingApiUrl).concat(n),
-					method: i.cb.GET,
-					headers: s()(e.headers(), [c.c, c.b]),
+				return n = t === u.O ? "/config" : "/".concat(t, "/config"), Object(d.b)({
+					endpoint: "".concat(i.a.streamingApiUrl).concat(n),
+					method: c.cb.GET,
+					headers: o()(e.headers(), [a.c, a.b]),
 					timeoutMs: void 0
 				}).then(T)
-			}, g = async (e, t) => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/videos/").concat(t),
-				method: i.cb.GET,
-				headers: s()(e.headers(), [c.c, c.b])
-			}).then(T), _ = async e => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/videos"),
-				method: i.cb.GET,
-				headers: s()(e.headers(), [c.c, c.b])
+			}, g = async (e, t) => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t),
+				method: c.cb.GET,
+				headers: o()(e.headers(), [a.c, a.b])
+			}).then(T), _ = async e => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/videos"),
+				method: c.cb.GET,
+				headers: o()(e.headers(), [a.c, a.b])
 			}).then(T), h = async (e, t) => {
 				let n;
-				return n = t === d.O ? "/broadcasts" : "/".concat(t, "/broadcasts"), Object(a.b)({
-					endpoint: "".concat(o.a.streamingApiUrl).concat(n),
-					method: i.cb.GET,
-					headers: s()(e.headers(), [c.c, c.b])
+				return n = t === u.O ? "/broadcasts" : "/".concat(t, "/broadcasts"), Object(d.b)({
+					endpoint: "".concat(i.a.streamingApiUrl).concat(n),
+					method: c.cb.GET,
+					headers: o()(e.headers(), [a.c, a.b])
 				}).then(T)
-			}, y = async e => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/recommended_viewer_subreddits"),
-				method: i.cb.GET,
-				headers: s()(e.headers(), [c.c, c.b])
-			}).then(T), j = async (e, t, n) => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/videos/").concat(t, "/vote/").concat(C(n)),
-				method: i.cb.POST,
-				headers: s()(e.headers, [c.c, c.b])
-			}).then(T), E = async (e, t) => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/videos/").concat(t, "/heartbeat"),
-				method: i.cb.POST,
-				headers: s()(e.headers(), [c.c, c.b])
+			}, y = async e => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/recommended_viewer_subreddits"),
+				method: c.cb.GET,
+				headers: o()(e.headers(), [a.c, a.b])
+			}).then(T), j = async (e, t, n) => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t, "/vote/").concat(C(n)),
+				method: c.cb.POST,
+				headers: o()(e.headers, [a.c, a.b])
+			}).then(T), E = async (e, t) => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t, "/heartbeat"),
+				method: c.cb.POST,
+				headers: o()(e.headers(), [a.c, a.b])
 			}).then(T), I = async (e, t, n, r) => {
 				const s = n.rteState;
 				if (!s) return Promise.reject(new Error("Editor state is undefined"));
-				const o = u.a.getRawText(s);
+				const o = l.a.getRawText(s);
 				return o ? S(e, t, o).then(e => e.ok && e.body && e.body.data ? Object.assign({}, e, {
 					body: {
 						parentId: t,
-						comment: Object.assign({}, Object(l.a)(e.body.data, r), {
+						comment: Object.assign({}, Object(b.a)(e.body.data, r), {
 							media: v(s)
 						})
 					},
 					error: void 0
 				}) : e) : Promise.reject(new Error("Cannot send empty message"))
-			}, S = async (e, t, n) => Object(a.b)({
-				endpoint: "".concat(o.a.streamingApiUrl, "/videos/").concat(t, "/comment"),
-				method: i.cb.POST,
-				headers: s()(e.headers, [c.c, c.b]),
+			}, S = async (e, t, n) => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t, "/comment"),
+				method: c.cb.POST,
+				headers: o()(e.headers, [a.c, a.b]),
 				data: {
 					text: n
 				},
@@ -24208,7 +24208,7 @@
 			}).then(T), v = e => ({
 				type: "rtjson",
 				richtextContent: {
-					document: u.a.toRichTextJSON(e).document
+					document: l.a.toRichTextJSON(e).document
 				},
 				rteMode: p.h.RICH_TEXT
 			}), T = e => {
@@ -24216,11 +24216,13 @@
 					error: void 0
 				}); {
 					const t = {
-						type: 404 === e.status ? i.E.NOT_FOUND_ERROR : i.E.SERVER_ERROR
+						type: 404 === e.status ? c.E.NOT_FOUND_ERROR : c.E.SERVER_ERROR
 					};
 					return 429 === e.status && (t.fields = [{
 						field: "",
-						msg: Object(b.c)("Try again later")
+						msg: r.fbt._("Try again later", null, {
+							hk: "3BBLIU"
+						})
 					}]), Object.assign({}, e, {
 						error: t
 					})
@@ -62045,4 +62047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.aff4a2172624338a1ed8.js.map
+//# sourceMappingURL=Governance~Reddit.4f0346d0ea7d672463d9.js.map

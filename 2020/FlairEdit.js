@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.518c76f13c2e9c7abe33.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.57e8ce4f4a6622cdd633.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/fbjs/lib/emptyFunction.js": function(e, t, o) {
@@ -198,13 +198,12 @@
 						hk: "1f5Zk8"
 					})))
 				},
-				N = (o("./node_modules/core-js/modules/es6.symbol.js"), o("./src/app/strings/index.ts")),
-				B = o("./src/reddit/icons/svgs/Search/index.tsx"),
-				F = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
-				M = o.n(F);
+				N = (o("./node_modules/core-js/modules/es6.symbol.js"), o("./src/reddit/icons/svgs/Search/index.tsx")),
+				B = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
+				F = o.n(B);
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function M() {
+				return (M = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var o = arguments[t];
 						for (var s in o) Object.prototype.hasOwnProperty.call(o, s) && (e[s] = o[s])
@@ -212,38 +211,38 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var A = function(e, t) {
-				var o = {};
-				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (o[s] = e[s]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var i = 0;
-					for (s = Object.getOwnPropertySymbols(e); i < s.length; i++) t.indexOf(s[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[i]) && (o[s[i]] = e[s[i]])
-				}
-				return o
-			};
-			const K = Object(N.d)("emojiPicker.searchEmoji");
-			var W = e => {
+			var L = function(e, t) {
+					var o = {};
+					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (o[s] = e[s]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var i = 0;
+						for (s = Object.getOwnPropertySymbols(e); i < s.length; i++) t.indexOf(s[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[i]) && (o[s[i]] = e[s[i]])
+					}
+					return o
+				},
+				A = e => {
 					const {
 						className: t,
-						language: o,
-						inputRef: s
-					} = e, i = A(e, ["className", "language", "inputRef"]);
+						inputRef: o
+					} = e, s = L(e, ["className", "inputRef"]);
 					return a.a.createElement("div", {
-						className: Object(p.a)(M.a.searchBar, t)
-					}, a.a.createElement(B.a, {
-						className: M.a.searchIcon
+						className: Object(p.a)(F.a.searchBar, t)
+					}, a.a.createElement(N.a, {
+						className: F.a.searchIcon
 					}), a.a.createElement("div", {
-						className: M.a.inputWrapper
-					}, a.a.createElement("input", L({
-						className: M.a.input,
-						ref: s,
-						placeholder: K(o),
+						className: F.a.inputWrapper
+					}, a.a.createElement("input", M({
+						className: F.a.input,
+						ref: o,
+						placeholder: O.fbt._("Search for emoji", null, {
+							hk: "IncEm"
+						}),
 						spellCheck: !1
-					}, i))))
+					}, s))))
 				},
-				U = o("./src/reddit/controls/EmojiPicker/index.m.less"),
-				H = o.n(U);
-			const G = (e, t) => {
+				K = o("./src/reddit/controls/EmojiPicker/index.m.less"),
+				W = o.n(K);
+			const U = (e, t) => {
 					const o = t.toLowerCase();
 					return e.filter(e => {
 						let {
@@ -252,14 +251,14 @@
 						return -1 !== t.toLowerCase().indexOf(o)
 					})
 				},
-				J = Object(l.c)({
+				H = Object(l.c)({
 					emojis: b.c,
 					language: y.P
 				}),
-				q = {
+				G = {
 					onGetSubredditEmojis: u.l
 				};
-			class z extends a.a.Component {
+			class J extends a.a.Component {
 				constructor(e) {
 					super(e), this.inputRef = null, this.setInputRef = e => this.inputRef = e, this.onEmojiEnter = e => {
 						this.setState({
@@ -273,7 +272,7 @@
 						this.selectEmoji(e)
 					}, this.onSearchBarInputChange = e => {
 						const t = e.target.value,
-							o = G(this.props.emojis, t),
+							o = U(this.props.emojis, t),
 							s = o.length ? 0 : -1;
 						this.setState({
 							searchBarValue: t,
@@ -294,7 +293,7 @@
 				}
 				componentWillReceiveProps(e) {
 					if (e.emojis !== this.props.emojis) {
-						const t = G(e.emojis, this.state.searchBarValue);
+						const t = U(e.emojis, this.state.searchBarValue);
 						this.setState({
 							filteredEmojis: t
 						})
@@ -312,11 +311,10 @@
 						focusedIndex: o
 					} = this.state, s = t[o];
 					return a.a.createElement("div", {
-						className: Object(p.a)(H.a.container, e)
-					}, a.a.createElement(W, {
+						className: Object(p.a)(W.a.container, e)
+					}, a.a.createElement(A, {
 						value: this.state.searchBarValue,
 						inputRef: this.setInputRef,
-						language: this.props.language,
 						onChange: this.onSearchBarInputChange,
 						onKeyDown: this.onKeyDown
 					}), a.a.createElement(T, {
@@ -332,19 +330,19 @@
 					}))
 				}
 			}
-			var Y, Q = Object(c.b)(J, q)(z),
-				V = o("./src/reddit/controls/IconTooltip/index.tsx"),
-				X = (o("./node_modules/draft-js/dist/Draft.css"), o("./src/lib/stripLineBreaks/index.ts")),
-				Z = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx");
+			var q, z = Object(c.b)(H, G)(J),
+				Y = o("./src/reddit/controls/IconTooltip/index.tsx"),
+				Q = (o("./node_modules/draft-js/dist/Draft.css"), o("./src/lib/stripLineBreaks/index.ts")),
+				V = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx");
 			! function(e) {
 				e.AddImage = "add_image", e.Add = "add", e.Delete = "delete", e.Edit = "edit", e.EnableOff = "enable_off", e.EnableOn = "enable_on"
-			}(Y || (Y = {}));
-			const $ = ":",
-				ee = /:[A-Za-z0-9_-]+/g;
-			var te = o("./src/reddit/controls/ImageDisplay/index.tsx"),
-				oe = o("./src/reddit/controls/EmojiDropdown/EmojiItem/index.m.less"),
-				se = o.n(oe);
-			class ie extends r.Component {
+			}(q || (q = {}));
+			const X = ":",
+				Z = /:[A-Za-z0-9_-]+/g;
+			var $ = o("./src/reddit/controls/ImageDisplay/index.tsx"),
+				ee = o("./src/reddit/controls/EmojiDropdown/EmojiItem/index.m.less"),
+				te = o.n(ee);
+			class oe extends r.Component {
 				constructor() {
 					super(...arguments), this.handleMouseDown = e => {
 						e.preventDefault()
@@ -360,23 +358,23 @@
 						isFocused: t
 					} = this.props;
 					return a.a.createElement("div", {
-						className: Object(p.a)(se.a.emojiListItemWrapper, {
-							[se.a.mIsFocused]: t
+						className: Object(p.a)(te.a.emojiListItemWrapper, {
+							[te.a.mIsFocused]: t
 						}),
 						onMouseDown: this.handleMouseDown,
 						onClick: this.handleClick,
 						onMouseOver: this.handleMouseOver
-					}, a.a.createElement(P.a, null, a.a.createElement(te.a, {
-						className: se.a.emojiImageDisplay,
+					}, a.a.createElement(P.a, null, a.a.createElement($.a, {
+						className: te.a.emojiImageDisplay,
 						backgroundImage: e.url
 					}), a.a.createElement("div", {
-						className: se.a.emojiText
+						className: te.a.emojiText
 					}, Object(m.b)(e.name))))
 				}
 			}
-			var ne = o("./src/reddit/controls/EmojiDropdown/index.m.less"),
-				re = o.n(ne);
-			const ae = Object(l.a)(b.c, (e, t) => t.searchValue.toLowerCase(), (e, t) => {
+			var se = o("./src/reddit/controls/EmojiDropdown/index.m.less"),
+				ie = o.n(se);
+			const ne = Object(l.a)(b.c, (e, t) => t.searchValue.toLowerCase(), (e, t) => {
 					const o = t.toLowerCase();
 					return e.filter(e => {
 						let {
@@ -385,14 +383,14 @@
 						return t.toLowerCase().startsWith(o)
 					})
 				}),
-				ce = Object(l.c)({
+				re = Object(l.c)({
 					language: y.P,
-					filteredEmojis: ae
+					filteredEmojis: ne
 				}),
-				le = {
+				ae = {
 					onGetSubredditEmojis: u.m
 				};
-			class de extends a.a.Component {
+			class ce extends a.a.Component {
 				constructor(e) {
 					super(e), this.api = null, this.isKeyScrolling = !1, this.onEmojiFocus = e => {
 						this.isKeyScrolling || this.setState({
@@ -454,10 +452,10 @@
 				}
 				render() {
 					return this.props.filteredEmojis.length ? a.a.createElement("div", {
-						className: re.a.container,
+						className: ie.a.container,
 						onMouseDown: this.onMouseDown,
 						ref: this.containerRef
-					}, this.props.filteredEmojis.map((e, t) => a.a.createElement(ie, {
+					}, this.props.filteredEmojis.map((e, t) => a.a.createElement(oe, {
 						key: e.url,
 						emoji: e,
 						isFocused: t === this.state.selectedIndex,
@@ -467,34 +465,34 @@
 					}))) : null
 				}
 			}
-			var pe = Object(c.b)(ce, le)(de),
-				me = o("./node_modules/draft-js/lib/DraftOffsetKey.js"),
-				he = o.n(me),
-				ue = o("./src/lib/forEachGroup/index.ts"),
-				ge = o("./src/lib/memoizeByReference/index.ts"),
-				fe = o("./node_modules/lodash/inRange.js"),
-				je = o.n(fe),
-				Ee = o("./node_modules/lodash/times.js"),
-				xe = o.n(Ee);
-			const be = (e, t, o) => {
+			var le = Object(c.b)(re, ae)(ce),
+				de = o("./node_modules/draft-js/lib/DraftOffsetKey.js"),
+				pe = o.n(de),
+				me = o("./src/lib/forEachGroup/index.ts"),
+				he = o("./src/lib/memoizeByReference/index.ts"),
+				ue = o("./node_modules/lodash/inRange.js"),
+				ge = o.n(ue),
+				fe = o("./node_modules/lodash/times.js"),
+				je = o.n(fe);
+			const Ee = (e, t, o) => {
 				const s = t.getText();
 				let i, n;
 				for (; null !== (i = e.exec(s));) o(n = i.index, n + i[0].length)
 			};
-			var ye = {
+			var xe = {
 					strategy: function(e, t, o) {
-						be(ee, e, t)
+						Ee(Z, e, t)
 					},
 					component: e => a.a.createElement("span", null, e.children)
 				},
-				Ie = o("./src/reddit/controls/RichTextInput/imageDecoratorStyles.m.less"),
-				Se = o.n(Ie);
-			var Ce = {
+				be = o("./src/reddit/controls/RichTextInput/imageDecoratorStyles.m.less"),
+				ye = o.n(be);
+			var Ie = {
 					strategy: function(e, t, o) {
 						e.getCharacterList().forEach((e, s) => {
 							const i = e && e.getEntity();
 							if (i) {
-								o.getEntity(i).getType() === Te.InlineImage && t(s, s + 1)
+								o.getEntity(i).getType() === ve.InlineImage && t(s, s + 1)
 							}
 						})
 					},
@@ -504,72 +502,72 @@
 								url: o
 							} = t.getData();
 						return a.a.createElement("span", {
-							className: Se.a.imageSpan,
+							className: ye.a.imageSpan,
 							style: {
 								backgroundImage: "url(".concat(o, ")")
 							}
 						}, e.children)
 					}
 				},
-				ve = o("./node_modules/immutable/dist/immutable.js");
-			var we, Te;
+				Se = o("./node_modules/immutable/dist/immutable.js");
+			var Ce, ve;
 			! function(e) {
 				e.Image = "image", e.Text = "text"
-			}(we || (we = {})),
+			}(Ce || (Ce = {})),
 			function(e) {
 				e.InlineImage = "InlineImage"
-			}(Te || (Te = {}));
-			const Oe = () => new s.CompositeDecorator([ye, Ce]),
-				De = (e, t) => {
-					return e.createEntity(Te.InlineImage, "MUTABLE", {
+			}(ve || (ve = {}));
+			const we = () => new s.CompositeDecorator([xe, Ie]),
+				Te = (e, t) => {
+					return e.createEntity(ve.InlineImage, "MUTABLE", {
 						url: t.url,
 						id: t.id
 					})
 				},
-				Pe = (e, t, o) => {
+				Oe = (e, t, o) => {
 					let i, n = e,
 						r = "";
-					return o.type === we.Image ? (i = (n = De(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
+					return o.type === Ce.Image ? (i = (n = Te(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
 				},
-				_e = (e, t) => {
+				De = (e, t) => {
 					const o = e.getSelection(),
 						i = o.merge({
 							focusOffset: o.getAnchorOffset()
 						}),
-						n = Pe(e.getCurrentContent(), i, t);
+						n = Oe(e.getCurrentContent(), i, t);
 					return s.EditorState.push(e, n, "insert-characters")
 				},
-				ke = Object(ge.a)(e => {
+				Pe = Object(he.a)(e => {
 					const t = e.getSelection(),
 						o = t.getStartOffset();
 					if (!t.isCollapsed()) return;
-					const s = e.getBlockTree(t.getStartKey()).findEntry(e => je()(o - 1, e.get("start"), e.get("end")));
+					const s = e.getBlockTree(t.getStartKey()).findEntry(e => ge()(o - 1, e.get("start"), e.get("end")));
 					if (!s) return;
 					const [i, n] = s, r = n.get("start"), a = n.get("end"), c = e.getCurrentContent().getBlockForKey(t.getStartKey()).getText();
-					return n.get("decoratorKey") && c.charAt(r) === $ ? {
+					return n.get("decoratorKey") && c.charAt(r) === X ? {
 						emojiString: c.slice(r + 1, a),
 						startIndex: r,
 						endIndex: a,
-						offsetKey: he.a.encode(t.getStartKey(), i, 0)
+						offsetKey: pe.a.encode(t.getStartKey(), i, 0)
 					} : void 0
 				}),
-				Re = (e, t) => {
-					const o = ke(e);
+				_e = (e, t) => {
+					const o = Pe(e);
 					if (!o) return;
 					let i = e.getCurrentContent();
 					const n = i.getPlainText().charAt(o.endIndex),
 						r = e.getSelection().merge({
 							anchorOffset: o.startIndex,
-							focusOffset: o.endIndex + (n === $ ? 1 : 0)
+							focusOffset: o.endIndex + (n === X ? 1 : 0)
 						}),
 						a = {
-							type: we.Image,
+							type: Ce.Image,
 							id: Object(m.b)(t.name),
 							url: t.url
 						};
-					return i = Pe(i, r, a), s.EditorState.push(e, i, "insert-characters")
+					return i = Oe(i, r, a), s.EditorState.push(e, i, "insert-characters")
 				},
-				Ne = (e, t) => {
+				ke = (e, t) => {
 					const o = e.getSelection(),
 						i = o.getFocusOffset(),
 						n = o.getFocusKey(),
@@ -577,37 +575,37 @@
 						a = r.getBlockForKey(n),
 						c = i > 0 ? a.getEntityAt(i - 1) : null,
 						l = c && r.getEntity(c);
-					if (l && l.getType() === Te.InlineImage) {
+					if (l && l.getType() === ve.InlineImage) {
 						const i = s.Modifier.replaceText(r, o, t, e.getCurrentInlineStyle());
 						return s.EditorState.push(e, i, "insert-characters")
 					}
 				},
-				Be = "handled",
-				Fe = "not-handled";
-			class Me extends a.a.Component {
+				Re = "handled",
+				Ne = "not-handled";
+			class Be extends a.a.Component {
 				constructor(e) {
 					super(e), this.setEditorRef = e => this.editorRef = e, this.containerRef = null, this.setContainerRef = e => this.containerRef = e, this.setEmojiDropdownApi = e => this.emojiDropdownApi = e, this.focus = () => this.editorRef && this.editorRef.focus(), this.handleBeforeInput = e => {
 						const {
 							editorState: t,
 							maxLength: o
 						} = this.props, s = t.getCurrentContent().getPlainText();
-						if (o && s.length >= o) return Be;
-						if (e === $ && this.emojiDropdownApi && this.state.emojiString) {
+						if (o && s.length >= o) return Re;
+						if (e === X && this.emojiDropdownApi && this.state.emojiString) {
 							const e = this.emojiDropdownApi.getCurrent(),
 								t = this.state.emojiString.toLowerCase();
-							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Be
+							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Re
 						}
-						const i = Ne(t, e);
-						return i ? (this.onChange(i), Be) : Fe
+						const i = ke(t, e);
+						return i ? (this.onChange(i), Re) : Ne
 					}, this.checkEditorStateForEmojis = e => {
-						const t = ke(e);
+						const t = Pe(e);
 						this.setState({
 							emojiString: t ? t.emojiString : "",
 							suppressEmojiDropdown: !!t && this.state.suppressEmojiDropdown
 						})
 					}, this.handleSelectEmoji = e => {
 						if (!this.props.emojisEnabled) return;
-						const t = Re(this.props.editorState, e);
+						const t = _e(this.props.editorState, e);
 						t && this.onChange(t)
 					}, this.handleKeyDown = e => {
 						if (e.stopPropagation(), e.which === x.a.Escape && this.state.emojiString) e.preventDefault(), this.setState({
@@ -620,19 +618,19 @@
 							t && (e.preventDefault(), this.handleSelectEmoji(t))
 						}
 					}, this.handlePastedText = (e, t) => {
-						if (!this.editorRef) return Be;
+						if (!this.editorRef) return Re;
 						const {
 							editorState: o,
 							maxLength: i
 						} = this.props, n = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), c = o.getCurrentContent().getPlainText().length + a;
-						if (i && c > i) return Be;
-						if (n && n.first().getText() === e) return Fe;
-						const l = Object(X.a)(e);
+						if (i && c > i) return Re;
+						if (n && n.first().getText() === e) return Ne;
+						const l = Object(Q.a)(e);
 						let d = o.getCurrentContent();
 						d = s.Modifier.replaceText(d, r, l);
 						const p = s.EditorState.push(o, d, "insert-characters");
-						return this.onChange(p), Be
-					}, this.handleReturn = e => (e.preventDefault(), Be), this.onChange = e => {
+						return this.onChange(p), Re
+					}, this.handleReturn = e => (e.preventDefault(), Re), this.onChange = e => {
 						this.props.onChange(e)
 					}, this.setEmojiDropdownPositionUpdater = e => this.updateEmojiDropdownPosition = e, this.state = {
 						emojiString: "",
@@ -644,7 +642,7 @@
 					if (this.props.editorState.getSelection().getHasFocus() && !this.state.suppressEmojiDropdown && this.state.emojiString) {
 						const {
 							offsetKey: e
-						} = ke(this.props.editorState), t = this.containerRef.querySelector('[data-offset-key="'.concat(e, '"]')), {
+						} = Pe(this.props.editorState), t = this.containerRef.querySelector('[data-offset-key="'.concat(e, '"]')), {
 							left: o,
 							bottom: s
 						} = t.getBoundingClientRect();
@@ -682,10 +680,10 @@
 						handleReturn: this.handleReturn,
 						handlePastedText: this.handlePastedText,
 						onBlur: this.props.onBlur
-					}), l && a.a.createElement(Z.b, {
+					}), l && a.a.createElement(V.b, {
 						onSetPositionUpdater: this.setEmojiDropdownPositionUpdater,
 						usePortal: !0
-					}, a.a.createElement(pe, {
+					}, a.a.createElement(le, {
 						key: this.state.emojiString,
 						onDropdownApi: this.setEmojiDropdownApi,
 						flairTemplateType: o,
@@ -696,18 +694,18 @@
 					})))
 				}
 			}
-			var Le = Me,
-				Ae = o("./src/reddit/helpers/flair.ts"),
-				Ke = o("./src/reddit/i18n/utils.ts"),
-				We = o("./src/reddit/icons/svgs/Help/index.tsx"),
-				Ue = o("./src/reddit/icons/svgs/Smile/index.tsx"),
-				He = o("./src/reddit/models/Flair/index.ts"),
-				Ge = o("./src/reddit/selectors/tooltip.ts"),
-				Je = o("./src/reddit/components/FlairSearch/FlairEdit/index.m.less"),
-				qe = o.n(Je);
+			var Fe = Be,
+				Me = o("./src/reddit/helpers/flair.ts"),
+				Le = o("./src/reddit/i18n/utils.ts"),
+				Ae = o("./src/reddit/icons/svgs/Help/index.tsx"),
+				Ke = o("./src/reddit/icons/svgs/Smile/index.tsx"),
+				We = o("./src/reddit/models/Flair/index.ts"),
+				Ue = o("./src/reddit/selectors/tooltip.ts"),
+				He = o("./src/reddit/components/FlairSearch/FlairEdit/index.m.less"),
+				Ge = o.n(He);
 
-			function ze() {
-				return (ze = Object.assign || function(e) {
+			function Je() {
+				return (Je = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var o = arguments[t];
 						for (var s in o) Object.prototype.hasOwnProperty.call(o, s) && (e[s] = o[s])
@@ -715,43 +713,43 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ye = 450,
-				Qe = {
+			const qe = 450,
+				ze = {
 					targetPosition: ["right", "top"],
 					tooltipPosition: ["right", "bottom"]
 				},
-				Ve = {
+				Ye = {
 					targetPosition: ["right", "bottom"],
 					tooltipPosition: ["right", "top"]
 				},
-				Xe = e => {
+				Qe = e => {
 					const t = [];
-					return e.type === He.f.Richtext ? e.richtext.forEach(e => {
-						e.e === He.c.Emoji ? t.push({
-							type: we.Image,
+					return e.type === We.f.Richtext ? e.richtext.forEach(e => {
+						e.e === We.c.Emoji ? t.push({
+							type: Ce.Image,
 							id: e.a,
 							url: e.u
 						}) : e.t && t.push({
-							type: we.Text,
+							type: Ce.Text,
 							text: e.t
 						})
 					}) : e.text && t.push({
-						type: we.Text,
+						type: Ce.Text,
 						text: e.text
 					}), t
 				},
-				Ze = e => {
+				Ve = e => {
 					return function(e) {
 						let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-						if (!e) return s.EditorState.createEmpty(Oe());
-						let o = s.EditorState.createEmpty(Oe()),
+						if (!e) return s.EditorState.createEmpty(we());
+						let o = s.EditorState.createEmpty(we()),
 							i = o.getCurrentContent();
 						const n = [],
 							r = [];
 						e.forEach(e => {
 							if ("image" === e.type) {
 								n.push(" ");
-								const t = (i = De(i, e)).getLastCreatedEntityKey(),
+								const t = (i = Te(i, e)).getLastCreatedEntityKey(),
 									o = s.CharacterMetadata.create({
 										entity: t
 									});
@@ -759,13 +757,13 @@
 							} else if ("text" === e.type) {
 								n.push(e.text);
 								const t = s.CharacterMetadata.create();
-								r.push(...xe()(e.text.length, () => t))
+								r.push(...je()(e.text.length, () => t))
 							}
 						});
 						let a = i.getBlockMap(),
 							c = i.getFirstBlock().merge({
 								text: n.join(""),
-								characterList: Object(ve.List)(r)
+								characterList: Object(Se.List)(r)
 							});
 						a = a.set(c.getKey(), c), c = (i = i.merge({
 							blockMap: a
@@ -781,80 +779,80 @@
 							currentContent: i,
 							selection: l
 						}), t && (o = s.EditorState.forceSelection(o, l)), o
-					}(Xe(e))
+					}(Qe(e))
 				},
-				$e = (e, t, o, s, i) => {
+				Xe = (e, t, o, s, i) => {
 					const n = (e => {
 						const t = e.getCurrentContent(),
 							o = t.getPlainText(),
 							s = [],
 							i = t.getFirstBlock().getCharacterList();
-						return Object(ue.a)(i, {
+						return Object(me.a)(i, {
 							keyFn: e => e.getEntity()
 						}, (e, i, n, r) => {
 							const a = e.getEntity(),
 								c = a && t.getEntity(a);
-							if (c && c.getType() === Te.InlineImage) {
+							if (c && c.getType() === ve.InlineImage) {
 								const {
 									id: e,
 									url: t
 								} = c.getData(), o = r - n;
-								s.push(...xe()(o, () => ({
-									type: we.Image,
+								s.push(...je()(o, () => ({
+									type: Ce.Image,
 									id: e,
 									url: t
 								})))
 							} else s.push({
-								type: we.Text,
+								type: Ce.Text,
 								text: o.slice(n, r)
 							})
 						}), s
 					})(e);
-					if (!!!n.find(e => e.type === we.Image)) return {
+					if (!!!n.find(e => e.type === Ce.Image)) return {
 						backgroundColor: t,
 						templateId: o,
-						type: He.f.Text,
-						text: n.map(e => e.type === we.Text ? e.text : "").join(),
+						type: We.f.Text,
+						text: n.map(e => e.type === Ce.Text ? e.text : "").join(),
 						textColor: s,
 						cssClass: i
 					};
-					const r = n.map(e => e.type === we.Image ? {
-						e: He.c.Emoji,
+					const r = n.map(e => e.type === Ce.Image ? {
+						e: We.c.Emoji,
 						a: e.id,
 						u: e.url
 					} : {
-						e: He.c.Text,
+						e: We.c.Text,
 						t: e.text
 					});
 					return {
 						backgroundColor: t,
 						templateId: o,
-						type: He.f.Richtext,
+						type: We.f.Richtext,
 						richtext: r,
 						textColor: s,
 						cssClass: i
 					}
 				},
-				et = (e, t) => n()(Xe(e), Xe(t)),
-				tt = Object(d.a)(h.a.wrapped(E.a, "Component", qe.a)),
-				ot = e => {
+				Ze = (e, t) => n()(Qe(e), Qe(t)),
+				$e = Object(d.a)(h.a.wrapped(E.a, "Component", Ge.a)),
+				et = e => {
 					e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
 				},
-				st = Object(l.c)({
+				tt = Object(l.c)({
 					areEmojisEnabledInSubreddit: (e, t) => {
 						const o = e.subreddits.about[t.subredditId];
 						return !!o && o.emojisEnabled
 					},
-					isEmojiPickerOpen: (e, t) => Object(Ge.b)(t.emojiPickerId)(e)
+					isEmojiPickerOpen: (e, t) => Object(Ue.b)(t.emojiPickerId)(e)
 				}),
-				it = {
+				ot = {
 					toggleTooltip: e => Object(g.h)({
 						tooltipId: e
 					}),
 					onGetSubredditEmojis: u.m
 				},
-				nt = Object(c.b)(st, it);
-			class rt extends a.a.Component {
+				st = Object(c.b)(tt, ot);
+			class it extends a.a.Component {
 				constructor(e) {
 					super(e), this.richTextInputRef = a.a.createRef(), this.wrapperRef = a.a.createRef(), this.onToggleEmojiPicker = () => {
 						let e = !1;
@@ -862,7 +860,7 @@
 							const {
 								bottom: t,
 								top: o
-							} = this.wrapperRef.current.getBoundingClientRect(), s = o > Ye, i = t + Ye < window.innerHeight;
+							} = this.wrapperRef.current.getBoundingClientRect(), s = o > qe, i = t + qe < window.innerHeight;
 							e = s && !i
 						}
 						this.setState({
@@ -874,28 +872,28 @@
 							editorState: e
 						}, () => {
 							if (t) {
-								const t = $e(e, this.props.flair.backgroundColor, this.props.flair.templateId, this.props.flair.textColor, this.props.flair.cssClass);
+								const t = Xe(e, this.props.flair.backgroundColor, this.props.flair.templateId, this.props.flair.textColor, this.props.flair.cssClass);
 								this.props.onChange(t)
 							}
 						})
 					}, this.onSelectEmoji = e => {
 						const t = {
-							type: we.Image,
+							type: Ce.Image,
 							id: Object(m.b)(e.name),
 							url: e.url
 						};
-						let o = _e(this.state.editorState, t);
+						let o = De(this.state.editorState, t);
 						o = s.EditorState.forceSelection(o, o.getSelection()), this.setEditorState(o), this.onToggleEmojiPicker()
 					}, this.shouldEnableEmojis = () => {
 						const {
 							flair: e,
 							flairTemplate: t
 						} = this.props;
-						return !(!this.props.areEmojisEnabledInSubreddit || Object(Ae.i)(e) >= j.g || t && !Object(Ae.a)(t)) && (e ? Object(Ae.h)(e) : 0) < (t ? Object(Ae.l)(t) : j.d)
+						return !(!this.props.areEmojisEnabledInSubreddit || Object(Me.i)(e) >= j.g || t && !Object(Me.a)(t)) && (e ? Object(Me.h)(e) : 0) < (t ? Object(Me.l)(t) : j.d)
 					}, this.onBlur = () => {
 						this.props.onBlur && this.props.onBlur()
 					}, this.state = {
-						editorState: Ze(e.flair)
+						editorState: Ve(e.flair)
 					}
 				}
 				focus() {
@@ -910,26 +908,26 @@
 				componentWillReceiveProps(e) {
 					e.subredditId !== this.props.subredditId && this.props.onGetSubredditEmojis(this.props.subredditId);
 					const t = e.flair,
-						o = $e(this.state.editorState, t.backgroundColor, t.templateId, t.textColor, t.cssClass);
-					et(o, t) || this.setEditorState(Ze(t))
+						o = Xe(this.state.editorState, t.backgroundColor, t.templateId, t.textColor, t.cssClass);
+					Ze(o, t) || this.setEditorState(Ve(t))
 				}
 				renderCompactHelperText(e) {
 					const t = this.props.flairTemplate || j.a;
 					return a.a.createElement("div", {
-						className: Object(p.a)(qe.a.HelperText, this.props.helperTextClass, e ? qe.a.hasError : null)
-					}, e || Object(Ae.k)(t))
+						className: Object(p.a)(Ge.a.HelperText, this.props.helperTextClass, e ? Ge.a.hasError : null)
+					}, e || Object(Me.k)(t))
 				}
 				renderHelperText(e) {
 					const {
 						flair: t
-					} = this.props, o = Object(Ae.i)(t), s = o > j.g, i = j.g - o, n = Object(Ke.c)("".concat(Object(Ke.b)("remainingCount", i), " ").concat(Object(Ke.a)("chars", ["character", "characters"], i), " remaining"));
+					} = this.props, o = Object(Me.i)(t), s = o > j.g, i = j.g - o, n = Object(Le.c)("".concat(Object(Le.b)("remainingCount", i), " ").concat(Object(Le.a)("chars", ["character", "characters"], i), " remaining"));
 					return a.a.createElement("div", {
-						className: Object(p.a)(qe.a.HelperText, this.props.helperTextClass, e ? qe.a.hasError : null)
-					}, s ? a.a.createElement(a.a.Fragment, null, n, a.a.createElement(V.a, {
-						icon: a.a.createElement(We.a, {
-							className: qe.a.helpIcon
+						className: Object(p.a)(Ge.a.HelperText, this.props.helperTextClass, e ? Ge.a.hasError : null)
+					}, s ? a.a.createElement(a.a.Fragment, null, n, a.a.createElement(Y.a, {
+						icon: a.a.createElement(Ae.a, {
+							className: Ge.a.helpIcon
 						}),
-						text: Object(Ke.c)("The unicode for the emoji goes against the character count")
+						text: Object(Le.c)("The unicode for the emoji goes against the character count")
 					})) : e || n)
 				}
 				render() {
@@ -944,16 +942,16 @@
 						isEmojiPickerOpen: c,
 						isFlairModOnly: l,
 						subredditId: d
-					} = this.props, m = this.shouldEnableEmojis(), h = Object(Ae.m)(s, i, {
+					} = this.props, m = this.shouldEnableEmojis(), h = Object(Me.m)(s, i, {
 						allowBlank: e
 					});
 					return a.a.createElement("div", {
 						className: this.props.className
 					}, a.a.createElement("div", {
-						className: Object(p.a)(qe.a.EditorWrapper, h ? qe.a.hasError : null, r ? qe.a.isCompact : null),
+						className: Object(p.a)(Ge.a.EditorWrapper, h ? Ge.a.hasError : null, r ? Ge.a.isCompact : null),
 						ref: this.wrapperRef,
 						id: o
-					}, a.a.createElement(Le, {
+					}, a.a.createElement(Fe, {
 						ref: this.richTextInputRef,
 						editorState: this.state.editorState,
 						flairTemplateType: n,
@@ -965,22 +963,22 @@
 						onBlur: this.onBlur,
 						className: f.c
 					}), m && a.a.createElement("div", {
-						className: Object(p.a)(qe.a.EmojiPickerButton, c ? qe.a.isActive : null),
+						className: Object(p.a)(Ge.a.EmojiPickerButton, c ? Ge.a.isActive : null),
 						id: o,
 						onClick: this.onToggleEmojiPicker
-					}, a.a.createElement(Ue.a, {
-						className: Object(p.a)(qe.a.SmileIcon, r ? qe.a.isCompact : null)
-					}), a.a.createElement(tt, ze({
+					}, a.a.createElement(Ke.a, {
+						className: Object(p.a)(Ge.a.SmileIcon, r ? Ge.a.isCompact : null)
+					}), a.a.createElement($e, Je({
 						className: Object(p.a)({
-							[qe.a.hasError]: !!h
+							[Ge.a.hasError]: !!h
 						}),
 						container: t,
 						isOverlay: !0,
 						isOpen: c,
 						tooltipId: o
-					}, this.state.shouldPositionPickerOnTop ? Qe : Ve), a.a.createElement("div", {
-						onClick: ot
-					}, a.a.createElement(Q, {
+					}, this.state.shouldPositionPickerOnTop ? ze : Ye), a.a.createElement("div", {
+						onClick: et
+					}, a.a.createElement(z, {
 						flairTemplateType: n,
 						isFlairModOnly: l,
 						onCancel: this.onToggleEmojiPicker,
@@ -989,7 +987,7 @@
 					}))))), r ? this.renderCompactHelperText(h) : this.renderHelperText(h))
 				}
 			}
-			t.default = nt(rt)
+			t.default = st(it)
 		},
 		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -1296,4 +1294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FlairEdit.518c76f13c2e9c7abe33.js.map
+//# sourceMappingURL=FlairEdit.57e8ce4f4a6622cdd633.js.map

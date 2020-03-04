@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.69e91604426d0bd6b882.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.41555c0aa6038e9f91fa.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, s) {
@@ -215,40 +215,43 @@
 				m = s("./src/reddit/actions/modal.ts"),
 				p = s("./src/reddit/i18n/utils.ts"),
 				h = s("./src/reddit/selectors/activeModalId.ts"),
-				b = s("./src/higherOrderComponents/asModal/index.tsx"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/layout/row/Inline/index.tsx"),
-				g = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = s.n(g);
-			var E = Object(b.a)(e => {
+				b = s("./node_modules/fbt/lib/FbtPublic.js"),
+				f = s("./src/higherOrderComponents/asModal/index.tsx"),
+				x = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				v = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				E = s.n(v);
+			var C = Object(f.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
 					return c.a.createElement("div", {
-						className: v.a.wrapper
-					}, c.a.createElement(x.a, {
-						className: v.a.titleRow
+						className: E.a.wrapper
+					}, c.a.createElement(g.a, {
+						className: E.a.titleRow
 					}, s), c.a.createElement("div", {
-						className: v.a.detailsContainer
-					}, t), c.a.createElement(x.a, {
-						className: v.a.buttonRow
-					}, c.a.createElement(f.f, {
-						className: v.a.confirmButton,
+						className: E.a.detailsContainer
+					}, t), c.a.createElement(g.a, {
+						className: E.a.buttonRow
+					}, c.a.createElement(x.f, {
+						className: E.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, b.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				C = s("./src/reddit/controls/ErrorText/index.m.less"),
-				w = s.n(C);
+				w = s("./src/reddit/controls/ErrorText/index.m.less"),
+				N = s.n(w);
 			s.d(t, "a", (function() {
-				return O
-			})), s.d(t, "c", (function() {
 				return I
+			})), s.d(t, "c", (function() {
+				return _
 			}));
-			const N = Object(l.c)({
+			const j = Object(l.c)({
 				activeModalId: h.a
 			});
-			class j extends c.a.Component {
+			class y extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -286,23 +289,23 @@
 						textHasOverflowed: o
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(u.a)(w.a.wrapper, s)
+						className: Object(u.a)(N.a.wrapper, s)
 					}, c.a.createElement("span", {
-						className: w.a.description,
+						className: N.a.description,
 						ref: this.spanRef
 					}, e), o && c.a.createElement("span", {
-						className: w.a.moreText,
+						className: N.a.moreText,
 						onClick: this.toggleModal
-					}, a), t === i && c.a.createElement(E, {
+					}, a), t === i && c.a.createElement(C, {
 						onConfirmed: this.toggleModal,
 						title: n
 					}, r || e))
 				}
 			}
-			const y = Object(d.b)(N, e => ({
+			const O = Object(d.b)(j, e => ({
 					toggleErrorTextModal: t => e(Object(m.i)(t))
-				}))(j),
-				O = e => {
+				}))(y),
+				I = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -312,17 +315,17 @@
 					} = e, i = a.length ? a : n ? [n] : [];
 					return i.length ? c.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => c.a.createElement(y, {
+					}, i.map((e, t) => c.a.createElement(O, {
 						className: s,
 						errorModalTitle: r,
 						key: t
 					}, e))) : null
 				},
-				I = e => c.a.createElement(O, {
+				_ = e => c.a.createElement(I, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = y
+			t.b = O
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -839,4 +842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.69e91604426d0bd6b882.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.41555c0aa6038e9f91fa.js.map

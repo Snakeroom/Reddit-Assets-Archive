@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0599f11a876c875f5c5a.js
-// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b60651a2573814b0367c.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3155,14 +3155,6 @@
 							title: {
 								en: "Verify your email to secure account: %{email}"
 							}
-						}
-					},
-					emojiPicker: {
-						cancel: {
-							en: "Cancel"
-						},
-						searchEmoji: {
-							en: "Search for emoji"
 						}
 					},
 					error: l.a,
@@ -8668,12 +8660,6 @@
 						}
 					},
 					subredditPicker: {
-						chooseACommunity: {
-							en: "Choose a community"
-						},
-						searchCommunities: {
-							en: "Search communities"
-						},
 						searchYourCommunities: {
 							en: "Search your communities"
 						},
@@ -12540,14 +12526,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4dd090c-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("c06ecb0-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4dd090c-production",
+						release: "c06ecb0-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12850,7 +12836,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4dd090c-production",
+							releaseClient: "c06ecb0-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18564,4 +18550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.0599f11a876c875f5c5a.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.b60651a2573814b0367c.js.map

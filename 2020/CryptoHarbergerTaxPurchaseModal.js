@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f3197f3995e977d60a87.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.89be3244c0bf962aea10.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -95,7 +95,7 @@
 				g = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				E = r.n(g);
 			r.d(t, "b", (function() {
-				return w
+				return O
 			})), r.d(t, "c", (function() {
 				return T
 			})), r.d(t, "a", (function() {
@@ -103,8 +103,8 @@
 			}));
 			const y = "add-custom-badge-tooltip",
 				j = 100,
-				O = 2 * j;
-			class w extends a.a.Component {
+				w = 2 * j;
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
@@ -113,7 +113,7 @@
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, O)
+						}, w)
 					}
 				}
 				render() {
@@ -204,8 +204,8 @@
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenUploadDialog: () => e(Object(d.i)())
 				}),
-				T = Object(s.b)(N, I)(w),
-				P = Object(s.b)(C, I)(w)
+				T = Object(s.b)(N, I)(O),
+				P = Object(s.b)(C, I)(O)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -335,7 +335,7 @@
 						onClick: e.onPurchase
 					}, a.a.createElement(m.c, null, "proceed to purchase"))))
 				})),
-				O = function(e) {
+				w = function(e) {
 					return a.a.createElement("svg", {
 						className: e.className,
 						viewBox: "0 0 32 29",
@@ -385,7 +385,7 @@
 						stroke: "#1A1A1B"
 					}))
 				},
-				w = function(e) {
+				O = function(e) {
 					return a.a.createElement("svg", {
 						className: e.className,
 						viewBox: "0 0 27 32",
@@ -498,7 +498,7 @@
 						className: C.a.section
 					}, a.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(O, {
+					}, a.a.createElement(w, {
 						className: C.a.bannerImage
 					})), a.a.createElement("div", {
 						className: C.a.textSection
@@ -512,7 +512,7 @@
 						className: C.a.section
 					}, a.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(w, {
+					}, a.a.createElement(O, {
 						className: C.a.taxImage
 					})), a.a.createElement("div", {
 						className: C.a.textSection
@@ -550,28 +550,28 @@
 				G = r("./src/reddit/helpers/governance/ethereum.ts"),
 				L = r("./src/reddit/i18n/utils.ts"),
 				R = r("./src/reddit/models/Toast/index.ts"),
-				V = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				F = r.n(V);
+				F = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
+				V = r.n(F);
 
 			function W(e) {
 				return a.a.createElement("article", {
-					className: Object(i.a)(e.className, F.a.container)
+					className: Object(i.a)(e.className, V.a.container)
 				}, a.a.createElement("div", {
-					className: F.a.title
+					className: V.a.title
 				}, e.title), a.a.createElement("div", {
-					className: F.a.description
+					className: V.a.description
 				}, e.description), e.children)
 			}
-			var q = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
-				U = r.n(q);
+			var U = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
+				q = r.n(U);
 
 			function X(e) {
 				return a.a.createElement("div", {
-					className: Object(i.a)(U.a.container, e.className)
+					className: Object(i.a)(q.a.container, e.className)
 				}, a.a.createElement("div", {
-					className: U.a.label
+					className: q.a.label
 				}, e.label), a.a.createElement("div", {
-					className: U.a.amount
+					className: q.a.amount
 				}, Object(p.a)(Object(f.b)(e.amount, e.tokenDisplayConversion))))
 			}
 			var Y = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/index.m.less"),
@@ -890,40 +890,43 @@
 				m = r("./src/reddit/actions/modal.ts"),
 				p = r("./src/reddit/i18n/utils.ts"),
 				h = r("./src/reddit/selectors/activeModalId.ts"),
-				b = r("./src/higherOrderComponents/asModal/index.tsx"),
-				x = r("./src/reddit/controls/Button/index.tsx"),
-				f = r("./src/reddit/layout/row/Inline/index.tsx"),
-				v = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				g = r.n(v);
-			var E = Object(b.a)(e => {
+				b = r("./node_modules/fbt/lib/FbtPublic.js"),
+				x = r("./src/higherOrderComponents/asModal/index.tsx"),
+				f = r("./src/reddit/controls/Button/index.tsx"),
+				v = r("./src/reddit/layout/row/Inline/index.tsx"),
+				g = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				E = r.n(g);
+			var y = Object(x.a)(e => {
 					const {
 						children: t,
 						title: r
 					} = e;
 					return i.a.createElement("div", {
-						className: g.a.wrapper
-					}, i.a.createElement(f.a, {
-						className: g.a.titleRow
+						className: E.a.wrapper
+					}, i.a.createElement(v.a, {
+						className: E.a.titleRow
 					}, r), i.a.createElement("div", {
-						className: g.a.detailsContainer
-					}, t), i.a.createElement(f.a, {
-						className: g.a.buttonRow
-					}, i.a.createElement(x.f, {
-						className: g.a.confirmButton,
+						className: E.a.detailsContainer
+					}, t), i.a.createElement(v.a, {
+						className: E.a.buttonRow
+					}, i.a.createElement(f.f, {
+						className: E.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, b.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				y = r("./src/reddit/controls/ErrorText/index.m.less"),
-				j = r.n(y);
+				j = r("./src/reddit/controls/ErrorText/index.m.less"),
+				w = r.n(j);
 			r.d(t, "a", (function() {
-				return C
-			})), r.d(t, "c", (function() {
 				return I
+			})), r.d(t, "c", (function() {
+				return T
 			}));
 			const O = Object(l.c)({
 				activeModalId: h.a
 			});
-			class w extends i.a.Component {
+			class N extends i.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = i.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -961,23 +964,23 @@
 						textHasOverflowed: c
 					} = this.state;
 					return i.a.createElement("div", {
-						className: Object(u.a)(j.a.wrapper, r)
+						className: Object(u.a)(w.a.wrapper, r)
 					}, i.a.createElement("span", {
-						className: j.a.description,
+						className: w.a.description,
 						ref: this.spanRef
 					}, e), c && i.a.createElement("span", {
-						className: j.a.moreText,
+						className: w.a.moreText,
 						onClick: this.toggleModal
-					}, s), t === o && i.a.createElement(E, {
+					}, s), t === o && i.a.createElement(y, {
 						onConfirmed: this.toggleModal,
 						title: a
 					}, n || e))
 				}
 			}
-			const N = Object(d.b)(O, e => ({
+			const C = Object(d.b)(O, e => ({
 					toggleErrorTextModal: t => e(Object(m.i)(t))
-				}))(w),
-				C = e => {
+				}))(N),
+				I = e => {
 					const {
 						className: t,
 						errorClassName: r,
@@ -987,17 +990,17 @@
 					} = e, o = s.length ? s : a ? [a] : [];
 					return o.length ? i.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => i.a.createElement(N, {
+					}, o.map((e, t) => i.a.createElement(C, {
 						className: r,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				I = e => i.a.createElement(C, {
+				T = e => i.a.createElement(I, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = N
+			t.b = C
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1567,9 +1570,9 @@
 			})), r.d(t, "l", (function() {
 				return j
 			})), r.d(t, "m", (function() {
-				return O
-			})), r.d(t, "s", (function() {
 				return w
+			})), r.d(t, "s", (function() {
+				return O
 			})), r.d(t, "a", (function() {
 				return N
 			})), r.d(t, "f", (function() {
@@ -1596,7 +1599,7 @@
 					let {
 						subredditId: r
 					} = t;
-					const n = w(e, {
+					const n = O(e, {
 						subredditId: r
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.harberger ? n.extra.contracts.harberger : {
@@ -1650,14 +1653,14 @@
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
 				j = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				O = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				w = (e, t) => {
-					const r = O(e, t);
+				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				O = (e, t) => {
+					const r = w(e, t);
 					return r && r.walletProvider
 				},
 				N = (e, t) => {
-					const r = w(e, t),
-						n = O(e, t);
+					const r = O(e, t),
+						n = w(e, t);
 					return r && r.provider || n && n.provider
 				},
 				C = (e, t) => {
@@ -1665,7 +1668,7 @@
 					return r === a.a.Ethereum || r === a.a.Rinkeby
 				},
 				I = (e, t) => {
-					const r = w(e, t),
+					const r = O(e, t),
 						n = N(e, t);
 					if (r && !r.inTransition && n === a.a.Stellar) return {
 						address: r.extra && r.extra.issuerAddress || "",
@@ -1685,7 +1688,7 @@
 					let {
 						subredditId: r
 					} = t;
-					const n = w(e, {
+					const n = O(e, {
 						subredditId: r
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.subscriptions ? n.extra.contracts.subscriptions : {
@@ -1693,10 +1696,10 @@
 					}
 				},
 				P = (e, t) => {
-					const r = O(e, t);
+					const r = w(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.f3197f3995e977d60a87.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.89be3244c0bf962aea10.js.map

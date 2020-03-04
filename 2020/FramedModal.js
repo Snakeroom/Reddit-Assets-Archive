@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.59711b1173feb76cd5e3.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.6ff57fc76d515079040e.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -39,7 +39,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var c = e => r.a.createElement("svg", i({
+			var l = e => r.a.createElement("svg", i({
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, e), r.a.createElement("g", {
@@ -49,12 +49,12 @@
 				}, r.a.createElement("path", {
 					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
 				})))),
-				l = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				d = s("./src/reddit/controls/Checkbox/index.m.less"),
 				m = s.n(d);
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -62,7 +62,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var u = function(e, t) {
+			var h = function(e, t) {
 				var s = {};
 				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (s[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -77,17 +77,17 @@
 						disabled: a,
 						redditStyle: o,
 						"data-redditstyle": i
-					} = t, c = u(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), l = ((e, t, s) => {
+					} = t, l = h(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), c = ((e, t, s) => {
 						const a = !(!t && !s);
 						let r = "";
 						return r = e ? a ? m.a.mDisabledRedditStyle : m.a.mDisabled : a ? m.a.mActiveRedditStyle : m.a.mActive
 					})(a, o, i);
-					return r.a.createElement(e, h({
-						className: Object(n.a)(m.a.Checkbox, l, s)
-					}, c))
+					return r.a.createElement(e, u({
+						className: Object(n.a)(m.a.Checkbox, c, s)
+					}, l))
 				},
-				p = x(l.a),
-				g = x(c);
+				p = x(c.a),
+				g = x(l);
 			t.a = e => {
 				const t = e.isHalfCheckboxSelected ? g : e.isCheckboxSelected ? p : o.a;
 				return r.a.createElement("button", {
@@ -128,49 +128,52 @@
 				n = s("./node_modules/raf/index.js"),
 				o = s.n(n),
 				i = s("./node_modules/react/index.js"),
-				c = s.n(i),
-				l = s("./node_modules/react-redux/es/index.js"),
+				l = s.n(i),
+				c = s("./node_modules/react-redux/es/index.js"),
 				d = s("./node_modules/reselect/es/index.js"),
 				m = s("./src/lib/classNames/index.ts"),
-				h = s("./src/reddit/actions/modal.ts"),
-				u = s("./src/reddit/i18n/utils.ts"),
+				u = s("./src/reddit/actions/modal.ts"),
+				h = s("./src/reddit/i18n/utils.ts"),
 				x = s("./src/reddit/selectors/activeModalId.ts"),
-				p = s("./src/higherOrderComponents/asModal/index.tsx"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/layout/row/Inline/index.tsx"),
-				C = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				b = s.n(C);
-			var v = Object(p.a)(e => {
+				p = s("./node_modules/fbt/lib/FbtPublic.js"),
+				g = s("./src/higherOrderComponents/asModal/index.tsx"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				C = s("./src/reddit/layout/row/Inline/index.tsx"),
+				b = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				v = s.n(b);
+			var y = Object(g.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
-					return c.a.createElement("div", {
-						className: b.a.wrapper
-					}, c.a.createElement(f.a, {
-						className: b.a.titleRow
-					}, s), c.a.createElement("div", {
-						className: b.a.detailsContainer
-					}, t), c.a.createElement(f.a, {
-						className: b.a.buttonRow
-					}, c.a.createElement(g.f, {
-						className: b.a.confirmButton,
+					return l.a.createElement("div", {
+						className: v.a.wrapper
+					}, l.a.createElement(C.a, {
+						className: v.a.titleRow
+					}, s), l.a.createElement("div", {
+						className: v.a.detailsContainer
+					}, t), l.a.createElement(C.a, {
+						className: v.a.buttonRow
+					}, l.a.createElement(f.f, {
+						className: v.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(u.c)("Ok"))))
+					}, p.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				y = s("./src/reddit/controls/ErrorText/index.m.less"),
-				E = s.n(y);
+				E = s("./src/reddit/controls/ErrorText/index.m.less"),
+				w = s.n(E);
 			s.d(t, "a", (function() {
-				return j
-			})), s.d(t, "c", (function() {
 				return M
+			})), s.d(t, "c", (function() {
+				return N
 			}));
-			const w = Object(d.c)({
+			const O = Object(d.c)({
 				activeModalId: x.a
 			});
-			class O extends c.a.Component {
+			class _ extends l.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
@@ -199,30 +202,30 @@
 						activeModalId: t,
 						className: s,
 						errorModalBody: a,
-						errorModalTitle: r = Object(u.c)("Error"),
-						moreText: n = Object(u.c)("More")
+						errorModalTitle: r = Object(h.c)("Error"),
+						moreText: n = Object(h.c)("More")
 					} = this.props, {
 						modalId: o,
 						textHasOverflowed: i
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(m.a)(E.a.wrapper, s)
-					}, c.a.createElement("span", {
-						className: E.a.description,
+					return l.a.createElement("div", {
+						className: Object(m.a)(w.a.wrapper, s)
+					}, l.a.createElement("span", {
+						className: w.a.description,
 						ref: this.spanRef
-					}, e), i && c.a.createElement("span", {
-						className: E.a.moreText,
+					}, e), i && l.a.createElement("span", {
+						className: w.a.moreText,
 						onClick: this.toggleModal
-					}, n), t === o && c.a.createElement(v, {
+					}, n), t === o && l.a.createElement(y, {
 						onConfirmed: this.toggleModal,
 						title: r
 					}, a || e))
 				}
 			}
-			const _ = Object(l.b)(w, e => ({
-					toggleErrorTextModal: t => e(Object(h.i)(t))
-				}))(O),
-				j = e => {
+			const j = Object(c.b)(O, e => ({
+					toggleErrorTextModal: t => e(Object(u.i)(t))
+				}))(_),
+				M = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -230,19 +233,19 @@
 						fallbackMessage: r,
 						messages: n = []
 					} = e, o = n.length ? n : r ? [r] : [];
-					return o.length ? c.a.createElement("div", {
+					return o.length ? l.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(_, {
+					}, o.map((e, t) => l.a.createElement(j, {
 						className: s,
 						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				M = e => c.a.createElement(j, {
-					fallbackMessage: Object(u.c)("Something went wrong"),
+				N = e => l.a.createElement(M, {
+					fallbackMessage: Object(h.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = _
+			t.b = j
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, s) {
 			"use strict";
@@ -279,14 +282,14 @@
 		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return l
 			}));
 			var a = s("./node_modules/react/index.js"),
 				r = s.n(a),
 				n = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/Trash2/index.m.less"),
 				i = s.n(o);
-			const c = e => r.a.createElement("svg", {
+			const l = e => r.a.createElement("svg", {
 				className: Object(n.a)(i.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
@@ -296,7 +299,7 @@
 			}), r.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
-			t.b = c
+			t.b = l
 		},
 		"./src/reddit/pages/FramedModalPage/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -312,21 +315,21 @@
 				n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				i = s("./src/lib/extractQueryParams/index.ts"),
-				c = s("./src/lib/messageIframeParent/index.ts"),
-				l = s("./src/reddit/pages/FramedModalPage/index.m.less"),
-				d = s.n(l),
+				l = s("./src/lib/messageIframeParent/index.ts"),
+				c = s("./src/reddit/pages/FramedModalPage/index.m.less"),
+				d = s.n(c),
 				m = s("./src/reddit/components/Economics/Support/PaymentTooltip/index.tsx"),
-				h = s("./src/reddit/models/Payments/index.ts");
-			const u = "ti",
+				u = s("./src/reddit/models/Payments/index.ts");
+			const h = "ti",
 				x = "tt";
 			var p = function(e) {
 				const t = e.params;
 				let s;
-				const a = t[u],
+				const a = t[h],
 					r = t[x];
 				return a && r && (s = {
 					id: a,
-					type: "link" === r ? h.a.Post : "comment" === r ? h.a.Comment : h.a.Profile
+					type: "link" === r ? u.a.Post : "comment" === r ? u.a.Comment : u.a.Profile
 				}), o.a.createElement(m.b, {
 					subredditId: t.r,
 					targetName: t.u,
@@ -359,7 +362,7 @@
 					this.parentOrigin = t
 				}
 				postMessage(e) {
-					Object(c.a)(e, f, this.parentOrigin)
+					Object(l.a)(e, f, this.parentOrigin)
 				}
 				render() {
 					return o.a.createElement("div", {
@@ -408,4 +411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedModal.59711b1173feb76cd5e3.js.map
+//# sourceMappingURL=FramedModal.6ff57fc76d515079040e.js.map

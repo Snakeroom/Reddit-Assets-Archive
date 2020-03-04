@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3c84d78b33a148f98665.js
-// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.732e05543becc5e9324f.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./src/graphql/operations/AllModerators.json": function(e) {
@@ -19641,40 +19641,43 @@
 				u = s("./src/reddit/actions/modal.ts"),
 				p = s("./src/reddit/i18n/utils.ts"),
 				b = s("./src/reddit/selectors/activeModalId.ts"),
-				h = s("./src/higherOrderComponents/asModal/index.tsx"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/layout/row/Inline/index.tsx"),
-				f = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				E = s.n(f);
-			var v = Object(h.a)(e => {
+				h = s("./node_modules/fbt/lib/FbtPublic.js"),
+				g = s("./src/higherOrderComponents/asModal/index.tsx"),
+				x = s("./src/reddit/controls/Button/index.tsx"),
+				f = s("./src/reddit/layout/row/Inline/index.tsx"),
+				E = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				v = s.n(E);
+			var O = Object(g.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
 					return c.a.createElement("div", {
-						className: E.a.wrapper
-					}, c.a.createElement(x.a, {
-						className: E.a.titleRow
+						className: v.a.wrapper
+					}, c.a.createElement(f.a, {
+						className: v.a.titleRow
 					}, s), c.a.createElement("div", {
-						className: E.a.detailsContainer
-					}, t), c.a.createElement(x.a, {
-						className: E.a.buttonRow
-					}, c.a.createElement(g.f, {
-						className: E.a.confirmButton,
+						className: v.a.detailsContainer
+					}, t), c.a.createElement(f.a, {
+						className: v.a.buttonRow
+					}, c.a.createElement(x.f, {
+						className: v.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, h.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				O = s("./src/reddit/controls/ErrorText/index.m.less"),
-				C = s.n(O);
+				C = s("./src/reddit/controls/ErrorText/index.m.less"),
+				j = s.n(C);
 			s.d(t, "a", (function() {
-				return w
-			})), s.d(t, "c", (function() {
 				return S
+			})), s.d(t, "c", (function() {
+				return _
 			}));
-			const j = Object(l.c)({
+			const y = Object(l.c)({
 				activeModalId: b.a
 			});
-			class y extends c.a.Component {
+			class k extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -19712,23 +19715,23 @@
 						textHasOverflowed: i
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(m.a)(C.a.wrapper, s)
+						className: Object(m.a)(j.a.wrapper, s)
 					}, c.a.createElement("span", {
-						className: C.a.description,
+						className: j.a.description,
 						ref: this.spanRef
 					}, e), i && c.a.createElement("span", {
-						className: C.a.moreText,
+						className: j.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === r && c.a.createElement(v, {
+					}, o), t === r && c.a.createElement(O, {
 						onConfirmed: this.toggleModal,
 						title: a
 					}, n || e))
 				}
 			}
-			const k = Object(d.b)(j, e => ({
+			const w = Object(d.b)(y, e => ({
 					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(y),
-				w = e => {
+				}))(k),
+				S = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -19738,17 +19741,17 @@
 					} = e, r = o.length ? o : a ? [a] : [];
 					return r.length ? c.a.createElement("div", {
 						className: t
-					}, r.map((e, t) => c.a.createElement(k, {
+					}, r.map((e, t) => c.a.createElement(w, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				S = e => c.a.createElement(w, {
+				_ = e => c.a.createElement(S, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = k
+			t.b = w
 		},
 		"./src/reddit/controls/FileDrop/index.tsx": function(e, t, s) {
 			"use strict";
@@ -35416,4 +35419,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.3c84d78b33a148f98665.js.map
+//# sourceMappingURL=ModerationPages.732e05543becc5e9324f.js.map

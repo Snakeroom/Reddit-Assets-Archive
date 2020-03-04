@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.0a9e183426f690bbd988.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.e044a4aa5fae5b5ed544.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -266,9 +266,9 @@
 						className: F.a.form
 					})))
 				})),
-				Y = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/index.m.less"),
-				q = a.n(Y);
-			const G = Object(g.a)(w.a),
+				G = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/index.m.less"),
+				Y = a.n(G);
+			const q = Object(g.a)(w.a),
 				H = "economy-support-paymentmodal-card-dropdown",
 				J = e => "economy.support.payment.card.selector.".concat(e);
 			const V = Object(r.c)({
@@ -282,29 +282,29 @@
 					}))
 				}))((function(e) {
 					return n.a.createElement("div", {
-						className: Object(b.a)(q.a.container, e.className)
+						className: Object(b.a)(Y.a.container, e.className)
 					}, n.a.createElement("div", {
-						className: q.a.selected
+						className: Y.a.selected
 					}, n.a.createElement(P.a, {
-						className: q.a.lockIcon
+						className: Y.a.lockIcon
 					}), n.a.createElement("div", {
-						className: q.a.label
+						className: Y.a.label
 					}, n.a.createElement(E.a, {
 						msgId: J("title")
 					})), n.a.createElement("div", {
-						className: q.a.cardType,
+						className: Y.a.cardType,
 						id: H,
 						onClick: e.onToggleDropdown
 					}, e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal ? n.a.createElement(E.a, {
 						msgId: J("other")
 					}) : e.selectedPayment.display, n.a.createElement(C.a, {
-						className: q.a.dropdownCaret
+						className: Y.a.dropdownCaret
 					}))), (e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal) && n.a.createElement(z, {
-						className: q.a.newPayment,
+						className: Y.a.newPayment,
 						selectedPayment: e.selectedPayment,
 						stripeClientLoaded: e.stripeClientLoaded,
 						onChangePayment: e.onSelectPayment
-					}), n.a.createElement(G, {
+					}), n.a.createElement(q, {
 						isOverlay: !0,
 						isOpen: e.dropdownIsOpen,
 						tooltipId: H
@@ -634,40 +634,43 @@
 				p = a("./src/reddit/actions/modal.ts"),
 				u = a("./src/reddit/i18n/utils.ts"),
 				h = a("./src/reddit/selectors/activeModalId.ts"),
-				y = a("./src/higherOrderComponents/asModal/index.tsx"),
-				x = a("./src/reddit/controls/Button/index.tsx"),
-				g = a("./src/reddit/layout/row/Inline/index.tsx"),
-				b = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				N = a.n(b);
-			var E = Object(y.a)(e => {
+				y = a("./node_modules/fbt/lib/FbtPublic.js"),
+				x = a("./src/higherOrderComponents/asModal/index.tsx"),
+				g = a("./src/reddit/controls/Button/index.tsx"),
+				b = a("./src/reddit/layout/row/Inline/index.tsx"),
+				N = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				E = a.n(N);
+			var w = Object(x.a)(e => {
 					const {
 						children: t,
 						title: a
 					} = e;
 					return l.a.createElement("div", {
-						className: N.a.wrapper
-					}, l.a.createElement(g.a, {
-						className: N.a.titleRow
+						className: E.a.wrapper
+					}, l.a.createElement(b.a, {
+						className: E.a.titleRow
 					}, a), l.a.createElement("div", {
-						className: N.a.detailsContainer
-					}, t), l.a.createElement(g.a, {
-						className: N.a.buttonRow
-					}, l.a.createElement(x.f, {
-						className: N.a.confirmButton,
+						className: E.a.detailsContainer
+					}, t), l.a.createElement(b.a, {
+						className: E.a.buttonRow
+					}, l.a.createElement(g.f, {
+						className: E.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(u.c)("Ok"))))
+					}, y.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				w = a("./src/reddit/controls/ErrorText/index.m.less"),
-				v = a.n(w);
+				v = a("./src/reddit/controls/ErrorText/index.m.less"),
+				C = a.n(v);
 			a.d(t, "a", (function() {
-				return S
-			})), a.d(t, "c", (function() {
 				return j
+			})), a.d(t, "c", (function() {
+				return O
 			}));
-			const C = Object(i.c)({
+			const P = Object(i.c)({
 				activeModalId: h.a
 			});
-			class P extends l.a.Component {
+			class f extends l.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -705,23 +708,23 @@
 						textHasOverflowed: c
 					} = this.state;
 					return l.a.createElement("div", {
-						className: Object(m.a)(v.a.wrapper, a)
+						className: Object(m.a)(C.a.wrapper, a)
 					}, l.a.createElement("span", {
-						className: v.a.description,
+						className: C.a.description,
 						ref: this.spanRef
 					}, e), c && l.a.createElement("span", {
-						className: v.a.moreText,
+						className: C.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === r && l.a.createElement(E, {
+					}, o), t === r && l.a.createElement(w, {
 						onConfirmed: this.toggleModal,
 						title: n
 					}, s || e))
 				}
 			}
-			const f = Object(d.b)(C, e => ({
+			const S = Object(d.b)(P, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(P),
-				S = e => {
+				}))(f),
+				j = e => {
 					const {
 						className: t,
 						errorClassName: a,
@@ -731,17 +734,17 @@
 					} = e, r = o.length ? o : n ? [n] : [];
 					return r.length ? l.a.createElement("div", {
 						className: t
-					}, r.map((e, t) => l.a.createElement(f, {
+					}, r.map((e, t) => l.a.createElement(S, {
 						className: a,
 						errorModalTitle: s,
 						key: t
 					}, e))) : null
 				},
-				j = e => l.a.createElement(S, {
+				O = e => l.a.createElement(j, {
 					fallbackMessage: Object(u.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = f
+			t.b = S
 		},
 		"./src/reddit/controls/UnstyledInternalLink/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -816,4 +819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.0a9e183426f690bbd988.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.e044a4aa5fae5b5ed544.js.map

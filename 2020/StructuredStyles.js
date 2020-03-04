@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.5a729ea66e7c6ce6c2d0.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.d5d0d357182b5c6e25b3.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -7076,7 +7076,7 @@
 				C = n("./src/reddit/constants/posts.ts"),
 				f = n("./src/reddit/models/SubredditAutocomplete/index.ts"),
 				S = n("./src/reddit/selectors/user.ts"),
-				y = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/app/strings/index.ts")),
+				y = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
 				I = n("./src/lib/lessComponent.tsx"),
 				w = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				O = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
@@ -7117,56 +7117,57 @@
 				}
 				return n
 			};
-			const W = Object(y.d)("subredditPicker.chooseACommunity"),
-				F = Object(y.d)("subredditPicker.searchCommunities"),
-				U = e => {
-					e.preventDefault(), e.stopPropagation()
-				};
-			var M = e => {
+			const W = e => {
+				e.preventDefault(), e.stopPropagation()
+			};
+			var F = e => {
 					const {
 						className: t,
 						disabled: n,
 						isActive: a,
 						icon: s,
-						language: l,
-						onDropdownClick: i,
-						inputRef: o,
-						value: d
-					} = e, c = A(e, ["className", "disabled", "isActive", "icon", "language", "onDropdownClick", "inputRef", "value"]);
-					let u = r.a.createElement(N, null);
-					if (a) u = r.a.createElement(P, null);
+						onDropdownClick: l,
+						inputRef: i,
+						value: o
+					} = e, d = A(e, ["className", "disabled", "isActive", "icon", "onDropdownClick", "inputRef", "value"]);
+					let c = r.a.createElement(N, null);
+					if (a) c = r.a.createElement(P, null);
 					else if (s) {
 						const e = s.round ? T : _;
-						u = r.a.createElement(e, {
+						c = r.a.createElement(e, {
 							primaryColor: s.color,
 							iconUrl: s.url
 						})
 					}
 					return r.a.createElement("div", {
 						className: Object(v.a)(D.a.searchBar, t)
-					}, u, r.a.createElement("div", {
+					}, c, r.a.createElement("div", {
 						className: D.a.inputWrapper
 					}, r.a.createElement("input", B({
 						className: D.a.input,
-						ref: o,
+						ref: i,
 						disabled: n,
-						placeholder: (a ? F : W)(l),
+						placeholder: a ? y.fbt._("Search communities", null, {
+							hk: "1mtF5A"
+						}) : y.fbt._("Choose a community", null, {
+							hk: "44gKTd"
+						}),
 						spellCheck: !1,
-						value: d
-					}, c))), r.a.createElement("div", {
-						onClick: i,
-						onMouseDown: U
+						value: o
+					}, d))), r.a.createElement("div", {
+						onClick: l,
+						onMouseDown: W
 					}, r.a.createElement(R, {
 						disabled: n
 					})))
 				},
-				L = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
-				q = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
-				V = n.n(q);
-			const K = Object(c.c)({
+				U = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
+				M = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
+				L = n.n(M);
+			const q = Object(c.c)({
 				language: S.P
 			});
-			class H extends r.a.Component {
+			class V extends r.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.inputRef = null, this.setInputRef = e => {
@@ -7321,11 +7322,11 @@
 						isOpen: i
 					} = this.state, o = s.record;
 					return r.a.createElement("div", {
-						className: Object(v.a)(V.a.container, e, {
-							[V.a.mIsActive]: l,
-							[V.a.mIsInvalid]: !n
+						className: Object(v.a)(L.a.container, e, {
+							[L.a.mIsActive]: l,
+							[L.a.mIsInvalid]: !n
 						})
-					}, r.a.createElement(M, {
+					}, r.a.createElement(F, {
 						disabled: t,
 						isActive: this.state.isActive,
 						value: this.state.inputValue,
@@ -7335,13 +7336,12 @@
 							url: o.iconUrl
 						},
 						inputRef: this.setInputRef,
-						language: this.props.language,
 						onDropdownClick: this.onDropdownClick,
 						onChange: this.onInputChange,
 						onFocus: this.onFocus,
 						onBlur: this.onBlur,
 						onKeyDown: this.onKeyDown
-					}), i && r.a.createElement(L.a, {
+					}), i && r.a.createElement(U.a, {
 						items: a,
 						isValid: n,
 						focusedIndex: this.state.focusedIndex,
@@ -7353,11 +7353,11 @@
 					}))
 				}
 			}
-			var G = Object(d.b)(K)(H),
-				z = n("./src/reddit/selectors/subredditAutocomplete.ts");
+			var K = Object(d.b)(q)(V),
+				H = n("./src/reddit/selectors/subredditAutocomplete.ts");
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -7365,13 +7365,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Q = Object(u.a)(Object(c.a)((e, t) => t.value, (e, t) => {
+			const z = Object(u.a)(Object(c.a)((e, t) => t.value, (e, t) => {
 					let {
 						allowCrosspostableOnly: n,
 						includeUserProfile: a,
 						value: r
 					} = t;
-					return Object(z.a)(e, {
+					return Object(H.a)(e, {
 						allowCrosspostableOnly: n,
 						includeUserProfile: a,
 						substring: r.rawString
@@ -7389,11 +7389,11 @@
 						isAutocompletePending: t.isPending
 					}
 				})),
-				J = {
+				Y = {
 					onGetInitialData: e => t => t(e ? p.d() : h.e()),
 					onGetSubredditAutocomplete: m.d
 				};
-			class Z extends r.a.Component {
+			class Q extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onGetSubredditAutocomplete = e => {
 						this.props.onGetSubredditAutocomplete(e)
@@ -7403,15 +7403,15 @@
 					this.props.onGetInitialData(!!this.props.allowCrosspostableOnly)
 				}
 				render() {
-					return r.a.createElement(G, Y({}, this.props, {
+					return r.a.createElement(K, G({}, this.props, {
 						onGetSubredditAutocomplete: this.onGetSubredditAutocomplete
 					}))
 				}
 			}
-			var X = Object(d.b)(Q, J)(Z);
+			var J = Object(d.b)(z, Y)(Q);
 			t.a = class extends r.a.Component {
 				constructor() {
-					super(...arguments), this.renderPicker = e => r.a.createElement(X, {
+					super(...arguments), this.renderPicker = e => r.a.createElement(J, {
 						allowCrosspostableOnly: this.props.allowCrosspostableOnly,
 						className: this.props.className,
 						disabled: this.props.disabled || !1,
@@ -7798,4 +7798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.5a729ea66e7c6ce6c2d0.js.map
+//# sourceMappingURL=StructuredStyles.d5d0d357182b5c6e25b3.js.map

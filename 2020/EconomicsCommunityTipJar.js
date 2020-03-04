@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.2d6d1e92c28ed0f09519.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.51138d11ae563ea267f1.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -54,15 +54,15 @@
 				c = s("./src/lib/prettyPrintNumber/index.ts"),
 				d = s("./src/reddit/actions/economics/tips/thunkedActions.ts"),
 				l = s("./src/lib/classNames/index.ts"),
-				m = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
-				u = s("./src/reddit/controls/Button/index.tsx"),
+				u = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
+				m = s("./src/reddit/controls/Button/index.tsx"),
 				p = s("./src/reddit/i18n/components.tsx"),
 				b = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				x = s("./src/reddit/models/Payments/index.ts"),
 				h = s("./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less"),
 				f = s.n(h);
-			var g = Object(m.a)((function(e) {
-					return r.a.createElement(u.f, {
+			var g = Object(u.a)((function(e) {
+					return r.a.createElement(m.f, {
 						className: Object(l.a)(f.a.button, {
 							active: e.tooltipIsOpen
 						}),
@@ -81,7 +81,7 @@
 				T = s.n(j);
 			const I = 1e4,
 				N = 500;
-			class P extends r.a.Component {
+			class _ extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						loadBufferTimePassed: !1
@@ -125,7 +125,7 @@
 					}, this.state.loadBufferTimePassed && Object(y.c)("Loading..."))) : null
 				}
 			}
-			const _ = Object(i.c)({
+			const P = Object(i.c)({
 				communityTipJarAmount: E.j,
 				subredditAssets: w.l,
 				subreddit: O.P,
@@ -139,7 +139,7 @@
 					})
 				}
 			});
-			t.default = Object(o.b)(_, (e, t) => {
+			t.default = Object(o.b)(P, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -149,7 +149,7 @@
 						contentIds: [s]
 					}))
 				}
-			})(P)
+			})(_)
 		},
 		"./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -184,8 +184,8 @@
 				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = s("./src/reddit/models/Payments/index.ts"),
 				l = s("./src/reddit/selectors/telemetry.ts"),
-				m = s("./src/lib/currency/centsToDollars/index.ts"),
-				u = s("./src/lib/prettyPrintNumber/index.ts"),
+				u = s("./src/lib/currency/centsToDollars/index.ts"),
+				m = s("./src/lib/prettyPrintNumber/index.ts"),
 				p = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				b = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/PaymentReaction/index.m.less"),
 				x = s.n(b);
@@ -197,7 +197,7 @@
 					className: x.a.pill
 				}, r.a.createElement(p.a, {
 					className: x.a.icon
-				}), Object(u.a)(Object(m.a)(e.amount, !0))))
+				}), Object(m.a)(Object(u.a)(e.amount, !0))))
 			}
 			var f = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
 				g = s.n(f);
@@ -361,10 +361,10 @@
 				})))),
 				d = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				l = s("./src/reddit/controls/Checkbox/index.m.less"),
-				m = s.n(l);
+				u = s.n(l);
 
-			function u() {
-				return (u = Object.assign || function(e) {
+			function m() {
+				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -390,10 +390,10 @@
 					} = t, c = p(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, s) => {
 						const n = !(!t && !s);
 						let r = "";
-						return r = e ? n ? m.a.mDisabledRedditStyle : m.a.mDisabled : n ? m.a.mActiveRedditStyle : m.a.mActive
+						return r = e ? n ? u.a.mDisabledRedditStyle : u.a.mDisabled : n ? u.a.mActiveRedditStyle : u.a.mActive
 					})(n, i, a);
-					return r.a.createElement(e, u({
-						className: Object(o.a)(m.a.Checkbox, d, s)
+					return r.a.createElement(e, m({
+						className: Object(o.a)(u.a.Checkbox, d, s)
 					}, c))
 				},
 				x = b(d.a),
@@ -408,7 +408,7 @@
 					},
 					disabled: e.disabled
 				}, r.a.createElement(t, {
-					className: Object(o.a)(m.a.CheckboxSizing, e.className),
+					className: Object(o.a)(u.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -441,44 +441,47 @@
 				c = s.n(a),
 				d = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/reselect/es/index.js"),
-				m = s("./src/lib/classNames/index.ts"),
-				u = s("./src/reddit/actions/modal.ts"),
+				u = s("./src/lib/classNames/index.ts"),
+				m = s("./src/reddit/actions/modal.ts"),
 				p = s("./src/reddit/i18n/utils.ts"),
 				b = s("./src/reddit/selectors/activeModalId.ts"),
-				x = s("./src/higherOrderComponents/asModal/index.tsx"),
-				h = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/layout/row/Inline/index.tsx"),
-				g = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = s.n(g);
-			var C = Object(x.a)(e => {
+				x = s("./node_modules/fbt/lib/FbtPublic.js"),
+				h = s("./src/higherOrderComponents/asModal/index.tsx"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				v = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				C = s.n(v);
+			var y = Object(h.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
 					return c.a.createElement("div", {
-						className: v.a.wrapper
-					}, c.a.createElement(f.a, {
-						className: v.a.titleRow
+						className: C.a.wrapper
+					}, c.a.createElement(g.a, {
+						className: C.a.titleRow
 					}, s), c.a.createElement("div", {
-						className: v.a.detailsContainer
-					}, t), c.a.createElement(f.a, {
-						className: v.a.buttonRow
-					}, c.a.createElement(h.f, {
-						className: v.a.confirmButton,
+						className: C.a.detailsContainer
+					}, t), c.a.createElement(g.a, {
+						className: C.a.buttonRow
+					}, c.a.createElement(f.f, {
+						className: C.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, x.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				y = s("./src/reddit/controls/ErrorText/index.m.less"),
-				E = s.n(y);
+				E = s("./src/reddit/controls/ErrorText/index.m.less"),
+				w = s.n(E);
 			s.d(t, "a", (function() {
-				return T
-			})), s.d(t, "c", (function() {
 				return I
+			})), s.d(t, "c", (function() {
+				return N
 			}));
-			const w = Object(l.c)({
+			const O = Object(l.c)({
 				activeModalId: b.a
 			});
-			class O extends c.a.Component {
+			class j extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -516,23 +519,23 @@
 						textHasOverflowed: a
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(m.a)(E.a.wrapper, s)
+						className: Object(u.a)(w.a.wrapper, s)
 					}, c.a.createElement("span", {
-						className: E.a.description,
+						className: w.a.description,
 						ref: this.spanRef
 					}, e), a && c.a.createElement("span", {
-						className: E.a.moreText,
+						className: w.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === i && c.a.createElement(C, {
+					}, o), t === i && c.a.createElement(y, {
 						onConfirmed: this.toggleModal,
 						title: r
 					}, n || e))
 				}
 			}
-			const j = Object(d.b)(w, e => ({
-					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(O),
-				T = e => {
+			const T = Object(d.b)(O, e => ({
+					toggleErrorTextModal: t => e(Object(m.i)(t))
+				}))(j),
+				I = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -542,17 +545,17 @@
 					} = e, i = o.length ? o : r ? [r] : [];
 					return i.length ? c.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => c.a.createElement(j, {
+					}, i.map((e, t) => c.a.createElement(T, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				I = e => c.a.createElement(T, {
+				N = e => c.a.createElement(I, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = j
+			t.b = T
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, s) {
 			"use strict";
@@ -684,9 +687,9 @@
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return m
-			})), s.d(t, "c", (function() {
 				return u
+			})), s.d(t, "c", (function() {
+				return m
 			})), s.d(t, "d", (function() {
 				return p
 			})), s.d(t, "e", (function() {
@@ -720,7 +723,7 @@
 			})), s.d(t, "n", (function() {
 				return N
 			})), s.d(t, "k", (function() {
-				return P
+				return _
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				r = s("./src/reddit/endpoints/governance/crypto.ts"),
@@ -733,7 +736,7 @@
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				},
-				m = (e, t) => {
+				u = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -748,7 +751,7 @@
 						token: void 0
 					}
 				},
-				u = (e, t) => {
+				m = (e, t) => {
 					const s = E(e, t);
 					if (s) return s.mainHeader
 				},
@@ -833,11 +836,11 @@
 						address: void 0
 					}
 				},
-				P = (e, t) => {
+				_ = (e, t) => {
 					const s = w(e, t);
 					return !!s && !!s.walletProvider && !s.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.2d6d1e92c28ed0f09519.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.51138d11ae563ea267f1.js.map

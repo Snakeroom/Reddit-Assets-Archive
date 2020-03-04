@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6411da3c353e4583d865.js
-// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.843f6546e493dd96d879.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -19126,40 +19126,43 @@
 				p = n("./src/reddit/actions/modal.ts"),
 				m = n("./src/reddit/i18n/utils.ts"),
 				h = n("./src/reddit/selectors/activeModalId.ts"),
-				b = n("./src/higherOrderComponents/asModal/index.tsx"),
-				g = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/layout/row/Inline/index.tsx"),
-				x = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				C = n.n(x);
-			var y = Object(b.a)(e => {
+				b = n("./node_modules/fbt/lib/FbtPublic.js"),
+				g = n("./src/higherOrderComponents/asModal/index.tsx"),
+				f = n("./src/reddit/controls/Button/index.tsx"),
+				x = n("./src/reddit/layout/row/Inline/index.tsx"),
+				C = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				y = n.n(C);
+			var O = Object(g.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return c.a.createElement("div", {
-						className: C.a.wrapper
-					}, c.a.createElement(f.a, {
-						className: C.a.titleRow
+						className: y.a.wrapper
+					}, c.a.createElement(x.a, {
+						className: y.a.titleRow
 					}, n), c.a.createElement("div", {
-						className: C.a.detailsContainer
-					}, t), c.a.createElement(f.a, {
-						className: C.a.buttonRow
-					}, c.a.createElement(g.f, {
-						className: C.a.confirmButton,
+						className: y.a.detailsContainer
+					}, t), c.a.createElement(x.a, {
+						className: y.a.buttonRow
+					}, c.a.createElement(f.f, {
+						className: y.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(m.c)("Ok"))))
+					}, b.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				O = n("./src/reddit/controls/ErrorText/index.m.less"),
-				v = n.n(O);
+				v = n("./src/reddit/controls/ErrorText/index.m.less"),
+				E = n.n(v);
 			n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "c", (function() {
 				return w
+			})), n.d(t, "c", (function() {
+				return k
 			}));
-			const E = Object(d.c)({
+			const j = Object(d.c)({
 				activeModalId: h.a
 			});
-			class j extends c.a.Component {
+			class S extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -19197,23 +19200,23 @@
 						textHasOverflowed: a
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(u.a)(v.a.wrapper, n)
+						className: Object(u.a)(E.a.wrapper, n)
 					}, c.a.createElement("span", {
-						className: v.a.description,
+						className: E.a.description,
 						ref: this.spanRef
 					}, e), a && c.a.createElement("span", {
-						className: v.a.moreText,
+						className: E.a.moreText,
 						onClick: this.toggleModal
-					}, r), t === i && c.a.createElement(y, {
+					}, r), t === i && c.a.createElement(O, {
 						onConfirmed: this.toggleModal,
 						title: s
 					}, o || e))
 				}
 			}
-			const S = Object(l.b)(E, e => ({
+			const T = Object(l.b)(j, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(j),
-				T = e => {
+				}))(S),
+				w = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -19223,17 +19226,17 @@
 					} = e, i = r.length ? r : s ? [s] : [];
 					return i.length ? c.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => c.a.createElement(S, {
+					}, i.map((e, t) => c.a.createElement(T, {
 						className: n,
 						errorModalTitle: o,
 						key: t
 					}, e))) : null
 				},
-				w = e => c.a.createElement(T, {
+				k = e => c.a.createElement(w, {
 					fallbackMessage: Object(m.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = S
+			t.b = T
 		},
 		"./src/reddit/controls/FileDrop/index.tsx": function(e, t, n) {
 			"use strict";
@@ -20560,7 +20563,7 @@
 				y = n("./src/reddit/constants/posts.ts"),
 				O = n("./src/reddit/models/SubredditAutocomplete/index.ts"),
 				v = n("./src/reddit/selectors/user.ts"),
-				E = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/app/strings/index.ts")),
+				E = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
 				j = n("./src/lib/lessComponent.tsx"),
 				S = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				T = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
@@ -20601,56 +20604,57 @@
 				}
 				return n
 			};
-			const D = Object(E.d)("subredditPicker.chooseACommunity"),
-				F = Object(E.d)("subredditPicker.searchCommunities"),
-				A = e => {
-					e.preventDefault(), e.stopPropagation()
-				};
-			var K = e => {
+			const D = e => {
+				e.preventDefault(), e.stopPropagation()
+			};
+			var F = e => {
 					const {
 						className: t,
 						disabled: n,
 						isActive: o,
 						icon: r,
-						language: i,
-						onDropdownClick: a,
-						inputRef: c,
-						value: l
-					} = e, d = B(e, ["className", "disabled", "isActive", "icon", "language", "onDropdownClick", "inputRef", "value"]);
-					let u = s.a.createElement(N, null);
-					if (o) u = s.a.createElement(M, null);
+						onDropdownClick: i,
+						inputRef: a,
+						value: c
+					} = e, l = B(e, ["className", "disabled", "isActive", "icon", "onDropdownClick", "inputRef", "value"]);
+					let d = s.a.createElement(N, null);
+					if (o) d = s.a.createElement(M, null);
 					else if (r) {
 						const e = r.round ? I : P;
-						u = s.a.createElement(e, {
+						d = s.a.createElement(e, {
 							primaryColor: r.color,
 							iconUrl: r.url
 						})
 					}
 					return s.a.createElement("div", {
 						className: Object(x.a)(_.a.searchBar, t)
-					}, u, s.a.createElement("div", {
+					}, d, s.a.createElement("div", {
 						className: _.a.inputWrapper
 					}, s.a.createElement("input", L({
 						className: _.a.input,
-						ref: c,
+						ref: a,
 						disabled: n,
-						placeholder: (o ? F : D)(i),
+						placeholder: o ? E.fbt._("Search communities", null, {
+							hk: "1mtF5A"
+						}) : E.fbt._("Choose a community", null, {
+							hk: "44gKTd"
+						}),
 						spellCheck: !1,
-						value: l
-					}, d))), s.a.createElement("div", {
-						onClick: a,
-						onMouseDown: A
+						value: c
+					}, l))), s.a.createElement("div", {
+						onClick: i,
+						onMouseDown: D
 					}, s.a.createElement(R, {
 						disabled: n
 					})))
 				},
-				U = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
-				H = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
-				W = n.n(H);
-			const z = Object(d.c)({
+				A = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
+				K = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
+				U = n.n(K);
+			const H = Object(d.c)({
 				language: v.P
 			});
-			class V extends s.a.Component {
+			class W extends s.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.inputRef = null, this.setInputRef = e => {
@@ -20805,11 +20809,11 @@
 						isOpen: a
 					} = this.state, c = r.record;
 					return s.a.createElement("div", {
-						className: Object(x.a)(W.a.container, e, {
-							[W.a.mIsActive]: i,
-							[W.a.mIsInvalid]: !n
+						className: Object(x.a)(U.a.container, e, {
+							[U.a.mIsActive]: i,
+							[U.a.mIsInvalid]: !n
 						})
-					}, s.a.createElement(K, {
+					}, s.a.createElement(F, {
 						disabled: t,
 						isActive: this.state.isActive,
 						value: this.state.inputValue,
@@ -20819,13 +20823,12 @@
 							url: c.iconUrl
 						},
 						inputRef: this.setInputRef,
-						language: this.props.language,
 						onDropdownClick: this.onDropdownClick,
 						onChange: this.onInputChange,
 						onFocus: this.onFocus,
 						onBlur: this.onBlur,
 						onKeyDown: this.onKeyDown
-					}), a && s.a.createElement(U.a, {
+					}), a && s.a.createElement(A.a, {
 						items: o,
 						isValid: n,
 						focusedIndex: this.state.focusedIndex,
@@ -20837,11 +20840,11 @@
 					}))
 				}
 			}
-			var q = Object(l.b)(z)(V),
-				G = n("./src/reddit/selectors/subredditAutocomplete.ts");
+			var z = Object(l.b)(H)(W),
+				V = n("./src/reddit/selectors/subredditAutocomplete.ts");
 
-			function J() {
-				return (J = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -20849,13 +20852,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = Object(u.a)(Object(d.a)((e, t) => t.value, (e, t) => {
+			const G = Object(u.a)(Object(d.a)((e, t) => t.value, (e, t) => {
 					let {
 						allowCrosspostableOnly: n,
 						includeUserProfile: o,
 						value: s
 					} = t;
-					return Object(G.a)(e, {
+					return Object(V.a)(e, {
 						allowCrosspostableOnly: n,
 						includeUserProfile: o,
 						substring: s.rawString
@@ -20873,11 +20876,11 @@
 						isAutocompletePending: t.isPending
 					}
 				})),
-				Q = {
+				J = {
 					onGetInitialData: e => t => t(e ? m.d() : h.e()),
 					onGetSubredditAutocomplete: p.d
 				};
-			class X extends s.a.Component {
+			class Z extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onGetSubredditAutocomplete = e => {
 						this.props.onGetSubredditAutocomplete(e)
@@ -20887,15 +20890,15 @@
 					this.props.onGetInitialData(!!this.props.allowCrosspostableOnly)
 				}
 				render() {
-					return s.a.createElement(q, J({}, this.props, {
+					return s.a.createElement(z, q({}, this.props, {
 						onGetSubredditAutocomplete: this.onGetSubredditAutocomplete
 					}))
 				}
 			}
-			var Y = Object(l.b)(Z, Q)(X);
+			var Q = Object(l.b)(G, J)(Z);
 			t.a = class extends s.a.Component {
 				constructor() {
-					super(...arguments), this.renderPicker = e => s.a.createElement(Y, {
+					super(...arguments), this.renderPicker = e => s.a.createElement(Q, {
 						allowCrosspostableOnly: this.props.allowCrosspostableOnly,
 						className: this.props.className,
 						disabled: this.props.disabled || !1,
@@ -29493,4 +29496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.6411da3c353e4583d865.js.map
+//# sourceMappingURL=PostCreation.843f6546e493dd96d879.js.map

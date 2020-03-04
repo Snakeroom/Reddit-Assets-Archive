@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.58ba8e99c7b2eebead62.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.703ce8604481cb9eee56.js
+// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -80,8 +80,8 @@
 				})),
 				_ = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				k = s("./src/reddit/controls/Button/index.tsx"),
-				O = s("./src/reddit/controls/FormFields/index.tsx"),
-				y = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				y = s("./src/reddit/controls/FormFields/index.tsx"),
+				O = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = s("./src/reddit/featureFlags/component.tsx"),
 				M = s("./src/reddit/helpers/governance/ethereum.ts"),
 				P = s("./src/reddit/helpers/governance/stellar.ts"),
@@ -116,10 +116,10 @@
 						target: "_blank"
 					}, c.a.createElement(S.c, null, "Reddit Beta Terms of Service")), c.a.createElement(S.c, null, "."))
 				})),
-				H = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				V = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
-				G = s.n(V);
-			const X = Object(d.c)({
+				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				H = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
+				V = s.n(H);
+			const U = Object(d.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: s
@@ -127,29 +127,29 @@
 					return Object(A.u)(e, s)
 				}
 			});
-			var Y, U = Object(l.b)(X)((function(e) {
+			var X, Y = Object(l.b)(U)((function(e) {
 					const {
 						meta: t
 					} = e;
 					return c.a.createElement("header", {
-						className: G.a.container
+						className: V.a.container
 					}, c.a.createElement("div", {
-						className: G.a.text
+						className: V.a.text
 					}, c.a.createElement(S.c, null, "Purchase ", c.a.createElement(S.b, {
 						name: "membership name"
-					}, t.membershipAlt))), c.a.createElement(H.a, {
-						className: G.a.close,
+					}, t.membershipAlt))), c.a.createElement(G.a, {
+						className: V.a.close,
 						onClick: e.onClose
 					}))
 				})),
 				q = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/index.m.less"),
 				z = s.n(q);
 			s.d(t, "PurchaseType", (function() {
-					return Y
+					return X
 				})),
 				function(e) {
 					e[e.Badge = 0] = "Badge", e[e.Subscription = 1] = "Subscription"
-				}(Y || (Y = {}));
+				}(X || (X = {}));
 			const Z = 5e3,
 				K = 2e4;
 			class J extends c.a.Component {
@@ -228,7 +228,7 @@
 					} = this.state, d = i > this.getMonthsUserCanAfford();
 					return c.a.createElement("div", {
 						className: z.a.container
-					}, c.a.createElement(U, {
+					}, c.a.createElement(Y, {
 						subredditId: a,
 						onClose: e
 					}), c.a.createElement("div", {
@@ -242,7 +242,7 @@
 						src: "".concat(r.a.assetPath, "/img/memberships/paywall/fortnitebr/Crown.gif")
 					}), s.displayText, " ", t.membershipAlt), c.a.createElement("div", {
 						className: z.a.months
-					}, c.a.createElement(O.c, {
+					}, c.a.createElement(y.c, {
 						className: z.a.monthsInput,
 						type: "number",
 						label: Object(T.c)("Months"),
@@ -269,7 +269,7 @@
 						onClick: this.onEthereumPurchase,
 						"data-redditstyle": !0,
 						disabled: d
-					}, l ? c.a.createElement(y.a, {
+					}, l ? c.a.createElement(O.a, {
 						sizePx: 10
 					}) : c.a.createElement(S.c, null, "Purchase")) : c.a.createElement(k.g, {
 						redditStyle: !0,
@@ -277,7 +277,7 @@
 						href: this.getStellarPurchaseLink(),
 						target: "_blank",
 						onClick: this.onStellarPurchase
-					}, l ? c.a.createElement(y.a, {
+					}, l ? c.a.createElement(O.a, {
 						sizePx: 10
 					}) : c.a.createElement(S.c, null, "Purchase")))), !this.props.isEthereumProvider && c.a.createElement("div", {
 						className: z.a.purchaseInstructions
@@ -424,40 +424,43 @@
 				m = s("./src/reddit/actions/modal.ts"),
 				p = s("./src/reddit/i18n/utils.ts"),
 				h = s("./src/reddit/selectors/activeModalId.ts"),
-				b = s("./src/higherOrderComponents/asModal/index.tsx"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				g = s("./src/reddit/layout/row/Inline/index.tsx"),
-				x = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = s.n(x);
-			var E = Object(b.a)(e => {
+				b = s("./node_modules/fbt/lib/FbtPublic.js"),
+				f = s("./src/higherOrderComponents/asModal/index.tsx"),
+				g = s("./src/reddit/controls/Button/index.tsx"),
+				x = s("./src/reddit/layout/row/Inline/index.tsx"),
+				v = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				E = s.n(v);
+			var w = Object(f.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
 					return c.a.createElement("div", {
-						className: v.a.wrapper
-					}, c.a.createElement(g.a, {
-						className: v.a.titleRow
+						className: E.a.wrapper
+					}, c.a.createElement(x.a, {
+						className: E.a.titleRow
 					}, s), c.a.createElement("div", {
-						className: v.a.detailsContainer
-					}, t), c.a.createElement(g.a, {
-						className: v.a.buttonRow
-					}, c.a.createElement(f.f, {
-						className: v.a.confirmButton,
+						className: E.a.detailsContainer
+					}, t), c.a.createElement(x.a, {
+						className: E.a.buttonRow
+					}, c.a.createElement(g.f, {
+						className: E.a.confirmButton,
 						onClick: e.onConfirmed
-					}, Object(p.c)("Ok"))))
+					}, b.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
 				}),
-				w = s("./src/reddit/controls/ErrorText/index.m.less"),
-				j = s.n(w);
+				j = s("./src/reddit/controls/ErrorText/index.m.less"),
+				N = s.n(j);
 			s.d(t, "a", (function() {
 				return O
 			})), s.d(t, "c", (function() {
-				return y
+				return C
 			}));
-			const N = Object(d.c)({
+			const _ = Object(d.c)({
 				activeModalId: h.a
 			});
-			class _ extends c.a.Component {
+			class k extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -495,22 +498,22 @@
 						textHasOverflowed: i
 					} = this.state;
 					return c.a.createElement("div", {
-						className: Object(u.a)(j.a.wrapper, s)
+						className: Object(u.a)(N.a.wrapper, s)
 					}, c.a.createElement("span", {
-						className: j.a.description,
+						className: N.a.description,
 						ref: this.spanRef
 					}, e), i && c.a.createElement("span", {
-						className: j.a.moreText,
+						className: N.a.moreText,
 						onClick: this.toggleModal
-					}, a), t === o && c.a.createElement(E, {
+					}, a), t === o && c.a.createElement(w, {
 						onConfirmed: this.toggleModal,
 						title: r
 					}, n || e))
 				}
 			}
-			const k = Object(l.b)(N, e => ({
+			const y = Object(l.b)(_, e => ({
 					toggleErrorTextModal: t => e(Object(m.i)(t))
-				}))(_),
+				}))(k),
 				O = e => {
 					const {
 						className: t,
@@ -521,17 +524,17 @@
 					} = e, o = a.length ? a : r ? [r] : [];
 					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(k, {
+					}, o.map((e, t) => c.a.createElement(y, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				y = e => c.a.createElement(O, {
+				C = e => c.a.createElement(O, {
 					fallbackMessage: Object(p.c)("Something went wrong"),
 					messages: e
 				});
-			t.b = k
+			t.b = y
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -978,4 +981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.58ba8e99c7b2eebead62.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.703ce8604481cb9eee56.js.map
