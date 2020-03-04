@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.91e91b9de773f269c7c4.js
-// Retrieved at 3/3/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.71f4f56c622ab56c0c84.js
+// Retrieved at 3/4/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -61340,8 +61340,8 @@
 				p = Object(s.a)(b, e => e && r.fbt._("{topic name} on Reddit", [r.fbt._param("topic name", e)], {
 					hk: "1hchAs"
 				})),
-				f = Object(s.a)(b, e => e && r.fbt._("Find the best posts and subreddits about {topic name} on Reddit", [r.fbt._param("topic name", e)], {
-					hk: "Np6rr"
+				f = Object(s.a)(b, e => e && r.fbt._("Find the best posts and communities about {topic name} on Reddit", [r.fbt._param("topic name", e)], {
+					hk: "DunIF"
 				}))
 		},
 		"./src/reddit/selectors/user.ts": function(e, t, n) {
@@ -62048,4 +62048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.91e91b9de773f269c7c4.js.map
+//# sourceMappingURL=Governance~Reddit.71f4f56c622ab56c0c84.js.map
