@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.e183ca56da9fdc6f7610.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.17ef013cec9d925e5c98.js
+// Retrieved at 3/4/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -73,79 +73,96 @@
 				const {
 					backgroundWrapperClassName: t,
 					descriptionClassName: s,
-					innerContainerClassName: n,
-					onPostClick: c,
-					trendingPost: b,
-					trendingSearch: h,
-					shouldOpenPost: O,
-					showSubredditMeta: v = !0,
-					showSubredditName: T,
-					subredditOrProfile: k
-				} = e, S = b && b.preview && b.preview.url || void 0, w = b && b.isSponsored ? "promoted_trend" : "trending", D = b && Object(d.a)(b.permalink) || "", E = O && D || h && Object(i.a)("/search", {
-					q: h.rawQuery,
-					source: w
-				}) || D, I = h ? h.subredditInfo && h.subredditInfo.icon : k && k.icon.url, U = h ? h.subredditInfo && h.subredditInfo.displayText : k && (k.displayText || k.name), M = b ? b.flair.filter(f) : [], W = b ? b.score : 0, V = b ? b.numComments : 0, A = b && b.isSponsored, F = Object(_.a)(e).body, L = "linear-gradient(\n      ".concat(Object(r.j)(F, .2), ",\n      ").concat(Object(r.j)(F, .3), ",\n      ").concat(Object(r.j)(F, .4), ",\n      ").concat(Object(r.j)(F, .6), ",\n      ").concat(Object(r.j)(F, .8), ",\n      ").concat(F, "\n    )"), R = a.a.createElement("div", {
-					className: Object(o.a)(N.a.trendingPost, {
-						[N.a["m-background"]]: !!S
-					})
-				}, a.a.createElement(g.a, {
-					to: E
-				}, a.a.createElement("div", {
-					className: Object(o.a)(N.a.backgroundWrapper, y.a.backgroundWrapper, t),
-					style: {
-						background: Object(C.g)(Object(_.a)(e).body, S || Object(_.a)(e).banner.backgroundImage, "cover"),
-						"--SearchDiscoveryUnits-TrendingPosts-Post-background": L
-					}
-				}, A && a.a.createElement("div", {
-					className: N.a.promoted
-				}, a.a.createElement(j.c, null, "promoted")), a.a.createElement("div", {
-					className: Object(o.a)(N.a.innerContainer, y.a.innerContainer, n),
-					onClick: c,
-					title: b ? b.title : ""
-				}, a.a.createElement("h2", {
-					className: b ? N.a.title : N.a.titleNoDescription
-				}, e.title), b ? a.a.createElement("div", {
-					className: Object(o.a)(N.a.description, s)
-				}, M.length > 0 && a.a.createElement(m.a, {
-					className: N.a.flair,
-					titleFlair: M,
-					nowrap: !0,
-					post: b,
-					showCategoryTag: !1
-				}), b.title) : a.a.createElement("div", {
-					className: N.a.spacer
-				}), v && I && U && a.a.createElement(x.a, {
-					className: N.a.relatedSubredditMetaData,
-					iconClassName: N.a.subredditIcon,
-					iconUrl: I || void 0,
-					suffix: a.a.createElement(p.a, {
-						msgId: "search.subredditMetaData.andMore",
-						replacements: {
-							displayText: U
+					innerContainerClassName: c,
+					onPostClick: b,
+					trendingPost: h,
+					trendingSearch: O,
+					shouldOpenPost: v,
+					showSubredditMeta: T = !0,
+					showSubredditName: k,
+					subredditOrProfile: w,
+					trackPostView: S
+				} = e;
+				Object(n.useEffect)(() => {
+					S && S(O)
+				}, [S, O]);
+				const D = h && h.preview && h.preview.url || void 0,
+					E = h && h.isSponsored ? "promoted_trend" : "trending",
+					I = h && Object(d.a)(h.permalink) || "",
+					U = v && I || O && Object(i.a)("/search", {
+						q: O.rawQuery,
+						source: E
+					}) || I,
+					M = O ? O.subredditInfo && O.subredditInfo.icon : w && w.icon.url,
+					V = O ? O.subredditInfo && O.subredditInfo.displayText : w && (w.displayText || w.name),
+					W = h ? h.flair.filter(f) : [],
+					A = h ? h.score : 0,
+					F = h ? h.numComments : 0,
+					L = h && h.isSponsored,
+					R = Object(_.a)(e).body,
+					Y = "linear-gradient(\n      ".concat(Object(r.j)(R, .2), ",\n      ").concat(Object(r.j)(R, .3), ",\n      ").concat(Object(r.j)(R, .4), ",\n      ").concat(Object(r.j)(R, .6), ",\n      ").concat(Object(r.j)(R, .8), ",\n      ").concat(R, "\n    )"),
+					K = a.a.createElement("div", {
+						className: Object(o.a)(N.a.trendingPost, {
+							[N.a["m-background"]]: !!D
+						})
+					}, a.a.createElement(g.a, {
+						to: U
+					}, a.a.createElement("div", {
+						className: Object(o.a)(N.a.backgroundWrapper, y.a.backgroundWrapper, t),
+						style: {
+							background: Object(C.g)(Object(_.a)(e).body, D || Object(_.a)(e).banner.backgroundImage, "cover"),
+							"--SearchDiscoveryUnits-TrendingPosts-Post-background": Y
 						}
-					})
-				}), !v && b && a.a.createElement("div", {
-					className: N.a.metaLine
-				}, T && U && a.a.createElement("span", {
-					className: N.a.meta
-				}, Object(P.b)(U)), a.a.createElement("span", {
-					className: N.a.meta
-				}, a.a.createElement(j.c, null, "".concat(Object(l.b)(W), " "), a.a.createElement(j.a, {
-					count: W,
-					name: "score",
-					plural: "points",
-					singular: "point"
-				}))), a.a.createElement("span", {
-					className: N.a.meta
-				}, a.a.createElement(j.c, null, "".concat(Object(l.b)(V), " "), a.a.createElement(j.a, {
-					count: V,
-					name: "numComments",
-					plural: "comments",
-					singular: "comment"
-				}))))))));
-				return A ? a.a.createElement(u.a, {
-					post: b
-				}, R) : R
+					}, L && a.a.createElement("div", {
+						className: N.a.promoted
+					}, a.a.createElement(j.c, null, "promoted")), a.a.createElement("div", {
+						className: Object(o.a)(N.a.innerContainer, y.a.innerContainer, c),
+						onClick: b,
+						title: h ? h.title : ""
+					}, a.a.createElement("h2", {
+						className: h ? N.a.title : N.a.titleNoDescription
+					}, e.title), h ? a.a.createElement("div", {
+						className: Object(o.a)(N.a.description, s)
+					}, W.length > 0 && a.a.createElement(m.a, {
+						className: N.a.flair,
+						titleFlair: W,
+						nowrap: !0,
+						post: h,
+						showCategoryTag: !1
+					}), h.title) : a.a.createElement("div", {
+						className: N.a.spacer
+					}), T && M && V && a.a.createElement(x.a, {
+						className: N.a.relatedSubredditMetaData,
+						iconClassName: N.a.subredditIcon,
+						iconUrl: M || void 0,
+						suffix: a.a.createElement(p.a, {
+							msgId: "search.subredditMetaData.andMore",
+							replacements: {
+								displayText: V
+							}
+						})
+					}), !T && h && a.a.createElement("div", {
+						className: N.a.metaLine
+					}, k && V && a.a.createElement("span", {
+						className: N.a.meta
+					}, Object(P.b)(V)), a.a.createElement("span", {
+						className: N.a.meta
+					}, a.a.createElement(j.c, null, "".concat(Object(l.b)(A), " "), a.a.createElement(j.a, {
+						count: A,
+						name: "score",
+						plural: "points",
+						singular: "point"
+					}))), a.a.createElement("span", {
+						className: N.a.meta
+					}, a.a.createElement(j.c, null, "".concat(Object(l.b)(F), " "), a.a.createElement(j.a, {
+						count: F,
+						name: "numComments",
+						plural: "comments",
+						singular: "comment"
+					}))))))));
+				return L ? a.a.createElement(u.a, {
+					post: h
+				}, K) : K
 			})))
 		},
 		"./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/index.m.less": function(e, t, s) {
@@ -190,17 +207,18 @@
 						className: Object(d.a)(h.a.container, e && e.containerClassName)
 					}, n.a.createElement("div", {
 						className: Object(d.a)(h.a.trendingPosts, e && e.trendingPostsClassName)
-					}, t.map((t, r) => (s(t), n.a.createElement(u.a, {
+					}, t.map((t, r) => n.a.createElement(u.a, {
 						className: Object(d.a)(h.a.trendingPost, e && e.trendingPostClassName),
 						forceLoadMedia: !0,
 						showMetaLine: !1,
 						title: t.searchQuery,
 						trendingSearch: t,
+						trackPostView: s,
 						key: t.post ? t.post.id : r,
 						trendingPost: t.post,
 						postId: t.post ? t.post.id : "",
 						onPostClick: () => this.onPostClick(t)
-					})))))
+					}))))
 				}
 			}
 			var x = Object(a.b)(null, e => ({
@@ -320,4 +338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.e183ca56da9fdc6f7610.js.map
+//# sourceMappingURL=Trending.17ef013cec9d925e5c98.js.map
