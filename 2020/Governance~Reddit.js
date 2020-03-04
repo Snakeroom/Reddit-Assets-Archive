@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9f2cc3d430ff0fc66ff2.js
-// Retrieved at 3/4/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0f27cc5b838c6ce4d052.js
+// Retrieved at 3/4/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -45123,11 +45123,10 @@
 				rg = e => {
 					const {
 						allAwardings: t
-					} = e, n = QO(e, ["allAwardings"]);
-					if (!t) return e;
-					const r = {};
-					for (const s of t) r[s.id] = s.count;
-					return Object.assign({}, n, {
+					} = e, n = QO(e, ["allAwardings"]), r = {};
+					return t && t.forEach(e => {
+						r[e.id] = e.count
+					}), Object.assign({}, n, {
 						awardCountsById: r
 					})
 				},
@@ -62037,4 +62036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9f2cc3d430ff0fc66ff2.js.map
+//# sourceMappingURL=Governance~Reddit.0f27cc5b838c6ce4d052.js.map
