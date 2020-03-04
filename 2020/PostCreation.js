@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b66def64ca2c3a2cf648.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6411da3c353e4583d865.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -2803,7 +2803,7 @@
 					} = this.props;
 					if (n <= 0) return null;
 					const u = e.icon32 ? e.icon32.url : e.icon.url,
-						p = e.awardType === R.c.Moderator,
+						p = e.awardType === R.d.Moderator,
 						m = Object(D.a)(e.id, a.id),
 						h = n > 1 || p,
 						b = "container" === d;
@@ -3026,7 +3026,7 @@
 						onToggleHideAwardModal: d,
 						allAwards: u,
 						thing: p
-					} = this.props, m = Object(R.l)(Object.keys(p.awardCountsById || {}).map(e => u[e]).filter(Boolean)), h = n && n.id === p.authorId, b = !!m.length, g = !a && s && p.isGildable && b && !l, f = !a && s && p.isGildable && b && !Object(v.a)(p.id) && l;
+					} = this.props, m = Object(R.m)(Object.keys(p.awardCountsById || {}).map(e => u[e]).filter(Boolean)), h = n && n.id === p.authorId, b = !!m.length, g = !a && s && p.isGildable && b && !l, f = !a && s && p.isGildable && b && !Object(v.a)(p.id) && l;
 					return r.a.createElement("div", {
 						className: Object(c.a)(t, H.a.awardBadges)
 					}, e, this.renderAwardings(m), g && r.a.createElement(V, {
@@ -29493,4 +29493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b66def64ca2c3a2cf648.js.map
+//# sourceMappingURL=PostCreation.6411da3c353e4583d865.js.map

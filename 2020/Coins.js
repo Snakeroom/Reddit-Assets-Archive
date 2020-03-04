@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.6be6c10b04d033e4a71a.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.cb608a748a08009a47c3.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -760,7 +760,7 @@
 					}, Object(k.a)(Object(C.c)("Shows a Silver Award on the post or comment and ... that’s it. You’ll need :coin_price: Coins."), {
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(Z.a, null), _.k.coinPrice)
+						}, o.a.createElement(Z.a, null), _.l.coinPrice)
 					})), o.a.createElement(H.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
@@ -773,7 +773,7 @@
 						}, o.a.createElement(Z.a, null), "100"),
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(Z.a, null), _.i.coinPrice)
+						}, o.a.createElement(Z.a, null), _.j.coinPrice)
 					})), o.a.createElement(H.a, {
 						className: v.a.gridItem,
 						icon: o.a.createElement("img", {
@@ -786,7 +786,7 @@
 						}, o.a.createElement(Z.a, null), "700"),
 						":coin_price:": o.a.createElement("span", {
 							className: v.a.nowrap
-						}, o.a.createElement(Z.a, null), _.j.coinPrice)
+						}, o.a.createElement(Z.a, null), _.k.coinPrice)
 					}))))
 				}
 				renderPurchase() {
@@ -858,4 +858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.6be6c10b04d033e4a71a.js.map
+//# sourceMappingURL=Coins.cb608a748a08009a47c3.js.map

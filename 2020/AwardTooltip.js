@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.ed75db9ab8f91868c753.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.e553861c1118d8c3dc0f.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -68,12 +68,12 @@
 						key: e
 					}, n.a.createElement(S.a, null), e)))
 				}
-				if (t.awardType === P.c.Community) return "post" === o ? n.a.createElement(p.c, null, "Shows the ", n.a.createElement(p.b, {
+				if (t.awardType === P.d.Community) return "post" === o ? n.a.createElement(p.c, null, "Shows the ", n.a.createElement(p.b, {
 					name: "award-name"
 				}, t.name), " Award on the post.") : n.a.createElement(p.c, null, "Shows the ", n.a.createElement(p.b, {
 					name: "award-name"
 				}, t.name), " Award on the comment.");
-				if (t.awardType === P.c.Moderator) {
+				if (t.awardType === P.d.Moderator) {
 					const e = t.daysOfPremium ? Math.floor(t.daysOfPremium / 30) : 0;
 					return 1 === e ? n.a.createElement(p.c, null, "Shows the ", n.a.createElement(p.b, {
 						name: "award-name"
@@ -191,7 +191,7 @@
 						award: e,
 						currentUser: t,
 						onClickPremium: o
-					} = this.props, s = e.awardSubType === P.b.Premium, a = !!t && t.isGold;
+					} = this.props, s = e.awardSubType === P.c.Premium, a = !!t && t.isGold;
 					return s ? a ? null : n.a.createElement(N.e, {
 						className: M.a.premiumCta,
 						onClick: o
@@ -213,7 +213,7 @@
 						postOrComment: r,
 						subreddit: s,
 						tooltipId: a
-					} = this.props, i = e.awardSubType === P.b.Premium, d = e.isEnabled && (t && r.authorId === t.id || Object(l.a)(o));
+					} = this.props, i = e.awardSubType === P.c.Premium, d = e.isEnabled && (t && r.authorId === t.id || Object(l.a)(o));
 					return n.a.createElement(j.a, {
 						caretColor: {
 							top: i ? u.a.orangered : u.a.alienblue
@@ -228,7 +228,7 @@
 						className: Object(c.a)(M.a.headerBar, {
 							[M.a.headerBarPremium]: i
 						})
-					}, d && this.renderHideButton(), e.awardType !== P.c.Global && this.renderReporterButton()), n.a.createElement("div", {
+					}, d && this.renderHideButton(), e.awardType !== P.d.Global && this.renderReporterButton()), n.a.createElement("div", {
 						className: M.a.awardDetails
 					}, n.a.createElement("div", {
 						className: M.a.awardIconContainer
@@ -246,12 +246,12 @@
 					}, n.a.createElement(L, {
 						award: e,
 						postOrComment: Object(m.a)(r.id) ? "post" : "comment"
-					})), e.awardType === P.c.Community && s && n.a.createElement("div", {
+					})), e.awardType === P.d.Community && s && n.a.createElement("div", {
 						className: M.a.subreddit
 					}, n.a.createElement(y.b, {
 						className: M.a.subredditIcon,
 						subredditOrProfile: s
-					}), "r/".concat(s.name)), e.awardType === P.c.Moderator && n.a.createElement("div", {
+					}), "r/".concat(s.name)), e.awardType === P.d.Moderator && n.a.createElement("div", {
 						className: M.a.subreddit
 					}, n.a.createElement(k.a, {
 						className: Object(c.a)(M.a.subredditIcon, M.a.modShield)
@@ -501,4 +501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.ed75db9ab8f91868c753.js.map
+//# sourceMappingURL=AwardTooltip.e553861c1118d8c3dc0f.js.map

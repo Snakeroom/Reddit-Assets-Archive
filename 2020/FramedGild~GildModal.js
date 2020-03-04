@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.36b1203efc365f7a27f0.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8530fa2668635e8418cc.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -23,8 +23,8 @@
 				u = a("./src/reddit/selectors/gild.ts"),
 				h = a("./src/reddit/selectors/posts.ts"),
 				p = a("./src/reddit/selectors/subreddit.ts"),
-				b = a("./src/reddit/selectors/user.ts"),
-				g = a("./src/graphql/operations/GildComment.json"),
+				g = a("./src/reddit/selectors/user.ts"),
+				b = a("./src/graphql/operations/GildComment.json"),
 				w = a("./src/graphql/operations/GildPost.json"),
 				E = a("./src/lib/makeGqlRequest/index.ts"),
 				C = a("./src/reddit/helpers/addRedesignIdentifier/index.ts");
@@ -33,7 +33,7 @@
 				}), {
 					query: a ? {} : Object(C.b)()
 				}),
-				A = (e, t, a) => Object(E.a)(e, Object.assign({}, g, {
+				A = (e, t, a) => Object(E.a)(e, Object.assign({}, b, {
 					variables: t
 				}), {
 					query: a ? {} : Object(C.b)()
@@ -132,7 +132,7 @@
 						postId: a
 					}) : Object(l.n)(e, {
 						commentId: a
-					}), s = Object(b.i)(e), r = e.gild, {
+					}), s = Object(g.i)(e), r = e.gild, {
 						isAnonymous: d
 					} = r, i = !d && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, o = Object(p.H)(e, {
 						thingId: a
@@ -158,7 +158,7 @@
 							data: t
 						})
 					}
-					if (h.awardType === c.c.Moderator && void 0 === e.subredditCoins) {
+					if (h.awardType === c.d.Moderator && void 0 === e.subredditCoins) {
 						const t = Object(p.H)(s, {
 								thingId: l
 							}),
@@ -172,15 +172,15 @@
 							id: a
 						})))
 					});
-					const b = Object(j.a)(l) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", h.name)], {
+					const g = Object(j.a)(l) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", h.name)], {
 							hk: "1Ndi4Z"
 						}) : n.fbt._("Success! You have given this comment the {awardName} Award", [n.fbt._param("awardName", h.name)], {
 							hk: "2sIK9Y"
 						}),
-						g = h.coinPrice;
-					Object(P.a)(Object(N.viewSuccessAwardEvent)(l, g, h)(s)), t(Object(i.e)({
+						b = h.coinPrice;
+					Object(P.a)(Object(N.viewSuccessAwardEvent)(l, b, h)(s)), t(Object(i.e)({
 						kind: o.b.SuccessCommunity,
-						text: b
+						text: g
 					})), setTimeout(() => {
 						const e = Object(x.a)(r, l),
 							t = document.getElementById(e);
@@ -315,9 +315,9 @@
 				u = a("./src/reddit/models/Gold/Award.ts"),
 				h = a("./src/reddit/actions/gold/communityAwards.ts"),
 				p = a("./src/reddit/actions/gold/gild.ts"),
-				b = a("./src/lib/makeActionCreator/index.ts"),
-				g = a("./src/reddit/actions/gold/constants.ts");
-			const w = Object(b.a)(g.K);
+				g = a("./src/lib/makeActionCreator/index.ts"),
+				b = a("./src/reddit/actions/gold/constants.ts");
+			const w = Object(g.a)(b.K);
 			var E = a("./src/reddit/actions/gold/modals.ts"),
 				C = a("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				v = a("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
@@ -378,7 +378,7 @@
 					const e = t.description.split("%{coin_symbol}");
 					return s.a.createElement(s.a.Fragment, null, e.map((e, t) => 0 === t ? e : s.a.createElement(s.a.Fragment, null, s.a.createElement(X.a, null), e)))
 				}
-				if (t.awardType === u.c.Community) return t.subredditCoinReward && t.coinReward ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(F.c, null, "Shows an Award on the post and grants "), s.a.createElement(X.a, null), s.a.createElement(F.c, null, s.a.createElement(F.b, {
+				if (t.awardType === u.d.Community) return t.subredditCoinReward && t.coinReward ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(F.c, null, "Shows an Award on the post and grants "), s.a.createElement(X.a, null), s.a.createElement(F.c, null, s.a.createElement(F.b, {
 					name: "subreddit-coins"
 				}, t.subredditCoinReward), " to the community and "), s.a.createElement(X.a, null), s.a.createElement(F.c, null, s.a.createElement(F.b, {
 					name: "user-coins"
@@ -401,7 +401,7 @@
 				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(F.c, null, "Shows an Award on the comment. Exclusive to ", s.a.createElement(F.b, {
 					name: "subreddit-name"
 				}, "r/".concat(n)), "."));
-				if (t.awardType === u.c.Moderator) {
+				if (t.awardType === u.d.Moderator) {
 					const e = t.daysOfPremium ? Math.floor(t.daysOfPremium / 30) : 0;
 					return "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(F.c, null, "Shows an Award on the post and gives the recipient ", s.a.createElement(F.b, {
 						name: "months-of-premium"
@@ -604,7 +604,7 @@
 						language: t,
 						postOrComment: a,
 						subredditName: r
-					}), n.awardType === u.c.Moderator ? s.a.createElement("span", {
+					}), n.awardType === u.d.Moderator ? s.a.createElement("span", {
 						className: B.a.giver
 					}, s.a.createElement(z.a, {
 						className: B.a.modIcon
@@ -619,7 +619,7 @@
 				ue = a("./src/reddit/icons/svgs/Premium/index.tsx"),
 				he = (a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./src/reddit/components/AnimatedPillBadge/index.m.less")),
 				pe = a.n(he),
-				be = e => {
+				ge = e => {
 					const {
 						className: t,
 						text: a
@@ -630,7 +630,7 @@
 						className: pe.a.sheen
 					}))
 				};
-			class ge extends s.a.Component {
+			class be extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionClick = () => {
 						const {
@@ -658,12 +658,12 @@
 						src: n
 					}), s.a.createElement("div", {
 						className: le.a.badgeContainer
-					}, e.awardSubType !== u.b.Premium && e.isNew && s.a.createElement(be, {
+					}, e.awardSubType !== u.c.Premium && e.isNew && s.a.createElement(ge, {
 						className: le.a.iconNewBadge,
 						text: G.fbt._("New", null, {
 							hk: "1f7Av0"
 						})
-					}), e.awardSubType === u.b.Premium && s.a.createElement("div", {
+					}), e.awardSubType === u.c.Premium && s.a.createElement("div", {
 						className: le.a.iconPremiumBadgeContainer
 					}, s.a.createElement(ue.a, {
 						className: le.a.iconPremiumBadge
@@ -681,7 +681,7 @@
 					})))
 				}
 			}
-			var we = ge;
+			var we = be;
 			const {
 				fbt: Ee
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -693,11 +693,11 @@
 						className: le.a.giveImage,
 						src: "".concat(ce.a.assetPath, "/img/gold/award-give.png")
 					})), this.rendererByAwardSubtype = {
-						[u.b.Global]: this.renderGlobalAwards,
-						[u.b.Moderator]: this.renderModAwards,
-						[u.b.Community]: this.renderCommunityAwards,
-						[u.b.Appreciation]: this.renderAppreciationAwards,
-						[u.b.Premium]: this.renderPremiumAwards
+						[u.c.Global]: this.renderGlobalAwards,
+						[u.c.Moderator]: this.renderModAwards,
+						[u.c.Community]: this.renderCommunityAwards,
+						[u.c.Appreciation]: this.renderAppreciationAwards,
+						[u.c.Premium]: this.renderPremiumAwards
 					}
 				}
 				renderAppreciationAwards(e, t) {
@@ -848,19 +848,19 @@
 					});
 					const r = new Set,
 						d = {
-							[u.b.Global]: [],
-							[u.b.Moderator]: [],
-							[u.b.Community]: [],
-							[u.b.Appreciation]: [],
-							[u.b.Premium]: []
+							[u.c.Global]: [],
+							[u.c.Moderator]: [],
+							[u.c.Community]: [],
+							[u.c.Appreciation]: [],
+							[u.c.Premium]: []
 						};
 					e.forEach(e => {
 						r.add(e.awardSubType), d[e.awardSubType] || (d[e.awardSubType] = []), d[e.awardSubType].push(e)
 					});
-					const c = !!(d[u.b.Community].length || d[u.b.Moderator].length || d[u.b.Appreciation].length || n && d[u.b.Premium].length) || d[u.b.Global].length > 3;
+					const c = !!(d[u.c.Community].length || d[u.c.Moderator].length || d[u.c.Appreciation].length || n && d[u.c.Premium].length) || d[u.c.Global].length > 3;
 					return s.a.createElement("div", {
 						className: Object(i.a)(a, le.a.awardSelectorPane)
-					}, !c && this.renderSnooImage(), [...r].map(e => this.rendererByAwardSubtype[e] && (e !== u.b.Premium || n) ? this.rendererByAwardSubtype[e].call(this, d[e], c) : null))
+					}, !c && this.renderSnooImage(), [...r].map(e => this.rendererByAwardSubtype[e] && (e !== u.c.Premium || n) ? this.rendererByAwardSubtype[e].call(this, d[e], c) : null))
 				}
 			}
 			var ve = Ce,
@@ -897,7 +897,7 @@
 						needPremium: t,
 						selectedAward: a,
 						thingId: n
-					} = this.props, s = a.awardType === u.c.Moderator;
+					} = this.props, s = a.awardType === u.d.Moderator;
 					return t ? Ne._("Get Premium", null, {
 						hk: "3VB1S9"
 					}) : e || s ? Object(o.a)(n) ? Ne._("Award post", null, {
@@ -921,14 +921,14 @@
 						selectedAward: l,
 						subredditCoins: m,
 						userCoins: h
-					} = this.props, p = l.awardType === u.c.Moderator, b = (p ? m : h) || 0;
+					} = this.props, p = l.awardType === u.d.Moderator, g = (p ? m : h) || 0;
 					return s.a.createElement("div", {
 						className: Object(i.a)(t, xe.a.gildFooter)
 					}, s.a.createElement("div", {
 						className: xe.a.footerContent
 					}, p ? this.renderCommunityBalance() : s.a.createElement(fe.a, {
 						className: xe.a.coinBalanceSection,
-						coinBalance: b,
+						coinBalance: g,
 						onWhatAreCoinsLinkClick: this.handleQuestionMarkClick
 					}), s.a.createElement(Oe.f, {
 						className: n ? xe.a.premiumButton : xe.a.gildButton,
@@ -1079,7 +1079,7 @@
 					} = e, {
 						awardType: d,
 						coinPrice: i
-					} = n, c = d === u.c.Moderator, o = ((c ? s : r) || 0) >= i || t && !c, l = a && a.media && "rpan" === a.media.type;
+					} = n, c = d === u.d.Moderator, o = ((c ? s : r) || 0) >= i || t && !c, l = a && a.media && "rpan" === a.media.type;
 					return Object.assign({}, e, {
 						canAfford: o,
 						cost: i,
@@ -1158,11 +1158,11 @@
 						subredditAboutRequested: u,
 						subredditId: h,
 						subredditName: p,
-						thingId: b
+						thingId: g
 					} = this.props;
-					i(Object(m.viewGildModalEvent)(d.id, t, b)), c(!a && Object(l.k)());
-					const g = o ? o.id : h || (n && n.belongsTo ? n.belongsTo.id : void 0);
-					if (g && e(g), o || p) {
+					i(Object(m.viewGildModalEvent)(d.id, t, g)), c(!a && Object(l.k)());
+					const b = o ? o.id : h || (n && n.belongsTo ? n.belongsTo.id : void 0);
+					if (b && e(b), o || p) {
 						u(o ? o.name : p)
 					}
 					Object(k.b)(), s || r()
@@ -1179,8 +1179,8 @@
 						errorMessage: l,
 						iFramed: h,
 						isAnonymous: p,
-						isRpanPost: b,
-						language: g,
+						isRpanPost: g,
+						language: b,
 						message: w,
 						pending: E,
 						postOrComment: C,
@@ -1203,12 +1203,12 @@
 					});
 					const L = N ? N.name : P,
 						B = Ge.includes(L) ? "pan" : L,
-						R = !c || !c.isGold && x.awardSubType === u.b.Premium;
+						R = !c || !c.isGold && x.awardSubType === u.c.Premium;
 					return s.a.createElement("div", {
 						className: Object(i.a)(r, Se.a.gildModalContent)
 					}, s.a.createElement(ke, {
 						authorName: M,
-						language: g,
+						language: b,
 						postOrComment: T,
 						onCancel: d,
 						sendEvent: f,
@@ -1228,10 +1228,10 @@
 						subredditName: B,
 						thingId: y
 					}), s.a.createElement(ie, {
-						forcePublic: b,
+						forcePublic: g,
 						isAnonymous: p,
-						isLivestream: b,
-						language: g,
+						isLivestream: g,
+						language: b,
 						message: w,
 						postOrComment: T,
 						publicAwardingEnabled: v,
@@ -1397,4 +1397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.36b1203efc365f7a27f0.js.map
+//# sourceMappingURL=FramedGild~GildModal.8530fa2668635e8418cc.js.map

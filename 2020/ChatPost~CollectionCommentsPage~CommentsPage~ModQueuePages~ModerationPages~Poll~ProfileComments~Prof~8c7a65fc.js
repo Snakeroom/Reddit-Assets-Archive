@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.23fc3f525018377141c3.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.5573dcedffd6ad5eaeb7.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -258,7 +258,7 @@
 					} = this.props;
 					if (s <= 0) return null;
 					const m = e.icon32 ? e.icon32.url : e.icon.url,
-						u = e.awardType === B.c.Moderator,
+						u = e.awardType === B.d.Moderator,
 						p = Object(H.a)(e.id, d.id),
 						b = s > 1 || u,
 						h = "container" === l;
@@ -481,7 +481,7 @@
 						onToggleHideAwardModal: l,
 						allAwards: m,
 						thing: u
-					} = this.props, p = Object(B.l)(Object.keys(u.awardCountsById || {}).map(e => m[e]).filter(Boolean)), b = s && s.id === u.authorId, h = !!p.length, x = !d && r && u.isGildable && h && !c, f = !d && r && u.isGildable && h && !Object(j.a)(u.id) && c;
+					} = this.props, p = Object(B.m)(Object.keys(u.awardCountsById || {}).map(e => m[e]).filter(Boolean)), b = s && s.id === u.authorId, h = !!p.length, x = !d && r && u.isGildable && h && !c, f = !d && r && u.isGildable && h && !Object(j.a)(u.id) && c;
 					return n.a.createElement("div", {
 						className: Object(i.a)(t, W.a.awardBadges)
 					}, e, this.renderAwardings(p), x && n.a.createElement(V, {
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.23fc3f525018377141c3.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.5573dcedffd6ad5eaeb7.js.map

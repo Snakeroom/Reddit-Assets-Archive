@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dadf6e62460928016349.js
-// Retrieved at 3/4/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.acc5c1fe2d6e8a5935e9.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2082,7 +2082,7 @@
 				yt = e => {
 					const t = xt(ft),
 						s = xt(Ot),
-						r = e < vt.i.coinPrice ? "Silver" : e < vt.j.coinPrice ? "Gold" : "Platinum";
+						r = e < vt.j.coinPrice ? "Silver" : e < vt.k.coinPrice ? "Gold" : "Platinum";
 					return St.a["award".concat(r, "Tier").concat(s).concat(t)]
 				};
 			class Pt extends i.Component {
@@ -3094,4 +3094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.dadf6e62460928016349.js.map
+//# sourceMappingURL=PublicAccessNetwork.acc5c1fe2d6e8a5935e9.js.map

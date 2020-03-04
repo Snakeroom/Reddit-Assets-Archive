@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.61925e2f499ef0aa29fc.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3c84d78b33a148f98665.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./src/graphql/operations/AllModerators.json": function(e) {
@@ -21320,7 +21320,7 @@
 				i = e => ({
 					awardId: e.id,
 					awardName: e.name,
-					isModAward: e.awardType === n.c.Moderator,
+					isModAward: e.awardType === n.d.Moderator,
 					numberCoins: e.coinPrice,
 					numberMonths: Math.floor((e.daysOfPremium || 0) / 30),
 					numberCoinsToRecipient: e.coinReward || 0,
@@ -24239,7 +24239,7 @@
 						className: ps.a.awardDetail
 					}, e.coinPrice || 0), r.a.createElement("div", {
 						className: ps.a.awardDetail
-					}, e.awardType === rs.c.Moderator ? r.a.createElement(Pe.c, null, "Mod only") : r.a.createElement(Pe.c, null, "All")), a && [r.a.createElement(xs, {
+					}, e.awardType === rs.d.Moderator ? r.a.createElement(Pe.c, null, "Mod only") : r.a.createElement(Pe.c, null, "All")), a && [r.a.createElement(xs, {
 						date: o
 					}), r.a.createElement(xs, {
 						date: i
@@ -24357,7 +24357,7 @@
 					const a = Object(es.a)(n),
 						o = s && s.all,
 						i = this.getAwardSlots().filter(e => o && !a || e.filled),
-						c = e.filter(e => e.awardType === rs.c.Moderator),
+						c = e.filter(e => e.awardType === rs.d.Moderator),
 						d = e.length < $t.d && c.length < $t.e && o && !a;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement(gs, {
 						subredditId: n
@@ -24370,7 +24370,7 @@
 				getAwardSlots() {
 					const {
 						awards: e
-					} = this.props, t = Object(rs.f)(e), s = e => e.filled && e.award.awardType === rs.c.Moderator;
+					} = this.props, t = Object(rs.g)(e), s = e => e.filled && e.award.awardType === rs.d.Moderator;
 					return t.sort((e, t) => s(e) && !s(t) ? 1 : s(t) && !s(e) ? -1 : e.price !== t.price ? e.price - t.price : e.filled && !t.filled ? -1 : (t.filled && e.filled, 1))
 				}
 				render() {
@@ -35416,4 +35416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.61925e2f499ef0aa29fc.js.map
+//# sourceMappingURL=ModerationPages.3c84d78b33a148f98665.js.map

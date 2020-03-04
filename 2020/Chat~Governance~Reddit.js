@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ea7f714aed428d5405ab.js
-// Retrieved at 3/4/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0599f11a876c875f5c5a.js
+// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -12540,14 +12540,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("c9ad341-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("4dd090c-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c9ad341-production",
+						release: "4dd090c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12850,7 +12850,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "c9ad341-production",
+							releaseClient: "4dd090c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18564,4 +18564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.ea7f714aed428d5405ab.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.0599f11a876c875f5c5a.js.map
