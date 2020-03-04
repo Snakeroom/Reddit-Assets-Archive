@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.71f4f56c622ab56c0c84.js
-// Retrieved at 3/4/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e2612fd0ece37f6f051b.js
+// Retrieved at 3/4/2020, 12:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5798,15 +5798,15 @@
 		"./src/reddit/actions/inFeedChaining.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return j
+				return y
 			})), n.d(t, "d", (function() {
-				return S
+				return I
 			})), n.d(t, "c", (function() {
-				return v
+				return S
 			})), n.d(t, "a", (function() {
-				return T
+				return v
 			})), n.d(t, "e", (function() {
-				return D
+				return C
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/telemetry/index.ts"),
@@ -5819,22 +5819,21 @@
 				u = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/reddit/constants/inFeedChaining.ts"),
 				b = n("./src/reddit/constants/page.ts"),
-				p = n("./src/reddit/endpoints/subreddit/similar.ts"),
-				f = n("./src/reddit/helpers/localStorage/index.ts"),
-				m = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				O = n("./src/reddit/i18n/utils.ts"),
-				g = n("./src/reddit/models/Toast/index.ts"),
-				_ = n("./src/reddit/selectors/inFeedChaining.ts"),
-				h = n("./src/reddit/selectors/posts.ts"),
-				y = n("./src/reddit/selectors/subreddit.ts");
-			const j = "FEED_CHAINING__CHAIN_LOADED",
-				E = Object(o.a)(j),
-				I = e => {
+				p = n("./src/reddit/helpers/localStorage/index.ts"),
+				f = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				m = n("./src/reddit/i18n/utils.ts"),
+				O = n("./src/reddit/models/Toast/index.ts"),
+				g = n("./src/reddit/selectors/inFeedChaining.ts"),
+				_ = n("./src/reddit/selectors/posts.ts"),
+				h = n("./src/reddit/selectors/subreddit.ts");
+			const y = "FEED_CHAINING__CHAIN_LOADED",
+				j = Object(o.a)(y),
+				E = e => {
 					const t = Date.now() - e,
-						n = Object(f.s)();
+						n = Object(p.s)();
 					return Object.keys(n).filter(e => n[e].when >= t).map(e => n[e])
 				},
-				S = e => {
+				I = e => {
 					let {
 						listingName: t,
 						listingKey: n,
@@ -5843,69 +5842,68 @@
 					return async (e, u) => {
 						if (!o) return;
 						if (!(t === b.f || t === b.b)) return;
-						0 === I(s.eb).length && Object(f.U)(!1);
-						let O = u();
-						if (Object(_.d)(O, {
+						0 === E(s.eb).length && Object(p.U)(!1);
+						let m = u();
+						if (Object(g.d)(m, {
 								listingKey: n,
 								postId: o
-							}) || Object(_.a)(O).length >= l.a || Object(f.A)() || I(s.x).length >= l.a) return;
-						const g = Object(h.A)(O, {
+							}) || Object(g.a)(m).length >= l.a || Object(p.A)() || E(s.x).length >= l.a) return;
+						const O = Object(_.A)(m, {
 							listingKey: n,
 							postId: o
 						});
-						if (g && g.isSponsored) return;
-						await e(Object(c.g)()), O = u();
-						const j = Object(_.b)(O, {
+						if (O && O.isSponsored) return;
+						await e(Object(c.g)()), m = u();
+						const y = Object(g.b)(m, {
 							listingName: t
 						});
-						if (!j) return;
-						const S = Object(h.Y)(O, {
+						if (!y) return;
+						const I = Object(_.Y)(m, {
 							postId: o
 						});
-						if (!S || Object(_.e)(O, {
-								subredditId: S.id
+						if (!I || Object(g.e)(m, {
+								subredditId: I.id
 							}) || (e => {
-								return I(s.x).some(t => t.subredditId === e)
-							})(S.id)) return;
-						const v = {
-							subredditIds: [S.id],
-							count: l.b,
-							variant: p.a.Factorization
+								return E(s.x).some(t => t.subredditId === e)
+							})(I.id)) return;
+						const S = {
+							subredditIds: [I.id],
+							count: l.b
 						};
-						await e(Object(a.b)(v));
-						const T = Object(a.a)(v);
-						O = u();
-						const C = Object(y.u)(O, {
-							key: T
+						await e(Object(a.b)(S));
+						const v = Object(a.a)(S);
+						m = u();
+						const T = Object(h.u)(m, {
+							key: v
 						});
-						0 !== C.length ? (await Promise.all(C.map(t => e((e => async (t, n) => {
+						0 !== T.length ? (await Promise.all(T.map(t => e((e => async (t, n) => {
 							const r = s.Qb.DAY.toUpperCase(),
 								o = Object(i.a)(e, s.O.TOP, {
 									t: r
 								});
-							Object(h.F)(n(), {
+							Object(_.F)(n(), {
 								listingKey: o
 							}).length > 0 || await t(Object(d.a)({
 								range: r,
 								sort: s.I.TOP,
 								subredditName: e
 							}))
-						})(t.name)))), O = u(), Object(_.f)(O, {
+						})(t.name)))), m = u(), Object(g.f)(m, {
 							postId: o
-						}).length < l.c ? Object(r.a)(Object(m.b)(j, "other", S)(O)) : (Object(f.a)(o, S.id), Object(r.a)(Object(m.c)(j, S)(O)), e(E({
+						}).length < l.c ? Object(r.a)(Object(f.b)(y, "other", I)(m)) : (Object(p.a)(o, I.id), Object(r.a)(Object(f.c)(y, I)(m)), e(j({
 							listingKey: n,
 							postId: o
-						})))) : Object(r.a)(Object(m.b)(j, "no_chaining", S)(O))
+						})))) : Object(r.a)(Object(f.b)(y, "no_chaining", I)(m))
 					}
 				},
-				v = "FEED_CHAINING__CHAIN_TOGGLED",
-				T = (Object(o.a)(v), "FEED_CHAINING__CHAINING_TOGGLED"),
-				C = Object(o.a)(T),
-				D = () => async e => {
-					Object(f.U)(!0), e(C({
+				S = "FEED_CHAINING__CHAIN_TOGGLED",
+				v = (Object(o.a)(S), "FEED_CHAINING__CHAINING_TOGGLED"),
+				T = Object(o.a)(v),
+				C = () => async e => {
+					Object(p.U)(!0), e(T({
 						isDismissed: !0
-					})), e(Object(u.e)(Object(u.d)(Object(O.c)("You'll see this less often."), g.b.Undo, Object(O.c)("Undo"), async () => {
-						Object(f.U)(!1), e(C({
+					})), e(Object(u.e)(Object(u.d)(Object(m.c)("You'll see this less often."), O.b.Undo, Object(m.c)("Undo"), async () => {
+						Object(p.U)(!1), e(T({
 							isDismissed: !1
 						}))
 					})))
@@ -15637,49 +15635,63 @@
 		},
 		"./src/reddit/actions/subreddit/similarSubreddit.ts": function(e, t, n) {
 			"use strict";
+			var r, s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/reddit/actions/subreddit/constants.ts"),
+				i = n("./src/reddit/endpoints/category/subreddits.ts"),
+				c = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/makeApiRequest/index.ts"),
+				d = n("./src/lib/omitHeaders/index.ts"),
+				u = n("./src/reddit/constants/headers.ts");
+			! function(e) {
+				e.Factorization = "factorization", e.CustomModRelevant = "custom_mod_relevant"
+			}(r || (r = {}));
+			var l = n("./src/reddit/selectors/subreddit.ts");
 			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "b", (function() {
 				return b
+			})), n.d(t, "b", (function() {
+				return O
 			}));
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/reddit/actions/subreddit/constants.ts"),
-				o = n("./src/reddit/endpoints/category/subreddits.ts"),
-				i = n("./src/reddit/endpoints/subreddit/similar.ts"),
-				c = n("./src/reddit/selectors/subreddit.ts");
-			const a = e => {
+			const b = e => {
 					let t = e.subredditIds.join(",");
 					return e.count && (t += "--[count:'".concat(e.count, "']")), e.variant && (t += "--[variant:'".concat(e.variant, "']")), t.toLowerCase()
 				},
-				d = Object(r.a)(s.n),
-				u = Object(r.a)(s.m),
-				l = Object(r.a)(s.l),
-				b = e => async (t, n, r) => {
+				p = Object(s.a)(o.n),
+				f = Object(s.a)(o.m),
+				m = Object(s.a)(o.l),
+				O = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
-					const b = n(),
-						p = a(e),
-						f = Object(c.t)(b, {
-							key: p
+					const o = n(),
+						O = b(e),
+						g = Object(l.t)(o, {
+							key: O
 						}),
-						m = Object(c.s)(b, {
-							key: p
+						_ = Object(l.s)(o, {
+							key: O
 						});
-					if (f || m.length > 0) return;
-					t(d({
-						key: p
+					if (g || _.length > 0) return;
+					t(p({
+						key: O
 					}));
-					const O = await Object(i.b)(s(), e);
-					if (O.ok) {
-						const e = Object(o.b)(O.body);
-						t(u(Object.assign({
-							key: p
+					const h = await ((e, t) => Object(a.b)(Object(d.a)(e, [u.a]), {
+						data: {
+							sr_fullnames: t.subredditIds.join(","),
+							limit: t.count,
+							variant: t.variant
+						},
+						endpoint: "".concat(e.apiUrl, "/api/similar_subreddits.json"),
+						method: c.cb.GET
+					}))(s(), e);
+					if (h.ok) {
+						const e = Object(i.b)(h.body);
+						t(f(Object.assign({
+							key: O
 						}, e)))
 					} else {
-						const e = O.error;
-						t(l({
-							key: p,
+						const e = h.error;
+						t(m({
+							key: O,
 							error: e
 						}))
 					}
@@ -24536,27 +24548,6 @@
 						test_message_text: n
 					}
 				})
-		},
-		"./src/reddit/endpoints/subreddit/similar.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var r, s = n("./src/lib/constants/index.ts"),
-				o = n("./src/lib/makeApiRequest/index.ts"),
-				i = n("./src/lib/omitHeaders/index.ts"),
-				c = n("./src/reddit/constants/headers.ts");
-			! function(e) {
-				e.Factorization = "factorization", e.CustomModRelevant = "custom_mod_relevant"
-			}(r || (r = {})), t.b = (e, t) => Object(o.b)(Object(i.a)(e, [c.a]), {
-				data: {
-					sr_fullnames: t.subredditIds.join(","),
-					limit: t.count,
-					variant: t.variant
-				},
-				endpoint: "".concat(e.apiUrl, "/api/similar_subreddits.json"),
-				method: s.cb.GET
-			})
 		},
 		"./src/reddit/endpoints/user/index.ts": function(e, t, n) {
 			"use strict";
@@ -55969,17 +55960,17 @@
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return f
+				return p
 			})), n.d(t, "c", (function() {
-				return m
+				return f
 			})), n.d(t, "a", (function() {
-				return O
+				return m
 			})), n.d(t, "e", (function() {
-				return g
+				return O
 			})), n.d(t, "f", (function() {
-				return h
+				return _
 			})), n.d(t, "b", (function() {
-				return y
+				return h
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/reselect/es/index.js"),
@@ -55987,33 +55978,32 @@
 				o = n("./src/lib/makeListingKey/index.ts"),
 				i = n("./src/reddit/actions/subreddit/similarSubreddit.ts"),
 				c = n("./src/reddit/constants/inFeedChaining.ts"),
-				a = n("./src/reddit/endpoints/subreddit/similar.ts"),
-				d = n("./src/reddit/models/DiscoveryUnit/index.ts"),
-				u = n("./src/reddit/selectors/discoveryUnit.ts"),
-				l = n("./src/reddit/selectors/posts.ts"),
-				b = n("./src/reddit/selectors/subreddit.ts");
-			const p = [],
-				f = (e, t) => {
+				a = n("./src/reddit/models/DiscoveryUnit/index.ts"),
+				d = n("./src/reddit/selectors/discoveryUnit.ts"),
+				u = n("./src/reddit/selectors/posts.ts"),
+				l = n("./src/reddit/selectors/subreddit.ts");
+			const b = [],
+				p = (e, t) => {
 					const n = e.posts.chained.idToListingKey[t.postId];
 					return t.listingKey === n
 				},
-				m = (e, t) => {
+				f = (e, t) => {
 					const n = e.posts.chained.dismissedIdToListingKey[t.postId];
 					return (e => e.posts.chained.dismissed)(e) || t.listingKey === n
 				},
-				O = Object(r.a)(e => e.posts.chained.idToListingKey, e => Object.keys(e).filter(t => e[t])),
-				g = (e, t) => {
+				m = Object(r.a)(e => e.posts.chained.idToListingKey, e => Object.keys(e).filter(t => e[t])),
+				O = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					return O(e).some(t => {
-						const r = Object(l.Y)(e, {
+					return m(e).some(t => {
+						const r = Object(u.Y)(e, {
 							postId: t
 						});
 						return !!r && r.id === n
 					})
 				},
-				_ = (e, t) => {
+				g = (e, t) => {
 					let {
 						subredditName: n
 					} = t;
@@ -56021,18 +56011,18 @@
 						i = Object(o.a)(n, s.O.TOP, {
 							t: r
 						}),
-						c = Object(l.F)(e, {
+						c = Object(u.F)(e, {
 							listingKey: i
 						});
 					if (0 !== c.length)
 						for (const s of c) {
-							const t = Object(l.M)(e, {
+							const t = Object(u.M)(e, {
 								postId: s
 							});
 							if (t && !t.hidden && !t.isSponsored) return t
 						}
 				},
-				h = (e, t) => {
+				_ = (e, t) => {
 					let {
 						postId: n
 					} = t;
@@ -56040,16 +56030,15 @@
 							let {
 								postId: n
 							} = t;
-							const r = Object(l.M)(e, {
+							const r = Object(u.M)(e, {
 								postId: n
 							});
-							if (!r) return p;
+							if (!r) return b;
 							const s = Object(i.a)({
 								subredditIds: [r.belongsTo.id],
-								count: c.b,
-								variant: a.a.Factorization
+								count: c.b
 							});
-							return Object(b.u)(e, {
+							return Object(l.u)(e, {
 								key: s
 							})
 						})(e, {
@@ -56059,19 +56048,19 @@
 					for (const {
 							name: o
 						} of r) {
-						const t = _(e, {
+						const t = g(e, {
 							subredditName: o
 						});
 						t && s.push(t.id)
 					}
 					return s
 				},
-				y = (e, t) => {
+				h = (e, t) => {
 					let {
 						listingName: n
 					} = t;
-					const r = d.b;
-					return Object(u.c)(e, {
+					const r = a.b;
+					return Object(d.c)(e, {
 						unitName: r
 					})
 				}
@@ -62048,4 +62037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.71f4f56c622ab56c0c84.js.map
+//# sourceMappingURL=Governance~Reddit.e2612fd0ece37f6f051b.js.map
