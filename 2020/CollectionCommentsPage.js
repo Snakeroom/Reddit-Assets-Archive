@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0a5434b2f30265b408d7.js
-// Retrieved at 3/3/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.861a0653904114e2b9a4.js
+// Retrieved at 3/4/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11169,35 +11169,17 @@
 				P = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.B)(e.media) && e.media.content)),
 				k = e => !!e && e.isBlank,
 				I = [{
-					img: "/img/house-ads/btc.png",
-					href: "/r/btc"
+					img: "/img/house-ads/old_recipes.png",
+					href: "/r/old_recipes"
 				}, {
-					img: "/img/house-ads/campfirecooking.png",
-					href: "/r/campfirecooking"
+					img: "/img/house-ads/eatcheapandhealthy.png",
+					href: "/r/eatcheapandhealthy"
 				}, {
-					img: "/img/house-ads/casualconversation.png",
-					href: "/r/casualconversation"
+					img: "/img/house-ads/streetwear.png",
+					href: "/r/streetwear"
 				}, {
-					img: "/img/house-ads/fantrailers.png",
-					href: "/r/fantrailers"
-				}, {
-					img: "/img/house-ads/rubberducks.png",
-					href: "/r/advertising"
-				}, {
-					img: "/img/house-ads/casualconversation.png",
-					href: "/r/casualconversation"
-				}, {
-					img: "/img/house-ads/fantrailers.png",
-					href: "/r/fantrailers"
-				}, {
-					img: "/img/house-ads/imaginarycolorscapes.png",
-					href: "/r/imaginarycolorscapes"
-				}, {
-					img: "/img/house-ads/imaginarydragons.png",
-					href: "/r/imaginarydragons"
-				}, {
-					img: "/img/house-ads/oldschoolcelebs.png",
-					href: "/r/oldschoolcelebs"
+					img: "/img/house-ads/castiron.png",
+					href: "/r/castiron"
 				}];
 			class S extends i.a.Component {
 				shouldComponentUpdate(e, t) {
@@ -16671,4 +16653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.0a5434b2f30265b408d7.js.map
+//# sourceMappingURL=CollectionCommentsPage.861a0653904114e2b9a4.js.map

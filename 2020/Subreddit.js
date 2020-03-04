@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5316dfc6a95c79d245b7.js
-// Retrieved at 3/4/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5f6e82388c0dcfb21b31.js
+// Retrieved at 3/4/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -3631,35 +3631,17 @@
 				w = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.B)(e.media) && e.media.content)),
 				N = e => !!e && e.isBlank,
 				P = [{
-					img: "/img/house-ads/btc.png",
-					href: "/r/btc"
+					img: "/img/house-ads/old_recipes.png",
+					href: "/r/old_recipes"
 				}, {
-					img: "/img/house-ads/campfirecooking.png",
-					href: "/r/campfirecooking"
+					img: "/img/house-ads/eatcheapandhealthy.png",
+					href: "/r/eatcheapandhealthy"
 				}, {
-					img: "/img/house-ads/casualconversation.png",
-					href: "/r/casualconversation"
+					img: "/img/house-ads/streetwear.png",
+					href: "/r/streetwear"
 				}, {
-					img: "/img/house-ads/fantrailers.png",
-					href: "/r/fantrailers"
-				}, {
-					img: "/img/house-ads/rubberducks.png",
-					href: "/r/advertising"
-				}, {
-					img: "/img/house-ads/casualconversation.png",
-					href: "/r/casualconversation"
-				}, {
-					img: "/img/house-ads/fantrailers.png",
-					href: "/r/fantrailers"
-				}, {
-					img: "/img/house-ads/imaginarycolorscapes.png",
-					href: "/r/imaginarycolorscapes"
-				}, {
-					img: "/img/house-ads/imaginarydragons.png",
-					href: "/r/imaginarydragons"
-				}, {
-					img: "/img/house-ads/oldschoolcelebs.png",
-					href: "/r/oldschoolcelebs"
+					img: "/img/house-ads/castiron.png",
+					href: "/r/castiron"
 				}];
 			class I extends o.a.Component {
 				shouldComponentUpdate(e, t) {
@@ -8854,4 +8836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.5316dfc6a95c79d245b7.js.map
+//# sourceMappingURL=Subreddit.5f6e82388c0dcfb21b31.js.map
