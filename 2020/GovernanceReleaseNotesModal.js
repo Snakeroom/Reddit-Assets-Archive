@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d0d4f3679929595528a1.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a899f99dcf2b65e4b285.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -173,23 +173,23 @@
 			var y = n("./src/reddit/components/Media/index.tsx"),
 				j = n("./src/reddit/components/RichTextJson/index.tsx"),
 				E = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
-				_ = n.n(E);
-			const O = {};
+				O = n.n(E);
+			const _ = {};
 
 			function M(e) {
 				return r.a.createElement("div", {
 					className: e.className
 				}, r.a.createElement("div", {
-					className: _.a.title
+					className: O.a.title
 				}, e.releaseNote.title), e.releaseNote.media && "rtjson" === e.releaseNote.media.type ? r.a.createElement("div", {
-					className: _.a.text
+					className: O.a.text
 				}, r.a.createElement(j.a, {
 					content: e.releaseNote.media.richtextContent,
 					language: e.language,
 					mediaMetadata: e.releaseNote.media.mediaMetadata,
-					rtJsonElementProps: O
+					rtJsonElementProps: _
 				})) : r.a.createElement("div", {
-					className: _.a.media
+					className: O.a.media
 				}, r.a.createElement(y.a, {
 					isListing: !0,
 					isNotCardView: !1,
@@ -291,7 +291,7 @@
 			}
 			const H = Object(o.c)({
 					releaseNotes: p.j,
-					language: x.P,
+					language: x.O,
 					subreddit: m.q
 				}),
 				A = Object(a.b)(H, e => ({
@@ -487,9 +487,9 @@
 			})), n.d(t, "s", (function() {
 				return E
 			})), n.d(t, "a", (function() {
-				return _
-			})), n.d(t, "f", (function() {
 				return O
+			})), n.d(t, "f", (function() {
+				return _
 			})), n.d(t, "q", (function() {
 				return M
 			})), n.d(t, "m", (function() {
@@ -571,18 +571,18 @@
 					const n = j(e, t);
 					return n && n.walletProvider
 				},
-				_ = (e, t) => {
+				O = (e, t) => {
 					const n = E(e, t),
 						s = j(e, t);
 					return n && n.provider || s && s.provider
 				},
-				O = (e, t) => {
-					const n = _(e, t);
+				_ = (e, t) => {
+					const n = O(e, t);
 					return n === r.a.Ethereum || n === r.a.Rinkeby
 				},
 				M = (e, t) => {
 					const n = E(e, t),
-						s = _(e, t);
+						s = O(e, t);
 					if (n && !n.inTransition && s === r.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
 						decimals: n.extra && n.extra.decimals || 7,
@@ -615,4 +615,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.d0d4f3679929595528a1.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.a899f99dcf2b65e4b285.js.map

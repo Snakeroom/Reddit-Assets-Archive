@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.695341e81731e8828b10.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.9c61394f9715d9458ac9.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -365,7 +365,7 @@
 					isModerator: (e, t) => Object(m.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(u.J)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
-					hasSubreddit: (e, t) => Object(u.eb)(e, {
+					hasSubreddit: (e, t) => Object(u.db)(e, {
 						userName: t.match.params.profileName
 					})
 				}),
@@ -398,4 +398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.695341e81731e8828b10.js.map
+//# sourceMappingURL=ProfileModeration.9c61394f9715d9458ac9.js.map

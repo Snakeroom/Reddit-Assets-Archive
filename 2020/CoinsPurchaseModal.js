@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.6d39ba424a0f26eeb007.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.48521247659fa4e84558.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -266,9 +266,9 @@
 				E = t("./src/reddit/models/User/index.ts"),
 				j = t("./src/reddit/selectors/gild.ts"),
 				x = t("./src/reddit/selectors/gold/giveAwards.ts"),
-				w = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				N = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				O = t("./src/reddit/selectors/platform.ts"),
+				O = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				w = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				N = t("./src/reddit/selectors/platform.ts"),
 				k = t("./src/reddit/selectors/user.ts"),
 				f = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				M = t("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -458,10 +458,10 @@
 			}
 			var te = ae;
 			const ne = Object(o.c)({
-				language: k.P,
-				rememberCard: N.r,
-				savedCard: e => Object(N.t)(e)[0],
-				stripeInfoLoading: N.s
+				language: k.O,
+				rememberCard: w.r,
+				savedCard: e => Object(w.t)(e)[0],
+				stripeInfoLoading: w.s
 			});
 			class se extends s.a.PureComponent {
 				render() {
@@ -503,7 +503,7 @@
 				me = t("./src/higherOrderComponents/makeAsync.tsx"),
 				ue = t("./src/reddit/helpers/loadThirdPartyScript.ts");
 			const pe = Object(o.c)({
-				isGild: e => !!Object(N.b)(e)
+				isGild: e => !!Object(w.b)(e)
 			});
 			class he extends s.a.Component {
 				constructor() {
@@ -719,32 +719,32 @@
 				}).apply(this, arguments)
 			}
 			const xe = Object(o.c)({
-					activePage: N.a,
+					activePage: w.a,
 					allowNavigationCallback: e => {
-						const a = Object(O.a)(e);
+						const a = Object(N.a)(e);
 						return null === a ? void 0 : a
 					},
 					coinBalance: k.d,
-					coinPackages: w.b,
-					coinsToPurchase: N.d,
-					gildThingId: N.b,
+					coinPackages: O.b,
+					coinsToPurchase: w.d,
+					gildThingId: w.b,
 					isIframed: j.h,
-					language: k.P,
-					nightmode: k.R,
-					savedCardsPending: N.s,
+					language: k.O,
+					nightmode: k.Q,
+					savedCardsPending: w.s,
 					selectedAward: x.a,
-					selectedPayment: N.e,
-					stripeErrorMessage: N.l,
-					stripeTokenPending: N.o,
-					paypalErrorMessage: N.f,
-					purchaseCatalogError: w.c,
-					purchaseCatalogPending: w.d,
+					selectedPayment: w.e,
+					stripeErrorMessage: w.l,
+					stripeTokenPending: w.o,
+					paypalErrorMessage: w.f,
+					purchaseCatalogError: O.c,
+					purchaseCatalogPending: O.d,
 					userName: e => {
 						const a = Object(k.i)(e);
 						return "u/".concat(Object(E.f)(a))
 					}
 				}),
-				we = Object(r.b)(xe, (e, a) => ({
+				Oe = Object(r.b)(xe, (e, a) => ({
 					closeModal: () => {
 						e(Object(m.e)()), e(Object(d.a)())
 					},
@@ -769,7 +769,7 @@
 				}), (e, a, t) => Object.assign({}, e, a, t, {
 					onCompletePurchaseClick: (t, n) => a.dispatchCompletePurchase(t, n, !!e.gildThingId, e.isIframed)
 				}));
-			class Ne extends s.a.Component {
+			class we extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -831,16 +831,16 @@
 						userName: x
 					} = this.props;
 					if (g) return m(g), p(), null;
-					const w = !!o,
-						N = Object(P.b)(r, n, w);
-					return C || !N ? s.a.createElement("div", {
+					const O = !!o,
+						w = Object(P.b)(r, n, O);
+					return C || !w ? s.a.createElement("div", {
 						className: a
 					}, s.a.createElement(S, {
 						award: y,
 						onClickClose: p
 					})) : s.a.createElement("div", {
 						className: a
-					}, "selectPayment" === e && N && s.a.createElement(Ee, {
+					}, "selectPayment" === e && w && s.a.createElement(Ee, {
 						coinBalance: t,
 						gildThingId: o,
 						language: i,
@@ -849,7 +849,7 @@
 						onCompletePurchaseClick: d,
 						onPaymentSelected: u,
 						paypalErrorMessage: h,
-						purchasePackage: N,
+						purchasePackage: w,
 						savedCardsPending: b,
 						selectedAward: y,
 						selectedPayment: v,
@@ -858,15 +858,15 @@
 						userName: x
 					}), "paymentCompleted" === e && s.a.createElement(L, {
 						isCompletePaypal: c,
-						isGild: w,
+						isGild: O,
 						language: i,
 						onCloseClick: p,
 						userName: x
 					}))
 				}
 			}
-			const Oe = Object(c.a)(Ne);
-			a.default = we(Object(g.b)(class extends s.a.PureComponent {
+			const Ne = Object(c.a)(we);
+			a.default = Oe(Object(g.b)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -886,7 +886,7 @@
 						paddingTop: 12,
 						paddingBottom: 12
 					} : {});
-					return s.a.createElement(Oe, je({}, this.props, {
+					return s.a.createElement(Ne, je({}, this.props, {
 						className: Object(l.a)(this.props.className, I.a.coinPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1232,4 +1232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.6d39ba424a0f26eeb007.js.map
+//# sourceMappingURL=CoinsPurchaseModal.48521247659fa4e84558.js.map

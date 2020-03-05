@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.98f05a2912ae87346968.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2338df7082b07f342428.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1078,7 +1078,7 @@
 					activeModalId: B.a,
 					galleryThumbnail: j.e,
 					isFutureEvent: j.i,
-					language: D.P,
+					language: D.O,
 					layout: f.L,
 					post: _.M,
 					shouldShowCollectionPostEdits: j.s,
@@ -3533,7 +3533,7 @@
 					isEditing: v.z,
 					isLoggedIn: C.G,
 					isPendingDeletion: v.A,
-					language: C.P,
+					language: C.O,
 					moderatorPermissions: (e, t) => {
 						const s = Object(v.n)(e, t);
 						return s ? Object(dt.j)(e, {
@@ -3752,7 +3752,7 @@
 				Bt = m.a.wrapped(St.a, "LinkOrOverlayLink", Rt.a),
 				Dt = m.a.span("HoverSpan", Rt.a),
 				Wt = Object(c.c)({
-					language: C.P,
+					language: C.O,
 					permalink: (e, t) => Object(v.m)(e, {
 						commentId: Object(v.s)(e, t).parentId
 					})
@@ -3780,7 +3780,7 @@
 				Jt = Object(c.c)({
 					moreCommentsItem: v.B,
 					moreCommentsPending: v.C,
-					language: C.P
+					language: C.O
 				});
 			var qt = Object(i.b)(Jt, (e, t) => ({
 					moreCommentsClicked: () => e(Object(u.Z)(t.commentsPageKey, t.moreCommentsId))
@@ -3883,7 +3883,7 @@
 						return s && s.coinPrice >= x.g
 					})
 				},
-				isNightmodeOn: C.R
+				isNightmodeOn: C.Q
 			}), (e, t) => {
 				let {
 					commentLink: s,
@@ -4006,7 +4006,7 @@
 					allCollapsed: v.a,
 					commentLinks: v.k,
 					commentThreadLinkSet: v.p,
-					language: C.P,
+					language: C.O,
 					measureScrollFPS: ae.d.measureScrollFPS,
 					moreComments: v.b,
 					postPermalink: Y.K
@@ -4378,9 +4378,9 @@
 			const E = Object(r.b)(() => Object(i.c)({
 					isChatPostExperiment: g.d,
 					isPostSEOEligible: x.d,
-					language: f.P,
+					language: f.O,
 					postPermalink: v.K,
-					shouldOpenPostInNewTab: f.T
+					shouldOpenPostInNewTab: f.S
 				})),
 				y = e => {
 					let t, {
@@ -4931,7 +4931,7 @@
 				fbt: W
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = h.a.div("ButtonsContainer", D.a), V = h.a.div("Container", D.a), U = h.a.div("Description", D.a), G = h.a.div("PrivateSubredditDetails", D.a), K = h.a.div("PrivateSubredditDescription", D.a), z = h.a.h3("PrivateSubredditName", D.a), J = h.a.a("Link", D.a), q = h.a.wrapped(M.h, "LinkRouterButton", D.a), Y = h.a.wrapped(M.g, "LinkButton", D.a), X = h.a.wrapped(M.k, "SecondaryLinkRouterButton", D.a), Q = h.a.wrapped(M.j, "SecondaryLinkButton", D.a), Z = h.a.wrapped(q, "GoHomeLinkButton", D.a), $ = h.a.img("Image", D.a), ee = h.a.img("ImagePlaceholder", D.a), te = h.a.wrapped(q, "LeftLinkRouterButton", D.a), se = h.a.wrapped(Y, "LeftLinkButton", D.a), ne = h.a.wrapped(Q, "SecondaryLeftLinkButton", D.a), oe = h.a.wrapped(X, "SecondaryLeftLinkRouterButton", D.a), re = h.a.h3("Title", D.a), ae = h.a.div("PageBody", D.a), ie = h.a.div("QuarantineMessageWrapper", D.a), ce = Object(c.c)({
 				isLoggedIn: A.F,
-				language: A.P,
+				language: A.O,
 				origin: F.h,
 				user: A.i
 			}), de = Object(L.t)(), le = Object(a.b)(ce, (e, t) => {
@@ -5315,8 +5315,8 @@
 				C = v.a.wrapped(l.i, "SecondaryButton", x.a),
 				O = v.a.wrapped(c.c, "StyledTooltip", x.a),
 				E = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Z)(e),
-					userIsSuspended: b.L
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Y)(e),
+					userIsSuspended: b.K
 				});
 			t.a = Object(r.b)(E, (e, t) => {
 				let {
@@ -5426,9 +5426,9 @@
 				N = Object(i.c)({
 					isCurrentUserProfilePost: x.i,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.zb.TOPIC),
-					language: v.P,
+					language: v.O,
 					post: x.M,
-					shouldOpenPostInNewTab: v.T,
+					shouldOpenPostInNewTab: v.S,
 					subreddit: x.Y
 				}),
 				L = Object(r.b)(N);
@@ -6352,7 +6352,7 @@
 				je = Object(a.c)({
 					activeModalId: pe.a,
 					layout: U.L,
-					userIsOp: J.fb,
+					userIsOp: J.eb,
 					subreddit: U.q
 				}),
 				_e = Object(r.b)(je, (e, t) => {
@@ -7147,7 +7147,7 @@
 					className: v.a.icon
 				}),
 				C = Object(a.c)({
-					language: b.P,
+					language: b.O,
 					subreddit: h.y,
 					subredditAboutInfo: h.v
 				}),
@@ -8499,7 +8499,7 @@
 					isCurrentUserProfilePost: F.i,
 					isExpanded: F.k,
 					post: F.M,
-					language: A.P,
+					language: A.O,
 					metaId: (e, t) => e.posts.metaMap[t.postId],
 					moderatorPermissions: M.i,
 					publicAwardersEnabled: e => !!Object(pe.a)(e),
@@ -8508,7 +8508,7 @@
 					showEditFlair: ue.a,
 					subredditOrProfile: F.Y,
 					isEditing: R.C,
-					userIsOp: A.fb
+					userIsOp: A.eb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -9003,7 +9003,7 @@
 				}),
 				le = Object(c.c)({
 					collections: O.v,
-					language: E.P
+					language: E.O
 				}),
 				me = Object(i.b)(le, (e, t) => {
 					let {
@@ -9170,7 +9170,7 @@
 					collection: C.q,
 					error: C.c,
 					isPending: C.g,
-					language: O.P
+					language: O.O
 				}),
 				q = Object(r.b)(J, (e, t) => ({
 					onCreate: (t, s) => e(Object(l.b)(t, s)),
@@ -10210,7 +10210,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(re.fb)(e, n) && Object(re.eb)(e, {
+						return Object(K.B)(e, n) && s && Object(re.eb)(e, n) && Object(re.db)(e, {
 							userName: Object(ne.M)(e, {
 								postId: n.postId
 							}).author
@@ -10218,7 +10218,7 @@
 					},
 					subredditOrProfile: ne.Y,
 					hasSubredditRules: oe.k,
-					userIsOp: re.fb,
+					userIsOp: re.eb,
 					isPostPartOfACollection: me.k,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -11913,7 +11913,7 @@
 			const te = Object(d.a)("spPolls", I),
 				se = Object(c.t)(),
 				ne = Object(a.c)({
-					language: l.P,
+					language: l.O,
 					layout: c.L,
 					widget: m.f
 				}),
@@ -12492,7 +12492,7 @@
 				u = s("./src/reddit/actions/subscription/index.ts"),
 				h = s("./src/reddit/selectors/user.ts");
 			const b = Object(i.c)({
-				language: h.P
+				language: h.O
 			});
 			var g = Object(r.b)(b, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -12563,7 +12563,7 @@
 				}, e.bottomButtonText)))),
 				S = Object(i.c)({
 					hideNSFWPref: h.y,
-					language: h.P
+					language: h.O
 				}),
 				T = Object(r.b)(S)(e => o.a.createElement("div", {
 					className: P.a.communityItemContainer
@@ -13254,10 +13254,10 @@
 							n = t.redditStyle || Object(v.m)(e, {
 								subredditId: s
 							}),
-							o = Object(f.R)(e);
+							o = Object(f.Q)(e);
 						return n || o
 					},
-					nigtmode: f.R,
+					nigtmode: f.Q,
 					subredditId: m.m,
 					topPostVariant: x.d
 				}));
@@ -13419,7 +13419,7 @@
 				w = p.a.wrapped(i.a, "RawHTMLDisplay", C.a);
 			var P = Object(r.b)(() => Object(a.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: v.R
+					isNightmodeOn: v.Q
 				}))(e => o.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -13467,7 +13467,7 @@
 				}
 			}
 			const U = Object(a.c)({
-				language: v.P
+				language: v.O
 			});
 			var G = Object(r.b)(U)(e => o.a.createElement(c.a, {
 					styles: e.widget.styles,
@@ -13781,7 +13781,7 @@
 				a = s("./src/reddit/selectors/subreddit.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: i.P,
+				language: i.O,
 				userIsSubscriber: a.Z
 			}), (e, t) => {
 				let {
@@ -15272,7 +15272,7 @@
 			};
 			const E = Object(r.b)(() => Object(a.c)({
 					showFPR: x.E,
-					showSuspended: x.L
+					showSuspended: x.K
 				})),
 				y = Object(c.a)(e => {
 					var {
@@ -15876,7 +15876,7 @@
 						return Object(me.f)(e, s)
 					},
 					contestModeIsEnabled: ce.D,
-					currentUserShowNSFW: me.U,
+					currentUserShowNSFW: me.T,
 					dismissedSubreddits: ne.a,
 					fullyLoaded: ee.v,
 					hasModeratorPostPermissions: ie.b,
@@ -15885,9 +15885,9 @@
 					isChatPostExperiment: oe.d,
 					isCommentsListTruncated: te.a,
 					isLoggedIn: me.G,
-					isNightmodeOn: me.R,
+					isNightmodeOn: me.Q,
 					isTooltipOpen: (e, t) => !!Object(le.a)(e),
-					language: me.P,
+					language: me.O,
 					listingBelowAllVariant: Je.b,
 					origin: ae.h,
 					post: ee.F,
@@ -15908,7 +15908,7 @@
 						tooltipIdPrefix: D.a,
 						tooltipType: Ne.c.StickyPost
 					}))(e),
-					userPrefs: me.hb
+					userPrefs: me.gb
 				}),
 				it = (e, t) => ({
 					dismissTruncation: t => e(Object(pe.a)({
@@ -16667,4 +16667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.98f05a2912ae87346968.js.map
+//# sourceMappingURL=CollectionCommentsPage.2338df7082b07f342428.js.map

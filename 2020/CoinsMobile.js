@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.637c0a94b36bf67f8cfc.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.4f7b82d520ed7b7131bd.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -185,7 +185,7 @@
 				O = s("./src/reddit/components/GildMarketingDescription/index.tsx"),
 				v = s("./src/reddit/icons/fonts/Coin/index.tsx");
 			const A = Object(d.c)({
-					language: C.P
+					language: C.O
 				}),
 				M = Object(l.b)(A),
 				D = 8;
@@ -277,4 +277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsMobile.637c0a94b36bf67f8cfc.js.map
+//# sourceMappingURL=CoinsMobile.4f7b82d520ed7b7131bd.js.map

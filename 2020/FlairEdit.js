@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.3716aac4a275fa71da73.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.8112a4f7fc8d5bce66bf.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/lodash/_baseInRange.js": function(e, t) {
@@ -238,7 +238,7 @@
 				},
 				H = Object(l.c)({
 					emojis: b.c,
-					language: y.P
+					language: y.O
 				}),
 				G = {
 					onGetSubredditEmojis: u.l
@@ -369,7 +369,7 @@
 					})
 				}),
 				re = Object(l.c)({
-					language: y.P,
+					language: y.O,
 					filteredEmojis: ne
 				}),
 				ae = {
@@ -1279,4 +1279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FlairEdit.3716aac4a275fa71da73.js.map
+//# sourceMappingURL=FlairEdit.8112a4f7fc8d5bce66bf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.448816a4237f99083215.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.3e93a8e327a5f4ce2a01.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -769,8 +769,8 @@
 				E = x.a.wrapped(l.i, "SecondaryButton", f.a),
 				C = x.a.wrapped(c.c, "StyledTooltip", f.a),
 				y = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.Z)(e),
-					userIsSuspended: h.L
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.Y)(e),
+					userIsSuspended: h.K
 				});
 			t.a = Object(o.b)(y, (e, t) => {
 				let {
@@ -1357,7 +1357,7 @@
 				yt = Object(u.c)({
 					badgesEnabled: _e.d.spBadges,
 					currentUser: F.i,
-					language: F.P,
+					language: F.O,
 					userFlairData: lt.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -1437,8 +1437,8 @@
 			const Rt = Q.a.wrapped(I.n, "TertiaryButton", Lt.a),
 				Mt = Object(u.c)({
 					shouldShowFlairPicker: lt.b,
-					stylesDisabledForSubreddit: F.ab,
-					stylesDisabledGlobally: F.bb
+					stylesDisabledForSubreddit: F.Z,
+					stylesDisabledGlobally: F.ab
 				});
 			class Dt extends o.a.Component {
 				constructor(e) {
@@ -1514,7 +1514,7 @@
 					}),
 					isContributorRequestPending: e => Object(oe.h)(e, Je.e.Post),
 					isLoggedIn: F.G,
-					language: F.P,
+					language: F.O,
 					moderatorPermissions: (e, t) => {
 						const n = Object(oe.D)(e, t.listingName);
 						if (n) return Object(Ze.j)(e, {
@@ -2395,7 +2395,7 @@
 				i = n("./src/reddit/selectors/subreddit.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: a.P,
+				language: a.O,
 				userIsSubscriber: i.Z
 			}), (e, t) => {
 				let {
@@ -2765,4 +2765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.448816a4237f99083215.js.map
+//# sourceMappingURL=IdCard.3e93a8e327a5f4ce2a01.js.map

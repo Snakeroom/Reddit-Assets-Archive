@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.11225d835f43f4d0246f.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.d38ea58dad6ff9216809.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -136,8 +136,8 @@
 				y = n("./src/reddit/controls/Sortable/index.tsx"),
 				_ = n("./src/reddit/i18n/utils.ts"),
 				S = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				L = n("./src/reddit/layout/row/Inline/index.tsx"),
-				O = n("./src/reddit/models/PostCollection/index.ts"),
+				O = n("./src/reddit/layout/row/Inline/index.tsx"),
+				L = n("./src/reddit/models/PostCollection/index.ts"),
 				j = n("./src/reddit/selectors/postCollection.ts"),
 				N = n("./src/reddit/selectors/user.ts"),
 				I = n("./src/reddit/components/EditCollectionModal/index.m.less"),
@@ -196,9 +196,9 @@
 						value: n
 					}, r.a.createElement(b.a, {
 						className: P.a.layoutOptionWrapper,
-						key: O.a.TIMELINE,
+						key: L.a.TIMELINE,
 						showButton: !0,
-						value: O.a.TIMELINE
+						value: L.a.TIMELINE
 					}, r.a.createElement("div", {
 						className: P.a.optionTextWrapper
 					}, r.a.createElement("div", {
@@ -211,9 +211,9 @@
 						msgId: "collection.editModal.standard.subTitle"
 					})))), r.a.createElement(b.a, {
 						className: P.a.layoutOptionWrapper,
-						key: O.a.GALLERY,
+						key: L.a.GALLERY,
 						showButton: !0,
-						value: O.a.GALLERY
+						value: L.a.GALLERY
 					}, r.a.createElement("div", {
 						className: P.a.optionTextWrapper
 					}, r.a.createElement("div", {
@@ -269,7 +269,7 @@
 					collection: j.q,
 					displayLayout: j.b,
 					isPending: e => Object(j.g)(e) || Object(j.h)(e) || Object(j.j)(e) || Object(j.l)(e),
-					language: N.P,
+					language: N.O,
 					postsByIds: j.o
 				}),
 				B = Object(i.b)(G, (e, t) => ({
@@ -400,7 +400,7 @@
 						onClick: this.props.onClose
 					}, r.a.createElement(S.a, {
 						className: P.a.Close
-					})))), r.a.createElement(L.a, {
+					})))), r.a.createElement(O.a, {
 						className: P.a.InlineRow
 					}, r.a.createElement(R, {
 						active: !a,
@@ -1065,4 +1065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.11225d835f43f4d0246f.js.map
+//# sourceMappingURL=editCollectionModal.d38ea58dad6ff9216809.js.map

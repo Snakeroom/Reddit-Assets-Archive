@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8893f41791fd18103ff9.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0505a95089f3a2ab2d4c.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -1036,7 +1036,7 @@
 					isAnonymous: N.g,
 					iFramed: N.h,
 					isEmployee: M.D,
-					language: M.P,
+					language: M.O,
 					message: N.b,
 					pending: N.e,
 					postOrComment: (e, t) => {
@@ -1397,4 +1397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.8893f41791fd18103ff9.js.map
+//# sourceMappingURL=FramedGild~GildModal.0505a95089f3a2ab2d4c.js.map

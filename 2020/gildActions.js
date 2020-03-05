@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.704a9b91be29dd8a76db.js
-// Retrieved at 3/4/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.335807980bf8f6df5c48.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -220,4 +220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.704a9b91be29dd8a76db.js.map
+//# sourceMappingURL=gildActions.335807980bf8f6df5c48.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.31b4a64e6ddd8a1d8239.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.05555b3ada74ed4282e2.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -264,8 +264,8 @@
 				C = s("./src/reddit/components/Hovercards/SubredditHovercard/SubredditOptions.m.less"),
 				w = s.n(C);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -273,7 +273,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = E.a.wrapped(g.b, "SubredditIcon", w.a),
+			const P = E.a.wrapped(g.b, "SubredditIcon", w.a),
 				S = E.a.wrapped(O.a, "SubredditNameDisplay", w.a),
 				H = E.a.div("SubredditDescription", w.a),
 				M = E.a.div("SubredditNameContainer", w.a),
@@ -300,7 +300,7 @@
 						className: t,
 						id: r,
 						style: d
-					}, o.a.createElement(R, null, o.a.createElement(M, null, o.a.createElement(_, {
+					}, o.a.createElement(R, null, o.a.createElement(M, null, o.a.createElement(P, {
 						subredditOrProfile: a,
 						shouldHideNsfwIcon: s
 					}), o.a.createElement(S, {
@@ -323,14 +323,14 @@
 				});
 			var V = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return o.a.createElement(K, P({
+				return o.a.createElement(K, _({
 					isOpen: t
 				}, e))
 			};
 			const z = Object(m.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.y,
-				language: h.P,
+				language: h.O,
 				subreddit: b.y,
 				subredditAboutInfo: b.v
 			});
@@ -869,4 +869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.31b4a64e6ddd8a1d8239.js.map
+//# sourceMappingURL=SubredditHovercard.05555b3ada74ed4282e2.js.map

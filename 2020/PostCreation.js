@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c2f0d71a1732cd85b0e4.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.124aa879dbf92e8323ef.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -3286,7 +3286,7 @@
 				y = n("./src/reddit/components/CategoryTagList/index.m.less"),
 				O = n.n(y);
 			const v = Object(r.b)(() => Object(i.c)({
-				labelNSFW: c.O
+				labelNSFW: c.N
 			}));
 			t.a = v(Object(a.b)(e => {
 				let {
@@ -4094,9 +4094,9 @@
 				M = Object(a.c)({
 					isCurrentUserProfilePost: f.i,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.zb.TOPIC),
-					language: x.P,
+					language: x.O,
 					post: f.M,
-					shouldOpenPostInNewTab: x.T,
+					shouldOpenPostInNewTab: x.S,
 					subreddit: f.Y
 				}),
 				N = Object(r.b)(M);
@@ -4694,7 +4694,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				p = n("./src/reddit/selectors/user.ts");
 			const m = Object(c.c)({
-					labelNSFW: p.O
+					labelNSFW: p.N
 				}),
 				h = Object(a.b)(m),
 				b = e => {
@@ -6685,7 +6685,7 @@
 				}),
 				de = Object(c.c)({
 					collections: O.v,
-					language: v.P
+					language: v.O
 				}),
 				ue = Object(a.b)(de, (e, t) => {
 					let {
@@ -6940,7 +6940,7 @@
 					collection: y.q,
 					error: y.c,
 					isPending: y.g,
-					language: O.P
+					language: O.O
 				}),
 				J = Object(r.b)(G, (e, t) => ({
 					onCreate: (t, n) => e(Object(d.b)(t, n)),
@@ -7612,7 +7612,7 @@
 					[m]: x
 				},
 				y = Object(i.c)({
-					language: c.P
+					language: c.O
 				}),
 				O = Object(r.b)(y),
 				v = (e, t) => ({
@@ -8074,7 +8074,7 @@
 				G = d.a.div("ErrorMessage", _.a),
 				J = d.a.wrapped(O.b, "TrashIcon", _.a),
 				Z = Object(i.c)({
-					language: j.P
+					language: j.O
 				}),
 				Q = Object(r.b)(Z);
 			class X extends s.a.PureComponent {
@@ -8598,13 +8598,13 @@
 				l = n("./src/lib/classNames/index.ts"),
 				d = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				u = n("./src/lib/lessComponent.tsx"),
-				p = n("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				m = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				b = n("./src/reddit/controls/OutboundLink/styled.tsx"),
-				g = n("./src/lib/permalinkToOverlayLocation/index.ts"),
-				f = n("./src/reddit/helpers/flair.ts"),
-				x = n("./src/reddit/helpers/path/index.ts"),
+				p = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				h = n("./src/reddit/controls/OutboundLink/styled.tsx"),
+				b = n("./src/lib/permalinkToOverlayLocation/index.ts"),
+				g = n("./src/reddit/helpers/flair.ts"),
+				f = n("./src/reddit/helpers/path/index.ts"),
+				x = n("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				C = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				y = n("./src/reddit/models/Flair/index.ts"),
 				O = n("./src/reddit/models/Media/index.ts"),
@@ -8734,8 +8734,8 @@
 						})
 					}))
 				},
-				V = Object(h.t)({
-					isCommentPermalink: h.v,
+				V = Object(m.t)({
+					isCommentPermalink: m.v,
 					pageLayer: e => e
 				}),
 				q = Object(c.c)({
@@ -8743,7 +8743,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						return Object(h.p)(e, {
+						return Object(m.p)(e, {
 							pageLayer: n
 						})
 					},
@@ -8763,7 +8763,7 @@
 							subredditId: n.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: L.T
+					shouldOpenPostInNewTab: L.S
 				}),
 				G = Object(i.b)(q),
 				J = e => {
@@ -8773,8 +8773,8 @@
 						isSponsored: n
 					} = t;
 					if (!e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
-						const o = t.media && Object(O.C)(t.media) ? Object(p.g)(t.id) : t.permalink,
-							s = e.isCommentPermalink ? Object(x.b)(o) : Object(g.a)(o);
+						const o = t.media && Object(O.C)(t.media) ? Object(x.d)(t.id) : t.permalink,
+							s = e.isCommentPermalink ? Object(f.b)(o) : Object(b.a)(o);
 						return r.a.createElement(z, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
@@ -8819,7 +8819,7 @@
 						isSponsored: o
 					} = n, s = !t && !e.isCrosspost && e.size !== K.Large && !n.isSponsored && !(n.media && Object(O.C)(n.media)) && (n.source || n.media && (n.media.type === O.n.GIFVIDEO || n.media.type === O.n.IMAGE || n.media.type === O.n.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
-						if (s) return r.a.createElement(b.a, {
+						if (s) return r.a.createElement(h.a, {
 							className: e.outboundLinkClassName,
 							href: Object(O.A)(n),
 							isSponsored: o,
@@ -8827,7 +8827,7 @@
 						}, Object(E.a)(n), r.a.createElement(C.a, {
 							className: D.a.outboundLinkIcon
 						}))
-					} else if (n.source && !e.isCrosspost && e.size !== K.Large && e.size !== K.ExtraLarge) return r.a.createElement(b.a, {
+					} else if (n.source && !e.isCrosspost && e.size !== K.Large && e.size !== K.ExtraLarge) return r.a.createElement(h.a, {
 						className: e.outboundLinkClassName,
 						href: n.source.url,
 						isSponsored: o,
@@ -8854,10 +8854,10 @@
 						poll: a,
 						post: c,
 						showNSFWSpoilerFlairsOnly: d
-					} = this.props, u = n === y.b.Left, p = Object(j.b)(s, c), m = d ? p.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : u ? p.filter(e => Object(f.p)(e.type)) : [], h = d ? [] : u ? p.filter(e => !Object(f.p)(e.type)) : p, b = !i && !o, g = !t && m && m.length > 0 && b, x = !t && h && h.length > 0 && b;
+					} = this.props, u = n === y.b.Left, p = Object(j.b)(s, c), m = d ? p.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : u ? p.filter(e => Object(g.p)(e.type)) : [], h = d ? [] : u ? p.filter(e => !Object(g.p)(e.type)) : p, b = !i && !o, f = !t && m && m.length > 0 && b, x = !t && h && h.length > 0 && b;
 					return r.a.createElement("div", {
 						className: Object(l.a)(e, c.id)
-					}, !d && g && r.a.createElement(j.a, {
+					}, !d && f && r.a.createElement(j.a, {
 						isFlairFilter: !0,
 						titleFlair: m,
 						nowrap: !0,
@@ -8884,7 +8884,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = u.a.wrapped(V(G(Object(d.a)(Object(m.b)(X)))), "Component", D.a)
+			t.c = u.a.wrapped(V(G(Object(d.a)(Object(p.b)(X)))), "Component", D.a)
 		},
 		"./src/reddit/components/PostTopMeta/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -9477,7 +9477,7 @@
 				N = Object(l.c)({
 					hasIdCardWidgetData: M,
 					isCreationPagePending: f.B,
-					language: y.P,
+					language: y.O,
 					profile: (e, t) => {
 						let {
 							pageLayer: n,
@@ -12877,7 +12877,7 @@
 				}, (e, t) => t ? e[t] : void 0),
 				dn = Object(c.b)((e, t) => ({
 					upload: ln(e, t),
-					language: Object(Ue.P)(e),
+					language: Object(Ue.O)(e),
 					isThumbnailSelectorOpen: Object(Ke.a)(e) === cn(t.block),
 					isRteVideoPosterEnabled: y.d.rteVideoPoster(e)
 				}), (e, t) => ({
@@ -18094,7 +18094,7 @@
 				I = ["right", "top"];
 			var P = Object(c.b)(() => Object(l.c)({
 					post: y.M,
-					language: O.P
+					language: O.O
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(C.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -18333,10 +18333,10 @@
 							o = t.redditStyle || Object(x.m)(e, {
 								subredditId: n
 							}),
-							s = Object(C.R)(e);
+							s = Object(C.Q)(e);
 						return o || s
 					},
-					nigtmode: C.R,
+					nigtmode: C.Q,
 					subredditId: u.m,
 					topPostVariant: f.d
 				}));
@@ -18421,7 +18421,7 @@
 				i = n("./src/reddit/selectors/subreddit.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(o.b)(() => Object(s.c)({
-				language: a.P,
+				language: a.O,
 				userIsSubscriber: i.Z
 			}), (e, t) => {
 				let {
@@ -18466,7 +18466,7 @@
 				s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
-				language: r.P
+				language: r.O
 			});
 
 			function a(e) {
@@ -20652,7 +20652,7 @@
 				K = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
 				U = n.n(K);
 			const H = Object(d.c)({
-				language: v.P
+				language: v.O
 			});
 			class W extends s.a.Component {
 				constructor(e) {
@@ -25465,7 +25465,7 @@
 			function Pt(e, t) {
 				const n = Object(i.c)({
 					isOpen: e => Object(ge.a)(e) === t,
-					language: I.P
+					language: I.O
 				});
 				class o extends s.a.Component {
 					componentDidMount() {
@@ -25900,7 +25900,7 @@
 						const {
 							allowedPostTypes: t,
 							name: n
-						} = Object(T.g)(e), o = uo(e), s = Object(I.P)(e);
+						} = Object(T.g)(e), o = uo(e), s = Object(I.O)(e);
 						if (!o || !t) return null;
 						let r = "";
 						return !o.total || t.images || t.videos ? o.video && !t.videos ? r = "postCreation.mediaInput.videosAreNotAllowed" : !o.image && !o.gifvideo || t.images || (r = "postCreation.mediaInput.imagesAreNotAllowed") : r = "postCreation.mediaInput.mediaAreNotAllowed", r ? Object(ne.a)(s, r, {
@@ -25909,7 +25909,7 @@
 					})(e);
 					return o ? [o] : (e => {
 						const t = uo(e),
-							n = Object(I.P)(e);
+							n = Object(I.O)(e);
 						if (!t) return mo;
 						const o = [];
 						return t.image > p.S && o.push(Object(ne.a)(n, "postCreation.mediaInput.imagesLimitExceeded")), t.video + t.gifvideo > p.W && o.push(Object(ne.a)(n, "postCreation.mediaInput.videosLimitExceeded")), o
@@ -25928,10 +25928,10 @@
 							isProfile: i,
 							name: a
 						} = Object(T.g)(e),
-						c = Object(I.P)(e);
+						c = Object(I.O)(e);
 					if (!n) return Object(ne.a)(c, "postCreation.crosspostInput.sourcePostIdRequired");
 					if (!r) return Object(ne.a)(c, "postCreation.crosspostInput.destinationRequired");
-					const l = i ? Object(I.V)(e, {
+					const l = i ? Object(I.U)(e, {
 						userId: r
 					}) : r;
 					if (l) {
@@ -26036,7 +26036,7 @@
 						return !!n.name || Object(T.y)(e) || a
 					},
 					isScheduledPost: T.G,
-					language: I.P,
+					language: I.O,
 					postSchedule: T.S,
 					isEditingScheduledPost: e => !!Object(z.q)(e),
 					showContributorRequestFlow: e => Object(k.q)(e, f.e.Post),
@@ -26245,7 +26245,7 @@
 					return c ? Object(wo.b)(Object(ko.c)(a), null, o, r) : Object(wo.b)(Object(ko.b)(a), s, null, r)
 				}),
 				Ro = Object(i.c)({
-					language: I.P,
+					language: I.O,
 					pending: T.Q,
 					pickerValue: No
 				}),
@@ -26492,8 +26492,8 @@
 				Qs = Object(i.c)({
 					drafts: w.c,
 					isPending: w.b,
-					language: I.P,
-					maxDrafts: I.Q
+					language: I.O,
+					maxDrafts: I.P
 				}),
 				Xs = Object(r.b)(Qs);
 			class Ys extends s.a.PureComponent {
@@ -26578,7 +26578,7 @@
 				ur = n.n(dr);
 			const pr = Object(ne.d)("postCreation.pasteUrlHere"),
 				mr = Object(i.c)({
-					language: I.P,
+					language: I.O,
 					pending: T.Q,
 					postCreationFieldErrors: Xt,
 					subreddit: v.q,
@@ -26972,7 +26972,7 @@
 				Ki = Object(i.c)({
 					activeModalId: ge.a,
 					isPostPending: T.Q,
-					language: I.P,
+					language: I.O,
 					upload: e => e.uploads[g.m],
 					value: T.K
 				}),
@@ -27132,7 +27132,7 @@
 					isMediaUploadPending: T.L,
 					isPostPending: T.cb,
 					isPublicLink: T.F,
-					language: I.P,
+					language: I.O,
 					postToTwitter: T.U,
 					sendReplies: T.W,
 					sharingLink: w.i,
@@ -27213,7 +27213,7 @@
 				wa = je.a.wrapped(me.a, "PencilIcon", Sa.a),
 				ka = Object(i.c)({
 					eventSchedule: T.o,
-					language: I.P,
+					language: I.O,
 					postSchedule: T.S
 				});
 			var _a = Object(r.b)(ka, (e, t) => ({
@@ -27311,7 +27311,7 @@
 					destSubredditAboutInfo: T.f,
 					draftsCount: I.j,
 					isPending: T.Q,
-					language: I.P
+					language: I.O
 				});
 			var Qa = Object(r.b)(Za, e => ({
 					showDraftsList: () => {
@@ -27345,7 +27345,7 @@
 				$a = n("./src/reddit/components/Governance/PollHelpText/index.m.less"),
 				ec = n.n($a);
 			const tc = Object(i.c)({
-				language: I.P,
+				language: I.O,
 				subredditGovInfo: (e, t) => {
 					let {
 						subreddit: n
@@ -27790,7 +27790,7 @@
 					draft: w.d,
 					editorMode: T.m,
 					govType: e => e.creations.formData.govType,
-					language: I.P,
+					language: I.O,
 					markdownBody: T.J,
 					pending: T.Q,
 					poll: e => e.creations.formData.polls || void 0,
@@ -27966,7 +27966,7 @@
 				jl = Object(i.c)({
 					canPostAsModerator: T.d,
 					disableTitleEdits: e => e.creations.formData.govType === Mc.a.ReplaceTopMod || e.creations.formData.govType === Mc.a.Spinoff,
-					language: I.P,
+					language: I.O,
 					pending: T.Q,
 					postCreationFieldErrors: Xt,
 					postRequirements: T.db,
@@ -28074,7 +28074,7 @@
 				Dl = je.a.div("OverlayContent", Rl.a),
 				Fl = je.a.div("ExplanationText", Rl.a),
 				Al = Object(i.c)({
-					language: I.P
+					language: I.O
 				});
 			var Kl = Object(r.b)(Al, (e, t) => ({
 				onChange: n => {
@@ -28346,7 +28346,7 @@
 					destSubreddit: T.g,
 					govType: e => e.creations.formData.govType,
 					isTabsDisabled: Fd,
-					language: I.P,
+					language: I.O,
 					pending: T.Q,
 					submissionType: T.a,
 					subreddit: v.q
@@ -28458,11 +28458,11 @@
 					flair: T.q,
 					hasError: T.r,
 					havePostContent: T.w,
-					language: I.P,
+					language: I.O,
 					linkBody: T.I,
 					markdownBody: T.J,
 					rteBody: T.V,
-					maxDrafts: I.Q,
+					maxDrafts: I.P,
 					modalId: T.M,
 					needsCaptcha: T.N,
 					nextSubreddit: T.O,
@@ -28769,7 +28769,7 @@
 				su = n("./src/telemetry/models/Timer.ts");
 			const ru = Object(i.c)({
 					destSubreddit: T.g,
-					language: I.P,
+					language: I.O,
 					user: I.i
 				}),
 				iu = Object(r.b)(ru, (e, t) => {
@@ -29486,4 +29486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.c2f0d71a1732cd85b0e4.js.map
+//# sourceMappingURL=PostCreation.124aa879dbf92e8323ef.js.map

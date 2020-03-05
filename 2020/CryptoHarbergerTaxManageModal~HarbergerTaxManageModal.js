@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.abd12a5c4332174b40cc.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.7e91410a7b9ca805a438.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -74,7 +74,7 @@
 				return I
 			}));
 			const x = () => async (e, t) => {
-				const n = Object(b.P)(t());
+				const n = Object(b.O)(t());
 				e(Object(c.e)({
 					kind: m.b.Error,
 					text: Object(a.a)(n, "gov.harberger.banner.uploadError")
@@ -396,7 +396,7 @@
 				s = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.c)({
-				language: a.P
+				language: a.O
 			});
 
 			function d(e) {
@@ -819,4 +819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.abd12a5c4332174b40cc.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.7e91410a7b9ca805a438.js.map

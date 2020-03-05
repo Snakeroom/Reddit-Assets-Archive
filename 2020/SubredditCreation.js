@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.969ae45cf75752df78ea.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.f6f0004b008d1a535c6c.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -261,7 +261,7 @@
 				selectedOptions: v.k,
 				isLoading: v.E,
 				currentInput: v.g,
-				language: E.P,
+				language: E.O,
 				selectedPrimaryTag: v.y,
 				hasSecondaryTags: v.q
 			});
@@ -352,30 +352,30 @@
 				B = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				V = a("./src/reddit/icons/svgs/Eye/index.tsx"),
-				Z = a("./src/reddit/icons/svgs/Info/index.tsx"),
-				F = a("./src/reddit/icons/svgs/Lock/index.tsx"),
-				J = a("./src/reddit/icons/svgs/User/index.tsx"),
+				F = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				Z = a("./src/reddit/icons/svgs/User/index.tsx"),
 				W = a("./src/reddit/models/Subreddit/index.ts"),
-				Q = a("./src/reddit/models/SubredditRestrictions/index.ts"),
-				K = a("./src/config.ts"),
-				H = a("./src/reddit/pages/SubredditCreation/Layout/index.m.less"),
-				Y = a.n(H);
+				K = a("./src/reddit/models/SubredditRestrictions/index.ts"),
+				Q = a("./src/config.ts"),
+				Y = a("./src/reddit/pages/SubredditCreation/Layout/index.m.less"),
+				H = a.n(Y);
 			var z = e => i.a.createElement("div", {
-					className: Y.a.OuterContainer
+					className: H.a.OuterContainer
 				}, i.a.createElement("div", {
-					className: Object(c.a)(e.className, Y.a.Container, {
-						[Y.a.isOverlay]: e.isOverlay
+					className: Object(c.a)(e.className, H.a.Container, {
+						[H.a.isOverlay]: e.isOverlay
 					})
 				}, i.a.createElement("div", {
-					className: Object(c.a)(Y.a.Sidebar, {
-						[Y.a.isOverlay]: e.isOverlay
+					className: Object(c.a)(H.a.Sidebar, {
+						[H.a.isOverlay]: e.isOverlay
 					}),
 					style: {
-						backgroundImage: "url(".concat(K.a.assetPath, "/img/").concat(e.isOverlay ? "community-creation" : "partner-connection", ".png)")
+						backgroundImage: "url(".concat(Q.a.assetPath, "/img/").concat(e.isOverlay ? "community-creation" : "partner-connection", ".png)")
 					}
 				}), i.a.createElement("div", {
-					className: Object(c.a)(Y.a.Content, {
-						[Y.a.isOverlay]: e.isOverlay
+					className: Object(c.a)(H.a.Content, {
+						[H.a.isOverlay]: e.isOverlay
 					})
 				}, e.children))),
 				U = a("./src/reddit/selectors/subreddit.ts"),
@@ -388,12 +388,12 @@
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
-				se = $.a.wrapped(Z.a, "Info", G.a),
+				se = $.a.wrapped(F.a, "Info", G.a),
 				ne = $.a.wrapped(M.a, "RadioOption", G.a),
 				ie = $.a.wrapped(T.c, "Tooltip", G.a),
-				re = $.a.wrapped(J.a, "Public", G.a),
+				re = $.a.wrapped(Z.a, "Public", G.a),
 				oe = $.a.wrapped(V.a, "Restricted", G.a),
-				le = $.a.wrapped(F.a, "Private", G.a),
+				le = $.a.wrapped(J.a, "Private", G.a),
 				ce = $.a.wrapped(B.a, "Employee", G.a),
 				de = $.a.wrapped(q.a, "CloseButton", G.a),
 				me = $.a.wrapped(I.b, "ErrorText", G.a),
@@ -401,9 +401,9 @@
 					error: U.i,
 					isCreatePending: U.l,
 					isEmployee: E.D,
-					language: E.P,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.Z)(e),
-					userIsSuspended: E.L,
+					language: E.O,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.Y)(e),
+					userIsSuspended: E.K,
 					allTags: v.e,
 					existingTags: v.h,
 					newTags: v.i,
@@ -449,7 +449,7 @@
 					hk: "1iBTDq"
 				})), i.a.createElement("div", {
 					className: Object(c.a)(G.a.metafieldDescription, G.a.radioDescription)
-				}, Object(Q.g)(a))))), i.a.createElement(ne, {
+				}, Object(K.g)(a))))), i.a.createElement(ne, {
 					key: "private",
 					showButton: !0,
 					value: "private"
@@ -738,4 +738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.969ae45cf75752df78ea.js.map
+//# sourceMappingURL=SubredditCreation.f6f0004b008d1a535c6c.js.map

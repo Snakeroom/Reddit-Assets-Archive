@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.84ea910b8b005f04b5da.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.9e18cfd03d2374539b39.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -55,10 +55,10 @@
 			}
 			var w = s("./node_modules/lodash/debounce.js"),
 				j = s.n(w),
-				R = s("./src/lib/classNames/index.ts"),
-				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				O = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				B = s.n(O);
+				O = s("./src/lib/classNames/index.ts"),
+				R = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				S = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				B = s.n(S);
 			const k = 400;
 			class M extends c.a.Component {
 				constructor() {
@@ -84,11 +84,11 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return c.a.createElement("div", {
-						className: Object(R.a)(B.a.searchBox, this.props.className)
+						className: Object(O.a)(B.a.searchBox, this.props.className)
 					}, c.a.createElement("button", {
 						className: B.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, c.a.createElement(S.a, {
+					}, c.a.createElement(R.a, {
 						className: B.a.searchIcon
 					})), c.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -107,7 +107,7 @@
 				}
 			}
 			const P = Object(d.c)({
-				isNightMode: C.R
+				isNightMode: C.Q
 			});
 			var H = Object(l.b)(P)(M),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -297,7 +297,7 @@
 					} = t;
 					return Object(T.A)(e, s.id)
 				},
-				language: C.P
+				language: C.O
 			});
 			t.a = Object(h.b)(Object(l.b)(V, e => ({
 				showErrorToast: t => e(Object(p.e)({
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.84ea910b8b005f04b5da.js.map
+//# sourceMappingURL=GifTooltip.9e18cfd03d2374539b39.js.map

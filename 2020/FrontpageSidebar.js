@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.dbdf6432dbb66d99c4ca.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.6485dee097b0be8a280e.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -68,8 +68,8 @@
 				}))(N),
 				C = n("./src/lib/classNames/index.ts"),
 				j = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				v = n("./src/reddit/controls/InternalLink/index.tsx"),
-				O = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				O = n("./src/reddit/controls/InternalLink/index.tsx"),
+				v = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				f = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				T = n.n(f);
 			const L = e => {
@@ -80,7 +80,7 @@
 					return a.a.createElement(j.a, {
 						subredditName: n,
 						tooltipPosition: ["right", "top"]
-					}, a.a.createElement(v.a, {
+					}, a.a.createElement(O.a, {
 						className: T.a.Link,
 						to: t,
 						title: n
@@ -105,7 +105,7 @@
 						onClick: o
 					}, a.a.createElement("div", {
 						className: T.a.SectionTitle
-					}, t), a.a.createElement(O.a, {
+					}, t), a.a.createElement(v.a, {
 						className: T.a.SectionChevron
 					})), a.a.createElement("div", {
 						className: T.a.SectionBody
@@ -223,7 +223,7 @@
 				q = n("./src/reddit/selectors/posts.ts"),
 				z = n("./src/reddit/selectors/user.ts");
 			const $ = Object(o.c)({
-				language: z.P,
+				language: z.O,
 				recentPosts: q.V
 			});
 			var ee = Object(r.b)($, (e, t) => ({
@@ -378,7 +378,7 @@
 				x = n("./src/reddit/selectors/user.ts"),
 				E = n("./src/reddit/components/MiniPost/index.m.less"),
 				h = n.n(E);
-			const k = Object(o.a)(e => e, b.M, b.c, x.P, (e, t, n, s) => {
+			const k = Object(o.a)(e => e, b.M, b.c, x.O, (e, t, n, s) => {
 					return {
 						crosspost: n,
 						language: s,
@@ -566,7 +566,7 @@
 				S = n("./src/reddit/i18n/components.tsx"),
 				C = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
 				j = n.n(C);
-			const v = e => {
+			const O = e => {
 					const t = !(!e.rankings || !e.rankings.length),
 						n = !t && j.a.communityBannerPlaceholder,
 						s = e.bannerBackgroundImage ? {
@@ -586,7 +586,7 @@
 						name: "categoryName"
 					}, e || ""), " "), "Communities"))(e.categoryName) : "Today's Top Growing Communities"))))
 				},
-				O = e => o.a.createElement("ol", null, e.rankings && e.rankings.map(t => {
+				v = e => o.a.createElement("ol", null, e.rankings && e.rankings.map(t => {
 					const n = e.subreddits[t.id];
 					return o.a.createElement(b.a, {
 						delta: t.rankDelta,
@@ -629,12 +629,12 @@
 					return o.a.createElement(x.a, {
 						className: e.className,
 						contentOnly: !0
-					}, o.a.createElement(v, {
+					}, o.a.createElement(O, {
 						bannerBackgroundImage: a,
 						categoryName: e.categoryName,
 						onSendEventClick: e.onSendEventClick,
 						rankings: e.rankings
-					}), o.a.createElement(O, {
+					}), o.a.createElement(v, {
 						categoryName: e.categoryName,
 						large: e.large,
 						onSendEventClick: e.onSendEventClick,
@@ -934,4 +934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.dbdf6432dbb66d99c4ca.js.map
+//# sourceMappingURL=FrontpageSidebar.6485dee097b0be8a280e.js.map

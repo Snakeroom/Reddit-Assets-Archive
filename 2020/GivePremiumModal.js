@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.85f65df6c295f6e8a4b8.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.7cabf2201243c52eb2a0.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -95,7 +95,7 @@
 					await t(S(e));
 					const s = Object(_.a)(n());
 					if (s) {
-						const o = Object(I.P)(n()),
+						const o = Object(I.O)(n()),
 							c = ((e, t, n) => {
 								switch (!0) {
 									case e && e.error && e.error.type && e.error.type === g.E.AUTHENTICATION_ERROR:
@@ -116,7 +116,7 @@
 					const s = n(),
 						o = Object(_.d)(s);
 					t(P(e));
-					const c = Object(I.P)(s);
+					const c = Object(I.O)(s);
 					t(Object(v.e)({
 						kind: w.b.SuccessCommunity,
 						text: Object(l.a)(c, "gold.givePremiumToUserModal.success", {
@@ -148,7 +148,7 @@
 					coinBalance: I.d,
 					isEmployee: I.D,
 					isPending: _.b,
-					language: I.P,
+					language: I.O,
 					recipientName: _.d
 				}),
 				V = Object(c.b)(X, e => ({
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.85f65df6c295f6e8a4b8.js.map
+//# sourceMappingURL=GivePremiumModal.7cabf2201243c52eb2a0.js.map

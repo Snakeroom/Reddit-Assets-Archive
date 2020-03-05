@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.4d9f82256411f32666c7.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.675285a1bfe491ddd8d1.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -436,8 +436,8 @@
 						}
 					}))
 				};
-			var P = s("./src/reddit/actions/subredditTopContent.ts"),
-				w = s("./src/reddit/actions/tooltip.ts"),
+			var w = s("./src/reddit/actions/subredditTopContent.ts"),
+				P = s("./src/reddit/actions/tooltip.ts"),
 				_ = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				T = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
 				I = s("./src/app/strings/index.ts"),
@@ -450,7 +450,7 @@
 				R = s("./src/reddit/selectors/user.ts"),
 				q = s("./src/reddit/components/SubredditMention/MiniPost/index.m.less"),
 				F = s.n(q);
-			const U = Object(c.a)(e => e, H.M, H.c, R.P, (e, t, s, n) => {
+			const U = Object(c.a)(e => e, H.M, H.c, R.O, (e, t, s, n) => {
 				return {
 					crosspost: s,
 					language: n,
@@ -589,11 +589,11 @@
 					return {
 						subredditDataRequested: t => e(k(t)),
 						showTooltip: t => {
-							e(Object(w.f)({
+							e(Object(P.f)({
 								tooltipId: t
-							})), e(Object(P.d)(s))
+							})), e(Object(w.d)(s))
 						},
-						onHideTooltip: () => e(Object(w.i)())
+						onHideTooltip: () => e(Object(P.i)())
 					}
 				}),
 				de = 600;
@@ -946,7 +946,7 @@
 				o = s("./src/reddit/selectors/subreddit.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				language: a.P,
+				language: a.O,
 				userIsSubscriber: o.Z
 			}), (e, t) => {
 				let {
@@ -1083,4 +1083,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.4d9f82256411f32666c7.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.675285a1bfe491ddd8d1.js.map

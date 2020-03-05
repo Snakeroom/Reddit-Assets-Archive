@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.92295b1e5031b4be86f0.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.30bc4234d0befe892145.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -47,7 +47,7 @@
 				h = n("./src/reddit/components/Media/EmbedBox/index.m.less"),
 				m = n.n(h);
 			const b = Object(o.b)(() => Object(i.c)({
-				isNightmodeOn: p.R
+				isNightmodeOn: p.Q
 			}));
 			t.a = b(e => {
 				const t = {
@@ -155,7 +155,7 @@
 				},
 				v = Object(c.c)({
 					postPermalink: b.K,
-					shouldOpenPostInNewTab: f.T
+					shouldOpenPostInNewTab: f.S
 				}),
 				I = Object(i.b)(v);
 			t.a = I(e => e.outboundUrl ? o.a.createElement("a", {
@@ -1338,7 +1338,7 @@
 			})), n.d(t, "i", (function() {
 				return q
 			})), n.d(t, "e", (function() {
-				return Z
+				return Q
 			}));
 			const W = (e, t, n) => {
 					const s = e.c || [],
@@ -1347,7 +1347,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : Z(e, t, a))
+						o.push(e.e === h.w ? e.t : Q(e, t, a))
 					}
 					const d = c.w[r - 1];
 					return a.a.createElement(d, {
@@ -1467,7 +1467,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(Q(r, o));
+						if (r.e === h.A) s.push(Z(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, n)));
@@ -1483,18 +1483,18 @@
 									media: e
 								}))
 							}
-						} else s.push(Z(r, n, o))
+						} else s.push(Q(r, n, o))
 					}
 					return s
 				},
-				Z = (e, t, n) => {
+				Q = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
 							return a.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a
-							}, Q({
+							}, Z({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1518,7 +1518,7 @@
 							}, e.t)
 					}
 				},
-				Q = (e, t) => {
+				Z = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -1800,4 +1800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.92295b1e5031b4be86f0.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.30bc4234d0befe892145.js.map

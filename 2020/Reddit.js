@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2bf2484c51d421d26cbb.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.214c15991e3c67376a09.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -880,7 +880,7 @@
 						} = r,
 						d = Object(o.a)(c).get(v.c);
 					if (d && (t(Object(n.c)(Object(i.a)(c, [v.c]))), Object(E.a)(e))) {
-						const s = Object(j.P)(e),
+						const s = Object(j.O)(e),
 							n = Object(a.a)(s, "settings.accountForm.connectedAccounts.twitterConnected.toast");
 						t(Object(C.e)({
 							text: n
@@ -3271,7 +3271,7 @@
 								model: {
 									displayText: ""
 								}
-							}) : ra(a, s, n), sa.forEach(e => a.push(e(r, n))), Object(Q.Z)(e) && a.push({
+							}) : ra(a, s, n), sa.forEach(e => a.push(e(r, n))), Object(Q.Y)(e) && a.push({
 								id: En.CreateCommunity,
 								type: Jn.GenericLink,
 								model: {
@@ -4241,7 +4241,7 @@
 						} = t;
 						return Object(Ln.J)(s)
 					},
-					language: Q.P,
+					language: Q.O,
 					multireddit: Ln.d,
 					routeName: Wt.q,
 					subreddit: Ln.q,
@@ -5296,7 +5296,7 @@
 					language: e => e.user.language,
 					isModModeEnabled: Qt.t,
 					isOpen: Object(zr.b)("USER_DROPDOWN_ID"),
-					nightmode: Q.R,
+					nightmode: Q.Q,
 					url: Wt.r
 				}), e => ({
 					toggleNightmode: t => e(Object(L.w)(t)),
@@ -5494,7 +5494,7 @@
 						} = t;
 						return Object(Ln.I)(s) && !!Object(Q.l)(e) && !Object(Q.w)(e) && Object(Q.G)(e) && !Object(Q.E)(e)
 					},
-					unreadNotifications: Q.cb
+					unreadNotifications: Q.bb
 				}),
 				xc = Object(m.b)(vc, (e, t) => ({
 					closeEmailVerificationTooltip: () => e(Object(Co.b)()),
@@ -5702,7 +5702,7 @@
 			const _c = _.a.header("HeaderDynamicStyles", kc.a),
 				Tc = Object(h.c)({
 					isLoggedIn: Q.G,
-					isNightmode: Q.R,
+					isNightmode: Q.Q,
 					language: e => e.user.language,
 					isBladeOpen: e => !!e.structuredStyles.isEditing
 				}),
@@ -6373,7 +6373,7 @@
 					language: e => e.user.language,
 					isLoggedIn: Q.G,
 					isSubscriptionsPinned: Ha.b,
-					isSuspended: Q.L,
+					isSuspended: Q.K,
 					isFPR: Q.E,
 					posts: Ql.P,
 					profileCollectionsEnabled: Ol.a,
@@ -7511,12 +7511,12 @@
 			}, (e, t) => {
 				if (Object(p.j)(e)) return Object(p.g)(e, t)
 			}, C, Object(c.a)((e, t) => {
-				if (Object(p.j)(e) || Object(b.bb)(e)) return;
+				if (Object(p.j)(e) || Object(b.ab)(e)) return;
 				const s = C(e, t);
 				if (!s) return;
 				const n = Object(h.D)(e, s);
 				if (!n) return;
-				if (Object(b.ab)(e, {
+				if (Object(b.Z)(e, {
 						subredditId: n
 					})) return;
 				const a = e.structuredStyles.models[n];
@@ -7530,9 +7530,9 @@
 				return n ? n.emojisCustomSize : void 0
 			}, (e, t) => {
 				if (t.forceDayMode) return !1;
-				return Object(b.hb)(e).nightmode
+				return Object(b.gb)(e).nightmode
 			}, (e, t) => {
-				if (!Object(b.hb)(e).hideNSFW) return !0;
+				if (!Object(b.gb)(e).hideNSFW) return !0;
 				const s = C(e, t);
 				if (s) {
 					const t = Object(h.y)(e, {
@@ -9423,7 +9423,7 @@
 					return s
 				};
 			const Ye = Object(J.c)({
-					language: ne.P,
+					language: ne.O,
 					showError: We.d.showVerboseErrors
 				}),
 				Je = Object(K.b)(Ye)(e => {
@@ -10178,7 +10178,7 @@
 							const t = String(e.split("/")[1]).toLowerCase();
 							return "framedgild" === t || "framedmodal" === t
 						}(t.location.pathname) || n.dispatch(Object(V.g)());
-					const a = Object(ne.R)(n.getState());
+					const a = Object(ne.Q)(n.getState());
 					n.dispatch(Object(z.c)({
 						nightmode: a
 					})), n.dispatch(Object(V.h)(s));
@@ -11846,4 +11846,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Poll~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.2bf2484c51d421d26cbb.js.map
+//# sourceMappingURL=Reddit.214c15991e3c67376a09.js.map

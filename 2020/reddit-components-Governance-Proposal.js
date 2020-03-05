@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.cc7762e936593a8c48ac.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.61d08afb6eee8432007a.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -513,7 +513,7 @@
 				}))
 			}
 			const re = Object(i.c)({
-				language: $.P,
+				language: $.O,
 				poll: (e, t) => {
 					let {
 						pollId: s
@@ -1137,4 +1137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.cc7762e936593a8c48ac.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.61d08afb6eee8432007a.js.map

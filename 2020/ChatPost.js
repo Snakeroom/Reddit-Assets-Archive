@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.d41e3ed73d2fedcf494c.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.b8b14be5b72ae6a65620.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1324,7 +1324,7 @@
 						return Boolean(e.shortcuts.activeCommentId && n === e.shortcuts.activeCommentId)
 					},
 					isEditing: W.z,
-					language: tt.P,
+					language: tt.O,
 					subreddit: Tt.q
 				})),
 				Bt = Object(ee.b)(e => ({
@@ -2342,4 +2342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.d41e3ed73d2fedcf494c.js.map
+//# sourceMappingURL=ChatPost.b8b14be5b72ae6a65620.js.map

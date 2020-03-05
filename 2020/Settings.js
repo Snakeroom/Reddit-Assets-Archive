@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.dc9d2fdf2b475e24fd29.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4824b156aa91a828545b.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -846,7 +846,7 @@
 				}).apply(this, arguments)
 			}
 			const I = Object(f.c)({
-					language: _.P
+					language: _.O
 				}),
 				T = o.a.div("Container", P.a),
 				B = o.a.div("Body", P.a),
@@ -894,8 +894,8 @@
 					let {
 						profileName: s
 					} = t;
-					return Object(_.gb)(e, s)
-				}, _.P, (e, t, s) => ({
+					return Object(_.fb)(e, s)
+				}, _.O, (e, t, s) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					language: s,
 					postKarma: t ? t.postKarma : 0,
@@ -1472,7 +1472,7 @@
 					hasPaypalSubscription: j.t,
 					isGold: j.p,
 					isPremiumSubscriber: j.q,
-					language: j.P,
+					language: j.O,
 					updateCardModalIsOpen: Object(E.b)(N)
 				}),
 				M = Object(o.b)(P, e => ({
@@ -2431,7 +2431,7 @@
 				o = s("./src/reddit/selectors/subreddit.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(a.c)({
-				language: i.P,
+				language: i.O,
 				userIsSubscriber: o.Z
 			}), (e, t) => {
 				let {
@@ -2453,7 +2453,7 @@
 				a = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = Object(a.c)({
-				language: r.P
+				language: r.O
 			});
 
 			function i(e) {
@@ -3387,7 +3387,7 @@
 				je = Object(o.c)({
 					twitterAccount: me.a,
 					isTwitterConnectionPending: me.b,
-					language: C.P
+					language: C.O
 				}),
 				we = Object(r.b)(je, e => ({
 					onConnectAccount: t => {
@@ -3464,7 +3464,7 @@
 					deactivateModalOpen: Object(se.b)("deactivate_modal_id"),
 					email: C.l,
 					inRedesignBeta: C.A,
-					language: C.P,
+					language: C.O,
 					optoutModalOpen: Object(se.b)("settins_optout_modal_id"),
 					user: C.i
 				});
@@ -4197,7 +4197,7 @@
 				isChrome: ks.d,
 				isFirefox: ks.f,
 				isOpera: ks.g,
-				language: C.P,
+				language: C.O,
 				preferences: Ss.d
 			});
 			class Zs extends a.a.Component {
@@ -4845,7 +4845,7 @@
 				Nn = s.n(Sn);
 			const Pn = 30,
 				Mn = 200,
-				In = Object(o.a)(C.P, C.i, _n.a, C.hb, wn.o, se.a, (e, t, s, n, a, r) => {
+				In = Object(o.a)(C.O, C.i, _n.a, C.gb, wn.o, se.a, (e, t, s, n, a, r) => {
 					const o = t && t.profileId,
 						i = o && a[o] ? a[o].bannerBackgroundImage : void 0;
 					return {
@@ -5331,7 +5331,7 @@
 					savedPayments: jt.r,
 					userIsWhitelistedCreator: jt.C,
 					allowNavigationCallback: wa.a,
-					language: C.P,
+					language: C.O,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -5501,4 +5501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.dc9d2fdf2b475e24fd29.js.map
+//# sourceMappingURL=Settings.4824b156aa91a828545b.js.map

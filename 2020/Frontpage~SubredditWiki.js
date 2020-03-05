@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.1995c5b80d2fca49eda5.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.c48d6de23c1e1ba78219.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, n) {
@@ -500,7 +500,7 @@
 				p = n("./src/reddit/actions/subscription/index.ts"),
 				b = n("./src/reddit/selectors/user.ts");
 			const h = Object(o.c)({
-				language: b.P
+				language: b.O
 			});
 			var g = Object(a.b)(h, (e, t) => {
 					const n = t.widget.id || void 0;
@@ -571,7 +571,7 @@
 				}, e.bottomButtonText)))),
 				w = Object(o.c)({
 					hideNSFWPref: b.y,
-					language: b.P
+					language: b.O
 				}),
 				P = Object(a.b)(w)(e => r.a.createElement("div", {
 					className: N.a.communityItemContainer
@@ -735,4 +735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~SubredditWiki.1995c5b80d2fca49eda5.js.map
+//# sourceMappingURL=Frontpage~SubredditWiki.c48d6de23c1e1ba78219.js.map

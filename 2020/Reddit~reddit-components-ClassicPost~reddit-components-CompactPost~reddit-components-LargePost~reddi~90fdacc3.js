@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d8b8d93931a9b363ac5a.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f2284435901137964321.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -424,7 +424,7 @@
 				y = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				j = s.n(y);
 			const O = Object(i.b)(() => Object(o.c)({
-				labelNSFW: c.O
+				labelNSFW: c.N
 			}));
 			t.a = O(Object(a.b)(e => {
 				let {
@@ -745,7 +745,7 @@
 				z = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(k.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(k.a)(e).post, y.a.black, y.a.white) : e.textColor === E.e.Dark ? y.a.black : y.a.white,
 				H = m.a.wrapped(R, "TextFlair", T.a),
 				q = m.a.wrapped(B, "RichTextFlair", T.a),
-				U = e => {
+				Q = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -755,8 +755,8 @@
 							return Object(i.m)(.1, Object(k.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Z = m.a.wrapped(e => {
-					const t = U(e),
+				U = m.a.wrapped(e => {
+					const t = Q(e),
 						s = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -833,7 +833,7 @@
 						});
 					case E.f.Nsfw:
 					case E.f.Spoiler:
-						return a.a.createElement(Z, {
+						return a.a.createElement(U, {
 							className: t,
 							text: n.text,
 							type: n.type
@@ -876,7 +876,7 @@
 				u = s("./src/reddit/models/Flair/index.ts"),
 				m = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.O
+					labelNSFW: m.N
 				}),
 				b = Object(a.b)(p),
 				h = e => {
@@ -1494,13 +1494,13 @@
 				l = s("./src/lib/classNames/index.ts"),
 				d = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				u = s("./src/lib/lessComponent.tsx"),
-				m = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				p = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				h = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				f = s("./src/lib/permalinkToOverlayLocation/index.ts"),
-				x = s("./src/reddit/helpers/flair.ts"),
-				g = s("./src/reddit/helpers/path/index.ts"),
+				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				b = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				h = s("./src/lib/permalinkToOverlayLocation/index.ts"),
+				f = s("./src/reddit/helpers/flair.ts"),
+				x = s("./src/reddit/helpers/path/index.ts"),
+				g = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				v = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				y = s("./src/reddit/models/Flair/index.ts"),
 				j = s("./src/reddit/models/Media/index.ts"),
@@ -1630,16 +1630,16 @@
 						})
 					}))
 				},
-				U = Object(b.t)({
-					isCommentPermalink: b.v,
+				Q = Object(p.t)({
+					isCommentPermalink: p.v,
 					pageLayer: e => e
 				}),
-				Z = Object(c.c)({
+				U = Object(c.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
 						} = t;
-						return Object(b.p)(e, {
+						return Object(p.p)(e, {
 							pageLayer: s
 						})
 					},
@@ -1659,9 +1659,9 @@
 							subredditId: s.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: V.T
+					shouldOpenPostInNewTab: V.S
 				}),
-				Q = Object(o.b)(Z),
+				Z = Object(o.b)(U),
 				Y = e => {
 					const {
 						post: t
@@ -1669,8 +1669,8 @@
 						isSponsored: s
 					} = t;
 					if (!e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
-						const n = t.media && Object(j.C)(t.media) ? Object(m.g)(t.id) : t.permalink,
-							r = e.isCommentPermalink ? Object(g.b)(n) : Object(f.a)(n);
+						const n = t.media && Object(j.C)(t.media) ? Object(g.d)(t.id) : t.permalink,
+							r = e.isCommentPermalink ? Object(x.b)(n) : Object(h.a)(n);
 						return i.a.createElement(q, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
@@ -1715,7 +1715,7 @@
 						isSponsored: n
 					} = s, r = !t && !e.isCrosspost && e.size !== R.Large && !s.isSponsored && !(s.media && Object(j.C)(s.media)) && (s.source || s.media && (s.media.type === j.n.GIFVIDEO || s.media.type === j.n.IMAGE || s.media.type === j.n.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
-						if (r) return i.a.createElement(h.a, {
+						if (r) return i.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
 							href: Object(j.A)(s),
 							isSponsored: n,
@@ -1723,7 +1723,7 @@
 						}, Object(C.a)(s), i.a.createElement(v.a, {
 							className: A.a.outboundLinkIcon
 						}))
-					} else if (s.source && !e.isCrosspost && e.size !== R.Large && e.size !== R.ExtraLarge) return i.a.createElement(h.a, {
+					} else if (s.source && !e.isCrosspost && e.size !== R.Large && e.size !== R.ExtraLarge) return i.a.createElement(b.a, {
 						className: e.outboundLinkClassName,
 						href: s.source.url,
 						isSponsored: n,
@@ -1750,10 +1750,10 @@
 						poll: a,
 						post: c,
 						showNSFWSpoilerFlairsOnly: d
-					} = this.props, u = s === y.b.Left, m = Object(w.b)(r, c), p = d ? m.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : u ? m.filter(e => Object(x.p)(e.type)) : [], b = d ? [] : u ? m.filter(e => !Object(x.p)(e.type)) : m, h = !o && !n, f = !t && p && p.length > 0 && h, g = !t && b && b.length > 0 && h;
+					} = this.props, u = s === y.b.Left, m = Object(w.b)(r, c), p = d ? m.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : u ? m.filter(e => Object(f.p)(e.type)) : [], b = d ? [] : u ? m.filter(e => !Object(f.p)(e.type)) : m, h = !o && !n, x = !t && p && p.length > 0 && h, g = !t && b && b.length > 0 && h;
 					return i.a.createElement("div", {
 						className: Object(l.a)(e, c.id)
-					}, !d && f && i.a.createElement(w.a, {
+					}, !d && x && i.a.createElement(w.a, {
 						isFlairFilter: !0,
 						titleFlair: p,
 						nowrap: !0,
@@ -1780,7 +1780,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = u.a.wrapped(U(Q(Object(d.a)(Object(p.b)(K)))), "Component", A.a)
+			t.c = u.a.wrapped(Q(Z(Object(d.a)(Object(m.b)(K)))), "Component", A.a)
 		},
 		"./src/reddit/components/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1974,7 +1974,7 @@
 						placeholderImage: x,
 						redditStyle: b,
 						theme: v
-					}), C = q(e), w = Z(p, t, O, j, g, v, C, l, f, h, b, d, u, m, r), S = Object(N.A)(p);
+					}), C = q(e), w = U(p, t, O, j, g, v, C, l, f, h, b, d, u, m, r), S = Object(N.A)(p);
 					return Object(n.a)(S) && !h && S.indexOf("redditmedia") < 0 ? i.a.createElement("div", {
 						className: Object(o.a)(F.a.container, y ? F.a.usePreview : "", s)
 					}, i.a.createElement(E.a, {
@@ -1998,13 +1998,13 @@
 						media: o,
 						thumbnail: a
 					} = t || s;
-					return r && i ? i.url : U(o) ? o.scrubberThumbSource : a.url
+					return r && i ? i.url : Q(o) ? o.scrubberThumbSource : a.url
 				},
-				U = e => !!e && e.type === N.n.LIVEVIDEO,
-				Z = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
+				Q = e => !!e && e.type === N.n.LIVEVIDEO,
+				U = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
 					const v = e.source && !e.isSponsored || !1;
 					if (Object(n.a)(d)) {
-						const s = U(e.media),
+						const s = Q(e.media),
 							n = s ? {
 								errorSrc: l.S
 							} : {},
@@ -2084,7 +2084,7 @@
 				f = s("./src/reddit/components/VerticalVotes/index.m.less"),
 				x = s.n(f);
 			const g = Object(a.c)({
-					isNightmode: h.R
+					isNightmode: h.Q
 				}),
 				v = Object(o.b)(g),
 				y = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
@@ -3145,9 +3145,9 @@
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "h", (function() {
-				return U
+				return Q
 			})), s.d(t, "n", (function() {
-				return Z
+				return U
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/bignumber.js/bignumber.js"),
@@ -3428,12 +3428,12 @@
 						if (n && n.data) return !!n.data[s]
 					}
 				},
-				U = (e, t) => {
+				Q = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.pointsToClaim), new n.BigNumber(0)).toString() : null
 				},
-				Z = (e, t) => {
+				U = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.userKarma), new n.BigNumber(0)).toString() : null
@@ -3497,4 +3497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d8b8d93931a9b363ac5a.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f2284435901137964321.js.map

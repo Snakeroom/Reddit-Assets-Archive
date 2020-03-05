@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d670a5627a556c3dbf07.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.0165884719c70be178ae.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1428,7 +1428,7 @@
 			const et = Object(d.c)({
 					activeModalId: Be.a,
 					contributorRequestPending: e => Object($e.h)(e, g.e.Comment),
-					language: Fe.P,
+					language: Fe.O,
 					userName: e => e.user.account ? Object(Ye.f)(e.user.account) : "",
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
 					hasError: Ie.w,
@@ -1894,7 +1894,7 @@
 					[p]: f
 				},
 				E = Object(a.c)({
-					language: d.P
+					language: d.O
 				}),
 				w = Object(r.b)(E),
 				O = (e, t) => ({
@@ -2006,7 +2006,7 @@
 					editorMode: g.h,
 					errorMessages: g.i,
 					hasError: g.j,
-					language: _.P,
+					language: _.O,
 					markdownDraft: g.k,
 					pending: g.P,
 					postRequirements: g.db,
@@ -2710,4 +2710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.d670a5627a556c3dbf07.js.map
+//# sourceMappingURL=RichTextEditor.0165884719c70be178ae.js.map

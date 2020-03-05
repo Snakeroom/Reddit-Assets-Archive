@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6394097eaaf7a886a023.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.dc5de7d97b5226cbee7a.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -181,7 +181,7 @@
 				l = s("./src/reddit/selectors/user.ts");
 			const m = Object(d.t)(),
 				u = Object(i.c)({
-					language: l.P,
+					language: l.O,
 					multireddit: c.a,
 					subredditCategory: d.l
 				}),
@@ -1814,7 +1814,7 @@
 					className: y.a.icon
 				}),
 				O = Object(i.c)({
-					language: h.P,
+					language: h.O,
 					subreddit: b.y,
 					subredditAboutInfo: b.v
 				}),
@@ -2507,7 +2507,7 @@
 			const xe = Object(d.c)({
 				isAutocompletePending: he.c,
 				items: he.e,
-				language: ge.P
+				language: ge.O
 			});
 			class ye extends i.a.Component {
 				constructor() {
@@ -2939,7 +2939,7 @@
 						let {
 							language: s
 						} = t;
-						return s || Object(ge.P)(e)
+						return s || Object(ge.O)(e)
 					}
 				}),
 				tt = Object(o.b)(et, (e, t) => {
@@ -3863,7 +3863,7 @@
 				minimizedLength: l.Eb
 			};
 			const E = Object(d.c)({
-				language: g.P
+				language: g.O
 			});
 			t.a = Object(o.b)(E)(C)
 		},
@@ -4227,7 +4227,7 @@
 			const X = Object(d.c)({
 					isCollectionReady: N.e,
 					isModerator: _.e,
-					language: P.P,
+					language: P.O,
 					selectedSubreddit: w.P,
 					shouldRequestCollection: N.f,
 					subredditChannels: N.a
@@ -4869,7 +4869,7 @@
 			const te = Object(c.a)("spPolls", P),
 				se = Object(d.t)(),
 				ne = Object(i.c)({
-					language: l.P,
+					language: l.O,
 					layout: d.L,
 					widget: m.f
 				}),
@@ -4956,7 +4956,7 @@
 				q = e => "SubredditChannels--Menu--".concat(e),
 				z = Object(d.c)({
 					isModerator: M.g,
-					language: R.P,
+					language: R.O,
 					isDropdownOpen: (e, t) => Object(A.b)(q(t.subredditId))(e)
 				}),
 				Y = l.a.wrapped(e => {
@@ -5088,7 +5088,7 @@
 				Pe = s.n(Ne);
 			const Ie = e => e.type === _e.f.Nsfw || e.type === _e.f.Spoiler,
 				ke = Object(d.c)({
-					language: R.P,
+					language: R.O,
 					post: xe.M,
 					subredditOrProfile: xe.Y
 				});
@@ -5558,7 +5558,7 @@
 						} = t;
 						return Object(Tt.c)(e, s)
 					},
-					language: R.P,
+					language: R.O,
 					showGovernance: Pt.d.spPoints,
 					showLeaderboard: Pt.d.spLeaderboard,
 					widgets: ee.r
@@ -5845,7 +5845,7 @@
 				p = s("./src/reddit/actions/subscription/index.ts"),
 				b = s("./src/reddit/selectors/user.ts");
 			const h = Object(o.c)({
-				language: b.P
+				language: b.O
 			});
 			var g = Object(a.b)(h, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -5916,7 +5916,7 @@
 				}, e.bottomButtonText)))),
 				I = Object(o.c)({
 					hideNSFWPref: b.y,
-					language: b.P
+					language: b.O
 				}),
 				k = Object(a.b)(I)(e => r.a.createElement("div", {
 					className: w.a.communityItemContainer
@@ -6454,7 +6454,7 @@
 				_ = u.a.wrapped(o.a, "RawHTMLDisplay", O.a);
 			var w = Object(a.b)(() => Object(i.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: y.R
+					isNightmodeOn: y.Q
 				}))(e => r.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -6502,7 +6502,7 @@
 				}
 			}
 			const V = Object(i.c)({
-				language: y.P
+				language: y.O
 			});
 			var G = Object(a.b)(V)(e => r.a.createElement(d.a, {
 					styles: e.widget.styles,
@@ -6746,13 +6746,13 @@
 				flairStyleTemplate: c.P,
 				hideNSFWPref: b.y,
 				isActive: p.h,
-				language: b.P,
+				language: b.O,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.N,
 				post: p.M,
 				showEditFlair: u.a,
 				subredditOrProfile: p.Y,
-				userIsOp: b.fb
+				userIsOp: b.eb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -8011,14 +8011,14 @@
 						match: s
 					} = t;
 					return s.params.sort
-				}, Pe, Oe.U, (e, t, s, n) => {
+				}, Pe, Oe.T, (e, t, s, n) => {
 					let r = t;
 					!r && Object(O.a)(e) && (r = j.O.HOT);
 					const a = Object(w.g)(s, n);
 					return Object(w.h)(e, r, s, a)
 				}),
 				ke = Object(g.c)({
-					isTopContentDismissed: Oe.M
+					isTopContentDismissed: Oe.L
 				}),
 				Te = Object(g.c)({
 					subreddit: (e, t) => Object(fe.y)(e, {
@@ -8096,7 +8096,7 @@
 				We = Object(g.c)({
 					claimablePointsEnabled: ae.d.spClaimablePoints,
 					isBlacklistedTopContentPage: me.f,
-					language: Oe.P,
+					language: Oe.O,
 					layersEmbedEnabledOnSubreddit: ae.d.layersEmbed,
 					listingKey: Ie,
 					sortParams: Ae,
@@ -8130,7 +8130,7 @@
 						})
 					}
 				}),
-				He = () => Object(g.a)(Oe.U, Le, Pe, ke, Te, (e, t) => {
+				He = () => Object(g.a)(Oe.T, Le, Pe, ke, Te, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -8518,16 +8518,35 @@
 		"./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return l
 			})), s.d(t, "b", (function() {
-				return c
+				return m
 			}));
+			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var n = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				a = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				i = s("./src/reddit/selectors/user.ts"),
-				o = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const d = Object(n.a)(a.a, a.b, i.K, (e, t) => {
+				r = s("./src/lib/constants/index.ts"),
+				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				i = s("./src/reddit/selectors/subreddit.ts"),
+				o = s("./src/reddit/selectors/user.ts"),
+				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				c = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
+			const l = Object(n.a)(d.a, d.b, (e, t) => {
+					let {
+						listingName: s
+					} = t;
+					const n = Object(o.gb)(e);
+					if (!n) return !1;
+					let d;
+					if (-1 === [a.O, "r/popular"].indexOf(s)) {
+						const t = s.replace(/^r\//, ""),
+							r = Object(i.D)(e, t),
+							a = n.subreddit[r];
+						if (!a) return !1;
+						d = a
+					} else d = n;
+					if (!d.rpanDuDismissalTime) return !1;
+					return new Date(d.rpanDuDismissalTime).getTime() > Date.now() - 3 * r.x
+				}, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -8536,18 +8555,18 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(o.n)(e, {
+					return Object(c.n)(e, {
 						subreddit: s
 					})
-				}, o.l, (e, t, s, n, a, i) => {
+				}, c.l, (e, t, s, n, r, i) => {
 					if (!e) return !1;
 					if (i.isPermanentlyCanceled) return !1;
 					if (s) return !1;
-					if (t) return !!a && a.show_discovery_unit;
+					if (t) return !!r && r.show_discovery_unit;
 					if (!i.global.viewer_enabled) return !1;
-					return [r.O, "r/popular"].indexOf(n) > -1
+					return [a.O, "r/popular"].indexOf(n) > -1
 				}),
-				c = Object(n.a)(a.b, (e, t) => {
+				m = Object(n.a)(d.b, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -8556,15 +8575,15 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(o.n)(e, {
+					return Object(c.n)(e, {
 						subreddit: s
 					})
-				}, o.m, (e, t, s, n) => {
+				}, c.m, (e, t, s, n) => {
 					if (!e) {
-						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : r.h;
-						return "number" == typeof e ? e : r.h
+						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : a.h;
+						return "number" == typeof e ? e : a.h
 					}
-					return s ? s.discovery_unit_index : r.h
+					return s ? s.discovery_unit_index : a.h
 				})
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
@@ -8573,7 +8592,7 @@
 			var n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/lib/objectSelector/index.ts"),
 				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				i = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
+				i = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				o = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				d = s("./src/reddit/selectors/posts.ts"),
 				c = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -8649,7 +8668,7 @@
 					}, n)
 				}),
 				E = (e, t) => {
-					return C(e)[Object(i.k)(t)]
+					return C(e)[Object(i.f)(t)]
 				},
 				j = Object(n.a)((e, t) => {
 					let {
@@ -8660,7 +8679,7 @@
 					if (d) {
 						const a = [];
 						if (e) {
-							const t = Object(i.k)(e);
+							const t = Object(i.f)(e);
 							s[t] && a.push(t)
 						}
 						const d = a.concat(t),
@@ -8746,7 +8765,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? Object(i.k)(s) : void 0
+					return s ? Object(i.f)(s) : void 0
 				}, P, h, d.g, (e, t) => {
 					let {
 						related: s,
@@ -8826,4 +8845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.6394097eaaf7a886a023.js.map
+//# sourceMappingURL=Subreddit.dc5de7d97b5226cbee7a.js.map

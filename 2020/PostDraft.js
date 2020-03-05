@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.eba0a78827398dcba5c3.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.b9b7046b6c9df03b2653.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -798,7 +798,7 @@
 				T = Object(l.c)({
 					hasIdCardWidgetData: N,
 					isCreationPagePending: g.B,
-					language: y.P,
+					language: y.O,
 					profile: (e, t) => {
 						let {
 							pageLayer: n,
@@ -1312,7 +1312,7 @@
 				S = ["right", "top"];
 			var L = Object(d.b)(() => Object(l.c)({
 					post: y.M,
-					language: w.P
+					language: w.O
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(v.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -1551,10 +1551,10 @@
 							s = t.redditStyle || Object(f.m)(e, {
 								subredditId: n
 							}),
-							r = Object(v.R)(e);
+							r = Object(v.Q)(e);
 						return s || r
 					},
-					nigtmode: v.R,
+					nigtmode: v.Q,
 					subredditId: m.m,
 					topPostVariant: g.d
 				}));
@@ -1640,7 +1640,7 @@
 				r = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = Object(r.c)({
-				language: o.P
+				language: o.O
 			});
 
 			function a(e) {
@@ -2009,7 +2009,7 @@
 				I = l.a.h1("Title", S.a),
 				B = Object(c.t)(),
 				W = Object(i.c)({
-					language: m.P,
+					language: m.O,
 					profile: c.j
 				});
 			var A = B(Object(o.b)(W)(e => {
@@ -2040,7 +2040,7 @@
 							draftId: n.params.draftId
 						})
 					},
-					language: m.P
+					language: m.O
 				}),
 				X = Object(o.b)(q);
 			class U extends s.Component {
@@ -2068,4 +2068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.eba0a78827398dcba5c3.js.map
+//# sourceMappingURL=PostDraft.b9b7046b6c9df03b2653.js.map

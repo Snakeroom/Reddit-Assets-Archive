@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0695782127c8a91f3d3e.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.033f48f1eec28ed3c8ba.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -83,7 +83,7 @@
 						text: l ? Object(r.a)(p, "posts.restoreReports") : Object(r.a)(p, "posts.ignoreReports")
 					}, l ? n.a.createElement(j, null) : n.a.createElement(_, null)))
 				};
-			class P extends n.a.Component {
+			class I extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleIgnoreReports = () => {
 						let e;
@@ -124,7 +124,7 @@
 					}))
 				}
 			}
-			t.default = Object(l.b)(P)
+			t.default = Object(l.b)(I)
 		},
 		"./src/reddit/components/ModModeReports/helpers.ts": function(e, t, s) {
 			"use strict";
@@ -239,7 +239,7 @@
 				h = s("./src/reddit/components/ModerationDropdown/_ModerationDropdown.m.less"),
 				f = s.n(h);
 			const v = Object(a.c)({
-					language: x.P
+					language: x.O
 				}),
 				O = Object(r.b)(v),
 				g = d.a.wrapped(l.a, "StyledDropdown", f.a),
@@ -506,8 +506,8 @@
 					flatlistItem: e,
 					isCompact: t
 				}),
-				P = () => void 0;
-			var I = e => {
+				I = () => void 0;
+			var P = e => {
 					const {
 						canEditFlair: t,
 						language: s,
@@ -528,11 +528,11 @@
 						onOcPost: v,
 						onRemovePost: O,
 						onModToMemberShareOpened: _,
-						onSpamPost: I,
+						onSpamPost: P,
 						onStickyPost: y,
 						onSpoilerPost: D,
 						post: S
-					} = e, L = S.flair.filter(e => e.type !== R.f.Nsfw && e.type !== R.f.Spoiler).length > 0, T = Object(w.b)(S), F = !(!S.approvedBy || !T), A = !i && p === j.g.Compact, B = Object(M.a)(e.post), W = m ? N : P;
+					} = e, L = S.flair.filter(e => e.type !== R.f.Nsfw && e.type !== R.f.Spoiler).length > 0, T = Object(w.b)(S), F = !(!S.approvedBy || !T), A = !i && p === j.g.Compact, B = Object(M.a)(e.post), W = m ? N : I;
 					return n.a.createElement(C.e, null, r && n.a.createElement(n.a.Fragment, null, !S.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(C.c, {
 						className: W(E.a.Approve, A),
 						displayText: F ? Object(g.a)(s, "posts.reapprove") : S.approvedBy ? Object(g.a)(s, "posts.approved") : Object(g.a)(s, "posts.approve"),
@@ -544,7 +544,7 @@
 					}, n.a.createElement(C.g, null)), n.a.createElement(C.c, {
 						className: W(E.a.Spam, A),
 						displayText: S.isSpam ? Object(g.a)(s, "modTools.removedAsSpam") : Object(g.a)(s, "modTools.removeAsSpam"),
-						onClick: I
+						onClick: P
 					}, n.a.createElement(C.h, null))), t && n.a.createElement(C.c, {
 						className: W(E.a.Flair, A),
 						displayText: L ? Object(g.a)(s, "modTools.editPostFlair") : Object(g.a)(s, "modTools.addPostFlair"),
@@ -647,16 +647,16 @@
 						post: R,
 						sendEvent: C,
 						tooltipId: N
-					} = e, P = R.distinguishType === c.C.MODERATOR, y = P ? c.C.NONE : c.C.MODERATOR, S = Object(m.b)(R.id, i);
+					} = e, I = R.distinguishType === c.C.MODERATOR, y = I ? c.C.NONE : c.C.MODERATOR, S = Object(m.b)(R.id, i);
 					return n.a.createElement(F, {
 						className: D.a.dropdown,
 						isOpen: r,
 						tooltipId: N
-					}, n.a.createElement(I, {
+					}, n.a.createElement(P, {
 						canEditFlair: t,
 						hasModFullPerms: s,
 						hasModPostPerms: o,
-						isDistinguished: P,
+						isDistinguished: I,
 						isModToMemberShareEnabled: a,
 						isOverlay: i,
 						isPostAuthor: d,
@@ -674,7 +674,7 @@
 							j(), C(Object(v.i)("spam", R.id))
 						},
 						onDistinguishPost: () => {
-							h(y), C(Object(v.i)(P ? "undistinguish" : "distinguish", R.id))
+							h(y), C(Object(v.i)(I ? "undistinguish" : "distinguish", R.id))
 						},
 						onFlairPost: () => {
 							f(S), C(Object(v.i)("post_flair", R.id))
@@ -1336,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.0695782127c8a91f3d3e.js.map
+//# sourceMappingURL=ModerationDropdowns.033f48f1eec28ed3c8ba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.c46dc900574b99f2590a.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.5e66b5982a5e1ec6e6d5.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -98,7 +98,7 @@
 							response: p.body
 						}))
 					} else {
-						const e = Object(g.P)(r());
+						const e = Object(g.O)(r());
 						a(m(p.error)), a(Object(d.e)({
 							kind: O.b.Error,
 							text: Object(n.a)(e, "subredditModeration.modQueue.toastText.somethingWentWrong")
@@ -122,7 +122,7 @@
 					});
 					if (j.ok) t(K(j.body)), j.body.moderatedAfter ? t(L()) : t(B());
 					else {
-						const e = Object(g.P)(o());
+						const e = Object(g.O)(o());
 						t(Object(d.e)({
 							kind: O.b.Error,
 							text: Object(n.a)(e, "subredditModeration.modQueue.toastText.somethingWentWrong")
@@ -195,7 +195,7 @@
 									username: m
 								})));
 								else {
-									const o = Object(g.P)(t());
+									const o = Object(g.O)(t());
 									e(q(l.error)), e(Object(d.e)({
 										kind: O.b.Error,
 										text: Object(n.a)(o, "subredditModeration.modQueue.toastText.somethingWentWrong")
@@ -634,4 +634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.c46dc900574b99f2590a.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.5e66b5982a5e1ec6e6d5.js.map

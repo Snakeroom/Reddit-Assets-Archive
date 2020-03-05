@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c98179968ba969c0873c.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6e30f1bc3350dc256a6c.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -632,9 +632,9 @@
 				I = Object(a.c)({
 					isCurrentUserProfilePost: v.i,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.zb.TOPIC),
-					language: x.P,
+					language: x.O,
 					post: v.M,
-					shouldOpenPostInNewTab: x.T,
+					shouldOpenPostInNewTab: x.S,
 					subreddit: v.Y
 				}),
 				L = Object(n.b)(I);
@@ -900,7 +900,7 @@
 					flairStyleTemplate: Y.P,
 					isCurrentUserProfilePost: _.i,
 					isLoggedIn: O.G,
-					language: O.P,
+					language: O.O,
 					isActive: _.h,
 					isPostChainDismissed: g.c,
 					isPostChained: g.d,
@@ -920,7 +920,7 @@
 					postIds: ue,
 					showEditFlair: ae.a,
 					subredditOrProfile: _.Y,
-					userIsOp: O.fb
+					userIsOp: O.eb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -1445,4 +1445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.c98179968ba969c0873c.js.map
+//# sourceMappingURL=reddit-components-LargePost.6e30f1bc3350dc256a6c.js.map

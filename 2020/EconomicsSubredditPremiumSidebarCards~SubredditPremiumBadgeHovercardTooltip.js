@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.0929785979134bb1b27e.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.10f097f27a5bf2d1e36b.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Badges/index.m.less": function(e, t, i) {
@@ -998,4 +998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.0929785979134bb1b27e.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.10f097f27a5bf2d1e36b.js.map

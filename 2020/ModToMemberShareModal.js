@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.04e2f5c867dc167f5b2c.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.bf366f3ed6dbde446542.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -51,7 +51,7 @@
 				x = s("./src/reddit/selectors/user.ts"),
 				g = s("./src/reddit/components/MiniPost/index.m.less"),
 				C = s.n(g);
-			const _ = Object(i.a)(e => e, h.M, h.c, x.P, (e, t, s, n) => {
+			const _ = Object(i.a)(e => e, h.M, h.c, x.O, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
@@ -180,11 +180,11 @@
 				N = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
 				F = s.n(N);
 			const v = 400,
-				P = Object(i.c)({
+				T = Object(i.c)({
 					post: O.y,
 					subreddit: O.z
 				}),
-				T = Object(o.b)(P, (e, t) => ({
+				P = Object(o.b)(T, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
 					showSuccessToast: () => e(Object(d.e)({
 						text: Object(k.c)("Messages sent!")
@@ -293,7 +293,7 @@
 					}) : o ? r.a.createElement(E.c, null, "Sent!") : r.a.createElement(E.c, null, "Send Messages"))))
 				}
 			}
-			t.default = Object(a.a)(Object(h.b)(T(Object(p.b)(M))))
+			t.default = Object(a.a)(Object(h.b)(P(Object(p.b)(M))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, s) {
 			e.exports = {
@@ -402,4 +402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.04e2f5c867dc167f5b2c.js.map
+//# sourceMappingURL=ModToMemberShareModal.bf366f3ed6dbde446542.js.map

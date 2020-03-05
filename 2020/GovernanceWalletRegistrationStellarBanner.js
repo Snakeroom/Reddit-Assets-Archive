@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.8df5d8d01e63fd2ff2f5.js
-// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.ff797a4623fc3793efc9.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.8df5d8d01e63fd2ff2f5.js.map
+//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.ff797a4623fc3793efc9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsModal.1170761c15b259180030.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsModal.0808d7713b1b8a246afb.js
+// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsModal"], {
 		"./src/reddit/components/Governance/ClaimPointsModal/index.m.less": function(e, t, a) {
@@ -198,4 +198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsModal.1170761c15b259180030.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsModal.0808d7713b1b8a246afb.js.map
