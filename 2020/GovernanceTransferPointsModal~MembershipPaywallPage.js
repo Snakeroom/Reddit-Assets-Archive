@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.0d5a24b96f9f5815eac8.js
-// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.185845cefde37b9fd4d7.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, s) {
@@ -680,8 +680,8 @@
 				d = e => o.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				l = e => o.has((Object(a.e)(e) || "").toLowerCase()) || c.has((Object(a.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: r.Z
-				}) === r.gb.Enabled
+					experimentName: r.bb
+				}) === r.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -842,4 +842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.0d5a24b96f9f5815eac8.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.185845cefde37b9fd4d7.js.map

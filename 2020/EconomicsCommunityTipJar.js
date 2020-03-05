@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.4c2e26b1b97253835ad7.js
-// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.3793994dd9bfbf4c8ca1.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -681,8 +681,8 @@
 				d = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				l = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: n.Z
-				}) === n.gb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -843,4 +843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.4c2e26b1b97253835ad7.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.3793994dd9bfbf4c8ca1.js.map

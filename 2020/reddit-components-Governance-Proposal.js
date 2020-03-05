@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.823c79b5e23ab9f7b4e5.js
-// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.cc7762e936593a8c48ac.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -975,8 +975,8 @@
 				l = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				d = e => c.has((Object(r.e)(e) || "").toLowerCase()) || i.has((Object(r.e)(e) || "").toLowerCase()) && Object(o.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: n.Z
-				}) === n.gb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -1137,4 +1137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.823c79b5e23ab9f7b4e5.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.cc7762e936593a8c48ac.js.map

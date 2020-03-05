@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.2e69eda67d46d6d68e57.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.33eb22f3261e7f3b8222.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -635,9 +635,9 @@
 				Ze = w.a.wrapped(Ve.b, "DropdownRow", Ge.a),
 				$e = e => "experiment-".concat(e);
 			var et = e => {
-					const t = ["control_1", "control_2", ...Le.b[e.experimentName]];
+					const t = ["control_1", "control_2", ...Le.d[e.experimentName]];
 					if (!t) return null;
-					const n = Le.D.has(e.experimentName);
+					const n = Le.F.has(e.experimentName);
 					return a.a.createElement(W.a, {
 						className: e.className
 					}, a.a.createElement(ze, null, "".concat(e.experimentName).concat(n ? "*" : "")), a.a.createElement(Qe, {
@@ -673,7 +673,7 @@
 				at = w.a.div("Spacer", nt.a),
 				rt = w.a.wrapped(et, "Experiment", nt.a),
 				ot = w.a.div("Footnote", nt.a),
-				it = Object(x.a)(e => e.user.experiments.models, e => e.experimentOverrides, (e, t) => Object.keys(Le.b).reduce((n, s) => {
+				it = Object(x.a)(e => e.user.experiments.models, e => e.experimentOverrides, (e, t) => Object.keys(Le.d).reduce((n, s) => {
 					const a = e.find(e => {
 							let {
 								name: t
@@ -725,7 +725,7 @@
 						onBack: this.onBack
 					}, a.a.createElement(st, {
 						onClick: this.onCopyClick
-					}, "Copy url to clipboard"), a.a.createElement(at, null), Object.keys(Le.b).map(this.renderExperiment), a.a.createElement(ot, null, "* Whitelisted for query param override in production"))
+					}, "Copy url to clipboard"), a.a.createElement(at, null), Object.keys(Le.d).map(this.renderExperiment), a.a.createElement(ot, null, "* Whitelisted for query param override in production"))
 				}
 			}
 			var dt = Object(u.b)(ct, e => ({
@@ -1446,4 +1446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.2e69eda67d46d6d68e57.js.map
+//# sourceMappingURL=AdminPanel.33eb22f3261e7f3b8222.js.map

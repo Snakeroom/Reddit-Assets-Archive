@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8edcfaa03fd2e1001f13.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c98179968ba969c0873c.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -861,7 +861,7 @@
 			const re = Object(i.a)(_.S, e => e.some(oe.c)),
 				ne = Object(i.a)(re, e => e),
 				ie = (e, t) => Object(se.c)(e, {
-					experimentName: te.B,
+					experimentName: te.D,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -981,7 +981,7 @@
 						showEditFlair: he,
 						subredditOrProfile: fe,
 						userIsOp: ve
-					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ye = xe ? void 0 : u, ge = Object(l.a)(oe), Pe = re && ge, _e = Object(d.a)(oe), Oe = Object(c.a)(oe), Ce = Object(A.c)(me), we = !!me.media && me.media.type === h.n.RTJSON, je = ve && we, Se = s ? s - F.a : void 0, Ee = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Te = !(_ && O || z), ke = (e => e === te.hb.OnlyTitles)(ue) && !Object($.a)(me), Ne = (e => e === te.hb.MediumHeight)(ue) && !Object($.a)(me), Ie = (e => {
+					} = e, xe = !!e.redditStyle || !!e["data-redditstyle"], ye = xe ? void 0 : u, ge = Object(l.a)(oe), Pe = re && ge, _e = Object(d.a)(oe), Oe = Object(c.a)(oe), Ce = Object(A.c)(me), we = !!me.media && me.media.type === h.n.RTJSON, je = ve && we, Se = s ? s - F.a : void 0, Ee = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Te = !(_ && O || z), ke = (e => e === te.jb.OnlyTitles)(ue) && !Object($.a)(me), Ne = (e => e === te.jb.MediumHeight)(ue) && !Object($.a)(me), Ie = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -1445,4 +1445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.8edcfaa03fd2e1001f13.js.map
+//# sourceMappingURL=reddit-components-LargePost.c98179968ba969c0873c.js.map

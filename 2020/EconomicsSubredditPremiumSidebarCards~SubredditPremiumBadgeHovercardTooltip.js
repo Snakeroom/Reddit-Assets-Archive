@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.3b92b48b94d64901ff3e.js
-// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.0929785979134bb1b27e.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Badges/index.m.less": function(e, t, i) {
@@ -836,8 +836,8 @@
 				o = e => c.has(e.toLowerCase()) || n.has(e.toLowerCase()),
 				l = e => c.has((Object(s.e)(e) || "").toLowerCase()) || n.has((Object(s.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: d.G,
-					experimentName: a.Z
-				}) === a.gb.Enabled
+					experimentName: a.bb
+				}) === a.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, i) {
 			"use strict";
@@ -998,4 +998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.3b92b48b94d64901ff3e.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.0929785979134bb1b27e.js.map

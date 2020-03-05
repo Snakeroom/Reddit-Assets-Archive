@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d1e5bd4b06f71662717d.js
-// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.59e89ca4dd732b316c97.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -340,7 +340,7 @@
 				z = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
 				K = s.n(z);
 			const q = "newbie_badge";
-			class Z extends r.a.Component {
+			class V extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object(H.a)(this.props.apiContext(), {
@@ -378,10 +378,10 @@
 					}, Object(w.c)("apply")))) : null
 				}
 			}
-			const V = Object(c.c)({
+			const Z = Object(c.c)({
 				newbieBadge: e => Object(G.a)(e, q)
 			});
-			var Y = Object(b.b)(Object(m.b)(Object(a.b)(V, (e, t) => {
+			var Y = Object(b.b)(Object(m.b)(Object(a.b)(Z, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -394,7 +394,7 @@
 							}))
 						}
 					}
-				})(Z))),
+				})(V))),
 				Q = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
 				X = s.n(Q);
 			class J extends r.a.Component {
@@ -834,8 +834,8 @@
 				d = e => i.has(e.toLowerCase()) || o.has(e.toLowerCase()),
 				l = e => i.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.Z
-				}) === n.gb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -996,4 +996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.d1e5bd4b06f71662717d.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.59e89ca4dd732b316c97.js.map

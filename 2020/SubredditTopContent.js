@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.ab178a88b1a47adae512.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.472f4b73bcc66ed33907.js
+// Retrieved at 3/5/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -117,13 +117,13 @@
 				g = n("./src/reddit/constants/experiments.ts"),
 				f = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = n("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.D)(e) || g.xb.ShowTopContent === Object(f.c)(e, {
+			const O = e => Object(y.D)(e) || g.zb.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.tb
+				experimentName: g.vb
 			});
 			var C = n("./src/reddit/selectors/subreddit.ts"),
-				j = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
-				v = n.n(j);
+				v = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
+				j = n.n(v);
 			const _ = Object(c.b)(() => Object(d.c)({
 				inSubredditTopContentExperiment: O,
 				language: y.P,
@@ -167,15 +167,15 @@
 						postIds: s,
 						range: o
 					} = n, r = "".concat(t).concat(p.O.TOP, "?t=").concat(o), c = i.a.createElement(x.a, {
-						className: v.a.widgetHeader
+						className: j.a.widgetHeader
 					}, i.a.createElement("button", {
-						className: v.a.closeButton,
+						className: j.a.closeButton,
 						onClick: this.onCloseClick
 					}, i.a.createElement(h.b, {
-						className: v.a.closeIcon,
+						className: j.a.closeIcon,
 						"data-redditstyle": !0
 					})), i.a.createElement(a.a, {
-						className: v.a.headerLink,
+						className: j.a.headerLink,
 						to: r
 					}, Object(l.a)(this.props.language, "discoveryUnits.topContentLast", {
 						range: o
@@ -183,7 +183,7 @@
 					return i.a.createElement("div", {
 						className: this.props.className
 					}, i.a.createElement(u.a, {
-						className: v.a.layout,
+						className: j.a.layout,
 						header: c,
 						hidePadding: !0
 					}, i.a.createElement(m.a, {
@@ -297,8 +297,8 @@
 						})
 					}
 				}),
-				j = Object(d.a)(C),
-				v = e => {
+				v = Object(d.a)(C),
+				j = e => {
 					const t = Object(h.d)(e.target, e.currentTarget),
 						n = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
 					return "subreddit" !== t && n
@@ -323,7 +323,7 @@
 							post: b,
 							onClick: g,
 							onPostContentClick: C,
-							onPostViewable: j,
+							onPostViewable: v,
 							isOverlay: _
 						} = e,
 						w = y(e, ["pixelPostHasEnteredView", "pixelPostHasExitedView", "afterClickTracking", "buffering", "children", "className", "continuousViewingStartedAt", "gildModalIsOpen", "makePostContainerId", "playing", "post", "onClick", "onPostContentClick", "onPostViewable", "isOverlay"]),
@@ -334,7 +334,7 @@
 								}, 1e3))
 							},
 							onClick: e => {
-								!this.cancelClick && e.button < 2 && (s(() => g && g(e, b))(e), C && v(e) && C(e, b))
+								!this.cancelClick && e.button < 2 && (s(() => g && g(e, b))(e), C && j(e) && C(e, b))
 							},
 							className: Object(m.a)(d, "Post ".concat(b.id), {
 								promotedlink: b.isSponsored
@@ -344,7 +344,7 @@
 						}), c, u && o.a.createElement(a.a, null)),
 						P = !!b.media && b.media.type === l.n.VIDEO;
 					return b.isSponsored || P ? o.a.createElement(i.a, {
-						onViewable: e => j(b, e),
+						onViewable: e => v(b, e),
 						pixelPostHasEnteredView: e => t(b, e),
 						pixelPostHasExitedView: e => n(b, e),
 						children: k,
@@ -353,7 +353,7 @@
 					}) : k
 				}
 			}
-			t.a = j(Object(h.c)(_))
+			t.a = v(Object(h.c)(_))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -515,4 +515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.ab178a88b1a47adae512.js.map
+//# sourceMappingURL=SubredditTopContent.472f4b73bcc66ed33907.js.map
