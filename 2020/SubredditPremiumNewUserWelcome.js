@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.babbb5a2c271bd9ad8b8.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d1e5bd4b06f71662717d.js
+// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -15,8 +15,8 @@
 				r = s("./src/lib/makeActionCreator/index.ts"),
 				a = s("./src/reddit/actions/economics/banners/constants.ts");
 			const c = Object(r.a)(a.c),
-				o = Object(r.a)(a.d),
-				i = Object(r.a)(a.a),
+				i = Object(r.a)(a.d),
+				o = Object(r.a)(a.a),
 				d = Object(r.a)(a.b);
 			s.d(t, "b", (function() {
 				return l
@@ -29,12 +29,12 @@
 				let {
 					apiContext: a
 				} = r;
-				const i = s();
-				if (!i.user.account) return;
-				if (i.economics.banners.dismissedBanners[e]) return;
+				const o = s();
+				if (!o.user.account) return;
+				if (o.economics.banners.dismissedBanners[e]) return;
 				t(c(e));
 				const d = await Object(n.b)(a(), e);
-				t(o({
+				t(i({
 					subredditId: e,
 					data: d
 				}))
@@ -42,7 +42,7 @@
 				let {
 					apiContext: c
 				} = a;
-				s(i({
+				s(o({
 					subredditId: e,
 					bannerType: t
 				})), Object(n.c)(c(), e, t)
@@ -79,8 +79,8 @@
 				r = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
+				i = s("./src/lib/classNames/index.ts"),
+				o = s("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
 				d = s("./src/reddit/i18n/utils.ts"),
 				l = s("./src/reddit/models/Badge/index.ts"),
 				m = s("./src/reddit/models/Badge/managementPage.ts"),
@@ -112,14 +112,14 @@
 						type: r
 					} = t;
 					const a = e.user.account;
-					if (a && !Object(l.c)(s) && r === m.a.Achievement && i.a[s.id]) {
+					if (a && !Object(l.c)(s) && r === m.a.Achievement && o.a[s.id]) {
 						const t = Object(b.i)(e, {
 							subredditId: n,
 							userId: a.id
 						});
 						if (t) return {
 							complete: parseInt(t.amount),
-							total: i.a[s.id]
+							total: o.a[s.id]
 						}
 					}
 				}
@@ -133,7 +133,7 @@
 					} = Object(l.b)(60, 60, e.badge),
 					c = e.progress;
 				return r.a.createElement("article", {
-					className: Object(o.a)(e.className, {
+					className: Object(i.a)(e.className, {
 						[g.a.fullWidth]: !!e.fullWidth
 					})
 				}, r.a.createElement("div", {
@@ -176,7 +176,7 @@
 			"use strict";
 			var n, r, a, c;
 
-			function o(e) {
+			function i(e) {
 				const {
 					platform: t,
 					playerType: s,
@@ -192,7 +192,7 @@
 				})), s.d(t, "c", (function() {
 					return a
 				})), s.d(t, "d", (function() {
-					return o
+					return i
 				})),
 				function(e) {
 					e.pc = "PC", e.phone = "Phone", e.ps = "PlayStation", e.switch = "Switch", e.xbox = "XBox"
@@ -249,8 +249,8 @@
 				r = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/reselect/es/index.js"),
-				o = s("./node_modules/uuid/v4.js"),
-				i = s.n(o),
+				i = s("./node_modules/uuid/v4.js"),
+				o = s.n(i),
 				d = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/actions/economics/banners/thunkedActions.ts"),
 				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -406,7 +406,7 @@
 						e && this.props.onDismissBanner(e.id)
 					}, this.state = {
 						userWasUnsubscribed: !e.userIsSubscribed
-					}, this.correlationId = i()()
+					}, this.correlationId = o()()
 				}
 				componentDidUpdate(e) {
 					const t = this.props.subreddit;
@@ -490,7 +490,7 @@
 			s.d(t, "a", (function() {
 				return c
 			})), s.d(t, "b", (function() {
-				return o
+				return i
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/lodash/flattenDeep.js"),
@@ -504,7 +504,7 @@
 					karma_150k_badge: 15e4,
 					karma_200k_badge: 2e5
 				},
-				o = new Set(r()(Object.keys(a.a).map(e => Object.keys(a.b).map(t => Object.keys(a.c).map(s => "".concat(s, "_").concat(e, "_").concat(t, "_badge"))))))
+				i = new Set(r()(Object.keys(a.a).map(e => Object.keys(a.b).map(t => Object.keys(a.c).map(s => "".concat(s, "_").concat(e, "_").concat(t, "_badge"))))))
 		},
 		"./src/reddit/components/ScrollAnimation/index.tsx": function(e, t, s) {
 			"use strict";
@@ -516,8 +516,8 @@
 				r = s.n(n),
 				a = s("./node_modules/lodash/throttle.js"),
 				c = s.n(a),
-				o = s("./node_modules/react/index.js"),
-				i = s.n(o),
+				i = s("./node_modules/react/index.js"),
+				o = s.n(i),
 				d = s("./src/lib/fastdom/index.ts"),
 				l = s("./src/reddit/components/Scroller/getDocumentTop.ts"),
 				m = s("./src/reddit/components/Scroller/Simple.tsx");
@@ -560,7 +560,7 @@
 						}
 					}
 				})();
-			class p extends i.a.Component {
+			class p extends o.a.Component {
 				constructor(e) {
 					super(e), this.getContainer = () => this.props.containerRef || document.getElementById("overlayScrollContainer") || document, this.updateScrollPosition = e => this.setState(t => {
 						const s = this.props.scrollRange[0],
@@ -600,14 +600,14 @@
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r, a = s("./src/config.ts"),
 				c = s("./src/reddit/endpoints/governance/requester.ts");
-			async function o(e, t, s, n) {
+			async function i(e, t, s, n) {
 				return Object(c.a)(e, {
 					endpoint: "".concat(a.a.metaUrl, "/storage/").concat(t, "/me/").concat(s),
 					method: "patch",
 					data: n
 				})
 			}
-			async function i(e, t) {
+			async function o(e, t) {
 				const s = await async function(e, t, s) {
 					return Object(c.a)(e, {
 						endpoint: "".concat(a.a.metaUrl, "/storage/").concat(t, "/me/").concat(s),
@@ -617,17 +617,17 @@
 				return s.ok && s.body || {}
 			}
 			async function d(e, t, s, r) {
-					const a = await i(e, t),
+					const a = await o(e, t),
 						c = Object.assign({}, a, {
 							[s]: r
 						});
-					return (await o(e, t, n.UpsellBanners, c)).ok ? c : a
+					return (await i(e, t, n.UpsellBanners, c)).ok ? c : a
 				}! function(e) {
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
 				}(n || (n = {})), s.d(t, "a", (function() {
 					return r
 				})), s.d(t, "b", (function() {
-					return i
+					return o
 				})), s.d(t, "c", (function() {
 					return l
 				})), s.d(t, "e", (function() {
@@ -638,7 +638,7 @@
 				function(e) {
 					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(r || (r = {}));
-			const l = async (e, t, s) => d(e, t, s, !0), m = async (e, t, s) => d(e, t, s, !1), u = (e, t) => o(e, t, n.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
+			const l = async (e, t, s) => d(e, t, s, !0), m = async (e, t, s) => d(e, t, s, !1), u = (e, t) => i(e, t, n.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, s) {
 			"use strict";
@@ -647,9 +647,9 @@
 			})), s.d(t, "c", (function() {
 				return c
 			})), s.d(t, "d", (function() {
-				return o
-			})), s.d(t, "e", (function() {
 				return i
+			})), s.d(t, "e", (function() {
+				return o
 			})), s.d(t, "b", (function() {
 				return d
 			}));
@@ -665,7 +665,7 @@
 				}
 				return e + " Network"
 			}
-			async function o(e, t, s) {
+			async function i(e, t, s) {
 				return Object(a.a)(e, {
 					method: "post",
 					endpoint: "".concat(r.a.metaUrl, "/crypto/").concat(t, "/challenges"),
@@ -675,7 +675,7 @@
 					}
 				})
 			}
-			async function i(e, t, s) {
+			async function o(e, t, s) {
 				return await Object(a.a)(e, {
 					method: "post",
 					endpoint: "".concat(r.a.metaUrl, "/crypto/").concat(t, "/registrations"),
@@ -714,10 +714,10 @@
 				r = s.n(n),
 				a = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/icons/svgs/Admin/index.m.less"),
-				o = s.n(c);
+				i = s.n(c);
 			t.a = e => r.a.createElement("svg", {
-				className: Object(a.a)(e.className, o.a.admin, {
-					[o.a.mEnabled]: e.enabled
+				className: Object(a.a)(e.className, i.a.admin, {
+					[i.a.mEnabled]: e.enabled
 				}),
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
@@ -761,9 +761,9 @@
 				r = s.n(n),
 				a = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/components/ScrollAnimation/index.tsx"),
-				o = s("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
-				i = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.m.less"),
-				d = s.n(i);
+				i = s("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
+				o = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.m.less"),
+				d = s.n(o);
 			const l = [1700, 2400];
 
 			function m(e) {
@@ -777,34 +777,34 @@
 					scrollRange: t
 				}, t => r.a.createElement("img", {
 					className: d.a.jumperBullet,
-					src: Object(o.a)(e.subreddit, "jumper_bullet@2x.png"),
+					src: Object(i.a)(e.subreddit, "jumper_bullet@2x.png"),
 					style: t
 				})), r.a.createElement(c.a, {
 					scrollRange: t
 				}, t => r.a.createElement("img", {
 					className: d.a.jumperArmLeft,
-					src: Object(o.a)(e.subreddit, "jumper_arm_left@2x.png"),
+					src: Object(i.a)(e.subreddit, "jumper_arm_left@2x.png"),
 					style: t
 				})), r.a.createElement(c.a, {
 					scrollRange: t
 				}, t => r.a.createElement("img", {
 					className: d.a.jumperLegLeft,
-					src: Object(o.a)(e.subreddit, "jumper_leg_left@2x.png"),
+					src: Object(i.a)(e.subreddit, "jumper_leg_left@2x.png"),
 					style: t
 				})), r.a.createElement(c.a, {
 					scrollRange: t
 				}, t => r.a.createElement("img", {
 					className: d.a.jumperLegRight,
-					src: Object(o.a)(e.subreddit, "jumper_leg_right@2x.png"),
+					src: Object(i.a)(e.subreddit, "jumper_leg_right@2x.png"),
 					style: t
 				})), r.a.createElement("img", {
 					className: d.a.jumperTorso,
-					src: Object(o.a)(e.subreddit, "jumper_torso@2x.png")
+					src: Object(i.a)(e.subreddit, "jumper_torso@2x.png")
 				}), r.a.createElement(c.a, {
 					scrollRange: t
 				}, t => r.a.createElement("img", {
 					className: d.a.jumperArmRight,
-					src: Object(o.a)(e.subreddit, "jumper_arm_right@2x.png"),
+					src: Object(i.a)(e.subreddit, "jumper_arm_right@2x.png"),
 					style: t
 				}))))
 			}
@@ -829,10 +829,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/platform.ts"),
 				c = s("./src/reddit/selectors/user.ts");
-			const o = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation"]),
-				d = e => o.has(e.toLowerCase()) || i.has(e.toLowerCase()),
-				l = e => o.has((Object(a.e)(e) || "").toLowerCase()) || i.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
+			const i = new Set(["pollstest", "whatssnoo"]),
+				o = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
+				d = e => i.has(e.toLowerCase()) || o.has(e.toLowerCase()),
+				l = e => i.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: c.G,
 					experimentName: n.Z
 				}) === n.gb.Enabled
@@ -882,8 +882,8 @@
 				r = s("./src/reddit/endpoints/governance/crypto.ts"),
 				a = s("./src/reddit/featureFlags/index.ts"),
 				c = s("./src/reddit/selectors/experiments/pollsGA.ts"),
-				o = s("./src/reddit/selectors/postCreations.ts");
-			const i = [],
+				i = s("./src/reddit/selectors/postCreations.ts");
+			const o = [],
 				d = {},
 				l = {
 					filled: "img/communityPoints/default_filled.png",
@@ -922,7 +922,7 @@
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				f = (e, t) => {
 					if (Object(c.b)(e)) {
-						const t = Object(o.g)(e);
+						const t = Object(i.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
 					const s = a.d.spPolls(e) || a.d.spKarmaPoints(e),
@@ -938,7 +938,7 @@
 				},
 				j = (e, t) => {
 					const s = Object(n.m)(e, t);
-					return s && e.subreddits.gov.releaseNotes[s] || i
+					return s && e.subreddits.gov.releaseNotes[s] || o
 				},
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				_ = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
@@ -996,4 +996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.babbb5a2c271bd9ad8b8.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.d1e5bd4b06f71662717d.js.map

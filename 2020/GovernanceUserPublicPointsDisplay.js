@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.306b06425dfc74de1bf8.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.338164a82bb2b620329a.js
+// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -43,9 +43,9 @@
 			})), n.d(t, "b", (function() {
 				return v
 			})), n.d(t, "d", (function() {
-				return w
-			})), n.d(t, "e", (function() {
 				return h
+			})), n.d(t, "e", (function() {
+				return I
 			})), n.d(t, "h", (function() {
 				return T
 			})), n.d(t, "i", (function() {
@@ -62,9 +62,9 @@
 			const x = Object(s.a)(j.b),
 				v = Object(s.a)(j.c),
 				y = Object(s.a)(j.d),
-				w = Object(s.a)(j.e),
-				I = Object(s.a)(j.f),
-				h = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
+				h = Object(s.a)(j.e),
+				w = Object(s.a)(j.f),
+				I = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
 				k = Object(s.a)(j.j),
 				P = Object(s.a)(j.k),
 				N = Object(s.a)(j.l),
@@ -89,7 +89,7 @@
 							const {
 								options: e
 							} = o.body.data.updatePostPollVoteState.poll;
-							n(I({
+							n(w({
 								pollId: a.id,
 								optionId: t,
 								options: e
@@ -517,7 +517,7 @@
 				o = n("./src/reddit/selectors/platform.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			const d = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation"]),
+				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				a = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				u = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
@@ -549,11 +549,11 @@
 			})), n.d(t, "n", (function() {
 				return y
 			})), n.d(t, "k", (function() {
-				return w
-			})), n.d(t, "l", (function() {
-				return I
-			})), n.d(t, "s", (function() {
 				return h
+			})), n.d(t, "l", (function() {
+				return w
+			})), n.d(t, "s", (function() {
+				return I
 			})), n.d(t, "a", (function() {
 				return k
 			})), n.d(t, "f", (function() {
@@ -580,7 +580,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = h(e, {
+					const r = I(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -592,15 +592,15 @@
 					}
 				},
 				b = (e, t) => {
-					const n = w(e, t);
+					const n = h(e, t);
 					if (n) return n.mainHeader
 				},
 				m = (e, t) => {
-					const n = w(e, t);
+					const n = h(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				p = (e, t) => {
-					const n = w(e, t);
+					const n = h(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -633,15 +633,15 @@
 					const n = N(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				I = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				h = (e, t) => {
-					const n = I(e, t);
+				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				I = (e, t) => {
+					const n = w(e, t);
 					return n && n.walletProvider
 				},
 				k = (e, t) => {
-					const n = h(e, t),
-						r = I(e, t);
+					const n = I(e, t),
+						r = w(e, t);
 					return n && n.provider || r && r.provider
 				},
 				P = (e, t) => {
@@ -649,7 +649,7 @@
 					return n === s.a.Ethereum || n === s.a.Rinkeby
 				},
 				N = (e, t) => {
-					const n = h(e, t),
+					const n = I(e, t),
 						r = k(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -669,7 +669,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = h(e, {
+					const r = I(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
@@ -677,10 +677,10 @@
 					}
 				},
 				T = (e, t) => {
-					const n = I(e, t);
+					const n = w(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.306b06425dfc74de1bf8.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.338164a82bb2b620329a.js.map

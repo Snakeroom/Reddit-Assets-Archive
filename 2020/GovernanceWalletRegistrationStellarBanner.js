@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.9bd53c9352063b99770f.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.46257cecce7e7c9ccaa5.js
+// Retrieved at 3/5/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
@@ -125,20 +125,20 @@
 					url: void 0
 				}
 			}
-			async function g(e, t) {
+			async function h(e, t) {
 				return Object(p.a)(e, {
 					endpoint: "".concat(b.a.metaUrl, "/crypto-contacts?userIds=").concat(t, "&providers=stellar"),
 					method: "get"
 				})
 			}
-			const h = (() => {
+			const g = (() => {
 				const e = {};
 				return async function(t, n) {
 					if (e[n]) return e[n].response;
 					let r;
 					const s = new Promise(s => {
 						r = setInterval(async () => {
-							const o = await g(t, n);
+							const o = await h(t, n);
 							if (o.ok && o.body.contacts && o.body.contacts[n]) {
 								const t = o.body.contacts[n].find(e => "stellar" === e.provider);
 								t && t.address && (clearInterval(r), delete e[n], s(!0))
@@ -177,7 +177,7 @@
 							apiContext: e,
 							userId: t
 						} = this.props;
-						t && await h(e(), t) && this.onComplete()
+						t && await g(e(), t) && this.onComplete()
 					}
 				}
 				async componentDidMount() {
@@ -187,7 +187,7 @@
 						userId: n
 					} = this.props;
 					if (n) {
-						const [r, s, o] = await Promise.all([Object(u.b)(e(), t), f(e(), t), g(e(), n)]), a = !!r[u.a.StellarWalletRegistration], c = o.ok && o.body.contacts && o.body.contacts[n] && o.body.contacts[n].find(e => "stellar" === e.provider), i = c && !!c.address;
+						const [r, s, o] = await Promise.all([Object(u.b)(e(), t), f(e(), t), h(e(), n)]), a = !!r[u.a.StellarWalletRegistration], c = o.ok && o.body.contacts && o.body.contacts[n] && o.body.contacts[n].find(e => "stellar" === e.provider), i = c && !!c.address;
 						a || !s.url || i || this.setState({
 							sep7link: s.url
 						})
@@ -359,7 +359,7 @@
 				o = n("./src/reddit/selectors/platform.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const c = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation"]),
+				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: a.G,
@@ -379,9 +379,9 @@
 			})), n.d(t, "g", (function() {
 				return f
 			})), n.d(t, "h", (function() {
-				return g
-			})), n.d(t, "i", (function() {
 				return h
+			})), n.d(t, "i", (function() {
+				return g
 			})), n.d(t, "j", (function() {
 				return v
 			})), n.d(t, "o", (function() {
@@ -449,7 +449,7 @@
 					} : d
 				},
 				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				g = (e, t) => {
+				h = (e, t) => {
 					if (Object(a.b)(e)) {
 						const t = Object(c.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
@@ -462,7 +462,7 @@
 					}
 					return n
 				},
-				h = (e, t) => {
+				g = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
 				v = (e, t) => {
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.9bd53c9352063b99770f.js.map
+//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.46257cecce7e7c9ccaa5.js.map
