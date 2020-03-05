@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.674b1d559d96cef50a16.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.306b06425dfc74de1bf8.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -57,7 +57,7 @@
 			})), n.d(t, "j", (function() {
 				return H
 			})), n.d(t, "c", (function() {
-				return q
+				return L
 			}));
 			const x = Object(s.a)(j.b),
 				v = Object(s.a)(j.c),
@@ -136,7 +136,7 @@
 							text: Object(r.a)(d, "gov.transferSuccess", {
 								amount: Object(o.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(g.p)(s(), {
+								tokenName: Object(g.o)(s(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -153,7 +153,7 @@
 					o.ok ? t(G(o.body)) : t(U({
 						error: o.error
 					}))
-				}, q = (e, t) => async (n, s, o) => {
+				}, L = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: c
 					} = o;
@@ -176,7 +176,7 @@
 						n(Object(i.e)({
 							kind: p.b.SuccessCommunity,
 							text: Object(r.a)(s().user.language, o, {
-								tokenName: Object(g.p)(s(), {
+								tokenName: Object(g.o)(s(), {
 									subredditId: t
 								})
 							})
@@ -193,7 +193,7 @@
 				d = n("./src/config.ts"),
 				i = n("./src/reddit/selectors/gov.ts");
 			const a = Object(c.c)({
-				tokenSymbol: i.q
+				tokenSymbol: i.p
 			});
 			t.a = Object(o.b)(a)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -238,9 +238,9 @@
 				language: O.P,
 				publicWallet: j.i,
 				tippingEnabled: m.d.spTipping,
-				tokenDisplayConversion: j.o,
-				tokenName: j.p,
-				useCrypto: j.k,
+				tokenDisplayConversion: j.n,
+				tokenName: j.o,
+				useCrypto: j.r,
 				userOptedOut: (e, t) => {
 					let {
 						subredditId: n
@@ -468,9 +468,10 @@
 				});
 				return Object(o.b)(r)(e => {
 					const {
-						featureEnabled: r
-					} = e, o = i(e, ["featureEnabled"]);
-					return r ? s.a.createElement(t, o) : void 0 !== n ? s.a.createElement(n, o) : null
+						featureEnabled: r,
+						dispatch: o
+					} = e, c = i(e, ["featureEnabled", "dispatch"]);
+					return r ? s.a.createElement(t, c) : void 0 !== n ? s.a.createElement(n, c) : null
 				})
 			}
 		},
@@ -541,15 +542,15 @@
 				return j
 			})), n.d(t, "j", (function() {
 				return O
-			})), n.d(t, "p", (function() {
-				return x
-			})), n.d(t, "q", (function() {
-				return v
 			})), n.d(t, "o", (function() {
+				return x
+			})), n.d(t, "p", (function() {
+				return v
+			})), n.d(t, "n", (function() {
 				return y
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return w
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "l", (function() {
 				return I
 			})), n.d(t, "s", (function() {
 				return h
@@ -557,11 +558,11 @@
 				return k
 			})), n.d(t, "f", (function() {
 				return P
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return N
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "m", (function() {
 				return _
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "r", (function() {
 				return T
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -682,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.674b1d559d96cef50a16.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.306b06425dfc74de1bf8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.503ce24367a6d2243476.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.f914059b246ab68c0700.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -16,34 +16,35 @@
 			var a = s("./node_modules/history/esm/history.js"),
 				r = s("./node_modules/js-cookie/src/js.cookie.js"),
 				c = s.n(r),
-				i = s("./node_modules/redux-thunk/es/index.js"),
-				n = s("./src/lib/constants/index.ts"),
-				o = s("./src/lib/initializeClient/index.tsx"),
-				d = s("./src/lib/matchRoute/index.ts"),
-				u = s("./src/reduxMiddleware/apiContext.ts"),
-				l = s("./src/chat/actions/apiRequestHeaders.ts"),
-				h = s("./src/chat/actions/platform.ts"),
-				m = s("./src/chat/actions/session.ts"),
-				p = s("./src/chat/actions/user.ts"),
-				b = s("./src/chat/components/PortalContainer/index.tsx"),
-				x = s("./src/chat/customMiddleware/containerSize.ts"),
-				g = s("./src/chat/customMiddleware/heartbeat.ts"),
-				j = s("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				O = s("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				f = s("./src/chat/customMiddleware/sendbirdToken.ts"),
-				C = s("./src/chat/customMiddleware/title.ts"),
-				w = s("./src/chat/customMiddleware/tokenRefresher.ts"),
-				_ = s("./src/chat/customMiddleware/tracking.ts"),
-				v = s("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				R = s("./node_modules/lodash/uniqueId.js"),
-				k = s.n(R),
-				y = s("./src/chat/constants/theme.ts"),
-				M = s("./src/chat/models/Theme/index.ts"),
-				S = s("./src/chat/reducers/meta/index.ts"),
-				D = s("./src/chat/reducers/platform/index.ts"),
-				A = s("./src/chat/reducers/promos/index.ts");
-			const E = (e, t) => (e.chat && e.chat.promos && (t.promos = Object.assign({}, A.a, e.chat.promos)), t),
-				T = (e, t) => {
+				i = s("./node_modules/redux-thunk/lib/index.js"),
+				n = s.n(i),
+				o = s("./src/lib/constants/index.ts"),
+				d = s("./src/lib/initializeClient/index.tsx"),
+				u = s("./src/lib/matchRoute/index.ts"),
+				l = s("./src/reduxMiddleware/apiContext.ts"),
+				h = s("./src/chat/actions/apiRequestHeaders.ts"),
+				m = s("./src/chat/actions/platform.ts"),
+				p = s("./src/chat/actions/session.ts"),
+				b = s("./src/chat/actions/user.ts"),
+				x = s("./src/chat/components/PortalContainer/index.tsx"),
+				g = s("./src/chat/customMiddleware/containerSize.ts"),
+				j = s("./src/chat/customMiddleware/heartbeat.ts"),
+				O = s("./src/chat/customMiddleware/iframeDispatcher.ts"),
+				f = s("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				C = s("./src/chat/customMiddleware/sendbirdToken.ts"),
+				w = s("./src/chat/customMiddleware/title.ts"),
+				_ = s("./src/chat/customMiddleware/tokenRefresher.ts"),
+				v = s("./src/chat/customMiddleware/tracking.ts"),
+				R = s("./src/chat/customMiddleware/unreadMessageCount.ts"),
+				k = s("./node_modules/lodash/uniqueId.js"),
+				y = s.n(k),
+				M = s("./src/chat/constants/theme.ts"),
+				S = s("./src/chat/models/Theme/index.ts"),
+				D = s("./src/chat/reducers/meta/index.ts"),
+				A = s("./src/chat/reducers/platform/index.ts"),
+				E = s("./src/chat/reducers/promos/index.ts");
+			const T = (e, t) => (e.chat && e.chat.promos && (t.promos = Object.assign({}, E.a, e.chat.promos)), t),
+				I = (e, t) => {
 					const {
 						account: s,
 						language: a,
@@ -76,83 +77,83 @@
 						session: n && n.unsafeLoggedOut ? null : n
 					}), t
 				},
-				I = e => (e.meta = Object.assign({}, S.a, {
+				L = e => (e.meta = Object.assign({}, D.a, {
 					isRedesign: !0
 				}), e),
-				L = e => {
+				N = e => {
 					if (e.user && e.user.prefs && e.user.prefs.nightmode) {
 						const {
 							NIGHT: t,
 							REDDIT: s
-						} = y.b, {
+						} = M.b, {
 							nightmode: a
 						} = e.user.prefs, r = a ? t : s;
 						e.themes = {
-							current: M.a[r],
+							current: S.a[r],
 							cached: {}
 						}, e.user.prefs.globalTheme = r
 					}
 					return e
 				},
-				N = (e, t, s) => {
-					const r = k()(),
+				F = (e, t, s) => {
+					const r = y()(),
 						c = Object(a.c)(t.location.pathname, void 0, r),
-						i = Object(d.a)(Object(a.e)(c), s),
-						n = Object(D.b)(D.a, Object(h.e)({
+						i = Object(u.a)(Object(a.e)(c), s),
+						n = Object(A.b)(A.a, Object(m.e)({
 							location: c,
 							action: "PUSH",
 							routeMatch: i
 						}));
 					return e.platform = Object.assign({}, n), e
 				};
-			var F = s("./src/chat/reducers/index.ts"),
-				H = s("./src/chat/routes/index.ts");
+			var H = s("./src/chat/reducers/index.ts"),
+				K = s("./src/chat/routes/index.ts");
 			s.d(t, "default", (function() {
-				return q
+				return z
 			}));
-			const K = Object(u.a)({
+			const q = Object(l.a)({
 				actionDispatchers: {
-					reddaidReceived: p.r,
-					loidReceived: p.q,
-					sessionTrackerReceived: p.u
+					reddaidReceived: b.r,
+					loidReceived: b.q,
+					sessionTrackerReceived: b.u
 				},
 				cookies: c.a,
 				receivedActions: {
-					headersReceived: l.a,
-					loidReceived: p.e,
-					reddaidReceived: p.f,
-					sessionTrackerReceived: p.g,
-					userAuthenticated: m.a,
-					userLoggedOut: m.b,
-					userReauthenticated: m.c
+					headersReceived: h.a,
+					loidReceived: b.e,
+					reddaidReceived: b.f,
+					sessionTrackerReceived: b.g,
+					userAuthenticated: p.a,
+					userLoggedOut: p.b,
+					userReauthenticated: p.c
 				},
-				statsAppName: n.l.Chat
+				statsAppName: o.l.Chat
 			});
 
-			function q(e, t) {
+			function z(e, t) {
 				let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize";
 				const r = document.getElementById("2x-container"),
 					c = document.createElement("div");
-				return r.appendChild(c), Object(o.a)({
-					reducers: F.a,
-					routes: H.a,
-					apiContext: K.apiContext,
-					appFactory: b.a,
-					appName: n.l.Chat,
+				return r.appendChild(c), Object(d.a)({
+					reducers: H.a,
+					routes: K.a,
+					apiContext: q.apiContext,
+					appFactory: x.a,
+					appName: o.l.Chat,
 					history: Object(a.d)({
 						initialEntries: [s],
 						initialIndex: 0
 					}),
-					customMiddleware: [i.a.withExtraArgument({
-						routes: H.a,
-						apiContext: K.apiContext
-					}), K.middleware, w.a, f.a, j.a, g.a, O.a, Object(_.a)(t), x.a, v.a, C.a],
+					customMiddleware: [n.a.withExtraArgument({
+						routes: K.a,
+						apiContext: q.apiContext
+					}), q.middleware, _.a, C.a, O.a, j.a, f.a, Object(v.a)(t), g.a, R.a, w.a],
 					modifyInitialData: t => {
 						let {
 							initialData: s,
 							browserHistory: a
 						} = t;
-						return s = T(e, s), s = I(s), s = L(s), s = E(e, s), s = N(s, a, H.a)
+						return s = I(e, s), s = L(s), s = N(s), s = T(e, s), s = F(s, a, K.a)
 					},
 					preRender: e => {
 						let {
@@ -161,8 +162,8 @@
 							store: r
 						} = e;
 						return t.listen((e, t) => {
-							const c = Object(d.a)(Object(a.e)(e), s);
-							r.dispatch(Object(h.d)(e, t, c)), r.dispatch(Object(p.l)())
+							const c = Object(u.a)(Object(a.e)(e), s);
+							r.dispatch(Object(m.d)(e, t, c)), r.dispatch(Object(b.l)())
 						}), {}
 					},
 					target: c,
@@ -198,4 +199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.503ce24367a6d2243476.js.map
+//# sourceMappingURL=RedesignChat.f914059b246ab68c0700.js.map

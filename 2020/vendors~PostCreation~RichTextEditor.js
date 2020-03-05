@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation~RichTextEditor.27926d85572bee947b13.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation~RichTextEditor.ad9be4301349c0672fd7.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation~RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -28,7 +28,7 @@
 					};
 				try {
 					new Event("test")
-				} catch (l) {
+				} catch (u) {
 					r = function(e) {
 						var t = document.createEvent("Event");
 						return t.initEvent(e, !0, !1), t
@@ -60,12 +60,12 @@
 						}), "vertical" === (t = window.getComputedStyle(e, null)).resize ? e.style.resize = "none" : "both" === t.resize && (e.style.resize = "horizontal"), o = "content-box" === t.boxSizing ? -(parseFloat(t.paddingTop) + parseFloat(t.paddingBottom)) : parseFloat(t.borderTopWidth) + parseFloat(t.borderBottomWidth), isNaN(o) && (o = 0), c()
 					}
 
-					function u(t) {
+					function l(t) {
 						var o = e.style.width;
 						e.style.width = "0px", e.offsetWidth, e.style.width = o, e.style.overflowY = t
 					}
 
-					function l() {
+					function u() {
 						var t = e.style.height,
 							s = function(e) {
 								for (var t = []; e && e.parentNode && e.parentNode instanceof Element;) e.parentNode.scrollTop && t.push({
@@ -83,11 +83,11 @@
 					}
 
 					function c() {
-						l();
+						u();
 						var t = Math.round(parseFloat(e.style.height)),
 							o = window.getComputedStyle(e, null),
 							n = "content-box" === o.boxSizing ? Math.round(parseFloat(o.height)) : e.offsetHeight;
-						if (n !== t ? "hidden" === o.overflowY && (u("scroll"), l(), n = "content-box" === o.boxSizing ? Math.round(parseFloat(window.getComputedStyle(e, null).height)) : e.offsetHeight) : "hidden" !== o.overflowY && (u("hidden"), l(), n = "content-box" === o.boxSizing ? Math.round(parseFloat(window.getComputedStyle(e, null).height)) : e.offsetHeight), a !== n) {
+						if (n !== t ? "hidden" === o.overflowY && (l("scroll"), u(), n = "content-box" === o.boxSizing ? Math.round(parseFloat(window.getComputedStyle(e, null).height)) : e.offsetHeight) : "hidden" !== o.overflowY && (l("hidden"), u(), n = "content-box" === o.boxSizing ? Math.round(parseFloat(window.getComputedStyle(e, null).height)) : e.offsetHeight), a !== n) {
 							a = n;
 							var s = r("autosize:resized");
 							try {
@@ -106,22 +106,22 @@
 					var t = s.get(e);
 					t && t.update()
 				}
-				var u = null;
-				"undefined" == typeof window || "function" != typeof window.getComputedStyle ? ((u = function(e) {
+				var l = null;
+				"undefined" == typeof window || "function" != typeof window.getComputedStyle ? ((l = function(e) {
 					return e
 				}).destroy = function(e) {
 					return e
-				}, u.update = function(e) {
+				}, l.update = function(e) {
 					return e
-				}) : ((u = function(e, t) {
+				}) : ((l = function(e, t) {
 					return e && Array.prototype.forEach.call(e.length ? e : [e], (function(e) {
 						return a(e)
 					})), e
 				}).destroy = function(e) {
 					return e && Array.prototype.forEach.call(e.length ? e : [e], d), e
-				}, u.update = function(e) {
+				}, l.update = function(e) {
 					return e && Array.prototype.forEach.call(e.length ? e : [e], i), e
-				}), t.exports = u
+				}), t.exports = l
 			}) ? n.apply(t, s) : n) || (e.exports = r)
 		},
 		"./node_modules/computed-style/dist/computedStyle.commonjs.js": function(e, t) {
@@ -130,21 +130,6 @@
 					return t.toUpperCase()
 				}))]
 			}
-		},
-		"./node_modules/fbjs/lib/emptyFunction.js": function(e, t, o) {
-			"use strict";
-
-			function n(e) {
-				return function() {
-					return e
-				}
-			}
-			var s = function() {};
-			s.thatReturns = n, s.thatReturnsFalse = n(!1), s.thatReturnsTrue = n(!0), s.thatReturnsNull = n(null), s.thatReturnsThis = function() {
-				return this
-			}, s.thatReturnsArgument = function(e) {
-				return e
-			}, e.exports = s
 		},
 		"./node_modules/line-height/lib/line-height.js": function(e, t, o) {
 			var n = o("./node_modules/computed-style/dist/computedStyle.commonjs.js");
@@ -186,9 +171,9 @@
 					var a = e[s],
 						d = t(a);
 					if (null != d && (void 0 === i ? d == d && !n(d) : o(d, i))) var i = d,
-						u = a
+						l = a
 				}
-				return u
+				return l
 			}
 		},
 		"./node_modules/lodash/_baseFilter.js": function(e, t, o) {
@@ -269,7 +254,7 @@
 				t = (o ? s(e, t, o) : void 0 === t) ? 1 : d(r(t), 0);
 				var i = null == e ? 0 : e.length;
 				if (!i || t < 1) return [];
-				for (var u = 0, l = 0, c = Array(a(i / t)); u < i;) c[l++] = n(e, u, u += t);
+				for (var l = 0, u = 0, c = Array(a(i / t)); l < i;) c[u++] = n(e, l, l += t);
 				return c
 			}
 		},
@@ -312,10 +297,10 @@
 				a = o("./node_modules/lodash/toInteger.js"),
 				d = o("./node_modules/lodash/values.js"),
 				i = Math.max;
-			e.exports = function(e, t, o, u) {
-				e = s(e) ? e : d(e), o = o && !u ? a(o) : 0;
-				var l = e.length;
-				return o < 0 && (o = i(l + o, 0)), r(e) ? o <= l && e.indexOf(t, o) > -1 : !!l && n(e, t, o) > -1
+			e.exports = function(e, t, o, l) {
+				e = s(e) ? e : d(e), o = o && !l ? a(o) : 0;
+				var u = e.length;
+				return o < 0 && (o = i(u + o, 0)), r(e) ? o <= u && e.indexOf(t, o) > -1 : !!u && n(e, t, o) > -1
 			}
 		},
 		"./node_modules/lodash/maxBy.js": function(e, t, o) {
@@ -338,8 +323,8 @@
 				d = o("./node_modules/lodash/isArray.js");
 			e.exports = function(e, t, o) {
 				var i = d(e) ? n : a,
-					u = arguments.length < 3;
-				return i(e, r(t, 4), o, u, s)
+					l = arguments.length < 3;
+				return i(e, r(t, 4), o, l, s)
 			}
 		},
 		"./node_modules/lodash/takeWhile.js": function(e, t, o) {
@@ -359,9 +344,9 @@
 			e.exports = function(e, t, o) {
 				if ((e = d(e)) && (o || void 0 === t)) return e.replace(i, "");
 				if (!e || !(t = n(t))) return e;
-				var u = a(e),
-					l = r(u, a(t)) + 1;
-				return s(u, 0, l).join("")
+				var l = a(e),
+					u = r(l, a(t)) + 1;
+				return s(l, 0, u).join("")
 			}
 		},
 		"./node_modules/react-autosize-textarea/lib/TextareaAutosize.js": function(e, t, o) {
@@ -389,8 +374,8 @@
 				}(),
 				d = c(o("./node_modules/react/index.js")),
 				i = c(o("./node_modules/react-autosize-textarea/node_modules/prop-types/index.js")),
-				u = c(o("./node_modules/autosize/dist/autosize.js")),
-				l = c(o("./node_modules/line-height/lib/line-height.js"));
+				l = c(o("./node_modules/autosize/dist/autosize.js")),
+				u = c(o("./node_modules/line-height/lib/line-height.js"));
 
 			function c(e) {
 				return e && e.__esModule ? e : {
@@ -426,7 +411,7 @@
 						return t ? t.value : o
 					}, n.updateLineHeight = function() {
 						n.setState({
-							lineHeight: (0, l.default)(n.textarea)
+							lineHeight: (0, u.default)(n.textarea)
 						})
 					}, n.onChange = function(e) {
 						n.currentValue = e.target.value, n.props.onChange && n.props.onChange(e)
@@ -441,11 +426,11 @@
 							a = (t.innerRef, h(t, ["onResize", "maxRows", "onChange", "style", "innerRef"])),
 							d = e.state.lineHeight,
 							i = e.saveDOMNodeRef,
-							u = o && d ? d * o : null;
+							l = o && d ? d * o : null;
 						return r({}, a, {
 							saveDOMNodeRef: i,
-							style: u ? r({}, s, {
-								maxHeight: u
+							style: l ? r({}, s, {
+								maxHeight: l
 							}) : s,
 							onChange: n.onChange
 						})
@@ -468,8 +453,8 @@
 							t = this.props,
 							o = t.onResize;
 						"number" == typeof t.maxRows ? (this.updateLineHeight(), setTimeout((function() {
-							return (0, u.default)(e.textarea)
-						}))) : (0, u.default)(this.textarea), o && this.textarea.addEventListener("autosize:resized", this.props.onResize)
+							return (0, l.default)(e.textarea)
+						}))) : (0, l.default)(this.textarea), o && this.textarea.addEventListener("autosize:resized", this.props.onResize)
 					}
 				}, {
 					key: "componentWillUnmount",
@@ -570,15 +555,15 @@
 					a = Object.keys(t);
 				if (r.length !== a.length) return !1;
 				for (var d = Object.prototype.hasOwnProperty.bind(t), i = 0; i < r.length; i++) {
-					var u = r[i];
-					if (!d(u)) return !1;
-					var l = e[u],
-						c = t[u];
-					if (!1 === (s = o ? o.call(n, l, c, u) : void 0) || void 0 === s && l !== c) return !1
+					var l = r[i];
+					if (!d(l)) return !1;
+					var u = e[l],
+						c = t[l];
+					if (!1 === (s = o ? o.call(n, u, c, l) : void 0) || void 0 === s && u !== c) return !1
 				}
 				return !0
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~PostCreation~RichTextEditor.27926d85572bee947b13.js.map
+//# sourceMappingURL=vendors~PostCreation~RichTextEditor.ad9be4301349c0672fd7.js.map

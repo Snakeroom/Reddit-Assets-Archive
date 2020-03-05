@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.ea3dcb5dc35c51d8c2a0.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.fb64ca51711e99227e19.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
@@ -234,7 +234,7 @@
 				}).apply(this, arguments)
 			}
 			const F = Object(l.c)({
-					isPending: R.v
+					isPending: R.u
 				}),
 				Y = Object(d.b)(F, (e, t) => ({
 					closeModal: () => e(v()),
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=UpdateCardModal.ea3dcb5dc35c51d8c2a0.js.map
+//# sourceMappingURL=UpdateCardModal.fb64ca51711e99227e19.js.map

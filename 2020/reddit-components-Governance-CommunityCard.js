@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.4f172c74b814850976c0.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.fe54ca3b38474d709e3a.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -136,7 +136,7 @@
 							text: Object(s.a)(i, "gov.transferSuccess", {
 								amount: Object(o.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(g.p)(r(), {
+								tokenName: Object(g.o)(r(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -176,7 +176,7 @@
 						n(Object(c.e)({
 							kind: p.b.SuccessCommunity,
 							text: Object(s.a)(r().user.language, o, {
-								tokenName: Object(g.p)(r(), {
+								tokenName: Object(g.o)(r(), {
 									subredditId: t
 								})
 							})
@@ -380,8 +380,8 @@
 			const q = Object(i.c)({
 					dropdownIsOpen: Object(D.b)(H),
 					provider: l.a,
-					token: l.r,
-					tokenName: l.p
+					token: l.q,
+					tokenName: l.o
 				}),
 				Z = Object(a.b)(q, (e, t) => ({
 					onGovernanceError: t => {
@@ -574,10 +574,10 @@
 				claimablePointsEnabled: h.d.spClaimablePoints,
 				isLoggedIn: I.G,
 				provider: l.a,
-				tokenName: l.p,
-				tokenDisplayConversion: l.o,
+				tokenName: l.o,
+				tokenDisplayConversion: l.n,
 				language: e => e.user.language,
-				useCrypto: l.k
+				useCrypto: l.r
 			});
 			var de = Object(a.b)(ce, e => ({
 					onFetchMeData: () => e(Object(p.a)()),
@@ -617,7 +617,7 @@
 				ye = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
 				je = n.n(ye);
 			const xe = Object(i.c)({
-				tokenName: l.p,
+				tokenName: l.o,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				wallet: l.g,
 				subreddit: (e, t) => e.subreddits.models[t.subredditId]
@@ -648,7 +648,7 @@
 				i = n("./src/config.ts"),
 				c = n("./src/reddit/selectors/gov.ts");
 			const d = Object(a.c)({
-				tokenSymbol: c.q
+				tokenSymbol: c.p
 			});
 			t.a = Object(o.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -678,7 +678,7 @@
 				m = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				b = n.n(m);
 			const p = Object(a.c)({
-				tokenDisplayConversion: u.o
+				tokenDisplayConversion: u.n
 			});
 			t.a = Object(o.b)(p)((function(e) {
 				return r.a.createElement("div", {
@@ -1091,15 +1091,15 @@
 				return f
 			})), n.d(t, "j", (function() {
 				return y
-			})), n.d(t, "p", (function() {
-				return j
-			})), n.d(t, "q", (function() {
-				return x
 			})), n.d(t, "o", (function() {
+				return j
+			})), n.d(t, "p", (function() {
+				return x
+			})), n.d(t, "n", (function() {
 				return O
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return h
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "l", (function() {
 				return k
 			})), n.d(t, "s", (function() {
 				return C
@@ -1107,11 +1107,11 @@
 				return w
 			})), n.d(t, "f", (function() {
 				return I
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return N
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "m", (function() {
 				return E
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "r", (function() {
 				return _
 			}));
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1232,4 +1232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.4f172c74b814850976c0.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.fe54ca3b38474d709e3a.js.map

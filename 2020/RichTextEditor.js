@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.3f3dc3cb0264b53b27f1.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.d670a5627a556c3dbf07.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1494,41 +1494,38 @@
 				render() {
 					const {
 						props: e
-					} = this;
-					if (!e.draft) return null;
-					const t = e && e.draft && e.draft.rtJson || e.rtJson || void 0,
-						n = {
-							autofocus: e.autofocus || !1,
-							className: e.className,
-							depth: e.depth,
-							disableAutofocus: e.disableAutofocus,
-							draftKey: e.draftKey,
-							draftType: e.draftType,
-							editorElementRef: e.editorElementRef,
-							errorMsgs: e.errorMsgs,
-							initialHeight: this.state.editorHeight,
-							instanceRef: this.getInstanceRef,
-							hasError: e.hasError,
-							language: e.language,
-							modalSeen: this.modalSeen,
-							onCancel: e.onCancel,
-							onEditorResize: this.onEditorResize,
-							onFocus: e.onFocus,
-							onFocusChanged: e.onFocusChanged,
-							onMount: e.onMount,
-							onSubmit: e.onSubmit,
-							onUnmount: e.onUnmount,
-							parentCommentId: e.parentCommentId,
-							pending: e.pending,
-							rtJson: t,
-							mediaMetadata: e.mediaMetadata,
-							isTopLevelComment: e.isTopLevelComment,
-							submitButtonText: e.submitButtonText,
-							userName: e.userName,
-							initialText: e.draft ? e.draft.text : e.initialText || "",
-							onSwitchMode: this.onSwitchMode,
-							showWarningModal: this.state.showWarningModal
-						};
+					} = this, t = e && e.draft && e.draft.rtJson || e.rtJson || void 0, n = {
+						autofocus: e.autofocus || !1,
+						className: e.className,
+						depth: e.depth,
+						disableAutofocus: e.disableAutofocus,
+						draftKey: e.draftKey,
+						draftType: e.draftType,
+						editorElementRef: e.editorElementRef,
+						errorMsgs: e.errorMsgs,
+						initialHeight: this.state.editorHeight,
+						instanceRef: this.getInstanceRef,
+						hasError: e.hasError,
+						language: e.language,
+						modalSeen: this.modalSeen,
+						onCancel: e.onCancel,
+						onEditorResize: this.onEditorResize,
+						onFocus: e.onFocus,
+						onFocusChanged: e.onFocusChanged,
+						onMount: e.onMount,
+						onSubmit: e.onSubmit,
+						onUnmount: e.onUnmount,
+						parentCommentId: e.parentCommentId,
+						pending: e.pending,
+						rtJson: t,
+						mediaMetadata: e.mediaMetadata,
+						isTopLevelComment: e.isTopLevelComment,
+						submitButtonText: e.submitButtonText,
+						userName: e.userName,
+						initialText: e.draft ? e.draft.text : e.initialText || "",
+						onSwitchMode: this.onSwitchMode,
+						showWarningModal: this.state.showWarningModal
+					};
 					return e.contributorRequestPending ? a.a.createElement(Je.a, null) : e.showContributorRequestFlow ? a.a.createElement(E, null) : e.draft.commentMode === Oe.h.RICH_TEXT ? a.a.createElement(Ge, n) : a.a.createElement(m.b, n)
 				}
 			})
@@ -2713,4 +2710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.3f3dc3cb0264b53b27f1.js.map
+//# sourceMappingURL=RichTextEditor.d670a5627a556c3dbf07.js.map

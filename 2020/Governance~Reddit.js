@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4f0346d0ea7d672463d9.js
-// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec6638e05bc9de2b253c.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1423,35 +1423,34 @@
 		"./src/reddit/actions/chat/init.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return a
+				return c
 			})), n.d(t, "a", (function() {
-				return d
+				return a
 			})), n.d(t, "c", (function() {
-				return l
+				return u
 			}));
-			var r = n("./src/chat/customMiddleware/containerSize.ts"),
-				s = n("./src/chat/reducers/subscribe.ts"),
-				o = n("./src/lib/loadWithRetries/index.ts"),
-				i = n("./src/lib/makeActionCreator/index.ts");
+			var r = n("./src/chat/reducers/subscribe.ts"),
+				s = n("./src/lib/loadWithRetries/index.ts"),
+				o = n("./src/lib/makeActionCreator/index.ts");
+			let i;
 			let c;
-			let a;
-			const d = "CHAT__INITED",
-				u = Object(i.a)(d),
-				l = async (e, t, i) => a ? {
-					chatStore: a,
+			const a = "CHAT__INITED",
+				d = Object(o.a)(a),
+				u = async (e, t, o) => c ? {
+					chatStore: c,
 					firstInit: !1
-				} : (a = await (async (e, t, r) => {
-					const s = Date.now(),
-						i = await Object(o.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/initializer.ts"))).then(e => e.default);
-					return (await i(t(), s, r)).store
-				})(0, t, i), Object(r.b)(a), await (async (e, t, r) => {
-					if (!c) {
-						const i = (await Object(o.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/reddit/actions/chat/proxy.ts"))).then(e => e.default))(t, r),
-							a = Object(s.b)(e, i);
-						c = e.subscribe(a)
+				} : (c = await (async (e, t, r) => {
+					const o = Date.now(),
+						i = await Object(s.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/initializer.ts"))).then(e => e.default);
+					return (await i(t(), o, r)).store
+				})(0, t, o), await (async (e, t, o) => {
+					if (!i) {
+						const c = (await Object(s.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/reddit/actions/chat/proxy.ts"))).then(e => e.default))(t, o),
+							a = Object(r.b)(e, c);
+						i = e.subscribe(a)
 					}
-				})(a, e, t), e(u()), {
-					chatStore: a,
+				})(c, e, t), e(d()), {
+					chatStore: c,
 					firstInit: !0
 				})
 		},
@@ -4942,7 +4941,7 @@
 						g = Object(m.P)(d);
 					let _, h;
 					n(Object(a.stripeTokenPending)());
-					const y = Object(f.u)(d);
+					const y = Object(f.v)(d);
 					if (y || (_ = await n(Object(a.validateAndCreateStripeToken)(e)), h = Object(f.r)(d), _)) try {
 						const e = await Object(u.e)({
 							coins: b,
@@ -4979,7 +4978,7 @@
 						E = Object(m.P)(g);
 					let I, S;
 					i(Object(a.stripeTokenPending)());
-					const v = Object(f.u)(g);
+					const v = Object(f.v)(g);
 					if (v || (I = await i(Object(a.validateAndCreateStripeToken)(e)), S = Object(f.r)(g), I)) try {
 						const {
 							gildModalThingId: e,
@@ -20046,14 +20045,15 @@
 			})), n.d(t, "b", (function() {
 				return l
 			}));
-			var r = n("./node_modules/react/index.js"),
+			var r = n("./node_modules/prop-types/index.js"),
 				s = n.n(r),
-				o = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/reddit/selectors/telemetry.ts"),
-				c = n("./src/telemetry/index.ts");
+				o = n("./node_modules/react/index.js"),
+				i = n.n(o),
+				c = n("./src/reddit/selectors/telemetry.ts"),
+				a = n("./src/telemetry/index.ts");
 
-			function a() {
-				return (a = Object.assign || function(e) {
+			function d() {
+				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -20061,30 +20061,39 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const d = s.a.createContext(() => {});
-
-			function u(e) {
-				let {
-					children: t
-				} = e;
-				const n = Object(o.c)(e => e);
-				return s.a.createElement(d.Provider, {
-					value: e => {
-						{
-							const t = e(n);
-							Object(c.a)(Object.assign({}, i.defaults(n), t))
+			class u extends i.a.Component {
+				getChildContext() {
+					return {
+						sendEvent: e => {
+							{
+								const t = this.context.store.getState(),
+									n = e(t);
+								Object(a.a)(Object.assign({}, c.defaults(t), n))
+							}
 						}
 					}
-				}, t ? s.a.Children.only(t) : null)
+				}
+				render() {
+					return this.props.children ? i.a.Children.only(this.props.children) : null
+				}
 			}
 
 			function l(e) {
-				return function(t) {
-					const n = Object(r.useContext)(d);
-					return s.a.createElement(e, a({}, t, {
-						sendEvent: n
-					}))
-				}
+				var t;
+				return (t = class extends i.a.Component {
+					render() {
+						return i.a.createElement(e, d({}, this.props, {
+							sendEvent: this.context.sendEvent
+						}))
+					}
+				}).contextTypes = {
+					sendEvent: s.a.func
+				}, t
+			}
+			u.contextTypes = {
+				store: s.a.object.isRequired
+			}, u.childContextTypes = {
+				sendEvent: s.a.func.isRequired
 			}
 		},
 		"./src/reddit/constants/adEvents.ts": function(e, t, n) {
@@ -34338,7 +34347,7 @@
 		},
 		"./src/reddit/reducers/index.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/redux/es/redux.js"),
+			var r = n("./node_modules/redux/es/index.js"),
 				s = n("./src/reddit/actions/modal.ts");
 			const o = {};
 			var i = function() {
@@ -55892,7 +55901,7 @@
 				return c
 			})), n.d(t, "q", (function() {
 				return a
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "u", (function() {
 				return d
 			})), n.d(t, "e", (function() {
 				return u
@@ -55904,7 +55913,7 @@
 				return p
 			})), n.d(t, "r", (function() {
 				return f
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return m
 			})), n.d(t, "h", (function() {
 				return O
@@ -62047,4 +62056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.4f0346d0ea7d672463d9.js.map
+//# sourceMappingURL=Governance~Reddit.ec6638e05bc9de2b253c.js.map

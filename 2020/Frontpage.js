@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4f2d3b05a975e0b757f1.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c188a3b3e5c32f55551f.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -363,18 +363,13 @@
 				o = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/components/DiscoveryUnit/Layout/index.m.less"),
 				a = s.n(i);
-			class c extends r.a.Component {
-				render() {
-					return r.a.createElement("div", {
-						className: Object(o.a)(a.a.heroContainer, this.props.className)
-					}, r.a.createElement("div", {
-						className: Object(o.a)(a.a.header, this.props.headerClassName)
-					}, this.props.header), r.a.createElement("div", {
-						className: Object(o.a)(this.props.hidePadding ? a.a.bodyHidePadding : a.a.body, this.props.bodyClassName)
-					}, this.props.children))
-				}
-			}
-			t.a = c
+			t.a = e => r.a.createElement("div", {
+				className: Object(o.a)(a.a.heroContainer, e.className)
+			}, r.a.createElement("div", {
+				className: Object(o.a)(a.a.header, e.headerClassName)
+			}, e.header), r.a.createElement("div", {
+				className: Object(o.a)(e.hidePadding ? a.a.bodyHidePadding : a.a.body, e.bodyClassName)
+			}, e.children))
 		},
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
 			e.exports = {
@@ -1342,21 +1337,22 @@
 				className: e.className,
 				header: m,
 				layoutBodyClassName: u.a.layoutBody,
-				showCardView: e.showCardView
-			}, Array.from({
-				length: e.numberOfItems || 6
-			}).map((e, t) => r.a.createElement("div", {
-				className: u.a.post,
-				key: "placeholder-post-".concat(t)
-			}, r.a.createElement("div", {
-				className: Object(o.a)(u.a.desc, u.a.one, p)
-			}), r.a.createElement("div", {
-				className: Object(o.a)(u.a.desc, u.a.two, p)
-			}), r.a.createElement("div", {
-				className: Object(o.a)(u.a.icon, p)
-			}), r.a.createElement("div", {
-				className: Object(o.a)(u.a.name, p)
-			}))))
+				showCardView: e.showCardView,
+				children: Array.from({
+					length: e.numberOfItems || 6
+				}).map(e => r.a.createElement("div", {
+					className: u.a.post,
+					key: "placeholder-post-".concat(e)
+				}, r.a.createElement("div", {
+					className: Object(o.a)(u.a.desc, u.a.one, p)
+				}), r.a.createElement("div", {
+					className: Object(o.a)(u.a.desc, u.a.two, p)
+				}), r.a.createElement("div", {
+					className: Object(o.a)(u.a.icon, p)
+				}), r.a.createElement("div", {
+					className: Object(o.a)(u.a.name, p)
+				})))
+			})
 		},
 		"./src/reddit/components/SubscribeButton/Base.m.less": function(e, t, s) {
 			e.exports = {
@@ -2528,4 +2524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.4f2d3b05a975e0b757f1.js.map
+//# sourceMappingURL=Frontpage.c188a3b3e5c32f55551f.js.map

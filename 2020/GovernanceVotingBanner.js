@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.aa3ed191eab9c6db0d3e.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.474c8ede2f77514f3e28.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -165,7 +165,7 @@
 			const L = Object(i.c)({
 					assets: (e, t) => {
 						const n = Object(m.q)(e, t);
-						if (n) return Object(I.l)(e, {
+						if (n) return Object(I.k)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
@@ -301,9 +301,10 @@
 				});
 				return Object(o.b)(r)(e => {
 					const {
-						featureEnabled: r
-					} = e, o = c(e, ["featureEnabled"]);
-					return r ? s.a.createElement(t, o) : void 0 !== n ? s.a.createElement(n, o) : null
+						featureEnabled: r,
+						dispatch: o
+					} = e, a = c(e, ["featureEnabled", "dispatch"]);
+					return r ? s.a.createElement(t, a) : void 0 !== n ? s.a.createElement(n, a) : null
 				})
 			}
 		},
@@ -365,15 +366,15 @@
 				return f
 			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(t, "p", (function() {
-				return x
-			})), n.d(t, "q", (function() {
-				return w
 			})), n.d(t, "o", (function() {
+				return x
+			})), n.d(t, "p", (function() {
+				return w
+			})), n.d(t, "n", (function() {
 				return j
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return O
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "l", (function() {
 				return y
 			})), n.d(t, "s", (function() {
 				return E
@@ -381,11 +382,11 @@
 				return I
 			})), n.d(t, "f", (function() {
 				return _
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "q", (function() {
 				return C
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "r", (function() {
 				return P
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -506,4 +507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.aa3ed191eab9c6db0d3e.js.map
+//# sourceMappingURL=GovernanceVotingBanner.474c8ede2f77514f3e28.js.map

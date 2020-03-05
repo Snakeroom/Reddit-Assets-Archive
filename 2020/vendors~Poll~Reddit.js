@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/vendors~Poll~Reddit.9fdc501391e63c93af0a.js
-// Retrieved at 2/6/2020, 4:00:15 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Poll~Reddit"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, r, t) {

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.89be3244c0bf962aea10.js
-// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.54ca1b53406b8b0b40f0.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -300,7 +300,7 @@
 				cost: v.d,
 				currentOwnerId: (e, t) => Object(v.e)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(v.e)(e, t).owner,
-				tokenDisplayConversion: v.o
+				tokenDisplayConversion: v.n
 			});
 			var j = Object(s.b)(y)((function(e) {
 					const {
@@ -482,7 +482,7 @@
 				N = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
 				C = r.n(N);
 			const I = Object(o.c)({
-				tokenName: v.p,
+				tokenName: v.o,
 				details: v.b
 			});
 			var T = Object(s.b)(I)((function(e) {
@@ -704,8 +704,8 @@
 				currentOwnerId: (e, t) => Object(v.e)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(v.e)(e, t).owner,
 				details: v.b,
-				unlockedToken: v.r,
-				tokenDisplayConversion: v.o
+				unlockedToken: v.q,
+				tokenDisplayConversion: v.n
 			});
 			var Q, K = Object(s.b)(z, e => ({
 					onError: t => e(Object(H.e)({
@@ -819,7 +819,7 @@
 				c = r("./src/config.ts"),
 				i = r("./src/reddit/selectors/gov.ts");
 			const d = Object(o.c)({
-				tokenSymbol: i.q
+				tokenSymbol: i.p
 			});
 			t.a = Object(s.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -849,7 +849,7 @@
 				m = r("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = r.n(m);
 			const h = Object(o.c)({
-				tokenDisplayConversion: u.o
+				tokenDisplayConversion: u.n
 			});
 			t.a = Object(s.b)(h)((function(e) {
 				return a.a.createElement("div", {
@@ -1280,9 +1280,10 @@
 				});
 				return Object(s.b)(n)(e => {
 					const {
-						featureEnabled: n
-					} = e, s = i(e, ["featureEnabled"]);
-					return n ? a.a.createElement(t, s) : void 0 !== r ? a.a.createElement(r, s) : null
+						featureEnabled: n,
+						dispatch: s
+					} = e, o = i(e, ["featureEnabled", "dispatch"]);
+					return n ? a.a.createElement(t, o) : void 0 !== r ? a.a.createElement(r, o) : null
 				})
 			}
 		},
@@ -1561,15 +1562,15 @@
 				return f
 			})), r.d(t, "j", (function() {
 				return v
-			})), r.d(t, "p", (function() {
-				return g
-			})), r.d(t, "q", (function() {
-				return E
 			})), r.d(t, "o", (function() {
+				return g
+			})), r.d(t, "p", (function() {
+				return E
+			})), r.d(t, "n", (function() {
 				return y
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "k", (function() {
 				return j
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "l", (function() {
 				return w
 			})), r.d(t, "s", (function() {
 				return O
@@ -1577,11 +1578,11 @@
 				return N
 			})), r.d(t, "f", (function() {
 				return C
-			})), r.d(t, "r", (function() {
+			})), r.d(t, "q", (function() {
 				return I
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "m", (function() {
 				return T
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "r", (function() {
 				return P
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1702,4 +1703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.89be3244c0bf962aea10.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.54ca1b53406b8b0b40f0.js.map

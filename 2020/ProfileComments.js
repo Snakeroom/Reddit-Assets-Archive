@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4da3b21efeb4e08b7634.js
-// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.89a43cd4751f270388e9.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5765,40 +5765,36 @@
 		},
 		"./src/reddit/components/ModModeReports/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				r = s("./src/higherOrderComponents/makeAsync.tsx"),
 				a = s("./src/lib/lessComponent.tsx"),
-				i = s("./src/reddit/components/ModModeReports/index.m.less"),
-				c = s.n(i);
-			const {
-				fbt: d
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), l = a.a.div("Text", c.a), m = a.a.div("Placeholder", c.a), p = () => r.a.createElement(m, null, r.a.createElement(l, null, d._("Loading reports…", null, {
-				hk: "4gwdQw"
-			}))), u = Object(n.a)({
-				resolved: {},
-				chunkName: () => "ModerationDropdowns",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!s.m[t]
-				},
-				importAsync: () => s.e("ModerationDropdowns").then(s.bind(null, "./src/reddit/components/ModModeReports/_ModModeReports.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return s(t)
-				},
-				resolve() {
-					return "./src/reddit/components/ModModeReports/_ModModeReports.tsx"
-				}
-			}, {
-				fallback: r.a.createElement(p, null),
-				ssr: !1
-			});
-			t.a = u
+				i = s("./src/lib/loadWithRetries/index.ts"),
+				c = s("./src/reddit/i18n/components.tsx"),
+				d = s("./src/reddit/components/ModModeReports/index.m.less"),
+				l = s.n(d);
+			const m = a.a.div("Text", l.a),
+				p = a.a.div("Placeholder", l.a),
+				u = Object(r.a)({
+					ErrorComponent: e => {
+						let {
+							className: t
+						} = e;
+						return o.a.createElement(p, {
+							className: t
+						})
+					},
+					getComponent: () => Object(i.a)(() => s.e("ModerationDropdowns").then(s.bind(null, "./src/reddit/components/ModModeReports/_ModModeReports.tsx")).then(e => e.default)),
+					LoadingComponent: e => {
+						let {
+							className: t
+						} = e;
+						return o.a.createElement(p, {
+							className: t
+						}, o.a.createElement(m, null, o.a.createElement(c.c, null, "Loading reports…")))
+					}
+				});
+			t.a = e => o.a.createElement(u, e)
 		},
 		"./src/reddit/components/ModToolsFlatlist/breakpoints.m.less": function(e, t, s) {
 			e.exports = {
@@ -6742,7 +6738,7 @@
 		},
 		"./src/reddit/components/PostContainer/index.tsx": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
+			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -6756,8 +6752,29 @@
 				u = s("./src/lib/classNames/index.ts"),
 				b = s("./src/higherOrderComponents/withClickTracking.tsx"),
 				h = s("./src/reddit/components/PostContainer/index.m.less"),
-				x = s.n(h);
-			const g = Object(r.c)({
+				x = s.n(h),
+				g = s("./src/lib/lessComponent.tsx");
+
+			function f() {
+				return (f = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var O = function(e, t) {
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+			const v = g.a.div("WrappedPost", x.a),
+				E = Object(r.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -6797,61 +6814,63 @@
 						})
 					}
 				}),
-				f = Object(d.a)(g),
-				O = e => {
+				C = Object(d.a)(E),
+				y = e => {
 					const t = Object(b.d)(e.target, e.currentTarget),
 						s = Object(b.b)(e.target, e.currentTarget, b.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class v extends o.a.Component {
+			class j extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
 				render() {
-					const {
-						pixelPostHasEnteredView: e,
-						pixelPostHasExitedView: t,
-						afterClickTracking: s,
-						buffering: n,
-						children: r,
-						className: i,
-						continuousViewingStartedAt: d,
-						gildModalIsOpen: m,
-						makePostContainerId: p,
-						playing: b,
-						post: h,
-						onClick: g,
-						onPostContentClick: f,
-						onPostViewable: v,
-						style: E,
-						ref: C
-					} = this.props, y = o.a.createElement("div", {
-						style: E,
-						ref: C,
-						onMouseUp: e => {
-							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
-								this.cancelClick = !1
-							}, 1e3))
-						},
-						onClick: e => {
-							!this.cancelClick && e.button < 2 && (s(() => g && g(e, h))(e), f && O(e) && f(e, h))
-						},
-						className: Object(u.a)(x.a.WrappedPost, i, "Post ".concat(h.id), {
-							promotedlink: h.isSponsored
-						}),
-						id: p ? p(h.id) : h.id,
-						tabIndex: -1
-					}, r, m && o.a.createElement(c.a, null)), j = !!h.media && h.media.type === l.n.VIDEO;
-					return h.isSponsored || j ? o.a.createElement(a.a, {
-						onViewable: e => v(h, e),
-						pixelPostHasEnteredView: t => e(h, t),
-						pixelPostHasExitedView: e => t(h, e),
-						trackVideoMetrics: j && !n && b,
-						continuousViewingStartedAt: d
-					}, y) : y
+					const e = this.props,
+						{
+							pixelPostHasEnteredView: t,
+							pixelPostHasExitedView: s,
+							afterClickTracking: n,
+							buffering: r,
+							children: i,
+							className: d,
+							continuousViewingStartedAt: m,
+							gildModalIsOpen: p,
+							makePostContainerId: b,
+							playing: h,
+							post: x,
+							onClick: g,
+							onPostContentClick: E,
+							onPostViewable: C,
+							isOverlay: j
+						} = e,
+						w = O(e, ["pixelPostHasEnteredView", "pixelPostHasExitedView", "afterClickTracking", "buffering", "children", "className", "continuousViewingStartedAt", "gildModalIsOpen", "makePostContainerId", "playing", "post", "onClick", "onPostContentClick", "onPostViewable", "isOverlay"]),
+						_ = o.a.createElement(v, f({}, w, {
+							onMouseUp: e => {
+								0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
+									this.cancelClick = !1
+								}, 1e3))
+							},
+							onClick: e => {
+								!this.cancelClick && e.button < 2 && (n(() => g && g(e, x))(e), E && y(e) && E(e, x))
+							},
+							className: Object(u.a)(d, "Post ".concat(x.id), {
+								promotedlink: x.isSponsored
+							}),
+							id: b ? b(x.id) : x.id,
+							tabIndex: -1
+						}), i, p && o.a.createElement(c.a, null)),
+						S = !!x.media && x.media.type === l.n.VIDEO;
+					return x.isSponsored || S ? o.a.createElement(a.a, {
+						onViewable: e => C(x, e),
+						pixelPostHasEnteredView: e => t(x, e),
+						pixelPostHasExitedView: e => s(x, e),
+						children: _,
+						trackVideoMetrics: S && !r && h,
+						continuousViewingStartedAt: m
+					}) : _
 				}
 			}
-			t.a = f(Object(b.c)(v))
+			t.a = C(Object(b.c)(j))
 		},
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -12861,4 +12880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.4da3b21efeb4e08b7634.js.map
+//# sourceMappingURL=ProfileComments.89a43cd4751f270388e9.js.map

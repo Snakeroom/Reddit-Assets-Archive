@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.1efb30c205e5d70890fa.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.92ba080d0225e7ab36b6.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"], {
 		"./node_modules/asap/browser-asap.js": function(e, t, n) {
@@ -207,7 +207,7 @@
 						return n && e(t.prototype, n), r && e(t, r), t
 					}
 				}(),
-				o = u(n("./node_modules/dnd-core/node_modules/redux/lib/createStore.js")),
+				o = u(n("./node_modules/redux/lib/createStore.js")),
 				a = u(n("./node_modules/dnd-core/lib/reducers/index.js")),
 				i = function(e) {
 					if (e && e.__esModule) return e;
@@ -1220,128 +1220,6 @@
 				a = (r = o) && r.__esModule ? r : {
 					default: r
 				}
-		},
-		"./node_modules/dnd-core/node_modules/redux/lib/createStore.js": function(e, t, n) {
-			"use strict";
-			t.__esModule = !0, t.ActionTypes = void 0, t.default = function e(t, n, a) {
-				var s;
-				"function" == typeof n && void 0 === a && (a = n, n = void 0);
-				if (void 0 !== a) {
-					if ("function" != typeof a) throw new Error("Expected the enhancer to be a function.");
-					return a(e)(t, n)
-				}
-				if ("function" != typeof t) throw new Error("Expected the reducer to be a function.");
-				var u = t;
-				var d = n;
-				var l = [];
-				var c = l;
-				var f = !1;
-
-				function p() {
-					c === l && (c = l.slice())
-				}
-
-				function h() {
-					return d
-				}
-
-				function g(e) {
-					if ("function" != typeof e) throw new Error("Expected listener to be a function.");
-					var t = !0;
-					return p(), c.push(e),
-						function() {
-							if (t) {
-								t = !1, p();
-								var n = c.indexOf(e);
-								c.splice(n, 1)
-							}
-						}
-				}
-
-				function v(e) {
-					if (!(0, r.default)(e)) throw new Error("Actions must be plain objects. Use custom middleware for async actions.");
-					if (void 0 === e.type) throw new Error('Actions may not have an undefined "type" property. Have you misspelled a constant?');
-					if (f) throw new Error("Reducers may not dispatch actions.");
-					try {
-						f = !0, d = u(d, e)
-					} finally {
-						f = !1
-					}
-					for (var t = l = c, n = 0; n < t.length; n++) {
-						(0, t[n])()
-					}
-					return e
-				}
-				v({
-					type: i.INIT
-				});
-				return s = {
-					dispatch: v,
-					subscribe: g,
-					getState: h,
-					replaceReducer: function(e) {
-						if ("function" != typeof e) throw new Error("Expected the nextReducer to be a function.");
-						u = e, v({
-							type: i.INIT
-						})
-					}
-				}, s[o.default] = function() {
-					var e, t = g;
-					return (e = {
-						subscribe: function(e) {
-							if ("object" != typeof e) throw new TypeError("Expected the observer to be an object.");
-
-							function n() {
-								e.next && e.next(h())
-							}
-							return n(), {
-								unsubscribe: t(n)
-							}
-						}
-					})[o.default] = function() {
-						return this
-					}, e
-				}, s
-			};
-			var r = a(n("./node_modules/lodash/isPlainObject.js")),
-				o = a(n("./node_modules/dnd-core/node_modules/symbol-observable/index.js"));
-
-			function a(e) {
-				return e && e.__esModule ? e : {
-					default: e
-				}
-			}
-			var i = t.ActionTypes = {
-				INIT: "@@redux/INIT"
-			}
-		},
-		"./node_modules/dnd-core/node_modules/symbol-observable/index.js": function(e, t, n) {
-			e.exports = n("./node_modules/dnd-core/node_modules/symbol-observable/lib/index.js")
-		},
-		"./node_modules/dnd-core/node_modules/symbol-observable/lib/index.js": function(e, t, n) {
-			"use strict";
-			(function(e, r) {
-				Object.defineProperty(t, "__esModule", {
-					value: !0
-				});
-				var o, a, i = n("./node_modules/dnd-core/node_modules/symbol-observable/lib/ponyfill.js"),
-					s = (o = i) && o.__esModule ? o : {
-						default: o
-					};
-				a = "undefined" != typeof self ? self : "undefined" != typeof window ? window : void 0 !== e ? e : r;
-				var u = (0, s.default)(a);
-				t.default = u
-			}).call(this, n("./node_modules/webpack/buildin/global.js"), n("./node_modules/webpack/buildin/module.js")(e))
-		},
-		"./node_modules/dnd-core/node_modules/symbol-observable/lib/ponyfill.js": function(e, t, n) {
-			"use strict";
-			Object.defineProperty(t, "__esModule", {
-				value: !0
-			}), t.default = function(e) {
-				var t, n = e.Symbol;
-				"function" == typeof n ? n.observable ? t = n.observable : (t = n("observable"), n.observable = t) : t = "@@observable";
-				return t
-			}
 		},
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_baseCreate.js"),
@@ -3507,7 +3385,101 @@
 		"./node_modules/react-dnd/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, n) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+		},
+		"./node_modules/redux/lib/createStore.js": function(e, t, n) {
+			"use strict";
+			t.__esModule = !0, t.ActionTypes = void 0, t.default = function e(t, n, a) {
+				var s;
+				"function" == typeof n && void 0 === a && (a = n, n = void 0);
+				if (void 0 !== a) {
+					if ("function" != typeof a) throw new Error("Expected the enhancer to be a function.");
+					return a(e)(t, n)
+				}
+				if ("function" != typeof t) throw new Error("Expected the reducer to be a function.");
+				var u = t;
+				var d = n;
+				var l = [];
+				var c = l;
+				var f = !1;
+
+				function p() {
+					c === l && (c = l.slice())
+				}
+
+				function h() {
+					return d
+				}
+
+				function g(e) {
+					if ("function" != typeof e) throw new Error("Expected listener to be a function.");
+					var t = !0;
+					return p(), c.push(e),
+						function() {
+							if (t) {
+								t = !1, p();
+								var n = c.indexOf(e);
+								c.splice(n, 1)
+							}
+						}
+				}
+
+				function v(e) {
+					if (!(0, r.default)(e)) throw new Error("Actions must be plain objects. Use custom middleware for async actions.");
+					if (void 0 === e.type) throw new Error('Actions may not have an undefined "type" property. Have you misspelled a constant?');
+					if (f) throw new Error("Reducers may not dispatch actions.");
+					try {
+						f = !0, d = u(d, e)
+					} finally {
+						f = !1
+					}
+					for (var t = l = c, n = 0; n < t.length; n++) {
+						(0, t[n])()
+					}
+					return e
+				}
+				v({
+					type: i.INIT
+				});
+				return s = {
+					dispatch: v,
+					subscribe: g,
+					getState: h,
+					replaceReducer: function(e) {
+						if ("function" != typeof e) throw new Error("Expected the nextReducer to be a function.");
+						u = e, v({
+							type: i.INIT
+						})
+					}
+				}, s[o.default] = function() {
+					var e, t = g;
+					return (e = {
+						subscribe: function(e) {
+							if ("object" != typeof e) throw new TypeError("Expected the observer to be an object.");
+
+							function n() {
+								e.next && e.next(h())
+							}
+							return n(), {
+								unsubscribe: t(n)
+							}
+						}
+					})[o.default] = function() {
+						return this
+					}, e
+				}, s
+			};
+			var r = a(n("./node_modules/lodash/isPlainObject.js")),
+				o = a(n("./node_modules/symbol-observable/index.js"));
+
+			function a(e) {
+				return e && e.__esModule ? e : {
+					default: e
+				}
+			}
+			var i = t.ActionTypes = {
+				INIT: "@@redux/INIT"
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.1efb30c205e5d70890fa.js.map
+//# sourceMappingURL=vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236.92ba080d0225e7ab36b6.js.map

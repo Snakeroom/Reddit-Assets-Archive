@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsModal.1f8665bb29247f52718b.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsModal.1170761c15b259180030.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsModal"], {
 		"./src/reddit/components/Governance/ClaimPointsModal/index.m.less": function(e, t, a) {
@@ -168,8 +168,8 @@
 			}
 			const g = Object(o.c)({
 				claimablePoints: p.h,
-				tokenDisplayConversion: b.o,
-				tokenName: b.p,
+				tokenDisplayConversion: b.n,
+				tokenName: b.o,
 				username: e => {
 					const t = Object(h.i)(e);
 					return t ? Object(u.f)(t) : ""
@@ -186,7 +186,7 @@
 				d = a("./src/config.ts"),
 				c = a("./src/reddit/selectors/gov.ts");
 			const i = Object(o.c)({
-				tokenSymbol: c.q
+				tokenSymbol: c.p
 			});
 			t.a = Object(r.b)(i)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -198,4 +198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsModal.1f8665bb29247f52718b.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsModal.1170761c15b259180030.js.map

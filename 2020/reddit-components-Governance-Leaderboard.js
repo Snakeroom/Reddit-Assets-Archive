@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.f1393cbe9757ca7a4d5f.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.7665b58bdb9eca5e4ca3.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -55,9 +55,9 @@
 			})), r.d(t, "g", (function() {
 				return B
 			})), r.d(t, "j", (function() {
-				return q
-			})), r.d(t, "c", (function() {
 				return M
+			})), r.d(t, "c", (function() {
+				return R
 			}));
 			const f = Object(n.a)(v.b),
 				x = Object(n.a)(v.c),
@@ -136,7 +136,7 @@
 							text: Object(s.a)(d, "gov.transferSuccess", {
 								amount: Object(o.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(h.p)(n(), {
+								tokenName: Object(h.o)(n(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -144,7 +144,7 @@
 					} else r(k({
 						error: m.error
 					})), Object(O.a)(r, m.error)
-				}, q = e => async (t, r, s) => {
+				}, M = e => async (t, r, s) => {
 					let {
 						apiContext: n
 					} = s;
@@ -153,7 +153,7 @@
 					o.ok ? t(L(o.body)) : t(S({
 						error: o.error
 					}))
-				}, M = (e, t) => async (r, n, o) => {
+				}, R = (e, t) => async (r, n, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -176,7 +176,7 @@
 						r(Object(i.e)({
 							kind: b.b.SuccessCommunity,
 							text: Object(s.a)(n().user.language, o, {
-								tokenName: Object(h.p)(n(), {
+								tokenName: Object(h.o)(n(), {
 									subredditId: t
 								})
 							})
@@ -504,10 +504,10 @@
 					}, a.a.createElement(I.c, null, "enable"))
 				})),
 				B = (r("./node_modules/core-js/modules/es6.symbol.js"), r("./src/reddit/components/OverlayAwareTooltip/index.tsx")),
-				q = r("./src/reddit/controls/Dropdown/index.tsx"),
-				M = r("./src/reddit/controls/Dropdown/Row.tsx"),
-				R = r("./src/reddit/components/Governance/Leaderboard/Distribution/SettingsDropdown/index.m.less"),
-				A = r.n(R);
+				M = r("./src/reddit/controls/Dropdown/index.tsx"),
+				R = r("./src/reddit/controls/Dropdown/Row.tsx"),
+				q = r("./src/reddit/components/Governance/Leaderboard/Distribution/SettingsDropdown/index.m.less"),
+				A = r.n(q);
 
 			function G() {
 				return (G = Object.assign || function(e) {
@@ -534,9 +534,9 @@
 						tokenName: s,
 						subredditId: n
 					} = e, o = F(e, ["className", "language", "tokenName", "subredditId"]);
-					return a.a.createElement(q.a, G({
+					return a.a.createElement(M.a, G({
 						className: Object(_.a)(e.className, A.a.container)
-					}, o), a.a.createElement(M.b, {
+					}, o), a.a.createElement(R.b, {
 						noIcon: !0,
 						className: A.a.row,
 						onClick: e.onOpenOptOutModal
@@ -545,7 +545,7 @@
 					})))
 				})),
 				W = Object(i.c)({
-					tokenName: C.p,
+					tokenName: C.o,
 					language: e => e.user.language
 				});
 			var K = Object(d.b)(W, (e, t) => {
@@ -772,7 +772,7 @@
 					return e.leaderboard.dateRangeSelection[r] || n.Week
 				},
 				Oe = Object(i.c)({
-					tokenName: C.p,
+					tokenName: C.o,
 					currentDateRange: ve,
 					distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 					leaderboard: (e, t) => {
@@ -820,7 +820,7 @@
 				d = r("./src/config.ts"),
 				i = r("./src/reddit/selectors/gov.ts");
 			const c = Object(a.c)({
-				tokenSymbol: i.q
+				tokenSymbol: i.p
 			});
 			t.a = Object(o.b)(c)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -1052,15 +1052,15 @@
 				return v
 			})), r.d(t, "j", (function() {
 				return O
-			})), r.d(t, "p", (function() {
-				return f
-			})), r.d(t, "q", (function() {
-				return x
 			})), r.d(t, "o", (function() {
+				return f
+			})), r.d(t, "p", (function() {
+				return x
+			})), r.d(t, "n", (function() {
 				return j
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "k", (function() {
 				return y
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "l", (function() {
 				return I
 			})), r.d(t, "s", (function() {
 				return w
@@ -1068,11 +1068,11 @@
 				return E
 			})), r.d(t, "f", (function() {
 				return N
-			})), r.d(t, "r", (function() {
+			})), r.d(t, "q", (function() {
 				return C
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "m", (function() {
 				return k
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "r", (function() {
 				return _
 			}));
 			var s = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1193,4 +1193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.f1393cbe9757ca7a4d5f.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.7665b58bdb9eca5e4ca3.js.map

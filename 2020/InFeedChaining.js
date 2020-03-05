@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.2b91c2f92e6be905ef15.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.48a43315acc11e3b68a9.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -446,8 +446,8 @@
 						titleColor: a && a.postTitleColor
 					}), b)
 				},
-				E = t("./src/app/strings/index.ts"),
-				k = t("./src/lib/prettyPrintNumber/index.ts"),
+				k = t("./src/app/strings/index.ts"),
+				E = t("./src/lib/prettyPrintNumber/index.ts"),
 				I = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
 				T = t.n(I);
 			var B = e => {
@@ -460,12 +460,12 @@
 						className: Object(o.a)(T.a.footer, s)
 					}, i.a.createElement("span", {
 						className: T.a.metaText
-					}, Object(E.b)(t, "posts.points.noun", r.score, {
-						count: Object(k.b)(r.score)
+					}, Object(k.b)(t, "posts.points.noun", r.score, {
+						count: Object(E.b)(r.score)
 					})), i.a.createElement("span", {
 						className: T.a.metaText
-					}, Object(E.b)(t, "posts.comments.noun", r.numComments, {
-						count: Object(k.b)(r.numComments)
+					}, Object(k.b)(t, "posts.comments.noun", r.numComments, {
+						count: Object(E.b)(r.numComments)
 					})))
 				},
 				U = t("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -515,19 +515,16 @@
 				V = t("./src/reddit/helpers/styles/mixins/index.m.less"),
 				H = t.n(V),
 				z = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
-				J = t.n(z);
-			t.d(s, "a", (function() {
-				return Q
-			}));
-			var X = function(e, s) {
-				var t = {};
-				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && s.indexOf(r) < 0 && (t[r] = e[r]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var i = 0;
-					for (r = Object.getOwnPropertySymbols(e); i < r.length; i++) s.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (t[r[i]] = e[r[i]])
-				}
-				return t
-			};
+				J = t.n(z),
+				X = function(e, s) {
+					var t = {};
+					for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && s.indexOf(r) < 0 && (t[r] = e[r]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var i = 0;
+						for (r = Object.getOwnPropertySymbols(e); i < r.length; i++) s.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (t[r[i]] = e[r[i]])
+					}
+					return t
+				};
 			const Z = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
 				if (!e) return !1;
 				return (Object(p.e)(e) ? s : t).some(s => s.id === e.id)
@@ -586,12 +583,7 @@
 					}))
 				}
 			}
-			const Y = Object(m.a)(Object(a.a)(K));
-			class Q extends i.a.Component {
-				render() {
-					return i.a.createElement(Y, this.props)
-				}
-			}
+			s.a = Object(m.a)(Object(a.a)(K))
 		},
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -643,9 +635,9 @@
 				_ = t("./src/reddit/selectors/posts.ts"),
 				N = t("./src/reddit/selectors/subscriptions.ts"),
 				P = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx"),
-				E = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/constants.ts"),
-				k = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/index.m.less"),
-				I = t.n(k);
+				k = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/constants.ts"),
+				E = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/index.m.less"),
+				I = t.n(E);
 
 			function T() {
 				return (T = Object.assign || function(e) {
@@ -831,7 +823,7 @@
 						isHidden: !a,
 						isLoading: !1,
 						items: t,
-						itemWidth: E.a,
+						itemWidth: k.a,
 						leftArrowClassName: I.a.arrow,
 						onArrowClick: this.trackArrowClicked,
 						onPostView: this.trackPostViewed,
@@ -1194,9 +1186,7 @@
 						selectedTemplateId: i
 					})
 				}
-			}), {
-				forwardRef: !0
-			});
+			}));
 			s.a = h
 		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, s, t) {
@@ -1213,4 +1203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.2b91c2f92e6be905ef15.js.map
+//# sourceMappingURL=InFeedChaining.48a43315acc11e3b68a9.js.map

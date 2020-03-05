@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.703ce8604481cb9eee56.js
-// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.ad12cef3e2328acda756.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -66,7 +66,7 @@
 				w = s.n(E);
 			const j = Object(d.c)({
 				latestWallet: v.g,
-				tokenDisplayConversion: v.o
+				tokenDisplayConversion: v.n
 			});
 			var N = Object(l.b)(j)((function(e) {
 					const t = e.latestWallet && e.latestWallet.amount || "0";
@@ -303,10 +303,10 @@
 						return Object(A.q)(e, s)
 					},
 					subreddit: B.P,
-					subscriptionCryptoDetails: v.n,
-					tokenDisplayConversion: v.o,
-					tokenName: v.p,
-					unlockedToken: v.r,
+					subscriptionCryptoDetails: v.m,
+					tokenDisplayConversion: v.n,
+					tokenName: v.o,
+					unlockedToken: v.q,
 					wallet: v.g
 				}),
 				$ = Object(l.b)(Q, (e, t) => ({
@@ -334,7 +334,7 @@
 				i = s("./src/config.ts"),
 				c = s("./src/reddit/selectors/gov.ts");
 			const l = Object(o.c)({
-				tokenSymbol: c.q
+				tokenSymbol: c.p
 			});
 			t.a = Object(a.b)(l)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -364,7 +364,7 @@
 				m = s("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = s.n(m);
 			const h = Object(o.c)({
-				tokenDisplayConversion: u.o
+				tokenDisplayConversion: u.n
 			});
 			t.a = Object(a.b)(h)((function(e) {
 				return r.a.createElement("div", {
@@ -981,4 +981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.703ce8604481cb9eee56.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.ad12cef3e2328acda756.js.map

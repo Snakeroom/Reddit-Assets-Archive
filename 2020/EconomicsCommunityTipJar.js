@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.51138d11ae563ea267f1.js
-// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.8e7fe36acc4301143597.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -127,7 +127,7 @@
 			}
 			const P = Object(i.c)({
 				communityTipJarAmount: E.j,
-				subredditAssets: w.l,
+				subredditAssets: w.k,
 				subreddit: O.P,
 				tipsProportions: (e, t) => {
 					let {
@@ -702,15 +702,15 @@
 				return f
 			})), s.d(t, "j", (function() {
 				return g
-			})), s.d(t, "p", (function() {
-				return v
-			})), s.d(t, "q", (function() {
-				return C
 			})), s.d(t, "o", (function() {
+				return v
+			})), s.d(t, "p", (function() {
+				return C
+			})), s.d(t, "n", (function() {
 				return y
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return E
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "l", (function() {
 				return w
 			})), s.d(t, "s", (function() {
 				return O
@@ -718,11 +718,11 @@
 				return j
 			})), s.d(t, "f", (function() {
 				return T
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "q", (function() {
 				return I
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "m", (function() {
 				return N
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "r", (function() {
 				return _
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -843,4 +843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.51138d11ae563ea267f1.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.8e7fe36acc4301143597.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.5c814c4d88c1a5fd1466.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.91fc06db203fd6356d96.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -136,7 +136,7 @@
 							text: Object(n.a)(c, "gov.transferSuccess", {
 								amount: Object(r.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(v.p)(o(), {
+								tokenName: Object(v.o)(o(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -176,7 +176,7 @@
 						s(Object(i.e)({
 							kind: b.b.SuccessCommunity,
 							text: Object(n.a)(o().user.language, r, {
-								tokenName: Object(v.p)(o(), {
+								tokenName: Object(v.o)(o(), {
 									subredditId: t
 								})
 							})
@@ -297,8 +297,8 @@
 				k = s("./src/reddit/components/Poll/ClosedPoll/index.m.less"),
 				_ = s.n(k);
 			const T = Object(i.c)({
-				tokenName: x.p,
-				tokenDisplayConversion: x.o,
+				tokenName: x.o,
+				tokenDisplayConversion: x.n,
 				language: e => e.user.language
 			});
 			var S = Object(c.b)(T)((function(e) {
@@ -338,7 +338,7 @@
 			function M(e) {
 				return "INPUT" === e.tagName
 			}
-			class q extends a.a.Component {
+			class U extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						optionIsSelected: !1
@@ -392,11 +392,11 @@
 					})))
 				}
 			}
-			const U = Object(i.c)({
+			const q = Object(i.c)({
 				language: e => e.user.language,
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Z = Object(c.b)(U)(Object(v.b)(q)),
+			var Z = Object(c.b)(q)(Object(v.b)(U)),
 				z = s("./src/reddit/components/Poll/index.m.less"),
 				F = s.n(z);
 			class K extends a.a.Component {
@@ -526,7 +526,7 @@
 					} = t;
 					return e.polls.results.byVotingPower[s]
 				},
-				tokenDisplayConversion: x.o
+				tokenDisplayConversion: x.n
 			});
 			var ae = Object(c.b)(re)((function(e) {
 					if (!(e.poll && e.poll.decisionThreshold && e.pollResult)) return null;
@@ -563,8 +563,8 @@
 			var de = s("./src/reddit/components/Governance/Proposal/ResultsSelector/index.m.less"),
 				ue = s.n(de);
 			const pe = Object(i.c)({
-				tokenName: x.p,
-				tokenDisplayConversion: x.o,
+				tokenName: x.o,
+				tokenDisplayConversion: x.n,
 				distribution: (e, t) => {
 					let {
 						subredditId: s
@@ -699,7 +699,7 @@
 				c = s("./src/config.ts"),
 				i = s("./src/reddit/selectors/gov.ts");
 			const l = Object(a.c)({
-				tokenSymbol: i.q
+				tokenSymbol: i.p
 			});
 			t.a = Object(r.b)(l)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -996,15 +996,15 @@
 				return h
 			})), s.d(t, "j", (function() {
 				return y
-			})), s.d(t, "p", (function() {
-				return f
-			})), s.d(t, "q", (function() {
-				return x
 			})), s.d(t, "o", (function() {
+				return f
+			})), s.d(t, "p", (function() {
+				return x
+			})), s.d(t, "n", (function() {
 				return O
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return j
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "l", (function() {
 				return C
 			})), s.d(t, "s", (function() {
 				return I
@@ -1012,11 +1012,11 @@
 				return N
 			})), s.d(t, "f", (function() {
 				return w
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "q", (function() {
 				return E
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "m", (function() {
 				return P
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "r", (function() {
 				return k
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1137,4 +1137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.5c814c4d88c1a5fd1466.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.91fc06db203fd6356d96.js.map

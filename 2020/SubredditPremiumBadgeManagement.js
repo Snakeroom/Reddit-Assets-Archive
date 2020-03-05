@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.cabc9e759bc3b40c5ca7.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.eb06edfc9b7a80042cfd.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -1982,9 +1982,10 @@
 				});
 				return Object(c.b)(s)(e => {
 					const {
-						featureEnabled: s
-					} = e, c = i(e, ["featureEnabled"]);
-					return s ? n.a.createElement(t, c) : void 0 !== a ? n.a.createElement(a, c) : null
+						featureEnabled: s,
+						dispatch: c
+					} = e, d = i(e, ["featureEnabled", "dispatch"]);
+					return s ? n.a.createElement(t, d) : void 0 !== a ? n.a.createElement(a, d) : null
 				})
 			}
 		},
@@ -2210,15 +2211,15 @@
 				return v
 			})), a.d(t, "j", (function() {
 				return y
-			})), a.d(t, "p", (function() {
-				return B
-			})), a.d(t, "q", (function() {
-				return f
 			})), a.d(t, "o", (function() {
+				return B
+			})), a.d(t, "p", (function() {
+				return f
+			})), a.d(t, "n", (function() {
 				return x
-			})), a.d(t, "l", (function() {
+			})), a.d(t, "k", (function() {
 				return E
-			})), a.d(t, "m", (function() {
+			})), a.d(t, "l", (function() {
 				return j
 			})), a.d(t, "s", (function() {
 				return O
@@ -2226,11 +2227,11 @@
 				return C
 			})), a.d(t, "f", (function() {
 				return w
-			})), a.d(t, "r", (function() {
+			})), a.d(t, "q", (function() {
 				return N
-			})), a.d(t, "n", (function() {
+			})), a.d(t, "m", (function() {
 				return _
-			})), a.d(t, "k", (function() {
+			})), a.d(t, "r", (function() {
 				return S
 			}));
 			var s = a("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -2351,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.cabc9e759bc3b40c5ca7.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.eb06edfc9b7a80042cfd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.41555c0aa6038e9f91fa.js
-// Retrieved at 3/4/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.75a772192012196b39cf.js
+// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, s) {
@@ -22,7 +22,7 @@
 				o = s("./src/config.ts"),
 				c = s("./src/reddit/selectors/gov.ts");
 			const d = Object(i.c)({
-				tokenSymbol: c.q
+				tokenSymbol: c.p
 			});
 			t.a = Object(a.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -701,15 +701,15 @@
 				return x
 			})), s.d(t, "j", (function() {
 				return g
-			})), s.d(t, "p", (function() {
-				return v
-			})), s.d(t, "q", (function() {
-				return E
 			})), s.d(t, "o", (function() {
+				return v
+			})), s.d(t, "p", (function() {
+				return E
+			})), s.d(t, "n", (function() {
 				return C
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return w
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "l", (function() {
 				return N
 			})), s.d(t, "s", (function() {
 				return j
@@ -717,11 +717,11 @@
 				return y
 			})), s.d(t, "f", (function() {
 				return O
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "q", (function() {
 				return I
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "m", (function() {
 				return _
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "r", (function() {
 				return T
 			}));
 			var r = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -842,4 +842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.41555c0aa6038e9f91fa.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.75a772192012196b39cf.js.map
