@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4dff827c3d544a3fc6e8.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.2af612081fcc160e7b2e.js
+// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6040,30 +6040,28 @@
 				h = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				x = s("./src/reddit/selectors/comments.ts"),
 				g = s("./src/reddit/selectors/communityAwards.ts"),
-				f = s("./src/reddit/selectors/experiments/goldAwardedCommentHighlight.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				v = s("./src/reddit/components/OverviewChronoComment/index.m.less"),
-				E = s.n(v);
-			const C = Object(a.b)(() => Object(i.c)({
+				f = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/components/OverviewChronoComment/index.m.less"),
+				v = s.n(O);
+			const E = Object(a.b)(() => Object(i.c)({
 				comment: x.n,
-				isCommentHighlightExperiment: (e, t) => {
-					if (!Object(f.a)(e)) return !1;
+				isHighlighted: (e, t) => {
 					const s = Object(x.n)(e, t);
 					return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 						const s = Object(g.a)(e, t);
 						return s && s.coinPrice >= c.g
 					})
 				},
-				isNightmodeOn: O.Q
+				isNightmodeOn: f.Q
 			}), e => ({
 				openPost: t => e(Object(m.H)(t))
 			}));
-			var y = Object(l.a)(C(e => {
+			var C = Object(l.a)(E(e => {
 					const {
 						comment: t,
 						commentId: s,
 						first: n,
-						isCommentHighlightExperiment: r,
+						isHighlighted: r,
 						isNightmodeOn: a,
 						last: i,
 						openPost: c,
@@ -6085,21 +6083,21 @@
 							background: Object(h.e)(e)
 						}
 					}, o.a.createElement("div", {
-						className: Object(d.a)(E.a.commentOuterWrapper, {
-							[E.a.isLast]: i,
-							[E.a.isAwarded]: r,
-							[E.a.isNightmodeOn]: a
+						className: Object(d.a)(v.a.commentOuterWrapper, {
+							[v.a.isLast]: i,
+							[v.a.isAwarded]: r,
+							[v.a.isNightmodeOn]: a
 						})
 					}, o.a.createElement("div", {
-						className: Object(d.a)(E.a.commentWrapper, {
-							[E.a.isFirst]: n
+						className: Object(d.a)(v.a.commentWrapper, {
+							[v.a.isFirst]: n
 						})
 					}, o.a.createElement("div", {
-						className: E.a.commentSeparator
+						className: v.a.commentSeparator
 					}), t.parentId && o.a.createElement("div", {
-						className: E.a.commentSeparator
+						className: v.a.commentSeparator
 					}), o.a.createElement("div", {
-						className: E.a.commentContentWrapper
+						className: v.a.commentContentWrapper
 					}, o.a.createElement(u.a, {
 						commentId: s,
 						commentsPageKey: "profileOverviewPageKey",
@@ -6108,15 +6106,15 @@
 						isExpanded: !0
 					})))))
 				})),
-				j = s("./src/reddit/components/OverviewCommentPost/index.tsx"),
-				w = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				_ = s("./src/reddit/helpers/isComment.ts"),
-				S = s("./src/reddit/components/OverviewChronoList/ListItem.m.less"),
-				k = s.n(S),
-				I = s("./src/lib/lessComponent.tsx");
+				y = s("./src/reddit/components/OverviewCommentPost/index.tsx"),
+				j = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				w = s("./src/reddit/helpers/isComment.ts"),
+				_ = s("./src/reddit/components/OverviewChronoList/ListItem.m.less"),
+				S = s.n(_),
+				k = s("./src/lib/lessComponent.tsx");
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -6124,7 +6122,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var T = function(e, t) {
+			var P = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -6133,16 +6131,16 @@
 				}
 				return s
 			};
-			const N = Object(w.t)({
-					currentProfileName: w.h,
-					isCommentsPage: w.w,
-					isCommentPermalink: w.v,
-					isProfilePostListing: w.H,
+			const T = Object(j.t)({
+					currentProfileName: j.h,
+					isCommentsPage: j.w,
+					isCommentPermalink: j.v,
+					isProfilePostListing: j.H,
 					pageLayer: e => e
 				}),
-				L = I.a.wrapped(j.a, "OverviewCommentPost", k.a),
-				M = I.a.wrapped(r.default, "ClassicPost", k.a);
-			t.a = N(e => {
+				N = k.a.wrapped(y.a, "OverviewCommentPost", S.a),
+				L = k.a.wrapped(r.default, "ClassicPost", S.a);
+			t.a = T(e => {
 				const {
 					itemId: t,
 					isFirstInCommentList: s,
@@ -6150,21 +6148,21 @@
 					allowModToolsUnderComments: r,
 					height: a,
 					width: i
-				} = e, c = T(e, ["itemId", "isFirstInCommentList", "isLastInCommentList", "allowModToolsUnderComments", "height", "width"]);
-				return Object(_.a)(t) ? s ? o.a.createElement(o.a.Fragment, null, o.a.createElement(L, P({}, c, {
+				} = e, c = P(e, ["itemId", "isFirstInCommentList", "isLastInCommentList", "allowModToolsUnderComments", "height", "width"]);
+				return Object(w.a)(t) ? s ? o.a.createElement(o.a.Fragment, null, o.a.createElement(N, I({}, c, {
 					availableWidth: i,
 					commentId: t
-				})), o.a.createElement(y, {
+				})), o.a.createElement(C, {
 					commentId: t,
 					first: s,
 					last: n,
 					showModTools: r
-				})) : o.a.createElement(y, {
+				})) : o.a.createElement(C, {
 					commentId: t,
 					first: s,
 					last: n,
 					showModTools: r
-				}) : o.a.createElement(M, P({}, c, {
+				}) : o.a.createElement(L, I({}, c, {
 					inSubredditOrProfile: !1
 				}))
 			})
@@ -6371,42 +6369,40 @@
 				h = s("./src/reddit/helpers/getClickInfo.ts"),
 				x = s("./src/reddit/selectors/comments.ts"),
 				g = s("./src/reddit/selectors/communityAwards.ts"),
-				f = s("./src/reddit/selectors/experiments/goldAwardedCommentHighlight.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				v = s("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.m.less"),
-				E = s.n(v);
-			const C = m.a.div("ProfileOwnerCommentWrapper", E.a),
-				y = m.a.div("CommentContentWrapper", E.a),
-				j = m.a.div("Wrapper", E.a),
-				w = m.a.div("CommentSeparator", E.a),
-				_ = Object(i.b)(() => Object(c.c)({
+				f = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.m.less"),
+				v = s.n(O);
+			const E = m.a.div("ProfileOwnerCommentWrapper", v.a),
+				C = m.a.div("CommentContentWrapper", v.a),
+				y = m.a.div("Wrapper", v.a),
+				j = m.a.div("CommentSeparator", v.a),
+				w = Object(i.b)(() => Object(c.c)({
 					comment: (e, t) => Object(x.n)(e, t),
-					isCommentHighlightExperiment: (e, t) => {
-						if (!Object(f.a)(e)) return !1;
+					isHighlighted: (e, t) => {
 						const s = Object(x.n)(e, t);
 						return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 							const s = Object(g.a)(e, t);
 							return s && s.coinPrice >= d.g
 						})
 					},
-					isNightmodeOn: O.Q
+					isNightmodeOn: f.Q
 				}), e => ({
 					openPost: t => e(Object(b.H)(t))
 				}));
-			class S extends a.a.Component {
+			class _ extends a.a.Component {
 				render() {
 					const {
 						comment: e,
 						commentId: t,
 						depth: s,
 						openPost: n,
-						isCommentHighlightExperiment: r,
+						isHighlighted: r,
 						isFirst: i,
 						isLast: c,
 						isNightmodeOn: d,
 						profileName: m,
 						showModTools: u
-					} = this.props, b = m === e.author ? k : I;
+					} = this.props, b = m === e.author ? S : k;
 					return a.a.createElement(p.a, {
 						comment: e,
 						onClick: (e, t) => {
@@ -6418,20 +6414,20 @@
 								}
 							}), e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
 						}
-					}, a.a.createElement(j, {
+					}, a.a.createElement(y, {
 						className: Object(l.a)({
-							[E.a.isFirst]: i,
-							[E.a.isLast]: c,
-							[E.a.isAwarded]: r,
-							[E.a.isNightmodeOn]: d
+							[v.a.isFirst]: i,
+							[v.a.isLast]: c,
+							[v.a.isAwarded]: r,
+							[v.a.isNightmodeOn]: d
 						})
-					}, o()(s + 1, e => a.a.createElement(w, {
+					}, o()(s + 1, e => a.a.createElement(j, {
 						key: e
-					})), a.a.createElement(y, null, b(t, m, u))))
+					})), a.a.createElement(C, null, b(t, m, u))))
 				}
 			}
-			const k = (e, t, s) => a.a.createElement(C, null, I(e, t, s, !0, !0)),
-				I = function(e, t, s) {
+			const S = (e, t, s) => a.a.createElement(E, null, k(e, t, s, !0, !0)),
+				k = function(e, t, s) {
 					let n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
 						o = arguments.length > 4 ? arguments[4] : void 0;
 					return a.a.createElement(u.a, {
@@ -6442,7 +6438,7 @@
 						isExpanded: !!o
 					})
 				};
-			t.a = _(S)
+			t.a = w(_)
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -12835,22 +12831,6 @@
 					return n && n.endCursor || null
 				}
 		},
-		"./src/reddit/selectors/experiments/goldAwardedCommentHighlight.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return a
-			}));
-			var n = s("./src/reddit/constants/experiments.ts"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				r = s("./src/reddit/selectors/user.ts");
-			const a = e => !!(e => {
-				const t = Object(o.c)(e, {
-					experimentEligibilitySelector: e => Object(r.G)(e),
-					experimentName: n.H
-				});
-				return Object(n.Ob)(t) ? void 0 : t
-			})(e)
-		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -12861,9 +12841,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.hb
+					experimentName: n.gb
 				});
-				return Object(n.Ob)(t) ? void 0 : t
+				return Object(n.Nb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -12880,4 +12860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.4dff827c3d544a3fc6e8.js.map
+//# sourceMappingURL=ProfileComments.2af612081fcc160e7b2e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.029fe34f853cf10ef809.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.a8c85e043268fa52fb95.js
+// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -404,8 +404,8 @@
 				i = e => d.has(e.toLowerCase()) || o.has(e.toLowerCase()),
 				l = e => d.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.bb
-				}) === n.ib.Enabled
+					experimentName: n.ab
+				}) === n.hb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -566,4 +566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.029fe34f853cf10ef809.js.map
+//# sourceMappingURL=BadgePurchaseModal.a8c85e043268fa52fb95.js.map

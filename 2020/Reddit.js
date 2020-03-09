@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.214c15991e3c67376a09.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e3a513e35b486f516ef0.js
+// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4206,9 +4206,9 @@
 				Gr = s("./src/reddit/helpers/isArrayEqual.ts"),
 				qr = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Wr = s("./src/reddit/selectors/experiments/trending.ts");
-			const Vr = e => Object(Q.D)(e) || A.Ib.Treatment1 === Object(W.c)(e, {
+			const Vr = e => Object(Q.D)(e) || A.Hb.Treatment1 === Object(W.c)(e, {
 				experimentEligibilitySelector: W.a,
-				experimentName: A.Fb
+				experimentName: A.Eb
 			});
 			var Qr = s("./src/reddit/selectors/searchResults.ts"),
 				zr = s("./src/reddit/selectors/tooltip.ts"),
@@ -5015,9 +5015,9 @@
 					shouldRequestCoinSale: e => {
 						const t = Object(W.c)(e, {
 							experimentEligibilitySelector: Q.G,
-							experimentName: A.K
+							experimentName: A.J
 						});
-						return !!t && !Object(A.Ob)(t)
+						return !!t && !Object(A.Nb)(t)
 					}
 				});
 			class mi extends l.a.Component {
@@ -10020,8 +10020,8 @@
 			const mn = {
 					displayDelay: 15,
 					displayOnRoutes: [C.zb.SUBREDDIT, C.zb.COMMENTS],
-					experimentName: cn.Q,
-					experimentVariant: cn.W.On,
+					experimentName: cn.P,
+					experimentVariant: cn.V.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -11700,9 +11700,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.D)(e) || !(n.Hb.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.D)(e) || !(n.Gb.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Eb
+				experimentName: n.Db
 			}))
 		},
 		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
@@ -11714,9 +11714,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Kb.All === Object(a.c)(e, {
+			const r = e => n.Jb.All === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Jb
+					experimentName: n.Ib
 				}),
 				o = ["52weeksofcooking", "advancedrunning", "amateur_boxing", "animation", "bathandbodyworks", "bbq", "beer", "beerporn", "blacksmith", "boostedboards", "campinggear", "chipotle", "cookingforbeginners", "decidingtobebetter", "declutter", "dermatology", "dominos", "eczema", "engagementrings", "family", "fermentation", "findfashion", "fitbit", "fixit", "fondanthate", "foodhacks", "glossier", "healthyfood", "homegym", "hotdogs", "hotpeppers", "hotsauce", "howto", "instantpot", "interiordesign", "internetparents", "jeffreestarcosmetics", "knifemaking", "kombucha", "love", "makeupflatlays", "makeuplounge", "malegrooming", "mead", "moissanite", "mommit", "muaythai", "nanny", "narcissisticparents", "outdoors", "ramen", "rawdenim", "recipes", "redwingshoes", "rowing", "sarahsnark", "skincare_addiction", "skookum", "slowcooking", "spicy", "starbucksbaristas", "steak", "swimming", "tacobell", "talesfromthepizzaguy", "traderjoes", "triathlon", "veganfoodporn", "veganrecipes", "weddingsunder10k", "whiskeytribe", "whiskyporn", "wicked_edge", "womenshealth", "xxketo4u2", "yeezys"]
 		},
@@ -11846,4 +11846,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Poll~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.214c15991e3c67376a09.js.map
+//# sourceMappingURL=Reddit.e3a513e35b486f516ef0.js.map
