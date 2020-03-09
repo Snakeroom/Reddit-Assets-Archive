@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9183241afafbbf60fc4e.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0692a9a22b4d90621b6b.js
+// Retrieved at 3/9/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1178,139 +1178,134 @@
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "m", (function() {
-				return c
+				return a
 			})), s.d(t, "a", (function() {
-				return d
+				return c
 			})), s.d(t, "b", (function() {
-				return l
+				return d
 			})), s.d(t, "k", (function() {
-				return m
+				return l
 			})), s.d(t, "l", (function() {
-				return u
+				return m
 			})), s.d(t, "j", (function() {
-				return h
+				return u
 			})), s.d(t, "f", (function() {
-				return p
+				return h
 			})), s.d(t, "g", (function() {
-				return b
+				return p
 			})), s.d(t, "d", (function() {
-				return v
+				return b
 			})), s.d(t, "e", (function() {
-				return g
+				return v
 			})), s.d(t, "c", (function() {
-				return w
+				return g
 			})), s.d(t, "i", (function() {
-				return S
+				return w
 			})), s.d(t, "h", (function() {
-				return f
+				return S
 			}));
 			var r = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				n = s("./src/reddit/selectors/telemetry.ts");
-			const i = e => {
-					switch (e) {
-						case r.a.LIVE:
-							return "stream_live";
-						case r.a.VOD:
-							return "stream_vod";
-						case r.a.UNAVAILABLE:
-							return "stream_unavailable";
-						default:
-							return
-					}
-				},
-				o = (e, t) => {
+			const i = (e, t) => {
 					if (t) {
-						const s = Object(r.h)(e, {
-							streamIdFromPath: t.post.id
-						});
+						const s = n.media(e, t.post.id);
+						if (s) {
+							s.streamPublicId = t.stream.stream_id;
+							const n = Object(r.h)(e, {
+								streamIdFromPath: t.post.id
+							});
+							n === r.a.LIVE ? s.type = "stream_live" : n === r.a.VOD ? s.type = "stream_vod" : n === r.a.UNAVAILABLE && (s.type = "stream_unavailable")
+						}
 						return {
 							post: n.post(e, t.post.id),
-							media: Object.assign({}, n.media(e, t.post.id, void 0, t), {
-								type: i(s)
-							})
+							media: s,
+							subreddit: n.subreddit(e)
 						}
 					}
+					return {
+						subreddit: n.subreddit(e)
+					}
 				},
-				a = e => ({
+				o = e => ({
 					correlationId: e.publicAccessNetwork.theaterSettings.correlationId
 				}),
-				c = () => e => ({
+				a = () => e => Object.assign({
 					source: "stream_du",
 					action: "view",
 					noun: "stream_du"
-				}),
-				d = () => e => ({
+				}, i(e)),
+				c = () => e => Object.assign({
 					source: "stream_du",
 					action: "click",
 					noun: "show_less"
-				}),
-				l = (e, t) => s => Object.assign({
+				}, i(e)),
+				d = (e, t) => s => Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "enlarge",
+					noun: "rpan",
 					actionInfo: {
 						position: t || 0
 					}
-				}, o(s, e)),
-				m = e => t => Object.assign({
+				}, i(s, e)),
+				l = e => t => Object.assign({
 					source: "stream_player",
 					action: "fail",
 					noun: "stream"
-				}, a(t), e && Object.assign({}, o(t, e))),
-				u = e => t => Object.assign({
+				}, o(t), e && Object.assign({}, i(t, e))),
+				m = e => t => Object.assign({
 					source: "stream_player",
 					action: "play",
 					noun: "stream"
-				}, a(t), o(t, e)),
-				h = e => t => Object.assign({
+				}, o(t), i(t, e)),
+				u = e => t => Object.assign({
 					source: "stream_player",
 					action: "complete",
 					noun: "stream"
-				}, a(t), o(t, e)),
-				p = e => t => Object.assign({
+				}, o(t), i(t, e)),
+				h = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "share"
-				}, a(t), o(t, e)),
-				b = e => t => Object.assign({
+				}, o(t), i(t, e)),
+				p = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "upvote"
-				}, a(t), o(t, e)),
-				v = e => t => Object.assign({
+				}, o(t), i(t, e)),
+				b = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote"
-				}, a(t), o(t, e)),
-				g = e => t => Object.assign({
+				}, o(t), i(t, e)),
+				v = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "report"
-				}, a(t), o(t, e)),
-				w = e => t => {
+				}, o(t), i(t, e)),
+				g = e => t => {
 					const s = Object(r.k)(t, e);
 					return Object.assign({
 						source: "stream_player",
 						action: "click",
 						noun: "chat"
-					}, o(t, s))
+					}, i(t, s))
 				},
-				S = e => t => {
+				w = e => t => {
 					const s = Object(r.k)(t, e);
 					return Object.assign({
 						source: "stream_player",
 						action: "click",
 						noun: "send_chat"
-					}, o(t, s))
+					}, i(t, s))
 				},
-				f = e => t => ({
+				S = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
 					targetSubreddit: {
 						name: e.name.toLowerCase()
 					}
-				})
+				}, i(s, t))
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2510,7 +2505,7 @@
 						const t = this.hlsVideoApi;
 						t && (e || t.setVolume(this.props.volume))
 					}, this.goToSubreddit = e => {
-						this.props.sendEvent(Object(F.h)(e)), this.props.onNavigation(e.path)
+						this.props.sendEvent(Object(F.h)(e, this.props.currentStream)), this.props.onNavigation(e.path)
 					}, this.isCurrentStreamWatchable = () => this.props.playbackState === J.a.LIVE || this.props.playbackState === J.a.VOD, this.state = {
 						isUnavailableVideoJustFinished: !1,
 						isVodStreamJustFinished: !1,
@@ -3207,4 +3202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.9183241afafbbf60fc4e.js.map
+//# sourceMappingURL=PublicAccessNetwork.0692a9a22b4d90621b6b.js.map

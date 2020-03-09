@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f643c353ef983c615e0b.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7d0fb72b0f435979a518.js
+// Retrieved at 3/9/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -60702,23 +60702,23 @@
 						links: n.map(t => e.comments.models[t].id)
 					} : null
 				},
-				Ce = (e, t, n, r) => {
-					const s = e.posts.models[t];
-					if (void 0 === s) return null;
-					const o = {};
-					if (o.id = s.postId, s.media && "v.redd.it" === s.domain) {
-						const e = Object(k.z)(s.media);
-						e && (o.id = e)
+				Ce = (e, t, n) => {
+					const r = e.posts.models[t];
+					if (void 0 === r) return null;
+					const s = {};
+					if (s.id = r.postId, r.media && "v.redd.it" === r.domain) {
+						const e = Object(k.z)(r.media);
+						e && (s.id = e)
 					}
-					if (n) o.loadTime = n;
+					if (n) s.loadTime = n;
 					else {
 						const n = e.posts.video.loadTimes[t];
-						n && n.start && n.playable && (o.loadTime = Math.round(n.playable - n.start))
+						n && n.start && n.playable && (s.loadTime = Math.round(n.playable - n.start))
 					}
-					const i = e.posts.video.metadata[t];
-					i && i.id === t && (o.height = i.originalHeight, o.width = i.originalWidth, o.orientation = o.height > o.width ? "portrait" : "landscape", o.duration = i.length);
-					const c = e.posts.video.time[t];
-					return c && (o.time = Math.round(c.currentTime)), o.streamPublicId = r && r.stream.stream_id, o
+					const o = e.posts.video.metadata[t];
+					o && o.id === t && (s.height = o.originalHeight, s.width = o.originalWidth, s.orientation = s.height > s.width ? "portrait" : "landscape", s.duration = o.length);
+					const i = e.posts.video.time[t];
+					return i && (s.time = Math.round(i.currentTime)), s
 				},
 				De = (e, t) => {
 					if (void 0 === e.posts.models[t]) return null;
@@ -61986,4 +61986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.f643c353ef983c615e0b.js.map
+//# sourceMappingURL=Governance~Reddit.7d0fb72b0f435979a518.js.map
