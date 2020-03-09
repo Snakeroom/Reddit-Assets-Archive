@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.06318271f8e61c072e1e.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fd344374e23025a20cad.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -19114,61 +19114,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./node_modules/lodash/uniqueId.js"),
-				s = n.n(o),
-				r = n("./node_modules/raf/index.js"),
-				i = n.n(r),
-				a = n("./node_modules/react/index.js"),
-				c = n.n(a),
-				l = n("./node_modules/react-redux/es/index.js"),
-				d = n("./node_modules/reselect/es/index.js"),
-				u = n("./src/lib/classNames/index.ts"),
-				p = n("./src/reddit/actions/modal.ts"),
-				m = n("./src/reddit/i18n/utils.ts"),
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/uniqueId.js"),
+				r = n.n(s),
+				i = n("./node_modules/raf/index.js"),
+				a = n.n(i),
+				c = n("./node_modules/react/index.js"),
+				l = n.n(c),
+				d = n("./node_modules/react-redux/es/index.js"),
+				u = n("./node_modules/reselect/es/index.js"),
+				p = n("./src/lib/classNames/index.ts"),
+				m = n("./src/reddit/actions/modal.ts"),
 				h = n("./src/reddit/selectors/activeModalId.ts"),
-				b = n("./node_modules/fbt/lib/FbtPublic.js"),
-				g = n("./src/higherOrderComponents/asModal/index.tsx"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				x = n("./src/reddit/layout/row/Inline/index.tsx"),
-				C = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				y = n.n(C);
-			var O = Object(g.a)(e => {
+				b = n("./src/higherOrderComponents/asModal/index.tsx"),
+				g = n("./src/reddit/controls/Button/index.tsx"),
+				f = n("./src/reddit/layout/row/Inline/index.tsx"),
+				x = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				C = n.n(x);
+			var y = Object(b.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
-					return c.a.createElement("div", {
-						className: y.a.wrapper
-					}, c.a.createElement(x.a, {
-						className: y.a.titleRow
-					}, n), c.a.createElement("div", {
-						className: y.a.detailsContainer
-					}, t), c.a.createElement(x.a, {
-						className: y.a.buttonRow
-					}, c.a.createElement(f.f, {
-						className: y.a.confirmButton,
+					return l.a.createElement("div", {
+						className: C.a.wrapper
+					}, l.a.createElement(f.a, {
+						className: C.a.titleRow
+					}, n), l.a.createElement("div", {
+						className: C.a.detailsContainer
+					}, t), l.a.createElement(f.a, {
+						className: C.a.buttonRow
+					}, l.a.createElement(g.f, {
+						className: C.a.confirmButton,
 						onClick: e.onConfirmed
-					}, b.fbt._("Ok", null, {
+					}, o.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				v = n("./src/reddit/controls/ErrorText/index.m.less"),
-				E = n.n(v);
+				O = n("./src/reddit/controls/ErrorText/index.m.less"),
+				v = n.n(O);
 			n.d(t, "a", (function() {
-				return w
+				return T
 			})), n.d(t, "c", (function() {
-				return k
+				return w
 			}));
-			const j = Object(d.c)({
+			const E = Object(u.c)({
 				activeModalId: h.a
 			});
-			class S extends c.a.Component {
+			class j extends l.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(s()())
+						modalId: "ErrorTextModal--".concat(r()())
 					}
 				}
 				componentDidMount() {
@@ -19178,7 +19177,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					i()(() => {
+					a()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -19192,31 +19191,35 @@
 						children: e,
 						activeModalId: t,
 						className: n,
-						errorModalBody: o,
-						errorModalTitle: s = Object(m.c)("Error"),
-						moreText: r = Object(m.c)("More")
+						errorModalBody: s,
+						errorModalTitle: r = o.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: i = o.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: i,
-						textHasOverflowed: a
+						modalId: a,
+						textHasOverflowed: c
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(u.a)(E.a.wrapper, n)
-					}, c.a.createElement("span", {
-						className: E.a.description,
+					return l.a.createElement("div", {
+						className: Object(p.a)(v.a.wrapper, n)
+					}, l.a.createElement("span", {
+						className: v.a.description,
 						ref: this.spanRef
-					}, e), a && c.a.createElement("span", {
-						className: E.a.moreText,
+					}, e), c && l.a.createElement("span", {
+						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, r), t === i && c.a.createElement(O, {
+					}, i), t === a && l.a.createElement(y, {
 						onConfirmed: this.toggleModal,
-						title: s
-					}, o || e))
+						title: r
+					}, s || e))
 				}
 			}
-			const T = Object(l.b)(j, e => ({
-					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(S),
-				w = e => {
+			const S = Object(d.b)(E, e => ({
+					toggleErrorTextModal: t => e(Object(m.i)(t))
+				}))(j),
+				T = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -19224,19 +19227,21 @@
 						fallbackMessage: s,
 						messages: r = []
 					} = e, i = r.length ? r : s ? [s] : [];
-					return i.length ? c.a.createElement("div", {
+					return i.length ? l.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => c.a.createElement(T, {
+					}, i.map((e, t) => l.a.createElement(S, {
 						className: n,
 						errorModalTitle: o,
 						key: t
 					}, e))) : null
 				},
-				k = e => c.a.createElement(w, {
-					fallbackMessage: Object(m.c)("Something went wrong"),
+				w = e => l.a.createElement(T, {
+					fallbackMessage: o.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
-			t.b = T
+			t.b = S
 		},
 		"./src/reddit/controls/FileDrop/index.tsx": function(e, t, n) {
 			"use strict";
@@ -29486,4 +29491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.06318271f8e61c072e1e.js.map
+//# sourceMappingURL=PostCreation.fd344374e23025a20cad.js.map

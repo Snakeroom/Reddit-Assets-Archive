@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.ad3669321df0dc1534df.js
-// Retrieved at 3/9/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.71b000ab02a5d6e404d0.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -323,8 +323,8 @@
 					})
 				}),
 				g = s("./src/reddit/icons/svgs/Redditor/index.tsx"),
-				x = s("./src/reddit/icons/svgs/Remove/index.tsx");
-			const f = i.a.img("Userpic", p.a),
+				f = s("./src/reddit/icons/svgs/Remove/index.tsx");
+			const x = i.a.img("Userpic", p.a),
 				j = Object(o.c)({
 					account: e => e.user.account
 				}),
@@ -348,12 +348,12 @@
 				return o ? a.a.createElement("div", {
 					className: s,
 					style: l
-				}, a.a.createElement(x.a, {
+				}, a.a.createElement(f.a, {
 					className: p.a.TrashIcon
 				})) : i ? a.a.createElement("div", {
 					className: s,
 					style: l
-				}, t && t.accountIcon && t.id === i ? a.a.createElement(f, {
+				}, t && t.accountIcon && t.id === i ? a.a.createElement(x, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : a.a.createElement(_, {
@@ -361,7 +361,7 @@
 				})) : a.a.createElement("div", {
 					className: s,
 					style: l
-				}, t && t.accountIcon ? a.a.createElement(f, {
+				}, t && t.accountIcon ? a.a.createElement(x, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : a.a.createElement(g.a, {
@@ -425,15 +425,15 @@
 				b = s("./src/reddit/actions/gold/modals.ts"),
 				_ = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				g = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
-				x = s("./src/reddit/components/RichTextEditor/index.tsx"),
-				f = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				f = s("./src/reddit/components/RichTextEditor/index.tsx"),
+				x = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				j = s("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
 				C = s("./src/reddit/controls/Button/index.tsx"),
 				v = s("./src/reddit/controls/ErrorText/index.tsx"),
 				E = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				O = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				I = s("./src/reddit/helpers/richTextEditor/index.ts"),
-				w = s("./src/reddit/helpers/trackers/rpan.ts"),
+				w = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				I = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/i18n/utils.ts"),
 				N = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = s("./src/reddit/icons/svgs/Gild/index.tsx"),
@@ -447,7 +447,7 @@
 				M = s.n(D);
 			const {
 				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = {}, U = 1e3, V = "chat_submission_from_rte", W = m.a.form("Form", M.a), H = m.a.wrapped(C.a, "ChatButton", M.a), K = m.a.div("CloseIconWrap", M.a), q = m.a.div("Reply", M.a), G = m.a.div("ReplyAuthor", M.a), J = m.a.div("ReplyComment", M.a), Z = m.a.wrapped(x.a, "RichTextEditor", M.a), z = m.a.wrapped(g.a, "SmallChatUserIcon", M.a), X = e => Object.values(e).reduce((e, t) => e + t, 0), Y = Object(l.a)(Object(l.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = {}, U = 1e3, V = "chat_submission_from_rte", W = m.a.form("Form", M.a), H = m.a.wrapped(C.a, "ChatButton", M.a), K = m.a.div("CloseIconWrap", M.a), q = m.a.div("Reply", M.a), G = m.a.div("ReplyAuthor", M.a), J = m.a.div("ReplyComment", M.a), Z = m.a.wrapped(f.a, "RichTextEditor", M.a), z = m.a.wrapped(g.a, "SmallChatUserIcon", M.a), X = e => Object.values(e).reduce((e, t) => e + t, 0), Y = Object(l.a)(Object(l.c)({
 				draft: T.i,
 				errorMsgs: T.I,
 				hasError: T.w,
@@ -540,11 +540,11 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, L.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(w.i)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(I.i)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
-						rteState: e.isEditing && e.comment ? f.a.createInitial(e.comment.media.richtextContent) : f.a.createInitial()
+						rteState: e.isEditing && e.comment ? x.a.createInitial(e.comment.media.richtextContent) : x.a.createInitial()
 					}
 				}
 				isReplyCommentChanged(e) {
@@ -566,7 +566,7 @@
 				}
 				cleanInputForm() {
 					this.setState({
-						rteState: f.a.createInitial()
+						rteState: x.a.createInitial()
 					})
 				}
 				render() {
@@ -614,7 +614,7 @@
 							[M.a.LivestreamingFocusableContent]: n && !s
 						}),
 						dataTestId: V,
-						editorType: I.a.Comment,
+						editorType: w.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: n ? 20 : void 0,
 						rteState: this.state.rteState,
@@ -827,61 +827,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/lodash/uniqueId.js"),
-				a = s.n(n),
-				r = s("./node_modules/raf/index.js"),
-				o = s.n(r),
-				i = s("./node_modules/react/index.js"),
-				c = s.n(i),
-				d = s("./node_modules/react-redux/es/index.js"),
-				l = s("./node_modules/reselect/es/index.js"),
-				u = s("./src/lib/classNames/index.ts"),
-				m = s("./src/reddit/actions/modal.ts"),
-				h = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./node_modules/lodash/uniqueId.js"),
+				r = s.n(a),
+				o = s("./node_modules/raf/index.js"),
+				i = s.n(o),
+				c = s("./node_modules/react/index.js"),
+				d = s.n(c),
+				l = s("./node_modules/react-redux/es/index.js"),
+				u = s("./node_modules/reselect/es/index.js"),
+				m = s("./src/lib/classNames/index.ts"),
+				h = s("./src/reddit/actions/modal.ts"),
 				p = s("./src/reddit/selectors/activeModalId.ts"),
-				b = s("./node_modules/fbt/lib/FbtPublic.js"),
-				_ = s("./src/higherOrderComponents/asModal/index.tsx"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/layout/row/Inline/index.tsx"),
+				b = s("./src/higherOrderComponents/asModal/index.tsx"),
+				_ = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
 				f = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				j = s.n(f);
-			var C = Object(_.a)(e => {
+				x = s.n(f);
+			var j = Object(b.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
-					return c.a.createElement("div", {
-						className: j.a.wrapper
-					}, c.a.createElement(x.a, {
-						className: j.a.titleRow
-					}, s), c.a.createElement("div", {
-						className: j.a.detailsContainer
-					}, t), c.a.createElement(x.a, {
-						className: j.a.buttonRow
-					}, c.a.createElement(g.f, {
-						className: j.a.confirmButton,
+					return d.a.createElement("div", {
+						className: x.a.wrapper
+					}, d.a.createElement(g.a, {
+						className: x.a.titleRow
+					}, s), d.a.createElement("div", {
+						className: x.a.detailsContainer
+					}, t), d.a.createElement(g.a, {
+						className: x.a.buttonRow
+					}, d.a.createElement(_.f, {
+						className: x.a.confirmButton,
 						onClick: e.onConfirmed
-					}, b.fbt._("Ok", null, {
+					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				v = s("./src/reddit/controls/ErrorText/index.m.less"),
-				E = s.n(v);
+				C = s("./src/reddit/controls/ErrorText/index.m.less"),
+				v = s.n(C);
 			s.d(t, "a", (function() {
-				return y
+				return I
 			})), s.d(t, "c", (function() {
-				return N
+				return y
 			}));
-			const O = Object(l.c)({
+			const E = Object(u.c)({
 				activeModalId: p.a
 			});
-			class I extends c.a.Component {
+			class O extends d.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(a()())
+						modalId: "ErrorTextModal--".concat(r()())
 					}
 				}
 				componentDidMount() {
@@ -891,7 +890,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					o()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -905,31 +904,35 @@
 						children: e,
 						activeModalId: t,
 						className: s,
-						errorModalBody: n,
-						errorModalTitle: a = Object(h.c)("Error"),
-						moreText: r = Object(h.c)("More")
+						errorModalBody: a,
+						errorModalTitle: r = n.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: o = n.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: o,
-						textHasOverflowed: i
+						modalId: i,
+						textHasOverflowed: c
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(u.a)(E.a.wrapper, s)
-					}, c.a.createElement("span", {
-						className: E.a.description,
+					return d.a.createElement("div", {
+						className: Object(m.a)(v.a.wrapper, s)
+					}, d.a.createElement("span", {
+						className: v.a.description,
 						ref: this.spanRef
-					}, e), i && c.a.createElement("span", {
-						className: E.a.moreText,
+					}, e), c && d.a.createElement("span", {
+						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, r), t === o && c.a.createElement(C, {
+					}, o), t === i && d.a.createElement(j, {
 						onConfirmed: this.toggleModal,
-						title: a
-					}, n || e))
+						title: r
+					}, a || e))
 				}
 			}
-			const w = Object(d.b)(O, e => ({
-					toggleErrorTextModal: t => e(Object(m.i)(t))
-				}))(I),
-				y = e => {
+			const w = Object(l.b)(E, e => ({
+					toggleErrorTextModal: t => e(Object(h.i)(t))
+				}))(O),
+				I = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -937,16 +940,18 @@
 						fallbackMessage: a,
 						messages: r = []
 					} = e, o = r.length ? r : a ? [a] : [];
-					return o.length ? c.a.createElement("div", {
+					return o.length ? d.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(w, {
+					}, o.map((e, t) => d.a.createElement(w, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				N = e => c.a.createElement(y, {
-					fallbackMessage: Object(h.c)("Something went wrong"),
+				y = e => d.a.createElement(I, {
+					fallbackMessage: n.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
 			t.b = w
@@ -1013,9 +1018,9 @@
 			})), s.d(t, "c", (function() {
 				return g
 			})), s.d(t, "i", (function() {
-				return x
-			})), s.d(t, "h", (function() {
 				return f
+			})), s.d(t, "h", (function() {
+				return x
 			}));
 			var n = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				a = s("./src/reddit/selectors/telemetry.ts");
@@ -1103,7 +1108,7 @@
 						noun: "chat"
 					}, r(t, s))
 				},
-				x = e => t => {
+				f = e => t => {
 					const s = Object(n.k)(t, e);
 					return Object.assign({
 						source: "stream_player",
@@ -1111,7 +1116,7 @@
 						noun: "send_chat"
 					}, r(t, s))
 				},
-				f = (e, t) => s => Object.assign({
+				x = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -1204,7 +1209,7 @@
 			s.d(t, "k", (function() {
 				return E
 			})), s.d(t, "l", (function() {
-				return w
+				return I
 			})), s.d(t, "m", (function() {
 				return y
 			})), s.d(t, "g", (function() {
@@ -1231,10 +1236,10 @@
 			const b = e => e.publicAccessNetwork.reports.reported,
 				_ = e => e.publicAccessNetwork.history,
 				g = e => e.publicAccessNetwork.history.cursor,
-				x = e => e.publicAccessNetwork.history.visitOrder,
-				f = e => e.publicAccessNetwork.hlsStreams,
-				j = Object(n.a)(f, e => e.ended),
-				C = Object(n.a)(f, e => e.removed),
+				f = e => e.publicAccessNetwork.history.visitOrder,
+				x = e => e.publicAccessNetwork.hlsStreams,
+				j = Object(n.a)(x, e => e.ended),
+				C = Object(n.a)(x, e => e.removed),
 				v = Object(n.a)(e => e.publicAccessNetwork.models, j, C, (e, t, s) => {
 					const n = t.reduce((e, t) => {
 						const s = e[t];
@@ -1293,7 +1298,7 @@
 					const d = new Set([...n, ...a]);
 					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== r.l).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
 				}),
-				I = Object(n.a)((e, t) => {
+				w = Object(n.a)((e, t) => {
 					let {
 						count: s
 					} = t;
@@ -1311,21 +1316,21 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				w = Object(n.a)(v, I, (e, t) => {
+				I = Object(n.a)(v, w, (e, t) => {
 					const s = t.find(t => {
 						const s = e[t];
 						return !!s && s.stream.state === i.b.IS_LIVE
 					});
 					if (s) return e[s]
 				}),
-				y = Object(n.a)(v, I, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
-				N = Object(n.a)(x, (e, t) => {
+				y = Object(n.a)(v, w, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				N = Object(n.a)(f, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return I(e, {
+					return w(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -1345,7 +1350,7 @@
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return I(e, {
+					return w(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -1372,13 +1377,13 @@
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return I(e, {
+					return w(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
 				}, (e, t, s, n, a) => !e || s.includes(e) || n.includes(e) ? t || a[0] : e),
-				T = Object(n.a)(g, x, N, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				S = Object(n.a)(g, x, (e, t) => {
+				T = Object(n.a)(g, f, N, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				S = Object(n.a)(g, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
 				R = Object(a.a)(Object(n.a)(L, v, (e, t) => e ? t[e] : void 0)),
@@ -1445,4 +1450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.ad3669321df0dc1534df.js.map
+//# sourceMappingURL=ChatMessageInput.71b000ab02a5d6e404d0.js.map

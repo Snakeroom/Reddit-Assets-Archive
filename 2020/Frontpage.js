@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.46f079db2dd9608a0778.js
-// Retrieved at 3/9/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6f3befebaa874a53e770.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -897,7 +897,7 @@
 							sort: e
 						}), r.a.createElement("div", {
 							className: N.a.SortLabel
-						}, x.a[e])), a && r.a.createElement(g.a, {
+						}, Object(x.a)(e))), a && r.a.createElement(g.a, {
 							baseUrl: y.c[y.b.Popular],
 							buttonClassName: N.a.DropdownButton,
 							className: N.a.CountrySort,
@@ -2538,4 +2538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.46f079db2dd9608a0778.js.map
+//# sourceMappingURL=Frontpage.6f3befebaa874a53e770.js.map

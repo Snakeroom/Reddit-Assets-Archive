@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.519fce5e2a7565b67807.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4dd4a854a7892cbc81c7.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -14018,61 +14018,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/lodash/uniqueId.js"),
-				o = s.n(n),
-				r = s("./node_modules/raf/index.js"),
-				a = s.n(r),
-				i = s("./node_modules/react/index.js"),
-				c = s.n(i),
-				d = s("./node_modules/react-redux/es/index.js"),
-				l = s("./node_modules/reselect/es/index.js"),
-				m = s("./src/lib/classNames/index.ts"),
-				p = s("./src/reddit/actions/modal.ts"),
-				u = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/lodash/uniqueId.js"),
+				r = s.n(o),
+				a = s("./node_modules/raf/index.js"),
+				i = s.n(a),
+				c = s("./node_modules/react/index.js"),
+				d = s.n(c),
+				l = s("./node_modules/react-redux/es/index.js"),
+				m = s("./node_modules/reselect/es/index.js"),
+				p = s("./src/lib/classNames/index.ts"),
+				u = s("./src/reddit/actions/modal.ts"),
 				h = s("./src/reddit/selectors/activeModalId.ts"),
-				b = s("./node_modules/fbt/lib/FbtPublic.js"),
-				g = s("./src/higherOrderComponents/asModal/index.tsx"),
-				x = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/layout/row/Inline/index.tsx"),
-				f = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				C = s.n(f);
-			var O = Object(g.a)(e => {
+				b = s("./src/higherOrderComponents/asModal/index.tsx"),
+				g = s("./src/reddit/controls/Button/index.tsx"),
+				x = s("./src/reddit/layout/row/Inline/index.tsx"),
+				v = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				f = s.n(v);
+			var C = Object(b.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
-					return c.a.createElement("div", {
-						className: C.a.wrapper
-					}, c.a.createElement(v.a, {
-						className: C.a.titleRow
-					}, s), c.a.createElement("div", {
-						className: C.a.detailsContainer
-					}, t), c.a.createElement(v.a, {
-						className: C.a.buttonRow
-					}, c.a.createElement(x.f, {
-						className: C.a.confirmButton,
+					return d.a.createElement("div", {
+						className: f.a.wrapper
+					}, d.a.createElement(x.a, {
+						className: f.a.titleRow
+					}, s), d.a.createElement("div", {
+						className: f.a.detailsContainer
+					}, t), d.a.createElement(x.a, {
+						className: f.a.buttonRow
+					}, d.a.createElement(g.f, {
+						className: f.a.confirmButton,
 						onClick: e.onConfirmed
-					}, b.fbt._("Ok", null, {
+					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				E = s("./src/reddit/controls/ErrorText/index.m.less"),
-				y = s.n(E);
+				O = s("./src/reddit/controls/ErrorText/index.m.less"),
+				E = s.n(O);
 			s.d(t, "a", (function() {
-				return P
+				return w
 			})), s.d(t, "c", (function() {
-				return k
+				return P
 			}));
-			const j = Object(l.c)({
+			const y = Object(m.c)({
 				activeModalId: h.a
 			});
-			class _ extends c.a.Component {
+			class j extends d.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(o()())
+						modalId: "ErrorTextModal--".concat(r()())
 					}
 				}
 				componentDidMount() {
@@ -14082,7 +14081,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					a()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -14096,31 +14095,35 @@
 						children: e,
 						activeModalId: t,
 						className: s,
-						errorModalBody: n,
-						errorModalTitle: o = Object(u.c)("Error"),
-						moreText: r = Object(u.c)("More")
+						errorModalBody: o,
+						errorModalTitle: r = n.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: a = n.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: a,
-						textHasOverflowed: i
+						modalId: i,
+						textHasOverflowed: c
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(m.a)(y.a.wrapper, s)
-					}, c.a.createElement("span", {
-						className: y.a.description,
+					return d.a.createElement("div", {
+						className: Object(p.a)(E.a.wrapper, s)
+					}, d.a.createElement("span", {
+						className: E.a.description,
 						ref: this.spanRef
-					}, e), i && c.a.createElement("span", {
-						className: y.a.moreText,
+					}, e), c && d.a.createElement("span", {
+						className: E.a.moreText,
 						onClick: this.toggleModal
-					}, r), t === a && c.a.createElement(O, {
+					}, a), t === i && d.a.createElement(C, {
 						onConfirmed: this.toggleModal,
-						title: o
-					}, n || e))
+						title: r
+					}, o || e))
 				}
 			}
-			const w = Object(d.b)(j, e => ({
-					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(_),
-				P = e => {
+			const _ = Object(l.b)(y, e => ({
+					toggleErrorTextModal: t => e(Object(u.i)(t))
+				}))(j),
+				w = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -14128,19 +14131,21 @@
 						fallbackMessage: o,
 						messages: r = []
 					} = e, a = r.length ? r : o ? [o] : [];
-					return a.length ? c.a.createElement("div", {
+					return a.length ? d.a.createElement("div", {
 						className: t
-					}, a.map((e, t) => c.a.createElement(w, {
+					}, a.map((e, t) => d.a.createElement(_, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				k = e => c.a.createElement(P, {
-					fallbackMessage: Object(u.c)("Something went wrong"),
+				P = e => d.a.createElement(w, {
+					fallbackMessage: n.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
-			t.b = w
+			t.b = _
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
 			"use strict";
@@ -16649,4 +16654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.519fce5e2a7565b67807.js.map
+//# sourceMappingURL=CollectionCommentsPage.4dd4a854a7892cbc81c7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.0806892122f04005b01b.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.8006396636e2c6b6048e.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -189,8 +189,8 @@
 				C = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				g = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				E = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				w = n("./node_modules/lodash/range.js"),
-				_ = n.n(w),
+				_ = n("./node_modules/lodash/range.js"),
+				w = n.n(_),
 				y = n("./src/reddit/controls/Button/index.tsx"),
 				O = n("./src/reddit/layout/row/Inline/index.tsx"),
 				k = n("./src/reddit/models/Flair/index.ts"),
@@ -306,7 +306,7 @@
 					}
 				}, r.a.createElement(ee, null, r.a.createElement($, {
 					style: {
-						background: "linear-gradient(to right, " + e.ticks[e.value].color + " " + e.value / e.max * 100 + "%,#C5C5C5 " + e.value / e.max * 100 + "%," + _()(Number(e.value) + 1, e.max + 1).map((t, n) => t === e.max ? "" : "#C5C5C5 " + (t / e.max * 100 - 1) + "%,#FFFFFF " + (t / e.max * 100 - 1) + "%,#FFFFFF " + t / e.max * 100 + "%,#C5C5C5 " + t / e.max * 100 + "%") + "#C5C5C5 100%)"
+						background: "linear-gradient(to right, " + e.ticks[e.value].color + " " + e.value / e.max * 100 + "%,#C5C5C5 " + e.value / e.max * 100 + "%," + w()(Number(e.value) + 1, e.max + 1).map((t, n) => t === e.max ? "" : "#C5C5C5 " + (t / e.max * 100 - 1) + "%,#FFFFFF " + (t / e.max * 100 - 1) + "%,#FFFFFF " + t / e.max * 100 + "%,#C5C5C5 " + t / e.max * 100 + "%") + "#C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -723,61 +723,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/lodash/uniqueId.js"),
-				r = n.n(a),
-				s = n("./node_modules/raf/index.js"),
-				o = n.n(s),
-				l = n("./node_modules/react/index.js"),
-				i = n.n(l),
-				c = n("./node_modules/react-redux/es/index.js"),
-				d = n("./node_modules/reselect/es/index.js"),
-				m = n("./src/lib/classNames/index.ts"),
-				u = n("./src/reddit/actions/modal.ts"),
-				p = n("./src/reddit/i18n/utils.ts"),
+			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/lodash/uniqueId.js"),
+				s = n.n(r),
+				o = n("./node_modules/raf/index.js"),
+				l = n.n(o),
+				i = n("./node_modules/react/index.js"),
+				c = n.n(i),
+				d = n("./node_modules/react-redux/es/index.js"),
+				m = n("./node_modules/reselect/es/index.js"),
+				u = n("./src/lib/classNames/index.ts"),
+				p = n("./src/reddit/actions/modal.ts"),
 				x = n("./src/reddit/selectors/activeModalId.ts"),
-				h = n("./node_modules/fbt/lib/FbtPublic.js"),
-				b = n("./src/higherOrderComponents/asModal/index.tsx"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/layout/row/Inline/index.tsx"),
-				C = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				g = n.n(C);
-			var E = Object(b.a)(e => {
+				h = n("./src/higherOrderComponents/asModal/index.tsx"),
+				b = n("./src/reddit/controls/Button/index.tsx"),
+				f = n("./src/reddit/layout/row/Inline/index.tsx"),
+				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				C = n.n(v);
+			var g = Object(h.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
-					return i.a.createElement("div", {
-						className: g.a.wrapper
-					}, i.a.createElement(v.a, {
-						className: g.a.titleRow
-					}, n), i.a.createElement("div", {
-						className: g.a.detailsContainer
-					}, t), i.a.createElement(v.a, {
-						className: g.a.buttonRow
-					}, i.a.createElement(f.f, {
-						className: g.a.confirmButton,
+					return c.a.createElement("div", {
+						className: C.a.wrapper
+					}, c.a.createElement(f.a, {
+						className: C.a.titleRow
+					}, n), c.a.createElement("div", {
+						className: C.a.detailsContainer
+					}, t), c.a.createElement(f.a, {
+						className: C.a.buttonRow
+					}, c.a.createElement(b.f, {
+						className: C.a.confirmButton,
 						onClick: e.onConfirmed
-					}, h.fbt._("Ok", null, {
+					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				w = n("./src/reddit/controls/ErrorText/index.m.less"),
-				_ = n.n(w);
+				E = n("./src/reddit/controls/ErrorText/index.m.less"),
+				_ = n.n(E);
 			n.d(t, "a", (function() {
-				return N
+				return k
 			})), n.d(t, "c", (function() {
-				return S
+				return N
 			}));
-			const y = Object(d.c)({
+			const w = Object(m.c)({
 				activeModalId: x.a
 			});
-			class O extends i.a.Component {
+			class y extends c.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = i.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(r()())
+						modalId: "ErrorTextModal--".concat(s()())
 					}
 				}
 				componentDidMount() {
@@ -787,7 +786,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					o()(() => {
+					l()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -801,31 +800,35 @@
 						children: e,
 						activeModalId: t,
 						className: n,
-						errorModalBody: a,
-						errorModalTitle: r = Object(p.c)("Error"),
-						moreText: s = Object(p.c)("More")
+						errorModalBody: r,
+						errorModalTitle: s = a.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: o = a.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: o,
-						textHasOverflowed: l
+						modalId: l,
+						textHasOverflowed: i
 					} = this.state;
-					return i.a.createElement("div", {
-						className: Object(m.a)(_.a.wrapper, n)
-					}, i.a.createElement("span", {
+					return c.a.createElement("div", {
+						className: Object(u.a)(_.a.wrapper, n)
+					}, c.a.createElement("span", {
 						className: _.a.description,
 						ref: this.spanRef
-					}, e), l && i.a.createElement("span", {
+					}, e), i && c.a.createElement("span", {
 						className: _.a.moreText,
 						onClick: this.toggleModal
-					}, s), t === o && i.a.createElement(E, {
+					}, o), t === l && c.a.createElement(g, {
 						onConfirmed: this.toggleModal,
-						title: r
-					}, a || e))
+						title: s
+					}, r || e))
 				}
 			}
-			const k = Object(c.b)(y, e => ({
-					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(O),
-				N = e => {
+			const O = Object(d.b)(w, e => ({
+					toggleErrorTextModal: t => e(Object(p.i)(t))
+				}))(y),
+				k = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -833,19 +836,21 @@
 						fallbackMessage: r,
 						messages: s = []
 					} = e, o = s.length ? s : r ? [r] : [];
-					return o.length ? i.a.createElement("div", {
+					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => i.a.createElement(k, {
+					}, o.map((e, t) => c.a.createElement(O, {
 						className: n,
 						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				S = e => i.a.createElement(N, {
-					fallbackMessage: Object(p.c)("Something went wrong"),
+				N = e => c.a.createElement(k, {
+					fallbackMessage: a.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
-			t.b = k
+			t.b = O
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1146,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.0806892122f04005b01b.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.8006396636e2c6b6048e.js.map

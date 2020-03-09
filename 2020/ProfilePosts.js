@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.09cb604bcaa8edc1f05d.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.77df735d103214f43f7a.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, r) {
@@ -415,7 +415,7 @@
 							sort: e
 						}), n.a.createElement("div", {
 							className: _.a.SortLabel
-						}, y.a[e])), i && n.a.createElement(g.a, {
+						}, Object(y.a)(e))), i && n.a.createElement(g.a, {
 							baseUrl: O.c[O.b.Popular],
 							buttonClassName: _.a.DropdownButton,
 							className: _.a.CountrySort,
@@ -1926,4 +1926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts.09cb604bcaa8edc1f05d.js.map
+//# sourceMappingURL=ProfilePosts.77df735d103214f43f7a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.b8b14be5b72ae6a65620.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.d6ef763b1fc3c9713305.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2011,61 +2011,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./node_modules/lodash/uniqueId.js"),
-				s = n.n(o),
-				a = n("./node_modules/raf/index.js"),
-				r = n.n(a),
-				i = n("./node_modules/react/index.js"),
-				c = n.n(i),
-				l = n("./node_modules/react-redux/es/index.js"),
-				d = n("./node_modules/reselect/es/index.js"),
-				m = n("./src/lib/classNames/index.ts"),
-				u = n("./src/reddit/actions/modal.ts"),
-				p = n("./src/reddit/i18n/utils.ts"),
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/uniqueId.js"),
+				a = n.n(s),
+				r = n("./node_modules/raf/index.js"),
+				i = n.n(r),
+				c = n("./node_modules/react/index.js"),
+				l = n.n(c),
+				d = n("./node_modules/react-redux/es/index.js"),
+				m = n("./node_modules/reselect/es/index.js"),
+				u = n("./src/lib/classNames/index.ts"),
+				p = n("./src/reddit/actions/modal.ts"),
 				h = n("./src/reddit/selectors/activeModalId.ts"),
-				C = n("./node_modules/fbt/lib/FbtPublic.js"),
-				g = n("./src/higherOrderComponents/asModal/index.tsx"),
-				b = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/layout/row/Inline/index.tsx"),
-				x = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				f = n.n(x);
-			var _ = Object(g.a)(e => {
+				C = n("./src/higherOrderComponents/asModal/index.tsx"),
+				g = n("./src/reddit/controls/Button/index.tsx"),
+				b = n("./src/reddit/layout/row/Inline/index.tsx"),
+				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				x = n.n(v);
+			var f = Object(C.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
-					return c.a.createElement("div", {
-						className: f.a.wrapper
-					}, c.a.createElement(v.a, {
-						className: f.a.titleRow
-					}, n), c.a.createElement("div", {
-						className: f.a.detailsContainer
-					}, t), c.a.createElement(v.a, {
-						className: f.a.buttonRow
-					}, c.a.createElement(b.f, {
-						className: f.a.confirmButton,
+					return l.a.createElement("div", {
+						className: x.a.wrapper
+					}, l.a.createElement(b.a, {
+						className: x.a.titleRow
+					}, n), l.a.createElement("div", {
+						className: x.a.detailsContainer
+					}, t), l.a.createElement(b.a, {
+						className: x.a.buttonRow
+					}, l.a.createElement(g.f, {
+						className: x.a.confirmButton,
 						onClick: e.onConfirmed
-					}, C.fbt._("Ok", null, {
+					}, o.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				E = n("./src/reddit/controls/ErrorText/index.m.less"),
-				k = n.n(E);
+				_ = n("./src/reddit/controls/ErrorText/index.m.less"),
+				E = n.n(_);
 			n.d(t, "a", (function() {
-				return w
+				return I
 			})), n.d(t, "c", (function() {
-				return O
+				return w
 			}));
-			const T = Object(d.c)({
+			const k = Object(m.c)({
 				activeModalId: h.a
 			});
-			class y extends c.a.Component {
+			class T extends l.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(s()())
+						modalId: "ErrorTextModal--".concat(a()())
 					}
 				}
 				componentDidMount() {
@@ -2075,7 +2074,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					r()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -2089,31 +2088,35 @@
 						children: e,
 						activeModalId: t,
 						className: n,
-						errorModalBody: o,
-						errorModalTitle: s = Object(p.c)("Error"),
-						moreText: a = Object(p.c)("More")
+						errorModalBody: s,
+						errorModalTitle: a = o.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: r = o.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: r,
-						textHasOverflowed: i
+						modalId: i,
+						textHasOverflowed: c
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(m.a)(k.a.wrapper, n)
-					}, c.a.createElement("span", {
-						className: k.a.description,
+					return l.a.createElement("div", {
+						className: Object(u.a)(E.a.wrapper, n)
+					}, l.a.createElement("span", {
+						className: E.a.description,
 						ref: this.spanRef
-					}, e), i && c.a.createElement("span", {
-						className: k.a.moreText,
+					}, e), c && l.a.createElement("span", {
+						className: E.a.moreText,
 						onClick: this.toggleModal
-					}, a), t === r && c.a.createElement(_, {
+					}, r), t === i && l.a.createElement(f, {
 						onConfirmed: this.toggleModal,
-						title: s
-					}, o || e))
+						title: a
+					}, s || e))
 				}
 			}
-			const I = Object(l.b)(T, e => ({
-					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(y),
-				w = e => {
+			const y = Object(d.b)(k, e => ({
+					toggleErrorTextModal: t => e(Object(p.i)(t))
+				}))(T),
+				I = e => {
 					const {
 						className: t,
 						errorClassName: n,
@@ -2121,19 +2124,21 @@
 						fallbackMessage: s,
 						messages: a = []
 					} = e, r = a.length ? a : s ? [s] : [];
-					return r.length ? c.a.createElement("div", {
+					return r.length ? l.a.createElement("div", {
 						className: t
-					}, r.map((e, t) => c.a.createElement(I, {
+					}, r.map((e, t) => l.a.createElement(y, {
 						className: n,
 						errorModalTitle: o,
 						key: t
 					}, e))) : null
 				},
-				O = e => c.a.createElement(w, {
-					fallbackMessage: Object(p.c)("Something went wrong"),
+				w = e => l.a.createElement(I, {
+					fallbackMessage: o.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
-			t.b = I
+			t.b = y
 		},
 		"./src/reddit/helpers/awards/message.ts": function(e, t, n) {
 			"use strict";
@@ -2342,4 +2347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.b8b14be5b72ae6a65620.js.map
+//# sourceMappingURL=ChatPost.d6ef763b1fc3c9713305.js.map

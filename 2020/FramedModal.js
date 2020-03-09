@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.b3a2b1e4997fad565715.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.27a51c5666f8da927346.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -87,9 +87,9 @@
 					}, l))
 				},
 				p = x(c.a),
-				g = x(l);
+				f = x(l);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? g : e.isCheckboxSelected ? p : o.a;
+				const t = e.isHalfCheckboxSelected ? f : e.isCheckboxSelected ? p : o.a;
 				return r.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -123,61 +123,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
-			var a = s("./node_modules/lodash/uniqueId.js"),
-				r = s.n(a),
-				n = s("./node_modules/raf/index.js"),
-				o = s.n(n),
-				i = s("./node_modules/react/index.js"),
-				l = s.n(i),
-				c = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				m = s("./src/lib/classNames/index.ts"),
-				u = s("./src/reddit/actions/modal.ts"),
-				h = s("./src/reddit/i18n/utils.ts"),
+			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/lodash/uniqueId.js"),
+				n = s.n(r),
+				o = s("./node_modules/raf/index.js"),
+				i = s.n(o),
+				l = s("./node_modules/react/index.js"),
+				c = s.n(l),
+				d = s("./node_modules/react-redux/es/index.js"),
+				m = s("./node_modules/reselect/es/index.js"),
+				u = s("./src/lib/classNames/index.ts"),
+				h = s("./src/reddit/actions/modal.ts"),
 				x = s("./src/reddit/selectors/activeModalId.ts"),
-				p = s("./node_modules/fbt/lib/FbtPublic.js"),
-				g = s("./src/higherOrderComponents/asModal/index.tsx"),
+				p = s("./src/higherOrderComponents/asModal/index.tsx"),
 				f = s("./src/reddit/controls/Button/index.tsx"),
-				C = s("./src/reddit/layout/row/Inline/index.tsx"),
-				b = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = s.n(b);
-			var y = Object(g.a)(e => {
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				C = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				b = s.n(C);
+			var v = Object(p.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
-					return l.a.createElement("div", {
-						className: v.a.wrapper
-					}, l.a.createElement(C.a, {
-						className: v.a.titleRow
-					}, s), l.a.createElement("div", {
-						className: v.a.detailsContainer
-					}, t), l.a.createElement(C.a, {
-						className: v.a.buttonRow
-					}, l.a.createElement(f.f, {
-						className: v.a.confirmButton,
+					return c.a.createElement("div", {
+						className: b.a.wrapper
+					}, c.a.createElement(g.a, {
+						className: b.a.titleRow
+					}, s), c.a.createElement("div", {
+						className: b.a.detailsContainer
+					}, t), c.a.createElement(g.a, {
+						className: b.a.buttonRow
+					}, c.a.createElement(f.f, {
+						className: b.a.confirmButton,
 						onClick: e.onConfirmed
-					}, p.fbt._("Ok", null, {
+					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				E = s("./src/reddit/controls/ErrorText/index.m.less"),
-				w = s.n(E);
+				y = s("./src/reddit/controls/ErrorText/index.m.less"),
+				E = s.n(y);
 			s.d(t, "a", (function() {
 				return M
 			})), s.d(t, "c", (function() {
 				return N
 			}));
-			const O = Object(d.c)({
+			const w = Object(m.c)({
 				activeModalId: x.a
 			});
-			class _ extends l.a.Component {
+			class O extends c.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(r()())
+						modalId: "ErrorTextModal--".concat(n()())
 					}
 				}
 				componentDidMount() {
@@ -187,7 +186,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					o()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -201,30 +200,34 @@
 						children: e,
 						activeModalId: t,
 						className: s,
-						errorModalBody: a,
-						errorModalTitle: r = Object(h.c)("Error"),
-						moreText: n = Object(h.c)("More")
+						errorModalBody: r,
+						errorModalTitle: n = a.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: o = a.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: o,
-						textHasOverflowed: i
+						modalId: i,
+						textHasOverflowed: l
 					} = this.state;
-					return l.a.createElement("div", {
-						className: Object(m.a)(w.a.wrapper, s)
-					}, l.a.createElement("span", {
-						className: w.a.description,
+					return c.a.createElement("div", {
+						className: Object(u.a)(E.a.wrapper, s)
+					}, c.a.createElement("span", {
+						className: E.a.description,
 						ref: this.spanRef
-					}, e), i && l.a.createElement("span", {
-						className: w.a.moreText,
+					}, e), l && c.a.createElement("span", {
+						className: E.a.moreText,
 						onClick: this.toggleModal
-					}, n), t === o && l.a.createElement(y, {
+					}, o), t === i && c.a.createElement(v, {
 						onConfirmed: this.toggleModal,
-						title: r
-					}, a || e))
+						title: n
+					}, r || e))
 				}
 			}
-			const j = Object(c.b)(O, e => ({
-					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(_),
+			const _ = Object(d.b)(w, e => ({
+					toggleErrorTextModal: t => e(Object(h.i)(t))
+				}))(O),
 				M = e => {
 					const {
 						className: t,
@@ -233,19 +236,21 @@
 						fallbackMessage: r,
 						messages: n = []
 					} = e, o = n.length ? n : r ? [r] : [];
-					return o.length ? l.a.createElement("div", {
+					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => l.a.createElement(j, {
+					}, o.map((e, t) => c.a.createElement(_, {
 						className: s,
 						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				N = e => l.a.createElement(M, {
-					fallbackMessage: Object(h.c)("Something went wrong"),
+				N = e => c.a.createElement(M, {
+					fallbackMessage: a.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
-			t.b = j
+			t.b = _
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, s) {
 			"use strict";
@@ -345,8 +350,8 @@
 					}
 				})
 			};
-			const g = /.*\.reddit\.(com|local)$|.*staging\.snooguts\.net$/,
-				f = "framedmodal",
+			const f = /.*\.reddit\.(com|local)$|.*staging\.snooguts\.net$/,
+				g = "framedmodal",
 				C = {
 					PARENT_ORIGIN: "_o"
 				},
@@ -358,11 +363,11 @@
 					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.modalType = e.match.params.type, this.modalType !== b.SUPPORT) throw new Error("Unknown modal page type: " + e.match.params.type);
 					this.queryParams = r()([...Object(i.a)(this.props.location.search)]);
 					const t = this.queryParams[C.PARENT_ORIGIN];
-					if (!g.test(t)) throw new Error("Invalid parent origin: " + t);
+					if (!f.test(t)) throw new Error("Invalid parent origin: " + t);
 					this.parentOrigin = t
 				}
 				postMessage(e) {
-					Object(l.a)(e, f, this.parentOrigin)
+					Object(l.a)(e, g, this.parentOrigin)
 				}
 				render() {
 					return o.a.createElement("div", {
@@ -411,4 +416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedModal.b3a2b1e4997fad565715.js.map
+//# sourceMappingURL=FramedModal.27a51c5666f8da927346.js.map

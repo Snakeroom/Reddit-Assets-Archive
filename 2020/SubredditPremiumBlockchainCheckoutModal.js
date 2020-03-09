@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.ad12cef3e2328acda756.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.6d0c7aace717c13c5a0b.js
+// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -101,7 +101,7 @@
 					return Object(A.u)(e, s)
 				}
 			});
-			var W = Object(l.b)(L)((function(e) {
+			var G = Object(l.b)(L)((function(e) {
 					return c.a.createElement("footer", {
 						className: R.a.container
 					}, c.a.createElement(S.c, null, "By purchasing a ", c.a.createElement(S.b, {
@@ -116,7 +116,7 @@
 						target: "_blank"
 					}, c.a.createElement(S.c, null, "Reddit Beta Terms of Service")), c.a.createElement(S.c, null, "."))
 				})),
-				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				W = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				H = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
 				V = s.n(H);
 			const U = Object(d.c)({
@@ -137,7 +137,7 @@
 						className: V.a.text
 					}, c.a.createElement(S.c, null, "Purchase ", c.a.createElement(S.b, {
 						name: "membership name"
-					}, t.membershipAlt))), c.a.createElement(G.a, {
+					}, t.membershipAlt))), c.a.createElement(W.a, {
 						className: V.a.close,
 						onClick: e.onClose
 					}))
@@ -283,7 +283,7 @@
 						className: z.a.purchaseInstructions
 					}, c.a.createElement(S.c, null, "Use the button above to generate a transaction URL to purchase a ", c.a.createElement(S.b, {
 						name: "membershipName"
-					}, t.membershipAlt), ". After the transaction completes, wait a few minutes and then refresh the page to use your new subscription. You can use the same process to add additional months.")), c.a.createElement(W, {
+					}, t.membershipAlt), ". After the transaction completes, wait a few minutes and then refresh the page to use your new subscription. You can use the same process to add additional months.")), c.a.createElement(G, {
 						subredditId: a
 					}))
 				}
@@ -412,61 +412,60 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/lodash/uniqueId.js"),
-				r = s.n(n),
-				a = s("./node_modules/raf/index.js"),
-				o = s.n(a),
-				i = s("./node_modules/react/index.js"),
-				c = s.n(i),
-				l = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				u = s("./src/lib/classNames/index.ts"),
-				m = s("./src/reddit/actions/modal.ts"),
-				p = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/lodash/uniqueId.js"),
+				a = s.n(r),
+				o = s("./node_modules/raf/index.js"),
+				i = s.n(o),
+				c = s("./node_modules/react/index.js"),
+				l = s.n(c),
+				d = s("./node_modules/react-redux/es/index.js"),
+				u = s("./node_modules/reselect/es/index.js"),
+				m = s("./src/lib/classNames/index.ts"),
+				p = s("./src/reddit/actions/modal.ts"),
 				h = s("./src/reddit/selectors/activeModalId.ts"),
-				b = s("./node_modules/fbt/lib/FbtPublic.js"),
-				f = s("./src/higherOrderComponents/asModal/index.tsx"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/layout/row/Inline/index.tsx"),
-				v = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				E = s.n(v);
-			var w = Object(f.a)(e => {
+				b = s("./src/higherOrderComponents/asModal/index.tsx"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				x = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				v = s.n(x);
+			var E = Object(b.a)(e => {
 					const {
 						children: t,
 						title: s
 					} = e;
-					return c.a.createElement("div", {
-						className: E.a.wrapper
-					}, c.a.createElement(x.a, {
-						className: E.a.titleRow
-					}, s), c.a.createElement("div", {
-						className: E.a.detailsContainer
-					}, t), c.a.createElement(x.a, {
-						className: E.a.buttonRow
-					}, c.a.createElement(g.f, {
-						className: E.a.confirmButton,
+					return l.a.createElement("div", {
+						className: v.a.wrapper
+					}, l.a.createElement(g.a, {
+						className: v.a.titleRow
+					}, s), l.a.createElement("div", {
+						className: v.a.detailsContainer
+					}, t), l.a.createElement(g.a, {
+						className: v.a.buttonRow
+					}, l.a.createElement(f.f, {
+						className: v.a.confirmButton,
 						onClick: e.onConfirmed
-					}, b.fbt._("Ok", null, {
+					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				j = s("./src/reddit/controls/ErrorText/index.m.less"),
-				N = s.n(j);
+				w = s("./src/reddit/controls/ErrorText/index.m.less"),
+				j = s.n(w);
 			s.d(t, "a", (function() {
-				return O
+				return y
 			})), s.d(t, "c", (function() {
-				return C
+				return O
 			}));
-			const _ = Object(d.c)({
+			const N = Object(u.c)({
 				activeModalId: h.a
 			});
-			class k extends c.a.Component {
+			class _ extends l.a.Component {
 				constructor(e) {
-					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
+					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(r()())
+						modalId: "ErrorTextModal--".concat(a()())
 					}
 				}
 				componentDidMount() {
@@ -476,7 +475,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					o()(() => {
+					i()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -490,31 +489,35 @@
 						children: e,
 						activeModalId: t,
 						className: s,
-						errorModalBody: n,
-						errorModalTitle: r = Object(p.c)("Error"),
-						moreText: a = Object(p.c)("More")
+						errorModalBody: r,
+						errorModalTitle: a = n.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: o = n.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
 					} = this.props, {
-						modalId: o,
-						textHasOverflowed: i
+						modalId: i,
+						textHasOverflowed: c
 					} = this.state;
-					return c.a.createElement("div", {
-						className: Object(u.a)(N.a.wrapper, s)
-					}, c.a.createElement("span", {
-						className: N.a.description,
+					return l.a.createElement("div", {
+						className: Object(m.a)(j.a.wrapper, s)
+					}, l.a.createElement("span", {
+						className: j.a.description,
 						ref: this.spanRef
-					}, e), i && c.a.createElement("span", {
-						className: N.a.moreText,
+					}, e), c && l.a.createElement("span", {
+						className: j.a.moreText,
 						onClick: this.toggleModal
-					}, a), t === o && c.a.createElement(w, {
+					}, o), t === i && l.a.createElement(E, {
 						onConfirmed: this.toggleModal,
-						title: r
-					}, n || e))
+						title: a
+					}, r || e))
 				}
 			}
-			const y = Object(l.b)(_, e => ({
-					toggleErrorTextModal: t => e(Object(m.i)(t))
-				}))(k),
-				O = e => {
+			const k = Object(d.b)(N, e => ({
+					toggleErrorTextModal: t => e(Object(p.i)(t))
+				}))(_),
+				y = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -522,19 +525,21 @@
 						fallbackMessage: r,
 						messages: a = []
 					} = e, o = a.length ? a : r ? [r] : [];
-					return o.length ? c.a.createElement("div", {
+					return o.length ? l.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(y, {
+					}, o.map((e, t) => l.a.createElement(k, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				C = e => c.a.createElement(O, {
-					fallbackMessage: Object(p.c)("Something went wrong"),
+				O = e => l.a.createElement(y, {
+					fallbackMessage: n.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
 					messages: e
 				});
-			t.b = y
+			t.b = k
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -981,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.ad12cef3e2328acda756.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.6d0c7aace717c13c5a0b.js.map
