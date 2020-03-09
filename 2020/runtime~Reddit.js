@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ad0511ecd958919e4eb4.js
-// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2c326de32ded5c800a1a.js
+// Retrieved at 3/9/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -602,7 +602,7 @@
 					RichTextEditor: "46041ffabf23211135fb",
 					EconomicsEntryPointsCommentFlatlistSupportCTA: "f4bcb03e2a7e969547b8",
 					EconomicsEntryPointsPostFlatlistSupportCTA: "9f09baced67abb411045",
-					LiveVideoPlayer: "ec9b5b347ce01f19d07a",
+					LiveVideoPlayer: "f99b0b5e0a7880c58c26",
 					AwardCreationModal: "0e26a3f3beee31e231cd",
 					ColorPickerDropdown: "31d6cfe0d16ae931b73c",
 					"reddit-components-RecurringPostList-EditModal": "c1f35d1ae695493e77c5",
@@ -873,7 +873,7 @@
 						FrontpageSidebar: "6485dee097b0be8a280e",
 						Frontpage: "6f3befebaa874a53e770",
 						Topic: "9e82c6e99d764fb4455b",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "e842f8d41b69ef927a2b",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "000514ce4ba4abc2c948",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "b70e94dce6e751f3acf8",
 						"CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187": "160256ee2fca47c5e252",
 						PostDraft: "b9b7046b6c9df03b2653",
@@ -1048,7 +1048,7 @@
 						RichTextEditor: "0165884719c70be178ae",
 						EconomicsEntryPointsCommentFlatlistSupportCTA: "de883e6ae7c9ce80ecac",
 						EconomicsEntryPointsPostFlatlistSupportCTA: "b4794cf5217c00059fb1",
-						LiveVideoPlayer: "c6f645bba91500fd250c",
+						LiveVideoPlayer: "1a8c0e3d00c4d931311b",
 						AwardCreationModal: "23d01c70469cd51c6cdb",
 						ColorPickerDropdown: "7dfb6f24b50019ad5edf",
 						"reddit-components-RecurringPostList-EditModal": "7790036dcfbb09655b97",
@@ -1131,4 +1131,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.ad0511ecd958919e4eb4.js.map
+//# sourceMappingURL=runtime~Reddit.2c326de32ded5c800a1a.js.map

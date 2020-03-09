@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.e842f8d41b69ef927a2b.js
-// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.000514ce4ba4abc2c948.js
+// Retrieved at 3/9/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -93,36 +93,9 @@
 					fill: "#FFFFFF"
 				})),
 				h = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				p = e => n.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, n.a.createElement("rect", {
-					x: "11",
-					y: "2",
-					width: "6",
-					height: "16",
-					rx: "1",
-					ry: "1",
-					fill: "#FFFFFF"
-				}), n.a.createElement("rect", {
-					x: "3",
-					y: "2",
-					width: "6",
-					height: "16",
-					rx: "1",
-					ry: "1",
-					fill: "#FFFFFF"
-				})),
-				m = e => n.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, n.a.createElement("path", {
-					d: "M18.5,9.14l-12-7A1,1,0,0,0,5,3V17a1,1,0,0,0,1.5.86l12-7a1,1,0,0,0,0-1.73Z",
-					fill: "#FFFFFF"
-				})),
-				u = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
+				p = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
+				u = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
+				m = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
 				g = s("./src/reddit/components/HTML5StreamPlayer/ControlGradient/index.m.less"),
 				f = s.n(g),
 				v = r.a.div("Component", f.a),
@@ -503,7 +476,7 @@
 						isLive: o,
 						settingsButton: r,
 						settingChange: h,
-						showSettingsIcon: u
+						showSettingsIcon: m
 					} = this.props, g = i.fbt._("View Comments", null, {
 						hk: "2Vf8xl"
 					}), f = i.fbt._("Play", null, {
@@ -530,7 +503,7 @@
 					}, n.a.createElement("button", {
 						"aria-label": C,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? n.a.createElement(m, null) : n.a.createElement(p, null))), n.a.createElement($, null, w(P, b)), n.a.createElement(se, null, n.a.createElement(O, {
+					}, this.props.isPaused ? n.a.createElement(u.a, null) : n.a.createElement(p.a, null))), n.a.createElement($, null, w(P, b)), n.a.createElement(se, null, n.a.createElement(O, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -549,7 +522,7 @@
 						onClick: () => this.props.setVideoPosition(b)
 					}, i.fbt._("Live", null, {
 						hk: "3bCYlO"
-					})) : n.a.createElement(ee, null, E(b)), u && r, !e && (this.props.isFullScreen ? n.a.createElement(ne, {
+					})) : n.a.createElement(ee, null, E(b)), m && r, !e && (this.props.isFullScreen ? n.a.createElement(ne, {
 						tooltip: x
 					}, n.a.createElement("button", {
 						"aria-label": x,
@@ -583,7 +556,7 @@
 						volume: this.props.volume
 					}), n.a.createElement("button", {
 						onClick: this.props.toggleMute
-					}, this.props.isMuted ? n.a.createElement(h.a, null) : n.a.createElement(u.a, null))))
+					}, this.props.isMuted ? n.a.createElement(h.a, null) : n.a.createElement(m.a, null))))
 				}
 			}
 			t.a = re
@@ -707,8 +680,8 @@
 				return s
 			};
 			const p = 8,
-				m = c.a.span("TooltipPopup", l.a),
-				u = e => {
+				u = c.a.span("TooltipPopup", l.a),
+				m = e => {
 					var {
 						className: t,
 						setRef: s,
@@ -756,12 +729,12 @@
 						disable: s,
 						tooltip: i
 					} = this.props;
-					return a.a.createElement(u, {
+					return a.a.createElement(m, {
 						onMouseEnter: this.onMouseEnter,
 						setRef: e => this.container = e,
 						className: e,
 						disable: s
-					}, a.a.createElement(m, {
+					}, a.a.createElement(u, {
 						className: l.a.TooltipPopup,
 						innerRef: e => this.tooltipContainer = e
 					}, i), t)
@@ -824,8 +797,8 @@
 				d = s.n(c),
 				h = s("./node_modules/react-redux/es/index.js"),
 				p = s("./src/reddit/models/Media/index.ts"),
-				m = s("./node_modules/reselect/es/index.js"),
-				u = s("./src/reddit/helpers/overlay/index.ts"),
+				u = s("./node_modules/reselect/es/index.js"),
+				m = s("./src/reddit/helpers/overlay/index.ts"),
 				g = s("./src/config.ts"),
 				f = s("./src/lib/classNames/index.ts"),
 				v = s("./src/lib/domUtils/index.ts"),
@@ -862,11 +835,11 @@
 				},
 				j = e => e === V.Z.On;
 			var H = s("./src/reddit/selectors/experiments/utils.ts");
-			const A = Object(m.a)(e => Object(k.c)(e, {
+			const A = Object(u.a)(e => Object(k.c)(e, {
 					experimentName: V.Kb,
 					experimentEligibilitySelector: k.a
 				}), H.a),
-				I = Object(m.a)(A, (function(e) {
+				I = Object(u.a)(A, (function(e) {
 					switch (e) {
 						case V.Lb.BufferTwoSeconds:
 							return 2;
@@ -1026,10 +999,10 @@
 					fill: "#fff",
 					d: "M18.5,8.94,16.32,8.5h0a6.46,6.46,0,0,0-.79-1.9h0l1.23-1.85a1.08,1.08,0,0,0-1.5-1.5L13.41,4.47h0a6.45,6.45,0,0,0-1.9-.79h0L11.06,1.5a1.08,1.08,0,0,0-2.12,0L8.5,3.68h0a6.45,6.45,0,0,0-1.9.79h0L4.74,3.24a1.08,1.08,0,0,0-1.5,1.5L4.47,6.59h0a6.45,6.45,0,0,0-.79,1.9h0L1.5,8.94a1.08,1.08,0,0,0,0,2.12l2.18.44h0a6.45,6.45,0,0,0,.79,1.9h0L3.24,15.26a1.08,1.08,0,0,0,1.5,1.5l1.85-1.23h0a6.45,6.45,0,0,0,1.9.79h0l.44,2.18a1.08,1.08,0,0,0,2.12,0l.44-2.18h0a6.45,6.45,0,0,0,1.9-.79h0l1.85,1.23a1.08,1.08,0,0,0,1.5-1.5l-1.23-1.85h0a6.45,6.45,0,0,0,.79-1.9h0l2.18-.44a1.08,1.08,0,0,0,0-2.12ZM10,13.5A3.5,3.5,0,1,1,13.5,10,3.5,3.5,0,0,1,10,13.5Z"
 				})),
-				me = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
-				ue = s.n(me);
-			const ge = Z.a.wrapped(he.a, "TooltipControl", ue.a),
-				fe = Z.a.wrapped(ge, "ControlSetting", ue.a),
+				ue = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
+				me = s.n(ue);
+			const ge = Z.a.wrapped(he.a, "TooltipControl", me.a),
+				fe = Z.a.wrapped(ge, "ControlSetting", me.a),
 				ve = Object(q.a)("en", "video.settingTooltip");
 			class ye extends c.Component {
 				render() {
@@ -1046,11 +1019,11 @@
 					} = this.props;
 					return d.a.createElement(fe, {
 						key: "setting",
-						className: ue.a.AnimatedSettingIconParent,
+						className: me.a.AnimatedSettingIconParent,
 						tooltip: ve,
 						disable: o === yt.Settings
 					}, o === yt.Settings && d.a.createElement(de, {
-						className: ue.a.VideoSettingContainer,
+						className: me.a.VideoSettingContainer,
 						isLoggedIn: s,
 						autoplayPref: e,
 						active: o === yt.Settings,
@@ -1065,7 +1038,7 @@
 						"aria-label": ve,
 						onClick: l
 					}, d.a.createElement(pe, {
-						className: ue.a.SettingIcon
+						className: me.a.SettingIcon
 					})))
 				}
 			}
@@ -1345,8 +1318,8 @@
 			const dt = Z.a.div("Centered", ct.a),
 				ht = Z.a.div("EndedOverlay", ct.a),
 				pt = Z.a.span("ReplayText", ct.a),
-				mt = Z.a.button("ReplayButton", ct.a);
-			var ut = e => {
+				ut = Z.a.button("ReplayButton", ct.a);
+			var mt = e => {
 					const {
 						onClick: t,
 						source: s,
@@ -1354,7 +1327,7 @@
 					} = e;
 					return d.a.createElement(ht, {
 						onClick: t
-					}, d.a.createElement(dt, null, d.a.createElement(mt, null, d.a.createElement(rt.a, null), d.a.createElement(pt, {
+					}, d.a.createElement(dt, null, d.a.createElement(ut, null, d.a.createElement(rt.a, null), d.a.createElement(pt, {
 						className: "replay-video"
 					}, X.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
@@ -1411,7 +1384,7 @@
 			const Tt = 3e3,
 				Mt = 6e3,
 				Vt = 100,
-				_t = Object(h.b)(() => Object(m.c)({
+				_t = Object(h.b)(() => Object(u.c)({
 					isLoggedIn: W.G,
 					autoplayPref: W.b,
 					currentTime: G.d,
@@ -1453,7 +1426,7 @@
 							maxWait: _.l
 						}),
 						openLightbox: t => {
-							t ? e(Object(u.a)(t)) : S.c.withScope(e => {
+							t ? e(Object(m.a)(t)) : S.c.withScope(e => {
 								e.setExtra("info", {
 									postId: s,
 									postUrl: t
@@ -1795,7 +1768,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("07522df-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("bd3cf08-production", " ").concat(t);
 									return i && (s += " [".concat(V.Kb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1909,7 +1882,7 @@
 						} = this;
 						try {
 							t.setAutoPlay(e.autoPlay), t.attachSource(e.mpegDashSource)
-						} catch (m) {}
+						} catch (u) {}
 					}
 				}
 				updateUsingKeyStatus(e) {
@@ -1966,7 +1939,7 @@
 						settingChange: c,
 						videoEnded: h,
 						videoLoaded: p
-					} = this.state, m = this.HTML5StreamPlayerVideo, u = c === yt.SeekBar, g = p || !t, v = g && m && 0 !== m.currentTime, y = !o && l, x = h && !u, S = Object.assign({}, this.props, {
+					} = this.state, u = this.HTML5StreamPlayerVideo, m = c === yt.SeekBar, g = p || !t, v = g && u && 0 !== u.currentTime, y = !o && l, x = h && !m, S = Object.assign({}, this.props, {
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
 						setAutoplay: this.setAutoplay,
@@ -2003,7 +1976,7 @@
 						type: "application/vnd.apple.mpegURL"
 					}), this.props.otherSource && d.a.createElement("source", {
 						src: this.props.otherSource
-					})), x ? d.a.createElement(ut, {
+					})), x ? d.a.createElement(mt, {
 						onClick: this.resetVideo,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
@@ -2012,7 +1985,7 @@
 					}), i && d.a.createElement(Q.a, {
 						clickSnoo: this.clickSnoo,
 						controlBarRef: this.setControlBarRef,
-						currentTime: m ? m.currentTime : 0,
+						currentTime: u ? u.currentTime : 0,
 						hasAudio: n,
 						updateContinuousStartTime: this.updateContinuousStartTime,
 						enterFullScreen: this.enterFullScreen,
@@ -2095,8 +2068,8 @@
 				d = s("./src/reddit/components/PlayButton/index.m.less"),
 				h = s.n(d);
 			const p = n.a.wrapped(c, "PlayIcon", h.a),
-				m = n.a.div("PlayContainer", h.a);
-			t.a = e => a.a.createElement(m, {
+				u = n.a.div("PlayContainer", h.a);
+			t.a = e => a.a.createElement(u, {
 				className: e.className,
 				onClick: e.onClick
 			}, a.a.createElement(p, null))
@@ -2158,6 +2131,45 @@
 			e.exports = {
 				icon: "eI6Ep6BNFA5DZjPWNVb4O"
 			}
+		},
+		"./src/reddit/icons/svgs/VideoPause/index.tsx": function(e, t, s) {
+			"use strict";
+			var i = s("./node_modules/react/index.js"),
+				a = s.n(i);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, a.a.createElement("rect", {
+				x: "11",
+				y: "2",
+				width: "6",
+				height: "16",
+				rx: "1",
+				ry: "1",
+				fill: "#FFFFFF"
+			}), a.a.createElement("rect", {
+				x: "3",
+				y: "2",
+				width: "6",
+				height: "16",
+				rx: "1",
+				ry: "1",
+				fill: "#FFFFFF"
+			}))
+		},
+		"./src/reddit/icons/svgs/VideoPlay/index.tsx": function(e, t, s) {
+			"use strict";
+			var i = s("./node_modules/react/index.js"),
+				a = s.n(i);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, a.a.createElement("path", {
+				d: "M18.5,9.14l-12-7A1,1,0,0,0,5,3V17a1,1,0,0,0,1.5.86l12-7a1,1,0,0,0,0-1.73Z",
+				fill: "#FFFFFF"
+			}))
 		},
 		"./src/reddit/icons/svgs/VideoPlayNow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2250,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.e842f8d41b69ef927a2b.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.000514ce4ba4abc2c948.js.map

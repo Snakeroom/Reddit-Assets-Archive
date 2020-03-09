@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.c6f645bba91500fd250c.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1a8c0e3d00c4d931311b.js
+// Retrieved at 3/9/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -98,11 +98,11 @@
 			})), s.d(t, "a", (function() {
 				return S
 			})), s.d(t, "b", (function() {
-				return y
+				return g
 			})), s.d(t, "d", (function() {
 				return w
 			})), s.d(t, "e", (function() {
-				return g
+				return f
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.search.js");
 			var r = s("./node_modules/query-string/index.js"),
@@ -127,8 +127,8 @@
 				v = Object(a.a)(n.J),
 				R = Object(a.a)(n.I),
 				S = Object(a.a)(n.r),
-				y = Object(a.a)(n.s),
-				f = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
+				g = Object(a.a)(n.s),
+				y = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
 							name: "pan"
@@ -148,16 +148,16 @@
 					if (d.ok && d.body && d.body.data) {
 						let e = d.body.data;
 						const r = Object(u.b)(s());
-						r && "pan" !== r && (e = f(r)(e)), t(m({
+						r && "pan" !== r && (e = y(r)(e)), t(m({
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(P({
+					} else t(I({
 						streamId: a,
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, g = e => async (t, s) => Object(d.b)(s()) ? t(_(e)) : t(E()), E = () => async (e, t, s) => {
+				}, f = e => async (t, s) => Object(d.b)(s()) ? t(_(e)) : t(E()), E = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
@@ -172,7 +172,7 @@
 							models: t,
 							utcTimeStamp: n
 						}))
-					} else e(O({
+					} else e(P({
 						error: a.error,
 						utcTimeStamp: n
 					}))
@@ -188,18 +188,18 @@
 					if (n.ok && n.body && n.body.data) {
 						let r = n.body.data;
 						const i = Object(u.b)(s());
-						i && "pan" !== i && (r = r.map(f(i))), t(p({
+						i && "pan" !== i && (r = r.map(y(i))), t(p({
 							listingName: e,
 							models: r,
 							utcTimeStamp: c
 						}))
-					} else t(O({
+					} else t(P({
 						error: n.error,
 						utcTimeStamp: c
 					}))
-				}, P = e => async t => {
+				}, I = e => async t => {
 					t(v(e))
-				}, O = e => async t => {
+				}, P = e => async t => {
 					t(R(e))
 				}
 		},
@@ -365,8 +365,14 @@
 				duration: "_2qV1So7QiOzMP7ullTclrY",
 				MutedToggleButton: "_2W8k4lIjP-vO2DZBQlcXbr",
 				mutedToggleButton: "_2W8k4lIjP-vO2DZBQlcXbr",
+				PausedToggleButton: "_299A9DTaMrNQ3IvPUKBcop",
+				pausedToggleButton: "_299A9DTaMrNQ3IvPUKBcop",
 				MuteIcon: "_2RWb9Dwp3_ObxLMkcTgnA1",
 				muteIcon: "_2RWb9Dwp3_ObxLMkcTgnA1",
+				PauseIcon: "_3gI8IhVSrZYz6kWbFj98Kb",
+				pauseIcon: "_3gI8IhVSrZYz6kWbFj98Kb",
+				PlayIcon: "_37ZYqYmu-gzVHwqQdlwD_Y",
+				playIcon: "_37ZYqYmu-gzVHwqQdlwD_Y",
 				VolumeIcon: "KTC7B9EyTnKwrWTSHOSna",
 				volumeIcon: "KTC7B9EyTnKwrWTSHOSna"
 			}
@@ -383,34 +389,36 @@
 				d = s("./src/reddit/components/HlsVideo/index.tsx"),
 				u = s("./src/reddit/components/ImageWithFallback/index.tsx"),
 				l = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				h = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
-				m = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
+				h = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
+				m = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
+				b = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
+				p = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var b = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				p = s.n(b);
+			var v = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				R = s.n(v);
 			s.d(t, "LiveVideoPlayer", (function() {
-				return y
+				return w
 			})), s.d(t, "Overlay", (function() {
 				return f
 			})), s.d(t, "LiveIndicator", (function() {
-				return w
-			})), s.d(t, "Duration", (function() {
-				return g
-			})), s.d(t, "MutedToggleButton", (function() {
 				return E
+			})), s.d(t, "Duration", (function() {
+				return _
+			})), s.d(t, "MutedToggleButton", (function() {
+				return I
+			})), s.d(t, "PausedToggleButton", (function() {
+				return P
 			}));
 			const {
-				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(n.c)({
-				unavailableVideoUrl: m.p
-			}), S = Object(a.b)(R, (e, t) => ({
+				fbt: S
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(n.c)({
+				unavailableVideoUrl: p.p
+			}), y = Object(a.b)(g, (e, t) => ({
 				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
 			}));
-			class y extends r.Component {
+			class w extends r.Component {
 				constructor(e) {
-					super(e), this.onClick = e => {
-						this.shouldRenderVideo && (e.preventDefault(), e.stopPropagation(), this.onTogglePaused())
-					}, this.onError = () => {
+					super(e), this.onError = () => {
 						this.setState({
 							hasError: !0
 						})
@@ -474,6 +482,13 @@
 				get shouldRenderVideo() {
 					return !this.shouldRenderPoster && this.props.canLoad
 				}
+				get shouldRenderVideoUI() {
+					const {
+						duration: e,
+						live: t
+					} = this.state;
+					return !!e && !t
+				}
 				get streamId() {
 					const e = /[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}/.exec(this.props.url);
 					return e && e[0]
@@ -486,22 +501,17 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: p.a.LiveVideoPlayer,
-						onClick: this.onClick
+						className: R.a.LiveVideoPlayer
 					}, this.shouldRenderPoster ? this.renderPoster() : null, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
 					const {
 						duration: e,
-						live: t,
-						muted: s
+						live: t
 					} = this.state;
-					return i.a.createElement(f, null, t ? i.a.createElement(w, null) : e ? i.a.createElement(g, {
+					return i.a.createElement(f, null, t ? i.a.createElement(E, null) : e ? i.a.createElement(_, {
 						seconds: e
-					}) : null, i.a.createElement(E, {
-						muted: s,
-						onClick: this.onToggleMuted
-					}))
+					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
 				renderPoster() {
 					return i.a.createElement(u.a, {
@@ -525,6 +535,15 @@
 						onResourceRemoved: this.onResourceRemoved
 					})
 				}
+				renderVideoUI() {
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(P, {
+						paused: this.isPaused,
+						onClick: this.onTogglePaused
+					}), i.a.createElement(I, {
+						muted: this.state.muted,
+						onClick: this.onToggleMuted
+					}))
+				}
 				subscribeHeartbeat() {
 					this.streamId && this.props.onHeartbeatSubscribe(this.streamId).then(e => this._unsubscribeHeartbeat = e)
 				}
@@ -532,26 +551,26 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = S(y);
+			t.default = y(w);
 			const f = e => {
 					let {
 						children: t
 					} = e;
 					return i.a.createElement("div", {
-						className: p.a.Overlay
+						className: R.a.Overlay
 					}, t)
 				},
-				w = () => i.a.createElement("span", {
-					className: p.a.LiveIndicator
-				}, v._("Live", null, {
+				E = () => i.a.createElement("span", {
+					className: R.a.LiveIndicator
+				}, S._("Live", null, {
 					hk: "TwJSs"
 				})),
-				g = e => {
+				_ = e => {
 					let {
 						seconds: t
 					} = e;
 					return i.a.createElement("span", {
-						className: p.a.Duration
+						className: R.a.Duration
 					}, (e => {
 						const t = Math.trunc(e / 3600),
 							s = Math.trunc(e % 3600 / 60),
@@ -559,23 +578,45 @@
 						return [t > 0 ? t.toString() : "", t > 0 ? ":" : "", t > 0 && s < 10 ? "0" : "", s, ":", r < 10 ? "0" : "", r].join("")
 					})(t))
 				},
-				E = e => {
+				I = e => {
 					let {
 						muted: t,
 						onClick: s
 					} = e;
 					let r, a;
-					return t ? (r = v._("unmute", null, {
+					return t ? (r = S._("unmute", null, {
 						hk: "45ctbh"
 					}), a = i.a.createElement(l.a, {
-						className: p.a.MuteIcon
-					})) : (r = v._("mute", null, {
+						className: R.a.MuteIcon
+					})) : (r = S._("mute", null, {
 						hk: "3xjwI7"
-					}), a = i.a.createElement(h.a, {
-						className: p.a.VolumeIcon
+					}), a = i.a.createElement(b.a, {
+						className: R.a.VolumeIcon
 					})), i.a.createElement("button", {
 						"aria-label": r,
-						className: p.a.MutedToggleButton,
+						className: R.a.MutedToggleButton,
+						onClick: e => {
+							e.preventDefault(), e.stopPropagation(), s()
+						}
+					}, a)
+				},
+				P = e => {
+					let {
+						paused: t,
+						onClick: s
+					} = e;
+					let r, a;
+					return t ? (r = S._("play", null, {
+						hk: "2xeIj3"
+					}), a = i.a.createElement(m.a, {
+						className: R.a.PlayIcon
+					})) : (r = S._("pause", null, {
+						hk: "3jTrMB"
+					}), a = i.a.createElement(h.a, {
+						className: R.a.PauseIcon
+					})), i.a.createElement("button", {
+						"aria-label": r,
+						className: R.a.PausedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						}
@@ -584,4 +625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.c6f645bba91500fd250c.js.map
+//# sourceMappingURL=LiveVideoPlayer.1a8c0e3d00c4d931311b.js.map
