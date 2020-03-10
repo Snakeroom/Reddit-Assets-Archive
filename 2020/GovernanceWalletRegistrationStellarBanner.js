@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e625ea507c063dd88d6b.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.a97a4129e93863fc9fa2.js
+// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
@@ -363,8 +363,8 @@
 				d = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: r.ab
-				}) === r.hb.Enabled
+					experimentName: r.cb
+				}) === r.jb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.e625ea507c063dd88d6b.js.map
+//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.a97a4129e93863fc9fa2.js.map

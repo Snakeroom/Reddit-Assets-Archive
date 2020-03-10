@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3a982c619c9c3158b789.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b3de5a6c14f2faa4fb82.js
+// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -1070,8 +1070,8 @@
 				d = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				l = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.ab
-				}) === s.hb.Enabled
+					experimentName: s.cb
+				}) === s.jb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1232,4 +1232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.3a982c619c9c3158b789.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.b3de5a6c14f2faa4fb82.js.map

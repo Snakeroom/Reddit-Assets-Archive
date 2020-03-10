@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.3a4af3e2165843839750.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.8fc07f7cb5668cf54389.js
+// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -88,7 +88,7 @@
 				b = s("./src/reddit/selectors/gov.ts"),
 				p = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.m.less"),
 				g = s.n(p);
-			const h = Object(c.c)({
+			const f = Object(c.c)({
 				collection: (e, t) => {
 					let {
 						badge: s,
@@ -124,7 +124,7 @@
 					}
 				}
 			});
-			t.a = Object(a.b)(h)((function(e) {
+			t.a = Object(a.b)(f)((function(e) {
 				const t = e.type === m.a.Loyalty ? Object(d.c)("Loyalty Badge") : e.type === m.a.Achievement ? Object(d.c)("Achievement Badge") : Object(d.c)("Style Badge"),
 					s = e.collection ? e.collection.title : t,
 					{
@@ -258,8 +258,8 @@
 				b = s("./src/reddit/contexts/ApiContext.tsx"),
 				p = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = s("./src/reddit/endpoints/economics/banners.ts"),
-				h = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = s("./src/reddit/models/Badge/managementPage.ts"),
+				f = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				h = s("./src/reddit/models/Badge/managementPage.ts"),
 				j = s("./src/reddit/selectors/economics.ts"),
 				x = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/selectors/telemetry.ts"),
@@ -372,7 +372,7 @@
 						fullWidth: !0,
 						badge: t,
 						subredditId: s,
-						type: f.a.Achievement
+						type: h.a.Achievement
 					}), r.a.createElement(F.f, {
 						onClick: this.onApply
 					}, Object(w.c)("apply")))) : null
@@ -389,7 +389,7 @@
 						onBadgeApplied: () => {
 							e(Object(T.d)(s, {
 								id: q
-							})), e(Object(U.b)(f.a.Achievement)), e(Object(U.c)({
+							})), e(Object(U.b)(h.a.Achievement)), e(Object(U.c)({
 								subredditId: s
 							}))
 						}
@@ -443,7 +443,7 @@
 						className: X.a.newbieBadge,
 						correlationId: this.correlationId,
 						subredditId: s.id
-					}), r.a.createElement(h.a, {
+					}), r.a.createElement(f.a, {
 						className: X.a.close,
 						onClick: this.dismissBanner
 					}))) : null
@@ -460,7 +460,7 @@
 						if (!s) return !1;
 						if (Object(p.L)(e, t) !== u.g.Large) return !1;
 						if (n) {
-							const t = Object(j.f)(e, n.id)[f.a.Achievement];
+							const t = Object(j.f)(e, n.id)[h.a.Achievement];
 							if (t && t.type === q) return !1
 						}
 						return !0
@@ -834,8 +834,8 @@
 				d = e => i.has(e.toLowerCase()) || o.has(e.toLowerCase()),
 				l = e => i.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.ab
-				}) === n.hb.Enabled
+					experimentName: n.cb
+				}) === n.jb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -850,9 +850,9 @@
 			})), s.d(t, "g", (function() {
 				return g
 			})), s.d(t, "h", (function() {
-				return h
-			})), s.d(t, "i", (function() {
 				return f
+			})), s.d(t, "i", (function() {
+				return h
 			})), s.d(t, "j", (function() {
 				return j
 			})), s.d(t, "o", (function() {
@@ -920,7 +920,7 @@
 					} : d
 				},
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				h = (e, t) => {
+				f = (e, t) => {
 					if (Object(c.b)(e)) {
 						const t = Object(i.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
@@ -933,7 +933,7 @@
 					}
 					return s
 				},
-				f = (e, t) => {
+				h = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
 				j = (e, t) => {
@@ -996,4 +996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.3a4af3e2165843839750.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.8fc07f7cb5668cf54389.js.map

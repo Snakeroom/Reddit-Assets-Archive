@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e47cd6a76bf9623abd2c.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.477e483bce128cb4daca.js
+// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -2190,8 +2190,8 @@
 				o = e => r.has(e.toLowerCase()) || i.has(e.toLowerCase()),
 				l = e => r.has((Object(c.e)(e) || "").toLowerCase()) || i.has((Object(c.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: d.G,
-					experimentName: s.ab
-				}) === s.hb.Enabled
+					experimentName: s.cb
+				}) === s.jb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
 			"use strict";
@@ -2352,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.e47cd6a76bf9623abd2c.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.477e483bce128cb4daca.js.map

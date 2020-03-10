@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.501761595068cf7bb390.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f5633275bcedd923554b.js
+// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -8694,9 +8694,9 @@
 				uo = s("./src/reddit/layout/page/Listing/index.tsx"),
 				bo = s("./src/reddit/constants/experiments.ts"),
 				ho = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const go = e => bo.pb.Treatment1 === Object(ho.c)(e, {
+			const go = e => bo.rb.Treatment1 === Object(ho.c)(e, {
 				experimentEligibilitySelector: ho.a,
-				experimentName: bo.ob
+				experimentName: bo.qb
 			});
 			var xo = s("./src/reddit/selectors/meta.ts"),
 				yo = s("./src/reddit/pages/SearchResults/index.m.less"),
@@ -8778,9 +8778,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.gb
+					experimentName: n.ib
 				});
-				return Object(n.Nb)(t) ? void 0 : t
+				return Object(n.Pb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -8797,4 +8797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.501761595068cf7bb390.js.map
+//# sourceMappingURL=SearchResults.f5633275bcedd923554b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.e5b4c2cc93c961f9ec09.js
-// Retrieved at 3/9/2020, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7f7647ab6d2ae1695c67.js
+// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, n) {
@@ -82,9 +82,9 @@
 				y = n("./src/reddit/components/Governance/ClaimPointsBanner/index.m.less"),
 				x = n.n(y);
 			const {
-				fbt: w
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class j extends r.a.Component {
+			class w extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						modalVisible: !1
@@ -114,17 +114,17 @@
 						className: x.a.contents
 					}, r.a.createElement("div", {
 						className: x.a.title
-					}, w._("Own a piece of {subreddit name}", [w._param("subreddit name", o.displayText)], {
+					}, j._("Own a piece of {subreddit name}", [j._param("subreddit name", o.displayText)], {
 						hk: "4mj4OW"
 					})), r.a.createElement("div", {
 						className: x.a.description
-					}, w._("You have earned a piece of the community by earning {karma amount} karma on your posts and comments.", [w._param("karma amount", s)], {
+					}, j._("You have earned a piece of the community by earning {karma amount} karma on your posts and comments.", [j._param("karma amount", s)], {
 						hk: "3hfaPH"
 					})), r.a.createElement("div", {
 						className: x.a.points
 					}, Object(c.a)(Object(p.b)(t, d)), " ", u), r.a.createElement(m.f, {
 						onClick: this.showModal
-					}, w._("Claim Points", null, {
+					}, j._("Claim Points", null, {
 						hk: "17BVwS"
 					}))), r.a.createElement("div", {
 						className: x.a.illustration
@@ -161,7 +161,7 @@
 					onFetchDismissedBanners: () => e(Object(d.b)(n)),
 					onFetchMeData: () => e(Object(u.a)())
 				}
-			})(j)
+			})(w)
 		},
 		"./src/reddit/components/Governance/ClaimPointsModal/async.ts": function(e, t, n) {
 			"use strict";
@@ -332,8 +332,8 @@
 				d = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				u = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: s.ab
-				}) === s.hb.Enabled
+					experimentName: s.cb
+				}) === s.jb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -358,9 +358,9 @@
 			})), n.d(t, "p", (function() {
 				return x
 			})), n.d(t, "n", (function() {
-				return w
-			})), n.d(t, "k", (function() {
 				return j
+			})), n.d(t, "k", (function() {
+				return w
 			})), n.d(t, "l", (function() {
 				return P
 			})), n.d(t, "s", (function() {
@@ -403,15 +403,15 @@
 					}
 				},
 				m = (e, t) => {
-					const n = j(e, t);
+					const n = w(e, t);
 					if (n) return n.mainHeader
 				},
 				b = (e, t) => {
-					const n = j(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				p = (e, t) => {
-					const n = j(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -440,11 +440,11 @@
 				},
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
-				w = (e, t) => {
+				j = (e, t) => {
 					const n = _(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				j = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				P = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				O = (e, t) => {
 					const n = P(e, t);
@@ -494,4 +494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.e5b4c2cc93c961f9ec09.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.7f7647ab6d2ae1695c67.js.map
