@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c9f3b599dac984b68e97.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0641e00bc81df36d7d26.js
+// Retrieved at 3/10/2020, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2323,7 +2323,8 @@
 						data: n,
 						endpoint: Object(v.a)(Object(S.a)("".concat(r.a.gatewayUrl, "/desktopapi/v1/morecomments/").concat(t))),
 						method: o.cb.POST,
-						type: "json"
+						type: "json",
+						traceRequestName: "more_comments"
 					}))(c(), m, {
 						token: u.token
 					});
@@ -7059,7 +7060,8 @@
 							app_name: "web2x"
 						},
 						endpoint: "".concat(n ? s.a.oauthUrl : s.a.apiUrl, "/api/jail/asknicely").concat(n ? "" : ".json"),
-						method: o.cb.GET
+						method: o.cb.GET,
+						traceRequestName: "get_nps_survey"
 					}))(n.apiContext(), d, u);
 				if (l.ok) {
 					const t = l.body;
@@ -20538,21 +20540,21 @@
 			})), n.d(t, "b", (function() {
 				return Qe
 			})), n.d(t, "d", (function() {
-				return Je
-			})), n.d(t, "F", (function() {
 				return Xe
-			})), n.d(t, "Mb", (function() {
+			})), n.d(t, "F", (function() {
 				return $e
-			})), n.d(t, "W", (function() {
+			})), n.d(t, "Mb", (function() {
 				return Ze
-			})), n.d(t, "Ab", (function() {
+			})), n.d(t, "W", (function() {
 				return et
-			})), n.d(t, "zb", (function() {
+			})), n.d(t, "Ab", (function() {
 				return tt
-			})), n.d(t, "Bb", (function() {
+			})), n.d(t, "zb", (function() {
 				return nt
-			})), n.d(t, "Cb", (function() {
+			})), n.d(t, "Bb", (function() {
 				return rt
+			})), n.d(t, "Cb", (function() {
+				return st
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			const r = "typeahead_redesign",
@@ -20606,7 +20608,7 @@
 				e.Control1 = "control_1", e.Control2 = "control_2"
 			}(Q || (Q = {}));
 			const J = e => e === Q.Control1 || e === Q.Control2;
-			var X, $, Z, ee, te, ne, re, se, oe, ie, ce, ae, de, ue, le, be, pe, fe, me, Oe, ge, _e, he, ye, je, Ee, Ie, Se, ve, Te, Ce, De, Pe, Ae, we, Re, xe, Ne, ke, Le, Me, Ue, Fe, Ge, Be, qe, Ve, He, We, Ke, ze, Ye, Qe;
+			var X, $, Z, ee, te, ne, re, se, oe, ie, ce, ae, de, ue, le, be, pe, fe, me, Oe, ge, _e, he, ye, je, Ee, Ie, Se, ve, Te, Ce, De, Pe, Ae, we, Re, xe, Ne, ke, Le, Me, Ue, Fe, Ge, Be, qe, Ve, He, We, Ke, ze, Ye, Qe, Je;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(X || (X = {})),
@@ -20765,8 +20767,11 @@
 			}(Ye || (Ye = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(Qe || (Qe = {}));
-			const Je = {
+			}(Qe || (Qe = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(Je || (Je = {}));
+			const Xe = {
 					[Y]: [Qe.Enabled],
 					[z]: [Ye.SSO],
 					[K]: [ze.BufferTwoSeconds, ze.BufferFiveSeconds, ze.BufferTenSeconds],
@@ -20819,13 +20824,13 @@
 					[T]: [De.Treatment1, De.Treatment2, De.Treatment3, De.Treatment4],
 					[G]: [qe.Enabled]
 				},
-				Xe = new Set([C, u, "focused_vertical_suggestion_v2", N, P]),
-				$e = e => e.reduce((e, t, n) => (e[t] = n + 1, e), {}),
-				Ze = $e(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				et = 50,
-				tt = 41,
-				nt = 20,
-				rt = " …"
+				$e = new Set([C, u, "focused_vertical_suggestion_v2", N, P]),
+				Ze = e => e.reduce((e, t, n) => (e[t] = n + 1, e), {}),
+				et = Ze(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				tt = 50,
+				nt = 41,
+				rt = 20,
+				st = " …"
 		},
 		"./src/reddit/constants/featureThrottling.ts": function(e, t, n) {
 			"use strict";
@@ -23136,7 +23141,9 @@
 				b = n("./src/reddit/selectors/user.ts");
 			const p = (e, t) => Object(i.a)(e, Object.assign({}, r, {
 					variables: t
-				})),
+				}), {
+					traceRequestName: "get_frontpage"
+				}),
 				f = (e, t) => {
 					const {
 						after: n,
@@ -61986,4 +61993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.c9f3b599dac984b68e97.js.map
+//# sourceMappingURL=Governance~Reddit.0641e00bc81df36d7d26.js.map
