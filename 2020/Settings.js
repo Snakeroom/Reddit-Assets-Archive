@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.cf36a3e2f6dea888ff80.js
-// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.01a3dadeec6a8ac2b1c2.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -960,7 +960,7 @@
 			s.d(t, "a", (function() {
 				return le
 			}));
-			var Y = function(e, t) {
+			var q = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -969,7 +969,7 @@
 				}
 				return s
 			};
-			const q = o.a.div("BannerWrapper", K.a),
+			const Y = o.a.div("BannerWrapper", K.a),
 				X = o.a.div("BannerImage", K.a),
 				$ = o.a.div("SnooIcon", K.a),
 				ee = o.a.wrapped(i.b, "Widget", K.a),
@@ -979,7 +979,7 @@
 				ae = e => {
 					var {
 						url: t
-					} = e, s = Y(e, ["url"]);
+					} = e, s = q(e, ["url"]);
 					return t ? r.a.createElement(c.a, Q({}, s, {
 						className: K.a.userName,
 						to: t
@@ -1027,7 +1027,7 @@
 					} = this.props;
 					return r.a.createElement(ee, {
 						className: s
-					}, r.a.createElement(q, null, t && r.a.createElement(X, {
+					}, r.a.createElement(Y, null, t && r.a.createElement(X, {
 						style: {
 							backgroundImage: "url(".concat(t, ")")
 						}
@@ -3352,11 +3352,11 @@
 					}
 					return s
 				};
-			const Y = Object(o.c)({
+			const q = Object(o.c)({
 					hasVerifiedEmail: C.w,
 					isFPR: C.E
 				}),
-				q = Object(r.b)(Y, e => ({
+				Y = Object(r.b)(q, e => ({
 					openChangeEmailModal: () => e(Object(f.i)(V.a)),
 					resendEmail: () => e(Object(v.y)())
 				})),
@@ -3371,7 +3371,7 @@
 						onClick: n
 					}, a.a.createElement(w.c, null, "Click to resend"))) : Object(k.c)("Missing email, please update to secure your account")
 				};
-			var $ = q(e => {
+			var $ = Y(e => {
 					var {
 						isFPR: t,
 						openChangeEmailModal: s,
@@ -3560,8 +3560,8 @@
 				Ge = s.n(Ze);
 			const Ke = be.a.p("Date", Ge.a),
 				Qe = be.a.wrapped(Je.a, "UserNameAndIcon", Ge.a),
-				Ye = be.a.button("Button", Ge.a),
-				qe = be.a.div("ButtonWrapper", Ge.a);
+				qe = be.a.button("Button", Ge.a),
+				Ye = be.a.div("ButtonWrapper", Ge.a);
 			var Xe = be.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
 				}, a.a.createElement(Qe, {
@@ -3573,7 +3573,7 @@
 					}),
 					sendHoverCardEvent: () => {},
 					iconSize: 24
-				}), a.a.createElement(Ke, null, Object(He.d)(e.language, e.date / 1e3)), a.a.createElement(qe, null, a.a.createElement(Ye, {
+				}), a.a.createElement(Ke, null, Object(He.d)(e.language, e.date / 1e3)), a.a.createElement(Ye, null, a.a.createElement(qe, {
 					disabled: !!e.disabled,
 					onClick: e.onClick
 				}, "Remove"))), "Component", Ge.a),
@@ -3908,14 +3908,14 @@
 						}))
 					}
 				}))(Kt),
-				Yt = s("./src/reddit/constants/listingSorts.ts");
-			const qt = [l.O.HOT, l.O.NEW, l.O.TOP, l.O.RISING];
+				qt = s("./src/reddit/constants/listingSorts.ts");
+			const Yt = [l.O.HOT, l.O.NEW, l.O.TOP, l.O.RISING];
 			var Xt = e => {
 				const {
 					dropdownId: t
-				} = e, s = qt.map(e => ({
+				} = e, s = Yt.map(e => ({
 					key: e,
-					displayText: Object(Yt.a)(e),
+					displayText: Object(qt.a)(e),
 					icon: a.a.createElement(At.a, {
 						sort: e
 					})
@@ -3933,7 +3933,7 @@
 						dropdownId: t
 					} = e, s = $t.map(e => ({
 						key: e,
-						displayText: Object(Yt.b)(e)
+						displayText: Object(qt.b)(e)
 					}));
 					return a.a.createElement(Qt, {
 						dropdownId: t,
@@ -4562,7 +4562,7 @@
 					}
 					return s
 				};
-			var Ys = e => {
+			var qs = e => {
 					var {
 						language: t,
 						prefs: {
@@ -4626,8 +4626,8 @@
 						last: !0
 					}), a.a.createElement(Ks, null))
 				},
-				qs = s("./src/reddit/components/Settings/Payments/Header/index.m.less"),
-				Xs = s.n(qs);
+				Ys = s("./src/reddit/components/Settings/Payments/Header/index.m.less"),
+				Xs = s.n(Ys);
 			const $s = e => "economy.settings.payments.header.".concat(e);
 
 			function en(e) {
@@ -4758,15 +4758,15 @@
 					} = e;
 					return a.a.createElement(te.a, null, a.a.createElement(ee.b, null, Le.fbt._("Privacy & Security", null, {
 						hk: "2az3xN"
-					})), a.a.createElement(ee.a, null, Le.fbt._("Manage how we use data to personalize your Reddit experience, and control how other redditors interact with you. To learn more, visit our {=Privacy & Security FAQs}.", [Le.fbt._param("=Privacy & Security FAQs", a.a.createElement(hn, null, Le.fbt._("{=Privacy & Security FAQs}", [Le.fbt._param("=Privacy & Security FAQs", a.a.createElement("a", {
+					})), a.a.createElement(ee.a, null, Le.fbt._("Manage how we use data to personalize your Reddit experience, and control how other redditors interact with you. To learn more, visit our {=Privacy & Security FAQs} .", [Le.fbt._param("=Privacy & Security FAQs", a.a.createElement(hn, null, Le.fbt._("{=Privacy & Security FAQs}", [Le.fbt._param("=Privacy & Security FAQs", a.a.createElement("a", {
 						href: ae.a.redditHelpUrl.privacyQuestions,
 						target: "_blank"
 					}, Le.fbt._("Privacy & Security FAQs", null, {
-						hk: "3yNiXS"
+						hk: "4qvhC1"
 					})))], {
-						hk: "2J1omY"
+						hk: "2rwJJE"
 					})))], {
-						hk: "4pFE8T"
+						hk: "3appHO"
 					})), a.a.createElement(J.a, null, Le.fbt._("Privacy", null, {
 						hk: "30eaw9"
 					})), a.a.createElement(Z.n, {
@@ -5115,8 +5115,8 @@
 			var Gn = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				Kn = s("./src/reddit/actions/governance/errorToast.ts"),
 				Qn = s("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Benefits/index.tsx"),
-				Yn = s("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
-				qn = s("./src/reddit/endpoints/economics/specialMembership.ts"),
+				qn = s("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
+				Yn = s("./src/reddit/endpoints/economics/specialMembership.ts"),
 				Xn = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				$n = s("./src/reddit/components/Settings/SpecialMembership/Memberships/Membership/CancellationModal/index.m.less"),
 				ea = s.n($n);
@@ -5137,7 +5137,7 @@
 						this.setState({
 							canceling: !0
 						});
-						const a = await Object(qn.a)(e(), {
+						const a = await Object(Yn.a)(e(), {
 							subredditId: t
 						});
 						a.ok ? s() : (this.setState({
@@ -5164,7 +5164,7 @@
 						style: {
 							borderColor: e
 						}
-					}, a.a.createElement(Yn.a, {
+					}, a.a.createElement(qn.a, {
 						className: ea.a.brand,
 						subreddit: this.props.subreddit
 					}), a.a.createElement("div", {
@@ -5470,7 +5470,7 @@
 							case l.Mb.Premium:
 								return a.a.createElement(bn.b, i);
 							case l.Mb.Notifications:
-								return a.a.createElement(Ys, i);
+								return a.a.createElement(qs, i);
 							case l.Mb.Privacy:
 								return a.a.createElement(vn, i);
 							case l.Mb.Messaging:
@@ -5533,4 +5533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.cf36a3e2f6dea888ff80.js.map
+//# sourceMappingURL=Settings.01a3dadeec6a8ac2b1c2.js.map

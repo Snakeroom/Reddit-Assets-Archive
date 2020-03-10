@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.6d0c7aace717c13c5a0b.js
-// Retrieved at 3/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.c7a2f9918b156bd83431.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -104,7 +104,7 @@
 			var G = Object(l.b)(L)((function(e) {
 					return c.a.createElement("footer", {
 						className: R.a.container
-					}, c.a.createElement(S.c, null, "By purchasing a ", c.a.createElement(S.b, {
+					}, c.a.createElement(S.c, null, "By purchasing a", " ", c.a.createElement(S.b, {
 						name: "membershipAlt"
 					}, e.meta.membershipAlt), ", you agree to the"), c.a.createElement("a", {
 						className: R.a.link,
@@ -135,7 +135,7 @@
 						className: V.a.container
 					}, c.a.createElement("div", {
 						className: V.a.text
-					}, c.a.createElement(S.c, null, "Purchase ", c.a.createElement(S.b, {
+					}, c.a.createElement(S.c, null, "Purchase", " ", c.a.createElement(S.b, {
 						name: "membership name"
 					}, t.membershipAlt))), c.a.createElement(W.a, {
 						className: V.a.close,
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.6d0c7aace717c13c5a0b.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.c7a2f9918b156bd83431.js.map

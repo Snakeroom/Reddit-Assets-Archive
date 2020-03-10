@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.7924716bc363ad2e8a8e.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.338a5bc3988ccb62712a.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -1719,7 +1719,7 @@
 						children: Object(ue.c)("Cancel"),
 						onClick: this.onImportRevert,
 						"data-redditstyle": !0
-					})) : r.a.createElement(a.Fragment, null, r.a.createElement("ul", null, r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Color theme")), r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Banner")), r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Menu")), r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Posts (excluding post flair templates)"))), r.a.createElement(N, {
+					})) : r.a.createElement(a.Fragment, null, r.a.createElement("ul", null, r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Color theme")), r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Banner")), r.a.createElement(G.j, null, "- ", r.a.createElement(h.c, null, "Menu")), r.a.createElement(G.j, null, "-", " ", r.a.createElement(h.c, null, "Posts (excluding post flair templates)"))), r.a.createElement(N, {
 						onClick: this.onExport,
 						"data-redditstyle": !0,
 						disabled: e.isExportPending
@@ -3773,7 +3773,7 @@
 						disabled: this.isEditing,
 						text: t.menuItemText,
 						onChange: this.updateContent
-					})), this.isASubmenuForm && r.a.createElement(G.f, null, r.a.createElement(G.h, null, r.a.createElement(h.c, null, "Submenu Links")), r.a.createElement(G.g, null, r.a.createElement(h.c, null, "Remaining Links"), ": ", Ds - t.menuItemChildren.length), t.reordering ? this.renderSortableChildren() : this.renderEditableChildren(), this.renderNewSubmenuLinkEditor(), !this.isANewMenuItemForm && t.menuItemChildren.length > 1 && r.a.createElement(N, {
+					})), this.isASubmenuForm && r.a.createElement(G.f, null, r.a.createElement(G.h, null, r.a.createElement(h.c, null, "Submenu Links")), r.a.createElement(G.g, null, r.a.createElement(h.c, null, "Remaining Links"), ":", " ", Ds - t.menuItemChildren.length), t.reordering ? this.renderSortableChildren() : this.renderEditableChildren(), this.renderNewSubmenuLinkEditor(), !this.isANewMenuItemForm && t.menuItemChildren.length > 1 && r.a.createElement(N, {
 						children: Object(ue.c)("Reorder Submenu Links"),
 						"data-redditstyle": !0,
 						disabled: this.isEditing,
@@ -7798,4 +7798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.7924716bc363ad2e8a8e.js.map
+//# sourceMappingURL=StructuredStyles.338a5bc3988ccb62712a.js.map

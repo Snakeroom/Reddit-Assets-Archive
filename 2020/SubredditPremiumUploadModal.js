@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.4e775d99ad0e7783e1aa.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.4ca63bbf74cf68cd753b.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -297,7 +297,7 @@
 						isError: i
 					}, r.a.createElement(v.c, null, "Height and width exactly 120×120px")), r.a.createElement(W, {
 						isError: c
-					}, r.a.createElement(v.c, null, "File size limited to ", r.a.createElement(v.b, {
+					}, r.a.createElement(v.c, null, "File size limited to", " ", r.a.createElement(v.b, {
 						name: "max-file-size"
 					}, z), " KB")), r.a.createElement(W, null, r.a.createElement(v.c, null, "Add 4px black outline"))), r.a.createElement("br", null), a === E.b.Badge && t && s ? r.a.createElement("div", null, r.a.createElement("div", {
 						className: H.a.label
@@ -1169,4 +1169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumUploadModal.4e775d99ad0e7783e1aa.js.map
+//# sourceMappingURL=SubredditPremiumUploadModal.4ca63bbf74cf68cd753b.js.map

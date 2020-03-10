@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.0531a0368a4403d93c6f.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.07d4a2dfd77fbc0e8c5a.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/CrisisFooter/index.m.less": function(e, t, n) {
@@ -202,8 +202,8 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = d.a.div("CrisisContent", k.a), S = d.a.div("CrisisImageContainer", f.a), T = d.a.img("CrisisImage", k.a), O = d.a.h2("CrisisTitle", f.a), F = d.a.p("CrisisDescription", f.a);
 			var L = e => r.a.createElement(v, null, r.a.createElement(S, null, r.a.createElement(T, {
 					src: "".concat(g.a.assetPath, "/img/crisis-line-icon.png")
-				})), r.a.createElement(O, null, E._("Would you like Reddit to reach out to {reporteduser}?", [E._param("reporteduser", r.a.createElement("span", null, "u/", e.reportedUser))], {
-					hk: "3ltBBt"
+				})), r.a.createElement(O, null, E._("Would you like Reddit to reach out to {reporteduser} ?", [E._param("reporteduser", r.a.createElement("span", null, "u/", e.reportedUser))], {
+					hk: "3pSIao"
 				})), r.a.createElement(F, null, E._("We’ve partnered with {ctl} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {reporteduser} know that there are people who are here for them.", [E._param("ctl", r.a.createElement(R.a, {
 					href: "https://www.crisistextline.org/",
 					target: "_blank"
@@ -280,8 +280,8 @@
 				className: H.a.CrisisTickImage
 			})), r.a.createElement(N, null, B._("Thanks for caring about your fellow redditor", null, {
 				hk: "1ePh84"
-			})), r.a.createElement(q, null, B._("We’ve reached out to {reporteduser}. By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [B._param("reporteduser", r.a.createElement("span", null, "u/", e.reportedUser))], {
-				hk: "bDls1"
+			})), r.a.createElement(q, null, B._("We’ve reached out to {reporteduser} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [B._param("reporteduser", r.a.createElement("span", null, "u/", e.reportedUser))], {
+				hk: "2APcp1"
 			})), r.a.createElement(z, null, r.a.createElement(K, null, B._("Other things you can do", null, {
 				hk: "4oCunD"
 			})), r.a.createElement(R.a, {
@@ -1072,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow.0531a0368a4403d93c6f.js.map
+//# sourceMappingURL=ReportFlow.07d4a2dfd77fbc0e8c5a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.26cff7a7f5cc38d41cc5.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.6e7fc75d82e57467523a.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
@@ -685,4 +685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModStatsChart.26cff7a7f5cc38d41cc5.js.map
+//# sourceMappingURL=ModStatsChart.6e7fc75d82e57467523a.js.map

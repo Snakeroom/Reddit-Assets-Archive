@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki.b5bb9650bba234855961.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki.b99679a89bb898a20a19.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -166,7 +166,7 @@
 					} = e;
 					return s.a.createElement(E, null, s.a.createElement(y, null, s.a.createElement(g.c, null, "Use of this site constitutes acceptance of our "), s.a.createElement(x, {
 						href: "".concat(a.a.redditUrl, "/help/useragreement")
-					}, s.a.createElement(g.c, null, "User Agreement")), s.a.createElement(g.c, null, " and  "), s.a.createElement(_, {
+					}, s.a.createElement(g.c, null, "User Agreement")), s.a.createElement(g.c, null, " and "), s.a.createElement(_, {
 						href: "".concat(a.a.redditUrl, "/help/privacypolicy")
 					}, s.a.createElement(g.c, null, "Privacy Policy")), Object(i.a)(t, "footer.legalbottom.part3", {
 						year: (new Date).getFullYear()
@@ -829,4 +829,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki.b5bb9650bba234855961.js.map
+//# sourceMappingURL=Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki.b99679a89bb898a20a19.js.map

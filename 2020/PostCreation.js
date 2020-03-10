@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fd344374e23025a20cad.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.188bdd846be7d57cf0db.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -29491,4 +29491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.fd344374e23025a20cad.js.map
+//# sourceMappingURL=PostCreation.188bdd846be7d57cf0db.js.map

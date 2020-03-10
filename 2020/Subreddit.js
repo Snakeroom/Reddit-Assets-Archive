@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7c7400dd60676bc31cc8.js
-// Retrieved at 3/10/2020, 1:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.dc9e268ba331eb98473f.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5468,14 +5468,14 @@
 						snooBackground: Object(O.b)("url('".concat(Xe.a.assetPath, "/img/id-cards/snoo-artist@2x.png')"))
 					}), i.a.createElement("div", {
 						className: Object(w.a)(ft.a.Description, vt.a.description)
-					}, Ct._("Styling your community helps attract members. For assistance, take a look at the {=Customize Appearance Overview}. Here are some great ways to get started.", [Ct._param("=Customize Appearance Overview", i.a.createElement("a", {
+					}, Ct._("Styling your community helps attract members. For assistance, take a look at the {=Customize Appearance Overview} . Here are some great ways to get started.", [Ct._param("=Customize Appearance Overview", i.a.createElement("a", {
 						href: ct.e.exportImport,
 						className: vt.a.modHelpLink,
 						target: "_blank"
 					}, Ct._("Customize Appearance Overview", null, {
-						hk: "2qylj9"
+						hk: "11UFaE"
 					})))], {
-						hk: "2BIfV4"
+						hk: "32CnPm"
 					})), i.a.createElement(lt.a, {
 						to: "/r/".concat(r, "?styling=true&route=").concat(ct.c.NameAndIcon),
 						className: vt.a.link,
@@ -8840,4 +8840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.7c7400dd60676bc31cc8.js.map
+//# sourceMappingURL=Subreddit.dc9e268ba331eb98473f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.23f6309bae8e8830fc68.js
-// Retrieved at 3/9/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bed32e19baf69f414380.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -107,9 +107,9 @@
 						className: l.a.textColumn
 					}, r > 1 ? a.a.createElement(i.c, null, "Received the ", a.a.createElement(i.b, {
 						name: "award-name"
-					}, n.name), " Award and more in the past 30 days") : a.a.createElement(i.c, null, "Received the ", a.a.createElement(i.b, {
+					}, n.name), " ", "Award and more in the past 30 days") : a.a.createElement(i.c, null, "Received the ", a.a.createElement(i.b, {
 						name: "award-name"
-					}, n.name), " Award in the past 30 days")))
+					}, n.name), " ", "Award in the past 30 days")))
 				}
 			}
 			t.a = d
@@ -462,21 +462,21 @@
 				y = n.n(w),
 				I = n("./src/lib/classNames/index.ts"),
 				O = n("./src/reddit/actions/gold/modals.ts"),
-				E = n("./src/reddit/actions/profile/index.ts"),
-				_ = n("./src/higherOrderComponents/makeAsync.tsx"),
-				j = n("./src/lib/loadWithRetries/index.ts");
-			var M = Object(_.a)({
-					getComponent: () => Object(j.a)(() => n.e("GivePremiumModal").then(n.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
+				E = n("./src/reddit/actions/modal.ts"),
+				_ = n("./src/reddit/actions/multireddit/index.ts"),
+				j = n("./src/reddit/actions/profile/index.ts"),
+				M = n("./src/higherOrderComponents/makeAsync.tsx"),
+				P = n("./src/lib/loadWithRetries/index.ts");
+			var k = Object(M.a)({
+					getComponent: () => Object(P.a)(() => n.e("GivePremiumModal").then(n.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				P = n("./src/reddit/controls/InternalLink/index.tsx"),
-				k = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				N = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				S = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				L = n("./src/reddit/actions/modal.ts"),
-				T = n("./src/reddit/actions/multireddit/index.ts"),
-				D = n("./src/reddit/constants/modals.ts"),
+				N = n("./src/reddit/constants/modals.ts"),
+				S = n("./src/reddit/controls/InternalLink/index.tsx"),
+				L = n("./src/reddit/controls/OutboundLink/index.tsx"),
+				T = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				D = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				B = n("./src/reddit/models/Gold/Premium/index.ts"),
 				R = n("./src/reddit/selectors/premium.ts"),
 				A = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -515,7 +515,7 @@
 						isLoading: t
 					} = e, n = U(e, ["isLoading"]);
 					return s.a.createElement("div", W({}, n, {
-						className: Object(I.a)(F.a.Shimmer, Object(S.b)({
+						className: Object(I.a)(F.a.Shimmer, Object(D.b)({
 							isLoading: t
 						}))
 					}))
@@ -529,7 +529,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						Object(N.d)(N.a.GiftPremiumFlow), e();
+						Object(T.d)(T.a.GiftPremiumFlow), e();
 						const {
 							clickGivePremiumEvent: r
 						} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -603,12 +603,12 @@
 						expanded: t
 					} = this.state, n = this.makeMenuItems();
 					if (0 === n.length) return null;
-					const r = (t ? n : []).map(e => e.url ? e.isInternalLink ? s.a.createElement(P.a, {
+					const r = (t ? n : []).map(e => e.url ? e.isInternalLink ? s.a.createElement(S.a, {
 						key: e.url,
 						onClick: e.onClick,
 						to: e.url,
 						className: F.a.menuItem
-					}, e.text) : s.a.createElement(k.a, {
+					}, e.text) : s.a.createElement(L.a, {
 						key: e.url,
 						href: e.url,
 						isSponsored: !1,
@@ -643,7 +643,7 @@
 					}, s.a.createElement(p.n, {
 						className: F.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, a)), e && s.a.createElement(M, null))
+					}, a)), e && s.a.createElement(k, null))
 				}
 			}
 			var Z = Object(o.b)(H, (e, t) => {
@@ -652,10 +652,10 @@
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(T.g)(!0, !0)), e(Object(L.h)(D.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(_.g)(!0, !0)), e(Object(E.h)(N.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
 						onClickGivePremium: () => e(Object(O.e)(n)),
-						onModeratorsRequested: () => e(Object(E.b)(n))
+						onModeratorsRequested: () => e(Object(j.b)(n))
 					}
 				})(G),
 				V = n("./src/reddit/components/ProfileIdCard/index.m.less"),
@@ -1069,4 +1069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.23f6309bae8e8830fc68.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.bed32e19baf69f414380.js.map

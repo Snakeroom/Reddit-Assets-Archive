@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.165b59d123512361573e.js
-// Retrieved at 3/10/2020, 1:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1fa6fddafd1472b23e2d.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./src/graphql/operations/AllModerators.json": function(e) {
@@ -6794,7 +6794,7 @@
 					} = e;
 					return o.a.createElement(f, null, o.a.createElement(E, null, o.a.createElement(h.c, null, "Use of this site constitutes acceptance of our "), o.a.createElement(O, {
 						href: "".concat(n.a.redditUrl, "/help/useragreement")
-					}, o.a.createElement(h.c, null, "User Agreement")), o.a.createElement(h.c, null, " and  "), o.a.createElement(v, {
+					}, o.a.createElement(h.c, null, "User Agreement")), o.a.createElement(h.c, null, " and "), o.a.createElement(v, {
 						href: "".concat(n.a.redditUrl, "/help/privacypolicy")
 					}, o.a.createElement(h.c, null, "Privacy Policy")), Object(d.a)(t, "footer.legalbottom.part3", {
 						year: (new Date).getFullYear()
@@ -10632,8 +10632,8 @@
 							p(t, s)
 						},
 						subredditId: O
-					}), m > 0 && c.a.createElement(Nt, null, Be.fbt._("Items {startNumItems}-{endNumItems}", [Be.fbt._param("startNumItems", "".concat(E)), Be.fbt._param("endNumItems", "".concat(n))], {
-						hk: "1FkOkC"
+					}), m > 0 && c.a.createElement(Nt, null, Be.fbt._("Items {startNumItems}- {endNumItems}", [Be.fbt._param("startNumItems", "".concat(E)), Be.fbt._param("endNumItems", "".concat(n))], {
+						hk: "2B34NC"
 					}), c.a.createElement(Pt, null, "•"), Be.fbt._("{numSelected} selected", [Be.fbt._param("numSelected", "".concat(l))], {
 						hk: "4uf9Ow"
 					})))
@@ -14329,9 +14329,9 @@
 						className: d.a.textColumn
 					}, n > 1 ? a.a.createElement(i.c, null, "Received the ", a.a.createElement(i.b, {
 						name: "award-name"
-					}, s.name), " Award and more in the past 30 days") : a.a.createElement(i.c, null, "Received the ", a.a.createElement(i.b, {
+					}, s.name), " ", "Award and more in the past 30 days") : a.a.createElement(i.c, null, "Received the ", a.a.createElement(i.b, {
 						name: "award-name"
-					}, s.name), " Award in the past 30 days")))
+					}, s.name), " ", "Award in the past 30 days")))
 				}
 			}
 			t.a = l
@@ -24207,9 +24207,9 @@
 					className: Object(d.a)(ps.a.awardName, ps.a.unfilledAward)
 				}, r.a.createElement(Ie.c, null, "Create up to ", r.a.createElement(Ie.b, {
 					name: "quantity"
-				}, e.quantity), " more ", r.a.createElement(Ie.b, {
+				}, e.quantity), " more", " ", r.a.createElement(Ie.b, {
 					name: "coin-price"
-				}, e.coinPrice), " Coin ", r.a.createElement(Ie.a, {
+				}, e.coinPrice), " Coin", " ", r.a.createElement(Ie.a, {
 					name: "award",
 					singular: "Award",
 					plural: "Awards",
@@ -24616,7 +24616,7 @@
 						source: null,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/360024518712",
 						target: "_blank"
-					}, Object(Q.c)("Learn more.")), "  ", r.a.createElement("span", {
+					}, Object(Q.c)("Learn more.")), " ", " ", r.a.createElement("span", {
 						className: En.a.numCommunityTopicsSelected
 					}, r.a.createElement(en.a, {
 						subredditId: c
@@ -35443,4 +35443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.165b59d123512361573e.js.map
+//# sourceMappingURL=ModerationPages.1fa6fddafd1472b23e2d.js.map

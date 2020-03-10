@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.f49a369fe9027f733fa7.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.c749d736d7221257a614.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -79,7 +79,7 @@
 						name: "award-name"
 					}, t.name), " Award and gives the recipient 1 month of Premium.") : n.a.createElement(p.c, null, "Shows the ", n.a.createElement(p.b, {
 						name: "award-name"
-					}, t.name), " Award and gives the recipient ", n.a.createElement(p.b, {
+					}, t.name), " Award and gives the recipient", " ", n.a.createElement(p.b, {
 						name: "months-of-premium"
 					}, e), " months of Premium.")
 				}
@@ -501,4 +501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.f49a369fe9027f733fa7.js.map
+//# sourceMappingURL=AwardTooltip.c749d736d7221257a614.js.map

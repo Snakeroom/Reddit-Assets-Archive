@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.ece342a6f3e04e6c8a6e.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.300d0e473e6e01020ac6.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -522,7 +522,7 @@
 						className: C.a.text
 					}, a.a.createElement("li", null, a.a.createElement(m.c, null, "The owner sets the price for the banner")), a.a.createElement("li", null, "They pay a daily tax of ", a.a.createElement(m.b, {
 						name: "tax"
-					}, o), " by burning ", a.a.createElement(m.b, {
+					}, o), " ", "by burning ", a.a.createElement(m.b, {
 						name: "token"
 					}, s)), a.a.createElement("li", null, a.a.createElement(m.c, null, "If the owner cannot pay the tax, the price goes to 0")), a.a.createElement("li", null, a.a.createElement(m.c, null, "Anyone can buy the banner at its advertised price")), a.a.createElement("li", null, a.a.createElement(m.c, null, "The owner cannot refuse to sell it at that price"))))))
 				})),
@@ -1708,4 +1708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.ece342a6f3e04e6c8a6e.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.300d0e473e6e01020ac6.js.map

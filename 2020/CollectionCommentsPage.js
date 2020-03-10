@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a4224aafaf399a1d89f5.js
-// Retrieved at 3/10/2020, 1:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fec84938dd4b82bdd28d.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4787,8 +4787,8 @@
 						className: v.a.MoreCommentsButton,
 						onClick: n,
 						"data-redditstyle": !0
-					}, f._("View entire discussion ({number of comments} comments)", [f._param("number of comments", Object(d.b)(x))], {
-						hk: "2OrRQp"
+					}, f._("View entire discussion ( {number of comments} comments)", [f._param("number of comments", Object(d.b)(x))], {
+						hk: "OzcHJ"
 					})))
 				}
 			}
@@ -4870,7 +4870,7 @@
 					} = e;
 					return r.a.createElement(v, null, r.a.createElement(f, null, r.a.createElement(b.c, null, "Use of this site constitutes acceptance of our "), r.a.createElement(C, {
 						href: "".concat(n.a.redditUrl, "/help/useragreement")
-					}, r.a.createElement(b.c, null, "User Agreement")), r.a.createElement(b.c, null, " and  "), r.a.createElement(O, {
+					}, r.a.createElement(b.c, null, "User Agreement")), r.a.createElement(b.c, null, " and "), r.a.createElement(O, {
 						href: "".concat(n.a.redditUrl, "/help/privacypolicy")
 					}, r.a.createElement(b.c, null, "Privacy Policy")), Object(d.a)(t, "footer.legalbottom.part3", {
 						year: (new Date).getFullYear()
@@ -8197,25 +8197,25 @@
 				Oe = s.n(Ce);
 			const {
 				fbt: Ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), ye = () => Ee._("To keep Reddit and its communities safe, the Anti-Evil Operations team removes posts that violate Reddit's {=User Agreement} and {=Content Policy}.", [Ee._param("=User Agreement", o.a.createElement("a", {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), ye = () => Ee._("To keep Reddit and its communities safe, the Anti-Evil Operations team removes posts that violate Reddit's {=User Agreement} and {=Content Policy} .", [Ee._param("=User Agreement", o.a.createElement("a", {
 				className: Oe.a.link,
 				href: "https://www.redditinc.com/policies/user-agreement\\"
 			}, Ee._("User Agreement", null, {
-				hk: "2cojEr"
+				hk: "3MHgRl"
 			}))), Ee._param("=Content Policy", o.a.createElement("a", {
 				className: Oe.a.link,
 				href: "https://www.redditinc.com/policies/content-policy\\"
 			}, Ee._("Content Policy", null, {
-				hk: "1owvRc"
+				hk: "3UZthQ"
 			})))], {
-				hk: "3LJ7At"
-			}), je = () => Ee._("This content was removed for a violation of Reddit's {=Content Policy}.", [Ee._param("=Content Policy", o.a.createElement("a", {
+				hk: "4g3zuW"
+			}), je = () => Ee._("This content was removed for a violation of Reddit's {=Content Policy} .", [Ee._param("=Content Policy", o.a.createElement("a", {
 				className: Oe.a.link,
 				href: "https://www.redditinc.com/policies/content-policy\\"
 			}, Ee._("Content Policy", null, {
-				hk: "1fd4W1"
+				hk: "2X6v1w"
 			})))], {
-				hk: "3KOOQU"
+				hk: "4DbEQC"
 			});
 			var _e = e => {
 					const {
@@ -8323,14 +8323,14 @@
 									hk: "2X5ECb"
 								});
 							case S.g.CommunityOps:
-								return Ee._("To keep Reddit and its communities safe, the Community team occasionally removes posts from feeds. To learn more, {=just ask}.", [Ee._param("=just ask", o.a.createElement("a", {
+								return Ee._("To keep Reddit and its communities safe, the Community team occasionally removes posts from feeds. To learn more, {=just ask} .", [Ee._param("=just ask", o.a.createElement("a", {
 									className: Oe.a.link,
 									href: "".concat(ge.a.redditUrl, "/message/compose/?to=r/reddit.com"),
 									target: "_blank"
 								}, Ee._("just ask", null, {
-									hk: "2tChW8"
+									hk: "jn9ip"
 								})))], {
-									hk: "1gNycd"
+									hk: "3hMocZ"
 								});
 							case S.g.ContentTakedown:
 								return o.a.createElement(je, null);
@@ -10789,7 +10789,7 @@
 						className: L.a.background
 					}), a.a.createElement("div", {
 						className: L.a.layout
-					}, o ? a.a.createElement(C.c, null, "See more recommended") : a.a.createElement(C.c, null, d, " in ", a.a.createElement(C.b, {
+					}, o ? a.a.createElement(C.c, null, "See more recommended") : a.a.createElement(C.c, null, d, " in", " ", a.a.createElement(C.b, {
 						name: "subredditName"
 					}, r.displayText)), a.a.createElement(S.a, {
 						className: L.a.arrow
@@ -16654,4 +16654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.a4224aafaf399a1d89f5.js.map
+//# sourceMappingURL=CollectionCommentsPage.fec84938dd4b82bdd28d.js.map

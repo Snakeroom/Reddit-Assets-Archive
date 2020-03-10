@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.eef51167c2be11c80f72.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.82142f9bca1840a497e4.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1246,7 +1246,7 @@
 						className: k.a.mainContentHeader
 					}, o.a.createElement("h2", null, o.a.createElement("span", {
 						className: k.a.mainContentHeaderText
-					}, e ? i ? o.a.createElement(C.c, null, "Up-and-coming Communities") : o.a.createElement(C.c, null, "Today's Top Growing in ", o.a.createElement(C.b, {
+					}, e ? i ? o.a.createElement(C.c, null, "Up-and-coming Communities") : o.a.createElement(C.c, null, "Today's Top Growing in", " ", o.a.createElement(C.b, {
 						name: "categoryName"
 					}, T()(e))) : o.a.createElement(C.c, null, "Today's Top Growing Communities"))), d && o.a.createElement("span", {
 						className: k.a.mainContentRankChangeText
@@ -1528,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.eef51167c2be11c80f72.js.map
+//# sourceMappingURL=SubredditLeaderboard.82142f9bca1840a497e4.js.map

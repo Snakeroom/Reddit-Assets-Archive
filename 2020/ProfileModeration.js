@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.9c61394f9715d9458ac9.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.5f08fe47b0f4303219d1.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -303,7 +303,7 @@
 						href: "https://www.reddithelp.com/en/categories/using-reddit/profiles/profile-moderation-tools"
 					}, r.a.createElement(E.c, null, " moderation tools")), r.a.createElement(E.c, null, " and the "), r.a.createElement(g.m, {
 						href: "https://www.reddit.com/help/healthycommunities/"
-					}, r.a.createElement(E.c, null, "mod guidelines ")), r.a.createElement(E.c, null, "to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile.  Below, you'll find a basic guide for the tools provided to you:"))), r.a.createElement(S, {
+					}, r.a.createElement(E.c, null, "mod guidelines ")), r.a.createElement(E.c, null, "to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile. Below, you'll find a basic guide for the tools provided to you:"))), r.a.createElement(S, {
 						title: Object(c.c)("Traffic"),
 						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/traffic/")
 					}, r.a.createElement(E.c, null, "View traffic statistics and graphs for your profile.")), r.a.createElement(S, {
@@ -315,9 +315,9 @@
 					}, r.a.createElement(E.c, null, "The moderation log lists all mod actions taken by any mod on your profile. If you are the only moderator of your profile the only actions will be from you or Automoderator."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "If you add multiple moderators, the mod log can be helpful in seeing who has taken a particular action like banning a user or removing a comment.")), r.a.createElement(w, null, r.a.createElement(E.c, null, "The moderation log will also list actions taken by Automoderator if it is set up to make actions on your profile.")))), r.a.createElement(S, {
 						title: Object(c.c)("Automoderator"),
 						url: "".concat(p.a.redditUrl, "/").concat(t, "/wiki/edit/config/automoderator/")
-					}, r.a.createElement(r.a.Fragment, null, r.a.createElement(E.c, null, "Automoderator is our friendly robot that can be used to help you moderate your community.  Automod is a versatile tool that can be set up to remove or flag content posted on your page so you can review it."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "If you have questions about setting up rules, "), r.a.createElement(g.m, {
+					}, r.a.createElement(r.a.Fragment, null, r.a.createElement(E.c, null, "Automoderator is our friendly robot that can be used to help you moderate your community. Automod is a versatile tool that can be set up to remove or flag content posted on your page so you can review it."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "If you have questions about setting up rules,", " "), r.a.createElement(g.m, {
 						href: "".concat(p.a.redditUrl, "/r/automoderator")
-					}, "r/Automoderator"), r.a.createElement(E.c, null, " is a valuable resource for help and advice. You can see the "), r.a.createElement(g.m, {
+					}, "r/Automoderator"), r.a.createElement(E.c, null, " ", "is a valuable resource for help and advice. You can see the", " "), r.a.createElement(g.m, {
 						href: "".concat(p.a.redditUrl, "/wiki/automoderator/full-documentation")
 					}, r.a.createElement(E.c, null, "full documentation of how it works here")))))), r.a.createElement(S, {
 						title: Object(c.c)("Moderation queue"),
@@ -398,4 +398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.9c61394f9715d9458ac9.js.map
+//# sourceMappingURL=ProfileModeration.5f08fe47b0f4303219d1.js.map

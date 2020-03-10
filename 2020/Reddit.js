@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1acd6e70de76475c85e7.js
-// Retrieved at 3/10/2020, 1:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b771e0991beca3220038.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -6050,18 +6050,18 @@
 						style: Object.assign({}, e.style, {
 							transform: "\n              translateY(".concat(e.style.y, "px)\n              scale(").concat(e.style.x, ", ").concat(e.style.x, ")\n            ")
 						})
-					}, l.a.createElement($d, null), l.a.createElement(md, null, Jd._("Reddit is updating its {=User Agreement} and {=Privacy Policy}.", [Jd._param("=User Agreement", l.a.createElement(xd.a, {
+					}, l.a.createElement($d, null), l.a.createElement(md, null, Jd._("Reddit is updating its {=User Agreement} and {=Privacy Policy} .", [Jd._param("=User Agreement", l.a.createElement(xd.a, {
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank"
 					}, Jd._("User Agreement", null, {
-						hk: "3YDd1R"
+						hk: "XS57W"
 					}))), Jd._param("=Privacy Policy", l.a.createElement(xd.a, {
 						href: "https://www.reddit.com/help/privacypolicy",
 						target: "_blank"
 					}, Jd._("Privacy Policy", null, {
-						hk: "4EAMzY"
+						hk: "4j7vx4"
 					})))], {
-						hk: "1Oj4Vk"
+						hk: "TxCpk"
 					}), " "), l.a.createElement(el, {
 						type: "submit"
 					}, Jd._("Got it", null, {
@@ -11854,4 +11854,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Poll~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.1acd6e70de76475c85e7.js.map
+//# sourceMappingURL=Reddit.b771e0991beca3220038.js.map

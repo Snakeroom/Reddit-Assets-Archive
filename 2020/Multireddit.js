@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.1069646a98045ad518d7.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.bd81cc0ec39440a4b56e.js
+// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -2279,7 +2279,7 @@
 					singular: "community",
 					plural: "communities",
 					count: e.multireddit.subredditCount
-				}), " in this custom feed"), o.a.createElement("span", null, " • "), e.userIsOwner ? o.a.createElement(D, {
+				}), " ", "in this custom feed"), o.a.createElement("span", null, " • "), e.userIsOwner ? o.a.createElement(D, {
 					multireddit: e.multireddit
 				}) : o.a.createElement(o.a.Fragment, null, Object(j.c)("Curated by"), o.a.createElement(R.a, {
 					className: De.a.usernameLink,
@@ -2423,4 +2423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.1069646a98045ad518d7.js.map
+//# sourceMappingURL=Multireddit.bd81cc0ec39440a4b56e.js.map
