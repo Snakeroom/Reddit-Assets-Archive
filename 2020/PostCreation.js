@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fa74d28e7663ba61d8a7.js
-// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fd344374e23025a20cad.js
+// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -29231,8 +29231,8 @@
 				l = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
 				d = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: o.cb
-				}) === o.jb.Enabled
+					experimentName: o.ab
+				}) === o.hb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -29491,4 +29491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.fa74d28e7663ba61d8a7.js.map
+//# sourceMappingURL=PostCreation.fd344374e23025a20cad.js.map

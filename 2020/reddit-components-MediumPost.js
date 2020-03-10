@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ba47868567626a8bba88.js
-// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8edc9714e2ca759fcfdb.js
+// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -771,7 +771,7 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				n = r("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(n.D)(e) || s.l.Treatment1 === Object(o.c)(e, {
+				return Object(n.D)(e) || s.k.Treatment1 === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.e
 				})
@@ -779,4 +779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.ba47868567626a8bba88.js.map
+//# sourceMappingURL=reddit-components-MediumPost.8edc9714e2ca759fcfdb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.8b1e290d437be5fa49b0.js
-// Retrieved at 3/10/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.df92dd54ac5c9aaa5087.js
+// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, o, t) {
@@ -145,8 +145,8 @@
 				R = t("./src/reddit/i18n/utils.ts"),
 				H = t("./src/reddit/actions/comment/index.ts"),
 				D = t("./src/reddit/models/Comment/index.ts"),
-				P = t("./src/reddit/models/Flair/index.ts"),
-				B = t("./src/reddit/icons/fonts/Admin/index.tsx"),
+				B = t("./src/reddit/models/Flair/index.ts"),
+				P = t("./src/reddit/icons/fonts/Admin/index.tsx"),
 				F = t("./src/reddit/icons/fonts/Approve/index.tsx"),
 				U = t("./src/reddit/icons/fonts/Lock/index.tsx"),
 				G = t("./src/reddit/icons/fonts/helpers.tsx"),
@@ -190,7 +190,7 @@
 				return t
 			};
 			const se = m.a.wrapped(w.b, "RightPositionedAuthorFlair", ne.a),
-				de = m.a.wrapped(B.a, "AdminIcon", ne.a),
+				de = m.a.wrapped(P.a, "AdminIcon", ne.a),
 				ie = m.a.wrapped(F.a, "Approve", ne.a),
 				ce = m.a.wrapped(U.a, "Lock", ne.a),
 				le = m.a.div("AdminEmeritus", ne.a),
@@ -201,7 +201,7 @@
 				he = m.a.wrapped(z.a, "Report", ne.a),
 				be = m.a.wrapped(K.a, "Spam", ne.a),
 				ge = m.a.wrapped(V, "Op", ne.a),
-				Ie = m.a.wrapped(B.a, "Contractor", ne.a),
+				Ie = m.a.wrapped(P.a, "Contractor", ne.a),
 				Ee = m.a.a("MetaLink", ne.a),
 				xe = m.a.wrapped(q.a, "EditedText", ne.a),
 				ve = m.a.wrapped(q.a, "StickiedText", ne.a),
@@ -311,7 +311,7 @@
 					onShowTooltip: N,
 					opTooltipId: R,
 					openRemovalReasonModal: H,
-					publicAwardersEnabled: B,
+					publicAwardersEnabled: P,
 					removeTooltipId: F,
 					renderContractorBadge: U,
 					renderedInOverlay: G,
@@ -320,17 +320,17 @@
 					subredditDisplayText: V,
 					topTippersEnabled: J
 				} = e;
-				if (u.isDeleted) return a.a.createElement(Pe, ae({}, e, {
+				if (u.isDeleted) return a.a.createElement(Be, ae({}, e, {
 					className: Object(c.a)(i, ne.a.container, {
 						[ne.a.collapsed]: p
 					})
 				}));
-				if (p) return a.a.createElement(Be, ae({}, e, {
+				if (p) return a.a.createElement(Pe, ae({}, e, {
 					className: Object(c.a)(i, ne.a.container, {
 						[ne.a.collapsed]: p
 					})
 				}));
-				const z = !M && v === P.b.Left;
+				const z = !M && v === B.b.Left;
 				return a.a.createElement("div", {
 					className: Object(c.a)(i, ne.a.container, {
 						[ne.a.collapsed]: p,
@@ -417,12 +417,12 @@
 					contentId: u.id,
 					subredditId: u.subredditId
 				})), a.a.createElement(h.a, {
-					showAwarders: B,
+					showAwarders: P,
 					tooltipType: G ? k.c.Lightbox : void 0,
 					thing: u
 				}))
 			});
-			const Pe = e => {
+			const Be = e => {
 					const {
 						language: o,
 						childrenInfo: t,
@@ -439,7 +439,7 @@
 						language: o
 					}))
 				},
-				Be = e => {
+				Pe = e => {
 					const {
 						comment: o,
 						language: t,
@@ -759,11 +759,11 @@
 			const r = e => {
 				const o = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.ib
+					experimentName: n.gb
 				});
-				return Object(n.Pb)(o) ? void 0 : o
+				return Object(n.Nb)(o) ? void 0 : o
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~ModQueuePages.8b1e290d437be5fa49b0.js.map
+//# sourceMappingURL=ChatPost~ModQueuePages.df92dd54ac5c9aaa5087.js.map
