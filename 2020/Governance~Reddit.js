@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0641e00bc81df36d7d26.js
-// Retrieved at 3/10/2020, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.366916d203cbcf6a5ba9.js
+// Retrieved at 3/10/2020, 1:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -21274,7 +21274,7 @@
 		},
 		"./src/reddit/constants/wiki.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "l", (function() {
+			n.d(t, "m", (function() {
 				return r
 			})), n.d(t, "i", (function() {
 				return s
@@ -21282,22 +21282,24 @@
 				return o
 			})), n.d(t, "h", (function() {
 				return i
-			})), n.d(t, "e", (function() {
-				return c
 			})), n.d(t, "k", (function() {
+				return c
+			})), n.d(t, "e", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "l", (function() {
 				return d
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "a", (function() {
 				return u
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "g", (function() {
 				return l
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return b
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "b", (function() {
 				return p
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return f
+			})), n.d(t, "c", (function() {
+				return m
 			}));
 			var r;
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -21307,14 +21309,15 @@
 			const s = "index",
 				o = "pages",
 				i = "config/automoderator",
-				c = "reddit.com",
-				a = ["config/description", "config/sidebar", "config/stylesheet", "config/submit_text"],
-				d = "fromWikiEditButton",
-				u = 256,
-				l = 128,
-				b = new Set(["edit", "revisions", "settings", "discussions", "revisions", "pages", "create"]),
-				p = new Set(["reddit", "config", "special"]),
-				f = 3
+				c = "config/post_removal_message",
+				a = "reddit.com",
+				d = ["config/description", "config/sidebar", "config/stylesheet", "config/submit_text"],
+				u = "fromWikiEditButton",
+				l = 256,
+				b = 128,
+				p = new Set(["edit", "revisions", "settings", "discussions", "revisions", "pages", "create"]),
+				f = new Set(["reddit", "config", "special"]),
+				m = 3
 		},
 		"./src/reddit/contexts/PageLayer/index.tsx": function(e, t, n) {
 			"use strict";
@@ -61993,4 +61996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.0641e00bc81df36d7d26.js.map
+//# sourceMappingURL=Governance~Reddit.366916d203cbcf6a5ba9.js.map

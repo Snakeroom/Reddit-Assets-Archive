@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.9f29518c8f389b23fb00.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7775baa484b3279b2670.js
+// Retrieved at 3/10/2020, 1:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -242,7 +242,7 @@
 						wikiPageName: a
 					} = n, o = Object(A.a)(i, n);
 					let d = !1;
-					return I.k.includes(a || "") ? (await (async (e, t) => {
+					return I.l.includes(a || "") ? (await (async (e, t) => {
 						const s = "".concat(l.a.oldRedditUrl).concat(Object(u.b)(e));
 						window.location.href = s
 					})(e.url), d = !0) : i !== o && (await t(Object(r.c)(o)), d = !0), d
@@ -253,7 +253,7 @@
 							subredditName: d = I.e,
 							wikiPageName: c,
 							wikiSubRoute: l
-						} = t, m = s[S.w], u = s[S.x], p = m ? Object(v.a)(m) : void 0, b = u ? Object(v.a)(u) : void 0, h = c === I.j, O = l === I.l.Revisions;
+						} = t, m = s[S.w], u = s[S.x], p = m ? Object(v.a)(m) : void 0, b = u ? Object(v.a)(u) : void 0, h = c === I.j, O = l === I.m.Revisions;
 						let f = !1,
 							w = !1;
 						if (n) {
@@ -272,7 +272,7 @@
 							revisionId: p,
 							subredditName: d,
 							wikiPageName: c
-						}))), l === I.l.Settings && c && E.push(i(Object(_.c)(d, c))), c && p && b && E.push(i(P({
+						}))), l === I.m.Settings && c && E.push(i(Object(_.c)(d, c))), c && p && b && E.push(i(P({
 							comparisonRevisionId: b,
 							revisionId: p,
 							subredditName: d,
@@ -5496,7 +5496,7 @@
 					const u = Object(l.a)({
 						subredditName: s,
 						wikiPageName: r,
-						wikiSubRoute: d.l.Revisions
+						wikiSubRoute: d.m.Revisions
 					}, t);
 					return n.createElement("div", {
 						className: Object(a.a)(e, h.a.container, t ? h.a.mModHub : null)
@@ -5907,7 +5907,7 @@
 						v = Object(m.a)({
 							subredditName: b,
 							wikiPageName: x,
-							wikiSubRoute: f ? void 0 : l.l.Revisions
+							wikiSubRoute: f ? void 0 : l.m.Revisions
 						}, t);
 					return n.createElement("div", {
 						className: Object(a.a)(e, g.a.container, t ? g.a.mModHub : null)
@@ -6782,7 +6782,7 @@
 				i = s.n(n),
 				r = s("./src/reddit/constants/wiki.ts");
 			const a = e => {
-				return i()(e, e => "".concat(e.path, "/").startsWith("".concat(r.i, "/")) ? "\0".concat(e.path) : e.path).filter(e => !r.k.includes(e.path))
+				return i()(e, e => "".concat(e.path, "/").startsWith("".concat(r.i, "/")) ? "\0".concat(e.path) : e.path).filter(e => !r.l.includes(e.path))
 			};
 			t.a = e => {
 				const t = new Map,
@@ -6846,7 +6846,7 @@
 					const s = e.toLowerCase(),
 						r = s.split("/")[0],
 						o = n.b.has(r),
-						d = n.f.has(r) && s !== n.h;
+						d = n.f.has(r) && s !== n.h && s !== n.k;
 					if (o || d) return a.RestrictedPageName;
 					if (!i.test(s)) return a.InvalidPageName;
 					if (t) {
@@ -7062,16 +7062,16 @@
 						wikiPageName: a
 					} = s, o = n[k.w], d = n[k.x], c = k.y in n;
 					switch (r) {
-						case O.l.Create:
-						case O.l.Edit:
+						case O.m.Create:
+						case O.m.Edit:
 							return i.a.createElement(g.a, {
 								contentClassName: T.a.wikiPageEditorContent,
-								isCreation: r === O.l.Create,
+								isCreation: r === O.m.Create,
 								subredditName: t,
 								topBarClassName: T.a.communityWikiTopBar,
 								wikiPageName: a
 							});
-						case O.l.Revisions:
+						case O.m.Revisions:
 							return i.a.createElement(w.a, {
 								key: a,
 								isRecentRevisionsMode: !a,
@@ -7325,4 +7325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.9f29518c8f389b23fb00.js.map
+//# sourceMappingURL=SubredditWiki.7775baa484b3279b2670.js.map
