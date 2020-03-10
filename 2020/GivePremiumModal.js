@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.7cabf2201243c52eb2a0.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.318fd7919fd3decb4530.js
+// Retrieved at 3/9/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -63,8 +63,8 @@
 				u = n("./src/reddit/i18n/components.tsx"),
 				p = n("./src/reddit/i18n/utils.ts"),
 				h = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = n("./src/reddit/helpers/localStorage/index.ts"),
-				x = n("./src/reddit/helpers/trackers/givePremium.ts"),
+				x = n("./src/reddit/helpers/localStorage/index.ts"),
+				b = n("./src/reddit/helpers/trackers/givePremium.ts"),
 				g = n("./src/lib/constants/index.ts"),
 				O = n("./src/lib/makeActionCreator/index.ts"),
 				v = n("./src/reddit/actions/toaster.ts"),
@@ -197,20 +197,20 @@
 							message: a,
 							selectedPackage: i
 						} = this.state;
-						s(Object(x.clickConfirmEvent)()), t(n, i.monthsOfPremium, c, o, a, e)
+						s(Object(b.clickConfirmEvent)()), t(n, i.monthsOfPremium, c, o, a, e)
 					}, this.onClickClose = () => {
 						const {
 							closeModal: e,
 							sendEvent: t
 						} = this.props;
-						e(), t(Object(x.clickCloseModalEvent)())
+						e(), t(Object(b.clickCloseModalEvent)())
 					}, this.onClickOption = e => {
 						const {
 							sendEvent: t
 						} = this.props, n = e.value;
 						this.setState({
 							selectedPackage: n
-						}), t(Object(x.selectPremiumPackageEvent)(n))
+						}), t(Object(b.selectPremiumPackageEvent)(n))
 					}, this.handleToggleAnonymous = () => {
 						const {
 							sendEvent: e
@@ -219,7 +219,7 @@
 						} = this.state, n = t ? "uncheck" : "check";
 						this.setState({
 							isAnonymous: !t
-						}), e(Object(x.triggerAnonymousEvent)(n))
+						}), e(Object(b.triggerAnonymousEvent)(n))
 					}, this.handleToggleIncludeMessage = () => {
 						this.setState({
 							includeMessage: !this.state.includeMessage
@@ -228,7 +228,7 @@
 						const {
 							sendEvent: e
 						} = this.props;
-						e(Object(x.clickMessageInputEvent)())
+						e(Object(b.clickMessageInputEvent)())
 					}, this.handleMessageInput = e => {
 						const {
 							sendEvent: t
@@ -236,7 +236,7 @@
 						this.setState({
 							includeMessage: !0,
 							message: e.target.value
-						}), this.state.messageTypeEventSent || (t(Object(x.typeMessageInputEvent)()), this.setState({
+						}), this.state.messageTypeEventSent || (t(Object(b.typeMessageInputEvent)()), this.setState({
 							messageTypeEventSent: !0
 						}))
 					}
@@ -247,19 +247,19 @@
 						sendEvent: e
 					} = this.props;
 					this.setState({
-						isAnonymous: Object(b.k)()
-					}), e(Object(x.viewGivePremiumModalEvent)())
+						isAnonymous: Object(x.k)()
+					}), e(Object(b.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(b.N)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(x.N)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(U.b)(e, t).map(e => ({
-						displayText: Object(U.c)(e),
+					return Object(U.c)(e, t).map(e => ({
+						displayText: Object(U.d)(e),
 						value: e
 					}))
 				}
@@ -275,7 +275,7 @@
 						isAnonymous: i,
 						message: d,
 						selectedPackage: h
-					} = this.state, b = Object(U.c)(h), x = a ? [r.a.messageInputOpen] : "";
+					} = this.state, x = Object(U.d)(h), b = a ? [r.a.messageInputOpen] : "";
 					return o.a.createElement(A.c, {
 						className: e
 					}, o.a.createElement(A.g, null, o.a.createElement(F.a, null, o.a.createElement(A.n, null, o.a.createElement(u.c, null, "Give Premium")), o.a.createElement(W.a, {
@@ -288,11 +288,11 @@
 						user: "u/".concat(c)
 					})), o.a.createElement(G.b, {
 						className: r.a.dropdownSelector,
-						displayText: b,
+						displayText: x,
 						options: this.getDropdownMenuItems(),
 						onSelect: this.onClickOption
 					}), o.a.createElement("div", {
-						className: Object(m.a)(r.a.menuContent, x)
+						className: Object(m.a)(r.a.menuContent, b)
 					}, o.a.createElement("div", null, o.a.createElement(K.a, {
 						className: r.a.checkbox,
 						isSelected: i,
@@ -304,7 +304,7 @@
 						text: Object(p.c)("Add a message"),
 						onClick: this.handleToggleIncludeMessage
 					})), o.a.createElement(A.q, {
-						className: Object(m.a)(r.a.textArea, x),
+						className: Object(m.a)(r.a.textArea, b),
 						"data-redditstyle": !0,
 						value: d,
 						maxLength: 2048,
@@ -392,10 +392,10 @@
 				u = n("./src/reddit/controls/Dropdown/index.m.less"),
 				p = n.n(u),
 				h = n("./src/reddit/controls/Dropdown/row.m.less"),
-				b = n.n(h);
+				x = n.n(h);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -426,8 +426,8 @@
 						props: e
 					} = this, t = e.skipRoleAttr ? null : {
 						role: "menuitem"
-					}, n = Object(i.a)(b.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? a.a.createElement(r.a, x({}, t, {
+					}, n = Object(i.a)(x.a.iconWrapper, e.iconWrapperClassName);
+					return e.href ? a.a.createElement(r.a, b({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -440,8 +440,8 @@
 					}), e.children && a.a.createElement("span", {
 						className: n
 					}, e.children), a.a.createElement("span", {
-						className: Object(i.a)(b.a.text, e.textClassName)
-					}, e.displayText)) : a.a.createElement(m.a, x({}, t, {
+						className: Object(i.a)(x.a.text, e.textClassName)
+					}, e.displayText)) : a.a.createElement(m.a, b({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -452,9 +452,9 @@
 					}), e.children && (e.noIcon ? a.a.createElement("div", null, e.children) : a.a.createElement("span", {
 						className: n
 					}, e.children)), e.displayText && a.a.createElement("span", {
-						className: Object(i.a)(b.a.text, e.textClassName)
+						className: Object(i.a)(x.a.text, e.textClassName)
 					}, e.displayText), e.showSelectedCheckmark && e.isSelected && a.a.createElement(d.a, {
-						className: b.a.checkmark
+						className: x.a.checkmark
 					}), e.showDropdownTriangle && a.a.createElement(l.a, {
 						className: p.a.dropdownTriangle
 					}))
@@ -464,12 +464,12 @@
 				var {
 					className: t
 				} = e, n = g(e, ["className"]);
-				const s = Object(i.a)(b.a.row, t, {
-					[b.a.mIsInteractive]: !n.noHover,
-					[b.a.mIsSelected]: n.isSelected,
-					[b.a.topics]: n.isTopicsStyle
+				const s = Object(i.a)(x.a.row, t, {
+					[x.a.mIsInteractive]: !n.noHover,
+					[x.a.mIsSelected]: n.isSelected,
+					[x.a.topics]: n.isTopicsStyle
 				});
-				return a.a.createElement(O, x({
+				return a.a.createElement(O, b({
 					className: s
 				}, n))
 			}
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.7cabf2201243c52eb2a0.js.map
+//# sourceMappingURL=GivePremiumModal.318fd7919fd3decb4530.js.map

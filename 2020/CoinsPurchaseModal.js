@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.48521247659fa4e84558.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.f17f491bed417206df7c.js
+// Retrieved at 3/9/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -266,14 +266,14 @@
 				E = t("./src/reddit/models/User/index.ts"),
 				j = t("./src/reddit/selectors/gild.ts"),
 				x = t("./src/reddit/selectors/gold/giveAwards.ts"),
-				O = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				k = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				w = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				N = t("./src/reddit/selectors/platform.ts"),
-				k = t("./src/reddit/selectors/user.ts"),
+				O = t("./src/reddit/selectors/platform.ts"),
+				N = t("./src/reddit/selectors/user.ts"),
 				f = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				M = t("./src/reddit/controls/LoadingIcon/index.tsx"),
-				_ = t("./src/reddit/components/CoinPurchaseModal/index.m.less"),
-				I = t.n(_);
+				_ = t("./src/reddit/controls/LoadingIcon/index.tsx"),
+				M = t("./src/reddit/components/CoinPurchaseModal/index.m.less"),
+				I = t.n(M);
 			const {
 				fbt: T
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
@@ -299,19 +299,19 @@
 						"data-redditstyle": !0
 					}))), s.a.createElement("div", {
 						className: Object(l.a)(I.a.coinPurchaseBody, I.a.loaderContainer)
-					}, s.a.createElement(M.a, {
+					}, s.a.createElement(_.a, {
 						sizePx: 100
 					})))
 				},
 				R = t("./src/app/strings/index.ts"),
 				A = t("./src/config.ts"),
 				B = t("./src/lib/loadRedditAdsPixel.ts"),
-				F = t("./src/reddit/icons/fonts/Coin/index.tsx"),
-				G = t("./src/reddit/controls/Button/index.tsx"),
+				G = t("./src/reddit/icons/fonts/Coin/index.tsx"),
+				F = t("./src/reddit/controls/Button/index.tsx"),
 				D = t("./src/reddit/i18n/components.tsx");
 			var V = e => s.a.createElement("div", {
 				className: I.a.coinPurchaseFooter
-			}, s.a.createElement(G.f, {
+			}, s.a.createElement(F.f, {
 				className: I.a.coinPurchaseButton,
 				"data-redditstyle": !0,
 				onClick: e.onCloseClick
@@ -332,7 +332,7 @@
 						style: {
 							backgroundImage: 'url("'.concat(A.a.assetPath, '/img/gold/coins-hero.jpg")')
 						}
-					}, s.a.createElement(F.a, {
+					}, s.a.createElement(G.a, {
 						className: I.a.coinIcon
 					}), s.a.createElement("div", {
 						className: I.a.paymentCompleteTitleMain
@@ -356,25 +356,25 @@
 			}
 			var L = Object(g.b)(H),
 				W = t("./node_modules/react-stripe-elements/es/index.js"),
-				q = t("./src/lib/constants/index.ts"),
-				Y = t("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				Z = t("./src/reddit/components/CheckoutForm/index.tsx"),
-				Q = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				J = t("./src/reddit/i18n/utils.ts"),
-				U = t("./src/reddit/components/StripePaymentForm/index.m.less"),
-				K = t.n(U);
+				Z = t("./src/lib/constants/index.ts"),
+				q = t("./src/reddit/components/PaymentMethodSelector/index.tsx"),
+				Q = t("./src/reddit/components/CheckoutForm/index.tsx"),
+				Y = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				U = t("./src/reddit/i18n/utils.ts"),
+				J = t("./src/reddit/components/StripePaymentForm/index.m.less"),
+				K = t.n(J);
 			var z = e => {
 					const {
 						onToggleRememberCard: a,
 						rememberCard: t
 					} = e;
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(Z.a, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.a, {
 						className: K.a.creditCard
-					}), s.a.createElement(Q.a, {
+					}), s.a.createElement(Y.a, {
 						className: K.a.saveCardCheckbox,
 						isSelected: t,
 						onClick: a,
-						text: Object(J.c)("Remember this card")
+						text: Object(U.c)("Remember this card")
 					}), s.a.createElement("a", {
 						href: "https://stripe.com",
 						target: "_blank"
@@ -458,7 +458,7 @@
 			}
 			var te = ae;
 			const ne = Object(o.c)({
-				language: k.O,
+				language: N.O,
 				rememberCard: w.r,
 				savedCard: e => Object(w.t)(e)[0],
 				stripeInfoLoading: w.s
@@ -477,7 +477,7 @@
 					} = this.props, d = i, m = !d && c, u = !d && !m, p = d ? K.a.loadingState : m ? K.a.savedCardState : K.a.formState;
 					return s.a.createElement("div", {
 						className: Object(l.a)(K.a.stripePaymentForm, p, e)
-					}, d && s.a.createElement(M.a, {
+					}, d && s.a.createElement(_.a, {
 						className: K.a.loader,
 						sizePx: 60
 					}), m && c && s.a.createElement("form", null, s.a.createElement(te, {
@@ -582,10 +582,10 @@
 					}, s.a.createElement(ie.a, {
 						className: I.a.coinBalance,
 						coinBalance: e
-					}), n === q.vb && s.a.createElement(Ce, {
+					}), n === Z.vb && s.a.createElement(Ce, {
 						className: Object(l.a)(I.a.coinPurchaseButton, I.a.paypalCheckoutButton),
 						coinPackage: a
-					}), n === q.ub && s.a.createElement(G.f, {
+					}), n === Z.ub && s.a.createElement(F.f, {
 						className: I.a.coinPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: r || t,
@@ -601,7 +601,7 @@
 				style: {
 					backgroundImage: 'url("'.concat(A.a.assetPath, '/img/gold/coins-hero.jpg")')
 				}
-			}, s.a.createElement(F.a, {
+			}, s.a.createElement(G.a, {
 				className: I.a.coinIcon
 			}), s.a.createElement("div", {
 				className: I.a.titleMain
@@ -669,13 +669,13 @@
 				onCloseClick: e.onCloseModal
 			}), s.a.createElement("div", {
 				className: I.a.coinPurchaseBody
-			}, s.a.createElement(Y.a, {
+			}, s.a.createElement(q.a, {
 				className: I.a.selectPayment,
 				gildThingId: e.gildThingId,
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === q.ub && s.a.createElement(re, {
+			}), e.selectedPayment === Z.ub && s.a.createElement(re, {
 				nightmode: e.nightmode
 			}), s.a.createElement("div", {
 				className: I.a.checkoutFooter
@@ -683,9 +683,9 @@
 				className: I.a.coinPurchaseTotal
 			}, Object(R.a)(e.language, "gold.purchaseCoinsModal.totalAmount", {
 				amount: e.purchasePackage.pennies / 100
-			}))), e.selectedPayment === q.vb && e.paypalErrorMessage && s.a.createElement("div", {
+			}))), e.selectedPayment === Z.vb && e.paypalErrorMessage && s.a.createElement("div", {
 				className: I.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === q.ub && e.stripeErrorMessage && s.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === Z.ub && e.stripeErrorMessage && s.a.createElement("div", {
 				className: I.a.errorMessage
 			}, e.stripeErrorMessage), s.a.createElement("div", {
 				className: I.a.agreementLink
@@ -721,30 +721,30 @@
 			const xe = Object(o.c)({
 					activePage: w.a,
 					allowNavigationCallback: e => {
-						const a = Object(N.a)(e);
+						const a = Object(O.a)(e);
 						return null === a ? void 0 : a
 					},
-					coinBalance: k.d,
-					coinPackages: O.b,
+					coinBalance: N.d,
+					coinPackages: k.b,
 					coinsToPurchase: w.d,
 					gildThingId: w.b,
 					isIframed: j.h,
-					language: k.O,
-					nightmode: k.Q,
+					language: N.O,
+					nightmode: N.Q,
 					savedCardsPending: w.s,
 					selectedAward: x.a,
 					selectedPayment: w.e,
 					stripeErrorMessage: w.l,
 					stripeTokenPending: w.o,
 					paypalErrorMessage: w.f,
-					purchaseCatalogError: O.c,
-					purchaseCatalogPending: O.d,
+					purchaseCatalogError: k.d,
+					purchaseCatalogPending: k.e,
 					userName: e => {
-						const a = Object(k.i)(e);
+						const a = Object(N.i)(e);
 						return "u/".concat(Object(E.f)(a))
 					}
 				}),
-				Oe = Object(r.b)(xe, (e, a) => ({
+				ke = Object(r.b)(xe, (e, a) => ({
 					closeModal: () => {
 						e(Object(m.e)()), e(Object(d.a)())
 					},
@@ -831,8 +831,8 @@
 						userName: x
 					} = this.props;
 					if (g) return m(g), p(), null;
-					const O = !!o,
-						w = Object(P.b)(r, n, O);
+					const k = !!o,
+						w = Object(P.b)(r, n, k);
 					return C || !w ? s.a.createElement("div", {
 						className: a
 					}, s.a.createElement(S, {
@@ -858,15 +858,15 @@
 						userName: x
 					}), "paymentCompleted" === e && s.a.createElement(L, {
 						isCompletePaypal: c,
-						isGild: O,
+						isGild: k,
 						language: i,
 						onCloseClick: p,
 						userName: x
 					}))
 				}
 			}
-			const Ne = Object(c.a)(we);
-			a.default = Oe(Object(g.b)(class extends s.a.PureComponent {
+			const Oe = Object(c.a)(we);
+			a.default = ke(Object(g.b)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -886,7 +886,7 @@
 						paddingTop: 12,
 						paddingBottom: 12
 					} : {});
-					return s.a.createElement(Ne, je({}, this.props, {
+					return s.a.createElement(Oe, je({}, this.props, {
 						className: Object(l.a)(this.props.className, I.a.coinPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1181,11 +1181,12 @@
 		"./src/reddit/models/Gold/Coins/index.ts": function(e, a, t) {
 			"use strict";
 			t.d(a, "b", (function() {
-				return n
-			})), t.d(a, "a", (function() {
 				return s
+			})), t.d(a, "a", (function() {
+				return r
 			}));
-			const n = (e, a, t) => {
+			var n = t("./node_modules/fbt/lib/FbtPublic.js");
+			const s = (e, a, t) => {
 					let n = null;
 					for (const s of a) {
 						const a = n ? n.coins : 1 / 0,
@@ -1197,30 +1198,62 @@
 					}
 					return n
 				},
-				s = [{
-					prompt: "What are Coins?",
-					answer: ["Coins are our virtual good, and you can use them to award exceptional", "posts or comments, giving them Silver, Gold, or Platinum. We'll be adding cool", "new ways to spend your Coins in the future."].join(" ")
+				r = [{
+					prompt: () => n.fbt._("What are Coins?", null, {
+						hk: "1wU35D"
+					}),
+					answer: () => n.fbt._("Coins are our virtual good, and you can use them to award exceptional posts or comments, giving them Silver, Gold, or Platinum. We'll be adding cool new ways to spend your Coins in the future.", null, {
+						hk: "4Wf9n"
+					})
 				}, {
-					prompt: 'What is "Give Award"?',
-					answer: 'Giving an Award, or "gilding", is a way to show appreciation for an exceptional contribution to Reddit. You can award someone by clicking on "Give Award" below their post or comment. This distinguishes it with an Award for all to see, and some even grant the honoree special bonus benefits.'
+					prompt: () => n.fbt._('What is "Give Award"?', null, {
+						hk: "Q08fJ"
+					}),
+					answer: () => n.fbt._('Giving an Award, or "gilding", is a way to show appreciation for an exceptional contribution to Reddit. You can award someone by clicking on "Give Award" below their post or comment. This distinguishes it with an Award for all to see, and some even grant the honoree special bonus benefits.', null, {
+						hk: "4fZWQ3"
+					})
 				}, {
-					prompt: "What are these new Award types?",
-					answer: ["There are now several ways to Give Awards. A Silver Award requires 100 Coins, ", "which simply marks a post or comment with a Silver Award icon. A classic Gold Award ", "requires 500 Coins and gives the recipient a week of Reddit Premium membership ", "and 100 Coins. Finally, the ultra rare Platinum Award costs 1800 Coins, ", "and gives the recipient with one month of Reddit Premium membership, which includes 700 ", "Coins for that month."].join(" ")
+					prompt: () => n.fbt._("What are these new Award types?", null, {
+						hk: "2ysK1l"
+					}),
+					answer: () => n.fbt._("There are now several ways to Give Awards. A Silver Award requires 100 Coins, which simply marks a post or comment with a Silver Award icon. A classic Gold Award requires 500 Coins and gives the recipient a week of Reddit Premium membership and 100 Coins. Finally, the ultra rare Platinum Award costs 1800 Coins, and gives the recipient with one month of Reddit Premium membership, which includes 700 Coins for that month.", null, {
+						hk: "sPegC"
+					})
 				}, {
-					prompt: "I bought Coins, how can I tell how many I have?",
-					answer: "If you buy Coins you will always have a balance associated with your Reddit account. You can view your balance on the top navigation bar by your username."
+					prompt: () => n.fbt._("I bought Coins, how can I tell how many I have?", null, {
+						hk: "VVChk"
+					}),
+					answer: () => n.fbt._("If you buy Coins you will always have a balance associated with your Reddit account. You can view your balance on the top navigation bar by your username.", null, {
+						hk: "1ZHMGy"
+					})
 				}, {
-					prompt: "Can I transfer Coins between Reddit accounts?",
-					answer: "You cannot transfer your Reddit Coin balance across usernames, sorry. You can offer a Gold Award to other users which will grant them 100 Coins."
+					prompt: () => n.fbt._("Can I transfer Coins between Reddit accounts?", null, {
+						hk: "1VS4Gc"
+					}),
+					answer: () => n.fbt._("You cannot transfer your Reddit Coin balance across usernames, sorry. You can offer a Gold Award to other users which will grant them 100 Coins.", null, {
+						hk: "46q9mb"
+					})
 				}, {
-					prompt: "Can I get Coins for free?",
-					answer: "We may give away Coins on special occasions. Stay tuned!"
+					prompt: () => n.fbt._("Can I get Coins for free?", null, {
+						hk: "2Qzs1G"
+					}),
+					answer: () => n.fbt._("We may give away Coins on special occasions. Stay tuned!", null, {
+						hk: "30yIpE"
+					})
 				}, {
-					prompt: "What happened to Creddits? Do those still exist?",
-					answer: "Yes, Creddits are simply called \"Coins\" now, and we've converted any existing balance at a generous exchange rate of one Creddit to 2000 Coins. That's double their original monetary value as a thank you for supporting us early. Use them to award exceptional posts and comments you come across. Thanks again for your contribution to the Reddit community."
+					prompt: () => n.fbt._("What happened to Creddits? Do those still exist?", null, {
+						hk: "qTu5W"
+					}),
+					answer: () => n.fbt._("Yes, Creddits are simply called \"Coins\" now, and we've converted any existing balance at a generous exchange rate of one Creddit to 2000 Coins. That's double their original monetary value as a thank you for supporting us early. Use them to award exceptional posts and comments you come across. Thanks again for your contribution to the Reddit community.", null, {
+						hk: "3ZI3ct"
+					})
 				}, {
-					prompt: "I thought Gold was the name of Reddit's subscription membership?",
-					answer: 'You\'re correct, it used to also be the name of the subscription membership. However, many people confused the subscription "Reddit Gold" membership with a virtual good or coin. To make things easier to understand, we\'ve renamed the membership to "Reddit Premium", while our virtual good is called "Coins".'
+					prompt: () => n.fbt._("I thought Gold was the name of Reddit's subscription membership?", null, {
+						hk: "26YDse"
+					}),
+					answer: () => n.fbt._('You\'re correct, it used to also be the name of the subscription membership. However, many people confused the subscription "Reddit Gold" membership with a virtual good or coin. To make things easier to understand, we\'ve renamed the membership to "Reddit Premium", while our virtual good is called "Coins".', null, {
+						hk: "FjaSU"
+					})
 				}]
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, a, t) {
@@ -1232,4 +1265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.48521247659fa4e84558.js.map
+//# sourceMappingURL=CoinsPurchaseModal.f17f491bed417206df7c.js.map

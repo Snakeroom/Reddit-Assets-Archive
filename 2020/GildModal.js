@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.94a0e5bf9813165f2f7a.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.5f602447e414dfde9e82.js
+// Retrieved at 3/9/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -11,8 +11,8 @@
 				c = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/lib/sentry/index.ts"),
 				a = s("./src/lib/constants/index.ts"),
-				i = s("./src/lib/makeApiRequest/index.ts"),
-				r = s("./src/lib/makeGqlRequest/index.ts"),
+				r = s("./src/lib/makeApiRequest/index.ts"),
+				i = s("./src/lib/makeGqlRequest/index.ts"),
 				d = s("./src/lib/omitHeaders/index.ts"),
 				l = s("./src/graphql/operations/FetchActiveCoinSale.json"),
 				u = s("./src/reddit/constants/headers.ts"),
@@ -75,7 +75,7 @@
 					let {
 						gqlContext: n
 					} = s;
-					const c = await (e => Object(r.a)(e, Object.assign({}, l)))(n());
+					const c = await (e => Object(i.a)(e, Object.assign({}, l)))(n());
 					if (c.ok) {
 						const t = c.body.data.coinSale;
 						await e(C(t))
@@ -89,7 +89,7 @@
 						const t = await (async e => {
 							const t = "".concat(e.apiUrl, "/api/v2/gold/purchase_package_details"),
 								s = Object(p.a)(t);
-							return Object(i.b)(Object(d.a)(e, [u.a]), {
+							return Object(r.b)(Object(d.a)(e, [u.a]), {
 								method: a.cb.GET,
 								endpoint: s
 							}).then(m.c).then(g)
@@ -97,8 +97,8 @@
 						if (!t.ok) throw new Error(t.error && t.error.type || "Unknown error");
 						const s = t.body;
 						e(j(s))
-					} catch (r) {
-						o.c.captureException(r);
+					} catch (i) {
+						o.c.captureException(i);
 						const t = n.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
@@ -116,12 +116,12 @@
 				c = s("./src/lib/loadWithRetries/index.ts"),
 				o = s("./src/reddit/helpers/loadThirdPartyScript.ts");
 			const a = () => Object(c.a)(() => Promise.all([Promise.all([s.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~61cbc843"), s.e("CoinsPurchaseModal")]).then(s.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx")), Object(o.c)()])).then(e => e[0].default),
-				i = Object(n.a)({
+				r = Object(n.a)({
 					getComponent: a,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				});
-			t.a = i
+			t.a = r
 		},
 		"./src/reddit/components/GildModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -135,8 +135,8 @@
 				c = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/reddit/actions/gold/modals.ts"),
-				r = s("./src/reddit/constants/colors.ts"),
+				r = s("./src/reddit/actions/gold/modals.ts"),
+				i = s("./src/reddit/constants/colors.ts"),
 				d = s("./src/reddit/selectors/gild.ts"),
 				l = s("./src/reddit/selectors/goldPurchaseModals.ts"),
 				u = s("./src/higherOrderComponents/asModal/index.tsx"),
@@ -166,13 +166,13 @@
 					}) : null
 				}),
 				f = {
-					backgroundColor: r.a.overlayReportFlow
+					backgroundColor: i.a.overlayReportFlow
 				},
 				C = {
 					backgroundColor: "transparent"
 				},
 				y = Object(o.b)(x, e => ({
-					closeGildModal: () => e(Object(i.a)())
+					closeGildModal: () => e(Object(r.a)())
 				}));
 			t.default = y(e => c.a.createElement(g, h({}, e, {
 				className: b.a.gildModal,
@@ -196,9 +196,9 @@
 				c = s.n(n),
 				o = s("./src/lib/classNames/index.ts"),
 				a = s("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				i = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				r = s("./src/reddit/controls/CheckboxWithLabel/index.m.less"),
-				d = s.n(r);
+				r = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				i = s("./src/reddit/controls/CheckboxWithLabel/index.m.less"),
+				d = s.n(i);
 			t.a = e => c.a.createElement("button", {
 				"aria-checked": e.isSelected,
 				"aria-disabled": e.disabled,
@@ -211,7 +211,7 @@
 			}, c.a.createElement("span", {
 				tabIndex: -1,
 				className: d.a.labelContent
-			}, e.isSelected ? c.a.createElement(i.a, {
+			}, e.isSelected ? c.a.createElement(r.a, {
 				className: d.a.checkboxSelected
 			}) : c.a.createElement(a.a, {
 				className: d.a.checkbox
@@ -231,13 +231,13 @@
 				c = s("./src/lib/fastdom/index.ts");
 			const o = "https://js.stripe.com/v3/",
 				a = "https://www.paypalobjects.com/api/checkout.js",
-				i = {
+				r = {
 					checkout: "https://js.braintreegateway.com/web/3.44.2/js/paypal-checkout.min.js",
 					client: "https://js.braintreegateway.com/web/3.44.2/js/client.min.js",
 					paypal: "https://www.paypal.com/sdk/js?client-id=".concat(n.a.paypal.braintreeApiKey) + "&currency=USD&vault=true"
 				};
 
-			function r(e, t) {
+			function i(e, t) {
 				return t() ? Promise.resolve() : new Promise((s, n) => c.a.write(() => {
 					t() && s();
 					const n = document.head;
@@ -249,19 +249,19 @@
 			}
 
 			function d() {
-				return r(o, () => "undefined" != typeof Stripe)
+				return i(o, () => "undefined" != typeof Stripe)
 			}
 
 			function l() {
-				return r(a, () => "undefined" != typeof paypalCheckout).then(() => {
+				return i(a, () => "undefined" != typeof paypalCheckout).then(() => {
 					"undefined" == typeof paypalCheckout && "undefined" != typeof window && (window.paypalCheckout = paypal), paypal = void 0
 				})
 			}
 
 			function u() {
-				return Promise.all(Object.keys(i).map(e => {
+				return Promise.all(Object.keys(r).map(e => {
 					const t = "__" + e;
-					return r(i[e], () => void 0 !== window[t]).then(() => {
+					return i(r[e], () => void 0 !== window[t]).then(() => {
 						window[t] = !0
 					})
 				}))
@@ -279,14 +279,14 @@
 				c = s.n(n),
 				o = s("./src/reddit/constants/colors.ts"),
 				a = s("./src/reddit/icons/fonts/helpers.tsx"),
-				i = s("./src/reddit/icons/fonts/Coin/index.m.less"),
-				r = s.n(i);
+				r = s("./src/reddit/icons/fonts/Coin/index.m.less"),
+				i = s.n(r);
 			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => c.a.createElement("i", {
 				className: "".concat(Object(a.b)("coin"), " ").concat(e.className),
 				style: {
 					color: e.fillColor || o.a.gold
 				}
-			}), "CoinIcon", r.a);
+			}), "CoinIcon", i.a);
 			t.a = d
 		},
 		"./src/reddit/icons/svgs/Premium/index.tsx": function(e, t, s) {
@@ -308,16 +308,19 @@
 				return n
 			})), s.d(t, "b", (function() {
 				return c
-			})), s.d(t, "d", (function() {
-				return o
 			})), s.d(t, "c", (function() {
+				return o
+			})), s.d(t, "e", (function() {
 				return a
+			})), s.d(t, "d", (function() {
+				return r
 			}));
 			const n = e => e.goldPurchase.purchaseCatalog.activeCoinSale,
 				c = e => e.goldPurchase.purchaseCatalog.coinPackages,
-				o = e => e.goldPurchase.purchaseCatalog.pending,
-				a = e => e.goldPurchase.purchaseCatalog.errorMessage
+				o = e => e.goldPurchase.purchaseCatalog.premiumPackages,
+				a = e => e.goldPurchase.purchaseCatalog.pending,
+				r = e => e.goldPurchase.purchaseCatalog.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.94a0e5bf9813165f2f7a.js.map
+//# sourceMappingURL=GildModal.5f602447e414dfde9e82.js.map

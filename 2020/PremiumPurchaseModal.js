@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.9b0efc5603fb0ed33dbd.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a4035d4f34c96e10a42e.js
+// Retrieved at 3/9/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -51,8 +51,8 @@
 				r = a("./node_modules/react-redux/es/index.js"),
 				o = a("./node_modules/reselect/es/index.js"),
 				c = a("./src/lib/classNames/index.ts"),
-				i = a("./node_modules/react-stripe-elements/es/index.js"),
-				l = a("./src/reddit/i18n/utils.ts"),
+				l = a("./node_modules/react-stripe-elements/es/index.js"),
+				i = a("./src/reddit/i18n/utils.ts"),
 				d = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				m = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				u = a("./src/reddit/components/CheckoutForm/index.m.less"),
@@ -124,61 +124,61 @@
 							[p.a.cardInputError]: !!d
 						}),
 						type: "text",
-						placeholder: Object(l.c)("NAME ON CARD"),
+						placeholder: Object(i.c)("NAME ON CARD"),
 						onChange: this.onChange,
 						value: n
 					})), s.a.createElement("div", {
 						className: p.a.formCell
-					}, s.a.createElement(i.CardNumberElement, {
+					}, s.a.createElement(l.CardNumberElement, {
 						className: Object(c.a)(p.a.cardInput, {
 							[p.a.cardInputError]: !!r
 						}),
 						onChange: o,
 						onReady: this.onCardNumberReady,
-						placeholder: Object(l.c)("CARD NUMBER"),
+						placeholder: Object(i.c)("CARD NUMBER"),
 						style: b
 					}), !u && s.a.createElement("div", {
 						className: p.a.elementPlaceholder
-					}, Object(l.c)("CARD NUMBER"))), s.a.createElement("div", {
+					}, Object(i.c)("CARD NUMBER"))), s.a.createElement("div", {
 						className: p.a.formCell
-					}, s.a.createElement(i.CardExpiryElement, {
+					}, s.a.createElement(l.CardExpiryElement, {
 						className: Object(c.a)(p.a.cardInput, {
 							[p.a.cardInputError]: !!a
 						}),
 						onChange: o,
 						onReady: this.onCardExpiryReady,
-						placeholder: Object(l.c)("MM/YY"),
+						placeholder: Object(i.c)("MM/YY"),
 						style: b
 					}), !h && s.a.createElement("div", {
 						className: p.a.elementPlaceholder
-					}, Object(l.c)("MM/YY"))), s.a.createElement("div", {
+					}, Object(i.c)("MM/YY"))), s.a.createElement("div", {
 						className: p.a.formCell
-					}, s.a.createElement(i.CardCVCElement, {
+					}, s.a.createElement(l.CardCVCElement, {
 						className: Object(c.a)(p.a.cardInput, {
 							[p.a.cardInputError]: !!t
 						}),
 						onChange: o,
 						onReady: this.onCardCVCReady,
-						placeholder: Object(l.c)("CCV"),
+						placeholder: Object(i.c)("CCV"),
 						style: b
 					}), !y && s.a.createElement("div", {
 						className: p.a.elementPlaceholder
-					}, Object(l.c)("CCV"))), s.a.createElement("div", {
+					}, Object(i.c)("CCV"))), s.a.createElement("div", {
 						className: p.a.formCell
-					}, s.a.createElement(i.PostalCodeElement, {
+					}, s.a.createElement(l.PostalCodeElement, {
 						className: Object(c.a)(p.a.cardInput, {
 							[p.a.cardInputError]: !!m
 						}),
 						onChange: o,
 						onReady: this.onPostalCodeReady,
-						placeholder: Object(l.c)("ZIP CODE"),
+						placeholder: Object(i.c)("ZIP CODE"),
 						style: b
 					}), !g && s.a.createElement("div", {
 						className: p.a.elementPlaceholder
-					}, Object(l.c)("ZIP CODE"))))
+					}, Object(i.c)("ZIP CODE"))))
 				}
 			}
-			t.a = Object(i.injectStripe)(y(g))
+			t.a = Object(l.injectStripe)(y(g))
 		},
 		"./src/reddit/components/PaymentMethodSelector/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -195,9 +195,9 @@
 				r = a.n(s),
 				o = a("./src/lib/classNames/index.ts"),
 				c = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				i = a("./src/reddit/helpers/trackers/goldPayment.ts"),
-				l = a("./src/reddit/components/PaymentMethodSelector/index.m.less"),
-				d = a.n(l);
+				l = a("./src/reddit/helpers/trackers/goldPayment.ts"),
+				i = a("./src/reddit/components/PaymentMethodSelector/index.m.less"),
+				d = a.n(i);
 			const m = e => r.a.createElement("label", {
 				className: Object(o.a)(e.className, d.a.paymentOption)
 			}, r.a.createElement("input", {
@@ -223,10 +223,10 @@
 							} = this.props;
 						switch (t) {
 							case "creditCard":
-								s(Object(i.d)(a));
+								s(Object(l.d)(a));
 								break;
 							case "paypal":
-								s(Object(i.e)(a))
+								s(Object(l.e)(a))
 						}
 						return n(t)
 					}
@@ -316,8 +316,8 @@
 				r = a("./node_modules/react-redux/es/index.js"),
 				o = a("./node_modules/reselect/es/index.js"),
 				c = a("./src/config.ts"),
-				i = a("./src/higherOrderComponents/asModal/index.tsx"),
-				l = a("./src/lib/classNames/index.ts"),
+				l = a("./src/higherOrderComponents/asModal/index.tsx"),
+				i = a("./src/lib/classNames/index.ts"),
 				d = a("./src/lib/constants/index.ts"),
 				m = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				u = a("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
@@ -330,62 +330,62 @@
 				E = a("./src/reddit/selectors/platform.ts"),
 				P = a("./src/reddit/selectors/user.ts"),
 				v = a("./src/app/strings/index.ts"),
-				j = a("./src/lib/loadRedditAdsPixel.ts"),
-				N = a("./src/reddit/i18n/components.tsx"),
-				O = a("./src/reddit/i18n/utils.ts"),
-				f = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				w = a("./src/reddit/helpers/createEmojiText/index.tsx"),
-				x = a("./src/reddit/icons/fonts/Premium/index.tsx"),
-				k = a("./src/reddit/controls/Button/index.tsx"),
-				M = a("./src/reddit/components/PremiumPurchaseModal/index.m.less"),
-				_ = a.n(M);
+				f = a("./src/lib/loadRedditAdsPixel.ts"),
+				j = a("./src/reddit/i18n/components.tsx"),
+				N = a("./src/reddit/i18n/utils.ts"),
+				O = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				k = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				w = a("./src/reddit/icons/fonts/Premium/index.tsx"),
+				x = a("./src/reddit/controls/Button/index.tsx"),
+				_ = a("./src/reddit/components/PremiumPurchaseModal/index.m.less"),
+				M = a.n(_);
 			var I = e => s.a.createElement("div", {
-				className: _.a.premiumPurchaseFooter
-			}, s.a.createElement(k.f, {
-				className: _.a.premiumPurchaseButton,
+				className: M.a.premiumPurchaseFooter
+			}, s.a.createElement(x.f, {
+				className: M.a.premiumPurchaseButton,
 				"data-redditstyle": !0,
 				onClick: e.onCloseClick
-			}, s.a.createElement(N.c, null, "Done")));
+			}, s.a.createElement(j.c, null, "Done")));
 			class R extends s.a.PureComponent {
 				componentDidMount() {
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(g.h)()), Object(j.b)()
+					e(Object(g.h)()), Object(f.b)()
 				}
 				render() {
 					const e = this.props;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-						className: _.a.paymentCompleteHeader,
+						className: M.a.paymentCompleteHeader,
 						style: {
 							backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/premium-hero-g.jpg")')
 						}
-					}, s.a.createElement(x.a, {
-						className: _.a.premiumIcon,
-						title: Object(O.c)("Reddit Premium")
+					}, s.a.createElement(w.a, {
+						className: M.a.premiumIcon,
+						title: Object(N.c)("Reddit Premium")
 					}), s.a.createElement("div", {
-						className: _.a.paymentCompleteTitleMain
-					}, s.a.createElement(N.c, null, "Thanks for purchasing Reddit Premium!")), s.a.createElement("div", {
-						className: _.a.paymentCompleteTitleDescription
+						className: M.a.paymentCompleteTitleMain
+					}, s.a.createElement(j.c, null, "Thanks for purchasing Reddit Premium!")), s.a.createElement("div", {
+						className: M.a.paymentCompleteTitleDescription
 					}, s.a.createElement("div", {
-						className: _.a.paymentCompleteTitleItem
-					}, s.a.createElement(N.c, null, "You will receive a message in your inbox once your purchase is confirmed.")), s.a.createElement("div", {
-						className: _.a.paymentCompleteTitleItem
+						className: M.a.paymentCompleteTitleItem
+					}, s.a.createElement(j.c, null, "You will receive a message in your inbox once your purchase is confirmed.")), s.a.createElement("div", {
+						className: M.a.paymentCompleteTitleItem
 					}, s.a.createElement("a", {
 						href: "/settings/premium",
 						target: "_blank"
-					}, s.a.createElement(N.c, null, "Manage your ads-free experience."))), s.a.createElement("div", {
-						className: _.a.paymentCompleteTitleItemLast
-					}, Object(w.a)(Object(v.a)(e.language, "gold.purchasePremiumModal.findMoreAboutLoungeOnReddit"), {
+					}, s.a.createElement(j.c, null, "Manage your ads-free experience."))), s.a.createElement("div", {
+						className: M.a.paymentCompleteTitleItemLast
+					}, Object(k.a)(Object(v.a)(e.language, "gold.purchasePremiumModal.findMoreAboutLoungeOnReddit"), {
 						":loungeLink:": s.a.createElement("a", {
 							href: "/r/lounge",
 							target: "_blank"
 						}, "r/lounge")
 					}))), s.a.createElement("button", {
-						className: _.a.closeButton,
+						className: M.a.closeButton,
 						onClick: e.onCloseClick
-					}, s.a.createElement(f.b, {
-						className: _.a.closeIcon,
+					}, s.a.createElement(O.b, {
+						className: M.a.closeIcon,
 						"data-redditstyle": !0
 					}))), s.a.createElement(I, {
 						onCloseClick: e.onCloseClick
@@ -395,8 +395,8 @@
 			var S = Object(p.b)(R),
 				T = a("./node_modules/react-stripe-elements/es/index.js"),
 				A = a("./src/reddit/components/CheckoutForm/index.tsx"),
-				F = a("./src/reddit/components/PaymentMethodSelector/index.tsx");
-			var V = e => {
+				V = a("./src/reddit/components/PaymentMethodSelector/index.tsx");
+			var F = e => {
 				const {
 					buttonId: t,
 					className: a,
@@ -404,14 +404,14 @@
 					"data-redditstyle": r = !1,
 					disabled: o,
 					onSubmit: c,
-					openInNewWindow: i,
-					title: l
+					openInNewWindow: l,
+					title: i
 				} = e, d = o || !t;
 				return s.a.createElement("form", {
 					className: a,
 					action: "https://www.paypal.com/cgi-bin/webscr",
 					method: "post",
-					target: i ? "_blank" : "_top",
+					target: l ? "_blank" : "_top",
 					onSubmit: c
 				}, s.a.createElement("input", {
 					type: "hidden",
@@ -425,11 +425,11 @@
 					type: "hidden",
 					name: "custom",
 					value: n
-				}), s.a.createElement(k.f, {
+				}), s.a.createElement(x.f, {
 					type: "submit",
 					"data-redditstyle": r,
 					disabled: d
-				}, l))
+				}, i))
 			};
 			class D extends s.a.Component {
 				constructor() {
@@ -455,86 +455,86 @@
 						stripeTokenPending: n
 					} = this.props;
 					return s.a.createElement("div", {
-						className: _.a.premiumPurchaseSelectPaymentFooter
-					}, a === d.vb && s.a.createElement(V, {
+						className: M.a.premiumPurchaseSelectPaymentFooter
+					}, a === d.vb && s.a.createElement(F, {
 						buttonId: t,
-						className: _.a.premiumPurchaseButton,
+						className: M.a.premiumPurchaseButton,
 						customField: e,
 						"data-redditstyle": !0,
 						disabled: !e,
 						onSubmit: this.onPaypalSubmit,
-						title: Object(O.c)("Continue to paypal")
-					}), a === d.ub && s.a.createElement(k.f, {
-						className: _.a.premiumPurchaseButton,
+						title: Object(N.c)("Continue to paypal")
+					}), a === d.ub && s.a.createElement(x.f, {
+						className: M.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onCompletePurchaseClick
-					}, s.a.createElement(N.c, null, "Complete purchase")))
+					}, s.a.createElement(j.c, null, "Complete purchase")))
 				}
 			}
-			var B = Object(T.injectStripe)(Object(p.b)(D));
-			var G = e => s.a.createElement("div", {
-				className: _.a.premiumPurchaseHeader,
+			var G = Object(T.injectStripe)(Object(p.b)(D));
+			var B = e => s.a.createElement("div", {
+				className: M.a.premiumPurchaseHeader,
 				style: {
 					backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/premium-hero-g.jpg")')
 				}
-			}, s.a.createElement(x.a, {
-				className: _.a.premiumIcon,
-				title: Object(O.c)("Reddit Premium")
+			}, s.a.createElement(w.a, {
+				className: M.a.premiumIcon,
+				title: Object(N.c)("Reddit Premium")
 			}), s.a.createElement("div", {
-				className: _.a.titleMain
-			}, s.a.createElement(N.c, null, "Buy Reddit Premium!")), s.a.createElement("div", {
-				className: _.a.titleDescription
+				className: M.a.titleMain
+			}, s.a.createElement(j.c, null, "Buy Reddit Premium!")), s.a.createElement("div", {
+				className: M.a.titleDescription
 			}, Object(v.a)(e.language, "gold.purchasePremiumModal.youArePurchasingRedditPremiumForYourself", {
 				userName: e.userName
 			})), s.a.createElement("button", {
-				className: _.a.closeButton,
+				className: M.a.closeButton,
 				onClick: e.onCloseClick
-			}, s.a.createElement(f.b, {
-				className: _.a.closeIcon,
+			}, s.a.createElement(O.b, {
+				className: M.a.closeIcon,
 				"data-redditstyle": !0
 			})));
 			var Y = e => s.a.createElement(T.StripeProvider, {
 				apiKey: c.a.stripe.apiKey
-			}, s.a.createElement(T.Elements, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(G, {
+			}, s.a.createElement(T.Elements, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(B, {
 				language: e.language,
 				onCloseClick: e.onCloseModal,
 				userName: e.userName
 			}), s.a.createElement("div", {
-				className: _.a.premiumPurchaseBody
-			}, s.a.createElement(F.a, {
-				className: _.a.selectPayment,
+				className: M.a.premiumPurchaseBody
+			}, s.a.createElement(V.a, {
+				className: M.a.selectPayment,
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
 			}), e.selectedPayment === d.ub && s.a.createElement(A.a, {
-				className: _.a.creditCard
+				className: M.a.creditCard
 			}), s.a.createElement("div", {
-				className: _.a.checkoutFooter
+				className: M.a.checkoutFooter
 			}, s.a.createElement("div", {
-				className: _.a.premiumPurchaseTotal
+				className: M.a.premiumPurchaseTotal
 			}, Object(v.a)(e.language, "gold.purchasePremiumModal.totalMonthlyAmount", {
 				amount: e.total / 100
 			})), e.selectedPayment === d.ub && s.a.createElement("a", {
 				href: "https://stripe.com",
 				target: "_blank"
 			}, s.a.createElement("img", {
-				className: _.a.poweredByStripeIcon,
+				className: M.a.poweredByStripeIcon,
 				src: "".concat(c.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
 			}))), e.selectedPayment === d.vb && e.paypalErrorMessage && s.a.createElement("div", {
-				className: _.a.errorMessage
+				className: M.a.errorMessage
 			}, e.paypalErrorMessage), e.selectedPayment === d.ub && e.stripeErrorMessage && s.a.createElement("div", {
-				className: _.a.errorMessage
+				className: M.a.errorMessage
 			}, e.stripeErrorMessage), s.a.createElement("div", {
-				className: _.a.membershipDescription
-			}, s.a.createElement(N.c, null, "Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.")), s.a.createElement("div", {
-				className: _.a.agreementLink
-			}, Object(w.a)(Object(v.a)(e.language, "gold.purchasePremiumModal.byPurchasingRedditPremiumYouAgree"), {
+				className: M.a.membershipDescription
+			}, s.a.createElement(j.c, null, "Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.")), s.a.createElement("div", {
+				className: M.a.agreementLink
+			}, Object(k.a)(Object(v.a)(e.language, "gold.purchasePremiumModal.byPurchasingRedditPremiumYouAgree"), {
 				":agreement:": s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
 					target: "_blank"
-				}, s.a.createElement(N.c, null, "Reddit User Agreement"))
-			}))), s.a.createElement(B, {
+				}, s.a.createElement(j.c, null, "Reddit User Agreement"))
+			}))), s.a.createElement(G, {
 				onCompletePurchaseClick: e.onCompletePurchaseClick,
 				passthrough: e.passthrough,
 				paypalButtonId: e.paypalButtonId,
@@ -569,13 +569,13 @@
 						return "u/".concat(Object(b.f)(t))
 					}
 				}),
-				H = Object(r.b)(W, (e, t) => ({
+				U = Object(r.b)(W, (e, t) => ({
 					closeModal: () => e(Object(u.d)()),
 					onCloseModalClick: () => e(Object(u.d)()),
 					onCompletePurchaseClick: t => e(Object(u.g)(t)),
 					onPaymentSelected: t => e(Object(m.selectPaymentMethod)(t))
 				}));
-			class K extends s.a.Component {
+			class H extends s.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
@@ -610,8 +610,8 @@
 						nightmode: n,
 						selectedPayment: r,
 						onCompletePurchaseClick: o,
-						onPaymentSelected: i,
-						onTryCloseModal: l,
+						onPaymentSelected: l,
+						onTryCloseModal: i,
 						passthrough: m,
 						stripeErrorMessage: u,
 						stripeTokenPending: p,
@@ -623,9 +623,9 @@
 					}, "selectPayment" === e && s.a.createElement(Y, {
 						language: a,
 						nightmode: n,
-						onCloseModal: l,
+						onCloseModal: i,
 						onCompletePurchaseClick: o,
-						onPaymentSelected: i,
+						onPaymentSelected: l,
 						passthrough: m,
 						paypalButtonId: c.a.paypal.buttons.premium,
 						selectedPayment: r,
@@ -636,15 +636,15 @@
 						userName: y
 					}), "paymentCompleted" === e && s.a.createElement(S, {
 						language: a,
-						onCloseClick: l
+						onCloseClick: i
 					}))
 				}
 			}
-			const U = Object(i.a)(K),
+			const K = Object(l.a)(H),
 				Q = {
 					backgroundColor: h.a.overlayReportFlow
 				};
-			t.default = H(Object(p.b)(class extends s.a.PureComponent {
+			t.default = U(Object(p.b)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -656,8 +656,8 @@
 					}
 				}
 				render() {
-					return s.a.createElement(U, L({}, this.props, {
-						className: Object(l.a)(this.props.className, _.a.premiumPurchaseModal),
+					return s.a.createElement(K, L({}, this.props, {
+						className: Object(i.a)(this.props.className, M.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
 						onTryCloseModal: this.onTryCloseModal,
@@ -698,17 +698,17 @@
 			})), a.d(t, "f", (function() {
 				return v
 			})), a.d(t, "g", (function() {
-				return j
+				return f
 			})), a.d(t, "h", (function() {
-				return N
+				return j
 			}));
 			var n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/models/Gold/Coins/index.ts"),
 				r = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				o = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				c = a("./src/reddit/selectors/goldPurchaseModals.ts"),
-				i = a("./src/reddit/selectors/platform.ts"),
-				l = a("./src/reddit/selectors/telemetry.ts"),
+				l = a("./src/reddit/selectors/platform.ts"),
+				i = a("./src/reddit/selectors/telemetry.ts"),
 				d = a("./src/telemetry/models/GoldPurchase.ts"),
 				m = a("./src/telemetry/models/Payment.ts"),
 				u = a("./src/reddit/helpers/trackers/gild.ts"),
@@ -716,18 +716,18 @@
 				h = a("./src/reddit/helpers/isComment.ts");
 			const y = (e, t) => {
 					const a = r.a(e),
-						i = a ? Object(u.getAwardTypeFromAward)(a) : null,
-						m = t ? i : c.q(e) ? d.Premium : d.Coins,
+						l = a ? Object(u.getAwardTypeFromAward)(a) : null,
+						m = t ? l : c.q(e) ? d.Premium : d.Coins,
 						y = t ? Object(h.a)(t) ? "comment" : "post" : void 0,
 						g = c.d(e),
 						b = Object(o.b)(e),
 						C = Object(s.b)(g, b, !!t);
-					return Object.assign({}, l.defaults(e), {
-						comment: t ? l.comment(e, t) : null,
+					return Object.assign({}, i.defaults(e), {
+						comment: t ? i.comment(e, t) : null,
 						correlationId: Object(p.c)(p.a.GoldPayment),
-						post: t ? l.post(e, t) : null,
-						screen: l.screen(e),
-						subreddit: t ? l.subreddit(e) : null,
+						post: t ? i.post(e, t) : null,
+						screen: i.screen(e),
+						subreddit: t ? i.subreddit(e) : null,
 						goldPurchase: Object.assign({}, a ? {
 							awardId: a.id,
 							awardName: a.name,
@@ -774,7 +774,7 @@
 					action: "display",
 					noun: "error"
 				}),
-				j = e => t => {
+				f = e => t => {
 					const a = y(t, e);
 					return Object.assign({}, a, {
 						source: "gold_payment",
@@ -788,14 +788,14 @@
 						})
 					})
 				},
-				N = e => t => {
+				j = e => t => {
 					const a = y(t, e);
 					return Object.assign({}, a, {
 						source: "gold_payment",
 						action: "view",
 						noun: "success",
 						payment: Object.assign({}, a.payment, {
-							method: Object(i.b)(t).queryParams.thanks ? m.PaymentMethod.Paypal : m.PaymentMethod.CreditCard
+							method: Object(l.b)(t).queryParams.thanks ? m.PaymentMethod.Paypal : m.PaymentMethod.CreditCard
 						})
 					})
 				}
@@ -803,11 +803,12 @@
 		"./src/reddit/models/Gold/Coins/index.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "b", (function() {
-				return n
-			})), a.d(t, "a", (function() {
 				return s
+			})), a.d(t, "a", (function() {
+				return r
 			}));
-			const n = (e, t, a) => {
+			var n = a("./node_modules/fbt/lib/FbtPublic.js");
+			const s = (e, t, a) => {
 					let n = null;
 					for (const s of t) {
 						const t = n ? n.coins : 1 / 0,
@@ -819,30 +820,62 @@
 					}
 					return n
 				},
-				s = [{
-					prompt: "What are Coins?",
-					answer: ["Coins are our virtual good, and you can use them to award exceptional", "posts or comments, giving them Silver, Gold, or Platinum. We'll be adding cool", "new ways to spend your Coins in the future."].join(" ")
+				r = [{
+					prompt: () => n.fbt._("What are Coins?", null, {
+						hk: "1wU35D"
+					}),
+					answer: () => n.fbt._("Coins are our virtual good, and you can use them to award exceptional posts or comments, giving them Silver, Gold, or Platinum. We'll be adding cool new ways to spend your Coins in the future.", null, {
+						hk: "4Wf9n"
+					})
 				}, {
-					prompt: 'What is "Give Award"?',
-					answer: 'Giving an Award, or "gilding", is a way to show appreciation for an exceptional contribution to Reddit. You can award someone by clicking on "Give Award" below their post or comment. This distinguishes it with an Award for all to see, and some even grant the honoree special bonus benefits.'
+					prompt: () => n.fbt._('What is "Give Award"?', null, {
+						hk: "Q08fJ"
+					}),
+					answer: () => n.fbt._('Giving an Award, or "gilding", is a way to show appreciation for an exceptional contribution to Reddit. You can award someone by clicking on "Give Award" below their post or comment. This distinguishes it with an Award for all to see, and some even grant the honoree special bonus benefits.', null, {
+						hk: "4fZWQ3"
+					})
 				}, {
-					prompt: "What are these new Award types?",
-					answer: ["There are now several ways to Give Awards. A Silver Award requires 100 Coins, ", "which simply marks a post or comment with a Silver Award icon. A classic Gold Award ", "requires 500 Coins and gives the recipient a week of Reddit Premium membership ", "and 100 Coins. Finally, the ultra rare Platinum Award costs 1800 Coins, ", "and gives the recipient with one month of Reddit Premium membership, which includes 700 ", "Coins for that month."].join(" ")
+					prompt: () => n.fbt._("What are these new Award types?", null, {
+						hk: "2ysK1l"
+					}),
+					answer: () => n.fbt._("There are now several ways to Give Awards. A Silver Award requires 100 Coins, which simply marks a post or comment with a Silver Award icon. A classic Gold Award requires 500 Coins and gives the recipient a week of Reddit Premium membership and 100 Coins. Finally, the ultra rare Platinum Award costs 1800 Coins, and gives the recipient with one month of Reddit Premium membership, which includes 700 Coins for that month.", null, {
+						hk: "sPegC"
+					})
 				}, {
-					prompt: "I bought Coins, how can I tell how many I have?",
-					answer: "If you buy Coins you will always have a balance associated with your Reddit account. You can view your balance on the top navigation bar by your username."
+					prompt: () => n.fbt._("I bought Coins, how can I tell how many I have?", null, {
+						hk: "VVChk"
+					}),
+					answer: () => n.fbt._("If you buy Coins you will always have a balance associated with your Reddit account. You can view your balance on the top navigation bar by your username.", null, {
+						hk: "1ZHMGy"
+					})
 				}, {
-					prompt: "Can I transfer Coins between Reddit accounts?",
-					answer: "You cannot transfer your Reddit Coin balance across usernames, sorry. You can offer a Gold Award to other users which will grant them 100 Coins."
+					prompt: () => n.fbt._("Can I transfer Coins between Reddit accounts?", null, {
+						hk: "1VS4Gc"
+					}),
+					answer: () => n.fbt._("You cannot transfer your Reddit Coin balance across usernames, sorry. You can offer a Gold Award to other users which will grant them 100 Coins.", null, {
+						hk: "46q9mb"
+					})
 				}, {
-					prompt: "Can I get Coins for free?",
-					answer: "We may give away Coins on special occasions. Stay tuned!"
+					prompt: () => n.fbt._("Can I get Coins for free?", null, {
+						hk: "2Qzs1G"
+					}),
+					answer: () => n.fbt._("We may give away Coins on special occasions. Stay tuned!", null, {
+						hk: "30yIpE"
+					})
 				}, {
-					prompt: "What happened to Creddits? Do those still exist?",
-					answer: "Yes, Creddits are simply called \"Coins\" now, and we've converted any existing balance at a generous exchange rate of one Creddit to 2000 Coins. That's double their original monetary value as a thank you for supporting us early. Use them to award exceptional posts and comments you come across. Thanks again for your contribution to the Reddit community."
+					prompt: () => n.fbt._("What happened to Creddits? Do those still exist?", null, {
+						hk: "qTu5W"
+					}),
+					answer: () => n.fbt._("Yes, Creddits are simply called \"Coins\" now, and we've converted any existing balance at a generous exchange rate of one Creddit to 2000 Coins. That's double their original monetary value as a thank you for supporting us early. Use them to award exceptional posts and comments you come across. Thanks again for your contribution to the Reddit community.", null, {
+						hk: "3ZI3ct"
+					})
 				}, {
-					prompt: "I thought Gold was the name of Reddit's subscription membership?",
-					answer: 'You\'re correct, it used to also be the name of the subscription membership. However, many people confused the subscription "Reddit Gold" membership with a virtual good or coin. To make things easier to understand, we\'ve renamed the membership to "Reddit Premium", while our virtual good is called "Coins".'
+					prompt: () => n.fbt._("I thought Gold was the name of Reddit's subscription membership?", null, {
+						hk: "26YDse"
+					}),
+					answer: () => n.fbt._('You\'re correct, it used to also be the name of the subscription membership. However, many people confused the subscription "Reddit Gold" membership with a virtual good or coin. To make things easier to understand, we\'ve renamed the membership to "Reddit Premium", while our virtual good is called "Coins".', null, {
+						hk: "FjaSU"
+					})
 				}]
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
@@ -854,4 +887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.9b0efc5603fb0ed33dbd.js.map
+//# sourceMappingURL=PremiumPurchaseModal.a4035d4f34c96e10a42e.js.map

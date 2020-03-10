@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8872324236c04b2a7e50.js
-// Retrieved at 3/9/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b54bbaa79ccbfcc6f015.js
+// Retrieved at 3/9/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4794,8 +4794,9 @@
 			const Ko = Object(h.c)({
 				coinPackages: qo.b,
 				isPremiumSubscriber: Q.q,
-				purchaseCatalogError: qo.c,
-				purchaseCatalogPending: qo.d
+				premiumPackages: qo.c,
+				purchaseCatalogError: qo.d,
+				purchaseCatalogPending: qo.e
 			});
 			class Yo extends l.a.Component {
 				constructor(e) {
@@ -4819,8 +4820,9 @@
 					const {
 						coinPackages: e,
 						isPremiumSubscriber: t,
-						sorted: s
-					} = this.props, n = e.map(e => {
+						premiumPackages: s,
+						sorted: n
+					} = this.props, a = e.map(e => {
 						const {
 							baselineCoins: t,
 							coins: s,
@@ -4846,30 +4848,33 @@
 							subText: d
 						}
 					});
-					if (s && n.sort((e, t) => {
-							return (e.coinPackage ? e.coinPackage.coins : 0) - (t.coinPackage ? t.coinPackage.coins : 0)
-						}), t) return n;
-					const a = 1e3.toLocaleString(),
-						r = 5.99.toLocaleString(),
-						o = 700..toLocaleString(),
-						i = {
-							buttonSubText: Un.fbt._("{number of bonus coins} Bonus Coins", [Un.fbt._param("number of bonus coins", a)], {
-								hk: "3qu4dU"
-							}),
-							buttonText: Un.fbt._("${premium price}/mo", [Un.fbt._param("premium price", r)], {
-								hk: "21Ct3P"
-							}),
-							isGoldStyle: !0,
-							primaryText: Un.fbt._("Premium", null, {
-								hk: "45A9gK"
-							}),
-							subText: [Un.fbt._("{monthly coins} Coins/mo", [Un.fbt._param("monthly coins", o)], {
-								hk: "2fh3lO"
-							}), Un.fbt._("Ads free & more", null, {
-								hk: "wO4Wc"
-							})]
-						};
-					return n.concat(i)
+					n && a.sort((e, t) => {
+						return (e.coinPackage ? e.coinPackage.coins : 0) - (t.coinPackage ? t.coinPackage.coins : 0)
+					});
+					const r = s.length ? s[0] : void 0;
+					if (t || !r) return a;
+					const {
+						pennies: o,
+						periodicalCoins: i,
+						signupBonusCoins: c
+					} = r, d = c ? c.toLocaleString() : void 0, l = "$".concat((o / 100).toLocaleString()), m = i.toLocaleString(), u = {
+						buttonSubText: d ? Un.fbt._("{number of bonus coins} Bonus Coins", [Un.fbt._param("number of bonus coins", d)], {
+							hk: "3qu4dU"
+						}) : void 0,
+						buttonText: Un.fbt._("{premium price}/mo", [Un.fbt._param("premium price", l)], {
+							hk: "4Cwbsj"
+						}),
+						isGoldStyle: !0,
+						primaryText: Un.fbt._("Premium", null, {
+							hk: "45A9gK"
+						}),
+						subText: [Un.fbt._("{monthly coins} Coins/mo", [Un.fbt._param("monthly coins", m)], {
+							hk: "2fh3lO"
+						}), Un.fbt._("Ads free & more", null, {
+							hk: "wO4Wc"
+						})]
+					};
+					return a.concat(u)
 				}
 				render() {
 					const {
@@ -11726,15 +11731,18 @@
 				return n
 			})), s.d(t, "b", (function() {
 				return a
-			})), s.d(t, "d", (function() {
-				return r
 			})), s.d(t, "c", (function() {
+				return r
+			})), s.d(t, "e", (function() {
 				return o
+			})), s.d(t, "d", (function() {
+				return i
 			}));
 			const n = e => e.goldPurchase.purchaseCatalog.activeCoinSale,
 				a = e => e.goldPurchase.purchaseCatalog.coinPackages,
-				r = e => e.goldPurchase.purchaseCatalog.pending,
-				o = e => e.goldPurchase.purchaseCatalog.errorMessage
+				r = e => e.goldPurchase.purchaseCatalog.premiumPackages,
+				o = e => e.goldPurchase.purchaseCatalog.pending,
+				i = e => e.goldPurchase.purchaseCatalog.errorMessage
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, s) {
 			"use strict";
@@ -11846,4 +11854,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Poll~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.8872324236c04b2a7e50.js.map
+//# sourceMappingURL=Reddit.b54bbaa79ccbfcc6f015.js.map
