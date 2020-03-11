@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.2b16bcbd627e7157ebff.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.8e99020ad22bb782c54a.js
+// Retrieved at 3/11/2020, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1250,71 +1250,70 @@
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/i18n/components.tsx"),
-				a = n("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.tsx"),
-				d = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/reddit/selectors/postCreations.ts"),
-				m = n("./src/reddit/components/Widgets/PostCollection/PendingItem/index.m.less"),
-				u = n.n(m);
+				i = n("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.tsx"),
+				a = n("./node_modules/react-redux/es/index.js"),
+				d = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/reddit/selectors/postCreations.ts"),
+				c = n("./src/reddit/components/Widgets/PostCollection/PendingItem/index.m.less"),
+				m = n.n(c);
 			const {
-				fbt: p
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), h = Object(l.c)({
-				title: c.eb
+				fbt: u
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(d.c)({
+				title: l.eb
 			});
-			var x = Object(d.b)(h)(e => {
+			var h = Object(a.b)(p)(e => {
 					const {
 						title: t
 					} = e;
 					return r.a.createElement("div", {
-						className: u.a.container
+						className: m.a.container
 					}, r.a.createElement("div", {
-						className: u.a.activeItemIndicator
+						className: m.a.activeItemIndicator
 					}), t && r.a.createElement("h2", {
-						className: u.a.title
+						className: m.a.title
 					}, t), r.a.createElement("div", {
-						className: u.a.metaLine
-					}, p._("Editing", null, {
+						className: m.a.metaLine
+					}, u._("Editing", null, {
 						hk: "2w5fAf"
 					})))
 				}),
-				b = n("./node_modules/fbt/lib/FbtPublic.js"),
-				g = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				f = n("./src/lib/timeAgo/index.ts"),
-				v = n("./src/reddit/actions/postCollection/index.ts"),
-				y = n("./src/reddit/selectors/posts.ts"),
-				w = n("./src/reddit/selectors/user.ts"),
-				E = n("./src/reddit/components/Widgets/PostCollection/PostItem/index.m.less"),
-				C = n.n(E),
-				k = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
-				_ = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				j = n("./src/reddit/components/Widgets/PostCollection/PostItem/Placeholder.m.less"),
-				O = n.n(j),
-				M = e => {
+				x = n("./node_modules/fbt/lib/FbtPublic.js"),
+				b = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				g = n("./src/lib/timeAgo/index.ts"),
+				f = n("./src/reddit/actions/postCollection/index.ts"),
+				v = n("./src/reddit/selectors/posts.ts"),
+				y = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/reddit/components/Widgets/PostCollection/PostItem/index.m.less"),
+				E = n.n(w),
+				C = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
+				k = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				_ = n("./src/reddit/components/Widgets/PostCollection/PostItem/Placeholder.m.less"),
+				j = n.n(_),
+				O = e => {
 					let {
 						className: t,
 						isLoading: n
 					} = e;
-					const s = Object(_.a)({
+					const s = Object(k.a)({
 						isLoading: n
 					});
 					return r.a.createElement("div", {
-						className: Object(o.a)(O.a.Container, t)
+						className: Object(o.a)(j.a.Container, t)
 					}, r.a.createElement("div", {
-						className: O.a.Content
+						className: j.a.Content
 					}, r.a.createElement("div", {
-						className: Object(o.a)(O.a.Title, s)
+						className: Object(o.a)(j.a.Title, s)
 					}), r.a.createElement("div", {
-						className: Object(o.a)(O.a.Secondary, s)
+						className: Object(o.a)(j.a.Secondary, s)
 					})))
 				};
-			const P = ["right", "bottom"],
-				S = ["right", "top"];
-			var L = Object(d.b)(() => Object(l.c)({
-					post: y.M,
-					language: w.O
+			const M = ["right", "bottom"],
+				P = ["right", "top"];
+			var S = Object(a.b)(() => Object(d.c)({
+					post: v.M,
+					language: y.O
 				}), (e, t) => ({
-					onRemovePostFromCollection: () => e(Object(v.g)(t.collectionId, t.postId))
+					onRemovePostFromCollection: () => e(Object(f.g)(t.collectionId, t.postId))
 				}))(e => {
 					const {
 						post: t,
@@ -1322,36 +1321,37 @@
 						onRemovePostFromCollection: s
 					} = e;
 					return t ? r.a.createElement("div", {
-						className: C.a.container
+						className: E.a.container
 					}, r.a.createElement("div", {
-						className: C.a.content
-					}, r.a.createElement(g.a, {
-						className: C.a.title,
+						className: E.a.content
+					}, r.a.createElement(b.a, {
+						className: E.a.title,
 						target: "_blank",
 						to: t.permalink
 					}, t.title), r.a.createElement("div", {
-						className: C.a.metaLine
-					}, b.fbt._("Posted · {timeAgo}", [b.fbt._param("timeAgo", Object(f.d)(n, t.created / 1e3))], {
+						className: E.a.metaLine
+					}, x.fbt._("Posted · {timeAgo}", [x.fbt._param("timeAgo", Object(g.d)(n, t.created / 1e3))], {
 						hk: "ZVJpV"
-					}))), r.a.createElement(k.a, {
+					}))), r.a.createElement(C.a, {
 						onRemoveClick: s,
-						className: C.a.overflowMenu,
+						className: E.a.overflowMenu,
 						dropdownId: "collection-widget-item" + t.id,
 						postPermalink: t.permalink,
-						targetPosition: P,
-						tooltipPosition: S
-					})) : r.a.createElement(M, {
-						className: C.a.container,
+						targetPosition: M,
+						tooltipPosition: P
+					})) : r.a.createElement(O, {
+						className: E.a.container,
 						isLoading: !0
 					})
 				}),
-				N = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
-				T = n.n(N);
-			const R = ["right", "bottom"],
-				D = ["right", "top"];
+				L = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
+				N = n.n(L);
+			const {
+				fbt: T
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ["right", "bottom"], D = ["right", "top"];
 			class I extends r.a.PureComponent {
 				constructor() {
-					super(...arguments), this.renderItem = (e, t) => r.a.createElement(L, {
+					super(...arguments), this.renderItem = (e, t) => r.a.createElement(S, {
 						collectionId: this.props.collection.id,
 						key: e,
 						postId: e
@@ -1363,23 +1363,25 @@
 						collection: t
 					} = this.props, n = t.postIds.map(this.renderItem).reverse();
 					return r.a.createElement("div", {
-						className: Object(o.a)(e, T.a.container)
+						className: Object(o.a)(e, N.a.container)
 					}, r.a.createElement("div", {
-						className: T.a.topRow
-					}, r.a.createElement(i.c, null, "Collection"), r.a.createElement(a.a, {
-						className: T.a.menuButton,
+						className: N.a.topRow
+					}, T._("Collection", null, {
+						hk: "1pY1s2"
+					}), r.a.createElement(i.a, {
+						className: N.a.menuButton,
 						collectionId: t.id,
 						isSubmitPage: !0,
 						permalink: t.permalink,
 						targetPosition: R,
 						tooltipPosition: D
 					})), r.a.createElement("h4", {
-						className: T.a.collectionDescription
+						className: N.a.collectionDescription
 					}, t.title), r.a.createElement("div", {
-						className: T.a.listWrapper
+						className: N.a.listWrapper
 					}, r.a.createElement("div", {
-						className: T.a.listContainer
-					}, n)), r.a.createElement(x, null))
+						className: N.a.listContainer
+					}, n)), r.a.createElement(h, null))
 				}
 			}
 			t.a = I
@@ -2068,4 +2070,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.2b16bcbd627e7157ebff.js.map
+//# sourceMappingURL=PostDraft.8e99020ad22bb782c54a.js.map
