@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.3c1db11087c9d0399b8a.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.acc4f1c5b5f8482e9a8a.js
+// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, s) {
@@ -462,22 +462,22 @@
 				O = s("./src/reddit/selectors/tooltip.ts"),
 				_ = s("./src/reddit/selectors/user.ts"),
 				N = s("./src/reddit/selectors/userPrefs.ts"),
-				C = s("./src/reddit/i18n/utils.ts"),
-				S = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
-				k = s.n(S);
+				k = s("./src/reddit/i18n/utils.ts"),
+				C = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
+				S = s.n(C);
 			const j = Object(x.t)({
 					routeName: x.S,
 					privateListingType: x.i
 				}),
 				L = Object(d.c)({
-					isDropdownMenuOpen: e => Object(O.a)(e) === P,
+					isDropdownMenuOpen: e => Object(O.a)(e) === T,
 					isOwnProfile: (e, t) => Object(_.J)(e, t.profileName),
 					language: _.O,
 					isSnoovatar30Enabled: E.d.snoovatar30,
 					isSubscriptionsPinned: N.b
 				}),
-				T = Object(m.a)(g.a),
-				P = "profile-nav-menu-tooltip";
+				P = Object(m.a)(g.a),
+				T = "profile-nav-menu-tooltip";
 			t.a = j(Object(o.b)(L, e => ({
 				toggleTooltip: t => e(Object(h.h)({
 					tooltipId: t
@@ -495,7 +495,7 @@
 					isSubscriptionsPinned: l
 				} = e;
 				return i.a.createElement("div", {
-					className: k.a.container
+					className: S.a.container
 				}, i.a.createElement(b.a, {
 					bladeOpen: !1,
 					offsetLeft: l ? f.u : 0,
@@ -507,13 +507,13 @@
 						privateListingType: r,
 						isSnoovatar30Enabled: c
 					}).map(e => i.a.createElement(R, e)), i.a.createElement("button", {
-						className: Object(u.a)(k.a.mainLink, k.a.overflowMenuButton),
-						id: P,
-						onClick: () => d(P)
-					}, i.a.createElement(y.a, null)), i.a.createElement(T, {
-						className: k.a.dropdown,
+						className: Object(u.a)(S.a.mainLink, S.a.overflowMenuButton),
+						id: T,
+						onClick: () => d(T)
+					}, i.a.createElement(y.a, null)), i.a.createElement(P, {
+						className: S.a.dropdown,
 						isOpen: t,
-						tooltipId: P
+						tooltipId: T
 					}, I({
 						language: n,
 						profileName: o,
@@ -532,15 +532,15 @@
 						internal: o
 					} = e;
 					return o ? i.a.createElement(v.a, {
-						className: Object(u.a)(k.a.mainLink, {
-							[k.a.hideOnNarrow]: !!t,
-							[k.a.isActive]: s
+						className: Object(u.a)(S.a.mainLink, {
+							[S.a.hideOnNarrow]: !!t,
+							[S.a.isActive]: s
 						}),
 						to: r
 					}, n) : i.a.createElement("a", {
-						className: Object(u.a)(k.a.mainLink, {
-							[k.a.hideOnNarrow]: !!t,
-							[k.a.isActive]: s
+						className: Object(u.a)(S.a.mainLink, {
+							[S.a.hideOnNarrow]: !!t,
+							[S.a.isActive]: s
 						}),
 						href: r
 					}, n)
@@ -555,17 +555,17 @@
 						text: d
 					} = e;
 					return s ? i.a.createElement(a.a, {
-						className: Object(u.a)(k.a.dropdownLink, {
-							[k.a.isActive]: t,
-							[k.a.showOnNarrow]: !!o
+						className: Object(u.a)(S.a.dropdownLink, {
+							[S.a.isActive]: t,
+							[S.a.showOnNarrow]: !!o
 						}),
 						to: r,
 						key: n,
 						rel: "nofollow",
 						role: "listitem"
 					}, d) : i.a.createElement("a", {
-						className: Object(u.a)(k.a.dropdownLink, {
-							[k.a.showOnNarrow]: !!o
+						className: Object(u.a)(S.a.dropdownLink, {
+							[S.a.showOnNarrow]: !!o
 						}),
 						href: r,
 						key: n,
@@ -643,7 +643,7 @@
 						internal: !0,
 						isActive: i === p.zb.PROFILE_SNOOBUILDER,
 						key: "profile.snoobuilder",
-						text: Object(C.c)("Snoobuilder"),
+						text: Object(k.c)("Snoobuilder"),
 						url: "/user/".concat(s, "/snoo/")
 					}] : [];
 					return [{
@@ -1277,7 +1277,7 @@
 				O = b.f + 8 + 152 + 32 + 16,
 				_ = O + E + 8,
 				N = v.a.div("Container", g.a),
-				C = v.a.wrapped(e => {
+				k = v.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = w(e, ["className"]);
@@ -1288,7 +1288,7 @@
 						}
 					}, s))
 				}, "BackToTop", g.a),
-				S = e => {
+				C = e => {
 					let {
 						children: t,
 						className: s,
@@ -1300,7 +1300,7 @@
 						})
 					}, t)
 				};
-			class k extends o.Component {
+			class S extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > _,
@@ -1345,13 +1345,13 @@
 					return a.a.createElement(N, {
 						className: s,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(S, {
+					}, a.a.createElement(C, {
 						isSticky: r
-					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(C, null))
+					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(k, null))
 				}
 			}
 			const j = Object(f.t)();
-			t.a = j(k)
+			t.a = j(S)
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1609,11 +1609,11 @@
 				O = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
 				_ = s("./src/reddit/models/Flair/index.ts"),
 				N = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				C = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
-				S = s.n(C);
+				k = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
+				C = s.n(k);
 
-			function k() {
-				return (k = Object.assign || function(e) {
+			function S() {
+				return (S = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1624,23 +1624,23 @@
 			s.d(t, "b", (function() {
 				return j
 			})), s.d(t, "a", (function() {
-				return T
+				return P
 			}));
 			const j = e => r.a.createElement(x.a, {
-					className: Object(c.a)(S.a.Container, e.className),
+					className: Object(c.a)(C.a.Container, e.className),
 					noGradient: !0,
 					styles: e.widget && e.widget.styles,
 					title: e.title,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget && e.widget.kind
 				}, r.a.createElement("div", {
-					className: S.a.container
+					className: C.a.container
 				}, e.isLoading ? r.a.createElement(y.a, {
-					className: S.a.loadingIcon,
+					className: C.a.loadingIcon,
 					sizePx: 32
 				}) : r.a.createElement(r.a.Fragment, null, e.isError ? r.a.createElement("p", {
-					className: S.a.errorMsg
-				}, e.errorMsg || Object(w.c)("Something went wrong.")) : r.a.createElement(r.a.Fragment, null, e.communities.map(t => r.a.createElement(T, k({
+					className: C.a.errorMsg
+				}, e.errorMsg || Object(w.c)("Something went wrong.")) : r.a.createElement(r.a.Fragment, null, e.communities.map(t => r.a.createElement(P, S({
 					key: t.name
 				}, t, {
 					getSubscribeEventFactory: e.getSubscribeEventFactoryHandler ? e.getSubscribeEventFactoryHandler(t) : void 0,
@@ -1656,35 +1656,35 @@
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
 				})))), e.bottomButtonText && e.onBottomButtonClick && r.a.createElement(v.n, {
-					className: S.a.bottomButton,
+					className: C.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				L = Object(a.c)({
 					hideNSFWPref: h.y,
 					language: h.O
 				}),
-				T = Object(i.b)(L)(e => r.a.createElement("div", {
-					className: S.a.communityItemContainer
+				P = Object(i.b)(L)(e => r.a.createElement("div", {
+					className: C.a.communityItemContainer
 				}, r.a.createElement(O.a, {
 					widthRight: g.t
 				}, r.a.createElement("div", {
-					className: S.a.iconContainer
+					className: C.a.iconContainer
 				}, e.communityIcon || e.iconUrl ? r.a.createElement("img", {
-					className: S.a.subredditIcon,
+					className: C.a.subredditIcon,
 					src: e.iconUrl || e.communityIcon
 				}) : r.a.createElement(E.a, {
-					className: S.a.planetIcon,
+					className: C.a.planetIcon,
 					"data-redditstyle": !0
 				})), r.a.createElement("div", {
-					className: S.a.communityDescriptionContainer
+					className: C.a.communityDescriptionContainer
 				}, r.a.createElement(o.a, {
-					className: S.a.communityName,
+					className: C.a.communityName,
 					to: Object(N.a)(e.name, e.type),
 					onClick: e.onCommunityNameClick
 				}, Object(N.b)(e.name, e.type)), r.a.createElement("div", {
-					className: S.a.communityInfoContainer
+					className: C.a.communityInfoContainer
 				}, !!e.subscribers && r.a.createElement("p", {
-					className: S.a.subscriberCount
+					className: C.a.subscriberCount
 				}, Object(d.b)(e.language, "listings.subscribers", e.subscribers, {
 					count: Object(l.b)(e.subscribers)
 				})), e.isNSFW && r.a.createElement(m.b, {
@@ -1693,11 +1693,11 @@
 						text: "nsfw"
 					}
 				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? r.a.createElement(y.a, {
-					className: Object(c.a)(S.a.communityCta, S.a.smallLoadingIcon),
+					className: Object(c.a)(C.a.communityCta, C.a.smallLoadingIcon),
 					sizePx: 12
 				}) : r.a.createElement(v.n, {
-					className: Object(c.a)(S.a.communityCta, {
-						[S.a.showOnHover]: e.showTertiaryButtonOnHover
+					className: Object(c.a)(C.a.communityCta, {
+						[C.a.showOnHover]: e.showTertiaryButtonOnHover
 					}),
 					disabled: e.buttonDisabled,
 					onClick: () => e.onTertiaryButtonClick(e)
@@ -1722,7 +1722,7 @@
 					small: !0
 				})), !!e.description && r.a.createElement("p", {
 					title: e.description,
-					className: S.a.communityDescription
+					className: C.a.communityDescription
 				}, e.description)))
 		},
 		"./src/reddit/components/Widgets/CommunityList/helpers.ts": function(e, t, s) {
@@ -1838,7 +1838,7 @@
 				},
 				_ = s("./src/reddit/components/Widgets/ConnectedAccounts/index.m.less"),
 				N = s.n(_);
-			const C = Object(o.c)({
+			const k = Object(o.c)({
 					twitterAccount: (e, t) => {
 						let {
 							subredditOrProfile: s
@@ -1856,12 +1856,12 @@
 						}) : null
 					}
 				}),
-				S = Object(i.b)(C, e => ({
+				C = Object(i.b)(k, e => ({
 					trackTwitterAccountClicked: t => e((e, s) => m.k(s(), t))
 				}), (e, t, s) => Object.assign({}, s, e, t, {
 					onTwitterAccountClicked: () => t.trackTwitterAccountClicked(e.user)
 				}));
-			t.a = Object(d.b)(S(e => {
+			t.a = Object(d.b)(C(e => {
 				const {
 					onTwitterAccountClicked: t,
 					twitterAccount: s
@@ -1928,9 +1928,9 @@
 					const t = O(e);
 					return Object(y.f)(t)
 				};
-			var C = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				S = s.n(C);
-			const k = Object(m.t)(),
+			var k = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				C = s.n(k);
+			const S = Object(m.t)(),
 				j = Object(i.b)(() => Object(o.c)({
 					forceRedditStyle: (e, t) => {
 						const s = Object(m.m)(e, t) || void 0,
@@ -1984,38 +1984,38 @@
 						title: d,
 						titleClassName: l,
 						truncateThreshold: m
-					} = this.props, p = s ? S.a.widgetContentOnly : S.a.widgetContent, h = !n && this.props.styles, f = h ? this.getWidgetBackgroundStyles() : {}, x = h ? this.getWidgetHeaderStyles() : {};
+					} = this.props, p = s ? C.a.widgetContentOnly : C.a.widgetContent, h = !n && this.props.styles, f = h ? this.getWidgetBackgroundStyles() : {}, x = h ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(a.a)(t, S.a.widgetBackground, {
-							[S.a.redditStyle]: n,
-							[S.a.clickable]: !!o,
-							[S.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(a.a)(t, C.a.widgetBackground, {
+							[C.a.redditStyle]: n,
+							[C.a.clickable]: !!o,
+							[C.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: o,
 						style: f
 					}, d && r.a.createElement("div", {
-						className: S.a.widgetHeader,
+						className: C.a.widgetHeader,
 						style: x
 					}, r.a.createElement("div", {
-						className: Object(a.a)(S.a.widgetTitle, l)
+						className: Object(a.a)(C.a.widgetTitle, l)
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
 					}, d)), i), r.a.createElement("div", {
 						className: Object(a.a)(p, {
-							[S.a.truncated]: this.state.isTruncated
+							[C.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(u.n, {
-						className: S.a.seeMore,
+						className: C.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, r.a.createElement(b.c, null, "See More")))
 				}
 			}
-			t.a = k(j(Object(d.a)(Object(l.b)(L))))
+			t.a = S(j(Object(d.a)(Object(l.b)(L))))
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, s) {
 			"use strict";
@@ -2159,42 +2159,49 @@
 		"./src/reddit/pages/ErrorPages/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return l
+				return c
 			})), s.d(t, "a", (function() {
-				return m
+				return l
 			}));
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				i = s("./src/reddit/controls/Button/index.tsx"),
-				o = s("./src/reddit/i18n/components.tsx"),
-				a = s("./src/reddit/i18n/utils.ts"),
-				d = s("./src/reddit/pages/ErrorPages/index.m.less"),
-				c = s.n(d);
-			const l = e => {
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				i = s.n(r),
+				o = s("./src/reddit/controls/Button/index.tsx"),
+				a = s("./src/reddit/pages/ErrorPages/index.m.less"),
+				d = s.n(a);
+			const c = e => {
 					let {
 						message: t
 					} = e;
-					return r.a.createElement("div", {
-						className: c.a.container
-					}, r.a.createElement("h3", {
-						className: c.a.title
-					}, t || Object(a.c)("Sorry, there doesn't seem to be anything here.")), r.a.createElement(i.h, {
-						className: c.a.primaryRouterLink,
+					return i.a.createElement("div", {
+						className: d.a.container
+					}, i.a.createElement("h3", {
+						className: d.a.title
+					}, t || n.fbt._("Sorry, there doesn't seem to be anything here.", null, {
+						hk: "3VvHek"
+					})), i.a.createElement(o.h, {
+						className: d.a.primaryRouterLink,
 						to: "/"
-					}, r.a.createElement(o.c, null, "Go Home")))
+					}, n.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				},
-				m = e => {
+				l = e => {
 					let {
 						message: t
 					} = e;
-					return r.a.createElement("div", {
-						className: c.a.container
-					}, r.a.createElement("h3", {
-						className: c.a.title
-					}, t || Object(a.c)("Sorry, You do not have permission to view this page.")), r.a.createElement(i.h, {
-						className: c.a.primaryRouterLink,
+					return i.a.createElement("div", {
+						className: d.a.container
+					}, i.a.createElement("h3", {
+						className: d.a.title
+					}, t || n.fbt._("Sorry, You do not have permission to view this page.", null, {
+						hk: "4lRbHD"
+					})), i.a.createElement(o.h, {
+						className: d.a.primaryRouterLink,
 						to: "/"
-					}, r.a.createElement(o.c, null, "Go Home")))
+					}, n.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				}
 		},
 		"./src/reddit/pages/ProfileSnoobuilder/index.tsx": function(e, t, s) {
@@ -2263,4 +2270,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.3c1db11087c9d0399b8a.js.map
+//# sourceMappingURL=ProfileSnoobuilder.acc4f1c5b5f8482e9a8a.js.map

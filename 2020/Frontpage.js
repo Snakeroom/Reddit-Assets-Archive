@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0249e7a51314da06d937.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.dea4bab98eb48664da10.js
+// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2001,23 +2001,22 @@
 				R = s("./src/reddit/constants/postLayout.ts"),
 				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				F = s("./src/reddit/helpers/trackers/screenview.ts"),
-				H = s("./src/reddit/i18n/components.tsx"),
-				M = s("./src/reddit/layout/page/Listing/index.tsx"),
-				V = s("./src/reddit/selectors/experiments/trending.ts"),
-				W = s("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
-				G = s("./src/reddit/selectors/frontpage.ts"),
-				K = s("./src/reddit/selectors/meta.ts"),
-				J = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
-				Q = s("./src/reddit/selectors/user.ts"),
-				z = s("./src/lib/constants/index.ts"),
-				q = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				Y = s("./src/lib/objectSelector/index.ts"),
-				Z = s("./src/reddit/constants/page.ts"),
-				X = s("./src/reddit/pages/Frontpage/index.m.less"),
-				$ = s.n(X);
+				H = s("./src/reddit/layout/page/Listing/index.tsx"),
+				M = s("./src/reddit/selectors/experiments/trending.ts"),
+				V = s("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
+				W = s("./src/reddit/selectors/frontpage.ts"),
+				G = s("./src/reddit/selectors/meta.ts"),
+				K = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
+				J = s("./src/reddit/selectors/user.ts"),
+				Q = s("./src/lib/constants/index.ts"),
+				z = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				q = s("./src/lib/objectSelector/index.ts"),
+				Y = s("./src/reddit/constants/page.ts"),
+				Z = s("./src/reddit/pages/Frontpage/index.m.less"),
+				X = s.n(Z);
 
-			function ee() {
-				return (ee = Object.assign || function(e) {
+			function $() {
+				return ($ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -2025,105 +2024,99 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const te = Object(U.t)(),
-				se = Object(h.c)({
-					queryParams: Object(Y.a)((e, t) => {
-						let {
-							location: s
-						} = t;
-						return u()([...Object(v.a)(s.search)])
-					}),
-					sort: (e, t) => {
-						let {
-							match: s
-						} = t;
-						const n = Object(G.a)(e);
-						return s.params.sort || n
-					}
-				}),
-				ne = Object(h.c)({
-					countryMeta: K.b,
-					geopopular: Q.m
-				}),
-				re = Object(h.c)({
-					isInTrendingEntrypointExperiment: V.a,
-					isLoggedIn: Q.G,
-					isPopular: U.C,
-					isRpanDuVisible: e => Object(J.a)(e, {
-						listingName: q.O
-					}),
-					rpanInjectionIndex: e => Object(J.b)(e, {
-						listingName: q.O
-					}),
-					layout: U.L
-				}),
-				oe = () => Object(h.a)(ne, se, re, e => Object(J.a)(e, {
-					listingName: q.O
-				}), e => Object(J.b)(e, {
-					listingName: q.O
-				}), e => e, (e, t, s, n, r, o) => {
+			const {
+				fbt: ee
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(U.t)(), se = Object(h.c)({
+				queryParams: Object(q.a)((e, t) => {
 					let {
-						countryMeta: i,
-						geopopular: a
-					} = e, {
-						queryParams: c,
-						sort: d
+						location: s
 					} = t;
-					const l = A.t in c && c[A.t].toUpperCase(),
-						u = "string" == typeof l && l in z.Qb ? z.Qb[l] : z.Rb,
-						m = Object(y.a)(Z.a, d, c),
-						p = i || z.w.Everywhere,
-						b = a || p,
-						h = A.g in c ? c[A.g].toUpperCase() : b,
-						g = [];
-					n && g.push(r);
-					const v = Object(W.b)(o, g, {
-						listingKey: m
-					});
-					return Object.assign({
-						countrySort: h,
-						listingKey: m,
-						sort: d,
-						timeSort: u,
-						focusedVerticalPositions: v
-					}, s)
+					return u()([...Object(v.a)(s.search)])
 				}),
-				ie = (e, t) => ({
-					onLoadMorePosts: () => e(_.d({
-						sort: t.match.params.sort
-					})),
-					refreshFeed: () => e(_.e({
-						sort: t.match.params.sort
-					}))
+				sort: (e, t) => {
+					let {
+						match: s
+					} = t;
+					const n = Object(W.a)(e);
+					return s.params.sort || n
+				}
+			}), ne = Object(h.c)({
+				countryMeta: G.b,
+				geopopular: J.m
+			}), re = Object(h.c)({
+				isInTrendingEntrypointExperiment: M.a,
+				isLoggedIn: J.G,
+				isPopular: U.C,
+				isRpanDuVisible: e => Object(K.a)(e, {
+					listingName: z.O
 				}),
-				ae = Object(b.b)(oe, ie),
-				ce = Object(d.a)({
-					resolved: {},
-					chunkName: () => "Trending",
-					isReady(e) {
-						const t = this.resolve(e);
-						return !1 !== this.resolved[t] && !!s.m[t]
-					},
-					importAsync: () => s.e("Trending").then(s.bind(null, "./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/index.tsx")),
-					requireAsync(e) {
-						const t = this.resolve(e);
-						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-					},
-					requireSync(e) {
-						const t = this.resolve(e);
-						return s(t)
-					},
-					resolve() {
-						return "./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/index.tsx"
-					}
-				}, {
-					ssr: !1
+				rpanInjectionIndex: e => Object(K.b)(e, {
+					listingName: z.O
 				}),
-				de = e => p.a.createElement(ce, ee({}, e, {
-					fallback: p.a.createElement(D.a, {
-						showCardView: !!e.showCardView
-					})
-				}));
+				layout: U.L
+			}), oe = () => Object(h.a)(ne, se, re, e => Object(K.a)(e, {
+				listingName: z.O
+			}), e => Object(K.b)(e, {
+				listingName: z.O
+			}), e => e, (e, t, s, n, r, o) => {
+				let {
+					countryMeta: i,
+					geopopular: a
+				} = e, {
+					queryParams: c,
+					sort: d
+				} = t;
+				const l = A.t in c && c[A.t].toUpperCase(),
+					u = "string" == typeof l && l in Q.Qb ? Q.Qb[l] : Q.Rb,
+					m = Object(y.a)(Y.a, d, c),
+					p = i || Q.w.Everywhere,
+					b = a || p,
+					h = A.g in c ? c[A.g].toUpperCase() : b,
+					g = [];
+				n && g.push(r);
+				const v = Object(V.b)(o, g, {
+					listingKey: m
+				});
+				return Object.assign({
+					countrySort: h,
+					listingKey: m,
+					sort: d,
+					timeSort: u,
+					focusedVerticalPositions: v
+				}, s)
+			}), ie = (e, t) => ({
+				onLoadMorePosts: () => e(_.d({
+					sort: t.match.params.sort
+				})),
+				refreshFeed: () => e(_.e({
+					sort: t.match.params.sort
+				}))
+			}), ae = Object(b.b)(oe, ie), ce = Object(d.a)({
+				resolved: {},
+				chunkName: () => "Trending",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!s.m[t]
+				},
+				importAsync: () => s.e("Trending").then(s.bind(null, "./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return s(t)
+				},
+				resolve() {
+					return "./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/index.tsx"
+				}
+			}, {
+				ssr: !1
+			}), de = e => p.a.createElement(ce, $({}, e, {
+				fallback: p.a.createElement(D.a, {
+					showCardView: !!e.showCardView
+				})
+			}));
 			class le extends p.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = () => {
@@ -2159,7 +2152,7 @@
 								numInstance: t,
 								layout: o,
 								listingKey: i,
-								listingName: Z.b,
+								listingName: Y.b,
 								listingPosition: e
 							})
 						}), r) {
@@ -2171,38 +2164,40 @@
 							desiredIndex: a,
 							layout: o,
 							listingKey: i,
-							listingName: q.O,
+							listingName: z.O,
 							sendEvent: c
 						});
 						b[t] = e
 					}
 					const h = p.a.createElement(E.default, {
-						className: $.a.sidebar,
+						className: X.a.sidebar,
 						listingKey: i,
-						listingName: Z.b
+						listingName: Y.b
 					});
-					return p.a.createElement(M.a, {
-						className: Object(g.a)($.a.Container, this.props.className),
+					return p.a.createElement(H.a, {
+						className: Object(g.a)(X.a.Container, this.props.className),
 						fitPageToContent: !0,
 						contentNavBar: p.a.createElement(p.a.Fragment, null, !l && p.a.createElement(I.a, u)),
 						trendingUnit: d && p.a.createElement(de, {
 							showCardView: o === R.g.Large
 						}),
 						content: p.a.createElement(m.Fragment, null, d && p.a.createElement(L.a, {
-							className: $.a.duHeader
-						}, p.a.createElement(H.c, null, "Popular posts")), p.a.createElement(j.a, null), s && p.a.createElement(N.a, null), l && p.a.createElement(C.a, u), p.a.createElement(S.a, null), p.a.createElement(T.a, {
+							className: X.a.duHeader
+						}, ee._("Popular posts", null, {
+							hk: "36DJb4"
+						})), p.a.createElement(j.a, null), s && p.a.createElement(N.a, null), l && p.a.createElement(C.a, u), p.a.createElement(S.a, null), p.a.createElement(T.a, {
 							listingKey: this.props.listingKey,
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
 						}), p.a.createElement(P.a, {
 							injectChildren: b,
 							noPostsComponent: () => p.a.createElement(w.a, {
-								listingName: Z.b,
+								listingName: Y.b,
 								sort: this.props.sort
 							}),
 							key: "listing",
 							listingKey: i,
-							listingName: Z.b,
+							listingName: Y.b,
 							listingViewed: (e, t) => Object(F.d)(i, this.props.sort, t, e, this.props.timeSort),
 							onLoadMore: this.props.onLoadMorePosts
 						})),
@@ -2542,4 +2537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0249e7a51314da06d937.js.map
+//# sourceMappingURL=Frontpage.dea4bab98eb48664da10.js.map

@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.3344bc930891739bd2f3.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.e1286bc0fedb4adf6fae.js
+// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
 			var a = Math.ceil,
 				n = Math.max;
 			e.exports = function(e, t, r, o) {
-				for (var s = -1, i = n(a((t - e) / (r || 1)), 0), l = Array(i); i--;) l[o ? i : ++s] = e, e += r;
-				return l
+				for (var s = -1, l = n(a((t - e) / (r || 1)), 0), i = Array(l); l--;) i[o ? l : ++s] = e, e += r;
+				return i
 			}
 		},
 		"./node_modules/lodash/_createRange.js": function(e, t, a) {
@@ -70,11 +70,11 @@
 				r = a.n(n),
 				o = a("./src/reddit/components/Settings/shared/Layout.m.less"),
 				s = a.n(o),
-				i = a("./src/lib/lessComponent.tsx");
-			const l = i.a.div("Container", s.a),
-				c = i.a.div("Content", s.a),
-				d = i.a.div("Sidebar", s.a);
-			t.a = e => r.a.createElement(l, {
+				l = a("./src/lib/lessComponent.tsx");
+			const i = l.a.div("Container", s.a),
+				c = l.a.div("Content", s.a),
+				d = l.a.div("Sidebar", s.a);
+			t.a = e => r.a.createElement(i, {
 				className: e.className
 			}, r.a.createElement(c, null, e.children), r.a.createElement(d, null, e.sidebar))
 		},
@@ -106,8 +106,8 @@
 			var n, r = a("./node_modules/lodash/throttle.js"),
 				o = a.n(r),
 				s = a("./node_modules/react/index.js"),
-				i = a.n(s),
-				l = a("./src/lib/classNames/index.ts"),
+				l = a.n(s),
+				i = a("./src/lib/classNames/index.ts"),
 				c = a("./src/lib/constants/index.ts"),
 				d = a("./src/lib/lessComponent.tsx"),
 				m = a("./src/reddit/constants/componentSizes.ts"),
@@ -137,9 +137,9 @@
 						active: t,
 						enabled: a
 					} = e, n = b(e, ["active", "enabled"]);
-					return i.a.createElement(p.a, {
+					return l.a.createElement(p.a, {
 						"aria-selected": t,
-						className: Object(l.a)(n.className, {
+						className: Object(i.a)(n.className, {
 							[g.a.mIsActive]: t,
 							[g.a.mIsEnabled]: !1 !== a
 						}),
@@ -150,7 +150,7 @@
 				_ = e => {
 					switch (e) {
 						case n.GEAR:
-							return i.a.createElement(E, null);
+							return l.a.createElement(E, null);
 						default:
 							return null
 					}
@@ -166,7 +166,7 @@
 					willChange: "transform",
 					zIndex: u.f
 				};
-			class j extends i.a.Component {
+			class j extends l.a.Component {
 				constructor(e) {
 					super(e), this.toggleSticky = o()(() => {
 						this.state.sticky || this.forceUnsticky ? S() < k && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
@@ -185,14 +185,14 @@
 					this.props.isCategoryPage && (window.removeEventListener("orientationchange", this.toggleSticky), window.removeEventListener("resize", this.toggleSticky), window.removeEventListener("scroll", this.toggleSticky))
 				}
 				render() {
-					return i.a.createElement(v, {
+					return l.a.createElement(v, {
 						className: this.props.className
-					}, i.a.createElement(y, {
-						className: Object(l.a)({
+					}, l.a.createElement(y, {
+						className: Object(i.a)({
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, _(this.props.icon), this.props.title), i.a.createElement(w, {
-						className: Object(l.a)({
+					}, _(this.props.icon), this.props.title), l.a.createElement(w, {
+						className: Object(i.a)({
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
 						role: "tablist",
@@ -226,42 +226,49 @@
 		"./src/reddit/pages/ErrorPages/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "b", (function() {
-				return d
+				return c
 			})), a.d(t, "a", (function() {
-				return m
+				return d
 			}));
-			var n = a("./node_modules/react/index.js"),
-				r = a.n(n),
-				o = a("./src/reddit/controls/Button/index.tsx"),
-				s = a("./src/reddit/i18n/components.tsx"),
-				i = a("./src/reddit/i18n/utils.ts"),
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				o = a.n(r),
+				s = a("./src/reddit/controls/Button/index.tsx"),
 				l = a("./src/reddit/pages/ErrorPages/index.m.less"),
-				c = a.n(l);
-			const d = e => {
+				i = a.n(l);
+			const c = e => {
 					let {
 						message: t
 					} = e;
-					return r.a.createElement("div", {
-						className: c.a.container
-					}, r.a.createElement("h3", {
-						className: c.a.title
-					}, t || Object(i.c)("Sorry, there doesn't seem to be anything here.")), r.a.createElement(o.h, {
-						className: c.a.primaryRouterLink,
+					return o.a.createElement("div", {
+						className: i.a.container
+					}, o.a.createElement("h3", {
+						className: i.a.title
+					}, t || n.fbt._("Sorry, there doesn't seem to be anything here.", null, {
+						hk: "3VvHek"
+					})), o.a.createElement(s.h, {
+						className: i.a.primaryRouterLink,
 						to: "/"
-					}, r.a.createElement(s.c, null, "Go Home")))
+					}, n.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				},
-				m = e => {
+				d = e => {
 					let {
 						message: t
 					} = e;
-					return r.a.createElement("div", {
-						className: c.a.container
-					}, r.a.createElement("h3", {
-						className: c.a.title
-					}, t || Object(i.c)("Sorry, You do not have permission to view this page.")), r.a.createElement(o.h, {
-						className: c.a.primaryRouterLink,
+					return o.a.createElement("div", {
+						className: i.a.container
+					}, o.a.createElement("h3", {
+						className: i.a.title
+					}, t || n.fbt._("Sorry, You do not have permission to view this page.", null, {
+						hk: "4lRbHD"
+					})), o.a.createElement(s.h, {
+						className: i.a.primaryRouterLink,
 						to: "/"
-					}, r.a.createElement(s.c, null, "Go Home")))
+					}, n.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				}
 		},
 		"./src/reddit/pages/ProfileModSettings/Navigation.m.less": function(e, t, a) {
@@ -278,8 +285,8 @@
 				r = a.n(n),
 				o = a("./node_modules/react-redux/es/index.js"),
 				s = a("./node_modules/reselect/es/index.js"),
-				i = a("./src/reddit/components/Settings/shared/Layout.tsx"),
-				l = a("./src/reddit/components/TabNav/index.tsx"),
+				l = a("./src/reddit/components/Settings/shared/Layout.tsx"),
+				i = a("./src/reddit/components/TabNav/index.tsx"),
 				c = a("./src/reddit/i18n/utils.ts"),
 				d = a("./src/reddit/pages/ErrorPages/index.tsx"),
 				m = a("./src/reddit/selectors/profile.ts"),
@@ -383,11 +390,11 @@
 					const {
 						profileName: s
 					} = o.params;
-					return e || t ? n ? r.a.createElement(r.a.Fragment, null, r.a.createElement(l.c, {
+					return e || t ? n ? r.a.createElement(r.a.Fragment, null, r.a.createElement(i.c, {
 						constrainWidth: !0,
 						title: "/user/".concat(s, " Settings"),
-						icon: l.b.GEAR
-					}), r.a.createElement(i.a, null, r.a.createElement(C, {
+						icon: i.b.GEAR
+					}), r.a.createElement(l.a, null, r.a.createElement(C, {
 						profileName: s
 					}))) : r.a.createElement(d.b, {
 						message: Object(c.c)("The requested page is not supported")
@@ -398,4 +405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.3344bc930891739bd2f3.js.map
+//# sourceMappingURL=ProfileModeration.e1286bc0fedb4adf6fae.js.map

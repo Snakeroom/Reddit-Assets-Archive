@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.67f025c89070be94d28d.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.251032eee338759a8309.js
+// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1018,42 +1018,49 @@
 		"./src/reddit/pages/ErrorPages/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return l
+				return d
 			})), s.d(t, "a", (function() {
-				return u
+				return l
 			}));
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./src/reddit/controls/Button/index.tsx"),
-				i = s("./src/reddit/i18n/components.tsx"),
-				a = s("./src/reddit/i18n/utils.ts"),
-				c = s("./src/reddit/pages/ErrorPages/index.m.less"),
-				d = s.n(c);
-			const l = e => {
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./src/reddit/controls/Button/index.tsx"),
+				a = s("./src/reddit/pages/ErrorPages/index.m.less"),
+				c = s.n(a);
+			const d = e => {
 					let {
 						message: t
 					} = e;
-					return r.a.createElement("div", {
-						className: d.a.container
-					}, r.a.createElement("h3", {
-						className: d.a.title
-					}, t || Object(a.c)("Sorry, there doesn't seem to be anything here.")), r.a.createElement(o.h, {
-						className: d.a.primaryRouterLink,
+					return o.a.createElement("div", {
+						className: c.a.container
+					}, o.a.createElement("h3", {
+						className: c.a.title
+					}, t || n.fbt._("Sorry, there doesn't seem to be anything here.", null, {
+						hk: "3VvHek"
+					})), o.a.createElement(i.h, {
+						className: c.a.primaryRouterLink,
 						to: "/"
-					}, r.a.createElement(i.c, null, "Go Home")))
+					}, n.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				},
-				u = e => {
+				l = e => {
 					let {
 						message: t
 					} = e;
-					return r.a.createElement("div", {
-						className: d.a.container
-					}, r.a.createElement("h3", {
-						className: d.a.title
-					}, t || Object(a.c)("Sorry, You do not have permission to view this page.")), r.a.createElement(o.h, {
-						className: d.a.primaryRouterLink,
+					return o.a.createElement("div", {
+						className: c.a.container
+					}, o.a.createElement("h3", {
+						className: c.a.title
+					}, t || n.fbt._("Sorry, You do not have permission to view this page.", null, {
+						hk: "4lRbHD"
+					})), o.a.createElement(i.h, {
+						className: c.a.primaryRouterLink,
 						to: "/"
-					}, r.a.createElement(i.c, null, "Go Home")))
+					}, n.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				}
 		},
 		"./src/reddit/pages/Topic/SubredditList/Subreddit/index.m.less": function(e, t, s) {
@@ -1609,4 +1616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.67f025c89070be94d28d.js.map
+//# sourceMappingURL=Topic.251032eee338759a8309.js.map

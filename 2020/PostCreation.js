@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7f54a2cf3112d686b801.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.18d816e9a8f8c6521974.js
+// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -24995,42 +24995,49 @@
 		"./src/reddit/pages/ErrorPages/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return d
+				return l
 			})), n.d(t, "a", (function() {
-				return u
+				return d
 			}));
-			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/reddit/controls/Button/index.tsx"),
-				i = n("./src/reddit/i18n/components.tsx"),
-				a = n("./src/reddit/i18n/utils.ts"),
-				c = n("./src/reddit/pages/ErrorPages/index.m.less"),
-				l = n.n(c);
-			const d = e => {
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				i = n("./src/reddit/controls/Button/index.tsx"),
+				a = n("./src/reddit/pages/ErrorPages/index.m.less"),
+				c = n.n(a);
+			const l = e => {
 					let {
 						message: t
 					} = e;
-					return s.a.createElement("div", {
-						className: l.a.container
-					}, s.a.createElement("h3", {
-						className: l.a.title
-					}, t || Object(a.c)("Sorry, there doesn't seem to be anything here.")), s.a.createElement(r.h, {
-						className: l.a.primaryRouterLink,
+					return r.a.createElement("div", {
+						className: c.a.container
+					}, r.a.createElement("h3", {
+						className: c.a.title
+					}, t || o.fbt._("Sorry, there doesn't seem to be anything here.", null, {
+						hk: "3VvHek"
+					})), r.a.createElement(i.h, {
+						className: c.a.primaryRouterLink,
 						to: "/"
-					}, s.a.createElement(i.c, null, "Go Home")))
+					}, o.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				},
-				u = e => {
+				d = e => {
 					let {
 						message: t
 					} = e;
-					return s.a.createElement("div", {
-						className: l.a.container
-					}, s.a.createElement("h3", {
-						className: l.a.title
-					}, t || Object(a.c)("Sorry, You do not have permission to view this page.")), s.a.createElement(r.h, {
-						className: l.a.primaryRouterLink,
+					return r.a.createElement("div", {
+						className: c.a.container
+					}, r.a.createElement("h3", {
+						className: c.a.title
+					}, t || o.fbt._("Sorry, You do not have permission to view this page.", null, {
+						hk: "4lRbHD"
+					})), r.a.createElement(i.h, {
+						className: c.a.primaryRouterLink,
 						to: "/"
-					}, s.a.createElement(i.c, null, "Go Home")))
+					}, o.fbt._("Go Home", null, {
+						hk: "3E9E1g"
+					})))
 				}
 		},
 		"./src/reddit/pages/PostCreation/index.tsx": function(e, t, n) {
@@ -29577,4 +29584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.7f54a2cf3112d686b801.js.map
+//# sourceMappingURL=PostCreation.18d816e9a8f8c6521974.js.map
