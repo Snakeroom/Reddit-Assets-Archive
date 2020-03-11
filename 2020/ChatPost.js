@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.070eb1818c007ae7b4cd.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.9590e536f3a9958fda94.js
+// Retrieved at 3/11/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1245,10 +1245,10 @@
 					}), !p && s.a.createElement(Re, nt({
 						onClick: () => m ? w() : v(),
 						tooltipId: M,
-						tooltipText: m ? Y.fbt._("Sitewide Unblock", null, {
-							hk: "186bAq"
-						}) : Y.fbt._("Sitewide Block", null, {
-							hk: "4lWwpL"
+						tooltipText: m ? Y.fbt._("Unblock User", null, {
+							hk: "26F2c9"
+						}) : Y.fbt._("Block User", null, {
+							hk: "1XKY2A"
 						}),
 						trackingNoun: "sitewide_".concat(m ? "unblock" : "block")
 					}, H), m ? s.a.createElement(dt, null) : s.a.createElement(ot, null))), !p && s.a.createElement(Ae, nt({}, e, {
@@ -2347,4 +2347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.070eb1818c007ae7b4cd.js.map
+//# sourceMappingURL=ChatPost.9590e536f3a9958fda94.js.map
