@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.8f78340e59b6a03eedac.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.023aff7e64e39c1e20d9.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -601,7 +601,7 @@
 				N = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Upsell/index.m.less"),
 				P = r.n(N);
 			const T = Object(o.c)({
-				tokenName: w.o,
+				tokenName: w.p,
 				language: E.O
 			});
 			var B = Object(s.b)(T)((function(e) {
@@ -735,7 +735,7 @@
 				c = r("./src/config.ts"),
 				i = r("./src/reddit/selectors/gov.ts");
 			const d = Object(o.c)({
-				tokenSymbol: i.p
+				tokenSymbol: i.q
 			});
 			t.a = Object(s.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -823,10 +823,9 @@
 				});
 				return Object(s.b)(n)(e => {
 					const {
-						featureEnabled: n,
-						dispatch: s
-					} = e, o = i(e, ["featureEnabled", "dispatch"]);
-					return n ? a.a.createElement(t, o) : void 0 !== r ? a.a.createElement(r, o) : null
+						featureEnabled: n
+					} = e, s = i(e, ["featureEnabled"]);
+					return n ? a.a.createElement(t, s) : void 0 !== r ? a.a.createElement(r, s) : null
 				})
 			}
 		},
@@ -895,15 +894,15 @@
 				return h
 			})), r.d(t, "j", (function() {
 				return f
-			})), r.d(t, "o", (function() {
-				return v
 			})), r.d(t, "p", (function() {
+				return v
+			})), r.d(t, "q", (function() {
 				return w
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "o", (function() {
 				return E
-			})), r.d(t, "k", (function() {
-				return O
 			})), r.d(t, "l", (function() {
+				return O
+			})), r.d(t, "m", (function() {
 				return j
 			})), r.d(t, "s", (function() {
 				return I
@@ -911,11 +910,11 @@
 				return y
 			})), r.d(t, "f", (function() {
 				return k
-			})), r.d(t, "q", (function() {
-				return C
-			})), r.d(t, "m", (function() {
-				return N
 			})), r.d(t, "r", (function() {
+				return C
+			})), r.d(t, "n", (function() {
+				return N
+			})), r.d(t, "k", (function() {
 				return P
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1036,4 +1035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxPurchaseModal.8f78340e59b6a03eedac.js.map
+//# sourceMappingURL=HarbergerTaxPurchaseModal.023aff7e64e39c1e20d9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.7bed0dedce111fd0ed22.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.047f1dc654273b04bb4a.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceOptOutModal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -136,7 +136,7 @@
 							text: Object(r.a)(c, "gov.transferSuccess", {
 								amount: Object(o.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(f.o)(s(), {
+								tokenName: Object(f.p)(s(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -176,7 +176,7 @@
 						n(Object(d.e)({
 							kind: p.b.SuccessCommunity,
 							text: Object(r.a)(s().user.language, o, {
-								tokenName: Object(f.o)(s(), {
+								tokenName: Object(f.p)(s(), {
 									subredditId: t
 								})
 							})
@@ -324,7 +324,7 @@
 						const r = Object(i.q)(e, {
 							pageLayer: n
 						});
-						return Object(l.o)(e, {
+						return Object(l.p)(e, {
 							subredditId: r ? r.id : void 0
 						})
 					}
@@ -535,15 +535,15 @@
 				return g
 			})), n.d(t, "j", (function() {
 				return j
-			})), n.d(t, "o", (function() {
-				return x
 			})), n.d(t, "p", (function() {
+				return x
+			})), n.d(t, "q", (function() {
 				return v
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return y
-			})), n.d(t, "k", (function() {
-				return h
 			})), n.d(t, "l", (function() {
+				return h
+			})), n.d(t, "m", (function() {
 				return I
 			})), n.d(t, "s", (function() {
 				return N
@@ -551,11 +551,11 @@
 				return w
 			})), n.d(t, "f", (function() {
 				return k
-			})), n.d(t, "q", (function() {
-				return _
-			})), n.d(t, "m", (function() {
-				return C
 			})), n.d(t, "r", (function() {
+				return _
+			})), n.d(t, "n", (function() {
+				return C
+			})), n.d(t, "k", (function() {
 				return E
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -676,4 +676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceOptOutModal.7bed0dedce111fd0ed22.js.map
+//# sourceMappingURL=GovernanceOptOutModal.047f1dc654273b04bb4a.js.map

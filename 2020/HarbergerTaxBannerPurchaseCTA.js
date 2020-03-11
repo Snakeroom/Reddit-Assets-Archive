@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.3c188c705b89b1019400.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.f2f32e8407860a45b89d.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -88,13 +88,13 @@
 					subreddit: m.q,
 					tokenDisplayConversion: (e, t) => {
 						const r = Object(m.q)(e, t) || void 0;
-						return Object(x.n)(e, {
+						return Object(x.o)(e, {
 							subredditId: r && r.id
 						})
 					},
 					useCrypto: (e, t) => {
 						const r = Object(m.q)(e, t);
-						return !!r && Object(x.r)(e, {
+						return !!r && Object(x.k)(e, {
 							subredditId: r.id
 						})
 					},
@@ -171,7 +171,7 @@
 				d = r("./src/config.ts"),
 				c = r("./src/reddit/selectors/gov.ts");
 			const a = Object(i.c)({
-				tokenSymbol: c.p
+				tokenSymbol: c.q
 			});
 			t.a = Object(o.b)(a)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -447,15 +447,15 @@
 				return h
 			})), r.d(t, "j", (function() {
 				return j
-			})), r.d(t, "o", (function() {
-				return x
 			})), r.d(t, "p", (function() {
+				return x
+			})), r.d(t, "q", (function() {
 				return y
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "o", (function() {
 				return v
-			})), r.d(t, "k", (function() {
-				return w
 			})), r.d(t, "l", (function() {
+				return w
+			})), r.d(t, "m", (function() {
 				return O
 			})), r.d(t, "s", (function() {
 				return I
@@ -463,11 +463,11 @@
 				return _
 			})), r.d(t, "f", (function() {
 				return P
-			})), r.d(t, "q", (function() {
-				return k
-			})), r.d(t, "m", (function() {
-				return T
 			})), r.d(t, "r", (function() {
+				return k
+			})), r.d(t, "n", (function() {
+				return T
+			})), r.d(t, "k", (function() {
 				return C
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -588,4 +588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.3c188c705b89b1019400.js.map
+//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.f2f32e8407860a45b89d.js.map

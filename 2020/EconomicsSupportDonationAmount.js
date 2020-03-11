@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportDonationAmount.2c543c548eefa78c25eb.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportDonationAmount.0f8e8b9ad9049c4a1639.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportDonationAmount"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, n, t) {
@@ -74,4 +74,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportDonationAmount.2c543c548eefa78c25eb.js.map
+//# sourceMappingURL=EconomicsSupportDonationAmount.0f8e8b9ad9049c4a1639.js.map

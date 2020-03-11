@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.a4f4889e5119c59e1115.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.811b4e9b404ec94ac3bc.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -762,4 +762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BannedUserModal.a4f4889e5119c59e1115.js.map
+//# sourceMappingURL=BannedUserModal.811b4e9b404ec94ac3bc.js.map

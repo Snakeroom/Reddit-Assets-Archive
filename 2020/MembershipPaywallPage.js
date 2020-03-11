@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.3b8d1b5dc526cb391753.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7faf4bfad0c32d0e76e1.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -556,7 +556,7 @@
 				p = a("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				u = a.n(p);
 			const g = Object(i.c)({
-				tokenDisplayConversion: l.n
+				tokenDisplayConversion: l.o
 			});
 			t.a = Object(r.b)(g)((function(e) {
 				return o.a.createElement("div", {
@@ -1017,10 +1017,9 @@
 				});
 				return Object(r.b)(s)(e => {
 					const {
-						featureEnabled: s,
-						dispatch: r
-					} = e, i = c(e, ["featureEnabled", "dispatch"]);
-					return s ? o.a.createElement(t, i) : void 0 !== a ? o.a.createElement(a, i) : null
+						featureEnabled: s
+					} = e, r = c(e, ["featureEnabled"]);
+					return s ? o.a.createElement(t, r) : void 0 !== a ? o.a.createElement(a, r) : null
 				})
 			}
 		},
@@ -2971,7 +2970,7 @@
 					} = t;
 					return Object(k.u)(e, a)
 				},
-				useCrypto: Ut.r,
+				useCrypto: Ut.k,
 				userIsLoggedIn: e => !!e.user.account
 			});
 			var Qt = Object(r.b)(Jt, e => ({
@@ -3603,4 +3602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.3b8d1b5dc526cb391753.js.map
+//# sourceMappingURL=MembershipPaywallPage.7faf4bfad0c32d0e76e1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.3d4c3348440a0f1a89f4.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e515d39fedf039f8f40e.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
@@ -11,7 +11,7 @@
 				c = n("./src/config.ts"),
 				i = n("./src/reddit/selectors/gov.ts");
 			const d = Object(a.c)({
-				tokenSymbol: i.p
+				tokenSymbol: i.q
 			});
 			t.a = Object(o.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -381,15 +381,15 @@
 				return g
 			})), n.d(t, "j", (function() {
 				return v
-			})), n.d(t, "o", (function() {
-				return y
 			})), n.d(t, "p", (function() {
+				return y
+			})), n.d(t, "q", (function() {
 				return x
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return w
-			})), n.d(t, "k", (function() {
-				return I
 			})), n.d(t, "l", (function() {
+				return I
+			})), n.d(t, "m", (function() {
 				return j
 			})), n.d(t, "s", (function() {
 				return k
@@ -397,11 +397,11 @@
 				return _
 			})), n.d(t, "f", (function() {
 				return O
-			})), n.d(t, "q", (function() {
-				return S
-			})), n.d(t, "m", (function() {
-				return C
 			})), n.d(t, "r", (function() {
+				return S
+			})), n.d(t, "n", (function() {
+				return C
+			})), n.d(t, "k", (function() {
 				return E
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -522,4 +522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.3d4c3348440a0f1a89f4.js.map
+//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.e515d39fedf039f8f40e.js.map

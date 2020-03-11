@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.c7645604ce7112eff33a.js
-// Retrieved at 3/5/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.4ea671f9dd80aaf0d293.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -555,10 +555,9 @@
 				});
 				return Object(i.b)(s)(e => {
 					const {
-						featureEnabled: s,
-						dispatch: i
-					} = e, c = o(e, ["featureEnabled", "dispatch"]);
-					return s ? n.a.createElement(t, c) : void 0 !== r ? n.a.createElement(r, c) : null
+						featureEnabled: s
+					} = e, i = o(e, ["featureEnabled"]);
+					return s ? n.a.createElement(t, i) : void 0 !== r ? n.a.createElement(r, i) : null
 				})
 			}
 		},
@@ -665,4 +664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.c7645604ce7112eff33a.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.4ea671f9dd80aaf0d293.js.map

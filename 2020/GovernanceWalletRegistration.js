@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.725ebc1cad28525b1c81.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.fd1e8af05acc8d02df3c.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -195,7 +195,7 @@
 							text: Object(a.a)(c, "gov.transferSuccess", {
 								amount: Object(r.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(g.o)(s(), {
+								tokenName: Object(g.p)(s(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -235,7 +235,7 @@
 						n(Object(i.e)({
 							kind: p.b.SuccessCommunity,
 							text: Object(a.a)(s().user.language, r, {
-								tokenName: Object(g.o)(s(), {
+								tokenName: Object(g.p)(s(), {
 									subredditId: t
 								})
 							})
@@ -252,7 +252,7 @@
 				c = n("./src/config.ts"),
 				i = n("./src/reddit/selectors/gov.ts");
 			const d = Object(o.c)({
-				tokenSymbol: i.p
+				tokenSymbol: i.q
 			});
 			t.a = Object(r.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -352,7 +352,7 @@
 			}
 			const f = Object(o.c)({
 				blockchainProvider: m.a,
-				token: m.q,
+				token: m.r,
 				userIsLoggedIn: e => !!e.user.account,
 				publicAddress: (e, t) => {
 					let {
@@ -980,7 +980,7 @@
 					return {
 						blockchainProvider: Object(u.a)(e, n),
 						subredditId: n.subredditId,
-						token: Object(u.q)(e, n)
+						token: Object(u.r)(e, n)
 					}
 				}),
 				v = Object(l.t)(),
@@ -1495,15 +1495,15 @@
 				return v
 			})), n.d(t, "j", (function() {
 				return f
-			})), n.d(t, "o", (function() {
-				return C
 			})), n.d(t, "p", (function() {
+				return C
+			})), n.d(t, "q", (function() {
 				return x
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return y
-			})), n.d(t, "k", (function() {
-				return w
 			})), n.d(t, "l", (function() {
+				return w
+			})), n.d(t, "m", (function() {
 				return j
 			})), n.d(t, "s", (function() {
 				return k
@@ -1511,11 +1511,11 @@
 				return E
 			})), n.d(t, "f", (function() {
 				return O
-			})), n.d(t, "q", (function() {
-				return N
-			})), n.d(t, "m", (function() {
-				return I
 			})), n.d(t, "r", (function() {
+				return N
+			})), n.d(t, "n", (function() {
+				return I
+			})), n.d(t, "k", (function() {
 				return _
 			}));
 			var a = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1636,4 +1636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.725ebc1cad28525b1c81.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.fd1e8af05acc8d02df3c.js.map

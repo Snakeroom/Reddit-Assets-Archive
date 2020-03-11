@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.dccaf11dc4e936586978.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.f16cf3d303fc60c91cdc.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -518,7 +518,7 @@
 							text: Object(a.a)(o, "gov.transferSuccess", {
 								amount: Object(r.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(b.o)(n(), {
+								tokenName: Object(b.p)(n(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -558,7 +558,7 @@
 						s(Object(c.e)({
 							kind: m.b.SuccessCommunity,
 							text: Object(a.a)(n().user.language, r, {
-								tokenName: Object(b.o)(n(), {
+								tokenName: Object(b.p)(n(), {
 									subredditId: t
 								})
 							})
@@ -4735,15 +4735,15 @@
 				return y
 			})), s.d(t, "j", (function() {
 				return f
-			})), s.d(t, "o", (function() {
-				return v
 			})), s.d(t, "p", (function() {
+				return v
+			})), s.d(t, "q", (function() {
 				return O
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "o", (function() {
 				return x
-			})), s.d(t, "k", (function() {
-				return C
 			})), s.d(t, "l", (function() {
+				return C
+			})), s.d(t, "m", (function() {
 				return j
 			})), s.d(t, "s", (function() {
 				return k
@@ -4751,11 +4751,11 @@
 				return w
 			})), s.d(t, "f", (function() {
 				return _
-			})), s.d(t, "q", (function() {
-				return E
-			})), s.d(t, "m", (function() {
-				return I
 			})), s.d(t, "r", (function() {
+				return E
+			})), s.d(t, "n", (function() {
+				return I
+			})), s.d(t, "k", (function() {
 				return L
 			}));
 			var a = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -4876,4 +4876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.dccaf11dc4e936586978.js.map
+//# sourceMappingURL=PainterModalLoader.f16cf3d303fc60c91cdc.js.map

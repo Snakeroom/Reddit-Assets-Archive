@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.f9323ff9211c69d9ccfe.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.e2d61be7915574f9d750.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -193,7 +193,7 @@
 						productId: r
 					} = t;
 					const n = e.products.models[r];
-					return Object(I.o)(e, {
+					return Object(I.p)(e, {
 						subredditId: n ? n.subredditId : void 0
 					})
 				}
@@ -254,11 +254,11 @@
 				})),
 				U = r("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
 				R = r.n(U);
-			const A = Object(c.c)({
+			const q = Object(c.c)({
 					alreadyOwned: i.b
 				}),
-				q = Object(a.b)(A);
-			t.default = Object(d.a)(q((function(e) {
+				A = Object(a.b)(q);
+			t.default = Object(d.a)(A((function(e) {
 				return s.a.createElement("div", {
 					className: Object(o.a)(R.a.container, e.className)
 				}, e.alreadyOwned ? s.a.createElement(k, {
@@ -308,7 +308,7 @@
 				d = r("./src/config.ts"),
 				o = r("./src/reddit/selectors/gov.ts");
 			const i = Object(c.c)({
-				tokenSymbol: o.p
+				tokenSymbol: o.q
 			});
 			t.a = Object(a.b)(i)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -422,15 +422,15 @@
 				return x
 			})), r.d(t, "j", (function() {
 				return v
-			})), r.d(t, "o", (function() {
-				return h
 			})), r.d(t, "p", (function() {
+				return h
+			})), r.d(t, "q", (function() {
 				return j
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "o", (function() {
 				return I
-			})), r.d(t, "k", (function() {
-				return y
 			})), r.d(t, "l", (function() {
+				return y
+			})), r.d(t, "m", (function() {
 				return O
 			})), r.d(t, "s", (function() {
 				return E
@@ -438,11 +438,11 @@
 				return w
 			})), r.d(t, "f", (function() {
 				return N
-			})), r.d(t, "q", (function() {
-				return _
-			})), r.d(t, "m", (function() {
-				return P
 			})), r.d(t, "r", (function() {
+				return _
+			})), r.d(t, "n", (function() {
+				return P
+			})), r.d(t, "k", (function() {
 				return k
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -563,4 +563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.f9323ff9211c69d9ccfe.js.map
+//# sourceMappingURL=BadgePurchaseModal.e2d61be7915574f9d750.js.map

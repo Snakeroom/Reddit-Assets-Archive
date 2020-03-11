@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.e731c98b8dad3fcea782.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.1c699b32e08ce99c4e7a.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
@@ -185,9 +185,9 @@
 				R = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				_ = a("./src/reddit/selectors/user.ts"),
 				f = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const P = Object(h.a)(f.c),
-				v = () => async (e, t) => {
-					Object(N.b)(x.a)(t()) && (e(Object(y.i)(x.a)), e(P()))
+			const v = Object(h.a)(f.c),
+				P = () => async (e, t) => {
+					Object(N.b)(x.a)(t()) && (e(Object(y.i)(x.a)), e(v()))
 				}, I = Object(h.a)(f.u), S = Object(h.a)(f.t), k = (e, t) => {
 					switch (e && e.error && e.error.type) {
 						case b.E.USER_DOESNT_EXIST:
@@ -209,7 +209,7 @@
 						text: e
 					}))
 				}, w = Object(h.a)(f.v), V = e => async (t, a) => {
-					t(w(e)), t(v());
+					t(w(e)), t(P());
 					const r = a(),
 						n = Object(_.O)(r),
 						s = Object(C.a)(n, "gold.checkoutForm.infoSuccessfullyUpdated");
@@ -234,10 +234,10 @@
 				}).apply(this, arguments)
 			}
 			const F = Object(l.c)({
-					isPending: R.u
+					isPending: R.v
 				}),
 				Y = Object(d.b)(F, (e, t) => ({
-					closeModal: () => e(v()),
+					closeModal: () => e(P()),
 					submitCard: t => e((e => async (t, a, r) => {
 						let {
 							apiContext: n
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=UpdateCardModal.e731c98b8dad3fcea782.js.map
+//# sourceMappingURL=UpdateCardModal.1c699b32e08ce99c4e7a.js.map

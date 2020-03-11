@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.6e1dec73e3bfb28503c7.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.a20963e393a4204761c9.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -307,7 +307,7 @@
 				}, e))
 			};
 			const Oe = Object(o.c)({
-					tokenName: c.o,
+					tokenName: c.p,
 					activeTooltipId: m.a,
 					isCurrentUser: (e, t) => {
 						const r = Object(p.i)(e);
@@ -780,15 +780,15 @@
 				return C
 			})), r.d(t, "j", (function() {
 				return x
-			})), r.d(t, "o", (function() {
-				return I
 			})), r.d(t, "p", (function() {
+				return I
+			})), r.d(t, "q", (function() {
 				return h
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "o", (function() {
 				return L
-			})), r.d(t, "k", (function() {
-				return E
 			})), r.d(t, "l", (function() {
+				return E
+			})), r.d(t, "m", (function() {
 				return w
 			})), r.d(t, "s", (function() {
 				return f
@@ -796,11 +796,11 @@
 				return _
 			})), r.d(t, "f", (function() {
 				return j
-			})), r.d(t, "q", (function() {
-				return H
-			})), r.d(t, "m", (function() {
-				return O
 			})), r.d(t, "r", (function() {
+				return H
+			})), r.d(t, "n", (function() {
+				return O
+			})), r.d(t, "k", (function() {
 				return M
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -921,4 +921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.6e1dec73e3bfb28503c7.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.a20963e393a4204761c9.js.map

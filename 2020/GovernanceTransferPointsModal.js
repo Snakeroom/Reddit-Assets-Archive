@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.e4d981c14baae16515bf.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.726e60dd03961d836062.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -144,7 +144,7 @@
 							text: Object(s.a)(c, "gov.transferSuccess", {
 								amount: Object(r.a)(e.amount),
 								recipient: e.recipient,
-								tokenName: Object(v.o)(a(), {
+								tokenName: Object(v.p)(a(), {
 									subredditId: e.subredditId
 								})
 							})
@@ -184,7 +184,7 @@
 						n(Object(i.e)({
 							kind: p.b.SuccessCommunity,
 							text: Object(s.a)(a().user.language, r, {
-								tokenName: Object(v.o)(a(), {
+								tokenName: Object(v.p)(a(), {
 									subredditId: t
 								})
 							})
@@ -318,9 +318,9 @@
 				contentId: e => e.transfers.communityPoints.contentId,
 				blockchainProvider: m.a,
 				language: e => e.user.language,
-				tokenDisplayConversion: m.n,
+				tokenDisplayConversion: m.o,
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
-				unlockedToken: m.q,
+				unlockedToken: m.r,
 				wallet: m.g
 			});
 			var C = Object(r.b)(N)((function(e) {
@@ -552,19 +552,19 @@
 					subreddit: l.q,
 					tokenDisplayConversion: (e, t) => {
 						const n = Object(l.q)(e, t);
-						return Object(m.n)(e, {
+						return Object(m.o)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					tokenName: (e, t) => {
 						const n = Object(l.q)(e, t);
-						return Object(m.o)(e, {
+						return Object(m.p)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					useCrypto: (e, t) => {
 						const n = Object(l.q)(e, t);
-						return Object(m.r)(e, {
+						return Object(m.k)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					}
@@ -719,4 +719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal.e4d981c14baae16515bf.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal.726e60dd03961d836062.js.map

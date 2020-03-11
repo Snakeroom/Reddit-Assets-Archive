@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.770d870a5d1f54bb8f5f.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.ab1e5eef2cacb961aa03.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -3041,7 +3041,7 @@
 					let r = t;
 					if (Object(v.u)(n.getType()) ? r = r.set(r.keySeq().first(), n.merge({
 							type: v.n
-						})) : Object(v.o)(n.getType()) && (r = o.BlockMapBuilder.createFromArray([Object(K.h)(), ...r.toArray()])), Object(v.u)(s.getType()) || !Object(A.r)(e)) {
+						})) : Object(v.o)(n.getType()) && (r = o.BlockMapBuilder.createFromArray([Object(K.h)(), ...r.toArray()])), Object(v.u)(s.getType()) || !Object(A.q)(e)) {
 						const t = Object(K.h)();
 						r = r.set(t.getKey(), t)
 					} else if (Object(v.o)(s.getType())) {
@@ -3133,7 +3133,7 @@
 					return n.isCollapsed() && 0 === n.getStartOffset() && Object(v.o)(t.getCurrentContent().getBlockForKey(n.getStartKey()).getType())
 				};
 			var At = (t, e) => {
-					if (!Object(A.r)(e)) return t;
+					if (!Object(A.q)(e)) return t;
 					const n = t.getSelection(),
 						o = t.getCurrentContent(),
 						s = o.getBlockForKey(n.getStartKey());
@@ -3509,7 +3509,7 @@
 						isCompact: !0,
 						key: "make-gif",
 						on: l,
-						onClick: () => r(Object(A.q)(o, a, {
+						onClick: () => r(Object(A.r)(o, a, {
 							makeGif: !l
 						}))
 					}), i && t.showThumbnailButton && c.a.createElement(tn, {
@@ -3588,7 +3588,7 @@
 					}, this.onThumbnailSelect = t => {
 						const e = this.props.blockProps.getEditorState(),
 							n = this.props.block.getKey();
-						let o = Object(A.q)(e, this.props.block.getKey(), {
+						let o = Object(A.r)(e, this.props.block.getKey(), {
 							thumbnail: t
 						});
 						o = Object(A.p)(o, n), this.props.blockProps.onChange(o), this.toggleVideoThumbnailsSelector()
@@ -4713,7 +4713,7 @@
 							const e = s.getBlockBefore(r.getKey());
 							return o.EditorState.forceSelection(t, Object(K.b)(e))
 						}
-						if (!Object(A.r)(e) && Object(K.g)(r)) {
+						if (!Object(A.q)(e) && Object(K.g)(r)) {
 							const e = s.getBlockBefore(r.getKey());
 							if (e && Object(v.o)(e.getType())) return t = o.EditorState.push(t, Object(K.i)(s, r.getKey()), Q.f), o.EditorState.forceSelection(t, Object(K.b)(e))
 						}
@@ -4740,7 +4740,7 @@
 						if (Object(v.o)(r.getType())) return Object(A.d)(t, r.getKey()); {
 							const i = s.getBlockAfter(n.getEndKey());
 							if (i && Object(v.o)(i.getType())) {
-								if (Object(A.r)(e)) return Object(A.d)(t, i.getKey());
+								if (Object(A.q)(e)) return Object(A.d)(t, i.getKey());
 								if (Object(K.g)(r)) return t = o.EditorState.push(t, Object(K.i)(s, r.getKey()), Q.f), o.EditorState.forceSelection(t, Object(K.b)(i))
 							}
 						}
@@ -5977,7 +5977,7 @@
 						case uo.m:
 						case uo.a:
 						case uo.D:
-							return void t.blocks.push(...vc(e, n.mediaMetadataMap, Object(A.r)(n.editorType)))
+							return void t.blocks.push(...vc(e, n.mediaMetadataMap, Object(A.q)(n.editorType)))
 					}
 				},
 				Rc = (t, e, n) => {
@@ -6033,7 +6033,7 @@
 					const a = t.content;
 					if (1 === e.length && (e[0].e === uo.m || e[0].e === uo.a)) {
 						const n = e[0];
-						if (Object(tc.d)(n.id)) return void t.blocks.push(...vc(n, s.mediaMetadataMap, Object(A.r)(s.editorType)))
+						if (Object(tc.d)(n.id)) return void t.blocks.push(...vc(n, s.mediaMetadataMap, Object(A.q)(s.editorType)))
 					}
 					const {
 						charList: l,
@@ -6970,11 +6970,11 @@
 			"use strict";
 			n.d(e, "a", (function() {
 				return o
-			})), n.d(e, "r", (function() {
+			})), n.d(e, "q", (function() {
 				return b
 			})), n.d(e, "h", (function() {
 				return y
-			})), n.d(e, "q", (function() {
+			})), n.d(e, "r", (function() {
 				return E
 			})), n.d(e, "l", (function() {
 				return S
@@ -7919,4 +7919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.770d870a5d1f54bb8f5f.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.ab1e5eef2cacb961aa03.js.map

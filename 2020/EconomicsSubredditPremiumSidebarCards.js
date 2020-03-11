@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.550018c253312f1b1180.js
-// Retrieved at 3/4/2020, 10:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.2e54e427569d6e840167.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -674,7 +674,7 @@
 					} = t;
 					return e.subreddits.models[s]
 				},
-				useCrypto: j.r
+				useCrypto: j.k
 			});
 			var re = Object(n.b)(se)((function(e) {
 					return e.account && e.subreddit ? i.a.createElement("div", {
@@ -791,7 +791,7 @@
 						className: Ee.a.controlsPostPurchase,
 						subredditId: this.props.subredditId,
 						onOpenPurchaseModal: this.props.useCrypto ? this.openCheckout : void 0
-					}), j.r && this.state.checkoutOpen && i.a.createElement(O.a, {
+					}), j.k && this.state.checkoutOpen && i.a.createElement(O.a, {
 						withOverlay: !0,
 						subredditId: this.props.subredditId,
 						onClose: this.closeCheckout
@@ -832,7 +832,7 @@
 					} = t;
 					return !1 === Object(a.g)(e, s, f.a.AnimatedCard)
 				},
-				useCrypto: j.r,
+				useCrypto: j.k,
 				userHasBadges: (e, t) => {
 					let {
 						subredditId: s
@@ -1008,4 +1008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.550018c253312f1b1180.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.2e54e427569d6e840167.js.map

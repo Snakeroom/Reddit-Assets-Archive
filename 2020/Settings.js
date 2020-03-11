@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1f243ff56fc19f50b4f9.js
-// Retrieved at 3/11/2020, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c07750a007bcb68e5054.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -5533,4 +5533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.1f243ff56fc19f50b4f9.js.map
+//# sourceMappingURL=Settings.c07750a007bcb68e5054.js.map

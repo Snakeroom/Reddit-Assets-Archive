@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.044181a1b941d7ca2997.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.6031ea16967167dc8f48.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -471,15 +471,15 @@
 				return b
 			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(t, "o", (function() {
-				return f
 			})), n.d(t, "p", (function() {
+				return f
+			})), n.d(t, "q", (function() {
 				return w
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return N
-			})), n.d(t, "k", (function() {
-				return y
 			})), n.d(t, "l", (function() {
+				return y
+			})), n.d(t, "m", (function() {
 				return j
 			})), n.d(t, "s", (function() {
 				return E
@@ -487,11 +487,11 @@
 				return O
 			})), n.d(t, "f", (function() {
 				return _
-			})), n.d(t, "q", (function() {
-				return M
-			})), n.d(t, "m", (function() {
-				return I
 			})), n.d(t, "r", (function() {
+				return M
+			})), n.d(t, "n", (function() {
+				return I
+			})), n.d(t, "k", (function() {
 				return S
 			}));
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -612,4 +612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.044181a1b941d7ca2997.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.6031ea16967167dc8f48.js.map

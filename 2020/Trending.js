@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.494573f9f5a11c58a7f5.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.414daf3ef0292e696cd6.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -54,8 +54,8 @@
 				m = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				p = s("./src/reddit/components/Translated/index.tsx"),
 				u = s("./src/reddit/components/TrendingSearches/TrendingItemViewability.tsx"),
-				h = s("./src/reddit/connectors/miniCardPost.ts"),
-				b = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				b = s("./src/reddit/connectors/miniCardPost.ts"),
+				h = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = s("./src/reddit/controls/InternalLink/index.tsx"),
 				x = s("./src/reddit/controls/Search/RelatedSubredditMetaData.tsx"),
 				P = s("./src/reddit/helpers/name/index.ts"),
@@ -67,100 +67,103 @@
 				y = s.n(v),
 				T = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
 				N = s.n(T);
-			const k = e => e.type === j.f.Spoiler,
-				S = Object(b.t)(),
-				w = e => {
-					const {
-						backgroundWrapperClassName: t,
-						descriptionClassName: s,
-						innerContainerClassName: n,
-						onPostClick: c,
-						trendingPost: h,
-						trendingSearch: b,
-						shouldOpenPost: j,
-						showSubredditMeta: v = !0,
-						showSubredditName: T,
-						subredditOrProfile: S
-					} = e, w = h && h.preview && h.preview.url || void 0, D = h && h.isSponsored ? "promoted_trend" : "trending", f = h && Object(d.a)(h.permalink) || "", E = j && f || b && Object(i.a)("/search", {
-						q: b.rawQuery,
-						source: D
-					}) || f, I = b ? b.subredditInfo && b.subredditInfo.icon : S && S.icon.url, U = b ? b.subredditInfo && b.subredditInfo.displayText : S && (S.displayText || S.name), M = h ? h.flair.filter(k) : [], V = h ? h.score : 0, W = h ? h.numComments : 0, A = h && h.isSponsored, F = Object(_.a)(e).body, L = "linear-gradient(\n      ".concat(Object(r.j)(F, .2), ",\n      ").concat(Object(r.j)(F, .3), ",\n      ").concat(Object(r.j)(F, .4), ",\n      ").concat(Object(r.j)(F, .6), ",\n      ").concat(Object(r.j)(F, .8), ",\n      ").concat(F, "\n    )"), Y = a.a.createElement("div", {
+			const f = e => e.type === j.f.Spoiler,
+				k = Object(h.t)();
+			t.a = k(Object(b.a)(Object(c.a)(e => {
+				const {
+					backgroundWrapperClassName: t,
+					descriptionClassName: s,
+					innerContainerClassName: c,
+					onPostClick: b,
+					trendingPost: h,
+					trendingSearch: j,
+					shouldOpenPost: v,
+					showSubredditMeta: T = !0,
+					showSubredditName: k,
+					subredditOrProfile: w,
+					trackPostView: S
+				} = e;
+				Object(n.useEffect)(() => {
+					S && S(j)
+				}, [S, j]);
+				const D = h && h.preview && h.preview.url || void 0,
+					E = h && h.isSponsored ? "promoted_trend" : "trending",
+					I = h && Object(d.a)(h.permalink) || "",
+					U = v && I || j && Object(i.a)("/search", {
+						q: j.rawQuery,
+						source: E
+					}) || I,
+					M = j ? j.subredditInfo && j.subredditInfo.icon : w && w.icon.url,
+					V = j ? j.subredditInfo && j.subredditInfo.displayText : w && (w.displayText || w.name),
+					W = h ? h.flair.filter(f) : [],
+					A = h ? h.score : 0,
+					F = h ? h.numComments : 0,
+					L = h && h.isSponsored,
+					R = Object(_.a)(e).body,
+					Y = "linear-gradient(\n      ".concat(Object(r.j)(R, .2), ",\n      ").concat(Object(r.j)(R, .3), ",\n      ").concat(Object(r.j)(R, .4), ",\n      ").concat(Object(r.j)(R, .6), ",\n      ").concat(Object(r.j)(R, .8), ",\n      ").concat(R, "\n    )"),
+					K = a.a.createElement("div", {
 						className: Object(o.a)(N.a.trendingPost, {
-							[N.a["m-background"]]: !!w
+							[N.a["m-background"]]: !!D
 						})
 					}, a.a.createElement(g.a, {
-						to: E
+						to: U
 					}, a.a.createElement("div", {
 						className: Object(o.a)(N.a.backgroundWrapper, y.a.backgroundWrapper, t),
 						style: {
-							background: Object(C.g)(Object(_.a)(e).body, w || Object(_.a)(e).banner.backgroundImage, "cover"),
-							"--SearchDiscoveryUnits-TrendingPosts-Post-background": L
+							background: Object(C.g)(Object(_.a)(e).body, D || Object(_.a)(e).banner.backgroundImage, "cover"),
+							"--SearchDiscoveryUnits-TrendingPosts-Post-background": Y
 						}
-					}, A && a.a.createElement("div", {
+					}, L && a.a.createElement("div", {
 						className: N.a.promoted
 					}, a.a.createElement(O.c, null, "promoted")), a.a.createElement("div", {
-						className: Object(o.a)(N.a.innerContainer, y.a.innerContainer, n),
-						onClick: c,
+						className: Object(o.a)(N.a.innerContainer, y.a.innerContainer, c),
+						onClick: b,
 						title: h ? h.title : ""
 					}, a.a.createElement("h2", {
 						className: h ? N.a.title : N.a.titleNoDescription
 					}, e.title), h ? a.a.createElement("div", {
 						className: Object(o.a)(N.a.description, s)
-					}, M.length > 0 && a.a.createElement(m.a, {
+					}, W.length > 0 && a.a.createElement(m.a, {
 						className: N.a.flair,
-						titleFlair: M,
+						titleFlair: W,
 						nowrap: !0,
 						post: h,
 						showCategoryTag: !1
 					}), h.title) : a.a.createElement("div", {
 						className: N.a.spacer
-					}), v && I && U && a.a.createElement(x.a, {
+					}), T && M && V && a.a.createElement(x.a, {
 						className: N.a.relatedSubredditMetaData,
 						iconClassName: N.a.subredditIcon,
-						iconUrl: I || void 0,
+						iconUrl: M || void 0,
 						suffix: a.a.createElement(p.a, {
 							msgId: "search.subredditMetaData.andMore",
 							replacements: {
-								displayText: U
+								displayText: V
 							}
 						})
-					}), !v && h && a.a.createElement("div", {
+					}), !T && h && a.a.createElement("div", {
 						className: N.a.metaLine
-					}, T && U && a.a.createElement("span", {
+					}, k && V && a.a.createElement("span", {
 						className: N.a.meta
-					}, Object(P.b)(U)), a.a.createElement("span", {
+					}, Object(P.b)(V)), a.a.createElement("span", {
 						className: N.a.meta
-					}, a.a.createElement(O.c, null, "".concat(Object(l.b)(V), " "), a.a.createElement(O.a, {
-						count: V,
+					}, a.a.createElement(O.c, null, "".concat(Object(l.b)(A), " "), a.a.createElement(O.a, {
+						count: A,
 						name: "score",
 						plural: "points",
 						singular: "point"
 					}))), a.a.createElement("span", {
 						className: N.a.meta
-					}, a.a.createElement(O.c, null, "".concat(Object(l.b)(W), " "), a.a.createElement(O.a, {
-						count: W,
+					}, a.a.createElement(O.c, null, "".concat(Object(l.b)(F), " "), a.a.createElement(O.a, {
+						count: F,
 						name: "numComments",
 						plural: "comments",
 						singular: "comment"
 					}))))))));
-					return A ? a.a.createElement(u.a, {
-						post: h,
-						children: Y
-					}) : Y
-				};
-			class D extends a.a.Component {
-				componentDidMount() {
-					const {
-						trackPostView: e,
-						trendingSearch: t
-					} = this.props;
-					e && e(t)
-				}
-				render() {
-					return w(this.props)
-				}
-			}
-			t.a = S(Object(h.a)(Object(c.a)(D)))
+				return L ? a.a.createElement(u.a, {
+					post: h
+				}, K) : K
+			})))
 		},
 		"./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -183,8 +186,8 @@
 				m = s("./src/reddit/constants/adEvents.ts"),
 				p = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				u = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.tsx"),
-				h = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/index.m.less"),
-				b = s.n(h);
+				b = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/index.m.less"),
+				h = s.n(b);
 			class g extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onPostClick = e => {
@@ -201,11 +204,11 @@
 						trackPostView: s
 					} = this.props;
 					return n.a.createElement("div", {
-						className: Object(d.a)(b.a.container, e && e.containerClassName)
+						className: Object(d.a)(h.a.container, e && e.containerClassName)
 					}, n.a.createElement("div", {
-						className: Object(d.a)(b.a.trendingPosts, e && e.trendingPostsClassName)
+						className: Object(d.a)(h.a.trendingPosts, e && e.trendingPostsClassName)
 					}, t.map((t, r) => n.a.createElement(u.a, {
-						className: Object(d.a)(b.a.trendingPost, e && e.trendingPostClassName),
+						className: Object(d.a)(h.a.trendingPost, e && e.trendingPostClassName),
 						forceLoadMedia: !0,
 						showMetaLine: !1,
 						title: t.searchQuery,
@@ -273,23 +276,23 @@
 				m = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				p = s("./src/reddit/selectors/postFlair.ts"),
 				u = s("./src/reddit/selectors/posts.ts"),
-				h = s("./src/reddit/selectors/user.ts");
-			const b = Object(r.b)(() => Object(n.c)({
+				b = s("./src/reddit/selectors/user.ts");
+			const h = Object(r.b)(() => Object(n.c)({
 				activeModalId: l.a,
-				autoplayPref: h.b,
+				autoplayPref: b.b,
 				crosspostRoot: u.c,
 				crosspostSubredditOrProfile: u.d,
-				currentUser: h.i,
+				currentUser: b.i,
 				flairStyleTemplate: d.P,
-				hideNSFWPref: h.y,
+				hideNSFWPref: b.y,
 				isActive: u.h,
-				language: h.O,
+				language: b.O,
 				moderatorPermissions: m.i,
 				modModeEnabled: d.N,
 				post: u.M,
 				showEditFlair: p.a,
 				subredditOrProfile: u.Y,
-				userIsOp: h.eb
+				userIsOp: b.eb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -328,9 +331,11 @@
 						selectedTemplateId: n
 					})
 				}
-			}));
-			t.a = b
+			}), {
+				forwardRef: !0
+			});
+			t.a = h
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.494573f9f5a11c58a7f5.js.map
+//# sourceMappingURL=Trending.414daf3ef0292e696cd6.js.map

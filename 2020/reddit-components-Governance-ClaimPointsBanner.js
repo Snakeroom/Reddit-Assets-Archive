@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7e27ef7283f07e3da4d8.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.23b6f334401910d96ede.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, n) {
@@ -149,8 +149,8 @@
 				claimablePoints: v.h,
 				karmaEarnedForClaimablePoints: v.n,
 				subreddit: h.P,
-				tokenDisplayConversion: g.n,
-				tokenName: g.o
+				tokenDisplayConversion: g.o,
+				tokenName: g.p
 			});
 			t.default = Object(o.b)(P, (e, t) => {
 				let {
@@ -350,15 +350,15 @@
 				return g
 			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(t, "o", (function() {
-				return y
 			})), n.d(t, "p", (function() {
+				return y
+			})), n.d(t, "q", (function() {
 				return x
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return j
-			})), n.d(t, "k", (function() {
-				return w
 			})), n.d(t, "l", (function() {
+				return w
+			})), n.d(t, "m", (function() {
 				return P
 			})), n.d(t, "s", (function() {
 				return O
@@ -366,11 +366,11 @@
 				return k
 			})), n.d(t, "f", (function() {
 				return C
-			})), n.d(t, "q", (function() {
-				return _
-			})), n.d(t, "m", (function() {
-				return I
 			})), n.d(t, "r", (function() {
+				return _
+			})), n.d(t, "n", (function() {
+				return I
+			})), n.d(t, "k", (function() {
 				return B
 			}));
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.7e27ef7283f07e3da4d8.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.23b6f334401910d96ede.js.map

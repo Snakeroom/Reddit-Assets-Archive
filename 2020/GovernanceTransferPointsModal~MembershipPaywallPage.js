@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.c04ad33e76f4b44539c7.js
-// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.1b8274af50721053d300.js
+// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, s) {
@@ -22,7 +22,7 @@
 				o = s("./src/config.ts"),
 				c = s("./src/reddit/selectors/gov.ts");
 			const d = Object(i.c)({
-				tokenSymbol: c.p
+				tokenSymbol: c.q
 			});
 			t.a = Object(a.b)(d)((function(e) {
 				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
@@ -703,15 +703,15 @@
 				return x
 			})), s.d(t, "j", (function() {
 				return g
-			})), s.d(t, "o", (function() {
-				return v
 			})), s.d(t, "p", (function() {
+				return v
+			})), s.d(t, "q", (function() {
 				return E
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "o", (function() {
 				return C
-			})), s.d(t, "k", (function() {
-				return w
 			})), s.d(t, "l", (function() {
+				return w
+			})), s.d(t, "m", (function() {
 				return N
 			})), s.d(t, "s", (function() {
 				return y
@@ -719,11 +719,11 @@
 				return j
 			})), s.d(t, "f", (function() {
 				return I
-			})), s.d(t, "q", (function() {
-				return O
-			})), s.d(t, "m", (function() {
-				return _
 			})), s.d(t, "r", (function() {
+				return O
+			})), s.d(t, "n", (function() {
+				return _
+			})), s.d(t, "k", (function() {
 				return T
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -844,4 +844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.c04ad33e76f4b44539c7.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.1b8274af50721053d300.js.map
