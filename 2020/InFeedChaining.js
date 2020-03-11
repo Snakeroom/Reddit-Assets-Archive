@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.f7053cc26d3c7cd63ed8.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.c157aa707803439a7ff6.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -446,8 +446,8 @@
 						titleColor: a && a.postTitleColor
 					}), b)
 				},
-				E = t("./src/app/strings/index.ts"),
-				k = t("./src/lib/prettyPrintNumber/index.ts"),
+				k = t("./src/app/strings/index.ts"),
+				E = t("./src/lib/prettyPrintNumber/index.ts"),
 				I = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
 				T = t.n(I);
 			var B = e => {
@@ -460,12 +460,12 @@
 						className: Object(o.a)(T.a.footer, s)
 					}, i.a.createElement("span", {
 						className: T.a.metaText
-					}, Object(E.b)(t, "posts.points.noun", r.score, {
-						count: Object(k.b)(r.score)
+					}, Object(k.b)(t, "posts.points.noun", r.score, {
+						count: Object(E.b)(r.score)
 					})), i.a.createElement("span", {
 						className: T.a.metaText
-					}, Object(E.b)(t, "posts.comments.noun", r.numComments, {
-						count: Object(k.b)(r.numComments)
+					}, Object(k.b)(t, "posts.comments.noun", r.numComments, {
+						count: Object(E.b)(r.numComments)
 					})))
 				},
 				U = t("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -643,9 +643,9 @@
 				_ = t("./src/reddit/selectors/posts.ts"),
 				N = t("./src/reddit/selectors/subscriptions.ts"),
 				P = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx"),
-				E = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/constants.ts"),
-				k = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/index.m.less"),
-				I = t.n(k);
+				k = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/constants.ts"),
+				E = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/index.m.less"),
+				I = t.n(E);
 
 			function T() {
 				return (T = Object.assign || function(e) {
@@ -714,7 +714,7 @@
 							discoveryUnit: s,
 							postSubreddit: t
 						} = this.props;
-						if (s) return Object(x.z)(s, e, t)
+						if (s) return Object(x.p)(s, e, t)
 					}, this.trackDiscoveryUnitViewed = () => {
 						const {
 							discoveryUnit: e,
@@ -730,19 +730,19 @@
 						const {
 							postSubreddit: t
 						} = this.props;
-						this.props.sendEvent(Object(x.B)(e, s, void 0, t))
+						this.props.sendEvent(Object(x.r)(e, s, void 0, t))
 					}, this.trackSubredditClicked = () => {
 						const {
 							discoveryUnit: e,
 							postSubreddit: s
 						} = this.props;
-						e && s && this.props.sendEvent(Object(x.E)(e, s))
+						e && s && this.props.sendEvent(Object(x.u)(e, s))
 					}, this.trackPostSubredditOrProfileClicked = e => {
 						const {
 							discoveryUnit: s,
 							postSubreddit: t
 						} = this.props;
-						s && this.props.sendEvent(Object(x.y)(s, e, void 0, t))
+						s && this.props.sendEvent(Object(x.o)(s, e, void 0, t))
 					}, this.openPost = (e, s) => {
 						this.props.openPost(s);
 						const {
@@ -831,7 +831,7 @@
 						isHidden: !a,
 						isLoading: !1,
 						items: t,
-						itemWidth: E.a,
+						itemWidth: k.a,
 						leftArrowClassName: I.a.arrow,
 						onArrowClick: this.trackArrowClicked,
 						onPostView: this.trackPostViewed,
@@ -1213,4 +1213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.f7053cc26d3c7cd63ed8.js.map
+//# sourceMappingURL=InFeedChaining.c157aa707803439a7ff6.js.map

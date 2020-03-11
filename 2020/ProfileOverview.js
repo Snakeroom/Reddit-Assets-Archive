@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.abe370700383b052ceb5.js
-// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.09914f105c3ea5255000.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -14554,7 +14554,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(mt.X)(), this.setState({
+						Object(mt.V)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -14864,4 +14864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.abe370700383b052ceb5.js.map
+//# sourceMappingURL=ProfileOverview.09914f105c3ea5255000.js.map

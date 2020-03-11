@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c07750a007bcb68e5054.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.03bc9c654c5899937226.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -4240,7 +4240,7 @@
 							permission: s
 						} = e;
 						let n = !1;
-						t !== this.lastNotificationsState.isEnabled && (n = t !== this.state.desktopNotifications, t && _s.I(t)), this.setState(e => ({
+						t !== this.lastNotificationsState.isEnabled && (n = t !== this.state.desktopNotifications, t && _s.H(t)), this.setState(e => ({
 							desktopNotifications: n ? t : e.desktopNotifications,
 							notificationPermission: s
 						})), this.lastNotificationsState = e
@@ -4250,7 +4250,7 @@
 						this.setState({
 							desktopNotifications: e
 						}, () => {
-							this.trackPreferenceToggled("desktop_notification_permissions", e), _s.I(e)
+							this.trackPreferenceToggled("desktop_notification_permissions", e), _s.H(e)
 						})
 					}, this.handleDesktopNotificationsClick = () => {
 						if (this.state.desktopNotifications) this.setDesktopNotificationsLocalValue(!1), this.props.unsubscribeFromPNs();
@@ -5533,4 +5533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.c07750a007bcb68e5054.js.map
+//# sourceMappingURL=Settings.03bc9c654c5899937226.js.map

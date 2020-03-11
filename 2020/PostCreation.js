@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.18d816e9a8f8c6521974.js
-// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.18702ec35609723afffc.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -25455,13 +25455,13 @@
 			const Et = [{
 					id: st.d,
 					getShowTimesLeft: yt.u,
-					setShowTimesLeft: yt.W,
+					setShowTimesLeft: yt.U,
 					tooltipShown: Ot.n,
 					tooltipDismissed: Ot.m
 				}, {
 					id: st.c,
 					getShowTimesLeft: yt.t,
-					setShowTimesLeft: yt.V,
+					setShowTimesLeft: yt.T,
 					tooltipShown: Ot.f,
 					tooltipDismissed: Ot.e
 				}],
@@ -25669,7 +25669,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(yt.J)(Ft.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(yt.I)(Ft.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -29584,4 +29584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.18d816e9a8f8c6521974.js.map
+//# sourceMappingURL=PostCreation.18702ec35609723afffc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f0e270f552800e02a006.js
-// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1608e42925a32ce71c12.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1761,13 +1761,13 @@
 							domain: N.a.cookieDomain
 						});
 						const t = Object(Kt.r)(pt.a.ALPHA_CONSUMER);
-						t && Object(Kt.C)(pt.a.ALPHA_CONSUMER), (e || t) && Object(Kt.T)(pt.a.REDESIGN_MODAL, !0)
+						t && Object(Kt.B)(pt.a.ALPHA_CONSUMER), (e || t) && Object(Kt.R)(pt.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
 					} = this.props, s = Object(Kt.r)(pt.a.REDESIGN_MODAL);
-					!e && s ? t() : e && !s && Object(Kt.T)(pt.a.REDESIGN_MODAL, !0)
+					!e && s ? t() : e && !s && Object(Kt.R)(pt.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -4322,7 +4322,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Kt.D)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Kt.C)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -4332,7 +4332,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(Kt.Y)(Object.assign({}, e, {
+							recentSearches: Object(Kt.W)(Object.assign({}, e, {
 								section: ir.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -9529,7 +9529,7 @@
 			const rt = 1e3;
 			class ot extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = nt()(() => Object(at.Q)(this.props.storageKey, this.props.value), rt)
+					super(...arguments), this.flush = nt()(() => Object(at.O)(this.props.storageKey, this.props.value), rt)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -9549,7 +9549,7 @@
 				syncOnMount: !0
 			};
 			const it = Object(Y.a)(se.G, e => ({
-				storageKey: tt.q,
+				storageKey: tt.p,
 				value: {},
 				enabled: !e
 			}));
@@ -10317,7 +10317,7 @@
 									text: a.fbt._("Successfully logged in!", null, {
 										hk: "2POUVB"
 									})
-								})), c = !0, Object(Jt.c)(lt.a.JustLoggedIn), history.replaceState(history.state, "", Object(P.a)(window.location.href, [ut.n]))), Object(Jt.b)(lt.a.JustLoggedOut) && (c = !0, Object(Jt.c)(lt.a.JustLoggedOut)), Object(G.b)(e), !1 !== at.z() && Object(H.a)().then(e => e.requestNotificationsPermissions).then(e => l.dispatch(e(c, !1))), t === f.zb.MULTIREDDIT && o.routeMatch) {
+								})), c = !0, Object(Jt.c)(lt.a.JustLoggedIn), history.replaceState(history.state, "", Object(P.a)(window.location.href, [ut.n]))), Object(Jt.b)(lt.a.JustLoggedOut) && (c = !0, Object(Jt.c)(lt.a.JustLoggedOut)), Object(G.b)(e), !1 !== at.y() && Object(H.a)().then(e => e.requestNotificationsPermissions).then(e => l.dispatch(e(c, !1))), t === f.zb.MULTIREDDIT && o.routeMatch) {
 								const {
 									multiredditName: e,
 									username: t
@@ -11864,4 +11864,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.f0e270f552800e02a006.js.map
+//# sourceMappingURL=Reddit.1608e42925a32ce71c12.js.map

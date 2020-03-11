@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.569db7c051feee8887c5.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f89cdbef0055e7df2717.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./src/graphql/operations/AllModerators.json": function(e) {
@@ -5669,10 +5669,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(d.i)()), Object(p.O)()
+					e(Object(d.i)()), Object(p.M)()
 				},
 				onViewTooltip: () => {
-					Object(p.ab)()
+					Object(p.Y)()
 				}
 			}))(Object(m.b)(f));
 			const v = "editable-primary-topic-idcard";
@@ -35422,4 +35422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.569db7c051feee8887c5.js.map
+//# sourceMappingURL=ModerationPages.f89cdbef0055e7df2717.js.map

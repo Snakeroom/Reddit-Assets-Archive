@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.687686978ce0fdcad749.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.5691f63729f036cf1414.js
+// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -672,8 +672,8 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(d.a)(t.permalink)),
-						trackPostClick: (t, s) => e((e, n) => a ? m.v(n(), a, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? m.x(n(), s, t) : a ? m.x(n(), a, t) : null)
+						trackPostClick: (t, s) => e((e, n) => a ? m.l(n(), a, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? m.n(n(), s, t) : a ? m.n(n(), a, t) : null)
 					}
 				});
 			class ke extends l.c {
@@ -690,7 +690,7 @@
 							discoveryUnitSubreddit: s,
 							searchDiscoveryUnit: a
 						} = this.props;
-						return (a ? m.F() : m.u(t, s))(e)
+						return (a ? m.v() : m.k(t, s))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -943,4 +943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.687686978ce0fdcad749.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.5691f63729f036cf1414.js.map
