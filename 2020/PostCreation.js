@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.66612d29967924bc8fbb.js
-// Retrieved at 3/11/2020, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.14886affe597e54d26d9.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -2297,7 +2297,7 @@
 					if (!u) return;
 					if (t(U(u)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(M.s)(n()))) return;
 					let y;
-					if ((y = x ? Object(I.b)(d) ? await Object(f.a)(r(), Object.assign({}, u, {
+					if ((y = x ? Object(I.a)(d) ? await Object(f.a)(r(), Object.assign({}, u, {
 								kind: w.p.POLL,
 								poll: C
 							})) : await
@@ -2342,7 +2342,7 @@
 						if (t(H({
 								draftId: u.draftId,
 								response: n
-							})), x && !Object(I.b)(d) && t(Object(i.e)({
+							})), x && !Object(I.a)(d) && t(Object(i.e)({
 								poll: n.poll
 							})), !m) {
 							const o = (n.path || "/user/".concat(Object(_.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
@@ -27510,7 +27510,7 @@
 			}(Za || (Za = {}));
 			const Qa = Object(lt.a)(Na.a),
 				Xa = Object(i.c)({
-					isInPollsGA: Ba.b,
+					isInPollsGA: Ba.a,
 					language: e => e.user.language,
 					votingLengthDropdownIsOpen: e => e.tooltipId === Ja
 				});
@@ -29296,8 +29296,6 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "b", (function() {
-				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/reddit/constants/experiments.ts"),
@@ -29306,8 +29304,7 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = new Set(["pollstest", "whatssnoo"]),
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				l = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
-				d = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
+				l = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.G,
 					experimentName: o.ab
 				}) === o.hb.Enabled
@@ -29396,7 +29393,7 @@
 				},
 				b = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				g = (e, t) => {
-					if (Object(i.b)(e)) {
+					if (Object(i.a)(e)) {
 						const t = Object(a.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -29569,4 +29566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.66612d29967924bc8fbb.js.map
+//# sourceMappingURL=PostCreation.14886affe597e54d26d9.js.map

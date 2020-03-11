@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.446b85c04d6b0ec2ad99.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.7d4513aef09bc5f65e83.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -54,15 +54,15 @@
 				c = s("./src/lib/prettyPrintNumber/index.ts"),
 				d = s("./src/reddit/actions/economics/tips/thunkedActions.ts"),
 				l = s("./src/lib/classNames/index.ts"),
-				u = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
-				m = s("./src/reddit/controls/Button/index.tsx"),
+				m = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
+				u = s("./src/reddit/controls/Button/index.tsx"),
 				p = s("./src/reddit/i18n/components.tsx"),
 				b = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				x = s("./src/reddit/models/Payments/index.ts"),
 				h = s("./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less"),
 				f = s.n(h);
-			var g = Object(u.a)((function(e) {
-					return r.a.createElement(m.f, {
+			var g = Object(m.a)((function(e) {
+					return r.a.createElement(u.f, {
 						className: Object(l.a)(f.a.button, {
 							active: e.tooltipIsOpen
 						}),
@@ -184,8 +184,8 @@
 				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = s("./src/reddit/models/Payments/index.ts"),
 				l = s("./src/reddit/selectors/telemetry.ts"),
-				u = s("./src/lib/currency/centsToDollars/index.ts"),
-				m = s("./src/lib/prettyPrintNumber/index.ts"),
+				m = s("./src/lib/currency/centsToDollars/index.ts"),
+				u = s("./src/lib/prettyPrintNumber/index.ts"),
 				p = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				b = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/PaymentReaction/index.m.less"),
 				x = s.n(b);
@@ -197,7 +197,7 @@
 					className: x.a.pill
 				}, r.a.createElement(p.a, {
 					className: x.a.icon
-				}), Object(m.a)(Object(u.a)(e.amount, !0))))
+				}), Object(u.a)(Object(m.a)(e.amount, !0))))
 			}
 			var f = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
 				g = s.n(f);
@@ -361,10 +361,10 @@
 				})))),
 				d = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				l = s("./src/reddit/controls/Checkbox/index.m.less"),
-				u = s.n(l);
+				m = s.n(l);
 
-			function m() {
-				return (m = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -390,10 +390,10 @@
 					} = t, c = p(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, s) => {
 						const n = !(!t && !s);
 						let r = "";
-						return r = e ? n ? u.a.mDisabledRedditStyle : u.a.mDisabled : n ? u.a.mActiveRedditStyle : u.a.mActive
+						return r = e ? n ? m.a.mDisabledRedditStyle : m.a.mDisabled : n ? m.a.mActiveRedditStyle : m.a.mActive
 					})(n, i, a);
-					return r.a.createElement(e, m({
-						className: Object(o.a)(u.a.Checkbox, d, s)
+					return r.a.createElement(e, u({
+						className: Object(o.a)(m.a.Checkbox, d, s)
 					}, c))
 				},
 				x = b(d.a),
@@ -408,7 +408,7 @@
 					},
 					disabled: e.disabled
 				}, r.a.createElement(t, {
-					className: Object(o.a)(u.a.CheckboxSizing, e.className),
+					className: Object(o.a)(m.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -441,8 +441,8 @@
 				c = s("./node_modules/react/index.js"),
 				d = s.n(c),
 				l = s("./node_modules/react-redux/es/index.js"),
-				u = s("./node_modules/reselect/es/index.js"),
-				m = s("./src/lib/classNames/index.ts"),
+				m = s("./node_modules/reselect/es/index.js"),
+				u = s("./src/lib/classNames/index.ts"),
 				p = s("./src/reddit/actions/modal.ts"),
 				b = s("./src/reddit/selectors/activeModalId.ts"),
 				x = s("./src/higherOrderComponents/asModal/index.tsx"),
@@ -477,7 +477,7 @@
 			})), s.d(t, "c", (function() {
 				return I
 			}));
-			const w = Object(u.c)({
+			const w = Object(m.c)({
 				activeModalId: b.a
 			});
 			class O extends d.a.Component {
@@ -522,7 +522,7 @@
 						textHasOverflowed: c
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(E.a.wrapper, s)
+						className: Object(u.a)(E.a.wrapper, s)
 					}, d.a.createElement("span", {
 						className: E.a.description,
 						ref: this.spanRef
@@ -673,8 +673,6 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return d
-			})), s.d(t, "b", (function() {
-				return l
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/constants/experiments.ts"),
@@ -683,8 +681,7 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = new Set(["pollstest", "whatssnoo"]),
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
-				l = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
+				d = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: i.G,
 					experimentName: n.ab
 				}) === n.hb.Enabled
@@ -692,9 +689,9 @@
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return u
-			})), s.d(t, "c", (function() {
 				return m
+			})), s.d(t, "c", (function() {
+				return u
 			})), s.d(t, "d", (function() {
 				return p
 			})), s.d(t, "e", (function() {
@@ -741,7 +738,7 @@
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				},
-				u = (e, t) => {
+				m = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -756,7 +753,7 @@
 						token: void 0
 					}
 				},
-				m = (e, t) => {
+				u = (e, t) => {
 					const s = E(e, t);
 					if (s) return s.mainHeader
 				},
@@ -773,7 +770,7 @@
 				},
 				x = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				h = (e, t) => {
-					if (Object(i.b)(e)) {
+					if (Object(i.a)(e)) {
 						const t = Object(a.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -848,4 +845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.446b85c04d6b0ec2ad99.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.7d4513aef09bc5f65e83.js.map

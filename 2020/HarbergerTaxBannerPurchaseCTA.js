@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.a53419af39622c9b4645.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.3c188c705b89b1019400.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -66,8 +66,8 @@
 				j = r("./src/reddit/i18n/utils.ts"),
 				x = r("./src/reddit/selectors/gov.ts"),
 				y = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less"),
-				w = r.n(y);
-			const v = Object(i.c)({
+				v = r.n(y);
+			const w = Object(i.c)({
 					cost: (e, t) => {
 						const r = Object(m.q)(e, t);
 						if (r) return Object(x.d)(e, {
@@ -109,7 +109,7 @@
 						return !1
 					}
 				}),
-				O = Object(o.b)(v, e => ({
+				O = Object(o.b)(w, e => ({
 					onHideTooltip: () => e(Object(u.i)()),
 					onOpenManageFlow: (t, r) => e(r ? Object(a.a)({
 						subredditId: t
@@ -140,12 +140,12 @@
 					tokenDisplayConversion: y
 				} = e;
 				if (!t || !o) return null;
-				const v = Object(p.e)(),
-					O = !a && i && (!v || !!!r),
+				const w = Object(p.e)(),
+					O = !a && i && (!w || !!!r),
 					I = "harberger-cta-".concat(o.id);
 				return s.a.createElement("div", {
-					className: Object(d.a)(w.a.container, {
-						[w.a.disabled]: O
+					className: Object(d.a)(v.a.container, {
+						[v.a.disabled]: O
 					}),
 					id: I,
 					onClick: () => {
@@ -154,11 +154,11 @@
 					onMouseOver: () => x(I),
 					onMouseOut: u
 				}, a ? s.a.createElement(h.c, null, "manage banner") : s.a.createElement(n.Fragment, null, s.a.createElement(h.c, null, "buy banner"), s.a.createElement(l.a, {
-					className: w.a.token,
+					className: v.a.token,
 					subredditId: o.id
 				}), Object(c.a)(Object(g.b)(t, y))), O && s.a.createElement(b.c, {
 					tooltipId: I,
-					text: v ? Object(j.c)("You must register your wallet address to purchase the banner") : Object(j.c)("You must have metamask installed to purchase the banner")
+					text: w ? Object(j.c)("You must register your wallet address to purchase the banner") : Object(j.c)("You must have metamask installed to purchase the banner")
 				}))
 			}))))
 		},
@@ -416,8 +416,6 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return a
-			})), r.d(t, "b", (function() {
-				return u
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/constants/experiments.ts"),
@@ -426,8 +424,7 @@
 				i = r("./src/reddit/selectors/user.ts");
 			const d = new Set(["pollstest", "whatssnoo"]),
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				a = e => d.has(e.toLowerCase()) || c.has(e.toLowerCase()),
-				u = e => d.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
+				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.G,
 					experimentName: n.ab
 				}) === n.hb.Enabled
@@ -455,9 +452,9 @@
 			})), r.d(t, "p", (function() {
 				return y
 			})), r.d(t, "n", (function() {
-				return w
-			})), r.d(t, "k", (function() {
 				return v
+			})), r.d(t, "k", (function() {
+				return w
 			})), r.d(t, "l", (function() {
 				return O
 			})), r.d(t, "s", (function() {
@@ -500,15 +497,15 @@
 					}
 				},
 				b = (e, t) => {
-					const r = v(e, t);
+					const r = w(e, t);
 					if (r) return r.mainHeader
 				},
 				m = (e, t) => {
-					const r = v(e, t);
+					const r = w(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				f = (e, t) => {
-					const r = v(e, t);
+					const r = w(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -516,7 +513,7 @@
 				},
 				p = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				g = (e, t) => {
-					if (Object(i.b)(e)) {
+					if (Object(i.a)(e)) {
 						const t = Object(d.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -537,11 +534,11 @@
 				},
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
-				w = (e, t) => {
+				v = (e, t) => {
 					const r = k(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
-				v = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				O = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				I = (e, t) => {
 					const r = O(e, t);
@@ -591,4 +588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.a53419af39622c9b4645.js.map
+//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.3c188c705b89b1019400.js.map

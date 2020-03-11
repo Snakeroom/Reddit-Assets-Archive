@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e625ea507c063dd88d6b.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.3d4c3348440a0f1a89f4.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
@@ -236,7 +236,7 @@
 					})) : null
 				}
 			}
-			const C = Object(a.c)({
+			const O = Object(a.c)({
 				canShow: (e, t) => {
 					let {
 						subredditId: n
@@ -248,7 +248,7 @@
 				},
 				userId: e => e.user.account ? e.user.account.id : void 0
 			});
-			t.default = Object(o.b)(C)(Object(d.b)(_))
+			t.default = Object(o.b)(O)(Object(d.b)(_))
 		},
 		"./src/reddit/endpoints/economics/banners.ts": function(e, t, n) {
 			"use strict";
@@ -350,8 +350,6 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "b", (function() {
-				return l
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/constants/experiments.ts"),
@@ -360,8 +358,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const c = new Set(["pollstest", "whatssnoo"]),
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
-				l = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
+				d = e => c.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: a.G,
 					experimentName: r.ab
 				}) === r.hb.Enabled
@@ -399,11 +396,11 @@
 			})), n.d(t, "a", (function() {
 				return _
 			})), n.d(t, "f", (function() {
-				return C
-			})), n.d(t, "q", (function() {
 				return O
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "q", (function() {
 				return S
+			})), n.d(t, "m", (function() {
+				return C
 			})), n.d(t, "r", (function() {
 				return E
 			}));
@@ -450,7 +447,7 @@
 				},
 				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				h = (e, t) => {
-					if (Object(a.b)(e)) {
+					if (Object(a.a)(e)) {
 						const t = Object(c.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -472,7 +469,7 @@
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				w = (e, t) => {
-					const n = O(e, t);
+					const n = S(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				I = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -486,11 +483,11 @@
 						r = j(e, t);
 					return n && n.provider || r && r.provider
 				},
-				C = (e, t) => {
+				O = (e, t) => {
 					const n = _(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby
 				},
-				O = (e, t) => {
+				S = (e, t) => {
 					const n = k(e, t),
 						r = _(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
@@ -507,7 +504,7 @@
 						image: a.image
 					}
 				},
-				S = (e, t) => {
+				C = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -525,4 +522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.e625ea507c063dd88d6b.js.map
+//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.3d4c3348440a0f1a89f4.js.map

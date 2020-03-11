@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.e51dff4b8e3a8bfa50c5.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.a52dafa2b8ee0c79d209.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -45,7 +45,7 @@
 			})), n.d(t, "d", (function() {
 				return h
 			})), n.d(t, "e", (function() {
-				return I
+				return w
 			})), n.d(t, "h", (function() {
 				return T
 			})), n.d(t, "i", (function() {
@@ -57,14 +57,14 @@
 			})), n.d(t, "j", (function() {
 				return H
 			})), n.d(t, "c", (function() {
-				return L
+				return q
 			}));
 			const x = Object(s.a)(j.b),
 				v = Object(s.a)(j.c),
 				y = Object(s.a)(j.d),
 				h = Object(s.a)(j.e),
-				w = Object(s.a)(j.f),
-				I = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
+				I = Object(s.a)(j.f),
+				w = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
 				k = Object(s.a)(j.j),
 				P = Object(s.a)(j.k),
 				N = Object(s.a)(j.l),
@@ -73,8 +73,8 @@
 				E = Object(s.a)(j.t),
 				S = Object(s.a)(j.u),
 				U = Object(s.a)(j.v),
-				C = Object(s.a)(j.w),
-				G = Object(s.a)(j.x),
+				G = Object(s.a)(j.w),
+				C = Object(s.a)(j.x),
 				B = Object(s.a)(j.y),
 				A = (e, t) => async (n, r, s) => {
 					let o, {
@@ -89,7 +89,7 @@
 							const {
 								options: e
 							} = o.body.data.updatePostPollVoteState.poll;
-							n(w({
+							n(I({
 								pollId: a.id,
 								optionId: t,
 								options: e
@@ -148,12 +148,12 @@
 					let {
 						apiContext: s
 					} = r;
-					t(C());
+					t(G());
 					const o = await Object(b.a)(s(), e);
-					o.ok ? t(G(o.body)) : t(U({
+					o.ok ? t(C(o.body)) : t(U({
 						error: o.error
 					}))
-				}, L = (e, t) => async (n, s, o) => {
+				}, q = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: c
 					} = o;
@@ -169,7 +169,7 @@
 						})
 					}(c(), e, t);
 					if (d.ok) {
-						n(G({
+						n(C({
 							[t]: d.body
 						}));
 						const o = e ? "polls.optOutSuccess" : "polls.optInSuccess";
@@ -508,8 +508,6 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "b", (function() {
-				return u
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/constants/experiments.ts"),
@@ -518,8 +516,7 @@
 				c = n("./src/reddit/selectors/user.ts");
 			const d = new Set(["pollstest", "whatssnoo"]),
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				a = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
-				u = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
+				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
 					experimentName: r.ab
 				}) === r.hb.Enabled
@@ -551,9 +548,9 @@
 			})), n.d(t, "k", (function() {
 				return h
 			})), n.d(t, "l", (function() {
-				return w
-			})), n.d(t, "s", (function() {
 				return I
+			})), n.d(t, "s", (function() {
+				return w
 			})), n.d(t, "a", (function() {
 				return k
 			})), n.d(t, "f", (function() {
@@ -580,7 +577,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = I(e, {
+					const r = w(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -608,7 +605,7 @@
 				},
 				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				g = (e, t) => {
-					if (Object(c.b)(e)) {
+					if (Object(c.a)(e)) {
 						const t = Object(d.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -634,14 +631,14 @@
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				I = (e, t) => {
-					const n = w(e, t);
+				I = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				w = (e, t) => {
+					const n = I(e, t);
 					return n && n.walletProvider
 				},
 				k = (e, t) => {
-					const n = I(e, t),
-						r = w(e, t);
+					const n = w(e, t),
+						r = I(e, t);
 					return n && n.provider || r && r.provider
 				},
 				P = (e, t) => {
@@ -649,7 +646,7 @@
 					return n === s.a.Ethereum || n === s.a.Rinkeby
 				},
 				N = (e, t) => {
-					const n = I(e, t),
+					const n = w(e, t),
 						r = k(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -669,7 +666,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = I(e, {
+					const r = w(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
@@ -677,10 +674,10 @@
 					}
 				},
 				T = (e, t) => {
-					const n = w(e, t);
+					const n = I(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.e51dff4b8e3a8bfa50c5.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.a52dafa2b8ee0c79d209.js.map

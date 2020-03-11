@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.300d0e473e6e01020ac6.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.cbae52831ba5537b9aa8.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -548,10 +548,10 @@
 				A = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				D = r("./src/reddit/controls/FormFields/index.tsx"),
 				G = r("./src/reddit/helpers/governance/ethereum.ts"),
-				L = r("./src/reddit/i18n/utils.ts"),
-				R = r("./src/reddit/models/Toast/index.ts"),
-				F = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				V = r.n(F);
+				R = r("./src/reddit/i18n/utils.ts"),
+				F = r("./src/reddit/models/Toast/index.ts"),
+				L = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
+				V = r.n(L);
 
 			function W(e) {
 				return a.a.createElement("article", {
@@ -619,8 +619,8 @@
 						className: Object(i.a)(Z.a.container, e)
 					}, a.a.createElement(W, {
 						className: Z.a.section,
-						description: Object(L.c)("You must pay this amount to the current owner to buy the banner."),
-						title: Object(L.c)("Current price")
+						description: Object(R.c)("You must pay this amount to the current owner to buy the banner."),
+						title: Object(R.c)("Current price")
 					}, a.a.createElement("div", {
 						className: Z.a.currentPrice
 					}, a.a.createElement(A.a, {
@@ -628,7 +628,7 @@
 						subredditId: o
 					}), r && a.a.createElement("div", {
 						className: Z.a.owner
-					}, Object(L.c)("Owned by"), " ", a.a.createElement(h.c, {
+					}, Object(R.c)("Owned by"), " ", a.a.createElement(h.c, {
 						className: Z.a.ownerBadge,
 						subredditId: o,
 						uniqueIdentifier: "banner-purchase-modal",
@@ -637,14 +637,14 @@
 						className: Z.a.username
 					}, n)))), a.a.createElement(W, {
 						className: Z.a.section,
-						description: Object(L.c)("\n            You can protect your ownership by raising the price.\n            This also increases the daily tax. You can also lower the price to\n            lower the tax.\n          "),
-						title: Object(L.c)("New price and tax")
+						description: Object(R.c)("\n            You can protect your ownership by raising the price.\n            This also increases the daily tax. You can also lower the price to\n            lower the tax.\n          "),
+						title: Object(R.c)("New price and tax")
 					}, a.a.createElement("div", {
 						className: Z.a.price
 					}, a.a.createElement(D.c, {
 						redditStyle: !0,
 						className: Z.a.priceInput,
-						label: Object(L.c)("new price"),
+						label: Object(R.c)("new price"),
 						placeholder: "0",
 						type: "text",
 						value: Object(p.a)(Object(f.b)(this.state.price, c)),
@@ -657,18 +657,18 @@
 					}, "="), a.a.createElement(X, {
 						amount: u.toFixed(2),
 						className: Z.a.tax,
-						label: Object(L.c)("".concat(Object(L.b)("tax", g), " daily tax")),
+						label: Object(R.c)("".concat(Object(R.b)("tax", g), " daily tax")),
 						tokenDisplayConversion: c
 					}))), a.a.createElement(W, {
 						className: Z.a.section,
-						description: Object(L.c)("\n            You must deposit money to pay the daily tax. You can top this up\n            at any time. If the balance goes to zero, the price of the banner\n            drops to zero. If someone else buys the banner, you will be\n            refunded any pre-paid tax you allocated.\n          "),
-						title: Object(L.c)("Initial balance")
+						description: Object(R.c)("\n            You must deposit money to pay the daily tax. You can top this up\n            at any time. If the balance goes to zero, the price of the banner\n            drops to zero. If someone else buys the banner, you will be\n            refunded any pre-paid tax you allocated.\n          "),
+						title: Object(R.c)("Initial balance")
 					}, a.a.createElement("div", {
 						className: Z.a.prePay
 					}, a.a.createElement(D.c, {
 						redditStyle: !0,
 						className: Z.a.prepayInput,
-						label: Object(L.c)("# of days to prepay"),
+						label: Object(R.c)("# of days to prepay"),
 						placeholder: "0",
 						type: "text",
 						value: Object(p.a)(this.state.prepayDays),
@@ -678,7 +678,7 @@
 					}, "X"), a.a.createElement(X, {
 						amount: u.toFixed(2),
 						className: Z.a.tax,
-						label: Object(L.c)("daily tax"),
+						label: Object(R.c)("daily tax"),
 						tokenDisplayConversion: c
 					}), a.a.createElement("div", {
 						className: Z.a.equals
@@ -690,13 +690,13 @@
 						className: Z.a.footer
 					}, a.a.createElement("div", null, a.a.createElement("div", {
 						className: Z.a.total
-					}, Object(L.c)("Total due")), a.a.createElement(A.a, {
+					}, Object(R.c)("Total due")), a.a.createElement(A.a, {
 						amount: v.toFixed(2),
 						subredditId: o
 					})), a.a.createElement(x.f, {
 						disabled: !s.address,
 						onClick: this.handlePurchase
-					}, Object(L.c)("buy"))))
+					}, Object(R.c)("buy"))))
 				}
 			}
 			const z = Object(o.c)({
@@ -710,8 +710,8 @@
 			var Q, K = Object(s.b)(z, e => ({
 					onError: t => e(Object(H.e)({
 						duration: 5e3,
-						kind: R.b.Error,
-						text: t || Object(L.c)("Something wen't wrong with the purchase. Please try again later.")
+						kind: F.b.Error,
+						text: t || Object(R.c)("Something wen't wrong with the purchase. Please try again later.")
 					})),
 					onPurchaseComplete: () => e(Object(S.a)())
 				}))(J),
@@ -1533,8 +1533,6 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return d
-			})), r.d(t, "b", (function() {
-				return l
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./src/reddit/constants/experiments.ts"),
@@ -1543,8 +1541,7 @@
 				o = r("./src/reddit/selectors/user.ts");
 			const c = new Set(["pollstest", "whatssnoo"]),
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => c.has(e.toLowerCase()) || i.has(e.toLowerCase()),
-				l = e => c.has((Object(s.e)(e) || "").toLowerCase()) || i.has((Object(s.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
+				d = e => c.has((Object(s.e)(e) || "").toLowerCase()) || i.has((Object(s.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
 					experimentEligibilitySelector: o.G,
 					experimentName: n.ab
 				}) === n.hb.Enabled
@@ -1633,7 +1630,7 @@
 				},
 				b = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				x = (e, t) => {
-					if (Object(o.b)(e)) {
+					if (Object(o.a)(e)) {
 						const t = Object(c.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -1708,4 +1705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.300d0e473e6e01020ac6.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.cbae52831ba5537b9aa8.js.map

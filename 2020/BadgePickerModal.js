@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.026691b40c0b99e0cf01.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.0dd1392ce570d89e9dfa.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -147,10 +147,10 @@
 				x = a("./src/reddit/helpers/flair.ts"),
 				v = a("./src/reddit/i18n/components.tsx"),
 				f = a("./src/reddit/icons/svgs/Tag/index.tsx"),
-				C = a("./src/reddit/models/Flair/index.ts"),
-				E = a("./src/reddit/components/Badges/PickerModal/FlairPicker/index.m.less"),
-				y = a.n(E);
-			class w extends r.a.Component {
+				E = a("./src/reddit/models/Flair/index.ts"),
+				C = a("./src/reddit/components/Badges/PickerModal/FlairPicker/index.m.less"),
+				y = a.n(C);
+			class B extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleClearPreviewFlair = () => {
 						this.setState({
@@ -200,7 +200,7 @@
 				renderFlairSearch() {
 					return r.a.createElement(p.a, {
 						flair: this.state.previewFlair || null,
-						flairTemplateType: C.d.UserFlair,
+						flairTemplateType: E.d.UserFlair,
 						className: y.a.flairSearch,
 						subredditId: this.props.subredditId,
 						templates: this.props.userFlairData.templates,
@@ -232,11 +232,11 @@
 					}, r.a.createElement(v.c, null, "Apply"))
 				}
 			}
-			const B = Object(d.c)({
+			const w = Object(d.c)({
 				userFlairData: l.c,
 				user: e => e.user.account
 			});
-			var N = Object(n.b)(B, e => ({
+			var N = Object(n.b)(w, e => ({
 					onApplyFlair: (t, a, s, r, n) => {
 						e(Object(m.o)(t, a, s, r, n)), e(Object(u.f)())
 					}
@@ -244,7 +244,7 @@
 					onApplyFlair: (s, r, n) => {
 						t.onApplyFlair(s, r, n, e.user && e.user.displayText ? e.user.displayText : "", a.subredditId)
 					}
-				}))(w),
+				}))(B),
 				I = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/core-js/modules/es6.array.sort.js"), a("./node_modules/bignumber.js/bignumber.js")),
 				j = a("./node_modules/shallowequal/index.js"),
 				O = a.n(j);
@@ -556,10 +556,10 @@
 				},
 				language: e => e.user.language
 			});
-			var Ce = Object(n.b)(fe)(xe),
-				Ee = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
-				ye = a.n(Ee);
-			class we extends r.a.Component {
+			var Ee = Object(n.b)(fe)(xe),
+				Ce = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
+				ye = a.n(Ce);
+			class Be extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleSelectBadge = e => {
 						this.setState({
@@ -602,7 +602,7 @@
 						className: ye.a.badges
 					}, this.props.badgeIds.map(e => r.a.createElement("div", {
 						className: ye.a.badge
-					}, r.a.createElement(Ce, {
+					}, r.a.createElement(Ee, {
 						badgeId: e,
 						isApplied: this.props.appliedBadges.has(e),
 						isSelected: this.state.selectedBadges.has(e),
@@ -642,7 +642,7 @@
 					}, r.a.createElement(v.c, null, "apply"))
 				}
 			}
-			const Be = Object(d.c)({
+			const we = Object(d.c)({
 				appliedBadges: _((e, t) => {
 					let {
 						subredditId: a
@@ -670,7 +670,7 @@
 					return !!e.badges.api.user.pending[a]
 				}
 			});
-			var Ne = Object(n.b)(Be, (e, t) => {
+			var Ne = Object(n.b)(we, (e, t) => {
 					let {
 						subredditId: a
 					} = t;
@@ -685,7 +685,7 @@
 							subredditId: a
 						}))
 					}
-				})(we),
+				})(Be),
 				Ie = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				je = a("./src/reddit/components/Flair/index.tsx"),
 				Oe = a("./src/reddit/components/Badges/PickerModal/UserDisplay/index.m.less"),
@@ -1025,8 +1025,6 @@
 			"use strict";
 			a.d(t, "a", (function() {
 				return l
-			})), a.d(t, "b", (function() {
-				return o
 			}));
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = a("./src/reddit/constants/experiments.ts"),
@@ -1035,8 +1033,7 @@
 				d = a("./src/reddit/selectors/user.ts");
 			const i = new Set(["pollstest", "whatssnoo"]),
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				l = e => i.has(e.toLowerCase()) || c.has(e.toLowerCase()),
-				o = e => i.has((Object(n.e)(e) || "").toLowerCase()) || c.has((Object(n.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
+				l = e => i.has((Object(n.e)(e) || "").toLowerCase()) || c.has((Object(n.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: d.G,
 					experimentName: s.ab
 				}) === s.hb.Enabled
@@ -1062,15 +1059,15 @@
 			})), a.d(t, "o", (function() {
 				return f
 			})), a.d(t, "p", (function() {
-				return C
-			})), a.d(t, "n", (function() {
 				return E
+			})), a.d(t, "n", (function() {
+				return C
 			})), a.d(t, "k", (function() {
 				return y
 			})), a.d(t, "l", (function() {
-				return w
-			})), a.d(t, "s", (function() {
 				return B
+			})), a.d(t, "s", (function() {
+				return w
 			})), a.d(t, "a", (function() {
 				return N
 			})), a.d(t, "f", (function() {
@@ -1097,7 +1094,7 @@
 					let {
 						subredditId: a
 					} = t;
-					const s = B(e, {
+					const s = w(e, {
 						subredditId: a
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.harberger ? s.extra.contracts.harberger : {
@@ -1125,7 +1122,7 @@
 				},
 				h = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				b = (e, t) => {
-					if (Object(d.b)(e)) {
+					if (Object(d.a)(e)) {
 						const t = Object(i.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -1145,20 +1142,20 @@
 					return a && e.subreddits.gov.releaseNotes[a] || c
 				},
 				f = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || o,
-				E = (e, t) => {
+				E = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || o,
+				C = (e, t) => {
 					const a = j(e, t);
 					return a && a.decimals ? "1" + "0".repeat(a.decimals) : "1"
 				},
 				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				B = (e, t) => {
-					const a = w(e, t);
+				B = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				w = (e, t) => {
+					const a = B(e, t);
 					return a && a.walletProvider
 				},
 				N = (e, t) => {
-					const a = B(e, t),
-						s = w(e, t);
+					const a = w(e, t),
+						s = B(e, t);
 					return a && a.provider || s && s.provider
 				},
 				I = (e, t) => {
@@ -1166,7 +1163,7 @@
 					return a === r.a.Ethereum || a === r.a.Rinkeby
 				},
 				j = (e, t) => {
-					const a = B(e, t),
+					const a = w(e, t),
 						s = N(e, t);
 					if (a && !a.inTransition && s === r.a.Stellar) return {
 						address: a.extra && a.extra.issuerAddress || "",
@@ -1186,7 +1183,7 @@
 					let {
 						subredditId: a
 					} = t;
-					const s = B(e, {
+					const s = w(e, {
 						subredditId: a
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.subscriptions ? s.extra.contracts.subscriptions : {
@@ -1194,10 +1191,10 @@
 					}
 				},
 				k = (e, t) => {
-					const a = w(e, t);
+					const a = B(e, t);
 					return !!a && !!a.walletProvider && !a.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.026691b40c0b99e0cf01.js.map
+//# sourceMappingURL=BadgePickerModal.0dd1392ce570d89e9dfa.js.map

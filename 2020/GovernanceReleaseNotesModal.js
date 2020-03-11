@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d7b3f53f33ca0e92aaf7.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.044181a1b941d7ca2997.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -202,17 +202,17 @@
 			}
 			var I = n("./src/reddit/controls/Button/index.tsx"),
 				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
-				R = n.n(C);
+				R = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
+				C = n.n(R);
 
 			function L(e) {
 				return r.a.createElement("div", {
-					className: Object(b.a)(R.a.container, e.className)
+					className: Object(b.a)(C.a.container, e.className)
 				}, !e.isFirst && r.a.createElement(I.i, {
-					className: R.a.prev,
+					className: C.a.prev,
 					onClick: e.onPrevSlide
 				}, r.a.createElement(S.a, {
-					className: R.a.arrow
+					className: C.a.arrow
 				})), r.a.createElement(I.f, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, Object(i.a)(e.language, e.isLast ? "gov.releaseNotesDone" : "gov.releaseNotesNext")))
@@ -440,8 +440,6 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return c
-			})), n.d(t, "b", (function() {
-				return l
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/constants/experiments.ts"),
@@ -450,8 +448,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const i = new Set(["pollstest", "whatssnoo"]),
 				d = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				c = e => i.has(e.toLowerCase()) || d.has(e.toLowerCase()),
-				l = e => i.has((Object(a.e)(e) || "").toLowerCase()) || d.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
+				c = e => i.has((Object(a.e)(e) || "").toLowerCase()) || d.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.G,
 					experimentName: s.ab
 				}) === s.hb.Enabled
@@ -540,7 +537,7 @@
 				},
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				v = (e, t) => {
-					if (Object(o.b)(e)) {
+					if (Object(o.a)(e)) {
 						const t = Object(i.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -615,4 +612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.d7b3f53f33ca0e92aaf7.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.044181a1b941d7ca2997.js.map

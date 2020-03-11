@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.6eb9e225cbf8e92d4e7d.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.4824a34fdb582377c0f9.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -49,7 +49,7 @@
 			})), r.d(t, "h", (function() {
 				return _
 			})), r.d(t, "i", (function() {
-				return H
+				return L
 			})), r.d(t, "f", (function() {
 				return U
 			})), r.d(t, "g", (function() {
@@ -74,8 +74,8 @@
 				T = Object(n.a)(v.u),
 				S = Object(n.a)(v.v),
 				D = Object(n.a)(v.w),
-				L = Object(n.a)(v.x),
-				H = Object(n.a)(v.y),
+				H = Object(n.a)(v.x),
+				L = Object(n.a)(v.y),
 				U = (e, t) => async (r, s, n) => {
 					let o, {
 							apiContext: a,
@@ -150,7 +150,7 @@
 					} = s;
 					t(D());
 					const o = await Object(p.a)(n(), e);
-					o.ok ? t(L(o.body)) : t(S({
+					o.ok ? t(H(o.body)) : t(S({
 						error: o.error
 					}))
 				}, R = (e, t) => async (r, n, o) => {
@@ -169,7 +169,7 @@
 						})
 					}(a(), e, t);
 					if (d.ok) {
-						r(L({
+						r(H({
 							[t]: d.body
 						}));
 						const o = e ? "polls.optOutSuccess" : "polls.optInSuccess";
@@ -488,17 +488,17 @@
 				T = r("./src/lib/timeUntil/index.ts"),
 				S = r("./src/reddit/components/Governance/Token/index.tsx"),
 				D = r("./src/reddit/icons/svgs/Settings/index.tsx"),
-				L = r("./src/reddit/actions/governance/index.ts"),
-				H = r("./src/reddit/controls/Button/index.tsx");
+				H = r("./src/reddit/actions/governance/index.ts"),
+				L = r("./src/reddit/controls/Button/index.tsx");
 			var U = Object(d.b)(null, (e, t) => {
 					let {
 						subredditId: r
 					} = t;
 					return {
-						onOptIn: () => e(Object(L.c)(!1, r))
+						onOptIn: () => e(Object(H.c)(!1, r))
 					}
 				})((function(e) {
-					return a.a.createElement(H.i, {
+					return a.a.createElement(L.i, {
 						className: e.className,
 						onClick: e.onOptIn
 					}, a.a.createElement(I.c, null, "enable"))
@@ -553,7 +553,7 @@
 						subredditId: r
 					} = t;
 					return {
-						onOpenOptOutModal: () => e(Object(L.d)({
+						onOpenOptOutModal: () => e(Object(H.d)({
 							subredditId: r
 						}))
 					}
@@ -1018,8 +1018,6 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return c
-			})), r.d(t, "b", (function() {
-				return l
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./src/reddit/constants/experiments.ts"),
@@ -1028,8 +1026,7 @@
 				a = r("./src/reddit/selectors/user.ts");
 			const d = new Set(["pollstest", "whatssnoo"]),
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				c = e => d.has(e.toLowerCase()) || i.has(e.toLowerCase()),
-				l = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
+				c = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: a.G,
 					experimentName: s.ab
 				}) === s.hb.Enabled
@@ -1118,7 +1115,7 @@
 				},
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				h = (e, t) => {
-					if (Object(a.b)(e)) {
+					if (Object(a.a)(e)) {
 						const t = Object(d.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -1193,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.6eb9e225cbf8e92d4e7d.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.4824a34fdb582377c0f9.js.map

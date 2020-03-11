@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.f453244140809452acef.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.dccaf11dc4e936586978.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -1019,7 +1019,7 @@
 					if (!u) return;
 					if (t(H(u)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
 					let O;
-					if ((O = f ? Object(S.b)(l) ? await Object(y.a)(r(), Object.assign({}, u, {
+					if ((O = f ? Object(S.a)(l) ? await Object(y.a)(r(), Object.assign({}, u, {
 								kind: E.p.POLL,
 								poll: v
 							})) : await
@@ -1064,7 +1064,7 @@
 						if (t(F({
 								draftId: u.draftId,
 								response: s
-							})), f && !Object(S.b)(l) && t(Object(i.e)({
+							})), f && !Object(S.a)(l) && t(Object(i.e)({
 								poll: s.poll
 							})), !p) {
 							const a = (s.path || "/user/".concat(Object(L.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
@@ -4704,8 +4704,6 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return d
-			})), s.d(t, "b", (function() {
-				return l
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = s("./src/reddit/constants/experiments.ts"),
@@ -4714,8 +4712,7 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const o = new Set(["pollstest", "whatssnoo"]),
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => o.has(e.toLowerCase()) || c.has(e.toLowerCase()),
-				l = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
+				d = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: i.G,
 					experimentName: a.ab
 				}) === a.hb.Enabled
@@ -4804,7 +4801,7 @@
 				},
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				b = (e, t) => {
-					if (Object(i.b)(e)) {
+					if (Object(i.a)(e)) {
 						const t = Object(o.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -4879,4 +4876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.f453244140809452acef.js.map
+//# sourceMappingURL=PainterModalLoader.dccaf11dc4e936586978.js.map

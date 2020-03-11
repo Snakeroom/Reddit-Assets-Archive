@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.e5b4c2cc93c961f9ec09.js
-// Retrieved at 3/10/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7e27ef7283f07e3da4d8.js
+// Retrieved at 3/11/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, n) {
@@ -12,13 +12,13 @@
 				c = Object(r.a)(o.a),
 				d = Object(r.a)(o.b);
 			n.d(t, "b", (function() {
-				return u
-			})), n.d(t, "a", (function() {
 				return l
+			})), n.d(t, "a", (function() {
+				return u
 			})), n.d(t, "c", (function() {
 				return m
 			}));
-			const u = e => async (t, n, r) => {
+			const l = e => async (t, n, r) => {
 				let {
 					apiContext: o
 				} = r;
@@ -31,7 +31,7 @@
 					subredditId: e,
 					data: d
 				}))
-			}, l = (e, t) => async (n, r, o) => {
+			}, u = (e, t) => async (n, r, o) => {
 				let {
 					apiContext: i
 				} = o;
@@ -70,8 +70,8 @@
 				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/lib/prettyPrintNumber/index.ts"),
 				d = n("./src/reddit/actions/economics/banners/thunkedActions.ts"),
-				u = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
-				l = n("./src/reddit/components/Governance/ClaimPointsModal/async.ts"),
+				l = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
+				u = n("./src/reddit/components/Governance/ClaimPointsModal/async.ts"),
 				m = n("./src/reddit/controls/Button/index.tsx"),
 				b = n("./src/reddit/endpoints/economics/banners.ts"),
 				p = n("./src/reddit/helpers/governance/tokens.ts"),
@@ -82,9 +82,9 @@
 				y = n("./src/reddit/components/Governance/ClaimPointsBanner/index.m.less"),
 				x = n.n(y);
 			const {
-				fbt: w
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class j extends r.a.Component {
+			class w extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						modalVisible: !1
@@ -106,7 +106,7 @@
 						subreddit: o,
 						subredditId: i,
 						tokenDisplayConversion: d,
-						tokenName: u
+						tokenName: l
 					} = this.props;
 					return e && t ? r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(a.a)(x.a.banner, n)
@@ -114,24 +114,24 @@
 						className: x.a.contents
 					}, r.a.createElement("div", {
 						className: x.a.title
-					}, w._("Own a piece of {subreddit name}", [w._param("subreddit name", o.displayText)], {
+					}, j._("Own a piece of {subreddit name}", [j._param("subreddit name", o.displayText)], {
 						hk: "4mj4OW"
 					})), r.a.createElement("div", {
 						className: x.a.description
-					}, w._("You have earned a piece of the community by earning {karma amount} karma on your posts and comments.", [w._param("karma amount", s)], {
+					}, j._("You have earned a piece of the community by earning {karma amount} karma on your posts and comments.", [j._param("karma amount", s)], {
 						hk: "3hfaPH"
 					})), r.a.createElement("div", {
 						className: x.a.points
-					}, Object(c.a)(Object(p.b)(t, d)), " ", u), r.a.createElement(m.f, {
+					}, Object(c.a)(Object(p.b)(t, d)), " ", l), r.a.createElement(m.f, {
 						onClick: this.showModal
-					}, w._("Claim Points", null, {
+					}, j._("Claim Points", null, {
 						hk: "17BVwS"
 					}))), r.a.createElement("div", {
 						className: x.a.illustration
 					}), r.a.createElement(f.a, {
 						className: x.a.close,
 						onClick: this.props.onDismissBanner
-					})), this.state.modalVisible && r.a.createElement(l.a, {
+					})), this.state.modalVisible && r.a.createElement(u.a, {
 						subredditId: i,
 						onClose: () => this.setState({
 							modalVisible: !1
@@ -159,9 +159,9 @@
 				return {
 					onDismissBanner: () => e(Object(d.a)(n, b.a.ClaimPoints)),
 					onFetchDismissedBanners: () => e(Object(d.b)(n)),
-					onFetchMeData: () => e(Object(u.a)())
+					onFetchMeData: () => e(Object(l.a)())
 				}
-			})(j)
+			})(w)
 		},
 		"./src/reddit/components/Governance/ClaimPointsModal/async.ts": function(e, t, n) {
 			"use strict";
@@ -224,16 +224,16 @@
 				})), n.d(t, "b", (function() {
 					return c
 				})), n.d(t, "c", (function() {
-					return u
-				})), n.d(t, "e", (function() {
 					return l
+				})), n.d(t, "e", (function() {
+					return u
 				})), n.d(t, "d", (function() {
 					return m
 				})),
 				function(e) {
 					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(r || (r = {}));
-			const u = async (e, t, n) => d(e, t, n, !0), l = async (e, t, n) => d(e, t, n, !1), m = (e, t) => a(e, t, s.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
+			const l = async (e, t, n) => d(e, t, n, !0), u = async (e, t, n) => d(e, t, n, !1), m = (e, t) => a(e, t, s.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, n) {
 			"use strict";
@@ -319,8 +319,6 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "b", (function() {
-				return u
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/constants/experiments.ts"),
@@ -329,8 +327,7 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = new Set(["pollstest", "whatssnoo"]),
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => a.has(e.toLowerCase()) || c.has(e.toLowerCase()),
-				u = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
+				d = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: i.G,
 					experimentName: s.ab
 				}) === s.hb.Enabled
@@ -338,7 +335,7 @@
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return l
+				return u
 			})), n.d(t, "c", (function() {
 				return m
 			})), n.d(t, "d", (function() {
@@ -358,9 +355,9 @@
 			})), n.d(t, "p", (function() {
 				return x
 			})), n.d(t, "n", (function() {
-				return w
-			})), n.d(t, "k", (function() {
 				return j
+			})), n.d(t, "k", (function() {
+				return w
 			})), n.d(t, "l", (function() {
 				return P
 			})), n.d(t, "s", (function() {
@@ -383,11 +380,11 @@
 				a = n("./src/reddit/selectors/postCreations.ts");
 			const c = [],
 				d = {},
-				u = {
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				},
-				l = (e, t) => {
+				u = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -403,15 +400,15 @@
 					}
 				},
 				m = (e, t) => {
-					const n = j(e, t);
+					const n = w(e, t);
 					if (n) return n.mainHeader
 				},
 				b = (e, t) => {
-					const n = j(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				p = (e, t) => {
-					const n = j(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -419,7 +416,7 @@
 				},
 				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				v = (e, t) => {
-					if (Object(i.b)(e)) {
+					if (Object(i.a)(e)) {
 						const t = Object(a.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
 					}
@@ -439,12 +436,12 @@
 					return n && e.subreddits.gov.releaseNotes[n] || c
 				},
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
-				w = (e, t) => {
+				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
+				j = (e, t) => {
 					const n = _(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				j = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				P = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				O = (e, t) => {
 					const n = P(e, t);
@@ -494,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.e5b4c2cc93c961f9ec09.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.7e27ef7283f07e3da4d8.js.map
