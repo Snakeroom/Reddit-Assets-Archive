@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b8c1f580e1eead712215.js
-// Retrieved at 3/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0a94b9b47d2a9cc8cb36.js
+// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -175,8 +175,8 @@
 						name: s(/^(.*)\/(.*) /),
 						version: r(/^(.*)\/(.*) /)
 					}, !n.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (n.name = n.name || "Blink", n.blink = e) : (n.name = n.name || "Webkit", n.webkit = e), !n.version && S && (n.version = S)) : !n.opera && /gecko\//i.test(t) && (n.name = n.name || "Gecko", n.gecko = e, n.version = n.version || s(/gecko\/(\d+(\.\d+)?)/i)), n.windowsphone || !o && !n.silk ? !n.windowsphone && i ? (n[i] = e, n.ios = e, n.osname = "iOS") : v ? (n.mac = e, n.osname = "macOS") : O ? (n.xbox = e, n.osname = "Xbox") : b ? (n.windows = e, n.osname = "Windows") : g && (n.linux = e, n.osname = "Linux") : (n.android = e, n.osname = "Android");
-					var E = "";
-					n.windows ? E = function(e) {
+					var x = "";
+					n.windows ? x = function(e) {
 						switch (e) {
 							case "NT":
 								return "NT";
@@ -201,9 +201,9 @@
 							default:
 								return
 						}
-					}(s(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : n.windowsphone ? E = s(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : n.mac ? E = (E = s(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : i ? E = (E = s(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : o ? E = s(/android[ \/-](\d+(\.\d+)*)/i) : n.webos ? E = s(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : n.blackberry ? E = s(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : n.bada ? E = s(/bada\/(\d+(\.\d+)*)/i) : n.tizen && (E = s(/tizen[\/\s](\d+(\.\d+)*)/i)), E && (n.osversion = E);
-					var x = !n.windows && E.split(".")[0];
-					return f || c || "ipad" == i || o && (3 == x || x >= 4 && !C) || n.silk ? n.tablet = e : (C || "iphone" == i || "ipod" == i || o || a || n.blackberry || n.webos || n.bada) && (n.mobile = e), n.msedge || n.msie && n.version >= 10 || n.yandexbrowser && n.version >= 15 || n.vivaldi && n.version >= 1 || n.chrome && n.version >= 20 || n.samsungBrowser && n.version >= 4 || n.firefox && n.version >= 20 || n.safari && n.version >= 6 || n.opera && n.version >= 10 || n.ios && n.osversion && n.osversion.split(".")[0] >= 6 || n.blackberry && n.version >= 10.1 || n.chromium && n.version >= 20 ? n.a = e : n.msie && n.version < 10 || n.chrome && n.version < 20 || n.firefox && n.version < 20 || n.safari && n.version < 6 || n.opera && n.version < 10 || n.ios && n.osversion && n.osversion.split(".")[0] < 6 || n.chromium && n.version < 20 ? n.c = e : n.x = e, n
+					}(s(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : n.windowsphone ? x = s(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : n.mac ? x = (x = s(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : i ? x = (x = s(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : o ? x = s(/android[ \/-](\d+(\.\d+)*)/i) : n.webos ? x = s(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : n.blackberry ? x = s(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : n.bada ? x = s(/bada\/(\d+(\.\d+)*)/i) : n.tizen && (x = s(/tizen[\/\s](\d+(\.\d+)*)/i)), x && (n.osversion = x);
+					var E = !n.windows && x.split(".")[0];
+					return f || c || "ipad" == i || o && (3 == E || E >= 4 && !C) || n.silk ? n.tablet = e : (C || "iphone" == i || "ipod" == i || o || a || n.blackberry || n.webos || n.bada) && (n.mobile = e), n.msedge || n.msie && n.version >= 10 || n.yandexbrowser && n.version >= 15 || n.vivaldi && n.version >= 1 || n.chrome && n.version >= 20 || n.samsungBrowser && n.version >= 4 || n.firefox && n.version >= 20 || n.safari && n.version >= 6 || n.opera && n.version >= 10 || n.ios && n.osversion && n.osversion.split(".")[0] >= 6 || n.blackberry && n.version >= 10.1 || n.chromium && n.version >= 20 ? n.a = e : n.msie && n.version < 10 || n.chrome && n.version < 20 || n.firefox && n.version < 20 || n.safari && n.version < 6 || n.opera && n.version < 10 || n.ios && n.osversion && n.osversion.split(".")[0] < 6 || n.chromium && n.version < 20 ? n.c = e : n.x = e, n
 				}
 				var s = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -429,7 +429,7 @@
 						error: d.error,
 						utcTimeStamp: m
 					}))
-				}, O = e => async (t, s) => Object(d.b)(s()) ? t(x(e)) : t(E()), E = () => async (e, t, s) => {
+				}, O = e => async (t, s) => Object(d.b)(s()) ? t(E(e)) : t(x()), x = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
@@ -448,7 +448,7 @@
 						error: i.error,
 						utcTimeStamp: o
 					}))
-				}, x = e => async (t, s, r) => {
+				}, E = e => async (t, s, r) => {
 					let {
 						gqlContext: n
 					} = r;
@@ -835,7 +835,7 @@
 				f = c.a.button("MenuButton", g.a),
 				C = c.a.wrapped(p.a, "MenuIcon", g.a),
 				O = c.a.wrapped(h.b, "DropdownRow", g.a),
-				E = Object(o.c)({
+				x = Object(o.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: s
@@ -843,7 +843,7 @@
 						return Object(b.b)(s)(e)
 					}
 				}),
-				x = Object(i.b)(E, (e, t) => {
+				E = Object(i.b)(x, (e, t) => {
 					let {
 						dropdownId: s
 					} = t;
@@ -856,7 +856,7 @@
 				y = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = x(e => n.a.createElement(f, {
+			t.b = E(e => n.a.createElement(f, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": Object(l.c)("more options"),
@@ -1466,12 +1466,12 @@
 				f = s("./src/reddit/actions/media.ts"),
 				C = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
 				O = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				E = s("./src/lib/makeActionCreator/index.ts");
-			const x = Object(E.a)(O.C),
-				y = Object(E.a)(O.X),
+				x = s("./src/lib/makeActionCreator/index.ts");
+			const E = Object(x.a)(O.C),
+				y = Object(x.a)(O.X),
 				j = e => async t => {
-					t(x(e))
-				}, P = Object(E.a)(O.M), I = Object(E.a)(O.T);
+					t(E(e))
+				}, P = Object(x.a)(O.M), I = Object(x.a)(O.T);
 			var _ = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				k = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				N = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
@@ -1492,8 +1492,8 @@
 				J = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				K = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts"),
 				Y = s("./src/config.ts"),
-				X = s("./src/reddit/actions/post.ts"),
-				q = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				q = s("./src/reddit/actions/post.ts"),
+				X = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				Q = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				Z = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				$ = s("./src/reddit/components/OverflowMenu/index.tsx"),
@@ -1608,14 +1608,12 @@
 				pe = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				be = s("./src/reddit/models/Vote/index.ts"),
 				ve = s("./src/reddit/selectors/user.ts");
-			Object(E.a)(O.B);
-			var ge = s("./src/reddit/i18n/components.tsx"),
-				we = s("./src/reddit/i18n/utils.ts"),
-				Se = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
-				fe = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
-				Ce = s("./src/reddit/components/PublicAccessNetwork/Theater/VotePanel/index.m.less"),
-				Oe = s.n(Ce);
-			const Ee = Object(d.c)({
+			Object(x.a)(O.B);
+			var ge = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
+				we = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
+				Se = s("./src/reddit/components/PublicAccessNetwork/Theater/VotePanel/index.m.less"),
+				fe = s.n(Se);
+			const Ce = Object(d.c)({
 				currentStream: (e, t) => {
 					let {
 						currentStreamId: s
@@ -1623,7 +1621,7 @@
 					return Object(J.k)(e, s)
 				}
 			});
-			class xe extends o.a.Component {
+			class Oe extends o.a.Component {
 				constructor(e) {
 					super(e), this.isVoteActive = e => this.state.displayedVoteState === e, this.upVotes = () => this.calculateVotes(be.a.upvoted), this.downVotes = () => this.calculateVotes(be.a.downvoted), this.calculateVotes = e => {
 						const t = this.props.currentStream;
@@ -1658,39 +1656,47 @@
 					if (!e) return null;
 					const t = this.props.isLive ? e.continuous_watchers : e.unique_watchers;
 					return o.a.createElement("div", {
-						className: Oe.a.statsPanel
+						className: fe.a.statsPanel
 					}, o.a.createElement("div", {
-						className: Oe.a.voteContainer
+						className: fe.a.voteContainer
 					}, o.a.createElement("button", {
-						className: Object(l.a)(Oe.a.upButton, {
-							[Oe.a.activeVote]: this.isVoteActive(be.a.upvoted)
+						className: Object(l.a)(fe.a.upButton, {
+							[fe.a.activeVote]: this.isVoteActive(be.a.upvoted)
 						}),
 						onClick: this.onVoteUp,
 						value: "upvote",
-						"aria-label": Object(we.c)("upvote")
-					}, o.a.createElement(fe.a, {
-						className: Oe.a.voteIcon
+						"aria-label": g.fbt._("Upvote", null, {
+							hk: "4ijw7j"
+						})
+					}, o.a.createElement(we.a, {
+						className: fe.a.voteIcon
 					})), o.a.createElement("p", {
-						className: Oe.a.votesCounter
+						className: fe.a.votesCounter
 					}, Object(he.b)(this.upVotes()))), o.a.createElement("div", {
-						className: Oe.a.watchingContainer
+						className: fe.a.watchingContainer
 					}, o.a.createElement("div", {
-						className: Oe.a.watchingCounter
+						className: fe.a.watchingCounter
 					}, Object(he.b)(t)), o.a.createElement("p", {
-						className: Oe.a.watchingCaption
-					}, this.props.isLive ? o.a.createElement(ge.c, null, "Watching") : o.a.createElement(ge.c, null, "Views"))), o.a.createElement("div", {
-						className: Oe.a.voteContainer
+						className: fe.a.watchingCaption
+					}, this.props.isLive ? g.fbt._("Watching", null, {
+						hk: "2Fql0m"
+					}) : g.fbt._("Views", null, {
+						hk: "ixhZU"
+					}))), o.a.createElement("div", {
+						className: fe.a.voteContainer
 					}, o.a.createElement("button", {
-						className: Object(l.a)(Oe.a.downButton, {
-							[Oe.a.activeVote]: this.isVoteActive(be.a.downvoted)
+						className: Object(l.a)(fe.a.downButton, {
+							[fe.a.activeVote]: this.isVoteActive(be.a.downvoted)
 						}),
 						onClick: this.onVoteDown,
 						value: "downvote",
-						"aria-label": Object(we.c)("downvote")
-					}, o.a.createElement(Se.a, {
-						className: Oe.a.voteIcon
+						"aria-label": g.fbt._("Dpvote", null, {
+							hk: "1PcDeu"
+						})
+					}, o.a.createElement(ge.a, {
+						className: fe.a.voteIcon
 					})), o.a.createElement("p", {
-						className: Oe.a.votesCounter
+						className: fe.a.votesCounter
 					}, Object(he.b)(this.downVotes()))))
 				}
 				vote(e) {
@@ -1705,7 +1711,7 @@
 					}
 				}
 			}
-			var ye = Object(a.b)(Ee, (e, t) => ({
+			var xe = Object(a.b)(Ce, (e, t) => ({
 					vote: (t, s) => e(((e, t) => async (s, r, n) => {
 						let {
 							apiContext: i
@@ -1715,9 +1721,11 @@
 						const o = Object(J.k)(r(), e);
 						null !== o.post.voteState && Object(be.e)(o.post.voteState) === t || await Object(pe.g)(i(), e, t)
 					})(t, s))
-				}))(xe),
-				je = s("./src/lib/lessComponent.tsx"),
-				Pe = s("./src/lib/opener/index.ts"),
+				}))(Oe),
+				Ee = s("./src/lib/lessComponent.tsx"),
+				ye = s("./src/lib/opener/index.ts"),
+				je = s("./src/reddit/i18n/components.tsx"),
+				Pe = s("./src/reddit/i18n/utils.ts"),
 				Ie = s("./src/reddit/icons/fonts/Menu/index.tsx"),
 				_e = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				ke = s("./src/reddit/icons/svgs/Hide/index.tsx"),
@@ -1753,7 +1761,7 @@
 					return o.a.createElement("button", {
 						className: Ue.a.shareButton,
 						onClick: t,
-						"aria-label": Object(we.c)("share video"),
+						"aria-label": Object(Pe.c)("share video"),
 						value: "share"
 					}, o.a.createElement(_e.a, {
 						className: Ue.a.menuIcon
@@ -1767,7 +1775,7 @@
 					return o.a.createElement("button", {
 						className: Ue.a.muteButton,
 						onClick: s,
-						"aria-label": Object(we.c)("mute video"),
+						"aria-label": Object(Pe.c)("mute video"),
 						value: "mute"
 					}, t ? o.a.createElement(Me.a, {
 						className: Ue.a.volumeIcon
@@ -1775,7 +1783,7 @@
 						className: Ue.a.volumeIcon
 					}))
 				},
-				Ge = je.a.wrapped(Ie.a, "menuIcon", Ue.a),
+				Ge = Ee.a.wrapped(Ie.a, "menuIcon", Ue.a),
 				ze = e => {
 					let {
 						onClick: t,
@@ -1790,23 +1798,23 @@
 						onClick: t
 					}, o.a.createElement(ee.b, {
 						className: Ue.a.overflowItem,
-						displayText: Object(we.c)("View rules"),
+						displayText: Object(Pe.c)("View rules"),
 						iconWrapperClassName: Ue.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-rules"),
-						onClick: () => Object(Pe.d)(O.P, Pe.c.BLANK)
+						onClick: () => Object(ye.d)(O.P, ye.c.BLANK)
 					}, o.a.createElement(Te.a, {
 						className: Ue.a.overflowItemIcon
 					})), o.a.createElement(ee.b, {
 						className: Ue.a.overflowItem,
-						displayText: Object(we.c)("Visit RPAN community"),
+						displayText: Object(Pe.c)("Visit RPAN community"),
 						iconWrapperClassName: Ue.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-community"),
-						onClick: () => Object(Pe.d)(O.N, Pe.c.BLANK)
+						onClick: () => Object(ye.d)(O.N, ye.c.BLANK)
 					}, o.a.createElement(Ne.a, {
 						className: Ue.a.overflowItemIcon
 					})), o.a.createElement(ee.b, {
 						className: Ue.a.overflowItem,
-						displayText: Object(we.c)("Report"),
+						displayText: Object(Pe.c)("Report"),
 						iconWrapperClassName: Ue.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-report"),
 						onClick: r
@@ -1814,7 +1822,7 @@
 						className: Ue.a.overflowItemIcon
 					})), o.a.createElement(ee.b, {
 						className: Ue.a.overflowItem,
-						displayText: Object(we.c)("Hide"),
+						displayText: Object(Pe.c)("Hide"),
 						iconWrapperClassName: Ue.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-hide"),
 						onClick: s
@@ -1829,7 +1837,7 @@
 					return o.a.createElement("button", {
 						className: Ue.a.promptButton,
 						onClick: t
-					}, o.a.createElement(Ve.a, null), o.a.createElement("span", null, o.a.createElement(ge.c, null, "Replay Video")))
+					}, o.a.createElement(Ve.a, null), o.a.createElement("span", null, o.a.createElement(je.c, null, "Replay Video")))
 				},
 				Ke = e => {
 					let {
@@ -1838,12 +1846,12 @@
 					return o.a.createElement("button", {
 						className: Ue.a.promptButton,
 						onClick: t
-					}, o.a.createElement(De, null), o.a.createElement("span", null, o.a.createElement(ge.c, null, "Share Video")))
+					}, o.a.createElement(De, null), o.a.createElement("span", null, o.a.createElement(je.c, null, "Share Video")))
 				},
 				{
 					fbt: Ye
 				} = s("./node_modules/fbt/lib/FbtPublic.js"),
-				Xe = Object(d.c)({
+				qe = Object(d.c)({
 					currentStream: (e, t) => {
 						let {
 							currentStreamId: s
@@ -1865,7 +1873,7 @@
 					lastBatchApiRequestTs: Z.j,
 					recommendedViewerSubredditOptions: Z.k
 				});
-			class qe extends i.Component {
+			class Xe extends i.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.hoverTimeout = window.setTimeout(() => this.setState({
@@ -1883,23 +1891,23 @@
 							volumeControl: s
 						} = this;
 						s && s.container && s.container.contains(e.target) && (this.setState({
-							settingChange: q.a.Volume
+							settingChange: X.a.Volume
 						}), s.handleMouseDown(e)), t && t.parentRect && t.parentRect.contains(e.target) && (this.setState({
-							settingChange: q.a.SeekBar
+							settingChange: X.a.SeekBar
 						}), t.handleMouseDown(e))
 					}, this.onMouseMove = e => {
 						const {
 							seekBar: t,
 							volumeControl: s
 						} = this;
-						this.state.settingChange === q.a.SeekBar && t && t.handleMouseMove(e), this.state.settingChange === q.a.Volume && s && s.handleMouseMove(e)
+						this.state.settingChange === X.a.SeekBar && t && t.handleMouseMove(e), this.state.settingChange === X.a.Volume && s && s.handleMouseMove(e)
 					}, this.onMouseUp = e => {
 						e.stopPropagation();
 						const {
 							seekBar: t,
 							volumeControl: s
 						} = this;
-						this.state.settingChange === q.a.SeekBar && t && (t.handleMouseUp(e), this.props.onScrubbing()), this.state.settingChange === q.a.Volume && s && s.handleMouseUp(e), this.setState({
+						this.state.settingChange === X.a.SeekBar && t && (t.handleMouseUp(e), this.props.onScrubbing()), this.state.settingChange === X.a.Volume && s && s.handleMouseUp(e), this.setState({
 							settingChange: void 0
 						})
 					}, this.isVisible = () => this.state.isHovered || this.props.isVisible || this.props.isMenuOpened, this.onCopyLink = () => {
@@ -1962,7 +1970,7 @@
 						className: Ue.a.overlayCenter
 					}, this.getContent()), e && !s && !a && o.a.createElement("div", {
 						className: Ue.a.overlayBottom
-					}, o.a.createElement(ye, {
+					}, o.a.createElement(xe, {
 						currentStreamId: e.post.id,
 						isLive: r,
 						sendEvent: p
@@ -2063,15 +2071,15 @@
 					}))) : null
 				}
 			}
-			var Qe = Object(a.b)(Xe, (e, t) => ({
-				copyLink: t => e(Object(X.C)(t)),
+			var Qe = Object(a.b)(qe, (e, t) => ({
+				copyLink: t => e(Object(q.C)(t)),
 				onHide: () => {
-					t.currentStreamId && (e(Object(X.U)(t.currentStreamId, !0, !0, !0)), e(j(t.currentStreamId)))
+					t.currentStreamId && (e(Object(q.U)(t.currentStreamId, !0, !0, !0)), e(j(t.currentStreamId)))
 				}
-			}))(qe);
+			}))(Xe);
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			Object(E.a)(O.q);
-			const Ze = Object(E.a)(O.y),
+			Object(x.a)(O.q);
+			const Ze = Object(x.a)(O.y),
 				$e = (e, t) => async (s, r) => {
 					const n = r(),
 						i = Date.now(),
@@ -2184,12 +2192,12 @@
 					}
 				})),
 				Ot = ["Center", "Left", "Right"],
-				Et = ["Low", "Mid", "High"],
-				xt = () => Math.floor(800 * Math.random()),
+				xt = ["Low", "Mid", "High"],
+				Et = () => Math.floor(800 * Math.random()),
 				yt = e => e[Math.floor(Math.random() * e.length)],
 				jt = e => {
 					const t = yt(Ot),
-						s = yt(Et),
+						s = yt(xt),
 						r = e < gt.j.coinPrice ? "Silver" : e < gt.k.coinPrice ? "Gold" : "Platinum";
 					return ft.a["award".concat(r, "Tier").concat(s).concat(t)]
 				};
@@ -2224,7 +2232,7 @@
 							iconUrl: n
 						} = e;
 						for (let i = 0; i < s; i++) {
-							const s = "".concat(xt(), "ms"),
+							const s = "".concat(Et(), "ms"),
 								a = jt(t),
 								c = o.a.createElement("img", {
 									key: "".concat(e.id, "-").concat(i),
@@ -2297,8 +2305,8 @@
 					} = this.props, h = Object(dt.a)(e), p = Object(lt.a)(_t.c.replyToPost, e);
 					return s ? o.a.createElement("div", {
 						className: Object(l.a)(Lt.a.streamingChat, Lt.a.prompt)
-					}, o.a.createElement(ge.c, null, "Chat has been disabled")) : n ? o.a.createElement("div", {
-						"aria-label": Object(we.c)("chat window"),
+					}, o.a.createElement(je.c, null, "Chat has been disabled")) : n ? o.a.createElement("div", {
+						"aria-label": Object(Pe.c)("chat window"),
 						className: Lt.a.streamingChat,
 						onClick: this.onChatClick
 					}, o.a.createElement(ht.a, {
@@ -2331,7 +2339,7 @@
 						origin
 					}), t && o.a.createElement(vt.a, null)) : o.a.createElement("div", {
 						className: Object(l.a)(Lt.a.streamingChat, Lt.a.prompt)
-					}, o.a.createElement(ge.c, null, "Loading..."))
+					}, o.a.createElement(je.c, null, "Loading..."))
 				}
 			}
 			var Vt = Object(a.b)(Tt, (e, t) => {
@@ -2376,7 +2384,11 @@
 					className: Ft.a.switchButton,
 					disabled: !r,
 					onClick: s,
-					"aria-label": t ? Object(we.c)("forward arrow") : Object(we.c)("back arrow"),
+					"aria-label": t ? g.fbt._("Forward arrow", null, {
+						hk: "3b7sZa"
+					}) : g.fbt._("Back arrow", null, {
+						hk: "1upGBK"
+					}),
 					value: t ? "forward" : "back"
 				}, o.a.createElement("div", {
 					className: Ft.a.streamThumbnail,
@@ -2852,8 +2864,8 @@
 					}))
 				},
 				Yt = (e, t) => (e && e.post.id) !== (t && t.post.id);
-			var Xt = zt(Object(V.b)(Jt)),
-				qt = s("./src/reddit/contexts/InsideOverlay.tsx"),
+			var qt = zt(Object(V.b)(Jt)),
+				Xt = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				Qt = s("./src/reddit/helpers/overlay/index.ts"),
 				Zt = s("./src/reddit/pages/PublicAccessNetwork/index.m.less"),
 				$t = s.n(Zt);
@@ -2929,7 +2941,7 @@
 						className: Object(l.a)($t.a.rpanContainer, {
 							[$t.a.overlay]: r
 						})
-					}, o.a.createElement(Xt, {
+					}, o.a.createElement(qt, {
 						isOverlay: !!r,
 						location: n,
 						onNavigation: this.onNavigation,
@@ -2944,7 +2956,7 @@
 			}, o.a.createElement("h2", null, es._("Not Found", null, {
 				hk: "2ijDv5"
 			})));
-			t.default = ss(Object(V.b)(Object(qt.b)(rs)))
+			t.default = ss(Object(V.b)(Object(Xt.b)(rs)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
@@ -2962,7 +2974,7 @@
 				h = s.n(m)()(e => Object(n.a)(Object(r.a)(u, t => e && t.hasOwnProperty(e) ? t[e] : [])));
 			var p = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			s.d(t, "k", (function() {
-				return E
+				return x
 			})), s.d(t, "l", (function() {
 				return j
 			})), s.d(t, "m", (function() {
@@ -3027,10 +3039,10 @@
 						})
 					}, r)
 				}),
-				E = (e, t) => {
+				x = (e, t) => {
 					return O(e)[Object(o.f)(t)]
 				},
-				x = Object(r.a)((e, t) => {
+				E = Object(r.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -3063,7 +3075,7 @@
 						listingName: s,
 						streamIdFromPath: r
 					} = t;
-					return x(e, {
+					return E(e, {
 						listingName: s,
 						streamIdFromPath: r
 					})
@@ -3156,7 +3168,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? E(e, s) : void 0
+					return s ? x(e, s) : void 0
 				}, e => !e || e.chat_disabled);
 
 			function F(e, t) {
@@ -3205,4 +3217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.b8c1f580e1eead712215.js.map
+//# sourceMappingURL=PublicAccessNetwork.0a94b9b47d2a9cc8cb36.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.c614b67164949b406807.js
-// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.66fcb73de99a08f547c4.js
+// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -33,8 +33,8 @@
 				p = s("./src/reddit/components/ContentTooltip/index.m.less"),
 				h = s.n(p);
 
-			function O() {
-				return (O = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -42,7 +42,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = function(e, t) {
+			var O = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -75,8 +75,8 @@
 						style: n,
 						caretPosition: i,
 						caretColor: o
-					} = e, a = f(e, ["children", "className", "style", "caretPosition", "caretColor"]);
-					return r.a.createElement("div", O({
+					} = e, a = O(e, ["children", "className", "style", "caretPosition", "caretColor"]);
+					return r.a.createElement("div", f({
 						className: Object(d.a)(s, h.a.StyledTooltipContainer, {
 							[h.a.caretOnTop]: "top" === i,
 							[h.a.caretOnLeft]: "left" === i,
@@ -169,7 +169,7 @@
 						tooltipPosition: s,
 						caretPosition: n
 					} = this.getPositions(e);
-					return r.a.createElement(S, O({}, this.props, {
+					return r.a.createElement(S, f({}, this.props, {
 						caretPosition: n,
 						targetPosition: t,
 						tooltipPosition: s
@@ -218,8 +218,8 @@
 				m = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeActionCreator/index.ts")),
 				p = s("./src/reddit/actions/subredditMention/constants.ts"),
 				h = s("./src/lib/makeGqlRequest/index.ts"),
-				O = s("./src/graphql/operations/SubredditsWithAboutInfo.json"),
-				f = s("./src/reddit/featureFlags/index.ts"),
+				f = s("./src/graphql/operations/SubredditsWithAboutInfo.json"),
+				O = s("./src/reddit/featureFlags/index.ts"),
 				v = s("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
 				x = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
 				g = s("./src/reddit/models/Subreddit/index.ts"),
@@ -229,7 +229,7 @@
 				E = Object(m.a)(p.c),
 				C = Object(m.a)(p.b),
 				N = Object(m.a)(p.a),
-				P = e => async (t, s, n) => {
+				_ = e => async (t, s, n) => {
 					let {
 						gqlContext: i
 					} = n;
@@ -247,14 +247,14 @@
 						c = Object(S.d)(r, {
 							subredditName: e
 						}),
-						d = f.d.subredditMentionD2xExperiment(r);
+						d = O.d.subredditMentionD2xExperiment(r);
 					if (o || a && !c || !d) return;
 					let l = !1;
 					t(C({
 						subredditName: e
 					}));
 					try {
-						const s = await ((e, t) => Object(h.a)(e, Object.assign({}, O, {
+						const s = await ((e, t) => Object(h.a)(e, Object.assign({}, f, {
 							variables: t
 						})))(i(), {
 							subredditNames: [e]
@@ -297,7 +297,7 @@
 						}
 					}))
 				};
-			var _ = s("./src/reddit/actions/subredditTopContent.ts"),
+			var P = s("./src/reddit/actions/subredditTopContent.ts"),
 				k = s("./src/reddit/actions/tooltip.ts"),
 				w = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				T = s("./src/app/strings/index.ts"),
@@ -509,7 +509,7 @@
 				me = s("./src/reddit/components/SubredditMention/SubredditIconsWeighting/index.m.less"),
 				pe = s.n(me);
 			const he = e => "".concat("subreddit-mention", "-").concat(e),
-				Oe = Object(c.c)({
+				fe = Object(c.c)({
 					haveError: S.d,
 					hideNSFWPref: H.y,
 					isEmployee: H.D,
@@ -518,17 +518,17 @@
 					subreddit: j.a,
 					subredditAboutInfo: j.v
 				}),
-				fe = Object(a.b)(Oe, (e, t) => {
+				Oe = Object(a.b)(fe, (e, t) => {
 					let {
 						subredditName: s,
 						isHoverable: n
 					} = t;
 					return {
-						subredditDataRequested: t => e(P(t)),
+						subredditDataRequested: t => e(_(t)),
 						showTooltip: t => {
 							e(Object(k.f)({
 								tooltipId: t
-							})), e(Object(_.d)(s))
+							})), e(Object(P.d)(s))
 						},
 						onHideTooltip: () => e(Object(k.i)())
 					}
@@ -656,7 +656,7 @@
 					})))))
 				}
 			}
-			t.default = fe(Object(se.b)(xe))
+			t.default = Oe(Object(se.b)(xe))
 		},
 		"./src/reddit/components/SubredditMention/SubredditItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -728,7 +728,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var O = function(e, t) {
+			var f = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -737,11 +737,11 @@
 				}
 				return s
 			};
-			const f = p.a.wrapped(e => {
+			const O = p.a.wrapped(e => {
 					var {
 						small: t,
 						shouldReverseColor: s
-					} = e, n = O(e, ["small", "shouldReverseColor"]);
+					} = e, n = f(e, ["small", "shouldReverseColor"]);
 					const r = s ? a.i : a.f;
 					return i.a.createElement(r, h({}, n, {
 						className: Object(m.a)(n.className, {
@@ -754,7 +754,7 @@
 						small: t,
 						belongsToType: s,
 						shouldReverseColor: n
-					} = e, r = O(e, ["small", "belongsToType", "shouldReverseColor"]);
+					} = e, r = f(e, ["small", "belongsToType", "shouldReverseColor"]);
 					const o = n ? a.f : a.i;
 					return i.a.createElement(o, h({}, r, {
 						className: Object(m.a)(r.className, {
@@ -809,11 +809,11 @@
 							getEventFactory: S,
 							onSubscriptionsRequested: y
 						} = e,
-						E = O(e, ["className", "identifier", "language", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
+						E = f(e, ["className", "identifier", "language", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
 						C = this.state.isHovered;
 					let N = u ? "subscribed" : "subscribe";
 					u && C && (N = "unsubscribe");
-					const P = Object(l.a)({
+					const _ = Object(l.a)({
 						type: s.type,
 						key: N
 					});
@@ -827,7 +827,7 @@
 						belongsToType: s.type,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, E), d && i.a.createElement(x, null), !d && !C && i.a.createElement(x, null), !d && P) : d ? null : i.a.createElement(j, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(f, h({
+					}, E), d && i.a.createElement(x, null), !d && !C && i.a.createElement(x, null), !d && _) : d ? null : i.a.createElement(j, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(O, h({
 						className: Object(m.a)(t, {
 							[b.a.isLarge]: !d
 						}),
@@ -837,7 +837,7 @@
 						id: "subscribe-button-".concat(a),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}), i.a.createElement(g, null), !d && P))
+					}), i.a.createElement(g, null), !d && _))
 				}
 			}
 			t.a = Object(o.a)(Object(r.b)(S))
@@ -917,24 +917,23 @@
 		"./src/reddit/controls/MetaData/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return u
 			})), s.d(t, "c", (function() {
-				return m
+				return b
 			})), s.d(t, "b", (function() {
-				return h
+				return m
 			})), s.d(t, "d", (function() {
-				return O
+				return p
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var n = s("./node_modules/react/index.js"),
-				i = s.n(n),
-				r = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				i = s("./node_modules/react/index.js"),
+				r = s.n(i),
 				o = s("./src/lib/lessComponent.tsx"),
 				a = s("./src/lib/prettyPrintNumber/index.ts"),
-				c = (s("./src/lib/timeAgo/index.ts"), s("./src/reddit/i18n/utils.ts")),
-				d = s("./src/reddit/controls/MetaData/index.m.less"),
-				l = s.n(d),
-				u = function(e, t) {
+				c = (s("./src/lib/timeAgo/index.ts"), s("./src/reddit/controls/MetaData/index.m.less")),
+				d = s.n(c),
+				l = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -943,29 +942,38 @@
 					}
 					return s
 				};
-			const b = o.a.span("metaText", l.a),
-				m = e => i.a.createElement(b, e, " · "),
-				p = Object(r.c)("comment.point"),
-				h = e => {
+			const u = o.a.span("metaText", d.a),
+				b = e => r.a.createElement(u, e, " · "),
+				m = e => {
 					var {
 						isScoreHidden: t,
 						language: s,
-						score: n,
-						useUpvotes: r
-					} = e, o = u(e, ["isScoreHidden", "language", "score", "useUpvotes"]);
-					const d = Object(a.b)(n),
-						l = Object(c.c)("\n    ".concat(Object(c.b)("score", d), " ").concat(Object(c.a)("upvotes", ["upvote", "upvotes"], n), "\n  ")),
-						m = t ? Object(c.c)("Score hidden") : r ? l : p(s, n, {
-							count: d
+						score: i,
+						useUpvotes: o
+					} = e, c = l(e, ["isScoreHidden", "language", "score", "useUpvotes"]);
+					const d = Object(a.b)(i),
+						b = n.fbt._({
+							"*": "{number} upvotes",
+							_1: "1 upvote"
+						}, [n.fbt._plural(i, "number", d)], {
+							hk: "2L3T21"
+						}),
+						m = t ? n.fbt._("Score hidden", null, {
+							hk: "SDk6B"
+						}) : o ? b : n.fbt._({
+							"*": "{number} points",
+							_1: "1 point"
+						}, [n.fbt._plural(i, "number", d)], {
+							hk: "gf67v"
 						});
-					return i.a.createElement(b, o, m)
+					return r.a.createElement(u, c, m)
 				},
-				O = (e, t) => {
-					const s = Object(r.b)(t, "posts.comments.noun", e, {
-						count: Object(a.b)(e)
-					});
-					return i.a.createElement(b, null, s)
-				}
+				p = (e, t) => r.a.createElement(u, null, n.fbt._({
+					"*": "{number} comments",
+					_1: "1 comment"
+				}, [n.fbt._plural(e, "number", Object(a.b)(e))], {
+					hk: "3bVMk9"
+				}))
 		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, s) {
 			e.exports = {
@@ -1033,4 +1041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.c614b67164949b406807.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.66fcb73de99a08f547c4.js.map

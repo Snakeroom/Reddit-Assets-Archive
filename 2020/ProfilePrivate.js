@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.f4541a749e7eb31c158a.js
-// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.6b1411e87871de23558a.js
+// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6641,24 +6641,23 @@
 		"./src/reddit/controls/MetaData/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return p
+				return m
 			})), s.d(t, "c", (function() {
-				return u
+				return p
 			})), s.d(t, "b", (function() {
-				return h
+				return u
 			})), s.d(t, "d", (function() {
-				return x
+				return b
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var o = s("./node_modules/react/index.js"),
-				n = s.n(o),
-				r = s("./src/app/strings/index.ts"),
+			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				r = s.n(n),
 				i = s("./src/lib/lessComponent.tsx"),
 				a = s("./src/lib/prettyPrintNumber/index.ts"),
-				d = (s("./src/lib/timeAgo/index.ts"), s("./src/reddit/i18n/utils.ts")),
-				c = s("./src/reddit/controls/MetaData/index.m.less"),
-				l = s.n(c),
-				m = function(e, t) {
+				d = (s("./src/lib/timeAgo/index.ts"), s("./src/reddit/controls/MetaData/index.m.less")),
+				c = s.n(d),
+				l = function(e, t) {
 					var s = {};
 					for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (s[o] = e[o]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -6667,29 +6666,38 @@
 					}
 					return s
 				};
-			const p = i.a.span("metaText", l.a),
-				u = e => n.a.createElement(p, e, " · "),
-				b = Object(r.c)("comment.point"),
-				h = e => {
+			const m = i.a.span("metaText", c.a),
+				p = e => r.a.createElement(m, e, " · "),
+				u = e => {
 					var {
 						isScoreHidden: t,
 						language: s,
-						score: o,
-						useUpvotes: r
-					} = e, i = m(e, ["isScoreHidden", "language", "score", "useUpvotes"]);
-					const c = Object(a.b)(o),
-						l = Object(d.c)("\n    ".concat(Object(d.b)("score", c), " ").concat(Object(d.a)("upvotes", ["upvote", "upvotes"], o), "\n  ")),
-						u = t ? Object(d.c)("Score hidden") : r ? l : b(s, o, {
-							count: c
+						score: n,
+						useUpvotes: i
+					} = e, d = l(e, ["isScoreHidden", "language", "score", "useUpvotes"]);
+					const c = Object(a.b)(n),
+						p = o.fbt._({
+							"*": "{number} upvotes",
+							_1: "1 upvote"
+						}, [o.fbt._plural(n, "number", c)], {
+							hk: "2L3T21"
+						}),
+						u = t ? o.fbt._("Score hidden", null, {
+							hk: "SDk6B"
+						}) : i ? p : o.fbt._({
+							"*": "{number} points",
+							_1: "1 point"
+						}, [o.fbt._plural(n, "number", c)], {
+							hk: "gf67v"
 						});
-					return n.a.createElement(p, i, u)
+					return r.a.createElement(m, d, u)
 				},
-				x = (e, t) => {
-					const s = Object(r.b)(t, "posts.comments.noun", e, {
-						count: Object(a.b)(e)
-					});
-					return n.a.createElement(p, null, s)
-				}
+				b = (e, t) => r.a.createElement(m, null, o.fbt._({
+					"*": "{number} comments",
+					_1: "1 comment"
+				}, [o.fbt._plural(e, "number", Object(a.b)(e))], {
+					hk: "3bVMk9"
+				}))
 		},
 		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, s) {
 			"use strict";
@@ -7212,4 +7220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.f4541a749e7eb31c158a.js.map
+//# sourceMappingURL=ProfilePrivate.6b1411e87871de23558a.js.map

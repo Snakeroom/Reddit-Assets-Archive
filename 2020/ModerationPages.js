@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f89cdbef0055e7df2717.js
-// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1bf5ffedffdb21c7b092.js
+// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileComments~P~cd1c01d9", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./src/graphql/operations/AllModerators.json": function(e) {
@@ -20081,7 +20081,6 @@
 				mDisabled: "_2D3JNnADc6N28qHblqs-qW",
 				mRedditStyle: "_1Y3PuNdUp_ye6oQQPIkE2Y",
 				iconContainer: "_2Q-tHVfuqqIQLbMlSTJrlV",
-				tooltip: "vCHkhDAaK6nnJdqEpMGq-",
 				layoutButton: "_2KZsg_1r4DJcaP-Ug1LhsQ",
 				mIsActive: "_70bDvpoC4B21zobSGUMe6",
 				layoutSwitch: "_1o9Wtqx2f_wpqeyceGTV5w"
@@ -20090,11 +20089,11 @@
 		"./src/reddit/controls/LayoutSwitch/index.tsx": function(e, t, s) {
 			"use strict";
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./node_modules/react/index.js"),
+				o = s.n(a),
+				r = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/lib/classNames/index.ts"),
 				d = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				l = s("./src/reddit/actions/preferences.ts"),
@@ -20106,12 +20105,11 @@
 				g = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				x = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				f = s("./src/reddit/selectors/telemetry.ts"),
-				E = s("./src/reddit/selectors/user.ts"),
-				v = s("./src/reddit/controls/LayoutSwitch/index.m.less"),
-				O = s.n(v);
+				E = s("./src/reddit/controls/LayoutSwitch/index.m.less"),
+				v = s.n(E);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -20119,7 +20117,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var j = function(e, t) {
+			var C = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -20128,83 +20126,68 @@
 				}
 				return s
 			};
-			const y = e => Object(c.a)(O.a.iconStyles, e.className, {
-					[O.a.mDisabled]: e.disabled,
-					[O.a.mRedditStyle]: e.redditStyle
+			const j = e => Object(c.a)(v.a.iconStyles, e.className, {
+					[v.a.mDisabled]: e.disabled,
+					[v.a.mRedditStyle]: e.redditStyle
 				}),
+				y = e => {
+					var {
+						className: t,
+						disabled: s,
+						redditStyle: n
+					} = e, a = C(e, ["className", "disabled", "redditStyle"]);
+					return o.a.createElement(b.a, O({
+						className: j({
+							className: t,
+							disabled: s,
+							redditStyle: n
+						})
+					}, a))
+				},
 				k = e => {
 					var {
+						className: t,
+						disabled: s,
+						redditStyle: n
+					} = e, a = C(e, ["className", "disabled", "redditStyle"]);
+					return o.a.createElement(p.a, O({
+						className: j({
+							className: t,
+							disabled: s,
+							redditStyle: n
+						})
+					}, a))
+				},
+				w = e => {
+					var {
+						className: t,
+						disabled: s,
+						redditStyle: n
+					} = e, a = C(e, ["className", "disabled", "redditStyle"]);
+					return o.a.createElement(h.a, O({
+						className: j({
+							className: t,
+							disabled: s,
+							redditStyle: n
+						})
+					}, a))
+				},
+				S = e => {
+					var {
 						isActive: t
-					} = e, s = j(e, ["isActive"]);
-					return a.a.createElement("button", C({
-						className: Object(c.a)(O.a.layoutButton, {
-							[O.a.mIsActive]: t
+					} = e, s = C(e, ["isActive"]);
+					return o.a.createElement("button", O({
+						className: Object(c.a)(v.a.layoutButton, {
+							[v.a.mIsActive]: t
 						})
 					}, s))
 				},
-				w = Object(i.d)("listings.layoutSwitcher.label"),
-				S = Object(i.d)("listings.layoutSwitcher.card"),
-				_ = Object(i.d)("listings.layoutSwitcher.classic"),
-				T = Object(i.d)("listings.layoutSwitcher.compact"),
-				I = [{
-					layout: u.d.Card,
-					Icon: e => {
-						var {
-							className: t,
-							disabled: s,
-							redditStyle: n
-						} = e, o = j(e, ["className", "disabled", "redditStyle"]);
-						return a.a.createElement(h.a, C({
-							className: y({
-								className: t,
-								disabled: s,
-								redditStyle: n
-							})
-						}, o))
-					},
-					tooltipTranslation: S
-				}, {
-					layout: u.d.Classic,
-					Icon: e => {
-						var {
-							className: t,
-							disabled: s,
-							redditStyle: n
-						} = e, o = j(e, ["className", "disabled", "redditStyle"]);
-						return a.a.createElement(p.a, C({
-							className: y({
-								className: t,
-								disabled: s,
-								redditStyle: n
-							})
-						}, o))
-					},
-					tooltipTranslation: _
-				}, {
-					layout: u.d.Compact,
-					Icon: e => {
-						var {
-							className: t,
-							disabled: s,
-							redditStyle: n
-						} = e, o = j(e, ["className", "disabled", "redditStyle"]);
-						return a.a.createElement(b.a, C({
-							className: y({
-								className: t,
-								disabled: s,
-								redditStyle: n
-							})
-						}, o))
-					},
-					tooltipTranslation: T
-				}],
-				P = Object(x.t)(),
-				N = Object(r.c)({
-					language: E.O,
+				_ = Object(x.t)(),
+				T = Object(i.c)({
 					postLayout: x.L,
 					redditStyle: x.A
 				}),
-				M = Object(o.b)(N, e => ({
+				I = Object(r.b)(T, e => ({
 					onListingLayoutChange: (t, s) => e(Object(l.v)(t, s)),
 					toggleTooltip: t => e(Object(m.h)({
 						tooltipId: t
@@ -20212,19 +20195,39 @@
 				}), (e, t, s) => Object.assign({}, e, t, s, {
 					toggleTooltip: e => t.toggleTooltip(e)
 				}));
-			t.a = P(M(Object(g.b)(e => {
+			t.a = _(I(Object(g.b)(e => {
 				const {
 					sendEvent: t,
 					subredditId: s
-				} = e, n = e.layout || u.e[e.postLayout];
-				return a.a.createElement("div", {
-					className: Object(c.a)(O.a.layoutSwitch, e.className),
+				} = e, a = e.layout || u.e[e.postLayout];
+				return o.a.createElement("div", {
+					className: Object(c.a)(v.a.layoutSwitch, e.className),
 					id: "view--layout--FUE"
-				}, a.a.createElement("div", {
-					className: O.a.title
-				}, w(e.language)), a.a.createElement("div", {
-					className: O.a.iconContainer
-				}, I.map(o => {
+				}, o.a.createElement("div", {
+					className: v.a.title
+				}, n.fbt._("View", null, {
+					hk: "18a931"
+				})), o.a.createElement("div", {
+					className: v.a.iconContainer
+				}, (() => [{
+					layout: u.d.Card,
+					Icon: w,
+					text: n.fbt._("Card", null, {
+						hk: "22FueJ"
+					})
+				}, {
+					layout: u.d.Classic,
+					Icon: k,
+					text: n.fbt._("Classic", null, {
+						hk: "1Djx18"
+					})
+				}, {
+					layout: u.d.Compact,
+					Icon: y,
+					text: n.fbt._("Compact", null, {
+						hk: "22iWX9"
+					})
+				}])().map(n => {
 					const r = () => (n => {
 							e.onChange ? e.onChange(n) : (e.onListingLayoutChange(n, s), t(e => ({
 								source: "layout_switch",
@@ -20233,28 +20236,27 @@
 								screen: Object(f.screen)(e),
 								subreddit: Object(f.subreddit)(e)
 							})))
-						})(o.layout),
+						})(n.layout),
 						i = () => e.toggleTooltip(c),
-						c = "layoutSwitch--" + o.layout,
-						l = o.layout === n;
-					return a.a.createElement(k, {
-						"aria-label": o.tooltipTranslation(e.language),
+						c = "layoutSwitch--" + n.layout,
+						l = n.layout === a;
+					return o.a.createElement(S, {
+						"aria-label": n.text,
 						"aria-pressed": l,
 						id: c,
 						isActive: l,
-						key: o.layout,
+						key: n.layout,
 						onClick: r,
 						onMouseEnter: i,
 						onMouseLeave: i,
 						onTouchStart: r
-					}, a.a.createElement(o.Icon, {
+					}, o.a.createElement(n.Icon, {
 						disabled: !l,
 						onClick: l ? void 0 : e.onLayoutClick,
 						redditStyle: e.redditStyle
-					}), a.a.createElement(d.c, {
-						className: O.a.tooltip,
+					}), o.a.createElement(d.c, {
 						tooltipId: c,
-						text: o.tooltipTranslation(e.language)
+						text: n.text
 					}))
 				})))
 			})))
@@ -20267,24 +20269,23 @@
 		"./src/reddit/controls/MetaData/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return u
+				return m
 			})), s.d(t, "c", (function() {
-				return p
+				return u
 			})), s.d(t, "b", (function() {
-				return h
+				return p
 			})), s.d(t, "d", (function() {
-				return g
+				return b
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				o = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./node_modules/react/index.js"),
+				o = s.n(a),
 				r = s("./src/lib/lessComponent.tsx"),
 				i = s("./src/lib/prettyPrintNumber/index.ts"),
-				c = (s("./src/lib/timeAgo/index.ts"), s("./src/reddit/i18n/utils.ts")),
-				d = s("./src/reddit/controls/MetaData/index.m.less"),
-				l = s.n(d),
-				m = function(e, t) {
+				c = (s("./src/lib/timeAgo/index.ts"), s("./src/reddit/controls/MetaData/index.m.less")),
+				d = s.n(c),
+				l = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -20293,29 +20294,38 @@
 					}
 					return s
 				};
-			const u = r.a.span("metaText", l.a),
-				p = e => a.a.createElement(u, e, " · "),
-				b = Object(o.c)("comment.point"),
-				h = e => {
+			const m = r.a.span("metaText", d.a),
+				u = e => o.a.createElement(m, e, " · "),
+				p = e => {
 					var {
 						isScoreHidden: t,
 						language: s,
-						score: n,
-						useUpvotes: o
-					} = e, r = m(e, ["isScoreHidden", "language", "score", "useUpvotes"]);
-					const d = Object(i.b)(n),
-						l = Object(c.c)("\n    ".concat(Object(c.b)("score", d), " ").concat(Object(c.a)("upvotes", ["upvote", "upvotes"], n), "\n  ")),
-						p = t ? Object(c.c)("Score hidden") : o ? l : b(s, n, {
-							count: d
+						score: a,
+						useUpvotes: r
+					} = e, c = l(e, ["isScoreHidden", "language", "score", "useUpvotes"]);
+					const d = Object(i.b)(a),
+						u = n.fbt._({
+							"*": "{number} upvotes",
+							_1: "1 upvote"
+						}, [n.fbt._plural(a, "number", d)], {
+							hk: "2L3T21"
+						}),
+						p = t ? n.fbt._("Score hidden", null, {
+							hk: "SDk6B"
+						}) : r ? u : n.fbt._({
+							"*": "{number} points",
+							_1: "1 point"
+						}, [n.fbt._plural(a, "number", d)], {
+							hk: "gf67v"
 						});
-					return a.a.createElement(u, r, p)
+					return o.a.createElement(m, c, p)
 				},
-				g = (e, t) => {
-					const s = Object(o.b)(t, "posts.comments.noun", e, {
-						count: Object(i.b)(e)
-					});
-					return a.a.createElement(u, null, s)
-				}
+				b = (e, t) => o.a.createElement(m, null, n.fbt._({
+					"*": "{number} comments",
+					_1: "1 comment"
+				}, [n.fbt._plural(e, "number", Object(i.b)(e))], {
+					hk: "3bVMk9"
+				}))
 		},
 		"./src/reddit/controls/SearchBar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -35422,4 +35432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.f89cdbef0055e7df2717.js.map
+//# sourceMappingURL=ModerationPages.1bf5ffedffdb21c7b092.js.map
