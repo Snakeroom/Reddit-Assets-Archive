@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.3065b8e8c0f6e35a5249.js
-// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.f549e55f250feb3937eb.js
+// Retrieved at 3/12/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6155,7 +6155,7 @@
 				O = s.n(v);
 			const E = Object(a.b)(() => Object(i.c)({
 				comment: x.n,
-				isHighlighted: (e, t) => {
+				isAwarded: (e, t) => {
 					const s = Object(x.n)(e, t);
 					return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 						const s = Object(g.a)(e, t);
@@ -6171,7 +6171,7 @@
 						comment: t,
 						commentId: s,
 						first: n,
-						isHighlighted: r,
+						isAwarded: r,
 						isNightmodeOn: a,
 						last: i,
 						openPost: c,
@@ -6488,7 +6488,7 @@
 				w = m.a.div("CommentSeparator", O.a),
 				j = Object(i.b)(() => Object(c.c)({
 					comment: (e, t) => Object(x.n)(e, t),
-					isHighlighted: (e, t) => {
+					isAwarded: (e, t) => {
 						const s = Object(x.n)(e, t);
 						return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 							const s = Object(g.a)(e, t);
@@ -6506,7 +6506,7 @@
 						commentId: t,
 						depth: s,
 						openPost: n,
-						isHighlighted: r,
+						isAwarded: r,
 						isFirst: i,
 						isLast: c,
 						isNightmodeOn: d,
@@ -13001,4 +13001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.3065b8e8c0f6e35a5249.js.map
+//# sourceMappingURL=ProfileComments.f549e55f250feb3937eb.js.map

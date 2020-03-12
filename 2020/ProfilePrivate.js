@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.6b1411e87871de23558a.js
-// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.e6dd82b47c65bff80a9b.js
+// Retrieved at 3/12/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -2911,7 +2911,7 @@
 				O = s.n(f);
 			const y = Object(i.b)(() => Object(a.c)({
 				comment: x.n,
-				isHighlighted: (e, t) => {
+				isAwarded: (e, t) => {
 					const s = Object(x.n)(e, t);
 					return !(!s || !s.awardCountsById) && Object.keys(s.awardCountsById).some(t => {
 						const s = Object(g.a)(e, t);
@@ -2927,7 +2927,7 @@
 						comment: t,
 						commentId: s,
 						first: o,
-						isHighlighted: r,
+						isAwarded: r,
 						isNightmodeOn: i,
 						last: a,
 						openPost: d,
@@ -7220,4 +7220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.6b1411e87871de23558a.js.map
+//# sourceMappingURL=ProfilePrivate.e6dd82b47c65bff80a9b.js.map
