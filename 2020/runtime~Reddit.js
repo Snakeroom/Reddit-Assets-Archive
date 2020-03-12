@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0e5383263c934c066bd0.js
-// Retrieved at 3/12/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.39fbeaa96297142d83a0.js
+// Retrieved at 3/12/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -877,7 +877,7 @@
 						FrontpageSidebar: "16303455f206c804aef0",
 						Frontpage: "9609946cecf8b3ffbf6a",
 						Topic: "f46e191cc05b6296fc18",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "74843de01b25910326ca",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "84a48384de43c4b0fbff",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "ad49f19ce45a4e6be7f3",
 						"CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187": "aaf54e8a34a600dd936f",
 						PostDraft: "f0179e054ac1e41aa76f",
@@ -1038,7 +1038,7 @@
 						EconomicsCommunityTipJar: "6874a0f2d2161311a235",
 						AuthorHovercard: "0fbc52a82ef67eafdcce",
 						AwardTooltip: "f731da06be29dbecd4ec",
-						ChatPost: "655c5850c91daa97c1d0",
+						ChatPost: "412ee4deab40c1fc9cfd",
 						EconomicsSupportDonationAmount: "0f8e8b9ad9049c4a1639",
 						EconomicsTopTippersPostLeaderboard: "b35e3d7e77143964a31e",
 						GildModal: "09d52cc8aad34b8e3ac8",
@@ -1136,4 +1136,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.0e5383263c934c066bd0.js.map
+//# sourceMappingURL=runtime~Reddit.39fbeaa96297142d83a0.js.map

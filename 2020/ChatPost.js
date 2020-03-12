@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.655c5850c91daa97c1d0.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.412ee4deab40c1fc9cfd.js
+// Retrieved at 3/12/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -13,8 +13,8 @@
 		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
 			e.exports = function(e, t, n, o, s) {
-				return s(e, (function(e, s, a) {
-					n = o ? (o = !1, e) : t(n, e, s, a)
+				return s(e, (function(e, s, r) {
+					n = o ? (o = !1, e) : t(n, e, s, r)
 				})), n
 			}
 		},
@@ -36,24 +36,24 @@
 		"./node_modules/lodash/reduce.js": function(e, t, n) {
 			var o = n("./node_modules/lodash/_arrayReduce.js"),
 				s = n("./node_modules/lodash/_baseEach.js"),
-				a = n("./node_modules/lodash/_baseIteratee.js"),
-				r = n("./node_modules/lodash/_baseReduce.js"),
+				r = n("./node_modules/lodash/_baseIteratee.js"),
+				a = n("./node_modules/lodash/_baseReduce.js"),
 				i = n("./node_modules/lodash/isArray.js");
 			e.exports = function(e, t, n) {
-				var c = i(e) ? o : r,
+				var c = i(e) ? o : a,
 					l = arguments.length < 3;
-				return c(e, a(t, 4), n, l, s)
+				return c(e, r(t, 4), n, l, s)
 			}
 		},
 		"./node_modules/lodash/times.js": function(e, t, n) {
 			var o = n("./node_modules/lodash/_baseTimes.js"),
 				s = n("./node_modules/lodash/_castFunction.js"),
-				a = n("./node_modules/lodash/toInteger.js"),
-				r = 9007199254740991,
+				r = n("./node_modules/lodash/toInteger.js"),
+				a = 9007199254740991,
 				i = 4294967295,
 				c = Math.min;
 			e.exports = function(e, t) {
-				if ((e = a(e)) < 1 || e > r) return [];
+				if ((e = r(e)) < 1 || e > a) return [];
 				var n = i,
 					l = c(e, i);
 				t = s(t), e -= i;
@@ -73,12 +73,12 @@
 			"use strict";
 			t.a = function(e, t) {
 				for (var n = arguments.length, o = new Array(n > 2 ? n - 2 : 0), s = 2; s < n; s++) o[s - 2] = arguments[s];
-				let a, r = !1;
+				let r, a = !1;
 				const i = async () => {
-					o && o.length ? await e.call(window, ...o) : await e.call(window), r || (a = window.setTimeout(i, t))
+					o && o.length ? await e.call(window, ...o) : await e.call(window), a || (r = window.setTimeout(i, t))
 				};
-				return a = window.setTimeout(i, t), () => {
-					r = !0, window.clearTimeout(a)
+				return r = window.setTimeout(i, t), () => {
+					a = !0, window.clearTimeout(r)
 				}
 			}
 		},
@@ -119,24 +119,24 @@
 		"./src/reddit/components/Comments/States/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return j
-			})), n.d(t, "b", (function() {
 				return L
+			})), n.d(t, "b", (function() {
+				return j
 			})), n.d(t, "g", (function() {
-				return S
-			})), n.d(t, "e", (function() {
-				return M
-			})), n.d(t, "d", (function() {
-				return N
-			})), n.d(t, "f", (function() {
 				return R
+			})), n.d(t, "e", (function() {
+				return S
+			})), n.d(t, "d", (function() {
+				return M
+			})), n.d(t, "f", (function() {
+				return N
 			})), n.d(t, "a", (function() {
 				return q
 			}));
 			var o = n("./node_modules/lodash/times.js"),
 				s = n.n(o),
-				a = n("./node_modules/react/index.js"),
-				r = n.n(a),
+				r = n("./node_modules/react/index.js"),
+				a = n.n(r),
 				i = n("./node_modules/react-redux/es/index.js"),
 				c = n("./src/app/strings/index.ts"),
 				l = n("./src/lib/classNames/index.ts"),
@@ -149,39 +149,39 @@
 				g = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				b = n("./src/reddit/i18n/components.tsx"),
 				v = n("./src/reddit/icons/fonts/Downvote/index.tsx"),
-				x = n("./src/reddit/icons/fonts/Upvote/index.tsx"),
-				f = n("./src/reddit/icons/svgs/Comments/index.tsx"),
+				f = n("./src/reddit/icons/fonts/Upvote/index.tsx"),
+				x = n("./src/reddit/icons/svgs/Comments/index.tsx"),
 				_ = n("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
 				E = n("./src/reddit/components/Comments/States/index.m.less"),
 				k = n.n(E);
-			const T = d.a.wrapped(f.a, "CommentsIcon", k.a),
+			const T = d.a.wrapped(x.a, "CommentsIcon", k.a),
 				y = d.a.wrapped(_.a, "SnooFacepalm", k.a),
 				I = d.a.p("EmptyTitle", k.a),
 				w = d.a.p("ErrorTitle", k.a),
 				O = d.a.p("EmptyText", k.a),
-				j = e => {
+				L = e => {
 					let {
 						className: t,
 						isChat: n
 					} = e;
-					return r.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: Object(l.a)(k.a.StateContainer, t)
-					}, r.a.createElement(T, null), r.a.createElement(I, null, r.a.createElement(b.c, null, "no ", n ? "messages" : "comments", " yet")), r.a.createElement(O, null, r.a.createElement(b.c, null, "Be the first to share what you think!")))
+					}, a.a.createElement(T, null), a.a.createElement(I, null, a.a.createElement(b.c, null, "no ", n ? "messages" : "comments", " yet")), a.a.createElement(O, null, a.a.createElement(b.c, null, "Be the first to share what you think!")))
 				},
-				L = () => r.a.createElement("div", {
+				j = () => a.a.createElement("div", {
 					className: k.a.StateContainer
-				}, r.a.createElement(T, null), r.a.createElement(I, null, r.a.createElement(b.c, null, "no other discussions yet")), r.a.createElement(O, null, r.a.createElement(b.c, null, "Be the first to post the same link or crosspost in another community!"))),
-				S = e => {
+				}, a.a.createElement(T, null), a.a.createElement(I, null, a.a.createElement(b.c, null, "no other discussions yet")), a.a.createElement(O, null, a.a.createElement(b.c, null, "Be the first to post the same link or crosspost in another community!"))),
+				R = e => {
 					let {
 						link: t
 					} = e;
-					return r.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: k.a.StateContainer
-					}, r.a.createElement(T, null), r.a.createElement(I, null, r.a.createElement(b.c, null, "That comment is missing")), r.a.createElement(p.h, {
+					}, a.a.createElement(T, null), a.a.createElement(I, null, a.a.createElement(b.c, null, "That comment is missing")), a.a.createElement(p.h, {
 						to: Object(C.b)(t)
-					}, r.a.createElement(b.c, null, "View all comments")))
+					}, a.a.createElement(b.c, null, "View all comments")))
 				},
-				M = Object(i.b)(null, (e, t) => {
+				S = Object(i.b)(null, (e, t) => {
 					let {
 						postId: n,
 						commentId: o,
@@ -198,44 +198,44 @@
 						language: n,
 						onClick: o
 					} = e;
-					return r.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: k.a.StateContainer
-					}, r.a.createElement(y, null), r.a.createElement(w, null, t ? Object(h.a)({
+					}, a.a.createElement(y, null), a.a.createElement(w, null, t ? Object(h.a)({
 						apiError: t,
 						language: n,
 						isLoggedOut: !1
-					}) : Object(c.a)(n, "comment.error")), r.a.createElement(p.f, {
+					}) : Object(c.a)(n, "comment.error")), a.a.createElement(p.f, {
 						onClick: o
-					}, r.a.createElement(b.c, null, "retry")))
+					}, a.a.createElement(b.c, null, "retry")))
 				}),
-				N = () => r.a.createElement("div", null, "500"),
-				R = d.a.wrapped(e => {
+				M = () => a.a.createElement("div", null, "500"),
+				N = d.a.wrapped(e => {
 					let {
 						className: t
 					} = e;
-					return r.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: t
-					}, r.a.createElement(u.a, null))
+					}, a.a.createElement(u.a, null))
 				}, "LoadingFullPage", k.a),
 				A = d.a.div("CommentsPlaceholderContainer", k.a),
 				P = d.a.div("CommentPlaceholder", k.a),
 				B = d.a.div("VoteColumn", k.a),
 				D = d.a.div("TextColumn", k.a),
-				W = d.a.wrapped(x.a, "Upvote", k.a),
+				W = d.a.wrapped(f.a, "Upvote", k.a),
 				F = d.a.wrapped(v.a, "Downvote", k.a),
-				U = () => r.a.createElement("div", {
+				U = () => a.a.createElement("div", {
 					className: Object(l.a)(k.a.TopMetaPlaceholder, Object(g.a)({
 						isLoading: !0
 					}))
 				}),
-				H = () => r.a.createElement("div", {
+				H = () => a.a.createElement("div", {
 					className: Object(l.a)(k.a.CommentBodyPlaceholder, Object(g.a)({
 						isLoading: !0
 					}))
 				}),
-				q = () => r.a.createElement(A, null, s()(10, e => r.a.createElement(P, {
+				q = () => a.a.createElement(A, null, s()(10, e => a.a.createElement(P, {
 					key: e
-				}, r.a.createElement(B, null, r.a.createElement(W, null), r.a.createElement(F, null)), r.a.createElement(D, null, r.a.createElement(U, null), r.a.createElement(H, null)))))
+				}, a.a.createElement(B, null, a.a.createElement(W, null), a.a.createElement(F, null)), a.a.createElement(D, null, a.a.createElement(U, null), a.a.createElement(H, null)))))
 		},
 		"./src/reddit/components/CommentsChat/Comment/AwardComment/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -273,8 +273,8 @@
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
-				a = n("./node_modules/react-redux/es/index.js"),
-				r = n("./node_modules/reselect/es/index.js"),
+				r = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/lib/lessComponent.tsx"),
 				c = (n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./src/config.ts")),
 				l = n("./node_modules/lodash/memoize.js"),
@@ -290,8 +290,8 @@
 					} = e, {
 						processingAvatarImageUrl: n
 					} = c.a, o = (e => e.replace(m.wb.Account + "_", ""))(t), {
-						avatar: a,
-						color: r
+						avatar: r,
+						color: a
 					} = (e => {
 						const t = u.length,
 							n = parseInt(e, 36),
@@ -301,38 +301,38 @@
 							avatar: ("0" + o).slice(-2),
 							color: u[s]
 						}
-					})(o), i = "".concat(n, "/avatar_default_").concat(a, "_").concat(r, ".png");
+					})(o), i = "".concat(n, "/avatar_default_").concat(r, "_").concat(a, ".png");
 					return s.a.createElement(C, {
 						style: {
 							backgroundImage: "url(".concat(i, ")"),
-							backgroundColor: "#".concat(r)
+							backgroundColor: "#".concat(a)
 						}
 					})
 				}),
 				b = n("./src/reddit/icons/svgs/Redditor/index.tsx"),
 				v = n("./src/reddit/icons/svgs/Remove/index.tsx");
-			const x = i.a.img("Userpic", h.a),
-				f = Object(r.c)({
+			const f = i.a.img("Userpic", h.a),
+				x = Object(a.c)({
 					account: e => e.user.account
 				}),
-				_ = Object(a.b)(f);
+				_ = Object(r.b)(x);
 			t.a = i.a.wrapped(_(e => {
 				let {
 					account: t,
 					className: n,
 					height: o,
-					isLivestreaming: a,
-					trash: r,
+					isLivestreaming: r,
+					trash: a,
 					userId: i,
 					width: c
 				} = e;
-				const l = a ? 36 : 20,
+				const l = r ? 36 : 20,
 					d = {
 						height: o || l,
 						width: c || l,
 						minWidth: c || l
 					};
-				return r ? s.a.createElement("div", {
+				return a ? s.a.createElement("div", {
 					className: n,
 					style: d
 				}, s.a.createElement(v.a, {
@@ -340,7 +340,7 @@
 				})) : i ? s.a.createElement("div", {
 					className: n,
 					style: d
-				}, t && t.accountIcon && t.id === i ? s.a.createElement(x, {
+				}, t && t.accountIcon && t.id === i ? s.a.createElement(f, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : s.a.createElement(g, {
@@ -348,7 +348,7 @@
 				})) : s.a.createElement("div", {
 					className: n,
 					style: d
-				}, t && t.accountIcon ? s.a.createElement(x, {
+				}, t && t.accountIcon ? s.a.createElement(f, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : s.a.createElement(b.a, {
@@ -469,8 +469,8 @@
 			n.r(t);
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
-				a = n("./node_modules/react-dom/index.js"),
-				r = n("./node_modules/react-redux/es/index.js"),
+				r = n("./node_modules/react-dom/index.js"),
+				a = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/lib/constants/index.ts"),
 				l = n("./src/lib/setInterval/index.ts"),
@@ -483,8 +483,8 @@
 				g = n("./node_modules/lodash/isArray.js"),
 				b = n.n(g),
 				v = n("./src/reddit/helpers/isComment.ts"),
-				x = n("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
-				f = n("./src/reddit/models/Comment/index.ts"),
+				f = n("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
+				x = n("./src/reddit/models/Comment/index.ts"),
 				_ = n("./src/reddit/models/Flair/index.ts"),
 				E = n("./src/reddit/models/PostCreationForm/index.ts"),
 				k = n("./src/reddit/models/Vote/index.ts");
@@ -493,7 +493,7 @@
 						const t = I(e.attribs);
 						return {
 							allAwardings: [],
-							associatedAward: e.associated_award ? Object(x.b)(e.associated_award) : void 0,
+							associatedAward: e.associated_award ? Object(f.b)(e.associated_award) : void 0,
 							author: e.author,
 							authorId: e.author_fullname,
 							body: e.body_html,
@@ -503,10 +503,10 @@
 							created: e.created_utc,
 							distinguishType: y(t),
 							id: e.name,
-							isAdmin: t === f.c.Admin,
+							isAdmin: t === x.c.Admin,
 							isGildable: !1 !== e.can_gild,
-							isOp: t === f.c.Submitter,
-							isMod: t === f.c.Moderator,
+							isOp: t === x.c.Submitter,
+							isMod: t === x.c.Moderator,
 							markdown: e.body,
 							media: {
 								type: "rtjson",
@@ -557,25 +557,25 @@
 				},
 				y = e => {
 					switch (e) {
-						case f.c.Admin:
+						case x.c.Admin:
 							return c.C.ADMIN;
-						case f.c.Moderator:
+						case x.c.Moderator:
 							return c.C.MODERATOR;
-						case f.c.Alumni:
+						case x.c.Alumni:
 							return c.C.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
 				},
-				I = e => C()((e || []).filter(e => b()(e) && e.length >= 2).sort(e => e[0]).map(e => e[1])) || f.c.None;
+				I = e => C()((e || []).filter(e => b()(e) && e.length >= 2).sort(e => e[0]).map(e => e[1])) || x.c.None;
 			const w = (e, t, n) => {
 				const o = {
 						[t]: {}
 					},
 					{
 						author: s,
-						author_flair_background_color: a,
-						author_flair_richtext: r,
+						author_flair_background_color: r,
+						author_flair_richtext: a,
 						author_flair_template_id: i,
 						author_flair_text: c,
 						author_flair_text_color: l,
@@ -583,14 +583,14 @@
 					} = n;
 				if (s && d) {
 					if (d === _.f.Richtext) {
-						if (!a || !r) return;
+						if (!r || !a) return;
 						return {
 							[t]: {
 								[s]: {
 									type: d,
-									backgroundColor: a,
+									backgroundColor: r,
 									cssClass: void 0,
-									richtext: r,
+									richtext: a,
 									templateId: i,
 									textColor: l
 								}
@@ -603,7 +603,7 @@
 							[t]: {
 								[s]: {
 									type: d,
-									backgroundColor: a,
+									backgroundColor: r,
 									cssClass: void 0,
 									text: c,
 									templateId: i,
@@ -616,65 +616,65 @@
 			};
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var O = n("./src/lib/env/index.ts");
-			const j = new Map,
-				L = e => e;
-			var S;
+			const L = new Map,
+				j = e => e;
+			var R;
 			! function(e) {
 				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment"
-			}(S || (S = {}));
-			const M = {
+			}(R || (R = {}));
+			const S = {
 					backoffTime: 2e3,
 					connectionAttempts: 0,
 					jitterAmount: 3e3,
 					maximumRetries: 9
 				},
-				N = (e, t) => {
-					const n = L(t),
-						o = j.get(n);
+				M = (e, t) => {
+					const n = j(t),
+						o = L.get(n);
 					o && o.socket && (o.isClosePlanned = !0, o.socket.close())
 				},
-				R = (e, t, n, o) => {
-					const s = L(t),
-						a = j.get(s);
-					if (a && (a.socket.readyState === WebSocket.CONNECTING || a.socket.readyState === WebSocket.OPEN)) return;
-					const r = {
+				N = (e, t, n, o) => {
+					const s = j(t),
+						r = L.get(s);
+					if (r && (r.socket.readyState === WebSocket.CONNECTING || r.socket.readyState === WebSocket.OPEN)) return;
+					const a = {
 						socket: new WebSocket(e),
 						retries: n,
 						uniqueId: t,
 						url: e,
 						isClosePlanned: !1
 					};
-					j.set(s, r), r.socket.addEventListener("open", () => {
-						r.retries = Object.assign({}, M)
-					}), r.socket.addEventListener("message", B.bind(null, o)), r.socket.addEventListener("close", A.bind(null, s, o)), r.socket.addEventListener("error", D.bind(null, s)), window && window.addEventListener("beforeunload", N.bind(null, e, t))
+					L.set(s, a), a.socket.addEventListener("open", () => {
+						a.retries = Object.assign({}, S)
+					}), a.socket.addEventListener("message", B.bind(null, o)), a.socket.addEventListener("close", A.bind(null, s, o)), a.socket.addEventListener("error", D.bind(null, s)), window && window.addEventListener("beforeunload", M.bind(null, e, t))
 				},
 				A = (e, t, n) => {
-					const o = j.get(e);
-					o && (o.isClosePlanned ? j.delete(e) : P(e, t))
+					const o = L.get(e);
+					o && (o.isClosePlanned ? L.delete(e) : P(e, t))
 				},
 				P = (e, t) => {
-					const n = j.get(e);
+					const n = L.get(e);
 					if (!n) return;
 					const {
 						retries: {
 							backoffTime: o,
 							connectionAttempts: s,
-							jitterAmount: a,
-							maximumRetries: r
+							jitterAmount: r,
+							maximumRetries: a
 						},
 						socket: i,
 						uniqueId: c,
 						url: l
 					} = n;
-					if (j.delete(e), s < r && i.readyState !== WebSocket.OPEN) {
+					if (L.delete(e), s < a && i.readyState !== WebSocket.OPEN) {
 						const e = o * Math.pow(2, s),
-							r = Math.random() * a - a / 2,
-							i = Math.round(e + r),
+							a = Math.random() * r - r / 2,
+							i = Math.round(e + a),
 							d = Object.assign({}, n.retries, {
 								connectionAttempts: s + 1
 							});
 						setTimeout(() => {
-							R(l, c, d, t)
+							N(l, c, d, t)
 						}, i), O.a && console.debug("Connection reset, retrying in ".concat(i, "ms"))
 					}
 				},
@@ -686,8 +686,8 @@
 					}
 				},
 				D = (e, t) => {
-					const n = j.get(e);
-					n && n.isClosePlanned && n.socket && n.socket.readyState === WebSocket.CLOSED ? j.delete(e) : O.a && console.error(t)
+					const n = L.get(e);
+					n && n.isClosePlanned && n.socket && n.socket.readyState === WebSocket.CLOSED ? L.delete(e) : O.a && console.error(t)
 				};
 			var W = n("./src/reddit/selectors/comments.ts"),
 				F = n("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -695,90 +695,90 @@
 			const H = Object(p.a)(U.a),
 				q = Object(p.a)(U.b),
 				K = {},
-				V = (e, t, n, o) => async (s, a) => {
+				V = (e, t, n, o) => async (s, r) => {
 					(e => {
 						const {
 							cb: t,
 							url: n,
 							uniqueId: o
 						} = e;
-						R(n, o, Object.assign({}, M), t)
+						N(n, o, Object.assign({}, S), t)
 					})({
 						uniqueId: n,
 						url: t,
 						cb: t => {
 							switch (t.type) {
-								case S.NEW_COMMENT: {
+								case R.NEW_COMMENT: {
 									const n = t.payload.name,
-										r = T(t.payload),
-										i = a(),
+										a = T(t.payload),
+										i = r(),
 										c = Object(W.n)(i, {
 											commentId: n
 										}),
 										l = !(!n || !K[n]);
-									if (r && !l) {
+									if (a && !l) {
 										const n = w(0, o, t.payload),
-											a = t.payload.total_comment_count;
+											r = t.payload.total_comment_count;
 										if (void 0 === c) {
 											const t = Object(W.x)(i, {
 												commentsPageKey: e
 											});
 											s(H({
 												authorFlair: n,
-												comment: r,
+												comment: a,
 												commentsPageKey: e,
 												headCommentId: t,
-												numComments: a
+												numComments: r
 											}))
 										} else s(q({
 											authorFlair: n,
-											comment: r,
+											comment: a,
 											commentsPageKey: e,
-											numComments: a
+											numComments: r
 										}))
 									}
 									break
 								}
-								case S.UPDATE_COMMENT: {
+								case R.UPDATE_COMMENT: {
 									const n = t.payload.name,
-										r = a(),
-										i = Object(W.n)(r, {
+										a = r(),
+										i = Object(W.n)(a, {
 											commentId: n
 										}),
 										c = T(t.payload);
 									if (i && c) {
 										const n = w(0, o, t.payload),
-											a = t.payload.total_comment_count;
+											r = t.payload.total_comment_count;
 										s(q({
 											authorFlair: n,
 											comment: c,
 											commentsPageKey: e,
-											numComments: a
+											numComments: r
 										}))
 									}
 									break
 								}
-								case S.DELETE_COMMENT: {
+								case R.DELETE_COMMENT: {
 									const e = t.payload.name,
-										n = a(),
+										n = r(),
 										o = Object(W.n)(n, {
 											commentId: e
 										});
-									o && !o.isDeleted ? s(Object(u.db)(o.id, o.postId)) : K[e] = S.DELETE_COMMENT;
+									o && !o.isDeleted ? s(Object(u.db)(o.id, o.postId)) : K[e] = R.DELETE_COMMENT;
 									break
 								}
-								case S.REMOVE_COMMENT: {
+								case R.REMOVE_COMMENT: {
 									const e = t.payload.link_id,
 										n = t.payload.name,
-										o = a(),
-										r = Object(W.n)(o, {
+										o = r(),
+										a = Object(W.n)(o, {
 											commentId: n
 										}),
-										i = (o.user.account && o.user.account.id) === (r && r.authorId),
+										i = (o.user.account && o.user.account.id) === (a && a.authorId),
 										c = !!e && !!Object(F.i)(o, {
 											postId: e
 										});
-									!r || r.isRemoved && r.isDeleted || i || c ? K[n] = S.REMOVE_COMMENT : s(Object(u.db)(r.id, r.postId));
+									!a || a.isRemoved && a.isDeleted || i || c ? K[n] = R.REMOVE_COMMENT : s(Object(u.db)(a.id, a.postId));
 									break
 								}
 							}
@@ -799,7 +799,7 @@
 				oe = n("./src/reddit/helpers/getRichTextContent/index.ts"),
 				se = n("./src/reddit/components/RichTextJson/index.tsx");
 
-			function ae(e) {
+			function re(e) {
 				return s.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -811,7 +811,7 @@
 				}))
 			}
 
-			function re(e) {
+			function ae(e) {
 				return s.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -849,22 +849,22 @@
 						comment: n
 					} = e;
 					let o = t.icon64 ? t.icon64.url : t.icon128 ? t.icon128.url : t.icon.url,
-						a = "",
-						r = !0,
+						r = "",
+						a = !0,
 						i = !1;
-					return t.coinPrice < ne.a ? (a = le.a.silverTierAwardComment, r = !1, t.icon32 && (o = t.icon32.url)) : t.coinPrice < ne.b ? a = le.a.goldTierAwardComment : (a = le.a.platinumTierAwardComment, i = !0), s.a.createElement("div", {
-						className: Object(Q.a)(le.a.awardComment, a)
+					return t.coinPrice < ne.a ? (r = le.a.silverTierAwardComment, a = !1, t.icon32 && (o = t.icon32.url)) : t.coinPrice < ne.b ? r = le.a.goldTierAwardComment : (r = le.a.platinumTierAwardComment, i = !0), s.a.createElement("div", {
+						className: Object(Q.a)(le.a.awardComment, r)
 					}, s.a.createElement("div", {
 						className: le.a.imageContainer
-					}, r && s.a.createElement(s.a.Fragment, null, s.a.createElement(re, {
+					}, a && s.a.createElement(s.a.Fragment, null, s.a.createElement(ae, {
 						className: Object(Q.a)(le.a.backgroundAnimation, le.a.backgroundStar)
 					}), s.a.createElement(ie, {
 						className: Object(Q.a)(le.a.backgroundAnimation, le.a.backgroundStar, le.a.backgroundStar2)
-					})), i && s.a.createElement(s.a.Fragment, null, s.a.createElement(ae, {
+					})), i && s.a.createElement(s.a.Fragment, null, s.a.createElement(re, {
 						className: Object(Q.a)(le.a.backgroundAnimation, le.a.backgroundSparkle, le.a.sparkleBottomLeft)
-					}), s.a.createElement(ae, {
+					}), s.a.createElement(re, {
 						className: Object(Q.a)(le.a.backgroundAnimation, le.a.backgroundSparkle, le.a.sparkleTopRight)
-					}), s.a.createElement(ae, {
+					}), s.a.createElement(re, {
 						className: Object(Q.a)(le.a.backgroundAnimation, le.a.backgroundSparkle, le.a.sparkleBottomRight)
 					})), s.a.createElement("img", {
 						src: o
@@ -898,8 +898,8 @@
 				},
 				be = n("./src/lib/humanizeDateTime/index.ts"),
 				ve = n("./src/reddit/actions/postCreation/general.ts"),
-				xe = n("./src/reddit/actions/reportFlow.ts"),
-				fe = n("./src/reddit/actions/tooltip.ts"),
+				fe = n("./src/reddit/actions/reportFlow.ts"),
+				xe = n("./src/reddit/actions/tooltip.ts"),
 				_e = n("./src/reddit/actions/userBlocks.ts"),
 				Ee = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				ke = n("./src/reddit/constants/tracking.ts"),
@@ -918,11 +918,11 @@
 					subreddit: Object(Te.subreddit)(n)
 				});
 			var Oe = n("./src/reddit/i18n/utils.ts"),
-				je = n("./src/reddit/components/CommentsChat/Comment/Menu/index.m.less"),
-				Le = n.n(je);
+				Le = n("./src/reddit/components/CommentsChat/Comment/Menu/index.m.less"),
+				je = n.n(Le);
 
-			function Se() {
-				return (Se = Object.assign || function(e) {
+			function Re() {
+				return (Re = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -930,24 +930,24 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Me = X.a.button("MenuItem", Le.a),
-				Ne = X.a.a("MenuItemPermalink", Le.a),
-				Re = e => {
+			const Se = X.a.button("MenuItem", je.a),
+				Me = X.a.a("MenuItemPermalink", je.a),
+				Ne = e => {
 					let {
 						children: t,
 						comment: n,
 						onClick: o,
-						onHideTooltip: a,
-						onShowTooltip: r,
+						onHideTooltip: r,
+						onShowTooltip: a,
 						sendEvent: i,
 						tooltipId: c,
 						tooltipText: l,
 						trackingNoun: d
 					} = e;
-					return s.a.createElement(Me, {
+					return s.a.createElement(Se, {
 						id: c,
-						onMouseEnter: r.bind(void 0, c),
-						onMouseLeave: a.bind(void 0, c),
+						onMouseEnter: a.bind(void 0, c),
+						onMouseLeave: r.bind(void 0, c),
 						onClick: e => {
 							o(e), d && (i(((e, t) => n => Object.assign({
 								source: "comment",
@@ -968,11 +968,11 @@
 						text: l
 					}))
 				},
-				Ae = e => s.a.createElement(Re, Se({
+				Ae = e => s.a.createElement(Ne, Re({
 					onClick: e.onHideTooltip,
 					tooltipId: e.tooltipId,
 					tooltipText: Object(Oe.c)("Moderate")
-				}, e), s.a.createElement(Ne, {
+				}, e), s.a.createElement(Me, {
 					href: e.comment.permalink,
 					rel: "nofollow",
 					target: "_blank"
@@ -1019,12 +1019,12 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ot = X.a.wrapped(Ue.a, "BlockIcon", Le.a),
-				st = X.a.wrapped(Ve.a, "FlagIcon", Le.a),
-				at = X.a.wrapped(Ke, "EditIcon", Le.a),
-				rt = X.a.wrapped(Fe.a, "ApproveIcon", Le.a),
-				it = X.a.wrapped(Ze, "ReplyIcon", Le.a),
-				ct = X.a.wrapped(ze.a, "RemoveIcon", Le.a),
+			const ot = X.a.wrapped(Ue.a, "BlockIcon", je.a),
+				st = X.a.wrapped(Ve.a, "FlagIcon", je.a),
+				rt = X.a.wrapped(Ke, "EditIcon", je.a),
+				at = X.a.wrapped(Fe.a, "ApproveIcon", je.a),
+				it = X.a.wrapped(Ze, "ReplyIcon", je.a),
+				ct = X.a.wrapped(ze.a, "RemoveIcon", je.a),
 				lt = X.a.wrapped(e => s.a.createElement("svg", {
 					className: e.className,
 					id: e.id,
@@ -1035,8 +1035,8 @@
 				}, s.a.createElement("g", null, s.a.createElement("path", {
 					fillRule: "evenodd",
 					d: "M12.3535,14.6465 C12.5485,14.8415 12.5485,15.1585 12.3535,15.3535 C12.2555,15.4515 12.1275,15.5005 11.9995,15.5005 C11.8725,15.5005 11.7445,15.4515 11.6465,15.3535 L9.9995,13.7075 L8.3535,15.3535 C8.2555,15.4515 8.1275,15.5005 7.9995,15.5005 C7.8725,15.5005 7.7445,15.4515 7.6465,15.3535 C7.4515,15.1585 7.4515,14.8415 7.6465,14.6465 L9.2925,13.0005 L7.6465,11.3535 C7.4515,11.1585 7.4515,10.8415 7.6465,10.6465 C7.8415,10.4515 8.1585,10.4515 8.3535,10.6465 L9.9995,12.2925 L11.6465,10.6465 C11.8415,10.4515 12.1585,10.4515 12.3535,10.6465 C12.5485,10.8415 12.5485,11.1585 12.3535,11.3535 L10.7075,13.0005 L12.3535,14.6465 Z M15.9995,8.0005 C17.1045,8.0005 17.9995,8.8955 17.9995,10.0005 L17.9995,16.0005 C17.9995,17.1045 17.1045,18.0005 15.9995,18.0005 L3.9995,18.0005 C2.8955,18.0005 1.9995,17.1045 1.9995,16.0005 L1.9995,10.0005 C1.9995,8.8955 2.8955,8.0005 3.9995,8.0005 L15.9995,8.0005 Z M4,7 C3.229,7 2.532,7.301 2,7.78 L2,7 C2,6.586 2.126,6.201 2.342,5.882 C2.485,5.669 2.669,5.485 2.882,5.342 C3.201,5.126 3.586,5 4,5 L16,5 C16.414,5 16.799,5.126 17.118,5.342 C17.225,5.414 17.324,5.495 17.414,5.586 C17.505,5.676 17.587,5.775 17.658,5.882 C17.874,6.201 18,6.586 18,7 L18,7.78 C17.468,7.301 16.771,7 16,7 L4,7 Z M4,4 C3.229,4 2.532,4.301 2,4.78 L2,4 C2,2.896 2.896,2 4,2 L16,2 C17.104,2 18,2.896 18,4 L18,4.78 C17.468,4.301 16.771,4 16,4 L4,4 Z"
-				}))), "SpamIcon", Le.a),
-				dt = X.a.wrapped(Je.a, "UnblockIcon", Le.a),
+				}))), "SpamIcon", je.a),
+				dt = X.a.wrapped(Je.a, "UnblockIcon", je.a),
 				mt = e => (t, n) => {
 					let {
 						comment: o
@@ -1083,7 +1083,7 @@
 						return Object(Xe.a)(e) === ut(n.id)
 					}
 				});
-			var ht = Object(r.b)(pt, (e, t) => {
+			var ht = Object(a.b)(pt, (e, t) => {
 					let {
 						comment: n,
 						commentsPageKey: o,
@@ -1095,9 +1095,9 @@
 							commentsPageKey: o,
 							singleOpen: !0
 						})),
-						onReportClick: () => e(Object(xe.j)(n.id, void 0, s)),
-						onHideTooltip: () => e(Object(fe.i)()),
-						onShowTooltip: t => e(Object(fe.f)({
+						onReportClick: () => e(Object(fe.j)(n.id, void 0, s)),
+						onHideTooltip: () => e(Object(xe.i)()),
+						onShowTooltip: t => e(Object(xe.f)({
 							tooltipId: t
 						})),
 						onEditClick: () => {
@@ -1124,8 +1124,8 @@
 						comment: t,
 						className: n,
 						createTooltipId: o,
-						currentUser: a,
-						deleteComment: r,
+						currentUser: r,
+						deleteComment: a,
 						deleteTooltipId: i,
 						editTooltipId: l,
 						isAuthorBlocked: m,
@@ -1136,8 +1136,8 @@
 						language: g,
 						onApproveClick: b,
 						onBlockClick: v,
-						onDeleteClick: x,
-						onEditClick: f,
+						onDeleteClick: f,
+						onEditClick: x,
 						onHideTooltip: _,
 						onRemoveClick: E,
 						onReplyClick: k,
@@ -1146,53 +1146,53 @@
 						onSpamClick: I,
 						onUnblockClick: w,
 						reportFlowIsOpen: O,
-						replyTooltipId: j,
-						reportTooltipId: L,
-						approveTooltipId: S,
-						blockTooltipId: M,
-						removeTooltipId: N,
-						sendEvent: R,
+						replyTooltipId: L,
+						reportTooltipId: j,
+						approveTooltipId: R,
+						blockTooltipId: S,
+						removeTooltipId: M,
+						sendEvent: N,
 						spamTooltipId: A,
 						toggleDeleteCommentModal: P,
 						timestampUpdateTrigger: B
-					} = e, D = !!a && a.id === t.authorId, W = Object(Be.b)(t), F = t.isApproved && W, U = !t.bannedBy || t.bannedBy === c.k, H = {
+					} = e, D = !!r && r.id === t.authorId, W = Object(Be.b)(t), F = t.isApproved && W, U = !t.bannedBy || t.bannedBy === c.k, H = {
 						comment: t,
 						onHideTooltip: _,
 						onShowTooltip: y,
-						sendEvent: R
+						sendEvent: N
 					};
 					return s.a.createElement("div", {
 						className: n
 					}, s.a.createElement("div", {
-						className: Object(Q.a)(Le.a.Menu, {
-							[Le.a.Livestreaming]: p
+						className: Object(Q.a)(je.a.Menu, {
+							[je.a.Livestreaming]: p
 						})
-					}, (t.bannedBy || W) && h && !p && s.a.createElement(Re, nt({
+					}, (t.bannedBy || W) && h && !p && s.a.createElement(Ne, nt({
 						onClick: b,
-						tooltipId: S,
+						tooltipId: R,
 						tooltipText: F ? Y.fbt._("Reapprove", null, {
 							hk: "vlRqn"
 						}) : Y.fbt._("Approve", null, {
 							hk: "3Vc0Oh"
 						}),
 						trackingNoun: "approve"
-					}, e), s.a.createElement(rt, null)), C && !t.isLocked && !p && s.a.createElement(Re, nt({
+					}, e), s.a.createElement(at, null)), C && !t.isLocked && !p && s.a.createElement(Ne, nt({
 						onClick: k,
-						tooltipId: j,
+						tooltipId: L,
 						tooltipText: Y.fbt._("Reply", null, {
 							hk: "14j3OR"
 						}),
 						trackingNoun: "reply"
-					}, e), s.a.createElement(it, null)), h && U && !p && s.a.createElement(Re, nt({
+					}, e), s.a.createElement(it, null)), h && U && !p && s.a.createElement(Ne, nt({
 						onClick: I,
 						tooltipId: A,
 						tooltipText: Y.fbt._("Spam", null, {
 							hk: "15R6K5"
 						}),
 						trackingNoun: "spam"
-					}, e), s.a.createElement(lt, null)), !D && s.a.createElement(Re, nt({
+					}, e), s.a.createElement(lt, null)), !D && s.a.createElement(Ne, nt({
 						onClick: T,
-						tooltipId: L,
+						tooltipId: j,
 						tooltipText: Y.fbt._("Report", null, {
 							hk: "OHiOO"
 						}),
@@ -1203,24 +1203,24 @@
 						overlayCustomStyles: De.b,
 						postId: t.postId,
 						withOverlay: !0
-					}), D && !p && s.a.createElement(Re, nt({
-						onClick: f,
+					}), D && !p && s.a.createElement(Ne, nt({
+						onClick: x,
 						tooltipId: l,
 						tooltipText: Y.fbt._("Edit", null, {
 							hk: "30rf1x"
 						}),
 						trackingNoun: "edit"
-					}, H), s.a.createElement(at, null)), p ? null : h && U ? s.a.createElement(Re, nt({
+					}, H), s.a.createElement(rt, null)), p ? null : h && U ? s.a.createElement(Ne, nt({
 						onClick: E,
-						tooltipId: N,
+						tooltipId: M,
 						tooltipText: t.bannedBy === c.k ? Y.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : Y.fbt._("Remove", null, {
 							hk: "1f2QZ6"
 						}),
 						trackingNoun: t.bannedBy === c.k ? "confirm_remove" : "remove"
-					}, H), s.a.createElement(ct, null)) : D && s.a.createElement(Re, nt({
-						onClick: x,
+					}, H), s.a.createElement(ct, null)) : D && s.a.createElement(Ne, nt({
+						onClick: f,
 						tooltipId: i,
 						tooltipText: Y.fbt._("Delete", null, {
 							hk: "48iIX1"
@@ -1239,12 +1239,12 @@
 						modalText: Y.fbt._("Are you sure you want to delete your comment?", null, {
 							hk: "227ya0"
 						}),
-						onConfirm: r,
+						onConfirm: a,
 						toggleModal: P,
 						withOverlay: !0
-					}), !p && s.a.createElement(Re, nt({
+					}), !p && s.a.createElement(Ne, nt({
 						onClick: () => m ? w() : v(),
-						tooltipId: M,
+						tooltipId: S,
 						tooltipText: m ? Y.fbt._("Unblock User", null, {
 							hk: "26F2c9"
 						}) : Y.fbt._("Block User", null, {
@@ -1257,50 +1257,53 @@
 						timestampUpdateTrigger: B
 					}), Object(d.d)(g, t.created)))
 				})),
-				Ct = n("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
-				gt = n("./src/reddit/components/CommentsChat/Comment/Reply/index.m.less"),
-				bt = n.n(gt);
-			const vt = {},
-				xt = X.a.wrapped(ue.a, "ChatIcon", bt.a),
-				ft = X.a.span("ReplyAuthor", bt.a),
-				_t = X.a.div("ReplyWrapper", bt.a);
-			var Et = Object(r.b)(() => Object(i.c)({
+				Ct = n("./src/chat/helpers/dom.ts"),
+				gt = n("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
+				bt = n("./src/reddit/components/CommentsChat/Comment/Reply/index.m.less"),
+				vt = n.n(bt);
+			const ft = {},
+				xt = X.a.wrapped(ue.a, "ChatIcon", vt.a),
+				_t = X.a.span("ReplyAuthor", vt.a),
+				Et = X.a.div("ReplyWrapper", vt.a);
+			var kt = Object(a.b)(() => Object(i.c)({
 					comment: W.n
 				}))(e => {
 					let {
 						comment: t,
-						commentId: n
+						commentId: n,
+						onReplyClick: o
 					} = e;
-					return t ? t.isDeleted ? s.a.createElement(_t, null, s.a.createElement("span", {
-						className: Object(Q.a)([bt.a.ReplyLinkBubble, bt.a.delete])
-					}, s.a.createElement(Ft, null))) : s.a.createElement(_t, null, s.a.createElement("a", {
-						className: bt.a.ReplyLinkBubble,
+					return t ? t.isDeleted ? s.a.createElement(Et, null, s.a.createElement("span", {
+						className: Object(Q.a)([vt.a.ReplyLinkBubble, vt.a.delete])
+					}, s.a.createElement(Ut, null))) : s.a.createElement(Et, null, s.a.createElement("a", {
+						className: vt.a.ReplyLinkBubble,
 						href: t.permalink,
 						rel: "noopener noreferrer",
-						target: "_blank"
+						target: "_blank",
+						onClick: Object(Ct.a)(() => o(t.id))
 					}, s.a.createElement(xt, {
 						userId: t.authorId
-					}), s.a.createElement(ft, null, t.author), s.a.createElement(Ct.a, {
-						className: bt.a.ReplyComment,
+					}), s.a.createElement(_t, null, t.author), s.a.createElement(gt.a, {
+						className: vt.a.ReplyComment,
 						key: "rich-text-".concat(n),
 						content: Object(oe.a)(t),
-						rtJsonElementProps: vt
+						rtJsonElementProps: ft
 					}))) : null
 				}),
-				kt = n("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx"),
-				Tt = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				yt = n("./src/reddit/controls/ErrorText/index.tsx"),
-				It = n("./src/reddit/selectors/communityAwards.ts"),
-				wt = n("./src/reddit/components/CommentsChat/Comment/index.m.less"),
-				Ot = n.n(wt);
+				Tt = n("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx"),
+				yt = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				It = n("./src/reddit/controls/ErrorText/index.tsx"),
+				wt = n("./src/reddit/selectors/communityAwards.ts"),
+				Ot = n("./src/reddit/components/CommentsChat/Comment/index.m.less"),
+				Lt = n.n(Ot);
 			const jt = 250,
-				Lt = 10,
-				St = X.a.wrapped(yt.b, "ErrorText", Ot.a),
-				Mt = X.a.wrapped(te.a, "TopMeta", Ot.a),
-				Nt = X.a.span("DeleteText", Ot.a),
-				Rt = X.a.wrapped(Et, "Reply", Ot.a),
-				At = Object(Tt.t)(),
-				Pt = Object(r.b)(() => Object(i.c)({
+				Rt = 10,
+				St = X.a.wrapped(It.b, "ErrorText", Lt.a),
+				Mt = X.a.wrapped(te.a, "TopMeta", Lt.a),
+				Nt = X.a.span("DeleteText", Lt.a),
+				At = X.a.wrapped(kt, "Reply", Lt.a),
+				Pt = Object(yt.t)(),
+				Bt = Object(a.b)(() => Object(i.c)({
 					associatedAward: (e, t) => {
 						let {
 							commentId: n
@@ -1312,7 +1315,7 @@
 						const {
 							associatedAwardId: s
 						} = o;
-						return s ? Object(It.a)(e, s) : void 0
+						return s ? Object(wt.a)(e, s) : void 0
 					},
 					comment: W.n,
 					errorMsgs: W.E,
@@ -1325,12 +1328,12 @@
 					},
 					isEditing: W.z,
 					language: tt.O,
-					subreddit: Tt.q
+					subreddit: yt.q
 				})),
-				Bt = Object(ee.b)(e => ({
+				Dt = Object(ee.b)(e => ({
 					renderingObjectInfo: e.comment || void 0
 				}));
-			class Dt extends s.a.Component {
+			class Wt extends s.a.Component {
 				constructor(e) {
 					super(e), this.elemRef = s.a.createRef(), this.toggleBody = () => {
 						const e = !this.state.isExpanded;
@@ -1367,7 +1370,7 @@
 						const e = this.elemRef.current;
 						let n = jt;
 						if (t) {
-							n = e.scrollHeight + Lt;
+							n = e.scrollHeight + Rt;
 							const t = () => {
 								e.style.maxHeight = null, e.removeEventListener("transitionend", t)
 							};
@@ -1382,8 +1385,8 @@
 						childrenInfo: t,
 						comment: n,
 						commentsPageKey: o,
-						errorMsgs: a,
-						flair: r,
+						errorMsgs: r,
+						flair: a,
 						isActive: i,
 						isEditing: c,
 						isLivestreaming: l,
@@ -1392,32 +1395,34 @@
 						renderedInOverlay: p,
 						sendEvent: h,
 						targetComment: C,
-						timestampUpdateTrigger: g
+						timestampUpdateTrigger: g,
+						addToRefList: b,
+						onReplyClick: v
 					} = this.props, {
-						isCollapsed: b,
-						isExpanded: v,
-						isTruncated: x
+						isCollapsed: f,
+						isExpanded: x,
+						isTruncated: _
 					} = this.state;
 					if (!n) return null;
-					i && J()(() => this.elemRef.current && this.elemRef.current.focus());
-					const f = !c && !n.isDeleted,
-						_ = !!e,
-						E = Object(Q.a)({
-							[Ot.a.CommentWrapper]: !l,
-							[Ot.a.CommentExpanded]: v,
-							[Ot.a.CommentTruncated]: x,
-							[Ot.a.HighlightTarget]: C,
-							[Ot.a.LivestreamingCommentWrapper]: l
+					i && J()(() => this.elemRef.current && this.elemRef.current.focus()), J()(() => this.elemRef && this.elemRef.current && b && b(this.elemRef));
+					const E = !c && !n.isDeleted,
+						k = !!e,
+						T = Object(Q.a)({
+							[Lt.a.CommentWrapper]: !l,
+							[Lt.a.CommentExpanded]: x,
+							[Lt.a.CommentTruncated]: _,
+							[Lt.a.HighlightTarget]: C,
+							[Lt.a.LivestreamingCommentWrapper]: l
 						});
-					return b ? s.a.createElement(ge, {
+					return f ? s.a.createElement(ge, {
 						commentCount: 1,
 						onClick: this.expandCollapsedComment
 					}) : s.a.createElement("div", {
 						id: C ? "targetComment" : void 0,
 						ref: this.elemRef,
 						tabIndex: 0,
-						className: E
-					}, c && s.a.createElement(kt.a, {
+						className: T
+					}, c && s.a.createElement(Tt.a, {
 						key: "chatCommentsForm",
 						isLivestreaming: l,
 						language: m,
@@ -1427,53 +1432,54 @@
 						commentsPageKey: o,
 						isEditing: c,
 						comment: n
-					}), f && s.a.createElement(s.a.Fragment, null, s.a.createElement(Mt, {
+					}), E && s.a.createElement(s.a.Fragment, null, s.a.createElement(Mt, {
 						childrenInfo: t,
 						collapsedBecauseCrowdControl: !1,
 						collapsed: !1,
 						comment: n,
 						commentsPageKey: o,
 						compact: !0,
-						flair: r,
+						flair: a,
 						ignoreFlairPosition: !0,
 						ignoreLock: !0,
 						isLivestreaming: l,
 						language: m,
 						renderedInOverlay: p
 					}, s.a.createElement(ue.a, {
-						className: Object(Q.a)(Ot.a.ChatIcon, {
-							[Ot.a.Livestreaming]: l
+						className: Object(Q.a)(Lt.a.ChatIcon, {
+							[Lt.a.Livestreaming]: l
 						}),
 						isLivestreaming: l,
 						userId: n.authorId
-					})), n.parentId && s.a.createElement(Rt, {
-						commentId: n.parentId
+					})), n.parentId && s.a.createElement(At, {
+						commentId: n.parentId,
+						onReplyClick: v
 					}), l && s.a.createElement("span", {
-						className: Ot.a.livestreamingTimeStamp
-					}, Object(d.d)(m, n.created)), _ && e && l ? s.a.createElement(me, {
+						className: Lt.a.livestreamingTimeStamp
+					}, Object(d.d)(m, n.created)), k && e && l ? s.a.createElement(me, {
 						award: e,
 						comment: n
 					}) : [s.a.createElement(se.a, {
-						className: Object(Q.a)(Ot.a.RichTextJson, {
-							[Ot.a.Livestreaming]: l
+						className: Object(Q.a)(Lt.a.RichTextJson, {
+							[Lt.a.Livestreaming]: l
 						}),
 						content: Object(oe.a)(n),
 						key: "rich-text-".concat(n.id),
-						rtJsonElementProps: Bt(this.props),
+						rtJsonElementProps: Dt(this.props),
 						useExplicitTextColor: l
 					}), s.a.createElement(ht, {
 						key: "Menu",
-						className: Ot.a.Menu,
+						className: Lt.a.Menu,
 						comment: n,
 						commentsPageKey: o,
 						isLivestreaming: l,
 						language: m,
 						timestampUpdateTrigger: g
-					})]), n.isDeleted && s.a.createElement(Ft, null), f && a && a.map(e => s.a.createElement(St, {
+					})]), n.isDeleted && s.a.createElement(Ut, null), E && r && r.map(e => s.a.createElement(St, {
 						language: m
-					}, e)), !c && x && s.a.createElement("button", {
-						className: Object(Q.a)(Ot.a.CommentReadMoreButton, {
-							[Ot.a.Livestreaming]: l
+					}, e)), !c && _ && s.a.createElement("button", {
+						className: Object(Q.a)(Lt.a.CommentReadMoreButton, {
+							[Lt.a.Livestreaming]: l
 						}),
 						onClick: this.toggleBody
 					}, Y.fbt._("Read more", null, {
@@ -1481,29 +1487,29 @@
 					})))
 				}
 			}
-			const Wt = At(Pt(Dt)),
-				Ft = e => {
+			const Ft = Pt(Bt(Wt)),
+				Ut = e => {
 					let {
 						isLivestreaming: t
 					} = e;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement(ue.a, {
-						className: Object(Q.a)(Ot.a.ChatIcon, {
-							[Ot.a.Livestreaming]: t || !1
+						className: Object(Q.a)(Lt.a.ChatIcon, {
+							[Lt.a.Livestreaming]: t || !1
 						}),
 						trash: !0
 					}), s.a.createElement(Nt, null, Y.fbt._("deleted", null, {
 						hk: "4rQ3ZP"
 					})))
 				};
-			var Ut = Wt,
-				Ht = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/lodash/isEqual.js")),
-				qt = n.n(Ht),
-				Kt = n("./node_modules/lodash/last.js"),
-				Vt = n.n(Kt),
-				zt = n("./src/reddit/controls/Button/index.tsx"),
-				Gt = n("./src/reddit/components/CommentsChat/Scroller/index.m.less"),
-				Yt = n.n(Gt),
-				Zt = function(e, t) {
+			var Ht = Ft,
+				qt = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/lodash/isEqual.js")),
+				Kt = n.n(qt),
+				Vt = n("./node_modules/lodash/last.js"),
+				zt = n.n(Vt),
+				Gt = n("./src/reddit/controls/Button/index.tsx"),
+				Yt = n("./src/reddit/components/CommentsChat/Scroller/index.m.less"),
+				Zt = n.n(Yt),
+				Jt = function(e, t) {
 					var n = {};
 					for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (n[o] = e[o]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1512,36 +1518,36 @@
 					}
 					return n
 				};
-			const Jt = X.a.div("ButtonWrapper", Yt.a),
-				Qt = e => {
+			const Qt = X.a.div("ButtonWrapper", Zt.a),
+				Xt = e => {
 					let {
 						top: t
 					} = e;
 					return s.a.createElement("span", {
-						className: Object(Q.a)(Yt.a.ChunkPlaceholder, {
-							[Yt.a.top]: t
+						className: Object(Q.a)(Zt.a.ChunkPlaceholder, {
+							[Zt.a.top]: t
 						})
 					}, Object(Oe.c)("Loading..."))
 				},
-				Xt = e => {
+				$t = e => {
 					var {
 						className: t,
 						isLivestreaming: n,
 						isLoading: o,
-						setRef: a
-					} = e, r = Zt(e, ["className", "isLivestreaming", "isLoading", "setRef"]);
+						setRef: r
+					} = e, a = Jt(e, ["className", "isLivestreaming", "isLoading", "setRef"]);
 					return s.a.createElement("div", {
-						ref: a,
+						ref: r,
 						className: Object(Q.a)(t, {
-							[Yt.a.ScrollerWrapper]: !n,
-							[Yt.a.LivestreamingWrapper]: n,
-							[Yt.a.loading]: o
+							[Zt.a.ScrollerWrapper]: !n,
+							[Zt.a.LivestreamingWrapper]: n,
+							[Zt.a.loading]: o
 						})
-					}, !o && r.isPrevLoading && !n && s.a.createElement(Qt, {
+					}, !o && a.isPrevLoading && !n && s.a.createElement(Xt, {
 						top: !0
-					}), r.children, !o && r.isNextLoading && !n && s.a.createElement(Qt, null))
+					}), a.children, !o && a.isNextLoading && !n && s.a.createElement(Xt, null))
 				};
-			class $t extends s.a.Component {
+			class en extends s.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this._ref = s.a.createRef(), this._refBeforeActiveComments = s.a.createRef(), this._refNextActiveComments = s.a.createRef(), this.chunkSize = 50, this.loadedMore = !1, this.scrollTop = () => this.$ref ? Math.ceil(this.$ref.scrollTop) : 0, this.scrollHeight = () => this.$ref ? this.$ref.scrollHeight : 0, this.clientHeight = () => this.$ref ? this.$ref.clientHeight : 0, this.scrolledPosition = () => this.scrollHeight() - this.clientHeight() - this.scrollTop(), this.scrolledToTop = () => 0 === this.scrollTop(), this.scrolledToBottom = function() {
@@ -1665,7 +1671,7 @@
 					this.removeScrollListener()
 				}
 				getSnapshotBeforeUpdate(e) {
-					const t = e.children.length !== this.props.children.length || !qt()(C()(e.children), C()(this.props.children)) || !qt()(Vt()(e.children), Vt()(this.props.children));
+					const t = e.children.length !== this.props.children.length || !Kt()(C()(e.children), C()(this.props.children)) || !Kt()(zt()(e.children), zt()(this.props.children));
 					return t ? {
 						childrenAreNotEqual: t,
 						scrolledBottom: this.scrolledToBottom(30)
@@ -1691,8 +1697,8 @@
 					const {
 						className: e,
 						isLivestreaming: t
-					} = this.props, n = this.state.newCommentsCount > 0 ? Object(Q.a)([Yt.a.NewComments, Yt.a.show]) : Yt.a.NewComments;
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(Xt, {
+					} = this.props, n = this.state.newCommentsCount > 0 ? Object(Q.a)([Zt.a.NewComments, Zt.a.show]) : Zt.a.NewComments;
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement($t, {
 						className: e,
 						key: "chatScroller",
 						chunkSize: this.chunkSize,
@@ -1704,45 +1710,45 @@
 					}, s.a.createElement("div", {
 						key: "beforeActiveCommentsSection",
 						ref: this._refBeforeActiveComments,
-						className: Yt.a.ScrollerSection
+						className: Zt.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex - 1]), s.a.createElement("div", {
 						key: "activeCommentsSection",
-						className: Yt.a.ScrollerSection
+						className: Zt.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex]), s.a.createElement("div", {
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
-						className: Yt.a.ScrollerSection
-					}, this.state.chunks[this.state.activeChunkIndex + 1])), s.a.createElement(Jt, null, s.a.createElement(zt.f, {
+						className: Zt.a.ScrollerSection
+					}, this.state.chunks[this.state.activeChunkIndex + 1])), s.a.createElement(Qt, null, s.a.createElement(Gt.f, {
 						className: n,
 						onClick: () => this.scrollToLastBottomChunk()
 					}, this.state.newCommentsCount, " ", Object(Oe.c)("NEW ".concat(Object(Oe.a)("MESSAGES", ["MESSAGE", "MESSAGES"], this.state.newCommentsCount))), "↓")))
 				}
 			}
-			var en = $t,
-				tn = n("./src/reddit/selectors/posts.ts");
+			var tn = en,
+				nn = n("./src/reddit/selectors/posts.ts");
 			n.d(t, "COMMENT_TIMESTAMP_UPDATE_INTERVAL", (function() {
-				return nn
+				return on
 			}));
-			const nn = 6e4,
-				on = (e, t, n) => {
+			const on = 6e4,
+				sn = (e, t, n) => {
 					let {
 						authorId: o,
 						id: s
 					} = n;
 					return e.includes(o) && !t.includes(s)
 				},
-				sn = Object(i.c)({
+				rn = Object(i.c)({
 					blockedRedditors: $e.a,
 					blockedRedditorsPending: $e.b,
 					chatCommentLinks: W.g,
 					isPending: W.d,
-					liveCommentsWebsocket: tn.J,
+					liveCommentsWebsocket: nn.J,
 					moreCommentsLink: W.D
 				}),
-				an = Object(r.b)(sn, (e, t) => ({
+				an = Object(a.b)(rn, (e, t) => ({
 					onLiveCommentsSubscribe: (n, o, s) => e(V(n, o, s, t.subredditId)),
 					offLiveCommentsSubscribe: (t, n) => e(((e, t) => async () => {
-						N(0, t)
+						M(0, t)
 					})(0, n)),
 					loadMoreComments: n => e(Object(u.Z)(t.commentsPageKey, n)),
 					loadBlockedRedditors: () => e(Object(m.g)()),
@@ -1750,9 +1756,9 @@
 						sort: c.r.CHAT
 					}, c.r.CHAT))
 				}));
-			class rn extends s.a.Component {
+			class cn extends s.a.Component {
 				constructor(e) {
-					super(e), this._refScroller = s.a.createRef(), this._timestampUpdater = null, this.scrollToBottom = () => {
+					super(e), this._refList = {}, this._refScroller = s.a.createRef(), this._timestampUpdater = null, this.scrollToBottom = () => {
 						this._refScroller && this._refScroller.current && this._refScroller.current.scrollToLastBottomChunk()
 					}, e.loadBlockedRedditors(), this.loadMoreComments = this.loadMoreComments.bind(this), this.state = {
 						expandedCommentIds: [],
@@ -1771,7 +1777,7 @@
 						this.isTimestampUpdateNeeded() ? this.setState({
 							timestampUpdateTrigger: Date.now()
 						}) : this._timestampUpdater && this._timestampUpdater()
-					}, nn)
+					}, on)
 				}
 				expandComment(e) {
 					this.setState({
@@ -1785,9 +1791,9 @@
 						liveCommentsWebsocket: n,
 						loadComments: o,
 						onLiveCommentsSubscribe: s,
-						postId: a
+						postId: r
 					} = this.props;
-					n && (e && o(), s(t, n, a), this._subscribedPostId = a, this._subscribedLiveCommentsWebsocket = n)
+					n && (e && o(), s(t, n, r), this._subscribedPostId = r, this._subscribedLiveCommentsWebsocket = n)
 				}
 				componentWillUnmount() {
 					const {
@@ -1800,8 +1806,8 @@
 						blockedRedditors: n,
 						blockedRedditorsPending: o,
 						chatCommentLinks: s,
-						commentsPageKey: a,
-						isLoading: r,
+						commentsPageKey: r,
+						isLoading: a,
 						isPending: i,
 						postId: c,
 						draftKey: l
@@ -1809,7 +1815,7 @@
 						expandedCommentIds: d,
 						timestampUpdateTrigger: m
 					} = this.state;
-					return e.postId !== c || e.draftKey !== l || e.isLoading !== r || e.isPending !== i || e.blockedRedditorsPending !== o || e.commentsPageKey !== a || e.chatCommentLinks && e.chatCommentLinks.length !== s.length || e.blockedRedditors.ids && e.blockedRedditors.ids.length !== n.ids.length || t.expandedCommentIds.length !== d.length || t.timestampUpdateTrigger !== m
+					return e.postId !== c || e.draftKey !== l || e.isLoading !== a || e.isPending !== i || e.blockedRedditorsPending !== o || e.commentsPageKey !== r || e.chatCommentLinks && e.chatCommentLinks.length !== s.length || e.blockedRedditors.ids && e.blockedRedditors.ids.length !== n.ids.length || t.expandedCommentIds.length !== d.length || t.timestampUpdateTrigger !== m
 				}
 				componentDidUpdate(e) {
 					const {
@@ -1817,11 +1823,11 @@
 						commentId: n,
 						commentsPageKey: o,
 						liveCommentsWebsocket: s,
-						offLiveCommentsSubscribe: a,
-						onLiveCommentsSubscribe: r,
+						offLiveCommentsSubscribe: r,
+						onLiveCommentsSubscribe: a,
 						postId: i
 					} = this.props;
-					if (i !== e.postId && (this._subscribedPostId && this._subscribedLiveCommentsWebsocket && a(this._subscribedLiveCommentsWebsocket, this._subscribedPostId), i && s && (r(o, s, i), this._subscribedPostId = i, this._subscribedLiveCommentsWebsocket = s)), this.deferTimestampUpdate(), n) {
+					if (i !== e.postId && (this._subscribedPostId && this._subscribedLiveCommentsWebsocket && r(this._subscribedLiveCommentsWebsocket, this._subscribedPostId), i && s && (a(o, s, i), this._subscribedPostId = i, this._subscribedLiveCommentsWebsocket = s)), this.deferTimestampUpdate(), n) {
 						const e = Object(l.a)(() => {
 							const {
 								targetCommentIndex: o
@@ -1841,11 +1847,16 @@
 					} = this.props;
 					t && !t.pending && (e(t.moreCommentId), o(we("history", n)))
 				}
-				scrollToTargetComment() {
+				scrollToTargetComment(e) {
+					if (e && this._refList[e] && this._refList[e].current && this._refScroller && this._refScroller.current) {
+						const t = this._refList[e].current,
+							n = t ? t.offsetTop : 0;
+						return this._refScroller.current.scrollToTargetComment(n), void(t && t.focus())
+					}
 					const {
-						commentId: e
-					} = this.props, t = e && document.querySelector("#targetComment"), n = e && Object(a.findDOMNode)(this.refs[e]), o = t || n;
-					o && this._refScroller && this._refScroller.current && this._refScroller.current.scrollToTargetComment(o.offsetTop)
+						commentId: t
+					} = this.props, n = t && document.querySelector("#targetComment"), o = t && Object(r.findDOMNode)(this.refs[t]), s = n || o;
+					s && this._refScroller && this._refScroller.current && this._refScroller.current.scrollToTargetComment(s.offsetTop)
 				}
 				render() {
 					const {
@@ -1855,8 +1866,8 @@
 						chatCommentLinks: t,
 						className: n,
 						commentId: o,
-						commentsPageKey: a,
-						emptyStateClassName: r,
+						commentsPageKey: r,
+						emptyStateClassName: a,
 						isLivestreaming: i,
 						isLoading: c,
 						isPending: l,
@@ -1869,9 +1880,9 @@
 						timestampUpdateTrigger: C
 					} = this.state, g = !(t && t.length || c || l);
 					return s.a.createElement(s.a.Fragment, null, g ? s.a.createElement(G.c, {
-						className: r,
+						className: a,
 						isChat: !0
-					}) : s.a.createElement(en, {
+					}) : s.a.createElement(tn, {
 						className: n,
 						ref: this._refScroller,
 						key: "comments-chat-scroller",
@@ -1880,27 +1891,29 @@
 						loadMore: this.loadMoreComments,
 						hasMoreComments: !!this.props.moreCommentsLink,
 						targetCommentIndex: h
-					}, t.map(t => on(e, p, t) ? s.a.createElement(ge, {
+					}, t.map(t => sn(e, p, t) ? s.a.createElement(ge, {
 						commentCount: 1,
 						key: "scroll-node-".concat(t.id),
 						onClick: () => this.expandComment(t.id)
-					}) : s.a.createElement(Ut, {
+					}) : s.a.createElement(Ht, {
 						ref: t.id,
 						key: "scroll-node-".concat(t.id),
 						commentId: t.id,
-						commentsPageKey: a,
+						commentsPageKey: r,
 						isLivestreaming: i,
 						postId: d,
 						renderedInOverlay: !!m,
 						sendEvent: u,
 						timestampUpdateTrigger: C,
-						targetComment: t.id === o
+						targetComment: t.id === o,
+						addToRefList: e => this._refList[t.id] = e,
+						onReplyClick: e => this.scrollToTargetComment(e)
 					}))), this.props.children && this.props.children({
 						scrollToBottom: this.scrollToBottom
 					}))
 				}
 			}
-			t.default = an(Object(We.b)(rn))
+			t.default = an(Object(We.b)(cn))
 		},
 		"./src/reddit/components/ModModeReports/helpers.ts": function(e, t, n) {
 			"use strict";
@@ -1909,14 +1922,14 @@
 			})), n.d(t, "a", (function() {
 				return s
 			})), n.d(t, "b", (function() {
-				return a
+				return r
 			}));
 			const o = e => (e.numReports || 0) > 0 || !!e.modReportsDismissed && e.modReportsDismissed.length > 0 || !!e.userReportsDismissed && e.userReportsDismissed.length > 0,
 				s = e => {
 					if (e.numReports && e.numReports > 0) return e.numReports;
 					return (e.modReportsDismissed && e.modReportsDismissed.length || 0) + (e.userReportsDismissed && e.userReportsDismissed.length || 0)
 				},
-				a = e => (e.numReports || 0) > 0
+				r = e => (e.numReports || 0) > 0
 		},
 		"./src/reddit/components/RichTextJsonChatReply/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1928,8 +1941,8 @@
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
-				a = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/components/RichTextJson/index.tsx"),
+				r = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/components/RichTextJson/index.tsx"),
 				i = n("./src/reddit/components/RichTextJson/elements.tsx"),
 				c = n("./src/reddit/components/RichTextJson/renderers.tsx"),
 				l = n("./src/reddit/models/RichTextJson/index.ts");
@@ -1963,7 +1976,7 @@
 				const {
 					className: t,
 					content: n
-				} = e, o = n.document, i = [], c = Object(r.b)(o), h = Object(r.c)(o);
+				} = e, o = n.document, i = [], c = Object(a.b)(o), h = Object(a.c)(o);
 				if (-1 !== c)
 					for (let s = c; s <= h; s++) {
 						const e = o[s],
@@ -1989,7 +2002,7 @@
 						}
 					}
 				return s.a.createElement(g, {
-					className: Object(a.a)(p.j, t)
+					className: Object(r.a)(p.j, t)
 				}, i)
 			}
 		},
@@ -2013,9 +2026,9 @@
 			"use strict";
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/uniqueId.js"),
-				a = n.n(s),
-				r = n("./node_modules/raf/index.js"),
-				i = n.n(r),
+				r = n.n(s),
+				a = n("./node_modules/raf/index.js"),
+				i = n.n(a),
 				c = n("./node_modules/react/index.js"),
 				l = n.n(c),
 				d = n("./node_modules/react-redux/es/index.js"),
@@ -2027,22 +2040,22 @@
 				g = n("./src/reddit/controls/Button/index.tsx"),
 				b = n("./src/reddit/layout/row/Inline/index.tsx"),
 				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				x = n.n(v);
-			var f = Object(C.a)(e => {
+				f = n.n(v);
+			var x = Object(C.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return l.a.createElement("div", {
-						className: x.a.wrapper
+						className: f.a.wrapper
 					}, l.a.createElement(b.a, {
-						className: x.a.titleRow
+						className: f.a.titleRow
 					}, n), l.a.createElement("div", {
-						className: x.a.detailsContainer
+						className: f.a.detailsContainer
 					}, t), l.a.createElement(b.a, {
-						className: x.a.buttonRow
+						className: f.a.buttonRow
 					}, l.a.createElement(g.f, {
-						className: x.a.confirmButton,
+						className: f.a.confirmButton,
 						onClick: e.onConfirmed
 					}, o.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -2064,7 +2077,7 @@
 						this.props.toggleErrorTextModal(this.state.modalId)
 					}, this.state = {
 						textHasOverflowed: !1,
-						modalId: "ErrorTextModal--".concat(a()())
+						modalId: "ErrorTextModal--".concat(r()())
 					}
 				}
 				componentDidMount() {
@@ -2089,10 +2102,10 @@
 						activeModalId: t,
 						className: n,
 						errorModalBody: s,
-						errorModalTitle: a = o.fbt._("Error", null, {
+						errorModalTitle: r = o.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: r = o.fbt._("More", null, {
+						moreText: a = o.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
@@ -2107,9 +2120,9 @@
 					}, e), c && l.a.createElement("span", {
 						className: E.a.moreText,
 						onClick: this.toggleModal
-					}, r), t === i && l.a.createElement(f, {
+					}, a), t === i && l.a.createElement(x, {
 						onConfirmed: this.toggleModal,
-						title: a
+						title: r
 					}, s || e))
 				}
 			}
@@ -2122,11 +2135,11 @@
 						errorClassName: n,
 						errorModalTitle: o,
 						fallbackMessage: s,
-						messages: a = []
-					} = e, r = a.length ? a : s ? [s] : [];
-					return r.length ? l.a.createElement("div", {
+						messages: r = []
+					} = e, a = r.length ? r : s ? [s] : [];
+					return a.length ? l.a.createElement("div", {
 						className: t
-					}, r.map((e, t) => l.a.createElement(y, {
+					}, a.map((e, t) => l.a.createElement(y, {
 						className: n,
 						errorModalTitle: o,
 						key: t
@@ -2147,35 +2160,35 @@
 			})), n.d(t, "b", (function() {
 				return s
 			})), n.d(t, "c", (function() {
-				return a
-			})), n.d(t, "d", (function() {
 				return r
+			})), n.d(t, "d", (function() {
+				return a
 			}));
 			const o = 500,
 				s = 1800,
-				a = function(e) {
+				r = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return t ? e.coinPrice < o ? 0 : e.coinPrice < s ? 50 : 100 : 2048
 				},
-				r = function(e, t) {
+				a = function(e, t) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-					const o = a(t, n);
+					const o = r(t, n);
 					return e.slice(0, o)
 				}
 		},
 		"./src/reddit/helpers/describeApiError/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
+				return r
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
 
-			function a(e) {
+			function r(e) {
 				let {
 					apiError: t,
 					isLoggedOut: n,
-					language: a
+					language: r
 				} = e;
 				switch (t.type) {
 					case s.E.AUTHORIZATION_ERROR:
@@ -2220,22 +2233,22 @@
 		"./src/reddit/helpers/styles/mixins/loading.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return a
 			})), n.d(t, "b", (function() {
 				return i
 			}));
 			var o = n("./src/lib/classNames/index.ts"),
 				s = n("./src/reddit/helpers/styles/mixins/loading.m.less"),
-				a = n.n(s);
-			const r = e => {
+				r = n.n(s);
+			const a = e => {
 					let {
 						isLoading: t
 					} = e;
-					return Object(o.a)(a.a.loadingBackground, {
-						[a.a["m-loading"]]: t
+					return Object(o.a)(r.a.loadingBackground, {
+						[r.a["m-loading"]]: t
 					})
 				},
-				i = e => Object(o.a)(a.a.loadingBar, r(e))
+				i = e => Object(o.a)(r.a.loadingBar, a(e))
 		},
 		"./src/reddit/icons/svgs/Approve/index.tsx": function(e, t, n) {
 			"use strict";
@@ -2347,4 +2360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.655c5850c91daa97c1d0.js.map
+//# sourceMappingURL=ChatPost.412ee4deab40c1fc9cfd.js.map
