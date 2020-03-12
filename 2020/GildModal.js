@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.7ac209336e600e18bfa6.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.09d52cc8aad34b8e3ac8.js
+// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -115,7 +115,7 @@
 			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
 				c = s("./src/lib/loadWithRetries/index.ts"),
 				o = s("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const a = () => Object(c.a)(() => Promise.all([Promise.all([s.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~61cbc843"), s.e("CoinsPurchaseModal")]).then(s.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx")), Object(o.c)()])).then(e => e[0].default),
+			const a = () => Object(c.a)(() => Promise.all([Promise.all([s.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e8822216"), s.e("CoinsPurchaseModal~PennyPurchaseModal"), s.e("CoinsPurchaseModal")]).then(s.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx")), Object(o.c)()])).then(e => e[0].default),
 				r = Object(n.a)({
 					getComponent: a,
 					ErrorComponent: () => null,
@@ -154,7 +154,7 @@
 				}).apply(this, arguments)
 			}
 			const x = Object(a.c)({
-					showCoinPurchaseModal: l.c,
+					showPurchaseModal: l.q,
 					thingId: d.d
 				}),
 				g = Object(u.a)(e => {
@@ -178,7 +178,7 @@
 				className: b.a.gildModal,
 				withOverlay: !0,
 				onOverlayClick: e.closeGildModal,
-				overlayCustomStyles: e.showCoinPurchaseModal ? C : f
+				overlayCustomStyles: e.showPurchaseModal ? C : f
 			})))
 		},
 		"./src/reddit/controls/CheckboxWithLabel/index.m.less": function(e, t, s) {
@@ -323,4 +323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.7ac209336e600e18bfa6.js.map
+//# sourceMappingURL=GildModal.09d52cc8aad34b8e3ac8.js.map

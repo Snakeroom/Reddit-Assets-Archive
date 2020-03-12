@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.bbfe8b702fbf20e8a3da.js
-// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.a3576646ea91db75c23d.js
+// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -9,28 +9,28 @@
 		},
 		"./src/reddit/components/CoinBalance/index.tsx": function(e, t, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
 				c = n.n(o),
 				a = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/helpers/createEmojiText/index.tsx"),
-				r = n("./src/reddit/i18n/components.tsx"),
-				l = n("./src/reddit/icons/fonts/Coin/index.tsx"),
-				d = n("./src/reddit/components/CoinBalance/index.m.less"),
-				m = n.n(d);
+				r = n("./src/reddit/icons/fonts/Coin/index.tsx"),
+				l = n("./src/reddit/components/CoinBalance/index.m.less"),
+				d = n.n(l);
 			t.a = e => c.a.createElement("div", {
-				className: Object(a.a)(m.a.coinBalance, e.className),
+				className: Object(a.a)(d.a.coinBalance, e.className),
 				"data-redditstyle": !0
-			}, Object(i.a)(s.fbt._("Coin balance:: {Coin balance}", [s.fbt._param("Coin balance", ":coin:".concat(e.coinBalance.toLocaleString()))], {
-				hk: "4zRCac"
-			}).toString(), {
-				":coin:": c.a.createElement(l.a, null)
+			}, Object(i.a)(s.fbt._("Coin balance:: :coin:{coinBalance}", [s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+				hk: "3rsL0j"
+			}), {
+				":coin:": c.a.createElement(r.a, null)
 			}), " ", c.a.createElement("a", {
 				href: "/coins",
 				onClick: e.onWhatAreCoinsLinkClick,
 				target: "_blank"
-			}, c.a.createElement(r.c, null, "What are Coins?")))
+			}, s.fbt._("What are Coins?", null, {
+				hk: "3fC6PF"
+			})))
 		},
 		"./src/reddit/components/GivePremiumModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -130,8 +130,8 @@
 				K = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				G = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				R = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				W = n("./src/reddit/controls/TextButton/index.tsx"),
-				F = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				F = n("./src/reddit/controls/TextButton/index.tsx"),
+				W = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				U = n("./src/reddit/models/Gold/Premium/index.ts");
 
 			function z() {
@@ -278,7 +278,7 @@
 					} = this.state, x = Object(U.d)(h), b = a ? [r.a.messageInputOpen] : "";
 					return o.a.createElement(A.c, {
 						className: e
-					}, o.a.createElement(A.g, null, o.a.createElement(F.a, null, o.a.createElement(A.n, null, o.a.createElement(u.c, null, "Give Premium")), o.a.createElement(W.a, {
+					}, o.a.createElement(A.g, null, o.a.createElement(W.a, null, o.a.createElement(A.n, null, o.a.createElement(u.c, null, "Give Premium")), o.a.createElement(F.a, {
 						onClick: this.onClickClose
 					}, o.a.createElement(A.b, null)))), o.a.createElement("div", {
 						className: r.a.modalMain
@@ -312,7 +312,7 @@
 						onClick: this.handleClickMessageInput,
 						onChange: this.handleMessageInput,
 						placeholder: Object(p.c)("Type here...")
-					}))), o.a.createElement(A.e, null, o.a.createElement(F.a, {
+					}))), o.a.createElement(A.e, null, o.a.createElement(W.a, {
 						className: r.a.coinCountSection
 					}, o.a.createElement(B.a, {
 						className: r.a.coinCount,
@@ -664,12 +664,12 @@
 			n.d(t, "a", (function() {
 				return c
 			}));
-			n("./node_modules/core-js/modules/es6.regexp.split.js");
+			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.split.js");
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s);
 
 			function c(e, t) {
-				const n = e.split(":");
+				const n = e.toString().split(":");
 				return n.length % 2 == 0 ? e : n.reduce((e, n, s) => (s % 2 == 0 ? e.push(n) : "" === n ? e.push(":") : ":".concat(n, ":") in t ? e.push(t[":".concat(n, ":")]) : e.push(":".concat(n, ":")), e), []).map((e, t) => o.a.createElement(o.a.Fragment, {
 					key: t
 				}, e))
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.bbfe8b702fbf20e8a3da.js.map
+//# sourceMappingURL=GivePremiumModal.a3576646ea91db75c23d.js.map

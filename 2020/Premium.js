@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.8842aa1f9442532cd122.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.e806d5e2bc8ca7ba827e.js
+// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -294,12 +294,12 @@
 			a.d(t, "a", (function() {
 				return r
 			}));
-			a("./node_modules/core-js/modules/es6.regexp.split.js");
+			a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/core-js/modules/es6.regexp.split.js");
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n);
 
 			function r(e, t) {
-				const a = e.split(":");
+				const a = e.toString().split(":");
 				return a.length % 2 == 0 ? e : a.reduce((e, a, n) => (n % 2 == 0 ? e.push(a) : "" === a ? e.push(":") : ":".concat(a, ":") in t ? e.push(t[":".concat(a, ":")]) : e.push(":".concat(a, ":")), e), []).map((e, t) => s.a.createElement(s.a.Fragment, {
 					key: t
 				}, e))
@@ -635,7 +635,7 @@
 					isLoggedIn: S.G,
 					premiumPackages: O.c,
 					purchaseCatalogPending: O.e,
-					shouldShowPremiumPurchaseModal: G.q,
+					shouldShowPremiumPurchaseModal: G.n,
 					shouldShowClaimGoldModal: _.b
 				}),
 				q = Object(l.b)(J, (e, t) => ({
@@ -778,4 +778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.8842aa1f9442532cd122.js.map
+//# sourceMappingURL=Premium.e806d5e2bc8ca7ba827e.js.map
