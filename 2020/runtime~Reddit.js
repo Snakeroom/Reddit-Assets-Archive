@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.bfb18a74a691ee86671b.js
-// Retrieved at 3/12/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.203f4a402c68fafc97b5.js
+// Retrieved at 3/12/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -875,9 +875,9 @@
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit": "f8a31f07e6ce994bbce9",
 						"Frontpage~SubredditWiki": "4d92e1eb8503f7c13c46",
 						FrontpageSidebar: "16303455f206c804aef0",
-						Frontpage: "9609946cecf8b3ffbf6a",
+						Frontpage: "c28608d01891e80a70ad",
 						Topic: "f46e191cc05b6296fc18",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "68c60c1d57b400f4cc09",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "ba408c9fb3e05e25c28b",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "ad49f19ce45a4e6be7f3",
 						"CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187": "aaf54e8a34a600dd936f",
 						PostDraft: "f0179e054ac1e41aa76f",
@@ -935,7 +935,7 @@
 						"Chat~RedesignChat": "5a45e33a0395314e3d65",
 						RedesignChat: "503ce24367a6d2243476",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit": "0fbb841463155b07b288",
-						Subreddit: "8d9df58d4b5e1a615c36",
+						Subreddit: "c03d69141e69030de087",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42": "7bfeaef81c08bf8d9cc9",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "6b667a912b3b5957a9cf",
 						CollectionCommentsPage: "85f0696a2a82bd721e3a",
@@ -1136,4 +1136,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.bfb18a74a691ee86671b.js.map
+//# sourceMappingURL=runtime~Reddit.203f4a402c68fafc97b5.js.map
