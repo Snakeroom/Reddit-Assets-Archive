@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.39fbeaa96297142d83a0.js
-// Retrieved at 3/12/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.84eaa74c4e9281b0b087.js
+// Retrieved at 3/12/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, n = o[0], s = o[1], c = o[2], l = 0, P = []; l < n.length; l++) d = n[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -595,7 +595,7 @@
 					EconomicsTopTippersPostLeaderboard: "800bb2c929388d9323e3",
 					GildModal: "498c37fa2c935fe00041",
 					GovernanceUserPublicPointsDisplay: "991e00095c639eb27636",
-					ReportFlow: "78db7e00e0f4880653bc",
+					ReportFlow: "183fc3de51ccb8eac750",
 					"reddit-components-Governance-Proposal": "7fefb4c776805b1e1012",
 					"reddit-components-ViewReportsDropdown-index": "03182ad22d9e5da359ce",
 					"reddit-pages-CommentsPage-OtherDiscussions": "19be4d4e1638a83b8df9",
@@ -877,7 +877,7 @@
 						FrontpageSidebar: "16303455f206c804aef0",
 						Frontpage: "9609946cecf8b3ffbf6a",
 						Topic: "f46e191cc05b6296fc18",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "84a48384de43c4b0fbff",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "97f8c7d5b58d6d713198",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "ad49f19ce45a4e6be7f3",
 						"CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187": "aaf54e8a34a600dd936f",
 						PostDraft: "f0179e054ac1e41aa76f",
@@ -1043,7 +1043,7 @@
 						EconomicsTopTippersPostLeaderboard: "b35e3d7e77143964a31e",
 						GildModal: "09d52cc8aad34b8e3ac8",
 						GovernanceUserPublicPointsDisplay: "6d6aa5ca7835cb34a405",
-						ReportFlow: "2e9ebd96d45056a925d7",
+						ReportFlow: "96bf981dc5eb92d3c9c7",
 						"reddit-components-Governance-Proposal": "2de34b0f8c35134fa4c7",
 						"reddit-components-ViewReportsDropdown-index": "ad8c4d8bb4f58dd44db0",
 						"reddit-pages-CommentsPage-OtherDiscussions": "8c7c6a69075756fd1972",
@@ -1136,4 +1136,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.39fbeaa96297142d83a0.js.map
+//# sourceMappingURL=runtime~Reddit.84eaa74c4e9281b0b087.js.map
