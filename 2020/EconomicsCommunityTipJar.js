@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.6874a0f2d2161311a235.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.939bb4e8e7f73bdda847.js
+// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -845,4 +845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.6874a0f2d2161311a235.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.939bb4e8e7f73bdda847.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.85f0696a2a82bd721e3a.js
-// Retrieved at 3/12/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d2a61db8b3d324e604ed.js
+// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -12946,7 +12946,7 @@
 			const w = 129,
 				P = Object(b.t)({
 					filterName: e => Object(b.Q)(e)[h.f],
-					url: e => Object(b.U)(e)
+					url: e => Object(b.V)(e)
 				}),
 				k = Object(i.c)({
 					subredditId: (e, t) => Object(O.D)(e, t.subredditName)
@@ -16657,4 +16657,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.85f0696a2a82bd721e3a.js.map
+//# sourceMappingURL=CollectionCommentsPage.d2a61db8b3d324e604ed.js.map

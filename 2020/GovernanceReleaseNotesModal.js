@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.6031ea16967167dc8f48.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.2742261e3c63e1ebe0f6.js
+// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -612,4 +612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.6031ea16967167dc8f48.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.2742261e3c63e1ebe0f6.js.map

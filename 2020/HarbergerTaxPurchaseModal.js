@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.023aff7e64e39c1e20d9.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.801488157d9f23618ecc.js
+// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -1035,4 +1035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxPurchaseModal.023aff7e64e39c1e20d9.js.map
+//# sourceMappingURL=HarbergerTaxPurchaseModal.801488157d9f23618ecc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.2ad817fb435dd3f3306f.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7dd095f13ba0a6741939.js
+// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -2423,4 +2423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.2ad817fb435dd3f3306f.js.map
+//# sourceMappingURL=Multireddit.7dd095f13ba0a6741939.js.map
