@@ -1,7 +1,37 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.6f49cf2e47808c9e855a.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.b0177eeb1da1735244e7.js
+// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
+		"./node_modules/lodash/_baseRange.js": function(e, t) {
+			var n = Math.ceil,
+				a = Math.max;
+			e.exports = function(e, t, r, s) {
+				for (var o = -1, l = a(n((t - e) / (r || 1)), 0), i = Array(l); l--;) i[s ? l : ++o] = e, e += r;
+				return i
+			}
+		},
+		"./node_modules/lodash/_createRange.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/_baseRange.js"),
+				r = n("./node_modules/lodash/_isIterateeCall.js"),
+				s = n("./node_modules/lodash/toFinite.js");
+			e.exports = function(e) {
+				return function(t, n, o) {
+					return o && "number" != typeof o && r(t, n, o) && (n = o = void 0), t = s(t), void 0 === n ? (n = t, t = 0) : n = s(n), o = void 0 === o ? t < n ? 1 : -1 : s(o), a(t, n, o, e)
+				}
+			}
+		},
+		"./node_modules/lodash/range.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/_createRange.js")();
+			e.exports = a
+		},
+		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/toString.js"),
+				r = 0;
+			e.exports = function(e) {
+				var t = ++r;
+				return a(e) + t
+			}
+		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "s5ap8yh1b4ZfwxvHizW3f",
@@ -149,7 +179,7 @@
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "k", (function() {
-				return q
+				return U
 			})), n.d(t, "n", (function() {
 				return Z
 			})), n.d(t, "h", (function() {
@@ -259,11 +289,11 @@
 				}, r.a.createElement(P, null, e.label, e.isRequired && r.a.createElement(D, null)), r.a.createElement(L, null, e.subtext)), r.a.createElement(G, null, e.children)),
 				Y = T.a.div("StyledFlair", j.a),
 				X = T.a.wrapped(Y, "SpoilerFlair", j.a),
-				U = T.a.wrapped(Y, "NSFWFlair", j.a),
-				q = e => {
+				q = T.a.wrapped(Y, "NSFWFlair", j.a),
+				U = e => {
 					switch (e.flair) {
 						case k.f.Nsfw:
-							return r.a.createElement(U, null, "NSFW");
+							return r.a.createElement(q, null, "NSFW");
 						case k.f.Spoiler:
 							return r.a.createElement(X, null, "SPOILER");
 						default:
@@ -1151,4 +1181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.6f49cf2e47808c9e855a.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.b0177eeb1da1735244e7.js.map

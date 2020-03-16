@@ -1,37 +1,7 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.4a3658101b2054e4ff60.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.1cb3a1b0637643551e33.js
+// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
-		"./node_modules/lodash/_baseRange.js": function(e, t) {
-			var a = Math.ceil,
-				s = Math.max;
-			e.exports = function(e, t, n, i) {
-				for (var r = -1, o = s(a((t - e) / (n || 1)), 0), l = Array(o); o--;) l[i ? o : ++r] = e, e += n;
-				return l
-			}
-		},
-		"./node_modules/lodash/_createRange.js": function(e, t, a) {
-			var s = a("./node_modules/lodash/_baseRange.js"),
-				n = a("./node_modules/lodash/_isIterateeCall.js"),
-				i = a("./node_modules/lodash/toFinite.js");
-			e.exports = function(e) {
-				return function(t, a, r) {
-					return r && "number" != typeof r && n(t, a, r) && (a = r = void 0), t = i(t), void 0 === a ? (a = t, t = 0) : a = i(a), r = void 0 === r ? t < a ? 1 : -1 : i(r), s(t, a, r, e)
-				}
-			}
-		},
-		"./node_modules/lodash/range.js": function(e, t, a) {
-			var s = a("./node_modules/lodash/_createRange.js")();
-			e.exports = s
-		},
-		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
-			var s = a("./node_modules/lodash/toString.js"),
-				n = 0;
-			e.exports = function(e) {
-				var t = ++n;
-				return s(e) + t
-			}
-		},
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
 			e.exports = {
 				checkboxInput: "_2BPowd18EKTnfZFrj5kY3G",
@@ -254,9 +224,9 @@
 				g = a("./src/reddit/models/Toast/index.ts"),
 				v = a("./src/reddit/selectors/tags.ts"),
 				E = a("./src/reddit/selectors/user.ts"),
-				f = a("./src/reddit/components/CommunityTopics/index.m.less"),
-				_ = a.n(f);
-			const y = Object(l.c)({
+				y = a("./src/reddit/components/CommunityTopics/index.m.less"),
+				f = a.n(y);
+			const _ = Object(l.c)({
 				availableGlobalOptions: v.f,
 				selectedOptions: v.k,
 				isLoading: v.E,
@@ -290,7 +260,7 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: _.a.communityTopicsContainer
+						className: f.a.communityTopicsContainer
 					}, i.a.createElement(C.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && i.a.createElement(b.a, {
 						addText: s.fbt._("Add", null, {
 							hk: "3xwE3E"
@@ -314,7 +284,7 @@
 					}))
 				}
 			}
-			var k = Object(r.b)(y, e => ({
+			var k = Object(r.b)(_, e => ({
 					optionSelected: t => {
 						e(Object(p.c)({
 							option: t
@@ -345,16 +315,16 @@
 				L = a("./src/reddit/controls/Button/index.tsx"),
 				D = a("./src/reddit/controls/CheckboxInput/index.tsx"),
 				I = a("./src/reddit/controls/ErrorText/index.tsx"),
-				R = a("./src/reddit/controls/RadioInput/index.tsx"),
-				M = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				M = a("./src/reddit/controls/RadioInput/index.tsx"),
+				R = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				A = a("./src/reddit/helpers/trackers/screenview.ts"),
 				P = a("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				B = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				V = a("./src/reddit/icons/svgs/Eye/index.tsx"),
-				F = a("./src/reddit/icons/svgs/Info/index.tsx"),
-				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
-				Z = a("./src/reddit/icons/svgs/User/index.tsx"),
+				J = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				Z = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				F = a("./src/reddit/icons/svgs/User/index.tsx"),
 				W = a("./src/reddit/models/Subreddit/index.ts"),
 				K = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				Q = a("./src/config.ts"),
@@ -388,12 +358,12 @@
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
-				se = $.a.wrapped(F.a, "Info", G.a),
-				ne = $.a.wrapped(M.a, "RadioOption", G.a),
+				se = $.a.wrapped(J.a, "Info", G.a),
+				ne = $.a.wrapped(R.a, "RadioOption", G.a),
 				ie = $.a.wrapped(T.c, "Tooltip", G.a),
-				re = $.a.wrapped(Z.a, "Public", G.a),
+				re = $.a.wrapped(F.a, "Public", G.a),
 				oe = $.a.wrapped(V.a, "Restricted", G.a),
-				le = $.a.wrapped(J.a, "Private", G.a),
+				le = $.a.wrapped(Z.a, "Private", G.a),
 				ce = $.a.wrapped(B.a, "Employee", G.a),
 				de = $.a.wrapped(q.a, "CloseButton", G.a),
 				me = $.a.wrapped(I.b, "ErrorText", G.a),
@@ -684,7 +654,7 @@
 						direction: "column",
 						isCreateCommunity: !0,
 						textContainerClassName: G.a.fullWidthTextContainer
-					}, i.a.createElement(R.a, {
+					}, i.a.createElement(M.a, {
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
@@ -738,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.4a3658101b2054e4ff60.js.map
+//# sourceMappingURL=SubredditCreation.1cb3a1b0637643551e33.js.map
