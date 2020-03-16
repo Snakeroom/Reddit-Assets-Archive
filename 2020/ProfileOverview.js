@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a6611d9bd9b3a36edcc9.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e9df9e2ad7af5c096507.js
+// Retrieved at 3/16/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~reddit-components-Co~d2dc8995", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -14673,7 +14673,10 @@
 						t: b
 					} = i;
 					const h = n === se.g.Compact ? u.jb : u.kb,
-						x = Object(m.a)(o, h, p, s);
+						x = Object(m.a)(o, h, p, s),
+						{
+							sort: g
+						} = s;
 					return {
 						contentGateInfo: l,
 						over18Prefs: t,
@@ -14683,7 +14686,7 @@
 						layout: n,
 						listingKey: x,
 						profileName: o,
-						shouldShowPinnedPostsSection: c,
+						shouldShowPinnedPostsSection: c && !g,
 						sort: p,
 						timeSort: b
 					}
@@ -14874,4 +14877,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.a6611d9bd9b3a36edcc9.js.map
+//# sourceMappingURL=ProfileOverview.e9df9e2ad7af5c096507.js.map
