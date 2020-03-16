@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.72e74cd61a2789eb1e36.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ad120995c2e1b22ad570.js
+// Retrieved at 3/16/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~Poll~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~Rp~acc70187", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -22958,7 +22958,7 @@
 						} = i.listings.postOrder;
 						a = a && !t.error[e] && !t.pending[e]
 					}
-					return Object.assign({}, g.b(i, t), {
+					return Object.assign({}, g.c(i, t), {
 						source: "global",
 						action: "view",
 						noun: "screen",
@@ -22976,36 +22976,38 @@
 		},
 		"./src/reddit/helpers/trackers/searchResults.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "k", (function() {
-				return l
-			})), n.d(t, "j", (function() {
-				return d
-			})), n.d(t, "d", (function() {
-				return u
-			})), n.d(t, "m", (function() {
-				return p
 			})), n.d(t, "l", (function() {
+				return l
+			})), n.d(t, "k", (function() {
+				return d
+			})), n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "n", (function() {
+				return p
+			})), n.d(t, "m", (function() {
 				return m
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return h
 			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "o", (function() {
-				return f
-			})), n.d(t, "n", (function() {
-				return x
 			})), n.d(t, "f", (function() {
-				return C
-			})), n.d(t, "i", (function() {
-				return y
+				return g
+			})), n.d(t, "p", (function() {
+				return f
+			})), n.d(t, "o", (function() {
+				return x
 			})), n.d(t, "g", (function() {
-				return O
+				return C
+			})), n.d(t, "j", (function() {
+				return y
 			})), n.d(t, "h", (function() {
+				return O
+			})), n.d(t, "i", (function() {
 				return v
+			})), n.d(t, "b", (function() {
+				return E
 			}));
 			var o = n("./src/lib/constants/index.ts"),
 				s = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -23170,6 +23172,14 @@
 						originElement: n
 					}),
 					[e]: r[e](o)
+				}),
+				E = (e, t) => n => Object.assign({}, c(n, t), {
+					source: i,
+					action: e,
+					noun: "covid_banner",
+					correlationId: Object(s.c)(s.a.SearchResults),
+					actionInfo: r.actionInfo(n),
+					search: r.search(n, t)
 				})
 		},
 		"./src/reddit/i18n/components.tsx": function(e, t, n) {
@@ -29584,4 +29594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.72e74cd61a2789eb1e36.js.map
+//# sourceMappingURL=PostCreation.ad120995c2e1b22ad570.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2fda6e1c6a701c470ab6.js
-// Retrieved at 3/16/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.1abd1b486c9055a1f3f7.js
+// Retrieved at 3/16/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -20531,8 +20531,8 @@
 					title: r.fbt._("Stay informed", null, {
 						hk: "3HKOH"
 					}),
-					description: r.fbt._("Keep up-to-date with the latest information from the Center for Disease Control and Prevention (CDC) to help you stay safe and healthy", null, {
-						hk: "qLr8W"
+					description: r.fbt._("To get the latest updates on COVID-19 and information on how to stay safe and healthy, visit the Centers for Disease Control and Prevention (CDC).", null, {
+						hk: "2glecH"
 					}),
 					announcementUrl: "https://www.cdc.gov/",
 					buttonCta: r.fbt._("Visit CDC.gov", null, {
@@ -61951,4 +61951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.2fda6e1c6a701c470ab6.js.map
+//# sourceMappingURL=Governance~Reddit.1abd1b486c9055a1f3f7.js.map

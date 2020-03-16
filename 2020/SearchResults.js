@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.34fe78ff5e1167ccff24.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.09f9801321ab2209eef7.js
+// Retrieved at 3/16/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -4717,7 +4717,7 @@
 					let a = Ce.get(o);
 					return void 0 === a && (a = "subreddit" === e.type ? () => _e(s, e.id, n) : () => Se(s, e.id, n), Ce.set(o, a)), a
 				},
-				Se = (e, t, s) => e(e => Object.assign({}, Object(Oe.b)(e, s), {
+				Se = (e, t, s) => e(e => Object.assign({}, Object(Oe.c)(e, s), {
 					source: "search",
 					action: "view",
 					noun: "search_results_profile",
@@ -4726,7 +4726,7 @@
 					search: Ee.search(e, s),
 					profile: Ee.profile(e)
 				})),
-				_e = (e, t, s) => e(e => Object.assign({}, Object(Oe.b)(e, s), {
+				_e = (e, t, s) => e(e => Object.assign({}, Object(Oe.c)(e, s), {
 					source: "search",
 					action: "view",
 					noun: "search_results_subreddit",
@@ -4829,7 +4829,7 @@
 					return r.a.createElement(Ne.a, {
 						className: Object(N.a)(He.a.container, e.className),
 						onClick: () => {
-							e.sendEvent(Object(Oe.h)(e.identifier.type, e.searchOptions, De(e)))
+							e.sendEvent(Object(Oe.i)(e.identifier.type, e.searchOptions, De(e)))
 						},
 						to: e.subredditOrProfile.url
 					}, r.a.createElement("div", {
@@ -5032,7 +5032,7 @@
 				apiPending: Xe.e,
 				identifiers: Xe.b,
 				loadMore: Xe.f
-			}), ht = 36, xt = 5, gt = Object(o.b)(bt), yt = (e, t) => () => e(e => Object.assign({}, Object(Oe.b)(e), {
+			}), ht = 36, xt = 5, gt = Object(o.b)(bt), yt = (e, t) => () => e(e => Object.assign({}, Object(Oe.c)(e), {
 				source: "search",
 				action: "click",
 				noun: "view_more_communities",
@@ -5245,22 +5245,22 @@
 				})),
 				Dt = Object(o.b)(Bt, (e, t) => Object.assign({}, Object(Ft.b)(e, t), {
 					trackOnPostEnteredViewport: e => {
-						t.sendEvent(Object(Oe.g)(t.listingKey, e, Object.assign({}, t.searchOptions, {
+						t.sendEvent(Object(Oe.h)(t.listingKey, e, Object.assign({}, t.searchOptions, {
 							id: e,
 							eventType: "post"
 						}), De(t)))
 					}
 				}), (e, t, s) => Object.assign({}, e, t, s, {
 					openPost: e => t.openPost(e),
-					postClickEvent: (e, t) => ("body" === t ? s.sendEvent(Object(Oe.f)(s.listingKey, e, Object.assign({}, s.searchOptions, {
+					postClickEvent: (e, t) => ("body" === t ? s.sendEvent(Object(Oe.g)(s.listingKey, e, Object.assign({}, s.searchOptions, {
 						id: e,
 						eventType: "post"
-					}), De(s))) : "subreddit" === t ? s.sendEvent(Object(Oe.i)(Object.assign({}, s.searchOptions, {
+					}), De(s))) : "subreddit" === t ? s.sendEvent(Object(Oe.j)(Object.assign({}, s.searchOptions, {
 						id: e,
 						eventType: "subreddit"
 					}), De(s))) : "comments" === t && function(e, t) {
 						let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "post";
-						e(e => Object.assign({}, Object(Oe.b)(e, t), {
+						e(e => Object.assign({}, Object(Oe.c)(e, t), {
 							action: "click",
 							noun: s,
 							source: "search_results"
@@ -5319,7 +5319,7 @@
 					}, s))
 				}, "ValueWrapper", Zt.a),
 				os = Ht.a.wrapped(Gt.b, "SelectOption", Zt.a),
-				as = (e, t, s, n) => () => e(e => Object.assign({}, Object(Oe.b)(e), {
+				as = (e, t, s, n) => () => e(e => Object.assign({}, Object(Oe.c)(e), {
 					source: "search",
 					action: "click",
 					noun: t,
@@ -5504,7 +5504,7 @@
 			class Ls extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
-						this.props.sendEvent(e => Object.assign({}, Object(Oe.b)(e, this.props.searchOptions), {
+						this.props.sendEvent(e => Object.assign({}, Object(Oe.c)(e, this.props.searchOptions), {
 							action: "click",
 							noun: "unrestrict_to_subreddit",
 							source: "search_results"
@@ -5549,7 +5549,7 @@
 							sendEvent: t,
 							subreddit: s
 						} = this.props;
-						t(Object(Oe.n)(!!s, e))
+						t(Object(Oe.o)(!!s, e))
 					}
 				}
 				render() {
@@ -5989,13 +5989,13 @@
 						const {
 							post: t
 						} = this.props;
-						t && (this.props.sendEvent(Object(Oe.j)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, un.a.Click), t.source ? t.source.outboundUrl ? Object(on.d)(t.source.outboundUrl, on.c.BLANK) : Object(on.d)(t.source.url, on.c.BLANK) : Object(on.d)(t.permalink, on.c.BLANK)) : this.props.openLightbox(t))
+						t && (this.props.sendEvent(Object(Oe.k)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, un.a.Click), t.source ? t.source.outboundUrl ? Object(on.d)(t.source.outboundUrl, on.c.BLANK) : Object(on.d)(t.source.url, on.c.BLANK) : Object(on.d)(t.permalink, on.c.BLANK)) : this.props.openLightbox(t))
 					}
 				}
 				componentDidMount() {
 					this.ref && sn.a(this.ref, (e, t) => {
 						this.scrollerItemRef && (t ? this.scrollerItemRef.focusContent() : this.scrollerItemRef.pauseContent())
-					}), Object(Oe.d)(this.props.listingKey, this.props.searchOptions, this.props.searchDiscoveryUnit)
+					}), Object(Oe.e)(this.props.listingKey, this.props.searchOptions, this.props.searchDiscoveryUnit)
 				}
 				componentWillUnmount() {
 					this.ref && sn.b(this.ref), this.scrollerItemRef && this.scrollerItemRef.stopContent(), this.ref = null, this.scrollerItemRef = null
@@ -6377,13 +6377,13 @@
 			class k extends a.a.Component {
 				constructor(e) {
 					super(e), this.onFollow = () => {
-						this.props.sendEvent(Object(f.c)("trending_header", this.state.isFollowed ? "unfollow" : "follow", this.props.searchOptions)), this.setState({
+						this.props.sendEvent(Object(f.d)("trending_header", this.state.isFollowed ? "unfollow" : "follow", this.props.searchOptions)), this.setState({
 							isFollowed: !this.state.isFollowed
 						})
 					}, this.onShare = () => {
-						this.props.sendEvent(Object(f.c)("trending_header", "share", this.props.searchOptions))
+						this.props.sendEvent(Object(f.d)("trending_header", "share", this.props.searchOptions))
 					}, this.onShareMenuClick = e => {
-						this.props.sendEvent(Object(f.o)(e, this.props.searchOptions))
+						this.props.sendEvent(Object(f.p)(e, this.props.searchOptions))
 					}, this.state = {
 						isFollowed: !1
 					}
@@ -6449,11 +6449,11 @@
 			class A extends a.a.Component {
 				constructor() {
 					super(...arguments), this.sendTopTabClickEvent = () => {
-						this.props.tab === N.g.Top && this.props.sendEvent(Object(f.e)(f.a.TopResults, this.props.searchOptions))
+						this.props.tab === N.g.Top && this.props.sendEvent(Object(f.f)(f.a.TopResults, this.props.searchOptions))
 					}, this.sendPostsTabClickEvent = () => {
-						this.props.tab === N.g.Posts && this.props.sendEvent(Object(f.e)(f.a.Posts, this.props.searchOptions))
+						this.props.tab === N.g.Posts && this.props.sendEvent(Object(f.f)(f.a.Posts, this.props.searchOptions))
 					}, this.sendCommunitiesTabClickEvent = () => {
-						this.props.tab === N.g.Listings && this.props.sendEvent(Object(f.e)(f.a.CommunitiesAndUsers, this.props.searchOptions))
+						this.props.tab === N.g.Listings && this.props.sendEvent(Object(f.f)(f.a.CommunitiesAndUsers, this.props.searchOptions))
 					}
 				}
 				render() {
@@ -6587,14 +6587,14 @@
 						className: t,
 						title: Object(I.c)("People also searched for")
 					}, s.slice(0, 8).map(e => {
-						o(Object(w.k)("view", n));
+						o(Object(w.l)("view", n));
 						const t = Object.assign({}, n, {
 							q: e.q
 						});
 						return r.a.createElement(P.a, {
 							className: L.a.relatedQuery,
 							key: e.q,
-							onClick: e => o(Object(w.k)("click", t)),
+							onClick: e => o(Object(w.l)("click", t)),
 							to: Object(S.a)("/search", {
 								q: e.q
 							})
@@ -8750,19 +8750,21 @@
 				g = s("./src/reddit/components/SearchResultsContent/index.tsx"),
 				y = s("./src/reddit/components/SearchResultsNav/index.tsx"),
 				f = s("./src/reddit/components/SearchResultsSidebar/index.tsx"),
-				v = s("./src/reddit/constants/covid.ts"),
-				O = s("./src/reddit/constants/page.ts"),
-				E = s("./src/reddit/constants/parameters.ts"),
-				C = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				j = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				S = s("./src/reddit/layout/page/Listing/index.tsx"),
-				_ = s("./src/reddit/selectors/experiments/railsSearchResults.ts"),
-				k = s("./src/reddit/selectors/meta.ts"),
-				P = s("./src/reddit/selectors/searchResults.ts"),
-				w = s("./src/reddit/selectors/subreddit.ts"),
-				I = s("./src/reddit/pages/SearchResults/index.m.less"),
-				T = s.n(I);
-			const N = Object(i.a)({
+				v = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				O = s("./src/reddit/constants/covid.ts"),
+				E = s("./src/reddit/constants/page.ts"),
+				C = s("./src/reddit/constants/parameters.ts"),
+				j = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				S = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				_ = s("./src/reddit/helpers/trackers/searchResults.ts"),
+				k = s("./src/reddit/layout/page/Listing/index.tsx"),
+				P = s("./src/reddit/selectors/experiments/railsSearchResults.ts"),
+				w = s("./src/reddit/selectors/meta.ts"),
+				I = s("./src/reddit/selectors/searchResults.ts"),
+				T = s("./src/reddit/selectors/subreddit.ts"),
+				N = s("./src/reddit/pages/SearchResults/index.m.less"),
+				L = s.n(N);
+			const M = Object(i.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointAnnouncement",
 					isReady(e) {
@@ -8782,41 +8784,54 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/Announcement.tsx"
 					}
 				}),
-				L = Object(C.t)({
-					currentPageUrl: C.e,
-					queryParams: C.Q,
-					shouldShowCovidBanner: C.U
+				R = Object(j.t)({
+					currentPageUrl: j.e,
+					queryParams: j.Q,
+					shouldShowCovidBanner: j.U
 				}),
-				M = () => Object(u.c)({
-					headerContent: P.a,
-					isInFollowExperiment: _.a,
-					origin: k.h,
-					subreddit: (e, t) => Object(w.y)(e, {
+				F = () => Object(u.c)({
+					headerContent: I.a,
+					isInFollowExperiment: P.a,
+					origin: w.h,
+					subreddit: (e, t) => Object(T.y)(e, {
 						subredditName: t.match.params.subredditName
 					}),
-					viewTreatment: P.h
+					viewTreatment: I.h
 				}),
-				R = Object(p.b)(M);
-			class F extends m.a.Component {
+				A = Object(p.b)(F);
+			class B extends m.a.Component {
 				constructor(e) {
-					super(e), this.renderCovidBanner = () => m.a.createElement(N, {
-						announcement: v.a,
-						className: T.a.announcement,
-						onClose: () => this.setState({
-							isCovidBannerHidden: !0
+					super(e), this.renderCovidBanner = () => {
+						const {
+							queryParams: e,
+							sendEvent: t
+						} = this.props, s = s => t(Object(_.b)(s, Object(h.c)(d()(e || {}, C.q))));
+						return this.state.didSendCovidSeenEvent || (s("view"), this.setState({
+							didSendCovidSeenEvent: !0
+						})), m.a.createElement(M, {
+							announcement: O.a,
+							className: L.a.announcement,
+							onBtnClick: () => s("click"),
+							onClose: () => {
+								s("dismiss"), this.setState({
+									isCovidBannerHidden: !0
+								})
+							}
 						})
-					}), this.state = {
+					}, this.state = {
+						didSendCovidSeenEvent: !1,
 						isCovidBannerHidden: !1
 					}
 				}
 				componentDidMount() {
-					Object(j.c)(j.a.SearchResults) || Object(j.d)(j.a.SearchResults)
+					Object(S.c)(S.a.SearchResults) || Object(S.d)(S.a.SearchResults)
 				}
 				componentWillUnmount() {
-					Object(j.b)(j.a.SearchResults)
+					Object(S.b)(S.a.SearchResults)
 				}
 				componentDidUpdate(e) {
 					this.props.queryParams !== e.queryParams && this.setState({
+						didSendCovidSeenEvent: !1,
 						isCovidBannerHidden: !1
 					})
 				}
@@ -8834,12 +8849,12 @@
 						viewTreatment: l
 					} = this.props, {
 						isCovidBannerHidden: p
-					} = this.state, u = r.params.subredditName || r.params.multiredditName || "", v = r.params.username, C = Object(h.c)(d()(a || {}, E.q)), j = Object.assign({}, C, {
-						sort: C.category ? b.Jb.Relevance : C.sort,
-						t: C.category ? b.Qb.DAY : C.t
-					}), _ = Object(h.b)(u, v, j);
-					let k;
-					return k = c && C.restrict_sr || 1 === j.type.length && j.type[0] === b.Lb.Posts ? O.g.Posts : j.type.length > 0 && -1 === j.type.indexOf(b.Lb.Posts) && (j.type.indexOf(b.Lb.Subreddits) > -1 || j.type.indexOf(b.Lb.Users) > -1) ? O.g.Listings : O.g.Top, m.a.createElement(S.a, {
+					} = this.state, u = r.params.subredditName || r.params.multiredditName || "", v = r.params.username, O = Object(h.c)(d()(a || {}, C.q)), j = Object.assign({}, O, {
+						sort: O.category ? b.Jb.Relevance : O.sort,
+						t: O.category ? b.Qb.DAY : O.t
+					}), S = Object(h.b)(u, v, j);
+					let _;
+					return _ = c && O.restrict_sr || 1 === j.type.length && j.type[0] === b.Lb.Posts ? E.g.Posts : j.type.length > 0 && -1 === j.type.indexOf(b.Lb.Posts) && (j.type.indexOf(b.Lb.Subreddits) > -1 || j.type.indexOf(b.Lb.Users) > -1) ? E.g.Listings : E.g.Top, m.a.createElement(k.a, {
 						className: this.props.className,
 						navBar: m.a.createElement(y.a, {
 							currentPageUrl: "".concat(o).concat(e),
@@ -8848,27 +8863,27 @@
 							location: n,
 							searchOptions: j,
 							subreddit: c,
-							tab: k,
+							tab: _,
 							viewTreatment: l
 						}),
 						content: m.a.createElement(m.a.Fragment, null, m.a.createElement(x.a, null), i && !p && this.renderCovidBanner(), m.a.createElement(g.a, {
-							listingKey: _,
+							listingKey: S,
 							listingName: u,
 							location: n,
 							searchOptions: j,
-							tab: k
+							tab: _
 						})),
 						sidebar: m.a.createElement(f.a, {
-							className: T.a.sidebar,
-							listingKey: _,
-							listingName: u || O.b,
+							className: L.a.sidebar,
+							listingKey: S,
+							listingName: u || E.b,
 							searchOptions: j,
-							tab: k
+							tab: _
 						})
 					})
 				}
 			}
-			t.default = L(R(F))
+			t.default = R(A(Object(v.b)(B)))
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
 			"use strict";
@@ -8911,4 +8926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.34fe78ff5e1167ccff24.js.map
+//# sourceMappingURL=SearchResults.09f9801321ab2209eef7.js.map

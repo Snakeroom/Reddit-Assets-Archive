@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.52ef152b222e12c34ef4.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3bb79e5212493e1b4b4c.js
+// Retrieved at 3/16/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4214,7 +4214,7 @@
 					searchQuery: Ln.T,
 					pageLayer: e => e
 				}),
-				Xr = (e, t, s) => e(e => Object.assign({}, Object(qr.b)(e), {
+				Xr = (e, t, s) => e(e => Object.assign({}, Object(qr.c)(e), {
 					source: "search",
 					action: "click",
 					noun: t,
@@ -4383,7 +4383,7 @@
 							structureType: s,
 							searchQuery: this.props.searchQuery
 						};
-						this.props.sendEvent(Object(qr.l)(n, a))
+						this.props.sendEvent(Object(qr.m)(n, a))
 					}, this.onSendDropdownViewEvent = (e, t, s, n) => {
 						const a = {
 							displayQuery: s,
@@ -4391,7 +4391,7 @@
 							searchQuery: this.props.searchQuery,
 							structureType: t
 						};
-						this.props.sendEvent(Object(qr.m)(e, a))
+						this.props.sendEvent(Object(qr.n)(e, a))
 					}, this.onKeyDown = e => {
 						if (e.key === Ea.b.Escape && this.close(), e.key === Ea.b.Tab && this.close(), e.key === Ea.b.ArrowDown) {
 							if (e.preventDefault(), 0 === this.state.itemList.length || !this.props.dropdownIsOpen) return;
@@ -11864,4 +11864,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.52ef152b222e12c34ef4.js.map
+//# sourceMappingURL=Reddit.3bb79e5212493e1b4b4c.js.map
