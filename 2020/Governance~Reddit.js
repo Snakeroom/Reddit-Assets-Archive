@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1abd1b486c9055a1f3f7.js
-// Retrieved at 3/16/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4f4b8f89b0e62d8534c8.js
+// Retrieved at 3/16/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -29667,7 +29667,7 @@
 					userSubreddit: s.userSubreddit(t)
 				}, o(t, e)),
 				b = e => t => Object.assign({
-					source: "user_hovercard",
+					source: s.profile(t) ? "user_profile" : "user_hovercard",
 					action: "click",
 					noun: "create_chat"
 				}, e && o(t, e))
@@ -61951,4 +61951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.1abd1b486c9055a1f3f7.js.map
+//# sourceMappingURL=Governance~Reddit.4f4b8f89b0e62d8534c8.js.map
