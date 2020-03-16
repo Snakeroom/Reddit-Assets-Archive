@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LayersEmbed.88986391e82618dddebb.js
-// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LayersEmbed.a0640635d88aa26a644c.js
+// Retrieved at 3/16/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LayersEmbed"], {
 		"./src/graphql/operations/SubredditLayers.json": function(e) {
@@ -23,27 +23,27 @@
 			var s = a("./node_modules/react/index.js"),
 				r = a.n(s),
 				n = a("./src/higherOrderComponents/asModal/index.tsx"),
-				c = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				o = a("./src/reddit/controls/TextButton/index.tsx"),
+				o = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				c = a("./src/reddit/controls/TextButton/index.tsx"),
 				i = a("./src/reddit/i18n/utils.ts"),
 				l = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				d = a("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				h = a.n(d);
 			const u = e => e.preventDefault();
-			t.a = Object(n.a)(e => r.a.createElement(c.c, null, r.a.createElement(c.g, null, r.a.createElement(l.a, null, r.a.createElement(c.n, null, e.headerText || Object(i.c)("Confirm")), r.a.createElement(o.a, {
+			t.a = Object(n.a)(e => r.a.createElement(o.c, null, r.a.createElement(o.g, null, r.a.createElement(l.a, null, r.a.createElement(o.n, null, e.headerText || Object(i.c)("Confirm")), r.a.createElement(c.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, r.a.createElement(c.b, null)))), r.a.createElement(c.j, null, r.a.createElement(c.m, {
+			}, r.a.createElement(o.b, null)))), r.a.createElement(o.j, null, r.a.createElement(o.m, {
 				className: h.a.ModalText
-			}, e.modalText)), r.a.createElement(c.e, null, r.a.createElement(c.a, {
+			}, e.modalText)), r.a.createElement(o.e, null, r.a.createElement(o.a, {
 				className: h.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
 				"data-redditstyle": !0
-			}, e.cancelActionText || Object(i.c)("Cancel")), r.a.createElement(c.r, {
+			}, e.cancelActionText || Object(i.c)("Cancel")), r.a.createElement(o.r, {
 				className: h.a.buttonWidth,
 				onMouseDown: u,
 				onClick: t => {
@@ -195,9 +195,9 @@
 			var s = a("./node_modules/lodash/debounce.js"),
 				r = a.n(s),
 				n = a("./node_modules/lodash/isEqual.js"),
-				c = a.n(n),
-				o = a("./node_modules/lodash/omit.js"),
-				i = a.n(o),
+				o = a.n(n),
+				c = a("./node_modules/lodash/omit.js"),
+				i = a.n(c),
 				l = a("./node_modules/react/index.js"),
 				d = a.n(l),
 				h = a("./node_modules/react-redux/es/index.js"),
@@ -207,17 +207,17 @@
 				f = a("./src/reddit/actions/toaster.ts"),
 				y = a("./src/reddit/components/ConfirmUserActionModal/index.tsx");
 			const g = 32,
-				E = 10,
-				x = 100;
-			var v = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = a("./src/reddit/contexts/ApiContext.tsx"),
+				x = 10,
+				E = 100;
+			var b = a("./src/reddit/components/TrackingHelper/index.tsx"),
+				v = a("./src/reddit/contexts/ApiContext.tsx"),
 				L = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				S = a("./src/reddit/endpoints/post/index.tsx"),
 				C = a("./src/graphql/operations/SubredditLayers.json"),
-				I = a("./src/graphql/operations/SubredditLayersByIds.json"),
-				w = a("./src/graphql/operations/SubredditLayersConfig.json"),
+				w = a("./src/graphql/operations/SubredditLayersByIds.json"),
+				I = a("./src/graphql/operations/SubredditLayersConfig.json"),
 				P = a("./src/lib/makeGqlRequest/index.ts");
-			const k = (e, t) => Object(P.a)(e, Object.assign({}, w, {
+			const k = (e, t) => Object(P.a)(e, Object.assign({}, I, {
 					variables: {
 						subredditId: t
 					}
@@ -231,13 +231,13 @@
 						layerName: n
 					}
 				})),
-				j = (e, t, a) => Object(P.a)(e, Object.assign({}, I, {
+				O = (e, t, a) => Object(P.a)(e, Object.assign({}, w, {
 					variables: {
 						subredditId: t,
 						ids: a
 					}
 				}));
-			var O = a("./src/reddit/featureFlags/layers.ts"),
+			var j = a("./src/reddit/featureFlags/layers.ts"),
 				_ = e => {
 					if (!(e && e.id && e.layersByIds && Array.isArray(e.layersByIds))) return {};
 					const {
@@ -268,10 +268,10 @@
 						[e.id]: t
 					}
 				},
-				R = a("./node_modules/lodash/get.js"),
-				B = a.n(R),
+				B = a("./node_modules/lodash/get.js"),
+				R = a.n(B),
 				N = a("./src/reddit/endpoints/post/create.ts"),
-				A = e => {
+				T = e => {
 					if (!(e && e.id && e.layers && Array.isArray(e.layers.edges))) return {};
 					const {
 						id: t,
@@ -279,26 +279,26 @@
 					} = e;
 					return {
 						[t]: {
-							cursor: B()(a, "pageInfo.endCursor", ""),
+							cursor: R()(a, "pageInfo.endCursor", ""),
 							layers: a.edges.map(e => Object.assign({}, e.node, {
-								authorId: B()(e, "node.postInfo.authorInfo.id", null),
+								authorId: R()(e, "node.postInfo.authorInfo.id", null),
 								postId: Object(N.e)(e.node.postUrl)
 							}))
 						}
 					}
 				},
-				T = a("./src/reddit/helpers/localStorage/index.ts"),
-				z = a("./src/reddit/helpers/trackers/layers.ts"),
-				D = a("./src/reddit/i18n/utils.ts"),
-				H = a("./src/reddit/models/Toast/index.ts"),
-				q = a("./src/reddit/selectors/layers.ts"),
-				W = a("./src/reddit/selectors/moderatorPermissions.ts"),
-				G = a("./src/config.ts"),
+				A = a("./src/reddit/helpers/localStorage/index.ts"),
+				D = a("./src/reddit/helpers/trackers/layers.ts"),
+				z = a("./src/reddit/i18n/utils.ts"),
+				q = a("./src/reddit/models/Toast/index.ts"),
+				H = a("./src/reddit/selectors/layers.ts"),
+				G = a("./src/reddit/selectors/moderatorPermissions.ts"),
+				W = a("./src/config.ts"),
 				U = a("./node_modules/lodash/clamp.js"),
 				Z = a.n(U),
 				V = a("./src/lib/getMobileOperatingSystem/index.ts"),
-				J = a("./src/reddit/components/LayersEmbed/icons/AddLayer/index.m.less"),
-				Y = a.n(J),
+				Y = a("./src/reddit/components/LayersEmbed/icons/AddLayer/index.m.less"),
+				J = a.n(Y),
 				X = e => {
 					let {
 						isRotated: t,
@@ -313,36 +313,36 @@
 						height: "24",
 						viewBox: "0 0 24 24"
 					}, d.a.createElement("defs", null, d.a.createElement("clipPath", null, d.a.createElement("rect", {
-						className: Y.a.a,
+						className: J.a.a,
 						width: "24",
 						height: "24"
 					})), d.a.createElement("clipPath", null, d.a.createElement("rect", {
-						className: Y.a.b,
+						className: J.a.b,
 						width: "24",
 						height: "24"
 					}))), d.a.createElement("g", {
-						className: Y.a.container
+						className: J.a.container
 					}, d.a.createElement("g", {
 						transform: "translate(4 4)"
 					}, d.a.createElement("rect", {
-						className: Y.a.e,
+						className: J.a.e,
 						width: "16",
 						height: "16",
 						rx: "3.164"
 					}), d.a.createElement("g", {
 						transform: t ? "translate(5 5) rotate(45, 3, 3)" : "translate(5 5)"
 					}, d.a.createElement("line", {
-						className: Y.a.f,
+						className: J.a.f,
 						y2: "6",
 						transform: "translate(3)"
 					}), d.a.createElement("line", {
-						className: Y.a.f,
+						className: J.a.f,
 						x1: "6",
 						transform: "translate(0 3)"
 					})))))
 				},
-				Q = a("./src/reddit/components/LayersEmbed/icons/Cancel/index.m.less"),
-				K = a.n(Q);
+				K = a("./src/reddit/components/LayersEmbed/icons/Cancel/index.m.less"),
+				Q = a.n(K);
 
 			function $() {
 				return ($ = Object.assign || function(e) {
@@ -364,7 +364,7 @@
 							cursor: "pointer"
 						}, this.props.style ? this.props.style : {})
 					}), d.a.createElement("g", null, d.a.createElement("g", {
-						className: K.a.background
+						className: Q.a.background
 					}, d.a.createElement("path", {
 						d: "M26 39.008c-2.105 0-4.16-.408-6.109-1.213a15.951 15.951 0 01-7.19-5.894 15.951 15.951 0 01-2.702-8.897c0-3.179.934-6.255 2.701-8.897a15.951 15.951 0 017.191-5.894A15.917 15.917 0 0126 7c2.097 0 4.145.404 6.085 1.2a15.913 15.913 0 015.254 3.507 15.922 15.922 0 014.66 11.297A15.92 15.92 0 0137.34 34.3a15.914 15.914 0 01-5.254 3.507c-1.94.797-3.987 1.2-6.085 1.2zm.04-15.653l.707.707 3.53 3.53.121.121.074.155a.325.325 0 00.34.181.322.322 0 00.273-.272.322.322 0 00-.181-.34l-.155-.074-.121-.122-3.53-3.53-.708-.707.708-.707 3.365-3.366a.324.324 0 00-.35-.35l-3.366 3.365-.707.707-.708-.707-3.365-3.366a.325.325 0 00-.35.351l3.365 3.366.707.707-.707.707-3.366 3.365a.324.324 0 00.351.351l3.365-3.365.708-.707z"
 					}), d.a.createElement("path", {
@@ -408,10 +408,10 @@
 			}
 			re.size = 52;
 			var ne = a("./src/reddit/components/LayersEmbed/icons/DragHandlerGrapple/index.m.less"),
-				ce = a.n(ne);
+				oe = a.n(ne);
 
-			function oe() {
-				return (oe = Object.assign || function(e) {
+			function ce() {
+				return (ce = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -419,8 +419,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var ie = e => d.a.createElement("svg", oe({
-					className: ce.a.dragHandlerGrapple,
+			var ie = e => d.a.createElement("svg", ce({
+					className: oe.a.dragHandlerGrapple,
 					viewBox: "0 0 38 20"
 				}, e), d.a.createElement("g", null, d.a.createElement("path", {
 					d: "M8,2 C8,2 9,2 9,3 L9,5 C9,5 8,6 8,6 L6,6 C5,6 5,5 5,5 L5,3 C5,2 5,2 6,2 L8,2 Z M14,2 C14,2 15,2 15,3 L15,5 C15,5 14,6 14,6 L12,6 C11,6 11,5 11,5 L11,3 C11,2 11,2 12,2 L14,2 Z M20,2 C20,2 21,2 21,3 L21,5 C21,5 20,6 20,6 L18,6 C17,6 17,5 17,5 L17,3 C17,2 17,2 18,2 L20,2 Z M26,2 C26,2 27,2 27,3 L27,5 C27,5 26,6 26,6 L24,6 C25,6 23,5 23,5 L23,3 C23,2 23,2 24,2 L26,2 Z M32,2 C32,2 33,2 33,3 L33,5 C33,5 32,6 32,6 L30,6 C31,6 29,5 29,5 L29,3 C29,2 29,2 30,2 L32,2 Z M8,8 C8,8 9,8 9,9 L9,11 C9,11 8,12 8,12 L6,12 C5,12 5,11 5,11 L5,9 C5,8 5,8 6,8 L8,8 Z M14,8 C14,8 15,8 15,9 L15,11 C15,11 14,12 14,12 L12,12 C11,12 11,11 11,11 L11,9 C11,8 11,8 12,8 L14,8 Z M20,8 C20,8 21,8 21,9 L21,11 C21,11 20,12 20,12 L18,12 C17,12 17,11 17,11 L17,9 C17,8 17,8 18,8 L20,8 Z M26,8 C26,8 27,8 27,9 L27,11 C27,11 26,12 26,12 L24,12 C23,12 23,11 23,11 L23,9 C23,8 23,8 24,8 L26,8 Z M32,8 C32,8 33,8 33,9 L33,11 C33,11 32,12 32,12 L30,12 C29,12 29,11 29,11 L29,9 C29,8 29,8 30,8 L32,8 Z M8,14 C8,14 9,14 9,15 L9,17 C9,17 8,18 8,18 L6,18 C5,18 5,17 5,17 L5,15 C5,14 5,14 6,14 L8,14 Z M14,14 C14,14 15,14 15,15 L15,17 C15,17 14,18 14,18 L12,18 C11,18 11,17 11,17 L11,15 C11,14 11,14 12,14 L14,14 Z M20,14 C20,14 21,14 21,15 L21,17 C21,17 20,18 20,18 L18,18 C17,18 17,17 17,17 L17,15 C17,14 17,14 18,14 L20,14 Z M26,14 C26,14 27,14 27,15 L27,17 C27,17 26,18 26,18 L24,18 C23,18 23,17 23,17 L23,15 C23,14 23,14 24,14 L26,14 Z M32,14 C32,14 33,14 33,15 L33,17 C33,17 32,18 32,18 L30,18 C29,18 29,17 29,17 L29,15 C29,14 29,14 30,14 L32,14 Z"
@@ -517,7 +517,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Ee = e => d.a.createElement("svg", ge({
+			var xe = e => d.a.createElement("svg", ge({
 					width: 86,
 					height: 18.174
 				}, e), d.a.createElement("defs", null, d.a.createElement("clipPath", {
@@ -676,9 +676,9 @@
 					d: "M84.277 16.774l.33-2.984a3.306 3.306 0 01-1.059-1.257 3.211 3.211 0 01-1.317-1.461 3.216 3.216 0 00-.88-1.109c1.657-1.058 3.133-2.632 3.133-4.85a4.7 4.7 0 00-.594-2.388 8.641 8.641 0 00-4.959-1.327h-6.758v15.375h3.482v-5.108a2.543 2.543 0 012.349 1.646 3.168 3.168 0 011.446 1.709 9.417 9.417 0 00.569 1.04 4.156 4.156 0 002.473.713zm-5.45-7.481h-1.89V7.899h-1.283V3.745h1.787c1.165 0 2.159.441 2.348 1.544a1.741 1.741 0 011.317 1.785 2.1 2.1 0 01-2.279 2.219z",
 					fill: "#1e2a3e"
 				})))))),
-				xe = a("./src/lib/classNames/index.ts"),
-				ve = a("./src/reddit/components/LayersEmbed/LayersCanvas/DragHandler/index.m.less"),
-				be = a.n(ve);
+				Ee = a("./src/lib/classNames/index.ts"),
+				be = a("./src/reddit/components/LayersEmbed/LayersCanvas/DragHandler/index.m.less"),
+				ve = a.n(be);
 
 			function Le() {
 				return (Le = Object.assign || function(e) {
@@ -694,7 +694,7 @@
 					const {
 						className: e,
 						style: t
-					} = this.props, a = Object(xe.a)(be.a.dragHandle, e), s = Object.assign({
+					} = this.props, a = Object(Ee.a)(ve.a.dragHandle, e), s = Object.assign({
 						height: Se.height
 					}, t || {});
 					return d.a.createElement("div", Le({}, this.props, {
@@ -705,13 +705,13 @@
 			}
 			Se.height = 25;
 			var Ce = Se,
-				Ie = a("./src/reddit/components/Scroller/Simple.tsx"),
-				we = a("./src/reddit/controls/Typography/index.tsx"),
+				we = a("./src/reddit/components/Scroller/Simple.tsx"),
+				Ie = a("./src/reddit/controls/Typography/index.tsx"),
 				Pe = a("./src/reddit/actions/post.ts"),
 				ke = a("./src/reddit/actions/reportFlow.ts"),
 				Me = a("./src/reddit/components/OverflowMenu/index.tsx"),
-				je = a("./src/reddit/components/ReportFlow/index.tsx"),
-				Oe = a("./src/reddit/controls/Dropdown/Row.tsx");
+				Oe = a("./src/reddit/components/ReportFlow/index.tsx"),
+				je = a("./src/reddit/controls/Dropdown/Row.tsx");
 
 			function _e() {
 				return (_e = Object.assign || function(e) {
@@ -728,10 +728,10 @@
 				}, e), d.a.createElement("path", {
 					d: "M18.4,11.1l-2.6-1.3l2.9-1.5c0.3-0.2,0.5-0.4,0.5-0.6c0-0.2-0.2-0.5-0.5-0.6l-7.7-3.9C10.8,3.1,10.4,3,10,3 C9.6,3,9.3,3.1,9,3.2L1.2,7.1C0.9,7.3,0.7,7.5,0.7,7.7c0,0.2,0.2,0.5,0.5,0.6l2.9,1.5l-2.6,1.3c-0.5,0.2-0.8,0.7-0.8,1.1 c0,0.5,0.3,0.9,0.8,1.1l7.2,3.6c0.3,0.2,0.8,0.3,1.2,0.3c0.5,0,0.9-0.1,1.2-0.3l7.2-3.6c0.5-0.2,0.8-0.7,0.8-1.1 C19.2,11.7,18.9,11.3,18.4,11.1z M9,12.2l0-4L7.2,8.1l2.8-3l2.8,3.1h-1.9l0.1,4l3.2-1.6l3.1,1.6l-6.8,3.4c-0.1,0.1-0.4,0.1-0.6,0.1 c-0.2,0-0.4,0-0.6-0.1l-6.8-3.4l3.1-1.6L9,12.2z"
 				})),
-				Re = a("./src/reddit/components/LayersEmbed/LayersPanel/PanelEntry/index.m.less"),
-				Be = a.n(Re);
+				Be = a("./src/reddit/components/LayersEmbed/LayersPanel/PanelEntry/index.m.less"),
+				Re = a.n(Be);
 			const Ne = Object(u.c)({
-				currentUserId: e => B()(e, "user.account.id", null),
+				currentUserId: e => R()(e, "user.account.id", null),
 				reportFlowIsOpen: (e, t) => {
 					let {
 						layer: a
@@ -739,7 +739,7 @@
 					return e.reportFlow.postOrCommentId === ke.a + a.postId
 				}
 			});
-			var Ae = Object(h.b)(Ne, e => ({
+			var Te = Object(h.b)(Ne, e => ({
 					onViewPostClick: t => {
 						const a = {
 							permalink: t
@@ -756,8 +756,8 @@
 						dropdownId: s,
 						isActive: r,
 						isCreationEnabled: n,
-						isSurfacingEnabled: c,
-						isModerator: o,
+						isSurfacingEnabled: o,
+						isModerator: c,
 						layer: i,
 						reportFlowIsOpen: l,
 						onLayerSelect: h,
@@ -767,49 +767,49 @@
 						showDeleteModal: f,
 						onAddLayerToSurface: y,
 						onRemoveLayerFromSurface: g,
-						isSurfaced: E
+						isSurfaced: x
 					} = e;
 					return d.a.createElement("div", {
-						className: Object(xe.a)(Be.a.container, r ? Be.a.active : void 0, t),
+						className: Object(Ee.a)(Re.a.container, r ? Re.a.active : void 0, t),
 						onClick: h
 					}, d.a.createElement("img", {
-						className: Be.a.image,
+						className: Re.a.image,
 						src: i.imageUrl,
 						alt: i.name
 					}), d.a.createElement("div", {
-						className: Be.a.verticalRule
-					}), d.a.createElement(we.b, {
-						className: Be.a.name,
-						title: Object(D.c)("Layer ".concat(i.id))
-					}, Object(D.c)("Layer ".concat(i.id))), c && d.a.createElement(Fe, {
-						className: Object(xe.a)(Be.a.surfaceIcon, E ? Be.a.surfaceRemove : Be.a.surfaceAdd),
-						onClick: E ? g : y
+						className: Re.a.verticalRule
+					}), d.a.createElement(Ie.b, {
+						className: Re.a.name,
+						title: Object(z.c)("Layer ".concat(i.id))
+					}, Object(z.c)("Layer ".concat(i.id))), o && d.a.createElement(Fe, {
+						className: Object(Ee.a)(Re.a.surfaceIcon, x ? Re.a.surfaceRemove : Re.a.surfaceAdd),
+						onClick: x ? g : y
 					}), d.a.createElement(Me.b, {
-						className: Be.a.overflow,
+						className: Re.a.overflow,
 						dropdownId: s,
 						icon: d.a.createElement(ye, null)
-					}, d.a.createElement(Oe.b, {
+					}, d.a.createElement(je.b, {
 						onClick: () => u(i.postUrl),
-						displayText: Object(D.c)("View Post")
-					}), n && d.a.createElement(Oe.b, {
+						displayText: Object(z.c)("View Post")
+					}), n && d.a.createElement(je.b, {
 						onClick: () => m(i.imageUrl, i.box),
-						displayText: Object(D.c)("Use as Reference")
-					}), i.authorId && i.authorId !== a && d.a.createElement(Oe.b, {
+						displayText: Object(z.c)("Use as Reference")
+					}), i.authorId && i.authorId !== a && d.a.createElement(je.b, {
 						onClick: () => p(i.postId),
-						displayText: Object(D.c)("Report")
-					}), o && d.a.createElement(Oe.b, {
+						displayText: Object(z.c)("Report")
+					}), c && d.a.createElement(je.b, {
 						onClick: f,
-						displayText: Object(D.c)("Delete Post")
-					})), l && d.a.createElement(je.a, {
+						displayText: Object(z.c)("Delete Post")
+					})), l && d.a.createElement(Oe.a, {
 						withOverlay: !0,
-						overlayCustomStyles: je.b,
+						overlayCustomStyles: Oe.b,
 						postId: i.postId
 					}))
 				}),
-				Te = a("./src/reddit/icons/svgs/Plus/index.tsx"),
-				ze = a("./src/reddit/components/LayersEmbed/LayersCanvas/Inspector/index.m.less"),
-				De = a.n(ze);
-			class He extends d.a.PureComponent {
+				Ae = a("./src/reddit/icons/svgs/Plus/index.tsx"),
+				De = a("./src/reddit/components/LayersEmbed/LayersCanvas/Inspector/index.m.less"),
+				ze = a.n(De);
+			class qe extends d.a.PureComponent {
 				constructor() {
 					super(...arguments), this.scrollContainerId = "layers-inspector-scroll-container", this.estimatedEntryHeightPx = 40, this.loaderSizePx = 10, this.getContainer = () => document.getElementById(this.scrollContainerId), this.onLayerSelectFromInspector = e => () => this.props.onLayerSelect(e, !0), this.onAddLayerToSurface = e => () => this.props.addLayerToSurface(e), this.onRemoveLayerFromSurface = e => () => this.props.removeLayerFromSurface(e)
 				}
@@ -821,8 +821,8 @@
 						layers: s,
 						loading: r,
 						loadError: n,
-						point: c,
-						show: o,
+						point: o,
+						show: c,
 						onAddLayer: i,
 						onLoadMore: l,
 						onReferenceClick: h,
@@ -831,20 +831,20 @@
 						surfaces: p,
 						currentSurfaceId: f
 					} = this.props;
-					if (!o || !c) return null;
+					if (!c || !o) return null;
 					let y;
-					if (n) y = d.a.createElement(we.d, {
-						className: De.a.text
-					}, Object(D.c)("Load error"));
-					else if (s && 0 === s.length) y = d.a.createElement(we.d, {
-						className: De.a.text
-					}, Object(D.c)("None"));
+					if (n) y = d.a.createElement(Ie.d, {
+						className: ze.a.text
+					}, Object(z.c)("Load error"));
+					else if (s && 0 === s.length) y = d.a.createElement(Ie.d, {
+						className: ze.a.text
+					}, Object(z.c)("None"));
 					else {
 						const a = s && s.length ? s[s.length - 1].id : void 0;
 						y = s && d.a.createElement("div", {
 							id: this.scrollContainerId,
-							className: De.a.layers
-						}, d.a.createElement(Ie.b, {
+							className: ze.a.layers
+						}, d.a.createElement(we.b, {
 							getContainer: this.getContainer,
 							loadMoreToken: a,
 							onLoadMore: l,
@@ -855,13 +855,13 @@
 							return {
 								estHeight: this.estimatedEntryHeightPx,
 								id: r ? "surfaced-".concat(a.id) : a.id,
-								render: () => d.a.createElement(Ae, {
+								render: () => d.a.createElement(Te, {
 									onAddLayerToSurface: this.onAddLayerToSurface(a),
 									onRemoveLayerFromSurface: this.onRemoveLayerFromSurface(a.id),
 									isSurfaced: r,
 									isModerator: u,
 									showDeleteModal: m(a.postId),
-									className: De.a.layer,
+									className: ze.a.layer,
 									dropdownId: "inspector-".concat(a.id),
 									isActive: a.id === this.props.activeLayerId,
 									isCreationEnabled: e,
@@ -875,30 +875,30 @@
 						}))) || null
 					}
 					const g = {
-						left: c.x + He.baseOffsetPx + a.x,
-						top: c.y + He.baseOffsetPx + a.y
+						left: o.x + qe.baseOffsetPx + a.x,
+						top: o.y + qe.baseOffsetPx + a.y
 					};
 					return d.a.createElement("div", {
-						className: De.a.container,
+						className: ze.a.container,
 						style: g
 					}, d.a.createElement("div", {
-						className: De.a.header
-					}, d.a.createElement(we.e, {
-						className: De.a.title
-					}, Object(D.c)("LAYERS HERE:")), r && d.a.createElement(L.a, {
-						className: De.a.loader,
+						className: ze.a.header
+					}, d.a.createElement(Ie.e, {
+						className: ze.a.title
+					}, Object(z.c)("LAYERS HERE:")), r && d.a.createElement(L.a, {
+						className: ze.a.loader,
 						sizePx: this.loaderSizePx
 					}), e && d.a.createElement("div", {
-						className: De.a.addLayerIcon,
+						className: ze.a.addLayerIcon,
 						onClick: i
-					}, d.a.createElement(Te.a, null))), y)
+					}, d.a.createElement(Ae.a, null))), y)
 				}
 			}
-			He.baseOffsetPx = 5;
-			var qe = He,
-				We = a("./src/reddit/components/LayersEmbed/LayersCanvas/index.m.less"),
-				Ge = a.n(We);
-			const Ue = "url(".concat(G.a.assetPath, "/img/transparency-background.png)");
+			qe.baseOffsetPx = 5;
+			var He = qe,
+				Ge = a("./src/reddit/components/LayersEmbed/LayersCanvas/index.m.less"),
+				We = a.n(Ge);
+			const Ue = "url(".concat(W.a.assetPath, "/img/transparency-background.png)");
 			class Ze extends d.a.Component {
 				constructor(e) {
 					super(e), this._canvas = d.a.createRef(), this._picker = d.a.createRef(), this.ctx = null, this.image = new Image, this.ws = null, this.wsMessageProcessTimeout = 5e3, this.layerInspectorElementOffset = {
@@ -1014,16 +1014,16 @@
 						e.drawImage(this.image, 0, 0, t, a)
 					}, this.highlightLayer = (e, t, a) => {
 						if (!e || !t) return;
-						const s = B()(t, "box.startPoint"),
-							r = B()(t, "box.endPoint");
+						const s = R()(t, "box.startPoint"),
+							r = R()(t, "box.endPoint");
 						if (!(s && r && s.x && s.y && r.x && r.y)) return;
 						const n = r.x - s.x,
-							c = r.y - s.y;
-						a && (e.strokeStyle = a, e.beginPath(), e.rect(s.x, s.y, n, c), e.closePath(), e.stroke());
-						const o = new Image;
-						o.onload = () => {
-							e.drawImage(o, s.x, s.y, n, c)
-						}, o.src = t.imageUrl
+							o = r.y - s.y;
+						a && (e.strokeStyle = a, e.beginPath(), e.rect(s.x, s.y, n, o), e.closePath(), e.stroke());
+						const c = new Image;
+						c.onload = () => {
+							e.drawImage(c, s.x, s.y, n, o)
+						}, c.src = t.imageUrl
 					}, this.highlightInspectedArea = e => {
 						const {
 							showInspector: t,
@@ -1043,20 +1043,20 @@
 							s = e.width / e.offsetWidth,
 							r = this.pickerBox.width / 2,
 							n = this.pickerBox.height,
-							c = Ce.height * s / 2;
+							o = Ce.height * s / 2;
 						return {
 							x: a.x - r,
-							y: a.y - (n + c)
+							y: a.y - (n + o)
 						}
 					}, this.getTouchCanvasPosition = (e, t) => {
 						const a = e.getBoundingClientRect(),
 							s = a.left,
 							r = a.top,
 							n = e.width / e.offsetWidth,
-							c = t.targetTouches[0];
-						return c ? {
-							x: (c.clientX - s) * n,
-							y: (c.clientY - r) * n
+							o = t.targetTouches[0];
+						return o ? {
+							x: (o.clientX - s) * n,
+							y: (o.clientY - r) * n
 						} : {
 							x: 0,
 							y: 0
@@ -1093,8 +1093,8 @@
 							}
 						}, n = document.createElement("canvas");
 						if (!n) return;
-						const c = n.getContext("2d");
-						c && (n.width = a, n.height = s, c.drawImage(this.image, e, t, a, s, 0, 0, a, s), this.props.onBackgroundSelect(n.toDataURL(), r), this.setState({
+						const o = n.getContext("2d");
+						o && (n.width = a, n.height = s, o.drawImage(this.image, e, t, a, s, 0, 0, a, s), this.props.onBackgroundSelect(n.toDataURL(), r), this.setState({
 							showConfirmButtons: !1
 						}, this.updateCanvasEventHandlers))
 					}, this.getLayerBackgroundFromInspector = () => {
@@ -1156,12 +1156,12 @@
 					const {
 						x: a,
 						y: s
-					} = t, r = this.inspectedAreaSize, n = a + r > e.width ? Math.abs(e.width - a - r) : 0, c = s + r > e.height ? Math.abs(e.height - s - r) : 0, o = {
+					} = t, r = this.inspectedAreaSize, n = a + r > e.width ? Math.abs(e.width - a - r) : 0, o = s + r > e.height ? Math.abs(e.height - s - r) : 0, c = {
 						x: a > r ? a - r - n : 0,
-						y: s > r ? s - r - c : 0
-					}, i = 0 === o.x ? Math.abs(a - r) : 0, l = 0 === o.y ? Math.abs(s - r) : 0;
+						y: s > r ? s - r - o : 0
+					}, i = 0 === c.x ? Math.abs(a - r) : 0, l = 0 === c.y ? Math.abs(s - r) : 0;
 					return {
-						startPoint: o,
+						startPoint: c,
 						endPoint: {
 							x: a + r < e.width ? a + r + i : e.width,
 							y: s + r < e.height ? s + r + l : e.height
@@ -1183,8 +1183,8 @@
 						isPickerBoxEnabled: s,
 						layersConfig: r,
 						layersInspected: n,
-						onLayerSelect: c,
-						onBackgroundSelect: o,
+						onLayerSelect: o,
+						onBackgroundSelect: c,
 						layersInspectedRequestInProgress: i,
 						layersInspectedRequestFailed: l,
 						isModerator: h,
@@ -1195,29 +1195,29 @@
 						removeLayerFromSurface: y
 					} = this.props, {
 						showConfirmButtons: g,
-						showInspector: E,
-						inspectedPoint: x
-					} = this.state, v = this.confirmPosition.y - re.size / 2, b = {
-						top: v,
+						showInspector: x,
+						inspectedPoint: E
+					} = this.state, b = this.confirmPosition.y - re.size / 2, v = {
+						top: b,
 						left: this.confirmPosition.x
 					}, L = {
-						top: v,
+						top: b,
 						left: this.cancelPosition.x
 					}, {
 						width: S,
 						height: C
-					} = r.canvasImage, I = s && !g, w = {
-						cursor: I ? "none" : "pointer",
+					} = r.canvasImage, w = s && !g, I = {
+						cursor: w ? "none" : "pointer",
 						backgroundImage: Ue
 					}, P = this.canvas ? this.canvas.width / this.canvas.offsetWidth : 1;
 					return d.a.createElement(d.a.Fragment, null, d.a.createElement("canvas", {
 						width: S,
 						height: C,
 						ref: this._canvas,
-						style: w,
+						style: I,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeaveCanvas
-					}), d.a.createElement(qe, {
+					}), d.a.createElement(He, {
 						surfaces: m,
 						currentSurfaceId: p,
 						addLayerToSurface: f,
@@ -1228,26 +1228,26 @@
 						isModerator: h,
 						openDeleteModal: u,
 						layerInspectorElementOffset: this.layerInspectorElementOffset,
-						show: E,
-						point: x,
+						show: x,
+						point: E,
 						layers: n,
 						loading: i,
 						loadError: l,
 						onAddLayer: this.getLayerBackgroundFromInspector,
 						onLoadMore: this.onLoadMoreInspectedLayers,
-						onLayerSelect: c,
-						onReferenceClick: o
+						onLayerSelect: o,
+						onReferenceClick: c
 					}), s && g && d.a.createElement(d.a.Fragment, null, d.a.createElement(ee, {
 						onClick: this.continueBackgroundSelection,
 						style: L
 					}), d.a.createElement(re, {
 						onClick: this.getLayerBackground,
-						style: b
+						style: v
 					})), s && d.a.createElement("div", {
-						className: Ge.a.picker,
+						className: We.a.picker,
 						ref: this._picker,
 						style: {
-							cursor: I ? "none" : "default",
+							cursor: w ? "none" : "default",
 							left: Math.floor(this.pickerBox.x / P),
 							top: Math.floor(this.pickerBox.y / P),
 							height: Math.floor(this.pickerBox.height / P),
@@ -1264,40 +1264,40 @@
 				}
 			}
 			var Ve = Ze,
-				Je = (a("./node_modules/core-js/modules/es6.array.sort.js"), a("./node_modules/fbt/lib/FbtPublic.js")),
-				Ye = a("./src/lib/copyToClipboard/index.ts"),
+				Ye = (a("./node_modules/core-js/modules/es6.array.sort.js"), a("./node_modules/fbt/lib/FbtPublic.js")),
+				Je = a("./src/lib/copyToClipboard/index.ts"),
 				Xe = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				Qe = a("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				Ke = a("./src/reddit/icons/svgs/LayerDuplicate/index.tsx"),
+				Ke = a("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				Qe = a("./src/reddit/icons/svgs/LayerDuplicate/index.tsx"),
 				$e = a("./src/reddit/icons/svgs/Share/index.tsx"),
 				et = a("./src/reddit/icons/svgs/Trash/index.tsx"),
 				tt = a("./src/reddit/icons/svgs/Pencil/index.tsx"),
 				at = a("./src/reddit/components/LayersEmbed/LayersPanel/DraftLayer/index.m.less"),
 				st = a.n(at);
 			var rt = e => d.a.createElement("div", {
-					className: Object(xe.a)(Be.a.container, st.a.container)
+					className: Object(Ee.a)(Re.a.container, st.a.container)
 				}, d.a.createElement(tt.a, {
 					className: st.a.pencilIcon,
 					onClick: e.onEditDraft
 				}), d.a.createElement("div", {
-					className: Be.a.verticalRule
-				}), d.a.createElement(we.b, {
-					className: Be.a.name,
-					title: Object(D.c)("Layer Draft")
-				}, Object(D.c)("Layer Draft")), d.a.createElement(et.a, {
+					className: Re.a.verticalRule
+				}), d.a.createElement(Ie.b, {
+					className: Re.a.name,
+					title: Object(z.c)("Layer Draft")
+				}, Object(z.c)("Layer Draft")), d.a.createElement(et.a, {
 					className: st.a.trashIcon,
 					onClick: e.onDeleteDraft
 				})),
 				nt = a("./src/reddit/components/LayersEmbed/LayersPanel/Footer/index.m.less"),
-				ct = a.n(nt);
-			var ot = () => d.a.createElement("div", {
-					className: ct.a.footer
+				ot = a.n(nt);
+			var ct = () => d.a.createElement("div", {
+					className: ot.a.footer
 				}, d.a.createElement("a", {
 					"data-redditstyle": !0,
 					href: "https://www.reddit.com/r/Layer/comments/cxkwxu/the_layer_maker_quick_start_guide_user_manual/",
 					target: "_blank"
 				}, d.a.createElement(ue, {
-					className: ct.a.help
+					className: ot.a.help
 				}))),
 				it = a("./src/reddit/components/LayersEmbed/LayersPanel/Header/index.m.less"),
 				lt = a.n(it);
@@ -1312,23 +1312,23 @@
 						onAddLayerClick: r,
 						onExpandSurfacesClick: n
 					} = e;
-					const c = Object(xe.a)(lt.a.icon, lt.a.addLayer, {
+					const o = Object(Ee.a)(lt.a.icon, lt.a.addLayer, {
 							[lt.a.addLayerActive]: t
 						}),
-						o = Object(D.c)("<< SELECT AN AREA FOR YOUR LAYER");
+						c = Object(z.c)("<< SELECT AN AREA FOR YOUR LAYER");
 					return d.a.createElement("div", {
 						className: lt.a.header
-					}, t ? d.a.createElement(we.b, {
+					}, t ? d.a.createElement(Ie.b, {
 						className: lt.a.selectLayerMessage,
-						title: o
-					}, o) : d.a.createElement(d.a.Fragment, null, d.a.createElement(fe, {
+						title: c
+					}, c) : d.a.createElement(d.a.Fragment, null, d.a.createElement(fe, {
 						className: lt.a.icon
-					}), d.a.createElement(Ee, {
+					}), d.a.createElement(xe, {
 						className: lt.a.wordmark
 					})), a ? d.a.createElement(X, {
 						isRotated: t,
 						onClick: r,
-						className: c
+						className: o
 					}) : s ? d.a.createElement(Fe, {
 						className: lt.a.surfaceIcon,
 						onClick: n
@@ -1349,8 +1349,8 @@
 					type: "search"
 				})),
 				gt = a("./src/reddit/components/LayersEmbed/LayersPanel/index.m.less"),
-				Et = a.n(gt);
-			class xt extends d.a.Component {
+				xt = a.n(gt);
+			class Et extends d.a.Component {
 				constructor(e) {
 					super(e), this.scrollContainerId = "layers-embed-scroll-container", this.estimatedEntryHeightPx = 40, this.getContainer = () => document.getElementById(this.scrollContainerId), this.onLayerSelectFromPanelFactory = e => () => this.props.onLayerSelect(e, !1), this.onToggleSurfaceFactory = e => () => this.props.toggleSurface(e), this.onDuplicateSurfaceFactory = e => t => {
 						t.stopPropagation(), this.props.duplicateSurface(e)
@@ -1363,16 +1363,16 @@
 							surfaces: s,
 							toggleSurface: r
 						} = this.props, n = s[e] || [];
-						if (!n.length) return void this.props.showToast(Object(f.d)(Je.fbt._("Surface is empty", null, {
+						if (!n.length) return void this.props.showToast(Object(f.d)(Ye.fbt._("Surface is empty", null, {
 							hk: "3Ek7Zj"
-						}), H.b.Error));
-						const c = n.map(e => e.id).join(","),
-							o = "".concat(window.location.origin, "/r/").concat(this.props.subredditName, "/?surfaceLayers=").concat(c);
-						Object(Ye.a)(o) ? this.props.showToast(Object(f.d)(Je.fbt._("Link has been copied", null, {
+						}), q.b.Error));
+						const o = n.map(e => e.id).join(","),
+							c = "".concat(window.location.origin, "/r/").concat(this.props.subredditName, "/?surfaceLayers=").concat(o);
+						Object(Je.a)(c) ? this.props.showToast(Object(f.d)(Ye.fbt._("Link has been copied", null, {
 							hk: "3tMDVE"
-						}), H.b.SuccessCommunityGreen)) : this.props.showToast(Object(f.d)(Je.fbt._("Something went wrong", null, {
+						}), q.b.SuccessCommunityGreen)) : this.props.showToast(Object(f.d)(Ye.fbt._("Something went wrong", null, {
 							hk: "1z7tqe"
-						}), H.b.Error)), a !== e && r(e)
+						}), q.b.Error)), a !== e && r(e)
 					}, this.toggleExpandSurfacesPanel = () => this.setState(e => ({
 						isSurfacingPanelExpanded: !e.isSurfacingPanelExpanded
 					})), this.toggleExpandSurfaceFactory = e => t => {
@@ -1405,8 +1405,8 @@
 						isLoading: s,
 						isCreationEnabled: r,
 						isSurfacingEnabled: n,
-						isPickerBoxEnabled: c,
-						layersSearchValue: o,
+						isPickerBoxEnabled: o,
+						layersSearchValue: c,
 						layers: i,
 						layersSearchResult: l,
 						layersSearchRequestCompleted: h,
@@ -1415,24 +1415,24 @@
 						onReferenceClick: p,
 						onEditDraft: f,
 						onDeleteDraft: y,
-						onLayersSearch: v,
-						surfaces: b,
+						onLayersSearch: b,
+						surfaces: v,
 						addSurface: S,
 						currentSurfaceId: C,
-						isSurfaceLoading: I
+						isSurfaceLoading: w
 					} = this.props, {
-						isSurfaceExpanded: w,
+						isSurfaceExpanded: I,
 						isSurfacingPanelExpanded: P
 					} = this.state;
 					let k, M;
-					l && l.length ? k = l : h && o.length > 1 ? k = l : (k = i, M = i && i.length ? i[i.length - 1].id : void 0);
-					const j = C ? b[C] : null,
-						O = k ? k.map(a => {
-							const s = !!j && !!j.find(e => a.id === e.id);
+					l && l.length ? k = l : h && c.length > 1 ? k = l : (k = i, M = i && i.length ? i[i.length - 1].id : void 0);
+					const O = C ? v[C] : null,
+						j = k ? k.map(a => {
+							const s = !!O && !!O.find(e => a.id === e.id);
 							return {
 								estHeight: this.estimatedEntryHeightPx,
 								id: s ? "surfaced-".concat(a.id) : a.id,
-								render: () => d.a.createElement(Ae, {
+								render: () => d.a.createElement(Te, {
 									onAddLayerToSurface: this.onAddLayerToSurfaceFactory(a),
 									onRemoveLayerFromSurface: this.onRemoveLayerFromSurfaceFactory(a.id),
 									isSurfaced: s,
@@ -1449,68 +1449,68 @@
 								})
 							}
 						}) : [],
-						_ = Object.keys(b).length,
-						F = I ? d.a.createElement(L.a, {
+						_ = Object.keys(v).length,
+						F = w ? d.a.createElement(L.a, {
 							center: !0,
 							sizePx: g / 2
-						}) : _ < E ? d.a.createElement("p", {
-							className: Et.a.addSurface,
+						}) : _ < x ? d.a.createElement("p", {
+							className: xt.a.addSurface,
 							onClick: S
-						}, d.a.createElement(Te.a, {
-							className: Et.a.surfaceIconPlus
-						}), Je.fbt._("Add new surface", null, {
+						}, d.a.createElement(Ae.a, {
+							className: xt.a.surfaceIconPlus
+						}), Ye.fbt._("Add new surface", null, {
 							hk: "8n8YY"
-						}), d.a.createElement(we.f, {
-							className: Et.a.surfacesCount
-						}, _, " / ", E)) : d.a.createElement("p", {
-							className: Et.a.surfaceHeaderText
-						}, Je.fbt._("Maximum number of surfaces reached", null, {
+						}), d.a.createElement(Ie.f, {
+							className: xt.a.surfacesCount
+						}, _, " / ", x)) : d.a.createElement("p", {
+							className: xt.a.surfaceHeaderText
+						}, Ye.fbt._("Maximum number of surfaces reached", null, {
 							hk: "heKT9"
 						}));
 					return d.a.createElement(d.a.Fragment, null, d.a.createElement(ht, {
-						isPickerBoxEnabled: c,
+						isPickerBoxEnabled: o,
 						isCreationEnabled: r,
 						isSurfacingEnabled: n,
 						onAddLayerClick: m,
 						onExpandSurfacesClick: this.toggleExpandSurfacesPanel
 					}), P && d.a.createElement(d.a.Fragment, null, d.a.createElement("div", {
-						className: Et.a.surfaceHeader
+						className: xt.a.surfaceHeader
 					}, F), d.a.createElement("div", {
-						className: Et.a.surfacesWrapper
+						className: xt.a.surfacesWrapper
 					}, d.a.createElement("div", {
-						className: Et.a.surfacesScroller
-					}, Object.keys(b).sort((e, t) => Number(e) - Number(t)).map(a => {
-						const s = b[a];
+						className: xt.a.surfacesScroller
+					}, Object.keys(v).sort((e, t) => Number(e) - Number(t)).map(a => {
+						const s = v[a];
 						return d.a.createElement(d.a.Fragment, {
 							key: "surface-".concat(a)
 						}, d.a.createElement("div", {
-							className: Object(xe.a)(Et.a.surfaceItem, C === a ? Et.a.surfaceActive : void 0),
+							className: Object(Ee.a)(xt.a.surfaceItem, C === a ? xt.a.surfaceActive : void 0),
 							onClick: this.onToggleSurfaceFactory(a)
 						}, d.a.createElement("p", {
-							className: Et.a.surfaceTitle
-						}, Je.fbt._("Surface {surfaceId}", [Je.fbt._param("surfaceId", a)], {
+							className: xt.a.surfaceTitle
+						}, Ye.fbt._("Surface {surfaceId}", [Ye.fbt._param("surfaceId", a)], {
 							hk: "17Jo0q"
-						}), d.a.createElement(we.f, {
-							className: Et.a.surfaceLayersCount
-						}, "".concat(s ? s.length : 0, "/").concat(x))), d.a.createElement("p", {
+						}), d.a.createElement(Ie.f, {
+							className: xt.a.surfaceLayersCount
+						}, "".concat(s ? s.length : 0, "/").concat(E))), d.a.createElement("p", {
 							onClick: this.onDuplicateSurfaceFactory(a)
-						}, d.a.createElement(Ke.a, {
-							className: Et.a.surfaceIcon
+						}, d.a.createElement(Qe.a, {
+							className: xt.a.surfaceIcon
 						})), d.a.createElement("p", {
 							onClick: this.copySurfaceUrlToClipboardFactory(a)
 						}, d.a.createElement($e.a, {
-							className: Et.a.surfaceIcon
+							className: xt.a.surfaceIcon
 						})), d.a.createElement("p", {
 							onClick: this.onRemoveSurfaceFactory(a)
 						}, d.a.createElement(et.a, {
-							className: Et.a.surfaceIcon
+							className: xt.a.surfaceIcon
 						})), d.a.createElement("p", {
 							onClick: this.toggleExpandSurfaceFactory(a)
-						}, C === a && w ? d.a.createElement(Qe.a, {
-							className: Et.a.surfaceIconBase
+						}, C === a && I ? d.a.createElement(Ke.a, {
+							className: xt.a.surfaceIconBase
 						}) : d.a.createElement(Xe.a, {
-							className: Et.a.surfaceIconBase
-						}))), C === a && w && (j && j.length ? j.map(s => d.a.createElement(Ae, {
+							className: xt.a.surfaceIconBase
+						}))), C === a && I && (O && O.length ? O.map(s => d.a.createElement(Te, {
 							onAddLayerToSurface: this.onAddLayerToSurfaceFactory(s),
 							onRemoveLayerFromSurface: this.onRemoveLayerFromSurfaceFactory(s.id),
 							isSurfaced: !0,
@@ -1525,39 +1525,39 @@
 							onLayerSelect: this.onLayerSelectFromPanelFactory(s),
 							onReferenceClick: p
 						})) : d.a.createElement("p", {
-							className: Et.a.surfaceEmptyText
-						}, Je.fbt._("Surface is empty, add some layers", null, {
+							className: xt.a.surfaceEmptyText
+						}, Ye.fbt._("Surface is empty, add some layers", null, {
 							hk: "3iXJZp"
 						}))))
 					})))), d.a.createElement(yt, {
-						value: o,
-						onSearchTextChange: v
+						value: c,
+						onSearchTextChange: b
 					}), d.a.createElement("div", {
 						id: this.scrollContainerId,
-						className: Et.a.scroller
+						className: xt.a.scroller
 					}, a && r && d.a.createElement(rt, {
 						onEditDraft: f,
 						onDeleteDraft: y
 					}), s ? d.a.createElement(L.a, {
 						center: !0,
-						className: Et.a.loader,
+						className: xt.a.loader,
 						sizePx: g
-					}) : d.a.createElement(Ie.b, {
+					}) : d.a.createElement(we.b, {
 						getContainer: this.getContainer,
 						loadMoreToken: M,
 						onLoadMore: u,
 						preventScrollOnMount: !0
-					}, O)), d.a.createElement(ot, null))
+					}, j)), d.a.createElement(ct, null))
 				}
 			}
-			var vt = xt,
-				bt = a("./src/reddit/components/LayersEmbed/index.m.less"),
-				Lt = a.n(bt);
+			var bt = Et,
+				vt = a("./src/reddit/components/LayersEmbed/index.m.less"),
+				Lt = a.n(vt);
 			const St = Object(u.c)({
-					isCreationEnabled: O.a,
-					isSurfacingEnabled: O.d,
-					isModerator: W.g,
-					layerDraft: q.b
+					isCreationEnabled: j.a,
+					isSurfacingEnabled: j.d,
+					isModerator: G.g,
+					layerDraft: H.b
 				}),
 				Ct = Object(h.b)(St, (e, t) => ({
 					openEditor: t => e(p.g(t)),
@@ -1567,7 +1567,7 @@
 						duration: f.a
 					})))
 				}));
-			class It extends d.a.Component {
+			class wt extends d.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.layersFetchLimit = 25, this.updateComponentHeightTimeoutMs = 500, this.updateComponentHeight = () => {
@@ -1598,9 +1598,9 @@
 						} = this.props;
 						if (this.state.layerToDeleteId)
 							if ((await Object(S.l)(e(), this.state.layerToDeleteId, !1)).ok) {
-								t(Object(f.d)(Object(D.c)("Post has been deleted"), H.b.SuccessMod))
+								t(Object(f.d)(Object(z.c)("Post has been deleted"), q.b.SuccessMod))
 							} else {
-								t(Object(f.d)(Object(D.c)("Post has not been deleted"), H.b.Error))
+								t(Object(f.d)(Object(z.c)("Post has not been deleted"), q.b.Error))
 							}
 					}, this.syncPersistedSurfaces = () => {
 						const e = Object.keys(this.state.surfaces).reduce((e, t) => {
@@ -1609,11 +1609,11 @@
 								[t]: a ? a.map(e => e.id) : null
 							})
 						}, {});
-						Object(T.X)(e)
+						Object(A.X)(e)
 					}, this.addSurface = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
 						const a = Object.keys(t.state.surfaces).length;
-						a >= 10 ? t.props.showToast(Object(f.d)(Object(D.c)("Maximum number of surfaces reached"), H.b.Error)) : t.setState(t => {
+						a >= 10 ? t.props.showToast(Object(f.d)(Object(z.c)("Maximum number of surfaces reached"), q.b.Error)) : t.setState(t => {
 							const a = t.latestSurfaceId + 1;
 							return {
 								latestSurfaceId: a,
@@ -1640,11 +1640,11 @@
 						} = this.state;
 						if (0 === Object.keys(a).length) return void this.addSurface([e]);
 						if (!t) {
-							const e = Object(f.d)(Object(D.c)("Please select surface to add layer."), H.b.Error);
+							const e = Object(f.d)(Object(z.c)("Please select surface to add layer."), q.b.Error);
 							return void this.props.showToast(e)
 						}
 						const s = this.state.surfaces[t];
-						s && (s.length >= x ? this.props.showToast(Object(f.d)(Object(D.c)("Layers per surface limit exceeded."), H.b.Error)) : this.setState(a => ({
+						s && (s.length >= E ? this.props.showToast(Object(f.d)(Object(z.c)("Layers per surface limit exceeded."), q.b.Error)) : this.setState(a => ({
 							surfaces: Object.assign({}, a.surfaces, {
 								[t]: [...s || [], e]
 							})
@@ -1679,10 +1679,10 @@
 								[t]: null
 							}), {}))
 						});
-						const c = [...new Set(s.reduce((e, t) => [...e, ...a[t]], []))],
-							o = await t.loadSurfaceByLayerIds(c);
-						if (!o) return;
-						const i = o.filter(Boolean).reduce((e, t) => Object.assign({}, e, {
+						const o = [...new Set(s.reduce((e, t) => [...e, ...a[t]], []))],
+							c = await t.loadSurfaceByLayerIds(o);
+						if (!c) return;
+						const i = c.filter(Boolean).reduce((e, t) => Object.assign({}, e, {
 								[t.id]: t
 							}), {}),
 							l = s.reduce((e, t) => Object.assign({}, e, {
@@ -1709,7 +1709,7 @@
 							this.props.openEditor({
 								background: a,
 								box: t
-							}), this.props.sendEvent(z.c)
+							}), this.props.sendEvent(D.c)
 						}, a.src = e, this.setState({
 							isPickerBoxEnabled: !1
 						})
@@ -1749,7 +1749,7 @@
 						let r = this.state.layers && this.state.layers.slice() || [],
 							n = !1;
 						if (s.ok) {
-							const e = A(s.body.data.subreddit)[t];
+							const e = T(s.body.data.subreddit)[t];
 							e && (r = e.layers && e.layers.length ? [...r, ...e.layers] : r, a = e.cursor || a)
 						} else n = !0;
 						this.setState({
@@ -1767,15 +1767,15 @@
 						const {
 							gqlContext: t,
 							subredditId: a
-						} = this.props, s = await j(t(), a, e);
+						} = this.props, s = await O(t(), a, e);
 						if (s.ok) {
 							const e = _(s.body.data.subreddit)[a];
-							return e && e.length ? this.props.showToast(Object(f.d)(Object(D.c)("Surfaces have been loaded"), H.b.SuccessCommunityGreen)) : this.props.showToast(Object(f.d)(Object(D.c)("Surfaces have not been loaded, something went wrong"), H.b.Error)), this.setState({
+							return e && e.length ? this.props.showToast(Object(f.d)(Object(z.c)("Surfaces have been loaded"), q.b.SuccessCommunityGreen)) : this.props.showToast(Object(f.d)(Object(z.c)("Surfaces have not been loaded, something went wrong"), q.b.Error)), this.setState({
 								surfaceLayersRequestInProgress: !1
 							}), e
 						}
 					}, this.getNormalizedLayersFromResponse = (e, t) => {
-						const a = A(e.body.data.subreddit)[t];
+						const a = T(e.body.data.subreddit)[t];
 						return a && a.layers || null
 					}, this.fetchInspectorLayersFromGql = async e => {
 						const {
@@ -1783,7 +1783,7 @@
 							subredditId: a
 						} = this.props;
 						let s = this.state.layersInspectedCursor;
-						c()(e, this.state.layersInspectedBox) ? this.setState({
+						o()(e, this.state.layersInspectedBox) ? this.setState({
 							layersInspectedRequestInProgress: !0,
 							layersInspectedRequestFailed: !1
 						}) : (s = "", this.setState({
@@ -1795,15 +1795,15 @@
 						}));
 						const r = await M(t(), a, this.layersFetchLimit, s, e);
 						let n = this.state.layersInspected && this.state.layersInspected.slice() || [],
-							o = !1;
+							c = !1;
 						if (r.ok) {
-							const e = A(r.body.data.subreddit)[a];
+							const e = T(r.body.data.subreddit)[a];
 							e && (n = e.layers && e.layers.length ? [...n, ...e.layers] : n, s = e.cursor || s)
-						} else o = !0;
+						} else c = !0;
 						this.setState({
 							layersInspected: n,
 							layersInspectedCursor: s,
-							layersInspectedRequestFailed: o,
+							layersInspectedRequestFailed: c,
 							layersInspectedRequestInProgress: !1
 						})
 					}, this.fetchSearchLayersFromGql = async () => {
@@ -1870,7 +1870,7 @@
 				componentDidMount() {
 					window.addEventListener("resize", this.debouncedUpdateComponentHeight), this.updateComponentHeight(), this.fetchLayersConfigFromGql(), this.fetchLayersFromGql();
 					const e = Object(m.a)().get("surfaceLayers"),
-						t = Object(T.x)() || {};
+						t = Object(A.x)() || {};
 					this.loadSurfaces(e, t)
 				}
 				componentWillUnmount() {
@@ -1884,8 +1884,8 @@
 						layers: s,
 						layersConfig: r,
 						layersSearchResult: n,
-						layersSearchValue: c,
-						layersRequestInProgress: o,
+						layersSearchValue: o,
+						layersRequestInProgress: c,
 						layersSearchedRequestInProgress: i,
 						layersSearchRequestCompleted: l,
 						shouldShowDeleteModal: h,
@@ -1894,19 +1894,19 @@
 						surfaceLayersRequestInProgress: p
 					} = this.state, {
 						isCreationEnabled: f,
-						isSurfacingEnabled: E,
-						isModerator: x,
-						subredditName: v,
-						showToast: b
+						isSurfacingEnabled: x,
+						isModerator: E,
+						subredditName: b,
+						showToast: v
 					} = this.props;
 					let S = null;
 					S = r ? d.a.createElement(Ve, {
 						activeLayer: e,
 						fetchInspectorLayers: this.fetchInspectorLayersFromGql,
 						isCreationEnabled: f,
-						isSurfacingEnabled: E,
+						isSurfacingEnabled: x,
 						isInspectorActiveLayer: t,
-						isModerator: x,
+						isModerator: E,
 						isPickerBoxEnabled: a,
 						layersConfig: r,
 						layersInspected: this.state.layersInspected,
@@ -1924,7 +1924,7 @@
 					}, d.a.createElement(L.a, {
 						sizePx: g
 					}));
-					const C = !s && o;
+					const C = !s && c;
 					return d.a.createElement("div", {
 						className: Lt.a.container
 					}, d.a.createElement("div", {
@@ -1938,15 +1938,15 @@
 							height: this.state.componentHeight
 						},
 						className: Lt.a.colPanel
-					}, d.a.createElement(vt, {
+					}, d.a.createElement(bt, {
 						activeLayerId: e && e.id || null,
 						isLoading: C || i,
 						isCreationEnabled: f,
-						isSurfacingEnabled: E,
+						isSurfacingEnabled: x,
 						isPickerBoxEnabled: a,
-						isModerator: x,
+						isModerator: E,
 						hasLayerDraft: !!this.props.layerDraft,
-						layersSearchValue: c,
+						layersSearchValue: o,
 						layers: s,
 						layersSearchResult: n,
 						layersSearchRequestCompleted: l,
@@ -1958,7 +1958,7 @@
 						onDeleteDraft: this.props.deleteLayerDraft,
 						onLayersSearch: this.handleSearchTextChange,
 						openDeleteModal: this.openDeleteModal,
-						subredditName: v,
+						subredditName: b,
 						surfaces: u,
 						currentSurfaceId: m,
 						addSurface: this.addSurface,
@@ -1968,18 +1968,97 @@
 						addLayerToSurface: this.addLayerToCurrentSurface,
 						removeLayerFromSurface: this.removeLayerFromSurface,
 						isSurfaceLoading: p,
-						showToast: b
-					})), x && h && this.state.layerToDeleteId && d.a.createElement(y.a, {
+						showToast: v
+					})), E && h && this.state.layerToDeleteId && d.a.createElement(y.a, {
 						toggleModal: this.hideDeleteModal,
 						onConfirm: this.deleteLayer,
-						actionText: Object(D.c)("delete post"),
-						headerText: Object(D.c)("Delete post?"),
-						modalText: Object(D.c)("Are you sure you want to delete this post? You can't undo this."),
+						actionText: Object(z.c)("delete post"),
+						headerText: Object(z.c)("Delete post?"),
+						modalText: Object(z.c)("Are you sure you want to delete this post? You can't undo this."),
 						withOverlay: !0
 					}))
 				}
 			}
-			t.default = Ct(Object(b.b)(Object(v.b)(It)))
+			t.default = Ct(Object(v.b)(Object(b.b)(wt)))
+		},
+		"./src/reddit/components/OverflowMenu/index.m.less": function(e, t, a) {
+			e.exports = {
+				_Dropdown: "ehsOqYO6dxn_Pf9Dzwu37",
+				dropdown: "ehsOqYO6dxn_Pf9Dzwu37",
+				MenuButton: "_2pFdCpgBihIaYh9DSMWBIu",
+				menuButton: "_2pFdCpgBihIaYh9DSMWBIu",
+				mIsEnabled: "uMPgOFYlCc5uvpa2Lbteu",
+				MenuIcon: "_38GxRFSqSC-Z2VLi5Xzkjy",
+				menuIcon: "_38GxRFSqSC-Z2VLi5Xzkjy",
+				DropdownRow: "_2DO72U0b_6CUw3msKGrnnT",
+				dropdownRow: "_2DO72U0b_6CUw3msKGrnnT"
+			}
+		},
+		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return L
+			}));
+			var s = a("./node_modules/react/index.js"),
+				r = a.n(s),
+				n = a("./node_modules/react-redux/es/index.js"),
+				o = a("./node_modules/reselect/es/index.js"),
+				c = a("./src/lib/classNames/index.ts"),
+				i = a("./src/lib/lessComponent.tsx"),
+				l = a("./src/reddit/actions/tooltip.ts"),
+				d = a("./src/reddit/i18n/utils.ts"),
+				h = a("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				u = a("./src/reddit/controls/Dropdown/index.tsx"),
+				m = a("./src/reddit/controls/Dropdown/Row.tsx"),
+				p = a("./src/reddit/icons/fonts/Menu/index.tsx"),
+				f = a("./src/reddit/selectors/tooltip.ts"),
+				y = a("./src/reddit/components/OverflowMenu/index.m.less"),
+				g = a.n(y);
+			const x = i.a.wrapped(u.a, "_Dropdown", g.a),
+				E = Object(h.a)(x),
+				b = i.a.button("MenuButton", g.a),
+				v = i.a.wrapped(p.a, "MenuIcon", g.a),
+				L = i.a.wrapped(m.b, "DropdownRow", g.a),
+				S = Object(o.c)({
+					dropdownIsOpen: (e, t) => {
+						let {
+							dropdownId: a
+						} = t;
+						return Object(f.b)(a)(e)
+					}
+				}),
+				C = Object(n.b)(S, (e, t) => {
+					let {
+						dropdownId: a
+					} = t;
+					return {
+						toggleDropdown: () => e(Object(l.h)({
+							tooltipId: a
+						}))
+					}
+				}),
+				w = e => t => {
+					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
+				};
+			t.b = C(e => r.a.createElement(b, {
+				"aria-expanded": e.dropdownIsOpen,
+				"aria-haspopup": !0,
+				"aria-label": Object(d.c)("more options"),
+				className: Object(c.a)(e.className, {
+					[g.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+				}),
+				disabled: e.disabled,
+				onClick: w(e),
+				onMouseDown: e.handleMouseDown,
+				id: e.dropdownId
+			}, e.icon ? e.icon : r.a.createElement(v, null), r.a.createElement(E, {
+				className: e.dropdownClassName,
+				isOpen: e.dropdownIsOpen,
+				tooltipId: e.dropdownId,
+				isFixed: e.isFixed,
+				targetPosition: e.targetPosition,
+				tooltipPosition: e.tooltipPosition
+			}, e.children)))
 		},
 		"./src/reddit/components/ReportFlow/index.tsx": function(e, t, a) {
 			"use strict";
@@ -1991,11 +2070,11 @@
 			const n = {
 					backgroundColor: a("./src/reddit/constants/colors.ts").a.overlayReportFlow
 				},
-				c = () => null;
+				o = () => null;
 			t.a = Object(s.a)({
-				ErrorComponent: c,
+				ErrorComponent: o,
 				getComponent: () => Object(r.a)(() => Promise.all([a.e("ReportFlow~ReportPage"), a.e("ReportFlow")]).then(a.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
-				LoadingComponent: c
+				LoadingComponent: o
 			})
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, a) {
@@ -2016,9 +2095,9 @@
 			a.d(t, "c", (function() {
 				return n
 			})), a.d(t, "b", (function() {
-				return c
-			})), a.d(t, "e", (function() {
 				return o
+			})), a.d(t, "e", (function() {
+				return c
 			})), a.d(t, "d", (function() {
 				return i
 			})), a.d(t, "a", (function() {
@@ -2035,7 +2114,7 @@
 						pageType: "layer_maker"
 					})
 				}),
-				c = e => t => Object.assign({
+				o = e => t => Object.assign({
 					source: "layer_maker",
 					action: "click",
 					noun: "create"
@@ -2049,7 +2128,7 @@
 						millis: e
 					}
 				}),
-				o = e => ({
+				c = e => ({
 					source: "layer_maker",
 					action: "click",
 					noun: "delete",
@@ -2093,10 +2172,10 @@
 			var s = a("./node_modules/react/index.js"),
 				r = a.n(s),
 				n = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				c = a("./src/lib/lessComponent.tsx"),
-				o = a("./src/reddit/helpers/defaultStyledSVG/index.m.less"),
-				i = a.n(o);
-			var l = e => c.a.wrapped(e, "defaultSVG", i.a),
+				o = a("./src/lib/lessComponent.tsx"),
+				c = a("./src/reddit/helpers/defaultStyledSVG/index.m.less"),
+				i = a.n(c);
+			var l = e => o.a.wrapped(e, "defaultSVG", i.a),
 				d = a("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			t.a = Object(n.a)(l(e => r.a.createElement("svg", {
 				className: e.className,
@@ -2128,4 +2207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LayersEmbed.88986391e82618dddebb.js.map
+//# sourceMappingURL=reddit-components-LayersEmbed.a0640635d88aa26a644c.js.map
