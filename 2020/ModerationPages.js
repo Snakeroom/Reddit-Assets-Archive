@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.90c3e18d0ce7b41fee6b.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6bf6815f22c7580e1fb5.js
+// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -16080,7 +16080,7 @@
 					return e.filter(e => e.title.toLowerCase().includes(s))
 				}),
 				me = Object(d.c)({
-					collections: O.v,
+					collections: O.w,
 					language: C.O
 				}),
 				ue = Object(i.b)(me, (e, t) => {
@@ -16244,9 +16244,9 @@
 				G = y.a.wrapped(g.a, "LoadingIcon", j.a),
 				z = y.a.wrapped(b.b, "ErrorText", j.a),
 				K = Object(r.c)({
-					collection: v.q,
+					collection: v.r,
 					error: v.c,
-					isPending: v.g,
+					isPending: v.h,
 					language: O.O
 				}),
 				Q = Object(a.b)(K, (e, t) => ({
@@ -16892,7 +16892,7 @@
 						} = t;
 						return Object(se.a)(e) === "".concat("POST_OVERFLOW_DELETE_CONFIRMATION", "_").concat(s)
 					},
-					isFutureEvent: me.i,
+					isFutureEvent: me.j,
 					isSaved: ne.v,
 					isHidden: ne.n,
 					isSponsored: ne.x,
@@ -16923,7 +16923,7 @@
 					subredditOrProfile: ne.Y,
 					hasSubredditRules: oe.k,
 					userIsOp: ae.eb,
-					isPostPartOfACollection: me.k,
+					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
 							postId: s
@@ -16936,7 +16936,7 @@
 						});
 						if (!n) return !1;
 						const o = n.type === te.c.User;
-						return Object(me.r)(e, n.name, o)
+						return Object(me.s)(e, n.name, o)
 					}
 				}), (e, t) => {
 					let {
@@ -27436,4 +27436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.90c3e18d0ce7b41fee6b.js.map
+//# sourceMappingURL=ModerationPages.6bf6815f22c7580e1fb5.js.map

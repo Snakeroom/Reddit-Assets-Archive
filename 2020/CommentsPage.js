@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.8eb91e0766d07c19caaf.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a6a21cda9db7db4c332f.js
+// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1221,11 +1221,11 @@
 				})(Object(r.b)(() => Object(a.c)({
 					activeModalId: B.a,
 					galleryThumbnail: j.e,
-					isFutureEvent: j.i,
+					isFutureEvent: j.j,
 					language: D.O,
 					layout: f.L,
 					post: _.M,
-					shouldShowCollectionPostEdits: j.s,
+					shouldShowCollectionPostEdits: j.t,
 					subredditOrProfile: _.Y
 				}), (e, t) => {
 					let {
@@ -1266,13 +1266,13 @@
 				isProfilePage: f.G,
 				pageLayer: e => e
 			}), ae = Object(r.b)(() => Object(a.c)({
-				collection: j.n,
+				collection: j.o,
 				displayLayout: j.a,
 				followPost: (e, t) => {
 					let {
 						postId: s
 					} = t;
-					const n = Object(j.n)(e, {
+					const n = Object(j.o)(e, {
 							postId: s
 						}),
 						o = n && (n.primaryPostId || n.postIds[0]);
@@ -1285,10 +1285,10 @@
 					let {
 						postId: s
 					} = t;
-					const n = Object(j.n)(e, {
+					const n = Object(j.o)(e, {
 						postId: s
 					});
-					return !(!n || !n.id) && Object(j.t)(e, {
+					return !(!n || !n.id) && Object(j.u)(e, {
 						collectionId: n.id
 					})
 				}
@@ -9393,7 +9393,7 @@
 					return e.filter(e => e.title.toLowerCase().includes(s))
 				}),
 				me = Object(c.c)({
-					collections: O.v,
+					collections: O.w,
 					language: E.O
 				}),
 				pe = Object(i.b)(me, (e, t) => {
@@ -9557,9 +9557,9 @@
 				K = j.a.wrapped(g.a, "LoadingIcon", y.a),
 				z = j.a.wrapped(h.b, "ErrorText", y.a),
 				J = Object(a.c)({
-					collection: C.q,
+					collection: C.r,
 					error: C.c,
-					isPending: C.g,
+					isPending: C.h,
 					language: O.O
 				}),
 				q = Object(r.b)(J, (e, t) => ({
@@ -10205,7 +10205,7 @@
 						} = t;
 						return Object(se.a)(e) === "".concat("POST_OVERFLOW_DELETE_CONFIRMATION", "_").concat(s)
 					},
-					isFutureEvent: me.i,
+					isFutureEvent: me.j,
 					isSaved: ne.v,
 					isHidden: ne.n,
 					isSponsored: ne.x,
@@ -10236,7 +10236,7 @@
 					subredditOrProfile: ne.Y,
 					hasSubredditRules: oe.k,
 					userIsOp: re.eb,
-					isPostPartOfACollection: me.k,
+					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
 							postId: s
@@ -10249,7 +10249,7 @@
 						});
 						if (!n) return !1;
 						const o = n.type === te.c.User;
-						return Object(me.r)(e, n.name, o)
+						return Object(me.s)(e, n.name, o)
 					}
 				}), (e, t) => {
 					let {
@@ -12776,7 +12776,7 @@
 					createPostUrl: v.d,
 					isDeleteConfirmModalOpen: P,
 					isEditCollectionModalOpen: w,
-					shouldShowCollectionEditOptions: v.s
+					shouldShowCollectionEditOptions: v.t
 				}),
 				I = Object(i.b)(k, (e, t) => ({
 					copyLink: () => e(Object(m.F)(t.permalink)),
@@ -17004,4 +17004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.8eb91e0766d07c19caaf.js.map
+//# sourceMappingURL=CommentsPage.a6a21cda9db7db4c332f.js.map

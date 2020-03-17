@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.f70140fb2a2f10e643bc.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.053ed7ca07b0eebe69bc.js
+// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -97,11 +97,11 @@
 			})), o.d(e, "g", (function() {
 				return A
 			})), o.d(e, "a", (function() {
-				return q
+				return R
 			})), o.d(e, "c", (function() {
-				return N
+				return G
 			})), o.d(e, "h", (function() {
-				return W
+				return q
 			})), o.d(e, "f", (function() {
 				return X
 			})), o.d(e, "d", (function() {
@@ -164,7 +164,7 @@
 								postId: e
 							}),
 							d = l && l.title || "",
-							a = Object(E.q)(i, {
+							a = Object(E.r)(i, {
 								collectionId: t
 							}),
 							u = (a && a.postIds && a.postIds.indexOf(e) || -1) - 1;
@@ -173,7 +173,7 @@
 								postId: e
 							})), o && u >= 0) {
 							const e = s(),
-								o = Object(E.q)(e, {
+								o = Object(E.r)(e, {
 									collectionId: t
 								}),
 								n = o && o.postIds && o.postIds[u] || "",
@@ -190,7 +190,7 @@
 							buttonText: n.fbt._("UNDO", null, {
 								hk: "3KPLib"
 							}),
-							buttonAction: q(t, e)
+							buttonAction: R(t, e)
 						}))
 					} else c(Object(r.e)({
 						kind: x.b.Error,
@@ -198,7 +198,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), q = (t, e) => async (o, c, s) => {
+				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), R = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -214,7 +214,7 @@
 						const c = Object(y.M)(l, {
 								postId: e
 							}),
-							s = Object(E.q)(l, {
+							s = Object(E.r)(l, {
 								collectionId: t
 							}),
 							i = s && s.title || "";
@@ -234,7 +234,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, R = Object(i.a)(l.e), N = (t, e) => async (o, i, l) => {
+				}, N = Object(i.a)(l.e), G = (t, e) => async (o, i, l) => {
 					let {
 						apiContext: d
 					} = l;
@@ -242,10 +242,10 @@
 					if ((await j(d(), t)).ok) {
 						const {
 							url: i
-						} = a.platform.currentPage, l = Object(E.q)(a, {
+						} = a.platform.currentPage, l = Object(E.r)(a, {
 							collectionId: t
 						}), d = l && l.title || "", u = l && l.subredditId, p = u ? Object(S.c)(a, u) : "/";
-						o(R({
+						o(N({
 							collectionId: t,
 							collection: l
 						})), o(e ? Object(c.c)(Object(s.a)(i, ["collection"])) : Object(c.b)(p)), o(Object(r.e)({
@@ -260,14 +260,14 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(l.r), J = Object(i.a)(l.n), V = Object(i.a)(l.s), W = (t, e) => async (o, c, s) => {
+				}, J = Object(i.a)(l.r), V = Object(i.a)(l.n), W = Object(i.a)(l.s), q = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
-					o(G());
+					o(J());
 					const l = await I(i(), t, e);
 					let d = !1;
-					if (l.ok) o(V({
+					if (l.ok) o(W({
 						collectionId: t,
 						newTitle: e
 					})), o(Object(r.e)({
@@ -278,7 +278,7 @@
 					})), d = !0;
 					else {
 						const t = l.error;
-						o(J(t)), o(Object(r.e)({
+						o(V(t)), o(Object(r.e)({
 							kind: x.b.Error,
 							text: n.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -321,7 +321,7 @@
 								hk: "4Ck6Cm"
 							})
 						}))), d
-					})(c, l))), d && o.push(e(W(c, d))), void 0 !== s && o.push(e(((t, e) => async (o, c, s) => {
+					})(c, l))), d && o.push(e(q(c, d))), void 0 !== s && o.push(e(((t, e) => async (o, c, s) => {
 						let {
 							apiContext: i
 						} = s;
@@ -730,4 +730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.f70140fb2a2f10e643bc.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.053ed7ca07b0eebe69bc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2567cadb575caf38a7ff.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cc839be49d3ccde37fc6.js
+// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -1628,7 +1628,7 @@
 								postId: t
 							}),
 							l = a && a.title || "",
-							d = Object(w.q)(i, {
+							d = Object(w.r)(i, {
 								collectionId: e
 							}),
 							u = (d && d.postIds && d.postIds.indexOf(t) || -1) - 1;
@@ -1637,7 +1637,7 @@
 								postId: t
 							})), n && u >= 0) {
 							const t = r(),
-								n = Object(w.q)(t, {
+								n = Object(w.r)(t, {
 									collectionId: e
 								}),
 								o = n && n.postIds && n.postIds[u] || "",
@@ -1678,7 +1678,7 @@
 						const s = Object(k.M)(a, {
 								postId: t
 							}),
-							r = Object(w.q)(a, {
+							r = Object(w.r)(a, {
 								collectionId: e
 							}),
 							i = r && r.title || "";
@@ -1706,7 +1706,7 @@
 					if ((await g(l(), e)).ok) {
 						const {
 							url: i
-						} = d.platform.currentPage, a = Object(w.q)(d, {
+						} = d.platform.currentPage, a = Object(w.r)(d, {
 							collectionId: e
 						}), l = a && a.title || "", u = a && a.subredditId, p = u ? Object(_.c)(d, u) : "/";
 						n(U({
@@ -6689,7 +6689,7 @@
 					return e.filter(e => e.title.toLowerCase().includes(n))
 				}),
 				ue = Object(c.c)({
-					collections: v.v,
+					collections: v.w,
 					language: O.O
 				}),
 				pe = Object(a.b)(ue, (e, t) => {
@@ -6941,9 +6941,9 @@
 				z = j.a.wrapped(g.a, "LoadingIcon", E.a),
 				q = j.a.wrapped(h.b, "ErrorText", E.a),
 				G = Object(i.c)({
-					collection: y.q,
+					collection: y.r,
 					error: y.c,
-					isPending: y.g,
+					isPending: y.h,
 					language: v.O
 				}),
 				J = Object(r.b)(G, (e, t) => ({
@@ -17839,7 +17839,7 @@
 					createPostUrl: x.d,
 					isDeleteConfirmModalOpen: T,
 					isEditCollectionModalOpen: w,
-					shouldShowCollectionEditOptions: x.s
+					shouldShowCollectionEditOptions: x.t
 				}),
 				_ = Object(a.b)(k, (e, t) => ({
 					copyLink: () => e(Object(u.F)(t.permalink)),
@@ -27414,7 +27414,7 @@
 							});
 							n = o && o.id
 						}
-						return n ? Object(aa.u)(e, {
+						return n ? Object(aa.v)(e, {
 							subredditId: n
 						}) : 0
 					},
@@ -29600,4 +29600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.2567cadb575caf38a7ff.js.map
+//# sourceMappingURL=PostCreation.cc839be49d3ccde37fc6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.2e94743d9932e2c6893c.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.64d449d74c769929b158.js
+// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -273,11 +273,11 @@
 					onClick: e.onClick
 				}, e.children), "Tab", j.a),
 				B = Object(l.c)({
-					collection: O.q,
+					collection: O.r,
 					displayLayout: O.b,
-					isPending: e => Object(O.g)(e) || Object(O.h)(e) || Object(O.j)(e) || Object(O.l)(e),
+					isPending: e => Object(O.h)(e) || Object(O.i)(e) || Object(O.k)(e) || Object(O.m)(e),
 					language: N.O,
-					postsByIds: O.o
+					postsByIds: O.p
 				}),
 				R = Object(c.b)(B, (e, t) => ({
 					editCollection: t => e(Object(u.d)(t))
@@ -1041,4 +1041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.2e94743d9932e2c6893c.js.map
+//# sourceMappingURL=editCollectionModal.64d449d74c769929b158.js.map

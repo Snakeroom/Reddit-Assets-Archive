@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b7fd94b834c398a26ff4.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.08a94b65f69e7e290187.js
+// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -8408,7 +8408,7 @@
 					});
 					v && (C.sort = T), t(p.t(u)), await Promise.all([S ? t(f.d(a)) : Promise.resolve(), t(X(r, u, l, C))]);
 					const D = ((e, t) => {
-						const n = Object(U.q)(e, {
+						const n = Object(U.r)(e, {
 							collectionId: t.id
 						});
 						if (!n) return "";
@@ -8439,7 +8439,7 @@
 				}, z = "PAGE__COLLECTIONCOMMENTSPAGE_LOADED_FULL", Q = Object(r.a)(z), J = (e, t, n, r) => async (o, i, c) => {
 					const a = Object(s.a)(e, t, n, r),
 						d = i();
-					t = t || Object(U.p)(d, {
+					t = t || Object(U.q)(d, {
 						collectionId: e
 					});
 					const u = await D(c.apiContext(), e, t, n, r);
@@ -8466,7 +8466,7 @@
 				}, X = (e, t, n, r, o) => async (i, f, m) => {
 					const O = Object(s.a)(e, t, n, r),
 						h = f();
-					t = t || Object(U.p)(h, {
+					t = t || Object(U.q)(h, {
 						collectionId: e
 					});
 					const {
@@ -8907,7 +8907,7 @@
 						}))
 					})(e.params, a.source_id));
 					else if (d) {
-						const s = Object(D.q)(n(), {
+						const s = Object(D.r)(n(), {
 							collectionId: d
 						});
 						l && s && s.subredditId === l.id || t(Object(r.c)(Object(o.a)(e.url, ["collection"])))
@@ -11764,7 +11764,7 @@
 					} else t(F(!1, e))
 				}, V = e => async (t, n) => {
 					const r = n();
-					Object(l.m)(r, {
+					Object(l.n)(r, {
 						subredditId: e
 					}) ? t(i.i(d.a)) : t(i.i(d.b))
 				}
@@ -22277,7 +22277,7 @@
 						pageLayer: n
 					} = t;
 					const r = (e => e ? e.queryParams.collection : void 0)(n);
-					return r ? Object(T.q)(e, {
+					return r ? Object(T.r)(e, {
 						collectionId: r
 					}) : void 0
 				},
@@ -56806,39 +56806,39 @@
 		},
 		"./src/reddit/selectors/postCollection.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "j", (function() {
 				return _
 			})), n.d(t, "d", (function() {
 				return h
-			})), n.d(t, "r", (function() {
-				return y
 			})), n.d(t, "s", (function() {
+				return y
+			})), n.d(t, "t", (function() {
 				return j
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "r", (function() {
 				return E
-			})), n.d(t, "n", (function() {
-				return I
-			})), n.d(t, "k", (function() {
-				return S
-			})), n.d(t, "p", (function() {
-				return v
 			})), n.d(t, "o", (function() {
+				return I
+			})), n.d(t, "l", (function() {
+				return S
+			})), n.d(t, "q", (function() {
+				return v
+			})), n.d(t, "p", (function() {
 				return T
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return D
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return A
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return P
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return w
 			})), n.d(t, "c", (function() {
 				return R
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return x
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return N
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return k
 			})), n.d(t, "f", (function() {
 				return L
@@ -56846,10 +56846,12 @@
 				return M
 			})), n.d(t, "a", (function() {
 				return U
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "u", (function() {
 				return F
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return G
+			})), n.d(t, "e", (function() {
+				return B
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/reselect/es/index.js"),
@@ -57049,7 +57051,16 @@
 						collectionId: n
 					}))
 				},
-				G = (e, t) => {
+				G = e => {
+					if (!e || e.type === a.n.RTJSON || e.type === a.n.TEXT || e.type === a.n.LIVEVIDEO) return null;
+					const t = e.obfuscated;
+					return t ? {
+						url: t,
+						width: e.width,
+						height: e.height
+					} : null
+				},
+				B = (e, t) => {
 					let {
 						postId: n
 					} = t;
@@ -57057,15 +57068,7 @@
 						postId: n
 					});
 					let s = null;
-					return r && (r.media && r.media.type !== a.n.GIFVIDEO && (s = Object(c.e)(r, 2 * o.b, 2 * o.a) || Object(c.e)(r, o.b, o.a)), !s && r.thumbnail && r.thumbnail.width && r.thumbnail.height && (s = r.thumbnail, (r.isNSFW || r.isSpoiler) && (s = (e => {
-						if (!e || e.type === a.n.RTJSON || e.type === a.n.TEXT || e.type === a.n.LIVEVIDEO) return null;
-						const t = e.obfuscated;
-						return t ? {
-							url: t,
-							width: e.width,
-							height: e.height
-						} : null
-					})(r.media)))), s
+					return r && (r.media && r.media.type !== a.n.GIFVIDEO && (s = Object(c.e)(r, 2 * o.b, 2 * o.a) || Object(c.e)(r, o.b, o.a)), !s && r.thumbnail && r.thumbnail.width && r.thumbnail.height && (s = r.thumbnail, (r.isNSFW || r.isSpoiler) && (s = G(r.media)))), s
 				}
 		},
 		"./src/reddit/selectors/postCreations.ts": function(e, t, n) {
@@ -61406,7 +61409,7 @@
 					let {
 						collectionId: n
 					} = t;
-					return dt(Object(q.q)(e, {
+					return dt(Object(q.r)(e, {
 						collectionId: n
 					}))
 				},
@@ -61418,7 +61421,7 @@
 						postId: n
 					});
 					if (r && Object(x.a)(r)) {
-						const t = Object(q.n)(e, {
+						const t = Object(q.o)(e, {
 							postId: n
 						});
 						return t ? dt(t) : void 0
@@ -62138,7 +62141,7 @@
 						case i.Ab.COLLECTION_COMMENTS:
 							const {
 								collectionId: S
-							} = t.urlParams, v = S && Object(m.q)(e, {
+							} = t.urlParams, v = S && Object(m.r)(e, {
 								collectionId: S
 							}), T = v && v.permalink;
 							return T ? "".concat(o.a.redditUrl).concat(s.a.parse(j(T)).path) : null;
@@ -62183,4 +62186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.b7fd94b834c398a26ff4.js.map
+//# sourceMappingURL=Governance~Reddit.08a94b65f69e7e290187.js.map
