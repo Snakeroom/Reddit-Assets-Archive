@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f9740c1ef8c1f188ac07.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6e45b72751e7950aadd3.js
+// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -511,7 +511,7 @@
 		},
 		"./src/reddit/actions/postCreation/editing.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/reddit/actions/post.ts"),
 				a = s("./src/reddit/actions/toaster.ts"),
@@ -589,24 +589,24 @@
 					let {
 						apiContext: i
 					} = o;
-					const c = s(),
-						{
-							post: d
-						} = e,
-						l = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
-					C.r(s(), Object(P.o)(l)), t(I(d.id));
-					const m = await b(i(), e),
-						p = !1 === m.body.success;
-					if (t(w(d.id)), m.ok && !p) {
+					const {
+						post: c
+					} = e, d = !c.media || "rtjson" !== c.media.type && "text" !== c.media.type ? "" : c.media.rteMode;
+					C.r(s(), Object(P.o)(d)), t(I(c.id));
+					const l = await b(i(), e),
+						m = !1 === l.body.success;
+					if (t(w(c.id)), l.ok && !m) {
 						t(Object(a.e)({
 							kind: y.b.SuccessCommunity,
-							text: Object(n.a)(c.user.language, "postCreation.editing.success")
-						})), t(T(d.id));
-						const e = Object(x.a)(m.body);
+							text: n.fbt._("Post successfully edited", null, {
+								hk: "xej5K"
+							})
+						})), t(T(c.id));
+						const e = Object(x.a)(l.body);
 						t(Object(r.O)({
-							[d.id]: e
+							[c.id]: e
 						}))
-					} else t(k(m.error))
+					} else t(k(l.error))
 				}
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
@@ -16773,4 +16773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.f9740c1ef8c1f188ac07.js.map
+//# sourceMappingURL=CollectionCommentsPage.6e45b72751e7950aadd3.js.map

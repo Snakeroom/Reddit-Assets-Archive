@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.a46480a2d3c557cbedfa.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.a3207781463b98fb504b.js
+// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -859,29 +859,29 @@
 		"./src/reddit/actions/postCreation/submit.ts": function(e, t, s) {
 			"use strict";
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
-			var a = s("./src/lib/constants/index.ts"),
-				n = s("./src/lib/makeActionCreator/index.ts"),
-				r = s("./src/telemetry/index.ts"),
-				i = s("./src/reddit/actions/governance/index.ts"),
-				o = s("./src/reddit/actions/layers.ts"),
-				c = s("./src/reddit/actions/page.ts"),
-				d = s("./src/reddit/actions/pages/subreddit.ts"),
-				l = s("./src/reddit/actions/postDraft.ts"),
-				u = s("./src/reddit/actions/scheduledPosts/index.ts"),
-				h = s("./src/reddit/actions/toaster.ts"),
-				p = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				m = s("./src/config.ts"),
-				g = s("./src/lib/convertToCamelCase/index.ts"),
-				b = s("./src/lib/makeApiRequest/index.ts"),
-				y = s("./src/reddit/endpoints/post/create.ts");
-			var f = s("./src/reddit/endpoints/scheduledPosts/index.ts"),
-				v = s("./src/reddit/endpoints/scheduledPosts/update.ts"),
-				O = s("./src/reddit/featureFlags/index.ts"),
-				x = s("./src/reddit/helpers/graphql/normalizeSubredditScheduledPostsFromGql/index.ts"),
-				C = s("./src/reddit/helpers/scheduledPosts/index.ts"),
-				j = s("./src/reddit/helpers/trackers/postComposer.ts"),
-				k = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				w = s("./src/reddit/i18n/utils.ts"),
+			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./src/lib/constants/index.ts"),
+				r = s("./src/lib/makeActionCreator/index.ts"),
+				i = s("./src/telemetry/index.ts"),
+				o = s("./src/reddit/actions/governance/index.ts"),
+				c = s("./src/reddit/actions/layers.ts"),
+				d = s("./src/reddit/actions/page.ts"),
+				l = s("./src/reddit/actions/pages/subreddit.ts"),
+				u = s("./src/reddit/actions/postDraft.ts"),
+				h = s("./src/reddit/actions/scheduledPosts/index.ts"),
+				p = s("./src/reddit/actions/toaster.ts"),
+				m = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				g = s("./src/config.ts"),
+				b = s("./src/lib/convertToCamelCase/index.ts"),
+				y = s("./src/lib/makeApiRequest/index.ts"),
+				f = s("./src/reddit/endpoints/post/create.ts");
+			var v = s("./src/reddit/endpoints/scheduledPosts/index.ts"),
+				O = s("./src/reddit/endpoints/scheduledPosts/update.ts"),
+				x = s("./src/reddit/featureFlags/index.ts"),
+				C = s("./src/reddit/helpers/graphql/normalizeSubredditScheduledPostsFromGql/index.ts"),
+				j = s("./src/reddit/helpers/scheduledPosts/index.ts"),
+				k = s("./src/reddit/helpers/trackers/postComposer.ts"),
+				w = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
 				_ = s("./src/reddit/models/Poll/index.ts"),
 				E = s("./src/reddit/models/PostCreationForm/index.ts"),
 				I = s("./src/reddit/models/Toast/index.ts"),
@@ -902,14 +902,14 @@
 			})), s.d(t, "a", (function() {
 				return Q
 			}));
-			const H = Object(n.a)(B.y),
-				F = Object(n.a)(B.N),
-				Y = Object(n.a)(B.p),
-				q = Object(n.a)(B.A),
-				W = Object(n.a)(B.Y),
-				V = Object(n.a)(B.H),
-				X = Object(n.a)(B.a),
-				Z = Object(n.a)(B.D),
+			const H = Object(r.a)(B.y),
+				F = Object(r.a)(B.N),
+				Y = Object(r.a)(B.p),
+				q = Object(r.a)(B.A),
+				W = Object(r.a)(B.Y),
+				V = Object(r.a)(B.H),
+				X = Object(r.a)(B.a),
+				Z = Object(r.a)(B.D),
 				G = e => "/r/".concat(e, "/about/").concat(R.p),
 				K = (e, t) => {
 					const s = t.creations.formData.govType,
@@ -930,10 +930,10 @@
 				J = e => {
 					const t = e.uploads,
 						s = Object(T.K)(e),
-						n = Object(T.a)(e),
+						a = Object(T.a)(e),
 						r = Object(T.V)(e);
-					if (n === a.Hb.POST) return p.a.getPendingThumbnailUploads(r, t);
-					if (n === a.Hb.MEDIA && s) {
+					if (a === n.Hb.POST) return m.a.getPendingThumbnailUploads(r, t);
+					if (a === n.Hb.MEDIA && s) {
 						const {
 							video: e
 						} = s;
@@ -942,97 +942,97 @@
 						})]
 					}
 				},
-				Q = (e, t) => async (s, n, r) => {
+				Q = (e, t) => async (s, a, r) => {
 					let {
 						apiContext: i
-					} = r, o = n();
+					} = r, o = a();
 					const {
 						pending: c
 					} = o.creations.api.post.submit, d = Object(M.g)(o);
 					if (c || d) return;
-					s(Z(e)), o = n();
-					const u = Object(T.a)(o),
-						h = O.d.rteVideoPoster(o),
+					s(Z(e)), o = a();
+					const l = Object(T.a)(o),
+						h = x.d.rteVideoPoster(o),
 						p = J(o),
-						m = u === a.Hb.MEDIA;
-					p && (h || m) && (await s(U.d(p)), J(n())) || (e === E.r.Draft ? await s(Object(l.r)(t.draftId)) : e === E.r.ScheduledPost && Object(N.q)(o) ? await s($(t)) : e === E.r.ScheduledPost ? await s(ee(t)) : await s(te(t)))
+						m = l === n.Hb.MEDIA;
+					p && (h || m) && (await s(U.d(p)), J(a())) || (e === E.r.Draft ? await s(Object(u.r)(t.draftId)) : e === E.r.ScheduledPost && Object(N.q)(o) ? await s($(t)) : e === E.r.ScheduledPost ? await s(ee(t)) : await s(te(t)))
 				}, $ = e => async (t, s, a) => {
 					let {
 						gqlContext: n
 					} = a;
-					const i = s(),
-						o = Object(T.S)(i),
-						d = Object(T.T)(i, e),
-						l = Object(T.g)(i),
-						h = Object(N.q)(i);
-					if (!(d && l.id && o && Object(C.f)(h))) return;
+					const r = s(),
+						o = Object(T.S)(r),
+						c = Object(T.T)(r, e),
+						l = Object(T.g)(r),
+						u = Object(N.q)(r);
+					if (!(c && l.id && o && Object(j.f)(u))) return;
 					const p = l.id,
-						m = Object(N.a)(i, {
+						m = Object(N.a)(r, {
 							subredditId: p,
-							scheduledPostId: h
+							scheduledPostId: u
 						});
-					if (m && Object(r.a)(Object(k.v)(m)(i)), t(H(d)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
-					const g = Object(f.e)({
-							submission: d,
+					if (m && Object(i.a)(Object(w.v)(m)(r)), t(H(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
+					const g = Object(v.e)({
+							submission: c,
 							schedule: o,
 							subredditId: l.id,
-							scheduledPostId: h
+							scheduledPostId: u
 						}),
-						b = await Object(v.a)(n(), g);
-					if (b.ok) return t(Object(u.e)({
+						b = await Object(O.a)(n(), g);
+					if (b.ok) return t(Object(h.e)({
 						subredditId: l.id
-					})), void t(Object(c.G)(G(l.name), !1));
+					})), void t(Object(d.G)(G(l.name), !1));
 					const y = b.error;
 					t(Y(y))
 				}, ee = e => async (t, s, a) => {
 					let {
 						gqlContext: n
 					} = a;
-					const i = s(),
-						o = Object(T.S)(i),
-						d = Object(T.T)(i, e),
-						l = Object(T.g)(i);
-					if (!d || !l.id || !o) return;
-					if (t(H(d)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
-					const h = await Object(f.a)(n(), Object(f.d)(d, o, l.id));
-					if (h.ok) {
-						t(Object(u.e)({
+					const r = s(),
+						o = Object(T.S)(r),
+						c = Object(T.T)(r, e),
+						l = Object(T.g)(r);
+					if (!c || !l.id || !o) return;
+					if (t(H(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
+					const u = await Object(v.a)(n(), Object(v.d)(c, o, l.id));
+					if (u.ok) {
+						t(Object(h.e)({
 							subredditId: l.id
 						}));
-						const e = h.body.data.createScheduledPost.scheduledPost;
-						return e && Object(r.a)(Object(k.s)(Object(x.d)(e))(i)), void t(Object(c.G)(G(l.name), !1))
+						const e = u.body.data.createScheduledPost.scheduledPost;
+						return e && Object(i.a)(Object(w.s)(Object(C.d)(e))(r)), void t(Object(d.G)(G(l.name), !1))
 					}
-					const p = h.error;
+					const p = u.error;
 					t(Y(p))
-				}, te = e => async (t, s, n) => {
+				}, te = e => async (t, s, r) => {
 					let {
-						apiContext: r
-					} = n;
-					const l = s(),
-						u = Object(T.T)(l, e),
-						p = !!Object(P.a)(l),
-						f = l.creations.formData.isPoll,
-						v = l.creations.formData.polls ? K(l.creations.formData.polls, l) : K({
-							duration: a.x,
+						apiContext: i
+					} = r;
+					const u = s(),
+						h = Object(T.T)(u, e),
+						m = !!Object(P.a)(u),
+						v = u.creations.formData.isPoll,
+						O = u.creations.formData.polls ? K(u.creations.formData.polls, u) : K({
+							duration: n.x,
 							options: []
-						}, l);
-					if (!u) return;
-					if (t(H(u)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
-					let O;
-					if ((O = f ? Object(S.a)(l) ? await Object(y.a)(r(), Object.assign({}, u, {
+						}, u);
+					if (!h) return;
+					if (t(H(h)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
+					let x;
+					if ((x = v ? Object(S.a)(u) ? await Object(f.a)(i(), Object.assign({}, h, {
 								kind: E.p.POLL,
-								poll: v
+								poll: O
 							})) : await
 							function(e, t, s) {
-								const n = t.destSubreddit.id;
-								return Object(b.b)(e, {
-									method: a.cb.POST,
-									endpoint: "".concat(m.a.metaUrl, "/polls/").concat(n),
+								const a = t.destSubreddit.id;
+								return Object(y.b)(e, {
+									method: n.cb.POST,
+									endpoint: "".concat(g.a.metaUrl, "/polls/").concat(a),
 									type: "json",
 									data: Object.assign({
 										poll: s,
-										subredditId: n
-									}, Object(g.a)(Object(y.c)(t)))
+										subredditId: a
+									}, Object(b.a)(Object(f.c)(t)))
 								}).then(async e => {
 									const s = e.ok ? Object.assign({}, e, {
 											body: {
@@ -1041,7 +1041,7 @@
 												}
 											}
 										}) : e,
-										a = await Object(y.d)(s, t);
+										a = await Object(f.d)(s, t);
 									if (a.ok) {
 										const t = a.body;
 										return {
@@ -1058,38 +1058,40 @@
 										status: e.status
 									}
 								})
-							}(r(), u, v) : await Object(y.b)(r(), u)).ok) {
-						const e = Object(A.i)(l),
-							s = O.body;
+							}(i(), h, O) : await Object(f.b)(i(), h)).ok) {
+						const e = Object(A.i)(u),
+							s = x.body;
 						if (t(F({
-								draftId: u.draftId,
+								draftId: h.draftId,
 								response: s
-							})), f && !Object(S.a)(l) && t(Object(i.e)({
+							})), v && !Object(S.a)(u) && t(Object(o.e)({
 								poll: s.poll
-							})), !p) {
+							})), !m) {
 							const a = (s.path || "/user/".concat(Object(L.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
-							t(Object(d.j)(u.destSubreddit.name)), t(Object(c.G)(a, !1))
+							t(Object(l.j)(h.destSubreddit.name)), t(Object(d.G)(a, !1))
 						}
 					} else {
-						if (f) {
-							const e = O.error;
+						if (v) {
+							const e = x.error;
 							t(q(e))
 						}
-						const e = O.error;
-						if (e.type === a.E.BAD_CAPTCHA_ERROR) t(X());
-						else if (e.type === a.E.VALIDATION_ERROR) t(W(e));
-						else if (e.type === a.E.SUBMIT_VALIDATION_ERROR) t(V(e));
-						else if (e.type === a.E.RATELIMIT && p) {
-							t(Object(o.i)());
-							const s = e.fields && e.fields[0] && e.fields[0].msg || Object(w.c)("Layer creation has failed. You can create one layer per 60 minutes"),
-								a = Object(h.d)(s, I.b.Error);
-							t(Object(h.e)(a))
+						const e = x.error;
+						if (e.type === n.E.BAD_CAPTCHA_ERROR) t(X());
+						else if (e.type === n.E.VALIDATION_ERROR) t(W(e));
+						else if (e.type === n.E.SUBMIT_VALIDATION_ERROR) t(V(e));
+						else if (e.type === n.E.RATELIMIT && m) {
+							t(Object(c.i)());
+							const s = e.fields && e.fields[0] && e.fields[0].msg || a.fbt._("Layer creation has failed. You can create one layer per 60 minutes", null, {
+									hk: "3pTxXC"
+								}),
+								n = Object(p.d)(s, I.b.Error);
+							t(Object(p.e)(n))
 						} else t(Y(e))
 					}
-					const x = Object(z.o)(u.kind),
-						C = O.ok && O.body && O.body.id && Object(D.m)(O.body.id),
-						k = s();
-					j.o(k, x, C)
+					const C = Object(z.o)(h.kind),
+						j = x.ok && x.body && x.body.id && Object(D.m)(x.body.id),
+						w = s();
+					k.o(w, C, j)
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/edit.ts": function(e, t, s) {
@@ -4876,4 +4878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.a46480a2d3c557cbedfa.js.map
+//# sourceMappingURL=PainterModalLoader.a3207781463b98fb504b.js.map

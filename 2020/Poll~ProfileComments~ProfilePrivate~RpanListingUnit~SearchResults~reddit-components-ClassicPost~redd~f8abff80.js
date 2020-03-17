@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.8d347e0e503a99f5383f.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.b5c689639018f8b00309.js
+// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -190,7 +190,7 @@
 		},
 		"./src/reddit/actions/postCreation/editing.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/reddit/actions/post.ts"),
 				i = s("./src/reddit/actions/toaster.ts"),
@@ -268,24 +268,24 @@
 					let {
 						apiContext: a
 					} = o;
-					const c = s(),
-						{
-							post: d
-						} = e,
-						l = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
-					v.r(s(), Object(y.o)(l)), t(I(d.id));
-					const p = await b(a(), e),
-						m = !1 === p.body.success;
-					if (t(k(d.id)), p.ok && !m) {
+					const {
+						post: c
+					} = e, d = !c.media || "rtjson" !== c.media.type && "text" !== c.media.type ? "" : c.media.rteMode;
+					v.r(s(), Object(y.o)(d)), t(I(c.id));
+					const l = await b(a(), e),
+						p = !1 === l.body.success;
+					if (t(k(c.id)), l.ok && !p) {
 						t(Object(i.e)({
 							kind: E.b.SuccessCommunity,
-							text: Object(n.a)(c.user.language, "postCreation.editing.success")
-						})), t(T(d.id));
-						const e = Object(f.a)(p.body);
+							text: n.fbt._("Post successfully edited", null, {
+								hk: "xej5K"
+							})
+						})), t(T(c.id));
+						const e = Object(f.a)(l.body);
 						t(Object(r.O)({
-							[d.id]: e
+							[c.id]: e
 						}))
-					} else t(w(p.error))
+					} else t(w(l.error))
 				}
 		},
 		"./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less": function(e, t, s) {
@@ -4012,4 +4012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.8d347e0e503a99f5383f.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.b5c689639018f8b00309.js.map

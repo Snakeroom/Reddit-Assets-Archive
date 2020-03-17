@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.66df385dcb5f5ad090ea.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c5fa44e9517f04de96be.js
+// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1590,7 +1590,7 @@
 		},
 		"./src/reddit/actions/postCreation/editing.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				a = s("./src/reddit/actions/post.ts"),
 				r = s("./src/reddit/actions/toaster.ts"),
@@ -1668,24 +1668,24 @@
 					let {
 						apiContext: i
 					} = o;
-					const d = s(),
-						{
-							post: c
-						} = e,
-						l = !c.media || "rtjson" !== c.media.type && "text" !== c.media.type ? "" : c.media.rteMode;
-					v.r(s(), Object(k.o)(l)), t(I(c.id));
-					const m = await h(i(), e),
-						u = !1 === m.body.success;
-					if (t(w(c.id)), m.ok && !u) {
+					const {
+						post: d
+					} = e, c = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
+					v.r(s(), Object(k.o)(c)), t(I(d.id));
+					const l = await h(i(), e),
+						m = !1 === l.body.success;
+					if (t(w(d.id)), l.ok && !m) {
 						t(Object(r.e)({
 							kind: j.b.SuccessCommunity,
-							text: Object(n.a)(d.user.language, "postCreation.editing.success")
-						})), t(P(c.id));
-						const e = Object(x.a)(m.body);
+							text: n.fbt._("Post successfully edited", null, {
+								hk: "xej5K"
+							})
+						})), t(P(d.id));
+						const e = Object(x.a)(l.body);
 						t(Object(a.O)({
-							[c.id]: e
+							[d.id]: e
 						}))
-					} else t(S(m.error))
+					} else t(S(l.error))
 				}
 		},
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
@@ -27184,4 +27184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.66df385dcb5f5ad090ea.js.map
+//# sourceMappingURL=ModerationPages.c5fa44e9517f04de96be.js.map

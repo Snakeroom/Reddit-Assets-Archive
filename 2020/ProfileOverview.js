@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5ee47be69e670430c210.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.91a4c037647010914d16.js
+// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -416,7 +416,7 @@
 		},
 		"./src/reddit/actions/postCreation/editing.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/reddit/actions/post.ts"),
 				a = s("./src/reddit/actions/toaster.ts"),
@@ -494,24 +494,24 @@
 					let {
 						apiContext: i
 					} = o;
-					const c = s(),
-						{
-							post: d
-						} = e,
-						l = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
-					O.r(s(), Object(_.o)(l)), t(S(d.id));
-					const m = await h(i(), e),
-						p = !1 === m.body.success;
-					if (t(P(d.id)), m.ok && !p) {
+					const {
+						post: c
+					} = e, d = !c.media || "rtjson" !== c.media.type && "text" !== c.media.type ? "" : c.media.rteMode;
+					O.r(s(), Object(_.o)(d)), t(S(c.id));
+					const l = await h(i(), e),
+						m = !1 === l.body.success;
+					if (t(P(c.id)), l.ok && !m) {
 						t(Object(a.e)({
 							kind: y.b.SuccessCommunity,
-							text: Object(n.a)(c.user.language, "postCreation.editing.success")
-						})), t(N(d.id));
-						const e = Object(g.a)(m.body);
+							text: n.fbt._("Post successfully edited", null, {
+								hk: "xej5K"
+							})
+						})), t(N(c.id));
+						const e = Object(g.a)(l.body);
 						t(Object(r.O)({
-							[d.id]: e
+							[c.id]: e
 						}))
-					} else t(k(m.error))
+					} else t(k(l.error))
 				}
 		},
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -14993,4 +14993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.5ee47be69e670430c210.js.map
+//# sourceMappingURL=ProfileOverview.91a4c037647010914d16.js.map
