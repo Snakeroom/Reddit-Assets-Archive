@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6f837043b53566dce72e.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.298d000583c09fe4cadd.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -117,7 +117,7 @@
 						const a = ((e, t) => {
 							const a = e.error && e.error.type,
 								n = e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg;
-							return a === s.i ? Object(j.c)("There was an authentication error") : n ? Object(j.c)(n) : Object(j.c)(t)
+							return a === s.j ? Object(j.c)("There was an authentication error") : n ? Object(j.c)(n) : Object(j.c)(t)
 						})(e, n);
 						t(Object(c.e)({
 							kind: o.b.Error,
@@ -1413,4 +1413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.6f837043b53566dce72e.js.map
+//# sourceMappingURL=FramedGild~GildModal.298d000583c09fe4cadd.js.map

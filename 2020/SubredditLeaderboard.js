@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d9c7c93452fe11e692f1.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f5ba305ad983c3baa1ab.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -315,7 +315,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = a()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -661,10 +661,10 @@
 				B = r("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				F = r("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
 				R = r("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
-				M = r("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
+				H = r("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function M() {
+				return (M = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -680,7 +680,7 @@
 					return Object(F.c)(t)
 				}
 			}, D = async e => {
-				const t = s()(M.a, 5),
+				const t = s()(H.a, 5),
 					r = await Object(W.a)(e, {
 						names: t
 					});
@@ -743,7 +743,7 @@
 						n = this.state[r],
 						s = n ? n.rankings : [],
 						a = n ? n.subreddits : {};
-					return o.a.createElement(L, H({
+					return o.a.createElement(L, M({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: s,
@@ -1162,8 +1162,8 @@
 				B = r("./src/reddit/selectors/subreddit.ts"),
 				F = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				R = r("./src/reddit/selectors/user.ts");
-			const M = 25,
-				H = .5,
+			const H = 25,
+				M = .5,
 				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
@@ -1221,7 +1221,7 @@
 					return {
 						after: a,
 						categoryId: e === p.a ? p.d : e,
-						first: M,
+						first: H,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1254,7 +1254,7 @@
 						className: k.a.subredditRankingsList
 					}, s ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(S.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: H,
+						threshold: M,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(W.a, {
 						large: !0
@@ -1528,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.d9c7c93452fe11e692f1.js.map
+//# sourceMappingURL=SubredditLeaderboard.f5ba305ad983c3baa1ab.js.map

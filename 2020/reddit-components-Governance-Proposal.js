@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.db209a024e004009e829.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.e88662f26e0660838ed2.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -866,7 +866,7 @@
 			function a(e, t) {
 				return Object(r.a)(e, {
 					endpoint: "".concat(n.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: o.cb.GET
+					method: o.db.GET
 				}).then(e => {
 					if (e.ok) {
 						const s = e.body,
@@ -887,7 +887,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(n.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: o.cb.POST,
+					method: o.db.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.db209a024e004009e829.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.e88662f26e0660838ed2.js.map

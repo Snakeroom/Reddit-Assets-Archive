@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.c749a8d37de236431575.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.bfc0321d101290666368.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -302,7 +302,7 @@
 						userId: t
 					} = e, {
 						processingAvatarImageUrl: s
-					} = c.a, n = (e => e.replace(u.wb.Account + "_", ""))(t), {
+					} = c.a, n = (e => e.replace(u.xb.Account + "_", ""))(t), {
 						avatar: r,
 						color: o
 					} = (e => {
@@ -432,8 +432,8 @@
 				v = s("./src/reddit/controls/ErrorText/index.tsx"),
 				E = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				O = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				w = s("./src/reddit/helpers/richTextEditor/index.ts"),
-				I = s("./src/reddit/helpers/trackers/rpan.ts"),
+				I = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				w = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/i18n/utils.ts"),
 				N = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = s("./src/reddit/icons/svgs/Gild/index.tsx"),
@@ -540,7 +540,7 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, L.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(I.i)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(w.i)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -614,7 +614,7 @@
 							[D.a.LivestreamingFocusableContent]: n && !s
 						}),
 						dataTestId: V,
-						editorType: w.a.Comment,
+						editorType: I.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: n ? 20 : void 0,
 						rteState: this.state.rteState,
@@ -867,7 +867,7 @@
 				C = s("./src/reddit/controls/ErrorText/index.m.less"),
 				v = s.n(C);
 			s.d(t, "a", (function() {
-				return I
+				return w
 			})), s.d(t, "c", (function() {
 				return y
 			}));
@@ -929,10 +929,10 @@
 					}, a || e))
 				}
 			}
-			const w = Object(l.b)(E, e => ({
+			const I = Object(l.b)(E, e => ({
 					toggleErrorTextModal: t => e(Object(h.i)(t))
 				}))(O),
-				I = e => {
+				w = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -942,19 +942,19 @@
 					} = e, o = r.length ? r : a ? [a] : [];
 					return o.length ? d.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => d.a.createElement(w, {
+					}, o.map((e, t) => d.a.createElement(I, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				y = e => d.a.createElement(I, {
+				y = e => d.a.createElement(w, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = w
+			t.b = I
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1209,7 +1209,7 @@
 			s.d(t, "k", (function() {
 				return E
 			})), s.d(t, "l", (function() {
-				return I
+				return w
 			})), s.d(t, "m", (function() {
 				return y
 			})), s.d(t, "g", (function() {
@@ -1298,7 +1298,7 @@
 					const d = new Set([...n, ...a]);
 					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== r.l).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
 				}),
-				w = Object(n.a)((e, t) => {
+				I = Object(n.a)((e, t) => {
 					let {
 						count: s
 					} = t;
@@ -1316,21 +1316,21 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				I = Object(n.a)(v, w, (e, t) => {
+				w = Object(n.a)(v, I, (e, t) => {
 					const s = t.find(t => {
 						const s = e[t];
 						return !!s && s.stream.state === i.b.IS_LIVE
 					});
 					if (s) return e[s]
 				}),
-				y = Object(n.a)(v, w, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				y = Object(n.a)(v, I, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				N = Object(n.a)(f, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return w(e, {
+					return I(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -1350,7 +1350,7 @@
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return w(e, {
+					return I(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -1377,7 +1377,7 @@
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return w(e, {
+					return I(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -1450,4 +1450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.c749a8d37de236431575.js.map
+//# sourceMappingURL=ChatMessageInput.bfc0321d101290666368.js.map

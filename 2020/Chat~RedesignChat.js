@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0e196a711bd020c156b9.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4fdafd656548ba3109d4.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1072,7 +1072,7 @@
 							} = e;
 							return Object(p.b)({
 								endpoint: "https://api.embed.ly/1/extract",
-								method: b.cb.GET,
+								method: b.db.GET,
 								data: {
 									key: g,
 									url: a,
@@ -1192,7 +1192,7 @@
 							Object(d.b)("Error getting proxy unread count: ".concat(a))
 						}
 					})(i, o)) && !r()(i.messages.unread, m) && await a(b(m))
-				}, o.Db, {
+				}, o.Eb, {
 					leading: !0
 				})
 		},
@@ -1347,7 +1347,7 @@
 					t(p(e)), (e => {
 						if (!h(e)) {
 							const t = [...Object(a.b)("chat.promo") || [], e];
-							Object(a.d)("chat.promo", t, s.Yb)
+							Object(a.d)("chat.promo", t, s.Zb)
 						}
 					})(e)
 				}, f = () => async (e, t) => {
@@ -1460,7 +1460,7 @@
 							} = o.user;
 						if (d && l) {
 							let n;
-							const c = Object(a.c)(s.o.CHAT, "session", l.id),
+							const c = Object(a.c)(s.p.CHAT, "session", l.id),
 								o = Object(a.b)(c);
 							if (o && o.token) n = o;
 							else {
@@ -1486,7 +1486,7 @@
 				O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS",
 				j = Object(c.a)(O),
 				C = "SENDBIRD__SET_REDDIT_CONTACT_LIST",
-				E = 6 * s.J,
+				E = 6 * s.K,
 				_ = Object(c.a)(C),
 				v = () => async (e, t, n) => {
 					let {
@@ -1494,7 +1494,7 @@
 					} = n;
 					const r = t(),
 						o = r.contacts.models,
-						d = Object(a.c)(s.o.CHAT, "contacts", r.user.account.id),
+						d = Object(a.c)(s.p.CHAT, "contacts", r.user.account.id),
 						u = Object(a.b)(d);
 					if (u && u.version === l.a) return void e(_(u.data));
 					const h = t().user.session;
@@ -1628,7 +1628,7 @@
 						const t = await ((e, t) => Object(c.b)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.cb.POST
+							method: s.db.POST
 						}))(a(), r);
 						if (t.ok) {
 							const n = t.body;
@@ -1713,7 +1713,7 @@
 					if (l.sitewideRules && l.sitewideRules.length) return;
 					const u = await (e => Object(c.b)(Object(r.a)(e, [o.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/sitewide_rules.json"),
-						method: s.cb.GET
+						method: s.db.GET
 					}))(a());
 					if (u.ok) {
 						const {
@@ -1781,7 +1781,7 @@
 				o = "TOAST__UPDATE_TOAST",
 				i = Object(a.a)(o),
 				l = e => async (t, n) => {
-					setTimeout(() => t(r()), e * s.Db)
+					setTimeout(() => t(r()), e * s.Eb)
 				}
 		},
 		"./src/chat/actions/tooltip.ts": function(e, t, n) {
@@ -2466,7 +2466,7 @@
 			}));
 			const T = (new Date).setHours(0, 0, 0, 0),
 				M = e => (e => T < e.getTime())(e) ? A(e) : (e => {
-					return T - b.x < e.getTime()
+					return T - b.y < e.getTime()
 				})(e) ? Object(v.a)("en", "app.chat.message.timeStamp.yesterday") : L(e),
 				A = new Intl.DateTimeFormat(void 0, {
 					hour: "2-digit",
@@ -2495,7 +2495,7 @@
 			const H = i.a.div("TimeWrapper", B.a),
 				F = i.a.time("Time", B.a);
 			var K = e => r.a.createElement(H, null, r.a.createElement(F, null, (e => {
-					const t = T - b.x,
+					const t = T - b.y,
 						n = new Date(T).setDate(1),
 						a = new Date(n).setMonth(0),
 						s = new Date(e);
@@ -2524,7 +2524,7 @@
 			var Y = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				X = n("./src/chat/icons/Userpic/index.m.less"),
 				$ = n.n(X);
-			const ee = e => e.replace(b.wb.Account + "_", ""),
+			const ee = e => e.replace(b.xb.Account + "_", ""),
 				te = i.a.i("FallbackAvatar", $.a),
 				ne = i.a.wrapped(te, "FallbackAvatarWrapper", $.a),
 				ae = i.a.wrapped(e => {
@@ -3785,7 +3785,7 @@
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = ka()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), b.Db, {
+					}), b.Eb, {
 						leading: !0,
 						trailing: !1
 					}), this.onKeyUpListener = e => {
@@ -4723,7 +4723,7 @@
 									createdAt: c,
 									messageData: o,
 									sender: i
-								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.db, f = !(p && g), O = o.type === xe.b.EMBED, j = h && r.a.createElement(K, {
+								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.eb, f = !(p && g), O = o.type === xe.b.EMBED, j = h && r.a.createElement(K, {
 									date: c
 								}), C = f && d && l && r.a.createElement(En, {
 									createdAt: c,
@@ -8956,7 +8956,7 @@
 							size: e
 						} = t.container;
 						e !== a.a.EMBED && e !== a.a.FULL || !document.hasFocus() || o(t), n()
-					}, 30 * i.Db)
+					}, 30 * i.Eb)
 				};
 				return n(), n => a => {
 					const s = n(a);
@@ -9007,7 +9007,7 @@
 							const t = e.getState();
 							e.dispatch(Object(u.sizeChanged)(b.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === i.zb.CHAT_MINIMIZE && e.dispatch(Object(d.P)());
+							a && a.meta && a.meta.name === i.Ab.CHAT_MINIMIZE && e.dispatch(Object(d.P)());
 							const {
 								action: s,
 								noun: c,
@@ -9087,7 +9087,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === b.a.MINIMIZED || n === b.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.zb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.zb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Ab.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Ab.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -9107,7 +9107,7 @@
 					})(n) : s()(() => e.dispatch(Object(d.m)()))
 				};
 				let a;
-				Object(f.a)(e.getState()) === c.zb.CHAT_MINIMIZE ? s()(async () => {
+				Object(f.a)(e.getState()) === c.Ab.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.m)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.b)()))
 				}) : n();
 				return i => g => {
@@ -9120,7 +9120,7 @@
 							const t = g.payload !== b.a.MINIMIZED && g.payload !== b.a.HIDDEN;
 							t && (clearTimeout(a), a = null), C && t && !E && n(), !E || g.payload !== b.a.HIDDEN && g.payload !== b.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * c.db));
+							}, 10 * c.eb));
 							break
 						}
 						case l.a: {
@@ -9181,7 +9181,7 @@
 				r = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * c.db;
+			const l = 5 * c.eb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -9316,8 +9316,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.d)(l, e, 5 * i.db)
-			}, 5 * i.Db, {
+				Object(o.d)(l, e, 5 * i.eb)
+			}, 5 * i.Eb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -9325,7 +9325,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.b)(l) && Object(c.b)()
-				}, 5 * i.db)
+				}, 5 * i.eb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -9336,7 +9336,7 @@
 						}
 					} = t,
 					a = n && n.id || "unknown";
-				l = Object(o.c)(i.o.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
+				l = Object(o.c)(i.p.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
 				try {
 					window.parent.addEventListener("focus", m)
 				} catch (s) {}
@@ -9368,7 +9368,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const c = async e => Object(s.b)(e, {
 				endpoint: "".concat(e.apiUrl, "/api/v1/me"),
-				method: a.cb.GET,
+				method: a.db.GET,
 				data: {
 					raw_json: 1
 				}
@@ -9378,10 +9378,10 @@
 					raw_json: 1
 				},
 				endpoint: "".concat(e.apiUrl, "/api/block_user"),
-				method: a.cb.POST
+				method: a.db.POST
 			}), o = async (e, t) => Object(s.b)(e, {
 				endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/about"),
-				method: a.cb.GET,
+				method: a.db.GET,
 				data: {
 					raw_json: 1
 				}
@@ -9406,7 +9406,7 @@
 				r = n("./src/reddit/constants/headers.ts"),
 				o = n("./src/chat/models/Message/report.ts");
 			const i = (e, t) => Object(s.b)(e, {
-					method: a.cb.POST,
+					method: a.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/report_user"),
 					data: {
 						reason: t.reason,
@@ -9416,7 +9416,7 @@
 				l = (e, t, n) => {
 					const c = Object(o.c)(t, n);
 					return Object(s.b)(e, {
-						method: a.cb.POST,
+						method: a.db.POST,
 						endpoint: "".concat(e.apiUrl, "/api/report_user"),
 						data: {
 							details: JSON.stringify(c),
@@ -9426,7 +9426,7 @@
 					})
 				},
 				d = (e, t) => Object(s.b)(e, {
-					method: a.cb.GET,
+					method: a.db.GET,
 					endpoint: "".concat(e.apiUrl, "/api/user_data_by_account_ids"),
 					data: {
 						raw_json: 1,
@@ -9434,11 +9434,11 @@
 					}
 				}),
 				u = e => Object(s.b)(e, {
-					method: a.cb.GET,
+					method: a.db.GET,
 					endpoint: "".concat(e.apiUrl, "/prefs/blocked.json")
 				}),
 				h = e => Object(s.b)(Object(c.a)(e, [r.a]), {
-					method: a.cb.POST,
+					method: a.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/seen_subreddit_chat_ftux")
 				})
 		},
@@ -9694,7 +9694,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || "".concat(a.wb.Account, "_").concat(e.id),
+					id: e.contact_account_id || "".concat(a.xb.Account, "_").concat(e.id),
 					name: e.name,
 					lastInteraction: e.last_interaction,
 					created: e.created_utc,
@@ -9988,7 +9988,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = "".concat(a.wb.Account, "_"),
+			const c = "".concat(a.xb.Account, "_"),
 				r = e => {
 					const t = {};
 					for (const n in e) t[n] = o(Object.assign({
@@ -11273,7 +11273,7 @@
 						return e
 				}
 			};
-			const At = he.z;
+			const At = he.A;
 			var Dt = Object(St.a)((function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : At,
 					t = arguments.length > 1 ? arguments[1] : void 0;
@@ -11590,11 +11590,11 @@
 				}),
 				i = {
 					action: c.b,
-					chunk: s.p.CHAT,
+					chunk: s.q.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT
+						name: s.Ab.CHAT
 					},
 					path: "/chat/"
 				},
@@ -11621,11 +11621,11 @@
 			l.preload();
 			const d = {
 					action: c.b,
-					chunk: s.p.CHAT_EMPTY,
+					chunk: s.q.CHAT_EMPTY,
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT_EMPTY
+						name: s.Ab.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -11652,33 +11652,33 @@
 			u.preload();
 			const h = {
 					action: c.c,
-					chunk: s.p.CHAT_MINIMIZE,
+					chunk: s.q.CHAT_MINIMIZE,
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT_MINIMIZE
+						name: s.Ab.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
 				m = ["/chat/", "/chat/channel/:action(create)/", "/chat/channel/:channelId/:action(block|decline|delete|invite|invited|kick|members|leave|nsfw|report)?/:attr(invite|message|user)?/:attrId?", "/chat/r/:subredditName/channel/:channelId/:action(ban|block|decline|delete|deny|invite|invited|join|kick|leave|lock_confirmation|members|private|report)?/:attr(invite|message|user)?/:attrId?"],
 				b = {
 					action: c.a,
-					chunk: s.p.CHAT,
+					chunk: s.q.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT
+						name: s.Ab.CHAT
 					},
 					path: m
 				},
 				p = ["/chat/user_id/:userIds/"],
 				g = {
 					action: c.d,
-					chunk: s.p.CHAT,
+					chunk: s.q.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT
+						name: s.Ab.CHAT
 					},
 					path: p
 				};
@@ -11689,10 +11689,10 @@
 			var a = n("./src/lib/constants/index.ts");
 			var s = {
 				action: n("./src/chat/actions/page.ts").b,
-				chunk: a.p.CHAT,
+				chunk: a.q.CHAT,
 				exact: !0,
 				meta: {
-					name: a.zb.CHAT
+					name: a.Ab.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -12253,7 +12253,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(E.e)({
 							toast: x.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(E.d)()), 3 * l.Db), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.F)())
+						})), Object(i.setTimeout)(() => this.dispatch(Object(E.d)()), 3 * l.Eb), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.F)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
 				onReconnectFailed() {
@@ -13444,7 +13444,7 @@
 				class n extends r.Component {
 					constructor(e) {
 						super(e), this.handleKeyDown = e => {
-							e.keyCode === l.F && this.props.onKeyDown(e)
+							e.keyCode === l.G && this.props.onKeyDown(e)
 						}, this.handleMouseClick = e => {
 							this.props.onMouseClick(e)
 						}, this.handleResize = c()(e => {
@@ -13974,4 +13974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.0e196a711bd020c156b9.js.map
+//# sourceMappingURL=Chat~RedesignChat.4fdafd656548ba3109d4.js.map

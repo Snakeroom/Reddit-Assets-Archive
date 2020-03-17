@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.165feabf41a6d979cecb.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.7679c47ebab2b6d2f9c8.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
@@ -276,8 +276,8 @@
 			var H = i("./node_modules/lodash/noop.js"),
 				I = i.n(H),
 				S = i("./src/reddit/components/AuthorLink/index.tsx"),
-				A = i("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
-				B = i("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
+				B = i("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
+				A = i("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
 				U = i("./src/reddit/controls/Checkbox/index.tsx"),
 				D = i("./src/reddit/controls/InternalLink/index.tsx"),
 				z = i("./node_modules/lodash/forEach.js"),
@@ -359,7 +359,7 @@
 						toggleCheckbox: this.onCheckboxToggle
 					})), n.a.createElement("td", {
 						className: W.a.cellTime
-					}, Object(B.b)(o)), s && n.a.createElement("td", {
+					}, Object(A.b)(o)), s && n.a.createElement("td", {
 						className: W.a.cellPage
 					}, n.a.createElement(D.a, {
 						className: W.a.wikiPageLink,
@@ -367,7 +367,7 @@
 						to: u
 					}, g)), n.a.createElement("td", {
 						className: W.a.cellUser
-					}, m && n.a.createElement(A.a, {
+					}, m && n.a.createElement(B.a, {
 						sendHoverCardEvent: I.a,
 						tooltipId: "revision-".concat(o.id),
 						user: m
@@ -960,7 +960,7 @@
 				k = i("./src/reddit/constants/headers.ts");
 			var x = e => Object(b.b)(Object(g.a)(e.context, [k.a]), {
 					endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/edit"),
-					method: h.cb.POST,
+					method: h.db.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -987,8 +987,8 @@
 				H = i("./src/reddit/models/SubredditWikiPage/index.ts"),
 				I = i("./src/reddit/selectors/activeModalId.ts"),
 				S = i("./src/reddit/selectors/platform.ts"),
-				A = i("./src/reddit/selectors/subredditWiki.ts"),
-				B = i("./src/higherOrderComponents/asModal/index.tsx"),
+				B = i("./src/reddit/selectors/subredditWiki.ts"),
+				A = i("./src/higherOrderComponents/asModal/index.tsx"),
 				U = i("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				D = i("./src/reddit/controls/LoadingIcon/index.tsx"),
 				z = i("./src/reddit/controls/TextButton/index.tsx"),
@@ -1047,7 +1047,7 @@
 					}) : Object(f.c)("Save"))))
 				}
 			}
-			var K = Object(B.a)(G),
+			var K = Object(A.a)(G),
 				q = i("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
 				J = i.n(q);
 			const Z = "Discard-wiki-page-changes",
@@ -1071,7 +1071,7 @@
 					allowNavigationCallback: S.a,
 					isRevisionReasonModalOpen: Object(I.b)(X),
 					isSaveBeforeLeaveModalOpen: Object(I.b)(Z),
-					wikiPage: A.c
+					wikiPage: B.c
 				}),
 				te = Object(o.b)(ee, (e, t) => ({
 					onSaveWikiPage: (i, s) => e((e => {
@@ -1653,7 +1653,7 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, l = i.authorInfo && i.authorInfo.name || d.A, p = new Date(Object(b.j)(i.revisedAt));
+					} = this.state, l = i.authorInfo && i.authorInfo.name || d.B, p = new Date(Object(b.j)(i.revisedAt));
 					return a.a.createElement("span", {
 						className: Object(c.a)(e, v.a.container)
 					}, t ? Object(g.c)("Last revised by ") : Object(g.c)("Revised by "), a.a.createElement(u.a, {
@@ -1792,4 +1792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.165feabf41a6d979cecb.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.7679c47ebab2b6d2f9c8.js.map

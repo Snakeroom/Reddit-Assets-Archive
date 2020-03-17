@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.585c386b58fb33738afe.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.9526868c4df1489f8872.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -710,7 +710,7 @@
 					className: t,
 					language: n,
 					submissionType: s
-				} = e, o = s === d.Hb.CROSSPOST;
+				} = e, o = s === d.Ib.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(y, null, r.a.createElement(b, null), o ? h(n) : p(n)), r.a.createElement(g, null, (o ? v : f).map((e, t) => r.a.createElement(x, {
@@ -2077,4 +2077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.585c386b58fb33738afe.js.map
+//# sourceMappingURL=PostDraft.9526868c4df1489f8872.js.map

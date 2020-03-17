@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.b6954974978e710ad0de.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.f70140fb2a2f10e643bc.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -18,7 +18,7 @@
 				b = o("./src/reddit/constants/headers.ts");
 			var O = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/add_post_to_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					link_fullname: o
@@ -26,7 +26,7 @@
 			});
 			var m = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/create_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					title: e,
 					sr_fullname: o
@@ -34,7 +34,7 @@
 			});
 			var j = (t, e) => Object(u.b)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/delete_collection.json"),
-					method: a.cb.POST,
+					method: a.db.POST,
 					data: {
 						collection_id: e
 					}
@@ -42,11 +42,11 @@
 				f = o("./src/config.ts");
 			var _ = (t, e) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(f.a.gatewayUrl, "/desktopapi/v1/subreddit_collections/").concat(e),
-				method: a.cb.GET
+				method: a.db.GET
 			});
 			var C = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/remove_post_in_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					link_fullname: o
@@ -54,7 +54,7 @@
 			});
 			var I = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_title.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					title: o
@@ -62,7 +62,7 @@
 			});
 			var w = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/reorder_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					link_ids: o.join(",")
@@ -70,7 +70,7 @@
 			});
 			var v = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_description.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					description: o
@@ -78,7 +78,7 @@
 			});
 			var k = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_display_layout.json"),
-					method: a.cb.POST,
+					method: a.db.POST,
 					data: {
 						collection_id: e,
 						display_layout: o
@@ -699,12 +699,12 @@
 				v = t => {
 					return {
 						postScheduled: !!t,
-						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Db : void 0
+						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Eb : void 0
 					}
 				},
 				k = t => {
-					const e = Object(i.f)(t.startDate).getTime() / c.Db,
-						o = Object(i.f)(t.endDate).getTime() / c.Db;
+					const e = Object(i.f)(t.startDate).getTime() / c.Eb,
+						o = Object(i.f)(t.endDate).getTime() / c.Eb;
 					return {
 						eventStartTimestamp: e,
 						eventEndTimestamp: o,
@@ -730,4 +730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.b6954974978e710ad0de.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.f70140fb2a2f10e643bc.js.map

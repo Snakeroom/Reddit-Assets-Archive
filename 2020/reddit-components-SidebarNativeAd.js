@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7ae228aa0471bf698231.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f938062acb7c460d9c54.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -430,7 +430,7 @@
 				I = y.a.div("ThumbnailContainer", O.a),
 				L = Object(a.c)({
 					isCurrentUserProfilePost: h.i,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.zb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Ab.TOPIC),
 					language: f.O,
 					post: h.M,
 					shouldOpenPostInNewTab: f.S,
@@ -646,25 +646,25 @@
 					onOpenRemovalReasonModal: X,
 					onShowTooltip: K,
 					post: U,
-					tooltipType: z
+					tooltipType: D
 				} = e;
 				const V = {
 						caretOnTop: !1
 					},
-					D = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === x.a.SUBREDDIT,
-					J = H("Approve", U.id, z),
-					q = H("Archived", U.id, z),
-					Z = H("Automod", U.id, z),
-					Q = H("Lock", U.id, z),
-					Y = H("Mod", U.id, z),
-					$ = H("Remove", U.id, z),
-					ee = H("Report", U.id, z),
-					te = H("Spam", U.id, z),
-					se = H("Sticky", U.id, z),
-					ne = H("Pinned", U.id, z);
+					z = U.isRemoved && !U.modRemovalReason && !U.modNote && U.belongsTo.type === x.a.SUBREDDIT,
+					J = H("Approve", U.id, D),
+					q = H("Archived", U.id, D),
+					Z = H("Automod", U.id, D),
+					Q = H("Lock", U.id, D),
+					Y = H("Mod", U.id, D),
+					$ = H("Remove", U.id, D),
+					ee = H("Report", U.id, D),
+					te = H("Spam", U.id, D),
+					se = H("Sticky", U.id, D),
+					ne = H("Pinned", U.id, D);
 				return o.a.createElement("div", {
 					className: t
-				}, d && s && U.distinguishType === m.C.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
+				}, d && s && U.distinguishType === m.D.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
 					className: L.a.modIcon,
 					desc: R(y, {
 						displayText: s
@@ -728,7 +728,7 @@
 					id: $,
 					onMouseEnter: K($),
 					onMouseLeave: G
-				}), D && o.a.createElement(b.a, {
+				}), z && o.a.createElement(b.a, {
 					className: L.a.addRemovalReason,
 					onClick: X,
 					text: Object(a.c)("Add a removal reason")
@@ -1150,7 +1150,7 @@
 						} = e.media;
 					if (!t || !s) return null;
 					switch (s) {
-						case o.fb.IMAGE:
+						case o.gb.IMAGE:
 							return i.a.createElement(L, {
 								src: t
 							});
@@ -1178,9 +1178,9 @@
 				X = p.a.div("TopLine", B.a),
 				K = p.a.wrapped(c.c, "PostTitle", B.a),
 				U = p.a.div("PostMediaWrapper", B.a),
-				z = p.a.div("BackgroundWrapper", B.a),
+				D = p.a.div("BackgroundWrapper", B.a),
 				V = p.a.wrapped(h.a, "PostContainer", B.a),
-				D = 640,
+				z = 640,
 				J = e => Object(j.a)(e.title, 100),
 				q = e => {
 					if (e.post.isMediaOnly) return {};
@@ -1220,11 +1220,11 @@
 						"data-before-content": Object(n.a)("en", "sidebar.sponsored")
 					}, m = i.a.createElement(N, {
 						post: e
-					})) : (a = W, m = i.a.createElement(z, {
+					})) : (a = W, m = i.a.createElement(D, {
 						style: Z(this.props)
 					}, i.a.createElement(X, null, i.a.createElement(A, {
 						tooltipType: r ? l.c.Lightbox : void 0,
-						language: o.z,
+						language: o.A,
 						post: e,
 						showTimestamp: !1
 					})), i.a.createElement(K, {
@@ -1240,7 +1240,7 @@
 						isNotCardView: !0,
 						showCentered: !0,
 						post: e,
-						availableWidth: D,
+						availableWidth: z,
 						shouldLoad: !0
 					})))), i.a.createElement(a, p, i.a.createElement(V, {
 						className: t,
@@ -1522,4 +1522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.7ae228aa0471bf698231.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.f938062acb7c460d9c54.js.map

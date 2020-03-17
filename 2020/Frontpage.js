@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.37b2f5f6989ffa5367f3.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0edba48fdf1843574495.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -333,10 +333,10 @@
 				E = v.a.div("EmptyHomepage", g.a),
 				C = e => {
 					switch (e) {
-						case c.O.RISING:
+						case c.P.RISING:
 							return Object(u.c)("Create a new post and take all the glory");
-						case c.O.TOP:
-						case c.O.CONTROVERSIAL:
+						case c.P.TOP:
+						case c.P.CONTROVERSIAL:
 							return null;
 						default:
 							return Object(u.c)("Be the first to till this fertile land.")
@@ -350,10 +350,10 @@
 					const n = C(s);
 					return i.a.createElement(_, null, i.a.createElement(f, null, (e => {
 						switch (e) {
-							case c.O.RISING:
+							case c.P.RISING:
 								return Object(u.c)("Looks like nothing is rising fast enough in this subreddit");
-							case c.O.TOP:
-							case c.O.CONTROVERSIAL:
+							case c.P.TOP:
+							case c.P.CONTROVERSIAL:
 								return Object(u.c)("No posts were found using the ".concat(r()(e), " sort. Try changing the sort."));
 							default:
 								return Object(u.c)("There are no posts in this subreddit")
@@ -500,8 +500,8 @@
 					featuredLiveThread: e => e.live.featured,
 					language: v.O
 				}),
-				k = Object(i.b)(I);
-			class P extends o.a.Component {
+				P = Object(i.b)(I);
+			class k extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						announcementBannerHidden: !0
@@ -544,7 +544,7 @@
 					}, o.a.createElement(g.a, null, o.a.createElement(w, null), o.a.createElement(j, null, o.a.createElement(p.c, null, "live")), o.a.createElement(S, null, "·"), o.a.createElement(E, null, Object(d.b)(t, "live.viewers", e.viewerCount))), o.a.createElement(C, null, e.title, o.a.createElement(N, null)), o.a.createElement(S, null, e.description)) : null
 				}
 			}
-			t.a = k(Object(l.c)(P))
+			t.a = P(Object(l.c)(k))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -605,12 +605,12 @@
 			const N = "view--layout--FUE",
 				S = "LayoutSwitch--picker",
 				I = Object(a.a)(g.a),
-				k = {
+				P = {
 					[p.d.Card]: _.a,
 					[p.d.Classic]: x.a,
 					[p.d.Compact]: y.a
 				},
-				P = {
+				k = {
 					[p.d.Card]: Object(f.c)("card"),
 					[p.d.Classic]: Object(f.c)("classic"),
 					[p.d.Compact]: Object(f.c)("compact")
@@ -648,13 +648,13 @@
 							layout: s,
 							onLayoutClick: n,
 							postLayout: o
-						} = this.props, i = s || p.e[o], a = e === i, d = k[e];
+						} = this.props, i = s || p.e[o], a = e === i, d = P[e];
 						return r.a.createElement(v.b, C({}, t, {
 							className: Object(c.a)(E.a.LayoutItem, {
 								[E.a.selected]: a
 							}),
 							"data-layout": e,
-							displayText: P[e],
+							displayText: k[e],
 							iconWrapperClassName: E.a.LayoutItemIconWrapper,
 							isSelected: a,
 							noHover: a,
@@ -781,9 +781,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const I = new Set([h.O.CONTROVERSIAL, h.O.TOP]),
-				k = new Set([h.O.CONTROVERSIAL, h.O.RISING]),
-				P = "ListingSort--Overflow",
+			const I = new Set([h.P.CONTROVERSIAL, h.P.TOP]),
+				P = new Set([h.P.CONTROVERSIAL, h.P.RISING]),
+				k = "ListingSort--Overflow",
 				L = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
@@ -791,8 +791,8 @@
 				}),
 				T = Object(p.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.i, (e, t, s) => {
 					if (e) return e;
-					const n = [h.O.HOT, h.O.NEW, h.O.TOP, h.O.RISING];
-					return t && s && n.unshift(h.O.BEST), n
+					const n = [h.P.HOT, h.P.NEW, h.P.TOP, h.P.RISING];
+					return t && s && n.unshift(h.P.BEST), n
 				}),
 				D = Object(p.c)({
 					isPopularPage: l.C,
@@ -816,7 +816,7 @@
 							geopopularSort: s,
 							isPopularPage: n,
 							sort: o
-						} = this.props, a = n && !!s && e === h.O.HOT && o === h.O.HOT;
+						} = this.props, a = n && !!s && e === h.P.HOT && o === h.P.HOT;
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, r.a.createElement(_.a, {
@@ -852,7 +852,7 @@
 						sort: n,
 						sortOptions: o,
 						timeSort: a
-					} = this.props, c = !t && I.has(n), d = k.has(n), l = o.filter(e => !k.has(e)), u = o.filter(e => k.has(e) && e !== n);
+					} = this.props, c = !t && I.has(n), d = P.has(n), l = o.filter(e => !P.has(e)), u = o.filter(e => P.has(e) && e !== n);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement(v.d, S({}, this.props, {
 						buttonClassName: N.a.DropdownButton,
 						className: Object(i.a)(N.a.SortDropdown, e),
@@ -871,12 +871,12 @@
 						onChange: s,
 						rowClassName: N.a.DropdownRow,
 						rowSelectedClassName: N.a.DropdownRowSelected,
-						timeSort: a || h.Rb,
+						timeSort: a || h.Sb,
 						wrapperClassName: N.a.DropdownSortWrapper
 					}), u.length > 0 && r.a.createElement(v.d, S({}, this.props, {
 						className: Object(i.a)(N.a.SortOverflow, e),
 						dropdownClassName: N.a.Dropdown,
-						dropdownId: P,
+						dropdownId: k,
 						rowClassName: N.a.DropdownRow,
 						rowIconClassName: N.a.DropdownRowIcon,
 						rowSelectedClassName: N.a.DropdownRowSelected,
@@ -884,7 +884,7 @@
 						sortOptions: u
 					}), r.a.createElement("button", {
 						className: N.a.SortOverflowButton,
-						id: P
+						id: k
 					}, r.a.createElement(j.a, null))))
 				}
 			}
@@ -1918,8 +1918,8 @@
 				N = s("./src/reddit/components/JumpToContent/index.tsx"),
 				S = s("./src/reddit/components/LayoutNavigation/index.tsx"),
 				I = s("./src/reddit/components/ListingPostList/index.tsx"),
-				k = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
-				P = s("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
+				P = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
+				k = s("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
 				L = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx"),
 				T = s("./src/reddit/components/TabBadger/index.tsx"),
 				D = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -1934,8 +1934,8 @@
 				W = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				G = s("./src/reddit/selectors/user.ts"),
 				J = s("./src/lib/constants/index.ts"),
-				Q = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				K = s("./src/lib/objectSelector/index.ts"),
+				K = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				Q = s("./src/lib/objectSelector/index.ts"),
 				z = s("./src/reddit/constants/page.ts"),
 				q = s("./src/reddit/pages/Frontpage/index.m.less"),
 				Y = s.n(q);
@@ -1952,7 +1952,7 @@
 			const {
 				fbt: X
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), $ = Object(R.t)(), ee = Object(h.c)({
-				queryParams: Object(K.a)((e, t) => {
+				queryParams: Object(Q.a)((e, t) => {
 					let {
 						location: s
 					} = t;
@@ -1973,16 +1973,16 @@
 				isLoggedIn: G.G,
 				isPopular: R.C,
 				isRpanDuVisible: e => Object(W.a)(e, {
-					listingName: Q.O
+					listingName: K.O
 				}),
 				rpanInjectionIndex: e => Object(W.b)(e, {
-					listingName: Q.O
+					listingName: K.O
 				}),
 				layout: R.L
 			}), ne = () => Object(h.a)(te, ee, se, e => Object(W.a)(e, {
-				listingName: Q.O
+				listingName: K.O
 			}), e => Object(W.b)(e, {
-				listingName: Q.O
+				listingName: K.O
 			}), e => e, (e, t, s, n, r, o) => {
 				let {
 					countryMeta: i,
@@ -1992,9 +1992,9 @@
 					sort: d
 				} = t;
 				const l = B.t in c && c[B.t].toUpperCase(),
-					u = "string" == typeof l && l in J.Qb ? J.Qb[l] : J.Rb,
+					u = "string" == typeof l && l in J.Rb ? J.Rb[l] : J.Sb,
 					m = Object(x.a)(z.a, d, c),
-					p = i || J.w.Everywhere,
+					p = i || J.x.Everywhere,
 					b = a || p,
 					h = B.g in c ? c[B.g].toUpperCase() : b;
 				return n && [].push(r), Object.assign({
@@ -2069,12 +2069,12 @@
 						const {
 							child: e,
 							idx: t
-						} = Object(k.a)({
+						} = Object(P.a)({
 							children: u,
 							desiredIndex: i,
 							layout: r,
 							listingKey: o,
-							listingName: Q.O,
+							listingName: K.O,
 							sendEvent: a
 						});
 						u[t] = e
@@ -2091,7 +2091,7 @@
 						trendingUnit: c && p.a.createElement(ae, {
 							showCardView: r === A.g.Large
 						}),
-						content: p.a.createElement(m.Fragment, null, c && p.a.createElement(P.a, {
+						content: p.a.createElement(m.Fragment, null, c && p.a.createElement(k.a, {
 							className: Y.a.duHeader
 						}, X._("Popular posts", null, {
 							hk: "36DJb4"
@@ -2147,7 +2147,7 @@
 						c = o
 					} else c = n;
 					if (!c.rpanDuDismissalTime) return !1;
-					return new Date(c.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.x
+					return new Date(c.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.y
 				}, (e, t) => {
 					let {
 						listingName: s
@@ -2210,7 +2210,7 @@
 			})), s.d(t, "m", (function() {
 				return N
 			})), s.d(t, "g", (function() {
-				return k
+				return P
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "f", (function() {
@@ -2362,8 +2362,8 @@
 					});
 					return i ? i.post.id : void 0
 				}),
-				k = Object(r.a)(Object(n.a)(I, O, (e, t) => e ? t[e] : void 0)),
-				P = Object(n.a)((e, t) => {
+				P = Object(r.a)(Object(n.a)(I, O, (e, t) => e ? t[e] : void 0)),
+				k = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -2383,7 +2383,7 @@
 				T = Object(n.a)(v, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				D = Object(r.a)(Object(n.a)(P, O, (e, t) => e ? t[e] : void 0)),
+				D = Object(r.a)(Object(n.a)(k, O, (e, t) => e ? t[e] : void 0)),
 				B = Object(r.a)(Object(n.a)(L, O, (e, t) => e ? t[e] : void 0)),
 				A = Object(r.a)(Object(n.a)(T, O, (e, t) => e ? t[e] : void 0)),
 				R = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign({}, t[s], {
@@ -2413,12 +2413,12 @@
 				};
 				return s[t] >= s[e]
 			}
-			const H = Object(n.a)(P, g, (e, t) => e && t.timestamps[e] || 0);
+			const H = Object(n.a)(k, g, (e, t) => e && t.timestamps[e] || 0);
 			var V;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(V || (V = {}));
-			const M = Object(n.a)(P, O, b.b, (e, t, s) => {
+			const M = Object(n.a)(k, O, b.b, (e, t, s) => {
 					if (s) return V.INTRO;
 					const n = e && t[e];
 					if (!n) return V.UNAVAILABLE;
@@ -2447,4 +2447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.37b2f5f6989ffa5367f3.js.map
+//# sourceMappingURL=Frontpage.0edba48fdf1843574495.js.map

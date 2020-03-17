@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.a98c9fbcaca63a2cbccd.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f4f2d7a1c214806948eb.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -430,8 +430,8 @@
 						text: t
 					}), !e.isConverting && s.a.createElement(A, null)))
 				},
-				W = n("./src/lib/classNames/index.ts"),
-				N = n("./src/reddit/constants/keycodes.ts"),
+				N = n("./src/lib/classNames/index.ts"),
+				W = n("./src/reddit/constants/keycodes.ts"),
 				L = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				z = n("./src/reddit/components/CommentCreation/translations.ts"),
 				U = n("./src/reddit/constants/componentSizes.ts"),
@@ -515,7 +515,7 @@
 							metaKey: n,
 							keyCode: o
 						} = e;
-						(t || n) && o === N.a.Enter && this.onSubmit()
+						(t || n) && o === W.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
 						this.props.onSubmit({
 							commentMode: G.h.MARKDOWN,
@@ -611,7 +611,7 @@
 					} = this.state, F = Object(L.a)(d), P = i.draftType === J.c.edit;
 					return s.a.createElement(le, {
 						"data-test-id": q.b,
-						className: Object(W.a)(o, {
+						className: Object(N.a)(o, {
 							[ee.a.isTopLevelComment]: M
 						}),
 						ref: this.setWrapperRef,
@@ -630,7 +630,7 @@
 						depth: a,
 						isEditing: P
 					}, s.a.createElement(me, {
-						className: Object(W.a)({
+						className: Object(N.a)({
 							[ee.a.pending]: w,
 							[ee.a.focused]: i.hasFocus
 						})
@@ -950,8 +950,8 @@
 				}))(P),
 				D = n("./src/reddit/components/RichTextEditor/index.tsx"),
 				H = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
-				W = n("./src/reddit/components/RichTextEditor/helpers/controlsState.ts"),
-				N = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				N = n("./src/reddit/components/RichTextEditor/helpers/controlsState.ts"),
+				W = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				L = n("./src/reddit/components/CollapseIntoOverflow/index.m.less"),
 				z = n.n(L);
 			const U = 33,
@@ -1024,7 +1024,7 @@
 					}, e)), i && a.a.createElement("div", {
 						className: z.a.overflowMenuWrapper,
 						key: "overflowMenuWrapper"
-					}, s && s(), a.a.createElement(N.b, {
+					}, s && s(), a.a.createElement(W.b, {
 						className: z.a.overflowMenu,
 						dropdownId: V(n),
 						isFixed: !1,
@@ -1118,8 +1118,8 @@
 						trackOnClick: u,
 						onLinkButtonClick: p,
 						userCanUseGifs: h
-					} = e, b = Object(W.a)(s);
-					m && Object(W.b)(b);
+					} = e, b = Object(N.a)(s);
+					m && Object(N.b)(b);
 					const g = n && d,
 						x = c && a.a.createElement(ie, {
 							controlsState: b,
@@ -1174,8 +1174,8 @@
 				Ae = n.n(Pe);
 			const De = Object(we.d)("comment.dontDigFancyPants"),
 				He = 16,
-				We = u.a.div("FormWrapper", Ae.a),
-				Ne = u.a.div("CommentHeader", Ae.a),
+				Ne = u.a.div("FormWrapper", Ae.a),
+				We = u.a.div("CommentHeader", Ae.a),
 				Le = u.a.wrapped(fe.a, "FormFooter", Ae.a),
 				ze = u.a.div("MarkdownButtonWrapper", Ae.a),
 				Ue = u.a.wrapped(ue.a, "MarkdownButton", Ae.a),
@@ -1362,7 +1362,7 @@
 						formHeight: w,
 						rteState: y
 					} = this.state, M = Object(Ce.a)(i), k = r.draftType === ve.c.edit, R = d !== ve.c.replyToPost;
-					return a.a.createElement(We, {
+					return a.a.createElement(Ne, {
 						className: Object(v.a)(n, {
 							[Ae.a.isTopLevelComment]: g
 						}),
@@ -1370,7 +1370,7 @@
 						style: {
 							height: E ? w : void 0
 						}
-					}, g && a.a.createElement(Ne, null, a.a.createElement(Ke, null, a.a.createElement(ge.c, null, "Comment as")), a.a.createElement(T.a, {
+					}, g && a.a.createElement(We, null, a.a.createElement(Ke, null, a.a.createElement(ge.c, null, "Comment as")), a.a.createElement(T.a, {
 						author: f,
 						isAdmin: !1,
 						isAdminEmeritus: !1,
@@ -1982,7 +1982,7 @@
 					})(r, s, o, n);
 				return a ? [a] : ((e, t) => {
 					const n = [];
-					return e.image > E.S && n.push(Object(m.a)(t, "postCreation.mediaInput.imagesLimitExceeded")), e.video + e.gifvideo > E.W && n.push(Object(m.a)(t, "postCreation.mediaInput.videosLimitExceeded")), n
+					return e.image > E.T && n.push(Object(m.a)(t, "postCreation.mediaInput.imagesLimitExceeded")), e.video + e.gifvideo > E.X && n.push(Object(m.a)(t, "postCreation.mediaInput.videosLimitExceeded")), n
 				})(r, n)
 			});
 			var y = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.tsx"),
@@ -2000,8 +2000,8 @@
 			const A = Object(m.d)("postCreation.rtfPlaceholderOptional"),
 				D = Object(m.d)("postCreation.rtfPlaceholderRequired"),
 				H = P.a.div("BottomRow", F.a),
-				W = P.a.div("FormContent", F.a),
-				N = P.a.wrapped(S.f, "SubmitButton", F.a),
+				N = P.a.div("FormContent", F.a),
+				W = P.a.wrapped(S.f, "SubmitButton", F.a),
 				L = P.a.wrapped(B.a, "LoadingIcon", F.a),
 				z = Object(j.t)(),
 				U = Object(l.c)({
@@ -2137,7 +2137,7 @@
 					} = this.state, E = d && d.bodyRestrictionPolicy === b.a.Required ? D(e) : A(e), w = this.getMediaValidationErrors(), O = [...o, ...w];
 					r && !O.length && O.push(Object(m.a)(e, "error.type.generic"));
 					const v = !T.a.isAllMediaUploaded(f, l);
-					return a.a.createElement(W, null, n === h.h.RICH_TEXT ? a.a.createElement(M.a, {
+					return a.a.createElement(N, null, n === h.h.RICH_TEXT ? a.a.createElement(M.a, {
 						allowMediaUploads: !0,
 						className: Object(u.a)(F.a.Editor, {
 							[F.a.isPending]: !!t
@@ -2169,7 +2169,7 @@
 					}), a.a.createElement(H, null, a.a.createElement(S.n, {
 						disabled: !!t,
 						onClick: this.cancelEdit
-					}, a.a.createElement(c.c, null, "cancel")), a.a.createElement(N, {
+					}, a.a.createElement(c.c, null, "cancel")), a.a.createElement(W, {
 						disabled: !!t || !!w.length || !this.hasChanged() || v,
 						onClick: this.onSubmit
 					}, t ? a.a.createElement(L, {
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.a98c9fbcaca63a2cbccd.js.map
+//# sourceMappingURL=RichTextEditor.f4f2d7a1c214806948eb.js.map

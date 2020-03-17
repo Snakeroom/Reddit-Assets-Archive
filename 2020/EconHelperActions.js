@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.c3e87d342c4ec378832c.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.51e6e5f3cc1a6f550f18.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -539,7 +539,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: r.cb.GET
+					method: r.db.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -560,7 +560,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: r.cb.POST,
+					method: r.db.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1039,4 +1039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.c3e87d342c4ec378832c.js.map
+//# sourceMappingURL=EconHelperActions.51e6e5f3cc1a6f550f18.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.02f2bf6a915f3f92866e.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.afe8cde63db1ac07f78f.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -500,7 +500,7 @@
 						wallet: h
 					} = this.props, w = h && h.inactive && function(e, t, n) {
 						const r = e.actionScheduledAt - Date.now(),
-							o = Math.max(1, Math.floor(r / m.x)),
+							o = Math.max(1, Math.floor(r / m.y)),
 							a = 1 !== o ? "gov.pointsDecay.inactive.time.plural" : "gov.pointsDecay.inactive.time.singular",
 							i = Object(u.a)(t, a, {
 								numDays: o
@@ -820,7 +820,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: r.cb.GET
+					method: r.db.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -841,7 +841,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: r.cb.POST,
+					method: r.db.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1229,4 +1229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.02f2bf6a915f3f92866e.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.afe8cde63db1ac07f78f.js.map

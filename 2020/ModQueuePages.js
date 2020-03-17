@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.47cd50c56136256af815.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ed133cd72366de4bccb8.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages", "removalReasonActions"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -178,19 +178,19 @@
 						apiContext: h
 					} = i;
 					switch (t) {
-						case o.gb.Edited:
+						case o.hb.Edited:
 							l = k, m = _, u = y;
 							break;
-						case o.gb.Modqueue:
+						case o.hb.Modqueue:
 							l = C, m = P, u = j;
 							break;
-						case o.gb.Reports:
+						case o.hb.Reports:
 							l = E, m = S, u = w;
 							break;
-						case o.gb.Spam:
+						case o.hb.Spam:
 							l = R, m = M, u = N;
 							break;
-						case o.gb.Unmoderated:
+						case o.hb.Unmoderated:
 							l = T, m = A, u = I;
 							break;
 						default:
@@ -343,7 +343,7 @@
 				O = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const v = (e, t) => Object(x.b)(Object(f.a)(e, [g.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/modactions/removal_reasons/"),
-					method: o.cb.POST,
+					method: o.db.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -353,7 +353,7 @@
 				}),
 				C = (e, t, s) => Object(x.b)(Object(f.a)(e, [g.a]), {
 					endpoint: Object(O.a)("".concat(e.apiUrl, "/api/v1/modactions/removal_").concat(s, "_message/")),
-					method: o.cb.POST,
+					method: o.db.POST,
 					type: "json",
 					data: t
 				});
@@ -431,7 +431,7 @@
 					t(R());
 					const i = await ((e, t) => Object(x.b)(Object(f.a)(e, [g.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons.json"),
-						method: o.cb.GET
+						method: o.db.GET
 					}))(r(), a);
 					i.ok ? t(N({
 						subredditId: e,
@@ -445,7 +445,7 @@
 					s(I());
 					const c = await ((e, t, s) => Object(x.b)(Object(f.a)(e, [g.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
-						method: o.cb.POST,
+						method: o.db.POST,
 						data: s
 					}))(a(), i, t);
 					if (c.ok) {
@@ -470,7 +470,7 @@
 					s(B());
 					const c = await ((e, t, s) => Object(x.b)(Object(f.a)(e, [g.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(s.id),
-						method: o.cb.PUT,
+						method: o.db.PUT,
 						data: {
 							message: s.message,
 							title: s.title
@@ -491,7 +491,7 @@
 					s(X());
 					const c = await ((e, t, s) => Object(x.b)(Object(f.a)(e, [g.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(s),
-						method: o.cb.DELETE
+						method: o.db.DELETE
 					}))(a(), i, t);
 					c.ok ? (s(q({
 						subredditId: e,
@@ -555,7 +555,7 @@
 											n = f.platform.currentPage && f.platform.currentPage.routeMatch;
 										let i = s && n && Object(c.a)(n, f, f.posts.models[e.postId]);
 										if (i || (i = Object(r.a)(e.postId, null, {
-												sort: o.s,
+												sort: o.t,
 												hasSortParam: !0
 											})), P === y.e.Post) {
 											const s = Object(a.a)(d.c.replyToPost, O);
@@ -904,13 +904,13 @@
 						h(), M("approve")
 					}
 				}, r.a.createElement(L, null)), R && r.a.createElement(r.a.Fragment, null, r.a.createElement(D, {
-					text: s.bannedBy === d.k ? n.fbt._("Confirm Removal", null, {
+					text: s.bannedBy === d.l ? n.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : n.fbt._("Remove", null, {
 						hk: "VP5J0"
 					}),
 					onClick: () => {
-						v(), s.bannedBy === d.k ? M("confirm_remove") : M("remove")
+						v(), s.bannedBy === d.l ? M("confirm_remove") : M("remove")
 					}
 				}, r.a.createElement(F, null)), r.a.createElement(D, {
 					text: n.fbt._("Spam", null, {
@@ -1282,19 +1282,19 @@
 						className: t,
 						style: s
 					}, o.a.createElement(g, {
-						onClick: () => u(r.C.NONE, null),
+						onClick: () => u(r.D.NONE, null),
 						selected: !d && !n,
 						text: Object(c.c)("Undistinguish")
 					}), i && o.a.createElement(g, {
-						onClick: () => u(r.C.MODERATOR, null),
+						onClick: () => u(r.D.MODERATOR, null),
 						selected: d && !l,
 						text: Object(c.c)("Distinguish as Mod")
 					}), m && i && o.a.createElement(g, {
-						onClick: () => u(r.C.MODERATOR, !0),
+						onClick: () => u(r.D.MODERATOR, !0),
 						selected: l,
 						text: Object(c.c)("Distinguish as Mod and Sticky")
 					}), a && o.a.createElement(g, {
-						onClick: () => u(r.C.ADMIN, null),
+						onClick: () => u(r.D.ADMIN, null),
 						selected: n,
 						text: Object(c.c)("Distinguish as Admin")
 					}))
@@ -1326,7 +1326,7 @@
 					isStickied: c,
 					isTopLevelComment: d,
 					onDistinguishComment: (e, t) => {
-						l(e, t), e === r.C.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.C.ADMIN ? m("admin_distinguish") : i && e !== r.C.MODERATOR ? m("undistinguish") : s && e !== r.C.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
+						l(e, t), e === r.D.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.D.ADMIN ? m("admin_distinguish") : i && e !== r.D.MODERATOR ? m("undistinguish") : s && e !== r.D.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
 					}
 				}))
 			}
@@ -2864,4 +2864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.47cd50c56136256af815.js.map
+//# sourceMappingURL=ModQueuePages.ed133cd72366de4bccb8.js.map

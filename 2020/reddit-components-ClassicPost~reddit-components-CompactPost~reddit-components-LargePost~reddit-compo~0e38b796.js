@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.0f2e607edb28eb21d831.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.06d68b596874296f5377.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -250,7 +250,7 @@
 					let b, E;
 					if (this.state.mounted || p === r.a.Live) b = function(e, t, s, n) {
 						const o = Object(r.e)(e, t),
-							d = new Date(e * a.Db);
+							d = new Date(e * a.Eb);
 						let l;
 						if (o === r.a.Live || n) return Object(c.a)(s, "posts.event.inProgress");
 						o === r.a.Future ? l = Object(r.d)(e) ? Object(c.a)(s, "posts.event.today") : Object(r.b)(e) >= 5 ? i(d, s) : function(e, t) {
@@ -772,7 +772,7 @@
 					ne = V("Pinned", G.id, U);
 				return o.a.createElement("div", {
 					className: t
-				}, i && s && G.distinguishType === u.C.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
+				}, i && s && G.distinguishType === u.D.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
 					className: L.a.modIcon,
 					desc: A(g, {
 						displayText: s
@@ -1562,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.0f2e607edb28eb21d831.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.06d68b596874296f5377.js.map

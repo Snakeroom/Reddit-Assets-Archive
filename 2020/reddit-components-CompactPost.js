@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.56b401e5bf6d00a8fcb5.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.cda6a8d1984bddbc85a7.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -624,8 +624,8 @@
 				W = s("./src/reddit/components/ModerationPrompts/Prompt.tsx"),
 				V = s("./src/reddit/components/ModerationPrompts/Survey.tsx"),
 				U = s("./src/reddit/components/ModModeReports/index.tsx"),
-				z = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				K = s("./src/reddit/components/ModToolsFlatlist/index.tsx"),
+				K = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				z = s("./src/reddit/components/ModToolsFlatlist/index.tsx"),
 				G = s("./src/reddit/components/PopupPortal/index.tsx"),
 				J = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				X = s("./src/reddit/components/PostBadges/index.tsx"),
@@ -788,7 +788,7 @@
 						toggleCheckbox: Pe,
 						tooltipType: Ce,
 						sendEvent: Se
-					} = this.props, Ne = !!ce.media && ce.media.type === f.n.RTJSON, Me = ge && Ne, Le = Object(Y.b)(ce.id, E), Re = Object(xe.a)(C), Ae = Object(ue.a)(C), Fe = Object(be.a)(C), Be = "-mod-actions-menu-".concat(ce.id), De = "voting-arrows-".concat(ce.id), He = !!n && Object(h.f)(n) === ce.author, We = Object(z.c)(ce), Ve = Object(B.a)("View--Reports", ce.id, Ce), Ue = Object(z.a)(ce), ze = !(E || v || g), Ke = ce.media && ce.media.type === f.n.LIVEVIDEO, {
+					} = this.props, Ne = !!ce.media && ce.media.type === f.n.RTJSON, Me = ge && Ne, Le = Object(Y.b)(ce.id, E), Re = Object(xe.a)(C), Ae = Object(ue.a)(C), Fe = Object(be.a)(C), Be = "-mod-actions-menu-".concat(ce.id), De = "voting-arrows-".concat(ce.id), He = !!n && Object(h.f)(n) === ce.author, We = Object(K.c)(ce), Ve = Object(B.a)("View--Reports", ce.id, Ce), Ue = Object(K.a)(ce), Ke = !(E || v || g), ze = ce.media && ce.media.type === f.n.LIVEVIDEO, {
 						moderationPrompt: Ge
 					} = ce, Je = e => Se(Object(x.f)(ce.id, e)), Xe = r.a.createElement(Z.a, {
 						className: Object(c.a)(ye.a.compactPostStyles, Ee.a.postContainer, Object(b.a)(this.props), t),
@@ -884,7 +884,7 @@
 						isOverlay: E,
 						tooltipType: Ce,
 						thing: ce
-					})), ze && !Ke && r.a.createElement("div", null, r.a.createElement(N.a, {
+					})), Ke && !ze && r.a.createElement("div", null, r.a.createElement(N.a, {
 						className: Ee.a.liveDiscussionIcon,
 						isMod: Re,
 						postId: ce.postId
@@ -900,7 +900,7 @@
 						modModeEnabled: A,
 						numComments: ce.numComments,
 						type: m.g.Compact
-					}), r.a.createElement(K.a, {
+					}), r.a.createElement(z.a, {
 						className: Ee.a.modToolsFlatlist,
 						isOverlay: !1,
 						layout: P,
@@ -1098,7 +1098,7 @@
 				N = _.a.div("ThumbnailContainer", y.a),
 				I = Object(i.c)({
 					isCurrentUserProfilePost: h.i,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.zb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Ab.TOPIC),
 					language: v.O,
 					post: h.M,
 					shouldOpenPostInNewTab: v.S,
@@ -1584,4 +1584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.56b401e5bf6d00a8fcb5.js.map
+//# sourceMappingURL=reddit-components-CompactPost.cda6a8d1984bddbc85a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.67f190889025a9d9bad2.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.b482a16f25d916e1b7b0.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -81,7 +81,7 @@
 					correlation_id: a
 				};
 				return Object(y.b)(Object(k.a)(e, [f.a]), {
-					method: g.cb.POST,
+					method: g.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: i
 				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign({}, e, {
@@ -98,9 +98,9 @@
 						const o = Object(I.O)(n()),
 							c = ((e, t, n) => {
 								switch (!0) {
-									case e && e.error && e.error.type && e.error.type === g.E.AUTHENTICATION_ERROR:
+									case e && e.error && e.error.type && e.error.type === g.F.AUTHENTICATION_ERROR:
 										return Object(l.a)(n, "error.authentication");
-									case e && e.error && e.error.type && e.error.type === g.E.INVALID_PREMIUM_AMOUNT:
+									case e && e.error && e.error.type && e.error.type === g.F.INVALID_PREMIUM_AMOUNT:
 										return Object(l.a)(n, "gold.givePremiumToUserModal.invalidPremiumPackage");
 									default:
 										return t
@@ -129,8 +129,8 @@
 				A = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				K = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				G = n("./src/reddit/controls/DropdownSelector/index.tsx"),
-				R = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				F = n("./src/reddit/controls/TextButton/index.tsx"),
+				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				R = n("./src/reddit/controls/TextButton/index.tsx"),
 				W = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				U = n("./src/reddit/models/Gold/Premium/index.ts");
 
@@ -278,7 +278,7 @@
 					} = this.state, x = Object(U.d)(h), b = a ? [r.a.messageInputOpen] : "";
 					return o.a.createElement(A.c, {
 						className: e
-					}, o.a.createElement(A.g, null, o.a.createElement(W.a, null, o.a.createElement(A.n, null, o.a.createElement(u.c, null, "Give Premium")), o.a.createElement(F.a, {
+					}, o.a.createElement(A.g, null, o.a.createElement(W.a, null, o.a.createElement(A.n, null, o.a.createElement(u.c, null, "Give Premium")), o.a.createElement(R.a, {
 						onClick: this.onClickClose
 					}, o.a.createElement(A.b, null)))), o.a.createElement("div", {
 						className: r.a.modalMain
@@ -326,7 +326,7 @@
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onGivePremium
-					}, n ? o.a.createElement(R.a, {
+					}, n ? o.a.createElement(F.a, {
 						className: r.a.loadingIcon,
 						sizePx: H
 					}) : o.a.createElement(u.c, null, "Confirm"))))))
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.67f190889025a9d9bad2.js.map
+//# sourceMappingURL=GivePremiumModal.b482a16f25d916e1b7b0.js.map

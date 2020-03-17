@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.01a9e38ef98f7c014c2f.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a96e8cf4d224aa705518.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1015,7 +1015,7 @@
 					postOrComment: u,
 					tooltipType: H ? N.c.Lightbox : void 0
 				}, r.a.createElement(g.b, {
-					ignore: Object(F.d)(u) || !!u.distinguishType && u.distinguishType !== l.C.NONE,
+					ignore: Object(F.d)(u) || !!u.distinguishType && u.distinguishType !== l.D.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, r.a.createElement(Ve, {
@@ -1143,7 +1143,7 @@
 						className: ne.a.CommentAuthorLink,
 						author: e.comment.author,
 						isAdmin: e.comment.isAdmin,
-						isAdminEmeritus: e.comment.distinguishType === l.C.ALUMNI_ADMIN,
+						isAdminEmeritus: e.comment.distinguishType === l.D.ALUMNI_ADMIN,
 						isAuthorDeleted: e.isAuthorDeleted,
 						isLivestreaming: e.isLivestreaming,
 						isMod: e.comment.isMod,
@@ -1216,13 +1216,13 @@
 						id: s.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), t.isAdmin && Ge(s.adminTooltipId, Ne(s.language)), t.distinguishType === l.C.ALUMNI_ADMIN && r.a.createElement(le, {
+					}), t.isAdmin && Ge(s.adminTooltipId, Ne(s.language)), t.distinguishType === l.D.ALUMNI_ADMIN && r.a.createElement(le, {
 						"aria-label": Me(s.language),
 						children: "Δ",
 						id: s.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), t.distinguishType === l.C.ALUMNI_ADMIN && Ge(s.adminEmeritusTooltipId, Me(s.language)), t.isMod && r.a.createElement(ue, {
+					}), t.distinguishType === l.D.ALUMNI_ADMIN && Ge(s.adminEmeritusTooltipId, Me(s.language)), t.isMod && r.a.createElement(ue, {
 						desc: Le(s.language, {
 							displayText: s.subredditDisplayText
 						}),
@@ -1513,7 +1513,7 @@
 				N = O.a.div("ThumbnailContainer", v.a),
 				T = Object(i.c)({
 					isCurrentUserProfilePost: g.i,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.zb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ab.TOPIC),
 					language: y.O,
 					post: g.M,
 					shouldOpenPostInNewTab: y.S,
@@ -2656,7 +2656,7 @@
 					let b, E;
 					if (this.state.mounted || u === o.a.Live) b = function(e, t, s, n) {
 						const r = Object(o.e)(e, t),
-							d = new Date(e * i.Db);
+							d = new Date(e * i.Eb);
 						let l;
 						if (r === o.a.Live || n) return Object(a.a)(s, "posts.event.inProgress");
 						r === o.a.Future ? l = Object(o.d)(e) ? Object(a.a)(s, "posts.event.today") : Object(o.b)(e) >= 5 ? c(d, s) : function(e, t) {
@@ -3672,7 +3672,7 @@
 					ne = U("Pinned", q.id, z);
 				return r.a.createElement("div", {
 					className: t
-				}, c && s && q.distinguishType === m.C.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(I.a, {
+				}, c && s && q.distinguishType === m.D.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(I.a, {
 					className: T.a.modIcon,
 					desc: F(O, {
 						displayText: s
@@ -4389,7 +4389,7 @@
 								listingKey: r
 							});
 							if (!s || !n) return !1;
-							const o = Object(u.a)(n.unitName, i.O.HOT, {
+							const o = Object(u.a)(n.unitName, i.P.HOT, {
 								category: s
 							});
 							return Object(f.h)(e, {
@@ -4798,7 +4798,7 @@
 						pageLayer: s
 					} = t;
 					return Object(Le.z)(s)
-				}, (e, t) => t && (e === i.zb.COMMENTS || e === i.zb.SUBREDDIT));
+				}, (e, t) => t && (e === i.Ab.COMMENTS || e === i.Ab.SUBREDDIT));
 			var Ve = s("./src/reddit/components/SearchResultsContent/Community/index.m.less"),
 				He = s.n(Ve);
 			const We = Object(a.c)({
@@ -4929,7 +4929,7 @@
 					loadMore: Ze.f,
 					viewportDataLoaded: $e.a
 				}),
-				it = [i.Lb.Subreddits, i.Lb.Users];
+				it = [i.Mb.Subreddits, i.Mb.Users];
 			class ct extends r.a.Component {
 				constructor() {
 					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new ge.a(ot), this.setLastVisibleChildRendered = () => {
@@ -4950,7 +4950,7 @@
 					s(Object(Xe.o)(e, t, tt.TimerType.InApp, n))
 				}
 				componentDidMount() {
-					this.checkAndSendScreenview(), this.timerId && Object(et.b)(i.l.Redesign, {
+					this.checkAndSendScreenview(), this.timerId && Object(et.b)(i.m.Redesign, {
 						type: "mount",
 						component: "communitySearchResults",
 						duration: et.c.end(this.timerId)
@@ -4960,7 +4960,7 @@
 					if (this.checkAndSendScreenview(), this.timerId && et.c.has(this.timerId)) {
 						const e = et.c.end(this.timerId);
 						if (e < 10) return;
-						Object(et.b)(i.l.Redesign, {
+						Object(et.b)(i.m.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "communitySearchResults"
@@ -5364,7 +5364,7 @@
 				})),
 				is = (e, t) => {
 					const s = qt()([...Object(Kt.a)(e)]);
-					return Object(i.Zb)(s.sort) && (t.sort = s.sort), Object(i.Zb)(s.t) && (t.t = s.t), t
+					return Object(i.ac)(s.sort) && (t.sort = s.sort), Object(i.ac)(s.t) && (t.t = s.t), t
 				},
 				cs = Object(a.c)({
 					isOpen: (e, t) => {
@@ -5432,39 +5432,39 @@
 					}
 					return s
 				};
-			const vs = [i.Jb.Relevance, i.Jb.Top, i.Jb.New, i.Jb.Comments],
+			const vs = [i.Kb.Relevance, i.Kb.Top, i.Kb.New, i.Kb.Comments],
 				Os = {
-					[i.Jb.Relevance]: () => Se.fbt._("Relevance", null, {
+					[i.Kb.Relevance]: () => Se.fbt._("Relevance", null, {
 						hk: "LvJkD"
 					}),
-					[i.Jb.Top]: () => Se.fbt._("Top", null, {
+					[i.Kb.Top]: () => Se.fbt._("Top", null, {
 						hk: "bijGV"
 					}),
-					[i.Jb.New]: () => Se.fbt._("New", null, {
+					[i.Kb.New]: () => Se.fbt._("New", null, {
 						hk: "23egpt"
 					}),
-					[i.Jb.Comments]: () => Se.fbt._("Comments", null, {
+					[i.Kb.Comments]: () => Se.fbt._("Comments", null, {
 						hk: "3s76RE"
 					})
 				},
-				Es = [i.Qb.HOUR, i.Qb.DAY, i.Qb.WEEK, i.Qb.MONTH, i.Qb.YEAR, i.Qb.ALL],
+				Es = [i.Rb.HOUR, i.Rb.DAY, i.Rb.WEEK, i.Rb.MONTH, i.Rb.YEAR, i.Rb.ALL],
 				Cs = {
-					[i.Qb.HOUR]: () => Se.fbt._("Past Hour", null, {
+					[i.Rb.HOUR]: () => Se.fbt._("Past Hour", null, {
 						hk: "4qCarL"
 					}),
-					[i.Qb.DAY]: () => Se.fbt._("Past 24 Hours", null, {
+					[i.Rb.DAY]: () => Se.fbt._("Past 24 Hours", null, {
 						hk: "GI5qN"
 					}),
-					[i.Qb.WEEK]: () => Se.fbt._("Past Week", null, {
+					[i.Rb.WEEK]: () => Se.fbt._("Past Week", null, {
 						hk: "3jQHYQ"
 					}),
-					[i.Qb.MONTH]: () => Se.fbt._("Past Month", null, {
+					[i.Rb.MONTH]: () => Se.fbt._("Past Month", null, {
 						hk: "11eVJy"
 					}),
-					[i.Qb.YEAR]: () => Se.fbt._("Past Year", null, {
+					[i.Rb.YEAR]: () => Se.fbt._("Past Year", null, {
 						hk: "38MavC"
 					}),
-					[i.Qb.ALL]: () => Se.fbt._("All Time", null, {
+					[i.Rb.ALL]: () => Se.fbt._("All Time", null, {
 						hk: "2buTB7"
 					})
 				},
@@ -5487,7 +5487,7 @@
 						n = e.queryParams && e.queryParams[bs.r],
 						o = {};
 					let a = Object(d.c)(e.url || "", s, {
-						[bs.r]: i.Bb
+						[bs.r]: i.Cb
 					});
 					const c = [];
 					for (const r of vs) {
@@ -5513,7 +5513,7 @@
 						n = e.queryParams && e.queryParams[bs.t],
 						o = {};
 					let a = Object(d.c)(e.url || "", s, {
-						[bs.t]: i.Cb
+						[bs.t]: i.Db
 					});
 					const c = [];
 					for (const r of Es) {
@@ -5566,7 +5566,7 @@
 					} = e, s = fs(e, ["className"]);
 					return r.a.createElement(xs.a, {
 						className: t
-					}, r.a.createElement(Ns, s), s.searchOptions && s.searchOptions.sort !== i.O.NEW && r.a.createElement(Ts, s), s.subreddit && !!s.searchOptions.restrict_sr && !s.shouldHideGlobalSearchLink && r.a.createElement(Ms, s))
+					}, r.a.createElement(Ns, s), s.searchOptions && s.searchOptions.sort !== i.P.NEW && r.a.createElement(Ts, s), s.subreddit && !!s.searchOptions.restrict_sr && !s.shouldHideGlobalSearchLink && r.a.createElement(Ms, s))
 				}))), "Component", ys.a),
 				Rs = (s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/url/url.js")),
 				As = s.n(Rs),
@@ -5596,7 +5596,7 @@
 					}, {
 						pathname: n,
 						search: o
-					} = As.a.parse(t), a = e ? i.Kb.ToSubreddit : i.Kb.ToGlobal, c = e ? r.a.createElement(r.a.Fragment, null, r.a.createElement("span", null, Us._("Show results from", null, {
+					} = As.a.parse(t), a = e ? i.Lb.ToSubreddit : i.Lb.ToGlobal, c = e ? r.a.createElement(r.a.Fragment, null, r.a.createElement("span", null, Us._("Show results from", null, {
 						hk: "3aVDvz"
 					})), r.a.createElement(Ie.b, {
 						className: Ds.a.subredditIcon,
@@ -6278,7 +6278,7 @@
 					viewTreatment: Ze.h
 				}),
 				xr = Object(o.b)(hr, e => ({
-					morePostsRequested: () => e(c.g([i.Lb.Posts]))
+					morePostsRequested: () => e(c.g([i.Mb.Posts]))
 				})),
 				gr = Object(Le.t)();
 			class yr extends r.a.PureComponent {
@@ -6391,7 +6391,7 @@
 					return a.a.createElement(u, {
 						className: p.a.moreCommunities,
 						to: t ? Object(c.c)(t, n, {
-							type: [i.Lb.Subreddits, i.Lb.Users].join(",")
+							type: [i.Mb.Subreddits, i.Mb.Users].join(",")
 						}) : "#"
 					}, a.a.createElement("span", {
 						className: p.a.numCommunities
@@ -6552,7 +6552,7 @@
 						onClick: this.sendPostsTabClickEvent,
 						key: "posts",
 						to: Object(c.c)(O, g, {
-							type: i.Lb.Posts
+							type: i.Mb.Posts
 						})
 					}, n.fbt._("Posts", null, {
 						hk: "vNVpl"
@@ -6561,7 +6561,7 @@
 						onClick: this.sendCommunitiesTabClickEvent,
 						key: "listings",
 						to: Object(c.c)(O, g, {
-							type: [i.Lb.Subreddits, i.Lb.Users].join(",")
+							type: [i.Mb.Subreddits, i.Mb.Users].join(",")
 						})
 					}, n.fbt._("Communities and users", null, {
 						hk: "xcZ7c"
@@ -6965,7 +6965,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = o()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -7741,7 +7741,7 @@
 						}, () => this.forceUnsticky = !1)) : j() >= P && this.setState({
 							sticky: !0
 						})
-					}, d.G), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, d.H), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -9243,11 +9243,11 @@
 					} = this.props, {
 						isCovidBannerHidden: p
 					} = this.state, u = r.params.subredditName || r.params.multiredditName || "", v = r.params.username, O = Object(h.c)(d()(a || {}, C.q)), j = Object.assign({}, O, {
-						sort: O.category ? b.Jb.Relevance : O.sort,
-						t: O.category ? b.Qb.DAY : O.t
+						sort: O.category ? b.Kb.Relevance : O.sort,
+						t: O.category ? b.Rb.DAY : O.t
 					}), P = Object(h.b)(u, v, j);
 					let _;
-					return _ = c && O.restrict_sr || 1 === j.type.length && j.type[0] === b.Lb.Posts ? E.g.Posts : j.type.length > 0 && -1 === j.type.indexOf(b.Lb.Posts) && (j.type.indexOf(b.Lb.Subreddits) > -1 || j.type.indexOf(b.Lb.Users) > -1) ? E.g.Listings : E.g.Top, m.a.createElement(k.a, {
+					return _ = c && O.restrict_sr || 1 === j.type.length && j.type[0] === b.Mb.Posts ? E.g.Posts : j.type.length > 0 && -1 === j.type.indexOf(b.Mb.Posts) && (j.type.indexOf(b.Mb.Subreddits) > -1 || j.type.indexOf(b.Mb.Users) > -1) ? E.g.Listings : E.g.Top, m.a.createElement(k.a, {
 						className: this.props.className,
 						navBar: m.a.createElement(y.a, {
 							currentPageUrl: "".concat(o).concat(e),
@@ -9334,4 +9334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.01a9e38ef98f7c014c2f.js.map
+//# sourceMappingURL=SearchResults.a96e8cf4d224aa705518.js.map

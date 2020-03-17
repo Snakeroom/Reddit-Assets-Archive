@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.4ff25eb84e3cee0c701f.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.77b058c13459fbfa1dec.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1275,7 +1275,7 @@
 					}))
 				})),
 				Y = e => {
-					const t = !e.isDeleted && e.post.distinguishType === i.C.ADMIN;
+					const t = !e.isDeleted && e.post.distinguishType === i.D.ADMIN;
 					return r.a.createElement(g.a, {
 						className: z.a.authorLink,
 						"data-click-id": "user",
@@ -1311,7 +1311,7 @@
 						showTimestamp: M = !0,
 						subredditOrProfile: P,
 						tooltipType: _
-					} = this.props, B = b && b.meta && b.meta.name === i.zb.COMMENTS, k = Object(p.a)(h), H = a === L.b.Left, R = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, F = !s && !B, W = r.a.createElement(r.a.Fragment, null, !k && r.a.createElement(q, {
+					} = this.props, B = b && b.meta && b.meta.name === i.Ab.COMMENTS, k = Object(p.a)(h), H = a === L.b.Left, R = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, F = !s && !B, W = r.a.createElement(r.a.Fragment, null, !k && r.a.createElement(q, {
 						style: {
 							color: V(this.props)
 						}
@@ -1344,7 +1344,7 @@
 						postOrComment: h,
 						tooltipType: _
 					}, r.a.createElement(v.b, {
-						ignore: Object(U.h)(h.author) || !!h.distinguishType && h.distinguishType !== i.C.NONE,
+						ignore: Object(U.h)(h.author) || !!h.distinguishType && h.distinguishType !== i.D.NONE,
 						subredditId: h.belongsTo.id,
 						userId: h.authorId
 					}, r.a.createElement(Y, {
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.4ff25eb84e3cee0c701f.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.77b058c13459fbfa1dec.js.map

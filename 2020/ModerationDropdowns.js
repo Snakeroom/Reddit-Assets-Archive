@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6db913fefd0d754c4ea0.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.bb089738c7738bdd9478.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -647,7 +647,7 @@
 						post: R,
 						sendEvent: C,
 						tooltipId: N
-					} = e, I = R.distinguishType === c.C.MODERATOR, y = I ? c.C.NONE : c.C.MODERATOR, S = Object(m.b)(R.id, i);
+					} = e, I = R.distinguishType === c.D.MODERATOR, y = I ? c.D.NONE : c.D.MODERATOR, S = Object(m.b)(R.id, i);
 					return n.a.createElement(F, {
 						className: D.a.dropdown,
 						isOpen: r,
@@ -1336,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.6db913fefd0d754c4ea0.js.map
+//# sourceMappingURL=ModerationDropdowns.bb089738c7738bdd9478.js.map

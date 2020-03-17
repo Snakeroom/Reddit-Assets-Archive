@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.bbce9b21522c083e23f2.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.b9be8977a1572bbb567f.js
+// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -117,7 +117,7 @@
 						const s = ((e, t) => {
 							const s = e.error && e.error.type,
 								r = e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg;
-							return s === d.i ? Object(q.c)("There was an authentication error") : r ? Object(q.c)(r) : Object(q.c)(t)
+							return s === d.j ? Object(q.c)("There was an authentication error") : r ? Object(q.c)(r) : Object(q.c)(t)
 						})(e, r);
 						t(Object(c.e)({
 							kind: o.b.Error,
@@ -220,4 +220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.bbce9b21522c083e23f2.js.map
+//# sourceMappingURL=gildActions.b9be8977a1572bbb567f.js.map
