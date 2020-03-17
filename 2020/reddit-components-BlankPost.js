@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e5c5fd5f6bec8b3628e5.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.71b6f0200262ef21630f.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -78,7 +78,7 @@
 				return e
 			}
 
-			function f(e, t, i) {
+			function g(e, t, i) {
 				return t in e ? Object.defineProperty(e, t, {
 					value: i,
 					enumerable: !0,
@@ -86,13 +86,13 @@
 					writable: !0
 				}) : e[t] = i, e
 			}
-			var g = ["root", "rootMargin", "threshold"],
+			var f = ["root", "rootMargin", "threshold"],
 				y = ["root", "rootMargin", "threshold", "disabled"],
 				V = Object.prototype,
 				T = V.hasOwnProperty,
 				_ = V.toString,
 				x = function(e) {
-					return g.reduce((function(t, i) {
+					return f.reduce((function(t, i) {
 						if (T.call(e, i)) {
 							var r = "root" === i && "[object String]" === _.call(e[i]);
 							t[i] = r ? document.querySelector(e[i]) : e[i]
@@ -105,26 +105,26 @@
 
 					function r() {
 						for (var t, i = arguments.length, r = new Array(i), n = 0; n < i; n++) r[n] = arguments[n];
-						return f(w(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
+						return g(w(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
 							t.props.onChange(e, t.externalUnobserve)
-						})), f(w(t), "handleNode", (function(e) {
+						})), g(w(t), "handleNode", (function(e) {
 							var i = t.props.children;
 							if (null != i) {
 								var r = i.ref;
 								r && ("function" == typeof r ? r(e) : "object" == typeof r && (r.current = e))
 							}
 							t.targetNode = e && Object(o.findDOMNode)(e)
-						})), f(w(t), "observe", (function() {
+						})), g(w(t), "observe", (function() {
 							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(x(t.props)), t.target = t.targetNode, e = w(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (b.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), f(w(t), "unobserve", (function(e) {
+						})), g(w(t), "unobserve", (function(e) {
 							! function(e, t) {
 								if (l.has(e.observer)) {
 									var i = l.get(e.observer);
 									i.delete(e) && (i.size > 0 ? e.observer.unobserve(t) : (e.observer.disconnect(), l.delete(e.observer)))
 								}
 							}(w(t), e)
-						})), f(w(t), "externalUnobserve", (function() {
+						})), g(w(t), "externalUnobserve", (function() {
 							t.unobserve(t.targetNode)
 						})), t
 					}
@@ -151,7 +151,7 @@
 						}) : null
 					}, r
 				}(n.a.Component);
-			f(S, "displayName", "IntersectionObserver"), i.d(t, "a", (function() {
+			g(S, "displayName", "IntersectionObserver"), i.d(t, "a", (function() {
 				return S
 			}))
 		},
@@ -235,6 +235,14 @@
 						viewabilityMinimum: l.d,
 						fired: !1,
 						timeViewingInitialized: 0
+					}, this.groupM = {
+						timer: null,
+						event: d.a.GroupMViewable,
+						threshold: l.a,
+						viewabilityMinimum: l.k,
+						fired: !1,
+						timeViewingInitialized: 0,
+						checkAdSize: !0
 					}, this.vendorFullyViewable = {
 						timer: null,
 						event: d.a.VendorFullyViewable,
@@ -287,7 +295,7 @@
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
 							event: e
-						}), this.checkViewability(e, this.viewableImpression), this.checkViewability(e, this.impression), this.checkViewability(e, this.vendorFullyViewable), this.checkViewability(e, this.vendorFullyViewableSeconds5), this.checkViewability(e, this.vendorFullyViewableSeconds15), this.props.trackVideoMetrics && (this.checkViewability(e, this.videoViewable), this.checkViewability(e, this.videoFullyViewable))
+						}), this.checkViewability(e, this.viewableImpression), this.checkViewability(e, this.impression), this.checkViewability(e, this.groupM), this.checkViewability(e, this.vendorFullyViewable), this.checkViewability(e, this.vendorFullyViewableSeconds5), this.checkViewability(e, this.vendorFullyViewableSeconds15), this.props.trackVideoMetrics && (this.checkViewability(e, this.videoViewable), this.checkViewability(e, this.videoFullyViewable))
 					}, this.state = {
 						event: null,
 						currentContinuousViewingStartedAt: e.continuousViewingStartedAt
@@ -328,6 +336,13 @@
 					return !!e && e.isIntersecting && e.intersectionRatio >= t
 				}
 				checkViewability(e, t) {
+					if (t.checkAdSize && e && e.target) {
+						const {
+							height: i,
+							width: r
+						} = e.boundingClientRect;
+						r * i > 242500 && (t.threshold = l.j)
+					}
 					if (this.isAdequatelyInView(e, t.threshold) && !t.fired) {
 						const e = this.getLengthForTimer(t);
 						return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
@@ -397,12 +412,12 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: n.Q,
-					pixelPostHasEnteredView: n.B,
-					pixelPostHasExitedView: n.C
+					onPostViewable: n.R,
+					pixelPostHasEnteredView: n.C,
+					pixelPostHasExitedView: n.D
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.e5c5fd5f6bec8b3628e5.js.map
+//# sourceMappingURL=reddit-components-BlankPost.71b6f0200262ef21630f.js.map

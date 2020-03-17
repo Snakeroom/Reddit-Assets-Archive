@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.00dd25f0d069d8d376eb.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.4fc056d3016d7b22518b.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -214,7 +214,7 @@
 						v = e[0],
 						y = Object(c.a)(v) ? _.e.Post : _.e.Comment,
 						k = y === _.e.Post ? f.posts.models[v] : f.comments.models[v],
-						h = y === _.e.Post ? b.S : l.R;
+						h = y === _.e.Post ? b.T : l.R;
 					if (!k || !p) return;
 					u(V()), u(h({
 						[v]: {
@@ -380,4 +380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=removalReasonActions.00dd25f0d069d8d376eb.js.map
+//# sourceMappingURL=removalReasonActions.4fc056d3016d7b22518b.js.map

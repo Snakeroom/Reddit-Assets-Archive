@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.06d68b596874296f5377.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.3795ad83ebef4ae2af15.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -379,14 +379,14 @@
 					id: h,
 					title: j,
 					onClose: () => {
-						f(!1), E("close", "click"), k(Object(i.H)()), k(Object(i.S)({
+						f(!1), E("close", "click"), k(Object(i.I)()), k(Object(i.T)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						k(Object(i.H)())
+						k(Object(i.I)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -446,10 +446,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						h(n.Closed), j("close", "click"), O(Object(d.H)())
+						h(n.Closed), j("close", "click"), O(Object(d.I)())
 					},
 					onClickOutside: () => {
-						O(Object(d.H)())
+						O(Object(d.I)())
 					}
 				};
 				switch (f) {
@@ -1076,7 +1076,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(i.D)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(i.E)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(d.c)(b))
 		},
@@ -1562,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.06d68b596874296f5377.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.3795ad83ebef4ae2af15.js.map

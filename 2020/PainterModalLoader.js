@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.efad1051de8bd9cb779e.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.ec564616083291b3bb9b.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -482,7 +482,7 @@
 							const {
 								postId: e
 							} = d, t = n.posts.models[e];
-							t && t.voteState === g.a.notVoted && s(Object(o.bb)(e))
+							t && t.voteState === g.a.notVoted && s(Object(o.cb)(e))
 						}
 					} else s(w({
 						pollId: e,
@@ -4878,4 +4878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.efad1051de8bd9cb779e.js.map
+//# sourceMappingURL=PainterModalLoader.ec564616083291b3bb9b.js.map

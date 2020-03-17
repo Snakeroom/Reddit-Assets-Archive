@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.bb089738c7738bdd9478.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.88f966c3d47095854d7e.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -599,24 +599,24 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(d.t)(s.id)),
-						onDistinguishPost: t => e(Object(d.v)(s.id, t)),
+						onApprovePost: () => e(Object(d.u)(s.id)),
+						onDistinguishPost: t => e(Object(d.w)(s.id, t)),
 						onFlairChanged: (t, o) => e(Object(l.h)({
 							post: s,
 							previewFlair: t,
 							selectedTemplateId: o
 						})),
 						onFlairPost: t => e(Object(i.i)(t)),
-						onLockPost: () => e(Object(d.F)(s.id)),
-						onNsfwPost: () => e(Object(d.J)(s.id)),
-						onOcPost: () => e(Object(d.K)(s.id)),
-						onRemovePost: () => e(Object(d.T)(s.id, !1)),
+						onLockPost: () => e(Object(d.G)(s.id)),
+						onNsfwPost: () => e(Object(d.K)(s.id)),
+						onOcPost: () => e(Object(d.L)(s.id)),
+						onRemovePost: () => e(Object(d.U)(s.id, !1)),
 						onModToMemberShareOpened: () => {
-							e(Object(i.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(d.G)(s.id))
+							e(Object(i.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(d.H)(s.id))
 						},
-						onSpamPost: () => e(Object(d.T)(s.id, !0)),
-						onSpoilerPost: () => e(Object(d.X)(s.id)),
-						onStickyPost: () => e(Object(d.ab)(s.id))
+						onSpamPost: () => e(Object(d.U)(s.id, !0)),
+						onSpoilerPost: () => e(Object(d.Y)(s.id)),
+						onStickyPost: () => e(Object(d.bb)(s.id))
 					}
 				}),
 				F = Object(p.a)(h.a),
@@ -1336,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.bb089738c7738bdd9478.js.map
+//# sourceMappingURL=ModerationDropdowns.88f966c3d47095854d7e.js.map

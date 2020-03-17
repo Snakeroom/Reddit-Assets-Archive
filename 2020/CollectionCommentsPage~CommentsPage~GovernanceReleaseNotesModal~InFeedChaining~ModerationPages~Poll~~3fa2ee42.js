@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.6ee896764384deaf3248.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.0a61832d47c56495c36c.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"], {
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, s) {
@@ -86,7 +86,7 @@
 				}
 			}
 			var u = Object(d.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(c.z)(t))
+				onLoadRichTextContentIfNeeded: t => e(Object(c.A)(t))
 			}))(m);
 
 			function b() {
@@ -358,8 +358,8 @@
 				}, {
 					ssr: !1
 				}),
-				k = 1200,
-				A = 75,
+				A = 1200,
+				k = 75,
 				U = "player.js",
 				G = L.r + L.q,
 				z = e => e.isVisible ? e.children : c.a.createElement("div", {
@@ -507,9 +507,9 @@
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(R.i, this.state.viewportHeight),
-						s = Math.min(k, 16 * t / 9);
-					s === k && (t = 9 * k / 16), e = this.state.viewportWidth >= I.c ? this.state.viewportWidth < L.l ? this.state.viewportWidth - G - 2 * A : this.state.viewportWidth - G - L.e - 2 * A : this.state.viewportWidth - 2 * A;
-					const i = this.state.viewportHeight - 2 * A;
+						s = Math.min(A, 16 * t / 9);
+					s === A && (t = 9 * A / 16), e = this.state.viewportWidth >= I.c ? this.state.viewportWidth < L.l ? this.state.viewportWidth - G - 2 * k : this.state.viewportWidth - G - L.e - 2 * k : this.state.viewportWidth - 2 * k;
+					const i = this.state.viewportHeight - 2 * k;
 					if (s > e) {
 						t *= e / s, s = e
 					} else if (t > i) {
@@ -537,8 +537,8 @@
 					} = e;
 					if (Object(R.C)(i.media)) return {
 						source: i.media.scrubberThumbSource,
-						width: this.state.viewportWidth - 2 * A,
-						height: this.state.viewportHeight - 2 * A
+						width: this.state.viewportWidth - 2 * k,
+						height: this.state.viewportHeight - 2 * k
 					};
 					const o = i.media && i.media.obfuscated || "";
 					let n = i.media && !Object(R.F)(i.media) ? i.media.content : "",
@@ -610,7 +610,7 @@
 						viewportWidth: V
 					} = this.state;
 					if (!m.media) return null;
-					const k = I || N,
+					const A = I || N,
 						U = D,
 						{
 							source: G,
@@ -761,7 +761,7 @@
 								width: n ? void 0 : t,
 								postId: m.id,
 								shouldLoad: !0,
-								shouldPause: k,
+								shouldPause: A,
 								source: G,
 								originalSource: m.media.content
 							}))))
@@ -792,7 +792,7 @@
 								autoPlay: "boolean" == typeof N ? !N : void 0,
 								isExpando: n,
 								shouldLoad: !0,
-								shouldPause: k,
+								shouldPause: A,
 								shouldStop: U,
 								hlsSource: m.media.hlsUrl,
 								mpegDashSource: m.media.dashUrl,
@@ -814,12 +814,12 @@
 								canLoad: L,
 								isExpando: !!n,
 								posterUrl: m.media.scrubberThumbSource,
-								shouldPause: k,
+								shouldPause: A,
 								url: m.media.hlsUrl
 							})));
 						case R.n.IMAGE:
-							const I = this.state.viewportHeight - 2 * A,
-								D = this.state.viewportWidth - 2 * A;
+							const I = this.state.viewportHeight - 2 * k,
+								D = this.state.viewportWidth - 2 * k;
 							let V = G;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(p.a)(m.thumbnail.url) ? V = m.thumbnail.url : m.preview && Object(p.a)(m.preview.url) && (V = m.preview.url)), c.a.createElement(v.a, H({}, Z, {
 								blurSrc: X ? V : void 0,
@@ -952,4 +952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.6ee896764384deaf3248.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.0a61832d47c56495c36c.js.map

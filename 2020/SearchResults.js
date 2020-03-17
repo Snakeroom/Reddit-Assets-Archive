@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.37a2169459a338981181.js
-// Retrieved at 3/17/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.36e148ff61b921f68437.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -399,10 +399,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === M.a.upvoted ? Object(N.bb)(r) : Object(N.w)(r);
+							const s = t === M.a.upvoted ? Object(N.cb)(r) : Object(N.x)(r);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(N.Z)(r)),
+						onIgnoreReports: () => e(Object(N.ab)(r)),
 						onOpenReportsDropdown: t => e(Object(T.h)({
 							tooltipId: t
 						}))
@@ -2734,7 +2734,7 @@
 				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(k);
 			const w = Object(o.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.x)({
+					toggle: () => e(Object(l.y)({
 						postId: t.post.id
 					}))
 				})),
@@ -3268,14 +3268,14 @@
 					id: y,
 					title: C,
 					onClose: () => {
-						g(!1), E("close", "click"), f(Object(c.H)()), f(Object(c.S)({
+						g(!1), E("close", "click"), f(Object(c.I)()), f(Object(c.T)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						f(Object(c.H)())
+						f(Object(c.I)())
 					}
 				}, o.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", o.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -3335,10 +3335,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						y(n.Closed), C("close", "click"), v(Object(d.H)())
+						y(n.Closed), C("close", "click"), v(Object(d.I)())
 					},
 					onClickOutside: () => {
-						v(Object(d.H)())
+						v(Object(d.I)())
 					}
 				};
 				switch (g) {
@@ -3973,7 +3973,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.D)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.E)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(d.c)(b))
 		},
@@ -6005,7 +6005,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), sr = "".concat(tn.a.assetPath, "/img/link-placeholder.png"), nr = (e, t) => t && t.length ? Object(Rt.M)(e, {
 				postId: t[0]
 			}) : void 0, rr = {
-				fireAdPixelsOfType: an.A,
+				fireAdPixelsOfType: an.B,
 				openLightbox: e => Object(hn.a)(e.permalink)
 			};
 			class or extends r.a.Component {
@@ -8234,16 +8234,16 @@
 						}))
 					},
 					openPost: t => {
-						e(i.L(t))
+						e(i.M(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(i.A(t, s))
+						e(i.B(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, n) => {
-						e(i.O(t, n))
+						e(i.P(t, n))
 					},
 					trackOnPostExitedViewport: (t, s, n, r) => {
-						e(i.P(t, n, r))
+						e(i.Q(t, n, r))
 					}
 				}),
 				j = Object(n.b)(E, C, (e, t, s) => Object.assign({}, e, t, s, {
@@ -8337,10 +8337,10 @@
 						}))
 					},
 					handleVote: t => {
-						const n = t === c.a.upvoted ? Object(o.bb)(s) : Object(o.w)(s);
+						const n = t === c.a.upvoted ? Object(o.cb)(s) : Object(o.x)(s);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(o.Z)(s)),
+					onIgnoreReports: () => e(Object(o.ab)(s)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -9331,4 +9331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.37a2169459a338981181.js.map
+//# sourceMappingURL=SearchResults.36e148ff61b921f68437.js.map

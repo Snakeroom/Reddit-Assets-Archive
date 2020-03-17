@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.cd29853ff0202fbff075.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.96d648aae1f4158875cb.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -788,7 +788,7 @@
 				mt = Object(Se.b)(pt, (e, t) => ({
 					deleteExamplePost: () => e(Object(Ue.b)(u.e)),
 					makeExamplePost: s => e(Object(Ue.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Ae.S)({
+					updateExamplePost: t => e(Object(Ae.T)({
 						[u.e]: {
 							flair: [t]
 						}
@@ -1935,4 +1935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.cd29853ff0202fbff075.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.96d648aae1f4158875cb.js.map

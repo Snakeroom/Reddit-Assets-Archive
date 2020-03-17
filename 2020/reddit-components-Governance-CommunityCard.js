@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.afe8cde63db1ac07f78f.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.e2f7ce42f6838c3f38c1.js
+// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -100,7 +100,7 @@
 							const {
 								postId: e
 							} = d, t = r.posts.models[e];
-							t && t.voteState === v.a.notVoted && n(Object(i.bb)(e))
+							t && t.voteState === v.a.notVoted && n(Object(i.cb)(e))
 						}
 					} else n(w({
 						pollId: e,
@@ -1229,4 +1229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.afe8cde63db1ac07f78f.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.e2f7ce42f6838c3f38c1.js.map
