@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.9943bf03fb1bc3ca712a.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.2024be52410ffb5cb3fd.js
+// Retrieved at 3/17/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -209,88 +209,78 @@
 		"./src/reddit/components/AdViewability/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return V
+				return u
 			}));
 			var r = i("./node_modules/lodash/isEqual.js"),
 				n = i.n(r),
 				o = i("./node_modules/react/index.js"),
 				s = i.n(o),
 				a = i("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				l = i("./src/reddit/constants/viewabilityEvents.ts");
-			const d = .01,
-				c = .5,
-				u = 1,
-				h = [c, u, d],
-				m = 1e3,
-				p = 100,
-				v = 5e3,
-				b = 15e3,
-				w = 0,
-				f = 2e3,
-				g = 3e3,
-				y = e => "boolean" == typeof e.cumulative;
-			class V extends o.Component {
+				l = i("./src/reddit/constants/adViewability.ts"),
+				d = i("./src/reddit/constants/viewabilityEvents.ts");
+			const c = e => "boolean" == typeof e.cumulative;
+			class u extends o.Component {
 				constructor(e) {
 					super(e), this.viewableImpression = {
 						timer: null,
-						event: l.a.Viewable,
-						threshold: c,
-						viewabilityMinimum: m,
+						event: d.a.Viewable,
+						threshold: l.j,
+						viewabilityMinimum: l.k,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.impression = {
 						timer: null,
-						event: l.a.Impression,
-						threshold: d,
-						viewabilityMinimum: w,
+						event: d.a.Impression,
+						threshold: l.c,
+						viewabilityMinimum: l.d,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewable = {
 						timer: null,
-						event: l.a.VendorFullyViewable,
-						threshold: u,
-						viewabilityMinimum: p,
+						event: d.a.VendorFullyViewable,
+						threshold: l.a,
+						viewabilityMinimum: l.h,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewableSeconds5 = {
 						timer: null,
-						event: l.a.VendorFullyViewableSeconds5,
-						threshold: c,
-						viewabilityMinimum: v,
+						event: d.a.VendorFullyViewableSeconds5,
+						threshold: l.j,
+						viewabilityMinimum: l.g,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: v,
+						remainingTime: l.g,
 						timeViewingInterrupted: 0,
 						cumulative: !0,
 						cumulativeElapsedTime: 0
 					}, this.vendorFullyViewableSeconds15 = {
 						timer: null,
-						event: l.a.VendorFullyViewableSeconds15,
-						threshold: c,
-						viewabilityMinimum: b,
+						event: d.a.VendorFullyViewableSeconds15,
+						threshold: l.j,
+						viewabilityMinimum: l.f,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: b,
+						remainingTime: l.f,
 						timeViewingInterrupted: 0,
 						cumulative: !0,
 						cumulativeElapsedTime: 0
 					}, this.videoViewable = {
 						timer: null,
-						event: l.a.VideoViewable,
-						threshold: c,
-						viewabilityMinimum: f,
+						event: d.a.VideoViewable,
+						threshold: l.j,
+						viewabilityMinimum: l.i,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: f,
+						remainingTime: l.i,
 						timeViewingInterrupted: 0
 					}, this.videoFullyViewable = {
 						timer: null,
-						event: l.a.VideoFullyViewable,
-						threshold: u,
-						viewabilityMinimum: g,
+						event: d.a.VideoFullyViewable,
+						threshold: l.a,
+						viewabilityMinimum: l.b,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: g,
+						remainingTime: l.b,
 						timeViewingInterrupted: 0
 					}, this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e), this.handleThresholds(e)
@@ -329,9 +319,9 @@
 					const {
 						pixelPostHasEnteredView: t,
 						pixelPostHasExitedView: i
-					} = this.props, r = h.filter(t => this.isAdequatelyInView(e, t));
+					} = this.props, r = l.e.filter(t => this.isAdequatelyInView(e, t));
 					r.length > 0 && t(r);
-					const n = h.filter(t => !this.isAdequatelyInView(e, t));
+					const n = l.e.filter(t => !this.isAdequatelyInView(e, t));
 					n.length > 0 && i(n)
 				}
 				isAdequatelyInView(e, t) {
@@ -342,7 +332,7 @@
 						const e = this.getLengthForTimer(t);
 						return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 					}
-					y(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
+					c(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
 				}
 				clearTimer(e) {
 					e && clearTimeout(e)
@@ -360,7 +350,7 @@
 				}
 				render() {
 					return s.a.createElement(a.a, {
-						threshold: h,
+						threshold: l.e,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
@@ -415,4 +405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.9943bf03fb1bc3ca712a.js.map
+//# sourceMappingURL=reddit-components-BlankPost.2024be52410ffb5cb3fd.js.map

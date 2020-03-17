@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5adfe2a29bf4e434d0e7.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d8635534951af985026b.js
+// Retrieved at 3/17/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -186,88 +186,78 @@
 		"./src/reddit/components/AdViewability/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return j
+				return u
 			}));
 			var n = s("./node_modules/lodash/isEqual.js"),
 				r = s.n(n),
 				i = s("./node_modules/react/index.js"),
 				o = s.n(i),
 				a = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				c = s("./src/reddit/constants/viewabilityEvents.ts");
-			const l = .01,
-				d = .5,
-				u = 1,
-				m = [d, u, l],
-				p = 1e3,
-				b = 100,
-				h = 5e3,
-				f = 15e3,
-				x = 0,
-				g = 2e3,
-				v = 3e3,
-				y = e => "boolean" == typeof e.cumulative;
-			class j extends i.Component {
+				c = s("./src/reddit/constants/adViewability.ts"),
+				l = s("./src/reddit/constants/viewabilityEvents.ts");
+			const d = e => "boolean" == typeof e.cumulative;
+			class u extends i.Component {
 				constructor(e) {
 					super(e), this.viewableImpression = {
 						timer: null,
-						event: c.a.Viewable,
-						threshold: d,
-						viewabilityMinimum: p,
+						event: l.a.Viewable,
+						threshold: c.j,
+						viewabilityMinimum: c.k,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.impression = {
 						timer: null,
-						event: c.a.Impression,
-						threshold: l,
-						viewabilityMinimum: x,
+						event: l.a.Impression,
+						threshold: c.c,
+						viewabilityMinimum: c.d,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewable = {
 						timer: null,
-						event: c.a.VendorFullyViewable,
-						threshold: u,
-						viewabilityMinimum: b,
+						event: l.a.VendorFullyViewable,
+						threshold: c.a,
+						viewabilityMinimum: c.h,
 						fired: !1,
 						timeViewingInitialized: 0
 					}, this.vendorFullyViewableSeconds5 = {
 						timer: null,
-						event: c.a.VendorFullyViewableSeconds5,
-						threshold: d,
-						viewabilityMinimum: h,
+						event: l.a.VendorFullyViewableSeconds5,
+						threshold: c.j,
+						viewabilityMinimum: c.g,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: h,
+						remainingTime: c.g,
 						timeViewingInterrupted: 0,
 						cumulative: !0,
 						cumulativeElapsedTime: 0
 					}, this.vendorFullyViewableSeconds15 = {
 						timer: null,
-						event: c.a.VendorFullyViewableSeconds15,
-						threshold: d,
-						viewabilityMinimum: f,
+						event: l.a.VendorFullyViewableSeconds15,
+						threshold: c.j,
+						viewabilityMinimum: c.f,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: f,
+						remainingTime: c.f,
 						timeViewingInterrupted: 0,
 						cumulative: !0,
 						cumulativeElapsedTime: 0
 					}, this.videoViewable = {
 						timer: null,
-						event: c.a.VideoViewable,
-						threshold: d,
-						viewabilityMinimum: g,
+						event: l.a.VideoViewable,
+						threshold: c.j,
+						viewabilityMinimum: c.i,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: g,
+						remainingTime: c.i,
 						timeViewingInterrupted: 0
 					}, this.videoFullyViewable = {
 						timer: null,
-						event: c.a.VideoFullyViewable,
-						threshold: u,
-						viewabilityMinimum: v,
+						event: l.a.VideoFullyViewable,
+						threshold: c.a,
+						viewabilityMinimum: c.b,
 						fired: !1,
 						timeViewingInitialized: 0,
-						remainingTime: v,
+						remainingTime: c.b,
 						timeViewingInterrupted: 0
 					}, this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e), this.handleThresholds(e)
@@ -306,9 +296,9 @@
 					const {
 						pixelPostHasEnteredView: t,
 						pixelPostHasExitedView: s
-					} = this.props, n = m.filter(t => this.isAdequatelyInView(e, t));
+					} = this.props, n = c.e.filter(t => this.isAdequatelyInView(e, t));
 					n.length > 0 && t(n);
-					const r = m.filter(t => !this.isAdequatelyInView(e, t));
+					const r = c.e.filter(t => !this.isAdequatelyInView(e, t));
 					r.length > 0 && s(r)
 				}
 				isAdequatelyInView(e, t) {
@@ -319,7 +309,7 @@
 						const e = this.getLengthForTimer(t);
 						return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 					}
-					y(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
+					d(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
 				}
 				clearTimer(e) {
 					e && clearTimeout(e)
@@ -337,7 +327,7 @@
 				}
 				render() {
 					return o.a.createElement(a.a, {
-						threshold: m,
+						threshold: c.e,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
@@ -3497,4 +3487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5adfe2a29bf4e434d0e7.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d8635534951af985026b.js.map
