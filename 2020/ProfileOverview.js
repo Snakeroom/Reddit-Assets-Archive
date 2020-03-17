@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a7329b19f4dcc1123a4b.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.695b0fe4140e45584769.js
+// Retrieved at 3/17/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6412,9 +6412,9 @@
 		},
 		"./src/reddit/components/MiniCardPost/MetaLine/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
 				a = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
 				c = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -6428,30 +6428,28 @@
 				const {
 					className: t,
 					crosspostSubredditOrProfile: s,
-					hideNSFWPref: n,
-					language: m,
-					post: p,
-					subredditOrProfile: h
+					hideNSFWPref: o,
+					post: m,
+					subredditOrProfile: p
 				} = e;
-				return o.a.createElement("div", {
+				return r.a.createElement("div", {
 					className: Object(a.a)(u.a.container, t)
-				}, o.a.createElement(d.a, {
+				}, r.a.createElement(d.a, {
 					className: u.a.subredditNameLink,
 					onMouseDown: e.onCommunityClick,
-					to: h.url
-				}, o.a.createElement(c.b, {
+					to: p.url
+				}, r.a.createElement(c.b, {
 					className: u.a.subredditIcon,
-					shouldHideNsfwIcon: n,
-					subredditOrProfile: h
-				}), o.a.createElement("span", null, h.displayText)), ((e, t, s) => {
-					if (s) return o.a.createElement("div", {
+					shouldHideNsfwIcon: o,
+					subredditOrProfile: p
+				}), r.a.createElement("span", null, p.displayText)), ((e, t) => {
+					if (t) return r.a.createElement("div", {
 						role: "img",
-						"aria-label": Object(r.a)(e, "posts.crosspostedByFrom", {
-							by: Object(l.c)(t),
-							from: s.displayText
+						"aria-label": n.fbt._("Crossposted by{author}from{community}", [n.fbt._param("author", Object(l.c)(e)), n.fbt._param("community", t.displayText)], {
+							hk: "2OZoR0"
 						})
-					}, o.a.createElement(b, null))
-				})(m, p.author, s), h && h.isQuarantined && o.a.createElement(i.a, null))
+					}, r.a.createElement(b, null))
+				})(m.author, s), p && p.isQuarantined && r.a.createElement(i.a, null))
 			}
 		},
 		"./src/reddit/components/MiniCardPost/Thumbnail/index.m.less": function(e, t, s) {
@@ -14868,7 +14866,6 @@
 						className: ct.a.metaLine,
 						crosspostSubredditOrProfile: r,
 						hideNSFWPref: m,
-						language: p,
 						post: x,
 						subredditOrProfile: C
 					}), !T && a.a.createElement("div", {
@@ -15288,4 +15285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.a7329b19f4dcc1123a4b.js.map
+//# sourceMappingURL=ProfileOverview.695b0fe4140e45584769.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.64bd50a1d6daa39122f1.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2d09c45cca3287e6a2b3.js
+// Retrieved at 3/17/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1118,34 +1118,6 @@
 						},
 						emailNotif: {
 							en: "email notification"
-						}
-					},
-					desktopNotifications: {
-						turnOnModal: {
-							change: {
-								en: "Change"
-							},
-							clickOn: {
-								en: "Click on"
-							},
-							gotIt: {
-								en: "Got it"
-							},
-							inYourAddressBar: {
-								en: "in your Chrome browser address bar"
-							},
-							notificationsToAllow: {
-								en: "notifications to 'Allow'"
-							},
-							select: {
-								en: "Select"
-							},
-							siteSettings: {
-								en: "site settings"
-							},
-							title: {
-								en: "Turn on Desktop Notifications"
-							}
 						}
 					}
 				},
@@ -4171,9 +4143,6 @@
 						},
 						crosspost: {
 							en: "crosspost"
-						},
-						crosspostedByFrom: {
-							en: "Crossposted by %{by} from %{from}"
 						},
 						delete: {
 							en: "delete"
@@ -11764,14 +11733,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("874cb2f-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("2365b5f-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "874cb2f-production",
+						release: "2365b5f-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12074,7 +12043,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "874cb2f-production",
+							releaseClient: "2365b5f-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17789,4 +17758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.64bd50a1d6daa39122f1.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.2d09c45cca3287e6a2b3.js.map

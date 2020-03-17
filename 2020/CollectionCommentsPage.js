@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c36ba658854b06e8841a.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.854981b008de55dd894e.js
+// Retrieved at 3/17/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10802,7 +10802,10 @@
 				T = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				N = s("./src/reddit/components/RecommendedPostList/Footer/index.m.less"),
 				M = s.n(N);
-			var L = Object(w.a)(e => {
+			const {
+				fbt: L
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			var R = Object(w.a)(e => {
 					const {
 						className: t,
 						onClick: s,
@@ -10813,7 +10816,7 @@
 						primaryColor: i
 					} = r, c = !o && i || Object(T.a)(Object.assign({}, e, {
 						redditStyle: !0
-					})).button, d = n ? "See more" : "Continue browsing";
+					})).button;
 					return a.a.createElement(I.a, {
 						className: Object(P.a)(M.a.footer, t),
 						onMouseDown: s,
@@ -10825,15 +10828,19 @@
 						className: M.a.background
 					}), a.a.createElement("div", {
 						className: M.a.layout
-					}, o ? a.a.createElement(C.c, null, "See more recommended") : a.a.createElement(C.c, null, d, " in", " ", a.a.createElement(C.b, {
-						name: "subredditName"
-					}, r.displayText)), a.a.createElement(S.a, {
+					}, o ? L._("See more recommended", null, {
+						hk: "4flaFF"
+					}) : n ? L._("See More in {subredditName}", [L._param("subredditName", r.displayText)], {
+						hk: "2APB4y"
+					}) : L._("Continue browsing in {subredditName}", [L._param("subredditName", r.displayText)], {
+						hk: "2gUyTU"
+					}), a.a.createElement(S.a, {
 						className: M.a.arrow
 					})))
 				}),
-				R = s("./src/reddit/components/RecommendedPostList/index.m.less"),
-				F = s.n(R);
-			const A = Object(c.a)((e, t) => {
+				F = s("./src/reddit/components/RecommendedPostList/index.m.less"),
+				A = s.n(F);
+			const B = Object(c.a)((e, t) => {
 					let {
 						isOverlay: s
 					} = t;
@@ -10842,18 +10849,18 @@
 					const o = Object(j.a)(n);
 					return !((!t || !o || s) && e)
 				}),
-				B = Object(c.c)({
+				D = Object(c.c)({
 					isChatPost: y.d,
 					isLoggedIn: _.F,
-					shouldShowSubredditUpsell: A
+					shouldShowSubredditUpsell: B
 				}),
-				D = Object(i.b)(B, e => ({
+				W = Object(i.b)(D, e => ({
 					loadMorePosts: t => e(Object(m.r)({
 						sort: d.P.HOT,
 						subredditName: t
 					}))
 				}));
-			class W extends a.a.Component {
+			class H extends a.a.Component {
 				constructor() {
 					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(h.d) : null, this.onViewed = (e, t) => Object(f.d)(this.listingKey(), d.P.TOP, t, e, d.Rb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(v.c)("recommended_footer"))
@@ -10874,7 +10881,7 @@
 						name: t
 					} = e;
 					return a.a.createElement("div", {
-						className: F.a.smallBanner
+						className: A.a.smallBanner
 					}, a.a.createElement(C.c, null, "More posts from the ", a.a.createElement(C.b, {
 						name: "name"
 					}, t), " community"))
@@ -10886,7 +10893,7 @@
 						name: t
 					} = e;
 					return a.a.createElement("span", {
-						className: F.a.textBanner
+						className: A.a.textBanner
 					}, a.a.createElement(C.c, null, "More from ", a.a.createElement(C.b, {
 						name: "name"
 					}, t)))
@@ -10901,9 +10908,9 @@
 						subredditOrProfile: i
 					} = this.props, c = n && Object(x.a)(n);
 					return s || t || c || !r ? null : a.a.createElement("div", {
-						className: F.a.container
+						className: A.a.container
 					}, this.renderSmallBanner(), a.a.createElement(p.a, {
-						className: F.a.postList,
+						className: A.a.postList,
 						disablePlaceholder: !0,
 						forcedLayout: g.g.Large,
 						getScrollContainer: this.scrollContainer,
@@ -10911,21 +10918,21 @@
 						listingKey: this.listingKey(),
 						listingName: b.c.PostDetail,
 						listingViewed: this.onViewed,
-						loadMoreClassName: F.a.loadMore,
+						loadMoreClassName: A.a.loadMore,
 						noPostsComponent: () => null,
 						onLoadMore: o.a,
 						preventScrollOnMount: !0,
 						inSubredditOrProfile: !0,
 						scrollContentContainerRef: e
-					}), a.a.createElement(L, {
-						className: F.a.footer,
+					}), a.a.createElement(R, {
+						className: A.a.footer,
 						onClick: this.onFooterClick,
 						shouldNavigateToHome: !1,
 						subredditOrProfile: i
 					}))
 				}
 			}
-			t.a = D(Object(u.c)(W))
+			t.a = W(Object(u.c)(H))
 		},
 		"./src/reddit/components/ReportFlow/index.tsx": function(e, t, s) {
 			"use strict";
@@ -17070,4 +17077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.c36ba658854b06e8841a.js.map
+//# sourceMappingURL=CollectionCommentsPage.854981b008de55dd894e.js.map
