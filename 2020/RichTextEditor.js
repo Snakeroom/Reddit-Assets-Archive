@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.c3ae436666e12ff0ffb6.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a98c9fbcaca63a2cbccd.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -839,7 +839,7 @@
 					}, r.a.createElement(w.c, null, "Comment"))))
 				}
 			}
-			t.a = Object(o.a)(v(Object(u.b)(y)))
+			t.a = Object(o.a)(v(Object(u.c)(y)))
 		},
 		"./src/reddit/components/CommentCreation/getCancelModalId.ts": function(e, t, n) {
 			"use strict";
@@ -1580,7 +1580,7 @@
 			}
 			t.a = Object(r.b)(f, e => ({
 				openContributorRequestModal: () => e(Object(d.i)(l.a.CONTRIBUTOR_REQUEST))
-			}))(Object(c.b)(C))
+			}))(Object(c.c)(C))
 		},
 		"./src/reddit/components/ContributorRequestFlow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1647,7 +1647,7 @@
 			const M = Object(r.b)(null, (e, t) => ({
 				closeModal: () => e(Object(u.i)(C))
 			}))(y);
-			t.a = Object(m.a)(Object(l.b)(M))
+			t.a = Object(m.a)(Object(l.c)(M))
 		},
 		"./src/reddit/components/PostCreationForm/MarkdownEditor/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2713,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.c3ae436666e12ff0ffb6.js.map
+//# sourceMappingURL=RichTextEditor.a98c9fbcaca63a2cbccd.js.map

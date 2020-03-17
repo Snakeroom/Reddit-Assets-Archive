@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.87f8270d6c0ff61cd81c.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6db913fefd0d754c4ea0.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -124,7 +124,7 @@
 					}))
 				}
 			}
-			t.default = Object(l.b)(I)
+			t.default = Object(l.c)(I)
 		},
 		"./src/reddit/components/ModModeReports/helpers.ts": function(e, t, s) {
 			"use strict";
@@ -411,7 +411,7 @@
 			const C = Object(a.b)(k, (e, t) => ({
 				closeModal: () => e(Object(l.i)(t.modalId))
 			}))(R);
-			t.a = Object(d.a)(Object(i.b)(C))
+			t.a = Object(d.a)(Object(i.c)(C))
 		},
 		"./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -599,28 +599,28 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(d.r)(s.id)),
-						onDistinguishPost: t => e(Object(d.t)(s.id, t)),
+						onApprovePost: () => e(Object(d.t)(s.id)),
+						onDistinguishPost: t => e(Object(d.v)(s.id, t)),
 						onFlairChanged: (t, o) => e(Object(l.h)({
 							post: s,
 							previewFlair: t,
 							selectedTemplateId: o
 						})),
 						onFlairPost: t => e(Object(i.i)(t)),
-						onLockPost: () => e(Object(d.D)(s.id)),
-						onNsfwPost: () => e(Object(d.F)(s.id)),
-						onOcPost: () => e(Object(d.G)(s.id)),
-						onRemovePost: () => e(Object(d.P)(s.id, !1)),
+						onLockPost: () => e(Object(d.F)(s.id)),
+						onNsfwPost: () => e(Object(d.J)(s.id)),
+						onOcPost: () => e(Object(d.K)(s.id)),
+						onRemovePost: () => e(Object(d.T)(s.id, !1)),
 						onModToMemberShareOpened: () => {
-							e(Object(i.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(d.E)(s.id))
+							e(Object(i.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(d.G)(s.id))
 						},
-						onSpamPost: () => e(Object(d.P)(s.id, !0)),
-						onSpoilerPost: () => e(Object(d.T)(s.id)),
-						onStickyPost: () => e(Object(d.W)(s.id))
+						onSpamPost: () => e(Object(d.T)(s.id, !0)),
+						onSpoilerPost: () => e(Object(d.X)(s.id)),
+						onStickyPost: () => e(Object(d.ab)(s.id))
 					}
 				}),
 				F = Object(p.a)(h.a),
-				A = S(T(Object(u.b)(e => {
+				A = S(T(Object(u.c)(e => {
 					const {
 						canEditFlair: t,
 						hasModFullPerms: s,
@@ -1336,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.87f8270d6c0ff61cd81c.js.map
+//# sourceMappingURL=ModerationDropdowns.6db913fefd0d754c4ea0.js.map

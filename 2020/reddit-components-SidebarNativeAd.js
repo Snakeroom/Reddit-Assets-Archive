@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c98284ce4f7adead547a.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7ae228aa0471bf698231.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -352,7 +352,7 @@
 						}))
 					}
 				}
-				return Object(a.b)(t)
+				return Object(a.c)(t)
 			}
 			const u = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -1254,7 +1254,7 @@
 			}
 			const Y = Object(a.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, s) => {
-					e(Object(v.y)(t, s))
+					e(Object(v.A)(t, s))
 				},
 				refreshSidebarPromotedPost: () => {
 					const {
@@ -1464,7 +1464,7 @@
 					}), o.a.createElement(O, null), !c && S))
 				}
 			}
-			t.a = Object(i.a)(Object(r.b)(E))
+			t.a = Object(i.a)(Object(r.c)(E))
 		},
 		"./src/reddit/helpers/truncateStringWithEllipsis.ts": function(e, t, s) {
 			"use strict";
@@ -1522,4 +1522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.c98284ce4f7adead547a.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.7ae228aa0471bf698231.js.map

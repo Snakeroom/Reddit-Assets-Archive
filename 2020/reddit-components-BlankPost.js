@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.2024be52410ffb5cb3fd.js
-// Retrieved at 3/17/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e5c5fd5f6bec8b3628e5.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -397,12 +397,12 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: n.M,
-					pixelPostHasEnteredView: n.z,
-					pixelPostHasExitedView: n.A
+					onPostViewable: n.Q,
+					pixelPostHasEnteredView: n.B,
+					pixelPostHasExitedView: n.C
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.2024be52410ffb5cb3fd.js.map
+//# sourceMappingURL=reddit-components-BlankPost.e5c5fd5f6bec8b3628e5.js.map

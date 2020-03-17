@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.a2e7ed6d5119ced301ce.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.f16ef8f6a9bcd815b076.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -637,7 +637,7 @@
 			var et = e => {
 					const t = ["control_1", "control_2", ...Le.d[e.experimentName]];
 					if (!t) return null;
-					const n = Le.F.has(e.experimentName);
+					const n = Le.G.has(e.experimentName);
 					return a.a.createElement(W.a, {
 						className: e.className
 					}, a.a.createElement(ze, null, "".concat(e.experimentName).concat(n ? "*" : "")), a.a.createElement(Qe, {
@@ -729,7 +729,7 @@
 				}
 			}
 			var dt = Object(u.b)(ct, e => ({
-					linkCopied: t => e(Me.C(t)),
+					linkCopied: t => e(Me.E(t)),
 					onSetExperimentOverride: (t, n) => e(Ue.c({
 						experimentName: t,
 						override: n
@@ -1446,4 +1446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.a2e7ed6d5119ced301ce.js.map
+//# sourceMappingURL=AdminPanel.f16ef8f6a9bcd815b076.js.map

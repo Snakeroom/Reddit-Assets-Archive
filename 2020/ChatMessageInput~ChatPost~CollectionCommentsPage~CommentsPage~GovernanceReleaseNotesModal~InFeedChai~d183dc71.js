@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.c4d7f97fa486780a91ca.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b17d3fbfb5fc04516001.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1232,7 +1232,7 @@
 					})) : null
 				}
 			}
-			var _ = Object(u.b)(j),
+			var _ = Object(u.c)(j),
 				w = n("./src/reddit/components/RichTextJson/media.tsx"),
 				C = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				v = n("./node_modules/react-redux/es/index.js"),
@@ -1283,7 +1283,7 @@
 					}, "r/".concat(e))
 				}
 			}
-			const H = Object(u.b)(D),
+			const H = Object(u.c)(D),
 				R = Object(I.c)({
 					isFeatureFlagEnabled: M.b,
 					isUserInTreatment: M.e,
@@ -1302,12 +1302,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.xb.SmIcon:
+						case N.yb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.xb.SmIconHc:
+						case N.yb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1769,12 +1769,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.tb
+						experimentName: s.ub
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.xb.SmIcon || t === s.xb.SmIconHc
+					return t === s.yb.SmIcon || t === s.yb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1800,4 +1800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.c4d7f97fa486780a91ca.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b17d3fbfb5fc04516001.js.map

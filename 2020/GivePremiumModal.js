@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.a3576646ea91db75c23d.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.67f190889025a9d9bad2.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -332,7 +332,7 @@
 					}) : o.a.createElement(u.c, null, "Confirm"))))))
 				}
 			}
-			const Q = Object(d.a)(Object(h.b)(J));
+			const Q = Object(d.a)(Object(h.c)(J));
 			t.default = V(e => o.a.createElement(Q, z({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.a3576646ea91db75c23d.js.map
+//# sourceMappingURL=GivePremiumModal.67f190889025a9d9bad2.js.map

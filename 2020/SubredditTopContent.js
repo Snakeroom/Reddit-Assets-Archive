@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8364098f546fe0afdab2.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.44ec4ddb15ca0cb2e534.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -71,7 +71,7 @@
 						}))
 					}
 				}
-				return Object(c.b)(t)
+				return Object(c.c)(t)
 			}
 			const u = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -117,9 +117,9 @@
 				b = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = s("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.D)(e) || b.yb.ShowTopContent === Object(f.c)(e, {
+			const O = e => Object(y.D)(e) || b.zb.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: b.ub
+				experimentName: b.vb
 			});
 			var C = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -492,4 +492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.8364098f546fe0afdab2.js.map
+//# sourceMappingURL=SubredditTopContent.44ec4ddb15ca0cb2e534.js.map

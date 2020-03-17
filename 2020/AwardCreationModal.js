@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.702b005dd39795c265ee.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.4cdc36f48d861687b4fa.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -1496,7 +1496,7 @@
 						}))
 					}
 				});
-			t.default = Object(i.b)(Qe(Object(h.b)(class extends s.a.PureComponent {
+			t.default = Object(i.b)(Qe(Object(h.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.702b005dd39795c265ee.js.map
+//# sourceMappingURL=AwardCreationModal.4cdc36f48d861687b4fa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.5c2baafa89d6a90e093b.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.2cc0e99c3fa180b44393.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -680,7 +680,7 @@
 					uploadAssetType: e => e.economics.currentModalArgs && e.economics.currentModalArgs.uploadAssetType || void 0
 				}),
 				je = Object(h.t)();
-			t.default = Object(c.a)(Object(p.b)(Object(u.b)(je(Object(o.b)(_e, (e, t) => ({
+			t.default = Object(c.a)(Object(p.b)(Object(u.c)(je(Object(o.b)(_e, (e, t) => ({
 				onClose: () => e(Object(d.f)()),
 				onGovernanceError: t => {
 					Object(l.a)(e, t)
@@ -1169,4 +1169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumUploadModal.5c2baafa89d6a90e093b.js.map
+//# sourceMappingURL=SubredditPremiumUploadModal.2cc0e99c3fa180b44393.js.map

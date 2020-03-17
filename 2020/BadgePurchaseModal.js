@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.0fc351e748c5f00b5897.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.aaebaf22221951578567.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -59,7 +59,7 @@
 				x = r("./src/reddit/i18n/utils.ts"),
 				v = r("./src/reddit/icons/svgs/Clock/index.tsx");
 
-			function h(e) {
+			function j(e) {
 				return s.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
@@ -72,7 +72,7 @@
 					fillRule: "evenodd"
 				}))
 			}
-			var j = r("./src/reddit/models/Badge/index.ts"),
+			var h = r("./src/reddit/models/Badge/index.ts"),
 				I = r("./src/reddit/selectors/gov.ts"),
 				y = r("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				O = r("./src/reddit/components/Badges/PurchaseModal/Header/index.m.less"),
@@ -140,8 +140,8 @@
 					}, Object(x.c)("you got a new badge!")), s.a.createElement("div", {
 						className: _.a.content
 					}, function(e) {
-						const t = Object(j.b)(128, 128, e);
-						return s.a.createElement(n.Fragment, null, s.a.createElement(h, {
+						const t = Object(h.b)(128, 128, e);
+						return s.a.createElement(n.Fragment, null, s.a.createElement(j, {
 							className: _.a.sunburst
 						}), s.a.createElement("img", {
 							className: _.a.image,
@@ -213,7 +213,7 @@
 					}, s.a.createElement(w, null, Object(x.c)("get badge")), s.a.createElement("div", {
 						className: S.a.content
 					}, function(e) {
-						const t = Object(j.b)(96, 96, e);
+						const t = Object(h.b)(96, 96, e);
 						return s.a.createElement("img", {
 							className: S.a.badgeImage,
 							src: t.url2x,
@@ -401,8 +401,8 @@
 				o = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				i = e => d.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.ab
-				}) === n.hb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -423,9 +423,9 @@
 			})), r.d(t, "j", (function() {
 				return v
 			})), r.d(t, "p", (function() {
-				return h
-			})), r.d(t, "q", (function() {
 				return j
+			})), r.d(t, "q", (function() {
+				return h
 			})), r.d(t, "o", (function() {
 				return I
 			})), r.d(t, "l", (function() {
@@ -507,8 +507,8 @@
 					const r = Object(n.m)(e, t);
 					return r && e.subreddits.gov.releaseNotes[r] || o
 				},
-				h = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
+				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				h = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				I = (e, t) => {
 					const r = _(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
@@ -563,4 +563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.0fc351e748c5f00b5897.js.map
+//# sourceMappingURL=BadgePurchaseModal.aaebaf22221951578567.js.map

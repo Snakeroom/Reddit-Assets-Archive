@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d08b0dc9d53b7ae54c38.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.2e732d0937e1acae423b.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -310,7 +310,7 @@
 					return Object(j.u)(e, s.id)
 				}
 			});
-			var M = Object(m.b)(Object(a.b)(D)((function(e) {
+			var M = Object(m.c)(Object(a.b)(D)((function(e) {
 					return r.a.createElement("div", {
 						className: Object(d.a)(L.a.container, e.className)
 					}, Object(w.c)("This community is a part of an exclusive experiment run by Reddit Admins. "), Object(w.c)("Hundreds of followers have paid for a"), r.a.createElement("div", {
@@ -381,7 +381,7 @@
 			const Z = Object(c.c)({
 				newbieBadge: e => Object(G.a)(e, q)
 			});
-			var Y = Object(b.b)(Object(m.b)(Object(a.b)(Z, (e, t) => {
+			var Y = Object(b.b)(Object(m.c)(Object(a.b)(Z, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -476,7 +476,7 @@
 						})
 					}
 				}),
-				ee = Object(m.b)(J),
+				ee = Object(m.c)(J),
 				te = Object(a.b)($, e => ({
 					onDismissBanner: t => e(Object(l.a)(t, g.a.NewUserWelcome)),
 					onFetchDismissedBanners: t => e(Object(l.b)(t))
@@ -831,8 +831,8 @@
 				o = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => i.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.ab
-				}) === n.hb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -993,4 +993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.d08b0dc9d53b7ae54c38.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.2e732d0937e1acae423b.js.map

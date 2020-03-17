@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.a7b859da3ec74797f78f.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.02f2bf6a915f3f92866e.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -100,7 +100,7 @@
 							const {
 								postId: e
 							} = d, t = r.posts.models[e];
-							t && t.voteState === v.a.notVoted && n(Object(i.X)(e))
+							t && t.voteState === v.a.notVoted && n(Object(i.bb)(e))
 						}
 					} else n(w({
 						pollId: e,
@@ -400,16 +400,16 @@
 					}
 				}));
 			var F = Object(A.b)(Z(V)),
-				X = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				Q = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
-				Y = n.n(Q);
+				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
+				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
+				Y = n.n(X);
 
 			function z(e) {
 				return o.a.createElement("div", {
 					className: Y.a.risk
 				}, o.a.createElement("div", {
 					className: Y.a.riskTitle
-				}, o.a.createElement(X.a, {
+				}, o.a.createElement(Q.a, {
 					className: Y.a.alertIcon
 				}), e.title), o.a.createElement("div", {
 					className: Y.a.riskBody
@@ -1067,8 +1067,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.ab
-				}) === s.hb.Enabled
+					experimentName: s.bb
+				}) === s.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1229,4 +1229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.a7b859da3ec74797f78f.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.02f2bf6a915f3f92866e.js.map

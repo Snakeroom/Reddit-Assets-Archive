@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.47cb19fbec94a9cb9a10.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.8e7023f822abb71004ae.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -299,7 +299,7 @@
 				},
 				language: C.O
 			});
-			t.a = Object(h.b)(Object(l.b)(V, e => ({
+			t.a = Object(h.c)(Object(l.b)(V, e => ({
 				showErrorToast: t => e(Object(p.e)({
 					text: t,
 					kind: y.b.Error,
@@ -453,7 +453,7 @@
 					})))
 				}
 			}
-			t.default = Object(c.b)(C)
+			t.default = Object(c.c)(C)
 		},
 		"./src/reddit/helpers/economics/membershipPage.ts": function(e, t, s) {
 			"use strict";
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.47cb19fbec94a9cb9a10.js.map
+//# sourceMappingURL=GifTooltip.8e7023f822abb71004ae.js.map

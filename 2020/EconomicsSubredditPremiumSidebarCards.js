@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.2e54e427569d6e840167.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.34a7521e94c1e7003964.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -544,7 +544,7 @@
 					return Object(a.y)(e, s)
 				}
 			});
-			var L = Object(v.b)(Object(n.b)(A, (e, t) => {
+			var L = Object(v.c)(Object(n.b)(A, (e, t) => {
 					let {
 						subredditId: s,
 						sendEvent: r
@@ -715,7 +715,7 @@
 					return e.subreddits.models[s]
 				}
 			});
-			var ue = Object(v.b)(Object(n.b)(me)((function(e) {
+			var ue = Object(v.c)(Object(n.b)(me)((function(e) {
 					const t = e.subreddit ? e.subreddit.name : "",
 						s = oe()();
 					return i.a.createElement("footer", {
@@ -1008,4 +1008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.2e54e427569d6e840167.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.34a7521e94c1e7003964.js.map

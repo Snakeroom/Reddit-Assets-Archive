@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0a94b9b47d2a9cc8cb36.js
-// Retrieved at 3/11/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.553dbf37cd99e0578388.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -536,7 +536,7 @@
 			const {
 				fbt: b
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = a.a.div("Wrapper", p.a), g = a.a.span("Copy", p.a), w = a.a.wrapped(l.g, "SignupLink", p.a), S = a.a.wrapped(l.j, "LoginLink", p.a);
-			t.a = Object(d.b)(e => {
+			t.a = Object(d.c)(e => {
 				let {
 					className: t,
 					isLiveStreaming: s,
@@ -2072,9 +2072,9 @@
 				}
 			}
 			var Qe = Object(a.b)(qe, (e, t) => ({
-				copyLink: t => e(Object(q.C)(t)),
+				copyLink: t => e(Object(q.E)(t)),
 				onHide: () => {
-					t.currentStreamId && (e(Object(q.U)(t.currentStreamId, !0, !0, !0)), e(j(t.currentStreamId)))
+					t.currentStreamId && (e(Object(q.Y)(t.currentStreamId, !0, !0, !0)), e(j(t.currentStreamId)))
 				}
 			}))(Xe);
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -2439,7 +2439,7 @@
 					subscribeConfig: () => e(_.a.subscribeConfig(t.related || t.subreddit)),
 					subscribeStreams: () => e(_.a.subscribeStreams(t.related || t.subreddit)),
 					onRecommendedViewerSubredditsSubscribe: () => e(_.a.subscribeRecommendedViewerSubreddits()),
-					onReportModalRequested: t => e(Object(L.j)(t, void 0, !0)),
+					onReportModalRequested: t => e(Object(L.k)(t, void 0, !0)),
 					onStatsSubscribe: t => e(_.a.subscribeStats(t)),
 					onHeartbeatSubscribe: t => e(_.a.subscribeHeartbeat(t)),
 					receiveHlsStreamEnded: t => e(Object(h.a)(t)),
@@ -2864,7 +2864,7 @@
 					}))
 				},
 				Yt = (e, t) => (e && e.post.id) !== (t && t.post.id);
-			var qt = zt(Object(V.b)(Jt)),
+			var qt = zt(Object(V.c)(Jt)),
 				Xt = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				Qt = s("./src/reddit/helpers/overlay/index.ts"),
 				Zt = s("./src/reddit/pages/PublicAccessNetwork/index.m.less"),
@@ -2956,7 +2956,7 @@
 			}, o.a.createElement("h2", null, es._("Not Found", null, {
 				hk: "2ijDv5"
 			})));
-			t.default = ss(Object(V.b)(Object(Xt.b)(rs)))
+			t.default = ss(Object(V.c)(Object(Xt.b)(rs)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
@@ -3217,4 +3217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.0a94b9b47d2a9cc8cb36.js.map
+//# sourceMappingURL=PublicAccessNetwork.553dbf37cd99e0578388.js.map

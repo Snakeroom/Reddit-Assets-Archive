@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.bb965110dd92e884f991.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.415265cbe540949b68f7.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, s, a) {
@@ -49,8 +49,8 @@
 				h = a("./src/reddit/actions/toaster.ts"),
 				g = a("./src/reddit/components/TrackingHelper/index.tsx"),
 				C = a("./src/reddit/constants/colors.ts"),
-				b = a("./src/reddit/helpers/correlationIdTracker.ts"),
-				P = a("./src/reddit/helpers/trackers/goldPayment.ts"),
+				P = a("./src/reddit/helpers/correlationIdTracker.ts"),
+				b = a("./src/reddit/helpers/trackers/goldPayment.ts"),
 				y = a("./src/reddit/models/Gold/Coins/index.ts"),
 				x = a("./src/reddit/models/Toast/index.ts"),
 				j = a("./src/reddit/models/User/index.ts"),
@@ -167,7 +167,7 @@
 					s.length || t || o(), a()
 				}
 				componentWillUnmount() {
-					Object(b.b)(b.a.GoldPayment), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(P.b)(P.a.GoldPayment), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -175,7 +175,7 @@
 						gildThingId: e,
 						sendEvent: s
 					} = this.props;
-					Object(b.d)(b.a.GoldPayment), s(Object(P.g)(e))
+					Object(P.d)(P.a.GoldPayment), s(Object(b.g)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -183,7 +183,7 @@
 							gildThingId: e,
 							sendEvent: s
 						} = this.props;
-						s(Object(P.f)(e))
+						s(Object(b.f)(e))
 					}
 				}
 				render() {
@@ -204,8 +204,8 @@
 						purchaseCatalogError: h,
 						purchaseCatalogPending: g,
 						savedCardsPending: C,
-						selectedAward: b,
-						selectedPayment: P,
+						selectedAward: P,
+						selectedPayment: b,
 						stripeErrorMessage: x,
 						stripeTokenPending: j,
 						userName: E
@@ -216,7 +216,7 @@
 					return g || !O ? o.a.createElement("div", {
 						className: s
 					}, o.a.createElement(I, {
-						award: b,
+						award: P,
 						onClickClose: p
 					})) : o.a.createElement("div", {
 						className: s
@@ -230,8 +230,8 @@
 						paypalErrorMessage: u,
 						purchasePackage: O,
 						savedCardsPending: C,
-						selectedAward: b,
-						selectedPayment: P,
+						selectedAward: P,
+						selectedPayment: b,
 						stripeErrorMessage: x,
 						stripeTokenPending: j,
 						userName: E
@@ -244,14 +244,14 @@
 				}
 			}
 			const H = Object(c.a)(G);
-			s.default = F(Object(g.b)(class extends o.a.PureComponent {
+			s.default = F(Object(g.c)(class extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
 							gildThingId: e,
 							sendEvent: s
 						} = this.props;
-						s(Object(P.a)(e)), this.onCloseModal()
+						s(Object(b.a)(e)), this.onCloseModal()
 					}, this.onCloseModal = () => {
 						this.props.closeModal(), this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
 					}
@@ -300,4 +300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.bb965110dd92e884f991.js.map
+//# sourceMappingURL=CoinsPurchaseModal.415265cbe540949b68f7.js.map

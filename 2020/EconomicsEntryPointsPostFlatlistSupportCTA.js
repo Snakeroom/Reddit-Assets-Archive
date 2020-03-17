@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsPostFlatlistSupportCTA.b4794cf5217c00059fb1.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsPostFlatlistSupportCTA.261e6a2bead2ebdecad1.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsEntryPointsPostFlatlistSupportCTA"], {
 		"./src/reddit/actions/economics/paymentSystems/actionCreators.ts": function(t, e, n) {
@@ -132,7 +132,7 @@
 				v = Object(r.a)(i.b);
 
 			function w(t, e) {
-				return Object(a.b)(class extends s.a.Component {
+				return Object(a.c)(class extends s.a.Component {
 					constructor() {
 						super(...arguments), this.ref = void 0, this.state = {
 							successfulPaymentAmount: void 0,
@@ -516,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsEntryPointsPostFlatlistSupportCTA.b4794cf5217c00059fb1.js.map
+//# sourceMappingURL=EconomicsEntryPointsPostFlatlistSupportCTA.261e6a2bead2ebdecad1.js.map

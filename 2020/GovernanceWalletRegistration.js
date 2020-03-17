@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.c361ba7ef7f303e3f3f2.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.4f117175cd8dc8b3f5ab.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -159,7 +159,7 @@
 							const {
 								postId: e
 							} = d, t = s.posts.models[e];
-							t && t.voteState === h.a.notVoted && n(Object(c.X)(e))
+							t && t.voteState === h.a.notVoted && n(Object(c.bb)(e))
 						}
 					} else n(E({
 						pollId: e,
@@ -908,7 +908,7 @@
 					subredditId: t.subredditId
 				}))
 			}));
-			t.a = K(Object(l.b)(Object(u.t)()(Q)))
+			t.a = K(Object(l.c)(Object(u.t)()(Q)))
 		},
 		"./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts": function(e, t, n) {
 			"use strict";
@@ -1474,8 +1474,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => c.has((Object(r.e)(e) || "").toLowerCase()) || i.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: o.G,
-					experimentName: a.ab
-				}) === a.hb.Enabled
+					experimentName: a.bb
+				}) === a.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1636,4 +1636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.c361ba7ef7f303e3f3f2.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.4f117175cd8dc8b3f5ab.js.map

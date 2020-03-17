@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.4efef6ac2e5548fcacef.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.889513520e3e8e6a62e8.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1563,7 +1563,7 @@
 				i = s("./src/reddit/components/Hovercards/HoverDiv/index.tsx"),
 				a = s("./src/reddit/components/Hovercards/AuthorHovercard/HoverCard.tsx"),
 				o = s("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = Object(o.b)(e => {
+			t.a = Object(o.c)(e => {
 				const t = "".concat(e.tooltipId, "-hover-id");
 				return r.a.createElement(i.a, {
 					hoverId: t,
@@ -2939,7 +2939,7 @@
 					}))))
 				}
 			}
-			t.b = $(Object(O.b)(ee))
+			t.b = $(Object(O.c)(ee))
 		},
 		"./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx": function(e, t, s) {
 			"use strict";
@@ -3132,7 +3132,7 @@
 				onFileSelected: (s, n) => {
 					e(Object(d.a)(t.subreddit, s, n))
 				}
-			}))(Object(c.b)(N))
+			}))(Object(c.c)(N))
 		},
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3433,7 +3433,7 @@
 					widget: u.f
 				}),
 				re = Object(i.b)(ne);
-			t.a = se(re(Object(o.b)(e => r.a.createElement(Z, {
+			t.a = se(re(Object(o.c)(e => r.a.createElement(Z, {
 				className: e.subredditNavContainerClassName,
 				isTopBannerVariant: e.isTopBannerVariant,
 				layout: e.layout,
@@ -3606,7 +3606,7 @@
 					}, a.a.createElement(re, null, s))) : null
 				}
 			}
-			var de = Object(o.b)(ie)(Object(Q.b)(oe)),
+			var de = Object(o.b)(ie)(Object(Q.c)(oe)),
 				ce = s("./src/lib/makeListingKey/index.ts"),
 				le = s("./src/reddit/actions/subreddit.ts"),
 				ue = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.tsx"),
@@ -3909,7 +3909,7 @@
 							t: c.Qb.WEEK
 						}))
 					}
-				})(Object(Q.b)(Ze)),
+				})(Object(Q.c)(Ze)),
 				Xe = s("./src/config.ts"),
 				$e = s("./src/lib/localStorageAvailable/index.ts"),
 				et = s("./src/higherOrderComponents/asModal/index.tsx"),
@@ -4092,7 +4092,7 @@
 					return {
 						toggleCloseMenuModal: () => e(Object(P.i)(Ct))
 					}
-				})(Object(Q.b)(Et)),
+				})(Object(Q.c)(Et)),
 				St = s("./src/reddit/components/Widgets/Widget/index.tsx"),
 				_t = s("./src/reddit/featureFlags/index.ts"),
 				Tt = s("./src/reddit/helpers/createBannerProperties/index.ts"),
@@ -4524,7 +4524,7 @@
 					}, i.a.createElement(T, null, a && this.renderSelectedFlairFilter(a), !a && this.renderFlairFilters(r), o && this.renderButton()))
 				}
 			}
-			t.a = N(_(Object(m.b)(P)))
+			t.a = N(_(Object(m.c)(P)))
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4779,7 +4779,7 @@
 					}, r.a.createElement(h.c, null, "See More")))
 				}
 			}
-			t.a = S(_(Object(d.a)(Object(l.b)(T))))
+			t.a = S(_(Object(d.a)(Object(l.c)(T))))
 		},
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, s) {
 			"use strict";
@@ -4938,7 +4938,7 @@
 				}))))),
 				q = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				z = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var G = Object(q.b)(e => r.a.createElement(z.b, {
+			var G = Object(q.c)(e => r.a.createElement(z.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -5210,10 +5210,10 @@
 						}))
 					},
 					handleVote: t => {
-						const n = t === d.a.upvoted ? Object(i.X)(s) : Object(i.u)(s);
+						const n = t === d.a.upvoted ? Object(i.bb)(s) : Object(i.w)(s);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(i.V)(s)),
+					onIgnoreReports: () => e(Object(i.Z)(s)),
 					onOpenReportsDropdown: t => e(Object(o.h)({
 						tooltipId: t
 					}))
@@ -6192,4 +6192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.4efef6ac2e5548fcacef.js.map
+//# sourceMappingURL=SubredditWiki.889513520e3e8e6a62e8.js.map

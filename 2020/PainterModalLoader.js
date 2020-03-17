@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.a3207781463b98fb504b.js
-// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.9ccf653e9d0e309117f4.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -482,7 +482,7 @@
 							const {
 								postId: e
 							} = d, t = n.posts.models[e];
-							t && t.voteState === g.a.notVoted && s(Object(o.X)(e))
+							t && t.voteState === g.a.notVoted && s(Object(o.bb)(e))
 						}
 					} else s(w({
 						pollId: e,
@@ -3701,7 +3701,7 @@
 					}, T))))
 				}
 			}
-			var At = Pt(Object(f.b)(Nt));
+			var At = Pt(Object(f.c)(Nt));
 			const Dt = 500,
 				Rt = 500;
 			class Bt extends n.a.Component {
@@ -4716,8 +4716,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: a.ab
-				}) === a.hb.Enabled
+					experimentName: a.bb
+				}) === a.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -4878,4 +4878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.a3207781463b98fb504b.js.map
+//# sourceMappingURL=PainterModalLoader.9ccf653e9d0e309117f4.js.map

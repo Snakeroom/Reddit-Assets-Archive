@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3365f6b1611768d4c1e8.js
-// Retrieved at 3/17/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.97c113173090f89e512d.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -391,7 +391,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "a", (function() {
 				return x
 			}));
 			const b = ["left", "bottom"],
@@ -1380,7 +1382,7 @@
 							const {
 								postId: e
 							} = l, t = s.posts.models[e];
-							t && t.voteState === b.a.notVoted && n(Object(a.X)(e))
+							t && t.voteState === b.a.notVoted && n(Object(a.bb)(e))
 						}
 					} else n(S({
 						pollId: e,
@@ -3055,7 +3057,7 @@
 					}))
 				}
 			}
-			t.a = Z(Object(N.b)(Q))
+			t.a = Z(Object(N.c)(Q))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3290,7 +3292,7 @@
 			const O = Object(r.b)(() => Object(i.c)({
 				labelNSFW: c.N
 			}));
-			t.a = O(Object(a.b)(e => {
+			t.a = O(Object(a.c)(e => {
 				let {
 					postCategories: t,
 					postId: n,
@@ -3925,7 +3927,7 @@
 					}, r.a.createElement(v.c, null, "Comment"))))
 				}
 			}
-			t.a = Object(o.a)(E(Object(p.b)(j)))
+			t.a = Object(o.a)(E(Object(p.c)(j)))
 		},
 		"./src/reddit/components/CommentCreation/getCancelModalId.ts": function(e, t, n) {
 			"use strict";
@@ -4022,7 +4024,7 @@
 			}
 			t.a = Object(r.b)(x, e => ({
 				openContributorRequestModal: () => e(Object(c.i)(d.a.CONTRIBUTOR_REQUEST))
-			}))(Object(l.b)(C))
+			}))(Object(l.c)(C))
 		},
 		"./src/reddit/components/ContributorRequestFlow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5983,7 +5985,7 @@
 			const S = Object(r.b)(null, (e, t) => ({
 				closeModal: () => e(Object(p.i)(C))
 			}))(j);
-			t.a = Object(u.a)(Object(d.b)(S))
+			t.a = Object(u.a)(Object(d.c)(S))
 		},
 		"./src/reddit/components/ModalStyledComponents/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -6769,7 +6771,7 @@
 					}, i.a.createElement(ce, null), J(t))))
 				}
 			}
-			const he = Object(l.a)(pe(Object(p.b)(me)));
+			const he = Object(l.a)(pe(Object(p.c)(me)));
 			t.a = he
 		},
 		"./src/reddit/components/PostCreationForm/ControlRow/PostModifiers/OCDisclaimer/index.m.less": function(e, t, n) {
@@ -8224,7 +8226,7 @@
 					}, s.a.createElement(y.c, null, "Apply"))), n && s.a.createElement(G, null, n)))
 				}
 			}
-			t.default = Object(c.a)(Q(Object(h.b)(X)))
+			t.default = Object(c.a)(Q(Object(h.c)(X)))
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts": function(e, t, n) {
 			"use strict";
@@ -8476,7 +8478,7 @@
 			const k = Object(i.b)(T, (e, t) => ({
 				closeModal: () => e(Object(d.i)(t.modalId))
 			}))(w);
-			t.a = Object(l.a)(Object(c.b)(k))
+			t.a = Object(l.a)(Object(c.c)(k))
 		},
 		"./src/reddit/components/PostMeta/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -8886,7 +8888,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = u.a.wrapped(V(G(Object(d.a)(Object(p.b)(X)))), "Component", D.a)
+			t.c = u.a.wrapped(V(G(Object(d.a)(Object(p.c)(X)))), "Component", D.a)
 		},
 		"./src/reddit/components/PostTopMeta/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -17328,7 +17330,7 @@
 					}), s.a.createElement(y, null), !l && w))
 				}
 			}
-			t.a = Object(i.a)(Object(r.b)(O))
+			t.a = Object(i.a)(Object(r.c)(O))
 		},
 		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, n) {
 			"use strict";
@@ -17840,7 +17842,7 @@
 					shouldShowCollectionEditOptions: x.s
 				}),
 				_ = Object(a.b)(k, (e, t) => ({
-					copyLink: () => e(Object(u.C)(t.permalink)),
+					copyLink: () => e(Object(u.E)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -17850,7 +17852,7 @@
 						S || (S = await Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), n.e("editCollectionModal")]).then(n.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(d.i("EDIT_POST_COLLECTION_MODAL_ID"))
 					}
 				}));
-			t.a = _(Object(b.b)(e => {
+			t.a = _(Object(b.c)(e => {
 				const {
 					className: t,
 					collectionId: n,
@@ -18415,7 +18417,7 @@
 					}, s.a.createElement(b.c, null, "See More")))
 				}
 			}
-			t.a = k(_(Object(c.a)(Object(d.b)(I))))
+			t.a = k(_(Object(c.a)(Object(d.c)(I))))
 		},
 		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, n) {
 			"use strict";
@@ -18699,28 +18701,31 @@
 		},
 		"./src/reddit/constants/zIndex.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "g", (function() {
 				return o
-			})), n.d(t, "c", (function() {
-				return s
-			})), n.d(t, "d", (function() {
-				return r
-			})), n.d(t, "a", (function() {
-				return i
 			})), n.d(t, "e", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return r
+			})), n.d(t, "d", (function() {
+				return i
+			})), n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return c
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "h", (function() {
 				return l
+			})), n.d(t, "b", (function() {
+				return d
 			}));
 			const o = 4,
-				s = 60,
-				r = 70,
-				i = 90,
-				a = 99,
-				c = 100,
-				l = 100
+				s = 51,
+				r = 60,
+				i = 70,
+				a = 90,
+				c = 99,
+				l = 100,
+				d = 100
 		},
 		"./src/reddit/contexts/InsideOverlay.tsx": function(e, t, n) {
 			"use strict";
@@ -26312,7 +26317,7 @@
 					})))
 				}
 			}
-			var po = io(ao(Object(Mn.b)(uo))),
+			var po = io(ao(Object(Mn.c)(uo))),
 				mo = n("./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.tsx"),
 				ho = n("./src/reddit/constants/posts.ts"),
 				bo = n("./src/reddit/controls/SubredditPicker/index.tsx"),
@@ -27239,7 +27244,7 @@
 							s && E.g(o(), s, n)
 						})
 					},
-					copyLink: t => e(Object(Oi.C)(t)),
+					copyLink: t => e(Object(Oi.E)(t)),
 					trackConnectAccountsClick: () => e((e, t) => E.b(t()))
 				}), (e, t, n) => Object.assign({}, e, t, n, {
 					onTogglePostToTwitter: () => t.togglePostToTwitter(!e.postToTwitter),
@@ -27692,7 +27697,7 @@
 					onToggleVotingLengthDropdown: () => e(Object(Pa.h)({
 						tooltipId: Ga
 					}))
-				}))(Object(Mn.b)(Xa)),
+				}))(Object(Mn.c)(Xa)),
 				$a = n("./src/reddit/components/Governance/ProposalTemplates/Generic/index.m.less"),
 				ec = n.n($a);
 			const tc = [{
@@ -28926,7 +28931,7 @@
 					})
 				}
 			}
-			t.default = Nd(Md(Object(Mn.b)(Rd)))
+			t.default = Nd(Md(Object(Mn.c)(Rd)))
 		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, n) {
 			"use strict";
@@ -29335,8 +29340,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				l = e => a.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: o.ab
-				}) === o.hb.Enabled
+					experimentName: o.bb
+				}) === o.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -29595,4 +29600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.3365f6b1611768d4c1e8.js.map
+//# sourceMappingURL=PostCreation.97c113173090f89e512d.js.map

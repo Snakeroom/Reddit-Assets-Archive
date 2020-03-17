@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.09d52cc8aad34b8e3ac8.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.3ce638a38a9e1c9de68e.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -323,4 +323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.09d52cc8aad34b8e3ac8.js.map
+//# sourceMappingURL=GildModal.3ce638a38a9e1c9de68e.js.map

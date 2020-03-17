@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bf2b1909b79da55acb44.js
-// Retrieved at 3/17/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2443689864dcbb57c8d7.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11757,14 +11757,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("db89a86-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("afef3ce-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "db89a86-production",
+						release: "afef3ce-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new r.Integrations.Breadcrumbs({
@@ -12067,7 +12067,7 @@
 							settings: s,
 							statusCode: r,
 							type: o,
-							releaseClient: "db89a86-production",
+							releaseClient: "afef3ce-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -14028,6 +14028,7 @@
 				a = (e, t, i) => Object(n.d)(i, (e => e ? "#FFFFFF" : "#000000")(t), e),
 				u = (e, t) => a(e, t, .2),
 				c = Object.assign({}, l, {
+					actionIconAlpha20: Object(n.j)(l.actionIcon, .2),
 					actionIconAlpha50: Object(n.j)(l.actionIcon, .5),
 					actionIconShaded80: Object(n.l)(.8, l.actionIcon),
 					bodyAlpha50: Object(n.j)(l.body, .5),
@@ -14190,6 +14191,7 @@
 					}
 				},
 				g = Object.assign({}, _, {
+					actionIconAlpha20: Object(n.j)(_.actionIcon, .2),
 					actionIconAlpha50: Object(n.j)(_.actionIcon, .5),
 					actionIconShaded80: Object(n.l)(.8, _.actionIcon),
 					bodyAlpha50: Object(n.j)(_.body, .5),
@@ -17762,4 +17764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.bf2b1909b79da55acb44.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.2443689864dcbb57c8d7.js.map

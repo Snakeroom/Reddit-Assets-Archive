@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f7850cd0b5bbcc201aee.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e81ced117f1082e19b35.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -71,7 +71,7 @@
 						}))
 					}
 				}
-				return Object(a.b)(t)
+				return Object(a.c)(t)
 			}
 			const p = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -768,4 +768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.f7850cd0b5bbcc201aee.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.e81ced117f1082e19b35.js.map

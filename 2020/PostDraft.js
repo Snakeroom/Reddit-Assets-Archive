@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.2089c0e023b2e3de6c70.js
-// Retrieved at 3/16/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.585c386b58fb33738afe.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1056,7 +1056,7 @@
 					shouldShowCollectionEditOptions: f.s
 				}),
 				P = Object(a.b)(M, (e, t) => ({
-					copyLink: () => e(Object(m.C)(t.permalink)),
+					copyLink: () => e(Object(m.E)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(d.b)(n))
 					},
@@ -1066,7 +1066,7 @@
 						_ || (_ = await Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), n.e("editCollectionModal")]).then(n.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(c.i("EDIT_POST_COLLECTION_MODAL_ID"))
 					}
 				}));
-			t.a = P(Object(b.b)(e => {
+			t.a = P(Object(b.c)(e => {
 				const {
 					className: t,
 					collectionId: n,
@@ -1631,7 +1631,7 @@
 					}, r.a.createElement(b.c, null, "See More")))
 				}
 			}
-			t.a = M(P(Object(d.a)(Object(c.b)(S))))
+			t.a = M(P(Object(d.a)(Object(c.c)(S))))
 		},
 		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, n) {
 			"use strict";
@@ -2077,4 +2077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.2089c0e023b2e3de6c70.js.map
+//# sourceMappingURL=PostDraft.585c386b58fb33738afe.js.map

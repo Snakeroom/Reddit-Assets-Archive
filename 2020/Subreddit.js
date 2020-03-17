@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2a3fb2da38bc8c19a36d.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.53093aaf45653c373ca0.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -264,7 +264,7 @@
 					const s = e.platform.currentPage;
 					return s && s.meta ? c.c(t.listingName, s.meta.name) : ""
 				}
-			}))(Object(b.b)(C))
+			}))(Object(b.c)(C))
 		},
 		"./src/reddit/components/CommunityIdTopBar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -548,7 +548,7 @@
 					})))) : null
 				}
 			}
-			t.a = O(Object(l.b)(C))
+			t.a = O(Object(l.c)(C))
 		},
 		"./src/reddit/components/DiscoveryUnit/Layout/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -928,7 +928,7 @@
 					}), r.a.createElement(h.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = T(B(Object(u.b)(Object(c.a)(A))))
+			t.a = T(B(Object(u.c)(Object(c.a)(A))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1047,7 +1047,9 @@
 							isPopularPage: n,
 							sort: a
 						} = this.props, i = n && !!s && e === h.O.HOT && a === h.O.HOT;
-						return r.a.createElement(r.a.Fragment, null, r.a.createElement(O.a, {
+						return r.a.createElement(r.a.Fragment, {
+							key: e
+						}, r.a.createElement(O.a, {
 							className: Object(o.a)(w.a.SortLink, e === a && w.a.selected),
 							onClick: () => this.changeSort(e),
 							to: this.getSortUrl(e),
@@ -1116,7 +1118,7 @@
 					}, r.a.createElement(j.a, null))))
 				}
 			}
-			var F = T(Object(a.b)(B)(Object(c.b)(A))),
+			var F = T(Object(a.b)(B)(Object(c.c)(A))),
 				D = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				W = s.n(D);
 			const M = Object(l.t)({
@@ -1185,7 +1187,7 @@
 					}))
 				}
 			}
-			t.a = M(R(Object(c.b)(U)))
+			t.a = M(R(Object(c.c)(U)))
 		},
 		"./src/reddit/components/Governance/ClaimPointsBanner/async.ts": function(e, t, s) {
 			"use strict";
@@ -3296,7 +3298,7 @@
 					}))))
 				}
 			}
-			t.b = $(Object(y.b)(ee))
+			t.b = $(Object(y.c)(ee))
 		},
 		"./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx": function(e, t, s) {
 			"use strict";
@@ -3489,7 +3491,7 @@
 				onFileSelected: (s, n) => {
 					e(Object(d.a)(t.subreddit, s, n))
 				}
-			}))(Object(c.b)(w))
+			}))(Object(c.c)(w))
 		},
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3790,7 +3792,7 @@
 					widget: m.f
 				}),
 				re = Object(a.b)(ne);
-			t.a = se(re(Object(i.b)(e => r.a.createElement(Q, {
+			t.a = se(re(Object(i.c)(e => r.a.createElement(Q, {
 				className: e.subredditNavContainerClassName,
 				isTopBannerVariant: e.isTopBannerVariant,
 				layout: e.layout,
@@ -3963,7 +3965,7 @@
 					}, o.a.createElement(re, null, s))) : null
 				}
 			}
-			var de = Object(i.b)(ae)(Object(Z.b)(ie)),
+			var de = Object(i.b)(ae)(Object(Z.c)(ie)),
 				ce = s("./src/lib/makeListingKey/index.ts"),
 				le = s("./src/reddit/actions/subreddit.ts"),
 				me = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.tsx"),
@@ -4266,7 +4268,7 @@
 							t: c.Qb.WEEK
 						}))
 					}
-				})(Object(Z.b)(Qe)),
+				})(Object(Z.c)(Qe)),
 				Xe = s("./src/config.ts"),
 				$e = s("./src/lib/localStorageAvailable/index.ts"),
 				et = s("./src/higherOrderComponents/asModal/index.tsx"),
@@ -4449,7 +4451,7 @@
 					return {
 						toggleCloseMenuModal: () => e(Object(T.i)(Et))
 					}
-				})(Object(Z.b)(Nt)),
+				})(Object(Z.c)(Nt)),
 				St = s("./src/reddit/components/Widgets/Widget/index.tsx"),
 				Pt = s("./src/reddit/featureFlags/index.ts"),
 				kt = s("./src/reddit/helpers/createBannerProperties/index.ts"),
@@ -4662,7 +4664,7 @@
 					variant: e => Object(c.d)(e)
 				}),
 				p = Object(a.b)(u);
-			t.a = p(Object(d.b)(e => 0 !== e.postCount && e.variant ? r.a.createElement(i.a, {
+			t.a = p(Object(d.c)(e => 0 !== e.postCount && e.variant ? r.a.createElement(i.a, {
 				handlePillClick: e.handlePillClick,
 				previousPageIsOverlay: e.previousPageIsOverlay,
 				sendEvent: e.sendEvent,
@@ -5172,7 +5174,7 @@
 					}, a.a.createElement(k, null, o && this.renderSelectedFlairFilter(o), !o && this.renderFlairFilters(r), i && this.renderButton()))
 				}
 			}
-			t.a = w(P(Object(u.b)(T)))
+			t.a = w(P(Object(u.c)(T)))
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -5444,7 +5446,7 @@
 				}))))),
 				K = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				q = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var J = Object(K.b)(e => r.a.createElement(q.b, {
+			var J = Object(K.c)(e => r.a.createElement(q.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -5689,10 +5691,10 @@
 						}))
 					},
 					handleVote: t => {
-						const n = t === d.a.upvoted ? Object(a.X)(s) : Object(a.u)(s);
+						const n = t === d.a.upvoted ? Object(a.bb)(s) : Object(a.w)(s);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(a.V)(s)),
+					onIgnoreReports: () => e(Object(a.Z)(s)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -6984,7 +6986,7 @@
 					}))
 				}
 			}
-			t.default = we(Ge(Object(ee.b)(Ye)))
+			t.default = we(Ge(Object(ee.c)(Ye)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts": function(e, t, s) {
 			"use strict";
@@ -7316,4 +7318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.2a3fb2da38bc8c19a36d.js.map
+//# sourceMappingURL=Subreddit.53093aaf45653c373ca0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.0775af852efb1dc37bd5.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.92c99e68dff0dbf75da1.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -303,7 +303,7 @@
 					}))))
 				}
 			}
-			t.a = Object(c.b)(u)
+			t.a = Object(c.c)(u)
 		},
 		"./src/reddit/components/PremiumPurchaseModal/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -410,7 +410,7 @@
 					}))
 				}
 			}
-			var R = Object(p.b)(I),
+			var R = Object(p.c)(I),
 				S = a("./node_modules/react-stripe-elements/es/index.js"),
 				T = a("./src/reddit/components/CheckoutForm/index.tsx"),
 				A = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
@@ -491,7 +491,7 @@
 					}, s.a.createElement(j.c, null, "Complete purchase")))
 				}
 			}
-			var D = Object(S.injectStripe)(Object(p.b)(G));
+			var D = Object(S.injectStripe)(Object(p.c)(G));
 			var B = e => s.a.createElement("div", {
 				className: M.a.premiumPurchaseHeader,
 				style: {
@@ -663,7 +663,7 @@
 				Q = {
 					backgroundColor: h.a.overlayReportFlow
 				};
-			t.default = U(Object(p.b)(class extends s.a.PureComponent {
+			t.default = U(Object(p.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -906,4 +906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.0775af852efb1dc37bd5.js.map
+//# sourceMappingURL=PremiumPurchaseModal.92c99e68dff0dbf75da1.js.map

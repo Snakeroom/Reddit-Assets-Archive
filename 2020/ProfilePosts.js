@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.d8c2b4c791dbbec0863a.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.537c673cc80cd97245f1.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, r) {
@@ -286,7 +286,7 @@
 					}), n.a.createElement(x.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = k(A(Object(u.b)(Object(c.a)(B))))
+			t.a = k(A(Object(u.c)(Object(c.a)(B))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -405,7 +405,9 @@
 							isPopularPage: s,
 							sort: o
 						} = this.props, i = s && !!r && e === x.O.HOT && o === x.O.HOT;
-						return n.a.createElement(n.a.Fragment, null, n.a.createElement(w.a, {
+						return n.a.createElement(n.a.Fragment, {
+							key: e
+						}, n.a.createElement(w.a, {
 							className: Object(a.a)(C.a.SortLink, e === o && C.a.selected),
 							onClick: () => this.changeSort(e),
 							to: this.getSortUrl(e),
@@ -474,7 +476,7 @@
 					}, n.a.createElement(N.a, null))))
 				}
 			}
-			var R = k(Object(o.b)(A)(Object(c.b)(B))),
+			var R = k(Object(o.b)(A)(Object(c.c)(B))),
 				D = r("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				F = r.n(D);
 			const M = Object(l.t)({
@@ -543,7 +545,7 @@
 					}))
 				}
 			}
-			t.a = M(W(Object(c.b)(H)))
+			t.a = M(W(Object(c.c)(H)))
 		},
 		"./src/reddit/components/ProfileNavMenu/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1574,7 +1576,7 @@
 				}), (e, t, r) => Object.assign({}, r, e, t, {
 					onTwitterAccountClicked: () => t.trackTwitterAccountClicked(e.user)
 				}));
-			t.a = Object(d.b)(C(e => {
+			t.a = Object(d.c)(C(e => {
 				const {
 					onTwitterAccountClicked: t,
 					twitterAccount: r
@@ -1933,4 +1935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts.d8c2b4c791dbbec0863a.js.map
+//# sourceMappingURL=ProfilePosts.537c673cc80cd97245f1.js.map

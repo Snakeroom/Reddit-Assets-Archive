@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.8f5242c4d55135386571.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.9588599a54051772d74b.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -51,8 +51,8 @@
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./src/lib/classNames/index.ts"),
-				c = r("./src/lib/currency/centsToDollars/index.ts"),
+				c = r("./src/lib/classNames/index.ts"),
+				i = r("./src/lib/currency/centsToDollars/index.ts"),
 				a = r("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
 				o = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = r("./src/reddit/contexts/ApiContext.tsx"),
@@ -76,14 +76,14 @@
 					}
 				}), t)
 			}
-			t.b = Object(d.b)(Object(o.b)((function(e) {
+			t.b = Object(d.b)(Object(o.c)((function(e) {
 				const {
 					className: t,
 					price: r,
 					subreddit: s
 				} = e;
 				return n.a.createElement("div", {
-					className: Object(i.a)(u.a.container, t)
+					className: Object(c.a)(u.a.container, t)
 				}, n.a.createElement("div", {
 					className: u.a.topLine
 				}, n.a.createElement(a.a, {
@@ -109,7 +109,7 @@
 					key: e
 				})))), n.a.createElement("footer", {
 					className: u.a.price
-				}, Object(l.c)("$".concat(Object(l.b)("price", Object(c.a)(r)), "/month"))))
+				}, Object(l.c)("$".concat(Object(l.b)("price", Object(i.a)(r)), "/month"))))
 			})))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less": function(e, t, r) {
@@ -129,8 +129,8 @@
 			"use strict";
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./node_modules/react-redux/es/index.js"),
-				c = r("./node_modules/react-router-redux/es/index.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/react-router-redux/es/index.js"),
 				a = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/lib/classNames/index.ts"),
 				d = r("./src/lib/currency/centsToDollars/index.ts"),
@@ -249,7 +249,7 @@
 					return Object(O.B)(e, r.id)
 				}
 			});
-			t.a = Object(g.b)(Object(i.b)(S, (e, t) => {
+			t.a = Object(g.b)(Object(c.b)(S, (e, t) => {
 				let {
 					subreddit: r,
 					onComplete: s
@@ -260,10 +260,10 @@
 						t ? e(Object(m.f)(r.id, !0)).then(() => e(Object(b.d)(() => {}))).then(() => s && s()).then(() => e(Object(l.c)({
 							subredditId: r.id,
 							initialView: j.c.MyBadges
-						}))) : e(Object(c.b)(r.url))
+						}))) : e(Object(i.b)(r.url))
 					}
 				}
-			})(Object(p.b)(N)))
+			})(Object(p.c)(N)))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -286,8 +286,8 @@
 			r.r(t);
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./node_modules/react-redux/es/index.js"),
-				c = r("./node_modules/reselect/es/index.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/reselect/es/index.js"),
 				a = r("./src/higherOrderComponents/asModal/index.tsx"),
 				o = r("./src/reddit/actions/modal.ts"),
 				d = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -338,19 +338,19 @@
 				C = r.n(E);
 			const w = (e, t, r) => {
 				const s = '<a href="'.concat(_.a, '" target="_blank">Reddit Beta Terms of Service</a>'),
-					i = "".concat(Object(j.b)("communityName", e.name), " ").concat(Object(j.b)("membershipAlt", r.membershipAlt), " ") + "automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months. By purchasing a " + "".concat(Object(j.b)("communityName", e.name), " ").concat(Object(j.b)("membershipAlt", r.membershipAlt), ", you ") + "agree to the ".concat(Object(j.b)("userAgreement", '<a href="https://www.redditinc.com/policies/user-agreement" target="_blank">Reddit User Agreement</a>'), " ") + "and ".concat(Object(j.b)("beta", s), "."),
-					c = Object(j.c)(i);
+					c = "".concat(Object(j.b)("communityName", e.name), " ").concat(Object(j.b)("membershipAlt", r.membershipAlt), " ") + "automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months. By purchasing a " + "".concat(Object(j.b)("communityName", e.name), " ").concat(Object(j.b)("membershipAlt", r.membershipAlt), ", you ") + "agree to the ".concat(Object(j.b)("userAgreement", '<a href="https://www.redditinc.com/policies/user-agreement" target="_blank">Reddit User Agreement</a>'), " ") + "and ".concat(Object(j.b)("beta", s), "."),
+					i = Object(j.c)(c);
 				return n.a.createElement("div", {
 					className: C.a.legalWrapper,
 					dangerouslySetInnerHTML: {
-						__html: c
+						__html: i
 					},
 					style: {
 						color: t ? "var(--newRedditTheme-body)" : "var(--newRedditTheme-metaText)"
 					}
 				})
 			};
-			const P = Object(c.c)({
+			const P = Object(i.c)({
 				isNightmode: e => e.user.prefs.nightmode,
 				meta: (e, t) => {
 					let {
@@ -359,7 +359,7 @@
 					return Object(O.u)(e, r.id)
 				}
 			});
-			var v = Object(i.b)(P)((function(e) {
+			var v = Object(c.b)(P)((function(e) {
 					return n.a.createElement("footer", {
 						className: Object(x.a)(e.className, C.a.container),
 						style: {
@@ -409,14 +409,14 @@
 					})) : null
 				}
 			}
-			const M = Object(c.c)({
+			const M = Object(i.c)({
 					subreddit: l.q
 				}),
-				A = Object(i.b)(M, e => ({
+				A = Object(c.b)(M, e => ({
 					onClose: () => e(Object(o.f)())
 				})),
 				T = Object(l.t)(),
-				k = Object(d.b)(B);
+				k = Object(d.c)(B);
 			t.default = Object(m.a)("spPremium", Object(a.a)(T(A(k))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less": function(e, t, r) {
@@ -446,9 +446,9 @@
 			"use strict";
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./src/lib/classNames/index.ts");
+				c = r("./src/lib/classNames/index.ts");
 
-			function c(e) {
+			function i(e) {
 				return n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -492,17 +492,17 @@
 				const t = e.subreddit && (e.subreddit.communityIcon || e.subreddit.icon.url),
 					r = u[e.size || "regular"];
 				return n.a.createElement("div", {
-					className: Object(i.a)(r.container, e.className)
+					className: Object(c.a)(r.container, e.className)
 				}, e.subreddit ? n.a.createElement("img", {
 					className: r.crownImg,
 					src: Object(d.a)(e.subreddit, "Crown.gif")
 				}) : n.a.createElement(o.a, {
 					className: r.crown
-				}), n.a.createElement(c, {
+				}), n.a.createElement(i, {
 					className: r.bling1
-				}), n.a.createElement(c, {
+				}), n.a.createElement(i, {
 					className: r.bling2
-				}), n.a.createElement(c, {
+				}), n.a.createElement(i, {
 					className: r.bling3
 				}), t ? n.a.createElement("img", {
 					className: r.icon,
@@ -536,8 +536,8 @@
 			r("./node_modules/core-js/modules/es6.symbol.js");
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./node_modules/react-redux/es/index.js"),
-				c = r("./node_modules/reselect/es/index.js"),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/reselect/es/index.js"),
 				a = r("./src/reddit/featureFlags/index.ts"),
 				o = function(e, t) {
 					var r = {};
@@ -550,31 +550,31 @@
 				};
 
 			function d(e, t, r) {
-				const s = Object(c.c)({
+				const s = Object(i.c)({
 					featureEnabled: t => a.d[e](t)
 				});
-				return Object(i.b)(s)(e => {
+				return Object(c.b)(s)(e => {
 					const {
 						featureEnabled: s
-					} = e, i = o(e, ["featureEnabled"]);
-					return s ? n.a.createElement(t, i) : void 0 !== r ? n.a.createElement(r, i) : null
+					} = e, c = o(e, ["featureEnabled"]);
+					return s ? n.a.createElement(t, c) : void 0 !== r ? n.a.createElement(r, c) : null
 				})
 			}
 		},
 		"./src/reddit/helpers/economics/setupSubredditPremiumButton.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return i
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var s = r("./src/lib/currency/centsToDollars/index.ts"),
 				n = r("./src/reddit/endpoints/economics/specialMembership.ts"),
-				i = r("./src/reddit/helpers/loadThirdPartyScript.ts");
-			async function c(e) {
+				c = r("./src/reddit/helpers/loadThirdPartyScript.ts");
+			async function i(e) {
 				let {
 					apiContext: t,
 					config: r,
-					elementId: c,
+					elementId: i,
 					price: a,
 					purchaseFn: o,
 					username: d,
@@ -592,7 +592,7 @@
 				try {
 					const [e] = await Promise.all([Object(n.b)(t, {
 						username: d
-					}), Object(i.a)()]);
+					}), Object(c.a)()]);
 					if (!e.ok) return void g(e.error, "/ps/me/braintree-client-tokens");
 					const u = await braintree.client.create({
 							authorization: e.body.clientToken
@@ -630,7 +630,7 @@
 						},
 						onCancel: () => l && l(),
 						onError: e => g(e, "paypalError")
-					}).render("#".concat(c))
+					}).render("#".concat(i))
 				} catch (h) {
 					g(h, "paypalError")
 				}
@@ -639,12 +639,12 @@
 		"./src/reddit/icons/svgs/Crown/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return c
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s);
 
-			function i(e) {
+			function c(e) {
 				return n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -664,4 +664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.8f5242c4d55135386571.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.9588599a54051772d74b.js.map

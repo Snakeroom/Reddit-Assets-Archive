@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.1d36eb9374580d047b97.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2ab4534747462cbc8ed6.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -511,7 +511,8 @@
 						handleVote: d,
 						showBulkActionCheckbox: p,
 						isCheckboxSelected: a,
-						toggleCheckbox: u
+						toggleCheckbox: u,
+						subreddit: m
 					}), l.a.createElement(de, null, l.a.createElement(ce, null, l.a.createElement(pe, null, s.postAuthor && l.a.createElement(M.a, {
 						comment: s,
 						subredditOrProfile: m
@@ -609,7 +610,7 @@
 				}, l.a.createElement(C.a, null, e.buttonText)), "StatusItem", pt.a),
 				bt = p.a.div("StatusContainer", pt.a),
 				ht = Object(c.c)({
-					selectedItems: ke.f
+					selectedItems: ke.g
 				}),
 				gt = Object(d.b)(ht, e => ({
 					onIgnoreReports: () => e(Object(u.f)(Ee.a.IgnoreReports)),
@@ -622,7 +623,7 @@
 					onUnspoiler: () => e(Object(u.f)(Ee.a.Unspoiler))
 				})),
 				xt = e => e.some(e => Object(j.a)(e)),
-				ft = p.a.wrapped(gt(Object(ct.b)(e => l.a.createElement("div", {
+				ft = p.a.wrapped(gt(Object(ct.c)(e => l.a.createElement("div", {
 					className: e.className,
 					style: e.style
 				}, l.a.createElement(bt, null, l.a.createElement(ut, {
@@ -681,7 +682,7 @@
 					return Object(dt.b)(s)(e)
 				}
 			});
-			var Ot = Object(d.b)(yt)(Object(ct.b)(e => {
+			var Ot = Object(d.b)(yt)(Object(ct.c)(e => {
 					const {
 						className: t,
 						isDropdownOpen: s,
@@ -717,7 +718,7 @@
 					isApiPending: ke.a,
 					moderatorPermissions: rt.j,
 					posts: lt.P,
-					selectedItems: ke.f
+					selectedItems: ke.g
 				}),
 				Ft = Object(d.b)(Nt, e => ({
 					onApprove: () => e(Object(u.f)(Ee.a.Approve)),
@@ -881,11 +882,11 @@
 				}),
 				Vt = Object(c.c)({
 					currentPage: e => e.platform.currentPage,
-					isModQueueListingPending: ke.b,
-					loadMore: ke.d,
-					modQueueListingItems: ke.c,
+					isModQueueListingPending: ke.c,
+					loadMore: ke.e,
+					modQueueListingItems: ke.d,
 					origin: Se.h,
-					selectedItems: ke.f,
+					selectedItems: ke.g,
 					subredditId: (e, t) => t.subredditName ? Object(je.D)(e, t.subredditName) : null
 				}),
 				Xt = Object(d.b)(Vt, e => ({
@@ -898,8 +899,8 @@
 					bulkUnselectItems: t => e(Object(u.c)({
 						ids: t
 					})),
-					fireAdPixelsOfType: (t, s) => e(Object(b.y)(t, s)),
-					openPost: t => e(Object(b.H)(t))
+					fireAdPixelsOfType: (t, s) => e(Object(b.A)(t, s)),
+					openPost: t => e(Object(b.L)(t))
 				})),
 				qt = e => e.page ? parseInt(e.page, 10) : Ee.b,
 				Ht = e => qt(e) + 1,
@@ -1175,7 +1176,7 @@
 				}), (e, t, s) => Object.assign({}, e, t, s, {
 					toggleTooltip: e => t.toggleTooltip(e)
 				}));
-			t.a = _(T(Object(g.b)(e => {
+			t.a = _(T(Object(g.c)(e => {
 				const {
 					sendEvent: t,
 					subredditId: s
@@ -1352,4 +1353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.1d36eb9374580d047b97.js.map
+//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.2ab4534747462cbc8ed6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a209f1c2b9ff2f4747ae.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.37b2f5f6989ffa5367f3.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -544,7 +544,7 @@
 					}, o.a.createElement(g.a, null, o.a.createElement(w, null), o.a.createElement(j, null, o.a.createElement(p.c, null, "live")), o.a.createElement(S, null, "·"), o.a.createElement(E, null, Object(d.b)(t, "live.viewers", e.viewerCount))), o.a.createElement(C, null, e.title, o.a.createElement(N, null)), o.a.createElement(S, null, e.description)) : null
 				}
 			}
-			t.a = k(Object(l.b)(P))
+			t.a = k(Object(l.c)(P))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -698,7 +698,7 @@
 					}), r.a.createElement(h.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = L(D(Object(m.b)(Object(d.a)(B))))
+			t.a = L(D(Object(m.c)(Object(d.a)(B))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -817,7 +817,9 @@
 							isPopularPage: n,
 							sort: o
 						} = this.props, a = n && !!s && e === h.O.HOT && o === h.O.HOT;
-						return r.a.createElement(r.a.Fragment, null, r.a.createElement(_.a, {
+						return r.a.createElement(r.a.Fragment, {
+							key: e
+						}, r.a.createElement(_.a, {
 							className: Object(i.a)(N.a.SortLink, e === o && N.a.selected),
 							onClick: () => this.changeSort(e),
 							to: this.getSortUrl(e),
@@ -886,7 +888,7 @@
 					}, r.a.createElement(j.a, null))))
 				}
 			}
-			var A = L(Object(o.b)(D)(Object(d.b)(B))),
+			var A = L(Object(o.b)(D)(Object(d.c)(B))),
 				R = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				U = s.n(R);
 			const F = Object(l.t)({
@@ -955,7 +957,7 @@
 					}))
 				}
 			}
-			t.a = F(H(Object(d.b)(V)))
+			t.a = F(H(Object(d.c)(V)))
 		},
 		"./src/reddit/components/InFeedPostCreation/async.tsx": function(e, t, s) {
 			"use strict";
@@ -1535,7 +1537,7 @@
 			var n = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				r = s("./src/reddit/connectors/SubscribeButton/index.ts"),
 				o = s("./src/reddit/components/SubscribeButton/Base.tsx");
-			t.a = Object(r.a)(Object(n.b)(o.a))
+			t.a = Object(r.a)(Object(n.c)(o.a))
 		},
 		"./src/reddit/components/TabBadger/Loader.ts": function(e, t, s) {
 			"use strict";
@@ -1582,7 +1584,7 @@
 					variant: e => Object(d.d)(e)
 				}),
 				p = Object(o.b)(m);
-			t.a = p(Object(c.b)(e => 0 !== e.postCount && e.variant ? r.a.createElement(a.a, {
+			t.a = p(Object(c.c)(e => 0 !== e.postCount && e.variant ? r.a.createElement(a.a, {
 				handlePillClick: e.handlePillClick,
 				previousPageIsOverlay: e.previousPageIsOverlay,
 				sendEvent: e.sendEvent,
@@ -2113,7 +2115,7 @@
 					})
 				}
 			}
-			t.default = $(oe(Object(D.b)(ce)))
+			t.default = $(oe(Object(D.c)(ce)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts": function(e, t, s) {
 			"use strict";
@@ -2445,4 +2447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.a209f1c2b9ff2f4747ae.js.map
+//# sourceMappingURL=Frontpage.37b2f5f6989ffa5367f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.16303455f206c804aef0.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c7389857022321cc87c3.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -204,7 +204,7 @@
 				X = n("./src/lib/lessComponent.tsx");
 			const V = Object(r.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(H.a)(t.permalink)),
-					clearLinks: () => e(Object(U.s)())
+					clearLinks: () => e(Object(U.u)())
 				})),
 				K = X.a.button("ClearButton", Z.a);
 			class G extends a.a.Component {
@@ -246,7 +246,7 @@
 				se = n("./src/reddit/selectors/subreddit.ts");
 			var ae = Object(r.b)(Object(o.c)({
 					communities: se.g
-				}))(Object(te.b)(e => a.a.createElement(ne.b, {
+				}))(Object(te.c)(e => a.a.createElement(ne.b, {
 					className: e.className,
 					communities: e.communities,
 					getClickEventFactory: e.getClickEventFactory,
@@ -747,7 +747,7 @@
 					}, this.props))
 				}
 			}
-			t.a = Object(w.b)(Object(F.b)(J))
+			t.a = Object(w.b)(Object(F.c)(J))
 		},
 		"./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx": function(e, t, n) {
 			"use strict";
@@ -934,4 +934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.16303455f206c804aef0.js.map
+//# sourceMappingURL=FrontpageSidebar.c7389857022321cc87c3.js.map

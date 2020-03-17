@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.56d059b15812f47bb342.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f53da4b11ef5abe54605.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -154,7 +154,7 @@
 				}
 			}
 			const I = Object(d.a)(_);
-			s.default = f(Object(h.b)(class extends a.a.PureComponent {
+			s.default = f(Object(h.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.56d059b15812f47bb342.js.map
+//# sourceMappingURL=PennyPurchaseModal.f53da4b11ef5abe54605.js.map

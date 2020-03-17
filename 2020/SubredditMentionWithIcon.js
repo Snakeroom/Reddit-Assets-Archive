@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.fe99d439c62d01c4feb5.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.63554f28af7fc62ffe2d.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -504,7 +504,7 @@
 					}, r))))
 				}
 			}
-			var ue = Object(a.b)(de)(Object(se.b)(le)),
+			var ue = Object(a.b)(de)(Object(se.c)(le)),
 				be = s("./src/reddit/icons/svgs/Top/index.tsx"),
 				me = s("./src/reddit/components/SubredditMention/SubredditIconsWeighting/index.m.less"),
 				pe = s.n(me);
@@ -656,7 +656,7 @@
 					})))))
 				}
 			}
-			t.default = Oe(Object(se.b)(xe))
+			t.default = Oe(Object(se.c)(xe))
 		},
 		"./src/reddit/components/SubredditMention/SubredditItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -840,7 +840,7 @@
 					}), i.a.createElement(g, null), !d && _))
 				}
 			}
-			t.a = Object(o.a)(Object(r.b)(S))
+			t.a = Object(o.a)(Object(r.c)(S))
 		},
 		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, s) {
 			"use strict";
@@ -1041,4 +1041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.fe99d439c62d01c4feb5.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.63554f28af7fc62ffe2d.js.map

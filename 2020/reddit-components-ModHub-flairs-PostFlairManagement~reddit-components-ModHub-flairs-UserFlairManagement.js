@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ca631da0053623acd9ac.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ed3deeb53d1879d00b6c.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -788,7 +788,7 @@
 				mt = Object(Se.b)(pt, (e, t) => ({
 					deleteExamplePost: () => e(Object(Ue.b)(u.e)),
 					makeExamplePost: s => e(Object(Ue.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Ae.O)({
+					updateExamplePost: t => e(Object(Ae.S)({
 						[u.e]: {
 							flair: [t]
 						}
@@ -1439,7 +1439,7 @@
 					}))
 				}
 			}
-			t.a = Object(m.b)(At)
+			t.a = Object(m.c)(At)
 		},
 		"./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx": function(e, t, s) {
 			"use strict";
@@ -1792,7 +1792,7 @@
 				}), (e, t, s) => Object.assign({}, e, t, s, {
 					toggleTooltip: e => t.toggleTooltip(e)
 				}));
-			t.a = I(_(Object(b.b)(e => {
+			t.a = I(_(Object(b.c)(e => {
 				const {
 					sendEvent: t,
 					subredditId: s
@@ -1935,4 +1935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ca631da0053623acd9ac.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ed3deeb53d1879d00b6c.js.map

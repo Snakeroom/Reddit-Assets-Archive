@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.4513512d3cb04b7d02bb.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.83c5ae4d002134775068.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -45,7 +45,7 @@
 			})), n.d(t, "d", (function() {
 				return I
 			})), n.d(t, "e", (function() {
-				return w
+				return h
 			})), n.d(t, "h", (function() {
 				return T
 			})), n.d(t, "i", (function() {
@@ -63,8 +63,8 @@
 				v = Object(s.a)(j.c),
 				y = Object(s.a)(j.d),
 				I = Object(s.a)(j.e),
-				h = Object(s.a)(j.f),
-				w = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
+				w = Object(s.a)(j.f),
+				h = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
 				k = Object(s.a)(j.j),
 				P = Object(s.a)(j.k),
 				N = Object(s.a)(j.l),
@@ -89,7 +89,7 @@
 							const {
 								options: e
 							} = o.body.data.updatePostPollVoteState.poll;
-							n(h({
+							n(w({
 								pollId: a.id,
 								optionId: t,
 								options: e
@@ -100,7 +100,7 @@
 							const {
 								postId: e
 							} = a, t = s.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(d.X)(e))
+							t && t.voteState === f.a.notVoted && n(Object(d.bb)(e))
 						}
 					} else n(k({
 						pollId: e,
@@ -517,8 +517,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: r.ab
-				}) === r.hb.Enabled
+					experimentName: r.bb
+				}) === r.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -547,9 +547,9 @@
 			})), n.d(t, "l", (function() {
 				return I
 			})), n.d(t, "m", (function() {
-				return h
-			})), n.d(t, "s", (function() {
 				return w
+			})), n.d(t, "s", (function() {
+				return h
 			})), n.d(t, "a", (function() {
 				return k
 			})), n.d(t, "f", (function() {
@@ -576,7 +576,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = w(e, {
+					const r = h(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -630,14 +630,14 @@
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				I = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				h = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				w = (e, t) => {
-					const n = h(e, t);
+				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				h = (e, t) => {
+					const n = w(e, t);
 					return n && n.walletProvider
 				},
 				k = (e, t) => {
-					const n = w(e, t),
-						r = h(e, t);
+					const n = h(e, t),
+						r = w(e, t);
 					return n && n.provider || r && r.provider
 				},
 				P = (e, t) => {
@@ -645,7 +645,7 @@
 					return n === s.a.Ethereum || n === s.a.Rinkeby
 				},
 				N = (e, t) => {
-					const n = w(e, t),
+					const n = h(e, t),
 						r = k(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -665,7 +665,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = w(e, {
+					const r = h(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
@@ -673,10 +673,10 @@
 					}
 				},
 				T = (e, t) => {
-					const n = h(e, t);
+					const n = w(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.4513512d3cb04b7d02bb.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.83c5ae4d002134775068.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.8e88b9975e46d43b99a6.js
-// Retrieved at 3/11/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.985cd7a0a7098feeba0b.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation~SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less": function(e, t, s) {
@@ -57,15 +57,15 @@
 					})))
 				}
 			}
-			var b = Object(r.b)(void 0, e => ({
+			var g = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
 					e(Object(c.i)()), Object(u.M)()
 				},
 				onViewTooltip: () => {
 					Object(u.Y)()
 				}
-			}))(Object(d.b)(y));
-			const g = "editable-primary-topic-idcard";
+			}))(Object(d.c)(y));
+			const b = "editable-primary-topic-idcard";
 			var v = s("./src/reddit/controls/DropdownSelector/index.tsx"),
 				S = s("./src/reddit/models/Tags/index.ts"),
 				C = s("./src/reddit/selectors/tags.ts"),
@@ -92,13 +92,13 @@
 						hk: "XayPA"
 					})), i.a.createElement(l.a, {
 						className: w.a.tooltip,
-						tooltipId: g,
+						tooltipId: b,
 						defaultTooltipPosition: "left",
 						tooltipSizeEstimate: {
 							height: 150,
 							width: 320
 						}
-					}, i.a.createElement(b, {
+					}, i.a.createElement(g, {
 						translatedTitle: n,
 						translatedDesc: r
 					}))
@@ -161,7 +161,7 @@
 						selectedPrimaryTag: a
 					} = this.props, p = a && a.text;
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement(v.b, {
-						id: this.isTooltipEnabled() ? g : void 0,
+						id: this.isTooltipEnabled() ? b : void 0,
 						className: t,
 						isTopicsStyle: !0,
 						displayText: p || o.fbt._("Add a Primary Topic", null, {
@@ -203,7 +203,7 @@
 						},
 						onShowTooltip: () => {
 							e(Object(c.f)({
-								tooltipId: g
+								tooltipId: b
 							}))
 						}
 					}
@@ -265,7 +265,7 @@
 					height: 200,
 					width: 200
 				},
-				b = e => {
+				g = e => {
 					switch (e) {
 						case "top":
 							return "bottom";
@@ -278,7 +278,7 @@
 							return "top"
 					}
 				},
-				g = Object(l.a)(e => {
+				b = Object(l.a)(e => {
 					const {
 						children: t,
 						className: s,
@@ -306,7 +306,7 @@
 						return Object(u.b)(s)(e)
 					}
 				}),
-				S = Object(p.a)(g, [o.a.Click, o.a.Keydown]),
+				S = Object(p.a)(b, [o.a.Click, o.a.Keydown]),
 				C = Object(r.b)(v);
 			class T extends i.a.Component {
 				constructor(e) {
@@ -338,7 +338,7 @@
 									n = o.top > t.height
 							}
 							this.setState({
-								position: n ? this.props.defaultTooltipPosition : b(this.props.defaultTooltipPosition)
+								position: n ? this.props.defaultTooltipPosition : g(this.props.defaultTooltipPosition)
 							})
 						})
 					}, this.state = {
@@ -618,7 +618,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var b = function(e, t) {
+			var g = function(e, t) {
 				var s = {};
 				for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (s[o] = e[o]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -627,14 +627,14 @@
 				}
 				return s
 			};
-			var g = e => {
+			var b = e => {
 					const {
 						className: t,
 						innerRef: s,
 						onClickHandler: o,
 						option: n,
 						maxLength: i
-					} = e, p = b(e, ["className", "innerRef", "onClickHandler", "option", "maxLength"]), c = [x.a.selectedOptionComponentContainer, t];
+					} = e, p = g(e, ["className", "innerRef", "onClickHandler", "option", "maxLength"]), c = [x.a.selectedOptionComponentContainer, t];
 					return i && i < n.displayText.length && c.push(x.a.selectedOptionComponentContainerError), r.a.createElement("div", y({
 						className: Object(a.a)(...c),
 						ref: s
@@ -708,7 +708,7 @@
 				render() {
 					const e = {};
 					Object(S.c)(this.props.readOnlyMode) || (e.tabIndex = 0);
-					const t = this.props.selectedOptionComponent || g,
+					const t = this.props.selectedOptionComponent || b,
 						s = "number" == typeof this.props.maxOptionsToDisplay && this.props.options.length > this.props.maxOptionsToDisplay;
 					return r.a.createElement("div", D({
 						"aria-invalid": this.props.isError,
@@ -1013,4 +1013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.8e88b9975e46d43b99a6.js.map
+//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.985cd7a0a7098feeba0b.js.map

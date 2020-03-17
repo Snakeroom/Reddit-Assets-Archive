@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.95e6bc3235d976b67674.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.e8d0a37b9e02f65e9535.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -68,8 +68,8 @@
 				T = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
 				N = s.n(T);
 			const f = e => e.type === j.f.Spoiler,
-				k = Object(h.t)();
-			t.a = k(Object(b.a)(Object(c.a)(e => {
+				w = Object(h.t)();
+			t.a = w(Object(b.a)(Object(c.a)(e => {
 				const {
 					backgroundWrapperClassName: t,
 					descriptionClassName: s,
@@ -79,8 +79,8 @@
 					trendingSearch: j,
 					shouldOpenPost: v,
 					showSubredditMeta: T = !0,
-					showSubredditName: k,
-					subredditOrProfile: w,
+					showSubredditName: w,
+					subredditOrProfile: k,
 					trackPostView: S
 				} = e;
 				Object(n.useEffect)(() => {
@@ -93,8 +93,8 @@
 						q: j.rawQuery,
 						source: E
 					}) || I,
-					M = j ? j.subredditInfo && j.subredditInfo.icon : w && w.icon.url,
-					V = j ? j.subredditInfo && j.subredditInfo.displayText : w && (w.displayText || w.name),
+					M = j ? j.subredditInfo && j.subredditInfo.icon : k && k.icon.url,
+					V = j ? j.subredditInfo && j.subredditInfo.displayText : k && (k.displayText || k.name),
 					W = h ? h.flair.filter(f) : [],
 					A = h ? h.score : 0,
 					F = h ? h.numComments : 0,
@@ -143,7 +143,7 @@
 						})
 					}), !T && h && a.a.createElement("div", {
 						className: N.a.metaLine
-					}, k && V && a.a.createElement("span", {
+					}, w && V && a.a.createElement("span", {
 						className: N.a.meta
 					}, Object(P.b)(V)), a.a.createElement("span", {
 						className: N.a.meta
@@ -222,7 +222,7 @@
 				}
 			}
 			var x = Object(a.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(l.y)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(l.A)(t, s)),
 					trackPostView: t => e((e, s) => p.x(s(), t)),
 					trackPostClick: t => e((e, s) => p.w(s(), t))
 				}))(g),
@@ -311,10 +311,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === c.a.upvoted ? Object(a.X)(s) : Object(a.u)(s);
+						const r = t === c.a.upvoted ? Object(a.bb)(s) : Object(a.w)(s);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.V)(s)),
+					onIgnoreReports: () => e(Object(a.Z)(s)),
 					onOpenReportsDropdown: t => e(Object(o.h)({
 						tooltipId: t
 					}))
@@ -338,4 +338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.95e6bc3235d976b67674.js.map
+//# sourceMappingURL=Trending.e8d0a37b9e02f65e9535.js.map

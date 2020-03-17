@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.c800820494027cea53f0.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.e4c7927f575fccc4f4e9.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -322,7 +322,7 @@
 						text: t || Object(T.c)("Something wen't wrong with the purchase. Please try again later.")
 					}))
 				})),
-				ee = Object(_.b)(J);
+				ee = Object(_.c)(J);
 			t.default = Object(C.a)("spPremium", Object(u.a)($(ee)))
 		},
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, s) {
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.c800820494027cea53f0.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.e4c7927f575fccc4f4e9.js.map

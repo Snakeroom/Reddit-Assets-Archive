@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.8c7c6a69075756fd1972.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.513d65f8d024355eb204.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -21,8 +21,8 @@
 				i = t.n(n),
 				r = t("./node_modules/react-redux/es/index.js"),
 				a = t("./node_modules/reselect/es/index.js"),
-				o = t("./src/lib/classNames/index.ts"),
-				c = t("./src/lib/lessComponent.tsx"),
+				c = t("./src/lib/classNames/index.ts"),
+				o = t("./src/lib/lessComponent.tsx"),
 				l = t("./src/lib/makeListingKey/index.ts"),
 				d = t("./src/reddit/components/Comments/States/index.tsx"),
 				m = t("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
@@ -41,7 +41,7 @@
 				_ = t.n(P),
 				L = t("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
 				j = t.n(L);
-			const v = c.a.div("Container", _.a),
+			const v = o.a.div("Container", _.a),
 				I = Object(r.b)(() => Object(a.c)({
 					apiError: (e, s) => {
 						let {
@@ -65,14 +65,14 @@
 					},
 					otherDiscussionsCount: y.B
 				}));
-			s.default = Object(O.b)(I(e => {
+			s.default = Object(O.c)(I(e => {
 				let {
 					apiError: s,
 					apiPending: t,
 					commentSort: n,
 					isOverlay: r,
 					language: a,
-					otherDiscussionsCount: c,
+					otherDiscussionsCount: o,
 					postId: O,
 					postPermalink: E,
 					sendEvent: y
@@ -80,9 +80,9 @@
 				const P = Object(l.a)(O, null, {
 						isOtherDiscussions: !0
 					}),
-					L = c > 0 ? c : 0;
+					L = o > 0 ? o : 0;
 				return i.a.createElement(v, null, i.a.createElement("div", {
-					className: Object(o.a)(_.a.HeaderPane, j.a.CommentsNavigationPane)
+					className: Object(c.a)(_.a.HeaderPane, j.a.CommentsNavigationPane)
 				}, i.a.createElement("div", {
 					className: _.a.OtherDiscussionsTitle
 				}, i.a.createElement(D.c, null, i.a.createElement(D.b, {
@@ -91,7 +91,7 @@
 					name: "discussions",
 					singular: " discussion",
 					plural: " discussions",
-					count: c
+					count: o
 				}))), i.a.createElement(m.a, {
 					className: j.a.OtherDiscussionsLink,
 					isOverlay: r,
@@ -120,4 +120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.8c7c6a69075756fd1972.js.map
+//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.513d65f8d024355eb204.js.map

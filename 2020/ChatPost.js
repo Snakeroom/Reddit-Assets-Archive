@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.215a5fc8e86aacd1ee68.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.de5cd280c0ad9e69cfa7.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1095,7 +1095,7 @@
 							commentsPageKey: o,
 							singleOpen: !0
 						})),
-						onReportClick: () => e(Object(fe.j)(n.id, void 0, s)),
+						onReportClick: () => e(Object(fe.k)(n.id, void 0, s)),
 						onHideTooltip: () => e(Object(xe.i)()),
 						onShowTooltip: t => e(Object(xe.f)({
 							tooltipId: t
@@ -1119,7 +1119,7 @@
 						onDeleteClick: () => e(Object(ve.m)(ut(n.id))),
 						toggleDeleteCommentModal: () => e(Object(ve.m)(ut(n.id)))
 					}
-				})(Object(We.b)(e => {
+				})(Object(We.c)(e => {
 					const {
 						comment: t,
 						className: n,
@@ -1913,7 +1913,7 @@
 					}))
 				}
 			}
-			t.default = an(Object(We.b)(cn))
+			t.default = an(Object(We.c)(cn))
 		},
 		"./src/reddit/components/ModModeReports/helpers.ts": function(e, t, n) {
 			"use strict";
@@ -2360,4 +2360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.215a5fc8e86aacd1ee68.js.map
+//# sourceMappingURL=ChatPost.de5cd280c0ad9e69cfa7.js.map

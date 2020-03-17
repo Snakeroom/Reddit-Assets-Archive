@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.11fb12b1c0f64ca92368.js
-// Retrieved at 3/12/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6f837043b53566dce72e.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -15,8 +15,8 @@
 				s = a("./src/lib/constants/index.ts"),
 				r = a("./src/lib/makeActionCreator/index.ts"),
 				d = a("./src/lib/messageIframeParent/index.ts"),
-				i = a("./src/reddit/actions/toaster.ts"),
-				c = a("./src/reddit/models/Gold/Award.ts"),
+				c = a("./src/reddit/actions/toaster.ts"),
+				i = a("./src/reddit/models/Gold/Award.ts"),
 				o = a("./src/reddit/models/Toast/index.ts"),
 				l = a("./src/reddit/selectors/comments.ts"),
 				m = a("./src/reddit/selectors/communityAwards.ts"),
@@ -72,8 +72,8 @@
 					} = s;
 					const d = n().gild,
 						{
-							isOldReddit: i,
-							isLivestream: c
+							isOldReddit: c,
+							isLivestream: i
 						} = t;
 					a(B());
 					try {
@@ -81,13 +81,13 @@
 								gildingTypeId: d.selectedAward.id,
 								isAnonymous: d.isAnonymous,
 								isGildFunded: !1,
-								message: Object(A.d)(d.message, d.selectedAward, c),
+								message: Object(A.d)(d.message, d.selectedAward, i),
 								nodeId: e
 							},
 							n = Object(y.a)(e) ? v : x,
 							s = await n(r(), {
 								input: t
-							}, i);
+							}, c);
 						if (s.ok) {
 							const t = s.body,
 								{
@@ -119,9 +119,9 @@
 								n = e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg;
 							return a === s.i ? Object(j.c)("There was an authentication error") : n ? Object(j.c)(n) : Object(j.c)(t)
 						})(e, n);
-						t(Object(i.e)({
+						t(Object(c.e)({
 							kind: o.b.Error,
-							duration: i.a,
+							duration: c.a,
 							text: a
 						}))
 					}
@@ -134,12 +134,12 @@
 						commentId: a
 					}), s = Object(b.i)(e), r = e.gild, {
 						isAnonymous: d
-					} = r, i = !d && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, o = Object(h.H)(e, {
+					} = r, c = !d && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, i = n ? n.author : void 0, o = Object(h.H)(e, {
 						thingId: a
 					});
 					return F(Object.assign({}, t, {
-						gilder: i,
-						gildee: c,
+						gilder: c,
+						gildee: i,
 						subredditId: o && o.id
 					}))
 				}, D = e => async (t, a) => {
@@ -158,7 +158,7 @@
 							data: t
 						})
 					}
-					if (p.awardType === c.d.Moderator && void 0 === e.subredditCoins) {
+					if (p.awardType === i.d.Moderator && void 0 === e.subredditCoins) {
 						const t = Object(h.H)(s, {
 								thingId: l
 							}),
@@ -178,7 +178,7 @@
 							hk: "2sIK9Y"
 						}),
 						g = p.coinPrice;
-					Object(N.a)(Object(f.viewSuccessAwardEvent)(l, g, p)(s)), t(Object(i.e)({
+					Object(N.a)(Object(f.viewSuccessAwardEvent)(l, g, p)(s)), t(Object(c.e)({
 						kind: o.b.SuccessCommunity,
 						text: b
 					})), setTimeout(() => {
@@ -208,17 +208,17 @@
 				s = a("./node_modules/react/index.js"),
 				r = a.n(s),
 				d = a("./src/lib/classNames/index.ts"),
-				i = a("./src/reddit/helpers/createEmojiText/index.tsx"),
-				c = a("./src/reddit/icons/fonts/Coin/index.tsx"),
+				c = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				i = a("./src/reddit/icons/fonts/Coin/index.tsx"),
 				o = a("./src/reddit/components/CoinBalance/index.m.less"),
 				l = a.n(o);
 			t.a = e => r.a.createElement("div", {
 				className: Object(d.a)(l.a.coinBalance, e.className),
 				"data-redditstyle": !0
-			}, Object(i.a)(n.fbt._("Coin balance:: :coin:{coinBalance}", [n.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+			}, Object(c.a)(n.fbt._("Coin balance:: :coin:{coinBalance}", [n.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
 				hk: "3rsL0j"
 			}), {
-				":coin:": r.a.createElement(c.a, null)
+				":coin:": r.a.createElement(i.a, null)
 			}), " ", r.a.createElement("a", {
 				href: "/coins",
 				onClick: e.onWhatAreCoinsLinkClick,
@@ -307,8 +307,8 @@
 				s = a.n(n),
 				r = a("./node_modules/react-redux/es/index.js"),
 				d = a("./node_modules/reselect/es/index.js"),
-				i = a("./src/lib/classNames/index.ts"),
-				c = a("./src/lib/opener/index.ts"),
+				c = a("./src/lib/classNames/index.ts"),
+				i = a("./src/lib/opener/index.ts"),
 				o = a("./src/reddit/helpers/isPost.ts"),
 				l = a("./src/reddit/helpers/localStorage/index.ts"),
 				m = a("./src/reddit/helpers/trackers/gild.ts"),
@@ -369,7 +369,7 @@
 					expirationDate: a
 				} = e, n = Math.floor(a.getTime() / 1e3), r = Object(ne.b)(n);
 				return s.a.createElement("div", {
-					className: Object(i.a)(t)
+					className: Object(c.a)(t)
 				}, s.a.createElement(se.a, {
 					className: ae.a.clockIcon
 				}), s.a.createElement("span", {
@@ -442,7 +442,7 @@
 					name: "number-coins"
 				}, "700 Coins"), " for that month, and shows a Platinum Award on the comment.")) : null
 			};
-			class ie extends s.a.PureComponent {
+			class ce extends s.a.PureComponent {
 				render() {
 					const {
 						award: e,
@@ -451,7 +451,7 @@
 						subredditName: n
 					} = this.props, r = e.icon128 ? e.icon128.url : e.icon.url, d = !!e.pennyPrice;
 					return s.a.createElement("div", {
-						className: Object(i.a)(t, V.a.awardDescriptionContainer)
+						className: Object(c.a)(t, V.a.awardDescriptionContainer)
 					}, s.a.createElement("div", {
 						className: V.a.iconContainer
 					}, s.a.createElement("img", {
@@ -481,7 +481,7 @@
 					}))
 				}
 			}
-			var ce, oe = ie;
+			var ie, oe = ce;
 
 			function le() {
 				return (le = Object.assign || function(e) {
@@ -493,7 +493,7 @@
 				}).apply(this, arguments)
 			}! function(e) {
 				e.PRIVATE = "private", e.PUBLIC = "public"
-			}(ce || (ce = {}));
+			}(ie || (ie = {}));
 			class me extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
@@ -518,7 +518,7 @@
 							sendEvent: a,
 							thingId: n,
 							toggleIsAnonymous: s
-						} = this.props, r = e === ce.PRIVATE;
+						} = this.props, r = e === ie.PRIVATE;
 						(!t && r || t && !r) && (a(Object(m.triggerAnonymousEvent)(r ? "check" : "uncheck", n)), s())
 					}
 				}
@@ -535,15 +535,15 @@
 						return s.a.createElement(z.a, {
 							name: Object(K.c)("Privacy setting"),
 							onChange: this.handleRadioChange,
-							value: t ? ce.PRIVATE : ce.PUBLIC
+							value: t ? ie.PRIVATE : ie.PUBLIC
 						}, s.a.createElement(Y.a, {
-							className: Object(i.a)(V.a.radioOption, V.a.first),
+							className: Object(c.a)(V.a.radioOption, V.a.first),
 							showButton: !0,
-							value: ce.PUBLIC
+							value: ie.PUBLIC
 						}, e), s.a.createElement(Y.a, {
 							className: V.a.radioOption,
 							showButton: !0,
-							value: ce.PRIVATE
+							value: ie.PRIVATE
 						}, s.a.createElement(J.c, null, "Give anonymously")))
 					}
 					return s.a.createElement(X.a, {
@@ -573,7 +573,7 @@
 					const r = !e || n.maxLength > 0,
 						d = r && a.length > n.maxLength;
 					return s.a.createElement("div", {
-						className: Object(i.a)(V.a.textAreaWrapper, {
+						className: Object(c.a)(V.a.textAreaWrapper, {
 							[V.a.messageTooLong]: d
 						})
 					}, s.a.createElement(W.q, le({
@@ -605,7 +605,7 @@
 						subredditName: n
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(i.a)(e, V.a.awardDetailsPane)
+						className: Object(c.a)(e, V.a.awardDetailsPane)
 					}, s.a.createElement("div", {
 						className: V.a.spacer
 					}), s.a.createElement(oe, {
@@ -633,7 +633,7 @@
 						text: a
 					} = e;
 					return s.a.createElement("div", {
-						className: Object(i.a)(t, Ce.a.AnimatedPillBadge)
+						className: Object(c.a)(t, Ce.a.AnimatedPillBadge)
 					}, a, s.a.createElement("div", {
 						className: Ce.a.sheen
 					}))
@@ -654,7 +654,7 @@
 						isSelected: t
 					} = this.props, a = t ? be.a.selected : "", n = e.icon128 ? e.icon128.url : e.icon.url;
 					return s.a.createElement("button", {
-						className: Object(i.a)(be.a.selectableAward, a),
+						className: Object(c.a)(be.a.selectableAward, a),
 						onClick: this.onOptionClick
 					}, s.a.createElement("div", {
 						className: be.a.buttonContent,
@@ -746,7 +746,7 @@
 					}, t && s.a.createElement("div", {
 						className: be.a.awardSectionTitle
 					}, s.a.createElement(we.a, {
-						className: Object(i.a)(be.a.premiumIcon, be.a.awardSectionIcon)
+						className: Object(c.a)(be.a.premiumIcon, be.a.awardSectionIcon)
 					}), Ae._("Premium Awards", null, {
 						hk: "35bhoK"
 					})), s.a.createElement("div", {
@@ -790,8 +790,8 @@
 						selectedAward: n,
 						sendEvent: r,
 						subreddit: d,
-						subredditName: i,
-						thingId: c
+						subredditName: c,
+						thingId: i
 					} = this.props;
 					return e.length ? s.a.createElement("div", {
 						className: be.a.awardSectionContainer
@@ -800,7 +800,7 @@
 					}, s.a.createElement(ge.b, {
 						className: be.a.awardSectionIcon,
 						subredditOrProfile: d
-					}), Ae._("r/{subredditName} Awards", [Ae._param("subredditName", i)], {
+					}), Ae._("r/{subredditName} Awards", [Ae._param("subredditName", c)], {
 						hk: "2nKNHH"
 					})), s.a.createElement("div", {
 						className: be.a.awardSection
@@ -812,7 +812,7 @@
 							key: e.id,
 							onSelect: a,
 							sendEvent: r,
-							thingId: c
+							thingId: i
 						})
 					}))) : null
 				}
@@ -822,14 +822,14 @@
 						selectedAward: n,
 						sendEvent: r,
 						subredditName: d,
-						thingId: c
+						thingId: i
 					} = this.props;
 					return e.length ? s.a.createElement("div", {
 						className: be.a.awardSectionContainer
 					}, t && s.a.createElement("div", {
 						className: be.a.awardSectionTitle
 					}, s.a.createElement(Z.a, {
-						className: Object(i.a)(be.a.modIcon, be.a.awardSectionIcon)
+						className: Object(c.a)(be.a.modIcon, be.a.awardSectionIcon)
 					}), Ae._("r/{subredditName} Moderator Awards", [Ae._param("subredditName", d)], {
 						hk: "4vVQ2A"
 					})), s.a.createElement("div", {
@@ -842,7 +842,7 @@
 							key: e.id,
 							onSelect: a,
 							sendEvent: r,
-							thingId: c
+							thingId: i
 						})
 					}))) : null
 				}
@@ -854,7 +854,7 @@
 						showPremiumAwards: n
 					} = this.props;
 					if (t || !e.length) return s.a.createElement("div", {
-						className: Object(i.a)(a, be.a.awardSelectorPane)
+						className: Object(c.a)(a, be.a.awardSelectorPane)
 					});
 					const r = new Set,
 						d = {
@@ -867,10 +867,10 @@
 					e.forEach(e => {
 						r.add(e.awardSubType), d[e.awardSubType] || (d[e.awardSubType] = []), d[e.awardSubType].push(e)
 					});
-					const c = !!(d[u.c.Community].length || d[u.c.Moderator].length || d[u.c.Appreciation].length || n && d[u.c.Premium].length) || d[u.c.Global].length > 3;
+					const i = !!(d[u.c.Community].length || d[u.c.Moderator].length || d[u.c.Appreciation].length || n && d[u.c.Premium].length) || d[u.c.Global].length > 3;
 					return s.a.createElement("div", {
-						className: Object(i.a)(a, be.a.awardSelectorPane)
-					}, !c && this.renderSnooImage(), [...r].map(e => this.rendererByAwardSubtype[e] && (e !== u.c.Premium || n) ? this.rendererByAwardSubtype[e].call(this, d[e], c) : null))
+						className: Object(c.a)(a, be.a.awardSelectorPane)
+					}, !i && this.renderSnooImage(), [...r].map(e => this.rendererByAwardSubtype[e] && (e !== u.c.Premium || n) ? this.rendererByAwardSubtype[e].call(this, d[e], i) : null))
 				}
 			}
 			var ye = Oe,
@@ -926,14 +926,14 @@
 						needPremium: n,
 						onGetPremium: r,
 						onGild: d,
-						onNeedPayment: c,
+						onNeedPayment: i,
 						pending: o,
 						selectedAward: l,
 						subredditCoins: m,
 						userCoins: p
 					} = this.props, h = l.awardType === u.d.Moderator, b = (h ? m : p) || 0;
 					return s.a.createElement("div", {
-						className: Object(i.a)(e, je.a.gildFooter)
+						className: Object(c.a)(e, je.a.gildFooter)
 					}, s.a.createElement("div", {
 						className: je.a.footerContent
 					}, h ? this.renderCommunityBalance() : s.a.createElement(Ne.a, {
@@ -944,7 +944,7 @@
 						className: n ? je.a.premiumButton : je.a.gildButton,
 						"data-redditstyle": !0,
 						disabled: o || h && a,
-						onClick: n ? r : a ? c : d
+						onClick: n ? r : a ? i : d
 					}, o ? s.a.createElement(_e.a, {
 						className: je.a.loadingIcon,
 						sizePx: Me
@@ -986,7 +986,7 @@
 						postOrComment: a
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(i.a)(e, Be.a.gildHeader)
+						className: Object(c.a)(e, Be.a.gildHeader)
 					}, s.a.createElement("div", {
 						className: Be.a.headerText
 					}, s.a.createElement("div", {
@@ -1089,12 +1089,12 @@
 						userCoins: r
 					} = e, {
 						awardType: d,
-						coinPrice: i,
-						pennyPrice: c
-					} = n, o = d === u.d.Moderator, l = t && !o, m = !!c && !l || ((o ? s : r) || 0) < i && !l, p = a && a.media && "rpan" === a.media.type;
+						coinPrice: c,
+						pennyPrice: i
+					} = n, o = d === u.d.Moderator, l = t && !o, m = !!i && !l || ((o ? s : r) || 0) < c && !l, p = a && a.media && "rpan" === a.media.type;
 					return Object.assign({}, e, {
 						needPayment: m,
-						cost: c || i,
+						cost: i || c,
 						isRpanPost: !!p
 					})
 				}),
@@ -1135,7 +1135,7 @@
 							sendEvent: t,
 							thingId: a
 						} = this.props;
-						t(Object(m.clickGetPremiumEvent)(a, e)), Object(c.d)("/premium", c.c.BLANK)
+						t(Object(m.clickGetPremiumEvent)(a, e)), Object(i.d)("/premium", i.c.BLANK)
 					}, this.onGildRequested = () => {
 						const {
 							gildRequested: e,
@@ -1165,8 +1165,8 @@
 						postOrComment: s,
 						purchaseCatalogPending: r,
 						purchaseCatalogRequested: d,
-						selectedAward: i,
-						sendEvent: c,
+						selectedAward: c,
+						sendEvent: i,
 						setIsAnonymous: o,
 						subreddit: u,
 						subredditAboutRequested: p,
@@ -1174,12 +1174,12 @@
 						subredditName: b,
 						thingId: g
 					} = this.props;
-					c(Object(m.viewGildModalEvent)(i.id, t, g)), o(!a && Object(l.k)());
+					i(Object(m.viewGildModalEvent)(c.id, t, g)), o(!a && Object(l.k)());
 					const w = u ? u.id : h || (s && s.belongsTo ? s.belongsTo.id : void 0);
 					if (w && e(w), u || b) {
 						p(u ? u.name : b)
 					}
-					n && (i.pennyPrice ? R() : Object(T.b)(), r || d())
+					n && (c.pennyPrice ? R() : Object(T.b)(), r || d())
 				}
 				render() {
 					const {
@@ -1189,7 +1189,7 @@
 						className: n,
 						closeGildModal: r,
 						currentUser: d,
-						errorMessage: c,
+						errorMessage: i,
 						iFramed: l,
 						isAnonymous: p,
 						isRpanPost: h,
@@ -1222,7 +1222,7 @@
 						D = De.includes(q) ? "pan" : q,
 						H = !d || !d.isGold && P.awardSubType === u.c.Premium;
 					return s.a.createElement("div", {
-						className: Object(i.a)(n, Be.a.gildModalContent)
+						className: Object(c.a)(n, Be.a.gildModalContent)
 					}, s.a.createElement(Fe, {
 						authorName: M,
 						language: b,
@@ -1258,7 +1258,7 @@
 						handleMessageInput: this.handleMessageInput,
 						subredditName: D
 					})), s.a.createElement(Te, {
-						errorMessage: c || void 0,
+						errorMessage: i || void 0,
 						needPayment: w,
 						needPremium: H,
 						onNeedPayment: this.onNeedPayment,
@@ -1299,7 +1299,7 @@
 					subredditAboutRequested: t => e(Object(P.t)(t)),
 					updateMessage: t => e(Object(h.updateMessage)(t))
 				}
-			})(Object(q.b)(He))
+			})(Object(q.c)(He))
 		},
 		"./src/reddit/components/TimeLeft/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1399,9 +1399,9 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.gb
+					experimentName: n.hb
 				});
-				return Object(n.Nb)(t) ? void 0 : t
+				return Object(n.Ob)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
@@ -1413,4 +1413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.11fb12b1c0f64ca92368.js.map
+//# sourceMappingURL=FramedGild~GildModal.6f837043b53566dce72e.js.map

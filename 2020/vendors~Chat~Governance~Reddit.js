@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.5fcaea98b39d0c4acddc.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.2378f88e9cee5710b600.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@babel/runtime/helpers/esm/extends.js": function(e, t, n) {
@@ -19042,27 +19042,73 @@
 				}
 			}
 			var ie = oe();
-			! function(e) {
-				void 0 === e && (e = a);
-				var t = e === a ? ie : oe(e)
-			}();
-			var se = function(e, t) {
-				return e === t
-			};
-			! function(e) {
-				void 0 === e && (e = a);
-				var t = e === a ? re : function() {
-					return Object(r.useContext)(e)
-				}
-			}();
-			var ae, ue = n("./node_modules/react-dom/index.js");
+			var se = function(e) {
+					void 0 === e && (e = a);
+					var t = e === a ? ie : oe(e);
+					return function() {
+						return t().dispatch
+					}
+				}(),
+				ae = function(e, t) {
+					return e === t
+				};
+			var ue, le = function(e) {
+					void 0 === e && (e = a);
+					var t = e === a ? re : function() {
+						return Object(r.useContext)(e)
+					};
+					return function(e, n) {
+						void 0 === n && (n = ae), g()(e, "You must pass a selector to useSelectors");
+						var o = t();
+						return function(e, t, n, o) {
+							var i, s = Object(r.useReducer)((function(e) {
+									return e + 1
+								}), 0)[1],
+								a = Object(r.useMemo)((function() {
+									return new f(n, o)
+								}), [n, o]),
+								u = Object(r.useRef)(),
+								l = Object(r.useRef)(),
+								c = Object(r.useRef)();
+							try {
+								i = e !== l.current || u.current ? e(n.getState()) : c.current
+							} catch (p) {
+								var d = "An error occurred while selecting the store state: " + p.message + ".";
+								throw u.current && (d += "\nThe error may be correlated with this previous error:\n" + u.current.stack + "\n\nOriginal stack trace:"), new Error(d)
+							}
+							return w((function() {
+								l.current = e, c.current = i, u.current = void 0
+							})), w((function() {
+								function e() {
+									try {
+										var e = l.current(n.getState());
+										if (t(e, c.current)) return;
+										c.current = e
+									} catch (p) {
+										u.current = p
+									}
+									s({})
+								}
+								return a.onStateChange = e, a.trySubscribe(), e(),
+									function() {
+										return a.tryUnsubscribe()
+									}
+							}), [n, a]), i
+						}(e, n, o.store, o.subscription)
+					}
+				}(),
+				ce = n("./node_modules/react-dom/index.js");
 			n.d(t, "a", (function() {
 				return h
 			})), n.d(t, "b", (function() {
 				return ne
 			})), n.d(t, "c", (function() {
+				return se
+			})), n.d(t, "d", (function() {
+				return le
+			})), n.d(t, "e", (function() {
 				return ie
-			})), ae = ue.unstable_batchedUpdates, u = ae
+			})), ue = ce.unstable_batchedUpdates, u = ue
 		},
 		"./node_modules/react-redux/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, n) {
 			"use strict";
@@ -25025,4 +25071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.5fcaea98b39d0c4acddc.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.2378f88e9cee5710b600.js.map

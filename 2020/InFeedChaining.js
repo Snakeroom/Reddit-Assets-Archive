@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.ffe6f57961df2f15fc52.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.e4f4a00d84ba039b208c.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -843,7 +843,7 @@
 					})))) : null
 				}
 			}
-			s.default = Object(l.a)(L(Object(b.b)(M)))
+			s.default = Object(l.a)(L(Object(b.c)(M)))
 		},
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -1106,7 +1106,7 @@
 			var r = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				i = t("./src/reddit/connectors/SubscribeButton/index.ts"),
 				n = t("./src/reddit/components/SubscribeButton/Base.tsx");
-			s.a = Object(i.a)(Object(r.b)(n.a))
+			s.a = Object(i.a)(Object(r.c)(n.a))
 		},
 		"./src/reddit/components/Widgets/CommunityList/helpers.ts": function(e, s, t) {
 			"use strict";
@@ -1174,10 +1174,10 @@
 						}))
 					},
 					handleVote: s => {
-						const r = s === d.a.upvoted ? Object(n.X)(t) : Object(n.u)(t);
+						const r = s === d.a.upvoted ? Object(n.bb)(t) : Object(n.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(n.V)(t)),
+					onIgnoreReports: () => e(Object(n.Z)(t)),
 					onOpenReportsDropdown: s => e(Object(a.h)({
 						tooltipId: s
 					}))
@@ -1213,4 +1213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.ffe6f57961df2f15fc52.js.map
+//# sourceMappingURL=InFeedChaining.e4f4a00d84ba039b208c.js.map

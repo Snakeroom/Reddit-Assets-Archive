@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmotesTooltip.b6f8ddee1aa353988d45.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmotesTooltip.03d8ffbb1b6184005a84.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/tooltip.m.less": function(e, t, o) {
@@ -40,8 +40,8 @@
 				h = o("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				u = o("./src/reddit/components/TrackingHelper/index.tsx"),
 				E = o("./src/reddit/constants/keycodes.ts"),
-				b = o("./src/reddit/controls/Button/index.tsx"),
-				g = o("./src/reddit/endpoints/economics/uploadedAssets.ts"),
+				g = o("./src/reddit/controls/Button/index.tsx"),
+				b = o("./src/reddit/endpoints/economics/uploadedAssets.ts"),
 				f = o("./src/reddit/i18n/utils.ts"),
 				T = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				y = o("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -270,7 +270,7 @@
 					}, C.map(e => n.a.createElement("img", {
 						className: A.a.upsellMoreEmotesImg,
 						src: e
-					}))), n.a.createElement(b.h, {
+					}))), n.a.createElement(g.h, {
 						className: A.a.upsellMoreEmotesButton,
 						to: r,
 						onClick: e => {
@@ -310,9 +310,9 @@
 				}
 			}), e => ({
 				onOpenUploadDialog: () => e(Object(h.i)({
-					uploadAssetType: g.b.Emote
+					uploadAssetType: b.b.Emote
 				}))
-			}))(Object(u.b)(k))
+			}))(Object(u.c)(k))
 		},
 		"./src/reddit/endpoints/economics/uploadedAssets.ts": function(e, t, o) {
 			"use strict";
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmotesTooltip.b6f8ddee1aa353988d45.js.map
+//# sourceMappingURL=EmotesTooltip.03d8ffbb1b6184005a84.js.map

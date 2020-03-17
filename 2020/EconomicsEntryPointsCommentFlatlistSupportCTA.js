@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsCommentFlatlistSupportCTA.de883e6ae7c9ce80ecac.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsCommentFlatlistSupportCTA.315926d091c014aa9a76.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsEntryPointsCommentFlatlistSupportCTA"], {
 		"./src/reddit/components/Economics/EntryPoints/CommentFlatlistSupportCTA/index.m.less": function(t, e, o) {
@@ -86,7 +86,7 @@
 				f = Object(i.a)(c.b);
 
 			function g(t, e) {
-				return Object(a.b)(class extends s.a.Component {
+				return Object(a.c)(class extends s.a.Component {
 					constructor() {
 						super(...arguments), this.ref = void 0, this.state = {
 							successfulPaymentAmount: void 0,
@@ -182,4 +182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsEntryPointsCommentFlatlistSupportCTA.de883e6ae7c9ce80ecac.js.map
+//# sourceMappingURL=EconomicsEntryPointsCommentFlatlistSupportCTA.315926d091c014aa9a76.js.map

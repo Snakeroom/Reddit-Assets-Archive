@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3fab08fb5233ebff85ae.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.779cf6787b789f738212.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -558,7 +558,7 @@
 				return {
 					onError: t => Object(r.a)(e, t)
 				}
-			})(Object(i.b)(v)))
+			})(Object(i.c)(v)))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/CosmeticFooter/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1080,7 +1080,7 @@
 					return e.subreddits.models[a]
 				}
 			});
-			var _e = Object(xe.b)(Object(c.b)(Ne, (e, t) => {
+			var _e = Object(xe.c)(Object(c.b)(Ne, (e, t) => {
 					let {
 						badge: a,
 						subredditId: s
@@ -1303,7 +1303,7 @@
 					return e.subreddits.models[a]
 				}
 			});
-			var ut = Object(xe.b)(Object(c.b)(mt, (e, t) => {
+			var ut = Object(xe.c)(Object(c.b)(mt, (e, t) => {
 					let {
 						badge: a,
 						subredditId: s
@@ -2186,8 +2186,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				o = e => r.has((Object(c.e)(e) || "").toLowerCase()) || i.has((Object(c.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: d.G,
-					experimentName: s.ab
-				}) === s.hb.Enabled
+					experimentName: s.bb
+				}) === s.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
 			"use strict";
@@ -2348,4 +2348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.3fab08fb5233ebff85ae.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.779cf6787b789f738212.js.map

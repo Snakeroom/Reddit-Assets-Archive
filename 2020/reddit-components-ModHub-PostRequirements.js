@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.73b51199b2fa50def0a3.js
-// Retrieved at 3/16/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.b711f5fd8e7c31a3aa9a.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, n) {
@@ -10,7 +10,7 @@
 				a = n("./node_modules/react-router/esm/react-router.js"),
 				o = n("./src/reddit/actions/modal.ts");
 			const l = "non-empty-string-to-block-navigation";
-			class d extends i.a.Component {
+			class c extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onBeforeUnload = e => {
 						if (this.props.enabled) return e.preventDefault(), e.returnValue = "", ""
@@ -44,7 +44,7 @@
 			}
 			t.a = Object(r.b)(null, (e, t) => ({
 				showModal: () => e(Object(o.h)(t.dialogId))
-			}))(Object(a.i)(d))
+			}))(Object(a.i)(c))
 		},
 		"./src/reddit/components/ModHub/PostRequirements/ExperimentalWarning/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -109,8 +109,8 @@
 				a = n.n(r),
 				o = n("./node_modules/react/index.js"),
 				l = n.n(o),
-				d = n("./node_modules/react-redux/es/index.js"),
-				c = n("./node_modules/reselect/es/index.js"),
+				c = n("./node_modules/react-redux/es/index.js"),
+				d = n("./node_modules/reselect/es/index.js"),
 				m = n("./src/reddit/actions/modal.ts"),
 				g = n("./src/reddit/actions/postRequirements/index.ts"),
 				u = n("./src/reddit/components/BlockNavigation/index.tsx"),
@@ -290,12 +290,12 @@
 				ae = n.n(re);
 			const oe = ne.a.wrapped(se.n, "toggleSetting", ae.a),
 				le = Object(ie.a)("newPostRequirements", l.a.Fragment),
-				de = l.a.createElement("a", {
+				ce = l.a.createElement("a", {
 					className: ae.a.externalLink,
 					href: "https://docs.python.org/2/library/re.html#regular-expression-syntax",
 					target: "_blank"
 				}, Object(v.c)("Python RegEx syntax")),
-				ce = e => e.regexes.map(t => {
+				de = e => e.regexes.map(t => {
 					const n = e.serverErrors.find(e => e.regex === t);
 					return n ? n.message : ""
 				}),
@@ -352,13 +352,13 @@
 							on: e.titleRegexes.enabled,
 							onClick: this.onToggleTitleRegex,
 							label: Object(v.c)("Title text RegEx requirements"),
-							subtext: l.a.createElement(l.a.Fragment, null, Object(v.c)("Use regular expressions for more advanced title matching. These use the "), de)
+							subtext: l.a.createElement(l.a.Fragment, null, Object(v.c)("Use regular expressions for more advanced title matching. These use the "), ce)
 						}), e.titleRegexes.enabled && l.a.createElement(te, {
 							label: Object(v.c)("Title must match one of:")
 						}, l.a.createElement(Z.d, {
 							className: ae.a.multipleInput,
 							disabled: !1,
-							errors: ce(e.titleRegexes),
+							errors: de(e.titleRegexes),
 							values: e.titleRegexes.regexes,
 							onChange: this.onTitleRegexChange,
 							maxLength: 5,
@@ -370,13 +370,13 @@
 							on: e.bodyRegexes.enabled,
 							onClick: this.onToggleBodyRegex,
 							label: Object(v.c)("Body text RegEx requirements"),
-							subtext: l.a.createElement(l.a.Fragment, null, Object(v.c)("Use regular expressions for more advanced body text matching. These use the "), de)
+							subtext: l.a.createElement(l.a.Fragment, null, Object(v.c)("Use regular expressions for more advanced body text matching. These use the "), ce)
 						}), !t && e.bodyRegexes.enabled && l.a.createElement(te, {
 							label: Object(v.c)("Body must match one of:")
 						}, l.a.createElement(Z.d, {
 							className: ae.a.multipleInput,
 							disabled: !1,
-							errors: ce(e.bodyRegexes),
+							errors: de(e.bodyRegexes),
 							values: e.bodyRegexes.regexes,
 							onChange: this.onBodyRegexChange,
 							maxLength: 5,
@@ -896,7 +896,7 @@
 						maxLimit: n,
 						min: s,
 						minLimit: i
-					} = this.props, r = e.map(e => e.message), a = e.some(e => "both" === e.field), o = a || e.some(e => "min" === e.field), d = a || e.some(e => "max" === e.field);
+					} = this.props, r = e.map(e => e.message), a = e.some(e => "both" === e.field), o = a || e.some(e => "min" === e.field), c = a || e.some(e => "max" === e.field);
 					return l.a.createElement("div", {
 						onBlur: this.onBlur
 					}, l.a.createElement("div", null, l.a.createElement(Z.b, {
@@ -912,7 +912,7 @@
 					}), l.a.createElement(Z.b, {
 						className: Ke.a.maxInput,
 						inputRef: this.maxInputRef,
-						isInvalid: d,
+						isInvalid: c,
 						label: Object(v.c)("max"),
 						max: n,
 						min: i,
@@ -1096,8 +1096,8 @@
 						domainWhitelist: a,
 						guidelinesText: o,
 						isFlairRequired: l,
-						linkRepostAge: d,
-						linkRestrictionPolicy: c,
+						linkRepostAge: c,
+						linkRestrictionPolicy: d,
 						titleBlacklistedStrings: m,
 						titleRegexes: g,
 						titleRequiredStrings: u,
@@ -1153,15 +1153,15 @@
 							serverErrors: []
 						},
 						linkDomains: {
-							enabled: c !== E.b.None,
-							restrictionPolicy: c === E.b.None ? E.b.Whitelist : c,
-							domainsText: c !== E.b.None ? fe(c === E.b.Whitelist ? a : r) : "",
+							enabled: d !== E.b.None,
+							restrictionPolicy: d === E.b.None ? E.b.Whitelist : d,
+							domainsText: d !== E.b.None ? fe(d === E.b.Whitelist ? a : r) : "",
 							clientErrors: [],
 							serverErrors: []
 						},
 						repostFrequency: {
-							enabled: null !== d,
-							days: d
+							enabled: null !== c,
+							days: c
 						},
 						flairRequirement: {
 							enabled: l
@@ -1169,14 +1169,14 @@
 					})
 				};
 			const lt = "PostReq-discard-confirmation",
-				dt = 150,
-				ct = Object(c.c)({
+				ct = 150,
+				dt = Object(d.c)({
 					allowNavigationCallback: L.a,
 					isDiscardModalOpen: Object(B.b)(lt),
 					isLoading: T.a,
 					requirements: T.b
 				}),
-				mt = Object(d.b)(ct, (e, t) => ({
+				mt = Object(c.b)(dt, (e, t) => ({
 					closeAllModals: () => e(Object(m.f)()),
 					onSave: n => e(Object(g.b)(t.subredditName, n)),
 					toggleModal: t => e(Object(m.i)(t))
@@ -1233,7 +1233,7 @@
 						maxWait: 500
 					}), this.focusErrorField = () => {
 						const e = this.formBodyRef.current.querySelector('[aria-invalid="true"]');
-						e instanceof HTMLElement && (e.focus(), e.getBoundingClientRect().top < dt && (e.scrollIntoView(), window.scroll(0, window.scrollY - dt)))
+						e instanceof HTMLElement && (e.focus(), e.getBoundingClientRect().top < ct && (e.scrollIntoView(), window.scroll(0, window.scrollY - ct)))
 					}, this.onFormFieldBlur = () => {
 						this.updateHasUnsavedChanges(), this.updateHasUnsavedChanges.flush()
 					}, this.onSaveClick = () => {
@@ -1328,12 +1328,12 @@
 					}))
 				}
 			}
-			t.default = mt(Object(x.b)(gt))
+			t.default = mt(Object(x.c)(gt))
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/react/index.js"),
@@ -1351,7 +1351,7 @@
 					return n
 				};
 
-			function d(e, t, n) {
+			function c(e, t, n) {
 				const s = Object(a.c)({
 					featureEnabled: t => o.d[e](t)
 				});
@@ -1365,4 +1365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-PostRequirements.73b51199b2fa50def0a3.js.map
+//# sourceMappingURL=reddit-components-ModHub-PostRequirements.b711f5fd8e7c31a3aa9a.js.map

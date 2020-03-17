@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.69cab50dc6c89699bb07.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.db209a024e004009e829.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -100,7 +100,7 @@
 							const {
 								postId: e
 							} = l, t = o.posts.models[e];
-							t && t.voteState === g.a.notVoted && s(Object(c.X)(e))
+							t && t.voteState === g.a.notVoted && s(Object(c.bb)(e))
 						}
 					} else s(N({
 						pollId: e,
@@ -396,7 +396,7 @@
 				language: e => e.user.language,
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Z = Object(c.b)(U)(Object(v.b)(q)),
+			var Z = Object(c.b)(U)(Object(v.c)(q)),
 				z = s("./src/reddit/components/Poll/index.m.less"),
 				F = s.n(z);
 			class K extends a.a.Component {
@@ -458,7 +458,7 @@
 					isCommentsPage: h.w
 				})(Object(c.b)(W, (e, t) => ({
 					onVoteSelection: s => e(Object(g.f)(t.pollId, s.id))
-				}))(Object(v.b)(K))),
+				}))(Object(v.c)(K))),
 				J = s("./src/reddit/icons/svgs/GovSmall/index.tsx"),
 				Q = s("./src/app/strings/index.ts"),
 				X = (s("./node_modules/core-js/modules/es6.regexp.to-string.js"), e => a.a.createElement("svg", {
@@ -972,8 +972,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				l = e => c.has((Object(r.e)(e) || "").toLowerCase()) || i.has((Object(r.e)(e) || "").toLowerCase()) && Object(o.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: n.ab
-				}) === n.hb.Enabled
+					experimentName: n.bb
+				}) === n.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.69cab50dc6c89699bb07.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.db209a024e004009e829.js.map

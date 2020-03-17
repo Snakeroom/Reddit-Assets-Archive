@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.6f6aca26d93fc4420787.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.0c28a8534e889329f1b4.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -100,7 +100,7 @@
 							const {
 								postId: e
 							} = c, t = n.posts.models[e];
-							t && t.voteState === g.a.notVoted && r(Object(d.X)(e))
+							t && t.voteState === g.a.notVoted && r(Object(d.bb)(e))
 						}
 					} else r(E({
 						pollId: e,
@@ -685,7 +685,7 @@
 				accountId: e => e.user.account ? e.user.account.id : void 0,
 				badgesEnabled: e => y.d.spBadges(e) || y.d.spPremium(e)
 			});
-			var me = Object(de.b)(Object(d.b)(pe)((function(e) {
+			var me = Object(de.c)(Object(d.b)(pe)((function(e) {
 					const t = oe()();
 					return a.a.createElement(se.a, {
 						className: Object(_.a)(le.a.container, e.className, {
@@ -1028,8 +1028,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				c = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.ab
-				}) === s.hb.Enabled
+					experimentName: s.bb
+				}) === s.ib.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -1190,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.6f6aca26d93fc4420787.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.0c28a8534e889329f1b4.js.map

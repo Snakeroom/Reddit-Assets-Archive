@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.7853bda53a5ba1cbc523.js
-// Retrieved at 3/14/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.cfad985c8eee3c53fe63.js
+// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -165,7 +165,7 @@
 					}) : i ? Object(g.c)("Duplicate Custom Feed") : Object(g.c)("Create Custom Feed")))))
 				}
 			}
-			t.default = Object(o.a)(O(N(Object(h.b)(T))))
+			t.default = Object(o.a)(O(N(Object(h.c)(T))))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -448,4 +448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditCreateModal.7853bda53a5ba1cbc523.js.map
+//# sourceMappingURL=MultiredditCreateModal.cfad985c8eee3c53fe63.js.map
