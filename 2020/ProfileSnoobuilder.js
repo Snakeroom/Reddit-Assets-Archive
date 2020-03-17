@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0649a7ad5b87fbfc299c.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6b2446cabd71bfa2b6f6.js
+// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, s) {
@@ -461,8 +461,8 @@
 				E = s("./src/reddit/featureFlags/index.ts"),
 				O = s("./src/reddit/selectors/tooltip.ts"),
 				_ = s("./src/reddit/selectors/user.ts"),
-				N = s("./src/reddit/selectors/userPrefs.ts"),
-				k = s("./src/reddit/i18n/utils.ts"),
+				k = s("./src/reddit/selectors/userPrefs.ts"),
+				N = s("./src/reddit/i18n/utils.ts"),
 				C = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
 				S = s.n(C);
 			const j = Object(x.t)({
@@ -474,7 +474,7 @@
 					isOwnProfile: (e, t) => Object(_.J)(e, t.profileName),
 					language: _.O,
 					isSnoovatar30Enabled: E.d.snoovatar30,
-					isSubscriptionsPinned: N.b
+					isSubscriptionsPinned: k.b
 				}),
 				P = Object(m.a)(g.a),
 				T = "profile-nav-menu-tooltip";
@@ -643,7 +643,7 @@
 						internal: !0,
 						isActive: i === p.Ab.PROFILE_SNOOBUILDER,
 						key: "profile.snoobuilder",
-						text: Object(k.c)("Snoobuilder"),
+						text: Object(N.c)("Snoobuilder"),
 						url: "/user/".concat(s, "/snoo/")
 					}] : [];
 					return [{
@@ -1238,16 +1238,20 @@
 				a = s.n(o),
 				d = s("./src/lib/constants/index.ts"),
 				c = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/reddit/i18n/components.tsx"),
-				m = s("./src/reddit/components/BackToTop/index.m.less"),
-				u = s.n(m),
-				p = e => a.a.createElement("div", {
-					className: Object(n.a)(e.className, u.a.container),
+				l = s("./src/reddit/components/BackToTop/index.m.less"),
+				m = s.n(l);
+			const {
+				fbt: u
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			var p = e => a.a.createElement("div", {
+					className: Object(n.a)(e.className, m.a.container),
 					style: e.style
 				}, a.a.createElement(c.f, {
-					className: u.a.button,
+					className: m.a.button,
 					onClick: () => window.scroll(0, 0)
-				}, a.a.createElement(l.c, null, "Back to top"))),
+				}, u._("Back to top", null, {
+					hk: "4nq6TO"
+				}))),
 				h = s("./src/reddit/components/SidebarFooter/index.tsx"),
 				b = s("./src/reddit/constants/componentSizes.ts"),
 				f = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1276,8 +1280,8 @@
 			const E = d.e[1] + 24,
 				O = b.f + 8 + 152 + 32 + 16,
 				_ = O + E + 8,
-				N = v.a.div("Container", g.a),
-				k = v.a.wrapped(e => {
+				k = v.a.div("Container", g.a),
+				N = v.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = w(e, ["className"]);
@@ -1342,12 +1346,12 @@
 							hideFooter: n
 						}
 					} = this, r = this.state.isAdSticky && !(!e && !t);
-					return a.a.createElement(N, {
+					return a.a.createElement(k, {
 						className: s,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(C, {
 						isSticky: r
-					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(k, null))
+					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(N, null))
 				}
 			}
 			const j = Object(f.t)();
@@ -1400,7 +1404,7 @@
 				return 0 === t.length ? null : r.a.createElement(a.a, {
 					title: Object(l.c)("Trophy Case (".concat(Object(l.b)("trophyCount", t.length), ")")),
 					items: t,
-					renderItem: N
+					renderItem: k
 				})
 			});
 			const y = g.a.wrapped(m.a, "TrophyItem", x.a),
@@ -1409,7 +1413,7 @@
 				O = g.a.div("TrophyContent", x.a),
 				_ = g.a.wrapped(c.f, "Description", x.a);
 
-			function N(e) {
+			function k(e) {
 				let {
 					item: t
 				} = e;
@@ -1608,9 +1612,9 @@
 				E = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				O = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
 				_ = s("./src/reddit/models/Flair/index.ts"),
-				N = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				k = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
-				C = s.n(k);
+				k = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				N = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
+				C = s.n(N);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -1679,9 +1683,9 @@
 					className: C.a.communityDescriptionContainer
 				}, r.a.createElement(o.a, {
 					className: C.a.communityName,
-					to: Object(N.a)(e.name, e.type),
+					to: Object(k.a)(e.name, e.type),
 					onClick: e.onCommunityNameClick
-				}, Object(N.b)(e.name, e.type)), r.a.createElement("div", {
+				}, Object(k.b)(e.name, e.type)), r.a.createElement("div", {
 					className: C.a.communityInfoContainer
 				}, !!e.subscribers && r.a.createElement("p", {
 					className: C.a.subscriberCount
@@ -1837,8 +1841,8 @@
 					}, a))))
 				},
 				_ = s("./src/reddit/components/Widgets/ConnectedAccounts/index.m.less"),
-				N = s.n(_);
-			const k = Object(o.c)({
+				k = s.n(_);
+			const N = Object(o.c)({
 					twitterAccount: (e, t) => {
 						let {
 							subredditOrProfile: s
@@ -1856,7 +1860,7 @@
 						}) : null
 					}
 				}),
-				C = Object(i.b)(k, e => ({
+				C = Object(i.b)(N, e => ({
 					trackTwitterAccountClicked: t => e((e, s) => m.k(s(), t))
 				}), (e, t, s) => Object.assign({}, s, e, t, {
 					onTwitterAccountClicked: () => t.trackTwitterAccountClicked(e.user)
@@ -1867,7 +1871,7 @@
 					twitterAccount: s
 				} = e;
 				return s ? r.a.createElement(a.a, null, r.a.createElement(c.b, null, r.a.createElement(c.a, null, r.a.createElement(u.c, null, "Connected accounts")), s && r.a.createElement("div", {
-					className: N.a.account
+					className: k.a.account
 				}, r.a.createElement(O, {
 					provider: p.a.Twitter,
 					account: s,
@@ -1924,12 +1928,12 @@
 					const t = E(e);
 					return Object(y.f)(t)
 				},
-				N = e => {
+				k = e => {
 					const t = O(e);
 					return Object(y.f)(t)
 				};
-			var k = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				C = s.n(k);
+			var N = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				C = s.n(N);
 			const S = Object(m.t)(),
 				j = Object(i.b)(() => Object(o.c)({
 					forceRedditStyle: (e, t) => {
@@ -1971,7 +1975,7 @@
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = O(this.props), e.color = e.fill = N(this.props), e
+					return e.backgroundColor = O(this.props), e.color = e.fill = k(this.props), e
 				}
 				render() {
 					const {
@@ -2270,4 +2274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.0649a7ad5b87fbfc299c.js.map
+//# sourceMappingURL=ProfileSnoobuilder.6b2446cabd71bfa2b6f6.js.map

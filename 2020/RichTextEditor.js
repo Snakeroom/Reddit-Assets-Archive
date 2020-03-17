@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f4f2d7a1c214806948eb.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.44e92c19858217b6bcdb.js
+// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -434,8 +434,8 @@
 				W = n("./src/reddit/constants/keycodes.ts"),
 				L = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				z = n("./src/reddit/components/CommentCreation/translations.ts"),
-				U = n("./src/reddit/constants/componentSizes.ts"),
-				q = n("./src/reddit/constants/componentTestIds.ts"),
+				q = n("./src/reddit/constants/componentSizes.ts"),
+				U = n("./src/reddit/constants/componentTestIds.ts"),
 				V = n("./src/reddit/selectors/activeModalId.ts"),
 				K = n("./src/reddit/selectors/comments.ts"),
 				X = n("./src/reddit/selectors/editorContent.ts"),
@@ -479,7 +479,7 @@
 						this.props.onCancel(), this.onBlur()
 					}, this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < U.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < q.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || w.a.write(() => {
 							this.setState({
@@ -581,7 +581,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(r.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + de + ce + U.o : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + de + ce + q.o : void 0
 				}
 				render() {
 					const {
@@ -610,7 +610,7 @@
 						wrapperHeight: I
 					} = this.state, F = Object(L.a)(d), P = i.draftType === J.c.edit;
 					return s.a.createElement(le, {
-						"data-test-id": q.b,
+						"data-test-id": U.b,
 						className: Object(N.a)(o, {
 							[ee.a.isTopLevelComment]: M
 						}),
@@ -763,12 +763,12 @@
 		},
 		"./src/reddit/components/CommentCreation/ToxicityWarningModal.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./src/higherOrderComponents/asModal/index.tsx"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/uuid/v4.js"),
-				d = n.n(i),
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
+				r = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/uuid/v4.js"),
+				i = n.n(a),
+				d = n("./src/higherOrderComponents/asModal/index.tsx"),
 				c = n("./src/reddit/actions/comment/index.ts"),
 				l = n("./src/reddit/actions/modal.ts"),
 				m = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -802,9 +802,10 @@
 					noun: "close",
 					correlationId: e
 				}, g(t));
-			var w = n("./src/reddit/i18n/components.tsx"),
-				O = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
-			const v = Object(a.b)(null, (e, t) => ({
+			var w = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+			const {
+				fbt: O
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(r.b)(null, (e, t) => ({
 				closeModal: () => {
 					e(Object(l.g)(c.qb))
 				},
@@ -812,34 +813,42 @@
 					t.onSubmit()
 				}
 			}));
-			class y extends r.a.Component {
+			class y extends s.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						correlationId: d()()
+						correlationId: i()()
 					}
 				}
 				componentDidMount() {
 					this.props.modalSeen(), this.props.sendEvent(x(this.state.correlationId))
 				}
 				render() {
-					return r.a.createElement(m.c, null, r.a.createElement(m.g, null, r.a.createElement(O.a, null, r.a.createElement(m.n, null, r.a.createElement(w.c, null, "Are you sure you want to post that?")), r.a.createElement(p.a, {
+					return s.a.createElement(m.c, null, s.a.createElement(m.g, null, s.a.createElement(w.a, null, s.a.createElement(m.n, null, O._("Are you sure you want to post that?", null, {
+						hk: "4yXqtu"
+					})), s.a.createElement(p.a, {
 						onClick: () => {
 							this.props.sendEvent(E(this.state.correlationId)), this.props.closeModal()
 						}
-					}, r.a.createElement(m.b, null)))), r.a.createElement(m.j, null, r.a.createElement(m.m, null, r.a.createElement(w.c, null, "A reminder from the mods: Please follow community rules when commenting."))), r.a.createElement(m.e, null, r.a.createElement(m.a, {
+					}, s.a.createElement(m.b, null)))), s.a.createElement(m.j, null, s.a.createElement(m.m, null, O._("A reminder from the mods: Please follow community rules when commenting.", null, {
+						hk: "Hdi9f"
+					}))), s.a.createElement(m.e, null, s.a.createElement(m.a, {
 						onClick: () => {
 							this.props.sendEvent(C(this.state.correlationId)), this.props.closeModal()
 						},
 						"data-redditstyle": !0
-					}, r.a.createElement(w.c, null, "Go back and edit")), r.a.createElement(m.o, {
+					}, O._("Go back and edit", null, {
+						hk: "3nGNI7"
+					})), s.a.createElement(m.o, {
 						onClick: () => {
 							this.props.sendEvent(f(this.state.correlationId)), this.props.continue()
 						},
 						"data-redditstyle": !0
-					}, r.a.createElement(w.c, null, "Comment"))))
+					}, O._("Comment", null, {
+						hk: "1leYg7"
+					}))))
 				}
 			}
-			t.a = Object(o.a)(v(Object(u.c)(y)))
+			t.a = Object(d.a)(v(Object(u.c)(y)))
 		},
 		"./src/reddit/components/CommentCreation/getCancelModalId.ts": function(e, t, n) {
 			"use strict";
@@ -954,8 +963,8 @@
 				W = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				L = n("./src/reddit/components/CollapseIntoOverflow/index.m.less"),
 				z = n.n(L);
-			const U = 33,
-				q = e => e.preventDefault(),
+			const q = 33,
+				U = e => e.preventDefault(),
 				V = e => "Comment--Overflow-Dropdown__".concat(e),
 				K = e => e.reduce((e, t) => (Array.isArray(t) ? e += t.length : t && e++, e), 0);
 			class X extends a.a.Component {
@@ -969,7 +978,7 @@
 							} = this.state, n = this.container.clientWidth;
 							let o = this.breakpoints.findIndex((e, o) => {
 								const s = o + 1 < t - 1,
-									r = this.breakpoints[o + 1] + (s ? U : 0);
+									r = this.breakpoints[o + 1] + (s ? q : 0);
 								return n < r
 							});
 							o < 0 && (o = t - 1), o !== e && y.a.write(() => {
@@ -1028,7 +1037,7 @@
 						className: z.a.overflowMenu,
 						dropdownId: V(n),
 						isFixed: !1,
-						handleMouseDown: q,
+						handleMouseDown: U,
 						onClick: o
 					}, a.a.createElement("div", {
 						className: z.a.row
@@ -1178,8 +1187,8 @@
 				We = u.a.div("CommentHeader", Ae.a),
 				Le = u.a.wrapped(fe.a, "FormFooter", Ae.a),
 				ze = u.a.div("MarkdownButtonWrapper", Ae.a),
-				Ue = u.a.wrapped(ue.a, "MarkdownButton", Ae.a),
-				qe = u.a.wrapped(le, "SectionSpacer", Ae.a),
+				qe = u.a.wrapped(ue.a, "MarkdownButton", Ae.a),
+				Ue = u.a.wrapped(le, "SectionSpacer", Ae.a),
 				Ve = u.a.div("ToolbarWrapper", Ae.a),
 				Ke = u.a.span("FormHeaderText", Ae.a),
 				Xe = e => {
@@ -1206,11 +1215,11 @@
 							pending: r,
 							submitButtonText: i,
 							canSubmit: h
-						}, a.a.createElement(Ve, null, a.a.createElement(me, e), a.a.createElement(qe, null), a.a.createElement(ze, null, a.a.createElement(A, {
+						}, a.a.createElement(Ve, null, a.a.createElement(me, e), a.a.createElement(Ue, null), a.a.createElement(ze, null, a.a.createElement(A, {
 							onClick: l,
 							shouldShowFtuMessage: !!u,
 							text: De(d)
-						}), a.a.createElement(Ue, {
+						}), a.a.createElement(qe, {
 							draftKey: n,
 							language: d,
 							onClick: m,
@@ -2004,7 +2013,7 @@
 				W = P.a.wrapped(S.f, "SubmitButton", F.a),
 				L = P.a.wrapped(B.a, "LoadingIcon", F.a),
 				z = Object(j.t)(),
-				U = Object(l.c)({
+				q = Object(l.c)({
 					destSubreddit: g.g,
 					editorMode: g.h,
 					errorMessages: g.i,
@@ -2018,7 +2027,7 @@
 					uploads: e => e.uploads,
 					user: _.i
 				}),
-				q = Object(i.b)(U, (e, t) => ({
+				U = Object(i.b)(q, (e, t) => ({
 					onCancel: t => e(x.b(t)),
 					onSubmitDraft: t => e(x.c(t)),
 					onSuccess: t => e(Object(d.b)(t)),
@@ -2185,7 +2194,7 @@
 					}))
 				}
 			}
-			t.default = z(q(V))
+			t.default = z(U(V))
 		},
 		"./src/reddit/components/RequestPendingBanner/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2713,4 +2722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.f4f2d7a1c214806948eb.js.map
+//# sourceMappingURL=RichTextEditor.44e92c19858217b6bcdb.js.map

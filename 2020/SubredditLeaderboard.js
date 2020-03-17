@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f5ba305ad983c3baa1ab.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.939ed466ea11ac887c06.js
+// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -234,16 +234,20 @@
 				i = r.n(o),
 				d = r("./src/lib/constants/index.ts"),
 				c = r("./src/reddit/controls/Button/index.tsx"),
-				l = r("./src/reddit/i18n/components.tsx"),
-				m = r("./src/reddit/components/BackToTop/index.m.less"),
-				u = r.n(m),
-				p = e => i.a.createElement("div", {
-					className: Object(n.a)(e.className, u.a.container),
+				l = r("./src/reddit/components/BackToTop/index.m.less"),
+				m = r.n(l);
+			const {
+				fbt: u
+			} = r("./node_modules/fbt/lib/FbtPublic.js");
+			var p = e => i.a.createElement("div", {
+					className: Object(n.a)(e.className, m.a.container),
 					style: e.style
 				}, i.a.createElement(c.f, {
-					className: u.a.button,
+					className: m.a.button,
 					onClick: () => window.scroll(0, 0)
-				}, i.a.createElement(l.c, null, "Back to top"))),
+				}, u._("Back to top", null, {
+					hk: "4nq6TO"
+				}))),
 				g = r("./src/reddit/components/SidebarFooter/index.tsx"),
 				h = r("./src/reddit/constants/componentSizes.ts"),
 				b = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1528,4 +1532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.f5ba305ad983c3baa1ab.js.map
+//# sourceMappingURL=SubredditLeaderboard.939ed466ea11ac887c06.js.map

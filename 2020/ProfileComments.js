@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.b15afdf29aee2c1d3bbc.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.431c8bf29a37e286e645.js
+// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -7328,16 +7328,20 @@
 				i = s.n(a),
 				c = s("./src/lib/constants/index.ts"),
 				d = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/reddit/i18n/components.tsx"),
-				m = s("./src/reddit/components/BackToTop/index.m.less"),
-				p = s.n(m),
-				u = e => i.a.createElement("div", {
-					className: Object(n.a)(e.className, p.a.container),
+				l = s("./src/reddit/components/BackToTop/index.m.less"),
+				m = s.n(l);
+			const {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			var u = e => i.a.createElement("div", {
+					className: Object(n.a)(e.className, m.a.container),
 					style: e.style
 				}, i.a.createElement(d.f, {
-					className: p.a.button,
+					className: m.a.button,
 					onClick: () => window.scroll(0, 0)
-				}, i.a.createElement(l.c, null, "Back to top"))),
+				}, p._("Back to top", null, {
+					hk: "4nq6TO"
+				}))),
 				b = s("./src/reddit/components/SidebarFooter/index.tsx"),
 				h = s("./src/reddit/constants/componentSizes.ts"),
 				x = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -10224,4 +10228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.b15afdf29aee2c1d3bbc.js.map
+//# sourceMappingURL=ProfileComments.431c8bf29a37e286e645.js.map

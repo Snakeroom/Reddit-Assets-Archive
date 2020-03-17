@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cc839be49d3ccde37fc6.js
-// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.564eab788cc488740aec.js
+// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -3851,12 +3851,12 @@
 		},
 		"./src/reddit/components/CommentCreation/ToxicityWarningModal.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./src/higherOrderComponents/asModal/index.tsx"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/uuid/v4.js"),
-				c = n.n(a),
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
+				r = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/uuid/v4.js"),
+				a = n.n(i),
+				c = n("./src/higherOrderComponents/asModal/index.tsx"),
 				l = n("./src/reddit/actions/comment/index.ts"),
 				d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -3890,9 +3890,10 @@
 					noun: "close",
 					correlationId: e
 				}, g(t));
-			var v = n("./src/reddit/i18n/components.tsx"),
-				O = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
-			const E = Object(i.b)(null, (e, t) => ({
+			var v = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+			const {
+				fbt: O
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = Object(r.b)(null, (e, t) => ({
 				closeModal: () => {
 					e(Object(d.g)(l.qb))
 				},
@@ -3900,34 +3901,42 @@
 					t.onSubmit()
 				}
 			}));
-			class j extends r.a.Component {
+			class j extends s.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						correlationId: c()()
+						correlationId: a()()
 					}
 				}
 				componentDidMount() {
 					this.props.modalSeen(), this.props.sendEvent(f(this.state.correlationId))
 				}
 				render() {
-					return r.a.createElement(u.c, null, r.a.createElement(u.g, null, r.a.createElement(O.a, null, r.a.createElement(u.n, null, r.a.createElement(v.c, null, "Are you sure you want to post that?")), r.a.createElement(m.a, {
+					return s.a.createElement(u.c, null, s.a.createElement(u.g, null, s.a.createElement(v.a, null, s.a.createElement(u.n, null, O._("Are you sure you want to post that?", null, {
+						hk: "4yXqtu"
+					})), s.a.createElement(m.a, {
 						onClick: () => {
 							this.props.sendEvent(y(this.state.correlationId)), this.props.closeModal()
 						}
-					}, r.a.createElement(u.b, null)))), r.a.createElement(u.j, null, r.a.createElement(u.m, null, r.a.createElement(v.c, null, "A reminder from the mods: Please follow community rules when commenting."))), r.a.createElement(u.e, null, r.a.createElement(u.a, {
+					}, s.a.createElement(u.b, null)))), s.a.createElement(u.j, null, s.a.createElement(u.m, null, O._("A reminder from the mods: Please follow community rules when commenting.", null, {
+						hk: "Hdi9f"
+					}))), s.a.createElement(u.e, null, s.a.createElement(u.a, {
 						onClick: () => {
 							this.props.sendEvent(C(this.state.correlationId)), this.props.closeModal()
 						},
 						"data-redditstyle": !0
-					}, r.a.createElement(v.c, null, "Go back and edit")), r.a.createElement(u.o, {
+					}, O._("Go back and edit", null, {
+						hk: "3nGNI7"
+					})), s.a.createElement(u.o, {
 						onClick: () => {
 							this.props.sendEvent(x(this.state.correlationId)), this.props.continue()
 						},
 						"data-redditstyle": !0
-					}, r.a.createElement(v.c, null, "Comment"))))
+					}, O._("Comment", null, {
+						hk: "1leYg7"
+					}))))
 				}
 			}
-			t.a = Object(o.a)(E(Object(p.c)(j)))
+			t.a = Object(c.a)(E(Object(p.c)(j)))
 		},
 		"./src/reddit/components/CommentCreation/getCancelModalId.ts": function(e, t, n) {
 			"use strict";
@@ -29600,4 +29609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.cc839be49d3ccde37fc6.js.map
+//# sourceMappingURL=PostCreation.564eab788cc488740aec.js.map
