@@ -1,30 +1,30 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.2b98326e8902bb88766f.js
-// Retrieved at 3/18/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.2b313ca9f26e9ce5f7dd.js
+// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
 			"use strict";
 			t.a = function(e, t) {
-				for (var s = arguments.length, r = new Array(s > 2 ? s - 2 : 0), i = 2; i < s; i++) r[i - 2] = arguments[i];
-				let a, n = !1;
+				for (var s = arguments.length, r = new Array(s > 2 ? s - 2 : 0), a = 2; a < s; a++) r[a - 2] = arguments[a];
+				let i, n = !1;
 				const o = async () => {
-					r && r.length ? await e.call(window, ...r) : await e.call(window), n || (a = window.setTimeout(o, t))
+					r && r.length ? await e.call(window, ...r) : await e.call(window), n || (i = window.setTimeout(o, t))
 				};
-				return a = window.setTimeout(o, t), () => {
-					n = !0, window.clearTimeout(a)
+				return i = window.setTimeout(o, t), () => {
+					n = !0, window.clearTimeout(i)
 				}
 			}
 		},
 		"./src/reddit/actions/publicAccessNetwork/rpanWorker.ts": function(e, t, s) {
 			"use strict";
 			var r = s("./src/lib/setInterval/index.ts"),
-				i = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
-				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				a = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
+				i = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				n = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				o = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			const c = new class {
 				constructor() {
-					this.isInitialized = !1, this.currentStreamsRateSec = a.c, this.currentConfigRateSec = a.d, this.heartbeatRateSec = a.f, this.statsRefreshRateSec = a.i, this.recommendedViewerSubredditsRefreshRateSec = a.g, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStreamPostId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentStreamId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
+					this.isInitialized = !1, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatDelaySec = i.f, this.heartbeatRateSec = i.g, this.statsRefreshRateSec = i.j, this.recommendedViewerSubredditsRefreshRateSec = i.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStreamPostId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentStreamId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
 				}
 				unsubscribeConfig() {
 					window.clearTimeout(this.configTimeout)
@@ -43,15 +43,15 @@
 				}
 				async initializeConfig(e, t, s) {
 					if (this.isInitialized) return;
-					await t(Object(i.c)(e));
+					await t(Object(a.c)(e));
 					const r = Object(o.m)(s());
 					r.lastUpdated && (this.currentStreamsRateSec = r.viewer_streams_refresh, this.currentConfigRateSec = r.rpan_config_refresh_rate, this.isInitialized = !0)
 				}
 				async startConfigWork(e, t, s) {
-					window.clearTimeout(this.configTimeout), await t(Object(i.c)(e));
+					window.clearTimeout(this.configTimeout), await t(Object(a.c)(e));
 					const r = Object(o.m)(s()),
-						a = r.rpan_config_refresh_rate;
-					this.currentConfigRateSec !== a && (this.currentConfigRateSec = a);
+						i = r.rpan_config_refresh_rate;
+					this.currentConfigRateSec !== i && (this.currentConfigRateSec = i);
 					const n = r.viewer_streams_refresh;
 					this.currentStreamsRateSec !== n && (this.currentStreamsRateSec = n, this.startStreamsWork(e, t, s));
 					const c = r.viewer_heartbeat_interval;
@@ -63,19 +63,29 @@
 					window.clearTimeout(this.streamsTimeout), await t(Object(n.e)(e)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s), this.getStreamsTimeout(s()))
 				}
 				async startRecommendedViewerSubredditsWork(e, t) {
-					await this.initializeConfig(a.O, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(i.b)());
+					await this.initializeConfig(i.P, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(a.b)());
 					const s = Object(o.m)(t()).recommended_viewer_subreddits_refresh_rate;
-					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(i.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
+					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(a.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(a.O, e, t), this.currentStreamPostId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
+					await this.initializeConfig(i.P, e, t), this.currentStreamPostId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
 						this.currentStreamPostId && e(Object(n.d)(this.currentStreamPostId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
-					await this.initializeConfig(a.O, e, t), this.currentStreamId && (this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.heartbeatRateSec = Object(o.m)(t()).viewer_heartbeat_interval || this.heartbeatRateSec, this.clearSendHeartbeatInterval = Object(r.a)(() => {
-						this.currentStreamId && e(Object(i.d)(this.currentStreamId))
-					}, Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS)))
+					if (await this.initializeConfig(i.P, e, t), !this.currentStreamId) return;
+					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
+					const s = Object(o.m)(t());
+					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
+					const n = 1e3 * this.heartbeatDelaySec;
+					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
+					const c = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
+						d = () => {
+							this.currentStreamId && e(Object(a.d)(this.currentStreamId))
+						};
+					this.clearSendHeartbeatInterval = Object(r.a)(() => {
+						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(r.a)(d, c)
+					}, n)
 				}
 				getStreamsTimeout(e) {
 					return Math.max(1e3 * (this.currentStreamsRateSec + this.getRandomFetchStreamsJitterSec(e)), this.MIN_RATE_MS)
@@ -106,8 +116,8 @@
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.search.js");
 			var r = s("./node_modules/query-string/index.js"),
-				i = s.n(r),
-				a = s("./src/lib/makeActionCreator/index.ts"),
+				a = s.n(r),
+				i = s("./src/lib/makeActionCreator/index.ts"),
 				n = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				o = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
@@ -115,19 +125,19 @@
 				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			const l = e => {
 					const t = location && location.search || "",
-						s = i.a.parse(t);
+						s = a.a.parse(t);
 					"home" === e && (s.related = e);
-					const r = i.a.stringify(s);
+					const r = a.a.stringify(s);
 					return r ? "?".concat(r) : ""
 				},
-				h = Object(a.a)(n.K),
-				m = Object(a.a)(n.w),
-				b = Object(a.a)(n.L),
-				p = Object(a.a)(n.x),
-				v = Object(a.a)(n.J),
-				S = Object(a.a)(n.I),
-				R = Object(a.a)(n.r),
-				g = Object(a.a)(n.s),
+				h = Object(i.a)(n.L),
+				m = Object(i.a)(n.x),
+				b = Object(i.a)(n.M),
+				p = Object(i.a)(n.y),
+				v = Object(i.a)(n.K),
+				S = Object(i.a)(n.J),
+				R = Object(i.a)(n.s),
+				g = Object(i.a)(n.t),
 				y = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
@@ -137,13 +147,13 @@
 				}),
 				w = e => async (t, s, r) => {
 					let {
-						gqlContext: i
+						gqlContext: a
 					} = r;
-					const a = Object(c.f)(e),
+					const i = Object(c.f)(e),
 						n = s();
-					if (Object(u.e)(n, a)) return;
-					t(h(a));
-					const d = await Object(o.d)(i(), a),
+					if (Object(u.e)(n, i)) return;
+					t(h(i));
+					const d = await Object(o.d)(a(), i),
 						l = Date.now();
 					if (d.ok && d.body && d.body.data) {
 						let e = d.body.data;
@@ -152,43 +162,43 @@
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(P({
-						streamId: a,
+					} else t(I({
+						streamId: i,
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, f = e => async (t, s) => Object(d.b)(s()) ? t(I(e)) : t(E()), E = () => async (e, t, s) => {
+				}, f = e => async (t, s) => Object(d.b)(s()) ? t(P(e)) : t(E()), E = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
-					const i = t();
-					if (Object(u.g)(i)) return;
+					const a = t();
+					if (Object(u.g)(a)) return;
 					e(b());
-					const a = await Object(o.f)(r()),
+					const i = await Object(o.f)(r()),
 						n = Date.now();
-					if (a.ok && a.body && a.body.data) {
-						const t = a.body.data;
+					if (i.ok && i.body && i.body.data) {
+						const t = i.body.data;
 						e(p({
 							models: t,
 							utcTimeStamp: n
 						}))
 					} else e(_({
-						error: a.error,
+						error: i.error,
 						utcTimeStamp: n
 					}))
-				}, I = e => async (t, s, r) => {
+				}, P = e => async (t, s, r) => {
 					let {
-						gqlContext: i
+						gqlContext: a
 					} = r;
-					const a = s();
-					if (Object(u.g)(a)) return;
+					const i = s();
+					if (Object(u.g)(i)) return;
 					t(b());
-					const n = await Object(o.e)(i(), e),
+					const n = await Object(o.e)(a(), e),
 						c = Date.now();
 					if (n.ok && n.body && n.body.data) {
 						let r = n.body.data;
-						const i = Object(u.b)(s());
-						i && "pan" !== i && (r = r.map(y(i))), t(p({
+						const a = Object(u.b)(s());
+						a && "pan" !== a && (r = r.map(y(a))), t(p({
 							listingName: e,
 							models: r,
 							utcTimeStamp: c
@@ -197,7 +207,7 @@
 						error: n.error,
 						utcTimeStamp: c
 					}))
-				}, P = e => async t => {
+				}, I = e => async t => {
 					t(v(e))
 				}, _ = e => async t => {
 					t(S(e))
@@ -209,16 +219,16 @@
 				return l
 			}));
 			var r = s("./node_modules/react/index.js"),
-				i = s.n(r),
-				a = s("./node_modules/hls.js/dist/hls.js"),
-				n = s.n(a),
+				a = s.n(r),
+				i = s("./node_modules/hls.js/dist/hls.js"),
+				n = s.n(i),
 				o = s("./src/lib/env/index.ts");
 			const c = 3,
 				d = 5e3,
 				u = 1e3;
 			class l extends r.Component {
 				constructor(e) {
-					super(e), this.mediaRecoveryAttemptsCount = 0, this.mediaRecoveryLastAttemptUtc = 0, this.fragmentRecoveryLastAttemptUtc = 0, this.fragmentRecoveryAttemptsCount = 0, this.videoElement = i.a.createRef(), this.onPlayError = e => t => {
+					super(e), this.mediaRecoveryAttemptsCount = 0, this.mediaRecoveryLastAttemptUtc = 0, this.fragmentRecoveryLastAttemptUtc = 0, this.fragmentRecoveryAttemptsCount = 0, this.videoElement = a.a.createRef(), this.onPlayError = e => t => {
 						if ("AbortError" === t.name) return;
 						const {
 							onAutoPlayPrevented: s,
@@ -254,7 +264,7 @@
 						onEnded: s,
 						onLoadedData: r
 					} = this.props;
-					return i.a.createElement("video", {
+					return a.a.createElement("video", {
 						controls: e,
 						tabIndex: e ? 0 : -1,
 						muted: t || this.state.isMuteForced,
@@ -272,10 +282,10 @@
 						startTime: t,
 						isPaused: s,
 						onLevelLoaded: r,
-						onLoadingData: i,
-						url: a
+						onLoadingData: a,
+						url: i
 					} = this.props;
-					if (!a || !this.videoElement.current) return;
+					if (!i || !this.videoElement.current) return;
 					this.hls && this.hls.destroy();
 					const o = new n.a({
 						enableWorker: !1,
@@ -287,14 +297,14 @@
 						maxMaxBufferLength: 10
 					});
 					this.subscribeErrorHandlers(o), o.on(n.a.Events.MANIFEST_LOADING, () => {
-						i && i()
-					}), o.on(n.a.Events.MANIFEST_PARSED, (r, i) => {
+						a && a()
+					}), o.on(n.a.Events.MANIFEST_PARSED, (r, a) => {
 						e && !s && this.videoElement.current && (this.videoElement.current.currentTime = t, this.videoElement.current.play().catch(this.onPlayError(o))), this.setState(Object.assign({}, this.state, {
 							isInitialized: !0
 						}))
 					}), o.on(n.a.Events.LEVEL_LOADED, (e, t) => {
 						r && r(t.details)
-					}), o.loadSource(a), o.attachMedia(this.videoElement.current), this.hls = o
+					}), o.loadSource(i), o.attachMedia(this.videoElement.current), this.hls = o
 				}
 				subscribeErrorHandlers(e) {
 					e.on(n.a.Events.ERROR, (t, s) => {
@@ -382,8 +392,8 @@
 			"use strict";
 			s.r(t);
 			var r = s("./node_modules/react/index.js"),
-				i = s.n(r),
-				a = s("./node_modules/react-redux/es/index.js"),
+				a = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				c = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
@@ -403,9 +413,9 @@
 			})), s.d(t, "Overlay", (function() {
 				return E
 			})), s.d(t, "LiveIndicator", (function() {
-				return I
-			})), s.d(t, "Duration", (function() {
 				return P
+			})), s.d(t, "Duration", (function() {
+				return I
 			})), s.d(t, "MutedToggleButton", (function() {
 				return _
 			})), s.d(t, "PausedToggleButton", (function() {
@@ -415,7 +425,7 @@
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(n.c)({
 				unavailableVideoUrl: v.p
-			}), w = Object(a.b)(y, (e, t) => ({
+			}), w = Object(i.b)(y, (e, t) => ({
 				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
 			}));
 			class f extends r.Component {
@@ -506,7 +516,7 @@
 					this.unsubscribeHeartbeat()
 				}
 				render() {
-					return i.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: R.a.LiveVideoPlayer
 					}, this.shouldRenderPoster ? this.renderPoster() : null, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
@@ -515,18 +525,18 @@
 						duration: e,
 						live: t
 					} = this.state;
-					return i.a.createElement(E, null, t ? i.a.createElement(I, null) : e ? i.a.createElement(P, {
+					return a.a.createElement(E, null, t ? a.a.createElement(P, null) : e ? a.a.createElement(I, {
 						seconds: e
 					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
 				renderPoster() {
-					return i.a.createElement(u.a, {
+					return a.a.createElement(u.a, {
 						src: this.props.posterUrl,
-						errorSrc: o.R
+						errorSrc: o.S
 					})
 				}
 				renderVideo() {
-					return i.a.createElement(d.a, {
+					return a.a.createElement(d.a, {
 						autoplay: this.isPaused,
 						controls: !1,
 						isPaused: this.isPaused,
@@ -542,10 +552,10 @@
 					})
 				}
 				renderVideoUI() {
-					return i.a.createElement(i.a.Fragment, null, i.a.createElement(T, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(T, {
 						paused: this.isPaused,
 						onClick: this.onTogglePaused
-					}), i.a.createElement(_, {
+					}), a.a.createElement(_, {
 						muted: this.state.muted,
 						onClick: this.onToggleMuted
 					}))
@@ -562,20 +572,20 @@
 					let {
 						children: t
 					} = e;
-					return i.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: R.a.Overlay
 					}, t)
 				},
-				I = () => i.a.createElement("span", {
+				P = () => a.a.createElement("span", {
 					className: R.a.LiveIndicator
 				}, g._("Live", null, {
 					hk: "TwJSs"
 				})),
-				P = e => {
+				I = e => {
 					let {
 						seconds: t
 					} = e;
-					return i.a.createElement("span", {
+					return a.a.createElement("span", {
 						className: R.a.Duration
 					}, (e => {
 						const t = Math.trunc(e / 3600),
@@ -589,16 +599,16 @@
 						muted: t,
 						onClick: s
 					} = e;
-					let r, a;
+					let r, i;
 					return t ? (r = g._("unmute", null, {
 						hk: "45ctbh"
-					}), a = i.a.createElement(h.a, {
+					}), i = a.a.createElement(h.a, {
 						className: R.a.MuteIcon
 					})) : (r = g._("mute", null, {
 						hk: "3xjwI7"
-					}), a = i.a.createElement(p.a, {
+					}), i = a.a.createElement(p.a, {
 						className: R.a.VolumeIcon
-					})), i.a.createElement("button", {
+					})), a.a.createElement("button", {
 						"aria-label": r,
 						className: R.a.MutedToggleButton,
 						onClick: e => {
@@ -607,31 +617,31 @@
 						onKeyPress: e => {
 							e.stopPropagation()
 						}
-					}, a)
+					}, i)
 				},
 				T = e => {
 					let {
 						paused: t,
 						onClick: s
 					} = e;
-					let r, a;
+					let r, i;
 					return t ? (r = g._("play", null, {
 						hk: "2xeIj3"
-					}), a = i.a.createElement(b.a, {
+					}), i = a.a.createElement(b.a, {
 						className: R.a.PlayIcon
 					})) : (r = g._("pause", null, {
 						hk: "3jTrMB"
-					}), a = i.a.createElement(m.a, {
+					}), i = a.a.createElement(m.a, {
 						className: R.a.PauseIcon
-					})), i.a.createElement("button", {
+					})), a.a.createElement("button", {
 						"aria-label": r,
 						className: R.a.PausedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						}
-					}, a)
+					}, i)
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.2b98326e8902bb88766f.js.map
+//# sourceMappingURL=LiveVideoPlayer.2b313ca9f26e9ce5f7dd.js.map

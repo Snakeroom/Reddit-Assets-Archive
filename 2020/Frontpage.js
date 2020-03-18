@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.9e184013079b68194422.js
-// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f56cccdb231eb54e18ea.js
+// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -496,11 +496,11 @@
 				C = c.a.div("Title", y.a),
 				N = c.a.wrapped(h.a, "OutboundLink", y.a),
 				S = c.a.div("Description", y.a),
-				I = Object(a.c)({
+				P = Object(a.c)({
 					featuredLiveThread: e => e.live.featured,
 					language: v.O
 				}),
-				P = Object(i.b)(I);
+				I = Object(i.b)(P);
 			class k extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -544,7 +544,7 @@
 					}, o.a.createElement(g.a, null, o.a.createElement(w, null), o.a.createElement(j, null, o.a.createElement(p.c, null, "live")), o.a.createElement(S, null, "·"), o.a.createElement(E, null, Object(d.b)(t, "live.viewers", e.viewerCount))), o.a.createElement(C, null, e.title, o.a.createElement(N, null)), o.a.createElement(S, null, e.description)) : null
 				}
 			}
-			t.a = P(Object(l.c)(k))
+			t.a = I(Object(l.c)(k))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -604,8 +604,8 @@
 			}
 			const N = "view--layout--FUE",
 				S = "LayoutSwitch--picker",
-				I = Object(a.a)(g.a),
-				P = {
+				P = Object(a.a)(g.a),
+				I = {
 					[p.d.Card]: _.a,
 					[p.d.Classic]: x.a,
 					[p.d.Compact]: y.a
@@ -648,7 +648,7 @@
 							layout: s,
 							onLayoutClick: n,
 							postLayout: o
-						} = this.props, i = s || p.e[o], a = e === i, d = P[e];
+						} = this.props, i = s || p.e[o], a = e === i, d = I[e];
 						return r.a.createElement(v.b, C({}, t, {
 							className: Object(c.a)(E.a.LayoutItem, {
 								[E.a.selected]: a
@@ -668,7 +668,7 @@
 						const {
 							dropdownIsOpen: t
 						} = this.props;
-						return r.a.createElement(I, C({}, e, {
+						return r.a.createElement(P, C({}, e, {
 							className: E.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
@@ -773,8 +773,8 @@
 				N = s("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
 				S = s.n(N);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function P() {
+				return (P = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -782,7 +782,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const P = new Set([h.P.CONTROVERSIAL, h.P.TOP]),
+			const I = new Set([h.P.CONTROVERSIAL, h.P.TOP]),
 				k = new Set([h.P.CONTROVERSIAL, h.P.RISING]),
 				L = "ListingSort--Overflow",
 				T = Object(l.t)({
@@ -855,8 +855,8 @@
 						sort: n,
 						sortOptions: o,
 						timeSort: a
-					} = this.props, c = !t && P.has(n), d = k.has(n), l = o.filter(e => !k.has(e)), u = o.filter(e => k.has(e) && e !== n);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(v.d, I({}, this.props, {
+					} = this.props, c = !t && I.has(n), d = k.has(n), l = o.filter(e => !k.has(e)), u = o.filter(e => k.has(e) && e !== n);
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(v.d, P({}, this.props, {
 						buttonClassName: S.a.DropdownButton,
 						className: Object(i.a)(S.a.SortDropdown, e),
 						rowClassName: S.a.DropdownRow,
@@ -876,7 +876,7 @@
 						rowSelectedClassName: S.a.DropdownRowSelected,
 						timeSort: a || h.Tb,
 						wrapperClassName: S.a.DropdownSortWrapper
-					}), u.length > 0 && r.a.createElement(v.d, I({}, this.props, {
+					}), u.length > 0 && r.a.createElement(v.d, P({}, this.props, {
 						className: Object(i.a)(S.a.SortOverflow, e),
 						dropdownClassName: S.a.Dropdown,
 						dropdownId: L,
@@ -1921,8 +1921,8 @@
 				C = s("./src/reddit/components/InFeedPostCreation/async.tsx"),
 				N = s("./src/reddit/components/JumpToContent/index.tsx"),
 				S = s("./src/reddit/components/LayoutNavigation/index.tsx"),
-				I = s("./src/reddit/components/ListingPostList/index.tsx"),
-				P = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
+				P = s("./src/reddit/components/ListingPostList/index.tsx"),
+				I = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
 				k = s("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
 				L = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx"),
 				T = s("./src/reddit/components/TabBadger/index.tsx"),
@@ -1977,16 +1977,16 @@
 				isLoggedIn: G.G,
 				isPopular: R.C,
 				isRpanDuVisible: e => Object(W.a)(e, {
-					listingName: K.O
+					listingName: K.P
 				}),
 				rpanInjectionIndex: e => Object(W.b)(e, {
-					listingName: K.O
+					listingName: K.P
 				}),
 				layout: R.L
 			}), ne = () => Object(h.a)(te, ee, se, e => Object(W.a)(e, {
-				listingName: K.O
+				listingName: K.P
 			}), e => Object(W.b)(e, {
-				listingName: K.O
+				listingName: K.P
 			}), e => e, (e, t, s, n, r, o) => {
 				let {
 					countryMeta: i,
@@ -2073,12 +2073,12 @@
 						const {
 							child: e,
 							idx: t
-						} = Object(P.a)({
+						} = Object(I.a)({
 							children: u,
 							desiredIndex: i,
 							layout: r,
 							listingKey: o,
-							listingName: K.O,
+							listingName: K.P,
 							sendEvent: a
 						});
 						u[t] = e
@@ -2103,7 +2103,7 @@
 							listingKey: this.props.listingKey,
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
-						}), p.a.createElement(I.a, {
+						}), p.a.createElement(P.a, {
 							injectChildren: u,
 							noPostsComponent: () => p.a.createElement(O.a, {
 								listingName: z.b,
@@ -2143,7 +2143,7 @@
 					const n = Object(a.gb)(e);
 					if (!n) return !1;
 					let c;
-					if (-1 === [o.O, "r/popular"].indexOf(s)) {
+					if (-1 === [o.P, "r/popular"].indexOf(s)) {
 						const t = s.replace(/^r\//, ""),
 							r = Object(i.D)(e, t),
 							o = n.subreddit[r];
@@ -2170,7 +2170,7 @@
 					if (s) return !1;
 					if (t) return !!r && r.show_discovery_unit;
 					if (!i.global.viewer_enabled) return !1;
-					return [o.O, "r/popular"].indexOf(n) > -1
+					return [o.P, "r/popular"].indexOf(n) > -1
 				}),
 				u = Object(n.a)(c.b, (e, t) => {
 					let {
@@ -2186,10 +2186,10 @@
 					})
 				}, d.m, (e, t, s, n) => {
 					if (!e) {
-						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : o.h;
-						return "number" == typeof e ? e : o.h
+						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : o.i;
+						return "number" == typeof e ? e : o.i
 					}
-					return s ? s.discovery_unit_index : o.h
+					return s ? s.discovery_unit_index : o.i
 				})
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
@@ -2214,7 +2214,7 @@
 			})), s.d(t, "m", (function() {
 				return N
 			})), s.d(t, "g", (function() {
-				return P
+				return I
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "f", (function() {
@@ -2297,7 +2297,7 @@
 						})
 					}
 					const d = new Set([...n, ...r]);
-					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== o.l).filter(e => !e.post.isHidden).filter(e => e.stream.state !== a.b.KILLED && e.stream.state !== a.b.PURGED).map(e => e.post.id)
+					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== o.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== a.b.KILLED && e.stream.state !== a.b.PURGED).map(e => e.post.id)
 				}),
 				E = Object(n.a)((e, t) => {
 					let {
@@ -2340,7 +2340,7 @@
 						n = t.filter(e => !s.has(e));
 					if (n.length) return n[0]
 				}),
-				I = Object(n.a)((e, t) => {
+				P = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -2366,13 +2366,13 @@
 					});
 					return i ? i.post.id : void 0
 				}),
-				P = Object(r.a)(Object(n.a)(I, O, (e, t) => e ? t[e] : void 0)),
+				I = Object(r.a)(Object(n.a)(P, O, (e, t) => e ? t[e] : void 0)),
 				k = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
 					return s ? Object(i.f)(s) : void 0
-				}, I, h, c.g, (e, t) => {
+				}, P, h, c.g, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
@@ -2451,4 +2451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.9e184013079b68194422.js.map
+//# sourceMappingURL=Frontpage.f56cccdb231eb54e18ea.js.map

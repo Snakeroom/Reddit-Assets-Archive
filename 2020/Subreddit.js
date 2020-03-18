@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a6636537ca89b28bba4f.js
-// Retrieved at 3/18/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4bbae1206c8c2b4b3e86.js
+// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -7007,7 +7007,7 @@
 					const n = Object(i.gb)(e);
 					if (!n) return !1;
 					let d;
-					if (-1 === [a.O, "r/popular"].indexOf(s)) {
+					if (-1 === [a.P, "r/popular"].indexOf(s)) {
 						const t = s.replace(/^r\//, ""),
 							r = Object(o.D)(e, t),
 							a = n.subreddit[r];
@@ -7034,7 +7034,7 @@
 					if (s) return !1;
 					if (t) return !!r && r.show_discovery_unit;
 					if (!o.global.viewer_enabled) return !1;
-					return [a.O, "r/popular"].indexOf(n) > -1
+					return [a.P, "r/popular"].indexOf(n) > -1
 				}),
 				m = Object(n.a)(d.b, (e, t) => {
 					let {
@@ -7050,10 +7050,10 @@
 					})
 				}, c.m, (e, t, s, n) => {
 					if (!e) {
-						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : a.h;
-						return "number" == typeof e ? e : a.h
+						const e = "home" === t ? n.home_feed_discovery_unit_index : "r/popular" === t ? n.popular_feed_discovery_unit_index : a.i;
+						return "number" == typeof e ? e : a.i
 					}
-					return s ? s.discovery_unit_index : a.h
+					return s ? s.discovery_unit_index : a.i
 				})
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
@@ -7161,7 +7161,7 @@
 						})
 					}
 					const c = new Set([...n, ...r]);
-					return Object.keys(s).filter(e => !c.has(e)).map(e => s[e]).filter(e => e.rank !== a.l).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
+					return Object.keys(s).filter(e => !c.has(e)).map(e => s[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
 				}),
 				_ = Object(n.a)((e, t) => {
 					let {
@@ -7315,4 +7315,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.a6636537ca89b28bba4f.js.map
+//# sourceMappingURL=Subreddit.4bbae1206c8c2b4b3e86.js.map

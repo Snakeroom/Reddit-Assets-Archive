@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.302aa57aaa134fcda716.js
-// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e9c4f2ddeb1a81463a01.js
+// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -296,7 +296,7 @@
 				a = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			const c = new class {
 				constructor() {
-					this.isInitialized = !1, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatRateSec = i.f, this.statsRefreshRateSec = i.i, this.recommendedViewerSubredditsRefreshRateSec = i.g, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStreamPostId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentStreamId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
+					this.isInitialized = !1, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatDelaySec = i.f, this.heartbeatRateSec = i.g, this.statsRefreshRateSec = i.j, this.recommendedViewerSubredditsRefreshRateSec = i.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStreamPostId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentStreamId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
 				}
 				unsubscribeConfig() {
 					window.clearTimeout(this.configTimeout)
@@ -335,19 +335,29 @@
 					window.clearTimeout(this.streamsTimeout), await t(Object(o.e)(e)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s), this.getStreamsTimeout(s()))
 				}
 				async startRecommendedViewerSubredditsWork(e, t) {
-					await this.initializeConfig(i.O, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(n.b)());
+					await this.initializeConfig(i.P, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(n.b)());
 					const s = Object(a.m)(t()).recommended_viewer_subreddits_refresh_rate;
 					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(n.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(i.O, e, t), this.currentStreamPostId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(a.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
+					await this.initializeConfig(i.P, e, t), this.currentStreamPostId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(a.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
 						this.currentStreamPostId && e(Object(o.d)(this.currentStreamPostId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
-					await this.initializeConfig(i.O, e, t), this.currentStreamId && (this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.heartbeatRateSec = Object(a.m)(t()).viewer_heartbeat_interval || this.heartbeatRateSec, this.clearSendHeartbeatInterval = Object(r.a)(() => {
-						this.currentStreamId && e(Object(n.d)(this.currentStreamId))
-					}, Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS)))
+					if (await this.initializeConfig(i.P, e, t), !this.currentStreamId) return;
+					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
+					const s = Object(a.m)(t());
+					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
+					const o = 1e3 * this.heartbeatDelaySec;
+					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
+					const c = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
+						d = () => {
+							this.currentStreamId && e(Object(n.d)(this.currentStreamId))
+						};
+					this.clearSendHeartbeatInterval = Object(r.a)(() => {
+						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(r.a)(d, c)
+					}, o)
 				}
 				getStreamsTimeout(e) {
 					return Math.max(1e3 * (this.currentStreamsRateSec + this.getRandomFetchStreamsJitterSec(e)), this.MIN_RATE_MS)
@@ -392,14 +402,14 @@
 					const r = n.a.stringify(s);
 					return r ? "?".concat(r) : ""
 				},
-				u = Object(i.a)(o.K),
-				h = Object(i.a)(o.w),
-				p = Object(i.a)(o.L),
-				b = Object(i.a)(o.x),
-				v = Object(i.a)(o.J),
-				g = Object(i.a)(o.I),
-				w = Object(i.a)(o.r),
-				S = Object(i.a)(o.s),
+				u = Object(i.a)(o.L),
+				h = Object(i.a)(o.x),
+				p = Object(i.a)(o.M),
+				b = Object(i.a)(o.y),
+				v = Object(i.a)(o.K),
+				g = Object(i.a)(o.J),
+				w = Object(i.a)(o.s),
+				S = Object(i.a)(o.t),
 				f = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
@@ -488,7 +498,7 @@
 				n = s.n(r),
 				i = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
-			const a = Object(i.a)(o.z),
+			const a = Object(i.a)(o.A),
 				c = e => async t => {
 					t(a(e))
 				}, d = () => async e => {
@@ -1474,11 +1484,11 @@
 				O = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
 				x = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				E = s("./src/lib/makeActionCreator/index.ts");
-			const y = Object(E.a)(x.C),
-				j = Object(E.a)(x.X),
+			const y = Object(E.a)(x.D),
+				j = Object(E.a)(x.Y),
 				I = e => async t => {
 					t(y(e))
-				}, P = Object(E.a)(x.M), _ = Object(E.a)(x.T);
+				}, P = Object(E.a)(x.N), _ = Object(E.a)(x.U);
 			var k = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				N = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				L = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
@@ -1615,7 +1625,7 @@
 				be = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				ve = s("./src/reddit/models/Vote/index.ts"),
 				ge = s("./src/reddit/selectors/user.ts");
-			Object(E.a)(x.B);
+			Object(E.a)(x.C);
 			var we = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				Se = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				fe = s("./src/reddit/components/PublicAccessNetwork/Theater/VotePanel/index.m.less"),
@@ -1635,10 +1645,10 @@
 						if (!t) return 0;
 						const s = e === ve.a.upvoted ? t.upvotes : t.downvotes;
 						return null === t.post.voteState && this.state.displayedVoteState === e || this.state.displayedVoteState === e && null !== t.post.voteState && Object(ve.e)(t.post.voteState) !== e ? s + 1 : s
-					}, this.onVoteUp = he()(() => this.vote(ve.a.upvoted), x.Y, {
+					}, this.onVoteUp = he()(() => this.vote(ve.a.upvoted), x.Z, {
 						leading: !0,
 						trailing: !1
-					}), this.onVoteDown = he()(() => this.vote(ve.a.downvoted), x.Y, {
+					}), this.onVoteDown = he()(() => this.vote(ve.a.downvoted), x.Z, {
 						leading: !0,
 						trailing: !1
 					}), this.state = {
@@ -1808,7 +1818,7 @@
 						displayText: Object(Pe.c)("View rules"),
 						iconWrapperClassName: We.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-rules"),
-						onClick: () => Object(je.d)(x.P, je.c.BLANK)
+						onClick: () => Object(je.d)(x.Q, je.c.BLANK)
 					}, o.a.createElement(Me.a, {
 						className: We.a.overflowItemIcon
 					})), o.a.createElement(te.b, {
@@ -1816,7 +1826,7 @@
 						displayText: Object(Pe.c)("Visit RPAN community"),
 						iconWrapperClassName: We.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-community"),
-						onClick: () => Object(je.d)(x.N, je.c.BLANK)
+						onClick: () => Object(je.d)(x.O, je.c.BLANK)
 					}, o.a.createElement(Le.a, {
 						className: We.a.overflowItemIcon
 					})), o.a.createElement(te.b, {
@@ -1885,7 +1895,7 @@
 					super(e), this.onMouseEnter = () => {
 						this.hoverTimeout = window.setTimeout(() => this.setState({
 							isHovered: !0
-						}), x.n)
+						}), x.o)
 					}, this.onMouseLeave = () => {
 						window.clearTimeout(this.hoverTimeout), this.setState({
 							isHovered: !1,
@@ -2085,8 +2095,8 @@
 				}
 			}))(Qe);
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			Object(E.a)(x.q);
-			const $e = Object(E.a)(x.y),
+			Object(E.a)(x.r);
+			const $e = Object(E.a)(x.z),
 				et = (e, t) => async (s, r) => {
 					const n = r(),
 						i = Date.now(),
@@ -2482,7 +2492,7 @@
 							updateVideoTimestamp: r
 						} = this.props;
 						!s && t && this.isCurrentStreamWatchable() && r(t.post.id, e)
-					}, x.o), this.onVideoPlayerPositionUpdate = e => {
+					}, x.p), this.onVideoPlayerPositionUpdate = e => {
 						this.state.videoCurrentTime !== e && (this.setState({
 							videoCurrentTime: e
 						}), this.hlsVideoApi && this.hlsVideoApi.setCurrentTime(e))
@@ -2491,7 +2501,7 @@
 							nextStream: e
 						} = this.props;
 						e && this.goToStream(e)
-					}, x.p, {
+					}, x.q, {
 						leading: !0,
 						trailing: !1
 					}), this.onPreviousStream = S()(() => {
@@ -2499,7 +2509,7 @@
 							previousStream: e
 						} = this.props;
 						e && this.goToStream(e)
-					}, x.p, {
+					}, x.q, {
 						leading: !0,
 						trailing: !1
 					}), this.onNextStreamKeyHandler = e => {
@@ -2788,7 +2798,7 @@
 							nextTopStream: s
 						} = this.props;
 						s && !e && !Object(q.a)(t) && this.state.isSwitchingOnStreamEndedScheduled ? this.goToStream(s) : this.cancelSwitchingOnStreamEnded()
-					}, x.j), this.setState(Object.assign({}, this.state, {
+					}, x.k), this.setState(Object.assign({}, this.state, {
 						isSwitchingOnStreamEndedScheduled: !0
 					}))
 				}
@@ -2834,7 +2844,7 @@
 				showOverlayAfterStreamSwitching() {
 					window.clearTimeout(this.overlayVisibilityTimeout), this.overlayVisibilityTimeout = window.setTimeout(() => this.setState({
 						isOverlayVisible: !1
-					}), x.m), this.setState({
+					}), x.n), this.setState({
 						isOverlayVisible: !0
 					})
 				}
@@ -3072,7 +3082,7 @@
 						})
 					}
 					const d = new Set([...r, ...n]);
-					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== i.l).filter(e => !e.post.isHidden).filter(e => e.stream.state !== a.b.KILLED && e.stream.state !== a.b.PURGED).map(e => e.post.id)
+					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== i.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== a.b.KILLED && e.stream.state !== a.b.PURGED).map(e => e.post.id)
 				}),
 				y = Object(r.a)((e, t) => {
 					let {
@@ -3226,4 +3236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.302aa57aaa134fcda716.js.map
+//# sourceMappingURL=PublicAccessNetwork.e9c4f2ddeb1a81463a01.js.map

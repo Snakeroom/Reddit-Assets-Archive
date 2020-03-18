@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.23e15f52d743186fd320.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.48095fbb5f7fc7539092.js
+// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -258,7 +258,7 @@
 				a = s.n(n),
 				r = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
-			const i = Object(r.a)(o.z),
+			const i = Object(r.a)(o.A),
 				c = e => async t => {
 					t(i(e))
 				}, d = () => async e => {
@@ -447,7 +447,7 @@
 				D = s.n(M);
 			const {
 				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = {}, U = 1e3, V = "chat_submission_from_rte", W = m.a.form("Form", D.a), H = m.a.wrapped(C.a, "ChatButton", D.a), K = m.a.div("CloseIconWrap", D.a), q = m.a.div("Reply", D.a), G = m.a.div("ReplyAuthor", D.a), J = m.a.div("ReplyComment", D.a), Z = m.a.wrapped(f.a, "RichTextEditor", D.a), z = m.a.wrapped(g.a, "SmallChatUserIcon", D.a), X = e => Object.values(e).reduce((e, t) => e + t, 0), Y = Object(l.a)(Object(l.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = {}, U = 1e3, V = "chat_submission_from_rte", W = m.a.form("Form", D.a), H = m.a.wrapped(C.a, "ChatButton", D.a), K = m.a.div("CloseIconWrap", D.a), q = m.a.div("Reply", D.a), G = m.a.div("ReplyAuthor", D.a), J = m.a.div("ReplyComment", D.a), Z = m.a.wrapped(f.a, "RichTextEditor", D.a), X = m.a.wrapped(g.a, "SmallChatUserIcon", D.a), z = e => Object.values(e).reduce((e, t) => e + t, 0), Y = Object(l.a)(Object(l.c)({
 				draft: T.i,
 				errorMsgs: T.I,
 				hasError: T.w,
@@ -456,7 +456,7 @@
 				pending: (e, t) => e.comments.submit.pending[t.draftKey],
 				post: S.M
 			}), e => Object.assign({}, e, {
-				awardCount: e.post.awardCountsById && X(e.post.awardCountsById)
+				awardCount: e.post.awardCountsById && z(e.post.awardCountsById)
 			})), Q = Object(d.b)(Y, (e, t) => {
 				let {
 					isEditing: s,
@@ -660,7 +660,7 @@
 					isEditing: t,
 					isLivestreaming: s
 				} = e;
-				return s ? null : t ? c.a.createElement(z, {
+				return s ? null : t ? c.a.createElement(X, {
 					height: 20,
 					width: 20
 				}) : c.a.createElement(g.a, {
@@ -1296,7 +1296,7 @@
 						})
 					}
 					const d = new Set([...n, ...a]);
-					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== r.l).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
+					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== r.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
 				}),
 				I = Object(n.a)((e, t) => {
 					let {
@@ -1450,4 +1450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.23e15f52d743186fd320.js.map
+//# sourceMappingURL=ChatMessageInput.48095fbb5f7fc7539092.js.map
