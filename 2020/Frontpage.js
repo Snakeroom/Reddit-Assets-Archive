@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0edba48fdf1843574495.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f02bbe42c4850aec3bd2.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -768,12 +768,13 @@
 				O = s("./src/reddit/helpers/path/index.ts"),
 				w = s("./src/reddit/helpers/trackers/navigation.ts"),
 				j = s("./src/reddit/icons/fonts/Menu/index.tsx"),
-				E = s("./src/reddit/selectors/user.ts"),
-				C = s("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
-				N = s.n(C);
+				E = s("./src/reddit/selectors/experiments/bestSortPopular.ts"),
+				C = s("./src/reddit/selectors/user.ts"),
+				N = s("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
+				S = s.n(N);
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -781,22 +782,24 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const I = new Set([h.P.CONTROVERSIAL, h.P.TOP]),
-				P = new Set([h.P.CONTROVERSIAL, h.P.RISING]),
-				k = "ListingSort--Overflow",
-				L = Object(l.t)({
+			const P = new Set([h.P.CONTROVERSIAL, h.P.TOP]),
+				k = new Set([h.P.CONTROVERSIAL, h.P.RISING]),
+				L = "ListingSort--Overflow",
+				T = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
 					pageLayer: e => e
 				}),
-				T = Object(p.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.i, (e, t, s) => {
-					if (e) return e;
-					const n = [h.P.HOT, h.P.NEW, h.P.TOP, h.P.RISING];
-					return t && s && n.unshift(h.P.BEST), n
-				}),
-				D = Object(p.c)({
-					isPopularPage: l.C,
-					sortOptions: T
+				D = Object(p.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, C.i, l.C, (e, t, s, n, r) => {
+					if (e) return {
+						isPopularPage: r,
+						sortOptions: e
+					};
+					const o = [h.P.HOT, h.P.NEW, h.P.TOP, h.P.RISING];
+					return (t && (n || s) || r && s) && o.unshift(h.P.BEST), {
+						isPopularPage: r,
+						sortOptions: o
+					}
 				});
 			class B extends r.a.Component {
 				constructor() {
@@ -820,27 +823,27 @@
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, r.a.createElement(_.a, {
-							className: Object(i.a)(N.a.SortLink, e === o && N.a.selected),
+							className: Object(i.a)(S.a.SortLink, e === o && S.a.selected),
 							onClick: () => this.changeSort(e),
 							to: this.getSortUrl(e),
 							key: e
 						}, r.a.createElement(v.a, {
-							className: N.a.SortIcon,
+							className: S.a.SortIcon,
 							sort: e
 						}), r.a.createElement("div", {
-							className: N.a.SortLabel
+							className: S.a.SortLabel
 						}, Object(y.a)(e))), a && r.a.createElement(g.a, {
 							baseUrl: x.c[x.b.Popular],
-							buttonClassName: N.a.DropdownButton,
-							className: N.a.CountrySort,
+							buttonClassName: S.a.DropdownButton,
+							className: S.a.CountrySort,
 							disabled: t,
-							dropdownClassName: N.a.Dropdown,
-							rowClassName: N.a.DropdownRow,
-							rowSelectedClassName: N.a.DropdownRowSelected,
-							wrapperClassName: N.a.DropdownSortWrapper,
+							dropdownClassName: S.a.Dropdown,
+							rowClassName: S.a.DropdownRow,
+							rowSelectedClassName: S.a.DropdownRowSelected,
+							wrapperClassName: S.a.DropdownSortWrapper,
 							showStateAbbreviations: !0,
 							sort: s,
-							stateSortClassName: N.a.StateSort
+							stateSortClassName: S.a.StateSort
 						}))
 					}
 				}
@@ -852,43 +855,43 @@
 						sort: n,
 						sortOptions: o,
 						timeSort: a
-					} = this.props, c = !t && I.has(n), d = P.has(n), l = o.filter(e => !P.has(e)), u = o.filter(e => P.has(e) && e !== n);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(v.d, S({}, this.props, {
-						buttonClassName: N.a.DropdownButton,
-						className: Object(i.a)(N.a.SortDropdown, e),
-						rowClassName: N.a.DropdownRow,
-						rowIconClassName: N.a.DropdownRowIcon,
-						rowSelectedClassName: N.a.DropdownRowSelected,
+					} = this.props, c = !t && P.has(n), d = k.has(n), l = o.filter(e => !k.has(e)), u = o.filter(e => k.has(e) && e !== n);
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(v.d, I({}, this.props, {
+						buttonClassName: S.a.DropdownButton,
+						className: Object(i.a)(S.a.SortDropdown, e),
+						rowClassName: S.a.DropdownRow,
+						rowIconClassName: S.a.DropdownRowIcon,
+						rowSelectedClassName: S.a.DropdownRowSelected,
 						showTitle: !1
 					})), r.a.createElement("div", {
-						className: Object(i.a)(N.a.SortButtons, e)
+						className: Object(i.a)(S.a.SortButtons, e)
 					}, l.map(this.renderSort)), d && this.renderSort(n), c && r.a.createElement(f.a, {
 						baseUrl: this.getSortUrl(n),
-						buttonClassName: N.a.DropdownButton,
-						className: N.a.TimeSort,
-						dropdownClassName: N.a.Dropdown,
+						buttonClassName: S.a.DropdownButton,
+						className: S.a.TimeSort,
+						dropdownClassName: S.a.Dropdown,
 						listingSort: n,
 						onChange: s,
-						rowClassName: N.a.DropdownRow,
-						rowSelectedClassName: N.a.DropdownRowSelected,
-						timeSort: a || h.Sb,
-						wrapperClassName: N.a.DropdownSortWrapper
-					}), u.length > 0 && r.a.createElement(v.d, S({}, this.props, {
-						className: Object(i.a)(N.a.SortOverflow, e),
-						dropdownClassName: N.a.Dropdown,
-						dropdownId: k,
-						rowClassName: N.a.DropdownRow,
-						rowIconClassName: N.a.DropdownRowIcon,
-						rowSelectedClassName: N.a.DropdownRowSelected,
+						rowClassName: S.a.DropdownRow,
+						rowSelectedClassName: S.a.DropdownRowSelected,
+						timeSort: a || h.Tb,
+						wrapperClassName: S.a.DropdownSortWrapper
+					}), u.length > 0 && r.a.createElement(v.d, I({}, this.props, {
+						className: Object(i.a)(S.a.SortOverflow, e),
+						dropdownClassName: S.a.Dropdown,
+						dropdownId: L,
+						rowClassName: S.a.DropdownRow,
+						rowIconClassName: S.a.DropdownRowIcon,
+						rowSelectedClassName: S.a.DropdownRowSelected,
 						showTitle: !1,
 						sortOptions: u
 					}), r.a.createElement("button", {
-						className: N.a.SortOverflowButton,
-						id: k
+						className: S.a.SortOverflowButton,
+						id: L
 					}, r.a.createElement(j.a, null))))
 				}
 			}
-			var A = L(Object(o.b)(D)(Object(d.c)(B))),
+			var A = T(Object(o.b)(D)(Object(d.c)(B))),
 				R = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				U = s.n(R);
 			const F = Object(l.t)({
@@ -1992,7 +1995,7 @@
 					sort: d
 				} = t;
 				const l = B.t in c && c[B.t].toUpperCase(),
-					u = "string" == typeof l && l in J.Rb ? J.Rb[l] : J.Sb,
+					u = "string" == typeof l && l in J.Sb ? J.Sb[l] : J.Tb,
 					m = Object(x.a)(z.a, d, c),
 					p = i || J.x.Everywhere,
 					b = a || p,
@@ -2447,4 +2450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0edba48fdf1843574495.js.map
+//# sourceMappingURL=Frontpage.f02bbe42c4850aec3bd2.js.map

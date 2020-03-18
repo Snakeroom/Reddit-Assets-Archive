@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.56a8fe9526ee85926e18.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.4bce0e15f9f4587f43c4.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, n) {
@@ -329,8 +329,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => a.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: s.bb
-				}) === s.ib.Enabled
+					experimentName: s.db
+				}) === s.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -361,9 +361,9 @@
 			})), n.d(t, "m", (function() {
 				return P
 			})), n.d(t, "s", (function() {
-				return O
-			})), n.d(t, "a", (function() {
 				return k
+			})), n.d(t, "a", (function() {
+				return O
 			})), n.d(t, "f", (function() {
 				return C
 			})), n.d(t, "r", (function() {
@@ -388,7 +388,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = O(e, {
+					const s = k(e, {
 						subredditId: n
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.harberger ? s.extra.contracts.harberger : {
@@ -443,22 +443,22 @@
 				},
 				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				P = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				O = (e, t) => {
+				k = (e, t) => {
 					const n = P(e, t);
 					return n && n.walletProvider
 				},
-				k = (e, t) => {
-					const n = O(e, t),
+				O = (e, t) => {
+					const n = k(e, t),
 						s = P(e, t);
 					return n && n.provider || s && s.provider
 				},
 				C = (e, t) => {
-					const n = k(e, t);
+					const n = O(e, t);
 					return n === r.a.Ethereum || n === r.a.Rinkeby
 				},
 				_ = (e, t) => {
-					const n = O(e, t),
-						s = k(e, t);
+					const n = k(e, t),
+						s = O(e, t);
 					if (n && !n.inTransition && s === r.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
 						decimals: n.extra && n.extra.decimals || 7,
@@ -477,7 +477,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = O(e, {
+					const s = k(e, {
 						subredditId: n
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.subscriptions ? s.extra.contracts.subscriptions : {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.56a8fe9526ee85926e18.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.4bce0e15f9f4587f43c4.js.map

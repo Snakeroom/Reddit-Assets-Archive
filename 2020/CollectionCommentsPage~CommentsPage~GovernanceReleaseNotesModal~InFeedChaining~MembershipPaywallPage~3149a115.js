@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.403c0622726ea58f59a3.js
-// Retrieved at 3/18/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.802797f3dcd51b05fd50.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -418,15 +418,15 @@
 				return s
 			};
 			const Z = r.a.wrapped(I.a, "TooltipControl", G.a),
-				J = r.a.div("NormalControl", G.a),
-				Q = r.a.wrapped(Z, "ControlSnoo", G.a),
+				Q = r.a.div("NormalControl", G.a),
+				J = r.a.wrapped(Z, "ControlSnoo", G.a),
 				q = r.a.wrapped(Z, "ControlPlay", G.a),
-				X = r.a.wrapped(J, "Time", G.a),
+				X = r.a.wrapped(Q, "Time", G.a),
 				$ = r.a.wrapped(X, "LeftTime", G.a),
 				ee = r.a.wrapped(X, "RightTime", G.a),
 				te = r.a.div("LiveLabel", G.a),
-				se = r.a.wrapped(J, "ControlScrubber", G.a),
-				ie = r.a.wrapped(J, "ControlVolume", G.a),
+				se = r.a.wrapped(Q, "ControlScrubber", G.a),
+				ie = r.a.wrapped(Q, "ControlVolume", G.a),
 				ae = r.a.wrapped(Z, "ControlExpand", G.a),
 				ne = r.a.wrapped(Z, "ControlCollapse", G.a),
 				oe = e => {
@@ -492,7 +492,7 @@
 					} = this.state, {
 						totalTime: b
 					} = o ? this.state : this.props, C = this.props.isPaused ? f : y;
-					return n.a.createElement(n.a.Fragment, null, !t && n.a.createElement(v, null), s && a && n.a.createElement(Q, {
+					return n.a.createElement(n.a.Fragment, null, !t && n.a.createElement(v, null), s && a && n.a.createElement(J, {
 						tooltip: g
 					}, n.a.createElement("div", {
 						onClick: this.props.clickSnoo
@@ -821,31 +821,31 @@
 			const k = e => {
 					const t = Object(O.c)(e, {
 						experimentEligibilitySelector: O.a,
-						experimentName: V.Y
+						experimentName: V.ab
 					});
-					return Object(V.Ob)(t) ? void 0 : t
+					return Object(V.Qb)(t) ? void 0 : t
 				},
-				N = e => e === V.ab.On,
+				N = e => e === V.cb.On,
 				R = e => {
 					const t = Object(O.c)(e, {
 						experimentEligibilitySelector: O.a,
-						experimentName: V.Z
+						experimentName: V.bb
 					});
-					return Object(V.Ob)(t) ? void 0 : t
+					return Object(V.Qb)(t) ? void 0 : t
 				},
-				j = e => e === V.ab.On;
+				j = e => e === V.cb.On;
 			var H = s("./src/reddit/selectors/experiments/utils.ts");
 			const A = Object(u.a)(e => Object(O.c)(e, {
-					experimentName: V.Lb,
+					experimentName: V.Nb,
 					experimentEligibilitySelector: O.a
 				}), H.a),
 				I = Object(u.a)(A, (function(e) {
 					switch (e) {
-						case V.Mb.BufferTwoSeconds:
+						case V.Ob.BufferTwoSeconds:
 							return 2;
-						case V.Mb.BufferFiveSeconds:
+						case V.Ob.BufferFiveSeconds:
 							return 5;
-						case V.Mb.BufferTenSeconds:
+						case V.Ob.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -859,8 +859,8 @@
 				Y = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
 				K = s.n(Y),
 				Z = s("./src/lib/lessComponent.tsx"),
-				J = Z.a.img("Component", K.a),
-				Q = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
+				Q = Z.a.img("Component", K.a),
+				J = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
 				q = s("./src/app/strings/index.ts"),
 				X = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./node_modules/fbt/lib/FbtPublic.js")),
 				$ = e => d.a.createElement("svg", {
@@ -1216,9 +1216,9 @@
 					d: "M29 26c-.6 0-1-.4-1-1 0-.5.4-1 1-1s1 .4 1 1-.5 1-1 1zm-6.9-6c0-.5.4-1 1-1H27c.6 0 1 .4 1 1v2.1h-5.9V20zM21 26c-.6 0-1-.4-1-1 0-.5.4-1 1-1s1 .4 1 1-.5 1-1 1zm11.7-3.6c-.2-.2-.5-.3-.7-.3h-2V20c0-1.6-1.3-3-3-3h-3.9c-1.7 0-3 1.3-3 3v2.1H18c-.3 0-.6.1-.7.3-.2.2-.3.5-.2.8l1 9c.1.5.5.9 1 .9h12c.5 0 .9-.4 1-.9l1-9c-.1-.4-.2-.6-.4-.8z"
 				}))),
 				Ze = s("./src/reddit/icons/svgs/VideoSignUp/index.m.less"),
-				Je = s.n(Ze);
-			var Qe = e => d.a.createElement("svg", {
-					className: Object(f.a)(Je.a.icon, e.className),
+				Qe = s.n(Ze);
+			var Je = e => d.a.createElement("svg", {
+					className: Object(f.a)(Qe.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1286,7 +1286,7 @@
 				"Play Now": d.a.createElement(De, null),
 				"See Menu": d.a.createElement(We, null),
 				"Shop Now": d.a.createElement(Ke, null),
-				"Sign Up": d.a.createElement(Qe, null),
+				"Sign Up": d.a.createElement(Je, null),
 				"View More": d.a.createElement($e, null),
 				"Watch Now": d.a.createElement(st, null)
 			};
@@ -1768,8 +1768,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("cc87730-production", " ").concat(t);
-									return i && (s += " [".concat(V.Lb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("20e9aa4-production", " ").concat(t);
+									return i && (s += " [".concat(V.Nb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1960,7 +1960,7 @@
 						onMouseLeave: this.handleMouseLeave,
 						onMouseMove: this.handleMouseMove,
 						onMouseUp: this.handleMouseUp
-					}, this.props.blurImageSrc && d.a.createElement(J, {
+					}, this.props.blurImageSrc && d.a.createElement(Q, {
 						src: this.props.blurImageSrc
 					}), d.a.createElement("video", {
 						poster: this.props.posterUrl,
@@ -1982,7 +1982,7 @@
 						callToAction: this.props.callToActionText
 					}) : d.a.createElement(Et, null), this.state.videoWaiting ? v && d.a.createElement(C.a, null) : this.state.videoPaused && !x && d.a.createElement(T.a, {
 						onClick: s ? void 0 : this.playPauseVideo
-					}), i && d.a.createElement(Q.a, {
+					}), i && d.a.createElement(J.a, {
 						clickSnoo: this.clickSnoo,
 						controlBarRef: this.setControlBarRef,
 						currentTime: u ? u.currentTime : 0,
@@ -2262,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.403c0622726ea58f59a3.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.802797f3dcd51b05fd50.js.map

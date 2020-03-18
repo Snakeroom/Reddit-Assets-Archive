@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.56608cc118ca5bf031d8.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.d3778e96c636a22ebd01.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceOptOutModal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -514,8 +514,8 @@
 				d = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				i = e => c.has((Object(o.e)(e) || "").toLowerCase()) || d.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: r.bb
-				}) === r.ib.Enabled
+					experimentName: r.db
+				}) === r.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -676,4 +676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceOptOutModal.56608cc118ca5bf031d8.js.map
+//# sourceMappingURL=GovernanceOptOutModal.d3778e96c636a22ebd01.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.3f41cab347307ee7f94c.js
-// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.ec3b986592af8083f96f.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -385,8 +385,8 @@
 			const C = c.e[1] + 24,
 				w = g.f + 8 + 152 + 32 + 16,
 				j = w + C + 8,
-				O = y.a.div("Container", P.a),
-				S = y.a.wrapped(e => {
+				S = y.a.div("Container", P.a),
+				O = y.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = v(e, ["className"]);
@@ -451,12 +451,12 @@
 							hideFooter: n
 						}
 					} = this, o = this.state.isAdSticky && !(!e && !t);
-					return a.a.createElement(O, {
+					return a.a.createElement(S, {
 						className: s,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(k, {
 						isSticky: o
-					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(S, null))
+					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(O, null))
 				}
 			}
 			const E = Object(f.t)();
@@ -511,12 +511,12 @@
 					const t = C(e);
 					return Object(x.f)(t)
 				},
-				O = e => {
+				S = e => {
 					const t = w(e);
 					return Object(x.f)(t)
 				};
-			var S = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				k = s.n(S);
+			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				k = s.n(O);
 			const _ = Object(m.t)(),
 				E = Object(r.b)(() => Object(i.c)({
 					forceRedditStyle: (e, t) => {
@@ -558,7 +558,7 @@
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = w(this.props), e.color = e.fill = O(this.props), e
+					return e.backgroundColor = w(this.props), e.color = e.fill = S(this.props), e
 				}
 				render() {
 					const {
@@ -1126,7 +1126,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Ob)(t)
+				return !!t && !Object(n.Qb)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -1143,4 +1143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.3f41cab347307ee7f94c.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.ec3b986592af8083f96f.js.map

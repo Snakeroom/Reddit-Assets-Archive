@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.053ed7ca07b0eebe69bc.js
-// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.4119af84913c9e99b9cb.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -198,16 +198,16 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), R = (t, e) => async (o, c, s) => {
+				}, F = Object(i.a)(l.a), B = Object(i.a)(l.t), R = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const l = c();
 					if ((await O(i(), t, e)).ok) {
-						o(B({
+						o(F({
 							collectionId: t,
 							postId: e
-						})), o(F({
+						})), o(B({
 							collectionId: t,
 							postId: e
 						}));
@@ -699,12 +699,12 @@
 				v = t => {
 					return {
 						postScheduled: !!t,
-						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Eb : void 0
+						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Fb : void 0
 					}
 				},
 				k = t => {
-					const e = Object(i.f)(t.startDate).getTime() / c.Eb,
-						o = Object(i.f)(t.endDate).getTime() / c.Eb;
+					const e = Object(i.f)(t.startDate).getTime() / c.Fb,
+						o = Object(i.f)(t.endDate).getTime() / c.Fb;
 					return {
 						eventStartTimestamp: e,
 						eventEndTimestamp: o,
@@ -730,4 +730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.053ed7ca07b0eebe69bc.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.4119af84913c9e99b9cb.js.map

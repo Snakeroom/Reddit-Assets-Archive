@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.694e3cfd4093fd4d765d.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.9faa277461b46296f910.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -475,7 +475,7 @@
 					} = this.props;
 					return s.a.createElement("div", {
 						className: M.a.premiumPurchaseSelectPaymentFooter
-					}, a === d.wb && s.a.createElement(V, {
+					}, a === d.xb && s.a.createElement(V, {
 						buttonId: t,
 						className: M.a.premiumPurchaseButton,
 						customField: e,
@@ -483,7 +483,7 @@
 						disabled: !e,
 						onSubmit: this.onPaypalSubmit,
 						title: Object(x.c)("Continue to paypal")
-					}), a === d.vb && s.a.createElement(F.f, {
+					}), a === d.wb && s.a.createElement(F.f, {
 						className: M.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -526,7 +526,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === d.vb && s.a.createElement(T.a, {
+			}), e.selectedPayment === d.wb && s.a.createElement(T.a, {
 				className: M.a.creditCard
 			}), s.a.createElement("div", {
 				className: M.a.checkoutFooter
@@ -534,15 +534,15 @@
 				className: M.a.premiumPurchaseTotal
 			}, Object(v.a)(e.language, "gold.purchasePremiumModal.totalMonthlyAmount", {
 				amount: e.total / 100
-			})), e.selectedPayment === d.vb && s.a.createElement("a", {
+			})), e.selectedPayment === d.wb && s.a.createElement("a", {
 				href: "https://stripe.com",
 				target: "_blank"
 			}, s.a.createElement("img", {
 				className: M.a.poweredByStripeIcon,
 				src: "".concat(c.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
-			}))), e.selectedPayment === d.wb && e.paypalErrorMessage && s.a.createElement("div", {
+			}))), e.selectedPayment === d.xb && e.paypalErrorMessage && s.a.createElement("div", {
 				className: M.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === d.vb && e.stripeErrorMessage && s.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === d.wb && e.stripeErrorMessage && s.a.createElement("div", {
 				className: M.a.errorMessage
 			}, e.stripeErrorMessage), s.a.createElement("div", {
 				className: M.a.membershipDescription
@@ -651,7 +651,7 @@
 						stripeErrorMessage: u,
 						stripeTokenPending: p,
 						paypalErrorMessage: h,
-						total: d.nb,
+						total: d.ob,
 						userName: y
 					}), "paymentCompleted" === e && s.a.createElement(R, {
 						language: a,
@@ -759,7 +759,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: m === d.Premium ? n.nb : C ? C.pennies : void 0
+							amountInSmallestDenom: m === d.Premium ? n.ob : C ? C.pennies : void 0
 						}
 					})
 				},
@@ -906,4 +906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.694e3cfd4093fd4d765d.js.map
+//# sourceMappingURL=PremiumPurchaseModal.9faa277461b46296f910.js.map

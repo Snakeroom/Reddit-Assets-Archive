@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.da7a3a969abd01122dc8.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.06943a34749fdf24a0b1.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -567,7 +567,7 @@
 				}, i.a.createElement("path", {
 					d: "M45.31.614c1.411.984 3.72.984 5.13 0 1.412-.984 3.527-.761 4.703.494 1.175 1.256 3.434 1.736 5.018 1.067 1.584-.67 3.608-.012 4.495 1.461.89 1.472 2.998 2.412 4.687 2.087 1.69-.326 3.532.738 4.096 2.363.562 1.627 2.43 2.982 4.15 3.017 1.72.032 3.3 1.455 3.513 3.162.213 1.707 1.758 3.423 3.432 3.813 1.676.39 2.926 2.11 2.78 3.824-.147 1.715 1.007 3.714 2.565 4.444 1.558.729 2.423 2.672 1.923 4.319-.5 1.646.214 3.841 1.585 4.879 1.372 1.037 1.815 3.118.983 4.625-.83 1.506-.59 3.802.536 5.101 1.126 1.3 1.126 3.428 0 4.729-1.126 1.3-1.367 3.596-.536 5.102.832 1.506.39 3.586-.983 4.624-1.371 1.037-2.086 3.233-1.585 4.878.5 1.646-.365 3.591-1.923 4.32-1.558.73-2.712 2.729-2.565 4.443.146 1.714-1.104 3.435-2.78 3.825-1.674.39-3.22 2.106-3.432 3.812-.212 1.707-1.794 3.13-3.513 3.164-1.72.032-3.588 1.39-4.15 3.015-.564 1.626-2.406 2.69-4.096 2.365-1.689-.326-3.797.614-4.687 2.086-.887 1.473-2.911 2.13-4.495 1.461-1.584-.67-3.843-.19-5.018 1.066-1.176 1.257-3.291 1.48-4.703.495-1.41-.984-3.719-.984-5.13 0-1.41.985-3.526.762-4.702-.495-1.175-1.256-3.434-1.736-5.018-1.066-1.584.669-3.608.012-4.496-1.461-.889-1.472-2.997-2.412-4.687-2.086-1.689.325-3.531-.739-4.095-2.365-.562-1.625-2.43-2.983-4.15-3.015-1.72-.033-3.3-1.457-3.513-3.164-.213-1.706-1.758-3.422-3.432-3.812-1.676-.39-2.926-2.111-2.78-3.825.147-1.714-1.007-3.713-2.565-4.443-1.558-.729-2.423-2.674-1.923-4.32.5-1.645-.213-3.84-1.585-4.878-1.372-1.038-1.815-3.118-.983-4.624.83-1.506.59-3.802-.537-5.102-1.125-1.301-1.125-3.43 0-4.729 1.127-1.3 1.368-3.595.537-5.1-.832-1.508-.39-3.589.983-4.626 1.372-1.038 2.086-3.233 1.585-4.88-.5-1.646.365-3.59 1.923-4.318 1.558-.73 2.712-2.73 2.566-4.444-.147-1.714 1.103-3.434 2.779-3.824 1.674-.39 3.22-2.106 3.432-3.813.212-1.707 1.794-3.13 3.513-3.162 1.72-.035 3.588-1.39 4.15-3.017.564-1.625 2.406-2.69 4.095-2.363 1.69.325 3.798-.615 4.687-2.087.888-1.473 2.912-2.131 4.496-1.46 1.584.668 3.843.188 5.018-1.068C41.784-.147 43.9-.37 45.31.614"
 				}));
-			var V = e => {
+			var B = e => {
 					const {
 						className: a,
 						coinPackage: t,
@@ -625,9 +625,9 @@
 						onClick: n
 					}, p))))
 				},
-				q = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
-				B = t("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				z = t.n(B),
+				V = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
+				q = t("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
+				z = t.n(q),
 				Q = function(e, a) {
 					var t = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && a.indexOf(s) < 0 && (t[s] = e[s]);
@@ -643,7 +643,7 @@
 						isLargeView: t
 					} = e, s = Q(e, ["className", "isLargeView"]);
 					const n = t ? z.a.large : "",
-						r = Object(q.b)(s);
+						r = Object(V.b)(s);
 					return i.a.createElement("div", {
 						className: Object(S.a)(r, z.a.packagePlaceholder, n, a)
 					})
@@ -755,7 +755,7 @@
 						requestPurchaseCatalog: t
 					} = this.props;
 					e.length || a || t(), h.e() || h.f(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const s = d.Ab.COINS;
+					const s = d.Bb.COINS;
 					b.c.has(s) && this.props.sendEvent(Object(g.a)(k.TimerType.InApp, b.c.end(s))), Object(u.a)()
 				}
 				render() {
@@ -858,7 +858,7 @@
 						isLargeView: 0 === e,
 						isLoading: !0,
 						key: e
-					})) : e.map(e => i.a.createElement(V, {
+					})) : e.map(e => i.a.createElement(B, {
 						className: w.a.purchasePackage,
 						coinPackage: e,
 						isLargeView: e.featured,
@@ -900,4 +900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.da7a3a969abd01122dc8.js.map
+//# sourceMappingURL=Coins.06943a34749fdf24a0b1.js.map

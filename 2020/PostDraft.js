@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.88b03efd4eb7893d57cf.js
-// Retrieved at 3/17/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.71e89112a184f29cdb0b.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -710,7 +710,7 @@
 					className: t,
 					language: n,
 					submissionType: s
-				} = e, o = s === d.Ib.CROSSPOST;
+				} = e, o = s === d.Jb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(y, null, r.a.createElement(b, null), o ? h(n) : p(n)), r.a.createElement(g, null, (o ? v : f).map((e, t) => r.a.createElement(x, {
@@ -2038,14 +2038,14 @@
 				F = n("./src/reddit/components/PostingSidebar/index.tsx"),
 				z = n("./src/reddit/layout/page/Listing/index.tsx"),
 				H = n("./src/reddit/pages/ErrorPages/index.tsx"),
-				Z = n("./src/reddit/selectors/postDraft.ts");
-			const J = Object(c.t)(),
+				J = n("./src/reddit/selectors/postDraft.ts");
+			const Z = Object(c.t)(),
 				q = Object(i.c)({
 					draft: (e, t) => {
 						let {
 							match: n
 						} = t;
-						return Object(Z.d)(e, {
+						return Object(J.d)(e, {
 							draftId: n.params.draftId
 						})
 					},
@@ -2073,8 +2073,8 @@
 					})
 				}
 			}
-			t.default = J(X(V))
+			t.default = Z(X(V))
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.88b03efd4eb7893d57cf.js.map
+//# sourceMappingURL=PostDraft.71e89112a184f29cdb0b.js.map

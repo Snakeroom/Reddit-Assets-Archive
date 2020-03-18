@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.b648c4aeecde78192c1a.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.a8d6df6d15743adeca31.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -972,8 +972,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				l = e => c.has((Object(r.e)(e) || "").toLowerCase()) || i.has((Object(r.e)(e) || "").toLowerCase()) && Object(o.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: n.bb
-				}) === n.ib.Enabled
+					experimentName: n.db
+				}) === n.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.b648c4aeecde78192c1a.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.a8d6df6d15743adeca31.js.map

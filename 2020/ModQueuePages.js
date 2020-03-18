@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6f361b3525b643cea597.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ece4026fe852396c8fbc.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages", "removalReasonActions"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -131,9 +131,9 @@
 			})), s.d(t, "d", (function() {
 				return F
 			})), s.d(t, "f", (function() {
-				return q
+				return X
 			})), s.d(t, "a", (function() {
-				return Q
+				return q
 			})), s.d(t, "b", (function() {
 				return V
 			})), s.d(t, "c", (function() {
@@ -235,7 +235,7 @@
 							text: Object(n.a)(e, "subredditModeration.modQueue.toastText.somethingWentWrong")
 						}))
 					}
-				}, W = Object(r.a)(v.t), U = Object(r.a)(v.s), X = Object(r.a)(v.r), q = (e, t, s) => async (o, r, v) => {
+				}, W = Object(r.a)(v.t), U = Object(r.a)(v.s), Q = Object(r.a)(v.r), X = (e, t, s) => async (o, r, v) => {
 					let {
 						apiContext: C
 					} = v;
@@ -303,7 +303,7 @@
 								})));
 								else {
 									const s = Object(g.O)(t());
-									e(X(u.error)), e(Object(c.e)({
+									e(Q(u.error)), e(Object(c.e)({
 										kind: b.b.Error,
 										text: Object(n.a)(s, "subredditModeration.modQueue.toastText.somethingWentWrong")
 									}))
@@ -319,7 +319,7 @@
 						const e = Object(c.d)(Object(n.a)(P, "subredditModeration.modQueue.toastText.somethingWentWrong"), b.b.Error);
 						o(Object(c.e)(e))
 					}
-				}, Q = Object(r.a)(v.a), V = Object(r.a)(v.c), H = Object(r.a)(v.d)
+				}, q = Object(r.a)(v.a), V = Object(r.a)(v.c), H = Object(r.a)(v.d)
 		},
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
@@ -390,11 +390,11 @@
 			})), s.d(t, "editRemovalReason", (function() {
 				return U
 			})), s.d(t, "deleteRemovalReasonPending", (function() {
-				return X
-			})), s.d(t, "deleteRemovalReasonSuccess", (function() {
-				return q
-			})), s.d(t, "deleteRemovalReasonFailed", (function() {
 				return Q
+			})), s.d(t, "deleteRemovalReasonSuccess", (function() {
+				return X
+			})), s.d(t, "deleteRemovalReasonFailed", (function() {
+				return q
 			})), s.d(t, "deleteRemovalReason", (function() {
 				return V
 			})), s.d(t, "removedItemsSelected", (function() {
@@ -483,23 +483,23 @@
 						kind: _.b.SuccessMod,
 						text: Object(P.c)("Removal reason saved")
 					}))) : s(W(c.error))
-				}, X = Object(n.a)(S.e), q = Object(n.a)(S.f), Q = Object(n.a)(S.d), V = (e, t) => async (s, n, r) => {
+				}, Q = Object(n.a)(S.e), X = Object(n.a)(S.f), q = Object(n.a)(S.d), V = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
 					const i = n().subreddits.models[e].name;
-					s(X());
+					s(Q());
 					const c = await ((e, t, s) => Object(x.b)(Object(f.a)(e, [g.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(s),
 						method: o.db.DELETE
 					}))(a(), i, t);
-					c.ok ? (s(q({
+					c.ok ? (s(X({
 						subredditId: e,
 						reasonId: t
 					})), s(Object(b.e)({
 						kind: _.b.SuccessMod,
 						text: Object(P.c)("Removal reason deleted")
-					}))) : s(Q(c.error))
+					}))) : s(q(c.error))
 				}, H = Object(n.a)(S.t), z = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
@@ -804,7 +804,7 @@
 			s.d(t, "b", (function() {
 				return D
 			})), s.d(t, "a", (function() {
-				return X
+				return Q
 			}));
 			var A = function(e, t) {
 				var s = {};
@@ -821,9 +821,9 @@
 				F = l.a.wrapped(R.a, "Remove", I.a),
 				W = l.a.wrapped(N.a, "Spam", I.a),
 				U = l.a.wrapped(M.a, "Show", I.a),
-				X = l.a.wrapped(w, "DistinguishShield", I.a),
-				q = Object(f.t)(),
-				Q = e => "Distinguish--Dropdown--".concat(e),
+				Q = l.a.wrapped(w, "DistinguishShield", I.a),
+				X = Object(f.t)(),
+				q = e => "Distinguish--Dropdown--".concat(e),
 				V = Object(i.c)({
 					currentUser: P.i,
 					collapsedBecauseCrowdControl: (e, t) => {
@@ -838,7 +838,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(j.b)(Q(s.id))(e)
+						return Object(j.b)(q(s.id))(e)
 					},
 					moderatorPermissions: (e, t) => {
 						const {
@@ -862,11 +862,11 @@
 						onSpamComment: () => e(Object(m.cb)(s.id, !0)),
 						onShowComment: () => e(Object(m.Y)(s.id)),
 						onToggleDistinguishDropdown: () => e(Object(u.h)({
-							tooltipId: Q(s.id)
+							tooltipId: q(s.id)
 						}))
 					}
 				});
-			t.c = q(H(l.a.wrapped(Object(x.c)(e => {
+			t.c = X(H(l.a.wrapped(Object(x.c)(e => {
 				var {
 					className: t,
 					comment: s,
@@ -935,7 +935,7 @@
 					onClick: () => {
 						M("mod_distinguish_menu"), P()
 					}
-				}, r.a.createElement(X, null), r.a.createElement(p.a, {
+				}, r.a.createElement(Q, null), r.a.createElement(p.a, {
 					isAdminDistinguished: s.isAdmin,
 					isDropdownOpen: y.isDistinguishDropdownOpen,
 					isModDistinguished: s.isMod,
@@ -945,7 +945,7 @@
 					isUserMod: _,
 					onDistinguishComment: x,
 					sendEventWithName: M,
-					tooltipId: Q(s.id)
+					tooltipId: q(s.id)
 				})), N && r.a.createElement(D, {
 					text: n.fbt._("Show Comment", null, {
 						hk: "2ki02n"
@@ -2757,8 +2757,8 @@
 				href: "https://www.reddit.com/".concat(e.subredditOrProfileUrl, "/wiki/config/automoderator"),
 				target: "_blank"
 			}, a.a.createElement(C.c, null, "Automoderator Config")))), a.a.createElement(M.a, null, a.a.createElement(W, null)));
-			const X = Object(b.t)(),
-				q = Object(c.c)({
+			const Q = Object(b.t)(),
+				X = Object(c.c)({
 					queryParams: (e, t) => {
 						let {
 							location: s
@@ -2766,7 +2766,7 @@
 						return o()([...Object(d.a)(s.search)])
 					}
 				}),
-				Q = Object(c.a)(q, O.O, b.L, f.k, (e, t) => {
+				q = Object(c.a)(X, O.O, b.L, f.k, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -2791,7 +2791,7 @@
 						subredditName: a
 					}
 				}),
-				V = Object(i.b)(Q);
+				V = Object(i.b)(q);
 			class H extends a.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
@@ -2845,7 +2845,7 @@
 					}))
 				}
 			}
-			t.default = X(V(Object(u.c)(H)))
+			t.default = Q(V(Object(u.c)(H)))
 		},
 		"./src/reddit/selectors/experiments/adSidebar.ts": function(e, t, s) {
 			"use strict";
@@ -2859,9 +2859,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Ob)(t)
+				return !!t && !Object(n.Qb)(t)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.6f361b3525b643cea597.js.map
+//# sourceMappingURL=ModQueuePages.ece4026fe852396c8fbc.js.map

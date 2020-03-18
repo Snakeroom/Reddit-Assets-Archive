@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.5b62867406d7d9f432c2.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.77ff466ee0c9981e5a64.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -296,7 +296,7 @@
 							const t = await Object(m.a)(l);
 							d.width = t.width, d.height = t.height
 						} else if (a.startsWith("video/")) {
-							if (e.size > i.Z) return w(i.Xb);
+							if (e.size > i.Z) return w(i.Yb);
 							let t;
 							try {
 								t = await Object(f.h)(l, !0)
@@ -7919,4 +7919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.5b62867406d7d9f432c2.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.77ff466ee0c9981e5a64.js.map

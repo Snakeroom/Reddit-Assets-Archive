@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.3795ad83ebef4ae2af15.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.56ca6e81330e52b0a1bd.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -250,7 +250,7 @@
 					let b, E;
 					if (this.state.mounted || p === r.a.Live) b = function(e, t, s, n) {
 						const o = Object(r.e)(e, t),
-							d = new Date(e * a.Eb);
+							d = new Date(e * a.Fb);
 						let l;
 						if (o === r.a.Live || n) return Object(c.a)(s, "posts.event.inProgress");
 						o === r.a.Future ? l = Object(r.d)(e) ? Object(c.a)(s, "posts.event.today") : Object(r.b)(e) >= 5 ? i(d, s) : function(e, t) {
@@ -1562,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.3795ad83ebef4ae2af15.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.56ca6e81330e52b0a1bd.js.map

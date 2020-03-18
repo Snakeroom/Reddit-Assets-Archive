@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.813f26d8cc811cba1709.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.832e643e8e21b60d0913.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -430,7 +430,7 @@
 				I = y.a.div("ThumbnailContainer", O.a),
 				L = Object(a.c)({
 					isCurrentUserProfilePost: h.i,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Bb.TOPIC),
 					language: f.O,
 					post: h.M,
 					shouldOpenPostInNewTab: f.S,
@@ -1522,4 +1522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.813f26d8cc811cba1709.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.832e643e8e21b60d0913.js.map

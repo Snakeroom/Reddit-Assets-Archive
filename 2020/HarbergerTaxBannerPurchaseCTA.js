@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.367594de423bbdcaf9b2.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.e540a48f0eb88d579fc2.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -426,8 +426,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: n.bb
-				}) === n.ib.Enabled
+					experimentName: n.db
+				}) === n.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -462,9 +462,9 @@
 			})), r.d(t, "a", (function() {
 				return _
 			})), r.d(t, "f", (function() {
-				return P
-			})), r.d(t, "r", (function() {
 				return k
+			})), r.d(t, "r", (function() {
+				return P
 			})), r.d(t, "n", (function() {
 				return T
 			})), r.d(t, "k", (function() {
@@ -535,7 +535,7 @@
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
 				v = (e, t) => {
-					const r = k(e, t);
+					const r = P(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
 				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -549,11 +549,11 @@
 						n = O(e, t);
 					return r && r.provider || n && n.provider
 				},
-				P = (e, t) => {
+				k = (e, t) => {
 					const r = _(e, t);
 					return r === s.a.Ethereum || r === s.a.Rinkeby
 				},
-				k = (e, t) => {
+				P = (e, t) => {
 					const r = I(e, t),
 						n = _(e, t);
 					if (r && !r.inTransition && n === s.a.Stellar) return {
@@ -588,4 +588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.367594de423bbdcaf9b2.js.map
+//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.e540a48f0eb88d579fc2.js.map

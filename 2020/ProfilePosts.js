@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.83a7f04ad44b9940614e.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.7b13bbe193de570e88e5.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, r) {
@@ -65,11 +65,11 @@
 					className: t,
 					language: r,
 					profileName: s,
-					timeSort: o = i.Rb.ALL
+					timeSort: o = i.Sb.ALL
 				} = e;
 				return n.a.createElement(f, {
 					className: t
-				}, o === i.Rb.ALL ? Object(d.a)(r, "listings.noComments", {
+				}, o === i.Sb.ALL ? Object(d.a)(r, "listings.noComments", {
 					profileName: s
 				}) : Object(d.a)(r, "listings.noRecentComments", {
 					profileName: s
@@ -83,11 +83,11 @@
 						className: t,
 						language: r,
 						profileName: s,
-						timeSort: o = i.Rb.ALL
+						timeSort: o = i.Sb.ALL
 					} = e;
 					return n.a.createElement(f, {
 						className: t
-					}, o === i.Rb.ALL ? Object(d.a)(r, "listings.noPosts", {
+					}, o === i.Sb.ALL ? Object(d.a)(r, "listings.noPosts", {
 						profileName: s
 					}) : Object(d.a)(r, "listings.noRecentPosts", {
 						profileName: s
@@ -209,13 +209,13 @@
 					postLayout: b.L,
 					redditStyle: b.A
 				}),
-				A = Object(o.b)(T, e => ({
+				B = Object(o.b)(T, e => ({
 					onListingLayoutChange: (t, r) => e(Object(l.v)(t, r)),
 					openDropdown: () => e(Object(m.h)({
 						tooltipId: j
 					}))
 				}));
-			class B extends n.a.Component {
+			class A extends n.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -286,7 +286,7 @@
 					}), n.a.createElement(x.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = k(A(Object(u.c)(Object(c.a)(B))))
+			t.a = k(B(Object(u.c)(Object(c.a)(A))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -356,12 +356,13 @@
 				E = r("./src/reddit/helpers/path/index.ts"),
 				v = r("./src/reddit/helpers/trackers/navigation.ts"),
 				N = r("./src/reddit/icons/fonts/Menu/index.tsx"),
-				S = r("./src/reddit/selectors/user.ts"),
-				_ = r("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
-				C = r.n(_);
+				S = r("./src/reddit/selectors/experiments/bestSortPopular.ts"),
+				_ = r("./src/reddit/selectors/user.ts"),
+				C = r("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
+				j = r.n(C);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -369,24 +370,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const L = new Set([x.P.CONTROVERSIAL, x.P.TOP]),
-				P = new Set([x.P.CONTROVERSIAL, x.P.RISING]),
-				I = "ListingSort--Overflow",
-				k = Object(l.t)({
+			const P = new Set([x.P.CONTROVERSIAL, x.P.TOP]),
+				I = new Set([x.P.CONTROVERSIAL, x.P.RISING]),
+				k = "ListingSort--Overflow",
+				T = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
 					pageLayer: e => e
 				}),
-				T = Object(p.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, S.i, (e, t, r) => {
-					if (e) return e;
-					const s = [x.P.HOT, x.P.NEW, x.P.TOP, x.P.RISING];
-					return t && r && s.unshift(x.P.BEST), s
-				}),
-				A = Object(p.c)({
-					isPopularPage: l.C,
-					sortOptions: T
+				B = Object(p.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, S.a, _.i, l.C, (e, t, r, s, n) => {
+					if (e) return {
+						isPopularPage: n,
+						sortOptions: e
+					};
+					const o = [x.P.HOT, x.P.NEW, x.P.TOP, x.P.RISING];
+					return (t && (s || r) || n && r) && o.unshift(x.P.BEST), {
+						isPopularPage: n,
+						sortOptions: o
+					}
 				});
-			class B extends n.a.Component {
+			class A extends n.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(v.a)(e))
@@ -408,27 +411,27 @@
 						return n.a.createElement(n.a.Fragment, {
 							key: e
 						}, n.a.createElement(w.a, {
-							className: Object(a.a)(C.a.SortLink, e === o && C.a.selected),
+							className: Object(a.a)(j.a.SortLink, e === o && j.a.selected),
 							onClick: () => this.changeSort(e),
 							to: this.getSortUrl(e),
 							key: e
 						}, n.a.createElement(f.a, {
-							className: C.a.SortIcon,
+							className: j.a.SortIcon,
 							sort: e
 						}), n.a.createElement("div", {
-							className: C.a.SortLabel
+							className: j.a.SortLabel
 						}, Object(O.a)(e))), i && n.a.createElement(g.a, {
 							baseUrl: y.c[y.b.Popular],
-							buttonClassName: C.a.DropdownButton,
-							className: C.a.CountrySort,
+							buttonClassName: j.a.DropdownButton,
+							className: j.a.CountrySort,
 							disabled: t,
-							dropdownClassName: C.a.Dropdown,
-							rowClassName: C.a.DropdownRow,
-							rowSelectedClassName: C.a.DropdownRowSelected,
-							wrapperClassName: C.a.DropdownSortWrapper,
+							dropdownClassName: j.a.Dropdown,
+							rowClassName: j.a.DropdownRow,
+							rowSelectedClassName: j.a.DropdownRowSelected,
+							wrapperClassName: j.a.DropdownSortWrapper,
 							showStateAbbreviations: !0,
 							sort: r,
-							stateSortClassName: C.a.StateSort
+							stateSortClassName: j.a.StateSort
 						}))
 					}
 				}
@@ -440,43 +443,43 @@
 						sort: s,
 						sortOptions: o,
 						timeSort: i
-					} = this.props, d = !t && L.has(s), c = P.has(s), l = o.filter(e => !P.has(e)), m = o.filter(e => P.has(e) && e !== s);
-					return n.a.createElement(n.a.Fragment, null, n.a.createElement(f.d, j({}, this.props, {
-						buttonClassName: C.a.DropdownButton,
-						className: Object(a.a)(C.a.SortDropdown, e),
-						rowClassName: C.a.DropdownRow,
-						rowIconClassName: C.a.DropdownRowIcon,
-						rowSelectedClassName: C.a.DropdownRowSelected,
+					} = this.props, d = !t && P.has(s), c = I.has(s), l = o.filter(e => !I.has(e)), m = o.filter(e => I.has(e) && e !== s);
+					return n.a.createElement(n.a.Fragment, null, n.a.createElement(f.d, L({}, this.props, {
+						buttonClassName: j.a.DropdownButton,
+						className: Object(a.a)(j.a.SortDropdown, e),
+						rowClassName: j.a.DropdownRow,
+						rowIconClassName: j.a.DropdownRowIcon,
+						rowSelectedClassName: j.a.DropdownRowSelected,
 						showTitle: !1
 					})), n.a.createElement("div", {
-						className: Object(a.a)(C.a.SortButtons, e)
+						className: Object(a.a)(j.a.SortButtons, e)
 					}, l.map(this.renderSort)), c && this.renderSort(s), d && n.a.createElement(h.a, {
 						baseUrl: this.getSortUrl(s),
-						buttonClassName: C.a.DropdownButton,
-						className: C.a.TimeSort,
-						dropdownClassName: C.a.Dropdown,
+						buttonClassName: j.a.DropdownButton,
+						className: j.a.TimeSort,
+						dropdownClassName: j.a.Dropdown,
 						listingSort: s,
 						onChange: r,
-						rowClassName: C.a.DropdownRow,
-						rowSelectedClassName: C.a.DropdownRowSelected,
-						timeSort: i || x.Sb,
-						wrapperClassName: C.a.DropdownSortWrapper
-					}), m.length > 0 && n.a.createElement(f.d, j({}, this.props, {
-						className: Object(a.a)(C.a.SortOverflow, e),
-						dropdownClassName: C.a.Dropdown,
-						dropdownId: I,
-						rowClassName: C.a.DropdownRow,
-						rowIconClassName: C.a.DropdownRowIcon,
-						rowSelectedClassName: C.a.DropdownRowSelected,
+						rowClassName: j.a.DropdownRow,
+						rowSelectedClassName: j.a.DropdownRowSelected,
+						timeSort: i || x.Tb,
+						wrapperClassName: j.a.DropdownSortWrapper
+					}), m.length > 0 && n.a.createElement(f.d, L({}, this.props, {
+						className: Object(a.a)(j.a.SortOverflow, e),
+						dropdownClassName: j.a.Dropdown,
+						dropdownId: k,
+						rowClassName: j.a.DropdownRow,
+						rowIconClassName: j.a.DropdownRowIcon,
+						rowSelectedClassName: j.a.DropdownRowSelected,
 						showTitle: !1,
 						sortOptions: m
 					}), n.a.createElement("button", {
-						className: C.a.SortOverflowButton,
-						id: I
+						className: j.a.SortOverflowButton,
+						id: k
 					}, n.a.createElement(N.a, null))))
 				}
 			}
-			var R = k(Object(o.b)(A)(Object(c.c)(B))),
+			var R = T(Object(o.b)(B)(Object(c.c)(A))),
 				D = r("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				F = r.n(D);
 			const M = Object(l.t)({
@@ -621,7 +624,7 @@
 				}, o.a.createElement(x.a, {
 					bladeOpen: !1,
 					offsetLeft: l ? g.u : 0,
-					render: () => o.a.createElement(o.a.Fragment, null, B({
+					render: () => o.a.createElement(o.a.Fragment, null, A({
 						language: s,
 						profileName: a,
 						isOwnProfile: r,
@@ -642,7 +645,7 @@
 						isOwnProfile: r,
 						routeName: i,
 						privateListingType: n
-					}).map(e => o.a.createElement(A, e))))
+					}).map(e => o.a.createElement(B, e))))
 				}))
 			}));
 			const T = e => {
@@ -667,7 +670,7 @@
 						href: n
 					}, s)
 				},
-				A = e => {
+				B = e => {
 					let {
 						isActive: t,
 						internal: r,
@@ -696,7 +699,7 @@
 						target: "_blank"
 					}, d)
 				},
-				B = e => {
+				A = e => {
 					let {
 						language: t,
 						profileName: r,
@@ -707,28 +710,28 @@
 					} = e;
 					const d = n ? [{
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Saved,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Saved,
 						key: "profile.saved",
 						text: Object(c.a)(t, "profile.sections.saved"),
 						url: "/user/".concat(r, "/saved/")
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Hidden,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Hidden,
 						key: "profile.hidden",
 						text: Object(c.a)(t, "profile.sections.hidden"),
 						url: "/user/".concat(r, "/hidden/")
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Upvoted,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Upvoted,
 						key: "profile.upvoted",
 						text: Object(c.a)(t, "profile.sections.upvoted"),
 						url: "/user/".concat(r, "/upvoted/")
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Downvoted,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Downvoted,
 						key: "profile.downvoted",
 						text: Object(c.a)(t, "profile.sections.downvoted"),
 						url: "/user/".concat(r, "/downvoted/")
@@ -736,7 +739,7 @@
 					n ? (d.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.ReceivedGildings,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.ReceivedGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "10CLzb"
@@ -745,7 +748,7 @@
 					}), d.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.GivenGildings,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.GivenGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "JzMR1"
@@ -763,26 +766,26 @@
 					});
 					const m = i ? [{
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_SNOOBUILDER,
+						isActive: o === p.Bb.PROFILE_SNOOBUILDER,
 						key: "profile.snoobuilder",
 						text: Object(_.c)("Snoobuilder"),
 						url: "/user/".concat(r, "/snoo/")
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_OVERVIEW,
+						isActive: o === p.Bb.PROFILE_OVERVIEW,
 						key: "profile.overview",
 						text: Object(c.a)(t, "profile.overview"),
 						url: "/user/".concat(r, "/")
 					}, {
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_POSTS,
+						isActive: o === p.Bb.PROFILE_POSTS,
 						key: "profile.posts",
 						text: Object(c.a)(t, "profile.posts"),
 						url: "/user/".concat(r, "/posts/")
 					}, {
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_COMMENTS,
+						isActive: o === p.Bb.PROFILE_COMMENTS,
 						key: "profile.comments",
 						text: Object(c.a)(t, "profile.comments"),
 						url: "/user/".concat(r, "/comments/")
@@ -799,21 +802,21 @@
 					const i = n ? [{
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Hidden,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Hidden,
 						key: "profile.hidden",
 						text: Object(c.a)(t, "profile.sections.hidden"),
 						url: "/user/".concat(r, "/hidden/")
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Upvoted,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Upvoted,
 						key: "profile.upvoted",
 						text: Object(c.a)(t, "profile.sections.upvoted"),
 						url: "/user/".concat(r, "/upvoted/")
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.Downvoted,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.Downvoted,
 						key: "profile.downvoted",
 						text: Object(c.a)(t, "profile.sections.downvoted"),
 						url: "/user/".concat(r, "/downvoted/")
@@ -821,7 +824,7 @@
 					return n ? (i.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.ReceivedGildings,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.ReceivedGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "10CLzb"
@@ -830,7 +833,7 @@
 					}), i.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: o === p.Ab.PROFILE_PRIVATE && a === w.a.GivenGildings,
+						isActive: o === p.Bb.PROFILE_PRIVATE && a === w.a.GivenGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "JzMR1"
@@ -985,7 +988,7 @@
 				}
 			}
 			E.defaultProps = {
-				minimizedLength: l.Fb
+				minimizedLength: l.Gb
 			};
 			const v = Object(d.c)({
 				language: g.O
@@ -1838,7 +1841,7 @@
 					let {
 						match: r
 					} = t;
-					return Object(j.f)(e, c.Tb + r.params.profileName)
+					return Object(j.f)(e, c.Ub + r.params.profileName)
 				}, (e, t, r, s, n, o, a, i) => {
 					const {
 						sort: d,
@@ -1903,7 +1906,7 @@
 						I = {
 							sort: u,
 							baseUrl: C,
-							sortOptions: c.sb,
+							sortOptions: c.tb,
 							subredditId: this.props.subredditId,
 							timeSort: p
 						};
@@ -1935,4 +1938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts.83a7f04ad44b9940614e.js.map
+//# sourceMappingURL=ProfilePosts.7b13bbe193de570e88e5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c5a565e865f4682f3da9.js
-// Retrieved at 3/17/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.e739fae32a9a76cde93a.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -480,11 +480,11 @@
 					if (d.ok) {
 						const t = d.body,
 							a = 14400,
-							c = Math.round(t.event_start / o.Eb);
+							c = Math.round(t.event_start / o.Fb);
 						let l = t.event_end;
 						const m = {
 							eventStart: c,
-							eventEnd: l = l && Math.round(l / o.Eb) || c + a,
+							eventEnd: l = l && Math.round(l / o.Fb) || c + a,
 							eventIsLive: t.event_is_live
 						};
 						s(k({
@@ -5622,7 +5622,7 @@
 				T = O.a.div("ThumbnailContainer", C.a),
 				N = Object(i.c)({
 					isCurrentUserProfilePost: x.i,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Bb.TOPIC),
 					language: f.O,
 					post: x.M,
 					shouldOpenPostInNewTab: f.S,
@@ -6048,7 +6048,7 @@
 					let h, E;
 					if (this.state.mounted || u === r.a.Live) h = function(e, t, s, n) {
 						const o = Object(r.e)(e, t),
-							d = new Date(e * i.Eb);
+							d = new Date(e * i.Fb);
 						let l;
 						if (o === r.a.Live || n) return Object(a.a)(s, "posts.event.inProgress");
 						o === r.a.Future ? l = Object(r.d)(e) ? Object(a.a)(s, "posts.event.today") : Object(r.b)(e) >= 5 ? c(d, s) : function(e, t) {
@@ -10902,7 +10902,7 @@
 				}));
 			class H extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(h.d) : null, this.onViewed = (e, t) => Object(v.d)(this.listingKey(), d.P.TOP, t, e, d.Rb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(h.d) : null, this.onViewed = (e, t) => Object(v.d)(this.listingKey(), d.P.TOP, t, e, d.Sb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(f.c)("recommended_footer"))
 					}
 				}
@@ -10911,7 +10911,7 @@
 						subredditOrProfile: e
 					} = this.props;
 					return Object(l.a)(e.name, d.P.TOP, {
-						t: d.Rb.WEEK
+						t: d.Sb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -11906,7 +11906,7 @@
 				R = s("./src/lib/constants/index.ts"),
 				F = s("./src/reddit/i18n/components.tsx");
 			const A = Object(c.t)(),
-				B = [R.Ab.SUBREDDIT, R.Ab.COMMENTS, R.Ab.COLLECTION_COMMENTS],
+				B = [R.Bb.SUBREDDIT, R.Bb.COMMENTS, R.Bb.COLLECTION_COMMENTS],
 				D = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && B.indexOf(t.pageLayer.meta.name) > -1
@@ -11985,7 +11985,7 @@
 					homeUrl: t,
 					isTopBannerVariant: s,
 					pageLayer: n
-				} = e, r = !!n && !!n.meta && n.meta.name === R.Ab.SUBREDDIT_WIKI, a = "wiki/".concat(Z.i), i = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
+				} = e, r = !!n && !!n.meta && n.meta.name === R.Bb.SUBREDDIT_WIKI, a = "wiki/".concat(Z.i), i = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
 				return o.a.createElement(E, {
 					isActive: r,
 					isTopBannerVariant: s,
@@ -17016,7 +17016,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Ob)(t)
+				return !!t && !Object(n.Qb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -17029,9 +17029,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.hb
+					experimentName: n.jb
 				});
-				return Object(n.Ob)(t) ? void 0 : t
+				return Object(n.Qb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -17048,4 +17048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.c5a565e865f4682f3da9.js.map
+//# sourceMappingURL=CommentsPage.e739fae32a9a76cde93a.js.map

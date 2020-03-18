@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c74b9baf0e2210954e51.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.649fa39abe834c4b08a2.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -220,7 +220,7 @@
 			var T = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
 				D = n.n(T);
 
-			function P(e) {
+			function k(e) {
 				return r.a.createElement("div", {
 					className: Object(b.a)(D.a.container, e.className)
 				}, Array.from({
@@ -231,8 +231,8 @@
 					})
 				})))
 			}
-			var k = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
-				G = n.n(k);
+			var P = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
+				G = n.n(P);
 			class V extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -274,7 +274,7 @@
 						className: G.a.controlBox,
 						date: e.created,
 						language: this.props.language
-					}), r.a.createElement(P, {
+					}), r.a.createElement(k, {
 						className: G.a.controlBox,
 						currentSlide: this.state.currentlyViewingIndex,
 						totalSlides: this.props.releaseNotes.length
@@ -450,8 +450,8 @@
 				d = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				c = e => i.has((Object(a.e)(e) || "").toLowerCase()) || d.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: o.G,
-					experimentName: s.bb
-				}) === s.ib.Enabled
+					experimentName: s.db
+				}) === s.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -612,4 +612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.c74b9baf0e2210954e51.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.649fa39abe834c4b08a2.js.map

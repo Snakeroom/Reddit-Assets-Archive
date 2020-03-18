@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.9ce09c09567d5ceb43f6.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7c24516a434fed48694c.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -580,7 +580,7 @@
 								} = this.state;
 								if (e.length) {
 									const t = Object(ce.g)(e),
-										n = t.startsWith(se.Tb) ? "profile" : "subreddit",
+										n = t.startsWith(se.Ub) ? "profile" : "subreddit",
 										s = "profile" === n ? t.substring(2) : t;
 									this.props.addSubredditRequested({
 										name: s,
@@ -1148,7 +1148,7 @@
 				}
 			}
 			C.defaultProps = {
-				minimizedLength: l.Fb
+				minimizedLength: l.Gb
 			};
 			const v = Object(a.c)({
 				language: x.O
@@ -2347,7 +2347,7 @@
 				Ze = Object(a.a)(Ve, Ke, Xe, (e, t, n) => Object(m.a)(n, e, t)),
 				Qe = Object(a.a)(Ke, e => {
 					const t = p.t in e && e[p.t].toUpperCase();
-					return "string" == typeof t && t in c.Rb ? c.Rb[t] : c.Sb
+					return "string" == typeof t && t in c.Sb ? c.Sb[t] : c.Tb
 				}),
 				Ye = Object(a.c)({
 					language: G.O,
@@ -2423,4 +2423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.9ce09c09567d5ceb43f6.js.map
+//# sourceMappingURL=Multireddit.7c24516a434fed48694c.js.map

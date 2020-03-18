@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.ec564616083291b3bb9b.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.e295102455576d3acf3f.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -752,7 +752,7 @@
 							const e = await Object(g.a)(d);
 							l.width = e.width, l.height = e.height
 						} else if (c.startsWith("video/")) {
-							if (t.size > i.Z) return L(i.Xb);
+							if (t.size > i.Z) return L(i.Yb);
 							let e;
 							try {
 								e = await Object(b.h)(d, !0)
@@ -932,8 +932,8 @@
 						s = Object(T.K)(e),
 						a = Object(T.a)(e),
 						r = Object(T.V)(e);
-					if (a === n.Ib.POST) return m.a.getPendingThumbnailUploads(r, t);
-					if (a === n.Ib.MEDIA && s) {
+					if (a === n.Jb.POST) return m.a.getPendingThumbnailUploads(r, t);
+					if (a === n.Jb.MEDIA && s) {
 						const {
 							video: e
 						} = s;
@@ -954,7 +954,7 @@
 					const l = Object(T.a)(o),
 						h = x.d.rteVideoPoster(o),
 						p = J(o),
-						m = l === n.Ib.MEDIA;
+						m = l === n.Jb.MEDIA;
 					p && (h || m) && (await s(U.d(p)), J(a())) || (e === E.r.Draft ? await s(Object(u.r)(t.draftId)) : e === E.r.ScheduledPost && Object(N.q)(o) ? await s($(t)) : e === E.r.ScheduledPost ? await s(ee(t)) : await s(te(t)))
 				}, $ = e => async (t, s, a) => {
 					let {
@@ -4716,8 +4716,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: a.bb
-				}) === a.ib.Enabled
+					experimentName: a.db
+				}) === a.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -4878,4 +4878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.ec564616083291b3bb9b.js.map
+//# sourceMappingURL=PainterModalLoader.e295102455576d3acf3f.js.map

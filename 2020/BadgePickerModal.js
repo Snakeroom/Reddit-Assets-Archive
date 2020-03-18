@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.3eef15b512da38416632.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.c346066c96dc2f8f943a.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1035,8 +1035,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				l = e => i.has((Object(n.e)(e) || "").toLowerCase()) || c.has((Object(n.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: d.G,
-					experimentName: s.bb
-				}) === s.ib.Enabled
+					experimentName: s.db
+				}) === s.kb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
 			"use strict";
@@ -1197,4 +1197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.3eef15b512da38416632.js.map
+//# sourceMappingURL=BadgePickerModal.c346066c96dc2f8f943a.js.map

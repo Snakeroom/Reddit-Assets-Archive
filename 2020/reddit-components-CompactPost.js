@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.5219577697f6cdd05e30.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.81b9da78e361a8550a46.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -617,8 +617,8 @@
 				L = s("./src/reddit/components/Economics/Support/DonationAmount/async.tsx"),
 				R = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				A = s("./src/reddit/components/ExpandoButton/index.tsx"),
-				F = s("./src/reddit/components/Flatlist/index.tsx"),
-				B = s("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
+				B = s("./src/reddit/components/Flatlist/index.tsx"),
+				F = s("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
 				D = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				H = s("./src/reddit/components/ModActionsMenu/index.tsx"),
 				W = s("./src/reddit/components/ModerationPrompts/Prompt.tsx"),
@@ -788,7 +788,7 @@
 						toggleCheckbox: Pe,
 						tooltipType: Ce,
 						sendEvent: Se
-					} = this.props, Ne = !!ce.media && ce.media.type === f.n.RTJSON, Me = ge && Ne, Le = Object(Y.b)(ce.id, E), Re = Object(xe.a)(C), Ae = Object(ue.a)(C), Fe = Object(be.a)(C), Be = "-mod-actions-menu-".concat(ce.id), De = "voting-arrows-".concat(ce.id), He = !!n && Object(h.f)(n) === ce.author, We = Object(K.c)(ce), Ve = Object(B.a)("View--Reports", ce.id, Ce), Ue = Object(K.a)(ce), Ke = !(E || v || g), ze = ce.media && ce.media.type === f.n.LIVEVIDEO, {
+					} = this.props, Ne = !!ce.media && ce.media.type === f.n.RTJSON, Me = ge && Ne, Le = Object(Y.b)(ce.id, E), Re = Object(xe.a)(C), Ae = Object(ue.a)(C), Be = Object(be.a)(C), Fe = "-mod-actions-menu-".concat(ce.id), De = "voting-arrows-".concat(ce.id), He = !!n && Object(h.f)(n) === ce.author, We = Object(K.c)(ce), Ve = Object(F.a)("View--Reports", ce.id, Ce), Ue = Object(K.a)(ce), Ke = !(E || v || g), ze = ce.media && ce.media.type === f.n.LIVEVIDEO, {
 						moderationPrompt: Ge
 					} = ce, Je = e => Se(Object(x.f)(ce.id, e)), Xe = r.a.createElement(Z.a, {
 						className: Object(c.a)(ye.a.compactPostStyles, Ee.a.postContainer, Object(b.a)(this.props), t),
@@ -909,18 +909,18 @@
 						sendEvent: Se,
 						showIconsOnly: !0
 					}), Re && r.a.createElement(H.a, {
-						dropdownId: Be,
+						dropdownId: Fe,
 						onClick: () => Je("post_mod_action_menu")
-					}, r.a.createElement(F.b, null), r.a.createElement($.a, {
+					}, r.a.createElement(B.b, null), r.a.createElement($.a, {
 						canEditFlair: Ae && je,
 						hasModPostPerms: Re,
-						hasModFullPerms: Fe,
+						hasModFullPerms: Be,
 						isOverlay: !1,
 						isPostAuthor: He,
 						language: j,
 						modModeEnabled: A,
 						post: ce,
-						tooltipId: Be
+						tooltipId: Fe
 					})), Re && We && !A && r.a.createElement(oe.c, {
 						text: "".concat(Ue),
 						onClick: () => {
@@ -1098,7 +1098,7 @@
 				N = _.a.div("ThumbnailContainer", y.a),
 				I = Object(i.c)({
 					isCurrentUserProfilePost: h.i,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Bb.TOPIC),
 					language: v.O,
 					post: h.M,
 					shouldOpenPostInNewTab: v.S,
@@ -1132,7 +1132,7 @@
 					className: l
 				}, r.a.createElement(k, null, r.a.createElement(w, null, r.a.createElement(m.a, c)), L(a), a.source && r.a.createElement(b.a, {
 					post: a
-				}), A(e)), B(e)) : r.a.createElement(O, {
+				}), A(e)), F(e)) : r.a.createElement(O, {
 					className: l
 				}, r.a.createElement(w, null, r.a.createElement(m.a, c)), L(a), R(e), A(e))
 			});
@@ -1163,9 +1163,9 @@
 					} = s;
 					return r.a.createElement(P, null, r.a.createElement(C, null, Object(d.b)(t, "posts.points.noun", o, {
 						count: Object(l.b)(o)
-					})), r.a.createElement(T, null), r.a.createElement(C, null, F(e)))
+					})), r.a.createElement(T, null), r.a.createElement(C, null, B(e)))
 				},
-				F = e => {
+				B = e => {
 					const {
 						language: t,
 						post: s,
@@ -1181,7 +1181,7 @@
 						count: Object(l.b)(n)
 					}))
 				},
-				B = e => r.a.createElement(N, null, r.a.createElement(x.a, {
+				F = e => r.a.createElement(N, null, r.a.createElement(x.a, {
 					post: e.post
 				}))
 		},
@@ -1584,4 +1584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.5219577697f6cdd05e30.js.map
+//# sourceMappingURL=reddit-components-CompactPost.81b9da78e361a8550a46.js.map

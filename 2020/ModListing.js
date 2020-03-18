@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.478baf8fde26564c550d.js
-// Retrieved at 3/17/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.ead5dc77d368f1a5b619.js
+// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -383,17 +383,17 @@
 				D = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/controls/Button/index.tsx");
-			const R = () => e => ({
+			const A = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "hide_subreddit"
 				}),
-				A = () => e => ({
+				G = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "unhide_subreddit"
 				}),
-				G = e => t => ({
+				R = e => t => ({
 					source: "r_mod",
 					action: "click",
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
@@ -419,7 +419,7 @@
 							subredditInput: e
 						})
 					}, this.submitInput = () => {
-						this.canSubmitInput() && (this.props.sendEvent(R()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
+						this.canSubmitInput() && (this.props.sendEvent(A()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
@@ -468,7 +468,7 @@
 							subredditName: t.subredditName
 						});
 						if (!s) {
-							const s = (e => e.startsWith(l.Tb) ? e.slice(2) : e)(t.subredditName);
+							const s = (e => e.startsWith(l.Ub) ? e.slice(2) : e)(t.subredditName);
 							return s && Object(re.j)(e, {
 								profileName: s
 							}) || null
@@ -479,7 +479,7 @@
 			class le extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(A()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(G()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -535,7 +535,7 @@
 			class _e extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(G(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(R(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -593,7 +593,7 @@
 				}, Ne.h, Ne.c, N.O, (e, t, s, r, i, d) => {
 					const a = n()([...Object(c.a)(e)]),
 						o = je.t in a && a[je.t].toUpperCase(),
-						m = "string" == typeof o && o in l.Rb ? l.Rb[o] : l.Sb,
+						m = "string" == typeof o && o in l.Sb ? l.Sb[o] : l.Tb,
 						b = s ? ye.e : ye.d;
 					return {
 						filtered: s,
@@ -646,4 +646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing.478baf8fde26564c550d.js.map
+//# sourceMappingURL=ModListing.ead5dc77d368f1a5b619.js.map
