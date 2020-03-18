@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.e72a20c7ad865f37c0d1.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.73aae2e249a97d2f35f2.js
+// Retrieved at 3/18/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -618,4 +618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue.e72a20c7ad865f37c0d1.js.map
+//# sourceMappingURL=ModQueue.73aae2e249a97d2f35f2.js.map

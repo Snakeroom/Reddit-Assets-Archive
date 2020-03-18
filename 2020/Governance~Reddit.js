@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.206dc143919bb7c59353.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b1dbe9f77549ce915dbb.js
+// Retrieved at 3/18/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -658,6 +658,8 @@
 				return l
 			})), n.d(t, "i", (function() {
 				return b
+			})), n.d(t, "j", (function() {
+				return p
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js");
 			const s = () => r.fbt._("Coins", null, {
@@ -686,6 +688,9 @@
 				}),
 				b = () => r.fbt._("Create Community", null, {
 					hk: "utpVC"
+				}),
+				p = () => r.fbt._("Today’s Top Communities", null, {
+					hk: "2dcUEX"
 				})
 		},
 		"./src/lib/permalinkToOverlayLocation/index.ts": function(e, t, n) {
@@ -4050,20 +4055,20 @@
 		},
 		"./src/reddit/actions/externalAccount.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/lib/addQueryParams/index.ts"),
-				o = n("./src/reddit/actions/toaster.ts"),
-				i = n("./src/reddit/constants/parameters.ts"),
-				c = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/makeApiRequest/index.ts"),
-				d = n("./src/lib/omitHeaders/index.ts"),
-				u = n("./src/reddit/constants/headers.ts"),
-				l = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const b = e => {
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/lib/addQueryParams/index.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
+				c = n("./src/reddit/constants/parameters.ts"),
+				a = n("./src/lib/constants/index.ts"),
+				d = n("./src/lib/makeApiRequest/index.ts"),
+				u = n("./src/lib/omitHeaders/index.ts"),
+				l = n("./src/reddit/constants/headers.ts"),
+				b = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const p = e => {
 				return e.reduce((e, t) => (e[t.provider] = t, e), {})
 			};
-			var p = n("./src/reddit/i18n/utils.ts"),
-				f = n("./src/reddit/models/Toast/index.ts"),
+			var f = n("./src/reddit/models/Toast/index.ts"),
 				m = n("./src/reddit/models/User/index.ts"),
 				O = n("./src/reddit/selectors/externalAccount.ts"),
 				g = n("./src/reddit/selectors/platform.ts"),
@@ -4108,32 +4113,32 @@
 				I = "SUBREDDIT_EXTERNAL_ACCOUNT_ACCOUNTS_PENDING",
 				S = "SUBREDDIT_EXTERNAL_ACCOUNT_ACCOUNTS_LOADED",
 				v = "SUBREDDIT_EXTERNAL_ACCOUNT_ACCOUNTS_FAILED",
-				T = Object(r.a)(y),
-				C = Object(r.a)(j),
-				D = Object(r.a)(E),
-				P = Object(r.a)(I),
-				A = Object(r.a)(S),
-				w = Object(r.a)(v),
+				T = Object(s.a)(y),
+				C = Object(s.a)(j),
+				D = Object(s.a)(E),
+				P = Object(s.a)(I),
+				A = Object(s.a)(S),
+				w = Object(s.a)(v),
 				R = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
 					const o = n(),
 						i = Object(h.i)(o),
-						p = e || i && Object(m.f)(i);
-					if (!p) return;
+						c = e || i && Object(m.f)(i);
+					if (!c) return;
 					if (Object(O.d)(o, {
-							username: p
+							username: c
 						})) return;
-					t(T(p));
-					const f = await ((e, t) => Object(a.b)(Object(d.a)(e, [u.a]), {
-						endpoint: Object(l.a)("".concat(e.apiUrl, "/api/v1/external_account/user/").concat(t, ".json")),
-						method: c.db.GET
-					}))(s(), p);
+					t(T(c));
+					const f = await ((e, t) => Object(d.b)(Object(u.a)(e, [l.a]), {
+						endpoint: Object(b.a)("".concat(e.apiUrl, "/api/v1/external_account/user/").concat(t, ".json")),
+						method: a.db.GET
+					}))(s(), c);
 					if (f.ok) {
-						const e = b(f.body);
+						const e = p(f.body);
 						t(C({
-							username: p,
+							username: c,
 							accountsData: e
 						}))
 					} else t(D(f.error))
@@ -4145,25 +4150,25 @@
 						o = Object(g.e)(s);
 					if (!o) return;
 					const i = s.externalAccount.api.subreddit.fetched[o],
-						p = s.externalAccount.api.subreddit.pending[o];
-					if (i || p) return;
+						c = s.externalAccount.api.subreddit.pending[o];
+					if (i || c) return;
 					const f = Object(_.v)(s, {
 						subredditName: o
 					});
 					if (!(f && f.hasExternalAccount)) return;
 					e(P(o));
-					const m = await ((e, t) => Object(a.b)(Object(d.a)(e, [u.a]), {
-						endpoint: Object(l.a)("".concat(e.apiUrl, "/api/v1/external_account/subreddit/").concat(t, ".json")),
-						method: c.db.GET
+					const m = await ((e, t) => Object(d.b)(Object(u.a)(e, [l.a]), {
+						endpoint: Object(b.a)("".concat(e.apiUrl, "/api/v1/external_account/subreddit/").concat(t, ".json")),
+						method: a.db.GET
 					}))(r(), o);
 					if (m.ok) {
-						const t = b(m.body);
+						const t = p(m.body);
 						e(A({
 							subredditName: o,
 							accountsData: t
 						}))
 					} else e(w(m.error))
-				}, N = "EXTERNAL_ACCOUNT_DISCONNECT_PENDING", k = "EXTERNAL_ACCOUNT_DISCONNECT_SUCCESS", L = "EXTERNAL_ACCOUNT_DISCONNECT_FAILED", M = Object(r.a)(N), U = Object(r.a)(k), F = Object(r.a)(L), B = e => async (t, n, r) => {
+				}, N = "EXTERNAL_ACCOUNT_DISCONNECT_PENDING", k = "EXTERNAL_ACCOUNT_DISCONNECT_SUCCESS", L = "EXTERNAL_ACCOUNT_DISCONNECT_FAILED", M = Object(s.a)(N), U = Object(s.a)(k), F = Object(s.a)(L), B = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -4172,34 +4177,34 @@
 					}));
 					const o = Object(h.i)(n()),
 						i = Object(m.f)(o),
-						b = await ((e, t) => Object(a.b)(Object(d.a)(e, [u.a]), {
-							endpoint: Object(l.a)("".concat(e.apiUrl, "/api/v1/external_account/").concat(t, "/disconnect.json")),
-							method: c.db.POST
+						c = await ((e, t) => Object(d.b)(Object(u.a)(e, [l.a]), {
+							endpoint: Object(b.a)("".concat(e.apiUrl, "/api/v1/external_account/").concat(t, "/disconnect.json")),
+							method: a.db.POST
 						}))(s(), e);
-					b.ok ? t(U({
+					c.ok ? t(U({
 						provider: e,
 						username: i
 					})) : t(F({
 						provider: e,
-						error: b.error
+						error: c.error
 					}))
-				}, G = "OAUTH_FLOW_URL_PENDING", q = "OAUTH_FLOW_URL_SUCCESS", V = "OAUTH_FLOW_URL_FAILED", H = Object(r.a)(G), W = Object(r.a)(q), K = Object(r.a)(V), Y = e => async (t, n, r) => {
+				}, G = "OAUTH_FLOW_URL_PENDING", q = "OAUTH_FLOW_URL_SUCCESS", V = "OAUTH_FLOW_URL_FAILED", H = Object(s.a)(G), W = Object(s.a)(q), K = Object(s.a)(V), Y = e => async (t, n, s) => {
 					let {
-						apiContext: b
-					} = r;
+						apiContext: p
+					} = s;
 					t(H({
 						provider: e
 					}));
-					const m = Object(s.a)(window.location.href, {
-							[i.c]: e
+					const m = Object(o.a)(window.location.href, {
+							[c.c]: e
 						}),
-						O = await ((e, t, n) => Object(a.b)(Object(d.a)(e, [u.a]), {
-							endpoint: Object(l.a)("".concat(e.apiUrl, "/api/v1/external_account/").concat(t, "/connect.json")),
-							method: c.db.POST,
+						O = await ((e, t, n) => Object(d.b)(Object(u.a)(e, [l.a]), {
+							endpoint: Object(b.a)("".concat(e.apiUrl, "/api/v1/external_account/").concat(t, "/connect.json")),
+							method: a.db.POST,
 							data: {
 								redirect_url: n
 							}
-						}))(b(), e, m);
+						}))(p(), e, m);
 					if (O.ok) {
 						const {
 							redirect_url: n
@@ -4210,9 +4215,11 @@
 					} else t(K({
 						provider: e,
 						error: O.error
-					})), t(Object(o.e)({
+					})), t(Object(i.e)({
 						kind: f.b.Error,
-						text: Object(p.c)("Something went wrong. Just don't panic.")
+						text: r.fbt._("Something went wrong. Just don't panic.", null, {
+							hk: "196FiB"
+						})
 					}))
 				}
 		},
@@ -18704,7 +18711,7 @@
 			})), n.d(t, "h", (function() {
 				return j
 			}));
-			var r = n("./src/app/strings/index.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/reddit/actions/toaster.ts"),
 				i = n("./src/reddit/endpoints/accounts/index.ts"),
@@ -18720,32 +18727,38 @@
 						apiContext: a
 					} = s;
 					t(l());
-					const d = await Object(i.d)(a(), e),
-						u = n();
+					const d = await Object(i.d)(a(), e);
 					d.ok ? d.body.name && (t(b(d.body)), t(o.e({
 						kind: c.b.SuccessCommunity,
-						text: Object(r.a)(u.user.language, "settings.page.saveRequestSuccess")
+						text: r.fbt._("Changes saved", null, {
+							hk: "3cOmlv"
+						})
 					}))) : (t(p()), t(o.e({
 						kind: c.b.Error,
-						text: Object(r.a)(u.user.language, "error.tryAgainLater")
+						text: r.fbt._("An error has occured. Please try again later", null, {
+							hk: "3Dszn7"
+						})
 					})))
 				}, m = "USER_UNWHITELIST__PENDING", O = "USER_UNWHITELIST__SUCCESS", g = "USER_UNWHITELIST__FAILED", _ = Object(s.a)(m), h = Object(s.a)(O), y = Object(s.a)(g), j = e => async (t, n, s) => {
 					let {
 						apiContext: a
 					} = s;
-					const d = n();
 					t(_({
 						name: e
 					})), (await Object(i.c)(a(), e)).ok ? (t(h({
 						name: e
 					})), t(o.e({
 						kind: c.b.SuccessCommunity,
-						text: Object(r.a)(d.user.language, "settings.page.saveRequestSuccess")
+						text: r.fbt._("Changes saved", null, {
+							hk: "2o6UcC"
+						})
 					}))) : (t(y({
 						name: e
 					})), t(o.e({
 						kind: c.b.Error,
-						text: Object(r.a)(d.user.language, "error.tryAgainLater")
+						text: r.fbt._("An error has occured. Please try again later", null, {
+							hk: "3Dszn7"
+						})
 					})))
 				}
 		},
@@ -62211,4 +62224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.206dc143919bb7c59353.js.map
+//# sourceMappingURL=Governance~Reddit.b1dbe9f77549ce915dbb.js.map

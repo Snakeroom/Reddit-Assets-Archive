@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.cabfc687f08cfea89e9c.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.5aaf041ec0fe024fced2.js
+// Retrieved at 3/18/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -908,7 +908,7 @@
 						FrontpageSidebar: "f38f155dddce59ccad24",
 						Frontpage: "f02bbe42c4850aec3bd2",
 						Topic: "f14b0a3d6c7613e4e30a",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "802797f3dcd51b05fd50",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "9d59dfb00e4c630f5c1d",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "2ed9923f1615226eb0b0",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "4119af84913c9e99b9cb",
 						PostDraft: "71e89112a184f29cdb0b",
@@ -928,7 +928,7 @@
 						HarbergerTaxPurchaseModal: "48bbcf1d0509661b9fe2",
 						InboxPages: "e0b11464ca6776f82138",
 						ManageChatRoomsModal: "434f3a487e352fa3bfd5",
-						ModQueue: "e72a20c7ad865f37c0d1",
+						ModQueue: "73aae2e249a97d2f35f2",
 						ModToMemberShareModal: "c19e7327859e9a700831",
 						ModerationDropdowns: "892f9f9adabc2a24a746",
 						MultiredditAddSubredditModal: "c2f7b34a8a8e9068a7b8",
@@ -940,7 +940,7 @@
 						ProfileModeration: "96622f88142cada5291b",
 						"SubredditCreation~SubredditInlineEditing": "985cd7a0a7098feeba0b",
 						SubredditCreation: "4b971f3a9449885de6b1",
-						PushNotifications: "542aa1afc714538fd256",
+						PushNotifications: "149f640ad0e7723cfaf7",
 						Report: "47f0524da6945a13b43c",
 						"ReportFlow~ReportPage": "ebe92890fc3440da72e7",
 						ReportPage: "256bdc7c2624b9956413",
@@ -1175,4 +1175,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.cabfc687f08cfea89e9c.js.map
+//# sourceMappingURL=runtime~Reddit.5aaf041ec0fe024fced2.js.map
