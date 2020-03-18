@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2507bc59a46ac49e095d.js
-// Retrieved at 3/18/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fb96b20b8939b9d178ad.js
+// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2309,6 +2309,7 @@
 				titlePlaceholder: "_3DC7-C7eSLDyl1gxOp5IFX",
 				large: "hrQ5rXDbyl6t3TIXxENXB",
 				body: "_1jrhjWiRPpBMVjEPmkDP26",
+				previewLink: "_2ZFeLyTw6PIP6lE1S9c4Js",
 				classic: "_3Rb0d4ST3qYLtk7GE1D2Ku",
 				thumbnailContainer: "_1UGYtZeEoz8fDy4G-b4pqk",
 				main: "_12iec8OZ9gJJtQR8nSC2se",
@@ -3140,7 +3141,7 @@
 				}, o.a.createElement("path", {
 					d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
 				}))
-			}, "Key", I.a), q = c.a.wrapped(x.b, "SubredditIcon", I.a), J = c.a.button("EditButton", I.a), Y = c.a.button("ShowAllLink", I.a), z = c.a.span("ChannelName", I.a), Q = c.a.div("HeaderText", I.a);
+			}, "Key", I.a), J = c.a.wrapped(x.b, "SubredditIcon", I.a), q = c.a.button("EditButton", I.a), Y = c.a.button("ShowAllLink", I.a), z = c.a.span("ChannelName", I.a), Q = c.a.div("HeaderText", I.a);
 			var Z;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
@@ -3264,7 +3265,7 @@
 						key: "item-link-title-".concat(t)
 					}, o.a.createElement(U, {
 						key: "item-link-icon-".concat(t)
-					}), i.icon.url ? o.a.createElement(q, {
+					}), i.icon.url ? o.a.createElement(J, {
 						key: "subreddit-icon-".concat(t),
 						iconUrl: i.icon.url
 					}) : o.a.createElement(H, {
@@ -3278,7 +3279,7 @@
 						key: "item-detail-".concat(t)
 					}, i.name, Object(m.b)(n, "listings.channelMembers", e.membersCount)), o.a.createElement(z, {
 						key: "channel-name-".concat(t)
-					}, e.type === _.c.Public ? o.a.createElement(G, null) : o.a.createElement(K, null), e.name)), s && o.a.createElement(J, {
+					}, e.type === _.c.Public ? o.a.createElement(G, null) : o.a.createElement(K, null), e.name)), s && o.a.createElement(q, {
 						key: "button-".concat(t),
 						onClick: t => {
 							d(e.channelId), a(), t.stopPropagation(), t.preventDefault(), this.props.sendEvent(Object(O.l)())
@@ -3734,8 +3735,8 @@
 				}),
 				G = s("./src/reddit/constants/postLayout.ts"),
 				K = s("./src/reddit/constants/screenWidths.ts"),
-				q = s("./src/reddit/models/Theme/index.ts"),
-				J = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				J = s("./src/reddit/models/Theme/index.ts"),
+				q = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				Y = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
@@ -3751,12 +3752,12 @@
 					children: s,
 					isTopBannerVariant: n
 				} = e, a = Y(e, ["className", "children", "isTopBannerVariant"]);
-				const o = Object(J.a)(a);
+				const o = Object(q.a)(a);
 				return r.a.createElement("div", {
 					className: Object(b.a)(x.a.outerContainer, t),
 					style: {
 						position: o.navBar.useOverlay && !n ? "absolute" : "static",
-						background: n ? "inherit" : Object(q.g)(o.navBar.backgroundColor, o.navBar.backgroundImage, "tiled")
+						background: n ? "inherit" : Object(J.g)(o.navBar.backgroundColor, o.navBar.backgroundImage, "tiled")
 					}
 				}, s)
 			});
@@ -3874,11 +3875,11 @@
 				V = l.a.wrapped(F.a, "Pencil", U.a),
 				G = l.a.a("DropdownRow", U.a),
 				K = Object(P.a)(H),
-				q = e => "SubredditChannels--Menu--".concat(e),
-				J = Object(d.c)({
+				J = e => "SubredditChannels--Menu--".concat(e),
+				q = Object(d.c)({
 					isModerator: D.g,
 					language: M.O,
-					isDropdownOpen: (e, t) => Object(W.b)(q(t.subredditId))(e)
+					isDropdownOpen: (e, t) => Object(W.b)(J(t.subredditId))(e)
 				}),
 				Y = l.a.wrapped(e => {
 					const {
@@ -3888,7 +3889,7 @@
 						onOpenDropdown: r,
 						isDropdownOpen: a,
 						toggleModal: i
-					} = e, d = q(e.subredditId);
+					} = e, d = J(e.subredditId);
 					return o.a.createElement("button", {
 						"aria-expanded": a,
 						"aria-haspopup": !0,
@@ -3905,7 +3906,7 @@
 						onClick: i
 					}, s ? Object(w.a)(n, "subredditModeration.chat.subredditWidget.menu.manageRooms") : Object(w.a)(n, "subredditModeration.chat.subredditWidget.menu.viewRooms"), o.a.createElement(V, null))))
 				}, "OverflowMenu", U.a);
-			var z = Object(i.b)(J, e => ({
+			var z = Object(i.b)(q, e => ({
 					onOpenDropdown: t => e(Object(k.h)({
 						tooltipId: t
 					})),
@@ -4187,8 +4188,8 @@
 				Ve = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				Ge = s("./src/reddit/models/DiscoveryUnit/index.ts"),
 				Ke = s("./src/reddit/selectors/discoveryUnit.ts"),
-				qe = s("./src/reddit/components/TopPostsWidgets/TopWeekPosts/index.m.less"),
-				Je = s.n(qe);
+				Je = s("./src/reddit/components/TopPostsWidgets/TopWeekPosts/index.m.less"),
+				qe = s.n(Je);
 			const Ye = 10,
 				ze = Object(d.a)((e, t) => t.subredditName, e => Object(ce.a)(e, c.P.TOP, {
 					t: c.Sb.WEEK
@@ -4255,7 +4256,7 @@
 						onShowMoreClick: n,
 						onPostClick: this.trackPostClicked,
 						onPostVisible: this.trackPostViewed,
-						smallPostClassName: Je.a.smallPost,
+						smallPostClassName: qe.a.smallPost,
 						showMoreButton: c,
 						topPostsVariant: i
 					}, o.a.createElement("div", null, e)))
@@ -5449,8 +5450,8 @@
 					text: t.description
 				}))))),
 				K = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				q = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var J = Object(K.c)(e => r.a.createElement(q.b, {
+				J = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
+			var q = Object(K.c)(e => r.a.createElement(J.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -5627,7 +5628,7 @@
 						case "subreddit-rules":
 							return je.b;
 						case "community-list":
-							return J;
+							return q;
 						case "calendar":
 							return G;
 						case "image":
@@ -6369,8 +6370,8 @@
 				V = s("./src/reddit/components/InFeedPostCreation/async.tsx"),
 				G = s("./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.tsx"),
 				K = s("./src/reddit/components/JumpToContent/index.tsx"),
-				q = s("./src/reddit/components/LayoutNavigation/index.tsx"),
-				J = s("./src/reddit/components/ListingPostList/index.tsx"),
+				J = s("./src/reddit/components/LayoutNavigation/index.tsx"),
+				q = s("./src/reddit/components/ListingPostList/index.tsx"),
 				Y = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
 				z = s("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
 				Q = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx"),
@@ -6695,8 +6696,8 @@
 					})),
 					setTopContentDismissalPref: () => e(Object(w.D)())
 				}),
-				qe = Object(b.b)(Ge, Ke),
-				Je = Object(c.a)({
+				Je = Object(b.b)(Ge, Ke),
+				qe = Object(c.a)({
 					resolved: {},
 					chunkName: () => "Trending",
 					isReady(e) {
@@ -6718,7 +6719,7 @@
 				}, {
 					ssr: !1
 				}),
-				Ye = e => p.a.createElement(Je, je({}, e, {
+				Ye = e => p.a.createElement(qe, je({}, e, {
 					fallback: p.a.createElement(Q.a, {
 						className: e.className,
 						showCardView: !!e.showCardView
@@ -6956,7 +6957,7 @@
 						trendingUnit: fe && p.a.createElement(Ye, {
 							showCardView: this.props.layout === ne.g.Large
 						}),
-						contentNavBar: p.a.createElement(p.a.Fragment, null, !Te && p.a.createElement(q.a, Le)),
+						contentNavBar: p.a.createElement(p.a.Fragment, null, !Te && p.a.createElement(J.a, Le)),
 						content: p.a.createElement(p.a.Fragment, null, _ && _.isQuarantined && p.a.createElement(G.a, {
 							subredditName: N
 						}), _ && u && p.a.createElement(L.a, {
@@ -6978,7 +6979,7 @@
 							listingKey: c,
 							subredditName: N,
 							subscriberCount: Fe
-						}), p.a.createElement(J.a, {
+						}), p.a.createElement(q.a, {
 							injectChildren: Pe,
 							listingKey: c,
 							listingName: le,
@@ -6996,7 +6997,7 @@
 					}))
 				}
 			}
-			t.default = Pe(qe(Object(ee.c)(Ze)))
+			t.default = Pe(Je(Object(ee.c)(Ze)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts": function(e, t, s) {
 			"use strict";
@@ -7328,4 +7329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.2507bc59a46ac49e095d.js.map
+//# sourceMappingURL=Subreddit.fb96b20b8939b9d178ad.js.map

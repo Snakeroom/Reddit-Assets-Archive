@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.eebd900fae6f7dbb9598.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3fff9778dbd586de6e90.js
+// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -305,6 +305,7 @@
 					} = this.props;
 					return i.a.createElement("video", {
 						controls: e,
+						tabIndex: e ? 0 : -1,
 						muted: t || this.state.isMuteForced,
 						onEnded: s,
 						onLoadedData: r,
@@ -903,7 +904,9 @@
 						className: V.a.body
 					}, i.a.createElement(T.a, {
 						to: this.props.location,
-						onClick: this.onStreamClicked
+						onClick: this.onStreamClicked,
+						className: V.a.previewLink,
+						tabIndex: 0
 					}, i.a.createElement("div", {
 						className: V.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
@@ -1258,4 +1261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.eebd900fae6f7dbb9598.js.map
+//# sourceMappingURL=RpanListingUnit.3fff9778dbd586de6e90.js.map

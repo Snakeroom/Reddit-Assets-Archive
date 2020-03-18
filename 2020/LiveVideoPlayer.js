@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.02c7235cb67f38002009.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.bb0b518bbb541da096fa.js
+// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -152,12 +152,12 @@
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(I({
+					} else t(_({
 						streamId: a,
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, f = e => async (t, s) => Object(d.b)(s()) ? t(_(e)) : t(E()), E = () => async (e, t, s) => {
+				}, f = e => async (t, s) => Object(d.b)(s()) ? t(P(e)) : t(E()), E = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
@@ -172,11 +172,11 @@
 							models: t,
 							utcTimeStamp: n
 						}))
-					} else e(P({
+					} else e(I({
 						error: a.error,
 						utcTimeStamp: n
 					}))
-				}, _ = e => async (t, s, r) => {
+				}, P = e => async (t, s, r) => {
 					let {
 						gqlContext: i
 					} = r;
@@ -193,13 +193,13 @@
 							models: r,
 							utcTimeStamp: c
 						}))
-					} else t(P({
+					} else t(I({
 						error: n.error,
 						utcTimeStamp: c
 					}))
-				}, I = e => async t => {
+				}, _ = e => async t => {
 					t(v(e))
-				}, P = e => async t => {
+				}, I = e => async t => {
 					t(R(e))
 				}
 		},
@@ -256,6 +256,7 @@
 					} = this.props;
 					return i.a.createElement("video", {
 						controls: e,
+						tabIndex: e ? 0 : -1,
 						muted: t || this.state.isMuteForced,
 						onEnded: s,
 						onLoadedData: r,
@@ -388,40 +389,43 @@
 				c = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				d = s("./src/reddit/components/HlsVideo/index.tsx"),
 				u = s("./src/reddit/components/ImageWithFallback/index.tsx"),
-				l = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				h = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
-				m = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
-				b = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
-				p = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
+				l = s("./src/reddit/constants/keycodes.ts"),
+				h = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
+				m = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
+				b = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
+				p = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
+				v = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var v = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				R = s.n(v);
+			var R = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				S = s.n(R);
 			s.d(t, "LiveVideoPlayer", (function() {
-				return w
-			})), s.d(t, "Overlay", (function() {
 				return f
-			})), s.d(t, "LiveIndicator", (function() {
+			})), s.d(t, "Overlay", (function() {
 				return E
+			})), s.d(t, "LiveIndicator", (function() {
+				return P
 			})), s.d(t, "Duration", (function() {
 				return _
 			})), s.d(t, "MutedToggleButton", (function() {
 				return I
 			})), s.d(t, "PausedToggleButton", (function() {
-				return P
+				return T
 			}));
 			const {
-				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(n.c)({
-				unavailableVideoUrl: p.p
-			}), y = Object(a.b)(g, (e, t) => ({
+				fbt: g
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(n.c)({
+				unavailableVideoUrl: v.p
+			}), w = Object(a.b)(y, (e, t) => ({
 				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
 			}));
-			class w extends r.Component {
+			class f extends r.Component {
 				constructor(e) {
 					super(e), this.onError = () => {
 						this.setState({
 							hasError: !0
 						})
+					}, this.onKeyPress = e => {
+						e.key === l.b.Enter && (e.preventDefault(), e.stopPropagation(), this.onTogglePaused())
 					}, this.onLevelLoaded = e => {
 						const {
 							live: t,
@@ -501,7 +505,7 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: R.a.LiveVideoPlayer
+						className: S.a.LiveVideoPlayer
 					}, this.shouldRenderPoster ? this.renderPoster() : null, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
@@ -509,7 +513,7 @@
 						duration: e,
 						live: t
 					} = this.state;
-					return i.a.createElement(f, null, t ? i.a.createElement(E, null) : e ? i.a.createElement(_, {
+					return i.a.createElement(E, null, t ? i.a.createElement(P, null) : e ? i.a.createElement(_, {
 						seconds: e
 					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
@@ -536,7 +540,7 @@
 					})
 				}
 				renderVideoUI() {
-					return i.a.createElement(i.a.Fragment, null, i.a.createElement(P, {
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(T, {
 						paused: this.isPaused,
 						onClick: this.onTogglePaused
 					}), i.a.createElement(I, {
@@ -551,18 +555,18 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = y(w);
-			const f = e => {
+			t.default = w(f);
+			const E = e => {
 					let {
 						children: t
 					} = e;
 					return i.a.createElement("div", {
-						className: R.a.Overlay
+						className: S.a.Overlay
 					}, t)
 				},
-				E = () => i.a.createElement("span", {
-					className: R.a.LiveIndicator
-				}, S._("Live", null, {
+				P = () => i.a.createElement("span", {
+					className: S.a.LiveIndicator
+				}, g._("Live", null, {
 					hk: "TwJSs"
 				})),
 				_ = e => {
@@ -570,7 +574,7 @@
 						seconds: t
 					} = e;
 					return i.a.createElement("span", {
-						className: R.a.Duration
+						className: S.a.Duration
 					}, (e => {
 						const t = Math.trunc(e / 3600),
 							s = Math.trunc(e % 3600 / 60),
@@ -584,39 +588,42 @@
 						onClick: s
 					} = e;
 					let r, a;
-					return t ? (r = S._("unmute", null, {
+					return t ? (r = g._("unmute", null, {
 						hk: "45ctbh"
-					}), a = i.a.createElement(l.a, {
-						className: R.a.MuteIcon
-					})) : (r = S._("mute", null, {
+					}), a = i.a.createElement(h.a, {
+						className: S.a.MuteIcon
+					})) : (r = g._("mute", null, {
 						hk: "3xjwI7"
-					}), a = i.a.createElement(b.a, {
-						className: R.a.VolumeIcon
+					}), a = i.a.createElement(p.a, {
+						className: S.a.VolumeIcon
 					})), i.a.createElement("button", {
 						"aria-label": r,
-						className: R.a.MutedToggleButton,
+						className: S.a.MutedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
+						},
+						onKeyPress: e => {
+							e.stopPropagation()
 						}
 					}, a)
 				},
-				P = e => {
+				T = e => {
 					let {
 						paused: t,
 						onClick: s
 					} = e;
 					let r, a;
-					return t ? (r = S._("play", null, {
+					return t ? (r = g._("play", null, {
 						hk: "2xeIj3"
-					}), a = i.a.createElement(m.a, {
-						className: R.a.PlayIcon
-					})) : (r = S._("pause", null, {
+					}), a = i.a.createElement(b.a, {
+						className: S.a.PlayIcon
+					})) : (r = g._("pause", null, {
 						hk: "3jTrMB"
-					}), a = i.a.createElement(h.a, {
-						className: R.a.PauseIcon
+					}), a = i.a.createElement(m.a, {
+						className: S.a.PauseIcon
 					})), i.a.createElement("button", {
 						"aria-label": r,
-						className: R.a.PausedToggleButton,
+						className: S.a.PausedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						}
@@ -625,4 +632,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.02c7235cb67f38002009.js.map
+//# sourceMappingURL=LiveVideoPlayer.bb0b518bbb541da096fa.js.map
