@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.709c7c2445859e1dacaf.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.ccc34509c3d01ec32307.js
+// Retrieved at 3/18/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
@@ -27,26 +27,26 @@
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "d", (function() {
-				return h
+				return f
 			})), a.d(t, "a", (function() {
 				return x
 			})), a.d(t, "b", (function() {
-				return g
+				return D
 			})), a.d(t, "c", (function() {
-				return R
+				return E
 			}));
 			a("./node_modules/core-js/modules/es6.symbol.js");
 			var s = a("./node_modules/react/index.js"),
 				r = a.n(s),
 				n = a("./src/lib/classNames/index.ts"),
-				l = a("./src/lib/lessComponent.tsx"),
-				o = a("./src/reddit/controls/Input/index.tsx"),
-				i = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				o = a("./src/lib/lessComponent.tsx"),
+				i = a("./src/reddit/controls/Input/index.tsx"),
+				l = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				d = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				c = a.n(d);
+				u = a.n(d);
 
-			function u() {
-				return (u = Object.assign || function(e) {
+			function c() {
+				return (c = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -63,87 +63,87 @@
 				}
 				return a
 			};
-			const p = l.a.div("icon", c.a),
-				b = l.a.textarea("textarea", c.a),
-				E = l.a.span("Invalid", c.a);
-			var h, x;
+			const p = o.a.div("icon", u.a),
+				b = o.a.textarea("textarea", u.a),
+				h = o.a.span("Invalid", u.a);
+			var f, x;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
-			}(h || (h = {})),
+			}(f || (f = {})),
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(x || (x = {}));
-			const D = e => r.a.createElement("div", {
-					className: Object(n.a)(e.isRequired && c.a.required, e.className, Object.assign({
-						[c.a.container]: !e.isTextarea,
-						[c.a.textareaContainer]: !!e.isTextarea
+			const g = e => r.a.createElement("div", {
+					className: Object(n.a)(e.isRequired && u.a.required, e.className, Object.assign({
+						[u.a.container]: !e.isTextarea,
+						[u.a.textareaContainer]: !!e.isTextarea
 					}, !!e.isTextarea && {
-						[c.a.mValid]: e.state === h.Valid,
-						[c.a.mInvalid]: e.state === h.Invalid,
-						[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
+						[u.a.mValid]: e.state === f.Valid,
+						[u.a.mInvalid]: e.state === f.Invalid,
+						[u.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 					}))
 				}, r.a.createElement("label", {
 					className: Object(n.a)({
-						[c.a.field]: !e.isTextarea,
-						[c.a.textareaField]: !!e.isTextarea
+						[u.a.field]: !e.isTextarea,
+						[u.a.textareaField]: !!e.isTextarea
 					})
 				}, e.children, e.label && r.a.createElement("span", {
-					className: c.a.label
+					className: u.a.label
 				}, e.label), !!e.state && r.a.createElement(p, {
 					className: Object(n.a)({
-						[c.a.mValid]: e.state === h.Valid,
-						[c.a.mInvalid]: e.state === h.Invalid
+						[u.a.mValid]: e.state === f.Valid,
+						[u.a.mInvalid]: e.state === f.Invalid
 					})
-				}, e.state === h.Valid && r.a.createElement(i.a, null), e.state === h.Invalid && r.a.createElement(E, null, "!")))),
-				g = e => {
+				}, e.state === f.Valid && r.a.createElement(l.a, null), e.state === f.Invalid && r.a.createElement(h, null, "!")))),
+				D = e => {
 					const {
 						backgroundColorState: t,
 						className: a,
 						inputRef: s,
-						isRequired: l,
-						label: i,
+						isRequired: o,
+						label: l,
 						onKeyDown: d,
 						state: p
 					} = e, b = m(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return r.a.createElement(D, {
+					return r.a.createElement(g, {
 						backgroundColorState: t,
 						className: a,
-						isRequired: l,
-						label: i,
+						isRequired: o,
+						label: l,
 						state: p
-					}, r.a.createElement(o.a, u({}, b, {
-						className: Object(n.a)(c.a.input, c.a.control, {
-							[c.a.hasState]: !!e.state
+					}, r.a.createElement(i.a, c({}, b, {
+						className: Object(n.a)(u.a.input, u.a.control, {
+							[u.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
 						innerRef: s,
 						onKeyDown: d
 					})))
 				},
-				R = e => {
+				E = e => {
 					const {
 						backgroundColorState: t,
 						className: a,
 						inputRef: s,
-						isRequired: l,
-						label: o,
-						onKeyDown: i,
+						isRequired: o,
+						label: i,
+						onKeyDown: l,
 						state: d
 					} = e, p = m(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return r.a.createElement(D, {
+					return r.a.createElement(g, {
 						backgroundColorState: t,
 						className: a,
-						isRequired: l,
-						label: o,
+						isRequired: o,
+						label: i,
 						state: d,
 						isTextarea: !0
-					}, r.a.createElement(b, u({}, p, {
+					}, r.a.createElement(b, c({}, p, {
 						className: Object(n.a)({
-							[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
+							[u.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 						}),
 						"data-empty": !e.value,
 						innerRef: s,
-						onKeyDown: i
+						onKeyDown: l
 					})))
 				}
 		},
@@ -166,10 +166,10 @@
 					if (!e) return;
 					t.preventDefault();
 					const a = t.target,
-						s = l(a);
+						s = o(a);
 					e(s)
 				},
-				l = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, t) => (t.name && (e[t.name] = t.value), e), {}) : {}
+				o = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, t) => (t.name && (e[t.name] = t.value), e), {}) : {}
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, a) {
 			"use strict";
@@ -220,48 +220,46 @@
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./node_modules/react/index.js"),
 				n = a.n(r),
-				l = a("./node_modules/react-redux/es/index.js"),
-				o = a("./src/reddit/actions/toaster.ts"),
-				i = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				o = a("./node_modules/react-redux/es/index.js"),
+				i = a("./src/reddit/actions/toaster.ts"),
+				l = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
 				d = a("./src/reddit/contexts/ApiContext.tsx"),
-				c = a("./src/reddit/controls/Button/index.tsx"),
-				u = a("./src/reddit/controls/Form/index.tsx"),
+				u = a("./src/reddit/controls/Button/index.tsx"),
+				c = a("./src/reddit/controls/Form/index.tsx"),
 				m = a("./src/reddit/controls/RadioInput/index.tsx"),
 				p = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				b = a("./src/graphql/operations/RequestUserDataExport.json"),
-				E = a("./src/lib/makeGqlRequest/index.ts"),
-				h = (e, t) => Object(E.a)(e, Object.assign({}, b, {
+				h = a("./src/lib/makeGqlRequest/index.ts"),
+				f = (e, t) => Object(h.a)(e, Object.assign({}, b, {
 					variables: t
 				}));
 			const x = () => "/message/inbox";
-			var D, g = a("./src/reddit/i18n/components.tsx"),
-				R = a("./src/reddit/i18n/utils.ts"),
-				f = a("./src/reddit/icons/svgs/SnooHappy/index.tsx"),
-				q = a("./src/reddit/models/Toast/index.ts");
+			var g, D = a("./src/reddit/icons/svgs/SnooHappy/index.tsx"),
+				E = a("./src/reddit/models/Toast/index.ts");
 			! function(e) {
 				e.FROM_BEGINNING = "FROM_BEGINNING", e.BOUNDED = "BOUNDED"
-			}(D || (D = {}));
-			var y = a("./src/reddit/selectors/user.ts"),
-				N = a("./src/reddit/selectors/userDataRequest.ts"),
-				v = a("./node_modules/reselect/es/index.js"),
+			}(g || (g = {}));
+			var R = a("./src/reddit/selectors/user.ts"),
+				_ = a("./src/reddit/selectors/userDataRequest.ts"),
+				q = a("./node_modules/reselect/es/index.js"),
 				S = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
-				_ = a.n(S);
-			const F = Object(v.c)({
-					currentUser: y.i,
-					userDataExportEligibility: N.a,
-					userDataRequestPageLoadingApiState: N.b
+				N = a.n(S);
+			const v = Object(q.c)({
+					currentUser: R.i,
+					userDataExportEligibility: _.a,
+					userDataRequestPageLoadingApiState: _.b
 				}),
-				w = Object(l.b)(F, e => ({
-					showError: t => e(o.e({
+				y = Object(o.b)(v, e => ({
+					showError: t => e(i.e({
 						id: "requestUserDataExportErrorToast",
-						kind: q.b.Error,
+						kind: E.b.Error,
 						text: t
 					})),
-					dismissErrorToast: () => e(o.f("requestUserDataExportErrorToast"))
+					dismissErrorToast: () => e(i.f("requestUserDataExportErrorToast"))
 				})),
 				k = "2005-06-23",
-				C = () => (new Date).toISOString().substr(0, 10);
-			class O extends n.a.Component {
+				F = () => (new Date).toISOString().substr(0, 10);
+			class w extends n.a.Component {
 				constructor(e) {
 					super(e), this.onExportRangeChange = e => {
 						this.setState({
@@ -285,7 +283,7 @@
 							minAllowedDate: r,
 							maxAllowedDate: n
 						} = this.state;
-						if (a === D.BOUNDED) {
+						if (a === g.BOUNDED) {
 							if (!e) return s.fbt._("Please provide a start date", null, {
 								hk: "3JjpuY"
 							});
@@ -296,14 +294,14 @@
 							if (isNaN(a)) return s.fbt._("Please provide a valid start date", null, {
 								hk: "43QT5x"
 							});
-							const l = Date.parse(t);
-							if (isNaN(l)) return s.fbt._("Please provide a valid end date", null, {
+							const o = Date.parse(t);
+							if (isNaN(o)) return s.fbt._("Please provide a valid end date", null, {
 								hk: "Nd5Th"
 							});
-							if (l < a) return s.fbt._("The start date must be before the end date", null, {
+							if (o < a) return s.fbt._("The start date must be before the end date", null, {
 								hk: "17dRot"
 							});
-							if (l > Date.parse(n)) return s.fbt._("The latest allowed end date is today: {maxAllowedDate}", [s.fbt._param("maxAllowedDate", C())], {
+							if (o > Date.parse(n)) return s.fbt._("The latest allowed end date is today: {maxAllowedDate}", [s.fbt._param("maxAllowedDate", F())], {
 								hk: "3sJbkJ"
 							});
 							if (a < Date.parse(r)) return s.fbt._("The earliest allowed start date is Reddit launch date: {minAllowedDate}", [s.fbt._param("minAllowedDate", k)], {
@@ -323,7 +321,7 @@
 								startDate: this.state.exportStartDate,
 								endDate: this.state.exportEndDate
 							},
-							a = await h(this.props.gqlContext(), {
+							a = await f(this.props.gqlContext(), {
 								input: t
 							});
 						a.ok ? this.setState({
@@ -333,39 +331,54 @@
 							dataRequestSubmissionError: a.error,
 							dataRequestSubmissionPending: !1,
 							dataRequestSubmissionSuccess: !1
-						}), this.props.showError(Object(R.c)("Something went wrong")))
+						}), this.props.showError(s.fbt._("Something went wrong", null, {
+							hk: "22u7ha"
+						})))
 					}, this.renderWarning = () => n.a.createElement("div", {
-						className: _.a.userDataRequestFormWarning
+						className: N.a.userDataRequestFormWarning
 					}, n.a.createElement("div", {
-						className: _.a.userDataRequestFormWarningHeader
-					}, n.a.createElement(g.c, null, "Sorry, you can only submit one request every 30 days.")), n.a.createElement("div", {
-						className: _.a.userDataRequestFormWarningText
+						className: N.a.userDataRequestFormWarningHeader
+					}, s.fbt._("Sorry, you can only submit one request every 30 days.", null, {
+						hk: "iZdcg"
+					})), n.a.createElement("div", {
+						className: N.a.userDataRequestFormWarningText
 					}, n.a.createElement("p", {
-						className: _.a.userDataRequestFormWarningParagraph
-					}, n.a.createElement(g.c, null, "It looks like we’ve already received this kind of request from you in the last 30 days. For an updated copy of your data, please come back after 30 days have passed since your last request.")), n.a.createElement("p", {
-						className: _.a.userDataRequestFormWarningParagraph
-					}, n.a.createElement(g.c, null, "If a download link in the message you receive expires, you can request an updated link by responding to the"), n.a.createElement("a", {
-						className: _.a.link,
+						className: N.a.userDataRequestFormWarningParagraph
+					}, s.fbt._("It looks like we’ve already received this kind of request from you in the last 30 days. For an updated copy of your data, please come back after 30 days have passed since your last request.", null, {
+						hk: "1Gc4vN"
+					})), n.a.createElement("p", {
+						className: N.a.userDataRequestFormWarningParagraph
+					}, s.fbt._("If a download link in the message you receive expires, you can request an updated link by responding to the {messageLink} For other questions or issues relating to your download, you can contact us at {mailToLink} .", [s.fbt._param("messageLink", n.a.createElement("a", {
+						className: N.a.link,
 						target: "_blank",
+						rel: "noopener noreferrer",
 						href: x()
-					}, n.a.createElement(g.c, null, " message ")), n.a.createElement(g.c, null, "For other questions or issues relating to your download, you can contact us at"), n.a.createElement("a", {
-						className: _.a.link,
+					}, " ", s.fbt._("message", null, {
+						hk: "l6Y2C"
+					}), ".")), s.fbt._param("mailToLink", n.a.createElement("a", {
+						className: N.a.link,
 						href: "mailto:redditdatarequests@reddit.com"
-					}, n.a.createElement(g.c, null, " RedditDataRequests@reddit.com"), ".")))), this.renderForm = e => n.a.createElement(n.a.Fragment, null, this.props.userDataRequestPageLoadingApiState.success && !this.props.userDataExportEligibility && this.renderWarning(), n.a.createElement(u.a, {
-						className: _.a.userDataRequestForm,
+					}, " RedditDataRequests@reddit.com"))], {
+						hk: "2MwRjU"
+					})))), this.renderForm = e => n.a.createElement(n.a.Fragment, null, this.props.userDataRequestPageLoadingApiState.success && !this.props.userDataExportEligibility && this.renderWarning(), n.a.createElement(c.a, {
+						className: N.a.userDataRequestForm,
 						onSubmit: this.onSubmit
 					}, n.a.createElement("div", {
-						className: _.a.userDataRequestFormDescription
-					}, n.a.createElement(g.c, null, "Complete the form below to request a copy of data Reddit has about your Reddit account. Once submitted, please allow up to 30 days for us to process your request.")), n.a.createElement("fieldset", {
-						className: _.a.userDataRequestUsernameFormFieldSet
-					}, n.a.createElement(i.b, {
-						className: _.a.labeledInput,
+						className: N.a.userDataRequestFormDescription
+					}, s.fbt._("Complete the form below to request a copy of data Reddit has about your Reddit account. Once submitted, please allow up to 30 days for us to process your request.", null, {
+						hk: "2xcwXN"
+					})), n.a.createElement("fieldset", {
+						className: N.a.userDataRequestUsernameFormFieldSet
+					}, n.a.createElement(l.b, {
+						className: N.a.labeledInput,
 						disabled: !0,
 						contentEditable: !1,
-						label: Object(R.c)("Username"),
+						label: s.fbt._("Username", null, {
+							hk: "44aXoH"
+						}),
 						value: this.props.currentUser.displayText
 					})), n.a.createElement("fieldset", {
-						className: _.a.userDataRequestExportRangeFormFieldSet,
+						className: N.a.userDataRequestExportRangeFormFieldSet,
 						disabled: e
 					}, n.a.createElement(m.a, {
 						value: this.state.exportRange,
@@ -373,29 +386,39 @@
 						onChange: this.onExportRangeChange,
 						disabled: e
 					}, n.a.createElement(p.a, {
-						className: _.a.radioOption,
+						className: N.a.radioOption,
 						showButton: !0,
 						disabled: e,
-						value: D.FROM_BEGINNING
-					}, n.a.createElement("span", null, n.a.createElement(g.c, null, "I want data from my full time at Reddit"))), n.a.createElement(p.a, {
-						className: _.a.radioOption,
+						value: g.FROM_BEGINNING
+					}, n.a.createElement("span", null, s.fbt._("I want data from my full time at Reddit", null, {
+						hk: "6aST3"
+					}))), n.a.createElement(p.a, {
+						className: N.a.radioOption,
 						showButton: !0,
 						disabled: e,
-						value: D.BOUNDED
-					}, n.a.createElement("span", null, n.a.createElement(g.c, null, "I want data from a specific date range"))))), this.state.exportRange === D.BOUNDED && n.a.createElement("fieldset", null, n.a.createElement("div", {
-						className: _.a.userDataRequestFormDatesContainer
-					}, n.a.createElement(i.b, {
-						className: _.a.labeledInputDate,
-						label: Object(R.c)("Start date"),
+						value: g.BOUNDED
+					}, n.a.createElement("span", null, s.fbt._("I want data from a specific date range", null, {
+						hk: "2RuMs1"
+					}))))), this.state.exportRange === g.BOUNDED && n.a.createElement("fieldset", null, n.a.createElement("div", {
+						className: N.a.userDataRequestFormDatesContainer
+					}, n.a.createElement(l.b, {
+						className: N.a.labeledInputDate,
+						label: s.fbt._("Start date", null, {
+							hk: "2xsMsG"
+						}),
 						onChange: this.onExportStartDateChange,
 						disabled: e,
 						name: "startDate",
 						type: "date",
 						min: this.state.minAllowedDate,
 						value: this.state.exportStartDate
-					}), n.a.createElement("span", null, n.a.createElement(g.c, null, "to")), n.a.createElement(i.b, {
-						className: _.a.labeledInputDate,
-						label: Object(R.c)("End date"),
+					}), n.a.createElement("span", null, s.fbt._("to", null, {
+						hk: "RQZBx"
+					})), n.a.createElement(l.b, {
+						className: N.a.labeledInputDate,
+						label: s.fbt._("End date", null, {
+							hk: "FSWrX"
+						}),
 						name: "endDate",
 						onChange: this.onExportEndDateChange,
 						disabled: e,
@@ -403,42 +426,58 @@
 						max: this.state.maxAllowedDate,
 						value: this.state.exportEndDate
 					}))), n.a.createElement("fieldset", {
-						className: _.a.submitButtonPanel
-					}, n.a.createElement(c.f, {
-						className: _.a.submitButton,
+						className: N.a.submitButtonPanel
+					}, n.a.createElement(u.f, {
+						className: N.a.submitButton,
 						disabled: e
-					}, n.a.createElement(g.c, null, "Submit"))))), this.renderConfirmationPage = () => n.a.createElement(u.a, {
-						className: _.a.userDataRequestForm
+					}, s.fbt._("Submit", null, {
+						hk: "3BVOia"
+					}))))), this.renderConfirmationPage = () => n.a.createElement(c.a, {
+						className: N.a.userDataRequestForm
 					}, n.a.createElement("div", {
-						className: _.a.userDataRequestFormTitle
-					}, n.a.createElement(g.c, null, "Request received"), n.a.createElement(f.a, {
-						className: _.a.userDataRequestFormTitleIcon
+						className: N.a.userDataRequestFormTitle
+					}, s.fbt._("Request received", null, {
+						hk: "3v2nys"
+					}), n.a.createElement(D.a, {
+						className: N.a.userDataRequestFormTitleIcon
 					})), n.a.createElement("p", {
-						className: _.a.userDataRequestFormDescription
-					}, n.a.createElement(g.c, null, "Thanks, we've received your request.")), n.a.createElement("p", {
-						className: _.a.userDataRequestFormDescription
-					}, n.a.createElement(g.c, null, "Once we've processed your request, a temporary download link will be sent to your Reddit"), n.a.createElement("a", {
-						className: _.a.link,
+						className: N.a.userDataRequestFormDescription
+					}, s.fbt._("Thanks, we've received your request.", null, {
+						hk: "2oEtI2"
+					})), n.a.createElement("p", {
+						className: N.a.userDataRequestFormDescription
+					}, s.fbt._("Once we've processed your request, a temporary download link will be sent to your Reddit {redditMessageLink} You will be able to download a copy of your data using the link for approximately seven days from the time you receive it.", [s.fbt._param("redditMessageLink", n.a.createElement("a", {
+						className: N.a.link,
 						target: "_blank",
+						rel: "noopener noreferrer",
 						href: x()
-					}, n.a.createElement(g.c, null, " message inbox ")), n.a.createElement(g.c, null, ".You will be able to download a copy of your data using the link for approximately seven days from the time you receive it.")), n.a.createElement("p", {
-						className: _.a.userDataRequestFormDescription
-					}, n.a.createElement(g.c, null, "If a download link in the message you receive expires, you can request an updated link by responding to the"), n.a.createElement("a", {
-						className: _.a.link,
+					}, " ", s.fbt._("message inbox", null, {
+						hk: "1uMHSW"
+					}), "."))], {
+						hk: "2BtAFG"
+					})), n.a.createElement("p", {
+						className: N.a.userDataRequestFormDescription
+					}, s.fbt._("If a download link in the message you receive expires, you can request an updated link by responding to the {redditMessageLink} For other questions or issues relating to your download, you can contact us at {mailToLink}", [s.fbt._param("redditMessageLink", n.a.createElement("a", {
+						className: N.a.link,
 						target: "_blank",
+						rel: "noopener noreferrer",
 						href: x()
-					}, n.a.createElement(g.c, null, " message ")), n.a.createElement(g.c, null, "For other questions or issues relating to your download, you can contact us at"), n.a.createElement("a", {
-						className: _.a.link,
+					}, " ", s.fbt._("message", null, {
+						hk: "3D4f7Z"
+					}), ".")), s.fbt._param("mailToLink", n.a.createElement("a", {
+						className: N.a.link,
 						href: "mailto:redditdatarequests@reddit.com"
-					}, n.a.createElement(g.c, null, " RedditDataRequests@reddit.com"), "."))), this.state = {
+					}, " RedditDataRequests@reddit.com."))], {
+						hk: "3h6wSQ"
+					}))), this.state = {
 						dataRequestSubmissionError: null,
 						dataRequestSubmissionPending: !1,
 						dataRequestSubmissionSuccess: !1,
-						exportRange: D.FROM_BEGINNING,
+						exportRange: g.FROM_BEGINNING,
 						exportStartDate: k,
-						exportEndDate: C(),
+						exportEndDate: F(),
 						minAllowedDate: k,
-						maxAllowedDate: C()
+						maxAllowedDate: F()
 					}
 				}
 				render() {
@@ -447,14 +486,16 @@
 					return n.a.createElement("div", {
 						className: this.props.className
 					}, n.a.createElement("div", {
-						className: _.a.content
+						className: N.a.content
 					}, n.a.createElement("h1", {
-						className: _.a.userDataRequestPageHeader
-					}, n.a.createElement(g.c, null, "Request your Reddit data")), this.state.dataRequestSubmissionSuccess ? this.renderConfirmationPage() : this.renderForm(e)))
+						className: N.a.userDataRequestPageHeader
+					}, s.fbt._("Request your Reddit data", null, {
+						hk: "1eLifT"
+					})), this.state.dataRequestSubmissionSuccess ? this.renderConfirmationPage() : this.renderForm(e)))
 				}
 			}
-			t.default = Object(d.b)(w(O))
+			t.default = Object(d.b)(y(w))
 		}
 	}
 ]);
-//# sourceMappingURL=UserDataRequestPage.709c7c2445859e1dacaf.js.map
+//# sourceMappingURL=UserDataRequestPage.ccc34509c3d01ec32307.js.map

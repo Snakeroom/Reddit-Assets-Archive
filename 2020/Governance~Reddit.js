@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9ae0db9aefd36ec3a9f5.js
-// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.93ae514d65f3accc6eaa.js
+// Retrieved at 3/18/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -26749,16 +26749,19 @@
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return s
+				return o
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function r(e) {
+			function s(e) {
 				return e[0].toUpperCase() + e.slice(1)
 			}
 
-			function s(e) {
-				return "extra" in e ? "string" == typeof e.extra ? e.extra : Object.keys(e.extra).map(t => e.extra[t]).map(r).join(" ") : "Something wen't wrong. Please try again later."
+			function o(e) {
+				return "extra" in e ? "string" == typeof e.extra ? e.extra : Object.keys(e.extra).map(t => e.extra[t]).map(s).join(" ") : r.fbt._("Something went wrong. Please try again later.", null, {
+					hk: "16ibYk"
+				})
 			}
 		},
 		"./src/reddit/helpers/graphql/helpers.ts": function(e, t, n) {
@@ -62247,4 +62250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9ae0db9aefd36ec3a9f5.js.map
+//# sourceMappingURL=Governance~Reddit.93ae514d65f3accc6eaa.js.map
