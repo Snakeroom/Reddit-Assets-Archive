@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.2ed9923f1615226eb0b0.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.cde77ae24e6c7cee0bc9.js
+// Retrieved at 3/18/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -230,6 +230,9 @@
 		},
 		"./src/reddit/components/Media/MediaContainer/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
@@ -269,11 +272,13 @@
 					})
 				}, e.children))
 			};
-			t.a = e => {
-				if (!e.isListing && !e.alwaysWrapMedia || e.isExpando) {
-					return r.a.Children.only(e.children) || r.a.createElement("div", null)
+			class u extends r.a.Component {
+				render() {
+					if (!this.props.isListing && !this.props.alwaysWrapMedia || this.props.isExpando) {
+						return r.a.Children.only(this.props.children) || r.a.createElement("div", null)
+					}
+					return r.a.createElement(l, this.props)
 				}
-				return r.a.createElement(l, e)
 			}
 		},
 		"./src/reddit/components/Media/VideoBox/index.m.less": function(e, t, n) {
@@ -408,23 +413,24 @@
 					} = t;
 					return {
 						onBufferingChanged: t => {
-							e(t ? l.w(n) : l.I(n))
+							e(t ? l.x(n) : l.K(n))
 						},
-						onLoadStarted: t => e(l.v(n, t)),
-						onMetadataReceived: t => e(l.H({
+						onLoadStarted: t => e(l.w(n, t)),
+						onMetadataReceived: t => e(l.J({
 							metadata: t,
 							postId: n
 						})),
-						onPaused: () => e(l.D({
+						onPaused: () => e(l.F({
 							postId: n
 						})),
-						onPlayable: t => e(l.E(n, t)),
-						onPlaying: () => e(l.G(n)),
-						onWatched: () => e(l.x(n)),
-						onViewableImpression: () => e(l.B(n)),
-						onFullyViewableImpression: () => e(l.A(n)),
-						onPlayedWithSound: () => e(l.F(n)),
-						onWatchedPercent: t => e(l.O(t, n))
+						onPlayable: t => e(l.G(n, t)),
+						onPlaying: () => e(l.I(n)),
+						onWatched: () => e(l.y(n)),
+						onViewableImpression: () => e(l.D(n)),
+						onFullyViewableImpression: () => e(l.C(n)),
+						onMRCViewableImpression: () => e(l.B(n)),
+						onPlayedWithSound: () => e(l.H(n)),
+						onWatchedPercent: t => e(l.Q(t, n))
 					}
 				});
 			class v extends i.a.Component {
@@ -1800,4 +1806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.2ed9923f1615226eb0b0.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.cde77ae24e6c7cee0bc9.js.map
