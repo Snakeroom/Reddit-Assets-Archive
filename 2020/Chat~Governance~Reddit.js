@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.055a4a4fce851d5e4bc5.js
-// Retrieved at 3/18/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e3661194988071e4330e.js
+// Retrieved at 3/18/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2220,9 +2220,6 @@
 						communities: {
 							en: "Communities"
 						},
-						communitiesTalkingAboutThis: {
-							en: "Communities talking about this"
-						},
 						continueBrowsingIn: {
 							en: "Continue browsing in %{subredditName}"
 						},
@@ -2238,23 +2235,8 @@
 						seeAllPostsIn: {
 							en: "See all posts in %{subredditName}"
 						},
-						subscribers: {
-							en: "%{number} members"
-						},
-						topContentLast: {
-							en: "Top posts from the past %{range}"
-						},
 						topPost: {
 							en: "Top post"
-						},
-						topPostsAcrossReddit: {
-							en: "Top posts across reddit "
-						},
-						topPostsInCategory: {
-							en: "Top %{category} Posts"
-						},
-						topSubredditsInCategory: {
-							en: "Top %{category} Communities"
 						},
 						trendingToday: {
 							en: "Trending today"
@@ -11753,14 +11735,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("6bad5b0-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("e0bfa06-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6bad5b0-production",
+						release: "e0bfa06-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12063,7 +12045,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6bad5b0-production",
+							releaseClient: "e0bfa06-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17778,4 +17760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.055a4a4fce851d5e4bc5.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.e3661194988071e4330e.js.map

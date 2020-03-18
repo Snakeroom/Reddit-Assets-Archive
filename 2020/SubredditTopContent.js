@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.e854110f0a6c665b5bb0.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a06cc305441cf1adeb16.js
+// Retrieved at 3/18/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -100,45 +100,44 @@
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t);
-			var n = s("./node_modules/lodash/memoize.js"),
-				o = s.n(n),
-				r = s("./node_modules/react/index.js"),
-				i = s.n(r),
-				c = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				l = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/lodash/memoize.js"),
+				r = s.n(o),
+				i = s("./node_modules/react/index.js"),
+				c = s.n(i),
+				d = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				l = s("./node_modules/reselect/es/index.js"),
 				p = s("./src/lib/constants/index.ts"),
 				u = s("./src/reddit/components/DiscoveryUnit/Layout/index.tsx"),
 				m = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
 				h = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				x = s("./src/reddit/components/Widgets/Base/index.tsx"),
-				g = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				b = s("./src/reddit/constants/experiments.ts"),
+				b = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = s("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.D)(e) || b.Bb.ShowTopContent === Object(f.c)(e, {
+			const O = e => Object(y.D)(e) || g.Bb.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: b.xb
+				experimentName: g.xb
 			});
 			var C = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
 				j = s.n(_);
-			const v = Object(c.b)(() => Object(a.c)({
+			const v = Object(d.b)(() => Object(l.c)({
 				inSubredditTopContentExperiment: O,
-				language: y.O,
 				subredditUrl: C.d
 			}), e => ({
-				trackDiscoveryUnitView: t => e((e, s) => g.f(s(), t)),
-				trackDismissClick: t => e((e, s) => g.h(s(), t)),
-				trackPostView: o()((t, s, n) => e((e, o) => g.q(o(), t, s, n)), (e, t) => {
+				trackDiscoveryUnitView: t => e((e, s) => b.f(s(), t)),
+				trackDismissClick: t => e((e, s) => b.h(s(), t)),
+				trackPostView: r()((t, s, n) => e((e, o) => b.q(o(), t, s, n)), (e, t) => {
 					let {
 						id: s
 					} = e;
 					return "".concat(s, "-").concat(t)
 				})
 			}));
-			class w extends i.a.Component {
+			class k extends c.a.Component {
 				constructor() {
 					super(...arguments), this.onCloseClick = () => {
 						const {
@@ -164,34 +163,34 @@
 					} = this.props;
 					if (!e || !s) return null;
 					const {
-						postIds: n,
-						range: o
-					} = s, r = "".concat(t).concat(p.P.TOP, "?t=").concat(o), c = i.a.createElement(x.a, {
+						postIds: o,
+						range: r
+					} = s, i = "".concat(t).concat(p.P.TOP, "?t=").concat(r), d = c.a.createElement(x.a, {
 						className: j.a.widgetHeader
-					}, i.a.createElement("button", {
+					}, c.a.createElement("button", {
 						className: j.a.closeButton,
 						onClick: this.onCloseClick
-					}, i.a.createElement(h.b, {
+					}, c.a.createElement(h.b, {
 						className: j.a.closeIcon,
 						"data-redditstyle": !0
-					})), i.a.createElement(d.a, {
+					})), c.a.createElement(a.a, {
 						className: j.a.headerLink,
-						to: r
-					}, Object(l.a)(this.props.language, "discoveryUnits.topContentLast", {
-						range: o
+						to: i
+					}, n.fbt._("Top posts from the past {range}", [n.fbt._param("range", r)], {
+						hk: "xhJKf"
 					})));
-					return i.a.createElement("div", {
+					return c.a.createElement("div", {
 						className: this.props.className
-					}, i.a.createElement(u.a, {
+					}, c.a.createElement(u.a, {
 						className: j.a.layout,
-						header: c,
+						header: d,
 						hidePadding: !0
-					}, i.a.createElement(m.a, {
+					}, c.a.createElement(m.a, {
 						discoveryUnit: this.props.discoveryUnit,
 						searchDiscoveryUnit: this.props.searchDiscoveryUnit,
 						isLoading: !1,
 						isMiniCard: !1,
-						items: n,
+						items: o,
 						searchOptions: this.props.searchOptions,
 						showSubreddit: !0,
 						showTopPosts: !0,
@@ -200,7 +199,7 @@
 					})))
 				}
 			}
-			t.default = v(w)
+			t.default = v(k)
 		},
 		"./src/reddit/components/GildModal/Loader.tsx": function(e, t, s) {
 			"use strict";
@@ -235,8 +234,8 @@
 				m = s("./src/lib/classNames/index.ts"),
 				h = s("./src/higherOrderComponents/withClickTracking.tsx"),
 				x = s("./src/reddit/components/PostContainer/index.m.less"),
-				g = s.n(x);
-			const b = Object(r.c)({
+				b = s.n(x);
+			const g = Object(r.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -276,7 +275,7 @@
 						})
 					}
 				}),
-				f = Object(a.a)(b),
+				f = Object(a.a)(g),
 				y = e => {
 					const t = Object(h.d)(e.target, e.currentTarget),
 						s = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
@@ -299,7 +298,7 @@
 						makePostContainerId: u,
 						playing: h,
 						post: x,
-						onClick: b,
+						onClick: g,
 						onPostContentClick: f,
 						onPostViewable: O,
 						style: C,
@@ -313,9 +312,9 @@
 							}, 1e3))
 						},
 						onClick: e => {
-							!this.cancelClick && e.button < 2 && (s(() => b && b(e, x))(e), f && y(e) && f(e, x))
+							!this.cancelClick && e.button < 2 && (s(() => g && g(e, x))(e), f && y(e) && f(e, x))
 						},
-						className: Object(m.a)(g.a.WrappedPost, c, "Post ".concat(x.id), {
+						className: Object(m.a)(b.a.WrappedPost, c, "Post ".concat(x.id), {
 							promotedlink: x.isSponsored
 						}),
 						id: u ? u(x.id) : x.id,
@@ -354,8 +353,8 @@
 			const m = ["center", "top"],
 				h = ["center", "bottom"],
 				x = c.a.div("Container", u.a),
-				g = Object(i.a)(d.b),
-				b = Object(a.t)({
+				b = Object(i.a)(d.b),
+				g = Object(a.t)({
 					isProfileListingPage: a.F
 				});
 			class f extends r.a.Component {
@@ -388,7 +387,7 @@
 						className: u.a.quarantineIcon
 					}), n.fbt._("quarantined", null, {
 						hk: "3hfN4T"
-					}), r.a.createElement(g, {
+					}), r.a.createElement(b, {
 						text: n.fbt._("This post was submitted in a quarantined community", null, {
 							hk: "1Rebnc"
 						}),
@@ -399,7 +398,7 @@
 					}))
 				}
 			}
-			t.a = b(f)
+			t.a = g(f)
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -492,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.e854110f0a6c665b5bb0.js.map
+//# sourceMappingURL=SubredditTopContent.a06cc305441cf1adeb16.js.map
