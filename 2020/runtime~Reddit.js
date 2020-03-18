@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.51f18221e0c3432fe988.js
-// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.975a308bfa9a043a41bd.js
+// Retrieved at 3/18/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -246,6 +246,7 @@
 					HarbergerTaxPurchaseModal: "HarbergerTaxPurchaseModal",
 					InboxPages: "InboxPages",
 					ManageChatRoomsModal: "ManageChatRoomsModal",
+					"ModQueue~ModQueuePages": "ModQueue~ModQueuePages",
 					ModQueue: "ModQueue",
 					ModToMemberShareModal: "ModToMemberShareModal",
 					ModerationDropdowns: "ModerationDropdowns",
@@ -465,6 +466,7 @@
 					HarbergerTaxPurchaseModal: "196cb8d9c4472b2a18a1",
 					InboxPages: "e6f607d683c8bbf29ca9",
 					ManageChatRoomsModal: "562616d746e443b1978a",
+					"ModQueue~ModQueuePages": "31d6cfe0d16ae931b73c",
 					ModQueue: "31d6cfe0d16ae931b73c",
 					ModToMemberShareModal: "8340b7372c995b7781f2",
 					ModerationDropdowns: "27946ba5f5e70882d80f",
@@ -712,6 +714,7 @@
 						HarbergerTaxPurchaseModal: "HarbergerTaxPurchaseModal",
 						InboxPages: "InboxPages",
 						ManageChatRoomsModal: "ManageChatRoomsModal",
+						"ModQueue~ModQueuePages": "ModQueue~ModQueuePages",
 						ModQueue: "ModQueue",
 						ModToMemberShareModal: "ModToMemberShareModal",
 						ModerationDropdowns: "ModerationDropdowns",
@@ -911,7 +914,7 @@
 						FrontpageSidebar: "f38f155dddce59ccad24",
 						Frontpage: "f56cccdb231eb54e18ea",
 						Topic: "f14b0a3d6c7613e4e30a",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "95819be53d214f22aa40",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "854c893e34e87b87bb26",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "cde77ae24e6c7cee0bc9",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "4119af84913c9e99b9cb",
 						PostDraft: "71e89112a184f29cdb0b",
@@ -931,7 +934,8 @@
 						HarbergerTaxPurchaseModal: "48bbcf1d0509661b9fe2",
 						InboxPages: "e0b11464ca6776f82138",
 						ManageChatRoomsModal: "434f3a487e352fa3bfd5",
-						ModQueue: "73aae2e249a97d2f35f2",
+						"ModQueue~ModQueuePages": "5842c629b39b1b4662d8",
+						ModQueue: "f9c774d49047685aea79",
 						ModToMemberShareModal: "c19e7327859e9a700831",
 						ModerationDropdowns: "892f9f9adabc2a24a746",
 						MultiredditAddSubredditModal: "c2f7b34a8a8e9068a7b8",
@@ -974,7 +978,7 @@
 						CollectionCommentsPage: "05f238fa3b9dbafe6e1d",
 						CommentsPage: "e609798f632ff64aeb79",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236": "1efb30c205e5d70890fa",
-						ModerationPages: "e78564d93d79ff1c17d6",
+						ModerationPages: "7a89a9d6edbbf5ed1652",
 						"vendors~PostCreation~RichTextEditor": "27926d85572bee947b13",
 						"vendors~PostCreation": "1b1379b71eff9278cb0c",
 						PostCreation: "994a6a4a3b26c93e3e6b",
@@ -1021,7 +1025,7 @@
 						"vendors~ModQueuePages": "b6ea725bcfc100d1dc90",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "96515d8e16542fbca8f7",
 						"ChatPost~ModQueuePages": "958241d26196fdc7a829",
-						ModQueuePages: "7ce99b5956a92b489251",
+						ModQueuePages: "232555eede53ac08e4b4",
 						ProfilePrivate: "839da55b6ae74709232e",
 						"vendors~SearchResults": "a8c3db8cad14b170a972",
 						SearchResults: "320aa5cdcf04511615db",
@@ -1094,7 +1098,7 @@
 						"reddit-components-Wiki-ModHubWikiManagement": "013688cc16ea7af959ff",
 						"reddit-components-ModHub-PostRequirements": "b711f5fd8e7c31a3aa9a",
 						"reddit-components-ModHub-TrafficStats": "2133c7677533c104cf77",
-						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "4b06a7c02f68d3fc1d6f",
+						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "51db1e743dc411095ada",
 						"reddit-components-ModHub-flairs-PostFlairManagement": "e6bf3a57bc553dca7c6d",
 						"reddit-components-ModHub-flairs-UserFlairManagement": "e0568b5a8793a954e50a",
 						"reddit-components-RecurringPostList-EditModal": "ad29dcca5cae3c9c562e",
@@ -1179,4 +1183,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.51f18221e0c3432fe988.js.map
+//# sourceMappingURL=runtime~Reddit.975a308bfa9a043a41bd.js.map
