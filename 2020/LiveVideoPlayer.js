@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.bb0b518bbb541da096fa.js
-// Retrieved at 3/18/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.2b98326e8902bb88766f.js
+// Retrieved at 3/18/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -96,7 +96,7 @@
 			s.d(t, "c", (function() {
 				return l
 			})), s.d(t, "a", (function() {
-				return S
+				return R
 			})), s.d(t, "b", (function() {
 				return g
 			})), s.d(t, "d", (function() {
@@ -125,8 +125,8 @@
 				b = Object(a.a)(n.L),
 				p = Object(a.a)(n.x),
 				v = Object(a.a)(n.J),
-				R = Object(a.a)(n.I),
-				S = Object(a.a)(n.r),
+				S = Object(a.a)(n.I),
+				R = Object(a.a)(n.r),
 				g = Object(a.a)(n.s),
 				y = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
@@ -152,12 +152,12 @@
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(_({
+					} else t(P({
 						streamId: a,
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, f = e => async (t, s) => Object(d.b)(s()) ? t(P(e)) : t(E()), E = () => async (e, t, s) => {
+				}, f = e => async (t, s) => Object(d.b)(s()) ? t(I(e)) : t(E()), E = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
@@ -172,11 +172,11 @@
 							models: t,
 							utcTimeStamp: n
 						}))
-					} else e(I({
+					} else e(_({
 						error: a.error,
 						utcTimeStamp: n
 					}))
-				}, P = e => async (t, s, r) => {
+				}, I = e => async (t, s, r) => {
 					let {
 						gqlContext: i
 					} = r;
@@ -193,14 +193,14 @@
 							models: r,
 							utcTimeStamp: c
 						}))
-					} else t(I({
+					} else t(_({
 						error: n.error,
 						utcTimeStamp: c
 					}))
-				}, _ = e => async t => {
+				}, P = e => async t => {
 					t(v(e))
-				}, I = e => async t => {
-					t(R(e))
+				}, _ = e => async t => {
+					t(S(e))
 				}
 		},
 		"./src/reddit/components/HlsVideo/index.tsx": function(e, t, s) {
@@ -396,18 +396,18 @@
 				p = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
 				v = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var R = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				S = s.n(R);
+			var S = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				R = s.n(S);
 			s.d(t, "LiveVideoPlayer", (function() {
 				return f
 			})), s.d(t, "Overlay", (function() {
 				return E
 			})), s.d(t, "LiveIndicator", (function() {
-				return P
-			})), s.d(t, "Duration", (function() {
-				return _
-			})), s.d(t, "MutedToggleButton", (function() {
 				return I
+			})), s.d(t, "Duration", (function() {
+				return P
+			})), s.d(t, "MutedToggleButton", (function() {
+				return _
 			})), s.d(t, "PausedToggleButton", (function() {
 				return T
 			}));
@@ -454,20 +454,17 @@
 							}
 						})
 					}, this.onTogglePaused = () => {
-						this.setState(e => {
-							let {
-								userPaused: t
-							} = e;
-							return {
-								userPaused: !t
-							}
-						})
+						this.setState(() => ({
+							userPaused: !this.isPaused,
+							userShowedIntent: !0
+						}))
 					}, this.state = {
 						duration: 0,
 						hasError: !1,
 						live: !1,
 						muted: !0,
 						userPaused: !1,
+						userShowedIntent: !1,
 						wasRemoved: !1
 					}
 				}
@@ -475,7 +472,7 @@
 					return !(this.state.wasRemoved || this.state.hasError)
 				}
 				get isPaused() {
-					return this.props.shouldPause || this.state.userPaused
+					return this.state.userShowedIntent ? this.state.userPaused : this.props.shouldPause
 				}
 				get shouldRenderOverlay() {
 					return this.shouldRenderVideo && this.hasPlayableMedia
@@ -500,12 +497,17 @@
 				get url() {
 					return this.hasPlayableMedia ? this.props.url : this.props.unavailableVideoUrl || ""
 				}
+				componentDidUpdate(e) {
+					this.props.shouldPause && !e.shouldPause && this.setState({
+						userShowedIntent: !1
+					})
+				}
 				componentWillUnmount() {
 					this.unsubscribeHeartbeat()
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: S.a.LiveVideoPlayer
+						className: R.a.LiveVideoPlayer
 					}, this.shouldRenderPoster ? this.renderPoster() : null, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
@@ -513,7 +515,7 @@
 						duration: e,
 						live: t
 					} = this.state;
-					return i.a.createElement(E, null, t ? i.a.createElement(P, null) : e ? i.a.createElement(_, {
+					return i.a.createElement(E, null, t ? i.a.createElement(I, null) : e ? i.a.createElement(P, {
 						seconds: e
 					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
@@ -543,7 +545,7 @@
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement(T, {
 						paused: this.isPaused,
 						onClick: this.onTogglePaused
-					}), i.a.createElement(I, {
+					}), i.a.createElement(_, {
 						muted: this.state.muted,
 						onClick: this.onToggleMuted
 					}))
@@ -561,20 +563,20 @@
 						children: t
 					} = e;
 					return i.a.createElement("div", {
-						className: S.a.Overlay
+						className: R.a.Overlay
 					}, t)
 				},
-				P = () => i.a.createElement("span", {
-					className: S.a.LiveIndicator
+				I = () => i.a.createElement("span", {
+					className: R.a.LiveIndicator
 				}, g._("Live", null, {
 					hk: "TwJSs"
 				})),
-				_ = e => {
+				P = e => {
 					let {
 						seconds: t
 					} = e;
 					return i.a.createElement("span", {
-						className: S.a.Duration
+						className: R.a.Duration
 					}, (e => {
 						const t = Math.trunc(e / 3600),
 							s = Math.trunc(e % 3600 / 60),
@@ -582,7 +584,7 @@
 						return [t > 0 ? t.toString() : "", t > 0 ? ":" : "", t > 0 && s < 10 ? "0" : "", s, ":", r < 10 ? "0" : "", r].join("")
 					})(t))
 				},
-				I = e => {
+				_ = e => {
 					let {
 						muted: t,
 						onClick: s
@@ -591,14 +593,14 @@
 					return t ? (r = g._("unmute", null, {
 						hk: "45ctbh"
 					}), a = i.a.createElement(h.a, {
-						className: S.a.MuteIcon
+						className: R.a.MuteIcon
 					})) : (r = g._("mute", null, {
 						hk: "3xjwI7"
 					}), a = i.a.createElement(p.a, {
-						className: S.a.VolumeIcon
+						className: R.a.VolumeIcon
 					})), i.a.createElement("button", {
 						"aria-label": r,
-						className: S.a.MutedToggleButton,
+						className: R.a.MutedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						},
@@ -616,14 +618,14 @@
 					return t ? (r = g._("play", null, {
 						hk: "2xeIj3"
 					}), a = i.a.createElement(b.a, {
-						className: S.a.PlayIcon
+						className: R.a.PlayIcon
 					})) : (r = g._("pause", null, {
 						hk: "3jTrMB"
 					}), a = i.a.createElement(m.a, {
-						className: S.a.PauseIcon
+						className: R.a.PauseIcon
 					})), i.a.createElement("button", {
 						"aria-label": r,
-						className: S.a.PausedToggleButton,
+						className: R.a.PausedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						}
@@ -632,4 +634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.bb0b518bbb541da096fa.js.map
+//# sourceMappingURL=LiveVideoPlayer.2b98326e8902bb88766f.js.map
