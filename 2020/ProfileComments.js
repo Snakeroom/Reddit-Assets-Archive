@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.b92a3a3ffa6e751a0ce0.js
-// Retrieved at 3/18/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.0e0edfe556bf16682e97.js
+// Retrieved at 3/19/2020, 10:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -2391,8 +2391,8 @@
 					case R.a.SubredditBlockedForLegalReason:
 						return r.a.createElement("div", null, r.a.createElement($, {
 							src: "".concat(n.a.assetPath, "/img/snoomoji/snoo_thoughtful.png")
-						}), r.a.createElement(re, null, H._("Sorry, this subreddit is not available.", null, {
-							hk: "1qeg1J"
+						}), r.a.createElement(re, null, H._("This content has been restricted in your country in response to a legal request.", null, {
+							hk: "4bCnhl"
 						})), r.a.createElement(W, null, r.a.createElement(q, {
 							to: "/"
 						}, H._("Explore Reddit", null, {
@@ -2420,8 +2420,8 @@
 							} = e;
 							switch (t) {
 								case R.a.ProfileBlockedForLegalReason:
-									return H._("Sorry, this account is not available.", null, {
-										hk: "3sltUC"
+									return H._("This content has been restricted in your country in response to a legal request.", null, {
+										hk: "4eeylO"
 									});
 								case R.a.ProfileDeleted:
 									return r.a.createElement(h.c, null, "This user has deleted their account.");
@@ -2448,8 +2448,8 @@
 					case R.a.PostBlockedForLegalReason:
 						return r.a.createElement("div", null, r.a.createElement($, {
 							src: "".concat(n.a.assetPath, "/img/snoomoji/snoo_thoughtful.png")
-						}), r.a.createElement(re, null, H._("Sorry, this content is unavailable", null, {
-							hk: "1SDGzE"
+						}), r.a.createElement(re, null, H._("This content has been restricted in your country in response to a legal request.", null, {
+							hk: "1q1rVU"
 						})), r.a.createElement(W, null, r.a.createElement(q, {
 							to: "/"
 						}, H._("Explore Reddit", null, {
@@ -10234,4 +10234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.b92a3a3ffa6e751a0ce0.js.map
+//# sourceMappingURL=ProfileComments.0e0edfe556bf16682e97.js.map

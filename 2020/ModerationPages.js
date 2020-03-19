@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7a89a9d6edbbf5ed1652.js
-// Retrieved at 3/18/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d96d6530ac88e2c7fdf5.js
+// Retrieved at 3/19/2020, 10:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -7806,8 +7806,8 @@
 					case L.a.SubredditBlockedForLegalReason:
 						return a.a.createElement("div", null, a.a.createElement($, {
 							src: "".concat(n.a.assetPath, "/img/snoomoji/snoo_thoughtful.png")
-						}), a.a.createElement(ae, null, U._("Sorry, this subreddit is not available.", null, {
-							hk: "1qeg1J"
+						}), a.a.createElement(ae, null, U._("This content has been restricted in your country in response to a legal request.", null, {
+							hk: "4bCnhl"
 						})), a.a.createElement(H, null, a.a.createElement(z, {
 							to: "/"
 						}, U._("Explore Reddit", null, {
@@ -7835,8 +7835,8 @@
 							} = e;
 							switch (t) {
 								case L.a.ProfileBlockedForLegalReason:
-									return U._("Sorry, this account is not available.", null, {
-										hk: "3sltUC"
+									return U._("This content has been restricted in your country in response to a legal request.", null, {
+										hk: "4eeylO"
 									});
 								case L.a.ProfileDeleted:
 									return a.a.createElement(h.c, null, "This user has deleted their account.");
@@ -7863,8 +7863,8 @@
 					case L.a.PostBlockedForLegalReason:
 						return a.a.createElement("div", null, a.a.createElement($, {
 							src: "".concat(n.a.assetPath, "/img/snoomoji/snoo_thoughtful.png")
-						}), a.a.createElement(ae, null, U._("Sorry, this content is unavailable", null, {
-							hk: "1SDGzE"
+						}), a.a.createElement(ae, null, U._("This content has been restricted in your country in response to a legal request.", null, {
+							hk: "1q1rVU"
 						})), a.a.createElement(H, null, a.a.createElement(z, {
 							to: "/"
 						}, U._("Explore Reddit", null, {
@@ -27490,4 +27490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.7a89a9d6edbbf5ed1652.js.map
+//# sourceMappingURL=ModerationPages.d96d6530ac88e2c7fdf5.js.map
