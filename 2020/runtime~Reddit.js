@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e695819122a50a2278a2.js
-// Retrieved at 3/19/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6f6f594295beaa212344.js
+// Retrieved at 3/19/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -513,7 +513,7 @@
 					ModerationPages: "3b06bb28d339a9872615",
 					"vendors~PostCreation~RichTextEditor": "31d6cfe0d16ae931b73c",
 					"vendors~PostCreation": "31d6cfe0d16ae931b73c",
-					PostCreation: "79c4d030bcd0d892d225",
+					PostCreation: "b7f16052858234d845e3",
 					"vendors~Multireddit": "31d6cfe0d16ae931b73c",
 					Multireddit: "d37f719c4dabf26c045f",
 					"vendors~ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate": "31d6cfe0d16ae931b73c",
@@ -914,7 +914,7 @@
 						FrontpageSidebar: "f38f155dddce59ccad24",
 						Frontpage: "f5b05824a3b39de3ec40",
 						Topic: "f14b0a3d6c7613e4e30a",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "ff8b55ef843f01891171",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "16c79d38e26e42df796a",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "14c3c8c09447eed0362b",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "4119af84913c9e99b9cb",
 						PostDraft: "588f62781b8b11c512f8",
@@ -981,7 +981,7 @@
 						ModerationPages: "7bbc7f5ff28f1f39b3f0",
 						"vendors~PostCreation~RichTextEditor": "27926d85572bee947b13",
 						"vendors~PostCreation": "0f25a3d7e764c2785195",
-						PostCreation: "265a8295543c8364d5f6",
+						PostCreation: "c1f4d668e1da7631a974",
 						"vendors~Multireddit": "ed2022bd9feff50ce623",
 						Multireddit: "7c24516a434fed48694c",
 						"vendors~ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate": "59dd47287946542843ea",
@@ -1183,4 +1183,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.e695819122a50a2278a2.js.map
+//# sourceMappingURL=runtime~Reddit.6f6f594295beaa212344.js.map

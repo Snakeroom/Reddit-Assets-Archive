@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f522c3866e053af5c998.js
-// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5d362c5ff9dfe4cd6942.js
+// Retrieved at 3/19/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -428,10 +428,10 @@
 				},
 				y = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				j = s.n(y);
-			const O = Object(i.b)(() => Object(o.c)({
+			const C = Object(i.b)(() => Object(o.c)({
 				labelNSFW: c.N
 			}));
-			t.a = O(Object(a.c)(e => {
+			t.a = C(Object(a.c)(e => {
 				let {
 					postCategories: t,
 					postId: s,
@@ -574,8 +574,8 @@
 				v = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				y = s("./src/reddit/constants/colors.ts"),
 				j = s("./src/reddit/constants/parameters.ts"),
-				O = s("./src/reddit/controls/InternalLink/index.tsx"),
-				C = s("./src/reddit/helpers/styles/smartTextColor.ts"),
+				C = s("./src/reddit/controls/InternalLink/index.tsx"),
+				O = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				w = s("./src/reddit/i18n/utils.ts"),
 				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				E = s("./src/reddit/models/Flair/index.ts"),
@@ -633,11 +633,11 @@
 						[j.p]: t ? "1" : ""
 					})
 				},
-				D = e => e.isFlairFilter ? a.a.createElement(O.a, {
+				D = e => e.isFlairFilter ? a.a.createElement(C.a, {
 					children: e.flair,
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
-				}) : e.onClick ? a.a.createElement(O.a, {
+				}) : e.onClick ? a.a.createElement(C.a, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: A(e.searchableTerm, e.subredditName),
 					children: e.flair
@@ -747,10 +747,10 @@
 						to: e.to
 					})
 				}),
-				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(k.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(k.a)(e).post, y.a.black, y.a.white) : e.textColor === E.e.Dark ? y.a.black : y.a.white,
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(k.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(k.a)(e).post, y.a.black, y.a.white) : e.textColor === E.e.Dark ? y.a.black : y.a.white,
 				H = m.a.wrapped(R, "TextFlair", T.a),
 				q = m.a.wrapped(z, "RichTextFlair", T.a),
-				U = e => {
+				Z = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -760,8 +760,8 @@
 							return Object(i.m)(.1, Object(k.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Q = m.a.wrapped(e => {
-					const t = U(e),
+				U = m.a.wrapped(e => {
+					const t = Z(e),
 						s = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -838,7 +838,7 @@
 						});
 					case E.f.Nsfw:
 					case E.f.Spoiler:
-						return a.a.createElement(Q, {
+						return a.a.createElement(U, {
 							className: t,
 							text: n.text,
 							type: n.type
@@ -1118,8 +1118,8 @@
 						})))
 					}
 				},
-				O = s("./src/reddit/components/FlairSearch/index.m.less"),
-				C = s.n(O);
+				C = s("./src/reddit/components/FlairSearch/index.m.less"),
+				O = s.n(C);
 			const w = "FlairSearch-EmojiPicker-DropdownId",
 				S = Object(c.a)(e => e && Object(d.c)(e)),
 				E = Object(o.c)({
@@ -1160,7 +1160,7 @@
 						subredditId: i
 					} = e, o = s && e.flair && e.flair.templateId && s[e.flair.templateId] || void 0, c = Object(p.a)(), l = e.flair || S(o);
 					return r.a.createElement("div", {
-						className: Object(a.a)(e.className, C.a.container)
+						className: Object(a.a)(e.className, O.a.container)
 					}, s && n && r.a.createElement(j, {
 						flairTemplateType: e.flairTemplateType,
 						onChange: this.onTemplateSelected,
@@ -1168,11 +1168,11 @@
 						templateIds: n,
 						templates: s
 					}), l && o && (t || o.textEditable) ? r.a.createElement("div", {
-						className: C.a.flairEditSection
+						className: O.a.flairEditSection
 					}, r.a.createElement("div", {
-						className: C.a.editLabel
+						className: O.a.editLabel
 					}, Object(u.c)("Edit flair")), e.areFlairRestrictionsEnabled && r.a.createElement("div", {
-						className: C.a.restrictionHintText
+						className: O.a.restrictionHintText
 					}, Object(d.k)(o)), r.a.createElement(c, {
 						autofocus: !0,
 						emojiPickerId: w,
@@ -1197,7 +1197,7 @@
 		"./src/reddit/components/FlairWrapper/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return O
+				return C
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1252,7 +1252,7 @@
 						}).name
 					}
 				})),
-				O = (e, t) => {
+				C = (e, t) => {
 					const s = [];
 					return t.isOriginalContent && s.push({
 						text: "OC",
@@ -1276,10 +1276,10 @@
 					sendEvent: g,
 					showCategoryTag: v,
 					subredditName: j,
-					titleFlair: C
+					titleFlair: O
 				} = e;
 				const w = n === h.b.Left,
-					S = C || O(d, f),
+					S = O || C(d, f),
 					E = [];
 				let k = [];
 				w ? S.map(e => {
@@ -1573,8 +1573,8 @@
 				v = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				y = s("./src/reddit/models/Flair/index.ts"),
 				j = s("./src/reddit/models/Media/index.ts"),
-				O = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				C = s("./src/lib/getShortenedLink.ts"),
+				C = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				O = s("./src/lib/getShortenedLink.ts"),
 				w = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				S = s("./src/app/strings/index.ts"),
 				E = s("./src/lib/prettyPrintNumber/index.ts"),
@@ -1667,7 +1667,7 @@
 							[A.a.isNoWrap]: r
 						}),
 						style: {
-							"--posttitletextcolor": s || Object(O.a)(Object.assign({
+							"--posttitletextcolor": s || Object(C.a)(Object.assign({
 								redditStyle: c
 							}, d)).titleText
 						}
@@ -1699,11 +1699,11 @@
 						})
 					}))
 				},
-				U = Object(p.t)({
+				Z = Object(p.t)({
 					isCommentPermalink: p.v,
 					pageLayer: e => e
 				}),
-				Q = Object(c.c)({
+				U = Object(c.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
@@ -1730,7 +1730,7 @@
 					},
 					shouldOpenPostInNewTab: V.S
 				}),
-				Z = Object(o.b)(Q),
+				Q = Object(o.b)(U),
 				G = e => {
 					const {
 						post: t
@@ -1789,7 +1789,7 @@
 							href: Object(j.A)(s),
 							isSponsored: n,
 							source: s.source
-						}, Object(C.a)(s), i.a.createElement(v.a, {
+						}, Object(O.a)(s), i.a.createElement(v.a, {
 							className: A.a.outboundLinkIcon
 						}))
 					} else if (s.source && !e.isCrosspost && e.size !== R.Large && e.size !== R.ExtraLarge) return i.a.createElement(b.a, {
@@ -1797,14 +1797,14 @@
 						href: s.source.url,
 						isSponsored: n,
 						source: s.source
-					}, Object(C.a)(s), i.a.createElement(v.a, null));
+					}, Object(O.a)(s), i.a.createElement(v.a, null));
 					return null
 				};
 			class J extends i.a.Component {
 				getDynamicStyleTags() {
 					return i.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: "\n        .".concat(this.props.post.id, " .").concat(A.a.Component, " {\n          --postTitle-VisitedLinkColor: ").concat(Object(n.d)(.45, Object(O.a)(this.props).titleText, "#FFFFFF"), ";\n          --postTitleLink-VisitedLinkColor: ").concat(Object(n.d)(.45, this.props.titleColor || Object(O.a)(this.props).titleText, Object(O.a)(this.props).body), ";\n        }\n      ")
+							__html: "\n        .".concat(this.props.post.id, " .").concat(A.a.Component, " {\n          --postTitle-VisitedLinkColor: ").concat(Object(n.d)(.45, Object(C.a)(this.props).titleText, "#FFFFFF"), ";\n          --postTitleLink-VisitedLinkColor: ").concat(Object(n.d)(.45, this.props.titleColor || Object(C.a)(this.props).titleText, Object(C.a)(this.props).body), ";\n        }\n      ")
 						}
 					})
 				}
@@ -1849,7 +1849,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = u.a.wrapped(U(Z(Object(d.a)(Object(m.c)(J)))), "Component", A.a)
+			t.c = u.a.wrapped(Z(Q(Object(d.a)(Object(m.c)(J)))), "Component", A.a)
 		},
 		"./src/reddit/components/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1892,13 +1892,13 @@
 				v = s("./src/reddit/icons/svgs/Poll/index.tsx"),
 				y = s("./src/reddit/constants/elementClassNames.ts"),
 				j = s("./src/reddit/controls/ContentType/index.m.less"),
-				O = s.n(j);
-			const C = e => Object(o.a)(O.a.contentTypeIcon, e.className),
+				C = s.n(j);
+			const O = e => Object(o.a)(C.a.contentTypeIcon, e.className),
 				w = e => i.a.createElement(m.a, {
-					className: Object(o.a)(y.a, C(e))
+					className: Object(o.a)(y.a, O(e))
 				});
 			var S = e => {
-					const t = C(e);
+					const t = O(e);
 					switch (e.type) {
 						case "gifvideo":
 							return i.a.createElement(u.a, {
@@ -2039,11 +2039,11 @@
 						text: g,
 						theme: v,
 						usePreview: y
-					} = e, j = !v.subredditContext.shouldShowNSFWContent && (p.isNSFW || !(!a || !a.isNSFW)) && !c, O = L({
+					} = e, j = !v.subredditContext.shouldShowNSFWContent && (p.isNSFW || !(!a || !a.isNSFW)) && !c, C = L({
 						placeholderImage: x,
 						redditStyle: b,
 						theme: v
-					}), C = q(e), w = Q(p, t, O, j, g, v, C, l, f, h, b, d, u, m, r), S = Object(N.A)(p);
+					}), O = q(e), w = U(p, t, C, j, g, v, O, l, f, h, b, d, u, m, r), S = Object(N.A)(p);
 					return Object(n.a)(S) && !h && S.indexOf("redditmedia") < 0 ? i.a.createElement("div", {
 						className: Object(o.a)(F.a.container, y ? F.a.usePreview : "", s)
 					}, i.a.createElement(E.a, {
@@ -2067,13 +2067,13 @@
 						media: o,
 						thumbnail: a
 					} = t || s;
-					return r && i ? i.url : U(o) ? o.scrubberThumbSource : a.url
+					return r && i ? i.url : Z(o) ? o.scrubberThumbSource : a.url
 				},
-				U = e => !!e && e.type === N.n.LIVEVIDEO,
-				Q = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
+				Z = e => !!e && e.type === N.n.LIVEVIDEO,
+				U = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
 					const v = e.source && !e.isSponsored || !1;
 					if (Object(n.a)(d)) {
-						const s = U(e.media),
+						const s = Z(e.media),
 							n = s ? {
 								errorSrc: l.T
 							} : {},
@@ -2256,8 +2256,8 @@
 					})))
 				}
 			}
-			const O = Object(l.a)(v(j));
-			t.a = O
+			const C = Object(l.a)(v(j));
+			t.a = C
 		},
 		"./src/reddit/connectors/PostViewable/index.ts": function(e, t, s) {
 			"use strict";
@@ -3000,12 +3000,10 @@
 				r = s.n(n);
 			t.a = e => r.a.createElement("svg", {
 				className: e.className,
-				viewBox: "0 0 16 15",
+				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("g", null, r.a.createElement("path", {
-				"clip-rule": "evenodd",
-				d: "M0 1.5C0 0.671573 0.671573 0 1.5 0H11.5C12.3284 0 13 0.671573 13 1.5C13 2.32843 12.3284 3 11.5 3H1.5C0.671573 3 0 2.32843 0 1.5ZM0 7.5C0 6.67157 0.671573 6 1.5 6H14.5C15.3284 6 16 6.67157 16 7.5C16 8.32843 15.3284 9 14.5 9H1.5C0.671573 9 0 8.32843 0 7.5ZM1.5 12C0.671573 12 0 12.6716 0 13.5C0 14.3284 0.671573 15 1.5 15H7.5C8.32843 15 9 14.3284 9 13.5C9 12.6716 8.32843 12 7.5 12H1.5Z",
-				"fill-rule": "evenodd",
+				d: "M2.1952,13.9279 C2.9452,13.9279 3.5382,14.3119 3.8382,14.8939 L2.8962,15.3249 C2.7702,15.0489 2.4882,14.8519 2.1232,14.8519 C1.6192,14.8519 1.2232,15.3189 1.2232,15.9489 C1.2232,16.5849 1.6252,17.0409 2.1172,17.0409 C2.4882,17.0409 2.7772,16.8369 2.9262,16.5369 L3.9162,16.8909 C3.6102,17.5559 2.9802,17.9639 2.1952,17.9639 C1.0492,17.9639 0.1202,17.0759 0.1202,15.9489 C0.1202,14.8279 1.0492,13.9279 2.1952,13.9279 Z M11.5004,14.5 C12.3294,14.5 13.0004,15.171 13.0004,16 C13.0004,16.829 12.3294,17.5 11.5004,17.5 L6.5004,17.5 C5.6714,17.5 5.0004,16.829 5.0004,16 C5.0004,15.171 5.6714,14.5 6.5004,14.5 L11.5004,14.5 Z M1.8953,8.0003 C2.8063,8.0003 3.5503,8.2643 3.5503,9.0313 C3.5503,9.3433 3.3523,9.5893 3.0763,9.7813 C3.4483,9.9553 3.7243,10.2253 3.7243,10.6623 C3.7243,11.5179667 2.93757778,11.8598556 2.22929983,11.8952023 L2.1053,11.8983 L0.3723,11.8983 L0.3723,8.0003 L1.8953,8.0003 Z M18.5004,8.5 C19.3294,8.5 20.0004,9.171 20.0004,10 C20.0004,10.829 19.3294,11.5 18.5004,11.5 L6.5004,11.5 C5.6714,11.5 5.0004,10.829 5.0004,10 C5.0004,9.171 5.6714,8.5 6.5004,8.5 L18.5004,8.5 Z M1.8623,8.8693 L1.4753,8.8693 L1.4753,11.0283 L1.9843,11.0283 C2.3013,11.0283 2.5853,10.7603 2.5853,10.4623 C2.5853,10.0713909 2.27786198,9.92097769 2.01460128,9.89686048 L1.9373,9.8933 L1.9373,9.7853 C2.0923,9.7853 2.4353,9.6783 2.4353,9.3333 C2.4353,8.9793 2.1923,8.8693 1.8623,8.8693 Z M2.783,1.9997 L4.096,5.8977 L2.963,5.8977 C2.963,5.8977 2.147,3.3737 2.063,3.0137 L2.063,3.0137 L2.039,3.0137 C1.955,3.3737 1.127,5.8977 1.127,5.8977 L1.127,5.8977 L-2.25597319e-13,5.8977 L1.319,1.9997 L2.783,1.9997 Z M15.5004,2.5 C16.3294,2.5 17.0004,3.171 17.0004,4 C17.0004,4.829 16.3294,5.5 15.5004,5.5 L6.5004,5.5 C5.6714,5.5 5.0004,4.829 5.0004,4 C5.0004,3.171 5.6714,2.5 6.5004,2.5 L15.5004,2.5 Z",
 				fill: "inherit"
 			})))
 		},
@@ -3176,9 +3174,9 @@
 			})), s.d(t, "D", (function() {
 				return j
 			})), s.d(t, "o", (function() {
-				return O
-			})), s.d(t, "p", (function() {
 				return C
+			})), s.d(t, "p", (function() {
+				return O
 			})), s.d(t, "e", (function() {
 				return w
 			})), s.d(t, "d", (function() {
@@ -3218,9 +3216,9 @@
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "h", (function() {
-				return U
+				return Z
 			})), s.d(t, "n", (function() {
-				return Q
+				return U
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/bignumber.js/bignumber.js"),
@@ -3300,7 +3298,7 @@
 				return !!(s && s.settings && s.settings.optOut)
 			}
 
-			function O(e, t) {
+			function C(e, t) {
 				const {
 					badge: s,
 					subredditId: n
@@ -3312,7 +3310,7 @@
 				return Object.keys(o).map(e => i[e]).find(e => e && e.type === c)
 			}
 
-			function C(e, t, s, n) {
+			function O(e, t, s, n) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === m.a.Fetched) {
 					if (s === c.a.Loyalty || s === c.a.Achievement) return r.data.collections[s];
@@ -3322,7 +3320,7 @@
 			}
 
 			function w(e, t) {
-				const s = C(e, t, c.a.Loyalty).find(e => "membership" === e.id);
+				const s = O(e, t, c.a.Loyalty).find(e => "membership" === e.id);
 				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : []
 			}
 
@@ -3336,7 +3334,7 @@
 			}
 
 			function E(e, t) {
-				return C(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
+				return O(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
 			}
 			const k = e => {
 				const t = [],
@@ -3501,12 +3499,12 @@
 						if (n && n.data) return !!n.data[s]
 					}
 				},
-				U = (e, t) => {
+				Z = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.pointsToClaim), new n.BigNumber(0)).toString() : null
 				},
-				Q = (e, t) => {
+				U = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.userKarma), new n.BigNumber(0)).toString() : null
@@ -3570,4 +3568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f522c3866e053af5c998.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5d362c5ff9dfe4cd6942.js.map
