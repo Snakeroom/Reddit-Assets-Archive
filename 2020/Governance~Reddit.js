@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e9346333e83dd262ba14.js
-// Retrieved at 3/19/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.702038dd9a79261fb249.js
+// Retrieved at 3/19/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -46,16 +46,16 @@
 			e.exports = JSON.parse('{"id":"c03afa35c319"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"be91f9a2b78c"}')
+			e.exports = JSON.parse('{"id":"4f9ae13d88b4"}')
 		},
 		"./src/graphql/operations/GetPostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"4231b7734ef9"}')
 		},
 		"./src/graphql/operations/GlobalAwards.json": function(e) {
-			e.exports = JSON.parse('{"id":"0fc8605f4c06"}')
+			e.exports = JSON.parse('{"id":"ebf76170e0a1"}')
 		},
 		"./src/graphql/operations/ManageableAwards.json": function(e) {
-			e.exports = JSON.parse('{"id":"b49a292d396d"}')
+			e.exports = JSON.parse('{"id":"e21ac6f24171"}')
 		},
 		"./src/graphql/operations/MaybeDeleteTagsAndUpdateItemTags.json": function(e) {
 			e.exports = JSON.parse('{"id":"023547ccdaf6"}')
@@ -64,13 +64,13 @@
 			e.exports = JSON.parse('{"id":"3c148c0b5100"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"1b0f2727aa40"}')
+			e.exports = JSON.parse('{"id":"8c9917708b51"}')
 		},
 		"./src/graphql/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"3bdf6255272b"}')
+			e.exports = JSON.parse('{"id":"9f09fe0a3fad"}')
 		},
 		"./src/graphql/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"46eda738792e"}')
+			e.exports = JSON.parse('{"id":"367c0e4a780f"}')
 		},
 		"./src/graphql/operations/RedditorMultireddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3d04e2bb92b5"}')
@@ -79,7 +79,7 @@
 			e.exports = JSON.parse('{"id":"fc24b7b690ad"}')
 		},
 		"./src/graphql/operations/SinglePost.json": function(e) {
-			e.exports = JSON.parse('{"id":"029164b02e98"}')
+			e.exports = JSON.parse('{"id":"0020012d9859"}')
 		},
 		"./src/graphql/operations/SubredditAbout.json": function(e) {
 			e.exports = JSON.parse('{"id":"7d0ee544a263"}')
@@ -88,13 +88,13 @@
 			e.exports = JSON.parse('{"id":"1479a476a03b"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"c32775fb3fc4"}')
+			e.exports = JSON.parse('{"id":"db9a2b2c532a"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
 		},
 		"./src/graphql/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"3496a48f8a60"}')
+			e.exports = JSON.parse('{"id":"67f6154de6e1"}')
 		},
 		"./src/graphql/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"43275c35dbb6"}')
@@ -106,13 +106,13 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"38fb99e07805"}')
+			e.exports = JSON.parse('{"id":"de83cc2e8a1b"}')
 		},
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"9a8d7fe59632"}')
+			e.exports = JSON.parse('{"id":"84fd145560fc"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -124,10 +124,10 @@
 			e.exports = JSON.parse('{"id":"ee43ccb6e5eb"}')
 		},
 		"./src/graphql/operations/UsableAwards.json": function(e) {
-			e.exports = JSON.parse('{"id":"89533a1cb95e"}')
+			e.exports = JSON.parse('{"id":"922b738390c7"}')
 		},
 		"./src/graphql/operations/UsableAwardsForProfile.json": function(e) {
-			e.exports = JSON.parse('{"id":"a513d087d6de"}')
+			e.exports = JSON.parse('{"id":"c721662c1caf"}')
 		},
 		"./src/graphql/operations/UserDataExportEligibility.json": function(e) {
 			e.exports = JSON.parse('{"id":"3817c69d7a39"}')
@@ -32329,13 +32329,15 @@
 					iconUrl: n,
 					resizedIcons: r
 				} = e, s = c(e, ["count", "iconUrl", "resizedIcons"]);
-				let o, i;
+				let o, i, a;
 				for (const {
 						url: c,
-						width: a
-					} of r || []) 32 === a && (o = {
+						width: d
+					} of r || []) 32 === d && (o = {
 					url: c
-				}), 128 === a && (i = {
+				}), 64 === d && (i = {
+					url: c
+				}), 128 === d && (a = {
 					url: c
 				});
 				return Object.assign({}, s, {
@@ -32343,7 +32345,8 @@
 						url: n
 					},
 					icon32: o,
-					icon128: i,
+					icon64: i,
+					icon128: a,
 					awardType: s.awardType.toUpperCase(),
 					awardSubType: s.awardSubType.toUpperCase()
 				})
@@ -32355,23 +32358,28 @@
 					awardSubType: r,
 					icon: s,
 					icon32: o,
-					icon128: i
-				} = e, a = c(e, ["awardType", "awardSubType", "icon", "icon32", "icon128"]), d = [];
-				return o && d.push({
+					icon64: i,
+					icon128: a
+				} = e, d = c(e, ["awardType", "awardSubType", "icon", "icon32", "icon64", "icon128"]), u = [];
+				return o && u.push({
 					height: 32,
 					url: o.url,
 					width: 32
-				}), i && d.push({
-					height: 128,
+				}), i && u.push({
+					height: 64,
 					url: i.url,
+					width: 64
+				}), a && u.push({
+					height: 128,
+					url: a.url,
 					width: 128
 				}), Object.assign({
 					awardType: n.toLowerCase(),
 					awardSubType: r ? r.toLowerCase() : p.Global,
 					count: t,
 					iconUrl: s.url,
-					resizedIcons: d
-				}, a)
+					resizedIcons: u
+				}, d)
 			}
 		},
 		"./src/reddit/models/GqlTopLevelField.ts": function(e, t, n) {
@@ -62314,4 +62322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.e9346333e83dd262ba14.js.map
+//# sourceMappingURL=Governance~Reddit.702038dd9a79261fb249.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b2f36bbba028f2cdc996.js
-// Retrieved at 3/19/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.74ed9dc6575bf2cffc57.js
+// Retrieved at 3/19/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -914,7 +914,7 @@
 						FrontpageSidebar: "f38f155dddce59ccad24",
 						Frontpage: "f5b05824a3b39de3ec40",
 						Topic: "f14b0a3d6c7613e4e30a",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "c308b04f1f323b9869b2",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "44fa870a1d66c0e63aa2",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "cde77ae24e6c7cee0bc9",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "4119af84913c9e99b9cb",
 						PostDraft: "588f62781b8b11c512f8",
@@ -975,10 +975,10 @@
 						Subreddit: "b0b5e4666dd3b36dfa63",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf": "4fde5907f0e9e859b754",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "647cf5133738c111e19b",
-						CollectionCommentsPage: "8914f48873e3669efa6b",
-						CommentsPage: "c0eff83d111c8e9fa89b",
+						CollectionCommentsPage: "5e66d91787b3604aae19",
+						CommentsPage: "a032689a1aa72a3f62ae",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236": "1efb30c205e5d70890fa",
-						ModerationPages: "d96d6530ac88e2c7fdf5",
+						ModerationPages: "c60fbc838ad882cc9b1c",
 						"vendors~PostCreation~RichTextEditor": "27926d85572bee947b13",
 						"vendors~PostCreation": "1b1379b71eff9278cb0c",
 						PostCreation: "12c469599b19991072c8",
@@ -986,8 +986,8 @@
 						Multireddit: "7c24516a434fed48694c",
 						"vendors~ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate": "59dd47287946542843ea",
 						ProfilePosts: "7b13bbe193de570e88e5",
-						ProfileOverview: "8a4566c523e20b883ce5",
-						"Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80": "83e94cc9be4833c28ff8",
+						ProfileOverview: "b47043bfafe1b1fa5766",
+						"Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80": "ba14861666b5a56cccbc",
 						ProfileComments: "f8b7d66a937a3852d2eb",
 						"vendors~SubredditWiki": "a80bbffef7314328c7de",
 						"AuthorHovercard~Settings~SubredditWiki": "a0e68071f7af2ebd65ae",
@@ -1026,7 +1026,7 @@
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "96515d8e16542fbca8f7",
 						"ChatPost~ModQueuePages": "958241d26196fdc7a829",
 						ModQueuePages: "232555eede53ac08e4b4",
-						ProfilePrivate: "478eb34ba8ee60abe0a9",
+						ProfilePrivate: "ae5df1df8e16722db9cd",
 						"vendors~SearchResults": "a8c3db8cad14b170a972",
 						SearchResults: "d6b1fe547c16c483da46",
 						"vendors~css-vars-ponyfill": "e873f2d6dbf1a4683b13",
@@ -1077,7 +1077,7 @@
 						EconomicsCommunityTipJar: "33306749fd7d839cc7a9",
 						AuthorHovercard: "b265bd997a856ac7f56a",
 						AwardTooltip: "9e91d27bc4ada20888ba",
-						ChatPost: "80ba0b65ef5f4b2c6275",
+						ChatPost: "4c3bcc03aa0506178351",
 						EconomicsSupportDonationAmount: "9d520ae3e631921a7bd0",
 						EconomicsTopTippersPostLeaderboard: "55701a93d0af1e55eaf3",
 						GildModal: "8cc2c5c2267cff7524c3",
@@ -1183,4 +1183,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.b2f36bbba028f2cdc996.js.map
+//# sourceMappingURL=runtime~Reddit.74ed9dc6575bf2cffc57.js.map

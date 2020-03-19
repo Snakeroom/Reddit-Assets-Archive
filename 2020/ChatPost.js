@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.80ba0b65ef5f4b2c6275.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4c3bcc03aa0506178351.js
+// Retrieved at 3/19/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -847,12 +847,11 @@
 					const {
 						award: t,
 						comment: n
-					} = e;
-					let o = t.icon64 ? t.icon64.url : t.icon128 ? t.icon128.url : t.icon.url,
-						r = "",
+					} = e, o = t.icon64 ? t.icon64.url : t.icon128 ? t.icon128.url : t.icon.url;
+					let r = "",
 						a = !0,
 						i = !1;
-					return t.coinPrice < ne.a ? (r = le.a.silverTierAwardComment, a = !1, t.icon32 && (o = t.icon32.url)) : t.coinPrice < ne.b ? r = le.a.goldTierAwardComment : (r = le.a.platinumTierAwardComment, i = !0), s.a.createElement("div", {
+					return t.coinPrice < ne.a ? (r = le.a.silverTierAwardComment, a = !1) : t.coinPrice < ne.b ? r = le.a.goldTierAwardComment : (r = le.a.platinumTierAwardComment, i = !0), s.a.createElement("div", {
 						className: Object(Q.a)(le.a.awardComment, r)
 					}, s.a.createElement("div", {
 						className: le.a.imageContainer
@@ -2360,4 +2359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.80ba0b65ef5f4b2c6275.js.map
+//# sourceMappingURL=ChatPost.4c3bcc03aa0506178351.js.map
