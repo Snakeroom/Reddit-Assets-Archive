@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c285ddd296e49567e256.js
-// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d835d13d7b831aa5b9fd.js
+// Retrieved at 3/19/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -19445,39 +19445,40 @@
 				w = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				A = n("./src/reddit/selectors/user.ts");
 			var R = n("./src/reddit/selectors/gild.ts"),
-				x = n("./src/reddit/selectors/modQueue.ts"),
-				N = n("./src/reddit/selectors/platform.ts"),
-				k = n("./src/reddit/selectors/posts.ts");
+				x = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				N = n("./src/reddit/selectors/modQueue.ts"),
+				k = n("./src/reddit/selectors/platform.ts"),
+				L = n("./src/reddit/selectors/posts.ts");
 			n.d(t, "a", (function() {
-				return L
+				return M
 			})), n.d(t, "b", (function() {
-				return U
+				return F
 			}));
-			const L = "VOTE__VOTE_CAST",
-				M = Object(r.a)(L),
-				U = (e, t) => n => async (r, a, L) => {
+			const M = "VOTE__VOTE_CAST",
+				U = Object(r.a)(M),
+				F = (e, t) => n => async (r, a, M) => {
 					let {
-						apiContext: U
-					} = L;
+						apiContext: F
+					} = M;
 					if (!Object(A.G)(a())) return r(Object(b.k)({
 						actionSource: b.a.Vote
 					})), void r(Object(l.f)());
-					const F = e(n, a),
-						B = D.b(F, t),
-						G = Object(T.a)(n) ? F.postId : n;
-					if (r(M({
-							id: G,
+					const B = e(n, a),
+						G = D.b(B, t),
+						q = Object(T.a)(n) ? B.postId : n;
+					if (r(U({
+							id: q,
 							isInstance: !1,
 							vote: t
-						})), (a().posts.instances[G] || []).forEach(e => {
-							r(M({
+						})), (a().posts.instances[q] || []).forEach(e => {
+							r(U({
 								id: e,
 								isInstance: !0,
 								vote: t
 							}))
-						}), B)
+						}), G)
 						if (Object(T.a)(n)) {
-							const e = Object(k.M)(a(), {
+							const e = Object(L.M)(a(), {
 									postId: n
 								}),
 								s = t > 0 ? m.a.Upvote : m.a.Downvote;
@@ -19487,42 +19488,42 @@
 							commentId: n
 						});
 						if (e) {
-							const n = Object(k.M)(a(), {
+							const n = Object(L.M)(a(), {
 									postId: e.postId
 								}),
 								s = t > 0 ? m.a.CommentUpvote : m.a.CommentDownvote;
 							r(Object(p.B)(n, s))
 						}
 					}
-					const q = a(),
-						V = Object(N.h)(q),
-						H = !!Object(R.f)(q),
-						W = Object(A.X)(q);
-					if (H ? r((() => async (e, t, n) => {
+					const V = a(),
+						H = Object(k.h)(V),
+						W = !!Object(R.f)(V),
+						K = Object(A.X)(V);
+					if (W ? r((() => async (e, t, n) => {
 							let {
 								apiContext: r
 							} = n;
 							e(d()), e(Object(o.i)())
-						})()) : Object(T.a)(G) && B === D.a.upvoted && !W && (e => {
+						})()) : Object(T.a)(q) && G === D.a.upvoted && !K && (e => {
 							const t = Object(w.c)(e, {
 								experimentEligibilitySelector: e => Object(A.G)(e),
 								experimentName: O.K
 							});
 							return Object(O.Ob)(t) ? void 0 : t
-						})(q) && (r(((e, t) => async (n, r, s) => {
+						})(V) && (r(((e, t) => async (n, r, s) => {
 							let {
 								apiContext: a
 							} = s;
 							n(u(e)), n(Object(o.h)({
 								tooltipId: Object(i.a)("View--GiveAward", e, t ? "lightbox" : void 0)
 							})), Object(c.c)(a())
-						})(G, V)), Object(s.a)(Object(C.viewGiveAwardTooltipEvent)(G)(q))), Object(T.a)(n) && B === D.a.upvoted && I.d.spFavoriteCreators(q)) {
-						const e = Object(k.M)(q, {
+						})(q, H)), Object(s.a)(Object(C.viewGiveAwardTooltipEvent)(q)(V))), Object(T.a)(n) && G === D.a.upvoted && I.d.spFavoriteCreators(V)) {
+						const e = Object(L.M)(V, {
 							postId: n
 						});
 						Object(S.a)(e.belongsTo.id, e.authorId)
 					}
-					if (Object(A.G)(q)) {
+					if (Object(A.G)(V)) {
 						const e = await ((e, t, n) => Object(h.b)(Object(y.a)(e, [j.a]), {
 							endpoint: Object(E.a)("".concat(e.apiUrl, "/api/vote")),
 							method: _.db.POST,
@@ -19531,9 +19532,9 @@
 								dir: n,
 								api_type: "json"
 							}
-						}))(U(), G, B);
-						e.ok || r(M({
-								id: G,
+						}))(F(), q, G);
+						e.ok || r(U({
+								id: q,
 								isInstance: !1,
 								vote: t
 							})),
@@ -19543,16 +19544,19 @@
 								} = e.body;
 								if (!t) return;
 								if (!Object(T.a)(n)) return;
-								if (Object(x.b)(q)) return;
-								if (Object(g.E)(q.platform && q.platform.currentPage)) return;
-								const s = Object(k.M)(q, {
+								const s = Object(L.M)(V, {
 									postId: n
 								});
+								if (Object(x.g)(V, {
+										subredditId: s.belongsTo.id
+									})) return;
+								if (Object(N.b)(V)) return;
+								if (Object(g.E)(V.platform && V.platform.currentPage)) return;
 								if (s.isSponsored) return;
 								if ("profile" === s.belongsTo.type) return;
-								const o = q.experimentOverrides[O.H],
-									i = Object(N.h)(q);
-								("none" !== t || o && B === D.a.downvoted) && (r(Object(p.T)({
+								const o = V.experimentOverrides[O.H],
+									i = Object(k.h)(V);
+								("none" !== t || o && G === D.a.downvoted) && (r(Object(p.T)({
 									[n]: {
 										moderationPrompt: o || t
 									}
@@ -62178,4 +62182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.c285ddd296e49567e256.js.map
+//# sourceMappingURL=Governance~Reddit.d835d13d7b831aa5b9fd.js.map
