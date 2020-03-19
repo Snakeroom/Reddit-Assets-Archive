@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4bbae1206c8c2b4b3e86.js
-// Retrieved at 3/18/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b0b5e4666dd3b36dfa63.js
+// Retrieved at 3/19/2020, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -659,69 +659,84 @@
 		},
 		"./src/reddit/components/EmptySubreddit.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/lodash/upperFirst.js"),
-				r = s.n(n),
-				a = s("./node_modules/react/index.js"),
-				o = s.n(a),
-				i = s("./src/config.ts"),
-				d = s("./src/lib/constants/index.ts"),
-				c = s("./src/lib/isFakeSubreddit/index.ts"),
-				l = s("./src/reddit/i18n/components.tsx"),
-				m = s("./src/reddit/i18n/utils.ts"),
-				u = s("./src/reddit/constants/postLayout.ts"),
-				p = s("./src/reddit/controls/Button/index.tsx"),
-				b = s("./src/reddit/components/PostList/Placeholder.tsx"),
-				h = s("./src/reddit/components/EmptySubreddit.m.less"),
-				g = s.n(h),
-				x = s("./src/lib/lessComponent.tsx");
-			const y = x.a.div("PrimaryText", g.a),
-				f = x.a.div("SecondaryText", g.a),
-				v = x.a.div("MainContentWrapper", g.a),
-				O = x.a.div("MainContent", g.a),
-				C = x.a.wrapped(b.a, "BackgroundPlaceholder", g.a),
-				E = x.a.wrapped(p.h, "SubmitLink", g.a),
-				j = x.a.img("SnooImg", g.a),
-				_ = x.a.div("EmptyHomepage", g.a),
-				S = e => {
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/lodash/upperFirst.js"),
+				a = s.n(r),
+				o = s("./node_modules/react/index.js"),
+				i = s.n(o),
+				d = s("./src/config.ts"),
+				c = s("./src/lib/constants/index.ts"),
+				l = s("./src/lib/isFakeSubreddit/index.ts"),
+				m = s("./src/reddit/constants/postLayout.ts"),
+				u = s("./src/reddit/controls/Button/index.tsx"),
+				p = s("./src/reddit/components/PostList/Placeholder.tsx"),
+				b = s("./src/reddit/components/EmptySubreddit.m.less"),
+				h = s.n(b),
+				g = s("./src/lib/lessComponent.tsx");
+			const x = g.a.div("PrimaryText", h.a),
+				y = g.a.div("SecondaryText", h.a),
+				f = g.a.div("MainContentWrapper", h.a),
+				v = g.a.div("MainContent", h.a),
+				O = g.a.wrapped(p.a, "BackgroundPlaceholder", h.a),
+				C = g.a.wrapped(u.h, "SubmitLink", h.a),
+				E = g.a.img("SnooImg", h.a),
+				j = g.a.div("EmptyHomepage", h.a),
+				_ = e => {
 					switch (e) {
-						case d.P.RISING:
-							return Object(m.c)("Create a new post and take all the glory");
-						case d.P.TOP:
-						case d.P.CONTROVERSIAL:
+						case c.P.RISING:
+							return n.fbt._("Create a new post and take all the glory", null, {
+								hk: "1NhXUe"
+							});
+						case c.P.TOP:
+						case c.P.CONTROVERSIAL:
 							return null;
 						default:
-							return Object(m.c)("Be the first to till this fertile land.")
+							return n.fbt._("Be the first to till this fertile land.", null, {
+								hk: "VYQD0"
+							})
 					}
 				},
-				N = e => {
+				S = e => {
 					let {
 						listingName: t,
 						sort: s
 					} = e;
-					const n = S(s);
-					return o.a.createElement(O, null, o.a.createElement(y, null, (e => {
+					const r = _(s);
+					return i.a.createElement(v, null, i.a.createElement(x, null, (e => {
 						switch (e) {
-							case d.P.RISING:
-								return Object(m.c)("Looks like nothing is rising fast enough in this subreddit");
-							case d.P.TOP:
-							case d.P.CONTROVERSIAL:
-								return Object(m.c)("No posts were found using the ".concat(r()(e), " sort. Try changing the sort."));
+							case c.P.RISING:
+								return n.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
+									hk: "kJ3Te"
+								});
+							case c.P.TOP:
+							case c.P.CONTROVERSIAL:
+								return n.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [n.fbt._param("listing sort option", a()(e))], {
+									hk: "48BeCW"
+								});
 							default:
-								return Object(m.c)("There are no posts in this subreddit")
+								return n.fbt._("There are no posts in this subreddit", null, {
+									hk: "5mVkT"
+								})
 						}
-					})(s)), t && !Object(c.a)(t) && !!n && o.a.createElement(o.a.Fragment, null, o.a.createElement(f, null, S(s)), o.a.createElement(E, {
+					})(s)), t && !Object(l.a)(t) && !!r && i.a.createElement(i.a.Fragment, null, i.a.createElement(y, null, _(s)), i.a.createElement(C, {
 						to: "/r/".concat(t, "/submit")
-					}, o.a.createElement(l.c, null, "Add a post"))))
+					}, n.fbt._("Add a post", null, {
+						hk: "1vnCSW"
+					}))))
 				},
-				w = () => o.a.createElement(O, null, o.a.createElement(j, {
-					src: "".concat(i.a.assetPath, "/img/snoo_discovery@1x.png")
-				}), o.a.createElement(y, null, o.a.createElement(l.c, null, "Reddit gets better when you join communities, so find some that you’ll love!")), o.a.createElement(E, {
+				N = () => i.a.createElement(v, null, i.a.createElement(E, {
+					src: "".concat(d.a.assetPath, "/img/snoo_discovery@1x.png")
+				}), i.a.createElement(x, null, n.fbt._("Reddit gets better when you join communities, so find some that you’ll love!", null, {
+					hk: "7B6oq"
+				})), i.a.createElement(C, {
 					to: "/r/popular"
-				}, o.a.createElement(l.c, null, "Browse Popular Posts")));
-			t.a = x.a.wrapped(e => o.a.createElement(_, null, o.a.createElement(C, {
+				}, n.fbt._("Browse Popular Posts", null, {
+					hk: "2zfgXv"
+				})));
+			t.a = g.a.wrapped(e => i.a.createElement(j, null, i.a.createElement(O, {
 				isLoading: !1,
-				layout: u.g.Classic
-			}), o.a.createElement(v, null, e.subreddit ? o.a.createElement(N, e) : o.a.createElement(w, null))), "Component", g.a)
+				layout: m.g.Classic
+			}), i.a.createElement(f, null, e.subreddit ? i.a.createElement(S, e) : i.a.createElement(N, null))), "Component", h.a)
 		},
 		"./src/reddit/components/FakeBannerAd/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7315,4 +7330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.4bbae1206c8c2b4b3e86.js.map
+//# sourceMappingURL=Subreddit.b0b5e4666dd3b36dfa63.js.map

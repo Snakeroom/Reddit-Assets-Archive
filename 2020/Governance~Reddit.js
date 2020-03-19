@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3071836197dc050acdca.js
-// Retrieved at 3/18/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f09b1cec1e389a289131.js
+// Retrieved at 3/19/2020, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -59347,14 +59347,14 @@
 			})), n.d(t, "K", (function() {
 				return Ee
 			}));
-			n("./node_modules/core-js/modules/es6.array.sort.js");
+			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var r = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/lib/constants/index.ts"),
 				o = n("./src/lib/isFakeSubreddit/index.ts"),
 				i = n("./src/lib/objectSelector/index.ts"),
-				c = n("./src/reddit/constants/posts.ts"),
-				a = n("./src/reddit/helpers/isPost.ts"),
-				d = n("./src/reddit/i18n/utils.ts"),
+				c = n("./src/lib/pageTitle.ts"),
+				a = n("./src/reddit/constants/posts.ts"),
+				d = n("./src/reddit/helpers/isPost.ts"),
 				u = (n("./src/reddit/models/Profile/mock.ts"), n("./src/reddit/models/Subreddit/index.ts")),
 				l = (n("./src/reddit/models/Subreddit/mock.ts"), n("./src/reddit/models/SubredditRestrictions/index.ts")),
 				b = n("./src/reddit/models/Widgets/index.ts"),
@@ -59413,19 +59413,19 @@
 					let {
 						identifier: n
 					} = t;
-					return n.type === c.a.PROFILE ? e.profiles.about[n.id] || {} : e.subreddits.about[n.id]
+					return n.type === a.a.PROFILE ? e.profiles.about[n.id] || {} : e.subreddits.about[n.id]
 				},
 				T = (e, t) => {
 					let {
 						identifier: n
 					} = t;
-					return n.type === c.a.PROFILE ? e.profiles.models[n.id] || !1 : e.subreddits.models[n.id] || !1
+					return n.type === a.a.PROFILE ? e.profiles.models[n.id] || !1 : e.subreddits.models[n.id] || !1
 				},
 				C = (e, t) => {
 					let {
 						identifier: n
 					} = t;
-					return n.type === c.a.PROFILE ? Object(g.m)(e, n.name) || null : q(e, n.name) || null
+					return n.type === a.a.PROFILE ? Object(g.m)(e, n.name) || null : q(e, n.name) || null
 				},
 				D = e => e.subreddits.models,
 				P = (e, t) => {
@@ -59453,7 +59453,7 @@
 							type: n.type
 						}
 					});
-					return s && Object(_.G)(e) ? !!s.userIsSubscriber : n.type === c.a.SUBREDDIT ? e.subscriptions.subredditOrder.indexOf(r) > -1 : e.subscriptions.profileOrder.indexOf(r) > -1
+					return s && Object(_.G)(e) ? !!s.userIsSubscriber : n.type === a.a.SUBREDDIT ? e.subscriptions.subredditOrder.indexOf(r) > -1 : e.subscriptions.profileOrder.indexOf(r) > -1
 				},
 				x = (e, t) => {
 					let {
@@ -59583,7 +59583,7 @@
 					let {
 						thingId: n
 					} = t;
-					if (Object(a.a)(n)) {
+					if (Object(d.a)(n)) {
 						const t = Object(O.M)(e, {
 							postId: n
 						});
@@ -59603,7 +59603,7 @@
 					const r = B(e, {
 						subredditName: n
 					});
-					return r && r.title || Object(d.c)("reddit: the front page of the internet")
+					return r && r.title || c.c.toString()
 				},
 				X = (e, t) => {
 					let {
@@ -62314,4 +62314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.3071836197dc050acdca.js.map
+//# sourceMappingURL=Governance~Reddit.f09b1cec1e389a289131.js.map
