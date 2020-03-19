@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d835d13d7b831aa5b9fd.js
-// Retrieved at 3/19/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.82f90eae9e8d38ed5518.js
+// Retrieved at 3/19/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -8599,9 +8599,9 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./node_modules/core-js/modules/es6.array.sort.js");
-			var r = n("./node_modules/lodash/pick.js"),
-				s = n.n(r),
-				o = n("./src/app/strings/index.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/pick.js"),
+				o = n.n(s),
 				i = n("./src/lib/constants/index.ts"),
 				c = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/lib/makeListingKey/index.ts"),
@@ -8635,121 +8635,126 @@
 			var S = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				v = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
 				T = n("./src/reddit/helpers/timeApiRoute/index.ts"),
-				C = n("./src/reddit/i18n/utils.ts"),
-				D = n("./src/reddit/models/Toast/index.ts"),
-				P = n("./src/reddit/routes/modListing/index.ts"),
-				w = n("./src/reddit/selectors/user.ts"),
-				A = n("./src/reddit/actions/pages/modListing/constants.ts");
+				C = n("./src/reddit/models/Toast/index.ts"),
+				D = n("./src/reddit/routes/modListing/index.ts"),
+				P = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/reddit/actions/pages/modListing/constants.ts");
 			n.d(t, "b", (function() {
-				return L
+				return k
 			})), n.d(t, "c", (function() {
-				return B
+				return F
 			})), n.d(t, "a", (function() {
-				return z
+				return J
 			})), n.d(t, "d", (function() {
-				return Q
+				return z
 			}));
-			const R = Object(c.a)(A.f),
-				x = Object(c.a)(A.e),
-				N = Object(c.a)(A.d),
-				k = (e, t) => async (n, r, s) => {
-					const i = r(),
-						c = i.listings.postOrder.api.pending[e],
-						a = Object(w.O)(i);
-					if (c) return;
-					n(R({
+			const A = Object(c.a)(w.f),
+				R = Object(c.a)(w.e),
+				x = Object(c.a)(w.d),
+				N = (e, t) => async (n, s, o) => {
+					const i = s();
+					if (i.listings.postOrder.api.pending[e]) return;
+					n(A({
 						key: e
 					}));
-					const d = await Object(T.a)("modListing", () => y(s.apiContext(), t)),
-						l = "error-".concat(e);
-					d.ok ? (n(x(Object.assign({
+					const c = await Object(T.a)("modListing", () => y(o.apiContext(), t)),
+						a = "error-".concat(e);
+					c.ok ? (n(R(Object.assign({
 						key: e,
 						meta: i.meta
-					}, d.body))), n(u.f(l))) : (n(N(Object.assign({
-						error: d.error,
+					}, c.body))), n(u.f(a))) : (n(x(Object.assign({
+						error: c.error,
 						key: e
-					}, d.body))), 401 === d.status ? Object(v.a)(n, i) : n(u.e({
-						id: l,
-						kind: D.b.Error,
-						text: Object(o.a)(a, "listings.toast.error"),
-						buttonText: Object(o.a)(a, "listings.toast.retryButton"),
-						buttonAction: k(e, t)
+					}, c.body))), 401 === c.status ? Object(v.a)(n, i) : n(u.e({
+						id: a,
+						kind: C.b.Error,
+						text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
+							hk: "CvZvm"
+						}),
+						buttonText: r.fbt._("Retry", null, {
+							hk: "3gV6S0"
+						}),
+						buttonAction: N(e, t)
 					})))
-				}, L = (e, t) => async (n, r) => {
+				}, k = (e, t) => async (n, s) => {
 					const {
-						sort: o = i.Q
-					} = e.params, c = Object(P.d)(e.path), u = c ? l.e : l.d, p = Object(a.a)(u, o, e.queryParams), f = r(), m = f.listings.postOrder.ids[p], O = f.listings.postOrder.api.error[p];
-					if (f.listings.postOrder.api.pending[p] || m && !O && !t) return void(m && n(d.l({
-						title: Object(C.c)("Subreddits you moderate")
+						sort: c = i.Q
+					} = e.params, u = Object(D.d)(e.path), p = u ? l.e : l.d, f = Object(a.a)(p, c, e.queryParams), m = s(), O = m.listings.postOrder.ids[f], g = m.listings.postOrder.api.error[f];
+					if (m.listings.postOrder.api.pending[f] || O && !g && !t) return void(O && n(d.l({
+						title: r.fbt._("Subreddits you moderate", null, {
+							hk: "3RYtBz"
+						})
 					})));
-					const g = G(e.queryParams);
-					await n(k(p, Object.assign({}, s()(e.queryParams, b.k), s()(e.queryParams, b.j), {
-						filtered: !!c || void 0,
+					const _ = B(e.queryParams);
+					await n(N(f, Object.assign({}, o()(e.queryParams, b.k), o()(e.queryParams, b.j), {
+						filtered: !!u || void 0,
 						moderated_srs: !0,
-						sort: o,
-						t: Object(S.a)(o, g)
+						sort: c,
+						t: Object(S.a)(c, _)
 					}))), n(d.l({
-						title: Object(C.c)("Subreddits you moderate")
+						title: r.fbt._("Subreddits you moderate", null, {
+							hk: "3RYtBz"
+						})
 					}))
-				}, M = Object(c.a)(A.i), U = Object(c.a)(A.h), F = Object(c.a)(A.g), B = e => async (t, n, r) => {
+				}, L = Object(c.a)(w.i), M = Object(c.a)(w.h), U = Object(c.a)(w.g), F = e => async (t, n, r) => {
 					let {
-						apiContext: o
+						apiContext: s
 					} = r;
 					const c = n(),
 						d = c.platform.currentPage;
 					if (!d) return;
 					const {
 						sort: u = i.Q
-					} = e, p = d.queryParams, f = Object(P.d)(d.url), m = f ? l.e : l.d, O = Object(a.a)(m, u, p), g = c.listings.postOrder.loadMore[O];
+					} = e, p = d.queryParams, f = Object(D.d)(d.url), m = f ? l.e : l.d, O = Object(a.a)(m, u, p), g = c.listings.postOrder.loadMore[O];
 					if (!g) return;
 					const _ = c.listings.postOrder.api.pending[O],
 						h = c.listings.postOrder.fetchedTokens,
 						j = !(!h[O] || !h[O][g.token]);
 					if (_ || j) return;
-					const E = G(p);
-					t(M({
+					const E = B(p);
+					t(L({
 						key: O,
 						fetchedToken: g.token
 					}));
-					const I = await y(o(), Object.assign({
+					const I = await y(s(), Object.assign({
 							after: g.token,
 							dist: g.dist,
 							filtered: !!f || void 0,
 							sort: u,
 							t: Object(S.a)(u, E)
-						}, s()(p, b.k))),
+						}, o()(p, b.k))),
 						v = c.listings.postOrder.ids[O],
 						T = Object.assign({}, I.body, {
 							postIds: (I.body.postIds || []).filter(e => !v || !v.includes(e))
 						});
-					I.ok ? t(U(Object.assign({
+					I.ok ? t(M(Object.assign({
 						key: O,
 						fetchedToken: g.token,
 						meta: c.meta
-					}, T))) : t(F(Object.assign({
+					}, T))) : t(U(Object.assign({
 						key: O,
 						error: I.error,
 						fetchedToken: g.token
 					}, T)))
 				};
 
-			function G(e) {
+			function B(e) {
 				const t = b.t in e && e[b.t].toUpperCase() || "";
 				return t in i.Sb && i.Sb[t]
 			}
-			const q = Object(c.a)(A.c),
-				V = Object(c.a)(A.b),
-				H = Object(c.a)(A.a),
-				W = Object(c.a)(A.l),
-				K = Object(c.a)(A.k),
-				Y = Object(c.a)(A.j),
-				J = (e, t) => async (n, r, s) => {
+			const G = Object(c.a)(w.c),
+				q = Object(c.a)(w.b),
+				V = Object(c.a)(w.a),
+				H = Object(c.a)(w.l),
+				W = Object(c.a)(w.k),
+				K = Object(c.a)(w.j),
+				Y = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: o
 					} = s;
 					const i = r(),
-						c = Object(w.i)(i),
-						[a, d, u, l] = t ? [V, q, H, E] : [K, W, Y, I];
+						c = Object(P.i)(i),
+						[a, d, u, l] = t ? [q, G, V, E] : [W, H, K, I];
 					if (!c || !c.displayText) return;
 					const {
 						currentPage: b
@@ -8757,8 +8762,8 @@
 					if (!b || !b.routeMatch) return;
 					n(a(e));
 					const p = await l(o(), c.displayText, e);
-					p.ok ? (await n(L(b.routeMatch.match, !0)), n(d(e))) : n(u(p.body))
-				}, z = e => J(e, !0), Q = e => J(e, !1)
+					p.ok ? (await n(k(b.routeMatch.match, !0)), n(d(e))) : n(u(p.body))
+				}, J = e => Y(e, !0), z = e => Y(e, !1)
 		},
 		"./src/reddit/actions/pages/postCreation.ts": function(e, t, n) {
 			"use strict";
@@ -9732,11 +9737,11 @@
 		"./src/reddit/actions/pages/subreddit.ts": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./node_modules/lodash/pick.js"),
-				s = n.n(r),
-				o = n("./node_modules/lodash/some.js"),
-				i = n.n(o),
-				c = n("./src/app/strings/index.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/pick.js"),
+				o = n.n(s),
+				i = n("./node_modules/lodash/some.js"),
+				c = n.n(i),
 				a = n("./src/lib/constants/index.ts"),
 				d = n("./src/lib/isAdHocMultireddit/index.ts"),
 				u = n("./src/lib/isFakeSubreddit/index.ts"),
@@ -9899,77 +9904,81 @@
 						}))
 					}
 				}
-			}, ce = "PAGE__SUBREDDIT_PENDING", ae = "PAGE__SUBREDDIT_LOADED", de = "PAGE__SUBREDDIT_FAILED", ue = Object(l.a)(ce), le = Object(l.a)(ae), be = Object(l.a)(de), pe = (e, t, n, r) => async (s, o, d) => {
-				const l = o(),
+			}, ce = "PAGE__SUBREDDIT_PENDING", ae = "PAGE__SUBREDDIT_LOADED", de = "PAGE__SUBREDDIT_FAILED", ue = Object(l.a)(ce), le = Object(l.a)(ae), be = Object(l.a)(de), pe = (e, t, n, s) => async (o, i, d) => {
+				const l = i(),
 					b = Object(k.G)(l);
 				if (l.listings.postOrder.api.pending[e]) return;
 				const p = t !== B.c.All && t !== B.c.Popular || !l.posts.recent.length ? n : Object.assign({}, n, {
 					recentPostIds: l.posts.recent
 				});
-				p.layout = q.e[Object(V.L)(l, {})], s(ue({
+				p.layout = q.e[Object(V.L)(l, {})], o(ue({
 					key: e
 				}));
 				const f = Object(te.b)(l) ? () => Object(W.b)(d.gqlContext(), Object(W.c)(l, t, p), b) : () => Object(W.a)(d.apiContext(), t, p),
 					g = await Object(z.a)("subreddit", f),
 					_ = g.body;
-				s(I.m(g.status));
+				o(I.m(g.status));
 				const E = "error-".concat(e),
-					S = Object(u.a)(t) || i()(_.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
+					S = Object(u.a)(t) || c()(_.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
 				if (g.ok && S) {
 					let n;
-					const i = _.postIds.filter(e => !!_.posts[e].isMeta);
-					if (i.length) {
+					const r = _.postIds.filter(e => !!_.posts[e].isMeta);
+					if (r.length) {
 						const e = Object.keys(_.subreddits).reduce((e, n) => {
 							const r = _.subreddits[n];
 							return r.name.toLowerCase() === t.toLowerCase() ? r.id : e
 						}, null);
 						if (e) {
-							const t = await Object(H.a)(d.apiContext(), e, i);
+							const t = await Object(H.a)(d.apiContext(), e, r);
 							t.ok && (n = t.body)
 						}
 					}
-					if (s(le(Object.assign({
+					if (o(le(Object.assign({
 							key: e,
 							meta: l.meta,
 							governance: n
 						}, _, {
 							postIds: _.postIds
 						}))), !Object(u.a)(t)) {
-						const e = Object(N.D)(o(), t);
+						const e = Object(N.D)(i(), t);
 						!!Object(N.O)(l, {
 							subredditId: e
-						}) || await v.o(t)(s, o, d);
+						}) || await v.o(t)(o, i, d);
 						const n = Object(O.c)(_.posts, e),
 							r = Object(O.b)(_.structuredStyles),
-							i = (r ? Object(O.d)(r) : []).concat(n);
-						s(Object(O.a)(i, e))
+							s = (r ? Object(O.d)(r) : []).concat(n);
+						o(Object(O.a)(s, e))
 					}
-					const c = [j.c()(s, o, d)];
-					await Promise.all(c), r && s(C.f(E)), s(Object(m.b)(Z.a.SUBREDDIT)), s(Object(y.p)());
-					const a = Object(N.D)(o(), t);
+					const c = [j.c()(o, i, d)];
+					await Promise.all(c), s && o(C.f(E)), o(Object(m.b)(Z.a.SUBREDDIT)), o(Object(y.p)());
+					const a = Object(N.D)(i(), t);
 					if (a) {
-						const e = [s(Object(h.a)({
+						const e = [o(Object(h.a)({
 							subredditId: a,
 							postIds: _.postIds,
 							skip: ["subscription"]
 						}))];
-						Object(re.a)(o(), {
+						Object(re.a)(i(), {
 							subredditId: a
-						}) && e.push(s(Object(U.f)(t, a)), s(Object(F.k)(a, Q.a.idCard))), await Promise.all(e)
+						}) && e.push(o(Object(U.f)(t, a)), o(Object(F.k)(a, Q.a.idCard))), await Promise.all(e)
 					}
 				} else {
-					if (403 === g.status || 404 === g.status || 451 === g.status) return void s(ie(g, t));
-					s(be(Object.assign({
+					if (403 === g.status || 404 === g.status || 451 === g.status) return void o(ie(g, t));
+					o(be(Object.assign({
 						error: !g.ok && g.error || {
 							type: a.F.NOT_FOUND_ERROR
 						},
 						key: e
-					}, _))), r && s(C.e({
+					}, _))), s && o(C.e({
 						id: E,
 						kind: w.b.Error,
-						text: Object(c.a)(l.user.language, "listings.toast.error"),
-						buttonText: Object(c.a)(l.user.language, "listings.toast.retryButton"),
-						buttonAction: pe(e, t, n, r)
+						text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
+							hk: "CvZvm"
+						}),
+						buttonText: r.fbt._("Retry", null, {
+							hk: "3gV6S0"
+						}),
+						buttonAction: pe(e, t, n, s)
 					}))
 				}
 			}, fe = (e, t) => {
@@ -10000,7 +10009,7 @@
 			}, Oe = (e, t) => {
 				const n = me(e, t);
 				return n && Object(f.c)(n)
-			}, ge = (e, t, n, r) => r ? Object(f.b)(e, void 0, r) : Object(p.a)(e, t, n), _e = (e, t) => async (n, r, o) => {
+			}, ge = (e, t, n, r) => r ? Object(f.b)(e, void 0, r) : Object(p.a)(e, t, n), _e = (e, t) => async (n, r, s) => {
 				const {
 					subredditName: i
 				} = e.params, {
@@ -10034,7 +10043,7 @@
 				const A = n(Object(oe.c)("r/".concat(i)));
 				if (b) await n(Object(E.d)(f, b, i));
 				else {
-					const t = Object.assign({}, s()(e.queryParams, [...G.k, ...G.j, G.g]), {
+					const t = Object.assign({}, o()(e.queryParams, [...G.k, ...G.j, G.g]), {
 							sort: g,
 							t: Object(J.a)(g, w)
 						}),
@@ -19598,8 +19607,8 @@
 		},
 		"./src/reddit/actions/widgets/index.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/app/strings/index.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/reddit/actions/apiRequestState.ts"),
 				i = n("./src/reddit/actions/imageUploads.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
@@ -19622,96 +19631,95 @@
 				g = n("./src/reddit/models/Image/index.tsx"),
 				_ = n("./src/reddit/models/Toast/index.ts"),
 				h = n("./src/reddit/models/Widgets/index.ts"),
-				y = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/actions/widgets/constants.ts");
+				y = n("./src/reddit/actions/widgets/constants.ts");
 			n.d(t, "c", (function() {
-				return I
+				return E
 			})), n.d(t, "e", (function() {
-				return v
+				return S
 			})), n.d(t, "d", (function() {
-				return C
+				return T
 			})), n.d(t, "h", (function() {
-				return P
+				return D
 			})), n.d(t, "a", (function() {
-				return w
+				return P
 			})), n.d(t, "b", (function() {
-				return A
+				return w
 			})), n.d(t, "f", (function() {
-				return x
+				return R
 			})), n.d(t, "g", (function() {
-				return M
+				return L
 			}));
-			const E = Object(r.a)(j.g),
-				I = (e, t, n) => async (r, b, f) => {
+			const j = Object(s.a)(y.g),
+				E = (e, t, n) => async (s, b, f) => {
 					const {
 						apiContext: m
 					} = f;
-					r(Object(o.h)(n));
-					const j = b(),
-						I = Object(O.P)(j, {
+					s(Object(o.h)(n));
+					const y = b(),
+						E = Object(O.P)(y, {
 							subredditId: e
 						}).name,
-						S = Object(y.O)(j),
-						v = Object(h.k)(t);
-					let T = null,
-						C = null;
+						I = Object(h.k)(t);
+					let S = null,
+						v = null;
 					try {
-						(T = await Object(i.f)(j, g.a.Widgets)) && (C = Object(i.m)(T)(r, b, f))
-					} catch (P) {
+						(S = await Object(i.f)(y, g.a.Widgets)) && (v = Object(i.m)(S)(s, b, f))
+					} catch (C) {
 						const e = Object(p.a)("webSocket");
-						return void r(Object(o.f)(n, e))
+						return void s(Object(o.f)(n, e))
 					}
-					const D = await (async (e, t, n) => Object(d.b)(Object(u.a)(e, [l.a]), {
+					const T = await (async (e, t, n) => Object(d.b)(Object(u.a)(e, [l.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/widget"),
 						method: a.db.POST,
 						type: "json",
 						data: n
-					}))(m(), I, v);
-					if (D.ok) {
-						let i = D.body;
+					}))(m(), E, I);
+					if (T.ok) {
+						let i = T.body;
 						const a = i.id;
-						if ("calendar" === t.kind && r(Object(c.e)({
+						if ("calendar" === t.kind && s(Object(c.e)({
 								kind: _.b.SuccessMod,
-								text: Object(s.a)(S, "structuredStyles.widgets.calendar.toastText.created")
-							})), T) {
+								text: r.fbt._("New calendar added! It may take a few minutes to see your events appear", null, {
+									hk: "4iETrT"
+								})
+							})), S) {
 							try {
-								await C
-							} catch (P) {}
-							i = await r(U(e, a)) || i
+								await v
+							} catch (C) {}
+							i = await s(M(e, a)) || i
 						}
-						r(E({
+						s(j({
 							subredditId: e,
 							widget: i,
 							widgetId: a
-						})), r(Object(o.e)(n))
-					} else T && T.websocket.close(), r(Object(o.f)(n, D.error))
-				}, S = Object(r.a)(j.i), v = (e, t, n) => async (r, b, f) => {
+						})), s(Object(o.e)(n))
+					} else S && S.websocket.close(), s(Object(o.f)(n, T.error))
+				}, I = Object(s.a)(y.i), S = (e, t, n) => async (s, b, f) => {
 					const {
-						apiContext: j
+						apiContext: y
 					} = f;
-					r(Object(o.h)(n));
-					const E = t.id,
-						I = b(),
-						v = Object(O.P)(I, {
+					s(Object(o.h)(n));
+					const j = t.id,
+						E = b(),
+						S = Object(O.P)(E, {
 							subredditId: e
 						}).name,
-						T = Object(y.O)(I),
-						C = Object(h.k)(t);
-					let D = null,
-						P = null;
+						v = Object(h.k)(t);
+					let T = null,
+						C = null;
 					try {
-						(D = await Object(i.f)(I, g.a.Widgets)) && (P = Object(i.m)(D)(r, b, f))
-					} catch (A) {
+						(T = await Object(i.f)(E, g.a.Widgets)) && (C = Object(i.m)(T)(s, b, f))
+					} catch (P) {
 						const e = Object(p.a)("webSocket");
-						return void r(Object(o.f)(n, e))
+						return void s(Object(o.f)(n, e))
 					}
-					const w = await (async (e, t, n) => Object(d.b)(Object(u.a)(e, [l.a]), {
+					const D = await (async (e, t, n) => Object(d.b)(Object(u.a)(e, [l.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/widget/").concat(n.id),
 						method: a.db.PUT,
 						type: "json",
 						data: n
-					}))(j(), v, C);
-					if (w.ok) {
+					}))(y(), S, v);
+					if (D.ok) {
 						let i = function(e, t, n) {
 							switch (e.kind) {
 								case "calendar":
@@ -19752,23 +19760,25 @@
 								default:
 									return Object(m.a)(e)
 							}
-						}(t, w.body, I);
-						if (P) {
+						}(t, D.body, E);
+						if (C) {
 							try {
-								await P
-							} catch (A) {}
-							i = await r(U(e, E)) || i
+								await C
+							} catch (P) {}
+							i = await s(M(e, j)) || i
 						}
-						r(S({
+						s(I({
 							subredditId: e,
-							widgetId: E,
+							widgetId: j,
 							widget: i
-						})), "calendar" === t.kind && r(Object(c.e)({
+						})), "calendar" === t.kind && s(Object(c.e)({
 							kind: _.b.SuccessMod,
-							text: Object(s.a)(T, "structuredStyles.widgets.calendar.toastText.updated")
-						})), r(Object(o.e)(n))
-					} else D && D.websocket.close(), r(Object(o.f)(n, w.error))
-				}, T = Object(r.a)(j.h), C = (e, t, n) => async (r, s, i) => {
+							text: r.fbt._("Calendar is updated! It may take a few minutes to see your events change", null, {
+								hk: "10XWV"
+							})
+						})), s(Object(o.e)(n))
+					} else T && T.websocket.close(), s(Object(o.f)(n, D.error))
+				}, v = Object(s.a)(y.h), T = (e, t, n) => async (r, s, i) => {
 					let {
 						apiContext: c
 					} = i;
@@ -19782,11 +19792,11 @@
 							method: a.db.DELETE,
 							type: "json"
 						}))(c(), p, t);
-					f.ok ? (r(Object(o.e)(n)), r(T({
+					f.ok ? (r(Object(o.e)(n)), r(v({
 						subredditId: e,
 						widgetId: b
 					}))) : r(Object(o.f)(n, f.error))
-				}, D = Object(r.a)(j.f), P = (e, t) => async (n, r, s) => {
+				}, C = Object(s.a)(y.f), D = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: o
 					} = s;
@@ -19798,11 +19808,11 @@
 						method: a.db.PATCH,
 						type: "json",
 						data: n
-					}))(o(), i, t)).ok && n(D({
+					}))(o(), i, t)).ok && n(C({
 						subredditId: e,
 						widgetIds: t
 					}))
-				}, w = e => {
+				}, P = e => {
 					let {
 						imageData: t
 					} = e;
@@ -19831,7 +19841,7 @@
 						}
 						return p
 					}
-				}, A = Object(r.a)(j.d), R = Object(r.a)(j.e), x = (e, t) => async (n, r, s) => {
+				}, w = Object(s.a)(y.d), A = Object(s.a)(y.e), R = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -19842,16 +19852,16 @@
 						a = await b(i(), c);
 					if (a.ok) {
 						const r = a.body;
-						n(R({
+						n(A({
 							subredditId: e,
 							widgets: r
 						})), n(Object(o.e)(t))
 					} else n(Object(o.f)(t, a.error))
-				}, N = Object(r.a)(j.c), k = Object(r.a)(j.b), L = Object(r.a)(j.a), M = (e, t) => async (n, r, s) => {
+				}, x = Object(s.a)(y.c), N = Object(s.a)(y.b), k = Object(s.a)(y.a), L = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: o
 					} = s;
-					n(N({
+					n(x({
 						subredditId: e
 					}));
 					const i = Object(O.P)(r(), {
@@ -19860,15 +19870,15 @@
 						c = await b(o(), i, t);
 					if (c.ok) {
 						const t = c.body;
-						n(k({
+						n(N({
 							subredditId: e,
 							widgets: t
 						}))
-					} else n(L({
+					} else n(k({
 						subredditId: e,
 						error: c.error
 					}))
-				}, U = (e, t) => async (n, r, s) => {
+				}, M = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: o
 					} = s;
@@ -62182,4 +62192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.d835d13d7b831aa5b9fd.js.map
+//# sourceMappingURL=Governance~Reddit.82f90eae9e8d38ed5518.js.map
