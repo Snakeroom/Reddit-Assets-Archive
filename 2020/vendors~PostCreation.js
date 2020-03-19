@@ -1,90 +1,90 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.1b1379b71eff9278cb0c.js
-// Retrieved at 3/18/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.0f25a3d7e764c2785195.js
+// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation", "vendors~Poll"], {
-		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, r, o) {
+		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, r, t) {
 			"use strict";
-			var t = o("./node_modules/react/index.js"),
-				n = o.n(t),
-				s = o("./node_modules/react-dom/index.js"),
-				a = (o("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
+			var o = t("./node_modules/react/index.js"),
+				n = t.n(o),
+				s = t("./node_modules/react-dom/index.js"),
+				a = (t("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
 
 			function i(e, r) {
-				return Array.isArray(e) && Array.isArray(r) && e.length === r.length ? e.some((function(o, t) {
-					return i(e[t], r[t])
+				return Array.isArray(e) && Array.isArray(r) && e.length === r.length ? e.some((function(t, o) {
+					return i(e[o], r[o])
 				})) : e !== r
 			}
 			var u = new Map;
 
 			function d(e) {
 				void 0 === e && (e = {});
-				for (var r, o = e.root || null, t = function(e) {
+				for (var r, t = e.root || null, o = function(e) {
 						var r = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
 								if (!a.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
 								return e
 							})),
-							o = r[0],
-							t = void 0 === o ? "0px" : o,
+							t = r[0],
+							o = void 0 === t ? "0px" : t,
 							n = r[1],
-							s = void 0 === n ? t : n,
+							s = void 0 === n ? o : n,
 							i = r[2],
-							u = void 0 === i ? t : i,
+							u = void 0 === i ? o : i,
 							d = r[3];
-						return t + " " + s + " " + u + " " + (void 0 === d ? s : d)
+						return o + " " + s + " " + u + " " + (void 0 === d ? s : d)
 					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], s = u.keys(); r = s.next().value;) {
-					if (!(o !== r.root || t !== r.rootMargin || i(n, r.thresholds))) return r
+					if (!(t !== r.root || o !== r.rootMargin || i(n, r.thresholds))) return r
 				}
 				return null
 			}
 
 			function c(e, r) {
-				var o = u.get(e);
-				if (o)
-					for (var t, n = o.values(); t = n.next().value;)
-						if (t.target === r.target) return t;
+				var t = u.get(e);
+				if (t)
+					for (var o, n = t.values(); o = n.next().value;)
+						if (o.target === r.target) return o;
 				return null
 			}
 
 			function l(e, r) {
-				for (var o = 0; o < e.length; o++) {
-					var t = c(r, e[o]);
-					t && t.handleChange(e[o])
+				for (var t = 0; t < e.length; t++) {
+					var o = c(r, e[t]);
+					o && o.handleChange(e[t])
 				}
 			}
 
 			function p(e) {
 				return d(e) || new IntersectionObserver(l, e)
 			}
-			var h = o("./node_modules/invariant/browser.js"),
-				f = o.n(h),
-				m = {},
-				v = Object.create(null, {
+			var h = t("./node_modules/invariant/browser.js"),
+				f = t.n(h),
+				v = {},
+				m = Object.create(null, {
 					errorReporter: {
 						configurable: !1,
 						get: function() {
-							return m.errorReporter || function(e) {
+							return v.errorReporter || function(e) {
 								return f()(!1, e)
 							}
 						},
 						set: function(e) {
 							if ("function" != typeof e) throw new Error("ReactIntersectionObserver: `Config.errorReporter` must be a callable");
-							m.errorReporter = e
+							v.errorReporter = e
 						}
 					}
 				});
 
-			function _(e) {
+			function b(e) {
 				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return e
 			}
 
-			function b(e, r, o) {
+			function _(e, r, t) {
 				return r in e ? Object.defineProperty(e, r, {
-					value: o,
+					value: t,
 					enumerable: !0,
 					configurable: !0,
 					writable: !0
-				}) : e[r] = o, e
+				}) : e[r] = t, e
 			}
 			var y = ["root", "rootMargin", "threshold"],
 				g = ["root", "rootMargin", "threshold", "disabled"],
@@ -92,54 +92,54 @@
 				O = j.hasOwnProperty,
 				T = j.toString,
 				x = function(e) {
-					return y.reduce((function(r, o) {
-						if (O.call(e, o)) {
-							var t = "root" === o && "[object String]" === T.call(e[o]);
-							r[o] = t ? document.querySelector(e[o]) : e[o]
+					return y.reduce((function(r, t) {
+						if (O.call(e, t)) {
+							var o = "root" === t && "[object String]" === T.call(e[t]);
+							r[t] = o ? document.querySelector(e[t]) : e[t]
 						}
 						return r
 					}), {})
 				},
 				w = function(e) {
-					var r, o;
+					var r, t;
 
-					function t() {
-						for (var r, o = arguments.length, t = new Array(o), n = 0; n < o; n++) t[n] = arguments[n];
-						return b(_(r = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
+					function o() {
+						for (var r, t = arguments.length, o = new Array(t), n = 0; n < t; n++) o[n] = arguments[n];
+						return _(b(r = e.call.apply(e, [this].concat(o)) || this), "handleChange", (function(e) {
 							r.props.onChange(e, r.externalUnobserve)
-						})), b(_(r), "handleNode", (function(e) {
-							var o = r.props.children;
-							if (null != o) {
-								var t = o.ref;
-								t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e))
+						})), _(b(r), "handleNode", (function(e) {
+							var t = r.props.children;
+							if (null != t) {
+								var o = t.ref;
+								o && ("function" == typeof o ? o(e) : "object" == typeof o && (o.current = e))
 							}
 							r.targetNode = e && Object(s.findDOMNode)(e)
-						})), b(_(r), "observe", (function() {
-							return null != r.props.children && !r.props.disabled && (r.targetNode ? (r.observer = p(x(r.props)), r.target = r.targetNode, e = _(r), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+						})), _(b(r), "observe", (function() {
+							return null != r.props.children && !r.props.disabled && (r.targetNode ? (r.observer = p(x(r.props)), r.target = r.targetNode, e = b(r), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (m.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), b(_(r), "unobserve", (function(e) {
+						})), _(b(r), "unobserve", (function(e) {
 							! function(e, r) {
 								if (u.has(e.observer)) {
-									var o = u.get(e.observer);
-									o.delete(e) && (o.size > 0 ? e.observer.unobserve(r) : (e.observer.disconnect(), u.delete(e.observer)))
+									var t = u.get(e.observer);
+									t.delete(e) && (t.size > 0 ? e.observer.unobserve(r) : (e.observer.disconnect(), u.delete(e.observer)))
 								}
-							}(_(r), e)
-						})), b(_(r), "externalUnobserve", (function() {
+							}(b(r), e)
+						})), _(b(r), "externalUnobserve", (function() {
 							r.unobserve(r.targetNode)
 						})), r
 					}
-					o = e, (r = t).prototype = Object.create(o.prototype), r.prototype.constructor = r, r.__proto__ = o;
-					var a = t.prototype;
+					t = e, (r = o).prototype = Object.create(t.prototype), r.prototype.constructor = r, r.__proto__ = t;
+					var a = o.prototype;
 					return a.getSnapshotBeforeUpdate = function(e) {
 						var r = this;
 						this.prevTargetNode = this.targetNode;
-						var o = g.some((function(o) {
-							return i(r.props[o], e[o])
+						var t = g.some((function(t) {
+							return i(r.props[t], e[t])
 						}));
-						return o && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), o
-					}, a.componentDidUpdate = function(e, r, o) {
-						var t = !1;
-						o || (t = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (o || t) && this.observe()
+						return t && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), t
+					}, a.componentDidUpdate = function(e, r, t) {
+						var o = !1;
+						t || (o = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (t || o) && this.observe()
 					}, a.componentDidMount = function() {
 						this.observe()
 					}, a.componentWillUnmount = function() {
@@ -149,22 +149,22 @@
 						return null != e ? n.a.cloneElement(n.a.Children.only(e), {
 							ref: this.handleNode
 						}) : null
-					}, t
+					}, o
 				}(n.a.Component);
-			b(w, "displayName", "IntersectionObserver"), o.d(r, "a", (function() {
+			_(w, "displayName", "IntersectionObserver"), t.d(r, "a", (function() {
 				return w
 			}))
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, o) {
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, t) {
 			"use strict";
-			var t = o("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var o = t("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function n() {}
 
 			function s() {}
 			s.resetWarningCache = n, e.exports = function() {
-				function e(e, r, o, n, s, a) {
-					if (a !== t) {
+				function e(e, r, t, n, s, a) {
+					if (a !== o) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw i.name = "Invariant Violation", i
 					}
@@ -174,7 +174,7 @@
 					return e
 				}
 				e.isRequired = e;
-				var o = {
+				var t = {
 					array: e,
 					bool: e,
 					func: e,
@@ -196,34 +196,34 @@
 					checkPropTypes: s,
 					resetWarningCache: n
 				};
-				return o.PropTypes = o, o
+				return t.PropTypes = t, t
 			}
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, r, o) {
-			e.exports = o("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, r, t) {
+			e.exports = t("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, o) {
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, t) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./node_modules/brcast/dist/brcast.es.js": function(e, r, o) {
+		"./node_modules/brcast/dist/brcast.es.js": function(e, r, t) {
 			"use strict";
 			r.a = function(e) {
 				var r = {},
-					o = 1,
-					t = e;
+					t = 1,
+					o = e;
 				return {
 					getState: function() {
-						return t
+						return o
 					},
 					setState: function(e) {
-						t = e;
-						for (var o = Object.keys(r), n = 0, s = o.length; n < s; n++) r[o[n]] && r[o[n]](e)
+						o = e;
+						for (var t = Object.keys(r), n = 0, s = t.length; n < s; n++) r[t[n]] && r[t[n]](e)
 					},
 					subscribe: function(e) {
 						if ("function" != typeof e) throw new Error("listener must be a function.");
-						var t = o;
-						return r[t] = e, o += 1, t
+						var o = t;
+						return r[o] = e, t += 1, o
 					},
 					unsubscribe: function(e) {
 						r[e] = void 0
@@ -233,135 +233,119 @@
 		},
 		"./node_modules/lodash/_arrayEvery.js": function(e, r) {
 			e.exports = function(e, r) {
-				for (var o = -1, t = null == e ? 0 : e.length; ++o < t;)
-					if (!r(e[o], o, e)) return !1;
+				for (var t = -1, o = null == e ? 0 : e.length; ++t < o;)
+					if (!r(e[t], t, e)) return !1;
 				return !0
 			}
 		},
 		"./node_modules/lodash/_baseClamp.js": function(e, r) {
-			e.exports = function(e, r, o) {
-				return e == e && (void 0 !== o && (e = e <= o ? e : o), void 0 !== r && (e = e >= r ? e : r)), e
+			e.exports = function(e, r, t) {
+				return e == e && (void 0 !== t && (e = e <= t ? e : t), void 0 !== r && (e = e >= r ? e : r)), e
 			}
 		},
-		"./node_modules/lodash/_baseEvery.js": function(e, r, o) {
-			var t = o("./node_modules/lodash/_baseEach.js");
+		"./node_modules/lodash/_baseEvery.js": function(e, r, t) {
+			var o = t("./node_modules/lodash/_baseEach.js");
 			e.exports = function(e, r) {
-				var o = !0;
-				return t(e, (function(e, t, n) {
-					return o = !!r(e, t, n)
-				})), o
-			}
-		},
-		"./node_modules/lodash/_baseFindKey.js": function(e, r) {
-			e.exports = function(e, r, o) {
-				var t;
+				var t = !0;
 				return o(e, (function(e, o, n) {
-					if (r(e, o, n)) return t = o, !1
+					return t = !!r(e, o, n)
 				})), t
 			}
 		},
-		"./node_modules/lodash/every.js": function(e, r, o) {
-			var t = o("./node_modules/lodash/_arrayEvery.js"),
-				n = o("./node_modules/lodash/_baseEvery.js"),
-				s = o("./node_modules/lodash/_baseIteratee.js"),
-				a = o("./node_modules/lodash/isArray.js"),
-				i = o("./node_modules/lodash/_isIterateeCall.js");
-			e.exports = function(e, r, o) {
-				var u = a(e) ? t : n;
-				return o && i(e, r, o) && (r = void 0), u(e, s(r, 3))
+		"./node_modules/lodash/_baseFindKey.js": function(e, r) {
+			e.exports = function(e, r, t) {
+				var o;
+				return t(e, (function(e, t, n) {
+					if (r(e, t, n)) return o = t, !1
+				})), o
 			}
 		},
-		"./node_modules/lodash/findKey.js": function(e, r, o) {
-			var t = o("./node_modules/lodash/_baseFindKey.js"),
-				n = o("./node_modules/lodash/_baseForOwn.js"),
-				s = o("./node_modules/lodash/_baseIteratee.js");
+		"./node_modules/lodash/every.js": function(e, r, t) {
+			var o = t("./node_modules/lodash/_arrayEvery.js"),
+				n = t("./node_modules/lodash/_baseEvery.js"),
+				s = t("./node_modules/lodash/_baseIteratee.js"),
+				a = t("./node_modules/lodash/isArray.js"),
+				i = t("./node_modules/lodash/_isIterateeCall.js");
+			e.exports = function(e, r, t) {
+				var u = a(e) ? o : n;
+				return t && i(e, r, t) && (r = void 0), u(e, s(r, 3))
+			}
+		},
+		"./node_modules/lodash/findKey.js": function(e, r, t) {
+			var o = t("./node_modules/lodash/_baseFindKey.js"),
+				n = t("./node_modules/lodash/_baseForOwn.js"),
+				s = t("./node_modules/lodash/_baseIteratee.js");
 			e.exports = function(e, r) {
-				return t(e, s(r, 3), n)
+				return o(e, s(r, 3), n)
 			}
 		},
-		"./node_modules/lodash/times.js": function(e, r, o) {
-			var t = o("./node_modules/lodash/_baseTimes.js"),
-				n = o("./node_modules/lodash/_castFunction.js"),
-				s = o("./node_modules/lodash/toInteger.js"),
-				a = 9007199254740991,
-				i = 4294967295,
-				u = Math.min;
-			e.exports = function(e, r) {
-				if ((e = s(e)) < 1 || e > a) return [];
-				var o = i,
-					d = u(e, i);
-				r = n(r), e -= i;
-				for (var c = t(d, r); ++o < e;) r(o);
-				return c
-			}
-		},
-		"./node_modules/lodash/uniqueId.js": function(e, r, o) {
-			var t = o("./node_modules/lodash/toString.js"),
+		"./node_modules/lodash/uniqueId.js": function(e, r, t) {
+			var o = t("./node_modules/lodash/toString.js"),
 				n = 0;
 			e.exports = function(e) {
 				var r = ++n;
-				return t(e) + r
+				return o(e) + r
 			}
 		},
-		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, r, o) {
+		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, r, t) {
 			"use strict";
-			o.d(r, "a", (function() {
+			t.d(r, "a", (function() {
 				return l
 			}));
-			var t = o("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
-				n = o("./node_modules/react/index.js"),
-				s = o.n(n),
-				a = o("./node_modules/react-router/esm/react-router.js"),
-				i = o("./node_modules/history/esm/history.js"),
-				u = (o("./node_modules/react-router-dom/node_modules/prop-types/index.js"), o("./node_modules/@babel/runtime/helpers/esm/extends.js")),
-				d = o("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
-				c = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+			var o = t("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
+				n = t("./node_modules/react/index.js"),
+				s = t.n(n),
+				a = t("./node_modules/react-router/esm/react-router.js"),
+				i = t("./node_modules/history/esm/history.js"),
+				u = (t("./node_modules/react-router-dom/node_modules/prop-types/index.js"), t("./node_modules/@babel/runtime/helpers/esm/extends.js")),
+				d = t("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
+				c = t("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 			s.a.Component;
 			s.a.Component;
 			var l = function(e) {
 				function r() {
 					return e.apply(this, arguments) || this
 				}
-				Object(t.a)(r, e);
-				var o = r.prototype;
-				return o.handleClick = function(e, r) {
+				Object(o.a)(r, e);
+				var t = r.prototype;
+				return t.handleClick = function(e, r) {
 					try {
 						this.props.onClick && this.props.onClick(e)
-					} catch (o) {
-						throw e.preventDefault(), o
+					} catch (t) {
+						throw e.preventDefault(), t
 					}
 					e.defaultPrevented || 0 !== e.button || this.props.target && "_self" !== this.props.target || function(e) {
 						return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
 					}(e) || (e.preventDefault(), (this.props.replace ? r.replace : r.push)(this.props.to))
-				}, o.render = function() {
+				}, t.render = function() {
 					var e = this,
 						r = this.props,
-						o = r.innerRef,
-						t = (r.replace, r.to),
+						t = r.innerRef,
+						o = (r.replace, r.to),
 						n = Object(d.a)(r, ["innerRef", "replace", "to"]);
 					return s.a.createElement(a.g.Consumer, null, (function(r) {
 						r || Object(c.default)(!1);
-						var a = "string" == typeof t ? Object(i.c)(t, null, null, r.location) : t,
+						var a = "string" == typeof o ? Object(i.c)(o, null, null, r.location) : o,
 							d = a ? r.history.createHref(a) : "";
 						return s.a.createElement("a", Object(u.a)({}, n, {
-							onClick: function(o) {
-								return e.handleClick(o, r.history)
+							onClick: function(t) {
+								return e.handleClick(t, r.history)
 							},
 							href: d,
-							ref: o
+							ref: t
 						}))
 					}))
 				}, r
 			}(s.a.Component)
 		},
-		"./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, o) {
+		"./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, t) {
 			"use strict";
-			var t = o("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var o = t("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function n() {}
 			e.exports = function() {
-				function e(e, r, o, n, s, a) {
-					if (a !== t) {
+				function e(e, r, t, n, s, a) {
+					if (a !== o) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw i.name = "Invariant Violation", i
 					}
@@ -371,7 +355,7 @@
 					return e
 				}
 				e.isRequired = e;
-				var o = {
+				var t = {
 					array: e,
 					bool: e,
 					func: e,
@@ -390,16 +374,16 @@
 					shape: r,
 					exact: r
 				};
-				return o.checkPropTypes = n, o.PropTypes = o, o
+				return t.checkPropTypes = n, t.PropTypes = t, t
 			}
 		},
-		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, r, o) {
-			e.exports = o("./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js")()
+		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, r, t) {
+			e.exports = t("./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js")()
 		},
-		"./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, o) {
+		"./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, t) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~PostCreation.1b1379b71eff9278cb0c.js.map
+//# sourceMappingURL=vendors~PostCreation.0f25a3d7e764c2785195.js.map

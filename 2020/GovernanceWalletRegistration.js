@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.cfd94c3001fc8c57f4e2.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.652d241fbcc9d1b03ad0.js
+// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1636,4 +1636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.cfd94c3001fc8c57f4e2.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.652d241fbcc9d1b03ad0.js.map

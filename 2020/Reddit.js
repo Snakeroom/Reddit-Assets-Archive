@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0085473155c078368c08.js
-// Retrieved at 3/19/2020, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9fc70644c714b3b6b8e4.js
+// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4204,9 +4204,9 @@
 				qr = s("./src/reddit/helpers/isArrayEqual.ts"),
 				Gr = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Wr = s("./src/reddit/selectors/experiments/trending.ts");
-			const Vr = e => Object(V.D)(e) || L.Kb.Treatment1 === Object(G.c)(e, {
+			const Vr = e => Object(V.D)(e) || L.Ib.Treatment1 === Object(G.c)(e, {
 				experimentEligibilitySelector: G.a,
-				experimentName: L.Hb
+				experimentName: L.Fb
 			});
 			var Qr = s("./src/reddit/selectors/searchResults.ts"),
 				zr = s("./src/reddit/selectors/tooltip.ts"),
@@ -5020,7 +5020,7 @@
 							experimentEligibilitySelector: V.G,
 							experimentName: L.M
 						});
-						return !!t && !Object(L.Qb)(t)
+						return !!t && !Object(L.Ob)(t)
 					}
 				});
 			class mi extends h.a.Component {
@@ -11774,9 +11774,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.D)(e) || !(n.Jb.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.D)(e) || !(n.Hb.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Gb
+				experimentName: n.Eb
 			}))
 		},
 		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
@@ -11788,9 +11788,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Mb.All === Object(a.c)(e, {
+			const r = e => n.Kb.All === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Lb
+					experimentName: n.Jb
 				}),
 				o = ["52weeksofcooking", "advancedrunning", "amateur_boxing", "animation", "bathandbodyworks", "bbq", "beer", "beerporn", "blacksmith", "boostedboards", "campinggear", "chipotle", "cookingforbeginners", "decidingtobebetter", "declutter", "dermatology", "dominos", "eczema", "engagementrings", "family", "fermentation", "findfashion", "fitbit", "fixit", "fondanthate", "foodhacks", "glossier", "healthyfood", "homegym", "hotdogs", "hotpeppers", "hotsauce", "howto", "instantpot", "interiordesign", "internetparents", "jeffreestarcosmetics", "knifemaking", "kombucha", "love", "makeupflatlays", "makeuplounge", "malegrooming", "mead", "moissanite", "mommit", "muaythai", "nanny", "narcissisticparents", "outdoors", "ramen", "rawdenim", "recipes", "redwingshoes", "rowing", "sarahsnark", "skincare_addiction", "skookum", "slowcooking", "spicy", "starbucksbaristas", "steak", "swimming", "tacobell", "talesfromthepizzaguy", "traderjoes", "triathlon", "veganfoodporn", "veganrecipes", "weddingsunder10k", "whiskeytribe", "whiskyporn", "wicked_edge", "womenshealth", "xxketo4u2", "yeezys"]
 		},
@@ -11923,4 +11923,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.0085473155c078368c08.js.map
+//# sourceMappingURL=Reddit.9fc70644c714b3b6b8e4.js.map

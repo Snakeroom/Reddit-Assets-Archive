@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.a06cc305441cf1adeb16.js
-// Retrieved at 3/18/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.917a20025f5588736bd4.js
+// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -117,9 +117,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = s("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.D)(e) || g.Bb.ShowTopContent === Object(f.c)(e, {
+			const O = e => Object(y.D)(e) || g.zb.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.xb
+				experimentName: g.wb
 			});
 			var C = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -137,7 +137,7 @@
 					return "".concat(s, "-").concat(t)
 				})
 			}));
-			class k extends c.a.Component {
+			class w extends c.a.Component {
 				constructor() {
 					super(...arguments), this.onCloseClick = () => {
 						const {
@@ -199,7 +199,7 @@
 					})))
 				}
 			}
-			t.default = v(k)
+			t.default = v(w)
 		},
 		"./src/reddit/components/GildModal/Loader.tsx": function(e, t, s) {
 			"use strict";
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.a06cc305441cf1adeb16.js.map
+//# sourceMappingURL=SubredditTopContent.917a20025f5588736bd4.js.map
