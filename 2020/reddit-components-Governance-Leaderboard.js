@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.214dd401e91a4d6ad18a.js
-// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.19268eedb47a0d4aa868.js
+// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -53,9 +53,9 @@
 			})), r.d(t, "f", (function() {
 				return U
 			})), r.d(t, "g", (function() {
-				return B
-			})), r.d(t, "j", (function() {
 				return q
+			})), r.d(t, "j", (function() {
+				return B
 			})), r.d(t, "c", (function() {
 				return M
 			}));
@@ -106,7 +106,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(O.a)(r, o.error || o.errors[0].messsage)
-				}, B = (e, t) => async (r, n, d) => {
+				}, q = (e, t) => async (r, n, d) => {
 					let {
 						apiContext: u
 					} = d;
@@ -144,7 +144,7 @@
 					} else r(k({
 						error: m.error
 					})), Object(O.a)(r, m.error)
-				}, q = e => async (t, r, s) => {
+				}, B = e => async (t, r, s) => {
 					let {
 						apiContext: n
 					} = s;
@@ -503,8 +503,8 @@
 						onClick: e.onOptIn
 					}, a.a.createElement(I.c, null, "enable"))
 				})),
-				B = (r("./node_modules/core-js/modules/es6.symbol.js"), r("./src/reddit/components/OverlayAwareTooltip/index.tsx")),
-				q = r("./src/reddit/controls/Dropdown/index.tsx"),
+				q = (r("./node_modules/core-js/modules/es6.symbol.js"), r("./src/reddit/components/OverlayAwareTooltip/index.tsx")),
+				B = r("./src/reddit/controls/Dropdown/index.tsx"),
 				M = r("./src/reddit/controls/Dropdown/Row.tsx"),
 				R = r("./src/reddit/components/Governance/Leaderboard/Distribution/SettingsDropdown/index.m.less"),
 				A = r.n(R);
@@ -527,14 +527,14 @@
 				}
 				return r
 			};
-			const V = Object(B.a)((function(e) {
+			const V = Object(q.a)((function(e) {
 					const {
 						className: t,
 						language: r,
 						tokenName: s,
 						subredditId: n
 					} = e, o = F(e, ["className", "language", "tokenName", "subredditId"]);
-					return a.a.createElement(q.a, G({
+					return a.a.createElement(B.a, G({
 						className: Object(_.a)(e.className, A.a.container)
 					}, o), a.a.createElement(M.b, {
 						noIcon: !0,
@@ -1028,8 +1028,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				c = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.fb
-				}) === s.mb.Enabled
+					experimentName: s.jb
+				}) === s.qb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -1190,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.214dd401e91a4d6ad18a.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.19268eedb47a0d4aa868.js.map

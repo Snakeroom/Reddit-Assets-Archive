@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b2e627b9d0786ab229e6.js
-// Retrieved at 3/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.2e94a3d6296815e30a07.js
+// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1264,8 +1264,8 @@
 					}
 				}),
 				N = n("./src/reddit/constants/experiments.ts"),
-				M = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				B = n("./src/reddit/selectors/subredditMention.ts");
+				B = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				M = n("./src/reddit/selectors/subredditMention.ts");
 			class D extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
@@ -1274,7 +1274,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(M.a)(Object.assign({}, e, {
+						t(Object(B.a)(Object.assign({}, e, {
 							subredditName: n
 						})))
 					}
@@ -1291,9 +1291,9 @@
 			}
 			const H = Object(u.c)(D),
 				R = Object(I.c)({
-					isFeatureFlagEnabled: B.b,
-					isUserInTreatment: B.e,
-					userVariant: B.a
+					isFeatureFlagEnabled: M.b,
+					isUserInTreatment: M.e,
+					userVariant: M.a
 				});
 			var U = Object(v.b)(R)(e => {
 					let {
@@ -1308,12 +1308,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Ab.SmIcon:
+						case N.Eb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Ab.SmIconHc:
+						case N.Eb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1332,9 +1332,9 @@
 			})), n.d(t, "d", (function() {
 				return J
 			})), n.d(t, "a", (function() {
-				return A
-			})), n.d(t, "b", (function() {
 				return V
+			})), n.d(t, "b", (function() {
+				return A
 			})), n.d(t, "f", (function() {
 				return Y
 			})), n.d(t, "h", (function() {
@@ -1363,7 +1363,7 @@
 				J = e => a.a.createElement(c.e, {
 					key: e
 				}),
-				A = (e, t, n, s) => {
+				V = (e, t, n, s) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
@@ -1373,7 +1373,7 @@
 						key: s
 					}, i)
 				},
-				V = (e, t) => {
+				A = (e, t) => {
 					const n = e.c;
 					return a.a.createElement(c.k, {
 						key: t
@@ -1402,9 +1402,9 @@
 				X = (e, t, n, s) => {
 					switch (e.e) {
 						case h.b:
-							return A(e, t, n, s);
+							return V(e, t, n, s);
 						case h.c:
-							return V(e, s);
+							return A(e, s);
 						case h.k:
 							return W(e, n, s);
 						case h.l:
@@ -1775,12 +1775,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xb
+						experimentName: s.Bb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ab.SmIcon || t === s.Ab.SmIconHc
+					return t === s.Eb.SmIcon || t === s.Eb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1806,4 +1806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b2e627b9d0786ab229e6.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.2e94a3d6296815e30a07.js.map

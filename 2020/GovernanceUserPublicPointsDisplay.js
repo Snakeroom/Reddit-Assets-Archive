@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.fc549023fb1d486957f2.js
-// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.fefebd332851c07ddd9d.js
+// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -55,9 +55,9 @@
 			})), n.d(t, "g", (function() {
 				return D
 			})), n.d(t, "j", (function() {
-				return H
-			})), n.d(t, "c", (function() {
 				return q
+			})), n.d(t, "c", (function() {
+				return H
 			}));
 			const x = Object(s.a)(j.b),
 				v = Object(s.a)(j.c),
@@ -144,7 +144,7 @@
 					} else n(_({
 						error: m.error
 					})), Object(O.a)(n, m.error)
-				}, H = e => async (t, n, r) => {
+				}, q = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -153,7 +153,7 @@
 					o.ok ? t(C(o.body)) : t(U({
 						error: o.error
 					}))
-				}, q = (e, t) => async (n, s, o) => {
+				}, H = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: c
 					} = o;
@@ -517,8 +517,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: r.fb
-				}) === r.mb.Enabled
+					experimentName: r.jb
+				}) === r.qb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -679,4 +679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.fc549023fb1d486957f2.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.fefebd332851c07ddd9d.js.map

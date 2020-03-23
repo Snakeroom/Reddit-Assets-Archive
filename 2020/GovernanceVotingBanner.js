@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.aa25b5771dcf53f008d9.js
-// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.fd69fdc3e5d1cf267a95.js
+// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -42,10 +42,10 @@
 				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				p = n("./src/lib/lessComponent.tsx"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/controls/Button/index.m.less"),
-				v = n.n(f);
-			const g = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", v.a),
-				h = p.a.wrapped(b.l, "InvertedTertiaryButton", v.a);
+				v = n("./src/reddit/controls/Button/index.m.less"),
+				f = n.n(v);
+			const g = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", f.a),
+				h = p.a.wrapped(b.l, "InvertedTertiaryButton", f.a);
 			var x = n("./src/reddit/endpoints/governance/poll.ts"),
 				j = n("./src/reddit/featureFlags/component.tsx"),
 				w = n("./src/reddit/helpers/overlay/index.ts"),
@@ -341,8 +341,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: r.fb
-				}) === r.mb.Enabled
+					experimentName: r.jb
+				}) === r.qb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -355,9 +355,9 @@
 			})), n.d(t, "e", (function() {
 				return b
 			})), n.d(t, "g", (function() {
-				return f
-			})), n.d(t, "h", (function() {
 				return v
+			})), n.d(t, "h", (function() {
+				return f
 			})), n.d(t, "i", (function() {
 				return g
 			})), n.d(t, "j", (function() {
@@ -426,8 +426,8 @@
 						ownerId: n.mainHeader.ownerId
 					} : d
 				},
-				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				v = (e, t) => {
+				v = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				f = (e, t) => {
 					if (Object(a.a)(e)) {
 						const t = Object(i.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
@@ -503,4 +503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.aa25b5771dcf53f008d9.js.map
+//# sourceMappingURL=GovernanceVotingBanner.fd69fdc3e5d1cf267a95.js.map
