@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f53704f6b916c27568cf.js
-// Retrieved at 3/23/2020, 2:30:43 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8b5b36b30dc083158c62.js
+// Retrieved at 3/23/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(r, d) && r[d] && P.push(r[d][0]), r[d] = 0;
@@ -908,7 +908,7 @@
 						FrontpageSidebar: "f38f155dddce59ccad24",
 						Frontpage: "f5b05824a3b39de3ec40",
 						Topic: "f14b0a3d6c7613e4e30a",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "02000c6f19b78ce93a0a",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "364c334fcea468779fd7",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "7713473ae259c6c250ef",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "4119af84913c9e99b9cb",
 						PostDraft: "588f62781b8b11c512f8",
@@ -1175,4 +1175,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.f53704f6b916c27568cf.js.map
+//# sourceMappingURL=runtime~Reddit.8b5b36b30dc083158c62.js.map
