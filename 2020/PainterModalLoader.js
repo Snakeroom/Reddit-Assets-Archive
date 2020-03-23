@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.68b0d70491c9a21c5a70.js
-// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.0b0cfbc189bb04833c0a.js
+// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -4716,8 +4716,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: a.db
-				}) === a.kb.Enabled
+					experimentName: a.fb
+				}) === a.mb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -4878,4 +4878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.68b0d70491c9a21c5a70.js.map
+//# sourceMappingURL=PainterModalLoader.0b0cfbc189bb04833c0a.js.map

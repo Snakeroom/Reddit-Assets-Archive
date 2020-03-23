@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ExportTheme.a36890304628a3b91cf0.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ExportTheme.762f066e922015f9f9b6.js
+// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ExportTheme", "xml2js"], {
+	["ExportTheme"], {
 		"./node_modules/file-saver/FileSaver.js": function(e, t, n) {
 			var o, r = r || function(e) {
 				"use strict";
@@ -19,21 +19,21 @@
 								throw t
 							}), 0)
 						},
-						d = function(e) {
+						c = function(e) {
 							setTimeout((function() {
 								"string" == typeof e ? n().revokeObjectURL(e) : e.remove()
 							}), 4e4)
 						},
-						c = function(e) {
+						d = function(e) {
 							return /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type) ? new Blob([String.fromCharCode(65279), e], {
 								type: e.type
 							}) : e
 						},
 						l = function(t, l, u) {
-							u || (t = c(t));
+							u || (t = d(t));
 							var f, p = this,
-								m = "application/octet-stream" === t.type,
-								w = function() {
+								w = "application/octet-stream" === t.type,
+								m = function() {
 									! function(e, t, n) {
 										for (var o = (t = [].concat(t)).length; o--;) {
 											var r = e["on" + t[o]];
@@ -47,22 +47,22 @@
 								};
 							if (p.readyState = p.INIT, r) return f = n().createObjectURL(t), void setTimeout((function() {
 								var e, t;
-								o.href = f, o.download = l, e = o, t = new MouseEvent("click"), e.dispatchEvent(t), w(), d(f), p.readyState = p.DONE
+								o.href = f, o.download = l, e = o, t = new MouseEvent("click"), e.dispatchEvent(t), m(), c(f), p.readyState = p.DONE
 							}));
 							! function() {
-								if ((i || m && a) && e.FileReader) {
+								if ((i || w && a) && e.FileReader) {
 									var o = new FileReader;
 									return o.onloadend = function() {
 										var t = i ? o.result : o.result.replace(/^data:[^;]*;/, "data:attachment/file;");
-										e.open(t, "_blank") || (e.location.href = t), t = void 0, p.readyState = p.DONE, w()
+										e.open(t, "_blank") || (e.location.href = t), t = void 0, p.readyState = p.DONE, m()
 									}, o.readAsDataURL(t), void(p.readyState = p.INIT)
-								}(f || (f = n().createObjectURL(t)), m) ? e.location.href = f: e.open(f, "_blank") || (e.location.href = f);
-								p.readyState = p.DONE, w(), d(f)
+								}(f || (f = n().createObjectURL(t)), w) ? e.location.href = f: e.open(f, "_blank") || (e.location.href = f);
+								p.readyState = p.DONE, m(), c(f)
 							}()
 						},
 						u = l.prototype;
 					return "undefined" != typeof navigator && navigator.msSaveOrOpenBlob ? function(e, t, n) {
-						return t = t || e.name || "download", n || (e = c(e)), navigator.msSaveOrOpenBlob(e, t)
+						return t = t || e.name || "download", n || (e = d(e)), navigator.msSaveOrOpenBlob(e, t)
 					} : (u.abort = function() {}, u.readyState = u.INIT = 0, u.WRITING = 1, u.DONE = 2, u.error = u.onwritestart = u.onprogress = u.onwrite = u.onabort = u.onerror = u.onwriteend = null, function(e, t, n) {
 						return new l(e, t || e.name || "download", n)
 					})
@@ -91,20 +91,20 @@
 				for (const o in e) e[o] && (Object(i.l)(o) ? n[o] = e[o] : r[o] = e[o]);
 				let s = (new Date).toISOString();
 				s = (s = s.replace(/\./g, "-")).replace(/\:/g, "-");
-				const d = "".concat(t, "-").concat(s, ".zip"),
-					c = new a.a;
-				c.file("".concat(t, "-attributes.json"), JSON.stringify(r, null, 2));
+				const c = "".concat(t, "-").concat(s, ".zip"),
+					d = new a.a;
+				d.file("".concat(t, "-attributes.json"), JSON.stringify(r, null, 2));
 				const l = Object.keys(n).map(async e => {
 					const t = await fetch(n[e]),
 						o = await t.blob();
-					c.file("".concat(e, ".png"), o)
+					d.file("".concat(e, ".png"), o)
 				});
 				try {
 					for (let t = 0; t < l.length; t++) await l[t];
-					const e = await c.generateAsync({
+					const e = await d.generateAsync({
 						type: "blob"
 					});
-					return Object(o.saveAs)(e, d), {
+					return Object(o.saveAs)(e, c), {
 						ok: !0
 					}
 				} catch (u) {
@@ -114,9 +114,7 @@
 					}
 				}
 			}
-		},
-		"ignored /drone/src/node_modules/readable-stream/lib util": function(e, t) {},
-		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
+		}
 	}
 ]);
-//# sourceMappingURL=ExportTheme.a36890304628a3b91cf0.js.map
+//# sourceMappingURL=ExportTheme.762f066e922015f9f9b6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.ef4eb114a6032d23344f.js
-// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.63cf04bccad7031b9b8c.js
+// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -2186,8 +2186,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				o = e => r.has((Object(c.e)(e) || "").toLowerCase()) || i.has((Object(c.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: d.G,
-					experimentName: s.db
-				}) === s.kb.Enabled
+					experimentName: s.fb
+				}) === s.mb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
 			"use strict";
@@ -2348,4 +2348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.ef4eb114a6032d23344f.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.63cf04bccad7031b9b8c.js.map

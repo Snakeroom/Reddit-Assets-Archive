@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.0ad8dfea7190509d4244.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.8d4ae23c121290aea582.js
+// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/agentkeepalive/browser.js": function(e, n) {
@@ -168,9 +168,9 @@
 			e.exports = function(e, n, t) {
 				var N = h.imports._.templateSettings || h;
 				t && u(e, n, t) && (n = void 0), e = _(e), n = s({}, n, N, i);
-				var C, R, y = s({}, n.imports, N.imports, i),
-					U = c(y),
-					v = a(y, U),
+				var C, R, U = s({}, n.imports, N.imports, i),
+					y = c(U),
+					v = a(U, y),
 					S = 0,
 					T = n.interpolate || f,
 					P = "__p += '",
@@ -182,7 +182,7 @@
 				var b = A.call(n, "variable") && n.variable;
 				b || (P = "with (obj) {\n" + P + "\n}\n"), P = (R ? P.replace(p, "") : P).replace(I, "$1").replace(E, "$1;"), P = "function(" + (b || "obj") + ") {\n" + (b ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (C ? ", __e = _.escape" : "") + (R ? ", __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n" : ";\n") + P + "return __p\n}";
 				var D = r((function() {
-					return Function(U, L + "return " + P).apply(void 0, v)
+					return Function(y, L + "return " + P).apply(void 0, v)
 				}));
 				if (D.source = P, l(D)) throw D;
 				return D
@@ -454,12 +454,12 @@
 							});
 							u.httpsAgent = R
 						} catch (e) {}
-						var y = function() {
+						var U = function() {
 								var n;
 								return e ? (n = new e).nodejsSet(u) : n = new XMLHttpRequest, n
 							},
-							U = function(e, t, r, a, i) {
-								var l = y();
+							y = function(e, t, r, a, i) {
+								var l = U();
 								l.open(r, e), l.onload = function() {
 									if (l.status >= 200 && l.status < 400) {
 										var e = !1,
@@ -747,8 +747,8 @@
 								return "function" != typeof o || l || (l = o, o = []), t(this, e, !0, n, s, r, a, i, o, l)
 							}, this._sendFileCommand = function(e, n, t, s, r, a, i, o, l, u, c, d, h, _) {
 								var p, E = this;
-								p = _ ? _.reqId : B.generateRequestId();
-								var m = B.bFile(p, e, n, t, s, r, a, i, o, l, u, c, d),
+								p = _ ? _.reqId : x.generateRequestId();
+								var m = x.bFile(p, e, n, t, s, r, a, i, o, l, u, c, d),
 									f = M.build(m.requestId, 0, ue.getInstance().currentUser, this, "string" == typeof n ? n : "", t, s, r, a, i, null, null, !1, null, u, null, c),
 									g = new M(f);
 								return "string" == typeof n && ue.getInstance().sendCommand(m, (function(e, n) {
@@ -862,7 +862,7 @@
 								}
 								if ("function" == typeof t && (r = t, t = "", s = []), "function" == typeof s && (r = s, s = []), s || (s = []), "string" == typeof s && (s = [s]), null === n && (n = ""), null === t && (t = ""), ue.getInstance().hasLoggedIn()) {
 									if ("string" == typeof e && "string" == typeof n && "string" == typeof t && Array.isArray(s) && !([oe.PushNotificationDeliveryOption.DEFAULT, oe.PushNotificationDeliveryOption.SUPPRESS].indexOf(l) < 0)) {
-										var c = B.bMessage(this.url, e, n, t, i, o, s, l),
+										var c = x.bMessage(this.url, e, n, t, i, o, s, l),
 											d = D.build(c.requestId, 0, ue.getInstance().currentUser, this, e, n, t, s, (new Date).getTime(), null, i, null, o),
 											h = new D(d);
 										return ue.getInstance().sendCommand(c, (function(e, n) {
@@ -891,7 +891,7 @@
 									if (_(e))
 										if ("string" != typeof n && null != n || "string" != typeof t && null != t || "string" != typeof s && null != s) S(null, new I("Invalid arguments.", $.INVALID_PARAMETER), r);
 										else {
-											var i = B.bUpdateUserMessage(this.url, e, n, t, s);
+											var i = x.bUpdateUserMessage(this.url, e, n, t, s);
 											ue.getInstance().sendCommand(i, (function(e, n) {
 												if (n) S(null, new I(n.message, n.code), r);
 												else {
@@ -909,7 +909,7 @@
 									if (_(e))
 										if ("string" != typeof n && null != n || "string" != typeof t && null != t) S(null, new I("Invalid arguments.", $.INVALID_PARAMETER), s);
 										else {
-											var a = B.bUpdateFileMessage(this.url, e, n, t);
+											var a = x.bUpdateFileMessage(this.url, e, n, t);
 											ue.getInstance().sendCommand(a, (function(e, n) {
 												if (n) S(null, new I(n.message, n.code), s);
 												else {
@@ -1021,13 +1021,13 @@
 								}))
 							}, this.enter = function(e) {
 								var n = this,
-									t = B.bEnter(n.url);
+									t = x.bEnter(n.url);
 								ue.getInstance().sendCommand(t, (function(t, s) {
 									s ? S(null, new I(s.message, s.code), e) : (H.enteredChannels[n.url] = n, S(null, null, e))
 								}))
 							}, this.exit = function(e) {
 								var n = this,
-									t = B.bExit(n.url);
+									t = x.bExit(n.url);
 								ue.getInstance().sendCommand(t, (function(t, s) {
 									s ? S(null, new I(s.message, s.code), e) : (delete H.enteredChannels[n.url], S(null, null, e))
 								}))
@@ -1172,7 +1172,7 @@
 											n.updateReadReceipt(t, parseInt(s))
 										}
 									e.hasOwnProperty("members") && (n.members = [], n.memberMap = {}, e.members.forEach((function(e) {
-										var t = new x(e);
+										var t = new B(e);
 										n.members.push(t), n.memberMap[t.userId] = t
 									}))), e.hasOwnProperty("member_state") ? n.myMemberState = e.member_state : n.myMemberState = "none", e.hasOwnProperty("my_role") ? n.myRole = e.my_role || k.Role.NONE : n.myRole = k.Role.NONE, e.hasOwnProperty("is_muted") ? "string" == typeof e.is_muted ? n.myMutedState = e.is_muted : "boolean" == typeof e.is_muted && (n.myMutedState = e.is_muted ? "muted" : "unmuted") : n.myMutedState = "unmuted", e.hasOwnProperty("member_count") && (n.memberCount = parseInt(e.member_count)), e.hasOwnProperty("joined_member_count") && (n.joinedMemberCount = parseInt(e.joined_member_count)), e.hasOwnProperty("last_message") && "object" == typeof e.last_message && e.last_message ? e.last_message instanceof L ? n.lastMessage = e.last_message : n.lastMessage = L.build(e.last_message, n) : n.lastMessage = null, e.hasOwnProperty("inviter") && null !== e.inviter && "object" == typeof e.inviter && !h(e.inviter) ? n.inviter = new Y(e.inviter) : n.inviter = null, e.hasOwnProperty("is_super") && null !== e.is_super && "boolean" == typeof e.is_super ? n.isSuper = e.is_super : n.isSuper = !1, e.hasOwnProperty("is_public") && null !== e.is_public && "boolean" == typeof e.is_public ? n.isPublic = e.is_public : n.isPublic = !1
 								}, this.refresh = function(e) {
@@ -1290,7 +1290,7 @@
 									this._sendMarkAsRead(null)
 								}, this._sendMarkAsRead = function(e) {
 									var n = this,
-										t = B.bRead(n.url);
+										t = x.bRead(n.url);
 									ue.getInstance().sendCommand(t, (function(t, s) {
 										if (s) S(null, new I(s.message, s.code), e);
 										else {
@@ -1337,7 +1337,7 @@
 										n = ue.getInstance().Options.typingIndicatorThrottle;
 									if (("number" != typeof n || n < 1e3 || n > 9e3) && (n = 1e3), e - s >= n) {
 										r = 0, s = e;
-										var t = B.bTypeStart(this.url, s);
+										var t = x.bTypeStart(this.url, s);
 										ue.getInstance().sendCommand(t, null)
 									}
 								}, this.endTyping = function() {
@@ -1345,7 +1345,7 @@
 										n = ue.getInstance().Options.typingIndicatorThrottle;
 									if (("number" != typeof n || n < 1e3 || n > 9e3) && (n = 1e3), e - r >= n) {
 										s = 0, r = e;
-										var t = B.bTypeEnd(this.url, r);
+										var t = x.bTypeEnd(this.url, r);
 										ue.getInstance().sendCommand(t, null)
 									}
 								}, this.invalidateTypingStatus = function() {
@@ -1367,7 +1367,7 @@
 								}, this.addMember = function(e) {
 									if (!this.isSuper) {
 										var n = this.removeMember(e);
-										n && n.state === x.JOINED && (e.state = x.JOINED), this.memberMap[e.userId] = e, this.members.push(e), this.memberCount++, this.updateReadReceipt(e.userId, 0)
+										n && n.state === B.JOINED && (e.state = B.JOINED), this.memberMap[e.userId] = e, this.members.push(e), this.memberCount++, this.updateReadReceipt(e.userId, 0)
 									}
 								}, this.removeMember = function(e) {
 									var n = null;
@@ -1387,7 +1387,7 @@
 									return n
 								}, this.updateJoinedMemberCount = function() {
 									if (!this.isSuper) {
-										for (var e = 0, n = this.members.length, t = 0; t < n; t++) this.members[t].state === x.JOINED && e++;
+										for (var e = 0, n = this.members.length, t = 0; t < n; t++) this.members[t].state === B.JOINED && e++;
 										this.joinedMemberCount = e
 									}
 								};
@@ -1487,7 +1487,7 @@
 								my_role: n.myRole,
 								is_muted: n.myMutedState,
 								members: n.members.map((function(e) {
-									return x.build(Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName), e.state, e.isBlockedByMe, e.isBlockingMe)
+									return B.build(Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName), e.state, e.isBlockedByMe, e.isBlockingMe)
 								})),
 								last_message: function(e) {
 									return null != e && "object" == typeof e ? e.messageType === L.MESSAGE_TYPE_USER ? new D(D.build(e.reqId, e.messageId, e.sender, {
@@ -1790,19 +1790,19 @@
 							var n = f(e);
 							return new Y(Y.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName))
 						};
-						var x = function(e) {
+						var B = function(e) {
 							this.state = "", this.isBlockedByMe = !1, this.isBlockingMe = !1, this.parse = function(e) {
 								this.state = e.state, e.hasOwnProperty("is_blocked_by_me") && (this.isBlockedByMe = e.is_blocked_by_me), e.hasOwnProperty("is_blocking_me") && (this.isBlockingMe = e.is_blocking_me)
 							}, e && (this._update(e), this.parse(e))
 						};
-						p(Y, x), x.JOINED = "joined", x.INVITED = "invited", x.build = function(e, n, t, s) {
+						p(Y, B), B.JOINED = "joined", B.INVITED = "invited", B.build = function(e, n, t, s) {
 							var r = e;
 							return r.state = n, r.is_blocked_by_me = t, r.is_blocking_me = s, r
-						}, x.buildFromSerializedData = function(e) {
+						}, B.buildFromSerializedData = function(e) {
 							var n = f(e);
-							return new x(x.build(Y.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName), n.state, n.isBlockedByMe, n.isBlockingMe))
+							return new B(B.build(Y.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName), n.state, n.isBlockedByMe, n.isBlockingMe))
 						};
-						var B = function(e, n, t) {
+						var x = function(e, n, t) {
 							this.isAckRequired = function() {
 								return "MESG" === this.command || "FILE" === this.command || "ENTR" === this.command || "EXIT" === this.command || "READ" === this.command || "MEDI" === this.command || "FEDI" === this.command
 							}, this.encode = function() {
@@ -1829,41 +1829,41 @@
 								case 2:
 									var o = arguments[0],
 										l = arguments[1];
-									s = s || "", r.command = o, r.requestId = s, r.requestId || r.isRequestIdCommand() && (r.requestId = B.generateRequestId()), l.req_id = r.requestId, r.payload = JSON.stringify(l)
+									s = s || "", r.command = o, r.requestId = s, r.requestId || r.isRequestIdCommand() && (r.requestId = x.generateRequestId()), l.req_id = r.requestId, r.payload = JSON.stringify(l)
 							}
 						};
-						B.bMessage = function(e, n, t, s, r, a, i, o) {
+						x.bMessage = function(e, n, t, s, r, a, i, o) {
 							var l = {};
-							return l.channel_url = e, l.message = n, l.data = t, l.mention_type = r, l.mentioned_user_ids = [], r === ie.MentionType.CHANNEL ? l.mentioned_user_ids = [] : Array.isArray(a) && a.length > 0 && (l.mentioned_user_ids = a), s && (l.custom_type = s), i.length > 0 && (l.target_langs = i), o && o !== oe.PushNotificationDeliveryOption.DEFAULT && (l.push_option = o), new B("MESG", l)
-						}, B.bRead = function(e) {
+							return l.channel_url = e, l.message = n, l.data = t, l.mention_type = r, l.mentioned_user_ids = [], r === ie.MentionType.CHANNEL ? l.mentioned_user_ids = [] : Array.isArray(a) && a.length > 0 && (l.mentioned_user_ids = a), s && (l.custom_type = s), i.length > 0 && (l.target_langs = i), o && o !== oe.PushNotificationDeliveryOption.DEFAULT && (l.push_option = o), new x("MESG", l)
+						}, x.bRead = function(e) {
 							var n = {};
-							return n.channel_url = e, new B("READ", n)
-						}, B.bTypeStart = function(e, n) {
+							return n.channel_url = e, new x("READ", n)
+						}, x.bTypeStart = function(e, n) {
 							var t = {};
-							return t.channel_url = e, t.time = n, new B("TPST", t)
-						}, B.bTypeEnd = function(e, n) {
+							return t.channel_url = e, t.time = n, new x("TPST", t)
+						}, x.bTypeEnd = function(e, n) {
 							var t = {};
-							return t.channel_url = e, t.time = n, new B("TPEN", t)
-						}, B.bFile = function(e, n, t, s, r, a, i, o, l, u, c, d, h) {
+							return t.channel_url = e, t.time = n, new x("TPEN", t)
+						}, x.bFile = function(e, n, t, s, r, a, i, o, l, u, c, d, h) {
 							var _ = {};
-							return _.channel_url = n, _.url = t, _.name = s || "", _.type = r || "", _.size = a || 0, _.custom = i, o && (_.custom_type = o), l && (_.thumbnails = l), u && (_.require_auth = u), _.mention_type = c, _.mentioned_user_ids = [], c === ie.MentionType.CHANNEL ? _.mentioned_user_ids = [] : Array.isArray(d) && d.length > 0 && (_.mentioned_user_ids = d), h && h !== le.PushNotificationDeliveryOption.DEFAULT && (_.push_option = h), new B("FILE", _, e)
-						}, B.bPing = function() {
+							return _.channel_url = n, _.url = t, _.name = s || "", _.type = r || "", _.size = a || 0, _.custom = i, o && (_.custom_type = o), l && (_.thumbnails = l), u && (_.require_auth = u), _.mention_type = c, _.mentioned_user_ids = [], c === ie.MentionType.CHANNEL ? _.mentioned_user_ids = [] : Array.isArray(d) && d.length > 0 && (_.mentioned_user_ids = d), h && h !== le.PushNotificationDeliveryOption.DEFAULT && (_.push_option = h), new x("FILE", _, e)
+						}, x.bPing = function() {
 							var e = {};
-							return e.id = (new Date).getTime(), new B("PING", e)
-						}, B.bEnter = function(e) {
+							return e.id = (new Date).getTime(), new x("PING", e)
+						}, x.bEnter = function(e) {
 							var n = {};
-							return n.channel_url = e, new B("ENTR", n)
-						}, B.bExit = function(e) {
+							return n.channel_url = e, new x("ENTR", n)
+						}, x.bExit = function(e) {
 							var n = {};
-							return n.channel_url = e, new B("EXIT", n)
-						}, B.bUpdateUserMessage = function(e, n, t, s, r) {
+							return n.channel_url = e, new x("EXIT", n)
+						}, x.bUpdateUserMessage = function(e, n, t, s, r) {
 							var a = {};
-							return a.channel_url = e, a.msg_id = n, null != t && void 0 !== t && (a.message = t), null != s && void 0 !== s && (a.data = s), null != r && void 0 !== r && (a.custom_type = r), new B("MEDI", a)
-						}, B.bUpdateFileMessage = function(e, n, t, s) {
+							return a.channel_url = e, a.msg_id = n, null != t && void 0 !== t && (a.message = t), null != s && void 0 !== s && (a.data = s), null != r && void 0 !== r && (a.custom_type = r), new x("MEDI", a)
+						}, x.bUpdateFileMessage = function(e, n, t, s) {
 							var r = {};
-							return r.channel_url = e, r.msg_id = n, null != t && void 0 !== t && (r.data = t), null != s && void 0 !== s && (r.custom_type = s), new B("FEDI", r)
-						}, B.requestIdSeed = (new Date).getTime(), B.generateRequestId = function() {
-							return B.requestIdSeed++, String(B.requestIdSeed)
+							return r.channel_url = e, r.msg_id = n, null != t && void 0 !== t && (r.data = t), null != s && void 0 !== s && (r.custom_type = s), new x("FEDI", r)
+						}, x.requestIdSeed = (new Date).getTime(), x.generateRequestId = function() {
+							return x.requestIdSeed++, String(x.requestIdSeed)
 						};
 						var W = function(e) {
 								this.isLoading = !1, this.hasNext = !0, this.limit = 20;
@@ -1892,7 +1892,7 @@
 										var a = e;
 										(!(t = String(a.next)) || t.length <= 0) && (s.hasNext = !1);
 										var i = a.members.map((function(e) {
-											return new x(e)
+											return new B(e)
 										}));
 										s.isLoading = !1, S(i, null, r)
 									}))) : void S([], null, r)
@@ -2198,7 +2198,7 @@
 								var t, r;
 								this.ping = function() {
 									s && n.log("PING"), clearTimeout(t), clearTimeout(r), t = setTimeout((function() {
-										var a = B.bPing();
+										var a = x.bPing();
 										ue.getInstance().wsClient.send(a), r = setTimeout((function() {
 											s && n.log("PING Timeout"), clearTimeout(t), clearTimeout(r), e.onError()
 										}), 5e3)
@@ -2307,7 +2307,7 @@
 									});
 									else {
 										var t = (new Date).getTime() / 1e3;
-										0 === n || n - t > 300 ? U(ne.API_ROUTING_URL.replace("%s", T), {}, "GET", {
+										0 === n || n - t > 300 ? y(ne.API_ROUTING_URL.replace("%s", T), {}, "GET", {
 											SendBird: l + T
 										}, (function(s, i) {
 											i ? e(null, new I("Server is unreachable.", $.NETWORK_ROUTING_ERROR)) : (r = s.ws_server, a = s.api_server, n = t, "function" == typeof e && e({
@@ -2324,7 +2324,7 @@
 										ue.getInstance().hasLoggedIn() ? ne.getInstance().checkRouting((function(n, _) {
 											if (_) i(null, new I("Request failed.", $.REQUEST_FAILED));
 											else {
-												var p = y();
+												var p = U();
 												p.open("POST", n.API_HOST + e, !0), p.setRequestHeader("SendBird", l + T), p.setRequestHeader("Session-Key", ne.getInstance().sessionKey);
 												var E = o ? new o : new FormData;
 												for (var m in s && "undefined" != typeof Blob && (t instanceof Blob || "string" == typeof t || Array.isArray(t) || t.hasOwnProperty("isRNFetchBlobPolyfill")) ? E.append("file", new Blob([t], {
@@ -2351,7 +2351,7 @@
 									},
 									s = function(e, n, t) {
 										"function" == typeof n && (t = n, n = {}), ue.getInstance().hasLoggedIn() ? ne.getInstance().checkRouting((function(s, r) {
-											r ? t(null, new I("Request failed.", $.REQUEST_FAILED)) : U(s.API_HOST + e, n, "DELETE", {
+											r ? t(null, new I("Request failed.", $.REQUEST_FAILED)) : y(s.API_HOST + e, n, "DELETE", {
 												"Session-Key": ne.getInstance().sessionKey,
 												SendBird: l + T
 											}, t)
@@ -2370,7 +2370,7 @@
 												s = e + "?" + r
 											} else s = e;
 											ne.getInstance().checkRouting((function(e, r) {
-												r ? t(null, new I("Request failed.", $.REQUEST_FAILED)) : U(e.API_HOST + s, n, "GET", {
+												r ? t(null, new I("Request failed.", $.REQUEST_FAILED)) : y(e.API_HOST + s, n, "GET", {
 													"Session-Key": ne.getInstance().sessionKey,
 													SendBird: l + T
 												}, t)
@@ -2379,7 +2379,7 @@
 									},
 									c = function(e, n, t) {
 										"function" == typeof n && (t = n, n = {}), ue.getInstance().hasLoggedIn() ? ne.getInstance().checkRouting((function(s, r) {
-											r ? t(null, r) : U(s.API_HOST + e, n, "POST", {
+											r ? t(null, r) : y(s.API_HOST + e, n, "POST", {
 												"Session-Key": ne.getInstance().sessionKey,
 												SendBird: l + T
 											}, t)
@@ -2387,7 +2387,7 @@
 									},
 									_ = function(e, n, t) {
 										"function" == typeof n && (t = n, n = {}), ue.getInstance().hasLoggedIn() ? ne.getInstance().checkRouting((function(s, r) {
-											r || U(s.API_HOST + e, n, "PUT", {
+											r || y(s.API_HOST + e, n, "PUT", {
 												"Session-Key": ne.getInstance().sessionKey,
 												SendBird: l + T
 											}, t)
@@ -3062,7 +3062,7 @@
 									OPEN: "OPEN",
 									CLOSING: "CLOSING",
 									CLOSED: "CLOSED"
-								}, this.ConnectionState = this.connectionState, this.BaseChannel = E, this.User = Y, this.Member = x, this.OpenChannel = H, this.GroupChannel = k, this.UserMessage = D, this.FileMessage = M, this.AdminMessage = b, this.userEventHandlers = {}, this.channelHandlers = {}, this.connectionHandlers = {}, this.connectionCallback = [], this.GroupChannelParams = ae, this.BaseMessageParams = ie, this.FileMessageParams = le, this.UserMessageParams = oe, this.GroupChannelTotalUnreadMessageCountParams = F;
+								}, this.ConnectionState = this.connectionState, this.BaseChannel = E, this.User = Y, this.Member = B, this.OpenChannel = H, this.GroupChannel = k, this.UserMessage = D, this.FileMessage = M, this.AdminMessage = b, this.userEventHandlers = {}, this.channelHandlers = {}, this.connectionHandlers = {}, this.connectionCallback = [], this.GroupChannelParams = ae, this.BaseMessageParams = ie, this.FileMessageParams = le, this.UserMessageParams = oe, this.GroupChannelTotalUnreadMessageCountParams = F;
 								var i = {};
 								T = e.appId, ce = this, (te = ne.getInstance()) || (te = new ne), this.Options = {
 									_useMemberAsMessageSender: !1,
@@ -3149,7 +3149,7 @@
 										return i.hasOwnProperty(e) ? i[e] : null
 									},
 									l = function(e) {
-										var t = new B(e);
+										var t = new x(e);
 										if (t.requestId) {
 											var s = o(t.requestId);
 											if (null == s) return;
@@ -3351,10 +3351,10 @@
 														var o = s.data.hasOwnProperty("member_count") ? s.data.member_count : null,
 															l = s.data.hasOwnProperty("joined_member_count") ? s.data.joined_member_count : null;
 														if (s.category === G.CATEGORY_CHANNEL_JOIN)(s.data.hasOwnProperty("users") ? s.data.users : function(e) {
-															return e.state = x.JOINED, [e]
+															return e.state = B.JOINED, [e]
 														}(s.data)).forEach((function(e) {
 															! function(e, n, s) {
-																r.isSuper ? r.setLatestMemberCount(n, s, t.ts) : (e.state = x.JOINED, r.addMember(new x(e)), r.updateJoinedMemberCount());
+																r.isSuper ? r.setLatestMemberCount(n, s, t.ts) : (e.state = B.JOINED, r.addMember(new B(e)), r.updateJoinedMemberCount());
 																var a = new Y(e);
 																for (var i in a.userId === ue.getInstance().getCurrentUserId() && (r.myMemberState = "joined", k.cachedChannels[r.url] = r), ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[i].onUserJoined(r, a)
 															}(e, o, l)
@@ -3379,8 +3379,8 @@
 														var l = [];
 														for (var u in s.data.invitees) {
 															var c = new Y(s.data.invitees[u]);
-															l.push(c), s.data.invitees[u].state = x.INVITED;
-															var d = new x(s.data.invitees[u]);
+															l.push(c), s.data.invitees[u].state = B.INVITED;
+															var d = new B(s.data.invitees[u]);
 															if (r.isSuper) {
 																var _ = s.data.hasOwnProperty("member_count") ? s.data.member_count : null,
 																	p = s.data.hasOwnProperty("joined_member_count") ? s.data.joined_member_count : null;
@@ -3720,7 +3720,7 @@
 												};
 												var r = ue.getInstance().getCurrentApiHost();
 												ne.getInstance().checkRouting((function(n, t) {
-													t ? f(e, !0) : (r !== n.API_HOST && U(n.API_HOST, {}, "GET", {}, (function() {})), ue.getInstance().wsClient.connect(e, null, n.WS_HOST))
+													t ? f(e, !0) : (r !== n.API_HOST && y(n.API_HOST, {}, "GET", {}, (function() {})), ue.getInstance().wsClient.connect(e, null, n.WS_HOST))
 												}))
 											}), O)
 										}
@@ -3772,7 +3772,7 @@
 											if (s) return ue.getInstance().connectionCallback.forEach((function(e) {
 												S(null, new I("Connection routing failed.", $.REQUEST_FAILED), e)
 											})), void(ue.getInstance().connectionCallback = []);
-											U(n.API_HOST, {}, "GET", {}, (function() {})), ue.getInstance().wsClient.connect(e, t, n.WS_HOST)
+											y(n.API_HOST, {}, "GET", {}, (function() {})), ue.getInstance().wsClient.connect(e, t, n.WS_HOST)
 										}))
 									};
 								this.sendCommand = function(e, n) {
@@ -3978,123 +3978,6 @@
 		"./node_modules/sendbird/node_modules/form-data/lib/browser.js": function(e, n) {
 			e.exports = "object" == typeof self ? self.FormData : window.FormData
 		},
-		"./node_modules/setimmediate/setImmediate.js": function(e, n, t) {
-			(function(e, n) {
-				! function(e, t) {
-					"use strict";
-					if (!e.setImmediate) {
-						var s, r, a, i, o, l = 1,
-							u = {},
-							c = !1,
-							d = e.document,
-							h = Object.getPrototypeOf && Object.getPrototypeOf(e);
-						h = h && h.setTimeout ? h : e, "[object process]" === {}.toString.call(e.process) ? s = function(e) {
-							n.nextTick((function() {
-								p(e)
-							}))
-						} : ! function() {
-							if (e.postMessage && !e.importScripts) {
-								var n = !0,
-									t = e.onmessage;
-								return e.onmessage = function() {
-									n = !1
-								}, e.postMessage("", "*"), e.onmessage = t, n
-							}
-						}() ? e.MessageChannel ? ((a = new MessageChannel).port1.onmessage = function(e) {
-							p(e.data)
-						}, s = function(e) {
-							a.port2.postMessage(e)
-						}) : d && "onreadystatechange" in d.createElement("script") ? (r = d.documentElement, s = function(e) {
-							var n = d.createElement("script");
-							n.onreadystatechange = function() {
-								p(e), n.onreadystatechange = null, r.removeChild(n), n = null
-							}, r.appendChild(n)
-						}) : s = function(e) {
-							setTimeout(p, 0, e)
-						} : (i = "setImmediate$" + Math.random() + "$", o = function(n) {
-							n.source === e && "string" == typeof n.data && 0 === n.data.indexOf(i) && p(+n.data.slice(i.length))
-						}, e.addEventListener ? e.addEventListener("message", o, !1) : e.attachEvent("onmessage", o), s = function(n) {
-							e.postMessage(i + n, "*")
-						}), h.setImmediate = function(e) {
-							"function" != typeof e && (e = new Function("" + e));
-							for (var n = new Array(arguments.length - 1), t = 0; t < n.length; t++) n[t] = arguments[t + 1];
-							var r = {
-								callback: e,
-								args: n
-							};
-							return u[l] = r, s(l), l++
-						}, h.clearImmediate = _
-					}
-
-					function _(e) {
-						delete u[e]
-					}
-
-					function p(e) {
-						if (c) setTimeout(p, 0, e);
-						else {
-							var n = u[e];
-							if (n) {
-								c = !0;
-								try {
-									! function(e) {
-										var n = e.callback,
-											s = e.args;
-										switch (s.length) {
-											case 0:
-												n();
-												break;
-											case 1:
-												n(s[0]);
-												break;
-											case 2:
-												n(s[0], s[1]);
-												break;
-											case 3:
-												n(s[0], s[1], s[2]);
-												break;
-											default:
-												n.apply(t, s)
-										}
-									}(n)
-								} finally {
-									_(e), c = !1
-								}
-							}
-						}
-					}
-				}("undefined" == typeof self ? void 0 === e ? this : e : self)
-			}).call(this, t("./node_modules/webpack/buildin/global.js"), t("./node_modules/process/browser.js"))
-		},
-		"./node_modules/timers-browserify/main.js": function(e, n, t) {
-			(function(e) {
-				var s = void 0 !== e && e || "undefined" != typeof self && self || window,
-					r = Function.prototype.apply;
-
-				function a(e, n) {
-					this._id = e, this._clearFn = n
-				}
-				n.setTimeout = function() {
-					return new a(r.call(setTimeout, s, arguments), clearTimeout)
-				}, n.setInterval = function() {
-					return new a(r.call(setInterval, s, arguments), clearInterval)
-				}, n.clearTimeout = n.clearInterval = function(e) {
-					e && e.close()
-				}, a.prototype.unref = a.prototype.ref = function() {}, a.prototype.close = function() {
-					this._clearFn.call(s, this._id)
-				}, n.enroll = function(e, n) {
-					clearTimeout(e._idleTimeoutId), e._idleTimeout = n
-				}, n.unenroll = function(e) {
-					clearTimeout(e._idleTimeoutId), e._idleTimeout = -1
-				}, n._unrefActive = n.active = function(e) {
-					clearTimeout(e._idleTimeoutId);
-					var n = e._idleTimeout;
-					n >= 0 && (e._idleTimeoutId = setTimeout((function() {
-						e._onTimeout && e._onTimeout()
-					}), n))
-				}, t("./node_modules/setimmediate/setImmediate.js"), n.setImmediate = "undefined" != typeof self && self.setImmediate || void 0 !== e && e.setImmediate || this && this.setImmediate, n.clearImmediate = "undefined" != typeof self && self.clearImmediate || void 0 !== e && e.clearImmediate || this && this.clearImmediate
-			}).call(this, t("./node_modules/webpack/buildin/global.js"))
-		},
 		"./node_modules/websocket/lib/browser.js": function(e, n, t) {
 			var s = function() {
 					return this
@@ -4119,4 +4002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~RedesignChat.0ad8dfea7190509d4244.js.map
+//# sourceMappingURL=vendors~Chat~RedesignChat.8d4ae23c121290aea582.js.map
