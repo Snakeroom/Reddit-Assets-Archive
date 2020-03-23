@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2c2dd21aa5829d2a0767.js
-// Retrieved at 3/23/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2953bd552029d27fdf56.js
+// Retrieved at 3/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -6281,7 +6281,7 @@
 				p = "MEDIA__SET_VOLUME",
 				f = Object(r.a)(p),
 				m = (e, t) => async (n, r) => {
-					n(b(e)), !e && t && n(Object(u.H)(t))
+					n(b(e)), !e && t && n(Object(u.J)(t))
 				}, O = "MEDIA__EMBED_HEIGHT_MEASURED", g = Object(r.a)(O), _ = e => {
 					let {
 						height: t,
@@ -10971,9 +10971,11 @@
 				}, qe = (e, t) => async (n, r) => {
 					const s = e.media && "video" === e.media.type,
 						o = [te.a.VendorFullyViewable, te.a.VendorFullyViewableSeconds5, te.a.VendorFullyViewableSeconds15];
-					if (s && t === te.a.VideoViewable) n(Object(C.D)(e.id));
+					if (s && t === te.a.VideoViewable) n(Object(C.F)(e.id));
 					else if (s && t === te.a.VideoFullyViewable) n(Object(C.C)(e.id));
 					else if (s && t === te.a.MRCVideoViewableImpression) n(Object(C.B)(e.id));
+					else if (s && t === te.a.VideoGroupMViewable) n(Object(C.D)(e.id));
+					else if (s && t === te.a.VideoVendorFullyViewable50) n(Object(C.E)(e.id));
 					else if (e.isSponsored)
 						if (o.includes(t)) n(((e, t) => async n => {
 							n(Ge(e, t)), n(Ue(t, {
@@ -19237,48 +19239,52 @@
 				return k
 			})), n.d(t, "z", (function() {
 				return M
-			})), n.d(t, "D", (function() {
-				return K
-			})), n.d(t, "B", (function() {
-				return Y
-			})), n.d(t, "C", (function() {
-				return z
-			})), n.d(t, "P", (function() {
-				return J
-			})), n.d(t, "H", (function() {
-				return Q
-			})), n.d(t, "Q", (function() {
-				return X
-			})), n.d(t, "R", (function() {
-				return $
-			})), n.d(t, "E", (function() {
-				return ee
 			})), n.d(t, "F", (function() {
-				return ne
+				return z
+			})), n.d(t, "B", (function() {
+				return J
+			})), n.d(t, "D", (function() {
+				return Q
+			})), n.d(t, "E", (function() {
+				return X
+			})), n.d(t, "C", (function() {
+				return $
+			})), n.d(t, "R", (function() {
+				return Z
 			})), n.d(t, "J", (function() {
-				return oe
-			})), n.d(t, "N", (function() {
-				return ie
-			})), n.d(t, "A", (function() {
-				return ce
-			})), n.d(t, "O", (function() {
-				return de
-			})), n.d(t, "M", (function() {
-				return be
-			})), n.d(t, "L", (function() {
-				return pe
-			})), n.d(t, "x", (function() {
-				return fe
-			})), n.d(t, "K", (function() {
-				return me
-			})), n.d(t, "w", (function() {
-				return Oe
+				return ee
+			})), n.d(t, "S", (function() {
+				return te
+			})), n.d(t, "T", (function() {
+				return ne
 			})), n.d(t, "G", (function() {
+				return se
+			})), n.d(t, "H", (function() {
+				return ie
+			})), n.d(t, "L", (function() {
+				return de
+			})), n.d(t, "P", (function() {
+				return ue
+			})), n.d(t, "A", (function() {
+				return le
+			})), n.d(t, "Q", (function() {
+				return pe
+			})), n.d(t, "O", (function() {
+				return Oe
+			})), n.d(t, "N", (function() {
 				return ge
-			})), n.d(t, "I", (function() {
+			})), n.d(t, "x", (function() {
 				return _e
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "M", (function() {
 				return he
+			})), n.d(t, "w", (function() {
+				return ye
+			})), n.d(t, "I", (function() {
+				return je
+			})), n.d(t, "K", (function() {
+				return Ee
+			})), n.d(t, "y", (function() {
+				return Ie
 			}));
 			var r = n("./src/lib/makeActionCreator/index.ts"),
 				s = n("./src/reddit/constants/adEvents.ts"),
@@ -19328,12 +19334,14 @@
 				U = Object(r.a)(w),
 				F = Object(r.a)(A),
 				B = Object(r.a)(P),
-				G = Object(r.a)(R),
-				q = Object(r.a)(x),
-				V = Object(r.a)("AD__VIDEO_PLAYED_EXPANDED"),
-				H = Object(r.a)(N),
-				W = Object(r.a)(k),
-				K = e => async (t, n) => {
+				G = Object(r.a)("AD__VIDEO_GROUP_M_VIEWABLE"),
+				q = Object(r.a)("AD__VIDEO_FULLY_VIEWABLE_50"),
+				V = Object(r.a)(R),
+				H = Object(r.a)(x),
+				W = Object(r.a)("AD__VIDEO_PLAYED_EXPANDED"),
+				K = Object(r.a)(N),
+				Y = Object(r.a)(k),
+				z = e => async (t, n) => {
 					const r = n(),
 						o = Object(l.M)(r, {
 							postId: e
@@ -19341,7 +19349,7 @@
 					t(L(e, "is_viewable", "video", !1)), o.isSponsored && (t(Object(c.B)(o, s.a.VideoViewableImpression)), t(U({
 						postId: e
 					})))
-				}, Y = e => async (t, n) => {
+				}, J = e => async (t, n) => {
 					const r = n(),
 						o = Object(l.M)(r, {
 							postId: e
@@ -19349,7 +19357,23 @@
 					o.isSponsored && (t(Object(c.B)(o, s.a.MRCVideoViewableImpression)), t(B({
 						postId: e
 					})))
-				}, z = e => async (t, n) => {
+				}, Q = e => async (t, n) => {
+					const r = n(),
+						o = Object(l.M)(r, {
+							postId: e
+						});
+					o.isSponsored && (t(Object(c.B)(o, s.a.VideoGroupMViewable)), t(G({
+						postId: e
+					})))
+				}, X = e => async (t, n) => {
+					const r = n(),
+						o = Object(l.M)(r, {
+							postId: e
+						});
+					o.isSponsored && (t(Object(c.B)(o, s.a.VideoVendorFullyViewable50)), t(q({
+						postId: e
+					})))
+				}, $ = e => async (t, n) => {
 					const r = n(),
 						o = Object(l.M)(r, {
 							postId: e
@@ -19357,18 +19381,18 @@
 					t(L(e, "is_fully_viewable", "video", !1)), o.isSponsored && (t(Object(c.B)(o, s.a.VideoFullyViewableImpression)), t(F({
 						postId: e
 					})))
-				}, J = e => async (t, n) => {
+				}, Z = e => async (t, n) => {
 					const r = Object(l.M)(n(), {
 						postId: e
 					});
-					t(L(e, "start", "video", !1)), r.isSponsored && (t(Object(c.B)(r, s.a.VideoStarted)), t(G({
+					t(L(e, "start", "video", !1)), r.isSponsored && (t(Object(c.B)(r, s.a.VideoStarted)), t(V({
 						postId: e
 					})))
-				}, Q = e => async (t, n) => {
+				}, ee = e => async (t, n) => {
 					const r = Object(l.M)(n(), {
 						postId: e
 					});
-					t(L(e, "play_with_sound", "video", !1)), t(L(e, "is_viewable", "video", !1)), t(L(e, "is_fully_viewable", "video", !1)), r.isSponsored && (t(Object(c.B)(r, s.a.VideoPlayedWithSound)), t(Object(c.B)(r, s.a.VideoViewableImpression)), t(Object(c.B)(r, s.a.VideoFullyViewableImpression)), t(Object(c.B)(r, s.a.MRCVideoViewableImpression)), t(q({
+					t(L(e, "play_with_sound", "video", !1)), t(L(e, "is_viewable", "video", !1)), t(L(e, "is_fully_viewable", "video", !1)), r.isSponsored && (t(Object(c.B)(r, s.a.VideoPlayedWithSound)), t(Object(c.B)(r, s.a.VideoViewableImpression)), t(Object(c.B)(r, s.a.VideoFullyViewableImpression)), t(Object(c.B)(r, s.a.MRCVideoViewableImpression)), t(H({
 						postId: e
 					})), t(U({
 						postId: e
@@ -19377,7 +19401,7 @@
 					})), t(B({
 						postId: e
 					})))
-				}, X = (e, t) => async (n, r) => {
+				}, te = (e, t) => async (n, r) => {
 					const i = Object(l.M)(r(), {
 						postId: t
 					});
@@ -19398,11 +19422,11 @@
 						default:
 							a = "watch_100_percent", d = s.a.VideoWatched100
 					}
-					n(L(t, a, "video", !1)), i.isSponsored && (n(Object(c.B)(i, d)), n(H({
+					n(L(t, a, "video", !1)), i.isSponsored && (n(Object(c.B)(i, d)), n(K({
 						postId: t,
 						percentage: e
 					})))
-				}, $ = (e, t) => async (n, r) => {
+				}, ne = (e, t) => async (n, r) => {
 					const i = Object(l.M)(r(), {
 						postId: t
 					});
@@ -19417,18 +19441,18 @@
 						default:
 							a = "watch_10_seconds", d = s.a.VideoWatchedSeconds10
 					}
-					n(L(t, a, "video", !1)), i.isSponsored && (n(Object(c.B)(i, d)), n(W({
+					n(L(t, a, "video", !1)), i.isSponsored && (n(Object(c.B)(i, d)), n(Y({
 						postId: t,
 						seconds: e
 					})))
-				}, Z = Object(r.a)(f), ee = Object(r.a)(g), te = Object(r.a)(_), ne = Object(r.a)(h), re = Object(r.a)(y), se = Object(r.a)(m), oe = Object(r.a)(j), ie = Object(r.a)(v), ce = Object(r.a)(O), ae = Object(r.a)(E), de = Object(r.a)(I), ue = Object(r.a)(S), le = Object(r.a)(T), be = Object(r.a)(C), pe = e => async (t, n) => {
+				}, re = Object(r.a)(f), se = Object(r.a)(g), oe = Object(r.a)(_), ie = Object(r.a)(h), ce = Object(r.a)(y), ae = Object(r.a)(m), de = Object(r.a)(j), ue = Object(r.a)(v), le = Object(r.a)(O), be = Object(r.a)(E), pe = Object(r.a)(I), fe = Object(r.a)(S), me = Object(r.a)(T), Oe = Object(r.a)(C), ge = e => async (t, n) => {
 					const r = Object(l.M)(n(), {
 						postId: e
 					});
-					t(se({
+					t(ae({
 						postId: e
 					})), ((e, t, n) => {
-						n(L(t, "play_expanded", "video", !1)), n(L(t, "is_viewable", "video", !1)), n(L(t, "is_fully_viewable", "video", !1)), e.isSponsored && (n(Object(c.B)(e, s.a.VideoPlayedExpanded)), n(Object(c.B)(e, s.a.VideoViewableImpression)), n(Object(c.B)(e, s.a.VideoFullyViewableImpression)), n(Object(c.B)(e, s.a.MRCVideoViewableImpression)), n(V({
+						n(L(t, "play_expanded", "video", !1)), n(L(t, "is_viewable", "video", !1)), n(L(t, "is_fully_viewable", "video", !1)), e.isSponsored && (n(Object(c.B)(e, s.a.VideoPlayedExpanded)), n(Object(c.B)(e, s.a.VideoViewableImpression)), n(Object(c.B)(e, s.a.VideoFullyViewableImpression)), n(Object(c.B)(e, s.a.MRCVideoViewableImpression)), n(W({
 							postId: t
 						})), n(U({
 							postId: t
@@ -19438,43 +19462,43 @@
 							postId: t
 						})))
 					})(r, e, t)
-				}, fe = (e, t) => async (n, r) => {
+				}, _e = (e, t) => async (n, r) => {
 					const s = r();
-					s.posts.video.autoPlayed[e] && Object(u.j)(s) && (d.d(s, e), void 0 !== t && n(le({
+					s.posts.video.autoPlayed[e] && Object(u.j)(s) && (d.d(s, e), void 0 !== t && n(me({
 						postId: e,
 						isBuffering: t
 					})))
-				}, me = e => async (t, n) => {
+				}, he = e => async (t, n) => {
 					const r = n();
 					r.posts.video.autoPlayed[e] && Object(u.j)(r) && d.h(r, e)
-				}, Oe = (e, t) => async (n, r) => {
-					n(te({
+				}, ye = (e, t) => async (n, r) => {
+					n(oe({
 						postId: e,
 						time: t
 					}));
 					const s = r();
 					Object(u.j)(s) && d.f(s, e)
-				}, ge = (e, t) => async (n, r) => {
-					n(re({
+				}, je = (e, t) => async (n, r) => {
+					n(ce({
 						postId: e,
 						time: t
 					}));
 					const s = r();
 					Object(u.j)(s) && d.a(s, e)
-				}, _e = e => async (t, n) => {
+				}, Ee = e => async (t, n) => {
 					const r = n(),
 						s = r.posts.video.autoPlayed[e],
 						o = r.posts.video.started[e];
-					t(ae({
+					t(be({
 						postId: e
-					})), t(ue({
+					})), t(fe({
 						postId: e
 					})), !o && s && Object(u.j)(r) && d.c(r, e)
-				}, he = e => async (t, n) => {
+				}, Ie = e => async (t, n) => {
 					const r = n(),
 						s = r.posts.video.autoPlayed[e],
 						o = r.posts.video.consumed[e];
-					t(Z({
+					t(re({
 						postId: e
 					})), s && Object(u.j)(r) && !o && d.b(r, e)
 				}
@@ -20406,7 +20430,7 @@
 					return r
 				})),
 				function(e) {
-					e[e.Impression = 1] = "Impression", e[e.Click = 2] = "Click", e[e.CommentsView = 3] = "CommentsView", e[e.Upvote = 4] = "Upvote", e[e.Downvote = 5] = "Downvote", e[e.CommentSubmitted = 6] = "CommentSubmitted", e[e.ViewableImpression = 7] = "ViewableImpression", e[e.CommentUpvote = 8] = "CommentUpvote", e[e.CommentDownvote = 9] = "CommentDownvote", e[e.VendorFullyInView = 10] = "VendorFullyInView", e[e.VendorFullyInViewSeconds5 = 11] = "VendorFullyInViewSeconds5", e[e.VendorFullyInViewSeconds15 = 12] = "VendorFullyInViewSeconds15", e[e.GroupMViewable = 13] = "GroupMViewable", e[e.Unload = 14] = "Unload", e[e.VideoViewableImpression = 100] = "VideoViewableImpression", e[e.VideoFullyViewableImpression = 101] = "VideoFullyViewableImpression", e[e.VideoPlayedWithSound = 102] = "VideoPlayedWithSound", e[e.VideoPlayedExpanded = 103] = "VideoPlayedExpanded", e[e.VideoWatched25 = 104] = "VideoWatched25", e[e.VideoWatched50 = 105] = "VideoWatched50", e[e.VideoWatched75 = 106] = "VideoWatched75", e[e.VideoWatched95 = 107] = "VideoWatched95", e[e.VideoWatched100 = 108] = "VideoWatched100", e[e.VideoStarted = 109] = "VideoStarted", e[e.VideoWatchedSeconds3 = 110] = "VideoWatchedSeconds3", e[e.VideoWatchedSeconds5 = 111] = "VideoWatchedSeconds5", e[e.VideoWatchedSeconds10 = 112] = "VideoWatchedSeconds10", e[e.MRCVideoViewableImpression = 115] = "MRCVideoViewableImpression"
+					e[e.Impression = 1] = "Impression", e[e.Click = 2] = "Click", e[e.CommentsView = 3] = "CommentsView", e[e.Upvote = 4] = "Upvote", e[e.Downvote = 5] = "Downvote", e[e.CommentSubmitted = 6] = "CommentSubmitted", e[e.ViewableImpression = 7] = "ViewableImpression", e[e.CommentUpvote = 8] = "CommentUpvote", e[e.CommentDownvote = 9] = "CommentDownvote", e[e.VendorFullyInView = 10] = "VendorFullyInView", e[e.VendorFullyInViewSeconds5 = 11] = "VendorFullyInViewSeconds5", e[e.VendorFullyInViewSeconds15 = 12] = "VendorFullyInViewSeconds15", e[e.GroupMViewable = 13] = "GroupMViewable", e[e.Unload = 14] = "Unload", e[e.VideoViewableImpression = 100] = "VideoViewableImpression", e[e.VideoFullyViewableImpression = 101] = "VideoFullyViewableImpression", e[e.VideoPlayedWithSound = 102] = "VideoPlayedWithSound", e[e.VideoPlayedExpanded = 103] = "VideoPlayedExpanded", e[e.VideoWatched25 = 104] = "VideoWatched25", e[e.VideoWatched50 = 105] = "VideoWatched50", e[e.VideoWatched75 = 106] = "VideoWatched75", e[e.VideoWatched95 = 107] = "VideoWatched95", e[e.VideoWatched100 = 108] = "VideoWatched100", e[e.VideoStarted = 109] = "VideoStarted", e[e.VideoWatchedSeconds3 = 110] = "VideoWatchedSeconds3", e[e.VideoWatchedSeconds5 = 111] = "VideoWatchedSeconds5", e[e.VideoWatchedSeconds10 = 112] = "VideoWatchedSeconds10", e[e.VideoGroupMViewable = 113] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 114] = "VideoVendorFullyViewable50", e[e.MRCVideoViewableImpression = 115] = "MRCVideoViewableImpression"
 				}(r || (r = {}))
 		},
 		"./src/reddit/constants/adViewability.ts": function(e, t, n) {
@@ -21713,7 +21737,7 @@
 					return r
 				})),
 				function(e) {
-					e[e.Viewable = 1] = "Viewable", e[e.VideoViewable = 2] = "VideoViewable", e[e.VideoFullyViewable = 3] = "VideoFullyViewable", e[e.Impression = 4] = "Impression", e[e.VendorFullyViewable = 5] = "VendorFullyViewable", e[e.VendorFullyViewableSeconds5 = 6] = "VendorFullyViewableSeconds5", e[e.VendorFullyViewableSeconds15 = 7] = "VendorFullyViewableSeconds15", e[e.GroupMViewable = 8] = "GroupMViewable", e[e.MRCVideoViewableImpression = 9] = "MRCVideoViewableImpression"
+					e[e.Viewable = 1] = "Viewable", e[e.VideoViewable = 2] = "VideoViewable", e[e.VideoFullyViewable = 3] = "VideoFullyViewable", e[e.Impression = 4] = "Impression", e[e.VendorFullyViewable = 5] = "VendorFullyViewable", e[e.VendorFullyViewableSeconds5 = 6] = "VendorFullyViewableSeconds5", e[e.VendorFullyViewableSeconds15 = 7] = "VendorFullyViewableSeconds15", e[e.GroupMViewable = 8] = "GroupMViewable", e[e.MRCVideoViewableImpression = 9] = "MRCVideoViewableImpression", e[e.VideoGroupMViewable = 10] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 11] = "VideoVendorFullyViewable50"
 				}(r || (r = {}))
 		},
 		"./src/reddit/constants/wiki.ts": function(e, t, n) {
@@ -27477,7 +27501,11 @@
 					case "GROUP_M_VIEWABLE":
 						return o.a.GroupMViewable;
 					case "MRC_VIDEO_VIEWABLE_IMPRESSION":
-						return o.a.MRCVideoViewableImpression
+						return o.a.MRCVideoViewableImpression;
+					case "VIDEO_VENDOR_FULLY_VIEWABLE_50":
+						return o.a.VideoVendorFullyViewable50;
+					case "VIDEO_GROUP_M_VIEWABLE":
+						return o.a.VideoGroupMViewable
 				}
 			};
 			var m = n("./src/reddit/models/Post/index.ts"),
@@ -62272,4 +62300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.2c2dd21aa5829d2a0767.js.map
+//# sourceMappingURL=Governance~Reddit.2953bd552029d27fdf56.js.map

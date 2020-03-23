@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.364c334fcea468779fd7.js
-// Retrieved at 3/23/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.bd32149c566f4d642992.js
+// Retrieved at 3/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -1410,15 +1410,15 @@
 						onLoadStarted: t => {
 							s && e(E.w(s, t))
 						},
-						onMetadataReceived: t => e(E.J({
+						onMetadataReceived: t => e(E.L({
 							metadata: t,
 							postId: t.id
 						})),
 						onPlayable: t => {
-							s && e(E.G(s, t))
+							s && e(E.I(s, t))
 						},
 						onUpdateVideoTime: l()(t => {
-							s && e(E.N({
+							s && e(E.P({
 								postId: s,
 								time: t
 							}))
@@ -1434,22 +1434,22 @@
 							})
 						},
 						setPlaying: t => {
-							s && e(E.M({
+							s && e(E.O({
 								postId: s,
 								isPlaying: t
 							}))
 						},
 						setAutoplayPref: t => e(b.r(t)),
 						setVideoFullscreen: () => {
-							s && e(E.L(s))
+							s && e(E.N(s))
 						},
 						setVideoMuted: t => e(P.d(t, s)),
 						setVideoVolume: t => e(P.e(t)),
 						onWatchedPercent: t => {
-							s && e(E.Q(t, s))
+							s && e(E.S(t, s))
 						},
 						onWatchedSeconds: t => {
-							s && e(E.R(t, s))
+							s && e(E.T(t, s))
 						},
 						onUpdateContinuousViewStartTime: t => {
 							s && e(E.z({
@@ -1458,7 +1458,7 @@
 							}))
 						},
 						onVideoStarted: () => {
-							s && e(E.P(s))
+							s && e(E.R(s))
 						}
 					}
 				});
@@ -1768,7 +1768,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("f13cc4f-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("987836c-production", " ").concat(t);
 									return i && (s += " [".concat(V.Nb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2262,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.364c334fcea468779fd7.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.bd32149c566f4d642992.js.map

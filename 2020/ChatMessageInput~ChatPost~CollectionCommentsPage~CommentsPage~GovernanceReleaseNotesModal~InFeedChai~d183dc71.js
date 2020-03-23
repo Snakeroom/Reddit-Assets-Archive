@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.7713473ae259c6c250ef.js
-// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b2e627b9d0786ab229e6.js
+// Retrieved at 3/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -413,24 +413,24 @@
 					} = t;
 					return {
 						onBufferingChanged: t => {
-							e(t ? l.x(n) : l.K(n))
+							e(t ? l.x(n) : l.M(n))
 						},
 						onLoadStarted: t => e(l.w(n, t)),
-						onMetadataReceived: t => e(l.J({
+						onMetadataReceived: t => e(l.L({
 							metadata: t,
 							postId: n
 						})),
-						onPaused: () => e(l.F({
+						onPaused: () => e(l.H({
 							postId: n
 						})),
-						onPlayable: t => e(l.G(n, t)),
-						onPlaying: () => e(l.I(n)),
+						onPlayable: t => e(l.I(n, t)),
+						onPlaying: () => e(l.K(n)),
 						onWatched: () => e(l.y(n)),
-						onViewableImpression: () => e(l.D(n)),
+						onViewableImpression: () => e(l.F(n)),
 						onFullyViewableImpression: () => e(l.C(n)),
 						onMRCViewableImpression: () => e(l.B(n)),
-						onPlayedWithSound: () => e(l.H(n)),
-						onWatchedPercent: t => e(l.Q(t, n))
+						onPlayedWithSound: () => e(l.J(n)),
+						onWatchedPercent: t => e(l.S(t, n))
 					}
 				});
 			class v extends i.a.Component {
@@ -1264,8 +1264,8 @@
 					}
 				}),
 				N = n("./src/reddit/constants/experiments.ts"),
-				B = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				M = n("./src/reddit/selectors/subredditMention.ts");
+				M = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				B = n("./src/reddit/selectors/subredditMention.ts");
 			class D extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
@@ -1274,7 +1274,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(B.a)(Object.assign({}, e, {
+						t(Object(M.a)(Object.assign({}, e, {
 							subredditName: n
 						})))
 					}
@@ -1291,9 +1291,9 @@
 			}
 			const H = Object(u.c)(D),
 				R = Object(I.c)({
-					isFeatureFlagEnabled: M.b,
-					isUserInTreatment: M.e,
-					userVariant: M.a
+					isFeatureFlagEnabled: B.b,
+					isUserInTreatment: B.e,
+					userVariant: B.a
 				});
 			var U = Object(v.b)(R)(e => {
 					let {
@@ -1338,9 +1338,9 @@
 			})), n.d(t, "f", (function() {
 				return Y
 			})), n.d(t, "h", (function() {
-				return G
-			})), n.d(t, "g", (function() {
 				return K
+			})), n.d(t, "g", (function() {
+				return G
 			})), n.d(t, "i", (function() {
 				return q
 			})), n.d(t, "e", (function() {
@@ -1412,12 +1412,12 @@
 						case h.p:
 							return Y(e, t, n, s);
 						case h.u:
-							return K(e, t, n, s);
+							return G(e, t, n, s);
 						case h.z:
-							return G(e, t, n, s)
+							return K(e, t, n, s)
 					}
 				},
-				G = (e, t, n, s) => {
+				K = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1459,7 +1459,7 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				K = (e, t, n, s) => {
+				G = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
@@ -1806,4 +1806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.7713473ae259c6c250ef.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b2e627b9d0786ab229e6.js.map
