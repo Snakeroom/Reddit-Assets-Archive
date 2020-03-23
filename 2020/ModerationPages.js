@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ff447621f8d34c5a5e08.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.cf2abb6e47391537d60d.js
+// Retrieved at 3/23/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1183,7 +1183,7 @@
 					return e.map(e => {
 						const a = Object(Q.j)(e.startsAt),
 							r = new Date(a),
-							i = t === q.c ? r.getMonth() : Math.floor((a - o) / s % t),
+							i = t === q.c ? r.getMonth() : Math.round((a - o) / s) % t,
 							d = q.d[e.client];
 						n.pageViews[d][i] += e.pageViews, n.uniqueUsers[d][i] += e.uniqueUsers
 					}), n
@@ -27586,4 +27586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.ff447621f8d34c5a5e08.js.map
+//# sourceMappingURL=ModerationPages.cf2abb6e47391537d60d.js.map
