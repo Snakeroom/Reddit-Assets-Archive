@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.890f84e769bcb408a6ed.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b0263b450310b4a05a7e.js
+// Retrieved at 3/23/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4766,7 +4766,7 @@
 					}, h.a.createElement("span", {
 						className: Qo.a.primaryText
 					}, i), h.a.createElement("span", {
-						className: Object(P.a)(Qo.a.subText, {
+						className: Object(P.a)(Qo.a.subtext, {
 							[Qo.a.crossout]: d
 						})
 					}, Array.isArray(c) ? c.map((e, t) => h.a.createElement("p", {
@@ -4836,13 +4836,13 @@
 							})
 						}
 						return {
-							buttonSubText: m = a !== s ? "$".concat(s / 100) : r ? o.fbt._("{percent bonus}% Bonus", [o.fbt._param("percent bonus", r.toLocaleString())], {
+							buttonSubtext: m = a !== s ? "$".concat(s / 100) : r ? o.fbt._("{percent bonus}% Bonus", [o.fbt._param("percent bonus", r.toLocaleString())], {
 								hk: "2zgjZ1"
 							}) : void 0,
 							buttonText: d,
 							coinPackage: e,
 							primaryText: c,
-							subText: l
+							subtext: l
 						}
 					});
 					n && a.sort((e, t) => {
@@ -4855,7 +4855,7 @@
 						periodicalCoins: c,
 						signupBonusCoins: d
 					} = r, l = d ? d.toLocaleString() : void 0, m = "$".concat((i / 100).toLocaleString()), u = c.toLocaleString(), p = {
-						buttonSubText: l ? o.fbt._("{number of bonus coins} Bonus Coins", [o.fbt._param("number of bonus coins", l)], {
+						buttonSubtext: l ? o.fbt._("{number of bonus coins} Bonus Coins", [o.fbt._param("number of bonus coins", l)], {
 							hk: "3qu4dU"
 						}) : void 0,
 						buttonText: o.fbt._("{premium price}/mo", [o.fbt._param("premium price", m)], {
@@ -4865,7 +4865,7 @@
 						primaryText: o.fbt._("Premium", null, {
 							hk: "45A9gK"
 						}),
-						subText: [o.fbt._("{monthly coins} Coins/mo", [o.fbt._param("monthly coins", u)], {
+						subtext: [o.fbt._("{monthly coins} Coins/mo", [o.fbt._param("monthly coins", u)], {
 							hk: "2fh3lO"
 						}), o.fbt._("Ads free & more", null, {
 							hk: "wO4Wc"
@@ -4896,12 +4896,12 @@
 						className: e
 					}, this.getListItemData().map(e => {
 						const {
-							buttonSubText: t,
+							buttonSubtext: t,
 							buttonText: s,
 							coinPackage: n,
 							isGoldStyle: a,
 							primaryText: r,
-							subText: o
+							subtext: o
 						} = e, i = n && n.coins !== n.baselineCoins, c = n && n.pennies !== n.baselinePennies;
 						return h.a.createElement(zo, {
 							buttonSubtext: t,
@@ -6928,8 +6928,8 @@
 				compactCoinPurchaseListItem: "_3lHAZGc0ML7wczmPcwezOF",
 				productSection: "_2VkRnsOobI-4VlOs4ID5Vy",
 				primaryText: "_4cdfLigUWzeeVcPzzbe78",
-				subText: "_2rMDMrhhjRzyi7pNFku1dh",
-				buttonSubText: "_3qTmR_nZBIBLXk2J3z7RWs",
+				subtext: "_1K7tfdKlu_H-Eljz3TrNc8",
+				buttonSubtext: "_2Mm_ve0iAKMLDXgbbvVmSD",
 				priceSection: "_49wuP84YuCbFBmZg2KI5s",
 				button: "_2s6F0RDk744nqzZtEK_6Og",
 				goldStyle: "_2fGxX7IQlng74vsW862Y--",
@@ -11936,4 +11936,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.890f84e769bcb408a6ed.js.map
+//# sourceMappingURL=Reddit.b0263b450310b4a05a7e.js.map
