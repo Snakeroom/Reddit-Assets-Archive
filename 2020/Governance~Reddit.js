@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.68a8fa8946c60f4f50e4.js
-// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0109cdcf5b3acbd08004.js
+// Retrieved at 3/23/2020, 2:30:43 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -9890,7 +9890,7 @@
 							subredditName: c
 						}));
 						else if (s === b.a.BannedSubreddit) {
-						const e = r ? r.banMessage : void 0;
+						const e = r ? r.banMessage || r.ban_message : void 0;
 						n(g.m({
 							banMessage: e,
 							account: o,
@@ -62272,4 +62272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.68a8fa8946c60f4f50e4.js.map
+//# sourceMappingURL=Governance~Reddit.0109cdcf5b3acbd08004.js.map
