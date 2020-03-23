@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.93b7b9e4321d566b523e.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.4d18edee7ae1134f863e.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2206,20 +2206,20 @@
 		},
 		"./src/reddit/components/RequestPendingBanner/index.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				c = n("./src/reddit/i18n/utils.ts"),
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/lib/lessComponent.tsx"),
+				c = n("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				l = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				m = n("./src/reddit/selectors/platform.ts"),
 				u = n("./src/reddit/selectors/subreddit.ts"),
 				p = n("./src/reddit/components/RequestPendingBanner/index.m.less"),
 				h = n.n(p);
-			const b = i.a.wrapped(d.a, "Banner", h.a),
-				g = Object(r.b)(() => Object(a.c)({
+			const b = d.a.wrapped(c.a, "Banner", h.a),
+				g = Object(a.b)(() => Object(i.c)({
 					restrictions: u.o,
 					subreddit: m.f
 				}));
@@ -2229,14 +2229,20 @@
 					subreddit: n
 				} = e;
 				if (!n) return null;
-				const o = t === l.e.Comment ? l.a.Create : l.a.Draft;
-				return s.a.createElement(b, {
-					subtitle: s.a.createElement("span", {
+				const s = t === l.e.Comment ? l.a.Create : l.a.Draft;
+				return r.a.createElement(b, {
+					subtitle: r.a.createElement("span", {
 						className: h.a.Subtitle
-					}, Object(c.c)("Your request to ".concat(Object(c.b)("restrictions", l.d[t]), " in r/").concat(Object(c.b)("displayName", n.name), " was sent and is pending. In the meantime, you can ").concat(Object(c.b)("action", l.c[o]), " a post and ")), s.a.createElement("a", {
+					}, o.fbt._("Your request to {restrictions} in {displayName} was sent and is pending. In the meantime, you can {action} a post and {=browse the community}", [o.fbt._param("restrictions", l.d[t]), o.fbt._param("displayName", n.name), o.fbt._param("action", l.c[s]), o.fbt._param("=browse the community", r.a.createElement("a", {
 						href: "".concat(n.url)
-					}, Object(c.c)("browse the community"))),
-					title: Object(c.c)("Request to ".concat(Object(c.b)("restrictions", l.d[t]), " is pending..."))
+					}, o.fbt._("browse the community", null, {
+						hk: "3hwgAC"
+					})))], {
+						hk: "2CX6Q6"
+					})),
+					title: o.fbt._("Request to {restrictions} is pending...", [o.fbt._param("restrictions", l.d[t])], {
+						hk: "1tQuSr"
+					})
 				})
 			})
 		},
@@ -2722,4 +2728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.93b7b9e4321d566b523e.js.map
+//# sourceMappingURL=RichTextEditor.4d18edee7ae1134f863e.js.map

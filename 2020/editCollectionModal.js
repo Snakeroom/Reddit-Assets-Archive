@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.030edaaeafc279fc68ad.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.a9329c4dfbafc84ae134.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -14,12 +14,16 @@
 				a = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
 				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				i = n("./src/reddit/i18n/utils.ts"),
-				c = n("./src/reddit/components/CharacterCountdown/index.m.less"),
-				l = n.n(c);
+				i = n("./src/reddit/components/CharacterCountdown/index.m.less"),
+				c = n.n(i);
+			const {
+				fbt: l
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => a.a.createElement(r.b, {
-				className: Object(o.a)(e.className, l.a.container, e.text.length > e.maxChars ? l.a.mOverflow : null)
-			}, "".concat(e.maxChars - e.text.length, " ").concat(Object(i.c)("Characters")))
+				className: Object(o.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
+			}, l._("{characters} Characters", [l._param("characters", e.maxChars - e.text.length)], {
+				hk: "1ewWIT"
+			}))
 		},
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -132,15 +136,15 @@
 				C = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				b = n("./src/reddit/controls/RadioInput/index.tsx"),
-				E = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				_ = n("./src/reddit/controls/Sortable/index.tsx"),
+				_ = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				E = n("./src/reddit/controls/Sortable/index.tsx"),
 				y = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				S = n("./src/reddit/layout/row/Inline/index.tsx"),
 				L = n("./src/reddit/models/PostCollection/index.ts"),
 				O = n("./src/reddit/selectors/postCollection.ts"),
-				N = n("./src/reddit/selectors/user.ts"),
-				P = n("./src/reddit/components/EditCollectionModal/index.m.less"),
-				j = n.n(P);
+				P = n("./src/reddit/selectors/user.ts"),
+				N = n("./src/reddit/components/EditCollectionModal/index.m.less"),
+				j = n.n(N);
 
 			function D() {
 				return (D = Object.assign || function(e) {
@@ -193,7 +197,7 @@
 						name: "type",
 						onChange: t,
 						value: n
-					}, i.a.createElement(E.a, {
+					}, i.a.createElement(_.a, {
 						className: j.a.layoutOptionWrapper,
 						key: L.a.TIMELINE,
 						showButton: !0,
@@ -208,7 +212,7 @@
 						className: j.a.layoutSubTitle
 					}, s.fbt._("Best for event or discussion collections", null, {
 						hk: "3v88sS"
-					})))), i.a.createElement(E.a, {
+					})))), i.a.createElement(_.a, {
 						className: j.a.layoutOptionWrapper,
 						key: L.a.GALLERY,
 						showButton: !0,
@@ -276,7 +280,7 @@
 					collection: O.r,
 					displayLayout: O.b,
 					isPending: e => Object(O.h)(e) || Object(O.i)(e) || Object(O.k)(e) || Object(O.m)(e),
-					language: N.O,
+					language: P.O,
 					postsByIds: O.p
 				}),
 				R = Object(c.b)(B, (e, t) => ({
@@ -421,7 +425,7 @@
 						hk: "1ojLYW"
 					}))), i.a.createElement("div", {
 						className: j.a.bodyContainer
-					}, o ? i.a.createElement(_.a, {
+					}, o ? i.a.createElement(E.a, {
 						getReactKey: this.getReactKey,
 						onDrop: this.handleReorder,
 						render: this.renderPost,
@@ -494,8 +498,8 @@
 				C = h.a.span("Container", m.a),
 				f = h.a.wrapped(d.a, "CalendarIcon", m.a),
 				b = h.a.wrapped(u.a, "LiveIcon", m.a),
-				E = h.a.div("LoadingState", m.a);
-			class _ extends s.Component {
+				_ = h.a.div("LoadingState", m.a);
+			class E extends s.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -520,7 +524,7 @@
 						eventIsLive: u,
 						eventStart: p
 					} = s, m = Object(o.e)(p, d);
-					let h, _;
+					let h, E;
 					if (this.state.mounted || m === o.a.Live) h = function(e, t, n, s) {
 						const a = Object(o.e)(e, t),
 							l = new Date(e * i.Fb);
@@ -544,22 +548,22 @@
 						const e = Object(l.a)({
 							isLoading: !0
 						});
-						h = a.a.createElement(E, {
+						h = a.a.createElement(_, {
 							className: e
 						})
 					}
-					if (u) _ = a.a.createElement(g, null, a.a.createElement(b, null), h);
-					else if (m === o.a.Future) _ = a.a.createElement(v, null, a.a.createElement(f, null), h);
+					if (u) E = a.a.createElement(g, null, a.a.createElement(b, null), h);
+					else if (m === o.a.Future) E = a.a.createElement(v, null, a.a.createElement(f, null), h);
 					else {
 						if (m !== o.a.Past) return null;
-						_ = a.a.createElement(x, null, a.a.createElement(f, null), h)
+						E = a.a.createElement(x, null, a.a.createElement(f, null), h)
 					}
 					return a.a.createElement(C, {
 						className: e
-					}, _)
+					}, E)
 				}
 			}
-			t.a = _
+			t.a = E
 		},
 		"./src/reddit/components/StructuredStyles/DragItem/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -666,7 +670,7 @@
 			})), n.d(t, "d", (function() {
 				return b
 			})), n.d(t, "j", (function() {
-				return E
+				return _
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -686,7 +690,7 @@
 				C = s.a.div("FormElementDescription", o.a),
 				f = s.a.div("FormElementError", o.a),
 				b = s.a.div("FormElementSubGroup", o.a),
-				E = s.a.li("FormListItem", o.a)
+				_ = s.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1041,4 +1045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.030edaaeafc279fc68ad.js.map
+//# sourceMappingURL=editCollectionModal.a9329c4dfbafc84ae134.js.map

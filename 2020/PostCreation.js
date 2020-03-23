@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1423b5bfa0ad72b3667c.js
-// Retrieved at 3/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c150837e99fcd938a0b7.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -10540,20 +10540,20 @@
 		},
 		"./src/reddit/components/RequestPendingBanner/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/lib/lessComponent.tsx"),
-				c = n("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				l = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				i = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				d = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				u = n("./src/reddit/selectors/platform.ts"),
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				m = n("./src/reddit/components/RequestPendingBanner/index.m.less"),
 				h = n.n(m);
-			const b = a.a.wrapped(c.a, "Banner", h.a),
-				g = Object(r.b)(() => Object(i.c)({
+			const b = c.a.wrapped(l.a, "Banner", h.a),
+				g = Object(i.b)(() => Object(a.c)({
 					restrictions: p.o,
 					subreddit: u.f
 				}));
@@ -10563,14 +10563,20 @@
 					subreddit: n
 				} = e;
 				if (!n) return null;
-				const s = t === d.e.Comment ? d.a.Create : d.a.Draft;
-				return o.a.createElement(b, {
-					subtitle: o.a.createElement("span", {
+				const o = t === d.e.Comment ? d.a.Create : d.a.Draft;
+				return r.a.createElement(b, {
+					subtitle: r.a.createElement("span", {
 						className: h.a.Subtitle
-					}, Object(l.c)("Your request to ".concat(Object(l.b)("restrictions", d.d[t]), " in r/").concat(Object(l.b)("displayName", n.name), " was sent and is pending. In the meantime, you can ").concat(Object(l.b)("action", d.c[s]), " a post and ")), o.a.createElement("a", {
+					}, s.fbt._("Your request to {restrictions} in {displayName} was sent and is pending. In the meantime, you can {action} a post and {=browse the community}", [s.fbt._param("restrictions", d.d[t]), s.fbt._param("displayName", n.name), s.fbt._param("action", d.c[o]), s.fbt._param("=browse the community", r.a.createElement("a", {
 						href: "".concat(n.url)
-					}, Object(l.c)("browse the community"))),
-					title: Object(l.c)("Request to ".concat(Object(l.b)("restrictions", d.d[t]), " is pending..."))
+					}, s.fbt._("browse the community", null, {
+						hk: "3hwgAC"
+					})))], {
+						hk: "2CX6Q6"
+					})),
+					title: s.fbt._("Request to {restrictions} is pending...", [s.fbt._param("restrictions", d.d[t])], {
+						hk: "1tQuSr"
+					})
 				})
 			})
 		},
@@ -30297,4 +30303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.1423b5bfa0ad72b3667c.js.map
+//# sourceMappingURL=PostCreation.c150837e99fcd938a0b7.js.map

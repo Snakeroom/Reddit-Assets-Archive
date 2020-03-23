@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.6398a75e1d20a150d0da.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.d638b861ed9940d258b0.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -404,12 +404,16 @@
 				r = n.n(s),
 				a = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				d = n("./src/reddit/i18n/utils.ts"),
-				i = n("./src/reddit/components/CharacterCountdown/index.m.less"),
-				l = n.n(i);
+				d = n("./src/reddit/components/CharacterCountdown/index.m.less"),
+				i = n.n(d);
+			const {
+				fbt: l
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(o.b, {
-				className: Object(a.a)(e.className, l.a.container, e.text.length > e.maxChars ? l.a.mOverflow : null)
-			}, "".concat(e.maxChars - e.text.length, " ").concat(Object(d.c)("Characters")))
+				className: Object(a.a)(e.className, i.a.container, e.text.length > e.maxChars ? i.a.mOverflow : null)
+			}, l._("{characters} Characters", [l._param("characters", e.maxChars - e.text.length)], {
+				hk: "1ewWIT"
+			}))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, n) {
 			e.exports = {
@@ -762,4 +766,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BannedUserModal.6398a75e1d20a150d0da.js.map
+//# sourceMappingURL=BannedUserModal.d638b861ed9940d258b0.js.map

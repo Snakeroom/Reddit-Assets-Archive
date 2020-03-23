@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.87e209bcf2fc29011cd7.js
-// Retrieved at 3/23/2020, 2:30:43 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ff447621f8d34c5a5e08.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -3742,12 +3742,16 @@
 				o = s.n(n),
 				a = s("./src/lib/classNames/index.ts"),
 				r = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				i = s("./src/reddit/i18n/utils.ts"),
-				d = s("./src/reddit/components/CharacterCountdown/index.m.less"),
-				c = s.n(d);
+				i = s("./src/reddit/components/CharacterCountdown/index.m.less"),
+				d = s.n(i);
+			const {
+				fbt: c
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => o.a.createElement(r.b, {
-				className: Object(a.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
-			}, "".concat(e.maxChars - e.text.length, " ").concat(Object(i.c)("Characters")))
+				className: Object(a.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
+			}, c._("{characters} Characters", [c._param("characters", e.maxChars - e.text.length)], {
+				hk: "1ewWIT"
+			}))
 		},
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, s) {
 			"use strict";
@@ -5284,9 +5288,9 @@
 		},
 		"./src/reddit/components/Comments/UnthreadedCommentMeta/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				a = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				a = s.n(o),
 				r = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				i = s("./src/reddit/layout/row/Inline/index.tsx"),
 				d = s("./src/reddit/components/Comments/UnthreadedCommentMeta/index.m.less"),
@@ -5297,9 +5301,11 @@
 				p = l.a.wrapped(i.a, "SubredditWrapper", c.a),
 				b = l.a.div("TextContainer", c.a),
 				h = l.a.wrapped(r.a, "TopMeta", c.a);
-			t.a = e => o.a.createElement(m, {
+			t.a = e => a.a.createElement(m, {
 				className: e.className
-			}, e.subredditName && o.a.createElement(p, null, e.subredditName && o.a.createElement(b, null, e.subredditName)), o.a.createElement(u, null, o.a.createElement(b, null, "".concat(Object(a.a)(e.language, "comment.commentedBy"))), o.a.createElement(h, {
+			}, e.subredditName && a.a.createElement(p, null, e.subredditName && a.a.createElement(b, null, e.subredditName)), a.a.createElement(u, null, a.a.createElement(b, null, "".concat(n.fbt._("Commented by", null, {
+				hk: "4Dveap"
+			}))), a.a.createElement(h, {
 				collapsedBecauseCrowdControl: e.comment.collapsedBecauseCrowdControl,
 				collapsed: !1,
 				comment: e.comment,
@@ -5329,19 +5335,18 @@
 				a = s("./src/reddit/components/AuthorLink/index.tsx"),
 				r = s("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				i = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				d = s("./src/reddit/i18n/components.tsx"),
-				c = s("./src/reddit/layout/row/Inline/index.tsx"),
-				l = s("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.m.less"),
-				m = s.n(l),
-				u = s("./src/lib/lessComponent.tsx");
-			const p = u.a.wrapped(a.a, "AuthorLink", m.a),
-				b = u.a.wrapped(c.a, "Inline", m.a),
-				h = u.a.wrapped(c.a, "SubredditWrapper", m.a),
-				g = u.a.div("TextContainer", m.a),
-				x = u.a.wrapped(i.b, "SubredditIcon", m.a);
+				d = s("./src/reddit/layout/row/Inline/index.tsx"),
+				c = s("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.m.less"),
+				l = s.n(c),
+				m = s("./src/lib/lessComponent.tsx");
+			const {
+				fbt: u
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), p = m.a.wrapped(a.a, "AuthorLink", l.a), b = m.a.wrapped(d.a, "Inline", l.a), h = m.a.wrapped(d.a, "SubredditWrapper", l.a), g = m.a.div("TextContainer", l.a), x = m.a.wrapped(i.b, "SubredditIcon", l.a);
 			t.a = e => o.a.createElement(b, null, e.subredditOrProfile && o.a.createElement(h, null, e.subredditOrProfile && o.a.createElement(x, {
 				subredditOrProfile: e.subredditOrProfile
-			}), e.subredditOrProfile && o.a.createElement(g, null, e.subredditOrProfile.displayText)), o.a.createElement(d.c, null, "posted by"), e.comment.postAuthor && o.a.createElement(r.b, {
+			}), e.subredditOrProfile && o.a.createElement(g, null, e.subredditOrProfile.displayText)), u._("posted by", null, {
+				hk: "1EuRc2"
+			}), e.comment.postAuthor && o.a.createElement(r.b, {
 				postOrComment: e.comment,
 				author: e.comment.postAuthor
 			}, o.a.createElement(p, {
@@ -27581,4 +27586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.87e209bcf2fc29011cd7.js.map
+//# sourceMappingURL=ModerationPages.ff447621f8d34c5a5e08.js.map

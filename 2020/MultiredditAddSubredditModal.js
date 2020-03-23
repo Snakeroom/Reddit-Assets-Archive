@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.c2f7b34a8a8e9068a7b8.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.241697f3d7b21ca7c4c0.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -23,12 +23,16 @@
 				s = r.n(a),
 				n = r("./src/lib/classNames/index.ts"),
 				i = r("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				o = r("./src/reddit/i18n/utils.ts"),
-				d = r("./src/reddit/components/CharacterCountdown/index.m.less"),
-				c = r.n(d);
+				o = r("./src/reddit/components/CharacterCountdown/index.m.less"),
+				d = r.n(o);
+			const {
+				fbt: c
+			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => s.a.createElement(i.b, {
-				className: Object(n.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
-			}, "".concat(e.maxChars - e.text.length, " ").concat(Object(o.c)("Characters")))
+				className: Object(n.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
+			}, c._("{characters} Characters", [c._param("characters", e.maxChars - e.text.length)], {
+				hk: "1ewWIT"
+			}))
 		},
 		"./src/reddit/components/MultiredditAddSubredditModal/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -80,10 +84,10 @@
 				j = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				k = r("./src/reddit/models/Multireddit/index.ts"),
 				F = r("./src/reddit/models/Subreddit/index.ts"),
-				R = r("./src/reddit/selectors/multireddit.ts"),
-				P = r("./src/reddit/controls/Checkbox/index.tsx"),
-				M = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
-				I = r.n(M),
+				P = r("./src/reddit/selectors/multireddit.ts"),
+				R = r("./src/reddit/controls/Checkbox/index.tsx"),
+				I = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
+				M = r.n(I),
 				T = e => {
 					let {
 						containsSubreddit: t,
@@ -93,23 +97,23 @@
 						recentRef: n
 					} = e;
 					return d.a.createElement("div", {
-						className: I.a.listItem,
+						className: M.a.listItem,
 						onClick: s,
 						ref: n
-					}, d.a.createElement(P.a, {
-						className: I.a.checkbox,
+					}, d.a.createElement(R.a, {
+						className: M.a.checkbox,
 						disabled: t,
 						isCheckboxSelected: r || t,
 						toggleCheckbox: s
 					}), d.a.createElement("img", {
 						src: a.icon,
-						className: I.a.icon
+						className: M.a.icon
 					}), d.a.createElement("div", {
-						className: I.a.label
+						className: M.a.label
 					}, d.a.createElement("div", {
-						className: I.a.name
+						className: M.a.name
 					}, a.displayText), d.a.createElement("div", {
-						className: I.a.details
+						className: M.a.details
 					}, t ? d.a.createElement(N.c, null, "Community already added to this feed") : d.a.createElement(N.c, null, d.a.createElement(N.b, {
 						name: "num-subreddits"
 					}, a.subredditCount), " ", d.a.createElement(N.a, {
@@ -127,9 +131,9 @@
 					createApiFetched: e => e.multireddits.api.create.fetched,
 					createApiPending: e => e.multireddits.api.create.pending,
 					currentSubredditOrProfile: E.o,
-					mineApiFetched: R.h,
-					mineApiPending: R.i,
-					myMultireddits: R.j,
+					mineApiFetched: P.h,
+					mineApiPending: P.i,
+					myMultireddits: P.j,
 					submitApiFetched: e => e.multireddits.api.addSubreddit.fetched,
 					submitApiPending: e => e.multireddits.api.addSubreddit.pending
 				}),
@@ -251,14 +255,14 @@
 					}, d.a.createElement(f.c, null, d.a.createElement(f.g, null, d.a.createElement(j.a, null, d.a.createElement(f.n, null, d.a.createElement(N.c, null, "Add community to Custom Feed")), d.a.createElement("button", {
 						onClick: a
 					}, d.a.createElement(f.b, null)))), d.a.createElement(f.j, {
-						className: I.a.main
+						className: M.a.main
 					}, d.a.createElement("div", {
-						className: I.a.listContainer,
+						className: M.a.listContainer,
 						ref: this.setScrollRef
 					}, t ? d.a.createElement("div", {
-						className: I.a.loadingContainer
+						className: M.a.loadingContainer
 					}, d.a.createElement(v.a, {
-						className: Object(u.a)(I.a.loadingIcon, I.a.forUser),
+						className: Object(u.a)(M.a.loadingIcon, M.a.forUser),
 						sizePx: A
 					})) : r.map(e => d.a.createElement(T, {
 						containsSubreddit: this.containsCurrentSubredditOrProfile(e),
@@ -268,7 +272,7 @@
 						onCheck: this.getOnCheckFn(e.name),
 						recentRef: e.name === l ? this.setRecentRef : s.a
 					}))), d.a.createElement("div", null, c ? d.a.createElement("div", {
-						className: Object(u.a)(I.a.listItem, I.a.inputListItem)
+						className: Object(u.a)(M.a.listItem, M.a.inputListItem)
 					}, d.a.createElement(x.b, {
 						inputRef: this.setInputRef,
 						label: Object(w.c)("new custom feed"),
@@ -278,24 +282,24 @@
 						state: this.getCreateState(),
 						value: i
 					}), h ? d.a.createElement(C.c, {
-						className: I.a.createErrorMsg
+						className: M.a.createErrorMsg
 					}, o === k.a.SameName ? Object(w.c)("A custom feed with that name already exists") : o === k.a.TooShort ? Object(w.c)("Name must contain at least two alphanumeric characters") : Object(w.c)("Something went wrong with this name, maybe try something else?")) : d.a.createElement(b.a, {
 						text: i,
 						maxChars: k.c
 					}), !p && !h && (e ? d.a.createElement(v.a, {
-						className: Object(u.a)(I.a.createSubmitBtn, I.a.loading),
+						className: Object(u.a)(M.a.createSubmitBtn, M.a.loading),
 						sizePx: L
 					}) : d.a.createElement(_.n, {
-						className: I.a.createSubmitBtn,
+						className: M.a.createSubmitBtn,
 						onClick: this.onCreateSubmit
 					}, d.a.createElement(N.c, null, "create")))) : d.a.createElement(_.n, {
-						className: I.a.listItem,
+						className: M.a.listItem,
 						onClick: this.onCreateClick
 					}, d.a.createElement(N.c, null, "+ Create a custom feed")))), d.a.createElement(f.e, null, d.a.createElement(f.o, {
 						disabled: !!n || !m.length || e,
 						onClick: this.onSubmit
 					}, n ? d.a.createElement(v.a, {
-						className: I.a.loadingIcon,
+						className: M.a.loadingIcon,
 						sizePx: L
 					}) : d.a.createElement(N.c, null, "Update")))))
 				}
@@ -678,4 +682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.c2f7b34a8a8e9068a7b8.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.241697f3d7b21ca7c4c0.js.map

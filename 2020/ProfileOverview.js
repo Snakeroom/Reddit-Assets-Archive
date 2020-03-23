@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.12c13a4e5f4f60ce7a89.js
-// Retrieved at 3/23/2020, 2:30:43 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.b0cc0b1c9612226c618a.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1090,7 +1090,7 @@
 				l = s("./src/reddit/controls/Dropdown/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/modTools.ts"),
 				p = s("./src/reddit/selectors/tooltip.ts"),
-				u = s("./src/app/strings/index.ts"),
+				u = s("./node_modules/fbt/lib/FbtPublic.js"),
 				b = s("./src/lib/lessComponent.tsx"),
 				h = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
 				x = s("./src/reddit/icons/svgs/Show/index.tsx"),
@@ -1098,19 +1098,37 @@
 				f = s.n(g);
 			const v = b.a.wrapped(x.a, "Show", f.a);
 			var O = e => o.a.createElement(h.e, null, !e.comment.isApproved && o.a.createElement(h.c, {
-				displayText: e.comment.approvedBy ? Object(u.a)(e.language, "modTools.approved") : Object(u.a)(e.language, "modTools.approve"),
+				displayText: e.comment.approvedBy ? u.fbt._("Approved", null, {
+					hk: "3BGaEK"
+				}) : u.fbt._("Approve", null, {
+					hk: "7CwFx"
+				}),
 				onClick: e.onApproveComment
 			}, o.a.createElement(h.a, null)), !e.comment.bannedBy && o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, {
-				displayText: e.comment.isRemoved ? Object(u.a)(e.language, "modTools.removed") : Object(u.a)(e.language, "modTools.remove"),
+				displayText: e.comment.isRemoved ? u.fbt._("Removed", null, {
+					hk: "17pv2n"
+				}) : u.fbt._("Remove", null, {
+					hk: "VP5J0"
+				}),
 				onClick: e.onRemoveComment
 			}, o.a.createElement(h.g, null)), o.a.createElement(h.c, {
-				displayText: e.comment.isSpam ? Object(u.a)(e.language, "modTools.removedAsSpam") : Object(u.a)(e.language, "modTools.removeAsSpam"),
+				displayText: e.comment.isSpam ? u.fbt._("Removed as spam", null, {
+					hk: "2Kv9DF"
+				}) : u.fbt._("Remove as spam", null, {
+					hk: "OOps6"
+				}),
 				onClick: e.onSpamComment
 			}, o.a.createElement(h.h, null)), o.a.createElement(h.c, {
-				displayText: e.comment.isLocked ? Object(u.a)(e.language, "modTools.unlockComment") : Object(u.a)(e.language, "modTools.lockComment"),
+				displayText: e.comment.isLocked ? u.fbt._("Unlock comment", null, {
+					hk: "1canPl"
+				}) : u.fbt._("Lock comment", null, {
+					hk: "Qp5a0"
+				}),
 				onClick: e.onLockComment
 			}, o.a.createElement(h.f, null))), e.comment.collapsedBecauseCrowdControl && o.a.createElement(h.c, {
-				displayText: Object(u.a)(e.language, "modTools.showComment"),
+				displayText: u.fbt._("Show comment", null, {
+					hk: "9SB86"
+				}),
 				onClick: e.onShowComment
 			}, o.a.createElement(v, null)));
 			const C = b.a.wrapped(l.a, "StyledDropdown", f.a),
@@ -1139,34 +1157,32 @@
 					const {
 						comment: t,
 						isDropdownOpen: s,
-						language: n,
-						onApproveComment: r,
-						onLockComment: a,
-						onRemoveComment: i,
-						onSpamComment: c,
-						onShowComment: d,
-						sendEvent: l,
-						tooltipId: p
+						onApproveComment: n,
+						onLockComment: r,
+						onRemoveComment: a,
+						onSpamComment: i,
+						onShowComment: c,
+						sendEvent: d,
+						tooltipId: l
 					} = e;
 					return o.a.createElement(j, {
 						isOpen: s,
-						tooltipId: p
+						tooltipId: l
 					}, o.a.createElement(O, {
-						language: n,
 						onApproveComment: () => {
-							r(), l(Object(m.c)("approve", t.id))
+							n(), d(Object(m.c)("approve", t.id))
 						},
 						onRemoveComment: () => {
-							i(), l(Object(m.c)("remove", t.id))
+							a(), d(Object(m.c)("remove", t.id))
 						},
 						onSpamComment: () => {
-							c(), l(Object(m.c)("spam", t.id))
+							i(), d(Object(m.c)("spam", t.id))
 						},
 						onLockComment: () => {
-							a(), l(Object(m.c)(t.isLocked ? "unlock" : "lock", t.id))
+							r(), d(Object(m.c)(t.isLocked ? "unlock" : "lock", t.id))
 						},
 						onShowComment: () => {
-							d(), l(Object(m.c)("showComment", t.id))
+							c(), d(Object(m.c)("showComment", t.id))
 						},
 						comment: t
 					}))
@@ -2322,7 +2338,6 @@
 						onClick: this.handleModActionsMenu
 					}, o.a.createElement(re.a, null), o.a.createElement(I.a, {
 						comment: e,
-						language: s,
 						tooltipId: "".concat(e.id, "-profile-mod-actions-menu")
 					}))
 				}
@@ -15299,4 +15314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.12c13a4e5f4f60ce7a89.js.map
+//# sourceMappingURL=ProfileOverview.b0cc0b1c9612226c618a.js.map

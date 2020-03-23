@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.67cfbda7f0041f9ff1f9.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.893fdc5d2af2da36fce3.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
-		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, s) {
+		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
 			e.exports = {
 				requestModal: "_27TCiQwLZWWlFgG7t0oukF",
 				icon: "_3FpdtrZ4Qhlog7NlIb2vAc",
@@ -21,46 +21,46 @@
 				component: "_1o3pDfAXeDo-a8XUIf7xfa"
 			}
 		},
-		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, s) {
+		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, a) {
 			"use strict";
-			s.r(t), s.d(t, "ModalHeader", (function() {
-				return S
-			})), s.d(t, "ModalTitle", (function() {
-				return F
-			})), s.d(t, "CloseIcon", (function() {
+			a.r(t), a.d(t, "ModalHeader", (function() {
 				return k
+			})), a.d(t, "ModalTitle", (function() {
+				return F
+			})), a.d(t, "CloseIcon", (function() {
+				return w
 			}));
-			var a = s("./src/higherOrderComponents/asModal/index.tsx"),
-				r = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				i = s("./node_modules/react-redux/es/index.js"),
-				l = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/reddit/actions/modal.ts"),
-				c = s("./src/reddit/actions/subreddit.ts"),
-				u = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				m = s("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				p = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				b = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = s("./src/reddit/constants/modals.ts"),
-				C = s("./src/reddit/controls/TextButton/index.tsx"),
-				f = s("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
-				h = s("./src/reddit/i18n/utils.ts"),
-				_ = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				v = s("./src/reddit/models/SubredditRestrictions/index.ts"),
-				j = s("./src/reddit/models/Theme/index.ts"),
-				O = s("./src/reddit/selectors/platform.ts"),
-				g = s("./src/reddit/selectors/structuredStyles.ts"),
-				y = s("./src/reddit/selectors/subreddit.ts"),
-				E = s("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				R = s.n(E),
-				q = s("./src/lib/lessComponent.tsx");
-			const I = q.a.wrapped(u.c, "ModalBody", R.a),
-				S = q.a.wrapped(u.g, "ModalHeader", R.a),
-				F = q.a.div("ModalTitle", R.a),
-				w = q.a.div("Title", R.a),
-				M = q.a.div("Description", R.a),
-				k = q.a.wrapped(u.b, "CloseIcon", R.a);
+			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				n = a("./node_modules/react/index.js"),
+				o = a.n(n),
+				i = a("./node_modules/react-redux/es/index.js"),
+				l = a("./node_modules/reselect/es/index.js"),
+				d = a("./src/higherOrderComponents/asModal/index.tsx"),
+				c = a("./src/reddit/actions/modal.ts"),
+				u = a("./src/reddit/actions/subreddit.ts"),
+				m = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				p = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				b = a("./src/reddit/components/SubredditIcon/index.tsx"),
+				f = a("./src/reddit/components/TrackingHelper/index.tsx"),
+				h = a("./src/reddit/constants/modals.ts"),
+				x = a("./src/reddit/controls/TextButton/index.tsx"),
+				_ = a("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
+				C = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
+				y = a("./src/reddit/models/Theme/index.ts"),
+				g = a("./src/reddit/selectors/platform.ts"),
+				E = a("./src/reddit/selectors/structuredStyles.ts"),
+				R = a("./src/reddit/selectors/subreddit.ts"),
+				j = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				q = a.n(j),
+				O = a("./src/lib/lessComponent.tsx");
+			const I = O.a.wrapped(m.c, "ModalBody", q.a),
+				k = O.a.wrapped(m.g, "ModalHeader", q.a),
+				F = O.a.div("ModalTitle", q.a),
+				S = O.a.div("Title", q.a),
+				M = O.a.div("Description", q.a),
+				w = O.a.wrapped(m.b, "CloseIcon", q.a);
 			class N extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
@@ -68,62 +68,78 @@
 							message: e.target.value
 						})
 					}, this.onCancelRequest = () => {
-						this.props.sendEvent(Object(f.b)("cancel")), this.props.toggleContributorRequestModal()
+						this.props.sendEvent(Object(_.b)("cancel")), this.props.toggleContributorRequestModal()
 					}, this.state = {
-						message: Object(h.c)("I would like to become an approved user of this community so I can ".concat(Object(h.b)("restrictions", v.d[this.props.restrictions])))
+						message: s.fbt._("I would like to become an approved user of this community so I can {restrictions}", [s.fbt._param("restrictions", v.d[this.props.restrictions])], {
+							hk: "3tcbxn"
+						})
 					}
 				}
 				render() {
 					if (!this.props.subreddit || !this.props.subredditAboutInfo) return null;
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
-						s = this.props.theme ? Object(j.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
+						a = this.props.theme ? Object(y.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
 					return o.a.createElement(I, {
-						className: R.a.requestModal
-					}, o.a.createElement(S, null, o.a.createElement(_.a, null, o.a.createElement("div", null, o.a.createElement(F, {
+						className: q.a.requestModal
+					}, o.a.createElement(k, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(F, {
 						style: {
-							color: s
+							color: a
 						}
-					}, Object(h.c)("Become an approved user of")), o.a.createElement(w, {
+					}, s.fbt._("Become an approved user of", null, {
+						hk: "u33RG"
+					})), o.a.createElement(S, {
 						style: {
-							color: s
+							color: a
 						}
-					}, o.a.createElement(p.b, {
-						className: R.a.subredditIcon,
+					}, o.a.createElement(b.b, {
+						className: q.a.subredditIcon,
 						iconUrl: this.props.subredditIcon.url,
 						primaryColor: this.props.subredditIcon.color
-					}), o.a.createElement("span", null, e))), o.a.createElement(C.a, {
+					}), o.a.createElement("span", null, e))), o.a.createElement(x.a, {
 						onClick: this.onCancelRequest
-					}, o.a.createElement(k, null)))), o.a.createElement(u.j, null, t ? o.a.createElement(M, null, Object(h.c)("The moderators have disabled requests in this community. Check the community rules for more details.")) : o.a.createElement(o.a.Fragment, null, o.a.createElement(M, null, Object(h.c)("Only approved users can ".concat(Object(h.b)("restrictions", v.d[this.props.restrictions]), " in ").concat(Object(h.b)("displayName", e), ". To become an approved user, send a request to the moderators."))), o.a.createElement(m.c, {
-						className: R.a.textarea,
-						label: Object(h.c)("Request to moderators"),
+					}, o.a.createElement(w, null)))), o.a.createElement(m.j, null, t ? o.a.createElement(M, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
+						hk: "2J5GoK"
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(M, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]), s.fbt._param("displayName", e)], {
+						hk: "1q9PJW"
+					})), o.a.createElement(p.c, {
+						className: q.a.textarea,
+						label: s.fbt._("Request to moderators", null, {
+							hk: "4hiUqP"
+						}),
 						value: this.state.message,
 						onChange: this.onTextAreaChange,
 						state: void 0,
 						required: !0
-					}))), o.a.createElement(u.e, null, t ? o.a.createElement(u.o, {
+					}))), o.a.createElement(m.e, null, t ? o.a.createElement(m.o, {
 						onClick: () => this.props.toggleContributorRequestModal()
-					}, Object(h.c)("ok")) : o.a.createElement(o.a.Fragment, null, o.a.createElement(u.a, {
+					}, s.fbt._("ok", null, {
+						hk: "22zWTN"
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
 						"data-redditstyle": !0,
 						onClick: this.onCancelRequest
-					}, Object(h.c)("Cancel")), o.a.createElement(u.o, {
+					}, s.fbt._("Cancel", null, {
+						hk: "3YzMhr"
+					})), o.a.createElement(m.o, {
 						onClick: () => {
-							this.props.sendEvent(Object(f.b)("request_approval")), this.props.makeContributorRequest(e, this.state.message, this.props.restrictions), this.props.toggleContributorRequestModal()
+							this.props.sendEvent(Object(_.b)("request_approval")), this.props.makeContributorRequest(e, this.state.message, this.props.restrictions), this.props.toggleContributorRequestModal()
 						}
-					}, Object(h.c)("Send Request")))))
+					}, s.fbt._("Send Request", null, {
+						hk: "1UMaEr"
+					})))))
 				}
 			}
-			t.default = q.a.wrapped(Object(r.a)(Object(a.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: y.j,
-				restrictions: y.o,
-				subreddit: O.f,
-				subredditIcon: g.c
+			t.default = O.a.wrapped(Object(r.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
+				subredditAboutInfo: R.j,
+				restrictions: R.o,
+				subreddit: g.f,
+				subredditIcon: E.c
 			}), e => ({
-				makeContributorRequest: (t, s, a) => e(Object(c.n)(t, s, a)),
-				toggleContributorRequestModal: () => e(Object(d.i)(x.a.CONTRIBUTOR_REQUEST))
-			}))(Object(b.c)(N)))), "Component", R.a)
+				makeContributorRequest: (t, a, s) => e(Object(u.n)(t, a, s)),
+				toggleContributorRequestModal: () => e(Object(c.i)(h.a.CONTRIBUTOR_REQUEST))
+			}))(Object(f.c)(N)))), "Component", q.a)
 		},
-		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, s) {
+		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, a) {
 			e.exports = {
 				input: "_21N5nyVpBzbYCGTZ5WIri4",
 				field: "_3K-rjepIoTAwKn_2B6UjSe",
@@ -142,63 +158,63 @@
 				invalid: "_1G5fQQh3gLl4hc3DIMA5j3"
 			}
 		},
-		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, t, s) {
+		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, t, a) {
 			"use strict";
-			s.d(t, "d", (function() {
+			a.d(t, "d", (function() {
+				return h
+			})), a.d(t, "a", (function() {
+				return x
+			})), a.d(t, "b", (function() {
 				return C
-			})), s.d(t, "a", (function() {
-				return f
-			})), s.d(t, "b", (function() {
-				return _
-			})), s.d(t, "c", (function() {
+			})), a.d(t, "c", (function() {
 				return v
 			}));
-			s("./node_modules/core-js/modules/es6.symbol.js");
-			var a = s("./node_modules/react/index.js"),
-				r = s.n(a),
-				n = s("./src/lib/classNames/index.ts"),
-				o = s("./src/lib/lessComponent.tsx"),
-				i = s("./src/reddit/controls/Input/index.tsx"),
-				l = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				d = s("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				c = s.n(d);
+			a("./node_modules/core-js/modules/es6.symbol.js");
+			var s = a("./node_modules/react/index.js"),
+				r = a.n(s),
+				n = a("./src/lib/classNames/index.ts"),
+				o = a("./src/lib/lessComponent.tsx"),
+				i = a("./src/reddit/controls/Input/index.tsx"),
+				l = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				d = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
+				c = a.n(d);
 
 			function u() {
 				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
+						var a = arguments[t];
+						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			var m = function(e, t) {
-				var s = {};
-				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (s[a] = e[a]);
+				var a = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (a[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
 					var r = 0;
-					for (a = Object.getOwnPropertySymbols(e); r < a.length; r++) t.indexOf(a[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[r]) && (s[a[r]] = e[a[r]])
+					for (s = Object.getOwnPropertySymbols(e); r < s.length; r++) t.indexOf(s[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[r]) && (a[s[r]] = e[s[r]])
 				}
-				return s
+				return a
 			};
 			const p = o.a.div("icon", c.a),
 				b = o.a.textarea("textarea", c.a),
-				x = o.a.span("Invalid", c.a);
-			var C, f;
+				f = o.a.span("Invalid", c.a);
+			var h, x;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
-			}(C || (C = {})),
+			}(h || (h = {})),
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
-			}(f || (f = {}));
-			const h = e => r.a.createElement("div", {
+			}(x || (x = {}));
+			const _ = e => r.a.createElement("div", {
 					className: Object(n.a)(e.isRequired && c.a.required, e.className, Object.assign({
 						[c.a.container]: !e.isTextarea,
 						[c.a.textareaContainer]: !!e.isTextarea
 					}, !!e.isTextarea && {
-						[c.a.mValid]: e.state === C.Valid,
-						[c.a.mInvalid]: e.state === C.Invalid,
-						[c.a.mWhiteField]: e.backgroundColorState === f.WhiteFields
+						[c.a.mValid]: e.state === h.Valid,
+						[c.a.mInvalid]: e.state === h.Invalid,
+						[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 					}))
 				}, r.a.createElement("label", {
 					className: Object(n.a)({
@@ -209,23 +225,23 @@
 					className: c.a.label
 				}, e.label), !!e.state && r.a.createElement(p, {
 					className: Object(n.a)({
-						[c.a.mValid]: e.state === C.Valid,
-						[c.a.mInvalid]: e.state === C.Invalid
+						[c.a.mValid]: e.state === h.Valid,
+						[c.a.mInvalid]: e.state === h.Invalid
 					})
-				}, e.state === C.Valid && r.a.createElement(l.a, null), e.state === C.Invalid && r.a.createElement(x, null, "!")))),
-				_ = e => {
+				}, e.state === h.Valid && r.a.createElement(l.a, null), e.state === h.Invalid && r.a.createElement(f, null, "!")))),
+				C = e => {
 					const {
 						backgroundColorState: t,
-						className: s,
-						inputRef: a,
+						className: a,
+						inputRef: s,
 						isRequired: o,
 						label: l,
 						onKeyDown: d,
 						state: p
 					} = e, b = m(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return r.a.createElement(h, {
+					return r.a.createElement(_, {
 						backgroundColorState: t,
-						className: s,
+						className: a,
 						isRequired: o,
 						label: l,
 						state: p
@@ -234,69 +250,69 @@
 							[c.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
-						innerRef: a,
+						innerRef: s,
 						onKeyDown: d
 					})))
 				},
 				v = e => {
 					const {
 						backgroundColorState: t,
-						className: s,
-						inputRef: a,
+						className: a,
+						inputRef: s,
 						isRequired: o,
 						label: i,
 						onKeyDown: l,
 						state: d
 					} = e, p = m(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return r.a.createElement(h, {
+					return r.a.createElement(_, {
 						backgroundColorState: t,
-						className: s,
+						className: a,
 						isRequired: o,
 						label: i,
 						state: d,
 						isTextarea: !0
 					}, r.a.createElement(b, u({}, p, {
 						className: Object(n.a)({
-							[c.a.mWhiteField]: e.backgroundColorState === f.WhiteFields
+							[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 						}),
 						"data-empty": !e.value,
-						innerRef: a,
+						innerRef: s,
 						onKeyDown: l
 					})))
 				}
 		},
-		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
+		"./src/reddit/controls/Input/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = s("./src/lib/lessComponent.tsx"),
-				r = s("./src/reddit/controls/Input/index.m.less"),
-				n = s.n(r);
-			t.a = a.a.input("input", n.a)
+			var s = a("./src/lib/lessComponent.tsx"),
+				r = a("./src/reddit/controls/Input/index.m.less"),
+				n = a.n(r);
+			t.a = s.a.input("input", n.a)
 		},
-		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, s) {
+		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, a) {
 			"use strict";
-			s.d(t, "a", (function() {
+			a.d(t, "a", (function() {
 				return r
-			})), s.d(t, "b", (function() {
+			})), a.d(t, "b", (function() {
 				return n
 			}));
-			var a = s("./src/reddit/selectors/telemetry.ts");
-			const r = e => t => Object.assign({}, a.defaults(t), {
+			var s = a("./src/reddit/selectors/telemetry.ts");
+			const r = e => t => Object.assign({}, s.defaults(t), {
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: a.subreddit(t)
+					subreddit: s.subreddit(t)
 				}),
-				n = e => t => Object.assign({}, a.defaults(t), {
+				n = e => t => Object.assign({}, s.defaults(t), {
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: a.subreddit(t)
+					subreddit: s.subreddit(t)
 				})
 		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, s) {
+		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				r = s.n(a);
+			var s = a("./node_modules/react/index.js"),
+				r = a.n(s);
 			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 22",
@@ -308,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ContributorRequestRequestModal.67cfbda7f0041f9ff1f9.js.map
+//# sourceMappingURL=ContributorRequestRequestModal.893fdc5d2af2da36fce3.js.map

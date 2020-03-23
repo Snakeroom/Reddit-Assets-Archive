@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.cfad985c8eee3c53fe63.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.82d632e3ca42714c24e9.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -14,12 +14,16 @@
 				n = r.n(a),
 				i = r("./src/lib/classNames/index.ts"),
 				s = r("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				o = r("./src/reddit/i18n/utils.ts"),
-				d = r("./src/reddit/components/CharacterCountdown/index.m.less"),
-				l = r.n(d);
+				o = r("./src/reddit/components/CharacterCountdown/index.m.less"),
+				d = r.n(o);
+			const {
+				fbt: l
+			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => n.a.createElement(s.b, {
-				className: Object(i.a)(e.className, l.a.container, e.text.length > e.maxChars ? l.a.mOverflow : null)
-			}, "".concat(e.maxChars - e.text.length, " ").concat(Object(o.c)("Characters")))
+				className: Object(i.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
+			}, l._("{characters} Characters", [l._param("characters", e.maxChars - e.text.length)], {
+				hk: "1ewWIT"
+			}))
 		},
 		"./src/reddit/components/MultiredditCreateModal/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -54,10 +58,10 @@
 				y = r("./src/reddit/components/MultiredditCreateModal/index.m.less"),
 				F = r.n(y);
 			const S = 12,
-				O = Object(x.t)({
+				j = Object(x.t)({
 					multiredditParams: x.c
 				}),
-				j = Object(s.c)({
+				O = Object(s.c)({
 					createError: e => e.multireddits.api.create.error,
 					createFetched: e => e.multireddits.api.create.fetched,
 					createPending: e => e.multireddits.api.create.pending,
@@ -66,7 +70,7 @@
 					duplicatePending: e => e.multireddits.api.duplicate.pending,
 					myMultireddits: v.j
 				}),
-				N = Object(i.b)(j, (e, t) => {
+				N = Object(i.b)(O, (e, t) => {
 					let {
 						multiredditParams: r
 					} = t;
@@ -165,7 +169,7 @@
 					}) : i ? Object(g.c)("Duplicate Custom Feed") : Object(g.c)("Create Custom Feed")))))
 				}
 			}
-			t.default = Object(o.a)(O(N(Object(h.c)(T))))
+			t.default = Object(o.a)(j(N(Object(h.c)(T))))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -448,4 +452,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditCreateModal.cfad985c8eee3c53fe63.js.map
+//# sourceMappingURL=MultiredditCreateModal.82d632e3ca42714c24e9.js.map

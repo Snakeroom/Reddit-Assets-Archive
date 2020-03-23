@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.b992a0b464a182e10ce7.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.acf48db2f84e15bf70e8.js
+// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -204,12 +204,16 @@
 				r = n.n(a),
 				s = n("./src/lib/classNames/index.ts"),
 				l = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				i = n("./src/reddit/i18n/utils.ts"),
-				o = n("./src/reddit/components/CharacterCountdown/index.m.less"),
-				d = n.n(o);
+				i = n("./src/reddit/components/CharacterCountdown/index.m.less"),
+				o = n.n(i);
+			const {
+				fbt: d
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(l.b, {
-				className: Object(s.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
-			}, "".concat(e.maxChars - e.text.length, " ").concat(Object(i.c)("Characters")))
+				className: Object(s.a)(e.className, o.a.container, e.text.length > e.maxChars ? o.a.mOverflow : null)
+			}, d._("{characters} Characters", [d._param("characters", e.maxChars - e.text.length)], {
+				hk: "1ewWIT"
+			}))
 		},
 		"./src/reddit/components/IdCard/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7798,4 +7802,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.b992a0b464a182e10ce7.js.map
+//# sourceMappingURL=StructuredStyles.acf48db2f84e15bf70e8.js.map
