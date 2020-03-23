@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.aabb97c48b456ba5472f.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.19e9d04060daa7f2ddc6.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -53,8 +53,8 @@
 				u = r("./src/lib/timeUntil/index.ts"),
 				m = r("./src/reddit/actions/badge.ts"),
 				b = r("./src/reddit/actions/modal.ts"),
-				g = r("./src/reddit/components/Governance/Token/index.tsx"),
-				p = r("./src/reddit/controls/Button/index.tsx"),
+				p = r("./src/reddit/components/Governance/Token/index.tsx"),
+				g = r("./src/reddit/controls/Button/index.tsx"),
 				f = r("./src/reddit/i18n/components.tsx"),
 				x = r("./src/reddit/i18n/utils.ts"),
 				v = r("./src/reddit/icons/svgs/Clock/index.tsx");
@@ -156,15 +156,15 @@
 						className: _.a.footer
 					}, (c = e.wallet, d = e.product.subredditId, s.a.createElement("div", {
 						className: _.a.wallet
-					}, s.a.createElement(f.c, null, "You have"), s.a.createElement(g.a, {
+					}, s.a.createElement(f.c, null, "You have"), s.a.createElement(p.a, {
 						grey: !0,
 						className: _.a.tokenSymbol,
 						subredditId: d
 					}), Object(l.a)(c.amount))), (t = e.badge, r = e.onApplyBadge, a = e.onClose, s.a.createElement("div", {
 						className: _.a.controls
-					}, s.a.createElement(p.n, {
+					}, s.a.createElement(g.n, {
 						onClick: a
-					}, s.a.createElement(f.c, null, "done")), s.a.createElement(p.f, {
+					}, s.a.createElement(f.c, null, "done")), s.a.createElement(g.f, {
 						onClick: () => r(t.subredditId, t.id)
 					}, s.a.createElement(f.c, null, "apply badge")))))) : null;
 					var t, r, a, c, d, o, i
@@ -238,11 +238,11 @@
 						if (!e.price) return null;
 						return s.a.createElement("div", {
 							className: S.a.badgePrice
-						}, s.a.createElement(g.a, {
+						}, s.a.createElement(p.a, {
 							className: S.a.tokenSymbol,
 							subredditId: e.subredditId
 						}), Object(l.a)(e.price))
-					}(e.product), (t = e.purchaseInProgress, r = e.language, n = e.tokenName, a = e.onPurchase, s.a.createElement(p.f, {
+					}(e.product), (t = e.purchaseInProgress, r = e.language, n = e.tokenName, a = e.onPurchase, s.a.createElement(g.f, {
 						onClick: a
 					}, t ? s.a.createElement(B.a, {
 						className: S.a.loadingIcon,
@@ -401,8 +401,8 @@
 				o = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				i = e => d.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.jb
-				}) === n.qb.Enabled
+					experimentName: n.ib
+				}) === n.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -413,9 +413,9 @@
 			})), r.d(t, "d", (function() {
 				return b
 			})), r.d(t, "e", (function() {
-				return g
-			})), r.d(t, "g", (function() {
 				return p
+			})), r.d(t, "g", (function() {
+				return g
 			})), r.d(t, "h", (function() {
 				return f
 			})), r.d(t, "i", (function() {
@@ -479,14 +479,14 @@
 					const r = y(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
-				g = (e, t) => {
+				p = (e, t) => {
 					const r = y(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
 					} : i
 				},
-				p = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				f = (e, t) => {
 					if (Object(c.a)(e)) {
 						const t = Object(d.g)(e);
@@ -563,4 +563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.aabb97c48b456ba5472f.js.map
+//# sourceMappingURL=BadgePurchaseModal.19e9d04060daa7f2ddc6.js.map

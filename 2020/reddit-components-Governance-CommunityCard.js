@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3e681a6ebb7ffe4eefa6.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.633d6ac55bd6825737b0.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -473,7 +473,7 @@
 						wallet: h
 					} = this.props, w = h && h.inactive && function(e, t, n) {
 						const r = e.actionScheduledAt - Date.now(),
-							o = Math.max(1, Math.floor(r / m.y)),
+							o = Math.max(1, Math.floor(r / m.x)),
 							a = 1 !== o ? "gov.pointsDecay.inactive.time.plural" : "gov.pointsDecay.inactive.time.singular",
 							i = Object(u.a)(t, a, {
 								numDays: o
@@ -820,7 +820,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: r.db.GET
+					method: r.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -841,7 +841,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: r.db.POST,
+					method: r.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1067,8 +1067,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.jb
-				}) === s.qb.Enabled
+					experimentName: s.ib
+				}) === s.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1229,4 +1229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.3e681a6ebb7ffe4eefa6.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.633d6ac55bd6825737b0.js.map

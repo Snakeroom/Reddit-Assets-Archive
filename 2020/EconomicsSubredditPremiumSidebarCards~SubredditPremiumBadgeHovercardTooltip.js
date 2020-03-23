@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.050b51f7e0ea4e77094f.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.2321405d877bcbaeefd2.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Badges/index.m.less": function(e, t, i) {
@@ -320,8 +320,8 @@
 				username: e => "u/".concat(e.user.account && e.user.account.displayText || "username")
 			});
 			var P = Object(d.b)(S)(N),
-				j = i("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Emojis/index.m.less"),
-				C = i.n(j);
+				C = i("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Emojis/index.m.less"),
+				j = i.n(C);
 			const I = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => "https://meta.redditmedia.com/img/fortnitebr/emotes/".concat(e, "-2x.gif")).concat("https://reddit-meta-production.s3.amazonaws.com/public/fortnitebr/emotes/premium_emotes/emo_pack_1/mech_destroy.gif");
 			const k = Object(c.c)({
 				subreddit: (e, t) => {
@@ -337,32 +337,32 @@
 						subreddit: i
 					} = e;
 					return i ? r.a.createElement("article", {
-						className: Object(n.a)(C.a.container, t)
+						className: Object(n.a)(j.a.container, t)
 					}, r.a.createElement("div", {
-						className: C.a.background
+						className: j.a.background
 					}), r.a.createElement("div", {
-						className: C.a.content
+						className: j.a.content
 					}, r.a.createElement("header", {
-						className: C.a.title
+						className: j.a.title
 					}, Object(u.c)("emotes")), r.a.createElement("div", {
-						className: C.a.example
+						className: j.a.example
 					}, r.a.createElement("img", {
-						className: C.a.drawer,
+						className: j.a.drawer,
 						src: "".concat(m.a.assetPath, "/img/memberships/emoji-drawer.png")
 					}), r.a.createElement("div", {
-						className: C.a.emojisTitle
+						className: j.a.emojisTitle
 					}, Object(u.c)("Add r/".concat(Object(u.b)("communityName", i.name), " emote"))), r.a.createElement("div", {
-						className: C.a.emojisContainer
+						className: j.a.emojisContainer
 					}, r.a.createElement("div", {
-						className: C.a.emojis
+						className: j.a.emojis
 					}, I.map(e => r.a.createElement("img", {
-						className: C.a.emoji,
+						className: j.a.emoji,
 						key: e,
 						src: e
 					}))), r.a.createElement("div", {
-						className: C.a.overflow
+						className: j.a.overflow
 					}))), r.a.createElement("footer", {
-						className: C.a.explanation
+						className: j.a.explanation
 					}, Object(u.c)("Get access to premium animated emotes")))) : null
 				})),
 				B = i("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Gifs/index.m.less"),
@@ -833,8 +833,8 @@
 				n = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				o = e => c.has((Object(s.e)(e) || "").toLowerCase()) || n.has((Object(s.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: d.G,
-					experimentName: a.jb
-				}) === a.qb.Enabled
+					experimentName: a.ib
+				}) === a.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, i) {
 			"use strict";
@@ -871,9 +871,9 @@
 			})), i.d(t, "f", (function() {
 				return P
 			})), i.d(t, "r", (function() {
-				return j
-			})), i.d(t, "n", (function() {
 				return C
+			})), i.d(t, "n", (function() {
+				return j
 			})), i.d(t, "k", (function() {
 				return I
 			}));
@@ -942,7 +942,7 @@
 				_ = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				x = (e, t) => {
-					const i = j(e, t);
+					const i = C(e, t);
 					return i && i.decimals ? "1" + "0".repeat(i.decimals) : "1"
 				},
 				v = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -960,7 +960,7 @@
 					const i = S(e, t);
 					return i === r.a.Ethereum || i === r.a.Rinkeby
 				},
-				j = (e, t) => {
+				C = (e, t) => {
 					const i = N(e, t),
 						a = S(e, t);
 					if (i && !i.inTransition && a === r.a.Stellar) return {
@@ -977,7 +977,7 @@
 						image: d.image
 					}
 				},
-				C = (e, t) => {
+				j = (e, t) => {
 					let {
 						subredditId: i
 					} = t;
@@ -995,4 +995,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.050b51f7e0ea4e77094f.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.2321405d877bcbaeefd2.js.map

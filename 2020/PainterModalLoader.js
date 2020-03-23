@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.1f0c31dba75acea71b8e.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.8aa2401aeb636614e21f.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -736,7 +736,7 @@
 						};
 						if (!c || !Object(b.i)(c)) return {
 							error: {
-								type: i.N
+								type: i.M
 							}
 						};
 						if (c.startsWith("image/")) {
@@ -744,44 +744,44 @@
 								const e = a.fbt._("Images are not allowed in r/{subredditName}", [a.fbt._param("subredditName", o)], {
 									hk: "3C2E7Q"
 								});
-								return L(i.N, e)
+								return L(i.M, e)
 							}
 							if ("image/gif" === c) {
-								if (t.size > i.S) return L(i.I)
-							} else if (t.size > i.U) return L(i.L);
+								if (t.size > i.R) return L(i.H)
+							} else if (t.size > i.T) return L(i.K);
 							const e = await Object(g.a)(d);
 							l.width = e.width, l.height = e.height
 						} else if (c.startsWith("video/")) {
-							if (t.size > i.Z) return L(i.Yb);
+							if (t.size > i.Y) return L(i.Xb);
 							let e;
 							try {
 								e = await Object(b.h)(d, !0)
 							} catch (u) {
-								return L(i.N)
+								return L(i.M)
 							}
 							if (r) {
 								const {
 									videos: t,
 									images: s
 								} = r;
-								if (s && !t && e.duration > i.ab) {
+								if (s && !t && e.duration > i.Z) {
 									const e = a.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [a.fbt._param("subredditName", o)], {
 										hk: "46ULiz"
 									});
-									return L(i.N, e)
+									return L(i.M, e)
 								}
 								if (!s && !t) {
 									const e = a.fbt._("Videos are not allowed in r/{subredditName}", [a.fbt._param("subredditName", o)], {
 										hk: "4uTUZb"
 									});
-									return L(i.N, e)
+									return L(i.M, e)
 								}
 							}
-							if (e.duration > i.Y) {
+							if (e.duration > i.X) {
 								const e = a.fbt._("Video is too long. Maximum video length is 15 minutes.", null, {
 									hk: "26m2mj"
 								});
-								return L(i.N, e)
+								return L(i.M, e)
 							}
 							l.height = e.height, l.width = e.width, l.videoDuration = e.duration, l.videoFirstFrameUrl = e.firstFrame.dataUrl
 						}
@@ -801,7 +801,7 @@
 					const v = e.name,
 						O = await (async (e, t, s) => Object(u.b)(Object(h.a)(e, [p.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/media/asset.json"),
-							method: i.db.POST,
+							method: i.cb.POST,
 							data: {
 								filepath: t,
 								mimetype: s
@@ -932,8 +932,8 @@
 						s = Object(T.K)(e),
 						a = Object(T.a)(e),
 						r = Object(T.V)(e);
-					if (a === n.Jb.POST) return m.a.getPendingThumbnailUploads(r, t);
-					if (a === n.Jb.MEDIA && s) {
+					if (a === n.Ib.POST) return m.a.getPendingThumbnailUploads(r, t);
+					if (a === n.Ib.MEDIA && s) {
 						const {
 							video: e
 						} = s;
@@ -954,7 +954,7 @@
 					const l = Object(T.a)(o),
 						h = x.d.rteVideoPoster(o),
 						p = J(o),
-						m = l === n.Jb.MEDIA;
+						m = l === n.Ib.MEDIA;
 					p && (h || m) && (await s(U.d(p)), J(a())) || (e === E.r.Draft ? await s(Object(u.r)(t.draftId)) : e === E.r.ScheduledPost && Object(N.q)(o) ? await s($(t)) : e === E.r.ScheduledPost ? await s(ee(t)) : await s(te(t)))
 				}, $ = e => async (t, s, a) => {
 					let {
@@ -1013,7 +1013,7 @@
 						m = !!Object(P.a)(u),
 						v = u.creations.formData.isPoll,
 						O = u.creations.formData.polls ? K(u.creations.formData.polls, u) : K({
-							duration: n.y,
+							duration: n.x,
 							options: []
 						}, u);
 					if (!h) return;
@@ -1026,7 +1026,7 @@
 							function(e, t, s) {
 								const a = t.destSubreddit.id;
 								return Object(y.b)(e, {
-									method: n.db.POST,
+									method: n.cb.POST,
 									endpoint: "".concat(g.a.metaUrl, "/polls/").concat(a),
 									type: "json",
 									data: Object.assign({
@@ -1076,10 +1076,10 @@
 							t(q(e))
 						}
 						const e = x.error;
-						if (e.type === n.F.BAD_CAPTCHA_ERROR) t(X());
-						else if (e.type === n.F.VALIDATION_ERROR) t(W(e));
-						else if (e.type === n.F.SUBMIT_VALIDATION_ERROR) t(V(e));
-						else if (e.type === n.F.RATELIMIT && m) {
+						if (e.type === n.E.BAD_CAPTCHA_ERROR) t(X());
+						else if (e.type === n.E.VALIDATION_ERROR) t(W(e));
+						else if (e.type === n.E.SUBMIT_VALIDATION_ERROR) t(V(e));
+						else if (e.type === n.E.RATELIMIT && m) {
 							t(Object(c.i)());
 							const s = e.fields && e.fields[0] && e.fields[0].msg || a.fbt._("Layer creation has failed. You can create one layer per 60 minutes", null, {
 									hk: "3pTxXC"
@@ -4067,7 +4067,7 @@
 			function i(e, t) {
 				return Object(r.a)(e, {
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: n.db.GET
+					method: n.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const s = e.body,
@@ -4088,7 +4088,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: n.db.POST,
+					method: n.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -4716,8 +4716,8 @@
 				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: i.G,
-					experimentName: a.jb
-				}) === a.qb.Enabled
+					experimentName: a.ib
+				}) === a.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -4878,4 +4878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.1f0c31dba75acea71b8e.js.map
+//# sourceMappingURL=PainterModalLoader.8aa2401aeb636614e21f.js.map

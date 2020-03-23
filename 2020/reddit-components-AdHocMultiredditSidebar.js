@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.7ee1c68f5fcfa5722611.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.85dc96ee50f3c53fda1a.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -313,8 +313,8 @@
 				L = s("./src/reddit/components/Flair/index.tsx"),
 				R = s("./src/reddit/components/RawHTMLDisplay/Listing.tsx"),
 				F = s("./src/reddit/constants/posts.ts"),
-				U = s("./src/reddit/controls/Button/index.tsx"),
-				B = s("./src/reddit/models/Multireddit/index.ts"),
+				B = s("./src/reddit/controls/Button/index.tsx"),
+				U = s("./src/reddit/models/Multireddit/index.ts"),
 				A = s("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.tsx"),
 				W = s("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/index.m.less"),
 				H = s.n(W),
@@ -346,7 +346,7 @@
 						className: Object(u.a)(H.a.FadingDescription, {
 							[H.a.shouldFade]: i
 						})
-					}, t), i && o.a.createElement(U.n, {
+					}, t), i && o.a.createElement(B.n, {
 						onClick: s
 					}, k.fbt._("Read more", null, {
 						hk: "i0AXN"
@@ -362,17 +362,17 @@
 						multireddit: s,
 						onSeeMoreDetails: n,
 						subredditCategory: i
-					} = e, r = t === J.Sidebar, [d, a] = r ? [z, Z] : [G, Z], c = Object(B.f)(s) ? () => o.a.createElement(d, null, r && o.a.createElement(V, null, o.a.createElement(K, null, s.displayText), s.visibility === B.e.Private && o.a.createElement(Q, {
+					} = e, r = t === J.Sidebar, [d, a] = r ? [z, Z] : [G, Z], c = Object(U.f)(s) ? () => o.a.createElement(d, null, r && o.a.createElement(V, null, o.a.createElement(K, null, s.displayText), s.visibility === U.e.Private && o.a.createElement(Q, {
 						text: k.fbt._("Private", null, {
 							hk: "4Av1zq"
 						})
-					}), s.visibility === B.e.Hidden && o.a.createElement(Q, {
+					}), s.visibility === U.e.Hidden && o.a.createElement(Q, {
 						text: k.fbt._("Hidden", null, {
 							hk: "4tUfi0"
 						})
-					})), o.a.createElement(a, null, k.fbt._("Curated by u/ {username}", [k.fbt._param("username", Object(B.i)(s.url))], {
+					})), o.a.createElement(a, null, k.fbt._("Curated by u/ {username}", [k.fbt._param("username", Object(U.i)(s.url))], {
 						hk: "1AxWQt"
-					}), "· ", Object(T.f)(s.created))) : () => null, l = Object(B.f)(s) && s.description ? () => o.a.createElement(d, null, r ? o.a.createElement(X, {
+					}), "· ", Object(T.f)(s.created))) : () => null, l = Object(U.f)(s) && s.description ? () => o.a.createElement(d, null, r ? o.a.createElement(X, {
 						onSeeMoreDetails: n
 					}, s.description) : o.a.createElement(R.a, {
 						html: s.description
@@ -577,7 +577,7 @@
 								} = this.state;
 								if (e.length) {
 									const t = Object(le.g)(e),
-										s = t.startsWith(ie.Ub) ? "profile" : "subreddit",
+										s = t.startsWith(ie.Tb) ? "profile" : "subreddit",
 										n = "profile" === s ? t.substring(2) : t;
 									this.props.addSubredditRequested({
 										name: n,
@@ -659,7 +659,7 @@
 						value: p
 					}), !d && (i || p.length > 0) && (e ? o.a.createElement(ce.a, {
 						sizePx: we
-					}) : o.a.createElement(U.n, {
+					}) : o.a.createElement(B.n, {
 						className: Oe.a.addButton,
 						onClick: this.onSubmit
 					}, Object(x.c)("Add"))), c && o.a.createElement(Se, {
@@ -682,7 +682,7 @@
 						useTertiaryButton: !0
 					}))), t.length > ve && o.a.createElement("div", {
 						className: Oe.a.expandButtonContainer
-					}, o.a.createElement(U.n, {
+					}, o.a.createElement(B.n, {
 						className: Oe.a.expandButton,
 						onClick: this.onToggleExpand
 					}, l ? Object(x.c)("show less") : Object(x.c)("show more"))))
@@ -755,7 +755,7 @@
 			}
 			var Fe = Object(d.b)(Le, (e, t) => ({
 					addSubredditRequested: s => {
-						Object(B.f)(t.multireddit) && e(Object(re.a)({
+						Object(U.f)(t.multireddit) && e(Object(re.a)({
 							identifier: {
 								name: s.name,
 								type: s.type
@@ -765,16 +765,16 @@
 						}))
 					},
 					recommendationsRefreshed: s => {
-						Object(B.f)(t.multireddit) && e(Object(re.h)({
+						Object(U.f)(t.multireddit) && e(Object(re.h)({
 							multiredditName: t.multireddit.name,
 							username: t.multiUsername,
 							toExcludeNames: s
 						}))
 					}
 				}))(Re),
-				Ue = s("./src/reddit/components/SidebarContainer/index.tsx"),
-				Be = s("./src/reddit/components/SidebarSectionHeader/index.m.less"),
-				Ae = s.n(Be),
+				Be = s("./src/reddit/components/SidebarContainer/index.tsx"),
+				Ue = s("./src/reddit/components/SidebarSectionHeader/index.m.less"),
+				Ae = s.n(Ue),
 				We = q.a.div("Component", Ae.a),
 				He = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				qe = s("./src/reddit/constants/zIndex.ts"),
@@ -818,7 +818,7 @@
 					})),
 					key: e
 				}))),
-				et = e => Object(B.f)(e.multireddit) ? Object(B.g)(e.multireddit) ? e.isCurrentUserMultiredditOwner ? o.a.createElement(Pe, {
+				et = e => Object(U.f)(e.multireddit) ? Object(U.g)(e.multireddit) ? e.isCurrentUserMultiredditOwner ? o.a.createElement(Pe, {
 					multireddit: e.multireddit
 				}) : o.a.createElement(P, {
 					multireddit: e.multireddit,
@@ -837,7 +837,7 @@
 						let {
 							multireddit: s
 						} = t;
-						return Object(B.f)(s) && Object(v.c)(e, s.url)
+						return Object(U.f)(s) && Object(v.c)(e, s.url)
 					},
 					language: (e, t) => {
 						let {
@@ -878,7 +878,7 @@
 						multiUsername: i,
 						subredditCategory: r
 					} = this.props, d = t && n.subredditIds && n.subredditIds.length > 0;
-					return o.a.createElement(Ue.a, {
+					return o.a.createElement(Be.a, {
 						className: e
 					}, o.a.createElement(et, {
 						isCurrentUserMultiredditOwner: t,
@@ -1089,7 +1089,7 @@
 				}
 			}
 			O.defaultProps = {
-				minimizedLength: l.Gb
+				minimizedLength: l.Fb
 			};
 			const C = Object(a.c)({
 				language: x.O
@@ -1298,10 +1298,10 @@
 					}))
 				},
 				F = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
-				U = s.n(F);
+				B = s.n(F);
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1319,10 +1319,10 @@
 						subscribers: i
 					}
 				} = e, r = Object(y.c)(s), d = void 0 !== i ? A(t, i) : void 0, a = o.a.createElement(L, {
-					className: U.a.profileIcon,
+					className: B.a.profileIcon,
 					iconUrl: n
 				});
-				return o.a.createElement(R, B({
+				return o.a.createElement(R, U({
 					icon: a,
 					title: r,
 					secondaryText: d
@@ -1567,4 +1567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-AdHocMultiredditSidebar.7ee1c68f5fcfa5722611.js.map
+//# sourceMappingURL=reddit-components-AdHocMultiredditSidebar.85dc96ee50f3c53fda1a.js.map

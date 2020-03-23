@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.103188309387853f9337.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.1bf108b7236304459bfe.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -377,9 +377,9 @@
 				}))(V),
 				z = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
 				U = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				W = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				Y = s.n(W),
-				G = function(e, t) {
+				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				W = s.n(G),
+				Y = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -396,32 +396,32 @@
 					var {
 						className: t,
 						showSubreddit: s
-					} = e, n = G(e, ["className", "showSubreddit"]);
+					} = e, n = Y(e, ["className", "showSubreddit"]);
 					const i = Object(U.a)(n);
 					return o.a.createElement("div", {
 						className: Object(I.a)(R.a.container, t)
 					}, o.a.createElement("div", {
-						className: Y.a.mainBody
+						className: W.a.mainBody
 					}, o.a.createElement("div", {
-						className: Y.a.content
+						className: W.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(I.a)(Y.a.title, i)
+						className: Object(I.a)(W.a.title, i)
 					}), s && o.a.createElement("div", {
-						className: Object(I.a)(Y.a.meta, i)
+						className: Object(I.a)(W.a.meta, i)
 					})), o.a.createElement("div", {
-						className: Y.a.flatlist
+						className: W.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(I.a)(Y.a.flatlistExpando, i)
+						className: Object(I.a)(W.a.flatlistExpando, i)
 					}), o.a.createElement("div", {
-						className: Y.a.flatlistSeparator
+						className: W.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(I.a)(Y.a.flatlistItemOne, i)
+						className: Object(I.a)(W.a.flatlistItemOne, i)
 					}), o.a.createElement("div", {
-						className: Object(I.a)(Y.a.flatlistItemTwo, i)
+						className: Object(I.a)(W.a.flatlistItemTwo, i)
 					}))), o.a.createElement("div", {
-						className: Y.a.thumbnailContainer
+						className: W.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(I.a)(Y.a.thumbnail, i)
+						className: Object(I.a)(W.a.thumbnail, i)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -541,7 +541,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object(re.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object(re.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object(re.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.H), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.G), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -607,7 +607,7 @@
 					if (!r || !a || Object(g.g)(r)) return this.renderDefault();
 					const {
 						uniqueId: d
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.P.TOP), m = r.isNSFW && e || r.type === g.c.EmployeesOnly && !t || r.type === g.c.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.O.TOP), m = r.isNSFW && e || r.type === g.c.EmployeesOnly && !t || r.type === g.c.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: pe.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1041,4 +1041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.103188309387853f9337.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.1bf108b7236304459bfe.js.map

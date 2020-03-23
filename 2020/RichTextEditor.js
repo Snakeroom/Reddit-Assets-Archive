@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.3878a49eb7b2a7a1810f.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.de9eb24dd970d8437c6a.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1991,7 +1991,7 @@
 					})(r, s, o, n);
 				return a ? [a] : ((e, t) => {
 					const n = [];
-					return e.image > E.T && n.push(Object(m.a)(t, "postCreation.mediaInput.imagesLimitExceeded")), e.video + e.gifvideo > E.X && n.push(Object(m.a)(t, "postCreation.mediaInput.videosLimitExceeded")), n
+					return e.image > E.S && n.push(Object(m.a)(t, "postCreation.mediaInput.imagesLimitExceeded")), e.video + e.gifvideo > E.W && n.push(Object(m.a)(t, "postCreation.mediaInput.videosLimitExceeded")), n
 				})(r, n)
 			});
 			var y = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.tsx"),
@@ -2728,4 +2728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.3878a49eb7b2a7a1810f.js.map
+//# sourceMappingURL=RichTextEditor.de9eb24dd970d8437c6a.js.map

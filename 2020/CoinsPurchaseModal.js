@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.415265cbe540949b68f7.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.867e2c98aab10368fcfc.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, s, a) {
@@ -143,7 +143,7 @@
 						return e(Object(h.e)(a))
 					},
 					onPaymentSelected: s => e(Object(p.selectPaymentMethod)(s)),
-					requestPurchaseCatalog: () => e(Object(u.b)()),
+					requestPurchaseCatalog: () => e(Object(u.a)()),
 					dispatchCompletePurchase: (s, a, t, o) => {
 						e(t ? Object(m.k)(s, a, o) : Object(m.l)(s, a))
 					}
@@ -300,4 +300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.415265cbe540949b68f7.js.map
+//# sourceMappingURL=CoinsPurchaseModal.867e2c98aab10368fcfc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.e01af1fb24a0581c846b.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.ee457eabb8e9bcb1612f.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -102,18 +102,18 @@
 				return P
 			}));
 			const y = "add-custom-badge-tooltip",
-				j = 100,
-				w = 2 * j;
+				w = 100,
+				j = 2 * w;
 			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, j)), this.mouseOverTooltip = e
+						}, w)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, w)
+						}, j)
 					}
 				}
 				render() {
@@ -302,7 +302,7 @@
 				currentOwnerName: (e, t) => Object(v.e)(e, t).owner,
 				tokenDisplayConversion: v.o
 			});
-			var j = Object(s.b)(y)((function(e) {
+			var w = Object(s.b)(y)((function(e) {
 					const {
 						className: t,
 						cost: r,
@@ -335,7 +335,7 @@
 						onClick: e.onPurchase
 					}, a.a.createElement(m.c, null, "proceed to purchase"))))
 				})),
-				w = function(e) {
+				j = function(e) {
 					return a.a.createElement("svg", {
 						className: e.className,
 						viewBox: "0 0 32 29",
@@ -498,7 +498,7 @@
 						className: C.a.section
 					}, a.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(w, {
+					}, a.a.createElement(j, {
 						className: C.a.bannerImage
 					})), a.a.createElement("div", {
 						className: C.a.textSection
@@ -535,7 +535,7 @@
 				}, a.a.createElement(I, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name
-				}), a.a.createElement(j, {
+				}), a.a.createElement(w, {
 					className: _.a.controls,
 					subredditId: e.subreddit.id,
 					onPurchase: e.onPurchase
@@ -562,16 +562,16 @@
 					className: V.a.description
 				}, e.description), e.children)
 			}
-			var q = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
-				U = r.n(q);
+			var U = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
+				q = r.n(U);
 
 			function X(e) {
 				return a.a.createElement("div", {
-					className: Object(i.a)(U.a.container, e.className)
+					className: Object(i.a)(q.a.container, e.className)
 				}, a.a.createElement("div", {
-					className: U.a.label
+					className: q.a.label
 				}, e.label), a.a.createElement("div", {
-					className: U.a.amount
+					className: q.a.amount
 				}, Object(p.a)(Object(f.b)(e.amount, e.tokenDisplayConversion))))
 			}
 			var Y = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/index.m.less"),
@@ -916,13 +916,13 @@
 					}))))
 				}),
 				y = r("./src/reddit/controls/ErrorText/index.m.less"),
-				j = r.n(y);
+				w = r.n(y);
 			r.d(t, "a", (function() {
 				return C
 			})), r.d(t, "c", (function() {
 				return T
 			}));
-			const w = Object(u.c)({
+			const j = Object(u.c)({
 				activeModalId: h.a
 			});
 			class O extends d.a.Component {
@@ -967,12 +967,12 @@
 						textHasOverflowed: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(j.a.wrapper, r)
+						className: Object(m.a)(w.a.wrapper, r)
 					}, d.a.createElement("span", {
-						className: j.a.description,
+						className: w.a.description,
 						ref: this.spanRef
 					}, e), i && d.a.createElement("span", {
-						className: j.a.moreText,
+						className: w.a.moreText,
 						onClick: this.toggleModal
 					}, o), t === c && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
@@ -980,7 +980,7 @@
 					}, a || e))
 				}
 			}
-			const N = Object(l.b)(w, e => ({
+			const N = Object(l.b)(j, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(O),
 				C = e => {
@@ -1542,8 +1542,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => c.has((Object(s.e)(e) || "").toLowerCase()) || i.has((Object(s.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
 					experimentEligibilitySelector: o.G,
-					experimentName: n.jb
-				}) === n.qb.Enabled
+					experimentName: n.ib
+				}) === n.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -1570,9 +1570,9 @@
 			})), r.d(t, "o", (function() {
 				return y
 			})), r.d(t, "l", (function() {
-				return j
-			})), r.d(t, "m", (function() {
 				return w
+			})), r.d(t, "m", (function() {
+				return j
 			})), r.d(t, "s", (function() {
 				return O
 			})), r.d(t, "a", (function() {
@@ -1613,15 +1613,15 @@
 					}
 				},
 				m = (e, t) => {
-					const r = j(e, t);
+					const r = w(e, t);
 					if (r) return r.mainHeader
 				},
 				p = (e, t) => {
-					const r = j(e, t);
+					const r = w(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				h = (e, t) => {
-					const r = j(e, t);
+					const r = w(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -1654,15 +1654,15 @@
 					const r = T(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
-				j = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				j = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				O = (e, t) => {
-					const r = w(e, t);
+					const r = j(e, t);
 					return r && r.walletProvider
 				},
 				N = (e, t) => {
 					const r = O(e, t),
-						n = w(e, t);
+						n = j(e, t);
 					return r && r.provider || n && n.provider
 				},
 				C = (e, t) => {
@@ -1698,10 +1698,10 @@
 					}
 				},
 				P = (e, t) => {
-					const r = w(e, t);
+					const r = j(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.e01af1fb24a0581c846b.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.ee457eabb8e9bcb1612f.js.map

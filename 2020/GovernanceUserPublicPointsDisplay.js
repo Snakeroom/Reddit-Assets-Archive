@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5b8d32c417505b64e26f.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.e7302d5c13e4163b8fdc.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -53,11 +53,11 @@
 			})), n.d(t, "f", (function() {
 				return A
 			})), n.d(t, "g", (function() {
-				return q
-			})), n.d(t, "j", (function() {
 				return D
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "j", (function() {
 				return H
+			})), n.d(t, "c", (function() {
+				return q
 			}));
 			const x = Object(s.a)(j.b),
 				v = Object(s.a)(j.c),
@@ -106,7 +106,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(O.a)(n, o.error || o.errors[0].messsage)
-				}, q = (e, t) => async (n, s, d) => {
+				}, D = (e, t) => async (n, s, d) => {
 					let {
 						apiContext: l
 					} = d;
@@ -144,7 +144,7 @@
 					} else n(_({
 						error: m.error
 					})), Object(O.a)(n, m.error)
-				}, D = e => async (t, n, r) => {
+				}, H = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -153,7 +153,7 @@
 					o.ok ? t(C(o.body)) : t(U({
 						error: o.error
 					}))
-				}, H = (e, t) => async (n, s, o) => {
+				}, q = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: c
 					} = o;
@@ -411,7 +411,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.db.GET
+					method: s.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -432,7 +432,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.db.POST,
+					method: s.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -517,8 +517,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: r.jb
-				}) === r.qb.Enabled
+					experimentName: r.ib
+				}) === r.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -679,4 +679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.5b8d32c417505b64e26f.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.e7302d5c13e4163b8fdc.js.map

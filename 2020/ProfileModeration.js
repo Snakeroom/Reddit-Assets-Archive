@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.96622f88142cada5291b.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.c77f9c366eaf18b3255a.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, a) {
@@ -144,7 +144,7 @@
 						}, () => this.forceUnsticky = !1)) : S() >= k && this.setState({
 							sticky: !0
 						})
-					}, c.H), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, c.G), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -375,4 +375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.96622f88142cada5291b.js.map
+//# sourceMappingURL=ProfileModeration.c77f9c366eaf18b3255a.js.map

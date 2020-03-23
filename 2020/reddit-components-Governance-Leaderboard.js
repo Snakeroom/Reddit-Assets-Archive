@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.c4ad6cc7a4772b154018.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.f83b3b50b487432ae7ce.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -53,9 +53,9 @@
 			})), r.d(t, "f", (function() {
 				return U
 			})), r.d(t, "g", (function() {
-				return q
-			})), r.d(t, "j", (function() {
 				return B
+			})), r.d(t, "j", (function() {
+				return q
 			})), r.d(t, "c", (function() {
 				return M
 			}));
@@ -106,7 +106,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(O.a)(r, o.error || o.errors[0].messsage)
-				}, q = (e, t) => async (r, n, d) => {
+				}, B = (e, t) => async (r, n, d) => {
 					let {
 						apiContext: u
 					} = d;
@@ -144,7 +144,7 @@
 					} else r(k({
 						error: m.error
 					})), Object(O.a)(r, m.error)
-				}, B = e => async (t, r, s) => {
+				}, q = e => async (t, r, s) => {
 					let {
 						apiContext: n
 					} = s;
@@ -435,7 +435,7 @@
 				function(e, t) {
 					return Object(m.a)(e, {
 						endpoint: "".concat(l.a.metaUrl, "/ratings/").concat(t.subredditId, "/").concat(t.dateRange),
-						method: u.db.GET
+						method: u.cb.GET
 					}).then(e => {
 						if (e.ok) {
 							let t = 0;
@@ -503,8 +503,8 @@
 						onClick: e.onOptIn
 					}, a.a.createElement(I.c, null, "enable"))
 				})),
-				q = (r("./node_modules/core-js/modules/es6.symbol.js"), r("./src/reddit/components/OverlayAwareTooltip/index.tsx")),
-				B = r("./src/reddit/controls/Dropdown/index.tsx"),
+				B = (r("./node_modules/core-js/modules/es6.symbol.js"), r("./src/reddit/components/OverlayAwareTooltip/index.tsx")),
+				q = r("./src/reddit/controls/Dropdown/index.tsx"),
 				M = r("./src/reddit/controls/Dropdown/Row.tsx"),
 				R = r("./src/reddit/components/Governance/Leaderboard/Distribution/SettingsDropdown/index.m.less"),
 				A = r.n(R);
@@ -527,14 +527,14 @@
 				}
 				return r
 			};
-			const V = Object(q.a)((function(e) {
+			const V = Object(B.a)((function(e) {
 					const {
 						className: t,
 						language: r,
 						tokenName: s,
 						subredditId: n
 					} = e, o = F(e, ["className", "language", "tokenName", "subredditId"]);
-					return a.a.createElement(B.a, G({
+					return a.a.createElement(q.a, G({
 						className: Object(_.a)(e.className, A.a.container)
 					}, o), a.a.createElement(M.b, {
 						noIcon: !0,
@@ -940,7 +940,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: n.db.GET
+					method: n.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -961,7 +961,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: n.db.POST,
+					method: n.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1028,8 +1028,8 @@
 				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				c = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
 					experimentEligibilitySelector: a.G,
-					experimentName: s.jb
-				}) === s.qb.Enabled
+					experimentName: s.ib
+				}) === s.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -1190,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.c4ad6cc7a4772b154018.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.f83b3b50b487432ae7ce.js.map

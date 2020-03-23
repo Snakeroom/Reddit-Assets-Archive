@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.c6aaf0c5325364f28756.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.7e1f073d59004112cd6b.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -372,13 +372,13 @@
 						h(), T("approve")
 					}
 				}, r.a.createElement(L, null)), N && r.a.createElement(r.a.Fragment, null, r.a.createElement(A, {
-					text: s.bannedBy === d.l ? n.fbt._("Confirm Removal", null, {
+					text: s.bannedBy === d.k ? n.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : n.fbt._("Remove", null, {
 						hk: "VP5J0"
 					}),
 					onClick: () => {
-						v(), s.bannedBy === d.l ? T("confirm_remove") : T("remove")
+						v(), s.bannedBy === d.k ? T("confirm_remove") : T("remove")
 					}
 				}, r.a.createElement(F, null)), r.a.createElement(A, {
 					text: n.fbt._("Spam", null, {
@@ -751,19 +751,19 @@
 						className: t,
 						style: s
 					}, o.a.createElement(f, {
-						onClick: () => u(r.D.NONE, null),
+						onClick: () => u(r.C.NONE, null),
 						selected: !d && !n,
 						text: Object(c.c)("Undistinguish")
 					}), i && o.a.createElement(f, {
-						onClick: () => u(r.D.MODERATOR, null),
+						onClick: () => u(r.C.MODERATOR, null),
 						selected: d && !l,
 						text: Object(c.c)("Distinguish as Mod")
 					}), m && i && o.a.createElement(f, {
-						onClick: () => u(r.D.MODERATOR, !0),
+						onClick: () => u(r.C.MODERATOR, !0),
 						selected: l,
 						text: Object(c.c)("Distinguish as Mod and Sticky")
 					}), a && o.a.createElement(f, {
-						onClick: () => u(r.D.ADMIN, null),
+						onClick: () => u(r.C.ADMIN, null),
 						selected: n,
 						text: Object(c.c)("Distinguish as Admin")
 					}))
@@ -795,7 +795,7 @@
 					isStickied: c,
 					isTopLevelComment: d,
 					onDistinguishComment: (e, t) => {
-						l(e, t), e === r.D.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.D.ADMIN ? m("admin_distinguish") : i && e !== r.D.MODERATOR ? m("undistinguish") : s && e !== r.D.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
+						l(e, t), e === r.C.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.C.ADMIN ? m("admin_distinguish") : i && e !== r.C.MODERATOR ? m("undistinguish") : s && e !== r.C.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
 					}
 				}))
 			}
@@ -2287,9 +2287,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Ub)(t)
+				return !!t && !Object(n.Tb)(t)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.c6aaf0c5325364f28756.js.map
+//# sourceMappingURL=ModQueuePages.7e1f073d59004112cd6b.js.map

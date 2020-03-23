@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.f72416e0b8f7cd1cf71b.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.e96ceb4b057a567c12fc.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -508,8 +508,8 @@
 				L = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				R = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				T = a("./src/reddit/pages/Premium/PurchaseSection/index.m.less"),
-				B = a.n(T);
-			class z extends i.a.Component {
+				z = a.n(T);
+			class B extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onClaimGoldClick = () => {
 						const {
@@ -533,41 +533,41 @@
 						shouldShowClaimGoldModal: m
 					} = this.props, d = "".concat(n.a.assetPath, "/img/gold/crest-with-background.jpg");
 					return i.a.createElement("div", {
-						className: Object(F.a)(e, B.a.purchaseSection)
+						className: Object(F.a)(e, z.a.purchaseSection)
 					}, i.a.createElement("h2", {
-						className: B.a.purchaseSectionTitle
+						className: z.a.purchaseSectionTitle
 					}, s.fbt._("Join Reddit Premium Today", null, {
 						hk: "2sm8Pz"
 					})), i.a.createElement("div", {
-						className: B.a.premiumPackage
+						className: z.a.premiumPackage
 					}, o ? i.a.createElement(U, {
 						isPremiumSubscriber: a,
 						onClickBuyPremium: r,
 						onClickManagePremium: l,
 						premiumPackage: o
 					}) : i.a.createElement(D, null), i.a.createElement("div", {
-						className: B.a.rightPanel,
+						className: z.a.rightPanel,
 						style: {
 							backgroundImage: 'url("'.concat(d, '")')
 						}
 					})), i.a.createElement("div", {
-						className: B.a.miscContainer
+						className: z.a.miscContainer
 					}, i.a.createElement("div", {
-						className: Object(F.a)(B.a.miscItem, B.a.renewalSubtext)
+						className: Object(F.a)(z.a.miscItem, z.a.renewalSubtext)
 					}, s.fbt._("Subscription automatically renews monthly", null, {
 						hk: "21TCR6"
 					})), i.a.createElement(I.n, {
-						className: B.a.redeemCodeLink,
+						className: z.a.redeemCodeLink,
 						onClick: this.onClaimGoldClick
 					}, s.fbt._("Redeem a gift code", null, {
 						hk: "2NJLkV"
 					})), i.a.createElement("form", {
-						className: Object(F.a)(B.a.giftCodeInputContainer, {
-							[B.a.giftCodeHidden]: !m
+						className: Object(F.a)(z.a.giftCodeInputContainer, {
+							[z.a.giftCodeHidden]: !m
 						}),
 						onSubmit: this.onGiftCodeRedeem
 					}, i.a.createElement("input", {
-						className: B.a.giftCodeInput,
+						className: z.a.giftCodeInput,
 						type: "text",
 						maxLength: 30,
 						placeholder: s.fbt._("Gift Code", null, {
@@ -576,14 +576,14 @@
 						onChange: c,
 						value: t
 					}), i.a.createElement(I.f, {
-						className: B.a.redeemButton
+						className: z.a.redeemButton
 					}, s.fbt._("Redeem", null, {
 						hk: "1d2cH2"
 					})))))
 				}
 			}
 			const D = () => i.a.createElement("div", {
-					className: Object(F.a)(B.a.leftPanel, B.a.loaderContainer)
+					className: Object(F.a)(z.a.leftPanel, z.a.loaderContainer)
 				}, i.a.createElement(L.a, {
 					sizePx: 80
 				})),
@@ -597,29 +597,29 @@
 						pennies: l,
 						periodicalCoins: c,
 						signupBonusCoins: o
-					} = r, m = o && o.toLocaleString(), d = c.toLocaleString(), u = "$".concat((l / 100).toLocaleString());
+					} = r, m = o && o > 0 && o.toLocaleString(), d = c.toLocaleString(), u = "$".concat((l / 100).toLocaleString());
 					return i.a.createElement("div", {
-						className: B.a.leftPanel
+						className: z.a.leftPanel
 					}, m && i.a.createElement("div", {
-						className: B.a.bonusBanner
+						className: z.a.bonusBanner
 					}, s.fbt._("{bonus-coins} Coins Sign Up Gift", [s.fbt._param("bonus-coins", m)], {
 						hk: "1D95uH"
 					})), i.a.createElement("ul", {
-						className: B.a.premiumPerks
+						className: z.a.premiumPerks
 					}, i.a.createElement("li", {
-						className: B.a.premiumPerk
+						className: z.a.premiumPerk
 					}, i.a.createElement(R.a, {
-						className: B.a.checkmark
+						className: z.a.checkmark
 					}), s.fbt._("Ads-free experience", null, {
 						hk: "1dmvDS"
 					})), i.a.createElement("li", {
-						className: B.a.premiumPerk
+						className: z.a.premiumPerk
 					}, i.a.createElement(R.a, {
-						className: B.a.checkmark
+						className: z.a.checkmark
 					}), s.fbt._("{monthly-coins} Coins every month", [s.fbt._param("monthly-coins", d)], {
 						hk: "CngQz"
 					}))), i.a.createElement(I.e, {
-						className: B.a.premiumButton,
+						className: z.a.premiumButton,
 						onClick: t ? n : a
 					}, t ? s.fbt._("Manage", null, {
 						hk: "2SIec3"
@@ -646,7 +646,7 @@
 					onManagePremium: () => e(Object(c.b)("/settings/gold")),
 					onOpenLoginModal: () => e(Object(P.e)()),
 					onPurchasePremium: () => e(Object(w.f)(g.f())),
-					requestPurchaseCatalog: () => e(Object(N.b)()),
+					requestPurchaseCatalog: () => e(Object(N.a)()),
 					toggleClaimGoldModal: () => e(Object(E.i)())
 				}));
 			class H extends i.a.Component {
@@ -665,7 +665,7 @@
 						sendEvent: n
 					} = this.props;
 					g.f() || g.g(), e.length || t || a();
-					const s = m.Bb.PREMIUM;
+					const s = m.Ab.PREMIUM;
 					f.c.has(s) && n(Object(b.i)(k.TimerType.InApp, f.c.end(s))), Object(u.a)()
 				}
 				render() {
@@ -739,7 +739,7 @@
 						shouldShowClaimGoldModal: l,
 						toggleClaimGoldModal: c
 					} = this.props, o = s.length ? s[0] : void 0;
-					return i.a.createElement(z, {
+					return i.a.createElement(B, {
 						giftCode: e,
 						isPremiumSubscriber: t,
 						onClickBuyPremium: this.onClickPrice,
@@ -778,4 +778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.f72416e0b8f7cd1cf71b.js.map
+//# sourceMappingURL=Premium.e96ceb4b057a567c12fc.js.map

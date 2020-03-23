@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.1adbc6f9e5e9b2d546ab.js
-// Retrieved at 3/19/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.1620d077d159a2f89714.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
@@ -276,8 +276,8 @@
 			var H = i("./node_modules/lodash/noop.js"),
 				I = i.n(H),
 				S = i("./src/reddit/components/AuthorLink/index.tsx"),
-				B = i("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
-				A = i("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
+				A = i("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
+				B = i("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
 				U = i("./src/reddit/controls/Checkbox/index.tsx"),
 				D = i("./src/reddit/controls/InternalLink/index.tsx"),
 				z = i("./node_modules/lodash/forEach.js"),
@@ -359,7 +359,7 @@
 						toggleCheckbox: this.onCheckboxToggle
 					})), n.a.createElement("td", {
 						className: W.a.cellTime
-					}, Object(A.b)(o)), s && n.a.createElement("td", {
+					}, Object(B.b)(o)), s && n.a.createElement("td", {
 						className: W.a.cellPage
 					}, n.a.createElement(D.a, {
 						className: W.a.wikiPageLink,
@@ -367,7 +367,7 @@
 						to: u
 					}, g)), n.a.createElement("td", {
 						className: W.a.cellUser
-					}, m && n.a.createElement(B.a, {
+					}, m && n.a.createElement(A.a, {
 						sendHoverCardEvent: I.a,
 						tooltipId: "revision-".concat(o.id),
 						user: m
@@ -961,7 +961,7 @@
 				x = i("./src/reddit/constants/headers.ts");
 			var v = e => Object(g.b)(Object(k.a)(e.context, [x.a]), {
 					endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/edit"),
-					method: b.db.POST,
+					method: b.cb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -987,8 +987,8 @@
 				H = i("./src/reddit/i18n/utils.ts"),
 				I = i("./src/reddit/models/SubredditWikiPage/index.ts"),
 				S = i("./src/reddit/selectors/activeModalId.ts"),
-				B = i("./src/reddit/selectors/platform.ts"),
-				A = i("./src/reddit/selectors/subredditWiki.ts"),
+				A = i("./src/reddit/selectors/platform.ts"),
+				B = i("./src/reddit/selectors/subredditWiki.ts"),
 				U = i("./src/higherOrderComponents/asModal/index.tsx"),
 				D = i("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				z = i("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -1069,10 +1069,10 @@
 					} else if (s === I.b.Valid && !t.isRevisable) return Object(H.c)("You do not have permission to edit this page")
 				},
 				te = Object(a.c)({
-					allowNavigationCallback: B.a,
+					allowNavigationCallback: A.a,
 					isRevisionReasonModalOpen: Object(S.b)(Y),
 					isSaveBeforeLeaveModalOpen: Object(S.b)(X),
-					wikiPage: A.c
+					wikiPage: B.c
 				}),
 				ie = Object(o.b)(te, (e, t) => ({
 					onSaveWikiPage: (i, s) => e((e => {
@@ -1658,7 +1658,7 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, l = i.authorInfo && i.authorInfo.name || d.B, p = new Date(Object(b.j)(i.revisedAt));
+					} = this.state, l = i.authorInfo && i.authorInfo.name || d.A, p = new Date(Object(b.j)(i.revisedAt));
 					return a.a.createElement("span", {
 						className: Object(c.a)(e, v.a.container)
 					}, t ? Object(g.c)("Last revised by ") : Object(g.c)("Revised by "), a.a.createElement(u.a, {
@@ -1797,4 +1797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.1adbc6f9e5e9b2d546ab.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.1620d077d159a2f89714.js.map

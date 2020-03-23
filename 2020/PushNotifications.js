@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.149f640ad0e7723cfaf7.js
-// Retrieved at 3/18/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.c9551d83e171433cd4fb.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -50,7 +50,7 @@
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return A
 			}));
-			const k = 4 * c.K,
+			const k = 4 * c.J,
 				S = () => {
 					const e = Object(u.a)() && "1" === localStorage.getItem("notification-permission-request-closed");
 					return "granted" === Notification.permission ? l.a.Granted : "denied" === Notification.permission ? l.a.Denied : e ? l.a.Closed : l.a.Default
@@ -255,4 +255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PushNotifications.149f640ad0e7723cfaf7.js.map
+//# sourceMappingURL=PushNotifications.c9551d83e171433cd4fb.js.map

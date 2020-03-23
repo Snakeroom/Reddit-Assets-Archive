@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.8ede1f97f4edb6d67aa1.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.5de413eac6861f60d86a.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -280,7 +280,7 @@
 						};
 						if (!a || !Object(f.i)(a)) return {
 							error: {
-								type: i.N
+								type: i.M
 							}
 						};
 						if (a.startsWith("image/")) {
@@ -288,44 +288,44 @@
 								const t = o.fbt._("Images are not allowed in r/{subredditName}", [o.fbt._param("subredditName", c)], {
 									hk: "3C2E7Q"
 								});
-								return w(i.N, t)
+								return w(i.M, t)
 							}
 							if ("image/gif" === a) {
-								if (e.size > i.S) return w(i.I)
-							} else if (e.size > i.U) return w(i.L);
+								if (e.size > i.R) return w(i.H)
+							} else if (e.size > i.T) return w(i.K);
 							const t = await Object(m.a)(l);
 							d.width = t.width, d.height = t.height
 						} else if (a.startsWith("video/")) {
-							if (e.size > i.Z) return w(i.Yb);
+							if (e.size > i.Y) return w(i.Xb);
 							let t;
 							try {
 								t = await Object(f.h)(l, !0)
 							} catch (u) {
-								return w(i.N)
+								return w(i.M)
 							}
 							if (r) {
 								const {
 									videos: e,
 									images: n
 								} = r;
-								if (n && !e && t.duration > i.ab) {
+								if (n && !e && t.duration > i.Z) {
 									const t = o.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [o.fbt._param("subredditName", c)], {
 										hk: "46ULiz"
 									});
-									return w(i.N, t)
+									return w(i.M, t)
 								}
 								if (!n && !e) {
 									const t = o.fbt._("Videos are not allowed in r/{subredditName}", [o.fbt._param("subredditName", c)], {
 										hk: "4uTUZb"
 									});
-									return w(i.N, t)
+									return w(i.M, t)
 								}
 							}
-							if (t.duration > i.Y) {
+							if (t.duration > i.X) {
 								const t = o.fbt._("Video is too long. Maximum video length is 15 minutes.", null, {
 									hk: "26m2mj"
 								});
-								return w(i.N, t)
+								return w(i.M, t)
 							}
 							d.height = t.height, d.width = t.width, d.videoDuration = t.duration, d.videoFirstFrameUrl = t.firstFrame.dataUrl
 						}
@@ -345,7 +345,7 @@
 					const E = t.name,
 						S = await (async (t, e, n) => Object(u.b)(Object(p.a)(t, [h.a]), {
 							endpoint: "".concat(t.apiUrl, "/api/media/asset.json"),
-							method: i.db.POST,
+							method: i.cb.POST,
 							data: {
 								filepath: e,
 								mimetype: n
@@ -7919,4 +7919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.8ede1f97f4edb6d67aa1.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.5de413eac6861f60d86a.js.map

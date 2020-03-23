@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.51db1e743dc411095ada.js
-// Retrieved at 3/18/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9aab058d3b2cfd266187.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -74,7 +74,7 @@
 						bannedAtUTC: void 0,
 						bannedBy: void 0,
 						contestMode: !1,
-						created: Date.now() - p.K,
+						created: Date.now() - p.J,
 						crosspostParentId: null,
 						crosspostRootId: null,
 						discussionType: null,
@@ -416,8 +416,8 @@
 				q = s("./node_modules/lodash/isEqual.js"),
 				G = s.n(q),
 				z = s("./src/higherOrderComponents/asModal/index.tsx"),
-				K = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Y = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				Y = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				K = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				X = s("./src/reddit/controls/TextButton/index.tsx"),
 				Z = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				$ = s("./src/lib/classNames/index.ts"),
@@ -498,12 +498,12 @@
 						s = t !== this.props.settings;
 					return o.a.createElement("div", {
 						className: oe.a.container
-					}, o.a.createElement(K.g, {
+					}, o.a.createElement(Y.g, {
 						className: oe.a.modalHeader
-					}, o.a.createElement(K.n, null, e ? Object(L.c)("User flair settings") : Object(L.c)("Post flair settings")), o.a.createElement(X.a, {
+					}, o.a.createElement(Y.n, null, e ? Object(L.c)("User flair settings") : Object(L.c)("Post flair settings")), o.a.createElement(X.a, {
 						className: oe.a.modalCloseButton,
 						onClick: this.props.onClose
-					}, o.a.createElement(K.b, null))), o.a.createElement("div", {
+					}, o.a.createElement(Y.b, null))), o.a.createElement("div", {
 						className: oe.a.contentBlock
 					}, o.a.createElement(ae, {
 						label: e ? Object(L.c)("Enable user flair in this community") : Object(L.c)("Enable post flair in this community")
@@ -520,14 +520,14 @@
 						onToggle: this.onToggleCanAssignOwn
 					})), o.a.createElement("div", {
 						className: oe.a.details
-					}, e ? Object(L.c)("This will let users select, edit, and clear user flair for their usernames in this community. This does not allow users to select or edit mod-only user flair.") : Object(L.c)("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair."))), o.a.createElement(K.e, {
+					}, e ? Object(L.c)("This will let users select, edit, and clear user flair for their usernames in this community. This does not allow users to select or edit mod-only user flair.") : Object(L.c)("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair."))), o.a.createElement(Y.e, {
 						className: oe.a.modalFooter
-					}, o.a.createElement(K.a, {
+					}, o.a.createElement(Y.a, {
 						onClick: this.props.onClose
 					}, o.a.createElement(U.c, null, "Cancel")), o.a.createElement(h.f, {
 						onClick: this.onSaveButtonClick,
 						disabled: this.state.isPending || !s
-					}, this.state.isPending ? o.a.createElement(Y.a, {
+					}, this.state.isPending ? o.a.createElement(K.a, {
 						className: oe.a.loadingIcon,
 						sizePx: 10
 					}) : o.a.createElement(U.c, null, "Save"))))
@@ -640,8 +640,8 @@
 				qe = s("./src/reddit/selectors/posts.ts"),
 				Ge = s("./src/lib/omitKey/index.ts"),
 				ze = s("./src/reddit/actions/imageUploads.ts"),
-				Ke = s("./src/reddit/models/Image/index.tsx"),
-				Ye = s("./src/reddit/models/StructuredStyles/index.ts"),
+				Ye = s("./src/reddit/models/Image/index.tsx"),
+				Ke = s("./src/reddit/models/StructuredStyles/index.ts"),
 				Xe = s("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = s("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
 				$e = s("./src/reddit/components/StructuredStyles/UploadedImage/index.tsx");
@@ -667,8 +667,8 @@
 				},
 				ot = Object(we.c)({
 					subredditDefaultStyles: Xe.p,
-					postBackgroundImage: nt(Ye.e),
-					postPlaceholderImage: nt(Ye.f)
+					postBackgroundImage: nt(Ke.e),
+					postPlaceholderImage: nt(Ke.f)
 				}),
 				it = {
 					cancelUpload: ze.h
@@ -686,13 +686,13 @@
 						});
 						this.props.onChange(t)
 					}, this.onPostBackgroundImageInput = e => {
-						this.addImage(at(e), Ye.e)
+						this.addImage(at(e), Ke.e)
 					}, this.onPostPlaceholderImageInput = e => {
-						this.addImage(at(e), Ye.f)
-					}, this.onRemoveBackgroundImage = () => this.removeImage(Ye.e), this.onRemovePlaceholderImage = () => this.removeImage(Ye.f), this.addImage = async (e, t) => {
+						this.addImage(at(e), Ke.f)
+					}, this.onRemoveBackgroundImage = () => this.removeImage(Ke.e), this.onRemovePlaceholderImage = () => this.removeImage(Ke.f), this.addImage = async (e, t) => {
 						const {
 							styleTemplate: s
-						} = this.props, a = await Object(Ke.f)(e);
+						} = this.props, a = await Object(Ye.f)(e);
 						this.props.onChange(Object.assign({}, s, {
 							[t]: a.url,
 							pendingImages: Object.assign({}, s.pendingImages, {
@@ -723,12 +723,12 @@
 								width: 0,
 								height: 0
 							};
-							return Object(Ke.g)(e)
+							return Object(Ye.g)(e)
 						}
 					}
 				}
 				componentWillUnmount() {
-					this.cancelUpload(Ye.e), this.cancelUpload(Ye.f)
+					this.cancelUpload(Ke.e), this.cancelUpload(Ke.f)
 				}
 				render() {
 					const {
@@ -739,7 +739,7 @@
 					} = this.props, {
 						postTitleColor: n = s.postTitleColor,
 						postBackgroundColor: i = s.postBackgroundColor
-					} = t, r = this.getImageUpload(Ye.e), l = this.getImageUpload(Ye.f);
+					} = t, r = this.getImageUpload(Ke.e), l = this.getImageUpload(Ke.f);
 					return o.a.createElement("div", {
 						className: Object($.a)(e, st.a.container)
 					}, o.a.createElement("fieldset", {
@@ -1122,7 +1122,7 @@
 					}, o.a.createElement(U.c, null, "Cancel")), o.a.createElement(h.f, {
 						disabled: this.props.isSavePending || l,
 						onClick: this.props.onSave
-					}, this.props.isSavePending ? o.a.createElement(Y.a, {
+					}, this.props.isSavePending ? o.a.createElement(K.a, {
 						className: bt.a.loadingIcon,
 						sizePx: 10
 					}) : o.a.createElement(U.c, null, "Save"))))
@@ -1941,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.51db1e743dc411095ada.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9aab058d3b2cfd266187.js.map

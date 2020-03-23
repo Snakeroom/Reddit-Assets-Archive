@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GlobalModalContainer.1aee1f6041b70107d126.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GlobalModalContainer.a0b67259378bad4dbfe5.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GlobalModalContainer"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -66,10 +66,10 @@
 					onAccept: t,
 					acceptText: Object(i.c)("Ok, I got it"),
 					headerText: Object(i.c)("You've reached your pinning limit."),
-					message: Object(i.c)("You can only pin ".concat(Object(i.b)("maximumPinnedPosts", c.W), " posts to the top of your profile. ") + "To pin something new, please unpin a post first.  ")
+					message: Object(i.c)("You can only pin ".concat(Object(i.b)("maximumPinnedPosts", c.V), " posts to the top of your profile. ") + "To pin something new, please unpin a post first.  ")
 				})
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=GlobalModalContainer.1aee1f6041b70107d126.js.map
+//# sourceMappingURL=GlobalModalContainer.a0b67259378bad4dbfe5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.17a81f93d38531825ad1.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.65cfd9bf37fa43df6be5.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -707,12 +707,12 @@
 				E = s("./src/reddit/controls/Dropdown/index.m.less"),
 				w = s.n(E);
 			const _ = {
-				[o.P.BEST]: l,
-				[o.P.HOT]: h,
-				[o.P.NEW]: v,
-				[o.P.CONTROVERSIAL]: u,
-				[o.P.TOP]: O.a,
-				[o.P.RISING]: C
+				[o.O.BEST]: l,
+				[o.O.HOT]: h,
+				[o.O.NEW]: v,
+				[o.O.CONTROVERSIAL]: u,
+				[o.O.TOP]: O.a,
+				[o.O.RISING]: C
 			};
 			t.a = e => {
 				let {
@@ -864,8 +864,8 @@
 						tooltipId: t
 					}))
 				}))(Object(E.b)(F)),
-				H = s("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
-				W = s.n(H);
+				W = s("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
+				H = s.n(W);
 			const z = Object(x.a)(k.j, (e, t) => {
 					let {
 						profileName: s
@@ -878,7 +878,7 @@
 					profileCreated: t ? t.created : 0,
 					subscribers: e && e.subscribers || 0
 				})),
-				V = i.a.div("Container", W.a);
+				V = i.a.div("Container", H.a);
 
 			function J(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
@@ -894,7 +894,7 @@
 					} = e, c = J(s, "karma"), l = J(s, "cakeday"), d = Object(m.c)("".concat(Object(m.b)("postKarmaNumber", Object(C.b)(o, !0)), " Post Karma")), u = Object(m.c)("".concat(Object(m.b)("commentKarmaNumber", Object(C.b)(a, !0)), " Comment Karma"));
 					return r.a.createElement(V, null, r.a.createElement(U, {
 						icon: r.a.createElement(_.a, {
-							className: W.a.icon,
+							className: H.a.icon,
 							key: "karma"
 						}),
 						label: Object(C.b)(a + o, !0),
@@ -903,7 +903,7 @@
 						tooltip: "".concat(d, "\n").concat(u)
 					}), r.a.createElement(U, {
 						icon: r.a.createElement(w.a, {
-							className: W.a.icon,
+							className: H.a.icon,
 							key: "cakeDay"
 						}),
 						label: Object(y.a)(t, !0),
@@ -912,7 +912,7 @@
 						tooltip: Object(O.d)(n, t)
 					}), i > 0 && r.a.createElement(U, {
 						icon: r.a.createElement(j.a, {
-							className: W.a.icon,
+							className: H.a.icon,
 							key: "followers"
 						}),
 						title: Object(m.c)("Followers"),
@@ -2297,7 +2297,7 @@
 						}, () => this.forceUnsticky = !1)) : w() >= _ && this.setState({
 							sticky: !0
 						})
-					}, l.H), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, l.G), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -2464,22 +2464,22 @@
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/constants/index.ts");
 			const r = {
-					[a.P.BEST]: () => n.fbt._("best", null, {
+					[a.O.BEST]: () => n.fbt._("best", null, {
 						hk: "4tcUbl"
 					}),
-					[a.P.HOT]: () => n.fbt._("hot", null, {
+					[a.O.HOT]: () => n.fbt._("hot", null, {
 						hk: "44QCEp"
 					}),
-					[a.P.NEW]: () => n.fbt._("new", null, {
+					[a.O.NEW]: () => n.fbt._("new", null, {
 						hk: "3VBhPb"
 					}),
-					[a.P.CONTROVERSIAL]: () => n.fbt._("controversial", null, {
+					[a.O.CONTROVERSIAL]: () => n.fbt._("controversial", null, {
 						hk: "4jWP0T"
 					}),
-					[a.P.RISING]: () => n.fbt._("rising", null, {
+					[a.O.RISING]: () => n.fbt._("rising", null, {
 						hk: "1KmbkT"
 					}),
-					[a.P.TOP]: () => n.fbt._("top", null, {
+					[a.O.TOP]: () => n.fbt._("top", null, {
 						hk: "4pcLmp"
 					})
 				},
@@ -2488,22 +2488,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[a.Sb.HOUR]: () => n.fbt._("Now", null, {
+					[a.Rb.HOUR]: () => n.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[a.Sb.DAY]: () => n.fbt._("Today", null, {
+					[a.Rb.DAY]: () => n.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[a.Sb.WEEK]: () => n.fbt._("This week", null, {
+					[a.Rb.WEEK]: () => n.fbt._("This week", null, {
 						hk: "3Y5JkE"
 					}),
-					[a.Sb.MONTH]: () => n.fbt._("This month", null, {
+					[a.Rb.MONTH]: () => n.fbt._("This month", null, {
 						hk: "3NWWQf"
 					}),
-					[a.Sb.YEAR]: () => n.fbt._("This year", null, {
+					[a.Rb.YEAR]: () => n.fbt._("This year", null, {
 						hk: "3jD0mx"
 					}),
-					[a.Sb.ALL]: () => n.fbt._("All time", null, {
+					[a.Rb.ALL]: () => n.fbt._("All time", null, {
 						hk: "2cL1Yf"
 					})
 				},
@@ -3240,7 +3240,7 @@
 				R = e => e ? Object(k.c)("\n    Check your email. Please allow some time for the email\n    to arrive. If you do not receive it, please check it was\n    not flagged as spam or try resending the email below.\n  ") : Object(k.c)("\n    We have detected suspicious activity on your account.\n    For your safety we have suspended your account until\n    you reset your password to confirm your identity.\n  "),
 				F = e => e ? Object(k.c)("Reset password email sent") : Object(k.c)("Send a reset password email to access your account"),
 				U = e => e ? Object(k.c)("Email was sent to: ") : Object(k.c)("Email will be sent to: "),
-				H = e => {
+				W = e => {
 					const {
 						errorMsg: t,
 						inputChecked: s
@@ -3251,7 +3251,7 @@
 						className: Object(O.a)(D.a.inputIcon, D.a.success)
 					}) : null
 				};
-			class W extends a.a.Component {
+			class H extends a.a.Component {
 				constructor(e) {
 					super(e), this.onEmailChange = e => this.setState({
 						enteredEmail: e,
@@ -3306,7 +3306,7 @@
 						label: Object(k.c)("Enter email"),
 						onChange: this.onEmailChange,
 						value: t
-					}), H(this.state), a.a.createElement("h6", {
+					}), W(this.state), a.a.createElement("h6", {
 						className: D.a.errorMsg
 					}, s)) : a.a.createElement("p", {
 						className: D.a.emailText
@@ -3318,7 +3318,7 @@
 					}, e ? Object(k.c)("Resend") : Object(k.c)("Send"))))
 				}
 			}
-			var z = B(W),
+			var z = B(H),
 				V = s("./src/reddit/components/Settings/modalIds.ts"),
 				J = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
 				G = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
@@ -3532,8 +3532,8 @@
 				Re = s("./src/reddit/actions/chat/constants.ts"),
 				Fe = s("./src/reddit/actions/chat/userSettings.ts"),
 				Ue = s("./src/reddit/actions/userBlocks.ts"),
-				He = s("./src/reddit/actions/userWhitelist.ts"),
-				We = s("./src/lib/timeAgo/index.ts"),
+				We = s("./src/reddit/actions/userWhitelist.ts"),
+				He = s("./src/lib/timeAgo/index.ts"),
 				ze = s("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				Ve = s("./src/reddit/components/Hovercards/helpers.ts"),
 				Je = s("./src/reddit/components/UserNameAndIcon/index.tsx"),
@@ -3554,7 +3554,7 @@
 					}),
 					sendHoverCardEvent: () => {},
 					iconSize: 24
-				}), a.a.createElement(Ke, null, Object(We.d)(e.language, e.date / 1e3)), a.a.createElement(Qe, null, a.a.createElement(Ye, {
+				}), a.a.createElement(Ke, null, Object(He.d)(e.language, e.date / 1e3)), a.a.createElement(Qe, null, a.a.createElement(Ye, {
 					disabled: !!e.disabled,
 					onClick: e.onClick
 				}, "Remove"))), "Component", Ze.a),
@@ -3635,8 +3635,8 @@
 				});
 			var pt = Object(r.b)(ut, (e, t) => ({
 					addBlocked: t => e(Object(Ue.h)(t)),
-					addWhitelisted: t => e(Object(He.g)(t)),
-					removeWhitelisted: t => e(Object(He.h)(t)),
+					addWhitelisted: t => e(Object(We.g)(t)),
+					removeWhitelisted: t => e(Object(We.h)(t)),
 					removeBlocked: t => e(Object(Ue.g)(t)),
 					saveChatSettings: t => e(Object(Fe.c)(t))
 				}))(e => {
@@ -3830,8 +3830,8 @@
 				Rt = s("./src/higherOrderComponents/asTooltip.tsx"),
 				Ft = s("./src/reddit/actions/tooltip.ts"),
 				Ut = s("./src/reddit/controls/Dropdown/index.tsx"),
-				Ht = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				Wt = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				Wt = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				Ht = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				zt = s("./src/reddit/selectors/tooltip.ts"),
 				Vt = s("./src/reddit/components/Settings/shared/Dropdown/index.m.less"),
 				Jt = s.n(Vt);
@@ -3843,7 +3843,7 @@
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onToggleDropdown = () => {
 						this.props.openDropdown()
-					}, this.renderLabel = e => a.a.createElement(Ht.b, {
+					}, this.renderLabel = e => a.a.createElement(Wt.b, {
 						children: e.contentJsx || e.icon,
 						className: Jt.a.dropdownRow,
 						displayText: e.displayText,
@@ -3851,7 +3851,7 @@
 						key: e.key,
 						noHover: !0,
 						noIcon: !e.icon
-					}), this.renderDropdownItem = (e, t) => a.a.createElement(Ht.b, {
+					}), this.renderDropdownItem = (e, t) => a.a.createElement(Wt.b, {
 						children: e.contentJsx || e.icon,
 						displayText: e.displayText,
 						isSelected: t,
@@ -3875,7 +3875,7 @@
 						onClick: this.onToggleDropdown
 					}, a.a.createElement("div", {
 						className: Jt.a.labelWrapper
-					}, s(o), a.a.createElement(Wt.b, null)), a.a.createElement(Gt, {
+					}, s(o), a.a.createElement(Ht.b, null)), a.a.createElement(Gt, {
 						tooltipTarget: this.tooltipTarget,
 						isOpen: this.props.isDropdownOpen,
 						renderContentsHidden: !0
@@ -3890,7 +3890,7 @@
 					}
 				}))(Kt),
 				Yt = s("./src/reddit/constants/listingSorts.ts");
-			const Qt = [l.P.HOT, l.P.NEW, l.P.TOP, l.P.RISING];
+			const Qt = [l.O.HOT, l.O.NEW, l.O.TOP, l.O.RISING];
 			var Xt = e => {
 				const {
 					dropdownId: t
@@ -3908,7 +3908,7 @@
 					selectedKey: e.sort
 				})
 			};
-			const $t = [l.Sb.HOUR, l.Sb.DAY, l.Sb.WEEK, l.Sb.MONTH, l.Sb.YEAR, l.Sb.ALL];
+			const $t = [l.Rb.HOUR, l.Rb.DAY, l.Rb.WEEK, l.Rb.MONTH, l.Rb.YEAR, l.Rb.ALL];
 			var es = e => {
 					const {
 						dropdownId: t
@@ -4160,8 +4160,8 @@
 				Fs = s("./src/reddit/components/Settings/DesktopNotifications/TurnOnDesktopNotificationsModal/index.m.less"),
 				Us = s.n(Fs);
 			const {
-				fbt: Hs
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ws = be.a.wrapped(Ps.m, "ModalText", Us.a);
+				fbt: Ws
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Hs = be.a.wrapped(Ps.m, "ModalText", Us.a);
 			class zs extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
@@ -4175,13 +4175,13 @@
 					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				render() {
-					return a.a.createElement(Ps.c, null, a.a.createElement(Ps.g, null, a.a.createElement(Ps.n, null, Hs._("Turn on Desktop Notifications", null, {
+					return a.a.createElement(Ps.c, null, a.a.createElement(Ps.g, null, a.a.createElement(Ps.n, null, Ws._("Turn on Desktop Notifications", null, {
 						hk: "dbEX1"
-					}))), a.a.createElement(Ps.j, null, a.a.createElement(Ws, null, a.a.createElement(Rs.a, {
+					}))), a.a.createElement(Ps.j, null, a.a.createElement(Hs, null, a.a.createElement(Rs.a, {
 						className: Us.a.row
 					}, a.a.createElement("div", {
 						className: Us.a.stepNumber
-					}, "1"), Hs._("Click on{lockIcon}in your Chrome browser address bar", [Hs._param("lockIcon", a.a.createElement(Ms.a, {
+					}, "1"), Ws._("Click on{lockIcon}in your Chrome browser address bar", [Ws._param("lockIcon", a.a.createElement(Ms.a, {
 						className: Us.a.icon
 					}))], {
 						hk: "1fzz4J"
@@ -4189,7 +4189,7 @@
 						className: Us.a.row
 					}, a.a.createElement("div", {
 						className: Us.a.stepNumber
-					}, "2"), Hs._("Select{settingsIcon}site settings", [Hs._param("settingsIcon", a.a.createElement(As.a, {
+					}, "2"), Ws._("Select{settingsIcon}site settings", [Ws._param("settingsIcon", a.a.createElement(As.a, {
 						className: Us.a.icon
 					}))], {
 						hk: "46Cjhq"
@@ -4197,13 +4197,13 @@
 						className: Us.a.row
 					}, a.a.createElement("div", {
 						className: Us.a.stepNumber
-					}, "3"), Hs._("Change{notifyIcon}notifications to 'Allow'", [Hs._param("notifyIcon", a.a.createElement(Bs, {
+					}, "3"), Ws._("Change{notifyIcon}notifications to 'Allow'", [Ws._param("notifyIcon", a.a.createElement(Bs, {
 						className: Us.a.notify
 					}))], {
 						hk: "1nkJPj"
 					})))), a.a.createElement(Ps.e, null, a.a.createElement(y.f, {
 						onClick: this.props.onClose
-					}, Hs._("Got it", null, {
+					}, Ws._("Got it", null, {
 						hk: "2PWXZB"
 					}))))
 				}
@@ -4708,8 +4708,8 @@
 				});
 			var vn = Object(r.b)(fn, (e, t) => ({
 					addBlocked: t => e(Object(Ue.h)(t)),
-					addWhitelisted: t => e(Object(He.g)(t)),
-					removeWhitelisted: t => e(Object(He.h)(t)),
+					addWhitelisted: t => e(Object(We.g)(t)),
+					removeWhitelisted: t => e(Object(We.h)(t)),
 					removeBlocked: t => e(Object(Ue.g)(t)),
 					saveChatSettings: t => e(Object(Fe.c)(t)),
 					enable2FA: () => e(Object(g.d)()),
@@ -5074,13 +5074,13 @@
 					save: (t, s) => e(Object(xn.E)(t, s)),
 					toggleNSFWModal: () => e(Object(f.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(ws.c)(Fn)),
-				Hn = Object(o.c)({
+				Wn = Object(o.c)({
 					isLoading: e => !Object(jn.a)(e)
 				}),
-				Wn = Object(r.b)(Hn)(On);
+				Hn = Object(r.b)(Wn)(On);
 			var zn = class extends a.a.Component {
 					render() {
-						return a.a.createElement(Wn, {
+						return a.a.createElement(Hn, {
 							loaderSize: 50,
 							render: () => a.a.createElement(Un, null)
 						})
@@ -5307,37 +5307,37 @@
 				wa = s("./src/reddit/helpers/trackers/premiumSettings.ts"),
 				_a = s("./src/reddit/selectors/platform.ts");
 			const ja = (e, t, s, n, r, o) => ((e, t, s, n) => [{
-					key: l.Ob.Account,
+					key: l.Nb.Account,
 					title: Object(k.c)("Account")
 				}, {
-					key: l.Ob.Profile,
+					key: l.Nb.Profile,
 					title: Object(k.c)("Profile")
 				}, {
-					key: l.Ob.Privacy,
+					key: l.Nb.Privacy,
 					title: Object(k.c)("Privacy & Security")
 				}, {
-					key: l.Ob.Feed,
+					key: l.Nb.Feed,
 					title: Object(k.c)("Feed Settings")
 				}, {
-					key: l.Ob.Notifications,
+					key: l.Nb.Notifications,
 					title: Object(k.c)("Notifications")
 				}, {
-					key: l.Ob.Premium,
+					key: l.Nb.Premium,
 					title: Object(k.c)("Reddit Premium")
 				}, {
-					key: l.Ob.Creator,
+					key: l.Nb.Creator,
 					title: Object(k.c)("Reddit Creator"),
 					disabled: !t
 				}, {
-					key: l.Ob.Payments,
+					key: l.Nb.Payments,
 					title: Object(k.c)("Payments"),
 					disabled: !n.length
 				}, {
-					key: l.Ob.SpecialMembership,
+					key: l.Nb.SpecialMembership,
 					title: Object(k.c)("Special Memberships"),
 					disabled: !s
 				}, {
-					key: l.Ob.Messaging,
+					key: l.Nb.Messaging,
 					title: Object(k.c)("Chat & Messaging")
 				}])(0, n, r, o).filter(e => !e.disabled).map((t, n) => a.a.createElement(Oa.a, {
 					to: "/settings/".concat(t.key),
@@ -5431,7 +5431,7 @@
 						}))
 					}, this.getSource = () => {
 						const e = this.props.match.params.page;
-						return e && e !== l.Ob.Account ? "".concat("settings", "_").concat(e) : "settings"
+						return e && e !== l.Nb.Account ? "".concat("settings", "_").concat(e) : "settings"
 					}, this.getTrackingValue = function(t, s) {
 						let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const a = n ? e.props.prefs[t] : s;
@@ -5449,30 +5449,30 @@
 							update: this.update
 						};
 						switch (e) {
-							case l.Ob.Account:
+							case l.Nb.Account:
 								return a.a.createElement(Le, i);
-							case l.Ob.Profile:
+							case l.Nb.Profile:
 								return a.a.createElement(zn, i);
-							case l.Ob.Premium:
+							case l.Nb.Premium:
 								return a.a.createElement(bn.b, i);
-							case l.Ob.Notifications:
+							case l.Nb.Notifications:
 								return a.a.createElement(Ys, i);
-							case l.Ob.Privacy:
+							case l.Nb.Privacy:
 								return a.a.createElement(vn, i);
-							case l.Ob.Messaging:
+							case l.Nb.Messaging:
 								return a.a.createElement(pt, i);
-							case l.Ob.Feed:
+							case l.Nb.Feed:
 								return a.a.createElement(vs, i);
-							case l.Ob.Payments:
+							case l.Nb.Payments:
 								return a.a.createElement(pn, null);
-							case l.Ob.Creator: {
+							case l.Nb.Creator: {
 								const e = Object(d.a)(n.search);
 								return r ? a.a.createElement(Lt, {
 									stripeConnectCode: e.get("code"),
 									stripeConnectStateToken: e.get("state")
 								}) : null
 							}
-							case l.Ob.SpecialMembership:
+							case l.Nb.SpecialMembership:
 								return o ? a.a.createElement(Ca, null) : null;
 							default:
 								return a.a.createElement(Le, i)
@@ -5503,7 +5503,7 @@
 						title: Object(k.c)("User settings"),
 						icon: Oa.b.GEAR
 					}, ja(e.params.page, t, {
-						[l.Ob.Premium]: this.onPremiumTabClick
+						[l.Nb.Premium]: this.onPremiumTabClick
 					}, s, n, r)), this.renderForm(e.params.page))
 				}
 			}
@@ -5519,4 +5519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.17a81f93d38531825ad1.js.map
+//# sourceMappingURL=Settings.65cfd9bf37fa43df6be5.js.map

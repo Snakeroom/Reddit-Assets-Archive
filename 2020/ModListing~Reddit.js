@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.022bcf29c7b206f1b3c8.js
-// Retrieved at 3/19/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.b7cc3f034c9d86e9238d.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -21,7 +21,7 @@
 				class n extends i.Component {
 					constructor(e) {
 						super(e), this.handleKeyDown = e => {
-							e.keyCode === d.G && this.props.onKeyDown(e)
+							e.keyCode === d.F && this.props.onKeyDown(e)
 						}, this.handleMouseClick = e => {
 							this.props.onMouseClick(e)
 						}, this.handleResize = o()(e => {
@@ -952,15 +952,15 @@
 			}(s || (s = {}));
 			var d = n("./src/lib/constants/index.ts"),
 				l = n("./src/reddit/helpers/postCollection.ts");
-			const u = [d.Bb.COMMENTS, d.Bb.COLLECTION_COMMENTS],
+			const u = [d.Ab.COMMENTS, d.Ab.COLLECTION_COMMENTS],
 				p = (e, t) => {
 					if (!e) return [];
 					const n = u.includes(e),
-						s = e === d.Bb.COLLECTION_COMMENTS || t && Object(l.a)(t),
-						o = d.O.has(e),
-						i = d.sb.has(e),
-						a = e === d.Bb.SUBREDDIT,
-						c = e === d.Bb.TOPIC;
+						s = e === d.Ab.COLLECTION_COMMENTS || t && Object(l.a)(t),
+						o = d.N.has(e),
+						i = d.rb.has(e),
+						a = e === d.Ab.SUBREDDIT,
+						c = e === d.Ab.TOPIC;
 					let p, m, f;
 					return o && !a || i ? p = r.HeaderSelector : s ? p = r.Collection : n ? p = r.PostComments : c && (p = r.TopicHeader), (o || i || s || n) && (m = r.Widget), (o || n) && (f = r.PostItem), [p, m, f]
 				};
@@ -2102,7 +2102,7 @@
 			})), n.d(t, "c", (function() {
 				return R
 			})), n.d(t, "o", (function() {
-				return U
+				return F
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var r = n("./src/lib/constants/index.ts"),
@@ -2129,7 +2129,7 @@
 						name: p
 					} = u.meta;
 					if (p) switch (p) {
-						case r.Bb.COMMENTS: {
+						case r.Ab.COMMENTS: {
 							const {
 								partialCommentId: r,
 								partialPostId: s
@@ -2142,74 +2142,74 @@
 							Object(v.a)(I(u, c, p, n, a, m)(t));
 							break
 						}
-						case r.Bb.INDEX:
-						case r.Bb.LISTING:
-						case r.Bb.MULTIREDDIT:
-						case r.Bb.SUBREDDIT: {
+						case r.Ab.INDEX:
+						case r.Ab.LISTING:
+						case r.Ab.MULTIREDDIT:
+						case r.Ab.SUBREDDIT: {
 							const s = Object(i.c)(e, t);
 							if (!s.listingKey) return;
 							const {
 								params: o,
 								queryParams: c
 							} = e.match, {
-								sort: d = (s.sort ? s.sort : r.P.HOT)
+								sort: d = (s.sort ? s.sort : r.O.HOT)
 							} = o, l = c.t;
 							Object(v.a)(O(s.listingKey, d, n, a, l)(t));
 							break
 						}
-						case r.Bb.TOPIC: {
+						case r.Ab.TOPIC: {
 							const s = Object(i.c)(e, t);
 							if (!s.listingKey) return;
 							const {
 								params: o
-							} = e.match, c = s.sort ? s.sort : r.Q, {
+							} = e.match, c = s.sort ? s.sort : r.P, {
 								sort: d = c
 							} = o;
 							Object(v.a)(O(s.listingKey, d, n, a)(t));
 							break
 						}
-						case r.Bb.PROFILE_OVERVIEW: {
+						case r.Ab.PROFILE_OVERVIEW: {
 							const s = Object(i.d)(e, t);
 							if (!s) return;
 							const {
 								params: o,
 								queryParams: c
 							} = e.match, {
-								sort: d = r.ub
+								sort: d = r.tb
 							} = o, l = c.t;
 							Object(v.a)(j(s, d, n, a, l)(t));
 							break
 						}
-						case r.Bb.PROFILE_POSTS: {
+						case r.Ab.PROFILE_POSTS: {
 							const s = Object(i.d)(e, t);
 							if (!s) return;
 							const {
 								queryParams: o
 							} = e.match, {
-								sort: c = r.ub,
-								t: d = r.Tb
+								sort: c = r.tb,
+								t: d = r.Sb
 							} = o;
 							Object(v.a)(w(s, c, n, a, d)(t));
 							break
 						}
-						case r.Bb.PROFILE_COMMENTS: {
+						case r.Ab.PROFILE_COMMENTS: {
 							const s = Object(i.d)(e, t);
 							if (!s) return;
 							const {
 								queryParams: o
 							} = e.match, {
-								sort: c = r.ub,
-								t: d = r.Tb
+								sort: c = r.tb,
+								t: d = r.Sb
 							} = o;
 							Object(v.a)(C(s, c, n, a, d)(t));
 							break
 						}
-						case r.Bb.SETTINGS:
-							e.match.params.page === r.Ob.Profile ? Object(c.j)(t) : Object(v.a)(L(n, a)(t));
+						case r.Ab.SETTINGS:
+							e.match.params.page === r.Nb.Profile ? Object(c.j)(t) : Object(v.a)(L(n, a)(t));
 							break;
-						case r.Bb.POST_CREATION:
+						case r.Ab.POST_CREATION:
 							break;
-						case r.Bb.POST_DRAFT: {
+						case r.Ab.POST_DRAFT: {
 							const {
 								draftId: r
 							} = e.match.params, o = Object(s.a)(e.match.params);
@@ -2217,16 +2217,16 @@
 							N(t, o, r, n, a);
 							break
 						}
-						case r.Bb.SUBREDDIT_WIKI:
-							Object(v.a)(F(n, a)(t));
+						case r.Ab.SUBREDDIT_WIKI:
+							Object(v.a)(A(n, a)(t));
 							break;
-						case r.Bb.COINS:
+						case r.Ab.COINS:
 							Object(v.a)(P(n, a)(t));
 							break;
-						case r.Bb.PREMIUM:
+						case r.Ab.PREMIUM:
 							Object(v.a)(T(n, a)(t));
 							break;
-						case r.Bb.APPEAL:
+						case r.Ab.APPEAL:
 							Object(v.a)(B(n, a)(t))
 					}
 				},
@@ -2477,7 +2477,7 @@
 					source: "global",
 					noun: "screen"
 				}, y.defaults(e)),
-				F = (e, t) => n => Object.assign({
+				A = (e, t) => n => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
@@ -2488,15 +2488,15 @@
 					userSubreddit: y.userSubreddit(n),
 					adblock: y.adblock(n)
 				}),
-				U = (e, t, n, s, o) => i => {
+				F = (e, t, n, s, o) => i => {
 					let a = !0;
-					if (t.type.indexOf(r.Nb.Posts) > -1) {
+					if (t.type.indexOf(r.Mb.Posts) > -1) {
 						const {
 							api: t
 						} = i.listings.listingOrder;
 						a = a && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(r.Nb.Subreddits) > -1 || t.type.indexOf(r.Nb.Users) > -1) {
+					if (t.type.indexOf(r.Mb.Subreddits) > -1 || t.type.indexOf(r.Mb.Users) > -1) {
 						const {
 							api: t
 						} = i.listings.postOrder;
@@ -2590,13 +2590,13 @@
 				}),
 				u = (e, t, n) => s => {
 					let a = !0;
-					if (t.type.indexOf(r.Nb.Posts) > -1) {
+					if (t.type.indexOf(r.Mb.Posts) > -1) {
 						const {
 							api: t
 						} = s.listings.listingOrder;
 						a = a && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(r.Nb.Subreddits) > -1 || t.type.indexOf(r.Nb.Users) > -1) {
+					if (t.type.indexOf(r.Mb.Subreddits) > -1 || t.type.indexOf(r.Mb.Users) > -1) {
 						const {
 							api: t
 						} = s.listings.postOrder;
@@ -2664,7 +2664,7 @@
 				y = (e, t) => n => ({
 					action: "click",
 					correlationId: Object(s.c)(s.a.SearchResults),
-					noun: e ? r.Mb.ToSubreddit : r.Mb.ToGlobal,
+					noun: e ? r.Lb.ToSubreddit : r.Lb.ToGlobal,
 					search: o.search(n, t),
 					source: i
 				}),
@@ -3252,8 +3252,8 @@
 			}));
 			var r = n("./src/lib/constants/index.ts");
 			const s = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
-				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.Bb.MODERATION_PAGES)
+				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.Ab.MODERATION_PAGES)
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.022bcf29c7b206f1b3c8.js.map
+//# sourceMappingURL=ModListing~Reddit.b7cc3f034c9d86e9238d.js.map

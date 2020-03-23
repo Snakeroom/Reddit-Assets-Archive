@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.b06c13687b9c786e7155.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.e8a0e0a189a2d3e79dcd.js
+// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -337,14 +337,14 @@
 				F = s("./src/reddit/controls/Button/index.tsx"),
 				H = s("./src/reddit/endpoints/economics/emojis.ts"),
 				G = s("./src/reddit/selectors/products.ts"),
-				q = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
-				z = s.n(q);
-			const K = "newbie_badge";
+				z = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
+				K = s.n(z);
+			const q = "newbie_badge";
 			class V extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object(H.a)(this.props.apiContext(), {
-							productId: K,
+							productId: q,
 							subredditId: this.props.subredditId
 						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => Object.assign({
 							source: "meta",
@@ -363,11 +363,11 @@
 						subredditId: s
 					} = this.props;
 					return t ? r.a.createElement("div", {
-						className: Object(d.a)(z.a.container, e)
+						className: Object(d.a)(K.a.container, e)
 					}, r.a.createElement("div", {
-						className: z.a.label
+						className: K.a.label
 					}, Object(w.c)("you just unlocked your first achievement badge")), r.a.createElement("div", {
-						className: z.a.badge
+						className: K.a.badge
 					}, r.a.createElement(R.a, {
 						fullWidth: !0,
 						badge: t,
@@ -379,7 +379,7 @@
 				}
 			}
 			const Z = Object(c.c)({
-				newbieBadge: e => Object(G.a)(e, K)
+				newbieBadge: e => Object(G.a)(e, q)
 			});
 			var Y = Object(b.b)(Object(m.c)(Object(a.b)(Z, (e, t) => {
 					let {
@@ -388,7 +388,7 @@
 					return {
 						onBadgeApplied: () => {
 							e(Object(T.d)(s, {
-								id: K
+								id: q
 							})), e(Object(U.b)(h.a.Achievement)), e(Object(U.c)({
 								subredditId: s
 							}))
@@ -461,7 +461,7 @@
 						if (Object(p.L)(e, t) !== u.g.Large) return !1;
 						if (n) {
 							const t = Object(j.f)(e, n.id)[h.a.Achievement];
-							if (t && t.type === K) return !1
+							if (t && t.type === q) return !1
 						}
 						return !0
 					},
@@ -831,8 +831,8 @@
 				o = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
 				d = e => i.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
 					experimentEligibilitySelector: c.G,
-					experimentName: n.jb
-				}) === n.qb.Enabled
+					experimentName: n.ib
+				}) === n.pb.Enabled
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -993,4 +993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.b06c13687b9c786e7155.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.e8a0e0a189a2d3e79dcd.js.map
