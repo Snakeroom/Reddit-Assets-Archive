@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.9588599a54051772d74b.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.b3b157511fa0e3471983.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -160,61 +160,65 @@
 					}, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === O.b.Subscribed, this.getId = () => P + (this.props.uniqueId || "")
 				}
 				componentDidMount() {
-					this.alreadyPurchased() || Object(x.a)({
-						apiContext: this.props.apiContext(),
-						config: {
-							billingAgreement: v(this.props.subreddit, this.props.price, this.props.meta),
-							type: "subscription"
-						},
-						elementId: this.getId(),
-						price: () => this.props.price,
-						purchaseFn: e => Object(f.c)(this.props.apiContext(), {
-							nonce: e,
-							price: this.props.price,
-							subredditId: this.props.subreddit.id,
-							trial: this.props.trial,
-							username: this.props.username
-						}),
-						username: this.props.username,
-						onCancel: () => this.setState({
-							submitting: !1
-						}),
-						onClientLoad: () => this.setState({
-							loading: !1
-						}),
-						onError: (e, t, r) => {
-							this.setState({
+					if (!this.alreadyPurchased()) {
+						const e = this.props.membershipProducts.find(e => "usd" === e.currency);
+						Object(x.a)({
+							apiContext: this.props.apiContext(),
+							config: {
+								billingAgreement: v(this.props.subreddit, this.props.price, this.props.meta),
+								type: "subscription"
+							},
+							elementId: this.getId(),
+							price: () => this.props.price,
+							purchaseFn: t => Object(f.c)(this.props.apiContext(), {
+								nonce: t,
+								price: this.props.price,
+								productId: e && e.id || "membership",
+								subredditId: this.props.subreddit.id,
+								trial: this.props.trial,
+								username: this.props.username
+							}),
+							username: this.props.username,
+							onCancel: () => this.setState({
 								submitting: !1
-							}), this.props.onError(e), this.props.sendEvent(e => {
-								const s = y.defaults(e);
-								return Object.assign({
-									source: "meta",
-									action: "fail",
-									noun: "subscription_paypal_purchase"
-								}, s, {
-									actionInfo: {
-										reason: t,
-										paneName: r
-									},
-									correlationId: this.props.correlationId,
-									subreddit: y.subreddit(e)
+							}),
+							onClientLoad: () => this.setState({
+								loading: !1
+							}),
+							onError: (e, t, r) => {
+								this.setState({
+									submitting: !1
+								}), this.props.onError(e), this.props.sendEvent(e => {
+									const s = y.defaults(e);
+									return Object.assign({
+										source: "meta",
+										action: "fail",
+										noun: "subscription_paypal_purchase"
+									}, s, {
+										actionInfo: {
+											reason: t,
+											paneName: r
+										},
+										correlationId: this.props.correlationId,
+										subreddit: y.subreddit(e)
+									})
 								})
-							})
-						},
-						onSubmitting: () => {
-							this.setState({
-								submitting: !0
-							}), this.props.sendEvent(e => Object.assign({
-								source: "meta",
-								action: "click",
-								noun: "subscription_paypal_purchase",
-								correlationId: this.props.correlationId
-							}, y.defaults(e), {
-								subreddit: y.subreddit(e)
-							}))
-						},
-						onSuccess: () => this.props.onPaymentSuccessful(this.props.isLoggedIn)
-					})
+							},
+							onSubmitting: () => {
+								this.setState({
+									submitting: !0
+								}), this.props.sendEvent(e => Object.assign({
+									source: "meta",
+									action: "click",
+									noun: "subscription_paypal_purchase",
+									correlationId: this.props.correlationId
+								}, y.defaults(e), {
+									subreddit: y.subreddit(e)
+								}))
+							},
+							onSuccess: () => this.props.onPaymentSuccessful(this.props.isLoggedIn)
+						})
+					}
 				}
 				render() {
 					return n.a.createElement("div", {
@@ -236,17 +240,23 @@
 			}
 			const S = Object(a.c)({
 				isLoggedIn: E.G,
+				membershipProducts: (e, t) => {
+					let {
+						subreddit: r
+					} = t;
+					return Object(O.o)(e, r.id)
+				},
 				meta: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(O.u)(e, r.id)
+					return Object(O.v)(e, r.id)
 				},
 				userIsPremiumSubscriber: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(O.B)(e, r.id)
+					return Object(O.C)(e, r.id)
 				}
 			});
 			t.a = Object(g.b)(Object(c.b)(S, (e, t) => {
@@ -356,7 +366,7 @@
 					let {
 						subreddit: r
 					} = t;
-					return Object(O.u)(e, r.id)
+					return Object(O.v)(e, r.id)
 				}
 			});
 			var v = Object(c.b)(P)((function(e) {
@@ -378,7 +388,7 @@
 				return I
 			}));
 			const I = "499";
-			class B extends n.a.Component {
+			class M extends n.a.Component {
 				componentDidMount() {
 					this.props.sendEvent(e => Object.assign({
 						source: "meta",
@@ -409,14 +419,14 @@
 					})) : null
 				}
 			}
-			const M = Object(i.c)({
+			const B = Object(i.c)({
 					subreddit: l.q
 				}),
-				A = Object(c.b)(M, e => ({
+				A = Object(c.b)(B, e => ({
 					onClose: () => e(Object(o.f)())
 				})),
 				T = Object(l.t)(),
-				k = Object(d.c)(B);
+				k = Object(d.c)(M);
 			t.default = Object(m.a)("spPremium", Object(a.a)(T(A(k))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less": function(e, t, r) {
@@ -664,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.9588599a54051772d74b.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.b3b157511fa0e3471983.js.map

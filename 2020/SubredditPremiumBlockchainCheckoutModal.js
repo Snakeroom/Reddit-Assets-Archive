@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.e4c7927f575fccc4f4e9.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.6aa91a5eebe5ef3932c1.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,11 +83,11 @@
 				y = s("./src/reddit/controls/FormFields/index.tsx"),
 				O = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = s("./src/reddit/featureFlags/component.tsx"),
-				M = s("./src/reddit/helpers/governance/ethereum.ts"),
-				P = s("./src/reddit/helpers/governance/stellar.ts"),
+				P = s("./src/reddit/helpers/governance/ethereum.ts"),
+				M = s("./src/reddit/helpers/governance/stellar.ts"),
 				S = s("./src/reddit/i18n/components.tsx"),
-				T = s("./src/reddit/i18n/utils.ts"),
-				I = s("./src/reddit/models/Toast/index.ts"),
+				I = s("./src/reddit/i18n/utils.ts"),
+				T = s("./src/reddit/models/Toast/index.ts"),
 				A = s("./src/reddit/selectors/economics.ts"),
 				B = s("./src/reddit/selectors/subreddit.ts"),
 				D = s("./src/reddit/constants/disclaimers.ts"),
@@ -98,7 +98,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(A.u)(e, s)
+					return Object(A.v)(e, s)
 				}
 			});
 			var G = Object(l.b)(L)((function(e) {
@@ -124,7 +124,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(A.u)(e, s)
+					return Object(A.v)(e, s)
 				}
 			});
 			var X, Y = Object(l.b)(U)((function(e) {
@@ -168,7 +168,7 @@
 						if (!e) throw new Error("could not find subscription contract address");
 						this.setState({
 							purchasePending: !0
-						}), Object(M.g)(e, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
+						}), Object(P.g)(e, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
 							this.pollForMembership()
 						}).catch(e => {
 							this.props.onError(e.message), this.setState({
@@ -189,24 +189,24 @@
 				}
 				getMonthsUserCanAfford() {
 					const e = this.props.wallet && this.props.wallet.amount;
-					return e ? new n.BigNumber(e).dividedToIntegerBy(this.props.meta.price).toNumber() : 0
+					return e ? new n.BigNumber(e).dividedToIntegerBy(this.props.priceInPoints).toNumber() : 0
 				}
 				getStellarPurchaseLink() {
 					const {
-						meta: e,
+						priceInPoints: e,
 						tokenDisplayConversion: t,
 						unlockedToken: s
 					} = this.props, {
 						numMonths: r
-					} = this.state, a = new n.BigNumber(e.price).multipliedBy(r).toString();
-					return Object(P.a)(s && s.address || "", s && s.symbol || "", Object(x.b)(a, t) || "0")
+					} = this.state, a = new n.BigNumber(e).multipliedBy(r).toString();
+					return Object(M.a)(s && s.address || "", s && s.symbol || "", Object(x.b)(a, t) || "0")
 				}
 				pollForMembership() {
 					if (!this.pollForMembershipSuccessTimeout) {
 						const e = this.props.subscriptionExpiration;
 						let t = 0;
 						this.pollForMembershipSuccessTimeout = window.setInterval(async () => {
-							await this.props.onFetchSubredditMembership(), this.props.subscriptionExpiration !== e ? (this.props.onSuccess(), this.props.onClose(), this.stopPollingForMembership()) : t > 30 && (this.props.onError(Object(T.c)("No membership found. Please check again after waiting for transaction to succeed, or try again if it failed.")), this.setState({
+							await this.props.onFetchSubredditMembership(), this.props.subscriptionExpiration !== e ? (this.props.onSuccess(), this.props.onClose(), this.stopPollingForMembership()) : t > 30 && (this.props.onError(Object(I.c)("No membership found. Please check again after waiting for transaction to succeed, or try again if it failed.")), this.setState({
 								purchasePending: !1
 							}), this.stopPollingForMembership()), t++
 						}, this.props.isEthereumProvider ? Z : K)
@@ -219,17 +219,18 @@
 					const {
 						onClose: e,
 						meta: t,
-						subreddit: s,
-						subredditId: a,
-						tokenName: o
+						priceInPoints: s,
+						subreddit: a,
+						subredditId: o,
+						tokenName: i
 					} = this.props, {
-						numMonths: i,
-						purchasePending: l
-					} = this.state, d = i > this.getMonthsUserCanAfford();
+						numMonths: l,
+						purchasePending: d
+					} = this.state, u = l > this.getMonthsUserCanAfford();
 					return c.a.createElement("div", {
 						className: z.a.container
 					}, c.a.createElement(Y, {
-						subredditId: a,
+						subredditId: o,
 						onClose: e
 					}), c.a.createElement("div", {
 						className: z.a.content
@@ -240,36 +241,36 @@
 					}, c.a.createElement("img", {
 						className: z.a.crown,
 						src: "".concat(r.a.assetPath, "/img/memberships/paywall/fortnitebr/Crown.gif")
-					}), s.displayText, " ", t.membershipAlt), c.a.createElement("div", {
+					}), a.displayText, " ", t.membershipAlt), c.a.createElement("div", {
 						className: z.a.months
 					}, c.a.createElement(y.c, {
 						className: z.a.monthsInput,
 						type: "number",
-						label: Object(T.c)("Months"),
-						value: i,
+						label: Object(I.c)("Months"),
+						value: l,
 						onChange: this.onMonthsChange
 					}), c.a.createElement("div", {
 						className: z.a.days
 					}, c.a.createElement(S.c, null, c.a.createElement(S.b, {
 						name: "numberOfDays"
-					}, 30 * i), " DAYS"))), c.a.createElement(h.a, {
-						amount: new n.BigNumber(t.price).multipliedBy(i).toString(),
-						subredditId: a
-					})), d && c.a.createElement("div", {
+					}, 30 * l), " DAYS"))), c.a.createElement(h.a, {
+						amount: new n.BigNumber(s).multipliedBy(l).toString(),
+						subredditId: o
+					})), u && c.a.createElement("div", {
 						className: z.a.errorMessage
 					}, c.a.createElement(S.c, null, "You do not have enough ", c.a.createElement(S.b, {
 						name: "subredditToken"
-					}, o), ".")), c.a.createElement("div", {
+					}, i), ".")), c.a.createElement("div", {
 						className: z.a.purchase
 					}, c.a.createElement(N, {
 						className: z.a.walletAmount,
-						subredditId: a
+						subredditId: o
 					}), this.props.isEthereumProvider ? c.a.createElement(k.f, {
 						className: z.a.purchaseButton,
 						onClick: this.onEthereumPurchase,
 						"data-redditstyle": !0,
-						disabled: d
-					}, l ? c.a.createElement(O.a, {
+						disabled: u
+					}, d ? c.a.createElement(O.a, {
 						sizePx: 10
 					}) : c.a.createElement(S.c, null, "Purchase")) : c.a.createElement(k.g, {
 						redditStyle: !0,
@@ -277,14 +278,14 @@
 						href: this.getStellarPurchaseLink(),
 						target: "_blank",
 						onClick: this.onStellarPurchase
-					}, l ? c.a.createElement(O.a, {
+					}, d ? c.a.createElement(O.a, {
 						sizePx: 10
 					}) : c.a.createElement(S.c, null, "Purchase")))), !this.props.isEthereumProvider && c.a.createElement("div", {
 						className: z.a.purchaseInstructions
 					}, c.a.createElement(S.c, null, "Use the button above to generate a transaction URL to purchase a ", c.a.createElement(S.b, {
 						name: "membershipName"
 					}, t.membershipAlt), ". After the transaction completes, wait a few minutes and then refresh the page to use your new subscription. You can use the same process to add additional months.")), c.a.createElement(G, {
-						subredditId: a
+						subredditId: o
 					}))
 				}
 			}
@@ -294,13 +295,19 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(A.u)(e, s)
+						return Object(A.v)(e, s)
+					},
+					priceInPoints: (e, t) => {
+						let {
+							subredditId: s
+						} = t;
+						return Object(A.v)(e, s).prices.points || "0"
 					},
 					subscriptionExpiration: (e, t) => {
 						let {
 							subredditId: s
 						} = t;
-						return Object(A.q)(e, s)
+						return Object(A.r)(e, s)
 					},
 					subreddit: B.P,
 					subscriptionCryptoDetails: v.n,
@@ -313,13 +320,13 @@
 					onFetchSubredditMembership: () => e(Object(m.f)(t.subredditId, !0)),
 					onSuccess: () => e(Object(p.e)({
 						duration: 1e4,
-						kind: I.b.SuccessCommunityGreen,
-						text: Object(T.c)("Your membership purchase was successful! Thank you for your support!")
+						kind: T.b.SuccessCommunityGreen,
+						text: Object(I.c)("Your membership purchase was successful! Thank you for your support!")
 					})),
 					onError: t => e(Object(p.e)({
 						duration: 1e4,
-						kind: I.b.Error,
-						text: t || Object(T.c)("Something wen't wrong with the purchase. Please try again later.")
+						kind: T.b.Error,
+						text: t || Object(I.c)("Something wen't wrong with the purchase. Please try again later.")
 					}))
 				})),
 				ee = Object(_.c)(J);
@@ -986,4 +993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.e4c7927f575fccc4f4e9.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.6aa91a5eebe5ef3932c1.js.map

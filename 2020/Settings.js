@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e773f5079540c15fb96d.js
-// Retrieved at 3/18/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.17a81f93d38531825ad1.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -3805,7 +3805,7 @@
 			}
 			const Pt = Object(o.c)({
 					language: e => e.user.language,
-					stripeConnected: wt.z
+					stripeConnected: wt.A
 				}),
 				It = Object(r.b)(Pt, e => ({
 					onError: t => e(Object(w.e)({
@@ -4673,7 +4673,7 @@
 				}
 			}
 			const cn = Object(o.c)({
-					savedPayments: wt.r,
+					savedPayments: wt.s,
 					language: e => e.user.language
 				}),
 				ln = Object(r.b)(cn, e => ({
@@ -5346,8 +5346,8 @@
 					onClick: s[t.key]
 				}, t.title)),
 				ka = Object(o.c)({
-					savedPayments: wt.r,
-					userIsWhitelistedCreator: wt.C,
+					savedPayments: wt.s,
+					userIsWhitelistedCreator: wt.D,
 					allowNavigationCallback: _a.a,
 					language: C.O,
 					prefs: e => e.user.prefs,
@@ -5519,4 +5519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.e773f5079540c15fb96d.js.map
+//# sourceMappingURL=Settings.17a81f93d38531825ad1.js.map

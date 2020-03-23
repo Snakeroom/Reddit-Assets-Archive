@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.4d18edee7ae1134f863e.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.3878a49eb7b2a7a1810f.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -166,7 +166,7 @@
 						r = Object(x.f)(n, e),
 						a = Object(f.a)(n, t);
 					if (!r[Object(h.d)(a.placement)] && a) {
-						const t = Object(x.o)(n, {
+						const t = Object(x.p)(n, {
 							subredditId: e,
 							badge: a
 						});
@@ -1241,7 +1241,7 @@
 					hasViewedMarkdownModeFtuUx: Fe.e,
 					userCanUseGifs: (e, t) => {
 						const n = Object(Re.o)(e, t);
-						return Object(G.x)(e, n ? n.id : void 0, t.parentCommentId)
+						return Object(G.y)(e, n ? n.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
 					cancelModalToggled: () => e(Object(ye.i)(Object(Ce.a)(t.draftKey)))
@@ -2499,7 +2499,7 @@
 						orderTarget: "special_membership",
 						price: t.trial ? "0" : t.price,
 						products: [{
-							productId: t.trial ? "trial_membership" : "membership",
+							productId: t.productId,
 							quantity: "1"
 						}],
 						providerArgs: {
@@ -2728,4 +2728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.4d18edee7ae1134f863e.js.map
+//# sourceMappingURL=RichTextEditor.3878a49eb7b2a7a1810f.js.map

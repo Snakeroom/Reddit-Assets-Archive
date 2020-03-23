@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmotesTooltip.03d8ffbb1b6184005a84.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmotesTooltip.6270ea9a7426b20316ae.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/tooltip.m.less": function(e, t, o) {
@@ -53,9 +53,9 @@
 				w = o("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				x = o("./src/reddit/components/RichTextEditor/emotes/tooltip.m.less"),
 				A = o.n(x);
-			const B = e => "tooltip-emote-".concat(e),
-				C = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => "https://meta.redditmedia.com/img/fortnitebr/emotes/".concat(e, "-2x.gif"));
-			class k extends n.a.Component {
+			const C = e => "tooltip-emote-".concat(e),
+				k = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => "https://meta.redditmedia.com/img/fortnitebr/emotes/".concat(e, "-2x.gif"));
+			class B extends n.a.Component {
 				constructor() {
 					super(...arguments), this.bodyEl = null, this.updateTooltipPosition = null, this.state = {
 						isTooltipVisible: !1,
@@ -210,7 +210,7 @@
 				focusOnTooltip() {
 					const e = this.getMatchingEmotes(this.state.emoteBeingTyped),
 						t = e[0] && e[0].emotes[0];
-					t && Object(m.a)(B(t.id))
+					t && Object(m.a)(C(t.id))
 				}
 				returnFocusToEditor() {
 					const {
@@ -253,7 +253,7 @@
 					}, e.emotes.map(e => n.a.createElement("button", {
 						key: e.id,
 						className: A.a.emoteButton,
-						id: B(e.id),
+						id: C(e.id),
 						title: e.id,
 						onClick: () => this.onEmoteClick(e),
 						onKeyDown: this.onKeyPressedInTooltip,
@@ -267,7 +267,7 @@
 						className: A.a.upsell
 					}, n.a.createElement("div", {
 						className: Object(d.a)(A.a.upsellMoreEmotes, A.a.emotes)
-					}, C.map(e => n.a.createElement("img", {
+					}, k.map(e => n.a.createElement("img", {
 						className: A.a.upsellMoreEmotesImg,
 						src: e
 					}))), n.a.createElement(g.h, {
@@ -304,7 +304,7 @@
 						subreddit: o
 					} = t;
 					if (o.id) {
-						return Object(v.B)(e, o.id) === v.b.NotSubscribed
+						return Object(v.C)(e, o.id) === v.b.NotSubscribed
 					}
 					return !1
 				}
@@ -312,7 +312,7 @@
 				onOpenUploadDialog: () => e(Object(h.i)({
 					uploadAssetType: b.b.Emote
 				}))
-			}))(Object(u.c)(k))
+			}))(Object(u.c)(B))
 		},
 		"./src/reddit/endpoints/economics/uploadedAssets.ts": function(e, t, o) {
 			"use strict";
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmotesTooltip.03d8ffbb1b6184005a84.js.map
+//# sourceMappingURL=EmotesTooltip.6270ea9a7426b20316ae.js.map

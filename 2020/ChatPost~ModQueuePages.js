@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.7ab647ea8804d965d564.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.d92f3b42c968d3f6593d.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, o, t) {
@@ -114,7 +114,7 @@
 						return e.posts.models[t]
 					},
 					tippers: (e, o) => {
-						if (E.d.spTopTippers(e)) return Object(x.v)(e, o)
+						if (E.d.spTopTippers(e)) return Object(x.w)(e, o)
 					}
 				}))((function(e) {
 					if (e.tippers && e.tippers.allTippers.has(e.userId)) {
@@ -246,7 +246,7 @@
 						let {
 							comment: t
 						} = o;
-						return !!Object(x.t)(e, t.subredditId, t.authorId).length
+						return !!Object(x.u)(e, t.subredditId, t.authorId).length
 					},
 					subredditDisplayText: (e, o) => {
 						const t = Object(ee.G)(e, {
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~ModQueuePages.7ab647ea8804d965d564.js.map
+//# sourceMappingURL=ChatPost~ModQueuePages.d92f3b42c968d3f6593d.js.map

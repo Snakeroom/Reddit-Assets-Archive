@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.fefebd332851c07ddd9d.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5b8d32c417505b64e26f.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -53,9 +53,9 @@
 			})), n.d(t, "f", (function() {
 				return A
 			})), n.d(t, "g", (function() {
-				return D
-			})), n.d(t, "j", (function() {
 				return q
+			})), n.d(t, "j", (function() {
+				return D
 			})), n.d(t, "c", (function() {
 				return H
 			}));
@@ -106,7 +106,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(O.a)(n, o.error || o.errors[0].messsage)
-				}, D = (e, t) => async (n, s, d) => {
+				}, q = (e, t) => async (n, s, d) => {
 					let {
 						apiContext: l
 					} = d;
@@ -144,7 +144,7 @@
 					} else n(_({
 						error: m.error
 					})), Object(O.a)(n, m.error)
-				}, q = e => async (t, n, r) => {
+				}, D = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -245,7 +245,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return Object(g.D)(e, n)
+					return Object(g.E)(e, n)
 				}
 			});
 			t.default = Object(p.a)("spPublicPoints", Object(o.b)(y, e => ({
@@ -679,4 +679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.fefebd332851c07ddd9d.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.5b8d32c417505b64e26f.js.map

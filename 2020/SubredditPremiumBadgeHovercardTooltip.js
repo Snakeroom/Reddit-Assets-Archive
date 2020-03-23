@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.9c417dbe155cba5faf15.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.3d88635054e3661dc382.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -64,8 +64,8 @@
 				x = r("./src/reddit/actions/tooltip.ts"),
 				P = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.tsx"),
 				I = r("./src/reddit/controls/Button/index.tsx"),
-				B = r("./src/reddit/helpers/economics/membershipPage.ts"),
-				C = r("./src/reddit/i18n/utils.ts"),
+				C = r("./src/reddit/helpers/economics/membershipPage.ts"),
+				B = r("./src/reddit/i18n/utils.ts"),
 				S = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/EducationFooter/index.m.less"),
 				w = r.n(S);
 			const N = Object(c.c)({
@@ -95,7 +95,7 @@
 						className: Object(u.a)(e.className, w.a.container)
 					}, o.a.createElement(v.a, {
 						className: w.a.wrapper,
-						to: Object(B.a)(t, r),
+						to: Object(C.a)(t, r),
 						onClick: s
 					}, o.a.createElement(P.a, {
 						className: w.a.benefits,
@@ -103,9 +103,9 @@
 					})), o.a.createElement(I.h, {
 						className: w.a.link,
 						disabled: !e.subreddit,
-						to: Object(B.a)(t, r),
+						to: Object(C.a)(t, r),
 						onClick: s
-					}, Object(C.c)("Learn More")))
+					}, Object(B.c)("Learn More")))
 				}))),
 				k = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				M = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/GalleryFooter/index.m.less"),
@@ -139,7 +139,7 @@
 								subreddit: j.subreddit(e)
 							})), e.onOpen()
 						}
-					}, Object(C.c)("Get")))
+					}, Object(B.c)("Get")))
 				}))),
 				A = r("./src/reddit/actions/chat/toggle.ts"),
 				F = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/LFGFooter/index.m.less"),
@@ -166,7 +166,7 @@
 								subreddit: j.subreddit(e)
 							})), e.onStartChat()
 						}
-					}, Object(C.c)("start chat")))
+					}, Object(B.c)("start chat")))
 				}))),
 				T = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/ManagementFooter/index.m.less"),
 				W = r.n(T);
@@ -191,7 +191,7 @@
 						onClick: t => {
 							t.stopPropagation(), e.onOpen()
 						}
-					}, Object(C.c)("View")))
+					}, Object(B.c)("View")))
 				})),
 				Z = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/index.m.less"),
 				J = r.n(Z);
@@ -246,7 +246,7 @@
 				}
 			}
 			const U = Object(c.c)({
-				ownedBadge: h.o,
+				ownedBadge: h.p,
 				premiumSubscriptionsEnabled: f.d.spPremiumSubscriptions,
 				relevantProduct: (e, t) => {
 					let {
@@ -260,7 +260,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return Object(h.B)(e, r)
+					return Object(h.C)(e, r)
 				}
 			});
 			var X = Object(g.c)(Object(n.b)(U)(K));
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.9c417dbe155cba5faf15.js.map
+//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.3d88635054e3661dc382.js.map

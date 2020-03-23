@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2f1e821b8b4f92fa2b07.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.88ecdda7b2887a2cefe9.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25379,11 +25379,11 @@
 					spBadges: x.c,
 					spClaimablePoints: x.d,
 					spCustomBadges: x.f,
+					spCustomCrypto: x.g,
 					spCommunityTipJar: x.e,
-					spEmotes: x.g,
-					spEmotesModTools: x.h,
-					spFavoriteCreators: x.i,
-					spFreeTrialSubscriptions: x.j,
+					spEmotes: x.h,
+					spEmotesModTools: x.i,
+					spFavoriteCreators: x.j,
 					spGiphy: x.k,
 					spGovPolls: x.l,
 					spHarberger: x.m,
@@ -25555,9 +25555,9 @@
 				return R
 			})), n.d(t, "f", (function() {
 				return x
-			})), n.d(t, "e", (function() {
-				return N
 			})), n.d(t, "g", (function() {
+				return N
+			})), n.d(t, "e", (function() {
 				return k
 			})), n.d(t, "h", (function() {
 				return L
@@ -25607,12 +25607,12 @@
 			const s = new Set(["daonuts", "ethtrader", "karma_chameleon", "pointsrtesty", "stellartest"]),
 				o = new Set(["funkygoose", "gigapoints"]),
 				i = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
-				c = new Set(["funkygoose"]),
-				a = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
-				d = new Set(["fortnitebr", "funkygoose"]),
-				u = new Set(["funkygoose"]),
-				l = new Set(["badgesroyaletest", "fortnitebr"]),
-				b = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "stellartest"]),
+				c = new Set(["daonuts", "ethtrader", "stellartest"]),
+				a = new Set(["funkygoose"]),
+				d = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
+				u = new Set(["fortnitebr", "funkygoose"]),
+				l = new Set(["funkygoose"]),
+				b = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "stellartest"]),
 				p = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
 				f = new Set(["daonuts", "ethtrader", "funkygoose", "stellar"]),
 				m = new Set(["badgesroyaletest", "fortnitebr"]),
@@ -25620,12 +25620,12 @@
 				g = new Set([]),
 				_ = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
 				h = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				y = new Set(["daonuts", "ethtrader", "funkygoose", "badgesroyaletest", "fortnitebr", "stellartest"]),
-				j = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "stellartest"]),
+				y = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "stellartest"]),
+				j = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "stellartest"]),
 				E = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
 				I = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
 				S = new Set(["funkygoose"]),
-				v = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "shittymorph", "stellartest"]),
+				v = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "shittymorph", "stellartest"]),
 				T = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
 				C = new Set(["funkygoose"]),
 				D = new Set(["stellar", "stellartest"]),
@@ -25645,11 +25645,11 @@
 				A = w(_, s),
 				R = w(o),
 				x = w(i),
-				N = w(v, c),
-				k = w(a),
+				N = w(c),
+				k = w(v, a),
 				L = w(d),
-				M = w(v, u),
-				U = w(j, l),
+				M = w(u),
+				U = w(v, l),
 				F = w(b),
 				B = w(_, h, p),
 				G = w(_, f),
@@ -62326,4 +62326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.2f1e821b8b4f92fa2b07.js.map
+//# sourceMappingURL=Governance~Reddit.88ecdda7b2887a2cefe9.js.map

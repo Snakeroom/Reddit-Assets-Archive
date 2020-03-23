@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.55eb6d790e3d23fdfa62.js
-// Retrieved at 3/23/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3e681a6ebb7ffe4eefa6.js
+// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -72,8 +72,8 @@
 				_ = Object(r.a)(f.s),
 				P = Object(r.a)(f.t),
 				T = Object(r.a)(f.u),
-				A = Object(r.a)(f.v),
-				M = Object(r.a)(f.w),
+				M = Object(r.a)(f.v),
+				A = Object(r.a)(f.w),
 				G = Object(r.a)(f.x),
 				S = Object(r.a)(f.y),
 				L = (e, t) => async (n, s, r) => {
@@ -148,9 +148,9 @@
 					let {
 						apiContext: r
 					} = s;
-					t(M());
+					t(A());
 					const o = await Object(m.a)(r(), e);
-					o.ok ? t(G(o.body)) : t(A({
+					o.ok ? t(G(o.body)) : t(M({
 						error: o.error
 					}))
 				}, R = (e, t) => async (n, r, o) => {
@@ -183,33 +183,6 @@
 						}))
 					} else Object(y.a)(n, i.error)
 				}
-		},
-		"./src/reddit/components/Governance/ClaimPointsModal/async.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js");
-			const r = Object(s.a)({
-				resolved: {},
-				chunkName: () => "reddit-components-Governance-ClaimPointsModal",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!n.m[t]
-				},
-				importAsync: () => Promise.all([n.e("vendors~reddit-components-Governance-ClaimPointsModal"), n.e("reddit-components-Governance-ClaimPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/ClaimPointsModal/index.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return n(t)
-				},
-				resolve() {
-					return "./src/reddit/components/Governance/ClaimPointsModal/index.tsx"
-				}
-			}, {
-				ssr: !1
-			});
-			t.a = r
 		},
 		"./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -300,8 +273,8 @@
 				_ = n("./src/reddit/actions/governance/errorToast.ts"),
 				P = n("./src/reddit/actions/toaster.ts"),
 				T = n("./src/reddit/actions/tooltip.ts"),
-				A = n("./src/reddit/contexts/ApiContext.tsx"),
-				M = n("./src/reddit/controls/Dropdown/index.tsx"),
+				M = n("./src/reddit/contexts/ApiContext.tsx"),
+				A = n("./src/reddit/controls/Dropdown/index.tsx"),
 				G = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				S = n("./src/reddit/helpers/governance/ethereum.ts"),
 				L = n("./src/reddit/icons/svgs/Settings/index.tsx"),
@@ -309,7 +282,7 @@
 				D = n("./src/reddit/selectors/tooltip.ts"),
 				R = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				W = n.n(R);
-			const U = Object(N.a)(M.a),
+			const U = Object(N.a)(A.a),
 				H = "BlockchainWalletInfo--SettingsMenu";
 			class V extends o.a.PureComponent {
 				constructor() {
@@ -399,7 +372,7 @@
 						}))
 					}
 				}));
-			var F = Object(A.b)(Z(V)),
+			var F = Object(M.b)(Z(V)),
 				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				Y = n.n(X);
@@ -415,8 +388,8 @@
 					className: Y.a.riskBody
 				}, e.body))
 			}
-			var J = n("./src/reddit/components/Governance/ClaimPointsModal/async.ts"),
-				K = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+			var J = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				K = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
 				$ = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				ee = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/UnclaimedPoints/index.m.less"),
 				te = n.n(ee);
@@ -444,7 +417,7 @@
 						hk: "3sFlm8"
 					})), o.a.createElement("div", {
 						className: te.a.amount
-					}, o.a.createElement(K.a, {
+					}, o.a.createElement(J.a, {
 						className: te.a.tokenIcon,
 						amount: e,
 						subredditId: t
@@ -461,7 +434,7 @@
 						})
 					}, ne._("Claim My Points", null, {
 						hk: "1QwLXK"
-					})), this.state.modalVisible && o.a.createElement(J.a, {
+					})), this.state.modalVisible && o.a.createElement(K.a, {
 						subredditId: t,
 						onClose: () => this.setState({
 							modalVisible: !1
@@ -688,6 +661,33 @@
 					subredditId: e.subredditId
 				}), Object(c.a)(Object(l.b)(e.amount, e.tokenDisplayConversion)), e.additionalText || null)
 			}))
+		},
+		"./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js");
+			const r = Object(s.a)({
+				resolved: {},
+				chunkName: () => "reddit-components-Governance-TransactionModals-ClaimPointsModal",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!n.m[t]
+				},
+				importAsync: () => Promise.all([n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return n(t)
+				},
+				resolve() {
+					return "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx"
+				}
+			}, {
+				ssr: !1
+			});
+			t.a = r
 		},
 		"./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts": function(e, t, n) {
 			"use strict";
@@ -1229,4 +1229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.55eb6d790e3d23fdfa62.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.3e681a6ebb7ffe4eefa6.js.map
