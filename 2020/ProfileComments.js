@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.8e08b08d3e29ce0445b0.js
-// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.8f4f2290165e53492dd8.js
+// Retrieved at 3/24/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6955,26 +6955,23 @@
 		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/lodash/take.js"),
-				o = s.n(n),
-				r = s("./node_modules/react/index.js"),
-				a = s.n(r),
-				i = s("./node_modules/react-redux/es/index.js"),
-				c = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/app/strings/index.ts"),
-				l = s("./src/lib/constants/index.ts"),
-				m = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				p = s("./src/reddit/controls/Button/index.tsx"),
-				u = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				b = s("./src/reddit/layout/row/Inline/index.tsx"),
-				h = s("./src/reddit/layout/row/RightAlign/index.tsx"),
-				x = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/SidebarExpandableList/index.m.less"),
-				f = s.n(g),
-				v = s("./src/lib/lessComponent.tsx");
-			const O = 10,
-				y = v.a.wrapped(p.n, "TertiaryButton", f.a);
-			class E extends a.a.Component {
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/lodash/take.js"),
+				r = s.n(o),
+				a = s("./node_modules/react/index.js"),
+				i = s.n(a),
+				c = s("./src/lib/constants/index.ts"),
+				d = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				l = s("./src/reddit/controls/Button/index.tsx"),
+				m = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				p = s("./src/reddit/layout/row/Inline/index.tsx"),
+				u = s("./src/reddit/layout/row/RightAlign/index.tsx"),
+				b = s("./src/reddit/components/SidebarExpandableList/index.m.less"),
+				h = s.n(b),
+				x = s("./src/lib/lessComponent.tsx");
+			const g = 10,
+				f = x.a.wrapped(l.n, "TertiaryButton", h.a);
+			class v extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -6995,14 +6992,17 @@
 							expanded: e
 						} = this.state, {
 							hasMoreItems: t,
-							language: s,
-							onLoadMore: n,
+							onLoadMore: s,
 							pending: o
-						} = this.props, r = !e || t && n ? Object(d.a)(s, "sidebar.widgets.expandableList.viewMore") : Object(d.a)(s, "sidebar.widgets.expandableList.viewLess");
-						return a.a.createElement(y, {
+						} = this.props, r = !e || t && s ? n.fbt._("View More", null, {
+							hk: "1RK8uA"
+						}) : n.fbt._("View Less", null, {
+							hk: "1M72mK"
+						});
+						return i.a.createElement(f, {
 							onClick: this.onButtonClick
-						}, o ? a.a.createElement(u.a, {
-							sizePx: O
+						}, o ? i.a.createElement(m.a, {
+							sizePx: g
 						}) : r)
 					}
 				}
@@ -7012,28 +7012,24 @@
 						hasMoreItems: t,
 						headerButton: s,
 						items: n,
-						minimizedLength: r,
-						renderItem: i,
+						minimizedLength: o,
+						renderItem: a,
 						title: c
 					} = this.props, {
-						expanded: d
-					} = this.state, l = n.length > r || t, p = (!l || d ? n : o()(n, r)).map(e => i({
+						expanded: l
+					} = this.state, m = n.length > o || t, b = (!m || l ? n : r()(n, o)).map(e => a({
 						item: e
 					}));
-					return a.a.createElement(m.a, {
+					return i.a.createElement(d.a, {
 						className: e,
 						headerButton: s,
 						title: c
-					}, p, a.a.createElement(b.a, null, a.a.createElement(h.a, null, l && this.renderToggleButton())))
+					}, b, i.a.createElement(p.a, null, i.a.createElement(u.a, null, m && this.renderToggleButton())))
 				}
 			}
-			E.defaultProps = {
-				minimizedLength: l.Fb
-			};
-			const w = Object(c.c)({
-				language: x.O
-			});
-			t.a = Object(i.b)(w)(E)
+			v.defaultProps = {
+				minimizedLength: c.Fb
+			}, t.a = v
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -10253,4 +10249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.8e08b08d3e29ce0445b0.js.map
+//# sourceMappingURL=ProfileComments.8f4f2290165e53492dd8.js.map

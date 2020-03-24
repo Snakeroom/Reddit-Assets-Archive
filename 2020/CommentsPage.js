@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a2abbc9f63ce6093b130.js
-// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.19b79ae76643eba26bbf.js
+// Retrieved at 3/24/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10827,24 +10827,24 @@
 		},
 		"./src/reddit/components/RecommendedPostList/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/lodash/noop.js"),
-				o = s.n(n),
-				r = s("./node_modules/react/index.js"),
-				a = s.n(r),
-				i = s("./node_modules/react-redux/es/index.js"),
-				c = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/lib/constants/index.ts"),
-				l = s("./src/lib/makeListingKey/index.ts"),
-				m = s("./src/reddit/actions/subreddit.ts"),
-				p = s("./src/reddit/components/ListingPostList/index.tsx"),
-				u = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = s("./src/reddit/constants/elementIds.ts"),
-				b = s("./src/reddit/constants/page.ts"),
-				g = s("./src/reddit/constants/postLayout.ts"),
-				x = s("./src/reddit/helpers/postCollection.ts"),
-				f = s("./src/reddit/helpers/trackers/lightbox.ts"),
-				v = s("./src/reddit/helpers/trackers/screenview.ts"),
-				C = s("./src/reddit/i18n/components.tsx"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/lodash/noop.js"),
+				r = s.n(o),
+				a = s("./node_modules/react/index.js"),
+				i = s.n(a),
+				c = s("./node_modules/react-redux/es/index.js"),
+				d = s("./node_modules/reselect/es/index.js"),
+				l = s("./src/lib/constants/index.ts"),
+				m = s("./src/lib/makeListingKey/index.ts"),
+				p = s("./src/reddit/actions/subreddit.ts"),
+				u = s("./src/reddit/components/ListingPostList/index.tsx"),
+				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				b = s("./src/reddit/constants/elementIds.ts"),
+				g = s("./src/reddit/constants/page.ts"),
+				x = s("./src/reddit/constants/postLayout.ts"),
+				f = s("./src/reddit/helpers/postCollection.ts"),
+				v = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				C = s("./src/reddit/helpers/trackers/screenview.ts"),
 				O = s("./src/reddit/selectors/commentsListTruncated.ts"),
 				E = s("./src/reddit/selectors/dismissedTruncationList.ts"),
 				y = s("./src/reddit/selectors/experiments/chatPost.ts"),
@@ -10869,20 +10869,20 @@
 						shouldNavigateToHome: o,
 						subredditOrProfile: r
 					} = e, {
-						primaryColor: i
-					} = r, c = !o && i || Object(T.a)(Object.assign({}, e, {
+						primaryColor: a
+					} = r, c = !o && a || Object(T.a)(Object.assign({}, e, {
 						redditStyle: !0
 					})).button;
-					return a.a.createElement(I.a, {
+					return i.a.createElement(I.a, {
 						className: Object(P.a)(M.a.footer, t),
 						onMouseDown: s,
 						to: o ? w.c[w.b.Home] : r.url,
 						style: {
 							backgroundColor: c
 						}
-					}, a.a.createElement("div", {
+					}, i.a.createElement("div", {
 						className: M.a.background
-					}), a.a.createElement("div", {
+					}), i.a.createElement("div", {
 						className: M.a.layout
 					}, o ? L._("See more recommended", null, {
 						hk: "4flaFF"
@@ -10890,13 +10890,13 @@
 						hk: "2APB4y"
 					}) : L._("Continue browsing in {subredditName}", [L._param("subredditName", r.displayText)], {
 						hk: "2gUyTU"
-					}), a.a.createElement(S.a, {
+					}), i.a.createElement(S.a, {
 						className: M.a.arrow
 					})))
 				}),
 				F = s("./src/reddit/components/RecommendedPostList/index.m.less"),
 				A = s.n(F);
-			const B = Object(c.a)((e, t) => {
+			const B = Object(d.a)((e, t) => {
 					let {
 						isOverlay: s
 					} = t;
@@ -10905,29 +10905,29 @@
 					const o = Object(_.a)(n);
 					return !((!t || !o || s) && e)
 				}),
-				D = Object(c.c)({
+				D = Object(d.c)({
 					isChatPost: y.d,
 					isLoggedIn: j.F,
 					shouldShowSubredditUpsell: B
 				}),
-				W = Object(i.b)(D, e => ({
-					loadMorePosts: t => e(Object(m.r)({
-						sort: d.O.HOT,
+				W = Object(c.b)(D, e => ({
+					loadMorePosts: t => e(Object(p.r)({
+						sort: l.O.HOT,
 						subredditName: t
 					}))
 				}));
-			class H extends a.a.Component {
+			class H extends i.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(h.d) : null, this.onViewed = (e, t) => Object(v.d)(this.listingKey(), d.O.TOP, t, e, d.Rb.WEEK), this.onFooterClick = e => {
-						this.props.sendEvent(Object(f.c)("recommended_footer"))
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(b.d) : null, this.onViewed = (e, t) => Object(C.d)(this.listingKey(), l.O.TOP, t, e, l.Rb.WEEK), this.onFooterClick = e => {
+						this.props.sendEvent(Object(v.c)("recommended_footer"))
 					}
 				}
 				listingKey() {
 					const {
 						subredditOrProfile: e
 					} = this.props;
-					return Object(l.a)(e.name, d.O.TOP, {
-						t: d.Rb.WEEK
+					return Object(m.a)(e.name, l.O.TOP, {
+						t: l.Rb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -10936,11 +10936,11 @@
 					} = this.props, {
 						name: t
 					} = e;
-					return a.a.createElement("div", {
+					return i.a.createElement("div", {
 						className: A.a.smallBanner
-					}, a.a.createElement(C.c, null, "More posts from the ", a.a.createElement(C.b, {
-						name: "name"
-					}, t), " community"))
+					}, n.fbt._("More posts from the {name} community", [n.fbt._param("name", t)], {
+						hk: "2g363L"
+					}))
 				}
 				renderTextBanner() {
 					const {
@@ -10948,11 +10948,11 @@
 					} = this.props, {
 						name: t
 					} = e;
-					return a.a.createElement("span", {
+					return i.a.createElement("span", {
 						className: A.a.textBanner
-					}, a.a.createElement(C.c, null, "More from ", a.a.createElement(C.b, {
-						name: "name"
-					}, t)))
+					}, n.fbt._("More from {name}", [n.fbt._param("name", t)], {
+						hk: "Hv1mS"
+					}))
 				}
 				render() {
 					const {
@@ -10960,35 +10960,35 @@
 						isChatPost: t,
 						isLoggedIn: s,
 						post: n,
-						shouldShowSubredditUpsell: r,
-						subredditOrProfile: i
-					} = this.props, c = n && Object(x.a)(n);
-					return s || t || c || !r ? null : a.a.createElement("div", {
+						shouldShowSubredditUpsell: o,
+						subredditOrProfile: a
+					} = this.props, c = n && Object(f.a)(n);
+					return s || t || c || !o ? null : i.a.createElement("div", {
 						className: A.a.container
-					}, this.renderSmallBanner(), a.a.createElement(p.a, {
+					}, this.renderSmallBanner(), i.a.createElement(u.a, {
 						className: A.a.postList,
 						disablePlaceholder: !0,
-						forcedLayout: g.g.Large,
+						forcedLayout: x.g.Large,
 						getScrollContainer: this.scrollContainer,
 						isTruncated: !0,
 						listingKey: this.listingKey(),
-						listingName: b.c.PostDetail,
+						listingName: g.c.PostDetail,
 						listingViewed: this.onViewed,
 						loadMoreClassName: A.a.loadMore,
 						noPostsComponent: () => null,
-						onLoadMore: o.a,
+						onLoadMore: r.a,
 						preventScrollOnMount: !0,
 						inSubredditOrProfile: !0,
 						scrollContentContainerRef: e
-					}), a.a.createElement(R, {
+					}), i.a.createElement(R, {
 						className: A.a.footer,
 						onClick: this.onFooterClick,
 						shouldNavigateToHome: !1,
-						subredditOrProfile: i
+						subredditOrProfile: a
 					}))
 				}
 			}
-			t.a = W(Object(u.c)(H))
+			t.a = W(Object(h.c)(H))
 		},
 		"./src/reddit/components/ReportFlow/index.tsx": function(e, t, s) {
 			"use strict";
@@ -17067,4 +17067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.a2abbc9f63ce6093b130.js.map
+//# sourceMappingURL=CommentsPage.19b79ae76643eba26bbf.js.map

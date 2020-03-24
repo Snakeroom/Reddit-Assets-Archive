@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e4a65069fa7d49d5c5c1.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ab0a61a0c2abecffea7b.js
+// Retrieved at 3/24/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -334,8 +334,8 @@
 				W = n.n(H),
 				z = n("./src/lib/lessComponent.tsx");
 			const G = z.a.div("SidebarTopSpacer", W.a),
-				q = z.a.div("ModalTopSpacer", W.a),
-				V = z.a.div("SidebarTitleContainer", W.a),
+				V = z.a.div("ModalTopSpacer", W.a),
+				q = z.a.div("SidebarTitleContainer", W.a),
 				K = z.a.div("SidebarTitle", W.a),
 				X = z.a.wrapped(L.a, "SidebarFlair", W.a),
 				Z = z.a.div("Attributon", W.a),
@@ -376,7 +376,7 @@
 						multireddit: n,
 						onSeeMoreDetails: s,
 						subredditCategory: i
-					} = e, r = t === J.Sidebar, [d, a] = r ? [G, Z] : [q, Z], c = Object(U.f)(n) ? () => o.a.createElement(d, null, r && o.a.createElement(V, null, o.a.createElement(K, null, n.displayText), n.visibility === U.e.Private && o.a.createElement(X, {
+					} = e, r = t === J.Sidebar, [d, a] = r ? [G, Z] : [V, Z], c = Object(U.f)(n) ? () => o.a.createElement(d, null, r && o.a.createElement(q, null, o.a.createElement(K, null, n.displayText), n.visibility === U.e.Private && o.a.createElement(X, {
 						text: P.fbt._("Private", null, {
 							hk: "4Av1zq"
 						})
@@ -793,8 +793,8 @@
 				We = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				ze = n("./src/reddit/constants/zIndex.ts"),
 				Ge = n("./src/reddit/controls/TextButton/index.tsx"),
-				qe = n("./src/reddit/helpers/trackers/idCard.ts"),
-				Ve = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				Ve = n("./src/reddit/helpers/trackers/idCard.ts"),
+				qe = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				Ke = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Xe = n("./src/reddit/components/MultiredditSidebar/index.m.less"),
 				Ze = n.n(Xe);
@@ -810,7 +810,7 @@
 			}
 			const Ye = Object(l.a)(e => o.a.createElement(u.c, {
 					className: Ze.a.modalContainer
-				}, !e.shouldHideHeader && o.a.createElement(u.g, null, o.a.createElement(Ve.a, null, o.a.createElement(u.n, null, e.multireddit.displayText), o.a.createElement(Ge.a, {
+				}, !e.shouldHideHeader && o.a.createElement(u.g, null, o.a.createElement(qe.a, null, o.a.createElement(u.n, null, e.multireddit.displayText), o.a.createElement(Ge.a, {
 					onClick: e.onCloseModal
 				}, o.a.createElement(u.b, null)))), o.a.createElement(u.j, null, o.a.createElement($, {
 					mode: J.Modal,
@@ -865,11 +865,11 @@
 						subredditCategory: n
 					} = t;
 					return {
-						trackSeeMoreClicked: () => e((e, t) => qe.a(t())),
+						trackSeeMoreClicked: () => e((e, t) => Ve.a(t())),
 						trackSubredditClicked: t => {
 							if (!n) return;
 							const s = Object(be.i)(t);
-							e((e, t) => qe.b(t(), s, n.name))
+							e((e, t) => Ve.b(t(), s, n.name))
 						}
 					}
 				});
@@ -1084,26 +1084,23 @@
 		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/lodash/take.js"),
-				i = n.n(s),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				d = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/app/strings/index.ts"),
-				l = n("./src/lib/constants/index.ts"),
-				m = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				b = n("./src/reddit/layout/row/Inline/index.tsx"),
-				h = n("./src/reddit/layout/row/RightAlign/index.tsx"),
-				x = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/components/SidebarExpandableList/index.m.less"),
-				E = n.n(g),
-				O = n("./src/lib/lessComponent.tsx");
-			const y = 10,
-				f = O.a.wrapped(u.n, "TertiaryButton", E.a);
-			class C extends o.a.Component {
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				i = n("./node_modules/lodash/take.js"),
+				r = n.n(i),
+				o = n("./node_modules/react/index.js"),
+				d = n.n(o),
+				a = n("./src/lib/constants/index.ts"),
+				c = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				l = n("./src/reddit/controls/Button/index.tsx"),
+				m = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				u = n("./src/reddit/layout/row/Inline/index.tsx"),
+				p = n("./src/reddit/layout/row/RightAlign/index.tsx"),
+				b = n("./src/reddit/components/SidebarExpandableList/index.m.less"),
+				h = n.n(b),
+				x = n("./src/lib/lessComponent.tsx");
+			const g = 10,
+				E = x.a.wrapped(l.n, "TertiaryButton", h.a);
+			class O extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -1124,14 +1121,17 @@
 							expanded: e
 						} = this.state, {
 							hasMoreItems: t,
-							language: n,
-							onLoadMore: s,
+							onLoadMore: n,
 							pending: i
-						} = this.props, r = !e || t && s ? Object(c.a)(n, "sidebar.widgets.expandableList.viewMore") : Object(c.a)(n, "sidebar.widgets.expandableList.viewLess");
-						return o.a.createElement(f, {
+						} = this.props, r = !e || t && n ? s.fbt._("View More", null, {
+							hk: "1RK8uA"
+						}) : s.fbt._("View Less", null, {
+							hk: "1M72mK"
+						});
+						return d.a.createElement(E, {
 							onClick: this.onButtonClick
-						}, i ? o.a.createElement(p.a, {
-							sizePx: y
+						}, i ? d.a.createElement(m.a, {
+							sizePx: g
 						}) : r)
 					}
 				}
@@ -1141,28 +1141,24 @@
 						hasMoreItems: t,
 						headerButton: n,
 						items: s,
-						minimizedLength: r,
-						renderItem: d,
+						minimizedLength: i,
+						renderItem: o,
 						title: a
 					} = this.props, {
-						expanded: c
-					} = this.state, l = s.length > r || t, u = (!l || c ? s : i()(s, r)).map(e => d({
+						expanded: l
+					} = this.state, m = s.length > i || t, b = (!m || l ? s : r()(s, i)).map(e => o({
 						item: e
 					}));
-					return o.a.createElement(m.a, {
+					return d.a.createElement(c.a, {
 						className: e,
 						headerButton: n,
 						title: a
-					}, u, o.a.createElement(b.a, null, o.a.createElement(h.a, null, l && this.renderToggleButton())))
+					}, b, d.a.createElement(u.a, null, d.a.createElement(p.a, null, m && this.renderToggleButton())))
 				}
 			}
-			C.defaultProps = {
-				minimizedLength: l.Fb
-			};
-			const v = Object(a.c)({
-				language: x.O
-			});
-			t.a = Object(d.b)(v)(C)
+			O.defaultProps = {
+				minimizedLength: a.Fb
+			}, t.a = O
 		},
 		"./src/reddit/components/SidebarSectionHeader/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1620,8 +1616,8 @@
 						secondaryText: a
 					}, e))
 				},
-				q = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
-				V = n.n(q);
+				V = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
+				q = n.n(V);
 			const K = Object(d.d)("subredditPicker.noCommunitiesFound"),
 				X = {
 					[u.a.OWN_PROFILE]: Object(d.d)("subredditPicker.sectionOwnProfile"),
@@ -1663,7 +1659,7 @@
 					return this.props.showNoMatchesCaption && s.push(o.a.createElement(y, {
 						key: "no-matches"
 					}, o.a.createElement("div", {
-						className: V.a.noMatches
+						className: q.a.noMatches
 					}, n && K(n)))), Object(m.a)(t, {
 						keyFn: e => e.type
 					}, (i, r, d, a) => {
@@ -1692,9 +1688,9 @@
 							children: c
 						}))
 					}), o.a.createElement("div", {
-						className: Object(a.a)(V.a.container, this.props.className, {
-							[V.a.mIsValid]: this.props.isValid,
-							[V.a.mIsVisible]: s.length > 0
+						className: Object(a.a)(q.a.container, this.props.className, {
+							[q.a.mIsValid]: this.props.isValid,
+							[q.a.mIsVisible]: s.length > 0
 						}),
 						ref: this.setContainerRef,
 						onMouseDown: this.props.onContainerMouseDown,
@@ -2057,8 +2053,8 @@
 				W = n("./src/reddit/selectors/multireddit.ts"),
 				z = n("./src/reddit/selectors/user.ts"),
 				G = n("./src/reddit/actions/subscription/index.ts"),
-				q = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/reddit/components/MultiredditTopBar/Button/index.m.less")),
-				V = n.n(q);
+				V = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/reddit/components/MultiredditTopBar/Button/index.m.less")),
+				q = n.n(V);
 
 			function K() {
 				return (K = Object.assign || function(e) {
@@ -2088,14 +2084,14 @@
 						icon: d
 					} = e, a = X(e, ["className", "onClick", "children", "hoverText", "text", "icon"]);
 					return o.a.createElement("button", K({
-						className: Object(y.a)(t, V.a.button, i ? V.a.withHover : null),
+						className: Object(y.a)(t, q.a.button, i ? q.a.withHover : null),
 						onClick: n
 					}, a), o.a.createElement("span", {
-						className: V.a.icon
+						className: q.a.icon
 					}, d), r && o.a.createElement("span", {
-						className: V.a.text
+						className: q.a.text
 					}, r), i && o.a.createElement("span", {
-						className: V.a.hoverText
+						className: q.a.hoverText
 					}, i), s)
 				}),
 				Q = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2321,11 +2317,11 @@
 				}), o.a.createElement("div", {
 					className: ze.a.emptyMessageText
 				}, e.multireddit && 0 !== e.multireddit.subredditCount ? Object(w.c)("There are no posts in this custom feed") : Object(w.c)("There are 0 communities in this custom feed"))),
-				qe = Object(B.t)({
+				Ve = Object(B.t)({
 					currentMultireddit: B.c,
 					pageLayer: e => e
 				}),
-				Ve = (e, t) => {
+				qe = (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -2353,7 +2349,7 @@
 						return Object(I.h)(s || "me", n)
 					}
 				},
-				Ze = Object(a.a)(Ve, Ke, Xe, (e, t, n) => Object(m.a)(n, e, t)),
+				Ze = Object(a.a)(qe, Ke, Xe, (e, t, n) => Object(m.a)(n, e, t)),
 				Qe = Object(a.a)(Ke, e => {
 					const t = p.t in e && e[p.t].toUpperCase();
 					return "string" == typeof t && t in c.Rb ? c.Rb[t] : c.Sb
@@ -2364,7 +2360,7 @@
 					listingName: Xe,
 					multireddit: B.d,
 					over18Prefs: z.T,
-					sort: Ve,
+					sort: qe,
 					timeSort: Qe
 				});
 			class Je extends o.a.Component {
@@ -2421,7 +2417,7 @@
 					})
 				}
 			}
-			const $e = qe(Object(d.b)(Ye, (e, t) => ({
+			const $e = Ve(Object(d.b)(Ye, (e, t) => ({
 				onLoadMorePosts: () => e(Object(u.f)({
 					sort: t.match.params.sort,
 					multiredditName: t.match.params.multiredditName,
@@ -2432,4 +2428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.e4a65069fa7d49d5c5c1.js.map
+//# sourceMappingURL=Multireddit.ab0a61a0c2abecffea7b.js.map

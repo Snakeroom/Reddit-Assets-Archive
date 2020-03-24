@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.1ddea2e4005f9f72efda.js
-// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.0d9b1701c36b32cc80e2.js
+// Retrieved at 3/24/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -4993,26 +4993,23 @@
 		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/lodash/take.js"),
-				n = s.n(o),
-				r = s("./node_modules/react/index.js"),
-				i = s.n(r),
-				a = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/app/strings/index.ts"),
-				l = s("./src/lib/constants/index.ts"),
-				m = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				p = s("./src/reddit/controls/Button/index.tsx"),
-				u = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				b = s("./src/reddit/layout/row/Inline/index.tsx"),
-				h = s("./src/reddit/layout/row/RightAlign/index.tsx"),
-				x = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/SidebarExpandableList/index.m.less"),
-				f = s.n(g),
-				v = s("./src/lib/lessComponent.tsx");
-			const O = 10,
-				y = v.a.wrapped(p.n, "TertiaryButton", f.a);
-			class E extends i.a.Component {
+			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/lodash/take.js"),
+				r = s.n(n),
+				i = s("./node_modules/react/index.js"),
+				a = s.n(i),
+				d = s("./src/lib/constants/index.ts"),
+				c = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				l = s("./src/reddit/controls/Button/index.tsx"),
+				m = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				p = s("./src/reddit/layout/row/Inline/index.tsx"),
+				u = s("./src/reddit/layout/row/RightAlign/index.tsx"),
+				b = s("./src/reddit/components/SidebarExpandableList/index.m.less"),
+				h = s.n(b),
+				x = s("./src/lib/lessComponent.tsx");
+			const g = 10,
+				f = x.a.wrapped(l.n, "TertiaryButton", h.a);
+			class v extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -5033,14 +5030,17 @@
 							expanded: e
 						} = this.state, {
 							hasMoreItems: t,
-							language: s,
-							onLoadMore: o,
+							onLoadMore: s,
 							pending: n
-						} = this.props, r = !e || t && o ? Object(c.a)(s, "sidebar.widgets.expandableList.viewMore") : Object(c.a)(s, "sidebar.widgets.expandableList.viewLess");
-						return i.a.createElement(y, {
+						} = this.props, r = !e || t && s ? o.fbt._("View More", null, {
+							hk: "1RK8uA"
+						}) : o.fbt._("View Less", null, {
+							hk: "1M72mK"
+						});
+						return a.a.createElement(f, {
 							onClick: this.onButtonClick
-						}, n ? i.a.createElement(u.a, {
-							sizePx: O
+						}, n ? a.a.createElement(m.a, {
+							sizePx: g
 						}) : r)
 					}
 				}
@@ -5050,28 +5050,24 @@
 						hasMoreItems: t,
 						headerButton: s,
 						items: o,
-						minimizedLength: r,
-						renderItem: a,
+						minimizedLength: n,
+						renderItem: i,
 						title: d
 					} = this.props, {
-						expanded: c
-					} = this.state, l = o.length > r || t, p = (!l || c ? o : n()(o, r)).map(e => a({
+						expanded: l
+					} = this.state, m = o.length > n || t, b = (!m || l ? o : r()(o, n)).map(e => i({
 						item: e
 					}));
-					return i.a.createElement(m.a, {
+					return a.a.createElement(c.a, {
 						className: e,
 						headerButton: s,
 						title: d
-					}, p, i.a.createElement(b.a, null, i.a.createElement(h.a, null, l && this.renderToggleButton())))
+					}, b, a.a.createElement(p.a, null, a.a.createElement(u.a, null, m && this.renderToggleButton())))
 				}
 			}
-			E.defaultProps = {
-				minimizedLength: l.Fb
-			};
-			const C = Object(d.c)({
-				language: x.O
-			});
-			t.a = Object(a.b)(C)(E)
+			v.defaultProps = {
+				minimizedLength: d.Fb
+			}, t.a = v
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7650,4 +7646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.1ddea2e4005f9f72efda.js.map
+//# sourceMappingURL=ProfilePrivate.0d9b1701c36b32cc80e2.js.map
