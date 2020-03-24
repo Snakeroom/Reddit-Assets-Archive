@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3ec09773811693b46c19.js
-// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a062d26587446b3c777e.js
+// Retrieved at 3/24/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -25962,7 +25962,9 @@
 						parentPageName: t
 					} = this.props, {
 						isDropdownOpen: s
-					} = this.state;
+					} = this.state, n = p.fbt._("None", null, {
+						hk: "3FT0YQ"
+					});
 					return r.a.createElement("div", {
 						className: Pe.a.dropdownContainer
 					}, r.a.createElement("button", {
@@ -25970,11 +25972,11 @@
 						onClick: this.onToggleDropdown
 					}, r.a.createElement("div", {
 						className: Pe.a.targetText
-					}, t || Object(J.c)("None")), r.a.createElement(Se.b, null)), s && r.a.createElement(ke.a, {
+					}, t || n), r.a.createElement(Se.b, null)), s && r.a.createElement(ke.a, {
 						className: Pe.a.dropdown
 					}, r.a.createElement(we.b, {
 						className: Pe.a.dropdownRow,
-						displayText: Object(J.c)("None"),
+						displayText: n,
 						onClick: () => this.onSelectParentPage(void 0)
 					}), e.map(e => e.depth >= Ee.c ? null : Ee.f.has(e.path.split("/")[0]) ? null : r.a.createElement(we.b, {
 						className: Pe.a.dropdownRow,
@@ -25985,11 +25987,25 @@
 				}
 			}
 			var Ne = Te;
-			const Me = {
-				[je.a.InvalidPageName]: Object(J.c)("Invalid page name"),
-				[je.a.MaxLengthExceed]: Object(J.c)("Name exceeds character limit"),
-				[je.a.PageAlreadyExists]: Object(J.c)("That page already exists"),
-				[je.a.RestrictedPageName]: Object(J.c)("Restricted page name")
+			const Me = e => {
+				switch (e) {
+					case je.a.InvalidPageName:
+						return p.fbt._("Invalid page name", null, {
+							hk: "1gQvCb"
+						});
+					case je.a.MaxLengthExceed:
+						return p.fbt._("Name exceeds character limit", null, {
+							hk: "RDoIC"
+						});
+					case je.a.PageAlreadyExists:
+						return p.fbt._("That page already exists", null, {
+							hk: "xEyyR"
+						});
+					case je.a.RestrictedPageName:
+						return p.fbt._("Restricted page name", null, {
+							hk: "Bjv5o"
+						})
+				}
 			};
 			class Re extends r.a.Component {
 				constructor(e) {
@@ -26024,20 +26040,30 @@
 					} = this, s = this.hasError();
 					return r.a.createElement(xe.c, {
 						className: Pe.a.modalBody
-					}, r.a.createElement(xe.g, null, r.a.createElement(_e.a, null, r.a.createElement(xe.n, null, Object(J.c)("Create a new wiki page")), r.a.createElement(Ce.a, {
+					}, r.a.createElement(xe.g, null, r.a.createElement(_e.a, null, r.a.createElement(xe.n, null, p.fbt._("Create a new wiki page", null, {
+						hk: "V7Jnm"
+					})), r.a.createElement(Ce.a, {
 						onClick: e.toggleModal
 					}, r.a.createElement(xe.b, null)))), r.a.createElement("div", {
 						className: Pe.a.notice
-					}, r.a.createElement(ye.a, null), Object(J.c)("Parent page and page URL cannot be edited once created")), r.a.createElement(xe.j, null, r.a.createElement("div", {
+					}, r.a.createElement(ye.a, null), p.fbt._("Parent page and page URL cannot be edited once created", null, {
+						hk: "20D6uz"
+					})), r.a.createElement(xe.j, null, r.a.createElement("div", {
 						className: Pe.a.sectionTitle
-					}, Object(J.c)("Parent page")), r.a.createElement(Ne, {
+					}, p.fbt._("Parent page", null, {
+						hk: "1FeKiT"
+					})), r.a.createElement(Ne, {
 						onSelectParentPage: this.onSelectParentPage,
 						pageTree: Object(Oe.b)(e.pageTree || []),
 						parentPageName: t.parentPageName
 					}), r.a.createElement("div", {
 						className: Pe.a.sectionTitle
-					}, Object(J.c)("Page URL")), r.a.createElement(fe.d, {
-						placeholder: Object(J.c)("ex: rules"),
+					}, p.fbt._("Page URL", null, {
+						hk: "WL8sn"
+					})), r.a.createElement(fe.d, {
+						placeholder: p.fbt._("ex: rules", null, {
+							hk: "J0qH1"
+						}),
 						onChange: this.onChangePageName,
 						value: t.partialPageName
 					}), r.a.createElement(ge.a, {
@@ -26045,13 +26071,17 @@
 						maxChars: Ee.d
 					}), r.a.createElement("div", {
 						className: Pe.a.errorText
-					}, t.partialPageName && s ? Me[s] : null)), r.a.createElement(xe.e, null, r.a.createElement(xe.a, {
+					}, t.partialPageName && s ? Me(s) : null)), r.a.createElement(xe.e, null, r.a.createElement(xe.a, {
 						onClick: e.toggleModal
-					}, Object(J.c)("Cancel")), r.a.createElement(ve.h, {
+					}, p.fbt._("Cancel", null, {
+						hk: "1f5Zk8"
+					})), r.a.createElement(ve.h, {
 						disabled: !t.partialPageName || !!s,
 						className: Pe.a.primaryButton,
 						to: "".concat(e.subredditUrl, "about/wiki/create/").concat(this.getNewPagePath())
-					}, Object(J.c)("Create"))))
+					}, p.fbt._("Create", null, {
+						hk: "2W0PL1"
+					}))))
 				}
 			}
 			var Le = Object(he.a)(Re),
@@ -27576,4 +27606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.3ec09773811693b46c19.js.map
+//# sourceMappingURL=ModerationPages.a062d26587446b3c777e.js.map
