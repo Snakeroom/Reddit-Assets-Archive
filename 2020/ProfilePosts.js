@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.d33a021e30c810fb8469.js
-// Retrieved at 3/24/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.7de82579d3bb0dedaadc.js
+// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, r) {
@@ -1515,8 +1515,8 @@
 				p = r("./src/reddit/models/ExternalAccount/index.ts"),
 				b = r("./src/reddit/selectors/externalAccount.ts"),
 				x = r("./src/reddit/selectors/user.ts"),
-				g = r("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = r("./src/reddit/i18n/utils.ts"),
+				g = r("./node_modules/fbt/lib/FbtPublic.js"),
+				f = r("./src/reddit/controls/OutboundLink/index.tsx"),
 				h = r("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				O = r("./src/reddit/icons/svgs/Twitter/index.tsx"),
 				y = r("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
@@ -1532,9 +1532,11 @@
 						i = "";
 					return n !== p.a.Twitter ? null : (o = s.a.createElement(O.a, {
 						className: E.a.twitterLogo
-					}), i = Object(f.c)("View on Twitter"), a = "@".concat(t.username), s.a.createElement(y.a, null, s.a.createElement("span", {
+					}), i = g.fbt._("View on Twitter", null, {
+						hk: "39S5oy"
+					}), a = "@".concat(t.username), s.a.createElement(y.a, null, s.a.createElement("span", {
 						className: E.a.icon
-					}, o), s.a.createElement(g.a, {
+					}, o), s.a.createElement(f.a, {
 						className: E.a.link,
 						href: t.link,
 						isSponsored: !1,
@@ -1934,4 +1936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts.d33a021e30c810fb8469.js.map
+//# sourceMappingURL=ProfilePosts.7de82579d3bb0dedaadc.js.map

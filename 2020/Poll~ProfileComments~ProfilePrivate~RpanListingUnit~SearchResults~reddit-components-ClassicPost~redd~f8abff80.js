@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.8fff3cc268431eb74b0d.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.a9cdd4f29277bd42cb62.js
+// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -2899,14 +2899,14 @@
 		"./src/reddit/components/ShareMenu/index.tsx": function(e, t, s) {
 			"use strict";
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/react-router/esm/react-router.js"),
-				a = s("./node_modules/react-router-redux/es/index.js"),
-				c = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/reddit/actions/tooltip.ts"),
-				l = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/react-router/esm/react-router.js"),
+				c = s("./node_modules/react-router-redux/es/index.js"),
+				d = s("./node_modules/reselect/es/index.js"),
+				l = s("./src/reddit/actions/tooltip.ts"),
 				p = s("./src/lib/addQueryParams/index.ts"),
 				m = s("./src/reddit/actions/post.ts"),
 				u = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
@@ -2930,7 +2930,7 @@
 					return s
 				};
 			const P = Object(u.a)(h.a),
-				y = Object(c.c)({
+				y = Object(d.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: s
@@ -2938,17 +2938,17 @@
 						return Object(C.b)(s)(e)
 					}
 				}),
-				k = Object(r.b)(y, (e, t) => {
+				k = Object(i.b)(y, (e, t) => {
 					var {
 						dropdownId: s,
 						permalink: n
 					} = t, o = j(t, ["dropdownId", "permalink"]);
 					return {
 						onCrosspost: () => {
-							o.post && e(Object(a.b)("".concat(v.b, "?source_id=").concat(o.post.id)))
+							o.post && e(Object(c.b)("".concat(v.b, "?source_id=").concat(o.post.id)))
 						},
 						toggleDropdown: () => {
-							e(Object(d.h)({
+							e(Object(l.h)({
 								tooltipId: s
 							}))
 						},
@@ -2958,40 +2958,46 @@
 						})))
 					}
 				});
-			t.a = k(Object(i.i)(e => {
+			t.a = k(Object(a.i)(e => {
 				const t = !e.subreddit || e.subreddit && e.subreddit.type === O.c.Public,
 					s = !!e.post && e.post.isCrosspostable && !e.post.isSponsored;
-				return o.a.createElement("div", {
+				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.toggleDropdown,
 					id: e.dropdownId
-				}, e.children, o.a.createElement(P, {
+				}, e.children, r.a.createElement(P, {
 					className: E.a.dropdown,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId
-				}, o.a.createElement(b.b, {
+				}, r.a.createElement(b.b, {
 					className: E.a.dropdownRow,
-					displayText: Object(l.c)("Copy link"),
+					displayText: n.fbt._("Copy link", null, {
+						hk: "1tCqox"
+					}),
 					onClick: () => {
 						e.sendEventWithName("share_copy"), e.copyLink()
 					}
-				}, o.a.createElement(g.a, {
+				}, r.a.createElement(g.a, {
 					className: E.a.linkIcon
-				})), s && o.a.createElement(b.b, {
+				})), s && r.a.createElement(b.b, {
 					className: E.a.dropdownRow,
-					displayText: Object(l.c)("crosspost"),
+					displayText: n.fbt._("crosspost", null, {
+						hk: "23zSN6"
+					}),
 					onClick: () => {
 						e.sendEventWithName("share_crosspost"), e.onCrosspost()
 					}
-				}, o.a.createElement(x.a, {
+				}, r.a.createElement(x.a, {
 					className: E.a.crosspostIcon
-				})), t && o.a.createElement(b.b, {
+				})), t && r.a.createElement(b.b, {
 					className: E.a.dropdownRow,
-					displayText: Object(l.c)("Embed"),
+					displayText: n.fbt._("Embed", null, {
+						hk: "2CcsuC"
+					}),
 					onClick: () => {
 						e.sendEventWithName("share_embed"), window.open("https://embed.redditmedia.com/widgets/embed?url=".concat(e.permalink), "RedditEmbed", "height=500,width=650,modal=yes,alwaysRaised=yes")
 					}
-				}, o.a.createElement(f.a, {
+				}, r.a.createElement(f.a, {
 					className: E.a.embedIcon
 				}))))
 			}))
@@ -4012,4 +4018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.8fff3cc268431eb74b0d.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.a9cdd4f29277bd42cb62.js.map

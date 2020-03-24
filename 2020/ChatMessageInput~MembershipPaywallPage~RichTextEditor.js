@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.5de413eac6861f60d86a.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.5d1644871e7523be6843.js
+// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -413,27 +413,29 @@
 		},
 		"./src/reddit/components/MakeGifToggle/index.tsx": function(t, e, n) {
 			"use strict";
-			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
-				c = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				a = n("./src/reddit/i18n/utils.ts"),
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				i = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
+				a = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				l = n("./src/reddit/layout/row/Inline/index.tsx"),
 				d = n("./src/reddit/components/MakeGifToggle/index.m.less"),
 				u = n.n(d);
-			e.a = t => s.a.createElement(l.a, {
-				className: Object(r.a)(u.a.container, t.disabled ? u.a.mDisabled : null, t.isCompact ? u.a.mCompactSwitch : null),
+			e.a = t => r.a.createElement(l.a, {
+				className: Object(i.a)(u.a.container, t.disabled ? u.a.mDisabled : null, t.isCompact ? u.a.mCompactSwitch : null),
 				onMouseDown: t => t.preventDefault(),
 				onClick: e => {
 					e.stopPropagation(), !t.disabled && t.onClick()
 				}
-			}, s.a.createElement(l.a, {
+			}, r.a.createElement(l.a, {
 				className: u.a.content
-			}, s.a.createElement(c.a, {
+			}, r.a.createElement(a.a, {
 				className: u.a.toggleSwitch,
 				on: t.on
-			}), s.a.createElement("label", null, Object(a.c)("Make GIF"))), t.tooltip ? s.a.createElement(i.a, {
+			}), r.a.createElement("label", null, o.fbt._("Make GIF", null, {
+				hk: "2ig2GG"
+			}))), t.tooltip ? r.a.createElement(c.a, {
 				className: u.a.hoverTooltip,
 				tooltipContentClass: u.a.tooltipContentClass,
 				text: t.tooltip
@@ -7919,4 +7921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.5de413eac6861f60d86a.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.5d1644871e7523be6843.js.map

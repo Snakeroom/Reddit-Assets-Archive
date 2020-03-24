@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.7e8d78747c6427150afa.js
-// Retrieved at 3/24/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.17e7985e649a162cf6b8.js
+// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -190,38 +190,42 @@
 				A = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				B = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				D = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				U = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
-				W = n("./src/reddit/actions/post.ts"),
-				R = n("./src/reddit/components/MiniPost/index.tsx"),
+				R = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
+				U = n("./src/reddit/actions/post.ts"),
+				W = n("./src/reddit/components/MiniPost/index.tsx"),
 				Q = n("./src/reddit/components/Widgets/Base/index.tsx");
 			class J extends a.a.Component {
 				render() {
-					return a.a.createElement("div", null, a.a.createElement(Q.a, null, this.props.headerText), this.props.posts.map(e => a.a.createElement(R.a, {
+					return a.a.createElement("div", null, a.a.createElement(Q.a, null, this.props.headerText), this.props.posts.map(e => a.a.createElement(W.a, {
 						key: e.id,
 						postId: e.id
 					})))
 				}
 			}
-			var H = J,
-				M = n("./src/reddit/helpers/overlay/index.ts"),
+			var M = J,
+				H = n("./src/reddit/helpers/overlay/index.ts"),
 				Z = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
 				X = n.n(Z),
 				V = n("./src/lib/lessComponent.tsx");
 			const K = Object(r.b)(null, (e, t) => ({
-					openLightbox: t => () => e(Object(M.a)(t.permalink)),
-					clearLinks: () => e(Object(W.v)())
+					openLightbox: t => () => e(Object(H.a)(t.permalink)),
+					clearLinks: () => e(Object(U.v)())
 				})),
 				G = V.a.button("ClearButton", X.a);
 			class Y extends a.a.Component {
 				render() {
-					return a.a.createElement(Q.b, null, a.a.createElement(H, {
+					return a.a.createElement(Q.b, null, a.a.createElement(M, {
 						className: this.props.className,
-						headerText: Object(d.c)("Recent posts"),
+						headerText: C.fbt._("Recent posts", null, {
+							hk: "1olaOT"
+						}),
 						language: this.props.language,
 						posts: this.props.posts
 					}), a.a.createElement(G, {
 						onClick: this.props.clearLinks
-					}, Object(d.c)("Clear")))
+					}, C.fbt._("Clear", null, {
+						hk: "1RMjjy"
+					})))
 				}
 			}
 			var q = K(Y),
@@ -232,7 +236,7 @@
 				recentPosts: z.V
 			});
 			var te = Object(r.b)(ee, (e, t) => ({
-					openLightbox: t => () => e(Object(M.a)(t.permalink))
+					openLightbox: t => () => e(Object(H.a)(t.permalink))
 				}))(e => {
 					let {
 						className: t,
@@ -242,7 +246,9 @@
 					return n && n.length ? a.a.createElement(g.a, null, a.a.createElement(q, {
 						className: t,
 						language: s,
-						headerText: Object(d.c)("Recent posts"),
+						headerText: C.fbt._("Recent posts", null, {
+							hk: "1olaOT"
+						}),
 						posts: n
 					})) : null
 				}),
@@ -314,7 +320,7 @@
 					} = this.props;
 					return a.a.createElement(B.a, {
 						className: t
-					}, a.a.createElement(U.a, {
+					}, a.a.createElement(R.a, {
 						categories: ie.i,
 						category: r ? ie.k : ie.j,
 						first: 5,
@@ -671,10 +677,10 @@
 				A = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				B = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
 				D = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
-				U = n("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
+				R = n("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -682,7 +688,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const R = async (e, t) => {
+			const W = async (e, t) => {
 				const n = await Object(A.a)(e, t);
 				if (n && n.ok) {
 					const e = n.body,
@@ -690,7 +696,7 @@
 					return Object(B.c)(t)
 				}
 			}, Q = async e => {
-				const t = a()(U.a, 5),
+				const t = a()(R.a, 5),
 					n = await Object(I.a)(e, {
 						names: t
 					});
@@ -707,7 +713,7 @@
 							category: e,
 							first: t
 						} = this.props, n = e && e.id;
-						n !== E.l ? (n || n === E.d) && R(this.props.gqlContext(), {
+						n !== E.l ? (n || n === E.d) && W(this.props.gqlContext(), {
 							categoryId: n,
 							first: t
 						}).then(e => {
@@ -753,7 +759,7 @@
 						s = this.state[n],
 						a = s ? s.rankings : [],
 						r = s ? s.subreddits : {};
-					return o.a.createElement(P, W({
+					return o.a.createElement(P, U({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: a,
@@ -951,4 +957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.7e8d78747c6427150afa.js.map
+//# sourceMappingURL=FrontpageSidebar.17e7985e649a162cf6b8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.47aaccdb3293599bc48b.js
-// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.58d73f3634bc8f9cd01d.js
+// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -8358,8 +8358,8 @@
 				u = s("./src/reddit/models/ExternalAccount/index.ts"),
 				b = s("./src/reddit/selectors/externalAccount.ts"),
 				h = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				g = s("./src/reddit/i18n/utils.ts"),
+				x = s("./node_modules/fbt/lib/FbtPublic.js"),
+				g = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				f = s("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Twitter/index.tsx"),
 				O = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
@@ -8375,9 +8375,11 @@
 						i = "";
 					return n !== u.a.Twitter ? null : (r = o.a.createElement(v.a, {
 						className: E.a.twitterLogo
-					}), i = Object(g.c)("View on Twitter"), a = "@".concat(t.username), o.a.createElement(O.a, null, o.a.createElement("span", {
+					}), i = x.fbt._("View on Twitter", null, {
+						hk: "39S5oy"
+					}), a = "@".concat(t.username), o.a.createElement(O.a, null, o.a.createElement("span", {
 						className: E.a.icon
-					}, r), o.a.createElement(x.a, {
+					}, r), o.a.createElement(g.a, {
 						className: E.a.link,
 						href: t.link,
 						isSponsored: !1,
@@ -10249,4 +10251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.47aaccdb3293599bc48b.js.map
+//# sourceMappingURL=ProfileComments.58d73f3634bc8f9cd01d.js.map
