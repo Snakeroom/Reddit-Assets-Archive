@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.901dee43886de0f00012.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7e7656be678b4ae476f1.js
+// Retrieved at 3/24/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -244,13 +244,13 @@
 					unreadNotifications: s,
 					isOpen: n,
 					sendEventWithName: a
-				} = e, c = Object(d.b)(p, o.fbt._("Mod Queue", null, {
+				} = e, c = Object(d.b)(p, "".concat(o.fbt._("Mod Queue", null, {
 					hk: "2fqLkD"
-				})), i = Object(d.b)(l.a, o.fbt._("Modmail Beta", null, {
+				}))), i = Object(d.b)(l.a, "".concat(o.fbt._("Modmail Beta", null, {
 					hk: "2miezs"
-				}), !0), u = Object(d.b)(l.a, o.fbt._("Modmail", null, {
+				})), !0), u = Object(d.b)(l.a, "".concat(o.fbt._("Modmail", null, {
 					hk: "1IvnFd"
-				}), !0);
+				})), !0);
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(h, {
@@ -1334,4 +1334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.901dee43886de0f00012.js.map
+//# sourceMappingURL=ModerationDropdowns.7e7656be678b4ae476f1.js.map
