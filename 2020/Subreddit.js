@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.08427a1b8e0eb554811c.js
-// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1a9f71f86760eb26ff49.js
+// Retrieved at 3/24/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -6954,7 +6954,7 @@
 						Fe = j && j.subscribers;
 					let De;
 					if (tt(this.props)) {
-						const e = new(0, window.URL)(x.a.gremlinsUrl);
+						const e = new(0, window.URL)(x.a.gremlinsUrl + "/embed");
 						e.searchParams.set("platform", "desktop"), this.props.isNightmode && e.searchParams.set("nightmode", "1"), De = p.a.createElement("iframe", {
 							className: Se.a.af,
 							src: e.href
@@ -7367,4 +7367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.08427a1b8e0eb554811c.js.map
+//# sourceMappingURL=Subreddit.1a9f71f86760eb26ff49.js.map
