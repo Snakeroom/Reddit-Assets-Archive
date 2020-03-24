@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4486ee6e2aca8820314f.js
-// Retrieved at 3/24/2020, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.43a30ecb5c57b61073f2.js
+// Retrieved at 3/24/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -902,7 +902,7 @@
 						BadgePickerModal: "79cc47caa157202ad73b",
 						BadgePurchaseModal: "d6ef43ebabf0d17e8b05",
 						BannedUserModal: "d638b861ed9940d258b0",
-						Coins: "3209a68347afa2d4723e",
+						Coins: "382481a8b766574328a8",
 						CoinsMobile: "c0e9795cbd724989a31f",
 						"CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502": "de2c3efb86f28a80f721",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e": "700e38ca68a568bf8364",
@@ -912,7 +912,7 @@
 						FrontpageSidebar: "7e8d78747c6427150afa",
 						Frontpage: "3bd0a271a8c61541e2cc",
 						Topic: "38598fa981df3dd549fd",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "6afdcd6bcb9f9c9866fd",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "e3802e86a50a112fef03",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "6f445ded720720c1704f",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "19a4833a13224e1b9ebe",
 						PostDraft: "914c86bcdbe9437630c2",
@@ -1078,7 +1078,7 @@
 						ChatPost: "d41edfc1a2661a830ba2",
 						EconomicsSupportDonationAmount: "ba80bb0b9a78a024d63f",
 						EconomicsTopTippersPostLeaderboard: "d96f85883276af853cf9",
-						GildModal: "d8688d823f8cbafe6bd0",
+						GildModal: "cf877f5bb06b1dd1d970",
 						GovernanceUserPublicPointsDisplay: "ef86c826b7a932f4cb75",
 						ReportFlow: "1184678a158f5c348411",
 						"reddit-components-Governance-Proposal": "256fef2684dc7985b126",
@@ -1180,4 +1180,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.4486ee6e2aca8820314f.js.map
+//# sourceMappingURL=runtime~Reddit.43a30ecb5c57b61073f2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.3209a68347afa2d4723e.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.382481a8b766574328a8.js
+// Retrieved at 3/24/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -800,7 +800,7 @@
 						className: Object(S.a)(se.a.heroDescription, se.a.activeSale)
 					}, s), i.a.createElement(ae.a, {
 						className: se.a.expiresText,
-						expirationDate: new Date(e)
+						expirationDate: new Date(1e3 * e)
 					})))
 				}
 				return i.a.createElement("div", {
@@ -1010,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.3209a68347afa2d4723e.js.map
+//# sourceMappingURL=Coins.382481a8b766574328a8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.d8688d823f8cbafe6bd0.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.cf877f5bb06b1dd1d970.js
+// Retrieved at 3/24/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
@@ -55,7 +55,7 @@
 			function b(e) {
 				if (!e.ok) return e;
 				const {
-					active_sale_config: t,
+					active_sale: t,
 					coin_packages: s,
 					premium_packages: n
 				} = e.body, o = {
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.d8688d823f8cbafe6bd0.js.map
+//# sourceMappingURL=GildModal.cf877f5bb06b1dd1d970.js.map
