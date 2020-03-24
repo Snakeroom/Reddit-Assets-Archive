@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fa7743e4eaa97628736b.js
-// Retrieved at 3/24/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dadd93bf87c2f388e187.js
+// Retrieved at 3/24/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -356,9 +356,6 @@
 							},
 							part1Text: {
 								en: "This tool allows you to ban users from participating in your page and\n        should be used sparingly. If users are violating site-wide rules or harassing\n        you, please contact the admins at "
-							},
-							part2Link: {
-								en: "contact@reddit.com"
 							},
 							part3Text: {
 								en: " or "
@@ -11758,14 +11755,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("0ae469f-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("b6937fa-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0ae469f-production",
+						release: "b6937fa-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12068,7 +12065,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "0ae469f-production",
+							releaseClient: "b6937fa-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17921,4 +17918,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.fa7743e4eaa97628736b.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.dadd93bf87c2f388e187.js.map

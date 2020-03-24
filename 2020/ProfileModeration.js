@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.c77f9c366eaf18b3255a.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.9f0d2969101d0aad4cad.js
+// Retrieved at 3/24/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, a) {
@@ -100,8 +100,8 @@
 			}(n || (n = {}));
 			const E = d.a.wrapped(h.a, "Gear", g.a),
 				y = d.a.h3("Title", g.a),
-				v = d.a.div("TabNavContainer", g.a),
-				w = d.a.div("Tabs", g.a),
+				w = d.a.div("TabNavContainer", g.a),
+				v = d.a.div("Tabs", g.a),
 				x = d.a.wrapped(e => {
 					var {
 						active: t,
@@ -125,8 +125,8 @@
 							return null
 					}
 				},
-				S = () => window.pageYOffset || window.scrollY,
-				k = 75,
+				k = () => window.pageYOffset || window.scrollY,
+				S = 75,
 				C = {
 					paddingLeft: 15,
 					left: 0,
@@ -139,9 +139,9 @@
 			class O extends i.a.Component {
 				constructor(e) {
 					super(e), this.toggleSticky = o()(() => {
-						this.state.sticky || this.forceUnsticky ? S() < k && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
+						this.state.sticky || this.forceUnsticky ? k() < S && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
 							sticky: !1
-						}, () => this.forceUnsticky = !1)) : S() >= k && this.setState({
+						}, () => this.forceUnsticky = !1)) : k() >= S && this.setState({
 							sticky: !0
 						})
 					}, c.G), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
@@ -155,13 +155,13 @@
 					this.props.isCategoryPage && (window.removeEventListener("orientationchange", this.toggleSticky), window.removeEventListener("resize", this.toggleSticky), window.removeEventListener("scroll", this.toggleSticky))
 				}
 				render() {
-					return i.a.createElement(v, {
+					return i.a.createElement(w, {
 						className: this.props.className
 					}, i.a.createElement(y, {
 						className: Object(l.a)({
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, _(this.props.icon), this.props.title), i.a.createElement(w, {
+					}, _(this.props.icon), this.props.title), i.a.createElement(v, {
 						className: Object(l.a)({
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
@@ -261,60 +261,69 @@
 				d = a("./src/reddit/pages/ErrorPages/index.tsx"),
 				m = a("./src/reddit/selectors/profile.ts"),
 				u = a("./src/reddit/selectors/user.ts"),
-				p = a("./src/config.ts"),
-				h = a("./src/lib/lessComponent.tsx"),
-				f = a("./src/reddit/components/Settings/shared/Heading.tsx"),
-				g = a("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				b = a("./src/reddit/controls/Typography/index.tsx"),
-				E = a("./src/reddit/i18n/components.tsx"),
-				y = a("./src/reddit/pages/ProfileModSettings/Navigation.m.less"),
-				v = a.n(y);
-			const w = h.a.li("listItem", v.a),
-				x = h.a.wrapped(g.i, "sectionWrapper", v.a);
-			class _ extends r.a.PureComponent {
+				p = a("./node_modules/fbt/lib/FbtPublic.js"),
+				h = a("./src/config.ts"),
+				f = a("./src/lib/lessComponent.tsx"),
+				g = a("./src/reddit/components/Settings/shared/Heading.tsx"),
+				b = a("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				E = a("./src/reddit/controls/Typography/index.tsx"),
+				y = a("./src/reddit/i18n/components.tsx"),
+				w = a("./src/reddit/pages/ProfileModSettings/Navigation.m.less"),
+				v = a.n(w);
+			const x = f.a.li("listItem", v.a),
+				_ = f.a.wrapped(b.i, "sectionWrapper", v.a);
+			class k extends r.a.PureComponent {
 				render() {
 					const {
 						profileName: e
 					} = this.props, t = "user/".concat(e);
-					return r.a.createElement("div", null, r.a.createElement(f.b, null, r.a.createElement(E.c, null, "Profile moderation")), r.a.createElement(k, null, r.a.createElement(b.f, null, r.a.createElement(E.c, null, "Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.")), r.a.createElement(b.f, null, r.a.createElement(E.c, null, "If you do choose to post to your profile, then it's important to get familiar with your"), r.a.createElement(g.m, {
+					return r.a.createElement("div", null, r.a.createElement(g.b, null, r.a.createElement(y.c, null, "Profile moderation")), r.a.createElement(C, null, r.a.createElement(E.f, null, r.a.createElement(y.c, null, "Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.")), r.a.createElement(E.f, null, p.fbt._("If you do choose to post to your profile, then it's important to get familiar with your", null, {
+						hk: "EuDG2"
+					}), r.a.createElement(b.m, {
 						href: "https://www.reddithelp.com/en/categories/using-reddit/profiles/profile-moderation-tools"
-					}, r.a.createElement(E.c, null, " moderation tools")), r.a.createElement(E.c, null, " and the "), r.a.createElement(g.m, {
+					}, r.a.createElement(y.c, null, " moderation tools")), r.a.createElement(y.c, null, " and the "), r.a.createElement(b.m, {
 						href: "https://www.reddit.com/help/healthycommunities/"
-					}, r.a.createElement(E.c, null, "mod guidelines ")), r.a.createElement(E.c, null, "to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile. Below, you'll find a basic guide for the tools provided to you:"))), r.a.createElement(S, {
+					}, r.a.createElement(y.c, null, "mod guidelines ")), p.fbt._("to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile. Below, you'll find a basic guide for the tools provided to you:", null, {
+						hk: "308itF"
+					}))), r.a.createElement(S, {
 						title: Object(c.c)("Traffic"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/traffic/")
-					}, r.a.createElement(E.c, null, "View traffic statistics and graphs for your profile.")), r.a.createElement(S, {
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/traffic/")
+					}, r.a.createElement(y.c, null, "View traffic statistics and graphs for your profile.")), r.a.createElement(S, {
 						title: Object(c.c)("Moderators"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/moderators/")
-					}, r.a.createElement(E.c, null, "If your profile's comments are busy and you need some help with moderation, you might want to add on some users as mods to assist you. You can do this here. Choose users that you trust to represent you via their statements and mod actions, and be mindful of what permissions your grant them.")), r.a.createElement(S, {
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/moderators/")
+					}, p.fbt._("If your profile's comments are busy and you need some help with moderation, you might want to add on some users as mods to assist you. You can do this here. Choose users that you trust to represent you via their statements and mod actions, and be mindful of what permissions your grant them.", null, {
+						hk: "4iZhyS"
+					})), r.a.createElement(S, {
 						title: Object(c.c)("Moderation log"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/log/")
-					}, r.a.createElement(E.c, null, "The moderation log lists all mod actions taken by any mod on your profile. If you are the only moderator of your profile the only actions will be from you or Automoderator."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "If you add multiple moderators, the mod log can be helpful in seeing who has taken a particular action like banning a user or removing a comment.")), r.a.createElement(w, null, r.a.createElement(E.c, null, "The moderation log will also list actions taken by Automoderator if it is set up to make actions on your profile.")))), r.a.createElement(S, {
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/log/")
+					}, r.a.createElement(y.c, null, "The moderation log lists all mod actions taken by any mod on your profile. If you are the only moderator of your profile the only actions will be from you or Automoderator."), r.a.createElement("ul", null, r.a.createElement(x, null, r.a.createElement(y.c, null, "If you add multiple moderators, the mod log can be helpful in seeing who has taken a particular action like banning a user or removing a comment.")), r.a.createElement(x, null, r.a.createElement(y.c, null, "The moderation log will also list actions taken by Automoderator if it is set up to make actions on your profile.")))), r.a.createElement(S, {
 						title: Object(c.c)("Automoderator"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/wiki/edit/config/automoderator/")
-					}, r.a.createElement(r.a.Fragment, null, r.a.createElement(E.c, null, "Automoderator is our friendly robot that can be used to help you moderate your community. Automod is a versatile tool that can be set up to remove or flag content posted on your page so you can review it."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "If you have questions about setting up rules,", " "), r.a.createElement(g.m, {
-						href: "".concat(p.a.redditUrl, "/r/automoderator")
-					}, "r/Automoderator"), r.a.createElement(E.c, null, " ", "is a valuable resource for help and advice. You can see the", " "), r.a.createElement(g.m, {
-						href: "".concat(p.a.redditUrl, "/wiki/automoderator/full-documentation")
-					}, r.a.createElement(E.c, null, "full documentation of how it works here")))))), r.a.createElement(S, {
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/wiki/edit/config/automoderator/")
+					}, r.a.createElement(r.a.Fragment, null, r.a.createElement(y.c, null, "Automoderator is our friendly robot that can be used to help you moderate your community. Automod is a versatile tool that can be set up to remove or flag content posted on your page so you can review it."), r.a.createElement("ul", null, r.a.createElement(x, null, r.a.createElement(y.c, null, "If you have questions about setting up rules,", " "), r.a.createElement(b.m, {
+						href: "".concat(h.a.redditUrl, "/r/automoderator")
+					}, "r/Automoderator"), r.a.createElement(y.c, null, " ", "is a valuable resource for help and advice. You can see the", " "), r.a.createElement(b.m, {
+						href: "".concat(h.a.redditUrl, "/wiki/automoderator/full-documentation")
+					}, r.a.createElement(y.c, null, "full documentation of how it works here")))))), r.a.createElement(S, {
 						title: Object(c.c)("Moderation queue"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/modqueue/")
-					}, r.a.createElement(E.c, null, "Content that users report can be found here so you can approve or remove it.")), r.a.createElement(S, {
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/modqueue/")
+					}, r.a.createElement(y.c, null, "Content that users report can be found here so you can approve or remove it.")), r.a.createElement(S, {
 						title: Object(c.c)("Ban users"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/banned")
-					}, r.a.createElement(r.a.Fragment, null, r.a.createElement(E.c, null, "This tool allows you to ban users from participating in your page and should be used sparingly. If users are violating site-wide rules or harassing you, please contact the admins at"), r.a.createElement(g.m, {
-						href: "mailto:contact@reddit.com"
-					}, r.a.createElement(E.c, null, " contact@reddit.com")), r.a.createElement(E.c, null, " or "), r.a.createElement(g.m, {
-						href: "https://www.reddit.com/message/compose?to=%2Fr%2Freddit.com"
-					}, r.a.createElement(E.c, null, "r/reddit.com modmail")), r.a.createElement(E.c, null, "."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "Bans can be permanent or timed. For minor infractions a warning or a short ban is often enough.")), r.a.createElement(w, null, r.a.createElement(E.c, null, "It is important to use bans only in situations where it is warranted. Educating users or ignoring someone’s bad behavior can often be more effective than banning them."))))), r.a.createElement(S, {
-						title: Object(c.c)("Flairs"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/flair/")
-					}, r.a.createElement(E.c, null, "Flair is text that displays next to someone’s username. Users in sports communities use flair to display their favorite team."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "“Flair” is like a label you can apply to a post or a specific user. For example, you could flair someone who works with you so other users are aware of who they are.")))), r.a.createElement(S, {
-						title: Object(c.c)("Spam"),
-						url: "".concat(p.a.redditUrl, "/").concat(t, "/about/spam/")
-					}, r.a.createElement(E.c, null, "All removed content can be seen here. This includes content caught by the site wide spam filter and content removed by a moderator."), r.a.createElement("ul", null, r.a.createElement(w, null, r.a.createElement(E.c, null, "You can approve content that was removed accidentally.")))), r.a.createElement(k, null, r.a.createElement(E.c, null, "Have more questions? "), r.a.createElement(g.m, {
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/banned")
+					}, r.a.createElement(r.a.Fragment, null, r.a.createElement(y.c, null, "This tool allows you to ban users from participating in your page and should be used sparingly. If users are violating site-wide rules or harassing you, please contact the admins using our", " "), r.a.createElement(b.m, {
 						href: "https://www.reddithelp.com/en/submit-request"
-					}, r.a.createElement(E.c, null, "Submit a request"))))
+					}, p.fbt._("contact form", null, {
+						hk: "27cqjK"
+					})), r.a.createElement(y.c, null, " or "), r.a.createElement(b.m, {
+						href: "https://www.reddit.com/message/compose?to=%2Fr%2Freddit.com"
+					}, r.a.createElement(y.c, null, "r/reddit.com modmail")), r.a.createElement(y.c, null, "."), r.a.createElement("ul", null, r.a.createElement(x, null, r.a.createElement(y.c, null, "Bans can be permanent or timed. For minor infractions a warning or a short ban is often enough.")), r.a.createElement(x, null, r.a.createElement(y.c, null, "It is important to use bans only in situations where it is warranted. Educating users or ignoring someone’s bad behavior can often be more effective than banning them."))))), r.a.createElement(S, {
+						title: Object(c.c)("Flairs"),
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/flair/")
+					}, r.a.createElement(y.c, null, "Flair is text that displays next to someone’s username. Users in sports communities use flair to display their favorite team."), r.a.createElement("ul", null, r.a.createElement(x, null, r.a.createElement(y.c, null, "“Flair” is like a label you can apply to a post or a specific user. For example, you could flair someone who works with you so other users are aware of who they are.")))), r.a.createElement(S, {
+						title: Object(c.c)("Spam"),
+						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/spam/")
+					}, r.a.createElement(y.c, null, "All removed content can be seen here. This includes content caught by the site wide spam filter and content removed by a moderator."), r.a.createElement("ul", null, r.a.createElement(x, null, r.a.createElement(y.c, null, "You can approve content that was removed accidentally.")))), r.a.createElement(C, null, r.a.createElement(y.c, null, "Have more questions? "), r.a.createElement(b.m, {
+						href: "https://www.reddithelp.com/en/submit-request"
+					}, r.a.createElement(y.c, null, "Submit a request"))))
 				}
 			}
 
@@ -324,21 +333,21 @@
 					url: a,
 					children: n
 				} = e;
-				return r.a.createElement(g.f, {
+				return r.a.createElement(b.f, {
 					link: a,
 					label: t,
 					subtext: n
 				})
 			}
 
-			function k(e) {
+			function C(e) {
 				let {
 					children: t
 				} = e;
-				return r.a.createElement(x, null, r.a.createElement(g.l, null, t))
+				return r.a.createElement(_, null, r.a.createElement(b.l, null, t))
 			}
-			var C = _;
-			const O = Object(s.c)({
+			var O = k;
+			const N = Object(s.c)({
 					isModerator: (e, t) => Object(m.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(u.J)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
@@ -346,8 +355,8 @@
 						userName: t.match.params.profileName
 					})
 				}),
-				N = Object(o.b)(O);
-			class j extends r.a.Component {
+				j = Object(o.b)(N);
+			class L extends r.a.Component {
 				render() {
 					const {
 						isModerator: e,
@@ -364,15 +373,15 @@
 						constrainWidth: !0,
 						title: "/user/".concat(s, " Settings"),
 						icon: l.b.GEAR
-					}), r.a.createElement(i.a, null, r.a.createElement(C, {
+					}), r.a.createElement(i.a, null, r.a.createElement(O, {
 						profileName: s
 					}))) : r.a.createElement(d.b, {
 						message: Object(c.c)("The requested page is not supported")
 					}) : r.a.createElement(d.a, null)
 				}
 			}
-			t.default = N(j)
+			t.default = j(L)
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.c77f9c366eaf18b3255a.js.map
+//# sourceMappingURL=ProfileModeration.9f0d2969101d0aad4cad.js.map
