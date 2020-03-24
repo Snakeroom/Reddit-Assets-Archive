@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.52a7ee772b0adcb0ef38.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3bd0a271a8c61541e2cc.js
+// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2466,4 +2466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.52a7ee772b0adcb0ef38.js.map
+//# sourceMappingURL=Frontpage.3bd0a271a8c61541e2cc.js.map

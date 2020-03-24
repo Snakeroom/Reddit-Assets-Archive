@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.4e70dfebfbcd8cfc3d9c.js
-// Retrieved at 3/24/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ee22a935cd5e851b51e6.js
+// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -124,8 +124,8 @@
 				B = r.a.div("Floating", M.a),
 				L = r.a.video("PreviewVideo", M.a),
 				F = r.a.div("PreviewTime", M.a),
-				O = r.a.div("VideoSeekbar", M.a);
-			class k extends n.a.PureComponent {
+				k = r.a.div("VideoSeekbar", M.a);
+			class O extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.setParentRect = e => this.parentRect = e, this.setPreviewThumbnailContainer = e => this.previewThumbnailContainer = e, this.setPreviewThumbnailVideo = e => this.previewThumbnailVideo = e, this.setPreviewThumbnailTime = e => this.previewThumbnailTime = e, this.setProgressBar = e => this.progressBar = e, this.handleMouseDown = e => {
 						if (0 === e.button && this.parentRect) {
@@ -245,7 +245,7 @@
 							marginLeft: this.getThumbMargin(a),
 							opacity: e ? 1 : 0
 						};
-					return n.a.createElement(O, {
+					return n.a.createElement(k, {
 						innerRef: this.setParentRect,
 						onKeyDown: this.handleKeyDown,
 						onMouseLeave: this.handleMouseLeave,
@@ -476,61 +476,62 @@
 						isLive: o,
 						settingsButton: r,
 						settingChange: h,
-						showSettingsIcon: m
-					} = this.props, g = i.fbt._("View Comments", null, {
+						hideLiveLabel: m,
+						showSettingsIcon: g
+					} = this.props, f = i.fbt._("View Comments", null, {
 						hk: "2Vf8xl"
-					}), f = i.fbt._("Play", null, {
+					}), y = i.fbt._("Play", null, {
 						hk: "2cQV3h"
-					}), y = i.fbt._("Pause", null, {
+					}), x = i.fbt._("Pause", null, {
 						hk: "2YnRgT"
-					}), x = i.fbt._("Exit Fullscreen", null, {
+					}), S = i.fbt._("Exit Fullscreen", null, {
 						hk: "LnrWa"
-					}), S = i.fbt._("Fullscreen", null, {
+					}), P = i.fbt._("Fullscreen", null, {
 						hk: "3JvSdn"
 					}), {
-						currentTime: P
+						currentTime: b
 					} = this.state, {
-						totalTime: b
-					} = o ? this.state : this.props, C = this.props.isPaused ? f : y;
+						totalTime: C
+					} = o ? this.state : this.props, T = this.props.isPaused ? y : x;
 					return n.a.createElement(n.a.Fragment, null, !t && n.a.createElement(v, null), s && a && n.a.createElement(J, {
-						tooltip: g
+						tooltip: f
 					}, n.a.createElement("div", {
 						onClick: this.props.clickSnoo
 					}, n.a.createElement(A, {
 						postUrl: s
 					}))), n.a.createElement(q, {
-						tooltip: C
+						tooltip: T
 					}, n.a.createElement("button", {
-						"aria-label": C,
+						"aria-label": T,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? n.a.createElement(u.a, null) : n.a.createElement(p.a, null))), n.a.createElement($, null, w(P, b)), n.a.createElement(se, null, n.a.createElement(k, {
+					}, this.props.isPaused ? n.a.createElement(u.a, null) : n.a.createElement(p.a, null))), n.a.createElement($, null, w(b, C)), n.a.createElement(se, null, n.a.createElement(O, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
-						currentTime: P,
+						currentTime: b,
 						isLive: o,
 						ref: this.props.seekBarRef,
 						thumbSource: this.props.scrubberThumbSource,
-						totalTime: b,
+						totalTime: C,
 						playPauseVideo: this.props.playPauseVideo,
 						updatePosition: this.props.setVideoPosition,
 						updateContinuousStartTime: this.props.updateContinuousStartTime
-					})), o ? n.a.createElement(te, {
+					})), o && !m ? n.a.createElement(te, {
 						"aria-label": i.fbt._("live", null, {
 							hk: "1rkHRc"
 						}),
-						onClick: () => this.props.setVideoPosition(b)
+						onClick: () => this.props.setVideoPosition(C)
 					}, i.fbt._("Live", null, {
 						hk: "3bCYlO"
-					})) : n.a.createElement(ee, null, E(b)), m && r, !e && (this.props.isFullScreen ? n.a.createElement(ne, {
-						tooltip: x
-					}, n.a.createElement("button", {
-						"aria-label": x,
-						onClick: this.props.exitFullScreen
-					}, n.a.createElement(c, null))) : n.a.createElement(ae, {
+					})) : n.a.createElement(ee, null, E(C)), g && r, !e && (this.props.isFullScreen ? n.a.createElement(ne, {
 						tooltip: S
 					}, n.a.createElement("button", {
 						"aria-label": S,
+						onClick: this.props.exitFullScreen
+					}, n.a.createElement(c, null))) : n.a.createElement(ae, {
+						tooltip: P
+					}, n.a.createElement("button", {
+						"aria-label": P,
 						onClick: this.props.enterFullScreen
 					}, n.a.createElement(d, null)))))
 				}
@@ -817,35 +818,35 @@
 				B = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				L = s("./src/reddit/helpers/media/index.ts"),
 				F = s("./src/reddit/helpers/trackers/media.ts"),
-				O = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const k = e => {
-					const t = Object(O.c)(e, {
-						experimentEligibilitySelector: O.a,
+				k = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const O = e => {
+					const t = Object(k.c)(e, {
+						experimentEligibilitySelector: k.a,
 						experimentName: V.fb
 					});
-					return Object(V.Rb)(t) ? void 0 : t
+					return Object(V.Tb)(t) ? void 0 : t
 				},
 				N = e => e === V.hb.On,
 				R = e => {
-					const t = Object(O.c)(e, {
-						experimentEligibilitySelector: O.a,
+					const t = Object(k.c)(e, {
+						experimentEligibilitySelector: k.a,
 						experimentName: V.gb
 					});
-					return Object(V.Rb)(t) ? void 0 : t
+					return Object(V.Tb)(t) ? void 0 : t
 				},
 				j = e => e === V.hb.On;
 			var H = s("./src/reddit/selectors/experiments/utils.ts");
-			const A = Object(u.a)(e => Object(O.c)(e, {
-					experimentName: V.Ob,
-					experimentEligibilitySelector: O.a
+			const A = Object(u.a)(e => Object(k.c)(e, {
+					experimentName: V.Qb,
+					experimentEligibilitySelector: k.a
 				}), H.a),
 				I = Object(u.a)(A, (function(e) {
 					switch (e) {
-						case V.Pb.BufferTwoSeconds:
+						case V.Rb.BufferTwoSeconds:
 							return 2;
-						case V.Pb.BufferFiveSeconds:
+						case V.Rb.BufferFiveSeconds:
 							return 5;
-						case V.Pb.BufferTenSeconds:
+						case V.Rb.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1120,10 +1121,10 @@
 					fill: "#fff",
 					d: "M32.2 20.3c-.3-.2-.7-.2-1 0l-2.4 1.4v-1.5c0-1.1-.9-1.9-1.9-1.9h-7.7c-1.1 0-1.9.9-1.9 1.9v7.7c0 1.1.9 1.9 1.9 1.9h7.7c1.1 0 1.9-.9 1.9-1.9v-1.6l2.4 1.4c.2.1.3.1.5.1s.3 0 .5-.1c.3-.2.5-.5.5-.8v-5.8c-.1-.3-.2-.6-.5-.8"
 				}))),
-				Oe = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
-				ke = s.n(Oe);
+				ke = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
+				Oe = s.n(ke);
 			var Ne = e => d.a.createElement("svg", {
-					className: Object(f.a)(ke.a.icon, e.className),
+					className: Object(f.a)(Oe.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1394,7 +1395,7 @@
 					language: W.O,
 					loadTimes: G.f,
 					metadata: G.g,
-					muxSamplingAVariant: k,
+					muxSamplingAVariant: O,
 					muxSamplingBVariant: R,
 					postUrl: z.O,
 					started: G.i,
@@ -1768,8 +1769,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("b6937fa-production", " ").concat(t);
-									return i && (s += " [".concat(V.Ob, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("30db8ed-production", " ").concat(t);
+									return i && (s += " [".concat(V.Qb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2262,4 +2263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.4e70dfebfbcd8cfc3d9c.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ee22a935cd5e851b51e6.js.map
