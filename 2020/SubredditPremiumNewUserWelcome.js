@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.e8a0e0a189a2d3e79dcd.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.f6d22ad7ab09d12149cf.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -264,9 +264,9 @@
 				x = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/selectors/telemetry.ts"),
 				w = s("./src/reddit/i18n/utils.ts"),
-				v = s("./src/reddit/icons/svgs/Admin/index.tsx"),
-				y = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
-				O = s.n(y);
+				y = s("./src/reddit/icons/svgs/Admin/index.tsx"),
+				v = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
+				O = s.n(v);
 
 			function E(e) {
 				const {
@@ -277,7 +277,7 @@
 					className: Object(d.a)(t, O.a.container)
 				}, r.a.createElement("div", {
 					className: O.a.tagline
-				}, r.a.createElement(v.a, {
+				}, r.a.createElement(y.a, {
 					className: O.a.adminIcon
 				}), Object(w.c)("a note from reddit admins")), r.a.createElement("div", {
 					className: O.a.title
@@ -301,8 +301,8 @@
 				A = s("./src/config.ts"),
 				k = s("./src/reddit/helpers/economics/membershipPage.ts"),
 				W = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
-				L = s.n(W);
-			const D = Object(c.c)({
+				D = s.n(W);
+			const L = Object(c.c)({
 				meta: (e, t) => {
 					let {
 						subreddit: s
@@ -310,16 +310,16 @@
 					return Object(j.v)(e, s.id)
 				}
 			});
-			var M = Object(m.c)(Object(a.b)(D)((function(e) {
+			var M = Object(m.c)(Object(a.b)(L)((function(e) {
 					return r.a.createElement("div", {
-						className: Object(d.a)(L.a.container, e.className)
+						className: Object(d.a)(D.a.container, e.className)
 					}, Object(w.c)("This community is a part of an exclusive experiment run by Reddit Admins. "), Object(w.c)("Hundreds of followers have paid for a"), r.a.createElement("div", {
-						className: L.a.branding
+						className: D.a.branding
 					}, r.a.createElement("img", {
-						className: L.a.crown,
+						className: D.a.crown,
 						src: "".concat(A.a.assetPath, "/img/memberships/paywall/fortnitebr/Crown.gif")
 					}), e.meta.memberAlt), Object(w.c)("subscription. "), Object(w.c)("They benefit by getting unique features that Reddit doesn't provide in any other community. "), r.a.createElement(S.a, {
-						className: L.a.link,
+						className: D.a.link,
 						to: Object(k.a)(e.subreddit.name, e.correlationId),
 						onClick: () => e.sendEvent(t => Object.assign({
 							source: "meta",
@@ -337,14 +337,14 @@
 				F = s("./src/reddit/controls/Button/index.tsx"),
 				H = s("./src/reddit/endpoints/economics/emojis.ts"),
 				G = s("./src/reddit/selectors/products.ts"),
-				z = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
-				K = s.n(z);
-			const q = "newbie_badge";
-			class V extends r.a.Component {
+				K = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
+				q = s.n(K);
+			const z = "newbie_badge";
+			class Z extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object(H.a)(this.props.apiContext(), {
-							productId: q,
+							productId: z,
 							subredditId: this.props.subredditId
 						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => Object.assign({
 							source: "meta",
@@ -363,11 +363,11 @@
 						subredditId: s
 					} = this.props;
 					return t ? r.a.createElement("div", {
-						className: Object(d.a)(K.a.container, e)
+						className: Object(d.a)(q.a.container, e)
 					}, r.a.createElement("div", {
-						className: K.a.label
+						className: q.a.label
 					}, Object(w.c)("you just unlocked your first achievement badge")), r.a.createElement("div", {
-						className: K.a.badge
+						className: q.a.badge
 					}, r.a.createElement(R.a, {
 						fullWidth: !0,
 						badge: t,
@@ -378,23 +378,23 @@
 					}, Object(w.c)("apply")))) : null
 				}
 			}
-			const Z = Object(c.c)({
-				newbieBadge: e => Object(G.a)(e, q)
+			const V = Object(c.c)({
+				newbieBadge: e => Object(G.a)(e, z)
 			});
-			var Y = Object(b.b)(Object(m.c)(Object(a.b)(Z, (e, t) => {
+			var Y = Object(b.b)(Object(m.c)(Object(a.b)(V, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
 					return {
 						onBadgeApplied: () => {
 							e(Object(T.d)(s, {
-								id: q
+								id: z
 							})), e(Object(U.b)(h.a.Achievement)), e(Object(U.c)({
 								subredditId: s
 							}))
 						}
 					}
-				})(V))),
+				})(Z))),
 				Q = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
 				X = s.n(Q);
 			class J extends r.a.Component {
@@ -461,7 +461,7 @@
 						if (Object(p.L)(e, t) !== u.g.Large) return !1;
 						if (n) {
 							const t = Object(j.f)(e, n.id)[h.a.Achievement];
-							if (t && t.type === q) return !1
+							if (t && t.type === z) return !1
 						}
 						return !0
 					},
@@ -820,19 +820,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return n
 			}));
-			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./src/reddit/constants/experiments.ts"),
-				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				a = s("./src/reddit/selectors/platform.ts"),
-				c = s("./src/reddit/selectors/user.ts");
-			const i = new Set(["pollstest", "whatssnoo"]),
-				o = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => i.has((Object(a.e)(e) || "").toLowerCase()) || o.has((Object(a.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
-					experimentEligibilitySelector: c.G,
-					experimentName: n.ib
-				}) === n.pb.Enabled
+			const n = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -859,9 +849,9 @@
 			})), s.d(t, "o", (function() {
 				return w
 			})), s.d(t, "l", (function() {
-				return v
-			})), s.d(t, "m", (function() {
 				return y
+			})), s.d(t, "m", (function() {
+				return v
 			})), s.d(t, "s", (function() {
 				return O
 			})), s.d(t, "a", (function() {
@@ -902,15 +892,15 @@
 					}
 				},
 				u = (e, t) => {
-					const s = v(e, t);
+					const s = y(e, t);
 					if (s) return s.mainHeader
 				},
 				b = (e, t) => {
-					const s = v(e, t);
+					const s = y(e, t);
 					return s && s.mainHeader ? s.mainHeader.price : "0"
 				},
 				p = (e, t) => {
-					const s = v(e, t);
+					const s = y(e, t);
 					return s && s.mainHeader ? {
 						owner: s.mainHeader.owner,
 						ownerId: s.mainHeader.ownerId
@@ -943,15 +933,15 @@
 					const s = C(e, t);
 					return s && s.decimals ? "1" + "0".repeat(s.decimals) : "1"
 				},
-				v = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				v = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				O = (e, t) => {
-					const s = y(e, t);
+					const s = v(e, t);
 					return s && s.walletProvider
 				},
 				E = (e, t) => {
 					const s = O(e, t),
-						n = y(e, t);
+						n = v(e, t);
 					return s && s.provider || n && n.provider
 				},
 				N = (e, t) => {
@@ -987,10 +977,10 @@
 					}
 				},
 				B = (e, t) => {
-					const s = y(e, t);
+					const s = v(e, t);
 					return !!s && !!s.walletProvider && !s.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.e8a0e0a189a2d3e79dcd.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.f6d22ad7ab09d12149cf.js.map

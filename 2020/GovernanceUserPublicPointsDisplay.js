@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.e7302d5c13e4163b8fdc.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.ef86c826b7a932f4cb75.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -32,8 +32,8 @@
 				u = n("./src/reddit/endpoints/governance/requester.ts");
 			var l = n("./src/reddit/endpoints/governance/poll.ts");
 			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
-				m = n("./src/reddit/models/Poll/index.ts"),
-				p = n("./src/reddit/models/Toast/index.ts"),
+				p = n("./src/reddit/models/Poll/index.ts"),
+				m = n("./src/reddit/models/Toast/index.ts"),
 				f = n("./src/reddit/models/Vote/index.ts"),
 				g = n("./src/reddit/selectors/gov.ts"),
 				j = n("./src/reddit/actions/governance/constants.ts"),
@@ -49,7 +49,7 @@
 			})), n.d(t, "h", (function() {
 				return T
 			})), n.d(t, "i", (function() {
-				return B
+				return C
 			})), n.d(t, "f", (function() {
 				return A
 			})), n.d(t, "g", (function() {
@@ -74,8 +74,8 @@
 				S = Object(s.a)(j.u),
 				U = Object(s.a)(j.v),
 				G = Object(s.a)(j.w),
-				C = Object(s.a)(j.x),
-				B = Object(s.a)(j.y),
+				B = Object(s.a)(j.x),
+				C = Object(s.a)(j.y),
 				A = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: c,
@@ -84,8 +84,8 @@
 						a = r().polls.models[e];
 					if (n(P({
 							pollId: e
-						})), (o = a.type === m.a.GA ? await Object(l.c)(i(), e, t) : await Object(l.b)(c(), a.subredditId, e, t)).ok) {
-						if (a.type === m.a.GA) {
+						})), (o = a.type === p.a.GA ? await Object(l.c)(i(), e, t) : await Object(l.b)(c(), a.subredditId, e, t)).ok) {
+						if (a.type === p.a.GA) {
 							const {
 								options: e
 							} = o.body.data.updatePostPollVoteState.poll;
@@ -96,7 +96,7 @@
 							}))
 						} else n(N(o.body));
 						const s = r();
-						if ((a = s.polls.models[e]) && Object(m.d)(a)) {
+						if ((a = s.polls.models[e]) && Object(p.d)(a)) {
 							const {
 								postId: e
 							} = a, t = s.posts.models[e];
@@ -112,7 +112,7 @@
 					} = d;
 					n(E());
 					const b = s().transfers.communityPoints.contentId || void 0,
-						m = await
+						p = await
 					function(e, t) {
 						return Object(u.a)(e, {
 							data: {
@@ -127,12 +127,12 @@
 					}(l(), Object.assign({}, e, {
 						contentId: b
 					}));
-					if (m.ok) {
+					if (p.ok) {
 						const d = s().user.language;
-						n(S(Object.assign({}, m.body, {
+						n(S(Object.assign({}, p.body, {
 							subredditId: e.subredditId
 						}))), n(Object(i.e)({
-							kind: p.b.SuccessCommunity,
+							kind: m.b.SuccessCommunity,
 							text: Object(r.a)(d, "gov.transferSuccess", {
 								amount: Object(o.a)(e.amount),
 								recipient: e.recipient,
@@ -142,15 +142,15 @@
 							})
 						})), t && n(Object(c.f)())
 					} else n(_({
-						error: m.error
-					})), Object(O.a)(n, m.error)
+						error: p.error
+					})), Object(O.a)(n, p.error)
 				}, H = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
 					t(G());
 					const o = await Object(b.a)(s(), e);
-					o.ok ? t(C(o.body)) : t(U({
+					o.ok ? t(B(o.body)) : t(U({
 						error: o.error
 					}))
 				}, q = (e, t) => async (n, s, o) => {
@@ -169,12 +169,12 @@
 						})
 					}(c(), e, t);
 					if (d.ok) {
-						n(C({
+						n(B({
 							[t]: d.body
 						}));
 						const o = e ? "polls.optOutSuccess" : "polls.optInSuccess";
 						n(Object(i.e)({
-							kind: p.b.SuccessCommunity,
+							kind: m.b.SuccessCommunity,
 							text: Object(r.a)(s().user.language, o, {
 								tokenName: Object(g.p)(s(), {
 									subredditId: t
@@ -226,8 +226,8 @@
 				u = n("./src/reddit/actions/tooltip.ts"),
 				l = n("./src/reddit/components/Governance/Token/index.tsx"),
 				b = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				m = n("./src/reddit/featureFlags/index.ts"),
-				p = n("./src/reddit/featureFlags/component.tsx"),
+				p = n("./src/reddit/featureFlags/index.ts"),
+				m = n("./src/reddit/featureFlags/component.tsx"),
 				f = n("./src/reddit/helpers/governance/tokens.ts"),
 				g = n("./src/reddit/selectors/economics.ts"),
 				j = n("./src/reddit/selectors/gov.ts"),
@@ -237,7 +237,7 @@
 			const y = Object(c.c)({
 				language: O.O,
 				publicWallet: j.i,
-				tippingEnabled: m.d.spTipping,
+				tippingEnabled: p.d.spTipping,
 				tokenDisplayConversion: j.o,
 				tokenName: j.p,
 				useCrypto: j.k,
@@ -248,7 +248,7 @@
 					return Object(g.E)(e, n)
 				}
 			});
-			t.default = Object(p.a)("spPublicPoints", Object(o.b)(y, e => ({
+			t.default = Object(m.a)("spPublicPoints", Object(o.b)(y, e => ({
 				onHideTooltip: () => e(Object(u.i)()),
 				onShowTooltip: t => e(Object(u.f)({
 					tooltipId: t
@@ -268,19 +268,19 @@
 					tokenDisplayConversion: c,
 					useCrypto: a,
 					username: u
-				} = e, m = n && n.amount || void 0;
-				if (!m) return null;
-				const p = "public-wallets-".concat(u, "-").concat(r, "-").concat(t),
+				} = e, p = n && n.amount || void 0;
+				if (!p) return null;
+				const m = "public-wallets-".concat(u, "-").concat(r, "-").concat(t),
 					g = n && n.publicAddress;
 				return a && !g ? null : s.a.createElement("div", {
 					className: Object(i.a)(e.className, v.a.container, {
 						[v.a.tippable]: o
 					}),
-					id: p,
+					id: m,
 					onClick: t => {
 						o && (t.stopPropagation(), e.onTip(e.username, e.contentId, g))
 					},
-					onMouseEnter: () => e.onShowTooltip(p),
+					onMouseEnter: () => e.onShowTooltip(m),
 					onMouseLeave: () => e.onHideTooltip()
 				}, s.a.createElement(l.a, {
 					className: v.a.tokenFilled,
@@ -291,9 +291,9 @@
 					subredditId: e.subredditId
 				}), s.a.createElement("span", {
 					className: v.a.amount
-				}, Object(f.c)(m, c)), o && s.a.createElement(b.c, {
+				}, Object(f.c)(p, c)), o && s.a.createElement(b.c, {
 					caretOnTop: !0,
-					tooltipId: p,
+					tooltipId: m,
 					text: Object(d.a)(e.language, "gov.tipText", {
 						tokenName: e.tokenName,
 						username: e.username
@@ -359,7 +359,7 @@
 			})), n.d(t, "c", (function() {
 				return b
 			})), n.d(t, "a", (function() {
-				return m
+				return p
 			}));
 			var r = n("./node_modules/lodash/get.js"),
 				s = n.n(r),
@@ -385,7 +385,7 @@
 				}
 			}));
 
-			function m(e, t) {
+			function p(e, t) {
 				return Object(u.a)(Object(i.a)(e, [a.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
@@ -506,19 +506,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
+				return r
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/selectors/platform.ts"),
-				c = n("./src/reddit/selectors/user.ts");
-			const d = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				a = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
-					experimentEligibilitySelector: c.G,
-					experimentName: r.ib
-				}) === r.pb.Enabled
+			const r = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -527,9 +517,9 @@
 			})), n.d(t, "c", (function() {
 				return b
 			})), n.d(t, "d", (function() {
-				return m
-			})), n.d(t, "e", (function() {
 				return p
+			})), n.d(t, "e", (function() {
+				return m
 			})), n.d(t, "g", (function() {
 				return f
 			})), n.d(t, "h", (function() {
@@ -591,11 +581,11 @@
 					const n = I(e, t);
 					if (n) return n.mainHeader
 				},
-				m = (e, t) => {
+				p = (e, t) => {
 					const n = I(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
-				p = (e, t) => {
+				m = (e, t) => {
 					const n = I(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
@@ -679,4 +669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.e7302d5c13e4163b8fdc.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.ef86c826b7a932f4cb75.js.map

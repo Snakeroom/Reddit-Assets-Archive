@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.f83b3b50b487432ae7ce.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.16b6b768af8fea3c7a87.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -43,7 +43,7 @@
 			})), r.d(t, "b", (function() {
 				return x
 			})), r.d(t, "d", (function() {
-				return y
+				return I
 			})), r.d(t, "e", (function() {
 				return w
 			})), r.d(t, "h", (function() {
@@ -62,8 +62,8 @@
 			const f = Object(n.a)(v.b),
 				x = Object(n.a)(v.c),
 				j = Object(n.a)(v.d),
-				y = Object(n.a)(v.e),
-				I = Object(n.a)(v.f),
+				I = Object(n.a)(v.e),
+				y = Object(n.a)(v.f),
 				w = (Object(n.a)(v.g), Object(n.a)(v.h), Object(n.a)(v.i)),
 				E = Object(n.a)(v.j),
 				N = Object(n.a)(v.k),
@@ -89,7 +89,7 @@
 							const {
 								options: e
 							} = o.body.data.updatePostPollVoteState.poll;
-							r(I({
+							r(y({
 								pollId: c.id,
 								optionId: t,
 								options: e
@@ -229,18 +229,18 @@
 				return _
 			}));
 			const j = "add-custom-badge-tooltip",
-				y = 100,
-				I = 2 * y;
+				I = 100,
+				y = 2 * I;
 			class w extends n.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, y)), this.mouseOverTooltip = e
+						}, I)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, I)
+						}, y)
 					}
 				}
 				render() {
@@ -476,8 +476,8 @@
 				}))
 			};
 			var j = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				y = r("./src/reddit/featureFlags/index.ts"),
-				I = r("./src/reddit/i18n/components.tsx"),
+				I = r("./src/reddit/featureFlags/index.ts"),
+				y = r("./src/reddit/i18n/components.tsx"),
 				w = r("./src/reddit/i18n/utils.ts"),
 				E = r("./src/reddit/icons/svgs/Info/index.tsx"),
 				N = r("./src/reddit/selectors/economics.ts"),
@@ -501,7 +501,7 @@
 					return a.a.createElement(L.i, {
 						className: e.className,
 						onClick: e.onOptIn
-					}, a.a.createElement(I.c, null, "enable"))
+					}, a.a.createElement(y.c, null, "enable"))
 				})),
 				B = (r("./node_modules/core-js/modules/es6.symbol.js"), r("./src/reddit/components/OverlayAwareTooltip/index.tsx")),
 				q = r("./src/reddit/controls/Dropdown/index.tsx"),
@@ -560,8 +560,8 @@
 				})(V),
 				J = r("./src/reddit/components/Governance/Leaderboard/Distribution/index.m.less"),
 				X = r.n(J);
-			const z = "distribution-opt-out";
-			class Q extends a.a.Component {
+			const Q = "distribution-opt-out";
+			class z extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						showDropdown: !1
@@ -576,13 +576,13 @@
 					}
 				}
 				render() {
-					const e = "".concat(z).concat(this.props.uniqueId || ""),
+					const e = "".concat(Q).concat(this.props.uniqueId || ""),
 						t = !!this.props.distribution && !!this.props.distribution.nextIssue && !!this.props.distribution.nextIssueAt;
 					return this.props.specialMembership ? a.a.createElement("div", {
 						className: Object(_.a)(this.props.className, X.a.container)
 					}, a.a.createElement("div", {
 						className: Object(_.a)(X.a.descriptionSmall)
-					}, a.a.createElement(I.c, null, "You earn Karma Points from your posts and comments in this subreddit. Earn enough Karma Points and you’ll get an Achievement Badge! Scores are updated once a week."))) : a.a.createElement("div", {
+					}, a.a.createElement(y.c, null, "You earn Karma Points from your posts and comments in this subreddit. Earn enough Karma Points and you’ll get an Achievement Badge! Scores are updated once a week."))) : a.a.createElement("div", {
 						className: Object(_.a)(this.props.className, X.a.container)
 					}, a.a.createElement("div", {
 						className: X.a.amount
@@ -619,7 +619,7 @@
 				renderNoRelease() {
 					return a.a.createElement("div", {
 						className: X.a.noRelease
-					}, a.a.createElement(I.c, null, "There are currently no new distributions scheduled."))
+					}, a.a.createElement(y.c, null, "There are currently no new distributions scheduled."))
 				}
 			}
 			const Z = Object(i.c)({
@@ -630,7 +630,7 @@
 					return e.subreddits.gov.distributions[r.id]
 				},
 				language: e => e.user.language,
-				specialMembership: y.d.spPremium,
+				specialMembership: I.d.spPremium,
 				wallet: (e, t) => {
 					let {
 						subreddit: r
@@ -640,7 +640,7 @@
 					})
 				}
 			});
-			var Y = Object(d.b)(Z)(Q),
+			var Y = Object(d.b)(Z)(z),
 				$ = (r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less")),
 				ee = r.n($);
 			const te = Object(i.c)({
@@ -683,7 +683,7 @@
 			};
 			const pe = Object(i.c)({
 				accountId: e => e.user.account ? e.user.account.id : void 0,
-				badgesEnabled: e => y.d.spBadges(e) || y.d.spPremium(e)
+				badgesEnabled: e => I.d.spBadges(e) || I.d.spPremium(e)
 			});
 			var me = Object(de.c)(Object(d.b)(pe)((function(e) {
 					const t = oe()();
@@ -736,7 +736,7 @@
 						className: ge.a.header
 					}, a.a.createElement("div", {
 						className: ge.a.topUsers
-					}, a.a.createElement(I.c, null, "top 10 users")), a.a.createElement("div", {
+					}, a.a.createElement(y.c, null, "top 10 users")), a.a.createElement("div", {
 						className: ge.a.tokens
 					}, this.props.tokenName)), (() => this.props.leaderboardErrored ? a.a.createElement("div", {
 						className: ge.a.error
@@ -793,7 +793,7 @@
 						}));
 						return !!e.leaderboard.api.error[s]
 					},
-					specialMembership: y.d.spPremium,
+					specialMembership: I.d.spPremium,
 					subreddit: (e, t) => e.subreddits.models[t.subredditId],
 					userOptedOut: (e, t) => {
 						let {
@@ -1017,19 +1017,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
+				return s
 			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = r("./src/reddit/constants/experiments.ts"),
-				n = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = r("./src/reddit/selectors/platform.ts"),
-				a = r("./src/reddit/selectors/user.ts");
-			const d = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				c = e => d.has((Object(o.e)(e) || "").toLowerCase()) || i.has((Object(o.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
-					experimentEligibilitySelector: a.G,
-					experimentName: s.ib
-				}) === s.pb.Enabled
+			const s = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -1056,9 +1046,9 @@
 			})), r.d(t, "o", (function() {
 				return j
 			})), r.d(t, "l", (function() {
-				return y
-			})), r.d(t, "m", (function() {
 				return I
+			})), r.d(t, "m", (function() {
+				return y
 			})), r.d(t, "s", (function() {
 				return w
 			})), r.d(t, "a", (function() {
@@ -1099,15 +1089,15 @@
 					}
 				},
 				p = (e, t) => {
-					const r = y(e, t);
+					const r = I(e, t);
 					if (r) return r.mainHeader
 				},
 				m = (e, t) => {
-					const r = y(e, t);
+					const r = I(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				b = (e, t) => {
-					const r = y(e, t);
+					const r = I(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -1140,15 +1130,15 @@
 					const r = C(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
-				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				I = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				I = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				w = (e, t) => {
-					const r = I(e, t);
+					const r = y(e, t);
 					return r && r.walletProvider
 				},
 				E = (e, t) => {
 					const r = w(e, t),
-						s = I(e, t);
+						s = y(e, t);
 					return r && r.provider || s && s.provider
 				},
 				N = (e, t) => {
@@ -1184,10 +1174,10 @@
 					}
 				},
 				_ = (e, t) => {
-					const r = I(e, t);
+					const r = y(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.f83b3b50b487432ae7ce.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.16b6b768af8fea3c7a87.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.8aa2401aeb636614e21f.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.8cc6bc1e84a29f52c74c.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -910,8 +910,8 @@
 				V = Object(r.a)(B.H),
 				X = Object(r.a)(B.a),
 				Z = Object(r.a)(B.D),
-				G = e => "/r/".concat(e, "/about/").concat(R.p),
-				K = (e, t) => {
+				K = e => "/r/".concat(e, "/about/").concat(R.p),
+				G = (e, t) => {
 					const s = t.creations.formData.govType,
 						a = Object.assign({}, e);
 					if (s && (a.type = s), a.type === _.a.ReplaceTopMod) a.params = {
@@ -981,7 +981,7 @@
 						b = await Object(O.a)(n(), g);
 					if (b.ok) return t(Object(h.e)({
 						subredditId: l.id
-					})), void t(Object(d.G)(G(l.name), !1));
+					})), void t(Object(d.G)(K(l.name), !1));
 					const y = b.error;
 					t(Y(y))
 				}, ee = e => async (t, s, a) => {
@@ -1000,7 +1000,7 @@
 							subredditId: l.id
 						}));
 						const e = u.body.data.createScheduledPost.scheduledPost;
-						return e && Object(i.a)(Object(w.s)(Object(C.d)(e))(r)), void t(Object(d.G)(G(l.name), !1))
+						return e && Object(i.a)(Object(w.s)(Object(C.d)(e))(r)), void t(Object(d.G)(K(l.name), !1))
 					}
 					const p = u.error;
 					t(Y(p))
@@ -1012,7 +1012,7 @@
 						h = Object(T.T)(u, e),
 						m = !!Object(P.a)(u),
 						v = u.creations.formData.isPoll,
-						O = u.creations.formData.polls ? K(u.creations.formData.polls, u) : K({
+						O = u.creations.formData.polls ? G(u.creations.formData.polls, u) : G({
 							duration: n.x,
 							options: []
 						}, u);
@@ -1739,8 +1739,8 @@
 					d: "M92-698H80a1,1,0,0,1-1-1v-7a1,1,0,0,1,1-1h1v-3a5.006,5.006,0,0,1,5-5,5.584,5.584,0,0,1,3.437,1.181,3.945,3.945,0,0,1,1.563,3.1,1.464,1.464,0,0,1-.227,1.041.709.709,0,0,1-.466.307h-.624c-.685-.106-.749-1.336-.75-1.348,0-1.3-1.779-2.284-2.933-2.284a3,3,0,0,0-3,3v3h9a1,1,0,0,1,1,1v7A1,1,0,0,1,92-698Z",
 					transform: "translate(-74 718)"
 				}))),
-				G = s("./src/reddit/icons/svgs/Menu/index.tsx"),
-				K = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				K = s("./src/reddit/icons/svgs/Menu/index.tsx"),
+				G = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				J = (s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./src/reddit/components/ImageEditor/Slider/index.m.less")),
 				Q = s.n(J);
 			const $ = e => {
@@ -2047,7 +2047,7 @@
 							hk: "1Bv6TT"
 						}),
 						onClick: this.handleIsOpenedChange
-					}, n.a.createElement(G.a, {
+					}, n.a.createElement(K.a, {
 						className: Object(u.a)(de.a.LayerMenuButton, {
 							[de.a.LayerMenuOpened]: i
 						})
@@ -2147,7 +2147,7 @@
 						}),
 						onClick: this.handleDeleteLayer,
 						disabled: t.isDisabled
-					}, n.a.createElement(K.a, {
+					}, n.a.createElement(G.a, {
 						className: Object(u.a)(de.a.LayerOptionsActionIcon, de.a.RedIcon)
 					})))))
 				}
@@ -2431,11 +2431,11 @@
 				Ve = "url(".concat(h.a.assetPath, "/img/thickness-track.svg)"),
 				Xe = 370,
 				Ze = 360,
-				Ge = 100,
 				Ke = 100,
+				Ge = 100,
 				Je = 100,
-				Qe = e => e / Ge,
-				$e = e => (Ke - e) / Ke;
+				Qe = e => e / Ke,
+				$e = e => (Ge - e) / Ge;
 			class et extends n.a.Component {
 				constructor(e) {
 					super(e), this.calculateHexColor = (e, t) => e > Ze ? Object(i.c)(e % Ze, 0, Qe(t)) : Object(i.c)(e, 1, Qe(t)), this.handleHueChange = e => {
@@ -2529,7 +2529,7 @@
 								hue: r,
 								saturation: o,
 								lightness: c
-							} = Object(i.f)(e), d = c * Ge;
+							} = Object(i.f)(e), d = c * Ke;
 							if (a === r && n === d) return null;
 							const {
 								onColorChange: l
@@ -2550,7 +2550,7 @@
 					} = Object(i.f)(e.activeColor);
 					this.state = {
 						hue: t,
-						lightness: s * Ge,
+						lightness: s * Ke,
 						shownSettings: null,
 						opacity: 0,
 						cap: "round",
@@ -2568,7 +2568,7 @@
 					} = Object(i.f)(this.props.pipetteColor);
 					this.setState({
 						hue: s,
-						lightness: a * Ge
+						lightness: a * Ke
 					})
 				}
 				render() {
@@ -2645,7 +2645,7 @@
 							hk: "1sjlmP"
 						}),
 						min: 0,
-						max: Ge,
+						max: Ke,
 						step: 1,
 						value: t,
 						onChange: this.handleLightnessChange,
@@ -2692,7 +2692,7 @@
 							hk: "3kyKc"
 						}),
 						min: 0,
-						max: Ke,
+						max: Ge,
 						step: 1,
 						value: a,
 						onChange: this.handleOpacityChange,
@@ -4705,19 +4705,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return a
 			}));
-			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = s("./src/reddit/constants/experiments.ts"),
-				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				r = s("./src/reddit/selectors/platform.ts"),
-				i = s("./src/reddit/selectors/user.ts");
-			const o = new Set(["pollstest", "whatssnoo"]),
-				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => o.has((Object(r.e)(e) || "").toLowerCase()) || c.has((Object(r.e)(e) || "").toLowerCase()) && Object(n.c)(e, {
-					experimentEligibilitySelector: i.G,
-					experimentName: a.ib
-				}) === a.pb.Enabled
+			const a = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
@@ -4878,4 +4868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.8aa2401aeb636614e21f.js.map
+//# sourceMappingURL=PainterModalLoader.8cc6bc1e84a29f52c74c.js.map

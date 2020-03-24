@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.b74f9ac59146f3bfcb18.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.3a7a3ff50f51f3293440.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -35,28 +35,28 @@
 				o = n("./node_modules/react-motion/lib/react-motion.js"),
 				a = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/app/strings/index.ts"),
-				d = n("./src/lib/constants/index.ts"),
+				d = n("./src/app/strings/index.ts"),
+				c = n("./src/lib/constants/index.ts"),
 				l = n("./src/lib/localStorageAvailable/index.ts"),
 				u = n("./src/reddit/contexts/ApiContext.tsx"),
 				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				p = n("./src/lib/lessComponent.tsx"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/controls/Button/index.m.less"),
-				f = n.n(v);
-			const g = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", f.a),
-				h = p.a.wrapped(b.l, "InvertedTertiaryButton", f.a);
-			var x = n("./src/reddit/endpoints/governance/poll.ts"),
+				f = n("./src/reddit/controls/Button/index.m.less"),
+				g = n.n(f);
+			const v = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", g.a),
+				x = p.a.wrapped(b.l, "InvertedTertiaryButton", g.a);
+			var h = n("./src/reddit/endpoints/governance/poll.ts"),
 				j = n("./src/reddit/featureFlags/component.tsx"),
-				w = n("./src/reddit/helpers/overlay/index.ts"),
-				O = n("./src/reddit/i18n/components.tsx"),
+				O = n("./src/reddit/helpers/overlay/index.ts"),
+				w = n("./src/reddit/i18n/components.tsx"),
 				y = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
 				E = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				I = n("./src/reddit/selectors/gov.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/Governance/VotingBanner/index.m.less"),
-				C = n.n(N);
-			const P = 100,
+				P = n.n(N);
+			const C = 100,
 				S = [{
 					key: "banner",
 					style: {
@@ -76,9 +76,9 @@
 					}, this.saveDismissState = () => {
 						Object(l.a)() && this.props.subreddit && localStorage.setItem(T(this.props.subreddit.id), (new Date).toISOString())
 					}, this.willEnter = () => ({
-						bottom: -P
+						bottom: -C
 					}), this.willLeave = () => ({
-						bottom: Object(o.spring)(-P)
+						bottom: Object(o.spring)(-C)
 					})
 				}
 				async componentDidMount() {
@@ -90,7 +90,7 @@
 						}
 					}(this.props.assets);
 					if (e) {
-						const t = await Object(x.a)(this.props.apiContext(), e);
+						const t = await Object(h.a)(this.props.apiContext(), e);
 						t.ok && this.setState({
 							postTitle: t.body.title,
 							postUrl: t.body.url,
@@ -111,41 +111,41 @@
 						willEnter: this.willEnter,
 						willLeave: this.willLeave
 					}, n => s.a.createElement(r.Fragment, null, n.map(n => s.a.createElement("div", {
-						className: C.a.container,
+						className: P.a.container,
 						key: n.key,
 						style: n.style
 					}, s.a.createElement("div", {
-						className: C.a.inner
+						className: P.a.inner
 					}, s.a.createElement("div", {
-						className: C.a.content
+						className: P.a.content
 					}, s.a.createElement("div", {
-						className: C.a.redditIconContainer
+						className: P.a.redditIconContainer
 					}, s.a.createElement(E.a, {
-						className: C.a.redditIcon
+						className: P.a.redditIcon
 					}), s.a.createElement("div", {
-						className: C.a.glowInner
+						className: P.a.glowInner
 					}), s.a.createElement("div", {
-						className: C.a.glowOuter
+						className: P.a.glowOuter
 					})), s.a.createElement("div", {
-						className: C.a.description
+						className: P.a.description
 					}, s.a.createElement("div", {
-						className: C.a.cta
-					}, Object(c.a)(t, "gov.voteCta", {
+						className: P.a.cta
+					}, Object(d.a)(t, "gov.voteCta", {
 						subredditName: e.displayText
 					})), s.a.createElement("div", {
-						className: C.a.postTitle
+						className: P.a.postTitle
 					}, this.state.postTitle))), s.a.createElement("div", {
-						className: C.a.controls
-					}, s.a.createElement(h, {
-						className: C.a.button,
+						className: P.a.controls
+					}, s.a.createElement(x, {
+						className: P.a.button,
 						onClick: this.dismissBanner
-					}, s.a.createElement(O.c, null, "later")), s.a.createElement(g, {
-						className: C.a.button,
-						to: Object(w.b)(this.state.postUrl),
+					}, s.a.createElement(w.c, null, "later")), s.a.createElement(v, {
+						className: P.a.button,
+						to: Object(O.b)(this.state.postUrl),
 						onClick: this.dismissBanner
 					}, s.a.createElement(y.a, {
-						className: C.a.govIcon
-					}), s.a.createElement(O.c, null, "vote"))))))))
+						className: P.a.govIcon
+					}), s.a.createElement(w.c, null, "vote"))))))))
 				}
 			}
 
@@ -160,9 +160,9 @@
 					n = localStorage.getItem(t);
 				if (!n) return !1;
 				const r = new Date(n).getTime();
-				return Date.now() - d.x < r
+				return Date.now() - c.x < r
 			}
-			const L = Object(i.c)({
+			const A = Object(i.c)({
 					assets: (e, t) => {
 						const n = Object(m.q)(e, t);
 						if (n) return Object(I.l)(e, {
@@ -172,11 +172,11 @@
 					language: _.O,
 					subreddit: m.q
 				}),
-				A = Object(a.b)(L, e => ({
+				H = Object(a.b)(A, e => ({
 					onOpenPoll: e => {}
 				})),
-				H = Object(m.t)();
-			t.default = Object(j.a)("spGovPolls", H(Object(u.b)(A(k))))
+				L = Object(m.t)();
+			t.default = Object(j.a)("spGovPolls", L(Object(u.b)(H(k))))
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, n) {
 			"use strict";
@@ -187,9 +187,9 @@
 			})), n.d(t, "d", (function() {
 				return i
 			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "b", (function() {
 				return d
+			})), n.d(t, "b", (function() {
+				return c
 			}));
 			var r, s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -213,14 +213,14 @@
 					}
 				})
 			}
-			async function c(e, t, n) {
+			async function d(e, t, n) {
 				return await Object(o.a)(e, {
 					method: "post",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations"),
 					data: n
 				})
 			}
-			async function d(e, t, n) {
+			async function c(e, t, n) {
 				return await Object(o.a)(e, {
 					method: "delete",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(n)
@@ -243,8 +243,8 @@
 				o = n("./src/config.ts"),
 				a = n("./src/graphql/operations/PollVote.json"),
 				i = n("./src/lib/makeGqlRequest/index.ts"),
-				c = n("./src/lib/omitHeaders/index.ts"),
-				d = n("./src/reddit/constants/headers.ts"),
+				d = n("./src/lib/omitHeaders/index.ts"),
+				c = n("./src/reddit/constants/headers.ts"),
 				l = (n("./src/reddit/models/Poll/index.ts"), n("./src/reddit/endpoints/governance/requester.ts"));
 
 			function u(e, t, n, r) {
@@ -263,7 +263,7 @@
 			}));
 
 			function p(e, t) {
-				return Object(l.a)(Object(c.a)(e, [d.a]), {
+				return Object(l.a)(Object(d.a)(e, [c.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
 				}).then(e => e.ok ? Object.assign({}, e, {
@@ -277,7 +277,7 @@
 		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -285,7 +285,7 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/featureFlags/index.ts"),
-				c = function(e, t) {
+				d = function(e, t) {
 					var n = {};
 					for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -295,14 +295,14 @@
 					return n
 				};
 
-			function d(e, t, n) {
+			function c(e, t, n) {
 				const r = Object(a.c)({
 					featureEnabled: t => i.d[e](t)
 				});
 				return Object(o.b)(r)(e => {
 					const {
 						featureEnabled: r
-					} = e, o = c(e, ["featureEnabled"]);
+					} = e, o = d(e, ["featureEnabled"]);
 					return r ? s.a.createElement(t, o) : void 0 !== n ? s.a.createElement(n, o) : null
 				})
 			}
@@ -330,19 +330,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return r
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/selectors/platform.ts"),
-				a = n("./src/reddit/selectors/user.ts");
-			const i = new Set(["pollstest", "whatssnoo"]),
-				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
-					experimentEligibilitySelector: a.G,
-					experimentName: r.ib
-				}) === r.pb.Enabled
+			const r = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -355,21 +345,21 @@
 			})), n.d(t, "e", (function() {
 				return b
 			})), n.d(t, "g", (function() {
-				return v
-			})), n.d(t, "h", (function() {
 				return f
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return g
+			})), n.d(t, "i", (function() {
+				return v
 			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "p", (function() {
 				return x
+			})), n.d(t, "p", (function() {
+				return h
 			})), n.d(t, "q", (function() {
 				return j
 			})), n.d(t, "o", (function() {
-				return w
-			})), n.d(t, "l", (function() {
 				return O
+			})), n.d(t, "l", (function() {
+				return w
 			})), n.d(t, "m", (function() {
 				return y
 			})), n.d(t, "s", (function() {
@@ -381,17 +371,17 @@
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "n", (function() {
-				return C
-			})), n.d(t, "k", (function() {
 				return P
+			})), n.d(t, "k", (function() {
+				return C
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = n("./src/reddit/endpoints/governance/crypto.ts"),
 				o = n("./src/reddit/featureFlags/index.ts"),
 				a = n("./src/reddit/selectors/experiments/pollsGA.ts"),
 				i = n("./src/reddit/selectors/postCreations.ts");
-			const c = [],
-				d = {},
+			const d = [],
+				c = {},
 				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
@@ -412,22 +402,22 @@
 					}
 				},
 				m = (e, t) => {
-					const n = O(e, t);
+					const n = w(e, t);
 					if (n) return n.mainHeader
 				},
 				p = (e, t) => {
-					const n = O(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				b = (e, t) => {
-					const n = O(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
-					} : d
+					} : c
 				},
-				v = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				f = (e, t) => {
+				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				g = (e, t) => {
 					if (Object(a.a)(e)) {
 						const t = Object(i.g)(e);
 						return !!t.allowedPostTypes && t.allowedPostTypes.polls
@@ -440,20 +430,20 @@
 					}
 					return n
 				},
-				g = (e, t) => {
+				v = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				h = (e, t) => {
+				x = (e, t) => {
 					const n = Object(r.m)(e, t);
-					return n && e.subreddits.gov.releaseNotes[n] || c
+					return n && e.subreddits.gov.releaseNotes[n] || d
 				},
-				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				h = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
-				w = (e, t) => {
+				O = (e, t) => {
 					const n = N(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				O = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				E = (e, t) => {
 					const n = y(e, t);
@@ -485,7 +475,7 @@
 						image: a.image
 					}
 				},
-				C = (e, t) => {
+				P = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -496,11 +486,11 @@
 						address: void 0
 					}
 				},
-				P = (e, t) => {
+				C = (e, t) => {
 					const n = y(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.b74f9ac59146f3bfcb18.js.map
+//# sourceMappingURL=GovernanceVotingBanner.3a7a3ff50f51f3293440.js.map

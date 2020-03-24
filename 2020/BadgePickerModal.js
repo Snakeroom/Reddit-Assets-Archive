@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.b8ec607f1de9ca6789f1.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.79cc47caa157202ad73b.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -232,11 +232,11 @@
 					}, r.a.createElement(v.c, null, "Apply"))
 				}
 			}
-			const w = Object(d.c)({
+			const N = Object(d.c)({
 				userFlairData: l.c,
 				user: e => e.user.account
 			});
-			var N = Object(n.b)(w, e => ({
+			var I = Object(n.b)(N, e => ({
 					onApplyFlair: (t, a, s, r, n) => {
 						e(Object(m.o)(t, a, s, r, n)), e(Object(u.f)())
 					}
@@ -245,7 +245,7 @@
 						t.onApplyFlair(s, r, n, e.user && e.user.displayText ? e.user.displayText : "", a.subredditId)
 					}
 				}))(B),
-				I = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/core-js/modules/es6.array.sort.js"), a("./node_modules/bignumber.js/bignumber.js")),
+				w = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/core-js/modules/es6.array.sort.js"), a("./node_modules/bignumber.js/bignumber.js")),
 				j = a("./node_modules/shallowequal/index.js"),
 				O = a.n(j);
 
@@ -321,8 +321,8 @@
 					}
 				})((function(e) {
 					if (!e.product) return null;
-					const t = !e.product.quantityLeft || new I.BigNumber(e.product.quantityLeft).isZero(),
-						a = !e.wallet || !e.product.price || new I.BigNumber(e.wallet.amount).isLessThan(new I.BigNumber(e.product.price)),
+					const t = !e.product.quantityLeft || new w.BigNumber(e.product.quantityLeft).isZero(),
+						a = !e.wallet || !e.product.price || new w.BigNumber(e.wallet.amount).isLessThan(new w.BigNumber(e.product.price)),
 						s = t || a || e.alreadyOwned;
 					return r.a.createElement("div", {
 						className: Object(o.a)(q.a.container, e.className),
@@ -364,33 +364,33 @@
 					className: U.a.quantity
 				}))
 			}
-			var z = a("./src/reddit/components/Badges/PickerModal/Gallery/index.m.less"),
-				W = a.n(z);
+			var W = a("./src/reddit/components/Badges/PickerModal/Gallery/index.m.less"),
+				z = a.n(W);
 			class J extends r.a.Component {
 				componentDidMount() {
 					this.props.productIds.length || this.props.onFetchProducts()
 				}
 				render() {
 					return r.a.createElement("div", null, r.a.createElement("header", {
-						className: W.a.header
+						className: z.a.header
 					}, r.a.createElement("div", {
-						className: W.a.title
+						className: z.a.title
 					}, r.a.createElement(v.c, null, "get badge")), this.props.wallet && this.renderWallet(this.props.wallet, this.props.subredditId)), r.a.createElement("article", {
-						className: W.a.badges
+						className: z.a.badges
 					}, this.props.productsPending ? Array.from({
 						length: 5
 					}).map(() => r.a.createElement(X, {
-						className: W.a.badge
+						className: z.a.badge
 					})) : this.props.productIds.map(e => r.a.createElement(R, {
 						productId: e,
-						className: W.a.badge
+						className: z.a.badge
 					}))))
 				}
 				renderWallet(e, t) {
 					return r.a.createElement("div", {
-						className: W.a.wallet
+						className: z.a.wallet
 					}, r.a.createElement(S.a, {
-						className: W.a.tokenSymbol,
+						className: z.a.tokenSymbol,
 						subredditId: t
 					}), Object(F.a)(e.amount))
 				}
@@ -405,8 +405,8 @@
 					return Object.keys(s).filter(e => !!r[e]).filter(e => r[e].type === P.a.Badge).sort((e, t) => {
 						const a = r[e],
 							s = r[t],
-							n = new I.BigNumber(a.price || "0"),
-							d = new I.BigNumber(s.price || "0");
+							n = new w.BigNumber(a.price || "0"),
+							d = new w.BigNumber(s.price || "0");
 						return n.isLessThan(d) ? -1 : n.isGreaterThan(d) ? 1 : a.title.localeCompare(s.title)
 					})
 				}),
@@ -642,7 +642,7 @@
 					}, r.a.createElement(v.c, null, "apply"))
 				}
 			}
-			const we = Object(d.c)({
+			const Ne = Object(d.c)({
 				appliedBadges: _((e, t) => {
 					let {
 						subredditId: a
@@ -670,7 +670,7 @@
 					return !!e.badges.api.user.pending[a]
 				}
 			});
-			var Ne = Object(n.b)(we, (e, t) => {
+			var Ie = Object(n.b)(Ne, (e, t) => {
 					let {
 						subredditId: a
 					} = t;
@@ -686,7 +686,7 @@
 						}))
 					}
 				})(Be),
-				Ie = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
+				we = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				je = a("./src/reddit/components/Flair/index.tsx"),
 				Oe = a("./src/reddit/components/Badges/PickerModal/UserDisplay/index.m.less"),
 				ke = a.n(Oe);
@@ -730,7 +730,7 @@
 						subredditId: e.subredditId
 					})), r.a.createElement("div", {
 						className: Se.a.close
-					}, r.a.createElement(Ie.a, null)))
+					}, r.a.createElement(we.a, null)))
 				},
 				Te = a("./src/reddit/components/Badges/PickerModal/index.m.less"),
 				Le = a.n(Te);
@@ -780,7 +780,7 @@
 				renderMode() {
 					if (this.props.subredditId) switch (this.state.currentMode) {
 						case $.Flairs:
-							return r.a.createElement(N, {
+							return r.a.createElement(I, {
 								subredditId: this.props.subredditId,
 								onFlairChange: this.handleFlairChange
 							});
@@ -789,7 +789,7 @@
 								subredditId: this.props.subredditId
 							});
 						case $.MyBadges:
-							return r.a.createElement(Ne, {
+							return r.a.createElement(Ie, {
 								subredditId: this.props.subredditId,
 								onBadgesChange: this.handleBadgesChange,
 								onGotoGallery: () => this.handleModeChange($.Gallery)
@@ -1024,19 +1024,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return l
+				return s
 			}));
-			a("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = a("./src/reddit/constants/experiments.ts"),
-				r = a("./src/reddit/helpers/chooseVariant/index.ts"),
-				n = a("./src/reddit/selectors/platform.ts"),
-				d = a("./src/reddit/selectors/user.ts");
-			const i = new Set(["pollstest", "whatssnoo"]),
-				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				l = e => i.has((Object(n.e)(e) || "").toLowerCase()) || c.has((Object(n.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
-					experimentEligibilitySelector: d.G,
-					experimentName: s.ib
-				}) === s.pb.Enabled
+			const s = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, a) {
 			"use strict";
@@ -1067,11 +1057,11 @@
 			})), a.d(t, "m", (function() {
 				return B
 			})), a.d(t, "s", (function() {
-				return w
-			})), a.d(t, "a", (function() {
 				return N
-			})), a.d(t, "f", (function() {
+			})), a.d(t, "a", (function() {
 				return I
+			})), a.d(t, "f", (function() {
+				return w
 			})), a.d(t, "r", (function() {
 				return j
 			})), a.d(t, "n", (function() {
@@ -1094,7 +1084,7 @@
 					let {
 						subredditId: a
 					} = t;
-					const s = w(e, {
+					const s = N(e, {
 						subredditId: a
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.harberger ? s.extra.contracts.harberger : {
@@ -1149,22 +1139,22 @@
 				},
 				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				B = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				w = (e, t) => {
+				N = (e, t) => {
 					const a = B(e, t);
 					return a && a.walletProvider
 				},
-				N = (e, t) => {
-					const a = w(e, t),
+				I = (e, t) => {
+					const a = N(e, t),
 						s = B(e, t);
 					return a && a.provider || s && s.provider
 				},
-				I = (e, t) => {
-					const a = N(e, t);
+				w = (e, t) => {
+					const a = I(e, t);
 					return a === r.a.Ethereum || a === r.a.Rinkeby
 				},
 				j = (e, t) => {
-					const a = w(e, t),
-						s = N(e, t);
+					const a = N(e, t),
+						s = I(e, t);
 					if (a && !a.inTransition && s === r.a.Stellar) return {
 						address: a.extra && a.extra.issuerAddress || "",
 						decimals: a.extra && a.extra.decimals || 7,
@@ -1183,7 +1173,7 @@
 					let {
 						subredditId: a
 					} = t;
-					const s = w(e, {
+					const s = N(e, {
 						subredditId: a
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.subscriptions ? s.extra.contracts.subscriptions : {
@@ -1197,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.b8ec607f1de9ca6789f1.js.map
+//# sourceMappingURL=BadgePickerModal.79cc47caa157202ad73b.js.map

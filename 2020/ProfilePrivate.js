@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.06492e252653dc0d912f.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.1ddea2e4005f9f72efda.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -7618,7 +7618,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.a
 				});
-				return !!t && !Object(o.Tb)(t)
+				return !!t && !Object(o.Rb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -7631,9 +7631,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.ob
+					experimentName: o.nb
 				});
-				return Object(o.Tb)(t) ? void 0 : t
+				return Object(o.Rb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -7650,4 +7650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.06492e252653dc0d912f.js.map
+//# sourceMappingURL=ProfilePrivate.1ddea2e4005f9f72efda.js.map

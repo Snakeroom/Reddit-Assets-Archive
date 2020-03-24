@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.ee457eabb8e9bcb1612f.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.389781a64e7811a529ab.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -95,21 +95,21 @@
 				g = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				E = r.n(g);
 			r.d(t, "b", (function() {
-				return O
+				return w
 			})), r.d(t, "c", (function() {
 				return I
 			})), r.d(t, "a", (function() {
 				return P
 			}));
 			const y = "add-custom-badge-tooltip",
-				w = 100,
-				j = 2 * w;
-			class O extends a.a.Component {
+				O = 100,
+				j = 2 * O;
+			class w extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, w)), this.mouseOverTooltip = e
+						}, O)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
@@ -204,8 +204,8 @@
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenUploadDialog: () => e(Object(d.i)())
 				}),
-				I = Object(s.b)(N, T)(O),
-				P = Object(s.b)(C, T)(O)
+				I = Object(s.b)(N, T)(w),
+				P = Object(s.b)(C, T)(w)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -302,7 +302,7 @@
 				currentOwnerName: (e, t) => Object(v.e)(e, t).owner,
 				tokenDisplayConversion: v.o
 			});
-			var w = Object(s.b)(y)((function(e) {
+			var O = Object(s.b)(y)((function(e) {
 					const {
 						className: t,
 						cost: r,
@@ -385,7 +385,7 @@
 						stroke: "#1A1A1B"
 					}))
 				},
-				O = function(e) {
+				w = function(e) {
 					return a.a.createElement("svg", {
 						className: e.className,
 						viewBox: "0 0 27 32",
@@ -512,7 +512,7 @@
 						className: C.a.section
 					}, a.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(O, {
+					}, a.a.createElement(w, {
 						className: C.a.taxImage
 					})), a.a.createElement("div", {
 						className: C.a.textSection
@@ -535,7 +535,7 @@
 				}, a.a.createElement(I, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name
-				}), a.a.createElement(w, {
+				}), a.a.createElement(O, {
 					className: _.a.controls,
 					subredditId: e.subreddit.id,
 					onPurchase: e.onPurchase
@@ -543,23 +543,23 @@
 			}
 			var M = r("./node_modules/bignumber.js/bignumber.js"),
 				B = r("./src/lib/currency/cleanNumber/index.ts"),
-				S = r("./src/reddit/actions/harbergerTax/actionCreators.ts"),
-				H = r("./src/reddit/actions/toaster.ts"),
-				A = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				H = r("./src/reddit/actions/harbergerTax/actionCreators.ts"),
+				A = r("./src/reddit/actions/toaster.ts"),
+				S = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				D = r("./src/reddit/controls/FormFields/index.tsx"),
 				G = r("./src/reddit/helpers/governance/ethereum.ts"),
 				R = r("./src/reddit/i18n/utils.ts"),
 				F = r("./src/reddit/models/Toast/index.ts"),
-				L = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				V = r.n(L);
+				V = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
+				W = r.n(V);
 
-			function W(e) {
+			function L(e) {
 				return a.a.createElement("article", {
-					className: Object(i.a)(e.className, V.a.container)
+					className: Object(i.a)(e.className, W.a.container)
 				}, a.a.createElement("div", {
-					className: V.a.title
+					className: W.a.title
 				}, e.title), a.a.createElement("div", {
-					className: V.a.description
+					className: W.a.description
 				}, e.description), e.children)
 			}
 			var U = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
@@ -617,13 +617,13 @@
 					} = this.props, d = t || "0", l = this.state.price || "0", u = parseInt(l) * (s.taxRate / 100), m = u * parseInt(this.state.prepayDays), v = parseInt(d) + m, g = "".concat(s.taxRate, "%");
 					return a.a.createElement("div", {
 						className: Object(i.a)(Z.a.container, e)
-					}, a.a.createElement(W, {
+					}, a.a.createElement(L, {
 						className: Z.a.section,
 						description: Object(R.c)("You must pay this amount to the current owner to buy the banner."),
 						title: Object(R.c)("Current price")
 					}, a.a.createElement("div", {
 						className: Z.a.currentPrice
-					}, a.a.createElement(A.a, {
+					}, a.a.createElement(S.a, {
 						amount: d,
 						subredditId: o
 					}), r && a.a.createElement("div", {
@@ -635,7 +635,7 @@
 						userId: r
 					}), a.a.createElement("span", {
 						className: Z.a.username
-					}, n)))), a.a.createElement(W, {
+					}, n)))), a.a.createElement(L, {
 						className: Z.a.section,
 						description: Object(R.c)("\n            You can protect your ownership by raising the price.\n            This also increases the daily tax. You can also lower the price to\n            lower the tax.\n          "),
 						title: Object(R.c)("New price and tax")
@@ -659,7 +659,7 @@
 						className: Z.a.tax,
 						label: Object(R.c)("".concat(Object(R.b)("tax", g), " daily tax")),
 						tokenDisplayConversion: c
-					}))), a.a.createElement(W, {
+					}))), a.a.createElement(L, {
 						className: Z.a.section,
 						description: Object(R.c)("\n            You must deposit money to pay the daily tax. You can top this up\n            at any time. If the balance goes to zero, the price of the banner\n            drops to zero. If someone else buys the banner, you will be\n            refunded any pre-paid tax you allocated.\n          "),
 						title: Object(R.c)("Initial balance")
@@ -682,7 +682,7 @@
 						tokenDisplayConversion: c
 					}), a.a.createElement("div", {
 						className: Z.a.equals
-					}, "="), a.a.createElement(A.a, {
+					}, "="), a.a.createElement(S.a, {
 						className: Z.a.prepayTotal,
 						amount: m.toFixed(2),
 						subredditId: o
@@ -690,7 +690,7 @@
 						className: Z.a.footer
 					}, a.a.createElement("div", null, a.a.createElement("div", {
 						className: Z.a.total
-					}, Object(R.c)("Total due")), a.a.createElement(A.a, {
+					}, Object(R.c)("Total due")), a.a.createElement(S.a, {
 						amount: v.toFixed(2),
 						subredditId: o
 					})), a.a.createElement(x.f, {
@@ -708,12 +708,12 @@
 				tokenDisplayConversion: v.o
 			});
 			var Q, K = Object(s.b)(z, e => ({
-					onError: t => e(Object(H.e)({
+					onError: t => e(Object(A.e)({
 						duration: 5e3,
 						kind: F.b.Error,
 						text: t || Object(R.c)("Something wen't wrong with the purchase. Please try again later.")
 					})),
-					onPurchaseComplete: () => e(Object(S.a)())
+					onPurchaseComplete: () => e(Object(H.a)())
 				}))(J),
 				$ = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/index.m.less"),
 				ee = r.n($);
@@ -916,7 +916,7 @@
 					}))))
 				}),
 				y = r("./src/reddit/controls/ErrorText/index.m.less"),
-				w = r.n(y);
+				O = r.n(y);
 			r.d(t, "a", (function() {
 				return C
 			})), r.d(t, "c", (function() {
@@ -925,7 +925,7 @@
 			const j = Object(u.c)({
 				activeModalId: h.a
 			});
-			class O extends d.a.Component {
+			class w extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -967,12 +967,12 @@
 						textHasOverflowed: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(w.a.wrapper, r)
+						className: Object(m.a)(O.a.wrapper, r)
 					}, d.a.createElement("span", {
-						className: w.a.description,
+						className: O.a.description,
 						ref: this.spanRef
 					}, e), i && d.a.createElement("span", {
-						className: w.a.moreText,
+						className: O.a.moreText,
 						onClick: this.toggleModal
 					}, o), t === c && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
@@ -982,7 +982,7 @@
 			}
 			const N = Object(l.b)(j, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(O),
+				}))(w),
 				C = e => {
 					const {
 						className: t,
@@ -1531,19 +1531,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return n
 			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = r("./src/reddit/constants/experiments.ts"),
-				a = r("./src/reddit/helpers/chooseVariant/index.ts"),
-				s = r("./src/reddit/selectors/platform.ts"),
-				o = r("./src/reddit/selectors/user.ts");
-			const c = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => c.has((Object(s.e)(e) || "").toLowerCase()) || i.has((Object(s.e)(e) || "").toLowerCase()) && Object(a.c)(e, {
-					experimentEligibilitySelector: o.G,
-					experimentName: n.ib
-				}) === n.pb.Enabled
+			const n = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, r) {
 			"use strict";
@@ -1570,11 +1560,11 @@
 			})), r.d(t, "o", (function() {
 				return y
 			})), r.d(t, "l", (function() {
-				return w
+				return O
 			})), r.d(t, "m", (function() {
 				return j
 			})), r.d(t, "s", (function() {
-				return O
+				return w
 			})), r.d(t, "a", (function() {
 				return N
 			})), r.d(t, "f", (function() {
@@ -1601,7 +1591,7 @@
 					let {
 						subredditId: r
 					} = t;
-					const n = O(e, {
+					const n = w(e, {
 						subredditId: r
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.harberger ? n.extra.contracts.harberger : {
@@ -1613,15 +1603,15 @@
 					}
 				},
 				m = (e, t) => {
-					const r = w(e, t);
+					const r = O(e, t);
 					if (r) return r.mainHeader
 				},
 				p = (e, t) => {
-					const r = w(e, t);
+					const r = O(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				h = (e, t) => {
-					const r = w(e, t);
+					const r = O(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -1654,14 +1644,14 @@
 					const r = T(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
-				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				O = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				j = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				O = (e, t) => {
+				w = (e, t) => {
 					const r = j(e, t);
 					return r && r.walletProvider
 				},
 				N = (e, t) => {
-					const r = O(e, t),
+					const r = w(e, t),
 						n = j(e, t);
 					return r && r.provider || n && n.provider
 				},
@@ -1670,7 +1660,7 @@
 					return r === a.a.Ethereum || r === a.a.Rinkeby
 				},
 				T = (e, t) => {
-					const r = O(e, t),
+					const r = w(e, t),
 						n = N(e, t);
 					if (r && !r.inTransition && n === a.a.Stellar) return {
 						address: r.extra && r.extra.issuerAddress || "",
@@ -1690,7 +1680,7 @@
 					let {
 						subredditId: r
 					} = t;
-					const n = O(e, {
+					const n = w(e, {
 						subredditId: r
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.subscriptions ? n.extra.contracts.subscriptions : {
@@ -1704,4 +1694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.ee457eabb8e9bcb1612f.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.389781a64e7811a529ab.js.map

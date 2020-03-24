@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.80d1df4cfbaa94880baf.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3ec09773811693b46c19.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -27247,25 +27247,15 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Tb)(t)
+				return !!t && !Object(n.Rb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return n
 			}));
-			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./src/reddit/constants/experiments.ts"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				a = s("./src/reddit/selectors/platform.ts"),
-				r = s("./src/reddit/selectors/user.ts");
-			const i = new Set(["pollstest", "whatssnoo"]),
-				d = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				c = e => i.has((Object(a.e)(e) || "").toLowerCase()) || d.has((Object(a.e)(e) || "").toLowerCase()) && Object(o.c)(e, {
-					experimentEligibilitySelector: r.G,
-					experimentName: n.ib
-				}) === n.pb.Enabled
+			const n = e => !0
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
 			"use strict";
@@ -27277,9 +27267,9 @@
 			const a = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.ob
+					experimentName: n.nb
 				});
-				return Object(n.Tb)(t) ? void 0 : t
+				return Object(n.Rb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -27586,4 +27576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.80d1df4cfbaa94880baf.js.map
+//# sourceMappingURL=ModerationPages.3ec09773811693b46c19.js.map

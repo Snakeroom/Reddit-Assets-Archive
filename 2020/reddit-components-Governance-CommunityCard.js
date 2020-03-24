@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.633d6ac55bd6825737b0.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.9c487aa7d63a974a823e.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -51,11 +51,11 @@
 			})), n.d(t, "i", (function() {
 				return S
 			})), n.d(t, "f", (function() {
-				return L
-			})), n.d(t, "g", (function() {
 				return B
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "g", (function() {
 				return D
+			})), n.d(t, "j", (function() {
+				return L
 			})), n.d(t, "c", (function() {
 				return R
 			}));
@@ -76,7 +76,7 @@
 				A = Object(r.a)(f.w),
 				G = Object(r.a)(f.x),
 				S = Object(r.a)(f.y),
-				L = (e, t) => async (n, s, r) => {
+				B = (e, t) => async (n, s, r) => {
 					let o, {
 							apiContext: a,
 							gqlContext: c
@@ -106,7 +106,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(y.a)(n, o.error || o.errors[0].messsage)
-				}, B = (e, t) => async (n, r, i) => {
+				}, D = (e, t) => async (n, r, i) => {
 					let {
 						apiContext: u
 					} = i;
@@ -144,7 +144,7 @@
 					} else n(E({
 						error: b.error
 					})), Object(y.a)(n, b.error)
-				}, D = e => async (t, n, s) => {
+				}, L = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -277,9 +277,9 @@
 				A = n("./src/reddit/controls/Dropdown/index.tsx"),
 				G = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				S = n("./src/reddit/helpers/governance/ethereum.ts"),
-				L = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				B = n("./src/reddit/models/Toast/index.ts"),
-				D = n("./src/reddit/selectors/tooltip.ts"),
+				B = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				D = n("./src/reddit/models/Toast/index.ts"),
+				L = n("./src/reddit/selectors/tooltip.ts"),
 				R = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				W = n.n(R);
 			const U = Object(N.a)(A.a),
@@ -325,7 +325,7 @@
 						role: "menu",
 						onClick: t,
 						id: H
-					}, o.a.createElement(L.a, {
+					}, o.a.createElement(B.a, {
 						className: W.a.settingsIcon
 					})), i && o.a.createElement(U, {
 						tooltipId: H,
@@ -351,7 +351,7 @@
 				}
 			}
 			const q = Object(i.c)({
-					dropdownIsOpen: Object(D.b)(H),
+					dropdownIsOpen: Object(L.b)(H),
 					provider: l.a,
 					token: l.r,
 					tokenName: l.p
@@ -367,7 +367,7 @@
 						e(Object(v.j)({
 							subredditId: t.subredditId
 						})), e(Object(P.e)({
-							kind: B.b.SuccessCommunityGreen,
+							kind: D.b.SuccessCommunityGreen,
 							text: Object(d.c)("Wallet removed successfully!")
 						}))
 					}
@@ -377,7 +377,7 @@
 				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				Y = n.n(X);
 
-			function z(e) {
+			function J(e) {
 				return o.a.createElement("div", {
 					className: Y.a.risk
 				}, o.a.createElement("div", {
@@ -388,8 +388,8 @@
 					className: Y.a.riskBody
 				}, e.body))
 			}
-			var J = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				K = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
+			var K = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				z = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
 				$ = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				ee = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/UnclaimedPoints/index.m.less"),
 				te = n.n(ee);
@@ -417,7 +417,7 @@
 						hk: "3sFlm8"
 					})), o.a.createElement("div", {
 						className: te.a.amount
-					}, o.a.createElement(J.a, {
+					}, o.a.createElement(K.a, {
 						className: te.a.tokenIcon,
 						amount: e,
 						subredditId: t
@@ -434,7 +434,7 @@
 						})
 					}, ne._("Claim My Points", null, {
 						hk: "1QwLXK"
-					})), this.state.modalVisible && o.a.createElement(K.a, {
+					})), this.state.modalVisible && o.a.createElement(z.a, {
 						subredditId: t,
 						onClose: () => this.setState({
 							modalVisible: !1
@@ -510,7 +510,7 @@
 						subredditId: v
 					}), Object(b.a)(Object(k.b)(h.amount, g))), Object(u.a)(i, "sidebar.gov.yourTokens", {
 						tokenName: y
-					})), r && ie(Object(b.a)(Object(k.b)(r.totalAvailable, g)), Object(u.a)(i, "sidebar.gov.tokensIssued"))), w && o.a.createElement(z, {
+					})), r && ie(Object(b.a)(Object(k.b)(r.totalAvailable, g)), Object(u.a)(i, "sidebar.gov.tokensIssued"))), w && o.a.createElement(J, {
 						body: w.body,
 						title: w.title
 					}), o.a.createElement("div", {
@@ -1056,19 +1056,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return s
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/selectors/platform.ts"),
-				a = n("./src/reddit/selectors/user.ts");
-			const i = new Set(["pollstest", "whatssnoo"]),
-				c = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => i.has((Object(o.e)(e) || "").toLowerCase()) || c.has((Object(o.e)(e) || "").toLowerCase()) && Object(r.c)(e, {
-					experimentEligibilitySelector: a.G,
-					experimentName: s.ib
-				}) === s.pb.Enabled
+			const s = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1229,4 +1219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.633d6ac55bd6825737b0.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.9c487aa7d63a974a823e.js.map

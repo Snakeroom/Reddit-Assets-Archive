@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.c2e9c09fd05ec6a509bb.js
-// Retrieved at 3/23/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.9d73d627277e6a329064.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -124,8 +124,8 @@
 				B = r.a.div("Floating", M.a),
 				L = r.a.video("PreviewVideo", M.a),
 				F = r.a.div("PreviewTime", M.a),
-				k = r.a.div("VideoSeekbar", M.a);
-			class O extends n.a.PureComponent {
+				O = r.a.div("VideoSeekbar", M.a);
+			class k extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.setParentRect = e => this.parentRect = e, this.setPreviewThumbnailContainer = e => this.previewThumbnailContainer = e, this.setPreviewThumbnailVideo = e => this.previewThumbnailVideo = e, this.setPreviewThumbnailTime = e => this.previewThumbnailTime = e, this.setProgressBar = e => this.progressBar = e, this.handleMouseDown = e => {
 						if (0 === e.button && this.parentRect) {
@@ -245,7 +245,7 @@
 							marginLeft: this.getThumbMargin(a),
 							opacity: e ? 1 : 0
 						};
-					return n.a.createElement(k, {
+					return n.a.createElement(O, {
 						innerRef: this.setParentRect,
 						onKeyDown: this.handleKeyDown,
 						onMouseLeave: this.handleMouseLeave,
@@ -503,7 +503,7 @@
 					}, n.a.createElement("button", {
 						"aria-label": C,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? n.a.createElement(u.a, null) : n.a.createElement(p.a, null))), n.a.createElement($, null, w(P, b)), n.a.createElement(se, null, n.a.createElement(O, {
+					}, this.props.isPaused ? n.a.createElement(u.a, null) : n.a.createElement(p.a, null))), n.a.createElement($, null, w(P, b)), n.a.createElement(se, null, n.a.createElement(k, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -817,35 +817,35 @@
 				B = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				L = s("./src/reddit/helpers/media/index.ts"),
 				F = s("./src/reddit/helpers/trackers/media.ts"),
-				k = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const O = e => {
-					const t = Object(k.c)(e, {
-						experimentEligibilitySelector: k.a,
+				O = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const k = e => {
+					const t = Object(O.c)(e, {
+						experimentEligibilitySelector: O.a,
 						experimentName: V.fb
 					});
-					return Object(V.Tb)(t) ? void 0 : t
+					return Object(V.Rb)(t) ? void 0 : t
 				},
 				N = e => e === V.hb.On,
 				R = e => {
-					const t = Object(k.c)(e, {
-						experimentEligibilitySelector: k.a,
+					const t = Object(O.c)(e, {
+						experimentEligibilitySelector: O.a,
 						experimentName: V.gb
 					});
-					return Object(V.Tb)(t) ? void 0 : t
+					return Object(V.Rb)(t) ? void 0 : t
 				},
 				j = e => e === V.hb.On;
 			var H = s("./src/reddit/selectors/experiments/utils.ts");
-			const A = Object(u.a)(e => Object(k.c)(e, {
-					experimentName: V.Qb,
-					experimentEligibilitySelector: k.a
+			const A = Object(u.a)(e => Object(O.c)(e, {
+					experimentName: V.Ob,
+					experimentEligibilitySelector: O.a
 				}), H.a),
 				I = Object(u.a)(A, (function(e) {
 					switch (e) {
-						case V.Rb.BufferTwoSeconds:
+						case V.Pb.BufferTwoSeconds:
 							return 2;
-						case V.Rb.BufferFiveSeconds:
+						case V.Pb.BufferFiveSeconds:
 							return 5;
-						case V.Rb.BufferTenSeconds:
+						case V.Pb.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1120,10 +1120,10 @@
 					fill: "#fff",
 					d: "M32.2 20.3c-.3-.2-.7-.2-1 0l-2.4 1.4v-1.5c0-1.1-.9-1.9-1.9-1.9h-7.7c-1.1 0-1.9.9-1.9 1.9v7.7c0 1.1.9 1.9 1.9 1.9h7.7c1.1 0 1.9-.9 1.9-1.9v-1.6l2.4 1.4c.2.1.3.1.5.1s.3 0 .5-.1c.3-.2.5-.5.5-.8v-5.8c-.1-.3-.2-.6-.5-.8"
 				}))),
-				ke = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
-				Oe = s.n(ke);
+				Oe = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
+				ke = s.n(Oe);
 			var Ne = e => d.a.createElement("svg", {
-					className: Object(f.a)(Oe.a.icon, e.className),
+					className: Object(f.a)(ke.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1394,7 +1394,7 @@
 					language: W.O,
 					loadTimes: G.f,
 					metadata: G.g,
-					muxSamplingAVariant: O,
+					muxSamplingAVariant: k,
 					muxSamplingBVariant: R,
 					postUrl: z.O,
 					started: G.i,
@@ -1768,8 +1768,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("939bfbe-production", " ").concat(t);
-									return i && (s += " [".concat(V.Qb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("aa67b2e-production", " ").concat(t);
+									return i && (s += " [".concat(V.Ob, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2262,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.c2e9c09fd05ec6a509bb.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.9d73d627277e6a329064.js.map

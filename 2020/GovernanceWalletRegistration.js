@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0355aaf34d1596143cf1.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.4183dee83aa5790b02ef.js
+// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -106,7 +106,7 @@
 			})), n.d(t, "e", (function() {
 				return k
 			})), n.d(t, "h", (function() {
-				return _
+				return M
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "f", (function() {
@@ -128,12 +128,12 @@
 				O = Object(s.a)(v.k),
 				N = Object(s.a)(v.l),
 				I = Object(s.a)(v.r),
-				_ = Object(s.a)(v.s),
-				M = Object(s.a)(v.t),
+				M = Object(s.a)(v.s),
+				_ = Object(s.a)(v.t),
 				S = Object(s.a)(v.u),
 				P = Object(s.a)(v.v),
-				L = Object(s.a)(v.w),
-				R = Object(s.a)(v.x),
+				R = Object(s.a)(v.w),
+				L = Object(s.a)(v.x),
 				A = Object(s.a)(v.y),
 				B = (e, t) => async (n, a, s) => {
 					let r, {
@@ -169,7 +169,7 @@
 					let {
 						apiContext: u
 					} = c;
-					n(M());
+					n(_());
 					const m = s().transfers.communityPoints.contentId || void 0,
 						b = await
 					function(e, t) {
@@ -207,9 +207,9 @@
 					let {
 						apiContext: s
 					} = a;
-					t(L());
+					t(R());
 					const r = await Object(m.a)(s(), e);
-					r.ok ? t(R(r.body)) : t(P({
+					r.ok ? t(L(r.body)) : t(P({
 						error: r.error
 					}))
 				}, G = (e, t) => async (n, s, r) => {
@@ -228,7 +228,7 @@
 						})
 					}(o(), e, t);
 					if (c.ok) {
-						n(R({
+						n(L({
 							[t]: c.body
 						}));
 						const r = e ? "polls.optOutSuccess" : "polls.optInSuccess";
@@ -546,8 +546,8 @@
 				})),
 				N = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const I = "https://metamask.io/",
-				_ = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
-			class M extends s.a.Component {
+				M = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+			class _ extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
@@ -596,7 +596,7 @@
 						className: x.a.buttonIcon
 					})) : s.a.createElement(v.j, {
 						className: x.a.button,
-						href: _,
+						href: M,
 						target: "_blank",
 						onClick: () => this.setState({
 							clickedInstallButton: !0
@@ -649,8 +649,8 @@
 						className: x.a.buttonIcon
 					}))))
 				},
-				L = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./src/reddit/actions/governance/errorToast.ts")),
-				R = n("./src/reddit/actions/toaster.ts"),
+				R = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./src/reddit/actions/governance/errorToast.ts")),
+				L = n("./src/reddit/actions/toaster.ts"),
 				A = n("./src/reddit/contexts/ApiContext.tsx"),
 				B = n("./src/reddit/controls/Checkbox/index.tsx"),
 				T = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -727,8 +727,8 @@
 				}
 			}
 			var U, V = Object(A.b)(Object(r.b)(void 0, e => ({
-					onGovernanceError: t => Object(L.a)(e, t),
-					onError: t => e(Object(R.e)({
+					onGovernanceError: t => Object(R.a)(e, t),
+					onError: t => e(Object(L.e)({
 						duration: 5e3,
 						kind: D.b.Error,
 						text: t
@@ -882,7 +882,7 @@
 						token: r
 					} = this.props, {
 						activeTab: o
-					} = this.state, c = o === U.About ? y : o === U.MetaMask ? M : o === U.Wallet ? q : o === U.Connect ? j : o === U.Verify ? V : P;
+					} = this.state, c = o === U.About ? y : o === U.MetaMask ? _ : o === U.Wallet ? q : o === U.Connect ? j : o === U.Verify ? V : P;
 					return s.a.createElement("article", {
 						className: Object(i.a)(F.a.container, e)
 					}, s.a.createElement(Z.a, {
@@ -1463,19 +1463,9 @@
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return a
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				r = n("./src/reddit/selectors/platform.ts"),
-				o = n("./src/reddit/selectors/user.ts");
-			const c = new Set(["pollstest", "whatssnoo"]),
-				i = new Set(["ps4", "casualconversation", "stardewvalley", "knitting", "dccomics", "premierleague", "zerocarb", "survivor", "supergirltv", "superman", "teenmfa", "whatssnoo", "poll_testing", "nfl", "sanfranciscoanalog", "communityactivation", "temescal", "amitheproblem", "amithebuttface"]),
-				d = e => c.has((Object(r.e)(e) || "").toLowerCase()) || i.has((Object(r.e)(e) || "").toLowerCase()) && Object(s.c)(e, {
-					experimentEligibilitySelector: o.G,
-					experimentName: a.ib
-				}) === a.pb.Enabled
+			const a = e => !0
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -1516,7 +1506,7 @@
 			})), n.d(t, "n", (function() {
 				return I
 			})), n.d(t, "k", (function() {
-				return _
+				return M
 			}));
 			var a = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -1629,11 +1619,11 @@
 						address: void 0
 					}
 				},
-				_ = (e, t) => {
+				M = (e, t) => {
 					const n = j(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.0355aaf34d1596143cf1.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.4183dee83aa5790b02ef.js.map
