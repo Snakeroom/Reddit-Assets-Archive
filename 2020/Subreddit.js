@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0eb735a815aa91511703.js
-// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b7a08a927129d944abae.js
+// Retrieved at 3/25/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -3967,7 +3967,9 @@
 					});
 					return t ? s : this.isEnabled() ? i.a.createElement(j.a, null, i.a.createElement(Z.a, {
 						className: this.props.className,
-						title: Object(I.c)("Chat rooms"),
+						title: S.fbt._("Chat rooms", null, {
+							hk: "4vn07S"
+						}),
 						headerButton: i.a.createElement(Y, {
 							subredditId: e
 						})
@@ -7365,4 +7367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.0eb735a815aa91511703.js.map
+//# sourceMappingURL=Subreddit.b7a08a927129d944abae.js.map
