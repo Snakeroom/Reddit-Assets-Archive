@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.90cd0f4b591b0ed42481.js
-// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2fe45bddc2bd130a9be7.js
+// Retrieved at 3/25/2020, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -62214,19 +62214,23 @@
 		},
 		"./src/server/helpers/seoMetadata.tsx": function(e, t, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react/index.js");
+			n.d(t, "a", (function() {
+				return E
+			})), n.d(t, "b", (function() {
+				return I
+			}));
+			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/fbt/lib/FbtPublic.js"), n("./node_modules/react/index.js");
 			var r = n("./node_modules/url/url.js"),
 				s = n.n(r),
 				o = n("./src/config.ts"),
 				i = n("./src/lib/constants/index.ts"),
 				c = (n("./src/lib/addQueryParams/index.ts"), n("./src/lib/isAdHocMultireddit/index.ts")),
-				a = n("./src/lib/isFakeSubreddit/index.ts");
-			n("./src/lib/makeCommentsPageKey/index.ts"), n("./src/lib/truncateText/index.ts"), n("./src/reddit/constants/experiments.ts"), n("./src/reddit/constants/page.ts");
-			var d = n("./src/reddit/constants/topic.ts"),
+				a = n("./src/lib/isFakeSubreddit/index.ts"),
+				d = (n("./src/lib/makeCommentsPageKey/index.ts"), n("./src/lib/truncateText/index.ts"), n("./src/reddit/constants/experiments.ts"), n("./src/reddit/constants/page.ts"), n("./src/reddit/constants/topic.ts")),
 				u = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = n("./src/reddit/helpers/canonicalUrls.ts"),
 				b = (n("./src/reddit/helpers/getRichTextContent/index.ts"), n("./src/reddit/helpers/getSubredditErrorProps/index.ts")),
-				p = (n("./src/reddit/i18n/utils.ts"), n("./src/reddit/models/Comment/index.ts"), n("./src/reddit/models/Post/index.ts")),
+				p = (n("./src/reddit/models/Comment/index.ts"), n("./src/reddit/models/Post/index.ts")),
 				f = (n("./src/reddit/selectors/comments.ts"), n("./src/reddit/selectors/experiments/postSeo.ts"), n("./src/reddit/selectors/multireddit.ts"), n("./src/reddit/selectors/platform.ts")),
 				m = n("./src/reddit/selectors/postCollection.ts"),
 				O = n("./src/reddit/selectors/posts.ts"),
@@ -62234,11 +62238,6 @@
 				_ = (n("./src/reddit/selectors/structuredStyles.ts"), n("./src/reddit/selectors/subreddit.ts")),
 				h = (n("./src/reddit/selectors/topic.ts"), n("./src/reddit/selectors/user.ts"));
 			n("./src/reddit/models/Media/index.ts"), n("./src/app/strings/index.ts");
-			n.d(t, "a", (function() {
-				return E
-			})), n.d(t, "b", (function() {
-				return I
-			}));
 			const y = new Set([302, 400, 401, 403, 404, 421, 429, 500, 502, 503, 504, 0, void 0, null]),
 				j = e => e.endsWith("/") ? e : "".concat(e, "/"),
 				E = e => {
@@ -62326,4 +62325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.90cd0f4b591b0ed42481.js.map
+//# sourceMappingURL=Governance~Reddit.2fe45bddc2bd130a9be7.js.map
