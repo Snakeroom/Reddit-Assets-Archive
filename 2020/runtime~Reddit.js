@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2fd672a8ef62f297f0dc.js
-// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.968b6a353fa1718a4d74.js
+// Retrieved at 3/25/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -537,7 +537,7 @@
 					CryptoHarbergerTaxManageModal: "7acddc807216112e054d",
 					HarbergerTaxManageModal: "fee822bfad67bb4924a2",
 					PainterModalLoader: "1ad5131974ea2218d870",
-					Settings: "9c087754931620afa0fc",
+					Settings: "41a330116fd5b6f84c62",
 					SubredditPremiumUploadModal: "c0ef8a93e8e1d0067d00",
 					"vendors~EconHelperActions~SubredditPremiumBadgeManagement": "31d6cfe0d16ae931b73c",
 					EconHelperActions: "31d6cfe0d16ae931b73c",
@@ -912,7 +912,7 @@
 						FrontpageSidebar: "17e7985e649a162cf6b8",
 						Frontpage: "3bd0a271a8c61541e2cc",
 						Topic: "38598fa981df3dd549fd",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "4d8d17cc095e646d9cd6",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "9d463d8630c5acf7048f",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "6f445ded720720c1704f",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "19a4833a13224e1b9ebe",
 						PostDraft: "914c86bcdbe9437630c2",
@@ -1003,7 +1003,7 @@
 						CryptoHarbergerTaxManageModal: "0db5f0451ca378465934",
 						HarbergerTaxManageModal: "30297f4de4a60861c2d3",
 						PainterModalLoader: "8cc6bc1e84a29f52c74c",
-						Settings: "e0fb7aba27c52f795284",
+						Settings: "bd0374778c58de765c4c",
 						SubredditPremiumUploadModal: "2cc0e99c3fa180b44393",
 						"vendors~EconHelperActions~SubredditPremiumBadgeManagement": "d1cf1838505b58032d67",
 						EconHelperActions: "a0f7791681933e477743",
@@ -1180,4 +1180,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.2fd672a8ef62f297f0dc.js.map
+//# sourceMappingURL=runtime~Reddit.968b6a353fa1718a4d74.js.map

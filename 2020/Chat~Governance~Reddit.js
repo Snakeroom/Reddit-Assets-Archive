@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a7403646e3bff84d889d.js
-// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9618fec5dcba6dc87bb6.js
+// Retrieved at 3/25/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -738,36 +738,6 @@
 						},
 						acceptText: {
 							en: "opt out"
-						}
-					},
-					connectedAccounts: {
-						connectToTwitter: {
-							label: {
-								en: "Connect to Twitter"
-							},
-							subtext: {
-								en: "Connect a Twitter account to enable the choice to tweet your new posts and display a link on your profile. We will never post to Twitter without your permission."
-							}
-						},
-						twitterConnected: {
-							label: {
-								en: "You are connected to Twitter"
-							},
-							subtext: {
-								en: "You can now choose to share your posts to Twitter from the new post composer."
-							},
-							toast: {
-								en: "Twitter has been connected!"
-							}
-						},
-						disconnect: {
-							en: "Disconnect"
-						},
-						showTwitterLink: {
-							en: "Show link on profile"
-						},
-						showTwitterLinkDescription: {
-							en: "You can show a link to your Twitter account on your profile"
 						}
 					},
 					deactivateModal: {
@@ -11755,14 +11725,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("3beebf5-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("27614f2-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3beebf5-production",
+						release: "27614f2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12065,7 +12035,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3beebf5-production",
+							releaseClient: "27614f2-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17918,4 +17888,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.a7403646e3bff84d889d.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.9618fec5dcba6dc87bb6.js.map
