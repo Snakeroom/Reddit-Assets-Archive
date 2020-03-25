@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c89915ddad1f7541cfdf.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e4a1704c9a14cdef33aa.js
+// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5482,7 +5482,7 @@
 				C = s.n(v);
 			const O = Object(a.b)(() => Object(i.c)({
 					isChatPostExperiment: g.d,
-					isPostSEOEligible: x.d,
+					isPostSEOEligible: x.e,
 					language: E.O,
 					postPermalink: f.K,
 					shouldOpenPostInNewTab: E.S
@@ -27505,7 +27505,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Tb)(t)
+				return !!t && !Object(n.Vb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
@@ -27525,9 +27525,9 @@
 			const a = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.nb
+					experimentName: n.pb
 				});
-				return Object(n.Tb)(t) ? void 0 : t
+				return Object(n.Vb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -27834,4 +27834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.c89915ddad1f7541cfdf.js.map
+//# sourceMappingURL=ModerationPages.e4a1704c9a14cdef33aa.js.map

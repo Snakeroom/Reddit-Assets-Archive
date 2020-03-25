@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.01b274ce31ac53e45fab.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ab001f09449eb0abe0fa.js
+// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1188,7 +1188,7 @@
 				ne = Object(C.a)((e, t) => t.path, (e, t) => t.uiMode, G, K.b, q.a, Z, (e, t, s, a, r, o) => {
 					let i = "".concat(T.a.accountManagerOrigin).concat(e);
 					return r && (i = Object(R.a)(i, {
-						[L.G]: r,
+						[L.H]: r,
 						uiMode: t
 					})), o && (i = Object(R.a)(i, {
 						[L.w]: o
@@ -1921,7 +1921,7 @@
 			class hs extends h.a.Component {
 				constructor() {
 					super(...arguments), this.subscriptions = [], this.closeModal = () => {
-						this.props.closeModal(this.props.path), this.props.path === n.Register && Object(q.f)(this.props.frontpageSignupVariant) && is.a.throttleFeature(L.G), this.props.sendEvent(me(this.subscriptions))
+						this.props.closeModal(this.props.path), this.props.path === n.Register && Object(q.f)(this.props.frontpageSignupVariant) && is.a.throttleFeature(L.H), this.props.sendEvent(me(this.subscriptions))
 					}, this.updateSubscriptions = e => {
 						this.subscriptions = e
 					}
@@ -4276,9 +4276,9 @@
 				Wr = s("./src/reddit/helpers/isArrayEqual.ts"),
 				Vr = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Qr = s("./src/reddit/selectors/experiments/trending.ts");
-			const zr = e => Object(Q.D)(e) || L.Nb.Treatment1 === Object(W.c)(e, {
+			const zr = e => Object(Q.D)(e) || L.Pb.Treatment1 === Object(W.c)(e, {
 				experimentEligibilitySelector: W.a,
-				experimentName: L.Kb
+				experimentName: L.Mb
 			});
 			var Zr = s("./src/reddit/selectors/searchResults.ts"),
 				Kr = s("./src/reddit/selectors/tooltip.ts"),
@@ -10205,8 +10205,8 @@
 			const dn = {
 					displayDelay: 15,
 					displayOnRoutes: [f.Ab.SUBREDDIT, f.Ab.COMMENTS],
-					experimentName: rn.T,
-					experimentVariant: rn.Z.On,
+					experimentName: rn.V,
+					experimentVariant: rn.bb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -11905,9 +11905,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.D)(e) || !(n.Mb.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.D)(e) || !(n.Ob.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Jb
+				experimentName: n.Lb
 			}))
 		},
 		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
@@ -11919,9 +11919,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Pb.All === Object(a.c)(e, {
+			const r = e => n.Rb.All === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Ob
+					experimentName: n.Qb
 				}),
 				o = ["52weeksofcooking", "advancedrunning", "amateur_boxing", "animation", "bathandbodyworks", "bbq", "beer", "beerporn", "blacksmith", "boostedboards", "campinggear", "chipotle", "cookingforbeginners", "decidingtobebetter", "declutter", "dermatology", "dominos", "eczema", "engagementrings", "family", "fermentation", "findfashion", "fitbit", "fixit", "fondanthate", "foodhacks", "glossier", "healthyfood", "homegym", "hotdogs", "hotpeppers", "hotsauce", "howto", "instantpot", "interiordesign", "internetparents", "jeffreestarcosmetics", "knifemaking", "kombucha", "love", "makeupflatlays", "makeuplounge", "malegrooming", "mead", "moissanite", "mommit", "muaythai", "nanny", "narcissisticparents", "outdoors", "ramen", "rawdenim", "recipes", "redwingshoes", "rowing", "sarahsnark", "skincare_addiction", "skookum", "slowcooking", "spicy", "starbucksbaristas", "steak", "swimming", "tacobell", "talesfromthepizzaguy", "traderjoes", "triathlon", "veganfoodporn", "veganrecipes", "weddingsunder10k", "whiskeytribe", "whiskyporn", "wicked_edge", "womenshealth", "xxketo4u2", "yeezys"]
 		},
@@ -12065,4 +12065,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.01b274ce31ac53e45fab.js.map
+//# sourceMappingURL=Reddit.ab001f09449eb0abe0fa.js.map

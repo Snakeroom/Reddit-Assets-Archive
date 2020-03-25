@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.729fc0aedf2ecf3b032e.js
-// Retrieved at 3/25/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.62aba8d1cf858beea93a.js
+// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1466,7 +1466,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				ke = Object(u.Sb)(p.f),
+				ke = Object(u.Ub)(p.f),
 				Ee = Object(d.c)({
 					categories: e => Object(ge.c)(e, {
 						categoriesOrder: ke
@@ -1555,4 +1555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.729fc0aedf2ecf3b032e.js.map
+//# sourceMappingURL=SubredditLeaderboard.62aba8d1cf858beea93a.js.map

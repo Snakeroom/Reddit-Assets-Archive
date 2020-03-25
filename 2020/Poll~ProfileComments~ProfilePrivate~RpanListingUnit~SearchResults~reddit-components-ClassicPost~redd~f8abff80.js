@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.107d9be4a1d22ae91765.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.adeea1eb4b22a81bcdf6.js
+// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -629,7 +629,7 @@
 				C = s.n(v);
 			const _ = Object(r.b)(() => Object(a.c)({
 					isChatPostExperiment: x.d,
-					isPostSEOEligible: f.d,
+					isPostSEOEligible: f.e,
 					language: O.O,
 					postPermalink: g.K,
 					shouldOpenPostInNewTab: O.S
@@ -4021,4 +4021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.107d9be4a1d22ae91765.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.adeea1eb4b22a81bcdf6.js.map

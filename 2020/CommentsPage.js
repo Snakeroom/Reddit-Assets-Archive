@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e561a9e56f8bf68e568d.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c5362ac8b81096d70ff8.js
+// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4614,7 +4614,7 @@
 				O = s.n(C);
 			const E = Object(r.b)(() => Object(i.c)({
 					isChatPostExperiment: g.d,
-					isPostSEOEligible: x.d,
+					isPostSEOEligible: x.e,
 					language: v.O,
 					postPermalink: f.K,
 					shouldOpenPostInNewTab: v.S
@@ -4850,7 +4850,7 @@
 				}),
 				L = Object(d.c)({
 					isLoggedIn: w.G,
-					postSEOV2IdCardVariant: P.i,
+					postSEOV2IdCardVariant: P.j,
 					widgets: Object(p.a)(k.r)
 				}),
 				R = Object(c.b)(L);
@@ -4875,7 +4875,7 @@
 						subredditName: n,
 						post: o,
 						postSEOV2IdCardVariant: r
-					} = this.props, a = !Object(P.a)(r) && !Object(P.e)(r);
+					} = this.props, a = !Object(P.a)(r) && !Object(P.f)(r);
 					return s ? i.a.createElement(i.a.Fragment, null, i.a.createElement(x.a, {
 						postId: o.id,
 						isOverlay: s,
@@ -4913,7 +4913,7 @@
 						widgets: d
 					} = this.props;
 					let p = 0;
-					const h = Object(P.a)(r) || Object(P.e)(r),
+					const h = Object(P.a)(r) || Object(P.f)(r),
 						b = i.a.createElement(x.a, {
 							postId: o.id,
 							isOverlay: n,
@@ -4992,9 +4992,9 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = "500px", O = 3, E = Object(a.c)({
 				hasDismissedTruncation: u.b,
 				isLoggedIn: g.F,
-				isPostSEOEligible: b.d,
+				isPostSEOEligible: b.e,
 				listingBelowAllVariant: h.b,
-				postSEOV2TruncatedVariant: b.j
+				postSEOV2TruncatedVariant: b.k
 			}), y = Object(r.b)(E);
 			class _ extends o.a.Component {
 				render() {
@@ -16330,7 +16330,7 @@
 					listingBelowAllVariant: Je.b,
 					origin: ae.h,
 					post: ee.F,
-					postSEOV2IdCardVariant: re.i,
+					postSEOV2IdCardVariant: re.j,
 					profileCollectionsEnabled: X.a,
 					replyComment: ee.t,
 					subredditAboutInfo: (e, t) => {
@@ -16606,7 +16606,7 @@
 						subredditName: m,
 						subredditOrProfile: p,
 						profileCollectionsEnabled: u
-					} = this.props, h = Object(re.e)(d);
+					} = this.props, h = Object(re.f)(d);
 					if (!i) {
 						if (t) return b.a.createElement(ge.f, null);
 						const s = this.renderPageError();
@@ -17073,7 +17073,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Tb)(t)
+				return !!t && !Object(n.Vb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -17086,9 +17086,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.nb
+					experimentName: n.pb
 				});
-				return Object(n.Tb)(t) ? void 0 : t
+				return Object(n.Vb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -17105,4 +17105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.e561a9e56f8bf68e568d.js.map
+//# sourceMappingURL=CommentsPage.c5362ac8b81096d70ff8.js.map

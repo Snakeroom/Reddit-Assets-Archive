@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.7a73b994baf72eb5e0e6.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.6fcfe6adc1b95cac13a8.js
+// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -2683,7 +2683,7 @@
 				C = s.n(O);
 			const E = Object(r.b)(() => Object(i.c)({
 					isChatPostExperiment: x.d,
-					isPostSEOEligible: g.d,
+					isPostSEOEligible: g.e,
 					language: v.O,
 					postPermalink: f.K,
 					shouldOpenPostInNewTab: v.S
@@ -5612,7 +5612,7 @@
 			const oe = Object(a.a)(E.S, e => e.some(ne.c)),
 				re = Object(a.a)(oe, e => e),
 				ae = (e, t) => Object(se.c)(e, {
-					experimentName: te.H,
+					experimentName: te.I,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -5732,7 +5732,7 @@
 						showEditFlair: he,
 						subredditOrProfile: xe,
 						userIsOp: ge
-					} = e, fe = !!e.redditStyle || !!e["data-redditstyle"], ve = fe ? void 0 : u, Oe = Object(l.a)(ne), Ce = oe && Oe, Ee = Object(c.a)(ne), ye = Object(d.a)(ne), je = Object(R.c)(pe), we = !!pe.media && pe.media.type === h.n.RTJSON, _e = ge && we, Pe = s ? s - B.a : void 0, ke = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Se = !(E && y || G), Ie = (e => e === te.ob.OnlyTitles)(ue) && !Object($.a)(pe), Ne = (e => e === te.ob.MediumHeight)(ue) && !Object($.a)(pe), Te = (e => {
+					} = e, fe = !!e.redditStyle || !!e["data-redditstyle"], ve = fe ? void 0 : u, Oe = Object(l.a)(ne), Ce = oe && Oe, Ee = Object(c.a)(ne), ye = Object(d.a)(ne), je = Object(R.c)(pe), we = !!pe.media && pe.media.type === h.n.RTJSON, _e = ge && we, Pe = s ? s - B.a : void 0, ke = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Se = !(E && y || G), Ie = (e => e === te.qb.OnlyTitles)(ue) && !Object($.a)(pe), Ne = (e => e === te.qb.MediumHeight)(ue) && !Object($.a)(pe), Te = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -15289,7 +15289,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Tb)(t)
+				return !!t && !Object(n.Vb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -15302,9 +15302,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.nb
+					experimentName: n.pb
 				});
-				return Object(n.Tb)(t) ? void 0 : t
+				return Object(n.Vb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15321,4 +15321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.7a73b994baf72eb5e0e6.js.map
+//# sourceMappingURL=ProfileOverview.6fcfe6adc1b95cac13a8.js.map
