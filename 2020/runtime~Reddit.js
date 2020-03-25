@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2a41313e7ca593eb5265.js
-// Retrieved at 3/25/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0971dc28dfb32da8d730.js
+// Retrieved at 3/25/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -909,10 +909,10 @@
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic": "6a5bd6c2bb2ab38e7276",
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit": "c9c683f4e0beda95363e",
 						"Frontpage~SubredditWiki": "1a6bcdadb926cb652b73",
-						FrontpageSidebar: "081f0186e9735e7c3754",
+						FrontpageSidebar: "735fd5831b3c6401dc93",
 						Frontpage: "3bd0a271a8c61541e2cc",
 						Topic: "ef5e03d3982bc3a96bc2",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "03263b1d52a4f62720ac",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "c45596645d2d19a21707",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "6f445ded720720c1704f",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "19a4833a13224e1b9ebe",
 						PostDraft: "189942f381179f228c1e",
@@ -961,7 +961,7 @@
 						"vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor": "70860f0a4d36d52680b8",
 						FlairEdit: "a4096817bd8c403c3354",
 						"vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754": "7091ae90dbdddb4a4a9f",
-						"Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki": "2298a73d77b6f9994810",
+						"Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki": "1c824998fb5ef3d86b5c",
 						ProfileSnoobuilder: "81e7013a704d3ada67e2",
 						"vendors~MembershipPaywallPage": "9a4ded6654b43a0d927a",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "5d1644871e7523be6843",
@@ -973,10 +973,10 @@
 						Subreddit: "1bbf2357f08eeeb59114",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf": "124127001b57853736bf",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "4cc1e840b50c89139e4d",
-						CollectionCommentsPage: "00d6878fad9addcc360a",
-						CommentsPage: "7f2257bb6f9c1d71d6bc",
+						CollectionCommentsPage: "543fe4ba68a12aa82aff",
+						CommentsPage: "280354551589e2898a2f",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236": "1efb30c205e5d70890fa",
-						ModerationPages: "dc83b465262fb91210ec",
+						ModerationPages: "d61d9c53fd69281a6b5d",
 						"vendors~PostCreation~RichTextEditor": "27926d85572bee947b13",
 						"vendors~PostCreation": "0f25a3d7e764c2785195",
 						PostCreation: "97cd3c65d6b47bff3c68",
@@ -984,9 +984,9 @@
 						Multireddit: "6685ce64c54abcf9d604",
 						"vendors~ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate": "59dd47287946542843ea",
 						ProfilePosts: "7de82579d3bb0dedaadc",
-						ProfileOverview: "1f43f120bc6f875f0470",
+						ProfileOverview: "978d601c817b5c0c96a3",
 						"Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80": "043152087f4690413bb3",
-						ProfileComments: "8f3d80230b17f063b33c",
+						ProfileComments: "b827d4cd4ad4f80529a6",
 						"vendors~SubredditWiki": "a80bbffef7314328c7de",
 						"AuthorHovercard~Settings~SubredditWiki": "6fe75b3d804e074615c5",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "5a0071d12294161a51e4",
@@ -1180,4 +1180,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.2a41313e7ca593eb5265.js.map
+//# sourceMappingURL=runtime~Reddit.0971dc28dfb32da8d730.js.map
