@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.440a24b8ca7bfd1e8944.js
-// Retrieved at 3/25/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6d786c17bebc57ec2f61.js
+// Retrieved at 3/25/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3035,9 +3035,6 @@
 						ariaInstructions: {
 							en: "Press J to jump to the feed. Press question mark to learn the rest of the keyboard shortcuts"
 						},
-						chat: {
-							en: "Chat"
-						},
 						coins: {
 							en: "Coins"
 						},
@@ -3088,9 +3085,6 @@
 						},
 						messages: {
 							en: "Messages"
-						},
-						moderation: {
-							en: "Moderation"
 						},
 						modListing: {
 							en: "r/Mod"
@@ -3157,29 +3151,14 @@
 						}
 					},
 					headerDropdown: {
-						coins: {
-							en: "Reddit Coins"
-						},
 						communities: {
 							en: "communities"
 						},
 						feeds: {
 							en: "feeds"
 						},
-						helpCenter: {
-							en: "Help Center"
-						},
-						loginSignup: {
-							en: "Log In / Sign Up"
-						},
-						logout: {
-							en: "Log Out"
-						},
 						moreStuff: {
 							en: "More Stuff"
-						},
-						myProfile: {
-							en: "My Profile"
 						},
 						myStuff: {
 							en: "My Stuff"
@@ -3187,26 +3166,14 @@
 						mySubscriptions: {
 							en: "My Communities"
 						},
-						optIn: {
-							en: "Opt In to New Reddit"
-						},
-						optOut: {
-							en: "Opt Out of Redesign"
-						},
 						premium: {
 							en: "Reddit Premium"
 						},
 						submitFeedback: {
 							en: "Submit Feedback"
 						},
-						userSettings: {
-							en: "User Settings"
-						},
 						viewOptions: {
 							en: "View Options"
-						},
-						visitOldReddit: {
-							en: "Visit Old Reddit"
 						}
 					},
 					hovercard: {
@@ -11720,14 +11687,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("14a921b-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("0815662-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "14a921b-production",
+						release: "0815662-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -12030,7 +11997,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "14a921b-production",
+							releaseClient: "0815662-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17883,4 +17850,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.440a24b8ca7bfd1e8944.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.6d786c17bebc57ec2f61.js.map

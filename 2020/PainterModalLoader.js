@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PainterModalLoader.8cc6bc1e84a29f52c74c.js
-// Retrieved at 3/24/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PainterModalLoader.728225b2545e14ff6b30.js
+// Retrieved at 3/25/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PainterModalLoader"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, s) {
@@ -447,8 +447,8 @@
 				C = Object(n.a)(y.e),
 				j = Object(n.a)(y.f),
 				k = (Object(n.a)(y.g), Object(n.a)(y.h), Object(n.a)(y.i)),
-				w = Object(n.a)(y.j),
-				_ = Object(n.a)(y.k),
+				_ = Object(n.a)(y.j),
+				w = Object(n.a)(y.k),
 				E = Object(n.a)(y.l),
 				I = Object(n.a)(y.r),
 				L = Object(n.a)(y.s),
@@ -464,7 +464,7 @@
 							gqlContext: c
 						} = n,
 						d = a().polls.models[e];
-					if (s(_({
+					if (s(w({
 							pollId: e
 						})), (r = d.type === p.a.GA ? await Object(u.c)(c(), e, t) : await Object(u.b)(i(), d.subredditId, e, t)).ok) {
 						if (d.type === p.a.GA) {
@@ -484,7 +484,7 @@
 							} = d, t = n.posts.models[e];
 							t && t.voteState === g.a.notVoted && s(Object(o.cb)(e))
 						}
-					} else s(w({
+					} else s(_({
 						pollId: e,
 						error: r.error || r.errors[0].message
 					})), Object(f.a)(s, r.error || r.errors[0].messsage)
@@ -656,11 +656,11 @@
 			})), s.d(t, "b", (function() {
 				return T
 			}));
-			const w = Object(c.a)(k.v),
-				_ = Object(c.a)(k.w),
+			const _ = Object(c.a)(k.v),
+				w = Object(c.a)(k.w),
 				E = Object(c.a)(k.u),
 				I = e => async (t, s) => {
-					t(w());
+					t(_());
 					const a = e.map(e => {
 						let {
 							url: s,
@@ -677,7 +677,7 @@
 							} = e;
 							return n[t]
 						}).find(e => e.status !== y.a.SUCCESS);
-					t(r ? E(r.error) : _())
+					t(r ? E(r.error) : w())
 				}, L = (e, t) => ({
 					error: t ? {
 						type: e,
@@ -697,15 +697,15 @@
 					v = Date.now();
 				let C = null,
 					k = !1,
-					w = !1,
-					_ = !1;
+					_ = !1,
+					w = !1;
 				const E = e => {
-					if (!_ && s && k) {
-						_ = !0;
+					if (!w && s && k) {
+						w = !0;
 						const a = o(),
 							n = Date.now() - v,
 							r = Object(m.c)(m.a.PostComposer);
-						w ? O({
+						_ ? O({
 							state: a,
 							uploadKey: t,
 							assetId: C,
@@ -797,7 +797,7 @@
 						metadata: Object.assign({
 							fileSource: s
 						}, y)
-					})), w = !0, n && n();
+					})), _ = !0, n && n();
 					const v = e.name,
 						O = await (async (e, t, s) => Object(u.b)(Object(h.a)(e, [p.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/media/asset.json"),
@@ -881,8 +881,8 @@
 				C = s("./src/reddit/helpers/graphql/normalizeSubredditScheduledPostsFromGql/index.ts"),
 				j = s("./src/reddit/helpers/scheduledPosts/index.ts"),
 				k = s("./src/reddit/helpers/trackers/postComposer.ts"),
-				w = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				_ = s("./src/reddit/models/Poll/index.ts"),
+				_ = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				w = s("./src/reddit/models/Poll/index.ts"),
 				E = s("./src/reddit/models/PostCreationForm/index.ts"),
 				I = s("./src/reddit/models/Toast/index.ts"),
 				L = s("./src/reddit/models/User/index.ts"),
@@ -910,18 +910,18 @@
 				V = Object(r.a)(B.H),
 				X = Object(r.a)(B.a),
 				Z = Object(r.a)(B.D),
-				K = e => "/r/".concat(e, "/about/").concat(R.p),
-				G = (e, t) => {
+				G = e => "/r/".concat(e, "/about/").concat(R.p),
+				K = (e, t) => {
 					const s = t.creations.formData.govType,
 						a = Object.assign({}, e);
-					if (s && (a.type = s), a.type === _.a.ReplaceTopMod) a.params = {
+					if (s && (a.type = s), a.type === w.a.ReplaceTopMod) a.params = {
 						userName: t.creations.formData.newTopMod
-					}, a.options = _.f[_.a.ReplaceTopMod]();
-					else if (a.type === _.a.Spinoff) {
+					}, a.options = w.f[w.a.ReplaceTopMod]();
+					else if (a.type === w.a.Spinoff) {
 						const e = t.creations.formData.newSubreddit;
 						a.params = {
 							subreddit: e
-						}, a.options = _.f[_.a.Spinoff](e)
+						}, a.options = w.f[w.a.Spinoff](e)
 					} else a.options = a.options.map(e => ({
 						text: e.text.trim()
 					})).filter(e => !!e.text);
@@ -971,7 +971,7 @@
 							subredditId: p,
 							scheduledPostId: u
 						});
-					if (m && Object(i.a)(Object(w.v)(m)(r)), t(F(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
+					if (m && Object(i.a)(Object(_.v)(m)(r)), t(F(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(T.s)(s()))) return;
 					const g = Object(v.e)({
 							submission: c,
 							schedule: o,
@@ -981,7 +981,7 @@
 						b = await Object(O.a)(n(), g);
 					if (b.ok) return t(Object(h.e)({
 						subredditId: l.id
-					})), void t(Object(d.G)(K(l.name), !1));
+					})), void t(Object(d.G)(G(l.name), !1));
 					const y = b.error;
 					t(Y(y))
 				}, ee = e => async (t, s, a) => {
@@ -1000,7 +1000,7 @@
 							subredditId: l.id
 						}));
 						const e = u.body.data.createScheduledPost.scheduledPost;
-						return e && Object(i.a)(Object(w.s)(Object(C.d)(e))(r)), void t(Object(d.G)(K(l.name), !1))
+						return e && Object(i.a)(Object(_.s)(Object(C.d)(e))(r)), void t(Object(d.G)(G(l.name), !1))
 					}
 					const p = u.error;
 					t(Y(p))
@@ -1012,7 +1012,7 @@
 						h = Object(T.T)(u, e),
 						m = !!Object(P.a)(u),
 						v = u.creations.formData.isPoll,
-						O = u.creations.formData.polls ? G(u.creations.formData.polls, u) : G({
+						O = u.creations.formData.polls ? K(u.creations.formData.polls, u) : K({
 							duration: n.x,
 							options: []
 						}, u);
@@ -1090,8 +1090,8 @@
 					}
 					const C = Object(z.o)(h.kind),
 						j = x.ok && x.body && x.body.id && Object(D.m)(x.body.id),
-						w = s();
-					k.o(w, C, j)
+						_ = s();
+					k.o(_, C, j)
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/edit.ts": function(e, t, s) {
@@ -1168,7 +1168,7 @@
 			})), s.d(t, "d", (function() {
 				return C
 			})), s.d(t, "c", (function() {
-				return _
+				return w
 			})), s.d(t, "e", (function() {
 				return I
 			})), s.d(t, "i", (function() {
@@ -1209,8 +1209,8 @@
 				C = Object(n.a)(r.d),
 				j = Object(n.a)(r.f),
 				k = Object(n.a)(r.m),
-				w = Object(n.a)(r.a),
-				_ = Object(n.a)(r.c),
+				_ = Object(n.a)(r.a),
+				w = Object(n.a)(r.c),
 				E = Object(n.a)(r.e),
 				I = Object(n.a)(r.h),
 				L = (e, t) => {
@@ -1273,7 +1273,7 @@
 						l = await Object(c.b)(n(), o);
 					l.ok ? T(t, Object(d.e)(l.body.data), o) : t(E())
 				}, T = (e, t, s) => {
-					Object(d.b)(t) ? e(j(t)) : Object(d.a)(t) ? e(w(t)) : Object(d.c)(t) ? e(k(t)) : L(e, s)
+					Object(d.b)(t) ? e(j(t)) : Object(d.a)(t) ? e(_(t)) : Object(d.c)(t) ? e(k(t)) : L(e, s)
 				}, M = (e, t) => async (s, n, r) => {
 					const o = {},
 						c = n();
@@ -1547,14 +1547,14 @@
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
 				r = s("./src/higherOrderComponents/asModal/index.tsx"),
-				i = s("./node_modules/polished/dist/polished.es.js"),
-				o = s("./node_modules/react-dom/index.js"),
-				c = s.n(o),
-				d = s("./node_modules/react-redux/es/index.js"),
-				l = s("./node_modules/reselect/es/index.js"),
-				u = s("./src/lib/classNames/index.ts"),
-				h = s("./src/config.ts"),
-				p = s("./src/reddit/i18n/utils.ts"),
+				i = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/polished/dist/polished.es.js"),
+				c = s("./node_modules/react-dom/index.js"),
+				d = s.n(c),
+				l = s("./node_modules/react-redux/es/index.js"),
+				u = s("./node_modules/reselect/es/index.js"),
+				h = s("./src/lib/classNames/index.ts"),
+				p = s("./src/config.ts"),
 				m = s("./src/reddit/actions/layers.ts"),
 				g = s("./src/reddit/actions/postCreation/general.ts"),
 				b = s("./src/reddit/actions/postCreation/mediaUpload.ts"),
@@ -1566,13 +1566,13 @@
 				C = s("./src/reddit/controls/GrowingOutlinedInput/index.tsx"),
 				j = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				k = s("./src/reddit/controls/Typography/index.tsx");
-			var w, _, E, I = s("./src/reddit/helpers/imagePreview/index.ts"),
+			var _, w, E, I = s("./src/reddit/helpers/imagePreview/index.ts"),
 				L = s("./src/reddit/helpers/media/index.ts"),
 				S = s("./src/reddit/helpers/trackers/layers.ts");
 
 			function P(e, t, s, a) {
 				return {
-					type: w.Image,
+					type: _.Image,
 					name: e,
 					isVisible: !0,
 					opacity: 1,
@@ -1586,10 +1586,10 @@
 				}
 			}! function(e) {
 				e[e.Color = 0] = "Color", e[e.Art = 1] = "Art", e[e.Image = 2] = "Image", e[e.Text = 3] = "Text"
-			}(w || (w = {})),
+			}(_ || (_ = {})),
 			function(e) {
 				e[e.CreateLayer = 0] = "CreateLayer", e[e.UpdateLayer = 1] = "UpdateLayer", e[e.DeleteLayer = 2] = "DeleteLayer", e[e.SortLayers = 3] = "SortLayers"
-			}(_ || (_ = {})),
+			}(w || (w = {})),
 			function(e) {
 				e.SourceOver = "source-over", e.SourceIn = "source-in", e.SourceOut = "source-out", e.SourceAtop = "source-atop", e.DestinationOver = "destination-over", e.DestinationIn = "destination-in", e.DestinationOut = "destination-out", e.DestinationAtop = "destination-atop", e.Lighter = "lighter", e.Copy = "copy", e.XOR = "xor", e.Multiply = "multiply", e.Screen = "screen", e.Overlay = "overlay", e.Darken = "darken", e.Lighten = "lighten", e.ColorDodge = "color-dodge", e.ColorBurn = "color-burn", e.HardLight = "hard-light", e.SoftLight = "soft-light", e.Difference = "difference", e.Exclusion = "exclusion", e.Hue = "hue", e.Saturation = "saturation", e.Color = "color", e.Luminosity = "luminosity"
 			}(E || (E = {}));
@@ -1601,17 +1601,17 @@
 					const n = s.pop();
 					if (n) {
 						switch (n.type) {
-							case _.CreateLayer:
+							case w.CreateLayer:
 								e.splice(0, 1);
 								break;
-							case _.UpdateLayer:
+							case w.UpdateLayer:
 								const t = e[n.index];
 								e[n.index] = n.layer, n.layer = t;
 								break;
-							case _.DeleteLayer:
+							case w.DeleteLayer:
 								e.splice(n.index, 0, n.layer);
 								break;
-							case _.SortLayers:
+							case w.SortLayers:
 								const s = e;
 								e = n.layers, n.layers = s
 						}
@@ -1627,17 +1627,17 @@
 					const n = a.pop();
 					if (n) {
 						switch (n.type) {
-							case _.CreateLayer:
+							case w.CreateLayer:
 								e.splice(n.index, 0, n.layer);
 								break;
-							case _.UpdateLayer:
+							case w.UpdateLayer:
 								const t = e[n.index];
 								e[n.index] = n.layer, n.layer = t;
 								break;
-							case _.DeleteLayer:
+							case w.DeleteLayer:
 								e.splice(0, 1);
 								break;
-							case _.SortLayers:
+							case w.SortLayers:
 								const s = e;
 								e = n.layers, n.layers = s
 						}
@@ -1649,9 +1649,8 @@
 						}
 					}
 				};
-			var B = s("./node_modules/fbt/lib/FbtPublic.js"),
-				z = s("./src/reddit/controls/Sortable/index.tsx"),
-				U = e => n.a.createElement("svg", {
+			var B = s("./src/reddit/controls/Sortable/index.tsx"),
+				z = e => n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 24 24"
@@ -1683,9 +1682,9 @@
 					"stroke-width": "2px",
 					"stroke-miterlimit": "10"
 				})))))),
-				F = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/lessComponent.tsx")),
-				H = s("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
-				Y = e => n.a.createElement("svg", {
+				U = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/lessComponent.tsx")),
+				F = s("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
+				H = e => n.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 20 20.188",
 					className: e.className
@@ -1706,8 +1705,8 @@
 					d: "M5.872,2.539,4.2,2.531,4.19.857A.847.847,0,0,0,3.349.016a.828.828,0,0,0-.833.833l.008,1.674L.849,2.516a.828.828,0,0,0-.833.833.847.847,0,0,0,.841.841L2.531,4.2l.008,1.674a.847.847,0,0,0,.841.841.828.828,0,0,0,.833-.833L4.206,4.206l1.674.008a.828.828,0,0,0,.833-.833A.847.847,0,0,0,5.872,2.539Z",
 					transform: "translate(6.52 1.823) rotate(45)"
 				})))))),
-				q = s("./src/reddit/icons/svgs/LayerDuplicate/index.tsx"),
-				W = e => n.a.createElement("svg", {
+				Y = s("./src/reddit/icons/svgs/LayerDuplicate/index.tsx"),
+				q = e => n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 24 24"
@@ -1715,7 +1714,7 @@
 					d: "M175.768,8.864c-.367-.433-1.308.121-1.768.465l-2.345,1.328c-1.225.773-6.55.851-7.7-.035L162,9.329c-.417-.39-1.271-1.1-1.687-.707a.955.955,0,0,0,0,1.414L162,11.329a7.71,7.71,0,0,0,1.3.752l.007.756a.5.5,0,0,0,.849.343l.518-.528a11.387,11.387,0,0,0,2.816.644l.232.694a.5.5,0,0,0,.94,0l.246-.739a15.972,15.972,0,0,0,2.686-.667l.56.56a.5.5,0,0,0,.846-.35V12a5.385,5.385,0,0,0,1-.671l1.6-1.061a.956.956,0,0,0,.168-1.4Z",
 					transform: "translate(-156 1.5)"
 				}))),
-				V = e => n.a.createElement("svg", {
+				W = e => n.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 24 24",
 					className: e.className
@@ -1723,7 +1722,7 @@
 					d: "M16,9H15V7A5,5,0,1,0,5,7V9H4a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V10A1,1,0,0,0,16,9ZM7,7a3,3,0,1,1,6,0V9H7Z",
 					transform: "translate(2 2)"
 				}))),
-				X = e => n.a.createElement("svg", {
+				V = e => n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 24 24"
@@ -1731,7 +1730,7 @@
 					d: "M97.707,10.293,94.949,7.535a7.008,7.008,0,0,0-9.9,0l-2.758,2.758a1,1,0,1,0,1.414,1.414l2.758-2.758c.065-.065.142-.111.211-.172a4,4,0,1,0,6.648,0c.069.061.146.107.211.172l2.758,2.758a1,1,0,1,0,1.414-1.414Z",
 					transform: "translate(-78 2.5)"
 				}))),
-				Z = e => n.a.createElement("svg", {
+				X = e => n.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 24 24",
 					className: e.className
@@ -1739,21 +1738,21 @@
 					d: "M92-698H80a1,1,0,0,1-1-1v-7a1,1,0,0,1,1-1h1v-3a5.006,5.006,0,0,1,5-5,5.584,5.584,0,0,1,3.437,1.181,3.945,3.945,0,0,1,1.563,3.1,1.464,1.464,0,0,1-.227,1.041.709.709,0,0,1-.466.307h-.624c-.685-.106-.749-1.336-.75-1.348,0-1.3-1.779-2.284-2.933-2.284a3,3,0,0,0-3,3v3h9a1,1,0,0,1,1,1v7A1,1,0,0,1,92-698Z",
 					transform: "translate(-74 718)"
 				}))),
-				K = s("./src/reddit/icons/svgs/Menu/index.tsx"),
+				Z = s("./src/reddit/icons/svgs/Menu/index.tsx"),
 				G = s("./src/reddit/icons/svgs/Remove/index.tsx"),
-				J = (s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./src/reddit/components/ImageEditor/Slider/index.m.less")),
-				Q = s.n(J);
-			const $ = e => {
+				K = (s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./src/reddit/components/ImageEditor/Slider/index.m.less")),
+				J = s.n(K);
+			const Q = e => {
 					return (e.ownerDocument || document).defaultView || window
 				},
-				ee = (e, t, s) => (s - t) * e + t,
-				te = (e, t, s) => 100 * (e - t) / (s - t),
-				se = (e, t, s) => e < t ? t : e > s ? s : e,
-				ae = (e, t) => {
+				$ = (e, t, s) => (s - t) * e + t,
+				ee = (e, t, s) => 100 * (e - t) / (s - t),
+				te = (e, t, s) => e < t ? t : e > s ? s : e,
+				se = (e, t) => {
 					const s = Math.round(e / t) * t;
-					return Number(s.toFixed(ne(t)))
+					return Number(s.toFixed(ae(t)))
 				},
-				ne = e => {
+				ae = e => {
 					if (Math.abs(e) < 1) {
 						const t = e.toExponential().split("e-"),
 							s = t[0].split(".")[1];
@@ -1762,11 +1761,11 @@
 					const t = e.toString().split(".")[1];
 					return t ? t.length : 0
 				},
-				re = e => ({
+				ne = e => ({
 					x: e.pageX,
 					y: e.pageY
 				}),
-				ie = {
+				re = {
 					horizontal: {
 						offset: e => ({
 							left: "".concat(e, "%")
@@ -1778,7 +1777,7 @@
 						})
 					}
 				};
-			class oe extends n.a.Component {
+			class ie extends n.a.Component {
 				constructor(e) {
 					super(e), this.sliderRef = n.a.createRef(), this.trackRef = n.a.createRef(), this.railRef = n.a.createRef(), this.getTrackerNewValue = e => {
 						let {
@@ -1800,19 +1799,19 @@
 							left: l
 						} = i.getBoundingClientRect();
 						let u, h;
-						return u = 0 === s.indexOf("vertical") ? (d + $(i).pageYOffset - t.y) / c : (t.x - l - $(i).pageXOffset) / o, -1 !== s.indexOf("-reverse") && (u = 1 - u), h = ee(u, a, n), h = ae(h, r), {
-							newValue: h = se(h, a, n)
+						return u = 0 === s.indexOf("vertical") ? (d + Q(i).pageYOffset - t.y) / c : (t.x - l - Q(i).pageXOffset) / o, -1 !== s.indexOf("-reverse") && (u = 1 - u), h = $(u, a, n), h = se(h, r), {
+							newValue: h = te(h, a, n)
 						}
 					}, this.handleMouseDown = e => {
 						if (this.props.disabled) return;
 						e.preventDefault(), document.body.addEventListener("mousemove", this.handleMouseMove), document.body.addEventListener("mouseup", this.handleMouseUp);
-						const t = re(e.nativeEvent),
+						const t = ne(e.nativeEvent),
 							s = this.getTrackerNewValue({
 								tracker: t
 							});
 						null !== s && (this.props.onChangeStart && this.props.onChangeStart(), this.props.onChange(s.newValue))
 					}, this.handleMouseMove = e => {
-						const t = re(e),
+						const t = ne(e),
 							s = this.getTrackerNewValue({
 								tracker: t
 							});
@@ -1832,31 +1831,31 @@
 						title: o,
 						trackClassName: c,
 						trackStyle: d
-					} = this.props, l = te(t, s, a), h = Object.assign({}, ie.horizontal.offset(l), d || {});
+					} = this.props, l = ee(t, s, a), u = Object.assign({}, re.horizontal.offset(l), d || {});
 					return n.a.createElement("div", {
 						ref: this.sliderRef,
-						className: Object(u.a)(this.props.className, {
-							[Q.a.Vertical]: "vertical" === e
+						className: Object(h.a)(this.props.className, {
+							[J.a.Vertical]: "vertical" === e
 						}),
 						onMouseDown: this.handleMouseDown
 					}, n.a.createElement("div", {
 						ref: this.railRef,
-						className: Object(u.a)(Q.a.Rail, r),
+						className: Object(h.a)(J.a.Rail, r),
 						style: i || {}
 					}), n.a.createElement("div", {
 						ref: this.trackRef,
 						title: o,
-						className: Object(u.a)(Q.a.CommonTrack, c || Q.a.Track),
-						style: h
+						className: Object(h.a)(J.a.CommonTrack, c || J.a.Track),
+						style: u
 					}))
 				}
 			}
-			var ce = s("./src/reddit/components/ImageEditor/LayerDisplay/index.m.less"),
-				de = s.n(ce);
-			const le = ["image/png", "image/jpeg"].join(),
-				ue = F.a.input("HiddenInput", de.a),
-				he = [0, 100];
-			class pe extends n.a.Component {
+			var oe = s("./src/reddit/components/ImageEditor/LayerDisplay/index.m.less"),
+				ce = s.n(oe);
+			const de = ["image/png", "image/jpeg"].join(),
+				le = U.a.input("HiddenInput", ce.a),
+				ue = [0, 100];
+			class he extends n.a.Component {
 				constructor(e) {
 					super(e), this.hiddenInputEl = null, this.handleChangeVisibility = e => {
 						const {
@@ -1908,7 +1907,7 @@
 							opacity: null
 						});
 						const t = +e.currentTarget.value;
-						he[0] <= t && t <= he[1] && this.handleOpacityChange(t)
+						ue[0] <= t && t <= ue[1] && this.handleOpacityChange(t)
 					}, this.handleIsOpenedChange = e => {
 						this.setState(e => {
 							let {
@@ -1924,7 +1923,7 @@
 						const {
 							layer: e
 						} = this.props;
-						if (e.type === w.Art) {
+						if (e.type === _.Art) {
 							const t = document.createElement("canvas");
 							t.width = e.canvas.width, t.height = e.canvas.height;
 							const s = t.getContext("2d"),
@@ -1934,7 +1933,7 @@
 								});
 							this.props.onChange(a, this.props.index)
 						}
-						if (e.type === w.Image) {
+						if (e.type === _.Image) {
 							const e = new Image,
 								t = Object.assign({}, this.props.layer, {
 									image: e
@@ -2008,66 +2007,66 @@
 						onClick: a
 					} = this.props, {
 						opacity: r,
-						isOpened: i,
-						isEditName: o,
-						name: c
-					} = this.state, d = t.type === w.Art;
+						isOpened: o,
+						isEditName: c,
+						name: d
+					} = this.state, l = t.type === _.Art;
 					return n.a.createElement("div", {
-						className: Object(u.a)(de.a.LayerDisplayWrapper, {
-							[de.a.isActive]: !!e
+						className: Object(h.a)(ce.a.LayerDisplayWrapper, {
+							[ce.a.isActive]: !!e
 						}),
 						onClick: () => a && a(t, s)
 					}, n.a.createElement("div", {
-						className: de.a.LayerDisplay
+						className: ce.a.LayerDisplay
 					}, n.a.createElement("div", {
-						title: B.fbt._("Hide/Show", null, {
+						title: i.fbt._("Hide/Show", null, {
 							hk: "2TXTrk"
 						}),
 						onClick: this.handleChangeVisibility
-					}, t.isVisible && n.a.createElement(X, {
-						className: de.a.LayerVisibilityIcon
-					}), !t.isVisible && n.a.createElement(W, {
-						className: de.a.LayerVisibilityIcon
+					}, t.isVisible && n.a.createElement(V, {
+						className: ce.a.LayerVisibilityIcon
+					}), !t.isVisible && n.a.createElement(q, {
+						className: ce.a.LayerVisibilityIcon
 					})), n.a.createElement("div", {
-						className: Object(u.a)(de.a.LayerTitle, {
-							[de.a.Hidden]: o
+						className: Object(h.a)(ce.a.LayerTitle, {
+							[ce.a.Hidden]: c
 						}),
 						onDoubleClick: this.handleEditNameShow
 					}, t.name), n.a.createElement("input", {
 						type: "text",
 						disabled: t.isDisabled,
-						value: c,
+						value: d,
 						onChange: this.handleNameInputChange,
 						onBlur: this.handleEditNameHide,
-						className: Object(u.a)(de.a.LayerOptionsEditName, {
-							[de.a.Hidden]: !o
+						className: Object(h.a)(ce.a.LayerOptionsEditName, {
+							[ce.a.Hidden]: !c
 						})
 					}), n.a.createElement("div", {
-						title: B.fbt._("Options…", null, {
+						title: i.fbt._("Options…", null, {
 							hk: "1Bv6TT"
 						}),
 						onClick: this.handleIsOpenedChange
-					}, n.a.createElement(K.a, {
-						className: Object(u.a)(de.a.LayerMenuButton, {
-							[de.a.LayerMenuOpened]: i
+					}, n.a.createElement(Z.a, {
+						className: Object(h.a)(ce.a.LayerMenuButton, {
+							[ce.a.LayerMenuOpened]: o
 						})
 					}))), n.a.createElement("div", {
-						className: Object(u.a)(de.a.LayerOptions, {
-							[de.a.LayerMenuOpened]: i
+						className: Object(h.a)(ce.a.LayerOptions, {
+							[ce.a.LayerMenuOpened]: o
 						})
 					}, n.a.createElement("div", {
-						className: de.a.LayerOptionsRow
+						className: ce.a.LayerOptionsRow
 					}, n.a.createElement("div", {
-						className: de.a.LayerOptionsFieldLabel
-					}, B.fbt._("Opacity", null, {
+						className: ce.a.LayerOptionsFieldLabel
+					}, i.fbt._("Opacity", null, {
 						hk: "1YcZx5"
 					})), n.a.createElement("input", {
 						type: "text",
-						className: de.a.LayerOptionsOpacityInput,
+						className: ce.a.LayerOptionsOpacityInput,
 						value: null === r ? "" : r,
 						onChange: this.handleOpacityInputChange,
 						disabled: t.isDisabled
-					}), n.a.createElement(oe, {
+					}), n.a.createElement(ie, {
 						orientation: "horizontal",
 						min: 0,
 						max: 100,
@@ -2075,87 +2074,87 @@
 						value: r || 0,
 						onChange: this.handleOpacityChange,
 						onChangeStart: this.handleOpacityChangeStart,
-						className: de.a.LayerOptionsOpacitySlider,
+						className: ce.a.LayerOptionsOpacitySlider,
 						disabled: t.isDisabled
-					})), d && n.a.createElement("div", {
-						className: de.a.LayerOptionsRow
+					})), l && n.a.createElement("div", {
+						className: ce.a.LayerOptionsRow
 					}, n.a.createElement("div", {
-						className: de.a.LayerOptionsFieldLabel
-					}, B.fbt._("Blend Mode", null, {
+						className: ce.a.LayerOptionsFieldLabel
+					}, i.fbt._("Blend Mode", null, {
 						hk: "3jM4bX"
 					})), n.a.createElement("select", {
 						onChange: this.handleUpdateLayerBlendMode,
 						value: t.blendMode,
-						className: de.a.LayerOptionsBlendMode,
+						className: ce.a.LayerOptionsBlendMode,
 						disabled: t.isDisabled
 					}, Object.keys(E).map((e, t) => n.a.createElement("option", {
 						key: t,
 						value: E[e]
 					}, e)))), n.a.createElement("div", {
-						className: Object(u.a)(de.a.LayerOptionsRow, de.a.LayerOptionsActionsContainer)
+						className: Object(h.a)(ce.a.LayerOptionsRow, ce.a.LayerOptionsActionsContainer)
 					}, n.a.createElement("div", {
-						className: de.a.LayerOptionsActionsButtons
-					}, d && n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-						title: B.fbt._("Lock", null, {
+						className: ce.a.LayerOptionsActionsButtons
+					}, l && n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+						title: i.fbt._("Lock", null, {
 							hk: "1lG1wu"
 						}),
 						onClick: this.handleLockedChange
-					}, t.isDisabled && n.a.createElement(V, {
-						className: Object(u.a)(de.a.LayerOptionsActionIcon, de.a.BlueIcon)
-					}), !t.isDisabled && n.a.createElement(Z, {
-						className: de.a.LayerOptionsActionIcon
+					}, t.isDisabled && n.a.createElement(W, {
+						className: Object(h.a)(ce.a.LayerOptionsActionIcon, ce.a.BlueIcon)
+					}), !t.isDisabled && n.a.createElement(X, {
+						className: ce.a.LayerOptionsActionIcon
 					})), n.a.createElement("button", {
-						title: B.fbt._("Duplicate", null, {
+						title: i.fbt._("Duplicate", null, {
 							hk: "2qQITY"
 						}),
 						onClick: this.handleDuplicateLayer,
 						disabled: t.isDisabled
-					}, n.a.createElement(q.a, {
-						className: de.a.LayerOptionsActionIcon
-					}))), t.type === w.Image && n.a.createElement("button", {
+					}, n.a.createElement(Y.a, {
+						className: ce.a.LayerOptionsActionIcon
+					}))), t.type === _.Image && n.a.createElement("button", {
 						onClick: this.handleUploadButton,
-						className: de.a.LayerOptionsActionButton
-					}, n.a.createElement(ue, {
+						className: ce.a.LayerOptionsActionButton
+					}, n.a.createElement(le, {
 						type: "file",
 						key: t.image.src,
 						innerRef: e => this.hiddenInputEl = e,
 						onChange: this.handleFileSelect,
-						accept: le,
-						className: de.a.HiddenInput
-					}), n.a.createElement(H.a, {
-						className: Object(u.a)(de.a.LayerOptionsActionIcon, de.a.UploadIcon)
+						accept: de,
+						className: ce.a.HiddenInput
+					}), n.a.createElement(F.a, {
+						className: Object(h.a)(ce.a.LayerOptionsActionIcon, ce.a.UploadIcon)
 					}), n.a.createElement("div", {
-						className: de.a.LayerOptionsActionIconTitle
-					}, B.fbt._("Choose file", null, {
+						className: ce.a.LayerOptionsActionIconTitle
+					}, i.fbt._("Choose file", null, {
 						hk: "2lkEAY"
 					}))), n.a.createElement("button", {
-						title: B.fbt._("Clear", null, {
+						title: i.fbt._("Clear", null, {
 							hk: "3zH0xB"
 						}),
 						onClick: this.handleClearLayer,
 						disabled: t.isDisabled,
-						className: de.a.LayerOptionsActionButton
-					}, n.a.createElement(Y, {
-						className: de.a.LayerOptionsActionIcon
-					}), !d && n.a.createElement("div", {
-						className: de.a.LayerOptionsActionIconTitle
-					}, B.fbt._("Clear", null, {
+						className: ce.a.LayerOptionsActionButton
+					}, n.a.createElement(H, {
+						className: ce.a.LayerOptionsActionIcon
+					}), !l && n.a.createElement("div", {
+						className: ce.a.LayerOptionsActionIconTitle
+					}, i.fbt._("Clear", null, {
 						hk: "3zH0xB"
-					})))), d && n.a.createElement("button", {
-						title: B.fbt._("DELETE", null, {
+					})))), l && n.a.createElement("button", {
+						title: i.fbt._("DELETE", null, {
 							hk: "4EPCkd"
 						}),
 						onClick: this.handleDeleteLayer,
 						disabled: t.isDisabled
 					}, n.a.createElement(G.a, {
-						className: Object(u.a)(de.a.LayerOptionsActionIcon, de.a.RedIcon)
+						className: Object(h.a)(ce.a.LayerOptionsActionIcon, ce.a.RedIcon)
 					})))))
 				}
 			}
-			var me = pe,
-				ge = s("./src/reddit/components/ImageEditor/LayersPanel/index.m.less"),
-				be = s.n(ge);
-			class ye extends n.a.Component {
+			var pe = he,
+				me = s("./src/reddit/components/ImageEditor/LayersPanel/index.m.less"),
+				ge = s.n(me);
+			class be extends n.a.Component {
 				constructor(e) {
 					super(e), this.setActive = (e, t) => () => {
 						this.props.setActiveIndex(e, t)
@@ -2168,57 +2167,57 @@
 						activeLayerIndex: s,
 						handleLayerChange: a,
 						handleLayerOpacityChange: r,
-						handleDuplicate: i,
-						handleBackgroundLayerChange: o,
-						handleLayerSort: c,
-						setActiveIndex: d,
-						handleAdd: l
+						handleDuplicate: o,
+						handleBackgroundLayerChange: c,
+						handleLayerSort: d,
+						setActiveIndex: l,
+						handleAdd: u
 					} = this.props;
 					return n.a.createElement("div", {
-						className: be.a.LayersPanel
+						className: ge.a.LayersPanel
 					}, n.a.createElement("div", {
-						className: be.a.ArtLayersTitle
-					}, B.fbt._("Art Layers", null, {
+						className: ge.a.ArtLayersTitle
+					}, i.fbt._("Art Layers", null, {
 						hk: "1MkFUS"
 					}), n.a.createElement("div", {
-						onClick: l
-					}, n.a.createElement(U, {
-						className: be.a.ArtLayersTitleIcon
+						onClick: u
+					}, n.a.createElement(z, {
+						className: ge.a.ArtLayersTitleIcon
 					}))), n.a.createElement("div", {
-						className: be.a.LayersList
-					}, n.a.createElement(z.a, {
+						className: ge.a.LayersList
+					}, n.a.createElement(B.a, {
 						values: t,
-						render: (e, o, c, d, l) => n.a.createElement(me, {
-							key: o,
+						render: (e, i, c, d, l) => n.a.createElement(pe, {
+							key: i,
 							isDragging: c,
 							isOver: d,
 							canDrop: l,
-							active: o === s,
+							active: i === s,
 							layer: e,
 							onChange: a,
 							onOpacityChangeStart: r,
-							index: o,
-							canAddLayer: t.length < Ct,
-							onDuplicate: i,
-							setActive: this.setActive(e, o)
+							index: i,
+							canAddLayer: t.length < xt,
+							onDuplicate: o,
+							setActive: this.setActive(e, i)
 						}),
-						onDrop: c,
-						onClick: d
-					}), n.a.createElement(me, {
+						onDrop: d,
+						onClick: l
+					}), n.a.createElement(pe, {
 						layer: e,
-						onChange: o,
-						index: Lt,
-						active: Lt === s,
+						onChange: c,
+						index: It,
+						active: It === s,
 						disabled: e.isDisabled,
-						canAddLayer: t.length < Ct,
-						onDuplicate: i,
-						onClick: d
+						canAddLayer: t.length < xt,
+						onDuplicate: o,
+						onClick: l
 					})))
 				}
 			}
-			var fe = s("./src/reddit/components/ImageEditor/Pipette/index.m.less"),
-				ve = s.n(fe);
-			var Oe = e => n.a.createElement("svg", {
+			var ye = s("./src/reddit/components/ImageEditor/Pipette/index.m.less"),
+				fe = s.n(ye);
+			var ve = e => n.a.createElement("svg", {
 				xmlns: "http://www.w3.org/2000/svg",
 				width: "18.41",
 				height: "18.41",
@@ -2236,7 +2235,7 @@
 				d: "M13.319-188.589a1.68,1.68,0,0,0-2.371.169l-1.962,2.144h0a1.118,1.118,0,0,1-1.37.236.334.334,0,0,0-.407.075l-.319.357a.345.345,0,0,0,.026.484l.609.545-5.2,5.733c-.715.8-.1,1.266-.643,2.269a.819.819,0,0,0-.11.391.643.643,0,0,0,.639.644.66.66,0,0,0,.4-.143c.971-.748,1.48-.1,2.214-.921l5.2-5.732.552.494a.345.345,0,0,0,.484-.027l.319-.356a.333.333,0,0,0,.029-.413,1.122,1.122,0,0,1,.081-1.392l1.962-2.148.035-.039A1.68,1.68,0,0,0,13.319-188.589ZM4.057-177.433c-.176.2-.74.181-1.036.312.1-.31.027-.863.2-1.058l5.136-5.652.834.748Z",
 				transform: "translate(-1.571 189)"
 			})))));
-			var xe = e => {
+			var Oe = e => {
 					let {
 						togglePipette: t,
 						selectedColor: s,
@@ -2244,27 +2243,27 @@
 						className: r
 					} = e;
 					return n.a.createElement("div", {
-						className: Object(u.a)(ve.a.PipetteWrapper, r)
+						className: Object(h.a)(fe.a.PipetteWrapper, r)
 					}, n.a.createElement("input", {
-						className: ve.a.SelectedColor,
+						className: fe.a.SelectedColor,
 						type: "text",
 						value: s || "",
 						disabled: !0
 					}), n.a.createElement("button", {
 						onClick: t
-					}, n.a.createElement(Oe, {
-						className: Object(u.a)(ve.a.PipetteIcon, {
-							[ve.a.ActiveIcon]: a
+					}, n.a.createElement(ve, {
+						className: Object(h.a)(fe.a.PipetteIcon, {
+							[fe.a.ActiveIcon]: a
 						})
 					})))
 				},
-				Ce = s("./node_modules/lodash/times.js"),
-				je = s.n(Ce),
-				ke = s("./src/reddit/helpers/localStorage/index.ts"),
-				we = s("./src/reddit/components/ImageEditor/SavedColors/index.m.less"),
-				_e = s.n(we);
-			const Ee = 4;
-			class Ie extends n.a.Component {
+				xe = s("./node_modules/lodash/times.js"),
+				Ce = s.n(xe),
+				je = s("./src/reddit/helpers/localStorage/index.ts"),
+				ke = s("./src/reddit/components/ImageEditor/SavedColors/index.m.less"),
+				_e = s.n(ke);
+			const we = 4;
+			class Ee extends n.a.Component {
 				constructor(e) {
 					super(e), this.addColor = () => {
 						this.setState((e, t) => {
@@ -2275,8 +2274,8 @@
 							} = t;
 							const n = a();
 							if (s.includes(n)) return null;
-							const r = [n, ...s.slice(0, Ee - 1)];
-							return Object(ke.N)(r), {
+							const r = [n, ...s.slice(0, we - 1)];
+							return Object(je.N)(r), {
 								colors: r
 							}
 						})
@@ -2286,7 +2285,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						colors: Object(ke.m)()
+						colors: Object(je.m)()
 					})
 				}
 				render() {
@@ -2295,9 +2294,9 @@
 						onColorSelected: t
 					} = this.props, {
 						colors: s
-					} = this.state, a = je()(Ee, e => ((e, s) => s ? n.a.createElement("div", {
+					} = this.state, a = Ce()(we, e => ((e, s) => s ? n.a.createElement("div", {
 						key: s || e,
-						className: Object(u.a)(_e.a.ColorSlot, _e.a.ActiveSlot),
+						className: Object(h.a)(_e.a.ColorSlot, _e.a.ActiveSlot),
 						style: {
 							background: s
 						},
@@ -2306,16 +2305,16 @@
 						className: _e.a.ColorSlot
 					}))(e, s[e]));
 					return n.a.createElement("div", {
-						className: Object(u.a)(_e.a.ColorSlotsWrapper, e)
+						className: Object(h.a)(_e.a.ColorSlotsWrapper, e)
 					}, n.a.createElement("div", {
-						className: Object(u.a)(_e.a.AddColor, _e.a.ActiveSlot),
+						className: Object(h.a)(_e.a.AddColor, _e.a.ActiveSlot),
 						onClick: this.addColor
 					}, "+"), a)
 				}
 			}
-			var Le, Se = s("./src/reddit/components/ImageEditor/Tools/index.m.less"),
-				Pe = s.n(Se),
-				Te = e => n.a.createElement("svg", {
+			var Ie, Le = s("./src/reddit/components/ImageEditor/Tools/index.m.less"),
+				Se = s.n(Le),
+				Pe = e => n.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 24 24",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -2324,7 +2323,7 @@
 				}), n.a.createElement("path", {
 					d: "M5.914,10.5a4.335,4.335,0,0,0-4.331,4.331A11.641,11.641,0,0,1,.557,19.462a.54.54,0,0,0,.725.725,11.641,11.641,0,0,1,4.631-1.025,4.331,4.331,0,0,0,0-8.662Z"
 				})))),
-				Me = e => n.a.createElement("svg", {
+				Te = e => n.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 18 18",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -2337,7 +2336,7 @@
 					d: "M175.381-79h-5.111a1.868,1.868,0,0,0-1.582.868l-1.52,2.412h6.459c1.366,0,2.529-.023,2.133,3.115l1.2-1.919a1.875,1.875,0,0,0,.292-1v-1.6A1.875,1.875,0,0,0,175.381-79Z",
 					transform: "translate(-162.257 79)"
 				})))),
-				Ne = e => n.a.createElement("svg", {
+				Me = e => n.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 24 24",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -2347,54 +2346,54 @@
 				})));
 			! function(e) {
 				e[e.Brush = 0] = "Brush", e[e.Eraser = 1] = "Eraser", e[e.Mover = 2] = "Mover"
-			}(Le || (Le = {}));
-			const Ae = e => n.a.createElement("button", {
-					className: Pe.a.ToolButton,
+			}(Ie || (Ie = {}));
+			const Ne = e => n.a.createElement("button", {
+					className: Se.a.ToolButton,
 					onClick: e.onClick
-				}, n.a.createElement(Te, {
-					className: Object(u.a)(Pe.a.ToolIcon, {
-						[Pe.a.isActive]: e.isActive
+				}, n.a.createElement(Pe, {
+					className: Object(h.a)(Se.a.ToolIcon, {
+						[Se.a.isActive]: e.isActive
 					})
 				}), n.a.createElement("div", {
-					className: Object(u.a)(Pe.a.Shape, {
-						[Pe.a.RoundShape]: "round" === e.shape,
-						[Pe.a.FlatShape]: "butt" === e.shape,
-						[Pe.a.Hidden]: !e.isActive
+					className: Object(h.a)(Se.a.Shape, {
+						[Se.a.RoundShape]: "round" === e.shape,
+						[Se.a.FlatShape]: "butt" === e.shape,
+						[Se.a.Hidden]: !e.isActive
 					}),
 					style: {
 						background: e.color
 					}
 				})),
-				De = e => n.a.createElement("button", {
-					className: Pe.a.ToolButton,
+				Ae = e => n.a.createElement("button", {
+					className: Se.a.ToolButton,
 					onClick: e.onClick
-				}, n.a.createElement(Me, {
-					className: Object(u.a)(Pe.a.ToolIcon, {
-						[Pe.a.isActive]: e.isActive
+				}, n.a.createElement(Te, {
+					className: Object(h.a)(Se.a.ToolIcon, {
+						[Se.a.isActive]: e.isActive
 					})
 				}), n.a.createElement("div", {
-					className: Object(u.a)(Pe.a.Shape, {
-						[Pe.a.RoundShape]: "round" === e.shape,
-						[Pe.a.FlatShape]: "butt" === e.shape,
-						[Pe.a.Hidden]: !e.isActive
+					className: Object(h.a)(Se.a.Shape, {
+						[Se.a.RoundShape]: "round" === e.shape,
+						[Se.a.FlatShape]: "butt" === e.shape,
+						[Se.a.Hidden]: !e.isActive
 					})
 				})),
-				Re = e => n.a.createElement("button", {
-					className: Pe.a.ToolButton,
+				De = e => n.a.createElement("button", {
+					className: Se.a.ToolButton,
 					onClick: e.onClick
-				}, n.a.createElement(Ne, {
-					className: Object(u.a)(Pe.a.ToolIcon, {
-						[Pe.a.isActive]: e.isActive
+				}, n.a.createElement(Me, {
+					className: Object(h.a)(Se.a.ToolIcon, {
+						[Se.a.isActive]: e.isActive
 					})
 				}));
-			class Be extends n.a.Component {
+			class Re extends n.a.Component {
 				constructor(e) {
 					super(e), this.setToolTypeToBrush = () => {
-						this.props.setToolType(Le.Brush)
+						this.props.setToolType(Ie.Brush)
 					}, this.setToolTypeToEraser = () => {
-						this.props.setToolType(Le.Eraser)
+						this.props.setToolType(Ie.Eraser)
 					}, this.setToolTypeToMover = () => {
-						this.props.setToolType(Le.Mover)
+						this.props.setToolType(Ie.Mover)
 					}
 				}
 				render() {
@@ -2405,40 +2404,40 @@
 						enableEditTools: a
 					} = this.props;
 					return n.a.createElement("div", {
-						className: Pe.a.Tools
-					}, a && n.a.createElement(n.a.Fragment, null, n.a.createElement(Ae, {
-						isActive: e === Le.Brush,
+						className: Se.a.Tools
+					}, a && n.a.createElement(n.a.Fragment, null, n.a.createElement(Ne, {
+						isActive: e === Ie.Brush,
 						onClick: this.setToolTypeToBrush,
 						shape: t,
 						color: s
-					}), n.a.createElement(De, {
-						isActive: e === Le.Eraser,
+					}), n.a.createElement(Ae, {
+						isActive: e === Ie.Eraser,
 						onClick: this.setToolTypeToEraser,
 						shape: t
-					})), n.a.createElement(Re, {
-						isActive: e === Le.Mover,
+					})), n.a.createElement(De, {
+						isActive: e === Ie.Mover,
 						onClick: this.setToolTypeToMover
 					}))
 				}
 			}
-			var ze = Be,
-				Ue = s("./src/reddit/components/ImageEditor/Options/index.m.less"),
-				Fe = s.n(Ue);
-			const He = "url(".concat(h.a.assetPath, "/img/transparency-background.png)"),
-				Ye = "url(".concat(h.a.assetPath, "/img/color-track.svg)"),
-				qe = "url(".concat(h.a.assetPath, "/img/lightness-track.svg)"),
-				We = "url(".concat(h.a.assetPath, "/img/opacity-track.svg)"),
-				Ve = "url(".concat(h.a.assetPath, "/img/thickness-track.svg)"),
-				Xe = 370,
-				Ze = 360,
-				Ke = 100,
+			var Be = Re,
+				ze = s("./src/reddit/components/ImageEditor/Options/index.m.less"),
+				Ue = s.n(ze);
+			const Fe = "url(".concat(p.a.assetPath, "/img/transparency-background.png)"),
+				He = "url(".concat(p.a.assetPath, "/img/color-track.svg)"),
+				Ye = "url(".concat(p.a.assetPath, "/img/lightness-track.svg)"),
+				qe = "url(".concat(p.a.assetPath, "/img/opacity-track.svg)"),
+				We = "url(".concat(p.a.assetPath, "/img/thickness-track.svg)"),
+				Ve = 370,
+				Xe = 360,
+				Ze = 100,
 				Ge = 100,
-				Je = 100,
-				Qe = e => e / Ke,
-				$e = e => (Ge - e) / Ge;
-			class et extends n.a.Component {
+				Ke = 100,
+				Je = e => e / Ze,
+				Qe = e => (Ge - e) / Ge;
+			class $e extends n.a.Component {
 				constructor(e) {
-					super(e), this.calculateHexColor = (e, t) => e > Ze ? Object(i.c)(e % Ze, 0, Qe(t)) : Object(i.c)(e, 1, Qe(t)), this.handleHueChange = e => {
+					super(e), this.calculateHexColor = (e, t) => e > Xe ? Object(o.c)(e % Xe, 0, Je(t)) : Object(o.c)(e, 1, Je(t)), this.handleHueChange = e => {
 						this.setState((t, s) => {
 							let {
 								hue: a,
@@ -2482,7 +2481,7 @@
 							} = t, {
 								onOpacityChange: n
 							} = s;
-							return a === e ? null : (n($e(e)), {
+							return a === e ? null : (n(Qe(e)), {
 								opacity: e
 							})
 						})
@@ -2527,19 +2526,19 @@
 							} = t;
 							const {
 								hue: r,
-								saturation: o,
+								saturation: i,
 								lightness: c
-							} = Object(i.f)(e), d = c * Ke;
+							} = Object(o.f)(e), d = c * Ze;
 							if (a === r && n === d) return null;
 							const {
 								onColorChange: l
 							} = s;
-							if (l(e), 1 === o) return {
+							if (l(e), 1 === i) return {
 								hue: r,
 								lightness: d
 							};
 							return {
-								hue: Ze + (Xe - Ze) / 2,
+								hue: Xe + (Ve - Xe) / 2,
 								lightness: d
 							}
 						})
@@ -2547,10 +2546,10 @@
 					const {
 						hue: t,
 						lightness: s
-					} = Object(i.f)(e.activeColor);
+					} = Object(o.f)(e.activeColor);
 					this.state = {
 						hue: t,
-						lightness: s * Ke,
+						lightness: s * Ze,
 						shownSettings: null,
 						opacity: 0,
 						cap: "round",
@@ -2565,10 +2564,10 @@
 					const {
 						hue: s,
 						lightness: a
-					} = Object(i.f)(this.props.pipetteColor);
+					} = Object(o.f)(this.props.pipetteColor);
 					this.setState({
 						hue: s,
-						lightness: a * Ke
+						lightness: a * Ze
 					})
 				}
 				render() {
@@ -2578,117 +2577,117 @@
 						shownSettings: s,
 						opacity: a,
 						cap: r,
-						thickness: o
+						thickness: c
 					} = this.state, {
-						activeColor: c,
-						activeTool: d,
-						isPipetteSelected: l,
-						pipetteColor: h,
-						togglePipette: p,
-						className: m
-					} = this.props, g = {
-						background: c
-					}, b = Object(i.c)(e, 1, .5), y = d === Le.Brush || d === Le.Eraser, f = {
-						background: "linear-gradient(to right, #000 0%, ".concat(b, " 50%, #FFF 100%)")
-					}, v = {
-						backgroundImage: "".concat(He, ", linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%)")
+						activeColor: d,
+						activeTool: l,
+						isPipetteSelected: u,
+						pipetteColor: p,
+						togglePipette: m,
+						className: g
+					} = this.props, b = {
+						background: d
+					}, y = Object(o.c)(e, 1, .5), f = l === Ie.Brush || l === Ie.Eraser, v = {
+						background: "linear-gradient(to right, #000 0%, ".concat(y, " 50%, #FFF 100%)")
 					}, O = {
-						backgroundImage: "".concat(Ye)
+						backgroundImage: "".concat(Fe, ", linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0) 100%)")
 					}, x = {
-						backgroundImage: "".concat(qe)
+						backgroundImage: "".concat(He)
 					}, C = {
-						backgroundImage: "".concat(We)
+						backgroundImage: "".concat(Ye)
 					}, j = {
-						backgroundImage: "".concat(Ve)
+						backgroundImage: "".concat(qe)
+					}, k = {
+						backgroundImage: "".concat(We)
 					};
 					return n.a.createElement("div", {
-						className: Object(u.a)(Fe.a.Options, {
-							[Fe.a.Hidden]: !y
-						}, m)
+						className: Object(h.a)(Ue.a.Options, {
+							[Ue.a.Hidden]: !f
+						}, g)
 					}, n.a.createElement("div", {
-						className: Fe.a.PickerMarkersContainer
+						className: Ue.a.PickerMarkersContainer
 					}, n.a.createElement("button", {
-						className: Object(u.a)(Fe.a.PickerMarker, Fe.a.OpacityPickerMarker),
+						className: Object(h.a)(Ue.a.PickerMarker, Ue.a.OpacityPickerMarker),
 						onClick: this.handleToggleBrushSettings
 					}, n.a.createElement("span", {
-						className: Fe.a.ThicknessIndicator
-					}, o)), d === Le.Brush && n.a.createElement("button", {
-						className: Object(u.a)(Fe.a.PickerMarker, Fe.a.ColorPickerMarker),
-						style: g,
+						className: Ue.a.ThicknessIndicator
+					}, c)), l === Ie.Brush && n.a.createElement("button", {
+						className: Object(h.a)(Ue.a.PickerMarker, Ue.a.ColorPickerMarker),
+						style: b,
 						onClick: this.handleToggleColorSettings
 					})), n.a.createElement("div", {
-						className: Fe.a.SettingsContainer
-					}, d === Le.Brush && n.a.createElement("div", {
-						className: Object(u.a)(Fe.a.SettingsTooltip, Fe.a.ColorSettings, {
-							[Fe.a.Hidden]: "color" !== s
+						className: Ue.a.SettingsContainer
+					}, l === Ie.Brush && n.a.createElement("div", {
+						className: Object(h.a)(Ue.a.SettingsTooltip, Ue.a.ColorSettings, {
+							[Ue.a.Hidden]: "color" !== s
 						})
 					}, n.a.createElement("div", {
-						className: Fe.a.Sliders
-					}, n.a.createElement(oe, {
+						className: Ue.a.Sliders
+					}, n.a.createElement(ie, {
 						orientation: "vertical",
-						title: B.fbt._("Brush Color", null, {
+						title: i.fbt._("Brush Color", null, {
 							hk: "jDIPZ"
 						}),
 						min: 0,
-						max: Xe,
+						max: Ve,
 						step: 1,
 						value: e,
 						onChange: this.handleHueChange,
-						className: Fe.a.CommonSlider,
-						railClassName: Fe.a.ColorPickerRail,
-						trackClassName: Fe.a.TrackIcon,
-						trackStyle: O,
+						className: Ue.a.CommonSlider,
+						railClassName: Ue.a.ColorPickerRail,
+						trackClassName: Ue.a.TrackIcon,
+						trackStyle: x,
 						disabled: !1
-					}), n.a.createElement(oe, {
+					}), n.a.createElement(ie, {
 						orientation: "vertical",
-						title: B.fbt._("Brush Lightness", null, {
+						title: i.fbt._("Brush Lightness", null, {
 							hk: "1sjlmP"
 						}),
 						min: 0,
-						max: Ke,
+						max: Ze,
 						step: 1,
 						value: t,
 						onChange: this.handleLightnessChange,
-						className: Fe.a.CommonSlider,
-						railClassName: Fe.a.LightnessRail,
-						railStyle: f,
-						trackClassName: Fe.a.TrackIcon,
-						trackStyle: x,
+						className: Ue.a.CommonSlider,
+						railClassName: Ue.a.LightnessRail,
+						railStyle: v,
+						trackClassName: Ue.a.TrackIcon,
+						trackStyle: C,
 						disabled: !1
 					})), n.a.createElement("div", {
-						className: Fe.a.SliderActions
-					}, n.a.createElement(xe, {
-						togglePipette: p,
-						selectedColor: h,
-						isPipetteSelected: l,
-						className: Fe.a.Pipette
-					}), n.a.createElement(Ie, {
+						className: Ue.a.SliderActions
+					}, n.a.createElement(Oe, {
+						togglePipette: m,
+						selectedColor: p,
+						isPipetteSelected: u,
+						className: Ue.a.Pipette
+					}), n.a.createElement(Ee, {
 						onColorSelected: this.handleChangeColor,
 						getActiveColor: this.getActiveColor
 					}))), n.a.createElement("div", {
-						className: Object(u.a)(Fe.a.SettingsTooltip, Fe.a.BrushSettings, {
-							[Fe.a.Hidden]: "brush" !== s
+						className: Object(h.a)(Ue.a.SettingsTooltip, Ue.a.BrushSettings, {
+							[Ue.a.Hidden]: "brush" !== s
 						})
 					}, n.a.createElement("div", {
-						className: Fe.a.Sliders
-					}, n.a.createElement(oe, {
+						className: Ue.a.Sliders
+					}, n.a.createElement(ie, {
 						orientation: "vertical",
-						title: B.fbt._("Brush Size", null, {
+						title: i.fbt._("Brush Size", null, {
 							hk: "34ebtB"
 						}),
 						min: 1,
-						max: Je,
+						max: Ke,
 						step: 1,
-						value: o,
+						value: c,
 						onChange: this.handleThicknessChange,
-						className: Fe.a.CommonSlider,
-						railClassName: Fe.a.ThicknessRail,
-						trackClassName: Fe.a.TrackIcon,
-						trackStyle: j,
+						className: Ue.a.CommonSlider,
+						railClassName: Ue.a.ThicknessRail,
+						trackClassName: Ue.a.TrackIcon,
+						trackStyle: k,
 						disabled: !1
-					}), n.a.createElement(oe, {
+					}), n.a.createElement(ie, {
 						orientation: "vertical",
-						title: B.fbt._("Brush Opacity", null, {
+						title: i.fbt._("Brush Opacity", null, {
 							hk: "3kyKc"
 						}),
 						min: 0,
@@ -2696,72 +2695,72 @@
 						step: 1,
 						value: a,
 						onChange: this.handleOpacityChange,
-						className: Fe.a.CommonSlider,
-						railClassName: Fe.a.OpacityRail,
-						railStyle: v,
-						trackClassName: Fe.a.TrackIcon,
-						trackStyle: C,
+						className: Ue.a.CommonSlider,
+						railClassName: Ue.a.OpacityRail,
+						railStyle: O,
+						trackClassName: Ue.a.TrackIcon,
+						trackStyle: j,
 						disabled: !1
 					})), n.a.createElement("div", {
-						className: Fe.a.SliderActions
+						className: Ue.a.SliderActions
 					}, n.a.createElement("div", {
-						className: Fe.a.ShapeActions
+						className: Ue.a.ShapeActions
 					}, n.a.createElement("button", {
-						className: Object(u.a)(Fe.a.ShapePicker, {
-							[Fe.a.ActiveShape]: "butt" === r
+						className: Object(h.a)(Ue.a.ShapePicker, {
+							[Ue.a.ActiveShape]: "butt" === r
 						}),
 						onClick: this.handleButtCapSelected
 					}), n.a.createElement("button", {
-						className: Object(u.a)(Fe.a.ShapePicker, Fe.a.RoundShapePicker, {
-							[Fe.a.ActiveShape]: "round" === r
+						className: Object(h.a)(Ue.a.ShapePicker, Ue.a.RoundShapePicker, {
+							[Ue.a.ActiveShape]: "round" === r
 						}),
 						onClick: this.handleRoundCapSelected
 					}))))))
 				}
 			}
-			var tt = s("./src/reddit/components/ImageEditor/PaintBar/index.m.less"),
-				st = s.n(tt);
-			const at = "url(".concat(h.a.assetPath, "/img/meter-overlay.png)"),
-				nt = "url(".concat(h.a.assetPath, "/img/meter-overlay-matt.png)");
-			var rt = e => {
+			var et = s("./src/reddit/components/ImageEditor/PaintBar/index.m.less"),
+				tt = s.n(et);
+			const st = "url(".concat(p.a.assetPath, "/img/meter-overlay.png)"),
+				at = "url(".concat(p.a.assetPath, "/img/meter-overlay-matt.png)");
+			var nt = e => {
 					const t = e.color || "#000000",
 						s = Math.max(Math.min(1, e.value), 0),
 						a = 100 * parseFloat(s.toFixed(3)),
 						r = a <= 9.2;
 					return n.a.createElement("div", {
-						className: st.a.PaintBarWrapper
+						className: tt.a.PaintBarWrapper
 					}, e.isPaintExceeded ? n.a.createElement(k.a, {
-						className: st.a.PaintLimitErrorText
-					}, B.fbt._("COVERAGE LIMIT EXCEEDED!", null, {
+						className: tt.a.PaintLimitErrorText
+					}, i.fbt._("COVERAGE LIMIT EXCEEDED!", null, {
 						hk: "2rMZja"
 					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-						className: st.a.PaintBar,
+						className: tt.a.PaintBar,
 						style: {
 							width: a + "%",
 							backgroundColor: t
 						}
 					}), n.a.createElement("div", {
-						className: st.a.BackgroundImage,
+						className: tt.a.BackgroundImage,
 						style: {
 							width: a + "%",
-							backgroundImage: at,
+							backgroundImage: st,
 							display: r ? "none" : "block"
 						}
 					}), n.a.createElement("div", {
-						className: Object(u.a)(st.a.BackgroundImage, st.a.BackgroundMatt),
+						className: Object(h.a)(tt.a.BackgroundImage, tt.a.BackgroundMatt),
 						style: {
 							width: a + "%",
-							backgroundImage: nt,
+							backgroundImage: at,
 							display: r ? "block" : "none"
 						}
 					})))
 				},
-				it = s("./src/reddit/components/ImageEditor/ResizeTool/index.m.less"),
-				ot = s.n(it);
-			const ct = 8,
-				dt = ct / 2,
-				lt = 2;
-			class ut extends n.a.Component {
+				rt = s("./src/reddit/components/ImageEditor/ResizeTool/index.m.less"),
+				it = s.n(rt);
+			const ot = 8,
+				ct = ot / 2,
+				dt = 2;
+			class lt extends n.a.Component {
 				constructor(e) {
 					super(e), this.anchorX = 0, this.anchorY = 0, this.getMousePosition = e => {
 						const t = this.props.canvas.getBoundingClientRect();
@@ -2791,18 +2790,18 @@
 				}
 				render() {
 					return n.a.createElement("div", {
-						className: ot.a.Box,
+						className: it.a.Box,
 						style: Object.assign({
-							width: ct,
-							height: ct
+							width: ot,
+							height: ot
 						}, this.props.style),
 						onMouseDown: this.handleMouseDown
 					})
 				}
 			}
-			class ht extends n.a.Component {
+			class ut extends n.a.Component {
 				constructor() {
-					super(...arguments), this.boxShift = 0 - dt - lt, this.topLeft = {
+					super(...arguments), this.boxShift = 0 - ct - dt, this.topLeft = {
 						top: this.boxShift,
 						left: this.boxShift,
 						cursor: "nwse-resize"
@@ -2941,53 +2940,53 @@
 						height: a
 					} = this.props.layer;
 					return n.a.createElement("div", {
-						className: ot.a.ResizeTool,
+						className: it.a.ResizeTool,
 						style: {
-							top: t - lt,
-							left: e - lt,
+							top: t - dt,
+							left: e - dt,
 							width: s,
 							height: a
 						}
-					}, n.a.createElement(ut, {
+					}, n.a.createElement(lt, {
 						style: this.topLeft,
 						onChange: this.topLeftHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.topMid,
 						onChange: this.topMidHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.topRight,
 						onChange: this.topRightHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.midRight,
 						onChange: this.midRightHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.bottomRight,
 						onChange: this.bottomRightHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.bottomMid,
 						onChange: this.bottomMidHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.bottomLeft,
 						onChange: this.bottomLeftHandler,
 						canvas: this.props.canvas
-					}), n.a.createElement(ut, {
+					}), n.a.createElement(lt, {
 						style: this.midLeft,
 						onChange: this.midLeftHandler,
 						canvas: this.props.canvas
 					}))
 				}
 			}
-			var pt = ht,
-				mt = s("./src/reddit/icons/svgs/Close/index.tsx");
+			var ht = ut,
+				pt = s("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function gt() {
-				return (gt = Object.assign || function(e) {
+			function mt() {
+				return (mt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -2995,7 +2994,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var bt = e => n.a.createElement("svg", gt({
+			var gt = e => n.a.createElement("svg", mt({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 12.39 12.39"
 			}, e), n.a.createElement("g", {
@@ -3005,8 +3004,8 @@
 				transform: "translate(0 -0.005)"
 			})));
 
-			function yt() {
-				return (yt = Object.assign || function(e) {
+			function bt() {
+				return (bt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -3014,7 +3013,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var ft = e => n.a.createElement("svg", yt({
+			var yt = e => n.a.createElement("svg", bt({
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 12.39 12.39"
 				}, e), n.a.createElement("g", {
@@ -3023,18 +3022,18 @@
 					d: "M11.895,3.8A6.118,6.118,0,0,0,8.6.5,6.111,6.111,0,0,0,3.9.452,6.26,6.26,0,0,0,1.928,1.715L.879.674A.459.459,0,0,0,.323.561.482.482,0,0,0,0,1.037V4.65a.5.5,0,0,0,.153.363.5.5,0,0,0,.363.153H4.129A.482.482,0,0,0,4.6,4.843a.459.459,0,0,0-.113-.556l-1.1-1.113a4.008,4.008,0,0,1,1.29-.819,4.1,4.1,0,0,1,1.516-.286,4.024,4.024,0,0,1,1.6.327A4.09,4.09,0,0,1,10,4.6a4.087,4.087,0,0,1,0,3.2,4.09,4.09,0,0,1-2.2,2.2,4.023,4.023,0,0,1-1.6.327,4.086,4.086,0,0,1-3.258-1.6.251.251,0,0,0-.185-.1.29.29,0,0,0-.2.072l-1.1,1.113a.239.239,0,0,0-.069.165.288.288,0,0,0,.052.182,6.053,6.053,0,0,0,2.129,1.649,6.151,6.151,0,0,0,2.637.585A6.026,6.026,0,0,0,8.6,11.9a6.119,6.119,0,0,0,3.3-3.3,6.117,6.117,0,0,0,0-4.806Z",
 					transform: "translate(0 -0.005)"
 				}))),
-				vt = s("./src/reddit/components/ImageEditor/index.m.less"),
-				Ot = s.n(vt);
-			const xt = "url(".concat(h.a.assetPath, "/img/transparency-background.png)"),
-				Ct = 10,
-				jt = .8,
-				kt = 4,
-				wt = 100,
+				ft = s("./src/reddit/components/ImageEditor/index.m.less"),
+				vt = s.n(ft);
+			const Ot = "url(".concat(p.a.assetPath, "/img/transparency-background.png)"),
+				xt = 10,
+				Ct = .8,
+				jt = 4,
+				kt = 100,
 				_t = .7,
-				Et = "background",
-				It = 1,
-				Lt = -1,
-				St = Object(l.c)({
+				wt = "background",
+				Et = 1,
+				It = -1,
+				Lt = Object(u.c)({
 					background: N.d,
 					draft: N.b,
 					mediaBody: A.K,
@@ -3042,7 +3041,7 @@
 					title: A.eb,
 					startTime: N.c
 				}),
-				Pt = Object(d.b)(St, e => ({
+				St = Object(l.b)(Lt, e => ({
 					saveLayerDraft: t => e(m.k(t)),
 					uploadMedia: t => e(b.c(t, T.m)),
 					onTitleChange: t => e(g.i(t)),
@@ -3054,19 +3053,23 @@
 					})),
 					submitLayerOnWS: t => e(m.l(t))
 				})),
-				Tt = e => n.a.createElement("div", {
-					className: Ot.a.LayerMakerHeader
+				Pt = e => n.a.createElement("div", {
+					className: vt.a.LayerMakerHeader
 				}, n.a.createElement("div", {
-					className: Ot.a.LayerMakerTitle
-				}, Object(p.c)("Layer Maker")), n.a.createElement("div", {
-					className: Ot.a.LayerMakerCloseButton,
+					className: vt.a.LayerMakerTitle
+				}, i.fbt._("Layer Maker", null, {
+					hk: "2mraho"
+				})), n.a.createElement("div", {
+					className: vt.a.LayerMakerCloseButton,
 					onClick: e.onClose
-				}, n.a.createElement(mt.a, {
-					className: Ot.a.LayerMakerCloseIcon
+				}, n.a.createElement(pt.a, {
+					className: vt.a.LayerMakerCloseIcon
 				}), n.a.createElement("span", {
-					className: Ot.a.LayerMakerCloseTitle
-				}, Object(p.c)("Close")))),
-				Mt = e => {
+					className: vt.a.LayerMakerCloseTitle
+				}, i.fbt._("Close", null, {
+					hk: "3xmw0M"
+				})))),
+				Tt = e => {
 					if (e.nativeEvent.targetTouches) {
 						const t = e.nativeEvent.target.getBoundingClientRect();
 						return {
@@ -3079,22 +3082,22 @@
 						y: e.nativeEvent.offsetY
 					}
 				};
-			class Nt extends n.a.Component {
+			class Mt extends n.a.Component {
 				constructor(e) {
 					super(e), this.anchorX = -1, this.anchorY = -1, this.cachedFontSize = 20, this.cursorX = -1, this.cursorY = -1, this.isCursorDown = !1, this.lastCursorX = -1, this.lastCursorY = -1, this.layersCanvas = document.createElement("canvas"), this.scaledCanvas = document.createElement("canvas"), this.setPipetteColorFromPosition = (e, t) => {
 						if (!this.ctx) return;
-						const [s, a, n] = this.ctx.getImageData(e, t, 1, 1).data, r = Object(i.i)(s, a, n);
+						const [s, a, n] = this.ctx.getImageData(e, t, 1, 1).data, r = Object(o.i)(s, a, n);
 						this.setState({
 							pipetteColor: r,
 							isPipetteSelected: !1
 						}), this.changeBrushColor(r)
 					}, this.handleCanvasRef = e => {
 						if (!e) return;
-						const t = c.a.findDOMNode(e);
+						const t = d.a.findDOMNode(e);
 						t && (this.canvas = t, this.ctx = t.getContext("2d"))
 					}, this.handlePointerCanvasRef = e => {
 						if (!e) return;
-						const t = c.a.findDOMNode(e);
+						const t = d.a.findDOMNode(e);
 						t && (this.pointerCtx = t.getContext("2d"))
 					}, this.drawPointer = () => {
 						if (!this.pointerCtx) return;
@@ -3107,13 +3110,13 @@
 							backgroundLayer: a,
 							isPipetteSelected: n,
 							paintRemaining: r
-						} = this.state, i = t === Lt ? a : this.state.layers[t];
+						} = this.state, i = t === It ? a : this.state.layers[t];
 						if (i && i.isDisabled) return;
-						if (s === Le.Brush && (r <= 0 || t === Lt)) return;
+						if (s === Ie.Brush && (r <= 0 || t === It)) return;
 						const o = this.state.prevActions.slice(),
 							c = this.copyLayer(i, !0);
 						if (c && (o.push({
-								type: _.UpdateLayer,
+								type: w.UpdateLayer,
 								layer: c,
 								index: t
 							}), this.setState({
@@ -3123,7 +3126,7 @@
 							const {
 								x: t,
 								y: s
-							} = Mt(e);
+							} = Tt(e);
 							this.setPipetteColorFromPosition(t, s)
 						} else this.setCursorPositionFromEvent(e), this.updateLastCursorPosition(), this.setAnchorFromEvent(e), this.isCursorDown = !0, this.paintCurrentLayer(), this.setState({
 							isDrawing: !0
@@ -3133,7 +3136,7 @@
 							activeLayerIndex: t,
 							backgroundLayer: s
 						} = this.state;
-						(t === Lt ? s : this.state.layers[t]).isDisabled || (this.setCursorPositionFromEvent(e), this.commitMoveToCurrentLayer(), this.isCursorDown = !1, this.setState({
+						(t === It ? s : this.state.layers[t]).isDisabled || (this.setCursorPositionFromEvent(e), this.commitMoveToCurrentLayer(), this.isCursorDown = !1, this.setState({
 							isDrawing: !1
 						}))
 					}, this.handleMouseMove = e => {
@@ -3142,13 +3145,13 @@
 							activeTool: s,
 							backgroundLayer: a
 						} = this.state;
-						(t === Lt ? a : this.state.layers[t]).isDisabled || s === Le.Brush && t === Lt || (this.updateLastCursorPosition(), this.setCursorPositionFromEvent(e), this.drawPointer(), this.paintCurrentLayer())
+						(t === It ? a : this.state.layers[t]).isDisabled || s === Ie.Brush && t === It || (this.updateLastCursorPosition(), this.setCursorPositionFromEvent(e), this.drawPointer(), this.paintCurrentLayer())
 					}, this.handleMouseLeave = e => {
 						const {
 							activeLayerIndex: t,
 							backgroundLayer: s
 						} = this.state;
-						(t === Lt ? s : this.state.layers[t]).isDisabled || (this.setCursorPositionFromEvent(e), this.commitMoveToCurrentLayer(), this.isCursorDown = !1, this.setState({
+						(t === It ? s : this.state.layers[t]).isDisabled || (this.setCursorPositionFromEvent(e), this.commitMoveToCurrentLayer(), this.isCursorDown = !1, this.setState({
 							isDrawing: !1
 						}), this.pointerCtx && this.pointerCtx.clearRect(0, 0, this.pointerCtx.canvas.width, this.pointerCtx.canvas.height))
 					}, this.setToolType = e => {
@@ -3158,7 +3161,9 @@
 							pipetteColor: null
 						})
 					}, this.handleClose = () => {
-						confirm(Object(p.c)("Unsaved changes will be lost. Are you sure?")) && (this.props.toggleModal(), this.props.sendEvent(S.a))
+						confirm(i.fbt._("Unsaved changes will be lost. Are you sure?", null, {
+							hk: "3C1tJD"
+						})) && (this.props.toggleModal(), this.props.sendEvent(S.a))
 					}, this.togglePipette = () => {
 						this.setState(e => {
 							let {
@@ -3198,18 +3203,18 @@
 						}), this.props.toggleModal()
 					}, this.drawLayer = (e, t, s) => {
 						switch (e.globalAlpha = t.opacity, e.globalCompositeOperation = t.blendMode, t.type) {
-							case w.Color:
+							case _.Color:
 								e.fillStyle = t.color, e.fillRect(0, 0, e.canvas.width, e.canvas.height);
 								break;
-							case w.Art:
-							case w.Text:
-							case w.Image: {
+							case _.Art:
+							case _.Text:
+							case _.Image: {
 								let {
 									positionX: a,
 									positionY: n
 								} = t;
-								if (s && this.isCursorDown && (t.type !== w.Art || this.state.activeTool === Le.Mover) && (a += this.cursorX - this.anchorX, n += this.cursorY - this.anchorY), t.type === w.Image) e.drawImage(t.image, a, n, t.width, t.height);
-								else if (t.type === w.Art) e.drawImage(t.canvas, a, n);
+								if (s && this.isCursorDown && (t.type !== _.Art || this.state.activeTool === Ie.Mover) && (a += this.cursorX - this.anchorX, n += this.cursorY - this.anchorY), t.type === _.Image) e.drawImage(t.image, a, n, t.width, t.height);
+								else if (t.type === _.Art) e.drawImage(t.canvas, a, n);
 								else {
 									e.font = "".concat(t.fontSize, "px Impact"), e.textAlign = "center", e.textBaseline = "top", e.fillStyle = t.color;
 									for (let s = 0; s < t.text.length; s++) {
@@ -3228,11 +3233,11 @@
 							height: s
 						} = this.props, a = e.getImageData(0, 0, t, s).data;
 						let n = 0;
-						for (let i = 0; i < a.length; i += kt) {
+						for (let i = 0; i < a.length; i += jt) {
 							const e = a[i + 3];
 							e > 0 && (n += e / 255)
 						}
-						const r = 1 - n / (Math.pow(wt, 2) * jt);
+						const r = 1 - n / (Math.pow(kt, 2) * Ct);
 						this.setState({
 							paintRemaining: r
 						})
@@ -3241,10 +3246,10 @@
 						e && this.addNewLayer(e)
 					}, this.handleLayerResize = (e, t) => {
 						this.setState(s => {
-							const a = s.activeLayerIndex === Lt ? s.backgroundLayer : s.layers[s.activeLayerIndex];
-							if (a.type !== w.Image) return s;
-							const n = e.width > It ? e.width : It,
-								r = e.height > It ? e.height : It,
+							const a = s.activeLayerIndex === It ? s.backgroundLayer : s.layers[s.activeLayerIndex];
+							if (a.type !== _.Image) return s;
+							const n = e.width > Et ? e.width : Et,
+								r = e.height > Et ? e.height : Et,
 								i = a.positionX + a.width,
 								o = e.positionX + n,
 								c = a.positionX === e.positionX,
@@ -3259,7 +3264,7 @@
 									width: n,
 									height: r
 								});
-							return t === Lt ? Object.assign({}, s, {
+							return t === It ? Object.assign({}, s, {
 								backgroundLayer: m
 							}) : s
 						})
@@ -3269,7 +3274,7 @@
 						let a = e.width,
 							n = e.height;
 						a > n && a > t ? (n *= t / a, a = t) : n > s && (a *= s / n, n = s);
-						const r = P(Et, e, a, n);
+						const r = P(wt, e, a, n);
 						r.opacity = this.state.backgroundLayer.opacity, this.setState({
 							backgroundLayer: r
 						})
@@ -3286,7 +3291,7 @@
 						const a = this.state.layers[this.state.activeLayerIndex],
 							n = this.state.prevActions.slice();
 						n.push({
-							type: _.SortLayers,
+							type: w.SortLayers,
 							layers: this.state.layers
 						});
 						const r = s.indexOf(a);
@@ -3297,7 +3302,7 @@
 							nextActions: []
 						})
 					}, this.setActiveIndex = (e, t) => {
-						const s = t === Lt ? Le.Mover : this.state.activeTool;
+						const s = t === It ? Ie.Mover : this.state.activeTool;
 						this.setState({
 							activeLayerIndex: t,
 							activeTool: s
@@ -3328,7 +3333,7 @@
 						const {
 							backgroundLayer: s
 						} = this.state;
-						s.type !== w.Image || e.type !== w.Image || s.image.src === e.image.src ? this.setState({
+						s.type !== _.Image || e.type !== _.Image || s.image.src === e.image.src ? this.setState({
 							backgroundLayer: e
 						}) : this.updateBackgroundImage(e.image)
 					}, this.handleDuplicate = e => {
@@ -3339,7 +3344,7 @@
 					}, this.handleLayerChange = (e, t) => {
 						const s = this.state.layers.slice();
 						if (s[t].isDisabled && (e && e.isDisabled || !e)) return;
-						e && e.type === w.Text && (this.cachedFontSize = e.fontSize);
+						e && e.type === _.Text && (this.cachedFontSize = e.fontSize);
 						let a = null,
 							n = null;
 						const r = this.state.prevActions.slice();
@@ -3347,10 +3352,10 @@
 							activeLayerIndex: i
 						} = this.state;
 						if (null != e) {
-							s[t].opacity !== e.opacity || (a = this.copyLayer(s[t], !0), n = _.UpdateLayer), s[t] = e
+							s[t].opacity !== e.opacity || (a = this.copyLayer(s[t], !0), n = w.UpdateLayer), s[t] = e
 						} else {
 							const e = s.splice(t, 1)[0];
-							a = this.copyLayer(e, !0), n = _.DeleteLayer, this.props.sendEvent(S.e), i >= t && (i -= 1)
+							a = this.copyLayer(e, !0), n = w.DeleteLayer, this.props.sendEvent(S.e), i >= t && (i -= 1)
 						}
 						a && n && r.push({
 							type: n,
@@ -3366,7 +3371,7 @@
 						const t = this.state.prevActions.slice(),
 							s = this.copyLayer(this.state.layers[e], !0);
 						s && t.push({
-							type: _.UpdateLayer,
+							type: w.UpdateLayer,
 							layer: s,
 							index: e
 						}), this.setState({
@@ -3382,11 +3387,11 @@
 					}), s = this.copyLayer(e.draft.backgroundLayer, !0);
 					else {
 						const a = this.getNewArtLayer(e, t);
-						a && t.push(a), e.background && (s = P(Et, e.background, e.width, e.height))
+						a && t.push(a), e.background && (s = P(wt, e.background, e.width, e.height))
 					}
 					var a;
-					s || (a = Et, s = {
-						type: w.Color,
+					s || (a = wt, s = {
+						type: _.Color,
 						name: a,
 						isVisible: !0,
 						opacity: 1,
@@ -3401,7 +3406,7 @@
 						brushCap: "round",
 						brushOpacity: 1,
 						brushSize: 8,
-						activeTool: Le.Brush,
+						activeTool: Ie.Brush,
 						activeFrameIndex: 0,
 						frames: [],
 						prevActions: [],
@@ -3419,12 +3424,14 @@
 				}
 				getNewArtLayer(e, t) {
 					const s = document.createElement("canvas"),
-						a = Object(p.c)("Art Layer ".concat(Object(p.b)("#", t.length + 1)));
+						a = i.fbt._("Art Layer {layer number}", [i.fbt._param("layer number", (t.length + 1).toLocaleString())], {
+							hk: "1ZO9Ar"
+						});
 					return s && (s.width = e.width, s.height = e.height),
 						function(e, t) {
 							const s = t.getContext("2d");
 							return {
-								type: w.Art,
+								type: _.Art,
 								name: e,
 								isVisible: !0,
 								opacity: 1,
@@ -3444,14 +3451,14 @@
 					const {
 						x: t,
 						y: s
-					} = Mt(e);
+					} = Tt(e);
 					this.cursorX = t, this.cursorY = s
 				}
 				setAnchorFromEvent(e) {
 					const {
 						x: t,
 						y: s
-					} = Mt(e);
+					} = Tt(e);
 					this.anchorX = t, this.anchorY = s
 				}
 				componentDidMount() {
@@ -3459,17 +3466,17 @@
 						width: e,
 						height: t
 					} = this.props;
-					this.rafToken = requestAnimationFrame(this.drawComposite), this.layersCanvas.width = e, this.layersCanvas.height = t, this.layersCtx = this.layersCanvas.getContext("2d"), this.scaledCanvas.width = wt, this.scaledCanvas.height = wt, this.scaledCtx = this.scaledCanvas.getContext("2d")
+					this.rafToken = requestAnimationFrame(this.drawComposite), this.layersCanvas.width = e, this.layersCanvas.height = t, this.layersCtx = this.layersCanvas.getContext("2d"), this.scaledCanvas.width = kt, this.scaledCanvas.height = kt, this.scaledCtx = this.scaledCanvas.getContext("2d")
 				}
 				componentWillUnmount() {
 					this.rafToken && cancelAnimationFrame(this.rafToken)
 				}
 				paintCurrentLayer() {
-					if (!this.isCursorDown || this.state.activeTool === Le.Mover) return;
-					if (this.state.paintRemaining <= 0 && this.state.activeTool === Le.Brush) return;
+					if (!this.isCursorDown || this.state.activeTool === Ie.Mover) return;
+					if (this.state.paintRemaining <= 0 && this.state.activeTool === Ie.Brush) return;
 					const e = this.state.layers[this.state.activeLayerIndex];
-					if (e && e.isVisible && e.type === w.Art && e.ctx) {
-						e.ctx.strokeStyle = this.state.color, e.ctx.globalAlpha = this.state.brushOpacity, this.state.activeTool === Le.Eraser ? e.ctx.globalCompositeOperation = E.DestinationOut : e.ctx.globalCompositeOperation = E.SourceOver;
+					if (e && e.isVisible && e.type === _.Art && e.ctx) {
+						e.ctx.strokeStyle = this.state.color, e.ctx.globalAlpha = this.state.brushOpacity, this.state.activeTool === Ie.Eraser ? e.ctx.globalCompositeOperation = E.DestinationOut : e.ctx.globalCompositeOperation = E.SourceOver;
 						const {
 							brushSize: t,
 							brushCap: s
@@ -3486,11 +3493,11 @@
 						activeTool: e,
 						activeLayerIndex: t,
 						backgroundLayer: s
-					} = this.state, a = t === Lt, n = a ? s : this.state.layers[t];
+					} = this.state, a = t === It, n = a ? s : this.state.layers[t];
 					if (!n || !n.isVisible) return;
 					const r = this.cursorX - this.anchorX,
 						i = this.cursorY - this.anchorY;
-					if (n.type === w.Image || n.type === w.Text) {
+					if (n.type === _.Image || n.type === _.Text) {
 						const e = Object.assign({}, n, {
 							positionX: n.positionX + r,
 							positionY: n.positionY + i
@@ -3504,7 +3511,7 @@
 								layers: s
 							})
 						}
-					} else if (n.type === w.Art && e === Le.Mover) {
+					} else if (n.type === _.Art && e === Ie.Mover) {
 						const e = this.duplicateArtLayer(n, r, i, n.name);
 						if (e) {
 							const s = this.state.layers.slice();
@@ -3520,20 +3527,20 @@
 						width: t,
 						height: s
 					} = this.props;
-					this.ctx.clearRect(0, 0, t, s), this.state.backgroundLayer.isVisible && this.drawLayer(this.ctx, this.state.backgroundLayer, e.activeLayerIndex === Lt);
+					this.ctx.clearRect(0, 0, t, s), this.state.backgroundLayer.isVisible && this.drawLayer(this.ctx, this.state.backgroundLayer, e.activeLayerIndex === It);
 					for (let a = e.layers.length - 1; a >= 0; a--) {
 						const t = e.layers[a];
 						t.isVisible && this.drawLayer(this.ctx, t, e.activeLayerIndex === a)
 					}
 					this.layersCtx.clearRect(0, 0, t, s);
 					for (let a = e.layers.length - 1; a >= 0; a--) this.drawLayer(this.layersCtx, e.layers[a], e.activeLayerIndex === a);
-					this.scaledCtx.clearRect(0, 0, wt, wt), this.scaledCtx.drawImage(this.layersCanvas, 0, 0, wt, wt), this.calculatePaintRemaining(this.scaledCtx)
+					this.scaledCtx.clearRect(0, 0, kt, kt), this.scaledCtx.drawImage(this.layersCanvas, 0, 0, kt, kt), this.calculatePaintRemaining(this.scaledCtx)
 				}
 				addNewLayer(e) {
 					const t = this.state.prevActions.slice(),
 						s = this.copyLayer(e, !0);
 					s && t.push({
-						type: _.CreateLayer,
+						type: w.CreateLayer,
 						layer: s,
 						index: 0
 					}), this.setState({
@@ -3544,8 +3551,10 @@
 					})
 				}
 				copyLayer(e) {
-					const t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1] ? e.name : Object(p.c)("".concat(Object(p.b)("layerName", e.name), " duplicate"));
-					return e.type === w.Art ? this.duplicateArtLayer(e, 0, 0, t) : Object.assign({}, e, {
+					const t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1] ? e.name : i.fbt._("{layerName} duplicate", [i.fbt._param("layerName", e.name)], {
+						hk: "1UIUEe"
+					});
+					return e.type === _.Art ? this.duplicateArtLayer(e, 0, 0, t) : Object.assign({}, e, {
 						name: t
 					})
 				}
@@ -3566,12 +3575,12 @@
 							backgroundLayer: s,
 							brushCap: a,
 							color: r,
-							layers: i,
-							prevActions: o,
-							nextActions: c,
-							paintRemaining: d,
-							isPipetteSelected: l,
-							pipetteColor: h,
+							layers: o,
+							prevActions: c,
+							nextActions: d,
+							paintRemaining: l,
+							isPipetteSelected: u,
+							pipetteColor: p,
 							isDrawing: m
 						},
 						props: {
@@ -3579,55 +3588,59 @@
 							height: b,
 							mediaBody: y,
 							onTitleChange: f,
-							isPostSubmitPending: _,
+							isPostSubmitPending: w,
 							title: E
 						}
-					} = this, I = !!y && y.status === M.a.PENDING, L = _ || I, S = !!y && !!y.url, P = d < 0 || L || S && !E, T = L ? n.a.createElement(j.a, {
+					} = this, I = !!y && y.status === M.a.PENDING, L = w || I, S = !!y && !!y.url, P = l < 0 || L || S && !E, T = L ? n.a.createElement(j.a, {
 						center: !0,
 						sizePx: 15
-					}) : S ? Object(p.c)("Submit") : Object(p.c)("Save"), N = Object(u.a)(Ot.a.LayerMakerUndoIcon, {
-						[Ot.a.LayerMakerUndoIconActive]: !!o.length
-					}), A = Object(u.a)(Ot.a.LayerMakerUndoIcon, {
-						[Ot.a.LayerMakerUndoIconActive]: !!c.length
-					}), D = e === Lt ? s : i[e];
+					}) : S ? i.fbt._("Submit", null, {
+						hk: "4GbwY2"
+					}) : i.fbt._("Save", null, {
+						hk: "1Ahk72"
+					}), N = Object(h.a)(vt.a.LayerMakerUndoIcon, {
+						[vt.a.LayerMakerUndoIconActive]: !!c.length
+					}), A = Object(h.a)(vt.a.LayerMakerUndoIcon, {
+						[vt.a.LayerMakerUndoIconActive]: !!d.length
+					}), D = e === It ? s : o[e];
 					return n.a.createElement("div", {
-						className: Ot.a.LayerMaker
-					}, n.a.createElement(Tt, {
+						className: vt.a.LayerMaker
+					}, n.a.createElement(Pt, {
 						onClose: this.handleClose
 					}), n.a.createElement("div", {
-						className: Ot.a.LayerMakerPaintBar
+						className: vt.a.LayerMakerPaintBar
 					}, n.a.createElement("div", {
-						className: Ot.a.LayerMakerUndoBar
-					}, n.a.createElement(ft, {
+						className: vt.a.LayerMakerUndoBar
+					}, n.a.createElement(yt, {
 						onClick: this.handleUndo,
 						className: N
-					}), n.a.createElement(bt, {
+					}), n.a.createElement(gt, {
 						onClick: this.handleRedo,
 						className: A
-					})), n.a.createElement(rt, {
-						isPaintExceeded: d < 0,
+					})), n.a.createElement(nt, {
+						isPaintExceeded: l < 0,
 						color: r,
-						value: d
+						value: l
 					})), n.a.createElement("div", {
-						className: Ot.a.LayerMakerBody
-					}, n.a.createElement(ze, {
+						className: vt.a.LayerMakerBody
+					}, n.a.createElement(Be, {
 						activeTool: t,
 						setToolType: this.setToolType,
 						activeShape: a,
 						activeColor: r,
-						enableEditTools: e !== Lt
+						enableEditTools: e !== It
 					}), n.a.createElement(x.a, {
-						className: Ot.a.LayerMakerFileDrop,
+						className: vt.a.LayerMakerFileDrop,
 						render: (s, a) => n.a.createElement("div", {
-							className: Ot.a.LayerMakerCanvasWrapper
+							className: vt.a.LayerMakerCanvasWrapper
 						}, n.a.createElement("canvas", {
-							className: Ot.a.LayerMakerCanvas,
+							className: vt.a.LayerMakerCanvas,
 							width: g,
 							height: b,
 							style: {
 								width: g,
 								height: b,
-								backgroundImage: xt
+								backgroundImage: Ot
 							},
 							ref: this.handleCanvasRef,
 							onTouchStart: this.handleMouseDown,
@@ -3639,7 +3652,7 @@
 							onMouseUp: this.handleMouseUp,
 							onMouseLeave: this.handleMouseLeave
 						}), n.a.createElement("canvas", {
-							className: Ot.a.PointerCanvas,
+							className: vt.a.PointerCanvas,
 							width: g,
 							height: b,
 							style: {
@@ -3647,20 +3660,20 @@
 								height: b
 							},
 							ref: this.handlePointerCanvasRef
-						}), n.a.createElement(et, {
+						}), n.a.createElement($e, {
 							activeColor: r,
 							activeTool: t,
 							onColorChange: this.changeBrushColor,
 							onOpacityChange: this.handleOpacityChange,
 							onThicknessChange: this.handleSizeChange,
 							onCapChange: this.changeBrushCap,
-							isPipetteSelected: l,
+							isPipetteSelected: u,
 							togglePipette: this.togglePipette,
-							pipetteColor: h,
-							className: Object(u.a)(Ot.a.Options, {
-								[Ot.a.OptionsWhileDrawing]: m
+							pipetteColor: p,
+							className: Object(h.a)(vt.a.Options, {
+								[vt.a.OptionsWhileDrawing]: m
 							})
-						}), D.type === w.Image && D.image.src && !this.isCursorDown && this.canvas && n.a.createElement(pt, {
+						}), D.type === _.Image && D.image.src && !this.isCursorDown && this.canvas && n.a.createElement(ht, {
 							layer: D,
 							layerIndex: e,
 							canvas: this.canvas,
@@ -3668,12 +3681,12 @@
 						})),
 						onDrop: this.handleCanvasDrop
 					}), n.a.createElement("div", {
-						className: Ot.a.SidebarMenu
+						className: vt.a.SidebarMenu
 					}, n.a.createElement("div", {
-						className: Ot.a.LayersWrapper
-					}, n.a.createElement(ye, {
+						className: vt.a.LayersWrapper
+					}, n.a.createElement(be, {
 						backgroundLayer: s,
-						layers: i,
+						layers: o,
 						activeLayerIndex: e,
 						handleLayerChange: this.handleLayerChange,
 						handleLayerOpacityChange: this.handleLayerOpacityChange,
@@ -3683,37 +3696,43 @@
 						setActiveIndex: this.setActiveIndex,
 						handleAdd: this.addArtLayer
 					})), n.a.createElement(O.i, {
-						className: Ot.a.SaveButton,
+						className: vt.a.SaveButton,
 						onClick: this.handleSaveDraft
-					}, Object(p.c)("Save Draft")), S && n.a.createElement(n.a.Fragment, null, n.a.createElement(k.c, {
-						className: Ot.a.titleInputLabel
-					}, Object(p.c)("Name this masterpiece")), n.a.createElement(C.a, {
-						className: Ot.a.titleInput,
+					}, i.fbt._("Save Draft", null, {
+						hk: "2tPItk"
+					})), S && n.a.createElement(n.a.Fragment, null, n.a.createElement(k.c, {
+						className: vt.a.titleInputLabel
+					}, i.fbt._("Name this masterpiece", null, {
+						hk: "26F83f"
+					})), n.a.createElement(C.a, {
+						className: vt.a.titleInput,
 						maxLength: v.f,
 						onValueChange: f,
-						placeholder: "Lona Misa",
+						placeholder: i.fbt._("Lona Misa", null, {
+							hk: "Dd4G4"
+						}),
 						readOnly: L,
 						value: E
 					})), n.a.createElement(O.f, {
-						className: Ot.a.SaveButton,
+						className: vt.a.SaveButton,
 						onClick: S ? this.handleSubmit : this.handleSave,
 						disabled: P
 					}, T))))
 				}
 			}
-			var At = Pt(Object(f.c)(Nt));
-			const Dt = 500,
-				Rt = 500;
-			class Bt extends n.a.Component {
+			var Nt = St(Object(f.c)(Mt));
+			const At = 500,
+				Dt = 500;
+			class Rt extends n.a.Component {
 				render() {
-					return n.a.createElement(At, {
-						height: Dt,
-						width: Rt,
+					return n.a.createElement(Nt, {
+						height: At,
+						width: Dt,
 						toggleModal: this.props.toggleModal
 					})
 				}
 			}
-			t.default = Object(r.a)(Bt)
+			t.default = Object(r.a)(Rt)
 		},
 		"./src/reddit/constants/postCreation.ts": function(e, t, s) {
 			"use strict";
@@ -4401,9 +4420,9 @@
 			})), s.d(t, "i", (function() {
 				return k
 			})), s.d(t, "e", (function() {
-				return w
-			})), s.d(t, "w", (function() {
 				return _
+			})), s.d(t, "w", (function() {
+				return w
 			})), s.d(t, "j", (function() {
 				return E
 			})), s.d(t, "d", (function() {
@@ -4540,12 +4559,12 @@
 					action: "click",
 					noun: "hourly_frequency"
 				}, r(e)),
-				w = () => e => Object.assign({
+				_ = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "daily_frequency"
 				}, r(e)),
-				_ = () => e => Object.assign({
+				w = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "weekly_frequency"
@@ -4740,9 +4759,9 @@
 			})), s.d(t, "s", (function() {
 				return k
 			})), s.d(t, "a", (function() {
-				return w
-			})), s.d(t, "f", (function() {
 				return _
+			})), s.d(t, "f", (function() {
+				return w
 			})), s.d(t, "r", (function() {
 				return E
 			})), s.d(t, "n", (function() {
@@ -4824,18 +4843,18 @@
 					const s = j(e, t);
 					return s && s.walletProvider
 				},
-				w = (e, t) => {
+				_ = (e, t) => {
 					const s = k(e, t),
 						a = j(e, t);
 					return s && s.provider || a && a.provider
 				},
-				_ = (e, t) => {
-					const s = w(e, t);
+				w = (e, t) => {
+					const s = _(e, t);
 					return s === n.a.Ethereum || s === n.a.Rinkeby
 				},
 				E = (e, t) => {
 					const s = k(e, t),
-						a = w(e, t);
+						a = _(e, t);
 					if (s && !s.inTransition && a === n.a.Stellar) return {
 						address: s.extra && s.extra.issuerAddress || "",
 						decimals: s.extra && s.extra.decimals || 7,
@@ -4868,4 +4887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PainterModalLoader.8cc6bc1e84a29f52c74c.js.map
+//# sourceMappingURL=PainterModalLoader.728225b2545e14ff6b30.js.map
