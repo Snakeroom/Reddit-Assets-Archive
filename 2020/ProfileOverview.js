@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6fcfe6adc1b95cac13a8.js
-// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.7c45f8a6896203d141a5.js
+// Retrieved at 3/25/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -8351,19 +8351,19 @@
 			s.d(t, "b", (function() {
 				return w
 			}));
-			var n, o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = s("./src/higherOrderComponents/asModal/index.tsx"),
-				l = s("./src/reddit/actions/modal.ts"),
-				m = s("./src/reddit/components/FlairPickerTitle/index.tsx"),
-				p = s("./src/reddit/components/FlairPickerWrapper/index.tsx"),
-				u = s("./src/reddit/components/FlairPreview/index.tsx"),
-				b = s("./src/reddit/components/FlairSearch/index.tsx"),
-				h = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/i18n/utils.ts"),
+			var n, o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				a = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
+				c = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				l = s("./src/higherOrderComponents/asModal/index.tsx"),
+				m = s("./src/reddit/actions/modal.ts"),
+				p = s("./src/reddit/components/FlairPickerTitle/index.tsx"),
+				u = s("./src/reddit/components/FlairPickerWrapper/index.tsx"),
+				b = s("./src/reddit/components/FlairPreview/index.tsx"),
+				h = s("./src/reddit/components/FlairSearch/index.tsx"),
+				x = s("./src/reddit/controls/Button/index.tsx"),
 				g = s("./src/reddit/models/Flair/index.ts"),
 				f = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				v = s("./src/reddit/selectors/postFlair.ts"),
@@ -8380,12 +8380,12 @@
 						s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.UNSET;
 					return "PostFlair__Modal-[postId: ".concat(e, "]-isOverlay[").concat(t, "]-position[").concat(s, "]")
 				},
-				_ = Object(i.c)({
+				_ = Object(c.c)({
 					flairData: v.d,
 					subreddit: O.P,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
-			class P extends r.a.Component {
+			class P extends a.a.Component {
 				constructor(e) {
 					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
 						const {
@@ -8426,44 +8426,52 @@
 					} = this.state, {
 						className: s,
 						flairData: n,
-						subreddit: o
-					} = e, a = o.displayText, {
-						templates: i,
-						templateIds: c
+						subreddit: r
+					} = e, i = r.displayText, {
+						templates: c,
+						templateIds: d
 					} = n, {
-						canSave: d
+						canSave: l
 					} = this.canSave();
-					return r.a.createElement(p.a, {
+					return a.a.createElement(u.a, {
 						className: s
-					}, r.a.createElement(m.a, {
+					}, a.a.createElement(p.a, {
 						onClosePressed: e.closeModal,
-						title: Object(x.c)("Select ".concat(Object(x.b)("subredditName", a), " flair"))
-					}), r.a.createElement(u.a, {
+						title: o.fbt._("Select {subredditName} flair", [o.fbt._param("subredditName", i)], {
+							hk: "1lDMWS"
+						})
+					}), a.a.createElement(b.a, {
 						flair: t,
 						flairTemplateType: g.d.LinkFlair,
-						placeholderText: Object(x.c)("Post Title")
-					}), r.a.createElement(b.a, {
+						placeholderText: o.fbt._("Post Title", null, {
+							hk: "43RsbC"
+						})
+					}), a.a.createElement(h.a, {
 						flair: t,
 						flairTemplateType: g.d.LinkFlair,
-						subredditId: o.id,
-						templates: i,
-						templateIds: c,
+						subredditId: r.id,
+						templates: c,
+						templateIds: d,
 						onChange: this.setSelectedFlair
-					}), r.a.createElement("div", {
+					}), a.a.createElement("div", {
 						className: j.a.buttonsRow
-					}, r.a.createElement(h.f, {
-						disabled: !d,
+					}, a.a.createElement(x.f, {
+						disabled: !l,
 						onClick: this.onApply
-					}, Object(x.c)("Apply")), r.a.createElement(h.i, {
+					}, o.fbt._("Apply", null, {
+						hk: "3mAjVQ"
+					})), a.a.createElement(x.i, {
 						className: j.a.clearButton,
 						onClick: this.onClear
-					}, Object(x.c)("Clear Flair"))))
+					}, o.fbt._("Clear Flair", null, {
+						hk: "3jvT0B"
+					}))))
 				}
 			}
-			const k = Object(a.b)(_, (e, t) => ({
-				closeModal: () => e(Object(l.i)(t.modalId))
+			const k = Object(i.b)(_, (e, t) => ({
+				closeModal: () => e(Object(m.i)(t.modalId))
 			}))(P);
-			t.a = Object(d.a)(Object(c.c)(k))
+			t.a = Object(l.a)(Object(d.c)(k))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -15321,4 +15329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.6fcfe6adc1b95cac13a8.js.map
+//# sourceMappingURL=ProfileOverview.7c45f8a6896203d141a5.js.map

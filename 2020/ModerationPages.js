@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e4a1704c9a14cdef33aa.js
-// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2eb723217b3308ba6883.js
+// Retrieved at 3/25/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -16681,19 +16681,19 @@
 			s.d(t, "b", (function() {
 				return y
 			}));
-			var n, o = s("./node_modules/react/index.js"),
-				a = s.n(o),
-				r = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				c = s("./src/higherOrderComponents/asModal/index.tsx"),
-				l = s("./src/reddit/actions/modal.ts"),
-				m = s("./src/reddit/components/FlairPickerTitle/index.tsx"),
-				u = s("./src/reddit/components/FlairPickerWrapper/index.tsx"),
-				p = s("./src/reddit/components/FlairPreview/index.tsx"),
-				b = s("./src/reddit/components/FlairSearch/index.tsx"),
-				h = s("./src/reddit/controls/Button/index.tsx"),
-				g = s("./src/reddit/i18n/utils.ts"),
+			var n, o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./node_modules/react/index.js"),
+				r = s.n(a),
+				i = s("./node_modules/react-redux/es/index.js"),
+				d = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				l = s("./src/higherOrderComponents/asModal/index.tsx"),
+				m = s("./src/reddit/actions/modal.ts"),
+				u = s("./src/reddit/components/FlairPickerTitle/index.tsx"),
+				p = s("./src/reddit/components/FlairPickerWrapper/index.tsx"),
+				b = s("./src/reddit/components/FlairPreview/index.tsx"),
+				h = s("./src/reddit/components/FlairSearch/index.tsx"),
+				g = s("./src/reddit/controls/Button/index.tsx"),
 				x = s("./src/reddit/models/Flair/index.ts"),
 				f = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				E = s("./src/reddit/selectors/postFlair.ts"),
@@ -16710,12 +16710,12 @@
 						s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.UNSET;
 					return "PostFlair__Modal-[postId: ".concat(e, "]-isOverlay[").concat(t, "]-position[").concat(s, "]")
 				},
-				k = Object(i.c)({
+				k = Object(d.c)({
 					flairData: E.d,
 					subreddit: v.P,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
-			class w extends a.a.Component {
+			class w extends r.a.Component {
 				constructor(e) {
 					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
 						const {
@@ -16756,44 +16756,52 @@
 					} = this.state, {
 						className: s,
 						flairData: n,
-						subreddit: o
-					} = e, r = o.displayText, {
-						templates: i,
-						templateIds: d
+						subreddit: a
+					} = e, i = a.displayText, {
+						templates: d,
+						templateIds: c
 					} = n, {
-						canSave: c
+						canSave: l
 					} = this.canSave();
-					return a.a.createElement(u.a, {
+					return r.a.createElement(p.a, {
 						className: s
-					}, a.a.createElement(m.a, {
+					}, r.a.createElement(u.a, {
 						onClosePressed: e.closeModal,
-						title: Object(g.c)("Select ".concat(Object(g.b)("subredditName", r), " flair"))
-					}), a.a.createElement(p.a, {
+						title: o.fbt._("Select {subredditName} flair", [o.fbt._param("subredditName", i)], {
+							hk: "1lDMWS"
+						})
+					}), r.a.createElement(b.a, {
 						flair: t,
 						flairTemplateType: x.d.LinkFlair,
-						placeholderText: Object(g.c)("Post Title")
-					}), a.a.createElement(b.a, {
+						placeholderText: o.fbt._("Post Title", null, {
+							hk: "43RsbC"
+						})
+					}), r.a.createElement(h.a, {
 						flair: t,
 						flairTemplateType: x.d.LinkFlair,
-						subredditId: o.id,
-						templates: i,
-						templateIds: d,
+						subredditId: a.id,
+						templates: d,
+						templateIds: c,
 						onChange: this.setSelectedFlair
-					}), a.a.createElement("div", {
+					}), r.a.createElement("div", {
 						className: _.a.buttonsRow
-					}, a.a.createElement(h.f, {
-						disabled: !c,
+					}, r.a.createElement(g.f, {
+						disabled: !l,
 						onClick: this.onApply
-					}, Object(g.c)("Apply")), a.a.createElement(h.i, {
+					}, o.fbt._("Apply", null, {
+						hk: "3mAjVQ"
+					})), r.a.createElement(g.i, {
 						className: _.a.clearButton,
 						onClick: this.onClear
-					}, Object(g.c)("Clear Flair"))))
+					}, o.fbt._("Clear Flair", null, {
+						hk: "3jvT0B"
+					}))))
 				}
 			}
-			const S = Object(r.b)(k, (e, t) => ({
-				closeModal: () => e(Object(l.i)(t.modalId))
+			const S = Object(i.b)(k, (e, t) => ({
+				closeModal: () => e(Object(m.i)(t.modalId))
 			}))(w);
-			t.a = Object(c.a)(Object(d.c)(S))
+			t.a = Object(l.a)(Object(c.c)(S))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -26394,7 +26402,9 @@
 					}, r.a.createElement(Ee.f, {
 						className: Ue.a.primaryButton,
 						onClick: this.onToggleCreateWikiModal
-					}, Object(Q.c)("Create new page")), r.a.createElement(He, {
+					}, p.fbt._("Create new page", null, {
+						hk: "35WDuL"
+					})), r.a.createElement(He, {
 						activePageName: i,
 						baseUrl: "".concat(s.url, "about/wiki"),
 						directory: e
@@ -26402,18 +26412,26 @@
 						className: Ue.a.footer
 					}, r.a.createElement(pe, {
 						isActive: d === fe.m.Revisions && !i,
-						label: Object(Q.c)("Recent wiki revisions"),
+						label: p.fbt._("Recent wiki revisions", null, {
+							hk: "278VnD"
+						}),
 						path: "".concat(s.url, "about/wiki/revisions")
 					}), r.a.createElement(pe, {
 						isActive: c === h.Pb.WikiContributors,
-						label: Object(Q.c)("Add wiki contributors"),
+						label: p.fbt._("Add wiki contributors", null, {
+							hk: "1XHd90"
+						}),
 						path: "".concat(s.url, "about/wikicontributors")
 					}), r.a.createElement(pe, {
 						isActive: c === h.Pb.WikiBanned,
-						label: Object(Q.c)("Ban wiki contributors"),
+						label: p.fbt._("Ban wiki contributors", null, {
+							hk: "3IVNKp"
+						}),
 						path: "".concat(s.url, "about/wikibanned")
 					}), r.a.createElement(pe, {
-						label: Object(Q.c)("Wiki settings"),
+						label: p.fbt._("Wiki settings", null, {
+							hk: "1Jctxf"
+						}),
 						path: "".concat(s.url, "about/edit?page=wikis")
 					})), t && r.a.createElement(Re, {
 						pageTree: e && e.pageTree,
@@ -27834,4 +27852,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.e4a1704c9a14cdef33aa.js.map
+//# sourceMappingURL=ModerationPages.2eb723217b3308ba6883.js.map
