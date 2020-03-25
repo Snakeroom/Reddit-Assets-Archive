@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.476f83e3df58f176ce65.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.7d44d6d062996b1f14bc.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
@@ -96,7 +96,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(g.v)(e, s)
+					return Object(g.w)(e, s)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -108,13 +108,13 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(g.C)(e, s)
+					return Object(g.D)(e, s)
 				}
 			});
-			var f = Object(b.c)(Object(c.b)(A, e => ({
+			var D = Object(b.c)(Object(c.b)(A, e => ({
 				onOpenUploadDialog: () => e(Object(p.i)())
 			}))(E));
-			const D = Object(i.a)(f, [a.a.Click, a.a.Keydown]);
+			const f = Object(i.a)(D, [a.a.Click, a.a.Keydown]);
 			const y = Object(n.c)({
 				isOpen: (e, t) => {
 					let {
@@ -124,7 +124,7 @@
 				}
 			});
 			t.default = Object(c.b)(y)((function(e) {
-				return e.isOpen ? o.a.createElement(D, e) : null
+				return e.isOpen ? o.a.createElement(f, e) : null
 			}))
 		},
 		"./src/reddit/helpers/economics/membershipPage.ts": function(e, t, s) {
@@ -158,4 +158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.476f83e3df58f176ce65.js.map
+//# sourceMappingURL=CustomBadgeHovercardTooltip.7d44d6d062996b1f14bc.js.map

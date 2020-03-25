@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1128014356181c59b1bb.js
-// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c89915ddad1f7541cfdf.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4550,7 +4550,7 @@
 						return e.posts.models[s]
 					},
 					tippers: (e, t) => {
-						if (E.d.spTopTippers(e)) return Object(v.w)(e, t)
+						if (E.d.spTopTippers(e)) return Object(v.x)(e, t)
 					}
 				}))((function(e) {
 					if (e.tippers && e.tippers.allTippers.has(e.userId)) {
@@ -4682,7 +4682,7 @@
 						let {
 							comment: s
 						} = t;
-						return !!Object(v.u)(e, s.subredditId, s.authorId).length
+						return !!Object(v.v)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
 						const s = Object(ee.G)(e, {
@@ -8922,7 +8922,7 @@
 					featureEnabled: C.d.spSupport,
 					userAcceptsSupport: (e, t) => {
 						const s = e.posts.models[t.contentId];
-						return !!s && Object(O.k)(e, {
+						return !!s && Object(O.l)(e, {
 							contentId: s.id,
 							subredditId: t.subredditId
 						})
@@ -27834,4 +27834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.1128014356181c59b1bb.js.map
+//# sourceMappingURL=ModerationPages.c89915ddad1f7541cfdf.js.map

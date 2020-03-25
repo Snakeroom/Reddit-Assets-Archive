@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.d96f85883276af853cf9.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.920deedda017831cc98a.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsTopTippersPostLeaderboard"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -198,10 +198,10 @@
 				})),
 				C = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.tsx"),
 				_ = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/UserPill/index.tsx"),
-				w = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/GenerousSupporters/index.m.less"),
-				O = s.n(w);
+				O = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/GenerousSupporters/index.m.less"),
+				w = s.n(O);
 			const k = Object(r.c)({
-				tippers: x.w,
+				tippers: x.x,
 				account: e => e.user.account
 			});
 			var S, L = Object(c.b)(k)((function(e) {
@@ -218,28 +218,28 @@
 					return a.a.createElement("div", {
 						className: e.className
 					}, a.a.createElement("div", {
-						className: O.a.title
+						className: w.a.title
 					}, Object(b.c)("Generous Supporters")), a.a.createElement("div", {
-						className: O.a.row
+						className: w.a.row
 					}, a.a.createElement(_.a, {
 						amount: s,
-						className: O.a.pill,
+						className: w.a.pill,
 						creatorId: e.creatorId,
 						rank: 1,
 						subredditId: e.subredditId,
 						username: e.account && e.account.displayText || Object(b.c)("username")
 					}), a.a.createElement(_.a, {
 						amount: t.amount,
-						className: O.a.pill,
+						className: w.a.pill,
 						creatorId: e.creatorId,
 						rank: 2,
 						subredditId: e.subredditId,
 						username: t.username
 					})), a.a.createElement("div", {
-						className: O.a.row
+						className: w.a.row
 					}, a.a.createElement(C.a, {
 						amount: n.amount,
-						className: O.a.pill,
+						className: w.a.pill,
 						count: n.count,
 						creatorId: e.creatorId,
 						subredditId: e.subredditId
@@ -390,7 +390,7 @@
 				ce = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/index.m.less"),
 				re = s.n(ce);
 			const oe = Object(r.c)({
-				contentAcceptsSupport: x.k,
+				contentAcceptsSupport: x.l,
 				ftueViewed: e => e.economics.ftue.topTippersViewed,
 				isLoggedIn: e => !!e.user.account
 			});
@@ -511,7 +511,7 @@
 				p = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/index.m.less"),
 				u = s.n(p);
 			const x = Object(r.c)({
-				tippers: d.w
+				tippers: d.x
 			});
 			t.default = Object(c.b)(x)((function(e) {
 				const {
@@ -598,4 +598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.d96f85883276af853cf9.js.map
+//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.920deedda017831cc98a.js.map

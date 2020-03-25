@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fec8aa87ae0b991b8ce2.js
-// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3b0da48a66ca027673a3.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -3977,7 +3977,7 @@
 			}
 			const Zt = Object(o.c)({
 					language: e => e.user.language,
-					stripeConnected: Wt.A
+					stripeConnected: Wt.B
 				}),
 				Kt = Object(r.b)(Zt, e => ({
 					onError: t => e(Object(_.e)({
@@ -4884,7 +4884,7 @@
 				}
 			}
 			const ws = Object(o.c)({
-					savedPayments: Wt.s,
+					savedPayments: Wt.t,
 					language: e => e.user.language
 				}),
 				js = Object(r.b)(ws, e => ({
@@ -5475,7 +5475,7 @@
 
 			function Ba(e) {
 				const t = Date.now();
-				return !!e.active && t < e.active.membership.endsAt
+				return !!e.active && !!e.active.membership && t < e.active.membership.endsAt
 			}
 			const Da = Object(o.c)({
 				membershipsLoading: e => !e.economics.me.fetched,
@@ -5497,6 +5497,7 @@
 						className: Ta.a.loading,
 						key: t
 					})), o && r.map(e => a.a.createElement(Ia, {
+						key: e.active.membership.subredditId,
 						className: Ta.a.membership,
 						membership: e
 					})), !n && !o && a.a.createElement("div", {
@@ -5557,8 +5558,8 @@
 					onClick: n[t.key]
 				}, t.title)),
 				Ja = Object(o.c)({
-					savedPayments: Wt.s,
-					userIsWhitelistedCreator: Wt.D,
+					savedPayments: Wt.t,
+					userIsWhitelistedCreator: Wt.E,
 					allowNavigationCallback: za.a,
 					language: y.O,
 					prefs: e => e.user.prefs,
@@ -5730,4 +5731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.fec8aa87ae0b991b8ce2.js.map
+//# sourceMappingURL=Settings.3b0da48a66ca027673a3.js.map

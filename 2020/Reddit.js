@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.60bcf3f17446fe58a6e3.js
-// Retrieved at 3/25/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.01b274ce31ac53e45fab.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -407,7 +407,7 @@
 				} = n;
 				const o = s(),
 					i = o.user.account,
-					c = Object(f.f)(o, e.subredditId),
+					c = Object(f.g)(o, e.subredditId),
 					l = Object.keys(c).map(e => c[e]).filter(Boolean);
 				if (i && e.badge) {
 					let s, n;
@@ -463,10 +463,10 @@
 				} = r;
 				if (await n(O(e, !0)), s && t) {
 					const s = a(),
-						r = Object(f.f)(s, e),
+						r = Object(f.g)(s, e),
 						o = Object(C.a)(s, t);
 					if (!r[Object(h.d)(o.placement)] && o) {
-						const t = Object(f.p)(s, {
+						const t = Object(f.q)(s, {
 							subredditId: e,
 							badge: o
 						});
@@ -12065,4 +12065,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.60bcf3f17446fe58a6e3.js.map
+//# sourceMappingURL=Reddit.01b274ce31ac53e45fab.js.map

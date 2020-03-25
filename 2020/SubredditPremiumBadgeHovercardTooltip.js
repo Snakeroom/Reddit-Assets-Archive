@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.3d88635054e3661dc382.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.2fea84a25afd0d24768f.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -246,7 +246,7 @@
 				}
 			}
 			const U = Object(c.c)({
-				ownedBadge: h.p,
+				ownedBadge: h.q,
 				premiumSubscriptionsEnabled: f.d.spPremiumSubscriptions,
 				relevantProduct: (e, t) => {
 					let {
@@ -260,7 +260,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return Object(h.C)(e, r)
+					return Object(h.D)(e, r)
 				}
 			});
 			var X = Object(g.c)(Object(n.b)(U)(K));
@@ -319,7 +319,7 @@
 						const t = Object.keys(r.collections);
 						if (t.length) {
 							const r = t[0];
-							return Object(u.i)(e, {
+							return Object(u.j)(e, {
 								collectionId: r,
 								subredditId: s
 							})
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.3d88635054e3661dc382.js.map
+//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.2fea84a25afd0d24768f.js.map

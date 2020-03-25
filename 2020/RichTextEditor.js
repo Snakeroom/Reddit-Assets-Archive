@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.97b8d8e2c5eae14c12c1.js
-// Retrieved at 3/25/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f4ea13383e494c97594f.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -107,7 +107,7 @@
 				} = o;
 				const a = n(),
 					i = a.user.account,
-					d = Object(g.f)(a, e.subredditId),
+					d = Object(g.g)(a, e.subredditId),
 					l = Object.keys(d).map(e => d[e]).filter(Boolean);
 				if (i && e.badge) {
 					let n, o;
@@ -163,10 +163,10 @@
 				} = r;
 				if (await o(y(e, !0)), n && t) {
 					const n = s(),
-						r = Object(g.f)(n, e),
+						r = Object(g.g)(n, e),
 						a = Object(x.a)(n, t);
 					if (!r[Object(h.d)(a.placement)] && a) {
-						const t = Object(g.p)(n, {
+						const t = Object(g.q)(n, {
 							subredditId: e,
 							badge: a
 						});
@@ -1261,7 +1261,7 @@
 					hasViewedMarkdownModeFtuUx: Fe.e,
 					userCanUseGifs: (e, t) => {
 						const n = Object(_e.o)(e, t);
-						return Object(Y.y)(e, n ? n.id : void 0, t.parentCommentId)
+						return Object(Y.z)(e, n ? n.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
 					cancelModalToggled: () => e(Object(Oe.i)(Object(Ee.a)(t.draftKey)))
@@ -2743,4 +2743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.97b8d8e2c5eae14c12c1.js.map
+//# sourceMappingURL=RichTextEditor.f4ea13383e494c97594f.js.map

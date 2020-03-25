@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a9a3ec53b619aecabf15.js
-// Retrieved at 3/25/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c40adbf91a6c384b1f5c.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2470,7 +2470,7 @@
 						return e.posts.models[s]
 					},
 					tippers: (e, t) => {
-						if (v.d.spTopTippers(e)) return Object(C.w)(e, t)
+						if (v.d.spTopTippers(e)) return Object(C.x)(e, t)
 					}
 				}))((function(e) {
 					if (e.tippers && e.tippers.allTippers.has(e.userId)) {
@@ -2602,7 +2602,7 @@
 						let {
 							comment: s
 						} = t;
-						return !!Object(C.u)(e, s.subredditId, s.authorId).length
+						return !!Object(C.v)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
 						const s = Object(ee.G)(e, {
@@ -3335,7 +3335,7 @@
 					featureEnabled: ie.d.spSupport,
 					userAcceptsSupport: (e, t) => {
 						const s = e.comments.models[t.contentId];
-						return !!s && Object(ce.k)(e, {
+						return !!s && Object(ce.l)(e, {
 							contentId: s.id,
 							subredditId: s.subredditId
 						})
@@ -6457,7 +6457,7 @@
 					featureEnabled: O.d.spSupport,
 					userAcceptsSupport: (e, t) => {
 						const s = e.posts.models[t.contentId];
-						return !!s && Object(E.k)(e, {
+						return !!s && Object(E.l)(e, {
 							contentId: s.id,
 							subredditId: t.subredditId
 						})
@@ -17178,4 +17178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.a9a3ec53b619aecabf15.js.map
+//# sourceMappingURL=CollectionCommentsPage.c40adbf91a6c384b1f5c.js.map

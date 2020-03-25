@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.b9017379e894ac4a911f.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.888593667891094fd9e3.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -43,8 +43,8 @@
 				E = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				y = s("./src/reddit/models/Toast/index.ts"),
 				T = s("./src/reddit/selectors/economics.ts"),
-				_ = s("./src/reddit/selectors/telemetry.ts"),
-				C = s("./src/reddit/selectors/user.ts"),
+				C = s("./src/reddit/selectors/telemetry.ts"),
+				_ = s("./src/reddit/selectors/user.ts"),
 				I = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				G = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -107,7 +107,7 @@
 				}
 			}
 			const P = Object(d.c)({
-				isNightMode: C.Q
+				isNightMode: _.Q
 			});
 			var H = Object(l.b)(P)(M),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -137,12 +137,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? _.subredditById(t, this.props.subreddit.id) : void 0,
-							post: _.currentPost(t),
+							subreddit: this.props.subreddit.id ? C.subredditById(t, this.props.subreddit.id) : void 0,
+							post: C.currentPost(t),
 							search: {
 								query: e
 							}
-						}, _.defaults(t))), this.setState({
+						}, C.defaults(t))), this.setState({
 							loading: !1,
 							columns: [
 								[],
@@ -156,14 +156,14 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = _.defaults(e);
+							const t = C.defaults(e);
 							return Object.assign({}, t, {
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? _.subredditById(e, this.props.subreddit.id) : void 0,
-								post: _.currentPost(e),
+								subreddit: this.props.subreddit.id ? C.subredditById(e, this.props.subreddit.id) : void 0,
+								post: C.currentPost(e),
 								actionInfo: Object.assign({}, t.actionInfo, {
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
 								})
@@ -295,9 +295,9 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(T.B)(e, s.id)
+					return Object(T.C)(e, s.id)
 				},
-				language: C.O
+				language: _.O
 			});
 			t.a = Object(h.c)(Object(l.b)(V, e => ({
 				showErrorToast: t => e(Object(p.e)({
@@ -378,11 +378,11 @@
 					}), n.a.createElement(g.c, null, "Unlock GIFs in Comments")))
 				},
 				T = s("./src/reddit/components/RichTextEditor/media/GifTooltip/index.m.less"),
-				_ = s.n(T);
+				C = s.n(T);
 			s.d(t, "GiphyTooltip", (function() {
-				return C
+				return _
 			}));
-			class C extends n.a.Component {
+			class _ extends n.a.Component {
 				constructor(e) {
 					super(e), this.updateTooltipPosition = null, this.state = {
 						isTooltipVisible: !1
@@ -435,7 +435,7 @@
 						isTooltipVisible: t
 					} = this.state;
 					return n.a.createElement(p.b, {
-						className: _.a.tooltip,
+						className: C.a.tooltip,
 						onSetPositionUpdater: e => this.updateTooltipPosition = e,
 						trianglePlacement: p.a.Below
 					}, t && n.a.createElement("div", {
@@ -453,7 +453,7 @@
 					})))
 				}
 			}
-			t.default = Object(c.c)(C)
+			t.default = Object(c.c)(_)
 		},
 		"./src/reddit/helpers/economics/membershipPage.ts": function(e, t, s) {
 			"use strict";
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.b9017379e894ac4a911f.js.map
+//# sourceMappingURL=GifTooltip.888593667891094fd9e3.js.map

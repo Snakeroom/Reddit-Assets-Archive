@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.027d89c70dc6d4acca65.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.b3bfe72e724d4d18fd62.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1"], {
 		"./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less": function(e, t, s) {
@@ -267,7 +267,7 @@
 				return e.type === x.b.SavedPayPal || e.type === x.b.SavedStripe
 			}
 			const se = Object(r.c)({
-				savedPayments: N.s
+				savedPayments: N.t
 			});
 			var ae = Object(c.b)(se)((function(e) {
 					return n.a.createElement("div", {
@@ -370,7 +370,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(N.x)(e, {
+					return Object(N.y)(e, {
 						subredditId: s,
 						contentId: s
 					})
@@ -463,7 +463,7 @@
 			const Se = Object(r.c)({
 				language: e => e.user.language,
 				tipsProportions: (e, t) => {
-					if (t.subreddit) return Object(N.x)(e, {
+					if (t.subreddit) return Object(N.y)(e, {
 						contentId: t.contentId,
 						subredditId: t.subreddit.id
 					})
@@ -628,8 +628,8 @@
 				}
 			}
 			const Me = Object(r.c)({
-				savedPayments: N.s,
-				savedPaymentsState: N.t,
+				savedPayments: N.t,
+				savedPaymentsState: N.u,
 				accountId: e => e.user.account && e.user.account.id || "",
 				accountUsername: e => e.user.account && e.user.account.displayText || "",
 				isLoggedIn: e => !!e.user.account,
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.027d89c70dc6d4acca65.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.b3bfe72e724d4d18fd62.js.map

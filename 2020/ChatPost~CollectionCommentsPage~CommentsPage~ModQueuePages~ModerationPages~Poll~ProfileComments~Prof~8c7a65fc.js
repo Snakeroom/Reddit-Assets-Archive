@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.4cc1e840b50c89139e4d.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a8b7075180c62dcfa988.js
+// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -144,8 +144,8 @@
 					}
 				};
 			var g = s("./src/reddit/actions/gold/modals.ts"),
-				O = s("./src/reddit/actions/modal.ts"),
-				v = s("./src/reddit/actions/tooltip.ts");
+				v = s("./src/reddit/actions/modal.ts"),
+				O = s("./src/reddit/actions/tooltip.ts");
 			const w = (e, t) => {
 				const s = Object(l.a)("awards", ["Award", "Awards"], t);
 				return 1 === e.length ? Object(l.c)("".concat(s, " from ").concat(Object(l.b)("awarder-0", e[0]))) : 2 === e.length ? Object(l.c)("".concat(s, " from ").concat(Object(l.b)("awarder-0", e[0]), " and ").concat(Object(l.b)("awarder-1", e[1]))) : 3 === e.length ? Object(l.c)("".concat(s, " from ").concat(Object(l.b)("awarder-0", e[0]), ", ").concat(Object(l.b)("awarder-1", e[1]), ", and ").concat(Object(l.b)("awarder-2", e[2]))) : e.length > 3 ? Object(l.c)("".concat(s, " from ").concat(Object(l.b)("awarder-0", e[0]), ", ").concat(Object(l.b)("awarder-1", e[1]), ", ").concat(Object(l.b)("awarder-2", e[2]), ", and more")) : void 0
@@ -345,11 +345,11 @@
 							const t = Object(j.a)(o.id) ? o.postId : o.id;
 							return e(Object(g.d)(t, s))
 						},
-						onHideTooltip: () => e(Object(v.i)()),
-						onShowTooltip: t => e(Object(v.f)({
+						onHideTooltip: () => e(Object(O.i)()),
+						onShowTooltip: t => e(Object(O.f)({
 							tooltipId: t
 						})),
-						onToggleHideAwardModal: () => e(Object(O.i)("AwardBadges--Modal--HideAwardConfirmation"))
+						onToggleHideAwardModal: () => e(Object(v.i)("AwardBadges--Modal--HideAwardConfirmation"))
 					}
 				});
 			class Y extends n.a.Component {
@@ -545,8 +545,8 @@
 					LoadingComponent: () => null,
 					getComponent: () => s.e("CustomBadgeHovercardTooltip").then(s.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
-				O = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				v = s.n(O);
+				v = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
+				O = s.n(v);
 			s.d(t, "b", (function() {
 				return E
 			})), s.d(t, "c", (function() {
@@ -571,22 +571,22 @@
 				}
 				render() {
 					if (this.props.usePlaceholder && !this.props.badges.length) return r.a.createElement("img", {
-						className: Object(i.a)(v.a.image, this.props.className),
+						className: Object(i.a)(O.a.image, this.props.className),
 						src: "".concat(d.a.assetPath, "/img/badges/placeholder.png")
 					});
 					const e = "".concat(w, "-").concat(this.props.uniqueIdentifier);
 					return r.a.createElement(o.Fragment, null, this.props.showAddCustom && r.a.createElement("div", {
-						className: v.a.wrapper,
+						className: O.a.wrapper,
 						id: e,
 						onMouseEnter: () => this.handleMouseEnter(e),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, r.a.createElement("button", {
-						className: v.a.addCustomLink,
+						className: O.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, r.a.createElement(x.a, {
-						className: v.a.addCustom
+						className: O.a.addCustom
 					})), r.a.createElement(g, {
-						className: v.a.badgeHovercard,
+						className: O.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: e,
@@ -598,12 +598,12 @@
 						return r.a.createElement(o.Fragment, {
 							key: "badges-fragement-".concat(e.id)
 						}, r.a.createElement("div", {
-							className: Object(i.a)(v.a.wrapper, this.props.className),
+							className: Object(i.a)(O.a.wrapper, this.props.className),
 							key: "wrapper-".concat(e.id),
 							onMouseEnter: () => this.handleMouseEnter(s),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, r.a.createElement("img", {
-							className: v.a.image,
+							className: O.a.image,
 							id: s,
 							key: e.id,
 							src: t.url2x,
@@ -611,7 +611,7 @@
 						}), this.props.useHovercard ? r.a.createElement(u, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: v.a.badgeHovercard,
+							className: O.a.badgeHovercard,
 							key: "tooltip-".concat(e.id),
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -748,7 +748,7 @@
 						subredditId: s,
 						userId: o
 					} = t;
-					return Object(u.u)(e, s, o)
+					return Object(u.v)(e, s, o)
 				},
 				customBadgesEnabled: m.d.spCustomBadges,
 				premiumEnabled: e => m.d.spPremium(e)
@@ -788,7 +788,7 @@
 						subredditId: s,
 						userId: o
 					} = t;
-					return Object(d.u)(e, s, o)
+					return Object(d.v)(e, s, o)
 				}
 			}))(i)
 		},
@@ -818,7 +818,7 @@
 			});
 			const u = Object(a.c)({
 				amountIsNotZero: (e, t) => {
-					const s = Object(c.l)(e, t);
+					const s = Object(c.m)(e, t);
 					return 0 !== parseInt(s)
 				},
 				featureEnabled: i.d.spSupport
@@ -950,7 +950,7 @@
 					}
 				}
 			}));
-			const O = (e, t) => {
+			const v = (e, t) => {
 				const s = Object(h.n)(e, t),
 					o = Object(x.G)(e, t);
 				return {
@@ -959,7 +959,7 @@
 					subredditOrProfile: o
 				}
 			};
-			var v = Object(n.b)(() => Object(a.a)(O, e => e))(e => r.a.createElement(b, {
+			var O = Object(n.b)(() => Object(a.a)(v, e => e))(e => r.a.createElement(b, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -1142,7 +1142,7 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "b", (function() {
-				return v
+				return O
 			})), s.d(t, "c", (function() {
 				return w
 			})), s.d(t, "d", (function() {
@@ -1213,8 +1213,8 @@
 				})),
 				f = s("./src/reddit/actions/tooltip.ts"),
 				g = s("./src/reddit/components/AuthorLink/index.tsx"),
-				O = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
-				v = s("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
+				v = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
+				O = s("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
 				w = s("./src/reddit/components/Flair/index.tsx"),
 				j = s("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
 				y = s("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
@@ -1335,7 +1335,7 @@
 						style: {
 							color: V(this.props)
 						}
-					}) : r.a.createElement(o.Fragment, null, !Object(U.h)(h.author) && r.a.createElement(O.b, {
+					}) : r.a.createElement(o.Fragment, null, !Object(U.h)(h.author) && r.a.createElement(v.b, {
 						className: z.a.badge,
 						subredditId: h.belongsTo.id,
 						uniqueIdentifier: "".concat(h.id, "-").concat(s),
@@ -1343,7 +1343,7 @@
 					}), r.a.createElement(y.b, {
 						postOrComment: h,
 						tooltipType: _
-					}, r.a.createElement(v.b, {
+					}, r.a.createElement(O.b, {
 						ignore: Object(U.h)(h.author) || !!h.distinguishType && h.distinguishType !== i.C.NONE,
 						subredditId: h.belongsTo.id,
 						userId: h.authorId
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.4cc1e840b50c89139e4d.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a8b7075180c62dcfa988.js.map
