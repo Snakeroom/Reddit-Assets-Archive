@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6fa09783256d01dbccf5.js
-// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2ea680cd985b40891e33.js
+// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -6404,14 +6404,13 @@
 				g = s("./src/reddit/controls/Button/index.tsx"),
 				f = s("./src/reddit/controls/Search/RelatedSubredditMetaData.tsx"),
 				y = s("./src/reddit/helpers/trackers/searchResults.ts"),
-				v = s("./src/reddit/i18n/components.tsx"),
-				O = s("./src/reddit/icons/fonts/Share/index.tsx"),
-				E = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				C = s("./src/reddit/components/SearchDiscoveryUnits/index.m.less"),
-				j = s.n(C);
-			const _ = 5,
-				P = [];
-			class k extends a.a.Component {
+				v = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				E = s("./src/reddit/components/SearchDiscoveryUnits/index.m.less"),
+				C = s.n(E);
+			const j = 5,
+				_ = [];
+			class P extends a.a.Component {
 				constructor(e) {
 					super(e), this.onFollow = () => {
 						this.props.sendEvent(Object(y.d)("trending_header", this.state.isFollowed ? "unfollow" : "follow", this.props.searchOptions)), this.setState({
@@ -6430,67 +6429,73 @@
 						currentPageUrl: e,
 						headerContent: t,
 						isCategorySearch: s,
-						isInFollowExperiment: n,
-						isSubreddit: r,
-						isTrendingSearch: o,
-						searchOptions: i,
-						searchQuery: d,
-						suffix: l
-					} = this.props, m = t && !r && t.subredditIcons ? t.subredditIcons.length <= _ ? t.subredditIcons : t.subredditIcons.slice(0, _ - 1) : P, p = Object(c.a)(d).replace("flair_name:", "flair:").replace('"', "").replace('"', ""), u = t && t.subredditIcons.length > _ && a.a.createElement(b, {
+						isInFollowExperiment: r,
+						isSubreddit: o,
+						isTrendingSearch: i,
+						searchOptions: d,
+						searchQuery: l,
+						suffix: m
+					} = this.props, p = t && !o && t.subredditIcons ? t.subredditIcons.length <= j ? t.subredditIcons : t.subredditIcons.slice(0, j - 1) : _, u = Object(c.a)(l).replace("flair_name:", "flair:").replace('"', "").replace('"', ""), y = t && t.subredditIcons.length > j && a.a.createElement(b, {
 						currentPageUrl: e,
-						searchQuery: d,
-						numCommunities: t.subredditIcons.length ? t.subredditIcons.length - _ + 1 : 0
+						searchQuery: l,
+						numCommunities: t.subredditIcons.length ? t.subredditIcons.length - j + 1 : 0
 					});
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
-						className: j.a.bold
-					}, s ? i[x.b] : p), a.a.createElement("p", {
-						className: j.a.metaData
-					}, l), a.a.createElement("div", {
-						className: j.a.metaDataContainer
+						className: C.a.bold
+					}, s ? d[x.b] : u), a.a.createElement("p", {
+						className: C.a.metaData
+					}, m), a.a.createElement("div", {
+						className: C.a.metaDataContainer
 					}, a.a.createElement(f.a, {
-						className: j.a.metaData,
+						className: C.a.metaData,
 						isHeaderContent: !0,
-						subredditIcons: m,
-						suffix: u
-					}), o && n && (this.state.isFollowed ? a.a.createElement(g.i, {
-						className: j.a.follow,
+						subredditIcons: p,
+						suffix: y
+					}), i && r && (this.state.isFollowed ? a.a.createElement(g.i, {
+						className: C.a.follow,
 						onClick: this.onFollow
-					}, a.a.createElement(v.c, null, "Unfollow")) : a.a.createElement(g.f, {
-						className: j.a.follow,
+					}, n.fbt._("Unfollow", null, {
+						hk: "ddl2J"
+					})) : a.a.createElement(g.f, {
+						className: C.a.follow,
 						onClick: this.onFollow
-					}, a.a.createElement(E.a, {
-						className: j.a.icon
-					}), a.a.createElement(v.c, null, "Follow"))), o && !n && e && a.a.createElement(h.a, {
+					}, a.a.createElement(O.a, {
+						className: C.a.icon
+					}), n.fbt._("Follow", null, {
+						hk: "4ddkyZ"
+					}))), i && !r && e && a.a.createElement(h.a, {
 						dropdownId: "rails-share-button",
 						permalink: e,
 						sendEventWithName: this.onShareMenuClick,
 						subreddit: null
 					}, a.a.createElement(g.n, {
-						className: j.a.share,
+						className: C.a.share,
 						"data-click-id": "share",
 						onClick: this.onShare
-					}, a.a.createElement(O.a, {
-						className: j.a.icon
-					}), a.a.createElement(v.c, null, "share")))))
+					}, a.a.createElement(v.a, {
+						className: C.a.icon
+					}), n.fbt._("share", null, {
+						hk: "mmJV5"
+					})))))
 				}
 			}
-			var S = k,
-				w = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				I = s("./src/reddit/components/TabNav/index.tsx"),
-				N = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				T = s("./src/reddit/constants/page.ts"),
-				M = s("./src/reddit/helpers/search/hasSearchGrammar.ts"),
-				L = s("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
-				R = s("./src/reddit/components/SearchResultsNav/index.m.less"),
-				A = s.n(R);
-			class F extends a.a.Component {
+			var k = P,
+				S = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				w = s("./src/reddit/components/TabNav/index.tsx"),
+				I = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				N = s("./src/reddit/constants/page.ts"),
+				T = s("./src/reddit/helpers/search/hasSearchGrammar.ts"),
+				M = s("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
+				L = s("./src/reddit/components/SearchResultsNav/index.m.less"),
+				R = s.n(L);
+			class A extends a.a.Component {
 				constructor() {
 					super(...arguments), this.sendTopTabClickEvent = () => {
-						this.props.tab === T.g.Top && this.props.sendEvent(Object(y.f)(y.a.TopResults, this.props.searchOptions))
+						this.props.tab === N.g.Top && this.props.sendEvent(Object(y.f)(y.a.TopResults, this.props.searchOptions))
 					}, this.sendPostsTabClickEvent = () => {
-						this.props.tab === T.g.Posts && this.props.sendEvent(Object(y.f)(y.a.Posts, this.props.searchOptions))
+						this.props.tab === N.g.Posts && this.props.sendEvent(Object(y.f)(y.a.Posts, this.props.searchOptions))
 					}, this.sendCommunitiesTabClickEvent = () => {
-						this.props.tab === T.g.Listings && this.props.sendEvent(Object(y.f)(y.a.CommunitiesAndUsers, this.props.searchOptions))
+						this.props.tab === N.g.Listings && this.props.sendEvent(Object(y.f)(y.a.CommunitiesAndUsers, this.props.searchOptions))
 					}
 				}
 				render() {
@@ -6504,7 +6509,7 @@
 						subreddit: u,
 						tab: b,
 						viewTreatment: h
-					} = this.props, g = m[x.b] || (t ? t.searchQuery || "" : m.q || ""), f = !(!u || !m.restrict_sr), y = !!m[x.b], v = h === L.c.Trending, O = Object(r.e)(o);
+					} = this.props, g = m[x.b] || (t ? t.searchQuery || "" : m.q || ""), f = !(!u || !m.restrict_sr), y = !!m[x.b], v = h === M.c.Trending, O = Object(r.e)(o);
 					let E = n.fbt._("Search results", null, {
 						hk: "1N3gsY"
 					});
@@ -6512,12 +6517,12 @@
 						subredditName: u.name
 					}, a.a.createElement(l.a, {
 						to: "/r/".concat(u.name, "/")
-					}, a.a.createElement(w.b, {
-						className: A.a.icon,
+					}, a.a.createElement(S.b, {
+						className: R.a.icon,
 						key: u.icon.url,
 						iconUrl: u.icon.url
 					}), a.a.createElement("span", {
-						className: A.a.subredditName
+						className: R.a.subredditName
 					}, u.displayText))))], {
 						hk: "JrpKl"
 					})) : n.fbt._("Search results in {subreddit name}", [n.fbt._param("subreddit name", u.displayText)], {
@@ -6525,7 +6530,7 @@
 					}) : (y || v) && t && t.displayText && (E = n.fbt._("Topic • {topic name} and {num occurrences} more communities talking about this", [n.fbt._param("topic name", t.displayText), n.fbt._param("num occurrences", t.subredditOccurrences.toString())], {
 						hk: "4hWnTn"
 					})));
-					const C = a.a.createElement(S, {
+					const C = a.a.createElement(k, {
 						currentPageUrl: e,
 						headerContent: v || y ? t : void 0,
 						isInFollowExperiment: s,
@@ -6537,11 +6542,11 @@
 						sendEvent: p,
 						suffix: E
 					});
-					return a.a.createElement(I.c, {
+					return a.a.createElement(w.c, {
 						title: C,
 						isCategoryPage: !!m[x.b]
-					}, !f && a.a.createElement(a.a.Fragment, null, a.a.createElement(I.a, {
-						active: b === T.g.Top,
+					}, !f && a.a.createElement(a.a.Fragment, null, a.a.createElement(w.a, {
+						active: b === N.g.Top,
 						onClick: this.sendTopTabClickEvent,
 						key: "top",
 						to: Object(c.c)(O, g, {
@@ -6549,8 +6554,8 @@
 						})
 					}, n.fbt._("Best results", null, {
 						hk: "40v7Dh"
-					})), !Object(M.a)(g) && a.a.createElement(I.a, {
-						active: b === T.g.Posts,
+					})), !Object(T.a)(g) && a.a.createElement(w.a, {
+						active: b === N.g.Posts,
 						onClick: this.sendPostsTabClickEvent,
 						key: "posts",
 						to: Object(c.c)(O, g, {
@@ -6558,8 +6563,8 @@
 						})
 					}, n.fbt._("Posts", null, {
 						hk: "vNVpl"
-					})), !Object(M.a)(g) && !m.is_multi && a.a.createElement(I.a, {
-						active: b === T.g.Listings,
+					})), !Object(T.a)(g) && !m.is_multi && a.a.createElement(w.a, {
+						active: b === N.g.Listings,
 						onClick: this.sendCommunitiesTabClickEvent,
 						key: "listings",
 						to: Object(c.c)(O, g, {
@@ -6570,7 +6575,7 @@
 					}))))
 				}
 			}
-			t.a = Object(N.c)(F)
+			t.a = Object(I.c)(A)
 		},
 		"./src/reddit/components/SearchResultsSidebar/index.tsx": function(e, t, s) {
 			"use strict";
@@ -9343,4 +9348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.6fa09783256d01dbccf5.js.map
+//# sourceMappingURL=SearchResults.2ea680cd985b40891e33.js.map

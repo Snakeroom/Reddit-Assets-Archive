@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9254e05d1bfc99c94273.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.d8b5f7e4c03cc858c2b4.js
+// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, a) {
@@ -276,18 +276,26 @@
 				z = a("./src/reddit/helpers/styles/mixins/fonts.m.less"),
 				V = a.n(z);
 			var Q = Object(m.a)(e => i.a.createElement(F, {
-					description: i.a.createElement(i.a.Fragment, null, i.a.createElement(S.c, null, "Reddit sent a confirmation email to: "), i.a.createElement("strong", {
+					description: i.a.createElement(i.a.Fragment, null, s.fbt._("Reddit sent a confirmation email to:", null, {
+						hk: "3IsFLZ"
+					}), i.a.createElement("strong", {
 						className: V.a.strongTextFont
-					}, e.email), i.a.createElement("br", null), i.a.createElement(S.c, null, "Click the verify link in the email to secure your Reddit account.")),
+					}, e.email), i.a.createElement("br", null), s.fbt._("Click the verify link in the email to secure your Reddit account.", null, {
+						hk: "jJSSU"
+					})),
 					descriptionClassName: A.a.description,
 					icon: i.a.createElement(q, null),
 					onClose: e.onConfirm,
-					title: Object(N.c)("Check your email")
+					title: s.fbt._("Check your email", null, {
+						hk: "1aob6x"
+					})
 				}, i.a.createElement("div", {
 					className: A.a.buttonWrapper
 				}, i.a.createElement(k.f, {
 					onClick: e.onConfirm
-				}, i.a.createElement(S.c, null, "Got it"))))),
+				}, s.fbt._("Got it", null, {
+					hk: "2LxUeS"
+				}))))),
 				X = a("./src/reddit/components/Settings/modalIds.ts");
 			const K = "#FFF";
 			var Y = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
@@ -944,4 +952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailVerificationModals.9254e05d1bfc99c94273.js.map
+//# sourceMappingURL=EmailVerificationModals.d8b5f7e4c03cc858c2b4.js.map

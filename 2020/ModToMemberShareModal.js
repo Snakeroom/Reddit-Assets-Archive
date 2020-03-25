@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.a75eb708780acc971a49.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.6ac3632dfa4ad02f591c.js
+// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -13,13 +13,13 @@
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				o = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				i = s("./src/reddit/components/CharacterCountdown/index.m.less"),
-				c = s.n(i);
+				i = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
+				a = s("./src/reddit/components/CharacterCountdown/index.m.less"),
+				c = s.n(a);
 			const {
 				fbt: d
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = e => r.a.createElement(a.b, {
+			t.a = e => r.a.createElement(i.b, {
 				className: Object(o.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
 			}, d._("{characters} Characters", [d._param("characters", e.maxChars - e.text.length)], {
 				hk: "1ewWIT"
@@ -39,36 +39,36 @@
 		},
 		"./src/reddit/components/MiniPost/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/app/strings/index.ts"),
 				c = s("./src/lib/classNames/index.ts"),
 				d = s("./src/lib/prettyPrintNumber/index.ts"),
 				m = s("./src/lib/timeAgo/index.ts"),
 				l = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				u = s("./src/reddit/components/Thumbnail/index.tsx"),
 				p = s("./src/reddit/helpers/overlay/index.ts"),
-				h = s("./src/reddit/selectors/posts.ts"),
-				b = s("./src/reddit/selectors/subreddit.ts"),
+				b = s("./src/reddit/selectors/posts.ts"),
+				h = s("./src/reddit/selectors/subreddit.ts"),
 				x = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/MiniPost/index.m.less"),
-				C = s.n(g);
-			const _ = Object(a.a)(e => e, h.M, h.c, x.O, (e, t, s, n) => {
+				_ = s("./src/reddit/components/MiniPost/index.m.less"),
+				C = s.n(_);
+			const g = Object(a.a)(e => e, b.M, b.c, x.O, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
 						post: t,
-						subredditOrProfile: Object(b.J)(e, {
+						subredditOrProfile: Object(h.J)(e, {
 							identifier: t.belongsTo
 						})
 					}
 				}),
-				f = Object(o.b)(_, (e, t) => ({
+				f = Object(i.b)(g, (e, t) => ({
 					openLightbox: t => e(Object(p.a)(t.permalink))
 				}));
-			class S extends r.a.PureComponent {
+			class S extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClickContainer = () => {
 						const {
@@ -97,40 +97,46 @@
 						className: e,
 						post: t,
 						showSubreddit: s = !1,
-						subredditOrProfile: n,
-						subredditSameLine: o
+						subredditOrProfile: r,
+						subredditSameLine: i
 					} = this.props;
-					return r.a.createElement("div", {
+					return o.a.createElement("div", {
 						className: Object(c.a)(C.a.container, e),
 						onClick: this.onClickContainer
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: C.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
-					}, r.a.createElement(u.a, {
+					}, o.a.createElement(u.a, {
 						post: t
-					})), r.a.createElement("div", {
+					})), o.a.createElement("div", {
 						className: C.a.postDetails
-					}, r.a.createElement("p", {
+					}, o.a.createElement("p", {
 						className: C.a.title,
 						title: t.title
-					}, t.title), r.a.createElement("div", {
+					}, t.title), o.a.createElement("div", {
 						className: Object(c.a)(C.a.subAndMeta, {
-							[C.a.isSingleLine]: o
+							[C.a.isSingleLine]: i
 						})
-					}, s && n && n.displayText && r.a.createElement(l.a, {
-						to: n.url,
+					}, s && r && r.displayText && o.a.createElement(l.a, {
+						to: r.url,
 						onClick: this.onClickSubreddit
-					}, n.displayText), o && r.a.createElement("div", {
+					}, r.displayText), i && o.a.createElement("div", {
 						className: C.a.separator
-					}), r.a.createElement("div", null, r.a.createElement("span", {
+					}), o.a.createElement("div", null, o.a.createElement("span", {
 						className: C.a.meta
-					}, Object(i.b)(this.props.language, "posts.points.noun", t.score, {
-						count: Object(d.b)(t.score)
-					})), r.a.createElement("span", {
+					}, n.fbt._({
+						"*": "{number} points",
+						_1: "1 point"
+					}, [n.fbt._plural(t.score, "number", Object(d.b)(t.score))], {
+						hk: "1Jm6il"
+					})), o.a.createElement("span", {
 						className: C.a.meta
-					}, Object(i.b)(this.props.language, "posts.comments.noun", t.numComments, {
-						count: Object(d.b)(t.numComments)
-					})), r.a.createElement("span", {
+					}, n.fbt._({
+						"*": "{number} comments",
+						_1: "1 comment"
+					}, [n.fbt._plural(t.numComments, "number", Object(d.b)(t.numComments))], {
+						hk: "2jjoyt"
+					})), o.a.createElement("span", {
 						className: C.a.meta
 					}, Object(m.d)(this.props.language, t.created / 1e3, !0, !0))))))
 				}
@@ -154,22 +160,22 @@
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/higherOrderComponents/asModal/index.tsx"),
+				i = s("./node_modules/reselect/es/index.js"),
+				a = s("./src/higherOrderComponents/asModal/index.tsx"),
 				c = s("./src/reddit/actions/modal.ts"),
 				d = s("./src/reddit/actions/toaster.ts"),
 				m = s("./src/reddit/components/CharacterCountdown/index.tsx"),
 				l = s("./src/reddit/components/MiniPost/index.tsx"),
 				u = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				p = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = s("./src/reddit/contexts/ApiContext.tsx"),
-				b = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				b = s("./src/reddit/contexts/ApiContext.tsx"),
+				h = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				x = s("./src/lib/constants/index.ts"),
-				g = s("./src/lib/makeApiRequest/index.ts"),
+				_ = s("./src/lib/makeApiRequest/index.ts"),
 				C = s("./src/lib/omitHeaders/index.ts"),
-				_ = s("./src/reddit/constants/headers.ts"),
+				g = s("./src/reddit/constants/headers.ts"),
 				f = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				S = (e, t, s) => Object(g.b)(Object(C.a)(e, [_.a]), {
+				S = (e, t, s) => Object(_.b)(Object(C.a)(e, [g.a]), {
 					endpoint: Object(f.a)("".concat(e.apiUrl, "/api/mod_link_share")),
 					method: x.cb.POST,
 					data: {
@@ -177,21 +183,21 @@
 						message: s
 					}
 				}),
-				E = s("./src/reddit/i18n/components.tsx"),
-				k = s("./src/reddit/i18n/utils.ts"),
+				k = s("./src/reddit/i18n/components.tsx"),
+				E = s("./src/reddit/i18n/utils.ts"),
 				O = s("./src/reddit/selectors/posts.ts"),
 				j = s("./src/reddit/selectors/telemetry.ts"),
 				N = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
 				F = s.n(N);
-			const T = 400,
-				v = Object(a.c)({
+			const P = 400,
+				T = Object(i.c)({
 					post: O.y,
 					subreddit: O.z
 				}),
-				P = Object(o.b)(v, (e, t) => ({
+				v = Object(o.b)(T, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
 					showSuccessToast: () => e(Object(d.e)({
-						text: Object(k.c)("Messages sent!")
+						text: Object(E.c)("Messages sent!")
 					}))
 				}));
 			class M extends r.a.Component {
@@ -230,19 +236,19 @@
 							pending: !0,
 							sentFormSubmit: !0
 						});
-						const a = await S(e(), s.id, r);
+						const i = await S(e(), s.id, r);
 						this.setState({
 							pending: !1,
-							success: a.ok
+							success: i.ok
 						}, () => {
-							a.ok && (t(), n())
+							i.ok && (t(), n())
 						})
 					};
 					const {
 						subreddit: t
 					} = this.props;
 					this.state = {
-						message: Object(k.c)("Check out this post in ".concat(t && t.displayText || "", ", we think you'll enjoy it.")),
+						message: Object(E.c)("Check out this post in ".concat(t && t.displayText || "", ", we think you'll enjoy it.")),
 						sentTypingStarted: !1,
 						sentInputClicked: !1,
 						sentFormSubmit: !1
@@ -266,7 +272,7 @@
 						className: F.a.header
 					}, r.a.createElement(u.n, {
 						className: F.a.title
-					}, r.a.createElement(E.c, null, "Send message with link")), r.a.createElement("button", {
+					}, r.a.createElement(k.c, null, "Send message with link")), r.a.createElement("button", {
 						onClick: this.onCloseClicked
 					}, r.a.createElement(u.b, null))), r.a.createElement(u.j, {
 						className: F.a.main
@@ -278,26 +284,26 @@
 						subredditSameLine: !0
 					}), r.a.createElement(u.q, {
 						className: F.a.textarea,
-						maxLength: T,
+						maxLength: P,
 						onChange: this.onMessageChange,
 						onFocus: this.onMessageFocus,
 						required: !0,
 						value: s
 					}), r.a.createElement(m.a, {
 						text: s,
-						maxChars: T
+						maxChars: P
 					})), r.a.createElement(u.e, null, !1 === o && r.a.createElement("p", {
 						className: F.a.errorText
 					}, "Something went wrong. Try again in a bit."), r.a.createElement(u.a, {
 						onClick: this.onCloseClicked
-					}, r.a.createElement(E.c, null, "Cancel")), r.a.createElement(u.o, {
+					}, r.a.createElement(k.c, null, "Cancel")), r.a.createElement(u.o, {
 						onClick: this.onFormSubmit
-					}, n ? r.a.createElement(b.a, {
+					}, n ? r.a.createElement(h.a, {
 						sizePx: 12
-					}) : o ? r.a.createElement(E.c, null, "Sent!") : r.a.createElement(E.c, null, "Send Messages"))))
+					}) : o ? r.a.createElement(k.c, null, "Sent!") : r.a.createElement(k.c, null, "Send Messages"))))
 				}
 			}
-			t.default = Object(i.a)(Object(h.b)(P(Object(p.c)(M))))
+			t.default = Object(a.a)(Object(b.b)(v(Object(p.c)(M))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, s) {
 			e.exports = {
@@ -338,9 +344,9 @@
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "k", (function() {
-				return a
-			})), s.d(t, "p", (function() {
 				return i
+			})), s.d(t, "p", (function() {
+				return a
 			})), s.d(t, "n", (function() {
 				return c
 			})), s.d(t, "o", (function() {
@@ -354,17 +360,17 @@
 			})), s.d(t, "h", (function() {
 				return p
 			})), s.d(t, "a", (function() {
-				return h
-			})), s.d(t, "g", (function() {
 				return b
+			})), s.d(t, "g", (function() {
+				return h
 			})), s.d(t, "i", (function() {
 				return x
 			})), s.d(t, "e", (function() {
-				return g
+				return _
 			})), s.d(t, "b", (function() {
 				return C
 			})), s.d(t, "c", (function() {
-				return _
+				return g
 			})), s.d(t, "d", (function() {
 				return f
 			})), s.d(t, "j", (function() {
@@ -373,20 +379,20 @@
 			var n = s("./src/lib/lessComponent.tsx"),
 				r = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
 				o = s.n(r);
-			const a = n.a.section("FormPage", o.a),
-				i = n.a.h1("HomePageTitle", o.a),
+			const i = n.a.section("FormPage", o.a),
+				a = n.a.h1("HomePageTitle", o.a),
 				c = n.a.button("HomePageBreadcrumb", o.a),
 				d = n.a.div("HomePageGroup", o.a),
 				m = n.a.h1("FormPageTitle", o.a),
 				l = n.a.div("FormPageSection", o.a),
 				u = n.a.div("FormGroup", o.a),
 				p = n.a.h2("FormGroupTitle", o.a),
-				h = n.a.div("FormElement", o.a),
-				b = n.a.div("FormGroupDescription", o.a),
+				b = n.a.div("FormElement", o.a),
+				h = n.a.div("FormGroupDescription", o.a),
 				x = n.a.div("FormItem", o.a),
-				g = n.a.h3("FormElementTitle", o.a),
+				_ = n.a.h3("FormElementTitle", o.a),
 				C = n.a.div("FormElementDescription", o.a),
-				_ = n.a.div("FormElementError", o.a),
+				g = n.a.div("FormElementError", o.a),
 				f = n.a.div("FormElementSubGroup", o.a),
 				S = n.a.li("FormListItem", o.a)
 		},
@@ -401,9 +407,9 @@
 			var n = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				r = s("./src/reddit/components/SubredditNameLink/index.m.less"),
 				o = s.n(r);
-			const a = s("./src/lib/lessComponent.tsx").a.wrapped(n.a, "SubredditName", o.a);
-			t.a = a
+			const i = s("./src/lib/lessComponent.tsx").a.wrapped(n.a, "SubredditName", o.a);
+			t.a = i
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.a75eb708780acc971a49.js.map
+//# sourceMappingURL=ModToMemberShareModal.6ac3632dfa4ad02f591c.js.map
