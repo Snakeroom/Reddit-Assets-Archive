@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.d5473f4a4253fbd95da4.js
-// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.87b17cb2cd00caf9c107.js
+// Retrieved at 3/25/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -8005,8 +8005,8 @@
 		},
 		"./src/reddit/components/PostCreationForm/CollectionListModal/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./src/app/strings/index.ts"),
-				o = s("./src/config.ts"),
+			var n = s("./src/config.ts"),
+				o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
 				a = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
@@ -8024,13 +8024,13 @@
 				v = s("./src/reddit/layout/row/Inline/index.tsx"),
 				O = s("./src/reddit/models/PostCreationForm/index.ts"),
 				C = s("./src/reddit/selectors/postCollection.ts"),
-				E = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/lib/timeAgo/index.ts"),
-				j = s("./src/reddit/controls/MetaSeparator/index.tsx"),
-				w = s("./src/reddit/helpers/name/index.ts"),
-				_ = s("./src/reddit/models/Subreddit/index.ts"),
-				P = s("./src/reddit/models/User/index.ts"),
-				k = s("./src/reddit/selectors/subreddit.ts"),
+				E = s("./src/lib/timeAgo/index.ts"),
+				y = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				j = s("./src/reddit/helpers/name/index.ts"),
+				w = s("./src/reddit/models/Subreddit/index.ts"),
+				_ = s("./src/reddit/models/User/index.ts"),
+				P = s("./src/reddit/selectors/subreddit.ts"),
+				k = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less"),
 				I = s.n(S),
 				N = s("./src/lib/lessComponent.tsx");
@@ -8043,11 +8043,11 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(k.P)(e, {
+					return s ? Object(P.P)(e, {
 						subredditId: s
 					}) : void 0
 				},
-				user: E.i
+				user: k.i
 			});
 			class D extends a.a.PureComponent {
 				constructor() {
@@ -8061,7 +8061,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: n
-					} = this.props, o = t && Object(_.e)(t) && s ? Object(w.c)(Object(P.f)(s)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, o = t && Object(w.e)(t) && s ? Object(j.c)(Object(_.f)(s)) : t ? t.displayText : "", r = e.postIds.length;
 					return a.a.createElement(L, {
 						onClick: this.onClick,
 						className: I.a.container
@@ -8071,12 +8071,12 @@
 						"data-redditstyle": !0
 					}, o && a.a.createElement(F, {
 						"data-redditstyle": !0
-					}, o), o && a.a.createElement(j.b, null), a.a.createElement(A, null, T._({
+					}, o), o && a.a.createElement(y.b, null), a.a.createElement(A, null, T._({
 						"*": "{number of posts} posts",
 						_1: "1 post"
 					}, [T._plural(r, "number of posts")], {
 						hk: "1Uy96U"
-					})), a.a.createElement(j.b, null), a.a.createElement(A, null, T._("created {time}", [T._param("time", Object(y.f)(e.createdAtUTC))], {
+					})), a.a.createElement(y.b, null), a.a.createElement(A, null, T._("created {time}", [T._param("time", Object(E.f)(e.createdAtUTC))], {
 						hk: "2cUc5m"
 					}))), n && a.a.createElement("div", {
 						className: I.a.onHoverActionText
@@ -8087,35 +8087,29 @@
 				H = s("./src/reddit/helpers/trackers/postCollection.ts"),
 				U = s("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				V = s.n(U);
-			const G = Object(n.d)("postCreation.collections.collectionsListEmptyText"),
-				z = Object(n.d)("postCreation.collections.noCollectionMatchingFilter"),
-				K = Object(n.d)("postCreation.collections.filterPlaceholder"),
-				J = Object(n.d)("postCreation.collections.collectionsListTitle"),
-				q = Object(n.d)("postCreation.collections.createCollection"),
-				X = "".concat(o.a.assetPath, "/img/snoo-drafts.png"),
-				Q = N.a.div("TopRow", V.a),
-				Z = N.a.div("TitleRow", V.a),
-				Y = N.a.div("DetailsContainer", V.a),
-				$ = N.a.wrapped(v.a, "ButtonRow", V.a),
-				ee = N.a.div("CloseWrapper", V.a),
-				te = N.a.wrapped(x.a, "Close", V.a),
-				se = N.a.div("Empty", V.a),
-				ne = N.a.img("EmptyImage", V.a),
-				oe = N.a.p("EmptyText", V.a),
-				re = N.a.div("FilterWrapper", V.a),
-				ae = N.a.wrapped(h.a, "FilterInput", V.a),
-				ie = N.a.wrapped(f.a, "SearchIcon", V.a),
-				ce = N.a.wrapped(g.a, "PlusIcon", V.a),
-				de = N.a.wrapped(b.j, "CreateCollectionButton", V.a),
-				le = Object(l.a)((e, t) => {
+			const G = "".concat(n.a.assetPath, "/img/snoo-drafts.png"),
+				z = N.a.div("TopRow", V.a),
+				K = N.a.div("TitleRow", V.a),
+				J = N.a.div("DetailsContainer", V.a),
+				q = N.a.wrapped(v.a, "ButtonRow", V.a),
+				X = N.a.div("CloseWrapper", V.a),
+				Q = N.a.wrapped(x.a, "Close", V.a),
+				Z = N.a.div("Empty", V.a),
+				Y = N.a.img("EmptyImage", V.a),
+				$ = N.a.p("EmptyText", V.a),
+				ee = N.a.div("FilterWrapper", V.a),
+				te = N.a.wrapped(h.a, "FilterInput", V.a),
+				se = N.a.wrapped(f.a, "SearchIcon", V.a),
+				ne = N.a.wrapped(g.a, "PlusIcon", V.a),
+				oe = N.a.wrapped(b.j, "CreateCollectionButton", V.a),
+				re = Object(l.a)((e, t) => {
 					const s = t.toLowerCase();
 					return e.filter(e => e.title.toLowerCase().includes(s))
 				}),
-				me = Object(c.c)({
-					collections: C.w,
-					language: E.O
+				ae = Object(c.c)({
+					collections: C.w
 				}),
-				pe = Object(i.b)(me, (e, t) => {
+				ie = Object(i.b)(ae, (e, t) => {
 					let {
 						postId: s,
 						isOverlay: n
@@ -8127,7 +8121,7 @@
 						}
 					}
 				});
-			class ue extends a.a.PureComponent {
+			class ce extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						filterStr: ""
@@ -8157,45 +8151,54 @@
 					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				renderNoCollections() {
-					return a.a.createElement(se, null, a.a.createElement(ne, {
-						src: X
-					}), a.a.createElement(oe, null, G(this.props.language)))
+					return a.a.createElement(Z, null, a.a.createElement(Y, {
+						src: G
+					}), a.a.createElement($, null, o.fbt._("Your collections will live here", null, {
+						hk: "FCxWg"
+					})))
 				}
 				renderNoFilterMatches() {
-					return a.a.createElement(se, null, a.a.createElement(oe, null, z(this.props.language)))
+					return a.a.createElement(Z, null, a.a.createElement($, null, o.fbt._("No collection matching filter", null, {
+						hk: "2vawdK"
+					}), ";"))
 				}
 				render() {
 					const {
 						collections: e,
-						language: t,
-						titleText: s
+						titleText: t
 					} = this.props;
-					let n;
-					if (0 === e.length) n = this.renderNoCollections();
+					let s;
+					if (0 === e.length) s = this.renderNoCollections();
 					else {
-						const t = le(e, this.state.filterStr);
-						n = 0 === t.length ? this.renderNoFilterMatches() : t.map(this.renderItem)
+						const t = re(e, this.state.filterStr);
+						s = 0 === t.length ? this.renderNoFilterMatches() : t.map(this.renderItem)
 					}
 					return a.a.createElement("div", {
 						className: V.a.wrapper,
 						"data-redditstyle": !0
-					}, a.a.createElement(Q, null, a.a.createElement(Z, {
+					}, a.a.createElement(z, null, a.a.createElement(K, {
 						"data-redditstyle": !0
-					}, s || J(t), a.a.createElement(ee, {
+					}, t || o.fbt._("My collections", null, {
+						hk: "3yKovS"
+					}), a.a.createElement(X, {
 						onClick: this.close
-					}, a.a.createElement(te, {
+					}, a.a.createElement(Q, {
 						"data-redditstyle": !0
-					}))), a.a.createElement(re, null, a.a.createElement(ie, null), a.a.createElement(ae, {
-						placeholder: K(t),
+					}))), a.a.createElement(ee, null, a.a.createElement(se, null), a.a.createElement(te, {
+						placeholder: o.fbt._("Find a collection", null, {
+							hk: "3DbFBU"
+						}),
 						value: this.state.filterStr,
 						onChange: this.onFilterStringChange
-					}))), a.a.createElement(Y, null, n), a.a.createElement($, null, a.a.createElement(de, {
+					}))), a.a.createElement(J, null, s), a.a.createElement(q, null, a.a.createElement(oe, {
 						onClick: this.handleCreateCollectionClicked
-					}, a.a.createElement(ce, null), q(t))))
+					}, a.a.createElement(ne, null), o.fbt._("Create a collection", null, {
+						hk: "37xJVm"
+					}))))
 				}
 			}
-			const be = Object(d.a)(pe(Object(p.c)(ue)));
-			t.a = be
+			const de = Object(d.a)(ie(Object(p.c)(ce)));
+			t.a = de
 		},
 		"./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -15321,4 +15324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.d5473f4a4253fbd95da4.js.map
+//# sourceMappingURL=ProfileOverview.87b17cb2cd00caf9c107.js.map

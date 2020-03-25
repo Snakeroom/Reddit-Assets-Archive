@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.abfcb39326714c0440ba.js
-// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9d39e80914831ba6979d.js
+// Retrieved at 3/25/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -540,12 +540,11 @@
 				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				l = s("./src/reddit/controls/Button/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/authControls.ts"),
-				u = s("./src/reddit/i18n/components.tsx"),
-				h = s("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.m.less"),
-				p = s.n(h);
+				u = s("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.m.less"),
+				h = s.n(u);
 			const {
-				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = i.a.div("Wrapper", p.a), g = i.a.span("Copy", p.a), w = i.a.wrapped(l.g, "SignupLink", p.a), S = i.a.wrapped(l.j, "LoginLink", p.a);
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = i.a.div("Wrapper", h.a), v = i.a.span("Copy", h.a), g = i.a.wrapped(l.g, "SignupLink", h.a), w = i.a.wrapped(l.j, "LoginLink", h.a);
 			t.a = Object(d.c)(e => {
 				let {
 					className: t,
@@ -554,34 +553,38 @@
 					openLoginModal: i,
 					openRegisterModal: d,
 					origin: l,
-					sendEvent: h
+					sendEvent: u
 				} = e;
-				return n.a.createElement(v, {
+				return n.a.createElement(b, {
 					className: Object(o.a)(t, {
-						[p.a.LiveStreamingWrapper]: s
+						[h.a.LiveStreamingWrapper]: s
 					})
-				}, n.a.createElement(g, {
+				}, n.a.createElement(v, {
 					className: Object(o.a)({
-						[p.a.LiveStreamingCopy]: s
+						[h.a.LiveStreamingCopy]: s
 					})
-				}, b._("Log in or sign up to leave a comment", null, {
+				}, p._("Log in or sign up to leave a comment", null, {
 					hk: "1KD7Eh"
-				})), n.a.createElement(S, {
+				})), n.a.createElement(w, {
 					href: Object(c.a)(r, l, "/login"),
 					onClick: e => {
-						Object(a.a)(e) && (e.preventDefault(), e.stopPropagation(), i(), h(Object(m.a)("user_convert")))
+						Object(a.a)(e) && (e.preventDefault(), e.stopPropagation(), i(), u(Object(m.a)("user_convert")))
 					},
 					"data-redditstyle": !0
-				}, n.a.createElement(u.c, null, "log in")), n.a.createElement(w, {
+				}, p._("log in", null, {
+					hk: "37jFXB"
+				})), n.a.createElement(g, {
 					className: Object(o.a)({
-						[p.a.LiveStreamingSignupLink]: s
+						[h.a.LiveStreamingSignupLink]: s
 					}),
 					href: Object(c.a)(r, l, "/register"),
 					onClick: e => {
-						Object(a.a)(e) && (e.preventDefault(), e.stopPropagation(), d(), h(Object(m.c)("user_convert")))
+						Object(a.a)(e) && (e.preventDefault(), e.stopPropagation(), d(), u(Object(m.c)("user_convert")))
 					},
 					"data-redditstyle": !0
-				}, n.a.createElement(u.c, null, "sign up")))
+				}, p._("sign up", null, {
+					hk: "2GqETx"
+				})))
 			})
 		},
 		"./src/reddit/components/CommentsChat/Loader.ts": function(e, t, s) {
@@ -3786,4 +3789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.abfcb39326714c0440ba.js.map
+//# sourceMappingURL=PublicAccessNetwork.9d39e80914831ba6979d.js.map
