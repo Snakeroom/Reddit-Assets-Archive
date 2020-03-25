@@ -1,27 +1,28 @@
-// https://www.redditstatic.com/desktop2x/ColorPickerDropdown.f99c02c206b72b525f11.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ColorPickerDropdown.e520fc3dafae4eb92479.js
+// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ColorPickerDropdown"], {
 		"./src/reddit/components/StructuredStyles/ColorPicker/_ColorPickerDropdown.tsx": function(e, a, t) {
 			"use strict";
 			t.r(a);
 			t("./node_modules/core-js/modules/es6.regexp.match.js");
-			var l = t("./node_modules/react/index.js"),
-				o = t.n(l),
-				n = t("./src/higherOrderComponents/asTooltip.tsx"),
-				r = t("./src/lib/classNames/index.ts"),
-				s = t("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				c = t("./src/lib/domUtils/index.ts"),
-				i = t("./src/lib/lessComponent.tsx"),
-				d = t("./src/reddit/constants/keycodes.ts"),
-				u = t("./node_modules/lodash/debounce.js"),
-				m = t.n(u);
-			const p = "#000000",
-				C = /^#[0-9a-f]{6}$/i,
-				v = e => !!e && C.test(e);
-			class h extends o.a.Component {
+			var l = t("./node_modules/fbt/lib/FbtPublic.js"),
+				o = t("./node_modules/react/index.js"),
+				n = t.n(o),
+				r = t("./src/higherOrderComponents/asTooltip.tsx"),
+				s = t("./src/lib/classNames/index.ts"),
+				c = t("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				i = t("./src/lib/domUtils/index.ts"),
+				d = t("./src/lib/lessComponent.tsx"),
+				u = t("./src/reddit/constants/keycodes.ts"),
+				m = t("./node_modules/lodash/debounce.js"),
+				p = t.n(m);
+			const C = "#000000",
+				h = /^#[0-9a-f]{6}$/i,
+				v = e => !!e && h.test(e);
+			class b extends n.a.Component {
 				constructor(e) {
-					super(e), this.callOnChangeProp = m()(e => this.props.onChange(e), 100), this.onChange = e => {
+					super(e), this.callOnChangeProp = p()(e => this.props.onChange(e), 100), this.onChange = e => {
 						const {
 							value: a
 						} = e.currentTarget, t = v(a);
@@ -30,7 +31,7 @@
 							isHexColor: t
 						}), t && this.callOnChangeProp(a)
 					};
-					const a = e.value || p;
+					const a = e.value || C;
 					this.state = {
 						value: a,
 						isHexColor: v(a)
@@ -38,7 +39,7 @@
 				}
 				componentWillReceiveProps(e) {
 					this.setState(() => ({
-						value: e.value || p,
+						value: e.value || C,
 						isHexColor: v(e.value)
 					}))
 				}
@@ -48,86 +49,92 @@
 					} = this, {
 						state: a
 					} = this;
-					return o.a.createElement("div", {
+					return n.a.createElement("div", {
 						className: e.className
-					}, o.a.createElement("input", {
+					}, n.a.createElement("input", {
 						name: e.name,
 						onChange: this.onChange,
 						type: "color",
 						value: a.value
-					}), !a.isHexColor && o.a.createElement("div", null, "Value must be a hex color in the format #FFFFFF"))
+					}), !a.isHexColor && n.a.createElement("div", null, "Value must be a hex color in the format #FFFFFF"))
 				}
 			}
-			var E = t("./src/reddit/helpers/isValidHexColor/index.ts"),
-				b = t("./src/reddit/i18n/components.tsx"),
-				x = t("./src/reddit/i18n/utils.ts"),
-				S = t("./src/reddit/layout/row/Inline/index.tsx"),
-				g = t("./src/reddit/models/StructuredStyles/index.ts"),
-				O = t("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				w = t("./src/reddit/components/StructuredStyles/ColorPicker/index.m.less"),
-				k = t.n(w);
-			const y = i.a.wrapped(S.a, "Inline", k.a),
-				N = i.a.wrapped(h, "ColorInput", k.a),
-				j = e => {
+			var x = t("./src/reddit/helpers/isValidHexColor/index.ts"),
+				E = t("./src/reddit/layout/row/Inline/index.tsx"),
+				S = t("./src/reddit/models/StructuredStyles/index.ts"),
+				g = t("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				k = t("./src/reddit/components/StructuredStyles/ColorPicker/index.m.less"),
+				_ = t.n(k);
+			const w = d.a.wrapped(E.a, "Inline", _.a),
+				O = d.a.wrapped(b, "ColorInput", _.a),
+				y = e => {
 					e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
 				};
-			a.default = Object(n.a)(Object(s.a)(e => o.a.createElement("div", {
-				onClick: j,
-				className: k.a.ColorPickerDropdown,
+			a.default = Object(r.a)(Object(c.a)(e => n.a.createElement("div", {
+				onClick: y,
+				className: _.a.ColorPickerDropdown,
 				style: e.style
-			}, o.a.createElement("div", {
-				className: k.a.SectionTitle
-			}, o.a.createElement(b.c, null, "Color Picker")), o.a.createElement("div", {
-				className: k.a.ColorSwatchContainer
-			}, g.b.map(a => o.a.createElement("div", {
+			}, n.a.createElement("div", {
+				className: _.a.SectionTitle
+			}, l.fbt._("Color Picker", null, {
+				hk: "2H3KoA"
+			})), n.a.createElement("div", {
+				className: _.a.ColorSwatchContainer
+			}, S.b.map(a => n.a.createElement("div", {
 				onClick: () => {
 					e.onSelectColor(a)
 				},
 				key: a
-			}, o.a.createElement("div", {
-				className: Object(r.a)(k.a.ColorSwatchOption, {
-					[k.a.isSelected]: e.value === a
+			}, n.a.createElement("div", {
+				className: Object(s.a)(_.a.ColorSwatchOption, {
+					[_.a.isSelected]: e.value === a
 				}),
 				style: {
 					backgroundColor: a
 				}
-			}))), e.includeTransparent && o.a.createElement("div", {
+			}))), e.includeTransparent && n.a.createElement("div", {
 				onClick: () => e.onSelectColor(void 0)
-			}, o.a.createElement("div", {
-				className: Object(r.a)(k.a.ColorSwatchOption, {
-					[k.a.isSelected]: !e.value,
-					[k.a.isTransparent]: !0
+			}, n.a.createElement("div", {
+				className: Object(s.a)(_.a.ColorSwatchOption, {
+					[_.a.isSelected]: !e.value,
+					[_.a.isTransparent]: !0
 				})
-			}))), o.a.createElement("div", {
-				className: k.a.SectionTitle
-			}, o.a.createElement(b.c, null, "Hex Code")), o.a.createElement(y, null, o.a.createElement("div", {
-				className: Object(r.a)(k.a.ColorSwatchPreview, {
-					[k.a.isTransparent]: e.includeTransparent && !e.value
+			}))), n.a.createElement("div", {
+				className: _.a.SectionTitle
+			}, l.fbt._("Hex Code", null, {
+				hk: "THCze"
+			})), n.a.createElement(w, null, n.a.createElement("div", {
+				className: Object(s.a)(_.a.ColorSwatchPreview, {
+					[_.a.isTransparent]: e.includeTransparent && !e.value
 				}),
 				style: {
-					backgroundColor: e.value ? e.value : e.includeTransparent ? Object(O.a)(e).body : g.d
+					backgroundColor: e.value ? e.value : e.includeTransparent ? Object(g.a)(e).body : S.d
 				}
-			}), o.a.createElement("input", {
-				className: Object(r.a)(k.a.HexColorInput, e.inputValue && !Object(E.b)(e.inputValue, !0) && k.a.isInvalid),
-				placeholder: Object(x.c)("Hex #"),
+			}), n.a.createElement("input", {
+				className: Object(s.a)(_.a.HexColorInput, e.inputValue && !Object(x.b)(e.inputValue, !0) && _.a.isInvalid),
+				placeholder: l.fbt._("Hex #", null, {
+					hk: "1RBoiG"
+				}),
 				onChange: e.onChangeHexColor,
 				value: e.inputValue || "",
-				maxLength: E.a,
+				maxLength: x.a,
 				onKeyDown: a => {
-					a.keyCode === d.a.Enter && Object(E.b)(e.inputValue, !0) && e.onToggleDropdown()
+					a.keyCode === u.a.Enter && Object(x.b)(e.inputValue, !0) && e.onToggleDropdown()
 				}
-			}), e.inputValue && !Object(E.b)(e.inputValue, !0) && o.a.createElement("span", {
-				className: k.a.ErrorMarker
-			}, "!")), Object(c.d)().color && !navigator.userAgent.match(/Edge/) && o.a.createElement("label", {
-				className: k.a.StyledLabel,
+			}), e.inputValue && !Object(x.b)(e.inputValue, !0) && n.a.createElement("span", {
+				className: _.a.ErrorMarker
+			}, "!")), Object(i.d)().color && !navigator.userAgent.match(/Edge/) && n.a.createElement("label", {
+				className: _.a.StyledLabel,
 				onClick: a => {
 					"LABEL" === a.target.tagName && e.onClickUseSystemColorPicker()
 				}
-			}, o.a.createElement(b.c, null, "Use Browser Color Picker"), o.a.createElement(N, {
+			}, l.fbt._("Use Browser Color Picker", null, {
+				hk: "2elQba"
+			}), n.a.createElement(O, {
 				onChange: e.onSelectColor,
 				value: e.value
 			})))))
 		}
 	}
 ]);
-//# sourceMappingURL=ColorPickerDropdown.f99c02c206b72b525f11.js.map
+//# sourceMappingURL=ColorPickerDropdown.e520fc3dafae4eb92479.js.map

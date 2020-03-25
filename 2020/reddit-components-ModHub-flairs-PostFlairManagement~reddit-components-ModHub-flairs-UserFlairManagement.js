@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9aab058d3b2cfd266187.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.69fa1e448872c1ff0bb9.js
+// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -369,8 +369,8 @@
 				S = x("add"),
 				w = O("assign_own"),
 				I = O("enable"),
-				k = O("mods_only"),
-				_ = O("edit_text"),
+				_ = O("mods_only"),
+				k = O("edit_text"),
 				P = (e, t) => t ? S(e) : T(e),
 				D = e => O("post_flair_template")(f.d.LinkFlair, e),
 				N = (e, t) => s => Object.assign({}, E(s), {
@@ -398,20 +398,20 @@
 					})
 				});
 			var B, U = s("./src/reddit/i18n/components.tsx"),
-				L = s("./src/reddit/i18n/utils.ts"),
-				A = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
+				A = s("./src/reddit/i18n/utils.ts"),
+				L = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				H = s("./src/reddit/constants/colors.ts"),
 				V = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				W = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairsDisabledBanner/index.m.less"),
 				Q = s.n(W),
-				J = e => o.a.createElement(A.a, {
+				J = e => o.a.createElement(L.a, {
 					className: e.className,
 					color: H.a.quarantine,
 					icon: o.a.createElement(V.a, {
 						className: Q.a.icon
 					}),
-					subtitle: e.flairTemplateType === f.d.UserFlair ? Object(L.c)("User flairs will not be visible until feature is enabled") : Object(L.c)("Post flairs will not be visible until feature is enabled"),
-					title: e.flairTemplateType === f.d.UserFlair ? Object(L.c)("User flair is disabled") : Object(L.c)("Post flair is disabled")
+					subtitle: e.flairTemplateType === f.d.UserFlair ? Object(A.c)("User flairs will not be visible until feature is enabled") : Object(A.c)("Post flairs will not be visible until feature is enabled"),
+					title: e.flairTemplateType === f.d.UserFlair ? Object(A.c)("User flair is disabled") : Object(A.c)("Post flair is disabled")
 				}),
 				q = s("./node_modules/lodash/isEqual.js"),
 				G = s.n(q),
@@ -500,19 +500,19 @@
 						className: oe.a.container
 					}, o.a.createElement(Y.g, {
 						className: oe.a.modalHeader
-					}, o.a.createElement(Y.n, null, e ? Object(L.c)("User flair settings") : Object(L.c)("Post flair settings")), o.a.createElement(X.a, {
+					}, o.a.createElement(Y.n, null, e ? Object(A.c)("User flair settings") : Object(A.c)("Post flair settings")), o.a.createElement(X.a, {
 						className: oe.a.modalCloseButton,
 						onClick: this.props.onClose
 					}, o.a.createElement(Y.b, null))), o.a.createElement("div", {
 						className: oe.a.contentBlock
 					}, o.a.createElement(ae, {
-						label: e ? Object(L.c)("Enable user flair in this community") : Object(L.c)("Enable post flair in this community")
+						label: e ? Object(A.c)("Enable user flair in this community") : Object(A.c)("Enable post flair in this community")
 					}, o.a.createElement(Z.a, {
 						on: t.displaySettings.isEnabled,
 						onToggle: this.onToggleIsEnabled
 					})), o.a.createElement(ae, {
 						className: oe.a.assignOwnControl,
-						label: Object(L.c)("Allow users to assign their own"),
+						label: Object(A.c)("Allow users to assign their own"),
 						labelClassName: t.displaySettings.isEnabled ? void 0 : oe.a.disabled
 					}, o.a.createElement(Z.a, {
 						disabled: !t.displaySettings.isEnabled,
@@ -520,7 +520,7 @@
 						onToggle: this.onToggleCanAssignOwn
 					})), o.a.createElement("div", {
 						className: oe.a.details
-					}, e ? Object(L.c)("This will let users select, edit, and clear user flair for their usernames in this community. This does not allow users to select or edit mod-only user flair.") : Object(L.c)("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair."))), o.a.createElement(Y.e, {
+					}, e ? Object(A.c)("This will let users select, edit, and clear user flair for their usernames in this community. This does not allow users to select or edit mod-only user flair.") : Object(A.c)("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair."))), o.a.createElement(Y.e, {
 						className: oe.a.modalFooter
 					}, o.a.createElement(Y.a, {
 						onClick: this.props.onClose
@@ -585,8 +585,8 @@
 				Se = s("./node_modules/react-redux/es/index.js"),
 				we = s("./node_modules/reselect/es/index.js"),
 				Ie = s("./src/reddit/actions/tooltip.ts"),
-				ke = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
-				_e = s("./src/reddit/selectors/tooltip.ts"),
+				_e = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
+				ke = s("./src/reddit/selectors/tooltip.ts"),
 				Pe = s("./src/reddit/selectors/user.ts");
 			const De = ["right", "top"],
 				Ne = Object(we.c)({
@@ -594,7 +594,7 @@
 						let {
 							tooltipId: s
 						} = t;
-						return Object(_e.b)(s)(e)
+						return Object(ke.b)(s)(e)
 					},
 					language: Pe.O
 				});
@@ -602,7 +602,7 @@
 					onToggleDropdown: () => e(Object(Ie.h)(t))
 				}))(e => o.a.createElement("div", {
 					id: e.tooltipId
-				}, o.a.createElement(ke.a, {
+				}, o.a.createElement(_e.a, {
 					dropdownPosition: De,
 					isDropdownOpen: e.isDropdownOpen,
 					language: e.language,
@@ -630,8 +630,8 @@
 				}
 			}
 			var Ue = s("./src/reddit/actions/flairManagement/index.ts"),
-				Le = s("./src/reddit/actions/post.ts"),
-				Ae = s("./src/reddit/components/ThemeProvider/index.tsx"),
+				Ae = s("./src/reddit/actions/post.ts"),
+				Le = s("./src/reddit/components/ThemeProvider/index.tsx"),
 				He = s("./src/reddit/constants/postLayout.ts"),
 				Ve = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				We = s("./src/reddit/controls/LayoutSwitch/index.tsx"),
@@ -650,7 +650,7 @@
 					isRequestInProgress: e.isRequestInProgress,
 					onRemove: e.onRemove
 				}) : o.a.createElement(Ze.b, {
-					label: Object(L.c)("Drag and Drop or Upload Image"),
+					label: Object(A.c)("Drag and Drop or Upload Image"),
 					onChange: e.onChange
 				}),
 				tt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/PostFlairStyleTemplateEditor/index.m.less"),
@@ -745,13 +745,13 @@
 					}, o.a.createElement("fieldset", {
 						className: st.a.leftFieldset
 					}, o.a.createElement(ae, {
-						label: Object(L.c)("Post title color")
+						label: Object(A.c)("Post title color")
 					}, o.a.createElement(Fe, {
 						onChange: this.onChangePostTitleColor,
 						tooltipId: "flair-postTitleColor-" + a,
 						value: n
 					})), o.a.createElement(ae, {
-						label: Object(L.c)("Thumbnail placeholder"),
+						label: Object(A.c)("Thumbnail placeholder"),
 						labelPosition: B.Top,
 						preventDefaultLabelClick: !!l
 					}, o.a.createElement(et, {
@@ -761,17 +761,17 @@
 						onRemove: this.onRemovePlaceholderImage
 					}), o.a.createElement("div", {
 						className: st.a.imageUploadHelpText
-					}, Object(L.c)("Required Size: 256 x 256px\n Appears in Classic and Card views")))), o.a.createElement("fieldset", {
+					}, Object(A.c)("Required Size: 256 x 256px\n Appears in Classic and Card views")))), o.a.createElement("fieldset", {
 						className: st.a.rightFieldset
 					}, o.a.createElement(ae, {
-						label: Object(L.c)("Post background color")
+						label: Object(A.c)("Post background color")
 					}, o.a.createElement(Fe, {
 						onChange: this.onChangePostBackgroundColor,
 						tooltipId: "flair-postBackgroundColor-" + a,
 						value: i
 					})), o.a.createElement(ae, {
 						labelPosition: B.Top,
-						label: Object(L.c)("Post background image"),
+						label: Object(A.c)("Post background image"),
 						preventDefaultLabelClick: !!r
 					}, o.a.createElement(et, {
 						imageData: r,
@@ -780,7 +780,7 @@
 						onRemove: this.onRemoveBackgroundImage
 					}), o.a.createElement("div", {
 						className: st.a.imageUploadHelpText
-					}, Object(L.c)("Jpeg or png files up to 10 MB\n Recommended image size: 864 x 120px")))))
+					}, Object(A.c)("Jpeg or png files up to 10 MB\n Recommended image size: 864 x 120px")))))
 				}
 			}
 			var lt = Object(Se.b)(ot, it)(rt),
@@ -794,7 +794,7 @@
 				mt = Object(Se.b)(pt, (e, t) => ({
 					deleteExamplePost: () => e(Object(Ue.b)(u.e)),
 					makeExamplePost: s => e(Object(Ue.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Le.T)({
+					updateExamplePost: t => e(Object(Ae.T)({
 						[u.e]: {
 							flair: [t]
 						}
@@ -862,7 +862,7 @@
 						ref: this.postWrapperRef,
 						onClickCapture: this.onPostPreviewClickCapture,
 						className: Object($.a)(dt.a.postWrapper, dt.a[a])
-					}, o.a.createElement(Ae.a, {
+					}, o.a.createElement(Le.a, {
 						forceDayMode: !0
 					}, o.a.createElement(r, {
 						className: dt.a.postComponent,
@@ -1012,7 +1012,7 @@
 						className: bt.a.leftFieldset
 					}, o.a.createElement("legend", null, o.a.createElement(U.c, null, "Flair appearance")), o.a.createElement(ae, {
 						labelPosition: B.Top,
-						label: Object(L.c)("Flair text")
+						label: Object(A.c)("Flair text")
 					}, o.a.createElement(m, {
 						allowBlank: !p,
 						autofocus: !0,
@@ -1027,34 +1027,34 @@
 						onBlur: this.onFlairEditBlur
 					})), o.a.createElement(ae, {
 						labelPosition: B.Top,
-						label: Object(L.c)("CSS class")
+						label: Object(A.c)("CSS class")
 					}, o.a.createElement(Oe.c, {
 						className: bt.a.cssClassInput,
 						maxLength: u.b,
 						onChange: this.onCSSClassValueChange,
-						placeholder: Object(L.c)("none"),
+						placeholder: Object(A.c)("none"),
 						spellCheck: !1,
 						value: s.cssClass || ""
 					}), o.a.createElement("div", {
 						className: d ? bt.a.cssClassErrorText : bt.a.cssClassInfoText
 					}, d || o.a.createElement(U.c, null, "Optional"))), n && o.a.createElement(ae, {
-						label: Object(L.c)("Add flair background")
+						label: Object(A.c)("Add flair background")
 					}, o.a.createElement(Z.a, {
 						on: v,
 						onToggle: this.onToggleBackgroundTransparency
 					})), v && o.a.createElement(o.a.Fragment, null, o.a.createElement(ae, {
-						label: Object(L.c)("Flair background color")
+						label: Object(A.c)("Flair background color")
 					}, o.a.createElement(Fe, {
 						onChange: this.onChangeBackgroundColor,
 						tooltipId: "flair-background-color-" + s.id,
 						value: E
 					})), o.a.createElement(ae, {
-						label: Object(L.c)("Flair text color")
+						label: Object(A.c)("Flair text color")
 					}, o.a.createElement(Be, {
 						isDark: s.textColor === f.e.Dark,
 						onChange: this.onChangeTextColor
 					}))), i && o.a.createElement(ae, {
-						label: Object(L.c)("Edit post appearance")
+						label: Object(A.c)("Edit post appearance")
 					}, o.a.createElement(Z.a, {
 						on: !!s.styleTemplate,
 						onToggle: this.onTogglePostAppearanceSettings
@@ -1064,7 +1064,7 @@
 						label: o.a.createElement("span", {
 							className: bt.a.labelWithTooltip
 						}, o.a.createElement(U.c, null, "Mod only"), o.a.createElement(c.a, {
-							text: Object(L.c)("Flair is only available for mods to select")
+							text: Object(A.c)("Flair is only available for mods to select")
 						}))
 					}, o.a.createElement(Z.a, {
 						on: !!s.modOnly,
@@ -1074,14 +1074,14 @@
 						label: o.a.createElement("span", {
 							className: bt.a.labelWithTooltip
 						}, o.a.createElement(U.c, null, "Allow user edits"), o.a.createElement(c.a, {
-							text: Object(L.c)("Users will be able to edit flair text")
+							text: Object(A.c)("Users will be able to edit flair text")
 						}))
 					}, o.a.createElement(Z.a, {
 						disabled: s.modOnly,
 						on: pe(s),
 						onToggle: this.onToggleAllowUserEdits
 					})), pe(s) && e && o.a.createElement(ae, {
-						label: Object(L.c)("This flair allows"),
+						label: Object(A.c)("This flair allows"),
 						labelPosition: B.Top
 					}, o.a.createElement(Te.a, {
 						value: s.allowableContent || f.a.All,
@@ -1100,7 +1100,7 @@
 						showButton: !0,
 						value: f.a.Text
 					}, o.a.createElement(U.c, null, "Text only")))), pe(s) && s.allowableContent !== f.a.Text && e && o.a.createElement(ae, {
-						label: Object(L.c)("Limit number of emojis"),
+						label: Object(A.c)("Limit number of emojis"),
 						labelPosition: B.Top
 					}, o.a.createElement(ye.a, {
 						buttonClassName: bt.a.dropdownSelectorButton,
@@ -1128,7 +1128,7 @@
 					}) : o.a.createElement(U.c, null, "Save"))))
 				}
 			}
-			const Ot = (e, t) => e.modOnly ? Object(L.c)("Mod only") : e.textEditable ? t ? Object(L.c)("Editable, ".concat(Object(L.b)("restrictions", Object(b.k)(e).toLowerCase()))) : Object(L.c)("Editable") : "",
+			const Ot = (e, t) => e.modOnly ? Object(A.c)("Mod only") : e.textEditable ? t ? Object(A.c)("Editable, ".concat(Object(A.b)("restrictions", Object(b.k)(e).toLowerCase()))) : Object(A.c)("Editable") : "",
 				yt = e => Object.assign({}, u.a, {
 					backgroundColor: e === f.d.UserFlair ? H.b : H.a.defaultFlair
 				});
@@ -1193,16 +1193,16 @@
 			}
 			var wt = s("./src/reddit/icons/svgs/Tag/index.tsx"),
 				It = s("./src/reddit/components/ModHub/flairs/FlairManagement/Placeholder/index.m.less"),
-				kt = s.n(It),
-				_t = e => o.a.createElement("div", {
-					className: kt.a.container
+				_t = s.n(It),
+				kt = e => o.a.createElement("div", {
+					className: _t.a.container
 				}, o.a.createElement(wt.a, {
-					className: kt.a.icon
+					className: _t.a.icon
 				}), o.a.createElement("h3", {
-					className: kt.a.header
-				}, e.flairTemplateType === f.d.UserFlair ? Object(L.c)("You do not have any user flair") : Object(L.c)("You do not have any post flair")), o.a.createElement("p", {
-					className: kt.a.details
-				}, e.flairTemplateType === f.d.UserFlair ? Object(L.c)("Create user flair in your community today") : Object(L.c)("Create post flair in your community today"))),
+					className: _t.a.header
+				}, e.flairTemplateType === f.d.UserFlair ? Object(A.c)("You do not have any user flair") : Object(A.c)("You do not have any post flair")), o.a.createElement("p", {
+					className: _t.a.details
+				}, e.flairTemplateType === f.d.UserFlair ? Object(A.c)("Create user flair in your community today") : Object(A.c)("Create post flair in your community today"))),
 				Pt = s("./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less"),
 				Dt = s.n(Pt);
 
@@ -1231,7 +1231,7 @@
 				templateIdsNewOrder: [],
 				templateIdToRemove: void 0
 			};
-			class Lt extends o.a.Component {
+			class At extends o.a.Component {
 				constructor() {
 					super(...arguments), this.isUnmounted = !1, this.state = Object.assign({}, Ut), this.hasUnsavedChanges = () => {
 						return this.state.templateDraft !== this.state.templateBeforeEditing
@@ -1323,7 +1323,7 @@
 						flairTemplateType: s
 					} = this.props, a = !e.id;
 					if (!t) return;
-					e.modOnly !== t.modOnly && this.props.sendEvent(k(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(_(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(D(!!e.styleTemplate));
+					e.modOnly !== t.modOnly && this.props.sendEvent(_(s, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(k(s, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(D(!!e.styleTemplate));
 					const n = e.allowableContent || f.a.All;
 					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(s, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(s, Object(b.l)(e))), this.props.sendEvent(P(s, a))
 				}
@@ -1359,16 +1359,16 @@
 					}, o.a.createElement(U.c, null, "Save"))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h.i, {
 						className: Dt.a.settingsButton,
 						onClick: this.onSettingsButtonClick
-					}, m ? Object(L.c)("User flair settings") : Object(L.c)("Post flair settings")), o.a.createElement(h.i, {
+					}, m ? Object(A.c)("User flair settings") : Object(A.c)("Post flair settings")), o.a.createElement(h.i, {
 						disabled: s !== Bt.Default || t.length < 2,
 						onClick: this.onReorderButtonClick
 					}, o.a.createElement(U.c, null, "Reorder")), o.a.createElement(h.f, {
 						disabled: s !== Bt.Default || E,
 						onClick: this.onAddNewTemplateButtonClick,
-						title: E ? Object(L.c)("Maximum number of templates reached") : void 0
+						title: E ? Object(A.c)("Maximum number of templates reached") : void 0
 					}, o.a.createElement(U.c, null, "Add flair")))), o.a.createElement(d.a, {
 						className: Dt.a.contentContainer
-					}, o.a.createElement(d.b, null, m ? Object(L.c)("User flair management") : Object(L.c)("Post flair management"), o.a.createElement(l.a, {
+					}, o.a.createElement(d.b, null, m ? Object(A.c)("User flair management") : Object(A.c)("Post flair management"), o.a.createElement(l.a, {
 						linkUrl: "".concat(a.a.redditHelpUrl.modHelpCenter).concat(this.props.helpCenterLink)
 					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(J, {
 						className: Dt.a.disabledBanner,
@@ -1379,21 +1379,21 @@
 						className: Dt.a.tableHead
 					}, o.a.createElement("div", {
 						className: Dt.a.flairPreviewColHeader
-					}, m ? Object(L.c)("User flair preview") : Object(L.c)("Post flair preview")), o.a.createElement("div", {
+					}, m ? Object(A.c)("User flair preview") : Object(A.c)("Post flair preview")), o.a.createElement("div", {
 						className: Dt.a.cssClassColHeader
 					}, o.a.createElement(U.c, null, "CSS class"), o.a.createElement(c.a, {
-						text: Object(L.c)("CSS classes determine the styling for flair in old Reddit")
+						text: Object(A.c)("CSS classes determine the styling for flair in old Reddit")
 					})), o.a.createElement("div", {
 						className: Dt.a.settingsColHeader
 					}, o.a.createElement(U.c, null, "Settings"), o.a.createElement(c.a, {
-						text: e ? Object(L.c)("Shows if flair is mod-only, user editable, allows text, or allows emojis") : Object(L.c)("Set flair to be user editable or mod-only")
+						text: e ? Object(A.c)("Shows if flair is mod-only, user editable, allows text, or allows emojis") : Object(A.c)("Set flair to be user editable or mod-only")
 					})), o.a.createElement("div", {
 						className: Dt.a.flairIdColHeader
 					}, o.a.createElement(U.c, null, "Flair ID"), o.a.createElement(c.a, {
-						text: Object(L.c)("Use this ID when configuring automod to assign flair")
+						text: Object(A.c)("Use this ID when configuring automod to assign flair")
 					}))), o.a.createElement("div", {
 						className: Dt.a.tableBody
-					}, s === Bt.Default && !t.length && o.a.createElement(_t, {
+					}, s === Bt.Default && !t.length && o.a.createElement(kt, {
 						flairTemplateType: this.props.flairTemplateType
 					}), s === Bt.Reordering ? o.a.createElement(g.a, {
 						values: this.state.templateIdsNewOrder,
@@ -1422,16 +1422,16 @@
 						dialogId: Ft,
 						enabled: b
 					}), this.props.activeModalId === Ft && o.a.createElement(r.a, {
-						actionText: Object(L.c)("Discard"),
-						headerText: C ? Object(L.c)("Discard changes before leaving?") : Object(L.c)("Discard new flair?"),
-						modalText: C ? Object(L.c)("You have made some changes to your flair, do you wish to discard the changes to the flair you are editing?") : Object(L.c)("You have a new flair that has not been saved, do you wish to discard this new flair?"),
+						actionText: Object(A.c)("Discard"),
+						headerText: C ? Object(A.c)("Discard changes before leaving?") : Object(A.c)("Discard new flair?"),
+						modalText: C ? Object(A.c)("You have made some changes to your flair, do you wish to discard the changes to the flair you are editing?") : Object(A.c)("You have a new flair that has not been saved, do you wish to discard this new flair?"),
 						onConfirm: this.onDiscardUnsavedChangesConfirmed,
 						toggleModal: this.onCloseModal,
 						withOverlay: !0
 					}), this.props.activeModalId === Mt && o.a.createElement(r.a, {
-						actionText: Object(L.c)("Delete"),
-						headerText: m ? Object(L.c)("Delete user flair?") : Object(L.c)("Delete post flair?"),
-						modalText: m ? Object(L.c)("Do you wish to delete this user flair?") : Object(L.c)("Do you wish to delete this post flair?"),
+						actionText: Object(A.c)("Delete"),
+						headerText: m ? Object(A.c)("Delete user flair?") : Object(A.c)("Delete post flair?"),
+						modalText: m ? Object(A.c)("Do you wish to delete this user flair?") : Object(A.c)("Do you wish to delete this post flair?"),
 						onConfirm: this.onRemoveTemplateConfirmed,
 						toggleModal: this.onCloseModal,
 						withOverlay: !0
@@ -1445,7 +1445,7 @@
 					}))
 				}
 			}
-			t.a = Object(m.c)(Lt)
+			t.a = Object(m.c)(At)
 		},
 		"./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx": function(e, t, s) {
 			"use strict";
@@ -1511,7 +1511,7 @@
 						value: t
 					}
 				}
-				componentWillReceiveProps(e) {
+				UNSAFE_componentWillReceiveProps(e) {
 					this.setState(() => ({
 						value: e.value,
 						inputValue: e.value
@@ -1536,7 +1536,6 @@
 						inputValue: t.inputValue,
 						includeTransparent: e.includeTransparent,
 						isOpen: e.isDropdownOpen,
-						language: e.language,
 						onChangeHexColor: this.onChangeHexColor,
 						onSelectColor: this.onChangeProp,
 						onToggleDropdown: e.onToggleDropdown,
@@ -1641,40 +1640,42 @@
 			})), s.d(t, "b", (function() {
 				return v
 			}));
-			var a = s("./node_modules/react/index.js"),
-				n = s.n(a),
-				o = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/i18n/utils.ts"),
-				r = s("./src/reddit/models/Image/index.tsx"),
-				l = s("./src/reddit/components/Media/LoadingIcon/index.tsx"),
-				c = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				d = s("./src/reddit/controls/ImageDisplay/index.tsx"),
-				p = s("./src/reddit/controls/TextButton/index.tsx"),
-				m = s("./src/reddit/icons/svgs/Trash/index.tsx"),
+			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				i = s("./src/lib/classNames/index.ts"),
+				r = s("./src/reddit/components/Media/LoadingIcon/index.tsx"),
+				l = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
+				c = s("./src/reddit/controls/ImageDisplay/index.tsx"),
+				d = s("./src/reddit/controls/TextButton/index.tsx"),
+				p = s("./src/reddit/icons/svgs/Trash/index.tsx"),
+				m = s("./src/reddit/models/Image/index.tsx"),
 				u = s("./src/reddit/components/StructuredStyles/UploadedImage/index.m.less"),
 				h = s.n(u),
 				g = s("./src/lib/lessComponent.tsx");
-			const b = l.a,
-				f = g.a.wrapped(m.a, "TrashIcon", h.a),
-				C = e => n.a.createElement("div", {
-					className: Object(o.a)(h.a.BottomRow, {
+			const b = r.a,
+				f = g.a.wrapped(p.a, "TrashIcon", h.a),
+				C = e => o.a.createElement("div", {
+					className: Object(i.a)(h.a.BottomRow, {
 						[h.a.isHiding]: e.isHiding
 					})
 				}, e.children),
-				v = g.a.wrapped(c.c, "ErrorText", h.a);
+				v = g.a.wrapped(l.c, "ErrorText", h.a);
 			t.e = e => {
-				const t = e.imageData && e.imageData.kind === r.b.FailedToUpload ? e.imageData.error : "",
-					s = !t && e.imageData.kind === r.b.NotUploaded,
-					a = e.isRequestInProgress && e.imageData.kind === r.b.TempUploaded,
-					l = s || a;
-				return n.a.createElement(d.a, {
+				const t = e.imageData && e.imageData.kind === m.b.FailedToUpload ? e.imageData.error : "",
+					s = !t && e.imageData.kind === m.b.NotUploaded,
+					n = e.isRequestInProgress && e.imageData.kind === m.b.TempUploaded,
+					r = s || n;
+				return o.a.createElement(c.a, {
 					backgroundImage: e.imageData.url,
-					className: Object(o.a)(e.className, h.a.imageDisplay)
-				}, l && n.a.createElement(b, null), n.a.createElement(C, {
-					isHiding: !!l
-				}, t && n.a.createElement(v, null, Object(i.c)("Something went wrong")), n.a.createElement(p.a, {
+					className: Object(i.a)(e.className, h.a.imageDisplay)
+				}, r && o.a.createElement(b, null), o.a.createElement(C, {
+					isHiding: !!r
+				}, t && o.a.createElement(v, null, a.fbt._("Something went wrong", null, {
+					hk: "2xn6Fx"
+				})), o.a.createElement(d.a, {
 					onClick: e.onRemove
-				}, n.a.createElement(f, null))))
+				}, o.a.createElement(f, null))))
 			}
 		},
 		"./src/reddit/controls/LayoutSwitch/index.m.less": function(e, t, s) {
@@ -1786,11 +1787,11 @@
 					}, s))
 				},
 				I = Object(f.t)(),
-				k = Object(r.c)({
+				_ = Object(r.c)({
 					postLayout: f.L,
 					redditStyle: f.A
 				}),
-				_ = Object(i.b)(k, e => ({
+				k = Object(i.b)(_, e => ({
 					onListingLayoutChange: (t, s) => e(Object(d.v)(t, s)),
 					toggleTooltip: t => e(Object(p.h)({
 						tooltipId: t
@@ -1798,7 +1799,7 @@
 				}), (e, t, s) => Object.assign({}, e, t, s, {
 					toggleTooltip: e => t.toggleTooltip(e)
 				}));
-			t.a = I(_(Object(b.c)(e => {
+			t.a = I(k(Object(b.c)(e => {
 				const {
 					sendEvent: t,
 					subredditId: s
@@ -1941,4 +1942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9aab058d3b2cfd266187.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.69fa1e448872c1ff0bb9.js.map

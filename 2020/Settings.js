@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.bc80ce69803710aa3e66.js
-// Retrieved at 3/25/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fec8aa87ae0b991b8ce2.js
+// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -1912,41 +1912,37 @@
 		"./src/reddit/components/StructuredStyles/ImageUpload/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
+				return x
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/reddit/connectors/connectToLanguage.ts"),
-				c = n("./src/reddit/controls/FileDrop/index.tsx"),
-				l = n("./src/reddit/controls/ImageInput/index.tsx"),
-				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				m = n("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
-				u = n("./src/reddit/i18n/components.tsx"),
-				p = n("./src/reddit/components/StructuredStyles/ImageUpload/index.m.less"),
-				b = n.n(p);
-			const h = o.a.wrapped(m.a, "ImageUploadIcon", b.a),
-				g = o.a.div("ImageIconRow", b.a),
-				f = o.a.div("ImageUploadText", b.a),
-				v = o.a.wrapped(c.a, "FileDrop", b.a),
-				x = o.a.div("ContainerUploading", b.a),
-				C = Object(i.a)(e => a.a.createElement(x, {
-					className: e.className
-				}, a.a.createElement(g, null, a.a.createElement(d.a, {
-					sizePx: 40,
-					center: !0
-				})), a.a.createElement(f, null, a.a.createElement(u.c, null, "Uploading...")))),
-				y = o.a.label("Label", b.a);
-			t.b = e => a.a.createElement(v, {
+				i = n("./src/reddit/controls/FileDrop/index.tsx"),
+				c = n("./src/reddit/controls/ImageInput/index.tsx"),
+				l = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				d = n("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
+				m = n("./src/reddit/components/StructuredStyles/ImageUpload/index.m.less"),
+				u = n.n(m);
+			const {
+				fbt: p
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), b = o.a.wrapped(d.a, "ImageUploadIcon", u.a), h = o.a.div("ImageIconRow", u.a), g = o.a.div("ImageUploadText", u.a), f = o.a.wrapped(i.a, "FileDrop", u.a), v = o.a.div("ContainerUploading", u.a), x = e => a.a.createElement(v, {
+				className: e.className
+			}, a.a.createElement(h, null, a.a.createElement(l.a, {
+				sizePx: 40,
+				center: !0
+			})), a.a.createElement(g, null, p._("Uploading...", null, {
+				hk: "2ICpZ2"
+			}))), C = o.a.label("Label", u.a);
+			t.b = e => a.a.createElement(f, {
 				className: e.className,
 				onDrop: e.onChange,
-				render: t => a.a.createElement(y, {
+				render: t => a.a.createElement(C, {
 					className: Object(r.a)({
-						[b.a.isOver]: t
+						[u.a.isOver]: t
 					})
-				}, a.a.createElement(g, null, a.a.createElement(h, null)), a.a.createElement(f, null, e.label), a.a.createElement(l.a, {
-					className: b.a.ImageInput,
+				}, a.a.createElement(h, null, a.a.createElement(b, null)), a.a.createElement(g, null, e.label), a.a.createElement(c.a, {
+					className: u.a.ImageInput,
 					name: e.name,
 					value: e.value,
 					onChange: e.onChange,
@@ -2432,22 +2428,6 @@
 					onUnsubscribe: () => e(r.d([n], !1))
 				}
 			})
-		},
-		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				r = n("./src/reddit/selectors/user.ts");
-			const o = Object(a.c)({
-				language: r.O
-			});
-
-			function i(e) {
-				return Object(s.b)(o)(e)
-			}
 		},
 		"./src/reddit/constants/disclaimers.ts": function(e, t, n) {
 			"use strict";
@@ -5750,4 +5730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.bc80ce69803710aa3e66.js.map
+//# sourceMappingURL=Settings.fec8aa87ae0b991b8ce2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6a086a8775e6e37c3bb2.js
-// Retrieved at 3/25/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1128014356181c59b1bb.js
+// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -19983,41 +19983,37 @@
 		"./src/reddit/components/StructuredStyles/ImageUpload/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return v
+				return E
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				a = s("./src/lib/classNames/index.ts"),
 				r = s("./src/lib/lessComponent.tsx"),
-				i = s("./src/reddit/connectors/connectToLanguage.ts"),
-				d = s("./src/reddit/controls/FileDrop/index.tsx"),
-				c = s("./src/reddit/controls/ImageInput/index.tsx"),
-				l = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				m = s("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
-				u = s("./src/reddit/i18n/components.tsx"),
-				p = s("./src/reddit/components/StructuredStyles/ImageUpload/index.m.less"),
-				b = s.n(p);
-			const h = r.a.wrapped(m.a, "ImageUploadIcon", b.a),
-				g = r.a.div("ImageIconRow", b.a),
-				x = r.a.div("ImageUploadText", b.a),
-				f = r.a.wrapped(d.a, "FileDrop", b.a),
-				E = r.a.div("ContainerUploading", b.a),
-				v = Object(i.a)(e => o.a.createElement(E, {
-					className: e.className
-				}, o.a.createElement(g, null, o.a.createElement(l.a, {
-					sizePx: 40,
-					center: !0
-				})), o.a.createElement(x, null, o.a.createElement(u.c, null, "Uploading...")))),
-				C = r.a.label("Label", b.a);
-			t.b = e => o.a.createElement(f, {
+				i = s("./src/reddit/controls/FileDrop/index.tsx"),
+				d = s("./src/reddit/controls/ImageInput/index.tsx"),
+				c = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				l = s("./src/reddit/icons/svgs/ImageUpload/index.tsx"),
+				m = s("./src/reddit/components/StructuredStyles/ImageUpload/index.m.less"),
+				u = s.n(m);
+			const {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = r.a.wrapped(l.a, "ImageUploadIcon", u.a), h = r.a.div("ImageIconRow", u.a), g = r.a.div("ImageUploadText", u.a), x = r.a.wrapped(i.a, "FileDrop", u.a), f = r.a.div("ContainerUploading", u.a), E = e => o.a.createElement(f, {
+				className: e.className
+			}, o.a.createElement(h, null, o.a.createElement(c.a, {
+				sizePx: 40,
+				center: !0
+			})), o.a.createElement(g, null, p._("Uploading...", null, {
+				hk: "2ICpZ2"
+			}))), v = r.a.label("Label", u.a);
+			t.b = e => o.a.createElement(x, {
 				className: e.className,
 				onDrop: e.onChange,
-				render: t => o.a.createElement(C, {
+				render: t => o.a.createElement(v, {
 					className: Object(a.a)({
-						[b.a.isOver]: t
+						[u.a.isOver]: t
 					})
-				}, o.a.createElement(g, null, o.a.createElement(h, null)), o.a.createElement(x, null, e.label), o.a.createElement(c.a, {
-					className: b.a.ImageInput,
+				}, o.a.createElement(h, null, o.a.createElement(b, null)), o.a.createElement(g, null, e.label), o.a.createElement(d.a, {
+					className: u.a.ImageInput,
 					name: e.name,
 					value: e.value,
 					onChange: e.onChange,
@@ -27838,4 +27834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.6a086a8775e6e37c3bb2.js.map
+//# sourceMappingURL=ModerationPages.1128014356181c59b1bb.js.map
