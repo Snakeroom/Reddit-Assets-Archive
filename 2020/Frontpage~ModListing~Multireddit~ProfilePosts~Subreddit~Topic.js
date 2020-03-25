@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.c10a02b130f42a75068b.js
-// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.6a5bd6c2bb2ab38e7276.js
+// Retrieved at 3/25/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -79,10 +79,10 @@
 				}).apply(this, arguments)
 			}
 			const P = Object(l.t)(),
-				x = Object(i.c)({
+				y = Object(i.c)({
 					isFakeSubreddit: l.x
 				}),
-				y = Object(r.b)(x),
+				x = Object(r.b)(y),
 				v = e => {
 					const t = {
 						interactive: !1,
@@ -100,7 +100,7 @@
 					className: f.a.emptyScore,
 					key: "s"
 				}));
-			t.b = P(y(e => o.a.createElement("div", {
+			t.b = P(x(e => o.a.createElement("div", {
 				className: Object(a.a)(e.className, h.a.classicPostStyles, h.a.classicAndCompactPlaceholderStyles)
 			}, o.a.createElement(c.b, null, o.a.createElement(C, null)), o.a.createElement("div", {
 				className: f.a.mainBody
@@ -365,10 +365,10 @@
 				f = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				b = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
 				P = s.n(b),
-				x = s("./src/lib/lessComponent.tsx");
+				y = s("./src/lib/lessComponent.tsx");
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -388,12 +388,12 @@
 			const C = c.e[1] + 24,
 				w = g.f + 8 + 152 + 32 + 16,
 				j = w + C + 8,
-				O = x.a.div("Container", P.a),
-				S = x.a.wrapped(e => {
+				O = y.a.div("Container", P.a),
+				S = y.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = v(e, ["className"]);
-					return a.a.createElement(p, y({
+					return a.a.createElement(p, x({
 						className: t,
 						style: {
 							top: "calc(100vh - ".concat(40, "px)")
@@ -501,39 +501,39 @@
 					widgetKind: t
 				})
 			}, p.defaults);
-			var g = s("./src/reddit/i18n/components.tsx"),
-				f = s("./src/reddit/models/NewStructuredStyles/index.ts"),
-				b = s("./src/reddit/selectors/experiments/topPosts.ts"),
-				P = s("./src/reddit/selectors/structuredStyles.ts"),
-				x = s("./src/reddit/selectors/user.ts"),
+			var g = s("./src/reddit/models/NewStructuredStyles/index.ts"),
+				f = s("./src/reddit/selectors/experiments/topPosts.ts"),
+				b = s("./src/reddit/selectors/structuredStyles.ts"),
+				P = s("./src/reddit/selectors/user.ts"),
 				y = s("./src/reddit/models/Theme/index.ts"),
-				v = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const C = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(v.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				w = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(v.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				x = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			const v = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				C = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				w = e => {
+					const t = v(e);
+					return Object(y.f)(t)
+				},
 				j = e => {
 					const t = C(e);
 					return Object(y.f)(t)
-				},
-				O = e => {
-					const t = w(e);
-					return Object(y.f)(t)
 				};
-			var S = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				k = s.n(S);
-			const _ = Object(m.t)(),
-				E = Object(r.b)(() => Object(i.c)({
-					forceRedditStyle: (e, t) => {
-						const s = Object(m.m)(e, t) || void 0,
-							n = t.redditStyle || Object(P.m)(e, {
-								subredditId: s
-							}),
-							o = Object(x.Q)(e);
-						return n || o
-					},
-					nigtmode: x.Q,
-					subredditId: m.m,
-					topPostVariant: b.d
-				}));
+			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				S = s.n(O);
+			const {
+				fbt: k
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = Object(m.t)(), E = Object(r.b)(() => Object(i.c)({
+				forceRedditStyle: (e, t) => {
+					const s = Object(m.m)(e, t) || void 0,
+						n = t.redditStyle || Object(b.m)(e, {
+							subredditId: s
+						}),
+						o = Object(P.Q)(e);
+					return n || o
+				},
+				nigtmode: P.Q,
+				subredditId: m.m,
+				topPostVariant: f.d
+			}));
 			class N extends o.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = o.a.createRef(), this.state = {
@@ -557,11 +557,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = C(this.props), e.borderColor = Object(f.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = j(this.props), e
+					return e.backgroundColor = v(this.props), e.borderColor = Object(g.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = w(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = w(this.props), e.color = e.fill = O(this.props), e
+					return e.backgroundColor = C(this.props), e.color = e.fill = j(this.props), e
 				}
 				render() {
 					const {
@@ -574,35 +574,37 @@
 						title: c,
 						titleClassName: l,
 						truncateThreshold: m
-					} = this.props, p = s ? k.a.widgetContentOnly : k.a.widgetContent, h = !n && this.props.styles, f = h ? this.getWidgetBackgroundStyles() : {}, b = h ? this.getWidgetHeaderStyles() : {};
+					} = this.props, p = s ? S.a.widgetContentOnly : S.a.widgetContent, h = !n && this.props.styles, g = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
 					return o.a.createElement("div", {
-						className: Object(a.a)(t, k.a.widgetBackground, {
-							[k.a.redditStyle]: n,
-							[k.a.clickable]: !!i,
-							[k.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(a.a)(t, S.a.widgetBackground, {
+							[S.a.redditStyle]: n,
+							[S.a.clickable]: !!i,
+							[S.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: i,
-						style: f
+						style: g
 					}, c && o.a.createElement("div", {
-						className: k.a.widgetHeader,
-						style: b
+						className: S.a.widgetHeader,
+						style: f
 					}, o.a.createElement("div", {
-						className: Object(a.a)(k.a.widgetTitle, l)
+						className: Object(a.a)(S.a.widgetTitle, l)
 					}, o.a.createElement(d.b, {
 						type: d.a.Widget
 					}, c)), r), o.a.createElement("div", {
 						className: Object(a.a)(p, {
-							[k.a.truncated]: this.state.isTruncated
+							[S.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
 					}, e), this.state.isTruncated && o.a.createElement(u.n, {
-						className: k.a.seeMore,
+						className: S.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, o.a.createElement(g.c, null, "See More")))
+					}, k._("See More", null, {
+						hk: "4w47Qu"
+					})))
 				}
 			}
 			t.a = _(E(Object(c.a)(Object(l.c)(N))))
@@ -610,7 +612,7 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return x
+				return y
 			})), s.d(t, "d", (function() {
 				return v
 			})), s.d(t, "b", (function() {
@@ -633,7 +635,7 @@
 				b = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/selectors/tracking.ts");
 
-			function x() {
+			function y() {
 				return Object(l.t)({
 					currentProfileName: l.h,
 					isCommentPermalink: l.v,
@@ -644,7 +646,7 @@
 					pageLayer: e => e
 				})
 			}
-			const y = x(),
+			const x = y(),
 				v = {
 					apiError: g.c,
 					apiPending: g.d,
@@ -690,7 +692,7 @@
 					postClickEvent: u.f,
 					postComponentForLayout: e => Object(m.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(d.c)(y(j(e)))
+			t.a = e => Object(d.c)(x(j(e)))
 		},
 		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, s) {
 			"use strict";
@@ -856,7 +858,7 @@
 			s.d(t, "a", (function() {
 				return f
 			})), s.d(t, "c", (function() {
-				return y
+				return x
 			})), s.d(t, "b", (function() {
 				return v
 			}));
@@ -976,8 +978,8 @@
 				f = e => r.a.createElement(l, e),
 				b = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com"],
 				P = e => e.source && e.source.url && e.isSponsored && b.some(t => e.source.url.startsWith(t)),
-				x = e => !e.media || e.media.type === d.n.EMBED && !(d.b.has(e.media.provider) || P(e)),
-				y = (e, t) => {
+				y = e => !e.media || e.media.type === d.n.EMBED && !(d.b.has(e.media.provider) || P(e)),
+				x = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
 						case c.g.Medium:
@@ -1001,7 +1003,7 @@
 				if (o.isBlank) return f;
 				const r = !o.media && !!o.source && Object(i.a)(o.source.url),
 					d = t && r;
-				n === c.g.Large && x(o) && !d && (n = c.g.Medium);
+				n === c.g.Large && y(o) && !d && (n = c.g.Medium);
 				const l = g[n];
 				return void 0 === l ? (Object(a.a)(void 0, "Could not find component for layout ".concat(n, ".")), f) : s && o.isSponsored && n === c.g.Large ? h : l
 			}
@@ -1146,4 +1148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.c10a02b130f42a75068b.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.6a5bd6c2bb2ab38e7276.js.map

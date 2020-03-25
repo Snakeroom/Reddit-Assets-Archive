@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.38598fa981df3dd549fd.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.ef5e03d3982bc3a96bc2.js
+// Retrieved at 3/25/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -437,15 +437,14 @@
 				u = s("./src/lib/lessComponent.tsx"),
 				m = s("./src/lib/loadWithRetries/index.ts"),
 				b = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				p = s("./src/reddit/i18n/components.tsx"),
-				h = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				g = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				_ = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				f = s("./src/reddit/selectors/structuredStyles.ts"),
-				v = s("./src/reddit/selectors/userPrefs.ts"),
-				x = s("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
-				E = s.n(x),
-				y = function(e, t) {
+				p = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				h = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				g = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				_ = s("./src/reddit/selectors/structuredStyles.ts"),
+				f = s("./src/reddit/selectors/userPrefs.ts"),
+				v = s("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
+				x = s.n(v),
+				E = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -454,44 +453,40 @@
 					}
 					return s
 				};
-			const S = u.a.div("BladeContainer", E.a),
-				T = u.a.wrapped(g.a, "CloseIcon", E.a),
-				N = u.a.div("LoadingTitleContainer", E.a),
-				O = u.a.div("LoadingNavContainer", E.a),
-				C = u.a.div("ShortLoadingNav", E.a),
-				L = u.a.wrapped(h.a, "ThemedChevron", E.a),
-				j = e => {
-					var t = y(e, []);
-					return i.a.createElement(S, null, i.a.createElement(T, null), i.a.createElement(b.k, null, i.a.createElement(b.p, null, i.a.createElement(p.c, null, "Back to mod tools")), i.a.createElement(b.o, null, i.a.createElement(N, null, i.a.createElement("div", {
-						className: Object(l.a)(E.a.LoadingTitle, t.isLoading && E.a.loading)
-					})), i.a.createElement(O, null, i.a.createElement("div", {
-						className: Object(l.a)(E.a.LoadingNav, t.isLoading && E.a.loading)
-					}), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement(C, null), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement("div", {
-						className: Object(l.a)(E.a.LoadingNav, t.isLoading && E.a.loading)
-					}), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement(C, null), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement("div", {
-						className: Object(l.a)(E.a.LoadingNav, t.isLoading && E.a.loading)
-					}), i.a.createElement(L, null)))))
-				},
-				w = Object(d.a)({
-					getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-					ErrorComponent: () => i.a.createElement(j, {
-						gradientType: "posts",
-						isLoading: !1
-					}),
-					LoadingComponent: () => i.a.createElement(j, {
-						gradientType: "posts",
-						isLoading: !0
-					})
+			const {
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = u.a.div("BladeContainer", x.a), T = u.a.wrapped(h.a, "CloseIcon", x.a), N = u.a.div("LoadingTitleContainer", x.a), O = u.a.div("LoadingNavContainer", x.a), C = u.a.div("ShortLoadingNav", x.a), L = u.a.wrapped(p.a, "ThemedChevron", x.a), j = e => {
+				var t = E(e, []);
+				return i.a.createElement(S, null, i.a.createElement(T, null), i.a.createElement(b.k, null, i.a.createElement(b.p, null, y._("Back to mod tools", null, {
+					hk: "1YCI0W"
+				})), i.a.createElement(b.o, null, i.a.createElement(N, null, i.a.createElement("div", {
+					className: Object(l.a)(x.a.LoadingTitle, t.isLoading && x.a.loading)
+				})), i.a.createElement(O, null, i.a.createElement("div", {
+					className: Object(l.a)(x.a.LoadingNav, t.isLoading && x.a.loading)
+				}), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement(C, null), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement("div", {
+					className: Object(l.a)(x.a.LoadingNav, t.isLoading && x.a.loading)
+				}), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement(C, null), i.a.createElement(L, null)), i.a.createElement(O, null, i.a.createElement("div", {
+					className: Object(l.a)(x.a.LoadingNav, t.isLoading && x.a.loading)
+				}), i.a.createElement(L, null)))))
+			}, w = Object(d.a)({
+				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
+				ErrorComponent: () => i.a.createElement(j, {
+					gradientType: "posts",
+					isLoading: !1
 				}),
-				I = Object(c.c)({
-					isEditing: f.j,
-					isSubscriptionsPinned: v.b,
-					moderatorPermissions: _.j
-				});
+				LoadingComponent: () => i.a.createElement(j, {
+					gradientType: "posts",
+					isLoading: !0
+				})
+			}), I = Object(c.c)({
+				isEditing: _.j,
+				isSubscriptionsPinned: f.b,
+				moderatorPermissions: g.j
+			});
 			t.a = Object(a.b)(I)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? i.a.createElement("div", {
-					className: Object(l.a)(E.a.Container, e.isSubscriptionsPinned && E.a.isSubscriptionPinned)
+					className: Object(l.a)(x.a.Container, e.isSubscriptionsPinned && x.a.isSubscriptionPinned)
 				}, e.children, i.a.createElement(w, {
 					subredditId: e.subredditId
 				})) : i.a.createElement(o.Fragment, null, e.children)
@@ -1535,4 +1530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.38598fa981df3dd549fd.js.map
+//# sourceMappingURL=Topic.ef5e03d3982bc3a96bc2.js.map

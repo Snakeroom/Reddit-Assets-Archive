@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.914c86bcdbe9437630c2.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.189942f381179f228c1e.js
+// Retrieved at 3/25/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1530,39 +1530,39 @@
 					widgetKind: t
 				})
 			}, p.defaults);
-			var b = n("./src/reddit/i18n/components.tsx"),
-				x = n("./src/reddit/models/NewStructuredStyles/index.ts"),
-				g = n("./src/reddit/selectors/experiments/topPosts.ts"),
-				f = n("./src/reddit/selectors/structuredStyles.ts"),
-				v = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/models/Theme/index.ts"),
-				w = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const E = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(w.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				C = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(w.a)(e).widgetColors.sidebarWidgetHeaderColor,
+			var b = n("./src/reddit/models/NewStructuredStyles/index.ts"),
+				x = n("./src/reddit/selectors/experiments/topPosts.ts"),
+				g = n("./src/reddit/selectors/structuredStyles.ts"),
+				f = n("./src/reddit/selectors/user.ts"),
+				v = n("./src/reddit/models/Theme/index.ts"),
+				y = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			const w = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(y.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				E = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(y.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				C = e => {
+					const t = w(e);
+					return Object(v.f)(t)
+				},
 				k = e => {
 					const t = E(e);
-					return Object(y.f)(t)
-				},
-				_ = e => {
-					const t = C(e);
-					return Object(y.f)(t)
+					return Object(v.f)(t)
 				};
-			var j = n("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				O = n.n(j);
-			const M = Object(m.t)(),
-				P = Object(o.b)(() => Object(i.c)({
-					forceRedditStyle: (e, t) => {
-						const n = Object(m.m)(e, t) || void 0,
-							s = t.redditStyle || Object(f.m)(e, {
-								subredditId: n
-							}),
-							r = Object(v.Q)(e);
-						return s || r
-					},
-					nigtmode: v.Q,
-					subredditId: m.m,
-					topPostVariant: g.d
-				}));
+			var _ = n("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				j = n.n(_);
+			const {
+				fbt: O
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = Object(m.t)(), P = Object(o.b)(() => Object(i.c)({
+				forceRedditStyle: (e, t) => {
+					const n = Object(m.m)(e, t) || void 0,
+						s = t.redditStyle || Object(g.m)(e, {
+							subredditId: n
+						}),
+						r = Object(f.Q)(e);
+					return s || r
+				},
+				nigtmode: f.Q,
+				subredditId: m.m,
+				topPostVariant: x.d
+			}));
 			class L extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
@@ -1586,11 +1586,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = E(this.props), e.borderColor = Object(x.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = k(this.props), e
+					return e.backgroundColor = w(this.props), e.borderColor = Object(b.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = C(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = C(this.props), e.color = e.fill = _(this.props), e
+					return e.backgroundColor = E(this.props), e.color = e.fill = k(this.props), e
 				}
 				render() {
 					const {
@@ -1603,35 +1603,37 @@
 						title: d,
 						titleClassName: c,
 						truncateThreshold: m
-					} = this.props, p = n ? O.a.widgetContentOnly : O.a.widgetContent, h = !s && this.props.styles, x = h ? this.getWidgetBackgroundStyles() : {}, g = h ? this.getWidgetHeaderStyles() : {};
+					} = this.props, p = n ? j.a.widgetContentOnly : j.a.widgetContent, h = !s && this.props.styles, b = h ? this.getWidgetBackgroundStyles() : {}, x = h ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(a.a)(t, O.a.widgetBackground, {
-							[O.a.redditStyle]: s,
-							[O.a.clickable]: !!i,
-							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(a.a)(t, j.a.widgetBackground, {
+							[j.a.redditStyle]: s,
+							[j.a.clickable]: !!i,
+							[j.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": s,
 						onClick: i,
-						style: x
+						style: b
 					}, d && r.a.createElement("div", {
-						className: O.a.widgetHeader,
-						style: g
+						className: j.a.widgetHeader,
+						style: x
 					}, r.a.createElement("div", {
-						className: Object(a.a)(O.a.widgetTitle, c)
+						className: Object(a.a)(j.a.widgetTitle, c)
 					}, r.a.createElement(l.b, {
 						type: l.a.Widget
 					}, d)), o), r.a.createElement("div", {
 						className: Object(a.a)(p, {
-							[O.a.truncated]: this.state.isTruncated
+							[j.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(u.n, {
-						className: O.a.seeMore,
+						className: j.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, r.a.createElement(b.c, null, "See More")))
+					}, O._("See More", null, {
+						hk: "4w47Qu"
+					})))
 				}
 			}
 			t.a = M(P(Object(d.a)(Object(c.c)(L))))
@@ -2080,4 +2082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.914c86bcdbe9437630c2.js.map
+//# sourceMappingURL=PostDraft.189942f381179f228c1e.js.map
