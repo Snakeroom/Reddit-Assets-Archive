@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.7c75b5a56c47c394294a.js
-// Retrieved at 3/25/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.ae6e37702ed331c0f875.js
+// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -712,7 +712,7 @@
 				x = (e, t) => {
 					if (Object(o.a)(e)) {
 						const t = Object(d.g)(e);
-						return !!t.allowedPostTypes && t.allowedPostTypes.polls
+						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
 					const n = a.d.spPolls(e) || a.d.spKarmaPoints(e),
 						r = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
@@ -785,4 +785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.7c75b5a56c47c394294a.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.ae6e37702ed331c0f875.js.map

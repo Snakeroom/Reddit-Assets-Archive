@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.da6d15a9b70733adae0e.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.59ed1ef7fc9c248f7751.js
+// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -596,7 +596,7 @@
 				g = (e, t) => {
 					if (Object(c.a)(e)) {
 						const t = Object(d.g)(e);
-						return !!t.allowedPostTypes && t.allowedPostTypes.polls
+						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
 					const n = o.d.spPolls(e) || o.d.spKarmaPoints(e),
 						r = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
@@ -669,4 +669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.da6d15a9b70733adae0e.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.59ed1ef7fc9c248f7751.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4eba9a28c11d75e90b72.js
-// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e5cdcd434c803eb894cc.js
+// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -2008,32 +2008,31 @@
 				k = n("./src/reddit/models/PostCreationForm/index.ts"),
 				T = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/reddit/models/User/index.ts"),
-				I = n("./src/reddit/selectors/experiments/pollsGA.ts"),
-				P = n("./src/reddit/selectors/layers.ts"),
-				M = n("./src/reddit/selectors/postCreations.ts"),
-				N = n("./src/reddit/selectors/postDraft.ts"),
-				R = n("./src/reddit/selectors/scheduledPosts/index.ts"),
-				L = n("./src/reddit/selectors/user.ts"),
-				B = n("./src/reddit/models/Post/index.ts"),
-				F = n("./src/reddit/models/ScheduledPost/index.ts"),
-				D = n("./src/reddit/actions/postCreation/constants.ts"),
-				A = n("./src/reddit/actions/postCreation/general.ts"),
-				K = n("./src/reddit/actions/postCreation/mediaUpload.ts");
+				I = n("./src/reddit/selectors/layers.ts"),
+				P = n("./src/reddit/selectors/postCreations.ts"),
+				M = n("./src/reddit/selectors/postDraft.ts"),
+				N = n("./src/reddit/selectors/scheduledPosts/index.ts"),
+				R = n("./src/reddit/selectors/user.ts"),
+				L = n("./src/reddit/models/Post/index.ts"),
+				B = n("./src/reddit/models/ScheduledPost/index.ts"),
+				F = n("./src/reddit/actions/postCreation/constants.ts"),
+				D = n("./src/reddit/actions/postCreation/general.ts"),
+				A = n("./src/reddit/actions/postCreation/mediaUpload.ts");
 			n.d(t, "b", (function() {
-				return q
+				return z
 			})), n.d(t, "a", (function() {
-				return Y
+				return X
 			}));
-			const U = Object(r.a)(D.y),
-				H = Object(r.a)(D.N),
-				W = Object(r.a)(D.p),
-				V = Object(r.a)(D.A),
-				z = Object(r.a)(D.Y),
-				q = Object(r.a)(D.H),
-				G = Object(r.a)(D.a),
-				J = Object(r.a)(D.D),
-				Q = e => "/r/".concat(e, "/about/").concat(F.p),
-				Z = (e, t) => {
+			const K = Object(r.a)(F.y),
+				U = Object(r.a)(F.N),
+				H = Object(r.a)(F.p),
+				W = Object(r.a)(F.A),
+				V = Object(r.a)(F.Y),
+				z = Object(r.a)(F.H),
+				q = Object(r.a)(F.a),
+				G = Object(r.a)(F.D),
+				J = e => "/r/".concat(e, "/about/").concat(B.p),
+				Q = (e, t) => {
 					const n = t.creations.formData.govType,
 						s = Object.assign({}, e);
 					if (n && (s.type = n), s.type === S.a.ReplaceTopMod) s.params = {
@@ -2049,11 +2048,11 @@
 					})).filter(e => !!e.text);
 					return s
 				},
-				X = e => {
+				Z = e => {
 					const t = e.uploads,
-						n = Object(M.K)(e),
-						s = Object(M.a)(e),
-						r = Object(M.V)(e);
+						n = Object(P.K)(e),
+						s = Object(P.a)(e),
+						r = Object(P.V)(e);
 					if (s === o.Ib.POST) return h.a.getPendingThumbnailUploads(r, t);
 					if (s === o.Ib.MEDIA && n) {
 						const {
@@ -2064,36 +2063,36 @@
 						})]
 					}
 				},
-				Y = (e, t) => async (n, s, r) => {
+				X = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r, a = s();
 					const {
 						pending: c
-					} = a.creations.api.post.submit, l = Object(N.g)(a);
+					} = a.creations.api.post.submit, l = Object(M.g)(a);
 					if (c || l) return;
-					n(J(e)), a = s();
-					const d = Object(M.a)(a),
+					n(G(e)), a = s();
+					const d = Object(P.a)(a),
 						p = v.d.rteVideoPoster(a),
-						m = X(a),
+						m = Z(a),
 						h = d === o.Ib.MEDIA;
-					m && (p || h) && (await n(K.d(m)), X(s())) || (e === k.r.Draft ? await n(Object(u.r)(t.draftId)) : e === k.r.ScheduledPost && Object(R.q)(a) ? await n($(t)) : e === k.r.ScheduledPost ? await n(ee(t)) : await n(te(t)))
-				}, $ = e => async (t, n, s) => {
+					m && (p || h) && (await n(A.d(m)), Z(s())) || (e === k.r.Draft ? await n(Object(u.r)(t.draftId)) : e === k.r.ScheduledPost && Object(N.q)(a) ? await n(Y(t)) : e === k.r.ScheduledPost ? await n($(t)) : await n(ee(t)))
+				}, Y = e => async (t, n, s) => {
 					let {
 						gqlContext: o
 					} = s;
 					const r = n(),
-						a = Object(M.S)(r),
-						c = Object(M.T)(r, e),
-						d = Object(M.g)(r),
-						u = Object(R.q)(r);
+						a = Object(P.S)(r),
+						c = Object(P.T)(r, e),
+						d = Object(P.g)(r),
+						u = Object(N.q)(r);
 					if (!(c && d.id && a && Object(O.f)(u))) return;
 					const m = d.id,
-						h = Object(R.a)(r, {
+						h = Object(N.a)(r, {
 							subredditId: m,
 							scheduledPostId: u
 						});
-					if (h && Object(i.a)(Object(w.v)(h)(r)), t(U(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(M.s)(n()))) return;
+					if (h && Object(i.a)(Object(w.v)(h)(r)), t(K(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(P.s)(n()))) return;
 					const b = Object(y.e)({
 							submission: c,
 							schedule: a,
@@ -2103,48 +2102,46 @@
 						f = await Object(C.a)(o(), b);
 					if (f.ok) return t(Object(p.e)({
 						subredditId: d.id
-					})), void t(Object(l.G)(Q(d.name), !1));
+					})), void t(Object(l.G)(J(d.name), !1));
 					const g = f.error;
-					t(W(g))
-				}, ee = e => async (t, n, s) => {
+					t(H(g))
+				}, $ = e => async (t, n, s) => {
 					let {
 						gqlContext: o
 					} = s;
 					const r = n(),
-						a = Object(M.S)(r),
-						c = Object(M.T)(r, e),
-						d = Object(M.g)(r);
+						a = Object(P.S)(r),
+						c = Object(P.T)(r, e),
+						d = Object(P.g)(r);
 					if (!c || !d.id || !a) return;
-					if (t(U(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(M.s)(n()))) return;
+					if (t(K(c)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(P.s)(n()))) return;
 					const u = await Object(y.a)(o(), Object(y.d)(c, a, d.id));
 					if (u.ok) {
 						t(Object(p.e)({
 							subredditId: d.id
 						}));
 						const e = u.body.data.createScheduledPost.scheduledPost;
-						return e && Object(i.a)(Object(w.s)(Object(E.d)(e))(r)), void t(Object(l.G)(Q(d.name), !1))
+						return e && Object(i.a)(Object(w.s)(Object(E.d)(e))(r)), void t(Object(l.G)(J(d.name), !1))
 					}
 					const m = u.error;
-					t(W(m))
-				}, te = e => async (t, n, r) => {
+					t(H(m))
+				}, ee = e => async (t, n, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const u = n(),
-						p = Object(M.T)(u, e),
-						h = !!Object(P.a)(u),
+						p = Object(P.T)(u, e),
+						h = !!Object(I.a)(u),
 						y = u.creations.formData.isPoll,
-						C = u.creations.formData.polls ? Z(u.creations.formData.polls, u) : Z({
+						C = u.creations.formData.polls ? Q(u.creations.formData.polls, u) : Q({
 							duration: o.x,
 							options: []
 						}, u);
 					if (!p) return;
-					if (t(U(p)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(M.s)(n()))) return;
-					let v;
-					if ((v = y ? Object(I.a)(u) ? await Object(x.a)(i(), Object.assign({}, p, {
-								kind: k.p.POLL,
-								poll: C
-							})) : await
+					if (t(K(p)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(P.s)(n()))) return;
+					let E;
+					const O = y && (v.d.spPolls(u) || v.d.spKarmaPoints(u));
+					if ((E = O ? await
 							function(e, t, n) {
 								const s = t.destSubreddit.id;
 								return Object(g.b)(e, {
@@ -2180,13 +2177,16 @@
 										status: e.status
 									}
 								})
-							}(i(), p, C) : await Object(x.b)(i(), p)).ok) {
-						const e = Object(L.i)(u),
-							n = v.body;
-						if (t(H({
+							}(i(), p, C) : y ? await Object(x.a)(i(), Object.assign({}, p, {
+								kind: k.p.POLL,
+								poll: C
+							})) : await Object(x.b)(i(), p)).ok) {
+						const e = Object(R.i)(u),
+							n = E.body;
+						if (t(U({
 								draftId: p.draftId,
 								response: n
-							})), y && !Object(I.a)(u) && t(Object(a.e)({
+							})), O && t(Object(a.e)({
 								poll: n.poll
 							})), !h) {
 							const s = (n.path || "/user/".concat(Object(_.f)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
@@ -2194,13 +2194,13 @@
 						}
 					} else {
 						if (y) {
-							const e = v.error;
-							t(V(e))
+							const e = E.error;
+							t(W(e))
 						}
-						const e = v.error;
-						if (e.type === o.E.BAD_CAPTCHA_ERROR) t(G());
-						else if (e.type === o.E.VALIDATION_ERROR) t(z(e));
-						else if (e.type === o.E.SUBMIT_VALIDATION_ERROR) t(q(e));
+						const e = E.error;
+						if (e.type === o.E.BAD_CAPTCHA_ERROR) t(q());
+						else if (e.type === o.E.VALIDATION_ERROR) t(V(e));
+						else if (e.type === o.E.SUBMIT_VALIDATION_ERROR) t(z(e));
 						else if (e.type === o.E.RATELIMIT && h) {
 							t(Object(c.i)());
 							const n = e.fields && e.fields[0] && e.fields[0].msg || s.fbt._("Layer creation has failed. You can create one layer per 60 minutes", null, {
@@ -2208,12 +2208,12 @@
 								}),
 								o = Object(m.d)(n, T.b.Error);
 							t(Object(m.e)(o))
-						} else t(W(e))
+						} else t(H(e))
 					}
-					const E = Object(A.o)(p.kind),
-						O = v.ok && v.body && v.body.id && Object(B.m)(v.body.id),
-						w = n();
-					j.o(w, E, O)
+					const w = Object(D.o)(p.kind),
+						S = E.ok && E.body && E.body.id && Object(L.m)(E.body.id),
+						M = n();
+					j.o(M, w, S)
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/edit.ts": function(e, t, n) {
@@ -30303,7 +30303,7 @@
 				f = (e, t) => {
 					if (Object(i.a)(e)) {
 						const t = Object(a.g)(e);
-						return !!t.allowedPostTypes && t.allowedPostTypes.polls
+						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
 					const n = r.d.spPolls(e) || r.d.spKarmaPoints(e),
 						s = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
@@ -30474,4 +30474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.4eba9a28c11d75e90b72.js.map
+//# sourceMappingURL=PostCreation.e5cdcd434c803eb894cc.js.map

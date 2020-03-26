@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.09793ca9e27df27a7cb8.js
-// Retrieved at 3/26/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c4ca250881c9d4ad68b9.js
+// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -27733,7 +27733,7 @@
 				g = (e, t) => {
 					if (Object(r.a)(e)) {
 						const t = Object(i.g)(e);
-						return !!t.allowedPostTypes && t.allowedPostTypes.polls
+						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
 					const s = a.d.spPolls(e) || a.d.spKarmaPoints(e),
 						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
@@ -27951,4 +27951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.09793ca9e27df27a7cb8.js.map
+//# sourceMappingURL=ModerationPages.c4ca250881c9d4ad68b9.js.map
