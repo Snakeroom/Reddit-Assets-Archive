@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9d39e80914831ba6979d.js
-// Retrieved at 3/25/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.56ca7a2b671f1db26657.js
+// Retrieved at 3/26/2020, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2084,8 +2084,8 @@
 				return a.a.createElement("button", {
 					className: Xe.a.shareButton,
 					onClick: t,
-					"aria-label": Qe._("share video", null, {
-						hk: "2ioqvz"
+					"aria-label": Qe._("Share video", null, {
+						hk: "I91IP"
 					}),
 					value: "share"
 				}, a.a.createElement(Pe.a, {
@@ -2354,9 +2354,14 @@
 							settingChange: void 0
 						})
 					}, this.onMouseHoverScrubber = e => {
-						const t = this.isHoveringVolumeControl(e.target);
-						t !== this.state.isHoveringVolumeControl && this.setState({
-							isHoveringVolumeControl: t
+						const {
+							target: t,
+							currentTarget: s
+						} = e;
+						if (!(t instanceof Element && s instanceof Element)) return;
+						const r = this.isHoveringVolumeControl(t, s);
+						r !== this.state.isHoveringVolumeControl && this.setState({
+							isHoveringVolumeControl: r
 						})
 					}, this.onMouseLeaveScrubber = () => {
 						this.setState({
@@ -2584,10 +2589,10 @@
 						hk: "3NZqt4"
 					})))
 				}
-				isHoveringVolumeControl(e) {
-					for (; !e.classList.contains(Xe.a.overlayBottom);) {
+				isHoveringVolumeControl(e, t) {
+					for (; e && e !== t;) {
 						if (e.classList.contains(St.a.ControlVolume)) return !0;
-						e = e.parentNode
+						e = e.parentElement
 					}
 					return !1
 				}
@@ -3789,4 +3794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.9d39e80914831ba6979d.js.map
+//# sourceMappingURL=PublicAccessNetwork.56ca7a2b671f1db26657.js.map
