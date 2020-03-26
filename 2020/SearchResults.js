@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.738ca6e9a075f91f2311.js
-// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.256437f2b0ab28558174.js
+// Retrieved at 3/26/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1473,12 +1473,12 @@
 		},
 		"./src/reddit/components/CrosspostBox/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/lib/permalinkToOverlayLocation/index.ts"),
 				l = s("./src/lib/prettyPrintNumber/index.ts"),
 				m = s("./src/reddit/components/Media/index.tsx"),
@@ -1511,7 +1511,7 @@
 				w = O.a.wrapped(C, "LinkContainer", v.a),
 				I = O.a.div("Content", v.a),
 				N = O.a.div("ThumbnailContainer", v.a),
-				T = Object(i.c)({
+				T = Object(c.c)({
 					isCurrentUserProfilePost: g.i,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ab.TOPIC),
 					language: f.O,
@@ -1519,13 +1519,13 @@
 					shouldOpenPostInNewTab: f.S,
 					subreddit: g.Y
 				}),
-				M = Object(o.b)(T);
+				M = Object(a.b)(T);
 			t.a = M(e => {
 				const {
 					className: t,
 					isCurrentUserProfilePost: s,
 					isTopicPage: n,
-					mediaProps: o,
+					mediaProps: r,
 					post: a,
 					subreddit: i,
 					language: c
@@ -1540,18 +1540,18 @@
 						shouldShowSubscribeButton: !1,
 						subredditOrProfile: i,
 						language: c,
-						tooltipType: "".concat("CrosspostBox", "--").concat(o.isListing)
+						tooltipType: "".concat("CrosspostBox", "--").concat(r.isListing)
 					},
 					l = t;
-				return a && !a.media ? r.a.createElement(w, {
+				return a && !a.media ? o.a.createElement(w, {
 					className: l
-				}, r.a.createElement(I, null, r.a.createElement(j, null, r.a.createElement(p.a, d)), L(a), a.source && r.a.createElement(b.a, {
+				}, o.a.createElement(I, null, o.a.createElement(j, null, o.a.createElement(p.a, d)), L(a), a.source && o.a.createElement(b.a, {
 					post: a
-				}), F(e)), B(e)) : r.a.createElement(C, {
+				}), F(e)), B(e)) : o.a.createElement(C, {
 					className: l
-				}, r.a.createElement(j, null, r.a.createElement(p.a, d)), L(a), R(e), F(e))
+				}, o.a.createElement(j, null, o.a.createElement(p.a, d)), L(a), R(e), F(e))
 			});
-			const L = e => r.a.createElement(_, {
+			const L = e => o.a.createElement(_, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
@@ -1565,38 +1565,42 @@
 						post: s,
 						crosspost: t.post
 					});
-					return r.a.createElement("div", null, r.a.createElement(m.a, E({}, n, {
+					return o.a.createElement("div", null, o.a.createElement(m.a, E({}, n, {
 						className: v.a.mediaContainer
 					})))
 				},
 				F = e => {
 					const {
-						language: t,
-						post: s
+						post: t
 					} = e, {
-						score: n
-					} = s;
-					return r.a.createElement(P, null, r.a.createElement(k, null, Object(c.b)(t, "posts.points.noun", n, {
-						count: Object(l.b)(n)
-					})), r.a.createElement(S, null), r.a.createElement(k, null, A(e)))
+						score: s
+					} = t;
+					return o.a.createElement(P, null, o.a.createElement(k, null, n.fbt._({
+						"*": "{point count} points",
+						_1: "1 point"
+					}, [n.fbt._plural(s, "point count", Object(l.b)(s))], {
+						hk: "PNZhd"
+					})), o.a.createElement(S, null), o.a.createElement(k, null, A(e)))
 				},
 				A = e => {
 					const {
-						language: t,
-						post: s,
-						shouldOpenPostInNewTab: n
+						post: t,
+						shouldOpenPostInNewTab: s
 					} = e, {
-						numComments: o
-					} = s;
-					return r.a.createElement(a.a, {
+						numComments: r
+					} = t;
+					return o.a.createElement(i.a, {
 						"data-click-id": "comments",
-						to: Object(d.a)(s.permalink, !0),
-						target: n ? "_blank" : void 0
-					}, Object(c.b)(t, "posts.comments.noun", o, {
-						count: Object(l.b)(o)
+						to: Object(d.a)(t.permalink, !0),
+						target: s ? "_blank" : void 0
+					}, n.fbt._({
+						"*": "{comment count} comments",
+						_1: "1 comment"
+					}, [n.fbt._plural(r, "comment count", Object(l.b)(r))], {
+						hk: "xPYWL"
 					}))
 				},
-				B = e => r.a.createElement(N, null, r.a.createElement(h.a, {
+				B = e => o.a.createElement(N, null, o.a.createElement(h.a, {
 					post: e.post
 				}))
 		},
@@ -2709,13 +2713,13 @@
 		},
 		"./src/reddit/components/ExpandoButton/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				i = s("./src/lib/classNames/index.ts"),
-				c = s("./src/lib/permalinkToOverlayLocation/index.ts"),
-				d = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/lib/permalinkToOverlayLocation/index.ts"),
 				l = s("./src/reddit/actions/post.ts"),
 				m = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				p = s("./src/reddit/helpers/postHasSelfText/index.ts"),
@@ -2725,7 +2729,7 @@
 				x = s("./src/reddit/icons/fonts/helpers.tsx"),
 				g = s("./src/reddit/icons/fonts/Expandos/Media/Lightbox/index.m.less"),
 				f = s.n(g);
-			var y = s("./src/lib/lessComponent.tsx").a.wrapped(e => r.a.createElement("i", {
+			var y = s("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
 					className: "".concat(Object(x.b)("expandoMediaLightbox"), " ").concat(e.className),
 					onClick: e.onClick
 				}), "LightboxIcon", f.a),
@@ -2738,38 +2742,38 @@
 				P = s("./src/reddit/models/Media/index.ts"),
 				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(k);
-			const w = Object(o.b)(null, (e, t) => ({
+			const w = Object(a.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.y)({
 						postId: t.post.id
 					}))
 				})),
 				I = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					const s = Object(i.a)(S.a.icon, S.a.hideOnHover);
-					if (t) return r.a.createElement(u.a, {
+					const s = Object(c.a)(S.a.icon, S.a.hideOnHover);
+					if (t) return o.a.createElement(u.a, {
 						className: s
 					});
 					switch (e) {
 						case P.n.GIFVIDEO:
-							return r.a.createElement(O.a, {
+							return o.a.createElement(O.a, {
 								className: s
 							});
 						case P.n.IMAGE:
-							return r.a.createElement(j.a, {
+							return o.a.createElement(j.a, {
 								className: s
 							});
 						case P.n.TEXT:
 						case P.n.RTJSON:
-							return r.a.createElement(_.a, {
+							return o.a.createElement(_.a, {
 								className: s
 							});
 						case P.n.VIDEO:
-							return r.a.createElement(v.a, {
+							return o.a.createElement(v.a, {
 								className: s
 							});
 						case P.n.EMBED:
 						default:
-							return r.a.createElement(E.a, {
+							return o.a.createElement(E.a, {
 								className: s
 							})
 					}
@@ -2778,42 +2782,48 @@
 				const {
 					className: t,
 					crosspost: s,
-					enableCrosspostIcon: n,
-					isExpanded: o,
+					enableCrosspostIcon: r,
+					isExpanded: a,
 					post: l,
 					toggle: u,
 					useMediaIcons: x
-				} = e, g = s || l, f = n && !!s;
-				return g.media && !(("rtjson" === g.media.type || "text" === g.media.type) && !Object(p.a)(g)) ? r.a.createElement("button", {
-					"aria-expanded": o,
+				} = e, g = s || l, f = r && !!s;
+				return g.media && !(("rtjson" === g.media.type || "text" === g.media.type) && !Object(p.a)(g)) ? o.a.createElement("button", {
+					"aria-expanded": a,
 					"aria-haspopup": !0,
-					"aria-label": Object(d.c)("Expand content"),
-					className: Object(i.a)(t, S.a.outer),
-					"data-click-id": o ? "expando_close" : "expando_open",
+					"aria-label": n.fbt._("Expand content", null, {
+						hk: "1e35IG"
+					}),
+					className: Object(c.a)(t, S.a.outer),
+					"data-click-id": a ? "expando_close" : "expando_open",
 					onClick: u
-				}, o ? r.a.createElement(b.a, {
+				}, a ? o.a.createElement(b.a, {
 					className: S.a.icon
-				}) : x ? r.a.createElement(r.a.Fragment, null, I(g.media && g.media.type, f), r.a.createElement(h.a, {
-					className: Object(i.a)(S.a.icon, S.a.showOnHover)
-				})) : r.a.createElement(h.a, {
+				}) : x ? o.a.createElement(o.a.Fragment, null, I(g.media && g.media.type, f), o.a.createElement(h.a, {
+					className: Object(c.a)(S.a.icon, S.a.showOnHover)
+				})) : o.a.createElement(h.a, {
 					className: S.a.icon
-				})) : g.source && g.source.url ? r.a.createElement(m.a, {
-					"aria-label": Object(d.c)("Open external content"),
-					className: Object(i.a)(t, S.a.outer),
+				})) : g.source && g.source.url ? o.a.createElement(m.a, {
+					"aria-label": n.fbt._("Open external content", null, {
+						hk: "2FfpSI"
+					}),
+					className: Object(c.a)(t, S.a.outer),
 					"data-click-id": "expando_open",
 					href: g.source.url,
 					isSponsored: l.isSponsored,
 					source: l.source,
 					target: "_blank"
-				}, r.a.createElement(C.a, {
-					className: Object(i.a)(S.a.icon, S.a.outboundLinkIcon)
-				})) : r.a.createElement(a.a, {
-					"aria-label": Object(d.c)("View content"),
-					className: Object(i.a)(t, S.a.outer),
+				}, o.a.createElement(C.a, {
+					className: Object(c.a)(S.a.icon, S.a.outboundLinkIcon)
+				})) : o.a.createElement(i.a, {
+					"aria-label": n.fbt._("View content", null, {
+						hk: "24KLWF"
+					}),
+					className: Object(c.a)(t, S.a.outer),
 					"data-click-id": "expando_open",
-					to: Object(c.a)(g.permalink),
+					to: Object(d.a)(g.permalink),
 					rel: "nofollow"
-				}, r.a.createElement(y, {
+				}, o.a.createElement(y, {
 					className: S.a.icon
 				}))
 			})
@@ -9352,4 +9362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.738ca6e9a075f91f2311.js.map
+//# sourceMappingURL=SearchResults.256437f2b0ab28558174.js.map
