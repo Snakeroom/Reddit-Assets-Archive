@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2f13bef90ea2afacf45a.js
-// Retrieved at 3/26/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a31cae513b20ab7ace46.js
+// Retrieved at 3/26/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9682,11 +9682,11 @@
 		},
 		"./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/higherOrderComponents/asModal/index.tsx"),
 				d = s("./src/lib/formatApiError/index.ts"),
 				l = s("./src/reddit/actions/postCollection/index.ts"),
@@ -9704,39 +9704,31 @@
 				E = s("./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.m.less"),
 				y = s.n(E),
 				_ = s("./src/lib/lessComponent.tsx");
-			const j = Object(i.d)("postCreation.cancel"),
-				k = Object(i.d)("postCreation.create"),
-				P = Object(i.d)("postCreation.save"),
-				w = Object(i.d)("postCreation.collections.createCollection"),
-				I = Object(i.d)("postCreation.collections.createModal.details"),
-				S = Object(i.d)("postCreation.collections.createModal.giveATitle"),
-				T = Object(i.d)("postCreation.collections.createModal.editTitle"),
-				N = Object(i.d)("postCreation.collections.createModal.titlePlaceholderText"),
-				M = _.a.div("Container", y.a),
-				L = _.a.div("Content", y.a),
-				R = _.a.div("TitleRow", y.a),
-				F = _.a.div("Details", y.a),
-				A = _.a.wrapped(m.e, "Footer", y.a),
-				B = _.a.wrapped(u.i, "CancelButton", y.a),
-				D = _.a.div("CloseWrapper", y.a),
-				W = _.a.wrapped(f.a, "CloseIcon", y.a),
-				H = _.a.label("Label", y.a),
-				V = _.a.wrapped(b.a, "TitleInput", y.a),
-				U = _.a.wrapped(x.a, "AddCollectionIcon", y.a),
-				G = _.a.wrapped(u.f, "PrimaryActionButton", y.a),
-				K = _.a.wrapped(g.a, "LoadingIcon", y.a),
-				z = _.a.wrapped(h.b, "ErrorText", y.a),
-				J = Object(a.c)({
+			const j = _.a.div("Container", y.a),
+				k = _.a.div("Content", y.a),
+				P = _.a.div("TitleRow", y.a),
+				w = _.a.div("Details", y.a),
+				I = _.a.wrapped(m.e, "Footer", y.a),
+				S = _.a.wrapped(u.i, "CancelButton", y.a),
+				T = _.a.div("CloseWrapper", y.a),
+				N = _.a.wrapped(f.a, "CloseIcon", y.a),
+				M = _.a.label("Label", y.a),
+				L = _.a.wrapped(b.a, "TitleInput", y.a),
+				R = _.a.wrapped(x.a, "AddCollectionIcon", y.a),
+				F = _.a.wrapped(u.f, "PrimaryActionButton", y.a),
+				A = _.a.wrapped(g.a, "LoadingIcon", y.a),
+				B = _.a.wrapped(h.b, "ErrorText", y.a),
+				D = Object(i.c)({
 					collection: C.r,
 					error: C.c,
 					isPending: C.h,
 					language: O.O
 				}),
-				q = Object(r.b)(J, (e, t) => ({
+				W = Object(a.b)(D, (e, t) => ({
 					onCreate: (t, s) => e(Object(l.b)(t, s)),
 					onUpdate: s => e(Object(l.h)(t.collectionId, s))
 				}));
-			class X extends o.a.PureComponent {
+			class H extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.onTitleChange = e => {
 						this.setState({
@@ -9770,28 +9762,44 @@
 						collectionId: e,
 						error: t,
 						isPending: s,
-						language: n
-					} = this.props, r = !e, a = !!this.state.collectionTitle.trim(), i = r ? k : P, c = r ? S : T;
-					return o.a.createElement(M, null, o.a.createElement(D, {
+						language: o
+					} = this.props, a = !e, i = !!this.state.collectionTitle.trim(), c = a ? n.fbt._("Create", null, {
+						hk: "Ijp7n"
+					}) : n.fbt._("Save", null, {
+						hk: "2Onrrv"
+					});
+					return r.a.createElement(j, null, r.a.createElement(T, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(W, null)), o.a.createElement(L, null, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(R, null, o.a.createElement(U, null), w(n)), o.a.createElement(F, null, I(n))), o.a.createElement(H, null, c(n), o.a.createElement(V, {
+					}, r.a.createElement(N, null)), r.a.createElement(k, null, a && r.a.createElement(r.a.Fragment, null, r.a.createElement(P, null, r.a.createElement(R, null), n.fbt._("Create a collection", null, {
+						hk: "3ndxk5"
+					})), r.a.createElement(w, null, n.fbt._("Group posts into one feed. Create a series of events or just a group of random things. Make something awesome!", null, {
+						hk: "2eCAQw"
+					}))), r.a.createElement(M, null, a ? n.fbt._("Give a title for your collection", null, {
+						hk: "Uaqbe"
+					}) : n.fbt._("Edit title", null, {
+						hk: "1jzweg"
+					}), r.a.createElement(L, {
 						maxLength: p.e,
 						onChange: this.onTitleChange,
-						placeholder: N(n),
+						placeholder: n.fbt._("Enter title", null, {
+							hk: "3B0iRI"
+						}),
 						value: this.state.collectionTitle
-					}))), o.a.createElement(A, null, o.a.createElement(v.a, null, o.a.createElement(B, {
+					}))), r.a.createElement(I, null, r.a.createElement(v.a, null, r.a.createElement(S, {
 						onClick: this.props.onCancel
-					}, j(n)), o.a.createElement(G, {
+					}, n.fbt._("Cancel", null, {
+						hk: "1XxNnB"
+					})), r.a.createElement(F, {
 						onClick: this.onPrimaryButtonClick,
-						disabled: s || !a
-					}, s ? o.a.createElement(K, {
+						disabled: s || !i
+					}, s ? r.a.createElement(A, {
 						sizePx: 10
-					}) : i(n))), t && o.a.createElement(z, {
-						language: n
-					}, Object(d.a)(n, t))))
+					}) : c)), t && r.a.createElement(B, {
+						language: o
+					}, Object(d.a)(o, t))))
 				}
 			}
-			t.a = Object(c.a)(q(X))
+			t.a = Object(c.a)(W(H))
 		},
 		"./src/reddit/components/PostFlairPicker/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -17277,4 +17285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.2f13bef90ea2afacf45a.js.map
+//# sourceMappingURL=CollectionCommentsPage.a31cae513b20ab7ace46.js.map

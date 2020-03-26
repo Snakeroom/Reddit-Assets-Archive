@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d20d76f66e8d0dbe9f2b.js
-// Retrieved at 3/26/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.09793ca9e27df27a7cb8.js
+// Retrieved at 3/26/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -16650,11 +16650,11 @@
 		},
 		"./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				a = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				a = s.n(o),
+				r = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/higherOrderComponents/asModal/index.tsx"),
 				c = s("./src/lib/formatApiError/index.ts"),
 				l = s("./src/reddit/actions/postCollection/index.ts"),
@@ -16672,39 +16672,31 @@
 				O = s("./src/reddit/components/PostCreationForm/CreateOrEditCollectionModal/index.m.less"),
 				j = s.n(O),
 				_ = s("./src/lib/lessComponent.tsx");
-			const y = Object(i.d)("postCreation.cancel"),
-				k = Object(i.d)("postCreation.create"),
-				w = Object(i.d)("postCreation.save"),
-				S = Object(i.d)("postCreation.collections.createCollection"),
-				I = Object(i.d)("postCreation.collections.createModal.details"),
-				P = Object(i.d)("postCreation.collections.createModal.giveATitle"),
-				T = Object(i.d)("postCreation.collections.createModal.editTitle"),
-				N = Object(i.d)("postCreation.collections.createModal.titlePlaceholderText"),
-				M = _.a.div("Container", j.a),
-				R = _.a.div("Content", j.a),
-				L = _.a.div("TitleRow", j.a),
-				F = _.a.div("Details", j.a),
-				A = _.a.wrapped(m.e, "Footer", j.a),
-				D = _.a.wrapped(p.i, "CancelButton", j.a),
-				B = _.a.div("CloseWrapper", j.a),
-				U = _.a.wrapped(f.a, "CloseIcon", j.a),
-				H = _.a.label("Label", j.a),
-				W = _.a.wrapped(h.a, "TitleInput", j.a),
-				V = _.a.wrapped(x.a, "AddCollectionIcon", j.a),
-				q = _.a.wrapped(p.f, "PrimaryActionButton", j.a),
-				G = _.a.wrapped(g.a, "LoadingIcon", j.a),
-				z = _.a.wrapped(b.b, "ErrorText", j.a),
-				K = Object(r.c)({
+			const y = _.a.div("Container", j.a),
+				k = _.a.div("Content", j.a),
+				w = _.a.div("TitleRow", j.a),
+				S = _.a.div("Details", j.a),
+				I = _.a.wrapped(m.e, "Footer", j.a),
+				P = _.a.wrapped(p.i, "CancelButton", j.a),
+				T = _.a.div("CloseWrapper", j.a),
+				N = _.a.wrapped(f.a, "CloseIcon", j.a),
+				M = _.a.label("Label", j.a),
+				R = _.a.wrapped(h.a, "TitleInput", j.a),
+				L = _.a.wrapped(x.a, "AddCollectionIcon", j.a),
+				F = _.a.wrapped(p.f, "PrimaryActionButton", j.a),
+				A = _.a.wrapped(g.a, "LoadingIcon", j.a),
+				D = _.a.wrapped(b.b, "ErrorText", j.a),
+				B = Object(i.c)({
 					collection: v.r,
 					error: v.c,
 					isPending: v.h,
 					language: C.O
 				}),
-				Q = Object(a.b)(K, (e, t) => ({
+				U = Object(r.b)(B, (e, t) => ({
 					onCreate: (t, s) => e(Object(l.b)(t, s)),
 					onUpdate: s => e(Object(l.h)(t.collectionId, s))
 				}));
-			class J extends o.a.PureComponent {
+			class H extends a.a.PureComponent {
 				constructor(e) {
 					super(e), this.onTitleChange = e => {
 						this.setState({
@@ -16738,28 +16730,44 @@
 						collectionId: e,
 						error: t,
 						isPending: s,
-						language: n
-					} = this.props, a = !e, r = !!this.state.collectionTitle.trim(), i = a ? k : w, d = a ? P : T;
-					return o.a.createElement(M, null, o.a.createElement(B, {
+						language: o
+					} = this.props, r = !e, i = !!this.state.collectionTitle.trim(), d = r ? n.fbt._("Create", null, {
+						hk: "Ijp7n"
+					}) : n.fbt._("Save", null, {
+						hk: "2Onrrv"
+					});
+					return a.a.createElement(y, null, a.a.createElement(T, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(U, null)), o.a.createElement(R, null, a && o.a.createElement(o.a.Fragment, null, o.a.createElement(L, null, o.a.createElement(V, null), S(n)), o.a.createElement(F, null, I(n))), o.a.createElement(H, null, d(n), o.a.createElement(W, {
+					}, a.a.createElement(N, null)), a.a.createElement(k, null, r && a.a.createElement(a.a.Fragment, null, a.a.createElement(w, null, a.a.createElement(L, null), n.fbt._("Create a collection", null, {
+						hk: "3ndxk5"
+					})), a.a.createElement(S, null, n.fbt._("Group posts into one feed. Create a series of events or just a group of random things. Make something awesome!", null, {
+						hk: "2eCAQw"
+					}))), a.a.createElement(M, null, r ? n.fbt._("Give a title for your collection", null, {
+						hk: "Uaqbe"
+					}) : n.fbt._("Edit title", null, {
+						hk: "1jzweg"
+					}), a.a.createElement(R, {
 						maxLength: u.e,
 						onChange: this.onTitleChange,
-						placeholder: N(n),
+						placeholder: n.fbt._("Enter title", null, {
+							hk: "3B0iRI"
+						}),
 						value: this.state.collectionTitle
-					}))), o.a.createElement(A, null, o.a.createElement(E.a, null, o.a.createElement(D, {
+					}))), a.a.createElement(I, null, a.a.createElement(E.a, null, a.a.createElement(P, {
 						onClick: this.props.onCancel
-					}, y(n)), o.a.createElement(q, {
+					}, n.fbt._("Cancel", null, {
+						hk: "1XxNnB"
+					})), a.a.createElement(F, {
 						onClick: this.onPrimaryButtonClick,
-						disabled: s || !r
-					}, s ? o.a.createElement(G, {
+						disabled: s || !i
+					}, s ? a.a.createElement(A, {
 						sizePx: 10
-					}) : i(n))), t && o.a.createElement(z, {
-						language: n
-					}, Object(c.a)(n, t))))
+					}) : d)), t && a.a.createElement(D, {
+						language: o
+					}, Object(c.a)(o, t))))
 				}
 			}
-			t.a = Object(d.a)(Q(J))
+			t.a = Object(d.a)(U(H))
 		},
 		"./src/reddit/components/PostFlairPicker/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -27943,4 +27951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.d20d76f66e8d0dbe9f2b.js.map
+//# sourceMappingURL=ModerationPages.09793ca9e27df27a7cb8.js.map
