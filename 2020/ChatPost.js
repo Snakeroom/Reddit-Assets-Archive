@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.13cbcecbc2e786a6036e.js
-// Retrieved at 3/26/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.7209e610bc712f5a7888.js
+// Retrieved at 3/26/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1367,7 +1367,7 @@
 					}
 				}
 				componentDidMount() {
-					this.elemRef && this.elemRef.current && this.elemRef.current.scrollHeight > Lt && !this.props.associatedAward && this.setState({
+					this.elemRef && this.elemRef.current && this.elemRef.current.scrollHeight > Lt && !this.props.associatedAward && !this.props.isLivestreaming && this.setState({
 						isTruncated: !0
 					})
 				}
@@ -1488,7 +1488,8 @@
 						isLivestreaming: l,
 						language: m,
 						timestampUpdateTrigger: g
-					})]), n.isDeleted && s.a.createElement(Ft, null), k && r && r.map(e => s.a.createElement(Rt, {
+					})]), n.isDeleted && s.a.createElement(Ft, null), k && r && r.map((e, t) => s.a.createElement(Rt, {
+						key: "".concat(t, "-").concat(e),
 						language: m
 					}, e)), !c && x && s.a.createElement("button", {
 						className: Object(Q.a)(Ot.a.CommentReadMoreButton, {
@@ -2380,4 +2381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.13cbcecbc2e786a6036e.js.map
+//# sourceMappingURL=ChatPost.7209e610bc712f5a7888.js.map
