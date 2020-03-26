@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b8837b4783c3752e7cc8.js
-// Retrieved at 3/26/2020, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.597342081ee55c38f1bd.js
+// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -11342,7 +11342,14 @@
 					return async (e, s) => {
 						const o = s(),
 							i = r && r.hasNewTabModifier;
-						let a = Object(x.b)(t) && t.media && Object(L.C)(t.media) ? Object(k.d)(t.id) : t.permalink;
+						let a = t.permalink;
+						if (Object(x.b)(t) && t.media && Object(L.C)(t.media)) {
+							const {
+								id: e,
+								type: n
+							} = t.belongsTo, r = "subreddit" === n ? o.subreddits.models[e] : null;
+							a = r ? Object(k.b)(t.id, r.name) : Object(k.b)(t.id)
+						}
 						n && (a = Object(c.a)(a, n)), o.user.prefs.openPostInNewTab || i ? window.open(a) : e(Object(N.a)(a))
 					}
 				}, ut = "RICH_TEXT_POST_CONTENT_LOADED", lt = Object(d.a)(ut), bt = e => async (t, n, r) => {
@@ -28796,16 +28803,18 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return o
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return i
-			})), n.d(t, "d", (function() {
-				return c
-			})), n.d(t, "c", (function() {
-				return a
 			})), n.d(t, "e", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return a
+			})), n.d(t, "f", (function() {
 				return d
 			})), n.d(t, "b", (function() {
 				return u
+			})), n.d(t, "c", (function() {
+				return l
 			}));
 			var r = n("./src/lib/constants/index.ts"),
 				s = n("./src/reddit/constants/things.ts");
@@ -28814,11 +28823,12 @@
 				c = e => "/".concat(r.Ab.PUBLIC_ACCESS_NETWORK).concat(e ? "/".concat(o(e)) : ""),
 				a = () => "/".concat(r.Ab.PUBLIC_ACCESS_NETWORK, "/"),
 				d = e => "".concat(a(), "r/").concat(e, "/"),
-				u = e => {
+				u = (e, t) => t ? "".concat(d(t)).concat(o(e)) : c(e),
+				l = e => {
 					let {
 						post: t
 					} = e;
-					return "".concat(d(t.subreddit.name)).concat(o(t.id))
+					return u(t.id, t.subreddit.name)
 				}
 		},
 		"./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts": function(e, t, n) {
@@ -54914,9 +54924,9 @@
 				o = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				i = n("./src/reddit/helpers/publicAccessNetwork/index.ts");
 			const c = e => e.publicAccessNetwork.api.config,
-				a = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(i.f)(t)],
+				a = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(i.g)(t)],
 				d = e => a(e, o.b),
-				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(i.f)(t)] && e.publicAccessNetwork.api.pending[Object(i.f)(t)].isPending,
+				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(i.g)(t)] && e.publicAccessNetwork.api.pending[Object(i.g)(t)].isPending,
 				l = e => u(e, o.b),
 				b = e => e.publicAccessNetwork.api.pending[o.b] && e.publicAccessNetwork.api.pending[o.b].fetchedUtcTimeStamp,
 				p = Object(r.a)(c, e => e.global),
@@ -54941,11 +54951,11 @@
 				S = Object(r.a)(I, e => [{
 					name: "All",
 					prefixedName: "All",
-					path: Object(i.c)()
+					path: Object(i.d)()
 				}, ...e.map(e => ({
 					name: e,
 					prefixedName: "r/".concat(e),
-					path: Object(i.e)(e)
+					path: Object(i.f)(e)
 				}))])
 		},
 		"./src/reddit/selectors/activeModalId.ts": function(e, t, n) {
@@ -58416,7 +58426,16 @@
 					const r = R(e, {
 						postId: n
 					});
-					return r ? r.media && Object(m.C)(r.media) ? Object(f.d)(r.id) : r.permalink : ""
+					if (!r) return "";
+					let s = r.permalink;
+					if (r.media && Object(m.C)(r.media)) {
+						const {
+							id: t,
+							type: n
+						} = r.belongsTo, o = "subreddit" === n ? e.subreddits.models[t] : null;
+						s = o ? Object(f.b)(r.id, o.name) : Object(f.b)(r.id)
+					}
+					return s
 				},
 				X = (e, t) => {
 					let {
@@ -62434,4 +62453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.b8837b4783c3752e7cc8.js.map
+//# sourceMappingURL=Governance~Reddit.597342081ee55c38f1bd.js.map

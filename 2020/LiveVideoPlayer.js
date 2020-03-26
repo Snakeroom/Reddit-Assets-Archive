@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.bf6b69d54854e9d8664d.js
-// Retrieved at 3/24/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.e3080d4a458462ed849d.js
+// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -106,9 +106,9 @@
 			s.d(t, "c", (function() {
 				return l
 			})), s.d(t, "a", (function() {
-				return R
-			})), s.d(t, "b", (function() {
 				return g
+			})), s.d(t, "b", (function() {
+				return R
 			})), s.d(t, "d", (function() {
 				return w
 			})), s.d(t, "e", (function() {
@@ -136,8 +136,8 @@
 				p = Object(i.a)(n.y),
 				v = Object(i.a)(n.K),
 				S = Object(i.a)(n.J),
-				R = Object(i.a)(n.s),
-				g = Object(i.a)(n.t),
+				g = Object(i.a)(n.s),
+				R = Object(i.a)(n.t),
 				y = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
@@ -149,7 +149,7 @@
 					let {
 						gqlContext: a
 					} = r;
-					const i = Object(c.f)(e),
+					const i = Object(c.g)(e),
 						n = s();
 					if (Object(u.e)(n, i)) return;
 					t(h(i));
@@ -407,7 +407,7 @@
 				v = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var S = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				R = s.n(S);
+				g = s.n(S);
 			s.d(t, "LiveVideoPlayer", (function() {
 				return f
 			})), s.d(t, "Overlay", (function() {
@@ -422,7 +422,7 @@
 				return T
 			}));
 			const {
-				fbt: g
+				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(n.c)({
 				unavailableVideoUrl: v.p
 			}), w = Object(i.b)(y, (e, t) => ({
@@ -517,7 +517,7 @@
 				}
 				render() {
 					return a.a.createElement("div", {
-						className: R.a.LiveVideoPlayer
+						className: g.a.LiveVideoPlayer
 					}, this.shouldRenderPoster ? this.renderPoster() : null, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
@@ -573,12 +573,12 @@
 						children: t
 					} = e;
 					return a.a.createElement("div", {
-						className: R.a.Overlay
+						className: g.a.Overlay
 					}, t)
 				},
 				P = () => a.a.createElement("span", {
-					className: R.a.LiveIndicator
-				}, g._("Live", null, {
+					className: g.a.LiveIndicator
+				}, R._("Live", null, {
 					hk: "TwJSs"
 				})),
 				I = e => {
@@ -586,7 +586,7 @@
 						seconds: t
 					} = e;
 					return a.a.createElement("span", {
-						className: R.a.Duration
+						className: g.a.Duration
 					}, (e => {
 						const t = Math.trunc(e / 3600),
 							s = Math.trunc(e % 3600 / 60),
@@ -600,17 +600,17 @@
 						onClick: s
 					} = e;
 					let r, i;
-					return t ? (r = g._("unmute", null, {
+					return t ? (r = R._("unmute", null, {
 						hk: "45ctbh"
 					}), i = a.a.createElement(h.a, {
-						className: R.a.MuteIcon
-					})) : (r = g._("mute", null, {
+						className: g.a.MuteIcon
+					})) : (r = R._("mute", null, {
 						hk: "3xjwI7"
 					}), i = a.a.createElement(p.a, {
-						className: R.a.VolumeIcon
+						className: g.a.VolumeIcon
 					})), a.a.createElement("button", {
 						"aria-label": r,
-						className: R.a.MutedToggleButton,
+						className: g.a.MutedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						},
@@ -625,17 +625,17 @@
 						onClick: s
 					} = e;
 					let r, i;
-					return t ? (r = g._("play", null, {
+					return t ? (r = R._("play", null, {
 						hk: "2xeIj3"
 					}), i = a.a.createElement(b.a, {
-						className: R.a.PlayIcon
-					})) : (r = g._("pause", null, {
+						className: g.a.PlayIcon
+					})) : (r = R._("pause", null, {
 						hk: "3jTrMB"
 					}), i = a.a.createElement(m.a, {
-						className: R.a.PauseIcon
+						className: g.a.PauseIcon
 					})), a.a.createElement("button", {
 						"aria-label": r,
-						className: R.a.PausedToggleButton,
+						className: g.a.PausedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						}
@@ -644,4 +644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.bf6b69d54854e9d8664d.js.map
+//# sourceMappingURL=LiveVideoPlayer.e3080d4a458462ed849d.js.map

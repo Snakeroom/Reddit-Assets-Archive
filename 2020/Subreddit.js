@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.11dd8e1a0037ab9ce2c7.js
-// Retrieved at 3/26/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f86860e84ec750cfdba2.js
+// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -7184,7 +7184,7 @@
 					}, n)
 				}),
 				E = (e, t) => {
-					return C(e)[Object(i.f)(t)]
+					return C(e)[Object(i.g)(t)]
 				},
 				_ = Object(n.a)((e, t) => {
 					let {
@@ -7195,7 +7195,7 @@
 					if (d) {
 						const a = [];
 						if (e) {
-							const t = Object(i.f)(e);
+							const t = Object(i.g)(e);
 							s[t] && a.push(t)
 						}
 						const d = a.concat(t),
@@ -7281,7 +7281,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? Object(i.f)(s) : void 0
+					return s ? Object(i.g)(s) : void 0
 				}, P, h, d.g, (e, t) => {
 					let {
 						related: s,
@@ -7373,4 +7373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.11dd8e1a0037ab9ce2c7.js.map
+//# sourceMappingURL=Subreddit.f86860e84ec750cfdba2.js.map

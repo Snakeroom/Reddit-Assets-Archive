@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a2db6357e8d4546a2517.js
-// Retrieved at 3/26/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b561e29414a522ccd33c.js
+// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2293,7 +2293,7 @@
 					}, n)
 				}),
 				w = (e, t) => {
-					return O(e)[Object(i.f)(t)]
+					return O(e)[Object(i.g)(t)]
 				},
 				j = Object(n.a)((e, t) => {
 					let {
@@ -2304,7 +2304,7 @@
 					if (c) {
 						const o = [];
 						if (e) {
-							const t = Object(i.f)(e);
+							const t = Object(i.g)(e);
 							s[t] && o.push(t)
 						}
 						const c = o.concat(t),
@@ -2390,7 +2390,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? Object(i.f)(s) : void 0
+					return s ? Object(i.g)(s) : void 0
 				}, I, h, c.g, (e, t) => {
 					let {
 						related: s,
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.a2db6357e8d4546a2517.js.map
+//# sourceMappingURL=Frontpage.b561e29414a522ccd33c.js.map

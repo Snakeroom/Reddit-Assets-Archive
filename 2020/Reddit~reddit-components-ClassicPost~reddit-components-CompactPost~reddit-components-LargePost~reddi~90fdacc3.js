@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.ba2a23b02737a46c97de.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.004608872054d73d662d.js
+// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -1733,23 +1733,24 @@
 				Q = Object(o.b)(U),
 				G = e => {
 					const {
-						post: t
+						post: t,
+						subredditName: s
 					} = e, {
-						isSponsored: s
+						isSponsored: n
 					} = t;
 					if (!e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
-						const n = t.media && Object(j.C)(t.media) ? Object(g.d)(t.id) : t.permalink,
-							r = e.isCommentPermalink ? Object(x.b)(n) : Object(h.a)(n);
+						const r = t.media && Object(j.C)(t.media) ? Object(g.b)(t.id, s) : t.permalink,
+							o = e.isCommentPermalink ? Object(x.b)(r) : Object(h.a)(r);
 						return i.a.createElement(q, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
-						}, s ? i.a.createElement(Y, e) : i.a.createElement(H, {
+						}, n ? i.a.createElement(Y, e) : i.a.createElement(H, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
 							target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 							titleColor: e.titleColor,
-							to: r
+							to: o
 						}, i.a.createElement(Y, e)))
 					}
 					return i.a.createElement(q, {
@@ -3582,4 +3583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.ba2a23b02737a46c97de.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.004608872054d73d662d.js.map

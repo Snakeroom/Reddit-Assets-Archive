@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.089f8eefee9fe50481e8.js
-// Retrieved at 3/26/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4eba9a28c11d75e90b72.js
+// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -9650,23 +9650,24 @@
 				G = Object(i.b)(q),
 				J = e => {
 					const {
-						post: t
+						post: t,
+						subredditName: n
 					} = e, {
-						isSponsored: n
+						isSponsored: s
 					} = t;
 					if (!e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
-						const s = t.media && Object(v.C)(t.media) ? Object(x.d)(t.id) : t.permalink,
-							o = e.isCommentPermalink ? Object(g.b)(s) : Object(b.a)(s);
+						const o = t.media && Object(v.C)(t.media) ? Object(x.b)(t.id, n) : t.permalink,
+							i = e.isCommentPermalink ? Object(g.b)(o) : Object(b.a)(o);
 						return r.a.createElement(V, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
-						}, n ? r.a.createElement(Q, e) : r.a.createElement(W, {
+						}, s ? r.a.createElement(Q, e) : r.a.createElement(W, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
 							target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 							titleColor: e.titleColor,
-							to: o
+							to: i
 						}, r.a.createElement(Q, e)))
 					}
 					return r.a.createElement(V, {
@@ -30473,4 +30474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.089f8eefee9fe50481e8.js.map
+//# sourceMappingURL=PostCreation.4eba9a28c11d75e90b72.js.map
