@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9a3f3e57af1ba01b0f48.js
-// Retrieved at 3/26/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e8f1ef17e842831f031c.js
+// Retrieved at 3/26/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -912,7 +912,7 @@
 						FrontpageSidebar: "735fd5831b3c6401dc93",
 						Frontpage: "a2db6357e8d4546a2517",
 						Topic: "ef5e03d3982bc3a96bc2",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "7f2818ffc0cc1a8207de",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "c5e18ab000c624a9827b",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "f542cf055e8c8faa097d",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "19a4833a13224e1b9ebe",
 						PostDraft: "189942f381179f228c1e",
@@ -1075,7 +1075,7 @@
 						EconomicsCommunityTipJar: "1883c8344b6bcca93d40",
 						AuthorHovercard: "b265bd997a856ac7f56a",
 						AwardTooltip: "9e91d27bc4ada20888ba",
-						ChatPost: "ef9bd569941f51c04ebe",
+						ChatPost: "13cbcecbc2e786a6036e",
 						EconomicsSupportDonationAmount: "95fb12acd59551e039ae",
 						EconomicsTopTippersPostLeaderboard: "920deedda017831cc98a",
 						GildModal: "cf877f5bb06b1dd1d970",
@@ -1086,7 +1086,7 @@
 						"reddit-pages-CommentsPage-OtherDiscussions": "c8cf290b0c5cb9021da4",
 						removalReasonActions: "0f54a28b0b7a9fd7d100",
 						schedulePickerModal: "d1d060fc169298aead52",
-						ChatMessageInput: "2545c1c94a5ae7f0a54d",
+						ChatMessageInput: "631c36996ed499d044fa",
 						RichTextEditor: "5d669ea66c053e94a882",
 						EconomicsEntryPointsCommentFlatlistSupportCTA: "315926d091c014aa9a76",
 						EconomicsEntryPointsPostFlatlistSupportCTA: "261e6a2bead2ebdecad1",
@@ -1180,4 +1180,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.9a3f3e57af1ba01b0f48.js.map
+//# sourceMappingURL=runtime~Reddit.e8f1ef17e842831f031c.js.map
