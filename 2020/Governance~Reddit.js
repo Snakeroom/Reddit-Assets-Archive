@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.16d97db88395e6119f12.js
-// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9e4198775a36795c1381.js
+// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -7385,7 +7385,7 @@
 				je = n("./src/reddit/selectors/platform.ts");
 			var Ee = n("./src/reddit/selectors/subreddit.ts"),
 				Ie = n("./src/reddit/selectors/user.ts");
-			const Se = Object(_e.a)(Ie.F, Ee.J, je.h, Oe.e, e => {
+			const Se = Object(_e.a)(Ie.F, Ee.J, je.h, Oe.f, e => {
 					const t = (e => e.seo.crawler)(e);
 					return t && t.name || null
 				}, (e, t, n, r, s) => !!s && !e && !n && r && !Object(le.e)(t)),
@@ -7891,7 +7891,7 @@
 							return Object(d.a)(e, J.Ib, J.Kb)
 						};
 					let c;
-					switch (o.length >= J.Hb ? c = Object(Oe.g)(e) : o.length <= J.Jb && (c = Object(Oe.l)(e)), c) {
+					switch (o.length >= J.Hb ? c = Object(Oe.h)(e) : o.length <= J.Jb && (c = Object(Oe.m)(e)), c) {
 						case J.W.TruncTitleSubBrand:
 							return "".concat(i(o), " - ").concat(n.name, " - Reddit");
 						case J.W.TruncTitleReddit:
@@ -7968,7 +7968,7 @@
 							a = b,
 							d = !Object(le.e)(s) && !Object(Ot.d)(p, {
 								postId: c
-							}) && s && Object(mt.c)(p, s.id) || !Object(je.h)(p) && Object(Oe.e)(p);
+							}) && s && Object(mt.c)(p, s.id) || !Object(je.h)(p) && Object(Oe.f)(p);
 						if (a || d) {
 							const e = {
 									adContext: {
@@ -10548,7 +10548,7 @@
 						} = i(),
 						h = n && n.match && n.match.queryParams,
 						y = h && h["experiment_".concat(u.kb)];
-					Object(p.i)(i()), e.pathname.split("/").some(e => "comments" === e), Object(f.h)(i());
+					Object(p.j)(i()), e.pathname.split("/").some(e => "comments" === e), Object(f.h)(i());
 					if (o(S({
 							action: t,
 							listingKey: g,
@@ -21264,10 +21264,10 @@
 				e.Enabled = "enabled"
 			}(nt || (nt = {})),
 			function(e) {
-				e.PostImageAltText = "post_image_alt_text", e.All = "all"
+				e.All = "all", e.PostImageAltText = "post_image_alt_text", e.SubredditImageAltText = "subreddit_image_alt_text"
 			}(rt || (rt = {}));
 			const st = {
-					[Z]: [rt.PostImageAltText, rt.All],
+					[Z]: [rt.All, rt.PostImageAltText, rt.SubredditImageAltText],
 					[J]: [et.Enabled],
 					[Q]: [Ze.Prompt, Ze.Survey],
 					[Y]: [Xe.Enabled],
@@ -56014,30 +56014,32 @@
 				i = n("./src/reddit/selectors/meta.ts");
 			const c = e => !!e.page.experiments.canonicalUrl;
 			var a = n("./src/reddit/selectors/user.ts");
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return u
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return l
-			})), n.d(t, "i", (function() {
-				return b
 			})), n.d(t, "j", (function() {
+				return b
+			})), n.d(t, "k", (function() {
 				return p
 			})), n.d(t, "a", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return m
 			})), n.d(t, "c", (function() {
 				return O
 			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return _
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return h
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return y
 			})), n.d(t, "b", (function() {
 				return j
+			})), n.d(t, "e", (function() {
+				return E
 			}));
 			const d = Object(r.a)(i.j, e => {
 					return "reddit.com" !== e.split(".").splice(1).join(".")
@@ -56092,6 +56094,13 @@
 						experimentName: s.G
 					});
 					return t === s.L.PostImageAltText || t === s.L.All
+				},
+				E = e => {
+					const t = Object(o.b)(e, {
+						experimentEligibilitySelector: c,
+						experimentName: s.G
+					});
+					return t === s.L.SubredditImageAltText || t === s.L.All
 				}
 		},
 		"./src/reddit/selectors/experiments/publicAccessNetwork.ts": function(e, t, n) {
@@ -59316,19 +59325,21 @@
 				f = e => e.structuredStyles.draft,
 				m = {},
 				O = Object(i.a)((e, t) => {
-					const n = ((e, t) => {
-						const n = b(e, t);
-						if (n) return {
-							url: n.communityIcon,
-							color: n.primaryColor
-						}
-					})(e, t);
-					if (n && n.url) return n;
-					const r = n ? n.color : void 0;
-					return ((e, t) => e && e.icon ? {
+					const n = Object(d.P)(e, t),
+						r = ((e, t) => {
+							const n = b(e, t);
+							if (n) return {
+								url: n.communityIcon,
+								color: n.primaryColor
+							}
+						})(e, t);
+					return r && r.url ? Object.assign({}, r, {
+						altText: n && n.displayText
+					}) : ((e, t) => e && e.icon ? {
+						altText: e.displayText,
 						url: e.icon.url,
 						color: t
-					} : m)(Object(d.P)(e, t), r)
+					} : m)(n, r ? r.color : void 0)
 				}),
 				g = (e, t) => {
 					const n = Object(d.D)(e, t.subredditName);
@@ -62453,4 +62464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.16d97db88395e6119f12.js.map
+//# sourceMappingURL=Governance~Reddit.9e4198775a36795c1381.js.map
