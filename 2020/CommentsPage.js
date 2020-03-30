@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.756ce37e54b4a06dffe5.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c38cde2b76b7fd555b66.js
+// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7335,22 +7335,26 @@
 		},
 		"./src/reddit/components/InfoBanners/CommentThreadArchivedBanner/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/reddit/constants/colors.ts"),
-				a = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./src/reddit/constants/colors.ts"),
 				i = s("./src/reddit/icons/fonts/Archived/index.tsx"),
 				c = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				d = s("./src/reddit/components/InfoBanners/CommentThreadArchivedBanner/index.m.less"),
 				l = s.n(d);
-			t.a = () => o.a.createElement(c.a, {
+			t.a = () => r.a.createElement(c.a, {
 				className: l.a.BannerBase,
-				color: r.a.locked,
-				icon: o.a.createElement(i.a, {
+				color: a.a.locked,
+				icon: r.a.createElement(i.a, {
 					className: l.a.ArchivedIcon
 				}),
-				subtitle: Object(a.c)("New comments cannot be posted and votes cannot be cast"),
-				title: Object(a.c)("This thread is archived")
+				subtitle: n.fbt._("New comments cannot be posted and votes cannot be cast", null, {
+					hk: "3jwi5b"
+				}),
+				title: n.fbt._("This thread is archived", null, {
+					hk: "kEcat"
+				})
 			})
 		},
 		"./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.m.less": function(e, t, s) {
@@ -7361,37 +7365,44 @@
 		},
 		"./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/lib/linkMatchers/customLinks.ts"),
-				a = s("./src/reddit/constants/colors.ts"),
-				i = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./src/lib/linkMatchers/customLinks.ts"),
+				i = s("./src/reddit/constants/colors.ts"),
 				c = s("./src/reddit/models/Subreddit/index.ts"),
 				d = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				l = s("./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.m.less"),
 				m = s.n(l);
-			const p = o.a.createElement(e => o.a.createElement("svg", {
-				className: e.className,
-				id: e.id,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("path", {
-				d: "M16,9H15V7A5,5,0,0,0,5,7V9H4a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V10A1,1,0,0,0,16,9ZM7,7a3,3,0,0,1,6,0V9H7Z"
-			})), {
-				className: m.a.lockIcon
-			});
+			const p = r.a.createElement(e => r.a.createElement("svg", {
+					className: e.className,
+					id: e.id,
+					onMouseEnter: e.onMouseEnter,
+					onMouseLeave: e.onMouseLeave,
+					viewBox: "0 0 20 20",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("path", {
+					d: "M16,9H15V7A5,5,0,0,0,5,7V9H4a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V10A1,1,0,0,0,16,9ZM7,7a3,3,0,0,1,6,0V9H7Z"
+				})), {
+					className: m.a.lockIcon
+				}),
+				u = e => Object(c.e)(e) ? a.d.profile : a.d.subreddit;
 			t.a = e => {
 				let {
 					subredditOrProfile: t
 				} = e;
-				const s = t ? Object(i.c)("This thread has been locked by the moderators of ".concat(Object(i.b)("communityname", (e => Object(c.e)(e) ? r.d.profile : r.d.subreddit)(t) + t.name))) : Object(i.c)("This thread has been locked");
-				return o.a.createElement(d.a, {
+				const s = t ? n.fbt._("This thread has been locked by the moderators of {communityname}", [n.fbt._param("communityname", u(t) + t.name)], {
+					hk: "2HSQXz"
+				}) : n.fbt._("This thread has been locked", null, {
+					hk: "4fn3dn"
+				});
+				return r.a.createElement(d.a, {
 					className: m.a.bannerBase,
-					color: a.a.locked,
+					color: i.a.locked,
 					icon: p,
-					subtitle: Object(i.c)("New comments cannot be posted"),
+					subtitle: n.fbt._("New comments cannot be posted", null, {
+						hk: "2A32Yr"
+					}),
 					title: s
 				})
 			}
@@ -7405,32 +7416,38 @@
 		},
 		"./src/reddit/components/InfoBanners/ContestModeEnabledBanner/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				a = s("./src/lib/lessComponent.tsx"),
-				i = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				c = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				i = s("./src/lib/lessComponent.tsx"),
+				c = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				d = s("./src/reddit/components/InfoBanners/ContestModeEnabledBanner/index.m.less"),
 				l = s.n(d);
-			const m = a.a.wrapped(e => o.a.createElement("svg", {
+			const m = i.a.wrapped(e => r.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 40 40"
-			}, o.a.createElement("g", null, o.a.createElement("path", {
+			}, r.a.createElement("g", null, r.a.createElement("path", {
 				d: "M32,7.8l0.5-5.3h-25L8,7.8c-3.2,0.8-5.5,3.7-5.5,7.2v0.1c0,4,3.1,7.2,7,7.4l0,0c0.3,2.8,2.7,5,5.5,5h0.1 c1.3,0,2.4,1.1,2.4,2.4v0.1c0,1.3-1.1,2.4-2.4,2.4H15c-2.7,0-4.9,2.2-4.9,4.9v0.1h20v-0.1c0-2.7-2.2-4.9-4.9-4.9h-0.1 c-1.3,0-2.4-1.1-2.4-2.4v-0.1c0-1.3,1.1-2.4,2.4-2.4H25c2.8,0,5.2-2.2,5.5-5l0,0c3.9-0.2,7-3.4,7-7.4v-0.1 C37.5,11.5,35.2,8.6,32,7.8z M4.5,15.1v-0.1c0-2.4,1.6-4.4,3.7-5.1l1.1,10.7C6.6,20.1,4.5,17.9,4.5,15.1z M35.5,15.1 c0,2.8-2.1,5.1-4.8,5.4l1.1-10.7c2.2,0.7,3.7,2.8,3.7,5.1V15.1z"
 			}))), "TrophyIcon", l.a);
-			t.a = Object(r.a)(e => {
+			t.a = Object(a.a)(e => {
 				const {
 					hasModeratorPostPermissions: t,
 					theme: s
-				} = e, n = t ? Object(c.c)("Comments are in random ordering and vote scores are hidden to non-mods") : Object(c.c)("Comments are in random ordering and vote scores are hidden");
-				return o.a.createElement(i.a, {
+				} = e, o = t ? n.fbt._("Comments are in random ordering and vote scores are hidden to non-mods", null, {
+					hk: "2gpz9d"
+				}) : n.fbt._("Comments are in random ordering and vote scores are hidden", null, {
+					hk: "3qrgsh"
+				});
+				return r.a.createElement(c.a, {
 					className: l.a.contestModeEnabled,
 					color: s && s.newCommunityTheme.linkText,
-					icon: o.a.createElement(m, null),
-					subtitle: n,
-					title: Object(c.c)("This post has contest mode enabled")
+					icon: r.a.createElement(m, null),
+					subtitle: o,
+					title: n.fbt._("This post has contest mode enabled", null, {
+						hk: "42oz5Q"
+					})
 				})
 			})
 		},
@@ -7452,56 +7469,61 @@
 		},
 		"./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				d = s("./src/reddit/constants/colors.ts"),
 				l = s("./src/reddit/controls/InternalLink/index.tsx"),
-				m = s("./src/reddit/i18n/components.tsx"),
-				p = s("./src/reddit/i18n/utils.ts"),
-				u = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				h = s("./src/reddit/selectors/subreddit.ts"),
-				b = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				x = s("./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.m.less"),
-				f = s.n(x);
-			const v = o.a.createElement(u.a, {
-					className: f.a.icon
+				m = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
+				p = s("./src/reddit/selectors/subreddit.ts"),
+				u = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
+				h = s("./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.m.less"),
+				b = s.n(h);
+			const g = r.a.createElement(m.a, {
+					className: b.a.icon
 				}),
-				C = Object(a.c)({
-					language: b.O,
-					subreddit: h.y,
-					subredditAboutInfo: h.v
+				x = Object(i.c)({
+					subreddit: p.y,
+					subredditAboutInfo: p.v
 				}),
-				O = Object(r.b)(C);
-			t.a = O(e => {
+				f = Object(a.b)(x);
+			t.a = f(e => {
 				const {
 					subreddit: t,
-					subredditAboutInfo: s,
-					language: n
+					subredditAboutInfo: s
 				} = e;
 				if (!(t && t.isQuarantined)) return null;
-				const r = s && s.quarantineMessageHtml,
-					a = s && s.quarantineMessage || Object(i.a)(n, "contentGate.quarantinedSubreddit.quarantineMsg");
-				return o.a.createElement(g.a, {
-					className: f.a.container,
+				const o = s && s.quarantineMessageHtml,
+					a = s && s.quarantineMessage || n.fbt._("It is dedicated to shocking or highly offensive content.", null, {
+						hk: "2QoofC"
+					});
+				return r.a.createElement(u.a, {
+					className: b.a.container,
 					color: d.a.quarantine,
-					icon: v,
-					subtitle: o.a.createElement("span", null, o.a.createElement(m.c, null, "This community is"), " ", o.a.createElement("a", {
-						className: f.a.link,
+					icon: g,
+					subtitle: r.a.createElement("span", null, n.fbt._("This community is {=quarantined}", [n.fbt._param("=quarantined", r.a.createElement("a", {
+						className: b.a.link,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits",
 						target: "_blank"
-					}, o.a.createElement(m.c, null, "quarantined")), ": ", r ? o.a.createElement(c.a, {
-						className: f.a.rawHtmlDisplay,
-						html: r
-					}) : a, " ", o.a.createElement(l.a, {
-						className: f.a.link,
+					}, n.fbt._("quarantined", null, {
+						hk: "2XqfJa"
+					})))], {
+						hk: "AG2cS"
+					}), ": ", o ? r.a.createElement(c.a, {
+						className: b.a.rawHtmlDisplay,
+						html: o
+					}) : a, " ", r.a.createElement(l.a, {
+						className: b.a.link,
 						to: "/"
-					}, o.a.createElement(m.c, null, "Click to return home."))),
-					title: Object(p.c)("Community Quarantined")
+					}, n.fbt._("Click to return home.", null, {
+						hk: "3FgSpg"
+					}))),
+					title: n.fbt._("Community Quarantined", null, {
+						hk: "3RKbEl"
+					})
 				})
 			})
 		},
@@ -17215,4 +17237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.756ce37e54b4a06dffe5.js.map
+//# sourceMappingURL=CommentsPage.c38cde2b76b7fd555b66.js.map

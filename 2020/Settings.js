@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d8cf122e5657d5fc4c6a.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9376b54e10d667143c5b.js
+// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -782,14 +782,14 @@
 			"use strict";
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./src/config.ts"),
-				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
-				r = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				i = n("./src/lib/lessComponent.tsx"),
-				c = n("./src/reddit/components/Widgets/Base/index.tsx"),
-				l = n("./src/reddit/controls/InternalLink/index.tsx"),
-				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				m = n("./src/reddit/i18n/utils.ts"),
+				a = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				i = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/reddit/components/Widgets/Base/index.tsx"),
+				d = n("./src/reddit/controls/InternalLink/index.tsx"),
+				m = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				u = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				p = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				b = n("./src/reddit/icons/svgs/Premium/index.tsx"),
@@ -824,11 +824,11 @@
 			const A = Object(C.c)({
 					language: j.O
 				}),
-				B = i.a.div("Container", T.a),
-				R = i.a.div("Body", T.a),
-				D = i.a.h5("Title", T.a),
-				L = i.a.span("Label", T.a);
-			class U extends o.a.Component {
+				B = c.a.div("Container", T.a),
+				R = c.a.div("Body", T.a),
+				D = c.a.h5("Title", T.a),
+				L = c.a.span("Label", T.a);
+			class U extends r.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -845,14 +845,14 @@
 						title: n,
 						tooltip: s,
 						tooltipId: a
-					} = this.props, r = a && s ? {
+					} = this.props, o = a && s ? {
 						id: a,
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return o.a.createElement(B, null, o.a.createElement(D, null, n), o.a.createElement(R, null, e, o.a.createElement(L, M({
+					return r.a.createElement(B, null, r.a.createElement(D, null, n), r.a.createElement(R, null, e, r.a.createElement(L, M({
 						key: "label"
-					}, r), t)), a && s && o.a.createElement(P.c, {
+					}, o), t)), a && s && r.a.createElement(P.c, {
 						caretOnTop: !0,
 						tooltipId: a,
 						text: s
@@ -878,7 +878,7 @@
 					profileCreated: t ? t.created : 0,
 					subscribers: e && e.subscribers || 0
 				})),
-				V = i.a.div("Container", H.a);
+				V = c.a.div("Container", H.a);
 
 			function G(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
@@ -888,35 +888,51 @@
 						profileCreated: t,
 						isOverlay: n,
 						language: s,
-						commentKarma: a,
-						postKarma: r,
-						subscribers: i
-					} = e, c = G(n, "karma"), l = G(n, "cakeday"), d = Object(m.c)("".concat(Object(m.b)("postKarmaNumber", Object(y.b)(r, !0)), " Post Karma")), u = Object(m.c)("".concat(Object(m.b)("commentKarmaNumber", Object(y.b)(a, !0)), " Comment Karma"));
-					return o.a.createElement(V, null, o.a.createElement(F, {
-						icon: o.a.createElement(w.a, {
+						commentKarma: o,
+						postKarma: i,
+						subscribers: c
+					} = e, l = G(n, "karma"), d = G(n, "cakeday"), m = a.fbt._({
+						"*": "{number} Post Karma",
+						_1: "1 Post Karma"
+					}, [a.fbt._plural(i, "number", Object(y.b)(i, !0))], {
+						hk: "husfU"
+					}), u = a.fbt._({
+						"*": "{number} Comment Karma",
+						_1: "1 Comment Karma"
+					}, [a.fbt._plural(i, "number", Object(y.b)(o, !0))], {
+						hk: "26iPTL"
+					});
+					return r.a.createElement(V, null, r.a.createElement(F, {
+						icon: r.a.createElement(w.a, {
 							className: H.a.icon,
 							key: "karma"
 						}),
-						label: Object(y.b)(a + r, !0),
-						title: Object(m.c)("Karma"),
-						tooltipId: c,
-						tooltip: "".concat(d, "\n").concat(u)
-					}), o.a.createElement(F, {
-						icon: o.a.createElement(k.a, {
+						label: Object(y.b)(o + i, !0),
+						title: a.fbt._("Karma", null, {
+							hk: "RtSgN"
+						}),
+						tooltipId: l,
+						tooltip: "".concat(m, "\n").concat(u)
+					}), r.a.createElement(F, {
+						icon: r.a.createElement(k.a, {
 							className: H.a.icon,
 							key: "cakeDay"
 						}),
 						label: Object(x.a)(t, !0),
-						title: Object(m.c)("Cake day"),
-						tooltipId: l,
+						title: a.fbt._("Cake day", null, {
+							hk: "4x2LB5"
+						}),
+						tooltipId: d,
 						tooltip: Object(E.d)(s, t)
-					}), i > 0 && o.a.createElement(F, {
-						icon: o.a.createElement(O.a, {
+					}), c > 0 && r.a.createElement(F, {
+						icon: r.a.createElement(O.a, {
 							className: H.a.icon,
 							key: "followers"
 						}),
-						title: Object(m.c)("Followers"),
-						label: Object(y.b)(i, !0)
+						title: a.fbt._("Followers", null, {
+							hk: "4ucimK"
+						}),
+						label: Object(y.b)(c, !0)
 					}))
 				})),
 				Z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
@@ -945,39 +961,39 @@
 				}
 				return n
 			};
-			const $ = i.a.div("BannerWrapper", Y.a),
-				ee = i.a.div("BannerImage", Y.a),
-				te = i.a.div("SnooIcon", Y.a),
-				ne = i.a.wrapped(c.b, "Widget", Y.a),
-				se = i.a.h4("UserTitle", Y.a),
-				ae = i.a.wrapped(b.a, "PremiumIcon", Y.a),
-				oe = i.a.div("Description", Y.a),
+			const $ = c.a.div("BannerWrapper", Y.a),
+				ee = c.a.div("BannerImage", Y.a),
+				te = c.a.div("SnooIcon", Y.a),
+				ne = c.a.wrapped(l.b, "Widget", Y.a),
+				se = c.a.h4("UserTitle", Y.a),
+				ae = c.a.wrapped(b.a, "PremiumIcon", Y.a),
+				oe = c.a.div("Description", Y.a),
 				re = e => {
 					var {
 						url: t
 					} = e, n = X(e, ["url"]);
-					return t ? o.a.createElement(l.a, q({}, n, {
+					return t ? r.a.createElement(d.a, q({}, n, {
 						className: Y.a.userName,
 						to: t
-					})) : o.a.createElement("span", q({}, n, {
+					})) : r.a.createElement("span", q({}, n, {
 						className: Y.a.userName
 					}))
 				},
-				ie = i.a.wrapped(g.a, "Actions", Y.a),
-				ce = i.a.wrapped(p.a, "CloseIcon", Y.a),
-				le = i.a.wrapped(r.a, "SettingsLink", Y.a),
-				de = i.a.wrapped(h.a, "SettingsIcon", Y.a),
-				me = i.a.wrapped(d.a, "LoadingIconStyled", Y.a),
-				ue = () => o.a.createElement(me, {
+				ie = c.a.wrapped(g.a, "Actions", Y.a),
+				ce = c.a.wrapped(p.a, "CloseIcon", Y.a),
+				le = c.a.wrapped(i.a, "SettingsLink", Y.a),
+				de = c.a.wrapped(h.a, "SettingsIcon", Y.a),
+				me = c.a.wrapped(m.a, "LoadingIconStyled", Y.a),
+				ue = () => r.a.createElement(me, {
 					sizePx: 20
 				});
-			class pe extends o.a.PureComponent {
+			class pe extends r.a.PureComponent {
 				renderAwardedLastMonth() {
 					const {
 						recentAwardings: e,
 						username: t
 					} = this.props;
-					return e ? o.a.createElement(f.a, {
+					return e ? r.a.createElement(f.a, {
 						recentAwardings: e,
 						username: t
 					}) : null
@@ -987,12 +1003,12 @@
 						actions: e,
 						bannerBackgroundImage: t,
 						className: n,
-						footer: a,
-						isEmployee: r,
-						isGold: i,
-						isOverlay: c,
-						isOwnProfile: l,
-						profileIcon: d,
+						footer: o,
+						isEmployee: i,
+						isGold: c,
+						isOverlay: l,
+						isOwnProfile: d,
+						profileIcon: m,
 						publicDescription: p,
 						title: b,
 						url: h,
@@ -1004,36 +1020,40 @@
 						onDeleteBanner: y,
 						editMode: E
 					} = this.props;
-					return o.a.createElement(ne, {
+					return r.a.createElement(ne, {
 						className: n
-					}, o.a.createElement($, null, t && o.a.createElement(ee, {
+					}, r.a.createElement($, null, t && r.a.createElement(ee, {
 						style: {
 							backgroundImage: "url(".concat(t, ")")
 						}
-					}), E && t && (C ? o.a.createElement(ue, null) : o.a.createElement(ce, {
+					}), E && t && (C ? r.a.createElement(ue, null) : r.a.createElement(ce, {
 						onClick: y
-					}))), o.a.createElement("div", {
+					}))), r.a.createElement("div", {
 						className: K.a.SnooIconWrapper
-					}, o.a.createElement(te, {
+					}, r.a.createElement(te, {
 						style: {
-							backgroundImage: "url(".concat(d, ")")
+							backgroundImage: "url(".concat(m, ")")
 						}
-					}), E && !f && (v ? o.a.createElement(ue, null) : o.a.createElement(ce, {
+					}), E && !f && (v ? r.a.createElement(ue, null) : r.a.createElement(ce, {
 						onClick: x
-					}))), !E && l && o.a.createElement(le, {
+					}))), !E && d && r.a.createElement(le, {
 						to: "/settings/profile"
-					}, o.a.createElement(de, null)), b && o.a.createElement(se, null, b), o.a.createElement(re, {
+					}, r.a.createElement(de, null)), b && r.a.createElement(se, null, b), r.a.createElement(re, {
 						url: h
-					}, "u/".concat(g)), r && o.a.createElement(u.a, {
+					}, "u/".concat(g)), i && r.a.createElement(u.a, {
 						className: K.a.adminIcon,
-						title: Object(m.c)("Reddit admin")
-					}), i && o.a.createElement("a", {
-						title: Object(m.c)("".concat(Object(m.b)("username", g), " has Reddit Premium")),
+						title: a.fbt._("Reddit admin", null, {
+							hk: "goUUb"
+						})
+					}), c && r.a.createElement("a", {
+						title: a.fbt._("{username} has Reddit Premium", [a.fbt._param("username", g)], {
+							hk: "3Fylv"
+						}),
 						href: "".concat(s.a.redditUrl, "/premium")
-					}, o.a.createElement(ae, null)), o.a.createElement(oe, null, p), o.a.createElement(J, {
+					}, r.a.createElement(ae, null)), r.a.createElement(oe, null, p), r.a.createElement(J, {
 						profileName: g,
-						isOverlay: c
-					}), this.renderAwardedLastMonth(), o.a.createElement(ie, null, e), a)
+						isOverlay: l
+					}), this.renderAwardedLastMonth(), r.a.createElement(ie, null, e), o)
 				}
 			}
 		},
@@ -6022,4 +6042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.d8cf122e5657d5fc4c6a.js.map
+//# sourceMappingURL=Settings.9376b54e10d667143c5b.js.map

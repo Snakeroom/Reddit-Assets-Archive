@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.df43c3c0502f157b919a.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.e17c03d3a9438c4afe70.js
+// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5536,23 +5536,23 @@
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.tsx": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/react/index.js"),
-				n = s.n(o),
-				r = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				d = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				c = s("./src/reddit/controls/Typography/index.tsx"),
-				l = s("./src/reddit/i18n/utils.ts"),
+			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				r = s.n(n),
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/reddit/components/SidebarExpandableList/index.tsx"),
+				c = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				l = s("./src/reddit/controls/Typography/index.tsx"),
 				m = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
 				p = s("./node_modules/lodash/isEqual.js"),
 				u = s.n(p);
-			const b = Object(i.b)(i.d, u.a);
+			const b = Object(a.b)(a.d, u.a);
 			var h = s("./src/reddit/selectors/profile.ts"),
 				x = s("./src/reddit/components/SidebarTrophyCase/index.m.less"),
 				g = s.n(x),
 				f = s("./src/lib/lessComponent.tsx");
-			const v = Object(i.c)({
+			const v = Object(a.c)({
 				trophyCase: (e, t) => {
 					let {
 						profileName: s
@@ -5560,12 +5560,14 @@
 					return Object(h.r)(e, Object(h.m)(e, s))
 				}
 			}, b);
-			t.a = Object(r.b)(v)(e => {
+			t.a = Object(i.b)(v)(e => {
 				let {
 					trophyCase: t
 				} = e;
-				return 0 === t.length ? null : n.a.createElement(a.a, {
-					title: Object(l.c)("Trophy Case (".concat(Object(l.b)("trophyCount", t.length), ")")),
+				return 0 === t.length ? null : r.a.createElement(d.a, {
+					title: o.fbt._("Trophy Case ({trophyCount})", [o.fbt._param("trophyCount", "".concat(t.length))], {
+						hk: "mzh3V"
+					}),
 					items: t,
 					renderItem: w
 				})
@@ -5574,23 +5576,23 @@
 				O = f.a.div("TrophyIcon", g.a),
 				E = f.a.h5("TrophyName", g.a),
 				C = f.a.div("TrophyContent", g.a),
-				j = f.a.wrapped(c.f, "Description", g.a);
+				j = f.a.wrapped(l.f, "Description", g.a);
 
 			function w(e) {
 				let {
 					item: t
 				} = e;
-				const s = n.a.createElement("img", {
+				const s = r.a.createElement("img", {
 					src: t.icon,
 					title: t.name
 				});
-				return n.a.createElement(y, {
+				return r.a.createElement(y, {
 					key: t.id
-				}, n.a.createElement(O, null, t.url ? n.a.createElement(d.a, {
+				}, r.a.createElement(O, null, t.url ? r.a.createElement(c.a, {
 					href: t.url,
 					source: void 0,
 					isSponsored: !1
-				}, s) : s), n.a.createElement(C, null, n.a.createElement(E, null, t.name), n.a.createElement(j, null, t.description)))
+				}, s) : s), r.a.createElement(C, null, r.a.createElement(E, null, t.name), r.a.createElement(j, null, t.description)))
 			}
 		},
 		"./src/reddit/components/SourceLink/index.m.less": function(e, t, s) {
@@ -7665,4 +7667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.df43c3c0502f157b919a.js.map
+//# sourceMappingURL=ProfilePrivate.e17c03d3a9438c4afe70.js.map
