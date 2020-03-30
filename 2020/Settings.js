@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9d13b13ab517039bda59.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.49cac8de7ca0c2ca9aa9.js
+// Retrieved at 3/30/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -3671,7 +3671,7 @@
 				})())
 			};
 			const Qe = Object(r.c)({
-				isSSOAccount: () => !0
+				isSSOAccount: () => !1
 			});
 			var qe = Object(o.b)(Qe)(Ye),
 				Xe = n("./src/reddit/components/Settings/DeactivateModal.tsx"),
@@ -6022,4 +6022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.9d13b13ab517039bda59.js.map
+//# sourceMappingURL=Settings.49cac8de7ca0c2ca9aa9.js.map
