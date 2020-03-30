@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b30ca451a79e1e173b87.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.0d44c334b9204c6531a1.js
+// Retrieved at 3/30/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -112,17 +112,17 @@
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return m
+				return u
 			})), s.d(t, "a", (function() {
-				return E
-			})), s.d(t, "b", (function() {
 				return S
+			})), s.d(t, "b", (function() {
+				return O
 			})), s.d(t, "d", (function() {
-				return x
-			})), s.d(t, "e", (function() {
 				return y
+			})), s.d(t, "e", (function() {
+				return g
 			}));
-			s("./node_modules/core-js/modules/es6.regexp.search.js");
+			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/query-string/index.js"),
 				a = s.n(r),
 				i = s("./src/lib/makeActionCreator/index.ts"),
@@ -131,62 +131,63 @@
 				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const m = e => {
+			const m = new Set(["home", "r/popular"]),
+				u = e => {
 					const t = location && location.search || "",
 						s = a.a.parse(t);
-					"home" === e && (s.related = e);
+					m.has(e) && (s.related = e);
 					const r = a.a.stringify(s);
 					return r ? "?".concat(r) : ""
 				},
-				u = Object(i.a)(n.L),
-				b = Object(i.a)(n.x),
-				p = Object(i.a)(n.M),
-				h = Object(i.a)(n.y),
-				v = Object(i.a)(n.K),
-				f = Object(i.a)(n.J),
-				E = Object(i.a)(n.s),
-				S = Object(i.a)(n.t),
-				O = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
+				b = Object(i.a)(n.L),
+				p = Object(i.a)(n.x),
+				h = Object(i.a)(n.M),
+				v = Object(i.a)(n.y),
+				f = Object(i.a)(n.K),
+				E = Object(i.a)(n.J),
+				S = Object(i.a)(n.s),
+				O = Object(i.a)(n.t),
+				x = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
 							name: "pan"
 						})
 					})
 				}),
-				x = e => async (t, s, r) => {
+				y = e => async (t, s, r) => {
 					let {
 						gqlContext: a
 					} = r;
 					const i = Object(c.g)(e),
 						n = s();
 					if (Object(l.e)(n, i)) return;
-					t(u(i));
+					t(b(i));
 					const d = await Object(o.d)(a(), i),
 						m = Date.now();
 					if (d.ok && d.body && d.body.data) {
 						let e = d.body.data;
 						const r = Object(l.b)(s());
-						r && "pan" !== r && (e = O(r)(e)), t(b({
+						r && "pan" !== r && (e = x(r)(e)), t(p({
 							model: e,
 							utcTimeStamp: m
 						}))
-					} else t(j({
+					} else t(w({
 						streamId: i,
 						error: d.error,
 						utcTimeStamp: m
 					}))
-				}, y = e => async (t, s) => Object(d.b)(s()) ? t(C(e)) : t(g()), g = () => async (e, t, s) => {
+				}, g = e => async (t, s) => Object(d.b)(s()) ? t(j(e)) : t(C()), C = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const a = t();
 					if (Object(l.g)(a)) return;
-					e(p());
+					e(h());
 					const i = await Object(o.f)(r()),
 						n = Date.now();
 					if (i.ok && i.body && i.body.data) {
 						const t = i.body.data;
-						e(h({
+						e(v({
 							models: t,
 							utcTimeStamp: n
 						}))
@@ -194,19 +195,19 @@
 						error: i.error,
 						utcTimeStamp: n
 					}))
-				}, C = e => async (t, s, r) => {
+				}, j = e => async (t, s, r) => {
 					let {
 						gqlContext: a
 					} = r;
 					const i = s();
 					if (Object(l.g)(i)) return;
-					t(p());
+					t(h());
 					const n = await Object(o.e)(a(), e),
 						c = Date.now();
 					if (n.ok && n.body && n.body.data) {
 						let r = n.body.data;
 						const a = Object(l.b)(s());
-						a && "pan" !== a && (r = r.map(O(a))), t(h({
+						a && "pan" !== a && (r = r.map(x(a))), t(v({
 							listingName: e,
 							models: r,
 							utcTimeStamp: c
@@ -215,10 +216,10 @@
 						error: n.error,
 						utcTimeStamp: c
 					}))
-				}, j = e => async t => {
-					t(v(e))
-				}, N = e => async t => {
+				}, w = e => async t => {
 					t(f(e))
+				}, N = e => async t => {
+					t(E(e))
 				}
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, s) {
@@ -646,7 +647,7 @@
 					voteState: e.post.voteState
 				}
 			}));
-			var N = Object(i.b)(() => Object(n.c)({
+			var w = Object(i.b)(() => Object(n.c)({
 				subreddit: v.P
 			}))(e => a.a.createElement(p, {
 				className: e.className,
@@ -659,7 +660,7 @@
 					} : {}
 				}
 			}));
-			var w = Object(i.b)(() => Object(n.c)({
+			var N = Object(i.b)(() => Object(n.c)({
 				subredditOrProfile: (e, t) => Object(v.J)(e, {
 					identifier: t
 				})
@@ -709,9 +710,9 @@
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "h", (function() {
 				return w
+			})), s.d(t, "h", (function() {
+				return N
 			})), s.d(t, "i", (function() {
 				return R
 			}))
@@ -747,8 +748,8 @@
 				g = s("./src/reddit/components/Flatlist/index.tsx"),
 				C = s("./src/reddit/components/Flatlist/constants.ts"),
 				j = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				N = s("./src/reddit/components/HlsVideo/index.tsx"),
-				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				w = s("./src/reddit/components/HlsVideo/index.tsx"),
+				N = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				R = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				_ = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				M = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
@@ -995,7 +996,7 @@
 					} = this.props;
 					if (!t) return;
 					const s = !this.state || !this.state.isVisible || e;
-					return a.a.createElement(N.a, {
+					return a.a.createElement(w.a, {
 						url: t.stream.hls_url,
 						autoplay: !0,
 						controls: !1,
@@ -1092,7 +1093,7 @@
 					let {
 						onClick: t
 					} = e;
-					return a.a.createElement(w.b, {
+					return a.a.createElement(N.b, {
 						className: V.a.overflowMenu,
 						dropdownClassName: V.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
@@ -1271,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.b30ca451a79e1e173b87.js.map
+//# sourceMappingURL=RpanListingUnit.0d44c334b9204c6531a1.js.map

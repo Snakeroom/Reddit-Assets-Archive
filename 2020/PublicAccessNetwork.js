@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8397d1b13ec0c748130c.js
-// Retrieved at 3/30/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.320ec147ae9f676d2028.js
+// Retrieved at 3/30/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -376,17 +376,17 @@
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return m
+				return u
 			})), s.d(t, "a", (function() {
-				return w
-			})), s.d(t, "b", (function() {
 				return S
+			})), s.d(t, "b", (function() {
+				return f
 			})), s.d(t, "d", (function() {
-				return C
-			})), s.d(t, "e", (function() {
 				return E
+			})), s.d(t, "e", (function() {
+				return y
 			}));
-			s("./node_modules/core-js/modules/es6.regexp.search.js");
+			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/query-string/index.js"),
 				n = s.n(r),
 				o = s("./src/lib/makeActionCreator/index.ts"),
@@ -395,94 +395,95 @@
 				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const m = e => {
+			const m = new Set(["home", "r/popular"]),
+				u = e => {
 					const t = location && location.search || "",
 						s = n.a.parse(t);
-					"home" === e && (s.related = e);
+					m.has(e) && (s.related = e);
 					const r = n.a.stringify(s);
 					return r ? "?".concat(r) : ""
 				},
-				u = Object(o.a)(a.L),
-				h = Object(o.a)(a.x),
-				p = Object(o.a)(a.M),
-				b = Object(o.a)(a.y),
-				v = Object(o.a)(a.K),
-				g = Object(o.a)(a.J),
-				w = Object(o.a)(a.s),
-				S = Object(o.a)(a.t),
-				f = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
+				h = Object(o.a)(a.L),
+				p = Object(o.a)(a.x),
+				b = Object(o.a)(a.M),
+				v = Object(o.a)(a.y),
+				g = Object(o.a)(a.K),
+				w = Object(o.a)(a.J),
+				S = Object(o.a)(a.s),
+				f = Object(o.a)(a.t),
+				C = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
 							name: "pan"
 						})
 					})
 				}),
-				C = e => async (t, s, r) => {
+				E = e => async (t, s, r) => {
 					let {
 						gqlContext: n
 					} = r;
 					const o = Object(c.g)(e),
 						a = s();
 					if (Object(l.e)(a, o)) return;
-					t(u(o));
+					t(h(o));
 					const d = await Object(i.d)(n(), o),
 						m = Date.now();
 					if (d.ok && d.body && d.body.data) {
 						let e = d.body.data;
 						const r = Object(l.b)(s());
-						r && "pan" !== r && (e = f(r)(e)), t(h({
+						r && "pan" !== r && (e = C(r)(e)), t(p({
 							model: e,
 							utcTimeStamp: m
 						}))
-					} else t(x({
+					} else t(_({
 						streamId: o,
 						error: d.error,
 						utcTimeStamp: m
 					}))
-				}, E = e => async (t, s) => Object(d.b)(s()) ? t(O(e)) : t(y()), y = () => async (e, t, s) => {
+				}, y = e => async (t, s) => Object(d.b)(s()) ? t(x(e)) : t(O()), O = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const n = t();
 					if (Object(l.g)(n)) return;
-					e(p());
+					e(b());
 					const o = await Object(i.f)(r()),
 						a = Date.now();
 					if (o.ok && o.body && o.body.data) {
 						const t = o.body.data;
-						e(b({
+						e(v({
 							models: t,
 							utcTimeStamp: a
 						}))
-					} else e(_({
+					} else e(k({
 						error: o.error,
 						utcTimeStamp: a
 					}))
-				}, O = e => async (t, s, r) => {
+				}, x = e => async (t, s, r) => {
 					let {
 						gqlContext: n
 					} = r;
 					const o = s();
 					if (Object(l.g)(o)) return;
-					t(p());
+					t(b());
 					const a = await Object(i.e)(n(), e),
 						c = Date.now();
 					if (a.ok && a.body && a.body.data) {
 						let r = a.body.data;
 						const n = Object(l.b)(s());
-						n && "pan" !== n && (r = r.map(f(n))), t(b({
+						n && "pan" !== n && (r = r.map(C(n))), t(v({
 							listingName: e,
 							models: r,
 							utcTimeStamp: c
 						}))
-					} else t(_({
+					} else t(k({
 						error: a.error,
 						utcTimeStamp: c
 					}))
-				}, x = e => async t => {
-					t(v(e))
 				}, _ = e => async t => {
 					t(g(e))
+				}, k = e => async t => {
+					t(w(e))
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/theaterSettings.ts": function(e, t, s) {
@@ -3796,4 +3797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.8397d1b13ec0c748130c.js.map
+//# sourceMappingURL=PublicAccessNetwork.320ec147ae9f676d2028.js.map

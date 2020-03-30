@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.e3080d4a458462ed849d.js
-// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.6948f65ba3fad1cd4bc2.js
+// Retrieved at 3/30/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -104,17 +104,17 @@
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return l
+				return h
 			})), s.d(t, "a", (function() {
-				return g
-			})), s.d(t, "b", (function() {
 				return R
+			})), s.d(t, "b", (function() {
+				return y
 			})), s.d(t, "d", (function() {
-				return w
-			})), s.d(t, "e", (function() {
 				return f
+			})), s.d(t, "e", (function() {
+				return E
 			}));
-			s("./node_modules/core-js/modules/es6.regexp.search.js");
+			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/query-string/index.js"),
 				a = s.n(r),
 				i = s("./src/lib/makeActionCreator/index.ts"),
@@ -123,42 +123,43 @@
 				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = e => {
+			const l = new Set(["home", "r/popular"]),
+				h = e => {
 					const t = location && location.search || "",
 						s = a.a.parse(t);
-					"home" === e && (s.related = e);
+					l.has(e) && (s.related = e);
 					const r = a.a.stringify(s);
 					return r ? "?".concat(r) : ""
 				},
-				h = Object(i.a)(n.L),
-				m = Object(i.a)(n.x),
-				b = Object(i.a)(n.M),
-				p = Object(i.a)(n.y),
-				v = Object(i.a)(n.K),
-				S = Object(i.a)(n.J),
-				g = Object(i.a)(n.s),
-				R = Object(i.a)(n.t),
-				y = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
+				m = Object(i.a)(n.L),
+				b = Object(i.a)(n.x),
+				p = Object(i.a)(n.M),
+				v = Object(i.a)(n.y),
+				S = Object(i.a)(n.K),
+				g = Object(i.a)(n.J),
+				R = Object(i.a)(n.s),
+				y = Object(i.a)(n.t),
+				w = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
 							name: "pan"
 						})
 					})
 				}),
-				w = e => async (t, s, r) => {
+				f = e => async (t, s, r) => {
 					let {
 						gqlContext: a
 					} = r;
 					const i = Object(c.g)(e),
 						n = s();
 					if (Object(u.e)(n, i)) return;
-					t(h(i));
+					t(m(i));
 					const d = await Object(o.d)(a(), i),
 						l = Date.now();
 					if (d.ok && d.body && d.body.data) {
 						let e = d.body.data;
 						const r = Object(u.b)(s());
-						r && "pan" !== r && (e = y(r)(e)), t(m({
+						r && "pan" !== r && (e = w(r)(e)), t(b({
 							model: e,
 							utcTimeStamp: l
 						}))
@@ -167,50 +168,50 @@
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, f = e => async (t, s) => Object(d.b)(s()) ? t(P(e)) : t(E()), E = () => async (e, t, s) => {
+				}, E = e => async (t, s) => Object(d.b)(s()) ? t(_(e)) : t(P()), P = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const a = t();
 					if (Object(u.g)(a)) return;
-					e(b());
+					e(p());
 					const i = await Object(o.f)(r()),
 						n = Date.now();
 					if (i.ok && i.body && i.body.data) {
 						const t = i.body.data;
-						e(p({
+						e(v({
 							models: t,
 							utcTimeStamp: n
 						}))
-					} else e(_({
+					} else e(T({
 						error: i.error,
 						utcTimeStamp: n
 					}))
-				}, P = e => async (t, s, r) => {
+				}, _ = e => async (t, s, r) => {
 					let {
 						gqlContext: a
 					} = r;
 					const i = s();
 					if (Object(u.g)(i)) return;
-					t(b());
+					t(p());
 					const n = await Object(o.e)(a(), e),
 						c = Date.now();
 					if (n.ok && n.body && n.body.data) {
 						let r = n.body.data;
 						const a = Object(u.b)(s());
-						a && "pan" !== a && (r = r.map(y(a))), t(p({
+						a && "pan" !== a && (r = r.map(w(a))), t(v({
 							listingName: e,
 							models: r,
 							utcTimeStamp: c
 						}))
-					} else t(_({
+					} else t(T({
 						error: n.error,
 						utcTimeStamp: c
 					}))
 				}, I = e => async t => {
-					t(v(e))
-				}, _ = e => async t => {
 					t(S(e))
+				}, T = e => async t => {
+					t(g(e))
 				}
 		},
 		"./src/reddit/components/HlsVideo/index.tsx": function(e, t, s) {
@@ -415,9 +416,9 @@
 			})), s.d(t, "LiveIndicator", (function() {
 				return P
 			})), s.d(t, "Duration", (function() {
-				return I
-			})), s.d(t, "MutedToggleButton", (function() {
 				return _
+			})), s.d(t, "MutedToggleButton", (function() {
+				return I
 			})), s.d(t, "PausedToggleButton", (function() {
 				return T
 			}));
@@ -525,7 +526,7 @@
 						duration: e,
 						live: t
 					} = this.state;
-					return a.a.createElement(E, null, t ? a.a.createElement(P, null) : e ? a.a.createElement(I, {
+					return a.a.createElement(E, null, t ? a.a.createElement(P, null) : e ? a.a.createElement(_, {
 						seconds: e
 					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
@@ -555,7 +556,7 @@
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(T, {
 						paused: this.isPaused,
 						onClick: this.onTogglePaused
-					}), a.a.createElement(_, {
+					}), a.a.createElement(I, {
 						muted: this.state.muted,
 						onClick: this.onToggleMuted
 					}))
@@ -581,7 +582,7 @@
 				}, R._("Live", null, {
 					hk: "TwJSs"
 				})),
-				I = e => {
+				_ = e => {
 					let {
 						seconds: t
 					} = e;
@@ -594,7 +595,7 @@
 						return [t > 0 ? t.toString() : "", t > 0 ? ":" : "", t > 0 && s < 10 ? "0" : "", s, ":", r < 10 ? "0" : "", r].join("")
 					})(t))
 				},
-				_ = e => {
+				I = e => {
 					let {
 						muted: t,
 						onClick: s
@@ -644,4 +645,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.e3080d4a458462ed849d.js.map
+//# sourceMappingURL=LiveVideoPlayer.6948f65ba3fad1cd4bc2.js.map
