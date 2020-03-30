@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a11967b68196a95a859a.js
-// Retrieved at 3/30/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ffcf3f63fe9f65b565e7.js
+// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -251,7 +251,7 @@
 			n("./node_modules/core-js/modules/es6.regexp.search.js");
 			var r = n("./node_modules/lodash/omit.js"),
 				s = n.n(r),
-				o = n("./node_modules/url/url.js"),
+				o = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				i = n.n(o);
 			t.a = (e, t) => {
 				const n = i.a.parse(e, !0);
@@ -24149,7 +24149,7 @@
 			})), n.d(t, "a", (function() {
 				return h
 			}));
-			var r = n("./node_modules/url/url.js"),
+			var r = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = n("./src/lib/constants/index.ts"),
 				o = n("./src/lib/makeApiRequest/index.ts"),
 				i = n("./src/lib/omitHeaders/index.ts"),
@@ -25706,7 +25706,7 @@
 				return a
 			}));
 			var r = n("./src/config.ts"),
-				s = n("./node_modules/url/url.js"),
+				s = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				o = n.n(s),
 				i = n("./src/lib/addQueryParams/index.ts");
 
@@ -25755,7 +25755,7 @@
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var r = n("./node_modules/react-router-redux/es/index.js"),
-				s = n("./node_modules/url/url.js"),
+				s = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				o = n.n(s),
 				i = n("./src/lib/addQueryParams/index.ts"),
 				c = n("./src/lib/isAdHocMultireddit/index.ts"),
@@ -26804,7 +26804,7 @@
 		},
 		"./src/reddit/helpers/getS3KeyFromUrl/index.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/url/url.js"),
+			var r = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = n.n(r);
 			t.a = e => {
 				const {
@@ -28718,7 +28718,7 @@
 		},
 		"./src/reddit/helpers/onBeforeRequestFactory/index.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/url/url.js"),
+			var r = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = n.n(r),
 				o = n("./src/config.ts"),
 				i = n("./src/lib/addQueryParams/index.ts"),
@@ -32568,7 +32568,7 @@
 				return L
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r, s = n("./node_modules/url/url.js"),
+			var r, s = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				o = n.n(s);
 			! function(e) {
 				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
@@ -60733,7 +60733,7 @@
 				c = n("./node_modules/lodash/values.js"),
 				a = n.n(c),
 				d = n("./node_modules/reselect/es/index.js"),
-				u = n("./node_modules/url/url.js"),
+				u = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				l = n.n(u),
 				b = n("./src/config.ts"),
 				p = n("./src/lib/constants/index.ts"),
@@ -62411,7 +62411,7 @@
 				return I
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/fbt/lib/FbtPublic.js"), n("./node_modules/react/index.js");
-			var r = n("./node_modules/url/url.js"),
+			var r = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = n.n(r),
 				o = n("./src/config.ts"),
 				i = n("./src/lib/constants/index.ts"),
@@ -62516,4 +62516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a11967b68196a95a859a.js.map
+//# sourceMappingURL=Governance~Reddit.ffcf3f63fe9f65b565e7.js.map

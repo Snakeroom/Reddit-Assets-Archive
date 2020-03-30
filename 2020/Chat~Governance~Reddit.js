@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2401871aaf331c4da595.js
-// Retrieved at 3/30/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b0ec4ea4eb495f8e3ca.js
+// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10414,7 +10414,7 @@
 				r = i.n(n),
 				s = i("./node_modules/lodash/pickBy.js"),
 				o = i.n(s),
-				d = i("./node_modules/url/url.js"),
+				d = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				l = i.n(d),
 				a = i("./src/lib/extractQueryParams/index.ts");
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -11254,7 +11254,7 @@
 						d = e.concat([n, o]);
 					return e.from(d).toString("base64")
 				}
-			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/buffer/index.js").Buffer)
 		},
 		"./src/lib/domUtils/index.ts": function(e, t, i) {
 			"use strict";
@@ -11523,14 +11523,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4e9fa4a-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("6aa8763-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4e9fa4a-production",
+						release: "6aa8763-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(O.d)(), new s.Integrations.Breadcrumbs({
@@ -11833,7 +11833,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4e9fa4a-production",
+							releaseClient: "6aa8763-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -11970,7 +11970,7 @@
 				s = i.n(r),
 				o = i("./node_modules/lodash/omit.js"),
 				d = i.n(o),
-				l = i("./node_modules/url/url.js"),
+				l = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				a = i.n(l),
 				u = i("./src/lib/addQueryParams/index.ts"),
 				c = i("./src/lib/constants/index.ts"),
@@ -16553,7 +16553,7 @@
 						return JSON.stringify(this.stack.pop())
 					}
 				}
-			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/buffer/index.js").Buffer)
 		},
 		"./src/telemetry/helpers/sendEvent.ts": function(e, t, i) {
 			"use strict";
@@ -17686,4 +17686,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.2401871aaf331c4da595.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.7b0ec4ea4eb495f8e3ca.js.map

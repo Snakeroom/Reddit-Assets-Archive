@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.b3c5948aa506fb8a9a4c.js
-// Retrieved at 3/11/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.e8fbc1ad5efb3532ec57.js
+// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/google-tag-manager/compiled.js": function(e, t, o) {
@@ -1662,4 +1662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Reddit.b3c5948aa506fb8a9a4c.js.map
+//# sourceMappingURL=vendors~Reddit.e8fbc1ad5efb3532ec57.js.map

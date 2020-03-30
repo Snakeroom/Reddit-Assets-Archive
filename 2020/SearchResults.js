@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e7277f5721ee77b228c5.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8a154499493d235c715b.js
+// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -5585,7 +5585,7 @@
 						className: t
 					}, r.a.createElement(Is, s), s.searchOptions && s.searchOptions.sort !== i.O.NEW && r.a.createElement(Ns, s), s.subreddit && !!s.searchOptions.restrict_sr && !s.shouldHideGlobalSearchLink && r.a.createElement(Ts, s))
 				}))), "Component", gs.a),
-				Ls = (s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/url/url.js")),
+				Ls = (s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/node-libs-browser/node_modules/url/url.js")),
 				Rs = s.n(Ls),
 				Fs = s("./src/reddit/components/ThemeProvider/index.tsx"),
 				As = s("./src/reddit/components/SearchSwitcher/index.m.less"),
@@ -9382,4 +9382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.e7277f5721ee77b228c5.js.map
+//# sourceMappingURL=SearchResults.8a154499493d235c715b.js.map

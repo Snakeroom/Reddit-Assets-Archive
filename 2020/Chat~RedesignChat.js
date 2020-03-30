@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bdabbda42b01b3ab6d07.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.941b5e11688da66fe9c9.js
+// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -8969,7 +8969,7 @@
 			var a, s = n("./node_modules/lodash/once.js"),
 				c = n.n(s),
 				r = n("./node_modules/react-router-redux/es/index.js"),
-				o = n("./node_modules/url/url.js"),
+				o = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				i = n("./src/lib/constants/index.ts"),
 				l = n("./src/lib/messageIframeParent/index.ts"),
 				d = n("./src/chat/actions/channel.ts"),
@@ -12101,7 +12101,7 @@
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
 			var a = n("./node_modules/js-cookie/src/js.cookie.js"),
 				s = n.n(a),
-				c = n("./node_modules/url/url.js"),
+				c = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				r = n.n(c),
 				o = n("./src/lib/constants/cookie.ts"),
 				i = n("./src/chat/selectors/app.ts");
@@ -13974,4 +13974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.bdabbda42b01b3ab6d07.js.map
+//# sourceMappingURL=Chat~RedesignChat.941b5e11688da66fe9c9.js.map

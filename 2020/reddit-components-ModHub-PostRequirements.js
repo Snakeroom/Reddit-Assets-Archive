@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.c944acf4230dd1656934.js
-// Retrieved at 3/24/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.dd58076a8bc2a8d1284d.js
+// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, n) {
@@ -1480,4 +1480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-PostRequirements.c944acf4230dd1656934.js.map
+//# sourceMappingURL=reddit-components-ModHub-PostRequirements.dd58076a8bc2a8d1284d.js.map
