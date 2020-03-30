@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.5017f7be294114d3d290.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.71fcc6fc754f5baee8a5.js
+// Retrieved at 3/30/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -68,7 +68,7 @@
 					link_ids: o.join(",")
 				}
 			});
-			var v = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var k = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_description.json"),
 				method: a.cb.POST,
 				data: {
@@ -76,7 +76,7 @@
 					description: o
 				}
 			});
-			var k = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var v = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_display_layout.json"),
 					method: a.cb.POST,
 					data: {
@@ -97,7 +97,7 @@
 			})), o.d(e, "g", (function() {
 				return A
 			})), o.d(e, "a", (function() {
-				return F
+				return N
 			})), o.d(e, "c", (function() {
 				return G
 			})), o.d(e, "h", (function() {
@@ -190,7 +190,7 @@
 							buttonText: n.fbt._("UNDO", null, {
 								hk: "3KPLib"
 							}),
-							buttonAction: F(t, e)
+							buttonAction: N(t, e)
 						}))
 					} else c(Object(r.e)({
 						kind: x.b.Error,
@@ -198,7 +198,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(l.a), N = Object(i.a)(l.t), F = (t, e) => async (o, c, s) => {
+				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), N = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -207,7 +207,7 @@
 						o(B({
 							collectionId: t,
 							postId: e
-						})), o(N({
+						})), o(F({
 							collectionId: t,
 							postId: e
 						}));
@@ -286,7 +286,7 @@
 						}))
 					}
 					return d
-				}, z = Object(i.a)(l.l), Y = Object(i.a)(l.m), H = Object(i.a)(l.k), X = t => async (e, o) => {
+				}, Y = Object(i.a)(l.l), z = Object(i.a)(l.m), H = Object(i.a)(l.k), X = t => async (e, o) => {
 					const n = o().platform.currentPage.locationState;
 					e(!(!n || !n[d.a.IsOverlay]) ? Object(g.a)(t.permalink) : Object(c.b)(Object(h.b)(t.permalink)))
 				}, Z = Object(i.a)(l.i), Q = Object(i.a)(l.j), $ = Object(i.a)(l.h), tt = Object(i.a)(l.p), et = Object(i.a)(l.o), ot = Object(i.a)(l.q), nt = t => async e => {
@@ -325,10 +325,10 @@
 						let {
 							apiContext: i
 						} = s;
-						o(z());
-						const l = await v(i(), t, e);
+						o(Y());
+						const l = await k(i(), t, e);
 						let d = !1;
-						if (l.ok) o(Y({
+						if (l.ok) o(z({
 							collectionId: t,
 							newDescription: e
 						})), o(Object(r.e)({
@@ -352,7 +352,7 @@
 							apiContext: i
 						} = s;
 						o(tt());
-						const l = await k(i(), t, e);
+						const l = await v(i(), t, e);
 						let d = !1;
 						if (l.ok) o(ot({
 							collectionId: t,
@@ -398,16 +398,16 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(t, e, o) {
 			"use strict";
 			o.d(e, "a", (function() {
-				return v
+				return k
 			}));
-			var n = o("./node_modules/react/index.js"),
-				c = o.n(n),
-				s = o("./node_modules/react-redux/es/index.js"),
-				i = o("./node_modules/reselect/es/index.js"),
-				l = o("./src/lib/classNames/index.ts"),
-				r = o("./src/lib/lessComponent.tsx"),
-				d = o("./src/reddit/actions/tooltip.ts"),
-				a = o("./src/reddit/i18n/utils.ts"),
+			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
+				c = o("./node_modules/react/index.js"),
+				s = o.n(c),
+				i = o("./node_modules/react-redux/es/index.js"),
+				l = o("./node_modules/reselect/es/index.js"),
+				r = o("./src/lib/classNames/index.ts"),
+				d = o("./src/lib/lessComponent.tsx"),
+				a = o("./src/reddit/actions/tooltip.ts"),
 				u = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				p = o("./src/reddit/controls/Dropdown/index.tsx"),
 				b = o("./src/reddit/controls/Dropdown/Row.tsx"),
@@ -415,12 +415,12 @@
 				m = o("./src/reddit/selectors/tooltip.ts"),
 				j = o("./src/reddit/components/OverflowMenu/index.m.less"),
 				f = o.n(j);
-			const _ = r.a.wrapped(p.a, "_Dropdown", f.a),
+			const _ = d.a.wrapped(p.a, "_Dropdown", f.a),
 				C = Object(u.a)(_),
-				I = r.a.button("MenuButton", f.a),
-				w = r.a.wrapped(O.a, "MenuIcon", f.a),
-				v = r.a.wrapped(b.b, "DropdownRow", f.a),
-				k = Object(i.c)({
+				I = d.a.button("MenuButton", f.a),
+				w = d.a.wrapped(O.a, "MenuIcon", f.a),
+				k = d.a.wrapped(b.b, "DropdownRow", f.a),
+				v = Object(l.c)({
 					dropdownIsOpen: (t, e) => {
 						let {
 							dropdownId: o
@@ -428,12 +428,12 @@
 						return Object(m.b)(o)(t)
 					}
 				}),
-				g = Object(s.b)(k, (t, e) => {
+				g = Object(i.b)(v, (t, e) => {
 					let {
 						dropdownId: o
 					} = e;
 					return {
-						toggleDropdown: () => t(Object(d.h)({
+						toggleDropdown: () => t(Object(a.h)({
 							tooltipId: o
 						}))
 					}
@@ -441,18 +441,20 @@
 				h = t => e => {
 					t.onClick && t.onClick(), t.toggleDropdown(), e.stopPropagation()
 				};
-			e.b = g(t => c.a.createElement(I, {
+			e.b = g(t => s.a.createElement(I, {
 				"aria-expanded": t.dropdownIsOpen,
 				"aria-haspopup": !0,
-				"aria-label": Object(a.c)("more options"),
-				className: Object(l.a)(t.className, {
+				"aria-label": n.fbt._("more options", null, {
+					hk: "2EnY1x"
+				}),
+				className: Object(r.a)(t.className, {
 					[f.a.mIsEnabled]: !t.disabled && !t.defaultButtonOutline
 				}),
 				disabled: t.disabled,
 				onClick: h(t),
 				onMouseDown: t.handleMouseDown,
 				id: t.dropdownId
-			}, t.icon ? t.icon : c.a.createElement(w, null), c.a.createElement(C, {
+			}, t.icon ? t.icon : s.a.createElement(w, null), s.a.createElement(C, {
 				className: t.dropdownClassName,
 				isOpen: t.dropdownIsOpen,
 				tooltipId: t.dropdownId,
@@ -488,9 +490,9 @@
 			})), o.d(e, "j", (function() {
 				return w
 			})), o.d(e, "q", (function() {
-				return v
-			})), o.d(e, "k", (function() {
 				return k
+			})), o.d(e, "k", (function() {
+				return v
 			})), o.d(e, "l", (function() {
 				return g
 			})), o.d(e, "i", (function() {
@@ -586,11 +588,11 @@
 						noun: c.collectionCreate
 					})
 				},
-				v = () => t => Object.assign({}, p(t), {
+				k = () => t => Object.assign({}, p(t), {
 					source: n.collectionComposer,
 					noun: c.collectionSelect
 				}),
-				k = t => e => Object.assign({}, r.defaults(e), {
+				v = t => e => Object.assign({}, r.defaults(e), {
 					subreddit: r.subreddit(e),
 					source: n.collectionComposer,
 					action: s.c.CLICK,
@@ -679,7 +681,7 @@
 				f = t => e => Object.assign({}, g(e, Object(d.n)(e)), {
 					source: n.postComposer,
 					noun: "apply",
-					postComposer: v(t)
+					postComposer: k(t)
 				}),
 				_ = () => t => Object.assign({}, g(t, Object(d.n)(t)), {
 					noun: "cancel",
@@ -689,20 +691,20 @@
 					noun: "delete",
 					actionInfo: b(e),
 					postComposer: w(e),
-					postEvent: k(t)
+					postEvent: v(t)
 				}),
 				I = t => {
 					const e = Object(a.o)(t);
-					return e && k(e)
+					return e && v(e)
 				},
-				w = t => v(Object(a.o)(t)),
-				v = t => {
+				w = t => k(Object(a.o)(t)),
+				k = t => {
 					return {
 						postScheduled: !!t,
 						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Eb : void 0
 					}
 				},
-				k = t => {
+				v = t => {
 					const e = Object(i.f)(t.startDate).getTime() / c.Eb,
 						o = Object(i.f)(t.endDate).getTime() / c.Eb;
 					return {
@@ -730,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.5017f7be294114d3d290.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.71fcc6fc754f5baee8a5.js.map

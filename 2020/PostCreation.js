@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e6174075ba97b9bd87a6.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.75cd3ee976449f73d467.js
+// Retrieved at 3/30/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -6969,14 +6969,14 @@
 			n.d(t, "a", (function() {
 				return E
 			}));
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/lib/classNames/index.ts"),
-				c = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/actions/tooltip.ts"),
-				d = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				i = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/lib/classNames/index.ts"),
+				l = n("./src/lib/lessComponent.tsx"),
+				d = n("./src/reddit/actions/tooltip.ts"),
 				u = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				p = n("./src/reddit/controls/Dropdown/index.tsx"),
 				m = n("./src/reddit/controls/Dropdown/Row.tsx"),
@@ -6984,12 +6984,12 @@
 				b = n("./src/reddit/selectors/tooltip.ts"),
 				f = n("./src/reddit/components/OverflowMenu/index.m.less"),
 				g = n.n(f);
-			const x = c.a.wrapped(p.a, "_Dropdown", g.a),
+			const x = l.a.wrapped(p.a, "_Dropdown", g.a),
 				y = Object(u.a)(x),
-				C = c.a.button("MenuButton", g.a),
-				v = c.a.wrapped(h.a, "MenuIcon", g.a),
-				E = c.a.wrapped(m.b, "DropdownRow", g.a),
-				O = Object(i.c)({
+				C = l.a.button("MenuButton", g.a),
+				v = l.a.wrapped(h.a, "MenuIcon", g.a),
+				E = l.a.wrapped(m.b, "DropdownRow", g.a),
+				O = Object(a.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: n
@@ -6997,12 +6997,12 @@
 						return Object(b.b)(n)(e)
 					}
 				}),
-				j = Object(r.b)(O, (e, t) => {
+				j = Object(i.b)(O, (e, t) => {
 					let {
 						dropdownId: n
 					} = t;
 					return {
-						toggleDropdown: () => e(Object(l.h)({
+						toggleDropdown: () => e(Object(d.h)({
 							tooltipId: n
 						}))
 					}
@@ -7010,18 +7010,20 @@
 				w = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = j(e => o.a.createElement(C, {
+			t.b = j(e => r.a.createElement(C, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
-				"aria-label": Object(d.c)("more options"),
-				className: Object(a.a)(e.className, {
+				"aria-label": s.fbt._("more options", null, {
+					hk: "2EnY1x"
+				}),
+				className: Object(c.a)(e.className, {
 					[g.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
 				onClick: w(e),
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
-			}, e.icon ? e.icon : o.a.createElement(v, null), o.a.createElement(y, {
+			}, e.icon ? e.icon : r.a.createElement(v, null), r.a.createElement(y, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -30512,4 +30514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.e6174075ba97b9bd87a6.js.map
+//# sourceMappingURL=PostCreation.75cd3ee976449f73d467.js.map

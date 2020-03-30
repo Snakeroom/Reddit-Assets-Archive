@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.685fc2c24c51c88a2b97.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.e53df24b7e35b4a68d5c.js
+// Retrieved at 3/30/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -992,14 +992,14 @@
 			n.d(t, "a", (function() {
 				return C
 			}));
-			var s = n("./node_modules/react/index.js"),
-				i = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/classNames/index.ts"),
-				a = n("./src/lib/lessComponent.tsx"),
-				c = n("./src/reddit/actions/tooltip.ts"),
-				l = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				i = n("./node_modules/react/index.js"),
+				r = n.n(i),
+				o = n("./node_modules/react-redux/es/index.js"),
+				d = n("./node_modules/reselect/es/index.js"),
+				a = n("./src/lib/classNames/index.ts"),
+				c = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/reddit/actions/tooltip.ts"),
 				m = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				u = n("./src/reddit/controls/Dropdown/index.tsx"),
 				p = n("./src/reddit/controls/Dropdown/Row.tsx"),
@@ -1007,12 +1007,12 @@
 				h = n("./src/reddit/selectors/tooltip.ts"),
 				x = n("./src/reddit/components/OverflowMenu/index.m.less"),
 				g = n.n(x);
-			const E = a.a.wrapped(u.a, "_Dropdown", g.a),
+			const E = c.a.wrapped(u.a, "_Dropdown", g.a),
 				O = Object(m.a)(E),
-				y = a.a.button("MenuButton", g.a),
-				f = a.a.wrapped(b.a, "MenuIcon", g.a),
-				C = a.a.wrapped(p.b, "DropdownRow", g.a),
-				v = Object(o.c)({
+				y = c.a.button("MenuButton", g.a),
+				f = c.a.wrapped(b.a, "MenuIcon", g.a),
+				C = c.a.wrapped(p.b, "DropdownRow", g.a),
+				v = Object(d.c)({
 					dropdownIsOpen: (e, t) => {
 						let {
 							dropdownId: n
@@ -1020,12 +1020,12 @@
 						return Object(h.b)(n)(e)
 					}
 				}),
-				w = Object(r.b)(v, (e, t) => {
+				w = Object(o.b)(v, (e, t) => {
 					let {
 						dropdownId: n
 					} = t;
 					return {
-						toggleDropdown: () => e(Object(c.h)({
+						toggleDropdown: () => e(Object(l.h)({
 							tooltipId: n
 						}))
 					}
@@ -1033,18 +1033,20 @@
 				j = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = w(e => i.a.createElement(y, {
+			t.b = w(e => r.a.createElement(y, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
-				"aria-label": Object(l.c)("more options"),
-				className: Object(d.a)(e.className, {
+				"aria-label": s.fbt._("more options", null, {
+					hk: "2EnY1x"
+				}),
+				className: Object(a.a)(e.className, {
 					[g.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
 				onClick: j(e),
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
-			}, e.icon ? e.icon : i.a.createElement(f, null), i.a.createElement(O, {
+			}, e.icon ? e.icon : r.a.createElement(f, null), r.a.createElement(O, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -2428,4 +2430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.685fc2c24c51c88a2b97.js.map
+//# sourceMappingURL=Multireddit.e53df24b7e35b4a68d5c.js.map
