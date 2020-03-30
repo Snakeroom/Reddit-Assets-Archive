@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.1286b57a9f42d303db18.js
-// Retrieved at 3/25/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e4feaa33830c87920a43.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -1947,7 +1947,7 @@
 				},
 				O = Object(f.t)(),
 				j = Object(l.c)({
-					postLayout: f.L,
+					postLayout: f.M,
 					redditStyle: f.A
 				}),
 				I = Object(i.b)(j, e => ({
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.1286b57a9f42d303db18.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e4feaa33830c87920a43.js.map

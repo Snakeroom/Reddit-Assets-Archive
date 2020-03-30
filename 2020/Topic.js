@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.ef5e03d3982bc3a96bc2.js
-// Retrieved at 3/25/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.94c37797c9b258203962.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -306,7 +306,7 @@
 				P = Object(p.t)(),
 				k = Object(i.c)({
 					dropdownIsOpen: Object(S.b)(L),
-					postLayout: p.L,
+					postLayout: p.M,
 					redditStyle: p.A
 				}),
 				F = Object(o.b)(k, e => ({
@@ -1417,7 +1417,7 @@
 				return e ? (e.hasPosts && t.push(Ne.Posts), e.hasSubreddits && t.push(Ne.Communities), t) : t
 			}, Re = Object(o.b)(() => Object(i.a)((e, t) => Object(O.c)(e, Pe(0, t), !0), (e, t) => Object(O.a)(e, {
 				topicSlug: Pe(0, t)
-			}), Pe, ke, se.L, Fe, Ee.c, (e, t, s, n, r, o, i) => ({
+			}), Pe, ke, se.M, Fe, Ee.c, (e, t, s, n, r, o, i) => ({
 				layout: r,
 				listingKey: n,
 				sort: o,
@@ -1530,4 +1530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.ef5e03d3982bc3a96bc2.js.map
+//# sourceMappingURL=Topic.94c37797c9b258203962.js.map

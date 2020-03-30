@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.73583518850c628a34b4.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.fc072810a62eff07e4d0.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, n) {
@@ -160,7 +160,7 @@
 				h = n("./src/lib/lessComponent.tsx");
 			const v = Object(m.t)(),
 				b = Object(r.c)({
-					layout: m.L
+					layout: m.M
 				}),
 				x = Object(a.b)(b);
 			class f extends o.a.Component {
@@ -355,4 +355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailCollectionBanner.73583518850c628a34b4.js.map
+//# sourceMappingURL=EmailCollectionBanner.fc072810a62eff07e4d0.js.map

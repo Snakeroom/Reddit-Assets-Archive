@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.382481a8b766574328a8.js
-// Retrieved at 3/24/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.7b9cf1473004482137e3.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -826,7 +826,7 @@
 				}))))
 			});
 			const re = Object(y.t)({
-					isCompletePaypal: e => !!Object(y.Q)(e).thanks
+					isCompletePaypal: e => !!Object(y.R)(e).thanks
 				}),
 				ie = Object(m.c)({
 					activeSaleConfig: O.a,
@@ -1010,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.382481a8b766574328a8.js.map
+//# sourceMappingURL=Coins.7b9cf1473004482137e3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7fd7d40e1cae79b658db.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.188926d709eea2683a8f.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -890,77 +890,6 @@
 						}
 					}
 				},
-				feedForm: {
-					adultContent: u({
-						en: "Adult content"
-					}, {
-						en: "Enable to view adult and NSFW (not safe for work) content in your feed and search results"
-					}),
-					hideNSFW: u({
-						en: "Safe browsing mode"
-					}, {
-						en: "Blur thumbnails and media preview for anything labeled NSFW (not safe for work)"
-					}),
-					rss: u({
-						en: "List of your RSS feeds"
-					}, {
-						en: "List of links to private RSS feeds so that you can get listings of your content"
-					}),
-					autoplayVideo: u({
-						en: "Autoplay media"
-					}, {
-						en: "Play videos and gifs automatically when in the viewport"
-					}),
-					subredditStyling: u({
-						en: "Community themes"
-					}, {
-						en: "Use custom themes for all communities. You can also turn this off on a per community basis."
-					}),
-					openPostInNewTab: u({
-						en: "Open posts in new tab"
-					}, {
-						en: "Enable to always open posts in a new tab"
-					}),
-					useMarkdown: u({
-						en: "Default to markdown"
-					}, {
-						en: "When posting, your input will default to markdown text instead of fancy pants"
-					}),
-					listingSort: u({
-						en: "Community content sort"
-					}, {
-						en: "Choose how you would like content organized in communities you visit. This will not affect global feeds such as Home, or Popular."
-					}),
-					rememberCommunitySort: u({
-						en: "Remember per community"
-					}, {
-						en: "Enable if you would like each community to remember and use the last content sort you selected for that community."
-					}),
-					rememberCommunityLayout: u({
-						en: "Remember per community"
-					}, {
-						en: "Enable if you would like each community to remember and use the last content view you selected for that community."
-					}),
-					layout: u({
-						en: "Global content view"
-					}, {
-						en: "Choose how you would like content displayed in feeds. This control is also found above your feed."
-					}),
-					headings: {
-						main: {
-							en: "Feed settings"
-						},
-						contentPrefs: {
-							en: "content preferences"
-						},
-						postPrefs: {
-							en: "post preferences"
-						},
-						rss: {
-							en: "rss feeds"
-						}
-					}
-				},
 				premiumForm: {
 					premium: Object.assign({}, u({
 						en: "Reddit Premium"
@@ -1089,61 +1018,7 @@
 					}
 				},
 				profileForm: {
-					headings: {
-						main: {
-							en: "Customize profile"
-						},
-						information: {
-							en: "Profile Information"
-						},
-						images: {
-							en: "images"
-						},
-						category: {
-							en: "Profile category"
-						},
-						advanced: {
-							en: "advanced"
-						},
-						moderation: {
-							en: "Profile moderation"
-						}
-					},
-					displayName: {
-						label: {
-							en: "Display name"
-						},
-						subtext: {
-							en: "Set a display name. This does not change your username."
-						},
-						placeholder: {
-							en: "Display name"
-						}
-					},
-					about: {
-						label: {
-							en: "About"
-						},
-						subtext: {
-							en: "A brief description of yourself shown on your profile."
-						},
-						placeholder: {
-							en: "About"
-						}
-					},
 					images: {
-						label: {
-							en: "Avatar and banner image"
-						},
-						subtext: {
-							en: "Images must be .png or .jpg format"
-						},
-						iconUploader: {
-							en: "Drag and Drop or Upload Avatar Image"
-						},
-						bannerUploader: {
-							en: "Drag and Drop or Upload Banner Image"
-						},
 						errors: {
 							profileBanner: {
 								en: "There was an error uploading your image. Please verify that the size of your image is 1280x384 and less than 500KB."
@@ -1151,47 +1026,6 @@
 							profileIcon: {
 								en: "There was an error uploading your image. Please verify that the size of your image is 256x256 and less than 500KB."
 							}
-						}
-					},
-					nsfw: {
-						label: {
-							en: "NSFW"
-						},
-						subtext: {
-							en: "This content is NSFW (may contain nudity, pornography, profanity or inappropriate content for those under 18)"
-						}
-					},
-					contentVisible: {
-						label: {
-							en: "Content visibility"
-						},
-						subtext: {
-							en: 'Posts to this profile can appear in <a href="/r/all">r/all</a> and your profile can be discovered in <a href="/users">/users</a>'
-						}
-					},
-					showActiveCommunities: {
-						label: {
-							en: "Active in communities visibility"
-						},
-						subtext: {
-							en: "Show which communities I am active in on my profile."
-						}
-					},
-					modLink: {
-						en: 'For moderation tools please visit our <a href="/user/%{userName}/about/edit/moderation">Profile Moderation page</a>'
-					},
-					toSFWConfirm: {
-						title: {
-							en: "SWITCH ACCOUNT TO SFW"
-						},
-						message: {
-							en: 'If your account contains <a href="https://www.redditinc.com/policies/content-policy#text-content3">NSFW content</a> (contains nudity, pornography, profanity or inappropriate content for those under 18) and it’s not set to NSFW, this will result in actions up to and including suspension of your account.'
-						},
-						cancel: {
-							en: "Cancel"
-						},
-						ok: {
-							en: "I UNDERSTAND"
 						}
 					}
 				}
@@ -11689,14 +11523,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("010d1c5-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("f19fbc8-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "010d1c5-production",
+						release: "f19fbc8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11999,7 +11833,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "010d1c5-production",
+							releaseClient: "f19fbc8-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17852,4 +17686,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.7fd7d40e1cae79b658db.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.188926d709eea2683a8f.js.map

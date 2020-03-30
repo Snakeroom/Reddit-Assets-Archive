@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.4ee027f9562221199ec4.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.40a3e5adc8d3c98008b2.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -824,29 +824,29 @@
 						experimentEligibilitySelector: k.a,
 						experimentName: V.hb
 					});
-					return Object(V.Vb)(t) ? void 0 : t
+					return Object(V.Xb)(t) ? void 0 : t
 				},
-				N = e => e === V.jb.On,
+				N = e => e === V.kb.On,
 				R = e => {
 					const t = Object(k.c)(e, {
 						experimentEligibilitySelector: k.a,
 						experimentName: V.ib
 					});
-					return Object(V.Vb)(t) ? void 0 : t
+					return Object(V.Xb)(t) ? void 0 : t
 				},
-				j = e => e === V.jb.On;
+				j = e => e === V.kb.On;
 			var H = s("./src/reddit/selectors/experiments/utils.ts");
 			const A = Object(u.a)(e => Object(k.c)(e, {
-					experimentName: V.Sb,
+					experimentName: V.Ub,
 					experimentEligibilitySelector: k.a
 				}), H.a),
 				I = Object(u.a)(A, (function(e) {
 					switch (e) {
-						case V.Tb.BufferTwoSeconds:
+						case V.Vb.BufferTwoSeconds:
 							return 2;
-						case V.Tb.BufferFiveSeconds:
+						case V.Vb.BufferFiveSeconds:
 							return 5;
-						case V.Tb.BufferTenSeconds:
+						case V.Vb.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1769,8 +1769,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("010d1c5-production", " ").concat(t);
-									return i && (s += " [".concat(V.Sb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("f19fbc8-production", " ").concat(t);
+									return i && (s += " [".concat(V.Ub, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2263,4 +2263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.4ee027f9562221199ec4.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.40a3e5adc8d3c98008b2.js.map

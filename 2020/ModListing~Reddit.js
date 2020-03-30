@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.2e690966799db907e6f7.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.9661c874bd61e821aba8.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -3030,7 +3030,7 @@
 			const b = Object(d.t)(),
 				h = Object(i.c)({
 					isEditing: l.j,
-					layout: (e, t) => t.forcedLayout || Object(d.L)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.M)(e, t)
 				}),
 				g = Object(o.b)(h),
 				y = e => {
@@ -3265,4 +3265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.2e690966799db907e6f7.js.map
+//# sourceMappingURL=ModListing~Reddit.9661c874bd61e821aba8.js.map

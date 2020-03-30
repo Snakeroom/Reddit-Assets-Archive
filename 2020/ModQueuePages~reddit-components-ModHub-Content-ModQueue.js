@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.96515d8e16542fbca8f7.js
-// Retrieved at 3/17/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.1c7684c4245d40e4ad8e.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -211,15 +211,15 @@
 			var q = M(A(X)),
 				H = s("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				Z = s.n(H);
-			const K = Object(m.a)(b.a),
-				J = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
+			const J = Object(m.a)(b.a),
+				K = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
 				z = "MODQ--POST_TYPE_FILTER_DROPDOWN",
 				G = p.a.wrapped(x.a, "Inline", Z.a),
 				Y = p.a.div("Filter", Z.a),
 				$ = p.a.wrapped(h.a, "LayoutSwitch", Z.a),
 				ee = Object(i.c)({
 					isPostTypeFilterDropdownOpen: Object(y.b)(z),
-					isSubredditFilterDropdownOpen: Object(y.b)(J),
+					isSubredditFilterDropdownOpen: Object(y.b)(K),
 					profile: (e, t) => {
 						let {
 							profileName: s
@@ -246,7 +246,7 @@
 			class se extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onOpenSubredditFilterDropdown = () => {
-						this.props.loadAllSubreddits(), this.props.onOpenDropdown(J), this.props.sendEventWithName("subreddit")
+						this.props.loadAllSubreddits(), this.props.onOpenDropdown(K), this.props.sendEventWithName("subreddit")
 					}, this.onOpenPostTypeFilterDropdown = () => {
 						this.props.onOpenDropdown(z), this.props.sendEventWithName("content_type")
 					}
@@ -256,11 +256,11 @@
 						props: e
 					} = this, t = e.subreddit && e.subreddit.displayText || e.profile && e.profile.displayText || Object(l.a)(e.language, "subredditModeration.modQueue.filters.allSubreddits"), s = e.postTypeFilter && Object(l.a)(e.language, "subredditModeration.modQueue.filters.".concat(e.postTypeFilter)) || Object(l.a)(e.language, "subredditModeration.modQueue.filters.allPostTypes");
 					return a.a.createElement(G, null, !e.hideSubredditFilter && a.a.createElement(a.a.Fragment, null, a.a.createElement(Y, {
-						id: J,
+						id: K,
 						onClick: this.onOpenSubredditFilterDropdown
-					}, t, a.a.createElement(g.b, null)), a.a.createElement(K, {
+					}, t, a.a.createElement(g.b, null)), a.a.createElement(J, {
 						isOpen: e.isSubredditFilterDropdownOpen,
-						tooltipId: J
+						tooltipId: K
 					}, a.a.createElement(q, {
 						language: e.language,
 						profileName: e.profileName,
@@ -272,7 +272,7 @@
 					}, a.a.createElement(Y, {
 						id: z,
 						onClick: this.onOpenPostTypeFilterDropdown
-					}, s, a.a.createElement(g.b, null)), a.a.createElement(K, {
+					}, s, a.a.createElement(g.b, null)), a.a.createElement(J, {
 						isOpen: e.isPostTypeFilterDropdownOpen,
 						tooltipId: z
 					}, a.a.createElement(w, {
@@ -408,8 +408,8 @@
 				q = s.n(X);
 			const H = p.a.div("LeftRail", q.a),
 				Z = p.a.wrapped(W.a, "BulkActionCheckbox", q.a),
-				K = p.a.wrapped(F.a, "UnthreadedCommentContainer", q.a),
-				J = p.a.div("CommentColumn", q.a),
+				J = p.a.wrapped(F.a, "UnthreadedCommentContainer", q.a),
+				K = p.a.div("CommentColumn", q.a),
 				z = p.a.div("VoteColumn", q.a),
 				G = p.a.wrapped(L.c, "ModToolsFlatlist", q.a),
 				Y = p.a.div("CommentBody", q.a),
@@ -435,7 +435,7 @@
 						showBulkActionCheckbox: m,
 						toggleCheckbox: p
 					} = e;
-					return l.a.createElement(K, {
+					return l.a.createElement(J, {
 						className: Object(g.a)(t, {
 							[q.a.isBanned]: !!s.bannedBy,
 							[q.a.isReported]: Object(V.a)(s)
@@ -454,7 +454,7 @@
 						model: s,
 						onVoteClick: i,
 						scoreClassName: q.a.score
-					})), l.a.createElement(J, null, l.a.createElement(oe, null, s.postTitle && l.a.createElement(se, null, s.postTitle), s.postAuthor && l.a.createElement(M.a, {
+					})), l.a.createElement(K, null, l.a.createElement(oe, null, s.postTitle && l.a.createElement(se, null, s.postTitle), s.postAuthor && l.a.createElement(M.a, {
 						comment: s
 					})), l.a.createElement(te, null, l.a.createElement(B.a, {
 						comment: s
@@ -564,7 +564,7 @@
 				Be = s("./src/reddit/components/PostList/Placeholder.tsx");
 			const De = Object(k.t)(),
 				Me = Object(c.c)({
-					layout: k.L
+					layout: k.M
 				});
 			var Qe = De(Object(d.b)(Me)(e => l.a.createElement(Be.a, {
 					isLoading: !0,
@@ -581,8 +581,8 @@
 			var Ze = p.a.wrapped(e => l.a.createElement("i", {
 					className: "".concat(Object(Xe.b)("list"), " ").concat(e.className)
 				}), "ListIcon", He.a),
-				Ke = s("./src/reddit/icons/fonts/Remove/index.tsx"),
-				Je = s("./src/reddit/icons/fonts/Spam/index.tsx"),
+				Je = s("./src/reddit/icons/fonts/Remove/index.tsx"),
+				Ke = s("./src/reddit/icons/fonts/Spam/index.tsx"),
 				ze = s("./src/reddit/icons/fonts/Tag/index.tsx"),
 				Ge = s("./src/higherOrderComponents/asTooltip.tsx"),
 				Ye = s("./src/reddit/actions/modal.ts"),
@@ -834,13 +834,13 @@
 							hk: "1ImNcF"
 						}),
 						onClick: b
-					}, l.a.createElement(Ke.a, null)), l.a.createElement(et.c, {
+					}, l.a.createElement(Je.a, null)), l.a.createElement(et.c, {
 						disabled: r,
 						text: Ae.fbt._("spam", null, {
 							hk: "36ppaW"
 						}),
 						onClick: h
-					}, l.a.createElement(Je.a, null)), l.a.createElement(et.c, {
+					}, l.a.createElement(Ke.a, null)), l.a.createElement(et.c, {
 						disabled: r,
 						onClick: e.onOpenModToolsDropdown
 					}, l.a.createElement(Ot, {
@@ -876,8 +876,8 @@
 					isCommentsPage: k.w,
 					isFrontpage: k.y,
 					isProfilePostListing: k.H,
-					isTopicPage: k.K,
-					queryParams: k.Q,
+					isTopicPage: k.L,
+					queryParams: k.R,
 					pageLayer: e => e
 				}),
 				Vt = Object(c.c)({
@@ -905,11 +905,11 @@
 				qt = e => e.page ? parseInt(e.page, 10) : Ee.b,
 				Ht = e => qt(e) + 1,
 				Zt = e => Math.max(Ee.b, qt(e) - 1),
-				Kt = e => {
+				Jt = e => {
 					const t = e.modQueueListingItems ? e.modQueueListingItems.length : 0;
 					return qt(e) === Ee.b ? t : 25 * Zt(e) + t
 				},
-				Jt = e => qt(e) === Ee.b ? Ee.b : 25 * Zt(e) + 1;
+				Kt = e => qt(e) === Ee.b ? Ee.b : 25 * Zt(e) + 1;
 			var zt;
 			! function(e) {
 				e.comments = "comments", e.hasReports = "hasReports", e.posts = "posts", e.postsWithFlair = "postsWithFlair", e.selfPosts = "selfPosts", e.spamFiltered = "spamFiltered"
@@ -1034,12 +1034,12 @@
 						props: e
 					} = this, t = e.modQueueListingItems && e.modQueueListingItems.length ? e.modQueueListingItems.map(e => e.id) : [], s = e.selectedItems.length;
 					return l.a.createElement("div", null, l.a.createElement(Dt, {
-						endNumItems: Kt(e),
+						endNumItems: Jt(e),
 						numSelected: s,
 						numShowing: t.length,
 						isAnyItemSelected: this.isAnyItemSelected(),
 						isSelectAll: this.isAllSelected(t),
-						startNumItems: Jt(e),
+						startNumItems: Kt(e),
 						subredditId: e.subredditId,
 						toggleSelectAll: () => this.toggleSelectedItems(this.isAllSelected(t), t),
 						toggleSelectByFilter: this.toggleSelectByFilter
@@ -1165,7 +1165,7 @@
 				},
 				_ = Object(x.t)(),
 				P = Object(i.c)({
-					postLayout: x.L,
+					postLayout: x.M,
 					redditStyle: x.A
 				}),
 				T = Object(r.b)(P, e => ({
@@ -1353,4 +1353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.96515d8e16542fbca8f7.js.map
+//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.1c7684c4245d40e4ad8e.js.map

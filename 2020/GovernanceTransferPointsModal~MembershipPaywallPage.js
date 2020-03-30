@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.c0b2e55c84b04c6f3ecc.js
-// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.2369e69670aa490d8854.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, n) {
@@ -834,4 +834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.c0b2e55c84b04c6f3ecc.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.2369e69670aa490d8854.js.map

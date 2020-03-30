@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.62d22d96f7e873cf3d59.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8db9b0a350ac837faffa.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1223,7 +1223,7 @@
 					galleryThumbnail: _.e,
 					isFutureEvent: _.j,
 					language: D.O,
-					layout: v.L,
+					layout: v.M,
 					post: k.M,
 					shouldShowCollectionPostEdits: _.t,
 					subredditOrProfile: k.Y
@@ -2250,7 +2250,7 @@
 							subredditId: s.subredditId
 						})
 					},
-					modModeEnabled: x.N
+					modModeEnabled: x.O
 				}),
 				z = Object(a.b)(K, (e, t) => {
 					let {
@@ -3764,7 +3764,7 @@
 							subredditId: s.subredditId
 						}) : null
 					},
-					modModeEnabled: nt.N,
+					modModeEnabled: nt.O,
 					errorMsgs: f.E,
 					replyFormOpen: f.H,
 					subreddit: nt.q,
@@ -6655,7 +6655,7 @@
 				}),
 				ye = Object(i.c)({
 					activeModalId: me.a,
-					layout: U.L,
+					layout: U.M,
 					userIsOp: z.eb,
 					subreddit: U.q
 				}),
@@ -8271,7 +8271,7 @@
 				},
 				H = Object(g.t)({
 					isProfilePostListing: g.H,
-					isSubreddit: g.I,
+					isSubreddit: g.J,
 					pageLayer: e => e
 				}),
 				V = Object(c.c)({
@@ -8283,7 +8283,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: g.N
+					modModeEnabled: g.O
 				}),
 				U = Object(r.b)(V, (e, t) => ({
 					onHideTooltip: () => e(Object(p.i)()),
@@ -9035,7 +9035,7 @@
 				}),
 				We = Object(r.b)(() => Object(i.c)({
 					activeModalId: N.a,
-					flairStyleTemplate: le.P,
+					flairStyleTemplate: le.Q,
 					currentUser: A.i,
 					crosspost: F.c,
 					hideNSFWPref: A.y,
@@ -9054,7 +9054,7 @@
 					metaId: (e, t) => e.posts.metaMap[t.postId],
 					moderatorPermissions: L.i,
 					publicAwardersEnabled: e => !!Object(pe.a)(e),
-					modModeEnabled: le.N,
+					modModeEnabled: le.O,
 					isInCategoriesExperiment: M.a,
 					showEditFlair: ue.a,
 					subredditOrProfile: F.Y,
@@ -12154,7 +12154,7 @@
 				se = Object(c.t)(),
 				ne = Object(a.c)({
 					language: l.O,
-					layout: c.L,
+					layout: c.M,
 					widget: m.f
 				}),
 				oe = Object(r.b)(ne);
@@ -13191,8 +13191,8 @@
 			};
 			const j = 129,
 				P = Object(b.t)({
-					filterName: e => Object(b.Q)(e)[h.f],
-					url: e => Object(b.V)(e)
+					filterName: e => Object(b.R)(e)[h.f],
+					url: e => Object(b.W)(e)
 				}),
 				w = Object(i.c)({
 					subredditId: (e, t) => Object(O.D)(e, t.subredditName)
@@ -13970,7 +13970,7 @@
 					isCommentsPage: l.w,
 					isFrontpage: l.y,
 					isProfilePostListing: l.H,
-					isTopicPage: l.K,
+					isTopicPage: l.L,
 					pageLayer: e => e
 				})
 			}
@@ -13979,7 +13979,7 @@
 					apiError: b.c,
 					apiPending: b.d,
 					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t),
 					loadMore: b.g,
 					postsById: g.X,
 					postIds: Object(r.a)((e, t) => {
@@ -13992,7 +13992,7 @@
 					}),
 					subredditsById: x.V,
 					viewportDataLoaded: f.a,
-					pageReferrer: l.O,
+					pageReferrer: l.P,
 					postListPlaceholderComponent: () => u.a
 				},
 				E = Object(o.c)(O),
@@ -17180,7 +17180,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Vb)(t)
+				return !!t && !Object(n.Xb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -17193,9 +17193,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.pb
+					experimentName: n.rb
 				});
-				return Object(n.Vb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -17212,4 +17212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.62d22d96f7e873cf3d59.js.map
+//# sourceMappingURL=CommentsPage.8db9b0a350ac837faffa.js.map

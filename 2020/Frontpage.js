@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b561e29414a522ccd33c.js
-// Retrieved at 3/26/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7659369b4db1b95b42ee.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -637,7 +637,7 @@
 				L = Object(b.t)(),
 				T = Object(i.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: b.L,
+					postLayout: b.M,
 					redditStyle: b.A
 				}),
 				D = Object(o.b)(T, e => ({
@@ -2001,7 +2001,7 @@
 				rpanInjectionIndex: e => Object(W.b)(e, {
 					listingName: K.P
 				}),
-				layout: R.L
+				layout: R.M
 			}), ne = () => Object(h.a)(te, ee, se, e => Object(W.a)(e, {
 				listingName: K.P
 			}), e => Object(W.b)(e, {
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.b561e29414a522ccd33c.js.map
+//# sourceMappingURL=Frontpage.7659369b4db1b95b42ee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.2e473150d9a3a290993c.js
-// Retrieved at 3/26/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.83196ac99be2c85c9648.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -440,7 +440,7 @@
 					},
 					language: W.O,
 					moderatorPermissions: F.i,
-					modModeEnabled: R.N,
+					modModeEnabled: R.O,
 					post: H.M,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -450,7 +450,7 @@
 					showMedia: R.r,
 					subredditOrProfile: H.Y,
 					userIsOp: W.eb,
-					flairStyleTemplate: R.P
+					flairStyleTemplate: R.Q
 				},
 				V = (e, t) => {
 					let {
@@ -475,7 +475,7 @@
 			s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./node_modules/core-js/modules/es6.regexp.constructor.js");
 			var z = s("./src/lib/LRUCache/index.ts");
 			const K = Object(R.t)({
-					searchQuery: R.T
+					searchQuery: R.U
 				}),
 				J = new z.a(250),
 				q = e => {
@@ -1770,7 +1770,7 @@
 						})
 					},
 					currentUser: Z.i,
-					modModeEnabled: F.N,
+					modModeEnabled: F.O,
 					postIsLocked: (e, t) => {
 						let {
 							comment: s
@@ -3720,7 +3720,7 @@
 				T = Object(b.t)(),
 				L = Object(a.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: b.L,
+					postLayout: b.M,
 					redditStyle: b.A
 				}),
 				M = Object(r.b)(L, e => ({
@@ -4120,7 +4120,7 @@
 				b = s("./src/lib/lessComponent.tsx");
 			const h = Object(m.t)(),
 				x = Object(a.c)({
-					layout: m.L
+					layout: m.M
 				}),
 				g = Object(r.b)(x);
 			class f extends o.a.Component {
@@ -5468,7 +5468,7 @@
 				},
 				W = Object(x.t)({
 					isProfilePostListing: x.H,
-					isSubreddit: x.I,
+					isSubreddit: x.J,
 					pageLayer: e => e
 				}),
 				U = Object(c.c)({
@@ -5480,7 +5480,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: x.N
+					modModeEnabled: x.O
 				}),
 				V = Object(r.b)(U, (e, t) => ({
 					onHideTooltip: () => e(Object(p.i)()),
@@ -6645,7 +6645,7 @@
 				k = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
 				S = s.n(k);
 			const P = Object(g.t)({
-					routeName: g.S,
+					routeName: g.T,
 					privateListingType: g.i
 				}),
 				I = Object(c.c)({
@@ -9063,7 +9063,7 @@
 				},
 				S = Object(g.t)(),
 				P = Object(i.c)({
-					postLayout: g.L,
+					postLayout: g.M,
 					redditStyle: g.A
 				}),
 				I = Object(a.b)(P, e => ({
@@ -10076,7 +10076,7 @@
 					apiPending: X.b,
 					currentUser: te.i,
 					measureScrollFPS: Z.d.measureScrollFPS,
-					layout: S.L,
+					layout: S.M,
 					loadMore: X.d,
 					subredditsById: $.V,
 					viewportDataLoaded: ee.a,
@@ -10161,7 +10161,7 @@
 						location: s
 					} = t;
 					return o()([...Object(l.a)(s.search)])
-				}, S.L, (e, t) => {
+				}, S.M, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -10288,7 +10288,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Vb)(t)
+				return !!t && !Object(n.Xb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -10301,9 +10301,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.pb
+					experimentName: n.rb
 				});
-				return Object(n.Vb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -10320,4 +10320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.2e473150d9a3a290993c.js.map
+//# sourceMappingURL=ProfileComments.83196ac99be2c85c9648.js.map

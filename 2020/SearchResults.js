@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5e46d21fdeeb9b2ea849.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.32603d80a292eaeec29c.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -379,7 +379,7 @@
 					},
 					language: V.O,
 					moderatorPermissions: B.i,
-					modModeEnabled: R.N,
+					modModeEnabled: R.O,
 					post: U.M,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -389,7 +389,7 @@
 					showMedia: R.r,
 					subredditOrProfile: U.Y,
 					userIsOp: V.eb,
-					flairStyleTemplate: R.P
+					flairStyleTemplate: R.Q
 				},
 				H = (e, t) => {
 					let {
@@ -414,7 +414,7 @@
 			s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./node_modules/core-js/modules/es6.regexp.constructor.js");
 			var z = s("./src/lib/LRUCache/index.ts");
 			const K = Object(R.t)({
-					searchQuery: R.T
+					searchQuery: R.U
 				}),
 				G = new z.a(250),
 				J = e => {
@@ -3629,7 +3629,7 @@
 				},
 				V = Object(x.t)({
 					isProfilePostListing: x.H,
-					isSubreddit: x.I,
+					isSubreddit: x.J,
 					pageLayer: e => e
 				}),
 				W = Object(c.c)({
@@ -3641,7 +3641,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: x.N
+					modModeEnabled: x.O
 				}),
 				H = Object(o.b)(W, (e, t) => ({
 					onHideTooltip: () => e(Object(p.i)()),
@@ -5074,7 +5074,7 @@
 				fbt: mt
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), pt = Object(Te.t)({
 				pageLayer: e => e,
-				queryParams: Te.Q
+				queryParams: Te.R
 			}), ut = Object(a.c)({
 				apiError: Xe.d,
 				apiPending: Xe.e,
@@ -5486,8 +5486,8 @@
 				_s = Vt.a.wrapped(ls.n, "TertiaryButton", gs.a),
 				Ps = Vt.a.wrapped(_s, "AllRedditResultsButton", gs.a),
 				ks = Object(Te.t)({
-					queryParams: Te.Q,
-					url: Te.V
+					queryParams: Te.R,
+					url: Te.W
 				}),
 				Ss = Object(a.c)({
 					subreddit: P.y,
@@ -5649,7 +5649,7 @@
 				zs = () => null,
 				Ks = Object(Te.t)({
 					pageLayer: e => e,
-					queryParams: Te.Q
+					queryParams: Te.R
 				}),
 				Gs = Object(a.c)({
 					fromSubreddit: (e, t) => {
@@ -5744,14 +5744,14 @@
 			const Ys = () => null,
 				Xs = Object(Te.t)({
 					pageLayer: e => e,
-					queryParams: Te.Q
+					queryParams: Te.R
 				}),
 				Zs = Object(a.c)({
 					shouldShowSrSearchSwitcher: (e, t) => {
 						let {
 							pageLayer: s
 						} = t;
-						return Object(Te.J)(s)
+						return Object(Te.K)(s)
 					}
 				});
 			var $s = Xs(Object(o.b)(Zs)(e => {
@@ -7681,6 +7681,7 @@
 				Title: "_1VNcq3ynegRchfLyPqmKJ_",
 				title: "_1VNcq3ynegRchfLyPqmKJ_",
 				mConstrainWidth: "_2F7lbod1n6khHmvkBHQLQW",
+				mResponsive: "_28QD3wRQT74vkz8KPzFC43",
 				TabNavContainer: "_3FtOlkq31vuUJkzTkq4--W",
 				tabNavContainer: "_3FtOlkq31vuUJkzTkq4--W",
 				Tabs: "M7VDHU4AdgCc6tHaZ-UUy",
@@ -7731,17 +7732,19 @@
 				E = l.a.wrapped(e => {
 					var {
 						active: t,
-						enabled: s
-					} = e, n = g(e, ["active", "enabled"]);
+						enabled: s,
+						innerRef: n
+					} = e, r = g(e, ["active", "enabled", "innerRef"]);
 					return i.a.createElement(u.a, {
 						"aria-selected": t,
-						className: Object(c.a)(n.className, {
+						className: Object(c.a)(r.className, {
 							[x.a.mIsActive]: t,
 							[x.a.mIsEnabled]: !1 !== s
 						}),
+						innerRef: n,
 						role: "tab",
-						to: n.to
-					}, n.children)
+						to: r.to
+					}, r.children)
 				}, "Tab", x.a),
 				C = e => {
 					switch (e) {
@@ -7781,14 +7784,21 @@
 					this.props.isCategoryPage && (window.removeEventListener("orientationchange", this.toggleSticky), window.removeEventListener("resize", this.toggleSticky), window.removeEventListener("scroll", this.toggleSticky))
 				}
 				render() {
+					const {
+						innerRef: e,
+						isResponsiveSettingsEnabled: t
+					} = this.props, s = Object(c.a)({
+						[x.a.mResponsive]: t
+					});
 					return i.a.createElement(v, {
-						className: this.props.className
+						className: Object(c.a)(s, this.props.className),
+						innerRef: e
 					}, i.a.createElement(y, {
-						className: Object(c.a)({
+						className: Object(c.a)(s, {
 							[x.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
 					}, C(this.props.icon), this.props.title), i.a.createElement(O, {
-						className: Object(c.a)({
+						className: Object(c.a)(s, {
 							[x.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
 						role: "tablist",
@@ -7922,8 +7932,8 @@
 			};
 			const P = 129,
 				k = Object(h.t)({
-					filterName: e => Object(h.Q)(e)[b.f],
-					url: e => Object(h.V)(e)
+					filterName: e => Object(h.R)(e)[b.f],
+					url: e => Object(h.W)(e)
 				}),
 				S = Object(i.c)({
 					subredditId: (e, t) => Object(O.D)(e, t.subredditName)
@@ -8234,7 +8244,7 @@
 					isCommentsPage: l.w,
 					isFrontpage: l.y,
 					isProfilePostListing: l.H,
-					isTopicPage: l.K,
+					isTopicPage: l.L,
 					pageLayer: e => e
 				})
 			}
@@ -8243,7 +8253,7 @@
 					apiError: h.c,
 					apiPending: h.d,
 					measureScrollFPS: b.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t),
 					loadMore: h.g,
 					postsById: x.X,
 					postIds: Object(o.a)((e, t) => {
@@ -8256,7 +8266,7 @@
 					}),
 					subredditsById: g.V,
 					viewportDataLoaded: f.a,
-					pageReferrer: l.O,
+					pageReferrer: l.P,
 					postListPlaceholderComponent: () => u.a
 				},
 				E = Object(r.c)(O),
@@ -8343,12 +8353,12 @@
 				crosspostRoot: u.c,
 				crosspostSubredditOrProfile: u.d,
 				currentUser: b.i,
-				flairStyleTemplate: d.P,
+				flairStyleTemplate: d.Q,
 				hideNSFWPref: b.y,
 				isActive: u.h,
 				language: b.O,
 				moderatorPermissions: m.i,
-				modModeEnabled: d.N,
+				modModeEnabled: d.O,
 				post: u.M,
 				showEditFlair: p.a,
 				subredditOrProfile: u.Y,
@@ -9210,8 +9220,8 @@
 				}),
 				R = Object(j.t)({
 					currentPageUrl: j.e,
-					queryParams: j.Q,
-					shouldShowCovidBanner: j.U
+					queryParams: j.R,
+					shouldShowCovidBanner: j.V
 				}),
 				F = () => Object(u.c)({
 					headerContent: I.a,
@@ -9321,7 +9331,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Vb)(t)
+				return !!t && !Object(n.Xb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -9334,9 +9344,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.pb
+					experimentName: n.rb
 				});
-				return Object(n.Vb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/experiments/railsSearchResults.ts": function(e, t, s) {
@@ -9346,9 +9356,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.xb.Treatment1 === Object(r.c)(e, {
+			const o = e => n.zb.Treatment1 === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.wb
+				experimentName: n.yb
 			})
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -9365,4 +9375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.5e46d21fdeeb9b2ea849.js.map
+//# sourceMappingURL=SearchResults.32603d80a292eaeec29c.js.map

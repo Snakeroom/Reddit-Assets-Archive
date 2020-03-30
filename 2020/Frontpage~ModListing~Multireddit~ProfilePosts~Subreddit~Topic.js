@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.75971c844a0862f9ea74.js
-// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.3c80a13871cf0fc777da.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -388,8 +388,8 @@
 			const C = c.e[1] + 24,
 				w = g.f + 8 + 152 + 32 + 16,
 				j = w + C + 8,
-				O = y.a.div("Container", P.a),
-				S = y.a.wrapped(e => {
+				S = y.a.div("Container", P.a),
+				O = y.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = v(e, ["className"]);
@@ -454,12 +454,12 @@
 							hideFooter: n
 						}
 					} = this, o = this.state.isAdSticky && !(!e && !t);
-					return a.a.createElement(O, {
+					return a.a.createElement(S, {
 						className: s,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(k, {
 						isSticky: o
-					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(S, null))
+					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(O, null))
 				}
 			}
 			const E = Object(f.t)();
@@ -517,8 +517,8 @@
 					const t = C(e);
 					return Object(y.f)(t)
 				};
-			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				S = s.n(O);
+			var S = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				O = s.n(S);
 			const {
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = Object(m.t)(), E = Object(r.b)(() => Object(i.c)({
@@ -574,33 +574,33 @@
 						title: c,
 						titleClassName: l,
 						truncateThreshold: m
-					} = this.props, p = s ? S.a.widgetContentOnly : S.a.widgetContent, h = !n && this.props.styles, g = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
+					} = this.props, p = s ? O.a.widgetContentOnly : O.a.widgetContent, h = !n && this.props.styles, g = h ? this.getWidgetBackgroundStyles() : {}, f = h ? this.getWidgetHeaderStyles() : {};
 					return o.a.createElement("div", {
-						className: Object(a.a)(t, S.a.widgetBackground, {
-							[S.a.redditStyle]: n,
-							[S.a.clickable]: !!i,
-							[S.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(a.a)(t, O.a.widgetBackground, {
+							[O.a.redditStyle]: n,
+							[O.a.clickable]: !!i,
+							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: i,
 						style: g
 					}, c && o.a.createElement("div", {
-						className: S.a.widgetHeader,
+						className: O.a.widgetHeader,
 						style: f
 					}, o.a.createElement("div", {
-						className: Object(a.a)(S.a.widgetTitle, l)
+						className: Object(a.a)(O.a.widgetTitle, l)
 					}, o.a.createElement(d.b, {
 						type: d.a.Widget
 					}, c)), r), o.a.createElement("div", {
 						className: Object(a.a)(p, {
-							[S.a.truncated]: this.state.isTruncated
+							[O.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
 					}, e), this.state.isTruncated && o.a.createElement(u.n, {
-						className: S.a.seeMore,
+						className: O.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, k._("See More", null, {
 						hk: "4w47Qu"
@@ -642,7 +642,7 @@
 					isCommentsPage: l.w,
 					isFrontpage: l.y,
 					isProfilePostListing: l.H,
-					isTopicPage: l.K,
+					isTopicPage: l.L,
 					pageLayer: e => e
 				})
 			}
@@ -651,7 +651,7 @@
 					apiError: g.c,
 					apiPending: g.d,
 					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t),
 					loadMore: g.g,
 					postsById: f.X,
 					postIds: Object(r.a)((e, t) => {
@@ -664,7 +664,7 @@
 					}),
 					subredditsById: b.V,
 					viewportDataLoaded: P.a,
-					pageReferrer: l.O,
+					pageReferrer: l.P,
 					postListPlaceholderComponent: () => p.a
 				},
 				C = Object(o.c)(v),
@@ -1131,7 +1131,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Vb)(t)
+				return !!t && !Object(n.Xb)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -1148,4 +1148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.75971c844a0862f9ea74.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.3c80a13871cf0fc777da.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.9f0d2969101d0aad4cad.js
-// Retrieved at 3/24/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.fbd0f7b1d39d68ecdf90.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, a) {
@@ -55,6 +55,7 @@
 				Title: "_1VNcq3ynegRchfLyPqmKJ_",
 				title: "_1VNcq3ynegRchfLyPqmKJ_",
 				mConstrainWidth: "_2F7lbod1n6khHmvkBHQLQW",
+				mResponsive: "_28QD3wRQT74vkz8KPzFC43",
 				TabNavContainer: "_3FtOlkq31vuUJkzTkq4--W",
 				tabNavContainer: "_3FtOlkq31vuUJkzTkq4--W",
 				Tabs: "M7VDHU4AdgCc6tHaZ-UUy",
@@ -100,22 +101,24 @@
 			}(n || (n = {}));
 			const E = d.a.wrapped(h.a, "Gear", g.a),
 				y = d.a.h3("Title", g.a),
-				w = d.a.div("TabNavContainer", g.a),
-				v = d.a.div("Tabs", g.a),
+				v = d.a.div("TabNavContainer", g.a),
+				w = d.a.div("Tabs", g.a),
 				x = d.a.wrapped(e => {
 					var {
 						active: t,
-						enabled: a
-					} = e, n = b(e, ["active", "enabled"]);
+						enabled: a,
+						innerRef: n
+					} = e, r = b(e, ["active", "enabled", "innerRef"]);
 					return i.a.createElement(p.a, {
 						"aria-selected": t,
-						className: Object(l.a)(n.className, {
+						className: Object(l.a)(r.className, {
 							[g.a.mIsActive]: t,
 							[g.a.mIsEnabled]: !1 !== a
 						}),
+						innerRef: n,
 						role: "tab",
-						to: n.to
-					}, n.children)
+						to: r.to
+					}, r.children)
 				}, "Tab", g.a),
 				_ = e => {
 					switch (e) {
@@ -155,14 +158,21 @@
 					this.props.isCategoryPage && (window.removeEventListener("orientationchange", this.toggleSticky), window.removeEventListener("resize", this.toggleSticky), window.removeEventListener("scroll", this.toggleSticky))
 				}
 				render() {
-					return i.a.createElement(w, {
-						className: this.props.className
+					const {
+						innerRef: e,
+						isResponsiveSettingsEnabled: t
+					} = this.props, a = Object(l.a)({
+						[g.a.mResponsive]: t
+					});
+					return i.a.createElement(v, {
+						className: Object(l.a)(a, this.props.className),
+						innerRef: e
 					}, i.a.createElement(y, {
-						className: Object(l.a)({
+						className: Object(l.a)(a, {
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, _(this.props.icon), this.props.title), i.a.createElement(v, {
-						className: Object(l.a)({
+					}, _(this.props.icon), this.props.title), i.a.createElement(w, {
+						className: Object(l.a)(a, {
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
 						role: "tablist",
@@ -268,10 +278,10 @@
 				b = a("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				E = a("./src/reddit/controls/Typography/index.tsx"),
 				y = a("./src/reddit/i18n/components.tsx"),
-				w = a("./src/reddit/pages/ProfileModSettings/Navigation.m.less"),
-				v = a.n(w);
-			const x = f.a.li("listItem", v.a),
-				_ = f.a.wrapped(b.i, "sectionWrapper", v.a);
+				v = a("./src/reddit/pages/ProfileModSettings/Navigation.m.less"),
+				w = a.n(v);
+			const x = f.a.li("listItem", w.a),
+				_ = f.a.wrapped(b.i, "sectionWrapper", w.a);
 			class k extends r.a.PureComponent {
 				render() {
 					const {
@@ -347,7 +357,7 @@
 				return r.a.createElement(_, null, r.a.createElement(b.l, null, t))
 			}
 			var O = k;
-			const N = Object(s.c)({
+			const j = Object(s.c)({
 					isModerator: (e, t) => Object(m.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(u.J)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
@@ -355,7 +365,7 @@
 						userName: t.match.params.profileName
 					})
 				}),
-				j = Object(o.b)(N);
+				N = Object(o.b)(j);
 			class L extends r.a.Component {
 				render() {
 					const {
@@ -380,8 +390,8 @@
 					}) : r.a.createElement(d.a, null)
 				}
 			}
-			t.default = j(L)
+			t.default = N(L)
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.9f0d2969101d0aad4cad.js.map
+//# sourceMappingURL=ProfileModeration.fbd0f7b1d39d68ecdf90.js.map

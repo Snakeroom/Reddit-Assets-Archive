@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.dcc4f580b045dd2c63ed.js
-// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.914a24ea4bf603cac8f2.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -578,4 +578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.dcc4f580b045dd2c63ed.js.map
+//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.914a24ea4bf603cac8f2.js.map

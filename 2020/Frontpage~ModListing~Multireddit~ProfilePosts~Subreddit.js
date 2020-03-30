@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.c9c683f4e0beda95363e.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.0c095e80f0e94de7ab24.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit"], {
 		"./src/reddit/components/CountrySort/index.m.less": function(e, t, s) {
@@ -466,7 +466,7 @@
 				p = s("./src/lib/lessComponent.tsx");
 			const h = Object(u.t)(),
 				f = Object(r.c)({
-					layout: u.L
+					layout: u.M
 				}),
 				O = Object(a.b)(f);
 			class g extends o.a.Component {
@@ -1223,7 +1223,7 @@
 				},
 				j = Object(O.t)(),
 				E = Object(i.c)({
-					postLayout: O.L,
+					postLayout: O.M,
 					redditStyle: O.A
 				}),
 				L = Object(r.b)(E, e => ({
@@ -1348,4 +1348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.c9c683f4e0beda95363e.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.0c095e80f0e94de7ab24.js.map

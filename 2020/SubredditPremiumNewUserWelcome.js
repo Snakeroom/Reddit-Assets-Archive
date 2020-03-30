@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.7e79ddeb78eaf0fac714.js
-// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.1cd7e37c9391de62f468.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -302,7 +302,7 @@
 				k = s("./src/reddit/helpers/economics/membershipPage.ts"),
 				W = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
 				D = s.n(W);
-			const L = Object(c.c)({
+			const M = Object(c.c)({
 				meta: (e, t) => {
 					let {
 						subreddit: s
@@ -310,7 +310,7 @@
 					return Object(j.w)(e, s.id)
 				}
 			});
-			var M = Object(m.c)(Object(a.b)(L)((function(e) {
+			var U = Object(m.c)(Object(a.b)(M)((function(e) {
 					return r.a.createElement("div", {
 						className: Object(d.a)(D.a.container, e.className)
 					}, Object(w.c)("This community is a part of an exclusive experiment run by Reddit Admins. "), Object(w.c)("Hundreds of followers have paid for a"), r.a.createElement("div", {
@@ -331,7 +331,7 @@
 						}))
 					}, Object(w.c)("You can learn more here")), Object(w.c)("."))
 				}))),
-				U = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
+				L = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				T = s("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				R = s("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.tsx"),
 				F = s("./src/reddit/controls/Button/index.tsx"),
@@ -389,7 +389,7 @@
 						onBadgeApplied: () => {
 							e(Object(T.d)(s, {
 								id: z
-							})), e(Object(U.b)(h.a.Achievement)), e(Object(U.c)({
+							})), e(Object(L.b)(h.a.Achievement)), e(Object(L.c)({
 								subredditId: s
 							}))
 						}
@@ -435,7 +435,7 @@
 					}), r.a.createElement(I, {
 						className: X.a.jumper,
 						subreddit: s
-					}), r.a.createElement(M, {
+					}), r.a.createElement(U, {
 						className: X.a.message,
 						correlationId: this.correlationId,
 						subreddit: s
@@ -458,7 +458,7 @@
 						const s = e.user.account,
 							n = Object(p.q)(e, t);
 						if (!s) return !1;
-						if (Object(p.L)(e, t) !== u.g.Large) return !1;
+						if (Object(p.M)(e, t) !== u.g.Large) return !1;
 						if (n) {
 							const t = Object(j.g)(e, n.id)[h.a.Achievement];
 							if (t && t.type === z) return !1
@@ -983,4 +983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.7e79ddeb78eaf0fac714.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.1cd7e37c9391de62f468.js.map

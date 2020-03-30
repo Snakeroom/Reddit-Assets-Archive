@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.fd818308243ecb9398a2.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.3a3c6f3473276a1c106e.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -310,6 +310,7 @@
 					indent: e.indent,
 					last: e.last
 				}, r.a.createElement(H, null, r.a.createElement(O.a, null, r.a.createElement(P, null, e.label)), r.a.createElement(L, null, e.subtext)), r.a.createElement(G, null, r.a.createElement(B, null, e.tooltip && r.a.createElement(M, {
+					tooltipContentClass: e.tooltipContentClassName,
 					text: e.tooltip
 				}), r.a.createElement(b.a, {
 					on: e.on,
@@ -351,6 +352,7 @@
 					onChange: e.onChange,
 					onInput: e.onChange
 				}), r.a.createElement(te, null, Object.keys(e.ticks).map((t, n) => r.a.createElement(ne, {
+					key: t,
 					style: {
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
@@ -1185,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.fd818308243ecb9398a2.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.3a3c6f3473276a1c106e.js.map

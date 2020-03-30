@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.1d009472fc02916ad9f3.js
-// Retrieved at 3/26/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3f8f43c422f3815b5eb9.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -612,7 +612,7 @@
 				},
 				G = Object(v.t)({
 					isProfilePostListing: v.H,
-					isSubreddit: v.I,
+					isSubreddit: v.J,
 					pageLayer: e => e
 				}),
 				X = Object(d.c)({
@@ -624,7 +624,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: v.N
+					modModeEnabled: v.O
 				}),
 				K = Object(r.b)(X, (e, t) => ({
 					onHideTooltip: () => e(Object(u.i)()),
@@ -1526,4 +1526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.1d009472fc02916ad9f3.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.3f8f43c422f3815b5eb9.js.map

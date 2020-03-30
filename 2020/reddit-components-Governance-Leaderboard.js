@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.ca4cf5a4e79b7d9b327a.js
-// Retrieved at 3/26/2020, 7:20:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.eb32738c10c9dcc6860b.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -1180,4 +1180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.ca4cf5a4e79b7d9b327a.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.eb32738c10c9dcc6860b.js.map

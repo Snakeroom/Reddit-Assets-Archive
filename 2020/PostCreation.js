@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4e6b4a70a87e29f48c71.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a81743306ffb023bb7b5.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -7223,7 +7223,7 @@
 				},
 				U = Object(f.t)({
 					isProfilePostListing: f.H,
-					isSubreddit: f.I,
+					isSubreddit: f.J,
 					pageLayer: e => e
 				}),
 				H = Object(c.c)({
@@ -7235,7 +7235,7 @@
 							postId: n.id
 						})
 					},
-					modModeEnabled: f.N
+					modModeEnabled: f.O
 				}),
 				W = Object(r.b)(H, (e, t) => ({
 					onHideTooltip: () => e(Object(p.i)()),
@@ -25665,7 +25665,7 @@
 			const b = Object(l.t)(),
 				f = Object(i.c)({
 					isEditing: d.j,
-					layout: (e, t) => t.forcedLayout || Object(l.L)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t)
 				}),
 				g = Object(r.b)(f),
 				x = e => {
@@ -29456,7 +29456,7 @@
 					draftId: E.u,
 					isPostCreationPage: E.D,
 					pageLayer: e => e,
-					sourcePostId: e => Object(E.R)(e).source_id
+					sourcePostId: e => Object(E.S)(e).source_id
 				}),
 				Vl = Object(i.c)({
 					submissionType: w.a,
@@ -29466,7 +29466,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						const s = Object(E.O)(e, {
+						const s = Object(E.P)(e, {
 							pageLayer: n
 						});
 						return !!s && "/" === s[0]
@@ -30483,4 +30483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.4e6b4a70a87e29f48c71.js.map
+//# sourceMappingURL=PostCreation.a81743306ffb023bb7b5.js.map

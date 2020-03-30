@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.bc19623db1623214aaa4.js
-// Retrieved at 3/25/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.21093f82c48831777809.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -60,8 +60,8 @@
 				x = s("./src/reddit/controls/Search/RelatedSubredditMetaData.tsx"),
 				_ = s("./src/reddit/helpers/name/index.ts"),
 				P = s("./src/reddit/models/Flair/index.ts"),
-				j = s("./src/reddit/models/Theme/index.ts"),
-				O = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				O = s("./src/reddit/models/Theme/index.ts"),
+				j = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				C = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				f = s.n(C),
 				v = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
@@ -98,7 +98,7 @@
 					M = h ? h.score : 0,
 					F = h ? h.numComments : 0,
 					L = h && h.isSponsored,
-					A = Object(O.a)(e).body,
+					A = Object(j.a)(e).body,
 					Y = "linear-gradient(\n      ".concat(Object(n.j)(A, .2), ",\n      ").concat(Object(n.j)(A, .3), ",\n      ").concat(Object(n.j)(A, .4), ",\n      ").concat(Object(n.j)(A, .6), ",\n      ").concat(Object(n.j)(A, .8), ",\n      ").concat(A, "\n    )"),
 					R = i.a.createElement("div", {
 						className: Object(d.a)(y.a.trendingPost, {
@@ -109,7 +109,7 @@
 					}, i.a.createElement("div", {
 						className: Object(d.a)(y.a.backgroundWrapper, f.a.backgroundWrapper, t),
 						style: {
-							background: Object(j.g)(Object(O.a)(e).body, S || Object(O.a)(e).banner.backgroundImage, "cover"),
+							background: Object(O.g)(Object(j.a)(e).body, S || Object(j.a)(e).banner.backgroundImage, "cover"),
 							"--SearchDiscoveryUnits-TrendingPosts-Post-background": Y
 						}
 					}, L && i.a.createElement("div", {
@@ -226,11 +226,11 @@
 				}))(g),
 				_ = s("./src/reddit/components/Translated/index.tsx"),
 				P = s("./src/reddit/contexts/ApiContext.tsx"),
-				j = s("./src/reddit/selectors/trending.ts"),
-				O = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
+				O = s("./src/reddit/selectors/trending.ts"),
+				j = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
 				C = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx");
 			const f = Object(a.b)(() => Object(i.c)({
-				trendingItems: j.a
+				trendingItems: O.a
 			}), e => ({
 				fetchTrendingItems: () => e(Object(o.b)())
 			}));
@@ -249,7 +249,7 @@
 						showCardView: !!this.props.showCardView
 					});
 					const t = this.props.maxItemsCount ? this.props.trendingItems.slice(0, this.props.maxItemsCount) : this.props.trendingItems;
-					return n.a.createElement(O.a, {
+					return n.a.createElement(j.a, {
 						className: this.props.className,
 						header: e,
 						showCardView: this.props.showCardView
@@ -281,12 +281,12 @@
 				crosspostRoot: b.c,
 				crosspostSubredditOrProfile: b.d,
 				currentUser: u.i,
-				flairStyleTemplate: c.P,
+				flairStyleTemplate: c.Q,
 				hideNSFWPref: u.y,
 				isActive: b.h,
 				language: u.O,
 				moderatorPermissions: m.i,
-				modModeEnabled: c.N,
+				modModeEnabled: c.O,
 				post: b.M,
 				showEditFlair: p.a,
 				subredditOrProfile: b.Y,
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.bc19623db1623214aaa4.js.map
+//# sourceMappingURL=Trending.21093f82c48831777809.js.map

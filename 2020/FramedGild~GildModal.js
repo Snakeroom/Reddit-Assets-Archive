@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.88e1fe6c37a13355ba01.js
-// Retrieved at 3/25/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0b38b65dbfeca9ed7f83.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -1413,9 +1413,9 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.pb
+					experimentName: n.rb
 				});
-				return Object(n.Vb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
@@ -1427,4 +1427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.88e1fe6c37a13355ba01.js.map
+//# sourceMappingURL=FramedGild~GildModal.0b38b65dbfeca9ed7f83.js.map

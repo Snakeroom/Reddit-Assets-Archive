@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.62c5f60fb279ba58f0a0.js
-// Retrieved at 3/26/2020, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.47408db29f4a8332911c.js
+// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -3299,7 +3299,7 @@
 			const W = 24,
 				V = c.a.wrapped(j.a, "PencilIcon", H.a),
 				q = Object(S.t)({
-					username: e => Object(S.Q)(e).user
+					username: e => Object(S.R)(e).user
 				}),
 				G = Object(i.c)({
 					approvedSubmitters: k.e,
@@ -3937,7 +3937,7 @@
 					},
 					language: H.O,
 					moderatorPermissions: D.i,
-					modModeEnabled: L.N,
+					modModeEnabled: L.O,
 					post: U.M,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -3947,7 +3947,7 @@
 					showMedia: L.r,
 					subredditOrProfile: U.Y,
 					userIsOp: H.eb,
-					flairStyleTemplate: L.P
+					flairStyleTemplate: L.Q
 				},
 				V = (e, t) => {
 					let {
@@ -3972,7 +3972,7 @@
 			s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./node_modules/core-js/modules/es6.regexp.constructor.js");
 			var G = s("./src/lib/LRUCache/index.ts");
 			const z = Object(L.t)({
-					searchQuery: L.T
+					searchQuery: L.U
 				}),
 				K = new G.a(250),
 				Q = e => {
@@ -4330,7 +4330,7 @@
 							subredditId: s.subredditId
 						})
 					},
-					modModeEnabled: x.N
+					modModeEnabled: x.O
 				}),
 				z = Object(r.b)(G, (e, t) => {
 					let {
@@ -7253,13 +7253,13 @@
 					activeModalId: O.a,
 					crosspost: k.c,
 					currentUser: w.i,
-					flairStyleTemplate: ce.P,
+					flairStyleTemplate: ce.Q,
 					isActive: k.h,
 					isExpanded: k.k,
 					language: w.O,
-					layout: ce.L,
+					layout: ce.M,
 					moderatorPermissions: _.i,
-					modModeEnabled: ce.N,
+					modModeEnabled: ce.O,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
@@ -9120,7 +9120,7 @@
 				}),
 				je = Object(i.c)({
 					activeModalId: me.a,
-					layout: V.L,
+					layout: V.M,
 					userIsOp: z.eb,
 					subreddit: V.q
 				}),
@@ -14162,7 +14162,7 @@
 				Ge = s.n(qe);
 			const ze = Object(Ve.t)({
 					currentPageUrl: Ve.e,
-					queryParams: Ve.Q
+					queryParams: Ve.R
 				}),
 				Ke = Object(d.c)({
 					actionsList: W,
@@ -16091,7 +16091,7 @@
 				},
 				H = Object(g.t)({
 					isProfilePostListing: g.H,
-					isSubreddit: g.I,
+					isSubreddit: g.J,
 					pageLayer: e => e
 				}),
 				W = Object(d.c)({
@@ -16103,7 +16103,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: g.N
+					modModeEnabled: g.O
 				}),
 				V = Object(a.b)(W, (e, t) => ({
 					onHideTooltip: () => e(Object(u.i)()),
@@ -19526,6 +19526,7 @@
 					indent: e.indent,
 					last: e.last
 				}, o.a.createElement(B, null, o.a.createElement(y.a, null, o.a.createElement(L, null, e.label)), o.a.createElement(F, null, e.subtext)), o.a.createElement(U, null, o.a.createElement(D, null, e.tooltip && o.a.createElement(A, {
+					tooltipContentClass: e.tooltipContentClassName,
 					text: e.tooltip
 				}), o.a.createElement(g.a, {
 					on: e.on,
@@ -19567,6 +19568,7 @@
 					onChange: e.onChange,
 					onInput: e.onChange
 				}), o.a.createElement(te, null, Object.keys(e.ticks).map((t, s) => o.a.createElement(se, {
+					key: t,
 					style: {
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
@@ -26899,7 +26901,7 @@
 						subredditName: t.match.params.subredditName
 					})
 				}),
-				rt = Object(i.b)(() => Object(d.a)(tt, P.D, st, P.O, E.L, ot, P.T, S.Y, at, nt, (e, t) => t.match.params.pageName, (e, t, s, n, o, a, r, i, d, c, l) => {
+				rt = Object(i.b)(() => Object(d.a)(tt, P.D, st, P.O, E.M, ot, P.T, S.Y, at, nt, (e, t) => t.match.params.pageName, (e, t, s, n, o, a, r, i, d, c, l) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -27622,7 +27624,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Vb)(t)
+				return !!t && !Object(n.Xb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
@@ -27642,9 +27644,9 @@
 			const a = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.pb
+					experimentName: n.rb
 				});
-				return Object(n.Vb)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -27951,4 +27953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.62c5f60fb279ba58f0a0.js.map
+//# sourceMappingURL=ModerationPages.47408db29f4a8332911c.js.map
