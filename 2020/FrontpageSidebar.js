@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.735fd5831b3c6401dc93.js
-// Retrieved at 3/25/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.7771772135a7e95f4f51.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -204,12 +204,12 @@
 				}
 			}
 			var J = Q,
-				M = n("./src/reddit/helpers/overlay/index.ts"),
-				H = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
-				Z = n.n(H),
+				H = n("./src/reddit/helpers/overlay/index.ts"),
+				M = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
+				Z = n.n(M),
 				X = n("./src/lib/lessComponent.tsx");
 			const V = Object(o.b)(null, (e, t) => ({
-					openLightbox: t => () => e(Object(M.a)(t.permalink)),
+					openLightbox: t => () => e(Object(H.a)(t.permalink)),
 					clearLinks: () => e(Object(W.v)())
 				})),
 				K = X.a.button("ClearButton", Z.a);
@@ -234,10 +234,10 @@
 				z = n("./src/reddit/selectors/user.ts");
 			const $ = Object(i.c)({
 				language: z.O,
-				recentPosts: q.V
+				recentPosts: q.W
 			});
 			var ee = Object(o.b)($, (e, t) => ({
-					openLightbox: t => () => e(Object(M.a)(t.permalink))
+					openLightbox: t => () => e(Object(H.a)(t.permalink))
 				}))(e => {
 					let {
 						className: t,
@@ -392,7 +392,7 @@
 				h = n("./src/reddit/selectors/user.ts"),
 				x = n("./src/reddit/components/MiniPost/index.m.less"),
 				E = n.n(x);
-			const k = Object(i.a)(e => e, b.M, b.c, h.O, (e, t, n, s) => {
+			const k = Object(i.a)(e => e, b.N, b.d, h.O, (e, t, n, s) => {
 					return {
 						crosspost: n,
 						language: s,
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.735fd5831b3c6401dc93.js.map
+//# sourceMappingURL=FrontpageSidebar.7771772135a7e95f4f51.js.map

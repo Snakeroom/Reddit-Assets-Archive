@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3f8f43c422f3815b5eb9.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ae48670ef13b3ada73b1.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -429,12 +429,12 @@
 				C = y.a.div("Content", O.a),
 				I = y.a.div("ThumbnailContainer", O.a),
 				L = Object(d.c)({
-					isCurrentUserProfilePost: h.i,
+					isCurrentUserProfilePost: h.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Ab.TOPIC),
 					language: f.O,
-					post: h.M,
+					post: h.N,
 					shouldOpenPostInNewTab: f.S,
-					subreddit: h.Y
+					subreddit: h.Z
 				}),
 				N = Object(i.b)(L);
 			t.a = N(e => {
@@ -620,7 +620,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(y.s)(e, {
+						return Object(y.t)(e, {
 							postId: s.id
 						})
 					},
@@ -1238,6 +1238,7 @@
 					}), e.source && i.a.createElement(G, null, i.a.createElement(O.a, {
 						href: e.source.url,
 						isSponsored: !0,
+						postId: e.id,
 						source: e.source
 					}, Object(u.a)(e), i.a.createElement(H, null))), i.a.createElement(U, null, e.media && i.a.createElement(d.a, {
 						isListing: !0,
@@ -1310,6 +1311,7 @@
 				}, o.a.createElement(a.a, {
 					href: d.url,
 					isSponsored: c,
+					postId: s.id,
 					source: d
 				}, Object(i.a)(s), o.a.createElement(u, null))) : null
 			}
@@ -1526,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.3f8f43c422f3815b5eb9.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.ae48670ef13b3ada73b1.js.map

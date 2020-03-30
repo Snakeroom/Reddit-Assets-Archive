@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.7b02af7231242d0a6025.js
-// Retrieved at 3/30/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.9b8d370b76bdc5371ace.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/getMobileOperatingSystem/index.ts": function(e, t, s) {
@@ -1294,19 +1294,21 @@
 			var ot = Object(M.c)(e => {
 					const {
 						callToAction: t,
-						sendEvent: s,
-						source: i
+						postId: s,
+						sendEvent: i,
+						source: a
 					} = e;
 					return d.a.createElement(xe.a, {
 						className: at.a.ctaLink,
-						onClick: e => s(e => Object.assign({}, Object(Se.defaults)(e), {
+						onClick: e => i(e => Object.assign({}, Object(Se.defaults)(e), {
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
 						})),
-						href: i.url,
+						href: a.url,
 						isSponsored: !0,
-						source: i
+						postId: s,
+						source: a
 					}, d.a.createElement("div", {
 						className: at.a.ctaWrapper
 					}, (e => nt[e = e || "Learn More"])(t), d.a.createElement("span", {
@@ -1324,7 +1326,8 @@
 					const {
 						onClick: t,
 						source: s,
-						callToAction: i
+						callToAction: i,
+						postId: a
 					} = e;
 					return d.a.createElement(ht, {
 						onClick: t
@@ -1334,6 +1337,7 @@
 						hk: "1iD2Wj"
 					}))), s && i && d.a.createElement(ot, {
 						callToAction: i,
+						postId: a,
 						source: s
 					})))
 				},
@@ -1397,7 +1401,7 @@
 					metadata: G.g,
 					muxSamplingAVariant: O,
 					muxSamplingBVariant: R,
-					postUrl: z.O,
+					postUrl: z.P,
 					started: G.i,
 					videoBufferTime: I,
 					videoBufferVariant: A,
@@ -1769,7 +1773,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("12db69b-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("e38e8a4-production", " ").concat(t);
 									return i && (s += " [".concat(V.Ub, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1979,6 +1983,7 @@
 						src: this.props.otherSource
 					})), x ? d.a.createElement(mt, {
 						onClick: this.resetVideo,
+						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
 					}) : d.a.createElement(Et, null), this.state.videoWaiting ? v && d.a.createElement(C.a, null) : this.state.videoPaused && !x && d.a.createElement(T.a, {
@@ -2263,4 +2268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.7b02af7231242d0a6025.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.9b8d370b76bdc5371ace.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.fccb35994b5f0ccbcd5e.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.a4521f98729782998302.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/CrisisFooter/index.m.less": function(e, t, s) {
@@ -273,7 +273,7 @@
 				H = s.n(D);
 			const {
 				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("CrisisThankYouPage", H.a), U = d.a.div("CrisisImageContainer", f.a), N = d.a.h2("CrisisTitle", f.a), q = d.a.p("CrisisDescription", f.a), z = d.a.div("CrisisOtherActions", H.a), W = d.a.h4("CrisisOtherActionsTitle", H.a), K = d.a.div("CrisisLinkIconContainer", H.a), Y = d.a.div("CrisisLinkText", H.a), V = d.a.h3("CrisisLinkTitle", H.a), M = d.a.p("CrisisLinkDescription", H.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("CrisisThankYouPage", H.a), U = d.a.div("CrisisImageContainer", f.a), N = d.a.h2("CrisisTitle", f.a), q = d.a.p("CrisisDescription", f.a), z = d.a.div("CrisisOtherActions", H.a), W = d.a.h4("CrisisOtherActionsTitle", H.a), K = d.a.div("CrisisLinkIconContainer", H.a), V = d.a.div("CrisisLinkText", H.a), Y = d.a.h3("CrisisLinkTitle", H.a), M = d.a.p("CrisisLinkDescription", H.a);
 			var J = e => r.a.createElement(B, null, r.a.createElement(U, null, r.a.createElement(A, {
 				className: H.a.CrisisTickImage
 			})), r.a.createElement(N, null, j._("Thanks for caring about your fellow redditor", null, {
@@ -286,7 +286,7 @@
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 				target: "_blank",
 				className: H.a.CrisisLink
-			}, r.a.createElement(K, null, r.a.createElement(P, null)), r.a.createElement(Y, null, r.a.createElement(V, null, j._("Learn how to help someone in crisis", null, {
+			}, r.a.createElement(K, null, r.a.createElement(P, null)), r.a.createElement(V, null, r.a.createElement(Y, null, j._("Learn how to help someone in crisis", null, {
 				hk: "3HohFx"
 			})), r.a.createElement(M, null, j._("Get advice on what you can say and how to be supportive.", null, {
 				hk: "1NHS5d"
@@ -296,7 +296,7 @@
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 				target: "_blank",
 				className: H.a.CrisisLink
-			}, r.a.createElement(K, null, r.a.createElement(I, null)), r.a.createElement(Y, null, r.a.createElement(V, null, j._("Get yourself support", null, {
+			}, r.a.createElement(K, null, r.a.createElement(I, null)), r.a.createElement(V, null, r.a.createElement(Y, null, j._("Get yourself support", null, {
 				hk: "kTT0U"
 			})), r.a.createElement(M, null, j._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 				hk: "37R4JZ"
@@ -438,7 +438,7 @@
 					blockedUser: (e, t) => e.user.blocked.data.find(e => e.name === t.authorName),
 					users: e => e.users
 				});
-			class Ye extends r.a.Component {
+			class Ve extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onBlockAuthor = e => {
 						const {
@@ -496,14 +496,14 @@
 					}))))
 				}
 			}
-			var Ve = Object(i.b)(Ke, (e, t) => {
+			var Ye = Object(i.b)(Ke, (e, t) => {
 					let {} = t;
 					return {
 						onBlockUser: t => {
 							e(Object(Oe.h)(t))
 						}
 					}
-				})(Ye),
+				})(Ve),
 				Me = s("./src/reddit/components/AccordionSection/index.tsx"),
 				Je = s("./src/reddit/actions/tooltip.ts"),
 				Qe = s("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
@@ -823,7 +823,7 @@
 						let {
 							postId: s
 						} = t;
-						return s ? Object(At.M)(e, {
+						return s ? Object(At.N)(e, {
 							postId: s
 						}) : null
 					},
@@ -834,7 +834,7 @@
 						let {
 							postId: s
 						} = t;
-						return s ? Object(At.Y)(e, {
+						return s ? Object(At.Z)(e, {
 							postId: s
 						}) : null
 					},
@@ -937,7 +937,7 @@
 					});
 					if (e.chosenRule && t.commentId && t.reportedSuccess[t.commentId]) {
 						const s = t.comment ? t.comment.author : "";
-						return r.a.createElement(Ve, {
+						return r.a.createElement(Ye, {
 							authorName: s,
 							chosenRule: e.chosenRule,
 							onClose: t.onCloseReportFlow,
@@ -946,7 +946,7 @@
 					}
 					if (e.chosenRule && !t.commentId && t.postId && t.reportedSuccess[t.postId]) {
 						const s = t.post ? t.post.author : "";
-						return r.a.createElement(Ve, {
+						return r.a.createElement(Ye, {
 							authorName: s,
 							chosenRule: e.chosenRule,
 							isLiveStreaming: t.isLiveStreaming,
@@ -1073,4 +1073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow.fccb35994b5f0ccbcd5e.js.map
+//# sourceMappingURL=ReportFlow.a4521f98729782998302.js.map

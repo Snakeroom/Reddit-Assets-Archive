@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dce23561b8d1337ec48a.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.0c5d47e175f557e45499.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -310,7 +310,7 @@
 				H = s("./src/reddit/selectors/user.ts"),
 				q = s("./src/reddit/components/SubredditMention/MiniPost/index.m.less"),
 				R = s.n(q);
-			const F = Object(c.a)(e => e, D.M, D.c, H.O, (e, t, s, n) => {
+			const F = Object(c.a)(e => e, D.N, D.d, H.O, (e, t, s, n) => {
 				return {
 					crosspost: s,
 					language: n,
@@ -1041,4 +1041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.dce23561b8d1337ec48a.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.0c5d47e175f557e45499.js.map

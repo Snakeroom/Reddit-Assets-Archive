@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.fce24ced5adce3d6c6fe.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.11aa35886c3026b6b1d1.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -689,11 +689,11 @@
 				},
 				Pe = Object(n.b)(() => Object(i.c)({
 					activeModalId: E.a,
-					crosspost: P.c,
+					crosspost: P.d,
 					currentUser: C.i,
 					flairStyleTemplate: ce.Q,
-					isActive: P.h,
-					isExpanded: P.k,
+					isActive: P.i,
+					isExpanded: P.l,
 					language: C.O,
 					layout: ce.M,
 					moderatorPermissions: w.i,
@@ -702,9 +702,9 @@
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
 					},
-					post: P.M,
+					post: P.N,
 					showEditFlair: j.a,
-					subredditOrProfile: P.Y,
+					subredditOrProfile: P.Z,
 					userIsOp: C.eb,
 					isInAdLeftSidebarExperiment: O.a
 				}), (e, t) => {
@@ -958,10 +958,12 @@
 					}, r.a.createElement(me.a, {
 						href: ce.source.url.replace(d.a.redditUrl, ""),
 						isSponsored: ce.isSponsored,
+						postId: ce.id,
 						source: ce.source
 					}, ce.source.displayText), ce.callToAction && r.a.createElement(S.a, {
 						href: ce.source.url.replace(d.a.redditUrl, ""),
 						isSponsored: ce.isSponsored,
+						postId: ce.id,
 						source: ce.source,
 						isNotCardView: !0
 					}, ce.callToAction)), A && Re && He && r.a.createElement("div", {
@@ -1097,12 +1099,12 @@
 				S = y.a.div("Content", _.a),
 				N = y.a.div("ThumbnailContainer", _.a),
 				I = Object(d.c)({
-					isCurrentUserProfilePost: h.i,
+					isCurrentUserProfilePost: h.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Ab.TOPIC),
 					language: v.O,
-					post: h.M,
+					post: h.N,
 					shouldOpenPostInNewTab: v.S,
-					subreddit: h.Y
+					subreddit: h.Z
 				}),
 				M = Object(a.b)(I);
 			t.a = M(e => {
@@ -1298,6 +1300,7 @@
 					"data-click-id": "expando_open",
 					href: h.source.url,
 					isSponsored: l.isSponsored,
+					postId: l.id,
 					source: l.source,
 					target: "_blank"
 				}, n.a.createElement(O.a, {
@@ -1594,4 +1597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.fce24ced5adce3d6c6fe.js.map
+//# sourceMappingURL=reddit-components-CompactPost.11aa35886c3026b6b1d1.js.map

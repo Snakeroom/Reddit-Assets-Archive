@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0b38b65dbfeca9ed7f83.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e94bcca8648d1d523be0.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -43,9 +43,9 @@
 				f = a("./src/reddit/helpers/isPost.ts"),
 				O = a("./src/reddit/helpers/trackers/gild.ts"),
 				y = a("./src/telemetry/index.ts"),
-				j = a("./src/reddit/actions/gold/constants.ts");
+				N = a("./src/reddit/actions/gold/constants.ts");
 			a.d(t, "setIsAnonymous", (function() {
-				return N
+				return j
 			})), a.d(t, "setIncludeMessage", (function() {
 				return I
 			})), a.d(t, "updateMessage", (function() {
@@ -61,9 +61,9 @@
 			})), a.d(t, "gildSuccessful", (function() {
 				return F
 			}));
-			const N = Object(s.a)(j.p),
-				I = Object(s.a)(j.o),
-				_ = Object(s.a)(j.s),
+			const j = Object(s.a)(N.p),
+				I = Object(s.a)(N.o),
+				_ = Object(s.a)(N.s),
 				S = (e, t) => async (a, s, r) => {
 					let {
 						gqlContext: d
@@ -122,20 +122,20 @@
 					} finally {
 						Object(P.b)(P.a.GildingFlow)
 					}
-				}, k = Object(s.a)(j.r), M = Object(s.a)(j.n), T = () => async (e, t) => {
+				}, k = Object(s.a)(N.r), M = Object(s.a)(N.n), T = () => async (e, t) => {
 					e(M()), window.setTimeout(() => {
 						t().gild.api.pending && e(k())
 					}, 2e3)
-				}, L = Object(s.a)(j.m), B = e => async (t, a) => {
+				}, L = Object(s.a)(N.m), B = e => async (t, a) => {
 					await t(L(e)), t(Object(d.e)({
 						kind: i.b.Error,
 						duration: d.a,
 						text: e
 					}))
-				}, G = Object(s.a)(j.q), R = (e, t) => {
+				}, G = Object(s.a)(N.q), R = (e, t) => {
 					const {
 						id: a
-					} = t, n = Object(f.a)(a) ? Object(u.M)(e, {
+					} = t, n = Object(f.a)(a) ? Object(u.N)(e, {
 						postId: a
 					}) : Object(o.n)(e, {
 						commentId: a
@@ -334,8 +334,8 @@
 				f = a("./src/reddit/selectors/communityAwards.ts"),
 				O = a("./src/reddit/selectors/experiments/goldPremiumAwards.ts"),
 				y = a("./src/reddit/selectors/experiments/publicAwarding.ts"),
-				j = a("./src/reddit/selectors/gild.ts"),
-				N = a("./src/reddit/selectors/gold/giveAwards.ts"),
+				N = a("./src/reddit/selectors/gild.ts"),
+				j = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				I = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				_ = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				S = a("./src/reddit/selectors/posts.ts"),
@@ -871,8 +871,8 @@
 				Oe = a("./src/reddit/controls/Button/index.tsx"),
 				ye = a("./src/reddit/controls/LoadingIcon/index.tsx");
 			const {
-				fbt: je
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), Ne = 10;
+				fbt: Ne
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), je = 10;
 			class Ie extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleQuestionMarkClick = () => this.props.sendEvent(Object(m.clickQuestionMarkEvent)(this.props.thingId))
@@ -888,7 +888,7 @@
 					}, s.a.createElement(ue.b, {
 						className: Pe.a.subredditIcon,
 						subredditOrProfile: e
-					}), je._("r/{subredditName} Coin balance:", [je._param("subredditName", a)], {
+					}), Ne._("r/{subredditName} Coin balance:", [Ne._param("subredditName", a)], {
 						hk: "2ktWRF"
 					}), s.a.createElement("span", null, s.a.createElement(ee.a, null), n))
 				}
@@ -899,13 +899,13 @@
 						selectedAward: a,
 						thingId: n
 					} = this.props, s = a.awardType === u.d.Moderator;
-					return t ? je._("Get Premium", null, {
+					return t ? Ne._("Get Premium", null, {
 						hk: "3VB1S9"
-					}) : !e || s ? Object(o.a)(n) ? je._("Award post", null, {
+					}) : !e || s ? Object(o.a)(n) ? Ne._("Award post", null, {
 						hk: "1Ydq4H"
-					}) : je._("Award comment", null, {
+					}) : Ne._("Award comment", null, {
 						hk: "4CfMGF"
-					}) : je._("Next", null, {
+					}) : Ne._("Next", null, {
 						hk: "zG5NI"
 					})
 				}
@@ -938,7 +938,7 @@
 						onClick: n ? r : a ? i : d
 					}, o ? s.a.createElement(ye.a, {
 						className: Pe.a.loadingIcon,
-						sizePx: Ne
+						sizePx: je
 					}) : this.renderButtonText())), t && s.a.createElement("div", {
 						className: Pe.a.errorText
 					}, t))
@@ -1008,7 +1008,7 @@
 							s = t && t.id
 						}
 						if (!s && Object(o.a)(a)) {
-							const t = Object(S.M)(e, {
+							const t = Object(S.N)(e, {
 								postId: a
 							});
 							s = t && t.belongsTo.id
@@ -1034,18 +1034,18 @@
 						})
 					},
 					currentUser: M.i,
-					errorMessage: j.a,
-					isAnonymous: j.g,
-					iFramed: j.h,
+					errorMessage: N.a,
+					isAnonymous: N.g,
+					iFramed: N.h,
 					isEmployee: M.D,
 					language: M.O,
-					message: j.b,
-					pending: j.e,
+					message: N.b,
+					pending: N.e,
 					postOrComment: (e, t) => {
 						let {
 							thingId: a
 						} = t;
-						return Object(o.a)(a) ? Object(S.M)(e, {
+						return Object(o.a)(a) ? Object(S.N)(e, {
 							postId: a
 						}) : Object(P.n)(e, {
 							commentId: a
@@ -1055,7 +1055,7 @@
 					purchaseCatalogPending: I.e,
 					showPremiumAwards: O.a,
 					showPurchaseModal: _.q,
-					selectedAward: N.a,
+					selectedAward: j.a,
 					subreddit: k.H,
 					subredditCoins: (e, t) => {
 						let {
@@ -1196,8 +1196,8 @@
 						showPurchaseModal: f,
 						showPremiumAwards: O,
 						subreddit: y,
-						subredditCoins: j,
-						subredditName: N,
+						subredditCoins: N,
+						subredditName: j,
 						thingId: I,
 						userCoins: _
 					} = this.props, {
@@ -1209,7 +1209,7 @@
 					if (G && R) return s.a.createElement(F, {
 						isCompletePaypal: !1
 					});
-					const q = y ? y.name : N,
+					const q = y ? y.name : j,
 						D = Ge.includes(q) ? "pan" : q,
 						H = !d || !d.isGold && A.awardSubType === u.c.Premium;
 					return s.a.createElement("div", {
@@ -1260,7 +1260,7 @@
 						sendEvent: P,
 						subreddit: y,
 						subredditName: D,
-						subredditCoins: j,
+						subredditCoins: N,
 						thingId: I,
 						userCoins: _
 					}), B && s.a.createElement(T.a, {
@@ -1427,4 +1427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.0b38b65dbfeca9ed7f83.js.map
+//# sourceMappingURL=FramedGild~GildModal.e94bcca8648d1d523be0.js.map

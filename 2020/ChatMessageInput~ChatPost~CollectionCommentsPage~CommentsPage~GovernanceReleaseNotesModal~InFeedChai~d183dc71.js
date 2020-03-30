@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.f8ff086d557a71ed3b41.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b0250160ee964d0b38f7.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -154,7 +154,7 @@
 					}, e.children)
 				},
 				v = Object(c.c)({
-					postPermalink: b.K,
+					postPermalink: b.L,
 					shouldOpenPostInNewTab: f.S
 				}),
 				I = Object(i.b)(v);
@@ -1339,9 +1339,9 @@
 			})), n.d(t, "f", (function() {
 				return Y
 			})), n.d(t, "h", (function() {
-				return K
-			})), n.d(t, "g", (function() {
 				return G
+			})), n.d(t, "g", (function() {
+				return K
 			})), n.d(t, "i", (function() {
 				return q
 			})), n.d(t, "e", (function() {
@@ -1413,12 +1413,12 @@
 						case h.p:
 							return Y(e, t, n, s);
 						case h.u:
-							return G(e, t, n, s);
+							return K(e, t, n, s);
 						case h.z:
-							return K(e, t, n, s)
+							return G(e, t, n, s)
 					}
 				},
-				K = (e, t, n, s) => {
+				G = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1460,7 +1460,7 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				G = (e, t, n, s) => {
+				K = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
@@ -1807,4 +1807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.f8ff086d557a71ed3b41.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b0250160ee964d0b38f7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.4ae8d49609df9a1c6ce7.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.bd8af72fc259c0d6037b.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -724,7 +724,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(g.s)(e, {
+						return Object(g.t)(e, {
 							postId: s.id
 						})
 					},
@@ -1119,6 +1119,7 @@
 				}, o.a.createElement(a.a, {
 					href: i.url,
 					isSponsored: d,
+					postId: s.id,
 					source: i
 				}, Object(c.a)(s), o.a.createElement(m, null))) : null
 			}
@@ -1562,4 +1563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.4ae8d49609df9a1c6ce7.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.bd8af72fc259c0d6037b.js.map

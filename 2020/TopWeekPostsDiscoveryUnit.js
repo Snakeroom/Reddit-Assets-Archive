@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.fd4b8be704b230bddab6.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.221002180f7d8fec066a.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -419,7 +419,7 @@
 			}
 			const {
 				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = [], C = () => {}, P = () => void 0, v = c.a.button("CloseButton", f.a), _ = Object(i.a)(u.F, e => e.filter(e => 9 === e.length)), j = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = [], C = () => {}, P = () => void 0, v = c.a.button("CloseButton", f.a), _ = Object(i.a)(u.G, e => e.filter(e => 9 === e.length)), j = Object(i.c)({
 				discoveryUnit: e => Object(p.c)(e, {
 					unitName: m.k
 				}),
@@ -768,4 +768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.fd4b8be704b230bddab6.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.221002180f7d8fec066a.js.map

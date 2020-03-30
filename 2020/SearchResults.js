@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.32603d80a292eaeec29c.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.e7277f5721ee77b228c5.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -364,30 +364,30 @@
 			const W = {
 					autoplayPref: V.b,
 					activeModalId: F.a,
-					crosspost: U.c,
+					crosspost: U.d,
 					currentUser: V.i,
-					isActive: U.h,
+					isActive: U.i,
 					isChatPostExperiment: A.d,
-					isCurrentUserProfilePost: U.i,
-					isExpanded: U.k,
+					isCurrentUserProfilePost: U.j,
+					isExpanded: U.l,
 					isLoggedIn: V.G,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						return Object(U.p)(e, s)
+						return Object(U.q)(e, s)
 					},
 					language: V.O,
 					moderatorPermissions: B.i,
 					modModeEnabled: R.O,
-					post: U.M,
+					post: U.N,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: D.a,
 					showMedia: R.r,
-					subredditOrProfile: U.Y,
+					subredditOrProfile: U.Z,
 					userIsOp: V.eb,
 					flairStyleTemplate: R.Q
 				},
@@ -571,6 +571,7 @@
 					}, z.source && !le && r.a.createElement(P.a, {
 						href: z.source.url,
 						isSponsored: z.isSponsored,
+						postId: z.id,
 						source: z.source
 					}, Object(c.a)(z))), r.a.createElement(O.a, re({
 						key: "PostMeta"
@@ -585,10 +586,12 @@
 					}, r.a.createElement(P.a, {
 						href: z.source.url.replace(o.a.redditUrl, ""),
 						isSponsored: z.isSponsored,
+						postId: z.id,
 						source: z.source
 					}, z.source.displayText), z.callToAction && r.a.createElement(l.a, {
 						href: z.source.url.replace(o.a.redditUrl, ""),
 						isSponsored: z.isSponsored,
+						postId: z.id,
 						source: z.source
 					}, z.callToAction)), r.a.createElement("div", {
 						className: ne.a.flatlistContainer
@@ -1512,12 +1515,12 @@
 				I = O.a.div("Content", v.a),
 				N = O.a.div("ThumbnailContainer", v.a),
 				T = Object(c.c)({
-					isCurrentUserProfilePost: g.i,
+					isCurrentUserProfilePost: g.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ab.TOPIC),
 					language: f.O,
-					post: g.M,
+					post: g.N,
 					shouldOpenPostInNewTab: f.S,
-					subreddit: g.Y
+					subreddit: g.Z
 				}),
 				M = Object(a.b)(T);
 			t.a = M(e => {
@@ -2811,6 +2814,7 @@
 					"data-click-id": "expando_open",
 					href: g.source.url,
 					isSponsored: l.isSponsored,
+					postId: l.id,
 					source: l.source,
 					target: "_blank"
 				}, o.a.createElement(C.a, {
@@ -3637,7 +3641,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(O.s)(e, {
+						return Object(O.t)(e, {
 							postId: s.id
 						})
 					},
@@ -5281,14 +5285,14 @@
 						if (a && a.length > 0) {
 							if (s) {
 								const t = a.indexOf(s);
-								if (t > -1) return a.splice(t, 1), Object(Lt.Z)(e, a)
+								if (t > -1) return a.splice(t, 1), Object(Lt.ab)(e, a)
 							}
-							return Object(Lt.Z)(e, a)
+							return Object(Lt.ab)(e, a)
 						}
 						const {
 							models: i
 						} = e.posts;
-						return Object(Lt.I)(e, n, r, !!o).filter(e => i && i[e] && !i[e].isSponsored)
+						return Object(Lt.J)(e, n, r, !!o).filter(e => i && i[e] && !i[e].isSponsored)
 					}
 				})),
 				Bt = Object(o.b)(At, (e, t) => Object.assign({}, Object(Rt.b)(e, t), {
@@ -6006,11 +6010,13 @@
 					className: Zn.a.outboundLink,
 					href: o.source.url.replace(en.a.redditUrl, ""),
 					isSponsored: o.isSponsored,
+					postId: o.id,
 					source: o.source
 				}, o.source.displayText), o.callToAction && r.a.createElement(Qn.a, {
 					className: Zn.a.callToAction,
 					href: o.source.url.replace(en.a.redditUrl, ""),
 					isSponsored: o.isSponsored,
+					postId: o.id,
 					source: o.source
 				}, o.callToAction)), r.a.createElement(xn.d, {
 					postId: o.id
@@ -6018,7 +6024,7 @@
 			};
 			const {
 				fbt: er
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), tr = "".concat(en.a.assetPath, "/img/link-placeholder.png"), sr = (e, t) => t && t.length ? Object(Lt.M)(e, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), tr = "".concat(en.a.assetPath, "/img/link-placeholder.png"), sr = (e, t) => t && t.length ? Object(Lt.N)(e, {
 				postId: t[0]
 			}) : void 0, nr = {
 				fireAdPixelsOfType: on.B,
@@ -6178,7 +6184,7 @@
 					autoplayPref: De.b,
 					crosspostRoot: (e, t) => {
 						const s = sr(e, t.searchDiscoveryUnit.postOrder);
-						if (s) return Object(Lt.c)(e, {
+						if (s) return Object(Lt.d)(e, {
 							postId: s.id
 						})
 					},
@@ -6275,7 +6281,7 @@
 				},
 				br = Object(a.c)({
 					hasCommunityResults: (e, t) => !!Object(Xe.e)(e, t) || !Object(Xe.d)(e, t) && Object(Xe.b)(e, t).length > 0,
-					hasPostResults: (e, t) => !!Object(Xe.e)(e, t) || !Object(Xe.d)(e, t) && Object(Lt.S)(e, t).length > 0,
+					hasPostResults: (e, t) => !!Object(Xe.e)(e, t) || !Object(Xe.d)(e, t) && Object(Lt.T)(e, t).length > 0,
 					postsDiscoveryUnit: e => Object(f.c)(e, pr),
 					subredditsDiscoveryUnit: e => Object(f.c)(e, ur),
 					searchDiscoveryUnitsModels: e => {
@@ -7065,6 +7071,7 @@
 				}, r.a.createElement(i.a, {
 					href: c.url,
 					isSponsored: d,
+					postId: s.id,
 					source: c
 				}, Object(a.a)(s), r.a.createElement(p, null))) : null
 			}
@@ -8255,14 +8262,14 @@
 					measureScrollFPS: b.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t),
 					loadMore: h.g,
-					postsById: x.X,
+					postsById: x.Y,
 					postIds: Object(o.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: r
 						} = t;
-						return Object(x.I)(e, s, n, r)
+						return Object(x.J)(e, s, n, r)
 					}),
 					subredditsById: g.V,
 					viewportDataLoaded: f.a,
@@ -8350,18 +8357,18 @@
 			const h = Object(n.b)(() => Object(r.c)({
 				activeModalId: l.a,
 				autoplayPref: b.b,
-				crosspostRoot: u.c,
-				crosspostSubredditOrProfile: u.d,
+				crosspostRoot: u.d,
+				crosspostSubredditOrProfile: u.e,
 				currentUser: b.i,
 				flairStyleTemplate: d.Q,
 				hideNSFWPref: b.y,
-				isActive: u.h,
+				isActive: u.i,
 				language: b.O,
 				moderatorPermissions: m.i,
 				modModeEnabled: d.O,
-				post: u.M,
+				post: u.N,
 				showEditFlair: p.a,
-				subredditOrProfile: u.Y,
+				subredditOrProfile: u.Z,
 				userIsOp: b.eb
 			}), (e, t) => {
 				let {
@@ -9375,4 +9382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.32603d80a292eaeec29c.js.map
+//# sourceMappingURL=SearchResults.e7277f5721ee77b228c5.js.map

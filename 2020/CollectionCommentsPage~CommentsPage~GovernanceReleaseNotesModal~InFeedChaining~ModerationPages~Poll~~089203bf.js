@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.9eb9f0ddc069682edffb.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.40b441c8de2be47ff066.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, i) {
@@ -533,8 +533,8 @@
 				}),
 				J = 1200,
 				Q = 75,
-				Y = "player.js",
-				X = L.r + L.q,
+				X = "player.js",
+				Y = L.r + L.q,
 				K = e => e.isVisible ? e.children : l.a.createElement("div", {
 					className: z.a.displayNone
 				}, e.children),
@@ -554,7 +554,7 @@
 						let {
 							post: i
 						} = t;
-						const s = Object(H.Y)(e, i);
+						const s = Object(H.Z)(e, i);
 						return s && s.displayText || i && i.author && Object(F.c)(i.author)
 					}
 				}),
@@ -625,10 +625,10 @@
 						if (e.contentWindow) {
 							const i = t ? A.g.Pause : A.g.Play;
 							e.contentWindow.postMessage({
-								context: Y,
+								context: X,
 								method: i
 							}, x.a), e.contentWindow.postMessage({
-								context: Y,
+								context: X,
 								method: A.g.Mute
 							}, x.a)
 						}
@@ -637,7 +637,7 @@
 							event: "command",
 							func: A.x.Pause
 						}), x.a) : e.contentWindow.postMessage({
-							context: Y,
+							context: X,
 							method: A.g.Pause
 						}, x.a))
 					}, this.onIframeLoaded = () => {
@@ -692,7 +692,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(A.i, this.state.viewportHeight),
 						i = Math.min(J, 16 * t / 9);
-					i === J && (t = 9 * J / 16), e = this.state.viewportWidth >= j.c ? this.state.viewportWidth < L.l ? this.state.viewportWidth - X - 2 * Q : this.state.viewportWidth - X - L.e - 2 * Q : this.state.viewportWidth - 2 * Q;
+					i === J && (t = 9 * J / 16), e = this.state.viewportWidth >= j.c ? this.state.viewportWidth < L.l ? this.state.viewportWidth - Y - 2 * Q : this.state.viewportWidth - Y - L.e - 2 * Q : this.state.viewportWidth - 2 * Q;
 					const s = this.state.viewportHeight - 2 * Q;
 					if (i > e) {
 						t *= e / i, i = e
@@ -801,16 +801,16 @@
 						{
 							source: U,
 							obfuscated: J,
-							height: Y,
-							width: X,
+							height: X,
+							width: Y,
 							needsBackgroundBlur: Z
 						} = this.getMediaInfo(this.props, this.state),
 						$ = {
 							showCentered: m,
 							isListing: a,
 							showFull: b,
-							height: Y,
-							width: X
+							height: X,
+							width: Y
 						},
 						ee = Object.assign({}, $, {
 							className: e,
@@ -911,12 +911,12 @@
 								title: h.title
 							}) : l.a.createElement(C.a, G({}, ee, {
 								alwaysWrapMedia: !0,
-								height: o ? Y : A.i,
-								width: o ? X : A.i * (16 / 9)
+								height: o ? X : A.i,
+								width: o ? Y : A.i * (16 / 9)
 							}), L && l.a.createElement(y.a, {
 								childRef: this.storeChildRef,
-								height: o ? Y : A.i,
-								width: o ? X : void 0,
+								height: o ? X : A.i,
+								width: o ? Y : void 0,
 								isListing: a,
 								isResponsive: !0,
 								onLoad: this.onIframeLoaded,
@@ -935,9 +935,9 @@
 								fullWidth: h.media.provider === A.t.IFrameEmbed
 							})));
 						case A.n.GIFVIDEO: {
-							let e = Y,
-								t = X;
-							return e > A.i && (t = X / Y * (e = A.i)), l.a.createElement(C.a, G({}, ee, {
+							let e = X,
+								t = Y;
+							return e > A.i && (t = Y / X * (e = A.i)), l.a.createElement(C.a, G({}, ee, {
 								blurSrc: Z ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(K, {
 								isVisible: L
@@ -1143,4 +1143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.9eb9f0ddc069682edffb.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.40b441c8de2be47ff066.js.map

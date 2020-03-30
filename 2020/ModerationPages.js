@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.47408db29f4a8332911c.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.14fe574647e7b6cb4e43.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -583,7 +583,7 @@
 							postId: e
 						}));
 						const a = s(),
-							r = Object(f.M)(a, {
+							r = Object(f.N)(a, {
 								postId: e
 							}),
 							d = r && r.title || "";
@@ -615,7 +615,7 @@
 							eventInfo: m
 						}));
 						const u = a(),
-							p = Object(f.M)(u, {
+							p = Object(f.N)(u, {
 								postId: e
 							}),
 							b = p && p.title || "",
@@ -1707,7 +1707,7 @@
 						apiContext: a
 					} = o;
 					const r = n(),
-						i = Object(_.M)(r, {
+						i = Object(_.N)(r, {
 							postId: e
 						});
 					t ? (s(Object(g.a)(i.permalink)), Object(f.d)(e, "edit")(r)) : Object(E.b)(e, "edit")(r);
@@ -3922,30 +3922,30 @@
 			const W = {
 					autoplayPref: H.b,
 					activeModalId: F.a,
-					crosspost: U.c,
+					crosspost: U.d,
 					currentUser: H.i,
-					isActive: U.h,
+					isActive: U.i,
 					isChatPostExperiment: A.d,
-					isCurrentUserProfilePost: U.i,
-					isExpanded: U.k,
+					isCurrentUserProfilePost: U.j,
+					isExpanded: U.l,
 					isLoggedIn: H.G,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						return Object(U.p)(e, s)
+						return Object(U.q)(e, s)
 					},
 					language: H.O,
 					moderatorPermissions: D.i,
 					modModeEnabled: L.O,
-					post: U.M,
+					post: U.N,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: B.a,
 					showMedia: L.r,
-					subredditOrProfile: U.Y,
+					subredditOrProfile: U.Z,
 					userIsOp: H.eb,
 					flairStyleTemplate: L.Q
 				},
@@ -4129,6 +4129,7 @@
 					}, G.source && !le && o.a.createElement(k.a, {
 						href: G.source.url,
 						isSponsored: G.isSponsored,
+						postId: G.id,
 						source: G.source
 					}, Object(d.a)(G))), o.a.createElement(C.a, oe({
 						key: "PostMeta"
@@ -4143,10 +4144,12 @@
 					}, o.a.createElement(k.a, {
 						href: G.source.url.replace(a.a.redditUrl, ""),
 						isSponsored: G.isSponsored,
+						postId: G.id,
 						source: G.source
 					}, G.source.displayText), G.callToAction && o.a.createElement(l.a, {
 						href: G.source.url.replace(a.a.redditUrl, ""),
 						isSponsored: G.isSponsored,
+						postId: G.id,
 						source: G.source
 					}, G.callToAction)), o.a.createElement("div", {
 						className: ne.a.flatlistContainer
@@ -5484,7 +5487,7 @@
 					isChatPostExperiment: g.d,
 					isPostSEOEligible: x.f,
 					language: E.O,
-					postPermalink: f.K,
+					postPermalink: f.L,
 					shouldOpenPostInNewTab: E.S
 				})),
 				j = e => {
@@ -7251,11 +7254,11 @@
 				},
 				ke = Object(a.b)(() => Object(i.c)({
 					activeModalId: O.a,
-					crosspost: k.c,
+					crosspost: k.d,
 					currentUser: w.i,
 					flairStyleTemplate: ce.Q,
-					isActive: k.h,
-					isExpanded: k.k,
+					isActive: k.i,
+					isExpanded: k.l,
 					language: w.O,
 					layout: ce.M,
 					moderatorPermissions: _.i,
@@ -7264,9 +7267,9 @@
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
 					},
-					post: k.M,
+					post: k.N,
 					showEditFlair: y.a,
-					subredditOrProfile: k.Y,
+					subredditOrProfile: k.Z,
 					userIsOp: w.eb,
 					isInAdLeftSidebarExperiment: j.a
 				}), (e, t) => {
@@ -7520,10 +7523,12 @@
 					}, o.a.createElement(ue.a, {
 						href: ce.source.url.replace(d.a.redditUrl, ""),
 						isSponsored: ce.isSponsored,
+						postId: ce.id,
 						source: ce.source
 					}, ce.source.displayText), ce.callToAction && o.a.createElement(P.a, {
 						href: ce.source.url.replace(d.a.redditUrl, ""),
 						isSponsored: ce.isSponsored,
+						postId: ce.id,
 						source: ce.source,
 						isNotCardView: !0
 					}, ce.callToAction)), F && Le && He && o.a.createElement("div", {
@@ -8322,12 +8327,12 @@
 				P = C.a.div("Content", v.a),
 				T = C.a.div("ThumbnailContainer", v.a),
 				N = Object(d.c)({
-					isCurrentUserProfilePost: x.i,
+					isCurrentUserProfilePost: x.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Ab.TOPIC),
 					language: f.O,
-					post: x.M,
+					post: x.N,
 					shouldOpenPostInNewTab: f.S,
-					subreddit: x.Y
+					subreddit: x.Z
 				}),
 				M = Object(r.b)(N);
 			t.a = M(e => {
@@ -8806,6 +8811,7 @@
 					"data-click-id": "expando_open",
 					href: x.source.url,
 					isSponsored: l.isSponsored,
+					postId: l.id,
 					source: l.source,
 					target: "_blank"
 				}, a.a.createElement(j.a, {
@@ -16099,7 +16105,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(C.s)(e, {
+						return Object(C.t)(e, {
 							postId: s.id
 						})
 					},
@@ -17360,15 +17366,15 @@
 						return Object(se.a)(e) === "".concat("POST_OVERFLOW_DELETE_CONFIRMATION", "_").concat(s)
 					},
 					isFutureEvent: me.j,
-					isSaved: ne.v,
-					isHidden: ne.n,
-					isSponsored: ne.x,
-					isNSFW: ne.q,
-					isOC: ne.r,
-					isPinned: ne.s,
-					isSpoiler: ne.w,
-					post: ne.M,
-					postSubredditAboutInfo: ne.N,
+					isSaved: ne.w,
+					isHidden: ne.o,
+					isSponsored: ne.y,
+					isNSFW: ne.r,
+					isOC: ne.s,
+					isPinned: ne.t,
+					isSpoiler: ne.x,
+					post: ne.N,
+					postSubredditAboutInfo: ne.O,
 					reportFlowIsOpen: (e, t) => {
 						let {
 							isOverlay: s,
@@ -17376,18 +17382,18 @@
 						} = t;
 						return e.reportFlow.openedFromModalPage === s && e.reportFlow.postOrCommentId === n
 					},
-					sendRepliesToggled: ne.W,
+					sendRepliesToggled: ne.X,
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
 						} = t, n = be(t, ["isProfilePostListing"]);
 						return Object(G.B)(e, n) && s && Object(ae.eb)(e, n) && Object(ae.db)(e, {
-							userName: Object(ne.M)(e, {
+							userName: Object(ne.N)(e, {
 								postId: n.postId
 							}).author
 						})
 					},
-					subredditOrProfile: ne.Y,
+					subredditOrProfile: ne.Z,
 					hasSubredditRules: oe.k,
 					userIsOp: ae.eb,
 					isPostPartOfACollection: me.l,
@@ -17395,10 +17401,10 @@
 						let {
 							postId: s
 						} = t;
-						if (Object(ne.M)(e, {
+						if (Object(ne.N)(e, {
 								postId: s
 							}).isSponsored) return !1;
-						const n = Object(ne.Y)(e, {
+						const n = Object(ne.Z)(e, {
 							postId: s
 						});
 						if (!n) return !1;
@@ -19846,6 +19852,7 @@
 				}, o.a.createElement(i.a, {
 					href: d.url,
 					isSponsored: c,
+					postId: s.id,
 					source: d
 				}, Object(r.a)(s), o.a.createElement(u, null))) : null
 			}
@@ -27589,7 +27596,7 @@
 				},
 				r = (e, t) => {
 					const s = a(e, t);
-					return Object(o.S)(e, {
+					return Object(o.T)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -27953,4 +27960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.47408db29f4a8332911c.js.map
+//# sourceMappingURL=ModerationPages.14fe574647e7b6cb4e43.js.map

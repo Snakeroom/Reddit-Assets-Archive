@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.8063bbef9a4a82d58c3d.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.df43c3c0502f157b919a.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -663,30 +663,30 @@
 			const G = {
 					autoplayPref: W.b,
 					activeModalId: A.a,
-					crosspost: H.c,
+					crosspost: H.d,
 					currentUser: W.i,
-					isActive: H.h,
+					isActive: H.i,
 					isChatPostExperiment: B.d,
-					isCurrentUserProfilePost: H.i,
-					isExpanded: H.k,
+					isCurrentUserProfilePost: H.j,
+					isExpanded: H.l,
 					isLoggedIn: W.G,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						return Object(H.p)(e, s)
+						return Object(H.q)(e, s)
 					},
 					language: W.O,
 					moderatorPermissions: F.i,
 					modModeEnabled: R.O,
-					post: H.M,
+					post: H.N,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: D.a,
 					showMedia: R.r,
-					subredditOrProfile: H.Y,
+					subredditOrProfile: H.Z,
 					userIsOp: W.eb,
 					flairStyleTemplate: R.Q
 				},
@@ -870,6 +870,7 @@
 					}, z.source && !le && n.a.createElement(P.a, {
 						href: z.source.url,
 						isSponsored: z.isSponsored,
+						postId: z.id,
 						source: z.source
 					}, Object(d.a)(z))), n.a.createElement(O.a, ne({
 						key: "PostMeta"
@@ -884,10 +885,12 @@
 					}, n.a.createElement(P.a, {
 						href: z.source.url.replace(r.a.redditUrl, ""),
 						isSponsored: z.isSponsored,
+						postId: z.id,
 						source: z.source
 					}, z.source.displayText), z.callToAction && n.a.createElement(l.a, {
 						href: z.source.url.replace(r.a.redditUrl, ""),
 						isSponsored: z.isSponsored,
+						postId: z.id,
 						source: z.source
 					}, z.callToAction)), n.a.createElement("div", {
 						className: oe.a.flatlistContainer
@@ -2013,7 +2016,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.H)(e, {
+						return Object(J.I)(e, {
 							postId: s.postId
 						})
 					},
@@ -2021,7 +2024,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.K)(e, {
+						return Object(J.L)(e, {
 							postId: s.postId
 						})
 					},
@@ -2036,7 +2039,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.Y)(e, {
+						return Object(J.Z)(e, {
 							postId: s.postId
 						})
 					}
@@ -2358,12 +2361,12 @@
 				S = O.a.div("Content", y.a),
 				T = O.a.div("ThumbnailContainer", y.a),
 				M = Object(d.c)({
-					isCurrentUserProfilePost: g.i,
+					isCurrentUserProfilePost: g.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ab.TOPIC),
 					language: f.O,
-					post: g.M,
+					post: g.N,
 					shouldOpenPostInNewTab: f.S,
-					subreddit: g.Y
+					subreddit: g.Z
 				}),
 				N = Object(i.b)(M);
 			t.a = N(e => {
@@ -2868,6 +2871,7 @@
 					"data-click-id": "expando_open",
 					href: g.source.url,
 					isSponsored: l.isSponsored,
+					postId: l.id,
 					source: l.source,
 					target: "_blank"
 				}, r.a.createElement(C.a, {
@@ -3440,8 +3444,8 @@
 				L = Object(r.b)(() => Object(a.c)({
 					comment: b.n,
 					language: x.O,
-					post: h.M,
-					subredditOrProfile: h.Y
+					post: h.N,
+					subredditOrProfile: h.Z
 				})),
 				R = e => {
 					const {
@@ -3704,7 +3708,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(O.s)(e, {
+						return Object(O.t)(e, {
 							postId: s.id
 						})
 					},
@@ -5628,6 +5632,7 @@
 				}, n.a.createElement(a.a, {
 					href: d.url,
 					isSponsored: c,
+					postId: s.id,
 					source: d
 				}, Object(i.a)(s), n.a.createElement(p, null))) : null
 			}
@@ -7660,4 +7665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.8063bbef9a4a82d58c3d.js.map
+//# sourceMappingURL=ProfilePrivate.df43c3c0502f157b919a.js.map

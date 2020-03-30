@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.c8cf290b0c5cb9021da4.js
-// Retrieved at 3/24/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.e560fbd501622ea1338c.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -31,8 +31,8 @@
 				p = t("./src/reddit/constants/page.ts"),
 				b = t("./src/reddit/constants/postLayout.ts"),
 				g = t("./src/reddit/helpers/path/index.ts"),
-				h = t("./src/reddit/helpers/trackers/otherDiscussions.ts"),
-				C = t("./src/reddit/helpers/trackers/screenview.ts"),
+				C = t("./src/reddit/helpers/trackers/otherDiscussions.ts"),
+				h = t("./src/reddit/helpers/trackers/screenview.ts"),
 				x = t("./src/reddit/icons/fonts/Comment/index.tsx"),
 				D = t("./src/reddit/selectors/listings.ts"),
 				_ = t("./src/reddit/selectors/posts.ts"),
@@ -63,7 +63,7 @@
 						})
 					})
 				},
-				otherDiscussionsCount: _.B
+				otherDiscussionsCount: _.C
 			}));
 			s.default = Object(O.c)(I(e => {
 				let {
@@ -93,7 +93,7 @@
 				})), i.a.createElement(m.a, {
 					className: L.a.OtherDiscussionsLink,
 					isOverlay: r,
-					onClick: () => _(Object(h.b)(O)),
+					onClick: () => _(Object(C.b)(O)),
 					to: Object(g.b)(D)
 				}, i.a.createElement(x.a, {
 					className: P.a.CommentIcon,
@@ -111,7 +111,7 @@
 					forcedLayout: b.g.Compact,
 					listingKey: y,
 					listingName: p.c.OtherDiscussions,
-					listingViewed: (e, s) => Object(C.d)(y, n, s, e),
+					listingViewed: (e, s) => Object(h.d)(y, n, s, e),
 					noPostsComponent: () => i.a.createElement(l.b, null),
 					inSubredditOrProfile: !1,
 					preventScrollOnMount: !0
@@ -120,4 +120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.c8cf290b0c5cb9021da4.js.map
+//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.e560fbd501622ea1338c.js.map

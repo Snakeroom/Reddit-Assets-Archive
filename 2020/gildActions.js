@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.08bae0e7f3e6b584652f.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.ae06b3e9461cdd5d456c.js
+// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -135,7 +135,7 @@
 				}, D = Object(r.a)(x.q), F = (e, t) => {
 					const {
 						id: s
-					} = t, d = Object(_.a)(s) ? Object(b.M)(e, {
+					} = t, d = Object(_.a)(s) ? Object(b.N)(e, {
 						postId: s
 					}) : Object(o.n)(e, {
 						commentId: s
@@ -227,4 +227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.08bae0e7f3e6b584652f.js.map
+//# sourceMappingURL=gildActions.ae06b3e9461cdd5d456c.js.map
