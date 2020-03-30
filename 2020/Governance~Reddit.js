@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7a98223f0aebf7c7c51c.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.bc3c92a7409f722b7a4f.js
+// Retrieved at 3/30/2020, 4:00:40 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -21450,7 +21450,7 @@
 			const r = new Set(["friends", "random"]);
 			var s;
 			! function(e) {
-				e.All = "all", e.Home = "home", e.Rpan = "rpan", e.Popular = "popular", e.SubredditCreation = "subredditCreation", e.SubredditLeaderboard = "subredditLeaderboard", e.Topic = "topic", e.Layer = "layer"
+				e.All = "all", e.Home = "home", e.Rpan = "rpan", e.Popular = "popular", e.SubredditCreation = "subredditCreation", e.SubredditLeaderboard = "subredditLeaderboard", e.Topic = "topic", e.Layer = "layer", e.Imposter = "imposter"
 			}(s || (s = {}));
 			const o = {
 				[s.Home]: "/",
@@ -21460,7 +21460,8 @@
 				[s.SubredditCreation]: "/subreddits/create",
 				[s.SubredditLeaderboard]: "/subreddits/leaderboard/",
 				[s.Topic]: "/t/",
-				[s.Layer]: "/r/layer/"
+				[s.Layer]: "/r/layer/",
+				[s.Imposter]: "r/Imposter/"
 			}
 		},
 		"./src/reddit/constants/modals.ts": function(e, t, n) {
@@ -62515,4 +62516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7a98223f0aebf7c7c51c.js.map
+//# sourceMappingURL=Governance~Reddit.bc3c92a7409f722b7a4f.js.map
