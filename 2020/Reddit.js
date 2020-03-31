@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b7a8857cd218392fba28.js
-// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.35ecc1c12b1bf1966c8b.js
+// Retrieved at 3/31/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -7296,12 +7296,12 @@
 				h = m.a.div("SparseContainer", l.a),
 				b = m.a.a("HomeExternalLink", l.a);
 
-			function g() {
+			function g(e) {
 				return a.a.createElement(h, {
 					id: r.c
 				}, a.a.createElement(b, {
-					href: "#",
-					onClick: () => window.location.reload(!0)
+					href: e.logoHref || "/",
+					onClick: e.logoOnClick
 				}, a.a.createElement(c.a, null, a.a.createElement(u, null), a.a.createElement(p, null))))
 			}
 		},
@@ -9711,7 +9711,10 @@
 				value: !1
 			}, u.a.createElement(Be.b, {
 				subredditName: ""
-			}, u.a.createElement("div", null, u.a.createElement(De.a, null), u.a.createElement("div", {
+			}, u.a.createElement("div", null, u.a.createElement(De.a, {
+				logoHref: "#",
+				logoOnClick: () => window.location.reload(!0)
+			}), u.a.createElement("div", {
 				className: Ve.a.container
 			}, u.a.createElement("div", {
 				className: Ve.a.mainContent
@@ -12268,4 +12271,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.b7a8857cd218392fba28.js.map
+//# sourceMappingURL=Reddit.35ecc1c12b1bf1966c8b.js.map

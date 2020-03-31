@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a9244ec4d15c906eb783.js
-// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b69beb7596b21f342a87.js
+// Retrieved at 3/31/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -8271,9 +8271,9 @@
 					} = this.props, t = d[e];
 					return r.a.createElement(i.a, {
 						bodyText: t.body(),
-						secondaryButtonText: t.secondaryButtonText(),
-						primaryButtonText: t.primaryButtonText(),
-						titleText: t.titleText(),
+						secondaryButtonText: t.cancel(),
+						primaryButtonText: t.confirm(),
+						titleText: t.title(),
 						onClose: this.onCancel,
 						onPrimaryAction: this.onConfirm,
 						onSecondaryAction: this.onCancel
@@ -30580,4 +30580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.a9244ec4d15c906eb783.js.map
+//# sourceMappingURL=PostCreation.b69beb7596b21f342a87.js.map
