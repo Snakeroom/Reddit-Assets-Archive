@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.55a3c76fea08b4fa8037.js
-// Retrieved at 3/31/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.29a0b98e2ca13cf7ce6d.js
+// Retrieved at 3/31/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2900,7 +2900,6 @@
 						apiContext: o
 					} = s;
 					const c = r();
-					if (!c.user.account) return;
 					n(Ht({
 						id: e
 					})), z.a(e, c);
@@ -2968,13 +2967,16 @@
 		},
 		"./src/reddit/actions/comment/websocket/constants.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return r
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return s
+			})), n.d(t, "a", (function() {
+				return o
 			}));
 			const r = "COMMENT__LIVECOMMENTS__NEWCOMMENT",
-				s = "COMMENT__LIVECOMMENTS__UPDATECOMMENT"
+				s = "COMMENT__LIVECOMMENTS__UPDATECOMMENT",
+				o = "COMMENT__LIVECOMMENTS_DELETECOMMENT"
 		},
 		"./src/reddit/actions/commentsListTruncated/constants.ts": function(e, t, n) {
 			"use strict";
@@ -34988,8 +34990,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : pe,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.a:
-					case ee.b: {
+					case ee.b:
+					case ee.c: {
 						const n = t.payload,
 							{
 								authorFlair: r
@@ -35298,7 +35300,7 @@
 					}
 					case Fe.b:
 					case Z.u:
-					case ee.a:
+					case ee.b:
 					case Be.b:
 					case Le.e:
 					case Me.b:
@@ -36714,8 +36716,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Lr,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.a:
 					case ee.b:
+					case ee.c:
 					case Z.F:
 					case Z.G: {
 						const {
@@ -36748,6 +36750,7 @@
 						}
 						return n
 					}
+					case ee.a:
 					case Z.y: {
 						const {
 							id: n
@@ -37135,8 +37138,8 @@
 								[r]: [...i]
 							})
 						}
-						case ee.a:
 						case ee.b:
+						case ee.c:
 						case Z.G:
 						case Z.F: {
 							const {
@@ -37239,7 +37242,7 @@
 							[s]: Object.assign({}, e[s], _s(n), _s(r), _s(o))
 						})
 					}
-					case ee.a:
+					case ee.b:
 					case Z.G: {
 						const {
 							comment: n,
@@ -37292,8 +37295,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ys,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case ee.a:
 					case ee.b:
+					case ee.c:
 					case Z.G: {
 						const {
 							comment: n,
@@ -45364,7 +45367,7 @@
 							[n]: Object(Nr.c)(s, r)
 						}) : e
 					}
-					case ee.a:
+					case ee.b:
 					case Z.G: {
 						const n = t.payload.comment.postId,
 							r = e[n];
@@ -62109,4 +62112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.55a3c76fea08b4fa8037.js.map
+//# sourceMappingURL=Governance~Reddit.29a0b98e2ca13cf7ce6d.js.map
