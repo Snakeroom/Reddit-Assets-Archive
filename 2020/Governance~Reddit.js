@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.88a955a8afad6e528ef5.js
-// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.55a3c76fea08b4fa8037.js
+// Retrieved at 3/31/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1751,15 +1751,15 @@
 		"./src/reddit/actions/chat/userSettings.ts": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/reddit/actions/toaster.ts"),
-				o = n("./src/config.ts"),
-				i = n("./src/lib/constants/index.ts"),
-				c = n("./src/lib/makeApiRequest/index.ts"),
-				a = n("./src/lib/omitHeaders/index.ts"),
-				d = n("./src/reddit/constants/headers.ts");
-			var u = n("./src/reddit/helpers/trackers/chat.ts"),
-				l = n("./src/reddit/i18n/utils.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/reddit/actions/toaster.ts"),
+				i = n("./src/config.ts"),
+				c = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/makeApiRequest/index.ts"),
+				d = n("./src/lib/omitHeaders/index.ts"),
+				u = n("./src/reddit/constants/headers.ts");
+			var l = n("./src/reddit/helpers/trackers/chat.ts"),
 				b = n("./src/reddit/models/Toast/index.ts"),
 				p = n("./src/telemetry/index.ts"),
 				f = n("./src/reddit/actions/chat/constants.ts");
@@ -1770,18 +1770,18 @@
 			})), n.d(t, "c", (function() {
 				return E
 			}));
-			const m = Object(r.a)("USER_SETTINGS__FETCH_PENDING"),
-				O = Object(r.a)("USER_SETTINGS__FETCH_FAILURE"),
+			const m = Object(s.a)("USER_SETTINGS__FETCH_PENDING"),
+				O = Object(s.a)("USER_SETTINGS__FETCH_FAILURE"),
 				g = "USER_SETTINGS__UPDATE_SUCCESS",
-				_ = Object(r.a)(g),
+				_ = Object(s.a)(g),
 				h = () => async (e, t, n) => {
 					let {
 						apiContext: r
 					} = n;
 					e(m());
-					const s = await (e => Object(c.b)(Object(a.a)(e, [d.a]), {
-						endpoint: "".concat(o.a.sendbirdServiceUrl, "/").concat("api/v1", "/chat/me/settings"),
-						method: i.cb.GET
+					const s = await (e => Object(a.b)(Object(d.a)(e, [u.a]), {
+						endpoint: "".concat(i.a.sendbirdServiceUrl, "/").concat("api/v1", "/chat/me/settings"),
+						method: c.cb.GET
 					}))(r());
 					if (s.ok) {
 						const t = Object.assign({}, s.body);
@@ -1789,10 +1789,10 @@
 							invitePolicy: f.a[t.invite_policy]
 						}))
 					} else e(O(s.error))
-				}, y = Object(r.a)("USER_SETTINGS__SAVE_PENDING"), j = Object(r.a)("USER_SETTINGS__SAVE_FAILURE"), E = e => async (t, n, r) => {
+				}, y = Object(s.a)("USER_SETTINGS__SAVE_PENDING"), j = Object(s.a)("USER_SETTINGS__SAVE_FAILURE"), E = e => async (t, n, s) => {
 					let {
 						apiContext: m
-					} = r;
+					} = s;
 					const O = n(),
 						{
 							invitePolicy: g
@@ -1800,20 +1800,22 @@
 						h = Object.keys(f.a).find(e => f.a[e] === g);
 					if (h) {
 						t(y());
-						const e = await (async (e, t) => Object(c.b)(Object(a.a)(t, [d.a]), {
-							endpoint: "".concat(o.a.sendbirdServiceUrl, "/").concat("api/v1", "/chat/me/settings"),
-							method: i.cb.PUT,
+						const e = await (async (e, t) => Object(a.b)(Object(d.a)(t, [u.a]), {
+							endpoint: "".concat(i.a.sendbirdServiceUrl, "/").concat("api/v1", "/chat/me/settings"),
+							method: c.cb.PUT,
 							data: JSON.stringify({
 								invite_policy: e
 							})
 						}))(h, m());
-						if (Object(p.a)(Object(u.f)(h)(O)), e.ok) {
+						if (Object(p.a)(Object(l.f)(h)(O)), e.ok) {
 							const e = f.a[h];
 							t(_({
 								invitePolicy: e
-							})), t(Object(s.e)({
+							})), t(Object(o.e)({
 								kind: b.b.SuccessCommunity,
-								text: Object(l.c)("Changes saved")
+								text: r.fbt._("Changes saved", null, {
+									hk: "4eTtdy"
+								})
 							}))
 						} else t(j(e.error))
 					}
@@ -62107,4 +62109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.88a955a8afad6e528ef5.js.map
+//# sourceMappingURL=Governance~Reddit.55a3c76fea08b4fa8037.js.map

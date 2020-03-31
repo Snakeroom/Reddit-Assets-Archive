@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ce51428c5035102ac187.js
-// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d424806cb21d6d36dfb3.js
+// Retrieved at 3/31/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -9116,18 +9116,20 @@
 			})), i.d(t, "a", (function() {
 				return h
 			}));
-			var n = i("./node_modules/lodash/isEmpty.js"),
-				r = i.n(n),
-				s = i("./src/chat/constants/container.ts"),
-				o = i("./src/chat/strings/index.ts");
-			const d = e => e.container.size === s.a.HIDDEN,
-				l = e => e.container.size === s.a.EMBED || e.container.size === s.a.FULL,
+			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
+				r = i("./node_modules/lodash/isEmpty.js"),
+				s = i.n(r),
+				o = i("./src/chat/constants/container.ts");
+			const d = e => e.container.size === o.a.HIDDEN,
+				l = e => e.container.size === o.a.EMBED || e.container.size === o.a.FULL,
 				a = e => !(!(e.user.account && e.sendbird.session.active && e.sendbird.sdk.initialized && e.channels.firstLoaded) || c(e)),
 				u = e => window.parent !== window || !!(e && e.meta && e.meta.isRedesign),
 				c = e => {
-					if (!e.user.account) return Object(o.a)("en", "app.error.signIn")
+					if (!e.user.account) return n.fbt._("Sign in, please.", null, {
+						hk: "3cGIp8"
+					})
 				},
-				h = e => !r()(e.user.experiments)
+				h = e => !s()(e.user.experiments)
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
@@ -9484,530 +9486,6 @@
 				o = e => e.user.session,
 				d = e => !!e.user.account && e.user.account.seenSubredditChatFtux,
 				l = e => e.user.account
-		},
-		"./src/chat/strings/index.ts": function(e, t, i) {
-			"use strict";
-			var n = i("./node_modules/lodash/get.js"),
-				r = i.n(n),
-				s = {
-					app: {
-						layout: {
-							header: {
-								title: {
-									en: "Chats"
-								},
-								newChat: {
-									en: "Start a new chat"
-								},
-								popout: {
-									en: "Open chat in new window"
-								},
-								close: {
-									en: "Close chat"
-								},
-								menu: {
-									en: "Menu"
-								},
-								minimize: {
-									en: "Minimize chat"
-								}
-							},
-							contactList: {
-								en: "Contact List"
-							},
-							currentConversation: {
-								en: "Current Conversation"
-							}
-						},
-						chat: {
-							firstTimeUserExp: {
-								label: {
-									en: "New Feature"
-								},
-								title: {
-									en: "Community Chat Rooms"
-								},
-								body: {
-									en: "Some subreddits now have chat rooms. You've got early access - find\n          topics you're interested in and join the conversation!"
-								},
-								button: {
-									en: "Got it"
-								}
-							},
-							list: {
-								new: {
-									en: "Wants to message you"
-								},
-								showMore: {
-									en: "Show more"
-								},
-								collapse: {
-									en: "Collapse"
-								},
-								prefix: {
-									messageOwner: {
-										en: "You:"
-									},
-									sentSnoomoji: {
-										en: "Sent a Snoomoji"
-									},
-									sentPostLink: {
-										en: "Shared a post"
-									},
-									sentTextLink: {
-										en: "Shared a link"
-									}
-								}
-							},
-							ban: {
-								removeAllMessages: {
-									en: "Remove all messages"
-								}
-							},
-							channels: {
-								addGroupMembers: {
-									en: "You can add %0 more Redditors"
-								},
-								addToGroup: {
-									en: "Add to group"
-								},
-								addToRoom: {
-									en: "Add to room"
-								},
-								chats: {
-									en: "Chats"
-								},
-								createGroup: {
-									en: "Create Group"
-								},
-								groupName: {
-									en: "Group name (required)"
-								},
-								groupMembers: {
-									en: "group members"
-								},
-								maxGroupSize: {
-									en: "Maximum group size reached"
-								},
-								loading: {
-									en: "Loading channels..."
-								},
-								requests: {
-									en: "Requests"
-								},
-								renameGroup: {
-									en: "Rename group"
-								},
-								rooms: {
-									en: "Please check back for rooms soon!"
-								}
-							},
-							privateChannel: {
-								title: {
-									en: "is a private community"
-								},
-								description: {
-									en: "The moderators in this\n          community have set it to private. You must be a\n          moderator or approved user to join this room."
-								}
-							},
-							contactList: {
-								to: {
-									en: "To:"
-								},
-								invalidUser: {
-									en: "User doesn't exist"
-								},
-								potentialsHeader: {
-									en: "Click to add"
-								},
-								existingGroupContact: {
-									en: "already in group"
-								},
-								existingRoomContact: {
-									en: "already in room"
-								},
-								blockedContact: {
-									en: "blocked"
-								}
-							},
-							inviteConfirmation: {
-								basicTitle: {
-									en: "Invite users to chat"
-								},
-								roomTitle: {
-									en: "Invite users to room"
-								},
-								basicDetails: {
-									en: "Invited users will have access to the\n          chat history of this conversation."
-								},
-								roomDetails: {
-									en: "Invited users will have access to the chat room."
-								}
-							},
-							lock: {
-								lockerText: {
-									en: "This chat has been locked."
-								}
-							},
-							message: {
-								placeholder: {
-									en: "Enter text here…"
-								},
-								failedToSend: {
-									en: "Failed to send"
-								},
-								dropdown: {
-									options: {
-										addToGroup: {
-											en: "Add to group"
-										},
-										addToRoom: {
-											en: "Add to Room"
-										},
-										profile: {
-											en: "View Profile"
-										},
-										block: {
-											en: "Block"
-										},
-										members: {
-											en: "View members"
-										},
-										leave: {
-											en: "Leave group"
-										},
-										leaveRoom: {
-											en: "Leave room"
-										},
-										lockRoom: {
-											en: "Lock room"
-										},
-										unlockRoom: {
-											en: "Unlock room"
-										},
-										renameGroup: {
-											en: "Rename group"
-										},
-										copyLink: {
-											en: "Copy link"
-										},
-										muteChannel: {
-											en: "Disable notification badging"
-										},
-										unmuteChannel: {
-											en: "Enable notification badging"
-										}
-									}
-								},
-								pickers: {
-									snoomoji: {
-										en: "Choose Snoomoji"
-									},
-									snoomojiLoading: {
-										en: "Loading snoomoji..."
-									},
-									userlistLoading: {
-										en: "Loading members..."
-									},
-									memberNotFound: {
-										en: "Member not found!"
-									}
-								},
-								timeStamp: {
-									now: {
-										en: "Now"
-									},
-									today: {
-										en: "Today"
-									},
-									yesterday: {
-										en: "Yesterday"
-									}
-								}
-							},
-							messageList: {
-								members: {
-									en: "Members"
-								}
-							},
-							request: {
-								karma: {
-									en: "karma"
-								},
-								header: {
-									en: "Chat Request"
-								},
-								decline: {
-									title: {
-										en: "Decline invite?"
-									},
-									details: {
-										en: "This chat will be deleted, and this person will not be notified\n            that you've declined their request."
-									}
-								},
-								groupHeader: {
-									en: "Group invite"
-								},
-								redditor: {
-									en: "redditor for"
-								},
-								details: {
-									en: "Accept their request if you'd like to continue the\n          conversation. We won't notify them if you decline."
-								},
-								blocked: {
-									warning: {
-										en: "Heads up: you previously blocked\n            at least one person in this group."
-									},
-									details: {
-										en: "If you join, you'll be able to see any\n            messages they send. They'll remain blocked\n            on the rest of Reddit."
-									},
-									label: {
-										en: "Blocked"
-									}
-								},
-								nsfw: {
-									en: "NSFW"
-								},
-								preview: {
-									en: "Preview of this chat"
-								},
-								defaultTitle: {
-									en: "group"
-								}
-							},
-							members: {
-								dropdown: {
-									options: {
-										ban: {
-											en: "Ban"
-										},
-										block: {
-											en: "Block"
-										},
-										kick: {
-											en: "Kick"
-										},
-										report: {
-											en: "Report"
-										}
-									}
-								},
-								loading: {
-									en: "Loading members..."
-								}
-							},
-							typingIndicator: {
-								oneUser: {
-									en: "<%= user %> is typing..."
-								},
-								twoUsers: {
-									en: "<%= firstUser %> and <%= secondUser %> are typing..."
-								},
-								severalUsers: {
-									en: "Several people are typing..."
-								},
-								directChannelUser: {
-									en: "is typing..."
-								}
-							},
-							report: {
-								blockUser: {
-									en: "Block this user"
-								},
-								loading: {
-									en: "Loading reasons..."
-								},
-								spamItem: {
-									en: "It's spam or abuse"
-								},
-								selectRulePlaceholder: {
-									en: "Select a rule"
-								},
-								reasonHeader: {
-									en: "We're sorry something's wrong. How can we help?"
-								},
-								blockFlow: {
-									header: {
-										en: "Thanks for letting us know!"
-									},
-									description: {
-										en: "We've received your report. Here are some things you can do:"
-									},
-									block: {
-										en: "Block u/<%= username %>"
-									},
-									blocked: {
-										en: "u/<%= username %> is blocked"
-									},
-									pending: {
-										en: "Pending..."
-									},
-									warning: {
-										en: "You won't see posts or comments from u/<%= username %>. You can change this later in your preference."
-									}
-								},
-								reasons: {
-									threats: {
-										en: "Threatens, harrasses, or bullies"
-									},
-									violence: {
-										en: "It threatens violence or physical harm"
-									},
-									personal: {
-										en: "It's personal and confidential information"
-									},
-									impersonation: {
-										en: "Impersonation"
-									},
-									minorSexualization: {
-										en: "It's sexual or suggestive content involving minors"
-									}
-								},
-								title: {
-									en: "Reason for report"
-								}
-							},
-							kick: {
-								durationHeader: {
-									en: "Kick Duration"
-								}
-							},
-							intro: {
-								en: "This is the start of a beautiful thing. Say something nice, or share a cat fact."
-							},
-							user: {
-								snoovatar: {
-									en: "Snoovatar"
-								}
-							},
-							subredditChannel: {
-								joinedRooms: {
-									en: "Joined Rooms"
-								},
-								blankState: {
-									en: "Community chatrooms that you join will show up here."
-								},
-								recommendedHeader: {
-									title: {
-										en: "Recommended Rooms"
-									},
-									subText: {
-										en: "Also check out"
-									}
-								},
-								inviteHeader: {
-									en: "Invites"
-								},
-								members: {
-									en: "Members"
-								},
-								joinHeader: {
-									en: "Room Details"
-								},
-								removedUserExperience: {
-									default: {
-										title: {
-											en: "Removed"
-										},
-										header: {
-											en: "You have been removed from this room."
-										},
-										description: {
-											en: "You have been removed from this room."
-										}
-									},
-									banned: {
-										title: {
-											en: "Banned"
-										},
-										header: {
-											en: "You are banned from this room."
-										},
-										description: {
-											en: "You are banned from this room and may not join until you are unbanned."
-										}
-									},
-									kicked: {
-										title: {
-											en: "Kicked"
-										},
-										header: {
-											en: "You are temporarily kicked from this room."
-										},
-										description: {
-											en: "You are temporarily kicked from this room and may not join until you are no longer kicked."
-										}
-									}
-								}
-							},
-							toast: {
-								connectionClosed: {
-									en: "Hmm, no internet?"
-								},
-								connectionPending: {
-									en: "Looking for the internet..."
-								},
-								connectionOpen: {
-									en: "Found the internet!"
-								}
-							}
-						},
-						button: {
-							accept: {
-								en: "Accept"
-							},
-							block: {
-								en: "Block"
-							},
-							cancel: {
-								en: "Cancel"
-							},
-							close: {
-								en: "Close"
-							},
-							directs: {
-								en: "Directs"
-							},
-							done: {
-								en: "Done"
-							},
-							init: {
-								en: "Start a chat"
-							},
-							lock: {
-								en: "Lock"
-							},
-							resend: {
-								en: "Resend"
-							},
-							rooms: {
-								en: "Rooms"
-							},
-							submit: {
-								en: "Submit"
-							},
-							save: {
-								en: "Save"
-							}
-						},
-						error: {
-							genericPage: {
-								en: "Sorry, something went wrong."
-							},
-							signIn: {
-								en: "Sign in, please."
-							}
-						}
-					}
-				};
-
-			function o(e, t) {
-				const i = [t, e].join(".");
-				return r()(s, i, "")
-			}
-			i.d(t, "a", (function() {
-				return o
-			}))
 		},
 		"./src/config.ts": function(e, t, i) {
 			"use strict";
@@ -11522,14 +11000,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("b478bab-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("4a20729-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b478bab-production",
+						release: "4a20729-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(O.d)(), new s.Integrations.Breadcrumbs({
@@ -11832,7 +11310,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "b478bab-production",
+							releaseClient: "4a20729-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17667,4 +17145,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.ce51428c5035102ac187.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d424806cb21d6d36dfb3.js.map
