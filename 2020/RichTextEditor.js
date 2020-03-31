@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6d6b850cb8f2a0f1da7a.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.25d00fac45895dd33cfa.js
+// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -411,13 +411,13 @@
 				S = n.n(R);
 			const B = k.a.wrapped(f.a, "LoadingIcon", S.a),
 				F = k.a.div("Wrapper", S.a),
-				I = k.a.wrapped(M, "MarkdownModeIcon", S.a),
-				P = k.a.wrapped(T.a, "Button", S.a);
+				P = k.a.wrapped(M, "MarkdownModeIcon", S.a),
+				I = k.a.wrapped(T.a, "Button", S.a);
 			var A = e => {
 					const t = o.fbt._("Switch to fancy pants editor", null, {
 						hk: "1XOb4H"
 					});
-					return r.a.createElement(F, null, r.a.createElement(P, {
+					return r.a.createElement(F, null, r.a.createElement(I, {
 						"aria-label": t,
 						setRef: e.buttonRef,
 						className: e.className,
@@ -426,7 +426,7 @@
 						sizePx: 12
 					}), r.a.createElement(j.a, {
 						text: t
-					}), !e.isConverting && r.a.createElement(I, null)))
+					}), !e.isConverting && r.a.createElement(P, null)))
 				},
 				W = n("./src/lib/classNames/index.ts"),
 				H = n("./src/reddit/constants/keycodes.ts"),
@@ -608,7 +608,7 @@
 						text: S,
 						breakOut: B,
 						wrapperHeight: F
-					} = this.state, I = Object(D.a)(f), P = d.draftType === Z.c.edit;
+					} = this.state, P = Object(D.a)(f), I = d.draftType === Z.c.edit;
 					return r.a.createElement(ie, {
 						"data-test-id": L.b,
 						className: Object(W.a)(s, {
@@ -630,7 +630,7 @@
 					}))), r.a.createElement(g.a, {
 						breakOut: B,
 						depth: i,
-						isEditing: P
+						isEditing: I
 					}, r.a.createElement(de, {
 						className: Object(W.a)({
 							[J.a.pending]: w,
@@ -668,7 +668,7 @@
 						sizePx: 12
 					})))), r.a.createElement(se, {
 						onClick: this.props.helpModalToggled
-					})))), R && Object(b.c)(E), e === I && r.a.createElement(p.a, {
+					})))), R && Object(b.c)(E), e === P && r.a.createElement(p.a, {
 						actionText: o.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
@@ -923,7 +923,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var I = function(e, t) {
+			var P = function(e, t) {
 					var n = {};
 					for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (n[o] = e[o]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -932,13 +932,13 @@
 					}
 					return n
 				},
-				P = e => {
+				I = e => {
 					const {
 						className: t,
 						children: n,
 						text: o,
 						textWrapperClassName: s
-					} = e, r = I(e, ["className", "children", "text", "textWrapperClassName"]);
+					} = e, r = P(e, ["className", "children", "text", "textWrapperClassName"]);
 					return a.a.createElement("div", F({
 						className: Object(y.a)(B.a.helpfulTooltip, t)
 					}, r), o ? a.a.createElement("div", {
@@ -963,7 +963,7 @@
 						shouldShowFtuMessage: t,
 						textWrapperClassName: n
 					} = this.props;
-					return t && a.a.createElement(P, {
+					return t && a.a.createElement(I, {
 						onClick: e,
 						text: this.props.text,
 						textWrapperClassName: n
@@ -1200,16 +1200,16 @@
 				Se = n("./src/reddit/selectors/comments.ts"),
 				Be = n("./src/reddit/selectors/user.ts"),
 				Fe = n("./src/reddit/components/CommentCreation/RichtextCommentForm/index.m.less"),
-				Ie = n.n(Fe);
-			const Pe = 16,
-				Ae = u.a.div("FormWrapper", Ie.a),
-				We = u.a.div("CommentHeader", Ie.a),
-				He = u.a.wrapped(ge.a, "FormFooter", Ie.a),
-				De = u.a.div("MarkdownButtonWrapper", Ie.a),
-				Ne = u.a.wrapped(pe.a, "MarkdownButton", Ie.a),
-				Le = u.a.wrapped(me, "SectionSpacer", Ie.a),
-				ze = u.a.div("ToolbarWrapper", Ie.a),
-				qe = u.a.span("FormHeaderText", Ie.a),
+				Pe = n.n(Fe);
+			const Ie = 16,
+				Ae = u.a.div("FormWrapper", Pe.a),
+				We = u.a.div("CommentHeader", Pe.a),
+				He = u.a.wrapped(ge.a, "FormFooter", Pe.a),
+				De = u.a.div("MarkdownButtonWrapper", Pe.a),
+				Ne = u.a.wrapped(pe.a, "MarkdownButton", Pe.a),
+				Le = u.a.wrapped(me, "SectionSpacer", Pe.a),
+				ze = u.a.div("ToolbarWrapper", Pe.a),
+				qe = u.a.span("FormHeaderText", Pe.a),
 				Ue = e => {
 					let {
 						cancelButtonEnabled: t,
@@ -1234,7 +1234,7 @@
 							submitButtonText: i,
 							canSubmit: p
 						}, a.a.createElement(ze, null, a.a.createElement(ue, e), a.a.createElement(Le, null), a.a.createElement(De, null, a.a.createElement(W, {
-							textWrapperClassName: Ie.a.tooltipTextWrapper,
+							textWrapperClassName: Pe.a.tooltipTextWrapper,
 							onClick: c,
 							shouldShowFtuMessage: !!m,
 							text: w.fbt._("Don't dig the Fancy Pants Editor? Switch to markdown anytime", null, {
@@ -1367,7 +1367,7 @@
 				}
 				getWrapperHeight() {
 					if (!this.editorDomElement) return;
-					return this.editorDomElement.getBoundingClientRect().height + Pe
+					return this.editorDomElement.getBoundingClientRect().height + Ie
 				}
 				render() {
 					const {
@@ -1395,7 +1395,7 @@
 					} = this.state, O = Object(Ce.a)(i), _ = r.draftType === we.c.edit, j = d !== we.c.replyToPost;
 					return a.a.createElement(Ae, {
 						className: Object(y.a)(n, {
-							[Ie.a.isTopLevelComment]: b
+							[Pe.a.isTopLevelComment]: b
 						}),
 						ref: this.setEditorWrapperRef,
 						style: {
@@ -1570,40 +1570,44 @@
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton.tsx": function(e, t, n) {
 			"use strict";
-			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/lib/classNames/index.ts"),
-				d = n("./src/reddit/actions/modal.ts"),
-				c = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = n("./src/reddit/constants/modals.ts"),
-				m = n("./src/reddit/controls/Button/index.tsx"),
-				u = n("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
-				p = n("./src/reddit/i18n/utils.ts"),
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/actions/modal.ts"),
+				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = n("./src/reddit/constants/modals.ts"),
+				u = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
 				h = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				b = n("./src/reddit/selectors/subreddit.ts"),
 				f = n("./src/reddit/components/ContributorRequestFlow/index.m.less"),
 				x = n.n(f);
-			const g = Object(a.c)({
+			const g = Object(i.c)({
 				restrictions: b.o
 			});
-			class C extends s.a.Component {
+			class C extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onRequest = () => {
-						this.props.sendEvent(Object(u.a)(this.props.eventSource)), this.props.openContributorRequestModal()
+						this.props.sendEvent(Object(p.a)(this.props.eventSource)), this.props.openContributorRequestModal()
 					}
 				}
 				render() {
-					return s.a.createElement(m.f, {
-						className: Object(i.a)(this.props.smallButton ? null : x.a.RequestButton, this.props.className),
+					return r.a.createElement(u.f, {
+						className: Object(d.a)(this.props.smallButton ? null : x.a.RequestButton, this.props.className),
 						onClick: this.onRequest
-					}, this.props.eventSource === h.b.Comment ? Object(p.c)("Request to comment") : Object(p.c)("Request to post"))
+					}, this.props.eventSource === h.b.Comment ? o.fbt._("Request to comment", null, {
+						hk: "3KqraC"
+					}) : o.fbt._("Request to post", null, {
+						hk: "3rSHPr"
+					}))
 				}
 			}
-			t.a = Object(r.b)(g, e => ({
-				openContributorRequestModal: () => e(Object(d.i)(l.a.CONTRIBUTOR_REQUEST))
-			}))(Object(c.c)(C))
+			t.a = Object(a.b)(g, e => ({
+				openContributorRequestModal: () => e(Object(c.i)(m.a.CONTRIBUTOR_REQUEST))
+			}))(Object(l.c)(C))
 		},
 		"./src/reddit/components/ContributorRequestFlow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2023,15 +2027,15 @@
 				S = n("./src/reddit/selectors/user.ts"),
 				B = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				I = n("./src/reddit/components/PostEditForm/index.m.less"),
-				P = n.n(I),
+				P = n("./src/reddit/components/PostEditForm/index.m.less"),
+				I = n.n(P),
 				A = n("./src/lib/lessComponent.tsx");
 			const W = Object(m.d)("postCreation.rtfPlaceholderOptional"),
 				H = Object(m.d)("postCreation.rtfPlaceholderRequired"),
-				D = A.a.div("BottomRow", P.a),
-				N = A.a.div("FormContent", P.a),
-				L = A.a.wrapped(B.f, "SubmitButton", P.a),
-				z = A.a.wrapped(F.a, "LoadingIcon", P.a),
+				D = A.a.div("BottomRow", I.a),
+				N = A.a.div("FormContent", I.a),
+				L = A.a.wrapped(B.f, "SubmitButton", I.a),
+				z = A.a.wrapped(F.a, "LoadingIcon", I.a),
 				q = Object(T.t)(),
 				U = Object(l.c)({
 					destSubreddit: f.g,
@@ -2167,8 +2171,8 @@
 					const k = !M.a.isAllMediaUploaded(g, l);
 					return a.a.createElement(N, null, n === h.h.RICH_TEXT ? a.a.createElement(_.a, {
 						allowMediaUploads: !0,
-						className: Object(u.a)(P.a.Editor, {
-							[P.a.isPending]: !!t
+						className: Object(u.a)(I.a.Editor, {
+							[I.a.isPending]: !!t
 						}),
 						destSubreddit: this.props.destSubreddit,
 						editorType: R.a.Post,
@@ -2202,7 +2206,7 @@
 					}, t ? a.a.createElement(z, {
 						sizePx: 10
 					}) : Object(m.a)(e, "posts.save"))), a.a.createElement(j.a, {
-						className: P.a.errorMessages,
+						className: I.a.errorMessages,
 						messages: v
 					}), a.a.createElement(C.a, {
 						editKey: i.id,
@@ -2745,4 +2749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.6d6b850cb8f2a0f1da7a.js.map
+//# sourceMappingURL=RichTextEditor.25d00fac45895dd33cfa.js.map

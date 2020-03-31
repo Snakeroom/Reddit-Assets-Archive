@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.6fbb047a116448574b45.js
-// Retrieved at 3/31/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.934a57fe46a46abb938b.js
+// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -1058,14 +1058,15 @@
 				u = s("./src/reddit/i18n/utils.ts"),
 				m = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				p = s("./src/reddit/components/FlairSearch/FlairEdit/helper.tsx"),
-				b = s("./src/reddit/components/Flair/index.tsx"),
-				h = s("./src/reddit/controls/RadioInput/index.tsx"),
-				f = s("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				x = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				g = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				v = s("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
-				y = s.n(v),
-				j = class extends r.a.Component {
+				b = s("./node_modules/fbt/lib/FbtPublic.js"),
+				h = s("./src/reddit/components/Flair/index.tsx"),
+				f = s("./src/reddit/controls/RadioInput/index.tsx"),
+				x = s("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				g = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				v = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				y = s("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
+				j = s.n(y),
+				O = class extends r.a.Component {
 					constructor() {
 						super(...arguments), this.state = {
 							searchQuery: ""
@@ -1084,50 +1085,52 @@
 							searchQuery: n
 						} = this.state, i = t.map(t => e[t]).filter(e => e.text.toLowerCase().includes(n)), o = !!s && i.some(e => e.id === s);
 						return r.a.createElement("div", {
-							className: y.a.container
+							className: j.a.container
 						}, r.a.createElement("div", {
-							className: y.a.searchBoxWrapper
+							className: j.a.searchBoxWrapper
 						}, r.a.createElement("input", {
-							className: y.a.searchInput,
+							className: j.a.searchInput,
 							onChange: this.onSearchChange,
 							type: "text",
-							placeholder: Object(u.c)("Search for flair"),
+							placeholder: b.fbt._("Search for flair", null, {
+								hk: "jQdqA"
+							}),
 							value: n
-						}), r.a.createElement(g.a, {
-							className: y.a.searchIcon
-						})), r.a.createElement(h.a, {
+						}), r.a.createElement(v.a, {
+							className: j.a.searchIcon
+						})), r.a.createElement(f.a, {
 							name: "flair_picker",
 							onChange: this.props.onChange,
 							value: s
 						}, i.map((e, t) => {
 							const n = Object(d.c)(e),
 								i = s === e.id || !o && 0 === t;
-							return r.a.createElement(f.a, {
-								className: y.a.radioOption,
+							return r.a.createElement(x.a, {
+								className: j.a.radioOption,
 								key: e.id,
 								showButton: !0,
 								tabIndex: i ? 0 : -1,
 								value: e.id
-							}, r.a.createElement(b.b, {
-								className: y.a.flairComponent,
+							}, r.a.createElement(h.b, {
+								className: j.a.flairComponent,
 								flair: n,
 								forceSmallEmojis: !0
-							}), e.textEditable && r.a.createElement(x.a, {
-								className: y.a.pencil
+							}), e.textEditable && r.a.createElement(g.a, {
+								className: j.a.pencil
 							}))
 						})))
 					}
 				},
-				O = s("./src/reddit/components/FlairSearch/index.m.less"),
-				C = s.n(O);
-			const w = "FlairSearch-EmojiPicker-DropdownId",
-				E = Object(c.a)(e => e && Object(d.c)(e)),
-				S = Object(o.c)({
+				C = s("./src/reddit/components/FlairSearch/index.m.less"),
+				w = s.n(C);
+			const E = "FlairSearch-EmojiPicker-DropdownId",
+				S = Object(c.a)(e => e && Object(d.c)(e)),
+				k = Object(o.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
 					isModerator: m.d
 				}),
-				k = Object(i.b)(S);
-			class N extends r.a.Component {
+				N = Object(i.b)(k);
+			class _ extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onFlairEdit = e => {
 						const {
@@ -1158,24 +1161,24 @@
 						templates: s,
 						templateIds: n,
 						subredditId: i
-					} = e, o = s && e.flair && e.flair.templateId && s[e.flair.templateId] || void 0, c = Object(p.a)(), l = e.flair || E(o);
+					} = e, o = s && e.flair && e.flair.templateId && s[e.flair.templateId] || void 0, c = Object(p.a)(), l = e.flair || S(o);
 					return r.a.createElement("div", {
-						className: Object(a.a)(e.className, C.a.container)
-					}, s && n && r.a.createElement(j, {
+						className: Object(a.a)(e.className, w.a.container)
+					}, s && n && r.a.createElement(O, {
 						flairTemplateType: e.flairTemplateType,
 						onChange: this.onTemplateSelected,
 						selectedTemplateId: o ? o.id : "",
 						templateIds: n,
 						templates: s
 					}), l && o && (t || o.textEditable) ? r.a.createElement("div", {
-						className: C.a.flairEditSection
+						className: w.a.flairEditSection
 					}, r.a.createElement("div", {
-						className: C.a.editLabel
+						className: w.a.editLabel
 					}, Object(u.c)("Edit flair")), e.areFlairRestrictionsEnabled && r.a.createElement("div", {
-						className: C.a.restrictionHintText
+						className: w.a.restrictionHintText
 					}, Object(d.k)(o)), r.a.createElement(c, {
 						autofocus: !0,
-						emojiPickerId: w,
+						emojiPickerId: E,
 						flair: l,
 						flairTemplate: o,
 						flairTemplateType: e.flairTemplateType,
@@ -1185,7 +1188,7 @@
 					})) : null)
 				}
 			}
-			t.a = k(N)
+			t.a = N(_)
 		},
 		"./src/reddit/components/FlairWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3634,4 +3637,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.6fbb047a116448574b45.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.934a57fe46a46abb938b.js.map

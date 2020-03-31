@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cbf84267fbbfa2792075.js
-// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a9244ec4d15c906eb783.js
+// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -3767,40 +3767,44 @@
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/actions/modal.ts"),
-				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				d = n("./src/reddit/constants/modals.ts"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
-				m = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				i = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/lib/classNames/index.ts"),
+				l = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = n("./src/reddit/constants/modals.ts"),
+				p = n("./src/reddit/controls/Button/index.tsx"),
+				m = n("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
 				h = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				b = n("./src/reddit/selectors/subreddit.ts"),
 				f = n("./src/reddit/components/ContributorRequestFlow/index.m.less"),
 				g = n.n(f);
-			const x = Object(i.c)({
+			const x = Object(a.c)({
 				restrictions: b.o
 			});
-			class y extends o.a.Component {
+			class y extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onRequest = () => {
-						this.props.sendEvent(Object(p.a)(this.props.eventSource)), this.props.openContributorRequestModal()
+						this.props.sendEvent(Object(m.a)(this.props.eventSource)), this.props.openContributorRequestModal()
 					}
 				}
 				render() {
-					return o.a.createElement(u.f, {
-						className: Object(a.a)(this.props.smallButton ? null : g.a.RequestButton, this.props.className),
+					return r.a.createElement(p.f, {
+						className: Object(c.a)(this.props.smallButton ? null : g.a.RequestButton, this.props.className),
 						onClick: this.onRequest
-					}, this.props.eventSource === h.b.Comment ? Object(m.c)("Request to comment") : Object(m.c)("Request to post"))
+					}, this.props.eventSource === h.b.Comment ? s.fbt._("Request to comment", null, {
+						hk: "3KqraC"
+					}) : s.fbt._("Request to post", null, {
+						hk: "3rSHPr"
+					}))
 				}
 			}
-			t.a = Object(r.b)(x, e => ({
-				openContributorRequestModal: () => e(Object(c.i)(d.a.CONTRIBUTOR_REQUEST))
-			}))(Object(l.c)(y))
+			t.a = Object(i.b)(x, e => ({
+				openContributorRequestModal: () => e(Object(l.i)(u.a.CONTRIBUTOR_REQUEST))
+			}))(Object(d.c)(y))
 		},
 		"./src/reddit/components/ContributorRequestFlow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4655,14 +4659,15 @@
 				u = n("./src/reddit/i18n/utils.ts"),
 				p = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				m = n("./src/reddit/components/FlairSearch/FlairEdit/helper.tsx"),
-				h = n("./src/reddit/components/Flair/index.tsx"),
-				b = n("./src/reddit/controls/RadioInput/index.tsx"),
-				f = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				g = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				x = n("./src/reddit/icons/svgs/Search/index.tsx"),
-				y = n("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
-				C = n.n(y),
-				v = class extends o.a.Component {
+				h = n("./node_modules/fbt/lib/FbtPublic.js"),
+				b = n("./src/reddit/components/Flair/index.tsx"),
+				f = n("./src/reddit/controls/RadioInput/index.tsx"),
+				g = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				x = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				y = n("./src/reddit/icons/svgs/Search/index.tsx"),
+				C = n("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
+				v = n.n(C),
+				E = class extends o.a.Component {
 					constructor() {
 						super(...arguments), this.state = {
 							searchQuery: ""
@@ -4681,50 +4686,52 @@
 							searchQuery: s
 						} = this.state, r = t.map(t => e[t]).filter(e => e.text.toLowerCase().includes(s)), i = !!n && r.some(e => e.id === n);
 						return o.a.createElement("div", {
-							className: C.a.container
+							className: v.a.container
 						}, o.a.createElement("div", {
-							className: C.a.searchBoxWrapper
+							className: v.a.searchBoxWrapper
 						}, o.a.createElement("input", {
-							className: C.a.searchInput,
+							className: v.a.searchInput,
 							onChange: this.onSearchChange,
 							type: "text",
-							placeholder: Object(u.c)("Search for flair"),
+							placeholder: h.fbt._("Search for flair", null, {
+								hk: "jQdqA"
+							}),
 							value: s
-						}), o.a.createElement(x.a, {
-							className: C.a.searchIcon
-						})), o.a.createElement(b.a, {
+						}), o.a.createElement(y.a, {
+							className: v.a.searchIcon
+						})), o.a.createElement(f.a, {
 							name: "flair_picker",
 							onChange: this.props.onChange,
 							value: n
 						}, r.map((e, t) => {
 							const s = Object(d.c)(e),
 								r = n === e.id || !i && 0 === t;
-							return o.a.createElement(f.a, {
-								className: C.a.radioOption,
+							return o.a.createElement(g.a, {
+								className: v.a.radioOption,
 								key: e.id,
 								showButton: !0,
 								tabIndex: r ? 0 : -1,
 								value: e.id
-							}, o.a.createElement(h.b, {
-								className: C.a.flairComponent,
+							}, o.a.createElement(b.b, {
+								className: v.a.flairComponent,
 								flair: s,
 								forceSmallEmojis: !0
-							}), e.textEditable && o.a.createElement(g.a, {
-								className: C.a.pencil
+							}), e.textEditable && o.a.createElement(x.a, {
+								className: v.a.pencil
 							}))
 						})))
 					}
 				},
-				E = n("./src/reddit/components/FlairSearch/index.m.less"),
-				O = n.n(E);
-			const j = "FlairSearch-EmojiPicker-DropdownId",
-				S = Object(c.a)(e => e && Object(d.c)(e)),
-				w = Object(i.c)({
+				O = n("./src/reddit/components/FlairSearch/index.m.less"),
+				j = n.n(O);
+			const S = "FlairSearch-EmojiPicker-DropdownId",
+				w = Object(c.a)(e => e && Object(d.c)(e)),
+				k = Object(i.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
 					isModerator: p.d
 				}),
-				k = Object(r.b)(w);
-			class T extends o.a.Component {
+				T = Object(r.b)(k);
+			class _ extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onFlairEdit = e => {
 						const {
@@ -4755,24 +4762,24 @@
 						templates: n,
 						templateIds: s,
 						subredditId: r
-					} = e, i = n && e.flair && e.flair.templateId && n[e.flair.templateId] || void 0, c = Object(m.a)(), l = e.flair || S(i);
+					} = e, i = n && e.flair && e.flair.templateId && n[e.flair.templateId] || void 0, c = Object(m.a)(), l = e.flair || w(i);
 					return o.a.createElement("div", {
-						className: Object(a.a)(e.className, O.a.container)
-					}, n && s && o.a.createElement(v, {
+						className: Object(a.a)(e.className, j.a.container)
+					}, n && s && o.a.createElement(E, {
 						flairTemplateType: e.flairTemplateType,
 						onChange: this.onTemplateSelected,
 						selectedTemplateId: i ? i.id : "",
 						templateIds: s,
 						templates: n
 					}), l && i && (t || i.textEditable) ? o.a.createElement("div", {
-						className: O.a.flairEditSection
+						className: j.a.flairEditSection
 					}, o.a.createElement("div", {
-						className: O.a.editLabel
+						className: j.a.editLabel
 					}, Object(u.c)("Edit flair")), e.areFlairRestrictionsEnabled && o.a.createElement("div", {
-						className: O.a.restrictionHintText
+						className: j.a.restrictionHintText
 					}, Object(d.k)(i)), o.a.createElement(c, {
 						autofocus: !0,
-						emojiPickerId: j,
+						emojiPickerId: S,
 						flair: l,
 						flairTemplate: i,
 						flairTemplateType: e.flairTemplateType,
@@ -4782,7 +4789,7 @@
 					})) : null)
 				}
 			}
-			t.a = k(T)
+			t.a = T(_)
 		},
 		"./src/reddit/components/FlairWrapper/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -30573,4 +30580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.cbf84267fbbfa2792075.js.map
+//# sourceMappingURL=PostCreation.a9244ec4d15c906eb783.js.map

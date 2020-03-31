@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9cc14457fd32255f5f20.js
-// Retrieved at 3/31/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c5aaaa9548b2d6551231.js
+// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -26140,16 +26140,16 @@
 				return N
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
-			var r = n("./node_modules/lodash/isEqual.js"),
-				s = n.n(r),
-				o = n("./src/lib/addQueryParams/index.ts"),
-				i = n("./src/lib/formatEmojiName/index.ts"),
-				c = n("./src/reddit/constants/colors.ts"),
-				a = n("./src/reddit/constants/flair.ts"),
-				d = n("./src/reddit/i18n/utils.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
+				s = n("./node_modules/lodash/isEqual.js"),
+				o = n.n(s),
+				i = n("./src/lib/addQueryParams/index.ts"),
+				c = n("./src/lib/formatEmojiName/index.ts"),
+				a = n("./src/reddit/constants/colors.ts"),
+				d = n("./src/reddit/constants/flair.ts"),
 				u = n("./src/reddit/models/Flair/index.ts");
 			const l = e => e === u.f.Text || e === u.f.Richtext || e === u.f.Image || e === u.f.Meta,
-				b = e => e.e === u.c.Emoji ? Object(i.b)(e.a) : e.t,
+				b = e => e.e === u.c.Emoji ? Object(c.b)(e.a) : e.t,
 				p = e => e.type === u.f.Richtext ? e.richtext.map(b).join("") : e.text || "",
 				f = e => p(e).length,
 				m = (e, t) => p(e) === p(t),
@@ -26190,7 +26190,7 @@
 				},
 				S = () => {
 					return {
-						backgroundColor: c.a.defaultFlair,
+						backgroundColor: a.a.defaultFlair,
 						text: "",
 						textColor: u.e.Dark,
 						type: u.f.Text
@@ -26202,9 +26202,9 @@
 					} = e;
 					if ("string" == typeof t) {
 						const e = parseInt(t, 10);
-						return Number.isInteger(e) ? e : a.d
+						return Number.isInteger(e) ? e : d.d
 					}
-					return "number" == typeof t ? t : a.d
+					return "number" == typeof t ? t : d.d
 				},
 				T = (e, t) => {
 					if (t >= e.length) return e;
@@ -26258,16 +26258,16 @@
 					let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : D;
 					const {
 						emojis: r,
-						snoomojis: o
-					} = t, c = e.type === u.f.Richtext ? e.richtext : [j(e.text)], a = [];
-					return c.forEach(e => {
+						snoomojis: s
+					} = t, i = e.type === u.f.Richtext ? e.richtext : [j(e.text)], a = [];
+					return i.forEach(e => {
 						if (e.e === u.c.Text) {
 							e.t.split(/(:[-\w]+:)/).forEach(e => {
 								if (!e) return;
-								if (i.a.test(e)) {
+								if (c.a.test(e)) {
 									const t = e,
-										s = t.slice(1, -1),
-										i = r[s] || o[s];
+										o = t.slice(1, -1),
+										i = r[o] || s[o];
 									if (i && n(i)) {
 										const e = E(t, i.url);
 										return void a.push(e)
@@ -26277,29 +26277,57 @@
 								t && t.e === u.c.Text ? t.t += e : a.push(j(e))
 							})
 						} else a.push(e)
-					}), s()(a, c) ? e : Object.assign({}, e, {
+					}), o()(a, i) ? e : Object.assign({}, e, {
 						type: u.f.Richtext,
 						richtext: a
 					})
 				},
 				w = e => {
-					const t = v(e),
-						n = Object(d.a)("emojiCount", ["emoji", "emojis"], t);
-					return e.allowableContent === u.a.Emoji ? Object(d.c)("Allows up to ".concat(Object(d.b)("emojiCount", t), " ").concat(n, " only")) : e.allowableContent === u.a.Text ? Object(d.c)("Allows text only") : Object(d.c)("Allows text and up to ".concat(Object(d.b)("emojiCount", t), " ").concat(n))
+					const t = v(e);
+					return e.allowableContent === u.a.Emoji ? r.fbt._({
+						"*": "Allows up to {number} emojis only",
+						_1: "Allows up to 1 emoji only"
+					}, [r.fbt._plural(t, "number")], {
+						hk: "3377Jj"
+					}) : e.allowableContent === u.a.Text ? r.fbt._("Allows text only", null, {
+						hk: "49lmsO"
+					}) : r.fbt._({
+						"*": "Allows text and up to {number} emojis",
+						_1: "Allows text and up to 1 emoji"
+					}, [r.fbt._plural(t, "number")], {
+						hk: "2xjY7a"
+					})
 				},
 				R = function(e, t) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-					const r = f(e),
-						s = g(t),
-						o = O(t);
-					if (0 === r && !n.allowBlank) return s && o ? Object(d.c)("Error: text or emoji is required") : o ? Object(d.c)("Error: emoji is required") : Object(d.c)("Error: text is required");
-					if (r > a.g && !n.allowOverflow) return Object(d.c)("Error: character limit exceeded");
-					const i = v(t),
-						c = y(e);
-					return !s && h(e) ? Object(d.c)("Error: Only emojis allowed") : !o && c > 0 ? Object(d.c)("Error: Emojis aren't allowed") : c > i ? Object(d.c)("Error: Exceeds ".concat(Object(d.b)("maxEmojiCount", i), " emoji limit")) : void 0
+					const s = f(e),
+						o = g(t),
+						i = O(t);
+					if (0 === s && !n.allowBlank) return o && i ? r.fbt._("Error: text or emoji is required", null, {
+						hk: "1xtECb"
+					}) : i ? r.fbt._("Error: emoji is required", null, {
+						hk: "4t0Hum"
+					}) : r.fbt._("Error: text is required", null, {
+						hk: "2VMFwd"
+					});
+					if (s > d.g && !n.allowOverflow) return r.fbt._("Error: character limit exceeded", null, {
+						hk: "2ejRbH"
+					});
+					const c = v(t),
+						a = y(e);
+					return !o && h(e) ? r.fbt._("Error: Only emojis allowed", null, {
+						hk: "4edtZW"
+					}) : !i && a > 0 ? r.fbt._("Error: Emojis aren't allowed", null, {
+						hk: "40qrwM"
+					}) : a > c ? r.fbt._({
+						"*": "Error: Exceeds {number} emojis limit",
+						_1: "Error: Exceeds 1 emoji limit"
+					}, [r.fbt._plural(c, "number")], {
+						hk: "m0uE6"
+					}) : void 0
 				},
 				x = e => 'flair_name:"'.concat(p(e), '"'),
-				N = (e, t) => Object(o.a)(e, {
+				N = (e, t) => Object(i.a)(e, {
 					f: t
 				})
 		},
@@ -62112,4 +62140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9cc14457fd32255f5f20.js.map
+//# sourceMappingURL=Governance~Reddit.c5aaaa9548b2d6551231.js.map
