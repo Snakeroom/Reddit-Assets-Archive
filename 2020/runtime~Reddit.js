@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.03a8baed40b3739864cd.js
-// Retrieved at 3/31/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.1f826845c46b02e6b05a.js
+// Retrieved at 3/31/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -909,7 +909,7 @@
 						FrontpageSidebar: "ff949ba7da71c6c61387",
 						Frontpage: "e7d8166199af09589cb8",
 						Topic: "bb37a2e30a2912e17424",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "0a837b0d5559dc7092e5",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "704bd3c10d1ee1f99ede",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "b0250160ee964d0b38f7",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "71fcc6fc754f5baee8a5",
 						PostDraft: "44bb89aad84d685b073f",
@@ -1019,7 +1019,7 @@
 						ModQueuePages: "49af524260c124e1fba2",
 						ProfilePrivate: "5f16a0f8faa9eb61601c",
 						"vendors~SearchResults": "a8c3db8cad14b170a972",
-						SearchResults: "783f062014604f9a6a00",
+						SearchResults: "9d8b05776239914665e8",
 						"vendors~css-vars-ponyfill": "e873f2d6dbf1a4683b13",
 						"vendors~xml2js": "e604871502e901fbf002",
 						"reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796": "12733d0e56cd74f01753",
@@ -1055,7 +1055,7 @@
 						ChatMinimize: "9ce99e36f85f623ea5b8",
 						ChatPage: "1d2649ede5b1f5e14d54",
 						ChatReportFlow: "dabf410415ab8b84cc10",
-						"InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit": "63b156cca5c0f01a3452",
+						"InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit": "bf2491866a41ebaa62f1",
 						SubredditTopContent: "67ad7005344a9ada0a30",
 						TopWeekPostsDiscoveryUnit: "221002180f7d8fec066a",
 						EconomicsSubredditPremiumSidebarCards: "e06a6a47317f9c2b1e7f",
@@ -1175,4 +1175,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.03a8baed40b3739864cd.js.map
+//# sourceMappingURL=runtime~Reddit.1f826845c46b02e6b05a.js.map

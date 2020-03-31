@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f3cdf55510622ca58deb.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.78f6cf9d241c7bc29826.js
+// Retrieved at 3/31/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4212,83 +4212,75 @@
 			const {
 				fbt: vr
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), xr = "SearchDropdown", yr = 5, Er = Object(Ya.a)(Pr.a);
-			class Or extends m.a.Component {
-				constructor(e) {
-					super(e), this.toggleTooltip = e => {
-						this.setState({
-							activeTooltipId: e
-						})
-					}, this.state = {
-						activeTooltipId: null
-					}
-				}
-				render() {
-					const {
-						props: e,
-						state: t
-					} = this, {
-						isFixed: s = !0,
-						isOverlay: n = !0
-					} = e, a = {
-						width: e.container ? "".concat(e.container.offsetWidth, "px") : "inherit",
-						marginTop: "7px",
-						overflow: "scroll"
-					};
-					e.isFixed && (a.zIndex = Cr.h);
-					const r = 0 === e.typeaheadSuggestions.length && !e.isTypeaheadPending;
-					return m.a.createElement(Er, {
-						className: Object(g.a)(rr.a.dropdown, On.a.listContainer),
-						isFixed: s,
-						isOpen: e.isOpen,
-						isOverlay: n,
-						tooltipId: xr,
-						noFocus: !0,
-						style: a
-					}, e.typeaheadSuggestions.map(t => m.a.createElement(fr, {
-						focusedItem: e.typeaheadSuggestions[e.focusedItemIndex],
-						item: t,
-						key: t.id,
-						onClearSearchQuery: e.onClearSearchQuery,
-						onSendDropdownClickEvent: e.onSendDropdownClickEvent,
-						onSetRecentSearch: e.onSetRecentSearch,
-						fireAdPixelsOfType: e.fireAdPixelsOfType
-					})), r && e.recentSearches.map(s => m.a.createElement(ir, {
-						activeTooltipId: t.activeTooltipId,
-						focusedItem: e.itemList[e.focusedItemIndex],
-						key: s.id,
-						onClearSearchQuery: e.onClearSearchQuery,
-						onRemoveRecentSearch: e.onRemoveRecentSearch,
-						onSendDropdownClickEvent: e.onSendDropdownClickEvent,
-						onSetRecentSearch: e.onSetRecentSearch,
-						onUpdateSearchQuery: e.onUpdateSearchQuery,
-						recentSearch: s,
-						toggleTooltip: this.toggleTooltip
-					})), r && e.isInTrendingExperiment && !e.isTrendingPending && e.trendingItems && m.a.createElement("div", {
-						className: Object(g.a)(ra.a.title, rr.a.listItemTitle, {
-							[rr.a.mWithBorder]: !!e.recentSearches.length
-						})
-					}, vr._("Trending today", null, {
-						hk: "3nAMpY"
-					})), (e.isTypeaheadPending || e.isTrendingPending) && m.a.createElement(m.a.Fragment, null, m.a.createElement("div", {
-						className: Object(g.a)(rr.a.loadingItem, ma.a.item)
-					}), m.a.createElement("div", {
-						className: Object(g.a)(rr.a.loadingItem, ma.a.item)
-					}), m.a.createElement("div", {
-						className: Object(g.a)(rr.a.loadingItem, ma.a.item)
-					}), m.a.createElement("div", {
-						className: Object(g.a)(rr.a.loadingItem, ma.a.item)
-					}), m.a.createElement("div", {
-						className: Object(g.a)(rr.a.loadingItem, ma.a.item)
-					})), r && e.isInTrendingExperiment && e.trendingItems.slice(0, yr).map(t => m.a.createElement(br, {
-						key: t.id,
-						focusedItem: e.itemList[e.focusedItemIndex],
-						fireAdPixelsOfType: e.fireAdPixelsOfType,
-						onSendDropdownClickEvent: e.onSendDropdownClickEvent,
-						onSetRecentSearch: e.onSetRecentSearch,
-						onUpdateSearchQuery: e.onUpdateSearchQuery,
-						trendingItem: t
-					})))
-				}
+
+			function Or(e) {
+				const {
+					isFixed: t = !0,
+					isOverlay: s = !0
+				} = e, [n, a] = Object(l.useState)(null), r = function(e) {
+					const [t, s] = Object(l.useState)(null), n = Object(l.useCallback)(() => {
+						e && s(e.offsetWidth)
+					}, [e]);
+					return Object(l.useLayoutEffect)(n, [n]), Object(l.useEffect)(() => (window.addEventListener("resize", n), () => window.removeEventListener("resize", n)), [n]), t
+				}(e.container), o = {
+					width: r ? "".concat(r, "px") : "inherit",
+					marginTop: "7px",
+					overflow: "scroll"
+				};
+				e.isFixed && (o.zIndex = Cr.h);
+				const i = 0 === e.typeaheadSuggestions.length && !e.isTypeaheadPending;
+				return m.a.createElement(Er, {
+					className: Object(g.a)(rr.a.dropdown, On.a.listContainer),
+					isFixed: t,
+					isOpen: e.isOpen,
+					isOverlay: s,
+					tooltipId: xr,
+					noFocus: !0,
+					style: o
+				}, e.typeaheadSuggestions.map(t => m.a.createElement(fr, {
+					focusedItem: e.typeaheadSuggestions[e.focusedItemIndex],
+					item: t,
+					key: t.id,
+					onClearSearchQuery: e.onClearSearchQuery,
+					onSendDropdownClickEvent: e.onSendDropdownClickEvent,
+					onSetRecentSearch: e.onSetRecentSearch,
+					fireAdPixelsOfType: e.fireAdPixelsOfType
+				})), i && e.recentSearches.map(t => m.a.createElement(ir, {
+					activeTooltipId: n,
+					focusedItem: e.itemList[e.focusedItemIndex],
+					key: t.id,
+					onClearSearchQuery: e.onClearSearchQuery,
+					onRemoveRecentSearch: e.onRemoveRecentSearch,
+					onSendDropdownClickEvent: e.onSendDropdownClickEvent,
+					onSetRecentSearch: e.onSetRecentSearch,
+					onUpdateSearchQuery: e.onUpdateSearchQuery,
+					recentSearch: t,
+					toggleTooltip: a
+				})), i && e.isInTrendingExperiment && !e.isTrendingPending && e.trendingItems && m.a.createElement("div", {
+					className: Object(g.a)(ra.a.title, rr.a.listItemTitle, {
+						[rr.a.mWithBorder]: !!e.recentSearches.length
+					})
+				}, vr._("Trending today", null, {
+					hk: "3nAMpY"
+				})), (e.isTypeaheadPending || e.isTrendingPending) && m.a.createElement(m.a.Fragment, null, m.a.createElement("div", {
+					className: Object(g.a)(rr.a.loadingItem, ma.a.item)
+				}), m.a.createElement("div", {
+					className: Object(g.a)(rr.a.loadingItem, ma.a.item)
+				}), m.a.createElement("div", {
+					className: Object(g.a)(rr.a.loadingItem, ma.a.item)
+				}), m.a.createElement("div", {
+					className: Object(g.a)(rr.a.loadingItem, ma.a.item)
+				}), m.a.createElement("div", {
+					className: Object(g.a)(rr.a.loadingItem, ma.a.item)
+				})), i && e.isInTrendingExperiment && e.trendingItems.slice(0, yr).map(t => m.a.createElement(br, {
+					key: t.id,
+					focusedItem: e.itemList[e.focusedItemIndex],
+					fireAdPixelsOfType: e.fireAdPixelsOfType,
+					onSendDropdownClickEvent: e.onSendDropdownClickEvent,
+					onSetRecentSearch: e.onSetRecentSearch,
+					onUpdateSearchQuery: e.onUpdateSearchQuery,
+					trendingItem: t
+				})))
 			}
 			var wr = s("./src/reddit/contexts/ApiContext.tsx"),
 				jr = s("./src/lib/makeApiRequest/index.ts"),
@@ -12274,4 +12266,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.f3cdf55510622ca58deb.js.map
+//# sourceMappingURL=Reddit.78f6cf9d241c7bc29826.js.map
