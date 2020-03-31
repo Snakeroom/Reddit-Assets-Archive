@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3f133dfda94f884810a9.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9a72d6cc3c8c0c6a412f.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -605,24 +605,24 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(d.u)(s.id)),
-						onDistinguishPost: t => e(Object(d.w)(s.id, t)),
+						onApprovePost: () => e(Object(d.t)(s.id)),
+						onDistinguishPost: t => e(Object(d.v)(s.id, t)),
 						onFlairChanged: (t, o) => e(Object(l.h)({
 							post: s,
 							previewFlair: t,
 							selectedTemplateId: o
 						})),
 						onFlairPost: t => e(Object(i.i)(t)),
-						onLockPost: () => e(Object(d.G)(s.id)),
-						onNsfwPost: () => e(Object(d.K)(s.id)),
-						onOcPost: () => e(Object(d.L)(s.id)),
-						onRemovePost: () => e(Object(d.U)(s.id, !1)),
+						onLockPost: () => e(Object(d.E)(s.id)),
+						onNsfwPost: () => e(Object(d.I)(s.id)),
+						onOcPost: () => e(Object(d.J)(s.id)),
+						onRemovePost: () => e(Object(d.S)(s.id, !1)),
 						onModToMemberShareOpened: () => {
-							e(Object(i.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(d.H)(s.id))
+							e(Object(i.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(d.F)(s.id))
 						},
-						onSpamPost: () => e(Object(d.U)(s.id, !0)),
-						onSpoilerPost: () => e(Object(d.Y)(s.id)),
-						onStickyPost: () => e(Object(d.bb)(s.id))
+						onSpamPost: () => e(Object(d.S)(s.id, !0)),
+						onSpoilerPost: () => e(Object(d.W)(s.id)),
+						onStickyPost: () => e(Object(d.Z)(s.id))
 					}
 				}),
 				F = Object(p.a)(h.a),
@@ -1342,4 +1342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.3f133dfda94f884810a9.js.map
+//# sourceMappingURL=ModerationDropdowns.9a72d6cc3c8c0c6a412f.js.map

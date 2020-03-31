@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b15e2e05813e0dce307f.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.4f13d8262f9b9850d736.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -427,7 +427,7 @@
 					className: Object(l.a)(E.a.LoadingNav, t.isLoading && E.a.loading)
 				}), o.a.createElement(O, null)))))
 			}, T = Object(c.a)({
-				getComponent: () => Object(u.a)(() => Promise.all([r.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), r.e("StructuredStyles")]).then(r.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
+				getComponent: () => Object(u.a)(() => Promise.all([r.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("StructuredStyles")]).then(r.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => o.a.createElement(w, {
 					gradientType: "posts",
 					isLoading: !1
@@ -684,14 +684,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = async (e, t) => {
+			const H = async (e, t) => {
 				const r = await Object(F.a)(e, t);
 				if (r && r.ok) {
 					const e = r.body,
 						t = e && e.data && e.data.subredditLeaderboard;
 					return Object(B.c)(t)
 				}
-			}, H = async e => {
+			}, M = async e => {
 				const t = s()(A.a, 5),
 					r = await Object(W.a)(e, {
 						names: t
@@ -709,7 +709,7 @@
 							category: e,
 							first: t
 						} = this.props, r = e && e.id;
-						r !== f.l ? (r || r === f.d) && M(this.props.gqlContext(), {
+						r !== f.l ? (r || r === f.d) && H(this.props.gqlContext(), {
 							categoryId: r,
 							first: t
 						}).then(e => {
@@ -722,7 +722,7 @@
 									subreddits: r
 								}
 							}))
-						}).catch(e => console.error("Error >>>", e)) : H(this.props.gqlContext()).then(e => {
+						}).catch(e => console.error("Error >>>", e)) : M(this.props.gqlContext()).then(e => {
 							if (!e) return;
 							const {
 								rankings: t,
@@ -1184,7 +1184,7 @@
 				R = r("./src/reddit/selectors/user.ts");
 			const A = 25,
 				D = .5,
-				M = Object(d.c)({
+				H = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
 							categoryId: r
@@ -1206,7 +1206,7 @@
 					},
 					subreddits: F.V
 				}),
-				H = Object(i.b)(M, e => ({
+				M = Object(i.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(L.a)(t, r))
 				}));
 			class Q extends o.a.Component {
@@ -1287,7 +1287,7 @@
 					})))))
 				}
 			}
-			var G = Object(m.c)(H(Q)),
+			var G = Object(m.c)(M(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				V = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				K = r.n(V);
@@ -1555,4 +1555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.b15e2e05813e0dce307f.js.map
+//# sourceMappingURL=SubredditLeaderboard.4f13d8262f9b9850d736.js.map

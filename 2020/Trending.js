@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.8cb2cc7eac4552303a67.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.ee6fddb01a866af0fde3.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -99,7 +99,7 @@
 					L = h ? h.numComments : 0,
 					M = h && h.isSponsored,
 					A = Object(j.a)(e).body,
-					Y = "linear-gradient(\n      ".concat(Object(n.j)(A, .2), ",\n      ").concat(Object(n.j)(A, .3), ",\n      ").concat(Object(n.j)(A, .4), ",\n      ").concat(Object(n.j)(A, .6), ",\n      ").concat(Object(n.j)(A, .8), ",\n      ").concat(A, "\n    )"),
+					Y = "linear-gradient(\n      ".concat(Object(n.g)(A, .2), ",\n      ").concat(Object(n.g)(A, .3), ",\n      ").concat(Object(n.g)(A, .4), ",\n      ").concat(Object(n.g)(A, .6), ",\n      ").concat(Object(n.g)(A, .8), ",\n      ").concat(A, "\n    )"),
 					R = i.a.createElement("div", {
 						className: Object(d.a)(y.a.trendingPost, {
 							[y.a["m-background"]]: !!S
@@ -220,7 +220,7 @@
 				}
 			}
 			var x = Object(a.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(l.B)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(l.z)(t, s)),
 					trackPostView: t => e((e, s) => p.x(s(), t)),
 					trackPostClick: t => e((e, s) => p.w(s(), t))
 				}))(g),
@@ -309,10 +309,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === d.a.upvoted ? Object(a.cb)(s) : Object(a.x)(s);
+						const r = t === d.a.upvoted ? Object(a.ab)(s) : Object(a.w)(s);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.ab)(s)),
+					onIgnoreReports: () => e(Object(a.Y)(s)),
 					onOpenReportsDropdown: t => e(Object(o.h)({
 						tooltipId: t
 					}))
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.8cb2cc7eac4552303a67.js.map
+//# sourceMappingURL=Trending.ee6fddb01a866af0fde3.js.map

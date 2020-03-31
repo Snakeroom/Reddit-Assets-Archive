@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.847320fe8525fedcbe54.js
-// Retrieved at 3/23/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.2fb4d3c7ef5cf17cd57e.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
@@ -510,7 +510,7 @@
 					}, _.datasets.map((e, o) => {
 						const s = this.state.hideDatasetArr[o],
 							t = s && this.props.theme ? this.props.theme.newCommunityTheme.post : f[o],
-							n = s ? Object(l.j)(f[o], .5) : f[o];
+							n = s ? Object(l.g)(f[o], .5) : f[o];
 						return m.a.createElement("button", {
 							className: w.a.legendLine,
 							key: e.label,
@@ -705,4 +705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModStatsChart.847320fe8525fedcbe54.js.map
+//# sourceMappingURL=ModStatsChart.2fb4d3c7ef5cf17cd57e.js.map

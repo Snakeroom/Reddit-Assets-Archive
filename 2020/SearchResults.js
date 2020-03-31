@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8a154499493d235c715b.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.783f062014604f9a6a00.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -399,10 +399,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === M.a.upvoted ? Object(N.cb)(r) : Object(N.x)(r);
+							const s = t === M.a.upvoted ? Object(N.ab)(r) : Object(N.w)(r);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(N.ab)(r)),
+						onIgnoreReports: () => e(Object(N.Y)(r)),
 						onOpenReportsDropdown: t => e(Object(T.h)({
 							tooltipId: t
 						}))
@@ -2746,7 +2746,7 @@
 				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(k);
 			const w = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.y)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
@@ -3288,14 +3288,14 @@
 					id: f,
 					title: C,
 					onClose: () => {
-						g(!1), E("close", "click"), y(Object(c.I)()), y(Object(c.T)({
+						g(!1), E("close", "click"), y(Object(c.G)()), y(Object(c.R)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						y(Object(c.I)())
+						y(Object(c.G)())
 					}
 				}, o.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", o.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -3311,7 +3311,7 @@
 				})))], {
 					hk: "sfngx"
 				})), o.a.createElement(m.a, {
-					onClick: () => (g(!1), E("report", "click"), void y(Object(d.k)(s.id)))
+					onClick: () => (g(!1), E("report", "click"), void y(Object(d.j)(s.id)))
 				}, n.fbt._("Report", null, {
 					hk: "3M0Eii"
 				})))
@@ -3345,7 +3345,7 @@
 					E && C("modal", "show")
 				}, [E]);
 				const j = e => {
-					f(n.Closed), C("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), v(Object(l.k)(s.id, void 0, void 0, void 0, e))
+					f(n.Closed), C("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), v(Object(l.j)(s.id, void 0, void 0, e))
 				};
 				if (!E) return null;
 				let _ = null;
@@ -3355,10 +3355,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						f(n.Closed), C("close", "click"), v(Object(d.I)())
+						f(n.Closed), C("close", "click"), v(Object(d.G)())
 					},
 					onClickOutside: () => {
-						v(Object(d.I)())
+						v(Object(d.G)())
 					}
 				};
 				switch (g) {
@@ -3993,7 +3993,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.E)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.C)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(d.c)(b))
 		},
@@ -4232,8 +4232,8 @@
 						})(t, e.onNavigate, e.onClick)
 					},
 					style: Object.assign({}, e.style, {
-						"--RawHTMLDisplay-tr-even": Object(n.j)(Object(l.a)(e).body, .8),
-						"--RawHTMLDisplay-tr-odd": Object(n.j)(Object(l.a)(e).line, .8)
+						"--RawHTMLDisplay-tr-even": Object(n.g)(Object(l.a)(e).body, .8),
+						"--RawHTMLDisplay-tr-odd": Object(n.g)(Object(l.a)(e).line, .8)
 					})
 				}), "StyledRawHTMLDisplay", p.a);
 			t.a = u(Object(i.a)(b))
@@ -6027,7 +6027,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), tr = "".concat(en.a.assetPath, "/img/link-placeholder.png"), sr = (e, t) => t && t.length ? Object(Lt.N)(e, {
 				postId: t[0]
 			}) : void 0, nr = {
-				fireAdPixelsOfType: on.B,
+				fireAdPixelsOfType: on.z,
 				openLightbox: e => Object(bn.a)(e.permalink)
 			};
 			class rr extends r.a.Component {
@@ -8285,16 +8285,16 @@
 						}))
 					},
 					openPost: t => {
-						e(i.M(t))
+						e(i.K(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(i.B(t, s))
+						e(i.z(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, n) => {
-						e(i.P(t, n))
+						e(i.N(t, n))
 					},
 					trackOnPostExitedViewport: (t, s, n, r) => {
-						e(i.Q(t, n, r))
+						e(i.O(t, n, r))
 					}
 				}),
 				j = Object(n.b)(E, C, (e, t, s) => Object.assign({}, e, t, s, {
@@ -8388,10 +8388,10 @@
 						}))
 					},
 					handleVote: t => {
-						const n = t === c.a.upvoted ? Object(o.cb)(s) : Object(o.x)(s);
+						const n = t === c.a.upvoted ? Object(o.ab)(s) : Object(o.w)(s);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(o.ab)(s)),
+					onIgnoreReports: () => e(Object(o.Y)(s)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -8984,7 +8984,7 @@
 						background: p(t)
 					}
 				},
-				b = e => Object(n.o)(.2, e),
+				b = e => Object(n.l)(.2, e),
 				h = e => e && e.postBackgroundColor ? {
 					backgroundColor: b(e.postBackgroundColor)
 				} : m,
@@ -9382,4 +9382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.8a154499493d235c715b.js.map
+//# sourceMappingURL=SearchResults.783f062014604f9a6a00.js.map

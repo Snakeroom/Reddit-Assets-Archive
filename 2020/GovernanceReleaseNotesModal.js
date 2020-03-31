@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.7b985a6b013b0d4de087.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5405f8358310ebba5002.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -335,8 +335,8 @@
 						})(t, e.onNavigate, e.onClick)
 					},
 					style: Object.assign({}, e.style, {
-						"--RawHTMLDisplay-tr-even": Object(s.j)(Object(l.a)(e).body, .8),
-						"--RawHTMLDisplay-tr-odd": Object(s.j)(Object(l.a)(e).line, .8)
+						"--RawHTMLDisplay-tr-even": Object(s.g)(Object(l.a)(e).body, .8),
+						"--RawHTMLDisplay-tr-odd": Object(s.g)(Object(l.a)(e).line, .8)
 					})
 				}), "StyledRawHTMLDisplay", m.a);
 			t.a = x(Object(i.a)(p))
@@ -602,4 +602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.7b985a6b013b0d4de087.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.5405f8358310ebba5002.js.map

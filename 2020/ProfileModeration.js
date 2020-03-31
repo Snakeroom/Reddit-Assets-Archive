@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.fbd0f7b1d39d68ecdf90.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.7a99f335068dbc796aa5.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, a) {
@@ -287,7 +287,7 @@
 					const {
 						profileName: e
 					} = this.props, t = "user/".concat(e);
-					return r.a.createElement("div", null, r.a.createElement(g.b, null, r.a.createElement(y.c, null, "Profile moderation")), r.a.createElement(C, null, r.a.createElement(E.f, null, r.a.createElement(y.c, null, "Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.")), r.a.createElement(E.f, null, p.fbt._("If you do choose to post to your profile, then it's important to get familiar with your", null, {
+					return r.a.createElement("div", null, r.a.createElement(g.b, null, r.a.createElement(y.c, null, "Profile moderation")), r.a.createElement(C, null, r.a.createElement(E.c, null, r.a.createElement(y.c, null, "Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.")), r.a.createElement(E.c, null, p.fbt._("If you do choose to post to your profile, then it's important to get familiar with your", null, {
 						hk: "EuDG2"
 					}), r.a.createElement(b.m, {
 						href: "https://www.reddithelp.com/en/categories/using-reddit/profiles/profile-moderation-tools"
@@ -394,4 +394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.fbd0f7b1d39d68ecdf90.js.map
+//# sourceMappingURL=ProfileModeration.7a99f335068dbc796aa5.js.map

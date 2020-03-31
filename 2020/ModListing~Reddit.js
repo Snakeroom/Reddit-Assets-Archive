@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.9661c874bd61e821aba8.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.8c38db9343cefcda9863.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -3166,8 +3166,7 @@
 					}, e.contentBanner, e.content);
 				let c;
 				c = e.sidebars ? s.a.createElement(s.a.Fragment, null, e.sidebars[0], a, e.sidebars[1]) : e.isPageSwapped ? s.a.createElement(s.a.Fragment, null, r, a) : s.a.createElement(s.a.Fragment, null, a, r);
-				const p = e.disableFullscreen ? "".concat(e.maxWidth || u.a + 2 * d.m, "px") : "100%",
-					m = e.layerEmbed ? e.layerEmbed : null;
+				const p = e.disableFullscreen ? "".concat(e.maxWidth || u.a + 2 * d.m, "px") : "100%";
 				return s.a.createElement(g, {
 					subredditId: e.subredditId
 				}, s.a.createElement("div", {
@@ -3185,7 +3184,7 @@
 					style: {
 						maxWidth: p
 					}
-				}, e.trendingUnit), m, s.a.createElement(w, {
+				}, e.trendingUnit), s.a.createElement(w, {
 					style: {
 						maxWidth: p
 					}
@@ -3265,4 +3264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.9661c874bd61e821aba8.js.map
+//# sourceMappingURL=ModListing~Reddit.8c38db9343cefcda9863.js.map

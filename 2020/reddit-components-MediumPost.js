@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7a2afed8763bb012b450.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a9904c6029c06c33e5d7.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -387,7 +387,7 @@
 				q = r.n(Z),
 				K = r("./src/reddit/components/MediumPost/index.m.less"),
 				J = r.n(K);
-			const X = Object(n.b)(() => Object(i.c)({
+			const Y = Object(n.b)(() => Object(i.c)({
 				crosspost: z.d,
 				currentUser: G.i,
 				flairStyleTemplate: j.Q,
@@ -419,14 +419,14 @@
 							postId: o
 						}))
 					},
-					handleVote: t => t === B.a.upvoted ? e(Object(l.cb)(o)) : e(Object(l.x)(o)),
-					onIgnoreReports: () => e(Object(l.ab)(o)),
+					handleVote: t => t === B.a.upvoted ? e(Object(l.ab)(o)) : e(Object(l.w)(o)),
+					onIgnoreReports: () => e(Object(l.Y)(o)),
 					onOpenReportsDropdown: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				}
 			});
-			t.default = X(Object(T.b)(e => {
+			t.default = Y(Object(T.b)(e => {
 				const {
 					chainPost: t,
 					className: r,
@@ -447,8 +447,8 @@
 					isTopicPage: G,
 					language: Z,
 					listingKey: K,
-					listingName: X,
-					moderatorPermissions: Y,
+					listingName: Y,
+					moderatorPermissions: X,
 					modModeEnabled: Q,
 					onClickPost: $,
 					onIgnoreReports: ee,
@@ -461,7 +461,7 @@
 					sendEvent: ae,
 					subredditOrProfile: de,
 					toggleCheckbox: ce
-				} = e, le = se ? void 0 : c, ue = Object(F.a)(Y), pe = Q && ue, me = Object(R.a)(Y), he = Object(A.a)(Y), be = Object(P.c)(re), ge = Object(k.a)(re), xe = u && !ie, ve = xe && !!re.source && !s, fe = !(D && U || G || B), ye = o.a.createElement(O.a, {
+				} = e, le = se ? void 0 : c, ue = Object(F.a)(X), pe = Q && ue, me = Object(R.a)(X), he = Object(A.a)(X), be = Object(P.c)(re), ge = Object(k.a)(re), xe = u && !ie, ve = xe && !!re.source && !s, fe = !(D && U || G || B), ye = o.a.createElement(O.a, {
 					className: Object(d.a)(J.a.container, r, q.a.largeAndMediumPostStyles, q.a.largeAndMediumActiveStyles, Object(L.a)(e), {
 						[q.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 					}),
@@ -590,7 +590,7 @@
 				return o.a.createElement(o.a.Fragment, null, ye, z && !V && o.a.createElement(b.a, {
 					className: J.a.chain,
 					listingKey: K,
-					listingName: X,
+					listingName: Y,
 					postId: re.id
 				}))
 			}))
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.7a2afed8763bb012b450.js.map
+//# sourceMappingURL=reddit-components-MediumPost.a9904c6029c06c33e5d7.js.map

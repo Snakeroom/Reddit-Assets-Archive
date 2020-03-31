@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.a4521f98729782998302.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.a8abbde3eb348d932aee.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/CrisisFooter/index.m.less": function(e, t, s) {
@@ -272,23 +272,23 @@
 				D = s("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
 				H = s.n(D);
 			const {
-				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("CrisisThankYouPage", H.a), U = d.a.div("CrisisImageContainer", f.a), N = d.a.h2("CrisisTitle", f.a), q = d.a.p("CrisisDescription", f.a), z = d.a.div("CrisisOtherActions", H.a), W = d.a.h4("CrisisOtherActionsTitle", H.a), K = d.a.div("CrisisLinkIconContainer", H.a), V = d.a.div("CrisisLinkText", H.a), Y = d.a.h3("CrisisLinkTitle", H.a), M = d.a.p("CrisisLinkDescription", H.a);
-			var J = e => r.a.createElement(B, null, r.a.createElement(U, null, r.a.createElement(A, {
+				fbt: B
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = d.a.div("CrisisThankYouPage", H.a), U = d.a.div("CrisisImageContainer", f.a), N = d.a.h2("CrisisTitle", f.a), q = d.a.p("CrisisDescription", f.a), z = d.a.div("CrisisOtherActions", H.a), W = d.a.h4("CrisisOtherActionsTitle", H.a), K = d.a.div("CrisisLinkIconContainer", H.a), V = d.a.div("CrisisLinkText", H.a), Y = d.a.h3("CrisisLinkTitle", H.a), M = d.a.p("CrisisLinkDescription", H.a);
+			var J = e => r.a.createElement(j, null, r.a.createElement(U, null, r.a.createElement(A, {
 				className: H.a.CrisisTickImage
-			})), r.a.createElement(N, null, j._("Thanks for caring about your fellow redditor", null, {
+			})), r.a.createElement(N, null, B._("Thanks for caring about your fellow redditor", null, {
 				hk: "1ePh84"
-			})), r.a.createElement(q, null, j._("We’ve reached out to {reporteduser} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [j._param("reporteduser", r.a.createElement("span", null, "u/", e.reportedUser))], {
+			})), r.a.createElement(q, null, B._("We’ve reached out to {reporteduser} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [B._param("reporteduser", r.a.createElement("span", null, "u/", e.reportedUser))], {
 				hk: "2APcp1"
-			})), r.a.createElement(z, null, r.a.createElement(W, null, j._("Other things you can do", null, {
+			})), r.a.createElement(z, null, r.a.createElement(W, null, B._("Other things you can do", null, {
 				hk: "4oCunD"
 			})), r.a.createElement(g.a, {
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 				target: "_blank",
 				className: H.a.CrisisLink
-			}, r.a.createElement(K, null, r.a.createElement(P, null)), r.a.createElement(V, null, r.a.createElement(Y, null, j._("Learn how to help someone in crisis", null, {
+			}, r.a.createElement(K, null, r.a.createElement(P, null)), r.a.createElement(V, null, r.a.createElement(Y, null, B._("Learn how to help someone in crisis", null, {
 				hk: "3HohFx"
-			})), r.a.createElement(M, null, j._("Get advice on what you can say and how to be supportive.", null, {
+			})), r.a.createElement(M, null, B._("Get advice on what you can say and how to be supportive.", null, {
 				hk: "1NHS5d"
 			}))), r.a.createElement(y, {
 				className: H.a.CrisisLinkArrow
@@ -296,9 +296,9 @@
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 				target: "_blank",
 				className: H.a.CrisisLink
-			}, r.a.createElement(K, null, r.a.createElement(I, null)), r.a.createElement(V, null, r.a.createElement(Y, null, j._("Get yourself support", null, {
+			}, r.a.createElement(K, null, r.a.createElement(I, null)), r.a.createElement(V, null, r.a.createElement(Y, null, B._("Get yourself support", null, {
 				hk: "kTT0U"
-			})), r.a.createElement(M, null, j._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+			})), r.a.createElement(M, null, B._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 				hk: "37R4JZ"
 			}))), r.a.createElement(y, {
 				className: H.a.CrisisLinkArrow
@@ -426,8 +426,8 @@
 				Ae = s.n(Ie);
 			const De = d.a.wrapped($.a, "blockUserHolder", Ae.a),
 				He = d.a.wrapped(Pe, "BlockUserIcon", Ae.a),
-				je = d.a.div("BlockUserHeader", Ae.a),
-				Be = d.a.div("OptionHolder", Ae.a),
+				Be = d.a.div("BlockUserHeader", Ae.a),
+				je = d.a.div("OptionHolder", Ae.a),
 				Ue = d.a.div("OptionHeader", Ae.a),
 				Ne = d.a.div("OptionDescription", Ae.a),
 				qe = d.a.a("Link", Ae.a),
@@ -458,7 +458,7 @@
 						}) : n.fbt._("Block {username}", [n.fbt._param("username", e)], {
 							hk: "ohbdA"
 						})
-					}, this.renderAbuseOfReportButtonOption = () => r.a.createElement(Be, null, r.a.createElement(Ue, null, n.fbt._("Turn off free-form reports", null, {
+					}, this.renderAbuseOfReportButtonOption = () => r.a.createElement(je, null, r.a.createElement(Ue, null, n.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
 					})), r.a.createElement(Ne, null, n.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [n.fbt._param("=visit the Help Center", r.a.createElement(qe, {
 						target: "_blank",
@@ -473,7 +473,7 @@
 						} = this, t = this.getBlockUserHeaderText();
 						return r.a.createElement(De, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, r.a.createElement(He, null), r.a.createElement("div", null, r.a.createElement(je, null, t), r.a.createElement(Ne, null, n.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [n.fbt._param("username", e.authorName)], {
+						}, r.a.createElement(He, null), r.a.createElement("div", null, r.a.createElement(Be, null, t), r.a.createElement(Ne, null, n.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [n.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -798,8 +798,8 @@
 			var At = s("./src/reddit/selectors/posts.ts"),
 				Dt = s("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
 				Ht = s.n(Dt);
-			const jt = d.a.div("CloseWrapper", Ht.a),
-				Bt = d.a.wrapped(ft.a, "Close", Ht.a),
+			const Bt = d.a.div("CloseWrapper", Ht.a),
+				jt = d.a.wrapped(ft.a, "Close", Ht.a),
 				Ut = Object(l.c)({
 					comment: (e, t) => {
 						let {
@@ -964,9 +964,9 @@
 					if (t.crisisFlowEnabled && e.chosenRuleKind === Ze.a.CrisisTextLine && e.showCrisisTextLinePage) {
 						const s = t.commentId ? t.commentId : t.postId;
 						let n;
-						if (t.commentId ? n = t.comment && t.comment.author : t.postId && (n = t.post && t.post.author), n && e.chosenRule && s) return r.a.createElement(o.Fragment, null, r.a.createElement(jt, {
+						if (t.commentId ? n = t.comment && t.comment.author : t.postId && (n = t.post && t.post.author), n && e.chosenRule && s) return r.a.createElement(o.Fragment, null, r.a.createElement(Bt, {
 							onClick: t.onCloseReportFlow
-						}, r.a.createElement(Bt, null)), r.a.createElement(X, {
+						}, r.a.createElement(jt, null)), r.a.createElement(X, {
 							onCloseReportFlow: t.onCloseReportFlow,
 							onReportPostOrComment: t.onReportPostOrComment,
 							contentId: s,
@@ -998,10 +998,10 @@
 				} = t;
 				return {
 					onCloseReportFlow: () => {
-						e(Object(Z.j)())
+						e(Object(Z.i)())
 					},
 					onReportPostOrComment: (t, n, o) => {
-						e(Object(Z.i)({
+						e(Object(Z.h)({
 							id: t,
 							reportFlowPayload: n,
 							timestamp: s
@@ -1073,4 +1073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow.a4521f98729782998302.js.map
+//# sourceMappingURL=ReportFlow.a8abbde3eb348d932aee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.d6ea429aab3cd1bec282.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9f2e9eed757486459544.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, a) {
@@ -322,8 +322,8 @@
 			const Q = "#FFF";
 			var X = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				K = a("./src/reddit/actions/preferences.ts"),
-				Y = a("./src/reddit/controls/Checkbox/index.tsx"),
-				G = a("./src/reddit/controls/InternalLink/index.tsx"),
+				G = a("./src/reddit/controls/Checkbox/index.tsx"),
+				Y = a("./src/reddit/controls/InternalLink/index.tsx"),
 				Z = a("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				$ = a("./src/reddit/selectors/meta.ts"),
 				ee = a("./src/reddit/components/Settings/DeactivateModal.tsx"),
@@ -365,7 +365,7 @@
 							className: ae.a.reviewSettings
 						}, " ".concat(s.fbt._("You can also", null, {
 							hk: "14h75w"
-						}), " "), i.a.createElement(G.a, {
+						}), " "), i.a.createElement(Y.a, {
 							className: ae.a.settingsLink,
 							onMouseDown: this.trackEmailSettingsLinkClick,
 							to: "/settings"
@@ -382,7 +382,7 @@
 						})
 					}, t && i.a.createElement(ee.a, {
 						className: ae.a.checkboxWrapper
-					}, i.a.createElement(Y.a, {
+					}, i.a.createElement(G.a, {
 						className: Object(l.a)(ae.a.checkbox, !o && ae.a.unchecked),
 						checkBoxStyle: {
 							backgroundColor: Q,
@@ -940,7 +940,6 @@
 				largeButtonFont: "_1jVGMlwau5yaN1vqhiSwEo",
 				tabFont: "_1leSu44tZ3i4KBsjGW_F9c",
 				strongTextFont: "_2oA70eNUJxOQ-eRN8TPT9s",
-				extraSmallFont: "_3TbSj7zXleh1mNI_0YppwA",
 				bodyFontH1: "_2CvYC5Dor5C7bRy9T_5TQX",
 				bodyFontH2: "_6n_lhbrgbPv9CUoOwND7J",
 				bodyFontH3: "l6V3xHeCqsPn028sXl7VN",
@@ -997,4 +996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailVerificationModals.d6ea429aab3cd1bec282.js.map
+//# sourceMappingURL=EmailVerificationModals.9f2e9eed757486459544.js.map

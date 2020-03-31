@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.5682f450fdf0ca1b26af.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.886963d02ffe2d85d315.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -124,8 +124,8 @@
 						})
 					}))
 				};
-			var L = n("./src/reddit/actions/gold/modals.ts"),
-				B = n("./src/reddit/components/CoinBalance/index.tsx"),
+			var B = n("./src/reddit/actions/gold/modals.ts"),
+				L = n("./src/reddit/components/CoinBalance/index.tsx"),
 				A = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				K = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				G = n("./src/reddit/controls/DropdownSelector/index.tsx"),
@@ -151,8 +151,8 @@
 					language: I.O,
 					recipientName: _.d
 				}),
-				V = Object(c.b)(X, e => ({
-					closeModal: () => e(Object(L.b)()),
+				J = Object(c.b)(X, e => ({
+					closeModal: () => e(Object(B.b)()),
 					onGivePremium: (t, n, s, o, c, a) => {
 						e(((e, t, n, s, o) => async (c, a, i) => {
 							let {
@@ -172,7 +172,7 @@
 						})(t, n, s, o ? c : "", a))
 					}
 				}));
-			class J extends o.a.PureComponent {
+			class V extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
@@ -251,7 +251,7 @@
 					}), e(Object(b.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(x.L)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(x.J)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -314,7 +314,7 @@
 						placeholder: Object(p.c)("Type here...")
 					}))), o.a.createElement(A.e, null, o.a.createElement(W.a, {
 						className: r.a.coinCountSection
-					}, o.a.createElement(B.a, {
+					}, o.a.createElement(L.a, {
 						className: r.a.coinCount,
 						coinBalance: t
 					}), o.a.createElement("div", {
@@ -332,8 +332,8 @@
 					}) : o.a.createElement(u.c, null, "Confirm"))))))
 				}
 			}
-			const Q = Object(d.a)(Object(h.c)(J));
-			t.default = V(e => o.a.createElement(Q, z({}, e, {
+			const Q = Object(d.a)(Object(h.c)(V));
+			t.default = J(e => o.a.createElement(Q, z({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.5682f450fdf0ca1b26af.js.map
+//# sourceMappingURL=GivePremiumModal.886963d02ffe2d85d315.js.map

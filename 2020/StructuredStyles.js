@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.ba33b897ae596f820a14.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.1f05e69695cd3a113cc8.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -1862,7 +1862,7 @@
 			}
 			var vn = sn(fn, ["menuPosition", "bannerCommunityNameFormat", "bannerShowCommunityIcon", "bannerHeight", "postVoteIcons", "submenuBackgroundStyle", "backgroundImagePosition", "bannerBackgroundImagePosition", "bannerPositionedImagePosition", "postBackgroundImagePosition", "postPlaceholderImagePosition", "menuBackgroundOpacity", "backgroundImage", "bannerBackgroundImage", "bannerPositionedImage", "communityIcon", "menuBackgroundImage", "postBackgroundImage", "postDownvoteIconActive", "postDownvoteIconInactive", "postPlaceholderImage", "postUpvoteIconActive", "postUpvoteIconInactive", "secondaryBannerPositionedImage", "bannerBackgroundColor", "bannerOverlayColor", "menuBackgroundColor", "menuLinkColorActive", "menuLinkColorInactive", "menuLinkColorHover", "mobileKeyColor", "sidebarWidgetBackgroundColor", "sidebarWidgetHeaderColor", "submenuBackgroundColor", "backgroundColor", "highlightColor", "postBackgroundColor", "postDownvoteCountColor", "postTitleColor", "postUpvoteCountColor", "primaryColor"]),
 				xn = n("./src/reddit/controls/Typography/index.tsx");
-			var Cn = sn(e => r.a.createElement(ue.k, null, r.a.createElement(ht, e), r.a.createElement(xn.f, null, l.fbt._("These community styling options will also display in Reddit apps.", null, {
+			var Cn = sn(e => r.a.createElement(ue.k, null, r.a.createElement(ht, e), r.a.createElement(xn.c, null, l.fbt._("These community styling options will also display in Reddit apps.", null, {
 					hk: "34bghj"
 				})), r.a.createElement(ue.f, null, r.a.createElement(ue.h, null, l.fbt._("Theme Colors", null, {
 					hk: "10yzRc"
@@ -3820,7 +3820,7 @@
 					} = this;
 					return r.a.createElement(ue.k, {
 						key: "default-content"
-					}, r.a.createElement(aa, e), r.a.createElement(xn.f, null, l.fbt._("These community styling options will also display in Reddit apps.", null, {
+					}, r.a.createElement(aa, e), r.a.createElement(xn.c, null, l.fbt._("These community styling options will also display in Reddit apps.", null, {
 						hk: "2gl4Jd"
 					})), r.a.createElement(ue.f, null, r.a.createElement(j.b, {
 						disabled: !0
@@ -5620,7 +5620,7 @@
 						breadcrumbs: e.breadcrumbs,
 						stopEditing: e.stopEditing,
 						helpCenterLink: e.helpCenterLink
-					}), r.a.createElement(ue.m, null, e.title), r.a.createElement(xn.f, null, l.fbt._("These community styling options will also display in Reddit apps.", null, {
+					}), r.a.createElement(ue.m, null, e.title), r.a.createElement(xn.c, null, l.fbt._("These community styling options will also display in Reddit apps.", null, {
 						hk: "1Cl8Yk"
 					})), t.isInSecondState ? r.a.createElement(Vi, {
 						subredditId: e.subredditId,
@@ -6012,7 +6012,7 @@
 					className: Object(l.a)(p.a.DropdownColorSwatch, e.isTransparent && p.a.isTransparent),
 					style: {
 						backgroundColor: e.isTransparent ? Object(m.a)(e).body : e.color,
-						fill: Object(a.h)(e.color)
+						fill: Object(a.f)(e.color)
 					}
 				}, e.isDropdownOpen ? s.a.createElement(c.a, {
 					className: p.a.ChevronUp
@@ -8266,8 +8266,7 @@
 			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 40 40",
-				onClick: e.onClick
+				viewBox: "0 0 40 40"
 			}, r.a.createElement("g", null, r.a.createElement("g", {
 				fill: "inherit"
 			}, r.a.createElement("polygon", {
@@ -8368,4 +8367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.ba33b897ae596f820a14.js.map
+//# sourceMappingURL=StructuredStyles.1f05e69695cd3a113cc8.js.map

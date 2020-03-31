@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e94bcca8648d1d523be0.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9697e0a992bc102c8ebb.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -355,8 +355,8 @@
 				D = a("./node_modules/fbt/lib/FbtPublic.js"),
 				H = a("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				V = a.n(H),
-				Q = a("./src/reddit/helpers/awards/message.ts"),
-				J = a("./src/reddit/i18n/components.tsx"),
+				J = a("./src/reddit/helpers/awards/message.ts"),
+				Q = a("./src/reddit/i18n/components.tsx"),
 				K = a("./src/reddit/i18n/utils.ts"),
 				W = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				X = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
@@ -378,58 +378,58 @@
 					const e = t.description.split("%{coin_symbol}");
 					return s.a.createElement(s.a.Fragment, null, e.map((e, t) => 0 === t ? e : s.a.createElement(s.a.Fragment, null, s.a.createElement(ee.a, null), e)))
 				}
-				if (t.awardType === u.d.Community) return t.subredditCoinReward && t.coinReward ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the post and grants "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				if (t.awardType === u.d.Community) return t.subredditCoinReward && t.coinReward ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the post and grants "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "subreddit-coins"
-				}, t.subredditCoinReward), " to the community and "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, t.subredditCoinReward), " to the community and "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "user-coins"
-				}, t.coinReward), " to the recipient. Exclusive to ", s.a.createElement(J.b, {
+				}, t.coinReward), " to the recipient. Exclusive to ", s.a.createElement(Q.b, {
 					name: "subreddit-name"
-				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the comment and grants "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the comment and grants "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "subreddit-coins"
-				}, t.subredditCoinReward), " to the community. Exclusive to ", s.a.createElement(J.b, {
+				}, t.subredditCoinReward), " to the community. Exclusive to ", s.a.createElement(Q.b, {
 					name: "subreddit-name"
-				}, "r/".concat(n)), ".")) : t.subredditCoinReward ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the post and grants "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, "r/".concat(n)), ".")) : t.subredditCoinReward ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the post and grants "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "number-coins"
-				}, t.subredditCoinReward), " to the community. Exclusive to ", s.a.createElement(J.b, {
+				}, t.subredditCoinReward), " to the community. Exclusive to ", s.a.createElement(Q.b, {
 					name: "subreddit-name"
-				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the comment and grants "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the comment and grants "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "number-coins"
-				}, t.subredditCoinReward), " to the community. Exclusive to ", s.a.createElement(J.b, {
+				}, t.subredditCoinReward), " to the community. Exclusive to ", s.a.createElement(Q.b, {
 					name: "subreddit-name"
-				}, "r/".concat(n)), ".")) : "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the post. Exclusive to ", s.a.createElement(J.b, {
+				}, "r/".concat(n)), ".")) : "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the post. Exclusive to ", s.a.createElement(Q.b, {
 					name: "subreddit-name"
-				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the comment. Exclusive to ", s.a.createElement(J.b, {
+				}, "r/".concat(n)), ".")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the comment. Exclusive to ", s.a.createElement(Q.b, {
 					name: "subreddit-name"
 				}, "r/".concat(n)), "."));
 				if (t.awardType === u.d.Moderator) {
 					const e = t.daysOfPremium ? Math.floor(t.daysOfPremium / 30) : 0;
-					return "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the post and gives the recipient ", s.a.createElement(J.b, {
+					return "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the post and gives the recipient ", s.a.createElement(Q.b, {
 						name: "months-of-premium"
-					}, e), " ", s.a.createElement(J.a, {
+					}, e), " ", s.a.createElement(Q.a, {
 						name: "months-of-premium",
 						singular: "month",
 						plural: "months",
 						count: e
-					}), " of Premium (which includes "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+					}), " of Premium (which includes "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 						name: "number-coins"
-					}, "700 Coins"), " a month).")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Shows an Award on the comment and gives the recipient ", s.a.createElement(J.b, {
+					}, "700 Coins"), " a month).")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Shows an Award on the comment and gives the recipient ", s.a.createElement(Q.b, {
 						name: "months-of-premium"
-					}, e), " ", s.a.createElement(J.a, {
+					}, e), " ", s.a.createElement(Q.a, {
 						name: "months-of-premium",
 						singular: "month",
 						plural: "months",
 						count: e
-					}), " of Premium (which includes "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+					}), " of Premium (which includes "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 						name: "number-coins"
 					}, "700 Coins"), " a month)."))
 				}
-				return "gid_1" === t.id ? "post" === a ? s.a.createElement(J.c, null, "Shows the Silver Award on the post... and that's it.") : s.a.createElement(J.c, null, "Shows the Silver Award on the comment... and that's it.") : "gid_2" === t.id ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Gives the author a week of Reddit Premium, "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				return "gid_1" === t.id ? "post" === a ? s.a.createElement(Q.c, null, "Shows the Silver Award on the post... and that's it.") : s.a.createElement(Q.c, null, "Shows the Silver Award on the comment... and that's it.") : "gid_2" === t.id ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Gives the author a week of Reddit Premium, "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "number-coins"
-				}, "100 Coins"), " to do with as they please, and shows a Gold Award on the post.")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Gives the author a week of Reddit Premium, "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, "100 Coins"), " to do with as they please, and shows a Gold Award on the post.")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Gives the author a week of Reddit Premium, "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "number-coins"
-				}, "100 Coins"), " to do with as they please, and shows a Gold Award on the comment.")) : "gid_3" === t.id ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Gives the author a month of Reddit Premium, which includes "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, "100 Coins"), " to do with as they please, and shows a Gold Award on the comment.")) : "gid_3" === t.id ? "post" === a ? s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Gives the author a month of Reddit Premium, which includes "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "number-coins"
-				}, "700 Coins"), " for that month, and shows a Platinum Award on the post.")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(J.c, null, "Gives the author a month of Reddit Premium, which includes "), s.a.createElement(ee.a, null), s.a.createElement(J.c, null, s.a.createElement(J.b, {
+				}, "700 Coins"), " for that month, and shows a Platinum Award on the post.")) : s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.c, null, "Gives the author a month of Reddit Premium, which includes "), s.a.createElement(ee.a, null), s.a.createElement(Q.c, null, s.a.createElement(Q.b, {
 					name: "number-coins"
 				}, "700 Coins"), " for that month, and shows a Platinum Award on the comment.")) : null
 			};
@@ -535,7 +535,7 @@
 							className: V.a.radioOption,
 							showButton: !0,
 							value: se.PRIVATE
-						}, s.a.createElement(J.c, null, "Give anonymously")))
+						}, s.a.createElement(Q.c, null, "Give anonymously")))
 					}
 					return s.a.createElement(X.a, {
 						className: V.a.giver,
@@ -551,7 +551,7 @@
 						message: a
 					} = this.props, n = {
 						disabled: !1,
-						maxLength: Object(Q.c)(t, e),
+						maxLength: Object(J.c)(t, e),
 						placeholder: D.fbt._("Optional private message", null, {
 							hk: "22UGRj"
 						})
@@ -586,7 +586,7 @@
 						className: V.a.publicIndicator
 					}, s.a.createElement(U.a, {
 						className: V.a.eyeIcon
-					}), s.a.createElement(J.c, null, "Shows my username")) : null
+					}), s.a.createElement(Q.c, null, "Shows my username")) : null
 				}
 				render() {
 					const {
@@ -607,7 +607,7 @@
 						className: V.a.giver
 					}, s.a.createElement(Z.a, {
 						className: V.a.modIcon
-					}), s.a.createElement(J.c, null, "Given by a Moderator")) : this.renderPrivacyToggle(), this.renderTextArea(), this.renderPublicIndicator())
+					}), s.a.createElement(Q.c, null, "Given by a Moderator")) : this.renderPrivacyToggle(), this.renderTextArea(), this.renderPublicIndicator())
 				}
 			}
 			var ie = ce,
@@ -967,7 +967,7 @@
 							href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 							onClick: this.handleLearnMoreLinkClick,
 							target: "_blank"
-						}, s.a.createElement(J.c, null, "How do Awards work?"))
+						}, s.a.createElement(Q.c, null, "How do Awards work?"))
 					})
 				}
 				render() {
@@ -1144,7 +1144,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(l.L)(e)
+					Object(l.J)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -1285,7 +1285,7 @@
 					purchaseCatalogRequested: () => e(Object(x.a)()),
 					selectAward: t => e(w(t)),
 					setIsAnonymous: t => {
-						e(Object(h.setIsAnonymous)(t)), Object(l.L)(t)
+						e(Object(h.setIsAnonymous)(t)), Object(l.J)(t)
 					},
 					subredditAboutRequested: t => e(Object(A.t)(t)),
 					updateMessage: t => e(Object(h.updateMessage)(t))
@@ -1427,4 +1427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.e94bcca8648d1d523be0.js.map
+//# sourceMappingURL=FramedGild~GildModal.9697e0a992bc102c8ebb.js.map

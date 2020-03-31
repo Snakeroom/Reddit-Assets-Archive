@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.320ec147ae9f676d2028.js
-// Retrieved at 3/30/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3b6679f3b179db282434.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1583,8 +1583,8 @@
 				k = Object(x.a)(O.Y),
 				I = e => async t => {
 					t(_(e))
-				}, N = Object(x.a)(O.N), P = Object(x.a)(O.U);
-			var j = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				}, N = Object(x.a)(O.N), j = Object(x.a)(O.U);
+			var P = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				L = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				T = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
 				M = s("./src/reddit/actions/reportFlow.ts"),
@@ -1845,8 +1845,8 @@
 				ke = s("./src/lib/lessComponent.tsx"),
 				Ie = s("./src/lib/opener/index.ts"),
 				Ne = s("./src/reddit/icons/fonts/Menu/index.tsx"),
-				Pe = s("./src/reddit/icons/fonts/Share/index.tsx"),
-				je = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				je = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				Pe = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				Le = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				Te = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				Me = s("./src/reddit/icons/svgs/Rules/index.tsx"),
@@ -1883,7 +1883,7 @@
 							hk: "2e71ai"
 						}),
 						value: "share"
-					}, a.a.createElement(Pe.a, {
+					}, a.a.createElement(je.a, {
 						className: We.a.menuIcon
 					}))
 				},
@@ -1956,7 +1956,7 @@
 						iconWrapperClassName: We.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-hide"),
 						onClick: s
-					}, a.a.createElement(je.a, {
+					}, a.a.createElement(Pe.a, {
 						className: We.a.overflowItemIcon
 					})))
 				},
@@ -2091,7 +2091,7 @@
 						hk: "I91IP"
 					}),
 					value: "share"
-				}, a.a.createElement(Pe.a, {
+				}, a.a.createElement(je.a, {
 					className: Xe.a.shareIcon
 				}))
 			}, it = ke.a.wrapped(Ne.a, "menuIcon", Xe.a), ct = e => {
@@ -2144,7 +2144,7 @@
 					iconWrapperClassName: Xe.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-hide"),
 					onClick: s
-				}, a.a.createElement(je.a, {
+				}, a.a.createElement(Pe.a, {
 					className: Xe.a.overflowItemIcon
 				})))
 			}, dt = Object(i.b)(null, e => ({
@@ -2646,9 +2646,9 @@
 				}
 			}
 			var yt = Object(i.b)(Ct, (e, t) => ({
-				copyLink: t => e(Object(Q.F)(t)),
+				copyLink: t => e(Object(Q.D)(t)),
 				onHide: () => {
-					t.currentStreamId && (e(Object(Q.Z)(t.currentStreamId, !0, !0, !0)), e(I(t.currentStreamId)))
+					t.currentStreamId && (e(Object(Q.X)(t.currentStreamId, !0, !0, !0)), e(I(t.currentStreamId)))
 				}
 			}))(Et);
 			Object(x.a)(O.r);
@@ -2673,7 +2673,7 @@
 				}).then(() => !0, () => !1);
 			var It = s("./src/reddit/components/PublicAccessNetwork/Theater/StaticScreen/index.m.less"),
 				Nt = s.n(It);
-			const Pt = Object(d.c)({
+			const jt = Object(d.c)({
 				isIntroInProgress: q.b,
 				previewUrl: (e, t) => {
 					let {
@@ -2684,7 +2684,7 @@
 					}) : void 0
 				}
 			});
-			class jt extends o.Component {
+			class Pt extends o.Component {
 				constructor(e) {
 					super(e)
 				}
@@ -2732,12 +2732,12 @@
 					return !!e && (t && e.post.id !== t.post.id || !t)
 				}
 			}
-			var Lt = Object(i.b)(Pt, (e, t) => ({
+			var Lt = Object(i.b)(jt, (e, t) => ({
 					preloadImages: t => e(((e, t) => async (s, r) => {
 						const n = await s(xt(e, t));
 						s(Ot(n))
 					})(t))
-				}))(jt),
+				}))(Pt),
 				Tt = s("./src/lib/constants/index.ts"),
 				Mt = s("./src/lib/makeCommentsPageKey/index.ts"),
 				Vt = s("./src/lib/makeDraftKey/index.ts"),
@@ -3013,12 +3013,12 @@
 				vs = Object(i.b)(bs, (e, t) => ({
 					closeLocation: () => e(Object(c.b)(t.location.state[D.a.CloseLocation])),
 					fetchPostForStream: t => e(Object(y.a)(t)),
-					subscribeConfig: () => e(j.a.subscribeConfig(t.related || t.subreddit)),
-					subscribeStreams: () => e(j.a.subscribeStreams(t.related || t.subreddit)),
-					onRecommendedViewerSubredditsSubscribe: () => e(j.a.subscribeRecommendedViewerSubreddits()),
-					onReportModalRequested: t => e(Object(M.k)(t, void 0, !0)),
-					onStatsSubscribe: t => e(j.a.subscribeStats(t)),
-					onHeartbeatSubscribe: t => e(j.a.subscribeHeartbeat(t)),
+					subscribeConfig: () => e(P.a.subscribeConfig(t.related || t.subreddit)),
+					subscribeStreams: () => e(P.a.subscribeStreams(t.related || t.subreddit)),
+					onRecommendedViewerSubredditsSubscribe: () => e(P.a.subscribeRecommendedViewerSubreddits()),
+					onReportModalRequested: t => e(Object(M.j)(t, void 0, !0)),
+					onStatsSubscribe: t => e(P.a.subscribeStats(t)),
+					onHeartbeatSubscribe: t => e(P.a.subscribeHeartbeat(t)),
 					receiveHlsStreamEnded: t => e(Object(h.a)(t)),
 					receiveHlsStreamRemoved: t => e(Object(h.b)(t)),
 					removeStreamFromHistory: t => e(I(t)),
@@ -3030,7 +3030,7 @@
 						isMuted: t
 					})),
 					setVideoVolume: t => e(E.e(t)),
-					updateVideoTimestamp: (t, s) => e(P({
+					updateVideoTimestamp: (t, s) => e(j({
 						streamId: t,
 						timestamp: s
 					})),
@@ -3560,7 +3560,7 @@
 			})), s.d(t, "m", (function() {
 				return k
 			})), s.d(t, "g", (function() {
-				return P
+				return j
 			})), s.d(t, "c", (function() {
 				return M
 			})), s.d(t, "f", (function() {
@@ -3712,8 +3712,8 @@
 					});
 					return a ? a.post.id : void 0
 				}),
-				P = Object(n.a)(Object(r.a)(N, E, (e, t) => e ? t[e] : void 0)),
-				j = Object(r.a)((e, t) => {
+				j = Object(n.a)(Object(r.a)(N, E, (e, t) => e ? t[e] : void 0)),
+				P = Object(r.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -3733,7 +3733,7 @@
 				T = Object(r.a)(g, w, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				M = Object(n.a)(Object(r.a)(j, E, (e, t) => e ? t[e] : void 0)),
+				M = Object(n.a)(Object(r.a)(P, E, (e, t) => e ? t[e] : void 0)),
 				V = Object(n.a)(Object(r.a)(L, E, (e, t) => e ? t[e] : void 0)),
 				R = Object(n.a)(Object(r.a)(T, E, (e, t) => e ? t[e] : void 0)),
 				A = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign({}, t[s], {
@@ -3763,12 +3763,12 @@
 				};
 				return s[t] >= s[e]
 			}
-			const F = Object(r.a)(j, v, (e, t) => e && t.timestamps[e] || 0);
+			const F = Object(r.a)(P, v, (e, t) => e && t.timestamps[e] || 0);
 			var U;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(U || (U = {}));
-			const W = Object(r.a)(j, E, p.b, (e, t, s) => {
+			const W = Object(r.a)(P, E, p.b, (e, t, s) => {
 					if (s) return U.INTRO;
 					const r = e && t[e];
 					if (!r) return U.UNAVAILABLE;
@@ -3797,4 +3797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.320ec147ae9f676d2028.js.map
+//# sourceMappingURL=PublicAccessNetwork.3b6679f3b179db282434.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.7513fa40d4f22e9712d0.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.50902792c8689ecfe297.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -292,7 +292,7 @@
 				X = l.a.wrapped(w, "DistinguishShield", I.a),
 				V = Object(g.t)(),
 				q = e => "Distinguish--Dropdown--".concat(e),
-				H = Object(a.c)({
+				G = Object(a.c)({
 					currentUser: O.i,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
@@ -318,7 +318,7 @@
 					},
 					modModeEnabled: g.O
 				}),
-				Q = Object(i.b)(H, (e, t) => {
+				H = Object(i.b)(G, (e, t) => {
 					let {
 						comment: s
 					} = t;
@@ -334,7 +334,7 @@
 						}))
 					}
 				});
-			t.c = V(Q(l.a.wrapped(Object(x.c)(e => {
+			t.c = V(H(l.a.wrapped(Object(x.c)(e => {
 				var {
 					className: t,
 					comment: s,
@@ -896,14 +896,14 @@
 					id: f,
 					title: O,
 					onClose: () => {
-						g(!1), k("close", "click"), C(Object(c.I)()), C(Object(c.T)({
+						g(!1), k("close", "click"), C(Object(c.G)()), C(Object(c.R)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						C(Object(c.I)())
+						C(Object(c.G)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -919,7 +919,7 @@
 				})))], {
 					hk: "sfngx"
 				})), r.a.createElement(m.a, {
-					onClick: () => (g(!1), k("report", "click"), void C(Object(d.k)(s.id)))
+					onClick: () => (g(!1), k("report", "click"), void C(Object(d.j)(s.id)))
 				}, n.fbt._("Report", null, {
 					hk: "3M0Eii"
 				})))
@@ -953,7 +953,7 @@
 					k && O("modal", "show")
 				}, [k]);
 				const y = e => {
-					f(n.Closed), O("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), v(Object(l.k)(s.id, void 0, void 0, void 0, e))
+					f(n.Closed), O("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), v(Object(l.j)(s.id, void 0, void 0, e))
 				};
 				if (!k) return null;
 				let _ = null;
@@ -963,10 +963,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						f(n.Closed), O("close", "click"), v(Object(d.I)())
+						f(n.Closed), O("close", "click"), v(Object(d.G)())
 					},
 					onClickOutside: () => {
-						v(Object(d.I)())
+						v(Object(d.G)())
 					}
 				};
 				switch (g) {
@@ -2213,7 +2213,7 @@
 						return o()([...Object(d.a)(s.search)])
 					}
 				}),
-				H = Object(c.a)(q, C.O, b.M, g.k, (e, t) => {
+				G = Object(c.a)(q, C.O, b.M, g.k, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -2238,8 +2238,8 @@
 						subredditName: i
 					}
 				}),
-				Q = Object(a.b)(H);
-			class z extends i.a.Component {
+				H = Object(a.b)(G);
+			class Q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: "bulk_mod_action",
@@ -2292,7 +2292,7 @@
 					}))
 				}
 			}
-			t.default = V(Q(Object(u.c)(z)))
+			t.default = V(H(Object(u.c)(Q)))
 		},
 		"./src/reddit/selectors/experiments/adSidebar.ts": function(e, t, s) {
 			"use strict";
@@ -2311,4 +2311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.7513fa40d4f22e9712d0.js.map
+//# sourceMappingURL=ModQueuePages.50902792c8689ecfe297.js.map

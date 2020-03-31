@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.941b5e11688da66fe9c9.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.fef283da169c8e53bc83.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9839,7 +9839,7 @@
 				layout: {
 					body: d(i).body,
 					colsBorder: d(i).line,
-					controlsBorder: Object(a.j)(o.a.black, .15),
+					controlsBorder: Object(a.g)(o.a.black, .15),
 					header: {
 						counterBg: o.a.snoo,
 						counterText: o.a.white
@@ -9859,7 +9859,7 @@
 					iconBg: o.a.alienblue
 				},
 				sidebar: {
-					background: Object(a.j)(Object(a.a)(.3, o.a.white), .1),
+					background: Object(a.g)(Object(a.a)(.3, o.a.white), .1),
 					subreddit: {
 						background: {
 							active: o.a.alienblue,
@@ -9933,7 +9933,7 @@
 				layout: {
 					body: d(l).body,
 					colsBorder: d(l).line,
-					controlsBorder: Object(a.j)(o.a.white, .15),
+					controlsBorder: Object(a.g)(o.a.white, .15),
 					header: {
 						counterBg: o.a.snoo,
 						counterText: o.a.white
@@ -9953,17 +9953,17 @@
 					iconBg: o.a.alienblue
 				},
 				sidebar: {
-					background: Object(a.j)(Object(a.a)(.4, o.a.white), .1),
+					background: Object(a.g)(Object(a.a)(.4, o.a.white), .1),
 					subreddit: {
 						background: {
 							active: o.a.alienblue,
-							hover: Object(a.k)(.2, d(l).canvas)
+							hover: Object(a.h)(.2, d(l).canvas)
 						}
 					},
 					basic: {
 						background: {
 							active: o.a.alienblue,
-							hover: Object(a.k)(.2, d(l).canvas)
+							hover: Object(a.h)(.2, d(l).canvas)
 						}
 					},
 					text: {
@@ -13974,4 +13974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.941b5e11688da66fe9c9.js.map
+//# sourceMappingURL=Chat~RedesignChat.fef283da169c8e53bc83.js.map

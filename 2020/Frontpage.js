@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1e6bc4e53dc802c6f4f0.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e7d8166199af09589cb8.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -526,7 +526,7 @@
 							id: e,
 							numTimesDismissable: t
 						} = this.props.featuredLiveThread;
-						Object(u.D)(e, t), this.props.sendEvent(Object(m.d)(e))
+						Object(u.B)(e, t), this.props.sendEvent(Object(m.d)(e))
 					}, this.clickedButtonCta = () => {
 						this.props.sendEvent(Object(m.c)(this.props.featuredLiveThread.id))
 					}
@@ -540,7 +540,7 @@
 						const s = Object(u.d)(e.id);
 						s < e.numTimesDismissable && (this.setState({
 							announcementBannerHidden: !1
-						}), t(Object(m.e)(e.id)), Object(u.D)(e.id, s + 1))
+						}), t(Object(m.e)(e.id)), Object(u.B)(e.id, s + 1))
 					}
 				}
 				render() {
@@ -1675,7 +1675,7 @@
 						background: m(t)
 					}
 				},
-				b = e => Object(n.o)(.2, e),
+				b = e => Object(n.l)(.2, e),
 				h = e => e && e.postBackgroundColor ? {
 					backgroundColor: b(e.postBackgroundColor)
 				} : u,
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.1e6bc4e53dc802c6f4f0.js.map
+//# sourceMappingURL=Frontpage.e7d8166199af09589cb8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.94c37797c9b258203962.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.bb37a2e30a2912e17424.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -469,7 +469,7 @@
 					className: Object(l.a)(x.a.LoadingNav, t.isLoading && x.a.loading)
 				}), i.a.createElement(L, null)))))
 			}, w = Object(d.a)({
-				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
+				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => i.a.createElement(j, {
 					gradientType: "posts",
 					isLoading: !1
@@ -1530,4 +1530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.94c37797c9b258203962.js.map
+//# sourceMappingURL=Topic.bb37a2e30a2912e17424.js.map

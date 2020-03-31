@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.ebdac8b0511624581423.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.4014d5bff99a539bec81.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -522,7 +522,7 @@
 				z = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
 				J = t.n(z);
 			t.d(s, "a", (function() {
-				return q
+				return Y
 			}));
 			var X = function(e, s) {
 				var t = {};
@@ -590,7 +590,7 @@
 				}
 			}
 			const K = Object(m.a)(Object(a.a)(Q));
-			class q extends i.a.Component {
+			class Y extends i.a.Component {
 				render() {
 					return i.a.createElement(K, this.props)
 				}
@@ -800,7 +800,7 @@
 					}, o.a.createElement("div", {
 						className: E.a.layout,
 						style: {
-							backgroundColor: Object(i.e)(-.95, Object(C.a)(this.props).navIcon)
+							backgroundColor: Object(i.d)(-.95, Object(C.a)(this.props).navIcon)
 						}
 					}, o.a.createElement("div", {
 						className: E.a.header
@@ -904,8 +904,8 @@
 						})(s, e.onNavigate, e.onClick)
 					},
 					style: Object.assign({}, e.style, {
-						"--RawHTMLDisplay-tr-even": Object(r.j)(Object(l.a)(e).body, .8),
-						"--RawHTMLDisplay-tr-odd": Object(r.j)(Object(l.a)(e).line, .8)
+						"--RawHTMLDisplay-tr-even": Object(r.g)(Object(l.a)(e).body, .8),
+						"--RawHTMLDisplay-tr-odd": Object(r.g)(Object(l.a)(e).line, .8)
 					})
 				}), "StyledRawHTMLDisplay", u.a);
 			s.a = p(Object(a.a)(b))
@@ -1184,10 +1184,10 @@
 						}))
 					},
 					handleVote: s => {
-						const r = s === d.a.upvoted ? Object(n.cb)(t) : Object(n.x)(t);
+						const r = s === d.a.upvoted ? Object(n.ab)(t) : Object(n.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(n.ab)(t)),
+					onIgnoreReports: () => e(Object(n.Y)(t)),
 					onOpenReportsDropdown: s => e(Object(a.h)({
 						tooltipId: s
 					}))
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.ebdac8b0511624581423.js.map
+//# sourceMappingURL=InFeedChaining.4014d5bff99a539bec81.js.map

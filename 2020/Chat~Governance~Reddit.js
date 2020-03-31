@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b0ec4ea4eb495f8e3ca.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2e608145fac9448d2463.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11136,7 +11136,6 @@
 					FRAMED_MODAL: "framedModal",
 					REPORT: "report",
 					POLL: "poll",
-					LAYER_REDIRECT: "layerRedirect",
 					USER_DATA_REQUEST: "userDataRequest"
 				},
 				Le = new Set([Ae.INDEX, Ae.LISTING, Ae.MULTIREDDIT, Ae.SEARCH_RESULTS, Ae.SUBREDDIT, Ae.PROFILE, Ae.PROFILE_COMMENTS, Ae.PROFILE_OVERVIEW, Ae.PROFILE_POSTS, Ae.PROFILE_PRIVATE, Ae.TOPIC]),
@@ -11523,14 +11522,14 @@
 					}))
 				},
 				M = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("6aa8763-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("d22eced-production") + " %cpublic url %c".concat(b.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(b.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: b.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6aa8763-production",
+						release: "d22eced-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(O.d)(), new s.Integrations.Breadcrumbs({
@@ -11601,7 +11600,7 @@
 							translations: e
 						})
 					}(), S = m.user && m.user.account ? m.user.account.id : null;
-				Object(C.A)(S);
+				Object(C.y)(S);
 				const {
 					routes: F
 				} = e;
@@ -11833,7 +11832,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6aa8763-production",
+							releaseClient: "d22eced-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -12955,8 +12954,8 @@
 					nsfw: "#FF585B",
 					op: "#24A0ED",
 					orangered: "#FF4500",
-					overlayBackground: Object(n.j)("#1c1c1c", .9),
-					overlayReportFlow: Object(n.j)("#1a1a1b", .6),
+					overlayBackground: Object(n.g)("#1c1c1c", .9),
+					overlayReportFlow: Object(n.g)("#1a1a1b", .6),
 					quarantine: "#FFB000",
 					removed: "#FF585B",
 					reported: "#FFB000",
@@ -13005,17 +13004,17 @@
 				return m
 			})), i.d(t, "l", (function() {
 				return p
-			})), i.d(t, "o", (function() {
-				return _
 			})), i.d(t, "m", (function() {
-				return g
+				return _
 			})), i.d(t, "n", (function() {
+				return g
+			})), i.d(t, "q", (function() {
 				return w
 			})), i.d(t, "p", (function() {
 				return y
-			})), i.d(t, "s", (function() {
-				return v
 			})), i.d(t, "r", (function() {
+				return v
+			})), i.d(t, "s", (function() {
 				return b
 			})), i.d(t, "t", (function() {
 				return f
@@ -13025,12 +13024,8 @@
 				return S
 			})), i.d(t, "w", (function() {
 				return F
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "o", (function() {
 				return E
-			})), i.d(t, "y", (function() {
-				return B
-			})), i.d(t, "q", (function() {
-				return I
 			}));
 			const n = "announcement-banner-seen-store",
 				r = "banner_dismissed_store",
@@ -13045,18 +13040,16 @@
 				m = "gild_defaults_store",
 				p = "inline-id-card-primary-topic-tooltip-store",
 				_ = "inline-edit-edu-tooltip-store",
-				g = "layers-saved-colors",
-				w = "layers-saved-surfaces",
-				y = "local_persisted_experiments_store",
-				v = "mod-onboarding-store",
-				b = "modal_dismissed_store",
-				f = "post-chain-dismissal-store",
-				T = "post-chain-store",
-				S = "post-creation-edu-tooltip-store",
-				F = "profile-pinned-posts-store",
-				E = "recent_searches",
-				B = "rpan-user-settings-store",
-				I = "low-activity-call-to-action-store"
+				g = "local_persisted_experiments_store",
+				w = "mod-onboarding-store",
+				y = "modal_dismissed_store",
+				v = "post-chain-dismissal-store",
+				b = "post-chain-store",
+				f = "post-creation-edu-tooltip-store",
+				T = "profile-pinned-posts-store",
+				S = "recent_searches",
+				F = "rpan-user-settings-store",
+				E = "low-activity-call-to-action-store"
 		},
 		"./src/reddit/constants/postLayout.ts": function(e, t, i) {
 			"use strict";
@@ -13189,77 +13182,77 @@
 				d = i("./node_modules/lodash/isObjectLike.js"),
 				l = i.n(d),
 				a = i("./src/reddit/constants/localStorage.ts");
-			const u = [a.d, a.p];
+			const u = [a.d, a.n];
 			var c = i("./src/reddit/models/Search/index.ts"),
 				h = i("./node_modules/uuid/v4.js"),
 				m = i.n(h);
-			i.d(t, "O", (function() {
+			i.d(t, "L", (function() {
 				return g
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "m", (function() {
 				return w
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return y
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "y", (function() {
 				return v
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "O", (function() {
 				return F
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "z", (function() {
 				return E
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "q", (function() {
 				return B
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "C", (function() {
 				return I
 			})), i.d(t, "e", (function() {
 				return R
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "v", (function() {
 				return k
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "T", (function() {
 				return x
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "A", (function() {
 				return O
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "G", (function() {
 				return C
 			})), i.d(t, "g", (function() {
 				return N
 			})), i.d(t, "k", (function() {
 				return A
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "J", (function() {
 				return L
-			})), i.d(t, "v", (function() {
-				return M
-			})), i.d(t, "V", (function() {
-				return U
-			})), i.d(t, "U", (function() {
-				return W
 			})), i.d(t, "u", (function() {
-				return z
-			})), i.d(t, "T", (function() {
-				return V
+				return M
+			})), i.d(t, "S", (function() {
+				return U
+			})), i.d(t, "R", (function() {
+				return W
 			})), i.d(t, "t", (function() {
+				return z
+			})), i.d(t, "Q", (function() {
+				return V
+			})), i.d(t, "s", (function() {
 				return Y
 			})), i.d(t, "d", (function() {
 				return K
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "B", (function() {
 				return Q
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "w", (function() {
 				return J
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "F", (function() {
 				return X
 			})), i.d(t, "h", (function() {
 				return Z
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "H", (function() {
 				return $
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "N", (function() {
 				return ee
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return te
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "r", (function() {
 				return ie
 			})), i.d(t, "a", (function() {
 				return ne
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "x", (function() {
 				return re
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "P", (function() {
 				return se
 			})), i.d(t, "i", (function() {
 				return oe
@@ -13267,34 +13260,26 @@
 				return de
 			})), i.d(t, "c", (function() {
 				return le
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "D", (function() {
 				return ae
 			})), i.d(t, "l", (function() {
 				return ce
-			})), i.d(t, "M", (function() {
-				return he
-			})), i.d(t, "Y", (function() {
-				return me
-			})), i.d(t, "m", (function() {
-				return pe
-			})), i.d(t, "N", (function() {
-				return _e
-			})), i.d(t, "x", (function() {
-				return ge
-			})), i.d(t, "X", (function() {
-				return we
-			})), i.d(t, "j", (function() {
-				return ye
 			})), i.d(t, "K", (function() {
-				return ve
+				return he
+			})), i.d(t, "U", (function() {
+				return me
+			})), i.d(t, "j", (function() {
+				return pe
+			})), i.d(t, "I", (function() {
+				return _e
 			})), i.d(t, "f", (function() {
+				return ge
+			})), i.d(t, "E", (function() {
+				return we
+			})), i.d(t, "o", (function() {
+				return ve
+			})), i.d(t, "M", (function() {
 				return be
-			})), i.d(t, "G", (function() {
-				return fe
-			})), i.d(t, "p", (function() {
-				return Se
-			})), i.d(t, "P", (function() {
-				return Fe
 			}));
 			const p = (e, t) => {
 					const i = e.getItem(t);
@@ -13350,12 +13335,12 @@
 					const r = p(e, t);
 					return !(!r || !r[i]) && !0 === r[i][n]
 				},
-				F = (e, t) => b(localStorage, a.r, e, t),
+				F = (e, t) => b(localStorage, a.p, e, t),
 				E = e => ((e, t, i) => {
 					const n = p(e, t) || {};
 					return delete n[i], _(e, t, n)
-				})(localStorage, a.r, e),
-				B = e => T(localStorage, a.r, e),
+				})(localStorage, a.p, e),
+				B = e => T(localStorage, a.p, e),
 				I = (e, t, i) => f(localStorage, a.b, e, t, i),
 				R = (e, t) => S(localStorage, a.b, e, t),
 				k = e => ((e, t, i) => {
@@ -13365,7 +13350,7 @@
 						section: c.c.recent,
 						id: m()()
 					}))
-				})(localStorage, a.x, e),
+				})(localStorage, a.v, e),
 				x = (e, t) => ((e, t, i, n) => {
 					let r = (p(e, n) || {})[t] || [],
 						s = -1;
@@ -13377,22 +13362,22 @@
 						})
 					}), -1 !== s && r.splice(s, 1), r.length >= 5 && (r = r.slice(0, 4));
 					const o = {
-						[a.x]: r
+						[a.v]: r
 					};
 					return r.unshift(i), _(e, n, o), r
-				})(localStorage, a.x, e, t),
+				})(localStorage, a.v, e, t),
 				O = (e, t) => ((e, t, i, n) => {
 					const r = p(e, n);
 					let s = [];
 					if (r && r[t]) {
 						s = r[t].filter(e => !o()(e, i));
 						const d = {
-							[a.x]: s
+							[a.v]: s
 						};
 						_(e, n, d)
 					}
 					return s
-				})(localStorage, a.x, e, t),
+				})(localStorage, a.v, e, t),
 				C = (e, t) => ((e, t, i, n) => {
 					const r = p(e, t) || {};
 					return r[i] = n, _(e, t, r)
@@ -13418,11 +13403,11 @@
 				G = (e, t) => {
 					Object(n.a)() && localStorage.setItem(e, t)
 				},
-				M = () => j(a.w),
-				U = () => P(a.w),
-				q = e => g(a.v, e),
+				M = () => j(a.u),
+				U = () => P(a.u),
+				q = e => g(a.t, e),
 				H = () => {
-					const e = w(a.v);
+					const e = w(a.t);
 					if (e) return e;
 					const t = j("post-creation-event-tooltip-store");
 					t && localStorage.removeItem("post-creation-event-tooltip-store");
@@ -13467,11 +13452,11 @@
 				},
 				Z = () => parseInt(D(a.h)) || 0,
 				$ = e => G(a.h, String(e)),
-				ee = (e, t, i) => f(localStorage, a.s, e, t, i),
-				te = (e, t) => S(localStorage, a.s, e, t),
+				ee = (e, t, i) => f(localStorage, a.q, e, t, i),
+				te = (e, t) => S(localStorage, a.q, e, t),
 				ie = () => {
 					try {
-						return w(a.u) || {}
+						return w(a.s) || {}
 					} catch (e) {
 						return {}
 					}
@@ -13484,10 +13469,10 @@
 							when: Date.now()
 						}
 					});
-					g(a.u, i)
+					g(a.s, i)
 				},
-				re = () => 1 === w(a.t),
-				se = e => g(a.t, e ? 1 : 0),
+				re = () => 1 === w(a.r),
+				se = e => g(a.r, e ? 1 : 0),
 				oe = () => w(a.i) || 0,
 				de = () => {
 					g(a.i, 3)
@@ -13505,7 +13490,7 @@
 				},
 				ce = () => {
 					if (!Object(n.a)()) return !1;
-					localStorage.removeItem(a.o);
+					localStorage.removeItem(a.m);
 					const e = w(a.l);
 					return !!e && (e.dismissed || e.seen >= 5)
 				},
@@ -13521,33 +13506,29 @@
 						seen: Math.min(e.seen + 1, 5)
 					}))
 				},
-				pe = () => w(a.m) || [],
-				_e = e => g(a.m, e),
-				ge = () => w(a.n) || {},
-				we = e => g(a.n, e),
-				ye = () => w(a.j),
-				ve = e => {
+				pe = () => w(a.j),
+				_e = e => {
 					g(a.j, e)
 				},
-				be = () => j(a.e),
-				fe = () => P(a.e),
-				Te = () => {
+				ge = () => j(a.e),
+				we = () => P(a.e),
+				ye = () => {
 					try {
-						return w(a.q)
+						return w(a.o)
 					} catch (e) {
 						return
 					}
 				},
-				Se = () => {
-					const e = Te();
+				ve = () => {
+					const e = ye();
 					if (!e) return !1;
 					const t = Object(r.c)(Math.floor(new Date(e.dismissedAt).valueOf() / 1e3));
 					return 3 === e.dismissedTimes || 1 === e.dismissedTimes && t <= 3 || 2 === e.dismissedTimes && t <= 7
 				},
-				Fe = () => {
-					const e = Te(),
+				be = () => {
+					const e = ye(),
 						t = e ? e.dismissedTimes + 1 : 1;
-					g(a.q, {
+					g(a.o, {
 						dismissedTimes: t,
 						dismissedAt: (new Date).toISOString()
 					})
@@ -13766,8 +13747,8 @@
 				d = {
 					highlight: "#E9F5FD",
 					metaText: "#787C7E",
-					metaTextAlpha50: Object(n.j)("#787C7E", .5),
-					metaTextShaded80: Object(n.l)(.8, "#787C7E"),
+					metaTextAlpha50: Object(n.g)("#787C7E", .5),
+					metaTextShaded80: Object(n.i)(.8, "#787C7E"),
 					placeholder: "#D3D6DA",
 					postIcon: "#878A8C",
 					postLine: "#D3D6DA",
@@ -13791,36 +13772,36 @@
 					pageHeader: "#0079D3",
 					postFlairText: "#1A1A1B"
 				},
-				a = (e, t, i) => Object(n.d)(i, (e => e ? "#FFFFFF" : "#000000")(t), e),
+				a = (e, t, i) => Object(n.c)(i, (e => e ? "#FFFFFF" : "#000000")(t), e),
 				u = (e, t) => a(e, t, .2),
 				c = Object.assign({}, l, {
-					actionIconAlpha20: Object(n.j)(l.actionIcon, .2),
-					actionIconAlpha50: Object(n.j)(l.actionIcon, .5),
-					actionIconShaded80: Object(n.l)(.8, l.actionIcon),
-					bodyAlpha50: Object(n.j)(l.body, .5),
-					bodyAlpha80: Object(n.j)(l.body, .8),
-					bodyShaded80: Object(n.l)(.8, l.body),
-					bodyTinted50: Object(n.m)(.5, l.body),
-					bodyTinted80: Object(n.m)(.8, l.body),
+					actionIconAlpha20: Object(n.g)(l.actionIcon, .2),
+					actionIconAlpha50: Object(n.g)(l.actionIcon, .5),
+					actionIconShaded80: Object(n.i)(.8, l.actionIcon),
+					bodyAlpha50: Object(n.g)(l.body, .5),
+					bodyAlpha80: Object(n.g)(l.body, .8),
+					bodyShaded80: Object(n.i)(.8, l.body),
+					bodyTinted50: Object(n.j)(.5, l.body),
+					bodyTinted80: Object(n.j)(.8, l.body),
 					bodyText: l.bodyText,
-					bodyTextAlpha03: Object(n.j)(l.bodyText, .03),
-					bodyTextAlpha20: Object(n.j)(l.bodyText, .2),
-					bodyTextShaded20: Object(n.l)(.2, l.bodyText),
-					bodyTextTinted20: Object(n.m)(.2, l.bodyText),
-					lightTextAlpha75: Object(n.j)(l.lightText, .75),
-					linkTextAlpha80: Object(n.j)(l.linkText, .5),
-					linkTextShaded80: Object(n.l)(.8, l.linkText),
-					linkTextTinted80: Object(n.m)(.8, l.linkText),
-					linkTextWithBody: Object(n.d)(.75, l.linkText, l.body),
-					navIconFaded10: Object(n.j)(l.navIcon, .1)
+					bodyTextAlpha03: Object(n.g)(l.bodyText, .03),
+					bodyTextAlpha20: Object(n.g)(l.bodyText, .2),
+					bodyTextShaded20: Object(n.i)(.2, l.bodyText),
+					bodyTextTinted20: Object(n.j)(.2, l.bodyText),
+					lightTextAlpha75: Object(n.g)(l.lightText, .75),
+					linkTextAlpha80: Object(n.g)(l.linkText, .5),
+					linkTextShaded80: Object(n.i)(.8, l.linkText),
+					linkTextTinted80: Object(n.j)(.8, l.linkText),
+					linkTextWithBody: Object(n.c)(.75, l.linkText, l.body),
+					navIconFaded10: Object(n.g)(l.navIcon, .1)
 				}),
 				h = {
 					downvote: s.a.downvote,
-					downvoteShaded80: Object(n.l)(.8, s.a.downvote),
-					downvoteTinted80: Object(n.m)(.8, s.a.downvote),
+					downvoteShaded80: Object(n.i)(.8, s.a.downvote),
+					downvoteTinted80: Object(n.j)(.8, s.a.downvote),
 					upvote: s.a.upvote,
-					upvoteShaded80: Object(n.l)(.8, s.a.upvote),
-					upvoteTinted80: Object(n.m)(.8, s.a.upvote)
+					upvoteShaded80: Object(n.i)(.8, s.a.upvote),
+					upvoteTinted80: Object(n.j)(.8, s.a.upvote)
 				},
 				m = {
 					active: "#24A0ED",
@@ -13841,7 +13822,7 @@
 						showCommunityIcon: !0
 					},
 					button: "#0079D3",
-					buttonShaded80: Object(n.l)(.8, "#0079D3"),
+					buttonShaded80: Object(n.i)(.8, "#0079D3"),
 					canvas: "#DAE0E6",
 					menu: "#FFFFFF",
 					menuActiveText: "#0079D3",
@@ -13857,9 +13838,9 @@
 						backgroundImage: void 0,
 						hoverLink: d.highlight,
 						inactiveLink: c.inactive,
-						inactiveSubmenuCaret: Object(n.k)(.6, "#24A0ED"),
-						inactiveSubmenuLink: Object(n.k)(.6, "#24A0ED"),
-						submenuBackgroundColor: Object(n.k)(.93, "#24A0ED"),
+						inactiveSubmenuCaret: Object(n.h)(.6, "#24A0ED"),
+						inactiveSubmenuLink: Object(n.h)(.6, "#24A0ED"),
+						submenuBackgroundColor: Object(n.h)(.93, "#24A0ED"),
 						useOverlay: !1
 					},
 					post: "#FFFFFF",
@@ -13878,31 +13859,31 @@
 						sidebarWidgetBackgroundColor: "#FFFFFF",
 						sidebarWidgetBorderColor: u("#FFFFFF", !1),
 						sidebarWidgetHeaderColor: "#FFFFFF",
-						sidebarWidgetHeaderColorAlpha60: Object(n.j)("#FFFFFF", .6),
+						sidebarWidgetHeaderColorAlpha60: Object(n.g)("#FFFFFF", .6),
 						sidebarWidgetTextColor: "#1A1A1B",
-						sidebarWidgetTextColorShaded80: Object(n.l)(.8, "#1A1A1B"),
+						sidebarWidgetTextColorShaded80: Object(n.i)(.8, "#1A1A1B"),
 						sidebarWidgetTitleColor: "#1A1A1B",
 						lineColor: Object(r.b)("#1A1A1B")
 					}
 				},
 				p = Object.assign({}, m, {
-					postTransparent20: Object(n.o)(.2, m.post),
-					postError: Object(n.d)(.1, "#FF0000", m.post),
-					activeAlpha10: Object(n.j)(m.active, .1),
-					activeAlpha50: Object(n.j)(m.active, .5),
-					activeLight60: Object(n.k)(.6, m.active),
-					activeTinted05: Object(n.m)(.05, m.active),
-					buttonAlpha05: Object(n.j)(m.button, .05),
-					buttonAlpha10: Object(n.j)(m.button, .1),
-					buttonAlpha20: Object(n.j)(m.button, .2),
-					buttonAlpha40: Object(n.j)(m.button, .4),
-					buttonAlpha50: Object(n.j)(m.button, .5),
-					buttonAlpha80: Object(n.j)(m.button, .8),
-					buttonShaded80: Object(n.l)(.8, m.button),
-					buttonTinted20: Object(n.m)(.2, m.button),
-					buttonTinted50: Object(n.m)(.5, m.button),
-					buttonTinted80: Object(n.m)(.8, m.button),
-					postTinted20: Object(n.m)(.2, m.post)
+					postTransparent20: Object(n.l)(.2, m.post),
+					postError: Object(n.c)(.1, "#FF0000", m.post),
+					activeAlpha10: Object(n.g)(m.active, .1),
+					activeAlpha50: Object(n.g)(m.active, .5),
+					activeLight60: Object(n.h)(.6, m.active),
+					activeTinted05: Object(n.j)(.05, m.active),
+					buttonAlpha05: Object(n.g)(m.button, .05),
+					buttonAlpha10: Object(n.g)(m.button, .1),
+					buttonAlpha20: Object(n.g)(m.button, .2),
+					buttonAlpha40: Object(n.g)(m.button, .4),
+					buttonAlpha50: Object(n.g)(m.button, .5),
+					buttonAlpha80: Object(n.g)(m.button, .8),
+					buttonShaded80: Object(n.i)(.8, m.button),
+					buttonTinted20: Object(n.j)(.2, m.button),
+					buttonTinted50: Object(n.j)(.5, m.button),
+					buttonTinted80: Object(n.j)(.8, m.button),
+					postTinted20: Object(n.j)(.2, m.post)
 				}),
 				_ = {
 					actionIcon: "#818384",
@@ -13910,7 +13891,7 @@
 					bodyFade: "#1A1A1B00",
 					bodyText: "#D7DADC",
 					button: "#D7DADC",
-					buttonShaded80: Object(n.l)(.8, "#D7DADC"),
+					buttonShaded80: Object(n.i)(.8, "#D7DADC"),
 					canvas: "#030303",
 					errorText: "#FF0000",
 					field: "#272729",
@@ -13924,8 +13905,8 @@
 					menuActiveText: "#D7DADC",
 					menuInactiveText: "#D7DADC",
 					metaText: "#818384",
-					metaTextAlpha50: Object(n.j)("#818384", .5),
-					metaTextShaded80: Object(n.l)(.8, "#818384"),
+					metaTextAlpha50: Object(n.g)("#818384", .5),
+					metaTextShaded80: Object(n.i)(.8, "#818384"),
 					monospaceColor: "#5291f8",
 					navIcon: "#D7DADC",
 					pageHeader: "#818384",
@@ -13949,52 +13930,52 @@
 						sidebarWidgetBackgroundColor: "#1A1A1B",
 						sidebarWidgetBorderColor: u("#1A1A1B", !0),
 						sidebarWidgetHeaderColor: "#1A1A1B",
-						sidebarWidgetHeaderColorAlpha60: Object(n.j)("#1A1A1B", .6),
+						sidebarWidgetHeaderColorAlpha60: Object(n.g)("#1A1A1B", .6),
 						sidebarWidgetTextColor: "#D7DADC",
-						sidebarWidgetTextColorShaded80: Object(n.l)(.8, "#D7DADC"),
+						sidebarWidgetTextColorShaded80: Object(n.i)(.8, "#D7DADC"),
 						sidebarWidgetTitleColor: "#818384",
 						lineColor: "#343536"
 					}
 				},
 				g = Object.assign({}, _, {
-					actionIconAlpha20: Object(n.j)(_.actionIcon, .2),
-					actionIconAlpha50: Object(n.j)(_.actionIcon, .5),
-					actionIconShaded80: Object(n.l)(.8, _.actionIcon),
-					bodyAlpha50: Object(n.j)(_.body, .5),
-					bodyAlpha80: Object(n.j)(_.body, .8),
-					bodyShaded80: Object(n.l)(.8, _.body),
-					bodyTinted50: Object(n.m)(.5, _.body),
-					bodyTinted80: Object(n.m)(.8, _.body),
-					bodyTextAlpha03: Object(n.j)(_.bodyText, .03),
-					bodyTextAlpha20: Object(n.j)(_.bodyText, .2),
-					bodyTextShaded20: Object(n.l)(.2, _.bodyText),
-					bodyTextTinted20: Object(n.m)(.2, _.bodyText),
-					buttonAlpha05: Object(n.j)(_.button, .05),
-					buttonAlpha10: Object(n.j)(_.button, .1),
-					buttonAlpha20: Object(n.j)(_.button, .2),
-					buttonAlpha40: Object(n.j)(_.button, .4),
-					buttonAlpha50: Object(n.j)(_.button, .5),
-					buttonAlpha80: Object(n.j)(_.button, .8),
-					buttonShaded80: Object(n.l)(.8, _.button),
-					buttonTinted20: Object(n.m)(.2, _.button),
-					buttonTinted50: Object(n.m)(.5, _.button),
-					buttonTinted80: Object(n.m)(.8, _.button),
-					lightTextAlpha75: Object(n.j)("#FFFFFF", .75),
-					navIconFaded10: Object(n.j)(_.navIcon, .1),
-					linkTextAlpha80: Object(n.j)(_.linkText, .5),
-					linkTextShaded80: Object(n.l)(.8, _.linkText),
-					linkTextTinted80: Object(n.m)(.8, _.linkText),
-					linkTextWithBody: Object(n.d)(.75, _.linkText, _.body),
-					postTransparent20: Object(n.o)(.2, _.post),
-					postError: Object(n.d)(.1, "#FF0000", _.post),
-					postTinted20: Object(n.m)(.2, _.post)
+					actionIconAlpha20: Object(n.g)(_.actionIcon, .2),
+					actionIconAlpha50: Object(n.g)(_.actionIcon, .5),
+					actionIconShaded80: Object(n.i)(.8, _.actionIcon),
+					bodyAlpha50: Object(n.g)(_.body, .5),
+					bodyAlpha80: Object(n.g)(_.body, .8),
+					bodyShaded80: Object(n.i)(.8, _.body),
+					bodyTinted50: Object(n.j)(.5, _.body),
+					bodyTinted80: Object(n.j)(.8, _.body),
+					bodyTextAlpha03: Object(n.g)(_.bodyText, .03),
+					bodyTextAlpha20: Object(n.g)(_.bodyText, .2),
+					bodyTextShaded20: Object(n.i)(.2, _.bodyText),
+					bodyTextTinted20: Object(n.j)(.2, _.bodyText),
+					buttonAlpha05: Object(n.g)(_.button, .05),
+					buttonAlpha10: Object(n.g)(_.button, .1),
+					buttonAlpha20: Object(n.g)(_.button, .2),
+					buttonAlpha40: Object(n.g)(_.button, .4),
+					buttonAlpha50: Object(n.g)(_.button, .5),
+					buttonAlpha80: Object(n.g)(_.button, .8),
+					buttonShaded80: Object(n.i)(.8, _.button),
+					buttonTinted20: Object(n.j)(.2, _.button),
+					buttonTinted50: Object(n.j)(.5, _.button),
+					buttonTinted80: Object(n.j)(.8, _.button),
+					lightTextAlpha75: Object(n.g)("#FFFFFF", .75),
+					navIconFaded10: Object(n.g)(_.navIcon, .1),
+					linkTextAlpha80: Object(n.g)(_.linkText, .5),
+					linkTextShaded80: Object(n.i)(.8, _.linkText),
+					linkTextTinted80: Object(n.j)(.8, _.linkText),
+					linkTextWithBody: Object(n.c)(.75, _.linkText, _.body),
+					postTransparent20: Object(n.l)(.2, _.post),
+					postError: Object(n.c)(.1, "#FF0000", _.post),
+					postTinted20: Object(n.j)(.2, _.post)
 				}),
 				w = {
-					lineShadedNinety: Object(n.l)(.9, g.line),
-					primaryButtonShadedEighty: Object(n.l)(.8, g.button),
-					primaryButtonTintedEighty: Object(n.m)(.8, g.button),
-					primaryButtonTintedSixty: Object(n.m)(.6, g.button),
-					primaryButtonTintedFifty: Object(n.m)(.5, g.button)
+					lineShadedNinety: Object(n.i)(.9, g.line),
+					primaryButtonShadedEighty: Object(n.i)(.8, g.button),
+					primaryButtonTintedEighty: Object(n.j)(.8, g.button),
+					primaryButtonTintedSixty: Object(n.j)(.6, g.button),
+					primaryButtonTintedFifty: Object(n.j)(.5, g.button)
 				},
 				y = {
 					active: "#0079D3",
@@ -14030,17 +14011,17 @@
 					}
 				},
 				v = Object.assign({}, y, {
-					activeAlpha10: Object(n.j)(y.active, .1),
-					activeAlpha50: Object(n.j)(y.active, .1),
-					activeLight60: Object(n.k)(.6, y.active),
-					activeTinted05: Object(n.m)(.05, y.active)
+					activeAlpha10: Object(n.g)(y.active, .1),
+					activeAlpha50: Object(n.g)(y.active, .1),
+					activeLight60: Object(n.h)(.6, y.active),
+					activeTinted05: Object(n.j)(.05, y.active)
 				}),
 				b = (e, t, i) => i ? f(e) : T(e, t),
 				f = e => Object.assign({}, F, {
-					activeAlpha10: e.active ? Object(n.j)(e.active, .1) : v.activeAlpha10,
-					activeAlpha50: e.active ? Object(n.j)(e.active, .5) : v.activeAlpha50,
-					activeLight60: e.active ? Object(n.k)(.6, e.active) : v.activeLight60,
-					activeTinted05: e.active ? Object(n.m)(.05, e.active) : v.activeTinted05,
+					activeAlpha10: e.active ? Object(n.g)(e.active, .1) : v.activeAlpha10,
+					activeAlpha50: e.active ? Object(n.g)(e.active, .5) : v.activeAlpha50,
+					activeLight60: e.active ? Object(n.h)(.6, e.active) : v.activeLight60,
+					activeTinted05: e.active ? Object(n.j)(.05, e.active) : v.activeTinted05,
 					banner: e.banner || v.banner,
 					navBar: e.navBar || v.navBar
 				}),
@@ -14050,37 +14031,37 @@
 						const r = a(e.post, !1, .89);
 						(i = Object.assign({}, c, t, e, {
 							bodyText: r,
-							bodyTextAlpha03: Object(n.j)(r, .03),
-							bodyTextAlpha20: Object(n.j)(r, .2),
-							bodyTextShaded20: Object(n.l)(.2, r),
-							bodyTextTinted20: Object(n.m)(.2, r),
-							activeAlpha10: e.active ? Object(n.j)(e.active, .1) : p.activeAlpha10,
-							activeAlpha50: e.active ? Object(n.j)(e.active, .5) : p.activeAlpha50,
-							activeLight60: e.active ? Object(n.k)(.6, e.active) : p.activeLight60,
-							activeTinted05: e.active ? Object(n.m)(.05, e.active) : p.activeTinted05,
-							buttonAlpha05: e.button ? Object(n.j)(e.button, .05) : p.buttonAlpha05,
-							buttonAlpha10: e.button ? Object(n.j)(e.button, .1) : p.buttonAlpha10,
-							buttonAlpha20: e.button ? Object(n.j)(e.button, .2) : p.buttonAlpha20,
-							buttonAlpha40: e.button ? Object(n.j)(e.button, .4) : p.buttonAlpha40,
-							buttonAlpha50: e.button ? Object(n.j)(e.button, .5) : p.buttonAlpha50,
-							buttonAlpha80: e.button ? Object(n.j)(e.button, .8) : p.buttonAlpha80,
-							buttonShaded80: e.button ? Object(n.l)(.8, e.button) : p.buttonShaded80,
-							buttonTinted20: e.button ? Object(n.m)(.2, e.button) : m.button,
-							buttonTinted50: e.button ? Object(n.m)(.5, e.button) : p.buttonTinted50,
-							buttonTinted80: e.button ? Object(n.m)(.8, e.button) : p.buttonTinted80,
+							bodyTextAlpha03: Object(n.g)(r, .03),
+							bodyTextAlpha20: Object(n.g)(r, .2),
+							bodyTextShaded20: Object(n.i)(.2, r),
+							bodyTextTinted20: Object(n.j)(.2, r),
+							activeAlpha10: e.active ? Object(n.g)(e.active, .1) : p.activeAlpha10,
+							activeAlpha50: e.active ? Object(n.g)(e.active, .5) : p.activeAlpha50,
+							activeLight60: e.active ? Object(n.h)(.6, e.active) : p.activeLight60,
+							activeTinted05: e.active ? Object(n.j)(.05, e.active) : p.activeTinted05,
+							buttonAlpha05: e.button ? Object(n.g)(e.button, .05) : p.buttonAlpha05,
+							buttonAlpha10: e.button ? Object(n.g)(e.button, .1) : p.buttonAlpha10,
+							buttonAlpha20: e.button ? Object(n.g)(e.button, .2) : p.buttonAlpha20,
+							buttonAlpha40: e.button ? Object(n.g)(e.button, .4) : p.buttonAlpha40,
+							buttonAlpha50: e.button ? Object(n.g)(e.button, .5) : p.buttonAlpha50,
+							buttonAlpha80: e.button ? Object(n.g)(e.button, .8) : p.buttonAlpha80,
+							buttonShaded80: e.button ? Object(n.i)(.8, e.button) : p.buttonShaded80,
+							buttonTinted20: e.button ? Object(n.j)(.2, e.button) : m.button,
+							buttonTinted50: e.button ? Object(n.j)(.5, e.button) : p.buttonTinted50,
+							buttonTinted80: e.button ? Object(n.j)(.8, e.button) : p.buttonTinted80,
 							metaText: a(e.post, !1, .51),
 							placeholder: a(e.post, !1, .16),
-							postError: Object(n.d)(.1, "#FF0000", e.post),
+							postError: Object(n.c)(.1, "#FF0000", e.post),
 							postIcon: a(e.post, !1, .46),
 							postLine: a(e.post, !1, .2),
-							postTransparent20: Object(n.o)(.2, e.post),
-							postTinted20: Object(n.m)(.2, e.post),
-							report: Object(n.d)(.1, "#FFB000", e.post)
-						})).voteText.base = a(e.post, !1, .46), e.active ? i.highlight = Object(n.d)(.1, e.active, e.post) : i.highlight = a(e.post, !1, .1)
+							postTransparent20: Object(n.l)(.2, e.post),
+							postTinted20: Object(n.j)(.2, e.post),
+							report: Object(n.c)(.1, "#FFB000", e.post)
+						})).voteText.base = a(e.post, !1, .46), e.active ? i.highlight = Object(n.c)(.1, e.active, e.post) : i.highlight = a(e.post, !1, .1)
 					} else(i = Object.assign({}, e, c, {
 						active: p.active,
-						postTransparent20: Object(n.o)(.2, p.post),
-						postError: Object(n.d)(.1, "#FF0000", p.post),
+						postTransparent20: Object(n.l)(.2, p.post),
+						postError: Object(n.c)(.1, "#FF0000", p.post),
 						activeAlpha10: p.activeAlpha10,
 						activeAlpha50: p.activeAlpha50,
 						activeLight60: p.activeLight60,
@@ -14263,12 +14244,12 @@
 				},
 				T = Object.assign({}, d, o, a, c, h, m, p, _, g, w),
 				S = e => Object.assign({}, e, {
-					bannerBackgroundColor: e.bannerBackgroundColor || Object(n.k)(.6, e.primaryColor),
+					bannerBackgroundColor: e.bannerBackgroundColor || Object(n.h)(.6, e.primaryColor),
 					menuLinkColorActive: e.menuLinkColorActive || e.highlightColor,
 					menuLinkColorInactive: e.menuLinkColorInactive || e.primaryColor,
 					menuLinkColorHover: e.menuLinkColorHover || e.highlightColor,
-					menuBackgroundColor: e.menuBackgroundColor || Object(n.k)(.93, e.primaryColor),
-					submenuBackgroundColor: e.submenuBackgroundColor || Object(n.k)(.93, e.primaryColor),
+					menuBackgroundColor: e.menuBackgroundColor || Object(n.h)(.93, e.primaryColor),
+					submenuBackgroundColor: e.submenuBackgroundColor || Object(n.h)(.93, e.primaryColor),
 					bannerOverlayColor: e.bannerOverlayColor || e.primaryColor
 				}),
 				F = ["#EA0027", "#FF4500", "#FFB000", "#FFD635", "#94E044", "#46D160", "#0DD3BB", "#00A6A5", "#B8001F", "#CC3600", "#CC8B00", "#CCAC2B", "#73AD34", "#349E48", "#0AA18F", "#007373", "#0079D3", "#014980", "#7193FF", "#FF66AC", "#9E8D49", "#DDBD37", "#EDEFF1", "#373C3F", "#005BA1", "#0266B3", "#5A74CC", "#CC5289", "#6B6031", "#AB912B", "#BBBDBF", "#646D73"],
@@ -14297,7 +14278,7 @@
 			};
 
 			function o(e) {
-				return Object(n.o)(.93, e)
+				return Object(n.l)(.93, e)
 			}
 
 			function d(e, t, i) {
@@ -14369,10 +14350,10 @@
 				},
 				h = (e, t) => {
 					const i = t / 100,
-						r = Object(n.g)(e);
-					return r.alpha = i, Object(n.n)(r)
+						r = Object(n.e)(e);
+					return r.alpha = i, Object(n.k)(r)
 				},
-				m = (e, t) => Object(n.k)(e, t),
+				m = (e, t) => Object(n.h)(e, t),
 				p = (e, t, i) => t ? [e, "url(".concat(t, ")"), c(i)].filter(Boolean).join(" ") : e,
 				_ = (o.c, {}),
 				g = {
@@ -14393,10 +14374,10 @@
 					emojiWidth: void 0,
 					emojiHeight: void 0
 				},
-				T = (e, t) => Object(n.l)(e, t),
+				T = (e, t) => Object(n.i)(e, t),
 				S = e => e && Object(n.b)(e) < .5 ? s.a.body : s.a.bodyText,
-				F = (e, t) => Object(n.m)(e, t),
-				E = (e, t) => Object(n.o)(e, t),
+				F = (e, t) => Object(n.j)(e, t),
+				E = (e, t) => Object(n.l)(e, t),
 				B = e => {
 					return Object(n.b)(e) > .9 ? Object(n.a)(.1, e) : e
 				},
@@ -14414,11 +14395,11 @@
 					u = Object.assign({}, s.a.voteText);
 				if (e.postUpvoteCountColor) {
 					const t = e.postUpvoteCountColor;
-					u.upvote = t, u.upvoteShaded80 = Object(n.l)(.8, t), u.upvoteTinted80 = Object(n.m)(.8, t)
+					u.upvote = t, u.upvoteShaded80 = Object(n.i)(.8, t), u.upvoteTinted80 = Object(n.j)(.8, t)
 				}
 				if (e.postDownvoteCountColor) {
 					const t = e.postDownvoteCountColor;
-					u.downvote = t, u.downvoteShaded80 = Object(n.l)(.8, t), u.downvoteTinted80 = Object(n.m)(.8, t)
+					u.downvote = t, u.downvoteShaded80 = Object(n.i)(.8, t), u.downvoteTinted80 = Object(n.j)(.8, t)
 				}
 				return {
 					subredditContext: t,
@@ -14448,7 +14429,7 @@
 						canvasImgPosition: e.backgroundImagePosition,
 						lineShadedNinety: T(.9, s.a.line),
 						linkText: l,
-						linkTextAlpha80: Object(n.j)(l, .5),
+						linkTextAlpha80: Object(n.g)(l, .5),
 						linkTextShaded80: T(.8, l),
 						linkTextTinted80: F(.8, l),
 						menu: e.menuBackgroundColor || s.a.menu,
@@ -14485,9 +14466,9 @@
 							sidebarWidgetBackgroundColor: o,
 							sidebarWidgetBorderColor: Object(s.d)(o, !1),
 							sidebarWidgetHeaderColor: e.sidebarWidgetHeaderColor || s.a.widgetColors.sidebarWidgetHeaderColor,
-							sidebarWidgetHeaderColorAlpha60: e.sidebarWidgetHeaderColor && Object(n.j)(e.sidebarWidgetHeaderColor, .6) || Object(n.j)(s.a.widgetColors.sidebarWidgetHeaderColor, .6),
+							sidebarWidgetHeaderColorAlpha60: e.sidebarWidgetHeaderColor && Object(n.g)(e.sidebarWidgetHeaderColor, .6) || Object(n.g)(s.a.widgetColors.sidebarWidgetHeaderColor, .6),
 							sidebarWidgetTextColor: r,
-							sidebarWidgetTextColorShaded80: Object(n.l)(.8, r),
+							sidebarWidgetTextColorShaded80: Object(n.i)(.8, r),
 							sidebarWidgetTitleColor: S(e.sidebarWidgetHeaderColor || s.a.widgetColors.sidebarWidgetHeaderColor),
 							lineColor: Object(d.b)(S(o))
 						}
@@ -14508,7 +14489,7 @@
 					communityTheme: {},
 					newCommunityTheme: Object(d.c)({
 						banner: {
-							backgroundColor: Object(n.l)(.9, e.bannerBackgroundColor || m(.6, e.primaryColor) || s.b.banner.backgroundColor),
+							backgroundColor: Object(n.i)(.9, e.bannerBackgroundColor || m(.6, e.primaryColor) || s.b.banner.backgroundColor),
 							backgroundImage: e.bannerBackgroundImage,
 							backgroundImagePosition: e.bannerBackgroundImagePosition,
 							communityNameFormat: e.bannerCommunityNameFormat,
@@ -17669,7 +17650,7 @@
 			}));
 			var n, r = i("./src/telemetry/eventSchemas/timer_types.js");
 			! function(e) {
-				e.Initial = "initial_page_load", e.InApp = "in_app_navigation", e.UserCancelled = "user_cancelled", e.HeartbeatIdleTime = "heartbeat_idle_time", e.ChatLoadInboxNew = "chat_performance_load_inbox_new", e.ChatLoadInboxCached = "chat_performance_load_inbox_cached", e.ChatLoadChannelNew = "chat_performance_load_channel_new", e.ChatLoadChannelCached = "chat_performance_load_channel_cached", e.VideoFirstFrame = "video_first_frame", e.LayerCreationTime = "layer_creation_time"
+				e.Initial = "initial_page_load", e.InApp = "in_app_navigation", e.UserCancelled = "user_cancelled", e.HeartbeatIdleTime = "heartbeat_idle_time", e.ChatLoadInboxNew = "chat_performance_load_inbox_new", e.ChatLoadInboxCached = "chat_performance_load_inbox_cached", e.ChatLoadChannelNew = "chat_performance_load_channel_new", e.ChatLoadChannelCached = "chat_performance_load_channel_cached", e.VideoFirstFrame = "video_first_frame"
 			}(n || (n = {}));
 			const s = e => new r.Timer({
 				type: e.type,
@@ -17686,4 +17667,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.7b0ec4ea4eb495f8e3ca.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.2e608145fac9448d2463.js.map

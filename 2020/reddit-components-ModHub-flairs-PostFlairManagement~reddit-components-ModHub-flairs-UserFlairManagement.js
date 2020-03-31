@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.3b119a09eb86d860f37f.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ddb9ddde8766138eb185.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -837,7 +837,7 @@
 				pt = Object(ke.b)(ct, (e, t) => ({
 					deleteExamplePost: () => e(Object(Be.b)(u.e)),
 					makeExamplePost: s => e(Object(Be.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Ue.T)({
+					updateExamplePost: t => e(Object(Ue.R)({
 						[u.e]: {
 							flair: [t]
 						}
@@ -1633,7 +1633,7 @@
 					className: Object(i.a)(h.a.DropdownColorSwatch, e.isTransparent && h.a.isTransparent),
 					style: {
 						backgroundColor: e.isTransparent ? Object(m.a)(e).body : e.color,
-						fill: Object(a.h)(e.color)
+						fill: Object(a.f)(e.color)
 					}
 				}, e.isDropdownOpen ? o.a.createElement(c.a, {
 					className: h.a.ChevronUp
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.3b119a09eb86d860f37f.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ddb9ddde8766138eb185.js.map

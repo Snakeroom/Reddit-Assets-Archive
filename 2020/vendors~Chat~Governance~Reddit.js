@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.36be85b629c2897ebca4.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.78b67298c50a11d32e86.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@babel/runtime/helpers/esm/extends.js": function(e, t, n) {
@@ -18972,35 +18972,29 @@
 		"./node_modules/polished/dist/polished.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return L
+				return B
 			})), n.d(t, "b", (function() {
-				return U
+				return L
 			})), n.d(t, "c", (function() {
-				return T
+				return D
 			})), n.d(t, "d", (function() {
-				return F
+				return z
 			})), n.d(t, "e", (function() {
-				return q
-			})), n.d(t, "f", (function() {
-				return v
-			})), n.d(t, "g", (function() {
 				return _
-			})), n.d(t, "h", (function() {
-				return $
-			})), n.d(t, "i", (function() {
-				return w
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "f", (function() {
+				return H
+			})), n.d(t, "g", (function() {
 				return x
+			})), n.d(t, "h", (function() {
+				return V
+			})), n.d(t, "i", (function() {
+				return K
+			})), n.d(t, "j", (function() {
+				return Y
 			})), n.d(t, "k", (function() {
-				return W
+				return R
 			})), n.d(t, "l", (function() {
-				return G
-			})), n.d(t, "m", (function() {
-				return X
-			})), n.d(t, "n", (function() {
-				return A
-			})), n.d(t, "o", (function() {
-				return Z
+				return J
 			}));
 			var r, o, i, s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
 					return typeof e
@@ -19449,40 +19443,38 @@
 			function k(e, t, n) {
 				return l(e, t, n, S)
 			}
-
-			function T(e, t, n) {
-				if ("number" == typeof e && "number" == typeof t && "number" == typeof n) return k(e, t, n);
-				if ("object" === (void 0 === e ? "undefined" : s(e)) && void 0 === t && void 0 === n) return k(e.hue, e.saturation, e.lightness);
-				throw new Error("Passed invalid arguments to hsl, please pass multiple numbers e.g. hsl(360, 0.75, 0.4) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75 }).")
-			}
-			var O = function(e) {
+			var T = function(e) {
 					return "number" == typeof e.red && "number" == typeof e.green && "number" == typeof e.blue && ("number" != typeof e.alpha || void 0 === e.alpha)
 				},
-				I = function(e) {
+				O = function(e) {
 					return "number" == typeof e.red && "number" == typeof e.green && "number" == typeof e.blue && "number" == typeof e.alpha
 				},
-				M = function(e) {
+				I = function(e) {
 					return "number" == typeof e.hue && "number" == typeof e.saturation && "number" == typeof e.lightness && ("number" != typeof e.alpha || void 0 === e.alpha)
 				},
-				C = function(e) {
+				M = function(e) {
 					return "number" == typeof e.hue && "number" == typeof e.saturation && "number" == typeof e.lightness && "number" == typeof e.alpha
 				},
-				R = "Passed invalid argument to toColorString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.";
+				C = "Passed invalid argument to toColorString, please pass a RgbColor, RgbaColor, HslColor or HslaColor object.";
 
-			function A(e) {
-				if ("object" !== (void 0 === e ? "undefined" : s(e))) throw new Error(R);
-				if (I(e)) return x(e);
-				if (O(e)) return w(e);
-				if (C(e)) return function(e, t, n, r) {
+			function R(e) {
+				if ("object" !== (void 0 === e ? "undefined" : s(e))) throw new Error(C);
+				if (O(e)) return x(e);
+				if (T(e)) return w(e);
+				if (M(e)) return function(e, t, n, r) {
 					if ("number" == typeof e && "number" == typeof t && "number" == typeof n && "number" == typeof r) return r >= 1 ? k(e, t, n) : "rgba(" + l(e, t, n) + "," + r + ")";
 					if ("object" === (void 0 === e ? "undefined" : s(e)) && void 0 === t && void 0 === n && void 0 === r) return e.alpha >= 1 ? k(e.hue, e.saturation, e.lightness) : "rgba(" + l(e.hue, e.saturation, e.lightness) + "," + e.alpha + ")";
 					throw new Error("Passed invalid arguments to hsla, please pass multiple numbers e.g. hsl(360, 0.75, 0.4, 0.7) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75, alpha: 0.7 }).")
 				}(e);
-				if (M(e)) return T(e);
-				throw new Error(R)
+				if (I(e)) return function(e, t, n) {
+					if ("number" == typeof e && "number" == typeof t && "number" == typeof n) return k(e, t, n);
+					if ("object" === (void 0 === e ? "undefined" : s(e)) && void 0 === t && void 0 === n) return k(e.hue, e.saturation, e.lightness);
+					throw new Error("Passed invalid arguments to hsl, please pass multiple numbers e.g. hsl(360, 0.75, 0.4) or an object e.g. rgb({ hue: 255, saturation: 0.4, lightness: 0.75 }).")
+				}(e);
+				throw new Error(C)
 			}
 
-			function P(e) {
+			function A(e) {
 				return function e(t, n, r) {
 					return function() {
 						var o = r.concat(Array.prototype.slice.call(arguments));
@@ -19491,19 +19483,19 @@
 				}(e, e.length, [])
 			}
 
-			function N(e, t, n) {
+			function P(e, t, n) {
 				return Math.max(e, Math.min(t, n))
 			}
 
-			function B(e, t) {
+			function N(e, t) {
 				var n = v(t);
-				return A(a({}, n, {
-					lightness: N(0, 1, n.lightness - e)
+				return R(a({}, n, {
+					lightness: P(0, 1, n.lightness - e)
 				}))
 			}
-			var L = P(B);
+			var B = A(N);
 
-			function U(e) {
+			function L(e) {
 				var t = _(e),
 					n = Object.keys(t).map((function(e) {
 						var n = t[e] / 255;
@@ -19512,7 +19504,7 @@
 				return .2126 * n[0] + .7152 * n[1] + .0722 * n[2]
 			}
 
-			function D() {
+			function U() {
 				var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : .5,
 					t = arguments[1],
 					n = arguments[2],
@@ -19535,51 +19527,51 @@
 					alpha: o.alpha + (s.alpha - o.alpha) * (e / 1)
 				})
 			}
-			var F = P(D);
+			var D = A(U);
 
-			function z(e, t) {
+			function F(e, t) {
 				var n = _(t),
 					r = "number" == typeof n.alpha ? n.alpha : 1;
 				return x(a({}, n, {
-					alpha: N(0, 1, (100 * r + 100 * e) / 100)
+					alpha: P(0, 1, (100 * r + 100 * e) / 100)
 				}))
 			}
-			var q = P(z);
+			var z = A(F);
 
-			function H(e) {
-				return U(e) > .179 ? "#000" : "#fff"
+			function q(e) {
+				return L(e) > .179 ? "#000" : "#fff"
 			}
-			var $ = P(H);
+			var H = A(q);
 
-			function V(e, t) {
-				return A(a({}, v(t), {
+			function $(e, t) {
+				return R(a({}, v(t), {
 					lightness: e
 				}))
 			}
-			var W = P(V);
+			var V = A($);
 
-			function K(e, t) {
+			function W(e, t) {
 				if ("number" != typeof e || e > 1 || e < -1) throw new Error("Passed an incorrect argument to shade, please pass a percentage less than or equal to 1 and larger than or equal to -1.");
 				if ("string" != typeof t) throw new Error("Passed an incorrect argument to a color function, please pass a string representation of a color.");
-				return F(e, t, "rgb(0, 0, 0)")
+				return D(e, t, "rgb(0, 0, 0)")
 			}
-			var G = P(K);
+			var K = A(W);
 
-			function Y(e, t) {
+			function G(e, t) {
 				if ("number" != typeof e || e > 1 || e < -1) throw new Error("Passed an incorrect argument to tint, please pass a percentage less than or equal to 1 and larger than or equal to -1.");
 				if ("string" != typeof t) throw new Error("Passed an incorrect argument to a color function, please pass a string representation of a color.");
-				return F(e, t, "rgb(255, 255, 255)")
+				return D(e, t, "rgb(255, 255, 255)")
 			}
-			var X = P(Y);
+			var Y = A(G);
 
-			function J(e, t) {
+			function X(e, t) {
 				var n = _(t),
 					r = "number" == typeof n.alpha ? n.alpha : 1;
 				return x(a({}, n, {
-					alpha: N(0, 1, (100 * r - 100 * e) / 100)
+					alpha: P(0, 1, (100 * r - 100 * e) / 100)
 				}))
 			}
-			var Z = P(J)
+			var J = A(X)
 		},
 		"./node_modules/process-nextick-args/index.js": function(e, t, n) {
 			"use strict";
@@ -34258,4 +34250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.36be85b629c2897ebca4.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.78b67298c50a11d32e86.js.map

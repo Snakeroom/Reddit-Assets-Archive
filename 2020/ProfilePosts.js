@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.7e45b4f695bf35af06d2.js
-// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.913ea46e4faab97b067b.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, r) {
@@ -1230,7 +1230,7 @@
 				w = h.a.div("TrophyIcon", f.a),
 				E = h.a.h5("TrophyName", f.a),
 				v = h.a.div("TrophyContent", f.a),
-				N = h.a.wrapped(l.f, "Description", f.a);
+				N = h.a.wrapped(l.c, "Description", f.a);
 
 			function S(e) {
 				let {
@@ -1938,4 +1938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts.7e45b4f695bf35af06d2.js.map
+//# sourceMappingURL=ProfilePosts.913ea46e4faab97b067b.js.map

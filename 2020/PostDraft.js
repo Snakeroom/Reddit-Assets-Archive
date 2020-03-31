@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.d1c9cb39940f3707796b.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.44bb89aad84d685b073f.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -772,8 +772,8 @@
 				}),
 				M = j.a.div("Container", _.a),
 				P = Object(b.t)(),
-				L = new Set(["all", "post"]),
-				S = Object(l.a)((e, t) => {
+				S = new Set(["all", "post"]),
+				L = Object(l.a)((e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -783,7 +783,7 @@
 					return s && Object(v.O)(e, {
 						subredditId: s.id
 					})
-				}, e => (e || []).filter(e => L.has(e.kind))),
+				}, e => (e || []).filter(e => S.has(e.kind))),
 				N = (e, t) => {
 					let {
 						pageLayer: n
@@ -811,7 +811,7 @@
 						})
 					},
 					subreddit: b.q,
-					subredditRules: S,
+					subredditRules: L,
 					currentPostCollection: b.f
 				}),
 				R = Object(d.b)(T),
@@ -887,8 +887,8 @@
 						})(t, e.onNavigate, e.onClick)
 					},
 					style: Object.assign({}, e.style, {
-						"--RawHTMLDisplay-tr-even": Object(s.j)(Object(c.a)(e).body, .8),
-						"--RawHTMLDisplay-tr-odd": Object(s.j)(Object(c.a)(e).line, .8)
+						"--RawHTMLDisplay-tr-even": Object(s.g)(Object(c.a)(e).body, .8),
+						"--RawHTMLDisplay-tr-odd": Object(s.g)(Object(c.a)(e).line, .8)
 					})
 				}), "StyledRawHTMLDisplay", u.a);
 			t.a = p(Object(a.a)(h))
@@ -1059,14 +1059,14 @@
 					shouldShowCollectionEditOptions: f.t
 				}),
 				P = Object(a.b)(M, (e, t) => ({
-					copyLink: () => e(Object(m.F)(t.permalink)),
+					copyLink: () => e(Object(m.D)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(d.b)(n))
 					},
 					onRemoveCollection: () => e(Object(u.c)(t.collectionId, t.isSubmitPage)),
 					onToggleDeleteConfirmModal: () => e(c.i("DELETE_COLLECTION_CONFM_MODAL_ID")),
 					onToggleEditModal: async () => {
-						_ || (_ = await Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PainterModalLoader~Pos~1d90e236"), n.e("editCollectionModal")]).then(n.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(c.i("EDIT_POST_COLLECTION_MODAL_ID"))
+						_ || (_ = await Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("editCollectionModal")]).then(n.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(c.i("EDIT_POST_COLLECTION_MODAL_ID"))
 					}
 				}));
 			t.a = P(Object(b.c)(e => {
@@ -1312,7 +1312,7 @@
 				};
 			const M = ["right", "bottom"],
 				P = ["right", "top"];
-			var L = Object(a.b)(() => Object(d.c)({
+			var S = Object(a.b)(() => Object(d.c)({
 					post: v.N,
 					language: y.O
 				}), (e, t) => ({
@@ -1347,14 +1347,14 @@
 						isLoading: !0
 					})
 				}),
-				S = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
-				N = n.n(S);
+				L = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
+				N = n.n(L);
 			const {
 				fbt: T
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ["right", "bottom"], D = ["right", "top"];
 			class I extends r.a.PureComponent {
 				constructor() {
-					super(...arguments), this.renderItem = (e, t) => r.a.createElement(L, {
+					super(...arguments), this.renderItem = (e, t) => r.a.createElement(S, {
 						collectionId: this.props.collection.id,
 						key: e,
 						postId: e
@@ -1563,7 +1563,7 @@
 				subredditId: m.m,
 				topPostVariant: x.d
 			}));
-			class L extends r.a.Component {
+			class S extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1636,7 +1636,7 @@
 					})))
 				}
 			}
-			t.a = M(P(Object(d.a)(Object(c.c)(L))))
+			t.a = M(P(Object(d.a)(Object(c.c)(S))))
 		},
 		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, n) {
 			"use strict";
@@ -2014,13 +2014,13 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-should-i-do-if-i-see-something-i"
 				}, r.a.createElement(w.c, null, " Report this draft")))),
 				P = n("./src/reddit/components/PostDraft/index.m.less"),
-				L = n.n(P);
-			const S = Object(a.d)("postDraft.reviewDraft"),
-				N = l.a.div("ReviewDraftHeader", L.a),
-				T = l.a.h2("PostDraftLabel", L.a),
-				R = l.a.div("Container", L.a),
-				D = l.a.time("DraftSavedTime", L.a),
-				I = l.a.h1("Title", L.a),
+				S = n.n(P);
+			const L = Object(a.d)("postDraft.reviewDraft"),
+				N = l.a.div("ReviewDraftHeader", S.a),
+				T = l.a.h2("PostDraftLabel", S.a),
+				R = l.a.div("Container", S.a),
+				D = l.a.time("DraftSavedTime", S.a),
+				I = l.a.h1("Title", S.a),
 				B = Object(c.t)(),
 				W = Object(i.c)({
 					language: m.O,
@@ -2032,7 +2032,7 @@
 						language: n,
 						profile: s
 					} = e;
-					return t ? r.a.createElement(r.a.Fragment, null, r.a.createElement(N, null, r.a.createElement(T, null, S(n))), r.a.createElement(R, null, s && r.a.createElement(D, null, Object(a.a)(n, "postDraft.draftSavedTime", {
+					return t ? r.a.createElement(r.a.Fragment, null, r.a.createElement(N, null, r.a.createElement(T, null, L(n))), r.a.createElement(R, null, s && r.a.createElement(D, null, Object(a.a)(n, "postDraft.draftSavedTime", {
 						time: Object(d.d)(n, (t.modified || t.created) / 1e3),
 						username: s.name
 					})), r.a.createElement(I, null, t.title), r.a.createElement(y, {
@@ -2082,4 +2082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.d1c9cb39940f3707796b.js.map
+//# sourceMappingURL=PostDraft.44bb89aad84d685b073f.js.map

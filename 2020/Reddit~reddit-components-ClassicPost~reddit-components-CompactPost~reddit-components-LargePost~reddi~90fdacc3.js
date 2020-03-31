@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e9c54522c2cb5943d8a3.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.53ef12ad44d4161c2df7.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -757,7 +757,7 @@
 						case "nsfw":
 							return "#FF585B";
 						default:
-							return Object(i.m)(.1, Object(k.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
+							return Object(i.j)(.1, Object(k.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
 				U = m.a.wrapped(e => {
@@ -1807,7 +1807,7 @@
 				getDynamicStyleTags() {
 					return i.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: "\n        .".concat(this.props.post.id, " .").concat(A.a.Component, " {\n          --postTitle-VisitedLinkColor: ").concat(Object(n.d)(.45, Object(O.a)(this.props).titleText, "#FFFFFF"), ";\n          --postTitleLink-VisitedLinkColor: ").concat(Object(n.d)(.45, this.props.titleColor || Object(O.a)(this.props).titleText, Object(O.a)(this.props).body), ";\n        }\n      ")
+							__html: "\n        .".concat(this.props.post.id, " .").concat(A.a.Component, " {\n          --postTitle-VisitedLinkColor: ").concat(Object(n.c)(.45, Object(O.a)(this.props).titleText, "#FFFFFF"), ";\n          --postTitleLink-VisitedLinkColor: ").concat(Object(n.c)(.45, this.props.titleColor || Object(O.a)(this.props).titleText, Object(O.a)(this.props).body), ";\n        }\n      ")
 						}
 					})
 				}
@@ -2270,9 +2270,9 @@
 			t.a = (e, t) => Object(n.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: r.R,
-					pixelPostHasEnteredView: r.C,
-					pixelPostHasExitedView: r.D
+					onPostViewable: r.P,
+					pixelPostHasEnteredView: r.A,
+					pixelPostHasExitedView: r.B
 				})
 			}(t))
 		},
@@ -2997,8 +2997,7 @@
 			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
+				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("title", {
 				id: "".concat(e.title, "-title")
 			}, e.title), r.a.createElement("g", null, r.a.createElement("path", {
@@ -3611,4 +3610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e9c54522c2cb5943d8a3.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.53ef12ad44d4161c2df7.js.map

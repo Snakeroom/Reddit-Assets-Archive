@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.3a3c6f3473276a1c106e.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.b246a8dd69a515096c4a.js
+// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -254,7 +254,7 @@
 			const R = Object(c.a)(p.a),
 				D = T.a.wrapped(C.a, "Circle", j.a),
 				P = T.a.h3("Label", j.a),
-				L = T.a.wrapped(f.f, "Subtext", j.a),
+				L = T.a.wrapped(f.c, "Subtext", j.a),
 				M = T.a.wrapped(m.a, "HoverTooltip", j.a),
 				B = T.a.div("ControlContainer", j.a),
 				H = T.a.div("TextContainer", j.a),
@@ -1187,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.3a3c6f3473276a1c106e.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.b246a8dd69a515096c4a.js.map
