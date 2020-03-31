@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.bda1382c26702c643980.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.794bf58518f9521040f5.js
+// Retrieved at 3/31/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -410,12 +410,12 @@
 			const V = w.a.wrapped(J, "ObjectViewerWithPadding", O.a);
 			var W = n("./src/reddit/layout/row/Inline/index.tsx"),
 				H = n("./src/reddit/components/AdminPanel/AdEvent/index.m.less"),
-				G = n.n(H);
-			const z = w.a.wrapped(W.a, "EventHeader", G.a),
-				Q = w.a.wrapped(W.a, "EventName", G.a),
-				X = w.a.span("AdTitle", G.a),
-				Y = w.a.span("Event", G.a),
-				q = w.a.span("Value", G.a);
+				z = n.n(H);
+			const G = w.a.wrapped(W.a, "EventHeader", z.a),
+				Q = w.a.wrapped(W.a, "EventName", z.a),
+				X = w.a.span("AdTitle", z.a),
+				Y = w.a.span("Event", z.a),
+				q = w.a.span("Value", z.a);
 			class Z extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -432,7 +432,7 @@
 					} = this.props, {
 						expanded: t
 					} = this.state;
-					return a.a.createElement("div", null, a.a.createElement(z, {
+					return a.a.createElement("div", null, a.a.createElement(G, {
 						onClick: this.toggleCollapse
 					}, a.a.createElement(Q, null, a.a.createElement(X, null, e.adTitle), a.a.createElement(Y, null, e.event), a.a.createElement(q, null, e.value)), t ? a.a.createElement(I, null) : a.a.createElement(B, null)), t && a.a.createElement(J, {
 						topLevel: !0,
@@ -626,14 +626,14 @@
 				Ve = n("./src/reddit/controls/Dropdown/index.tsx"),
 				We = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				He = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				Ge = n("./src/reddit/components/AdminPanel/Experiment/index.m.less"),
-				ze = n.n(Ge);
-			const Qe = w.a.div("Header", ze.a),
-				Xe = w.a.div("DropdownWrapper", ze.a),
-				Ye = w.a.span("Row", ze.a),
-				qe = w.a.wrapped(He.b, "DropdownTriangle", ze.a),
-				Ze = w.a.wrapped(Object(Re.a)(Ve.a), "Dropdown", ze.a),
-				$e = w.a.wrapped(We.b, "DropdownRow", ze.a),
+				ze = n("./src/reddit/components/AdminPanel/Experiment/index.m.less"),
+				Ge = n.n(ze);
+			const Qe = w.a.div("Header", Ge.a),
+				Xe = w.a.div("DropdownWrapper", Ge.a),
+				Ye = w.a.span("Row", Ge.a),
+				qe = w.a.wrapped(He.b, "DropdownTriangle", Ge.a),
+				Ze = w.a.wrapped(Object(Re.a)(Ve.a), "Dropdown", Ge.a),
+				$e = w.a.wrapped(We.b, "DropdownRow", Ge.a),
 				et = e => "experiment-".concat(e);
 			var tt = e => {
 					const t = ["control_1", "control_2", ...Je.d[e.experimentName]];
@@ -828,14 +828,14 @@
 			var Ht = e => a.a.createElement(Wt, {
 					className: e.className
 				}, e.title && a.a.createElement(Vt, null, e.title), e.children),
-				Gt = n("./src/reddit/selectors/meta.ts"),
-				zt = n("./src/reddit/components/AdminPanel/Utilities/Geo/index.m.less"),
-				Qt = n.n(zt);
+				zt = n("./src/reddit/selectors/meta.ts"),
+				Gt = n("./src/reddit/components/AdminPanel/Utilities/Geo/index.m.less"),
+				Qt = n.n(Gt);
 			const Xt = w.a.wrapped(Ne.a, "Input", Qt.a),
 				Yt = Object(x.c)({
-					city: Gt.a,
-					country: Gt.b,
-					region: Gt.i
+					city: zt.a,
+					country: zt.b,
+					region: zt.i
 				});
 			class qt extends a.a.Component {
 				constructor(e) {
@@ -1035,7 +1035,9 @@
 				render() {
 					return a.a.createElement(Ht, {
 						title: "Feature throttling"
-					}, a.a.createElement(a.a.Fragment, null, Object.keys(yn.a).map(this.renderFeature), a.a.createElement(An, null, "* Feature is currently throttled")))
+					}, a.a.createElement(a.a.Fragment, null, Object.keys(yn.a).map(this.renderFeature), a.a.createElement(An, null, Rt.fbt._("* Feature is currently throttled", null, {
+						hk: "2ZRuzB"
+					}))))
 				}
 			}
 			var Bn = Tn;
@@ -1065,8 +1067,8 @@
 				Vn = w.a.div("Controls", Un.a),
 				Wn = w.a.wrapped(c.a, "Close", Un.a),
 				Hn = w.a.wrapped(o.a, "ArrowCollapse", Un.a),
-				Gn = w.a.wrapped(i.a, "ArrowExpand", Un.a),
-				zn = e => {
+				zn = w.a.wrapped(i.a, "ArrowExpand", Un.a),
+				Gn = e => {
 					switch (e) {
 						case Kn.Open:
 							return [{
@@ -1122,7 +1124,7 @@
 				render() {
 					return a.a.createElement(r.TransitionMotion, {
 						defaultStyles: [],
-						styles: zn(this.state.position),
+						styles: Gn(this.state.position),
 						willEnter: () => ({
 							left: -Dn
 						}),
@@ -1138,7 +1140,7 @@
 						onClick: this.close
 					}), this.state.position === Kn.Open ? a.a.createElement(Hn, {
 						onClick: this.toggleMinimize
-					}) : a.a.createElement(Gn, {
+					}) : a.a.createElement(zn, {
 						onClick: this.toggleMinimize
 					})))))))
 				}
@@ -1453,4 +1455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.bda1382c26702c643980.js.map
+//# sourceMappingURL=AdminPanel.794bf58518f9521040f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.53ef12ad44d4161c2df7.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.6fbb047a116448574b45.js
+// Retrieved at 3/31/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -581,10 +581,10 @@
 				S = s("./src/reddit/models/Flair/index.ts"),
 				k = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				N = s("./src/reddit/components/Flair/index.m.less"),
-				I = s.n(N);
+				_ = s.n(N);
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -607,18 +607,18 @@
 				return s
 			};
 			const P = Object(v.a)(g.b),
-				F = m.a.div("FlairWrapper", I.a),
-				L = m.a.wrapped(c.a, "CloseButton", I.a),
+				F = m.a.div("FlairWrapper", _.a),
+				L = m.a.wrapped(c.a, "CloseButton", _.a),
 				V = m.a.wrapped(Object(u.a)(e => {
 					var {
 						forceSmallEmojis: t,
 						theme: s
 					} = e, n = T(e, ["forceSmallEmojis", "theme"]);
 					const r = s;
-					return a.a.createElement(x, _({
+					return a.a.createElement(x, I({
 						style: Object.assign({}, M(!!t, r) || {})
 					}, n))
-				}), "FlairEmojiDisplay", I.a),
+				}), "FlairEmojiDisplay", _.a),
 				M = (e, t) => {
 					if (!e && !!t.subredditContext.emojiHeight && !!t.subredditContext.emojiWidth) return {
 						height: "".concat(t.subredditContext.emojiHeight, "px"),
@@ -659,7 +659,7 @@
 				render() {
 					const e = a.a.createElement("span", {
 						className: Object(d.a)(this.props.className, {
-							[I.a.transparentBackgroundColor]: "transparent" === this.props.backgroundColor
+							[_.a.transparentBackgroundColor]: "transparent" === this.props.backgroundColor
 						}),
 						onMouseEnter: this.props.tooltip ? this.onShowTooltip : void 0,
 						onMouseLeave: this.props.tooltip ? this.onHideTooltip : void 0,
@@ -672,7 +672,7 @@
 						to: "./",
 						onClick: this.props.onCloseClick
 					}, a.a.createElement(E.a, {
-						className: I.a.CloseIcon,
+						className: _.a.CloseIcon,
 						style: {
 							fill: this.props.backgroundColor || Object(k.a)(this.props).flair
 						}
@@ -720,7 +720,7 @@
 					});
 					const i = a.a.createElement(F, {
 						className: Object(d.a)(e.className, {
-							[I.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
+							[_.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
 						}),
 						style: Object.assign({}, r, {
 							backgroundColor: e.backgroundColor || Object(k.a)(e).flair,
@@ -730,7 +730,7 @@
 						to: "./",
 						onClick: e.onCloseClick
 					}, a.a.createElement(E.a, {
-						className: I.a.CloseIcon,
+						className: _.a.CloseIcon,
 						style: {
 							fill: e.backgroundColor || Object(k.a)(e).flair
 						}
@@ -748,8 +748,8 @@
 					})
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(k.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(k.a)(e).post, y.a.black, y.a.white) : e.textColor === S.e.Dark ? y.a.black : y.a.white,
-				H = m.a.wrapped(R, "TextFlair", I.a),
-				q = m.a.wrapped(z, "RichTextFlair", I.a),
+				H = m.a.wrapped(R, "TextFlair", _.a),
+				q = m.a.wrapped(z, "RichTextFlair", _.a),
 				Z = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -773,7 +773,7 @@
 						flair: s,
 						searchableTerm: e.text
 					})
-				}, "MetaFlair", I.a);
+				}, "MetaFlair", _.a);
 			t.b = e => {
 				const {
 					className: t,
@@ -789,9 +789,9 @@
 					forceSmallEmojis: p,
 					to: b
 				} = e, h = Object(d.a)({
-					[I.a.flairVariant]: r,
-					[I.a.small]: r && !e.large,
-					[I.a.large]: r && e.large
+					[_.a.flairVariant]: r,
+					[_.a.small]: r && !e.large,
+					[_.a.large]: r && e.large
 				}, t);
 				switch (n.type) {
 					case S.f.Richtext:
@@ -1286,7 +1286,7 @@
 					Object(m.p)(e.type) ? S.push(e) : k.push(e)
 				}) : k = E;
 				const N = b ? y.a.flairNoWrap : S.length > 0 || k.length > 0 || x && v ? y.a.flairWrapper : null,
-					I = e => {
+					_ = e => {
 						const t = {
 							id: f.belongsTo.id,
 							eventType: f.belongsTo.type,
@@ -1295,7 +1295,7 @@
 						};
 						Object(u.d)(u.a.SearchResults), g && g(Object(p.a)(f.id, t))
 					},
-					_ = e => {
+					I = e => {
 						g && g(Object(p.e)(e))
 					},
 					T = !(s || !E || !E.length),
@@ -1306,8 +1306,8 @@
 					className: y.a.flairList,
 					isFlairFilter: i,
 					key: "leftFlair",
-					onClick: I,
-					onMouseDown: _,
+					onClick: _,
+					onMouseDown: I,
 					flair: S,
 					disabled: !o,
 					subredditName: j
@@ -1315,8 +1315,8 @@
 					className: y.a.flairList,
 					isFlairFilter: i,
 					key: "rightFlair",
-					onClick: I,
-					onMouseDown: _,
+					onClick: _,
+					onMouseDown: I,
 					flair: k,
 					disabled: !o,
 					subredditName: j
@@ -1580,23 +1580,23 @@
 				S = s("./src/lib/prettyPrintNumber/index.ts"),
 				k = s("./src/reddit/components/Poll/MetaData/index.tsx"),
 				N = s("./src/reddit/components/Governance/PostPollMetaData/index.m.less"),
-				I = s.n(N);
-			const _ = Object(c.c)({
+				_ = s.n(N);
+			const I = Object(c.c)({
 				language: e => e.user.language,
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
 			});
-			var T = Object(o.b)(_)((function(e) {
+			var T = Object(o.b)(I)((function(e) {
 					const {
 						poll: t,
 						resultsByVoters: s
 					} = e, n = s ? s.totalVotes : "0";
 					return i.a.createElement("div", {
-						className: Object(l.a)(e.className, I.a.proposalMetaData)
+						className: Object(l.a)(e.className, _.a.proposalMetaData)
 					}, i.a.createElement("span", null, Object(E.b)(e.language, "polls.numVotesCommas", parseInt(n), {
 						count: Object(S.a)(n)
 					})), t && i.a.createElement(k.a, {
-						className: I.a.proposalMetaDataTime,
+						className: _.a.proposalMetaDataTime,
 						language: e.language,
 						poll: t
 					}))
@@ -1931,8 +1931,8 @@
 				S = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				k = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				N = s("./src/reddit/models/Media/index.ts"),
-				I = s("./src/reddit/models/Theme/index.ts"),
-				_ = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				_ = s("./src/reddit/models/Theme/index.ts"),
+				I = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				T = s("./src/reddit/components/Thumbnail/index.m.less"),
 				P = s.n(T);
 
@@ -1948,8 +1948,8 @@
 			s.d(t, "b", (function() {
 				return q
 			}));
-			const L = e => e.placeholderImage || Object(_.a)(e).placeholderImage,
-				V = e => e.placeholderImage ? "cover" : Object(_.a)(e).placeholderImagePosition,
+			const L = e => e.placeholderImage || Object(I.a)(e).placeholderImage,
+				V = e => e.placeholderImage ? "cover" : Object(I.a)(e).placeholderImagePosition,
 				M = c.a.span("LinkText", P.a),
 				A = e => {
 					let {
@@ -1982,7 +1982,7 @@
 						role: "img",
 						style: {
 							backgroundImage: "url(".concat(e.src, ")"),
-							borderColor: e.isOutbound ? Object(_.a)(e).button : Object(_.a)(e).line
+							borderColor: e.isOutbound ? Object(I.a)(e).button : Object(I.a)(e).line
 						}
 					}, e.isOutbound && i.a.createElement(A, {
 						className: e.linkIconClassName
@@ -1995,11 +1995,11 @@
 						className: "hiddenImg"
 					}))
 				},
-				R = e => e.isOutbound ? Object(_.a)(e).button : e.placeholderImage ? "transparent" : Object(_.a)(e).line,
+				R = e => e.isOutbound ? Object(I.a)(e).button : e.placeholderImage ? "transparent" : Object(I.a)(e).line,
 				z = e => {
 					const t = L(e),
 						s = t && {
-							background: Object(I.g)(Object(_.a)(e).placeholder, t, V(e))
+							background: Object(_.g)(Object(I.a)(e).placeholder, t, V(e))
 						};
 					return i.a.createElement("div", {
 						className: Object(o.a)(P.a.thumbnail, P.a.placeholderThumbnail, e.className),
@@ -2812,6 +2812,30 @@
 					})
 				}
 		},
+		"./src/reddit/i18n/components.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "c", (function() {
+				return i
+			})), s.d(t, "b", (function() {
+				return o
+			})), s.d(t, "a", (function() {
+				return a
+			}));
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+
+			function i(e) {
+				return r.a.createElement(r.a.Fragment, null, e.children)
+			}
+
+			function o(e) {
+				return r.a.createElement(r.a.Fragment, null, e.children)
+			}
+
+			function a(e) {
+				return r.a.createElement(r.a.Fragment, null, 1 === e.count ? e.singular : e.plural)
+			}
+		},
 		"./src/reddit/icons/fonts/Gif/index.m.less": function(e, t, s) {
 			e.exports = {
 				GifIcon: "_2FVMHfvH9Kj7f59LnZjdUX",
@@ -3216,9 +3240,9 @@
 			})), s.d(t, "f", (function() {
 				return N
 			})), s.d(t, "e", (function() {
-				return I
-			})), s.d(t, "n", (function() {
 				return _
+			})), s.d(t, "n", (function() {
+				return I
 			})), s.d(t, "t", (function() {
 				return T
 			})), s.d(t, "a", (function() {
@@ -3382,7 +3406,7 @@
 				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : []
 			}
 
-			function I(e, t) {
+			function _(e, t) {
 				const s = e.economics.subredditPremium[t];
 				if (s && s.status === m.a.Fetched) {
 					const e = s.data.collections[c.a.Cosmetic];
@@ -3391,7 +3415,7 @@
 				return []
 			}
 
-			function _(e, t) {
+			function I(e, t) {
 				return k(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
 			}
 			const T = e => {
@@ -3610,4 +3634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.53ef12ad44d4161c2df7.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.6fbb047a116448574b45.js.map
