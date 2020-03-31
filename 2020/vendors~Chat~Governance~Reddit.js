@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.78b67298c50a11d32e86.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.9a91a713d458d6bf8650.js
+// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@babel/runtime/helpers/esm/extends.js": function(e, t, n) {
@@ -15852,23 +15852,6 @@
 						c = t ? t() : {};
 					return u(n, e, i(a, 2), c)
 				}
-			}
-		},
-		"./node_modules/lodash/_createAssigner.js": function(e, t, n) {
-			var r = n("./node_modules/lodash/_baseRest.js"),
-				o = n("./node_modules/lodash/_isIterateeCall.js");
-			e.exports = function(e) {
-				return r((function(t, n) {
-					var r = -1,
-						i = n.length,
-						s = i > 1 ? n[i - 1] : void 0,
-						a = i > 2 ? n[2] : void 0;
-					for (s = e.length > 3 && "function" == typeof s ? (i--, s) : void 0, a && o(n[0], n[1], a) && (s = i < 3 ? void 0 : s, i = 1), t = Object(t); ++r < i;) {
-						var u = n[r];
-						u && e(t, u, r, s)
-					}
-					return t
-				}))
 			}
 		},
 		"./node_modules/lodash/_createBaseEach.js": function(e, t, n) {
@@ -34250,4 +34233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.78b67298c50a11d32e86.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.9a91a713d458d6bf8650.js.map

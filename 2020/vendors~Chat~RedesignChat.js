@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.8d4ae23c121290aea582.js
-// Retrieved at 3/23/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.3ff46378122db98ceb77.js
+// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/agentkeepalive/browser.js": function(e, n) {
@@ -22,68 +22,6 @@
 				})), t
 			}
 		},
-		"./node_modules/lodash/_customDefaultsAssignIn.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/eq.js"),
-				r = Object.prototype,
-				a = r.hasOwnProperty;
-			e.exports = function(e, n, t, i) {
-				return void 0 === e || s(e, r[t]) && !a.call(i, t) ? n : e
-			}
-		},
-		"./node_modules/lodash/_escapeHtmlChar.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/_basePropertyOf.js")({
-				"&": "&amp;",
-				"<": "&lt;",
-				">": "&gt;",
-				'"': "&quot;",
-				"'": "&#39;"
-			});
-			e.exports = s
-		},
-		"./node_modules/lodash/_escapeStringChar.js": function(e, n) {
-			var t = {
-				"\\": "\\",
-				"'": "'",
-				"\n": "n",
-				"\r": "r",
-				"\u2028": "u2028",
-				"\u2029": "u2029"
-			};
-			e.exports = function(e) {
-				return "\\" + t[e]
-			}
-		},
-		"./node_modules/lodash/_reEscape.js": function(e, n) {
-			e.exports = /<%-([\s\S]+?)%>/g
-		},
-		"./node_modules/lodash/_reEvaluate.js": function(e, n) {
-			e.exports = /<%([\s\S]+?)%>/g
-		},
-		"./node_modules/lodash/_reInterpolate.js": function(e, n) {
-			e.exports = /<%=([\s\S]+?)%>/g
-		},
-		"./node_modules/lodash/assignInWith.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/_copyObject.js"),
-				r = t("./node_modules/lodash/_createAssigner.js"),
-				a = t("./node_modules/lodash/keysIn.js"),
-				i = r((function(e, n, t, r) {
-					s(n, a(n), e, r)
-				}));
-			e.exports = i
-		},
-		"./node_modules/lodash/attempt.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/_apply.js"),
-				r = t("./node_modules/lodash/_baseRest.js"),
-				a = t("./node_modules/lodash/isError.js"),
-				i = r((function(e, n) {
-					try {
-						return s(e, void 0, n)
-					} catch (t) {
-						return a(t) ? t : new Error(t)
-					}
-				}));
-			e.exports = i
-		},
 		"./node_modules/lodash/chunk.js": function(e, n, t) {
 			var s = t("./node_modules/lodash/_baseSlice.js"),
 				r = t("./node_modules/lodash/_isIterateeCall.js"),
@@ -105,33 +43,12 @@
 				}));
 			e.exports = r
 		},
-		"./node_modules/lodash/escape.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/_escapeHtmlChar.js"),
-				r = t("./node_modules/lodash/toString.js"),
-				a = /[&<>"']/g,
-				i = RegExp(a.source);
-			e.exports = function(e) {
-				return (e = r(e)) && i.test(e) ? e.replace(a, s) : e
-			}
-		},
 		"./node_modules/lodash/first.js": function(e, n, t) {
 			e.exports = t("./node_modules/lodash/head.js")
 		},
 		"./node_modules/lodash/head.js": function(e, n) {
 			e.exports = function(e) {
 				return e && e.length ? e[0] : void 0
-			}
-		},
-		"./node_modules/lodash/isError.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/_baseGetTag.js"),
-				r = t("./node_modules/lodash/isObjectLike.js"),
-				a = t("./node_modules/lodash/isPlainObject.js"),
-				i = "[object DOMException]",
-				o = "[object Error]";
-			e.exports = function(e) {
-				if (!r(e)) return !1;
-				var n = s(e);
-				return n == o || n == i || "string" == typeof e.message && "string" == typeof e.name && !a(e)
 			}
 		},
 		"./node_modules/lodash/reduce.js": function(e, n, t) {
@@ -145,63 +62,6 @@
 					u = arguments.length < 3;
 				return l(e, a(n, 4), t, u, r)
 			}
-		},
-		"./node_modules/lodash/template.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/assignInWith.js"),
-				r = t("./node_modules/lodash/attempt.js"),
-				a = t("./node_modules/lodash/_baseValues.js"),
-				i = t("./node_modules/lodash/_customDefaultsAssignIn.js"),
-				o = t("./node_modules/lodash/_escapeStringChar.js"),
-				l = t("./node_modules/lodash/isError.js"),
-				u = t("./node_modules/lodash/_isIterateeCall.js"),
-				c = t("./node_modules/lodash/keys.js"),
-				d = t("./node_modules/lodash/_reInterpolate.js"),
-				h = t("./node_modules/lodash/templateSettings.js"),
-				_ = t("./node_modules/lodash/toString.js"),
-				p = /\b__p \+= '';/g,
-				I = /\b(__p \+=) '' \+/g,
-				E = /(__e\(.*?\)|\b__t\)) \+\n'';/g,
-				m = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g,
-				f = /($^)/,
-				g = /['\n\r\u2028\u2029\\]/g,
-				A = Object.prototype.hasOwnProperty;
-			e.exports = function(e, n, t) {
-				var N = h.imports._.templateSettings || h;
-				t && u(e, n, t) && (n = void 0), e = _(e), n = s({}, n, N, i);
-				var C, R, U = s({}, n.imports, N.imports, i),
-					y = c(U),
-					v = a(U, y),
-					S = 0,
-					T = n.interpolate || f,
-					P = "__p += '",
-					O = RegExp((n.escape || f).source + "|" + T.source + "|" + (T === d ? m : f).source + "|" + (n.evaluate || f).source + "|$", "g"),
-					L = A.call(n, "sourceURL") ? "//# sourceURL=" + (n.sourceURL + "").replace(/[\r\n]/g, " ") + "\n" : "";
-				e.replace(O, (function(n, t, s, r, a, i) {
-					return s || (s = r), P += e.slice(S, i).replace(g, o), t && (C = !0, P += "' +\n__e(" + t + ") +\n'"), a && (R = !0, P += "';\n" + a + ";\n__p += '"), s && (P += "' +\n((__t = (" + s + ")) == null ? '' : __t) +\n'"), S = i + n.length, n
-				})), P += "';\n";
-				var b = A.call(n, "variable") && n.variable;
-				b || (P = "with (obj) {\n" + P + "\n}\n"), P = (R ? P.replace(p, "") : P).replace(I, "$1").replace(E, "$1;"), P = "function(" + (b || "obj") + ") {\n" + (b ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (C ? ", __e = _.escape" : "") + (R ? ", __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n" : ";\n") + P + "return __p\n}";
-				var D = r((function() {
-					return Function(y, L + "return " + P).apply(void 0, v)
-				}));
-				if (D.source = P, l(D)) throw D;
-				return D
-			}
-		},
-		"./node_modules/lodash/templateSettings.js": function(e, n, t) {
-			var s = t("./node_modules/lodash/escape.js"),
-				r = {
-					escape: t("./node_modules/lodash/_reEscape.js"),
-					evaluate: t("./node_modules/lodash/_reEvaluate.js"),
-					interpolate: t("./node_modules/lodash/_reInterpolate.js"),
-					variable: "",
-					imports: {
-						_: {
-							escape: s
-						}
-					}
-				};
-			e.exports = r
 		},
 		"./node_modules/lodash/times.js": function(e, n, t) {
 			var s = t("./node_modules/lodash/_baseTimes.js"),
@@ -418,12 +278,12 @@
 							ADMIN: 3
 						}
 					},
-					m = function(e) {
+					f = function(e) {
 						return Object.keys(e).forEach((function(n) {
-							null !== e[n] && void 0 !== e[n] && "object" == typeof e[n] && (e[n] = m(e[n]))
+							null !== e[n] && void 0 !== e[n] && "object" == typeof e[n] && (e[n] = f(e[n]))
 						})), Object.freeze(e)
 					},
-					f = function(e) {
+					m = function(e) {
 						return JSON.parse(JSON.stringify(e))
 					},
 					g = function(e, n, t) {
@@ -523,12 +383,12 @@
 									this.messageId = e.hasOwnProperty("msg_id") ? parseInt(e.msg_id) : 0, this.channelUrl = e.hasOwnProperty("channel_url") ? String(e.channel_url) : "", this.createdAt = e.hasOwnProperty("ts") ? parseInt(e.ts) : 0, this.updatedAt = e.hasOwnProperty("updated_at") ? parseInt(e.updated_at) : 0, this.channelType = e.hasOwnProperty("channel_type") ? String(e.channel_type) : w.CHANNEL_TYPE_GROUP, this.mentionType = e.hasOwnProperty("mention_type") ? e.mention_type : ie.MentionType.USERS;
 									var n = this;
 									n.mentionedUsers = [], e.hasOwnProperty("mentioned_users") && e.mentioned_users.forEach((function(e) {
-										var t = new Y(e);
+										var t = new B(e);
 										n.mentionedUsers.push(t)
 									}))
 								}, this.serialize = function() {
 									var e = JSON.parse(JSON.stringify(this));
-									return e.hasOwnProperty("_sender") && (e.sender = e._sender, delete e._sender), m(e)
+									return e.hasOwnProperty("_sender") && (e.sender = e._sender, delete e._sender), f(e)
 								}, this.messageType = L.MESSAGE_TYPE_BASE, e && this._update(e)
 							};
 						L.build = function(e, n) {
@@ -536,18 +396,18 @@
 							var t, s, r, a, i, o, l, u, c, d;
 							switch (e.type) {
 								case "MESG":
-									return t = new Y(e.user), s = parseInt(e.message_id), r = String(e.message), a = String(e.data), i = parseInt(e.created_at), o = parseInt(e.updated_at), l = e.hasOwnProperty("custom_type") ? String(e.custom_type) : "", u = e.hasOwnProperty("translations") ? e.translations : {}, c = e.hasOwnProperty("mention_type") ? e.mention_type : ie.MentionType.USERS, d = e.mentioned_users, new D(D.build("", s, t, n, r, a, l, u, i, o, c, d));
+									return t = new B(e.user), s = parseInt(e.message_id), r = String(e.message), a = String(e.data), i = parseInt(e.created_at), o = parseInt(e.updated_at), l = e.hasOwnProperty("custom_type") ? String(e.custom_type) : "", u = e.hasOwnProperty("translations") ? e.translations : {}, c = e.hasOwnProperty("mention_type") ? e.mention_type : ie.MentionType.USERS, d = e.mentioned_users, new D(D.build("", s, t, n, r, a, l, u, i, o, c, d));
 								case "FILE":
-									t = new Y(e.user), s = parseInt(e.message_id), r = String(e.message), i = parseInt(e.created_at), o = parseInt(e.updated_at), l = e.hasOwnProperty("custom_type") ? String(e.custom_type) : "", c = e.hasOwnProperty("mention_type") ? e.mention_type : ie.MentionType.USERS, d = e.mentioned_users;
+									t = new B(e.user), s = parseInt(e.message_id), r = String(e.message), i = parseInt(e.created_at), o = parseInt(e.updated_at), l = e.hasOwnProperty("custom_type") ? String(e.custom_type) : "", c = e.hasOwnProperty("mention_type") ? e.mention_type : ie.MentionType.USERS, d = e.mentioned_users;
 									var h = e.file,
 										_ = String(h.url),
 										p = String(h.name),
 										I = String(h.type),
 										E = parseInt(h.size) || 0;
 									a = String(h.data);
-									var m = e.hasOwnProperty("thumbnails") ? e.thumbnails : [],
-										f = !!e.hasOwnProperty("require_auth") && e.require_auth;
-									return new M(M.build("", s, t, n, _, p, I, E, a, l, i, m, f, o, c, d));
+									var f = e.hasOwnProperty("thumbnails") ? e.thumbnails : [],
+										m = !!e.hasOwnProperty("require_auth") && e.require_auth;
+									return new M(M.build("", s, t, n, _, p, I, E, a, l, i, f, m, o, c, d));
 								case "BRDM":
 								case "ADMM":
 									return s = parseInt(e.message_id), r = String(e.message), a = String(e.data), i = parseInt(e.created_at), o = parseInt(e.updated_at), l = e.hasOwnProperty("custom_type") ? String(e.custom_type) : "", u = e.hasOwnProperty("translations") ? e.translations : {}, c = e.hasOwnProperty("mention_type") ? e.mention_type : ie.MentionType.USERS, d = e.mentioned_users, new b(b.build(s, n, r, a, l, u, i, o, c, d))
@@ -569,17 +429,17 @@
 							};
 							return r && (c.custom_type = r), a && (c.translations = a), c.mention_type = l, c.mentioned_users = [], u && (c.mentioned_users = u), c
 						}, b.buildFromSerializedData = function(e) {
-							var n = f(e),
+							var n = m(e),
 								t = [];
 							return n.mentionedUsers.forEach((function(e) {
-								t.push(Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName))
+								t.push(B.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName))
 							})), new b(b.build(n.messageId, {
 								url: n.channelUrl,
 								channelType: n.channelType
 							}, n.message, n.data, n.customType, n.translations, n.createdAt, n.updatedAt, n.mentionType, t))
 						};
 						var D = function(e) {
-							this.messageType = L.MESSAGE_TYPE_USER, e && (this._update(e), this.message = String(e.message), this.data = e.hasOwnProperty("data") ? String(e.data) : "", this._sender = new Y(e.user), c ? this.sender = this._sender : Object.defineProperty(this, "sender", {
+							this.messageType = L.MESSAGE_TYPE_USER, e && (this._update(e), this.message = String(e.message), this.data = e.hasOwnProperty("data") ? String(e.data) : "", this._sender = new B(e.user), c ? this.sender = this._sender : Object.defineProperty(this, "sender", {
 								get: function() {
 									if (ue.getInstance().Options.useMemberAsMessageSender && this.isGroupChannel()) {
 										var e = k.cachedChannels[this.channelUrl];
@@ -607,17 +467,17 @@
 							}
 							return _.user = p, _.mention_type = ie.MentionType.USERS, c && (_.mention_type = c), _.mentioned_users = [], d && (_.mentioned_users = d), h && (_.mentioned_user_ids = h), _
 						}, D.buildFromSerializedData = function(e) {
-							var n = f(e),
+							var n = m(e),
 								t = [];
 							return n.mentionedUsers.forEach((function(e) {
-								t.push(Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName))
+								t.push(B.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName))
 							})), new D(D.build(n.reqId, n.messageId, n.sender, {
 								url: n.channelUrl,
 								channelType: n.channelType
 							}, n.message, n.data, n.customType, n.translations, n.createdAt, n.updatedAt, n.mentionType, t))
 						};
 						var M = function(e) {
-							if (this.messageType = L.MESSAGE_TYPE_FILE, e && (this._update(e), this._sender = new Y(e.user), c ? this.sender = this._sender : Object.defineProperty(this, "sender", {
+							if (this.messageType = L.MESSAGE_TYPE_FILE, e && (this._update(e), this._sender = new B(e.user), c ? this.sender = this._sender : Object.defineProperty(this, "sender", {
 									get: function() {
 										if (ue.getInstance().Options.useMemberAsMessageSender && this.isGroupChannel()) {
 											var e = k.cachedChannels[this.channelUrl];
@@ -635,21 +495,21 @@
 								for (var n in this.thumbnails) this.thumbnails[n].url = String(this.thumbnails[n].url).split("?auth=")[0] + "?auth=" + ne.getInstance().ekey
 						};
 						p(L, M), M.build = function(e, n, t, s, r, a, i, o, l, u, c, d, h, _, p, I, E) {
-							var m = {};
-							m.req_id = e, m.msg_id = n, m.channel_url = s.url, m.channel_type = s.channelType === w.CHANNEL_TYPE_OPEN ? w.CHANNEL_TYPE_OPEN : w.CHANNEL_TYPE_GROUP, m.ts = c, m.updated_at = _, m.url = r, m.name = a, m.type = i, m.size = o, m.custom = l;
 							var f = {};
-							f.user_id = t.userId, f.nickname = t.nickname, f.profile_url = t.profileUrl;
+							f.req_id = e, f.msg_id = n, f.channel_url = s.url, f.channel_type = s.channelType === w.CHANNEL_TYPE_OPEN ? w.CHANNEL_TYPE_OPEN : w.CHANNEL_TYPE_GROUP, f.ts = c, f.updated_at = _, f.url = r, f.name = a, f.type = i, f.size = o, f.custom = l;
+							var m = {};
+							m.user_id = t.userId, m.nickname = t.nickname, m.profile_url = t.profileUrl;
 							try {
-								f.metadata = JSON.parse(t.metaData)
+								m.metadata = JSON.parse(t.metaData)
 							} catch (e) {
-								f.metadata = {}
+								m.metadata = {}
 							}
-							return m.user = f, u && (m.custom_type = u), h && (m.require_auth = h), d && (m.thumbnails = d), m.mention_type = p, m.mentioned_users = [], I && (m.mentioned_users = I), E && (m.mentioned_user_ids = E), m
+							return f.user = m, u && (f.custom_type = u), h && (f.require_auth = h), d && (f.thumbnails = d), f.mention_type = p, f.mentioned_users = [], I && (f.mentioned_users = I), E && (f.mentioned_user_ids = E), f
 						}, M.buildFromSerializedData = function(e) {
-							var n = f(e),
+							var n = m(e),
 								t = [];
 							return n.mentionedUsers.forEach((function(e) {
-								t.push(Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName))
+								t.push(B.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName))
 							})), new M(M.build(n.reqId, n.messageId, n.sender, {
 								url: n.channelUrl,
 								channelType: n.channelType
@@ -664,7 +524,7 @@
 									var n = e.lastMessage;
 									n.hasOwnProperty("_sender") && (n.sender = n._sender, delete n._sender, e.lastMessage = n)
 								}
-								return m(e)
+								return f(e)
 							}, this.isGroupChannel = function() {
 								return this.channelType === w.CHANNEL_TYPE_GROUP
 							}, this.isOpenChannel = function() {
@@ -691,11 +551,11 @@
 									}
 								}))
 							}, this.createOperatorListQuery = function() {
-								return new W(this)
+								return new K(this)
 							}, this.createPreviousMessageListQuery = function() {
 								return new Z(this)
 							}, this.createMessageListQuery = function() {
-								return new z(this)
+								return new q(this)
 							};
 							var n = function(e, n, t, s, r, a, i, o, l, u) {
 									if (i === E.MessageTypeFilter.ADMIN ? i = "ADMM" : i === E.MessageTypeFilter.USER ? i = "MESG" : i === E.MessageTypeFilter.FILE ? i = "FILE" : i === E.MessageTypeFilter.ALL && (i = ""), _(n) && "boolean" == typeof t && _(s) && _(r) && "boolean" == typeof a && "string" == typeof i && "string" == typeof o && Array.isArray(l)) {
@@ -748,10 +608,10 @@
 							}, this._sendFileCommand = function(e, n, t, s, r, a, i, o, l, u, c, d, h, _) {
 								var p, E = this;
 								p = _ ? _.reqId : x.generateRequestId();
-								var m = x.bFile(p, e, n, t, s, r, a, i, o, l, u, c, d),
-									f = M.build(m.requestId, 0, ue.getInstance().currentUser, this, "string" == typeof n ? n : "", t, s, r, a, i, null, null, !1, null, u, null, c),
-									g = new M(f);
-								return "string" == typeof n && ue.getInstance().sendCommand(m, (function(e, n) {
+								var f = x.bFile(p, e, n, t, s, r, a, i, o, l, u, c, d),
+									m = M.build(f.requestId, 0, ue.getInstance().currentUser, this, "string" == typeof n ? n : "", t, s, r, a, i, null, null, !1, null, u, null, c),
+									g = new M(m);
+								return "string" == typeof n && ue.getInstance().sendCommand(f, (function(e, n) {
 									if (n) S(null, new I(n.message, n.code), h);
 									else {
 										var t = new M(e.getJsonElement()),
@@ -826,17 +686,17 @@
 								if (null != l || (l = []), ue.getInstance().hasLoggedIn()) {
 									if (!(null == t || null != s && "string" != typeof s || null != r && "string" != typeof r || null != a && (!_(a) || parseInt(a) < 0) || null != i && "string" != typeof i || null != o && "string" != typeof o || !Array.isArray(l) || [le.PushNotificationDeliveryOption.DEFAULT, le.PushNotificationDeliveryOption.SUPPRESS].indexOf(p) < 0)) {
 										var E = e.url,
-											m = null;
-										return "string" == typeof t ? m = e._sendFileCommand(E, t, s, r, a, i, o, [], !1, d, h, p, u) : (m = e._sendFileCommand(E, t, s, r, a, i, o, [], !1, d, h, p, u), ne.getInstance().uploadFile(t, r, l, E, (function(n, t) {
+											f = null;
+										return "string" == typeof t ? f = e._sendFileCommand(E, t, s, r, a, i, o, [], !1, d, h, p, u) : (f = e._sendFileCommand(E, t, s, r, a, i, o, [], !1, d, h, p, u), ne.getInstance().uploadFile(t, r, l, E, (function(n, t) {
 											if (t) S(null, t, u);
 											else {
 												var l = "object" == typeof n ? n : JSON.parse(n),
 													c = l.url,
 													_ = l.hasOwnProperty("thumbnails") ? l.thumbnails : [],
 													I = !!l.hasOwnProperty("require_auth") && l.require_auth;
-												e._sendFileCommand(E, c, s, r, a, i, o, _, I, d, h, p, u, m)
+												e._sendFileCommand(E, c, s, r, a, i, o, _, I, d, h, p, u, f)
 											}
-										}), c, this.fileUploadRequest, m.reqId)), m
+										}), c, this.fileUploadRequest, f.reqId)), f
 									}
 									S(null, new I("Invalid arguments.", $.INVALID_PARAMETER), u)
 								} else S(null, new I("Connection should be made first.", $.CONNECTION_REQUIRED), u)
@@ -1001,7 +861,7 @@
 							this.parse = function(e) {
 								if (e.hasOwnProperty("participant_count") && (this.participantCount = parseInt(e.participant_count)), e.hasOwnProperty("operators") && e.operators)
 									for (var n in this.operators = [], e.operators) {
-										var t = new Y(e.operators[n]);
+										var t = new B(e.operators[n]);
 										this.operators.push(t)
 									}
 							}, this.refresh = function(e) {
@@ -1104,7 +964,7 @@
 						}, H.createOpenChannelListQuery = function() {
 							return new J
 						}, H.buildFromSerializedData = function(e) {
-							var n = f(e);
+							var n = m(e);
 							return new H({
 								channel_url: n.url,
 								name: n.name,
@@ -1116,7 +976,7 @@
 								is_ephemeral: n.isEphemeral,
 								participant_count: n.participantCount,
 								operators: n.operators.map((function(e) {
-									return Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName)
+									return B.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName)
 								}))
 							})
 						}, H.createChannel = function() {
@@ -1172,9 +1032,9 @@
 											n.updateReadReceipt(t, parseInt(s))
 										}
 									e.hasOwnProperty("members") && (n.members = [], n.memberMap = {}, e.members.forEach((function(e) {
-										var t = new B(e);
+										var t = new j(e);
 										n.members.push(t), n.memberMap[t.userId] = t
-									}))), e.hasOwnProperty("member_state") ? n.myMemberState = e.member_state : n.myMemberState = "none", e.hasOwnProperty("my_role") ? n.myRole = e.my_role || k.Role.NONE : n.myRole = k.Role.NONE, e.hasOwnProperty("is_muted") ? "string" == typeof e.is_muted ? n.myMutedState = e.is_muted : "boolean" == typeof e.is_muted && (n.myMutedState = e.is_muted ? "muted" : "unmuted") : n.myMutedState = "unmuted", e.hasOwnProperty("member_count") && (n.memberCount = parseInt(e.member_count)), e.hasOwnProperty("joined_member_count") && (n.joinedMemberCount = parseInt(e.joined_member_count)), e.hasOwnProperty("last_message") && "object" == typeof e.last_message && e.last_message ? e.last_message instanceof L ? n.lastMessage = e.last_message : n.lastMessage = L.build(e.last_message, n) : n.lastMessage = null, e.hasOwnProperty("inviter") && null !== e.inviter && "object" == typeof e.inviter && !h(e.inviter) ? n.inviter = new Y(e.inviter) : n.inviter = null, e.hasOwnProperty("is_super") && null !== e.is_super && "boolean" == typeof e.is_super ? n.isSuper = e.is_super : n.isSuper = !1, e.hasOwnProperty("is_public") && null !== e.is_public && "boolean" == typeof e.is_public ? n.isPublic = e.is_public : n.isPublic = !1
+									}))), e.hasOwnProperty("member_state") ? n.myMemberState = e.member_state : n.myMemberState = "none", e.hasOwnProperty("my_role") ? n.myRole = e.my_role || k.Role.NONE : n.myRole = k.Role.NONE, e.hasOwnProperty("is_muted") ? "string" == typeof e.is_muted ? n.myMutedState = e.is_muted : "boolean" == typeof e.is_muted && (n.myMutedState = e.is_muted ? "muted" : "unmuted") : n.myMutedState = "unmuted", e.hasOwnProperty("member_count") && (n.memberCount = parseInt(e.member_count)), e.hasOwnProperty("joined_member_count") && (n.joinedMemberCount = parseInt(e.joined_member_count)), e.hasOwnProperty("last_message") && "object" == typeof e.last_message && e.last_message ? e.last_message instanceof L ? n.lastMessage = e.last_message : n.lastMessage = L.build(e.last_message, n) : n.lastMessage = null, e.hasOwnProperty("inviter") && null !== e.inviter && "object" == typeof e.inviter && !h(e.inviter) ? n.inviter = new B(e.inviter) : n.inviter = null, e.hasOwnProperty("is_super") && null !== e.is_super && "boolean" == typeof e.is_super ? n.isSuper = e.is_super : n.isSuper = !1, e.hasOwnProperty("is_public") && null !== e.is_public && "boolean" == typeof e.is_public ? n.isPublic = e.is_public : n.isPublic = !1
 								}, this.refresh = function(e) {
 									k.getChannelWithoutCache(this.url, (function(n, t) {
 										if (v) {
@@ -1367,7 +1227,7 @@
 								}, this.addMember = function(e) {
 									if (!this.isSuper) {
 										var n = this.removeMember(e);
-										n && n.state === B.JOINED && (e.state = B.JOINED), this.memberMap[e.userId] = e, this.members.push(e), this.memberCount++, this.updateReadReceipt(e.userId, 0)
+										n && n.state === j.JOINED && (e.state = j.JOINED), this.memberMap[e.userId] = e, this.members.push(e), this.memberCount++, this.updateReadReceipt(e.userId, 0)
 									}
 								}, this.removeMember = function(e) {
 									var n = null;
@@ -1387,7 +1247,7 @@
 									return n
 								}, this.updateJoinedMemberCount = function() {
 									if (!this.isSuper) {
-										for (var e = 0, n = this.members.length, t = 0; t < n; t++) this.members[t].state === B.JOINED && e++;
+										for (var e = 0, n = this.members.length, t = 0; t < n; t++) this.members[t].state === j.JOINED && e++;
 										this.joinedMemberCount = e
 									}
 								};
@@ -1425,7 +1285,7 @@
 									else S(null, new I("Connection should be made first.", $.CONNECTION_REQUIRED), n)
 								}, this.createMemberListQuery = function() {
 									var e = this.url;
-									return new K(e)
+									return new W(e)
 								}, this.banUser = function(e, n, t, s) {
 									e && e.hasOwnProperty("userId") && "string" == typeof t ? this.banUserWithUserId(e.userId, n, t, s) : S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), s)
 								}, this.banUserWithUserId = function(e, n, t, s) {
@@ -1463,7 +1323,7 @@
 								}, this.channelType = w.CHANNEL_TYPE_GROUP, this.isDistinct = !1, this.isSuper = !1, this.isPublic = !1, this.unreadMessageCount = 0, this.inviter = null, this.members = [], this.memberMap = {}, this.lastMessage = {}, this.memberCount = 0, this.joinedMemberCount = 0, this.cachedReadReceiptStatus = {}, this.isPushEnabled, this.isHidden = !1, e && (this._update(e), this.parse(e))
 							};
 						p(w, k), k.buildFromSerializedData = function(e) {
-							var n = f(e);
+							var n = m(e);
 							return new k({
 								channel_url: n.url,
 								name: n.name,
@@ -1487,7 +1347,7 @@
 								my_role: n.myRole,
 								is_muted: n.myMutedState,
 								members: n.members.map((function(e) {
-									return B.build(Y.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName), e.state, e.isBlockedByMe, e.isBlockingMe)
+									return j.build(B.build(e.userId, e.nickname, e.profileUrl, e.connectionStatus, e.lastSeenAt, e.metaData, e.isActive, e.friendDiscoveryKey, e.friendName), e.state, e.isBlockedByMe, e.isBlockingMe)
 								})),
 								last_message: function(e) {
 									return null != e && "object" == typeof e ? e.messageType === L.MESSAGE_TYPE_USER ? new D(D.build(e.reqId, e.messageId, e.sender, {
@@ -1502,12 +1362,12 @@
 									}, e.message, e.data, e.customType, e.translations, e.createdAt, e.updatedAt, e.mentionType, e.mentionedUsers)) : null
 								}(n.lastMessage),
 								read_receipt: n.cachedReadReceiptStatus,
-								inviter: null !== n.inviter && void 0 !== n.inviter && "object" == typeof n.inviter ? Y.build(n.inviter.userId, n.inviter.nickname, n.inviter.profileUrl, n.inviter.connectionStatus, n.inviter.lastSeenAt, n.inviter.metaData, n.inviter.isActive, n.inviter.friendDiscoveryKey, n.inviter.friendName) : null
+								inviter: null !== n.inviter && void 0 !== n.inviter && "object" == typeof n.inviter ? B.build(n.inviter.userId, n.inviter.nickname, n.inviter.profileUrl, n.inviter.connectionStatus, n.inviter.lastSeenAt, n.inviter.metaData, n.inviter.isActive, n.inviter.friendDiscoveryKey, n.inviter.friendName) : null
 							})
 						}, k.createMyGroupChannelListQuery = function() {
 							return new Q(ue.getInstance().currentUser)
 						}, k.createPublicGroupChannelListQuery = function() {
-							return new q
+							return new z
 						}, k.memberState = {
 							ALL: 0,
 							JOINED: 1,
@@ -1722,10 +1582,10 @@
 							e && (this.category = e.hasOwnProperty("cat") ? parseInt(e.cat) : 0)
 						};
 						V.CATEGORY_USER_BLOCK = 20001, V.CATEGORY_USER_UNBLOCK = 2e4, V.CATEGORY_FRIEND_DISCOVERED = 20900;
-						var j = function(e) {
-								e && (this.reader = new Y(e.user), this.timestamp = parseInt(e.ts), this.channelUrl = e.hasOwnProperty("channel_url") ? String(e.channel_url) : "", this.channelType = e.hasOwnProperty("channel_type") ? String(e.channel_type) : w.CHANNEL_TYPE_GROUP)
+						var Y = function(e) {
+								e && (this.reader = new B(e.user), this.timestamp = parseInt(e.ts), this.channelUrl = e.hasOwnProperty("channel_url") ? String(e.channel_url) : "", this.channelType = e.hasOwnProperty("channel_type") ? String(e.channel_type) : w.CHANNEL_TYPE_GROUP)
 							},
-							Y = function(e) {
+							B = function(e) {
 								this.nickname = "", this.profileUrl = "", this.userId = "", this.connectionStatus = "", this.lastSeenAt = null, this.metaData = {}, this.isActive = !0, this.friendDiscoveryKey = null, this.friendName = null, this.getOriginalProfileUrl = function() {
 									var e = "";
 									if (((e = (e = this.profileUrl.indexOf("://") > -1 ? this.profileUrl.split("/")[2] : this.profileUrl.split("/")[0]).split("?")[0]).indexOf("sendbird.com") > -1 || e.indexOf("intoz.com") > -1) && this.profileUrl.indexOf(e + "/profile_images/") > -1) {
@@ -1734,7 +1594,7 @@
 									}
 									return ""
 								}, this._update = function(e) {
-									e.hasOwnProperty("guest_id") && (this.userId = String(e.guest_id)), e.hasOwnProperty("user_id") && (this.userId = String(e.user_id)), e.hasOwnProperty("name") && (this.nickname = String(e.name)), e.hasOwnProperty("nickname") && (this.nickname = String(e.nickname)), e.hasOwnProperty("image") && (this.profileUrl = String(e.image)), e.hasOwnProperty("profile_url") && (this.profileUrl = String(e.profile_url)), e.hasOwnProperty("is_online") ? e.is_online === Y.NON_AVAILABLE ? this.connectionStatus = Y.NON_AVAILABLE : this.connectionStatus = e.is_online ? Y.ONLINE : Y.OFFLINE : this.connectionStatus = Y.NON_AVAILABLE, e.hasOwnProperty("last_seen_at") ? this.lastSeenAt = parseInt(e.last_seen_at) : this.lastSeenAt = 0, e.hasOwnProperty("metadata") ? this.metaData = e.metadata : this.metaData = {}, e.hasOwnProperty("is_active") ? this.isActive = void 0 === e.is_active || e.is_active : this.isActive = !0, e.hasOwnProperty("friend_discovery_key") ? this.friendDiscoveryKey = e.friend_discovery_key : this.friendDiscoveryKey = null, e.hasOwnProperty("friend_name") ? this.friendName = e.friend_name : this.friendName = null
+									e.hasOwnProperty("guest_id") && (this.userId = String(e.guest_id)), e.hasOwnProperty("user_id") && (this.userId = String(e.user_id)), e.hasOwnProperty("name") && (this.nickname = String(e.name)), e.hasOwnProperty("nickname") && (this.nickname = String(e.nickname)), e.hasOwnProperty("image") && (this.profileUrl = String(e.image)), e.hasOwnProperty("profile_url") && (this.profileUrl = String(e.profile_url)), e.hasOwnProperty("is_online") ? e.is_online === B.NON_AVAILABLE ? this.connectionStatus = B.NON_AVAILABLE : this.connectionStatus = e.is_online ? B.ONLINE : B.OFFLINE : this.connectionStatus = B.NON_AVAILABLE, e.hasOwnProperty("last_seen_at") ? this.lastSeenAt = parseInt(e.last_seen_at) : this.lastSeenAt = 0, e.hasOwnProperty("metadata") ? this.metaData = e.metadata : this.metaData = {}, e.hasOwnProperty("is_active") ? this.isActive = void 0 === e.is_active || e.is_active : this.isActive = !0, e.hasOwnProperty("friend_discovery_key") ? this.friendDiscoveryKey = e.friend_discovery_key : this.friendDiscoveryKey = null, e.hasOwnProperty("friend_name") ? this.friendName = e.friend_name : this.friendName = null
 								}, this._updateMetaData = function(e, n) {
 									var t = this,
 										s = Object.keys(e);
@@ -1771,10 +1631,10 @@
 									else S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), n)
 								}, this.serialize = function() {
 									var e = JSON.parse(JSON.stringify(this));
-									return m(e)
+									return f(e)
 								}, e && this._update(e)
 							};
-						Y.NON_AVAILABLE = "nonavailable", Y.ONLINE = "online", Y.OFFLINE = "offline", Y.build = function(e, n, t, s, r, a, i, o, l) {
+						B.NON_AVAILABLE = "nonavailable", B.ONLINE = "online", B.OFFLINE = "offline", B.build = function(e, n, t, s, r, a, i, o, l) {
 							return {
 								user_id: e,
 								nickname: n,
@@ -1786,21 +1646,21 @@
 								friend_discovery_key: o,
 								friend_name: l
 							}
-						}, Y.buildFromSerializedData = function(e) {
-							var n = f(e);
-							return new Y(Y.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName))
+						}, B.buildFromSerializedData = function(e) {
+							var n = m(e);
+							return new B(B.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName))
 						};
-						var B = function(e) {
+						var j = function(e) {
 							this.state = "", this.isBlockedByMe = !1, this.isBlockingMe = !1, this.parse = function(e) {
 								this.state = e.state, e.hasOwnProperty("is_blocked_by_me") && (this.isBlockedByMe = e.is_blocked_by_me), e.hasOwnProperty("is_blocking_me") && (this.isBlockingMe = e.is_blocking_me)
 							}, e && (this._update(e), this.parse(e))
 						};
-						p(Y, B), B.JOINED = "joined", B.INVITED = "invited", B.build = function(e, n, t, s) {
+						p(B, j), j.JOINED = "joined", j.INVITED = "invited", j.build = function(e, n, t, s) {
 							var r = e;
 							return r.state = n, r.is_blocked_by_me = t, r.is_blocking_me = s, r
-						}, B.buildFromSerializedData = function(e) {
-							var n = f(e);
-							return new B(B.build(Y.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName), n.state, n.isBlockedByMe, n.isBlockingMe))
+						}, j.buildFromSerializedData = function(e) {
+							var n = m(e);
+							return new j(j.build(B.build(n.userId, n.nickname, n.profileUrl, n.connectionStatus, n.lastSeenAt, n.metaData, n.isActive, n.friendDiscoveryKey, n.friendName), n.state, n.isBlockedByMe, n.isBlockingMe))
 						};
 						var x = function(e, n, t) {
 							this.isAckRequired = function() {
@@ -1865,7 +1725,7 @@
 						}, x.requestIdSeed = (new Date).getTime(), x.generateRequestId = function() {
 							return x.requestIdSeed++, String(x.requestIdSeed)
 						};
-						var W = function(e) {
+						var K = function(e) {
 								this.isLoading = !1, this.hasNext = !0, this.limit = 20;
 								var n = "",
 									t = this;
@@ -1875,38 +1735,38 @@
 										var a = e;
 										(!(n = String(a.next)) || n.length <= 0) && (t.hasNext = !1);
 										var i = a.operators.map((function(e) {
-											return new Y(e)
+											return new B(e)
 										}));
 										t.isLoading = !1, S(i, null, s)
 									}))) : void S([], null, s)
 								}
 							},
-							K = function(e) {
-								this.isLoading = !1, this.hasNext = !0, this.limit = 20, this.mutedMemberFilter = K.MUTED_MEMBER_FILTER.ALL, this.operatorFilter = K.OPERATOR_FILTER.ALL, this.memberStateFilter = k.memberStateFilter.ALL, this.nicknameStartsWithFilter = null;
-								var n = K.Order.MEMBER_NICKNAME_ALPHABETICAL,
+							W = function(e) {
+								this.isLoading = !1, this.hasNext = !0, this.limit = 20, this.mutedMemberFilter = W.MUTED_MEMBER_FILTER.ALL, this.operatorFilter = W.OPERATOR_FILTER.ALL, this.memberStateFilter = k.memberStateFilter.ALL, this.nicknameStartsWithFilter = null;
+								var n = W.Order.MEMBER_NICKNAME_ALPHABETICAL,
 									t = "",
 									s = this;
 								this.next = function(r) {
-									return s.hasNext ? s.isLoading ? void S(null, new I("Query in progress.", $.QUERY_IN_PROGRESS), r) : "number" != typeof s.limit || s.limit < 1 || "string" != typeof s.mutedMemberFilter || [K.MUTED_MEMBER_FILTER.ALL, K.MUTED_MEMBER_FILTER.MUTED, K.MUTED_MEMBER_FILTER.UNMUTED].indexOf(s.mutedMemberFilter.toLowerCase()) < 0 || "string" != typeof s.operatorFilter || [K.OPERATOR_FILTER.ALL, K.OPERATOR_FILTER.OPERATOR, K.OPERATOR_FILTER.NONOPERATOR].indexOf(s.operatorFilter.toLowerCase()) < 0 || "string" != typeof s.memberStateFilter || [k.memberStateFilter.ALL, k.memberStateFilter.JOINED, k.memberStateFilter.INVITED, k.memberStateFilter.INVITED_BY_FRIEND, k.memberStateFilter.INVITED_BY_NON_FRIEND].indexOf(s.memberStateFilter.toLowerCase()) < 0 || null !== s.nicknameStartsWithFilter && "string" != typeof s.nicknameStartsWithFilter ? void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), r) : (s.isLoading = !0, void ne.getInstance().loadGroupChannelMemberList(e, t, s.limit, s.mutedMemberFilter, s.operatorFilter, s.memberStateFilter, s.nicknameStartsWithFilter, n, (function(e, n) {
+									return s.hasNext ? s.isLoading ? void S(null, new I("Query in progress.", $.QUERY_IN_PROGRESS), r) : "number" != typeof s.limit || s.limit < 1 || "string" != typeof s.mutedMemberFilter || [W.MUTED_MEMBER_FILTER.ALL, W.MUTED_MEMBER_FILTER.MUTED, W.MUTED_MEMBER_FILTER.UNMUTED].indexOf(s.mutedMemberFilter.toLowerCase()) < 0 || "string" != typeof s.operatorFilter || [W.OPERATOR_FILTER.ALL, W.OPERATOR_FILTER.OPERATOR, W.OPERATOR_FILTER.NONOPERATOR].indexOf(s.operatorFilter.toLowerCase()) < 0 || "string" != typeof s.memberStateFilter || [k.memberStateFilter.ALL, k.memberStateFilter.JOINED, k.memberStateFilter.INVITED, k.memberStateFilter.INVITED_BY_FRIEND, k.memberStateFilter.INVITED_BY_NON_FRIEND].indexOf(s.memberStateFilter.toLowerCase()) < 0 || null !== s.nicknameStartsWithFilter && "string" != typeof s.nicknameStartsWithFilter ? void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), r) : (s.isLoading = !0, void ne.getInstance().loadGroupChannelMemberList(e, t, s.limit, s.mutedMemberFilter, s.operatorFilter, s.memberStateFilter, s.nicknameStartsWithFilter, n, (function(e, n) {
 										if (n) return s.isLoading = !1, void S(null, n, r);
 										var a = e;
 										(!(t = String(a.next)) || t.length <= 0) && (s.hasNext = !1);
 										var i = a.members.map((function(e) {
-											return new B(e)
+											return new j(e)
 										}));
 										s.isLoading = !1, S(i, null, r)
 									}))) : void S([], null, r)
 								}
 							};
-						K.MUTED_MEMBER_FILTER = {
+						W.MUTED_MEMBER_FILTER = {
 							ALL: "all",
 							MUTED: "muted",
 							UNMUTED: "unmuted"
-						}, K.OPERATOR_FILTER = {
+						}, W.OPERATOR_FILTER = {
 							ALL: "all",
 							OPERATOR: "operator",
 							NONOPERATOR: "nonoperator"
-						}, K.Order = {
+						}, W.Order = {
 							MEMBER_NICKNAME_ALPHABETICAL: "member_nickname_alphabetical"
 						};
 						var Q = function(e) {
@@ -1914,9 +1774,9 @@
 							var n = {
 								userIds: [],
 								includeMode: !0,
-								queryType: q.USER_IDS_INCLUDE_QUERY_TYPE.AND
+								queryType: z.USER_IDS_INCLUDE_QUERY_TYPE.AND
 							};
-							this._userIdsExactFilter = [], this._userIdsIncludeFilter = [], this._userIdsIncludeFilterQueryType = q.USER_IDS_INCLUDE_QUERY_TYPE.AND, c ? (this.userIdsExactFilter = this._userIdsExactFilter, this.userIdsIncludeFilter = this._userIdsIncludeFilter, this.userIdsIncludeFilterQueryType = this._userIdsIncludeFilterQueryType) : (Object.defineProperty(this, "userIdsExactFilter", {
+							this._userIdsExactFilter = [], this._userIdsIncludeFilter = [], this._userIdsIncludeFilterQueryType = z.USER_IDS_INCLUDE_QUERY_TYPE.AND, c ? (this.userIdsExactFilter = this._userIdsExactFilter, this.userIdsIncludeFilter = this._userIdsIncludeFilter, this.userIdsIncludeFilterQueryType = this._userIdsIncludeFilterQueryType) : (Object.defineProperty(this, "userIdsExactFilter", {
 								get: function() {
 									return this._userIdsExactFilter
 								},
@@ -1953,7 +1813,7 @@
 								if (r.hasNext)
 									if (r.isLoading) S(null, new I("Query in progress.", $.QUERY_IN_PROGRESS), e);
 									else if (null !== r.nicknameContainsFilter && void 0 !== r.nicknameContainsFilter || (r.nicknameContainsFilter = ""), null !== r.channelNameContainsFilter && void 0 !== r.channelNameContainsFilter || (r.channelNameContainsFilter = ""), null === r.customTypeStartsWithFilter || "string" == typeof r.customTypeStartsWithFilter)
-									if (!Array.isArray(r._userIdsExactFilter) || !Array.isArray(r._userIdsIncludeFilter) || "string" != typeof r._userIdsIncludeFilterQueryType || [q.USER_IDS_INCLUDE_QUERY_TYPE.AND, q.USER_IDS_INCLUDE_QUERY_TYPE.OR].indexOf(r._userIdsIncludeFilterQueryType.toUpperCase()) < 0) S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), e);
+									if (!Array.isArray(r._userIdsExactFilter) || !Array.isArray(r._userIdsIncludeFilter) || "string" != typeof r._userIdsIncludeFilterQueryType || [z.USER_IDS_INCLUDE_QUERY_TYPE.AND, z.USER_IDS_INCLUDE_QUERY_TYPE.OR].indexOf(r._userIdsIncludeFilterQueryType.toUpperCase()) < 0) S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), e);
 									else {
 										if ("number" == typeof r.memberStateFilter) {
 											if (typeof r.memberStateFilter < 0 || typeof r.memberStateFilter > 4) return void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), e);
@@ -1980,12 +1840,12 @@
 							}
 						};
 						Q.ORDER_LATEST_LAST_MESSAGE = "latest_last_message", Q.ORDER_CHRONOLOGICAL = "chronological", Q.CHANNEL_NAME_ALPHABETICAL = "channel_name_alphabetical", Q.MEMBER_STATE_INVITED_ONLY = "invited_only", Q.MEMBER_STATE_JOINED_ONLY = "joined_only", Q.MEMBER_STATE_ALL = "all";
-						var q = function() {
+						var z = function() {
 							var e = "";
-							this.isLoading = !1, this.hasNext = !0, this.limit = 20, this.includeEmpty = !0, this.order = q.ORDER_CHRONOLOGICAL, this.channelNameContainsFilter = null, this.channelUrlsFilter = [], this.customTypesFilter = [], this.customTypeStartsWithFilter = null, this.superChannelFilter = k.superChannelFilter.ALL, this.membershipFilter = q.MEMBERSHIP_TYPE.JOINED;
+							this.isLoading = !1, this.hasNext = !0, this.limit = 20, this.includeEmpty = !0, this.order = z.ORDER_CHRONOLOGICAL, this.channelNameContainsFilter = null, this.channelUrlsFilter = [], this.customTypesFilter = [], this.customTypeStartsWithFilter = null, this.superChannelFilter = k.superChannelFilter.ALL, this.membershipFilter = z.MEMBERSHIP_TYPE.JOINED;
 							var n = this;
 							this.next = function(t) {
-								return ue.getInstance().hasLoggedIn() ? n.hasNext ? n.isLoading ? void S(null, new I("Query in progress.", $.QUERY_IN_PROGRESS), t) : !_(n.limit) || "boolean" != typeof n.includeEmpty || !Array.isArray(n.customTypesFilter) || !Array.isArray(n.channelUrlsFilter) || null !== n.channelNameContainsFilter && "string" != typeof n.channelNameContainsFilter || null !== n.customTypeStartsWithFilter && "string" != typeof n.customTypeStartsWithFilter || "string" != typeof n.order || [q.ORDER_CHRONOLOGICAL, q.ORDER_LATEST_LAST_MESSAGE, q.CHANNEL_NAME_ALPHABETICAL].indexOf(n.order.toLowerCase()) < 0 ? void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), t) : "string" != typeof n.superChannelFilter || [k.superChannelFilter.ALL, k.superChannelFilter.SUPER, k.superChannelFilter.NON_SUPER].indexOf(n.superChannelFilter.toLowerCase()) < 0 || "string" != typeof n.membershipFilter || [q.MEMBERSHIP_TYPE.ALL, q.MEMBERSHIP_TYPE.JOINED].indexOf(n.membershipFilter.toLowerCase()) < 0 ? void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), t) : (n.isLoading = !0, void ne.getInstance().loadPublicGroupChannelList(e, n.limit, n.includeEmpty, n.order, n.channelNameContainsFilter, n.channelUrlsFilter, n.customTypesFilter, n.customTypeStartsWithFilter, n.superChannelFilter, n.membershipFilter, (function(s, r) {
+								return ue.getInstance().hasLoggedIn() ? n.hasNext ? n.isLoading ? void S(null, new I("Query in progress.", $.QUERY_IN_PROGRESS), t) : !_(n.limit) || "boolean" != typeof n.includeEmpty || !Array.isArray(n.customTypesFilter) || !Array.isArray(n.channelUrlsFilter) || null !== n.channelNameContainsFilter && "string" != typeof n.channelNameContainsFilter || null !== n.customTypeStartsWithFilter && "string" != typeof n.customTypeStartsWithFilter || "string" != typeof n.order || [z.ORDER_CHRONOLOGICAL, z.ORDER_LATEST_LAST_MESSAGE, z.CHANNEL_NAME_ALPHABETICAL].indexOf(n.order.toLowerCase()) < 0 ? void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), t) : "string" != typeof n.superChannelFilter || [k.superChannelFilter.ALL, k.superChannelFilter.SUPER, k.superChannelFilter.NON_SUPER].indexOf(n.superChannelFilter.toLowerCase()) < 0 || "string" != typeof n.membershipFilter || [z.MEMBERSHIP_TYPE.ALL, z.MEMBERSHIP_TYPE.JOINED].indexOf(n.membershipFilter.toLowerCase()) < 0 ? void S(null, new I("Invalid parameter.", $.INVALID_PARAMETER), t) : (n.isLoading = !0, void ne.getInstance().loadPublicGroupChannelList(e, n.limit, n.includeEmpty, n.order, n.channelNameContainsFilter, n.channelUrlsFilter, n.customTypesFilter, n.customTypeStartsWithFilter, n.superChannelFilter, n.membershipFilter, (function(s, r) {
 									if (r) return n.isLoading = !1, void S(null, r, t);
 									var a = s;
 									(!(e = String(a.next)) || e.length <= 0) && (n.hasNext = !1);
@@ -1999,14 +1859,14 @@
 								}))) : void S([], null, t) : void(t && S(null, new I("Connection should be made first.", $.CONNECTION_REQUIRED), t))
 							}
 						};
-						q.ORDER_CHRONOLOGICAL = "chronological", q.CHANNEL_NAME_ALPHABETICAL = "channel_name_alphabetical", q.USER_IDS_INCLUDE_QUERY_TYPE = {
+						z.ORDER_CHRONOLOGICAL = "chronological", z.CHANNEL_NAME_ALPHABETICAL = "channel_name_alphabetical", z.USER_IDS_INCLUDE_QUERY_TYPE = {
 							AND: "AND",
 							OR: "OR"
-						}, q.MEMBERSHIP_TYPE = {
+						}, z.MEMBERSHIP_TYPE = {
 							ALL: "all",
 							JOINED: "joined"
 						};
-						var z = function(e) {
+						var q = function(e) {
 								this.isLoading = !1;
 								var n = e,
 									t = this;
@@ -2159,7 +2019,7 @@
 											(a = t.next) || (i.hasNext = !1);
 											var o = t[r],
 												l = [];
-											for (var u in o) e === X.BANNED_USER ? l.push(new Y(o[u].user)) : l.push(new Y(o[u]));
+											for (var u in o) e === X.BANNED_USER ? l.push(new B(o[u].user)) : l.push(new B(o[u]));
 											i.isLoading = !1, S(l, null, n)
 										};
 										switch (t) {
@@ -2327,11 +2187,11 @@
 												var p = U();
 												p.open("POST", n.API_HOST + e, !0), p.setRequestHeader("SendBird", l + T), p.setRequestHeader("Session-Key", ne.getInstance().sessionKey);
 												var E = o ? new o : new FormData;
-												for (var m in s && "undefined" != typeof Blob && (t instanceof Blob || "string" == typeof t || Array.isArray(t) || t.hasOwnProperty("isRNFetchBlobPolyfill")) ? E.append("file", new Blob([t], {
+												for (var f in s && "undefined" != typeof Blob && (t instanceof Blob || "string" == typeof t || Array.isArray(t) || t.hasOwnProperty("isRNFetchBlobPolyfill")) ? E.append("file", new Blob([t], {
 														type: s
 													}), t.name) : E.append("file", t, t.name), a && E.append("channel_url", a), r) {
-													var f = parseInt(m) + 1;
-													E.append("thumbnail" + f, r[m].maxWidth + "," + r[m].maxHeight)
+													var m = parseInt(f) + 1;
+													E.append("thumbnail" + m, r[f].maxWidth + "," + r[f].maxHeight)
 												}
 												p.onload = function() {
 													c && c[h] && delete c[h], p.status >= 200 && p.status < 400 ? d(null, JSON.parse(p.responseText), i) : d({
@@ -2533,9 +2393,9 @@
 									var I, E = p.filter((function(e, n) {
 											return p.indexOf(e) === n
 										})),
-										m = l.isPublic,
-										f = l.channelUrl;
-									s && "string" != typeof s ? (I = o ? new o : new FormData, s && I.append("cover_file", s, s.name), I.append("user_ids", E), null !== f && I.append("channel_url", f), null !== n && I.append("is_distinct", n), null !== i && I.append("is_super", i), null !== m && I.append("is_public", m), null !== d && I.append("is_ephemeral", d), null !== t && "string" == typeof t && I.append("name", t), r && I.append("data", r), a && I.append("custom_type", a), Array.isArray(u) && u.length > 0 && I.append("operator_ids", u)) : (I = {}, null !== s && "string" == typeof s && (I.cover_url = s), I.user_ids = E, null !== f && (I.channel_url = f), null !== n && (I.is_distinct = n), null !== i && (I.is_super = i), null !== m && (I.is_public = m), null !== d && (I.is_ephemeral = d), null !== t && "string" == typeof t && (I.name = t), r && (I.data = r), a && (I.custom_type = a), Array.isArray(u) && u.length > 0 && (I.operator_ids = u)), c(_, I, h)
+										f = l.isPublic,
+										m = l.channelUrl;
+									s && "string" != typeof s ? (I = o ? new o : new FormData, s && I.append("cover_file", s, s.name), I.append("user_ids", E), null !== m && I.append("channel_url", m), null !== n && I.append("is_distinct", n), null !== i && I.append("is_super", i), null !== f && I.append("is_public", f), null !== d && I.append("is_ephemeral", d), null !== t && "string" == typeof t && I.append("name", t), r && I.append("data", r), a && I.append("custom_type", a), Array.isArray(u) && u.length > 0 && I.append("operator_ids", u)) : (I = {}, null !== s && "string" == typeof s && (I.cover_url = s), I.user_ids = E, null !== m && (I.channel_url = m), null !== n && (I.is_distinct = n), null !== i && (I.is_super = i), null !== f && (I.is_public = f), null !== d && (I.is_ephemeral = d), null !== t && "string" == typeof t && (I.name = t), r && (I.data = r), a && (I.custom_type = a), Array.isArray(u) && u.length > 0 && (I.operator_ids = u)), c(_, I, h)
 								}, this.createOpenChannel = function(e, n, t, s, r, a) {
 									var i, l = String(ne.API_OPENCHANNELS);
 									n && "string" != typeof n ? (i = o ? new o : new FormData, n && i.append("cover_file", n, n.name), null !== e && "string" == typeof e && i.append("name", e), t && i.append("data", t), s && (Array.isArray(s) ? i.append("operators", s) : i.append("operators", [s])), r && i.append("custom_type", r)) : (i = {}, null !== n && "string" == typeof n && (i.cover_url = n), null !== e && "string" == typeof e && (i.name = e), t && (i.data = t), s && (Array.isArray(s) ? i.operators = s : i.operators = [s]), r && (i.custom_type = r)), c(l, i, a)
@@ -2701,8 +2561,8 @@
 										})), p = p.substring(0, p.length - 1), _.custom_types = p
 									}
 									o && (_.custom_type_startswith = o), _.super_mode = l, _.public_membership_mode = c, u(h, _, d)
-								}, this.loadUserGroupChannelList = function(e, n, t, s, r, a, o, l, c, d, h, _, p, I, E, m) {
-									var f = ne.API_MYGROUPCHANNELS.replace("%s", encodeURIComponent(e)),
+								}, this.loadUserGroupChannelList = function(e, n, t, s, r, a, o, l, c, d, h, _, p, I, E, f) {
+									var m = ne.API_MYGROUPCHANNELS.replace("%s", encodeURIComponent(e)),
 										g = a.userIds,
 										A = !a.includeMode,
 										N = a.queryType,
@@ -2735,7 +2595,7 @@
 											return encodeURIComponent(e)
 										})).join(",")
 									} catch (e) {}
-									C.super_mode = I, C.public_mode = E, _ && (C.custom_type_startswith = _), u(f, C, m)
+									C.super_mode = I, C.public_mode = E, _ && (C.custom_type_startswith = _), u(m, C, f)
 								}, this.loadOpenChannelParticipantList = function(e, n, t, s) {
 									var r = ne.API_OPENCHANNELS_CHANNELURL_PARTICIPANTS.replace("%s", e),
 										a = {
@@ -2864,7 +2724,7 @@
 											n.isLoading = !0, ne.getInstance().friendListQuery(ue.getInstance().getCurrentUserId(), e, n.limit, (function(s, r) {
 												if (r) return n.isLoading = !1, void S(null, r, t);
 												var a = s.users.map((function(e) {
-													return new Y(e)
+													return new B(e)
 												}));
 												n.hasMore = s.has_more, n.isLoading = !1, e = s.next, S(a, null, t)
 											}))
@@ -3062,7 +2922,7 @@
 									OPEN: "OPEN",
 									CLOSING: "CLOSING",
 									CLOSED: "CLOSED"
-								}, this.ConnectionState = this.connectionState, this.BaseChannel = E, this.User = Y, this.Member = B, this.OpenChannel = H, this.GroupChannel = k, this.UserMessage = D, this.FileMessage = M, this.AdminMessage = b, this.userEventHandlers = {}, this.channelHandlers = {}, this.connectionHandlers = {}, this.connectionCallback = [], this.GroupChannelParams = ae, this.BaseMessageParams = ie, this.FileMessageParams = le, this.UserMessageParams = oe, this.GroupChannelTotalUnreadMessageCountParams = F;
+								}, this.ConnectionState = this.connectionState, this.BaseChannel = E, this.User = B, this.Member = j, this.OpenChannel = H, this.GroupChannel = k, this.UserMessage = D, this.FileMessage = M, this.AdminMessage = b, this.userEventHandlers = {}, this.channelHandlers = {}, this.connectionHandlers = {}, this.connectionCallback = [], this.GroupChannelParams = ae, this.BaseMessageParams = ie, this.FileMessageParams = le, this.UserMessageParams = oe, this.GroupChannelTotalUnreadMessageCountParams = F;
 								var i = {};
 								T = e.appId, ce = this, (te = ne.getInstance()) || (te = new ne), this.Options = {
 									_useMemberAsMessageSender: !1,
@@ -3167,7 +3027,7 @@
 												if (ue.getInstance().loginTimer) {
 													clearTimeout(ue.getInstance().loginTimer), ue.getInstance().loginTimer = null, ue.getInstance().onLoginTimerCancel = null;
 													var d = t.getJsonElement();
-													d.hasOwnProperty("error") ? (ue.getInstance().isSessionOpened = !1, i = d.code, l = d.message, ue.getInstance().loginHandler(null, new I(l, i))) : (ue.getInstance().isSessionOpened = !0, d.hasOwnProperty("key") && (ne.getInstance().sessionKey = d.key), d.hasOwnProperty("ekey") && (ne.getInstance().ekey = d.ekey), d.hasOwnProperty("user_id") && (ue.getInstance().currentUser = new Y(d)), ue.getInstance().loginHandler(ue.getInstance().currentUser, null))
+													d.hasOwnProperty("error") ? (ue.getInstance().isSessionOpened = !1, i = d.code, l = d.message, ue.getInstance().loginHandler(null, new I(l, i))) : (ue.getInstance().isSessionOpened = !0, d.hasOwnProperty("key") && (ne.getInstance().sessionKey = d.key), d.hasOwnProperty("ekey") && (ne.getInstance().ekey = d.ekey), d.hasOwnProperty("user_id") && (ue.getInstance().currentUser = new B(d)), ue.getInstance().loginHandler(ue.getInstance().currentUser, null))
 												}
 												break;
 											case "MESG":
@@ -3257,7 +3117,7 @@
 												}));
 												break;
 											case "READ":
-												var E = new j(t.getJsonElement());
+												var E = new Y(t.getJsonElement());
 												p = k.cachedChannels.hasOwnProperty(E.channelUrl), k.getChannel(E.channelUrl, (function(e, n) {
 													if (v) {
 														var t = e;
@@ -3285,11 +3145,11 @@
 												u(t);
 												break;
 											case "DELM":
-												var m = t.getJsonElement(),
-													f = String(m.channel_type),
-													A = String(m.channel_url),
-													N = String(m.msg_id);
-												switch (f) {
+												var f = t.getJsonElement(),
+													m = String(f.channel_type),
+													A = String(f.channel_url),
+													N = String(f.msg_id);
+												switch (m) {
 													case w.CHANNEL_TYPE_OPEN:
 														H.getChannel(A, (function(e, t) {
 															if (v) {
@@ -3330,7 +3190,7 @@
 												break;
 											case V.CATEGORY_FRIEND_DISCOVERED:
 												var r = n.data.friend_discoveries.map((function(e) {
-													return new Y(e)
+													return new B(e)
 												}));
 												for (var a in ue.getInstance().userEventHandlers) ue.getInstance().userEventHandlers[a].onFriendsDiscovered(r)
 										}
@@ -3351,16 +3211,16 @@
 														var o = s.data.hasOwnProperty("member_count") ? s.data.member_count : null,
 															l = s.data.hasOwnProperty("joined_member_count") ? s.data.joined_member_count : null;
 														if (s.category === G.CATEGORY_CHANNEL_JOIN)(s.data.hasOwnProperty("users") ? s.data.users : function(e) {
-															return e.state = B.JOINED, [e]
+															return e.state = j.JOINED, [e]
 														}(s.data)).forEach((function(e) {
 															! function(e, n, s) {
-																r.isSuper ? r.setLatestMemberCount(n, s, t.ts) : (e.state = B.JOINED, r.addMember(new B(e)), r.updateJoinedMemberCount());
-																var a = new Y(e);
+																r.isSuper ? r.setLatestMemberCount(n, s, t.ts) : (e.state = j.JOINED, r.addMember(new j(e)), r.updateJoinedMemberCount());
+																var a = new B(e);
 																for (var i in a.userId === ue.getInstance().getCurrentUserId() && (r.myMemberState = "joined", k.cachedChannels[r.url] = r), ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[i].onUserJoined(r, a)
 															}(e, o, l)
 														}));
 														else {
-															var u = new Y(s.data);
+															var u = new B(s.data);
 															for (var c in u.userId === ue.getInstance().getCurrentUserId() ? (r.isPublic || k.removeCachedChannel(s.channelUrl), r.myMemberState = "none") : k.cachedChannels[r.url] = r, r.isSuper ? r.setLatestMemberCount(o, l, t.ts) : (r.removeMember(u), r.updateJoinedMemberCount()), ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[c].onUserLeft(r, u)
 														}
 													}
@@ -3375,12 +3235,12 @@
 													if (a) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
 														var o = null;
-														s.data && s.data.inviter && !h(s.data.inviter) && (o = new Y(s.data.inviter));
+														s.data && s.data.inviter && !h(s.data.inviter) && (o = new B(s.data.inviter));
 														var l = [];
 														for (var u in s.data.invitees) {
-															var c = new Y(s.data.invitees[u]);
-															l.push(c), s.data.invitees[u].state = B.INVITED;
-															var d = new B(s.data.invitees[u]);
+															var c = new B(s.data.invitees[u]);
+															l.push(c), s.data.invitees[u].state = j.INVITED;
+															var d = new j(s.data.invitees[u]);
 															if (r.isSuper) {
 																var _ = s.data.hasOwnProperty("member_count") ? s.data.member_count : null,
 																	p = s.data.hasOwnProperty("joined_member_count") ? s.data.joined_member_count : null;
@@ -3401,8 +3261,8 @@
 													if (a) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
 														var o = null;
-														s.data && s.data.inviter && !h(s.data.inviter) && (o = new Y(s.data.inviter));
-														var l = new Y(s.data.invitee);
+														s.data && s.data.inviter && !h(s.data.inviter) && (o = new B(s.data.inviter));
+														var l = new B(s.data.invitee);
 														if (l.userId === ue.getInstance().getCurrentUserId() && (r.myMemberState = "none", r.isPublic || k.removeCachedChannel(s.channelUrl)), r.isSuper) {
 															var u = s.data.hasOwnProperty("member_count") ? s.data.member_count : null,
 																c = s.data.hasOwnProperty("joined_member_count") ? s.data.joined_member_count : null;
@@ -3421,7 +3281,7 @@
 													}
 													if (r) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
-														var i = new Y(s.data);
+														var i = new B(s.data);
 														for (var o in s.category === G.CATEGORY_TYPING_START ? t.updateTypingStatus(i, !0) : t.updateTypingStatus(i, !1), ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[o].onTypingStatusUpdated(t)
 													}
 												}));
@@ -3436,7 +3296,7 @@
 													if (r) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
 														s.data.hasOwnProperty("participant_count") && (t.participantCount = s.data.participant_count);
-														var i = new Y(s.data);
+														var i = new B(s.data);
 														if (s.category === G.CATEGORY_CHANNEL_ENTER)
 															for (var o in ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[o].onUserEntered(t, i);
 														else
@@ -3453,7 +3313,7 @@
 													}
 													if (r) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
-														var i = new Y(s.data);
+														var i = new B(s.data);
 														if (s.category === G.CATEGORY_USER_CHANNEL_MUTE)
 															for (var o in ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[o].onUserMuted(t, i);
 														else
@@ -3466,7 +3326,7 @@
 													}
 													if (r) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
-														var i = new Y(s.data);
+														var i = new B(s.data);
 														if (i.userId === ue.getInstance().getCurrentUserId() && (t.myMutedState = s.category === G.CATEGORY_USER_CHANNEL_MUTE ? "muted" : "unmuted"), s.category === G.CATEGORY_USER_CHANNEL_MUTE)
 															for (var o in ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[o].onUserMuted(t, i);
 														else
@@ -3483,7 +3343,7 @@
 													}
 													if (r) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
-														var i = new Y(s.data);
+														var i = new B(s.data);
 														if (s.category === G.CATEGORY_USER_CHANNEL_BAN)
 															for (var o in ue.getInstance().channelHandlers) ue.getInstance().channelHandlers[o].onUserBanned(t, i);
 														else
@@ -3496,7 +3356,7 @@
 													}
 													if (a) n.log("Discard a command: " + e.command + ":" + s.category);
 													else {
-														var o = new Y(s.data);
+														var o = new B(s.data);
 														if (s.category === G.CATEGORY_USER_CHANNEL_BAN) {
 															if (o.userId === ue.getInstance().getCurrentUserId() && (r.myMemberState = "none"), r.isSuper) {
 																var l = s.data.hasOwnProperty("member_count") ? s.data.member_count : null,
@@ -3656,27 +3516,27 @@
 										default:
 											s && n.log("sb.connect args length error: ", arguments)
 									}
-									t && 0 !== t.length ? (ue.getInstance().reconnectTimer && (clearTimeout(ue.getInstance().reconnectTimer), ue.getInstance().reconnectTimer = null, ue.getInstance().onReconnectTimerCancel = null), ue.getInstance().getConnectionState() === this.connectionState.OPEN && ue.getInstance().getCurrentUserId() === t ? S(ue.getInstance().currentUser, null, a) : (ue.getInstance().connectionCallback.push(a), 1 === ue.getInstance().connectionCallback.length && (m(!0, null), A(t, r)))) : S(null, new I("Invalid arguments.", $.INVALID_PARAMETER), a)
+									t && 0 !== t.length ? (ue.getInstance().reconnectTimer && (clearTimeout(ue.getInstance().reconnectTimer), ue.getInstance().reconnectTimer = null, ue.getInstance().onReconnectTimerCancel = null), ue.getInstance().getConnectionState() === this.connectionState.OPEN && ue.getInstance().getCurrentUserId() === t ? S(ue.getInstance().currentUser, null, a) : (ue.getInstance().connectionCallback.push(a), 1 === ue.getInstance().connectionCallback.length && (f(!0, null), A(t, r)))) : S(null, new I("Invalid arguments.", $.INVALID_PARAMETER), a)
 								};
 								var d = !1,
 									_ = !1,
 									p = !0;
 								this.setBackgroundState = function() {
-									!d && p && (d = !0, this.getConnectionState() !== this.connectionState.CLOSED ? (_ = !0, m(!1, null)) : _ = !1)
+									!d && p && (d = !0, this.getConnectionState() !== this.connectionState.CLOSED ? (_ = !0, f(!1, null)) : _ = !1)
 								}, this.setForegroundState = function() {
-									d && p && (d = !1, _ && this.currentUser && (P = 0, f(this.getCurrentUserId(), !0)))
+									d && p && (d = !1, _ && this.currentUser && (P = 0, m(this.getCurrentUserId(), !0)))
 								}, this.disableStateChange = function() {
 									p = !1
 								}, this.enableStateChange = function() {
 									p = !0
 								}, this.disconnect = function(e) {
-									m(!0, e)
+									f(!0, e)
 								}, this.reconnect = function() {
 									if (!ne.getInstance().sessionKey || !this.currentUser) return !1;
 									var e = !0;
-									return P > 0 && (e = !1), m(!1, null), P = 0, f(this.getCurrentUserId(), e), !0
+									return P > 0 && (e = !1), f(!1, null), P = 0, m(this.getCurrentUserId(), e), !0
 								};
-								var m = function(e, n) {
+								var f = function(e, n) {
 										var t = this;
 										ue.getInstance().loginTimer && (clearTimeout(ue.getInstance().loginTimer), ue.getInstance().onLoginTimerCancel && (ue.getInstance().onLoginTimerCancel(), ue.getInstance().onLoginTimerCancel = null), ue.getInstance().loginTimer = null), ue.getInstance().reconnectTimer && (clearTimeout(ue.getInstance().reconnectTimer), ue.getInstance().onReconnectTimerCancel && (ue.getInstance().onReconnectTimerCancel(), ue.getInstance().onReconnectTimerCancel = null), ue.getInstance().reconnectTimer = null), ue.getInstance().wsClient && (P = 0, ue.getInstance().wsClient.disconnect(!0), ue.getInstance().wsClient = null),
 											function() {
@@ -3687,7 +3547,7 @@
 												S(null, null, n)
 											}()
 									},
-									f = function(e, t) {
+									m = function(e, t) {
 										if (ue.getInstance().reconnectTimer) s && n.log("still reconnecting");
 										else {
 											if ((P += 1) <= 1) {
@@ -3696,7 +3556,7 @@
 												O = 0
 											} else O = 3e3 * Math.pow(2, P - 2);
 											if (!e || !ne.getInstance().sessionKey || P >= 6) {
-												for (var r in m(!1, null), P = 0, ue.getInstance().connectionHandlers) ue.getInstance().connectionHandlers[r].onReconnectFailed(r);
+												for (var r in f(!1, null), P = 0, ue.getInstance().connectionHandlers) ue.getInstance().connectionHandlers[r].onReconnectFailed(r);
 												return
 											}
 											ue.getInstance().onReconnectTimerCancel = function() {
@@ -3709,18 +3569,18 @@
 													for (var n in ue.getInstance().connectionHandlers) ue.getInstance().connectionHandlers[n].onReconnectSucceeded(n)
 												}, t.onOpen = function() {
 													s && n.log("reconnectWS onOpen"), ue.getInstance().loginTimer = setTimeout((function() {
-														s && n.log("reconnectWS loginTimer timedout"), ue.getInstance().loginTimer = null, f(e, !0)
+														s && n.log("reconnectWS loginTimer timedout"), ue.getInstance().loginTimer = null, m(e, !0)
 													}), 1e4), ue.getInstance().onLoginTimerCancel = null
 												}, t.onMessage = function(e) {
 													l(e)
 												}, t.onError = function() {
-													s && n.log("reconnectWS onError"), f(e, !0)
+													s && n.log("reconnectWS onError"), m(e, !0)
 												}, t.onClose = function() {
 													s && n.log("reconnectWS onClose")
 												};
 												var r = ue.getInstance().getCurrentApiHost();
 												ne.getInstance().checkRouting((function(n, t) {
-													t ? f(e, !0) : (r !== n.API_HOST && y(n.API_HOST, {}, "GET", {}, (function() {})), ue.getInstance().wsClient.connect(e, null, n.WS_HOST))
+													t ? m(e, !0) : (r !== n.API_HOST && y(n.API_HOST, {}, "GET", {}, (function() {})), ue.getInstance().wsClient.connect(e, null, n.WS_HOST))
 												}))
 											}), O)
 										}
@@ -3763,7 +3623,7 @@
 												})), ue.getInstance().connectionCallback = []
 											}
 										}, r.onError = function(t) {
-											s && n.log("WSClientHandler.onError", t), ne.getInstance().sessionKey ? f(e, !0) : (ue.getInstance().connectionCallback.forEach((function(e) {
+											s && n.log("WSClientHandler.onError", t), ne.getInstance().sessionKey ? m(e, !0) : (ue.getInstance().connectionCallback.forEach((function(e) {
 												S(null, new I("Websocket connection failed.", $.WEBSOCKET_CONNECTION_FAILED), e)
 											})), ue.getInstance().connectionCallback = [])
 										}, r.onClose = function(e) {
@@ -3889,7 +3749,7 @@
 									"object" == typeof e ? this.blockUserWithUserId(e.userId, n) : S(null, new I("You have to pass user object.", $.INVALID_PARAMETER), n)
 								}, this.blockUserWithUserId = function(e, n) {
 									this.getCurrentUserId() !== e ? ne.getInstance().blockUser(this.getCurrentUserId(), e, (function(e, t) {
-										t ? S(null, t, n) : S(new Y(e), null, n)
+										t ? S(null, t, n) : S(new B(e), null, n)
 									})) : S(null, new I("You can not block yourself.", $.INVALID_PARAMETER), n)
 								}, this.unblockUser = function(e, n) {
 									"object" == typeof e ? this.unblockUserWithUserId(e.userId, n) : S(null, new I("You have to pass user object.", $.INVALID_PARAMETER), n)
@@ -3902,7 +3762,7 @@
 										if (t) S(null, t, n);
 										else {
 											var s = e.users.map((function(e) {
-												return new Y(e)
+												return new B(e)
 											}));
 											S(s, null, n)
 										}
@@ -3934,7 +3794,7 @@
 										if (t) S(null, t, n);
 										else {
 											var s = e.updated.map((function(e) {
-													return new Y(Y.build(e.user_id, e.nickname, e.profile_url, e.is_online, e.last_seen_at, e.metadata, e.is_active, e.friend_discovery_key, e.friend_name))
+													return new B(B.build(e.user_id, e.nickname, e.profile_url, e.is_online, e.last_seen_at, e.metadata, e.is_active, e.friend_discovery_key, e.friend_name))
 												})),
 												r = e.deleted,
 												a = e.has_more,
@@ -4002,4 +3862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~RedesignChat.8d4ae23c121290aea582.js.map
+//# sourceMappingURL=vendors~Chat~RedesignChat.3ff46378122db98ceb77.js.map

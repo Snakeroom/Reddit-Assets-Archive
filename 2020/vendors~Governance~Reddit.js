@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.538e9bb4d89542d8529e.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.17a8636db22bab2b0c39.js
+// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, n, o) {
@@ -206,8 +206,8 @@
 						P = new $(1),
 						C = 20,
 						M = 4,
-						k = -7,
-						R = 21,
+						R = -7,
+						k = 21,
 						D = -1e7,
 						F = 1e7,
 						T = !1,
@@ -279,8 +279,8 @@
 					function z(e, n, o, r) {
 						var t, s, i, u, l;
 						if (null == o ? o = M : b(o, 0, 8), !e.c) return e.toString();
-						if (t = e.c[0], i = e.e, null == n) l = g(e.c), l = 1 == r || 2 == r && i <= k ? O(l, i) : A(l, i, "0");
-						else if (s = (e = W(new $(e), n, o)).e, u = (l = g(e.c)).length, 1 == r || 2 == r && (n <= s || s <= k)) {
+						if (t = e.c[0], i = e.e, null == n) l = g(e.c), l = 1 == r || 2 == r && i <= R ? O(l, i) : A(l, i, "0");
+						else if (s = (e = W(new $(e), n, o)).e, u = (l = g(e.c)).length, 1 == r || 2 == r && (n <= s || s <= R)) {
 							for (; u < n; l += "0", u++);
 							l = O(l, s)
 						} else if (n -= i, l = A(l, s, "0"), s + 1 > u) {
@@ -350,7 +350,7 @@
 						var n, o;
 						if (null != e) {
 							if ("object" != typeof e) throw Error(a + "Object expected: " + e);
-							if (e.hasOwnProperty(n = "DECIMAL_PLACES") && (b(o = e[n], 0, p, n), C = o), e.hasOwnProperty(n = "ROUNDING_MODE") && (b(o = e[n], 0, 8, n), M = o), e.hasOwnProperty(n = "EXPONENTIAL_AT") && (y(o = e[n]) ? (b(o[0], -p, 0, n), b(o[1], 0, p, n), k = o[0], R = o[1]) : (b(o, -p, p, n), k = -(R = o < 0 ? -o : o))), e.hasOwnProperty(n = "RANGE"))
+							if (e.hasOwnProperty(n = "DECIMAL_PLACES") && (b(o = e[n], 0, p, n), C = o), e.hasOwnProperty(n = "ROUNDING_MODE") && (b(o = e[n], 0, 8, n), M = o), e.hasOwnProperty(n = "EXPONENTIAL_AT") && (y(o = e[n]) ? (b(o[0], -p, 0, n), b(o[1], 0, p, n), R = o[0], k = o[1]) : (b(o, -p, p, n), R = -(k = o < 0 ? -o : o))), e.hasOwnProperty(n = "RANGE"))
 								if (y(o = e[n])) b(o[0], -p, -1, n), b(o[1], 1, p, n), D = o[0], F = o[1];
 								else {
 									if (b(o, -p, p, n), !o) throw Error(a + n + " cannot be zero: " + o);
@@ -374,7 +374,7 @@
 						return {
 							DECIMAL_PLACES: C,
 							ROUNDING_MODE: M,
-							EXPONENTIAL_AT: [k, R],
+							EXPONENTIAL_AT: [R, k],
 							RANGE: [D, F],
 							CRYPTO: T,
 							MODULO_MODE: U,
@@ -706,11 +706,11 @@
 						var n, o = this,
 							t = o.s,
 							s = o.e;
-						return null === s ? t ? (n = "Infinity", t < 0 && (n = "-" + n)) : n = "NaN" : (n = g(o.c), null == e ? n = s <= k || s >= R ? O(n, s) : A(n, s, "0") : (b(e, 2, G.length, "Base"), n = r(A(n, s, "0"), 10, e, t, !0)), t < 0 && o.c[0] && (n = "-" + n)), n
+						return null === s ? t ? (n = "Infinity", t < 0 && (n = "-" + n)) : n = "NaN" : (n = g(o.c), null == e ? n = s <= R || s >= k ? O(n, s) : A(n, s, "0") : (b(e, 2, G.length, "Base"), n = r(A(n, s, "0"), 10, e, t, !0)), t < 0 && o.c[0] && (n = "-" + n)), n
 					}, L.valueOf = L.toJSON = function() {
 						var e, n = this,
 							o = n.e;
-						return null === o ? n.toString() : (e = g(n.c), e = o <= k || o >= R ? O(e, o) : A(e, o, "0"), n.s < 0 ? "-" + e : e)
+						return null === o ? n.toString() : (e = g(n.c), e = o <= R || o >= k ? O(e, o) : A(e, o, "0"), n.s < 0 ? "-" + e : e)
 					}, L._isBigNumber = !0, null != n && $.set(n), $
 				}()).default = s.BigNumber = s, void 0 === (r = function() {
 					return s
@@ -1003,6 +1003,23 @@
 			e.exports = function(e, n) {
 				for (var o = -1, t = e.length; ++o < t && r(n, e[o], 0) > -1;);
 				return o
+			}
+		},
+		"./node_modules/lodash/_createAssigner.js": function(e, n, o) {
+			var r = o("./node_modules/lodash/_baseRest.js"),
+				t = o("./node_modules/lodash/_isIterateeCall.js");
+			e.exports = function(e) {
+				return r((function(n, o) {
+					var r = -1,
+						s = o.length,
+						i = s > 1 ? o[s - 1] : void 0,
+						u = s > 2 ? o[2] : void 0;
+					for (i = e.length > 3 && "function" == typeof i ? (s--, i) : void 0, u && t(o[0], o[1], u) && (i = s < 3 ? void 0 : i, s = 1), n = Object(n); ++r < s;) {
+						var l = o[r];
+						l && e(n, l, r, i)
+					}
+					return n
+				}))
 			}
 		},
 		"./node_modules/lodash/_createCaseFirst.js": function(e, n, o) {
@@ -1375,4 +1392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Governance~Reddit.538e9bb4d89542d8529e.js.map
+//# sourceMappingURL=vendors~Governance~Reddit.17a8636db22bab2b0c39.js.map
