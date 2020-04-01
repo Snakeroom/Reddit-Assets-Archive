@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.330df5a2b984101744c9.js
-// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.2b661252d940a4604dd4.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -852,68 +852,73 @@
 		},
 		"./src/reddit/components/CreateCommunityButton/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				o = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/reddit/actions/tooltip.ts"),
-				c = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = n("./src/reddit/controls/Button/index.tsx"),
-				u = n("./src/reddit/helpers/overlay/index.ts"),
-				m = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				p = n("./src/reddit/i18n/components.tsx"),
-				b = n("./src/reddit/i18n/utils.ts"),
-				h = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				f = n.n(g),
-				x = n("./src/lib/lessComponent.tsx");
-			const v = "create-community-button",
-				C = x.a.wrapped(l.i, "SecondaryButton", f.a),
-				E = x.a.wrapped(c.c, "StyledTooltip", f.a),
-				y = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.Y)(e),
-					userIsSuspended: h.K
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/actions/tooltip.ts"),
+				d = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = n("./src/reddit/controls/Button/index.tsx"),
+				m = n("./src/reddit/helpers/overlay/index.ts"),
+				p = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				b = n("./src/reddit/selectors/user.ts"),
+				h = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				g = n.n(h),
+				f = n("./src/lib/lessComponent.tsx");
+			const x = "create-community-button",
+				v = f.a.wrapped(u.i, "SecondaryButton", g.a),
+				C = f.a.wrapped(d.c, "StyledTooltip", g.a),
+				E = Object(a.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Y)(e),
+					userIsSuspended: b.K
 				});
-			t.a = Object(o.b)(y, (e, t) => {
+			t.a = Object(i.b)(E, (e, t) => {
 				let {
 					eventSource: n
 				} = t;
 				return {
 					openCommunityCreation: t => {
-						t(Object(m.b)(n)), e(Object(u.a)("/subreddits/create"))
+						t(Object(p.b)(n)), e(Object(m.a)("/subreddits/create"))
 					},
-					onShowTooltip: () => e(Object(a.f)({
-						tooltipId: v
+					onShowTooltip: () => e(Object(c.f)({
+						tooltipId: x
 					})),
-					onHideTooltip: () => e(Object(a.i)())
+					onHideTooltip: () => e(Object(c.i)())
 				}
-			})(Object(d.c)(e => {
+			})(Object(l.c)(e => {
 				let {
 					className: t,
 					eventSource: n,
-					onShowTooltip: s,
-					onHideTooltip: o,
-					openCommunityCreation: i,
-					sendEvent: a,
-					userDoesNotHaveEnoughExpToCreateCommunity: c,
-					userIsSuspended: d
+					onShowTooltip: r,
+					onHideTooltip: i,
+					openCommunityCreation: a,
+					sendEvent: c,
+					userDoesNotHaveEnoughExpToCreateCommunity: d,
+					userIsSuspended: l
 				} = e;
-				return r.a.createElement(C, {
+				return o.a.createElement(v, {
 					className: t,
-					disabled: d || c,
-					onClick: () => i(a),
-					onMouseEnter: s,
-					onMouseLeave: o,
-					id: v
-				}, r.a.createElement(p.c, null, "Create Community"), c ? r.a.createElement(E, {
+					disabled: l || d,
+					onClick: () => a(c),
+					onMouseEnter: r,
+					onMouseLeave: i,
+					id: x
+				}, s.fbt._("Create Community", null, {
+					hk: "RLA8A"
+				}), d ? o.a.createElement(C, {
 					caretOnTop: !0,
-					tooltipId: v,
-					text: Object(b.c)("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.")
-				}) : d ? r.a.createElement(E, {
+					tooltipId: x,
+					text: s.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : l ? o.a.createElement(C, {
 					caretOnTop: !0,
-					tooltipId: v,
-					text: Object(b.c)("Accounts banned from the site can not create communities until the ban is lifted.")
+					tooltipId: x,
+					text: s.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
 				}) : null)
 			}))
 		},
@@ -3479,4 +3484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.330df5a2b984101744c9.js.map
+//# sourceMappingURL=IdCard.2b661252d940a4604dd4.js.map

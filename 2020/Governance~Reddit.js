@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c9915aeac70f369d2e3b.js
-// Retrieved at 4/1/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.8da4e5f42181e33a0cdd.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -18313,13 +18313,13 @@
 			})), n.d(t, "g", (function() {
 				return I
 			}));
-			var r = n("./src/app/strings/index.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/reddit/actions/toaster.ts"),
-				i = n("./src/reddit/endpoints/accounts/index.ts"),
-				c = n("./src/reddit/models/Toast/index.ts"),
-				a = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/reddit/actions/blockedRedditors.ts");
+				o = n("./src/reddit/actions/blockedRedditors.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
+				c = n("./src/reddit/endpoints/accounts/index.ts"),
+				a = n("./src/reddit/models/Toast/index.ts"),
+				d = n("./src/reddit/selectors/user.ts");
 			const u = "USER_BLOCK__PENDING",
 				l = "USER_BLOCK__LOADED",
 				b = "USER_BLOCK__FAILED",
@@ -18328,29 +18328,34 @@
 				m = Object(s.a)(b),
 				O = e => async (t, n, s) => {
 					let {
-						apiContext: a
+						apiContext: d
 					} = s;
-					const u = n();
-					if (u.blockUser.api.pending[e]) return;
+					if (n().blockUser.api.pending[e]) return;
 					t(p({
 						username: e
 					}));
-					const l = await Object(i.a)(a(), e),
-						b = "error-block-".concat(e);
-					if (l.ok) l.body.name && t(f(l.body)), l.body.id && t(Object(d.f)(l.body.id)), t(o.f(b)), t(o.e({
-						kind: c.b.SuccessCommunity,
-						text: Object(r.a)(u.user.language, "settings.page.saveRequestSuccess")
+					const u = await Object(c.a)(d(), e),
+						l = "error-block-".concat(e);
+					if (u.ok) u.body.name && t(f(u.body)), u.body.id && t(Object(o.f)(u.body.id)), t(i.f(l)), t(i.e({
+						kind: a.b.SuccessCommunity,
+						text: r.fbt._("Changes saved", null, {
+							hk: "196AY7"
+						})
 					}));
 					else {
 						const n = {
-							type: l.error ? l.error.type : "Unknown error",
+							type: u.error ? u.error.type : "Unknown error",
 							username: e
 						};
-						t(m(n)), t(o.e({
-							id: b,
-							kind: c.b.Error,
-							text: Object(r.a)(u.user.language, "error.tryAgainLater"),
-							buttonText: Object(r.a)(u.user.language, "reportFlow.blockUser.retry"),
+						t(m(n)), t(i.e({
+							id: l,
+							kind: a.b.Error,
+							text: r.fbt._("An error has occured. Please try again later", null, {
+								hk: "2FpsLy"
+							}),
+							buttonText: r.fbt._("Retry", null, {
+								hk: "36rgQw"
+							}),
 							buttonAction: O(e)
 						}))
 					}
@@ -18359,19 +18364,23 @@
 						apiContext: u
 					} = s;
 					const l = n(),
-						b = Object(a.i)(l),
+						b = Object(d.i)(l),
 						p = b ? b.id : void 0,
 						f = l.user.blocked.data.filter(t => t.name === e)[0];
 					p && (t(y({
 						name: e
-					})), (await Object(i.b)(u(), p, e)).ok ? (t(j({
+					})), (await Object(c.b)(u(), p, e)).ok ? (t(j({
 						name: e
-					})), f && f.id && t(Object(d.h)(f.id)), t(o.e({
-						kind: c.b.SuccessCommunity,
-						text: Object(r.a)(l.user.language, "settings.page.saveRequestSuccess")
-					}))) : (t(o.e({
-						kind: c.b.Error,
-						text: Object(r.a)(l.user.language, "error.tryAgainLater")
+					})), f && f.id && t(Object(o.h)(f.id)), t(i.e({
+						kind: a.b.SuccessCommunity,
+						text: r.fbt._("Changes saved", null, {
+							hk: "4kz5FX"
+						})
+					}))) : (t(i.e({
+						kind: a.b.Error,
+						text: r.fbt._("An error has occured. Please try again later", null, {
+							hk: "2FpsLy"
+						})
 					})), t(E({
 						name: e
 					}))))
@@ -18380,39 +18389,39 @@
 		"./src/reddit/actions/userFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "i", (function() {
-				return g
+				return O
 			})), n.d(t, "a", (function() {
-				return _
+				return g
 			})), n.d(t, "d", (function() {
-				return h
+				return _
 			})), n.d(t, "b", (function() {
-				return I
+				return E
 			})), n.d(t, "h", (function() {
-				return C
+				return T
 			})), n.d(t, "c", (function() {
-				return w
+				return P
 			})), n.d(t, "g", (function() {
-				return k
+				return N
 			})), n.d(t, "f", (function() {
-				return L
+				return k
 			})), n.d(t, "e", (function() {
-				return G
+				return F
 			})), n.d(t, "o", (function() {
-				return H
+				return q
 			})), n.d(t, "n", (function() {
-				return W
+				return H
 			})), n.d(t, "m", (function() {
-				return K
+				return W
 			})), n.d(t, "l", (function() {
-				return Y
+				return K
 			})), n.d(t, "j", (function() {
-				return z
+				return Y
 			})), n.d(t, "k", (function() {
-				return Q
+				return z
 			})), n.d(t, "p", (function() {
-				return J
+				return Q
 			}));
-			var r = n("./src/app/strings/index.ts"),
+			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./node_modules/lodash/isEmpty.js"),
 				i = n.n(o),
@@ -18424,43 +18433,42 @@
 				b = n("./src/reddit/models/Toast/index.ts"),
 				p = n("./src/reddit/models/User/index.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts"),
-				m = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/selectors/userFlair.ts");
-			const g = "USER_FLAIR_DATA__MUTATED",
-				_ = "AUTHOR_FLAIR_DATA__MUTATED",
-				h = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_SUCCESS",
-				y = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_PENDING"),
-				j = Object(s.a)(h),
-				E = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_FAILED"),
-				I = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_SUCCESS",
-				S = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_PENDING"),
-				v = Object(s.a)(I),
-				T = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_FAILED"),
-				C = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_SUCCESS",
-				A = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_PENDING"),
-				D = Object(s.a)(C),
-				P = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_FAILED"),
-				w = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_SUCCESS",
-				R = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_PENDING"),
-				x = Object(s.a)(w),
-				N = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_FAILED"),
-				k = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_PENDING",
-				L = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_FAILED",
-				M = Object(s.a)(k),
-				U = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_SUCCESS"),
-				F = Object(s.a)(L),
-				G = "USERFLAIR_FETCH_SUCCESS",
-				B = Object(s.a)(G),
+				m = n("./src/reddit/selectors/userFlair.ts");
+			const O = "USER_FLAIR_DATA__MUTATED",
+				g = "AUTHOR_FLAIR_DATA__MUTATED",
+				_ = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_SUCCESS",
+				h = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_PENDING"),
+				y = Object(s.a)(_),
+				j = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_FAILED"),
+				E = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_SUCCESS",
+				I = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_PENDING"),
+				S = Object(s.a)(E),
+				v = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_FAILED"),
+				T = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_SUCCESS",
+				C = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_PENDING"),
+				A = Object(s.a)(T),
+				D = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_FAILED"),
+				P = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_SUCCESS",
+				w = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_PENDING"),
+				R = Object(s.a)(P),
+				x = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_FAILED"),
+				N = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_PENDING",
+				k = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_FAILED",
+				L = Object(s.a)(N),
+				M = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_SUCCESS"),
+				U = Object(s.a)(k),
+				F = "USERFLAIR_FETCH_SUCCESS",
+				G = Object(s.a)(F),
+				B = Object(s.a)(O),
 				V = Object(s.a)(g),
-				q = Object(s.a)(_),
-				H = (e, t, n, r, s) => async (o, i, c) => {
+				q = (e, t, n, r, s) => async (o, i, c) => {
 					let {
 						apiContext: a
 					} = c;
 					const l = i(),
 						b = l.user.account,
-						m = b ? Object(p.f)(b) : void 0,
-						g = Object(O.c)(l, {
+						O = b ? Object(p.f)(b) : void 0,
+						g = Object(m.c)(l, {
 							subredditId: s
 						}),
 						_ = Object.assign({}, g.displaySettings, {
@@ -18472,12 +18480,29 @@
 							applied: e,
 							displaySettings: _
 						};
-					o(r === m ? V(h) : q(h));
+					o(r === O ? B(h) : V(h));
 					const y = Object(f.P)(l, {
 							subredditId: s
 						}),
 						j = t && e ? Object(u.g)(e) : void 0;
 					Object(d.g)(a(), r, y.name, t, j), Object(d.i)(a(), n, y.name)
+				}, H = (e, t) => async (n, r, s) => {
+					let {
+						apiContext: o
+					} = s;
+					const i = r(),
+						c = Object(f.P)(i, {
+							subredditId: e
+						}).name;
+					n(h());
+					const a = await Object(d.l)(o(), c, t);
+					if (a.ok) {
+						n(y({
+							subredditId: e,
+							isEnabled: t
+						}))
+					} else n(j());
+					return a.ok
 				}, W = (e, t) => async (n, r, s) => {
 					let {
 						apiContext: o
@@ -18486,32 +18511,46 @@
 						c = Object(f.P)(i, {
 							subredditId: e
 						}).name;
-					n(y());
-					const a = await Object(d.l)(o(), c, t);
-					if (a.ok) {
-						n(j({
-							subredditId: e,
-							isEnabled: t
-						}))
-					} else n(E());
-					return a.ok
-				}, K = (e, t) => async (n, r, s) => {
-					let {
-						apiContext: o
-					} = s;
-					const i = r(),
-						c = Object(f.P)(i, {
-							subredditId: e
-						}).name;
-					n(S());
+					n(I());
 					const a = await Object(d.j)(o(), t, l.d.UserFlair, c);
 					if (a.ok) {
-						n(v({
+						n(S({
 							subredditId: e,
 							canAssignOwn: t
 						}))
-					} else n(T());
+					} else n(v());
 					return a.ok
+				}, K = (e, t) => async (n, s, o) => {
+					let {
+						apiContext: i
+					} = o;
+					const c = s(),
+						u = Object(f.P)(c, {
+							subredditId: t
+						}).name;
+					n(C());
+					const p = await Object(d.f)(i(), e, u, l.d.UserFlair),
+						m = p.ok && !(p.body && !1 === p.body.success);
+					if (m) {
+						const e = {
+							subredditId: t,
+							template: p.body
+						};
+						n(A(e));
+						const s = Object(a.d)(r.fbt._("Flair saved!", null, {
+							hk: "354KI0"
+						}), b.b.SuccessMod);
+						n(Object(a.e)(s))
+					} else {
+						n(D());
+						const s = Object(a.d)(r.fbt._("Sorry, flair wasn't saved.", null, {
+							hk: "4tkRNl"
+						}), b.b.Error, r.fbt._("Retry", null, {
+							hk: "4zNHTm"
+						}), K(e, t));
+						n(Object(a.e)(s))
+					}
+					return m
 				}, Y = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: i
@@ -18519,25 +18558,25 @@
 					const c = s(),
 						u = Object(f.P)(c, {
 							subredditId: t
-						}).name,
-						p = Object(m.O)(c);
-					n(A());
-					const O = await Object(d.f)(i(), e, u, l.d.UserFlair),
-						g = O.ok && !(O.body && !1 === O.body.success);
-					if (g) {
-						const e = {
+						}).name;
+					if (n(w()), (await Object(d.b)(i(), e, u)).ok) {
+						n(R({
 							subredditId: t,
-							template: O.body
-						};
-						n(D(e));
-						const s = Object(a.d)(Object(r.a)(p, "structuredStyles.forms.flair.toast.flairSaved"), b.b.SuccessMod);
+							templateId: e
+						}));
+						const s = Object(a.d)(r.fbt._("Flair deleted!", null, {
+							hk: "1mNdn0"
+						}), b.b.SuccessMod);
 						n(Object(a.e)(s))
 					} else {
-						n(P());
-						const s = Object(a.d)(Object(r.a)(p, "structuredStyles.forms.flair.toast.flairNotSaved"), b.b.Error, Object(r.a)(p, "structuredStyles.forms.flair.toast.retryButtonText"), Y(e, t));
+						n(x());
+						const s = Object(a.d)(r.fbt._("Sorry, flair wasn't deleted.", null, {
+							hk: "2QrdJr"
+						}), b.b.Error, r.fbt._("Retry", null, {
+							hk: "1buF3Y"
+						}), Y(e, t));
 						n(Object(a.e)(s))
 					}
-					return g
 				}, z = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: i
@@ -18546,47 +18585,31 @@
 						u = Object(f.P)(c, {
 							subredditId: t
 						}).name,
-						l = Object(m.O)(c);
-					if (n(R()), (await Object(d.b)(i(), e, u)).ok) {
-						n(x({
-							subredditId: t,
-							templateId: e
-						}));
-						const s = Object(a.d)(Object(r.a)(l, "structuredStyles.forms.flair.toast.flairDeleted"), b.b.SuccessMod);
-						n(Object(a.e)(s))
-					} else {
-						n(N());
-						const s = Object(a.d)(Object(r.a)(l, "structuredStyles.forms.flair.toast.flairNotDeleted"), b.b.Error, Object(r.a)(l, "structuredStyles.forms.flair.toast.retryButtonText"), z(e, t));
-						n(Object(a.e)(s))
-					}
-				}, Q = (e, t) => async (n, s, o) => {
-					let {
-						apiContext: i
-					} = o;
-					const c = s(),
-						u = Object(f.P)(c, {
+						p = Object(m.c)(c, {
 							subredditId: t
-						}).name,
-						p = Object(O.c)(c, {
-							subredditId: t
-						}).templateIds,
-						g = Object(m.O)(c);
-					if (n(M({
+						}).templateIds;
+					if (n(L({
 							subredditId: t,
 							templateIds: e
 						})), (await Object(d.e)(i(), u, l.d.UserFlair, e)).ok) {
-						n(U());
-						const e = Object(a.d)(Object(r.a)(g, "structuredStyles.forms.flair.toast.flairReorderSuccess"), b.b.SuccessMod);
+						n(M());
+						const e = Object(a.d)(r.fbt._("Flair reorder saved.", null, {
+							hk: "1zrDON"
+						}), b.b.SuccessMod);
 						n(Object(a.e)(e))
 					} else {
-						n(F({
+						n(U({
 							subredditId: t,
 							templateIds: p
 						}));
-						const s = Object(a.d)(Object(r.a)(g, "structuredStyles.forms.flair.toast.flairReorderFailure"), b.b.Error, Object(r.a)(g, "structuredStyles.forms.flair.toast.retryButtonText"), Q(e, t));
+						const s = Object(a.d)(r.fbt._("Sorry. Flair reorder wasn't saved.", null, {
+							hk: "3gAbwk"
+						}), b.b.Error, r.fbt._("Retry", null, {
+							hk: "2nPnNw"
+						}), z(e, t));
 						n(Object(a.e)(s))
 					}
-				}, J = (e, t) => async (n, s, o) => {
+				}, Q = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: u
 					} = o;
@@ -18597,14 +18620,15 @@
 								subredditId: e
 							}).name,
 							o = await Object(d.d)(u(), s);
-						if (o.ok) n(B(o.body)), n(Object(c.b)({
+						if (o.ok) n(G(o.body)), n(Object(c.b)({
 							username: t,
 							subredditId: e
 						}));
 						else {
-							const e = Object(m.O)(l),
-								t = Object(a.d)(Object(r.a)(e, "error.type.generic"), b.b.Error);
-							n(Object(a.e)(t))
+							const e = Object(a.d)(r.fbt._("Something went wrong. Just don't panic.", null, {
+								hk: "4Ck6Cm"
+							}), b.b.Error);
+							n(Object(a.e)(e))
 						}
 					} else n(Object(c.b)({
 						username: t,
@@ -62140,4 +62164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.c9915aeac70f369d2e3b.js.map
+//# sourceMappingURL=Governance~Reddit.8da4e5f42181e33a0cdd.js.map

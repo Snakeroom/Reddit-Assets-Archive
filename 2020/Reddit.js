@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e219fd8644c2aa828526.js
-// Retrieved at 4/1/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4e30e8dadc3ad61e7303.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -833,8 +833,8 @@
 				return j
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./node_modules/react-router-redux/es/index.js"),
-				a = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./node_modules/react-router-redux/es/index.js"),
 				r = s("./src/lib/constants/index.ts"),
 				o = s("./src/lib/extractQueryParams/index.ts"),
 				i = s("./src/lib/filterQueryParams/index.ts"),
@@ -866,7 +866,7 @@
 				const {
 					page: S = r.Nb.Account
 				} = e.params;
-				if (S === r.Nb.Gold) return void t(Object(n.c)("/settings/premium"));
+				if (S === r.Nb.Gold) return void t(Object(a.c)("/settings/premium"));
 				const k = [];
 				S === r.Nb.Profile && (k.push(t(Object(g.a)())), k.push(t(Object(f.e)()))), S === r.Nb.Account && k.push(t(Object(u.o)())), S === r.Nb.Notifications && k.push(t(Object(p.a)())), S !== r.Nb.Privacy && S !== r.Nb.Messaging || k.push(t(Object(d.b)())), await Promise.all(k); {
 					const e = s(),
@@ -875,11 +875,12 @@
 							url: c
 						} = r,
 						d = Object(o.a)(c).get(v.c);
-					if (d && (t(Object(n.c)(Object(i.a)(c, [v.c]))), Object(O.a)(e))) {
-						const s = Object(w.O)(e),
-							n = Object(a.a)(s, "settings.accountForm.connectedAccounts.twitterConnected.toast");
+					if (d && (t(Object(a.c)(Object(i.a)(c, [v.c]))), Object(O.a)(e))) {
+						const e = n.fbt._("Connected accounts", null, {
+							hk: "bdpfW"
+						});
 						t(Object(C.e)({
-							text: n
+							text: e
 						})), Object(x.b)(d)
 					}
 				}
@@ -12271,4 +12272,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.e219fd8644c2aa828526.js.map
+//# sourceMappingURL=Reddit.4e30e8dadc3ad61e7303.js.map

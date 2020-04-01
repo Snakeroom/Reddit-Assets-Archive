@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.d77cb94c67c72be60d6f.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.22c7c560b5dc4599d2a0.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -669,30 +669,34 @@
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				n = s("./src/higherOrderComponents/asModal/index.tsx"),
-				a = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				d = s("./src/reddit/controls/TextButton/index.tsx"),
-				i = s("./src/reddit/i18n/utils.ts"),
+			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				a = s("./src/higherOrderComponents/asModal/index.tsx"),
+				d = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				i = s("./src/reddit/controls/TextButton/index.tsx"),
 				c = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				l = s("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = s.n(l);
 			const u = e => e.preventDefault();
-			t.a = Object(n.a)(e => r.a.createElement(a.c, null, r.a.createElement(a.g, null, r.a.createElement(c.a, null, r.a.createElement(a.n, null, e.headerText || Object(i.c)("Confirm")), r.a.createElement(d.a, {
+			t.a = Object(a.a)(e => n.a.createElement(d.c, null, n.a.createElement(d.g, null, n.a.createElement(c.a, null, n.a.createElement(d.n, null, e.headerText || o.fbt._("Confirm", null, {
+				hk: "2zlvKa"
+			})), n.a.createElement(i.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, r.a.createElement(a.b, null)))), r.a.createElement(a.j, null, r.a.createElement(a.m, {
+			}, n.a.createElement(d.b, null)))), n.a.createElement(d.j, null, n.a.createElement(d.m, {
 				className: m.a.ModalText
-			}, e.modalText)), r.a.createElement(a.e, null, r.a.createElement(a.a, {
+			}, e.modalText)), n.a.createElement(d.e, null, n.a.createElement(d.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
 				"data-redditstyle": !0
-			}, e.cancelActionText || Object(i.c)("Cancel")), r.a.createElement(a.r, {
+			}, e.cancelActionText || o.fbt._("Cancel", null, {
+				hk: "3DgVq6"
+			})), n.a.createElement(d.r, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: t => {
@@ -1302,102 +1306,101 @@
 						isOverlay: s,
 						isUserFlairEnabled: n,
 						flairPosition: a,
-						language: c,
-						onHideTooltip: m,
-						pageLayer: b,
-						post: h,
-						authorFlair: f,
-						showSub: g = !1,
-						showTimestamp: M = !0,
-						subredditOrProfile: P,
-						tooltipType: _
-					} = this.props, B = b && b.meta && b.meta.name === i.Ab.COMMENTS, k = Object(p.a)(h), H = a === L.b.Left, R = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, F = !s && !B, W = r.a.createElement(r.a.Fragment, null, !k && r.a.createElement(q, {
+						onHideTooltip: c,
+						pageLayer: m,
+						post: b,
+						authorFlair: h,
+						showSub: f = !1,
+						showTimestamp: g = !0,
+						subredditOrProfile: M,
+						tooltipType: P
+					} = this.props, _ = m && m.meta && m.meta.name === i.Ab.COMMENTS, B = Object(p.a)(b), k = a === L.b.Left, H = b.authorIsContractor && !!M && M.type === D.c.EmployeesOnly, R = !s && !_, F = r.a.createElement(r.a.Fragment, null, !B && r.a.createElement(q, {
 						style: {
 							color: z(this.props)
 						}
-					}, "Posted by"), k && r.a.createElement(o.Fragment, null, r.a.createElement(x, {
+					}, "Posted by"), B && r.a.createElement(o.Fragment, null, r.a.createElement(x, {
 						className: Q.a.crosspostIcon
 					}), r.a.createElement(q, {
 						style: {
 							color: z(this.props)
 						}
-					}, "Crossposted by")), f && H && r.a.createElement("div", {
+					}, "Crossposted by")), h && k && r.a.createElement("div", {
 						className: Q.a.flairContainer
 					}, r.a.createElement(w.b, {
 						disabled: !n,
-						flair: f,
+						flair: h,
 						forceSmallEmojis: !0,
-						usesCommunityStyles: F
-					})), Object(U.h)(h.author) ? r.a.createElement(K, {
-						post: h,
+						usesCommunityStyles: R
+					})), Object(U.h)(b.author) ? r.a.createElement(K, {
+						post: b,
 						isDeleted: !0,
-						renderContractorBadge: R,
+						renderContractorBadge: H,
 						style: {
 							color: z(this.props)
 						}
-					}) : r.a.createElement(o.Fragment, null, !Object(U.h)(h.author) && r.a.createElement(v.b, {
+					}) : r.a.createElement(o.Fragment, null, !Object(U.h)(b.author) && r.a.createElement(v.b, {
 						className: Q.a.badge,
-						subredditId: h.belongsTo.id,
-						uniqueIdentifier: "".concat(h.id, "-").concat(s),
-						userId: h.authorId
+						subredditId: b.belongsTo.id,
+						uniqueIdentifier: "".concat(b.id, "-").concat(s),
+						userId: b.authorId
 					}), r.a.createElement(y.b, {
-						postOrComment: h,
-						tooltipType: _
+						postOrComment: b,
+						tooltipType: P
 					}, r.a.createElement(O.b, {
-						ignore: Object(U.h)(h.author) || !!h.distinguishType && h.distinguishType !== i.C.NONE,
-						subredditId: h.belongsTo.id,
-						userId: h.authorId
+						ignore: Object(U.h)(b.author) || !!b.distinguishType && b.distinguishType !== i.C.NONE,
+						subredditId: b.belongsTo.id,
+						userId: b.authorId
 					}, r.a.createElement(K, {
-						post: h,
-						renderContractorBadge: R,
+						post: b,
+						renderContractorBadge: H,
 						style: {
 							color: z(this.props)
 						}
-					})))), f && !H && r.a.createElement("div", {
+					})))), h && !k && r.a.createElement("div", {
 						className: Q.a.flairContainer
 					}, r.a.createElement(w.b, {
 						disabled: !n,
-						flair: f,
+						flair: h,
 						forceSmallEmojis: !0,
-						usesCommunityStyles: F
-					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(U.h)(h.author) && r.a.createElement(j.a, {
+						usesCommunityStyles: R
+					})), b.belongsTo.type === I.a.SUBREDDIT && !Object(U.h)(b.author) && r.a.createElement(j.a, {
 						className: Q.a.publicWallet,
-						contentId: h.id,
-						subredditId: h.belongsTo.id,
-						userId: h.authorId,
-						username: h.author
+						contentId: b.id,
+						subredditId: b.belongsTo.id,
+						userId: b.authorId,
+						username: b.author
 					}));
 					return r.a.createElement("div", {
 						className: Object(d.a)(Q.a.container, e)
-					}, g && P && r.a.createElement(E.a, {
-						postId: h.id,
-						subredditName: P.name,
-						tooltipType: _
+					}, f && M && r.a.createElement(E.a, {
+						postId: b.id,
+						subredditName: M.name,
+						tooltipType: P
 					}, r.a.createElement(S.a, {
 						"data-click-id": "subreddit",
-						to: P.url
-					}, P.displayText)), P && P.isQuarantined && r.a.createElement(C.a, null), g && !k && r.a.createElement(V, {
+						to: M.url
+					}, M.displayText)), M && M.isQuarantined && r.a.createElement(C.a, null), f && !B && r.a.createElement(V, {
 						className: this.props.metaSeparatorClassName
-					}, "•"), h.isSponsored && r.a.createElement(o.Fragment, null, r.a.createElement(N.a, null), r.a.createElement(V, {
+					}, "•"), b.isSponsored && r.a.createElement(o.Fragment, null, r.a.createElement(N.a, null), r.a.createElement(V, {
 						className: this.props.metaSeparatorClassName
-					}, "•")), W, r.a.createElement(T.e, {
-						post: h
-					}), M && r.a.createElement("a", {
+					}, "•")), F, r.a.createElement(T.e, {
+						post: b
+					}), g && r.a.createElement("a", {
 						className: Q.a.externalLink,
 						"data-click-id": "timestamp",
-						href: h.permalink,
+						href: b.permalink,
 						id: t,
 						onMouseEnter: this.onShowCreatedTooltip,
-						onMouseLeave: m,
+						onMouseLeave: c,
 						style: {
 							color: z(this.props)
 						},
 						target: "_blank",
 						rel: "nofollow noopener"
-					}, Object(u.d)(c, h.created / 1e3), r.a.createElement(A.c, {
+					}, Object(u.f)(b.created / 1e3), r.a.createElement(A.c, {
 						caretOnTop: s,
 						tooltipId: t,
-						text: Object(l.a)(h.created)
+						text: Object(l.a)(b.created)
 					})))
 				}
 			}
@@ -1757,4 +1760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.d77cb94c67c72be60d6f.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.22c7c560b5dc4599d2a0.js.map

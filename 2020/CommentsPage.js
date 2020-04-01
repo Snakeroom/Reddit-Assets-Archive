@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.f59f0914929b7552acd5.js
-// Retrieved at 4/1/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.12c6b06eb34562bea62c.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1718,13 +1718,12 @@
 				g = s("./src/lib/makeApiRequest/index.ts"),
 				x = s("./src/lib/omitHeaders/index.ts"),
 				f = s("./src/reddit/constants/headers.ts"),
-				v = s("./src/reddit/i18n/utils.ts"),
-				C = s("./src/reddit/models/Toast/index.ts");
-			const O = (e, t) => async (s, n, o) => {
+				v = s("./src/reddit/models/Toast/index.ts");
+			const C = (e, t) => async (s, o, r) => {
 				let {
-					apiContext: r
-				} = o;
-				const a = await (async (e, t, s) => Object(g.b)(Object(x.a)(e, [f.a]), {
+					apiContext: a
+				} = r;
+				const i = await (async (e, t, s) => Object(g.b)(Object(x.a)(e, [f.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/set_suggested_sort/"),
 						method: d.cb.POST,
 						data: {
@@ -1732,108 +1731,116 @@
 							id: t,
 							sort: s
 						}
-					}))(r(), e, t),
-					i = "error-block-".concat(t),
-					c = "success-block-".concat(t);
-				if (a.ok) {
+					}))(a(), e, t),
+					c = "error-block-".concat(t),
+					l = "success-block-".concat(t);
+				if (i.ok) {
 					s(Object(h.R)({
 						[e]: {
 							suggestedSort: t
 						}
 					}));
-					const n = t ? Object(v.c)("Suggested sort is on.") : Object(v.c)("Suggested sort is off.");
+					const o = t ? n.fbt._("Suggested sort is on.", null, {
+						hk: "tW1Rb"
+					}) : n.fbt._("Suggested sort is off.", null, {
+						hk: "4fwvgj"
+					});
 					s(b.e({
-						id: c,
-						kind: C.b.SuccessCommunityGreen,
-						text: n
+						id: l,
+						kind: v.b.SuccessCommunityGreen,
+						text: o
 					}))
 				} else s(b.e({
-					id: i,
-					kind: C.b.Error,
-					text: Object(v.c)("Try again later"),
-					buttonText: Object(v.c)("Retry"),
-					buttonAction: O(e, t)
+					id: c,
+					kind: v.b.Error,
+					text: n.fbt._("Try again later", null, {
+						hk: "1Lqlj2"
+					}),
+					buttonText: n.fbt._("Retry", null, {
+						hk: "44HF9e"
+					}),
+					buttonAction: C(e, t)
 				}))
 			};
-			var E = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				y = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				_ = s("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
-				k = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				j = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				P = s("./src/reddit/controls/Dropdown/index.tsx"),
-				w = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				I = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				S = s("./src/reddit/helpers/path/index.ts"),
-				T = s("./src/reddit/selectors/telemetry.ts");
+			var O = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				E = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				y = s("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
+				_ = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				k = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				j = s("./src/reddit/controls/Dropdown/index.tsx"),
+				P = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				w = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				I = s("./src/reddit/helpers/path/index.ts"),
+				S = s("./src/reddit/selectors/telemetry.ts");
 			s("./src/telemetry/models/Event.ts");
-			const N = (e, t, s, n, o) => r => ({
+			const T = (e, t, s, n, o) => r => ({
 					source: "comment_sort",
 					action: "click",
 					noun: e,
 					actionInfo: {
 						pageType: t ? "post_detail" : "home"
 					},
-					listing: Object(T.listing)(r, void 0, {
+					listing: Object(S.listing)(r, void 0, {
 						oldSort: s,
 						sort: n,
 						source: o
 					}),
-					userSubreddit: Object(T.userSubreddit)(r)
+					userSubreddit: Object(S.userSubreddit)(r)
 				}),
-				M = (e, t) => s => ({
+				N = (e, t) => s => ({
 					source: "comment_highlighting",
 					action: t,
 					noun: e
 				}),
-				L = e => ({
-					subreddit: Object(T.subreddit)(e),
-					userSubreddit: Object(T.userSubreddit)(e)
+				M = e => ({
+					subreddit: Object(S.subreddit)(e),
+					userSubreddit: Object(S.userSubreddit)(e)
 				}),
-				R = e => t => Object.assign({
+				L = e => t => Object.assign({
 					source: "contest_mode",
 					action: "click",
 					noun: e ? "enable" : "disable"
-				}, L);
-			var F = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				A = s("./src/reddit/icons/svgs/Info/index.tsx"),
-				B = s("./src/reddit/selectors/activeModalId.ts"),
-				D = s("./src/reddit/selectors/comments.ts"),
-				W = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				H = s("./src/reddit/selectors/posts.ts"),
-				V = s("./src/reddit/selectors/tooltip.ts"),
-				U = s("./src/reddit/selectors/user.ts"),
-				G = s("./src/reddit/components/CommentSort/CommentSort.m.less"),
-				K = s.n(G),
-				z = s("./src/reddit/reducers/comments/visitHighlightingFilter/index.ts");
-			const J = Object(k.a)(P.a),
-				q = l.a.wrapped(F.b, "DropdownTriangle", K.a),
-				X = l.a.div("HighlightWrapper", K.a),
-				Q = l.a.div("Title", K.a),
-				Y = e => e === z.a.First ? n.fbt._("First Visit", null, {
+				}, M);
+			var R = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				F = s("./src/reddit/icons/svgs/Info/index.tsx"),
+				A = s("./src/reddit/selectors/activeModalId.ts"),
+				B = s("./src/reddit/selectors/comments.ts"),
+				D = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				W = s("./src/reddit/selectors/posts.ts"),
+				H = s("./src/reddit/selectors/tooltip.ts"),
+				V = s("./src/reddit/selectors/user.ts"),
+				U = s("./src/reddit/components/CommentSort/CommentSort.m.less"),
+				G = s.n(U),
+				K = s("./src/reddit/reducers/comments/visitHighlightingFilter/index.ts");
+			const z = Object(_.a)(j.a),
+				J = l.a.wrapped(R.b, "DropdownTriangle", G.a),
+				q = l.a.div("HighlightWrapper", G.a),
+				X = l.a.div("Title", G.a),
+				Q = e => e === K.a.First ? n.fbt._("First Visit", null, {
 					hk: "HdDSr"
-				}) : e === z.a.Last ? n.fbt._("Last Visit", null, {
+				}) : e === K.a.Last ? n.fbt._("Last Visit", null, {
 					hk: "3ubIq3"
 				}) : n.fbt._("None", null, {
 					hk: "4jwXNg"
 				});
-			class Z extends r.a.Component {
+			class Y extends r.a.Component {
 				constructor() {
 					super(...arguments), this.track = () => {
 						const {
 							trackHighlight: e,
 							selectedSort: t
 						} = this.props;
-						if (t !== z.a.None) {
-							e(t === z.a.Last ? "since_last_visit" : "since_first_visit", "view")
+						if (t !== K.a.None) {
+							e(t === K.a.Last ? "since_last_visit" : "since_first_visit", "view")
 						}
 					}, this.onDropdownClick = (e, t) => {
 						this.props.trackHighlight(e, "click"), this.props.changeHighlightSort(t)
 					}, this.onDropdownClickFirst = () => {
-						this.onDropdownClick("since_first_visit", z.a.First)
+						this.onDropdownClick("since_first_visit", K.a.First)
 					}, this.onDropdownClickLast = () => {
-						this.onDropdownClick("since_last_visit", z.a.Last)
+						this.onDropdownClick("since_last_visit", K.a.Last)
 					}, this.onDropdownClickNone = () => {
-						this.onDropdownClick("do_not_highlight", z.a.None)
+						this.onDropdownClick("do_not_highlight", K.a.None)
 					}
 				}
 				componentDidMount() {
@@ -1849,90 +1856,90 @@
 						onOpen: s,
 						selectedSort: o
 					} = this.props;
-					return r.a.createElement(X, null, r.a.createElement(Q, {
+					return r.a.createElement(q, null, r.a.createElement(X, {
 						onClick: s
 					}, n.fbt._("highlight comments since", null, {
 						hk: "3AxAbU"
-					})), r.a.createElement(w.b, {
-						className: Object(c.a)(K.a.HighlightPicker, K.a.Row),
-						displayText: Y(o),
+					})), r.a.createElement(P.b, {
+						className: Object(c.a)(G.a.HighlightPicker, G.a.Row),
+						displayText: Q(o),
 						id: t,
 						onClick: s
-					}), r.a.createElement(q, {
-						onClick: s
 					}), r.a.createElement(J, {
+						onClick: s
+					}), r.a.createElement(z, {
 						isOpen: e,
 						renderContentsHidden: !0,
 						tooltipId: t
-					}, r.a.createElement(w.b, {
-						displayText: Y(z.a.First),
-						isSelected: o === z.a.First,
+					}, r.a.createElement(P.b, {
+						displayText: Q(K.a.First),
+						isSelected: o === K.a.First,
 						onClick: this.onDropdownClickFirst
-					}), r.a.createElement(w.b, {
-						displayText: Y(z.a.Last),
-						isSelected: o === z.a.Last,
+					}), r.a.createElement(P.b, {
+						displayText: Q(K.a.Last),
+						isSelected: o === K.a.Last,
 						onClick: this.onDropdownClickLast
-					}), r.a.createElement(w.b, {
-						displayText: Y(z.a.None),
-						isSelected: o === z.a.None,
+					}), r.a.createElement(P.b, {
+						displayText: Q(K.a.None),
+						isSelected: o === K.a.None,
 						onClick: this.onDropdownClickNone
 					})))
 				}
 			}
-			var $ = Z;
-			const ee = "CommentSort--SortPicker",
-				te = "CommentSort--HighlightPicker",
-				se = "CommentSort--Tooltip",
-				ne = Object(k.a)(P.a),
-				oe = l.a.button("ContestMode", K.a),
-				re = l.a.wrapped(F.b, "DropdownTriangle", K.a),
-				ae = l.a.wrapped(A.a, "Info", K.a),
-				ie = l.a.wrapped(w.b, "Row", K.a),
-				ce = l.a.button("SetSort", K.a),
-				de = l.a.button("SortLink", K.a),
-				le = l.a.div("Title", K.a),
-				me = l.a.wrapped(I.a, "ToggleSwitch", K.a),
-				pe = l.a.wrapped(_.a, "ViewFullLinkOrOverlayLink", K.a),
-				ue = l.a.wrapped(y.c, "Tooltip", K.a),
-				he = Object(i.c)({
+			var Z = Y;
+			const $ = "CommentSort--SortPicker",
+				ee = "CommentSort--HighlightPicker",
+				te = "CommentSort--Tooltip",
+				se = Object(_.a)(j.a),
+				ne = l.a.button("ContestMode", G.a),
+				oe = l.a.wrapped(R.b, "DropdownTriangle", G.a),
+				re = l.a.wrapped(F.a, "Info", G.a),
+				ae = l.a.wrapped(P.b, "Row", G.a),
+				ie = l.a.button("SetSort", G.a),
+				ce = l.a.button("SortLink", G.a),
+				de = l.a.div("Title", G.a),
+				le = l.a.wrapped(w.a, "ToggleSwitch", G.a),
+				me = l.a.wrapped(y.a, "ViewFullLinkOrOverlayLink", G.a),
+				pe = l.a.wrapped(E.c, "Tooltip", G.a),
+				ue = Object(i.c)({
 					commentPermalink: (e, t) => {
 						let {
 							commentId: s
 						} = t;
-						return s && Object(D.m)(e, {
+						return s && Object(B.m)(e, {
 							commentId: s
 						})
 					},
-					contestModeIsEnabled: H.E,
-					contestModeModalIsOpen: Object(B.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(V.b)(ee),
-					highlightIsOpen: Object(V.b)(te),
+					contestModeIsEnabled: W.E,
+					contestModeModalIsOpen: Object(A.b)("CommentSort--ContestMode--Modal"),
+					dropdownIsOpen: Object(H.b)($),
+					highlightIsOpen: Object(H.b)(ee),
 					hasModeratorPostPermissions: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						const n = Object(W.i)(e, {
+						const n = Object(D.i)(e, {
 							postId: s
 						});
 						return !!n && n.posts
 					},
-					postPermalink: H.L,
+					postPermalink: W.L,
 					showCommentHighlighter: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						const n = Object(U.p)(e),
-							o = !!Object(W.i)(e, {
+						const n = Object(V.p)(e),
+							o = !!Object(D.i)(e, {
 								postId: s
 							}),
-							r = Object(H.N)(e, {
+							r = Object(W.N)(e, {
 								postId: s
 							});
 						return (o || n) && !!r && !!r.previousVisits && r.previousVisits.length > 0
 					},
-					selectedHighlightSort: D.q
+					selectedHighlightSort: B.q
 				}),
-				be = Object(a.b)(he, (e, t) => {
+				he = Object(a.b)(ue, (e, t) => {
 					let {
 						postId: s
 					} = t;
@@ -1941,25 +1948,25 @@
 							sort: t
 						})),
 						onOpenDropdown: () => e(Object(m.h)({
-							tooltipId: ee
+							tooltipId: $
 						})),
 						onOpenHighlightDropdown: t => {
 							e(Object(m.h)({
-								tooltipId: te
+								tooltipId: ee
 							})), t()
 						},
-						onSetSuggestedSort: t => e(O(s, t)),
+						onSetSuggestedSort: t => e(C(s, t)),
 						hideTooltip: () => e(Object(m.i)()),
 						setContestMode: t => e(Object(h.V)(t, s)),
 						showTooltip: () => e(Object(m.h)({
-							tooltipId: se
+							tooltipId: te
 						})),
 						toggleContestModeModal: () => e(Object(u.i)("CommentSort--ContestMode--Modal"))
 					}
 				});
-			class ge extends r.a.Component {
+			class be extends r.a.Component {
 				constructor() {
-					super(...arguments), this.tooltipTargetElement = null, this.sendCommentSortEvent = (e, t, s, n) => this.props.sendEvent(N(e, this.props.isOverlay, t, s, n)), this.onOpenDropdownClick = () => {
+					super(...arguments), this.tooltipTargetElement = null, this.sendCommentSortEvent = (e, t, s, n) => this.props.sendEvent(T(e, this.props.isOverlay, t, s, n)), this.onOpenDropdownClick = () => {
 						this.props.onOpenDropdown(), this.sendCommentSortEvent("sorting", void 0, this.props.sort, "post_detail")
 					}, this.onSortOptionClick = e => this.sendCommentSortEvent("sort_by", this.props.sort, e, "post_detail"), this.clearSortOnClick = () => {
 						this.props.onSetSuggestedSort(null), this.sendCommentSortEvent("clear_suggested_sort", this.props.sort)
@@ -1967,9 +1974,9 @@
 						const e = this.props.suggestedSort || void 0;
 						this.props.onSetSuggestedSort(this.props.sort), this.sendCommentSortEvent("set_suggested_sort", e, this.props.sort)
 					}, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onOpenHighlightSelector = () => {
-						this.props.onOpenHighlightDropdown(M("dropdown", "click"))
+						this.props.onOpenHighlightDropdown(N("dropdown", "click"))
 					}, this.setContestMode = () => {
-						this.props.sendEvent(R(!this.props.contestModeIsEnabled)), this.props.setContestMode(!this.props.contestModeIsEnabled)
+						this.props.sendEvent(L(!this.props.contestModeIsEnabled)), this.props.setContestMode(!this.props.contestModeIsEnabled)
 					}
 				}
 				addSuggestedLabel(e) {
@@ -1996,9 +2003,9 @@
 						showCommentHighlighter: f,
 						sort: v,
 						suggestedSort: C,
-						showTooltip: O,
+						showTooltip: E,
 						toggleContestModeModal: y
-					} = this.props, _ = !b.search.includes(d.r.CONFIDENCE), k = v === d.r.CONFIDENCE && _, j = u && !k, P = d.t[v], I = P ? P() : "", T = C && v === C && !k ? this.addSuggestedLabel(I) : I, N = a ? n.fbt._("End contest mode?", null, {
+					} = this.props, _ = !b.search.includes(d.r.CONFIDENCE), k = v === d.r.CONFIDENCE && _, j = u && !k, w = d.t[v], S = w ? w() : "", T = C && v === C && !k ? this.addSuggestedLabel(S) : S, M = a ? n.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : n.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
@@ -2012,78 +2019,78 @@
 						hk: "EDqlf"
 					}), F = a && !u;
 					return r.a.createElement("div", {
-						className: Object(c.a)(t, K.a.container, {
-							[K.a.hideCommentSort]: !f && F
+						className: Object(c.a)(t, G.a.container, {
+							[G.a.hideCommentSort]: !f && F
 						}),
 						ref: l
-					}, !F && r.a.createElement(le, {
+					}, !F && r.a.createElement(de, {
 						onClick: this.onOpenDropdownClick
 					}, n.fbt._("Sort by", null, {
 						hk: "E6T9r"
-					})), !F && r.a.createElement(r.a.Fragment, null, r.a.createElement(ie, {
-						className: Object(c.a)(K.a.SortPicker, K.a.Row),
+					})), !F && r.a.createElement(r.a.Fragment, null, r.a.createElement(ae, {
+						className: Object(c.a)(G.a.SortPicker, G.a.Row),
 						onClick: this.onOpenDropdownClick,
 						displayText: T,
-						id: ee,
+						id: $,
 						noHover: !0,
 						skipRoleAttr: !0
-					}), r.a.createElement(re, {
+					}), r.a.createElement(oe, {
 						onClick: this.onOpenDropdownClick
-					}), r.a.createElement(ne, {
+					}), r.a.createElement(se, {
 						isOpen: i,
-						tooltipId: ee
+						tooltipId: $
 					}, [d.r.CONFIDENCE, d.r.TOP, d.r.NEW, d.r.CONTROVERSIAL, d.r.OLD, d.r.QA].map(e => {
 						const t = s || g,
-							n = Object(S.b)(t),
+							n = Object(I.b)(t),
 							o = d.t[e],
 							a = o ? o() : "";
-						return r.a.createElement(pe, {
+						return r.a.createElement(me, {
 							isOverlay: h,
 							key: e,
 							onClick: () => this.onSortOptionClick(e),
 							role: "menuitem",
 							tabIndex: -1,
 							to: "".concat(n, "?sort=").concat(e)
-						}, r.a.createElement(w.b, {
+						}, r.a.createElement(P.b, {
 							displayText: C && e === C ? this.addSuggestedLabel(a) : a,
 							isSelected: v === e,
 							skipRoleAttr: !0
 						}))
-					}))), j && !F && (C ? r.a.createElement(de, {
+					}))), j && !F && (C ? r.a.createElement(ce, {
 						onClick: v !== C ? this.setSortOnClick : this.clearSortOnClick
 					}, v !== C ? n.fbt._("Set new suggested sort", null, {
 						hk: "13BpoB"
 					}) : n.fbt._("Clear suggested sort", null, {
 						hk: "3WWQBy"
-					})) : r.a.createElement(ce, null, r.a.createElement(de, {
+					})) : r.a.createElement(ie, null, r.a.createElement(ce, {
 						onClick: this.setSortOnClick
 					}, n.fbt._("Set as suggested sort", null, {
 						hk: "3qLzxp"
 					})), r.a.createElement("span", {
-						id: se,
-						onMouseEnter: O,
+						id: te,
+						onMouseEnter: E,
 						onMouseLeave: m
-					}, r.a.createElement(ue, {
+					}, r.a.createElement(pe, {
 						text: n.fbt._("Suggested sort defaults Redditors to a specific way of sorting comments within this post", null, {
 							hk: "3KM0ma"
 						}),
-						tooltipId: se
-					}), r.a.createElement(ae, null)))), u && r.a.createElement(oe, {
+						tooltipId: te
+					}), r.a.createElement(re, null)))), u && r.a.createElement(ne, {
 						onClick: this.props.toggleContestModeModal
 					}, n.fbt._("Contest", null, {
 						hk: "1KrhdJ"
-					}), r.a.createElement(me, {
+					}), r.a.createElement(le, {
 						on: a
-					})), f && r.a.createElement($, {
+					})), f && r.a.createElement(Z, {
 						changeHighlightSort: e,
 						highlightIsOpen: p,
-						id: te,
+						id: ee,
 						onOpen: this.onOpenHighlightSelector,
 						selectedSort: x,
-						trackHighlight: M
-					}), o && r.a.createElement(E.a, {
+						trackHighlight: N
+					}), o && r.a.createElement(O.a, {
 						actionText: L,
-						headerText: N,
+						headerText: M,
 						modalText: R,
 						onConfirm: this.setContestMode,
 						toggleModal: y,
@@ -2091,7 +2098,7 @@
 					}))
 				}
 			}
-			t.a = be(Object(j.c)(ge))
+			t.a = he(Object(k.c)(be))
 		},
 		"./src/reddit/components/Comments/Comment/ExpandButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -5590,68 +5597,73 @@
 		},
 		"./src/reddit/components/CreateCommunityButton/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/reddit/actions/tooltip.ts"),
-				c = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/controls/Button/index.tsx"),
-				m = s("./src/reddit/helpers/overlay/index.ts"),
-				p = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				u = s("./src/reddit/i18n/components.tsx"),
-				h = s("./src/reddit/i18n/utils.ts"),
-				b = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				x = s.n(g),
-				f = s("./src/lib/lessComponent.tsx");
-			const v = "create-community-button",
-				C = f.a.wrapped(l.i, "SecondaryButton", x.a),
-				O = f.a.wrapped(c.c, "StyledTooltip", x.a),
-				E = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Y)(e),
-					userIsSuspended: b.K
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/reddit/actions/tooltip.ts"),
+				d = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = s("./src/reddit/controls/Button/index.tsx"),
+				p = s("./src/reddit/helpers/overlay/index.ts"),
+				u = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				h = s("./src/reddit/selectors/user.ts"),
+				b = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				g = s.n(b),
+				x = s("./src/lib/lessComponent.tsx");
+			const f = "create-community-button",
+				v = x.a.wrapped(m.i, "SecondaryButton", g.a),
+				C = x.a.wrapped(d.c, "StyledTooltip", g.a),
+				O = Object(i.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.Y)(e),
+					userIsSuspended: h.K
 				});
-			t.a = Object(r.b)(E, (e, t) => {
+			t.a = Object(a.b)(O, (e, t) => {
 				let {
 					eventSource: s
 				} = t;
 				return {
 					openCommunityCreation: t => {
-						t(Object(p.b)(s)), e(Object(m.a)("/subreddits/create"))
+						t(Object(u.b)(s)), e(Object(p.a)("/subreddits/create"))
 					},
-					onShowTooltip: () => e(Object(i.f)({
-						tooltipId: v
+					onShowTooltip: () => e(Object(c.f)({
+						tooltipId: f
 					})),
-					onHideTooltip: () => e(Object(i.i)())
+					onHideTooltip: () => e(Object(c.i)())
 				}
-			})(Object(d.c)(e => {
+			})(Object(l.c)(e => {
 				let {
 					className: t,
 					eventSource: s,
-					onShowTooltip: n,
-					onHideTooltip: r,
-					openCommunityCreation: a,
-					sendEvent: i,
-					userDoesNotHaveEnoughExpToCreateCommunity: c,
-					userIsSuspended: d
+					onShowTooltip: o,
+					onHideTooltip: a,
+					openCommunityCreation: i,
+					sendEvent: c,
+					userDoesNotHaveEnoughExpToCreateCommunity: d,
+					userIsSuspended: l
 				} = e;
-				return o.a.createElement(C, {
+				return r.a.createElement(v, {
 					className: t,
-					disabled: d || c,
-					onClick: () => a(i),
-					onMouseEnter: n,
-					onMouseLeave: r,
-					id: v
-				}, o.a.createElement(u.c, null, "Create Community"), c ? o.a.createElement(O, {
+					disabled: l || d,
+					onClick: () => i(c),
+					onMouseEnter: o,
+					onMouseLeave: a,
+					id: f
+				}, n.fbt._("Create Community", null, {
+					hk: "RLA8A"
+				}), d ? r.a.createElement(C, {
 					caretOnTop: !0,
-					tooltipId: v,
-					text: Object(h.c)("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.")
-				}) : d ? o.a.createElement(O, {
+					tooltipId: f,
+					text: n.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : l ? r.a.createElement(C, {
 					caretOnTop: !0,
-					tooltipId: v,
-					text: Object(h.c)("Accounts banned from the site can not create communities until the ban is lifted.")
+					tooltipId: f,
+					text: n.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
 				}) : null)
 			}))
 		},
@@ -17256,4 +17268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.f59f0914929b7552acd5.js.map
+//# sourceMappingURL=CommentsPage.12c6b06eb34562bea62c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.98feba583dcd43dd15c3.js
-// Retrieved at 3/31/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.888ef76a8b2d8c28830a.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -8240,68 +8240,73 @@
 		},
 		"./src/reddit/components/CreateCommunityButton/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				a = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/reddit/actions/tooltip.ts"),
-				d = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/controls/Button/index.tsx"),
-				m = s("./src/reddit/helpers/overlay/index.ts"),
-				u = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				p = s("./src/reddit/i18n/components.tsx"),
-				b = s("./src/reddit/i18n/utils.ts"),
-				h = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				x = s.n(g),
-				f = s("./src/lib/lessComponent.tsx");
-			const E = "create-community-button",
-				v = f.a.wrapped(l.i, "SecondaryButton", x.a),
-				C = f.a.wrapped(d.c, "StyledTooltip", x.a),
-				O = Object(r.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.Y)(e),
-					userIsSuspended: h.K
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				a = s.n(o),
+				r = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/reddit/actions/tooltip.ts"),
+				c = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = s("./src/reddit/controls/Button/index.tsx"),
+				u = s("./src/reddit/helpers/overlay/index.ts"),
+				p = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				b = s("./src/reddit/selectors/user.ts"),
+				h = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				g = s.n(h),
+				x = s("./src/lib/lessComponent.tsx");
+			const f = "create-community-button",
+				E = x.a.wrapped(m.i, "SecondaryButton", g.a),
+				v = x.a.wrapped(c.c, "StyledTooltip", g.a),
+				C = Object(i.c)({
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Y)(e),
+					userIsSuspended: b.K
 				});
-			t.a = Object(a.b)(O, (e, t) => {
+			t.a = Object(r.b)(C, (e, t) => {
 				let {
 					eventSource: s
 				} = t;
 				return {
 					openCommunityCreation: t => {
-						t(Object(u.b)(s)), e(Object(m.a)("/subreddits/create"))
+						t(Object(p.b)(s)), e(Object(u.a)("/subreddits/create"))
 					},
-					onShowTooltip: () => e(Object(i.f)({
-						tooltipId: E
+					onShowTooltip: () => e(Object(d.f)({
+						tooltipId: f
 					})),
-					onHideTooltip: () => e(Object(i.i)())
+					onHideTooltip: () => e(Object(d.i)())
 				}
-			})(Object(c.c)(e => {
+			})(Object(l.c)(e => {
 				let {
 					className: t,
 					eventSource: s,
-					onShowTooltip: n,
-					onHideTooltip: a,
-					openCommunityCreation: r,
-					sendEvent: i,
-					userDoesNotHaveEnoughExpToCreateCommunity: d,
-					userIsSuspended: c
+					onShowTooltip: o,
+					onHideTooltip: r,
+					openCommunityCreation: i,
+					sendEvent: d,
+					userDoesNotHaveEnoughExpToCreateCommunity: c,
+					userIsSuspended: l
 				} = e;
-				return o.a.createElement(v, {
+				return a.a.createElement(E, {
 					className: t,
-					disabled: c || d,
-					onClick: () => r(i),
-					onMouseEnter: n,
-					onMouseLeave: a,
-					id: E
-				}, o.a.createElement(p.c, null, "Create Community"), d ? o.a.createElement(C, {
+					disabled: l || c,
+					onClick: () => i(d),
+					onMouseEnter: o,
+					onMouseLeave: r,
+					id: f
+				}, n.fbt._("Create Community", null, {
+					hk: "RLA8A"
+				}), c ? a.a.createElement(v, {
 					caretOnTop: !0,
-					tooltipId: E,
-					text: Object(b.c)("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.")
-				}) : c ? o.a.createElement(C, {
+					tooltipId: f,
+					text: n.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : l ? a.a.createElement(v, {
 					caretOnTop: !0,
-					tooltipId: E,
-					text: Object(b.c)("Accounts banned from the site can not create communities until the ban is lifted.")
+					tooltipId: f,
+					text: n.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
 				}) : null)
 			}))
 		},
@@ -28207,4 +28212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.98feba583dcd43dd15c3.js.map
+//# sourceMappingURL=ModerationPages.888ef76a8b2d8c28830a.js.map

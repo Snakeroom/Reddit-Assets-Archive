@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.feef935a4cc56a6f2c46.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.5162f95bb56fdd584a77.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -11,30 +11,34 @@
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, a, t) {
 			"use strict";
-			var s = t("./node_modules/react/index.js"),
-				o = t.n(s),
-				n = t("./src/higherOrderComponents/asModal/index.tsx"),
-				r = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				i = t("./src/reddit/controls/TextButton/index.tsx"),
-				l = t("./src/reddit/i18n/utils.ts"),
+			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
+				o = t("./node_modules/react/index.js"),
+				n = t.n(o),
+				r = t("./src/higherOrderComponents/asModal/index.tsx"),
+				i = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				l = t("./src/reddit/controls/TextButton/index.tsx"),
 				c = t("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				d = t("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = t.n(d);
 			const u = e => e.preventDefault();
-			a.a = Object(n.a)(e => o.a.createElement(r.c, null, o.a.createElement(r.g, null, o.a.createElement(c.a, null, o.a.createElement(r.n, null, e.headerText || Object(l.c)("Confirm")), o.a.createElement(i.a, {
+			a.a = Object(r.a)(e => n.a.createElement(i.c, null, n.a.createElement(i.g, null, n.a.createElement(c.a, null, n.a.createElement(i.n, null, e.headerText || s.fbt._("Confirm", null, {
+				hk: "2zlvKa"
+			})), n.a.createElement(l.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, o.a.createElement(r.b, null)))), o.a.createElement(r.j, null, o.a.createElement(r.m, {
+			}, n.a.createElement(i.b, null)))), n.a.createElement(i.j, null, n.a.createElement(i.m, {
 				className: m.a.ModalText
-			}, e.modalText)), o.a.createElement(r.e, null, o.a.createElement(r.a, {
+			}, e.modalText)), n.a.createElement(i.e, null, n.a.createElement(i.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
 				"data-redditstyle": !0
-			}, e.cancelActionText || Object(l.c)("Cancel")), o.a.createElement(r.r, {
+			}, e.cancelActionText || s.fbt._("Cancel", null, {
+				hk: "3DgVq6"
+			})), n.a.createElement(i.r, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: a => {
@@ -100,4 +104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CreatePollButton.feef935a4cc56a6f2c46.js.map
+//# sourceMappingURL=CreatePollButton.5162f95bb56fdd584a77.js.map

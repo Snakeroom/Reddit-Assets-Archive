@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8c13c681440787332a4d.js
-// Retrieved at 4/1/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.bdae386c8ec6510bbbec.js
+// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -49,30 +49,34 @@
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, t, a) {
 			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				o = a.n(s),
-				r = a("./src/higherOrderComponents/asModal/index.tsx"),
-				i = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				n = a("./src/reddit/controls/TextButton/index.tsx"),
-				c = a("./src/reddit/i18n/utils.ts"),
+			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
+				o = a("./node_modules/react/index.js"),
+				r = a.n(o),
+				i = a("./src/higherOrderComponents/asModal/index.tsx"),
+				n = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				c = a("./src/reddit/controls/TextButton/index.tsx"),
 				m = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				d = a("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				l = a.n(d);
 			const p = e => e.preventDefault();
-			t.a = Object(r.a)(e => o.a.createElement(i.c, null, o.a.createElement(i.g, null, o.a.createElement(m.a, null, o.a.createElement(i.n, null, e.headerText || Object(c.c)("Confirm")), o.a.createElement(n.a, {
+			t.a = Object(i.a)(e => r.a.createElement(n.c, null, r.a.createElement(n.g, null, r.a.createElement(m.a, null, r.a.createElement(n.n, null, e.headerText || s.fbt._("Confirm", null, {
+				hk: "2zlvKa"
+			})), r.a.createElement(c.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, o.a.createElement(i.b, null)))), o.a.createElement(i.j, null, o.a.createElement(i.m, {
+			}, r.a.createElement(n.b, null)))), r.a.createElement(n.j, null, r.a.createElement(n.m, {
 				className: l.a.ModalText
-			}, e.modalText)), o.a.createElement(i.e, null, o.a.createElement(i.a, {
+			}, e.modalText)), r.a.createElement(n.e, null, r.a.createElement(n.a, {
 				className: l.a.buttonWidth,
 				onMouseDown: p,
 				onClick: () => {
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
 				"data-redditstyle": !0
-			}, e.cancelActionText || Object(c.c)("Cancel")), o.a.createElement(i.r, {
+			}, e.cancelActionText || s.fbt._("Cancel", null, {
+				hk: "3DgVq6"
+			})), r.a.createElement(n.r, {
 				className: l.a.buttonWidth,
 				onMouseDown: p,
 				onClick: t => {
@@ -3809,4 +3813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.8c13c681440787332a4d.js.map
+//# sourceMappingURL=MembershipPaywallPage.bdae386c8ec6510bbbec.js.map
