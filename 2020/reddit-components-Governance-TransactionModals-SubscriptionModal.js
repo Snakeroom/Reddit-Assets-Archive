@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.296b1c3cb9f3e910acb0.js
-// Retrieved at 3/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.cd24d677aa4b1d96c032.js
+// Retrieved at 4/1/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, n) {
@@ -16,6 +16,50 @@
 			}, s.a.createElement("div", {
 				className: r.a.circle
 			}, e.index), e.children)
+		},
+		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx": function(e, t, n) {
+			"use strict";
+			var a = n("./node_modules/qrcode/lib/browser.js"),
+				s = n.n(a),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				c = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				i = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			class d extends r.a.Component {
+				constructor() {
+					super(...arguments), this.state = {
+						dataURL: null
+					}
+				}
+				componentDidMount() {
+					this.updateDataURL()
+				}
+				componentDidUpdate(e) {
+					e.url !== this.props.url && this.updateDataURL()
+				}
+				async updateDataURL() {
+					const e = await s.a.toDataURL(this.props.url, {
+						color: {
+							dark: this.props.color || Object(i.a)(this.props).button,
+							light: Object(i.a)(this.props).body
+						},
+						margin: 0,
+						width: 176
+					});
+					this.setState({
+						dataURL: e
+					})
+				}
+				render() {
+					const {
+						dataURL: e
+					} = this.state;
+					return e ? r.a.createElement("img", {
+						src: e
+					}) : null
+				}
+			}
+			t.a = Object(c.a)(d)
 		},
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -40,49 +84,11 @@
 				s = n.n(a),
 				o = n("./src/higherOrderComponents/asModal/index.tsx"),
 				r = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				c = n("./node_modules/qrcode/lib/browser.js"),
-				i = n.n(c),
-				d = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				l = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			class m extends s.a.Component {
-				constructor() {
-					super(...arguments), this.state = {
-						dataURL: null
-					}
-				}
-				componentDidMount() {
-					this.updateDataURL()
-				}
-				componentDidUpdate(e) {
-					e.url !== this.props.url && this.updateDataURL()
-				}
-				async updateDataURL() {
-					const e = await i.a.toDataURL(this.props.url, {
-						color: {
-							dark: Object(l.a)(this.props).button,
-							light: Object(l.a)(this.props).body
-						},
-						margin: 0,
-						width: 176
-					});
-					this.setState({
-						dataURL: e
-					})
-				}
-				render() {
-					const {
-						dataURL: e
-					} = this.state;
-					return e ? s.a.createElement("img", {
-						src: e
-					}) : null
-				}
-			}
-			var u = Object(d.a)(m),
-				p = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.m.less"),
-				b = n.n(p);
+				c = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx"),
+				i = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.m.less"),
+				d = n.n(i);
 			const {
-				fbt: h
+				fbt: l
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = Object(o.a)((function(e) {
 				const {
@@ -90,34 +96,34 @@
 					content: n,
 					header: a,
 					onClose: o,
-					qrUrl: c,
-					title: i
+					qrUrl: i,
+					title: l
 				} = e;
 				return s.a.createElement("div", {
-					className: b.a.container
+					className: d.a.container
 				}, s.a.createElement("header", {
-					className: b.a.header
+					className: d.a.header
 				}, s.a.createElement("div", {
-					className: b.a.title
-				}, i), s.a.createElement(r.a, {
-					className: b.a.closeButton,
+					className: d.a.title
+				}, l), s.a.createElement(r.a, {
+					className: d.a.closeButton,
 					onClick: o
 				})), s.a.createElement("div", {
-					className: b.a.body
+					className: d.a.body
 				}, s.a.createElement("section", {
-					className: b.a.leftSection
+					className: d.a.leftSection
 				}, s.a.createElement("div", {
-					className: b.a.sectionHeader
+					className: d.a.sectionHeader
 				}, a), s.a.createElement("div", {
-					className: b.a.content
+					className: d.a.content
 				}, n)), s.a.createElement("section", {
-					className: b.a.rightSection
+					className: d.a.rightSection
 				}, s.a.createElement("div", {
-					className: b.a.qrCode
-				}, s.a.createElement(u, {
-					url: c
+					className: d.a.qrCode
+				}, s.a.createElement(c.a, {
+					url: i
 				})), s.a.createElement("div", {
-					className: b.a.amount
+					className: d.a.amount
 				}, t))))
 			}))
 		},
@@ -206,4 +212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.296b1c3cb9f3e910acb0.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.cd24d677aa4b1d96c032.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.46f061051527ec5cb90e.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.e0786418b226ccb6c533.js
+// Retrieved at 4/1/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -422,12 +422,12 @@
 			const B = Object(i.c)({
 					subreddit: l.q
 				}),
-				A = Object(c.b)(B, e => ({
+				k = Object(c.b)(B, e => ({
 					onClose: () => e(Object(o.f)())
 				})),
-				T = Object(l.t)(),
-				k = Object(d.c)(M);
-			t.default = Object(m.a)("spPremium", Object(a.a)(T(A(k))))
+				A = Object(l.t)(),
+				T = Object(d.c)(M);
+			t.default = Object(m.a)("spPremium", Object(a.a)(A(k(T))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -500,7 +500,8 @@
 
 			function b(e) {
 				const t = e.subreddit && (e.subreddit.communityIcon || e.subreddit.icon.url),
-					r = u[e.size || "regular"];
+					r = u[e.size || "regular"],
+					s = e.subreddit && e.subreddit.primaryColor;
 				return n.a.createElement("div", {
 					className: Object(c.a)(r.container, e.className)
 				}, e.subreddit ? n.a.createElement("img", {
@@ -516,11 +517,14 @@
 					className: r.bling3
 				}), t ? n.a.createElement("img", {
 					className: r.icon,
-					src: t
+					src: t,
+					style: {
+						backgroundColor: s
+					}
 				}) : n.a.createElement(a.a, {
 					className: r.defaultIcon,
 					style: {
-						backgroundColor: e.subreddit && e.subreddit.primaryColor
+						backgroundColor: s
 					}
 				}))
 			}
@@ -674,4 +678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.46f061051527ec5cb90e.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.e0786418b226ccb6c533.js.map
