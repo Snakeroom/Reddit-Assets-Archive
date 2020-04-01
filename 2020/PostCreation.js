@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b69beb7596b21f342a87.js
-// Retrieved at 3/31/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2c3a7e7ba66ce2a29add.js
+// Retrieved at 4/1/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -6120,7 +6120,12 @@
 				},
 				ne = Object(M.t)(),
 				se = Object(u.c)({
-					isPostImageAltTextVariant: K.b,
+					isPostImageAltTextVariant: (e, t) => {
+						let {
+							isCommentsPage: n
+						} = t;
+						return !!n && Object(K.b)(e)
+					},
 					subredditOrProfileDisplayText: (e, t) => {
 						let {
 							post: n
@@ -30580,4 +30585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b69beb7596b21f342a87.js.map
+//# sourceMappingURL=PostCreation.2c3a7e7ba66ce2a29add.js.map
