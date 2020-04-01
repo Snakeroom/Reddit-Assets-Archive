@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.10d42aaefeeecf35e44f.js
-// Retrieved at 4/1/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c9915aeac70f369d2e3b.js
+// Retrieved at 4/1/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25291,27 +25291,27 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/selectors/platform.ts");
 			const s = new Set(["daonuts", "ethtrader", "karma_chameleon", "pointsrtesty", "stellartest"]),
-				o = new Set(["funkygoose", "gigapoints"]),
+				o = new Set(["funkygoose", "gigapoints", "pointsnitebr"]),
 				i = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
 				c = new Set(["daonuts", "ethtrader", "stellartest"]),
 				a = new Set(["funkygoose"]),
-				d = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
+				d = new Set(["badgesroyaletest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
 				u = new Set(["fortnitebr", "funkygoose"]),
 				l = new Set(["funkygoose"]),
-				b = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "stellartest"]),
+				b = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
 				p = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
 				f = new Set(["daonuts", "ethtrader", "funkygoose", "stellar"]),
 				m = new Set(["badgesroyaletest", "fortnitebr"]),
-				O = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "stellar", "stellartest"]),
+				O = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellar", "stellartest"]),
 				g = new Set([]),
-				_ = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
+				_ = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
 				h = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				y = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "stellartest"]),
-				j = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "stellartest"]),
+				y = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
+				j = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
 				E = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
-				I = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
+				I = new Set(["daonuts", "ethtrader", "funkygoose", "gigapoints", "mountainbiking", "pointsnitebr", "stellar", "stellartest"]),
 				S = new Set(["funkygoose"]),
-				v = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "shittymorph", "stellartest"]),
+				v = new Set(["badgesroyaletest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "shittymorph", "stellartest"]),
 				T = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
 				C = new Set(["funkygoose"]),
 				A = new Set(["stellar", "stellartest"]),
@@ -62140,4 +62140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.10d42aaefeeecf35e44f.js.map
+//# sourceMappingURL=Governance~Reddit.c9915aeac70f369d2e3b.js.map
