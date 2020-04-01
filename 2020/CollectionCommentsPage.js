@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1b7aa2b0d159a5f5894a.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.dcd8e48596c40388a261.js
+// Retrieved at 4/1/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9115,19 +9115,38 @@
 						forceShowNSFW: !0
 					}))
 				},
-				Ue = (e, t, s) => o.a.createElement(Fe, {
-					content: o.a.createElement(te.a, {
-						className: Me.a.ClassicPostMedia,
-						isListing: !1,
-						isNotCardView: !0,
-						post: e,
-						shouldLoad: !0,
-						showFull: !0,
-						showCentered: !0,
-						scrollerItemRef: s
-					}),
-					shouldExpand: !!t
-				});
+				Ue = e => {
+					let {
+						post: t,
+						isExpanded: s,
+						scrollerItemRef: n,
+						metaId: r,
+						subredditOrProfile: a,
+						isEditing: i
+					} = e;
+					return o.a.createElement(Fe, {
+						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(te.a, {
+							className: Me.a.ClassicPostMedia,
+							isListing: !1,
+							isNotCardView: !0,
+							post: t,
+							shouldLoad: !0,
+							showFull: !0,
+							showCentered: !0,
+							scrollerItemRef: n
+						}), r && a && o.a.createElement("div", {
+							className: Object(c.a)(Me.a.ProposalContainer, {
+								[Me.a.isEditing]: i
+							})
+						}, o.a.createElement(U.a, {
+							pollId: r,
+							subredditId: a.id
+						})), t.isMeta && !r && o.a.createElement(G.a, {
+							className: Me.a.noProposal
+						})),
+						shouldExpand: !!s
+					})
+				};
 			t.a = De(We(e => {
 				const {
 					className: t,
@@ -9235,7 +9254,7 @@
 					isExpanded: !!C,
 					post: T,
 					useMediaIcons: !1
-				}), Ue(T, C, M), o.a.createElement(Ae, {
+				}), Ue(e), o.a.createElement(Ae, {
 					currentUser: n,
 					hasModFlairPerms: W,
 					hasModFullPerms: Q,
@@ -17310,4 +17329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.1b7aa2b0d159a5f5894a.js.map
+//# sourceMappingURL=CollectionCommentsPage.dcd8e48596c40388a261.js.map
