@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.26b7be8c6bfafb64cc5e.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.fd4b0b9144781648d4c2.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -21,8 +21,11 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => a.a.createElement(i.b, {
 				className: Object(s.a)(e.className, l.a.container, e.text.length > e.maxChars ? l.a.mOverflow : null)
-			}, d._("{characters} Characters", [d._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, d._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [d._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/MultiredditEditModal/index.m.less": function(e, t, r) {
@@ -67,8 +70,8 @@
 				C = r("./src/reddit/i18n/components.tsx"),
 				_ = r("./src/reddit/i18n/utils.ts"),
 				O = r("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				T = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				S = r("./src/reddit/models/Multireddit/index.ts"),
+				S = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				T = r("./src/reddit/models/Multireddit/index.ts"),
 				N = r("./src/reddit/selectors/multireddit.ts"),
 				j = r("./src/reddit/selectors/tooltip.ts"),
 				D = r("./src/reddit/components/MultiredditEditModal/index.m.less"),
@@ -119,8 +122,8 @@
 							displayTextError: void 0
 						})
 					}, this.onShowOnProfileToggle = () => {
-						this.setState(e => e.visibility === S.e.Private ? e : Object.assign({}, e, {
-							visibility: e.visibility === S.e.Public ? S.e.Hidden : S.e.Public
+						this.setState(e => e.visibility === T.e.Private ? e : Object.assign({}, e, {
+							visibility: e.visibility === T.e.Public ? T.e.Hidden : T.e.Public
 						}))
 					}, this.onRowClick = e => () => {
 						this.setState({
@@ -162,7 +165,7 @@
 					} : {
 						description: "",
 						displayText: "",
-						visibility: S.e.Private
+						visibility: T.e.Private
 					}
 				}
 				renderDisplayText() {
@@ -175,13 +178,13 @@
 						onBlur: this.checkDisplayTextValidity,
 						onChange: this.onDisplayTextChange,
 						value: e,
-						maxLength: S.c,
+						maxLength: T.c,
 						state: t ? h.d.Invalid : void 0,
 						isRequired: !0
 					}), t ? a.a.createElement("p", {
 						className: F.a.displayTextError
-					}, t === S.a.SameName ? Object(_.c)("A custom feed with that name already exists") : t === S.a.TooShort ? Object(_.c)("Name must contain at least two alphanumeric characters") : Object(_.c)("Something went wrong with this name, maybe try something else?")) : a.a.createElement(p.a, {
-						maxChars: S.c,
+					}, t === T.a.SameName ? Object(_.c)("A custom feed with that name already exists") : t === T.a.TooShort ? Object(_.c)("Name must contain at least two alphanumeric characters") : Object(_.c)("Something went wrong with this name, maybe try something else?")) : a.a.createElement(p.a, {
+						maxChars: T.c,
 						text: e
 					}))
 				}
@@ -192,11 +195,11 @@
 					return a.a.createElement(x.f, null, a.a.createElement(h.c, {
 						className: F.a.descriptionTextarea,
 						label: Object(_.c)("description (optional)"),
-						maxLength: S.b,
+						maxLength: T.b,
 						onChange: this.onDescriptionChange,
 						value: e
 					}), a.a.createElement(p.a, {
-						maxChars: S.b,
+						maxChars: T.b,
 						text: e
 					}))
 				}
@@ -222,7 +225,7 @@
 						className: F.a.dropdownBtn,
 						id: L,
 						onClick: t
-					}, r === S.e.Private ? M : P, a.a.createElement(O.b, null)), a.a.createElement(I, {
+					}, r === T.e.Private ? M : P, a.a.createElement(O.b, null)), a.a.createElement(I, {
 						isOpen: e,
 						isOverlay: !0,
 						targetPosition: ["center", "bottom"],
@@ -231,13 +234,13 @@
 					}, a.a.createElement(g.b, {
 						displayText: M,
 						noIcon: !0,
-						onClick: this.onRowClick(S.e.Private),
-						isSelected: r === S.e.Private
+						onClick: this.onRowClick(T.e.Private),
+						isSelected: r === T.e.Private
 					}), a.a.createElement(g.b, {
 						displayText: P,
-						isSelected: r === S.e.Public || r === S.e.Hidden,
+						isSelected: r === T.e.Public || r === T.e.Hidden,
 						noIcon: !0,
-						onClick: this.onRowClick(S.e.Public)
+						onClick: this.onRowClick(T.e.Public)
 					}))))
 				}
 				renderShowOnProfileToggle() {
@@ -246,7 +249,7 @@
 					} = this.state;
 					return a.a.createElement(x.f, {
 						className: Object(d.a)(F.a.formRow, {
-							[F.a.disabled]: e === S.e.Private
+							[F.a.disabled]: e === T.e.Private
 						})
 					}, a.a.createElement("div", {
 						className: F.a.label
@@ -256,8 +259,8 @@
 						className: F.a.labelDescription
 					}, a.a.createElement(C.c, null, "Choose whether this Custom Feed is visible to visitors of your profile"))), a.a.createElement(w.a, {
 						className: F.a.toggle,
-						disabled: e === S.e.Private,
-						on: e === S.e.Public,
+						disabled: e === T.e.Private,
+						on: e === T.e.Public,
 						onToggle: this.onShowOnProfileToggle
 					}))
 				}
@@ -267,7 +270,7 @@
 						multireddit: t,
 						onClose: r
 					} = this.props;
-					return t ? a.a.createElement(x.c, null, a.a.createElement(x.g, null, a.a.createElement(T.a, null, a.a.createElement(x.n, null, a.a.createElement(C.c, null, "Edit Custom Feed")), a.a.createElement("button", {
+					return t ? a.a.createElement(x.c, null, a.a.createElement(x.g, null, a.a.createElement(S.a, null, a.a.createElement(x.n, null, a.a.createElement(C.c, null, "Edit Custom Feed")), a.a.createElement("button", {
 						onClick: r
 					}, a.a.createElement(x.b, null)))), a.a.createElement(x.j, null, this.renderDisplayText(), this.renderDescription(), this.renderVisibilityDropdown(), this.renderShowOnProfileToggle()), a.a.createElement(x.e, {
 						className: F.a.footer
@@ -709,4 +712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditEditModal.26b7be8c6bfafb64cc5e.js.map
+//# sourceMappingURL=MultiredditEditModal.fd4b0b9144781648d4c2.js.map

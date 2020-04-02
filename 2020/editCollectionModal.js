@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.a0eac743e4a2ce9cd4d1.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.f1e6147df1536be4b86a.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -21,8 +21,11 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => a.a.createElement(r.b, {
 				className: Object(o.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
-			}, l._("{characters} Characters", [l._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, l._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [l._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, n) {
@@ -130,9 +133,9 @@
 				p = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				m = n("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				h = n("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
-				v = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				x = n("./src/reddit/constants/keycodes.ts"),
-				g = n("./src/reddit/constants/postCreation.ts"),
+				g = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				v = n("./src/reddit/constants/keycodes.ts"),
+				x = n("./src/reddit/constants/postCreation.ts"),
 				C = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				b = n("./src/reddit/controls/RadioInput/index.tsx"),
@@ -174,7 +177,7 @@
 						className: j.a.fieldWrapper
 					}, i.a.createElement("label", {
 						className: j.a.Label
-					}, t), i.a.createElement(v.i, D({
+					}, t), i.a.createElement(g.i, D({
 						className: j.a.textArea,
 						disabled: !1
 					}, s)), i.a.createElement(p.a, {
@@ -249,7 +252,7 @@
 						placeholder: s.fbt._("Enter title", null, {
 							hk: "bWrfF"
 						}),
-						maxLength: g.e,
+						maxLength: x.e,
 						rows: 1,
 						value: o,
 						language: l
@@ -261,7 +264,7 @@
 						placeholder: s.fbt._("Give some detail on what the collection is about.", null, {
 							hk: "4DPX2P"
 						}),
-						maxLength: g.b,
+						maxLength: x.b,
 						rows: 4,
 						value: r,
 						language: l
@@ -340,7 +343,7 @@
 						};
 						await t(i) && n && n()
 					}, this.handleEscapeKey = e => {
-						e.keyCode === x.a.Escape && this.props.onClose()
+						e.keyCode === v.a.Escape && this.props.onClose()
 					}, this.onCollectionTabClick = () => this.setState({
 						isPostsSelected: !1
 					}), this.onPostsTabClick = () => this.setState({
@@ -492,9 +495,9 @@
 				p = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
 				m = n.n(p),
 				h = n("./src/lib/lessComponent.tsx");
-			const v = h.a.span("PostEventFutureText", m.a),
-				x = h.a.span("PostEventPastText", m.a),
-				g = h.a.span("PostEventNowText", m.a),
+			const g = h.a.span("PostEventFutureText", m.a),
+				v = h.a.span("PostEventPastText", m.a),
+				x = h.a.span("PostEventNowText", m.a),
 				C = h.a.span("Container", m.a),
 				f = h.a.wrapped(d.a, "CalendarIcon", m.a),
 				b = h.a.wrapped(u.a, "LiveIcon", m.a),
@@ -552,11 +555,11 @@
 							className: e
 						})
 					}
-					if (u) E = a.a.createElement(g, null, a.a.createElement(b, null), h);
-					else if (m === o.a.Future) E = a.a.createElement(v, null, a.a.createElement(f, null), h);
+					if (u) E = a.a.createElement(x, null, a.a.createElement(b, null), h);
+					else if (m === o.a.Future) E = a.a.createElement(g, null, a.a.createElement(f, null), h);
 					else {
 						if (m !== o.a.Past) return null;
-						E = a.a.createElement(x, null, a.a.createElement(f, null), h)
+						E = a.a.createElement(v, null, a.a.createElement(f, null), h)
 					}
 					return a.a.createElement(C, {
 						className: e
@@ -658,11 +661,11 @@
 			})), n.d(t, "a", (function() {
 				return h
 			})), n.d(t, "g", (function() {
-				return v
-			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "e", (function() {
 				return g
+			})), n.d(t, "i", (function() {
+				return v
+			})), n.d(t, "e", (function() {
+				return x
 			})), n.d(t, "b", (function() {
 				return C
 			})), n.d(t, "c", (function() {
@@ -684,9 +687,9 @@
 				p = s.a.div("FormGroup", o.a),
 				m = s.a.h2("FormGroupTitle", o.a),
 				h = s.a.div("FormElement", o.a),
-				v = s.a.div("FormGroupDescription", o.a),
-				x = s.a.div("FormItem", o.a),
-				g = s.a.h3("FormElementTitle", o.a),
+				g = s.a.div("FormGroupDescription", o.a),
+				v = s.a.div("FormItem", o.a),
+				x = s.a.h3("FormElementTitle", o.a),
 				C = s.a.div("FormElementDescription", o.a),
 				f = s.a.div("FormElementError", o.a),
 				b = s.a.div("FormElementSubGroup", o.a),
@@ -726,11 +729,11 @@
 			})), n.d(t, "e", (function() {
 				return h
 			})), n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "i", (function() {
 				return g
+			})), n.d(t, "b", (function() {
+				return v
+			})), n.d(t, "i", (function() {
+				return x
 			})), n.d(t, "h", (function() {
 				return C
 			})), n.d(t, "g", (function() {
@@ -748,9 +751,9 @@
 				p = s.a.input("Input", d.a),
 				m = s.a.wrapped(c.a, "RadioOn", d.a),
 				h = s.a.wrapped(i.a, "RadioOff", d.a),
-				v = s.a.wrapped(o.a, "Checkbox", d.a),
-				x = s.a.wrapped(r.a, "CheckboxSelected", d.a),
-				g = s.a.textarea("Textarea", d.a),
+				g = s.a.wrapped(o.a, "Checkbox", d.a),
+				v = s.a.wrapped(r.a, "CheckboxSelected", d.a),
+				x = s.a.textarea("Textarea", d.a),
 				C = s.a.label("StyledLabel", d.a),
 				f = s.a.input("StyledFileInput", d.a)
 		},
@@ -1045,4 +1048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.a0eac743e4a2ce9cd4d1.js.map
+//# sourceMappingURL=editCollectionModal.f1e6147df1536be4b86a.js.map

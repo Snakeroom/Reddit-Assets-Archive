@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.d638b861ed9940d258b0.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.876f0501f5ccbc1b0afa.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -18,10 +18,10 @@
 				h = o.a.wrapped(d.h, "NumberInput", u.a),
 				b = o.a.div("StyledPermanentLabel", u.a),
 				x = o.a.div("DescriptionText", u.a),
-				C = o.a.div("BanLengthContainer", u.a),
-				g = o.a.div("CheckboxWrapper", u.a),
+				g = o.a.div("BanLengthContainer", u.a),
+				C = o.a.div("CheckboxWrapper", u.a),
 				f = o.a.div("PermanentCheckbox", u.a);
-			t.a = e => r.a.createElement(d.f, null, r.a.createElement(d.i, null, Object(l.c)("How long?")), r.a.createElement(C, null, r.a.createElement(m, {
+			t.a = e => r.a.createElement(d.f, null, r.a.createElement(d.i, null, Object(l.c)("How long?")), r.a.createElement(g, null, r.a.createElement(m, {
 				className: Object(a.a)({
 					[u.a.isDisabled]: e.isDurationPermanent
 				})
@@ -36,7 +36,7 @@
 				onClick: e.togglePermanent
 			}, r.a.createElement(f, {
 				onKeyDown: e.togglePermanent
-			}, r.a.createElement(g, {
+			}, r.a.createElement(C, {
 				tabIndex: 0
 			}, e.isDurationPermanent ? r.a.createElement(i.b, null) : r.a.createElement(i.a, null))), r.a.createElement(x, null, Object(l.c)("Permanent")))))
 		},
@@ -70,8 +70,8 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.m.less"),
 				x = n.n(b);
-			const C = d.a.div("Container", x.a),
-				g = d.a.wrapped(l.a, "Dropdown", x.a),
+			const g = d.a.div("Container", x.a),
+				C = d.a.wrapped(l.a, "Dropdown", x.a),
 				f = d.a.wrapped(c.b, "DropdownRow", x.a),
 				_ = Object(o.c)({
 					oldSiteRules: p.a,
@@ -108,12 +108,12 @@
 						props: e,
 						state: t
 					} = this;
-					return r.a.createElement(C, null, r.a.createElement("button", {
+					return r.a.createElement(g, null, r.a.createElement("button", {
 						className: x.a.dropdownTarget,
 						onClick: this.handleToggleDropdown
 					}, r.a.createElement("div", {
 						className: x.a.targetText
-					}, e.reason || Object(u.c)("None")), r.a.createElement(m.b, null)), t.isOpen && r.a.createElement(g, {
+					}, e.reason || Object(u.c)("None")), r.a.createElement(m.b, null)), t.isOpen && r.a.createElement(C, {
 						isOverlay: !0
 					}, this.getRuleShortNames().map((t, n) => r.a.createElement(f, {
 						key: t,
@@ -180,8 +180,8 @@
 				h = n("./src/reddit/controls/Button/index.tsx"),
 				b = n("./src/reddit/controls/TextButton/index.tsx"),
 				x = n("./src/reddit/helpers/isValidUsername/index.tsx"),
-				C = n("./src/reddit/icons/svgs/Unban/index.tsx"),
-				g = n("./src/reddit/layout/row/RightAlign/index.tsx"),
+				g = n("./src/reddit/icons/svgs/Unban/index.tsx"),
+				C = n("./src/reddit/layout/row/RightAlign/index.tsx"),
 				f = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				_ = n("./src/reddit/models/ApiRequestState/index.ts"),
 				w = n("./src/reddit/models/SubredditModeration/index.ts"),
@@ -193,7 +193,7 @@
 				v = n.n(L);
 			const R = 300,
 				k = 1e3,
-				B = l.a.wrapped(C.a, "Unban", v.a),
+				B = l.a.wrapped(g.a, "Unban", v.a),
 				D = l.a.wrapped(p.p, "UnbanButton", v.a),
 				I = l.a.wrapped(h.f, "PrimaryButton", v.a),
 				N = l.a.wrapped(p.m, "ModalText", v.a),
@@ -374,7 +374,7 @@
 						hk: "3zNsVi"
 					})) : a.a.createElement(P, null, a.a.createElement(j, null, "•"), s.fbt._("Visible to banned user", null, {
 						hk: "1PQbxq"
-					})), a.a.createElement(g.a, null, a.a.createElement(p.a, {
+					})), a.a.createElement(C.a, null, a.a.createElement(p.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, s.fbt._("Cancel", null, {
@@ -411,8 +411,11 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(o.b, {
 				className: Object(a.a)(e.className, i.a.container, e.text.length > e.maxChars ? i.a.mOverflow : null)
-			}, l._("{characters} Characters", [l._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, l._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [l._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, n) {
@@ -476,9 +479,9 @@
 			})), n.d(t, "i", (function() {
 				return x
 			})), n.d(t, "e", (function() {
-				return C
-			})), n.d(t, "b", (function() {
 				return g
+			})), n.d(t, "b", (function() {
+				return C
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
@@ -500,8 +503,8 @@
 				h = s.a.div("FormElement", a.a),
 				b = s.a.div("FormGroupDescription", a.a),
 				x = s.a.div("FormItem", a.a),
-				C = s.a.h3("FormElementTitle", a.a),
-				g = s.a.div("FormElementDescription", a.a),
+				g = s.a.h3("FormElementTitle", a.a),
+				C = s.a.div("FormElementDescription", a.a),
 				f = s.a.div("FormElementError", a.a),
 				_ = s.a.div("FormElementSubGroup", a.a),
 				w = s.a.li("FormListItem", a.a)
@@ -544,9 +547,9 @@
 			})), n.d(t, "b", (function() {
 				return x
 			})), n.d(t, "i", (function() {
-				return C
-			})), n.d(t, "h", (function() {
 				return g
+			})), n.d(t, "h", (function() {
+				return C
 			})), n.d(t, "g", (function() {
 				return f
 			}));
@@ -564,14 +567,14 @@
 				h = s.a.wrapped(d.a, "RadioOff", c.a),
 				b = s.a.wrapped(a.a, "Checkbox", c.a),
 				x = s.a.wrapped(o.a, "CheckboxSelected", c.a),
-				C = s.a.textarea("Textarea", c.a),
-				g = s.a.label("StyledLabel", c.a),
+				g = s.a.textarea("Textarea", c.a),
+				C = s.a.label("StyledLabel", c.a),
 				f = s.a.input("StyledFileInput", c.a)
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return g
+				return C
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/throttle.js"),
@@ -597,7 +600,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var C = function(e, t) {
+			var g = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -606,7 +609,7 @@
 				}
 				return n
 			};
-			class g extends o.a.Component {
+			class C extends o.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = r()(() => {
 						const {
@@ -657,13 +660,13 @@
 			t.b = e => {
 				var {
 					className: t
-				} = e, n = C(e, ["className"]);
+				} = e, n = g(e, ["className"]);
 				const s = Object(d.a)(b.a.row, t, {
 					[b.a.mIsInteractive]: !n.noHover,
 					[b.a.mIsSelected]: n.isSelected,
 					[b.a.topics]: n.isTopicsStyle
 				});
-				return o.a.createElement(g, x({
+				return o.a.createElement(C, x({
 					className: s
 				}, n))
 			}
@@ -766,4 +769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BannedUserModal.d638b861ed9940d258b0.js.map
+//# sourceMappingURL=BannedUserModal.876f0501f5ccbc1b0afa.js.map

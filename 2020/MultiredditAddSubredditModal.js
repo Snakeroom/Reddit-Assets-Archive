@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7d39a3c34f38e4e1bbae.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.0b011a2f41d942e79672.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -30,8 +30,11 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => s.a.createElement(i.b, {
 				className: Object(n.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
-			}, c._("{characters} Characters", [c._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, c._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [c._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/MultiredditAddSubredditModal/index.m.less": function(e, t, r) {
@@ -86,8 +89,8 @@
 				F = r("./src/reddit/models/Subreddit/index.ts"),
 				P = r("./src/reddit/selectors/multireddit.ts"),
 				R = r("./src/reddit/controls/Checkbox/index.tsx"),
-				I = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
-				M = r.n(I),
+				M = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
+				I = r.n(M),
 				T = e => {
 					let {
 						containsSubreddit: t,
@@ -97,23 +100,23 @@
 						recentRef: n
 					} = e;
 					return d.a.createElement("div", {
-						className: M.a.listItem,
+						className: I.a.listItem,
 						onClick: s,
 						ref: n
 					}, d.a.createElement(R.a, {
-						className: M.a.checkbox,
+						className: I.a.checkbox,
 						disabled: t,
 						isCheckboxSelected: r || t,
 						toggleCheckbox: s
 					}), d.a.createElement("img", {
 						src: a.icon,
-						className: M.a.icon
+						className: I.a.icon
 					}), d.a.createElement("div", {
-						className: M.a.label
+						className: I.a.label
 					}, d.a.createElement("div", {
-						className: M.a.name
+						className: I.a.name
 					}, a.displayText), d.a.createElement("div", {
-						className: M.a.details
+						className: I.a.details
 					}, t ? d.a.createElement(N.c, null, "Community already added to this feed") : d.a.createElement(N.c, null, d.a.createElement(N.b, {
 						name: "num-subreddits"
 					}, a.subredditCount), " ", d.a.createElement(N.a, {
@@ -255,14 +258,14 @@
 					}, d.a.createElement(f.c, null, d.a.createElement(f.g, null, d.a.createElement(j.a, null, d.a.createElement(f.n, null, d.a.createElement(N.c, null, "Add community to Custom Feed")), d.a.createElement("button", {
 						onClick: a
 					}, d.a.createElement(f.b, null)))), d.a.createElement(f.j, {
-						className: M.a.main
+						className: I.a.main
 					}, d.a.createElement("div", {
-						className: M.a.listContainer,
+						className: I.a.listContainer,
 						ref: this.setScrollRef
 					}, t ? d.a.createElement("div", {
-						className: M.a.loadingContainer
+						className: I.a.loadingContainer
 					}, d.a.createElement(v.a, {
-						className: Object(u.a)(M.a.loadingIcon, M.a.forUser),
+						className: Object(u.a)(I.a.loadingIcon, I.a.forUser),
 						sizePx: A
 					})) : r.map(e => d.a.createElement(T, {
 						containsSubreddit: this.containsCurrentSubredditOrProfile(e),
@@ -272,7 +275,7 @@
 						onCheck: this.getOnCheckFn(e.name),
 						recentRef: e.name === l ? this.setRecentRef : s.a
 					}))), d.a.createElement("div", null, c ? d.a.createElement("div", {
-						className: Object(u.a)(M.a.listItem, M.a.inputListItem)
+						className: Object(u.a)(I.a.listItem, I.a.inputListItem)
 					}, d.a.createElement(x.b, {
 						inputRef: this.setInputRef,
 						label: Object(w.c)("new custom feed"),
@@ -282,24 +285,24 @@
 						state: this.getCreateState(),
 						value: i
 					}), h ? d.a.createElement(C.c, {
-						className: M.a.createErrorMsg
+						className: I.a.createErrorMsg
 					}, o === k.a.SameName ? Object(w.c)("A custom feed with that name already exists") : o === k.a.TooShort ? Object(w.c)("Name must contain at least two alphanumeric characters") : Object(w.c)("Something went wrong with this name, maybe try something else?")) : d.a.createElement(b.a, {
 						text: i,
 						maxChars: k.c
 					}), !p && !h && (e ? d.a.createElement(v.a, {
-						className: Object(u.a)(M.a.createSubmitBtn, M.a.loading),
+						className: Object(u.a)(I.a.createSubmitBtn, I.a.loading),
 						sizePx: L
 					}) : d.a.createElement(_.n, {
-						className: M.a.createSubmitBtn,
+						className: I.a.createSubmitBtn,
 						onClick: this.onCreateSubmit
 					}, d.a.createElement(N.c, null, "create")))) : d.a.createElement(_.n, {
-						className: M.a.listItem,
+						className: I.a.listItem,
 						onClick: this.onCreateClick
 					}, d.a.createElement(N.c, null, "+ Create a custom feed")))), d.a.createElement(f.e, null, d.a.createElement(f.o, {
 						disabled: !!n || !m.length || e,
 						onClick: this.onSubmit
 					}, n ? d.a.createElement(v.a, {
-						className: M.a.loadingIcon,
+						className: I.a.loadingIcon,
 						sizePx: L
 					}) : d.a.createElement(N.c, null, "Update")))))
 				}
@@ -682,4 +685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.7d39a3c34f38e4e1bbae.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.0b011a2f41d942e79672.js.map

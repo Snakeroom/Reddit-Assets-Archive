@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.f96ae224e193d890cb97.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.8b29e62abaee021bceb9.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -82,8 +82,11 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => s.a.createElement(r.b, {
 				className: Object(o.a)(e.className, i.a.container, e.text.length > e.maxChars ? i.a.mOverflow : null)
-			}, d._("{characters} Characters", [d._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, d._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [d._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/ManageChatRoomsModal/ChannelForm.m.less": function(e, t, n) {
@@ -185,15 +188,15 @@
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				C = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				E = n("./src/reddit/components/ManageChatRoomsModal/_Controls.m.less"),
-				x = n.n(E);
-			const _ = i.a.button("DeleteButton", x.a),
-				f = i.a.wrapped(b.f, "PrimaryButton", x.a),
-				S = i.a.wrapped(g.i, "Textarea", x.a),
-				M = i.a.input("ChatSettingsInput", x.a),
-				k = i.a.input("ChatSettingsLongerInput", x.a),
-				v = (i.a.wrapped(C.a, "Toggle", x.a), i.a.ol("List", x.a)),
-				w = i.a.li("ListItem", x.a),
-				I = i.a.span("ErrorMarker", x.a),
+				_ = n.n(E);
+			const x = i.a.button("DeleteButton", _.a),
+				f = i.a.wrapped(b.f, "PrimaryButton", _.a),
+				S = i.a.wrapped(g.i, "Textarea", _.a),
+				M = i.a.input("ChatSettingsInput", _.a),
+				k = i.a.input("ChatSettingsLongerInput", _.a),
+				v = (i.a.wrapped(C.a, "Toggle", _.a), i.a.ol("List", _.a)),
+				w = i.a.li("ListItem", _.a),
+				I = i.a.span("ErrorMarker", _.a),
 				D = e => s.a.createElement("button", {
 					className: e.className,
 					type: "button",
@@ -476,7 +479,7 @@
 						onClick: this.onSelectNewMemberAge
 					}), s.a.createElement(J, null, c.fbt._("All new room members will be unable to send messages for this duration after joining", null, {
 						hk: "2THB5c"
-					}))), e && !a && s.a.createElement(_, {
+					}))), e && !a && s.a.createElement(x, {
 						type: "button",
 						onClick: this.onDelete
 					}, s.a.createElement(oe.a, null), c.fbt._("Delete Room", null, {
@@ -504,10 +507,10 @@
 				be = n("./src/reddit/components/ManageChatRoomsModal/Delete.m.less"),
 				Ce = n.n(be);
 			const Ee = i.a.wrapped(b.f, "PrimaryButton", Ce.a),
-				xe = Object(r.c)({
+				_e = Object(r.c)({
 					subredditChannel: ie.b
 				});
-			class _e extends s.a.Component {
+			class xe extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onDeleteChannel = () => {
 						const {
@@ -540,10 +543,10 @@
 					}))))
 				}
 			}
-			var fe = Object(o.b)(xe, e => ({
+			var fe = Object(o.b)(_e, e => ({
 					modalToggled: t => e(Object(d.i)(t)),
 					deleteSubredditChannel: t => e(Object(h.j)(t))
-				}))(Object(ee.c)(_e)),
+				}))(Object(ee.c)(xe)),
 				Se = n("./src/reddit/components/SubredditChannelList/index.tsx"),
 				Me = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				ke = n("./src/reddit/layout/row/Inline/index.tsx"),
@@ -1117,7 +1120,7 @@
 				fbt: pt
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), gt = i.a.wrapped(V.c, "ModalBody", ht.a), bt = i.a.wrapped(V.b, "CloseIcon", ht.a), Ct = i.a.wrapped(ut.a, "CloseButton", ht.a), Et = Object(r.c)({
 				activeModalId: le.a
-			}), xt = Object(o.b)(Et, (e, t) => {
+			}), _t = Object(o.b)(Et, (e, t) => {
 				let {
 					subredditId: n
 				} = t;
@@ -1125,7 +1128,7 @@
 					modalToggled: t => e(Object(d.i)(t))
 				}
 			});
-			t.default = Object(l.a)(xt(e => s.a.createElement(gt, null, s.a.createElement(Ct, {
+			t.default = Object(l.a)(_t(e => s.a.createElement(gt, null, s.a.createElement(Ct, {
 				onClick: () => e.modalToggled(e.activeModalId)
 			}, pt._("close", null, {
 				hk: "4qEb7D"
@@ -1236,9 +1239,9 @@
 			})), n.d(t, "b", (function() {
 				return E
 			})), n.d(t, "c", (function() {
-				return x
-			})), n.d(t, "d", (function() {
 				return _
+			})), n.d(t, "d", (function() {
+				return x
 			})), n.d(t, "j", (function() {
 				return f
 			}));
@@ -1258,8 +1261,8 @@
 				b = a.a.div("FormItem", o.a),
 				C = a.a.h3("FormElementTitle", o.a),
 				E = a.a.div("FormElementDescription", o.a),
-				x = a.a.div("FormElementError", o.a),
-				_ = a.a.div("FormElementSubGroup", o.a),
+				_ = a.a.div("FormElementError", o.a),
+				x = a.a.div("FormElementSubGroup", o.a),
 				f = a.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
@@ -1304,7 +1307,7 @@
 			})), n.d(t, "h", (function() {
 				return E
 			})), n.d(t, "g", (function() {
-				return x
+				return _
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/controls/Input/ModalInput.tsx"),
@@ -1322,7 +1325,7 @@
 				b = a.a.wrapped(r.a, "CheckboxSelected", c.a),
 				C = a.a.textarea("Textarea", c.a),
 				E = a.a.label("StyledLabel", c.a),
-				x = a.a.input("StyledFileInput", c.a)
+				_ = a.a.input("StyledFileInput", c.a)
 		},
 		"./src/reddit/components/SubredditChannelList/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1366,6 +1369,9 @@
 		},
 		"./src/reddit/components/SubredditChannelList/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return Q
+			}));
 			var a = n("./node_modules/lodash/orderBy.js"),
 				s = n.n(a),
 				o = n("./node_modules/react/index.js"),
@@ -1382,8 +1388,8 @@
 				b = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				C = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				E = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = n("./src/reddit/constants/modals.ts"),
-				_ = n("./src/reddit/controls/Button/index.tsx"),
+				_ = n("./src/reddit/constants/modals.ts"),
+				x = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/helpers/trackers/chat.ts"),
 				S = n("./src/reddit/icons/fonts/Pencil/index.tsx"),
 				M = n("./src/reddit/icons/svgs/Chat/index.tsx"),
@@ -1395,12 +1401,9 @@
 				y = n("./src/reddit/selectors/user.ts"),
 				L = n("./src/reddit/components/SubredditChannelList/index.m.less"),
 				j = n.n(L);
-			n.d(t, "a", (function() {
-				return Q
-			}));
 			const {
 				fbt: O
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = d.a.wrapped(b.f, "ModalFormItem", j.a), A = d.a.wrapped(_.f, "PrimaryButton", j.a), T = d.a.wrapped(b.m, "ModalText", j.a), N = d.a.a("ItemLink", j.a), B = d.a.p("Detail", j.a), P = d.a.p("DescText", j.a), F = d.a.div("Title", j.a), U = d.a.div("Header", j.a), H = d.a.wrapped(M.a, "ChatIcon", j.a), K = d.a.wrapped(k.a, "PlanetIcon", j.a), W = d.a.wrapped(S.a, "Pencil", j.a), V = d.a.wrapped(e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = d.a.wrapped(b.f, "ModalFormItem", j.a), A = d.a.wrapped(x.f, "PrimaryButton", j.a), T = d.a.wrapped(b.m, "ModalText", j.a), N = d.a.a("ItemLink", j.a), B = d.a.p("Detail", j.a), P = d.a.p("DescText", j.a), F = d.a.div("Title", j.a), U = d.a.div("Header", j.a), H = d.a.wrapped(M.a, "ChatIcon", j.a), K = d.a.wrapped(k.a, "PlanetIcon", j.a), W = d.a.wrapped(S.a, "Pencil", j.a), V = d.a.wrapped(e => {
 				let {
 					className: t
 				} = e;
@@ -1442,9 +1445,9 @@
 						subredditId: n
 					} = t;
 					return {
-						toggleModal: () => e(Object(g.i)(x.a.MANAGE_SUBREDDIT_CHAT)),
-						toggleCreateModal: () => e(Object(g.i)(x.a.CREATE_SUBREDDIT_CHAT)),
-						toggleEditModal: () => e(Object(g.i)(x.a.EDIT_SUBREDDIT_CHAT)),
+						toggleModal: () => e(Object(g.i)(_.a.MANAGE_SUBREDDIT_CHAT)),
+						toggleCreateModal: () => e(Object(g.i)(_.a.CREATE_SUBREDDIT_CHAT)),
+						toggleEditModal: () => e(Object(g.i)(_.a.EDIT_SUBREDDIT_CHAT)),
 						fetchSubredditChannels: t => e(Object(h.l)(t)),
 						onChatLinkClick: (t, n) => e(Object(p.b)(t, n)),
 						onSelectChannel: t => e(Object(h.m)({
@@ -1781,4 +1784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ManageChatRoomsModal.f96ae224e193d890cb97.js.map
+//# sourceMappingURL=ManageChatRoomsModal.8b29e62abaee021bceb9.js.map

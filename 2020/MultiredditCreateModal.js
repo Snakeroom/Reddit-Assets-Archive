@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.808b79c0bd8697e2dd36.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.21f9b3adfeb3b9a46668.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -21,8 +21,11 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => n.a.createElement(s.b, {
 				className: Object(i.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
-			}, l._("{characters} Characters", [l._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, l._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [l._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/MultiredditCreateModal/index.m.less": function(e, t, r) {
@@ -452,4 +455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditCreateModal.808b79c0bd8697e2dd36.js.map
+//# sourceMappingURL=MultiredditCreateModal.21f9b3adfeb3b9a46668.js.map

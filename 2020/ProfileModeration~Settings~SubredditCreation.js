@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.daf424f65a9600bfb966.js
-// Retrieved at 4/2/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.0f6de8b865919d30b0eb.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -51,8 +51,11 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(o.b, {
 				className: Object(s.a)(e.className, i.a.container, e.text.length > e.maxChars ? i.a.mOverflow : null)
-			}, c._("{characters} Characters", [c._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, c._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [c._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/RichTextEditor/HoverTooltip/index.m.less": function(e, t, n) {
@@ -1187,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.daf424f65a9600bfb966.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.0f6de8b865919d30b0eb.js.map

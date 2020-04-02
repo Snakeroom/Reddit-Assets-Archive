@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.eb128ab910c7eb49d2dc.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.a07ab55c6452c2f006b4.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -211,8 +211,11 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(l.b, {
 				className: Object(s.a)(e.className, o.a.container, e.text.length > e.maxChars ? o.a.mOverflow : null)
-			}, d._("{characters} Characters", [d._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, d._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [d._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/IdCard/index.m.less": function(e, t, n) {
@@ -8366,4 +8369,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.eb128ab910c7eb49d2dc.js.map
+//# sourceMappingURL=StructuredStyles.a07ab55c6452c2f006b4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.b788cd7240a848e1ebae.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.ab207bbc7a87aeb2e211.js
+// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -21,8 +21,11 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(i.b, {
 				className: Object(o.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
-			}, d._("{characters} Characters", [d._param("characters", e.maxChars - e.text.length)], {
-				hk: "1ewWIT"
+			}, d._({
+				"*": "{characters} Characters remaining",
+				_1: "1 Character remaining"
+			}, [d._plural(e.maxChars - e.text.length, "characters")], {
+				hk: "V22sW"
 			}))
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, s) {
@@ -190,11 +193,11 @@
 				N = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
 				F = s.n(N);
 			const P = 400,
-				T = Object(i.c)({
+				v = Object(i.c)({
 					post: O.z,
 					subreddit: O.A
 				}),
-				v = Object(o.b)(T, (e, t) => ({
+				T = Object(o.b)(v, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
 					showSuccessToast: () => e(Object(d.e)({
 						text: Object(E.c)("Messages sent!")
@@ -303,7 +306,7 @@
 					}) : o ? r.a.createElement(k.c, null, "Sent!") : r.a.createElement(k.c, null, "Send Messages"))))
 				}
 			}
-			t.default = Object(a.a)(Object(b.b)(v(Object(p.c)(M))))
+			t.default = Object(a.a)(Object(b.b)(T(Object(p.c)(M))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, s) {
 			e.exports = {
@@ -412,4 +415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.b788cd7240a848e1ebae.js.map
+//# sourceMappingURL=ModToMemberShareModal.ab207bbc7a87aeb2e211.js.map
