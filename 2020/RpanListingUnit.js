@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b7a09ba214c5762ac3d1.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.2f253dafe9e8045dfb5c.js
+// Retrieved at 4/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -32,7 +32,7 @@
 				o = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			const c = new class {
 				constructor() {
-					this.isInitialized = !1, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatDelaySec = i.f, this.heartbeatRateSec = i.g, this.statsRefreshRateSec = i.j, this.recommendedViewerSubredditsRefreshRateSec = i.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStreamPostId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentStreamId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
+					this.isInitialized = !1, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatDelaySec = i.f, this.heartbeatRateSec = i.g, this.statsRefreshRateSec = i.j, this.recommendedViewerSubredditsRefreshRateSec = i.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStatsId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentHeartbeatId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
 				}
 				unsubscribeConfig() {
 					window.clearTimeout(this.configTimeout)
@@ -44,10 +44,10 @@
 					this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval()
 				}
 				unsubscribeStats() {
-					this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.currentStreamPostId = void 0
+					this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.currentStatsId = void 0
 				}
 				unsubscribeHeartbeat() {
-					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.currentStreamId = void 0
+					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.currentHeartbeatId = void 0
 				}
 				async initializeConfig(e, t, s) {
 					if (this.isInitialized) return;
@@ -76,12 +76,12 @@
 					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(a.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(i.P, e, t), this.currentStreamPostId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
-						this.currentStreamPostId && e(Object(n.d)(this.currentStreamPostId))
+					await this.initializeConfig(i.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
+						this.currentStatsId && e(Object(n.d)(this.currentStatsId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
-					if (await this.initializeConfig(i.P, e, t), !this.currentStreamId) return;
+					if (await this.initializeConfig(i.P, e, t), !this.currentHeartbeatId) return;
 					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
 					const s = Object(o.m)(t());
 					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
@@ -89,7 +89,7 @@
 					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
 					const c = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
 						d = () => {
-							this.currentStreamId && e(Object(a.d)(this.currentStreamId))
+							this.currentHeartbeatId && e(Object(a.d)(this.currentHeartbeatId))
 						};
 					this.clearSendHeartbeatInterval = Object(r.a)(() => {
 						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(r.a)(d, c)
@@ -760,15 +760,15 @@
 				A = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				k = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				I = s("./src/reddit/controls/InternalLink/index.tsx"),
-				P = s("./src/reddit/controls/Score/index.tsx"),
-				T = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
+				T = s("./src/reddit/controls/Score/index.tsx"),
+				P = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				D = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				U = s.n(D),
 				F = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				V = s.n(F);
+				H = s.n(F);
 			const {
-				fbt: H
+				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = Object(i.b)(() => Object(n.c)({
 				isLoggedIn: O.G,
 				isOverlayOpen: S.h,
@@ -806,12 +806,12 @@
 				subscribeStats: t => e(m.a.subscribeStats(t)),
 				subscribeStreams: () => e(m.a.subscribeStreams(t.listingName))
 			})), B = () => a.a.createElement("h3", {
-				className: V.a.title
-			}, H._("Top broadcast right now", null, {
+				className: H.a.title
+			}, V._("Top broadcast right now", null, {
 				hk: "2hS1kb"
 			})), z = () => a.a.createElement("p", {
-				className: V.a.description
-			}, H._("Live from the internet, this is RPAN", null, {
+				className: H.a.description
+			}, V._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class G extends r.Component {
@@ -880,81 +880,81 @@
 						layout: e
 					} = this.props, t = e === b.g.Classic ? this.renderClassicContent() : e === b.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return a.a.createElement("div", {
-						className: Object(o.a)(V.a.container, {
+						className: Object(o.a)(H.a.container, {
 							[U.a.largeAndMediumPostStyles]: e === b.g.Large || e === b.g.Medium,
 							[U.a.classicPostStyles]: e === b.g.Classic,
 							[U.a.compactPostStyles]: e === b.g.Compact,
-							[V.a.large]: e === b.g.Large || e === b.g.Medium,
-							[V.a.classic]: e === b.g.Classic,
-							[V.a.compact]: e === b.g.Compact
+							[H.a.large]: e === b.g.Large || e === b.g.Medium,
+							[H.a.classic]: e === b.g.Classic,
+							[H.a.compact]: e === b.g.Compact
 						}, this.props.className),
 						ref: this.observableElement
 					}, e !== b.g.Large && a.a.createElement(_.b, {
-						className: V.a.leftRail,
+						className: H.a.leftRail,
 						withoutComputedStyles: e === b.g.Compact
 					}, a.a.createElement(J, {
 						isVertical: !0
 					}), e === b.g.Compact && a.a.createElement(J, {
 						isVertical: !1
 					})), a.a.createElement(R.a, {
-						className: V.a.backgroundWrapper,
+						className: H.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
 				}
 				renderTitleAndDescription(e) {
 					return a.a.createElement("div", {
-						className: V.a.titleAndDescriptionContainer
+						className: H.a.titleAndDescriptionContainer
 					}, a.a.createElement(I.a, {
 						to: this.props.location
 					}, a.a.createElement(B, null), e && a.a.createElement(z, null)))
 				}
 				renderLargeContent() {
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-						className: V.a.header
+						className: H.a.header
 					}, this.renderTitleAndDescription(), a.a.createElement("div", {
-						className: V.a.flatListContainer
+						className: H.a.flatListContainer
 					}, a.a.createElement(q, {
 						onClick: this.onHideUnitClicked
 					}))), a.a.createElement("div", {
-						className: V.a.body
+						className: H.a.body
 					}, a.a.createElement(I.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
-						className: V.a.previewLink,
+						className: H.a.previewLink,
 						tabIndex: 0
 					}, a.a.createElement("div", {
-						className: V.a.previewContainer
+						className: H.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
 				}
 				renderClassicContent() {
 					return a.a.createElement("div", {
-						className: V.a.body
+						className: H.a.body
 					}, a.a.createElement(I.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, a.a.createElement("div", {
-						className: V.a.thumbnailContainer
+						className: H.a.thumbnailContainer
 					}, this.renderThumbnail())), a.a.createElement("div", {
-						className: V.a.main
+						className: H.a.main
 					}, this.renderTitleAndDescription(!0), a.a.createElement("div", {
-						className: V.a.flatListContainer
+						className: H.a.flatListContainer
 					}, a.a.createElement(K, {
 						onClick: this.onHeaderClicked
 					}), a.a.createElement(g.a, {
-						className: V.a.flatlistSeparator
+						className: H.a.flatlistSeparator
 					}), a.a.createElement("div", null, a.a.createElement(Z, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
 				renderCompactContent() {
 					return a.a.createElement("div", {
-						className: V.a.body
+						className: H.a.body
 					}, a.a.createElement("div", {
-						className: V.a.main
+						className: H.a.main
 					}, a.a.createElement(K, {
 						onClick: this.onHeaderClicked
 					}), this.renderTitleAndDescription(!0), a.a.createElement("div", {
-						className: V.a.flatListContainer
+						className: H.a.flatListContainer
 					}, a.a.createElement(q, {
 						onClick: this.onHideUnitClicked
 					}))))
@@ -968,28 +968,28 @@
 					const s = e.stream.state === f.b.IS_LIVE,
 						r = Math.max(1, t);
 					return a.a.createElement("div", {
-						className: V.a.infoContainer
+						className: H.a.infoContainer
 					}, a.a.createElement("div", {
-						className: V.a.bigExpando
-					}, a.a.createElement(T.a, {
-						className: V.a.bigExpandoIcon
+						className: H.a.bigExpando
+					}, a.a.createElement(P.a, {
+						className: H.a.bigExpandoIcon
 					})), a.a.createElement("span", {
-						className: V.a.watchingCount
-					}, H._({
+						className: H.a.watchingCount
+					}, V._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [H._plural(r, "number")], {
+					}, [V._plural(r, "number")], {
 						hk: "33zJ5F"
 					})), s && a.a.createElement("span", {
-						className: V.a.liveStatus
-					}, H._("Live", null, {
+						className: H.a.liveStatus
+					}, V._("Live", null, {
 						hk: "TwJSs"
 					})))
 				}
 				renderThumbnail() {
 					return a.a.createElement("div", {
-						className: Object(o.a)(V.a.thumbnail, {
-							[V.a.noise]: !this.state.isReady
+						className: Object(o.a)(H.a.thumbnail, {
+							[H.a.noise]: !this.state.isReady
 						})
 					}, this.renderVideo())
 				}
@@ -1057,11 +1057,11 @@
 			}
 			const J = e => a.a.createElement(y.a, {
 					className: Object(o.a)({
-						[V.a.verticalVotes]: e.isVertical,
-						[V.a.horizontalVotes]: !e.isVertical
+						[H.a.verticalVotes]: e.isVertical,
+						[H.a.horizontalVotes]: !e.isVertical
 					})
-				}, a.a.createElement(P.a, {
-					className: V.a.score,
+				}, a.a.createElement(T.a, {
+					className: H.a.score,
 					isScoreHidden: !0,
 					score: 0,
 					voteState: E.a.notVoted
@@ -1071,10 +1071,10 @@
 						onClick: t
 					} = e;
 					return a.a.createElement("button", {
-						className: V.a.expandoButton,
+						className: H.a.expandoButton,
 						onClick: t
-					}, a.a.createElement(T.a, {
-						className: V.a.expandoIcon
+					}, a.a.createElement(P.a, {
+						className: H.a.expandoIcon
 					}))
 				},
 				Z = e => {
@@ -1083,7 +1083,7 @@
 						isLoggedIn: s
 					} = e;
 					return a.a.createElement(j.a, {
-						displayText: H._("Show me less of this", null, {
+						displayText: V._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: C.a.Hide,
@@ -1098,19 +1098,19 @@
 						onClick: t
 					} = e;
 					return a.a.createElement(N.b, {
-						className: V.a.overflowMenu,
-						dropdownClassName: V.a.overflowDropdown,
+						className: H.a.overflowMenu,
+						dropdownClassName: H.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
 					}, a.a.createElement(k.b, {
-						className: V.a.overflowItem,
-						displayText: H._("Show me less of this", null, {
+						className: H.a.overflowItem,
+						displayText: V._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
-						iconWrapperClassName: V.a.overflowItemIconWrapper,
-						textClassName: V.a.overflowItemText,
+						iconWrapperClassName: H.a.overflowItemIconWrapper,
+						textClassName: H.a.overflowItemText,
 						onClick: t
 					}, a.a.createElement(L.a, {
-						className: V.a.hideIcon
+						className: H.a.hideIcon
 					})))
 				};
 			t.default = W(Object(A.c)(G))
@@ -1276,4 +1276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.b7a09ba214c5762ac3d1.js.map
+//# sourceMappingURL=RpanListingUnit.2f253dafe9e8045dfb5c.js.map

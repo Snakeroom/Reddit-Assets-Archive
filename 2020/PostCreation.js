@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9a2ba73fc9513c968fd4.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ca9af3f0927b1d038dfc.js
+// Retrieved at 4/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -6253,7 +6253,7 @@
 						viewportWidth: A.f
 					}
 				}
-				componentWillMount() {
+				UNSAFE_componentWillMount() {
 					"undefined" != typeof window && (this.updateDimensions(), window.addEventListener("resize", this.updateDimensions))
 				}
 				componentDidMount() {
@@ -6264,7 +6264,7 @@
 				componentWillUnmount() {
 					this.visibilityChangeSubscriptionId && f.a.unsubscribe(this.visibilityChangeSubscriptionId), this.props.scrollerItemRef && te(this.props) && this.props.scrollerItemRef(void 0), window.removeEventListener("resize", this.updateDimensions)
 				}
-				componentWillReceiveProps(e) {
+				UNSAFE_componentWillReceiveProps(e) {
 					!this.state.canLoadContent && e.shouldLoad && this.setState({
 						canLoadContent: !0
 					}), void 0 !== e.shouldPause && e.shouldPause !== this.props.shouldPause && this.shouldFocusContentDebouncer(!e.shouldPause)
@@ -6584,6 +6584,7 @@
 								canLoad: I,
 								isExpando: !!r,
 								posterUrl: u.media.scrubberThumbSource,
+								postId: u.id,
 								shouldPause: U,
 								url: u.media.hlsUrl
 							})));
@@ -30591,4 +30592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.9a2ba73fc9513c968fd4.js.map
+//# sourceMappingURL=PostCreation.ca9af3f0927b1d038dfc.js.map
