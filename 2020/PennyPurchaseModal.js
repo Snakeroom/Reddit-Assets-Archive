@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f53da4b11ef5abe54605.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.665436de42c3e9bc1057.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -27,8 +27,8 @@
 				y = t("./src/reddit/models/User/index.ts"),
 				C = t("./src/reddit/selectors/gild.ts"),
 				M = t("./src/reddit/selectors/gold/giveAwards.ts"),
-				b = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				O = t("./src/reddit/selectors/platform.ts"),
+				O = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				b = t("./src/reddit/selectors/platform.ts"),
 				v = t("./src/reddit/selectors/user.ts"),
 				j = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				E = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
@@ -45,21 +45,21 @@
 				}).apply(this, arguments)
 			}
 			const w = Object(r.c)({
-					activePage: b.o,
+					activePage: O.p,
 					allowNavigationCallback: e => {
-						const s = Object(O.a)(e);
+						const s = Object(b.a)(e);
 						return null === s ? void 0 : s
 					},
 					coinBalance: v.d,
-					gildThingId: b.p,
+					gildThingId: O.q,
 					isIframed: C.h,
 					nightmode: v.Q,
-					savedCardsPending: b.s,
+					savedCardsPending: O.t,
 					selectedAward: M.a,
-					selectedPayment: b.b,
-					stripeErrorMessage: b.i,
-					stripeTokenPending: b.l,
-					paypalErrorMessage: b.c,
+					selectedPayment: O.c,
+					stripeErrorMessage: O.j,
+					stripeTokenPending: O.m,
+					paypalErrorMessage: O.d,
 					userName: e => {
 						const s = Object(v.i)(e);
 						return "u/".concat(Object(y.f)(s))
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.f53da4b11ef5abe54605.js.map
+//# sourceMappingURL=PennyPurchaseModal.665436de42c3e9bc1057.js.map

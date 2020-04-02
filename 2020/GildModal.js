@@ -1,9 +1,12 @@
-// https://www.redditstatic.com/desktop2x/GildModal.cf877f5bb06b1dd1d970.js
-// Retrieved at 3/24/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.6fc9b417804afafeddbe.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return C
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				c = s("./src/lib/sentry/index.ts"),
@@ -68,9 +71,6 @@
 				})
 			}
 			var x = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			s.d(t, "a", (function() {
-				return C
-			}));
 			const g = Object(o.a)(x.g),
 				f = Object(o.a)(x.h),
 				_ = Object(o.a)(x.f),
@@ -148,7 +148,7 @@
 				}).apply(this, arguments)
 			}
 			const x = Object(a.c)({
-					showPurchaseModal: l.q,
+					showPurchaseModal: l.r,
 					thingId: d.d
 				}),
 				g = Object(u.a)(e => {
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.cf877f5bb06b1dd1d970.js.map
+//# sourceMappingURL=GildModal.6fc9b417804afafeddbe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.867e2c98aab10368fcfc.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.4c44336741f4ca6438cf.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, s, a) {
@@ -52,8 +52,8 @@
 				P = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				b = a("./src/reddit/helpers/trackers/goldPayment.ts"),
 				y = a("./src/reddit/models/Gold/Coins/index.ts"),
-				x = a("./src/reddit/models/Toast/index.ts"),
-				j = a("./src/reddit/models/User/index.ts"),
+				j = a("./src/reddit/models/Toast/index.ts"),
+				x = a("./src/reddit/models/User/index.ts"),
 				E = a("./src/reddit/selectors/gild.ts"),
 				v = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				O = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -106,28 +106,28 @@
 				}).apply(this, arguments)
 			}
 			const D = Object(r.c)({
-					activePage: M.o,
+					activePage: M.p,
 					allowNavigationCallback: e => {
 						const s = Object(k.a)(e);
 						return null === s ? void 0 : s
 					},
 					coinBalance: f.d,
 					coinPackages: O.b,
-					coinsToPurchase: M.a,
-					gildThingId: M.p,
+					coinsToPurchase: M.b,
+					gildThingId: M.q,
 					isIframed: E.h,
 					nightmode: f.Q,
-					savedCardsPending: M.s,
+					savedCardsPending: M.t,
 					selectedAward: v.a,
-					selectedPayment: M.b,
-					stripeErrorMessage: M.i,
-					stripeTokenPending: M.l,
-					paypalErrorMessage: M.c,
+					selectedPayment: M.c,
+					stripeErrorMessage: M.j,
+					stripeTokenPending: M.m,
+					paypalErrorMessage: M.d,
 					purchaseCatalogError: O.d,
 					purchaseCatalogPending: O.e,
 					userName: e => {
 						const s = Object(f.i)(e);
-						return "u/".concat(Object(j.f)(s))
+						return "u/".concat(Object(x.f)(s))
 					}
 				}),
 				F = Object(n.b)(D, (e, s) => ({
@@ -137,7 +137,7 @@
 					loadSavedCards: () => e(Object(p.loadSavedCards)()),
 					onFailedToLoadCatalog: s => {
 						const a = {
-							kind: x.b.Error,
+							kind: j.b.Error,
 							text: s
 						};
 						return e(Object(h.e)(a))
@@ -206,8 +206,8 @@
 						savedCardsPending: C,
 						selectedAward: P,
 						selectedPayment: b,
-						stripeErrorMessage: x,
-						stripeTokenPending: j,
+						stripeErrorMessage: j,
+						stripeTokenPending: x,
 						userName: E
 					} = this.props;
 					if (h) return i(h), p(), null;
@@ -232,8 +232,8 @@
 						savedCardsPending: C,
 						selectedAward: P,
 						selectedPayment: b,
-						stripeErrorMessage: x,
-						stripeTokenPending: j,
+						stripeErrorMessage: j,
+						stripeTokenPending: x,
 						userName: E
 					}), "paymentCompleted" === e && o.a.createElement(A.a, {
 						isCompletePaypal: c,
@@ -300,4 +300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.867e2c98aab10368fcfc.js.map
+//# sourceMappingURL=CoinsPurchaseModal.4c44336741f4ca6438cf.js.map

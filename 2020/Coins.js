@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.7b9cf1473004482137e3.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.62b51cb44cde51baf237.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -682,9 +682,9 @@
 						className: G.a.priceCrossout
 					}, "$".concat(r / 100)))))
 				},
-				q = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
-				F = t("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				z = t.n(F),
+				F = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
+				q = t("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
+				z = t.n(q),
 				Q = function(e, a) {
 					var t = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && a.indexOf(s) < 0 && (t[s] = e[s]);
@@ -700,7 +700,7 @@
 						isLargeView: t
 					} = e, s = Q(e, ["className", "isLargeView"]);
 					const n = t ? z.a.large : "",
-						c = Object(q.b)(s);
+						c = Object(F.b)(s);
 					return i.a.createElement("div", {
 						className: Object(S.a)(c, z.a.packagePlaceholder, n, a)
 					})
@@ -835,7 +835,7 @@
 					isLoggedIn: A.G,
 					premiumPackages: O.c,
 					purchaseCatalogPending: O.e,
-					shouldShowCoinPurchaseModal: I.q
+					shouldShowCoinPurchaseModal: I.r
 				}),
 				le = Object(l.b)(ie, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(o.b)("/settings/gold")),
@@ -1010,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.7b9cf1473004482137e3.js.map
+//# sourceMappingURL=Coins.62b51cb44cde51baf237.js.map

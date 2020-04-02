@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a1601c9e6b33f6b51f85.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.13ad3fa466ef47c287cf.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5169,8 +5169,8 @@
 					activeTooltipId: Ur.a,
 					coinPackages: Uo.b,
 					coinPurchaseDropdownIsOpen: e => Object(Ur.b)(oi)(e),
-					coinPurchaseModalIsOpen: ni.q,
-					premiumPurchaseModalIsOpen: ni.n,
+					coinPurchaseModalIsOpen: ni.a,
+					premiumPurchaseModalIsOpen: ni.o,
 					purchaseCatalogPending: Uo.e
 				});
 			class ci extends m.a.Component {
@@ -12272,4 +12272,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.a1601c9e6b33f6b51f85.js.map
+//# sourceMappingURL=Reddit.13ad3fa466ef47c287cf.js.map

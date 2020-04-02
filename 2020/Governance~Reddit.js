@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1143271bb9127f0930dd.js
-// Retrieved at 4/2/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.97994445c5d102b867d9.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4910,8 +4910,8 @@
 						g = Object(m.O)(d);
 					let _, h;
 					n(Object(a.stripeTokenPending)());
-					const y = Object(f.u)(d);
-					if (y || (_ = await n(Object(a.validateAndCreateStripeToken)(e)), h = Object(f.r)(d), _)) try {
+					const y = Object(f.v)(d);
+					if (y || (_ = await n(Object(a.validateAndCreateStripeToken)(e)), h = Object(f.s)(d), _)) try {
 						const e = await Object(u.e)({
 							coins: b,
 							context: c(),
@@ -4947,8 +4947,8 @@
 						E = Object(m.O)(g);
 					let I, S;
 					i(Object(a.stripeTokenPending)());
-					const v = Object(f.u)(g);
-					if (v || (I = await i(Object(a.validateAndCreateStripeToken)(e)), S = Object(f.r)(g), I)) try {
+					const v = Object(f.v)(g);
+					if (v || (I = await i(Object(a.validateAndCreateStripeToken)(e)), S = Object(f.s)(g), I)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: t,
@@ -5259,7 +5259,7 @@
 				g = Object(s.a)(i.n),
 				_ = e => async (t, n) => {
 					const r = n(),
-						s = Object(a.g)(r),
+						s = Object(a.h)(r),
 						{
 							token: o,
 							error: i
@@ -5360,8 +5360,8 @@
 						h = Object(f.O)(O);
 					let y, j;
 					o(Object(c.stripeTokenPending)());
-					const E = Object(p.u)(O);
-					if (E || (y = await o(Object(c.validateAndCreateStripeToken)(e)), j = Object(p.r)(O), y)) try {
+					const E = Object(p.v)(O);
+					if (E || (y = await o(Object(c.validateAndCreateStripeToken)(e)), j = Object(p.s)(O), y)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
@@ -8070,7 +8070,7 @@
 				}, Qt = Object(L.a)("PAGE__FRONTPAGE_RELOADED"), Jt = e => async (t, n, r) => {
 					const s = n(),
 						o = s.platform.currentPage.routeMatch.match;
-					Object(Ce.n)(s) || Object(Ce.q)(s) || (e || t(Qt()), await t(xt(o, !0)))
+					Object(Ce.o)(s) || Object(Ce.r)(s) || (e || t(Qt()), await t(xt(o, !0)))
 				}, Xt = "PAGE__MULTIREDDIT_FEED_PENDING", $t = "PAGE__MULTIREDDIT_FEED_LOADED", Zt = "PAGE__MULTIREDDIT_FEED_FAILED", en = Object(L.a)(Xt), tn = Object(L.a)($t), nn = Object(L.a)(Zt), rn = (e, t, n, s, o) => async (i, c, a) => {
 					const {
 						gqlContext: d
@@ -14794,7 +14794,7 @@
 							r && r.focus(), e((e => y("l_go_to_link", e))(i))
 						}
 					}
-				}, z = [T.q, T.n, e => !!Object(v.d)(e)], Q = (e, t) => async (n, s, c) => {
+				}, z = [T.r, T.o, e => !!Object(v.d)(e)], Q = (e, t) => async (n, s, c) => {
 					let {
 						apiContext: d
 					} = c;
@@ -40794,7 +40794,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case nd.b:
-						case sd.c:
+						case sd.b:
 							return !0;
 						case ge.H:
 						case p.a:
@@ -55969,73 +55969,76 @@
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "o", (function() {
+			n.d(t, "p", (function() {
 				return r
-			})), n.d(t, "p", (function() {
-				return s
 			})), n.d(t, "q", (function() {
+				return s
+			})), n.d(t, "r", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "b", (function() {
 				return c
 			})), n.d(t, "n", (function() {
 				return a
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "o", (function() {
 				return d
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "w", (function() {
 				return u
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "c", (function() {
 				return l
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "h", (function() {
 				return b
 			})), n.d(t, "t", (function() {
 				return p
-			})), n.d(t, "r", (function() {
-				return f
 			})), n.d(t, "u", (function() {
+				return f
+			})), n.d(t, "s", (function() {
 				return m
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "v", (function() {
 				return O
 			})), n.d(t, "f", (function() {
 				return g
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return _
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return h
 			})), n.d(t, "k", (function() {
 				return y
-			})), n.d(t, "i", (function() {
-				return j
 			})), n.d(t, "l", (function() {
+				return j
+			})), n.d(t, "j", (function() {
 				return E
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "m", (function() {
 				return I
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return S
+			})), n.d(t, "d", (function() {
+				return v
 			}));
 			const r = e => e.goldPurchase.purchaseModal.activePage,
 				s = e => e.goldPurchase.purchaseModal.gildThingId || void 0,
 				o = e => e.goldPurchase.purchaseModal.showModal,
-				i = e => e.goldPurchase.purchaseModal.coinsToPurchase,
-				c = e => e.goldPurchase.premiumPurchaseModal.activePage,
-				a = e => e.goldPurchase.premiumPurchaseModal.showModal,
-				d = e => e.goldPurchase.updateCardModal.pending,
-				u = e => e.goldPurchase.payment.paymentMethod,
-				l = e => e.goldPurchase.payment.cardName,
-				b = e => e.goldPurchase.payment.savedCardsPending,
-				p = e => e.goldPurchase.payment.savedCards,
-				f = e => e.goldPurchase.payment.rememberCard,
-				m = e => e.goldPurchase.payment.useSavedCard,
-				O = e => e.goldPurchase.payment.cardValidation.cardCvc,
-				g = e => e.goldPurchase.payment.cardValidation.cardExpiry,
-				_ = e => e.goldPurchase.payment.cardValidation.cardNumber,
-				h = e => e.goldPurchase.payment.cardValidation.nameOnCard,
-				y = e => e.goldPurchase.payment.cardValidation.postalCode,
-				j = e => e.goldPurchase.payment.stripeToken.errorMessage,
-				E = e => e.goldPurchase.payment.stripeToken.pending,
-				I = e => e.goldPurchase.payment.paypal.passthrough,
-				S = e => e.goldPurchase.payment.paypal.errorMessage
+				i = e => e.goldPurchase.purchaseModal.showModal && !e.gild.selectedAward.pennyPrice,
+				c = e => e.goldPurchase.purchaseModal.coinsToPurchase,
+				a = e => e.goldPurchase.premiumPurchaseModal.activePage,
+				d = e => e.goldPurchase.premiumPurchaseModal.showModal,
+				u = e => e.goldPurchase.updateCardModal.pending,
+				l = e => e.goldPurchase.payment.paymentMethod,
+				b = e => e.goldPurchase.payment.cardName,
+				p = e => e.goldPurchase.payment.savedCardsPending,
+				f = e => e.goldPurchase.payment.savedCards,
+				m = e => e.goldPurchase.payment.rememberCard,
+				O = e => e.goldPurchase.payment.useSavedCard,
+				g = e => e.goldPurchase.payment.cardValidation.cardCvc,
+				_ = e => e.goldPurchase.payment.cardValidation.cardExpiry,
+				h = e => e.goldPurchase.payment.cardValidation.cardNumber,
+				y = e => e.goldPurchase.payment.cardValidation.nameOnCard,
+				j = e => e.goldPurchase.payment.cardValidation.postalCode,
+				E = e => e.goldPurchase.payment.stripeToken.errorMessage,
+				I = e => e.goldPurchase.payment.stripeToken.pending,
+				S = e => e.goldPurchase.payment.paypal.passthrough,
+				v = e => e.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/imageUploads.ts": function(e, t, n) {
 			"use strict";
@@ -62159,4 +62162,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.1143271bb9127f0930dd.js.map
+//# sourceMappingURL=Governance~Reddit.97994445c5d102b867d9.js.map

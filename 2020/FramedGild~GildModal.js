@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2945eeefd3de3813efe0.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.154be027fc5b652ab2fa.js
+// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -1053,7 +1053,7 @@
 					publicAwardingEnabled: e => !!Object(y.a)(e),
 					purchaseCatalogPending: I.e,
 					showPremiumAwards: O.a,
-					showPurchaseModal: _.q,
+					showPurchaseModal: _.r,
 					selectedAward: j.a,
 					subreddit: k.H,
 					subredditCoins: (e, t) => {
@@ -1081,11 +1081,11 @@
 						awardType: d,
 						coinPrice: c,
 						pennyPrice: i
-					} = n, o = d === u.d.Moderator, l = t && !o, m = !!i && !l || ((o ? s : r) || 0) < c && !l, p = a && a.media && "rpan" === a.media.type;
+					} = n, o = d === u.d.Moderator, l = !!i || ((o ? s : r) || 0) < c && !(t && !o), m = a && a.media && "rpan" === a.media.type;
 					return Object.assign({}, e, {
-						needPayment: m,
+						needPayment: l,
 						cost: i || c,
-						isRpanPost: !!p
+						isRpanPost: !!m
 					})
 				}),
 				Ge = ["pan_media", "pan2", "pan3"];
@@ -1426,4 +1426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.2945eeefd3de3813efe0.js.map
+//# sourceMappingURL=FramedGild~GildModal.154be027fc5b652ab2fa.js.map
