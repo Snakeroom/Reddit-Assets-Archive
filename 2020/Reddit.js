@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f3d8f1f9439c9a7d8488.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.825877a4ae65a78f310a.js
+// Retrieved at 4/2/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4651,8 +4651,7 @@
 					className: t
 				} = e;
 				return m.a.createElement("div", {
-					className: Object(g.a)($r.a.Container, t),
-					id: "mweb-responsive-header-id"
+					className: Object(g.a)($r.a.Container, t)
 				}, m.a.createElement("a", {
 					"aria-label": n.fbt._("Home", null, {
 						hk: "1u0Rxp"
@@ -5845,7 +5844,7 @@
 			const Ec = Object(b.c)({
 					account: e => e.user.account,
 					language: e => e.user.language,
-					origin: uo.h
+					origin: uo.j
 				}),
 				Oc = m.a.memo(e => m.a.createElement("div", {
 					className: Object(g.a)(e.className, yc.a.row)
@@ -9519,7 +9518,7 @@
 				de = s("./src/reddit/helpers/trackers/ads.ts"),
 				le = s("./src/reddit/selectors/meta.ts");
 			const me = Object(K.c)({
-				region: le.i
+				region: le.k
 			});
 			class ue extends u.a.Component {
 				constructor(e) {
@@ -12085,25 +12084,6 @@
 					experimentName: n.eb
 				})
 		},
-		"./src/reddit/selectors/experiments/responsiveSettings.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "b", (function() {
-				return d
-			})), s.d(t, "a", (function() {
-				return l
-			}));
-			var n = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/reddit/constants/experiments.ts"),
-				r = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = s("./src/reddit/selectors/experiments/utils.ts"),
-				c = s("./src/reddit/selectors/user.ts");
-			const d = Object(n.a)((e, t) => Object(o.c)(e, {
-					experimentName: a.lb,
-					experimentEligibilitySelector: e => (Object(c.F)(e) || Object(c.G)(e)) && Object(r.I)(t.pageLayer)
-				}), i.a),
-				l = Object(n.a)(d, e => e === a.nb.Treatment)
-		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -12272,4 +12252,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.f3d8f1f9439c9a7d8488.js.map
+//# sourceMappingURL=Reddit.825877a4ae65a78f310a.js.map

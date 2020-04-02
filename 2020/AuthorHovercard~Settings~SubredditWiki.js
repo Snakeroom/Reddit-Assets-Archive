@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.4d4e935d36cfa23d421a.js
-// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.1a4f7c0809bab47e7234.js
+// Retrieved at 4/2/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -66,8 +66,8 @@
 				_ = r("./src/reddit/components/SubscribeButton/index.tsx"),
 				w = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				H = r("./src/reddit/icons/svgs/Admin/index.tsx"),
-				M = r("./src/reddit/icons/svgs/Karma/index.tsx"),
-				j = r("./src/reddit/icons/svgs/Premium/index.tsx"),
+				j = r("./src/reddit/icons/svgs/Karma/index.tsx"),
+				M = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				O = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				y = r("./src/reddit/actions/inContextModeration.ts"),
 				N = r("./src/reddit/actions/modal.ts"),
@@ -193,8 +193,8 @@
 			const ae = I.a.div("SubredditIcon", ne.a),
 				oe = I.a.wrapped(_.a, "SubscribeButton", ne.a),
 				de = I.a.wrapped(L.a, "ChatButton", ne.a),
-				ie = I.a.wrapped(M.a, "KarmaIcon", ne.a),
-				ce = I.a.wrapped(j.a, "PremiumIcon", ne.a),
+				ie = I.a.wrapped(j.a, "KarmaIcon", ne.a),
+				ce = I.a.wrapped(M.a, "PremiumIcon", ne.a),
 				le = I.a.wrapped(C.a, "UserNameLink", ne.a),
 				ue = I.a.div("UserNameMetaData", ne.a),
 				me = I.a.div("MetaDataItem", ne.a),
@@ -258,9 +258,9 @@
 						_ = I && I.templateIds && I.templateIds.length > 0,
 						H = I && I.displaySettings && I.displaySettings.isEnabled,
 						{
-							awardedLastMonth: M
+							awardedLastMonth: j
 						} = C,
-						j = x ? "".concat(g.a.assetPath, "/img/user-info-banner.png") : e.user.bannerImage,
+						M = x ? "".concat(g.a.assetPath, "/img/user-info-banner.png") : e.user.bannerImage,
 						y = x ? "".concat(g.a.assetPath, "/img/avatar_over18_square.png") : h;
 					return s.a.createElement(Ee, {
 						className: t,
@@ -268,7 +268,7 @@
 						style: m
 					}, s.a.createElement(he, {
 						style: {
-							backgroundImage: "url('".concat(j, "')")
+							backgroundImage: "url('".concat(M, "')")
 						}
 					}), s.a.createElement(Le, null, s.a.createElement(ve, null, s.a.createElement(ae, {
 						style: {
@@ -284,8 +284,8 @@
 						language: c,
 						user: C,
 						userName: v
-					}), M && s.a.createElement(O.a, {
-						recentAwardings: M,
+					}), j && s.a.createElement(O.a, {
+						recentAwardings: j,
 						username: v
 					}), d && !o && s.a.createElement(de, {
 						contextId: r,
@@ -317,13 +317,13 @@
 						user: C
 					}), !(E || d) && s.a.createElement(fe, null))
 				});
-			var Me = e => {
+			var je = e => {
 				const t = e.activeTooltipId === e.tooltipId;
 				return s.a.createElement(He, se({
 					isOpen: t
 				}, e))
 			};
-			const je = Object(o.c)({
+			const Me = Object(o.c)({
 					tokenName: c.p,
 					activeTooltipId: m.a,
 					isCurrentUser: (e, t) => {
@@ -334,18 +334,18 @@
 					hideNSFWPref: p.y,
 					language: p.O,
 					moderatorPermissions: u.j,
-					origin: l.h,
+					origin: l.j,
 					user: p.cb,
 					userFlair: v.c
 				}),
-				Oe = Object(a.b)(je, (e, t) => ({
+				Oe = Object(a.b)(Me, (e, t) => ({
 					onHideTooltip: () => e(Object(d.i)())
 				}));
 			t.a = Oe(e => s.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
-			}, s.a.createElement(Me, {
+			}, s.a.createElement(je, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				isCurrentUser: e.isCurrentUser,
@@ -439,6 +439,11 @@
 		},
 		"./src/reddit/components/Hovercards/HoverDiv/index.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "a", (function() {
+				return h
+			})), r.d(t, "b", (function() {
+				return L
+			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
 				a = r("./src/lib/lessComponent.tsx"),
@@ -472,11 +477,6 @@
 				})),
 				g = r("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
 				C = r.n(g);
-			r.d(t, "a", (function() {
-				return h
-			})), r.d(t, "b", (function() {
-				return L
-			}));
 			class I extends s.a.Component {
 				constructor() {
 					super(...arguments), this.closeHovercardTimeoutId = 0, this.openHovercardTimeoutId = 0, this.isHovering = !1, this.hoverEl = void 0, this.onHoverElMouseEnter = () => {
@@ -807,9 +807,9 @@
 			})), r.d(t, "f", (function() {
 				return H
 			})), r.d(t, "r", (function() {
-				return M
-			})), r.d(t, "n", (function() {
 				return j
+			})), r.d(t, "n", (function() {
+				return M
 			})), r.d(t, "k", (function() {
 				return O
 			}));
@@ -878,7 +878,7 @@
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				h = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				L = (e, t) => {
-					const r = M(e, t);
+					const r = j(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
 				f = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -896,7 +896,7 @@
 					const r = w(e, t);
 					return r === s.a.Ethereum || r === s.a.Rinkeby
 				},
-				M = (e, t) => {
+				j = (e, t) => {
 					const r = _(e, t),
 						n = w(e, t);
 					if (r && !r.inTransition && n === s.a.Stellar) return {
@@ -913,7 +913,7 @@
 						image: o.image
 					}
 				},
-				j = (e, t) => {
+				M = (e, t) => {
 					let {
 						subredditId: r
 					} = t;
@@ -931,4 +931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.4d4e935d36cfa23d421a.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.1a4f7c0809bab47e7234.js.map

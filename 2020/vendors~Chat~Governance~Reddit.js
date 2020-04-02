@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4ebc852d7827c1c053c2.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.9987d69e1a1ddc9cab24.js
+// Retrieved at 4/2/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@babel/runtime/helpers/esm/extends.js": function(e, t, n) {
@@ -7592,6 +7592,30 @@
 				}
 			}
 		},
+		"./node_modules/core-js/modules/_string-trim.js": function(e, t, n) {
+			var r = n("./node_modules/core-js/modules/_export.js"),
+				o = n("./node_modules/core-js/modules/_defined.js"),
+				i = n("./node_modules/core-js/modules/_fails.js"),
+				s = n("./node_modules/core-js/modules/_string-ws.js"),
+				a = "[" + s + "]",
+				u = RegExp("^" + a + a + "*"),
+				c = RegExp(a + a + "*$"),
+				l = function(e, t, n) {
+					var o = {},
+						a = i((function() {
+							return !!s[e]() || "​" != "​" [e]()
+						})),
+						u = o[e] = a ? t(d) : s[e];
+					n && (o[n] = u), r(r.P + r.F * a, "String", o)
+				},
+				d = l.trim = function(e, t) {
+					return e = String(o(e)), 1 & t && (e = e.replace(u, "")), 2 & t && (e = e.replace(c, "")), e
+				};
+			e.exports = l
+		},
+		"./node_modules/core-js/modules/_string-ws.js": function(e, t) {
+			e.exports = "\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff"
+		},
 		"./node_modules/core-js/modules/_to-absolute-index.js": function(e, t, n) {
 			var r = n("./node_modules/core-js/modules/_to-integer.js"),
 				o = Math.max,
@@ -8125,6 +8149,14 @@
 					}), r[1] = t, N.apply(P, r)
 				}
 			}), A.prototype[L] || n("./node_modules/core-js/modules/_hide.js")(A.prototype, L, A.prototype.valueOf), d(A, "Symbol"), d(Math, "Math", !0), d(r.JSON, "JSON", !0)
+		},
+		"./node_modules/core-js/modules/es7.string.trim-right.js": function(e, t, n) {
+			"use strict";
+			n("./node_modules/core-js/modules/_string-trim.js")("trimRight", (function(e) {
+				return function() {
+					return e(this, 2)
+				}
+			}), "trimEnd")
 		},
 		"./node_modules/core-js/modules/web.dom.iterable.js": function(e, t, n) {
 			for (var r = n("./node_modules/core-js/modules/es6.array.iterator.js"), o = n("./node_modules/core-js/modules/_object-keys.js"), i = n("./node_modules/core-js/modules/_redefine.js"), s = n("./node_modules/core-js/modules/_global.js"), a = n("./node_modules/core-js/modules/_hide.js"), u = n("./node_modules/core-js/modules/_iterators.js"), c = n("./node_modules/core-js/modules/_wks.js"), l = c("iterator"), d = c("toStringTag"), f = u.Array, h = {
@@ -15722,6 +15754,20 @@
 				return r(e) ? e : o(e, t) ? [e] : i(s(e))
 			}
 		},
+		"./node_modules/lodash/_castSlice.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseSlice.js");
+			e.exports = function(e, t, n) {
+				var o = e.length;
+				return n = void 0 === n ? o : n, !t && n >= o ? e : r(e, t, n)
+			}
+		},
+		"./node_modules/lodash/_charsStartIndex.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseIndexOf.js");
+			e.exports = function(e, t) {
+				for (var n = -1, o = e.length; ++n < o && r(t, e[n], 0) > -1;);
+				return n
+			}
+		},
 		"./node_modules/lodash/_cloneArrayBuffer.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_Uint8Array.js");
 			e.exports = function(e) {
@@ -15877,6 +15923,21 @@
 				}
 			}
 		},
+		"./node_modules/lodash/_createCaseFirst.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_castSlice.js"),
+				o = n("./node_modules/lodash/_hasUnicode.js"),
+				i = n("./node_modules/lodash/_stringToArray.js"),
+				s = n("./node_modules/lodash/toString.js");
+			e.exports = function(e) {
+				return function(t) {
+					t = s(t);
+					var n = o(t) ? i(t) : void 0,
+						a = n ? n[0] : t.charAt(0),
+						u = n ? r(n, 1).join("") : t.slice(1);
+					return a[e]() + u
+				}
+			}
+		},
 		"./node_modules/lodash/_createCompounder.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_arrayReduce.js"),
 				o = n("./node_modules/lodash/deburr.js"),
@@ -15885,6 +15946,24 @@
 			e.exports = function(e) {
 				return function(t) {
 					return r(i(o(t).replace(s, "")), e, "")
+				}
+			}
+		},
+		"./node_modules/lodash/_createFind.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseIteratee.js"),
+				o = n("./node_modules/lodash/isArrayLike.js"),
+				i = n("./node_modules/lodash/keys.js");
+			e.exports = function(e) {
+				return function(t, n, s) {
+					var a = Object(t);
+					if (!o(t)) {
+						var u = r(n, 3);
+						t = i(t), n = function(e) {
+							return u(a[e], e, a)
+						}
+					}
+					var c = e(t, n, s);
+					return c > -1 ? a[u ? t[c] : c] : void 0
 				}
 			}
 		},
@@ -16940,6 +17019,20 @@
 					}
 			}
 		},
+		"./node_modules/lodash/camelCase.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/capitalize.js"),
+				o = n("./node_modules/lodash/_createCompounder.js")((function(e, t, n) {
+					return t = t.toLowerCase(), e + (n ? r(t) : t)
+				}));
+			e.exports = o
+		},
+		"./node_modules/lodash/capitalize.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/toString.js"),
+				o = n("./node_modules/lodash/upperFirst.js");
+			e.exports = function(e) {
+				return o(r(e).toLowerCase())
+			}
+		},
 		"./node_modules/lodash/constant.js": function(e, t) {
 			e.exports = function(e) {
 				return function() {
@@ -17025,6 +17118,22 @@
 		"./node_modules/lodash/eq.js": function(e, t) {
 			e.exports = function(e, t) {
 				return e === t || e != e && t != t
+			}
+		},
+		"./node_modules/lodash/find.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_createFind.js")(n("./node_modules/lodash/findIndex.js"));
+			e.exports = r
+		},
+		"./node_modules/lodash/findIndex.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseFindIndex.js"),
+				o = n("./node_modules/lodash/_baseIteratee.js"),
+				i = n("./node_modules/lodash/toInteger.js"),
+				s = Math.max;
+			e.exports = function(e, t, n) {
+				var a = null == e ? 0 : e.length;
+				if (!a) return -1;
+				var u = null == n ? 0 : i(n);
+				return u < 0 && (u = s(a + u, 0)), r(e, o(t, 3), u)
 			}
 		},
 		"./node_modules/lodash/flatten.js": function(e, t, n) {
@@ -17284,6 +17393,17 @@
 				})), n
 			}
 		},
+		"./node_modules/lodash/mapValues.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseAssignValue.js"),
+				o = n("./node_modules/lodash/_baseForOwn.js"),
+				i = n("./node_modules/lodash/_baseIteratee.js");
+			e.exports = function(e, t) {
+				var n = {};
+				return t = i(t, 3), o(e, (function(e, o, i) {
+					r(n, o, t(e, o, i))
+				})), n
+			}
+		},
 		"./node_modules/lodash/memoize.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_MapCache.js"),
 				o = "Expected a function";
@@ -17367,6 +17487,12 @@
 				s = n("./node_modules/lodash/_toKey.js");
 			e.exports = function(e) {
 				return i(e) ? r(s(e)) : o(e)
+			}
+		},
+		"./node_modules/lodash/set.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseSet.js");
+			e.exports = function(e, t, n) {
+				return null == e ? e : r(e, t, n)
 			}
 		},
 		"./node_modules/lodash/snakeCase.js": function(e, t, n) {
@@ -17478,6 +17604,21 @@
 				return null == e ? "" : r(e)
 			}
 		},
+		"./node_modules/lodash/trimStart.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseToString.js"),
+				o = n("./node_modules/lodash/_castSlice.js"),
+				i = n("./node_modules/lodash/_charsStartIndex.js"),
+				s = n("./node_modules/lodash/_stringToArray.js"),
+				a = n("./node_modules/lodash/toString.js"),
+				u = /^\s+/;
+			e.exports = function(e, t, n) {
+				if ((e = a(e)) && (n || void 0 === t)) return e.replace(u, "");
+				if (!e || !(t = r(t))) return e;
+				var c = s(e),
+					l = i(c, s(t));
+				return o(c, l).join("")
+			}
+		},
 		"./node_modules/lodash/uniq.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_baseUniq.js");
 			e.exports = function(e) {
@@ -17490,6 +17631,10 @@
 			e.exports = function(e, t) {
 				return e && e.length ? o(e, r(t, 2)) : []
 			}
+		},
+		"./node_modules/lodash/upperFirst.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_createCaseFirst.js")("toUpperCase");
+			e.exports = r
 		},
 		"./node_modules/lodash/values.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_baseValues.js"),
@@ -18635,6 +18780,105 @@
 				}
 				e.exports = u, u.signature = r.signature
 			}).call(this, n("./node_modules/buffer/index.js").Buffer)
+		},
+		"./node_modules/path-browserify/index.js": function(e, t, n) {
+			(function(e) {
+				function n(e, t) {
+					for (var n = 0, r = e.length - 1; r >= 0; r--) {
+						var o = e[r];
+						"." === o ? e.splice(r, 1) : ".." === o ? (e.splice(r, 1), n++) : n && (e.splice(r, 1), n--)
+					}
+					if (t)
+						for (; n--; n) e.unshift("..");
+					return e
+				}
+
+				function r(e, t) {
+					if (e.filter) return e.filter(t);
+					for (var n = [], r = 0; r < e.length; r++) t(e[r], r, e) && n.push(e[r]);
+					return n
+				}
+				t.resolve = function() {
+					for (var t = "", o = !1, i = arguments.length - 1; i >= -1 && !o; i--) {
+						var s = i >= 0 ? arguments[i] : e.cwd();
+						if ("string" != typeof s) throw new TypeError("Arguments to path.resolve must be strings");
+						s && (t = s + "/" + t, o = "/" === s.charAt(0))
+					}
+					return (o ? "/" : "") + (t = n(r(t.split("/"), (function(e) {
+						return !!e
+					})), !o).join("/")) || "."
+				}, t.normalize = function(e) {
+					var i = t.isAbsolute(e),
+						s = "/" === o(e, -1);
+					return (e = n(r(e.split("/"), (function(e) {
+						return !!e
+					})), !i).join("/")) || i || (e = "."), e && s && (e += "/"), (i ? "/" : "") + e
+				}, t.isAbsolute = function(e) {
+					return "/" === e.charAt(0)
+				}, t.join = function() {
+					var e = Array.prototype.slice.call(arguments, 0);
+					return t.normalize(r(e, (function(e, t) {
+						if ("string" != typeof e) throw new TypeError("Arguments to path.join must be strings");
+						return e
+					})).join("/"))
+				}, t.relative = function(e, n) {
+					function r(e) {
+						for (var t = 0; t < e.length && "" === e[t]; t++);
+						for (var n = e.length - 1; n >= 0 && "" === e[n]; n--);
+						return t > n ? [] : e.slice(t, n - t + 1)
+					}
+					e = t.resolve(e).substr(1), n = t.resolve(n).substr(1);
+					for (var o = r(e.split("/")), i = r(n.split("/")), s = Math.min(o.length, i.length), a = s, u = 0; u < s; u++)
+						if (o[u] !== i[u]) {
+							a = u;
+							break
+						} var c = [];
+					for (u = a; u < o.length; u++) c.push("..");
+					return (c = c.concat(i.slice(a))).join("/")
+				}, t.sep = "/", t.delimiter = ":", t.dirname = function(e) {
+					if ("string" != typeof e && (e += ""), 0 === e.length) return ".";
+					for (var t = e.charCodeAt(0), n = 47 === t, r = -1, o = !0, i = e.length - 1; i >= 1; --i)
+						if (47 === (t = e.charCodeAt(i))) {
+							if (!o) {
+								r = i;
+								break
+							}
+						} else o = !1;
+					return -1 === r ? n ? "/" : "." : n && 1 === r ? "/" : e.slice(0, r)
+				}, t.basename = function(e, t) {
+					var n = function(e) {
+						"string" != typeof e && (e += "");
+						var t, n = 0,
+							r = -1,
+							o = !0;
+						for (t = e.length - 1; t >= 0; --t)
+							if (47 === e.charCodeAt(t)) {
+								if (!o) {
+									n = t + 1;
+									break
+								}
+							} else -1 === r && (o = !1, r = t + 1);
+						return -1 === r ? "" : e.slice(n, r)
+					}(e);
+					return t && n.substr(-1 * t.length) === t && (n = n.substr(0, n.length - t.length)), n
+				}, t.extname = function(e) {
+					"string" != typeof e && (e += "");
+					for (var t = -1, n = 0, r = -1, o = !0, i = 0, s = e.length - 1; s >= 0; --s) {
+						var a = e.charCodeAt(s);
+						if (47 !== a) - 1 === r && (o = !1, r = s + 1), 46 === a ? -1 === t ? t = s : 1 !== i && (i = 1) : -1 !== t && (i = -1);
+						else if (!o) {
+							n = s + 1;
+							break
+						}
+					}
+					return -1 === t || -1 === r || 0 === i || 1 === i && t === r - 1 && t === n + 1 ? "" : e.slice(t, r)
+				};
+				var o = "b" === "ab".substr(-1) ? function(e, t, n) {
+					return e.substr(t, n)
+				} : function(e, t, n) {
+					return t < 0 && (t = e.length + t), e.substr(t, n)
+				}
+			}).call(this, n("./node_modules/process/browser.js"))
 		},
 		"./node_modules/path-to-regexp/index.js": function(e, t, n) {
 			var r = n("./node_modules/path-to-regexp/node_modules/isarray/index.js");
@@ -34275,4 +34519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.4ebc852d7827c1c053c2.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.9987d69e1a1ddc9cab24.js.map

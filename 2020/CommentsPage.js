@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4490359c8a5ef15b377d.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7c6ba4c12488f9452f4a.js
+// Retrieved at 4/2/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5169,7 +5169,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = u.a.div("ButtonsContainer", B.a), H = u.a.div("Container", B.a), V = u.a.div("Description", B.a), U = u.a.div("PrivateSubredditDetails", B.a), G = u.a.div("PrivateSubredditDescription", B.a), K = u.a.h3("PrivateSubredditName", B.a), z = u.a.a("Link", B.a), J = u.a.wrapped(M.h, "LinkRouterButton", B.a), q = u.a.wrapped(M.g, "LinkButton", B.a), X = u.a.wrapped(M.k, "SecondaryLinkRouterButton", B.a), Q = u.a.wrapped(M.j, "SecondaryLinkButton", B.a), Y = u.a.wrapped(J, "GoHomeLinkButton", B.a), Z = u.a.img("Image", B.a), $ = u.a.img("ImagePlaceholder", B.a), ee = u.a.wrapped(J, "LeftLinkRouterButton", B.a), te = u.a.wrapped(q, "LeftLinkButton", B.a), se = u.a.wrapped(Q, "SecondaryLeftLinkButton", B.a), ne = u.a.wrapped(X, "SecondaryLeftLinkRouterButton", B.a), oe = u.a.h3("Title", B.a), re = u.a.div("PageBody", B.a), ae = u.a.div("QuarantineMessageWrapper", B.a), ie = Object(c.c)({
 				isLoggedIn: F.F,
 				language: F.O,
-				origin: R.h,
+				origin: R.j,
 				user: F.i
 			}), ce = Object(N.t)(), de = Object(a.b)(ie, (e, t) => {
 				let {
@@ -16490,7 +16490,7 @@
 					isTooltipOpen: (e, t) => !!Object(le.a)(e),
 					language: me.O,
 					listingBelowAllVariant: Je.b,
-					origin: ae.h,
+					origin: ae.j,
 					post: ee.F,
 					postSEOV2IdCardVariant: re.k,
 					profileCollectionsEnabled: X.a,
@@ -17267,4 +17267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.4490359c8a5ef15b377d.js.map
+//# sourceMappingURL=CommentsPage.7c6ba4c12488f9452f4a.js.map

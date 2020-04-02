@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.d5782827a658339fe16d.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.8210466f6ca502540908.js
+// Retrieved at 4/2/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -837,7 +837,7 @@
 				Yt = Object(x.c)({
 					city: zt.a,
 					country: zt.b,
-					region: zt.i
+					region: zt.k
 				});
 			class qt extends a.a.Component {
 				constructor(e) {
@@ -1455,4 +1455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.d5782827a658339fe16d.js.map
+//# sourceMappingURL=AdminPanel.8210466f6ca502540908.js.map
