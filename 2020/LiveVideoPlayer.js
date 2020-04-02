@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.449ae78f7a966c63a298.js
-// Retrieved at 4/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f49da8eb397ed0b82dfd.js
+// Retrieved at 4/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -485,7 +485,7 @@
 					return !(this.state.wasRemoved || this.state.hasError)
 				}
 				get isPaused() {
-					return this.props.isOverlayOpen || this.state.userShowedIntent && this.state.userPaused || this.props.shouldPause
+					return !!this.props.isOverlayOpen || (this.state.userShowedIntent ? this.state.userPaused : this.props.shouldPause)
 				}
 				get shouldRenderOverlay() {
 					return this.shouldRenderVideo && this.hasPlayableMedia
@@ -643,4 +643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.449ae78f7a966c63a298.js.map
+//# sourceMappingURL=LiveVideoPlayer.f49da8eb397ed0b82dfd.js.map

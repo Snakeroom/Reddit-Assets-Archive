@@ -1,24 +1,24 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.21e36399693a991f4ae2.js
-// Retrieved at 4/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.aecdd05f3d071fc4e5b4.js
+// Retrieved at 4/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var t, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
-		for (t in s) Object.prototype.hasOwnProperty.call(s, t) && (e[t] = s[t]);
+		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
+		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
 		for (m && m(o); P.length;) P.shift()();
-		return r.push.apply(r, c || []), a()
+		return r.push.apply(r, c || []), t()
 	}
 
-	function a() {
+	function t() {
 		for (var e, o = 0; o < r.length; o++) {
-			for (var a = r[o], t = !0, d = 1; d < a.length; d++) {
-				var s = a[d];
-				0 !== n[s] && (t = !1)
+			for (var t = r[o], a = !0, d = 1; d < t.length; d++) {
+				var s = t[d];
+				0 !== n[s] && (a = !1)
 			}
-			t && (r.splice(o--, 1), e = i(i.s = a[0]))
+			a && (r.splice(o--, 1), e = i(i.s = t[0]))
 		}
 		return e
 	}
-	var t = {},
+	var a = {},
 		d = {
 			"runtime~Reddit": 0
 		},
@@ -28,13 +28,13 @@
 		r = [];
 
 	function i(o) {
-		if (t[o]) return t[o].exports;
-		var a = t[o] = {
+		if (a[o]) return a[o].exports;
+		var t = a[o] = {
 			i: o,
 			l: !1,
 			exports: {}
 		};
-		return e[o].call(a.exports, a, a.exports, i), a.l = !0, a.exports
+		return e[o].call(t.exports, t, t.exports, i), t.l = !0, t.exports
 	}
 	i.e = function(e) {
 		var o = [];
@@ -209,8 +209,8 @@
 			GivePremiumModal: 1,
 			"reddit-components-Governance-TransactionModals-ClaimPointsModal": 1,
 			ModStatsChart: 1
-		} [e] && o.push(d[e] = new Promise((function(o, a) {
-			for (var t = "chunkCSS/" + ({
+		} [e] && o.push(d[e] = new Promise((function(o, t) {
+			for (var a = "chunkCSS/" + ({
 					Acknowledgements: "Acknowledgements",
 					AdminPanel: "AdminPanel",
 					Appeal: "Appeal",
@@ -646,32 +646,32 @@
 					"reddit-components-Governance-TransactionModals-ClaimPointsModal": "156eee6037ab5b414bb2",
 					"vendors~ModStatsChart": "31d6cfe0d16ae931b73c",
 					ModStatsChart: "4b5c7c0c7bb2ac2cd753"
-				} [e] + ".css", d = i.p + t, n = document.getElementsByTagName("link"), r = 0; r < n.length; r++) {
+				} [e] + ".css", d = i.p + a, n = document.getElementsByTagName("link"), r = 0; r < n.length; r++) {
 				var s = (l = n[r]).getAttribute("data-href") || l.getAttribute("href");
-				if ("stylesheet" === l.rel && (s === t || s === d)) return o()
+				if ("stylesheet" === l.rel && (s === a || s === d)) return o()
 			}
 			var c = document.getElementsByTagName("style");
 			for (r = 0; r < c.length; r++) {
 				var l;
-				if ((s = (l = c[r]).getAttribute("data-href")) === t || s === d) return o()
+				if ((s = (l = c[r]).getAttribute("data-href")) === a || s === d) return o()
 			}
 			var m = document.createElement("link");
 			m.rel = "stylesheet", m.type = "text/css", m.onload = o, m.onerror = function(o) {
-				var t = o && o.target && o.target.src || d,
-					n = new Error("Loading CSS chunk " + e + " failed.\n(" + t + ")");
-				n.request = t, a(n)
+				var a = o && o.target && o.target.src || d,
+					n = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
+				n.request = a, t(n)
 			}, m.href = d, document.getElementsByTagName("head")[0].appendChild(m)
 		})).then((function() {
 			d[e] = 0
 		})));
-		var a = n[e];
-		if (0 !== a)
-			if (a) o.push(a[2]);
+		var t = n[e];
+		if (0 !== t)
+			if (t) o.push(t[2]);
 			else {
-				var t = new Promise((function(o, t) {
-					a = n[e] = [o, t]
+				var a = new Promise((function(o, a) {
+					t = n[e] = [o, a]
 				}));
-				o.push(a[2] = t);
+				o.push(t[2] = a);
 				var r, s = document.createElement("script");
 				s.charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.src = function(e) {
 					return i.p + "" + ({
@@ -909,7 +909,7 @@
 						FrontpageSidebar: "ff949ba7da71c6c61387",
 						Frontpage: "e7d8166199af09589cb8",
 						Topic: "bb37a2e30a2912e17424",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "03ec45a3d884429375bf",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "92b4dc78663fb8015d29",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "b0250160ee964d0b38f7",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "71fcc6fc754f5baee8a5",
 						PostDraft: "d2d6c60f7d8303f78c3c",
@@ -1085,7 +1085,7 @@
 						RichTextEditor: "86d76e074449a76e30df",
 						EconomicsEntryPointsCommentFlatlistSupportCTA: "315926d091c014aa9a76",
 						EconomicsEntryPointsPostFlatlistSupportCTA: "261e6a2bead2ebdecad1",
-						LiveVideoPlayer: "449ae78f7a966c63a298",
+						LiveVideoPlayer: "f49da8eb397ed0b82dfd",
 						AwardCreationModal: "4cdc36f48d861687b4fa",
 						"reddit-components-ModHub-Content-ModQueue": "68679c3e74cd32849b87",
 						"reddit-components-Wiki-ModHubWikiManagement": "87acce897a3790cbce1b",
@@ -1115,12 +1115,12 @@
 				var c = new Error;
 				r = function(o) {
 					s.onerror = s.onload = null, clearTimeout(l);
-					var a = n[e];
-					if (0 !== a) {
-						if (a) {
-							var t = o && ("load" === o.type ? "missing" : o.type),
+					var t = n[e];
+					if (0 !== t) {
+						if (t) {
+							var a = o && ("load" === o.type ? "missing" : o.type),
 								d = o && o.target && o.target.src;
-							c.message = "Loading chunk " + e + " failed.\n(" + t + ": " + d + ")", c.name = "ChunkLoadError", c.type = t, c.request = d, a[1](c)
+							c.message = "Loading chunk " + e + " failed.\n(" + a + ": " + d + ")", c.name = "ChunkLoadError", c.type = a, c.request = d, t[1](c)
 						}
 						n[e] = void 0
 					}
@@ -1133,10 +1133,10 @@
 				}), 12e4);
 				s.onerror = s.onload = r, document.head.appendChild(s)
 			} return Promise.all(o)
-	}, i.m = e, i.c = t, i.d = function(e, o, a) {
+	}, i.m = e, i.c = a, i.d = function(e, o, t) {
 		i.o(e, o) || Object.defineProperty(e, o, {
 			enumerable: !0,
-			get: a
+			get: t
 		})
 	}, i.r = function(e) {
 		"undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -1147,15 +1147,15 @@
 	}, i.t = function(e, o) {
 		if (1 & o && (e = i(e)), 8 & o) return e;
 		if (4 & o && "object" == typeof e && e && e.__esModule) return e;
-		var a = Object.create(null);
-		if (i.r(a), Object.defineProperty(a, "default", {
+		var t = Object.create(null);
+		if (i.r(t), Object.defineProperty(t, "default", {
 				enumerable: !0,
 				value: e
 			}), 2 & o && "string" != typeof e)
-			for (var t in e) i.d(a, t, function(o) {
+			for (var a in e) i.d(t, a, function(o) {
 				return e[o]
-			}.bind(null, t));
-		return a
+			}.bind(null, a));
+		return t
 	}, i.n = function(e) {
 		var o = e && e.__esModule ? function() {
 			return e.default
@@ -1173,6 +1173,6 @@
 	s.push = o, s = s.slice();
 	for (var l = 0; l < s.length; l++) o(s[l]);
 	var m = c;
-	a()
+	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.21e36399693a991f4ae2.js.map
+//# sourceMappingURL=runtime~Reddit.aecdd05f3d071fc4e5b4.js.map
