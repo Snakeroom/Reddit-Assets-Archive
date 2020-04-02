@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.97994445c5d102b867d9.js
-// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.81fa871af9f1d1267e97.js
+// Retrieved at 4/2/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5365,37 +5365,36 @@
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
-							includeMessage: a,
-							message: u,
-							selectedAward: p
+							message: a,
+							selectedAward: u
 						} = O.gild;
-						if (!e || !p.id) return void o(Object(c.stripeApiError)(r.fbt._("Gilding unknown thing", null, {
+						if (!e || !u.id) return void o(Object(c.stripeApiError)(r.fbt._("Gilding unknown thing", null, {
 							hk: "Qd6mo"
 						})));
-						const f = p.id,
-							I = p.pennyPrice;
-						if (!I) return void o(Object(c.stripeApiError)(r.fbt._("Trying to purchase award with zero price", null, {
+						const p = u.id,
+							f = u.pennyPrice;
+						if (!f) return void o(Object(c.stripeApiError)(r.fbt._("Trying to purchase award with zero price", null, {
 							hk: "3FhAjz"
 						})));
-						const S = {
-								gildType: f,
-								includeMessage: a,
+						const I = {
+								gildType: p,
+								includeMessage: !!a,
 								isAnonymous: i,
-								message: u
+								message: a
 							},
-							v = await Object(d.f)({
+							S = await Object(d.f)({
 								context: m(),
 								correlationId: g,
-								gildParams: S,
+								gildParams: I,
 								isOldReddit: t,
-								pennies: I,
+								pennies: f,
 								rememberCard: j,
 								savedCardId: E || void 0,
 								thingId: e,
 								token: y
 							});
-						if (v.error) {
-							const e = Object(s.a)(h, v.error, v.status);
+						if (S.error) {
+							const e = Object(s.a)(h, S.error, S.status);
 							return void o(Object(c.stripeApiError)(e))
 						} {
 							const {
@@ -5407,9 +5406,9 @@
 							const {
 								all_awardings: r,
 								coins: s
-							} = v.body;
+							} = S.body;
 							return void o(t({
-								awardId: f,
+								awardId: p,
 								awardings: r && r.length ? Object(l.a)(r).map(e => ({
 									award: Object(b.e)(e),
 									total: e.count
@@ -5463,26 +5462,25 @@
 					try {
 						const {
 							gildModalThingId: o,
-							includeMessage: i,
-							isAnonymous: d,
-							message: u,
-							selectedAward: f
+							isAnonymous: i,
+							message: d,
+							selectedAward: u
 						} = m.gild;
-						if (!o || !f) return void t(Object(c.paypalApiError)(r.fbt._("Gilding unknown post or comment", null, {
+						if (!o || !u) return void t(Object(c.paypalApiError)(r.fbt._("Gilding unknown post or comment", null, {
 							hk: "4DkIS3"
 						})));
-						const h = f.id,
-							y = await Object(a.e)({
-								awardId: h,
+						const f = u.id,
+							h = await Object(a.e)({
+								awardId: f,
 								context: p(),
 								orderId: e,
 								thingId: o,
-								message: i ? u : "",
-								isAnonymous: d,
+								message: d || "",
+								isAnonymous: i,
 								correlationId: O
 							});
-						if (y.error) {
-							const e = Object(s.a)(g, y.error);
+						if (h.error) {
+							const e = Object(s.a)(g, h.error);
 							t(Object(c.paypalApiError)(e))
 						} else {
 							t(_());
@@ -5490,7 +5488,7 @@
 								all_awardings: e,
 								coins: r,
 								subreddit_coins: s
-							} = y.body;
+							} = h.body;
 							t(Object(c.paymentCompleted)({
 								coins: r,
 								confirmed: !0
@@ -5499,7 +5497,7 @@
 								gildSuccessful: i
 							} = await n.e("gildActions").then(n.bind(null, "./src/reddit/actions/gold/gild.ts"));
 							t(i({
-								awardId: h,
+								awardId: f,
 								awardings: Object(l.a)(e).map(e => ({
 									award: Object(b.e)(e),
 									total: e.count
@@ -62162,4 +62160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.97994445c5d102b867d9.js.map
+//# sourceMappingURL=Governance~Reddit.81fa871af9f1d1267e97.js.map
