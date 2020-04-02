@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8438bc689c7b505989d4.js
-// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f3d8f1f9439c9a7d8488.js
+// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1898,7 +1898,7 @@
 			class os extends m.a.Component {
 				constructor() {
 					super(...arguments), this.subscriptions = [], this.closeModal = () => {
-						this.props.closeModal(this.props.path), this.props.path === T.b.Register && Object(U.f)(this.props.frontpageSignupVariant) && $t.a.throttleFeature(Xt.H), this.props.sendEvent(te(this.subscriptions))
+						this.props.closeModal(this.props.path), this.props.path === T.b.Register && Object(U.f)(this.props.frontpageSignupVariant) && $t.a.throttleFeature(Xt.J), this.props.sendEvent(te(this.subscriptions))
 					}, this.updateSubscriptions = e => {
 						this.subscriptions = e
 					}
@@ -4318,9 +4318,9 @@
 				Ar = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Lr = s("./src/reddit/selectors/experiments/trending.ts"),
 				Fr = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const Dr = e => Object(wt.D)(e) || Xt.Rb.Treatment1 === Object(Fr.c)(e, {
+			const Dr = e => Object(wt.D)(e) || Xt.Tb.Treatment1 === Object(Fr.c)(e, {
 				experimentEligibilitySelector: Fr.a,
-				experimentName: Xt.Ob
+				experimentName: Xt.Qb
 			});
 			var Br = s("./src/reddit/selectors/searchResults.ts"),
 				Ur = s("./src/reddit/selectors/tooltip.ts"),
@@ -10297,8 +10297,8 @@
 			const dn = {
 					displayDelay: 15,
 					displayOnRoutes: [f.Ab.SUBREDDIT, f.Ab.COMMENTS],
-					experimentName: rn.V,
-					experimentVariant: rn.bb.On,
+					experimentName: rn.X,
+					experimentVariant: rn.db.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -10463,8 +10463,8 @@
 					const r = (e => e.tracing.traceId)(n.getState());
 					if (r && (e => Object(on.c)(e, {
 							experimentEligibilitySelector: on.a,
-							experimentName: rn.k
-						}) === rn.q.Enabled)(n.getState())) {
+							experimentName: rn.m
+						}) === rn.s.Enabled)(n.getState())) {
 						pn.b.enableTracing(!0);
 						const e = pn.b.createTraceFromId(r);
 						pn.b.setParent(e)
@@ -12000,21 +12000,21 @@
 				m = s("./src/reddit/selectors/experiments/utils.ts"),
 				u = s("./src/reddit/selectors/user.ts");
 			const p = Object(a.a)(e => Object(l.c)(e, {
-					experimentName: i.w,
+					experimentName: i.y,
 					experimentEligibilitySelector: e => !Object(u.F)(e)
 				}), m.a),
-				h = Object(a.a)(p, e => e === i.C.SSO),
+				h = Object(a.a)(p, e => e === i.E.SSO),
 				b = e => e.accountManagerModalData.actionSource,
 				g = e => e.accountManagerModalData.redirectUrl,
 				f = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, h, d.b, (e, t, s, a, c, d) => {
 					let l = "".concat(n.a.accountManagerOrigin).concat(e);
 					return a && (l = Object(r.a)(l, {
-						[i.H]: a,
+						[i.J]: a,
 						uiMode: t
 					})), c && (l = Object(r.a)(l, {
-						[i.w]: c
+						[i.y]: c
 					})), d && (l = Object(r.a)(l, {
-						[i.jb]: d
+						[i.lb]: d
 					})), e === o.b.Index || e === o.b.ChangePassword ? l : l = Object(r.a)(l, {
 						actionSource: s
 					})
@@ -12037,19 +12037,19 @@
 				o = s("./src/reddit/selectors/experiments/utils.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const c = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: a.x,
+					experimentName: a.z,
 					experimentEligibilitySelector: i.F
 				}), o.a),
 				d = Object(n.a)(e => Object(r.c)(e, {
-					experimentName: a.y,
+					experimentName: a.A,
 					experimentEligibilitySelector: e => !Object(i.F)(e)
 				}), o.a),
 				l = Object(n.a)(c, d, (e, t) => e || t),
-				m = e => e === a.E.BadgeCounterBottom || e === a.E.BadgeOnlyBottom || e === a.F.BadgeOnlyBottom,
-				u = e => e === a.E.BadgeCounterTop || e === a.F.BadgeOnlyTop,
+				m = e => e === a.G.BadgeCounterBottom || e === a.G.BadgeOnlyBottom || e === a.H.BadgeOnlyBottom,
+				u = e => e === a.G.BadgeCounterTop || e === a.H.BadgeOnlyTop,
 				p = e => {
 					const t = c(e);
-					return t === a.E.BadgeCounterBottom || t === a.E.BadgeCounterTop
+					return t === a.G.BadgeCounterBottom || t === a.G.BadgeCounterTop
 				}
 		},
 		"./src/reddit/selectors/experiments/categories.ts": function(e, t, s) {
@@ -12061,9 +12061,9 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(r.D)(e) || n.n.Treatment1 === Object(a.c)(e, {
+				return Object(r.D)(e) || n.p.Treatment1 === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.g
+					experimentName: n.i
 				})
 			}
 		},
@@ -12076,13 +12076,13 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.fb.Enabled === Object(a.c)(e, {
+			const r = e => n.hb.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.db
+					experimentName: n.fb
 				}),
-				o = e => n.eb.Enabled === Object(a.c)(e, {
+				o = e => n.gb.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.cb
+					experimentName: n.eb
 				})
 		},
 		"./src/reddit/selectors/experiments/responsiveSettings.ts": function(e, t, s) {
@@ -12099,10 +12099,10 @@
 				i = s("./src/reddit/selectors/experiments/utils.ts"),
 				c = s("./src/reddit/selectors/user.ts");
 			const d = Object(n.a)((e, t) => Object(o.c)(e, {
-					experimentName: a.jb,
+					experimentName: a.lb,
 					experimentEligibilitySelector: e => (Object(c.F)(e) || Object(c.G)(e)) && Object(r.I)(t.pageLayer)
 				}), i.a),
-				l = Object(n.a)(d, e => e === a.lb.Treatment)
+				l = Object(n.a)(d, e => e === a.nb.Treatment)
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
@@ -12112,9 +12112,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.D)(e) || !(n.Qb.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.D)(e) || !(n.Sb.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Nb
+				experimentName: n.Pb
 			}))
 		},
 		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
@@ -12126,9 +12126,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Tb.All === Object(a.c)(e, {
+			const r = e => n.Vb.All === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Sb
+					experimentName: n.Ub
 				}),
 				o = ["52weeksofcooking", "advancedrunning", "amateur_boxing", "animation", "bathandbodyworks", "bbq", "beer", "beerporn", "blacksmith", "boostedboards", "campinggear", "chipotle", "cookingforbeginners", "decidingtobebetter", "declutter", "dermatology", "dominos", "eczema", "engagementrings", "family", "fermentation", "findfashion", "fitbit", "fixit", "fondanthate", "foodhacks", "glossier", "healthyfood", "homegym", "hotdogs", "hotpeppers", "hotsauce", "howto", "instantpot", "interiordesign", "internetparents", "jeffreestarcosmetics", "knifemaking", "kombucha", "love", "makeupflatlays", "makeuplounge", "malegrooming", "mead", "moissanite", "mommit", "muaythai", "nanny", "narcissisticparents", "outdoors", "ramen", "rawdenim", "recipes", "redwingshoes", "rowing", "sarahsnark", "skincare_addiction", "skookum", "slowcooking", "spicy", "starbucksbaristas", "steak", "swimming", "tacobell", "talesfromthepizzaguy", "traderjoes", "triathlon", "veganfoodporn", "veganrecipes", "weddingsunder10k", "whiskeytribe", "whiskyporn", "wicked_edge", "womenshealth", "xxketo4u2", "yeezys"]
 		},
@@ -12272,4 +12272,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.8438bc689c7b505989d4.js.map
+//# sourceMappingURL=Reddit.f3d8f1f9439c9a7d8488.js.map

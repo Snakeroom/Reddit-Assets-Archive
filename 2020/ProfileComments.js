@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.40161105d1d22d0f0e36.js
-// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.389cee6174287959033a.js
+// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -10303,7 +10303,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Zb)(t)
+				return !!t && !Object(n.bc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -10316,9 +10316,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.rb
+					experimentName: n.tb
 				});
-				return Object(n.Zb)(t) ? void 0 : t
+				return Object(n.bc)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -10335,4 +10335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.40161105d1d22d0f0e36.js.map
+//# sourceMappingURL=ProfileComments.389cee6174287959033a.js.map
