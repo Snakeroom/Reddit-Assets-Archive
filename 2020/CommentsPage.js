@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.43550d05ef2d2ec74a58.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.35891b7d57701e8beb37.js
+// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -17235,7 +17235,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Xb)(t)
+				return !!t && !Object(n.Zb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -17250,7 +17250,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.rb
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Zb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -17267,4 +17267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.43550d05ef2d2ec74a58.js.map
+//# sourceMappingURL=CommentsPage.35891b7d57701e8beb37.js.map

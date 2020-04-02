@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.8cf2e3aa29eab9736174.js
-// Retrieved at 4/2/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.c97a870d5f40667f68a3.js
+// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -820,7 +820,7 @@
 						experimentEligibilitySelector: O.a,
 						experimentName: _.hb
 					});
-					return Object(_.Xb)(t) ? void 0 : t
+					return Object(_.Zb)(t) ? void 0 : t
 				},
 				R = e => e === _.kb.On,
 				j = e => {
@@ -828,7 +828,7 @@
 						experimentEligibilitySelector: O.a,
 						experimentName: _.ib
 					});
-					return Object(_.Xb)(t) ? void 0 : t
+					return Object(_.Zb)(t) ? void 0 : t
 				},
 				H = e => e === _.kb.On;
 			var A = s("./src/reddit/selectors/experiments/utils.ts");
@@ -838,11 +838,11 @@
 				}), A.a),
 				D = Object(u.a)(I, (function(e) {
 					switch (e) {
-						case _.Vb.BufferTwoSeconds:
+						case _.Wb.BufferTwoSeconds:
 							return 2;
-						case _.Vb.BufferFiveSeconds:
+						case _.Wb.BufferFiveSeconds:
 							return 5;
-						case _.Vb.BufferTenSeconds:
+						case _.Wb.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1766,7 +1766,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("1b95806-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("d7b8028-production", " ").concat(t);
 									return i && (s += " [".concat(_.Ub, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2261,4 +2261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.8cf2e3aa29eab9736174.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.c97a870d5f40667f68a3.js.map

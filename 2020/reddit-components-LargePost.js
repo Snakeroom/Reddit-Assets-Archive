@@ -1,9 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a1d37c7251514ede84bb.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.74a84d211cb94059af91.js
+// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return w
+			}));
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				n = s("./node_modules/react-dom/index.js"),
@@ -151,9 +154,7 @@
 						}) : null
 					}, o
 				}(r.a.Component);
-			f(w, "displayName", "IntersectionObserver"), s.d(t, "a", (function() {
-				return w
-			}))
+			f(w, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, s) {
 			"use strict";
@@ -1466,4 +1467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.a1d37c7251514ede84bb.js.map
+//# sourceMappingURL=reddit-components-LargePost.74a84d211cb94059af91.js.map

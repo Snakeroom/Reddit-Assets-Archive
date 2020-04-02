@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f49da8eb397ed0b82dfd.js
-// Retrieved at 4/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.3b56fa35a09ac3cf5e4d.js
+// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -391,7 +391,19 @@
 		},
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
+				return f
+			})), s.d(t, "Overlay", (function() {
+				return _
+			})), s.d(t, "LiveIndicator", (function() {
+				return I
+			})), s.d(t, "Duration", (function() {
+				return P
+			})), s.d(t, "MutedToggleButton", (function() {
+				return O
+			})), s.d(t, "PausedToggleButton", (function() {
+				return T
+			}));
 			var r = s("./node_modules/react/index.js"),
 				a = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
@@ -410,19 +422,6 @@
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var y = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
 				R = s.n(y);
-			s.d(t, "LiveVideoPlayer", (function() {
-				return f
-			})), s.d(t, "Overlay", (function() {
-				return _
-			})), s.d(t, "LiveIndicator", (function() {
-				return I
-			})), s.d(t, "Duration", (function() {
-				return P
-			})), s.d(t, "MutedToggleButton", (function() {
-				return O
-			})), s.d(t, "PausedToggleButton", (function() {
-				return T
-			}));
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = Object(n.c)({
@@ -643,4 +642,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.f49da8eb397ed0b82dfd.js.map
+//# sourceMappingURL=LiveVideoPlayer.3b56fa35a09ac3cf5e4d.js.map

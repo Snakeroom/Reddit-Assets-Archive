@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.86999a1a160c235dd026.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.392d77d7423ebcd28efc.js
+// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -9356,7 +9356,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.Xb)(t)
+				return !!t && !Object(n.Zb)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
@@ -9371,7 +9371,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.rb
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Zb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/experiments/railsSearchResults.ts": function(e, t, s) {
@@ -9400,4 +9400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.86999a1a160c235dd026.js.map
+//# sourceMappingURL=SearchResults.392d77d7423ebcd28efc.js.map

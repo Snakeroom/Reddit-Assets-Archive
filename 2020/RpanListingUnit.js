@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2f253dafe9e8045dfb5c.js
-// Retrieved at 4/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.abbadf28d4024da66fb5.js
+// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -420,6 +420,25 @@
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return E
+			})), s.d(t, "b", (function() {
+				return x
+			})), s.d(t, "c", (function() {
+				return O
+			})), s.d(t, "d", (function() {
+				return g
+			})), s.d(t, "e", (function() {
+				return C
+			})), s.d(t, "f", (function() {
+				return j
+			})), s.d(t, "g", (function() {
+				return w
+			})), s.d(t, "h", (function() {
+				return N
+			})), s.d(t, "i", (function() {
+				return R
+			}));
 			var r = s("./node_modules/react/index.js"),
 				a = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
@@ -700,25 +719,6 @@
 						type: e.subreddit.type
 					} : {}
 				}
-			}));
-			s.d(t, "a", (function() {
-				return E
-			})), s.d(t, "b", (function() {
-				return x
-			})), s.d(t, "c", (function() {
-				return O
-			})), s.d(t, "d", (function() {
-				return g
-			})), s.d(t, "e", (function() {
-				return C
-			})), s.d(t, "f", (function() {
-				return j
-			})), s.d(t, "g", (function() {
-				return w
-			})), s.d(t, "h", (function() {
-				return N
-			})), s.d(t, "i", (function() {
-				return R
 			}))
 		},
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/index.tsx": function(e, t, s) {
@@ -1276,4 +1276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.2f253dafe9e8045dfb5c.js.map
+//# sourceMappingURL=RpanListingUnit.abbadf28d4024da66fb5.js.map
