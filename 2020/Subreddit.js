@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d7c007fa66cf64575deb.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.82a6654f2ab88e1e8d47.js
+// Retrieved at 4/2/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1208,7 +1208,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => s.e("reddit-components-Governance-ClaimPointsBanner").then(s.bind(null, "./src/reddit/components/Governance/ClaimPointsBanner/index.tsx")),
+				importAsync: () => Promise.all([s.e("vendors~reddit-components-Governance-ClaimPointsBanner"), s.e("reddit-components-Governance-ClaimPointsBanner")]).then(s.bind(null, "./src/reddit/components/Governance/ClaimPointsBanner/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -7342,4 +7342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.d7c007fa66cf64575deb.js.map
+//# sourceMappingURL=Subreddit.82a6654f2ab88e1e8d47.js.map

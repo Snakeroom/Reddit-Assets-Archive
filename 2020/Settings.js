@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.66c19283c9f56e74feda.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.63a4e99450079d9cd353.js
+// Retrieved at 4/2/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -5848,15 +5848,15 @@
 				fbt: Ta
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const Ma = Object(o.c)({
-				username: e => {
+				userId: e => {
 					const t = Object(E.i)(e);
-					return t ? Object(I.f)(t) : ""
+					return t ? t.id : ""
 				}
 			});
 			var Aa = Object(r.b)(Ma)((function(e) {
 					const {
 						subreddit: t,
-						username: n
+						userId: n
 					} = e, s = Object(Sa.a)("http://www.reddit.com/wallet/unsubscribe", {
 						u: n,
 						s: t.id
@@ -6429,4 +6429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.66c19283c9f56e74feda.js.map
+//# sourceMappingURL=Settings.63a4e99450079d9cd353.js.map
