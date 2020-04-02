@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b0250160ee964d0b38f7.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.54184a1b0232579da6ee.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1153,6 +1153,25 @@
 		},
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "c", (function() {
+				return W
+			})), n.d(t, "d", (function() {
+				return J
+			})), n.d(t, "a", (function() {
+				return V
+			})), n.d(t, "b", (function() {
+				return A
+			})), n.d(t, "f", (function() {
+				return Y
+			})), n.d(t, "h", (function() {
+				return G
+			})), n.d(t, "g", (function() {
+				return K
+			})), n.d(t, "i", (function() {
+				return q
+			})), n.d(t, "e", (function() {
+				return Q
+			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
 				o = n.n(r),
@@ -1328,25 +1347,6 @@
 					}
 				}),
 				F = n("./src/reddit/helpers/richTextJson/index.ts");
-			n.d(t, "c", (function() {
-				return W
-			})), n.d(t, "d", (function() {
-				return J
-			})), n.d(t, "a", (function() {
-				return V
-			})), n.d(t, "b", (function() {
-				return A
-			})), n.d(t, "f", (function() {
-				return Y
-			})), n.d(t, "h", (function() {
-				return G
-			})), n.d(t, "g", (function() {
-				return K
-			})), n.d(t, "i", (function() {
-				return q
-			})), n.d(t, "e", (function() {
-				return Q
-			}));
 			const W = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
@@ -1807,4 +1807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.b0250160ee964d0b38f7.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.54184a1b0232579da6ee.js.map

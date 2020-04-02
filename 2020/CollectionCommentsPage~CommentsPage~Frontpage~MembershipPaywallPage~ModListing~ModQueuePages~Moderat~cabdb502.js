@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.de2c3efb86f28a80f721.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.aedc277825d9837b97b0.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -51,6 +51,9 @@
 		},
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, i) {
 			"use strict";
+			i.d(t, "a", (function() {
+				return Q
+			}));
 			var s = i("./node_modules/lodash/debounce.js"),
 				n = i.n(s),
 				l = i("./node_modules/lodash/isNil.js"),
@@ -225,9 +228,6 @@
 				_ = i("./src/telemetry/helpers/sendTiming.ts"),
 				A = i("./src/reddit/components/Scroller/Simple.m.less"),
 				N = i.n(A);
-			i.d(t, "a", (function() {
-				return Q
-			}));
 			const U = z.g,
 				D = 5 * u.G,
 				B = 3,
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.de2c3efb86f28a80f721.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.aedc277825d9837b97b0.js.map

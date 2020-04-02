@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.d06448476678bab192c5.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.2509b4cd8a3f6716e154.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -372,6 +372,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, a) {
 			"use strict";
+			a.d(t, "a", (function() {
+				return C
+			})), a.d(t, "c", (function() {
+				return w
+			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/lodash/uniqueId.js"),
 				r = a.n(s),
@@ -411,11 +416,6 @@
 				}),
 				N = a("./src/reddit/controls/ErrorText/index.m.less"),
 				I = a.n(N);
-			a.d(t, "a", (function() {
-				return C
-			})), a.d(t, "c", (function() {
-				return w
-			}));
 			const _ = Object(m.c)({
 				activeModalId: h.a
 			});
@@ -730,4 +730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxManageModal.d06448476678bab192c5.js.map
+//# sourceMappingURL=HarbergerTaxManageModal.2509b4cd8a3f6716e154.js.map

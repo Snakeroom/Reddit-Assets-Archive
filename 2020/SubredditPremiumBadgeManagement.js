@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.b79736ef2b6f5fc3ed08.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e39f42aa26a75080e5b9.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -50,6 +50,13 @@
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, a) {
 			"use strict";
+			a.d(t, "b", (function() {
+				return O
+			})), a.d(t, "c", (function() {
+				return _
+			})), a.d(t, "a", (function() {
+				return S
+			}));
 			var s = a("./node_modules/react/index.js"),
 				n = a.n(s),
 				c = a("./node_modules/react-redux/es/index.js"),
@@ -76,13 +83,6 @@
 				}),
 				B = a("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				f = a.n(B);
-			a.d(t, "b", (function() {
-				return O
-			})), a.d(t, "c", (function() {
-				return _
-			})), a.d(t, "a", (function() {
-				return S
-			}));
 			const x = "add-custom-badge-tooltip",
 				E = 100,
 				j = 2 * E;
@@ -2338,4 +2338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.b79736ef2b6f5fc3ed08.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.e39f42aa26a75080e5b9.js.map

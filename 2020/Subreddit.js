@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5d5e886e90c0e190fd26.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d7c007fa66cf64575deb.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1817,6 +1817,25 @@
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return y
+			})), s.d(t, "b", (function() {
+				return v
+			})), s.d(t, "c", (function() {
+				return O
+			})), s.d(t, "d", (function() {
+				return _
+			})), s.d(t, "e", (function() {
+				return E
+			})), s.d(t, "f", (function() {
+				return j
+			})), s.d(t, "g", (function() {
+				return N
+			})), s.d(t, "h", (function() {
+				return w
+			})), s.d(t, "i", (function() {
+				return S
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
@@ -2097,25 +2116,6 @@
 						type: e.subreddit.type
 					} : {}
 				}
-			}));
-			s.d(t, "a", (function() {
-				return y
-			})), s.d(t, "b", (function() {
-				return v
-			})), s.d(t, "c", (function() {
-				return O
-			})), s.d(t, "d", (function() {
-				return _
-			})), s.d(t, "e", (function() {
-				return E
-			})), s.d(t, "f", (function() {
-				return j
-			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "h", (function() {
-				return w
-			})), s.d(t, "i", (function() {
-				return S
 			}))
 		},
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -2186,6 +2186,9 @@
 		},
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return E
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -2255,11 +2258,8 @@
 			});
 			var v = e => r.a.createElement(f, e),
 				O = s("./src/reddit/helpers/trackers/rpan.ts");
-			const C = e => e === m.g.Classic ? 88 : e === m.g.Compact ? 42 : 340;
-			s.d(t, "a", (function() {
-				return E
-			}));
-			const _ = new a.a(20),
+			const C = e => e === m.g.Classic ? 88 : e === m.g.Compact ? 42 : 340,
+				_ = new a.a(20),
 				E = e => {
 					const t = "rpan-".concat(e.layout, "-").concat(e.listingKey),
 						s = _.get(t);
@@ -3090,6 +3090,9 @@
 		},
 		"./src/reddit/components/SubredditChannelList/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return Z
+			}));
 			var n = s("./node_modules/lodash/orderBy.js"),
 				r = s.n(n),
 				a = s("./node_modules/react/index.js"),
@@ -3119,9 +3122,6 @@
 				k = s("./src/reddit/selectors/user.ts"),
 				P = s("./src/reddit/components/SubredditChannelList/index.m.less"),
 				I = s.n(P);
-			s.d(t, "a", (function() {
-				return Z
-			}));
 			const {
 				fbt: T
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), L = c.a.wrapped(g.f, "ModalFormItem", I.a), B = c.a.wrapped(v.f, "PrimaryButton", I.a), F = c.a.wrapped(g.m, "ModalText", I.a), A = c.a.a("ItemLink", I.a), D = c.a.p("Detail", I.a), R = c.a.p("DescText", I.a), W = c.a.div("Title", I.a), M = c.a.div("Header", I.a), U = c.a.wrapped(_.a, "ChatIcon", I.a), H = c.a.wrapped(E.a, "PlanetIcon", I.a), V = c.a.wrapped(C.a, "Pencil", I.a), G = c.a.wrapped(e => {
@@ -4770,6 +4770,11 @@
 		},
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return k
+			})), s.d(t, "a", (function() {
+				return I
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
@@ -4814,11 +4819,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "b", (function() {
-				return k
-			})), s.d(t, "a", (function() {
-				return I
-			}));
 			const k = e => r.a.createElement(x.a, {
 					className: Object(c.a)(w.a.Container, e.className),
 					noGradient: !0,
@@ -5213,6 +5213,9 @@
 		},
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return N
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				a = s("./src/app/strings/index.ts"),
@@ -5273,9 +5276,6 @@
 					}) : e.rule.description))
 				}
 			}
-			s.d(t, "a", (function() {
-				return N
-			}));
 			const N = Object(i.a)(e => e.rules.length > 0 ? r.a.createElement(o.a, {
 				className: e.className,
 				styles: e.styles,
@@ -7085,19 +7085,6 @@
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/lib/objectSelector/index.ts"),
-				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				o = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				i = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
-				d = s("./src/reddit/selectors/posts.ts"),
-				c = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				m = s("./node_modules/lodash/memoize.js");
-			const u = e => e.publicAccessNetwork.listings,
-				p = s.n(m)()(e => Object(r.a)(Object(n.a)(u, t => e && t.hasOwnProperty(e) ? t[e] : [])));
-			var b = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			s.d(t, "k", (function() {
 				return _
 			})), s.d(t, "l", (function() {
@@ -7125,6 +7112,19 @@
 			})), s.d(t, "d", (function() {
 				return G
 			}));
+			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = s("./node_modules/reselect/es/index.js"),
+				r = s("./src/lib/objectSelector/index.ts"),
+				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				o = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				i = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
+				d = s("./src/reddit/selectors/posts.ts"),
+				c = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				m = s("./node_modules/lodash/memoize.js");
+			const u = e => e.publicAccessNetwork.listings,
+				p = s.n(m)()(e => Object(r.a)(Object(n.a)(u, t => e && t.hasOwnProperty(e) ? t[e] : [])));
+			var b = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			const h = e => e.publicAccessNetwork.reports.reported,
 				g = e => e.publicAccessNetwork.history,
 				x = e => e.publicAccessNetwork.history.cursor,
@@ -7342,4 +7342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.5d5e886e90c0e190fd26.js.map
+//# sourceMappingURL=Subreddit.d7c007fa66cf64575deb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.2369e69670aa490d8854.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.a98b9eaf05d5d959ab5e.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, n) {
@@ -203,6 +203,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return j
+			})), n.d(t, "c", (function() {
+				return O
+			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/uniqueId.js"),
 				a = n.n(r),
@@ -242,11 +247,6 @@
 				}),
 				C = n("./src/reddit/controls/ErrorText/index.m.less"),
 				N = n.n(C);
-			n.d(t, "a", (function() {
-				return j
-			})), n.d(t, "c", (function() {
-				return O
-			}));
 			const w = Object(u.c)({
 				activeModalId: h.a
 			});
@@ -834,4 +834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.2369e69670aa490d8854.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.a98b9eaf05d5d959ab5e.js.map

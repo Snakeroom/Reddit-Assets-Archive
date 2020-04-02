@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d563ca4973c031dc028c.js
-// Retrieved at 3/31/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0499653262b1e877ed2e.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -34,17 +34,6 @@
 		},
 		"./src/lib/linkMatchers/index.ts": function(t, e, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
-			var o = n("./node_modules/linkify-it/index.js"),
-				s = n.n(o),
-				r = n("./node_modules/tlds/index.js"),
-				i = n.n(r),
-				c = n("./src/lib/linkMatchers/customLinks.ts"),
-				a = n("./node_modules/lodash/values.js"),
-				l = n.n(a);
-			const d = t => l()(c.b).includes(t.substring(1)),
-				u = ["//", "ftp:", "http:", "https:", "mailto:"],
-				p = t => ((t, e) => (e.forEach(e => t.add(e, null)), t))(t, u);
 			n.d(e, "e", (function() {
 				return h
 			})), n.d(e, "d", (function() {
@@ -64,7 +53,18 @@
 			})), n.d(e, "h", (function() {
 				return C
 			}));
-			const h = s()().tlds(i.a).set({
+			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
+			var o = n("./node_modules/linkify-it/index.js"),
+				s = n.n(o),
+				r = n("./node_modules/tlds/index.js"),
+				i = n.n(r),
+				c = n("./src/lib/linkMatchers/customLinks.ts"),
+				a = n("./node_modules/lodash/values.js"),
+				l = n.n(a);
+			const d = t => l()(c.b).includes(t.substring(1)),
+				u = ["//", "ftp:", "http:", "https:", "mailto:"],
+				p = t => ((t, e) => (e.forEach(e => t.add(e, null)), t))(t, u),
+				h = s()().tlds(i.a).set({
 					fuzzyIP: !0
 				}),
 				g = s()().set({
@@ -112,6 +112,15 @@
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(t, e, n) {
 			"use strict";
+			n.d(e, "d", (function() {
+				return R
+			})), n.d(e, "c", (function() {
+				return B
+			})), n.d(e, "a", (function() {
+				return _
+			})), n.d(e, "b", (function() {
+				return I
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/uuid/v4.js"),
@@ -191,15 +200,6 @@
 				C = n("./src/reddit/models/Toast/index.ts"),
 				O = n("./src/reddit/selectors/postCreations.ts"),
 				k = n("./src/reddit/actions/postCreation/constants.ts");
-			n.d(e, "d", (function() {
-				return R
-			})), n.d(e, "c", (function() {
-				return B
-			})), n.d(e, "a", (function() {
-				return _
-			})), n.d(e, "b", (function() {
-				return I
-			}));
 			const T = Object(a.a)(k.v),
 				v = Object(a.a)(k.w),
 				j = Object(a.a)(k.u),
@@ -540,11 +540,6 @@
 		},
 		"./src/reddit/components/RichTextEditor/DragController/helpers.ts": function(t, e, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/es6.regexp.split.js");
-			var o = n("./node_modules/lodash/includes.js"),
-				s = n.n(o);
-			var r = n("./src/reddit/helpers/dom/index.ts"),
-				i = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
 			n.d(e, "b", (function() {
 				return h
 			})), n.d(e, "c", (function() {
@@ -552,6 +547,11 @@
 			})), n.d(e, "a", (function() {
 				return m
 			}));
+			n("./node_modules/core-js/modules/es6.regexp.split.js");
+			var o = n("./node_modules/lodash/includes.js"),
+				s = n.n(o);
+			var r = n("./src/reddit/helpers/dom/index.ts"),
+				i = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
 			const c = t => t.className.indexOf("public-DraftEditor-content") >= 0,
 				a = t => !!t.parentElement && !!t.parentElement.parentElement && c(t.parentElement.parentElement),
 				l = t => !(!t.dataset.block || !t.dataset.offsetKey),
@@ -899,6 +899,31 @@
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx": function(t, e, n) {
 			"use strict";
+			n.d(e, "f", (function() {
+				return B
+			})), n.d(e, "b", (function() {
+				return H
+			})), n.d(e, "e", (function() {
+				return z
+			})), n.d(e, "j", (function() {
+				return W
+			})), n.d(e, "g", (function() {
+				return V
+			})), n.d(e, "i", (function() {
+				return q
+			})), n.d(e, "k", (function() {
+				return G
+			})), n.d(e, "d", (function() {
+				return Q
+			})), n.d(e, "l", (function() {
+				return Y
+			})), n.d(e, "h", (function() {
+				return Z
+			})), n.d(e, "a", (function() {
+				return J
+			})), n.d(e, "c", (function() {
+				return X
+			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -961,31 +986,6 @@
 					return t
 				}).apply(this, arguments)
 			}
-			n.d(e, "f", (function() {
-				return B
-			})), n.d(e, "b", (function() {
-				return H
-			})), n.d(e, "e", (function() {
-				return z
-			})), n.d(e, "j", (function() {
-				return W
-			})), n.d(e, "g", (function() {
-				return V
-			})), n.d(e, "i", (function() {
-				return q
-			})), n.d(e, "k", (function() {
-				return G
-			})), n.d(e, "d", (function() {
-				return Q
-			})), n.d(e, "l", (function() {
-				return Y
-			})), n.d(e, "h", (function() {
-				return Z
-			})), n.d(e, "a", (function() {
-				return J
-			})), n.d(e, "c", (function() {
-				return X
-			}));
 			const w = t => i.a.wrapped(t, "Icon", j.a),
 				B = function(t) {
 					let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
@@ -1122,6 +1122,23 @@
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/index.tsx": function(t, e, n) {
 			"use strict";
+			n.d(e, "c", (function() {
+				return L
+			})), n.d(e, "g", (function() {
+				return N
+			})), n.d(e, "f", (function() {
+				return P
+			})), n.d(e, "h", (function() {
+				return U
+			})), n.d(e, "e", (function() {
+				return H
+			})), n.d(e, "a", (function() {
+				return z
+			})), n.d(e, "d", (function() {
+				return W
+			})), n.d(e, "b", (function() {
+				return V
+			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1212,23 +1229,6 @@
 					return t
 				}).apply(this, arguments)
 			}
-			n.d(e, "c", (function() {
-				return L
-			})), n.d(e, "g", (function() {
-				return N
-			})), n.d(e, "f", (function() {
-				return P
-			})), n.d(e, "h", (function() {
-				return U
-			})), n.d(e, "e", (function() {
-				return H
-			})), n.d(e, "a", (function() {
-				return z
-			})), n.d(e, "d", (function() {
-				return W
-			})), n.d(e, "b", (function() {
-				return V
-			}));
 			const A = Object(E.f)(l.a),
 				K = Object(E.f)(d.a),
 				M = t => i.a.createElement(y.a, I({}, t, {
@@ -2343,6 +2343,15 @@
 		},
 		"./src/reddit/components/RichTextEditor/helpers/modifiers.ts": function(t, e, n) {
 			"use strict";
+			n.d(e, "c", (function() {
+				return i
+			})), n.d(e, "b", (function() {
+				return c
+			})), n.d(e, "a", (function() {
+				return a
+			})), n.d(e, "d", (function() {
+				return l
+			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
 				s = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts");
 
@@ -2382,15 +2391,6 @@
 				const n = r(t, e) || t;
 				return o.Modifier.splitBlock(n, e)
 			}
-			n.d(e, "c", (function() {
-				return i
-			})), n.d(e, "b", (function() {
-				return c
-			})), n.d(e, "a", (function() {
-				return a
-			})), n.d(e, "d", (function() {
-				return l
-			}))
 		},
 		"./src/reddit/components/RichTextEditor/helpers/sliceContiguousBlocks.ts": function(t, e, n) {
 			"use strict";
@@ -7958,4 +7958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.d563ca4973c031dc028c.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.0499653262b1e877ed2e.js.map

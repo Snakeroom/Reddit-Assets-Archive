@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.c83df91d2786554bfe42.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.a5bf92f0574e27451887.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -22,22 +22,6 @@
 		},
 		"./src/reddit/actions/governance/index.ts": function(e, t, r) {
 			"use strict";
-			var s = r("./src/app/strings/index.ts"),
-				n = r("./src/lib/makeActionCreator/index.ts"),
-				o = r("./src/lib/prettyPrintNumber/index.ts"),
-				a = r("./src/reddit/actions/modal.ts"),
-				d = r("./src/reddit/actions/post.ts"),
-				i = r("./src/reddit/actions/toaster.ts"),
-				c = r("./src/config.ts"),
-				l = r("./src/reddit/endpoints/governance/requester.ts");
-			var u = r("./src/reddit/endpoints/governance/poll.ts");
-			var p = r("./src/reddit/endpoints/governance/wallet.ts"),
-				m = r("./src/reddit/models/Poll/index.ts"),
-				b = r("./src/reddit/models/Toast/index.ts"),
-				g = r("./src/reddit/models/Vote/index.ts"),
-				h = r("./src/reddit/selectors/gov.ts"),
-				v = r("./src/reddit/actions/governance/constants.ts"),
-				O = r("./src/reddit/actions/governance/errorToast.ts");
 			r.d(t, "a", (function() {
 				return f
 			})), r.d(t, "b", (function() {
@@ -59,6 +43,22 @@
 			})), r.d(t, "c", (function() {
 				return M
 			}));
+			var s = r("./src/app/strings/index.ts"),
+				n = r("./src/lib/makeActionCreator/index.ts"),
+				o = r("./src/lib/prettyPrintNumber/index.ts"),
+				a = r("./src/reddit/actions/modal.ts"),
+				d = r("./src/reddit/actions/post.ts"),
+				i = r("./src/reddit/actions/toaster.ts"),
+				c = r("./src/config.ts"),
+				l = r("./src/reddit/endpoints/governance/requester.ts");
+			var u = r("./src/reddit/endpoints/governance/poll.ts");
+			var p = r("./src/reddit/endpoints/governance/wallet.ts"),
+				m = r("./src/reddit/models/Poll/index.ts"),
+				b = r("./src/reddit/models/Toast/index.ts"),
+				g = r("./src/reddit/models/Vote/index.ts"),
+				h = r("./src/reddit/selectors/gov.ts"),
+				v = r("./src/reddit/actions/governance/constants.ts"),
+				O = r("./src/reddit/actions/governance/errorToast.ts");
 			const f = Object(n.a)(v.b),
 				x = Object(n.a)(v.c),
 				j = Object(n.a)(v.d),
@@ -195,6 +195,13 @@
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "b", (function() {
+				return w
+			})), r.d(t, "c", (function() {
+				return k
+			})), r.d(t, "a", (function() {
+				return _
+			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
 				o = r("./node_modules/react-redux/es/index.js"),
@@ -221,13 +228,6 @@
 				}),
 				f = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				x = r.n(f);
-			r.d(t, "b", (function() {
-				return w
-			})), r.d(t, "c", (function() {
-				return k
-			})), r.d(t, "a", (function() {
-				return _
-			}));
 			const j = "add-custom-badge-tooltip",
 				I = 100,
 				y = 2 * I;
@@ -1180,4 +1180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.c83df91d2786554bfe42.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.a5bf92f0574e27451887.js.map

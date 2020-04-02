@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.40229f99559d64cf5305.js
-// Retrieved at 3/31/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f7debd977c116a8a0cf1.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -483,7 +483,9 @@
 		},
 		"./src/reddit/components/CommentsChat/index.tsx": function(e, t, n) {
 			"use strict";
-			n.r(t);
+			n.r(t), n.d(t, "COMMENT_TIMESTAMP_UPDATE_INTERVAL", (function() {
+				return on
+			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
 				r = n("./node_modules/react-dom/index.js"),
@@ -1752,9 +1754,6 @@
 			}
 			var tn = en,
 				nn = n("./src/reddit/selectors/posts.ts");
-			n.d(t, "COMMENT_TIMESTAMP_UPDATE_INTERVAL", (function() {
-				return on
-			}));
 			const on = 6e4,
 				sn = (e, t, n) => {
 					let {
@@ -2050,6 +2049,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return I
+			})), n.d(t, "c", (function() {
+				return w
+			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/uniqueId.js"),
 				r = n.n(s),
@@ -2089,11 +2093,6 @@
 				}),
 				x = n("./src/reddit/controls/ErrorText/index.m.less"),
 				k = n.n(x);
-			n.d(t, "a", (function() {
-				return I
-			})), n.d(t, "c", (function() {
-				return w
-			}));
 			const E = Object(m.c)({
 				activeModalId: h.a
 			});
@@ -2386,4 +2385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.40229f99559d64cf5305.js.map
+//# sourceMappingURL=ChatPost.f7debd977c116a8a0cf1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.d260c276cf8f5d926a67.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.f8f08ce3ec51a77a15d5.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -68,6 +68,13 @@
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "b", (function() {
+				return w
+			})), r.d(t, "c", (function() {
+				return I
+			})), r.d(t, "a", (function() {
+				return P
+			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
 				s = r("./node_modules/react-redux/es/index.js"),
@@ -94,13 +101,6 @@
 				}),
 				g = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				E = r.n(g);
-			r.d(t, "b", (function() {
-				return w
-			})), r.d(t, "c", (function() {
-				return I
-			})), r.d(t, "a", (function() {
-				return P
-			}));
 			const y = "add-custom-badge-tooltip",
 				O = 100,
 				j = 2 * O;
@@ -878,6 +878,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "a", (function() {
+				return C
+			})), r.d(t, "c", (function() {
+				return T
+			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/uniqueId.js"),
 				s = r.n(a),
@@ -917,11 +922,6 @@
 				}),
 				y = r("./src/reddit/controls/ErrorText/index.m.less"),
 				O = r.n(y);
-			r.d(t, "a", (function() {
-				return C
-			})), r.d(t, "c", (function() {
-				return T
-			}));
 			const j = Object(u.c)({
 				activeModalId: h.a
 			});
@@ -1694,4 +1694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.d260c276cf8f5d926a67.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.f8f08ce3ec51a77a15d5.js.map

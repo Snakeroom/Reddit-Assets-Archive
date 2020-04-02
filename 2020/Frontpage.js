@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.e7d8166199af09589cb8.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b162410722ce18392176.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1059,6 +1059,9 @@
 		},
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return j
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1128,11 +1131,8 @@
 			});
 			var y = e => r.a.createElement(x, e),
 				_ = s("./src/reddit/helpers/trackers/rpan.ts");
-			const O = e => e === u.g.Classic ? 88 : e === u.g.Compact ? 42 : 340;
-			s.d(t, "a", (function() {
-				return j
-			}));
-			const w = new o.a(20),
+			const O = e => e === u.g.Classic ? 88 : e === u.g.Compact ? 42 : 340,
+				w = new o.a(20),
 				j = e => {
 					const t = "rpan-".concat(e.layout, "-").concat(e.listingKey),
 						s = w.get(t);
@@ -2213,19 +2213,6 @@
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/lib/objectSelector/index.ts"),
-				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				i = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				a = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
-				c = s("./src/reddit/selectors/posts.ts"),
-				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				u = s("./node_modules/lodash/memoize.js");
-			const m = e => e.publicAccessNetwork.listings,
-				p = s.n(u)()(e => Object(r.a)(Object(n.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
-			var b = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			s.d(t, "k", (function() {
 				return w
 			})), s.d(t, "l", (function() {
@@ -2253,6 +2240,19 @@
 			})), s.d(t, "d", (function() {
 				return G
 			}));
+			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = s("./node_modules/reselect/es/index.js"),
+				r = s("./src/lib/objectSelector/index.ts"),
+				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				i = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				a = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
+				c = s("./src/reddit/selectors/posts.ts"),
+				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				u = s("./node_modules/lodash/memoize.js");
+			const m = e => e.publicAccessNetwork.listings,
+				p = s.n(u)()(e => Object(r.a)(Object(n.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
+			var b = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			const h = e => e.publicAccessNetwork.reports.reported,
 				g = e => e.publicAccessNetwork.history,
 				f = e => e.publicAccessNetwork.history.cursor,
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.e7d8166199af09589cb8.js.map
+//# sourceMappingURL=Frontpage.b162410722ce18392176.js.map

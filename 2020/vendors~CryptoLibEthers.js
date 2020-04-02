@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CryptoLibEthers.653da795909edd8c198d.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CryptoLibEthers.334a43cc7741e9f42d72.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CryptoLibEthers"], {
 		"./node_modules/ethers/dist/ethers.min.js": function(e, t, r) {
@@ -30,7 +30,7 @@
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
-						}), r.version = "4.0.39"
+						}), r.version = "4.0.46"
 					}, {}],
 					2: [function(e, t, r) {
 						"use strict";
@@ -47,7 +47,7 @@
 						}
 						r.Signer = i
 					}, {
-						"./utils/properties": 73
+						"./utils/properties": 74
 					}],
 					3: [function(e, t, r) {
 						"use strict";
@@ -69,7 +69,7 @@
 						var l = n.bigNumberify("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 						r.MaxUint256 = l
 					}, {
-						"./utils/bignumber": 62
+						"./utils/bignumber": 63
 					}],
 					4: [function(e, t, r) {
 						"use strict";
@@ -490,13 +490,13 @@
 						"./abstract-signer": 2,
 						"./constants": 3,
 						"./errors": 5,
-						"./providers/abstract-provider": 49,
-						"./utils/abi-coder": 58,
-						"./utils/address": 59,
-						"./utils/bignumber": 62,
-						"./utils/bytes": 63,
-						"./utils/interface": 68,
-						"./utils/properties": 73
+						"./providers/abstract-provider": 50,
+						"./utils/abi-coder": 59,
+						"./utils/address": 60,
+						"./utils/bignumber": 63,
+						"./utils/bytes": 64,
+						"./utils/interface": 69,
+						"./utils/properties": 74
 					}],
 					5: [function(e, t, r) {
 						"use strict";
@@ -631,11 +631,11 @@
 						"./constants": 3,
 						"./contract": 4,
 						"./errors": 5,
-						"./providers": 53,
-						"./utils": 67,
-						"./utils/shims": 79,
-						"./wallet": 87,
-						"./wordlists": 88
+						"./providers": 54,
+						"./utils": 68,
+						"./utils/shims": 80,
+						"./wallet": 88,
+						"./wordlists": 89
 					}],
 					7: [function(e, t, r) {
 						"use strict";
@@ -744,13 +744,13 @@
 								for (var t = [], r = 0; r < e.length; r += 4) t.push(e[r] << 24 | e[r + 1] << 16 | e[r + 2] << 8 | e[r + 3]);
 								return t
 							}
-							var P = function(e) {
-								if (!(this instanceof P)) throw Error("AES must be instanitated with `new`");
+							var x = function(e) {
+								if (!(this instanceof x)) throw Error("AES must be instanitated with `new`");
 								Object.defineProperty(this, "key", {
 									value: o(e, !0)
 								}), this._prepare()
 							};
-							P.prototype._prepare = function() {
+							x.prototype._prepare = function() {
 								var e = f[this.key.length];
 								if (null == e) throw new Error("invalid key size (must be 16, 24 or 32 bytes)");
 								this._Ke = [], this._Kd = [];
@@ -770,7 +770,7 @@
 								}
 								for (var l = 1; l < e; l++)
 									for (var h = 0; h < 4; h++) s = this._Kd[l][h], this._Kd[l][h] = A[s >> 24 & 255] ^ E[s >> 16 & 255] ^ S[s >> 8 & 255] ^ k[255 & s]
-							}, P.prototype.encrypt = function(e) {
+							}, x.prototype.encrypt = function(e) {
 								if (16 != e.length) throw new Error("invalid plaintext size (must be 16 bytes)");
 								for (var t = this._Ke.length - 1, r = [0, 0, 0, 0], n = N(e), i = 0; i < 4; i++) n[i] ^= this._Ke[0][i];
 								for (var o = 1; o < t; o++) {
@@ -780,7 +780,7 @@
 								var a, u = s(16);
 								for (i = 0; i < 4; i++) a = this._Ke[t][i], u[4 * i] = 255 & (d[n[i] >> 24 & 255] ^ a >> 24), u[4 * i + 1] = 255 & (d[n[(i + 1) % 4] >> 16 & 255] ^ a >> 16), u[4 * i + 2] = 255 & (d[n[(i + 2) % 4] >> 8 & 255] ^ a >> 8), u[4 * i + 3] = 255 & (d[255 & n[(i + 3) % 4]] ^ a);
 								return u
-							}, P.prototype.decrypt = function(e) {
+							}, x.prototype.decrypt = function(e) {
 								if (16 != e.length) throw new Error("invalid ciphertext size (must be 16 bytes)");
 								for (var t = this._Kd.length - 1, r = [0, 0, 0, 0], n = N(e), i = 0; i < 4; i++) n[i] ^= this._Kd[0][i];
 								for (var o = 1; o < t; o++) {
@@ -791,15 +791,15 @@
 								for (i = 0; i < 4; i++) a = this._Kd[t][i], u[4 * i] = 255 & (p[n[i] >> 24 & 255] ^ a >> 24), u[4 * i + 1] = 255 & (p[n[(i + 3) % 4] >> 16 & 255] ^ a >> 16), u[4 * i + 2] = 255 & (p[n[(i + 2) % 4] >> 8 & 255] ^ a >> 8), u[4 * i + 3] = 255 & (p[255 & n[(i + 1) % 4]] ^ a);
 								return u
 							};
-							var x = function(e) {
-								if (!(this instanceof x)) throw Error("AES must be instanitated with `new`");
-								this.description = "Electronic Code Block", this.name = "ecb", this._aes = new P(e)
+							var P = function(e) {
+								if (!(this instanceof P)) throw Error("AES must be instanitated with `new`");
+								this.description = "Electronic Code Block", this.name = "ecb", this._aes = new x(e)
 							};
-							x.prototype.encrypt = function(e) {
+							P.prototype.encrypt = function(e) {
 								if ((e = o(e)).length % 16 != 0) throw new Error("invalid plaintext size (must be multiple of 16 bytes)");
 								for (var t = s(e.length), r = s(16), n = 0; n < e.length; n += 16) a(e, r, 0, n, n + 16), a(r = this._aes.encrypt(r), t, n);
 								return t
-							}, x.prototype.decrypt = function(e) {
+							}, P.prototype.decrypt = function(e) {
 								if ((e = o(e)).length % 16 != 0) throw new Error("invalid ciphertext size (must be multiple of 16 bytes)");
 								for (var t = s(e.length), r = s(16), n = 0; n < e.length; n += 16) a(e, r, 0, n, n + 16), a(r = this._aes.decrypt(r), t, n);
 								return t
@@ -809,7 +809,7 @@
 								if (this.description = "Cipher Block Chaining", this.name = "cbc", t) {
 									if (16 != t.length) throw new Error("invalid initialation vector size (must be 16 bytes)")
 								} else t = s(16);
-								this._lastCipherblock = o(t, !0), this._aes = new P(e)
+								this._lastCipherblock = o(t, !0), this._aes = new x(e)
 							};
 							I.prototype.encrypt = function(e) {
 								if ((e = o(e)).length % 16 != 0) throw new Error("invalid plaintext size (must be multiple of 16 bytes)");
@@ -833,7 +833,7 @@
 								if (this.description = "Cipher Feedback", this.name = "cfb", t) {
 									if (16 != t.length) throw new Error("invalid initialation vector size (must be 16 size)")
 								} else t = s(16);
-								r = r || 1, this.segmentSize = r, this._shiftRegister = o(t, !0), this._aes = new P(e)
+								r = r || 1, this.segmentSize = r, this._shiftRegister = o(t, !0), this._aes = new x(e)
 							};
 							T.prototype.encrypt = function(e) {
 								if (e.length % this.segmentSize != 0) throw new Error("invalid plaintext size (must be segmentSize bytes)");
@@ -857,7 +857,7 @@
 								if (this.description = "Output Feedback", this.name = "ofb", t) {
 									if (16 != t.length) throw new Error("invalid initialation vector size (must be 16 bytes)")
 								} else t = s(16);
-								this._lastPrecipher = o(t, !0), this._lastPrecipherIndex = 16, this._aes = new P(e)
+								this._lastPrecipher = o(t, !0), this._lastPrecipherIndex = 16, this._aes = new x(e)
 							};
 							R.prototype.encrypt = function(e) {
 								for (var t = o(e, !0), r = 0; r < t.length; r++) 16 === this._lastPrecipherIndex && (this._lastPrecipher = this._aes.encrypt(this._lastPrecipher), this._lastPrecipherIndex = 0), t[r] ^= this._lastPrecipher[this._lastPrecipherIndex++];
@@ -884,17 +884,17 @@
 							};
 							var C = function(e, t) {
 								if (!(this instanceof C)) throw Error("AES must be instanitated with `new`");
-								this.description = "Counter", this.name = "ctr", t instanceof O || (t = new O(t)), this._counter = t, this._remainingCounter = null, this._remainingCounterIndex = 16, this._aes = new P(e)
+								this.description = "Counter", this.name = "ctr", t instanceof O || (t = new O(t)), this._counter = t, this._remainingCounter = null, this._remainingCounterIndex = 16, this._aes = new x(e)
 							};
 							C.prototype.encrypt = function(e) {
 								for (var t = o(e, !0), r = 0; r < t.length; r++) 16 === this._remainingCounterIndex && (this._remainingCounter = this._aes.encrypt(this._counter._counter), this._remainingCounterIndex = 0, this._counter.increment()), t[r] ^= this._remainingCounter[this._remainingCounterIndex++];
 								return t
 							}, C.prototype.decrypt = C.prototype.encrypt;
-							var D = {
-								AES: P,
+							var L = {
+								AES: x,
 								Counter: O,
 								ModeOfOperation: {
-									ecb: x,
+									ecb: P,
 									cbc: I,
 									cfb: T,
 									ofb: R,
@@ -930,7 +930,7 @@
 									copyArray: a
 								}
 							};
-							void 0 !== r ? t.exports = D : (e.aesjs && (D._aesjs = e.aesjs), e.aesjs = D)
+							void 0 !== r ? t.exports = L : (e.aesjs && (L._aesjs = e.aesjs), e.aesjs = L)
 						}(this)
 					}, {}],
 					9: [function(e, t, r) {
@@ -1238,18 +1238,18 @@
 									S = 0 | s[5],
 									k = 8191 & S,
 									N = S >>> 13,
-									P = 0 | s[6],
-									x = 8191 & P,
-									I = P >>> 13,
+									x = 0 | s[6],
+									P = 8191 & x,
+									I = x >>> 13,
 									T = 0 | s[7],
 									R = 8191 & T,
 									O = T >>> 13,
 									C = 0 | s[8],
-									D = 8191 & C,
-									B = C >>> 13,
-									L = 0 | s[9],
-									U = 8191 & L,
-									F = L >>> 13,
+									L = 8191 & C,
+									D = C >>> 13,
+									B = 0 | s[9],
+									U = 8191 & B,
+									F = B >>> 13,
 									j = 0 | a[0],
 									G = 8191 & j,
 									H = j >>> 13,
@@ -1292,33 +1292,33 @@
 								var we = (l + (n = n + Math.imul(f, Y) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(f, ee) | 0) + Math.imul(c, Y) | 0)) << 13) | 0;
 								l = ((o = o + Math.imul(c, ee) | 0) + (i >>> 13) | 0) + (we >>> 26) | 0, we &= 67108863, n = Math.imul(k, G), i = (i = Math.imul(k, H)) + Math.imul(N, G) | 0, o = Math.imul(N, H), n = n + Math.imul(A, V) | 0, i = (i = i + Math.imul(A, K) | 0) + Math.imul(E, V) | 0, o = o + Math.imul(E, K) | 0, n = n + Math.imul(w, W) | 0, i = (i = i + Math.imul(w, Z) | 0) + Math.imul(_, W) | 0, o = o + Math.imul(_, Z) | 0, n = n + Math.imul(m, X) | 0, i = (i = i + Math.imul(m, $) | 0) + Math.imul(g, X) | 0, o = o + Math.imul(g, $) | 0, n = n + Math.imul(p, Y) | 0, i = (i = i + Math.imul(p, ee) | 0) + Math.imul(v, Y) | 0, o = o + Math.imul(v, ee) | 0;
 								var _e = (l + (n = n + Math.imul(f, re) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(f, ne) | 0) + Math.imul(c, re) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(c, ne) | 0) + (i >>> 13) | 0) + (_e >>> 26) | 0, _e &= 67108863, n = Math.imul(x, G), i = (i = Math.imul(x, H)) + Math.imul(I, G) | 0, o = Math.imul(I, H), n = n + Math.imul(k, V) | 0, i = (i = i + Math.imul(k, K) | 0) + Math.imul(N, V) | 0, o = o + Math.imul(N, K) | 0, n = n + Math.imul(A, W) | 0, i = (i = i + Math.imul(A, Z) | 0) + Math.imul(E, W) | 0, o = o + Math.imul(E, Z) | 0, n = n + Math.imul(w, X) | 0, i = (i = i + Math.imul(w, $) | 0) + Math.imul(_, X) | 0, o = o + Math.imul(_, $) | 0, n = n + Math.imul(m, Y) | 0, i = (i = i + Math.imul(m, ee) | 0) + Math.imul(g, Y) | 0, o = o + Math.imul(g, ee) | 0, n = n + Math.imul(p, re) | 0, i = (i = i + Math.imul(p, ne) | 0) + Math.imul(v, re) | 0, o = o + Math.imul(v, ne) | 0;
+								l = ((o = o + Math.imul(c, ne) | 0) + (i >>> 13) | 0) + (_e >>> 26) | 0, _e &= 67108863, n = Math.imul(P, G), i = (i = Math.imul(P, H)) + Math.imul(I, G) | 0, o = Math.imul(I, H), n = n + Math.imul(k, V) | 0, i = (i = i + Math.imul(k, K) | 0) + Math.imul(N, V) | 0, o = o + Math.imul(N, K) | 0, n = n + Math.imul(A, W) | 0, i = (i = i + Math.imul(A, Z) | 0) + Math.imul(E, W) | 0, o = o + Math.imul(E, Z) | 0, n = n + Math.imul(w, X) | 0, i = (i = i + Math.imul(w, $) | 0) + Math.imul(_, X) | 0, o = o + Math.imul(_, $) | 0, n = n + Math.imul(m, Y) | 0, i = (i = i + Math.imul(m, ee) | 0) + Math.imul(g, Y) | 0, o = o + Math.imul(g, ee) | 0, n = n + Math.imul(p, re) | 0, i = (i = i + Math.imul(p, ne) | 0) + Math.imul(v, re) | 0, o = o + Math.imul(v, ne) | 0;
 								var Me = (l + (n = n + Math.imul(f, oe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(f, se) | 0) + Math.imul(c, oe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(c, se) | 0) + (i >>> 13) | 0) + (Me >>> 26) | 0, Me &= 67108863, n = Math.imul(R, G), i = (i = Math.imul(R, H)) + Math.imul(O, G) | 0, o = Math.imul(O, H), n = n + Math.imul(x, V) | 0, i = (i = i + Math.imul(x, K) | 0) + Math.imul(I, V) | 0, o = o + Math.imul(I, K) | 0, n = n + Math.imul(k, W) | 0, i = (i = i + Math.imul(k, Z) | 0) + Math.imul(N, W) | 0, o = o + Math.imul(N, Z) | 0, n = n + Math.imul(A, X) | 0, i = (i = i + Math.imul(A, $) | 0) + Math.imul(E, X) | 0, o = o + Math.imul(E, $) | 0, n = n + Math.imul(w, Y) | 0, i = (i = i + Math.imul(w, ee) | 0) + Math.imul(_, Y) | 0, o = o + Math.imul(_, ee) | 0, n = n + Math.imul(m, re) | 0, i = (i = i + Math.imul(m, ne) | 0) + Math.imul(g, re) | 0, o = o + Math.imul(g, ne) | 0, n = n + Math.imul(p, oe) | 0, i = (i = i + Math.imul(p, se) | 0) + Math.imul(v, oe) | 0, o = o + Math.imul(v, se) | 0;
+								l = ((o = o + Math.imul(c, se) | 0) + (i >>> 13) | 0) + (Me >>> 26) | 0, Me &= 67108863, n = Math.imul(R, G), i = (i = Math.imul(R, H)) + Math.imul(O, G) | 0, o = Math.imul(O, H), n = n + Math.imul(P, V) | 0, i = (i = i + Math.imul(P, K) | 0) + Math.imul(I, V) | 0, o = o + Math.imul(I, K) | 0, n = n + Math.imul(k, W) | 0, i = (i = i + Math.imul(k, Z) | 0) + Math.imul(N, W) | 0, o = o + Math.imul(N, Z) | 0, n = n + Math.imul(A, X) | 0, i = (i = i + Math.imul(A, $) | 0) + Math.imul(E, X) | 0, o = o + Math.imul(E, $) | 0, n = n + Math.imul(w, Y) | 0, i = (i = i + Math.imul(w, ee) | 0) + Math.imul(_, Y) | 0, o = o + Math.imul(_, ee) | 0, n = n + Math.imul(m, re) | 0, i = (i = i + Math.imul(m, ne) | 0) + Math.imul(g, re) | 0, o = o + Math.imul(g, ne) | 0, n = n + Math.imul(p, oe) | 0, i = (i = i + Math.imul(p, se) | 0) + Math.imul(v, oe) | 0, o = o + Math.imul(v, se) | 0;
 								var Ae = (l + (n = n + Math.imul(f, ue) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(f, le) | 0) + Math.imul(c, ue) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(c, le) | 0) + (i >>> 13) | 0) + (Ae >>> 26) | 0, Ae &= 67108863, n = Math.imul(D, G), i = (i = Math.imul(D, H)) + Math.imul(B, G) | 0, o = Math.imul(B, H), n = n + Math.imul(R, V) | 0, i = (i = i + Math.imul(R, K) | 0) + Math.imul(O, V) | 0, o = o + Math.imul(O, K) | 0, n = n + Math.imul(x, W) | 0, i = (i = i + Math.imul(x, Z) | 0) + Math.imul(I, W) | 0, o = o + Math.imul(I, Z) | 0, n = n + Math.imul(k, X) | 0, i = (i = i + Math.imul(k, $) | 0) + Math.imul(N, X) | 0, o = o + Math.imul(N, $) | 0, n = n + Math.imul(A, Y) | 0, i = (i = i + Math.imul(A, ee) | 0) + Math.imul(E, Y) | 0, o = o + Math.imul(E, ee) | 0, n = n + Math.imul(w, re) | 0, i = (i = i + Math.imul(w, ne) | 0) + Math.imul(_, re) | 0, o = o + Math.imul(_, ne) | 0, n = n + Math.imul(m, oe) | 0, i = (i = i + Math.imul(m, se) | 0) + Math.imul(g, oe) | 0, o = o + Math.imul(g, se) | 0, n = n + Math.imul(p, ue) | 0, i = (i = i + Math.imul(p, le) | 0) + Math.imul(v, ue) | 0, o = o + Math.imul(v, le) | 0;
+								l = ((o = o + Math.imul(c, le) | 0) + (i >>> 13) | 0) + (Ae >>> 26) | 0, Ae &= 67108863, n = Math.imul(L, G), i = (i = Math.imul(L, H)) + Math.imul(D, G) | 0, o = Math.imul(D, H), n = n + Math.imul(R, V) | 0, i = (i = i + Math.imul(R, K) | 0) + Math.imul(O, V) | 0, o = o + Math.imul(O, K) | 0, n = n + Math.imul(P, W) | 0, i = (i = i + Math.imul(P, Z) | 0) + Math.imul(I, W) | 0, o = o + Math.imul(I, Z) | 0, n = n + Math.imul(k, X) | 0, i = (i = i + Math.imul(k, $) | 0) + Math.imul(N, X) | 0, o = o + Math.imul(N, $) | 0, n = n + Math.imul(A, Y) | 0, i = (i = i + Math.imul(A, ee) | 0) + Math.imul(E, Y) | 0, o = o + Math.imul(E, ee) | 0, n = n + Math.imul(w, re) | 0, i = (i = i + Math.imul(w, ne) | 0) + Math.imul(_, re) | 0, o = o + Math.imul(_, ne) | 0, n = n + Math.imul(m, oe) | 0, i = (i = i + Math.imul(m, se) | 0) + Math.imul(g, oe) | 0, o = o + Math.imul(g, se) | 0, n = n + Math.imul(p, ue) | 0, i = (i = i + Math.imul(p, le) | 0) + Math.imul(v, ue) | 0, o = o + Math.imul(v, le) | 0;
 								var Ee = (l + (n = n + Math.imul(f, fe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(f, ce) | 0) + Math.imul(c, fe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(c, ce) | 0) + (i >>> 13) | 0) + (Ee >>> 26) | 0, Ee &= 67108863, n = Math.imul(U, G), i = (i = Math.imul(U, H)) + Math.imul(F, G) | 0, o = Math.imul(F, H), n = n + Math.imul(D, V) | 0, i = (i = i + Math.imul(D, K) | 0) + Math.imul(B, V) | 0, o = o + Math.imul(B, K) | 0, n = n + Math.imul(R, W) | 0, i = (i = i + Math.imul(R, Z) | 0) + Math.imul(O, W) | 0, o = o + Math.imul(O, Z) | 0, n = n + Math.imul(x, X) | 0, i = (i = i + Math.imul(x, $) | 0) + Math.imul(I, X) | 0, o = o + Math.imul(I, $) | 0, n = n + Math.imul(k, Y) | 0, i = (i = i + Math.imul(k, ee) | 0) + Math.imul(N, Y) | 0, o = o + Math.imul(N, ee) | 0, n = n + Math.imul(A, re) | 0, i = (i = i + Math.imul(A, ne) | 0) + Math.imul(E, re) | 0, o = o + Math.imul(E, ne) | 0, n = n + Math.imul(w, oe) | 0, i = (i = i + Math.imul(w, se) | 0) + Math.imul(_, oe) | 0, o = o + Math.imul(_, se) | 0, n = n + Math.imul(m, ue) | 0, i = (i = i + Math.imul(m, le) | 0) + Math.imul(g, ue) | 0, o = o + Math.imul(g, le) | 0, n = n + Math.imul(p, fe) | 0, i = (i = i + Math.imul(p, ce) | 0) + Math.imul(v, fe) | 0, o = o + Math.imul(v, ce) | 0;
+								l = ((o = o + Math.imul(c, ce) | 0) + (i >>> 13) | 0) + (Ee >>> 26) | 0, Ee &= 67108863, n = Math.imul(U, G), i = (i = Math.imul(U, H)) + Math.imul(F, G) | 0, o = Math.imul(F, H), n = n + Math.imul(L, V) | 0, i = (i = i + Math.imul(L, K) | 0) + Math.imul(D, V) | 0, o = o + Math.imul(D, K) | 0, n = n + Math.imul(R, W) | 0, i = (i = i + Math.imul(R, Z) | 0) + Math.imul(O, W) | 0, o = o + Math.imul(O, Z) | 0, n = n + Math.imul(P, X) | 0, i = (i = i + Math.imul(P, $) | 0) + Math.imul(I, X) | 0, o = o + Math.imul(I, $) | 0, n = n + Math.imul(k, Y) | 0, i = (i = i + Math.imul(k, ee) | 0) + Math.imul(N, Y) | 0, o = o + Math.imul(N, ee) | 0, n = n + Math.imul(A, re) | 0, i = (i = i + Math.imul(A, ne) | 0) + Math.imul(E, re) | 0, o = o + Math.imul(E, ne) | 0, n = n + Math.imul(w, oe) | 0, i = (i = i + Math.imul(w, se) | 0) + Math.imul(_, oe) | 0, o = o + Math.imul(_, se) | 0, n = n + Math.imul(m, ue) | 0, i = (i = i + Math.imul(m, le) | 0) + Math.imul(g, ue) | 0, o = o + Math.imul(g, le) | 0, n = n + Math.imul(p, fe) | 0, i = (i = i + Math.imul(p, ce) | 0) + Math.imul(v, fe) | 0, o = o + Math.imul(v, ce) | 0;
 								var Se = (l + (n = n + Math.imul(f, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(f, ve) | 0) + Math.imul(c, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(c, ve) | 0) + (i >>> 13) | 0) + (Se >>> 26) | 0, Se &= 67108863, n = Math.imul(U, V), i = (i = Math.imul(U, K)) + Math.imul(F, V) | 0, o = Math.imul(F, K), n = n + Math.imul(D, W) | 0, i = (i = i + Math.imul(D, Z) | 0) + Math.imul(B, W) | 0, o = o + Math.imul(B, Z) | 0, n = n + Math.imul(R, X) | 0, i = (i = i + Math.imul(R, $) | 0) + Math.imul(O, X) | 0, o = o + Math.imul(O, $) | 0, n = n + Math.imul(x, Y) | 0, i = (i = i + Math.imul(x, ee) | 0) + Math.imul(I, Y) | 0, o = o + Math.imul(I, ee) | 0, n = n + Math.imul(k, re) | 0, i = (i = i + Math.imul(k, ne) | 0) + Math.imul(N, re) | 0, o = o + Math.imul(N, ne) | 0, n = n + Math.imul(A, oe) | 0, i = (i = i + Math.imul(A, se) | 0) + Math.imul(E, oe) | 0, o = o + Math.imul(E, se) | 0, n = n + Math.imul(w, ue) | 0, i = (i = i + Math.imul(w, le) | 0) + Math.imul(_, ue) | 0, o = o + Math.imul(_, le) | 0, n = n + Math.imul(m, fe) | 0, i = (i = i + Math.imul(m, ce) | 0) + Math.imul(g, fe) | 0, o = o + Math.imul(g, ce) | 0;
+								l = ((o = o + Math.imul(c, ve) | 0) + (i >>> 13) | 0) + (Se >>> 26) | 0, Se &= 67108863, n = Math.imul(U, V), i = (i = Math.imul(U, K)) + Math.imul(F, V) | 0, o = Math.imul(F, K), n = n + Math.imul(L, W) | 0, i = (i = i + Math.imul(L, Z) | 0) + Math.imul(D, W) | 0, o = o + Math.imul(D, Z) | 0, n = n + Math.imul(R, X) | 0, i = (i = i + Math.imul(R, $) | 0) + Math.imul(O, X) | 0, o = o + Math.imul(O, $) | 0, n = n + Math.imul(P, Y) | 0, i = (i = i + Math.imul(P, ee) | 0) + Math.imul(I, Y) | 0, o = o + Math.imul(I, ee) | 0, n = n + Math.imul(k, re) | 0, i = (i = i + Math.imul(k, ne) | 0) + Math.imul(N, re) | 0, o = o + Math.imul(N, ne) | 0, n = n + Math.imul(A, oe) | 0, i = (i = i + Math.imul(A, se) | 0) + Math.imul(E, oe) | 0, o = o + Math.imul(E, se) | 0, n = n + Math.imul(w, ue) | 0, i = (i = i + Math.imul(w, le) | 0) + Math.imul(_, ue) | 0, o = o + Math.imul(_, le) | 0, n = n + Math.imul(m, fe) | 0, i = (i = i + Math.imul(m, ce) | 0) + Math.imul(g, fe) | 0, o = o + Math.imul(g, ce) | 0;
 								var ke = (l + (n = n + Math.imul(p, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(p, ve) | 0) + Math.imul(v, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(v, ve) | 0) + (i >>> 13) | 0) + (ke >>> 26) | 0, ke &= 67108863, n = Math.imul(U, W), i = (i = Math.imul(U, Z)) + Math.imul(F, W) | 0, o = Math.imul(F, Z), n = n + Math.imul(D, X) | 0, i = (i = i + Math.imul(D, $) | 0) + Math.imul(B, X) | 0, o = o + Math.imul(B, $) | 0, n = n + Math.imul(R, Y) | 0, i = (i = i + Math.imul(R, ee) | 0) + Math.imul(O, Y) | 0, o = o + Math.imul(O, ee) | 0, n = n + Math.imul(x, re) | 0, i = (i = i + Math.imul(x, ne) | 0) + Math.imul(I, re) | 0, o = o + Math.imul(I, ne) | 0, n = n + Math.imul(k, oe) | 0, i = (i = i + Math.imul(k, se) | 0) + Math.imul(N, oe) | 0, o = o + Math.imul(N, se) | 0, n = n + Math.imul(A, ue) | 0, i = (i = i + Math.imul(A, le) | 0) + Math.imul(E, ue) | 0, o = o + Math.imul(E, le) | 0, n = n + Math.imul(w, fe) | 0, i = (i = i + Math.imul(w, ce) | 0) + Math.imul(_, fe) | 0, o = o + Math.imul(_, ce) | 0;
+								l = ((o = o + Math.imul(v, ve) | 0) + (i >>> 13) | 0) + (ke >>> 26) | 0, ke &= 67108863, n = Math.imul(U, W), i = (i = Math.imul(U, Z)) + Math.imul(F, W) | 0, o = Math.imul(F, Z), n = n + Math.imul(L, X) | 0, i = (i = i + Math.imul(L, $) | 0) + Math.imul(D, X) | 0, o = o + Math.imul(D, $) | 0, n = n + Math.imul(R, Y) | 0, i = (i = i + Math.imul(R, ee) | 0) + Math.imul(O, Y) | 0, o = o + Math.imul(O, ee) | 0, n = n + Math.imul(P, re) | 0, i = (i = i + Math.imul(P, ne) | 0) + Math.imul(I, re) | 0, o = o + Math.imul(I, ne) | 0, n = n + Math.imul(k, oe) | 0, i = (i = i + Math.imul(k, se) | 0) + Math.imul(N, oe) | 0, o = o + Math.imul(N, se) | 0, n = n + Math.imul(A, ue) | 0, i = (i = i + Math.imul(A, le) | 0) + Math.imul(E, ue) | 0, o = o + Math.imul(E, le) | 0, n = n + Math.imul(w, fe) | 0, i = (i = i + Math.imul(w, ce) | 0) + Math.imul(_, fe) | 0, o = o + Math.imul(_, ce) | 0;
 								var Ne = (l + (n = n + Math.imul(m, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(m, ve) | 0) + Math.imul(g, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(g, ve) | 0) + (i >>> 13) | 0) + (Ne >>> 26) | 0, Ne &= 67108863, n = Math.imul(U, X), i = (i = Math.imul(U, $)) + Math.imul(F, X) | 0, o = Math.imul(F, $), n = n + Math.imul(D, Y) | 0, i = (i = i + Math.imul(D, ee) | 0) + Math.imul(B, Y) | 0, o = o + Math.imul(B, ee) | 0, n = n + Math.imul(R, re) | 0, i = (i = i + Math.imul(R, ne) | 0) + Math.imul(O, re) | 0, o = o + Math.imul(O, ne) | 0, n = n + Math.imul(x, oe) | 0, i = (i = i + Math.imul(x, se) | 0) + Math.imul(I, oe) | 0, o = o + Math.imul(I, se) | 0, n = n + Math.imul(k, ue) | 0, i = (i = i + Math.imul(k, le) | 0) + Math.imul(N, ue) | 0, o = o + Math.imul(N, le) | 0, n = n + Math.imul(A, fe) | 0, i = (i = i + Math.imul(A, ce) | 0) + Math.imul(E, fe) | 0, o = o + Math.imul(E, ce) | 0;
-								var Pe = (l + (n = n + Math.imul(w, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(w, ve) | 0) + Math.imul(_, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(_, ve) | 0) + (i >>> 13) | 0) + (Pe >>> 26) | 0, Pe &= 67108863, n = Math.imul(U, Y), i = (i = Math.imul(U, ee)) + Math.imul(F, Y) | 0, o = Math.imul(F, ee), n = n + Math.imul(D, re) | 0, i = (i = i + Math.imul(D, ne) | 0) + Math.imul(B, re) | 0, o = o + Math.imul(B, ne) | 0, n = n + Math.imul(R, oe) | 0, i = (i = i + Math.imul(R, se) | 0) + Math.imul(O, oe) | 0, o = o + Math.imul(O, se) | 0, n = n + Math.imul(x, ue) | 0, i = (i = i + Math.imul(x, le) | 0) + Math.imul(I, ue) | 0, o = o + Math.imul(I, le) | 0, n = n + Math.imul(k, fe) | 0, i = (i = i + Math.imul(k, ce) | 0) + Math.imul(N, fe) | 0, o = o + Math.imul(N, ce) | 0;
-								var xe = (l + (n = n + Math.imul(A, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(A, ve) | 0) + Math.imul(E, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(E, ve) | 0) + (i >>> 13) | 0) + (xe >>> 26) | 0, xe &= 67108863, n = Math.imul(U, re), i = (i = Math.imul(U, ne)) + Math.imul(F, re) | 0, o = Math.imul(F, ne), n = n + Math.imul(D, oe) | 0, i = (i = i + Math.imul(D, se) | 0) + Math.imul(B, oe) | 0, o = o + Math.imul(B, se) | 0, n = n + Math.imul(R, ue) | 0, i = (i = i + Math.imul(R, le) | 0) + Math.imul(O, ue) | 0, o = o + Math.imul(O, le) | 0, n = n + Math.imul(x, fe) | 0, i = (i = i + Math.imul(x, ce) | 0) + Math.imul(I, fe) | 0, o = o + Math.imul(I, ce) | 0;
+								l = ((o = o + Math.imul(g, ve) | 0) + (i >>> 13) | 0) + (Ne >>> 26) | 0, Ne &= 67108863, n = Math.imul(U, X), i = (i = Math.imul(U, $)) + Math.imul(F, X) | 0, o = Math.imul(F, $), n = n + Math.imul(L, Y) | 0, i = (i = i + Math.imul(L, ee) | 0) + Math.imul(D, Y) | 0, o = o + Math.imul(D, ee) | 0, n = n + Math.imul(R, re) | 0, i = (i = i + Math.imul(R, ne) | 0) + Math.imul(O, re) | 0, o = o + Math.imul(O, ne) | 0, n = n + Math.imul(P, oe) | 0, i = (i = i + Math.imul(P, se) | 0) + Math.imul(I, oe) | 0, o = o + Math.imul(I, se) | 0, n = n + Math.imul(k, ue) | 0, i = (i = i + Math.imul(k, le) | 0) + Math.imul(N, ue) | 0, o = o + Math.imul(N, le) | 0, n = n + Math.imul(A, fe) | 0, i = (i = i + Math.imul(A, ce) | 0) + Math.imul(E, fe) | 0, o = o + Math.imul(E, ce) | 0;
+								var xe = (l + (n = n + Math.imul(w, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(w, ve) | 0) + Math.imul(_, pe) | 0)) << 13) | 0;
+								l = ((o = o + Math.imul(_, ve) | 0) + (i >>> 13) | 0) + (xe >>> 26) | 0, xe &= 67108863, n = Math.imul(U, Y), i = (i = Math.imul(U, ee)) + Math.imul(F, Y) | 0, o = Math.imul(F, ee), n = n + Math.imul(L, re) | 0, i = (i = i + Math.imul(L, ne) | 0) + Math.imul(D, re) | 0, o = o + Math.imul(D, ne) | 0, n = n + Math.imul(R, oe) | 0, i = (i = i + Math.imul(R, se) | 0) + Math.imul(O, oe) | 0, o = o + Math.imul(O, se) | 0, n = n + Math.imul(P, ue) | 0, i = (i = i + Math.imul(P, le) | 0) + Math.imul(I, ue) | 0, o = o + Math.imul(I, le) | 0, n = n + Math.imul(k, fe) | 0, i = (i = i + Math.imul(k, ce) | 0) + Math.imul(N, fe) | 0, o = o + Math.imul(N, ce) | 0;
+								var Pe = (l + (n = n + Math.imul(A, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(A, ve) | 0) + Math.imul(E, pe) | 0)) << 13) | 0;
+								l = ((o = o + Math.imul(E, ve) | 0) + (i >>> 13) | 0) + (Pe >>> 26) | 0, Pe &= 67108863, n = Math.imul(U, re), i = (i = Math.imul(U, ne)) + Math.imul(F, re) | 0, o = Math.imul(F, ne), n = n + Math.imul(L, oe) | 0, i = (i = i + Math.imul(L, se) | 0) + Math.imul(D, oe) | 0, o = o + Math.imul(D, se) | 0, n = n + Math.imul(R, ue) | 0, i = (i = i + Math.imul(R, le) | 0) + Math.imul(O, ue) | 0, o = o + Math.imul(O, le) | 0, n = n + Math.imul(P, fe) | 0, i = (i = i + Math.imul(P, ce) | 0) + Math.imul(I, fe) | 0, o = o + Math.imul(I, ce) | 0;
 								var Ie = (l + (n = n + Math.imul(k, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(k, ve) | 0) + Math.imul(N, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(N, ve) | 0) + (i >>> 13) | 0) + (Ie >>> 26) | 0, Ie &= 67108863, n = Math.imul(U, oe), i = (i = Math.imul(U, se)) + Math.imul(F, oe) | 0, o = Math.imul(F, se), n = n + Math.imul(D, ue) | 0, i = (i = i + Math.imul(D, le) | 0) + Math.imul(B, ue) | 0, o = o + Math.imul(B, le) | 0, n = n + Math.imul(R, fe) | 0, i = (i = i + Math.imul(R, ce) | 0) + Math.imul(O, fe) | 0, o = o + Math.imul(O, ce) | 0;
-								var Te = (l + (n = n + Math.imul(x, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(x, ve) | 0) + Math.imul(I, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(I, ve) | 0) + (i >>> 13) | 0) + (Te >>> 26) | 0, Te &= 67108863, n = Math.imul(U, ue), i = (i = Math.imul(U, le)) + Math.imul(F, ue) | 0, o = Math.imul(F, le), n = n + Math.imul(D, fe) | 0, i = (i = i + Math.imul(D, ce) | 0) + Math.imul(B, fe) | 0, o = o + Math.imul(B, ce) | 0;
+								l = ((o = o + Math.imul(N, ve) | 0) + (i >>> 13) | 0) + (Ie >>> 26) | 0, Ie &= 67108863, n = Math.imul(U, oe), i = (i = Math.imul(U, se)) + Math.imul(F, oe) | 0, o = Math.imul(F, se), n = n + Math.imul(L, ue) | 0, i = (i = i + Math.imul(L, le) | 0) + Math.imul(D, ue) | 0, o = o + Math.imul(D, le) | 0, n = n + Math.imul(R, fe) | 0, i = (i = i + Math.imul(R, ce) | 0) + Math.imul(O, fe) | 0, o = o + Math.imul(O, ce) | 0;
+								var Te = (l + (n = n + Math.imul(P, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(P, ve) | 0) + Math.imul(I, pe) | 0)) << 13) | 0;
+								l = ((o = o + Math.imul(I, ve) | 0) + (i >>> 13) | 0) + (Te >>> 26) | 0, Te &= 67108863, n = Math.imul(U, ue), i = (i = Math.imul(U, le)) + Math.imul(F, ue) | 0, o = Math.imul(F, le), n = n + Math.imul(L, fe) | 0, i = (i = i + Math.imul(L, ce) | 0) + Math.imul(D, fe) | 0, o = o + Math.imul(D, ce) | 0;
 								var Re = (l + (n = n + Math.imul(R, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(R, ve) | 0) + Math.imul(O, pe) | 0)) << 13) | 0;
 								l = ((o = o + Math.imul(O, ve) | 0) + (i >>> 13) | 0) + (Re >>> 26) | 0, Re &= 67108863, n = Math.imul(U, fe), i = (i = Math.imul(U, ce)) + Math.imul(F, fe) | 0, o = Math.imul(F, ce);
-								var Oe = (l + (n = n + Math.imul(D, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(D, ve) | 0) + Math.imul(B, pe) | 0)) << 13) | 0;
-								l = ((o = o + Math.imul(B, ve) | 0) + (i >>> 13) | 0) + (Oe >>> 26) | 0, Oe &= 67108863;
+								var Oe = (l + (n = n + Math.imul(L, pe) | 0) | 0) + ((8191 & (i = (i = i + Math.imul(L, ve) | 0) + Math.imul(D, pe) | 0)) << 13) | 0;
+								l = ((o = o + Math.imul(D, ve) | 0) + (i >>> 13) | 0) + (Oe >>> 26) | 0, Oe &= 67108863;
 								var Ce = (l + (n = Math.imul(U, pe)) | 0) + ((8191 & (i = (i = Math.imul(U, ve)) + Math.imul(F, pe) | 0)) << 13) | 0;
-								return l = ((o = Math.imul(F, ve)) + (i >>> 13) | 0) + (Ce >>> 26) | 0, Ce &= 67108863, u[0] = ye, u[1] = me, u[2] = ge, u[3] = be, u[4] = we, u[5] = _e, u[6] = Me, u[7] = Ae, u[8] = Ee, u[9] = Se, u[10] = ke, u[11] = Ne, u[12] = Pe, u[13] = xe, u[14] = Ie, u[15] = Te, u[16] = Re, u[17] = Oe, u[18] = Ce, 0 !== l && (u[19] = l, r.length++), r
+								return l = ((o = Math.imul(F, ve)) + (i >>> 13) | 0) + (Ce >>> 26) | 0, Ce &= 67108863, u[0] = ye, u[1] = me, u[2] = ge, u[3] = be, u[4] = we, u[5] = _e, u[6] = Me, u[7] = Ae, u[8] = Ee, u[9] = Se, u[10] = ke, u[11] = Ne, u[12] = xe, u[13] = Pe, u[14] = Ie, u[15] = Te, u[16] = Re, u[17] = Oe, u[18] = Ce, 0 !== l && (u[19] = l, r.length++), r
 							};
 
 							function p(e, t, r) {
@@ -1988,27 +1988,26 @@
 					12: [function(e, t, r) {
 						"use strict";
 						var n = r;
-						n.version = e("../package.json").version, n.utils = e("./elliptic/utils"), n.rand = e("brorand"), n.hmacDRBG = e("./elliptic/hmac-drbg"), n.curve = e("./elliptic/curve"), n.curves = e("./elliptic/curves"), n.ec = e("./elliptic/ec"), n.eddsa = e("./elliptic/eddsa")
+						n.version = e("../package.json").version, n.utils = e("./elliptic/utils"), n.rand = e("brorand"), n.curve = e("./elliptic/curve"), n.curves = e("./elliptic/curves"), n.ec = e("./elliptic/ec"), n.eddsa = e("./elliptic/eddsa")
 					}, {
-						"../package.json": 26,
+						"../package.json": 25,
 						"./elliptic/curve": 15,
 						"./elliptic/curves": 18,
 						"./elliptic/ec": 19,
 						"./elliptic/eddsa": 22,
-						"./elliptic/hmac-drbg": 23,
-						"./elliptic/utils": 25,
+						"./elliptic/utils": 24,
 						brorand: 10
 					}],
 					13: [function(e, t, r) {
 						"use strict";
 						var n = e("bn.js"),
-							i = e("../../elliptic").utils,
+							i = e("../utils"),
 							o = i.getNAF,
 							s = i.getJSF,
 							a = i.assert;
 
 						function u(e, t) {
-							this.type = e, this.p = new n(t.p, 16), this.red = t.prime ? n.red(t.prime) : n.mont(this.p), this.zero = new n(0).toRed(this.red), this.one = new n(1).toRed(this.red), this.two = new n(2).toRed(this.red), this.n = t.n && new n(t.n, 16), this.g = t.g && this.pointFromJSON(t.g, t.gRed), this._wnafT1 = new Array(4), this._wnafT2 = new Array(4), this._wnafT3 = new Array(4), this._wnafT4 = new Array(4);
+							this.type = e, this.p = new n(t.p, 16), this.red = t.prime ? n.red(t.prime) : n.mont(this.p), this.zero = new n(0).toRed(this.red), this.one = new n(1).toRed(this.red), this.two = new n(2).toRed(this.red), this.n = t.n && new n(t.n, 16), this.g = t.g && this.pointFromJSON(t.g, t.gRed), this._wnafT1 = new Array(4), this._wnafT2 = new Array(4), this._wnafT3 = new Array(4), this._wnafT4 = new Array(4), this._bitLength = this.n ? this.n.bitLength() : 0;
 							var r = this.n && this.p.div(this.n);
 							!r || 0 < r.cmpn(100) ? this.redN = null : (this._maxwellTrick = !0, this.redN = this.n.toRed(this.red))
 						}
@@ -2022,7 +2021,7 @@
 						}, u.prototype._fixedNafMul = function(e, t) {
 							a(e.precomputed);
 							var r = e._getDoubles(),
-								n = o(t, 1),
+								n = o(t, 1, this._bitLength),
 								i = (1 << r.step + 1) - (r.step % 2 == 0 ? 2 : 1);
 							i /= 3;
 							for (var s = [], u = 0; u < n.length; u += r.step) {
@@ -2039,7 +2038,7 @@
 							var r = 4,
 								n = e._getNAFPoints(r);
 							r = n.wnd;
-							for (var i = n.points, s = o(t, r), u = this.jpoint(null, null, null), l = s.length - 1; 0 <= l; l--) {
+							for (var i = n.points, s = o(t, r, this._bitLength), u = this.jpoint(null, null, null), l = s.length - 1; 0 <= l; l--) {
 								for (t = 0; 0 <= l && 0 === s[l]; l--) t++;
 								if (0 <= l && t++, u = u.dblp(t), l < 0) break;
 								var h = s[l];
@@ -2065,7 +2064,7 @@
 											w = 0 | m[1][g];
 										l[d][g] = y[3 * (1 + b) + (1 + w)], l[p][g] = 0, u[d] = v
 									}
-								} else l[d] = o(r[d], a[d]), l[p] = o(r[p], a[p]), h = Math.max(l[d].length, h), h = Math.max(l[p].length, h)
+								} else l[d] = o(r[d], a[d], this._bitLength), l[p] = o(r[p], a[p], this._bitLength), h = Math.max(l[d].length, h), h = Math.max(l[p].length, h)
 							}
 							var _ = this.jpoint(null, null, null),
 								M = this._wnafT4;
@@ -2138,7 +2137,7 @@
 							return t
 						}
 					}, {
-						"../../elliptic": 12,
+						"../utils": 24,
 						"bn.js": 9
 					}],
 					14: [function(e, t, r) {
@@ -2161,73 +2160,72 @@
 					}],
 					17: [function(e, t, r) {
 						"use strict";
-						var n = e("../curve"),
-							i = e("../../elliptic"),
-							o = e("bn.js"),
-							s = e("inherits"),
-							a = n.base,
-							u = i.utils.assert;
+						var n = e("../utils"),
+							i = e("bn.js"),
+							o = e("inherits"),
+							s = e("./base"),
+							a = n.assert;
 
-						function l(e) {
-							a.call(this, "short", e), this.a = new o(e.a, 16).toRed(this.red), this.b = new o(e.b, 16).toRed(this.red), this.tinv = this.two.redInvm(), this.zeroA = 0 === this.a.fromRed().cmpn(0), this.threeA = 0 === this.a.fromRed().sub(this.p).cmpn(-3), this.endo = this._getEndomorphism(e), this._endoWnafT1 = new Array(4), this._endoWnafT2 = new Array(4)
+						function u(e) {
+							s.call(this, "short", e), this.a = new i(e.a, 16).toRed(this.red), this.b = new i(e.b, 16).toRed(this.red), this.tinv = this.two.redInvm(), this.zeroA = 0 === this.a.fromRed().cmpn(0), this.threeA = 0 === this.a.fromRed().sub(this.p).cmpn(-3), this.endo = this._getEndomorphism(e), this._endoWnafT1 = new Array(4), this._endoWnafT2 = new Array(4)
+						}
+
+						function l(e, t, r, n) {
+							s.BasePoint.call(this, e, "affine"), null === t && null === r ? (this.x = null, this.y = null, this.inf = !0) : (this.x = new i(t, 16), this.y = new i(r, 16), n && (this.x.forceRed(this.curve.red), this.y.forceRed(this.curve.red)), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.inf = !1)
 						}
 
 						function h(e, t, r, n) {
-							a.BasePoint.call(this, e, "affine"), null === t && null === r ? (this.x = null, this.y = null, this.inf = !0) : (this.x = new o(t, 16), this.y = new o(r, 16), n && (this.x.forceRed(this.curve.red), this.y.forceRed(this.curve.red)), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.inf = !1)
+							s.BasePoint.call(this, e, "jacobian"), null === t && null === r && null === n ? (this.x = this.curve.one, this.y = this.curve.one, this.z = new i(0)) : (this.x = new i(t, 16), this.y = new i(r, 16), this.z = new i(n, 16)), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.z.red || (this.z = this.z.toRed(this.curve.red)), this.zOne = this.z === this.curve.one
 						}
-
-						function f(e, t, r, n) {
-							a.BasePoint.call(this, e, "jacobian"), null === t && null === r && null === n ? (this.x = this.curve.one, this.y = this.curve.one, this.z = new o(0)) : (this.x = new o(t, 16), this.y = new o(r, 16), this.z = new o(n, 16)), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.z.red || (this.z = this.z.toRed(this.curve.red)), this.zOne = this.z === this.curve.one
-						}
-						s(l, a), (t.exports = l).prototype._getEndomorphism = function(e) {
+						o(u, s), (t.exports = u).prototype._getEndomorphism = function(e) {
 							if (this.zeroA && this.g && this.n && 1 === this.p.modn(3)) {
 								var t, r;
-								if (e.beta) t = new o(e.beta, 16).toRed(this.red);
+								if (e.beta) t = new i(e.beta, 16).toRed(this.red);
 								else {
 									var n = this._getEndoRoots(this.p);
 									t = (t = n[0].cmp(n[1]) < 0 ? n[0] : n[1]).toRed(this.red)
 								}
-								if (e.lambda) r = new o(e.lambda, 16);
+								if (e.lambda) r = new i(e.lambda, 16);
 								else {
-									var i = this._getEndoRoots(this.n);
-									0 === this.g.mul(i[0]).x.cmp(this.g.x.redMul(t)) ? r = i[0] : (r = i[1], u(0 === this.g.mul(r).x.cmp(this.g.x.redMul(t))))
+									var o = this._getEndoRoots(this.n);
+									0 === this.g.mul(o[0]).x.cmp(this.g.x.redMul(t)) ? r = o[0] : (r = o[1], a(0 === this.g.mul(r).x.cmp(this.g.x.redMul(t))))
 								}
 								return {
 									beta: t,
 									lambda: r,
 									basis: e.basis ? e.basis.map((function(e) {
 										return {
-											a: new o(e.a, 16),
-											b: new o(e.b, 16)
+											a: new i(e.a, 16),
+											b: new i(e.b, 16)
 										}
 									})) : this._getEndoBasis(r)
 								}
 							}
-						}, l.prototype._getEndoRoots = function(e) {
-							var t = e === this.p ? this.red : o.mont(e),
-								r = new o(2).toRed(t).redInvm(),
+						}, u.prototype._getEndoRoots = function(e) {
+							var t = e === this.p ? this.red : i.mont(e),
+								r = new i(2).toRed(t).redInvm(),
 								n = r.redNeg(),
-								i = new o(3).toRed(t).redNeg().redSqrt().redMul(r);
-							return [n.redAdd(i).fromRed(), n.redSub(i).fromRed()]
-						}, l.prototype._getEndoBasis = function(e) {
-							for (var t, r, n, i, s, a, u, l, h, f = this.n.ushrn(Math.floor(this.n.bitLength() / 2)), c = e, d = this.n.clone(), p = new o(1), v = new o(0), y = new o(0), m = new o(1), g = 0; 0 !== c.cmpn(0);) {
+								o = new i(3).toRed(t).redNeg().redSqrt().redMul(r);
+							return [n.redAdd(o).fromRed(), n.redSub(o).fromRed()]
+						}, u.prototype._getEndoBasis = function(e) {
+							for (var t, r, n, o, s, a, u, l, h, f = this.n.ushrn(Math.floor(this.n.bitLength() / 2)), c = e, d = this.n.clone(), p = new i(1), v = new i(0), y = new i(0), m = new i(1), g = 0; 0 !== c.cmpn(0);) {
 								var b = d.div(c);
 								l = d.sub(b.mul(c)), h = y.sub(b.mul(p));
 								var w = m.sub(b.mul(v));
-								if (!n && l.cmp(f) < 0) t = u.neg(), r = p, n = l.neg(), i = h;
+								if (!n && l.cmp(f) < 0) t = u.neg(), r = p, n = l.neg(), o = h;
 								else if (n && 2 == ++g) break;
 								d = c, c = u = l, y = p, p = h, m = v, v = w
 							}
 							s = l.neg(), a = h;
-							var _ = n.sqr().add(i.sqr());
-							return 0 <= s.sqr().add(a.sqr()).cmp(_) && (s = t, a = r), n.negative && (n = n.neg(), i = i.neg()), s.negative && (s = s.neg(), a = a.neg()), [{
+							var _ = n.sqr().add(o.sqr());
+							return 0 <= s.sqr().add(a.sqr()).cmp(_) && (s = t, a = r), n.negative && (n = n.neg(), o = o.neg()), s.negative && (s = s.neg(), a = a.neg()), [{
 								a: n,
-								b: i
+								b: o
 							}, {
 								a: s,
 								b: a
 							}]
-						}, l.prototype._endoSplit = function(e) {
+						}, u.prototype._endoSplit = function(e) {
 							var t = this.endo.basis,
 								r = t[0],
 								n = t[1],
@@ -2241,21 +2239,21 @@
 								k1: e.sub(s).sub(a),
 								k2: u.add(l).neg()
 							}
-						}, l.prototype.pointFromX = function(e, t) {
-							(e = new o(e, 16)).red || (e = e.toRed(this.red));
+						}, u.prototype.pointFromX = function(e, t) {
+							(e = new i(e, 16)).red || (e = e.toRed(this.red));
 							var r = e.redSqr().redMul(e).redIAdd(e.redMul(this.a)).redIAdd(this.b),
 								n = r.redSqrt();
 							if (0 !== n.redSqr().redSub(r).cmp(this.zero)) throw new Error("invalid point");
-							var i = n.fromRed().isOdd();
-							return (t && !i || !t && i) && (n = n.redNeg()), this.point(e, n)
-						}, l.prototype.validate = function(e) {
+							var o = n.fromRed().isOdd();
+							return (t && !o || !t && o) && (n = n.redNeg()), this.point(e, n)
+						}, u.prototype.validate = function(e) {
 							if (e.inf) return !0;
 							var t = e.x,
 								r = e.y,
 								n = this.a.redMul(t),
 								i = t.redSqr().redMul(t).redIAdd(n).redIAdd(this.b);
 							return 0 === r.redSqr().redISub(i).cmpn(0)
-						}, l.prototype._endoWnafMulAdd = function(e, t, r) {
+						}, u.prototype._endoWnafMulAdd = function(e, t, r) {
 							for (var n = this._endoWnafT1, i = this._endoWnafT2, o = 0; o < e.length; o++) {
 								var s = this._endoSplit(t[o]),
 									a = e[o],
@@ -2264,11 +2262,11 @@
 							}
 							for (var l = this._wnafMulAdd(1, n, i, 2 * o, r), h = 0; h < 2 * o; h++) n[h] = null, i[h] = null;
 							return l
-						}, s(h, a.BasePoint), l.prototype.point = function(e, t, r) {
-							return new h(this, e, t, r)
-						}, l.prototype.pointFromJSON = function(e, t) {
-							return h.fromJSON(this, e, t)
-						}, h.prototype._getBeta = function() {
+						}, o(l, s.BasePoint), u.prototype.point = function(e, t, r) {
+							return new l(this, e, t, r)
+						}, u.prototype.pointFromJSON = function(e, t) {
+							return l.fromJSON(this, e, t)
+						}, l.prototype._getBeta = function() {
 							if (this.curve.endo) {
 								var e = this.precomputed;
 								if (e && e.beta) return e.beta;
@@ -2292,7 +2290,7 @@
 								}
 								return t
 							}
-						}, h.prototype.toJSON = function() {
+						}, l.prototype.toJSON = function() {
 							return this.precomputed ? [this.x, this.y, this.precomputed && {
 								doubles: this.precomputed.doubles && {
 									step: this.precomputed.doubles.step,
@@ -2303,7 +2301,7 @@
 									points: this.precomputed.naf.points.slice(1)
 								}
 							}] : [this.x, this.y]
-						}, h.fromJSON = function(e, t, r) {
+						}, l.fromJSON = function(e, t, r) {
 							"string" == typeof t && (t = JSON.parse(t));
 							var n = e.point(t[0], t[1], r);
 							if (!t[2]) return n;
@@ -2323,11 +2321,11 @@
 									points: [n].concat(o.naf.points.map(i))
 								}
 							}, n
-						}, h.prototype.inspect = function() {
+						}, l.prototype.inspect = function() {
 							return this.isInfinity() ? "<EC Point Infinity>" : "<EC Point x: " + this.x.fromRed().toString(16, 2) + " y: " + this.y.fromRed().toString(16, 2) + ">"
-						}, h.prototype.isInfinity = function() {
+						}, l.prototype.isInfinity = function() {
 							return this.inf
-						}, h.prototype.add = function(e) {
+						}, l.prototype.add = function(e) {
 							if (this.inf) return e;
 							if (e.inf) return this;
 							if (this.eq(e)) return this.dbl();
@@ -2338,7 +2336,7 @@
 							var r = t.redSqr().redISub(this.x).redISub(e.x),
 								n = t.redMul(this.x.redSub(r)).redISub(this.y);
 							return this.curve.point(r, n)
-						}, h.prototype.dbl = function() {
+						}, l.prototype.dbl = function() {
 							if (this.inf) return this;
 							var e = this.y.redAdd(this.y);
 							if (0 === e.cmpn(0)) return this.curve.point(null, null);
@@ -2349,23 +2347,23 @@
 								o = i.redSqr().redISub(this.x.redAdd(this.x)),
 								s = i.redMul(this.x.redSub(o)).redISub(this.y);
 							return this.curve.point(o, s)
-						}, h.prototype.getX = function() {
+						}, l.prototype.getX = function() {
 							return this.x.fromRed()
-						}, h.prototype.getY = function() {
+						}, l.prototype.getY = function() {
 							return this.y.fromRed()
-						}, h.prototype.mul = function(e) {
-							return e = new o(e, 16), this._hasDoubles(e) ? this.curve._fixedNafMul(this, e) : this.curve.endo ? this.curve._endoWnafMulAdd([this], [e]) : this.curve._wnafMul(this, e)
-						}, h.prototype.mulAdd = function(e, t, r) {
+						}, l.prototype.mul = function(e) {
+							return e = new i(e, 16), this.isInfinity() ? this : this._hasDoubles(e) ? this.curve._fixedNafMul(this, e) : this.curve.endo ? this.curve._endoWnafMulAdd([this], [e]) : this.curve._wnafMul(this, e)
+						}, l.prototype.mulAdd = function(e, t, r) {
 							var n = [this, t],
 								i = [e, r];
 							return this.curve.endo ? this.curve._endoWnafMulAdd(n, i) : this.curve._wnafMulAdd(1, n, i, 2)
-						}, h.prototype.jmulAdd = function(e, t, r) {
+						}, l.prototype.jmulAdd = function(e, t, r) {
 							var n = [this, t],
 								i = [e, r];
 							return this.curve.endo ? this.curve._endoWnafMulAdd(n, i, !0) : this.curve._wnafMulAdd(1, n, i, 2, !0)
-						}, h.prototype.eq = function(e) {
+						}, l.prototype.eq = function(e) {
 							return this === e || this.inf === e.inf && (this.inf || 0 === this.x.cmp(e.x) && 0 === this.y.cmp(e.y))
-						}, h.prototype.neg = function(e) {
+						}, l.prototype.neg = function(e) {
 							if (this.inf) return this;
 							var t = this.curve.point(this.x, this.y.redNeg());
 							if (e && this.precomputed) {
@@ -2385,20 +2383,20 @@
 								}
 							}
 							return t
-						}, h.prototype.toJ = function() {
+						}, l.prototype.toJ = function() {
 							return this.inf ? this.curve.jpoint(null, null, null) : this.curve.jpoint(this.x, this.y, this.curve.one)
-						}, s(f, a.BasePoint), l.prototype.jpoint = function(e, t, r) {
-							return new f(this, e, t, r)
-						}, f.prototype.toP = function() {
+						}, o(h, s.BasePoint), u.prototype.jpoint = function(e, t, r) {
+							return new h(this, e, t, r)
+						}, h.prototype.toP = function() {
 							if (this.isInfinity()) return this.curve.point(null, null);
 							var e = this.z.redInvm(),
 								t = e.redSqr(),
 								r = this.x.redMul(t),
 								n = this.y.redMul(t).redMul(e);
 							return this.curve.point(r, n)
-						}, f.prototype.neg = function() {
+						}, h.prototype.neg = function() {
 							return this.curve.jpoint(this.x, this.y.redNeg(), this.z)
-						}, f.prototype.add = function(e) {
+						}, h.prototype.add = function(e) {
 							if (this.isInfinity()) return e;
 							if (e.isInfinity()) return this;
 							var t = e.z.redSqr(),
@@ -2417,7 +2415,7 @@
 								d = u.redMul(f.redISub(c)).redISub(o.redMul(h)),
 								p = this.z.redMul(e.z).redMul(a);
 							return this.curve.jpoint(c, d, p)
-						}, f.prototype.mixedAdd = function(e) {
+						}, h.prototype.mixedAdd = function(e) {
 							if (this.isInfinity()) return e.toJ();
 							if (e.isInfinity()) return this;
 							var t = this.z.redSqr(),
@@ -2435,7 +2433,7 @@
 								c = a.redMul(h.redISub(f)).redISub(i.redMul(l)),
 								d = this.z.redMul(s);
 							return this.curve.jpoint(f, c, d)
-						}, f.prototype.dblp = function(e) {
+						}, h.prototype.dblp = function(e) {
 							if (0 === e) return this;
 							if (this.isInfinity()) return this;
 							if (!e) return this.dbl();
@@ -2464,9 +2462,9 @@
 								r + 1 < e && (u = u.redMul(c)), o = v, a = g, l = m
 							}
 							return this.curve.jpoint(o, l.redMul(i), a)
-						}, f.prototype.dbl = function() {
+						}, h.prototype.dbl = function() {
 							return this.isInfinity() ? this : this.curve.zeroA ? this._zeroDbl() : this.curve.threeA ? this._threeDbl() : this._dbl()
-						}, f.prototype._zeroDbl = function() {
+						}, h.prototype._zeroDbl = function() {
 							var e, t, r;
 							if (this.zOne) {
 								var n = this.x.redSqr(),
@@ -2490,7 +2488,7 @@
 								y = (y = y.redIAdd(y)).redIAdd(y), e = v.redISub(d).redISub(d), t = p.redMul(d.redISub(e)).redISub(y), r = (r = this.y.redMul(this.z)).redIAdd(r)
 							}
 							return this.curve.jpoint(e, t, r)
-						}, f.prototype._threeDbl = function() {
+						}, h.prototype._threeDbl = function() {
 							var e, t, r;
 							if (this.zOne) {
 								var n = this.x.redSqr(),
@@ -2516,7 +2514,7 @@
 								y = (y = (y = y.redIAdd(y)).redIAdd(y)).redIAdd(y), t = d.redMul(p.redISub(e)).redISub(y)
 							}
 							return this.curve.jpoint(e, t, r)
-						}, f.prototype._dbl = function() {
+						}, h.prototype._dbl = function() {
 							var e = this.curve.a,
 								t = this.x,
 								r = this.y,
@@ -2534,7 +2532,7 @@
 							var d = a.redMul(f).redISub(c),
 								p = r.redAdd(r).redMul(n);
 							return this.curve.jpoint(h, d, p)
-						}, f.prototype.trpl = function() {
+						}, h.prototype.trpl = function() {
 							if (!this.curve.zeroA) return this.dbl().add(this);
 							var e = this.x.redSqr(),
 								t = this.y.redSqr(),
@@ -2555,9 +2553,9 @@
 							c = (c = (c = c.redIAdd(c)).redIAdd(c)).redIAdd(c);
 							var d = this.z.redAdd(s).redSqr().redISub(r).redISub(a);
 							return this.curve.jpoint(f, c, d)
-						}, f.prototype.mul = function(e, t) {
-							return e = new o(e, t), this.curve._wnafMul(this, e)
-						}, f.prototype.eq = function(e) {
+						}, h.prototype.mul = function(e, t) {
+							return e = new i(e, t), this.curve._wnafMul(this, e)
+						}, h.prototype.eq = function(e) {
 							if ("affine" === e.type) return this.eq(e.toJ());
 							if (this === e) return !0;
 							var t = this.z.redSqr(),
@@ -2566,7 +2564,7 @@
 							var n = t.redMul(this.z),
 								i = r.redMul(e.z);
 							return 0 === this.y.redMul(i).redISub(e.y.redMul(n)).cmpn(0)
-						}, f.prototype.eqXToP = function(e) {
+						}, h.prototype.eqXToP = function(e) {
 							var t = this.z.redSqr(),
 								r = e.toRed(this.curve.red).redMul(t);
 							if (0 === this.x.cmp(r)) return !0;
@@ -2574,15 +2572,14 @@
 								if (n.iadd(this.curve.n), 0 <= n.cmp(this.curve.p)) return !1;
 								if (r.redIAdd(i), 0 === this.x.cmp(r)) return !0
 							}
-							return !1
-						}, f.prototype.inspect = function() {
+						}, h.prototype.inspect = function() {
 							return this.isInfinity() ? "<EC JPoint Infinity>" : "<EC JPoint x: " + this.x.toString(16, 2) + " y: " + this.y.toString(16, 2) + " z: " + this.z.toString(16, 2) + ">"
-						}, f.prototype.isInfinity = function() {
+						}, h.prototype.isInfinity = function() {
 							return 0 === this.z.cmpn(0)
 						}
 					}, {
-						"../../elliptic": 12,
-						"../curve": 15,
+						"../utils": 24,
+						"./base": 13,
 						"bn.js": 9,
 						inherits: 39
 					}],
@@ -2590,11 +2587,11 @@
 						"use strict";
 						var n, i = r,
 							o = e("hash.js"),
-							s = e("../elliptic"),
-							a = s.utils.assert;
+							s = e("./curve"),
+							a = e("./utils").assert;
 
 						function u(e) {
-							"short" === e.type ? this.curve = new s.curve.short(e) : "edwards" === e.type ? this.curve = new s.curve.edwards(e) : this.curve = new s.curve.mont(e), this.g = this.curve.g, this.n = this.curve.n, this.hash = e.hash, a(this.g.validate(), "Invalid curve"), a(this.g.mul(this.n).isInfinity(), "Invalid curve, G*N != O")
+							"short" === e.type ? this.curve = new s.short(e) : "edwards" === e.type ? this.curve = new s.edwards(e) : this.curve = new s.mont(e), this.g = this.curve.g, this.n = this.curve.n, this.hash = e.hash, a(this.g.validate(), "Invalid curve"), a(this.g.mul(this.n).isInfinity(), "Invalid curve, G*N != O")
 						}
 
 						function l(e, t) {
@@ -2710,53 +2707,59 @@
 							g: ["79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798", "483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8", n]
 						})
 					}, {
-						"../elliptic": 12,
-						"./precomputed/secp256k1": 24,
-						"hash.js": 27
+						"./curve": 15,
+						"./precomputed/secp256k1": 23,
+						"./utils": 24,
+						"hash.js": 26
 					}],
 					19: [function(e, t, r) {
 						"use strict";
 						var n = e("bn.js"),
-							i = e("../../elliptic"),
-							o = i.utils.assert,
-							s = e("./key"),
-							a = e("./signature");
+							i = e("hmac-drbg"),
+							o = e("../utils"),
+							s = e("../curves"),
+							a = e("brorand"),
+							u = o.assert,
+							l = e("./key"),
+							h = e("./signature");
 
-						function u(e) {
-							if (!(this instanceof u)) return new u(e);
-							"string" == typeof e && (o(i.curves.hasOwnProperty(e), "Unknown curve " + e), e = i.curves[e]), e instanceof i.curves.PresetCurve && (e = {
+						function f(e) {
+							if (!(this instanceof f)) return new f(e);
+							"string" == typeof e && (u(s.hasOwnProperty(e), "Unknown curve " + e), e = s[e]), e instanceof s.PresetCurve && (e = {
 								curve: e
 							}), this.curve = e.curve.curve, this.n = this.curve.n, this.nh = this.n.ushrn(1), this.g = this.curve.g, this.g = e.curve.g, this.g.precompute(e.curve.n.bitLength() + 1), this.hash = e.hash || e.curve.hash
-						}(t.exports = u).prototype.keyPair = function(e) {
-							return new s(this, e)
-						}, u.prototype.keyFromPrivate = function(e, t) {
-							return s.fromPrivate(this, e, t)
-						}, u.prototype.keyFromPublic = function(e, t) {
-							return s.fromPublic(this, e, t)
-						}, u.prototype.genKeyPair = function(e) {
+						}(t.exports = f).prototype.keyPair = function(e) {
+							return new l(this, e)
+						}, f.prototype.keyFromPrivate = function(e, t) {
+							return l.fromPrivate(this, e, t)
+						}, f.prototype.keyFromPublic = function(e, t) {
+							return l.fromPublic(this, e, t)
+						}, f.prototype.genKeyPair = function(e) {
 							e = e || {};
-							for (var t = new i.hmacDRBG({
+							for (var t = new i({
 									hash: this.hash,
 									pers: e.pers,
-									entropy: e.entropy || i.rand(this.hash.hmacStrength),
+									persEnc: e.persEnc || "utf8",
+									entropy: e.entropy || a(this.hash.hmacStrength),
+									entropyEnc: e.entropy && e.entropyEnc || "utf8",
 									nonce: this.n.toArray()
 								}), r = this.n.byteLength(), o = this.n.sub(new n(2));;) {
 								var s = new n(t.generate(r));
 								if (!(0 < s.cmp(o))) return s.iaddn(1), this.keyFromPrivate(s)
 							}
-						}, u.prototype._truncateToN = function(e, t) {
+						}, f.prototype._truncateToN = function(e, t) {
 							var r = 8 * e.byteLength() - this.n.bitLength();
 							return 0 < r && (e = e.ushrn(r)), !t && 0 <= e.cmp(this.n) ? e.sub(this.n) : e
-						}, u.prototype.sign = function(e, t, r, o) {
+						}, f.prototype.sign = function(e, t, r, o) {
 							"object" == typeof r && (o = r, r = null), o = o || {}, t = this.keyFromPrivate(t, r), e = this._truncateToN(new n(e, 16));
-							for (var s = this.n.byteLength(), u = t.getPrivate().toArray("be", s), l = e.toArray("be", s), h = new i.hmacDRBG({
+							for (var s = this.n.byteLength(), a = t.getPrivate().toArray("be", s), u = e.toArray("be", s), l = new i({
 									hash: this.hash,
-									entropy: u,
-									nonce: l,
+									entropy: a,
+									nonce: u,
 									pers: o.pers,
-									persEnc: o.persEnc
+									persEnc: o.persEnc || "utf8"
 								}), f = this.n.sub(new n(1)), c = 0;; c++) {
-								var d = o.k ? o.k(c) : new n(h.generate(this.n.byteLength()));
+								var d = o.k ? o.k(c) : new n(l.generate(this.n.byteLength()));
 								if (!((d = this._truncateToN(d, !0)).cmpn(1) <= 0 || 0 <= d.cmp(f))) {
 									var p = this.g.mul(d);
 									if (!p.isInfinity()) {
@@ -2766,7 +2769,7 @@
 											var m = d.invm(this.n).mul(y.mul(t.getPrivate()).iadd(e));
 											if (0 !== (m = m.umod(this.n)).cmpn(0)) {
 												var g = (p.getY().isOdd() ? 1 : 0) | (0 !== v.cmp(y) ? 2 : 0);
-												return o.canonical && 0 < m.cmp(this.nh) && (m = this.n.sub(m), g ^= 1), new a({
+												return o.canonical && 0 < m.cmp(this.nh) && (m = this.n.sub(m), g ^= 1), new h({
 													r: y,
 													s: m,
 													recoveryParam: g
@@ -2776,32 +2779,32 @@
 									}
 								}
 							}
-						}, u.prototype.verify = function(e, t, r, i) {
+						}, f.prototype.verify = function(e, t, r, i) {
 							e = this._truncateToN(new n(e, 16)), r = this.keyFromPublic(r, i);
-							var o = (t = new a(t, "hex")).r,
+							var o = (t = new h(t, "hex")).r,
 								s = t.s;
 							if (o.cmpn(1) < 0 || 0 <= o.cmp(this.n)) return !1;
 							if (s.cmpn(1) < 0 || 0 <= s.cmp(this.n)) return !1;
-							var u, l = s.invm(this.n),
-								h = l.mul(e).umod(this.n),
-								f = l.mul(o).umod(this.n);
-							return this.curve._maxwellTrick ? !(u = this.g.jmulAdd(h, r.getPublic(), f)).isInfinity() && u.eqXToP(o) : !(u = this.g.mulAdd(h, r.getPublic(), f)).isInfinity() && 0 === u.getX().umod(this.n).cmp(o)
-						}, u.prototype.recoverPubKey = function(e, t, r, i) {
-							o((3 & r) === r, "The recovery param is more than two bits"), t = new a(t, i);
-							var s = this.n,
-								u = new n(e),
-								l = t.r,
-								h = t.s,
+							var a, u = s.invm(this.n),
+								l = u.mul(e).umod(this.n),
+								f = u.mul(o).umod(this.n);
+							return this.curve._maxwellTrick ? !(a = this.g.jmulAdd(l, r.getPublic(), f)).isInfinity() && a.eqXToP(o) : !(a = this.g.mulAdd(l, r.getPublic(), f)).isInfinity() && 0 === a.getX().umod(this.n).cmp(o)
+						}, f.prototype.recoverPubKey = function(e, t, r, i) {
+							u((3 & r) === r, "The recovery param is more than two bits"), t = new h(t, i);
+							var o = this.n,
+								s = new n(e),
+								a = t.r,
+								l = t.s,
 								f = 1 & r,
 								c = r >> 1;
-							if (0 <= l.cmp(this.curve.p.umod(this.curve.n)) && c) throw new Error("Unable to find sencond key candinate");
-							l = c ? this.curve.pointFromX(l.add(this.curve.n), f) : this.curve.pointFromX(l, f);
-							var d = t.r.invm(s),
-								p = s.sub(u).mul(d).umod(s),
-								v = h.mul(d).umod(s);
-							return this.g.mulAdd(p, l, v)
-						}, u.prototype.getKeyRecoveryParam = function(e, t, r, n) {
-							if (null !== (t = new a(t, n)).recoveryParam) return t.recoveryParam;
+							if (0 <= a.cmp(this.curve.p.umod(this.curve.n)) && c) throw new Error("Unable to find sencond key candinate");
+							a = c ? this.curve.pointFromX(a.add(this.curve.n), f) : this.curve.pointFromX(a, f);
+							var d = t.r.invm(o),
+								p = o.sub(s).mul(d).umod(o),
+								v = l.mul(d).umod(o);
+							return this.g.mulAdd(p, a, v)
+						}, f.prototype.getKeyRecoveryParam = function(e, t, r, n) {
+							if (null !== (t = new h(t, n)).recoveryParam) return t.recoveryParam;
 							for (var i = 0; i < 4; i++) {
 								var o;
 								try {
@@ -2814,15 +2817,18 @@
 							throw new Error("Unable to find valid recovery factor")
 						}
 					}, {
-						"../../elliptic": 12,
+						"../curves": 18,
+						"../utils": 24,
 						"./key": 20,
 						"./signature": 21,
-						"bn.js": 9
+						"bn.js": 9,
+						brorand: 10,
+						"hmac-drbg": 38
 					}],
 					20: [function(e, t, r) {
 						"use strict";
 						var n = e("bn.js"),
-							i = e("../../elliptic").utils.assert;
+							i = e("../utils").assert;
 
 						function o(e, t) {
 							this.ec = e, this.priv = null, this.pub = null, t.priv && this._importPrivate(t.priv, t.privEnc), t.pub && this._importPublic(t.pub, t.pubEnc)
@@ -2870,13 +2876,13 @@
 							return "<Key priv: " + (this.priv && this.priv.toString(16, 2)) + " pub: " + (this.pub && this.pub.inspect()) + " >"
 						}
 					}, {
-						"../../elliptic": 12,
+						"../utils": 24,
 						"bn.js": 9
 					}],
 					21: [function(e, t, r) {
 						"use strict";
 						var n = e("bn.js"),
-							i = e("../../elliptic").utils,
+							i = e("../utils"),
 							o = i.assert;
 
 						function s(e, t) {
@@ -2931,7 +2937,7 @@
 							return h(s, o.length), s = s.concat(o), i.encode(s, e)
 						}
 					}, {
-						"../../elliptic": 12,
+						"../utils": 24,
 						"bn.js": 9
 					}],
 					22: [function(e, t, r) {
@@ -2940,92 +2946,22 @@
 						dup: 14
 					}],
 					23: [function(e, t, r) {
-						"use strict";
-						var n = e("hash.js"),
-							i = e("../elliptic").utils,
-							o = i.assert;
-
-						function s(e) {
-							if (!(this instanceof s)) return new s(e);
-							this.hash = e.hash, this.predResist = !!e.predResist, this.outLen = this.hash.outSize, this.minEntropy = e.minEntropy || this.hash.hmacStrength, this.reseed = null, this.reseedInterval = null, this.K = null, this.V = null;
-							var t = i.toArray(e.entropy, e.entropyEnc),
-								r = i.toArray(e.nonce, e.nonceEnc),
-								n = i.toArray(e.pers, e.persEnc);
-							o(t.length >= this.minEntropy / 8, "Not enough entropy. Minimum is: " + this.minEntropy + " bits"), this._init(t, r, n)
-						}(t.exports = s).prototype._init = function(e, t, r) {
-							var n = e.concat(t).concat(r);
-							this.K = new Array(this.outLen / 8), this.V = new Array(this.outLen / 8);
-							for (var i = 0; i < this.V.length; i++) this.K[i] = 0, this.V[i] = 1;
-							this._update(n), this.reseed = 1, this.reseedInterval = 281474976710656
-						}, s.prototype._hmac = function() {
-							return new n.hmac(this.hash, this.K)
-						}, s.prototype._update = function(e) {
-							var t = this._hmac().update(this.V).update([0]);
-							e && (t = t.update(e)), this.K = t.digest(), this.V = this._hmac().update(this.V).digest(), e && (this.K = this._hmac().update(this.V).update([1]).update(e).digest(), this.V = this._hmac().update(this.V).digest())
-						}, s.prototype.reseed = function(e, t, r, n) {
-							"string" != typeof t && (n = r, r = t, t = null), e = i.toBuffer(e, t), r = i.toBuffer(r, n), o(e.length >= this.minEntropy / 8, "Not enough entropy. Minimum is: " + this.minEntropy + " bits"), this._update(e.concat(r || [])), this.reseed = 1
-						}, s.prototype.generate = function(e, t, r, n) {
-							if (this.reseed > this.reseedInterval) throw new Error("Reseed is required");
-							"string" != typeof t && (n = r, r = t, t = null), r && (r = i.toArray(r, n), this._update(r));
-							for (var o = []; o.length < e;) this.V = this._hmac().update(this.V).digest(), o = o.concat(this.V);
-							var s = o.slice(0, e);
-							return this._update(r), this.reseed++, i.encode(s, t)
-						}
-					}, {
-						"../elliptic": 12,
-						"hash.js": 27
-					}],
-					24: [function(e, t, r) {
 						t.exports = void 0
 					}, {}],
-					25: [function(e, t, r) {
+					24: [function(e, t, r) {
 						"use strict";
 						var n = r,
-							i = e("bn.js");
-
-						function o(e) {
-							return 1 === e.length ? "0" + e : e
-						}
-
-						function s(e) {
-							for (var t = "", r = 0; r < e.length; r++) t += o(e[r].toString(16));
-							return t
-						}
-						n.assert = function(e, t) {
-							if (!e) throw new Error(t || "Assertion failed")
-						}, n.toArray = function(e, t) {
-							if (Array.isArray(e)) return e.slice();
-							if (!e) return [];
-							var r = [];
-							if ("string" != typeof e) {
-								for (var n = 0; n < e.length; n++) r[n] = 0 | e[n];
-								return r
+							i = e("bn.js"),
+							o = e("minimalistic-assert"),
+							s = e("minimalistic-crypto-utils");
+						n.assert = o, n.toArray = s.toArray, n.zero2 = s.zero2, n.toHex = s.toHex, n.encode = s.encode, n.getNAF = function(e, t, r) {
+							var n = new Array(Math.max(e.bitLength(), r) + 1);
+							n.fill(0);
+							for (var i = 1 << t + 1, o = e.clone(), s = 0; s < n.length; s++) {
+								var a, u = o.andln(i - 1);
+								o.isOdd() ? (a = (i >> 1) - 1 < u ? (i >> 1) - u : u, o.isubn(a)) : a = 0, n[s] = a, o.iushrn(1)
 							}
-							if (t) {
-								if ("hex" === t)
-									for ((e = e.replace(/[^a-z0-9]+/gi, "")).length % 2 != 0 && (e = "0" + e), n = 0; n < e.length; n += 2) r.push(parseInt(e[n] + e[n + 1], 16))
-							} else
-								for (n = 0; n < e.length; n++) {
-									var i = e.charCodeAt(n),
-										o = i >> 8,
-										s = 255 & i;
-									o ? r.push(o, s) : r.push(s)
-								}
-							return r
-						}, n.zero2 = o, n.toHex = s, n.encode = function(e, t) {
-							return "hex" === t ? s(e) : e
-						}, n.getNAF = function(e, t) {
-							for (var r = [], n = 1 << t + 1, i = e.clone(); 0 <= i.cmpn(1);) {
-								var o;
-								if (i.isOdd()) {
-									var s = i.andln(n - 1);
-									o = (n >> 1) - 1 < s ? (n >> 1) - s : s, i.isubn(o)
-								} else o = 0;
-								r.push(o);
-								for (var a = 0 !== i.cmpn(0) && 0 === i.andln(n - 1) ? t + 1 : 1, u = 1; u < a; u++) r.push(0);
-								i.iushrn(a)
-							}
-							return r
+							return n
 						}, n.getJSF = function(e, t) {
 							var r = [
 								[],
@@ -3049,24 +2985,26 @@
 							return new i(e, "hex", "le")
 						}
 					}, {
-						"bn.js": 9
+						"bn.js": 9,
+						"minimalistic-assert": 41,
+						"minimalistic-crypto-utils": 42
 					}],
-					26: [function(e, t, r) {
+					25: [function(e, t, r) {
 						t.exports = {
-							version: "6.3.3"
+							version: "6.5.2"
 						}
 					}, {}],
-					27: [function(e, t, r) {
+					26: [function(e, t, r) {
 						var n = r;
 						n.utils = e("./hash/utils"), n.common = e("./hash/common"), n.sha = e("./hash/sha"), n.ripemd = e("./hash/ripemd"), n.hmac = e("./hash/hmac"), n.sha1 = n.sha.sha1, n.sha256 = n.sha.sha256, n.sha224 = n.sha.sha224, n.sha384 = n.sha.sha384, n.sha512 = n.sha.sha512, n.ripemd160 = n.ripemd.ripemd160
 					}, {
-						"./hash/common": 28,
-						"./hash/hmac": 29,
-						"./hash/ripemd": 30,
-						"./hash/sha": 31,
-						"./hash/utils": 38
+						"./hash/common": 27,
+						"./hash/hmac": 28,
+						"./hash/ripemd": 29,
+						"./hash/sha": 30,
+						"./hash/utils": 37
 					}],
-					28: [function(e, t, r) {
+					27: [function(e, t, r) {
 						"use strict";
 						var n = e("./utils"),
 							i = e("minimalistic-assert");
@@ -3097,10 +3035,10 @@
 							return n
 						}
 					}, {
-						"./utils": 38,
+						"./utils": 37,
 						"minimalistic-assert": 41
 					}],
-					29: [function(e, t, r) {
+					28: [function(e, t, r) {
 						"use strict";
 						var n = e("./utils"),
 							i = e("minimalistic-assert");
@@ -3120,10 +3058,10 @@
 							return this.outer.update(this.inner.digest()), this.outer.digest(e)
 						}
 					}, {
-						"./utils": 38,
+						"./utils": 37,
 						"minimalistic-assert": 41
 					}],
-					30: [function(e, t, r) {
+					29: [function(e, t, r) {
 						"use strict";
 						var n = e("./utils"),
 							i = e("./common"),
@@ -3163,18 +3101,23 @@
 							y = [11, 14, 15, 12, 5, 8, 7, 9, 11, 13, 14, 15, 6, 7, 9, 8, 7, 6, 8, 13, 11, 9, 7, 15, 7, 12, 15, 9, 11, 7, 13, 12, 11, 13, 6, 7, 14, 9, 13, 15, 14, 8, 13, 6, 5, 12, 7, 5, 11, 12, 14, 15, 14, 15, 9, 8, 9, 14, 5, 6, 8, 6, 5, 12, 9, 15, 5, 11, 6, 8, 13, 12, 5, 12, 13, 14, 11, 8, 5, 6],
 							m = [8, 9, 9, 11, 13, 15, 15, 5, 7, 7, 8, 11, 14, 14, 12, 6, 9, 13, 15, 7, 12, 8, 9, 11, 7, 7, 12, 7, 6, 15, 13, 11, 9, 7, 15, 11, 8, 6, 6, 14, 12, 13, 5, 14, 13, 13, 7, 5, 15, 5, 8, 11, 14, 14, 6, 14, 6, 9, 12, 9, 12, 5, 15, 8, 8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11]
 					}, {
-						"./common": 28,
-						"./utils": 38
+						"./common": 27,
+						"./utils": 37
 					}],
-					31: [function(e, t, r) {
+					30: [function(e, t, r) {
 						"use strict";
 						r.sha1 = e("./sha/1"), r.sha224 = e("./sha/224"), r.sha256 = e("./sha/256"), r.sha384 = e("./sha/384"), r.sha512 = e("./sha/512")
 					}, {
-						"./sha/1": 32,
-						"./sha/224": 33,
-						"./sha/256": 34,
-						"./sha/384": 35,
-						"./sha/512": 36
+						"./sha/1": 31,
+						"./sha/224": 32,
+						"./sha/256": 33,
+						"./sha/384": 34,
+						"./sha/512": 35
+					}],
+					31: [function(e, t, r) {
+						arguments[4][14][0].apply(r, arguments)
+					}, {
+						dup: 14
 					}],
 					32: [function(e, t, r) {
 						arguments[4][14][0].apply(r, arguments)
@@ -3182,11 +3125,6 @@
 						dup: 14
 					}],
 					33: [function(e, t, r) {
-						arguments[4][14][0].apply(r, arguments)
-					}, {
-						dup: 14
-					}],
-					34: [function(e, t, r) {
 						"use strict";
 						var n = e("../utils"),
 							i = e("../common"),
@@ -3229,17 +3167,17 @@
 							return "hex" === e ? n.toHex32(this.h, "big") : n.split32(this.h, "big")
 						}
 					}, {
-						"../common": 28,
-						"../utils": 38,
-						"./common": 37,
+						"../common": 27,
+						"../utils": 37,
+						"./common": 36,
 						"minimalistic-assert": 41
 					}],
-					35: [function(e, t, r) {
+					34: [function(e, t, r) {
 						arguments[4][14][0].apply(r, arguments)
 					}, {
 						dup: 14
 					}],
-					36: [function(e, t, r) {
+					35: [function(e, t, r) {
 						"use strict";
 						var n = e("../utils"),
 							i = e("../common"),
@@ -3303,12 +3241,12 @@
 							return r < 0 && (r += 4294967296), r
 						}
 
-						function P(e, t) {
+						function x(e, t) {
 							var r = s(e, t, 1) ^ s(e, t, 8) ^ u(e, t, 7);
 							return r < 0 && (r += 4294967296), r
 						}
 
-						function x(e, t) {
+						function P(e, t) {
 							var r = a(e, t, 1) ^ a(e, t, 8) ^ l(e, t, 7);
 							return r < 0 && (r += 4294967296), r
 						}
@@ -3329,8 +3267,8 @@
 									o = T(r[n - 4], r[n - 3]),
 									s = r[n - 14],
 									a = r[n - 13],
-									u = P(r[n - 30], r[n - 29]),
-									l = x(r[n - 30], r[n - 29]),
+									u = x(r[n - 30], r[n - 29]),
+									l = P(r[n - 30], r[n - 29]),
 									h = r[n - 32],
 									f = r[n - 31];
 								r[n] = d(i, o, s, a, u, l, h, f), r[n + 1] = p(i, o, s, a, u, l, h, f)
@@ -3349,40 +3287,40 @@
 								m = this.h[8],
 								g = this.h[9],
 								b = this.h[10],
-								P = this.h[11],
-								x = this.h[12],
+								x = this.h[11],
+								P = this.h[12],
 								I = this.h[13],
 								T = this.h[14],
 								R = this.h[15];
 							o(this.k.length === r.length);
 							for (var O = 0; O < r.length; O += 2) {
 								var C = T,
-									D = R,
-									B = k(m, g),
-									L = N(m, g),
-									U = w(m, 0, b, 0, x),
-									F = _(0, g, 0, P, 0, I),
+									L = R,
+									D = k(m, g),
+									B = N(m, g),
+									U = w(m, 0, b, 0, P),
+									F = _(0, g, 0, x, 0, I),
 									j = this.k[O],
 									G = this.k[O + 1],
 									H = r[O],
 									z = r[O + 1],
-									V = v(C, D, B, L, U, F, j, G, H, z),
-									K = y(C, D, B, L, U, F, j, G, H, z);
-								C = E(n, i), D = S(n, i), B = M(n, 0, s, 0, u), L = A(0, i, 0, a, 0, l);
-								var q = f(C, D, B, L),
-									W = c(C, D, B, L);
-								T = x, R = I, x = b, I = P, b = m, P = g, m = f(d, p, V, K), g = c(p, p, V, K), d = u, p = l, u = s, l = a, s = n, a = i, n = f(V, K, q, W), i = c(V, K, q, W)
+									V = v(C, L, D, B, U, F, j, G, H, z),
+									K = y(C, L, D, B, U, F, j, G, H, z);
+								C = E(n, i), L = S(n, i), D = M(n, 0, s, 0, u), B = A(0, i, 0, a, 0, l);
+								var q = f(C, L, D, B),
+									W = c(C, L, D, B);
+								T = P, R = I, P = b, I = x, b = m, x = g, m = f(d, p, V, K), g = c(p, p, V, K), d = u, p = l, u = s, l = a, s = n, a = i, n = f(V, K, q, W), i = c(V, K, q, W)
 							}
-							h(this.h, 0, n, i), h(this.h, 2, s, a), h(this.h, 4, u, l), h(this.h, 6, d, p), h(this.h, 8, m, g), h(this.h, 10, b, P), h(this.h, 12, x, I), h(this.h, 14, T, R)
+							h(this.h, 0, n, i), h(this.h, 2, s, a), h(this.h, 4, u, l), h(this.h, 6, d, p), h(this.h, 8, m, g), h(this.h, 10, b, x), h(this.h, 12, P, I), h(this.h, 14, T, R)
 						}, b.prototype._digest = function(e) {
 							return "hex" === e ? n.toHex32(this.h, "big") : n.split32(this.h, "big")
 						}
 					}, {
-						"../common": 28,
-						"../utils": 38,
+						"../common": 27,
+						"../utils": 37,
 						"minimalistic-assert": 41
 					}],
-					37: [function(e, t, r) {
+					36: [function(e, t, r) {
 						"use strict";
 						var n = e("../utils").rotr32;
 
@@ -3409,9 +3347,9 @@
 							return n(e, 17) ^ n(e, 19) ^ e >>> 10
 						}
 					}, {
-						"../utils": 38
+						"../utils": 37
 					}],
-					38: [function(e, t, r) {
+					37: [function(e, t, r) {
 						"use strict";
 						var n = e("minimalistic-assert"),
 							i = e("inherits");
@@ -3512,6 +3450,43 @@
 					}, {
 						inherits: 39,
 						"minimalistic-assert": 41
+					}],
+					38: [function(e, t, r) {
+						"use strict";
+						var n = e("hash.js"),
+							i = e("minimalistic-crypto-utils"),
+							o = e("minimalistic-assert");
+
+						function s(e) {
+							if (!(this instanceof s)) return new s(e);
+							this.hash = e.hash, this.predResist = !!e.predResist, this.outLen = this.hash.outSize, this.minEntropy = e.minEntropy || this.hash.hmacStrength, this._reseed = null, this.reseedInterval = null, this.K = null, this.V = null;
+							var t = i.toArray(e.entropy, e.entropyEnc || "hex"),
+								r = i.toArray(e.nonce, e.nonceEnc || "hex"),
+								n = i.toArray(e.pers, e.persEnc || "hex");
+							o(t.length >= this.minEntropy / 8, "Not enough entropy. Minimum is: " + this.minEntropy + " bits"), this._init(t, r, n)
+						}(t.exports = s).prototype._init = function(e, t, r) {
+							var n = e.concat(t).concat(r);
+							this.K = new Array(this.outLen / 8), this.V = new Array(this.outLen / 8);
+							for (var i = 0; i < this.V.length; i++) this.K[i] = 0, this.V[i] = 1;
+							this._update(n), this._reseed = 1, this.reseedInterval = 281474976710656
+						}, s.prototype._hmac = function() {
+							return new n.hmac(this.hash, this.K)
+						}, s.prototype._update = function(e) {
+							var t = this._hmac().update(this.V).update([0]);
+							e && (t = t.update(e)), this.K = t.digest(), this.V = this._hmac().update(this.V).digest(), e && (this.K = this._hmac().update(this.V).update([1]).update(e).digest(), this.V = this._hmac().update(this.V).digest())
+						}, s.prototype.reseed = function(e, t, r, n) {
+							"string" != typeof t && (n = r, r = t, t = null), e = i.toArray(e, t), r = i.toArray(r, n), o(e.length >= this.minEntropy / 8, "Not enough entropy. Minimum is: " + this.minEntropy + " bits"), this._update(e.concat(r || [])), this._reseed = 1
+						}, s.prototype.generate = function(e, t, r, n) {
+							if (this._reseed > this.reseedInterval) throw new Error("Reseed is required");
+							"string" != typeof t && (n = r, r = t, t = null), r && (r = i.toArray(r, n || "hex"), this._update(r));
+							for (var o = []; o.length < e;) this.V = this._hmac().update(this.V).digest(), o = o.concat(this.V);
+							var s = o.slice(0, e);
+							return this._update(r), this._reseed++, i.encode(s, t)
+						}
+					}, {
+						"hash.js": 26,
+						"minimalistic-assert": 41,
+						"minimalistic-crypto-utils": 42
 					}],
 					39: [function(e, t, r) {
 						"function" == typeof Object.create ? t.exports = function(e, t) {
@@ -3649,8 +3624,8 @@
 									return o && (e = a << 2, t = n[s], 0 < o && (u[e] = 255 & t), 1 < o && (u[e + 1] = t >> 8 & 255), 2 < o && (u[e + 2] = t >> 16 & 255)), u
 								};
 								var M = function(e) {
-									var t, r, n, i, o, s, u, l, h, f, c, d, p, v, y, m, g, b, w, _, M, A, E, S, k, N, P, x, I, T, R, O, C, D, B, L, U, F, j, G, H, z, V, K, q, W, Z, J, X, $, Q, Y, ee, te, re, ne, ie, oe, se, ae, ue, le, he;
-									for (n = 0; n < 48; n += 2) i = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], s = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], u = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], h = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], f = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], c = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (d = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (s << 1 | u >>> 31), r = (p = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (u << 1 | s >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = i ^ (l << 1 | h >>> 31), r = o ^ (h << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = s ^ (f << 1 | c >>> 31), r = u ^ (c << 1 | f >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (d << 1 | p >>> 31), r = h ^ (p << 1 | d >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = f ^ (i << 1 | o >>> 31), r = c ^ (o << 1 | i >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, v = e[0], y = e[1], W = e[11] << 4 | e[10] >>> 28, Z = e[10] << 4 | e[11] >>> 28, x = e[20] << 3 | e[21] >>> 29, I = e[21] << 3 | e[20] >>> 29, ae = e[31] << 9 | e[30] >>> 23, ue = e[30] << 9 | e[31] >>> 23, z = e[40] << 18 | e[41] >>> 14, V = e[41] << 18 | e[40] >>> 14, D = e[2] << 1 | e[3] >>> 31, B = e[3] << 1 | e[2] >>> 31, m = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, J = e[22] << 10 | e[23] >>> 22, X = e[23] << 10 | e[22] >>> 22, T = e[33] << 13 | e[32] >>> 19, R = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, he = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, L = e[14] << 6 | e[15] >>> 26, U = e[15] << 6 | e[14] >>> 26, b = e[25] << 11 | e[24] >>> 21, w = e[24] << 11 | e[25] >>> 21, $ = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, O = e[45] << 29 | e[44] >>> 3, C = e[44] << 29 | e[45] >>> 3, S = e[6] << 28 | e[7] >>> 4, k = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, ie = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, j = e[27] << 25 | e[26] >>> 7, _ = e[36] << 21 | e[37] >>> 11, M = e[37] << 21 | e[36] >>> 11, Y = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, K = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, N = e[18] << 20 | e[19] >>> 12, P = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, se = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, H = e[39] << 8 | e[38] >>> 24, A = e[48] << 14 | e[49] >>> 18, E = e[49] << 14 | e[48] >>> 18, e[0] = v ^ ~m & b, e[1] = y ^ ~g & w, e[10] = S ^ ~N & x, e[11] = k ^ ~P & I, e[20] = D ^ ~L & F, e[21] = B ^ ~U & j, e[30] = K ^ ~W & J, e[31] = q ^ ~Z & X, e[40] = te ^ ~ne & oe, e[41] = re ^ ~ie & se, e[2] = m ^ ~b & _, e[3] = g ^ ~w & M, e[12] = N ^ ~x & T, e[13] = P ^ ~I & R, e[22] = L ^ ~F & G, e[23] = U ^ ~j & H, e[32] = W ^ ~J & $, e[33] = Z ^ ~X & Q, e[42] = ne ^ ~oe & ae, e[43] = ie ^ ~se & ue, e[4] = b ^ ~_ & A, e[5] = w ^ ~M & E, e[14] = x ^ ~T & O, e[15] = I ^ ~R & C, e[24] = F ^ ~G & z, e[25] = j ^ ~H & V, e[34] = J ^ ~$ & Y, e[35] = X ^ ~Q & ee, e[44] = oe ^ ~ae & le, e[45] = se ^ ~ue & he, e[6] = _ ^ ~A & v, e[7] = M ^ ~E & y, e[16] = T ^ ~O & S, e[17] = R ^ ~C & k, e[26] = G ^ ~z & D, e[27] = H ^ ~V & B, e[36] = $ ^ ~Y & K, e[37] = Q ^ ~ee & q, e[46] = ae ^ ~le & te, e[47] = ue ^ ~he & re, e[8] = A ^ ~v & m, e[9] = E ^ ~y & g, e[18] = O ^ ~S & N, e[19] = C ^ ~k & P, e[28] = z ^ ~D & L, e[29] = V ^ ~B & U, e[38] = Y ^ ~K & W, e[39] = ee ^ ~q & Z, e[48] = le ^ ~te & ne, e[49] = he ^ ~re & ie, e[0] ^= a[n], e[1] ^= a[n + 1]
+									var t, r, n, i, o, s, u, l, h, f, c, d, p, v, y, m, g, b, w, _, M, A, E, S, k, N, x, P, I, T, R, O, C, L, D, B, U, F, j, G, H, z, V, K, q, W, Z, J, X, $, Q, Y, ee, te, re, ne, ie, oe, se, ae, ue, le, he;
+									for (n = 0; n < 48; n += 2) i = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], s = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], u = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], h = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], f = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], c = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (d = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (s << 1 | u >>> 31), r = (p = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (u << 1 | s >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = i ^ (l << 1 | h >>> 31), r = o ^ (h << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = s ^ (f << 1 | c >>> 31), r = u ^ (c << 1 | f >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (d << 1 | p >>> 31), r = h ^ (p << 1 | d >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = f ^ (i << 1 | o >>> 31), r = c ^ (o << 1 | i >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, v = e[0], y = e[1], W = e[11] << 4 | e[10] >>> 28, Z = e[10] << 4 | e[11] >>> 28, P = e[20] << 3 | e[21] >>> 29, I = e[21] << 3 | e[20] >>> 29, ae = e[31] << 9 | e[30] >>> 23, ue = e[30] << 9 | e[31] >>> 23, z = e[40] << 18 | e[41] >>> 14, V = e[41] << 18 | e[40] >>> 14, L = e[2] << 1 | e[3] >>> 31, D = e[3] << 1 | e[2] >>> 31, m = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, J = e[22] << 10 | e[23] >>> 22, X = e[23] << 10 | e[22] >>> 22, T = e[33] << 13 | e[32] >>> 19, R = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, he = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, U = e[15] << 6 | e[14] >>> 26, b = e[25] << 11 | e[24] >>> 21, w = e[24] << 11 | e[25] >>> 21, $ = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, O = e[45] << 29 | e[44] >>> 3, C = e[44] << 29 | e[45] >>> 3, S = e[6] << 28 | e[7] >>> 4, k = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, ie = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, j = e[27] << 25 | e[26] >>> 7, _ = e[36] << 21 | e[37] >>> 11, M = e[37] << 21 | e[36] >>> 11, Y = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, K = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, N = e[18] << 20 | e[19] >>> 12, x = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, se = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, H = e[39] << 8 | e[38] >>> 24, A = e[48] << 14 | e[49] >>> 18, E = e[49] << 14 | e[48] >>> 18, e[0] = v ^ ~m & b, e[1] = y ^ ~g & w, e[10] = S ^ ~N & P, e[11] = k ^ ~x & I, e[20] = L ^ ~B & F, e[21] = D ^ ~U & j, e[30] = K ^ ~W & J, e[31] = q ^ ~Z & X, e[40] = te ^ ~ne & oe, e[41] = re ^ ~ie & se, e[2] = m ^ ~b & _, e[3] = g ^ ~w & M, e[12] = N ^ ~P & T, e[13] = x ^ ~I & R, e[22] = B ^ ~F & G, e[23] = U ^ ~j & H, e[32] = W ^ ~J & $, e[33] = Z ^ ~X & Q, e[42] = ne ^ ~oe & ae, e[43] = ie ^ ~se & ue, e[4] = b ^ ~_ & A, e[5] = w ^ ~M & E, e[14] = P ^ ~T & O, e[15] = I ^ ~R & C, e[24] = F ^ ~G & z, e[25] = j ^ ~H & V, e[34] = J ^ ~$ & Y, e[35] = X ^ ~Q & ee, e[44] = oe ^ ~ae & le, e[45] = se ^ ~ue & he, e[6] = _ ^ ~A & v, e[7] = M ^ ~E & y, e[16] = T ^ ~O & S, e[17] = R ^ ~C & k, e[26] = G ^ ~z & L, e[27] = H ^ ~V & D, e[36] = $ ^ ~Y & K, e[37] = Q ^ ~ee & q, e[46] = ae ^ ~le & te, e[47] = ue ^ ~he & re, e[8] = A ^ ~v & m, e[9] = E ^ ~y & g, e[18] = O ^ ~S & N, e[19] = C ^ ~k & x, e[28] = z ^ ~L & B, e[29] = V ^ ~D & U, e[38] = Y ^ ~K & W, e[39] = ee ^ ~q & Z, e[48] = le ^ ~te & ne, e[49] = he ^ ~re & ie, e[0] ^= a[n], e[1] ^= a[n + 1]
 								};
 								if (i) r.exports = p;
 								else
@@ -3658,7 +3633,7 @@
 							}()
 						}).call(this, e("_process"), void 0 !== t ? t : "undefined" != typeof self ? self : "undefined" != typeof window ? window : {})
 					}, {
-						_process: 42
+						_process: 43
 					}],
 					41: [function(e, t, r) {
 						(t.exports = function(e, t) {
@@ -3668,11 +3643,45 @@
 						}
 					}, {}],
 					42: [function(e, t, r) {
+						"use strict";
+						var n = r;
+
+						function i(e) {
+							return 1 === e.length ? "0" + e : e
+						}
+
+						function o(e) {
+							for (var t = "", r = 0; r < e.length; r++) t += i(e[r].toString(16));
+							return t
+						}
+						n.toArray = function(e, t) {
+							if (Array.isArray(e)) return e.slice();
+							if (!e) return [];
+							var r = [];
+							if ("string" != typeof e) {
+								for (var n = 0; n < e.length; n++) r[n] = 0 | e[n];
+								return r
+							}
+							if ("hex" === t)
+								for ((e = e.replace(/[^a-z0-9]+/gi, "")).length % 2 != 0 && (e = "0" + e), n = 0; n < e.length; n += 2) r.push(parseInt(e[n] + e[n + 1], 16));
+							else
+								for (n = 0; n < e.length; n++) {
+									var i = e.charCodeAt(n),
+										o = i >> 8,
+										s = 255 & i;
+									o ? r.push(o, s) : r.push(s)
+								}
+							return r
+						}, n.zero2 = i, n.toHex = o, n.encode = function(e, t) {
+							return "hex" === t ? o(e) : e
+						}
+					}, {}],
+					43: [function(e, t, r) {
 						t.exports = {
 							browser: !0
 						}
 					}, {}],
-					43: [function(e, t, r) {
+					44: [function(e, t, r) {
 						(function(e) {
 							"use strict";
 
@@ -3798,23 +3807,23 @@
 									S = new Uint32Array(16),
 									k = a * n * 2,
 									N = 0,
-									P = null,
-									x = !1,
+									x = null,
+									P = !1,
 									I = 0,
 									T = 0,
 									R = parseInt(1e3 / s),
 									O = void 0 !== e ? e : setTimeout,
 									C = function() {
-										if (x) return d(new Error("cancelled"), N / k);
+										if (P) return d(new Error("cancelled"), N / k);
 										switch (I) {
 											case 0:
 												l(y, w = 32 * T * s, _, 0, A), I = 1, b = 0;
 											case 1:
 												R < (r = n - b) && (r = R);
 												for (var e = 0; e < r; e++) l(_, 0, M, (b + e) * A, A), o(_, A, s, E, S);
-												if (b += r, N += r, (h = parseInt(1e3 * N / k)) !== P) {
-													if (x = d(null, N / k)) break;
-													P = h
+												if (b += r, N += r, (h = parseInt(1e3 * N / k)) !== x) {
+													if (P = d(null, N / k)) break;
+													x = h
 												}
 												if (b < n) break;
 												b = 0, I = 2;
@@ -3824,9 +3833,9 @@
 													var f = _[16 * (2 * s - 1)] & n - 1;
 													u(M, f * A, _, A), o(_, A, s, E, S)
 												}
-												if (b += r, N += r, (h = parseInt(1e3 * N / k)) !== P) {
-													if (x = d(null, N / k)) break;
-													P = h
+												if (b += r, N += r, (h = parseInt(1e3 * N / k)) !== x) {
+													if (P = d(null, N / k)) break;
+													x = h
 												}
 												if (b < n) break;
 												if (l(_, 0, y, w, A), ++T < a) {
@@ -3845,9 +3854,9 @@
 							d = this, p = 2147483647, void 0 !== r ? t.exports = c : d && (d.scrypt && (d._scrypt = d.scrypt), d.scrypt = c)
 						}).call(this, e("timers").setImmediate)
 					}, {
-						timers: 45
+						timers: 46
 					}],
-					44: [function(e, r, n) {
+					45: [function(e, r, n) {
 						(function(e, t, r) {
 							! function(t, r) {
 								"use strict";
@@ -3924,17 +3933,17 @@
 							}("undefined" == typeof self ? void 0 === t ? this : t : self)
 						}).call(this, e("_process"), void 0 !== t ? t : "undefined" != typeof self ? self : "undefined" != typeof window ? window : {}, e("timers").clearImmediate)
 					}, {
-						_process: 42,
-						timers: 45
+						_process: 43,
+						timers: 46
 					}],
-					45: [function(e, r, n) {
+					46: [function(e, r, n) {
 						(function(e) {
 							r.exports = {
 								setImmediate: e.setImmediate
 							}
 						}).call(this, void 0 !== t ? t : "undefined" != typeof self ? self : "undefined" != typeof window ? window : {})
 					}, {}],
-					46: [function(e, r, n) {
+					47: [function(e, r, n) {
 						(function(e) {
 							var t;
 							if (e.crypto && crypto.getRandomValues) {
@@ -3953,7 +3962,7 @@
 							r.exports = t
 						}).call(this, void 0 !== t ? t : "undefined" != typeof self ? self : "undefined" != typeof window ? window : {})
 					}, {}],
-					47: [function(e, t, r) {
+					48: [function(e, t, r) {
 						for (var n = e("./rng"), i = [], o = {}, s = 0; s < 256; s++) i[s] = (s + 256).toString(16).substr(1), o[i[s]] = s;
 
 						function a(e, t) {
@@ -4000,9 +4009,9 @@
 							return t
 						}, p.unparse = a, t.exports = p
 					}, {
-						"./rng": 46
+						"./rng": 47
 					}],
-					48: [function(e, t, r) {
+					49: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -4013,7 +4022,7 @@
 							console.log("Warning: XMLHttpRequest is not defined"), t.exports.XMLHttpRequest = null
 						}
 					}, {}],
-					49: [function(e, t, r) {
+					50: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -4028,9 +4037,9 @@
 						}
 						r.Provider = i
 					}, {
-						"../utils/properties": 73
+						"../utils/properties": 74
 					}],
-					50: [function(e, t, r) {
+					51: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -4149,9 +4158,9 @@
 							}
 							var r = b(k, e),
 								n = e.networkId;
-							return null != e.chainId && null == n && null == r.v && (n = e.chainId), u.isHexString(n) && (n = a.bigNumberify(n).toNumber()), "number" != typeof n && null != r.v && ((n = (r.v - 35) / 2) < 0 && (n = 0), n = parseInt(n)), "number" != typeof n && (n = 0), r.networkId = n, r.blockHash && "x" === r.blockHash.replace(/0/g, "") && (r.blockHash = null), r
+							return null != e.chainId && null == n && null == r.v && (n = e.chainId), u.isHexString(n) && (n = a.bigNumberify(n).toNumber()), "number" != typeof n && null != r.v && ((n = (r.v - 35) / 2) < 0 && (n = 0), n = parseInt(n)), "number" != typeof n && (n = 0), r.networkId = n, null == r.chainId && null != n && (r.chainId = n), r.blockHash && "x" === r.blockHash.replace(/0/g, "") && (r.blockHash = null), r
 						}
-						var P = {
+						var x = {
 								hash: M,
 								parentHash: M,
 								number: A,
@@ -4170,12 +4179,12 @@
 								extraData: u.hexlify,
 								transactions: w(_(M))
 							},
-							x = c.shallowCopy(P);
+							P = c.shallowCopy(x);
 
 						function I(e, t) {
-							return null != e.author && null == e.miner && (e.miner = e.author), b(t ? x : P, e)
+							return null != e.author && null == e.miner && (e.miner = e.author), b(t ? P : x, e)
 						}
-						x.transactions = w(_(N));
+						P.transactions = w(_(N));
 						var T = {
 							from: w(s.getAddress),
 							nonce: w(A),
@@ -4219,21 +4228,21 @@
 								status: w(A)
 							};
 
-						function D(e) {
+						function L(e) {
 							return Array.isArray(e) ? e.forEach((function(e) {
-								D(e)
+								L(e)
 							})) : null != e && M(e), e
 						}
-						var B, L = {
+						var D, B = {
 								fromBlock: w(S, void 0),
 								toBlock: w(S, void 0),
 								address: w(s.getAddress, void 0),
-								topics: w(D, void 0)
+								topics: w(L, void 0)
 							},
 							U = {
 								blockHash: w(M, void 0),
 								address: w(s.getAddress, void 0),
-								topics: w(D, void 0)
+								topics: w(L, void 0)
 							},
 							F = {
 								blockNumber: w(A),
@@ -4248,8 +4257,8 @@
 									throw new Error("invaid boolean - " + e)
 								})),
 								address: s.getAddress,
-								data: (B = u.hexlify, function(e) {
-									return e ? B(e) : "0x"
+								data: (D = u.hexlify, function(e) {
+									return e ? D(e) : "0x"
 								}),
 								topics: _(M),
 								transactionHash: M,
@@ -4292,7 +4301,7 @@
 						var V, K = (i(q, V = g.Provider), q.prototype._doPoll = function() {
 							var e = this;
 							this.getBlockNumber().then((function(t) {
-								if (e._setFastBlockNumber(t), t !== e._lastBlockNumber) {
+								if (e.polling && (e._setFastBlockNumber(t), t !== e._lastBlockNumber)) {
 									-2 === e._emitted.block && (e._emitted.block = t - 1);
 									for (var r = e._emitted.block + 1; r <= t; r++) e.emit("block", r);
 									e._emitted.block !== t && (e._emitted.block = t, Object.keys(e._emitted).forEach((function(r) {
@@ -4686,7 +4695,7 @@
 									return t._resolveNames(e, ["address"]).then((function(e) {
 										var r = {
 											filter: function(e) {
-												return e && e.blockHash ? b(U, e) : b(L, e)
+												return e && e.blockHash ? b(U, e) : b(B, e)
 											}(e)
 										};
 										return t.perform("getLogs", r).then((function(e) {
@@ -4736,23 +4745,25 @@
 									return t === l.AddressZero ? null : t
 								}))
 							}))
-						}, q.prototype.resolveName = function(e) {
-							var t = this;
-							if (e instanceof Promise) return e.then((function(e) {
-								return t.resolveName(e)
+						}, q.prototype.resolveName = function(t) {
+							var r = this;
+							if (t instanceof Promise) return t.then((function(e) {
+								return r.resolveName(e)
 							}));
 							try {
-								return Promise.resolve(s.getAddress(e))
-							} catch (e) {}
-							var r = this,
-								n = h.namehash(e);
-							return this._getResolver(e).then((function(e) {
+								return Promise.resolve(s.getAddress(t))
+							} catch (e) {
+								if (u.isHexString(t)) throw e
+							}
+							var n = this,
+								i = h.namehash(t);
+							return this._getResolver(t).then((function(e) {
 								if (null == e) return null;
 								var t = {
 									to: e,
-									data: "0x3b3b57de" + n.substring(2)
+									data: "0x3b3b57de" + i.substring(2)
 								};
-								return r.call(t)
+								return n.call(t)
 							})).then((function(e) {
 								if (32 !== u.hexDataLength(e)) return null;
 								var t = s.getAddress(u.hexDataSlice(e, 12));
@@ -4863,19 +4874,19 @@
 					}, {
 						"../constants": 3,
 						"../errors": 5,
-						"../utils/address": 59,
-						"../utils/bignumber": 62,
-						"../utils/bytes": 63,
-						"../utils/hash": 64,
-						"../utils/networks": 71,
-						"../utils/properties": 73,
-						"../utils/rlp": 75,
-						"../utils/transaction": 82,
-						"../utils/utf8": 84,
-						"../utils/web": 85,
-						"./abstract-provider": 49
+						"../utils/address": 60,
+						"../utils/bignumber": 63,
+						"../utils/bytes": 64,
+						"../utils/hash": 65,
+						"../utils/networks": 72,
+						"../utils/properties": 74,
+						"../utils/rlp": 76,
+						"../utils/transaction": 83,
+						"../utils/utf8": 85,
+						"../utils/web": 86,
+						"./abstract-provider": 50
 					}],
-					51: [function(e, t, r) {
+					52: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -4974,15 +4985,13 @@
 										throw e.responseText && (0 <= e.responseText.toLowerCase().indexOf("insufficient funds") && h.throwError("insufficient funds", h.INSUFFICIENT_FUNDS, {}), 0 <= e.responseText.indexOf("same hash was already imported") && h.throwError("nonce has already been used", h.NONCE_EXPIRED, {}), 0 <= e.responseText.indexOf("another transaction with same nonce") && h.throwError("replacement fee too low", h.REPLACEMENT_UNDERPRICED, {})), e
 									}));
 								case "getBlock":
-									if (t.blockTag) return n += "/api?module=proxy&action=eth_getBlockByNumber&tag=" + t.blockTag, t.includeTransactions ? n += "&boolean=true" : n += "&boolean=false", o(n += i);
-									throw new Error("getBlock by blockHash not implmeneted");
+									return t.blockTag ? (n += "/api?module=proxy&action=eth_getBlockByNumber&tag=" + t.blockTag, t.includeTransactions ? n += "&boolean=true" : n += "&boolean=false", o(n += i)) : Promise.reject(new Error("getBlock by blockHash not implemeneted"));
 								case "getTransaction":
 									return n += "/api?module=proxy&action=eth_getTransactionByHash&txhash=" + t.transactionHash, o(n += i);
 								case "getTransactionReceipt":
 									return n += "/api?module=proxy&action=eth_getTransactionReceipt&txhash=" + t.transactionHash, o(n += i);
 								case "call":
-									if (n += "/api?module=proxy&action=eth_call" + (s = (s = f(t.transaction)) && "&" + s), "latest" !== t.blockTag) throw new Error("EtherscanProvider does not support blockTag for call");
-									return o(n += i);
+									return n += "/api?module=proxy&action=eth_call" + (s = (s = f(t.transaction)) && "&" + s), "latest" !== t.blockTag ? Promise.reject(new Error("EtherscanProvider does not support blockTag for call")) : o(n += i);
 								case "estimateGas":
 									var s;
 									return n += "/api?module=proxy&action=eth_estimateGas&" + (s = (s = f(t.transaction)) && "&" + s), o(n += i);
@@ -5074,17 +5083,17 @@
 								default:
 									throw new Error("unsupported network")
 							}
-							return u.defineReadOnly(r, "baseUrl", i), u.defineReadOnly(r, "apiKey", t), r
+							return u.defineReadOnly(r, "baseUrl", i), u.defineReadOnly(r, "apiKey", t || "8FG3JMZ9USS4NTA6YKEKHINU56SEPPVBJR"), r
 						}
 						r.EtherscanProvider = y
 					}, {
 						"../errors": 5,
-						"../utils/bytes": 63,
-						"../utils/properties": 73,
-						"../utils/web": 85,
-						"./base-provider": 50
+						"../utils/bytes": 64,
+						"../utils/properties": 74,
+						"../utils/web": 86,
+						"./base-provider": 51
 					}],
-					52: [function(e, t, r) {
+					53: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -5162,9 +5171,9 @@
 						r.FallbackProvider = h
 					}, {
 						"../errors": 5,
-						"./base-provider": 50
+						"./base-provider": 51
 					}],
-					53: [function(e, t, r) {
+					54: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -5186,16 +5195,16 @@
 						var h = e("./web3-provider");
 						r.Web3Provider = h.Web3Provider
 					}, {
-						"./abstract-provider": 49,
-						"./base-provider": 50,
-						"./etherscan-provider": 51,
-						"./fallback-provider": 52,
-						"./infura-provider": 54,
-						"./ipc-provider": 55,
-						"./json-rpc-provider": 56,
-						"./web3-provider": 57
+						"./abstract-provider": 50,
+						"./base-provider": 51,
+						"./etherscan-provider": 52,
+						"./fallback-provider": 53,
+						"./infura-provider": 55,
+						"./ipc-provider": 56,
+						"./json-rpc-provider": 57,
+						"./web3-provider": 58
 					}],
-					54: [function(e, t, r) {
+					55: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -5268,18 +5277,18 @@
 						r.InfuraProvider = c
 					}, {
 						"../errors": 5,
-						"../utils/bytes": 63,
-						"../utils/networks": 71,
-						"../utils/properties": 73,
-						"./json-rpc-provider": 56
+						"../utils/bytes": 64,
+						"../utils/networks": 72,
+						"../utils/properties": 74,
+						"./json-rpc-provider": 57
 					}],
-					55: [function(e, t, r) {
+					56: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
 						})
 					}, {}],
-					56: [function(e, t, r) {
+					57: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -5543,15 +5552,15 @@
 					}, {
 						"../abstract-signer": 2,
 						"../errors": 5,
-						"../utils/address": 59,
-						"../utils/bytes": 63,
-						"../utils/networks": 71,
-						"../utils/properties": 73,
-						"../utils/utf8": 84,
-						"../utils/web": 85,
-						"./base-provider": 50
+						"../utils/address": 60,
+						"../utils/bytes": 64,
+						"../utils/networks": 72,
+						"../utils/properties": 74,
+						"../utils/utf8": 85,
+						"../utils/web": 86,
+						"./base-provider": 51
 					}],
-					57: [function(e, t, r) {
+					58: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -5608,15 +5617,15 @@
 							return l.checkNew(r, c), e && (e.sendAsync ? r._sendAsync = e.sendAsync.bind(e) : e.send && (r._sendAsync = e.send.bind(e))), e && r._sendAsync || l.throwError("invalid web3Provider", l.INVALID_ARGUMENT, {
 								arg: "web3Provider",
 								value: e
-							}), u.defineReadOnly(r, "_web3Provider", e), r
+							}), u.defineReadOnly(r, "_web3Provider", e), u.defineReadOnly(r, "provider", e), r
 						}
 						r.Web3Provider = f
 					}, {
 						"../errors": 5,
-						"../utils/properties": 73,
-						"./json-rpc-provider": 56
+						"../utils/properties": 74,
+						"./json-rpc-provider": 57
 					}],
-					58: [function(e, t, r) {
+					59: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -5841,7 +5850,7 @@
 						function N(e, t) {
 							return S.call(this, e, "null", "", t, !1) || this
 						}
-						var P, x = (i(I, P = _), I.prototype.encode = function(e) {
+						var x, P = (i(I, x = _), I.prototype.encode = function(e) {
 							try {
 								var t = l.bigNumberify(e);
 								if (this.signed) {
@@ -5875,9 +5884,9 @@
 						function I(e, t, r, n) {
 							var i = this,
 								o = (r ? "int" : "uint") + 8 * t;
-							return (i = P.call(this, e, o, o, n, !1) || this).size = t, i.signed = r, i
+							return (i = x.call(this, e, o, o, n, !1) || this).size = t, i.signed = r, i
 						}
-						var T, R = new x((function(e, t) {
+						var T, R = new P((function(e, t) {
 								return t
 							}), 32, !1, "none"),
 							O = (i(C, T = _), C.prototype.encode = function(e) {
@@ -5901,7 +5910,7 @@
 						function C(e, t) {
 							return T.call(this, e, "bool", "bool", t, !1) || this
 						}
-						var D, B = (i(L, D = _), L.prototype.encode = function(e) {
+						var L, D = (i(B, L = _), B.prototype.encode = function(e) {
 							var t = new Uint8Array(32);
 							try {
 								var r = h.arrayify(e);
@@ -5915,7 +5924,7 @@
 								})
 							}
 							return t
-						}, L.prototype.decode = function(e, t) {
+						}, B.prototype.decode = function(e, t) {
 							return e.length < t + 32 && a.throwError("insufficient data for " + this.name + " type", a.INVALID_ARGUMENT, {
 								arg: this.localName,
 								coderType: this.name,
@@ -5924,12 +5933,12 @@
 								consumed: 32,
 								value: this.coerceFunc(this.name, h.hexlify(e.slice(t, t + this.length)))
 							}
-						}, L);
+						}, B);
 
-						function L(e, t, r) {
+						function B(e, t, r) {
 							var n = this,
 								i = "bytes" + t;
-							return (n = D.call(this, e, i, i, r, !1) || this).length = t, n
+							return (n = L.call(this, e, i, i, r, !1) || this).length = t, n
 						}
 						var U, F = (i(j, U = _), j.prototype.encode = function(e) {
 							var t = new Uint8Array(32);
@@ -6166,11 +6175,11 @@
 							if (r = t.type.match(p)) return (0 === (i = parseInt(r[2] || "256")) || 256 < i || i % 8 != 0) && a.throwError("invalid " + r[1] + " bit length", a.INVALID_ARGUMENT, {
 								arg: "param",
 								value: t
-							}), new x(e, i / 8, "int" === r[1], t.name);
+							}), new P(e, i / 8, "int" === r[1], t.name);
 							if (r = t.type.match(d)) return (0 === (i = parseInt(r[1])) || 32 < i) && a.throwError("invalid bytes length", a.INVALID_ARGUMENT, {
 								arg: "param",
 								value: t
-							}), new B(e, i, t.name);
+							}), new D(e, i, t.name);
 							if (r = t.type.match(v)) {
 								var i = parseInt(r[2] || "-1");
 								return (t = c.shallowCopy(t)).type = r[1], t = c.deepCopy(t), new Y(e, se(e, t), i, t.name)
@@ -6216,13 +6225,13 @@
 					}, {
 						"../constants": 3,
 						"../errors": 5,
-						"./address": 59,
-						"./bignumber": 62,
-						"./bytes": 63,
-						"./properties": 73,
-						"./utf8": 84
+						"./address": 60,
+						"./bignumber": 63,
+						"./bytes": 64,
+						"./properties": 74,
+						"./utf8": 85
 					}],
-					59: [function(e, t, r) {
+					60: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importDefault || function(e) {
 							return e && e.__esModule ? e : {
@@ -6293,15 +6302,30 @@
 							if (!e.from) throw new Error("missing from address");
 							var t = e.nonce;
 							return v("0x" + s.keccak256(a.encode([v(e.from), o.stripZeros(o.hexlify(t))])).substring(26))
+						}, r.getCreate2Address = function(e) {
+							var t = e.initCodeHash;
+							e.initCode && (t ? s.keccak256(e.initCode) !== t && u.throwError("initCode/initCodeHash mismatch", u.INVALID_ARGUMENT, {
+								arg: "options",
+								value: e
+							}) : t = s.keccak256(e.initCode)), t || u.throwError("missing initCode or initCodeHash", u.INVALID_ARGUMENT, {
+								arg: "options",
+								value: e
+							});
+							var r = v(e.from),
+								n = o.arrayify(e.salt);
+							return 32 !== n.length && u.throwError("invalid salt", u.INVALID_ARGUMENT, {
+								arg: "options",
+								value: e
+							}), v("0x" + s.keccak256(o.concat(["0xff", r, n, t])).substring(26))
 						}
 					}, {
 						"../errors": 5,
-						"./bytes": 63,
-						"./keccak256": 70,
-						"./rlp": 75,
+						"./bytes": 64,
+						"./keccak256": 71,
+						"./rlp": 76,
 						"bn.js": 9
 					}],
-					60: [function(e, t, r) {
+					61: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -6320,9 +6344,9 @@
 							}
 						}
 					}, {
-						"../utils/bytes": 63
+						"../utils/bytes": 64
 					}],
-					61: [function(e, t, r) {
+					62: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -6363,10 +6387,10 @@
 						var u = new o("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz");
 						r.Base58 = u
 					}, {
-						"./bytes": 63,
-						"./properties": 73
+						"./bytes": 64,
+						"./properties": 74
 					}],
-					62: [function(e, t, r) {
+					63: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importDefault || function(e) {
 								return e && e.__esModule ? e : {
@@ -6493,11 +6517,11 @@
 						r.BigNumber = p, r.bigNumberify = y
 					}, {
 						"../errors": 5,
-						"./bytes": 63,
-						"./properties": 73,
+						"./bytes": 64,
+						"./properties": 74,
 						"bn.js": 9
 					}],
-					63: [function(e, t, r) {
+					64: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -6669,7 +6693,7 @@
 					}, {
 						"../errors": 5
 					}],
-					64: [function(e, t, r) {
+					65: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -6709,11 +6733,11 @@
 						}
 					}, {
 						"../errors": 5,
-						"./bytes": 63,
-						"./keccak256": 70,
-						"./utf8": 84
+						"./bytes": 64,
+						"./keccak256": 71,
+						"./utf8": 85
 					}],
-					65: [function(e, t, r) {
+					66: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -6883,18 +6907,18 @@
 						}
 					}, {
 						"../errors": 5,
-						"../wordlists/lang-en": 89,
-						"./basex": 61,
-						"./bignumber": 62,
-						"./bytes": 63,
-						"./hmac": 66,
-						"./pbkdf2": 72,
-						"./properties": 73,
-						"./secp256k1": 76,
-						"./sha2": 78,
-						"./utf8": 84
+						"../wordlists/lang-en": 90,
+						"./basex": 62,
+						"./bignumber": 63,
+						"./bytes": 64,
+						"./hmac": 67,
+						"./pbkdf2": 73,
+						"./properties": 74,
+						"./secp256k1": 77,
+						"./sha2": 79,
+						"./utf8": 85
 					}],
-					66: [function(e, t, r) {
+					67: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -6917,10 +6941,10 @@
 						}
 					}, {
 						"../errors": 5,
-						"../utils/bytes": 63,
-						"hash.js": 27
+						"../utils/bytes": 64,
+						"hash.js": 26
 					}],
-					67: [function(e, t, r) {
+					68: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -6935,7 +6959,7 @@
 						var i = e("./abi-coder");
 						r.AbiCoder = i.AbiCoder, r.defaultAbiCoder = i.defaultAbiCoder, r.formatSignature = i.formatSignature, r.formatParamType = i.formatParamType, r.parseSignature = i.parseSignature, r.parseParamType = i.parseParamType;
 						var o = e("./address");
-						r.getAddress = o.getAddress, r.getContractAddress = o.getContractAddress, r.getIcapAddress = o.getIcapAddress;
+						r.getAddress = o.getAddress, r.getContractAddress = o.getContractAddress, r.getCreate2Address = o.getCreate2Address, r.getIcapAddress = o.getIcapAddress;
 						var s = n(e("./base64"));
 						r.base64 = s;
 						var a = e("./bignumber");
@@ -6980,37 +7004,37 @@
 						r.fetchJson = k.fetchJson, r.poll = k.poll;
 						var N = e("./hmac");
 						r.SupportedAlgorithms = N.SupportedAlgorithms;
-						var P = e("./utf8");
-						r.UnicodeNormalizationForm = P.UnicodeNormalizationForm;
-						var x = e("./wordlist");
-						r.Wordlist = x.Wordlist
+						var x = e("./utf8");
+						r.UnicodeNormalizationForm = x.UnicodeNormalizationForm;
+						var P = e("./wordlist");
+						r.Wordlist = P.Wordlist
 					}, {
-						"./abi-coder": 58,
-						"./address": 59,
-						"./base64": 60,
-						"./bignumber": 62,
-						"./bytes": 63,
-						"./hash": 64,
-						"./hdnode": 65,
-						"./hmac": 66,
-						"./interface": 68,
-						"./json-wallet": 69,
-						"./keccak256": 70,
-						"./networks": 71,
-						"./properties": 73,
-						"./random-bytes": 74,
-						"./rlp": 75,
-						"./secp256k1": 76,
-						"./sha2": 78,
-						"./signing-key": 80,
-						"./solidity": 81,
-						"./transaction": 82,
-						"./units": 83,
-						"./utf8": 84,
-						"./web": 85,
-						"./wordlist": 86
+						"./abi-coder": 59,
+						"./address": 60,
+						"./base64": 61,
+						"./bignumber": 63,
+						"./bytes": 64,
+						"./hash": 65,
+						"./hdnode": 66,
+						"./hmac": 67,
+						"./interface": 69,
+						"./json-wallet": 70,
+						"./keccak256": 71,
+						"./networks": 72,
+						"./properties": 74,
+						"./random-bytes": 75,
+						"./rlp": 76,
+						"./secp256k1": 77,
+						"./sha2": 79,
+						"./signing-key": 81,
+						"./solidity": 82,
+						"./transaction": 83,
+						"./units": 84,
+						"./utf8": 85,
+						"./web": 86,
+						"./wordlist": 87
 					}],
-					68: [function(e, t, r) {
+					69: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -7146,10 +7170,10 @@
 						function N() {
 							return null !== S && S.apply(this, arguments) || this
 						}
-						var P, x = (i(I, P = s), I);
+						var x, P = (i(I, x = s), I);
 
 						function I() {
-							return null !== P && P.apply(this, arguments) || this
+							return null !== x && x.apply(this, arguments) || this
 						}
 						var T, R = (i(O, T = s), O);
 
@@ -7168,13 +7192,14 @@
 									break;
 								case "function":
 									var r = l.formatSignature(e).replace(/tuple/g, ""),
-										n = c.id(r).substring(0, 10);
-									t = new w({
+										n = c.id(r).substring(0, 10),
+										i = !1;
+									null != e.constant ? i = e.constant : null != e.stateMutability && (i = "view" == e.stateMutability || "pure" == e.stateMutability), t = new w({
 										inputs: e.inputs,
 										outputs: e.outputs,
 										gas: e.gas,
 										payable: null == e.payable || !!e.payable,
-										type: e.constant ? "call" : "transaction",
+										type: i ? "call" : "transaction",
 										name: e.name,
 										signature: r,
 										sighash: n
@@ -7195,14 +7220,14 @@
 									v.warn("WARNING: unsupported ABI type - " + e.type)
 							}
 						}
-						var D = (B.prototype.parseTransaction = function(e) {
+						var L = (D.prototype.parseTransaction = function(e) {
 							var t = e.data.substring(0, 10).toLowerCase();
 							for (var r in this.functions)
 								if (-1 !== r.indexOf("(")) {
 									var n = this.functions[r];
 									if (n.sighash === t) {
 										var i = l.defaultAbiCoder.decode(n.inputs, "0x" + e.data.substring(10));
-										return new x({
+										return new P({
 											args: i,
 											decode: n.decode,
 											name: n.name,
@@ -7212,7 +7237,7 @@
 										})
 									}
 								} return null
-						}, B.prototype.parseLog = function(e) {
+						}, D.prototype.parseLog = function(e) {
 							for (var t in this.events)
 								if (-1 !== t.indexOf("(")) {
 									var r = this.events[t];
@@ -7224,14 +7249,14 @@
 										values: r.decode(e.data, e.topics)
 									})
 								} return null
-						}, B.isInterface = function(e) {
+						}, D.isInterface = function(e) {
 							return p.isType(e, "Interface")
-						}, B.isIndexed = function(e) {
+						}, D.isIndexed = function(e) {
 							return p.isType(e, "Indexed")
-						}, B);
+						}, D);
 
-						function B(t) {
-							if (v.checkNew(this, B), "string" == typeof t) {
+						function D(t) {
+							if (v.checkNew(this, D), "string" == typeof t) {
 								try {
 									t = JSON.parse(t)
 								} catch (e) {
@@ -7255,18 +7280,18 @@
 								inputs: []
 							}), p.setType(this, "Interface")
 						}
-						r.Interface = D
+						r.Interface = L
 					}, {
 						"../errors": 5,
-						"./abi-coder": 58,
-						"./address": 59,
-						"./bignumber": 62,
-						"./bytes": 63,
-						"./hash": 64,
-						"./keccak256": 70,
-						"./properties": 73
+						"./abi-coder": 59,
+						"./address": 60,
+						"./bignumber": 63,
+						"./bytes": 64,
+						"./hash": 65,
+						"./keccak256": 71,
+						"./properties": 74
 					}],
-					69: [function(e, t, r) {
+					70: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -7304,9 +7329,9 @@
 							return null
 						}
 					}, {
-						"./address": 59
+						"./address": 60
 					}],
-					70: [function(e, t, r) {
+					71: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -7317,10 +7342,10 @@
 							return "0x" + n.keccak_256(i.arrayify(e))
 						}
 					}, {
-						"./bytes": 63,
+						"./bytes": 64,
 						"js-sha3": 40
 					}],
-					71: [function(e, t, r) {
+					72: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -7348,13 +7373,13 @@
 						}
 						var a = {
 								chainId: 1,
-								ensAddress: "0x314159265dd8dbb310642f98f50c066173c1259b",
+								ensAddress: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
 								name: "homestead",
 								_defaultProvider: o("homestead")
 							},
 							u = {
 								chainId: 3,
-								ensAddress: "0x112234455c3a32fd11230c42e7bccd4a84e02010",
+								ensAddress: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
 								name: "ropsten",
 								_defaultProvider: o("ropsten")
 							},
@@ -7373,13 +7398,13 @@
 								testnet: u,
 								rinkeby: {
 									chainId: 4,
-									ensAddress: "0xe7410170f87102DF0055eB195163A03B7F2Bff4A",
+									ensAddress: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
 									name: "rinkeby",
 									_defaultProvider: o("rinkeby")
 								},
 								goerli: {
 									chainId: 5,
-									ensAddress: "0x112234455c3a32fd11230c42e7bccd4a84e02010",
+									ensAddress: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
 									name: "goerli",
 									_defaultProvider: o("goerli")
 								},
@@ -7442,7 +7467,7 @@
 					}, {
 						"../errors": 5
 					}],
-					72: [function(e, t, r) {
+					73: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -7471,10 +7496,10 @@
 							return n.arrayify(f)
 						}
 					}, {
-						"../utils/bytes": 63,
-						"./hmac": 66
+						"../utils/bytes": 64,
+						"./hmac": 67
 					}],
-					73: [function(e, t, r) {
+					74: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -7574,7 +7599,7 @@
 					}, {
 						"../errors": 5
 					}],
-					74: [function(e, r, n) {
+					75: [function(e, r, n) {
 						(function(t) {
 							"use strict";
 							Object.defineProperty(n, "__esModule", {
@@ -7599,10 +7624,10 @@
 							}), n.randomBytes = s, !0 === o._weakCrypto && i.defineReadOnly(s, "_weakCrypto", !0)
 						}).call(this, void 0 !== t ? t : "undefined" != typeof self ? self : "undefined" != typeof window ? window : {})
 					}, {
-						"../utils/bytes": 63,
-						"../utils/properties": 73
+						"../utils/bytes": 64,
+						"../utils/properties": 74
 					}],
-					75: [function(e, t, r) {
+					76: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -7681,9 +7706,9 @@
 							return r.result
 						}
 					}, {
-						"./bytes": 63
+						"./bytes": 64
 					}],
-					76: [function(e, t, r) {
+					77: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -7764,14 +7789,14 @@
 						}
 					}, {
 						"../errors": 5,
-						"./address": 59,
-						"./bytes": 63,
-						"./hash": 64,
-						"./keccak256": 70,
-						"./properties": 73,
+						"./address": 60,
+						"./bytes": 64,
+						"./hash": 65,
+						"./keccak256": 71,
+						"./properties": 74,
 						elliptic: 12
 					}],
-					77: [function(e, t, r) {
+					78: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importDefault || function(e) {
 								return e && e.__esModule ? e : {
@@ -7859,17 +7884,18 @@
 								if (!n) return t(new Error("unsupported cipher")), null;
 								var a = new u.SigningKey(n);
 								if (i.address && a.address !== h.getAddress(i.address)) return t(new Error("address mismatch")), null;
-								if ("0.1" === b(i, "x-ethers/version")) {
-									var c = y(b(i, "x-ethers/mnemonicCiphertext")),
-										p = y(b(i, "x-ethers/mnemonicCounter")),
-										v = new o.default.Counter(p),
-										m = new o.default.ModeOfOperation.ctr(s, v),
-										g = b(i, "x-ethers/path") || l.defaultPath,
-										w = f.arrayify(m.decrypt(c)),
-										_ = l.entropyToMnemonic(w),
-										M = l.fromMnemonic(_).derivePath(g);
-									if (M.privateKey != f.hexlify(n)) return t(new Error("mnemonic mismatch")), null;
-									a = new u.SigningKey(M)
+								var c = b(i, "x-ethers/locale");
+								if ("0.1" === b(i, "x-ethers/version") && (null == c || "en" === c)) {
+									var p = y(b(i, "x-ethers/mnemonicCiphertext")),
+										v = y(b(i, "x-ethers/mnemonicCounter")),
+										m = new o.default.Counter(v),
+										g = new o.default.ModeOfOperation.ctr(s, m),
+										w = b(i, "x-ethers/path") || l.defaultPath,
+										_ = f.arrayify(g.decrypt(p)),
+										M = l.entropyToMnemonic(_),
+										A = l.fromMnemonic(M).derivePath(w);
+									if (A.privateKey != f.hexlify(n)) return t(new Error("mnemonic mismatch")), null;
+									a = new u.SigningKey(A)
 								}
 								return a
 							}
@@ -7919,7 +7945,7 @@
 							if (r.entropy && (c = f.arrayify(r.entropy)), r.mnemonic)
 								if (c) {
 									if (l.entropyToMnemonic(c) !== r.mnemonic) throw new Error("entropy and mnemonic mismatch")
-								} else c = f.arrayify(l.mnemonicToEntropy(r.mnemonic));
+								} else c = f.arrayify(l.mnemonicToEntropy(r.mnemonic, r.wordlist));
 							var p = r.path;
 							c && !p && (p = l.defaultPath);
 							var y, b = r.client;
@@ -7936,19 +7962,19 @@
 								A = 8,
 								E = 1;
 							return r.scrypt && (r.scrypt.N && (M = r.scrypt.N), r.scrypt.r && (A = r.scrypt.r), r.scrypt.p && (E = r.scrypt.p)), new Promise((function(e, t) {
-								n && n(0), s.default(h, y, M, A, E, 64, (function(r, s, l) {
-									if (r) r.progress = s, t(r);
-									else if (l) {
-										var h = (l = f.arrayify(l)).slice(0, 16),
-											g = l.slice(16, 32),
-											S = l.slice(32, 64),
-											k = new u.SigningKey(i).address,
-											N = new o.default.Counter(w),
-											P = new o.default.ModeOfOperation.ctr(h, N),
-											x = f.arrayify(P.encrypt(i)),
-											I = d.keccak256(f.concat([g, x])),
-											T = {
-												address: k.substring(2).toLowerCase(),
+								n && n(0), s.default(h, y, M, A, E, 64, (function(s, l, h) {
+									if (s) s.progress = l, t(s);
+									else if (h) {
+										var g = (h = f.arrayify(h)).slice(0, 16),
+											S = h.slice(16, 32),
+											k = h.slice(32, 64),
+											N = new u.SigningKey(i).address,
+											x = new o.default.Counter(w),
+											P = new o.default.ModeOfOperation.ctr(g, x),
+											I = f.arrayify(P.encrypt(i)),
+											T = d.keccak256(f.concat([S, I])),
+											R = {
+												address: N.substring(2).toLowerCase(),
 												id: a.default.v4({
 													random: _
 												}),
@@ -7958,7 +7984,7 @@
 													cipherparams: {
 														iv: f.hexlify(w).substring(2)
 													},
-													ciphertext: f.hexlify(x).substring(2),
+													ciphertext: f.hexlify(I).substring(2),
 													kdf: "scrypt",
 													kdfparams: {
 														salt: f.hexlify(y).substring(2),
@@ -7967,44 +7993,44 @@
 														p: E,
 														r: A
 													},
-													mac: I.substring(2)
+													mac: T.substring(2)
 												}
 											};
 										if (c) {
-											var R = v.randomBytes(16),
-												O = new o.default.Counter(R),
-												C = new o.default.ModeOfOperation.ctr(S, O),
-												D = f.arrayify(C.encrypt(c)),
+											var O = v.randomBytes(16),
+												C = new o.default.Counter(O),
+												L = new o.default.ModeOfOperation.ctr(k, C),
+												D = f.arrayify(L.encrypt(c)),
 												B = new Date,
-												L = B.getUTCFullYear() + "-" + m(B.getUTCMonth() + 1, 2) + "-" + m(B.getUTCDate(), 2) + "T" + m(B.getUTCHours(), 2) + "-" + m(B.getUTCMinutes(), 2) + "-" + m(B.getUTCSeconds(), 2) + ".0Z";
-											T["x-ethers"] = {
+												U = B.getUTCFullYear() + "-" + m(B.getUTCMonth() + 1, 2) + "-" + m(B.getUTCDate(), 2) + "T" + m(B.getUTCHours(), 2) + "-" + m(B.getUTCMinutes(), 2) + "-" + m(B.getUTCSeconds(), 2) + ".0Z";
+											R["x-ethers"] = {
 												client: b,
-												gethFilename: "UTC--" + L + "--" + T.address,
-												mnemonicCounter: f.hexlify(R).substring(2),
+												gethFilename: "UTC--" + U + "--" + R.address,
+												mnemonicCounter: f.hexlify(O).substring(2),
 												mnemonicCiphertext: f.hexlify(D).substring(2),
 												path: p,
 												version: "0.1"
-											}
+											}, r.wordlist && "string" == typeof r.wordlist.locale && (R["x-ethers"].locale = r.wordlist.locale)
 										}
-										n && n(1), e(JSON.stringify(T))
-									} else if (n) return n(s)
+										n && n(1), e(JSON.stringify(R))
+									} else if (n) return n(l)
 								}))
 							}))
 						}
 					}, {
-						"./address": 59,
-						"./bytes": 63,
-						"./hdnode": 65,
-						"./keccak256": 70,
-						"./pbkdf2": 72,
-						"./random-bytes": 74,
-						"./signing-key": 80,
-						"./utf8": 84,
+						"./address": 60,
+						"./bytes": 64,
+						"./hdnode": 66,
+						"./keccak256": 71,
+						"./pbkdf2": 73,
+						"./random-bytes": 75,
+						"./signing-key": 81,
+						"./utf8": 85,
 						"aes-js": 8,
-						"scrypt-js": 43,
-						uuid: 47
+						"scrypt-js": 44,
+						uuid: 48
 					}],
-					78: [function(e, t, r) {
+					79: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importDefault || function(e) {
 							return e && e.__esModule ? e : {
@@ -8024,18 +8050,18 @@
 							return "0x" + i.default.sha512().update(o.arrayify(e)).digest("hex")
 						}
 					}, {
-						"./bytes": 63,
-						"hash.js": 27
+						"./bytes": 64,
+						"hash.js": 26
 					}],
-					79: [function(e, t, r) {
+					80: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
 						}), e("setimmediate"), r.platform = "browser"
 					}, {
-						setimmediate: 44
+						setimmediate: 45
 					}],
-					80: [function(e, t, r) {
+					81: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -8081,12 +8107,12 @@
 						r.SigningKey = l
 					}, {
 						"../errors": 5,
-						"./bytes": 63,
-						"./hdnode": 65,
-						"./properties": 73,
-						"./secp256k1": 76
+						"./bytes": 64,
+						"./hdnode": 66,
+						"./properties": 74,
+						"./secp256k1": 77
 					}],
-					81: [function(e, t, r) {
+					82: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -8145,13 +8171,13 @@
 							return a.sha256(c(e, t))
 						}
 					}, {
-						"./bignumber": 62,
-						"./bytes": 63,
-						"./keccak256": 70,
-						"./sha2": 78,
-						"./utf8": 84
+						"./bignumber": 63,
+						"./bytes": 64,
+						"./keccak256": 71,
+						"./sha2": 79,
+						"./utf8": 85
 					}],
-					82: [function(e, t, r) {
+					83: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -8281,16 +8307,16 @@
 					}, {
 						"../constants": 3,
 						"../errors": 5,
-						"../providers/abstract-provider": 49,
-						"./address": 59,
-						"./bignumber": 62,
-						"./bytes": 63,
-						"./keccak256": 70,
-						"./properties": 73,
-						"./rlp": 75,
-						"./secp256k1": 76
+						"../providers/abstract-provider": 50,
+						"./address": 60,
+						"./bignumber": 63,
+						"./bytes": 64,
+						"./keccak256": 71,
+						"./properties": 74,
+						"./rlp": 76,
+						"./secp256k1": 77
 					}],
-					83: [function(e, t, r) {
+					84: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -8395,9 +8421,9 @@
 					}, {
 						"../constants": 3,
 						"../errors": 5,
-						"./bignumber": 62
+						"./bignumber": 63
 					}],
-					84: [function(e, t, r) {
+					85: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -8478,9 +8504,9 @@
 					}, {
 						"../constants": 3,
 						"../errors": 5,
-						"./bytes": 63
+						"./bytes": 64
 					}],
-					85: [function(e, t, r) {
+					86: [function(e, t, r) {
 						"use strict";
 						var n = this && this.__importStar || function(e) {
 							if (e && e.__esModule) return e;
@@ -8604,12 +8630,12 @@
 						}
 					}, {
 						"../errors": 5,
-						"./base64": 60,
-						"./properties": 73,
-						"./utf8": 84,
-						xmlhttprequest: 48
+						"./base64": 61,
+						"./properties": 74,
+						"./utf8": 85,
+						xmlhttprequest: 49
 					}],
-					86: [function(e, r, n) {
+					87: [function(e, r, n) {
 						(function(t) {
 							"use strict";
 							Object.defineProperty(n, "__esModule", {
@@ -8639,10 +8665,10 @@
 							}
 						}).call(this, void 0 !== t ? t : "undefined" != typeof self ? self : "undefined" != typeof window ? window : {})
 					}, {
-						"../utils/hash": 64,
-						"../utils/properties": 73
+						"../utils/hash": 65,
+						"../utils/properties": 74
 					}],
-					87: [function(e, t, r) {
+					88: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 									__proto__: []
@@ -8766,19 +8792,19 @@
 					}, {
 						"./abstract-signer": 2,
 						"./errors": 5,
-						"./providers/abstract-provider": 49,
-						"./utils/bytes": 63,
-						"./utils/hash": 64,
-						"./utils/hdnode": 65,
-						"./utils/json-wallet": 69,
-						"./utils/keccak256": 70,
-						"./utils/properties": 73,
-						"./utils/random-bytes": 74,
-						"./utils/secret-storage": 77,
-						"./utils/signing-key": 80,
-						"./utils/transaction": 82
+						"./providers/abstract-provider": 50,
+						"./utils/bytes": 64,
+						"./utils/hash": 65,
+						"./utils/hdnode": 66,
+						"./utils/json-wallet": 70,
+						"./utils/keccak256": 71,
+						"./utils/properties": 74,
+						"./utils/random-bytes": 75,
+						"./utils/secret-storage": 78,
+						"./utils/signing-key": 81,
+						"./utils/transaction": 83
 					}],
-					88: [function(e, t, r) {
+					89: [function(e, t, r) {
 						"use strict";
 						Object.defineProperty(r, "__esModule", {
 							value: !0
@@ -8786,9 +8812,9 @@
 						var n = e("../wordlists/lang-en").langEn;
 						r.en = n
 					}, {
-						"../wordlists/lang-en": 89
+						"../wordlists/lang-en": 90
 					}],
-					89: [function(e, t, r) {
+					90: [function(e, t, r) {
 						"use strict";
 						var n, i = this && this.__extends || (n = Object.setPrototypeOf || {
 								__proto__: []
@@ -8825,11 +8851,11 @@
 						}, h);
 						r.langEn = f, s.register(f)
 					}, {
-						"../utils/wordlist": 86
+						"../utils/wordlist": 87
 					}]
 				}, {}, [7])(7)
 			}).call(this, r("./node_modules/webpack/buildin/global.js"))
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CryptoLibEthers.653da795909edd8c198d.js.map
+//# sourceMappingURL=vendors~CryptoLibEthers.334a43cc7741e9f42d72.js.map

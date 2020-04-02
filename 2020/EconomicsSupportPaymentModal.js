@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.875bc3944627efd96f52.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.3dd1eb9804b6d178dac1.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -622,6 +622,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, a) {
 			"use strict";
+			a.d(t, "a", (function() {
+				return S
+			})), a.d(t, "c", (function() {
+				return j
+			}));
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/lodash/uniqueId.js"),
 				o = a.n(n),
@@ -661,11 +666,6 @@
 				}),
 				w = a("./src/reddit/controls/ErrorText/index.m.less"),
 				C = a.n(w);
-			a.d(t, "a", (function() {
-				return S
-			})), a.d(t, "c", (function() {
-				return j
-			}));
 			const v = Object(m.c)({
 				activeModalId: h.a
 			});
@@ -824,4 +824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.875bc3944627efd96f52.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.3dd1eb9804b6d178dac1.js.map

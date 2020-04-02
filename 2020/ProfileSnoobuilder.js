@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b7968e5c1a7d918b54d0.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.af2ca142190d04838915.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1582,6 +1582,11 @@
 		},
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return j
+			})), n.d(t, "a", (function() {
+				return P
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				i = n("./node_modules/react-redux/es/index.js"),
@@ -1626,11 +1631,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			n.d(t, "b", (function() {
-				return j
-			})), n.d(t, "a", (function() {
-				return P
-			}));
 			const j = e => r.a.createElement(x.a, {
 					className: Object(c.a)(C.a.Container, e.className),
 					noGradient: !0,
@@ -2279,4 +2279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.b7968e5c1a7d918b54d0.js.map
+//# sourceMappingURL=ProfileSnoobuilder.af2ca142190d04838915.js.map

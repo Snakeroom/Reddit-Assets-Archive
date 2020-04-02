@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.92b4dc78663fb8015d29.js
-// Retrieved at 4/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.c509bcc034fd358c409c.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -776,6 +776,9 @@
 		},
 		"./src/reddit/components/HTML5StreamPlayer/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return xt
+			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.split.js");
 			var i = s("./node_modules/bowser/src/bowser.js"),
 				a = s.n(i),
@@ -1373,12 +1376,9 @@
 				wt = Q.a.div("Component", Et.a),
 				Ct = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
 				Tt = s.n(Ct);
-			s.d(t, "a", (function() {
-					return xt
-				})),
-				function(e) {
-					e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
-				}(xt || (xt = {}));
+			! function(e) {
+				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
+			}(xt || (xt = {}));
 			const Mt = 3e3,
 				Vt = 6e3,
 				_t = 100,
@@ -1766,7 +1766,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("6a7b1a6-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("378fa03-production", " ").concat(t);
 									return i && (s += " [".concat(_.Ub, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2261,4 +2261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.92b4dc78663fb8015d29.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.c509bcc034fd358c409c.js.map

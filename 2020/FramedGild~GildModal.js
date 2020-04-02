@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9697e0a992bc102c8ebb.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2945eeefd3de3813efe0.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -10,7 +10,23 @@
 		},
 		"./src/reddit/actions/gold/gild.ts": function(e, t, a) {
 			"use strict";
-			a.r(t);
+			a.r(t), a.d(t, "setIsAnonymous", (function() {
+				return j
+			})), a.d(t, "setIncludeMessage", (function() {
+				return I
+			})), a.d(t, "updateMessage", (function() {
+				return _
+			})), a.d(t, "gildGqlRequested", (function() {
+				return S
+			})), a.d(t, "triggerLoader", (function() {
+				return k
+			})), a.d(t, "gildPending", (function() {
+				return T
+			})), a.d(t, "gildFailed", (function() {
+				return B
+			})), a.d(t, "gildSuccessful", (function() {
+				return F
+			}));
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./src/lib/makeActionCreator/index.ts"),
 				r = a("./src/lib/messageIframeParent/index.ts"),
@@ -44,23 +60,6 @@
 				O = a("./src/reddit/helpers/trackers/gild.ts"),
 				y = a("./src/telemetry/index.ts"),
 				N = a("./src/reddit/actions/gold/constants.ts");
-			a.d(t, "setIsAnonymous", (function() {
-				return j
-			})), a.d(t, "setIncludeMessage", (function() {
-				return I
-			})), a.d(t, "updateMessage", (function() {
-				return _
-			})), a.d(t, "gildGqlRequested", (function() {
-				return S
-			})), a.d(t, "triggerLoader", (function() {
-				return k
-			})), a.d(t, "gildPending", (function() {
-				return T
-			})), a.d(t, "gildFailed", (function() {
-				return B
-			})), a.d(t, "gildSuccessful", (function() {
-				return F
-			}));
 			const j = Object(s.a)(N.p),
 				I = Object(s.a)(N.o),
 				_ = Object(s.a)(N.s),
@@ -1427,4 +1426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.9697e0a992bc102c8ebb.js.map
+//# sourceMappingURL=FramedGild~GildModal.2945eeefd3de3813efe0.js.map

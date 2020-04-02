@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.e08974296a6f9dfe9307.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.865725739e12308e8f5c.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -40,6 +40,13 @@
 		},
 		"./src/reddit/actions/harbergerTax/thunkedActions.ts": function(e, t, r) {
 			"use strict";
+			r.d(t, "a", (function() {
+				return x
+			})), r.d(t, "b", (function() {
+				return h
+			})), r.d(t, "c", (function() {
+				return f
+			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/lodash/isEmpty.js"),
 				a = r.n(n),
@@ -66,13 +73,6 @@
 				p = r("./src/reddit/selectors/gov.ts"),
 				b = r("./src/reddit/selectors/user.ts"),
 				g = r("./src/reddit/actions/harbergerTax/actionCreators.ts");
-			r.d(t, "a", (function() {
-				return x
-			})), r.d(t, "b", (function() {
-				return h
-			})), r.d(t, "c", (function() {
-				return f
-			}));
 			const x = () => async (e, t) => {
 				const r = Object(b.O)(t());
 				e(Object(d.e)({
@@ -216,6 +216,13 @@
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "b", (function() {
+				return j
+			})), r.d(t, "c", (function() {
+				return N
+			})), r.d(t, "a", (function() {
+				return P
+			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
 				s = r("./node_modules/react-redux/es/index.js"),
@@ -242,13 +249,6 @@
 				}),
 				v = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				E = r.n(v);
-			r.d(t, "b", (function() {
-				return j
-			})), r.d(t, "c", (function() {
-				return N
-			})), r.d(t, "a", (function() {
-				return P
-			}));
 			const O = "add-custom-badge-tooltip",
 				I = 100,
 				w = 2 * I;
@@ -1025,4 +1025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxPurchaseModal.e08974296a6f9dfe9307.js.map
+//# sourceMappingURL=HarbergerTaxPurchaseModal.865725739e12308e8f5c.js.map

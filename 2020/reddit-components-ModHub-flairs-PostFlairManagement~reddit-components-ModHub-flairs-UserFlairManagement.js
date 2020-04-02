@@ -1,9 +1,18 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ddb9ddde8766138eb185.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.89000c2d76a83e4873cc.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "d", (function() {
+				return C
+			})), s.d(t, "a", (function() {
+				return v
+			})), s.d(t, "b", (function() {
+				return x
+			})), s.d(t, "c", (function() {
+				return y
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/copyToClipboard/index.ts"),
@@ -20,15 +29,6 @@
 				g = s("./src/reddit/selectors/postFlair.ts"),
 				b = s("./src/reddit/selectors/userFlair.ts"),
 				f = s("./src/reddit/actions/flairManagement/constants.ts");
-			s.d(t, "d", (function() {
-				return C
-			})), s.d(t, "a", (function() {
-				return v
-			})), s.d(t, "b", (function() {
-				return x
-			})), s.d(t, "c", (function() {
-				return y
-			}));
 			const C = (e, t) => async (s, n) => {
 				const o = t.type === u.d.UserFlair,
 					d = o ? b.e : g.e,
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.ddb9ddde8766138eb185.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.89000c2d76a83e4873cc.js.map

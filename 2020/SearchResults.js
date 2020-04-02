@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b38b14f959da4bb634e0.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.86999a1a160c235dd026.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -320,7 +320,11 @@
 		},
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "renderMedia", (function() {
+				return ie
+			})), s.d(t, "SearchResultsClassicPost", (function() {
+				return le
+			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -460,11 +464,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "renderMedia", (function() {
-				return ie
-			})), s.d(t, "SearchResultsClassicPost", (function() {
-				return le
-			}));
 			const oe = 16;
 			class ae extends r.a.Component {
 				componentDidUpdate(e) {
@@ -1620,6 +1619,11 @@
 		},
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return x
+			})), s.d(t, "b", (function() {
+				return g
+			}));
 			var n = s("./node_modules/lodash/values.js"),
 				r = s.n(n),
 				o = s("./node_modules/react/index.js"),
@@ -1769,11 +1773,6 @@
 				},
 				b = s("./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less"),
 				h = s.n(b);
-			s.d(t, "a", (function() {
-				return x
-			})), s.d(t, "b", (function() {
-				return g
-			}));
 			const x = e => a.a.createElement("button", {
 					className: Object(i.a)(h.a.arrow, e.className),
 					onClick: e.onClick
@@ -3484,6 +3483,9 @@
 		},
 		"./src/reddit/components/Popup/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				o = s("./node_modules/uuid/v4.js"),
@@ -3525,9 +3527,6 @@
 					onClick: s
 				}, "✕")), d)
 			}
-			s.d(t, "a", (function() {
-				return d
-			}))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9401,4 +9400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.b38b14f959da4bb634e0.js.map
+//# sourceMappingURL=SearchResults.86999a1a160c235dd026.js.map

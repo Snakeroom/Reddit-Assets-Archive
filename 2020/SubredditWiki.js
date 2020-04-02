@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.21b567c4b0bbb4917bc0.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.455545fcbbd4a4c5098d.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -108,7 +108,21 @@
 		},
 		"./src/reddit/actions/pages/subredditWiki/index.ts": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "subredditWikiDataPending", (function() {
+				return A
+			})), s.d(t, "subredditWikiDataLoaded", (function() {
+				return U
+			})), s.d(t, "subredditWikiDataFailed", (function() {
+				return H
+			})), s.d(t, "fetchSubredditWikiData", (function() {
+				return q
+			})), s.d(t, "handleWikiRedirects", (function() {
+				return J
+			})), s.d(t, "subredditWikDataRequested", (function() {
+				return z
+			})), s.d(t, "subredditWikiPageRequested", (function() {
+				return Z
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.array.sort.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/isEmpty.js"),
@@ -181,21 +195,6 @@
 				F = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
 				B = s("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
 				D = s("./src/reddit/selectors/subreddit.ts");
-			s.d(t, "subredditWikiDataPending", (function() {
-				return A
-			})), s.d(t, "subredditWikiDataLoaded", (function() {
-				return U
-			})), s.d(t, "subredditWikiDataFailed", (function() {
-				return H
-			})), s.d(t, "fetchSubredditWikiData", (function() {
-				return q
-			})), s.d(t, "handleWikiRedirects", (function() {
-				return J
-			})), s.d(t, "subredditWikDataRequested", (function() {
-				return z
-			})), s.d(t, "subredditWikiPageRequested", (function() {
-				return Z
-			}));
 			const A = Object(d.a)(h.c),
 				U = Object(d.a)(h.b),
 				H = Object(d.a)(h.a),
@@ -397,6 +396,17 @@
 		},
 		"./src/reddit/actions/wiki/wikiBannedContributors/index.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "e", (function() {
+				return k
+			})), s.d(t, "b", (function() {
+				return y
+			})), s.d(t, "a", (function() {
+				return C
+			})), s.d(t, "c", (function() {
+				return j
+			})), s.d(t, "d", (function() {
+				return N
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts"),
@@ -439,17 +449,6 @@
 				},
 				b = s("./src/reddit/models/Toast/index.ts"),
 				h = s("./src/reddit/actions/wiki/wikiBannedContributors/constants.ts");
-			s.d(t, "e", (function() {
-				return k
-			})), s.d(t, "b", (function() {
-				return y
-			})), s.d(t, "a", (function() {
-				return C
-			})), s.d(t, "c", (function() {
-				return j
-			})), s.d(t, "d", (function() {
-				return N
-			}));
 			const g = Object(i.a)(h.d),
 				x = Object(i.a)(h.c),
 				f = Object(i.a)(h.b),
@@ -605,6 +604,17 @@
 		},
 		"./src/reddit/actions/wiki/wikiContributors/index.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "e", (function() {
+				return k
+			})), s.d(t, "b", (function() {
+				return y
+			})), s.d(t, "a", (function() {
+				return C
+			})), s.d(t, "c", (function() {
+				return j
+			})), s.d(t, "d", (function() {
+				return N
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts"),
@@ -644,17 +654,6 @@
 				},
 				b = s("./src/reddit/models/Toast/index.ts"),
 				h = s("./src/reddit/actions/wiki/wikiContributors/constants.ts");
-			s.d(t, "e", (function() {
-				return k
-			})), s.d(t, "b", (function() {
-				return y
-			})), s.d(t, "a", (function() {
-				return C
-			})), s.d(t, "c", (function() {
-				return j
-			})), s.d(t, "d", (function() {
-				return N
-			}));
 			const g = Object(i.a)(h.d),
 				x = Object(i.a)(h.c),
 				f = Object(i.a)(h.b),
@@ -811,6 +810,17 @@
 		},
 		"./src/reddit/actions/wiki/wikiPageSettings/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "c", (function() {
+				return w
+			})), s.d(t, "b", (function() {
+				return v
+			})), s.d(t, "e", (function() {
+				return E
+			})), s.d(t, "a", (function() {
+				return N
+			})), s.d(t, "d", (function() {
+				return S
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts"),
 				i = s("./src/lib/makeActionCreator/index.ts"),
@@ -855,17 +865,6 @@
 				f = s("./src/reddit/models/Toast/index.ts"),
 				k = s("./src/reddit/selectors/subreddit.ts"),
 				O = s("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
-			s.d(t, "c", (function() {
-				return w
-			})), s.d(t, "b", (function() {
-				return v
-			})), s.d(t, "e", (function() {
-				return E
-			})), s.d(t, "a", (function() {
-				return N
-			})), s.d(t, "d", (function() {
-				return S
-			}));
 			const y = Object(i.a)(O.c),
 				w = (e, t) => async (s, n, r) => {
 					const i = {
@@ -1026,6 +1025,13 @@
 		},
 		"./src/reddit/actions/wiki/wikiRevisions/index.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "c", (function() {
+				return j
+			})), s.d(t, "a", (function() {
+				return N
+			})), s.d(t, "b", (function() {
+				return S
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts"),
 				i = s("./src/lib/makeActionCreator/index.ts"),
@@ -1075,13 +1081,6 @@
 				k = s("./src/reddit/models/Toast/index.ts"),
 				O = s("./src/reddit/selectors/subredditWiki.ts"),
 				y = s("./src/reddit/actions/wiki/wikiRevisions/constants.ts");
-			s.d(t, "c", (function() {
-				return j
-			})), s.d(t, "a", (function() {
-				return N
-			})), s.d(t, "b", (function() {
-				return S
-			}));
 			const w = Object(i.a)(y.d),
 				C = Object(i.a)(y.c),
 				v = Object(i.a)(y.b),
@@ -1853,6 +1852,25 @@
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return f
+			})), s.d(t, "b", (function() {
+				return O
+			})), s.d(t, "c", (function() {
+				return y
+			})), s.d(t, "d", (function() {
+				return C
+			})), s.d(t, "e", (function() {
+				return v
+			})), s.d(t, "f", (function() {
+				return j
+			})), s.d(t, "g", (function() {
+				return E
+			})), s.d(t, "h", (function() {
+				return N
+			})), s.d(t, "i", (function() {
+				return _
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./node_modules/react-redux/es/index.js"),
@@ -2133,25 +2151,6 @@
 						type: e.subreddit.type
 					} : {}
 				}
-			}));
-			s.d(t, "a", (function() {
-				return f
-			})), s.d(t, "b", (function() {
-				return O
-			})), s.d(t, "c", (function() {
-				return y
-			})), s.d(t, "d", (function() {
-				return C
-			})), s.d(t, "e", (function() {
-				return v
-			})), s.d(t, "f", (function() {
-				return j
-			})), s.d(t, "g", (function() {
-				return E
-			})), s.d(t, "h", (function() {
-				return N
-			})), s.d(t, "i", (function() {
-				return _
 			}))
 		},
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -2801,6 +2800,9 @@
 		},
 		"./src/reddit/components/SubredditChannelList/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return X
+			}));
 			var n = s("./node_modules/lodash/orderBy.js"),
 				r = s.n(n),
 				i = s("./node_modules/react/index.js"),
@@ -2830,9 +2832,6 @@
 				S = s("./src/reddit/selectors/user.ts"),
 				T = s("./src/reddit/components/SubredditChannelList/index.m.less"),
 				I = s.n(T);
-			s.d(t, "a", (function() {
-				return X
-			}));
 			const {
 				fbt: P
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = c.a.wrapped(g.f, "ModalFormItem", I.a), L = c.a.wrapped(O.f, "PrimaryButton", I.a), M = c.a.wrapped(g.m, "ModalText", I.a), W = c.a.a("ItemLink", I.a), F = c.a.p("Detail", I.a), B = c.a.p("DescText", I.a), D = c.a.div("Title", I.a), A = c.a.div("Header", I.a), U = c.a.wrapped(C.a, "ChatIcon", I.a), H = c.a.wrapped(v.a, "PlanetIcon", I.a), V = c.a.wrapped(w.a, "Pencil", I.a), K = c.a.wrapped(e => {
@@ -4633,6 +4632,9 @@
 		},
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return E
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/app/strings/index.ts"),
@@ -4693,9 +4695,6 @@
 					}) : e.rule.description))
 				}
 			}
-			s.d(t, "a", (function() {
-				return E
-			}));
 			const E = Object(o.a)(e => e.rules.length > 0 ? r.a.createElement(a.a, {
 				className: e.className,
 				styles: e.styles,
@@ -6289,4 +6288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.21b567c4b0bbb4917bc0.js.map
+//# sourceMappingURL=SubredditWiki.455545fcbbd4a4c5098d.js.map

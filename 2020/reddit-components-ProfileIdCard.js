@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.59a1ba682e92393244bb.js
-// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f35b6964d87432f854cd.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -167,6 +167,9 @@
 		},
 		"./src/reddit/components/ProfileIdCard/Preview.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return pe
+			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./src/config.ts"),
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -336,9 +339,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			n.d(t, "a", (function() {
-				return pe
-			}));
 			var Y = function(e, t) {
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
@@ -1126,4 +1126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.59a1ba682e92393244bb.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.f35b6964d87432f854cd.js.map

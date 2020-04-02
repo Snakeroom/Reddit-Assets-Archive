@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b6654d96eacfaa40e050.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a154b3090cf353dc71f1.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -219,17 +219,6 @@
 		},
 		"./src/lib/linkMatchers/index.ts": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.regexp.replace.js"), s("./node_modules/core-js/modules/es6.regexp.match.js");
-			var n = s("./node_modules/linkify-it/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/tlds/index.js"),
-				a = s.n(r),
-				i = s("./src/lib/linkMatchers/customLinks.ts"),
-				c = s("./node_modules/lodash/values.js"),
-				d = s.n(c);
-			const l = e => d()(i.b).includes(e.substring(1)),
-				m = ["//", "ftp:", "http:", "https:", "mailto:"],
-				p = e => ((e, t) => (t.forEach(t => e.add(t, null)), e))(e, m);
 			s.d(t, "e", (function() {
 				return u
 			})), s.d(t, "d", (function() {
@@ -249,7 +238,18 @@
 			})), s.d(t, "h", (function() {
 				return E
 			}));
-			const u = o()().tlds(a.a).set({
+			s("./node_modules/core-js/modules/es6.regexp.replace.js"), s("./node_modules/core-js/modules/es6.regexp.match.js");
+			var n = s("./node_modules/linkify-it/index.js"),
+				o = s.n(n),
+				r = s("./node_modules/tlds/index.js"),
+				a = s.n(r),
+				i = s("./src/lib/linkMatchers/customLinks.ts"),
+				c = s("./node_modules/lodash/values.js"),
+				d = s.n(c);
+			const l = e => d()(i.b).includes(e.substring(1)),
+				m = ["//", "ftp:", "http:", "https:", "mailto:"],
+				p = e => ((e, t) => (t.forEach(t => e.add(t, null)), e))(e, m),
+				u = o()().tlds(a.a).set({
 					fuzzyIP: !0
 				}),
 				h = o()().set({
@@ -328,7 +328,25 @@
 		},
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "fetchEventPostsPending", (function() {
+				return C
+			})), s.d(t, "fetchEventPostsSuccess", (function() {
+				return O
+			})), s.d(t, "fetchEventPostsFailure", (function() {
+				return E
+			})), s.d(t, "fetchMoreEventPostsSuccess", (function() {
+				return y
+			})), s.d(t, "eventPostsRequested", (function() {
+				return _
+			})), s.d(t, "startEventNowSuccess", (function() {
+				return k
+			})), s.d(t, "startEventNowRequested", (function() {
+				return j
+			})), s.d(t, "editEventTimeSuccess", (function() {
+				return P
+			})), s.d(t, "editEventTimeRequested", (function() {
+				return w
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/constants/index.ts"),
 				r = s("./src/lib/makeActionCreator/index.ts"),
@@ -360,25 +378,6 @@
 				g = s("./src/reddit/models/Toast/index.ts"),
 				x = s("./src/reddit/selectors/eventPosts.ts"),
 				f = s("./src/reddit/selectors/posts.ts");
-			s.d(t, "fetchEventPostsPending", (function() {
-				return C
-			})), s.d(t, "fetchEventPostsSuccess", (function() {
-				return O
-			})), s.d(t, "fetchEventPostsFailure", (function() {
-				return E
-			})), s.d(t, "fetchMoreEventPostsSuccess", (function() {
-				return y
-			})), s.d(t, "eventPostsRequested", (function() {
-				return _
-			})), s.d(t, "startEventNowSuccess", (function() {
-				return k
-			})), s.d(t, "startEventNowRequested", (function() {
-				return j
-			})), s.d(t, "editEventTimeSuccess", (function() {
-				return P
-			})), s.d(t, "editEventTimeRequested", (function() {
-				return w
-			}));
 			const v = () => n.fbt._("Something went wrong. Just don't panic.", null, {
 					hk: "4onxm1"
 				}),
@@ -511,6 +510,13 @@
 		},
 		"./src/reddit/actions/postCreation/editing.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return T
+			})), s.d(t, "a", (function() {
+				return N
+			})), s.d(t, "c", (function() {
+				return M
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/reddit/actions/post.ts"),
@@ -552,13 +558,6 @@
 				_ = s("./src/reddit/selectors/posts.ts"),
 				k = s("./src/reddit/actions/postCreation/constants.ts"),
 				j = s("./src/reddit/actions/postCreation/general.ts");
-			s.d(t, "b", (function() {
-				return T
-			})), s.d(t, "a", (function() {
-				return N
-			})), s.d(t, "c", (function() {
-				return M
-			}));
 			const P = Object(o.a)(k.m),
 				w = Object(o.a)(k.n),
 				I = Object(o.a)(k.z),
@@ -2175,6 +2174,11 @@
 		},
 		"./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return F
+			})), s.d(t, "a", (function() {
+				return V
+			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -2209,21 +2213,16 @@
 				T = s("./src/reddit/icons/fonts/Spam/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Show/index.tsx"),
 				M = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
-				L = s.n(M);
-			s.d(t, "b", (function() {
-				return F
-			})), s.d(t, "a", (function() {
-				return V
-			}));
-			var R = function(e, t) {
-				var s = {};
-				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
-				}
-				return s
-			};
+				L = s.n(M),
+				R = function(e, t) {
+					var s = {};
+					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var o = 0;
+						for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+					}
+					return s
+				};
 			const F = l.a.wrapped(b.c, "RestrictedButton", L.a),
 				A = l.a.wrapped(_.a, "Approve", L.a),
 				B = l.a.wrapped(I.a, "Lock", L.a),
@@ -6512,6 +6511,13 @@
 		},
 		"./src/reddit/components/Flatlist/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return Ce
+			})), s.d(t, "a", (function() {
+				return Oe
+			})), s.d(t, "d", (function() {
+				return je
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -6626,13 +6632,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "b", (function() {
-				return Ce
-			})), s.d(t, "a", (function() {
-				return Oe
-			})), s.d(t, "d", (function() {
-				return je
-			}));
 			var be = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
@@ -8187,6 +8186,9 @@
 		},
 		"./src/reddit/components/Popup/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/uuid/v4.js"),
@@ -8228,9 +8230,6 @@
 					onClick: s
 				}, "✕")), d)
 			}
-			s.d(t, "a", (function() {
-				return d
-			}))
 		},
 		"./src/reddit/components/PostBadges/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -10307,6 +10306,21 @@
 		},
 		"./src/reddit/components/PostOverflowMenu/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return be
+			})), s.d(t, "b", (function() {
+				return ge
+			})), s.d(t, "c", (function() {
+				return xe
+			})), s.d(t, "e", (function() {
+				return fe
+			})), s.d(t, "d", (function() {
+				return ve
+			})), s.d(t, "f", (function() {
+				return Oe
+			})), s.d(t, "h", (function() {
+				return Me
+			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/constants/index.ts"),
@@ -10376,31 +10390,16 @@
 				le = s("./src/reddit/models/PostCreationForm/index.ts"),
 				me = s("./src/reddit/selectors/postCollection.ts"),
 				pe = s("./src/reddit/components/PostOverflowMenu/index.m.less"),
-				ue = s.n(pe);
-			s.d(t, "a", (function() {
-				return be
-			})), s.d(t, "b", (function() {
-				return ge
-			})), s.d(t, "c", (function() {
-				return xe
-			})), s.d(t, "e", (function() {
-				return fe
-			})), s.d(t, "d", (function() {
-				return ve
-			})), s.d(t, "f", (function() {
-				return Oe
-			})), s.d(t, "h", (function() {
-				return Me
-			}));
-			var he = function(e, t) {
-				var s = {};
-				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
-				}
-				return s
-			};
+				ue = s.n(pe),
+				he = function(e, t) {
+					var s = {};
+					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var o = 0;
+						for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+					}
+					return s
+				};
 			const be = p.a.wrapped(I, "Icon", ue.a),
 				ge = p.a.wrapped(N.a, "Icon", ue.a),
 				xe = p.a.wrapped(M.a, "Icon", ue.a),
@@ -12775,6 +12774,11 @@
 		},
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return I
+			})), s.d(t, "a", (function() {
+				return T
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
@@ -12819,11 +12823,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "b", (function() {
-				return I
-			})), s.d(t, "a", (function() {
-				return T
-			}));
 			const I = e => o.a.createElement(x.a, {
 					className: Object(d.a)(P.a.Container, e.className),
 					noGradient: !0,
@@ -13394,6 +13393,9 @@
 		},
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return j
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/app/strings/index.ts"),
@@ -13454,9 +13456,6 @@
 					}) : e.rule.description))
 				}
 			}
-			s.d(t, "a", (function() {
-				return j
-			}));
 			const j = Object(i.a)(e => e.rules.length > 0 ? o.a.createElement(a.a, {
 				className: e.className,
 				styles: e.styles,
@@ -14453,6 +14452,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return j
+			})), s.d(t, "c", (function() {
+				return P
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/lodash/uniqueId.js"),
 				r = s.n(o),
@@ -14492,11 +14496,6 @@
 				}),
 				O = s("./src/reddit/controls/ErrorText/index.m.less"),
 				E = s.n(O);
-			s.d(t, "a", (function() {
-				return j
-			})), s.d(t, "c", (function() {
-				return P
-			}));
 			const y = Object(m.c)({
 				activeModalId: h.a
 			});
@@ -17341,4 +17340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.b6654d96eacfaa40e050.js.map
+//# sourceMappingURL=CollectionCommentsPage.a154b3090cf353dc71f1.js.map

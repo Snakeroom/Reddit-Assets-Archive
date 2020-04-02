@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9bd07f8b74a6e452aabd.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.c20e7726813ba245a44c.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -43,7 +43,9 @@
 		},
 		"./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/index.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "PurchaseType", (function() {
+				return X
+			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = s("./node_modules/bignumber.js/bignumber.js"),
 				r = s("./src/config.ts"),
@@ -144,12 +146,9 @@
 				})),
 				q = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/index.m.less"),
 				z = s.n(q);
-			s.d(t, "PurchaseType", (function() {
-					return X
-				})),
-				function(e) {
-					e[e.Badge = 0] = "Badge", e[e.Subscription = 1] = "Subscription"
-				}(X || (X = {}));
+			! function(e) {
+				e[e.Badge = 0] = "Badge", e[e.Subscription = 1] = "Subscription"
+			}(X || (X = {}));
 			const Z = 5e3,
 				K = 2e4;
 			class J extends c.a.Component {
@@ -419,6 +418,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return y
+			})), s.d(t, "c", (function() {
+				return O
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/uniqueId.js"),
 				a = s.n(r),
@@ -458,11 +462,6 @@
 				}),
 				w = s("./src/reddit/controls/ErrorText/index.m.less"),
 				j = s.n(w);
-			s.d(t, "a", (function() {
-				return y
-			})), s.d(t, "c", (function() {
-				return O
-			}));
 			const N = Object(u.c)({
 				activeModalId: h.a
 			});
@@ -993,4 +992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.9bd07f8b74a6e452aabd.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.c20e7726813ba245a44c.js.map

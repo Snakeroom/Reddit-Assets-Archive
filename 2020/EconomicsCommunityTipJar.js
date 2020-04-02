@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.e567e9b9db09982cfe41.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.0477dd9a532d0de0d265.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -12,23 +12,23 @@
 		},
 		"./src/reddit/actions/economics/tips/thunkedActions.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/reddit/endpoints/economics/tips.ts"),
-				r = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/reddit/actions/economics/tips/constants.ts");
-			const i = Object(r.a)(o.a);
 			s.d(t, "a", (function() {
 				return a
 			}));
-			const a = e => async (t, s, r) => {
-				let {
-					apiContext: o
-				} = r;
-				const a = await Object(n.a)(o(), e);
-				a.ok && t(i({
-					subredditId: e.subredditId,
-					tipData: a.body
-				}))
-			}
+			var n = s("./src/reddit/endpoints/economics/tips.ts"),
+				r = s("./src/lib/makeActionCreator/index.ts"),
+				o = s("./src/reddit/actions/economics/tips/constants.ts");
+			const i = Object(r.a)(o.a),
+				a = e => async (t, s, r) => {
+					let {
+						apiContext: o
+					} = r;
+					const a = await Object(n.a)(o(), e);
+					a.ok && t(i({
+						subredditId: e.subredditId,
+						tipData: a.body
+					}))
+				}
 		},
 		"./src/reddit/components/Economics/CommunityTipJar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -176,6 +176,9 @@
 		},
 		"./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return E
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				o = s("./src/higherOrderComponents/asTooltip.tsx"),
@@ -211,9 +214,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "a", (function() {
-				return E
-			}));
 			const v = 500,
 				y = Object(o.a)(a.b);
 
@@ -433,6 +433,11 @@
 		},
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return j
+			})), s.d(t, "c", (function() {
+				return I
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/uniqueId.js"),
 				o = s.n(r),
@@ -472,11 +477,6 @@
 				}),
 				y = s("./src/reddit/controls/ErrorText/index.m.less"),
 				E = s.n(y);
-			s.d(t, "a", (function() {
-				return j
-			})), s.d(t, "c", (function() {
-				return I
-			}));
 			const O = Object(u.c)({
 				activeModalId: b.a
 			});
@@ -835,4 +835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.e567e9b9db09982cfe41.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.0477dd9a532d0de0d265.js.map

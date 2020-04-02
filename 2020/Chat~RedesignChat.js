@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9ddb9fad8881442d7b4e.js
-// Retrieved at 3/31/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5467e4acff80ba1244ff.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -928,40 +928,6 @@
 		},
 		"./src/chat/actions/message/index.ts": function(e, t, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./node_modules/lodash/flatten.js"),
-				s = n.n(a),
-				c = n("./node_modules/react-router-redux/es/index.js"),
-				r = n("./src/lib/linkMatchers/index.ts"),
-				o = n("./src/lib/makeActionCreator/index.ts"),
-				i = n("./src/chat/actions/channel.ts"),
-				l = n("./src/chat/actions/tracking.ts"),
-				d = n("./src/chat/constants/messages.ts"),
-				u = n("./node_modules/lodash/isEmpty.js"),
-				h = n.n(u),
-				m = n("./src/config.ts"),
-				b = n("./src/lib/constants/index.ts"),
-				p = n("./src/lib/makeRequest/index.ts");
-			const g = m.a.embedlyApiKey,
-				f = e => e && e.length > 0 && e[0] ? e[0].url : void 0,
-				O = e => e.filter(e => !h()(e)).map(e => ({
-					name: e.provider_name,
-					title: e.title,
-					description: e.description,
-					faviconUrl: e.favicon_url,
-					imageUrl: f(e.images),
-					url: e.url
-				}));
-			var j = n("./src/chat/endpoints/sendbird/index.ts"),
-				C = n("./src/chat/helpers/errors.ts"),
-				_ = n("./src/chat/helpers/linkParser/index.ts"),
-				E = n("./src/chat/models/Message/index.ts"),
-				v = n("./src/chat/models/Message/adapter.ts"),
-				I = n("./src/chat/selectors/app.ts"),
-				y = n("./src/chat/selectors/channels.ts"),
-				x = n("./src/chat/selectors/contacts.ts"),
-				S = n("./src/chat/selectors/messages.ts"),
-				k = n("./src/chat/singleton/SendbirdSDK.ts");
 			n.d(t, "a", (function() {
 				return N
 			})), n.d(t, "c", (function() {
@@ -1013,6 +979,40 @@
 			})), n.d(t, "w", (function() {
 				return de
 			}));
+			n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var a = n("./node_modules/lodash/flatten.js"),
+				s = n.n(a),
+				c = n("./node_modules/react-router-redux/es/index.js"),
+				r = n("./src/lib/linkMatchers/index.ts"),
+				o = n("./src/lib/makeActionCreator/index.ts"),
+				i = n("./src/chat/actions/channel.ts"),
+				l = n("./src/chat/actions/tracking.ts"),
+				d = n("./src/chat/constants/messages.ts"),
+				u = n("./node_modules/lodash/isEmpty.js"),
+				h = n.n(u),
+				m = n("./src/config.ts"),
+				b = n("./src/lib/constants/index.ts"),
+				p = n("./src/lib/makeRequest/index.ts");
+			const g = m.a.embedlyApiKey,
+				f = e => e && e.length > 0 && e[0] ? e[0].url : void 0,
+				O = e => e.filter(e => !h()(e)).map(e => ({
+					name: e.provider_name,
+					title: e.title,
+					description: e.description,
+					faviconUrl: e.favicon_url,
+					imageUrl: f(e.images),
+					url: e.url
+				}));
+			var j = n("./src/chat/endpoints/sendbird/index.ts"),
+				C = n("./src/chat/helpers/errors.ts"),
+				_ = n("./src/chat/helpers/linkParser/index.ts"),
+				E = n("./src/chat/models/Message/index.ts"),
+				v = n("./src/chat/models/Message/adapter.ts"),
+				I = n("./src/chat/selectors/app.ts"),
+				y = n("./src/chat/selectors/channels.ts"),
+				x = n("./src/chat/selectors/contacts.ts"),
+				S = n("./src/chat/selectors/messages.ts"),
+				k = n("./src/chat/singleton/SendbirdSDK.ts");
 			const N = "MESSAGE__ADD_ONE",
 				w = Object(o.a)(N),
 				T = (e, t, n) => async (a, s) => {
@@ -1304,6 +1304,19 @@
 		},
 		"./src/chat/actions/promo/index.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "d", (function() {
+				return g
+			})), n.d(t, "e", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return O
+			})), n.d(t, "b", (function() {
+				return C
+			})), n.d(t, "f", (function() {
+				return E
+			})), n.d(t, "c", (function() {
+				return v
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/lib/cache/index.ts"),
 				s = n("./src/lib/constants/index.ts"),
@@ -1328,19 +1341,6 @@
 					})(e), t.includes(e)
 				},
 				m = n("./src/chat/actions/promo/constants.ts");
-			n.d(t, "d", (function() {
-				return g
-			})), n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "a", (function() {
-				return O
-			})), n.d(t, "b", (function() {
-				return C
-			})), n.d(t, "f", (function() {
-				return E
-			})), n.d(t, "c", (function() {
-				return v
-			}));
 			const b = Object(c.a)(m.a),
 				p = Object(c.a)(m.b),
 				g = e => async (t, n) => {
@@ -1602,9 +1602,6 @@
 		},
 		"./src/chat/actions/session.ts": function(e, t, n) {
 			"use strict";
-			var a = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/lib/constants/index.ts"),
-				c = n("./src/lib/makeApiRequest/index.ts");
 			n.d(t, "a", (function() {
 				return r
 			})), n.d(t, "b", (function() {
@@ -1614,6 +1611,9 @@
 			})), n.d(t, "d", (function() {
 				return u
 			}));
+			var a = n("./src/lib/makeActionCreator/index.ts"),
+				s = n("./src/lib/constants/index.ts"),
+				c = n("./src/lib/makeApiRequest/index.ts");
 			const r = "SESSION__USER_AUTHENTICATED",
 				o = "SESSION__USER_LOGGED_OUT",
 				i = "SESSION__USER_REAUTHENTICATED",
@@ -1691,17 +1691,17 @@
 		},
 		"./src/chat/actions/sitewideRules.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return u
+			}));
 			var a = n("./src/lib/makeActionCreator/index.ts"),
 				s = n("./src/lib/constants/index.ts"),
 				c = n("./src/lib/makeApiRequest/index.ts"),
 				r = n("./src/lib/omitHeaders/index.ts"),
 				o = n("./src/reddit/constants/headers.ts");
 			var i = n("./node_modules/fbt/lib/FbtPublic.js");
-			n.d(t, "a", (function() {
-				return l
-			})), n.d(t, "b", (function() {
-				return u
-			}));
 			const l = "SITEWIDE_RULES_LOADED",
 				d = Object(a.a)(l),
 				u = () => async (e, t, n) => {
@@ -1805,25 +1805,6 @@
 		},
 		"./src/chat/actions/tracking.ts": function(e, t, n) {
 			"use strict";
-			var a = n("./src/telemetry/models/Event.ts"),
-				s = n("./src/chat/constants/channels.ts"),
-				c = n("./src/chat/selectors/channels.ts"),
-				r = n("./src/chat/selectors/contacts.ts"),
-				o = n("./src/chat/selectors/platform.ts"),
-				i = n("./src/chat/selectors/sidebar.ts"),
-				l = n("./src/chat/tracking/fields/chat.ts"),
-				d = n("./src/chat/tracking/fields/common.ts"),
-				u = n("./src/chat/tracking/fields/subreddit.ts"),
-				h = n("./src/chat/tracking/sendEvent.ts");
-			var m = n("./src/chat/tracking/events/chatSettings.ts"),
-				b = n("./src/chat/tracking/events/chatView.ts"),
-				p = n("./src/chat/tracking/events/contactsList.ts"),
-				g = n("./src/chat/tracking/events/invitationInbox.ts"),
-				f = n("./src/chat/tracking/events/messagesInbox.ts"),
-				O = n("./src/chat/selectors/telemetry.ts");
-			const j = e => ({
-				id: e.user.account.id
-			});
 			n.d(t, "g", (function() {
 				return C
 			})), n.d(t, "v", (function() {
@@ -1885,135 +1866,154 @@
 			})), n.d(t, "a", (function() {
 				return Z
 			}));
-			const C = () => async (e, t) => {
-				Object(f.b)(t())
-			}, _ = e => async (t, n) => {
-				Object(b.a)(n(), e)
-			}, E = e => async (t, n) => {
-				Object(b.d)(n(), e)
-			}, v = (e, t) => async (n, a) => {
-				Object(b.b)(a(), e, t)
-			}, I = () => async (e, t) => {
-				Object(b.e)(t())
-			}, y = () => async (e, t) => {
-				Object(m.f)(t())
-			}, x = () => async (e, t) => {
-				const n = Object(c.u)(t());
-				if (n && n.length) {
-					const e = n[0].id;
-					Object(m.c)(t(), e)
+			var a = n("./src/telemetry/models/Event.ts"),
+				s = n("./src/chat/constants/channels.ts"),
+				c = n("./src/chat/selectors/channels.ts"),
+				r = n("./src/chat/selectors/contacts.ts"),
+				o = n("./src/chat/selectors/platform.ts"),
+				i = n("./src/chat/selectors/sidebar.ts"),
+				l = n("./src/chat/tracking/fields/chat.ts"),
+				d = n("./src/chat/tracking/fields/common.ts"),
+				u = n("./src/chat/tracking/fields/subreddit.ts"),
+				h = n("./src/chat/tracking/sendEvent.ts");
+			var m = n("./src/chat/tracking/events/chatSettings.ts"),
+				b = n("./src/chat/tracking/events/chatView.ts"),
+				p = n("./src/chat/tracking/events/contactsList.ts"),
+				g = n("./src/chat/tracking/events/invitationInbox.ts"),
+				f = n("./src/chat/tracking/events/messagesInbox.ts"),
+				O = n("./src/chat/selectors/telemetry.ts");
+			const j = e => ({
+					id: e.user.account.id
+				}),
+				C = () => async (e, t) => {
+					Object(f.b)(t())
+				}, _ = e => async (t, n) => {
+					Object(b.a)(n(), e)
+				}, E = e => async (t, n) => {
+					Object(b.d)(n(), e)
+				}, v = (e, t) => async (n, a) => {
+					Object(b.b)(a(), e, t)
+				}, I = () => async (e, t) => {
+					Object(b.e)(t())
+				}, y = () => async (e, t) => {
+					Object(m.f)(t())
+				}, x = () => async (e, t) => {
+					const n = Object(c.u)(t());
+					if (n && n.length) {
+						const e = n[0].id;
+						Object(m.c)(t(), e)
+					}
+				}, S = () => async (e, t) => {
+					const n = t();
+					Object(o.c)(n) !== s.a.VIEW_INVITE && Object(m.b)(n)
+				}, k = () => async (e, t) => {
+					Object(m.a)(t())
+				}, N = e => async (t, n) => {
+					Object(m.d)(n(), e)
+				}, w = e => async (t, n) => {
+					Object(p.c)(n(), e)
+				}, T = e => async (t, n) => {
+					Object(r.c)(n(), e) && Object(p.f)(n())
+				}, M = e => async (t, n) => {
+					const a = n(),
+						s = e && e.filter(e => e !== a.user.account.id),
+						c = s && s[0],
+						o = a.contacts.models[c],
+						i = o && o.name,
+						l = Object(r.a)(n(), i);
+					l && Object(p.e)(n(), l)
+				}, A = (e, t) => async (e, n) => {
+					Object(p.d)(n(), t)
+				}, D = () => async (e, t) => {
+					Object(p.b)(t())
+				}, L = () => async (e, t) => {
+					Object(p.a)(t())
+				}, U = () => async (e, t) => {
+					Object(g.c)(t())
+				}, R = () => async (e, t) => {
+					Object(g.d)(t())
+				}, P = () => async (e, t) => {
+					const n = t();
+					Object(o.c)(n) === s.a.VIEW_INVITE && Object(g.e)(n)
+				}, B = () => async (e, t) => {
+					const n = t();
+					Object(g.b)(n), Object(i.b)(n) && Object(g.f)(t())
+				}, H = () => async (e, t) => {
+					Object(g.a)(t())
+				}, F = e => async (t, n) => {
+					((e, t) => {
+						Object(h.a)(Object.assign({
+							noun: "create_chat",
+							source: a.b.UserHovercard,
+							action: a.a.Click,
+							chat: Object.assign({}, Object(l.E)(e, t), Object(l.C)(e, t), Object(l.D)(e, t)),
+							user: Object.assign({}, j(e))
+						}, Object(d.a)(e), Object(d.b)(e)))
+					})(n(), e)
+				}, K = () => async (e, t) => {
+					Object(f.a)(t())
+				}, z = () => async (e, t) => {
+					Object(f.c)(t())
+				}, G = () => async (e, t) => {
+					Object(f.g)(t())
+				}, W = () => async (e, t) => {
+					Object(f.d)(t())
+				}, V = e => async (t, n) => {
+					const s = n();
+					s.tooltipId !== e && (e => {
+						Object(h.a)(Object.assign({
+							noun: "snoomoji",
+							source: a.b.ChatKeyboard,
+							action: a.a.View,
+							chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e)),
+							subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
+						}, Object(d.a)(e)))
+					})(s)
+				}, q = () => async (e, t) => {
+					(e => {
+						Object(h.a)(Object.assign({
+							noun: "other_message",
+							source: a.b.ChatView,
+							action: a.a.ModDelete,
+							chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e), Object(l.s)(e), Object(l.n)(e), Object(l.x)(e)),
+							subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
+						}, Object(d.a)(e)))
+					})(t())
+				}, J = e => async (t, n) => {
+					const s = n(),
+						c = Object(o.b)(s),
+						r = (e => {
+							switch (e) {
+								case a.b.ChatSettings:
+									return a.b.ChatSettings;
+								default:
+									return a.b.ChatView
+							}
+						})(c && c.source);
+					((e, t, n) => {
+						Object(h.a)(Object.assign({
+							noun: "user",
+							source: n,
+							action: a.a.Kick,
+							chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e), Object(l.s)(e), Object(l.n)(e), Object(l.x)(e)),
+							subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
+						}, Object(d.a)(e), {
+							actionInfo: Object.assign({
+								settingValue: t
+							}, Object(O.a)(e))
+						}))
+					})(n(), e, r)
+				}, Z = e => async (t, n) => {
+					((e, t) => {
+						Object(h.a)(Object.assign({
+							noun: "ban_user",
+							source: t,
+							action: a.a.Click,
+							chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e), Object(l.s)(e), Object(l.n)(e), Object(l.x)(e)),
+							subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
+						}, Object(d.a)(e)))
+					})(n(), e)
 				}
-			}, S = () => async (e, t) => {
-				const n = t();
-				Object(o.c)(n) !== s.a.VIEW_INVITE && Object(m.b)(n)
-			}, k = () => async (e, t) => {
-				Object(m.a)(t())
-			}, N = e => async (t, n) => {
-				Object(m.d)(n(), e)
-			}, w = e => async (t, n) => {
-				Object(p.c)(n(), e)
-			}, T = e => async (t, n) => {
-				Object(r.c)(n(), e) && Object(p.f)(n())
-			}, M = e => async (t, n) => {
-				const a = n(),
-					s = e && e.filter(e => e !== a.user.account.id),
-					c = s && s[0],
-					o = a.contacts.models[c],
-					i = o && o.name,
-					l = Object(r.a)(n(), i);
-				l && Object(p.e)(n(), l)
-			}, A = (e, t) => async (e, n) => {
-				Object(p.d)(n(), t)
-			}, D = () => async (e, t) => {
-				Object(p.b)(t())
-			}, L = () => async (e, t) => {
-				Object(p.a)(t())
-			}, U = () => async (e, t) => {
-				Object(g.c)(t())
-			}, R = () => async (e, t) => {
-				Object(g.d)(t())
-			}, P = () => async (e, t) => {
-				const n = t();
-				Object(o.c)(n) === s.a.VIEW_INVITE && Object(g.e)(n)
-			}, B = () => async (e, t) => {
-				const n = t();
-				Object(g.b)(n), Object(i.b)(n) && Object(g.f)(t())
-			}, H = () => async (e, t) => {
-				Object(g.a)(t())
-			}, F = e => async (t, n) => {
-				((e, t) => {
-					Object(h.a)(Object.assign({
-						noun: "create_chat",
-						source: a.b.UserHovercard,
-						action: a.a.Click,
-						chat: Object.assign({}, Object(l.E)(e, t), Object(l.C)(e, t), Object(l.D)(e, t)),
-						user: Object.assign({}, j(e))
-					}, Object(d.a)(e), Object(d.b)(e)))
-				})(n(), e)
-			}, K = () => async (e, t) => {
-				Object(f.a)(t())
-			}, z = () => async (e, t) => {
-				Object(f.c)(t())
-			}, G = () => async (e, t) => {
-				Object(f.g)(t())
-			}, W = () => async (e, t) => {
-				Object(f.d)(t())
-			}, V = e => async (t, n) => {
-				const s = n();
-				s.tooltipId !== e && (e => {
-					Object(h.a)(Object.assign({
-						noun: "snoomoji",
-						source: a.b.ChatKeyboard,
-						action: a.a.View,
-						chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e)),
-						subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
-					}, Object(d.a)(e)))
-				})(s)
-			}, q = () => async (e, t) => {
-				(e => {
-					Object(h.a)(Object.assign({
-						noun: "other_message",
-						source: a.b.ChatView,
-						action: a.a.ModDelete,
-						chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e), Object(l.s)(e), Object(l.n)(e), Object(l.x)(e)),
-						subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
-					}, Object(d.a)(e)))
-				})(t())
-			}, J = e => async (t, n) => {
-				const s = n(),
-					c = Object(o.b)(s),
-					r = (e => {
-						switch (e) {
-							case a.b.ChatSettings:
-								return a.b.ChatSettings;
-							default:
-								return a.b.ChatView
-						}
-					})(c && c.source);
-				((e, t, n) => {
-					Object(h.a)(Object.assign({
-						noun: "user",
-						source: n,
-						action: a.a.Kick,
-						chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e), Object(l.s)(e), Object(l.n)(e), Object(l.x)(e)),
-						subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
-					}, Object(d.a)(e), {
-						actionInfo: Object.assign({
-							settingValue: t
-						}, Object(O.a)(e))
-					}))
-				})(n(), e, r)
-			}, Z = e => async (t, n) => {
-				((e, t) => {
-					Object(h.a)(Object.assign({
-						noun: "ban_user",
-						source: t,
-						action: a.a.Click,
-						chat: Object.assign({}, Object(l.A)(e), Object(l.p)(e), Object(l.g)(e), Object(l.s)(e), Object(l.n)(e), Object(l.x)(e)),
-						subreddit: Object.assign({}, Object(u.a)(e), Object(u.b)(e))
-					}, Object(d.a)(e)))
-				})(n(), e)
-			}
 		},
 		"./src/chat/actions/typingIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -2047,32 +2047,6 @@
 		},
 		"./src/chat/actions/user.ts": function(e, t, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.symbol.js");
-			var a = n("./node_modules/lodash/chunk.js"),
-				s = n.n(a),
-				c = n("./node_modules/lodash/isEmpty.js"),
-				r = n.n(c),
-				o = n("./node_modules/react-router-redux/es/index.js"),
-				i = n("./src/lib/makeActionCreator/index.ts"),
-				l = n("./src/chat/actions/channel.ts"),
-				d = n("./src/chat/actions/theme.ts"),
-				u = n("./src/chat/actions/tracking.ts"),
-				h = n("./src/chat/constants/channels.ts"),
-				m = n("./src/chat/endpoints/accounts/index.ts"),
-				b = n("./src/chat/endpoints/sendbird/index.ts"),
-				p = n("./src/chat/endpoints/users/index.ts"),
-				g = n("./src/chat/helpers/errors.ts"),
-				f = n("./src/chat/models/Channel/index.ts"),
-				O = n("./src/chat/models/Contact/index.ts");
-			const j = e => ({
-				experimentId: e.experiment_id,
-				owner: e.owner,
-				variant: e.variant
-			});
-			var C = n("./src/chat/models/User/index.ts"),
-				_ = n("./src/chat/selectors/channels.ts"),
-				E = n("./src/chat/selectors/user.ts"),
-				v = n("./src/chat/singleton/SendbirdSDK.ts");
 			n.d(t, "a", (function() {
 				return y
 			})), n.d(t, "f", (function() {
@@ -2118,15 +2092,41 @@
 			})), n.d(t, "n", (function() {
 				return se
 			}));
-			var I = function(e, t) {
-				var n = {};
-				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var s = 0;
-					for (a = Object.getOwnPropertySymbols(e); s < a.length; s++) t.indexOf(a[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[s]) && (n[a[s]] = e[a[s]])
-				}
-				return n
-			};
+			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.symbol.js");
+			var a = n("./node_modules/lodash/chunk.js"),
+				s = n.n(a),
+				c = n("./node_modules/lodash/isEmpty.js"),
+				r = n.n(c),
+				o = n("./node_modules/react-router-redux/es/index.js"),
+				i = n("./src/lib/makeActionCreator/index.ts"),
+				l = n("./src/chat/actions/channel.ts"),
+				d = n("./src/chat/actions/theme.ts"),
+				u = n("./src/chat/actions/tracking.ts"),
+				h = n("./src/chat/constants/channels.ts"),
+				m = n("./src/chat/endpoints/accounts/index.ts"),
+				b = n("./src/chat/endpoints/sendbird/index.ts"),
+				p = n("./src/chat/endpoints/users/index.ts"),
+				g = n("./src/chat/helpers/errors.ts"),
+				f = n("./src/chat/models/Channel/index.ts"),
+				O = n("./src/chat/models/Contact/index.ts");
+			const j = e => ({
+				experimentId: e.experiment_id,
+				owner: e.owner,
+				variant: e.variant
+			});
+			var C = n("./src/chat/models/User/index.ts"),
+				_ = n("./src/chat/selectors/channels.ts"),
+				E = n("./src/chat/selectors/user.ts"),
+				v = n("./src/chat/singleton/SendbirdSDK.ts"),
+				I = function(e, t) {
+					var n = {};
+					for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var s = 0;
+						for (a = Object.getOwnPropertySymbols(e); s < a.length; s++) t.indexOf(a[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[s]) && (n[a[s]] = e[a[s]])
+					}
+					return n
+				};
 			const y = "USER__ACCOUNT_FETCH_COMPLETED",
 				x = "USER__REDDAID_RECEIVED",
 				S = "USER__LOID_RECEIVED",
@@ -2404,6 +2404,9 @@
 		},
 		"./src/chat/components/FrameContent/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return Qm
+			}));
 			n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var a = n("./node_modules/lodash/isEqual.js"),
 				s = n.n(a),
@@ -7447,9 +7450,6 @@
 			}) : void 0 : r.a.createElement(gh, null);
 			var Jm = n("./src/chat/components/FrameContent/index.m.less"),
 				Zm = n.n(Jm);
-			n.d(t, "a", (function() {
-				return Qm
-			}));
 			const Qm = Zm.a.Main,
 				Ym = Object(F.a)({
 					channel: e => Object(y.l)(e),
@@ -8161,6 +8161,9 @@
 		},
 		"./src/chat/components/Root/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return y
+			}));
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				c = n("./node_modules/react-router/esm/react-router.js"),
@@ -8217,9 +8220,6 @@
 					}, t))
 				})))
 			}
-			n.d(t, "a", (function() {
-				return y
-			}))
 		},
 		"./src/chat/components/Scroller/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -8514,6 +8514,19 @@
 		},
 		"./src/chat/controls/Button/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return _
+			})), n.d(t, "d", (function() {
+				return E
+			})), n.d(t, "b", (function() {
+				return v
+			})), n.d(t, "f", (function() {
+				return I
+			})), n.d(t, "c", (function() {
+				return y
+			})), n.d(t, "e", (function() {
+				return x
+			}));
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				c = n("./src/lib/classNames/index.ts"),
@@ -8569,19 +8582,6 @@
 				p = n("./src/chat/icons/svgs/Trash/index.tsx"),
 				g = n("./src/chat/controls/Button/index.m.less"),
 				f = n.n(g);
-			n.d(t, "a", (function() {
-				return _
-			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "b", (function() {
-				return v
-			})), n.d(t, "f", (function() {
-				return I
-			})), n.d(t, "c", (function() {
-				return y
-			})), n.d(t, "e", (function() {
-				return x
-			}));
 			const O = r.a.a("Button", f.a),
 				j = r.a.button("Button", f.a),
 				C = r.a.button("MessageIconButton", f.a),
@@ -11925,13 +11925,14 @@
 		"./src/chat/selectors/experiments.ts": function(e, t, n) {
 			"use strict";
 			var a;
-			! function(e) {
-				e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux"
-			}(a || (a = {})), n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "a", (function() {
-				return c
-			}));
+			n.d(t, "b", (function() {
+					return s
+				})), n.d(t, "a", (function() {
+					return c
+				})),
+				function(e) {
+					e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux"
+				}(a || (a = {}));
 			const s = e => !!e.user.experiments[a.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
 				c = e => !!e.user.experiments[a.SubredditChatNotifcationFtux]
 		},
@@ -12185,6 +12186,11 @@
 		},
 		"./src/chat/singleton/SendbirdSDK.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return U
+			})), n.d(t, "c", (function() {
+				return R
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
 				s = n("./node_modules/lodash/noop.js"),
@@ -12227,11 +12233,6 @@
 				M = n("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
 				A = n("./src/chat/models/Message/index.ts"),
 				D = n("./src/chat/models/User/member.ts");
-			n.d(t, "a", (function() {
-				return U
-			})), n.d(t, "c", (function() {
-				return R
-			}));
 			const {
 				sendbirdAppId: L
 			} = a.a;
@@ -13034,17 +13035,6 @@
 		},
 		"./src/chat/tracking/events/messagesInbox.ts": function(e, t, n) {
 			"use strict";
-			var a = n("./src/chat/selectors/telemetry.ts"),
-				s = n("./src/chat/selectors/promos.ts");
-			const c = e => {
-				return {
-					settingValue: Object(s.c)(e) ? "ftue_none" : "ftue_open"
-				}
-			};
-			var r = n("./src/chat/tracking/fields/chat.ts"),
-				o = n("./src/chat/tracking/fields/common.ts"),
-				i = n("./src/chat/tracking/sendEvent.ts"),
-				l = n("./src/telemetry/models/Event.ts");
 			n.d(t, "e", (function() {
 				return d
 			})), n.d(t, "f", (function() {
@@ -13060,6 +13050,17 @@
 			})), n.d(t, "c", (function() {
 				return g
 			}));
+			var a = n("./src/chat/selectors/telemetry.ts"),
+				s = n("./src/chat/selectors/promos.ts");
+			const c = e => {
+				return {
+					settingValue: Object(s.c)(e) ? "ftue_none" : "ftue_open"
+				}
+			};
+			var r = n("./src/chat/tracking/fields/chat.ts"),
+				o = n("./src/chat/tracking/fields/common.ts"),
+				i = n("./src/chat/tracking/sendEvent.ts"),
+				l = n("./src/telemetry/models/Event.ts");
 			const d = e => {
 					Object(i.a)(Object.assign({
 						noun: "inbox",
@@ -13528,6 +13529,11 @@
 		},
 		"./src/higherOrderComponents/asTooltip.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return O
+			}));
 			var a = n("./node_modules/lodash/omit.js"),
 				s = n.n(a),
 				c = n("./node_modules/react/index.js"),
@@ -13549,11 +13555,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "a", (function() {
-				return O
-			}));
 			const p = ["left", "bottom"],
 				g = ["left", "top"],
 				f = e => {
@@ -13909,17 +13910,6 @@
 		},
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
 			"use strict";
-			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
-			var a = n("./node_modules/linkify-it/index.js"),
-				s = n.n(a),
-				c = n("./node_modules/tlds/index.js"),
-				r = n.n(c),
-				o = n("./src/lib/linkMatchers/customLinks.ts"),
-				i = n("./node_modules/lodash/values.js"),
-				l = n.n(i);
-			const d = e => l()(o.b).includes(e.substring(1)),
-				u = ["//", "ftp:", "http:", "https:", "mailto:"],
-				h = e => ((e, t) => (t.forEach(t => e.add(t, null)), e))(e, u);
 			n.d(t, "e", (function() {
 				return m
 			})), n.d(t, "d", (function() {
@@ -13939,7 +13929,18 @@
 			})), n.d(t, "h", (function() {
 				return E
 			}));
-			const m = s()().tlds(r.a).set({
+			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
+			var a = n("./node_modules/linkify-it/index.js"),
+				s = n.n(a),
+				c = n("./node_modules/tlds/index.js"),
+				r = n.n(c),
+				o = n("./src/lib/linkMatchers/customLinks.ts"),
+				i = n("./node_modules/lodash/values.js"),
+				l = n.n(i);
+			const d = e => l()(o.b).includes(e.substring(1)),
+				u = ["//", "ftp:", "http:", "https:", "mailto:"],
+				h = e => ((e, t) => (t.forEach(t => e.add(t, null)), e))(e, u),
+				m = s()().tlds(r.a).set({
 					fuzzyIP: !0
 				}),
 				b = s()().set({
@@ -14022,4 +14023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.9ddb9fad8881442d7b4e.js.map
+//# sourceMappingURL=Chat~RedesignChat.5467e4acff80ba1244ff.js.map

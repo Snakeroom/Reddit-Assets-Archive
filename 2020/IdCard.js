@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.2b661252d940a4604dd4.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e7a947386477515fd4f9.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -440,6 +440,13 @@
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "c", (function() {
+				return I
+			})), n.d(t, "a", (function() {
+				return N
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./node_modules/react-redux/es/index.js"),
@@ -466,13 +473,6 @@
 				}),
 				v = n("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				C = n.n(v);
-			n.d(t, "b", (function() {
-				return O
-			})), n.d(t, "c", (function() {
-				return I
-			})), n.d(t, "a", (function() {
-				return N
-			}));
 			const E = "add-custom-badge-tooltip",
 				y = 100,
 				_ = 2 * y;
@@ -3484,4 +3484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.2b661252d940a4604dd4.js.map
+//# sourceMappingURL=IdCard.e7a947386477515fd4f9.js.map

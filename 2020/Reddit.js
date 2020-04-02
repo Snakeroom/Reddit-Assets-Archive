@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4e30e8dadc3ad61e7303.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a1601c9e6b33f6b51f85.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -202,6 +202,11 @@
 		},
 		"./src/reddit/actions/alpha.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return p
+			})), s.d(t, "a", (function() {
+				return h
+			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js"), s("./node_modules/core-js/modules/es6.regexp.search.js");
 			var n = s("./src/config.ts"),
 				a = s("./src/lib/makeApiRequest/index.ts"),
@@ -223,11 +228,6 @@
 					type: "json"
 				})
 			}
-			s.d(t, "b", (function() {
-				return p
-			})), s.d(t, "a", (function() {
-				return h
-			}));
 			const p = e => async (t, s, n) => {
 				let {
 					apiContext: l
@@ -265,31 +265,31 @@
 		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return c
+			}));
 			var n = s("./src/config.ts"),
 				a = s("./src/reddit/endpoints/governance/requester.ts");
 			var r = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/reddit/actions/economics/me/constants.ts");
-			const i = Object(r.a)(o.a);
-			s.d(t, "a", (function() {
-				return c
-			}));
-			const c = () => async (e, t, s) => {
-				let {
-					apiContext: r
-				} = s;
-				const o = t().user.account,
-					c = !t().economics.me.fetched;
-				if (o && c) {
-					const t = await
-					function(e) {
-						return Object(a.a)(e, {
-							method: "get",
-							endpoint: "".concat(n.a.metaUrl, "/users/me")
-						})
-					}(r());
-					t.ok && e(i(t.body))
+			const i = Object(r.a)(o.a),
+				c = () => async (e, t, s) => {
+					let {
+						apiContext: r
+					} = s;
+					const o = t().user.account,
+						c = !t().economics.me.fetched;
+					if (o && c) {
+						const t = await
+						function(e) {
+							return Object(a.a)(e, {
+								method: "get",
+								endpoint: "".concat(n.a.metaUrl, "/users/me")
+							})
+						}(r());
+						t.ok && e(i(t.body))
+					}
 				}
-			}
 		},
 		"./src/reddit/actions/economics/paymentSystems/actionCreators.ts": function(e, t, s) {
 			"use strict";
@@ -332,6 +332,19 @@
 		},
 		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return E
+			})), s.d(t, "f", (function() {
+				return O
+			})), s.d(t, "b", (function() {
+				return w
+			})), s.d(t, "d", (function() {
+				return j
+			})), s.d(t, "e", (function() {
+				return S
+			})), s.d(t, "c", (function() {
+				return k
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/lodash/forOwn.js"),
 				a = s.n(n),
@@ -365,19 +378,6 @@
 			function y(e) {
 				if (!x(e)) return e
 			}
-			s.d(t, "a", (function() {
-				return E
-			})), s.d(t, "f", (function() {
-				return O
-			})), s.d(t, "b", (function() {
-				return w
-			})), s.d(t, "d", (function() {
-				return j
-			})), s.d(t, "e", (function() {
-				return S
-			})), s.d(t, "c", (function() {
-				return k
-			}));
 			const E = () => async (e, t, s) => {
 				let {
 					apiContext: n
@@ -517,6 +517,9 @@
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return v
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/lib/sentry/index.ts"),
@@ -581,9 +584,6 @@
 				})
 			}
 			var g = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			s.d(t, "a", (function() {
-				return v
-			}));
 			const f = Object(a.a)(g.g),
 				C = Object(a.a)(g.h),
 				P = Object(a.a)(g.f),
@@ -620,6 +620,11 @@
 		},
 		"./src/reddit/actions/notifications/preferences.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return f
+			})), s.d(t, "b", (function() {
+				return x
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/reddit/actions/toaster.ts"),
@@ -631,11 +636,6 @@
 				m = s("./src/reddit/selectors/notificationPrefs.ts"),
 				u = s("./src/reddit/selectors/user.ts"),
 				p = s("./src/reddit/actions/notifications/constants.ts");
-			s.d(t, "a", (function() {
-				return f
-			})), s.d(t, "b", (function() {
-				return x
-			}));
 			const h = Object(a.a)(p.d),
 				b = Object(a.a)(p.c),
 				g = Object(a.a)(p.b),
@@ -1122,6 +1122,9 @@
 		},
 		"./src/reddit/components/AppRouter/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return Xl
+			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/lodash/isEqual.js"),
@@ -6533,9 +6536,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "a", (function() {
-				return Xl
-			}));
 			var Kl = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
@@ -8498,6 +8498,11 @@
 		},
 		"./src/reddit/endpoints/economics/subredditPremium.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return l
+			})), s.d(t, "b", (function() {
+				return m
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/lodash/merge.js"),
 				a = s.n(n),
@@ -8534,11 +8539,6 @@
 				}
 				return g.ok ? n.products = g.body : n.errors.products = g.error, f.ok ? (a()(n.badges, f.body.badges), n.userOwnedBadges = f.body.userOwnedBadges) : n.errors.userBadges = f.error, n
 			}
-			s.d(t, "a", (function() {
-				return l
-			})), s.d(t, "b", (function() {
-				return m
-			}));
 			const m = (e, t) => Object(d.a)(e, {
 				endpoint: "".concat(r.a.metaUrl, "/products/").concat(t, "?types=badge,membership"),
 				method: "delete"
@@ -11982,6 +11982,13 @@
 		},
 		"./src/reddit/selectors/accountManager.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return b
+			})), s.d(t, "b", (function() {
+				return g
+			})), s.d(t, "c", (function() {
+				return f
+			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/lib/addQueryParams/index.ts"),
@@ -11996,15 +12003,8 @@
 					experimentName: i.w,
 					experimentEligibilitySelector: e => !Object(u.F)(e)
 				}), m.a),
-				h = Object(a.a)(p, e => e === i.C.SSO);
-			s.d(t, "a", (function() {
-				return b
-			})), s.d(t, "b", (function() {
-				return g
-			})), s.d(t, "c", (function() {
-				return f
-			}));
-			const b = e => e.accountManagerModalData.actionSource,
+				h = Object(a.a)(p, e => e === i.C.SSO),
+				b = e => e.accountManagerModalData.actionSource,
 				g = e => e.accountManagerModalData.redirectUrl,
 				f = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, h, d.b, (e, t, s, a, c, d) => {
 					let l = "".concat(n.a.accountManagerOrigin).concat(e);
@@ -12272,4 +12272,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.4e30e8dadc3ad61e7303.js.map
+//# sourceMappingURL=Reddit.a1601c9e6b33f6b51f85.js.map

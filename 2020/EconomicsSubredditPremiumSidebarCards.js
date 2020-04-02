@@ -1,16 +1,9 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.e06a6a47317f9c2b1e7f.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.695d215639698fa539fa.js
+// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
 			"use strict";
-			var r = s("./src/reddit/endpoints/economics/banners.ts"),
-				i = s("./src/lib/makeActionCreator/index.ts"),
-				n = s("./src/reddit/actions/economics/banners/constants.ts");
-			const o = Object(i.a)(n.c),
-				d = Object(i.a)(n.d),
-				a = Object(i.a)(n.a),
-				c = Object(i.a)(n.b);
 			s.d(t, "b", (function() {
 				return l
 			})), s.d(t, "a", (function() {
@@ -18,36 +11,43 @@
 			})), s.d(t, "c", (function() {
 				return u
 			}));
-			const l = e => async (t, s, i) => {
-				let {
-					apiContext: n
-				} = i;
-				const a = s();
-				if (!a.user.account) return;
-				if (a.economics.banners.dismissedBanners[e]) return;
-				t(o(e));
-				const c = await Object(r.b)(n(), e);
-				t(d({
-					subredditId: e,
-					data: c
-				}))
-			}, m = (e, t) => async (s, i, n) => {
-				let {
-					apiContext: o
-				} = n;
-				s(a({
-					subredditId: e,
-					bannerType: t
-				})), Object(r.c)(o(), e, t)
-			}, u = (e, t) => async (s, i, n) => {
-				let {
-					apiContext: o
-				} = n;
-				s(c({
-					subredditId: e,
-					bannerType: t
-				})), Object(r.e)(o(), e, t)
-			}
+			var r = s("./src/reddit/endpoints/economics/banners.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/reddit/actions/economics/banners/constants.ts");
+			const o = Object(i.a)(n.c),
+				d = Object(i.a)(n.d),
+				a = Object(i.a)(n.a),
+				c = Object(i.a)(n.b),
+				l = e => async (t, s, i) => {
+					let {
+						apiContext: n
+					} = i;
+					const a = s();
+					if (!a.user.account) return;
+					if (a.economics.banners.dismissedBanners[e]) return;
+					t(o(e));
+					const c = await Object(r.b)(n(), e);
+					t(d({
+						subredditId: e,
+						data: c
+					}))
+				}, m = (e, t) => async (s, i, n) => {
+					let {
+						apiContext: o
+					} = n;
+					s(a({
+						subredditId: e,
+						bannerType: t
+					})), Object(r.c)(o(), e, t)
+				}, u = (e, t) => async (s, i, n) => {
+					let {
+						apiContext: o
+					} = n;
+					s(c({
+						subredditId: e,
+						bannerType: t
+					})), Object(r.e)(o(), e, t)
+				}
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -60,6 +60,13 @@
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "b", (function() {
+				return I
+			})), s.d(t, "c", (function() {
+				return y
+			})), s.d(t, "a", (function() {
+				return B
+			}));
 			var r = s("./node_modules/react/index.js"),
 				i = s.n(r),
 				n = s("./node_modules/react-redux/es/index.js"),
@@ -86,13 +93,6 @@
 				}),
 				O = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				E = s.n(O);
-			s.d(t, "b", (function() {
-				return I
-			})), s.d(t, "c", (function() {
-				return y
-			})), s.d(t, "a", (function() {
-				return B
-			}));
 			const f = "add-custom-badge-tooltip",
 				P = 100,
 				j = 2 * P;
@@ -912,6 +912,17 @@
 		},
 		"./src/reddit/endpoints/economics/banners.ts": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			})), s.d(t, "b", (function() {
+				return a
+			})), s.d(t, "c", (function() {
+				return l
+			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "d", (function() {
+				return u
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r, i, n = s("./src/config.ts"),
 				o = s("./src/reddit/endpoints/governance/requester.ts");
@@ -939,17 +950,7 @@
 					return (await d(e, t, r.UpsellBanners, o)).ok ? o : n
 				}! function(e) {
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
-				}(r || (r = {})), s.d(t, "a", (function() {
-					return i
-				})), s.d(t, "b", (function() {
-					return a
-				})), s.d(t, "c", (function() {
-					return l
-				})), s.d(t, "e", (function() {
-					return m
-				})), s.d(t, "d", (function() {
-					return u
-				})),
+				}(r || (r = {})),
 				function(e) {
 					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(i || (i = {}));
@@ -1014,4 +1015,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.e06a6a47317f9c2b1e7f.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.695d215639698fa539fa.js.map
