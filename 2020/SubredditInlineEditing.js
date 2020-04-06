@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.115b41d58a1a61ae185e.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.0053d5690f7e676aae1a.js
+// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -137,7 +137,6 @@
 			s.d(t, "a", (function() {
 				return T
 			}));
-			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
 				i = s.n(o),
@@ -291,8 +290,11 @@
 						})
 					}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(c.e)(Object.assign({}, Object(c.d)(n.fbt._("You can only add up to {max} community topics", [n.fbt._param("max", u.a.toString())], {
-							hk: "1vo95m"
+						e(Object(c.e)(Object.assign({}, Object(c.d)(n.fbt._({
+							"*": "You can only add up to max {number} community topics",
+							_1: "You can only add up to max 1 community topic"
+						}, [n.fbt._plural(u.a, "number")], {
+							hk: "s07I1"
 						}), m.b.Error), {
 							duration: c.a
 						})))
@@ -370,7 +372,7 @@
 					className: Object(r.a)(...C(i, d), T.a.readOnlySelectedOption),
 					ref: e.innerRef
 				}), e.option.displayText)
-			}, j = e => {
+			}, y = e => {
 				const {
 					innerRef: t,
 					onClickHandler: s,
@@ -384,7 +386,7 @@
 				}), e.option.displayText, o.a.createElement(g.a, {
 					className: T.a.closeIcon
 				}))
-			}, y = () => o.a.createElement("div", {
+			}, j = () => o.a.createElement("div", {
 				className: Object(r.a)(T.a.selectedOption, T.a.readOnlySelectedOption, T.a.fakeOption)
 			}, o.a.createElement(O.a, {
 				className: T.a.plusIcon
@@ -459,8 +461,8 @@
 				}
 			}
 			var J = q(X),
-				Q = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
-				Y = s.n(Q);
+				Y = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
+				Q = s.n(Y);
 			const {
 				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 4, $ = Object(d.c)({
@@ -491,8 +493,8 @@
 					}
 				}
 			}), te = {
-				optionsListDropdownClassName: Y.a.optionsListDropdown,
-				searchBarClassName: Y.a.searchBar
+				optionsListDropdownClassName: Q.a.optionsListDropdown,
+				searchBarClassName: Q.a.searchBar
 			};
 			class se extends o.a.Component {
 				constructor(e) {
@@ -534,18 +536,18 @@
 						subredditId: e
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Y.a.controlRow
+						className: Q.a.controlRow
 					}, o.a.createElement("span", {
-						className: Y.a.numSelected
+						className: Q.a.numSelected
 					}, o.a.createElement(u.a, {
 						subredditId: e
 					})), o.a.createElement("span", {
-						className: Y.a.cancel,
+						className: Q.a.cancel,
 						onClick: this.onCancel
 					}, Z._("Cancel", null, {
 						hk: "3OZmBh"
 					})), o.a.createElement("span", {
-						className: Y.a.save,
+						className: Q.a.save,
 						onClick: this.onSave
 					}, Z._("Save", null, {
 						hk: "1JNPXe"
@@ -558,10 +560,10 @@
 					} = this.props;
 					return t || e ? o.a.createElement("div", {
 						tabIndex: -1,
-						className: Y.a.emptyStateContainer,
+						className: Q.a.emptyStateContainer,
 						onFocus: this.onFocus,
 						onClick: this.onFocus
-					}, o.a.createElement(y, null)) : null
+					}, o.a.createElement(j, null)) : null
 				}
 				shouldRenderSecondaryTagEmptyState() {
 					const {
@@ -577,7 +579,7 @@
 						selectedPrimaryTag: e
 					} = this.props;
 					return o.a.createElement(o.a.Fragment, null, !e && o.a.createElement("span", {
-						className: Y.a.newBadge
+						className: Q.a.newBadge
 					}, Z._("New", null, {
 						hk: "3LXNw5"
 					})), Z._("Community topics", null, {
@@ -600,8 +602,8 @@
 						isEditing: t
 					} = this.state;
 					return o.a.createElement("div", {
-						className: Object(r.a)(Y.a.inlineTopicsContainer, {
-							[Y.a.inlineTopicsContainerEditing]: t
+						className: Object(r.a)(Q.a.inlineTopicsContainer, {
+							[Q.a.inlineTopicsContainerEditing]: t
 						}),
 						tabIndex: -1,
 						ref: this.topicsEditorContainer,
@@ -609,28 +611,28 @@
 					}, o.a.createElement(p.b, {
 						context: N.a.idCard,
 						subredditId: e,
-						selectedOptionComponent: t ? j : E,
+						selectedOptionComponent: t ? y : E,
 						onFocus: this.onFocus,
 						onBlur: this.onBlur,
 						childClassNames: te,
 						readOnlyMode: t ? _.a.editable : _.a.focusableReadOnly,
 						maxTopicsToDisplay: t ? void 0 : z
 					}, !t && o.a.createElement(F.a, {
-						className: Y.a.pencil
+						className: Q.a.pencil
 					}), this.renderFocusGrabber()), t && this.renderControlRow())
 				}
 				renderSubtext() {
 					return o.a.createElement("div", {
-						className: Y.a.titleSubtext
+						className: Q.a.titleSubtext
 					}, o.a.createElement(k.a, {
-						className: Y.a.modIcon
+						className: Q.a.modIcon
 					}), Z._("Only visible to mods", null, {
 						hk: "3DMuXs"
 					}))
 				}
 				renderPlaceholder() {
 					return o.a.createElement("div", {
-						className: Y.a.container
+						className: Q.a.container
 					}, o.a.createElement(h.a, null))
 				}
 				render() {
@@ -641,21 +643,21 @@
 						unsavedChangesModalIsOpen: n
 					} = this.props;
 					return t ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: Y.a.container
+						className: Q.a.container
 					}, o.a.createElement("div", {
-						className: Y.a.title
+						className: Q.a.title
 					}, this.renderTitle(), this.renderSubtext()), o.a.createElement(m.b, {
 						subredditId: s,
 						shouldShowTooltip: !0
 					}), this.shouldRenderSecondaryTagEmptyState() ? this.renderEmptyState() : this.renderTopicsEditor(), o.a.createElement(b.a, {
 						context: e,
-						className: Object(r.a)(Y.a.relatedTopicsContainer, {
-							[Y.a.relatedTopicsContainerEmptyState]: this.shouldRenderSecondaryTagEmptyState()
+						className: Object(r.a)(Q.a.relatedTopicsContainer, {
+							[Q.a.relatedTopicsContainerEmptyState]: this.shouldRenderSecondaryTagEmptyState()
 						}),
 						subredditId: s,
 						onOptionSelected: this.onSuggestedOptionSelected
 					}, o.a.createElement("div", {
-						className: Y.a.relatedTopicsCopy
+						className: Q.a.relatedTopicsCopy
 					}, Z._("Related topics", null, {
 						hk: "2Hw7ep"
 					})))), n && o.a.createElement(v.b, {
@@ -687,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditInlineEditing.115b41d58a1a61ae185e.js.map
+//# sourceMappingURL=SubredditInlineEditing.0053d5690f7e676aae1a.js.map

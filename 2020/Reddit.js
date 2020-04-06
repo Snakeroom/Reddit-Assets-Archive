@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.357a9bf3e9f29f3ebcd0.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6771be16cf23e6817a8e.js
+// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -7497,48 +7497,47 @@
 		},
 		"./src/reddit/components/LightboxHeader/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				o = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/lib/classNames/index.ts"),
-				c = s("./src/lib/constants/index.ts"),
-				d = s("./src/reddit/actions/post.ts"),
-				l = s("./src/reddit/actions/shortcuts.ts"),
-				m = s("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
-				u = s("./src/reddit/components/FlairWrapper/index.tsx"),
-				p = s("./src/reddit/components/PostTitle/index.tsx"),
-				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = s("./src/reddit/constants/colors.ts"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/helpers/postCollection.ts"),
-				C = s("./src/reddit/i18n/components.tsx"),
-				P = s("./src/reddit/i18n/utils.ts"),
-				v = s("./src/reddit/icons/fonts/Expandos/Media/Video/index.tsx"),
-				x = s("./src/reddit/icons/fonts/Gif/index.tsx"),
-				y = s("./src/reddit/icons/fonts/Link/index.tsx"),
-				E = s("./src/reddit/icons/fonts/Photos/index.tsx"),
-				O = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				w = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				j = s("./src/reddit/models/Media/index.ts"),
-				S = s("./src/reddit/models/Vote/index.ts"),
-				k = s("./src/reddit/selectors/experiments/categories.ts"),
-				M = s("./src/reddit/selectors/platform.ts"),
-				_ = s("./src/reddit/components/LightboxHeader/index.m.less"),
-				I = s.n(_);
-			const N = Object(o.c)({
-					isInCategoriesExperiment: k.a,
-					post: M.m
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./node_modules/react/index.js"),
+				r = s.n(a),
+				o = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/lib/constants/index.ts"),
+				l = s("./src/reddit/actions/post.ts"),
+				m = s("./src/reddit/actions/shortcuts.ts"),
+				u = s("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
+				p = s("./src/reddit/components/FlairWrapper/index.tsx"),
+				h = s("./src/reddit/components/PostTitle/index.tsx"),
+				b = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				g = s("./src/reddit/constants/colors.ts"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				C = s("./src/reddit/helpers/postCollection.ts"),
+				P = s("./src/reddit/icons/fonts/Expandos/Media/Video/index.tsx"),
+				v = s("./src/reddit/icons/fonts/Gif/index.tsx"),
+				x = s("./src/reddit/icons/fonts/Link/index.tsx"),
+				y = s("./src/reddit/icons/fonts/Photos/index.tsx"),
+				E = s("./src/reddit/icons/fonts/Text/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				w = s("./src/reddit/models/Media/index.ts"),
+				j = s("./src/reddit/models/Vote/index.ts"),
+				S = s("./src/reddit/selectors/experiments/categories.ts"),
+				k = s("./src/reddit/selectors/platform.ts"),
+				M = s("./src/reddit/components/LightboxHeader/index.m.less"),
+				_ = s.n(M);
+			const I = Object(i.c)({
+					isInCategoriesExperiment: S.a,
+					post: k.m
 				}),
-				T = Object(r.b)(N, (e, t) => {
+				N = Object(o.b)(I, (e, t) => {
 					let {
 						sendEvent: s
 					} = t;
 					return {
 						close: () => {
-							e(Object(l.d)(s, !0))
+							e(Object(m.d)(s, !0))
 						},
-						toggleVote: (t, s) => e(s === S.a.upvoted ? Object(d.ab)(t) : Object(d.w)(t))
+						toggleVote: (t, s) => e(s === j.a.upvoted ? Object(l.ab)(t) : Object(l.w)(t))
 					}
 				}, (e, t, s) => Object.assign({}, e, t, s, {
 					onVoteClick: n => {
@@ -7546,7 +7545,7 @@
 						a && t.toggleVote(a.id, n)
 					}
 				}));
-			class R extends a.a.Component {
+			class T extends r.a.Component {
 				constructor() {
 					super(...arguments), this.closeLightbox = e => {
 						e.preventDefault(), e.stopPropagation(), this.props.close()
@@ -7557,64 +7556,72 @@
 						className: e,
 						onCloseClick: t,
 						onVoteClick: s,
-						page: r,
-						post: o
-					} = this.props, d = A[o && o.media ? o.media.type : j.n.EMBED], l = !o && r && r.meta && r.meta.name === c.zb.META_MEMBERSHIP_PAYWALL_PAGE;
-					return a.a.createElement("div", {
-						className: Object(i.a)(I.a.container, e, {
-							[I.a.isCollection]: o && Object(f.a)(o)
+						page: o,
+						post: i
+					} = this.props, l = R[i && i.media ? i.media.type : w.n.EMBED], m = !i && o && o.meta && o.meta.name === d.zb.META_MEMBERSHIP_PAYWALL_PAGE;
+					return r.a.createElement("div", {
+						className: Object(c.a)(_.a.container, e, {
+							[_.a.isCollection]: i && Object(C.a)(i)
 						})
-					}, a.a.createElement("div", {
-						className: I.a.postDetails
-					}, o && a.a.createElement(n.Fragment, null, a.a.createElement(m.a, {
-						className: I.a.horizontalVotes,
+					}, r.a.createElement("div", {
+						className: _.a.postDetails
+					}, i && r.a.createElement(a.Fragment, null, r.a.createElement(u.a, {
+						className: _.a.horizontalVotes,
 						compact: !1,
 						light: !0,
-						model: o,
+						model: i,
 						onVoteClick: s,
 						redditStyle: !0
-					}), a.a.createElement(d, {
-						className: I.a.mediaIcon
-					}), a.a.createElement(p.c, {
-						className: I.a.postTitle,
-						post: o,
-						size: p.b.Small,
+					}), r.a.createElement(l, {
+						className: _.a.mediaIcon
+					}), r.a.createElement(h.c, {
+						className: _.a.postTitle,
+						post: i,
+						size: h.b.Small,
 						hideSourceLink: !0,
 						isCommentsPage: !0,
 						isOverlay: !0,
 						nowrap: !0,
-						titleColor: b.a.lightboxHeaderText,
-						titleLinkClassName: I.a.postTitleLink,
+						titleColor: g.a.lightboxHeaderText,
+						titleLinkClassName: _.a.postTitleLink,
 						showCategoryTag: !0
-					}), a.a.createElement(u.a, {
-						post: o,
+					}), r.a.createElement(p.a, {
+						post: i,
 						nowrap: !0,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: this.props.isInCategoriesExperiment
-					})), l && r && r.urlParams.subredditName && a.a.createElement("div", {
-						className: I.a.membershipPaywallTitle
-					}, Object(P.c)("r/".concat(Object(P.b)("communityName", r.urlParams.subredditName), " Special Membership")))), a.a.createElement("div", {
-						className: I.a.actions
-					}, a.a.createElement(g.n, {
-						className: I.a.close,
+					})), m && o && o.urlParams.subredditName && r.a.createElement("div", {
+						className: _.a.membershipPaywallTitle
+					}, n.fbt._("{communityName} Special Membership", [n.fbt._param("communityName", "r/".concat(o.urlParams.subredditName))], {
+						hk: "4vP4VY"
+					}))), r.a.createElement("div", {
+						className: _.a.actions
+					}, r.a.createElement(f.n, {
+						className: _.a.close,
 						onClick: t || this.closeLightbox,
-						title: Object(P.c)("Close"),
-						"aria-label": Object(P.c)("Close")
-					}, a.a.createElement(w.a, null), a.a.createElement("span", {
-						className: I.a.closeText
-					}, a.a.createElement(C.c, null, "Close")))))
+						title: n.fbt._("Close", null, {
+							hk: "3BrQGj"
+						}),
+						"aria-label": n.fbt._("Close", null, {
+							hk: "QApwN"
+						})
+					}, r.a.createElement(O.a, null), r.a.createElement("span", {
+						className: _.a.closeText
+					}, n.fbt._("Close", null, {
+						hk: "4CZebl"
+					})))))
 				}
 			}
-			const A = {
-				[j.n.GIFVIDEO]: x.a,
-				[j.n.IMAGE]: E.a,
-				[j.n.TEXT]: O.a,
-				[j.n.RTJSON]: O.a,
-				[j.n.VIDEO]: v.a,
-				[j.n.EMBED]: y.a,
-				[j.n.LIVEVIDEO]: v.a
+			const R = {
+				[w.n.GIFVIDEO]: v.a,
+				[w.n.IMAGE]: y.a,
+				[w.n.TEXT]: E.a,
+				[w.n.RTJSON]: E.a,
+				[w.n.VIDEO]: P.a,
+				[w.n.EMBED]: x.a,
+				[w.n.LIVEVIDEO]: P.a
 			};
-			t.a = Object(h.c)(T(R))
+			t.a = Object(b.c)(N(T))
 		},
 		"./src/reddit/components/ModerationDropdown/index.tsx": function(e, t, s) {
 			"use strict";
@@ -12252,4 +12259,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.357a9bf3e9f29f3ebcd0.js.map
+//# sourceMappingURL=Reddit.6771be16cf23e6817a8e.js.map

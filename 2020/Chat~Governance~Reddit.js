@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c10e9a36dbc2221b8e1b.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6504e9ed4a7e7caa6895.js
+// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11138,14 +11138,14 @@
 					}))
 				},
 				U = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("1f6fe08-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("c8b65ce-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1f6fe08-production",
+						release: "c8b65ce-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new s.Integrations.Breadcrumbs({
@@ -11507,7 +11507,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1f6fe08-production",
+							releaseClient: "c8b65ce-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -21226,8 +21226,8 @@
 				return ke
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/app/strings/index.ts"),
+			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
+				r = i("./node_modules/reselect/es/index.js"),
 				s = i("./src/lib/constants/index.ts"),
 				o = i("./src/lib/makePostCreationPageKey/index.ts"),
 				d = i("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
@@ -21271,7 +21271,7 @@
 				B = e => null !== e.creations.formData.postSchedule,
 				j = e => (e && e.fields || []).map(e => e.msg),
 				k = e => e && "extra" in e ? Object.keys(e.extra).map(t => e.extra[t]) : [],
-				N = Object(n.a)(e => e.creations.api.post.submit.error, e => e.creations.api.editor.mediaUpload.error, (e, t) => {
+				N = Object(r.a)(e => e.creations.api.post.submit.error, e => e.creations.api.editor.mediaUpload.error, (e, t) => {
 					const {
 						apiError: i,
 						validationError: n,
@@ -21297,7 +21297,7 @@
 				L = e => e.creations.api.post.submit.pending,
 				D = e => e.creations.api.editor.mediaUpload.pending,
 				M = e => e.creations.api.post.submit.error.needsCaptcha,
-				U = Object(n.a)(x.i, T.f, e => {
+				U = Object(r.a)(x.i, T.f, e => {
 					const t = Object(T.e)(e);
 					if (t) {
 						const i = Object(O.d)(e, {
@@ -21350,7 +21350,7 @@
 					const o = e.moderatingSubreddits[t.id];
 					return !!o && (e => Object.keys(e).some(t => !0 === e[t]))(o)
 				},
-				H = Object(n.a)(q, T.f, U, W, (e, t, i, n) => {
+				H = Object(r.a)(q, T.f, U, W, (e, t, i, n) => {
 					if (e === s.Hb.POLL) return e;
 					const {
 						allowedPostTypes: r
@@ -21368,7 +21368,7 @@
 				z = e => e.creations.api.post.update.pending,
 				K = e => !!e.creations.api.post.update.error,
 				Y = e => e.creations.formState.editorMode || f.h.RICH_TEXT,
-				Q = Object(n.a)(e => e.creations.api.post.update.error, e => j(e)),
+				Q = Object(r.a)(e => e.creations.api.post.update.error, e => j(e)),
 				J = e => e.creations.postEditing.draft.markdown,
 				X = e => e.creations.postEditing.draft.rte,
 				Z = e => e.creations.formData.isChatPost,
@@ -21387,7 +21387,7 @@
 				ie = e => e.creations.formData.eventSchedule || void 0,
 				ne = e => e.creations.formData.postSchedule || void 0,
 				re = e => c.d.scheduledPosts(e),
-				se = Object(n.a)(e => e.creations.formData.flair, e => {
+				se = Object(r.a)(e => e.creations.formData.flair, e => {
 					const t = Object(T.d)(e);
 					return t ? Object(S.d)(e, {
 						subredditId: t
@@ -21407,10 +21407,10 @@
 						subredditName: t
 					})
 				},
-				pe = Object(n.a)(W, me, (e, t) => e || !t || t.bodyRestrictionPolicy !== b.a.NotAllowed),
+				pe = Object(r.a)(W, me, (e, t) => e || !t || t.bodyRestrictionPolicy !== b.a.NotAllowed),
 				he = e => e.creations.formData.body.link,
 				_e = e => e.creations.formData.body.markdown,
-				ge = Object(n.a)(e => e.creations.formData.body.media, e => e.uploads[f.m], U, x.O, (e, t, i, n) => {
+				ge = Object(r.a)(e => e.creations.formData.body.media, e => e.uploads[f.m], U, x.O, (e, t, i, r) => {
 					if (!t) return;
 					const s = Object(h.f)(t.metadata.mimetype),
 						{
@@ -21421,11 +21421,11 @@
 					} = e && e.video || {};
 					if (o) {
 						const e = i.name;
-						o.images ? o.videos || (d = Object(r.a)(n, "postCreation.mediaInput.makeGif.fixedToOnReason", {
-							subredditName: e
-						}), a = !0) : (d = Object(r.a)(n, "postCreation.mediaInput.makeGif.fixedToOffReason", {
-							subredditName: e
-						}), a = !1)
+						o.images ? o.videos || (d = "".concat(n.fbt._("Video auto converted to GIF because {subredditName} is an image only subreddit", [n.fbt._param("subredditName", "r/".concat(e))], {
+							hk: "4g01YI"
+						})), a = !0) : (d = "".concat(n.fbt._("Video cannot be converted to GIF because {subredditName} is a video only subreddit", [n.fbt._param("subredditName", "r/".concat(e))], {
+							hk: "2RVHSt"
+						})), a = !1)
 					}
 					return {
 						file: t.file,
@@ -28455,4 +28455,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.c10e9a36dbc2221b8e1b.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.6504e9ed4a7e7caa6895.js.map

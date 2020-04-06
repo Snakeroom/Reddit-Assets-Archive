@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a701ddd4800c63433de6.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.784ce3a034300101568f.js
+// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5606,101 +5606,105 @@
 				return D
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./src/telemetry/index.ts"),
-				r = n("./src/lib/constants/index.ts"),
-				o = n("./src/lib/makeActionCreator/index.ts"),
-				c = n("./src/lib/makeListingKey/index.ts"),
-				i = n("./src/reddit/actions/discoveryUnit.ts"),
-				a = n("./src/reddit/actions/subreddit/similarSubreddit.ts"),
-				d = n("./src/reddit/actions/subreddit/subredditPosts.ts"),
-				u = n("./src/reddit/actions/toaster.ts"),
-				l = n("./src/reddit/constants/inFeedChaining.ts"),
-				b = n("./src/reddit/constants/page.ts"),
-				p = n("./src/reddit/helpers/localStorage/index.ts"),
-				f = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				O = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./src/telemetry/index.ts"),
+				o = n("./src/lib/constants/index.ts"),
+				c = n("./src/lib/makeActionCreator/index.ts"),
+				i = n("./src/lib/makeListingKey/index.ts"),
+				a = n("./src/reddit/actions/discoveryUnit.ts"),
+				d = n("./src/reddit/actions/subreddit/similarSubreddit.ts"),
+				u = n("./src/reddit/actions/subreddit/subredditPosts.ts"),
+				l = n("./src/reddit/actions/toaster.ts"),
+				b = n("./src/reddit/constants/inFeedChaining.ts"),
+				p = n("./src/reddit/constants/page.ts"),
+				f = n("./src/reddit/helpers/localStorage/index.ts"),
+				O = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				m = n("./src/reddit/models/Toast/index.ts"),
 				g = n("./src/reddit/selectors/inFeedChaining.ts"),
 				_ = n("./src/reddit/selectors/posts.ts"),
 				j = n("./src/reddit/selectors/subreddit.ts");
 			const y = "FEED_CHAINING__CHAIN_LOADED",
-				h = Object(o.a)(y),
+				h = Object(c.a)(y),
 				E = e => {
 					const t = Date.now() - e,
-						n = Object(p.r)();
+						n = Object(f.r)();
 					return Object.keys(n).filter(e => n[e].when >= t).map(e => n[e])
 				},
 				I = e => {
 					let {
 						listingName: t,
 						listingKey: n,
-						postId: o
+						postId: s
 					} = e;
-					return async (e, u) => {
-						if (!o) return;
-						if (!(t === b.f || t === b.b)) return;
-						0 === E(r.db).length && Object(p.P)(!1);
-						let O = u();
-						if (Object(g.d)(O, {
+					return async (e, c) => {
+						if (!s) return;
+						if (!(t === p.f || t === p.b)) return;
+						0 === E(o.db).length && Object(f.P)(!1);
+						let l = c();
+						if (Object(g.d)(l, {
 								listingKey: n,
-								postId: o
-							}) || Object(g.a)(O).length >= l.a || Object(p.x)() || E(r.w).length >= l.a) return;
-						const m = Object(_.B)(O, {
+								postId: s
+							}) || Object(g.a)(l).length >= b.a || Object(f.x)() || E(o.w).length >= b.a) return;
+						const m = Object(_.B)(l, {
 							listingKey: n,
-							postId: o
+							postId: s
 						});
 						if (m && m.isSponsored) return;
-						await e(Object(i.g)()), O = u();
-						const y = Object(g.b)(O, {
+						await e(Object(a.g)()), l = c();
+						const y = Object(g.b)(l, {
 							listingName: t
 						});
 						if (!y) return;
-						const I = Object(_.Z)(O, {
-							postId: o
+						const I = Object(_.Z)(l, {
+							postId: s
 						});
-						if (!I || Object(g.e)(O, {
+						if (!I || Object(g.e)(l, {
 								subredditId: I.id
 							}) || (e => {
-								return E(r.w).some(t => t.subredditId === e)
+								return E(o.w).some(t => t.subredditId === e)
 							})(I.id)) return;
 						const S = {
 							subredditIds: [I.id],
-							count: l.b
+							count: b.b
 						};
-						await e(Object(a.b)(S));
-						const v = Object(a.a)(S);
-						O = u();
-						const T = Object(j.u)(O, {
+						await e(Object(d.b)(S));
+						const v = Object(d.a)(S);
+						l = c();
+						const T = Object(j.u)(l, {
 							key: v
 						});
 						0 !== T.length ? (await Promise.all(T.map(t => e((e => async (t, n) => {
-							const s = r.Qb.DAY.toUpperCase(),
-								o = Object(c.a)(e, r.N.TOP, {
+							const s = o.Qb.DAY.toUpperCase(),
+								r = Object(i.a)(e, o.N.TOP, {
 									t: s
 								});
 							Object(_.G)(n(), {
-								listingKey: o
-							}).length > 0 || await t(Object(d.b)({
+								listingKey: r
+							}).length > 0 || await t(Object(u.b)({
 								range: s,
-								sort: r.H.TOP,
+								sort: o.H.TOP,
 								subredditName: e
 							}))
-						})(t.name)))), O = u(), Object(g.f)(O, {
-							postId: o
-						}).length < l.c ? Object(s.a)(Object(f.b)(y, "other", I)(O)) : (Object(p.a)(o, I.id), Object(s.a)(Object(f.c)(y, I)(O)), e(h({
+						})(t.name)))), l = c(), Object(g.f)(l, {
+							postId: s
+						}).length < b.c ? Object(r.a)(Object(O.b)(y, "other", I)(l)) : (Object(f.a)(s, I.id), Object(r.a)(Object(O.c)(y, I)(l)), e(h({
 							listingKey: n,
-							postId: o
-						})))) : Object(s.a)(Object(f.b)(y, "no_chaining", I)(O))
+							postId: s
+						})))) : Object(r.a)(Object(O.b)(y, "no_chaining", I)(l))
 					}
 				},
 				S = "FEED_CHAINING__CHAIN_TOGGLED",
-				v = (Object(o.a)(S), "FEED_CHAINING__CHAINING_TOGGLED"),
-				T = Object(o.a)(v),
+				v = (Object(c.a)(S), "FEED_CHAINING__CHAINING_TOGGLED"),
+				T = Object(c.a)(v),
 				D = () => async e => {
-					Object(p.P)(!0), e(T({
+					Object(f.P)(!0), e(T({
 						isDismissed: !0
-					})), e(Object(u.e)(Object(u.d)(Object(O.c)("You'll see this less often."), m.b.Undo, Object(O.c)("Undo"), async () => {
-						Object(p.P)(!1), e(T({
+					})), e(Object(l.e)(Object(l.d)(s.fbt._("You'll see this less often.", null, {
+						hk: "38LGcQ"
+					}), m.b.Undo, s.fbt._("Undo", null, {
+						hk: "4zFGDk"
+					}), async () => {
+						Object(f.P)(!1), e(T({
 							isDismissed: !1
 						}))
 					})))
@@ -50533,4 +50537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a701ddd4800c63433de6.js.map
+//# sourceMappingURL=Governance~Reddit.784ce3a034300101568f.js.map

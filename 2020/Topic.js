@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.3bb9cde5b9647d18d189.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9044f87b7d4a1f8b97e1.js
+// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -257,22 +257,22 @@
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/higherOrderComponents/asTooltip.tsx"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				l = s("./src/reddit/actions/preferences.ts"),
-				u = s("./src/reddit/actions/tooltip.ts"),
-				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = s("./src/reddit/constants/postLayout.ts"),
-				p = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				h = s("./src/reddit/contexts/Tooltip.ts"),
-				g = s("./src/reddit/controls/Dropdown/index.tsx"),
-				_ = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				f = s("./src/reddit/i18n/utils.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/higherOrderComponents/asTooltip.tsx"),
+				d = s("./src/lib/classNames/index.ts"),
+				l = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				u = s("./src/reddit/actions/preferences.ts"),
+				m = s("./src/reddit/actions/tooltip.ts"),
+				b = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = s("./src/reddit/constants/postLayout.ts"),
+				h = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				g = s("./src/reddit/contexts/Tooltip.ts"),
+				_ = s("./src/reddit/controls/Dropdown/index.tsx"),
+				f = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				v = s("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
 				x = s("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
 				E = s("./src/reddit/icons/svgs/LargePosts/index.tsx"),
@@ -292,30 +292,36 @@
 			}
 			const C = "view--layout--FUE",
 				L = "LayoutSwitch--picker",
-				j = Object(a.a)(g.a),
+				j = Object(c.a)(_.a),
 				w = {
-					[b.d.Card]: E.a,
-					[b.d.Classic]: v.a,
-					[b.d.Compact]: x.a
+					[p.d.Card]: E.a,
+					[p.d.Classic]: v.a,
+					[p.d.Compact]: x.a
 				},
 				I = {
-					[b.d.Card]: Object(f.c)("card"),
-					[b.d.Classic]: Object(f.c)("classic"),
-					[b.d.Compact]: Object(f.c)("compact")
+					[p.d.Card]: () => n.fbt._("card", null, {
+						hk: "4qOOHu"
+					}),
+					[p.d.Classic]: () => n.fbt._("classic", null, {
+						hk: "1tiTtA"
+					}),
+					[p.d.Compact]: () => n.fbt._("compact", null, {
+						hk: "1N7pcz"
+					})
 				},
-				P = Object(p.t)(),
-				k = Object(i.c)({
+				P = Object(h.t)(),
+				k = Object(a.c)({
 					dropdownIsOpen: Object(S.b)(L),
-					postLayout: p.M,
-					redditStyle: p.A
+					postLayout: h.M,
+					redditStyle: h.A
 				}),
-				F = Object(o.b)(k, e => ({
-					onListingLayoutChange: (t, s) => e(Object(l.v)(t, s)),
-					openDropdown: () => e(Object(u.h)({
+				F = Object(i.b)(k, e => ({
+					onListingLayoutChange: (t, s) => e(Object(u.v)(t, s)),
+					openDropdown: () => e(Object(m.h)({
 						tooltipId: L
 					}))
 				}));
-			class B extends r.a.Component {
+			class B extends o.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -335,20 +341,20 @@
 						const {
 							layout: s,
 							onLayoutClick: n,
-							postLayout: o
-						} = this.props, i = s || b.e[o], a = e === i, d = w[e];
-						return r.a.createElement(_.b, O({}, t, {
-							className: Object(c.a)(N.a.LayoutItem, {
+							postLayout: r
+						} = this.props, i = s || p.e[r], a = e === i, c = w[e], l = I[e];
+						return o.a.createElement(f.b, O({}, t, {
+							className: Object(d.a)(N.a.LayoutItem, {
 								[N.a.selected]: a
 							}),
 							"data-layout": e,
-							displayText: I[e],
+							displayText: l(),
 							iconWrapperClassName: N.a.LayoutItemIconWrapper,
 							isSelected: a,
 							noHover: a,
 							onClick: a ? void 0 : () => this.changeLayout(e),
 							textClassName: N.a.LayoutItemTextClassName
-						}), r.a.createElement(d, {
+						}), o.a.createElement(c, {
 							className: N.a.LayoutIcon,
 							onClick: a ? void 0 : n
 						}))
@@ -356,7 +362,7 @@
 						const {
 							dropdownIsOpen: t
 						} = this.props;
-						return r.a.createElement(j, O({}, e, {
+						return o.a.createElement(j, O({}, e, {
 							className: N.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
@@ -364,7 +370,7 @@
 							rowIconClassName: N.a.DropdownRowIcon,
 							rowSelectedClassName: N.a.DropdownRowSelected,
 							tooltipId: L
-						}), this.renderItem(b.d.Card), this.renderItem(b.d.Classic), this.renderItem(b.d.Compact))
+						}), this.renderItem(p.d.Card), this.renderItem(p.d.Classic), this.renderItem(p.d.Compact))
 					}
 				}
 				render() {
@@ -373,20 +379,20 @@
 						layout: t,
 						openDropdown: s,
 						postLayout: n
-					} = this.props, o = t || b.e[n];
-					return r.a.createElement("div", {
-						className: Object(c.a)(N.a.Container, e),
+					} = this.props, r = t || p.e[n];
+					return o.a.createElement("div", {
+						className: Object(d.a)(N.a.Container, e),
 						id: C
-					}, r.a.createElement("div", {
+					}, o.a.createElement("div", {
 						className: N.a.DropdownContainer,
 						onClick: s
-					}, this.renderItem(o, {
+					}, this.renderItem(r, {
 						id: L,
 						showDropdownTriangle: !0
-					}), r.a.createElement(h.a.Consumer, null, this.renderDropdown)))
+					}), o.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = P(F(Object(m.c)(Object(d.a)(B))))
+			t.a = P(F(Object(b.c)(Object(l.a)(B))))
 		},
 		"./src/reddit/components/Governance/VotingBanner/async.tsx": function(e, t, s) {
 			"use strict";
@@ -1530,4 +1536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.3bb9cde5b9647d18d189.js.map
+//# sourceMappingURL=Topic.9044f87b7d4a1f8b97e1.js.map
