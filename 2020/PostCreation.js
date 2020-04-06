@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.606ac5d92ca04bb1b4be.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.80f2677328cac3bbfd68.js
+// Retrieved at 4/6/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -6576,9 +6576,7 @@
 							}, n) : n
 						}
 						case A.n.LIVEVIDEO:
-							return l.a.createElement(O.a, z({}, ee, {
-								isExpando: !!r
-							}), l.a.createElement(X, {
+							return l.a.createElement(X, {
 								isVisible: I
 							}, l.a.createElement(q, {
 								canLoad: I,
@@ -6587,7 +6585,7 @@
 								postId: u.id,
 								shouldPause: U,
 								url: u.media.hlsUrl
-							})));
+							}));
 						case A.n.IMAGE:
 							const P = this.state.viewportHeight - 2 * J,
 								L = this.state.viewportWidth - 2 * J;
@@ -30602,4 +30600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.606ac5d92ca04bb1b4be.js.map
+//# sourceMappingURL=PostCreation.80f2677328cac3bbfd68.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.3b56fa35a09ac3cf5e4d.js
-// Retrieved at 4/2/2020, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1080ae78ed0bd90c6214.js
+// Retrieved at 4/6/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -112,7 +112,7 @@
 			})), s.d(t, "d", (function() {
 				return E
 			})), s.d(t, "e", (function() {
-				return f
+				return _
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/query-string/index.js"),
@@ -168,7 +168,7 @@
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, f = e => async (t, s) => Object(d.b)(s()) ? t(I(e)) : t(_()), _ = () => async (e, t, s) => {
+				}, _ = e => async (t, s) => Object(d.b)(s()) ? t(I(e)) : t(f()), f = () => async (e, t, s) => {
 					let {
 						gqlContext: r
 					} = s;
@@ -369,6 +369,8 @@
 			e.exports = {
 				LiveVideoPlayer: "_1CslYvEjQCqKJNXXyr7VBi",
 				liveVideoPlayer: "_1CslYvEjQCqKJNXXyr7VBi",
+				clip9x16: "_18hF1W8oceEelO19T27hAG",
+				clip9X16: "_18hF1W8oceEelO19T27hAG",
 				Overlay: "QeWQ4jUouItrgSmIpGLMR",
 				overlay: "QeWQ4jUouItrgSmIpGLMR",
 				LiveIndicator: "KJyaW7XHtFbqn-RpZvMrj",
@@ -392,9 +394,9 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return f
-			})), s.d(t, "Overlay", (function() {
 				return _
+			})), s.d(t, "Overlay", (function() {
+				return f
 			})), s.d(t, "LiveIndicator", (function() {
 				return I
 			})), s.d(t, "Duration", (function() {
@@ -430,7 +432,7 @@
 			}), E = Object(i.b)(w, (e, t) => ({
 				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
 			}));
-			class f extends r.Component {
+			class _ extends r.Component {
 				constructor(e) {
 					super(e), this.onError = () => {
 						this.setState({
@@ -523,7 +525,7 @@
 						duration: e,
 						live: t
 					} = this.state;
-					return a.a.createElement(_, null, t ? a.a.createElement(I, null) : e ? a.a.createElement(P, {
+					return a.a.createElement(f, null, t ? a.a.createElement(I, null) : e ? a.a.createElement(P, {
 						seconds: e
 					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
@@ -534,7 +536,9 @@
 					})
 				}
 				renderVideo() {
-					return a.a.createElement(d.a, {
+					return a.a.createElement("div", {
+						className: R.a.clip9x16
+					}, a.a.createElement(d.a, {
 						autoplay: this.isPaused,
 						controls: !1,
 						isPaused: this.isPaused,
@@ -547,7 +551,7 @@
 						onPause: this.onPause,
 						onPlay: this.onPlay,
 						onResourceRemoved: this.onResourceRemoved
-					})
+					}))
 				}
 				renderVideoUI() {
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(T, {
@@ -565,8 +569,8 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = E(f);
-			const _ = e => {
+			t.default = E(_);
+			const f = e => {
 					let {
 						children: t
 					} = e;
@@ -642,4 +646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.3b56fa35a09ac3cf5e4d.js.map
+//# sourceMappingURL=LiveVideoPlayer.1080ae78ed0bd90c6214.js.map

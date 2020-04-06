@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.bfc2517d4ecb6498ef6e.js
-// Retrieved at 4/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.8018c64ea0eb17889db2.js
+// Retrieved at 4/6/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, i) {
@@ -94,7 +94,7 @@
 					isAudible: e => !Object(h.a)(e) && !!Object(h.b)(e)
 				}),
 				y = Object(l.a)(x);
-			class E extends o.Component {
+			class C extends o.Component {
 				constructor(e) {
 					super(e), this.mrcVideoViewable = {
 						timer: null,
@@ -203,7 +203,7 @@
 					}, this.props.children)
 				}
 			}
-			t.a = y(E)
+			t.a = y(C)
 		},
 		"./src/reddit/components/Media/RichTextContainer/index.m.less": function(e, t, i) {
 			e.exports = {
@@ -294,11 +294,11 @@
 					},
 					y = {};
 				f || (y.maxHeight = "".concat(u ? r.l : l ? r.k : r.j, "px")), d && (y.maxWidth = "".concat(a.d, "px"));
-				const E = c && f;
+				const C = c && f;
 				return n.a.createElement("div", b({
 					className: Object(o.a)(x, s),
 					style: y
-				}, v), i, E && n.a.createElement(p, {
+				}, v), i, C && n.a.createElement(p, {
 					canLoadContent: !!t,
 					isExpando: h,
 					postId: w
@@ -476,8 +476,8 @@
 				v = i("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				x = i("./src/reddit/components/Media/constants.ts"),
 				y = i("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				E = i("./src/reddit/components/Media/ImageBox/index.tsx"),
-				C = i("./src/reddit/components/Media/MediaContainer/index.tsx"),
+				C = i("./src/reddit/components/Media/ImageBox/index.tsx"),
+				E = i("./src/reddit/components/Media/MediaContainer/index.tsx"),
 				M = i("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				S = i("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				V = i("./src/reddit/components/Media/VideoBox/index.tsx"),
@@ -737,7 +737,7 @@
 						e && (o = e.url, r = e.width, a = e.height)
 					} else if (s && s.media && (!e.isListing || e.isExpando) && (s.media.type === A.n.IMAGE || s.media.type === A.n.GIFVIDEO)) {
 						let e;
-						(e = Object(E.b)(s.media.height, s.media.width) && Object(E.c)(s.media.height) ? k.c(s.media.height, s.media.width, s.media.resolutions) : k.a(s.media.resolutions)) && (o = e.url, r = e.width, a = e.height)
+						(e = Object(C.b)(s.media.height, s.media.width) && Object(C.c)(s.media.height) ? k.c(s.media.height, s.media.width, s.media.resolutions) : k.a(s.media.resolutions)) && (o = e.url, r = e.width, a = e.height)
 					}
 					if (e.isExpando)
 						if (r > t.viewportWidth) {
@@ -824,11 +824,11 @@
 						}),
 						te = this.shouldBlur(),
 						ie = !(!h.isSponsored || !h.source);
-					if (J && te) return l.a.createElement(C.a, G({}, ee, {
+					if (J && te) return l.a.createElement(E.a, G({}, ee, {
 						blurSrc: J
 					}), l.a.createElement(K, {
 						isVisible: L
-					}, l.a.createElement(E.a, G({}, $, {
+					}, l.a.createElement(C.a, G({}, $, {
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
 						imageClassName: this.props.imageBoxClassName,
@@ -889,11 +889,11 @@
 							}
 							return null;
 						case A.n.EMBED:
-							return this.props.isMiniCard && h.preview && h.preview.url ? l.a.createElement(C.a, G({}, ee, {
+							return this.props.isMiniCard && h.preview && h.preview.url ? l.a.createElement(E.a, G({}, ee, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(K, {
 								isVisible: L
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(E.a, G({}, $, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(C.a, G({}, $, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -914,7 +914,7 @@
 								onIframeLoaded: this.onIframeLoaded,
 								source: U,
 								title: h.title
-							}) : l.a.createElement(C.a, G({}, ee, {
+							}) : l.a.createElement(E.a, G({}, ee, {
 								alwaysWrapMedia: !0,
 								height: o ? X : A.i,
 								width: o ? Y : A.i * (16 / 9)
@@ -929,7 +929,7 @@
 								showFull: b,
 								source: U,
 								title: h.title
-							})) : l.a.createElement(C.a, G({}, ee, {
+							})) : l.a.createElement(E.a, G({}, ee, {
 								alwaysWrapMedia: !0
 							}), L && l.a.createElement(y.a, G({}, $, {
 								isResponsive: o || h.media.provider === A.t.IFrameEmbed,
@@ -942,7 +942,7 @@
 						case A.n.GIFVIDEO: {
 							let e = X,
 								t = Y;
-							return e > A.i && (t = Y / X * (e = A.i)), l.a.createElement(C.a, G({}, ee, {
+							return e > A.i && (t = Y / X * (e = A.i)), l.a.createElement(E.a, G({}, ee, {
 								blurSrc: Z ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(K, {
 								isVisible: L
@@ -959,11 +959,11 @@
 						}
 						case A.n.VIDEO: {
 							const e = h.media.posterUrl || h.preview && h.preview.url;
-							if (this.props.isMiniCard && e) return l.a.createElement(C.a, G({}, ee, {
+							if (this.props.isMiniCard && e) return l.a.createElement(E.a, G({}, ee, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(K, {
 								isVisible: L
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(E.a, G({}, $, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(C.a, G({}, $, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -977,7 +977,7 @@
 								source: e,
 								originalSource: e
 							})), l.a.createElement(T.a, null))));
-							const i = l.a.createElement(C.a, G({}, ee, {
+							const i = l.a.createElement(E.a, G({}, ee, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), L && l.a.createElement(v.b, {
@@ -1001,9 +1001,7 @@
 							}, i) : i
 						}
 						case A.n.LIVEVIDEO:
-							return l.a.createElement(C.a, G({}, ee, {
-								isExpando: !!o
-							}), l.a.createElement(K, {
+							return l.a.createElement(K, {
 								isVisible: L
 							}, l.a.createElement(q, {
 								canLoad: L,
@@ -1012,17 +1010,17 @@
 								postId: h.id,
 								shouldPause: H,
 								url: h.media.hlsUrl
-							})));
+							}));
 						case A.n.IMAGE:
 							const j = this.state.viewportHeight - 2 * Q,
 								F = this.state.viewportWidth - 2 * Q;
 							let _, J = U;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (h.thumbnail && Object(p.a)(h.thumbnail.url) ? J = h.thumbnail.url : h.preview && Object(p.a)(h.preview.url) && (J = h.preview.url)), g && (_ = x ? "".concat(x, " - ").concat(h.title) : h.title), l.a.createElement(C.a, G({}, ee, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (h.thumbnail && Object(p.a)(h.thumbnail.url) ? J = h.thumbnail.url : h.preview && Object(p.a)(h.preview.url) && (J = h.preview.url)), g && (_ = x ? "".concat(x, " - ").concat(h.title) : h.title), l.a.createElement(E.a, G({}, ee, {
 								blurSrc: Z ? J : void 0,
 								isExpando: !!o
 							}), l.a.createElement(K, {
 								isVisible: L
-							}, l.a.createElement(E.a, G({}, $, {
+							}, l.a.createElement(C.a, G({}, $, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1149,4 +1147,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.bfc2517d4ecb6498ef6e.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.8018c64ea0eb17889db2.js.map
