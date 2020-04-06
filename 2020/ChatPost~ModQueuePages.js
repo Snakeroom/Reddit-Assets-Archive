@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.dbadf4dc5ad303636a0b.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.80e2ff1e4e5c08b1e6f6.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, o, t) {
@@ -86,8 +86,8 @@
 				E = t("./src/reddit/featureFlags/index.ts"),
 				x = t("./src/reddit/selectors/economics.ts"),
 				v = t("./src/reddit/components/Economics/TopTippers/Icon/index.tsx"),
-				C = t("./src/reddit/components/Economics/TopTippers/CommentUsername/index.m.less"),
-				M = t.n(C);
+				M = t("./src/reddit/components/Economics/TopTippers/CommentUsername/index.m.less"),
+				C = t.n(M);
 			const O = e => {
 				switch (e) {
 					case 1:
@@ -123,9 +123,9 @@
 								style: O(o)
 							});
 						return a.a.createElement("div", {
-							className: M.a.container
+							className: C.a.container
 						}, a.a.createElement(v.a, {
-							className: M.a.badge,
+							className: C.a.badge,
 							creatorId: e.creatorId || e.post && e.post.authorId,
 							rank: o,
 							subredditId: e.subredditId
@@ -205,8 +205,8 @@
 				Ee = m.a.a("MetaLink", ne.a),
 				xe = m.a.wrapped(q.a, "EditedText", ne.a),
 				ve = m.a.wrapped(q.a, "StickiedText", ne.a),
-				Ce = m.a.span("DeletedText", ne.a),
-				Me = m.a.wrapped(q.a, "MetaSeparator", ne.a),
+				Me = m.a.span("DeletedText", ne.a),
+				Ce = m.a.wrapped(q.a, "MetaSeparator", ne.a),
 				Oe = m.a.wrapped(q.a, "CrowdControlText", ne.a),
 				je = m.a.wrapped(y.b, "AuthorHoverCard", ne.a),
 				we = m.a.a("RemovalReason", ne.a),
@@ -300,8 +300,8 @@
 					compact: E,
 					flair: x,
 					flairPosition: v,
-					hasBadges: C,
-					isLivestreaming: M,
+					hasBadges: M,
+					isLivestreaming: C,
 					ignoreFlairPosition: O,
 					ignoreLock: j,
 					language: y,
@@ -334,8 +334,8 @@
 				return a.a.createElement("div", {
 					className: Object(c.a)(i, ne.a.container, {
 						[ne.a.collapsed]: p,
-						[ne.a.hasBadges]: C,
-						[ne.a.liveStreaming]: M
+						[ne.a.hasBadges]: M,
+						[ne.a.liveStreaming]: C
 					})
 				}, x && z && a.a.createElement(w.b, {
 					flair: x,
@@ -349,12 +349,12 @@
 					postOrComment: u,
 					tooltipType: G ? S.c.Lightbox : void 0
 				}, a.a.createElement(g.b, {
-					ignore: Object(H.d)(u) || !!u.distinguishType && u.distinguishType !== l.C.NONE,
+					ignore: Object(H.d)(u) || !!u.distinguishType && u.distinguishType !== l.B.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, a.a.createElement(Ue, {
 					comment: u,
-					isLivestreaming: M,
+					isLivestreaming: C,
 					isStrong: !!E,
 					isAuthorDeleted: Object(H.d)(u),
 					topTippersEnabled: J
@@ -432,7 +432,7 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: r
-					}, a.a.createElement(Ce, null, s.deletedBy === H.a.User ? Object(d.a)(o, "comment.commentDeletedByAuthor") : Object(d.a)(o, "comment.commentDeletedByMod")), a.a.createElement(Ge, ae({
+					}, a.a.createElement(Me, null, s.deletedBy === H.a.User ? Object(d.a)(o, "comment.commentDeletedByAuthor") : Object(d.a)(o, "comment.commentDeletedByMod")), a.a.createElement(Ge, ae({
 						key: "Created"
 					}, e)), n && Ve({
 						childrenInfo: t,
@@ -477,7 +477,7 @@
 						className: ne.a.CommentAuthorLink,
 						author: e.comment.author,
 						isAdmin: e.comment.isAdmin,
-						isAdminEmeritus: e.comment.distinguishType === l.C.ALUMNI_ADMIN,
+						isAdminEmeritus: e.comment.distinguishType === l.B.ALUMNI_ADMIN,
 						isAuthorDeleted: e.isAuthorDeleted,
 						isLivestreaming: e.isLivestreaming,
 						isMod: e.comment.isMod,
@@ -522,7 +522,7 @@
 					hasContinueThread: !1,
 					numChildren: 0
 				};
-				return a.a.createElement(Me, {
+				return a.a.createElement(Ce, {
 					className: ne.a.metaText
 				}, "(", o ? Ae(e.language, t, {
 					numChildren: t
@@ -550,13 +550,13 @@
 						id: t.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: t.onHideTooltip
-					}), o.isAdmin && ze(t.adminTooltipId, Se(t.language)), o.distinguishType === l.C.ALUMNI_ADMIN && a.a.createElement(le, {
+					}), o.isAdmin && ze(t.adminTooltipId, Se(t.language)), o.distinguishType === l.B.ALUMNI_ADMIN && a.a.createElement(le, {
 						"aria-label": Le(t.language),
 						children: "Δ",
 						id: t.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: t.onHideTooltip
-					}), o.distinguishType === l.C.ALUMNI_ADMIN && ze(t.adminEmeritusTooltipId, Le(t.language)), o.isMod && a.a.createElement(ue, {
+					}), o.distinguishType === l.B.ALUMNI_ADMIN && ze(t.adminEmeritusTooltipId, Le(t.language)), o.isMod && a.a.createElement(ue, {
 						desc: Ne(t.language, {
 							displayText: t.subredditDisplayText
 						}),
@@ -774,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~ModQueuePages.dbadf4dc5ad303636a0b.js.map
+//# sourceMappingURL=ChatPost~ModQueuePages.80e2ff1e4e5c08b1e6f6.js.map

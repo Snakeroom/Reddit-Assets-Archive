@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.279631769ff0a2ba8ef6.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0e7cc3d21bb443915e56.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -81,22 +81,6 @@
 		},
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
-			var a = n("./src/app/strings/index.ts"),
-				s = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/lib/prettyPrintNumber/index.ts"),
-				o = n("./src/reddit/actions/modal.ts"),
-				c = n("./src/reddit/actions/post.ts"),
-				i = n("./src/reddit/actions/toaster.ts"),
-				d = n("./src/config.ts"),
-				l = n("./src/reddit/endpoints/governance/requester.ts");
-			var u = n("./src/reddit/endpoints/governance/poll.ts");
-			var m = n("./src/reddit/endpoints/governance/wallet.ts"),
-				b = n("./src/reddit/models/Poll/index.ts"),
-				p = n("./src/reddit/models/Toast/index.ts"),
-				h = n("./src/reddit/models/Vote/index.ts"),
-				g = n("./src/reddit/selectors/gov.ts"),
-				v = n("./src/reddit/actions/governance/constants.ts"),
-				f = n("./src/reddit/actions/governance/errorToast.ts");
 			n.d(t, "a", (function() {
 				return C
 			})), n.d(t, "b", (function() {
@@ -118,6 +102,22 @@
 			})), n.d(t, "c", (function() {
 				return G
 			}));
+			var a = n("./src/app/strings/index.ts"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				r = n("./src/lib/prettyPrintNumber/index.ts"),
+				o = n("./src/reddit/actions/modal.ts"),
+				c = n("./src/reddit/actions/post.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
+				d = n("./src/config.ts"),
+				l = n("./src/reddit/endpoints/governance/requester.ts");
+			var u = n("./src/reddit/endpoints/governance/poll.ts");
+			var m = n("./src/reddit/endpoints/governance/wallet.ts"),
+				b = n("./src/reddit/models/Poll/index.ts"),
+				p = n("./src/reddit/models/Toast/index.ts"),
+				h = n("./src/reddit/models/Vote/index.ts"),
+				g = n("./src/reddit/selectors/gov.ts"),
+				v = n("./src/reddit/actions/governance/constants.ts"),
+				f = n("./src/reddit/actions/governance/errorToast.ts");
 			const C = Object(s.a)(v.b),
 				x = Object(s.a)(v.c),
 				y = Object(s.a)(v.d),
@@ -1086,6 +1086,17 @@
 		},
 		"./src/reddit/endpoints/economics/banners.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return l
+			})), n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "d", (function() {
+				return m
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a, s, r = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1113,17 +1124,7 @@
 					return (await c(e, t, a.UpsellBanners, o)).ok ? o : r
 				}! function(e) {
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
-				}(a || (a = {})), n.d(t, "a", (function() {
-					return s
-				})), n.d(t, "b", (function() {
-					return i
-				})), n.d(t, "c", (function() {
-					return l
-				})), n.d(t, "e", (function() {
-					return u
-				})), n.d(t, "d", (function() {
-					return m
-				})),
+				}(a || (a = {})),
 				function(e) {
 					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(s || (s = {}));
@@ -1239,7 +1240,7 @@
 			function o(e, t) {
 				return Object(r.a)(e, {
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.cb.GET
+					method: s.bb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1260,7 +1261,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.cb.POST,
+					method: s.bb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1626,4 +1627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.279631769ff0a2ba8ef6.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.0e7cc3d21bb443915e56.js.map

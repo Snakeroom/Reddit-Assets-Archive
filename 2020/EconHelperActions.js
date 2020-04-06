@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.20519ab38ab4b72e4a38.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.da46a10870de354a3a56.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -83,31 +83,31 @@
 		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
 			var r = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
 			var o = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/reddit/actions/economics/me/constants.ts");
-			const d = Object(o.a)(c.a);
-			n.d(t, "a", (function() {
-				return i
-			}));
-			const i = () => async (e, t, n) => {
-				let {
-					apiContext: o
-				} = n;
-				const c = t().user.account,
-					i = !t().economics.me.fetched;
-				if (c && i) {
-					const t = await
-					function(e) {
-						return Object(s.a)(e, {
-							method: "get",
-							endpoint: "".concat(r.a.metaUrl, "/users/me")
-						})
-					}(o());
-					t.ok && e(d(t.body))
+			const d = Object(o.a)(c.a),
+				i = () => async (e, t, n) => {
+					let {
+						apiContext: o
+					} = n;
+					const c = t().user.account,
+						i = !t().economics.me.fetched;
+					if (c && i) {
+						const t = await
+						function(e) {
+							return Object(s.a)(e, {
+								method: "get",
+								endpoint: "".concat(r.a.metaUrl, "/users/me")
+							})
+						}(o());
+						t.ok && e(d(t.body))
+					}
 				}
-			}
 		},
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, n) {
 			"use strict";
@@ -144,6 +144,19 @@
 		},
 		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return P
+			})), n.d(t, "f", (function() {
+				return w
+			})), n.d(t, "b", (function() {
+				return x
+			})), n.d(t, "d", (function() {
+				return k
+			})), n.d(t, "e", (function() {
+				return C
+			})), n.d(t, "c", (function() {
+				return A
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/forOwn.js"),
 				s = n.n(r),
@@ -177,19 +190,6 @@
 			function I(e) {
 				if (!v(e)) return e
 			}
-			n.d(t, "a", (function() {
-				return P
-			})), n.d(t, "f", (function() {
-				return w
-			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "d", (function() {
-				return k
-			})), n.d(t, "e", (function() {
-				return C
-			})), n.d(t, "c", (function() {
-				return A
-			}));
 			const P = () => async (e, t, n) => {
 				let {
 					apiContext: r
@@ -296,23 +296,23 @@
 		},
 		"./src/reddit/actions/economics/tips/thunkedActions.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./src/reddit/endpoints/economics/tips.ts"),
-				s = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/reddit/actions/economics/tips/constants.ts");
-			const c = Object(s.a)(o.a);
 			n.d(t, "a", (function() {
 				return d
 			}));
-			const d = e => async (t, n, s) => {
-				let {
-					apiContext: o
-				} = s;
-				const d = await Object(r.a)(o(), e);
-				d.ok && t(c({
-					subredditId: e.subredditId,
-					tipData: d.body
-				}))
-			}
+			var r = n("./src/reddit/endpoints/economics/tips.ts"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/reddit/actions/economics/tips/constants.ts");
+			const c = Object(s.a)(o.a),
+				d = e => async (t, n, s) => {
+					let {
+						apiContext: o
+					} = s;
+					const d = await Object(r.a)(o(), e);
+					d.ok && t(c({
+						subredditId: e.subredditId,
+						tipData: d.body
+					}))
+				}
 		},
 		"./src/reddit/actions/governance/communityDetails.ts": function(e, t, n) {
 			"use strict";
@@ -479,6 +479,11 @@
 		},
 		"./src/reddit/endpoints/economics/subredditPremium.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			})), n.d(t, "b", (function() {
+				return m
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/merge.js"),
 				s = n.n(r),
@@ -515,11 +520,6 @@
 				}
 				return g.ok ? r.products = g.body : r.errors.products = g.error, y.ok ? (s()(r.badges, y.body.badges), r.userOwnedBadges = y.body.userOwnedBadges) : r.errors.userBadges = y.error, r
 			}
-			n.d(t, "a", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			}));
 			const m = (e, t) => Object(a.a)(e, {
 				endpoint: "".concat(o.a.metaUrl, "/products/").concat(t, "?types=badge,membership"),
 				method: "delete"
@@ -539,7 +539,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.cb.GET
+					method: s.bb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -560,7 +560,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.cb.POST,
+					method: s.bb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1053,4 +1053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.20519ab38ab4b72e4a38.js.map
+//# sourceMappingURL=EconHelperActions.da46a10870de354a3a56.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6da409615c8c0f4e6c1a.js
-// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.03c925437e8ace886b78.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -91,7 +91,7 @@
 				p = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const j = (e, t) => Object(f.b)(Object(O.a)(e, [R.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/modactions/removal_reasons/"),
-					method: s.cb.POST,
+					method: s.bb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -101,7 +101,7 @@
 				}),
 				v = (e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
 					endpoint: Object(p.a)("".concat(e.apiUrl, "/api/v1/modactions/removal_").concat(o, "_message/")),
-					method: s.cb.POST,
+					method: s.bb.POST,
 					type: "json",
 					data: t
 				});
@@ -126,7 +126,7 @@
 					t(C());
 					const r = await ((e, t) => Object(f.b)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons.json"),
-						method: s.cb.GET
+						method: s.bb.GET
 					}))(a(), d);
 					r.ok ? t(T({
 						subredditId: e,
@@ -140,7 +140,7 @@
 					o(M());
 					const i = await ((e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
-						method: s.cb.POST,
+						method: s.bb.POST,
 						data: o
 					}))(r(), c, t);
 					if (i.ok) {
@@ -167,7 +167,7 @@
 					o(N());
 					const i = await ((e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(o.id),
-						method: s.cb.PUT,
+						method: s.bb.PUT,
 						data: {
 							message: o.message,
 							title: o.title
@@ -190,7 +190,7 @@
 					o(q());
 					const i = await ((e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(o),
-						method: s.cb.DELETE
+						method: s.bb.DELETE
 					}))(r(), c, t);
 					i.ok ? (o(H({
 						subredditId: e,
@@ -390,4 +390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=removalReasonActions.6da409615c8c0f4e6c1a.js.map
+//# sourceMappingURL=removalReasonActions.03c925437e8ace886b78.js.map

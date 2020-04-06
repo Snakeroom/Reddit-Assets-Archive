@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.33abe14e4a4c3dec35bb.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.dc7ebc2086f2d6b44ba0.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -430,7 +430,7 @@
 				I = y.a.div("ThumbnailContainer", O.a),
 				L = Object(d.c)({
 					isCurrentUserProfilePost: h.j,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.zb.TOPIC),
 					language: f.O,
 					post: h.N,
 					shouldOpenPostInNewTab: f.S,
@@ -668,7 +668,7 @@
 					ne = H("Pinned", U.id, z);
 				return o.a.createElement("div", {
 					className: t
-				}, d && s && U.distinguishType === m.C.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
+				}, d && s && U.distinguishType === m.B.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
 					className: L.a.modIcon,
 					desc: R(y, {
 						displayText: s
@@ -1108,7 +1108,9 @@
 		},
 		"./src/reddit/components/SidebarNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "SidebarNativeAd", (function() {
+				return Q
+			}));
 			var n = s("./src/app/strings/index.ts"),
 				o = s("./src/lib/constants/index.ts"),
 				r = s("./node_modules/react/index.js"),
@@ -1154,7 +1156,7 @@
 						} = e.media;
 					if (!t || !s) return null;
 					switch (s) {
-						case o.fb.IMAGE:
+						case o.eb.IMAGE:
 							return i.a.createElement(L, {
 								src: t
 							});
@@ -1165,9 +1167,6 @@
 			}
 			var M = s("./src/reddit/components/SidebarNativeAd/index.m.less"),
 				B = s.n(M);
-			s.d(t, "SidebarNativeAd", (function() {
-				return Q
-			}));
 			const A = p.a.wrapped(l.d, "PostTopMeta", B.a),
 				R = p.a.div("BannerAdContainer", B.a),
 				F = e => {
@@ -1228,7 +1227,7 @@
 						style: q(this.props)
 					}, i.a.createElement(X, null, i.a.createElement(A, {
 						tooltipType: r ? l.c.Lightbox : void 0,
-						language: o.z,
+						language: o.y,
 						post: e,
 						showTimestamp: !1
 					})), i.a.createElement(K, {
@@ -1528,4 +1527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.33abe14e4a4c3dec35bb.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.dc7ebc2086f2d6b44ba0.js.map

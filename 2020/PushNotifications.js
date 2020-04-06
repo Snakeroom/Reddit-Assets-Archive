@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.c9551d83e171433cd4fb.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.52e9049bd8ac52180293.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -7,7 +7,21 @@
 		},
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
-			i.r(t);
+			i.r(t), i.d(t, "getBrowserNotificationPermission", (function() {
+				return S
+			})), i.d(t, "resetPermissionRequestClosed", (function() {
+				return y
+			})), i.d(t, "isBrowserSubscribedForPushNotifications", (function() {
+				return N
+			})), i.d(t, "initializeServiceWorkerChannel", (function() {
+				return I
+			})), i.d(t, "requestNotificationsPermissions", (function() {
+				return P
+			})), i.d(t, "subscribeForPNs", (function() {
+				return W
+			})), i.d(t, "unsubscribeFromPNs", (function() {
+				return A
+			}));
 			i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var s = i("./src/config.ts"),
 				n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -35,22 +49,7 @@
 				v = i("./src/reddit/helpers/trackers/notifications.ts"),
 				w = i("./src/reddit/models/Toast/index.ts"),
 				_ = i("./src/reddit/selectors/experiments/badging.ts");
-			i.d(t, "getBrowserNotificationPermission", (function() {
-				return S
-			})), i.d(t, "resetPermissionRequestClosed", (function() {
-				return y
-			})), i.d(t, "isBrowserSubscribedForPushNotifications", (function() {
-				return N
-			})), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return P
-			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return I
-			})), i.d(t, "subscribeForPNs", (function() {
-				return W
-			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return A
-			}));
-			const k = 4 * c.J,
+			const k = 4 * c.I,
 				S = () => {
 					const e = Object(u.a)() && "1" === localStorage.getItem("notification-permission-request-closed");
 					return "granted" === Notification.permission ? l.a.Granted : "denied" === Notification.permission ? l.a.Denied : e ? l.a.Closed : l.a.Default
@@ -71,7 +70,7 @@
 					})
 				};
 			let q = !1;
-			const P = async (e, t) => {
+			const I = async (e, t) => {
 				const i = Object(_.a)(e);
 				if (q) return;
 				if (q = !0, Object(b.a)(e) !== l.f.NotificationsSupported) return;
@@ -89,10 +88,10 @@
 						t(Object(f.c)(e))
 					}
 				}), x(e)
-			}, I = (e, t) => async (i, s, n) => {
+			}, P = (e, t) => async (i, s, n) => {
 				const r = s();
 				if (await Object(a.a)()) return;
-				if (await P(r, i), Object(u.a)()) {
+				if (await I(r, i), Object(u.a)()) {
 					const t = localStorage.getItem("push-token-last-refresh-ms"),
 						i = (new Date).getTime();
 					if (!e && t && parseInt(t) + k > i) return;
@@ -255,4 +254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PushNotifications.c9551d83e171433cd4fb.js.map
+//# sourceMappingURL=PushNotifications.52e9049bd8ac52180293.js.map

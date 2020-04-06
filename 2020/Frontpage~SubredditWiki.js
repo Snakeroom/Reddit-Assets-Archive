@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.93d59a4b5183f1fb9497.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.afdcad00a2f87691cfb8.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, n) {
@@ -487,6 +487,11 @@
 		},
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return B
+			})), n.d(t, "a", (function() {
+				return P
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
@@ -531,11 +536,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			n.d(t, "b", (function() {
-				return B
-			})), n.d(t, "a", (function() {
-				return P
-			}));
 			const B = e => r.a.createElement(y.a, {
 					className: Object(c.a)(N.a.Container, e.className),
 					noGradient: !0,
@@ -735,4 +735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~SubredditWiki.93d59a4b5183f1fb9497.js.map
+//# sourceMappingURL=Frontpage~SubredditWiki.afdcad00a2f87691cfb8.js.map

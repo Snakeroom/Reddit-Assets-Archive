@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.68e1c7ebe80562ee939f.js
-// Retrieved at 3/30/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.805da331bd213d6a491e.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
@@ -1058,7 +1058,7 @@
 				f = i("./src/reddit/constants/headers.ts");
 			var x = e => Object(k.b)(Object(g.a)(e.context, [f.a]), {
 					endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/edit"),
-					method: b.cb.POST,
+					method: b.bb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -1795,7 +1795,7 @@
 				fbt: x
 			} = i("./node_modules/fbt/lib/FbtPublic.js"), v = ["center", "top"], w = ["center", "bottom"], _ = Object(r.a)(h.b), N = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "en";
-				const i = new Date(Object(b.j)(e.revisedAt));
+				const i = new Date(Object(b.d)(e.revisedAt));
 				return Object(l.d)(t, i.valueOf() / 1e3)
 			};
 			class E extends o.a.Component {
@@ -1821,7 +1821,7 @@
 						showTimeAgo: a = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, l = i.authorInfo && i.authorInfo.name || d.A, h = new Date(Object(b.j)(i.revisedAt)), g = o.a.createElement(u.a, {
+					} = this.state, l = i.authorInfo && i.authorInfo.name || d.z, h = new Date(Object(b.d)(i.revisedAt)), g = o.a.createElement(u.a, {
 						tooltipId: "wikipage-revision-author",
 						user: l,
 						sendHoverCardEvent: s.a
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.68e1c7ebe80562ee939f.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.805da331bd213d6a491e.js.map

@@ -1,10 +1,20 @@
-// https://www.redditstatic.com/desktop2x/Report.739c52f59b07dfc185e3.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.e9c5e2618203da2bb916.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
 		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
 			"use strict";
-			r.r(t);
+			r.r(t), r.d(t, "reportPageFailed", (function() {
+				return g
+			})), r.d(t, "reportPagePending", (function() {
+				return O
+			})), r.d(t, "reportPageLoaded", (function() {
+				return _
+			})), r.d(t, "reportPageInitialReasonSet", (function() {
+				return j
+			})), r.d(t, "reportPageRequested", (function() {
+				return x
+			}));
 			var n = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/constants/index.ts"),
 				a = r("./src/lib/makeApiRequest/index.ts"),
@@ -20,7 +30,7 @@
 					if (!i.user || !i.user.language) return;
 					const p = await (e => Object(a.b)(Object(o.a)(e, [c.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/report_page_rules.json"),
-						method: s.cb.GET
+						method: s.bb.GET
 					}))(n());
 					if (p.ok) {
 						const {
@@ -32,17 +42,6 @@
 			var u = r("./src/reddit/endpoints/me/index.ts"),
 				b = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
 				l = r("./src/reddit/actions/pages/report/constants.ts");
-			r.d(t, "reportPageFailed", (function() {
-				return g
-			})), r.d(t, "reportPagePending", (function() {
-				return O
-			})), r.d(t, "reportPageLoaded", (function() {
-				return _
-			})), r.d(t, "reportPageInitialReasonSet", (function() {
-				return j
-			})), r.d(t, "reportPageRequested", (function() {
-				return x
-			}));
 			const g = Object(n.a)(l.b),
 				O = Object(n.a)(l.d),
 				_ = Object(n.a)(l.c),
@@ -64,4 +63,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Report.739c52f59b07dfc185e3.js.map
+//# sourceMappingURL=Report.e9c5e2618203da2bb916.js.map

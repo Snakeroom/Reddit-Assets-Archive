@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.12733d0e56cd74f01753.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.01d45c9e3aa445bb8c68.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -250,7 +250,7 @@
 					let b, E;
 					if (this.state.mounted || p === r.a.Live) b = function(e, t, s, n) {
 						const o = Object(r.e)(e, t),
-							d = new Date(e * a.Eb);
+							d = new Date(e * a.Db);
 						let l;
 						if (o === r.a.Live || n) return Object(c.a)(s, "posts.event.inProgress");
 						o === r.a.Future ? l = Object(r.d)(e) ? Object(c.a)(s, "posts.event.today") : Object(r.b)(e) >= 5 ? i(d, s) : function(e, t) {
@@ -545,6 +545,9 @@
 		},
 		"./src/reddit/components/Popup/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/uuid/v4.js"),
@@ -586,9 +589,6 @@
 					onClick: s
 				}, "✕")), d)
 			}
-			s.d(t, "a", (function() {
-				return d
-			}))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -730,7 +730,7 @@
 					},
 					modModeEnabled: v.O
 				}),
-				z = Object(r.b)(G, (e, t) => ({
+				D = Object(r.b)(G, (e, t) => ({
 					onHideTooltip: () => e(Object(m.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -739,7 +739,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = W(z(e => {
+			t.a = W(D(e => {
 				let {
 					className: t,
 					displayText: s,
@@ -752,62 +752,62 @@
 					modModeEnabled: M,
 					onHideTooltip: W,
 					onOpenRemovalReasonModal: G,
-					onShowTooltip: z,
-					post: D,
+					onShowTooltip: D,
+					post: z,
 					tooltipType: U
 				} = e;
 				const X = {
 						caretOnTop: !1
 					},
-					Z = D.isRemoved && !D.modRemovalReason && !D.modNote && D.belongsTo.type === x.a.SUBREDDIT,
-					J = V("Approve", D.id, U),
-					K = V("Archived", D.id, U),
-					q = V("Automod", D.id, U),
-					Q = V("Lock", D.id, U),
-					Y = V("Mod", D.id, U),
-					$ = V("Remove", D.id, U),
-					ee = V("Report", D.id, U),
-					te = V("Spam", D.id, U),
-					se = V("Sticky", D.id, U),
-					ne = V("Pinned", D.id, U);
+					Z = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === x.a.SUBREDDIT,
+					J = V("Approve", z.id, U),
+					K = V("Archived", z.id, U),
+					q = V("Automod", z.id, U),
+					Q = V("Lock", z.id, U),
+					Y = V("Mod", z.id, U),
+					$ = V("Remove", z.id, U),
+					ee = V("Report", z.id, U),
+					te = V("Spam", z.id, U),
+					se = V("Sticky", z.id, U),
+					ne = V("Pinned", z.id, U);
 				return o.a.createElement("div", {
 					className: t
-				}, i && s && D.distinguishType === u.C.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
+				}, i && s && z.distinguishType === u.B.MODERATOR && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
 					className: L.a.modIcon,
 					desc: A(k, {
 						displayText: s
 					}),
 					id: Y,
-					onMouseEnter: z(Y),
+					onMouseEnter: D(Y),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: Y,
 					text: A(k, {
 						displayText: s
 					})
-				}, X))), D.isArchived && o.a.createElement(n.Fragment, null, o.a.createElement(j.a, {
+				}, X))), z.isArchived && o.a.createElement(n.Fragment, null, o.a.createElement(j.a, {
 					className: L.a.archivedIcon,
 					desc: F(k),
 					id: K,
-					onMouseEnter: z(K),
+					onMouseEnter: D(K),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: K,
 					text: F(k)
-				}, X))), D.isLocked && o.a.createElement(n.Fragment, null, o.a.createElement(y.a, {
+				}, X))), z.isLocked && o.a.createElement(n.Fragment, null, o.a.createElement(y.a, {
 					className: L.a.lockIcon,
 					desc: B(k),
 					id: Q,
-					onMouseEnter: z(Q),
+					onMouseEnter: D(Q),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: Q,
 					text: B(k)
-				}, X))), r && Object(g.k)(D) && !d && o.a.createElement(n.Fragment, null, o.a.createElement(P.a, {
+				}, X))), r && Object(g.k)(z) && !d && o.a.createElement(n.Fragment, null, o.a.createElement(P.a, {
 					className: L.a.stickyIcon,
 					desc: R(k),
 					id: se,
-					onMouseEnter: z(se),
+					onMouseEnter: D(se),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: se,
@@ -816,63 +816,63 @@
 					className: L.a.stickyIcon,
 					desc: H(k),
 					id: ne,
-					onMouseEnter: z(ne),
+					onMouseEnter: D(ne),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: ne,
 					text: H(k)
-				}, X))), (D.isApproved || D.approvedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(E.a, {
+				}, X))), (z.isApproved || z.approvedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(E.a, {
 					className: L.a.approveIcon,
-					desc: Object(h.a)(k, D),
+					desc: Object(h.a)(k, z),
 					id: J,
-					onMouseEnter: z(J),
+					onMouseEnter: D(J),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: J,
-					text: Object(h.a)(k, D)
-				}, X))), Object(f.a)(D) && o.a.createElement(n.Fragment, null, o.a.createElement(_.a, {
+					text: Object(h.a)(k, z)
+				}, X))), Object(f.a)(z) && o.a.createElement(n.Fragment, null, o.a.createElement(_.a, {
 					className: L.a.removeIcon,
-					desc: Object(h.c)(k, D),
+					desc: Object(h.c)(k, z),
 					id: $,
-					onMouseEnter: z($),
+					onMouseEnter: D($),
 					onMouseLeave: W
 				}), Z && o.a.createElement(b.a, {
 					className: L.a.addRemovalReason,
 					onClick: G,
 					text: Object(a.c)("Add a removal reason")
-				}), (D.modRemovalReason || D.modNote) && o.a.createElement(T, {
-					onMouseEnter: z($),
+				}), (z.modRemovalReason || z.modNote) && o.a.createElement(T, {
+					onMouseEnter: D($),
 					onMouseLeave: W
 				}, o.a.createElement(c.c, null, "Removal reason")), o.a.createElement(p.c, N({
 					tooltipId: $,
-					text: Object(h.c)(k, D)
-				}, X))), D.bannedBy && D.isSpam && o.a.createElement(n.Fragment, null, o.a.createElement(S.a, {
+					text: Object(h.c)(k, z)
+				}, X))), z.bannedBy && z.isSpam && o.a.createElement(n.Fragment, null, o.a.createElement(S.a, {
 					className: L.a.spamIcon,
-					desc: Object(h.e)(k, D),
+					desc: Object(h.e)(k, z),
 					id: te,
-					onMouseEnter: z(te),
+					onMouseEnter: D(te),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: te,
-					text: Object(h.e)(k, D)
-				}, X))), ("AutoModerator" === D.approvedBy || "AutoModerator" === D.bannedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(w.a, {
-					className: Object(l.a)(L.a.automoderator, !!D.bannedBy && L.a.isRemoved),
+					text: Object(h.e)(k, z)
+				}, X))), ("AutoModerator" === z.approvedBy || "AutoModerator" === z.bannedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(w.a, {
+					className: Object(l.a)(L.a.automoderator, !!z.bannedBy && L.a.isRemoved),
 					desc: Object(h.b)(k),
 					id: q,
-					onMouseEnter: z(q),
+					onMouseEnter: D(q),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: q,
 					text: Object(h.b)(k)
-				}, X))), Object(O.a)(D) && !M && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
+				}, X))), Object(O.a)(z) && !M && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, {
 					className: L.a.reportIcon,
-					desc: Object(h.d)(k, D.numReports),
+					desc: Object(h.d)(k, z.numReports),
 					id: ee,
-					onMouseEnter: z(ee),
+					onMouseEnter: D(ee),
 					onMouseLeave: W
 				}), o.a.createElement(p.c, N({
 					tooltipId: ee,
-					text: Object(h.d)(k, D.numReports)
+					text: Object(h.d)(k, z.numReports)
 				}, X))))
 			}))
 		},
@@ -1563,4 +1563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.12733d0e56cd74f01753.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.01d45c9e3aa445bb8c68.js.map

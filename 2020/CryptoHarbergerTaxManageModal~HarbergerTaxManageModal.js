@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.411b629bd4932d91c306.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.bb4f89eee894237c08ae.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -40,6 +40,13 @@
 		},
 		"./src/reddit/actions/harbergerTax/thunkedActions.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return x
+			})), n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "c", (function() {
+				return I
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/isEmpty.js"),
 				s = n.n(r),
@@ -66,13 +73,6 @@
 				p = n("./src/reddit/selectors/gov.ts"),
 				b = n("./src/reddit/selectors/user.ts"),
 				g = n("./src/reddit/actions/harbergerTax/actionCreators.ts");
-			n.d(t, "a", (function() {
-				return x
-			})), n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "c", (function() {
-				return I
-			}));
 			const x = () => async (e, t) => {
 				const n = Object(b.O)(t());
 				e(Object(c.e)({
@@ -528,7 +528,7 @@
 				d = n("./src/reddit/constants/headers.ts");
 			const c = async (e, t, n, c, i) => Object(a.b)(Object(o.a)(e, [d.a]), {
 				endpoint: "".concat(r.a.metaUrl, "/communities/").concat(t, "/upload-lease"),
-				method: s.cb.POST,
+				method: s.bb.POST,
 				data: {
 					filepath: n,
 					imagetype: c,
@@ -785,4 +785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.411b629bd4932d91c306.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.bb4f89eee894237c08ae.js.map

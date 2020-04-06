@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.e2a0c7e07620d5a603ef.js
-// Retrieved at 3/23/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.aa538921747f4605b0e2.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -12,7 +12,9 @@
 		},
 		"./src/chat/initializer.ts": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "default", (function() {
+				return q
+			}));
 			var a = s("./node_modules/history/esm/history.js"),
 				r = s("./node_modules/js-cookie/src/js.cookie.js"),
 				c = s.n(r),
@@ -107,9 +109,6 @@
 				};
 			var F = s("./src/chat/reducers/index.ts"),
 				H = s("./src/chat/routes/index.ts");
-			s.d(t, "default", (function() {
-				return q
-			}));
 			const K = Object(u.a)({
 				actionDispatchers: {
 					reddaidReceived: p.r,
@@ -198,4 +197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.e2a0c7e07620d5a603ef.js.map
+//# sourceMappingURL=RedesignChat.aa538921747f4605b0e2.js.map

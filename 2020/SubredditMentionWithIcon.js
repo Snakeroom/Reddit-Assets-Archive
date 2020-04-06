@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.0c5d47e175f557e45499.js
-// Retrieved at 3/30/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.710de0cef087d42b2ec3.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -309,8 +309,8 @@
 				D = s("./src/reddit/selectors/posts.ts"),
 				H = s("./src/reddit/selectors/user.ts"),
 				q = s("./src/reddit/components/SubredditMention/MiniPost/index.m.less"),
-				R = s.n(q);
-			const F = Object(c.a)(e => e, D.N, D.d, H.O, (e, t, s, n) => {
+				F = s.n(q);
+			const R = Object(c.a)(e => e, D.N, D.d, H.O, (e, t, s, n) => {
 				return {
 					crosspost: s,
 					language: n,
@@ -350,36 +350,36 @@
 						subredditOrProfile: n
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Object(I.a)(R.a.container, e),
+						className: Object(I.a)(F.a.container, e),
 						onClick: this.onClickContainer
 					}, o.a.createElement("div", {
-						className: R.a.postDetails
+						className: F.a.postDetails
 					}, o.a.createElement("p", {
-						className: R.a.title,
+						className: F.a.title,
 						title: t.title
 					}, t.title), s && n && n.displayText && o.a.createElement(M.a, {
 						to: n.url,
 						onClick: this.onClickSubreddit
 					}, n.displayText), o.a.createElement("div", null, o.a.createElement("span", {
-						className: R.a.meta
+						className: F.a.meta
 					}, Object(T.b)(this.props.language, "posts.comments.noun", t.numComments, {
 						count: Object(L.b)(t.numComments)
 					})))), o.a.createElement("div", {
-						className: R.a.thumbnailContainer,
+						className: F.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
 					}, o.a.createElement(B.a, {
 						post: t
 					})))
 				}
 			}
-			var K = Object(a.b)(F, (e, t) => ({
+			var K = Object(a.b)(R, (e, t) => ({
 					openLightbox: t => e(Object(A.a)(t.permalink))
 				}))(V),
 				z = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
 				U = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				W = s.n(G),
-				Y = function(e, t) {
+				W = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				Y = s.n(W),
+				G = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -396,32 +396,32 @@
 					var {
 						className: t,
 						showSubreddit: s
-					} = e, n = Y(e, ["className", "showSubreddit"]);
+					} = e, n = G(e, ["className", "showSubreddit"]);
 					const i = Object(U.a)(n);
 					return o.a.createElement("div", {
-						className: Object(I.a)(R.a.container, t)
+						className: Object(I.a)(F.a.container, t)
 					}, o.a.createElement("div", {
-						className: W.a.mainBody
+						className: Y.a.mainBody
 					}, o.a.createElement("div", {
-						className: W.a.content
+						className: Y.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(I.a)(W.a.title, i)
+						className: Object(I.a)(Y.a.title, i)
 					}), s && o.a.createElement("div", {
-						className: Object(I.a)(W.a.meta, i)
+						className: Object(I.a)(Y.a.meta, i)
 					})), o.a.createElement("div", {
-						className: W.a.flatlist
+						className: Y.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(I.a)(W.a.flatlistExpando, i)
+						className: Object(I.a)(Y.a.flatlistExpando, i)
 					}), o.a.createElement("div", {
-						className: W.a.flatlistSeparator
+						className: Y.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(I.a)(W.a.flatlistItemOne, i)
+						className: Object(I.a)(Y.a.flatlistItemOne, i)
 					}), o.a.createElement("div", {
-						className: Object(I.a)(W.a.flatlistItemTwo, i)
+						className: Object(I.a)(Y.a.flatlistItemTwo, i)
 					}))), o.a.createElement("div", {
-						className: W.a.thumbnailContainer
+						className: Y.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(I.a)(W.a.thumbnail, i)
+						className: Object(I.a)(Y.a.thumbnail, i)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -541,7 +541,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object(re.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object(re.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object(re.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.G), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.F), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -607,7 +607,7 @@
 					if (!r || !a || Object(g.g)(r)) return this.renderDefault();
 					const {
 						uniqueId: d
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.O.TOP), m = r.isNSFW && e || r.type === g.c.EmployeesOnly && !t || r.type === g.c.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.N.TOP), m = r.isNSFW && e || r.type === g.c.EmployeesOnly && !t || r.type === g.c.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: pe.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1041,4 +1041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.0c5d47e175f557e45499.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.710de0cef087d42b2ec3.js.map

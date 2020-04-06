@@ -1,9 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.58c737c03cffd3cbe990.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2b5097a5a3bcc6855154.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return j
+			}));
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				n = s("./node_modules/react-dom/index.js"),
@@ -151,9 +154,7 @@
 						}) : null
 					}, o
 				}(r.a.Component);
-			v(j, "displayName", "IntersectionObserver"), s.d(t, "a", (function() {
-				return j
-			}))
+			v(j, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, s) {
 			"use strict";
@@ -1100,7 +1101,7 @@
 				N = y.a.div("ThumbnailContainer", _.a),
 				I = Object(d.c)({
 					isCurrentUserProfilePost: h.j,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.zb.TOPIC),
 					language: v.O,
 					post: h.N,
 					shouldOpenPostInNewTab: v.S,
@@ -1597,4 +1598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.58c737c03cffd3cbe990.js.map
+//# sourceMappingURL=reddit-components-CompactPost.2b5097a5a3bcc6855154.js.map

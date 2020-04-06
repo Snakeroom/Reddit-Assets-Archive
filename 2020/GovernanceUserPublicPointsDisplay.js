@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.37af222488a67911da66.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.fd728ecdf38e9091a3b6.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -22,22 +22,6 @@
 		},
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./src/app/strings/index.ts"),
-				s = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/lib/prettyPrintNumber/index.ts"),
-				c = n("./src/reddit/actions/modal.ts"),
-				d = n("./src/reddit/actions/post.ts"),
-				i = n("./src/reddit/actions/toaster.ts"),
-				a = n("./src/config.ts"),
-				u = n("./src/reddit/endpoints/governance/requester.ts");
-			var l = n("./src/reddit/endpoints/governance/poll.ts");
-			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
-				p = n("./src/reddit/models/Poll/index.ts"),
-				m = n("./src/reddit/models/Toast/index.ts"),
-				f = n("./src/reddit/models/Vote/index.ts"),
-				g = n("./src/reddit/selectors/gov.ts"),
-				j = n("./src/reddit/actions/governance/constants.ts"),
-				O = n("./src/reddit/actions/governance/errorToast.ts");
 			n.d(t, "a", (function() {
 				return x
 			})), n.d(t, "b", (function() {
@@ -59,6 +43,22 @@
 			})), n.d(t, "c", (function() {
 				return q
 			}));
+			var r = n("./src/app/strings/index.ts"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/lib/prettyPrintNumber/index.ts"),
+				c = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/reddit/actions/post.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
+				a = n("./src/config.ts"),
+				u = n("./src/reddit/endpoints/governance/requester.ts");
+			var l = n("./src/reddit/endpoints/governance/poll.ts");
+			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
+				p = n("./src/reddit/models/Poll/index.ts"),
+				m = n("./src/reddit/models/Toast/index.ts"),
+				f = n("./src/reddit/models/Vote/index.ts"),
+				g = n("./src/reddit/selectors/gov.ts"),
+				j = n("./src/reddit/actions/governance/constants.ts"),
+				O = n("./src/reddit/actions/governance/errorToast.ts");
 			const x = Object(s.a)(j.b),
 				v = Object(s.a)(j.c),
 				y = Object(s.a)(j.d),
@@ -411,7 +411,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.cb.GET
+					method: s.bb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -432,7 +432,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.cb.POST,
+					method: s.bb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -669,4 +669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.37af222488a67911da66.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.fd728ecdf38e9091a3b6.js.map

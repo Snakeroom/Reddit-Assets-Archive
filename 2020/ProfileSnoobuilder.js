@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.af2ca142190d04838915.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7d3722e56e79d0a793e1.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -585,28 +585,28 @@
 					} = e;
 					const d = r ? [{
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Saved,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Saved,
 						key: "profile.saved",
 						text: Object(c.a)(t, "profile.sections.saved"),
 						url: "/user/".concat(n, "/saved/")
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Hidden,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Hidden,
 						key: "profile.hidden",
 						text: Object(c.a)(t, "profile.sections.hidden"),
 						url: "/user/".concat(n, "/hidden/")
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Upvoted,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Upvoted,
 						key: "profile.upvoted",
 						text: Object(c.a)(t, "profile.sections.upvoted"),
 						url: "/user/".concat(n, "/upvoted/")
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Downvoted,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Downvoted,
 						key: "profile.downvoted",
 						text: Object(c.a)(t, "profile.sections.downvoted"),
 						url: "/user/".concat(n, "/downvoted/")
@@ -614,7 +614,7 @@
 					r ? (d.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.ReceivedGildings,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.ReceivedGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "10CLzb"
@@ -623,7 +623,7 @@
 					}), d.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.GivenGildings,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.GivenGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "JzMR1"
@@ -641,26 +641,26 @@
 					});
 					const m = a ? [{
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_SNOOBUILDER,
+						isActive: i === p.zb.PROFILE_SNOOBUILDER,
 						key: "profile.snoobuilder",
 						text: Object(N.c)("Snoobuilder"),
 						url: "/user/".concat(n, "/snoo/")
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_OVERVIEW,
+						isActive: i === p.zb.PROFILE_OVERVIEW,
 						key: "profile.overview",
 						text: Object(c.a)(t, "profile.overview"),
 						url: "/user/".concat(n, "/")
 					}, {
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_POSTS,
+						isActive: i === p.zb.PROFILE_POSTS,
 						key: "profile.posts",
 						text: Object(c.a)(t, "profile.posts"),
 						url: "/user/".concat(n, "/posts/")
 					}, {
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_COMMENTS,
+						isActive: i === p.zb.PROFILE_COMMENTS,
 						key: "profile.comments",
 						text: Object(c.a)(t, "profile.comments"),
 						url: "/user/".concat(n, "/comments/")
@@ -677,21 +677,21 @@
 					const a = r ? [{
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Hidden,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Hidden,
 						key: "profile.hidden",
 						text: Object(c.a)(t, "profile.sections.hidden"),
 						url: "/user/".concat(n, "/hidden/")
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Upvoted,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Upvoted,
 						key: "profile.upvoted",
 						text: Object(c.a)(t, "profile.sections.upvoted"),
 						url: "/user/".concat(n, "/upvoted/")
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.Downvoted,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.Downvoted,
 						key: "profile.downvoted",
 						text: Object(c.a)(t, "profile.sections.downvoted"),
 						url: "/user/".concat(n, "/downvoted/")
@@ -699,7 +699,7 @@
 					return r ? (a.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.ReceivedGildings,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.ReceivedGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "10CLzb"
@@ -708,7 +708,7 @@
 					}), a.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: i === p.Ab.PROFILE_PRIVATE && o === w.a.GivenGildings,
+						isActive: i === p.zb.PROFILE_PRIVATE && o === w.a.GivenGildings,
 						key: "profile.receiverGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "JzMR1"
@@ -916,7 +916,7 @@
 				}
 			}
 			v.defaultProps = {
-				minimizedLength: d.Fb
+				minimizedLength: d.Eb
 			}, t.a = v
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -1322,7 +1322,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.F), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -2279,4 +2279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.af2ca142190d04838915.js.map
+//# sourceMappingURL=ProfileSnoobuilder.7d3722e56e79d0a793e1.js.map

@@ -1,9 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c659c6b63d98548f0b59.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ce6cd48c5cc20351f994.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return P
+			}));
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				n = s("./node_modules/react-dom/index.js"),
@@ -151,9 +154,7 @@
 						}) : null
 					}, o
 				}(r.a.Component);
-			v(P, "displayName", "IntersectionObserver"), s.d(t, "a", (function() {
-				return P
-			}))
+			v(P, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, s) {
 			"use strict";
@@ -610,7 +611,11 @@
 		},
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "renderMedia", (function() {
+				return ie
+			})), s.d(t, "SearchResultsClassicPost", (function() {
+				return le
+			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -750,11 +755,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			s.d(t, "renderMedia", (function() {
-				return ie
-			})), s.d(t, "SearchResultsClassicPost", (function() {
-				return le
-			}));
 			const ne = 16;
 			class ae extends r.a.Component {
 				componentDidUpdate(e) {
@@ -1009,7 +1009,7 @@
 				T = _.a.div("ThumbnailContainer", y.a),
 				M = Object(d.c)({
 					isCurrentUserProfilePost: f.j,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.zb.TOPIC),
 					language: v.O,
 					post: f.N,
 					shouldOpenPostInNewTab: v.S,
@@ -1493,4 +1493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.c659c6b63d98548f0b59.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.ce6cd48c5cc20351f994.js.map

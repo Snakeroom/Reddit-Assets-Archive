@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ff949ba7da71c6c61387.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.30346e1d99ed1a1af1cb.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -759,6 +759,9 @@
 		},
 		"./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return g
+			}));
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/react/index.js"),
@@ -778,9 +781,6 @@
 				}))),
 				u = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
 				p = n.n(u);
-			n.d(t, "a", (function() {
-				return g
-			}));
 			const b = e => r.a.createElement(r.a.Fragment, null, r.a.createElement(l.b, {
 					className: p.a.subredditIcon,
 					subredditOrProfile: e.subreddit
@@ -944,4 +944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.ff949ba7da71c6c61387.js.map
+//# sourceMappingURL=FrontpageSidebar.30346e1d99ed1a1af1cb.js.map

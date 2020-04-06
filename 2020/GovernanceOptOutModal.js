@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.ef2b7046a69be4ef3985.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.2982134d05712d6356a1.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceOptOutModal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -22,22 +22,6 @@
 		},
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
-			var r = n("./src/app/strings/index.ts"),
-				s = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/lib/prettyPrintNumber/index.ts"),
-				c = n("./src/reddit/actions/modal.ts"),
-				a = n("./src/reddit/actions/post.ts"),
-				d = n("./src/reddit/actions/toaster.ts"),
-				i = n("./src/config.ts"),
-				l = n("./src/reddit/endpoints/governance/requester.ts");
-			var u = n("./src/reddit/endpoints/governance/poll.ts");
-			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
-				m = n("./src/reddit/models/Poll/index.ts"),
-				p = n("./src/reddit/models/Toast/index.ts"),
-				O = n("./src/reddit/models/Vote/index.ts"),
-				f = n("./src/reddit/selectors/gov.ts"),
-				g = n("./src/reddit/actions/governance/constants.ts"),
-				x = n("./src/reddit/actions/governance/errorToast.ts");
 			n.d(t, "a", (function() {
 				return j
 			})), n.d(t, "b", (function() {
@@ -59,6 +43,22 @@
 			})), n.d(t, "c", (function() {
 				return L
 			}));
+			var r = n("./src/app/strings/index.ts"),
+				s = n("./src/lib/makeActionCreator/index.ts"),
+				o = n("./src/lib/prettyPrintNumber/index.ts"),
+				c = n("./src/reddit/actions/modal.ts"),
+				a = n("./src/reddit/actions/post.ts"),
+				d = n("./src/reddit/actions/toaster.ts"),
+				i = n("./src/config.ts"),
+				l = n("./src/reddit/endpoints/governance/requester.ts");
+			var u = n("./src/reddit/endpoints/governance/poll.ts");
+			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
+				m = n("./src/reddit/models/Poll/index.ts"),
+				p = n("./src/reddit/models/Toast/index.ts"),
+				O = n("./src/reddit/models/Vote/index.ts"),
+				f = n("./src/reddit/selectors/gov.ts"),
+				g = n("./src/reddit/actions/governance/constants.ts"),
+				x = n("./src/reddit/actions/governance/errorToast.ts");
 			const j = Object(s.a)(g.b),
 				v = Object(s.a)(g.c),
 				y = Object(s.a)(g.d),
@@ -470,7 +470,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.cb.GET
+					method: s.bb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -491,7 +491,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.cb.POST,
+					method: s.bb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -666,4 +666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceOptOutModal.ef2b7046a69be4ef3985.js.map
+//# sourceMappingURL=GovernanceOptOutModal.2982134d05712d6356a1.js.map

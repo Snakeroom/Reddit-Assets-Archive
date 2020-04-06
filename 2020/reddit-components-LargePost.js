@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a928aff82bf9a20fc21d.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b8993026d9ca3dc54ab6.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -609,7 +609,7 @@
 				k = P.a.div("ThumbnailContainer", y.a),
 				I = Object(d.c)({
 					isCurrentUserProfilePost: x.j,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Ab.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.zb.TOPIC),
 					language: f.O,
 					post: x.N,
 					shouldOpenPostInNewTab: f.S,
@@ -839,13 +839,13 @@
 				U = s("./src/reddit/i18n/components.tsx"),
 				H = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				V = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
-				K = s.n(V);
-			var z = () => r.a.createElement("div", {
-					className: K.a.container
+				z = s.n(V);
+			var K = () => r.a.createElement("div", {
+					className: z.a.container
 				}, r.a.createElement(H.a, {
-					className: K.a.pinnedIcon
+					className: z.a.pinnedIcon
 				}), r.a.createElement("span", {
-					className: K.a.metaText
+					className: z.a.metaText
 				}, r.a.createElement(U.c, null, "pinned by moderators"))),
 				G = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				J = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -965,7 +965,7 @@
 						isOverlay: U,
 						isPostChainDismissed: H,
 						isPostChained: V,
-						isTopicPage: K,
+						isTopicPage: z,
 						language: q,
 						listingKey: Q,
 						listingName: se,
@@ -982,7 +982,7 @@
 						showEditFlair: he,
 						subredditOrProfile: ve,
 						userIsOp: xe
-					} = e, fe = !!e.redditStyle || !!e["data-redditstyle"], ge = fe ? void 0 : u, ye = Object(l.a)(oe), Pe = re && ye, _e = Object(d.a)(oe), Oe = Object(c.a)(oe), Ce = Object(A.c)(me), we = !!me.media && me.media.type === h.n.RTJSON, Se = xe && we, je = s ? s - F.a : void 0, Te = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Ee = !(_ && O || K), Ne = (e => e === te.ub.OnlyTitles)(ue) && !Object($.a)(me), ke = (e => e === te.ub.MediumHeight)(ue) && !Object($.a)(me), Ie = (e => {
+					} = e, fe = !!e.redditStyle || !!e["data-redditstyle"], ge = fe ? void 0 : u, ye = Object(l.a)(oe), Pe = re && ye, _e = Object(d.a)(oe), Oe = Object(c.a)(oe), Ce = Object(A.c)(me), we = !!me.media && me.media.type === h.n.RTJSON, Se = xe && we, je = s ? s - F.a : void 0, Te = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Ee = !(_ && O || z), Ne = (e => e === te.ub.OnlyTitles)(ue) && !Object($.a)(me), ke = (e => e === te.ub.MediumHeight)(ue) && !Object($.a)(me), Ie = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -1030,7 +1030,7 @@
 					}, r.a.createElement(E.a, {
 						post: me,
 						language: q
-					}), Ie && Ie.showPinnnedHeader && r.a.createElement(z, null), r.a.createElement(X.a, {
+					}), Ie && Ie.showPinnnedHeader && r.a.createElement(K, null), r.a.createElement(X.a, {
 						className: pe.a.postTopLine,
 						hideNSFWPref: f,
 						iconClassName: pe.a.postTopLineIcon,
@@ -1039,7 +1039,7 @@
 						isCompactPinnedPost: !!Ie,
 						isCurrentUserProfilePost: P,
 						isOverlay: !!U,
-						isTopicPage: !!K,
+						isTopicPage: !!z,
 						language: q,
 						post: me,
 						shouldShowSubscribeButton: Ee,
@@ -1467,4 +1467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.a928aff82bf9a20fc21d.js.map
+//# sourceMappingURL=reddit-components-LargePost.b8993026d9ca3dc54ab6.js.map

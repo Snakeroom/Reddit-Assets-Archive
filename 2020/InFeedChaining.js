@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.4014d5bff99a539bec81.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.951ddb67dc229279267a.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -350,6 +350,9 @@
 		},
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, s, t) {
 			"use strict";
+			t.d(s, "a", (function() {
+				return Y
+			}));
 			t("./node_modules/core-js/modules/es6.symbol.js");
 			var r = t("./node_modules/react/index.js"),
 				i = t.n(r),
@@ -520,19 +523,16 @@
 				V = t("./src/reddit/helpers/styles/mixins/index.m.less"),
 				H = t.n(V),
 				z = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
-				J = t.n(z);
-			t.d(s, "a", (function() {
-				return Y
-			}));
-			var X = function(e, s) {
-				var t = {};
-				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && s.indexOf(r) < 0 && (t[r] = e[r]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var i = 0;
-					for (r = Object.getOwnPropertySymbols(e); i < r.length; i++) s.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (t[r[i]] = e[r[i]])
-				}
-				return t
-			};
+				J = t.n(z),
+				X = function(e, s) {
+					var t = {};
+					for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && s.indexOf(r) < 0 && (t[r] = e[r]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var i = 0;
+						for (r = Object.getOwnPropertySymbols(e); i < r.length; i++) s.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (t[r[i]] = e[r[i]])
+					}
+					return t
+				};
 			const Z = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
 				if (!e) return !1;
 				return (Object(p.e)(e) ? s : t).some(s => s.id === e.id)
@@ -773,13 +773,13 @@
 					}
 				}
 				componentDidMount() {
-					this.trackDiscoveryUnitViewed(), this.props.routeName !== l.Ab.COMMENTS && this.setState({
+					this.trackDiscoveryUnitViewed(), this.props.routeName !== l.zb.COMMENTS && this.setState({
 						isCarouselVisible: !0,
 						isDUVisible: !0
 					})
 				}
 				componentDidUpdate(e) {
-					this.state.isCarouselVisible || e.routeName !== l.Ab.COMMENTS || this.props.routeName === l.Ab.COMMENTS || this.showDU()
+					this.state.isCarouselVisible || e.routeName !== l.zb.COMMENTS || this.props.routeName === l.zb.COMMENTS || this.showDU()
 				}
 				componentWillUnmount() {
 					this.showCarouselTimer && clearTimeout(this.showCarouselTimer), this.showDUTimer && clearTimeout(this.showDUTimer)
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.4014d5bff99a539bec81.js.map
+//# sourceMappingURL=InFeedChaining.951ddb67dc229279267a.js.map

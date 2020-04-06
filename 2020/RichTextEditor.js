@@ -1,37 +1,50 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.86d76e074449a76e30df.js
-// Retrieved at 4/1/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.9724b22b75cd6f4553eb.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
 			var o = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
 			var r = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/reddit/actions/economics/me/constants.ts");
-			const i = Object(r.a)(a.a);
-			n.d(t, "a", (function() {
-				return d
-			}));
-			const d = () => async (e, t, n) => {
-				let {
-					apiContext: r
-				} = n;
-				const a = t().user.account,
-					d = !t().economics.me.fetched;
-				if (a && d) {
-					const t = await
-					function(e) {
-						return Object(s.a)(e, {
-							method: "get",
-							endpoint: "".concat(o.a.metaUrl, "/users/me")
-						})
-					}(r());
-					t.ok && e(i(t.body))
+			const i = Object(r.a)(a.a),
+				d = () => async (e, t, n) => {
+					let {
+						apiContext: r
+					} = n;
+					const a = t().user.account,
+						d = !t().economics.me.fetched;
+					if (a && d) {
+						const t = await
+						function(e) {
+							return Object(s.a)(e, {
+								method: "get",
+								endpoint: "".concat(o.a.metaUrl, "/users/me")
+							})
+						}(r());
+						t.ok && e(i(t.body))
+					}
 				}
-			}
 		},
 		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return _
+			})), n.d(t, "f", (function() {
+				return k
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "d", (function() {
+				return y
+			})), n.d(t, "e", (function() {
+				return M
+			})), n.d(t, "c", (function() {
+				return T
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/forOwn.js"),
 				s = n.n(o),
@@ -65,19 +78,6 @@
 			function v(e) {
 				if (!w(e)) return e
 			}
-			n.d(t, "a", (function() {
-				return _
-			})), n.d(t, "f", (function() {
-				return k
-			})), n.d(t, "b", (function() {
-				return O
-			})), n.d(t, "d", (function() {
-				return y
-			})), n.d(t, "e", (function() {
-				return M
-			})), n.d(t, "c", (function() {
-				return T
-			}));
 			const _ = () => async (e, t, n) => {
 				let {
 					apiContext: o
@@ -338,6 +338,9 @@
 		},
 		"./src/reddit/components/CommentCreation/MarkdownCommentForm/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return se
+			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -443,9 +446,6 @@
 				Q = n("./src/reddit/models/User/index.ts"),
 				G = n("./src/reddit/components/CommentCreation/MarkdownCommentForm/index.m.less"),
 				J = n.n(G);
-			n.d(t, "a", (function() {
-				return se
-			}));
 			const Y = _.a.button("SwitchModeButton", J.a),
 				$ = _.a.wrapped(f.a, "LoadingIcon", J.a),
 				ee = _.a.div("CommentHeader", J.a),
@@ -2010,9 +2010,9 @@
 					})(s, o, n);
 				return r ? [r] : (e => {
 					const t = [];
-					return e.image > w.S && t.push(E.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > w.R && t.push(E.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > w.W && t.push(E.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > w.V && t.push(E.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(s)
@@ -2558,6 +2558,11 @@
 		},
 		"./src/reddit/endpoints/economics/subredditPremium.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return m
+			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/merge.js"),
 				s = n.n(o),
@@ -2594,11 +2599,6 @@
 				}
 				return f.ok ? o.products = f.body : o.errors.products = f.error, x.ok ? (s()(o.badges, x.body.badges), o.userOwnedBadges = x.body.userOwnedBadges) : o.errors.userBadges = x.error, o
 			}
-			n.d(t, "a", (function() {
-				return l
-			})), n.d(t, "b", (function() {
-				return m
-			}));
 			const m = (e, t) => Object(c.a)(e, {
 				endpoint: "".concat(r.a.metaUrl, "/products/").concat(t, "?types=badge,membership"),
 				method: "delete"
@@ -2748,4 +2748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.86d76e074449a76e30df.js.map
+//# sourceMappingURL=RichTextEditor.9724b22b75cd6f4553eb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.886963d02ffe2d85d315.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.28c8252cc1f714a1075c.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -81,7 +81,7 @@
 					correlation_id: a
 				};
 				return Object(y.b)(Object(k.a)(e, [f.a]), {
-					method: g.cb.POST,
+					method: g.bb.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: i
 				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign({}, e, {
@@ -98,9 +98,9 @@
 						const o = Object(I.O)(n()),
 							c = ((e, t, n) => {
 								switch (!0) {
-									case e && e.error && e.error.type && e.error.type === g.E.AUTHENTICATION_ERROR:
+									case e && e.error && e.error.type && e.error.type === g.D.AUTHENTICATION_ERROR:
 										return Object(l.a)(n, "error.authentication");
-									case e && e.error && e.error.type && e.error.type === g.E.INVALID_PREMIUM_AMOUNT:
+									case e && e.error && e.error.type && e.error.type === g.D.INVALID_PREMIUM_AMOUNT:
 										return Object(l.a)(n, "gold.givePremiumToUserModal.invalidPremiumPackage");
 									default:
 										return t
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.886963d02ffe2d85d315.js.map
+//# sourceMappingURL=GivePremiumModal.28c8252cc1f714a1075c.js.map

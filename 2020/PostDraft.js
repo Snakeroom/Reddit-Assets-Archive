@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.d2d6c60f7d8303f78c3c.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.4354aa0517f4e05c97d0.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -714,7 +714,7 @@
 					className: t,
 					language: n,
 					submissionType: s
-				} = e, o = s === d.Ib.CROSSPOST;
+				} = e, o = s === d.Hb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(y, null, r.a.createElement(b, null), o ? h(n) : p(n)), r.a.createElement(g, null, (o ? v : f).map((e, t) => r.a.createElement(x, {
@@ -1412,6 +1412,9 @@
 		},
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return j
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/app/strings/index.ts"),
@@ -1472,9 +1475,6 @@
 					}) : e.rule.description))
 				}
 			}
-			n.d(t, "a", (function() {
-				return j
-			}));
 			const j = Object(a.a)(e => e.rules.length > 0 ? r.a.createElement(i.a, {
 				className: e.className,
 				styles: e.styles,
@@ -2086,4 +2086,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.d2d6c60f7d8303f78c3c.js.map
+//# sourceMappingURL=PostDraft.4354aa0517f4e05c97d0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.24c064a0ce4b90b2f0cc.js
-// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.6cdecb5fd7bc986c2a8b.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
@@ -75,7 +75,7 @@
 						cardExpiryReady: h,
 						cardCVCReady: C,
 						postalCodeReady: b
-					} = this.state, E = {
+					} = this.state, y = {
 						base: {
 							lineHeight: "40px",
 							color: this.computedStyle.getPropertyValue("--newRedditTheme-bodyText"),
@@ -105,7 +105,7 @@
 						onChange: c,
 						onReady: this.onCardNumberReady,
 						placeholder: Object(l.c)("CARD NUMBER"),
-						style: E
+						style: y
 					}), !p && n.a.createElement("div", {
 						className: u.a.elementPlaceholder
 					}, Object(l.c)("CARD NUMBER"))), n.a.createElement("div", {
@@ -117,7 +117,7 @@
 						onChange: c,
 						onReady: this.onCardExpiryReady,
 						placeholder: Object(l.c)("MM/YY"),
-						style: E
+						style: y
 					}), !h && n.a.createElement("div", {
 						className: u.a.elementPlaceholder
 					}, Object(l.c)("MM/YY"))), n.a.createElement("div", {
@@ -129,7 +129,7 @@
 						onChange: c,
 						onReady: this.onCardCVCReady,
 						placeholder: Object(l.c)("CCV"),
-						style: E
+						style: y
 					}), !C && n.a.createElement("div", {
 						className: u.a.elementPlaceholder
 					}, Object(l.c)("CCV"))), n.a.createElement("div", {
@@ -141,7 +141,7 @@
 						onChange: c,
 						onReady: this.onPostalCodeReady,
 						placeholder: Object(l.c)("ZIP CODE"),
-						style: E
+						style: y
 					}), !b && n.a.createElement("div", {
 						className: u.a.elementPlaceholder
 					}, Object(l.c)("ZIP CODE"))))
@@ -175,8 +175,8 @@
 				h = a("./src/app/strings/index.ts"),
 				C = a("./src/lib/constants/index.ts"),
 				b = a("./src/lib/makeActionCreator/index.ts"),
-				E = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				y = a("./src/reddit/actions/modal.ts"),
+				y = a("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				E = a("./src/reddit/actions/modal.ts"),
 				O = a("./src/reddit/actions/toaster.ts"),
 				x = a("./src/reddit/components/Settings/PremiumForm.tsx"),
 				j = a("./src/reddit/endpoints/gold/purchase.ts"),
@@ -187,17 +187,17 @@
 				f = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const P = Object(b.a)(f.c),
 				v = () => async (e, t) => {
-					Object(N.b)(x.a)(t()) && (e(Object(y.i)(x.a)), e(P()))
+					Object(N.b)(x.a)(t()) && (e(Object(E.i)(x.a)), e(P()))
 				}, I = Object(b.a)(f.t), S = Object(b.a)(f.s), k = (e, t) => {
 					switch (e && e.error && e.error.type) {
-						case C.E.USER_DOESNT_EXIST:
-						case C.E.VALIDATION_ERROR:
+						case C.D.USER_DOESNT_EXIST:
+						case C.D.VALIDATION_ERROR:
 							return Object(h.a)(t, "error.type.invalidUser");
-						case C.E.NO_STRIPE_SUBSCRIPTION:
+						case C.D.NO_STRIPE_SUBSCRIPTION:
 							return Object(h.a)(t, "error.type.noStripeSubscription");
-						case C.E.CREDIT_CARD_FAILURE:
+						case C.D.CREDIT_CARD_FAILURE:
 							return e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg || Object(h.a)(t, "error.generic");
-						case C.E.AUTHENTICATION_ERROR:
+						case C.D.AUTHENTICATION_ERROR:
 							return Object(h.a)(t, "error.authentication");
 						default:
 							return Object(h.a)(t, "error.generic")
@@ -242,10 +242,10 @@
 						let {
 							apiContext: n
 						} = r;
-						t(I()), t(Object(E.stripeTokenPending)());
+						t(I()), t(Object(y.stripeTokenPending)());
 						const s = a(),
 							c = Object(_.O)(s),
-							d = await t(Object(E.validateAndCreateStripeToken)(e));
+							d = await t(Object(y.validateAndCreateStripeToken)(e));
 						if (!d) {
 							const e = Object(R.j)(a()) || Object(h.a)(c, "error.type.genericCardValidation");
 							return await t(w(e))
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=UpdateCardModal.24c064a0ce4b90b2f0cc.js.map
+//# sourceMappingURL=UpdateCardModal.6cdecb5fd7bc986c2a8b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.c3cb63386778c619dc7b.js
-// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.58ca75f4796160330008.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal~PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -278,7 +278,7 @@
 				v = t("./src/reddit/i18n/components.tsx"),
 				k = t("./src/reddit/icons/svgs/Trash2/index.tsx");
 			const f = e => 2 === e.length ? e : "0" + e,
-				w = e => {
+				x = e => {
 					switch (e.toLowerCase()) {
 						case "visa":
 							return "".concat(c.a.assetPath, "/img/payment-icons/visa.png");
@@ -292,7 +292,7 @@
 							return null
 					}
 				};
-			class x extends r.a.PureComponent {
+			class w extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						showConfirmText: !1
@@ -313,7 +313,7 @@
 					const {
 						language: e,
 						savedCard: a
-					} = this.props, t = w(a.brand);
+					} = this.props, t = x(a.brand);
 					return r.a.createElement("label", {
 						className: C.a.savedCardContainer
 					}, r.a.createElement("input", {
@@ -349,7 +349,7 @@
 					})))
 				}
 			}
-			var E = x,
+			var E = w,
 				_ = t("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				N = t("./src/reddit/controls/LoadingIcon/index.tsx"),
 				j = t("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -492,7 +492,7 @@
 					}, r.a.createElement(R.a, {
 						className: X.a.balance,
 						coinBalance: a
-					}), o === i.wb ? e && e.pennyPrice && t ? r.a.createElement(Z, {
+					}), o === i.vb ? e && e.pennyPrice && t ? r.a.createElement(Z, {
 						awardId: e.id,
 						className: Object(u.a)(X.a.purchaseButton, X.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -500,7 +500,7 @@
 					}) : n && r.a.createElement(Z, {
 						className: Object(u.a)(X.a.purchaseButton, X.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, o === i.vb && r.a.createElement(B.f, {
+					}) : null, o === i.ub && r.a.createElement(B.f, {
 						className: X.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: c || s,
@@ -599,7 +599,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === i.vb && r.a.createElement(S, {
+			}), e.selectedPayment === i.ub && r.a.createElement(S, {
 				nightmode: e.nightmode
 			}), r.a.createElement("div", {
 				className: X.a.checkoutFooter
@@ -607,9 +607,9 @@
 				className: X.a.purchaseTotal
 			}, n.fbt._("Total: {totalAmount}", [n.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 				hk: "3dx6W8"
-			}))), e.selectedPayment === i.wb && e.paypalErrorMessage && r.a.createElement("div", {
+			}))), e.selectedPayment === i.vb && e.paypalErrorMessage && r.a.createElement("div", {
 				className: X.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === i.vb && e.stripeErrorMessage && r.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === i.ub && e.stripeErrorMessage && r.a.createElement("div", {
 				className: X.a.errorMessage
 			}, e.stripeErrorMessage), r.a.createElement("div", {
 				className: X.a.agreementLink
@@ -833,7 +833,7 @@
 			})), t.d(a, "g", (function() {
 				return f
 			})), t.d(a, "h", (function() {
-				return w
+				return x
 			}));
 			var n = t("./src/lib/constants/index.ts"),
 				s = t("./src/reddit/models/Gold/Coins/index.ts"),
@@ -873,7 +873,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: m === l.Premium ? n.nb : y ? y.pennies : void 0
+							amountInSmallestDenom: m === l.Premium ? n.mb : y ? y.pennies : void 0
 						}
 					})
 				},
@@ -921,7 +921,7 @@
 						})
 					})
 				},
-				w = e => a => {
+				x = e => a => {
 					const t = g(a, e);
 					return Object.assign({}, t, {
 						source: "gold_payment",
@@ -1040,4 +1040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.c3cb63386778c619dc7b.js.map
+//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.58ca75f4796160330008.js.map

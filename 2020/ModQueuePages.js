@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.d208e8b007d19a276761.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.c1ef1c61fe024f2b6310.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -751,19 +751,19 @@
 						className: t,
 						style: s
 					}, o.a.createElement(g, {
-						onClick: () => u(r.C.NONE, null),
+						onClick: () => u(r.B.NONE, null),
 						selected: !d && !n,
 						text: Object(c.c)("Undistinguish")
 					}), a && o.a.createElement(g, {
-						onClick: () => u(r.C.MODERATOR, null),
+						onClick: () => u(r.B.MODERATOR, null),
 						selected: d && !l,
 						text: Object(c.c)("Distinguish as Mod")
 					}), m && a && o.a.createElement(g, {
-						onClick: () => u(r.C.MODERATOR, !0),
+						onClick: () => u(r.B.MODERATOR, !0),
 						selected: l,
 						text: Object(c.c)("Distinguish as Mod and Sticky")
 					}), i && o.a.createElement(g, {
-						onClick: () => u(r.C.ADMIN, null),
+						onClick: () => u(r.B.ADMIN, null),
 						selected: n,
 						text: Object(c.c)("Distinguish as Admin")
 					}))
@@ -795,7 +795,7 @@
 					isStickied: c,
 					isTopLevelComment: d,
 					onDistinguishComment: (e, t) => {
-						l(e, t), e === r.C.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.C.ADMIN ? m("admin_distinguish") : a && e !== r.C.MODERATOR ? m("undistinguish") : s && e !== r.C.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
+						l(e, t), e === r.B.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.B.ADMIN ? m("admin_distinguish") : a && e !== r.B.MODERATOR ? m("undistinguish") : s && e !== r.B.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
 					}
 				}))
 			}
@@ -2309,4 +2309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.d208e8b007d19a276761.js.map
+//# sourceMappingURL=ModQueuePages.c1ef1c61fe024f2b6310.js.map

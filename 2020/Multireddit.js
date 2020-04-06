@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.24df197e8392c14591f9.js
-// Retrieved at 4/1/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.4bcafb883cfcd4f777fa.js
+// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -104,6 +104,9 @@
 		},
 		"./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return w
+			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				i = n("./node_modules/react/index.js"),
 				r = n.n(i),
@@ -147,9 +150,6 @@
 				},
 				f = n("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.m.less"),
 				y = n.n(f);
-			n.d(t, "a", (function() {
-				return w
-			}));
 			const C = b.a.div("CommunityCount", y.a),
 				v = b.a.wrapped(O, "SubredditsOrProfiles", y.a),
 				w = b.a.wrapped(o.a, "SidebarSubreddit", y.a),
@@ -595,7 +595,7 @@
 								} = this.state;
 								if (e.length) {
 									const t = Object(le.g)(e),
-										n = t.startsWith(ie.Tb) ? "profile" : "subreddit",
+										n = t.startsWith(ie.Sb) ? "profile" : "subreddit",
 										s = "profile" === n ? t.substring(2) : t;
 									this.props.addSubredditRequested({
 										name: s,
@@ -1163,7 +1163,7 @@
 				}
 			}
 			O.defaultProps = {
-				minimizedLength: a.Fb
+				minimizedLength: a.Eb
 			}, t.a = O
 		},
 		"./src/reddit/components/SidebarSectionHeader/index.m.less": function(e, t, n) {
@@ -1175,6 +1175,11 @@
 		},
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "b", (function() {
+				return M
+			})), n.d(t, "a", (function() {
+				return T
+			}));
 			var s = n("./node_modules/react/index.js"),
 				i = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
@@ -1219,11 +1224,6 @@
 					return e
 				}).apply(this, arguments)
 			}
-			n.d(t, "b", (function() {
-				return M
-			})), n.d(t, "a", (function() {
-				return T
-			}));
 			const M = e => i.a.createElement(g.a, {
 					className: Object(c.a)(_.a.Container, e.className),
 					noGradient: !0,
@@ -2331,7 +2331,7 @@
 					let {
 						match: n
 					} = t;
-					return n.params.sort || c.O.HOT
+					return n.params.sort || c.N.HOT
 				},
 				Ke = (e, t) => {
 					let {
@@ -2358,7 +2358,7 @@
 				Ze = Object(a.a)(qe, Ke, Xe, (e, t, n) => Object(m.a)(n, e, t)),
 				Qe = Object(a.a)(Ke, e => {
 					const t = p.t in e && e[p.t].toUpperCase();
-					return "string" == typeof t && t in c.Rb ? c.Rb[t] : c.Sb
+					return "string" == typeof t && t in c.Qb ? c.Qb[t] : c.Rb
 				}),
 				Ye = Object(a.c)({
 					language: z.O,
@@ -2434,4 +2434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.24df197e8392c14591f9.js.map
+//# sourceMappingURL=Multireddit.4bcafb883cfcd4f777fa.js.map
