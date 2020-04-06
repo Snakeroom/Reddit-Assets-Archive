@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.15ad58fd45550c4820eb.js
-// Retrieved at 4/6/2020, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.34ee53a51f20f95cbf13.js
+// Retrieved at 4/6/2020, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4007,7 +4007,11 @@
 			}, f = "LOCAL_STORAGE_LOADED", O = Object(s.a)(f), m = e => async (t, n) => {
 				t(Object(o.a)());
 				const s = n();
-				s.user.loid.loid || s.meta.isBot || r.c.captureMessage("User has no LOID set");
+				s.user.loid.loid || s.meta.isBot || r.c.withScope(e => {
+					Object(r.a)(e, {
+						serverLogging: !1
+					}), r.c.captureMessage("User has no LOID set")
+				});
 				const {
 					localStorageData: c
 				} = e;
@@ -50537,4 +50541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.15ad58fd45550c4820eb.js.map
+//# sourceMappingURL=Governance~Reddit.34ee53a51f20f95cbf13.js.map
