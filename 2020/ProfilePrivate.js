@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.a731c44aac8d4eec3c5c.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.583a6b2c3c3d94eea560.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -873,7 +873,6 @@
 					}, Object(d.a)(z))), n.a.createElement(O.a, ne({
 						key: "PostMeta"
 					}, ve)), H && me && Object(g.c)(z) && n.a.createElement(x.a, {
-						language: F,
 						onIgnoreReports: G,
 						reportable: z
 					}), n.a.createElement("div", {
@@ -7687,4 +7686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.a731c44aac8d4eec3c5c.js.map
+//# sourceMappingURL=ProfilePrivate.583a6b2c3c3d94eea560.js.map

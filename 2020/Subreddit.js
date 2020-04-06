@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7a460930949126f586b6.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.93857ad69209ce3669a8.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5220,34 +5220,33 @@
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return N
+				return j
 			}));
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				a = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				a = s.n(r),
 				o = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				i = s("./src/reddit/connectors/connectToLanguage.ts"),
-				d = s("./src/lib/classNames/index.ts"),
-				c = s("./src/lib/lessComponent.tsx"),
-				l = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
-				m = s("./src/reddit/components/RichTextJson/index.tsx"),
-				u = s("./src/reddit/helpers/dom/index.ts"),
-				p = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				b = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				h = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				g = s("./src/reddit/models/Widgets/index.ts"),
-				x = s("./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less"),
-				f = s.n(x);
-			const y = c.a.div("RuleShortName", f.a),
-				v = c.a.div("RuleIndex", f.a),
-				C = c.a.div("RuleTitle", f.a),
-				O = c.a.div("RuleDescription", f.a),
-				_ = c.a.wrapped(l.a, "RawHTMLDisplay", f.a),
-				E = {};
-			class j extends r.a.Component {
+				i = s("./src/lib/classNames/index.ts"),
+				d = s("./src/lib/lessComponent.tsx"),
+				c = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
+				l = s("./src/reddit/components/RichTextJson/index.tsx"),
+				m = s("./src/reddit/helpers/dom/index.ts"),
+				u = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				p = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				b = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
+				h = s("./src/reddit/models/Widgets/index.ts"),
+				g = s("./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less"),
+				x = s.n(g);
+			const f = d.a.div("RuleShortName", x.a),
+				y = d.a.div("RuleIndex", x.a),
+				v = d.a.div("RuleTitle", x.a),
+				C = d.a.div("RuleDescription", x.a),
+				O = d.a.wrapped(c.a, "RawHTMLDisplay", x.a),
+				_ = {};
+			class E extends a.a.Component {
 				constructor(e) {
 					super(e), this.onClick = () => {
-						Object(u.f)() || this.setState({
+						Object(m.f)() || this.setState({
 							isVisible: !this.state.isVisible
 						})
 					}, this.state = {
@@ -5255,7 +5254,7 @@
 					}
 				}
 				shouldShowFullDisplay(e) {
-					return e.display === g.e.FULL
+					return e.display === h.e.FULL
 				}
 				render() {
 					const {
@@ -5263,41 +5262,41 @@
 						state: t,
 						onClick: s,
 						shouldShowFullDisplay: n
-					} = this, a = !!(e.rule.descriptionRichText || e.rule.descriptionHtml || e.rule.description), o = !n(e) && !!a;
-					return r.a.createElement(y, {
-						className: Object(d.a)({
-							[f.a.pointerCursor]: o
+					} = this, r = !!(e.rule.descriptionRichText || e.rule.descriptionHtml || e.rule.description), o = !n(e) && !!r;
+					return a.a.createElement(f, {
+						className: Object(i.a)({
+							[x.a.pointerCursor]: o
 						}),
-						onClick: n(e) || !a ? void 0 : s
-					}, r.a.createElement(h.a, null, r.a.createElement(v, null, "".concat(e.humanIndex, ".")), r.a.createElement(C, null, "".concat(e.rule.shortName)), r.a.createElement("div", null, !n(e) && a && (t.isVisible ? r.a.createElement(b.a, {
-						className: f.a.Chevron
-					}) : r.a.createElement(p.a, {
-						className: f.a.Chevron
-					})))), t.isVisible && r.a.createElement(O, null, e.rule.descriptionRichText ? r.a.createElement(m.a, {
+						onClick: n(e) || !r ? void 0 : s
+					}, a.a.createElement(b.a, null, a.a.createElement(y, null, "".concat(e.humanIndex, ".")), a.a.createElement(v, null, "".concat(e.rule.shortName)), a.a.createElement("div", null, !n(e) && r && (t.isVisible ? a.a.createElement(p.a, {
+						className: x.a.Chevron
+					}) : a.a.createElement(u.a, {
+						className: x.a.Chevron
+					})))), t.isVisible && a.a.createElement(C, null, e.rule.descriptionRichText ? a.a.createElement(l.a, {
 						content: JSON.parse(e.rule.descriptionRichText),
 						useExplicitTextColor: !0,
-						rtJsonElementProps: E
-					}) : e.rule.descriptionHtml ? r.a.createElement(_, {
+						rtJsonElementProps: _
+					}) : e.rule.descriptionHtml ? a.a.createElement(O, {
 						html: e.rule.descriptionHtml
 					}) : e.rule.description))
 				}
 			}
-			const N = Object(i.a)(e => e.rules.length > 0 ? r.a.createElement(o.a, {
+			const j = e => e.rules.length > 0 ? a.a.createElement(o.a, {
 				className: e.className,
 				styles: e.styles,
-				title: Object(a.a)(e.language, "structuredStyles.widgets.subreddit-rules.subredditRules", {
-					subreddit: e.subredditName
+				title: n.fbt._("{subredditName} Rules", [n.fbt._param("subredditName", "r/".concat(e.subredditName))], {
+					hk: "2AwRLk"
 				}),
 				redditStyle: e.redditStyle
 			}, e.rules.map((function(t, s) {
-				return r.a.createElement(j, {
+				return a.a.createElement(E, {
 					key: "rule".concat(t.shortName).concat(t.createdUtc),
 					rule: t,
 					display: e.display,
 					humanIndex: s + 1
 				})
-			}))) : null);
-			t.b = e => r.a.createElement(N, {
+			}))) : null;
+			t.b = e => a.a.createElement(j, {
 				rules: e.widget.data || [],
 				subredditName: e.subredditName,
 				display: e.widget.display,
@@ -7327,4 +7326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.7a460930949126f586b6.js.map
+//# sourceMappingURL=Subreddit.93857ad69209ce3669a8.js.map

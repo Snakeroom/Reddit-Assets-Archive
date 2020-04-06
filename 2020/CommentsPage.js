@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e52e98fc83496dcfd460.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.219aad5d3734e6228874.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3946,7 +3946,6 @@
 						mediaMetadata: n.media && n.media.mediaMetadata,
 						rtJsonElementProps: Et(e)
 					})), w && H && Object(le.c)(n) && a.a.createElement(Qe.a, {
-						language: E,
 						onIgnoreReports: S,
 						reportable: n
 					}), !f && !n.isDeleted && C && a.a.createElement(ze, {
@@ -9296,7 +9295,6 @@
 					showCategoryTag: e.isInCategoriesExperiment && c,
 					sendEvent: L
 				}), k && B && pe && o.a.createElement(J.a, {
-					language: E,
 					onIgnoreReports: j,
 					reportable: T
 				}), o.a.createElement(K.d, {
@@ -9366,7 +9364,6 @@
 						post: T,
 						subredditOrProfile: F
 					}), k && B && pe && o.a.createElement(J.a, {
-						language: E,
 						onIgnoreReports: j,
 						reportable: T
 					})), t && o.a.createElement(z.a, {
@@ -9456,7 +9453,6 @@
 				})) : null, T.isMeta && !y && o.a.createElement(G.a, {
 					className: Me.a.noProposal
 				}), k && B && pe && o.a.createElement(J.a, {
-					language: E,
 					onIgnoreReports: j,
 					reportable: T
 				}), o.a.createElement(K.d, {
@@ -13437,34 +13433,33 @@
 		"./src/reddit/components/Widgets/SubredditRules/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return j
+				return k
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
 				a = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				i = s("./src/reddit/connectors/connectToLanguage.ts"),
-				d = s("./src/lib/classNames/index.ts"),
-				c = s("./src/lib/lessComponent.tsx"),
-				l = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
-				m = s("./src/reddit/components/RichTextJson/index.tsx"),
-				p = s("./src/reddit/helpers/dom/index.ts"),
-				u = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				h = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				b = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				g = s("./src/reddit/models/Widgets/index.ts"),
-				x = s("./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less"),
-				f = s.n(x);
-			const v = c.a.div("RuleShortName", f.a),
-				C = c.a.div("RuleIndex", f.a),
-				O = c.a.div("RuleTitle", f.a),
-				E = c.a.div("RuleDescription", f.a),
-				y = c.a.wrapped(l.a, "RawHTMLDisplay", f.a),
-				_ = {};
-			class k extends o.a.Component {
+				i = s("./src/lib/classNames/index.ts"),
+				d = s("./src/lib/lessComponent.tsx"),
+				c = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
+				l = s("./src/reddit/components/RichTextJson/index.tsx"),
+				m = s("./src/reddit/helpers/dom/index.ts"),
+				p = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				u = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				h = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
+				b = s("./src/reddit/models/Widgets/index.ts"),
+				g = s("./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less"),
+				x = s.n(g);
+			const f = d.a.div("RuleShortName", x.a),
+				v = d.a.div("RuleIndex", x.a),
+				C = d.a.div("RuleTitle", x.a),
+				O = d.a.div("RuleDescription", x.a),
+				E = d.a.wrapped(c.a, "RawHTMLDisplay", x.a),
+				y = {};
+			class _ extends r.a.Component {
 				constructor(e) {
 					super(e), this.onClick = () => {
-						Object(p.f)() || this.setState({
+						Object(m.f)() || this.setState({
 							isVisible: !this.state.isVisible
 						})
 					}, this.state = {
@@ -13472,7 +13467,7 @@
 					}
 				}
 				shouldShowFullDisplay(e) {
-					return e.display === g.e.FULL
+					return e.display === b.e.FULL
 				}
 				render() {
 					const {
@@ -13480,41 +13475,41 @@
 						state: t,
 						onClick: s,
 						shouldShowFullDisplay: n
-					} = this, r = !!(e.rule.descriptionRichText || e.rule.descriptionHtml || e.rule.description), a = !n(e) && !!r;
-					return o.a.createElement(v, {
-						className: Object(d.a)({
-							[f.a.pointerCursor]: a
+					} = this, o = !!(e.rule.descriptionRichText || e.rule.descriptionHtml || e.rule.description), a = !n(e) && !!o;
+					return r.a.createElement(f, {
+						className: Object(i.a)({
+							[x.a.pointerCursor]: a
 						}),
-						onClick: n(e) || !r ? void 0 : s
-					}, o.a.createElement(b.a, null, o.a.createElement(C, null, "".concat(e.humanIndex, ".")), o.a.createElement(O, null, "".concat(e.rule.shortName)), o.a.createElement("div", null, !n(e) && r && (t.isVisible ? o.a.createElement(h.a, {
-						className: f.a.Chevron
-					}) : o.a.createElement(u.a, {
-						className: f.a.Chevron
-					})))), t.isVisible && o.a.createElement(E, null, e.rule.descriptionRichText ? o.a.createElement(m.a, {
+						onClick: n(e) || !o ? void 0 : s
+					}, r.a.createElement(h.a, null, r.a.createElement(v, null, "".concat(e.humanIndex, ".")), r.a.createElement(C, null, "".concat(e.rule.shortName)), r.a.createElement("div", null, !n(e) && o && (t.isVisible ? r.a.createElement(u.a, {
+						className: x.a.Chevron
+					}) : r.a.createElement(p.a, {
+						className: x.a.Chevron
+					})))), t.isVisible && r.a.createElement(O, null, e.rule.descriptionRichText ? r.a.createElement(l.a, {
 						content: JSON.parse(e.rule.descriptionRichText),
 						useExplicitTextColor: !0,
-						rtJsonElementProps: _
-					}) : e.rule.descriptionHtml ? o.a.createElement(y, {
+						rtJsonElementProps: y
+					}) : e.rule.descriptionHtml ? r.a.createElement(E, {
 						html: e.rule.descriptionHtml
 					}) : e.rule.description))
 				}
 			}
-			const j = Object(i.a)(e => e.rules.length > 0 ? o.a.createElement(a.a, {
+			const k = e => e.rules.length > 0 ? r.a.createElement(a.a, {
 				className: e.className,
 				styles: e.styles,
-				title: Object(r.a)(e.language, "structuredStyles.widgets.subreddit-rules.subredditRules", {
-					subreddit: e.subredditName
+				title: n.fbt._("{subredditName} Rules", [n.fbt._param("subredditName", "r/".concat(e.subredditName))], {
+					hk: "2AwRLk"
 				}),
 				redditStyle: e.redditStyle
 			}, e.rules.map((function(t, s) {
-				return o.a.createElement(k, {
+				return r.a.createElement(_, {
 					key: "rule".concat(t.shortName).concat(t.createdUtc),
 					rule: t,
 					display: e.display,
 					humanIndex: s + 1
 				})
-			}))) : null);
-			t.b = e => o.a.createElement(j, {
+			}))) : null;
+			t.b = e => r.a.createElement(k, {
 				rules: e.widget.data || [],
 				subredditName: e.subredditName,
 				display: e.widget.display,
@@ -17313,4 +17308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.e52e98fc83496dcfd460.js.map
+//# sourceMappingURL=CommentsPage.219aad5d3734e6228874.js.map

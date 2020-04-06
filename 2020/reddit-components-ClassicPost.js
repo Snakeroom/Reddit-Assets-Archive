@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ce6cd48c5cc20351f994.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9828319ba78b7ad6a0e6.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -866,7 +866,6 @@
 					}, Object(d.a)(G))), r.a.createElement(_.a, re({
 						key: "PostMeta"
 					}, ge)), W && pe && Object(f.c)(G) && r.a.createElement(h.a, {
-						language: F,
 						onIgnoreReports: H,
 						reportable: G
 					}), r.a.createElement("div", {
@@ -1493,4 +1492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.ce6cd48c5cc20351f994.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.9828319ba78b7ad6a0e6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6356404eedb83d0bffb1.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.c199dfa4f7e6f88e4dbb.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -921,7 +921,6 @@
 					}, Object(c.a)(z))), o.a.createElement(C.a, oe({
 						key: "PostMeta"
 					}, ve)), W && me && Object(f.c)(z) && o.a.createElement(x.a, {
-						language: B,
 						onIgnoreReports: U,
 						reportable: z
 					}), o.a.createElement("div", {
@@ -5971,7 +5970,6 @@
 						postId: pe.id,
 						source: pe.source
 					}, pe.callToAction)), oe && Oe && _e && o.a.createElement(M.a, {
-						language: X,
 						onIgnoreReports: ae,
 						reportable: pe
 					}), o.a.createElement(L.d, {
@@ -15473,4 +15471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.6356404eedb83d0bffb1.js.map
+//# sourceMappingURL=ProfileOverview.c199dfa4f7e6f88e4dbb.js.map

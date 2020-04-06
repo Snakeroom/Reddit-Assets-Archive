@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.856fd657b55321e482e4.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.b4c3d560c1152348eeae.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -575,7 +575,6 @@
 					}, Object(c.a)(z))), r.a.createElement(O.a, re({
 						key: "PostMeta"
 					}, ye)), U && me && Object(g.c)(z) && r.a.createElement(x.a, {
-						language: B,
 						onIgnoreReports: W,
 						reportable: z
 					}), r.a.createElement("div", {
@@ -9419,4 +9418,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.856fd657b55321e482e4.js.map
+//# sourceMappingURL=SearchResults.b4c3d560c1152348eeae.js.map

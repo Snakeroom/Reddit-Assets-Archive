@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.7d9b4ff5576b42e8aa5b.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.2c66da5cf5693f943dd5.js
+// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -636,7 +636,6 @@
 					}, Object(c.a)(z))), o.a.createElement(O.a, oe({
 						key: "PostMeta"
 					}, ve)), H && me && Object(g.c)(z) && o.a.createElement(x.a, {
-						language: F,
 						onIgnoreReports: U,
 						reportable: z
 					}), o.a.createElement("div", {
@@ -10363,4 +10362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.7d9b4ff5576b42e8aa5b.js.map
+//# sourceMappingURL=ProfileComments.2c66da5cf5693f943dd5.js.map
