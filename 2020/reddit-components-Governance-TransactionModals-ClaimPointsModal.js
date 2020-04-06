@@ -1,26 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e574cddf8bc00cf7fb48.js
-// Retrieved at 4/2/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.6bc39791060d687e46a5.js
+// Retrieved at 4/6/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
-		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n),
-				o = a("./node_modules/react-redux/es/index.js"),
-				r = a("./node_modules/reselect/es/index.js"),
-				c = a("./src/config.ts"),
-				d = a("./src/reddit/selectors/gov.ts");
-			const i = Object(r.c)({
-				tokenSymbol: d.q
-			});
-			t.a = Object(o.b)(i)((function(e) {
-				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
-				return s.a.createElement("img", {
-					className: e.className,
-					src: "".concat(c.a.assetPath, "/").concat(t)
-				})
-			}))
-		},
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
@@ -168,8 +149,8 @@
 				m = a("./src/reddit/helpers/governance/tokens.ts"),
 				u = a("./src/reddit/selectors/economics.ts"),
 				p = a("./src/reddit/selectors/gov.ts"),
-				b = a("./src/reddit/selectors/user.ts"),
-				h = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
+				h = a("./src/reddit/selectors/user.ts"),
+				b = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
 				x = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
 				_ = a("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.m.less"),
 				v = a.n(_);
@@ -181,7 +162,7 @@
 				tokenDisplayConversion: p.o,
 				tokenName: p.p,
 				userId: e => {
-					const t = Object(b.i)(e);
+					const t = Object(h.i)(e);
 					return t ? t.id : ""
 				}
 			});
@@ -194,7 +175,7 @@
 					tokenName: r,
 					userId: c
 				} = e;
-				return s.a.createElement(h.a, {
+				return s.a.createElement(b.a, {
 					onClose: a,
 					title: E._("Claim Your Points", null, {
 						hk: "2j1Z6u"
@@ -240,4 +221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.e574cddf8bc00cf7fb48.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.6bc39791060d687e46a5.js.map
