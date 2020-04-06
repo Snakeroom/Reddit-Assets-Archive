@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.2fb4d3c7ef5cf17cd57e.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.b70cb1ba0fb215bd3c0c.js
+// Retrieved at 4/6/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
@@ -305,8 +305,8 @@
 				c = s("./src/lib/prettyPrintNumber/index.ts"),
 				i = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
 				r = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				j = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				u = s("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
+				u = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				j = s("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
 				_ = s("./src/reddit/constants/colors.ts"),
 				h = s("./src/reddit/models/StructuredStyles/index.ts"),
 				p = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
@@ -346,7 +346,7 @@
 								maxRotation: 0,
 								minRotation: 0,
 								padding: 10,
-								callback: (o, s) => e.statsTime === u.b.Hour ? Object(u.k)(Object(u.g)(o)) : Object(u.m)(Object(u.g)(o), e.statsTime, 0 === s)
+								callback: (o, s) => e.statsTime === j.b.Hour ? Object(j.k)(Object(j.g)(o)) : Object(j.m)(Object(j.g)(o), e.statsTime, 0 === s)
 							}
 						}, {
 							gridLines: {
@@ -360,7 +360,7 @@
 								fontColor: Object(p.a)(e).actionIcon,
 								maxRotation: 0,
 								minRotation: 0,
-								callback: o => e.statsTime === u.b.Hour ? Object(u.j)(Object(u.g)(o), e.statsTime) : ""
+								callback: o => e.statsTime === j.b.Hour ? Object(j.j)(Object(j.g)(o), e.statsTime) : ""
 							}
 						}],
 						yAxes: [{
@@ -396,8 +396,8 @@
 					pointHoverBackgroundColor: f[o],
 					data: e
 				});
-			var x = s("./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less"),
-				w = s.n(x);
+			var w = s("./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less"),
+				x = s.n(w);
 			const y = 62.5,
 				v = 65;
 			class O extends n.Component {
@@ -424,14 +424,14 @@
 							n = l.left + e.caretX - y,
 							m = l.top + e.caretY - v,
 							d = o.chartInstance.data.labels[e.dataPoints[0].index],
-							a = Object(u.g)(d),
+							a = Object(j.g)(d),
 							c = e.dataPoints[0].yLabel;
 						let i = "";
-						i = this.props.statsView === u.d.Members ? 0 === e.dataPoints[0].datasetIndex ? t.fbt._("Joined", null, {
+						i = this.props.statsView === j.d.Members ? 0 === e.dataPoints[0].datasetIndex ? t.fbt._("Joined", null, {
 							hk: "2vPXl8"
 						}) : t.fbt._("Left", null, {
 							hk: "1cy9rl"
-						}) : this.props.statsView === u.d.Pageviews ? t.fbt._("Viewed", null, {
+						}) : this.props.statsView === j.d.Pageviews ? t.fbt._("Viewed", null, {
 							hk: "3jFRbm"
 						}) : t.fbt._("Visited", null, {
 							hk: "Ub0qx"
@@ -444,7 +444,7 @@
 							tooltipText: i,
 							showTooltip: !0
 						})
-					}, this.getOptions = () => Object.assign({}, b(this.props, this.props.statsTime === u.b.Hour ? 10 : 12), {
+					}, this.getOptions = () => Object.assign({}, b(this.props, this.props.statsTime === j.b.Hour ? 10 : 12), {
 						tooltips: {
 							enabled: !1,
 							custom: this.tooltipOptions
@@ -456,9 +456,9 @@
 							windowEnd: o,
 							windowStart: s
 						} = this.props;
-						return Object(u.o)(e, !0).slice(s, o).map(e => e.toString())
+						return Object(j.o)(e, !0).slice(s, o).map(e => e.toString())
 					};
-					const o = e.statsView === u.d.Members ? 2 : 4,
+					const o = e.statsView === j.d.Members ? 2 : 4,
 						s = new Array(o).fill(!1);
 					this.state = {
 						color: "",
@@ -473,7 +473,7 @@
 				}
 				componentDidUpdate(e) {
 					if ((e.statsView !== this.props.statsView || e.statsTime !== this.props.statsTime || e.theme !== this.props.theme) && this.chartRef.current && (this.chartRef.current.chartInstance.options = this.getOptions(), this.chartRef.current.chartInstance.update(), e.statsView !== this.props.statsView)) {
-						const e = this.props.statsView === u.d.Members ? 2 : 4,
+						const e = this.props.statsView === j.d.Members ? 2 : 4,
 							o = new Array(e).fill(!1);
 						this.setState({
 							hideDatasetArr: o
@@ -487,18 +487,30 @@
 						windowStart: s,
 						windowEnd: n
 					} = this.props;
-					let a = Object(u.n)(this.props.data, o, e);
-					if (e === u.b.Month) {
+					let a = Object(j.n)(this.props.data, o, e);
+					if (e === j.b.Month) {
 						const e = (new Date).getMonth() + 1;
-						a = a.map(o => Object(u.r)(o, e))
+						a = a.map(o => Object(j.r)(o, e))
 					}
 					const _ = {
 							labels: this.getLabels(),
-							datasets: o === u.d.Members ? [k(a[0].slice(s, n), 0, "Joined"), k(a[1].slice(s, n), 1, "Left")] : [k(a[0].slice(s, n), 0, "New Reddit"), k(a[1].slice(s, n), 1, "Old Reddit"), k(a[2].slice(s, n), 2, "Mobile Web"), k(a[3].slice(s, n), 3, "Reddit Apps")]
+							datasets: o === j.d.Members ? [k(a[0].slice(s, n), 0, t.fbt._("Joined", null, {
+								hk: "29HSWZ"
+							})), k(a[1].slice(s, n), 1, t.fbt._("Left", null, {
+								hk: "2ENe3g"
+							}))] : [k(a[0].slice(s, n), 0, t.fbt._("New Reddit", null, {
+								hk: "3Kn6gy"
+							})), k(a[1].slice(s, n), 1, t.fbt._("Old Reddit", null, {
+								hk: "1YYCdo"
+							})), k(a[2].slice(s, n), 2, t.fbt._("Mobile Web", null, {
+								hk: "4whHjN"
+							})), k(a[3].slice(s, n), 3, t.fbt._("Reddit Apps", null, {
+								hk: "2PU6tU"
+							}))]
 						},
-						h = e === u.b.Hour ? Object(u.k)(this.state.date) : Object(u.j)(this.state.date, e);
+						h = e === j.b.Hour ? Object(j.k)(this.state.date) : Object(j.j)(this.state.date, e);
 					return m.a.createElement("div", {
-						className: w.a.chart
+						className: x.a.chart
 					}, m.a.createElement(r.a, null, m.a.createElement(d.a, {
 						data: _,
 						height: 300,
@@ -506,44 +518,44 @@
 						ref: this.chartRef,
 						options: this.getOptions()
 					}), m.a.createElement("div", {
-						className: w.a.legend
+						className: x.a.legend
 					}, _.datasets.map((e, o) => {
 						const s = this.state.hideDatasetArr[o],
 							t = s && this.props.theme ? this.props.theme.newCommunityTheme.post : f[o],
 							n = s ? Object(l.g)(f[o], .5) : f[o];
 						return m.a.createElement("button", {
-							className: w.a.legendLine,
+							className: x.a.legendLine,
 							key: e.label,
 							onClick: () => this.onClickLegend(o)
-						}, m.a.createElement(j.a, {
-							className: w.a.expandRight
+						}, m.a.createElement(u.a, {
+							className: x.a.expandRight
 						}, m.a.createElement("div", {
-							className: w.a.legendBlock,
+							className: x.a.legendBlock,
 							style: {
 								backgroundColor: t,
 								border: "2px solid ".concat(n)
 							}
 						}), m.a.createElement("span", {
-							className: w.a.legendLabel
-						}, Object(u.l)(e.label))))
+							className: x.a.legendLabel
+						}, e.label)))
 					}))), this.state.showTooltip && m.a.createElement(i.b, {
-						className: w.a.Tooltip,
+						className: x.a.Tooltip,
 						targetPosition: {
 							top: this.state.top,
 							left: this.state.left
 						}
 					}, m.a.createElement("div", {
-						className: w.a.value,
+						className: x.a.value,
 						style: {
 							color: this.state.color
 						}
 					}, Object(c.a)(this.state.value.toString())), m.a.createElement("div", {
-						className: w.a.dateLine
+						className: x.a.dateLine
 					}, m.a.createElement("span", {
-						className: w.a.action
+						className: x.a.action
 					}, this.state.tooltipText), m.a.createElement("span", {
-						className: w.a.date
-					}, " ", e === u.b.Hour ? t.fbt._("at {tooltipDate}", [t.fbt._param("tooltipDate", h)], {
+						className: x.a.date
+					}, " ", e === j.b.Hour ? t.fbt._("at {tooltipDate}", [t.fbt._param("tooltipDate", h)], {
 						hk: "BRXaW"
 					}) : t.fbt._("on {tooltipDate}", [t.fbt._param("tooltipDate", h)], {
 						hk: "494Xs8"
@@ -565,7 +577,7 @@
 		"./src/reddit/components/RichTextEditor/Tooltip/index.tsx": function(e, o, s) {
 			"use strict";
 			s.d(o, "a", (function() {
-				return u
+				return j
 			})), s.d(o, "b", (function() {
 				return h
 			}));
@@ -578,11 +590,11 @@
 				c = s.n(a);
 			const i = 8,
 				r = 16,
-				j = 15 + r / 2;
-			var u;
+				u = 15 + r / 2;
+			var j;
 			! function(e) {
 				e[e.None = 0] = "None", e[e.Above = 1] = "Above", e[e.Below = 2] = "Below"
-			}(u || (u = {}));
+			}(j || (j = {}));
 			const _ = e => {
 				let {
 					isBelow: o = !1,
@@ -631,7 +643,7 @@
 							o = window.pageYOffset || e.scrollTop;
 						i = m + (window.pageXOffset || e.scrollLeft), r = n + o
 					}
-					const j = {
+					const u = {
 						target: {
 							top: n,
 							left: m
@@ -644,8 +656,8 @@
 							bottom: c
 						}
 					};
-					this.adjustPositionForTriangle(j, a), this.setState({
-						positioning: j
+					this.adjustPositionForTriangle(u, a), this.setState({
+						positioning: u
 					})
 				}
 				adjustPositionForTriangle(e, o) {
@@ -655,10 +667,10 @@
 					if (!s) return;
 					const t = o ? o.offsetWidth : document.documentElement.offsetWidth,
 						l = t ? Math.max(e.tooltip.left + e.tooltipWidth - t, 0) : 0;
-					e.tooltip.left -= l + j;
-					const n = l + j - r / 2;
+					e.tooltip.left -= l + u;
+					const n = l + u - r / 2;
 					let m;
-					s === u.Above ? (e.tooltip.top += i, m = -i) : (e.tooltip.top -= e.tooltipHeight + i, m = e.tooltipHeight), e.triangle = {
+					s === j.Above ? (e.tooltip.top += i, m = -i) : (e.tooltip.top -= e.tooltipHeight + i, m = e.tooltipHeight), e.triangle = {
 						top: m,
 						left: n
 					}
@@ -680,7 +692,7 @@
 					} = this.props, {
 						positioning: t
 					} = this.state, d = t && void 0 !== t.triangle && l.a.createElement(_, {
-						isBelow: s === u.Below,
+						isBelow: s === j.Below,
 						style: {
 							top: t.triangle.top + "px",
 							left: t.triangle.left + "px"
@@ -705,4 +717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModStatsChart.2fb4d3c7ef5cf17cd57e.js.map
+//# sourceMappingURL=ModStatsChart.b70cb1ba0fb215bd3c0c.js.map
