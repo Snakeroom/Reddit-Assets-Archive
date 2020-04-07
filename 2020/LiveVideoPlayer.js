@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.16a44207f50da6df1d0a.js
-// Retrieved at 4/7/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.730923c40fa86bba5acc.js
+// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./src/lib/setInterval/index.ts": function(e, t, s) {
@@ -106,9 +106,9 @@
 			s.d(t, "c", (function() {
 				return h
 			})), s.d(t, "a", (function() {
-				return R
-			})), s.d(t, "b", (function() {
 				return g
+			})), s.d(t, "b", (function() {
+				return R
 			})), s.d(t, "d", (function() {
 				return E
 			})), s.d(t, "e", (function() {
@@ -137,8 +137,8 @@
 				v = Object(i.a)(n.y),
 				S = Object(i.a)(n.K),
 				y = Object(i.a)(n.J),
-				R = Object(i.a)(n.s),
-				g = Object(i.a)(n.t),
+				g = Object(i.a)(n.s),
+				R = Object(i.a)(n.t),
 				w = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
 					post: Object.assign({}, t.post, {
 						subreddit: Object.assign({}, t.post.subreddit, {
@@ -394,52 +394,50 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return _
+				return w
 			})), s.d(t, "Overlay", (function() {
-				return f
+				return E
 			})), s.d(t, "LiveIndicator", (function() {
-				return I
+				return _
 			})), s.d(t, "Duration", (function() {
-				return P
+				return f
 			})), s.d(t, "MutedToggleButton", (function() {
-				return O
+				return I
 			})), s.d(t, "PausedToggleButton", (function() {
-				return T
+				return P
 			}));
 			var r = s("./node_modules/react/index.js"),
 				a = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				c = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
-				d = s("./src/reddit/components/HlsVideo/index.tsx"),
-				u = s("./src/reddit/components/ImageWithFallback/index.tsx"),
-				l = s("./src/reddit/constants/keycodes.ts"),
-				h = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				m = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
-				b = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
-				p = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
-				v = s("./src/reddit/selectors/platform.ts"),
-				S = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
+				o = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				c = s("./src/reddit/components/HlsVideo/index.tsx"),
+				d = s("./src/reddit/constants/keycodes.ts"),
+				u = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
+				l = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
+				h = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
+				m = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
+				b = s("./src/reddit/selectors/platform.ts"),
+				p = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var y = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				R = s.n(y);
+			var v = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				S = s.n(v);
 			const {
-				fbt: g
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = Object(n.c)({
-				isOverlayOpen: v.h,
-				unavailableVideoUrl: S.p
-			}), E = Object(i.b)(w, (e, t) => ({
-				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(n.c)({
+				isOverlayOpen: b.h,
+				unavailableVideoUrl: p.p
+			}), R = Object(i.b)(g, (e, t) => ({
+				onHeartbeatSubscribe: t => e(o.a.subscribeHeartbeat(t))
 			}));
-			class _ extends r.Component {
+			class w extends r.Component {
 				constructor(e) {
 					super(e), this.onError = () => {
 						this.setState({
 							hasError: !0
 						})
 					}, this.onKeyPress = e => {
-						e.key === l.b.Enter && (e.preventDefault(), e.stopPropagation(), this.onTogglePaused())
+						e.key === d.b.Enter && (e.preventDefault(), e.stopPropagation(), this.onTogglePaused())
 					}, this.onLevelLoaded = e => {
 						const {
 							live: t,
@@ -491,11 +489,8 @@
 				get shouldRenderOverlay() {
 					return this.shouldRenderVideo && this.hasPlayableMedia
 				}
-				get shouldRenderPoster() {
-					return this.props.isExpando
-				}
 				get shouldRenderVideo() {
-					return !this.shouldRenderPoster && this.props.canLoad
+					return this.props.canLoad
 				}
 				get shouldRenderVideoUI() {
 					const {
@@ -517,29 +512,23 @@
 				}
 				render() {
 					return a.a.createElement("div", {
-						className: R.a.LiveVideoPlayer
-					}, this.shouldRenderPoster ? this.renderPoster() : null, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
+						className: S.a.LiveVideoPlayer
+					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
 					const {
 						duration: e,
 						live: t
 					} = this.state;
-					return a.a.createElement(f, null, t ? a.a.createElement(I, null) : e ? a.a.createElement(P, {
+					return a.a.createElement(E, null, t ? a.a.createElement(_, null) : e ? a.a.createElement(f, {
 						seconds: e
 					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
 				}
-				renderPoster() {
-					return a.a.createElement(u.a, {
-						src: this.props.posterUrl,
-						errorSrc: o.S
-					})
-				}
 				renderVideo() {
 					return a.a.createElement("div", {
-						className: R.a.clip9x16
-					}, a.a.createElement(d.a, {
-						autoplay: this.isPaused,
+						className: S.a.clip9x16
+					}, a.a.createElement(c.a, {
+						autoplay: !0,
 						controls: !1,
 						isPaused: this.isPaused,
 						muted: this.state.muted,
@@ -554,10 +543,10 @@
 					}))
 				}
 				renderVideoUI() {
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(T, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(P, {
 						paused: this.isPaused,
 						onClick: this.onTogglePaused
-					}), a.a.createElement(O, {
+					}), a.a.createElement(I, {
 						muted: this.state.muted,
 						onClick: this.onToggleMuted
 					}))
@@ -569,26 +558,26 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = E(_);
-			const f = e => {
+			t.default = R(w);
+			const E = e => {
 					let {
 						children: t
 					} = e;
 					return a.a.createElement("div", {
-						className: R.a.Overlay
+						className: S.a.Overlay
 					}, t)
 				},
-				I = () => a.a.createElement("span", {
-					className: R.a.LiveIndicator
-				}, g._("Live", null, {
+				_ = () => a.a.createElement("span", {
+					className: S.a.LiveIndicator
+				}, y._("Live", null, {
 					hk: "TwJSs"
 				})),
-				P = e => {
+				f = e => {
 					let {
 						seconds: t
 					} = e;
 					return a.a.createElement("span", {
-						className: R.a.Duration
+						className: S.a.Duration
 					}, (e => {
 						const t = Math.trunc(e / 3600),
 							s = Math.trunc(e % 3600 / 60),
@@ -596,23 +585,23 @@
 						return [t > 0 ? t.toString() : "", t > 0 ? ":" : "", t > 0 && s < 10 ? "0" : "", s, ":", r < 10 ? "0" : "", r].join("")
 					})(t))
 				},
-				O = e => {
+				I = e => {
 					let {
 						muted: t,
 						onClick: s
 					} = e;
 					let r, i;
-					return t ? (r = g._("unmute", null, {
+					return t ? (r = y._("unmute", null, {
 						hk: "45ctbh"
-					}), i = a.a.createElement(h.a, {
-						className: R.a.MuteIcon
-					})) : (r = g._("mute", null, {
+					}), i = a.a.createElement(u.a, {
+						className: S.a.MuteIcon
+					})) : (r = y._("mute", null, {
 						hk: "3xjwI7"
-					}), i = a.a.createElement(p.a, {
-						className: R.a.VolumeIcon
+					}), i = a.a.createElement(m.a, {
+						className: S.a.VolumeIcon
 					})), a.a.createElement("button", {
 						"aria-label": r,
-						className: R.a.MutedToggleButton,
+						className: S.a.MutedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						},
@@ -621,23 +610,23 @@
 						}
 					}, i)
 				},
-				T = e => {
+				P = e => {
 					let {
 						paused: t,
 						onClick: s
 					} = e;
 					let r, i;
-					return t ? (r = g._("play", null, {
+					return t ? (r = y._("play", null, {
 						hk: "2xeIj3"
-					}), i = a.a.createElement(b.a, {
-						className: R.a.PlayIcon
-					})) : (r = g._("pause", null, {
+					}), i = a.a.createElement(h.a, {
+						className: S.a.PlayIcon
+					})) : (r = y._("pause", null, {
 						hk: "3jTrMB"
-					}), i = a.a.createElement(m.a, {
-						className: R.a.PauseIcon
+					}), i = a.a.createElement(l.a, {
+						className: S.a.PauseIcon
 					})), a.a.createElement("button", {
 						"aria-label": r,
-						className: R.a.PausedToggleButton,
+						className: S.a.PausedToggleButton,
 						onClick: e => {
 							e.preventDefault(), e.stopPropagation(), s()
 						}
@@ -646,4 +635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.16a44207f50da6df1d0a.js.map
+//# sourceMappingURL=LiveVideoPlayer.730923c40fa86bba5acc.js.map

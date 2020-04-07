@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.dee3174bfc92d2155f65.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.034576dbb3aeb2cda7c8.js
+// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -41709,7 +41709,7 @@
 					recommendedViewerSubreddits: fj
 				});
 			const mj = {
-				cursor: cj.X,
+				cursor: cj.W,
 				timestamps: {},
 				visitOrder: []
 			};
@@ -41719,7 +41719,7 @@
 				switch (t.type) {
 					case cj.N:
 						return mj;
-					case cj.Y: {
+					case cj.X: {
 						const n = t.payload,
 							s = e.visitOrder.includes(n) ? e.visitOrder : [...e.visitOrder, n],
 							r = s.indexOf(n);
@@ -41736,7 +41736,7 @@
 						const n = Object.keys(t.payload).filter(e => t.payload[e].hidden);
 						return yj(e, n)
 					}
-					case cj.U: {
+					case cj.T: {
 						const {
 							streamId: n,
 							timestamp: s
@@ -50552,4 +50552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.dee3174bfc92d2155f65.js.map
+//# sourceMappingURL=Governance~Reddit.034576dbb3aeb2cda7c8.js.map

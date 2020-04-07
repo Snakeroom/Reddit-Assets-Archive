@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7fc5a489bb15cf36576b.js
-// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.1fb873f65a9d50f72008.js
+// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -5074,54 +5074,6 @@
 				}
 			})
 		},
-		"./src/reddit/components/ImageWithFallback/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return a
-			}));
-			n("./node_modules/core-js/modules/es6.symbol.js");
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s);
-
-			function r() {
-				return (r = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var i = function(e, t) {
-				var n = {};
-				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (s = Object.getOwnPropertySymbols(e); o < s.length; o++) t.indexOf(s[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[o]) && (n[s[o]] = e[s[o]])
-				}
-				return n
-			};
-			const a = e => new Promise((t, n) => {
-				const s = new Image;
-				s.onload = () => t(s), s.onerror = n, s.src = e
-			});
-			t.a = e => {
-				var {
-					src: t,
-					lowSrc: n = t,
-					errorSrc: c = n
-				} = e, l = i(e, ["src", "lowSrc", "errorSrc"]);
-				const d = Object(s.createRef)();
-				return a(t).then(() => {
-					d.current && (d.current.src = t)
-				}).catch(() => {
-					d.current && (d.current.src = c)
-				}), o.a.createElement("img", r({
-					ref: d,
-					src: n
-				}, l))
-			}
-		},
 		"./src/reddit/components/InfoBanners/BannerBase/index.m.less": function(e, t, n) {
 			e.exports = {
 				IconWrapper: "_2p07tPrx9WpxDTQJ5cmVNe",
@@ -6580,8 +6532,6 @@
 								isVisible: I
 							}, l.a.createElement(q, {
 								canLoad: I,
-								isExpando: !!r,
-								posterUrl: u.media.scrubberThumbSource,
 								postId: u.id,
 								shouldPause: U,
 								url: u.media.hlsUrl
@@ -18162,9 +18112,13 @@
 				i = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				c = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				d = n("./src/reddit/components/ImageWithFallback/index.tsx"),
-				u = n("./src/reddit/icons/fonts/Gif/index.tsx"),
+				l = n("./src/reddit/actions/publicAccessNetwork/constants.ts");
+			n("./node_modules/core-js/modules/es6.symbol.js");
+			const d = e => new Promise((t, n) => {
+				const s = new Image;
+				s.onload = () => t(s), s.onerror = n, s.src = e
+			});
+			var u = n("./src/reddit/icons/fonts/Gif/index.tsx"),
 				p = n("./src/reddit/icons/fonts/Link/index.tsx"),
 				m = n("./src/reddit/icons/fonts/Photos/index.tsx"),
 				h = n("./src/reddit/icons/fonts/Text/index.tsx"),
@@ -18251,7 +18205,7 @@
 							src: n,
 							errorSrc: s
 						} = e;
-					return n && s && Object(d.b)(n).catch(() => {
+					return n && s && d(n).catch(() => {
 						t.current && (t.current.style.backgroundImage = "url(".concat(s, ")"))
 					}), r.a.createElement("div", {
 						"aria-label": e.alt,
@@ -18358,7 +18312,7 @@
 					if (Object(s.a)(d)) {
 						const n = z(e.media),
 							s = n ? {
-								errorSrc: l.T
+								errorSrc: l.S
 							} : {},
 							u = Object(i.a)(t, {
 								[M.a.verticallyCenterThumbnail]: n
@@ -30583,4 +30537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.7fc5a489bb15cf36576b.js.map
+//# sourceMappingURL=PostCreation.1fb873f65a9d50f72008.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.43f5e34affe77560f8f9.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.06023cbeaafea1233bd6.js
+// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11137,14 +11137,14 @@
 					}))
 				},
 				U = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("9df7409-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("8c05c72-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9df7409-production",
+						release: "8c05c72-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new s.Integrations.Breadcrumbs({
@@ -11506,7 +11506,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "9df7409-production",
+							releaseClient: "8c05c72-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -12764,9 +12764,9 @@
 			"use strict";
 			i.d(t, "D", (function() {
 				return r
-			})), i.d(t, "Y", (function() {
-				return s
 			})), i.d(t, "X", (function() {
+				return s
+			})), i.d(t, "W", (function() {
 				return o
 			})), i.d(t, "N", (function() {
 				return d
@@ -12806,7 +12806,7 @@
 				return E
 			})), i.d(t, "A", (function() {
 				return F
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "T", (function() {
 				return I
 			})), i.d(t, "B", (function() {
 				return O
@@ -12842,11 +12842,11 @@
 				return q
 			})), i.d(t, "q", (function() {
 				return W
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "Y", (function() {
 				return H
-			})), i.d(t, "W", (function() {
-				return V
 			})), i.d(t, "V", (function() {
+				return V
+			})), i.d(t, "U", (function() {
 				return z
 			})), i.d(t, "a", (function() {
 				return K
@@ -12864,8 +12864,6 @@
 				return $
 			})), i.d(t, "S", (function() {
 				return ee
-			})), i.d(t, "T", (function() {
-				return te
 			}));
 			var n = i("./src/config.ts");
 			const r = "RPAN__REMOVE_STREAM_FROM_HISTORY",
@@ -12918,8 +12916,7 @@
 				X = 2e3,
 				Z = "".concat(n.a.redditUrl, "/r/").concat("pan"),
 				$ = "https://www.redditinc.com/policies/broadcasting-content-policy",
-				ee = "".concat(n.a.assetPath, "/img/rpan-broadcast-over.png"),
-				te = "".concat(n.a.assetPath, "/img/rpan-broadcast-over-thumbnail.png")
+				ee = ("".concat(n.a.assetPath, "/img/rpan-broadcast-over.png"), "".concat(n.a.assetPath, "/img/rpan-broadcast-over-thumbnail.png"))
 		},
 		"./src/reddit/actions/session.ts": function(e, t, i) {
 			"use strict";
@@ -18216,7 +18213,7 @@
 			! function(e) {
 				e.NOT_STARTED = "NOT_STARTED", e.PUBLISHED = "PUBLISHED", e.IS_LIVE = "IS_LIVE", e.DISCONNECTED = "DISCONNECTED", e.KILLED = "KILLED", e.PURGED = "PURGED", e.ENDED = "ENDED"
 			}(n || (n = {}));
-			const s = e => !!e && e.toLowerCase().startsWith(r.W) && e.toLowerCase().endsWith(r.V)
+			const s = e => !!e && e.toLowerCase().startsWith(r.V) && e.toLowerCase().endsWith(r.U)
 		},
 		"./src/reddit/models/RichTextJson/index.ts": function(e, t, i) {
 			"use strict";
@@ -28426,4 +28423,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.43f5e34affe77560f8f9.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.06023cbeaafea1233bd6.js.map

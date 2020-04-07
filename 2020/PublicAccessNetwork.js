@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4845fb5dfd0d37b68441.js
-// Retrieved at 4/6/2020, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0db1fbc58b7dfa63eac0.js
+// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1692,10 +1692,10 @@
 				O = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				y = s("./src/lib/makeActionCreator/index.ts");
 			const x = Object(y.a)(O.D),
-				k = Object(y.a)(O.Y),
+				k = Object(y.a)(O.X),
 				N = e => async t => {
 					t(x(e))
-				}, P = Object(y.a)(O.N), I = Object(y.a)(O.U);
+				}, P = Object(y.a)(O.N), I = Object(y.a)(O.T);
 			var L, j = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				M = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				T = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
@@ -1991,10 +1991,10 @@
 						if (!t) return 0;
 						const s = e === Ae.a.upvoted ? t.upvotes : t.downvotes;
 						return null === t.post.voteState && this.state.displayedVoteState === e || this.state.displayedVoteState === e && null !== t.post.voteState && Object(Ae.e)(t.post.voteState) !== e ? s + 1 : s
-					}, this.onVoteUp = Te()(() => this.vote(Ae.a.upvoted), O.Z, {
+					}, this.onVoteUp = Te()(() => this.vote(Ae.a.upvoted), O.Y, {
 						leading: !0,
 						trailing: !1
-					}), this.onVoteDown = Te()(() => this.vote(Ae.a.downvoted), O.Z, {
+					}), this.onVoteDown = Te()(() => this.vote(Ae.a.downvoted), O.Y, {
 						leading: !0,
 						trailing: !1
 					}), this.state = {
@@ -4081,4 +4081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.4845fb5dfd0d37b68441.js.map
+//# sourceMappingURL=PublicAccessNetwork.0db1fbc58b7dfa63eac0.js.map
