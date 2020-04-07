@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6b099478b25b82f5d786.js
-// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.a4e98e6cc761f6181b33.js
+// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2303,9 +2303,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.a
 				});
-				return !!t && !Object(n.bc)(t)
+				return !!t && !Object(n.Xb)(t)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.6b099478b25b82f5d786.js.map
+//# sourceMappingURL=ModQueuePages.a4e98e6cc761f6181b33.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3e2dde01efc5e3f5c092.js
-// Retrieved at 4/7/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d474928e82d284927462.js
+// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -359,8 +359,8 @@
 				U = a.n(K),
 				J = a("./src/reddit/helpers/awards/message.ts"),
 				Q = a("./src/reddit/i18n/components.tsx"),
-				W = a("./src/reddit/i18n/utils.ts"),
-				X = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				X = a("./src/reddit/i18n/utils.ts"),
+				W = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				z = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				Y = a("./src/reddit/controls/RadioInput/index.tsx"),
 				Z = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
@@ -524,9 +524,9 @@
 					} = this.props;
 					if (e) return null;
 					if (n) {
-						const e = "post" === a ? Object(W.c)("Show my username on post") : Object(W.c)("Show my username on comment");
+						const e = "post" === a ? Object(X.c)("Show my username on post") : Object(X.c)("Show my username on comment");
 						return s.a.createElement(Y.a, {
-							name: Object(W.c)("Privacy setting"),
+							name: Object(X.c)("Privacy setting"),
 							onChange: this.handleRadioChange,
 							value: t ? ce.PRIVATE : ce.PUBLIC
 						}, s.a.createElement(Z.a, {
@@ -542,7 +542,7 @@
 					return s.a.createElement(z.a, {
 						className: U.a.giver,
 						isSelected: t,
-						text: Object(W.c)("Make my gift anonymous"),
+						text: Object(X.c)("Make my gift anonymous"),
 						onClick: this.handleToggleAnonymous
 					})
 				}
@@ -569,7 +569,7 @@
 						className: Object(i.a)(U.a.textAreaWrapper, {
 							[U.a.messageTooLong]: c
 						})
-					}, s.a.createElement(X.q, de({
+					}, s.a.createElement(W.q, de({
 						className: U.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -996,7 +996,7 @@
 					}, this.renderEmojiSubText())), s.a.createElement("button", {
 						className: Te.a.closeBtn,
 						onClick: this.handleCloseIconClick
-					}, s.a.createElement(X.b, {
+					}, s.a.createElement(W.b, {
 						className: Te.a.closeBtnIcon
 					})))
 				}
@@ -1688,9 +1688,9 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.tb
+					experimentName: n.pb
 				});
-				return Object(n.bc)(t) ? void 0 : t
+				return Object(n.Xb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
@@ -1702,4 +1702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.3e2dde01efc5e3f5c092.js.map
+//# sourceMappingURL=FramedGild~GildModal.d474928e82d284927462.js.map

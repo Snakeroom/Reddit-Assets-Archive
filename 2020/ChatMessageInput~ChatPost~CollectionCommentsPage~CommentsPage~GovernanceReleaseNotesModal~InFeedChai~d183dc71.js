@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.37b7e90ac6307e3bc0af.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.cea58afabe6ea1334194.js
+// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1160,9 +1160,9 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return J
-			})), n.d(t, "d", (function() {
 				return W
+			})), n.d(t, "d", (function() {
+				return J
 			})), n.d(t, "a", (function() {
 				return V
 			})), n.d(t, "b", (function() {
@@ -1290,8 +1290,8 @@
 					}
 				}),
 				N = n("./src/reddit/constants/experiments.ts"),
-				M = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				B = n("./src/reddit/selectors/subredditMention.ts");
+				B = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				M = n("./src/reddit/selectors/subredditMention.ts");
 			class D extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
@@ -1300,7 +1300,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(M.a)(Object.assign({}, e, {
+						t(Object(B.a)(Object.assign({}, e, {
 							subredditName: n
 						})))
 					}
@@ -1317,9 +1317,9 @@
 			}
 			const H = Object(u.c)(D),
 				R = Object(I.c)({
-					isFeatureFlagEnabled: B.b,
-					isUserInTreatment: B.e,
-					userVariant: B.a
+					isFeatureFlagEnabled: M.b,
+					isUserInTreatment: M.e,
+					userVariant: M.a
 				});
 			var U = Object(v.b)(R)(e => {
 					let {
@@ -1334,12 +1334,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Jb.SmIcon:
+						case N.Fb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Jb.SmIconHc:
+						case N.Fb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1353,7 +1353,7 @@
 					}
 				}),
 				F = n("./src/reddit/helpers/richTextJson/index.ts");
-			const J = (e, t, n) => {
+			const W = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						o = [],
@@ -1367,7 +1367,7 @@
 						key: n
 					}, o)
 				},
-				W = e => a.a.createElement(c.e, {
+				J = e => a.a.createElement(c.e, {
 					key: e
 				}),
 				V = (e, t, n, s) => {
@@ -1413,9 +1413,9 @@
 						case h.c:
 							return A(e, s);
 						case h.k:
-							return J(e, n, s);
+							return W(e, n, s);
 						case h.l:
-							return W(s);
+							return J(s);
 						case h.p:
 							return Y(e, t, n, s);
 						case h.u:
@@ -1782,12 +1782,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Fb
+						experimentName: s.Bb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Jb.SmIcon || t === s.Jb.SmIconHc
+					return t === s.Fb.SmIcon || t === s.Fb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.37b7e90ac6307e3bc0af.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.cea58afabe6ea1334194.js.map
