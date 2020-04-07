@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.0b011a2f41d942e79672.js
-// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.e0cde8965bc0d9df83dd.js
+// Retrieved at 4/7/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -26,14 +26,14 @@
 				o = r("./src/reddit/components/CharacterCountdown/index.m.less"),
 				d = r.n(o);
 			const {
-				fbt: c
+				fbt: l
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => s.a.createElement(i.b, {
 				className: Object(n.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
-			}, c._({
+			}, l._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
-			}, [c._plural(e.maxChars - e.text.length, "characters")], {
+			}, [l._plural(e.maxChars - e.text.length, "characters")], {
 				hk: "V22sW"
 			}))
 		},
@@ -59,95 +59,97 @@
 		"./src/reddit/components/MultiredditAddSubredditModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t);
-			var a = r("./node_modules/lodash/noop.js"),
-				s = r.n(a),
-				n = r("./node_modules/lodash/without.js"),
-				i = r.n(n),
-				o = r("./node_modules/react/index.js"),
-				d = r.n(o),
+			var a = r("./node_modules/fbt/lib/FbtPublic.js"),
+				s = r("./node_modules/lodash/noop.js"),
+				n = r.n(s),
+				i = r("./node_modules/lodash/without.js"),
+				o = r.n(i),
+				d = r("./node_modules/react/index.js"),
+				l = r.n(d),
 				c = r("./node_modules/react-redux/es/index.js"),
-				l = r("./node_modules/reselect/es/index.js"),
-				m = r("./src/higherOrderComponents/asModal/index.tsx"),
-				u = r("./src/lib/classNames/index.ts"),
-				h = r("./src/reddit/actions/modal.ts"),
-				p = r("./src/reddit/actions/multireddit/index.ts"),
-				b = r("./src/reddit/components/CharacterCountdown/index.tsx"),
-				f = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				x = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				C = r("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				g = r("./src/reddit/components/ThemeProvider/index.tsx"),
-				S = r("./src/reddit/constants/keycodes.ts"),
+				m = r("./node_modules/reselect/es/index.js"),
+				u = r("./src/higherOrderComponents/asModal/index.tsx"),
+				h = r("./src/lib/classNames/index.ts"),
+				p = r("./src/reddit/actions/modal.ts"),
+				b = r("./src/reddit/actions/multireddit/index.ts"),
+				f = r("./src/reddit/components/CharacterCountdown/index.tsx"),
+				x = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				C = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				g = r("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
+				S = r("./src/reddit/components/ThemeProvider/index.tsx"),
+				_ = r("./src/reddit/constants/keycodes.ts"),
 				y = r("./src/reddit/constants/posts.ts"),
 				E = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				_ = r("./src/reddit/controls/Button/index.tsx"),
-				v = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				O = r("./src/reddit/helpers/multireddit/index.ts"),
-				N = r("./src/reddit/i18n/components.tsx"),
-				w = r("./src/reddit/i18n/utils.ts"),
-				j = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				k = r("./src/reddit/models/Multireddit/index.ts"),
+				v = r("./src/reddit/controls/Button/index.tsx"),
+				O = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				k = r("./src/reddit/helpers/multireddit/index.ts"),
+				N = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				w = r("./src/reddit/models/Multireddit/index.ts"),
 				F = r("./src/reddit/models/Subreddit/index.ts"),
-				P = r("./src/reddit/selectors/multireddit.ts"),
-				R = r("./src/reddit/controls/Checkbox/index.tsx"),
-				M = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
-				I = r.n(M),
-				T = e => {
-					let {
-						containsSubreddit: t,
-						isSelected: r,
-						multireddit: a,
-						onCheck: s,
-						recentRef: n
-					} = e;
-					return d.a.createElement("div", {
-						className: I.a.listItem,
-						onClick: s,
-						ref: n
-					}, d.a.createElement(R.a, {
-						className: I.a.checkbox,
-						disabled: t,
-						isCheckboxSelected: r || t,
-						toggleCheckbox: s
-					}), d.a.createElement("img", {
-						src: a.icon,
-						className: I.a.icon
-					}), d.a.createElement("div", {
-						className: I.a.label
-					}, d.a.createElement("div", {
-						className: I.a.name
-					}, a.displayText), d.a.createElement("div", {
-						className: I.a.details
-					}, t ? d.a.createElement(N.c, null, "Community already added to this feed") : d.a.createElement(N.c, null, d.a.createElement(N.b, {
-						name: "num-subreddits"
-					}, a.subredditCount), " ", d.a.createElement(N.a, {
-						name: "communities",
-						singular: "community",
-						plural: "communities",
-						count: a.subredditCount
-					})))))
-				};
-			const A = 40,
+				j = r("./src/reddit/selectors/multireddit.ts"),
+				P = r("./src/reddit/controls/Checkbox/index.tsx"),
+				R = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
+				M = r.n(R);
+			const {
+				fbt: A
+			} = r("./node_modules/fbt/lib/FbtPublic.js");
+			var I = e => {
+				let {
+					containsSubreddit: t,
+					isSelected: r,
+					multireddit: a,
+					onCheck: s,
+					recentRef: n
+				} = e;
+				return l.a.createElement("div", {
+					className: M.a.listItem,
+					onClick: s,
+					ref: n
+				}, l.a.createElement(P.a, {
+					className: M.a.checkbox,
+					disabled: t,
+					isCheckboxSelected: r || t,
+					toggleCheckbox: s
+				}), l.a.createElement("img", {
+					src: a.icon,
+					className: M.a.icon
+				}), l.a.createElement("div", {
+					className: M.a.label
+				}, l.a.createElement("div", {
+					className: M.a.name
+				}, a.displayText), l.a.createElement("div", {
+					className: M.a.details
+				}, t ? A._("Community already added to this feed", null, {
+					hk: "3dMmTS"
+				}) : A._({
+					"*": "{communities} communities",
+					_1: "1 community"
+				}, [A._plural(a.subredditCount, "communities")], {
+					hk: "2tlE2Y"
+				}))))
+			};
+			const T = 40,
 				L = 12,
-				D = Object(E.t)(),
-				G = Object(l.c)({
+				G = Object(E.t)(),
+				D = Object(m.c)({
 					createApiError: e => e.multireddits.api.create.error,
 					createApiFetched: e => e.multireddits.api.create.fetched,
 					createApiPending: e => e.multireddits.api.create.pending,
 					currentSubredditOrProfile: E.o,
-					mineApiFetched: P.h,
-					mineApiPending: P.i,
-					myMultireddits: P.j,
+					mineApiFetched: j.h,
+					mineApiPending: j.i,
+					myMultireddits: j.j,
 					submitApiFetched: e => e.multireddits.api.addSubreddit.fetched,
 					submitApiPending: e => e.multireddits.api.addSubreddit.pending
 				}),
-				z = Object(c.b)(G, e => ({
-					onAddToMulireddits: (t, r) => e(Object(p.a)({
+				z = Object(c.b)(D, e => ({
+					onAddToMulireddits: (t, r) => e(Object(b.a)({
 						identifier: t,
 						multiredditNames: r
 					})),
-					onClose: () => e(Object(h.f)()),
+					onClose: () => e(Object(p.f)()),
 					onCreateSubmit: t => {
-						e(Object(p.b)({
+						e(Object(b.b)({
 							displayName: t,
 							shouldNavigate: !1
 						}))
@@ -160,7 +162,7 @@
 						}, r)
 					}
 				}));
-			class B extends d.a.Component {
+			class W extends l.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						creatingName: "",
@@ -174,7 +176,7 @@
 							selected: t
 						} = this.state;
 						this.setState({
-							selected: t.includes(e) ? i()(this.state.selected, e) : [...t, e]
+							selected: t.includes(e) ? o()(this.state.selected, e) : [...t, e]
 						})
 					}, this.onSubmit = () => {
 						this.props.onSubmit(this.state.selected)
@@ -186,7 +188,7 @@
 							showCreateSuccess: !1
 						})
 					}, this.onCreateSubmit = () => {
-						const e = Object(O.a)({
+						const e = Object(k.a)({
 							displayText: this.state.creatingName,
 							myMultireddits: this.props.myMultireddits,
 							thisMultireddit: null
@@ -196,13 +198,13 @@
 							showCreateError: !0
 						}) : this.props.onCreateSubmit(this.state.creatingName)
 					}, this.onCreateKeyDown = e => {
-						e.which === S.a.Enter && this.onCreateSubmit()
+						e.which === _.a.Enter && this.onCreateSubmit()
 					}, this.onCreateClick = () => {
 						this.setState({
 							isCreating: !0
 						}), window.setTimeout(() => this.inputRef && this.inputRef.focus())
 					}, this.setScrollRef = e => this.scrollRef = e, this.setInputRef = e => this.inputRef = e, this.setRecentRef = e => this.recentRef = e, this.getCreateState = () => {
-						if (!this.props.createApiPending) return this.state.showCreateError || this.state.displayTextError ? x.d.Invalid : this.state.showCreateSuccess ? x.d.Valid : void 0
+						if (!this.props.createApiPending) return this.state.showCreateError || this.state.displayTextError ? C.d.Invalid : this.state.showCreateSuccess ? C.d.Valid : void 0
 					}, this.componentDidUpdate = (e, t) => {
 						if (e.createApiPending && !this.props.createApiPending && this.props.createApiFetched && !this.props.createApiError) {
 							let e;
@@ -240,74 +242,90 @@
 							createApiPending: e,
 							mineApiPending: t,
 							myMultireddits: r,
-							onClose: a,
-							submitApiPending: n
+							onClose: s,
+							submitApiPending: i
 						},
 						state: {
-							creatingName: i,
-							displayTextError: o,
+							creatingName: o,
+							displayTextError: d,
 							isCreating: c,
-							lastCreatedName: l,
-							selected: m,
-							showCreateError: h,
-							showCreateSuccess: p
+							lastCreatedName: m,
+							selected: u,
+							showCreateError: p,
+							showCreateSuccess: b
 						}
 					} = this;
-					return d.a.createElement(g.a, {
+					return l.a.createElement(S.a, {
 						forceRedditTheme: !0
-					}, d.a.createElement(f.c, null, d.a.createElement(f.g, null, d.a.createElement(j.a, null, d.a.createElement(f.n, null, d.a.createElement(N.c, null, "Add community to Custom Feed")), d.a.createElement("button", {
-						onClick: a
-					}, d.a.createElement(f.b, null)))), d.a.createElement(f.j, {
-						className: I.a.main
-					}, d.a.createElement("div", {
-						className: I.a.listContainer,
+					}, l.a.createElement(x.c, null, l.a.createElement(x.g, null, l.a.createElement(N.a, null, l.a.createElement(x.n, null, a.fbt._("Add community to Custom Feed", null, {
+						hk: "1twPIx"
+					})), l.a.createElement("button", {
+						onClick: s
+					}, l.a.createElement(x.b, null)))), l.a.createElement(x.j, {
+						className: M.a.main
+					}, l.a.createElement("div", {
+						className: M.a.listContainer,
 						ref: this.setScrollRef
-					}, t ? d.a.createElement("div", {
-						className: I.a.loadingContainer
-					}, d.a.createElement(v.a, {
-						className: Object(u.a)(I.a.loadingIcon, I.a.forUser),
-						sizePx: A
-					})) : r.map(e => d.a.createElement(T, {
+					}, t ? l.a.createElement("div", {
+						className: M.a.loadingContainer
+					}, l.a.createElement(O.a, {
+						className: Object(h.a)(M.a.loadingIcon, M.a.forUser),
+						sizePx: T
+					})) : r.map(e => l.a.createElement(I, {
 						containsSubreddit: this.containsCurrentSubredditOrProfile(e),
-						isSelected: m.indexOf(e.name) > -1 || !1,
+						isSelected: u.indexOf(e.name) > -1 || !1,
 						key: e.name,
 						multireddit: e,
 						onCheck: this.getOnCheckFn(e.name),
-						recentRef: e.name === l ? this.setRecentRef : s.a
-					}))), d.a.createElement("div", null, c ? d.a.createElement("div", {
-						className: Object(u.a)(I.a.listItem, I.a.inputListItem)
-					}, d.a.createElement(x.b, {
+						recentRef: e.name === m ? this.setRecentRef : n.a
+					}))), l.a.createElement("div", null, c ? l.a.createElement("div", {
+						className: Object(h.a)(M.a.listItem, M.a.inputListItem)
+					}, l.a.createElement(C.b, {
 						inputRef: this.setInputRef,
-						label: Object(w.c)("new custom feed"),
-						maxLength: k.c,
+						label: a.fbt._("new custom feed", null, {
+							hk: "2C1GUB"
+						}),
+						maxLength: w.c,
 						onChange: this.onCreatingChange,
 						onKeyDown: this.onCreateKeyDown,
 						state: this.getCreateState(),
-						value: i
-					}), h ? d.a.createElement(C.c, {
-						className: I.a.createErrorMsg
-					}, o === k.a.SameName ? Object(w.c)("A custom feed with that name already exists") : o === k.a.TooShort ? Object(w.c)("Name must contain at least two alphanumeric characters") : Object(w.c)("Something went wrong with this name, maybe try something else?")) : d.a.createElement(b.a, {
-						text: i,
-						maxChars: k.c
-					}), !p && !h && (e ? d.a.createElement(v.a, {
-						className: Object(u.a)(I.a.createSubmitBtn, I.a.loading),
+						value: o
+					}), p ? l.a.createElement(g.c, {
+						className: M.a.createErrorMsg
+					}, d === w.a.SameName ? a.fbt._("A custom feed with that name already exists", null, {
+						hk: "1WJHG3"
+					}) : d === w.a.TooShort ? a.fbt._("Name must contain at least two alphanumeric characters", null, {
+						hk: "3TWc1H"
+					}) : a.fbt._("Something went wrong with this name, maybe try something else?", null, {
+						hk: "N6k8D"
+					})) : l.a.createElement(f.a, {
+						text: o,
+						maxChars: w.c
+					}), !b && !p && (e ? l.a.createElement(O.a, {
+						className: Object(h.a)(M.a.createSubmitBtn, M.a.loading),
 						sizePx: L
-					}) : d.a.createElement(_.n, {
-						className: I.a.createSubmitBtn,
+					}) : l.a.createElement(v.n, {
+						className: M.a.createSubmitBtn,
 						onClick: this.onCreateSubmit
-					}, d.a.createElement(N.c, null, "create")))) : d.a.createElement(_.n, {
-						className: I.a.listItem,
+					}, a.fbt._("create", null, {
+						hk: "1RZAAQ"
+					})))) : l.a.createElement(v.n, {
+						className: M.a.listItem,
 						onClick: this.onCreateClick
-					}, d.a.createElement(N.c, null, "+ Create a custom feed")))), d.a.createElement(f.e, null, d.a.createElement(f.o, {
-						disabled: !!n || !m.length || e,
+					}, a.fbt._("+ Create a custom feed", null, {
+						hk: "6VkVz"
+					})))), l.a.createElement(x.e, null, l.a.createElement(x.o, {
+						disabled: !!i || !u.length || e,
 						onClick: this.onSubmit
-					}, n ? d.a.createElement(v.a, {
-						className: I.a.loadingIcon,
+					}, i ? l.a.createElement(O.a, {
+						className: M.a.loadingIcon,
 						sizePx: L
-					}) : d.a.createElement(N.c, null, "Update")))))
+					}) : a.fbt._("Update", null, {
+						hk: "3LoAmq"
+					})))))
 				}
 			}
-			t.default = Object(m.a)(D(z(B)))
+			t.default = Object(u.a)(G(z(W)))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -346,8 +364,8 @@
 				i = r("./src/lib/lessComponent.tsx"),
 				o = r("./src/reddit/controls/Input/index.tsx"),
 				d = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				c = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				l = r.n(c);
+				l = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
+				c = r.n(l);
 
 			function m() {
 				return (m = Object.assign || function(e) {
@@ -367,9 +385,9 @@
 				}
 				return r
 			};
-			const h = i.a.div("icon", l.a),
-				p = i.a.textarea("textarea", l.a),
-				b = i.a.span("Invalid", l.a);
+			const h = i.a.div("icon", c.a),
+				p = i.a.textarea("textarea", c.a),
+				b = i.a.span("Invalid", c.a);
 			var f, x;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
@@ -378,25 +396,25 @@
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(x || (x = {}));
 			const C = e => s.a.createElement("div", {
-					className: Object(n.a)(e.isRequired && l.a.required, e.className, Object.assign({
-						[l.a.container]: !e.isTextarea,
-						[l.a.textareaContainer]: !!e.isTextarea
+					className: Object(n.a)(e.isRequired && c.a.required, e.className, Object.assign({
+						[c.a.container]: !e.isTextarea,
+						[c.a.textareaContainer]: !!e.isTextarea
 					}, !!e.isTextarea && {
-						[l.a.mValid]: e.state === f.Valid,
-						[l.a.mInvalid]: e.state === f.Invalid,
-						[l.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
+						[c.a.mValid]: e.state === f.Valid,
+						[c.a.mInvalid]: e.state === f.Invalid,
+						[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 					}))
 				}, s.a.createElement("label", {
 					className: Object(n.a)({
-						[l.a.field]: !e.isTextarea,
-						[l.a.textareaField]: !!e.isTextarea
+						[c.a.field]: !e.isTextarea,
+						[c.a.textareaField]: !!e.isTextarea
 					})
 				}, e.children, e.label && s.a.createElement("span", {
-					className: l.a.label
+					className: c.a.label
 				}, e.label), !!e.state && s.a.createElement(h, {
 					className: Object(n.a)({
-						[l.a.mValid]: e.state === f.Valid,
-						[l.a.mInvalid]: e.state === f.Invalid
+						[c.a.mValid]: e.state === f.Valid,
+						[c.a.mInvalid]: e.state === f.Invalid
 					})
 				}, e.state === f.Valid && s.a.createElement(d.a, null), e.state === f.Invalid && s.a.createElement(b, null, "!")))),
 				g = e => {
@@ -406,7 +424,7 @@
 						inputRef: a,
 						isRequired: i,
 						label: d,
-						onKeyDown: c,
+						onKeyDown: l,
 						state: h
 					} = e, p = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return s.a.createElement(C, {
@@ -416,12 +434,12 @@
 						label: d,
 						state: h
 					}, s.a.createElement(o.a, m({}, p, {
-						className: Object(n.a)(l.a.input, l.a.control, {
-							[l.a.hasState]: !!e.state
+						className: Object(n.a)(c.a.input, c.a.control, {
+							[c.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
 						innerRef: a,
-						onKeyDown: c
+						onKeyDown: l
 					})))
 				},
 				S = e => {
@@ -432,18 +450,18 @@
 						isRequired: i,
 						label: o,
 						onKeyDown: d,
-						state: c
+						state: l
 					} = e, h = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return s.a.createElement(C, {
 						backgroundColorState: t,
 						className: r,
 						isRequired: i,
 						label: o,
-						state: c,
+						state: l,
 						isTextarea: !0
 					}, s.a.createElement(p, m({}, h, {
 						className: Object(n.a)({
-							[l.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
+							[c.a.mWhiteField]: e.backgroundColorState === x.WhiteFields
 						}),
 						"data-empty": !e.value,
 						innerRef: a,
@@ -496,9 +514,9 @@
 			})), r.d(t, "n", (function() {
 				return d
 			})), r.d(t, "o", (function() {
-				return c
-			})), r.d(t, "m", (function() {
 				return l
+			})), r.d(t, "m", (function() {
+				return c
 			})), r.d(t, "l", (function() {
 				return m
 			})), r.d(t, "f", (function() {
@@ -520,7 +538,7 @@
 			})), r.d(t, "d", (function() {
 				return S
 			})), r.d(t, "j", (function() {
-				return y
+				return _
 			}));
 			var a = r("./src/lib/lessComponent.tsx"),
 				s = r("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -528,8 +546,8 @@
 			const i = a.a.section("FormPage", n.a),
 				o = a.a.h1("HomePageTitle", n.a),
 				d = a.a.button("HomePageBreadcrumb", n.a),
-				c = a.a.div("HomePageGroup", n.a),
-				l = a.a.h1("FormPageTitle", n.a),
+				l = a.a.div("HomePageGroup", n.a),
+				c = a.a.h1("FormPageTitle", n.a),
 				m = a.a.div("FormPageSection", n.a),
 				u = a.a.div("FormGroup", n.a),
 				h = a.a.h2("FormGroupTitle", n.a),
@@ -540,7 +558,7 @@
 				C = a.a.div("FormElementDescription", n.a),
 				g = a.a.div("FormElementError", n.a),
 				S = a.a.div("FormElementSubGroup", n.a),
-				y = a.a.li("FormListItem", n.a)
+				_ = a.a.li("FormListItem", n.a)
 		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -581,9 +599,9 @@
 				}, s.a.createElement("path", {
 					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
 				})))),
-				c = r("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = r("./src/reddit/controls/Checkbox/index.m.less"),
-				m = r.n(l);
+				l = r("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = r("./src/reddit/controls/Checkbox/index.m.less"),
+				m = r.n(c);
 
 			function u() {
 				return (u = Object.assign || function(e) {
@@ -609,16 +627,16 @@
 						disabled: a,
 						redditStyle: i,
 						"data-redditstyle": o
-					} = t, d = h(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), c = ((e, t, r) => {
+					} = t, d = h(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), l = ((e, t, r) => {
 						const a = !(!t && !r);
 						let s = "";
 						return s = e ? a ? m.a.mDisabledRedditStyle : m.a.mDisabled : a ? m.a.mActiveRedditStyle : m.a.mActive
 					})(a, i, o);
 					return s.a.createElement(e, u({
-						className: Object(n.a)(m.a.Checkbox, c, r)
+						className: Object(n.a)(m.a.Checkbox, l, r)
 					}, d))
 				},
-				b = p(c.a),
+				b = p(l.a),
 				f = p(d);
 			t.a = e => {
 				const t = e.isHalfCheckboxSelected ? f : e.isCheckboxSelected ? b : i.a;
@@ -685,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.0b011a2f41d942e79672.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.e0cde8965bc0d9df83dd.js.map

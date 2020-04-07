@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.87873e5b7d5450aeed55.js
-// Retrieved at 4/7/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.afc5016447cc9fac4400.js
+// Retrieved at 4/7/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11138,14 +11138,14 @@
 					}))
 				},
 				U = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("7bcc8f5-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("03a6926-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7bcc8f5-production",
+						release: "03a6926-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new s.Integrations.Breadcrumbs({
@@ -11507,7 +11507,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7bcc8f5-production",
+							releaseClient: "03a6926-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -20607,9 +20607,9 @@
 				return F
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.split.js"), i("./node_modules/core-js/modules/es6.regexp.replace.js");
-			var n = i("./node_modules/lodash/sortBy.js"),
-				r = i.n(n),
-				s = i("./src/app/strings/index.ts"),
+			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
+				r = i("./node_modules/lodash/sortBy.js"),
+				s = i.n(r),
 				o = i("./src/lib/constants/index.ts"),
 				d = i("./src/lib/objectSelector/index.ts"),
 				a = i("./src/reddit/models/Multireddit/index.ts"),
@@ -20623,16 +20623,16 @@
 					let {
 						listingName: i
 					} = t;
-					const n = (e => e.replace(/\++/g, "+").replace(/^\+/, "").replace(/\+$/, ""))(i.toLowerCase()).split("+"),
-						r = n.filter(e => !e.startsWith(o.Sb)).map(t => Object(m.D)(e, t)).filter(e => void 0 !== e),
-						d = n.filter(e => e.startsWith(o.Sb)).map(t => Object(c.m)(e, t.slice(2))).filter(e => void 0 !== e),
-						a = [...r.map(t => e.subreddits.models[t].name), ...d.map(t => e.profiles.models[t].name)].join(", ");
+					const r = (e => e.replace(/\++/g, "+").replace(/^\+/, "").replace(/\+$/, ""))(i.toLowerCase()).split("+"),
+						s = r.filter(e => !e.startsWith(o.Sb)).map(t => Object(m.D)(e, t)).filter(e => void 0 !== e),
+						d = r.filter(e => e.startsWith(o.Sb)).map(t => Object(c.m)(e, t.slice(2))).filter(e => void 0 !== e),
+						a = [...s.map(t => e.subreddits.models[t].name), ...d.map(t => e.profiles.models[t].name)].join(", ");
 					return {
-						displayText: Object(s.b)(Object(p.O)(e), "multireddit.adHocDescription", a.length, {
-							subreddits: a
-						}),
+						displayText: "".concat(n.fbt._("Posts from {subredditNames}", [n.fbt._param("subredditNames", a)], {
+							hk: "1YeYEE"
+						})),
 						profileIds: d,
-						subredditIds: r
+						subredditIds: s
 					}
 				}),
 				g = e => e.multireddits.api.forUser.fetched,
@@ -20686,21 +20686,20 @@
 				v = (e, t) => {
 					let {
 						multiredditName: i,
-						username: n
+						username: r
 					} = t;
-					if (!n) {
+					if (!r) {
 						const {
 							account: t
 						} = e.user;
 						if (!t) return "";
-						n = Object(l.f)(t)
+						r = Object(l.f)(t)
 					}
-					const r = Object(a.h)(n, i),
-						o = e.multireddits.models[r];
-					return o ? Object(s.a)(e.user.language, "multireddit.title", {
-						displayText: o.displayText,
-						username: n
-					}) : ""
+					const s = Object(a.h)(r, i),
+						o = e.multireddits.models[s];
+					return o ? "".concat(n.fbt._("{displayText} subreddits curated by {userpath}", [n.fbt._param("displayText", o.displayText), n.fbt._param("userpath", "u/" + r)], {
+						hk: "38iTbH"
+					})) : ""
 				},
 				T = (e, t) => e.multireddits.models[t],
 				S = Object(d.a)((e, t) => {
@@ -20708,12 +20707,12 @@
 						subredditIds: i,
 						profileIds: n
 					} = t;
-					const s = [];
+					const r = [];
 					let o = [...i && i.reduce((t, i) => {
 						const n = Object(m.P)(e, {
 							subredditId: i
 						});
-						return n ? [...t, n] : (s.push(i), t)
+						return n ? [...t, n] : (r.push(i), t)
 					}, []) || [], ...n && n.map(t => Object(c.p)(e, {
 						profileId: t
 					})) || []].filter(e => !!e).map(t => {
@@ -20725,9 +20724,9 @@
 							}
 						}), i
 					});
-					if (s) {
-						const t = s.map(t => e.subreddits.communityInfo[t]).filter(e => !!e);
-						o.push(...t), o = r()(o, e => e.name.toLowerCase())
+					if (r) {
+						const t = r.map(t => e.subreddits.communityInfo[t]).filter(e => !!e);
+						o.push(...t), o = s()(o, e => e.name.toLowerCase())
 					}
 					return o
 				}),
@@ -28455,4 +28454,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.87873e5b7d5450aeed55.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.afc5016447cc9fac4400.js.map

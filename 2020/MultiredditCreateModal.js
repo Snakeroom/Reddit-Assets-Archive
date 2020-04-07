@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.21f9b3adfeb3b9a46668.js
-// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.3ab4809a4795648884db.js
+// Retrieved at 4/7/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -15,16 +15,16 @@
 				i = r("./src/lib/classNames/index.ts"),
 				s = r("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				o = r("./src/reddit/components/CharacterCountdown/index.m.less"),
-				d = r.n(o);
+				l = r.n(o);
 			const {
-				fbt: l
+				fbt: d
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => n.a.createElement(s.b, {
-				className: Object(i.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
-			}, l._({
+				className: Object(i.a)(e.className, l.a.container, e.text.length > e.maxChars ? l.a.mOverflow : null)
+			}, d._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
-			}, [l._plural(e.maxChars - e.text.length, "characters")], {
+			}, [d._plural(e.maxChars - e.text.length, "characters")], {
 				hk: "V22sW"
 			}))
 		},
@@ -38,33 +38,33 @@
 		"./src/reddit/components/MultiredditCreateModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t);
-			var a = r("./node_modules/react/index.js"),
-				n = r.n(a),
-				i = r("./node_modules/react-redux/es/index.js"),
-				s = r("./node_modules/reselect/es/index.js"),
-				o = r("./src/higherOrderComponents/asModal/index.tsx"),
+			var a = r("./node_modules/fbt/lib/FbtPublic.js"),
+				n = r("./node_modules/react/index.js"),
+				i = r.n(n),
+				s = r("./node_modules/react-redux/es/index.js"),
+				o = r("./node_modules/reselect/es/index.js"),
+				l = r("./src/higherOrderComponents/asModal/index.tsx"),
 				d = r("./src/reddit/actions/modal.ts"),
-				l = r("./src/reddit/actions/multireddit/index.ts"),
-				c = r("./src/reddit/components/CharacterCountdown/index.tsx"),
-				m = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				u = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				p = r("./src/reddit/components/ThemeProvider/index.tsx"),
-				h = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				f = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				b = r("./src/reddit/helpers/multireddit/index.ts"),
-				C = r("./src/reddit/helpers/trackers/customFeeds.ts"),
-				g = r("./src/reddit/i18n/utils.ts"),
-				_ = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				c = r("./src/reddit/actions/multireddit/index.ts"),
+				m = r("./src/reddit/components/CharacterCountdown/index.tsx"),
+				u = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				p = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				h = r("./src/reddit/components/ThemeProvider/index.tsx"),
+				x = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				f = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				b = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				C = r("./src/reddit/helpers/multireddit/index.ts"),
+				_ = r("./src/reddit/helpers/trackers/customFeeds.ts"),
+				g = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				E = r("./src/reddit/models/Multireddit/index.ts"),
 				v = r("./src/reddit/selectors/multireddit.ts"),
 				y = r("./src/reddit/components/MultiredditCreateModal/index.m.less"),
 				F = r.n(y);
 			const S = 12,
-				j = Object(x.t)({
-					multiredditParams: x.c
+				N = Object(f.t)({
+					multiredditParams: f.c
 				}),
-				O = Object(s.c)({
+				j = Object(o.c)({
 					createError: e => e.multireddits.api.create.error,
 					createFetched: e => e.multireddits.api.create.fetched,
 					createPending: e => e.multireddits.api.create.pending,
@@ -73,18 +73,18 @@
 					duplicatePending: e => e.multireddits.api.duplicate.pending,
 					myMultireddits: v.j
 				}),
-				N = Object(i.b)(O, (e, t) => {
+				O = Object(s.b)(j, (e, t) => {
 					let {
 						multiredditParams: r
 					} = t;
 					return {
-						create: (t, r) => e(Object(l.b)({
+						create: (t, r) => e(Object(c.b)({
 							displayName: t,
 							description: r,
 							shouldNavigate: !0
 						})),
 						duplicate: (t, a) => {
-							r && e(Object(l.d)({
+							r && e(Object(c.d)({
 								fromName: r.multiredditName,
 								fromUsername: r.username,
 								displayName: t,
@@ -94,7 +94,7 @@
 						onClose: () => e(Object(d.f)())
 					}
 				});
-			class T extends n.a.Component {
+			class T extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						description: "",
@@ -109,7 +109,7 @@
 							description: e.target.value
 						})
 					}, this.checkDisplayTextValidity = () => {
-						const e = Object(b.a)({
+						const e = Object(C.a)({
 							displayText: this.state.name,
 							myMultireddits: this.props.myMultireddits,
 							thisMultireddit: null
@@ -122,7 +122,7 @@
 						const {
 							multiredditParams: e
 						} = this.props;
-						this.props.isDuplicateModal && e ? (this.props.duplicate(this.state.name.trim(), this.state.description.trim()), e.username && this.props.sendEvent(Object(C.b)(Object(E.h)(e.username, e.multiredditName)))) : this.props.create(this.state.name.trim(), this.state.description.trim())
+						this.props.isDuplicateModal && e ? (this.props.duplicate(this.state.name.trim(), this.state.description.trim()), e.username && this.props.sendEvent(Object(_.b)(Object(E.h)(e.username, e.multiredditName)))) : this.props.create(this.state.name.trim(), this.state.description.trim())
 					}
 				}
 				render() {
@@ -130,49 +130,67 @@
 						createError: e,
 						createPending: t,
 						duplicateError: r,
-						duplicatePending: a,
-						isDuplicateModal: i,
-						onClose: s
+						duplicatePending: n,
+						isDuplicateModal: s,
+						onClose: o
 					} = this.props, {
-						description: o,
+						description: l,
 						displayTextError: d,
-						name: l
-					} = this.state, h = e || r || d;
-					return n.a.createElement(p.a, {
+						name: c
+					} = this.state, x = e || r || d;
+					return i.a.createElement(h.a, {
 						forceRedditTheme: !0
-					}, n.a.createElement(m.c, null, n.a.createElement(m.g, null, n.a.createElement(_.a, null, n.a.createElement(m.n, null, i ? Object(g.c)("Duplicate This Custom Feed") : Object(g.c)("Create a Custom Feed")), n.a.createElement("button", {
-						onClick: s
-					}, n.a.createElement(m.b, null)))), n.a.createElement(m.j, null, n.a.createElement(m.f, null, n.a.createElement(u.b, {
+					}, i.a.createElement(u.c, null, i.a.createElement(u.g, null, i.a.createElement(g.a, null, i.a.createElement(u.n, null, s ? a.fbt._("Duplicate This Custom Feed", null, {
+						hk: "owR2J"
+					}) : a.fbt._("Create a Custom Feed", null, {
+						hk: "IDT2Q"
+					})), i.a.createElement("button", {
+						onClick: o
+					}, i.a.createElement(u.b, null)))), i.a.createElement(u.j, null, i.a.createElement(u.f, null, i.a.createElement(p.b, {
 						isRequired: !0,
-						label: Object(g.c)("custom feed name"),
+						label: a.fbt._("custom feed name", null, {
+							hk: "4rkm37"
+						}),
 						maxLength: E.c,
 						onBlur: this.checkDisplayTextValidity,
 						onChange: this.onNameChange,
-						state: h ? u.d.Invalid : void 0,
-						value: l
-					}), h ? n.a.createElement("p", {
+						state: x ? p.d.Invalid : void 0,
+						value: c
+					}), x ? i.a.createElement("p", {
 						className: F.a.nameError
-					}, d === E.a.SameName ? Object(g.c)("A custom feed with that name already exists.") : d === E.a.TooShort ? Object(g.c)("Name must contain at least two alphanumeric characters.") : Object(g.c)("Something went wrong.")) : n.a.createElement(c.a, {
-						text: l,
+					}, d === E.a.SameName ? a.fbt._("A custom feed with that name already exists.", null, {
+						hk: "1kacgW"
+					}) : d === E.a.TooShort ? a.fbt._("Name must contain at least two alphanumeric characters.", null, {
+						hk: "2pu0fh"
+					}) : a.fbt._("Something went wrong.", null, {
+						hk: "4lGCzV"
+					})) : i.a.createElement(m.a, {
+						text: c,
 						maxChars: E.c
-					})), n.a.createElement(m.f, null, n.a.createElement(u.c, {
+					})), i.a.createElement(u.f, null, i.a.createElement(p.c, {
 						className: F.a.descriptionTextarea,
-						label: Object(g.c)("description (optional)"),
+						label: a.fbt._("description (optional)", null, {
+							hk: "4mWEDA"
+						}),
 						maxLength: E.b,
 						onChange: this.onDescriptionChange,
-						value: o
-					}), n.a.createElement(c.a, {
-						text: o,
+						value: l
+					}), i.a.createElement(m.a, {
+						text: l,
 						maxChars: E.b
-					}))), n.a.createElement(m.e, null, n.a.createElement(m.o, {
+					}))), i.a.createElement(u.e, null, i.a.createElement(u.o, {
 						onClick: this.onSubmit
-					}, t || a ? n.a.createElement(f.a, {
+					}, t || n ? i.a.createElement(b.a, {
 						className: F.a.loadingIcon,
 						sizePx: S
-					}) : i ? Object(g.c)("Duplicate Custom Feed") : Object(g.c)("Create Custom Feed")))))
+					}) : s ? a.fbt._("Duplicate Custom Feed", null, {
+						hk: "4t4IAs"
+					}) : a.fbt._("Create Custom Feed", null, {
+						hk: "45F3LZ"
+					})))))
 				}
 			}
-			t.default = Object(o.a)(j(N(Object(h.c)(T))))
+			t.default = Object(l.a)(N(O(Object(x.c)(T))))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -200,9 +218,9 @@
 			})), r.d(t, "a", (function() {
 				return b
 			})), r.d(t, "b", (function() {
-				return g
-			})), r.d(t, "c", (function() {
 				return _
+			})), r.d(t, "c", (function() {
+				return g
 			}));
 			r("./node_modules/core-js/modules/es6.symbol.js");
 			var a = r("./node_modules/react/index.js"),
@@ -210,9 +228,9 @@
 				i = r("./src/lib/classNames/index.ts"),
 				s = r("./src/lib/lessComponent.tsx"),
 				o = r("./src/reddit/controls/Input/index.tsx"),
-				d = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				l = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				c = r.n(l);
+				l = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				d = r("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
+				c = r.n(d);
 
 			function m() {
 				return (m = Object.assign || function(e) {
@@ -263,22 +281,22 @@
 						[c.a.mValid]: e.state === f.Valid,
 						[c.a.mInvalid]: e.state === f.Invalid
 					})
-				}, e.state === f.Valid && n.a.createElement(d.a, null), e.state === f.Invalid && n.a.createElement(x, null, "!")))),
-				g = e => {
+				}, e.state === f.Valid && n.a.createElement(l.a, null), e.state === f.Invalid && n.a.createElement(x, null, "!")))),
+				_ = e => {
 					const {
 						backgroundColorState: t,
 						className: r,
 						inputRef: a,
 						isRequired: s,
-						label: d,
-						onKeyDown: l,
+						label: l,
+						onKeyDown: d,
 						state: p
 					} = e, h = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return n.a.createElement(C, {
 						backgroundColorState: t,
 						className: r,
 						isRequired: s,
-						label: d,
+						label: l,
 						state: p
 					}, n.a.createElement(o.a, m({}, h, {
 						className: Object(i.a)(c.a.input, c.a.control, {
@@ -286,25 +304,25 @@
 						}),
 						"data-empty": !e.value,
 						innerRef: a,
-						onKeyDown: l
+						onKeyDown: d
 					})))
 				},
-				_ = e => {
+				g = e => {
 					const {
 						backgroundColorState: t,
 						className: r,
 						inputRef: a,
 						isRequired: s,
 						label: o,
-						onKeyDown: d,
-						state: l
+						onKeyDown: l,
+						state: d
 					} = e, p = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return n.a.createElement(C, {
 						backgroundColorState: t,
 						className: r,
 						isRequired: s,
 						label: o,
-						state: l,
+						state: d,
 						isTextarea: !0
 					}, n.a.createElement(h, m({}, p, {
 						className: Object(i.a)({
@@ -312,7 +330,7 @@
 						}),
 						"data-empty": !e.value,
 						innerRef: a,
-						onKeyDown: d
+						onKeyDown: l
 					})))
 				}
 		},
@@ -359,9 +377,9 @@
 			})), r.d(t, "p", (function() {
 				return o
 			})), r.d(t, "n", (function() {
-				return d
-			})), r.d(t, "o", (function() {
 				return l
+			})), r.d(t, "o", (function() {
+				return d
 			})), r.d(t, "m", (function() {
 				return c
 			})), r.d(t, "l", (function() {
@@ -381,9 +399,9 @@
 			})), r.d(t, "b", (function() {
 				return C
 			})), r.d(t, "c", (function() {
-				return g
-			})), r.d(t, "d", (function() {
 				return _
+			})), r.d(t, "d", (function() {
+				return g
 			})), r.d(t, "j", (function() {
 				return E
 			}));
@@ -392,8 +410,8 @@
 				i = r.n(n);
 			const s = a.a.section("FormPage", i.a),
 				o = a.a.h1("HomePageTitle", i.a),
-				d = a.a.button("HomePageBreadcrumb", i.a),
-				l = a.a.div("HomePageGroup", i.a),
+				l = a.a.button("HomePageBreadcrumb", i.a),
+				d = a.a.div("HomePageGroup", i.a),
 				c = a.a.h1("FormPageTitle", i.a),
 				m = a.a.div("FormPageSection", i.a),
 				u = a.a.div("FormGroup", i.a),
@@ -403,8 +421,8 @@
 				f = a.a.div("FormItem", i.a),
 				b = a.a.h3("FormElementTitle", i.a),
 				C = a.a.div("FormElementDescription", i.a),
-				g = a.a.div("FormElementError", i.a),
-				_ = a.a.div("FormElementSubGroup", i.a),
+				_ = a.a.div("FormElementError", i.a),
+				g = a.a.div("FormElementSubGroup", i.a),
 				E = a.a.li("FormListItem", i.a)
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, r) {
@@ -455,4 +473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditCreateModal.21f9b3adfeb3b9a46668.js.map
+//# sourceMappingURL=MultiredditCreateModal.3ab4809a4795648884db.js.map
