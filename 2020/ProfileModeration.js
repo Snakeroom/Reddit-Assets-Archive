@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.3fbadf663a753256271f.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.4e9d3d73984d33702aed.js
+// Retrieved at 4/7/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, n) {
@@ -105,85 +105,93 @@
 		"./src/reddit/components/TabNav/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return a
+				return g
 			})), n.d(t, "a", (function() {
-				return x
+				return _
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
-			var a, r = n("./node_modules/lodash/throttle.js"),
-				o = n.n(r),
-				s = n("./node_modules/react/index.js"),
-				i = n.n(s),
-				l = n("./src/lib/classNames/index.ts"),
-				c = n("./src/lib/constants/index.ts"),
-				d = n("./src/lib/lessComponent.tsx"),
-				m = n("./src/reddit/constants/componentSizes.ts"),
-				u = n("./src/reddit/constants/zIndex.ts"),
-				p = n("./src/reddit/controls/InternalLink/index.tsx"),
-				h = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				f = n("./src/reddit/components/TabNav/index.m.less"),
-				b = n.n(f),
-				g = function(e, t) {
-					var n = {};
-					for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
-					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-						var r = 0;
-						for (a = Object.getOwnPropertySymbols(e); r < a.length; r++) t.indexOf(a[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[r]) && (n[a[r]] = e[a[r]])
+			var a = n("./node_modules/lodash/throttle.js"),
+				r = n.n(a),
+				o = n("./node_modules/react/index.js"),
+				s = n.n(o),
+				i = n("./src/lib/classNames/index.ts"),
+				l = n("./src/lib/constants/index.ts"),
+				c = n("./src/lib/lessComponent.tsx"),
+				d = n("./src/reddit/constants/componentSizes.ts"),
+				m = n("./src/reddit/constants/zIndex.ts"),
+				u = n("./src/reddit/controls/InternalLink/index.tsx"),
+				p = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				h = n("./src/reddit/components/TabNav/index.m.less"),
+				f = n.n(h);
+
+			function b() {
+				return (b = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
 					}
-					return n
-				};
+					return e
+				}).apply(this, arguments)
+			}
+			var g, y = function(e, t) {
+				var n = {};
+				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var r = 0;
+					for (a = Object.getOwnPropertySymbols(e); r < a.length; r++) t.indexOf(a[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[r]) && (n[a[r]] = e[a[r]])
+				}
+				return n
+			};
 			! function(e) {
 				e.GEAR = "gear"
-			}(a || (a = {}));
-			const y = d.a.wrapped(h.a, "Gear", b.a),
-				E = d.a.h3("Title", b.a),
-				v = d.a.div("TabNavContainer", b.a),
-				w = d.a.div("Tabs", b.a),
-				x = d.a.wrapped(e => {
+			}(g || (g = {}));
+			const E = c.a.wrapped(p.a, "Gear", f.a),
+				v = c.a.h3("Title", f.a),
+				w = c.a.div("TabNavContainer", f.a),
+				x = c.a.div("Tabs", f.a),
+				_ = c.a.wrapped(e => {
 					var {
 						active: t,
-						enabled: n,
-						innerRef: a
-					} = e, r = g(e, ["active", "enabled", "innerRef"]);
-					return i.a.createElement(p.a, {
+						children: n,
+						enabled: a
+					} = e, r = y(e, ["active", "children", "enabled"]);
+					return s.a.createElement(u.a, b({}, r, {
 						"aria-selected": t,
-						className: Object(l.a)(r.className, {
-							[b.a.mIsActive]: t,
-							[b.a.mIsEnabled]: !1 !== n
+						className: Object(i.a)(r.className, {
+							[f.a.mIsActive]: t,
+							[f.a.mIsEnabled]: !1 !== a
 						}),
-						innerRef: a,
-						role: "tab",
-						to: r.to
-					}, r.children)
-				}, "Tab", b.a),
-				_ = e => {
+						role: "tab"
+					}), n)
+				}, "Tab", f.a),
+				k = e => {
 					switch (e) {
-						case a.GEAR:
-							return i.a.createElement(y, null);
+						case g.GEAR:
+							return s.a.createElement(E, null);
 						default:
 							return null
 					}
 				},
-				k = () => window.pageYOffset || window.scrollY,
-				S = 75,
-				O = {
+				S = () => window.pageYOffset || window.scrollY,
+				O = 75,
+				j = {
 					paddingLeft: 15,
 					left: 0,
 					position: "fixed",
 					right: 0,
-					top: m.f,
+					top: d.f,
 					willChange: "transform",
-					zIndex: u.g
+					zIndex: m.g
 				};
-			class j extends i.a.Component {
+			class C extends s.a.Component {
 				constructor(e) {
-					super(e), this.toggleSticky = o()(() => {
-						this.state.sticky || this.forceUnsticky ? k() < S && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
+					super(e), this.toggleSticky = r()(() => {
+						this.state.sticky || this.forceUnsticky ? S() < O && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
 							sticky: !1
-						}, () => this.forceUnsticky = !1)) : k() >= S && this.setState({
+						}, () => this.forceUnsticky = !1)) : S() >= O && this.setState({
 							sticky: !0
 						})
-					}, c.F), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, l.F), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -196,28 +204,30 @@
 				render() {
 					const {
 						innerRef: e,
-						isResponsiveSettingsEnabled: t
-					} = this.props, n = Object(l.a)({
-						[b.a.mResponsive]: t
+						isResponsiveSettingsEnabled: t,
+						onTouchMove: n
+					} = this.props, a = Object(i.a)({
+						[f.a.mResponsive]: t
 					});
-					return i.a.createElement(v, {
-						className: Object(l.a)(n, this.props.className),
-						innerRef: e
-					}, i.a.createElement(E, {
-						className: Object(l.a)(n, {
-							[b.a.mConstrainWidth]: !!this.props.constrainWidth
+					return s.a.createElement(w, {
+						className: Object(i.a)(a, this.props.className),
+						innerRef: e,
+						onTouchMove: n
+					}, s.a.createElement(v, {
+						className: Object(i.a)(a, {
+							[f.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, _(this.props.icon), this.props.title), i.a.createElement(w, {
-						className: Object(l.a)(n, {
-							[b.a.mConstrainWidth]: !!this.props.constrainWidth
+					}, k(this.props.icon), this.props.title), s.a.createElement(x, {
+						className: Object(i.a)(a, {
+							[f.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
 						role: "tablist",
 						innerRef: e => this.wrapperRef = e,
-						style: this.props.isCategoryPage && this.state.sticky && !this.forceUnsticky ? O : void 0
+						style: this.props.isCategoryPage && this.state.sticky && !this.forceUnsticky ? j : void 0
 					}, this.props.children))
 				}
 			}
-			t.c = j
+			t.c = C
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
 			"use strict";
@@ -432,4 +442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.3fbadf663a753256271f.js.map
+//# sourceMappingURL=ProfileModeration.4e9d3d73984d33702aed.js.map
