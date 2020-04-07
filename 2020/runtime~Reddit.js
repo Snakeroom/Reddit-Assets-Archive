@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2554e51d98713bb634fd.js
-// Retrieved at 4/7/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.bffe27a51264c8213dcc.js
+// Retrieved at 4/7/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -626,7 +626,7 @@
 					RichTextEditor: "9c2973cdf21f53d1282c",
 					EconomicsEntryPointsCommentFlatlistSupportCTA: "f4bcb03e2a7e969547b8",
 					EconomicsEntryPointsPostFlatlistSupportCTA: "9f09baced67abb411045",
-					LiveVideoPlayer: "7d9b3d77e6e38158a6e6",
+					LiveVideoPlayer: "fc6c6fa77dfd41a76e9d",
 					AwardCreationModal: "0e26a3f3beee31e231cd",
 					"reddit-components-ModHub-Content-ModQueue": "31d6cfe0d16ae931b73c",
 					"reddit-components-Wiki-ModHubWikiManagement": "5ffe599ffcea5b2007c6",
@@ -916,7 +916,7 @@
 						FrontpageSidebar: "30346e1d99ed1a1af1cb",
 						Frontpage: "d38692864a9d4bf99853",
 						Topic: "9044f87b7d4a1f8b97e1",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "624fae2242174ac8a244",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "3b2c9b2217f6f35e8781",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "37b7e90ac6307e3bc0af",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "b0fea5f5851bb13f0811",
 						PostDraft: "cdb349f8e523cd1a55f7",
@@ -1094,7 +1094,7 @@
 						RichTextEditor: "672accd2402277f8110b",
 						EconomicsEntryPointsCommentFlatlistSupportCTA: "315926d091c014aa9a76",
 						EconomicsEntryPointsPostFlatlistSupportCTA: "261e6a2bead2ebdecad1",
-						LiveVideoPlayer: "1080ae78ed0bd90c6214",
+						LiveVideoPlayer: "16a44207f50da6df1d0a",
 						AwardCreationModal: "4cdc36f48d861687b4fa",
 						"reddit-components-ModHub-Content-ModQueue": "5a93e677ed588e7fbb35",
 						"reddit-components-Wiki-ModHubWikiManagement": "e82c50ccb838a55e93e9",
@@ -1184,4 +1184,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.2554e51d98713bb634fd.js.map
+//# sourceMappingURL=runtime~Reddit.bffe27a51264c8213dcc.js.map
