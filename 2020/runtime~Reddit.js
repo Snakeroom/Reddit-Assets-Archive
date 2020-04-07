@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.b67d56d0f2951e23dd92.js
-// Retrieved at 4/6/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.1294d50b5e9ec012cd28.js
+// Retrieved at 4/7/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -457,7 +457,7 @@
 					CryptoHarbergerTaxPurchaseModal: "72945a2451352eb64476",
 					EmailCollectionBanner: "cd704cc28a1ed245639d",
 					EmailVerificationModals: "13a96ba76a548204db11",
-					"FramedGild~GildModal": "a57d1d704ae1349f39fa",
+					"FramedGild~GildModal": "f499cd9ea71ec8cc59c1",
 					FramedGild: "68c91f1cf4c6b3e24284",
 					FrontpageLinks: "31d6cfe0d16ae931b73c",
 					GlobalModalContainer: "628b38e921c8b49c3da6",
@@ -916,7 +916,7 @@
 						FrontpageSidebar: "30346e1d99ed1a1af1cb",
 						Frontpage: "d38692864a9d4bf99853",
 						Topic: "9044f87b7d4a1f8b97e1",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "4a199e18dc64fd59ad65",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "9cf02297ae5e853304f1",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "37b7e90ac6307e3bc0af",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "b0fea5f5851bb13f0811",
 						PostDraft: "cdb349f8e523cd1a55f7",
@@ -925,7 +925,7 @@
 						CryptoHarbergerTaxPurchaseModal: "12f640c2155172043996",
 						EmailCollectionBanner: "fc072810a62eff07e4d0",
 						EmailVerificationModals: "eb679fd508dae1dbd6c9",
-						"FramedGild~GildModal": "421abc854903cfc15fba",
+						"FramedGild~GildModal": "3e2dde01efc5e3f5c092",
 						FramedGild: "e72a4d523f744f6f55e3",
 						FrontpageLinks: "f253d7b63939f31b1823",
 						GlobalModalContainer: "4753eb57d3f490f01bae",
@@ -1184,4 +1184,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.b67d56d0f2951e23dd92.js.map
+//# sourceMappingURL=runtime~Reddit.1294d50b5e9ec012cd28.js.map
