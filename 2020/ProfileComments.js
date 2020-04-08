@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.92ed29f16e2e5c4a0a59.js
-// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.a170e77b8b618007c4c8.js
+// Retrieved at 4/8/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
+	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
 			e.exports = function(e, t, s) {
 				var n;
@@ -2229,6 +2229,7 @@
 		},
 		"./src/reddit/components/ContentGate/index.tsx": function(e, t, s) {
 			"use strict";
+			s.r(t);
 			var n = s("./src/config.ts"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -2553,7 +2554,7 @@
 						}))))
 				}
 			};
-			t.a = ce(de(Object(i.i)(e => r.a.createElement(W, null, r.a.createElement("div", null, r.a.createElement(re, null, le(e))), r.a.createElement(O, null)))))
+			t.default = ce(de(Object(i.i)(e => r.a.createElement(W, null, r.a.createElement("div", null, r.a.createElement(re, null, le(e))), r.a.createElement(O, null)))))
 		},
 		"./src/reddit/components/CountrySort/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -10260,20 +10261,20 @@
 					timeSort: v
 				} = e;
 				if (!p || !m) return null;
-				if (t && t.profileDeleted) return a.a.createElement(b.a, {
+				if (t && t.profileDeleted) return a.a.createElement(b.default, {
 					contentGateType: be.a.ProfileDeleted,
 					profileName: p
 				});
-				if (t && t.profileSuspended) return a.a.createElement(b.a, {
+				if (t && t.profileSuspended) return a.a.createElement(b.default, {
 					contentGateType: be.a.ProfileSuspended,
 					profileName: p
 				});
-				if (451 === m.status || t && t.profileBlockedForLegalReason) return a.a.createElement(b.a, {
+				if (451 === m.status || t && t.profileBlockedForLegalReason) return a.a.createElement(b.default, {
 					contentGateType: be.a.ProfileBlockedForLegalReason,
 					profileName: p
 				});
 				if (403 === m.status) return a.a.createElement(he.a, null);
-				if (404 === m.status) return a.a.createElement(b.a, {
+				if (404 === m.status) return a.a.createElement(b.default, {
 					contentGateType: be.a.ProfileDoesNotExist,
 					profileName: p
 				});
@@ -10283,7 +10284,7 @@
 						listingKey: i,
 						listingName: y
 					};
-				if (!s && r && !o) return a.a.createElement(b.a, {
+				if (!s && r && !o) return a.a.createElement(b.default, {
 					contentGateType: be.a.Nsfw,
 					subredditName: p
 				});
@@ -10362,4 +10363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.92ed29f16e2e5c4a0a59.js.map
+//# sourceMappingURL=ProfileComments.a170e77b8b618007c4c8.js.map

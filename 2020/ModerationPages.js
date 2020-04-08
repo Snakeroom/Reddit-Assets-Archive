@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4450201bc434e18e79b1.js
-// Retrieved at 4/8/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3e809913f998a2b84a25.js
+// Retrieved at 4/8/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
+	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
 			var n = s("./node_modules/lodash/_baseEach.js");
 			e.exports = function(e, t) {
@@ -7809,6 +7809,7 @@
 		},
 		"./src/reddit/components/ContentGate/index.tsx": function(e, t, s) {
 			"use strict";
+			s.r(t);
 			var n = s("./src/config.ts"),
 				o = s("./node_modules/react/index.js"),
 				a = s.n(o),
@@ -8133,7 +8134,7 @@
 						}))))
 				}
 			};
-			t.a = de(ce(Object(i.i)(e => a.a.createElement(H, null, a.a.createElement("div", null, a.a.createElement(ae, null, le(e))), a.a.createElement(C, null)))))
+			t.default = de(ce(Object(i.i)(e => a.a.createElement(H, null, a.a.createElement("div", null, a.a.createElement(ae, null, le(e))), a.a.createElement(C, null)))))
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -27499,7 +27500,7 @@
 					} = this;
 					if (!e.subreddit) {
 						const t = Object(_.a)(e.contentGateInfo, e.renderNSFWContentGate, e.match.params.subredditName);
-						return t ? r.a.createElement(u.a, t) : null
+						return t ? r.a.createElement(u.default, t) : null
 					}
 					const t = !!e.moderatorPermissions;
 					return r.a.createElement(Ke, null, r.a.createElement(Qe, null, r.a.createElement(Ze, {
@@ -28489,4 +28490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.4450201bc434e18e79b1.js.map
+//# sourceMappingURL=ModerationPages.3e809913f998a2b84a25.js.map
