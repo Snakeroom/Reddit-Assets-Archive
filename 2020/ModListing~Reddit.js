@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.cd0cd02646f505bc1757.js
-// Retrieved at 4/8/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.3e93c39304b84cae652a.js
+// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1110,7 +1110,7 @@
 				_ = Object(i.b)(C);
 			t.b = _(e => {
 				let t, n, s, i = r.fbt._("Subreddit Icon", null, {
-					hk: "4jCo8s"
+					hk: "134aM1"
 				});
 				if (e.isSubredditImageAltTextVariant && e.altText && (i = e.altText), e.subredditOrProfile) {
 					const {
@@ -3350,4 +3350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.cd0cd02646f505bc1757.js.map
+//# sourceMappingURL=ModListing~Reddit.3e93c39304b84cae652a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GlobalModalContainer.4753eb57d3f490f01bae.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GlobalModalContainer.75c47541943f4d6427e8.js
+// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GlobalModalContainer"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -15,30 +15,30 @@
 		},
 		"./src/reddit/components/ConfirmModal/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				o = n.n(a),
+			var o = n("./node_modules/react/index.js"),
+				a = n.n(o),
 				s = n("./src/higherOrderComponents/asModal/index.tsx"),
-				c = n("./src/reddit/controls/Button/index.tsx"),
-				l = n("./src/reddit/components/ConfirmModal/index.m.less"),
-				r = n.n(l),
+				l = n("./src/reddit/controls/Button/index.tsx"),
+				c = n("./src/reddit/components/ConfirmModal/index.m.less"),
+				r = n.n(c),
 				i = n("./src/reddit/components/ModalStyledComponents/index.tsx");
-			t.a = Object(s.a)(e => o.a.createElement("div", {
+			t.a = Object(s.a)(e => a.a.createElement("div", {
 				className: r.a.container
-			}, o.a.createElement("button", {
+			}, a.a.createElement("button", {
 				onClick: () => e.onClose ? e.onClose() : e.onCancel(),
 				className: r.a.close
-			}, o.a.createElement(i.b, null)), o.a.createElement(i.g, null, o.a.createElement("h2", {
+			}, a.a.createElement(i.b, null)), a.a.createElement(i.g, null, a.a.createElement("h2", {
 				className: r.a.headerText
-			}, e.headerText)), o.a.createElement(i.j, null, e.message && o.a.createElement("p", {
+			}, e.headerText)), a.a.createElement(i.j, null, e.message && a.a.createElement("p", {
 				className: r.a.text
-			}, e.message), e.children && o.a.createElement("div", {
+			}, e.message), e.children && a.a.createElement("div", {
 				className: r.a.text
-			}, e.children), o.a.createElement("div", {
+			}, e.children), a.a.createElement("div", {
 				className: r.a.buttonWrapper
-			}, e.cancelText && o.a.createElement(c.i, {
+			}, e.cancelText && a.a.createElement(l.i, {
 				className: r.a.secondaryButton,
 				onClick: e.onCancel
-			}, e.cancelText), o.a.createElement(c.f, {
+			}, e.cancelText), a.a.createElement(l.f, {
 				className: r.a.primaryButton,
 				onClick: e.onAccept
 			}, e.acceptText)))))
@@ -46,30 +46,39 @@
 		"./src/reddit/components/ProfilePinnedPosts/PinnedPostsLimitReachedModal/_PinnedPostsLimitReachedModal.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			var a = n("./node_modules/react/index.js"),
-				o = n.n(a),
-				s = n("./node_modules/react-redux/es/index.js"),
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				l = n("./node_modules/react-redux/es/index.js"),
 				c = n("./src/lib/constants/index.ts"),
-				l = n("./src/reddit/actions/modal.ts"),
-				r = n("./src/reddit/components/ConfirmModal/index.tsx"),
-				i = n("./src/reddit/i18n/utils.ts");
+				r = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/components/ConfirmModal/index.tsx");
 			const d = {
-					closeModal: l.f
+					closeModal: r.f
 				},
-				m = Object(s.b)(null, d);
+				m = Object(l.b)(null, d);
 			t.default = m(e => {
 				let {
 					closeModal: t
 				} = e;
-				return o.a.createElement(r.a, {
+				return s.a.createElement(i.a, {
 					onCancel: t,
 					onAccept: t,
-					acceptText: Object(i.c)("Ok, I got it"),
-					headerText: Object(i.c)("You've reached your pinning limit."),
-					message: Object(i.c)("You can only pin ".concat(Object(i.b)("maximumPinnedPosts", c.U), " posts to the top of your profile. ") + "To pin something new, please unpin a post first.  ")
+					acceptText: o.fbt._("Ok, I got it", null, {
+						hk: "3rQKHA"
+					}),
+					headerText: o.fbt._("You've reached your pinning limit.", null, {
+						hk: "wfMMg"
+					}),
+					message: o.fbt._({
+						"*": "You can only pin {number} posts to the top of your profile. To pin something new, please unpin a post first.",
+						_1: "You can only pin 1 post to the top of your profile. To pin something new, please unpin a post first."
+					}, [o.fbt._plural(c.U, "number")], {
+						hk: "3OxzcA"
+					})
 				})
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=GlobalModalContainer.4753eb57d3f490f01bae.js.map
+//# sourceMappingURL=GlobalModalContainer.75c47541943f4d6427e8.js.map

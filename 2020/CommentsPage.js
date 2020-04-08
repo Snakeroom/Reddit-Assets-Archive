@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e28dc559efd9223274f6.js
-// Retrieved at 4/8/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b89d7a67562ad72d9758.js
+// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11141,8 +11141,10 @@
 					target: "_blank",
 					rel: "noopener"
 				}, e.text))),
-				R = s("./src/lib/constants/index.ts"),
-				F = s("./src/reddit/i18n/components.tsx");
+				R = s("./src/lib/constants/index.ts");
+			const {
+				fbt: F
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const A = Object(d.t)(),
 				B = [R.zb.SUBREDDIT, R.zb.COMMENTS, R.zb.COLLECTION_COMMENTS],
 				D = Object(i.c)({
@@ -11169,7 +11171,9 @@
 						onClick: e => {
 							s && (e.preventDefault(), i())
 						}
-					}, o.a.createElement(F.c, null, "Posts"))
+					}, F._("Posts", null, {
+						hk: "36nXSp"
+					}))
 				}))),
 				H = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				V = s("./src/higherOrderComponents/makeAsync.tsx");
@@ -16142,4 +16146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.e28dc559efd9223274f6.js.map
+//# sourceMappingURL=CommentsPage.b89d7a67562ad72d9758.js.map

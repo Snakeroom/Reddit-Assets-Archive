@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a126004b3db539e81459.js
-// Retrieved at 4/8/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.229b3875817ec879fd3c.js
+// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -17847,7 +17847,7 @@
 				S = Object(i.b)(j);
 			t.b = S(e => {
 				let t, n, o, i = s.fbt._("Subreddit Icon", null, {
-					hk: "4jCo8s"
+					hk: "134aM1"
 				});
 				if (e.isSubredditImageAltTextVariant && e.altText && (i = e.altText), e.subredditOrProfile) {
 					const {
@@ -30711,4 +30711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.a126004b3db539e81459.js.map
+//# sourceMappingURL=PostCreation.229b3875817ec879fd3c.js.map
