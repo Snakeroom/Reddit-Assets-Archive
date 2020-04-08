@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cd9f468a399fae83c821.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8da0998365f1a252575a.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5533,12 +5533,12 @@
 		},
 		"./src/reddit/components/CommentsLink/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				a = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				a = s.n(o),
+				r = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				d = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/lib/classNames/index.ts"),
 				l = s("./src/lib/permalinkToOverlayLocation/index.ts"),
 				m = s("./src/lib/prettyPrintNumber/index.ts"),
@@ -5552,31 +5552,32 @@
 				E = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/reddit/components/CommentsLink/index.m.less"),
 				C = s.n(v);
-			const O = Object(a.b)(() => Object(i.c)({
+			const O = Object(r.b)(() => Object(d.c)({
 					isChatPostExperiment: g.d,
 					isPostSEOEligible: x.f,
-					language: E.O,
 					postPermalink: f.L,
 					shouldOpenPostInNewTab: E.S
 				})),
 				_ = e => {
 					let t, {
 						type: s,
-						numComments: a,
-						isChatPostExperiment: r,
-						language: i,
-						modModeEnabled: c,
-						hasModPostPerms: l,
-						shouldShowIcon: u,
-						shouldShowText: b,
-						text: g
+						numComments: r,
+						isChatPostExperiment: i,
+						modModeEnabled: d,
+						hasModPostPerms: c,
+						shouldShowIcon: l,
+						shouldShowText: u,
+						text: b
 					} = e;
-					return t = g || (s === p.g.Compact || c && l || r ? Object(m.b)(a) : 0 === a ? Object(d.a)(i, "posts.comment.verb") : Object(d.b)(i, "posts.comments.noun", a, {
-						count: Object(m.b)(a)
-					})), o.a.createElement(n.Fragment, null, u && o.a.createElement(h.a, {
+					return t = b || (s === p.g.Compact || d && c || i ? Object(m.b)(r) : n.fbt._({
+						"*": "{number} comments",
+						_1: "1 comment"
+					}, [n.fbt._plural(r, "number", Object(m.b)(r))], {
+						hk: "1QeOde"
+					})), a.a.createElement(o.Fragment, null, l && a.a.createElement(h.a, {
 						className: C.a.commentIcon,
 						role: "presentation"
-					}), b && o.a.createElement("span", {
+					}), u && a.a.createElement("span", {
 						className: C.a.text
 					}, t))
 				};
@@ -5585,43 +5586,41 @@
 					className: t,
 					hasModPostPerms: s,
 					isChatPostExperiment: n,
-					isCommentPermalink: a,
-					isCommentsPage: i,
+					isCommentPermalink: o,
+					isCommentsPage: r,
 					isOverlay: d,
 					isPostSEOEligible: m,
-					language: p,
-					modModeEnabled: h,
-					numComments: g,
-					onClick: x,
-					postPermalink: f,
-					shouldOpenPostInNewTab: E,
-					shouldShowIcon: v = !0,
-					shouldShowText: O = !0,
-					text: k,
-					type: j
-				} = e, y = i && !a && !m, w = a && !d, S = o.a.createElement(_, {
-					type: j,
-					numComments: g,
+					modModeEnabled: p,
+					numComments: h,
+					onClick: g,
+					postPermalink: x,
+					shouldOpenPostInNewTab: f,
+					shouldShowIcon: E = !0,
+					shouldShowText: v = !0,
+					text: O,
+					type: k
+				} = e, j = r && !o && !m, y = o && !d, w = a.a.createElement(_, {
+					type: k,
+					numComments: h,
 					isChatPostExperiment: n,
-					language: p,
-					modModeEnabled: h,
+					modModeEnabled: p,
 					hasModPostPerms: s,
-					shouldShowIcon: v,
-					shouldShowText: O,
-					text: k
+					shouldShowIcon: E,
+					shouldShowText: v,
+					text: O
 				});
-				return y ? o.a.createElement("div", {
+				return j ? a.a.createElement("div", {
 					className: Object(c.a)(C.a.commentsLink, C.a.defaultCursorWrapper, t),
-					onClick: x
-				}, S) : o.a.createElement(r.a, {
+					onClick: g
+				}, w) : a.a.createElement(i.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": u.a,
 					className: Object(c.a)(C.a.commentsLink, C.a.link, t),
-					target: E ? "_blank" : void 0,
-					to: w ? Object(b.b)(f) : Object(l.a)(f, !0),
-					onClick: x
-				}, S)
+					target: f ? "_blank" : void 0,
+					to: y ? Object(b.b)(x) : Object(l.a)(x, !0),
+					onClick: g
+				}, w)
 			})
 		},
 		"./src/reddit/components/CommunityAwardList/AwardRow/index.m.less": function(e, t, s) {
@@ -16418,11 +16417,11 @@
 			const R = e => o.a.createElement("span", M({
 					className: N.a.removalReason
 				}, e), e.children),
-				L = Object(c.d)("posts.archived"),
-				F = Object(c.d)("modTools.commentsLocked"),
-				A = Object(c.d)("modTools.moderatorOf"),
-				D = Object(c.d)("modTools.stickiedPost"),
-				B = Object(c.d)("modTools.pinnedPost"),
+				L = Object(c.c)("posts.archived"),
+				F = Object(c.c)("modTools.commentsLocked"),
+				A = Object(c.c)("modTools.moderatorOf"),
+				D = Object(c.c)("modTools.stickiedPost"),
+				B = Object(c.c)("modTools.pinnedPost"),
 				U = (e, t, s) => {
 					const n = "PostBadges--".concat(e, "--").concat(t);
 					return s ? "".concat(n, "--").concat(s) : n
@@ -28424,4 +28423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.cd9f468a399fae83c821.js.map
+//# sourceMappingURL=ModerationPages.8da0998365f1a252575a.js.map

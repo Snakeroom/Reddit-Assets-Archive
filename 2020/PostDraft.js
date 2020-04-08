@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.cdb349f8e523cd1a55f7.js
-// Retrieved at 4/6/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.ddf3cb072632b82ed4aa.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -473,10 +473,10 @@
 			var c = n("./src/reddit/components/PostingSidebar/PolicyRow/index.m.less"),
 				m = n.n(c),
 				u = n("./src/lib/lessComponent.tsx");
-			const p = Object(o.d)("postCreation.contentPolicy"),
-				h = Object(o.d)("postCreation.pleaseBeMindful"),
-				b = Object(o.d)("postCreation.practiceReddiquette"),
-				x = Object(o.d)("postCreation.reddiquette"),
+			const p = Object(o.c)("postCreation.contentPolicy"),
+				h = Object(o.c)("postCreation.pleaseBeMindful"),
+				b = Object(o.c)("postCreation.practiceReddiquette"),
+				x = Object(o.c)("postCreation.reddiquette"),
 				f = u.a.div("PolicyRow", m.a);
 			t.a = e => r.a.createElement(f, null, h(e.language), " ", r.a.createElement("a", {
 				href: d
@@ -510,8 +510,8 @@
 				c = n("./src/reddit/components/PostingSidebar/PostingReddiquette/index.m.less"),
 				m = n.n(c),
 				u = n("./src/lib/lessComponent.tsx");
-			const p = Object(a.d)("postingReddiquette.title"),
-				h = Object(a.d)("postingReddiquette.crosspostTitle"),
+			const p = Object(a.c)("postingReddiquette.title"),
+				h = Object(a.c)("postingReddiquette.crosspostTitle"),
 				b = u.a.wrapped(e => r.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -703,8 +703,8 @@
 				})))), "Snoo", m.a),
 				x = u.a.li("Li", m.a),
 				f = u.a.ol("Ol", m.a),
-				g = ["postingReddiquette.rememberTheHuman", "postingReddiquette.behaveLikeYouWouldInReal", "postingReddiquette.lookForOriginalSource", "postingReddiquette.searchForDuplicates", "postingReddiquette.readCommunityRules"].map(a.d),
-				v = [...g, Object(a.d)("postingReddiquette.mustBeSubscribedToCrosspost")],
+				g = ["postingReddiquette.rememberTheHuman", "postingReddiquette.behaveLikeYouWouldInReal", "postingReddiquette.lookForOriginalSource", "postingReddiquette.searchForDuplicates", "postingReddiquette.readCommunityRules"].map(a.c),
+				v = [...g, Object(a.c)("postingReddiquette.mustBeSubscribedToCrosspost")],
 				y = u.a.div("Title", m.a),
 				w = Object(i.c)({
 					submissionType: l.ab
@@ -2071,4 +2071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.cdb349f8e523cd1a55f7.js.map
+//# sourceMappingURL=PostDraft.ddf3cb072632b82ed4aa.js.map

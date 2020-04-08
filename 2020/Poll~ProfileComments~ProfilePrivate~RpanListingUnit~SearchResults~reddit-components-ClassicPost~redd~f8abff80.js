@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.ce72012bfd65bacdd717.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.1d37f473ad686923495a.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -607,12 +607,12 @@
 		},
 		"./src/reddit/components/CommentsLink/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/lib/classNames/index.ts"),
 				l = s("./src/lib/permalinkToOverlayLocation/index.ts"),
 				p = s("./src/lib/prettyPrintNumber/index.ts"),
@@ -626,31 +626,32 @@
 				O = s("./src/reddit/selectors/user.ts"),
 				v = s("./src/reddit/components/CommentsLink/index.m.less"),
 				_ = s.n(v);
-			const C = Object(r.b)(() => Object(a.c)({
+			const C = Object(i.b)(() => Object(c.c)({
 					isChatPostExperiment: x.d,
 					isPostSEOEligible: f.f,
-					language: O.O,
 					postPermalink: g.L,
 					shouldOpenPostInNewTab: O.S
 				})),
 				E = e => {
 					let t, {
 						type: s,
-						numComments: r,
-						isChatPostExperiment: i,
-						language: a,
-						modModeEnabled: d,
-						hasModPostPerms: l,
-						shouldShowIcon: m,
-						shouldShowText: h,
-						text: x
+						numComments: i,
+						isChatPostExperiment: a,
+						modModeEnabled: c,
+						hasModPostPerms: d,
+						shouldShowIcon: l,
+						shouldShowText: m,
+						text: h
 					} = e;
-					return t = x || (s === u.g.Compact || d && l || i ? Object(p.b)(r) : 0 === r ? Object(c.a)(a, "posts.comment.verb") : Object(c.b)(a, "posts.comments.noun", r, {
-						count: Object(p.b)(r)
-					})), o.a.createElement(n.Fragment, null, m && o.a.createElement(b.a, {
+					return t = h || (s === u.g.Compact || c && d || a ? Object(p.b)(i) : n.fbt._({
+						"*": "{number} comments",
+						_1: "1 comment"
+					}, [n.fbt._plural(i, "number", Object(p.b)(i))], {
+						hk: "1QeOde"
+					})), r.a.createElement(o.Fragment, null, l && r.a.createElement(b.a, {
 						className: _.a.commentIcon,
 						role: "presentation"
-					}), h && o.a.createElement("span", {
+					}), m && r.a.createElement("span", {
 						className: _.a.text
 					}, t))
 				};
@@ -659,43 +660,41 @@
 					className: t,
 					hasModPostPerms: s,
 					isChatPostExperiment: n,
-					isCommentPermalink: r,
-					isCommentsPage: a,
+					isCommentPermalink: o,
+					isCommentsPage: i,
 					isOverlay: c,
 					isPostSEOEligible: p,
-					language: u,
-					modModeEnabled: b,
-					numComments: x,
-					onClick: f,
-					postPermalink: g,
-					shouldOpenPostInNewTab: O,
-					shouldShowIcon: v = !0,
-					shouldShowText: C = !0,
-					text: j,
-					type: k
-				} = e, P = a && !r && !p, y = r && !c, w = o.a.createElement(E, {
-					type: k,
-					numComments: x,
+					modModeEnabled: u,
+					numComments: b,
+					onClick: x,
+					postPermalink: f,
+					shouldOpenPostInNewTab: g,
+					shouldShowIcon: O = !0,
+					shouldShowText: v = !0,
+					text: C,
+					type: j
+				} = e, k = i && !o && !p, P = o && !c, y = r.a.createElement(E, {
+					type: j,
+					numComments: b,
 					isChatPostExperiment: n,
-					language: u,
-					modModeEnabled: b,
+					modModeEnabled: u,
 					hasModPostPerms: s,
-					shouldShowIcon: v,
-					shouldShowText: C,
-					text: j
+					shouldShowIcon: O,
+					shouldShowText: v,
+					text: C
 				});
-				return P ? o.a.createElement("div", {
+				return k ? r.a.createElement("div", {
 					className: Object(d.a)(_.a.commentsLink, _.a.defaultCursorWrapper, t),
-					onClick: f
-				}, w) : o.a.createElement(i.a, {
+					onClick: x
+				}, y) : r.a.createElement(a.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": m.a,
 					className: Object(d.a)(_.a.commentsLink, _.a.link, t),
-					target: O ? "_blank" : void 0,
-					to: y ? Object(h.b)(g) : Object(l.a)(g, !0),
-					onClick: f
-				}, w)
+					target: g ? "_blank" : void 0,
+					to: P ? Object(h.b)(f) : Object(l.a)(f, !0),
+					onClick: x
+				}, y)
 			})
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
@@ -4055,4 +4054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.ce72012bfd65bacdd717.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.1d37f473ad686923495a.js.map

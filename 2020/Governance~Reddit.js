@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3e01d1d7dc172e58a476.js
-// Retrieved at 4/8/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.690dcea469bbfd96c398.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -11891,73 +11891,73 @@
 		"./src/reddit/actions/preferences.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return x
+				return N
 			})), n.d(t, "h", (function() {
-				return k
+				return x
 			})), n.d(t, "g", (function() {
-				return L
+				return k
 			})), n.d(t, "o", (function() {
-				return U
+				return L
 			})), n.d(t, "e", (function() {
-				return M
+				return U
 			})), n.d(t, "d", (function() {
-				return F
+				return M
 			})), n.d(t, "l", (function() {
-				return G
+				return F
 			})), n.d(t, "f", (function() {
-				return B
+				return G
 			})), n.d(t, "n", (function() {
-				return q
+				return B
 			})), n.d(t, "q", (function() {
-				return V
+				return q
 			})), n.d(t, "s", (function() {
-				return z
+				return W
 			})), n.d(t, "c", (function() {
-				return Z
+				return X
 			})), n.d(t, "u", (function() {
-				return $
+				return Z
 			})), n.d(t, "v", (function() {
-				return ee
+				return $
 			})), n.d(t, "t", (function() {
-				return te
+				return ee
 			})), n.d(t, "w", (function() {
-				return ne
+				return te
 			})), n.d(t, "D", (function() {
-				return se
+				return ne
 			})), n.d(t, "B", (function() {
-				return re
+				return se
 			})), n.d(t, "a", (function() {
-				return oe
+				return re
 			})), n.d(t, "p", (function() {
-				return ce
+				return oe
 			})), n.d(t, "C", (function() {
-				return ue
+				return de
 			})), n.d(t, "F", (function() {
-				return le
+				return ue
 			})), n.d(t, "i", (function() {
-				return be
+				return le
 			})), n.d(t, "k", (function() {
-				return me
+				return Oe
 			})), n.d(t, "j", (function() {
-				return _e
+				return ge
 			})), n.d(t, "x", (function() {
-				return je
+				return ye
 			})), n.d(t, "A", (function() {
-				return he
+				return je
 			})), n.d(t, "r", (function() {
-				return Ee
+				return he
 			})), n.d(t, "z", (function() {
-				return Ie
+				return Ee
 			})), n.d(t, "y", (function() {
-				return Se
+				return Ie
 			})), n.d(t, "m", (function() {
-				return ve
+				return Se
 			})), n.d(t, "E", (function() {
-				return Ce
+				return De
 			})), n.d(t, "H", (function() {
-				return Ae
+				return Ce
 			})), n.d(t, "G", (function() {
-				return we
+				return Ae
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var s = n("./node_modules/Base64/base64.js"),
@@ -11971,142 +11971,141 @@
 				l = n.n(u),
 				b = n("./node_modules/lodash/pick.js"),
 				p = n.n(b),
-				f = n("./src/app/strings/index.ts"),
-				O = n("./src/lib/constants/index.ts"),
-				m = n("./src/lib/makeActionCreator/index.ts"),
-				g = n("./src/reddit/actions/chat/toggle.ts"),
-				_ = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				y = n("./src/reddit/actions/users.ts"),
-				j = n("./src/reddit/constants/cookie.ts"),
-				h = n("./src/reddit/endpoints/user/preferences.ts"),
-				E = n("./src/reddit/endpoints/moderator/structuredStyles.ts"),
-				I = n("./src/lib/makeApiRequest/index.ts"),
-				S = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				v = n("./src/reddit/actions/toaster.ts"),
-				T = n("./src/reddit/constants/preferences.ts"),
-				D = n("./src/reddit/endpoints/subreddit/settings.ts"),
-				C = n("./src/reddit/helpers/trackers/profileSettings.ts"),
-				A = n("./src/reddit/models/Toast/index.ts"),
-				w = n("./src/reddit/models/User/index.ts"),
-				R = n("./src/reddit/selectors/structuredStyles.ts"),
-				P = n("./src/reddit/selectors/subreddit.ts"),
-				N = n("./src/reddit/selectors/user.ts");
-			const x = "PREFERENCES__AUTOPLAY_TOGGLED",
-				k = "PREFERENCES__NIGHTMODE_TOGGLED",
-				L = "PREFERENCES__LAYOUT_CHANGED",
-				U = "PREFERENCES__SUBREDDIT_LAYOUT_CHANGED",
-				M = "PREFERENCES__CUSTOMIZE_FLYOUT_SHOWN",
-				F = "PREFERENCES__CUSTOMIZE_FLYOUT_DISMISSED",
-				G = "PREFERENCES__PROFILE_LAYOUT_CHANGED",
-				B = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
-				q = "PREFERENCES__RPAN_DU_DISMISSED",
-				V = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
-				H = Object(m.a)(L),
-				K = Object(m.a)(U),
-				W = Object(m.a)(M),
-				z = Object(m.a)(F),
-				Y = Object(m.a)(q),
-				Q = Object(m.a)(V),
-				J = (Object(m.a)(G), Object(m.a)(x)),
-				X = Object(m.a)(k),
-				Z = (Object(m.a)(B), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
-				$ = (Object(m.a)(Z), e => async (t, n, s) => {
+				f = n("./src/lib/constants/index.ts"),
+				O = n("./src/lib/makeActionCreator/index.ts"),
+				m = n("./src/reddit/actions/chat/toggle.ts"),
+				g = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				_ = n("./src/reddit/actions/users.ts"),
+				y = n("./src/reddit/constants/cookie.ts"),
+				j = n("./src/reddit/endpoints/user/preferences.ts"),
+				h = n("./src/reddit/endpoints/moderator/structuredStyles.ts"),
+				E = n("./src/lib/makeApiRequest/index.ts"),
+				I = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				S = n("./src/reddit/actions/toaster.ts"),
+				v = n("./src/reddit/constants/preferences.ts"),
+				T = n("./src/reddit/endpoints/subreddit/settings.ts"),
+				D = n("./src/reddit/helpers/trackers/profileSettings.ts"),
+				C = n("./src/reddit/models/Toast/index.ts"),
+				A = n("./src/reddit/models/User/index.ts"),
+				w = n("./src/reddit/selectors/structuredStyles.ts"),
+				R = n("./src/reddit/selectors/subreddit.ts"),
+				P = n("./src/reddit/selectors/user.ts");
+			const N = "PREFERENCES__AUTOPLAY_TOGGLED",
+				x = "PREFERENCES__NIGHTMODE_TOGGLED",
+				k = "PREFERENCES__LAYOUT_CHANGED",
+				L = "PREFERENCES__SUBREDDIT_LAYOUT_CHANGED",
+				U = "PREFERENCES__CUSTOMIZE_FLYOUT_SHOWN",
+				M = "PREFERENCES__CUSTOMIZE_FLYOUT_DISMISSED",
+				F = "PREFERENCES__PROFILE_LAYOUT_CHANGED",
+				G = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
+				B = "PREFERENCES__RPAN_DU_DISMISSED",
+				q = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
+				V = Object(O.a)(k),
+				H = Object(O.a)(L),
+				K = Object(O.a)(U),
+				W = Object(O.a)(M),
+				z = Object(O.a)(B),
+				Y = Object(O.a)(q),
+				Q = (Object(O.a)(F), Object(O.a)(N)),
+				J = Object(O.a)(x),
+				X = (Object(O.a)(G), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
+				Z = (Object(O.a)(X), e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					t(H({
+					t(V({
 						layout: e
-					})), t(Object(y.r)())
+					})), t(Object(_.r)())
 				}),
-				ee = (e, t) => async (n, s, r) => {
+				$ = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: o
 					} = r;
 					const c = s(),
-						i = Object(N.W)(c),
+						i = Object(P.W)(c),
 						{
 							hasSeenCustomizeFlyout: a
 						} = c.user.prefs;
-					a || n(W()), t && i ? (n(K({
+					a || n(K()), t && i ? (n(H({
 						subredditId: t,
 						layout: e
-					})), n(Ae(t, {
+					})), n(Ce(t, {
 						layout: e
-					}, !1)), a || n(le({
+					}, !1)), a || n(ue({
 						hasSeenCustomizeFlyout: !0
-					}, !1))) : (n($(e)), n(le(a ? {
+					}, !1))) : (n(Z(e)), n(ue(a ? {
 						layout: e
 					} : {
 						layout: e,
 						hasSeenCustomizeFlyout: !0
 					}, !1)))
-				}, te = e => async (t, n, s) => {
+				}, ee = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					n().user.account && await Object(h.d)(e, r())
-				}, ne = e => async (t, n, o) => {
+					n().user.account && await Object(j.d)(e, r())
+				}, te = e => async (t, n, c) => {
 					let {
-						apiContext: c
-					} = o;
-					const a = n();
-					if (Object(R.j)(a)) {
-						const e = Object(N.O)(a);
-						t(Object(v.e)({
-							kind: A.b.Error,
-							text: Object(f.a)(e, "structuredStyles.modal.nightmode.description")
-						}))
-					} else {
-						if (a.user.account) await Object(h.e)(e, c());
+						apiContext: a
+					} = c;
+					const d = n();
+					if (Object(w.j)(d)) t(Object(S.e)({
+						kind: C.b.Error,
+						text: o.fbt._("In order to continue styling your community, Night Mode must be turned off.", null, {
+							hk: "1yZidT"
+						})
+					}));
+					else {
+						if (d.user.account) await Object(j.e)(e, a());
 						else {
-							const t = i.a.get(j.j);
+							const t = i.a.get(y.j);
 							if (t) {
 								const n = JSON.parse(Object(s.atob)(t));
-								n.prefs.nightmode = e, i.a.set(j.j, btoa(JSON.stringify(n)), {
+								n.prefs.nightmode = e, i.a.set(y.j, btoa(JSON.stringify(n)), {
 									domain: r.a.cookieDomain
 								})
 							}
 						}
-						t(X({
+						t(J({
 							nightmode: e
-						})), t(Object(g.d)(e)), i.a.remove(j.d, {
+						})), t(Object(m.d)(e)), i.a.remove(y.d, {
 							domain: r.a.cookieDomain
 						})
 					}
-				}, se = () => async (e, t, n) => {
+				}, ne = () => async (e, t, n) => {
 					let {
 						apiContext: c
 					} = n;
 					const a = t(),
 						d = a.user.prefs.topContentTimesDismissed + 1,
 						u = Date.now();
-					if (a.user.account) e(le({
+					if (a.user.account) e(ue({
 						topContentDismissalTime: u,
 						topContentTimesDismissed: d
 					}, !1));
 					else {
-						const e = i.a.get(j.j);
+						const e = i.a.get(y.j);
 						if (e) {
 							const t = JSON.parse(Object(s.atob)(e));
-							t.prefs[T.d] = u, t.prefs[T.e] = d, i.a.set(j.j, btoa(JSON.stringify(t)), {
+							t.prefs[v.d] = u, t.prefs[v.e] = d, i.a.set(y.j, btoa(JSON.stringify(t)), {
 								domain: r.a.cookieDomain
 							})
 						}
 					}
-					e(Q({
+					e(Y({
 						topContentDismissalTime: u,
 						topContentTimesDismissed: d
-					})), e(Object(v.e)({
-						kind: A.b.SuccessCommunity,
+					})), e(Object(S.e)({
+						kind: C.b.SuccessCommunity,
 						text: o.fbt._("Got it! We will show you less of this", null, {
 							hk: "4op5Wa"
 						})
 					}))
-				}, re = e => async (t, n, c) => {
+				}, se = e => async (t, n, c) => {
 					let {
 						apiContext: a
 					} = c;
-					const d = -1 === [_.P, "r/popular"].indexOf(e),
+					const d = -1 === [g.P, "r/popular"].indexOf(e),
 						u = Date.now(),
 						l = n(),
 						b = o.fbt._("Got it! We will show you less of this", null, {
@@ -12115,207 +12114,222 @@
 					if (l.user.account)
 						if (d) {
 							const n = e.replace(/^r\//, ""),
-								s = Object(P.D)(l, n);
-							t(Ae(s, {
+								s = Object(R.D)(l, n);
+							t(Ce(s, {
 								rpanDuDismissalTime: u
 							}, !1))
-						} else t(le({
+						} else t(ue({
 							rpanDuDismissalTime: u
 						}, !1));
 					else {
-						const e = i.a.get(j.j);
+						const e = i.a.get(y.j);
 						if (e) {
 							const t = JSON.parse(Object(s.atob)(e));
-							t.prefs[T.b] = u, i.a.set(j.j, btoa(JSON.stringify(t)), {
+							t.prefs[v.b] = u, i.a.set(y.j, btoa(JSON.stringify(t)), {
 								domain: r.a.cookieDomain
 							})
 						}
 					}
-					t(Object(v.e)({
-						kind: A.b.SuccessCommunity,
+					t(Object(S.e)({
+						kind: C.b.SuccessCommunity,
 						text: b
-					})), t(Y(u))
-				}, oe = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", ce = "SETTINGS__SUBREDDIT_PREFS_UPDATED", ie = Object(m.a)("SETTINGS__UPDATE_PENDING"), ae = Object(m.a)("SETTINGS__UPDATE_FAILURE"), de = Object(m.a)(oe), ue = Object(m.a)(ce), le = function(e) {
+					})), t(z(u))
+				}, re = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", oe = "SETTINGS__SUBREDDIT_PREFS_UPDATED", ce = Object(O.a)("SETTINGS__UPDATE_PENDING"), ie = Object(O.a)("SETTINGS__UPDATE_FAILURE"), ae = Object(O.a)(re), de = Object(O.a)(oe), ue = function(e) {
 					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
 						n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "";
 					return async (s, r, c) => {
 						let {
 							apiContext: i
 						} = c;
-						s(ie());
-						const a = l()(e, T.a),
-							u = p()(e, T.a),
+						s(ce());
+						const a = l()(e, v.a),
+							u = p()(e, v.a),
 							b = [];
-						d()(a) || b.push(Object(h.g)(a, i())), d()(u) || b.push(Object(h.b)(u, i())), (await Promise.all(b)).every(e => e.ok) ? (s(de({
+						d()(a) || b.push(Object(j.g)(a, i())), d()(u) || b.push(Object(j.b)(u, i())), (await Promise.all(b)).every(e => e.ok) ? (s(ae({
 							preferences: e
-						})), t && s(Object(v.e)({
-							kind: A.b.SuccessCommunity,
+						})), t && s(Object(S.e)({
+							kind: C.b.SuccessCommunity,
 							text: n || o.fbt._("Changes saved", null, {
 								hk: "2isjrZ"
 							})
-						}))) : (s(ae()), t && s(Object(v.e)({
-							kind: A.b.Error,
+						}))) : (s(ie()), t && s(Object(S.e)({
+							kind: C.b.Error,
 							text: o.fbt._("Changes failed to save", null, {
 								hk: "XrtIq"
 							})
 						})))
 					}
-				}, be = "SETTINGS__SUCCESS", pe = Object(m.a)("SETTINGS__PENDING"), fe = Object(m.a)("SETTINGS__FAILURE"), Oe = Object(m.a)(be), me = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", ge = Object(m.a)(me), _e = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", ye = Object(m.a)(_e), je = e => async (t, n, s) => {
+				}, le = "SETTINGS__SUCCESS", be = Object(O.a)("SETTINGS__PENDING"), pe = Object(O.a)("SETTINGS__FAILURE"), fe = Object(O.a)(le), Oe = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", me = Object(O.a)(Oe), ge = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", _e = Object(O.a)(ge), ye = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
-					t(pe());
-					const c = await ((e, t) => Object(I.b)(e, {
-						endpoint: Object(S.a)("".concat(r.a.gatewayUrl, "/desktopapi/v1/prefs")),
-						method: O.bb.GET,
+					t(be());
+					const c = await ((e, t) => Object(E.b)(e, {
+						endpoint: Object(I.a)("".concat(r.a.gatewayUrl, "/desktopapi/v1/prefs")),
+						method: f.bb.GET,
 						data: {
 							timestamp: t ? Date.now() : void 0
 						}
 					}))(o(), e);
-					c.ok ? t(Oe(c.body)) : t(fe())
-				}, he = e => async (t, n, s) => {
+					c.ok ? t(fe(c.body)) : t(pe())
+				}, je = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					if (n().user.account) await Object(h.a)(e, r());
+					if (n().user.account) await Object(j.a)(e, r());
 					else {
-						const e = i.a.get(j.e);
+						const e = i.a.get(y.e);
 						if (e) {
 							const t = JSON.parse(decodeURIComponent(e));
-							t.pref_quarantine_optin = !0, i.a.set(j.e, JSON.stringify(encodeURIComponent(t)), O.x)
+							t.pref_quarantine_optin = !0, i.a.set(y.e, JSON.stringify(encodeURIComponent(t)), f.x)
 						} else {
 							const e = JSON.stringify({
 								pref_quarantine_optin: !0
 							});
-							i.a.set(j.e, e, O.x)
+							i.a.set(y.e, e, f.x)
 						}
 					}
-				}, Ee = e => async (t, n, s) => {
+				}, he = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					n().user.account && await Object(h.c)(e, r()), t(J({
+					n().user.account && await Object(j.c)(e, r()), t(Q({
 						autoplayVideo: e
 					}))
-				}, Ie = (e, t) => async (n, s, r) => {
+				}, Ee = (e, t) => async (n, s, r) => {
 					let {
-						apiContext: o
+						apiContext: c
 					} = r;
-					const c = Object(N.i)(s());
-					if (!c || !c.profileId) return;
-					const i = Object(N.O)(s()),
-						a = Object(w.f)(c),
-						d = O.Sb + a,
-						u = await Object(E.g)(o(), d, t, e.file);
+					const i = Object(P.i)(s());
+					if (!i || !i.profileId) return;
+					const a = Object(A.f)(i),
+						d = f.Sb + a,
+						u = await Object(h.g)(c(), d, t, e.file);
 					if (u.ok) {
 						const e = decodeURIComponent(u.body.PostResponse.Location);
-						n(ge({
+						n(me({
 							imageUrl: e,
 							key: t,
-							subredditId: c.profileId,
+							subredditId: i.profileId,
 							username: a
-						})), (await Object(E.e)(o(), d, {
+						})), (await Object(h.e)(c(), d, {
 							[t]: e
-						})).ok ? (n(Object(v.e)({
-							kind: A.b.SuccessCommunity,
-							text: Object(f.a)(i, "settings.page.saveRequestSuccess")
-						})), Object(C.g)(s(), t)) : n(Object(v.e)({
-							kind: A.b.Error,
-							text: Object(f.a)(i, "settings.page.saveRequestFailure")
+						})).ok ? (n(Object(S.e)({
+							kind: C.b.SuccessCommunity,
+							text: o.fbt._("Changes saved", null, {
+								hk: "xEVHp"
+							})
+						})), Object(D.g)(s(), t)) : n(Object(S.e)({
+							kind: C.b.Error,
+							text: o.fbt._("Changes failed to save", null, {
+								hk: "1y1wAY"
+							})
 						}))
-					} else n(Object(v.e)({
-						kind: A.b.Error,
-						text: Object(f.a)(i, "settings.profileForm.images.errors." + t)
-					}))
-				}, Se = e => async (t, n, s) => {
+					} else {
+						const e = "profileBanner" === t ? "1280x384" : "256x256";
+						n(Object(S.e)({
+							kind: C.b.Error,
+							text: o.fbt._("There was an error uploading your image. Please verify that the size of your image is {maxImageSize} and less than 500KB.", [o.fbt._param("maxImageSize", e)], {
+								hk: "I6lfz"
+							})
+						}))
+					}
+				}, Ie = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					const o = Object(N.i)(n());
-					if (!o || !o.profileId) return;
-					const c = Object(w.f)(o),
-						i = O.Sb + c,
-						a = {
+					const c = Object(P.i)(n());
+					if (!c || !c.profileId) return;
+					const i = Object(A.f)(c),
+						a = f.Sb + i,
+						d = {
 							profileIcon: "icon",
 							profileBanner: "banner"
 						} [e],
-						d = Object(N.O)(n()),
-						u = await Object(D.b)(r(), i, a);
+						u = await Object(T.b)(r(), a, d);
 					if (u.ok) {
-						const s = u.body[a + "_img"];
-						t(ye({
+						const s = u.body[d + "_img"];
+						t(_e({
 							imageUrl: s,
 							key: e,
-							subredditId: o.profileId,
-							username: c
-						})), t(Object(v.e)({
-							kind: A.b.SuccessCommunity,
-							text: Object(f.a)(d, "settings.page.saveRequestSuccess")
-						})), Object(C.f)(n(), e)
-					} else t(Object(v.e)({
-						kind: A.b.Error,
-						text: Object(f.a)(d, "settings.page.saveRequestFailure")
+							subredditId: c.profileId,
+							username: i
+						})), t(Object(S.e)({
+							kind: C.b.SuccessCommunity,
+							text: o.fbt._("Changes saved", null, {
+								hk: "xEVHp"
+							})
+						})), Object(D.f)(n(), e)
+					} else t(Object(S.e)({
+						kind: C.b.Error,
+						text: o.fbt._("Changes failed to save", null, {
+							hk: "1y1wAY"
+						})
 					}))
-				}, ve = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", Te = Object(m.a)(ve), De = Object(m.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Ce = (e, t) => async (n, s, r) => {
+				}, Se = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", ve = Object(O.a)(Se), Te = Object(O.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), De = (e, t) => async (n, s, r) => {
 					let {
-						apiContext: o
+						apiContext: c
 					} = r;
-					const c = Object(N.i)(s());
-					if (!c || !c.profileId) return !1;
-					const i = [],
-						a = s().subreddits.settings[c.profileId],
-						d = Object.assign({}, a, e);
-					i.push(Object(D.f)(o(), c.profileId, d));
+					const i = Object(P.i)(s());
+					if (!i || !i.profileId) return !1;
+					const a = [],
+						d = s().subreddits.settings[i.profileId],
+						u = Object.assign({}, d, e);
+					a.push(Object(T.f)(c(), i.profileId, u));
 					const {
-						showActiveCommunities: u,
-						prevShowActiveCommunities: l
+						showActiveCommunities: l,
+						prevShowActiveCommunities: b
 					} = t;
-					u !== l && i.push(Object(h.g)({
-						showActiveCommunities: u
-					}, o()));
-					const b = Object(N.O)(s());
-					return (await Promise.all(i)).every(e => e.ok) ? (n(Te({
+					return l !== b && a.push(Object(j.g)({
+						showActiveCommunities: l
+					}, c())), (await Promise.all(a)).every(e => e.ok) ? (n(ve({
 						settings: e,
 						additional: t,
-						subredditId: c.profileId
-					})), Object(C.i)(s()), n(Object(v.e)({
-						kind: A.b.SuccessCommunity,
-						text: Object(f.a)(b, "settings.page.saveRequestSuccess")
-					})), !0) : (n(De()), n(Object(v.e)({
-						kind: A.b.Error,
-						text: Object(f.a)(b, "settings.page.saveRequestFailure")
+						subredditId: i.profileId
+					})), Object(D.i)(s()), n(Object(S.e)({
+						kind: C.b.SuccessCommunity,
+						text: o.fbt._("Changes saved", null, {
+							hk: "xEVHp"
+						})
+					})), !0) : (n(Te()), n(Object(S.e)({
+						kind: C.b.Error,
+						text: o.fbt._("Changes failed to save", null, {
+							hk: "1y1wAY"
+						})
 					})), !1)
-				}, Ae = function(e, t) {
+				}, Ce = function(e, t) {
 					let n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
-					return async (s, r, o) => {
+					return async (s, r, c) => {
 						let {
-							apiContext: c
-						} = o;
-						const i = r(),
-							a = Object(N.O)(i),
-							d = i.user.prefs.subreddit[e];
-						s(ue({
+							apiContext: i
+						} = c;
+						const a = r().user.prefs.subreddit[e];
+						s(de({
 							subredditId: e,
 							prefs: t
-						})), (await Object(h.h)(e, t, c())).ok ? n && s(Object(v.e)({
-							kind: A.b.SuccessCommunity,
-							text: Object(f.a)(a, "settings.page.saveRequestSuccess")
-						})) : (d && s(ue({
+						})), (await Object(j.h)(e, t, i())).ok ? n && s(Object(S.e)({
+							kind: C.b.SuccessCommunity,
+							text: o.fbt._("Changes saved", null, {
+								hk: "xEVHp"
+							})
+						})) : (a && s(de({
 							subredditId: e,
-							prefs: d
-						})), n && s(Object(v.e)({
-							kind: A.b.Error,
-							text: Object(f.a)(a, "settings.page.saveRequestFailure")
+							prefs: a
+						})), n && s(Object(S.e)({
+							kind: C.b.Error,
+							text: o.fbt._("Changes failed to save", null, {
+								hk: "1y1wAY"
+							})
 						})))
 					}
-				}, we = (e, t) => async (n, s, r) => {
+				}, Ae = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: o
 					} = r;
 					const c = s();
-					Object(P.P)(c, {
+					Object(R.P)(c, {
 						subredditId: e
-					}) && c.user.prefs.rememberCommunitySort && n(Ae(e, {
+					}) && c.user.prefs.rememberCommunitySort && n(Ce(e, {
 						sort: t
 					}, !1))
 				}
@@ -17905,64 +17919,64 @@
 		"./src/reddit/actions/users.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return V
+				return q
 			})), n.d(t, "t", (function() {
-				return H
+				return V
 			})), n.d(t, "i", (function() {
-				return K
+				return H
 			})), n.d(t, "h", (function() {
-				return W
+				return K
 			})), n.d(t, "g", (function() {
-				return z
+				return W
 			})), n.d(t, "m", (function() {
-				return Y
+				return z
 			})), n.d(t, "f", (function() {
-				return Q
+				return Y
 			})), n.d(t, "B", (function() {
-				return $
+				return Z
 			})), n.d(t, "e", (function() {
-				return ee
+				return $
 			})), n.d(t, "u", (function() {
-				return ne
+				return te
 			})), n.d(t, "s", (function() {
-				return se
+				return ne
 			})), n.d(t, "A", (function() {
-				return re
+				return se
 			})), n.d(t, "v", (function() {
-				return oe
+				return re
 			})), n.d(t, "b", (function() {
-				return ce
+				return oe
 			})), n.d(t, "a", (function() {
-				return ie
+				return ce
 			})), n.d(t, "q", (function() {
-				return ae
+				return ie
 			})), n.d(t, "c", (function() {
-				return de
+				return ae
 			})), n.d(t, "r", (function() {
-				return le
+				return ue
 			})), n.d(t, "x", (function() {
-				return be
+				return le
 			})), n.d(t, "o", (function() {
-				return pe
+				return be
 			})), n.d(t, "p", (function() {
-				return fe
+				return pe
 			})), n.d(t, "n", (function() {
-				return Oe
+				return fe
 			})), n.d(t, "w", (function() {
-				return je
+				return ye
 			})), n.d(t, "y", (function() {
-				return he
+				return je
 			})), n.d(t, "k", (function() {
-				return Ee
+				return he
 			})), n.d(t, "l", (function() {
-				return Ie
+				return Ee
 			})), n.d(t, "j", (function() {
-				return Se
+				return Ie
 			})), n.d(t, "z", (function() {
-				return Ce
+				return De
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
-			var s = n("./src/app/strings/index.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/reddit/actions/emailVerificationTooltip.ts"),
@@ -17972,40 +17986,39 @@
 				u = n("./src/reddit/components/NotificationBanners/bannerIds.ts"),
 				l = n("./src/reddit/components/Settings/modalIds.ts"),
 				b = n("./src/reddit/endpoints/user/index.ts"),
-				p = n("./src/reddit/i18n/utils.ts"),
-				f = n("./src/lib/makeApiRequest/index.ts"),
-				O = n("./src/lib/omitHeaders/index.ts"),
-				m = n("./src/reddit/constants/headers.ts"),
-				g = n("./src/config.ts"),
-				_ = n("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
-				y = (n("./node_modules/core-js/modules/es7.promise.finally.js"), n("./node_modules/promise-retry/index.js")),
-				j = n.n(y),
-				h = n("./src/lib/makeRequest/index.ts");
-			var E = n("./src/reddit/constants/history.ts"),
-				I = n("./src/reddit/endpoints/session/index.ts"),
-				S = n("./node_modules/js-cookie/src/js.cookie.js"),
-				v = n.n(S),
-				T = n("./src/lib/constants/cookie.ts");
-			const D = e => {
-				v.a.remove(e, {
-					domain: g.a.cookieDomain
+				p = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/lib/omitHeaders/index.ts"),
+				O = n("./src/reddit/constants/headers.ts"),
+				m = n("./src/config.ts"),
+				g = n("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
+				_ = (n("./node_modules/core-js/modules/es7.promise.finally.js"), n("./node_modules/promise-retry/index.js")),
+				y = n.n(_),
+				j = n("./src/lib/makeRequest/index.ts");
+			var h = n("./src/reddit/constants/history.ts"),
+				E = n("./src/reddit/endpoints/session/index.ts"),
+				I = n("./node_modules/js-cookie/src/js.cookie.js"),
+				S = n.n(I),
+				v = n("./src/lib/constants/cookie.ts");
+			const T = e => {
+				S.a.remove(e, {
+					domain: m.a.cookieDomain
 				})
 			};
-			var C = n("./src/reddit/helpers/history/index.ts");
-			const A = 2 * r.cb;
-			var w = e => Date.now() + A < new Date(e.expires).getTime(),
-				R = n("./src/reddit/helpers/localStorage/index.ts"),
-				P = async (e, t) => {
+			var D = n("./src/reddit/helpers/history/index.ts");
+			const C = 2 * r.cb;
+			var A = e => Date.now() + C < new Date(e.expires).getTime(),
+				w = n("./src/reddit/helpers/localStorage/index.ts"),
+				R = async (e, t) => {
 					let n = t.accessToken;
-					await j()(async (s, o) => {
-						if (!w(t) || !n) {
-							const r = await Object(I.a)(e, t);
+					await y()(async (s, o) => {
+						if (!A(t) || !n) {
+							const r = await Object(E.a)(e, t);
 							if (r.ok) {
 								const e = r.body;
 								n = e.accessToken
 							} else if (1 === o) return s()
 						}
-						const c = await Object(f.b)(e, {
+						const c = await Object(p.b)(e, {
 							endpoint: "/logoutproxy",
 							method: r.bb.POST,
 							data: {
@@ -18013,7 +18026,7 @@
 							}
 						});
 						if (await async function(e, t) {
-								return await Object(h.b)({
+								return await Object(j.b)({
 									method: r.bb.POST,
 									endpoint: "/timings/logoutrequest",
 									data: {
@@ -18026,9 +18039,9 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[T.c, T.g, T.d, T.h, T.i].forEach(D), Object(R.y)(null), Object(C.a)(E.a.JustLoggedOut, !0), window.location.reload()
+						[v.c, v.g, v.d, v.h, v.i].forEach(T), Object(w.y)(null), Object(D.a)(h.a.JustLoggedOut, !0), window.location.reload()
 					})
-				}, N = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), x = n("./src/reddit/helpers/trackers/emailCollection.ts"), k = n("./src/reddit/helpers/trackers/emailVerification.ts"), L = n("./src/reddit/models/Toast/index.ts"), U = n("./src/reddit/selectors/activeModalId.ts"), M = n("./src/reddit/selectors/emailCollection.ts"), F = n("./src/reddit/selectors/notificationBanner.ts"), G = n("./src/reddit/selectors/user.ts"), B = n("./src/telemetry/index.ts"), q = function(e, t) {
+				}, P = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), N = n("./src/reddit/helpers/trackers/emailCollection.ts"), x = n("./src/reddit/helpers/trackers/emailVerification.ts"), k = n("./src/reddit/models/Toast/index.ts"), L = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), F = n("./src/reddit/selectors/user.ts"), G = n("./src/telemetry/index.ts"), B = function(e, t) {
 					var n = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -18037,22 +18050,22 @@
 					}
 					return n
 				};
-			const V = "USER__LOID_RECEIVED",
-				H = Object(o.a)(V),
-				K = "USER__REQUEST_PENDING",
-				W = "USER__REQUEST_LOADED",
-				z = "USER__REQUEST_FAILED",
-				Y = "USER__SESSION_TRACKER_RECEIVED",
-				Q = "USER__REDDAID_RECEIVED",
+			const q = "USER__LOID_RECEIVED",
+				V = Object(o.a)(q),
+				H = "USER__REQUEST_PENDING",
+				K = "USER__REQUEST_LOADED",
+				W = "USER__REQUEST_FAILED",
+				z = "USER__SESSION_TRACKER_RECEIVED",
+				Y = "USER__REDDAID_RECEIVED",
+				Q = Object(o.a)(H),
 				J = Object(o.a)(K),
 				X = Object(o.a)(W),
-				Z = Object(o.a)(z),
-				$ = e => async (t, n, s) => {
+				Z = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
 					if (n().users.models[e.toLowerCase()] || e === r.z) return;
-					t(J({
+					t(Q({
 						username: e
 					}));
 					const c = await Object(b.b)(o(), e);
@@ -18060,19 +18073,19 @@
 						const n = {
 							data: c.body
 						};
-						n.username = e, t(X(n))
+						n.username = e, t(J(n))
 					} else {
 						const n = c.error;
-						n.username = e, t(Z(n))
+						n.username = e, t(X(n))
 					}
-				}, ee = "USER__MYSELF_LOADED", te = Object(o.a)(ee), ne = () => async (e, t, n) => {
+				}, $ = "USER__MYSELF_LOADED", ee = Object(o.a)($), te = () => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
 					const o = t();
 					if (o.user.account || !o.user.session || o.user.session.unsafeLoggedOut) return;
-					const c = await (e => Object(f.b)(e, {
-						endpoint: "".concat(g.a.gatewayUrl, "/desktopapi/v1/me"),
+					const c = await (e => Object(p.b)(e, {
+						endpoint: "".concat(m.a.gatewayUrl, "/desktopapi/v1/me"),
 						method: r.bb.GET,
 						data: {
 							api_type: "json",
@@ -18080,24 +18093,24 @@
 							awarded_detail: 1
 						}
 					}))(s());
-					c.ok && e(te(c.body))
-				}, se = () => async (e, t, n) => {
+					c.ok && e(ee(c.body))
+				}, ne = () => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
 					const r = t().user.session;
-					Object(N.a)(), r && P(s(), r)
-				}, re = Object(o.a)(Y), oe = Object(o.a)(Q), ce = "USER__FTU_UX_VIEWED", ie = "USER__FEATURES_VIEWED_HISTORY_LOADED", ae = Object(o.a)(ce), de = (Object(o.a)(ie), "USER__LAYOUT_SWITCH_VIEWED"), ue = Object(o.a)(de), le = () => async (e, t, n) => {
+					Object(P.a)(), r && R(s(), r)
+				}, se = Object(o.a)(z), re = Object(o.a)(Y), oe = "USER__FTU_UX_VIEWED", ce = "USER__FEATURES_VIEWED_HISTORY_LOADED", ie = Object(o.a)(oe), ae = (Object(o.a)(ce), "USER__LAYOUT_SWITCH_VIEWED"), de = Object(o.a)(ae), ue = () => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
 					const r = t();
-					r.user.account && !r.user.account.seenLayoutSwitch && (e(ue()), Object(b.d)(s()))
-				}, be = e => async (t, n, s) => {
+					r.user.account && !r.user.account.seenLayoutSwitch && (e(de()), Object(b.d)(s()))
+				}, le = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
-					const c = await ((e, t) => Object(f.b)(Object(O.a)(e, [m.a]), {
+					const c = await ((e, t) => Object(p.b)(Object(f.a)(e, [O.a]), {
 							method: r.bb.POST,
 							endpoint: "".concat(e.apiUrl, "/api/deactivate_user"),
 							data: {
@@ -18108,25 +18121,25 @@
 							}
 						}))(o(), e),
 						i = n().user.session;
-					c.ok && c.body && c.body.success ? i && P(o(), i) : t(Object(d.e)({
-						kind: L.b.Error,
+					c.ok && c.body && c.body.success ? i && R(o(), i) : t(Object(d.e)({
+						kind: k.b.Error,
 						text: "Something went wrong deactivating your account. Try again later."
 					}))
-				}, pe = "USER__UPDATE_EMAIL_PENDING", fe = "USER__UPDATE_EMAIL_SUCCESS", Oe = "USER__UPDATE_EMAIL_FAILURE", me = Object(o.a)(pe), ge = Object(o.a)(fe), _e = Object(o.a)(Oe), ye = (e, t) => {
+				}, be = "USER__UPDATE_EMAIL_PENDING", pe = "USER__UPDATE_EMAIL_SUCCESS", fe = "USER__UPDATE_EMAIL_FAILURE", Oe = Object(o.a)(be), me = Object(o.a)(pe), ge = Object(o.a)(fe), _e = (e, t) => {
 					t.isEmailVerificationTooltipShowing && e(Object(c.b)())
-				}, je = e => async (t, n, s) => {
+				}, ye = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
-					const c = q(e, []);
-					if (Object(G.C)(n(), "changeEmail")) return;
-					t(me());
+					const c = B(e, []);
+					if (Object(F.C)(n(), "changeEmail")) return;
+					t(Oe());
 					const i = await ((e, t) => {
 							let {
 								newEmail: n,
 								password: s
 							} = t;
-							return Object(f.b)(Object(O.a)(e, [m.a]), {
+							return Object(p.b)(Object(f.a)(e, [O.a]), {
 								method: r.bb.POST,
 								endpoint: "".concat(e.apiUrl, "/api/update_email"),
 								data: Object.assign({}, s && {
@@ -18138,18 +18151,18 @@
 						})(o(), c),
 						d = n();
 					if (i.ok && i.body && i.body.success) {
-						Object(F.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(M.a)(d) && Object(B.a)(Object(x.c)(d));
-						const e = Object(G.E)(d);
-						e || await t(he()), t(ge(c.newEmail)), e && t(Te()), ye(t, d)
+						Object(M.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(U.a)(d) && Object(G.a)(Object(N.c)(d));
+						const e = Object(F.E)(d);
+						e || await t(je()), t(me(c.newEmail)), e && t(ve()), _e(t, d)
 					} else {
-						const e = Object(_.b)(i, "Something went wrong updating your email. Try again later.");
-						t(_e(e))
+						const e = Object(g.b)(i, "Something went wrong updating your email. Try again later.");
+						t(ge(e))
 					}
-				}, he = e => async (t, n, o) => {
+				}, je = e => async (t, n, o) => {
 					let {
 						apiContext: c
 					} = o;
-					const a = await ((e, t) => Object(f.b)(Object(O.a)(e, [m.a]), Object.assign({
+					const a = await ((e, t) => Object(p.b)(Object(f.a)(e, [O.a]), Object.assign({
 							method: r.bb.GET,
 							endpoint: "".concat(e.apiUrl, "/api/send_verification_email")
 						}, t.source && {
@@ -18159,25 +18172,24 @@
 						}),
 						u = n();
 					if (a.ok && a.body && a.body.success) {
-						e && (Object(B.a)(Object(k.f)(e)(u)), ye(t, u));
-						const n = Object(U.a)(u),
+						e && (Object(G.a)(Object(x.f)(e)(u)), _e(t, u));
+						const n = Object(L.a)(u),
 							s = n === l.c || n === l.d ? l.d : l.b;
 						t(Object(i.i)(s))
-					} else {
-						const e = Object(G.O)(u);
-						t(Object(d.e)({
-							duration: d.a,
-							kind: L.b.Error,
-							text: Object(s.a)(e, "emailVerification.banner.error")
-						}))
-					}
-				}, Ee = "USER__SEND_RESET_EMAIL_PENDING", Ie = "USER__SEND_RESET_EMAIL_SUCCESS", Se = "USER__SEND_RESET_EMAIL_FAILURE", ve = Object(o.a)(Ee), Te = Object(o.a)(Ie), De = Object(o.a)(Se), Ce = e => async (t, n, s) => {
+					} else t(Object(d.e)({
+						duration: d.a,
+						kind: k.b.Error,
+						text: s.fbt._("Something went wrong sending verification email. Try again later.", null, {
+							hk: "2yTdAw"
+						})
+					}))
+				}, he = "USER__SEND_RESET_EMAIL_PENDING", Ee = "USER__SEND_RESET_EMAIL_SUCCESS", Ie = "USER__SEND_RESET_EMAIL_FAILURE", Se = Object(o.a)(he), ve = Object(o.a)(Ee), Te = Object(o.a)(Ie), De = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
-					if (Object(G.C)(n(), "sendResetEmail")) return;
-					t(ve());
-					const c = await ((e, t) => Object(f.b)(Object(O.a)(e, [m.a]), {
+					if (Object(F.C)(n(), "sendResetEmail")) return;
+					t(Se());
+					const c = await ((e, t) => Object(p.b)(Object(f.a)(e, [O.a]), {
 						method: r.bb.POST,
 						endpoint: "".concat(e.apiUrl, "/api/password"),
 						data: {
@@ -18186,14 +18198,14 @@
 						}
 					}))(o(), e);
 					if (!c.ok || !c.body || !c.body.success) {
-						const e = Object(_.b)(c, "Something went wrong sending the reset email. Please try again.");
-						return t(De()), void t(Object(d.e)({
+						const e = Object(g.b)(c, "Something went wrong sending the reset email. Please try again.");
+						return t(Te()), void t(Object(d.e)({
 							duration: d.a,
-							kind: L.b.Error,
-							text: Object(p.c)(e)
+							kind: k.b.Error,
+							text: e
 						}))
 					}
-					t(Te())
+					t(ve())
 				}
 		},
 		"./src/reddit/actions/video.ts": function(e, t, n) {
@@ -50552,4 +50564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.3e01d1d7dc172e58a476.js.map
+//# sourceMappingURL=Governance~Reddit.690dcea469bbfd96c398.js.map

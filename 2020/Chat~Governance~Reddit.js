@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e5559f77460539885ec4.js
-// Retrieved at 4/8/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.60d8ea00de2d5f211627.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10,10 +10,8 @@
 				return h
 			})), i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "d", (function() {
-				return g
 			})), i.d(t, "c", (function() {
-				return f
+				return g
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.match.js"), i("./node_modules/core-js/modules/es6.regexp.split.js"), i("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var n = i("./node_modules/lodash/get.js"),
@@ -7911,10 +7909,6 @@
 			function g(e) {
 				return (t, i) => h(t, e, i)
 			}
-
-			function f(e) {
-				return (t, i, n) => _(t, e, i, n)
-			}
 		},
 		"./src/app/strings/sources/error.js": function(e, t, i) {
 			"use strict";
@@ -11137,14 +11131,14 @@
 					}))
 				},
 				U = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("a33dbb5-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("3e9ca81-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a33dbb5-production",
+						release: "3e9ca81-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new s.Integrations.Breadcrumbs({
@@ -11506,7 +11500,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "a33dbb5-production",
+							releaseClient: "3e9ca81-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -22379,64 +22373,65 @@
 		"./src/reddit/selectors/profile.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "p", (function() {
-				return c
-			})), i.d(t, "j", (function() {
 				return m
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return p
+			})), i.d(t, "i", (function() {
+				return h
 			})), i.d(t, "m", (function() {
-				return _
-			})), i.d(t, "a", (function() {
 				return g
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return f
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "b", (function() {
 				return b
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "f", (function() {
 				return w
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "q", (function() {
 				return y
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "h", (function() {
 				return v
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "g", (function() {
 				return T
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return S
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "l", (function() {
 				return E
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return F
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "o", (function() {
 				return I
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "r", (function() {
 				return O
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return x
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "d", (function() {
 				return R
+			})), i.d(t, "e", (function() {
+				return C
 			}));
-			var n = i("./src/lib/objectSelector/index.ts"),
-				r = i("./src/reddit/i18n/utils.ts"),
-				s = i("./src/reddit/models/Multireddit/index.ts"),
-				o = i("./src/reddit/models/User/index.ts"),
-				d = i("./src/reddit/selectors/subreddit.ts"),
-				a = i("./src/reddit/selectors/user.ts"),
-				l = i("./node_modules/reselect/es/index.js");
-			const u = [],
-				c = (e, t) => {
+			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
+				r = i("./node_modules/reselect/es/index.js"),
+				s = i("./src/lib/objectSelector/index.ts"),
+				o = i("./src/lib/pageTitle.ts"),
+				d = i("./src/reddit/models/Multireddit/index.ts"),
+				a = i("./src/reddit/models/User/index.ts"),
+				l = i("./src/reddit/selectors/subreddit.ts"),
+				u = i("./src/reddit/selectors/user.ts");
+			const c = [],
+				m = (e, t) => {
 					let {
 						profileId: i
 					} = t;
 					return e.profiles.models[i]
 				},
-				m = (e, t) => {
+				p = (e, t) => {
 					let {
 						profileName: i
 					} = t;
-					return e.profiles.models[_(e, i)]
+					return e.profiles.models[g(e, i)]
 				},
-				p = (e, t) => e.profiles.models[t],
-				h = Object(l.a)(e => e.profiles.models, e => {
+				h = (e, t) => e.profiles.models[t],
+				_ = Object(r.a)(e => e.profiles.models, e => {
 					const t = {};
 					for (const i in e) {
 						const n = e[i];
@@ -22444,8 +22439,8 @@
 					}
 					return t
 				}),
-				_ = (e, t) => h(e)[t ? t.toLowerCase() : ""],
-				g = (e, t) => {
+				g = (e, t) => _(e)[t ? t.toLowerCase() : ""],
+				f = (e, t) => {
 					let {
 						profileName: i
 					} = t;
@@ -22454,7 +22449,7 @@
 					} = e.profiles.moderated.api;
 					return !!(i && i in n) && n[i.toLowerCase()]
 				},
-				f = (e, t) => {
+				b = (e, t) => {
 					let {
 						profileName: i
 					} = t;
@@ -22463,88 +22458,90 @@
 					} = e.profiles.multireddits.api;
 					return !!(i && i in n) && n[i.toLowerCase()]
 				},
-				b = (e, t) => {
-					let {
-						profileName: i
-					} = t;
-					const n = Object(a.i)(e);
-					if (!n || !i) return !1;
-					const r = Object(o.f)(n);
-					return E(e, {
-						profileName: r
-					}).some(e => e.name.toLowerCase() === i.toLowerCase())
-				},
 				w = (e, t) => {
 					let {
 						profileName: i
 					} = t;
-					const n = m(e, {
-						profileName: i
-					});
-					return n && "".concat(n.title || n.name, " (").concat(n.displayText, ") - Reddit") || Object(r.c)("reddit: the front page of the internet")
+					const n = Object(u.i)(e);
+					if (!n || !i) return !1;
+					const r = Object(a.f)(n);
+					return F(e, {
+						profileName: r
+					}).some(e => e.name.toLowerCase() === i.toLowerCase())
 				},
 				y = (e, t) => {
 					let {
 						profileName: i
 					} = t;
-					const n = _(e, i);
+					const r = p(e, {
+						profileName: i
+					});
+					return r && "".concat(n.fbt._("{profileTitleOrName} ({displayText}) - Reddit", [n.fbt._param("profileTitleOrName", r.title || r.name), n.fbt._param("displayText", r.displayText)], {
+						hk: "1MLLB8"
+					})) || "".concat(Object(o.c)())
+				},
+				v = (e, t) => {
+					let {
+						profileName: i
+					} = t;
+					const n = g(e, i);
 					return e.profiles.about[n]
 				},
-				v = (e, t) => e.profiles.about[t],
-				T = Object(n.a)((e, t) => {
+				T = (e, t) => e.profiles.about[t],
+				S = Object(s.a)((e, t) => {
 					let {
 						profileName: i
 					} = t;
 					return void 0 !== e.profiles.moderated.models[i ? i.toLowerCase() : ""]
 				}),
-				S = (e, t) => {
+				E = (e, t) => {
 					let {
 						profileName: i
 					} = t;
 					return void 0 !== e.profiles.multireddits.pageInfo[i ? i.toLowerCase() : ""]
 				},
-				E = Object(n.a)((e, t) => {
+				F = Object(s.a)((e, t) => {
 					let {
 						profileName: i
 					} = t;
 					const n = e.profiles.moderated.models[i ? i.toLowerCase() : ""];
-					if (!n) return u;
+					if (!n) return c;
 					const r = [];
 					return n.forEach(t => {
-						Object(d.P)(e, {
+						Object(l.P)(e, {
 							subredditId: t
-						}) ? r.push(Object(d.P)(e, {
+						}) ? r.push(Object(l.P)(e, {
 							subredditId: t
-						})) : c(e, {
+						})) : m(e, {
 							profileId: t
-						}) && r.push(c(e, {
+						}) && r.push(m(e, {
 							profileId: t
 						}))
 					}), r
 				}),
-				F = Object(l.a)((e, t) => {
-					const i = Object(a.cb)(e, {
+				I = Object(r.a)((e, t) => {
+					const i = Object(u.cb)(e, {
 						userName: t.profileName
 					});
 					return i ? e.multireddits.byUserId[i.id] : null
-				}, e => e.multireddits.models, (e, t) => e ? e.map(e => t[e]).filter(e => e.visibility === s.e.Public) : null),
-				I = Object(l.a)(e => e.trophies, e => e.profiles.trophyCases, (e, t) => t, (e, t, i) => {
+				}, e => e.multireddits.models, (e, t) => e ? e.map(e => t[e]).filter(e => e.visibility === d.e.Public) : null),
+				O = Object(r.a)(e => e.trophies, e => e.profiles.trophyCases, (e, t) => t, (e, t, i) => {
 					const n = t[i];
 					return n ? n.map(t => e[t]) : []
 				}),
-				O = (e, t) => {
+				x = (e, t) => {
 					let {
 						extraCommentsId: i
 					} = t;
 					return e.profileOverviewPage.conversations.extraComments.models[i]
 				},
-				x = (e, t) => {
+				R = (e, t) => {
 					let {
 						profileName: i
 					} = t;
 					return e.profiles.moderated.pageInfo[i] ? e.profiles.moderated.pageInfo[i].hasNextPage : void 0
 				},
-				R = (e, t) => {
+				C = (e, t) => {
 					let {
 						profileName: i
 					} = t;
@@ -28423,4 +28420,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.e5559f77460539885ec4.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.60d8ea00de2d5f211627.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.b3bfe72e724d4d18fd62.js
-// Retrieved at 3/25/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.ef4dff406de39e9bfe8e.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1"], {
 		"./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less": function(e, t, s) {
@@ -109,6 +109,9 @@
 		},
 		"./src/reddit/components/Economics/Support/PaymentTooltip/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return Oe
+			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
 				o = s("./node_modules/react-motion/lib/react-motion.js"),
@@ -472,12 +475,9 @@
 			var Oe, _e = Object(c.b)(Se)(Ne),
 				je = s("./src/reddit/components/Economics/Support/PaymentTooltip/index.m.less"),
 				Te = s.n(je);
-			s.d(t, "a", (function() {
-					return Oe
-				})),
-				function(e) {
-					e[e.Above = 0] = "Above", e[e.Below = 1] = "Below", e[e.Modal = 2] = "Modal"
-				}(Oe || (Oe = {}));
+			! function(e) {
+				e[e.Above = 0] = "Above", e[e.Below = 1] = "Below", e[e.Modal = 2] = "Modal"
+			}(Oe || (Oe = {}));
 			const Ie = [{
 					key: "container",
 					style: {
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.b3bfe72e724d4d18fd62.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~c734f0e1.ef4dff406de39e9bfe8e.js.map

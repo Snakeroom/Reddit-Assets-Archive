@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.2982134d05712d6356a1.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.c5da71341444ef2cefcb.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceOptOutModal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -666,4 +666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceOptOutModal.2982134d05712d6356a1.js.map
+//# sourceMappingURL=GovernanceOptOutModal.c5da71341444ef2cefcb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.0067a885d5aba5bab936.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.2ec64de9428bbbefc673.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -3708,11 +3708,11 @@
 			const L = e => n.a.createElement("span", N({
 					className: M.a.removalReason
 				}, e), e.children),
-				R = Object(c.d)("posts.archived"),
-				A = Object(c.d)("modTools.commentsLocked"),
-				B = Object(c.d)("modTools.moderatorOf"),
-				F = Object(c.d)("modTools.stickiedPost"),
-				D = Object(c.d)("modTools.pinnedPost"),
+				R = Object(c.c)("posts.archived"),
+				A = Object(c.c)("modTools.commentsLocked"),
+				B = Object(c.c)("modTools.moderatorOf"),
+				F = Object(c.c)("modTools.stickiedPost"),
+				D = Object(c.c)("modTools.pinnedPost"),
 				H = (e, t, s) => {
 					const o = "PostBadges--".concat(e, "--").concat(t);
 					return s ? "".concat(o, "--").concat(s) : o
@@ -7686,4 +7686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.0067a885d5aba5bab936.js.map
+//# sourceMappingURL=ProfilePrivate.2ec64de9428bbbefc673.js.map

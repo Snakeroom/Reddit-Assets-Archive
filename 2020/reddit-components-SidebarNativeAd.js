@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.dc7ebc2086f2d6b44ba0.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2623a31227451f2962de.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -601,11 +601,11 @@
 			const M = e => o.a.createElement("span", N({
 					className: L.a.removalReason
 				}, e), e.children),
-				B = Object(c.d)("posts.archived"),
-				A = Object(c.d)("modTools.commentsLocked"),
-				R = Object(c.d)("modTools.moderatorOf"),
-				F = Object(c.d)("modTools.stickiedPost"),
-				W = Object(c.d)("modTools.pinnedPost"),
+				B = Object(c.c)("posts.archived"),
+				A = Object(c.c)("modTools.commentsLocked"),
+				R = Object(c.c)("modTools.moderatorOf"),
+				F = Object(c.c)("modTools.stickiedPost"),
+				W = Object(c.c)("modTools.pinnedPost"),
 				H = (e, t, s) => {
 					const n = "PostBadges--".concat(e, "--").concat(t);
 					return s ? "".concat(n, "--").concat(s) : n
@@ -1527,4 +1527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.dc7ebc2086f2d6b44ba0.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.2623a31227451f2962de.js.map

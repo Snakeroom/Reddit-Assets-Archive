@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.0487da41504bd83747fd.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.92ed29f16e2e5c4a0a59.js
+// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5496,11 +5496,11 @@
 			const M = e => o.a.createElement("span", L({
 					className: T.a.removalReason
 				}, e), e.children),
-				R = Object(d.d)("posts.archived"),
-				A = Object(d.d)("modTools.commentsLocked"),
-				B = Object(d.d)("modTools.moderatorOf"),
-				F = Object(d.d)("modTools.stickiedPost"),
-				D = Object(d.d)("modTools.pinnedPost"),
+				R = Object(d.c)("posts.archived"),
+				A = Object(d.c)("modTools.commentsLocked"),
+				B = Object(d.c)("modTools.moderatorOf"),
+				F = Object(d.c)("modTools.stickiedPost"),
+				D = Object(d.c)("modTools.pinnedPost"),
 				H = (e, t, s) => {
 					const n = "PostBadges--".concat(e, "--").concat(t);
 					return s ? "".concat(n, "--").concat(s) : n
@@ -10362,4 +10362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.0487da41504bd83747fd.js.map
+//# sourceMappingURL=ProfileComments.92ed29f16e2e5c4a0a59.js.map
