@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7dcff6a5cbb796b53ff7.js
-// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0b7c2d7138dd791e3344.js
+// Retrieved at 4/8/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -10306,8 +10306,16 @@
 			var mn = s("./src/reddit/singleton/EventSystem.ts"),
 				un = s("./src/reddit/singleton/tracing/index.ts"),
 				pn = s("./src/reddit/actions/global.ts");
+			const hn = e => t => Object(S.a)(Object.assign({}, on.defaults(t), {
+				action: "leave",
+				actionInfo: on.actionInfo(t, {
+					reason: e
+				}),
+				noun: "app",
+				source: "global"
+			}));
 			Object(r.e)(r.b.EntryPointStart);
-			const hn = Object(j.a)({
+			const bn = Object(j.a)({
 					actionDispatchers: {
 						reddaidReceived: Q.v,
 						loidReceived: Q.t,
@@ -10329,20 +10337,20 @@
 					onBeforeRequestFactory: rs.a,
 					statsAppName: f.l.Redesign
 				}),
-				bn = Object(w.a)(hn.apiContext),
-				gn = Ct();
-			let fn;
+				gn = Object(w.a)(bn.apiContext),
+				fn = Ct();
+			let Cn;
 			Object(x.a)({
 				reducers: ds.a,
 				routes: nn,
-				apiContext: hn.apiContext,
-				gqlContext: bn.gqlContext,
+				apiContext: bn.apiContext,
+				gqlContext: gn.gqlContext,
 				appFactory: (e, t) => u.a.createElement(pt.a.Provider, {
-					value: gn.broadcaster
+					value: fn.broadcaster
 				}, u.a.createElement(ht.a.Provider, {
 					value: {
-						apiContext: hn.apiContext,
-						gqlContext: bn.gqlContext
+						apiContext: bn.apiContext,
+						gqlContext: gn.gqlContext
 					}
 				}, u.a.createElement(bt.b, null, u.a.createElement(Xe, {
 					ok: !0,
@@ -10352,7 +10360,7 @@
 				appName: f.l.Redesign,
 				history: Object(c.a)({
 					getUserConfirmation(e, t) {
-						const s = fn;
+						const s = Cn;
 						if (!s) return;
 						s.dispatch(Object(q.k)({
 							allowNavigationCallback: function() {
@@ -10364,9 +10372,9 @@
 				}),
 				customMiddleware: [h.a.withExtraArgument({
 					routes: nn,
-					apiContext: hn.apiContext,
-					gqlContext: bn.gqlContext
-				}), gn.middleware, hn.middleware, bn.middleware, Dt, jt, ns, Lt, Rt],
+					apiContext: bn.apiContext,
+					gqlContext: gn.gqlContext
+				}), fn.middleware, bn.middleware, gn.middleware, Dt, jt, ns, Lt, Rt],
 				modifyInitialData: e => {
 					let {
 						initialData: t,
@@ -10401,6 +10409,8 @@
 								isDeleted: e.data.isDeleted || !1,
 								postId: "t3_".concat(e.data.id36)
 							}))
+						}), window.addEventListener("beforeunload", () => {
+							hn("tab_closed")(n.getState())
 						}),
 						function(e) {
 							const t = String(e.split("/")[1]).toLowerCase();
@@ -10444,7 +10454,7 @@
 						store: l,
 						localStorageData: m
 					} = e;
-					fn = l;
+					Cn = l;
 					t.listen((e, t) => {
 						const s = l.getState(),
 							{
@@ -10563,7 +10573,6 @@
 						}
 						Object(te.G)(l.getState()) && l.dispatch(Object(_.d)()), Object(b.requestIdleCallback)(async () => {
 							l.dispatch(Object(G.d)()), await Object(g.a)() && (e => Object(S.a)(Object.assign({}, on.defaults(e), {
-								screen: on.screen(e),
 								source: "global",
 								action: "view",
 								noun: "empty"
@@ -10578,6 +10587,8 @@
 								"POP" !== s && e()
 							});
 							e()
+						}), document.addEventListener("visibilitychange", () => {
+							"visible" !== document.visibilityState && hn("tab_backgrounded")(l.getState())
 						})
 					}), window.history.scrollRestoration = "manual", mn.a.attachStore(l)
 				},
@@ -12174,4 +12185,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.7dcff6a5cbb796b53ff7.js.map
+//# sourceMappingURL=Reddit.0b7c2d7138dd791e3344.js.map
