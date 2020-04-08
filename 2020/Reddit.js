@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.25d076c3301ba0758a53.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a824b548c4ed9f4b6643.js
+// Retrieved at 4/8/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1109,7 +1109,6 @@
 				pinnedSubscriptions: "zoWOQnp55WuhEugRSwfw1",
 				withUpsell: "_1kFzDy0hQVq-CvguZsCcmV",
 				lightboxHeaderWrapper: "_3obgdFz00GvpqpuX8QCsNK",
-				mTopBannerAdjustments: "_36-AorT6BJ2gKt8J8gGOU1",
 				bottomAdContainer: "_2SL_DAWw1V6pxZysgrdeBe",
 				sidebarFooter: "_2AJ0ZwpZtFJ10GdcU0CUew",
 				sidebarFooterWithAd: "_1ht98h5gXjzYhFyRZgB0Pv",
@@ -6800,15 +6799,7 @@
 							[Wl.a.mIsCommentsLightbox]: n,
 							[Wl.a.mIsLargeCommentsLightbox]: a
 						})
-					}, n && m.a.createElement(Kl, {
-						divRef: this.lightboxHeaderRefFn,
-						className: Object(g.a)(Wl.a.mTopBannerAdjustments, Object(Il.b)(Wl.a, this.props), {
-							[Wl.a.mIsLargeCommentsLightbox]: a
-						}),
-						tabIndex: -1
-					}, m.a.createElement(Rc.a, {
-						page: t
-					})), m.a.createElement("div", {
+					}, m.a.createElement("div", {
 						className: Object(g.a)(Wl.a.overlayWrapper, Object(Il.b)(Wl.a, this.props))
 					}, m.a.createElement("div", {
 						className: Object(g.a)(Wl.a.overlayScrollContainer, {
@@ -6818,7 +6809,15 @@
 						ref: this.overlayRefFn,
 						onMouseDown: this.onOverlayMouseDown,
 						onMouseUp: this.onOverlayMouseUp
-					}, m.a.createElement(p.f, null, s), m.a.createElement("div", {
+					}, n && m.a.createElement(Kl, {
+						divRef: this.lightboxHeaderRefFn,
+						className: Object(g.a)(Object(Il.b)(Wl.a, this.props), {
+							[Wl.a.mIsLargeCommentsLightbox]: a
+						}),
+						tabIndex: -1
+					}, m.a.createElement(Rc.a, {
+						page: t
+					})), m.a.createElement(p.f, null, s), m.a.createElement("div", {
 						className: Object(g.a)(Wl.a.bottomSpacer, Object(Il.a)(Wl.a, this.props))
 					}))))
 				}
@@ -12179,4 +12178,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.25d076c3301ba0758a53.js.map
+//# sourceMappingURL=Reddit.a824b548c4ed9f4b6643.js.map

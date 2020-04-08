@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.ab1b675bc201c5eed224.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1a1396073a4db727145e.js
+// Retrieved at 4/8/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Multireddit~ProfilePosts~ProfileSnoobuilder~Subreddit~SubredditWiki", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -16038,7 +16038,6 @@
 				lightboxContainer: "_1npCwF50X2J7Wt82SZi6J0",
 				mIsCollectionLayout: "_2mmpCGz_MbQyZXoaIL_u6I",
 				lightboxContent: "u35lf2ynn4jHsVUwPmNU",
-				mIsFakeOverlay: "_2gEUIJsfk7ZZ0euRwRyv08",
 				mNotCollectionLayout: "Dx3UxiK86VcfkFQVHNXNi",
 				lightboxSidebar: "_2Xq-4oyrEvHjL5U_EeMnK8",
 				defaultLightboxSidebar: "_20b4i5iUhjZQqDZ1BM_Q-9",
@@ -16071,13 +16070,11 @@
 				c = e => o.a.createElement("div", {
 					className: Object(r.a)(i.a.lightboxContent, {
 						[i.a.mNotCollectionLayout]: !e.isCollectionLayout,
-						[i.a.mIsFakeOverlay]: e.isFakeOverlay,
 						[i.a.fakeOverlayContent]: e.isFakeOverlay && !e.isCollectionLayout
 					})
 				}, e.children),
 				l = e => o.a.createElement("div", {
 					className: Object(r.a)(i.a.lightboxSidebar, {
-						[i.a.mIsFakeOverlay]: e.isFakeOverlay,
 						[i.a.defaultLightboxSidebar]: !e.isCollectionLayout,
 						[i.a.mIsCollectionLayout]: e.isCollectionLayout
 					})
@@ -17308,4 +17305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.ab1b675bc201c5eed224.js.map
+//# sourceMappingURL=CommentsPage.1a1396073a4db727145e.js.map
