@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.690dcea469bbfd96c398.js
-// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.98c7ba841aa3182ea9b1.js
+// Retrieved at 4/8/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3982,41 +3982,28 @@
 		"./src/reddit/actions/global.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return c
 			})), n.d(t, "b", (function() {
-				return m
+				return a
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/lib/sentry/index.ts"),
-				o = n("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
-				c = (n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./src/lib/localStorageAvailable/index.ts")),
-				i = n("./src/reddit/actions/modal.ts"),
-				a = n("./src/reddit/constants/modals.ts"),
-				d = n("./src/reddit/constants/spezModal.ts"),
-				u = n("./src/reddit/featureFlags/index.ts"),
-				l = n("./src/reddit/selectors/activeModalId.ts"),
-				b = n("./src/reddit/selectors/runTimeEnvVars.ts");
-			const p = async (e, t) => {
-				const n = t();
-				if (u.d.spezModal(n) && Object(c.a)() && !Object(l.a)(n)) try {
-					const t = Date.now(),
-						s = localStorage.getItem(d.f);
-					if ((s ? parseInt(s, 10) : 0) > (Object(b.c)(n) ? 0 : d.d)) return;
-					localStorage.setItem(d.f, t.toString()), localStorage.getItem(d.f) && e(Object(i.h)(a.a.SPEZ_MODAL))
-				} catch (s) {}
-			}, f = "LOCAL_STORAGE_LOADED", O = Object(s.a)(f), m = e => async (t, n) => {
-				t(Object(o.a)());
-				const s = n();
-				s.user.loid.loid || s.meta.isBot || r.c.withScope(e => {
-					Object(r.a)(e, {
-						serverLogging: !1
-					}), r.c.captureMessage("User has no LOID set")
-				});
-				const {
-					localStorageData: c
-				} = e;
-				c && t(O(c)), t(p)
-			}
+				o = n("./src/reddit/actions/publicAccessNetwork/userSettings.ts");
+			const c = "LOCAL_STORAGE_LOADED",
+				i = Object(s.a)(c),
+				a = e => async (t, n) => {
+					t(Object(o.a)());
+					const s = n();
+					s.user.loid.loid || s.meta.isBot || r.c.withScope(e => {
+						Object(r.a)(e, {
+							serverLogging: !1
+						}), r.c.captureMessage("User has no LOID set")
+					});
+					const {
+						localStorageData: c
+					} = e;
+					c && t(i(c))
+				}
 		},
 		"./src/reddit/actions/gold/communityAwards.ts": function(e, t, n) {
 			"use strict";
@@ -50564,4 +50551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.690dcea469bbfd96c398.js.map
+//# sourceMappingURL=Governance~Reddit.98c7ba841aa3182ea9b1.js.map
