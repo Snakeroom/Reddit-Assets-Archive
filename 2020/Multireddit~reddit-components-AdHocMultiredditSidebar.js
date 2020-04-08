@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.3c305630fd8f25ff59cc.js
-// Retrieved at 4/8/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.0f4c4f5e49a957bd1896.js
+// Retrieved at 4/8/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -1211,52 +1211,53 @@
 						className: f.a.title
 					}, s), n)
 				},
-				y = n("./src/reddit/helpers/name/index.ts"),
-				C = n("./src/lib/lessComponent.tsx"),
-				O = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				w = n("./src/reddit/icons/svgs/ImagePost/index.tsx"),
-				v = n("./src/reddit/icons/svgs/Link/index.tsx"),
-				_ = n("./src/reddit/icons/svgs/TextPost/index.tsx"),
-				I = n("./src/reddit/icons/svgs/Video/index.tsx"),
-				M = n("./src/reddit/layout/row/Inline/index.tsx"),
-				j = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
-				k = n.n(j);
-			const D = [{
+				y = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
+				C = n("./src/reddit/helpers/name/index.ts"),
+				O = n("./src/lib/lessComponent.tsx"),
+				w = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				v = n("./src/reddit/icons/svgs/ImagePost/index.tsx"),
+				_ = n("./src/reddit/icons/svgs/Link/index.tsx"),
+				I = n("./src/reddit/icons/svgs/TextPost/index.tsx"),
+				M = n("./src/reddit/icons/svgs/Video/index.tsx"),
+				j = n("./src/reddit/layout/row/Inline/index.tsx"),
+				k = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
+				D = n.n(k);
+			const P = [{
 				type: "text",
-				Icon: _.a
-			}, {
-				type: "images",
-				Icon: w.a
-			}, {
-				type: "videos",
 				Icon: I.a
 			}, {
-				type: "links",
+				type: "images",
 				Icon: v.a
+			}, {
+				type: "videos",
+				Icon: M.a
+			}, {
+				type: "links",
+				Icon: _.a
 			}];
-			var P = e => {
+			var N = e => {
 					const {
 						allowedPostTypes: t,
 						className: n
 					} = e;
-					return d.a.createElement(M.a, {
-						className: Object(a.a)(k.a.rowStyle, n)
-					}, D.map(e => {
+					return d.a.createElement(j.a, {
+						className: Object(a.a)(D.a.rowStyle, n)
+					}, P.map(e => {
 						let {
 							type: n,
 							Icon: s
 						} = e;
 						return d.a.createElement("div", {
-							className: Object(a.a)(k.a.iconWrapper, {
-								[k.a.mDisabled]: !t[n]
+							className: Object(a.a)(D.a.iconWrapper, {
+								[D.a.mDisabled]: !t[n]
 							})
 						}, d.a.createElement(s, null))
 					}))
 				},
-				N = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
-				T = n.n(N);
-			const R = C.a.wrapped(O.b, "subredditIcon", T.a);
-			var F = e => {
+				T = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
+				R = n.n(T);
+			const F = O.a.wrapped(w.b, "subredditIcon", R.a);
+			var L = e => {
 					const {
 						highlight: t,
 						icon: n,
@@ -1267,24 +1268,24 @@
 						allowedPostTypes: o
 					} = r;
 					return d.a.createElement("div", {
-						className: Object(a.a)(T.a.container, {
-							[T.a.mHighlight]: t
+						className: Object(a.a)(R.a.container, {
+							[R.a.mHighlight]: t
 						})
 					}, n, d.a.createElement("div", {
-						className: T.a.main
+						className: R.a.main
 					}, d.a.createElement("span", {
-						className: T.a.title
+						className: R.a.title
 					}, s), i && d.a.createElement("span", {
-						className: T.a.secondary
-					}, i)), t && o && d.a.createElement(P, {
+						className: R.a.secondary
+					}, i)), t && o && d.a.createElement(N, {
 						allowedPostTypes: o
 					}))
 				},
-				L = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
-				U = n.n(L);
+				U = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
+				B = n.n(U);
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1292,31 +1293,29 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var A = e => {
+			var W = e => {
 				const {
 					item: {
 						name: t,
-						iconUrl: n,
-						subscribers: i
+						subscribers: n
 					}
-				} = e, r = Object(y.c)(t), o = void 0 !== i ? s.fbt._({
+				} = e, i = Object(C.c)(t), r = void 0 !== n ? s.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
-				}, [s.fbt._plural(i, "number")], {
+				}, [s.fbt._plural(n, "number")], {
 					hk: "2SvJUX"
-				}) : void 0, a = d.a.createElement(R, {
-					className: U.a.profileIcon,
-					iconUrl: n
+				}) : void 0, o = d.a.createElement(y.a, {
+					className: Object(a.a)(B.a.profileIcon, R.a.subredditIcon)
 				});
-				return d.a.createElement(F, B({
-					icon: a,
-					title: r,
-					secondaryText: o
+				return d.a.createElement(L, A({
+					icon: o,
+					title: i,
+					secondaryText: r
 				}, e))
 			};
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1324,7 +1323,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var H = e => {
+			var q = e => {
 					const {
 						item: {
 							primaryColor: t,
@@ -1332,25 +1331,25 @@
 							name: i,
 							subscribers: r
 						}
-					} = e, o = Object(y.b)(i), a = void 0 !== r ? s.fbt._({
+					} = e, o = Object(C.b)(i), a = void 0 !== r ? s.fbt._({
 						"*": "{number} members",
 						_1: "1 member"
 					}, [s.fbt._plural(r, "number")], {
 						hk: "2SvJUX"
-					}) : void 0, c = d.a.createElement(R, {
+					}) : void 0, c = d.a.createElement(F, {
 						iconUrl: n,
 						primaryColor: t,
 						redditStyle: !0
 					});
-					return d.a.createElement(F, W({
+					return d.a.createElement(L, H({
 						icon: c,
 						title: o,
 						secondaryText: a
 					}, e))
 				},
-				q = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
-				z = n.n(q);
-			const V = {
+				z = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
+				V = n.n(z);
+			const G = {
 				[m.a.OWN_PROFILE]: () => s.fbt._("Your profile", null, {
 					hk: "1Qoy4P"
 				}),
@@ -1384,9 +1383,9 @@
 				getEntryContentComponent(e, t) {
 					switch (e) {
 						case m.a.OWN_PROFILE:
-							return A;
+							return W;
 						default:
-							return H
+							return q
 					}
 				}
 				render() {
@@ -1397,7 +1396,7 @@
 					return this.props.showNoMatchesCaption && n.push(d.a.createElement(S, {
 						key: "no-matches"
 					}, d.a.createElement("div", {
-						className: z.a.noMatches
+						className: V.a.noMatches
 					}, s.fbt._("No communities found", null, {
 						hk: "4wDUHv"
 					})))), Object(u.a)(t, {
@@ -1420,15 +1419,15 @@
 								item: s
 							})))
 						});
-						const c = V[i];
+						const c = G[i];
 						n.push(d.a.createElement(S, {
 							key: i,
 							title: c && c()
 						}, a))
 					}), d.a.createElement("div", {
-						className: Object(a.a)(z.a.container, this.props.className, {
-							[z.a.mIsValid]: this.props.isValid,
-							[z.a.mIsVisible]: n.length > 0
+						className: Object(a.a)(V.a.container, this.props.className, {
+							[V.a.mIsValid]: this.props.isValid,
+							[V.a.mIsVisible]: n.length > 0
 						}),
 						ref: this.setContainerRef,
 						onMouseDown: this.props.onContainerMouseDown,
@@ -1562,4 +1561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.3c305630fd8f25ff59cc.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.0f4c4f5e49a957bd1896.js.map

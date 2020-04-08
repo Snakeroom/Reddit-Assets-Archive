@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1c4eb691702e67c53cf5.js
-// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d0f2d5a1273816ab29e4.js
+// Retrieved at 4/8/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -953,8 +953,8 @@
 				bannerWrapper: "_2xyDZKy2cesRk-qhNei4mr",
 				BannerImage: "_39u8lkB0jifV2dCyGxhTst",
 				bannerImage: "_39u8lkB0jifV2dCyGxhTst",
-				SnooIcon: "_39rt5SOMKEB5MI0D3j7M5S",
-				snooIcon: "_39rt5SOMKEB5MI0D3j7M5S",
+				UserIcon: "M_wdt3XN_OW7h8RYbg38W",
+				userIcon: "M_wdt3XN_OW7h8RYbg38W",
 				Widget: "_27SH1SRzjtOk_2NB2YC-FR",
 				widget: "_27SH1SRzjtOk_2NB2YC-FR",
 				UserTitle: "_3W1eUu5jHdcamkzFiJDITJ",
@@ -979,7 +979,7 @@
 		"./src/reddit/components/ProfileIdCard/Preview.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return pe
+				return be
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./src/config.ts"),
@@ -988,33 +988,34 @@
 				o = n.n(r),
 				i = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				c = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/components/Widgets/Base/index.tsx"),
-				d = n("./src/reddit/controls/InternalLink/index.tsx"),
-				m = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				u = n("./src/reddit/icons/svgs/Admin/index.tsx"),
-				p = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				b = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				h = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				g = n("./src/reddit/layout/twoCol/Dynamic/index.tsx"),
-				f = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
-				v = n("./node_modules/react-redux/es/index.js"),
-				C = n("./node_modules/reselect/es/index.js"),
-				y = n("./src/lib/humanizeDate/index.ts"),
-				x = n("./src/lib/prettyPrintNumber/index.ts"),
-				_ = n("./src/lib/timeAgo/index.ts"),
-				E = n("./src/reddit/contexts/InsideOverlay.tsx"),
-				k = n("./src/reddit/icons/svgs/Cake/index.tsx"),
-				w = n("./src/reddit/icons/svgs/Karma/index.tsx"),
-				O = n("./src/reddit/icons/svgs/User/index.tsx"),
-				S = n("./src/reddit/selectors/profile.ts"),
-				j = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/reddit/actions/tooltip.ts"),
-				P = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				I = n("./src/reddit/components/ProfileIdCard/Highlight.m.less"),
-				T = n.n(I);
+				l = n("./src/reddit/components/UserIcon/index.tsx"),
+				d = n("./src/reddit/components/Widgets/Base/index.tsx"),
+				m = n("./src/reddit/controls/InternalLink/index.tsx"),
+				u = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				p = n("./src/reddit/icons/svgs/Admin/index.tsx"),
+				b = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				h = n("./src/reddit/icons/svgs/Premium/index.tsx"),
+				g = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				f = n("./src/reddit/layout/twoCol/Dynamic/index.tsx"),
+				v = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				C = n("./node_modules/react-redux/es/index.js"),
+				y = n("./node_modules/reselect/es/index.js"),
+				x = n("./src/lib/humanizeDate/index.ts"),
+				_ = n("./src/lib/prettyPrintNumber/index.ts"),
+				E = n("./src/lib/timeAgo/index.ts"),
+				k = n("./src/reddit/contexts/InsideOverlay.tsx"),
+				w = n("./src/reddit/icons/svgs/Cake/index.tsx"),
+				O = n("./src/reddit/icons/svgs/Karma/index.tsx"),
+				S = n("./src/reddit/icons/svgs/User/index.tsx"),
+				j = n("./src/reddit/selectors/profile.ts"),
+				N = n("./src/reddit/selectors/user.ts"),
+				P = n("./src/reddit/actions/tooltip.ts"),
+				I = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				T = n("./src/reddit/components/ProfileIdCard/Highlight.m.less"),
+				M = n.n(T);
 
-			function M() {
-				return (M = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1022,14 +1023,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = Object(C.c)({
-					language: j.O
+			const B = Object(y.c)({
+					language: N.O
 				}),
-				B = c.a.div("Container", T.a),
-				D = c.a.div("Body", T.a),
-				R = c.a.h5("Title", T.a),
-				L = c.a.span("Label", T.a);
-			class U extends o.a.Component {
+				D = c.a.div("Container", M.a),
+				R = c.a.div("Body", M.a),
+				L = c.a.h5("Title", M.a),
+				U = c.a.span("Label", M.a);
+			class F extends o.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -1051,40 +1052,40 @@
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return o.a.createElement(B, null, o.a.createElement(R, null, n), o.a.createElement(D, null, e, o.a.createElement(L, M({
+					return o.a.createElement(D, null, o.a.createElement(L, null, n), o.a.createElement(R, null, e, o.a.createElement(U, A({
 						key: "label"
-					}, r), t)), a && s && o.a.createElement(P.c, {
+					}, r), t)), a && s && o.a.createElement(I.c, {
 						caretOnTop: !0,
 						tooltipId: a,
 						text: s
 					}))
 				}
 			}
-			var F = Object(v.b)(A, e => ({
-					toggleTooltip: t => e(Object(N.h)({
+			var W = Object(C.b)(B, e => ({
+					toggleTooltip: t => e(Object(P.h)({
 						tooltipId: t
 					}))
-				}))(Object(E.b)(U)),
-				W = n("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
-				H = n.n(W);
-			const z = Object(C.a)(S.j, (e, t) => {
+				}))(Object(k.b)(F)),
+				H = n("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
+				z = n.n(H);
+			const G = Object(y.a)(j.j, (e, t) => {
 					let {
 						profileName: n
 					} = t;
-					return Object(j.fb)(e, n)
-				}, j.O, (e, t, n) => ({
+					return Object(N.fb)(e, n)
+				}, N.O, (e, t, n) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					language: n,
 					postKarma: t ? t.postKarma : 0,
 					profileCreated: t ? t.created : 0,
 					subscribers: e && e.subscribers || 0
 				})),
-				G = c.a.div("Container", H.a);
+				V = c.a.div("Container", z.a);
 
-			function V(e, t) {
+			function J(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
 			}
-			var J = Object(v.b)(z)(Object(E.b)(e => {
+			var Z = Object(C.b)(G)(Object(k.b)(e => {
 					const {
 						profileCreated: t,
 						isOverlay: n,
@@ -1092,57 +1093,57 @@
 						commentKarma: r,
 						postKarma: i,
 						subscribers: c
-					} = e, l = V(n, "karma"), d = V(n, "cakeday"), m = a.fbt._({
+					} = e, l = J(n, "karma"), d = J(n, "cakeday"), m = a.fbt._({
 						"*": "{number} Post Karma",
 						_1: "1 Post Karma"
-					}, [a.fbt._plural(i, "number", Object(x.b)(i, !0))], {
+					}, [a.fbt._plural(i, "number", Object(_.b)(i, !0))], {
 						hk: "husfU"
 					}), u = a.fbt._({
 						"*": "{number} Comment Karma",
 						_1: "1 Comment Karma"
-					}, [a.fbt._plural(i, "number", Object(x.b)(r, !0))], {
+					}, [a.fbt._plural(i, "number", Object(_.b)(r, !0))], {
 						hk: "26iPTL"
 					});
-					return o.a.createElement(G, null, o.a.createElement(F, {
-						icon: o.a.createElement(w.a, {
-							className: H.a.icon,
+					return o.a.createElement(V, null, o.a.createElement(W, {
+						icon: o.a.createElement(O.a, {
+							className: z.a.icon,
 							key: "karma"
 						}),
-						label: Object(x.b)(r + i, !0),
+						label: Object(_.b)(r + i, !0),
 						title: a.fbt._("Karma", null, {
 							hk: "RtSgN"
 						}),
 						tooltipId: l,
 						tooltip: "".concat(m, "\n").concat(u)
-					}), o.a.createElement(F, {
-						icon: o.a.createElement(k.a, {
-							className: H.a.icon,
+					}), o.a.createElement(W, {
+						icon: o.a.createElement(w.a, {
+							className: z.a.icon,
 							key: "cakeDay"
 						}),
-						label: Object(y.a)(t, !0),
+						label: Object(x.a)(t, !0),
 						title: a.fbt._("Cake day", null, {
 							hk: "4x2LB5"
 						}),
 						tooltipId: d,
-						tooltip: Object(_.d)(s, t)
-					}), c > 0 && o.a.createElement(F, {
-						icon: o.a.createElement(O.a, {
-							className: H.a.icon,
+						tooltip: Object(E.d)(s, t)
+					}), c > 0 && o.a.createElement(W, {
+						icon: o.a.createElement(S.a, {
+							className: z.a.icon,
 							key: "followers"
 						}),
 						title: a.fbt._("Followers", null, {
 							hk: "4ucimK"
 						}),
-						label: Object(x.b)(c, !0)
+						label: Object(_.b)(c, !0)
 					}))
 				})),
-				Z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
-				Q = n.n(Z),
-				K = n("./src/reddit/components/ProfileIdCard/Preview.m.less"),
-				Y = n.n(K);
+				Q = n("./src/reddit/components/ProfileIdCard/index.m.less"),
+				K = n.n(Q),
+				Y = n("./src/reddit/components/ProfileIdCard/Preview.m.less"),
+				q = n.n(Y);
 
-			function q() {
-				return (q = Object.assign || function(e) {
+			function X() {
+				return (X = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1150,7 +1151,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var X = function(e, t) {
+			var $ = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1159,39 +1160,39 @@
 				}
 				return n
 			};
-			const $ = c.a.div("BannerWrapper", Y.a),
-				ee = c.a.div("BannerImage", Y.a),
-				te = c.a.div("SnooIcon", Y.a),
-				ne = c.a.wrapped(l.b, "Widget", Y.a),
-				se = c.a.h4("UserTitle", Y.a),
-				ae = c.a.wrapped(b.a, "PremiumIcon", Y.a),
-				re = c.a.div("Description", Y.a),
-				oe = e => {
+			const ee = c.a.div("BannerWrapper", q.a),
+				te = c.a.div("BannerImage", q.a),
+				ne = c.a.wrapped(l.a, "UserIcon", q.a),
+				se = c.a.wrapped(d.b, "Widget", q.a),
+				ae = c.a.h4("UserTitle", q.a),
+				re = c.a.wrapped(h.a, "PremiumIcon", q.a),
+				oe = c.a.div("Description", q.a),
+				ie = e => {
 					var {
 						url: t
-					} = e, n = X(e, ["url"]);
-					return t ? o.a.createElement(d.a, q({}, n, {
-						className: Y.a.userName,
+					} = e, n = $(e, ["url"]);
+					return t ? o.a.createElement(m.a, X({}, n, {
+						className: q.a.userName,
 						to: t
-					})) : o.a.createElement("span", q({}, n, {
-						className: Y.a.userName
+					})) : o.a.createElement("span", X({}, n, {
+						className: q.a.userName
 					}))
 				},
-				ie = c.a.wrapped(g.a, "Actions", Y.a),
-				ce = c.a.wrapped(p.a, "CloseIcon", Y.a),
-				le = c.a.wrapped(i.a, "SettingsLink", Y.a),
-				de = c.a.wrapped(h.a, "SettingsIcon", Y.a),
-				me = c.a.wrapped(m.a, "LoadingIconStyled", Y.a),
-				ue = () => o.a.createElement(me, {
+				ce = c.a.wrapped(f.a, "Actions", q.a),
+				le = c.a.wrapped(b.a, "CloseIcon", q.a),
+				de = c.a.wrapped(i.a, "SettingsLink", q.a),
+				me = c.a.wrapped(g.a, "SettingsIcon", q.a),
+				ue = c.a.wrapped(u.a, "LoadingIconStyled", q.a),
+				pe = () => o.a.createElement(ue, {
 					sizePx: 20
 				});
-			class pe extends o.a.PureComponent {
+			class be extends o.a.PureComponent {
 				renderAwardedLastMonth() {
 					const {
 						recentAwardings: e,
 						username: t
 					} = this.props;
-					return e ? o.a.createElement(f.a, {
+					return e ? o.a.createElement(v.a, {
 						recentAwardings: e,
 						username: t
 					}) : null
@@ -1204,54 +1205,55 @@
 						footer: r,
 						isEmployee: i,
 						isGold: c,
-						isOverlay: l,
-						isOwnProfile: d,
-						profileIcon: m,
-						publicDescription: p,
-						title: b,
-						url: h,
-						username: g,
-						isDefaultIcon: f,
-						isDeletingIcon: v,
-						isDeletingBanner: C,
-						onDeleteIcon: y,
-						onDeleteBanner: x,
-						editMode: _
+						isNSFW: l,
+						isOverlay: d,
+						isOwnProfile: m,
+						profileIcon: u,
+						publicDescription: b,
+						title: h,
+						url: g,
+						username: f,
+						isDefaultIcon: v,
+						isDeletingIcon: C,
+						isDeletingBanner: y,
+						onDeleteIcon: x,
+						onDeleteBanner: _,
+						editMode: E
 					} = this.props;
-					return o.a.createElement(ne, {
+					return o.a.createElement(se, {
 						className: n
-					}, o.a.createElement($, null, t && o.a.createElement(ee, {
+					}, o.a.createElement(ee, null, t && o.a.createElement(te, {
 						style: {
 							backgroundImage: "url(".concat(t, ")")
 						}
-					}), _ && t && (C ? o.a.createElement(ue, null) : o.a.createElement(ce, {
-						onClick: x
+					}), E && t && (y ? o.a.createElement(pe, null) : o.a.createElement(le, {
+						onClick: _
 					}))), o.a.createElement("div", {
-						className: Q.a.SnooIconWrapper
-					}, o.a.createElement(te, {
-						style: {
-							backgroundImage: "url(".concat(m, ")")
-						}
-					}), _ && !f && (v ? o.a.createElement(ue, null) : o.a.createElement(ce, {
-						onClick: y
-					}))), !_ && d && o.a.createElement(le, {
+						className: K.a.SnooIconWrapper
+					}, o.a.createElement(ne, {
+						isNSFW: l,
+						iconUrl: u,
+						userName: f
+					}), E && !v && (C ? o.a.createElement(pe, null) : o.a.createElement(le, {
+						onClick: x
+					}))), !E && m && o.a.createElement(de, {
 						to: "/settings/profile"
-					}, o.a.createElement(de, null)), b && o.a.createElement(se, null, b), o.a.createElement(oe, {
-						url: h
-					}, "u/".concat(g)), i && o.a.createElement(u.a, {
-						className: Q.a.adminIcon,
+					}, o.a.createElement(me, null)), h && o.a.createElement(ae, null, h), o.a.createElement(ie, {
+						url: g
+					}, "u/".concat(f)), i && o.a.createElement(p.a, {
+						className: K.a.adminIcon,
 						title: a.fbt._("Reddit admin", null, {
 							hk: "goUUb"
 						})
 					}), c && o.a.createElement("a", {
-						title: a.fbt._("{username} has Reddit Premium", [a.fbt._param("username", g)], {
+						title: a.fbt._("{username} has Reddit Premium", [a.fbt._param("username", f)], {
 							hk: "3Fylv"
 						}),
 						href: "".concat(s.a.redditUrl, "/premium")
-					}, o.a.createElement(ae, null)), o.a.createElement(re, null, p), o.a.createElement(J, {
-						profileName: g,
-						isOverlay: l
-					}), this.renderAwardedLastMonth(), o.a.createElement(ie, null, e), r)
+					}, o.a.createElement(re, null)), o.a.createElement(oe, null, b), o.a.createElement(Z, {
+						profileName: f,
+						isOverlay: d
+					}), this.renderAwardedLastMonth(), o.a.createElement(ce, null, e), r)
 				}
 			}
 		},
@@ -2614,6 +2616,8 @@
 		},
 		"./src/reddit/components/UserNameAndIcon/index.m.less": function(e, t, n) {
 			e.exports = {
+				UserIconContainer: "_3gyThPd4NTS21qtNdizCxE",
+				userIconContainer: "_3gyThPd4NTS21qtNdizCxE",
 				UserIcon: "_1utZNH6IItbNzgdnUBW-Bp",
 				userIcon: "_1utZNH6IItbNzgdnUBW-Bp",
 				UserLink: "_2Q3rLIRb_ij54AEsabVm9L",
@@ -2627,12 +2631,14 @@
 				r = n.n(a),
 				o = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
-				c = n("./src/reddit/controls/InternalLink/index.tsx"),
-				l = n("./src/reddit/components/UserNameAndIcon/index.m.less"),
-				d = n.n(l);
-			const m = o.a.img("UserIcon", d.a),
-				u = o.a.wrapped(c.a, "UserLink", d.a);
-			t.a = e => r.a.createElement(u, {
+				c = n("./src/reddit/components/UserIcon/index.tsx"),
+				l = n("./src/reddit/controls/InternalLink/index.tsx"),
+				d = n("./src/reddit/components/UserNameAndIcon/index.m.less"),
+				m = n.n(d);
+			const u = o.a.span("UserIconContainer", m.a),
+				p = o.a.wrapped(c.a, "UserIcon", m.a),
+				b = o.a.wrapped(l.a, "UserLink", m.a);
+			t.a = e => r.a.createElement(b, {
 				className: e.className,
 				to: "".concat(s.a.redditUrl, "/user/").concat(e.username)
 			}, r.a.createElement(i.a, {
@@ -2640,13 +2646,16 @@
 				sendHoverCardEvent: e.sendHoverCardEvent,
 				subredditId: e.subredditId,
 				tooltipId: e.tooltipId
-			}, r.a.createElement(m, {
-				src: e.userIcon || "".concat(s.a.assetPath, "/img/placeholder_gradient_light-280.png"),
+			}, r.a.createElement(u, {
 				style: {
 					height: e.iconSize || "32px",
 					width: e.iconSize || "32px"
 				}
-			}), e.username))
+			}, r.a.createElement(p, {
+				iconUrl: e.userIcon,
+				isNSFW: !1,
+				userName: e.username
+			})), e.username))
 		},
 		"./src/reddit/components/Widgets/Base/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5742,6 +5751,7 @@
 							isDeletingBanner: h,
 							isDeletingIcon: g,
 							isGold: o,
+							isNSFW: l,
 							isOverlay: !1,
 							onDeleteBanner: this.onDeleteBanner,
 							onDeleteIcon: this.onDeleteIcon,
@@ -6552,4 +6562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.1c4eb691702e67c53cf5.js.map
+//# sourceMappingURL=Settings.d0f2d5a1273816ab29e4.js.map
