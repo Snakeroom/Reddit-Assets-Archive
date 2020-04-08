@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2623a31227451f2962de.js
-// Retrieved at 4/8/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a11656e8ef9c67bc5bda.js
+// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -719,16 +719,16 @@
 					text: W(y)
 				}, V))), (U.isApproved || U.approvedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(E.a, {
 					className: L.a.approveIcon,
-					desc: Object(f.a)(y, U),
+					desc: Object(f.a)(U),
 					id: J,
 					onMouseEnter: K(J),
 					onMouseLeave: G
 				}), o.a.createElement(p.c, N({
 					tooltipId: J,
-					text: Object(f.a)(y, U)
+					text: Object(f.a)(U)
 				}, V))), Object(h.a)(U) && o.a.createElement(n.Fragment, null, o.a.createElement(k.a, {
 					className: L.a.removeIcon,
-					desc: Object(f.c)(y, U),
+					desc: Object(f.c)(U),
 					id: $,
 					onMouseEnter: K($),
 					onMouseLeave: G
@@ -741,7 +741,7 @@
 					onMouseLeave: G
 				}, o.a.createElement(i.c, null, "Removal reason")), o.a.createElement(p.c, N({
 					tooltipId: $,
-					text: Object(f.c)(y, U)
+					text: Object(f.c)(U)
 				}, V))), U.bannedBy && U.isSpam && o.a.createElement(n.Fragment, null, o.a.createElement(P.a, {
 					className: L.a.spamIcon,
 					desc: Object(f.e)(y, U),
@@ -753,22 +753,22 @@
 					text: Object(f.e)(y, U)
 				}, V))), ("AutoModerator" === U.approvedBy || "AutoModerator" === U.bannedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(T.a, {
 					className: Object(l.a)(L.a.automoderator, !!U.bannedBy && L.a.isRemoved),
-					desc: Object(f.b)(y),
+					desc: f.b,
 					id: q,
 					onMouseEnter: K(q),
 					onMouseLeave: G
 				}), o.a.createElement(p.c, N({
 					tooltipId: q,
-					text: Object(f.b)(y)
+					text: f.b
 				}, V))), Object(g.a)(U) && !I && o.a.createElement(n.Fragment, null, o.a.createElement(w.a, {
 					className: L.a.reportIcon,
-					desc: Object(f.d)(y, U.numReports),
+					desc: Object(f.d)(U.numReports),
 					id: ee,
 					onMouseEnter: K(ee),
 					onMouseLeave: G
 				}), o.a.createElement(p.c, N({
 					tooltipId: ee,
-					text: Object(f.d)(y, U.numReports)
+					text: Object(f.d)(U.numReports)
 				}, V))))
 			}))
 		},
@@ -1527,4 +1527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.2623a31227451f2962de.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.a11656e8ef9c67bc5bda.js.map

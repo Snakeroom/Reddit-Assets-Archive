@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.87a392d60055d99624d9.js
-// Retrieved at 4/8/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.78ee7245fd6bd9d2b8ce.js
+// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -774,8 +774,8 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				M = j.a.div("Container", C.a),
-				P = Object(b.t)(),
+				P = j.a.div("Container", C.a),
+				M = Object(b.t)(),
 				S = new Set(["all", "post"]),
 				L = Object(l.a)((e, t) => {
 					let {
@@ -830,7 +830,7 @@
 						subreddit: d,
 						subredditRules: l
 					} = e, b = s || r;
-					return a.a.createElement(M, {
+					return a.a.createElement(P, {
 						className: t
 					}, n && a.a.createElement(p.a, {
 						collection: n
@@ -854,7 +854,7 @@
 						redditStyle: !0
 					}))
 				};
-			t.a = P(R(D))
+			t.a = M(R(D))
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1056,13 +1056,13 @@
 			let C;
 			const j = Object(f.b)("DELETE_COLLECTION_CONFM_MODAL_ID"),
 				O = Object(f.b)("EDIT_POST_COLLECTION_MODAL_ID"),
-				M = Object(v.c)({
+				P = Object(v.c)({
 					createPostUrl: g.d,
 					isDeleteConfirmModalOpen: j,
 					isEditCollectionModalOpen: O,
 					shouldShowCollectionEditOptions: g.t
 				}),
-				P = Object(a.b)(M, (e, t) => ({
+				M = Object(a.b)(P, (e, t) => ({
 					copyLink: () => e(Object(m.D)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(d.b)(n))
@@ -1073,7 +1073,7 @@
 						C || (C = await Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("editCollectionModal")]).then(n.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(c.i("EDIT_POST_COLLECTION_MODAL_ID"))
 					}
 				}));
-			t.a = P(Object(b.c)(e => {
+			t.a = M(Object(b.c)(e => {
 				const {
 					className: t,
 					collectionId: n,
@@ -1314,8 +1314,8 @@
 						className: Object(o.a)(j.a.Secondary, s)
 					})))
 				};
-			const M = ["right", "bottom"],
-				P = ["right", "top"];
+			const P = ["right", "bottom"],
+				M = ["right", "top"];
 			var S = Object(a.b)(() => Object(d.c)({
 					post: v.N,
 					language: y.O
@@ -1344,8 +1344,8 @@
 						className: E.a.overflowMenu,
 						dropdownId: "collection-widget-item" + t.id,
 						postPermalink: t.permalink,
-						targetPosition: M,
-						tooltipPosition: P
+						targetPosition: P,
+						tooltipPosition: M
 					})) : r.a.createElement(O, {
 						className: E.a.container,
 						isLoading: !0
@@ -1553,7 +1553,7 @@
 				j = n.n(C);
 			const {
 				fbt: O
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = Object(m.t)(), P = Object(o.b)(() => Object(i.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = Object(m.t)(), M = Object(o.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
 					const n = Object(m.m)(e, t) || void 0,
 						s = t.redditStyle || Object(f.m)(e, {
@@ -1639,7 +1639,7 @@
 					})))
 				}
 			}
-			t.a = M(P(Object(d.a)(Object(c.c)(S))))
+			t.a = P(M(Object(d.a)(Object(c.c)(S))))
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
@@ -1990,18 +1990,22 @@
 							return r.a.createElement(f, null)
 					}
 				},
-				w = n("./src/reddit/i18n/components.tsx"),
-				E = n("./src/reddit/components/PostDraft/PostDraftFooter/index.m.less"),
-				k = n.n(E);
-			const _ = l.a.div("Body", k.a),
-				C = l.a.div("Container", k.a),
-				j = l.a.a("Link", k.a),
-				O = l.a.h5("Title", k.a);
-			var M = () => r.a.createElement(C, null, r.a.createElement(O, null, r.a.createElement(w.c, null, "This is a preview of a post")), r.a.createElement(_, null, r.a.createElement(w.c, null, "You are viewing a draft shared by another person. It has not yet been posted to Reddit. See something concerning?"), r.a.createElement(j, {
+				w = n("./src/reddit/components/PostDraft/PostDraftFooter/index.m.less"),
+				E = n.n(w);
+			const {
+				fbt: k
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = l.a.div("Body", E.a), C = l.a.div("Container", E.a), j = l.a.a("Link", E.a), O = l.a.h5("Title", E.a);
+			var P = () => r.a.createElement(C, null, r.a.createElement(O, null, k._("This is a preview of a post", null, {
+					hk: "2HXXP9"
+				})), r.a.createElement(_, null, k._("You are viewing a draft shared by another person. It has not yet been posted to Reddit. See something concerning?", null, {
+					hk: "nY9fk"
+				}), r.a.createElement(j, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-should-i-do-if-i-see-something-i"
-				}, r.a.createElement(w.c, null, " Report this draft")))),
-				P = n("./src/reddit/components/PostDraft/index.m.less"),
-				S = n.n(P);
+				}, k._("Report this draft", null, {
+					hk: "1xcVwQ"
+				})))),
+				M = n("./src/reddit/components/PostDraft/index.m.less"),
+				S = n.n(M);
 			const L = l.a.div("ReviewDraftHeader", S.a),
 				N = l.a.h2("PostDraftLabel", S.a),
 				T = l.a.div("Container", S.a),
@@ -2027,7 +2031,7 @@
 					})), r.a.createElement(D, null, t.title), r.a.createElement(y, {
 						draft: t,
 						language: n
-					}), r.a.createElement(M, null)))
+					}), r.a.createElement(P, null)))
 				})),
 				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
 				F = n("./src/reddit/layout/page/Listing/index.tsx"),
@@ -2071,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.87a392d60055d99624d9.js.map
+//# sourceMappingURL=PostDraft.78ee7245fd6bd9d2b8ce.js.map

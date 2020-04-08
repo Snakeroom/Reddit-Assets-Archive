@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.fb7f64f891fb253f3498.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.aefb7ca718ef85417635.js
+// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -78,7 +78,7 @@
 						hk: "8x2US"
 					})), a.a.createElement(p.a, {
 						onClick: () => e()
-					}, a.a.createElement(c.CloseIcon, null)))), a.a.createElement(u.j, null, a.a.createElement(y, null, s.fbt._("Your request to {restrictions} to {displayName} was sent and is pending. In the meantime, you can {action} a post and browse the community.", [s.fbt._param("restrictions", _.d[t]), s.fbt._param("displayName", n.displayText), s.fbt._param("action", _.c[r])], {
+					}, a.a.createElement(c.CloseIcon, null)))), a.a.createElement(u.j, null, a.a.createElement(y, null, s.fbt._("Your request to {restrictions} to {displayName} was sent and is pending. In the meantime, you can {action} a post and browse the community.", [s.fbt._param("restrictions", _.d[t]()), s.fbt._param("displayName", n.displayText), s.fbt._param("action", _.c[r]())], {
 						hk: "2cTcEi"
 					}))), a.a.createElement(u.e, null, a.a.createElement(u.o, {
 						onClick: () => e()
@@ -157,7 +157,7 @@
 					}, this.onCancelRequest = () => {
 						this.props.sendEvent(Object(C.b)("cancel")), this.props.toggleContributorRequestModal()
 					}, this.state = {
-						message: s.fbt._("I would like to become an approved user of this community so I can {restrictions}", [s.fbt._param("restrictions", F.d[this.props.restrictions])], {
+						message: s.fbt._("I would like to become an approved user of this community so I can {restrictions}", [s.fbt._param("restrictions", F.d[this.props.restrictions]())], {
 							hk: "3tcbxn"
 						})
 					}
@@ -187,7 +187,7 @@
 						onClick: this.onCancelRequest
 					}, o.a.createElement(I, null)))), o.a.createElement(m.j, null, t ? o.a.createElement(S, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
-					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(S, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", F.d[this.props.restrictions]), s.fbt._param("displayName", e)], {
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(S, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", F.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), o.a.createElement(p.c, {
 						className: v.a.textarea,
@@ -411,4 +411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ContributorRequestPendingModal.fb7f64f891fb253f3498.js.map
+//# sourceMappingURL=ContributorRequestPendingModal.aefb7ca718ef85417635.js.map

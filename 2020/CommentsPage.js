@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b861d081262e6440c9c0.js
-// Retrieved at 4/8/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.5837b241ffaad3b2dd37.js
+// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2410,16 +2410,16 @@
 						} = e,
 						s = oe(e, ["comment"]);
 					return r.a.createElement(o.Fragment, null, (t.approvedBy || t.isApproved) && r.a.createElement(ae, {
-						desc: Object(M.a)(s.language, t),
+						desc: Object(M.a)(t),
 						id: s.approveTooltipId,
 						onMouseEnter: this.onShowApproveTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), (t.approvedBy || t.isApproved) && Ge(s.approveTooltipId, Object(M.a)(s.language, t)), Object(N.a)(t) && r.a.createElement(ue, {
-						desc: Object(M.c)(s.language, t),
+					}), (t.approvedBy || t.isApproved) && Ge(s.approveTooltipId, Object(M.a)(t)), Object(N.a)(t) && r.a.createElement(ue, {
+						desc: Object(M.c)(t),
 						id: s.removeTooltipId,
 						onMouseEnter: this.onShowRemoveTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), Object(N.a)(t) && Ge(s.removeTooltipId, Object(M.c)(s.language, t)), Object(N.a)(t) && t.isRemoved && !t.modNote && !t.modRemovalReason && r.a.createElement(ke, {
+					}), Object(N.a)(t) && Ge(s.removeTooltipId, Object(M.c)(t)), Object(N.a)(t) && t.isRemoved && !t.modNote && !t.modRemovalReason && r.a.createElement(ke, {
 						onClick: s.openRemovalReasonModal
 					}, n.fbt._("Add a removal reason", null, {
 						hk: "L6yrL"
@@ -2446,17 +2446,17 @@
 						className: Object(c.a)({
 							[se.a.removed]: !!t.bannedBy
 						}),
-						desc: Object(M.b)(s.language),
+						desc: M.b,
 						id: s.automodTooltipId,
 						key: s.automodTooltipId,
 						onMouseEnter: this.onShowAutomodTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), ("AutoModerator" === t.bannedBy || "AutoModerator" === t.approvedBy) && Ge(s.automodTooltipId, Object(M.b)(s.language)), Object(L.a)(t) && r.a.createElement(he, {
-						desc: Object(M.d)(s.language, t.numReports),
+					}), ("AutoModerator" === t.bannedBy || "AutoModerator" === t.approvedBy) && Ge(s.automodTooltipId, M.b), Object(L.a)(t) && r.a.createElement(he, {
+						desc: Object(M.d)(t.numReports),
 						id: s.reportTooltipId,
 						onMouseEnter: this.onShowReportTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), Object(L.a)(t) && Ge(s.reportTooltipId, Object(M.d)(s.language, t.numReports)))
+					}), Object(L.a)(t) && Ge(s.reportTooltipId, Object(M.d)(t.numReports)))
 				}
 			}
 			const Ue = () => r.a.createElement(o.Fragment, null, r.a.createElement(Y.c, {
@@ -7435,16 +7435,16 @@
 					text: D(O)
 				}, z))), (G.isApproved || G.approvedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(y.a, {
 					className: N.a.approveIcon,
-					desc: Object(f.a)(O, G),
+					desc: Object(f.a)(G),
 					id: q,
 					onMouseEnter: U(q),
 					onMouseLeave: H
 				}), o.a.createElement(u.c, M({
 					tooltipId: q,
-					text: Object(f.a)(O, G)
+					text: Object(f.a)(G)
 				}, z))), Object(g.a)(G) && o.a.createElement(n.Fragment, null, o.a.createElement(k.a, {
 					className: N.a.removeIcon,
-					desc: Object(f.c)(O, G),
+					desc: Object(f.c)(G),
 					id: $,
 					onMouseEnter: U($),
 					onMouseLeave: H
@@ -7457,7 +7457,7 @@
 					onMouseLeave: H
 				}, o.a.createElement(i.c, null, "Removal reason")), o.a.createElement(u.c, M({
 					tooltipId: $,
-					text: Object(f.c)(O, G)
+					text: Object(f.c)(G)
 				}, z))), G.bannedBy && G.isSpam && o.a.createElement(n.Fragment, null, o.a.createElement(w.a, {
 					className: N.a.spamIcon,
 					desc: Object(f.e)(O, G),
@@ -7469,22 +7469,22 @@
 					text: Object(f.e)(O, G)
 				}, z))), ("AutoModerator" === G.approvedBy || "AutoModerator" === G.bannedBy) && o.a.createElement(n.Fragment, null, o.a.createElement(I.a, {
 					className: Object(l.a)(N.a.automoderator, !!G.bannedBy && N.a.isRemoved),
-					desc: Object(f.b)(O),
+					desc: f.b,
 					id: Q,
 					onMouseEnter: U(Q),
 					onMouseLeave: H
 				}), o.a.createElement(u.c, M({
 					tooltipId: Q,
-					text: Object(f.b)(O)
+					text: f.b
 				}, z))), Object(v.a)(G) && !T && o.a.createElement(n.Fragment, null, o.a.createElement(j.a, {
 					className: N.a.reportIcon,
-					desc: Object(f.d)(O, G.numReports),
+					desc: Object(f.d)(G.numReports),
 					id: ee,
 					onMouseEnter: U(ee),
 					onMouseLeave: H
 				}), o.a.createElement(u.c, M({
 					tooltipId: ee,
-					text: Object(f.d)(O, G.numReports)
+					text: Object(f.d)(G.numReports)
 				}, z))))
 			}))
 		},
@@ -16134,4 +16134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.b861d081262e6440c9c0.js.map
+//# sourceMappingURL=CommentsPage.5837b241ffaad3b2dd37.js.map

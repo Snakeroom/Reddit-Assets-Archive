@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.893fdc5d2af2da36fce3.js
-// Retrieved at 3/23/2020, 3:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.b02c9a7a0ed2d8937348.js
+// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -70,7 +70,7 @@
 					}, this.onCancelRequest = () => {
 						this.props.sendEvent(Object(_.b)("cancel")), this.props.toggleContributorRequestModal()
 					}, this.state = {
-						message: s.fbt._("I would like to become an approved user of this community so I can {restrictions}", [s.fbt._param("restrictions", v.d[this.props.restrictions])], {
+						message: s.fbt._("I would like to become an approved user of this community so I can {restrictions}", [s.fbt._param("restrictions", v.d[this.props.restrictions]())], {
 							hk: "3tcbxn"
 						})
 					}
@@ -100,7 +100,7 @@
 						onClick: this.onCancelRequest
 					}, o.a.createElement(w, null)))), o.a.createElement(m.j, null, t ? o.a.createElement(M, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
-					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(M, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]), s.fbt._param("displayName", e)], {
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(M, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), o.a.createElement(p.c, {
 						className: q.a.textarea,
@@ -324,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ContributorRequestRequestModal.893fdc5d2af2da36fce3.js.map
+//# sourceMappingURL=ContributorRequestRequestModal.b02c9a7a0ed2d8937348.js.map
