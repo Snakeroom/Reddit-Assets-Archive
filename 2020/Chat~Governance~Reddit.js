@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8bf07348a2ac0f907cf4.js
-// Retrieved at 4/8/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.37db5b412828b3ada890.js
+// Retrieved at 4/8/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11131,14 +11131,14 @@
 					}))
 				},
 				U = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("df7b07e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("cd107c9-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "df7b07e-production",
+						release: "cd107c9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new s.Integrations.Breadcrumbs({
@@ -11147,7 +11147,7 @@
 							onerror: !0,
 							onunhandledrejection: !1
 						})],
-						beforeSend: e => (e = Object(B.b)(e), Object(R.b)(i(), e), e)
+						beforeSend: e => (e = Object(B.b)(e), Object(R.b)(i(), e), Object(B.e)(e))
 					}), t.tags && o.j(t.tags), o.i("app", e)
 				};
 			async function G(e) {
@@ -11500,7 +11500,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "df7b07e-production",
+							releaseClient: "cd107c9-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -12432,8 +12432,10 @@
 				return d
 			})), i.d(t, "b", (function() {
 				return a
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return l
+			})), i.d(t, "d", (function() {
+				return u
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.replace.js"), i("./node_modules/core-js/modules/es6.symbol.js");
 			var n = i("./node_modules/@sentry/integrations/esm/dedupe.js"),
@@ -12454,13 +12456,17 @@
 			}
 
 			function a(e) {
-				const {
-					settings: t
-				} = e, i = s(e, ["settings"]);
-				return JSON.parse(JSON.stringify(i))
+				return JSON.parse(JSON.stringify(e))
 			}
 
-			function l() {
+			function l(e) {
+				const {
+					settings: t
+				} = e;
+				return s(e, ["settings"])
+			}
+
+			function u() {
 				const e = /^webpack(-internal)?\:\/\/\//;
 				return [new n.a, new r.a({
 					iteratee: t => (t.filename && (t.filename = t.filename.replace(e, "")), t.abs_path && (t.abs_path = t.abs_path.replace(e, "")), t)
@@ -28402,4 +28408,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.8bf07348a2ac0f907cf4.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.37db5b412828b3ada890.js.map
