@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.fc097cb5e870e9609824.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8fe7f356ab39609f3a6b.js
+// Retrieved at 4/8/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/components/Reports/index.m.less": function(e, t, o) {
@@ -20,8 +20,8 @@
 				d = o("./src/reddit/components/Reports/index.m.less"),
 				p = o.n(d);
 			const {
-				fbt: i
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), c = n.a.div("ReportText", p.a), l = n.a.div("ReportsTitle", p.a), a = n.a.div("Reports", p.a);
+				fbt: l
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), i = n.a.div("ReportText", p.a), c = n.a.div("ReportsTitle", p.a), a = n.a.div("Reports", p.a);
 			t.a = e => {
 				const {
 					className: t,
@@ -30,18 +30,18 @@
 				} = e;
 				return s.a.createElement("div", {
 					className: t
-				}, o && o.length > 0 && s.a.createElement(a, null, s.a.createElement(l, null, i._("Moderator Reports", null, {
+				}, o && o.length > 0 && s.a.createElement(a, null, s.a.createElement(c, null, l._("Moderator Reports", null, {
 					hk: "3hZ0oX"
 				})), o.map(e => {
 					let [t, o] = e;
-					return s.a.createElement(c, {
+					return s.a.createElement(i, {
 						key: "mod-".concat(o)
 					}, "u/".concat(o, ": ").concat(t))
-				})), r && r.length > 0 && s.a.createElement(a, null, s.a.createElement(l, null, i._("User Reports", null, {
+				})), r && r.length > 0 && s.a.createElement(a, null, s.a.createElement(c, null, l._("User Reports", null, {
 					hk: "2KeCLz"
 				})), r.map(e => {
 					let [t, o] = e;
-					return s.a.createElement(c, {
+					return s.a.createElement(i, {
 						key: "user-".concat(t)
 					}, "".concat(o, ": ").concat(t))
 				})))
@@ -69,38 +69,42 @@
 				n = o("./node_modules/react-redux/es/index.js"),
 				d = o("./node_modules/reselect/es/index.js"),
 				p = o("./src/lib/lessComponent.tsx"),
-				i = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				c = o("./src/reddit/controls/Dropdown/index.tsx"),
-				l = o("./src/reddit/selectors/tooltip.ts"),
-				a = o("./src/reddit/components/Reports/index.tsx"),
-				m = o("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				u = o("./src/reddit/i18n/utils.ts"),
+				l = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				i = o("./src/reddit/controls/Dropdown/index.tsx"),
+				c = o("./src/reddit/selectors/tooltip.ts"),
+				a = o("./node_modules/fbt/lib/FbtPublic.js"),
+				m = o("./src/reddit/components/Reports/index.tsx"),
+				u = o("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
 				R = o("./src/reddit/layout/row/Inline/index.tsx"),
 				x = o("./src/reddit/components/ViewReportsDropdown/ReportsList.m.less"),
-				w = o.n(x);
-			const _ = p.a.wrapped(R.a, "Footer", w.a),
-				D = p.a.wrapped(m.c, "FooterButton", w.a);
-			var E = e => s.a.createElement("div", null, s.a.createElement(a.a, {
+				_ = o.n(x);
+			const w = p.a.wrapped(R.a, "Footer", _.a),
+				b = p.a.wrapped(u.c, "FooterButton", _.a);
+			var D = e => s.a.createElement("div", null, s.a.createElement(m.a, {
 					modReports: e.modReports,
 					userReports: e.userReports
-				}), !e.isShowingHistoricalReports && s.a.createElement(_, null, s.a.createElement(D, {
+				}), !e.isShowingHistoricalReports && s.a.createElement(w, null, s.a.createElement(b, {
 					onClick: e.onIgnoreReports,
-					text: e.ignoreReports ? Object(u.c)("Restore reports") : Object(u.c)("Ignore reports")
+					text: e.ignoreReports ? a.fbt._("Restore reports", null, {
+						hk: "3wbqh7"
+					}) : a.fbt._("Ignore reports", null, {
+						hk: "4dr3Qm"
+					})
 				}))),
-				O = o("./src/reddit/components/ViewReportsDropdown/index.m.less"),
-				b = o.n(O);
-			const A = p.a.wrapped(c.a, "StyledDropdown", b.a),
-				f = Object(d.c)({
+				E = o("./src/reddit/components/ViewReportsDropdown/index.m.less"),
+				O = o.n(E);
+			const f = p.a.wrapped(i.a, "StyledDropdown", O.a),
+				A = Object(d.c)({
 					isDropdownOpen: (e, t) => {
 						let {
 							tooltipId: o
 						} = t;
-						return Object(l.b)(o)(e)
+						return Object(c.b)(o)(e)
 					}
 				}),
-				I = Object(n.b)(f),
-				g = Object(i.a)(A),
-				j = I(e => {
+				I = Object(n.b)(A),
+				g = Object(l.a)(f),
+				T = I(e => {
 					const t = !(!e.model.numReports || -1 !== e.model.numReports),
 						o = t ? e.model.modReportsDismissed || [] : e.model.modReports,
 						r = t ? e.model.userReportsDismissed || [] : e.model.userReports;
@@ -108,7 +112,7 @@
 						className: e.className,
 						isOpen: e.isDropdownOpen,
 						tooltipId: e.tooltipId
-					}, s.a.createElement(E, {
+					}, s.a.createElement(D, {
 						ignoreReports: e.model.ignoreReports,
 						modReports: o,
 						onIgnoreReports: e.onIgnoreReports,
@@ -116,8 +120,8 @@
 						userReports: r
 					}))
 				});
-			t.default = j
+			t.default = T
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ViewReportsDropdown-index.fc097cb5e870e9609824.js.map
+//# sourceMappingURL=reddit-components-ViewReportsDropdown-index.8fe7f356ab39609f3a6b.js.map
