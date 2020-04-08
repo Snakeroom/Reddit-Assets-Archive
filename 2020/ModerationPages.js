@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f872ab38c21c1b02f3ec.js
-// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.22f18599983d72457f37.js
+// Retrieved at 4/8/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -8653,28 +8653,28 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				a = s("./src/lib/constants/index.ts"),
-				r = s("./src/lib/lessComponent.tsx"),
-				i = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				d = s("./src/reddit/i18n/utils.ts"),
+				r = s("./node_modules/fbt/lib/FbtPublic.js"),
+				i = s("./src/lib/lessComponent.tsx"),
+				d = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				l = s("./src/reddit/icons/svgs/RadioOff/index.tsx"),
 				c = s("./src/reddit/icons/svgs/RadioOn/index.tsx"),
 				m = s("./src/reddit/layout/row/Inline/index.tsx"),
 				u = s("./src/reddit/components/DistinguishCommentDropdown/DistinguishOptions.m.less"),
 				p = s.n(u);
-			const b = r.a.div("DistinguishWrapper", p.a),
-				h = r.a.wrapped(m.a, "Inline", p.a),
-				g = r.a.wrapped(l.a, "RadioOff", p.a),
-				f = r.a.wrapped(c.a, "RadioOn", p.a),
+			const b = i.a.div("DistinguishWrapper", p.a),
+				h = i.a.wrapped(m.a, "Inline", p.a),
+				g = i.a.wrapped(l.a, "RadioOff", p.a),
+				f = i.a.wrapped(c.a, "RadioOn", p.a),
 				x = e => o.a.createElement(h, {
 					onClick: e.selected ? void 0 : e.onClick
 				}, e.selected ? o.a.createElement(f, null) : o.a.createElement(g, null), e.text),
-				E = r.a.wrapped(e => {
+				E = i.a.wrapped(e => {
 					const {
 						className: t,
 						style: s,
 						isAdminDistinguished: n,
-						isUserEmployee: r,
-						isUserMod: i,
+						isUserEmployee: i,
+						isUserMod: d,
 						isModDistinguished: l,
 						isStickied: c,
 						isTopLevelComment: m,
@@ -8686,22 +8686,30 @@
 					}, o.a.createElement(x, {
 						onClick: () => u(a.B.NONE, null),
 						selected: !l && !n,
-						text: Object(d.c)("Undistinguish")
-					}), i && o.a.createElement(x, {
+						text: r.fbt._("Undistinguish", null, {
+							hk: "1P0FyT"
+						})
+					}), d && o.a.createElement(x, {
 						onClick: () => u(a.B.MODERATOR, null),
 						selected: l && !c,
-						text: Object(d.c)("Distinguish as Mod")
-					}), m && i && o.a.createElement(x, {
+						text: r.fbt._("Distinguish as Mod", null, {
+							hk: "KDx42"
+						})
+					}), m && d && o.a.createElement(x, {
 						onClick: () => u(a.B.MODERATOR, !0),
 						selected: c,
-						text: Object(d.c)("Distinguish as Mod and Sticky")
-					}), r && o.a.createElement(x, {
+						text: r.fbt._("Distinguish as Mod and Sticky", null, {
+							hk: "1J1DBd"
+						})
+					}), i && o.a.createElement(x, {
 						onClick: () => u(a.B.ADMIN, null),
 						selected: n,
-						text: Object(d.c)("Distinguish as Admin")
+						text: r.fbt._("Distinguish as Admin", null, {
+							hk: "1JsJOX"
+						})
 					}))
 				}, "DistinguishOptions", p.a);
-			var v = Object(i.a)(E);
+			var v = Object(d.a)(E);
 			t.a = e => {
 				const {
 					className: t,
@@ -28652,4 +28660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.f872ab38c21c1b02f3ec.js.map
+//# sourceMappingURL=ModerationPages.22f18599983d72457f37.js.map

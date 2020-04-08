@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.5837b241ffaad3b2dd37.js
-// Retrieved at 4/8/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.e28dc559efd9223274f6.js
+// Retrieved at 4/8/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4876,28 +4876,28 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/constants/index.ts"),
-				i = s("./src/lib/lessComponent.tsx"),
-				a = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				d = s("./src/reddit/i18n/utils.ts"),
+				i = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./src/lib/lessComponent.tsx"),
+				d = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				c = s("./src/reddit/icons/svgs/RadioOff/index.tsx"),
 				l = s("./src/reddit/icons/svgs/RadioOn/index.tsx"),
 				m = s("./src/reddit/layout/row/Inline/index.tsx"),
 				p = s("./src/reddit/components/DistinguishCommentDropdown/DistinguishOptions.m.less"),
 				u = s.n(p);
-			const h = i.a.div("DistinguishWrapper", u.a),
-				b = i.a.wrapped(m.a, "Inline", u.a),
-				x = i.a.wrapped(c.a, "RadioOff", u.a),
-				g = i.a.wrapped(l.a, "RadioOn", u.a),
+			const h = a.a.div("DistinguishWrapper", u.a),
+				b = a.a.wrapped(m.a, "Inline", u.a),
+				x = a.a.wrapped(c.a, "RadioOff", u.a),
+				g = a.a.wrapped(l.a, "RadioOn", u.a),
 				f = e => o.a.createElement(b, {
 					onClick: e.selected ? void 0 : e.onClick
 				}, e.selected ? o.a.createElement(g, null) : o.a.createElement(x, null), e.text),
-				v = i.a.wrapped(e => {
+				v = a.a.wrapped(e => {
 					const {
 						className: t,
 						style: s,
 						isAdminDistinguished: n,
-						isUserEmployee: i,
-						isUserMod: a,
+						isUserEmployee: a,
+						isUserMod: d,
 						isModDistinguished: c,
 						isStickied: l,
 						isTopLevelComment: m,
@@ -4909,22 +4909,30 @@
 					}, o.a.createElement(f, {
 						onClick: () => p(r.B.NONE, null),
 						selected: !c && !n,
-						text: Object(d.c)("Undistinguish")
-					}), a && o.a.createElement(f, {
+						text: i.fbt._("Undistinguish", null, {
+							hk: "1P0FyT"
+						})
+					}), d && o.a.createElement(f, {
 						onClick: () => p(r.B.MODERATOR, null),
 						selected: c && !l,
-						text: Object(d.c)("Distinguish as Mod")
-					}), m && a && o.a.createElement(f, {
+						text: i.fbt._("Distinguish as Mod", null, {
+							hk: "KDx42"
+						})
+					}), m && d && o.a.createElement(f, {
 						onClick: () => p(r.B.MODERATOR, !0),
 						selected: l,
-						text: Object(d.c)("Distinguish as Mod and Sticky")
-					}), i && o.a.createElement(f, {
+						text: i.fbt._("Distinguish as Mod and Sticky", null, {
+							hk: "1J1DBd"
+						})
+					}), a && o.a.createElement(f, {
 						onClick: () => p(r.B.ADMIN, null),
 						selected: n,
-						text: Object(d.c)("Distinguish as Admin")
+						text: i.fbt._("Distinguish as Admin", null, {
+							hk: "1JsJOX"
+						})
 					}))
 				}, "DistinguishOptions", u.a);
-			var C = Object(a.a)(v);
+			var C = Object(d.a)(v);
 			t.a = e => {
 				const {
 					className: t,
@@ -16134,4 +16142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.5837b241ffaad3b2dd37.js.map
+//# sourceMappingURL=CommentsPage.e28dc559efd9223274f6.js.map

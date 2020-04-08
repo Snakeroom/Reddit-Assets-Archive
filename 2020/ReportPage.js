@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.437b505a0220e9656218.js
-// Retrieved at 4/2/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.04e9444ef67e56d7540d.js
+// Retrieved at 4/8/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
@@ -154,7 +154,7 @@
 				f = c.a.footer("Footer", p.a),
 				E = c.a.a("FileAComplaintLink", p.a),
 				R = c.a.a("RedirectToRedditLink", p.a);
-			var x = e => r.a.createElement("div", {
+			var b = e => r.a.createElement("div", {
 					className: e.className
 				}, r.a.createElement(u, null, e.complaintPageTitle), r.a.createElement(g, null, e.complaintPrompt || m.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
@@ -165,8 +165,8 @@
 				}, m.fbt._("Redirect back to your home in Reddit universe", null, {
 					hk: "1pMLva"
 				})))),
-				b = n("./src/reddit/components/ReportPage/FinalPage/index.m.less"),
-				y = n.n(b);
+				x = n("./src/reddit/components/ReportPage/FinalPage/index.m.less"),
+				y = n.n(x);
 			const P = c.a.div("OptionHolder", y.a),
 				S = c.a.div("OptionHeader", y.a),
 				v = c.a.div("OptionDescription", y.a),
@@ -246,9 +246,9 @@
 				}
 			}
 			var Z = n("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
-				K = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				z = n("./src/reddit/components/ReportPage/SubredditNameInput/index.m.less"),
-				X = n.n(z);
+				z = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				K = n("./src/reddit/components/ReportPage/SubredditNameInput/index.m.less"),
+				X = n.n(K);
 			const G = c.a.header("InputDescription", p.a);
 			class Q extends r.a.Component {
 				constructor() {
@@ -282,14 +282,14 @@
 						hk: "2jQgis"
 					})), r.a.createElement("div", {
 						className: p.a.field
-					}, r.a.createElement(K.b, {
-						backgroundColorState: K.a.WhiteFields,
+					}, r.a.createElement(z.b, {
+						backgroundColorState: z.a.WhiteFields,
 						className: p.a.input,
 						label: m.fbt._("Subreddit", null, {
 							hk: "3cWPAa"
 						}),
 						onChange: this.onSubredditNameChange,
-						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : K.d.Invalid,
+						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : z.d.Invalid,
 						value: t.subredditName
 					}), !e.showErrors || !n && e.regexValid || e.isDirty ? null : r.a.createElement("div", {
 						className: X.a.errorMessage
@@ -332,14 +332,14 @@
 						className: p.a.fieldset
 					}, e.description && r.a.createElement(ee, null, e.description), r.a.createElement("div", {
 						className: p.a.field
-					}, r.a.createElement(K.b, {
-						backgroundColorState: K.a.WhiteFields,
+					}, r.a.createElement(z.b, {
+						backgroundColorState: z.a.WhiteFields,
 						className: p.a.input,
 						label: m.fbt._("Link to Post/Comment/PM on Reddit", null, {
 							hk: "23bqQ6"
 						}),
 						onChange: this.onThingUrlChange,
-						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : K.d.Invalid,
+						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : z.d.Invalid,
 						value: t.thingUrl
 					}), !e.showErrors || !n && e.regexValid || e.isDirty ? null : r.a.createElement("div", {
 						className: $.a.errorMessage
@@ -445,14 +445,14 @@
 						const i = !1 !== e.fieldsValidity["username_".concat(s)];
 						return r.a.createElement("div", {
 							className: p.a.field
-						}, r.a.createElement(K.b, {
-							backgroundColorState: K.a.WhiteFields,
+						}, r.a.createElement(z.b, {
+							backgroundColorState: z.a.WhiteFields,
 							className: p.a.input,
 							label: m.fbt._("Username", null, {
 								hk: "4hkwGi"
 							}) + (e.oneUsername ? "" : " ".concat(s + 1)),
 							onChange: this.handleUsernameChange(s),
-							state: !e.showErrors || !a && i || e.dirtyFields["username_".concat(s)] ? void 0 : K.d.Invalid,
+							state: !e.showErrors || !a && i || e.dirtyFields["username_".concat(s)] ? void 0 : z.d.Invalid,
 							value: n
 						}), t.usernames.length > 1 && this.getDeleteUsernameButton(s), e.showErrors && (a || !i) && !e.dirtyFields["username_".concat(s)] && r.a.createElement("div", {
 							className: oe.a.errorMessage
@@ -596,9 +596,9 @@
 			var fe = n("./src/reddit/controls/Button/index.tsx"),
 				Ee = n("./src/reddit/helpers/reportPage/index.ts"),
 				Re = n("./src/reddit/layout/row/Inline/index.tsx"),
-				xe = n("./src/reddit/models/RulesSequence/index.ts"),
-				be = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
-				ye = n.n(be);
+				be = n("./src/reddit/models/RulesSequence/index.ts"),
+				xe = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
+				ye = n.n(xe);
 			const Pe = c.a.header("Header", p.a),
 				Se = c.a.wrapped(Re.a, "Footer", ye.a),
 				ve = c.a.wrapped(fe.f, "SubmitButton", ye.a),
@@ -619,7 +619,7 @@
 						})
 					}, this.state = {
 						gotInitialReason: !1,
-						rulesSequence: new xe.a,
+						rulesSequence: new be.a,
 						showErrors: !1
 					}
 				}
@@ -700,13 +700,14 @@
 				Te = n("./src/reddit/selectors/user.ts"),
 				De = n("./src/reddit/pages/ReportPage/index.m.less"),
 				Ve = n.n(De);
-			const Me = Object(o.c)({
-					currentUser: Te.i,
-					reportPageRules: e => e.reportPage.reportPageRules,
-					crisisFlowEnabled: Ne.b
-				}),
-				Le = Object(a.b)(Me);
-			class Ae extends r.a.Component {
+			const {
+				fbt: Me
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(o.c)({
+				currentUser: Te.i,
+				reportPageRules: e => e.reportPage.reportPageRules,
+				crisisFlowEnabled: Ne.b
+			}), Ae = Object(a.b)(Le);
+			class je extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						dirtyFields: {},
@@ -835,12 +836,12 @@
 						className: Ve.a.content
 					}, r.a.createElement("h1", {
 						className: Ve.a.header
-					}, r.a.createElement(M.a, {
-						msgId: "reportPage.header"
+					}, Me._("Submit a report", null, {
+						hk: "3IySnr"
 					})), e.reportPageRules && e.reportPageRules.length ? r.a.createElement("div", {
 						className: Ve.a.form
-					}, this.getContentWithModal()) : r.a.createElement("div", null, r.a.createElement(M.a, {
-						msgId: "reportPage.loading"
+					}, this.getContentWithModal()) : r.a.createElement("div", null, Me._("Loading...", null, {
+						hk: "47z90C"
 					})))) : null
 				}
 				getContent() {
@@ -849,7 +850,7 @@
 					} = this, {
 						chosenReasonPayload: t
 					} = e;
-					return t && t.reason.fileComplaint && e.showFileAComplaintPage ? r.a.createElement(s.Fragment, null, r.a.createElement(x, {
+					return t && t.reason.fileComplaint && e.showFileAComplaintPage ? r.a.createElement(s.Fragment, null, r.a.createElement(b, {
 						complaintButtonText: t.reason.complaintButtonText,
 						complaintPageTitle: t.reason.complaintPageTitle,
 						complaintPrompt: t.reason.complaintPrompt,
@@ -895,8 +896,8 @@
 					})
 				}
 			}
-			t.default = Object(we.b)(Le(Ae))
+			t.default = Object(we.b)(Ae(je))
 		}
 	}
 ]);
-//# sourceMappingURL=ReportPage.437b505a0220e9656218.js.map
+//# sourceMappingURL=ReportPage.04e9444ef67e56d7540d.js.map
