@@ -1,44 +1,50 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.876f0501f5ccbc1b0afa.js
-// Retrieved at 4/2/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.9aa714865a0ac72afa96.js
+// Retrieved at 4/8/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				i = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				l = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				a = n.n(r),
+				o = n("./src/lib/classNames/index.ts"),
+				d = n("./src/lib/lessComponent.tsx"),
+				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				l = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				c = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
 				u = n.n(c);
-			const m = o.a.div("BanLength", u.a),
-				p = o.a.wrapped(d.m, "BanLengthDays", u.a),
-				h = o.a.wrapped(d.h, "NumberInput", u.a),
-				b = o.a.div("StyledPermanentLabel", u.a),
-				x = o.a.div("DescriptionText", u.a),
-				g = o.a.div("BanLengthContainer", u.a),
-				C = o.a.div("CheckboxWrapper", u.a),
-				f = o.a.div("PermanentCheckbox", u.a);
-			t.a = e => r.a.createElement(d.f, null, r.a.createElement(d.i, null, Object(l.c)("How long?")), r.a.createElement(g, null, r.a.createElement(m, {
-				className: Object(a.a)({
+			const m = d.a.div("BanLength", u.a),
+				p = d.a.wrapped(i.m, "BanLengthDays", u.a),
+				h = d.a.wrapped(i.h, "NumberInput", u.a),
+				b = d.a.div("StyledPermanentLabel", u.a),
+				x = d.a.div("DescriptionText", u.a),
+				g = d.a.div("BanLengthContainer", u.a),
+				C = d.a.div("CheckboxWrapper", u.a),
+				f = d.a.div("PermanentCheckbox", u.a);
+			t.a = e => a.a.createElement(i.f, null, a.a.createElement(i.i, null, s.fbt._("How long?", null, {
+				hk: "1InKw6"
+			})), a.a.createElement(g, null, a.a.createElement(m, {
+				className: Object(o.a)({
 					[u.a.isDisabled]: e.isDurationPermanent
 				})
-			}, r.a.createElement(h, {
+			}, a.a.createElement(h, {
 				tabIndex: 0,
 				disabled: e.isDurationPermanent,
 				onChange: e.onChangeDuration,
 				min: "0",
 				type: "number",
 				value: void 0 !== e.duration && null !== e.duration ? e.duration : ""
-			}), r.a.createElement(p, null, Object(l.c)("Days"))), r.a.createElement(b, {
+			}), a.a.createElement(p, null, s.fbt._("Days", null, {
+				hk: "2TkJg0"
+			}))), a.a.createElement(b, {
 				onClick: e.togglePermanent
-			}, r.a.createElement(f, {
+			}, a.a.createElement(f, {
 				onKeyDown: e.togglePermanent
-			}, r.a.createElement(C, {
+			}, a.a.createElement(C, {
 				tabIndex: 0
-			}, e.isDurationPermanent ? r.a.createElement(i.b, null) : r.a.createElement(i.a, null))), r.a.createElement(x, null, Object(l.c)("Permanent")))))
+			}, e.isDurationPermanent ? a.a.createElement(l.b, null) : a.a.createElement(l.a, null))), a.a.createElement(x, null, s.fbt._("Permanent", null, {
+				hk: "172B1w"
+			})))))
 		},
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.m.less": function(e, t, n) {
 			e.exports = {
@@ -56,29 +62,29 @@
 		},
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/reddit/constants/keycodes.ts"),
-				l = n("./src/reddit/controls/Dropdown/index.tsx"),
-				c = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				u = n("./src/reddit/i18n/utils.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				a = n.n(r),
+				o = n("./node_modules/react-redux/es/index.js"),
+				d = n("./node_modules/reselect/es/index.js"),
+				i = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/reddit/constants/keycodes.ts"),
+				c = n("./src/reddit/controls/Dropdown/index.tsx"),
+				u = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				m = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				p = n("./src/reddit/selectors/oldSiteRules.ts"),
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.m.less"),
 				x = n.n(b);
-			const g = d.a.div("Container", x.a),
-				C = d.a.wrapped(l.a, "Dropdown", x.a),
-				f = d.a.wrapped(c.b, "DropdownRow", x.a),
-				_ = Object(o.c)({
+			const g = i.a.div("Container", x.a),
+				C = i.a.wrapped(c.a, "Dropdown", x.a),
+				f = i.a.wrapped(u.b, "DropdownRow", x.a),
+				_ = Object(d.c)({
 					oldSiteRules: p.a,
 					subredditRules: h.O
 				}),
-				w = Object(a.b)(_);
-			class y extends r.a.Component {
+				w = Object(o.b)(_);
+			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.api = null, this.closeDropdown = () => {
 						this.state.isOpen && this.setState({
@@ -87,7 +93,7 @@
 					}, this.handleToggleDropdown = () => this.setState({
 						isOpen: !this.state.isOpen
 					}), this.handleSelectReason = (e, t) => {
-						this.props.onSelectReason(t), e.key !== i.b.Tab && e.preventDefault(), this.closeDropdown()
+						this.props.onSelectReason(t), e.key !== l.b.Tab && e.preventDefault(), this.closeDropdown()
 					}, this.getRuleShortNames = () => {
 						return [...this.props.subredditRules ? this.props.subredditRules.map(e => e.shortName) : [], ...this.props.oldSiteRules, "other"]
 					}, this.state = {
@@ -100,7 +106,7 @@
 				componentDidMount() {
 					this.props.onDropdownApi && this.props.onDropdownApi(this.api)
 				}
-				componentWillMount() {
+				UNSAFE_componentWillMount() {
 					this.props.onDropdownApi && this.props.onDropdownApi(null)
 				}
 				render() {
@@ -108,14 +114,16 @@
 						props: e,
 						state: t
 					} = this;
-					return r.a.createElement(g, null, r.a.createElement("button", {
+					return a.a.createElement(g, null, a.a.createElement("button", {
 						className: x.a.dropdownTarget,
 						onClick: this.handleToggleDropdown
-					}, r.a.createElement("div", {
+					}, a.a.createElement("div", {
 						className: x.a.targetText
-					}, e.reason || Object(u.c)("None")), r.a.createElement(m.b, null)), t.isOpen && r.a.createElement(C, {
+					}, e.reason || s.fbt._("None", null, {
+						hk: "1IYbYO"
+					})), a.a.createElement(m.b, null)), t.isOpen && a.a.createElement(C, {
 						isOverlay: !0
-					}, this.getRuleShortNames().map((t, n) => r.a.createElement(f, {
+					}, this.getRuleShortNames().map((t, n) => a.a.createElement(f, {
 						key: t,
 						displayText: t,
 						index: n,
@@ -769,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BannedUserModal.876f0501f5ccbc1b0afa.js.map
+//# sourceMappingURL=BannedUserModal.9aa714865a0ac72afa96.js.map

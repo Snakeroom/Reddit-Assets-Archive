@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.4b971f3a9449885de6b1.js
-// Retrieved at 3/17/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.c10777401916f606c91c.js
+// Retrieved at 4/8/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -205,7 +205,9 @@
 		},
 		"./src/reddit/pages/SubredditCreation/index.tsx": function(e, t, a) {
 			"use strict";
-			a.r(t);
+			a.r(t), a.d(t, "radioOptions", (function() {
+				return he
+			}));
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/react/index.js"),
 				i = a.n(n),
@@ -352,9 +354,6 @@
 				X = a("./src/reddit/pages/SubredditCreation/index.m.less"),
 				G = a.n(X),
 				$ = a("./src/lib/lessComponent.tsx");
-			a.d(t, "radioOptions", (function() {
-				return he
-			}));
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
@@ -389,7 +388,7 @@
 					})),
 					onHideTooltip: () => e(Object(u.i)())
 				})),
-				he = (e, t, a) => [i.a.createElement(ne, {
+				he = (e, t) => [i.a.createElement(ne, {
 					key: "public",
 					showButton: !0,
 					value: "public"
@@ -419,7 +418,7 @@
 					hk: "1iBTDq"
 				})), i.a.createElement("div", {
 					className: Object(c.a)(G.a.metafieldDescription, G.a.radioDescription)
-				}, Object(K.g)(a))))), i.a.createElement(ne, {
+				}, Object(K.g)(t))))), i.a.createElement(ne, {
 					key: "private",
 					showButton: !0,
 					value: "private"
@@ -439,7 +438,7 @@
 					key: "employees_only",
 					showButton: !0,
 					value: "employees_only",
-					hidden: !t
+					hidden: !e
 				}, i.a.createElement("div", {
 					className: G.a.radioContent
 				}, i.a.createElement("div", null, i.a.createElement(ce, null)), i.a.createElement("div", {
@@ -658,7 +657,7 @@
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
-					}, he(r, a, "post"))), i.a.createElement("div", {
+					}, he(a, "post"))), i.a.createElement("div", {
 						className: Object(c.a)(G.a.field, {
 							[G.a.isCreatePending]: t
 						})
@@ -708,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.4b971f3a9449885de6b1.js.map
+//# sourceMappingURL=SubredditCreation.c10777401916f606c91c.js.map
