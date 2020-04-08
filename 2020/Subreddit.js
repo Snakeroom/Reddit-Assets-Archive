@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e16681deabf160bce97c.js
-// Retrieved at 4/8/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2d4a5820760fba9ea845.js
+// Retrieved at 4/8/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -4718,10 +4718,10 @@
 					const u = Object(be.a)(d),
 						p = Object(be.b)(d),
 						b = Object(be.c)(d),
-						y = u || p,
-						v = this.getCommunityWidgets(),
-						O = this.makeFlairFilterWidget(),
-						w = this.makeRelatedCommunitiesWidget(u, p),
+						y = u || p;
+					let v, O;
+					!!this.getPostFlairWidget() ? v = this.props.widgets : (v = this.getCommunityWidgets(), O = this.makeFlairFilterWidget());
+					const w = this.makeRelatedCommunitiesWidget(u, p),
 						N = !u,
 						S = p,
 						P = o.a.createElement(E.a, {
@@ -7164,4 +7164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.e16681deabf160bce97c.js.map
+//# sourceMappingURL=Subreddit.2d4a5820760fba9ea845.js.map
