@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.bfd3fc6ac08e983b74bb.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.07ff70dcd4bc84ba19f9.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -887,7 +887,7 @@
 			async function b(e, t, s) {
 				await c();
 				const r = a() || "";
-				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(Object(n.c)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(Object(n.b)("Please select your registered address in MetaMask: ") + t);
 				return d(e, Promise.resolve(h), "subscribe", [t, s])
 			}
 
@@ -904,7 +904,7 @@
 						else {
 							const e = t && t.result;
 							e ? s(e) : r({
-								message: Object(n.c)("No signature returned from ethereum provider.")
+								message: Object(n.b)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -1020,4 +1020,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.bfd3fc6ac08e983b74bb.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.07ff70dcd4bc84ba19f9.js.map

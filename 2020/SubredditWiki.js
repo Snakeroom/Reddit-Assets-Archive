@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d1c00d82783316bbd060.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.4dc7640009fcb7cc109a.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -3653,7 +3653,7 @@
 					return o.a.createElement("button", {
 						"aria-expanded": i,
 						"aria-haspopup": !0,
-						"aria-label": Object(T.c)("Chat menu"),
+						"aria-label": Object(T.b)("Chat menu"),
 						className: Object(N.a)(A.a.top, t),
 						id: d,
 						onClick: () => r(d)
@@ -6225,4 +6225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.d1c00d82783316bbd060.js.map
+//# sourceMappingURL=SubredditWiki.4dc7640009fcb7cc109a.js.map

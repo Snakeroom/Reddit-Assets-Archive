@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.4c44336741f4ca6438cf.js
-// Retrieved at 4/2/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.391b48aa41bc3e1c991e.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, s, a) {
@@ -20,8 +20,8 @@
 			s.a = e => n.a.createElement("div", {
 				className: Object(r.a)(i.a.coinBalance, e.className),
 				"data-redditstyle": !0
-			}, Object(c.a)(t.fbt._("Coin balance:: :coin:{coinBalance}", [t.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
-				hk: "3rsL0j"
+			}, Object(c.a)(t.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [t.fbt._param("Coin icon placeholder", ":coin:"), t.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+				hk: "2x0upn"
 			}), {
 				":coin:": n.a.createElement(d.a, null)
 			}), " ", n.a.createElement("a", {
@@ -51,9 +51,9 @@
 				C = a("./src/reddit/constants/colors.ts"),
 				P = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				b = a("./src/reddit/helpers/trackers/goldPayment.ts"),
-				y = a("./src/reddit/models/Gold/Coins/index.ts"),
-				j = a("./src/reddit/models/Toast/index.ts"),
-				x = a("./src/reddit/models/User/index.ts"),
+				x = a("./src/reddit/models/Gold/Coins/index.ts"),
+				y = a("./src/reddit/models/Toast/index.ts"),
+				j = a("./src/reddit/models/User/index.ts"),
 				E = a("./src/reddit/selectors/gild.ts"),
 				v = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				O = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -127,7 +127,7 @@
 					purchaseCatalogPending: O.e,
 					userName: e => {
 						const s = Object(f.i)(e);
-						return "u/".concat(Object(x.f)(s))
+						return "u/".concat(Object(j.f)(s))
 					}
 				}),
 				F = Object(n.b)(D, (e, s) => ({
@@ -137,7 +137,7 @@
 					loadSavedCards: () => e(Object(p.loadSavedCards)()),
 					onFailedToLoadCatalog: s => {
 						const a = {
-							kind: j.b.Error,
+							kind: y.b.Error,
 							text: s
 						};
 						return e(Object(h.e)(a))
@@ -206,13 +206,13 @@
 						savedCardsPending: C,
 						selectedAward: P,
 						selectedPayment: b,
-						stripeErrorMessage: j,
-						stripeTokenPending: x,
+						stripeErrorMessage: y,
+						stripeTokenPending: j,
 						userName: E
 					} = this.props;
 					if (h) return i(h), p(), null;
 					const v = !!r,
-						O = Object(y.b)(n, t, v);
+						O = Object(x.b)(n, t, v);
 					return g || !O ? o.a.createElement("div", {
 						className: s
 					}, o.a.createElement(I, {
@@ -232,8 +232,8 @@
 						savedCardsPending: C,
 						selectedAward: P,
 						selectedPayment: b,
-						stripeErrorMessage: j,
-						stripeTokenPending: x,
+						stripeErrorMessage: y,
+						stripeTokenPending: j,
 						userName: E
 					}), "paymentCompleted" === e && o.a.createElement(A.a, {
 						isCompletePaypal: c,
@@ -300,4 +300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.4c44336741f4ca6438cf.js.map
+//# sourceMappingURL=CoinsPurchaseModal.391b48aa41bc3e1c991e.js.map

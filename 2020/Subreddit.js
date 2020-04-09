@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.dbaa4774ce5ab2274991.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7be86be4364527b84422.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -63,7 +63,7 @@
 				i = (e, t, n) => {
 					const o = t ? e.getUTCMonth() : e.getMonth(),
 						i = n ? a : r;
-					return Object(s.c)(i[o])
+					return Object(s.b)(i[o])
 				},
 				d = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
@@ -4067,7 +4067,7 @@
 					return i.a.createElement("button", {
 						"aria-expanded": a,
 						"aria-haspopup": !0,
-						"aria-label": Object(T.c)("Chat menu"),
+						"aria-label": Object(T.b)("Chat menu"),
 						className: Object(N.a)(W.a.top, t),
 						id: d,
 						onClick: () => r(d)
@@ -7180,4 +7180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.dbaa4774ce5ab2274991.js.map
+//# sourceMappingURL=Subreddit.7be86be4364527b84422.js.map

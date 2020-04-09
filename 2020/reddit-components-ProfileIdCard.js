@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.000a203e13c7411339b4.js
-// Retrieved at 4/9/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.eb2bd2708da7fd76c915.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -23,7 +23,7 @@
 				i = (e, t, n) => {
 					const a = t ? e.getUTCMonth() : e.getMonth(),
 						i = n ? o : s;
-					return Object(r.c)(i[a])
+					return Object(r.b)(i[a])
 				},
 				c = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
@@ -210,8 +210,8 @@
 				_ = n("./src/lib/prettyPrintNumber/index.ts"),
 				y = n("./src/lib/timeAgo/index.ts"),
 				I = n("./src/reddit/contexts/InsideOverlay.tsx"),
-				E = n("./src/reddit/icons/svgs/Cake/index.tsx"),
-				O = n("./src/reddit/icons/svgs/Karma/index.tsx"),
+				O = n("./src/reddit/icons/svgs/Cake/index.tsx"),
+				E = n("./src/reddit/icons/svgs/Karma/index.tsx"),
 				M = n("./src/reddit/icons/svgs/User/index.tsx"),
 				P = n("./src/reddit/selectors/profile.ts"),
 				k = n("./src/reddit/selectors/user.ts"),
@@ -311,7 +311,7 @@
 						hk: "26iPTL"
 					});
 					return a.a.createElement(Z, null, a.a.createElement(A, {
-						icon: a.a.createElement(O.a, {
+						icon: a.a.createElement(E.a, {
 							className: H.a.icon,
 							key: "karma"
 						}),
@@ -322,7 +322,7 @@
 						tooltipId: l,
 						tooltip: "".concat(m, "\n").concat(u)
 					}), a.a.createElement(A, {
-						icon: a.a.createElement(E.a, {
+						icon: a.a.createElement(O.a, {
 							className: H.a.icon,
 							key: "cakeDay"
 						}),
@@ -515,8 +515,8 @@
 				_ = n("./src/lib/classNames/index.ts"),
 				y = n("./src/reddit/actions/gold/modals.ts"),
 				I = n("./src/reddit/actions/modal.ts"),
-				E = n("./src/reddit/actions/multireddit/index.ts"),
-				O = n("./src/reddit/actions/profile/index.ts"),
+				O = n("./src/reddit/actions/multireddit/index.ts"),
+				E = n("./src/reddit/actions/profile/index.ts"),
 				M = n("./src/reddit/components/CrisisFlow/index.tsx"),
 				P = n("./src/higherOrderComponents/makeAsync.tsx"),
 				k = n("./src/lib/loadWithRetries/index.ts");
@@ -727,10 +727,10 @@
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(E.g)(!0, !0)), e(Object(I.h)(L.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(O.g)(!0, !0)), e(Object(I.h)(L.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
 						onClickGivePremium: () => e(Object(y.e)(n)),
-						onModeratorsRequested: () => e(Object(O.b)(n))
+						onModeratorsRequested: () => e(Object(E.b)(n))
 					}
 				})(Z),
 				z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
@@ -840,11 +840,11 @@
 					isGold: w,
 					prefShowSnoovatar: _,
 					username: y
-				} = h, I = !!t && t.id === x, E = p && p.bannerBackgroundImage, O = !!d && d.isNSFW, M = O && r, P = !(!m || !m.userIsSubscriber), k = "/user/".concat(y, "/"), j = g && g.url === k;
+				} = h, I = !!t && t.id === x, O = p && p.bannerBackgroundImage, E = !!d && d.isNSFW, M = E && r, P = !(!m || !m.userIsSubscriber), k = "/user/".concat(y, "/"), j = g && g.url === k;
 				return s.a.createElement(l.a, {
 					isEmployee: v,
 					isGold: w,
-					isNSFW: O,
+					isNSFW: E,
 					isOverlay: a,
 					isOwnProfile: I,
 					publicDescription: m ? m.publicDescription : void 0,
@@ -871,7 +871,7 @@
 						sendEvent: u
 					}),
 					profileIcon: f,
-					bannerBackgroundImage: M ? void 0 : E
+					bannerBackgroundImage: M ? void 0 : O
 				})
 			}))
 		},
@@ -1019,13 +1019,12 @@
 		"./src/reddit/icons/svgs/Premium/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				o = n("./src/reddit/i18n/components.tsx");
+				s = n.n(r);
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("title", null, s.a.createElement(o.c, null, "Reddit Premium")), s.a.createElement("path", {
+			}, s.a.createElement("path", {
 				d: "M13.535 15.785c-1.678.244-2.883.742-3.535 1.071v-5.113a2 2 0 0 0-2-2H4.217c.044-.487.076-1.016.076-1.629 0-1.692-.489-2.968-.884-3.722L4.8 3.001H10v4.742a2 2 0 0 0 2 2h3.783c.06.67.144 1.248.22 1.742.097.632.182 1.177.182 1.745 0 1.045-.829 2.291-2.65 2.555m5.028-12.249l-2.242-2.242a1 1 0 0 0-.707-.293H4.386a1 1 0 0 0-.707.293L1.436 3.536a1 1 0 0 0-.069 1.337c.009.011.926 1.2.926 3.241 0 1.304-.145 2.24-.273 3.065-.106.684-.206 1.33-.206 2.051 0 1.939 1.499 4.119 4.364 4.534 2.086.304 3.254 1.062 3.261 1.065a1.016 1.016 0 0 0 1.117.004c.011-.007 1.18-.765 3.266-1.069 2.864-.415 4.363-2.595 4.363-4.534 0-.721-.099-1.367-.206-2.051-.128-.825-.272-1.761-.272-3.065 0-2.033.893-3.199.926-3.241a.999.999 0 0 0-.07-1.337"
 			}))
 		},
@@ -1109,10 +1108,10 @@
 					return n
 				},
 				a = e => r.fbt._({
-					"*": "{number of months} months{number of coins} Coins",
-					_1: "1 month{number of coins} Coins"
+					"*": "{number of months} months {number of coins} Coins",
+					_1: "1 month {number of coins} Coins"
 				}, [r.fbt._plural(e.monthsOfPremium, "number of months"), r.fbt._param("number of coins", e.priceInCoins.toLocaleString())], {
-					hk: "2I0m2c"
+					hk: "2bar0C"
 				}),
 				i = [{
 					prompt: () => r.fbt._("What is a Reddit Premium Membership?", null, {
@@ -1188,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.000a203e13c7411339b4.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.eb2bd2708da7fd76c915.js.map

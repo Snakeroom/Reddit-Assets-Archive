@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.7f2cb26feaf70b2710e6.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.7f9355bdf9dcc13d178c.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1472,7 +1472,7 @@
 			async function h(e, t, n) {
 				await i();
 				const s = o() || "";
-				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(a.c)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(a.b)("Please select your registered address in MetaMask: ") + t);
 				return l(e, Promise.resolve(p), "subscribe", [t, n])
 			}
 
@@ -1489,7 +1489,7 @@
 						else {
 							const e = t && t.result;
 							e ? n(e) : s({
-								message: Object(a.c)("No signature returned from ethereum provider.")
+								message: Object(a.b)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -1717,4 +1717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.7f2cb26feaf70b2710e6.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.7f9355bdf9dcc13d178c.js.map

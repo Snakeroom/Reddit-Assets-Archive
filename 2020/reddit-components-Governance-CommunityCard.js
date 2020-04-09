@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.7ff5db12dd6ba0f33bdd.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b4c44c3b2449a5a74f9c.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -985,7 +985,7 @@
 			async function f(e, t, n) {
 				await d();
 				const r = a() || "";
-				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(Object(s.c)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(Object(s.b)("Please select your registered address in MetaMask: ") + t);
 				return l(e, Promise.resolve(p), "subscribe", [t, n])
 			}
 
@@ -1002,7 +1002,7 @@
 						else {
 							const e = t && t.result;
 							e ? n(e) : r({
-								message: Object(s.c)("No signature returned from ethereum provider.")
+								message: Object(s.b)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.7ff5db12dd6ba0f33bdd.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.b4c44c3b2449a5a74f9c.js.map

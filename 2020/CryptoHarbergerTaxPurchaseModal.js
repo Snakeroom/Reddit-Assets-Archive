@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.09d285b95e09c530dd0c.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0f9e98695bc8c87837cf.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -1456,7 +1456,7 @@
 			async function b(e, t, r) {
 				await c();
 				const a = o() || "";
-				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(Object(n.c)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(Object(n.b)("Please select your registered address in MetaMask: ") + t);
 				return l(e, Promise.resolve(h), "subscribe", [t, r])
 			}
 
@@ -1473,7 +1473,7 @@
 						else {
 							const e = t && t.result;
 							e ? r(e) : a({
-								message: Object(n.c)("No signature returned from ethereum provider.")
+								message: Object(n.b)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -1747,4 +1747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.09d285b95e09c530dd0c.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.0f9e98695bc8c87837cf.js.map

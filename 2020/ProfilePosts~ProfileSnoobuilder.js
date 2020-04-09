@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.b336ac47b909faf4d755.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.6e0ea0bdad0ece84c572.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/ProfileNavMenu/index.m.less": function(e, t, n) {
@@ -682,7 +682,7 @@
 					onLoadMore: i,
 					pending: n,
 					renderItem: y,
-					title: Object(m.c)("Public custom feeds by u/".concat(Object(m.b)("username", o)))
+					title: Object(m.b)("Public custom feeds by u/".concat(Object(m.a)("username", o)))
 				})) : null
 			})
 		},
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.b336ac47b909faf4d755.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.6e0ea0bdad0ece84c572.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.296c4d058be6ee518829.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.63b2e895f0bb6b5c8b7b.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -200,7 +200,7 @@
 				T = Object(o.b)(v, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
 					showSuccessToast: () => e(Object(d.e)({
-						text: Object(E.c)("Messages sent!")
+						text: Object(E.b)("Messages sent!")
 					}))
 				}));
 			class M extends r.a.Component {
@@ -251,7 +251,7 @@
 						subreddit: t
 					} = this.props;
 					this.state = {
-						message: Object(E.c)("Check out this post in ".concat(t && t.displayText || "", ", we think you'll enjoy it.")),
+						message: Object(E.b)("Check out this post in ".concat(t && t.displayText || "", ", we think you'll enjoy it.")),
 						sentTypingStarted: !1,
 						sentInputClicked: !1,
 						sentFormSubmit: !1
@@ -415,4 +415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.296c4d058be6ee518829.js.map
+//# sourceMappingURL=ModToMemberShareModal.63b2e895f0bb6b5c8b7b.js.map

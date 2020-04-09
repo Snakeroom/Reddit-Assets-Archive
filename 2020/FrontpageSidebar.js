@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.30346e1d99ed1a1af1cb.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c7dfec65ab60cddbae35.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -23,10 +23,12 @@
 				l = n("./src/reddit/components/SidebarSpacer/index.tsx"),
 				m = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				u = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/i18n/components.tsx"),
-				b = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				g = n("./src/reddit/components/PremiumCTA/index.m.less"),
-				h = n.n(g);
+				p = n("./src/reddit/icons/svgs/Premium/index.tsx"),
+				b = n("./src/reddit/components/PremiumCTA/index.m.less"),
+				g = n.n(b);
+			const {
+				fbt: h
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			class x extends r.a.Component {
 				render() {
 					const {
@@ -37,26 +39,32 @@
 						className: e,
 						contentOnly: !0
 					}, r.a.createElement("div", {
-						className: h.a.wrapper
-					}, r.a.createElement(b.a, {
-						className: h.a.icon
+						className: g.a.wrapper
+					}, r.a.createElement(p.a, {
+						className: g.a.icon
 					}), r.a.createElement("div", {
-						className: h.a.content
+						className: g.a.content
 					}, r.a.createElement("div", {
-						className: h.a.title
-					}, r.a.createElement(p.c, null, "Reddit Premium")), r.a.createElement("div", {
-						className: h.a.description
-					}, r.a.createElement(p.c, null, "The best Reddit experience, with monthly Coins"))), r.a.createElement(u.e, {
-						className: h.a.cta,
+						className: g.a.title
+					}, h._("Reddit Premium", null, {
+						hk: "39JIKQ"
+					})), r.a.createElement("div", {
+						className: g.a.description
+					}, h._("The best Reddit experience, with monthly Coins", null, {
+						hk: "2n1ct3"
+					}))), r.a.createElement(u.e, {
+						className: g.a.cta,
 						onClick: t
-					}, r.a.createElement(p.c, null, "Try Now")))))
+					}, h._("Try Now", null, {
+						hk: "2HeiOg"
+					})))))
 				}
 			}
 			var k = Object(o.b)(void 0, e => ({
 					onClickPremium: () => e(Object(d.b)("/premium"))
 				}))(x),
-				E = n("./src/lib/classNames/index.ts"),
-				_ = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				_ = n("./src/lib/classNames/index.ts"),
+				E = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				y = n("./src/reddit/controls/InternalLink/index.tsx"),
 				N = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				C = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
@@ -66,7 +74,7 @@
 						to: t,
 						title: n
 					} = e;
-					return r.a.createElement(_.a, {
+					return r.a.createElement(E.a, {
 						subredditName: n,
 						tooltipPosition: ["right", "top"]
 					}, r.a.createElement(y.a, {
@@ -85,7 +93,7 @@
 						onExpand: c
 					} = e;
 					return r.a.createElement("div", {
-						className: Object(E.a)(S.a.Section, {
+						className: Object(_.a)(S.a.Section, {
 							[S.a.opened]: n,
 							[S.a.expanded]: a
 						})
@@ -169,7 +177,7 @@
 						links: t
 					} = this.props;
 					if (t) return r.a.createElement(m.a, {
-						className: Object(E.a)(S.a.Widget, e),
+						className: Object(_.a)(S.a.Widget, e),
 						contentOnly: !0
 					}, t.map(this.renderSection))
 				}
@@ -218,12 +226,12 @@
 			}
 			var H = Q(Z),
 				X = n("./src/reddit/selectors/posts.ts"),
-				V = n("./src/reddit/selectors/user.ts");
-			const K = Object(i.c)({
-				language: V.O,
+				K = n("./src/reddit/selectors/user.ts");
+			const V = Object(i.c)({
+				language: K.O,
 				recentPosts: X.W
 			});
-			var G = Object(o.b)(K, (e, t) => ({
+			var G = Object(o.b)(V, (e, t) => ({
 					openLightbox: t => () => e(Object(U.a)(t.permalink))
 				}))(e => {
 					let {
@@ -273,11 +281,11 @@
 				de = n("./src/lib/constants/index.ts"),
 				le = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const me = Object(i.c)({
-					isMod: V.H,
+					isMod: K.H,
 					isLoggedIn: e => e.user.temporaryGQL.isLoggedIn,
 					isUpAndComingExperiment: ie.b,
 					trendingSubredditIds: z.X,
-					currentUser: V.i,
+					currentUser: K.i,
 					frontpageLinks: ce.b
 				}),
 				ue = e => !(!e.trendingSubredditIds.length || e.currentUser && !e.currentUser.showTrending),
@@ -371,7 +379,7 @@
 				h = n("./src/reddit/selectors/user.ts"),
 				x = n("./src/reddit/components/MiniPost/index.m.less"),
 				k = n.n(x);
-			const E = Object(i.a)(e => e, b.N, b.d, h.O, (e, t, n, s) => {
+			const _ = Object(i.a)(e => e, b.N, b.d, h.O, (e, t, n, s) => {
 					return {
 						crosspost: n,
 						language: s,
@@ -381,7 +389,7 @@
 						})
 					}
 				}),
-				_ = Object(o.b)(E, (e, t) => ({
+				E = Object(o.b)(_, (e, t) => ({
 					openLightbox: t => e(Object(p.a)(t.permalink))
 				}));
 			class y extends r.a.PureComponent {
@@ -457,7 +465,7 @@
 					}, Object(l.d)(this.props.language, t.created / 1e3, !0, !0))))))
 				}
 			}
-			t.a = _(y)
+			t.a = E(y)
 		},
 		"./src/reddit/components/PremiumCTA/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -550,9 +558,9 @@
 				h = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				x = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				k = n("./src/reddit/constants/subredditLeaderboard.ts"),
-				E = n("./src/reddit/controls/Button/index.tsx"),
-				_ = n("./src/reddit/controls/Chip/index.m.less"),
-				y = n.n(_);
+				_ = n("./src/reddit/controls/Button/index.tsx"),
+				E = n("./src/reddit/controls/Chip/index.m.less"),
+				y = n.n(E);
 			var N = e => {
 					const t = e.to ? u.a : "div",
 						n = Object(b.a)(y.a.chip, e.isActive && y.a.active, e.className);
@@ -606,7 +614,7 @@
 					key: e
 				}))),
 				T = e => {
-					const t = e.isSecondaryButton ? E.k : E.h;
+					const t = e.isSecondaryButton ? _.k : _.h;
 					return o.a.createElement("div", {
 						className: f.a.footer
 					}, o.a.createElement(t, {
@@ -944,4 +952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.30346e1d99ed1a1af1cb.js.map
+//# sourceMappingURL=FrontpageSidebar.c7dfec65ab60cddbae35.js.map

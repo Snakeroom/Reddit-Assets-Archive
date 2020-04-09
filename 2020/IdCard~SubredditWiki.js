@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.8a37a8ce8e5267f16885.js
-// Retrieved at 4/9/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.5d6649f7907077be9b68.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -14,7 +14,7 @@
 				a = (e, t, n) => {
 					const i = t ? e.getUTCMonth() : e.getMonth(),
 						a = n ? o : s;
-					return Object(r.c)(a[i])
+					return Object(r.b)(a[i])
 				},
 				c = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard~SubredditWiki.8a37a8ce8e5267f16885.js.map
+//# sourceMappingURL=IdCard~SubredditWiki.5d6649f7907077be9b68.js.map

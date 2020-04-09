@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.be5cb9aaf85ce1e23cf5.js
-// Retrieved at 4/8/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.54dd3c8206230e1f5554.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -2007,10 +2007,10 @@
 					return a
 				},
 				r = e => n.fbt._({
-					"*": "{number of months} months{number of coins} Coins",
-					_1: "1 month{number of coins} Coins"
+					"*": "{number of months} months {number of coins} Coins",
+					_1: "1 month {number of coins} Coins"
 				}, [n.fbt._plural(e.monthsOfPremium, "number of months"), n.fbt._param("number of coins", e.priceInCoins.toLocaleString())], {
-					hk: "2I0m2c"
+					hk: "2bar0C"
 				}),
 				i = [{
 					prompt: () => n.fbt._("What is a Reddit Premium Membership?", null, {
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.be5cb9aaf85ce1e23cf5.js.map
+//# sourceMappingURL=AwardCreationModal.54dd3c8206230e1f5554.js.map

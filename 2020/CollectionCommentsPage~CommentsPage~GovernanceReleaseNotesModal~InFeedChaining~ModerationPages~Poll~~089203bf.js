@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.a86259e13c91003b6264.js
-// Retrieved at 4/9/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.3e148a0ef2bb19d4b394.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, i) {
@@ -383,7 +383,7 @@
 						width: w
 					}), e && n.a.createElement(n.a.Fragment, null, (!i.height || !p) && (t.isDeleted ? n.a.createElement("p", {
 						className: b.a.tweetDeleted
-					}, Object(m.c)("This Tweet has been deleted.")) : n.a.createElement("div", {
+					}, Object(m.b)("This Tweet has been deleted.")) : n.a.createElement("div", {
 						className: Object(o.a)(Object(c.a)({
 							isLoading: !0
 						}), b.a.tweetPlaceholder)
@@ -1145,4 +1145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.a86259e13c91003b6264.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.3e148a0ef2bb19d4b394.js.map

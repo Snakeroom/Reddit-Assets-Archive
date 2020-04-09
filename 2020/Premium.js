@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.6103a82574bba7358e1e.js
-// Retrieved at 4/8/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.3046bbfcf23f7ca4f018.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -14,7 +14,7 @@
 				l = (e, t, a) => {
 					const i = t ? e.getUTCMonth() : e.getMonth(),
 						l = a ? r : s;
-					return Object(n.c)(l[i])
+					return Object(n.b)(l[i])
 				},
 				c = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
@@ -372,10 +372,10 @@
 					return a
 				},
 				i = e => n.fbt._({
-					"*": "{number of months} months{number of coins} Coins",
-					_1: "1 month{number of coins} Coins"
+					"*": "{number of months} months {number of coins} Coins",
+					_1: "1 month {number of coins} Coins"
 				}, [n.fbt._plural(e.monthsOfPremium, "number of months"), n.fbt._param("number of coins", e.priceInCoins.toLocaleString())], {
-					hk: "2I0m2c"
+					hk: "2bar0C"
 				}),
 				l = [{
 					prompt: () => n.fbt._("What is a Reddit Premium Membership?", null, {
@@ -597,7 +597,7 @@
 						pennies: l,
 						periodicalCoins: c,
 						signupBonusCoins: o
-					} = r, m = o && o > 0 && o.toLocaleString(), d = c.toLocaleString(), u = "$".concat((l / 100).toLocaleString());
+					} = r, m = !!o && o > 0 && o.toLocaleString(), d = c.toLocaleString(), u = "$".concat((l / 100).toLocaleString());
 					return i.a.createElement("div", {
 						className: z.a.leftPanel
 					}, m && i.a.createElement("div", {
@@ -778,4 +778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.6103a82574bba7358e1e.js.map
+//# sourceMappingURL=Premium.3046bbfcf23f7ca4f018.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.ca90d53319d56a5651cf.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.f0d3e89cad9d2d9ade77.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -351,7 +351,7 @@
 			async function p(e, t, n) {
 				await c();
 				const s = d() || "";
-				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(r.c)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(r.b)("Please select your registered address in MetaMask: ") + t);
 				return u(e, Promise.resolve(f), "subscribe", [t, n])
 			}
 
@@ -368,7 +368,7 @@
 						else {
 							const e = t && t.result;
 							e ? n(e) : s({
-								message: Object(r.c)("No signature returned from ethereum provider.")
+								message: Object(r.b)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -585,4 +585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.ca90d53319d56a5651cf.js.map
+//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.f0d3e89cad9d2d9ade77.js.map

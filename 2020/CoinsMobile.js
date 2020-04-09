@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.163cfae4eabcd56380cd.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.a1c1cd481bf438ca541e.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, n) {
@@ -20,8 +20,8 @@
 				i = n("./src/reddit/components/CollapsibleFAQ/index.m.less"),
 				o = n.n(i),
 				r = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				l = n("./src/reddit/icons/svgs/ChevronUp/index.tsx");
+				l = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				c = n("./src/reddit/icons/svgs/ChevronUp/index.tsx");
 			class d extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleOpen = () => {
@@ -49,9 +49,9 @@
 					}, s.a.createElement("span", {
 						className: o.a.buttonContent,
 						tabIndex: -1
-					}, t, a ? s.a.createElement(l.a, {
+					}, t, a ? s.a.createElement(c.a, {
 						className: o.a.collapseIcon
-					}) : s.a.createElement(c.a, {
+					}) : s.a.createElement(l.a, {
 						className: o.a.collapseIcon
 					}))), s.a.createElement("div", {
 						className: Object(r.a)(o.a.collapsibleAnswer, i)
@@ -82,7 +82,7 @@
 					className: n,
 					icon: a,
 					isMobileStyled: o,
-					title: c
+					title: l
 				} = e;
 				return s.a.createElement("div", {
 					className: Object(i.a)(n, {
@@ -94,7 +94,7 @@
 					className: r.a.textContainer
 				}, s.a.createElement("h3", {
 					className: r.a.title
-				}, c), s.a.createElement("p", {
+				}, l), s.a.createElement("p", {
 					className: r.a.content
 				}, t)))
 			}
@@ -223,96 +223,111 @@
 			"use strict";
 			n.r(t);
 			var a = n("./src/config.ts"),
-				s = n("./node_modules/react/index.js"),
-				i = n.n(s),
-				o = n("./src/lib/constants/index.ts"),
-				r = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				i = n("./node_modules/react/index.js"),
+				o = n.n(i),
+				r = n("./src/lib/constants/index.ts"),
+				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				c = n("./src/reddit/helpers/trackers/coins.ts"),
-				l = n("./src/reddit/helpers/trackers/screenview.ts"),
-				d = n("./src/reddit/i18n/components.tsx"),
-				m = n("./src/reddit/i18n/utils.ts"),
-				p = n("./src/telemetry/index.ts"),
-				u = n("./src/telemetry/models/Timer.ts"),
-				h = n("./src/reddit/pages/CoinsMobilePage/index.m.less"),
-				b = n.n(h),
-				w = n("./src/reddit/helpers/createEmojiText/index.tsx"),
-				g = n("./src/reddit/models/Gold/Award.ts"),
-				f = n("./src/reddit/models/Gold/Coins/index.ts"),
-				C = n("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				x = n("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				d = n("./src/reddit/helpers/trackers/screenview.ts"),
+				m = n("./src/telemetry/index.ts"),
+				p = n("./src/telemetry/models/Timer.ts"),
+				u = n("./src/reddit/pages/CoinsMobilePage/index.m.less"),
+				h = n.n(u),
+				b = n("./src/reddit/helpers/createEmojiText/index.tsx"),
+				f = n("./src/reddit/models/Gold/Award.ts"),
+				w = n("./src/reddit/models/Gold/Coins/index.ts"),
+				g = n("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				C = n("./src/reddit/components/GildMarketingDescription/index.tsx"),
 				_ = n("./src/reddit/icons/fonts/Coin/index.tsx");
-			class v extends i.a.Component {
+			class x extends o.a.Component {
 				componentDidMount() {
 					c.e() || c.f();
-					const e = o.zb.COINS;
-					p.c.has(e) && this.props.sendEvent(Object(l.a)(u.TimerType.InApp, p.c.end(e)))
+					const e = r.zb.COINS;
+					m.c.has(e) && this.props.sendEvent(Object(d.a)(p.TimerType.InApp, m.c.end(e)))
 				}
 				render() {
 					const {
 						className: e
 					} = this.props;
-					return i.a.createElement("div", {
+					return o.a.createElement("div", {
 						className: e
-					}, i.a.createElement("div", {
-						className: b.a.wrapper
+					}, o.a.createElement("div", {
+						className: h.a.wrapper
 					}, this.renderGildBreakdown(), this.renderFAQSection()))
 				}
 				renderGildBreakdown() {
-					return i.a.createElement("div", {
-						className: b.a.detailGridSection
-					}, i.a.createElement("p", {
-						className: b.a.detailDesription
-					}, i.a.createElement(d.c, null, "Coins are used to award exemplary posts or comments and help support Reddit.")), i.a.createElement("div", {
-						className: b.a.gridContainer
-					}, i.a.createElement(x.a, {
-						className: b.a.gridItem,
-						icon: i.a.createElement("img", {
+					return o.a.createElement("div", {
+						className: h.a.detailGridSection
+					}, o.a.createElement("p", {
+						className: h.a.detailDesription
+					}, s.fbt._("Coins are used to award exemplary posts or comments and help support Reddit.", null, {
+						hk: "2phDYF"
+					})), o.a.createElement("div", {
+						className: h.a.gridContainer
+					}, o.a.createElement(C.a, {
+						className: h.a.gridItem,
+						icon: o.a.createElement("img", {
 							src: "".concat(a.a.assetPath, "/img/gold/badges/award-silver-large.png")
 						}),
 						isMobileStyled: !0,
-						title: Object(m.c)("Silver Award")
-					}, Object(w.a)(Object(m.c)("Shows a Silver Award on the post or comment and ... that’s it. You’ll need :coin_price: Coins."), {
-						":coin_price:": i.a.createElement("span", {
-							className: b.a.nowrap
-						}, i.a.createElement(_.a, null), g.l.coinPrice)
-					})), i.a.createElement(x.a, {
-						className: b.a.gridItem,
-						icon: i.a.createElement("img", {
+						title: s.fbt._("Silver Award", null, {
+							hk: "2h79np"
+						})
+					}, Object(b.a)(s.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin price placeholder", ":coin_price:")], {
+						hk: "zIrMH"
+					}), {
+						":coin_price:": o.a.createElement("span", {
+							className: h.a.nowrap
+						}, o.a.createElement(_.a, null), f.l.coinPrice)
+					})), o.a.createElement(C.a, {
+						className: h.a.gridItem,
+						icon: o.a.createElement("img", {
 							src: "".concat(a.a.assetPath, "/img/gold/badges/award-gold-large.png")
 						}),
 						isMobileStyled: !0,
-						title: Object(m.c)("Gold Award")
-					}, Object(w.a)(Object(m.c)("Gives the recipient a week of Reddit Premium (including :coin_benefit: Coins) and shows a Gold Award on the post or comment. You’ll need :coin_price: Coins."), {
-						":coin_benefit:": i.a.createElement("span", {
-							className: b.a.nowrap
-						}, i.a.createElement(_.a, null), "100"),
-						":coin_price:": i.a.createElement("span", {
-							className: b.a.nowrap
-						}, i.a.createElement(_.a, null), g.j.coinPrice)
-					})), i.a.createElement(x.a, {
-						className: b.a.gridItem,
-						icon: i.a.createElement("img", {
+						title: s.fbt._("Gold Award", null, {
+							hk: "1oYdz0"
+						})
+					}, Object(b.a)(s.fbt._("Gives the recipient a week of Reddit Premium (including {Coin benefit placeholder} Coins) and shows a Gold Award on the post or comment. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
+						hk: "rHjB2"
+					}), {
+						":coin_benefit:": o.a.createElement("span", {
+							className: h.a.nowrap
+						}, o.a.createElement(_.a, null), "100"),
+						":coin_price:": o.a.createElement("span", {
+							className: h.a.nowrap
+						}, o.a.createElement(_.a, null), f.j.coinPrice)
+					})), o.a.createElement(C.a, {
+						className: h.a.gridItem,
+						icon: o.a.createElement("img", {
 							src: "".concat(a.a.assetPath, "/img/gold/badges/award-platinum-large.png")
 						}),
 						isMobileStyled: !0,
-						title: Object(m.c)("Platinum Award")
-					}, Object(w.a)(Object(m.c)("Gives the recipient a month of Reddit Premium, which includes :coin_benefit: Coins for that month, and shows a Platinum Award on the post or comment. You’ll need :coin_price: Coins."), {
-						":coin_benefit:": i.a.createElement("span", {
-							className: b.a.nowrap
-						}, i.a.createElement(_.a, null), "700"),
-						":coin_price:": i.a.createElement("span", {
-							className: b.a.nowrap
-						}, i.a.createElement(_.a, null), g.k.coinPrice)
+						title: s.fbt._("Platinum Award", null, {
+							hk: "3nCEqM"
+						})
+					}, Object(b.a)(s.fbt._("Gives the recipient a month of Reddit Premium, which includes {Coin benefit placeholder} Coins for that month, and shows a Platinum Award on the post or comment. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
+						hk: "aE9cP"
+					}), {
+						":coin_benefit:": o.a.createElement("span", {
+							className: h.a.nowrap
+						}, o.a.createElement(_.a, null), "700"),
+						":coin_price:": o.a.createElement("span", {
+							className: h.a.nowrap
+						}, o.a.createElement(_.a, null), f.k.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
-					return i.a.createElement("div", {
-						className: b.a.faqsSection
-					}, i.a.createElement("h2", {
-						className: b.a.faqsTitle
-					}, i.a.createElement(d.c, null, "Coins FAQ")), i.a.createElement("div", {
-						className: b.a.faqs
-					}, f.a.map((e, t) => i.a.createElement(C.a, {
+					return o.a.createElement("div", {
+						className: h.a.faqsSection
+					}, o.a.createElement("h2", {
+						className: h.a.faqsTitle
+					}, s.fbt._("Coins FAQ", null, {
+						hk: "21x0aE"
+					})), o.a.createElement("div", {
+						className: h.a.faqs
+					}, w.a.map((e, t) => o.a.createElement(g.a, {
 						defaultClosed: !0,
 						question: e.prompt(),
 						key: t
@@ -322,8 +337,8 @@
 					c.d()
 				}
 			}
-			t.default = Object(r.c)(v)
+			t.default = Object(l.c)(x)
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsMobile.163cfae4eabcd56380cd.js.map
+//# sourceMappingURL=CoinsMobile.a1c1cd481bf438ca541e.js.map

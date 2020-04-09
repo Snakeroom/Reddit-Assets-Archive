@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.265296dab7d677223f82.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.9eaf31716982a5cd3630.js
+// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -20,8 +20,8 @@
 			t.a = e => c.a.createElement("div", {
 				className: Object(a.a)(d.a.coinBalance, e.className),
 				"data-redditstyle": !0
-			}, Object(i.a)(s.fbt._("Coin balance:: :coin:{coinBalance}", [s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
-				hk: "3rsL0j"
+			}, Object(i.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+				hk: "2x0upn"
 			}), {
 				":coin:": c.a.createElement(r.a, null)
 			}), " ", c.a.createElement("a", {
@@ -51,91 +51,93 @@
 		"./src/reddit/components/GivePremiumModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				c = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/components/GivePremiumModal/index.m.less"),
-				r = n.n(i),
-				l = n("./src/app/strings/index.ts"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				c = n.n(o),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/reddit/components/GivePremiumModal/index.m.less"),
+				l = n.n(r),
 				d = n("./src/higherOrderComponents/asModal/index.tsx"),
 				m = n("./src/lib/classNames/index.ts"),
-				u = n("./src/reddit/i18n/components.tsx"),
-				p = n("./src/reddit/i18n/utils.ts"),
-				h = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = n("./src/reddit/helpers/localStorage/index.ts"),
-				b = n("./src/reddit/helpers/trackers/givePremium.ts"),
-				g = n("./src/lib/constants/index.ts"),
-				O = n("./src/lib/makeActionCreator/index.ts"),
-				v = n("./src/reddit/actions/toaster.ts"),
-				y = n("./src/lib/makeApiRequest/index.ts"),
-				k = n("./src/lib/omitHeaders/index.ts"),
-				f = n("./src/reddit/constants/headers.ts"),
-				j = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
-			var C = async (e, t, n, s, o, c, a) => {
-				const i = {
-					recipient: s,
-					months: n,
-					is_anonymous: o,
-					message: c,
-					correlation_id: a
+				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = n("./src/reddit/helpers/localStorage/index.ts"),
+				h = n("./src/reddit/helpers/trackers/givePremium.ts"),
+				b = n("./src/lib/constants/index.ts"),
+				x = n("./src/lib/makeActionCreator/index.ts"),
+				g = n("./src/reddit/actions/toaster.ts"),
+				O = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/lib/omitHeaders/index.ts"),
+				k = n("./src/reddit/constants/headers.ts"),
+				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+			var y = async (e, t, n, s, o, c) => {
+				const a = {
+					recipient: n,
+					months: t,
+					is_anonymous: s,
+					message: o,
+					correlation_id: c
 				};
-				return Object(y.b)(Object(k.a)(e, [f.a]), {
-					method: g.bb.POST,
+				return Object(O.b)(Object(f.a)(e, [k.a]), {
+					method: b.bb.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
-					data: i
+					data: a
 				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign({}, e, {
-					error: Object(j.a)(e)
+					error: Object(v.a)(e)
 				}))
-			}, E = n("./src/reddit/helpers/correlationIdTracker.ts"), w = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), I = n("./src/reddit/selectors/user.ts"), M = n("./src/reddit/actions/gold/constants.ts");
-			Object(O.a)(M.x), Object(O.a)(M.z), Object(O.a)(M.y), Object(O.a)(M.B);
-			const N = Object(O.a)(M.w),
-				S = Object(O.a)(M.v),
-				D = e => async (t, n) => {
-					await t(S(e));
-					const s = Object(_.a)(n());
-					if (s) {
-						const o = Object(I.O)(n()),
-							c = ((e, t, n) => {
-								switch (!0) {
-									case e && e.error && e.error.type && e.error.type === g.D.AUTHENTICATION_ERROR:
-										return Object(l.a)(n, "error.authentication");
-									case e && e.error && e.error.type && e.error.type === g.D.INVALID_PREMIUM_AMOUNT:
-										return Object(l.a)(n, "gold.givePremiumToUserModal.invalidPremiumPackage");
-									default:
-										return t
-								}
-							})(e, s, o);
-						t(Object(v.e)({
+			}, C = n("./src/reddit/helpers/correlationIdTracker.ts"), w = n("./src/reddit/models/Toast/index.ts"), j = n("./src/reddit/selectors/premium.ts"), E = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(E.x), Object(x.a)(E.z), Object(x.a)(E.y), Object(x.a)(E.B);
+			const _ = Object(x.a)(E.w),
+				I = Object(x.a)(E.v),
+				N = e => async (t, n) => {
+					await t(I(e));
+					const o = Object(j.a)(n());
+					if (o) {
+						const n = ((e, t) => {
+							switch (!0) {
+								case e && e.error && e.error.type && e.error.type === b.D.AUTHENTICATION_ERROR:
+									return s.fbt._("There was an authentication error", null, {
+										hk: "12YR0w"
+									});
+								case e && e.error && e.error.type && e.error.type === b.D.INVALID_PREMIUM_AMOUNT:
+									return s.fbt._("That Premium gift amount is invalid.", null, {
+										hk: "3XzSbH"
+									});
+								default:
+									return t
+							}
+						})(e, o);
+						t(Object(g.e)({
 							kind: w.b.Error,
-							duration: v.a,
-							text: c
+							duration: g.a,
+							text: n
 						}))
 					}
-				}, P = Object(O.a)(M.A), T = e => async (t, n) => {
-					const s = n(),
-						o = Object(_.d)(s);
-					t(P(e));
-					const c = Object(I.O)(s);
-					t(Object(v.e)({
+				}, M = Object(x.a)(E.A), S = e => async (t, n) => {
+					const o = n(),
+						c = Object(j.d)(o);
+					t(M(e));
+					const a = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", "u/".concat(c))], {
+						hk: "3cBrLk"
+					});
+					t(Object(g.e)({
 						kind: w.b.SuccessCommunity,
-						text: Object(l.a)(c, "gold.givePremiumToUserModal.success", {
-							user: "u/".concat(o)
-						})
+						text: a
 					}))
 				};
-			var B = n("./src/reddit/actions/gold/modals.ts"),
-				L = n("./src/reddit/components/CoinBalance/index.tsx"),
-				A = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				K = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				G = n("./src/reddit/controls/DropdownSelector/index.tsx"),
-				R = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				F = n("./src/reddit/controls/TextButton/index.tsx"),
-				W = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				U = n("./src/reddit/models/Gold/Premium/index.ts");
+			var D = n("./src/reddit/actions/gold/modals.ts"),
+				P = n("./src/reddit/components/CoinBalance/index.tsx"),
+				T = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				B = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				L = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				K = n("./src/reddit/controls/TextButton/index.tsx"),
+				G = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				R = n("./src/reddit/models/Gold/Premium/index.ts"),
+				F = n("./src/reddit/selectors/user.ts");
 
-			function z() {
-				return (z = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -143,43 +145,42 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = 10,
-				X = Object(a.c)({
-					coinBalance: I.d,
-					isEmployee: I.D,
-					isPending: _.b,
-					language: I.O,
-					recipientName: _.d
+			const z = 10,
+				H = Object(i.c)({
+					coinBalance: F.d,
+					isEmployee: F.D,
+					isPending: j.b,
+					recipientName: j.d
 				}),
-				J = Object(c.b)(X, e => ({
-					closeModal: () => e(Object(B.b)()),
-					onGivePremium: (t, n, s, o, c, a) => {
-						e(((e, t, n, s, o) => async (c, a, i) => {
+				U = Object(a.b)(H, e => ({
+					closeModal: () => e(Object(D.b)()),
+					onGivePremium: (t, n, s, o, c) => {
+						e(((e, t, n, s) => async (o, c, a) => {
 							let {
-								apiContext: r
-							} = i;
-							c(N());
+								apiContext: i
+							} = a;
+							o(_());
 							try {
-								const a = await C(r(), o, t, e, n, s, Object(E.c)(E.a.GiftPremiumFlow));
-								if (a.error) await c(D(a));
+								const c = await y(i(), t, e, n, s, Object(C.c)(C.a.GiftPremiumFlow));
+								if (c.error) await o(N(c));
 								else {
-									const e = a.body;
-									await c(T(e)), Object(E.b)(E.a.GiftPremiumFlow)
+									const e = c.body;
+									await o(S(e)), Object(C.b)(C.a.GiftPremiumFlow)
 								}
-							} catch (l) {
-								await c(D(l))
+							} catch (r) {
+								await o(N(r))
 							}
-						})(t, n, s, o ? c : "", a))
+						})(t, n, s, o ? c : ""))
 					}
 				}));
-			class V extends o.a.PureComponent {
+			class X extends c.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: U.a.PREMIUM_1_MONTH
+						selectedPackage: R.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -187,30 +188,29 @@
 						if (27 === e.keyCode) return t()
 					}, this.onGivePremium = () => {
 						const {
-							language: e,
-							onGivePremium: t,
-							recipientName: n,
-							sendEvent: s
+							onGivePremium: e,
+							recipientName: t,
+							sendEvent: n
 						} = this.props, {
-							includeMessage: o,
-							isAnonymous: c,
-							message: a,
-							selectedPackage: i
+							includeMessage: s,
+							isAnonymous: o,
+							message: c,
+							selectedPackage: a
 						} = this.state;
-						s(Object(b.clickConfirmEvent)()), t(n, i.monthsOfPremium, c, o, a, e)
+						n(Object(h.clickConfirmEvent)()), e(t, a.monthsOfPremium, o, s, c)
 					}, this.onClickClose = () => {
 						const {
 							closeModal: e,
 							sendEvent: t
 						} = this.props;
-						e(), t(Object(b.clickCloseModalEvent)())
+						e(), t(Object(h.clickCloseModalEvent)())
 					}, this.onClickOption = e => {
 						const {
 							sendEvent: t
 						} = this.props, n = e.value;
 						this.setState({
 							selectedPackage: n
-						}), t(Object(b.selectPremiumPackageEvent)(n))
+						}), t(Object(h.selectPremiumPackageEvent)(n))
 					}, this.handleToggleAnonymous = () => {
 						const {
 							sendEvent: e
@@ -219,7 +219,7 @@
 						} = this.state, n = t ? "uncheck" : "check";
 						this.setState({
 							isAnonymous: !t
-						}), e(Object(b.triggerAnonymousEvent)(n))
+						}), e(Object(h.triggerAnonymousEvent)(n))
 					}, this.handleToggleIncludeMessage = () => {
 						this.setState({
 							includeMessage: !this.state.includeMessage
@@ -228,7 +228,7 @@
 						const {
 							sendEvent: e
 						} = this.props;
-						e(Object(b.clickMessageInputEvent)())
+						e(Object(h.clickMessageInputEvent)())
 					}, this.handleMessageInput = e => {
 						const {
 							sendEvent: t
@@ -236,7 +236,7 @@
 						this.setState({
 							includeMessage: !0,
 							message: e.target.value
-						}), this.state.messageTypeEventSent || (t(Object(b.typeMessageInputEvent)()), this.setState({
+						}), this.state.messageTypeEventSent || (t(Object(h.typeMessageInputEvent)()), this.setState({
 							messageTypeEventSent: !0
 						}))
 					}
@@ -247,19 +247,19 @@
 						sendEvent: e
 					} = this.props;
 					this.setState({
-						isAnonymous: Object(x.k)()
-					}), e(Object(b.viewGivePremiumModalEvent)())
+						isAnonymous: Object(p.k)()
+					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(x.J)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.J)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(U.c)(e, t).map(e => ({
-						displayText: Object(U.d)(e),
+					return Object(R.c)(e, t).map(e => ({
+						displayText: Object(R.d)(e),
 						value: e
 					}))
 				}
@@ -268,72 +268,83 @@
 						className: e,
 						coinBalance: t,
 						isPending: n,
-						language: s,
-						recipientName: c
+						recipientName: o
 					} = this.props, {
 						includeMessage: a,
 						isAnonymous: i,
-						message: d,
-						selectedPackage: h
-					} = this.state, x = Object(U.d)(h), b = a ? [r.a.messageInputOpen] : "";
-					return o.a.createElement(A.c, {
+						message: r,
+						selectedPackage: d
+					} = this.state, u = Object(R.d)(d), p = a ? [l.a.messageInputOpen] : "";
+					return c.a.createElement(T.c, {
 						className: e
-					}, o.a.createElement(A.g, null, o.a.createElement(W.a, null, o.a.createElement(A.n, null, o.a.createElement(u.c, null, "Give Premium")), o.a.createElement(F.a, {
+					}, c.a.createElement(T.g, null, c.a.createElement(G.a, null, c.a.createElement(T.n, null, s.fbt._("Give Premium", null, {
+						hk: "4APAYj"
+					})), c.a.createElement(K.a, {
 						onClick: this.onClickClose
-					}, o.a.createElement(A.b, null)))), o.a.createElement("div", {
-						className: r.a.modalMain
-					}, o.a.createElement("span", {
-						className: r.a.description
-					}, Object(l.a)(s, "gold.givePremiumToUserModal.givePremiumToUser", {
-						user: "u/".concat(c)
-					})), o.a.createElement(G.b, {
-						className: r.a.dropdownSelector,
-						displayText: x,
+					}, c.a.createElement(T.b, null)))), c.a.createElement("div", {
+						className: l.a.modalMain
+					}, c.a.createElement("span", {
+						className: l.a.description
+					}, s.fbt._("Use coins to give Premium to {recipient username}:", [s.fbt._param("recipient username", "u/".concat(o))], {
+						hk: "1cRm3J"
+					})), c.a.createElement(L.b, {
+						className: l.a.dropdownSelector,
+						displayText: u,
 						options: this.getDropdownMenuItems(),
 						onSelect: this.onClickOption
-					}), o.a.createElement("div", {
-						className: Object(m.a)(r.a.menuContent, b)
-					}, o.a.createElement("div", null, o.a.createElement(K.a, {
-						className: r.a.checkbox,
+					}), c.a.createElement("div", {
+						className: Object(m.a)(l.a.menuContent, p)
+					}, c.a.createElement("div", null, c.a.createElement(B.a, {
+						className: l.a.checkbox,
 						isSelected: i,
-						text: Object(p.c)("Make my gift anonymous"),
+						text: s.fbt._("Make my gift anonymous", null, {
+							hk: "2XfgGX"
+						}),
 						onClick: this.handleToggleAnonymous
-					})), o.a.createElement("div", null, o.a.createElement(K.a, {
-						className: r.a.checkbox,
+					})), c.a.createElement("div", null, c.a.createElement(B.a, {
+						className: l.a.checkbox,
 						isSelected: a,
-						text: Object(p.c)("Add a message"),
+						text: s.fbt._("Add a message", null, {
+							hk: "I4chZ"
+						}),
 						onClick: this.handleToggleIncludeMessage
-					})), o.a.createElement(A.q, {
-						className: Object(m.a)(r.a.textArea, b),
+					})), c.a.createElement(T.q, {
+						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
-						value: d,
+						value: r,
 						maxLength: 2048,
 						name: "message",
 						onClick: this.handleClickMessageInput,
 						onChange: this.handleMessageInput,
-						placeholder: Object(p.c)("Type here...")
-					}))), o.a.createElement(A.e, null, o.a.createElement(W.a, {
-						className: r.a.coinCountSection
-					}, o.a.createElement(L.a, {
-						className: r.a.coinCount,
+						placeholder: s.fbt._("Type here...", null, {
+							hk: "1O7V4Q"
+						})
+					}))), c.a.createElement(T.e, null, c.a.createElement(G.a, {
+						className: l.a.coinCountSection
+					}, c.a.createElement(P.a, {
+						className: l.a.coinCount,
 						coinBalance: t
-					}), o.a.createElement("div", {
-						className: r.a.actions
-					}, o.a.createElement(A.a, {
+					}), c.a.createElement("div", {
+						className: l.a.actions
+					}, c.a.createElement(T.a, {
 						onClick: this.onClickClose
-					}, o.a.createElement(u.c, null, "Cancel")), o.a.createElement(A.o, {
-						className: r.a.confirmButton,
+					}, s.fbt._("Cancel", null, {
+						hk: "370pdF"
+					})), c.a.createElement(T.o, {
+						className: l.a.confirmButton,
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onGivePremium
-					}, n ? o.a.createElement(R.a, {
-						className: r.a.loadingIcon,
-						sizePx: H
-					}) : o.a.createElement(u.c, null, "Confirm"))))))
+					}, n ? c.a.createElement(A.a, {
+						className: l.a.loadingIcon,
+						sizePx: z
+					}) : s.fbt._("Confirm", null, {
+						hk: "2nHzsu"
+					}))))))
 				}
 			}
-			const Q = Object(d.a)(Object(h.c)(V));
-			t.default = J(e => o.a.createElement(Q, z({}, e, {
+			const J = Object(d.a)(Object(u.c)(X));
+			t.default = U(e => c.a.createElement(J, W({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -392,10 +403,10 @@
 				u = n("./src/reddit/controls/Dropdown/index.m.less"),
 				p = n.n(u),
 				h = n("./src/reddit/controls/Dropdown/row.m.less"),
-				x = n.n(h);
+				b = n.n(h);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -426,8 +437,8 @@
 						props: e
 					} = this, t = e.skipRoleAttr ? null : {
 						role: "menuitem"
-					}, n = Object(i.a)(x.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? a.a.createElement(r.a, b({}, t, {
+					}, n = Object(i.a)(b.a.iconWrapper, e.iconWrapperClassName);
+					return e.href ? a.a.createElement(r.a, x({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -440,8 +451,8 @@
 					}), e.children && a.a.createElement("span", {
 						className: n
 					}, e.children), a.a.createElement("span", {
-						className: Object(i.a)(x.a.text, e.textClassName)
-					}, e.displayText)) : a.a.createElement(m.a, b({}, t, {
+						className: Object(i.a)(b.a.text, e.textClassName)
+					}, e.displayText)) : a.a.createElement(m.a, x({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -452,9 +463,9 @@
 					}), e.children && (e.noIcon ? a.a.createElement("div", null, e.children) : a.a.createElement("span", {
 						className: n
 					}, e.children)), e.displayText && a.a.createElement("span", {
-						className: Object(i.a)(x.a.text, e.textClassName)
+						className: Object(i.a)(b.a.text, e.textClassName)
 					}, e.displayText), e.showSelectedCheckmark && e.isSelected && a.a.createElement(d.a, {
-						className: x.a.checkmark
+						className: b.a.checkmark
 					}), e.showDropdownTriangle && a.a.createElement(l.a, {
 						className: p.a.dropdownTriangle
 					}))
@@ -464,12 +475,12 @@
 				var {
 					className: t
 				} = e, n = g(e, ["className"]);
-				const s = Object(i.a)(x.a.row, t, {
-					[x.a.mIsInteractive]: !n.noHover,
-					[x.a.mIsSelected]: n.isSelected,
-					[x.a.topics]: n.isTopicsStyle
+				const s = Object(i.a)(b.a.row, t, {
+					[b.a.mIsInteractive]: !n.noHover,
+					[b.a.mIsSelected]: n.isSelected,
+					[b.a.topics]: n.isTopicsStyle
 				});
-				return a.a.createElement(O, b({
+				return a.a.createElement(O, x({
 					className: s
 				}, n))
 			}
@@ -784,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.265296dab7d677223f82.js.map
+//# sourceMappingURL=GivePremiumModal.9eaf31716982a5cd3630.js.map
