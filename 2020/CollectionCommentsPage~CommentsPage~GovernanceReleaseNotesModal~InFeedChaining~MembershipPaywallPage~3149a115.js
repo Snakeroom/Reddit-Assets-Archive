@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.32ebbe0e3632737daf1e.js
-// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.37159b73afc2f55de9e6.js
+// Retrieved at 4/9/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -30,10 +30,6 @@
 				controlCollapse: "_3uhleNVV7YkJm0tszcz4z9",
 				Time: "_1z-qg2gzYKkI37gkYYJCi0",
 				time: "_1z-qg2gzYKkI37gkYYJCi0",
-				LeftTime: "_3-_K1uspRApIM1_dkDMKnM",
-				leftTime: "_3-_K1uspRApIM1_dkDMKnM",
-				RightTime: "_1HVKaY4Y3yukzOicpaGXLB",
-				rightTime: "_1HVKaY4Y3yukzOicpaGXLB",
 				LiveLabel: "_1s8L9kNAgwvsmhnrpHl4Ef",
 				liveLabel: "_1s8L9kNAgwvsmhnrpHl4Ef",
 				ControlScrubber: "_3YQsKErciDXsBNWhb0bzul",
@@ -47,15 +43,16 @@
 				ControlBarContainer: "gUpEQXQu8G8UvISmBIPsj",
 				controlBarContainer: "gUpEQXQu8G8UvISmBIPsj",
 				mIsFullScreen: "IlN7iDYa9yzeFlgOo0JQe",
-				mHasZeroOpacity: "_1RZSSlyqzokrcxh0ESwE2e"
+				mHasZeroOpacity: "_1RZSSlyqzokrcxh0ESwE2e",
+				button: "_15cvJJTKClcHJuPN2mcpY4"
 			}
 		},
 		"./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx": function(e, t, s) {
 			"use strict";
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
-				a = s("./node_modules/react/index.js"),
-				n = s.n(a),
+			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				i = s("./node_modules/react/index.js"),
+				n = s.n(i),
 				o = s("./src/lib/classNames/index.ts"),
 				r = s("./src/lib/lessComponent.tsx"),
 				l = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
@@ -128,9 +125,9 @@
 				},
 				w = (e, t) => {
 					let s = Math.floor(e / 60).toString(),
-						i = Math.trunc(e % 60).toString();
-					const a = Math.floor(t / 60).toString();
-					return s.length < a.length && (s = "0".concat(s).slice(-2)), i = "0".concat(i).slice(-2), "".concat(s, ":").concat(i)
+						a = Math.trunc(e % 60).toString();
+					const i = Math.floor(t / 60).toString();
+					return s.length < i.length && (s = "0".concat(s).slice(-2)), a = "0".concat(a).slice(-2), "".concat(s, ":").concat(a)
 				};
 			var C = s("./src/reddit/constants/keycodes.ts"),
 				T = s("./src/reddit/components/HTML5StreamPlayer/SeekBar/index.m.less"),
@@ -141,7 +138,7 @@
 				L = r.a.video("PreviewVideo", M.a),
 				F = r.a.div("PreviewTime", M.a),
 				k = r.a.div("VideoSeekbar", M.a);
-			class O extends n.a.PureComponent {
+			class N extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.setParentRect = e => this.parentRect = e, this.setPreviewThumbnailContainer = e => this.previewThumbnailContainer = e, this.setPreviewThumbnailVideo = e => this.previewThumbnailVideo = e, this.setPreviewThumbnailTime = e => this.previewThumbnailTime = e, this.setProgressBar = e => this.progressBar = e, this.handleMouseDown = e => {
 						if (0 === e.button && this.parentRect) {
@@ -192,8 +189,8 @@
 					const {
 						currentTime: t,
 						totalTime: s
-					} = this.props, i = x()(t + e, 0, s);
-					i !== t && this.props.updatePosition(i)
+					} = this.props, a = x()(t + e, 0, s);
+					a !== t && this.props.updatePosition(a)
 				}
 				getCurrentPercent() {
 					const {
@@ -221,11 +218,11 @@
 							totalTime: t
 						} = this.props, s = t * (e / 100);
 						isNaN(s) || (this.previewThumbnailVideo && (this.previewThumbnailVideo.currentTime = s), this.previewThumbnailTime.innerHTML = w(s, t));
-						const i = P.a.findDOMNode(this);
-						if (!i || !i.parentNode) return;
-						const a = i.parentNode;
-						if (!(a instanceof Element)) return;
-						const n = a.getBoundingClientRect(),
+						const a = P.a.findDOMNode(this);
+						if (!a || !a.parentNode) return;
+						const i = a.parentNode;
+						if (!(i instanceof Element)) return;
+						const n = i.getBoundingClientRect(),
 							o = this.parentRect.getBoundingClientRect(),
 							r = this.previewThumbnailContainer.getBoundingClientRect(),
 							l = n.left - o.left,
@@ -240,10 +237,10 @@
 					} = this.props, {
 						progressPercent: t
 					} = this.state, s = this.getCurrentPercent();
-					let i = t;
-					for (let a = 0; a < e.length; a++) e[a].start <= s && (i = e[a].end);
-					return i = x()(i, 0, 100), {
-						width: "".concat(i, "%")
+					let a = t;
+					for (let i = 0; i < e.length; i++) e[i].start <= s && (a = e[i].end);
+					return a = x()(a, 0, 100), {
+						width: "".concat(a, "%")
 					}
 				}
 				render() {
@@ -252,13 +249,13 @@
 					} = this.props, {
 						progressPercent: t
 					} = this.state, s = this.getCurrentPercent();
-					let a = e ? t : s;
-					a = x()(a, 0, 100);
+					let i = e ? t : s;
+					i = x()(i, 0, 100);
 					const r = {
-							width: this.getProgressWidth(a) || "0"
+							width: this.getProgressWidth(i) || "0"
 						},
 						l = {
-							marginLeft: this.getThumbMargin(a),
+							marginLeft: this.getThumbMargin(i),
 							opacity: e ? 1 : 0
 						};
 					return n.a.createElement(k, {
@@ -267,7 +264,7 @@
 						onMouseLeave: this.handleMouseLeave,
 						onMouseMove: this.handleMouseMove
 					}, n.a.createElement("div", {
-						"aria-label": i.fbt._("Seek Slider", null, {
+						"aria-label": a.fbt._("Seek Slider", null, {
 							hk: "1fNTBw"
 						}),
 						"aria-valuemax": Math.round(this.props.totalTime),
@@ -302,7 +299,7 @@
 					})))
 				}
 			}
-			var N = s("./node_modules/react-router-dom/esm/react-router-dom.js");
+			var O = s("./node_modules/react-router-dom/esm/react-router-dom.js");
 			var R = e => n.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					width: "16px",
@@ -319,17 +316,20 @@
 				}))),
 				j = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
 				H = s.n(j);
-			var A = r.a.wrapped(e => n.a.createElement("div", {
-					className: e.className
-				}, "string" == typeof e.postUrl ? n.a.createElement("a", {
-					href: e.postUrl
-				}, n.a.createElement(R, null)) : n.a.createElement(N.a, {
-					to: e.postUrl
-				}, n.a.createElement(R, null))), "Component", H.a),
-				I = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
+			const A = () => n.a.createElement("div", {
+				className: H.a.icon
+			}, n.a.createElement(R, null));
+			var I = e => "string" == typeof e.postUrl ? n.a.createElement("a", {
+					href: e.postUrl,
+					className: H.a.button
+				}, n.a.createElement(A, null)) : n.a.createElement(O.a, {
+					to: e.postUrl,
+					className: H.a.button
+				}, n.a.createElement(A, null)),
+				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
-				U = s.n(D);
-			class z extends a.Component {
+				z = s.n(D);
+			class W extends i.Component {
 				constructor(e) {
 					super(e), this.step = .1, this.max = 1, this.min = 0, this.handleMouseDown = e => {
 						if (0 === e.button && this.track) {
@@ -338,18 +338,18 @@
 							});
 							const t = this.track.getBoundingClientRect(),
 								s = 100 - (e.clientY - t.top) / t.height * 100,
-								i = (this.max - this.min) * (s / 100);
+								a = (this.max - this.min) * (s / 100);
 							this.setState({
-								value: this.adjustValue(i)
+								value: this.adjustValue(a)
 							})
 						}
 					}, this.handleMouseMove = e => {
 						if (this.state.isMouseDown && this.track) {
 							const t = this.track.getBoundingClientRect(),
 								s = 100 - (e.clientY - t.top) / t.height * 100,
-								i = (this.max - this.min) * (s / 100);
+								a = (this.max - this.min) * (s / 100);
 							this.setState({
-								value: this.adjustValue(i)
+								value: this.adjustValue(a)
 							})
 						}
 					}, this.handleMouseUp = e => {
@@ -388,79 +388,79 @@
 						active: e,
 						className: t,
 						isLive: s,
-						isMuted: i,
-						volume: a
+						isMuted: a,
+						volume: i
 					} = this.props, {
 						value: r
-					} = this.state, l = i ? 0 : e ? r : a, c = this.convertVolumeToPercent(l);
+					} = this.state, l = a ? 0 : e ? r : i, c = this.convertVolumeToPercent(l);
 					return n.a.createElement("div", {
-						className: Object(o.a)(U.a.VolumeControl, t),
+						className: Object(o.a)(z.a.VolumeControl, t),
 						ref: e => this.container = e
 					}, n.a.createElement("div", {
-						className: Object(o.a)(U.a.SliderTrack, U.a.SliderBar),
+						className: Object(o.a)(z.a.SliderTrack, z.a.SliderBar),
 						ref: e => this.track = e
 					}, n.a.createElement("div", {
-						className: Object(o.a)(U.a.SliderProgress, U.a.SliderBar, {
-							[U.a.Live]: s
+						className: Object(o.a)(z.a.SliderProgress, z.a.SliderBar, {
+							[z.a.Live]: s
 						}),
 						ref: e => this.progress = e,
 						style: {
 							height: "".concat(c, "%")
 						}
 					}, n.a.createElement("div", {
-						className: U.a.SliderThumb
+						className: z.a.SliderThumb
 					}))))
 				}
 			}
-			var W = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
-				G = s.n(W);
+			var G = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
+				Y = s.n(G);
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
+						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			var K = function(e, t) {
+			var J = function(e, t) {
 				var s = {};
-				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
+				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (s[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var a = 0;
-					for (i = Object.getOwnPropertySymbols(e); a < i.length; a++) t.indexOf(i[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[a]) && (s[i[a]] = e[i[a]])
+					var i = 0;
+					for (a = Object.getOwnPropertySymbols(e); i < a.length; i++) t.indexOf(a[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[i]) && (s[a[i]] = e[a[i]])
 				}
 				return s
 			};
-			const Z = r.a.wrapped(I.a, "TooltipControl", G.a),
-				Q = r.a.div("NormalControl", G.a),
-				J = r.a.wrapped(Z, "ControlSnoo", G.a),
-				q = r.a.wrapped(Z, "ControlPlay", G.a),
-				X = r.a.wrapped(Q, "Time", G.a),
-				$ = r.a.wrapped(X, "LeftTime", G.a),
-				ee = r.a.wrapped(X, "RightTime", G.a),
-				te = r.a.div("LiveLabel", G.a),
-				se = r.a.wrapped(Q, "ControlScrubber", G.a),
-				ie = r.a.wrapped(Q, "ControlVolume", G.a),
-				ae = r.a.wrapped(Z, "ControlExpand", G.a),
-				ne = r.a.wrapped(Z, "ControlCollapse", G.a),
-				oe = e => {
+			const K = r.a.wrapped(U.a, "TooltipControl", Y.a),
+				Q = r.a.div("NormalControl", Y.a),
+				q = r.a.wrapped(K, "ControlSnoo", Y.a),
+				X = r.a.wrapped(K, "ControlPlay", Y.a),
+				$ = r.a.wrapped(Q, "Time", Y.a),
+				ee = r.a.wrapped($, "LeftTime", Y.a),
+				te = r.a.wrapped($, "RightTime", Y.a),
+				se = r.a.div("LiveLabel", Y.a),
+				ae = r.a.wrapped(Q, "ControlScrubber", Y.a),
+				ie = r.a.wrapped(Q, "ControlVolume", Y.a),
+				ne = r.a.wrapped(K, "ControlExpand", Y.a),
+				oe = r.a.wrapped(K, "ControlCollapse", Y.a),
+				re = e => {
 					var {
 						className: t,
 						isFullScreen: s,
-						zeroOpacity: i,
-						innerRef: a
-					} = e, r = K(e, ["className", "isFullScreen", "zeroOpacity", "innerRef"]);
-					return n.a.createElement("div", Y({
-						className: Object(o.a)(G.a.ControlBarContainer, t, {
-							[G.a.mIsFullScreen]: s,
-							[G.a.mHasZeroOpacity]: i
+						zeroOpacity: a,
+						innerRef: i
+					} = e, r = J(e, ["className", "isFullScreen", "zeroOpacity", "innerRef"]);
+					return n.a.createElement("div", Z({
+						className: Object(o.a)(Y.a.ControlBarContainer, t, {
+							[Y.a.mIsFullScreen]: s,
+							[Y.a.mHasZeroOpacity]: a
 						}),
-						ref: a
+						ref: i
 					}, r))
 				};
-			class re extends n.a.Component {
+			class le extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						currentTime: e.currentTime,
@@ -488,39 +488,40 @@
 						hideFullScreenButton: e,
 						hideGradient: t,
 						postUrl: s,
-						isListing: a,
+						isListing: i,
 						isLive: o,
 						settingsButton: r,
 						settingChange: h,
 						hideLiveLabel: u,
 						showSettingsIcon: g
-					} = this.props, f = i.fbt._("View Comments", null, {
+					} = this.props, f = a.fbt._("View Comments", null, {
 						hk: "2Vf8xl"
-					}), y = i.fbt._("Play", null, {
+					}), y = a.fbt._("Play", null, {
 						hk: "2cQV3h"
-					}), x = i.fbt._("Pause", null, {
+					}), x = a.fbt._("Pause", null, {
 						hk: "2YnRgT"
-					}), S = i.fbt._("Exit Fullscreen", null, {
+					}), S = a.fbt._("Exit Fullscreen", null, {
 						hk: "LnrWa"
-					}), P = i.fbt._("Fullscreen", null, {
+					}), P = a.fbt._("Fullscreen", null, {
 						hk: "3JvSdn"
 					}), {
 						currentTime: b
 					} = this.state, {
 						totalTime: C
 					} = o ? this.state : this.props, T = this.props.isPaused ? y : x;
-					return n.a.createElement(n.a.Fragment, null, !t && n.a.createElement(v, null), s && a && n.a.createElement(J, {
+					return n.a.createElement(n.a.Fragment, null, !t && n.a.createElement(v, null), s && i && n.a.createElement(q, {
 						tooltip: f
 					}, n.a.createElement("div", {
 						onClick: this.props.clickSnoo
-					}, n.a.createElement(A, {
+					}, n.a.createElement(I, {
 						postUrl: s
-					}))), n.a.createElement(q, {
+					}))), n.a.createElement(X, {
 						tooltip: T
 					}, n.a.createElement("button", {
 						"aria-label": T,
+						className: Y.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? n.a.createElement(m, null) : n.a.createElement(p, null))), n.a.createElement($, null, w(b, C)), n.a.createElement(se, null, n.a.createElement(O, {
+					}, this.props.isPaused ? n.a.createElement(m, null) : n.a.createElement(p, null))), n.a.createElement(ee, null, w(b, C)), n.a.createElement(ae, null, n.a.createElement(N, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -532,22 +533,24 @@
 						playPauseVideo: this.props.playPauseVideo,
 						updatePosition: this.props.setVideoPosition,
 						updateContinuousStartTime: this.props.updateContinuousStartTime
-					})), o && !u ? n.a.createElement(te, {
-						"aria-label": i.fbt._("live", null, {
+					})), o && !u ? n.a.createElement(se, {
+						"aria-label": a.fbt._("live", null, {
 							hk: "1rkHRc"
 						}),
 						onClick: () => this.props.setVideoPosition(C)
-					}, i.fbt._("Live", null, {
+					}, a.fbt._("Live", null, {
 						hk: "3bCYlO"
-					})) : n.a.createElement(ee, null, E(C)), g && r, !e && (this.props.isFullScreen ? n.a.createElement(ne, {
+					})) : n.a.createElement(te, null, E(C)), g && r, !e && (this.props.isFullScreen ? n.a.createElement(oe, {
 						tooltip: S
 					}, n.a.createElement("button", {
 						"aria-label": S,
+						className: Y.a.button,
 						onClick: this.props.exitFullScreen
-					}, n.a.createElement(c, null))) : n.a.createElement(ae, {
+					}, n.a.createElement(c, null))) : n.a.createElement(ne, {
 						tooltip: P
 					}, n.a.createElement("button", {
 						"aria-label": P,
+						className: Y.a.button,
 						onClick: this.props.enterFullScreen
 					}, n.a.createElement(d, null)))))
 				}
@@ -556,15 +559,15 @@
 						controlBarRef: e,
 						isLive: t
 					} = this.props;
-					return n.a.createElement(oe, {
+					return n.a.createElement(re, {
 						className: this.props.className,
 						innerRef: t => e && e(t),
 						isFullScreen: this.props.isFullScreen,
 						zeroOpacity: this.props.hideControlBar
 					}, this.renderContent(), this.props.hasAudio && n.a.createElement(ie, {
 						className: this.props.showVolumeIcon ? "disableHide" : ""
-					}, n.a.createElement(z, {
-						className: G.a.VolumeControl,
+					}, n.a.createElement(W, {
+						className: Y.a.VolumeControl,
 						ref: e => this.props.volumeRef(e),
 						active: this.props.settingChange === l.a.Volume,
 						isMuted: this.props.isMuted,
@@ -572,11 +575,12 @@
 						setVolume: this.props.setVolume,
 						volume: this.props.volume
 					}), n.a.createElement("button", {
+						className: Y.a.button,
 						onClick: this.props.toggleMute
 					}, this.props.isMuted ? n.a.createElement(h.a, null) : n.a.createElement(u.a, null))))
 				}
 			}
-			t.a = re
+			t.a = le
 		},
 		"./src/reddit/components/HTML5StreamPlayer/ControlGradient/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -651,8 +655,8 @@
 		},
 		"./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less": function(e, t, s) {
 			e.exports = {
-				Component: "_1f5l9XSRXju5gjEllP1vw6",
-				component: "_1f5l9XSRXju5gjEllP1vw6"
+				button: "sm5fCodJsfJ3dJgv8LoJU",
+				icon: "_1JylLL_Ux6Orq3W6Gpj0I5"
 			}
 		},
 		"./src/reddit/components/HTML5StreamPlayer/Tooltip/index.m.less": function(e, t, s) {
@@ -670,8 +674,8 @@
 				return g
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
-			var i = s("./node_modules/react/index.js"),
-				a = s.n(i),
+			var a = s("./node_modules/react/index.js"),
+				i = s.n(a),
 				n = s("./src/lib/classNames/index.ts"),
 				o = s("./src/lib/fastdom/index.ts"),
 				r = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.m.less"),
@@ -682,17 +686,17 @@
 				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
+						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			var h = function(e, t) {
 				var s = {};
-				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
+				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (s[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var a = 0;
-					for (i = Object.getOwnPropertySymbols(e); a < i.length; a++) t.indexOf(i[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[a]) && (s[i[a]] = e[i[a]])
+					var i = 0;
+					for (a = Object.getOwnPropertySymbols(e); i < a.length; i++) t.indexOf(a[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[i]) && (s[a[i]] = e[a[i]])
 				}
 				return s
 			};
@@ -702,16 +706,16 @@
 					var {
 						className: t,
 						setRef: s,
-						disable: i
+						disable: a
 					} = e, o = h(e, ["className", "setRef", "disable"]);
-					return a.a.createElement("div", d({
+					return i.a.createElement("div", d({
 						className: Object(n.a)(l.a.TooltipControl, t, {
-							[l.a.mNotDisable]: !i
+							[l.a.mNotDisable]: !a
 						}),
 						ref: s
 					}, o))
 				};
-			class g extends i.Component {
+			class g extends a.Component {
 				constructor() {
 					super(...arguments), this.onMouseEnter = () => {
 						o.a.read(this.setPosition)
@@ -722,11 +726,11 @@
 						} = this;
 						if (e && t && this.props.tooltip) {
 							const s = t.getBoundingClientRect(),
-								i = e.getBoundingClientRect(),
-								a = e.parentNode.getBoundingClientRect(),
-								n = a.left - i.left + p,
-								r = a.right - i.left - s.width - p,
-								l = i.width / 2 - s.width / 2;
+								a = e.getBoundingClientRect(),
+								i = e.parentNode.getBoundingClientRect(),
+								n = i.left - a.left + p,
+								r = i.right - a.left - s.width - p,
+								l = a.width / 2 - s.width / 2;
 							o.a.write(() => {
 								t.style.left = Math.max(n, Math.min(l, r)) + "px"
 							})
@@ -744,17 +748,17 @@
 						className: e,
 						children: t,
 						disable: s,
-						tooltip: i
+						tooltip: a
 					} = this.props;
-					return a.a.createElement(u, {
+					return i.a.createElement(u, {
 						onMouseEnter: this.onMouseEnter,
 						setRef: e => this.container = e,
 						className: e,
 						disable: s
-					}, a.a.createElement(m, {
+					}, i.a.createElement(m, {
 						className: l.a.TooltipPopup,
 						innerRef: e => this.tooltipContainer = e
-					}, i), t)
+					}, a), t)
 				}
 			}
 		},
@@ -807,8 +811,8 @@
 				return xt
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.split.js");
-			var i = s("./node_modules/bowser/src/bowser.js"),
-				a = s.n(i),
+			var a = s("./node_modules/bowser/src/bowser.js"),
+				i = s.n(a),
 				n = s("./node_modules/crypto-js/sha256.js"),
 				o = s.n(n),
 				r = s("./node_modules/lodash/debounce.js"),
@@ -841,29 +845,29 @@
 				L = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				F = s("./src/reddit/helpers/media/index.ts"),
 				k = s("./src/reddit/helpers/trackers/media.ts"),
-				O = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const N = e => {
-					const t = Object(O.c)(e, {
-						experimentEligibilitySelector: O.a,
+				N = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const O = e => {
+					const t = Object(N.c)(e, {
+						experimentEligibilitySelector: N.a,
 						experimentName: _.fb
 					});
 					return Object(_.Xb)(t) ? void 0 : t
 				},
 				R = e => e === _.ib.On,
 				j = e => {
-					const t = Object(O.c)(e, {
-						experimentEligibilitySelector: O.a,
+					const t = Object(N.c)(e, {
+						experimentEligibilitySelector: N.a,
 						experimentName: _.gb
 					});
 					return Object(_.Xb)(t) ? void 0 : t
 				},
 				H = e => e === _.ib.On;
 			var A = s("./src/reddit/selectors/experiments/utils.ts");
-			const I = Object(m.a)(e => Object(O.c)(e, {
+			const I = Object(m.a)(e => Object(N.c)(e, {
 					experimentName: _.Sb,
-					experimentEligibilitySelector: O.a
+					experimentEligibilitySelector: N.a
 				}), A.a),
-				D = Object(m.a)(I, (function(e) {
+				U = Object(m.a)(I, (function(e) {
 					switch (e) {
 						case _.Ub.BufferTwoSeconds:
 							return 2;
@@ -875,15 +879,15 @@
 							return
 					}
 				}));
-			var U = s("./src/reddit/selectors/media.ts"),
+			var D = s("./src/reddit/selectors/media.ts"),
 				z = s("./src/reddit/selectors/platform.ts"),
 				W = s("./src/reddit/selectors/posts.ts"),
 				G = s("./src/reddit/selectors/user.ts"),
 				Y = s("./src/reddit/selectors/video.ts"),
-				K = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
-				Z = s.n(K),
-				Q = s("./src/lib/lessComponent.tsx"),
-				J = Q.a.img("Component", Z.a),
+				Z = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
+				J = s.n(Z),
+				K = s("./src/lib/lessComponent.tsx"),
+				Q = K.a.img("Component", J.a),
 				q = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
 				X = s("./src/app/strings/index.ts"),
 				$ = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./node_modules/fbt/lib/FbtPublic.js")),
@@ -900,21 +904,21 @@
 				te = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
 				se = s.n(te);
 
-			function ie() {
-				return (ie = Object.assign || function(e) {
+			function ae() {
+				return (ae = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
+						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			var ae = function(e, t) {
+			var ie = function(e, t) {
 				var s = {};
-				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
+				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (s[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var a = 0;
-					for (i = Object.getOwnPropertySymbols(e); a < i.length; a++) t.indexOf(i[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[a]) && (s[i[a]] = e[i[a]])
+					var i = 0;
+					for (a = Object.getOwnPropertySymbols(e); i < a.length; i++) t.indexOf(a[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[i]) && (s[a[i]] = e[a[i]])
 				}
 				return s
 			};
@@ -936,10 +940,10 @@
 					const {
 						resolution: t,
 						onClick: s,
-						isChecked: i
+						isChecked: a
 					} = e;
 					return d.a.createElement("button", {
-						"aria-checked": i,
+						"aria-checked": a,
 						className: se.a.VideoResolutionButton,
 						onClick: s,
 						role: "radio",
@@ -958,14 +962,14 @@
 					var {
 						isActive: t,
 						className: s,
-						innerRef: i
-					} = e, a = ae(e, ["isActive", "className", "innerRef"]);
-					return d.a.createElement("div", ie({
+						innerRef: a
+					} = e, i = ie(e, ["isActive", "className", "innerRef"]);
+					return d.a.createElement("div", ae({
 						className: Object(f.a)(se.a.SettingControlContainer, s, {
 							[se.a.mIsActive]: t
 						}),
-						ref: i
-					}, a))
+						ref: a
+					}, i))
 				};
 			class he extends c.Component {
 				constructor() {
@@ -991,14 +995,14 @@
 						active: e,
 						bitrateInfo: t,
 						className: s,
-						isLoggedIn: i,
-						resolution: a
+						isLoggedIn: a,
+						resolution: i
 					} = this.props, n = [...t.map(e => e.height), ne];
 					return d.a.createElement(de, {
 						innerRef: this.setContainerRef,
 						className: Object(f.a)(se.a.VideoSettingContainer, s),
 						isActive: e
-					}, i && d.a.createElement("div", {
+					}, a && d.a.createElement("div", {
 						className: se.a.AutoplayContainer
 					}, d.a.createElement(le, {
 						isChecked: this.state.autoplayPref,
@@ -1010,7 +1014,7 @@
 						key: t,
 						resolution: e,
 						onClick: () => this.setResolution(e),
-						isChecked: a === e
+						isChecked: i === e
 					}) : null)))
 				}
 			}
@@ -1025,8 +1029,8 @@
 				})),
 				ue = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
 				ge = s.n(ue);
-			const fe = Q.a.wrapped(pe.a, "TooltipControl", ge.a),
-				ve = Q.a.wrapped(fe, "ControlSetting", ge.a),
+			const fe = K.a.wrapped(pe.a, "TooltipControl", ge.a),
+				ve = K.a.wrapped(fe, "ControlSetting", ge.a),
 				ye = Object(X.a)("en", "video.settingTooltip");
 			class xe extends c.Component {
 				render() {
@@ -1034,8 +1038,8 @@
 						autoplayPref: e,
 						bitrateInfo: t,
 						isLoggedIn: s,
-						resolution: i,
-						setAutoplay: a,
+						resolution: a,
+						setAutoplay: i,
 						setResolution: n,
 						settingChange: o,
 						settingRef: r,
@@ -1052,14 +1056,15 @@
 						autoplayPref: e,
 						active: o === xt.Settings,
 						ref: e => r(e),
-						resolution: i,
+						resolution: a,
 						setResolution: n,
-						setAutoplay: a,
+						setAutoplay: i,
 						bitrateInfo: t
 					}), d.a.createElement("button", {
 						"aria-expanded": o === xt.Settings,
 						"aria-haspopup": !0,
 						"aria-label": ye,
+						className: ge.a.button,
 						onClick: l
 					}, d.a.createElement(me, {
 						className: ge.a.SettingIcon
@@ -1144,10 +1149,10 @@
 					fill: "#fff",
 					d: "M32.2 20.3c-.3-.2-.7-.2-1 0l-2.4 1.4v-1.5c0-1.1-.9-1.9-1.9-1.9h-7.7c-1.1 0-1.9.9-1.9 1.9v7.7c0 1.1.9 1.9 1.9 1.9h7.7c1.1 0 1.9-.9 1.9-1.9v-1.6l2.4 1.4c.2.1.3.1.5.1s.3 0 .5-.1c.3-.2.5-.5.5-.8v-5.8c-.1-.3-.2-.6-.5-.8"
 				}))),
-				Oe = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
-				Ne = s.n(Oe);
+				Ne = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
+				Oe = s.n(Ne);
 			var Re = e => d.a.createElement("svg", {
-					className: Object(f.a)(Ne.a.icon, e.className),
+					className: Object(f.a)(Oe.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1183,9 +1188,9 @@
 					d: "M25.4 24c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4.6-1.4 1.4-1.4 1.4.6 1.4 1.4zm5.3 0c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4zm-10.5 0c0 .8-.6 1.4-1.4 1.4s-1.5-.6-1.5-1.4.6-1.4 1.4-1.4 1.5.6 1.5 1.4z"
 				}))),
 				Ie = s("./src/reddit/icons/svgs/VideoPlayNow/index.m.less"),
-				De = s.n(Ie);
-			var Ue = e => d.a.createElement("svg", {
-					className: Object(f.a)(De.a.icon, e.className),
+				Ue = s.n(Ie);
+			var De = e => d.a.createElement("svg", {
+					className: Object(f.a)(Ue.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1221,9 +1226,9 @@
 					d: "M29.3 20.2h-5.8c-.2 0-.5-.3-.5-.5 0-.3.2-.5.5-.5h5.8c.3 0 .5.2.5.5 0 .2-.3.5-.5.5zm0 4.3h-5.8c-.2 0-.5-.2-.5-.5s.2-.5.5-.5h5.8c.3 0 .5.2.5.5s-.3.5-.5.5zm0 4.3h-5.8c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5.8c.3 0 .5.2.5.5s-.3.5-.5.5zm-8.2-8.2c0 .3-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5v-1.9c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5v1.9zm0 4.4c0 .3-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5v2zm0 4.3c0 .3-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5v-1.9c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5v1.9zm8.7-13H18.2c-1.1 0-1.9.9-1.9 1.9v11.5c0 1.1.9 1.9 1.9 1.9h11.5c1.1 0 1.9-.9 1.9-1.9V18.2c.1-1-.8-1.9-1.8-1.9z"
 				}))),
 				Ye = s("./src/reddit/icons/svgs/VideoShopNow/index.m.less"),
-				Ke = s.n(Ye);
-			var Ze = e => d.a.createElement("svg", {
-					className: Object(f.a)(Ke.a.icon, e.className),
+				Ze = s.n(Ye);
+			var Je = e => d.a.createElement("svg", {
+					className: Object(f.a)(Ze.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1239,10 +1244,10 @@
 					fill: "#fff",
 					d: "M29 26c-.6 0-1-.4-1-1 0-.5.4-1 1-1s1 .4 1 1-.5 1-1 1zm-6.9-6c0-.5.4-1 1-1H27c.6 0 1 .4 1 1v2.1h-5.9V20zM21 26c-.6 0-1-.4-1-1 0-.5.4-1 1-1s1 .4 1 1-.5 1-1 1zm11.7-3.6c-.2-.2-.5-.3-.7-.3h-2V20c0-1.6-1.3-3-3-3h-3.9c-1.7 0-3 1.3-3 3v2.1H18c-.3 0-.6.1-.7.3-.2.2-.3.5-.2.8l1 9c.1.5.5.9 1 .9h12c.5 0 .9-.4 1-.9l1-9c-.1-.4-.2-.6-.4-.8z"
 				}))),
-				Qe = s("./src/reddit/icons/svgs/VideoSignUp/index.m.less"),
-				Je = s.n(Qe);
+				Ke = s("./src/reddit/icons/svgs/VideoSignUp/index.m.less"),
+				Qe = s.n(Ke);
 			var qe = e => d.a.createElement("svg", {
-					className: Object(f.a)(Je.a.icon, e.className),
+					className: Object(f.a)(Qe.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1279,7 +1284,7 @@
 				}))),
 				tt = s("./src/reddit/icons/svgs/VideoWatchNow/index.m.less"),
 				st = s.n(tt);
-			var it = e => d.a.createElement("svg", {
+			var at = e => d.a.createElement("svg", {
 					className: Object(f.a)(st.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -1296,8 +1301,8 @@
 					fill: "#fff",
 					d: "M32.2 20.3c-.3-.2-.7-.2-1 0l-2.4 1.4v-1.5c0-1.1-.9-1.9-1.9-1.9h-7.7c-1.1 0-1.9.9-1.9 1.9v7.7c0 1.1.9 1.9 1.9 1.9h7.7c1.1 0 1.9-.9 1.9-1.9v-1.6l2.4 1.4c.2.1.3.1.5.1s.3 0 .5-.1c.3-.2.5-.5.5-.8v-5.8c-.1-.3-.2-.6-.5-.8"
 				}))),
-				at = s("./src/reddit/components/VideoCTA/index.m.less"),
-				nt = s.n(at);
+				it = s("./src/reddit/components/VideoCTA/index.m.less"),
+				nt = s.n(it);
 			const ot = {
 				"Apply Now": d.a.createElement(we, null),
 				"Contact Us": d.a.createElement(Me, null),
@@ -1307,31 +1312,31 @@
 				Install: d.a.createElement(Re, null),
 				Download: d.a.createElement(Re, null),
 				"Learn More": d.a.createElement(Ae, null),
-				"Play Now": d.a.createElement(Ue, null),
+				"Play Now": d.a.createElement(De, null),
 				"See Menu": d.a.createElement(Ge, null),
-				"Shop Now": d.a.createElement(Ze, null),
+				"Shop Now": d.a.createElement(Je, null),
 				"Sign Up": d.a.createElement(qe, null),
 				"View More": d.a.createElement(et, null),
-				"Watch Now": d.a.createElement(it, null)
+				"Watch Now": d.a.createElement(at, null)
 			};
 			var rt = Object(V.c)(e => {
 					const {
 						callToAction: t,
 						postId: s,
-						sendEvent: i,
-						source: a
+						sendEvent: a,
+						source: i
 					} = e;
 					return d.a.createElement(Se.a, {
 						className: nt.a.ctaLink,
-						onClick: e => i(e => Object.assign({}, Object(Pe.defaults)(e), {
+						onClick: e => a(e => Object.assign({}, Object(Pe.defaults)(e), {
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
 						})),
-						href: a.url,
+						href: i.url,
 						isSponsored: !0,
 						postId: s,
-						source: a
+						source: i
 					}, d.a.createElement("div", {
 						className: nt.a.ctaWrapper
 					}, (e => ot[e = e || "Learn More"])(t), d.a.createElement("span", {
@@ -1341,16 +1346,16 @@
 				lt = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				ct = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
 				dt = s.n(ct);
-			const ht = Q.a.div("Centered", dt.a),
-				pt = Q.a.div("EndedOverlay", dt.a),
-				mt = Q.a.span("ReplayText", dt.a),
-				ut = Q.a.button("ReplayButton", dt.a);
+			const ht = K.a.div("Centered", dt.a),
+				pt = K.a.div("EndedOverlay", dt.a),
+				mt = K.a.span("ReplayText", dt.a),
+				ut = K.a.button("ReplayButton", dt.a);
 			var gt = e => {
 					const {
 						onClick: t,
 						source: s,
-						callToAction: i,
-						postId: a
+						callToAction: a,
+						postId: i
 					} = e;
 					return d.a.createElement(pt, {
 						onClick: t
@@ -1358,9 +1363,9 @@
 						className: "replay-video"
 					}, $.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
-					}))), s && i && d.a.createElement(rt, {
-						callToAction: i,
-						postId: a,
+					}))), s && a && d.a.createElement(rt, {
+						callToAction: a,
+						postId: i,
 						source: s
 					})))
 				},
@@ -1371,17 +1376,17 @@
 				return (yt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
+						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			var xt, St = function(e, t) {
 					var s = {};
-					for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
+					for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (s[a] = e[a]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-						var a = 0;
-						for (i = Object.getOwnPropertySymbols(e); a < i.length; a++) t.indexOf(i[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[a]) && (s[i[a]] = e[i[a]])
+						var i = 0;
+						for (a = Object.getOwnPropertySymbols(e); i < a.length; i++) t.indexOf(a[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[i]) && (s[a[i]] = e[a[i]])
 					}
 					return s
 				},
@@ -1389,18 +1394,18 @@
 					var {
 						className: t,
 						isVisible: s,
-						setRef: i
-					} = e, a = St(e, ["className", "isVisible", "setRef"]);
+						setRef: a
+					} = e, i = St(e, ["className", "isVisible", "setRef"]);
 					return d.a.createElement("div", yt({
 						className: Object(f.a)(vt.a.Component, t, {
 							[vt.a.mIsNotVisible]: !s
 						}),
-						ref: i
-					}, a))
+						ref: a
+					}, i))
 				},
 				bt = s("./src/reddit/components/HTML5StreamPlayer/VideoOverlay/index.m.less"),
 				Et = s.n(bt),
-				wt = Q.a.div("Component", Et.a),
+				wt = K.a.div("Component", Et.a),
 				Ct = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
 				Tt = s.n(Ct);
 			! function(e) {
@@ -1414,18 +1419,18 @@
 					autoplayPref: G.b,
 					currentTime: Y.d,
 					currentUser: G.i,
-					isMutedPreference: U.a,
+					isMutedPreference: D.a,
 					isOverlayOpen: z.h,
 					language: G.O,
 					loadTimes: Y.f,
 					metadata: Y.g,
-					muxSamplingAVariant: N,
+					muxSamplingAVariant: O,
 					muxSamplingBVariant: j,
 					postUrl: W.P,
 					started: Y.i,
-					videoBufferTime: D,
+					videoBufferTime: U,
 					videoBufferVariant: I,
-					volume: U.b
+					volume: D.b
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1501,11 +1506,11 @@
 						[B.h]: !1,
 						[B.f]: !1
 					}, this.sendEvent = function(e, s) {
-						let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-						const a = t.HTML5StreamPlayerVideo;
-						if (a && null != t.props.postId) {
-							const a = i ? k.b(t.props.postId, e, s) : k.a(t.props.postId, e, s);
-							t.props.sendEvent(a)
+						let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+						const i = t.HTML5StreamPlayerVideo;
+						if (i && null != t.props.postId) {
+							const i = a ? k.b(t.props.postId, e, s) : k.a(t.props.postId, e, s);
+							t.props.sendEvent(i)
 						}
 					}, this.getVideoQualityList = () => {
 						if (this.dashPlayer) {
@@ -1549,7 +1554,7 @@
 						const {
 							controlBar: t,
 							seekBar: s,
-							volumeControl: i
+							volumeControl: a
 						} = this;
 						switch (this.setState({
 							hasHovered: !0
@@ -1558,7 +1563,7 @@
 								s && s.handleMouseMove(e);
 								break;
 							case xt.Volume:
-								i && i.handleMouseMove(e);
+								a && a.handleMouseMove(e);
 								break;
 							case xt.Settings:
 						}
@@ -1567,7 +1572,7 @@
 						const {
 							controlBar: t,
 							seekBar: s,
-							volumeControl: i
+							volumeControl: a
 						} = this;
 						switch (this.state.settingChange) {
 							case xt.SeekBar:
@@ -1580,7 +1585,7 @@
 								}
 								break;
 							case xt.Volume:
-								i && (i.handleMouseUp(e), this.sendEvent("click", "volume"));
+								a && (a.handleMouseUp(e), this.sendEvent("click", "volume"));
 								break;
 							case xt.Settings:
 								if (t && t.contains(e.target)) return;
@@ -1714,9 +1719,9 @@
 						if (t) {
 							let s = this.state.maxTimeServed;
 							if (this.state.lastUpdate && !this.state.videoPaused && (s += e - this.state.lastUpdate), t.currentTime && t.duration) {
-								let i = !1;
-								this.triggerAdWatchedPixels(t.currentTime, t.duration, s / 1e3), t.currentTime >= t.duration && (this.props.isGif || (i = !0, this.pauseVideo())), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(t.currentTime), this.setState({
-									videoEnded: i,
+								let a = !1;
+								this.triggerAdWatchedPixels(t.currentTime, t.duration, s / 1e3), t.currentTime >= t.duration && (this.props.isGif || (a = !0, this.pauseVideo())), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(t.currentTime), this.setState({
+									videoEnded: a,
 									maxTimeServed: s,
 									lastUpdate: e
 								})
@@ -1730,8 +1735,8 @@
 							}
 						}
 					}, this.triggerAdWatchedPixels = (e, t, s) => {
-						const i = this.getWatchedPercentRange(e, t);
-						s >= t && this.triggerPercentagePixels(B.a), this.triggerPercentagePixels(i);
+						const a = this.getWatchedPercentRange(e, t);
+						s >= t && this.triggerPercentagePixels(B.a), this.triggerPercentagePixels(a);
 						s / t >= .95 && this.triggerTimeWatchedPixels(B.f), this.triggerTimeWatchedPixels(s)
 					}, this.updateContinuousStartTime = e => {
 						this.props.onUpdateContinuousViewStartTime(e)
@@ -1786,15 +1791,15 @@
 						const t = this.HTML5StreamPlayerVideo,
 							s = this.props.mpegDashSource;
 						if (!t || !s) return;
-						const i = this.props.videoBufferVariant;
+						const a = this.props.videoBufferVariant;
 						this.dashPlayer = e.MediaPlayer().create(), this.dashPlayer.getDebug().setLogToBrowserConsole(!1), this.dashPlayer.extend("RequestModifier", (function() {
 							return {
 								modifyRequestHeader(e) {
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("d4fa200-production", " ").concat(t);
-									return i && (s += " [".concat(_.Sb, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("27d83c4-production", " ").concat(t);
+									return a && (s += " [".concat(_.Sb, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1824,19 +1829,19 @@
 							if ("HttpList" !== e.metric) return;
 							const t = e.value;
 							if ("MediaSegment" !== t.type) return;
-							let s, i, a;
+							let s, a, i;
 							if (t._responseHeaders.split("\n").forEach(e => {
 									const t = e.split(":");
 									if (2 !== t.length) return;
 									const n = t[0].trim(),
 										o = t[1].trim();
-									"x-cdn-server-region" === n && (s = o), "x-cdn-client-region" === n && (i = o), "x-cdn-name" === n && (a = o)
-								}), !s || !i || !a) return;
-							Lt.lastGeoPathSeen = Object(F.n)(a, s, i);
+									"x-cdn-server-region" === n && (s = o), "x-cdn-client-region" === n && (a = o), "x-cdn-name" === n && (i = o)
+								}), !s || !a || !i) return;
+							Lt.lastGeoPathSeen = Object(F.n)(i, s, a);
 							parseInt(o()(this.props.postId).toString(), 16)
 						});
-						let a = !1;
-						Lt.lastGeoPathSeen && ("NA-NA" === Lt.lastGeoPathSeen && this.props.muxSamplingAVariant && R(this.props.muxSamplingAVariant) && (a = !0), "NA-NA" !== Lt.lastGeoPathSeen && this.props.muxSamplingBVariant && H(this.props.muxSamplingBVariant) && (a = !0)), a && C().then(e => {
+						let i = !1;
+						Lt.lastGeoPathSeen && ("NA-NA" === Lt.lastGeoPathSeen && this.props.muxSamplingAVariant && R(this.props.muxSamplingAVariant) && (i = !0), "NA-NA" !== Lt.lastGeoPathSeen && this.props.muxSamplingBVariant && H(this.props.muxSamplingBVariant) && (i = !0)), i && C().then(e => {
 							if (void 0 !== typeof e) {
 								const s = Object(p.y)(this.props.mpegDashSource);
 								e.monitor(t, {
@@ -1860,7 +1865,7 @@
 						})
 					});
 					const e = this.HTML5StreamPlayerVideo;
-					document.addEventListener("webkitfullscreenchange", this.exitHandler, !1), document.addEventListener("fullscreenchange", this.exitHandler, !1), document.addEventListener("mozfullscreenchange", this.exitHandler, !1), document.addEventListener("MSFullscreenChange", this.exitHandler, !1), e && (x() ? e.play() : a.a.safari && !this.props.mpegDashSource && setTimeout(async () => {
+					document.addEventListener("webkitfullscreenchange", this.exitHandler, !1), document.addEventListener("fullscreenchange", this.exitHandler, !1), document.addEventListener("mozfullscreenchange", this.exitHandler, !1), document.addEventListener("MSFullscreenChange", this.exitHandler, !1), e && (x() ? e.play() : i.a.safari && !this.props.mpegDashSource && setTimeout(async () => {
 						try {
 							await e.play()
 						} catch (t) {} finally {
@@ -1880,15 +1885,15 @@
 				}
 				shouldComponentUpdate(e, t) {
 					const s = !!this.props.isListing && !this.props.isOverlayOpen && e.isOverlayOpen,
-						i = !!this.props.isListing && this.props.isOverlayOpen && !e.isOverlayOpen,
-						a = this.props.isOverlayOpen !== e.isOverlayOpen;
-					return t.videoFullScreen !== this.state.videoFullScreen || t.videoPaused !== this.state.videoPaused || t.isMuted !== this.state.isMuted || t.hideControlBar !== this.state.hideControlBar || t.settingChange !== this.state.settingChange || t.videoScrollPaused !== this.state.videoScrollPaused || t.videoWaiting !== this.state.videoWaiting || e.shouldPause !== this.props.shouldPause || e.shouldStop !== this.props.shouldStop || t.videoLoaded !== this.state.videoLoaded || t.usingKeys !== this.state.usingKeys || t.resolution !== this.state.resolution || s || i || a
+						a = !!this.props.isListing && this.props.isOverlayOpen && !e.isOverlayOpen,
+						i = this.props.isOverlayOpen !== e.isOverlayOpen;
+					return t.videoFullScreen !== this.state.videoFullScreen || t.videoPaused !== this.state.videoPaused || t.isMuted !== this.state.isMuted || t.hideControlBar !== this.state.hideControlBar || t.settingChange !== this.state.settingChange || t.videoScrollPaused !== this.state.videoScrollPaused || t.videoWaiting !== this.state.videoWaiting || e.shouldPause !== this.props.shouldPause || e.shouldStop !== this.props.shouldStop || t.videoLoaded !== this.state.videoLoaded || t.usingKeys !== this.state.usingKeys || t.resolution !== this.state.resolution || s || a || i
 				}
 				componentWillReceiveProps(e) {
 					const t = this.HTML5StreamPlayerVideo,
 						s = t && !t.paused,
-						i = !e.shouldStop && this.props.shouldStop,
-						a = e.shouldStop && !this.props.shouldStop,
+						a = !e.shouldStop && this.props.shouldStop,
+						i = e.shouldStop && !this.props.shouldStop,
 						n = !e.shouldPause && this.props.shouldPause,
 						o = e.shouldPause && !this.props.shouldPause,
 						r = !this.props.shouldPause && !this.props.shouldStop,
@@ -1897,9 +1902,9 @@
 						d = !e.isOverlayOpen && this.props.isOverlayOpen,
 						h = (r || s) && l && c,
 						p = r && l && d;
-					if (i && (this.setState({
+					if (a && (this.setState({
 							videoScrollPaused: !1
-						}), this.sendEvent("view", "autoplay")), (n || p) && (!this.state.videoManualPaused && t && t.currentTime < t.duration && (e.currentTime && (t.currentTime = e.currentTime), (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref || this.props.isOverlay) && this.playVideo()), p && this.sendEvent("change", "pagetype", !0)), (o || h) && (this.pauseVideo(), h && this.sendEvent("change", "pagetype", !0)), a && (this.setState({
+						}), this.sendEvent("view", "autoplay")), (n || p) && (!this.state.videoManualPaused && t && t.currentTime < t.duration && (e.currentTime && (t.currentTime = e.currentTime), (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref || this.props.isOverlay) && this.playVideo()), p && this.sendEvent("change", "pagetype", !0)), (o || h) && (this.pauseVideo(), h && this.sendEvent("change", "pagetype", !0)), i && (this.setState({
 							videoScrollPaused: !0
 						}), this.sendEvent("served", "video", !0), this.state.videoEnded || (this.sendEvent("scroll", "pause"), this.setVideoMute(!0))), e.mpegDashSource && this.props.mpegDashSource !== e.mpegDashSource) {
 						const {
@@ -1923,11 +1928,11 @@
 					if (e && this.controlBarApi) {
 						const t = [];
 						for (let s = 0; s < e.buffered.length; s++) {
-							const i = {
+							const a = {
 								start: e.buffered.start(s) / e.duration * 100,
 								end: e.buffered.end(s) / e.duration * 100
 							};
-							t.push(i)
+							t.push(a)
 						}
 						this.controlBarApi.setBufferedRanges(t)
 					}
@@ -1954,8 +1959,8 @@
 						className: e,
 						hideUntilLoaded: t,
 						playerClickPlay: s = !0,
-						showControlBar: i = !0,
-						showSettingsIcon: a = !0
+						showControlBar: a = !0,
+						showSettingsIcon: i = !0
 					} = this.props, {
 						hasAudio: n,
 						hasHovered: o,
@@ -1985,7 +1990,7 @@
 						onMouseLeave: this.handleMouseLeave,
 						onMouseMove: this.handleMouseMove,
 						onMouseUp: this.handleMouseUp
-					}, this.props.blurImageSrc && d.a.createElement(J, {
+					}, this.props.blurImageSrc && d.a.createElement(Q, {
 						src: this.props.blurImageSrc
 					}), d.a.createElement("video", {
 						poster: this.props.posterUrl,
@@ -2008,7 +2013,7 @@
 						callToAction: this.props.callToActionText
 					}) : d.a.createElement(wt, null), this.state.videoWaiting ? v && d.a.createElement(T.a, null) : this.state.videoPaused && !x && d.a.createElement(M.a, {
 						onClick: s ? void 0 : this.playPauseVideo
-					}), i && d.a.createElement(q.a, {
+					}), a && d.a.createElement(q.a, {
 						clickSnoo: this.clickSnoo,
 						controlBarRef: this.setControlBarRef,
 						currentTime: m ? m.currentTime : 0,
@@ -2030,7 +2035,7 @@
 						settingChange: c,
 						setVideoPosition: this.setVideoPos,
 						setVolume: this.setVolume,
-						showSettingsIcon: a,
+						showSettingsIcon: i,
 						showVolumeIcon: y,
 						toggleMute: this.toggleMuteVideo,
 						totalTime: this.state.totalTime,
@@ -2048,12 +2053,12 @@
 		},
 		"./src/reddit/components/Media/LoadingIcon/index.tsx": function(e, t, s) {
 			"use strict";
-			var i = s("./node_modules/react/index.js"),
-				a = s.n(i),
+			var a = s("./node_modules/react/index.js"),
+				i = s.n(a),
 				n = s("./src/config.ts"),
 				o = s("./src/reddit/components/Media/LoadingIcon/index.m.less"),
 				r = s.n(o);
-			t.a = () => a.a.createElement("img", {
+			t.a = () => i.a.createElement("img", {
 				className: r.a.image,
 				src: "".concat(n.a.assetPath, "/img/loading.gif")
 			})
@@ -2068,26 +2073,26 @@
 		},
 		"./src/reddit/components/PlayButton/index.tsx": function(e, t, s) {
 			"use strict";
-			var i = s("./node_modules/react/index.js"),
-				a = s.n(i),
+			var a = s("./node_modules/react/index.js"),
+				i = s.n(a),
 				n = s("./src/lib/lessComponent.tsx"),
 				o = s("./src/lib/classNames/index.ts"),
 				r = s("./src/reddit/icons/svgs/VideoNewPlayButton/index.m.less"),
 				l = s.n(r);
-			var c = e => a.a.createElement("svg", {
+			var c = e => i.a.createElement("svg", {
 					className: Object(o.a)(l.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("g", {
+				}, i.a.createElement("g", {
 					transform: "translate(1 1)"
-				}, a.a.createElement("circle", {
+				}, i.a.createElement("circle", {
 					cx: "24",
 					cy: "24",
 					r: "24",
 					fill: "none",
 					stroke: "#fff",
 					strokeWidth: "1.92"
-				}), a.a.createElement("path", {
+				}), i.a.createElement("path", {
 					fill: "#fff",
 					d: "M33.1 22.2l-11.5-6.7c-.3-.2-.7-.2-1 0-.3.2-.4.5-.4.8v13.4c0 .3.2.7.5.8.1.1.3.1.5.1s.3 0 .5-.1l11.5-6.7c.3-.2.5-.5.5-.8-.1-.3-.3-.6-.6-.8"
 				}))),
@@ -2095,10 +2100,10 @@
 				h = s.n(d);
 			const p = n.a.wrapped(c, "PlayIcon", h.a),
 				m = n.a.div("PlayContainer", h.a);
-			t.a = e => a.a.createElement(m, {
+			t.a = e => i.a.createElement(m, {
 				className: e.className,
 				onClick: e.onClick
-			}, a.a.createElement(p, null))
+			}, i.a.createElement(p, null))
 		},
 		"./src/reddit/components/VideoCTA/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2139,16 +2144,16 @@
 		},
 		"./src/reddit/icons/svgs/VideoMute/index.tsx": function(e, t, s) {
 			"use strict";
-			var i = s("./node_modules/react/index.js"),
-				a = s.n(i);
-			t.a = e => a.a.createElement("svg", {
+			var a = s("./node_modules/react/index.js"),
+				i = s.n(a);
+			t.a = e => i.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
-			}, a.a.createElement("path", {
+			}, i.a.createElement("path", {
 				d: "M16.41,10.5l1.79-1.79a1,1,0,0,0-1.41-1.41L15,9.09,13.21,7.29a1,1,0,0,0-1.41,1.41l1.79,1.79-1.79,1.79a1,1,0,1,0,1.41,1.41L15,11.91l1.79,1.79a1,1,0,0,0,1.41-1.41Z",
 				fill: "#FFFFFF"
-			}), a.a.createElement("path", {
+			}), i.a.createElement("path", {
 				d: "M9.7,1.54a.5.5,0,0,0-.54.09L3.81,6.5H1.5A.5.5,0,0,0,1,7v6a.5.5,0,0,0,.5.5H3.81l5.36,4.87a.5.5,0,0,0,.34.13.49.49,0,0,0,.2,0A.5.5,0,0,0,10,18V2A.5.5,0,0,0,9.7,1.54Z",
 				fill: "#FFFFFF"
 			}))
@@ -2170,25 +2175,25 @@
 		},
 		"./src/reddit/icons/svgs/VideoReplay/index.tsx": function(e, t, s) {
 			"use strict";
-			var i = s("./node_modules/react/index.js"),
-				a = s.n(i),
+			var a = s("./node_modules/react/index.js"),
+				i = s.n(a),
 				n = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/VideoReplay/index.m.less"),
 				r = s.n(o);
-			t.a = e => a.a.createElement("svg", {
+			t.a = e => i.a.createElement("svg", {
 				className: Object(n.a)(r.a.icon, e.className),
 				viewBox: "0 0 50 50",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", {
+			}, i.a.createElement("g", {
 				transform: "translate(1 1)"
-			}, a.a.createElement("circle", {
+			}, i.a.createElement("circle", {
 				cx: "24",
 				cy: "24",
 				r: "24",
 				fill: "none",
 				stroke: "#fff",
 				strokeWidth: "1.92"
-			}), a.a.createElement("path", {
+			}), i.a.createElement("path", {
 				fill: "#fff",
 				d: "M32.5 23.3c-.7 0-1.2.5-1.2 1.2 0 4-3.2 7.2-7.2 7.2s-7.2-3.2-7.2-7.2c0-3.6 2.7-6.6 6.2-7.1v1.7c0 .2.1.4.3.5.1 0 .2.1.3.1.1 0 .3 0 .4-.1l3.6-3c.1-.1.2-.3.2-.5s-.1-.3-.2-.5l-3.7-3c-.2-.1-.4-.2-.6-.1-.2.1-.4.3-.4.6V15c-4.8.5-8.6 4.6-8.6 9.5 0 5.3 4.3 9.6 9.6 9.6s9.6-4.3 9.6-9.6c.1-.7-.5-1.2-1.1-1.2"
 			})))
@@ -2215,19 +2220,19 @@
 		},
 		"./src/reddit/icons/svgs/VideoVolume/index.tsx": function(e, t, s) {
 			"use strict";
-			var i = s("./node_modules/react/index.js"),
-				a = s.n(i);
-			t.a = e => a.a.createElement("svg", {
+			var a = s("./node_modules/react/index.js"),
+				i = s.n(a);
+			t.a = e => i.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
-			}, a.a.createElement("path", {
+			}, i.a.createElement("path", {
 				d: "M12.67,3.1a1,1,0,0,0-.33,2,5,5,0,0,1,0,9.85,1,1,0,0,0,.17,2h.17a7,7,0,0,0,0-13.79Z",
 				fill: "#FFFFFF"
-			}), a.a.createElement("path", {
+			}), i.a.createElement("path", {
 				d: "M9.7,1.54a.5.5,0,0,0-.54.09L3.81,6.5H1.5A.5.5,0,0,0,1,7v6a.5.5,0,0,0,.5.5H3.81l5.36,4.87a.5.5,0,0,0,.34.13.49.49,0,0,0,.2,0A.5.5,0,0,0,10,18V2A.5.5,0,0,0,9.7,1.54Z",
 				fill: "#FFFFFF"
-			}), a.a.createElement("path", {
+			}), i.a.createElement("path", {
 				d: "M12,10.86a1,1,0,0,0,1,1.73,3,3,0,0,0,0-5.17,1,1,0,0,0-1,1.73,1,1,0,0,1,0,1.72Z",
 				fill: "#FFFFFF"
 			}))
@@ -2240,13 +2245,13 @@
 		"./src/reddit/selectors/media.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return i
-			})), s.d(t, "b", (function() {
 				return a
+			})), s.d(t, "b", (function() {
+				return i
 			}));
-			const i = e => e.mediaPlayback.isMuted,
-				a = e => e.mediaPlayback.volume
+			const a = e => e.mediaPlayback.isMuted,
+				i = e => e.mediaPlayback.volume
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.32ebbe0e3632737daf1e.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.37159b73afc2f55de9e6.js.map
