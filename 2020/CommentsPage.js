@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b89d7a67562ad72d9758.js
-// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b93e10a07a75bfc04450.js
+// Retrieved at 4/9/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9108,38 +9108,31 @@
 		"./src/reddit/components/PostLeftRail/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return h
+				return l
 			})), s.d(t, "c", (function() {
-				return x
+				return m
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/lib/classNames/index.ts"),
-				d = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				c = s("./src/reddit/constants/colors.ts"),
-				l = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				m = s("./src/reddit/selectors/experiments/adSidebar.ts"),
-				p = s("./src/reddit/components/PostLeftRail/index.m.less"),
-				u = s.n(p);
-			const h = 40,
-				b = Object(r.b)(() => Object(i.c)({
-					isInAdLeftSidebarExperiment: m.a
-				})),
-				x = e => e.isSponsored && !e.isInAdLeftSidebarExperiment ? Object(l.a)(e).button : e.isRemoved ? c.a.removed : e.isReported ? c.a.reported : "transparent",
-				g = Object(d.a)(e => {
-					const t = x(e),
+				r = s("./src/lib/classNames/index.ts"),
+				i = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				a = s("./src/reddit/constants/colors.ts"),
+				d = s("./src/reddit/components/PostLeftRail/index.m.less"),
+				c = s.n(d);
+			const l = 40,
+				m = e => e.isRemoved ? a.a.removed : e.isReported ? a.a.reported : "transparent",
+				p = Object(i.a)(e => {
+					const t = m(e),
 						s = {
-							width: "".concat(h, "px"),
+							width: "".concat(l, "px"),
 							borderLeft: "4px solid ".concat(t)
 						};
 					return o.a.createElement("div", {
-						className: Object(a.a)(u.a.postLeftRail, e.className),
+						className: Object(r.a)(c.a.postLeftRail, e.className),
 						style: e.withoutComputedStyles ? {} : s
 					}, e.children)
 				});
-			t.b = b(g)
+			t.b = p
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, s) {
 			"use strict";
@@ -16102,21 +16095,6 @@
 					return n && n.endCursor || null
 				}
 		},
-		"./src/reddit/selectors/experiments/adSidebar.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var n = s("./src/reddit/constants/experiments.ts"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => {
-				const t = Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: n.a
-				});
-				return !!t && !Object(n.Xb)(t)
-			}
-		},
 		"./src/reddit/selectors/experiments/publicAwarding.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -16127,9 +16105,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.pb
+					experimentName: n.ob
 				});
-				return Object(n.Xb)(t) ? void 0 : t
+				return Object(n.Wb)(t) ? void 0 : t
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16146,4 +16124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.b89d7a67562ad72d9758.js.map
+//# sourceMappingURL=CommentsPage.b93e10a07a75bfc04450.js.map

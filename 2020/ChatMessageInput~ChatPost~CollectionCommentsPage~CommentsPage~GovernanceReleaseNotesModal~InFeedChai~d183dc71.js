@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.ae8556ca21ed9ec0c212.js
-// Retrieved at 4/8/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.08318cbf9f3d726b72d6.js
+// Retrieved at 4/9/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1290,8 +1290,8 @@
 					}
 				}),
 				N = n("./src/reddit/constants/experiments.ts"),
-				B = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				M = n("./src/reddit/selectors/subredditMention.ts");
+				M = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				B = n("./src/reddit/selectors/subredditMention.ts");
 			class D extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
@@ -1300,7 +1300,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(B.a)(Object.assign({}, e, {
+						t(Object(M.a)(Object.assign({}, e, {
 							subredditName: n
 						})))
 					}
@@ -1317,9 +1317,9 @@
 			}
 			const H = Object(u.c)(D),
 				R = Object(I.c)({
-					isFeatureFlagEnabled: M.b,
-					isUserInTreatment: M.e,
-					userVariant: M.a
+					isFeatureFlagEnabled: B.b,
+					isUserInTreatment: B.e,
+					userVariant: B.a
 				});
 			var U = Object(v.b)(R)(e => {
 					let {
@@ -1334,12 +1334,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Fb.SmIcon:
+						case N.Eb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Fb.SmIconHc:
+						case N.Eb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1782,12 +1782,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Bb
+						experimentName: s.Ab
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Fb.SmIcon || t === s.Fb.SmIconHc
+					return t === s.Eb.SmIcon || t === s.Eb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.ae8556ca21ed9ec0c212.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.08318cbf9f3d726b72d6.js.map

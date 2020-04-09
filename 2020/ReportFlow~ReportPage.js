@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.bca5b85a502d1d068931.js
-// Retrieved at 4/7/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.3ff7d65eae75411f8a9f.js
+// Retrieved at 4/9/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow~ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -783,15 +783,15 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const s = e => r.b.Enabled === Object(o.c)(e, {
+			const s = e => r.a.Enabled === Object(o.c)(e, {
+					experimentEligibilitySelector: a.G,
+					experimentName: r.c
+				}),
+				i = e => r.b.Enabled === Object(o.c)(e, {
 					experimentEligibilitySelector: a.G,
 					experimentName: r.d
-				}),
-				i = e => r.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: a.G,
-					experimentName: r.e
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow~ReportPage.bca5b85a502d1d068931.js.map
+//# sourceMappingURL=ReportFlow~ReportPage.3ff7d65eae75411f8a9f.js.map
