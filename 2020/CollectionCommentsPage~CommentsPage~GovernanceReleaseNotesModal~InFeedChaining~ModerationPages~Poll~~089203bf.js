@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.d3babada69fb21271fa9.js
-// Retrieved at 4/8/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.a86259e13c91003b6264.js
+// Retrieved at 4/9/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, i) {
@@ -495,8 +495,8 @@
 				B = i("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				A = i("./src/reddit/models/Media/index.ts"),
 				_ = i("./src/reddit/selectors/experiments/postSeo.ts"),
-				H = i("./src/reddit/selectors/posts.ts"),
-				k = i("./src/reddit/components/Media/getResolution.ts"),
+				k = i("./src/reddit/selectors/posts.ts"),
+				H = i("./src/reddit/components/Media/getResolution.ts"),
 				U = i("./src/reddit/components/Media/index.m.less"),
 				z = i.n(U);
 
@@ -516,7 +516,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), i.e("LiveVideoPlayer")]).then(i.bind(null, "./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), i.e("LiveVideoPlayer~PublicAccessNetwork"), i.e("LiveVideoPlayer")]).then(i.bind(null, "./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -559,7 +559,7 @@
 						let {
 							post: i
 						} = t;
-						const s = Object(H.Z)(e, i);
+						const s = Object(k.Z)(e, i);
 						return s && s.displayText || i && i.author && Object(F.c)(i.author)
 					}
 				}),
@@ -733,11 +733,11 @@
 					let o = s.media && !Object(A.F)(s.media) ? s.media.content : "",
 						[a, r] = !s.media || Object(A.D)(s.media) || Object(A.E)(s.media) ? [0, 0] : [s.media.height, s.media.width];
 					if (i && s.media && (s.media.type === A.n.IMAGE || s.media.type === A.n.GIFVIDEO)) {
-						const e = k.b(i, s.media.resolutions);
+						const e = H.b(i, s.media.resolutions);
 						e && (o = e.url, r = e.width, a = e.height)
 					} else if (s && s.media && (!e.isListing || e.isExpando) && (s.media.type === A.n.IMAGE || s.media.type === A.n.GIFVIDEO)) {
 						let e;
-						(e = Object(C.b)(s.media.height, s.media.width) && Object(C.c)(s.media.height) ? k.c(s.media.height, s.media.width, s.media.resolutions) : k.a(s.media.resolutions)) && (o = e.url, r = e.width, a = e.height)
+						(e = Object(C.b)(s.media.height, s.media.width) && Object(C.c)(s.media.height) ? H.c(s.media.height, s.media.width, s.media.resolutions) : H.a(s.media.resolutions)) && (o = e.url, r = e.width, a = e.height)
 					}
 					if (e.isExpando)
 						if (r > t.viewportWidth) {
@@ -801,8 +801,8 @@
 						viewportWidth: _
 					} = this.state;
 					if (!h.media) return null;
-					const H = j || P,
-						k = F,
+					const k = j || P,
+						H = F,
 						{
 							source: U,
 							obfuscated: J,
@@ -952,7 +952,7 @@
 								width: o ? void 0 : t,
 								postId: h.id,
 								shouldLoad: !0,
-								shouldPause: H,
+								shouldPause: k,
 								source: U,
 								originalSource: h.media.content
 							}))))
@@ -984,8 +984,8 @@
 								autoPlay: "boolean" == typeof P ? !P : void 0,
 								isExpando: o,
 								shouldLoad: !0,
-								shouldPause: H,
-								shouldStop: k,
+								shouldPause: k,
+								shouldStop: H,
 								hlsSource: h.media.hlsUrl,
 								mpegDashSource: h.media.dashUrl,
 								isGif: h.media.isGif,
@@ -1006,7 +1006,7 @@
 							}, l.a.createElement(q, {
 								canLoad: L,
 								postId: h.id,
-								shouldPause: H,
+								shouldPause: k,
 								url: h.media.hlsUrl
 							}));
 						case A.n.IMAGE:
@@ -1145,4 +1145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.d3babada69fb21271fa9.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.a86259e13c91003b6264.js.map

@@ -1,444 +1,80 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.730923c40fa86bba5acc.js
-// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.53a7f43dade94ff73dda.js
+// Retrieved at 4/9/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
-		"./src/lib/setInterval/index.ts": function(e, t, s) {
-			"use strict";
-			t.a = function(e, t) {
-				for (var s = arguments.length, r = new Array(s > 2 ? s - 2 : 0), a = 2; a < s; a++) r[a - 2] = arguments[a];
-				let i, n = !1;
-				const o = async () => {
-					r && r.length ? await e.call(window, ...r) : await e.call(window), n || (i = window.setTimeout(o, t))
-				};
-				return i = window.setTimeout(o, t), () => {
-					n = !0, window.clearTimeout(i)
-				}
-			}
-		},
-		"./src/reddit/actions/publicAccessNetwork/rpanWorker.ts": function(e, t, s) {
-			"use strict";
-			var r = s("./src/lib/setInterval/index.ts"),
-				a = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
-				i = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				n = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				o = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const c = new class {
-				constructor() {
-					this.isInitialized = !1, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatDelaySec = i.f, this.heartbeatRateSec = i.g, this.statsRefreshRateSec = i.j, this.recommendedViewerSubredditsRefreshRateSec = i.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStatsId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentHeartbeatId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
-				}
-				unsubscribeConfig() {
-					window.clearTimeout(this.configTimeout)
-				}
-				unsubscribeStreams() {
-					window.clearTimeout(this.streamsTimeout)
-				}
-				unsubscribeRecommendedViewerSubreddits() {
-					this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval()
-				}
-				unsubscribeStats() {
-					this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.currentStatsId = void 0
-				}
-				unsubscribeHeartbeat() {
-					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.currentHeartbeatId = void 0
-				}
-				async initializeConfig(e, t, s) {
-					if (this.isInitialized) return;
-					await t(Object(a.c)(e));
-					const r = Object(o.m)(s());
-					r.lastUpdated && (this.currentStreamsRateSec = r.viewer_streams_refresh, this.currentConfigRateSec = r.rpan_config_refresh_rate, this.isInitialized = !0)
-				}
-				async startConfigWork(e, t, s) {
-					window.clearTimeout(this.configTimeout), await t(Object(a.c)(e));
-					const r = Object(o.m)(s()),
-						i = r.rpan_config_refresh_rate;
-					this.currentConfigRateSec !== i && (this.currentConfigRateSec = i);
-					const n = r.viewer_streams_refresh;
-					this.currentStreamsRateSec !== n && (this.currentStreamsRateSec = n, this.startStreamsWork(e, t, s));
-					const c = r.viewer_heartbeat_interval;
-					c && this.heartbeatRateSec !== c && this.startHeartbeatWork(t, s);
-					const d = r.viewer_heartbeat_interval;
-					d && this.statsRefreshRateSec !== d && this.startStatsWork(t, s), this.configTimeout = window.setTimeout(() => this.startConfigWork(e, t, s), this.getConfigTimeout())
-				}
-				async startStreamsWork(e, t, s) {
-					window.clearTimeout(this.streamsTimeout), await t(Object(n.e)(e)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s), this.getStreamsTimeout(s()))
-				}
-				async startRecommendedViewerSubredditsWork(e, t) {
-					await this.initializeConfig(i.P, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(a.b)());
-					const s = Object(o.m)(t()).recommended_viewer_subreddits_refresh_rate;
-					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(a.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
-				}
-				async startStatsWork(e, t) {
-					await this.initializeConfig(i.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
-						this.currentStatsId && e(Object(n.d)(this.currentStatsId))
-					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
-				}
-				async startHeartbeatWork(e, t) {
-					if (await this.initializeConfig(i.P, e, t), !this.currentHeartbeatId) return;
-					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
-					const s = Object(o.m)(t());
-					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
-					const n = 1e3 * this.heartbeatDelaySec;
-					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
-					const c = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
-						d = () => {
-							this.currentHeartbeatId && e(Object(a.d)(this.currentHeartbeatId))
-						};
-					this.clearSendHeartbeatInterval = Object(r.a)(() => {
-						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(r.a)(d, c)
-					}, n)
-				}
-				getStreamsTimeout(e) {
-					return Math.max(1e3 * (this.currentStreamsRateSec + this.getRandomFetchStreamsJitterSec(e)), this.MIN_RATE_MS)
-				}
-				getConfigTimeout() {
-					return Math.max(1e3 * this.currentConfigRateSec, this.MIN_RATE_MS)
-				}
-				getRandomFetchStreamsJitterSec(e) {
-					const t = Object(o.m)(e).viewer_streams_refresh_slop,
-						s = Math.cos(Math.PI * Math.round(Math.random()));
-					return Math.random() * t * s
-				}
-			};
-			t.a = c
-		},
-		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "c", (function() {
-				return h
-			})), s.d(t, "a", (function() {
-				return g
-			})), s.d(t, "b", (function() {
-				return R
-			})), s.d(t, "d", (function() {
-				return E
-			})), s.d(t, "e", (function() {
-				return _
-			}));
-			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = s("./node_modules/query-string/index.js"),
-				a = s.n(r),
-				i = s("./src/lib/makeActionCreator/index.ts"),
-				n = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				o = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
-				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = new Set(["home", "r/popular"]),
-				h = e => {
-					const t = location && location.search || "",
-						s = a.a.parse(t);
-					l.has(e) && (s.related = e);
-					const r = a.a.stringify(s);
-					return r ? "?".concat(r) : ""
-				},
-				m = Object(i.a)(n.L),
-				b = Object(i.a)(n.x),
-				p = Object(i.a)(n.M),
-				v = Object(i.a)(n.y),
-				S = Object(i.a)(n.K),
-				y = Object(i.a)(n.J),
-				g = Object(i.a)(n.s),
-				R = Object(i.a)(n.t),
-				w = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
-					post: Object.assign({}, t.post, {
-						subreddit: Object.assign({}, t.post.subreddit, {
-							name: "pan"
-						})
-					})
-				}),
-				E = e => async (t, s, r) => {
-					let {
-						gqlContext: a
-					} = r;
-					const i = Object(c.g)(e),
-						n = s();
-					if (Object(u.e)(n, i)) return;
-					t(m(i));
-					const d = await Object(o.d)(a(), i),
-						l = Date.now();
-					if (d.ok && d.body && d.body.data) {
-						let e = d.body.data;
-						const r = Object(u.b)(s());
-						r && "pan" !== r && (e = w(r)(e)), t(b({
-							model: e,
-							utcTimeStamp: l
-						}))
-					} else t(P({
-						streamId: i,
-						error: d.error,
-						utcTimeStamp: l
-					}))
-				}, _ = e => async (t, s) => Object(d.b)(s()) ? t(I(e)) : t(f()), f = () => async (e, t, s) => {
-					let {
-						gqlContext: r
-					} = s;
-					const a = t();
-					if (Object(u.g)(a)) return;
-					e(p());
-					const i = await Object(o.f)(r()),
-						n = Date.now();
-					if (i.ok && i.body && i.body.data) {
-						const t = i.body.data;
-						e(v({
-							models: t,
-							utcTimeStamp: n
-						}))
-					} else e(O({
-						error: i.error,
-						utcTimeStamp: n
-					}))
-				}, I = e => async (t, s, r) => {
-					let {
-						gqlContext: a
-					} = r;
-					const i = s();
-					if (Object(u.g)(i)) return;
-					t(p());
-					const n = await Object(o.e)(a(), e),
-						c = Date.now();
-					if (n.ok && n.body && n.body.data) {
-						let r = n.body.data;
-						const a = Object(u.b)(s());
-						a && "pan" !== a && (r = r.map(w(a))), t(v({
-							listingName: e,
-							models: r,
-							utcTimeStamp: c
-						}))
-					} else t(O({
-						error: n.error,
-						utcTimeStamp: c
-					}))
-				}, P = e => async t => {
-					t(S(e))
-				}, O = e => async t => {
-					t(y(e))
-				}
-		},
-		"./src/reddit/components/HlsVideo/index.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return l
-			}));
-			var r = s("./node_modules/react/index.js"),
-				a = s.n(r),
-				i = s("./node_modules/hls.js/dist/hls.js"),
-				n = s.n(i),
-				o = s("./src/lib/env/index.ts");
-			const c = 3,
-				d = 5e3,
-				u = 1e3;
-			class l extends r.Component {
-				constructor(e) {
-					super(e), this.mediaRecoveryAttemptsCount = 0, this.mediaRecoveryLastAttemptUtc = 0, this.fragmentRecoveryLastAttemptUtc = 0, this.fragmentRecoveryAttemptsCount = 0, this.videoElement = a.a.createRef(), this.onPlayError = e => t => {
-						if ("AbortError" === t.name) return;
-						const {
-							onAutoPlayPrevented: s,
-							playMutedOnPrevented: r
-						} = this.props;
-						if ("NotAllowedError" === t.name) return s && s(), void(r && this.setState(Object.assign({}, this.state, {
-							isMuteForced: !0
-						})));
-						Object(o.a)() && console.error(t), e && this.onIrrecoverableError(e)
-					}, this.state = {
-						isInitialized: !1,
-						isMuteForced: !1
-					}, this.hls = void 0, this.onVideoPause = this.onVideoPause.bind(this), this.onVideoPlay = this.onVideoPlay.bind(this), this.onTimeUpdated = this.onTimeUpdated.bind(this)
-				}
-				componentDidUpdate(e, t) {
-					if (e.url !== this.props.url) return void this.initialize();
-					const {
-						isPaused: s
-					} = this.props, r = this.videoElement.current;
-					r && this.state.isInitialized && s !== r.paused && (s ? r.pause() : r.play().catch(this.onPlayError(this.hls))), !t.isMuteForced && this.state.isMuteForced && this.state.isInitialized && this.videoElement.current && this.videoElement.current.play().catch(this.onPlayError(this.hls))
-				}
-				componentDidMount() {
-					this.initialize()
-				}
-				componentWillUnmount() {
-					const e = this.videoElement.current;
-					e && !e.paused && this.onVideoPause(), this.hls && this.hls.destroy()
-				}
-				render() {
-					const {
-						controls: e,
-						muted: t,
-						onEnded: s,
-						onLoadedData: r
-					} = this.props;
-					return a.a.createElement("video", {
-						controls: e,
-						tabIndex: e ? 0 : -1,
-						muted: t || this.state.isMuteForced,
-						onEnded: s,
-						onLoadedData: r,
-						onPlay: this.onVideoPlay,
-						onPause: this.onVideoPause,
-						onTimeUpdate: this.onTimeUpdated,
-						ref: this.videoElement
-					})
-				}
-				initialize() {
-					const {
-						autoplay: e,
-						startTime: t,
-						isPaused: s,
-						onLevelLoaded: r,
-						onLoadingData: a,
-						url: i
-					} = this.props;
-					if (!i || !this.videoElement.current) return;
-					this.hls && this.hls.destroy();
-					const o = new n.a({
-						enableWorker: !1,
-						fragLoadingMaxRetry: 2,
-						levelLoadingMaxRetry: 4,
-						manifestLoadingMaxRetry: 1,
-						startFragPrefetch: !0,
-						liveSyncDurationCount: 2,
-						maxMaxBufferLength: 10
-					});
-					this.subscribeErrorHandlers(o), o.on(n.a.Events.MANIFEST_LOADING, () => {
-						a && a()
-					}), o.on(n.a.Events.MANIFEST_PARSED, (r, a) => {
-						e && !s && this.videoElement.current && (this.videoElement.current.currentTime = t, this.videoElement.current.play().catch(this.onPlayError(o))), this.setState(Object.assign({}, this.state, {
-							isInitialized: !0
-						}))
-					}), o.on(n.a.Events.LEVEL_LOADED, (e, t) => {
-						r && r(t.details)
-					}), o.loadSource(i), o.attachMedia(this.videoElement.current), this.hls = o
-				}
-				subscribeErrorHandlers(e) {
-					e.on(n.a.Events.ERROR, (t, s) => {
-						if (s.type === n.a.ErrorTypes.NETWORK_ERROR && s.response && 410 === s.response.code) this.onResourceRemoved(e);
-						else if (s.fatal) switch (s.type) {
-							case n.a.ErrorTypes.MEDIA_ERROR:
-								return void this.handleFatalMediaError(e);
-							case n.a.ErrorTypes.NETWORK_ERROR:
-								return void this.handleFatalNetworkError(e, s);
-							default:
-								return void this.onIrrecoverableError(e)
-						}
-					})
-				}
-				onResourceRemoved(e) {
-					e.stopLoad(), this.props.onResourceRemoved && this.props.onResourceRemoved()
-				}
-				onIrrecoverableError(e) {
-					e.destroy(), this.props.onError && this.props.onError()
-				}
-				handleFatalMediaError(e) {
-					return Date.now() - this.mediaRecoveryLastAttemptUtc > u && (this.mediaRecoveryAttemptsCount = 0), 0 === this.mediaRecoveryAttemptsCount ? (this.mediaRecoveryAttemptsCount++, this.mediaRecoveryLastAttemptUtc = Date.now(), void e.recoverMediaError()) : 1 === this.mediaRecoveryAttemptsCount ? (this.mediaRecoveryAttemptsCount++, this.mediaRecoveryLastAttemptUtc = Date.now(), e.swapAudioCodec(), void e.recoverMediaError()) : void this.onIrrecoverableError(e)
-				}
-				handleFatalNetworkError(e, t) {
-					t.details !== n.a.ErrorDetails.FRAG_LOAD_ERROR && t.details !== n.a.ErrorDetails.FRAG_LOAD_TIMEOUT ? this.onIrrecoverableError(e) : this.handleBadFragment(e, t.frag)
-				}
-				handleBadFragment(e, t) {
-					this.resetBadFragmentsCountIfCooldownPassed(), this.fragmentRecoveryAttemptsCount > c || !t ? this.onIrrecoverableError(e) : (this.fragmentRecoveryAttemptsCount++, this.fragmentRecoveryLastAttemptUtc = Date.now(), e.startLoad())
-				}
-				resetBadFragmentsCountIfCooldownPassed() {
-					this.fragmentRecoveryLastAttemptUtc + d < Date.now() && (this.fragmentRecoveryAttemptsCount = 0)
-				}
-				onTimeUpdated() {
-					this.videoElement.current && this.props.onTimeUpdate && this.props.onTimeUpdate(this.videoElement.current.currentTime)
-				}
-				onVideoPause() {
-					const {
-						onPause: e
-					} = this.props;
-					e && e()
-				}
-				onVideoPlay() {
-					const {
-						onPlay: e
-					} = this.props;
-					e && e(), this.state.isMuteForced && this.setState(Object.assign({}, this.state, {
-						isMuteForced: !1
-					}))
-				}
-				setCurrentTime(e) {
-					const t = this.videoElement.current;
-					t && (t.currentTime = e)
-				}
-				setVolume(e) {
-					const t = this.videoElement.current;
-					t && t.volume !== e && (t.volume = e)
-				}
+		"./node_modules/lodash/isUndefined.js": function(e, t) {
+			e.exports = function(e) {
+				return void 0 === e
 			}
 		},
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less": function(e, t, s) {
 			e.exports = {
 				LiveVideoPlayer: "_1CslYvEjQCqKJNXXyr7VBi",
 				liveVideoPlayer: "_1CslYvEjQCqKJNXXyr7VBi",
+				focusVisible: "ouJNsMkjLzVYHYqeJXKYk",
+				isSleeping: "_2g2rE_Lz5iyVMt-BJDcpu6",
+				ScrubberPanel: "_2ypwxpRk8TA72yU2q8wprA",
+				scrubberPanel: "_2ypwxpRk8TA72yU2q8wprA",
 				clip9x16: "_18hF1W8oceEelO19T27hAG",
 				clip9X16: "_18hF1W8oceEelO19T27hAG",
 				Overlay: "QeWQ4jUouItrgSmIpGLMR",
 				overlay: "QeWQ4jUouItrgSmIpGLMR",
 				LiveIndicator: "KJyaW7XHtFbqn-RpZvMrj",
 				liveIndicator: "KJyaW7XHtFbqn-RpZvMrj",
-				Duration: "_2qV1So7QiOzMP7ullTclrY",
-				duration: "_2qV1So7QiOzMP7ullTclrY",
-				MutedToggleButton: "_2W8k4lIjP-vO2DZBQlcXbr",
-				mutedToggleButton: "_2W8k4lIjP-vO2DZBQlcXbr",
-				PausedToggleButton: "_299A9DTaMrNQ3IvPUKBcop",
-				pausedToggleButton: "_299A9DTaMrNQ3IvPUKBcop",
-				MuteIcon: "_2RWb9Dwp3_ObxLMkcTgnA1",
-				muteIcon: "_2RWb9Dwp3_ObxLMkcTgnA1",
-				PauseIcon: "_3gI8IhVSrZYz6kWbFj98Kb",
-				pauseIcon: "_3gI8IhVSrZYz6kWbFj98Kb",
-				PlayIcon: "_37ZYqYmu-gzVHwqQdlwD_Y",
-				playIcon: "_37ZYqYmu-gzVHwqQdlwD_Y",
-				VolumeIcon: "KTC7B9EyTnKwrWTSHOSna",
-				volumeIcon: "KTC7B9EyTnKwrWTSHOSna"
+				controls: "NChIQgZKTHyJPUVfOp7oC"
 			}
 		},
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return w
+				return T
 			})), s.d(t, "Overlay", (function() {
-				return E
+				return L
 			})), s.d(t, "LiveIndicator", (function() {
-				return _
-			})), s.d(t, "Duration", (function() {
-				return f
-			})), s.d(t, "MutedToggleButton", (function() {
-				return I
-			})), s.d(t, "PausedToggleButton", (function() {
-				return P
+				return E
 			}));
-			var r = s("./node_modules/react/index.js"),
-				a = s.n(r),
-				i = s("./node_modules/react-redux/es/index.js"),
-				n = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+			var i = s("./node_modules/lodash/isUndefined.js"),
+				a = s.n(i),
+				o = s("./node_modules/react/index.js"),
+				n = s.n(o),
+				r = s("./node_modules/react-redux/es/index.js"),
+				l = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/lib/classNames/index.ts"),
+				h = s("./src/lib/focusVisible/index.js"),
+				u = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				c = s("./src/reddit/components/HlsVideo/index.tsx"),
-				d = s("./src/reddit/constants/keycodes.ts"),
-				u = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				l = s("./src/reddit/icons/svgs/VideoPause/index.tsx"),
-				h = s("./src/reddit/icons/svgs/VideoPlay/index.tsx"),
-				m = s("./src/reddit/icons/svgs/VideoVolume/index.tsx"),
+				m = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				p = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
+				v = s("./src/reddit/constants/keycodes.ts"),
 				b = s("./src/reddit/selectors/platform.ts"),
-				p = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var v = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				S = s.n(v);
+				g = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				P = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				M = s.n(P);
 			const {
-				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(n.c)({
+				fbt: S
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = 3e3, V = Object(l.c)({
 				isOverlayOpen: b.h,
-				unavailableVideoUrl: p.p
-			}), R = Object(i.b)(g, (e, t) => ({
-				onHeartbeatSubscribe: t => e(o.a.subscribeHeartbeat(t))
+				unavailableVideoUrl: g.p
+			}), C = Object(r.b)(V, (e, t) => ({
+				onHeartbeatSubscribe: t => e(u.a.subscribeHeartbeat(t))
 			}));
-			class w extends r.Component {
+			class T extends o.Component {
 				constructor(e) {
-					super(e), this.onError = () => {
+					super(e), this.sleepTimeout = null, this.handleClick = e => {
+						a()(this.state.settingChange) || (e.stopPropagation(), this.setState({
+							settingChange: void 0
+						}))
+					}, this.handleEnded = () => {
+						this.setState({
+							isEnded: !0
+						})
+					}, this.handleError = () => {
 						this.setState({
 							hasError: !0
 						})
 					}, this.onKeyPress = e => {
-						e.key === d.b.Enter && (e.preventDefault(), e.stopPropagation(), this.onTogglePaused())
-					}, this.onLevelLoaded = e => {
+						e.key === v.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
+					}, this.handleLevelLoaded = e => {
 						const {
 							live: t,
 							totalduration: s
@@ -448,15 +84,66 @@
 						}), s !== this.state.duration && this.setState({
 							duration: s
 						})
-					}, this.onPause = () => {
+					}, this.handleMouseDownControls = e => {
+						const {
+							seekBar: t,
+							volumeControl: s
+						} = this;
+						e.target instanceof Element && (e.stopPropagation(), t && t.parentRect && t.parentRect.contains(e.target) && (this.setState({
+							settingChange: m.a.SeekBar
+						}), t.handleMouseDown(e)), s && s.container && s.container.contains(e.target) && (this.setState({
+							settingChange: m.a.Volume
+						}), s.handleMouseDown(e)))
+					}, this.handleMouseLeave = () => {
+						this.setState({
+							isHovered: !1,
+							settingChange: void 0
+						}), this.wake()
+					}, this.handleMouseMove = () => {
+						this.state.isHovered || this.setState({
+							isHovered: !0
+						}), this.wake(), this.sleepTimeout = globalThis.setTimeout(this.sleep, y)
+					}, this.handleMouseMoveControls = e => {
+						const {
+							seekBar: t,
+							volumeControl: s
+						} = this;
+						switch (this.state.settingChange) {
+							case m.a.SeekBar:
+								t && t.handleMouseMove(e);
+								break;
+							case m.a.Volume:
+								s && s.handleMouseMove(e)
+						}
+					}, this.handleMouseUpControls = e => {
+						const {
+							seekBar: t,
+							volumeControl: s
+						} = this;
+						switch (e.stopPropagation(), this.state.settingChange) {
+							case m.a.SeekBar:
+								t && t.handleMouseUp(e);
+								break;
+							case m.a.Volume:
+								s && s.handleMouseUp(e)
+						}
+					}, this.handlePause = () => {
 						this.unsubscribeHeartbeat()
-					}, this.onPlay = () => {
+					}, this.handlePlay = () => {
 						this.hasPlayableMedia && this.subscribeHeartbeat()
-					}, this.onResourceRemoved = () => {
+					}, this.handleResourceRemoved = () => {
 						this.setState({
 							wasRemoved: !0
 						})
-					}, this.onToggleMuted = () => {
+					}, this.handleSeeked = e => {
+						e !== this.state.currentTime && (this.hlsVideo && this.hlsVideo.setCurrentTime(e), this.setState({
+							currentTime: e
+						}))
+					}, this.handleTimeUpdate = e => {
+						this.setState({
+							currentTime: e
+						})
+					}, this.handleToggleMuted = () => {
 						this.setState(e => {
 							let {
 								muted: t
@@ -465,26 +152,50 @@
 								muted: !t
 							}
 						})
-					}, this.onTogglePaused = () => {
-						this.setState(() => ({
-							userPaused: !this.isPaused,
-							userShowedIntent: !0
+					}, this.handleTogglePaused = () => {
+						this.setState(e => {
+							let {
+								isEnded: t
+							} = e;
+							return {
+								isEnded: t && !this.shouldPause,
+								userPaused: !this.shouldPause,
+								userShowedIntent: !0
+							}
+						})
+					}, this.handleVolumeChange = e => {
+						e !== this.state.volume && (this.hlsVideo && this.hlsVideo.setVolume(e), this.setState({
+							muted: !e,
+							volume: e
 						}))
+					}, this.sleep = () => {
+						this.state.isSleeping || this.setState({
+							isSleeping: !0
+						})
+					}, this.wake = () => {
+						this.sleepTimeout && (globalThis.clearTimeout(this.sleepTimeout), this.sleepTimeout = null), this.state.isSleeping && this.setState({
+							isSleeping: !1
+						})
 					}, this.state = {
+						currentTime: 0,
 						duration: 0,
 						hasError: !1,
+						isEnded: !1,
+						isHovered: !1,
+						isSleeping: !1,
 						live: !1,
 						muted: !0,
 						userPaused: !1,
 						userShowedIntent: !1,
+						volume: .8,
 						wasRemoved: !1
-					}
+					}, this.focusVisibleRef = Object(o.createRef)()
 				}
 				get hasPlayableMedia() {
 					return !(this.state.wasRemoved || this.state.hasError)
 				}
-				get isPaused() {
-					return !!this.props.isOverlayOpen || (this.state.userShowedIntent ? this.state.userPaused : this.props.shouldPause)
+				get shouldPause() {
+					return !!this.props.isOverlayOpen || (!!this.state.isEnded || (this.state.userShowedIntent ? this.state.userPaused : this.props.shouldPause))
 				}
 				get shouldRenderOverlay() {
 					return this.shouldRenderVideo && this.hasPlayableMedia
@@ -492,7 +203,7 @@
 				get shouldRenderVideo() {
 					return this.props.canLoad
 				}
-				get shouldRenderVideoUI() {
+				get shouldRenderControls() {
 					const {
 						duration: e,
 						live: t
@@ -502,53 +213,98 @@
 				get url() {
 					return this.hasPlayableMedia ? this.props.url : this.props.unavailableVideoUrl || ""
 				}
-				componentDidUpdate(e) {
+				componentDidMount() {
+					const e = this.focusVisibleRef.current;
+					e.classList.add(M.a.focusVisible), Object(h.a)(e)
+				}
+				componentDidUpdate(e, t) {
+					const {
+						currentTime: s,
+						duration: i
+					} = this.state;
 					this.props.shouldPause && !e.shouldPause && this.setState({
 						userShowedIntent: !1
-					})
+					}), this.controlBar && (s !== t.currentTime && this.controlBar.setCurrentTime(s), i !== t.duration && this.controlBar.setTotalTime(i))
 				}
 				componentWillUnmount() {
 					this.unsubscribeHeartbeat()
 				}
 				render() {
-					return a.a.createElement("div", {
-						className: S.a.LiveVideoPlayer
+					return n.a.createElement("div", {
+						className: Object(d.a)(M.a.LiveVideoPlayer, {
+							[M.a.isSleeping]: this.state.isSleeping && !this.shouldPause
+						}),
+						onBlur: this.handleMouseLeave,
+						onClick: this.handleClick,
+						onFocus: this.handleMouseMove,
+						onMouseMove: this.handleMouseMove,
+						onMouseLeave: this.handleMouseLeave,
+						ref: this.focusVisibleRef
 					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
-					const {
-						duration: e,
-						live: t
-					} = this.state;
-					return a.a.createElement(E, null, t ? a.a.createElement(_, null) : e ? a.a.createElement(f, {
-						seconds: e
-					}) : null, this.shouldRenderVideoUI ? this.renderVideoUI() : null)
+					return n.a.createElement(L, null, this.state.live ? n.a.createElement(E, null) : null, this.shouldRenderControls ? this.renderControls() : null)
 				}
 				renderVideo() {
-					return a.a.createElement("div", {
-						className: S.a.clip9x16
-					}, a.a.createElement(c.a, {
-						autoplay: !0,
+					return n.a.createElement("div", {
+						className: M.a.clip9x16
+					}, n.a.createElement(c.a, {
+						autoplay: this.shouldPause,
 						controls: !1,
-						isPaused: this.isPaused,
+						isPaused: this.shouldPause,
 						muted: this.state.muted,
 						playMutedOnPrevented: !0,
-						startTime: 0,
+						startTime: this.state.currentTime,
 						url: this.url,
-						onError: this.onError,
-						onLevelLoaded: this.onLevelLoaded,
-						onPause: this.onPause,
-						onPlay: this.onPlay,
-						onResourceRemoved: this.onResourceRemoved
+						onEnded: this.handleEnded,
+						onError: this.handleError,
+						onLevelLoaded: this.handleLevelLoaded,
+						onPause: this.handlePause,
+						onPlay: this.handlePlay,
+						onResourceRemoved: this.handleResourceRemoved,
+						onTimeUpdate: this.handleTimeUpdate,
+						ref: e => this.hlsVideo = e
 					}))
 				}
-				renderVideoUI() {
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(P, {
-						paused: this.isPaused,
-						onClick: this.onTogglePaused
-					}), a.a.createElement(I, {
-						muted: this.state.muted,
-						onClick: this.onToggleMuted
+				renderControls() {
+					const {
+						currentTime: e,
+						duration: t,
+						isHovered: s,
+						isSleeping: i,
+						muted: a,
+						settingChange: o,
+						volume: r
+					} = this.state;
+					return n.a.createElement("div", {
+						className: M.a.controls,
+						onMouseDown: this.handleMouseDownControls,
+						onMouseMove: this.handleMouseMoveControls,
+						onMouseUp: this.handleMouseUpControls
+					}, n.a.createElement(p.a, {
+						currentTime: e,
+						hasAudio: !0,
+						hideControlBar: !s || i && !this.shouldPause,
+						hideFullScreenButton: !0,
+						hideGradient: !1,
+						isFullScreen: !1,
+						isListing: !1,
+						isLive: !1,
+						isMuted: a,
+						isPaused: this.shouldPause,
+						playPauseVideo: this.handleTogglePaused,
+						ref: e => this.controlBar = e,
+						seekBarRef: e => this.seekBar = e,
+						settingChange: o,
+						setVideoPosition: this.handleSeeked,
+						setVolume: this.handleVolumeChange,
+						hideLiveLabel: !0,
+						showSettingsIcon: !1,
+						showVolumeIcon: !0,
+						toggleMute: this.handleToggleMuted,
+						totalTime: t,
+						volume: r,
+						volumeRef: e => this.volumeControl = e
 					}))
 				}
 				subscribeHeartbeat() {
@@ -558,81 +314,21 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = R(w);
-			const E = e => {
+			t.default = C(T);
+			const L = e => {
 					let {
 						children: t
 					} = e;
-					return a.a.createElement("div", {
-						className: S.a.Overlay
+					return n.a.createElement("div", {
+						className: M.a.Overlay
 					}, t)
 				},
-				_ = () => a.a.createElement("span", {
-					className: S.a.LiveIndicator
-				}, y._("Live", null, {
+				E = () => n.a.createElement("span", {
+					className: M.a.LiveIndicator
+				}, S._("Live", null, {
 					hk: "TwJSs"
-				})),
-				f = e => {
-					let {
-						seconds: t
-					} = e;
-					return a.a.createElement("span", {
-						className: S.a.Duration
-					}, (e => {
-						const t = Math.trunc(e / 3600),
-							s = Math.trunc(e % 3600 / 60),
-							r = Math.trunc(e % 60);
-						return [t > 0 ? t.toString() : "", t > 0 ? ":" : "", t > 0 && s < 10 ? "0" : "", s, ":", r < 10 ? "0" : "", r].join("")
-					})(t))
-				},
-				I = e => {
-					let {
-						muted: t,
-						onClick: s
-					} = e;
-					let r, i;
-					return t ? (r = y._("unmute", null, {
-						hk: "45ctbh"
-					}), i = a.a.createElement(u.a, {
-						className: S.a.MuteIcon
-					})) : (r = y._("mute", null, {
-						hk: "3xjwI7"
-					}), i = a.a.createElement(m.a, {
-						className: S.a.VolumeIcon
-					})), a.a.createElement("button", {
-						"aria-label": r,
-						className: S.a.MutedToggleButton,
-						onClick: e => {
-							e.preventDefault(), e.stopPropagation(), s()
-						},
-						onKeyPress: e => {
-							e.stopPropagation()
-						}
-					}, i)
-				},
-				P = e => {
-					let {
-						paused: t,
-						onClick: s
-					} = e;
-					let r, i;
-					return t ? (r = y._("play", null, {
-						hk: "2xeIj3"
-					}), i = a.a.createElement(h.a, {
-						className: S.a.PlayIcon
-					})) : (r = y._("pause", null, {
-						hk: "3jTrMB"
-					}), i = a.a.createElement(l.a, {
-						className: S.a.PauseIcon
-					})), a.a.createElement("button", {
-						"aria-label": r,
-						className: S.a.PausedToggleButton,
-						onClick: e => {
-							e.preventDefault(), e.stopPropagation(), s()
-						}
-					}, i)
-				}
+				}))
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.730923c40fa86bba5acc.js.map
+//# sourceMappingURL=LiveVideoPlayer.53a7f43dade94ff73dda.js.map
