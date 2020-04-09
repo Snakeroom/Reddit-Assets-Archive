@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.53a7f43dade94ff73dda.js
-// Retrieved at 4/9/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.50f2dd86b14af3dc3204.js
+// Retrieved at 4/9/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -27,9 +27,9 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return T
-			})), s.d(t, "Overlay", (function() {
 				return L
+			})), s.d(t, "Overlay", (function() {
+				return T
 			})), s.d(t, "LiveIndicator", (function() {
 				return E
 			}));
@@ -58,7 +58,7 @@
 			}), C = Object(r.b)(V, (e, t) => ({
 				onHeartbeatSubscribe: t => e(u.a.subscribeHeartbeat(t))
 			}));
-			class T extends o.Component {
+			class L extends o.Component {
 				constructor(e) {
 					super(e), this.sleepTimeout = null, this.handleClick = e => {
 						a()(this.state.settingChange) || (e.stopPropagation(), this.setState({
@@ -102,7 +102,7 @@
 					}, this.handleMouseMove = () => {
 						this.state.isHovered || this.setState({
 							isHovered: !0
-						}), this.wake(), this.sleepTimeout = globalThis.setTimeout(this.sleep, y)
+						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, y)
 					}, this.handleMouseMoveControls = e => {
 						const {
 							seekBar: t,
@@ -173,7 +173,7 @@
 							isSleeping: !0
 						})
 					}, this.wake = () => {
-						this.sleepTimeout && (globalThis.clearTimeout(this.sleepTimeout), this.sleepTimeout = null), this.state.isSleeping && this.setState({
+						this.sleepTimeout && (clearTimeout(this.sleepTimeout), this.sleepTimeout = null), this.state.isSleeping && this.setState({
 							isSleeping: !1
 						})
 					}, this.state = {
@@ -243,7 +243,7 @@
 					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
-					return n.a.createElement(L, null, this.state.live ? n.a.createElement(E, null) : null, this.shouldRenderControls ? this.renderControls() : null)
+					return n.a.createElement(T, null, this.state.live ? n.a.createElement(E, null) : null, this.shouldRenderControls ? this.renderControls() : null)
 				}
 				renderVideo() {
 					return n.a.createElement("div", {
@@ -314,8 +314,8 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = C(T);
-			const L = e => {
+			t.default = C(L);
+			const T = e => {
 					let {
 						children: t
 					} = e;
@@ -331,4 +331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.53a7f43dade94ff73dda.js.map
+//# sourceMappingURL=LiveVideoPlayer.50f2dd86b14af3dc3204.js.map
