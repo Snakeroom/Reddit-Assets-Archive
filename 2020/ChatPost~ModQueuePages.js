@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.34e53896edffc16e65f4.js
-// Retrieved at 4/9/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.49e9c20fec0ef83f65a4.js
+// Retrieved at 4/9/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, t, o) {
@@ -163,8 +163,8 @@
 				K = o("./src/reddit/icons/svgs/Automoderator/index.tsx"),
 				X = o("./src/reddit/icons/svgs/Cake/index.tsx"),
 				Y = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				Z = o("./src/reddit/controls/MetaData/index.tsx"),
-				q = o("./src/reddit/selectors/experiments/publicAwarding.ts"),
+				q = o("./src/reddit/controls/MetaData/index.tsx"),
+				Z = o("./src/reddit/selectors/experiments/publicAwarding.ts"),
 				$ = o("./src/reddit/selectors/subreddit.ts"),
 				ee = o("./src/reddit/selectors/userFlair.ts"),
 				te = o("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
@@ -202,11 +202,11 @@
 				be = m.a.wrapped(W, "Op", oe.a),
 				Ie = m.a.wrapped(B.a, "Contractor", oe.a),
 				Ee = m.a.a("MetaLink", oe.a),
-				xe = m.a.wrapped(Z.a, "EditedText", oe.a),
-				ve = m.a.wrapped(Z.a, "StickiedText", oe.a),
+				xe = m.a.wrapped(q.a, "EditedText", oe.a),
+				ve = m.a.wrapped(q.a, "StickiedText", oe.a),
 				ge = m.a.span("DeletedText", oe.a),
-				fe = m.a.wrapped(Z.a, "MetaSeparator", oe.a),
-				Me = m.a.wrapped(Z.a, "CrowdControlText", oe.a),
+				fe = m.a.wrapped(q.a, "MetaSeparator", oe.a),
+				Me = m.a.wrapped(q.a, "CrowdControlText", oe.a),
 				Ce = m.a.wrapped(y.b, "AuthorHoverCard", oe.a),
 				ke = m.a.a("RemovalReason", oe.a),
 				_e = m.a.wrapped(b.b, "Component", oe.a),
@@ -247,7 +247,7 @@
 					lockedTooltipId: we("CommentTopMeta--Locked--"),
 					modTooltipId: we("CommentTopMeta--Mod--"),
 					opTooltipId: we("CommentTopMeta--OP--"),
-					publicAwardersEnabled: e => !!Object(q.a)(e),
+					publicAwardersEnabled: e => !!Object(Z.a)(e),
 					removeTooltipId: we("CommentTopMeta--Remove--"),
 					reportTooltipId: we("CommentTopMeta--Report--"),
 					spamTooltipId: we("CommentTopMeta--Spam--"),
@@ -367,7 +367,7 @@
 					isStrong: !!x,
 					isAuthorDeleted: Object(D.d)(u),
 					topTippersEnabled: J
-				}, i && i))), m && a.a.createElement(Me, null, "Crowd Control"), m && a.a.createElement(Z.c, {
+				}, i && i))), m && a.a.createElement(Me, null, "Crowd Control"), m && a.a.createElement(q.c, {
 					className: oe.a.metaText,
 					key: "crowdControlSeparator"
 				}), v && !z && a.a.createElement(ae, {
@@ -398,12 +398,12 @@
 					opTooltipId: R,
 					renderContractorBadge: U,
 					subredditDisplayText: Q
-				})), !x && a.a.createElement(a.a.Fragment, null, !u.isDeleted && a.a.createElement(Z.b, {
+				})), !x && a.a.createElement(a.a.Fragment, null, !u.isDeleted && a.a.createElement(q.b, {
 					className: oe.a.metaText,
 					isScoreHidden: u.isScoreHidden,
 					language: y,
 					score: u.score
-				}), a.a.createElement(Z.c, {
+				}), a.a.createElement(q.c, {
 					className: oe.a.metaText,
 					key: "scoreCreatedSeparator"
 				}), a.a.createElement(Pe, ne({
@@ -463,12 +463,12 @@
 						comment: t,
 						isAuthorDeleted: Object(D.d)(t),
 						topTippersEnabled: !1
-					})), a.a.createElement(Z.b, {
+					})), a.a.createElement(q.b, {
 						className: oe.a.metaText,
 						isScoreHidden: t.isScoreHidden,
 						language: o,
 						score: t.score
-					}), a.a.createElement(Z.c, {
+					}), a.a.createElement(q.c, {
 						className: oe.a.metaText,
 						key: "scoreCreatedSeparator"
 					}), a.a.createElement(Pe, ne({
@@ -477,7 +477,7 @@
 						childrenInfo: r
 					}))
 				},
-				He = e => a.a.createElement(r.Fragment, null, a.a.createElement(Z.c, {
+				He = e => a.a.createElement(r.Fragment, null, a.a.createElement(q.c, {
 					className: oe.a.metaText
 				}), a.a.createElement(xe, null, n.fbt._("edited {time}", [n.fbt._param("time", Object(u.f)(e))], {
 					hk: "1tiB0u"
@@ -649,7 +649,7 @@
 					}), Object(N.a)(t) && We(o.reportTooltipId, Object(L.d)(t.numReports)))
 				}
 			}
-			const Ge = () => a.a.createElement(r.Fragment, null, a.a.createElement(Z.c, {
+			const Ge = () => a.a.createElement(r.Fragment, null, a.a.createElement(q.c, {
 					className: oe.a.metaText
 				}), a.a.createElement(ve, null, n.fbt._("Stickied comment", null, {
 					hk: "XUSav"
@@ -786,11 +786,11 @@
 			const a = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.ob
+					experimentName: n.qb
 				});
-				return Object(n.Wb)(t) ? void 0 : t
+				return Object(n.Yb)(t) ? void 0 : t
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~ModQueuePages.34e53896edffc16e65f4.js.map
+//# sourceMappingURL=ChatPost~ModQueuePages.49e9c20fec0ef83f65a4.js.map

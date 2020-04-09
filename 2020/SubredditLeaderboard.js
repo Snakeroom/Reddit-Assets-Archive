@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8c4d081d472656b53ba2.js
-// Retrieved at 4/9/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.88cc38941e0f5e16b74c.js
+// Retrieved at 4/9/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1289,8 +1289,8 @@
 			}
 			var G = Object(m.c)(M(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				V = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = r.n(V);
+				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				V = r.n(K);
 
 			function U() {
 				return (U = Object.assign || function(e) {
@@ -1301,14 +1301,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = e => {
+			const X = e => {
 				const {
 					category: t,
 					children: r,
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, i = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
+				} = e, i = Object(c.a)(V.a.categoryLink, s && V.a.active, n);
 				return o.a.createElement("li", null, o.a.createElement(J.a, U({}, t.anchorProps, {
 					className: i,
 					"data-active": s,
@@ -1317,8 +1317,8 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				X = r("./src/reddit/controls/Button/index.tsx"),
+			var Z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				z = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/helpers/name/index.ts"),
 				q = r("./src/reddit/i18n/components.tsx");
 			const $ = 36;
@@ -1361,14 +1361,14 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: m
-					} = this.state, u = !m && d && r * d, p = a + (e ? r * e.length : 0), g = Object(c.a)(K.a.categoryList, m && K.a.expanded), h = e => !(!i || i !== Object(Y.f)(e)), b = o.a.createElement("ul", {
+					} = this.state, u = !m && d && r * d, p = a + (e ? r * e.length : 0), g = Object(c.a)(V.a.categoryList, m && V.a.expanded), h = e => !(!i || i !== Object(Y.f)(e)), b = o.a.createElement("ul", {
 						className: g,
 						style: {
 							height: u || p
 						}
 					}, s, e && e.map((e, n) => {
 						const s = a + n * r;
-						return o.a.createElement(Z, {
+						return o.a.createElement(X, {
 							category: e,
 							className: t,
 							isActive: h(e.name),
@@ -1378,7 +1378,7 @@
 						}, e.name)
 					}));
 					return o.a.createElement("div", {
-						className: Object(c.a)(K.a.categoryListContainer, n)
+						className: Object(c.a)(V.a.categoryListContainer, n)
 					}, b)
 				}
 				render() {
@@ -1390,14 +1390,14 @@
 						header: s,
 						headerClassName: a,
 						initialNumberOfCategories: i
-					} = this.props, d = r && i && r.length > i, l = d && !this.state.isExpanded ? "".concat(t, " More") : "".concat(t, " Less"), m = Object(c.a)(n, K.a.container);
-					return o.a.createElement(z.a, {
+					} = this.props, d = r && i && r.length > i, l = d && !this.state.isExpanded ? "".concat(t, " More") : "".concat(t, " Less"), m = Object(c.a)(n, V.a.container);
+					return o.a.createElement(Z.a, {
 						className: m,
 						contentOnly: !0
 					}, o.a.createElement("div", {
-						className: Object(c.a)(K.a.header, a)
-					}, o.a.createElement("h2", null, s || o.a.createElement(q.c, null, "Categories"))), this.renderCategoryList(), d && o.a.createElement(X.n, {
-						className: Object(c.a)(K.a.button, e),
+						className: Object(c.a)(V.a.header, a)
+					}, o.a.createElement("h2", null, s || o.a.createElement(q.c, null, "Categories"))), this.renderCategoryList(), d && o.a.createElement(z.n, {
+						className: Object(c.a)(V.a.button, e),
 						onClick: this.toggleExpanded
 					}, o.a.createElement(q.c, null, l)))
 				}
@@ -1415,7 +1415,7 @@
 					key: e
 				}, e)
 			};
-			var de = e => o.a.createElement(z.a, {
+			var de = e => o.a.createElement(Z.a, {
 					className: se.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -1469,7 +1469,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				Ee = Object(u.Vb)(p.f),
+				Ee = Object(u.Xb)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(he.c)(e, {
 						categoriesOrder: Ee
@@ -1558,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.8c4d081d472656b53ba2.js.map
+//# sourceMappingURL=SubredditLeaderboard.88cc38941e0f5e16b74c.js.map
