@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.895c8022ef4283b541ee.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.88d3c623df7fc43d0cd5.js
+// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -840,17 +840,21 @@
 				F = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				D = s("./src/reddit/components/PostMedia/index.tsx"),
 				W = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				U = s("./src/reddit/i18n/components.tsx"),
-				H = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				V = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
-				z = s.n(V);
+				U = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
+				H = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
+				V = s.n(H);
+			const {
+				fbt: z
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var K = () => r.a.createElement("div", {
-					className: z.a.container
-				}, r.a.createElement(H.a, {
-					className: z.a.pinnedIcon
+					className: V.a.container
+				}, r.a.createElement(U.a, {
+					className: V.a.pinnedIcon
 				}), r.a.createElement("span", {
-					className: z.a.metaText
-				}, r.a.createElement(U.c, null, "pinned by moderators"))),
+					className: V.a.metaText
+				}, z._("pinned by moderators", null, {
+					hk: "1qU8t4"
+				}))),
 				G = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				J = s("./src/reddit/components/PostTitle/index.tsx"),
 				X = s("./src/reddit/components/PostTopLine/index.tsx"),
@@ -1470,4 +1474,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.895c8022ef4283b541ee.js.map
+//# sourceMappingURL=reddit-components-LargePost.88d3c623df7fc43d0cd5.js.map

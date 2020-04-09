@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.59215f6bb0aebb91709e.js
-// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d1c00d82783316bbd060.js
+// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -5017,9 +5017,9 @@
 					button: t,
 					overrideColors: e.forceRedditStyle || e.isNightmodeOn
 				})))),
-				N = n("./src/lib/humanizeDate/index.ts"),
-				S = n("./src/reddit/controls/TextButton/index.tsx"),
-				P = n("./src/reddit/i18n/utils.ts"),
+				N = n("./node_modules/fbt/lib/FbtPublic.js"),
+				S = n("./src/lib/humanizeDate/index.ts"),
+				P = n("./src/reddit/controls/TextButton/index.tsx"),
 				T = n("./src/reddit/components/Widgets/Calendar/index.m.less"),
 				I = n.n(T);
 			const L = 100,
@@ -5032,7 +5032,7 @@
 				B = m.a.div("EventDate", I.a),
 				F = m.a.div("EventLocation", I.a),
 				A = m.a.div("EventDescription", I.a),
-				U = m.a.wrapped(S.a, "ToggleDescription", I.a);
+				U = m.a.wrapped(P.a, "ToggleDescription", I.a);
 			class H extends r.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
@@ -5048,7 +5048,11 @@
 					} = this;
 					return e.text.length > L ? r.a.createElement(A, null, t.isExpanded ? e.text : e.text.slice(0, L), r.a.createElement(U, {
 						onClick: this.toggleDescriptionView
-					}, t.isExpanded ? Object(P.c)("read less") : Object(P.c)("...read more"))) : r.a.createElement(A, null, e.text)
+					}, t.isExpanded ? N.fbt._("read less", null, {
+						hk: "2KdNS6"
+					}) : N.fbt._("...read more", null, {
+						hk: "2MAis9"
+					}))) : r.a.createElement(A, null, e.text)
 				}
 			}
 			const V = Object(a.c)({
@@ -5063,7 +5067,7 @@
 					key: "".concat(n, "-").concat(t.title)
 				}, r.a.createElement(D, null, t.titleHtml ? r.a.createElement(M, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && r.a.createElement(B, null, Object(N.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && r.a.createElement("span", null, " • ", (e => {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && r.a.createElement(B, null, Object(S.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && r.a.createElement("span", null, " • ", (e => {
 					const t = new Date(1e3 * e),
 						n = t.getHours(),
 						s = t.getMinutes();
@@ -5127,14 +5131,13 @@
 				}
 			}
 			var Q = Z(X),
-				$ = n("./node_modules/fbt/lib/FbtPublic.js"),
-				ee = n("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
-				te = n.n(ee);
-			var ne = m.a.div("ImageFrame", te.a),
-				se = n("./src/reddit/components/Widgets/Image/StyledImage.m.less"),
-				re = n.n(se);
-			var ie = m.a.img("StyledImage", re.a);
-			class ae extends r.a.Component {
+				$ = n("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
+				ee = n.n($);
+			var te = m.a.div("ImageFrame", ee.a),
+				ne = n("./src/reddit/components/Widgets/Image/StyledImage.m.less"),
+				se = n.n(ne);
+			var re = m.a.img("StyledImage", se.a);
+			class ie extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						imageIndex: this.getRandomIndex(e)
@@ -5166,8 +5169,8 @@
 					} = this;
 					if (t.imageIndex < 0) return null;
 					const n = e.widget.data[t.imageIndex],
-						s = r.a.createElement(ne, null, r.a.createElement(ie, {
-							alt: $.fbt._("Widget image", null, {
+						s = r.a.createElement(te, null, r.a.createElement(re, {
+							alt: N.fbt._("Widget image", null, {
 								hk: "2H4O05"
 							}),
 							src: n.url
@@ -5179,19 +5182,19 @@
 					}, s) : s
 				}
 			}
-			var oe = ae,
-				de = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				ce = n("./src/reddit/components/Flair/index.tsx"),
-				le = n("./src/reddit/controls/InternalLink/index.tsx"),
-				ue = n("./src/reddit/icons/fonts/Envelope/index.tsx"),
-				me = n("./src/reddit/models/Flair/index.ts"),
-				pe = n("./src/reddit/components/Widgets/Moderator/index.m.less"),
-				be = n.n(pe);
-			const he = m.a.div("ModeratorListItem", be.a),
-				ge = m.a.div("Username", be.a),
-				xe = m.a.a("MessageModsLink", be.a),
-				fe = m.a.wrapped(ce.b, "FlairComponent", be.a),
-				ke = e => e.authorFlairType === me.f.Richtext ? {
+			var ae = ie,
+				oe = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				de = n("./src/reddit/components/Flair/index.tsx"),
+				ce = n("./src/reddit/controls/InternalLink/index.tsx"),
+				le = n("./src/reddit/icons/fonts/Envelope/index.tsx"),
+				ue = n("./src/reddit/models/Flair/index.ts"),
+				me = n("./src/reddit/components/Widgets/Moderator/index.m.less"),
+				pe = n.n(me);
+			const be = m.a.div("ModeratorListItem", pe.a),
+				he = m.a.div("Username", pe.a),
+				ge = m.a.a("MessageModsLink", pe.a),
+				xe = m.a.wrapped(de.b, "FlairComponent", pe.a),
+				fe = e => e.authorFlairType === ue.f.Richtext ? {
 					backgroundColor: e.authorFlairBackgroundColor,
 					richtext: e.authorFlairRichText,
 					textColor: e.authorFlairTextColor,
@@ -5202,75 +5205,75 @@
 					textColor: e.authorFlairTextColor,
 					type: e.authorFlairType
 				},
-				ye = e => r.a.createElement(ge, null, "u/".concat(e)),
-				we = m.a.wrapped(le.a, "InternalLink", be.a),
-				Oe = m.a.div("LinkContainer", be.a);
-			var ve = e => {
+				ke = e => r.a.createElement(he, null, "u/".concat(e)),
+				ye = m.a.wrapped(ce.a, "InternalLink", pe.a),
+				we = m.a.div("LinkContainer", pe.a);
+			var Oe = e => {
 					const {
 						subredditName: t,
 						widget: n
 					} = e;
 					return r.a.createElement(d.a, {
 						styles: n.styles,
-						title: $.fbt._("Moderators", null, {
+						title: N.fbt._("Moderators", null, {
 							hk: "3AMICc"
 						}),
-						headerButton: r.a.createElement(xe, {
+						headerButton: r.a.createElement(ge, {
 							href: "https://reddit.com/message/compose?to=/r/".concat(t),
 							target: "_blank"
-						}, r.a.createElement(ue.a, null))
-					}, n.mods.map(e => r.a.createElement(he, {
+						}, r.a.createElement(le.a, null))
+					}, n.mods.map(e => r.a.createElement(be, {
 						key: e.name
-					}, (e => r.a.createElement(de.a, {
+					}, (e => r.a.createElement(oe.a, {
 						to: "/user/".concat(e.name, "/")
-					}, ye(e.name)))(e), r.a.createElement(fe, {
-						flair: ke(e),
+					}, ke(e.name)))(e), r.a.createElement(xe, {
+						flair: fe(e),
 						forceSmallEmojis: !0
-					}))), r.a.createElement(Oe, null, r.a.createElement(we, {
+					}))), r.a.createElement(we, null, r.a.createElement(ye, {
 						to: "/r/".concat(t, "/about/moderators/")
-					}, $.fbt._("View All Moderators", null, {
+					}, N.fbt._("View All Moderators", null, {
 						hk: "2DIeXE"
 					}))))
 				},
-				Ce = n("./src/reddit/components/Widgets/PostFlair/index.tsx"),
-				Ee = n("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
-				je = n("./src/reddit/components/Widgets/TextArea/index.m.less"),
-				_e = n.n(je);
-			const Ne = m.a.div("WidgetContent", _e.a),
-				Se = m.a.wrapped(o.a, "RawHTMLDisplay", _e.a);
-			var Pe = e => r.a.createElement(d.a, {
+				ve = n("./src/reddit/components/Widgets/PostFlair/index.tsx"),
+				Ce = n("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
+				Ee = n("./src/reddit/components/Widgets/TextArea/index.m.less"),
+				je = n.n(Ee);
+			const _e = m.a.div("WidgetContent", je.a),
+				Ne = m.a.wrapped(o.a, "RawHTMLDisplay", je.a);
+			var Se = e => r.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, r.a.createElement(Ne, null, r.a.createElement(Se, {
+				}, r.a.createElement(_e, null, r.a.createElement(Ne, {
 					html: e.widget.textHtml || ""
 				}))),
-				Te = n("./src/reddit/components/Widgets/Base/index.tsx"),
-				Ie = e => r.a.createElement(Te.b, null, "This widget hasn't been implemented yet!");
+				Pe = n("./src/reddit/components/Widgets/Base/index.tsx"),
+				Te = e => r.a.createElement(Pe.b, null, "This widget hasn't been implemented yet!");
 			t.a = e => {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
-							return ve;
+							return Oe;
 						case "textarea":
-							return Pe;
+							return Se;
 						case "button":
 							return _;
 						case "subreddit-rules":
-							return Ee.b;
+							return Ce.b;
 						case "community-list":
 							return q;
 						case "calendar":
 							return G;
 						case "image":
-							return oe;
+							return ae;
 						case "custom":
 							return Q;
 						case "post-flair":
-							return Ce.a;
+							return ve.a;
 						default:
-							return Ie
+							return Te
 					}
 				}(e.widget);
 				return r.a.createElement(t, {
@@ -6222,4 +6225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.59215f6bb0aebb91709e.js.map
+//# sourceMappingURL=SubredditWiki.d1c00d82783316bbd060.js.map
