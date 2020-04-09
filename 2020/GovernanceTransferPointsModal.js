@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.8be45c27e2649f891c68.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.163e5a4daf9ef25a0851.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -31,15 +31,15 @@
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return h
+				return O
 			})), n.d(t, "b", (function() {
 				return x
 			})), n.d(t, "d", (function() {
-				return k
+				return y
 			})), n.d(t, "e", (function() {
-				return I
+				return k
 			})), n.d(t, "h", (function() {
-				return P
+				return T
 			})), n.d(t, "i", (function() {
 				return B
 			})), n.d(t, "f", (function() {
@@ -47,77 +47,77 @@
 			})), n.d(t, "g", (function() {
 				return R
 			})), n.d(t, "j", (function() {
-				return U
-			})), n.d(t, "c", (function() {
 				return S
+			})), n.d(t, "c", (function() {
+				return U
 			}));
-			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+			var s = n("./src/app/strings/index.ts"),
 				a = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/lib/prettyPrintNumber/index.ts"),
 				o = n("./src/reddit/actions/modal.ts"),
-				i = n("./src/reddit/actions/post.ts"),
-				c = n("./src/reddit/actions/toaster.ts"),
+				c = n("./src/reddit/actions/post.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
 				d = n("./src/config.ts"),
 				l = n("./src/reddit/endpoints/governance/requester.ts");
 			var u = n("./src/reddit/endpoints/governance/poll.ts");
 			var m = n("./src/reddit/endpoints/governance/wallet.ts"),
 				b = n("./src/reddit/models/Poll/index.ts"),
 				p = n("./src/reddit/models/Toast/index.ts"),
-				f = n("./src/reddit/models/Vote/index.ts"),
-				g = n("./src/reddit/selectors/gov.ts"),
-				j = n("./src/reddit/actions/governance/constants.ts"),
-				v = n("./src/reddit/actions/governance/errorToast.ts");
-			const h = Object(a.a)(j.b),
-				x = Object(a.a)(j.c),
-				O = Object(a.a)(j.d),
-				k = Object(a.a)(j.e),
-				y = Object(a.a)(j.f),
-				I = (Object(a.a)(j.g), Object(a.a)(j.h), Object(a.a)(j.i)),
-				N = Object(a.a)(j.j),
-				_ = Object(a.a)(j.k),
-				T = Object(a.a)(j.l),
-				C = Object(a.a)(j.r),
-				P = Object(a.a)(j.s),
-				w = Object(a.a)(j.t),
-				E = Object(a.a)(j.u),
-				A = Object(a.a)(j.v),
-				G = Object(a.a)(j.w),
-				M = Object(a.a)(j.x),
-				B = Object(a.a)(j.y),
+				g = n("./src/reddit/models/Vote/index.ts"),
+				v = n("./src/reddit/selectors/gov.ts"),
+				f = n("./src/reddit/actions/governance/constants.ts"),
+				j = n("./src/reddit/actions/governance/errorToast.ts");
+			const O = Object(a.a)(f.b),
+				x = Object(a.a)(f.c),
+				h = Object(a.a)(f.d),
+				y = Object(a.a)(f.e),
+				I = Object(a.a)(f.f),
+				k = (Object(a.a)(f.g), Object(a.a)(f.h), Object(a.a)(f.i)),
+				N = Object(a.a)(f.j),
+				C = Object(a.a)(f.k),
+				_ = Object(a.a)(f.l),
+				E = Object(a.a)(f.r),
+				T = Object(a.a)(f.s),
+				w = Object(a.a)(f.t),
+				P = Object(a.a)(f.u),
+				A = Object(a.a)(f.v),
+				M = Object(a.a)(f.w),
+				G = Object(a.a)(f.x),
+				B = Object(a.a)(f.y),
 				D = (e, t) => async (n, s, a) => {
 					let r, {
 							apiContext: o,
-							gqlContext: c
+							gqlContext: i
 						} = a,
 						d = s().polls.models[e];
-					if (n(_({
+					if (n(C({
 							pollId: e
-						})), (r = d.type === b.a.GA ? await Object(u.c)(c(), e, t) : await Object(u.b)(o(), d.subredditId, e, t)).ok) {
+						})), (r = d.type === b.a.GA ? await Object(u.c)(i(), e, t) : await Object(u.b)(o(), d.subredditId, e, t)).ok) {
 						if (d.type === b.a.GA) {
 							const {
 								options: e
 							} = r.body.data.updatePostPollVoteState.poll;
-							n(y({
+							n(I({
 								pollId: d.id,
 								optionId: t,
 								options: e
 							}))
-						} else n(T(r.body));
+						} else n(_(r.body));
 						const a = s();
 						if ((d = a.polls.models[e]) && Object(b.d)(d)) {
 							const {
 								postId: e
 							} = d, t = a.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(i.ab)(e))
+							t && t.voteState === g.a.notVoted && n(Object(c.ab)(e))
 						}
 					} else n(N({
 						pollId: e,
 						error: r.error || r.errors[0].message
-					})), Object(v.a)(n, r.error || r.errors[0].messsage)
-				}, R = (e, t) => async (n, a, i) => {
+					})), Object(j.a)(n, r.error || r.errors[0].messsage)
+				}, R = (e, t) => async (n, a, c) => {
 					let {
 						apiContext: u
-					} = i;
+					} = c;
 					n(w());
 					const m = a().transfers.communityPoints.contentId || void 0,
 						b = await
@@ -135,33 +135,38 @@
 					}(u(), Object.assign({}, e, {
 						contentId: m
 					}));
-					b.ok ? (n(E(Object.assign({}, b.body, {
-						subredditId: e.subredditId
-					}))), n(Object(c.e)({
-						kind: p.b.SuccessCommunity,
-						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(r.a)(e.amount)), s.fbt._param("tokenName", Object(g.p)(a(), {
+					if (b.ok) {
+						const c = a().user.language;
+						n(P(Object.assign({}, b.body, {
 							subredditId: e.subredditId
-						})), s.fbt._param("recipient", e.recipient)], {
-							hk: "3klrhq"
-						})
-					})), t && n(Object(o.f)())) : (n(C({
+						}))), n(Object(i.e)({
+							kind: p.b.SuccessCommunity,
+							text: Object(s.a)(c, "gov.transferSuccess", {
+								amount: Object(r.a)(e.amount),
+								recipient: e.recipient,
+								tokenName: Object(v.p)(a(), {
+									subredditId: e.subredditId
+								})
+							})
+						})), t && n(Object(o.f)())
+					} else n(E({
 						error: b.error
-					})), Object(v.a)(n, b.error))
-				}, U = e => async (t, n, s) => {
+					})), Object(j.a)(n, b.error)
+				}, S = e => async (t, n, s) => {
 					let {
 						apiContext: a
 					} = s;
-					t(G());
+					t(M());
 					const r = await Object(m.a)(a(), e);
-					r.ok ? t(M(r.body)) : t(A({
+					r.ok ? t(G(r.body)) : t(A({
 						error: r.error
 					}))
-				}, S = (e, t) => async (n, a, r) => {
+				}, U = (e, t) => async (n, a, r) => {
 					let {
 						apiContext: o
 					} = r;
-					n(O());
-					const i = await
+					n(h());
+					const c = await
 					function(e, t, n) {
 						return Object(l.a)(e, {
 							data: {
@@ -171,20 +176,20 @@
 							endpoint: "".concat(d.a.metaUrl, "/wallets/").concat(n, "/me")
 						})
 					}(o(), e, t);
-					i.ok ? (n(M({
-						[t]: i.body
-					})), n(Object(c.e)({
-						kind: p.b.SuccessCommunity,
-						text: e ? s.fbt._("You have successfully opted out of receiving {tokenName}", [s.fbt._param("tokenName", Object(g.p)(a(), {
-							subredditId: t
-						}))], {
-							hk: "2GTi3T"
-						}) : s.fbt._("You have opted into receiving {tokenName}", [s.fbt._param("tokenName", Object(g.p)(a(), {
-							subredditId: t
-						}))], {
-							hk: "2Xx98N"
-						})
-					}))) : Object(v.a)(n, i.error)
+					if (c.ok) {
+						n(G({
+							[t]: c.body
+						}));
+						const r = e ? "polls.optOutSuccess" : "polls.optInSuccess";
+						n(Object(i.e)({
+							kind: p.b.SuccessCommunity,
+							text: Object(s.a)(a().user.language, r, {
+								tokenName: Object(v.p)(a(), {
+									subredditId: t
+								})
+							})
+						}))
+					} else Object(j.a)(n, c.error)
 				}
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, n) {
@@ -198,8 +203,8 @@
 				a = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
 				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/actions/modal.ts"),
-				c = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				c = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				d = n("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				l = n.n(d);
 			t.a = Object(r.b)(void 0, (e, t) => {
@@ -208,11 +213,11 @@
 				} = t;
 				return {
 					onClose: () => {
-						e(Object(i.f)()), n && n()
+						e(Object(c.f)()), n && n()
 					}
 				}
 			})((function(e) {
-				return a.a.createElement(c.a, {
+				return a.a.createElement(i.a, {
 					className: Object(o.a)(l.a.closeIcon, e.className),
 					onClick: e.onClose
 				})
@@ -233,14 +238,14 @@
 				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/components/Governance/ModalClose/index.tsx"),
-				i = n("./src/reddit/components/Governance/ModalTitle/index.m.less"),
-				c = n.n(i);
+				c = n("./src/reddit/components/Governance/ModalTitle/index.m.less"),
+				i = n.n(c);
 
 			function d(e) {
 				return a.a.createElement("div", {
-					className: Object(r.a)(c.a.container, e.className)
+					className: Object(r.a)(i.a.container, e.className)
 				}, a.a.createElement("div", {
-					className: c.a.title
+					className: i.a.title
 				}, e.children), a.a.createElement(o.a, null))
 			}
 		},
@@ -290,143 +295,135 @@
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/higherOrderComponents/asModal/index.tsx"),
-				i = n("./src/reddit/actions/governance/index.ts"),
-				c = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				d = n("./src/reddit/helpers/governance/tokens.ts"),
-				l = n("./src/reddit/selectors/gov.ts"),
-				u = n("./node_modules/reselect/es/index.js"),
-				m = n("./node_modules/bignumber.js/bignumber.js"),
-				b = n("./src/lib/classNames/index.ts"),
-				p = n("./src/lib/prettyPrintNumber/index.ts"),
-				f = n("./src/reddit/components/Governance/Token/index.tsx"),
-				g = n("./src/reddit/constants/colors.ts"),
+				o = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/app/strings/index.ts"),
+				i = n("./src/higherOrderComponents/asModal/index.tsx"),
+				d = n("./src/reddit/actions/governance/index.ts"),
+				l = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = n("./src/reddit/helpers/governance/tokens.ts"),
+				m = n("./src/reddit/selectors/gov.ts"),
+				b = n("./node_modules/bignumber.js/bignumber.js"),
+				p = n("./src/lib/classNames/index.ts"),
+				g = n("./src/lib/prettyPrintNumber/index.ts"),
+				v = n("./src/reddit/components/Governance/Token/index.tsx"),
+				f = n("./src/reddit/constants/colors.ts"),
 				j = n("./src/reddit/controls/Button/index.tsx"),
-				v = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				h = n("./src/reddit/endpoints/governance/crypto.ts"),
-				x = n("./src/reddit/helpers/governance/stellar.ts"),
-				O = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
-				k = n.n(O),
-				y = n("./node_modules/fbt/lib/FbtPublic.js");
-			const I = Object(u.c)({
+				O = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				x = n("./src/reddit/endpoints/governance/crypto.ts"),
+				h = n("./src/reddit/helpers/governance/stellar.ts"),
+				y = n("./src/reddit/i18n/components.tsx"),
+				I = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
+				k = n.n(I);
+			const N = Object(o.c)({
 				contentId: e => e.transfers.communityPoints.contentId,
-				blockchainProvider: l.a,
+				blockchainProvider: m.a,
 				language: e => e.user.language,
-				tokenDisplayConversion: l.o,
+				tokenDisplayConversion: m.o,
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
-				unlockedToken: l.r,
-				wallet: l.g
+				unlockedToken: m.r,
+				wallet: m.g
 			});
-			var N = Object(r.b)(I)((function(e) {
+			var C = Object(r.b)(N)((function(e) {
 					const t = e.wallet && e.wallet.unlockedAmount || "0",
-						n = new m.BigNumber(e.amount || "0"),
-						s = new m.BigNumber(t),
+						n = new b.BigNumber(e.amount || "0"),
+						s = new b.BigNumber(t),
 						r = s.isGreaterThanOrEqualTo(n),
 						o = e.submissionEnabled && !s.isZero() && r;
 					return a.a.createElement("div", {
-						className: Object(b.a)(k.a.container, e.className)
+						className: Object(p.a)(k.a.container, e.className)
 					}, a.a.createElement("div", {
 						className: k.a.available
-					}, a.a.createElement("div", null, y.fbt._("Transferable", null, {
-						hk: "4n8VPB"
-					})), a.a.createElement(f.a, {
+					}, a.a.createElement("div", null, a.a.createElement(y.c, null, "Transferable")), a.a.createElement(v.a, {
 						grey: !0,
 						className: k.a.token,
 						subredditId: e.subredditId
 					}), a.a.createElement("div", {
 						style: {
-							color: r ? void 0 : g.a.warning
+							color: r ? void 0 : f.a.warning
 						}
-					}, Object(p.a)(Object(d.b)(t, e.tokenDisplayConversion)))), e.blockchainProvider === h.a.Stellar && o ? a.a.createElement(j.g, {
+					}, Object(g.a)(Object(u.b)(t, e.tokenDisplayConversion)))), e.blockchainProvider === x.a.Stellar && o ? a.a.createElement(j.g, {
 						redditStyle: !0,
 						className: k.a.button,
-						href: Object(x.b)(e.unlockedToken && e.unlockedToken.address || "", e.unlockedToken && e.unlockedToken.symbol || "", e.publicAddress || "", e.amount && Object(d.b)(e.amount, e.tokenDisplayConversion) || "0", e.contentId ? "t|".concat(e.contentId) : void 0),
+						href: Object(h.b)(e.unlockedToken && e.unlockedToken.address || "", e.unlockedToken && e.unlockedToken.symbol || "", e.publicAddress || "", e.amount && Object(u.b)(e.amount, e.tokenDisplayConversion) || "0", e.contentId ? "t|".concat(e.contentId) : void 0),
 						target: "_blank",
 						tabIndex: e.tabIndex
-					}, y.fbt._("send", null, {
-						hk: "oTFGp"
-					})) : a.a.createElement(j.f, {
+					}, Object(c.a)(e.language, "gov.sendCta")) : a.a.createElement(j.f, {
 						disabled: !o,
 						className: k.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onTransferPoints
-					}, e.transferIsPending ? a.a.createElement(v.a, {
+					}, e.transferIsPending ? a.a.createElement(O.a, {
 						className: k.a.loadingIcon,
 						sizePx: 20
-					}) : y.fbt._("send", null, {
-						hk: "oTFGp"
-					})))
+					}) : Object(c.a)(e.language, "gov.sendCta")))
 				})),
 				_ = n("./src/lib/currency/cleanNumber/index.ts"),
-				T = n("./src/reddit/constants/keycodes.ts"),
-				C = n("./src/reddit/components/Governance/TransferPointsModal/PrettyNumberInput/index.m.less"),
-				P = n.n(C);
+				E = n("./src/reddit/constants/keycodes.ts"),
+				T = n("./src/reddit/components/Governance/TransferPointsModal/PrettyNumberInput/index.m.less"),
+				w = n.n(T);
 
-			function w(e) {
+			function P(e) {
 				const t = e.amount || "0",
-					n = !new m.BigNumber(t).isZero(),
-					s = Object(p.a)(t);
+					n = !new b.BigNumber(t).isZero(),
+					s = Object(g.a)(t);
 				return a.a.createElement("label", {
 					"aria-label": t,
 					"aria-live": "assertive",
-					className: Object(b.a)(P.a.container, e.className)
-				}, a.a.createElement(f.a, {
-					className: P.a.token,
+					className: Object(p.a)(w.a.container, e.className)
+				}, a.a.createElement(v.a, {
+					className: w.a.token,
 					grey: !n,
 					subredditId: e.subredditId
 				}), a.a.createElement("div", {
-					className: Object(b.a)(P.a.display, {
-						[P.a.displayActive]: n
+					className: Object(p.a)(w.a.display, {
+						[w.a.displayActive]: n
 					}),
 					style: {
-						fontSize: E(s)
+						fontSize: A(s)
 					}
-				}, Object(p.a)(s)), a.a.createElement("input", {
+				}, Object(g.a)(s)), a.a.createElement("input", {
 					autoFocus: !0,
-					className: P.a.input,
+					className: w.a.input,
 					maxLength: 9,
 					style: {
-						fontSize: E(s)
+						fontSize: A(s)
 					},
 					tabIndex: e.tabIndex,
 					value: e.amount,
 					onChange: t => e.onChange(Object(_.a)(t.currentTarget.value)),
-					onClick: A,
-					onFocus: A,
+					onClick: M,
+					onFocus: M,
 					onKeyDown: e => {
-						e.key !== T.b.ArrowLeft && e.key !== T.b.ArrowRight && e.key !== T.b.ArrowUp && e.key !== T.b.ArrowDown || e.preventDefault()
+						e.key !== E.b.ArrowLeft && e.key !== E.b.ArrowRight && e.key !== E.b.ArrowUp && e.key !== E.b.ArrowDown || e.preventDefault()
 					}
 				}))
 			}
 
-			function E(e) {
+			function A(e) {
 				const t = e.length;
 				return t > 7 ? 50 : t > 6 ? 56 : t > 5 ? 60 : t > 4 ? 64 : t > 1 ? 80 : 96
 			}
 
-			function A(e) {
+			function M(e) {
 				const t = e.currentTarget.value.length;
 				e.currentTarget.selectionStart = t, e.currentTarget.selectionEnd = t
 			}
 			var G = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.tsx"),
-				M = n("./src/reddit/components/Governance/ModalTitle/index.tsx");
+				B = n("./src/reddit/components/Governance/ModalTitle/index.tsx");
 
-			function B(e) {
+			function D(e) {
 				const {
 					tokenName: t
 				} = e;
-				return a.a.createElement(M.a, {
+				return a.a.createElement(B.a, {
 					className: e.className
-				}, y.fbt._("Send {tokenName}", [y.fbt._param("tokenName", t)], {
-					hk: "33shhf"
+				}, Object(c.a)(e.language, "gov.transferModalTitle", {
+					tokenName: t
 				}))
 			}
-			var D = n("./src/lib/addQueryParams/index.ts"),
-				R = n("./src/reddit/components/Governance/TransferPointsModal/TransferDonutsModal/index.m.less"),
-				U = n.n(R);
-			const {
-				fbt: S
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			var R = n("./src/lib/addQueryParams/index.ts"),
+				S = n("./src/reddit/components/Governance/TransferPointsModal/TransferDonutsModal/index.m.less"),
+				U = n.n(S);
 			class q extends a.a.PureComponent {
 				render() {
 					const {
@@ -438,7 +435,7 @@
 						tokenName: o
 					} = this.props;
 					if (!e || !n) return null;
-					const i = Object(D.a)("https://daonuts.org/r/".concat(r.name), {
+					const c = Object(R.a)("https://daonuts.org/r/".concat(r.name), {
 						action: "tip",
 						contentId: e,
 						recipient: s,
@@ -446,7 +443,7 @@
 					});
 					return a.a.createElement("div", {
 						className: U.a.container
-					}, a.a.createElement(B, {
+					}, a.a.createElement(D, {
 						className: U.a.title,
 						language: t,
 						subredditId: r.id,
@@ -455,32 +452,23 @@
 						className: U.a.body
 					}, a.a.createElement("div", {
 						className: U.a.description
-					}, S._("Tipping with Donuts is now managed on Daonuts.org.", null, {
-						hk: "3TBQTj"
-					})), a.a.createElement(j.g, {
+					}, a.a.createElement(y.c, null, "Tipping with Donuts is now managed on Daonuts.org.")), a.a.createElement(j.g, {
 						redditStyle: !0,
 						className: U.a.button,
-						href: i,
+						href: c,
 						target: "_blank"
-					}, S._("tip on daonuts.org", null, {
-						hk: "2WQLYI"
-					})), a.a.createElement("div", {
+					}, a.a.createElement(y.c, null, "tip on daonuts.org")), a.a.createElement("div", {
 						className: U.a.disclaimer
-					}, S._("Daonuts.org is not affiliated with Reddit.", null, {
-						hk: "zDnw3"
-					}))))
+					}, a.a.createElement(y.c, null, "Daonuts.org is not affiliated with Reddit."))))
 				}
 			}
-			const L = Object(u.c)({
+			const L = Object(o.c)({
 				contentId: e => e.transfers.communityPoints.contentId,
 				publicAddress: e => e.transfers.communityPoints.publicAddress
 			});
 			var z = Object(r.b)(L)(q),
-				Y = n("./src/reddit/components/Governance/TransferPointsModal/index.m.less"),
-				V = n.n(Y);
-			const {
-				fbt: F
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
+				V = n("./src/reddit/components/Governance/TransferPointsModal/index.m.less"),
+				Y = n.n(V);
 			class H extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -490,7 +478,7 @@
 						tokenAmount: void 0
 					}, this.handleAmountChange = e => this.setState({
 						displayAmount: e,
-						tokenAmount: Object(d.a)(e, this.props.tokenDisplayConversion)
+						tokenAmount: Object(u.a)(e, this.props.tokenDisplayConversion)
 					}), this.handleRecipientChange = (e, t) => this.setState({
 						recipient: e,
 						recipientIsValid: t
@@ -512,35 +500,35 @@
 						subreddit: r,
 						tokenName: o
 					}) : a.a.createElement("div", {
-						className: V.a.container
-					}, a.a.createElement(B, {
-						className: V.a.title,
+						className: Y.a.container
+					}, a.a.createElement(D, {
+						className: Y.a.title,
 						language: n,
 						subredditId: r.id,
 						tokenName: o
 					}), a.a.createElement("div", {
-						className: V.a.inputContainer
-					}, a.a.createElement(w, {
+						className: Y.a.inputContainer
+					}, a.a.createElement(P, {
 						amount: this.state.displayAmount,
 						subredditId: r.id,
 						tabIndex: 1,
 						onChange: this.handleAmountChange
 					})), i ? a.a.createElement("div", {
-						className: V.a.explanation
+						className: Y.a.explanation
 					}, "Transfer to ", e) : a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-						className: V.a.explanation
-					}, F._("Up to 49% of earned {tokenName}. Remaining are frozen.", [F._param("tokenName", o)], {
-						hk: "1fUxyG"
+						className: Y.a.explanation
+					}, Object(c.a)(n, "gov.explanation", {
+						tokenName: o
 					})), a.a.createElement("div", {
-						className: V.a.recipientContainer
+						className: Y.a.recipientContainer
 					}, a.a.createElement(G.a, {
-						className: V.a.recipient,
+						className: Y.a.recipient,
 						initialUsername: e,
 						tabIndex: 2,
 						onChange: this.handleRecipientChange
-					}))), a.a.createElement(N, {
+					}))), a.a.createElement(C, {
 						amount: this.state.tokenAmount,
-						className: V.a.controls,
+						className: Y.a.controls,
 						submissionEnabled: !!this.state.tokenAmount && (this.state.recipientIsValid || !!this.props.publicAddress),
 						subredditId: r.id,
 						tabIndex: 3,
@@ -551,45 +539,45 @@
 					})) : null
 				}
 			}
-			const Q = Object(u.c)({
+			const Z = Object(o.c)({
 					initialRecipient: e => e.transfers.communityPoints.initialRecipient,
 					isEthereumProvider: (e, t) => {
-						const n = Object(c.q)(e, t);
-						return Object(l.f)(e, {
+						const n = Object(l.q)(e, t);
+						return Object(m.f)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					language: e => e.user.language,
 					publicAddress: e => e.transfers.communityPoints.publicAddress,
-					subreddit: c.q,
+					subreddit: l.q,
 					tokenDisplayConversion: (e, t) => {
-						const n = Object(c.q)(e, t);
-						return Object(l.o)(e, {
+						const n = Object(l.q)(e, t);
+						return Object(m.o)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					tokenName: (e, t) => {
-						const n = Object(c.q)(e, t);
-						return Object(l.p)(e, {
+						const n = Object(l.q)(e, t);
+						return Object(m.p)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					useCrypto: (e, t) => {
-						const n = Object(c.q)(e, t);
-						return Object(l.k)(e, {
+						const n = Object(l.q)(e, t);
+						return Object(m.k)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					}
 				}),
-				X = Object(r.b)(Q, e => ({
-					onTransferPoints: (t, n, s) => e(Object(i.g)({
+				K = Object(r.b)(Z, e => ({
+					onTransferPoints: (t, n, s) => e(Object(d.g)({
 						amount: t,
 						recipient: n,
 						subredditId: s
 					}, !0))
 				})),
-				Z = Object(c.t)();
-			t.default = Object(o.a)(Z(X(H)))
+				X = Object(l.t)();
+			t.default = Object(i.a)(X(K(H)))
 		},
 		"./src/reddit/endpoints/governance/poll.ts": function(e, t, n) {
 			"use strict";
@@ -604,8 +592,8 @@
 				a = n.n(s),
 				r = n("./src/config.ts"),
 				o = n("./src/graphql/operations/PollVote.json"),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				c = n("./src/lib/omitHeaders/index.ts"),
+				c = n("./src/lib/makeGqlRequest/index.ts"),
+				i = n("./src/lib/omitHeaders/index.ts"),
 				d = n("./src/reddit/constants/headers.ts"),
 				l = (n("./src/reddit/models/Poll/index.ts"), n("./src/reddit/endpoints/governance/requester.ts"));
 
@@ -615,7 +603,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/polls/").concat(t, "/").concat(n, "/votes/me/").concat(s)
 				})
 			}
-			const m = (e, t, n) => Object(i.a)(e, Object.assign({}, o, {
+			const m = (e, t, n) => Object(c.a)(e, Object.assign({}, o, {
 				variables: {
 					input: {
 						postId: t,
@@ -625,7 +613,7 @@
 			}));
 
 			function b(e, t) {
-				return Object(l.a)(Object(c.a)(e, [d.a]), {
+				return Object(l.a)(Object(i.a)(e, [d.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
 				}).then(e => e.ok ? Object.assign({}, e, {
@@ -641,7 +629,7 @@
 			n.d(t, "a", (function() {
 				return o
 			})), n.d(t, "b", (function() {
-				return i
+				return c
 			}));
 			var s = n("./src/config.ts"),
 				a = (n("./src/lib/bigNumberUtils/percent.ts"), n("./src/lib/constants/index.ts")),
@@ -665,7 +653,7 @@
 				})
 			}
 
-			function i(e, t) {
+			function c(e, t) {
 				return Object(r.a)(e, {
 					headers: {
 						"X-HTTP-Method-Override": "GET"
@@ -731,4 +719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal.8be45c27e2649f891c68.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal.163e5a4daf9ef25a0851.js.map

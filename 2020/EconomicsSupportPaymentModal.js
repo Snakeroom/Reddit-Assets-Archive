@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.8daf4b51466583741589.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.a820628422077f9f91a5.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -109,29 +109,29 @@
 				u = a("./src/reddit/models/Payments/index.ts"),
 				h = a("./src/reddit/selectors/economics.ts"),
 				y = a("./src/reddit/selectors/user.ts"),
-				x = a("./node_modules/fbt/lib/FbtPublic.js"),
-				b = a("./src/higherOrderComponents/asTooltip.tsx"),
-				g = a("./src/lib/classNames/index.ts"),
+				x = a("./src/app/strings/index.ts"),
+				g = a("./src/higherOrderComponents/asTooltip.tsx"),
+				b = a("./src/lib/classNames/index.ts"),
 				N = a("./src/reddit/actions/tooltip.ts"),
-				E = a("./src/reddit/controls/Dropdown/index.tsx"),
-				f = a("./src/reddit/controls/Dropdown/Row.tsx"),
-				w = a("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				C = a("./src/reddit/icons/svgs/Lock/index.tsx"),
-				v = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/components/Economics/Stripe/FormElements/index.tsx")),
-				P = a("./src/reddit/controls/FormFields/index.tsx"),
-				S = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/Form/index.m.less"),
-				_ = a.n(S);
-			const j = Object(r.c)({
+				E = a("./src/reddit/components/Translated/index.tsx"),
+				w = a("./src/reddit/controls/Dropdown/index.tsx"),
+				C = a("./src/reddit/controls/Dropdown/Row.tsx"),
+				v = a("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				f = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				P = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/components/Economics/Stripe/FormElements/index.tsx")),
+				S = a("./src/reddit/controls/FormFields/index.tsx"),
+				j = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/Form/index.m.less"),
+				_ = a.n(j);
+			const O = (e, t) => Object(x.a)(e, "economy.support.payment.card.new.".concat(t));
+			const M = Object(r.c)({
 				language: e => e.user.language
 			});
-			var O = Object(o.b)(j)((function(e) {
+			var T = Object(o.b)(M)((function(e) {
 					return n.a.createElement("div", {
-						className: Object(g.a)(_.a.container, e.className)
-					}, n.a.createElement(P.c, {
+						className: Object(b.a)(_.a.container, e.className)
+					}, n.a.createElement(S.c, {
 						className: _.a.name,
-						label: x.fbt._("name on card", null, {
-							hk: "1zwfs9"
-						}),
+						label: O(e.language, "name"),
 						type: "text",
 						value: e.card.name,
 						onChange: t => e.onChange(Object.assign({}, e.card, {
@@ -139,49 +139,41 @@
 						}))
 					}), n.a.createElement("div", {
 						className: _.a.twoColumn
-					}, n.a.createElement(v.d, {
+					}, n.a.createElement(P.d, {
 						labelClassName: _.a.half,
-						labelText: x.fbt._("card number", null, {
-							hk: "4xtq9o"
-						}),
+						labelText: O(e.language, "number"),
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							cardNumberComplete: t.complete
 						})),
 						onReady: t => e.onChange(Object.assign({}, e.card, {
 							element: t
 						}))
-					}), n.a.createElement(v.c, {
+					}), n.a.createElement(P.c, {
 						labelClassName: _.a.half,
-						labelText: x.fbt._("mm/yy", null, {
-							hk: "141YoD"
-						}),
+						labelText: O(e.language, "exp"),
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							cardExpiryComplete: t.complete
 						}))
 					})), n.a.createElement("div", {
 						className: _.a.twoColumn
-					}, n.a.createElement(v.b, {
+					}, n.a.createElement(P.b, {
 						labelClassName: _.a.half,
-						labelText: x.fbt._("ccv", null, {
-							hk: "1B7gnp"
-						}),
+						labelText: O(e.language, "ccv"),
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							cardCVCComplete: t.complete
 						}))
-					}), n.a.createElement(v.e, {
+					}), n.a.createElement(P.e, {
 						labelClassName: _.a.half,
-						labelText: x.fbt._("zip code", null, {
-							hk: "EfqN4"
-						}),
+						labelText: O(e.language, "zip"),
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							postalCodeComplete: t.complete
 						}))
 					})))
 				})),
-				M = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/FormLoading/index.m.less"),
-				k = a.n(M);
+				I = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/FormLoading/index.m.less"),
+				k = a.n(I);
 
-			function T(e) {
+			function D(e) {
 				return n.a.createElement("div", {
 					className: e.className
 				}, n.a.createElement("div", {
@@ -200,20 +192,20 @@
 					className: k.a.halfBox
 				})))
 			}
-			var I = a("./src/config.ts"),
-				D = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/Type/index.m.less"),
-				L = a.n(D);
-			const B = "https://stripe.com";
+			var L = a("./src/config.ts"),
+				B = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/Type/index.m.less"),
+				A = a.n(B);
+			const R = "https://stripe.com";
 
-			function A(e) {
+			function K(e) {
 				const t = e.allowedPaymentTypes || new Set([u.b.NewStripe, u.b.NewPayPal]),
 					a = t.size > 1;
 				return n.a.createElement("div", {
-					className: Object(g.a)(L.a.container, e.className)
+					className: Object(b.a)(A.a.container, e.className)
 				}, t.has(u.b.NewPayPal) && n.a.createElement("label", {
-					className: L.a.paypal
+					className: A.a.paypal
 				}, a && n.a.createElement("input", {
-					className: L.a.input,
+					className: A.a.input,
 					defaultChecked: e.selectedPayment.type === u.b.NewPayPal,
 					name: "paymentType",
 					onClick: () => {
@@ -223,16 +215,16 @@
 					},
 					type: "radio"
 				}), n.a.createElement("div", {
-					className: L.a.logoWrapper
+					className: A.a.logoWrapper
 				}, n.a.createElement("img", {
-					className: L.a.logo,
-					src: "".concat(I.a.assetPath, "/img/payment-icons/paypal.png")
+					className: A.a.logo,
+					src: "".concat(L.a.assetPath, "/img/payment-icons/paypal.png")
 				}))), t.has(u.b.NewStripe) && n.a.createElement("label", {
-					className: L.a.card
+					className: A.a.card
 				}, n.a.createElement("div", {
-					className: L.a.cardLogos
+					className: A.a.cardLogos
 				}, a && n.a.createElement("input", {
-					className: L.a.input,
+					className: A.a.input,
 					defaultChecked: e.selectedPayment.type === u.b.NewStripe,
 					name: "paymentType",
 					onClick: () => {
@@ -240,115 +232,114 @@
 					},
 					type: "radio"
 				}), n.a.createElement("div", {
-					className: L.a.logoWrapper
+					className: A.a.logoWrapper
 				}, ["visa.png", "mastercard.png", "amex.png", "discover.jpg"].map((e, t) => n.a.createElement("img", {
-					className: L.a.logo,
+					className: A.a.logo,
 					key: t,
-					src: "".concat(I.a.assetPath, "/img/payment-icons/").concat(e)
+					src: "".concat(L.a.assetPath, "/img/payment-icons/").concat(e)
 				})))), e.selectedPayment.type === u.b.NewStripe && n.a.createElement("a", {
-					href: B,
+					href: R,
 					target: "_blank"
 				}, n.a.createElement("img", {
-					className: L.a.stripeImg,
-					src: "".concat(I.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
+					className: A.a.stripeImg,
+					src: "".concat(L.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
 				}))))
 			}
-			var R = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/index.m.less"),
-				K = a.n(R);
-			const U = new Set([u.b.NewStripe]);
-			const F = Object(r.c)({
+			var U = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/index.m.less"),
+				F = a.n(U);
+			const Z = new Set([u.b.NewStripe]);
+			const W = Object(r.c)({
 				language: e => e.user.language
 			});
-			var Z = Object(o.b)(F)((function(e) {
+			var z = Object(o.b)(W)((function(e) {
 					return n.a.createElement("div", {
-						className: Object(g.a)(K.a.container, e.className)
-					}, n.a.createElement(A, {
-						allowedPaymentTypes: U,
+						className: Object(b.a)(F.a.container, e.className)
+					}, n.a.createElement(K, {
+						allowedPaymentTypes: Z,
 						selectedPayment: e.selectedPayment,
 						onChangePayment: e.onChangePayment
-					}), e.selectedPayment.type === u.b.NewStripe && (e.stripeClientLoaded ? n.a.createElement(O, {
+					}), e.selectedPayment.type === u.b.NewStripe && (e.stripeClientLoaded ? n.a.createElement(T, {
 						card: e.selectedPayment,
-						className: K.a.form,
+						className: F.a.form,
 						onChange: e.onChangePayment
-					}) : n.a.createElement(T, {
-						className: K.a.form
+					}) : n.a.createElement(D, {
+						className: F.a.form
 					})))
 				})),
-				z = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/index.m.less"),
-				W = a.n(z);
-			const Y = Object(b.a)(E.a),
-				q = "economy-support-paymentmodal-card-dropdown";
-			const G = Object(r.c)({
+				G = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/index.m.less"),
+				Y = a.n(G);
+			const q = Object(g.a)(w.a),
+				H = "economy-support-paymentmodal-card-dropdown",
+				J = e => "economy.support.payment.card.selector.".concat(e);
+			const V = Object(r.c)({
 				savedPayments: h.t,
-				dropdownIsOpen: e => e.tooltipId === q,
+				dropdownIsOpen: e => e.tooltipId === H,
 				language: e => e.user.language
 			});
-			var H = Object(o.b)(G, e => ({
+			var X = Object(o.b)(V, e => ({
 					onToggleDropdown: () => e(Object(N.h)({
-						tooltipId: q
+						tooltipId: H
 					}))
 				}))((function(e) {
 					return n.a.createElement("div", {
-						className: Object(g.a)(W.a.container, e.className)
+						className: Object(b.a)(Y.a.container, e.className)
 					}, n.a.createElement("div", {
-						className: W.a.selected
-					}, n.a.createElement(C.a, {
-						className: W.a.lockIcon
+						className: Y.a.selected
+					}, n.a.createElement(f.a, {
+						className: Y.a.lockIcon
 					}), n.a.createElement("div", {
-						className: W.a.label
-					}, x.fbt._("Payment Method", null, {
-						hk: "laYn7"
+						className: Y.a.label
+					}, n.a.createElement(E.a, {
+						msgId: J("title")
 					})), n.a.createElement("div", {
-						className: W.a.cardType,
-						id: q,
+						className: Y.a.cardType,
+						id: H,
 						onClick: e.onToggleDropdown
-					}, e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal ? x.fbt._("Add New Card", null, {
-						hk: "wnQx5"
-					}) : e.selectedPayment.display, n.a.createElement(w.a, {
-						className: W.a.dropdownCaret
-					}))), (e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal) && n.a.createElement(Z, {
-						className: W.a.newPayment,
+					}, e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal ? n.a.createElement(E.a, {
+						msgId: J("other")
+					}) : e.selectedPayment.display, n.a.createElement(v.a, {
+						className: Y.a.dropdownCaret
+					}))), (e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal) && n.a.createElement(z, {
+						className: Y.a.newPayment,
 						selectedPayment: e.selectedPayment,
 						stripeClientLoaded: e.stripeClientLoaded,
 						onChangePayment: e.onSelectPayment
-					}), n.a.createElement(Y, {
+					}), n.a.createElement(q, {
 						isOverlay: !0,
 						isOpen: e.dropdownIsOpen,
-						tooltipId: q
-					}, e.savedPayments.map((t, a) => n.a.createElement(f.b, {
+						tooltipId: H
+					}, e.savedPayments.map((t, a) => n.a.createElement(C.b, {
 						"data-redditstyle": !0,
 						displayText: t.display,
 						index: a,
 						isSelected: e.selectedPayment.type === u.b.SavedStripe && e.selectedPayment.id === t.id,
 						key: a,
 						onClick: () => e.onSelectPayment(t)
-					})), n.a.createElement(f.b, {
+					})), n.a.createElement(C.b, {
 						"data-redditstyle": !0,
-						displayText: x.fbt._("Add New Card", null, {
-							hk: "wnQx5"
-						}),
+						displayText: Object(x.a)(e.language, J("other")),
 						index: e.savedPayments.length,
 						isSelected: e.selectedPayment.type === u.b.NewStripe,
 						key: "new-payment",
 						onClick: () => e.onSelectPayment(Object(u.d)())
 					})))
 				})),
-				J = a("./src/reddit/components/Economics/Support/Common/LegalNotice/index.tsx"),
-				V = a("./src/reddit/components/Economics/Support/Common/SubmitButton/index.tsx"),
-				X = a("./src/reddit/components/Economics/Support/PaymentModal/Footer/index.m.less"),
-				Q = a.n(X);
+				Q = a("./src/reddit/components/Economics/Support/Common/LegalNotice/index.tsx"),
+				$ = a("./src/reddit/components/Economics/Support/Common/SubmitButton/index.tsx"),
+				ee = a("./src/reddit/components/Economics/Support/PaymentModal/Footer/index.m.less"),
+				te = a.n(ee);
 
-			function $(e) {
+			function ae(e) {
 				return n.a.createElement("div", {
-					className: Object(g.a)(Q.a.container, e.className)
-				}, n.a.createElement(J.b, {
+					className: Object(b.a)(te.a.container, e.className)
+				}, n.a.createElement(Q.b, {
 					anonymous: e.anonymous,
-					className: Q.a.legal,
+					className: te.a.legal,
 					contentType: e.content.type
-				}), n.a.createElement(V.a, {
+				}), n.a.createElement($.a, {
 					amount: e.amount,
 					anonymous: e.anonymous,
-					className: Q.a.submit,
+					className: te.a.submit,
 					content: e.content,
 					fallbackTargetName: e.fallbackUsername,
 					message: e.message,
@@ -360,60 +351,58 @@
 					onChangeSubmitState: e.onChangeSubmitState
 				}))
 			}
-			var ee = a("./src/reddit/components/Translated/index.tsx"),
-				te = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				ae = a("./src/reddit/components/Economics/Support/PaymentModal/Header/index.m.less"),
-				se = a.n(ae);
-			var ne = function(e) {
+			var se = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				ne = a("./src/reddit/components/Economics/Support/PaymentModal/Header/index.m.less"),
+				oe = a.n(ne);
+			var re = function(e) {
 					return n.a.createElement("div", {
-						className: Object(g.a)(se.a.container, e.className)
+						className: Object(b.a)(oe.a.container, e.className)
 					}, n.a.createElement("div", {
-						className: se.a.title
-					}, n.a.createElement(ee.a, {
+						className: oe.a.title
+					}, n.a.createElement(E.a, {
 						msgId: "economy.support.payment.header.title"
 					})), n.a.createElement("div", {
-						className: se.a.subtext
-					}, n.a.createElement(ee.a, {
+						className: oe.a.subtext
+					}, n.a.createElement(E.a, {
 						msgId: "economy.support.payment.header.subtext1"
 					})), n.a.createElement("div", {
-						className: se.a.subtext
-					}, n.a.createElement(ee.a, {
+						className: oe.a.subtext
+					}, n.a.createElement(E.a, {
 						msgId: "economy.support.payment.header.subtext2"
-					})), n.a.createElement(te.a, {
-						className: se.a.closeIcon,
+					})), n.a.createElement(se.a, {
+						className: oe.a.closeIcon,
 						onClick: () => e.onClose()
 					}))
 				},
-				oe = a("./node_modules/lodash/debounce.js"),
-				re = a.n(oe),
-				ce = a("./src/reddit/components/Economics/Support/PaymentModal/Message/index.m.less"),
-				le = a.n(ce);
-			var de = function(e) {
+				ce = a("./node_modules/lodash/debounce.js"),
+				le = a.n(ce),
+				de = a("./src/reddit/i18n/utils.ts"),
+				ie = a("./src/reddit/components/Economics/Support/PaymentModal/Message/index.m.less"),
+				me = a.n(ie);
+			var pe = function(e) {
 					return n.a.createElement("input", {
-						className: Object(g.a)(le.a.input, e.className),
-						placeholder: x.fbt._("Private Message (optional)", null, {
-							hk: "4t7gCK"
-						}),
-						onChange: re()(t => e.onMessageChange(t.currentTarget.value), 250)
+						className: Object(b.a)(me.a.input, e.className),
+						placeholder: Object(de.c)("Private Message (optional)"),
+						onChange: le()(t => e.onMessageChange(t.currentTarget.value), 250)
 					})
 				},
-				ie = a("./src/reddit/components/Economics/Support/PaymentModal/UserDisplay/index.m.less"),
-				me = a.n(ie);
+				ue = a("./src/reddit/components/Economics/Support/PaymentModal/UserDisplay/index.m.less"),
+				he = a.n(ue);
 
-			function pe(e) {
+			function ye(e) {
 				return n.a.createElement("div", {
-					className: Object(g.a)(e.className, me.a.container)
+					className: Object(b.a)(e.className, he.a.container)
 				}, n.a.createElement("div", {
-					className: me.a.username
+					className: he.a.username
 				}, e.user ? e.user.displayName : e.fallbackUsername), n.a.createElement("img", {
-					className: me.a.picture,
+					className: he.a.picture,
 					src: e.user && e.user.accountIcon ? e.user.accountIcon : void 0
 				}))
 			}
-			var ue = a("./src/reddit/components/Economics/Support/PaymentModal/index.m.less"),
-				he = a.n(ue);
-			const ye = ["300", "500", "1000"];
-			class xe extends n.a.Component {
+			var xe = a("./src/reddit/components/Economics/Support/PaymentModal/index.m.less"),
+				ge = a.n(xe);
+			const be = ["300", "500", "1000"];
+			class Ne extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleChangePayment = e => this.setState({
 						selectedPayment: e
@@ -430,8 +419,8 @@
 						this.props.onClose ? this.props.onClose(e) : this.props.onCloseAllModals()
 					}, this.state = {
 						amount: {
-							value: ye[0],
-							id: ye[0]
+							value: be[0],
+							id: be[0]
 						},
 						anonymous: !0,
 						selectedPayment: e.savedPayments[0] || Object(u.d)(),
@@ -449,32 +438,32 @@
 					return n.a.createElement(m.a, {
 						stripeInstance: this.state.stripeInstance
 					}, n.a.createElement("div", {
-						className: he.a.container
-					}, n.a.createElement(ne, {
+						className: ge.a.container
+					}, n.a.createElement(re, {
 						onClose: this.close
 					}), n.a.createElement("div", {
-						className: he.a.body
-					}, n.a.createElement(pe, {
-						className: he.a.userDisplay,
+						className: ge.a.body
+					}, n.a.createElement(ye, {
+						className: ge.a.userDisplay,
 						fallbackUsername: this.props.userName,
 						user: this.props.user
 					}), n.a.createElement(i.a, {
-						amounts: ye,
-						className: he.a.amount,
+						amounts: be,
+						className: ge.a.amount,
 						currentlySelected: this.state.amount,
 						onUpdateAmount: this.handleChangeTipAmount
-					}), n.a.createElement(de, {
-						className: he.a.message,
+					}), n.a.createElement(pe, {
+						className: ge.a.message,
 						onMessageChange: this.handleMessageChange
-					}), n.a.createElement(H, {
-						className: he.a.cardSelector,
+					}), n.a.createElement(X, {
+						className: ge.a.cardSelector,
 						selectedPayment: this.state.selectedPayment,
 						stripeClientLoaded: !!this.state.stripeInstance,
 						onSelectPayment: this.handleChangePayment
-					})), n.a.createElement($, {
+					})), n.a.createElement(ae, {
 						amount: this.state.amount,
 						anonymous: this.state.anonymous,
-						className: he.a.footer,
+						className: ge.a.footer,
 						content: this.props.content,
 						fallbackUsername: this.props.userName,
 						message: this.state.message,
@@ -487,11 +476,11 @@
 					})))
 				}
 			}
-			const be = Object(r.c)({
+			const Ee = Object(r.c)({
 					savedPayments: h.t,
 					user: y.cb
 				}),
-				ge = Object(o.b)(be, (e, t) => {
+				we = Object(o.b)(Ee, (e, t) => {
 					let {
 						userName: a
 					} = t;
@@ -500,13 +489,13 @@
 						onCloseAllModals: () => e(Object(l.f)())
 					}
 				}),
-				Ne = Object(c.a)(ge(xe));
-			t.default = Ne
+				Ce = Object(c.a)(we(Ne));
+			t.default = Ce
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return g
+				return b
 			}));
 			a("./node_modules/core-js/modules/es6.symbol.js");
 			var s = a("./node_modules/lodash/throttle.js"),
@@ -532,7 +521,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var b = function(e, t) {
+			var g = function(e, t) {
 				var a = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (a[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -541,7 +530,7 @@
 				}
 				return a
 			};
-			class g extends r.a.Component {
+			class b extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = n()(() => {
 						const {
@@ -592,13 +581,13 @@
 			t.b = e => {
 				var {
 					className: t
-				} = e, a = b(e, ["className"]);
+				} = e, a = g(e, ["className"]);
 				const s = Object(c.a)(y.a.row, t, {
 					[y.a.mIsInteractive]: !a.noHover,
 					[y.a.mIsSelected]: a.isSelected,
 					[y.a.topics]: a.isTopicsStyle
 				});
-				return r.a.createElement(g, x({
+				return r.a.createElement(b, x({
 					className: s
 				}, a))
 			}
@@ -636,7 +625,7 @@
 			a.d(t, "a", (function() {
 				return S
 			})), a.d(t, "c", (function() {
-				return _
+				return j
 			}));
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/lodash/uniqueId.js"),
@@ -652,9 +641,9 @@
 				h = a("./src/reddit/selectors/activeModalId.ts"),
 				y = a("./src/higherOrderComponents/asModal/index.tsx"),
 				x = a("./src/reddit/controls/Button/index.tsx"),
-				b = a("./src/reddit/layout/row/Inline/index.tsx"),
-				g = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				N = a.n(g);
+				g = a("./src/reddit/layout/row/Inline/index.tsx"),
+				b = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				N = a.n(b);
 			var E = Object(y.a)(e => {
 					const {
 						children: t,
@@ -662,11 +651,11 @@
 					} = e;
 					return d.a.createElement("div", {
 						className: N.a.wrapper
-					}, d.a.createElement(b.a, {
+					}, d.a.createElement(g.a, {
 						className: N.a.titleRow
 					}, a), d.a.createElement("div", {
 						className: N.a.detailsContainer
-					}, t), d.a.createElement(b.a, {
+					}, t), d.a.createElement(g.a, {
 						className: N.a.buttonRow
 					}, d.a.createElement(x.f, {
 						className: N.a.confirmButton,
@@ -675,12 +664,12 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				f = a("./src/reddit/controls/ErrorText/index.m.less"),
-				w = a.n(f);
-			const C = Object(m.c)({
+				w = a("./src/reddit/controls/ErrorText/index.m.less"),
+				C = a.n(w);
+			const v = Object(m.c)({
 				activeModalId: h.a
 			});
-			class v extends d.a.Component {
+			class f extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -722,12 +711,12 @@
 						textHasOverflowed: l
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(p.a)(w.a.wrapper, a)
+						className: Object(p.a)(C.a.wrapper, a)
 					}, d.a.createElement("span", {
-						className: w.a.description,
+						className: C.a.description,
 						ref: this.spanRef
 					}, e), l && d.a.createElement("span", {
-						className: w.a.moreText,
+						className: C.a.moreText,
 						onClick: this.toggleModal
 					}, r), t === c && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
@@ -735,9 +724,9 @@
 					}, n || e))
 				}
 			}
-			const P = Object(i.b)(C, e => ({
+			const P = Object(i.b)(v, e => ({
 					toggleErrorTextModal: t => e(Object(u.i)(t))
-				}))(v),
+				}))(f),
 				S = e => {
 					const {
 						className: t,
@@ -754,7 +743,7 @@
 						key: t
 					}, e))) : null
 				},
-				_ = e => d.a.createElement(S, {
+				j = e => d.a.createElement(S, {
 					fallbackMessage: s.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -835,4 +824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.8daf4b51466583741589.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.a820628422077f9f91a5.js.map

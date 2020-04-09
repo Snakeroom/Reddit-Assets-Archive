@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.7a78d15d23a31cb5f8a0.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.558d2726c62960dee721.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsTopTippersPostLeaderboard"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -25,6 +25,16 @@
 			function n(e) {
 				return e.replace(/[^0-9.]/g, "").replace(/^0+/, "") || "0"
 			}
+		},
+		"./src/lib/ntext/index.ts": function(e, t, s) {
+			"use strict";
+
+			function n(e, t, s) {
+				return s || (s = "".concat(t, "s")), 1 === e ? "".concat(e, " ").concat(t) : "".concat(e, " ").concat(s)
+			}
+			s.d(t, "a", (function() {
+				return n
+			}))
 		},
 		"./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/DistinguishedComment/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -106,8 +116,8 @@
 			s.r(t);
 			var n = s("./node_modules/react/index.js"),
 				a = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				c = s("./node_modules/reselect/es/index.js"),
+				c = s("./node_modules/react-redux/es/index.js"),
+				r = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/lib/classNames/index.ts"),
 				i = s("./src/lib/localStorageAvailable/index.ts");
 			const d = e => {
@@ -135,76 +145,66 @@
 				p = d("ftue-top-tippers-viewed"),
 				u = l("ftue-top-tippers-viewed");
 			var b = s("./src/reddit/selectors/economics.ts"),
-				E = s("./node_modules/fbt/lib/FbtPublic.js"),
-				f = s("./src/reddit/components/Economics/TopTippers/Icon/index.tsx"),
-				x = s("./src/reddit/icons/fonts/Comment/index.tsx"),
+				E = s("./src/reddit/i18n/utils.ts"),
+				x = s("./src/reddit/components/Economics/TopTippers/Icon/index.tsx"),
+				f = s("./src/reddit/icons/fonts/Comment/index.tsx"),
 				T = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				v = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
-				h = s("./src/reddit/icons/svgs/Menu/index.tsx"),
-				_ = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/DistinguishedComment/index.m.less"),
-				N = s.n(_);
-			const g = Object(c.c)({
+				N = s("./src/reddit/icons/svgs/Menu/index.tsx"),
+				g = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/DistinguishedComment/index.m.less"),
+				I = s.n(g);
+			const h = Object(r.c)({
 				account: e => e.user.account
 			});
-			var I = Object(r.b)(g)((function(e) {
+			var C = Object(c.b)(h)((function(e) {
 					return a.a.createElement("div", {
-						className: Object(o.a)(N.a.container, e.className)
+						className: Object(o.a)(I.a.container, e.className)
 					}, a.a.createElement("div", {
-						className: N.a.votes
+						className: I.a.votes
 					}, a.a.createElement(v.a, {
-						className: N.a.voteIcon
+						className: I.a.voteIcon
 					}), a.a.createElement(T.a, {
-						className: N.a.voteIcon
+						className: I.a.voteIcon
 					})), a.a.createElement("div", {
-						className: N.a.content
+						className: I.a.content
 					}, a.a.createElement("div", {
-						className: N.a.userDisplay
+						className: I.a.userDisplay
 					}, a.a.createElement("div", {
-						className: N.a.username
-					}, a.a.createElement(f.a, {
-						className: N.a.badge,
+						className: I.a.username
+					}, a.a.createElement(x.a, {
+						className: I.a.badge,
 						creatorId: e.creatorId,
 						rank: 1,
 						subredditId: e.subredditId
 					}), e.account && e.account.displayText || "username"), a.a.createElement("div", {
-						className: N.a.timestamp
-					}, E.fbt._("1 min ago", null, {
-						hk: "3vRZcv"
-					}))), a.a.createElement("div", {
-						className: N.a.comment
-					}, E.fbt._("Amazing!", null, {
-						hk: "16rWSe"
-					})), a.a.createElement("div", {
-						className: N.a.flatlist
+						className: I.a.timestamp
+					}, Object(E.c)("1 min ago"))), a.a.createElement("div", {
+						className: I.a.comment
+					}, Object(E.c)("Amazing!")), a.a.createElement("div", {
+						className: I.a.flatlist
 					}, a.a.createElement("div", {
-						className: N.a.flatlistItem
-					}, a.a.createElement(x.a, {
-						className: N.a.flatlistIcon
-					}), E.fbt._("Reply", null, {
-						hk: "Rnesd"
-					})), a.a.createElement("div", {
-						className: N.a.flatlistItem
-					}, E.fbt._("Share", null, {
-						hk: "3DK6cw"
-					})), a.a.createElement("div", {
-						className: N.a.flatlistItem
-					}, E.fbt._("Save", null, {
-						hk: "2Sbf6c"
-					})), a.a.createElement("div", {
-						className: N.a.flatlistItem
-					}, a.a.createElement(h.a, {
-						className: N.a.menuIcon
+						className: I.a.flatlistItem
+					}, a.a.createElement(f.a, {
+						className: I.a.flatlistIcon
+					}), Object(E.c)("Reply")), a.a.createElement("div", {
+						className: I.a.flatlistItem
+					}, Object(E.c)("Share")), a.a.createElement("div", {
+						className: I.a.flatlistItem
+					}, Object(E.c)("Save")), a.a.createElement("div", {
+						className: I.a.flatlistItem
+					}, a.a.createElement(N.a, {
+						className: I.a.menuIcon
 					})))))
 				})),
-				C = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.tsx"),
-				k = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/UserPill/index.tsx"),
-				j = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/GenerousSupporters/index.m.less"),
-				w = s.n(j);
-			const L = Object(c.c)({
+				j = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.tsx"),
+				_ = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/UserPill/index.tsx"),
+				O = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/GenerousSupporters/index.m.less"),
+				w = s.n(O);
+			const k = Object(r.c)({
 				tippers: b.x,
 				account: e => e.user.account
 			});
-			var S, O = Object(r.b)(L)((function(e) {
+			var L, S = Object(c.b)(k)((function(e) {
 					const t = (e.tippers && e.tippers.topTippers.list || []).reduce((t, s) => !t && e.account && e.account.id !== s.id ? s : t, void 0) || {
 							amount: "100",
 							id: "snooer",
@@ -219,20 +219,16 @@
 						className: e.className
 					}, a.a.createElement("div", {
 						className: w.a.title
-					}, E.fbt._("Generous Supporters", null, {
-						hk: "10A3sz"
-					})), a.a.createElement("div", {
+					}, Object(E.c)("Generous Supporters")), a.a.createElement("div", {
 						className: w.a.row
-					}, a.a.createElement(k.a, {
+					}, a.a.createElement(_.a, {
 						amount: s,
 						className: w.a.pill,
 						creatorId: e.creatorId,
 						rank: 1,
 						subredditId: e.subredditId,
-						username: e.account && e.account.displayText || E.fbt._("username", null, {
-							hk: "4wRyji"
-						})
-					}), a.a.createElement(k.a, {
+						username: e.account && e.account.displayText || Object(E.c)("username")
+					}), a.a.createElement(_.a, {
 						amount: t.amount,
 						className: w.a.pill,
 						creatorId: e.creatorId,
@@ -241,7 +237,7 @@
 						username: t.username
 					})), a.a.createElement("div", {
 						className: w.a.row
-					}, a.a.createElement(C.a, {
+					}, a.a.createElement(j.a, {
 						amount: n.amount,
 						className: w.a.pill,
 						count: n.count,
@@ -253,16 +249,16 @@
 				A = s.n(B);
 
 			function P(e) {
-				const t = e.alignment || S.Left;
+				const t = e.alignment || L.Left;
 				return a.a.createElement("div", {
 					className: Object(o.a)(e.className, A.a.container)
 				}, a.a.createElement("article", {
 					className: A.a.content
 				}, a.a.createElement("div", {
 					className: Object(o.a)(A.a.contentInner, {
-						[A.a.contentAlignmentCenter]: t === S.Center,
-						[A.a.contentAlignmentLeft]: t === S.Left,
-						[A.a.contentAlignmentRight]: t === S.Right
+						[A.a.contentAlignmentCenter]: t === L.Center,
+						[A.a.contentAlignmentLeft]: t === L.Left,
+						[A.a.contentAlignmentRight]: t === L.Right
 					})
 				}, e.children)), a.a.createElement("footer", {
 					className: A.a.footer
@@ -273,27 +269,28 @@
 				}, e.description)))
 			}! function(e) {
 				e.Center = "center", e.Left = "left", e.Right = "right"
-			}(S || (S = {}));
-			var F = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Row/index.m.less"),
-				U = s.n(F);
+			}(L || (L = {}));
+			var U = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Row/index.m.less"),
+				y = s.n(U);
 
-			function y(e) {
+			function F(e) {
 				return a.a.createElement("div", {
-					className: Object(o.a)(e.className, U.a.container)
+					className: Object(o.a)(e.className, y.a.container)
 				}, e.children.map((e, t) => a.a.cloneElement(e, {
 					index: t,
-					className: Object(o.a)(e.props.className, U.a.item),
+					className: Object(o.a)(e.props.className, y.a.item),
 					key: t
 				})))
 			}
-			var R = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
+			var R = s("./src/lib/ntext/index.ts"),
+				M = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				V = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				D = s("./src/lib/lessComponent.tsx"),
-				M = s("./src/reddit/helpers/defaultStyledSVG/index.m.less"),
-				K = s.n(M);
-			var G = e => D.a.wrapped(e, "defaultSVG", K.a),
+				G = s("./src/reddit/helpers/defaultStyledSVG/index.m.less"),
+				K = s.n(G);
+			var Y = e => D.a.wrapped(e, "defaultSVG", K.a),
 				W = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			var Y = Object(V.a)(G(e => a.a.createElement("svg", {
+			var H = Object(V.a)(Y(e => a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -303,10 +300,10 @@
 					fill: "inherit",
 					d: "M11.43375,2.195625 C11.031875,1.831875 10.3125,2.116875 10.3125,2.6590625 L10.3125,5.9096875 C10,5.975625 9.2321875,6.0775 8.675625,6.2209375 C3.85875,7.4628125 0.5928125,11.9 0.5928125,16.874375 C0.5928125,17.479375 1.308125,17.7309375 1.6634375,17.24125 C3.67375,14.4715625 6.875,12.561875 10.3125,12.1584375 L10.3125,14.8409375 C10.3125,15.383125 11.031875,15.668125 11.43375,15.304375 L18.673125,8.75 L11.43375,2.195625 Z"
 				}))))),
-				H = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Tipping/index.m.less"),
-				Z = s.n(H);
-			const X = 2;
-			const q = Object(c.c)({
+				Z = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Tipping/index.m.less"),
+				X = s.n(Z);
+			const q = 2;
+			const Q = Object(r.c)({
 				post: (e, t) => {
 					let {
 						postId: s
@@ -314,78 +311,63 @@
 					return e.posts.models[s]
 				}
 			});
-			var z = Object(r.b)(q)((function(e) {
-					const t = e.post && e.post.numComments || X;
+			var z = Object(c.b)(Q)((function(e) {
+					const t = e.post && e.post.numComments || q;
 					return a.a.createElement("div", {
-						className: Object(o.a)(e.className, Z.a.container)
+						className: Object(o.a)(e.className, X.a.container)
 					}, a.a.createElement("div", {
-						className: Z.a.postFlatlistItem
-					}, a.a.createElement(x.a, {
-						className: Z.a.postFlatlistIcon
-					}), E.fbt._({
-						"*": "Comments",
-						_1: "Comment"
-					}, [E.fbt._plural(t)], {
-						hk: "2O7V8g"
-					})), a.a.createElement("div", {
-						className: Z.a.tipButton
-					}, a.a.createElement(R.a, {
-						className: Z.a.postFlatlistIcon
-					}), E.fbt._("Tip Creator", null, {
-						hk: "20gWdm"
-					})), a.a.createElement("div", {
-						className: Z.a.postFlatlistItem
-					}, a.a.createElement(Y, {
-						className: Z.a.postFlatlistIcon
-					}), E.fbt._("Share", null, {
-						hk: "3DK6cw"
-					})))
+						className: X.a.postFlatlistItem
+					}, a.a.createElement(f.a, {
+						className: X.a.postFlatlistIcon
+					}), Object(E.c)(Object(R.a)(t, "Comment"))), a.a.createElement("div", {
+						className: X.a.tipButton
+					}, a.a.createElement(M.a, {
+						className: X.a.postFlatlistIcon
+					}), Object(E.c)("Tip Creator")), a.a.createElement("div", {
+						className: X.a.postFlatlistItem
+					}, a.a.createElement(H, {
+						className: X.a.postFlatlistIcon
+					}), Object(E.c)("Share")))
 				})),
-				Q = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/index.m.less"),
-				J = s.n(Q);
+				J = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/index.m.less"),
+				$ = s.n(J);
 
-			function $(e) {
-				return a.a.createElement(y, {
+			function ee(e) {
+				return a.a.createElement(F, {
 					className: e.className
 				}, a.a.createElement(P, {
-					alignment: S.Center,
-					className: J.a.firstItem,
-					description: E.fbt._("Look for the tip button under the post", null, {
-						hk: "49bqX8"
-					})
+					alignment: L.Center,
+					className: $.a.firstItem,
+					description: Object(E.c)("Look for the tip button under the post")
 				}, a.a.createElement(z, {
-					className: J.a.tipping,
+					className: $.a.tipping,
 					postId: e.contentId
 				})), a.a.createElement(P, {
-					description: E.fbt._("Be listed as a generous supporter under the post", null, {
-						hk: "2E1zW6"
-					})
-				}, a.a.createElement(O, {
-					className: J.a.generousSupporters,
+					description: Object(E.c)("Be listed as a generous supporter under the post")
+				}, a.a.createElement(S, {
+					className: $.a.generousSupporters,
 					contentId: e.contentId,
 					creatorId: e.creatorId,
 					subredditId: e.subredditId
 				})), a.a.createElement(P, {
-					description: E.fbt._("Get a distinguished username and an icon in comments", null, {
-						hk: "3U9mLv"
-					})
-				}, a.a.createElement(I, {
-					className: J.a.distinguished,
+					description: Object(E.c)("Get a distinguished username and an icon in comments")
+				}, a.a.createElement(C, {
+					className: $.a.distinguished,
 					contentId: e.contentId,
 					creatorId: e.creatorId,
 					subredditId: e.subredditId
 				})))
 			}
-			var ee = s("./src/lib/makeActionCreator/index.ts"),
-				te = s("./src/reddit/actions/economics/ftue/constants.ts");
-			Object(ee.a)(te.a);
-			const se = Object(ee.a)(te.b);
-			var ne = s("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				ae = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+			var te = s("./src/lib/makeActionCreator/index.ts"),
+				se = s("./src/reddit/actions/economics/ftue/constants.ts");
+			Object(te.a)(se.a);
+			const ne = Object(te.a)(se.b);
+			var ae = s("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				ce = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				re = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				ce = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Header/index.m.less"),
-				oe = s.n(ce);
-			class ie extends a.a.Component {
+				oe = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Header/index.m.less"),
+				ie = s.n(oe);
+			class de extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						showAgain: !1
@@ -395,50 +377,44 @@
 				}
 				render() {
 					return a.a.createElement("header", {
-						className: Object(o.a)(this.props.className, oe.a.header)
+						className: Object(o.a)(this.props.className, ie.a.header)
 					}, a.a.createElement("div", {
-						className: oe.a.title
+						className: ie.a.title
 					}, a.a.createElement("div", {
-						className: oe.a.newTag
-					}, E.fbt._("new", null, {
-						hk: "3lK6E4"
-					})), E.fbt._("this creator can accept tips", null, {
-						hk: "2UQws6"
-					})), a.a.createElement("div", {
-						className: oe.a.headerControls
+						className: ie.a.newTag
+					}, Object(E.c)("new")), Object(E.c)("this creator can accept tips")), a.a.createElement("div", {
+						className: ie.a.headerControls
 					}, a.a.createElement("div", {
-						className: oe.a.showAgain,
+						className: ie.a.showAgain,
 						onClick: this.toggleShowAgain
-					}, this.state.showAgain ? a.a.createElement(ne.a, {
-						className: oe.a.check
-					}) : a.a.createElement(ae.a, {
-						className: oe.a.check
-					}), a.a.createElement("div", null, E.fbt._("Don't show it again", null, {
-						hk: "2GHHTk"
-					}))), a.a.createElement(re.a, {
-						className: oe.a.close,
+					}, this.state.showAgain ? a.a.createElement(ae.a, {
+						className: ie.a.check
+					}) : a.a.createElement(ce.a, {
+						className: ie.a.check
+					}), a.a.createElement("div", null, Object(E.c)("Don't show it again"))), a.a.createElement(re.a, {
+						className: ie.a.close,
 						onClick: () => this.props.onClose(this.state.showAgain)
 					})))
 				}
 			}
-			var de = Object(r.b)(void 0, e => ({
+			var le = Object(c.b)(void 0, e => ({
 					onClose: t => e((e => async t => {
-						e || (m(), u()), t(se())
+						e || (m(), u()), t(ne())
 					})(t))
-				}))(ie),
-				le = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/index.m.less"),
-				me = s.n(le);
-			const pe = Object(c.c)({
+				}))(de),
+				me = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/index.m.less"),
+				pe = s.n(me);
+			const ue = Object(r.c)({
 				contentAcceptsSupport: b.l,
 				ftueViewed: e => e.economics.ftue.topTippersViewed,
 				isLoggedIn: e => !!e.user.account
 			});
-			t.default = Object(r.b)(pe)((function(e) {
+			t.default = Object(c.b)(ue)((function(e) {
 				return !e.ftueViewed && p() && e.contentAcceptsSupport && e.isLoggedIn ? a.a.createElement("div", {
-					className: Object(o.a)(e.className, me.a.container)
-				}, a.a.createElement(de, {
-					className: me.a.header
-				}), a.a.createElement($, {
+					className: Object(o.a)(e.className, pe.a.container)
+				}, a.a.createElement(le, {
+					className: pe.a.header
+				}), a.a.createElement(ee, {
 					contentId: e.contentId,
 					creatorId: e.creatorId,
 					subredditId: e.subredditId
@@ -456,38 +432,32 @@
 		"./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return p
+				return u
 			}));
-			var n = s("./src/lib/classNames/index.ts"),
-				a = s("./src/lib/currency/centsToDollars/index.ts"),
-				r = s("./src/lib/prettyPrintNumber/index.ts"),
-				c = s("./node_modules/react/index.js"),
-				o = s.n(c),
-				i = s("./src/reddit/components/Economics/TopTippers/Icon/index.tsx"),
-				d = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.m.less"),
-				l = s.n(d);
-			const {
-				fbt: m
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			var n = s("./node_modules/react/index.js"),
+				a = s.n(n),
+				c = s("./src/lib/classNames/index.ts"),
+				r = s("./src/lib/currency/centsToDollars/index.ts"),
+				o = s("./src/lib/ntext/index.ts"),
+				i = s("./src/lib/prettyPrintNumber/index.ts"),
+				d = s("./src/reddit/components/Economics/TopTippers/Icon/index.tsx"),
+				l = s("./src/reddit/i18n/components.tsx"),
+				m = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.m.less"),
+				p = s.n(m);
 
-			function p(e) {
-				return o.a.createElement("div", {
-					className: Object(n.a)(e.className, l.a.otherTippers)
-				}, o.a.createElement(i.a, {
-					className: l.a.badge,
+			function u(e) {
+				return a.a.createElement("div", {
+					className: Object(c.a)(e.className, p.a.otherTippers)
+				}, a.a.createElement(d.a, {
+					className: p.a.badge,
 					creatorId: e.creatorId,
 					rank: 5,
 					subredditId: e.subredditId
-				}), o.a.createElement("div", {
-					className: l.a.count
-				}, m._({
-					"*": "other users",
-					_1: "other user"
-				}, [m._plural(e.count)], {
-					hk: "KLVuo"
-				})), o.a.createElement("div", {
-					className: l.a.amount
-				}, "$", Object(r.a)(Object(a.a)(e.amount))))
+				}), a.a.createElement("div", {
+					className: p.a.count
+				}, a.a.createElement(l.c, null, Object(o.a)(e.count, "other user"))), a.a.createElement("div", {
+					className: p.a.amount
+				}, "$", Object(i.a)(Object(r.a)(e.amount))))
 			}
 		},
 		"./src/reddit/components/Economics/TopTippers/PostLeaderboard/UserPill/index.m.less": function(e, t, s) {
@@ -510,8 +480,8 @@
 			}));
 			var n = s("./node_modules/react/index.js"),
 				a = s.n(n),
-				r = s("./src/lib/classNames/index.ts"),
-				c = s("./src/lib/currency/centsToDollars/index.ts"),
+				c = s("./src/lib/classNames/index.ts"),
+				r = s("./src/lib/currency/centsToDollars/index.ts"),
 				o = s("./src/lib/prettyPrintNumber/index.ts"),
 				i = s("./src/reddit/components/Economics/TopTippers/Icon/index.tsx"),
 				d = s("./src/reddit/controls/InternalLink/index.tsx"),
@@ -521,7 +491,7 @@
 
 			function u(e) {
 				return a.a.createElement(d.a, {
-					className: Object(r.a)(e.className, m.a.tipper, p[e.rank - 1]),
+					className: Object(c.a)(e.className, m.a.tipper, p[e.rank - 1]),
 					to: "/user/".concat(e.username, "/")
 				}, a.a.createElement(i.a, {
 					className: m.a.badge,
@@ -532,7 +502,7 @@
 					className: m.a.username
 				}, e.username), a.a.createElement("div", {
 					className: m.a.amount
-				}, "$", Object(o.a)(Object(c.a)(e.amount))))
+				}, "$", Object(o.a)(Object(r.a)(e.amount))))
 			}
 		},
 		"./src/reddit/components/Economics/TopTippers/PostLeaderboard/index.m.less": function(e, t, s) {
@@ -546,43 +516,38 @@
 			s.r(t);
 			var n = s("./node_modules/react/index.js"),
 				a = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				c = s("./src/lib/classNames/index.ts"),
-				o = s("./src/reddit/selectors/economics.ts"),
-				i = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.tsx"),
-				l = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/UserPill/index.tsx"),
-				m = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/index.m.less"),
-				p = s.n(m);
-			const {
-				fbt: u
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			const b = Object(i.c)({
-				tippers: o.x
+				c = s("./node_modules/react-redux/es/index.js"),
+				r = s("./node_modules/reselect/es/index.js"),
+				o = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/i18n/components.tsx"),
+				d = s("./src/reddit/selectors/economics.ts"),
+				l = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/OtherUsersPill/index.tsx"),
+				m = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/UserPill/index.tsx"),
+				p = s("./src/reddit/components/Economics/TopTippers/PostLeaderboard/index.m.less"),
+				u = s.n(p);
+			const b = Object(r.c)({
+				tippers: d.x
 			});
-			t.default = Object(r.b)(b)((function(e) {
+			t.default = Object(c.b)(b)((function(e) {
 				const {
 					tippers: t
 				} = e;
 				return t ? a.a.createElement("div", {
-					className: Object(c.a)(p.a.container, e.className)
+					className: Object(o.a)(u.a.container, e.className)
 				}, a.a.createElement("div", {
-					className: p.a.title
-				}, u._("Generous Supporters", null, {
-					hk: "10A3sz"
-				})), a.a.createElement("div", {
-					className: p.a.tippers
+					className: u.a.title
+				}, a.a.createElement(i.c, null, "Generous Supporters")), a.a.createElement("div", {
+					className: u.a.tippers
 				}, t.topTippers.list.map(s => {
 					const n = t.topTippers.ranking[s.id] || 5;
-					return a.a.createElement(l.a, {
+					return a.a.createElement(m.a, {
 						amount: s.amount,
 						creatorId: e.creatorId,
-						key: s.id,
 						rank: n,
 						subredditId: e.subredditId,
 						username: s.username
 					})
-				}), !!t.topTippers.others.count && a.a.createElement(d.a, {
+				}), !!t.topTippers.others.count && a.a.createElement(l.a, {
 					amount: t.topTippers.others.amount,
 					count: t.topTippers.others.count,
 					creatorId: e.creatorId,
@@ -627,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.7a78d15d23a31cb5f8a0.js.map
+//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.558d2726c62960dee721.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.61922fe834881a3a1cc1.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.e0786418b226ccb6c533.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -49,93 +49,67 @@
 			r.d(t, "a", (function() {
 				return g
 			}));
-			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				n = r("./src/lib/classNames/index.ts"),
+			var s = r("./node_modules/react/index.js"),
+				n = r.n(s),
+				c = r("./src/lib/classNames/index.ts"),
 				i = r("./src/lib/currency/centsToDollars/index.ts"),
-				a = r("./node_modules/react/index.js"),
-				c = r.n(a),
-				o = r("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
-				d = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = r("./src/reddit/contexts/ApiContext.tsx"),
+				a = r("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
+				o = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				d = r("./src/reddit/contexts/ApiContext.tsx"),
+				l = r("./src/reddit/i18n/utils.ts"),
 				m = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Benefits/index.m.less"),
 				u = r.n(m);
-			const b = [() => s.fbt._("Loyalty badge", null, {
-					hk: "2xuuHW"
-				}), () => s.fbt._("New style badges every month", null, {
-					hk: "4figaI"
-				}), () => s.fbt._("Distinguished username", null, {
-					hk: "2X7IoJ"
-				}), () => s.fbt._("Support new feature development", null, {
-					hk: "4wnxbi"
-				})],
-				p = [() => s.fbt._("Emotes in comments", null, {
-					hk: "3pBItU"
-				}), () => s.fbt._("Achievement badges", null, {
-					hk: "BcuB7"
-				}), () => s.fbt._("Images & GIFs in comments", null, {
-					hk: "4ASFBV"
-				}), () => s.fbt._("Members lounge", null, {
-					hk: "2iNFqG"
-				})];
+			const b = ["Loyalty badge", "New style badges every month", "Distinguished username", "Support new feature development"].map(l.c),
+				p = ["Emotes in comments", "Achievement badges", "Images & GIFs in comments", "Members lounge"].map(l.c);
 
 			function g(e) {
 				let {
 					benefit: t,
 					color: r
 				} = e;
-				return c.a.createElement("li", {
+				return n.a.createElement("li", {
 					className: u.a.benefit
-				}, c.a.createElement("div", {
+				}, n.a.createElement("div", {
 					className: u.a.benefitCircle,
 					style: {
 						backgroundColor: r
 					}
 				}), t)
 			}
-			t.b = Object(l.b)(Object(d.c)((function(e) {
+			t.b = Object(d.b)(Object(o.c)((function(e) {
 				const {
 					className: t,
 					price: r,
-					subreddit: a
+					subreddit: s
 				} = e;
-				return c.a.createElement("div", {
-					className: Object(n.a)(u.a.container, t)
-				}, c.a.createElement("div", {
+				return n.a.createElement("div", {
+					className: Object(c.a)(u.a.container, t)
+				}, n.a.createElement("div", {
 					className: u.a.topLine
-				}, c.a.createElement(o.a, {
+				}, n.a.createElement(a.a, {
 					className: u.a.brand,
-					subreddit: a
-				}), c.a.createElement("div", {
+					subreddit: s
+				}), n.a.createElement("div", {
 					className: u.a.title
-				}, s.fbt._("{community} Supporter Membership", [s.fbt._param("community", a.displayText)], {
-					hk: "eZ8PH"
-				}))), c.a.createElement("header", {
+				}, Object(l.c)("".concat(Object(l.b)("community", s.displayText), " Supporter Membership")))), n.a.createElement("header", {
 					className: u.a.subTitle
-				}, s.fbt._("Support the {community} community and receive exclusive access to premium features.", [s.fbt._param("community", a.displayText)], {
-					hk: "2pm4PV"
-				})), c.a.createElement("article", null, c.a.createElement("div", {
+				}, Object(l.c)("Support the ".concat(Object(l.b)("community", s.displayText), " community and receive exclusive access to premium features."))), n.a.createElement("article", null, n.a.createElement("div", {
 					className: u.a.benefitsTitle
-				}, s.fbt._("membership benefits", null, {
-					hk: "Uqmbk"
-				})), c.a.createElement("ul", {
+				}, Object(l.c)("membership benefits")), n.a.createElement("ul", {
 					className: u.a.benefits
-				}, b.map(e => c.a.createElement(g, {
-					benefit: e(),
-					key: e()
-				}))), c.a.createElement("div", {
+				}, b.map(e => n.a.createElement(g, {
+					benefit: e,
+					key: e
+				}))), n.a.createElement("div", {
 					className: u.a.benefitsTitle
-				}, s.fbt._("coming soon (maybe)", null, {
-					hk: "1wQhrn"
-				})), c.a.createElement("ul", {
+				}, Object(l.c)("coming soon (maybe)")), n.a.createElement("ul", {
 					className: u.a.benefits
-				}, p.map(e => c.a.createElement(g, {
-					benefit: e(),
-					key: e()
-				})))), c.a.createElement("footer", {
+				}, p.map(e => n.a.createElement(g, {
+					benefit: e,
+					key: e
+				})))), n.a.createElement("footer", {
 					className: u.a.price
-				}, s.fbt._("${price}/month", [s.fbt._param("price", Object(i.a)(r))], {
-					hk: "2ykEVh"
-				})))
+				}, Object(l.c)("$".concat(Object(l.b)("price", Object(i.a)(r)), "/month"))))
 			})))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less": function(e, t, r) {
@@ -153,11 +127,11 @@
 		},
 		"./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.tsx": function(e, t, r) {
 			"use strict";
-			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				n = r("./node_modules/react/index.js"),
-				i = r.n(n),
-				a = r("./node_modules/react-redux/es/index.js"),
-				c = r("./node_modules/react-router-redux/es/index.js"),
+			var s = r("./node_modules/react/index.js"),
+				n = r.n(s),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/react-router-redux/es/index.js"),
+				a = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/lib/classNames/index.ts"),
 				d = r("./src/lib/currency/centsToDollars/index.ts"),
 				l = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
@@ -168,30 +142,30 @@
 				g = r("./src/reddit/contexts/ApiContext.tsx"),
 				h = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				f = r("./src/reddit/endpoints/economics/specialMembership.ts"),
-				_ = r("./src/reddit/helpers/economics/setupSubredditPremiumButton.ts"),
-				x = r("./src/reddit/models/Badge/managementPage.ts"),
-				y = r("./src/reddit/selectors/economics.ts"),
-				E = r("./src/reddit/selectors/telemetry.ts"),
-				C = r("./src/reddit/selectors/user.ts"),
-				j = r("./node_modules/reselect/es/index.js"),
-				w = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less"),
-				P = r.n(w);
-			const O = "subreddit-premium-purchase-braintree",
-				N = (e, t, r) => "\n  ".concat(s.fbt.param("communityName", e.displayText), " ").concat(s.fbt.param("membershipAlt", r.membershipAlt), ".\n  $").concat(s.fbt.param("price", Object(d.a)(t, !0)), "/month, automatically renews on a monthly basis.\n  Cancel anytime. There are no refunds for partial months.\n");
-			class v extends i.a.Component {
+				x = r("./src/reddit/helpers/economics/setupSubredditPremiumButton.ts"),
+				_ = r("./src/reddit/i18n/utils.ts"),
+				j = r("./src/reddit/models/Badge/managementPage.ts"),
+				O = r("./src/reddit/selectors/economics.ts"),
+				y = r("./src/reddit/selectors/telemetry.ts"),
+				E = r("./src/reddit/selectors/user.ts"),
+				C = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less"),
+				w = r.n(C);
+			const P = "subreddit-premium-purchase-braintree",
+				v = (e, t, r) => ["".concat(Object(_.b)("communityName", e.displayText), " ").concat(Object(_.b)("membershipAlt", r.membershipAlt), "."), "$".concat(Object(_.b)("price", Object(d.a)(t, !0)), "/month, automatically renews on a monthly basis."), "Cancel anytime.", "There are no refunds for partial months."].map(_.c).join(" ");
+			class N extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						loading: !0,
 						submitting: !1
-					}, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === y.b.Subscribed, this.getId = () => O + (this.props.uniqueId || "")
+					}, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === O.b.Subscribed, this.getId = () => P + (this.props.uniqueId || "")
 				}
 				componentDidMount() {
 					if (!this.alreadyPurchased()) {
 						const e = this.props.membershipProducts.find(e => "usd" === e.currency);
-						Object(_.a)({
+						Object(x.a)({
 							apiContext: this.props.apiContext(),
 							config: {
-								billingAgreement: N(this.props.subreddit, this.props.price, this.props.meta),
+								billingAgreement: v(this.props.subreddit, this.props.price, this.props.meta),
 								type: "subscription"
 							},
 							elementId: this.getId(),
@@ -215,7 +189,7 @@
 								this.setState({
 									submitting: !1
 								}), this.props.onError(e), this.props.sendEvent(e => {
-									const s = E.defaults(e);
+									const s = y.defaults(e);
 									return Object.assign({
 										source: "meta",
 										action: "fail",
@@ -226,7 +200,7 @@
 											paneName: r
 										},
 										correlationId: this.props.correlationId,
-										subreddit: E.subreddit(e)
+										subreddit: y.subreddit(e)
 									})
 								})
 							},
@@ -238,8 +212,8 @@
 									action: "click",
 									noun: "subscription_paypal_purchase",
 									correlationId: this.props.correlationId
-								}, E.defaults(e), {
-									subreddit: E.subreddit(e)
+								}, y.defaults(e), {
+									subreddit: y.subreddit(e)
 								}))
 							},
 							onSuccess: () => this.props.onPaymentSuccessful(this.props.isLoggedIn)
@@ -247,47 +221,45 @@
 					}
 				}
 				render() {
-					return i.a.createElement("div", {
-						className: Object(o.a)(this.props.className, P.a.container)
-					}, this.alreadyPurchased() ? i.a.createElement("div", {
-						className: P.a.alreadyPurchased
-					}, s.fbt._("Already Purchased", null, {
-						hk: "2h3Eug"
-					})) : i.a.createElement(n.Fragment, null, i.a.createElement("div", {
-						className: Object(o.a)(P.a.button, {
-							[P.a.buttonWithoutCards]: !this.props.showCards,
-							[P.a.loading]: this.state.loading,
-							[P.a.submitting]: this.state.submitting
+					return n.a.createElement("div", {
+						className: Object(o.a)(this.props.className, w.a.container)
+					}, this.alreadyPurchased() ? n.a.createElement("div", {
+						className: w.a.alreadyPurchased
+					}, Object(_.c)("Already Purchased")) : n.a.createElement(s.Fragment, null, n.a.createElement("div", {
+						className: Object(o.a)(w.a.button, {
+							[w.a.buttonWithoutCards]: !this.props.showCards,
+							[w.a.loading]: this.state.loading,
+							[w.a.submitting]: this.state.submitting
 						}),
 						id: this.getId()
-					}), this.state.submitting && i.a.createElement(h.a, {
-						className: P.a.loadingIcon,
+					}), this.state.submitting && n.a.createElement(h.a, {
+						className: w.a.loadingIcon,
 						sizePx: 24
 					})))
 				}
 			}
-			const S = Object(j.c)({
-				isLoggedIn: C.G,
+			const S = Object(a.c)({
+				isLoggedIn: E.G,
 				membershipProducts: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.p)(e, r.id)
+					return Object(O.p)(e, r.id)
 				},
 				meta: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.w)(e, r.id)
+					return Object(O.w)(e, r.id)
 				},
 				userIsPremiumSubscriber: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.D)(e, r.id)
+					return Object(O.D)(e, r.id)
 				}
 			});
-			t.a = Object(g.b)(Object(a.b)(S, (e, t) => {
+			t.a = Object(g.b)(Object(c.b)(S, (e, t) => {
 				let {
 					subreddit: r,
 					onComplete: s
@@ -297,11 +269,11 @@
 					onPaymentSuccessful: t => {
 						t ? e(Object(m.f)(r.id, !0)).then(() => e(Object(b.d)(() => {}))).then(() => s && s()).then(() => e(Object(l.c)({
 							subredditId: r.id,
-							initialView: x.c.MyBadges
-						}))) : e(Object(c.b)(r.url))
+							initialView: j.c.MyBadges
+						}))) : e(Object(i.b)(r.url))
 					}
 				}
-			})(Object(p.c)(v)))
+			})(Object(p.c)(N)))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -326,9 +298,9 @@
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./node_modules/react-redux/es/index.js"),
-				a = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/higherOrderComponents/asModal/index.tsx"),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/reselect/es/index.js"),
+				a = r("./src/higherOrderComponents/asModal/index.tsx"),
 				o = r("./src/reddit/actions/modal.ts"),
 				d = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				l = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -369,20 +341,19 @@
 					shouldHandleMouseClicks: !0,
 					shouldShowIndicators: !0
 				}),
-				_ = r("./node_modules/fbt/lib/FbtPublic.js"),
 				x = r("./src/lib/classNames/index.ts"),
-				y = r("./src/reddit/constants/disclaimers.ts"),
-				E = r("./src/reddit/selectors/economics.ts"),
-				C = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.tsx"),
-				j = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/index.m.less"),
-				w = r.n(j);
-			const P = (e, t, r) => {
-				const s = '<a href="'.concat(y.a, '" target="_blank">Reddit Beta Terms of Service</a>'),
-					i = _.fbt._("{communityName} {membershipAlt} automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months. By purchasing a {communityNameAgain} {membershipAltAgain}, you agree to the {userAgreement} and {beta}", [_.fbt._param("communityName", e.name), _.fbt._param("membershipAlt", r.membershipAlt), _.fbt._param("communityNameAgain", e.name), _.fbt._param("membershipAltAgain", r.membershipAlt), _.fbt._param("userAgreement", '<a href="https://www.redditinc.com/policies/user-agreement" target="_blank">Reddit User Agreement</a>'), _.fbt._param("beta", s)], {
-						hk: "1qjeof"
-					});
+				_ = r("./src/reddit/constants/disclaimers.ts"),
+				j = r("./src/reddit/i18n/utils.ts"),
+				O = r("./src/reddit/selectors/economics.ts"),
+				y = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.tsx"),
+				E = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/index.m.less"),
+				C = r.n(E);
+			const w = (e, t, r) => {
+				const s = '<a href="'.concat(_.a, '" target="_blank">Reddit Beta Terms of Service</a>'),
+					c = "".concat(Object(j.b)("communityName", e.name), " ").concat(Object(j.b)("membershipAlt", r.membershipAlt), " ") + "automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months. By purchasing a " + "".concat(Object(j.b)("communityName", e.name), " ").concat(Object(j.b)("membershipAlt", r.membershipAlt), ", you ") + "agree to the ".concat(Object(j.b)("userAgreement", '<a href="https://www.redditinc.com/policies/user-agreement" target="_blank">Reddit User Agreement</a>'), " ") + "and ".concat(Object(j.b)("beta", s), "."),
+					i = Object(j.c)(c);
 				return n.a.createElement("div", {
-					className: w.a.legalWrapper,
+					className: C.a.legalWrapper,
 					dangerouslySetInnerHTML: {
 						__html: i
 					},
@@ -391,32 +362,32 @@
 					}
 				})
 			};
-			const O = Object(a.c)({
+			const P = Object(i.c)({
 				isNightmode: e => e.user.prefs.nightmode,
 				meta: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(E.w)(e, r.id)
+					return Object(O.w)(e, r.id)
 				}
 			});
-			var N = Object(i.b)(O)((function(e) {
+			var v = Object(c.b)(P)((function(e) {
 					return n.a.createElement("footer", {
-						className: Object(x.a)(e.className, w.a.container),
+						className: Object(x.a)(e.className, C.a.container),
 						style: {
 							backgroundColor: e.isNightmode ? "rgba(0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.3)"
 						}
 					}, n.a.createElement("div", {
-						className: w.a.buttonWrapper
-					}, n.a.createElement(C.a, {
+						className: C.a.buttonWrapper
+					}, n.a.createElement(y.a, {
 						price: e.price,
 						subreddit: e.subreddit
-					})), P(e.subreddit, e.isNightmode, e.meta))
+					})), w(e.subreddit, e.isNightmode, e.meta))
 				})),
-				v = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/index.m.less"),
-				S = r.n(v);
+				N = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/index.m.less"),
+				S = r.n(N);
 			const I = "499";
-			class k extends n.a.Component {
+			class M extends n.a.Component {
 				componentDidMount() {
 					this.props.sendEvent(e => Object.assign({
 						source: "meta",
@@ -437,7 +408,7 @@
 						subreddit: this.props.subreddit
 					}), n.a.createElement(f, {
 						className: S.a.carousel
-					}), n.a.createElement(N, {
+					}), n.a.createElement(v, {
 						className: S.a.footer,
 						price: I,
 						subreddit: this.props.subreddit
@@ -447,15 +418,15 @@
 					})) : null
 				}
 			}
-			const A = Object(a.c)({
+			const B = Object(i.c)({
 					subreddit: l.q
 				}),
-				B = Object(i.b)(A, e => ({
+				k = Object(c.b)(B, e => ({
 					onClose: () => e(Object(o.f)())
 				})),
-				M = Object(l.t)(),
-				T = Object(d.c)(k);
-			t.default = Object(m.a)("spPremium", Object(c.a)(M(B(T))))
+				A = Object(l.t)(),
+				T = Object(d.c)(M);
+			t.default = Object(m.a)("spPremium", Object(a.a)(A(k(T))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -487,9 +458,9 @@
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./src/lib/classNames/index.ts");
+				c = r("./src/lib/classNames/index.ts");
 
-			function a(e) {
+			function i(e) {
 				return n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -498,7 +469,7 @@
 					d: "M3.49903 2.93517V0C2.81615 1.56205 1.56162 2.81693 0 3.5C1.56165 4.18307 2.81618 5.43795 3.49906 7L3.49904 4.06483H3.50096L3.50094 7C4.18382 5.43795 5.43835 4.18307 7 3.5C5.43838 2.81693 4.18385 1.56205 3.50097 0V2.93517H3.49903Z"
 				}))
 			}
-			var c = r("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+			var a = r("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				o = r("./src/reddit/icons/svgs/Crown/index.tsx"),
 				d = r("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
 				l = r("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less"),
@@ -531,17 +502,17 @@
 					r = u[e.size || "regular"],
 					s = e.subreddit && e.subreddit.primaryColor;
 				return n.a.createElement("div", {
-					className: Object(i.a)(r.container, e.className)
+					className: Object(c.a)(r.container, e.className)
 				}, e.subreddit ? n.a.createElement("img", {
 					className: r.crownImg,
 					src: Object(d.a)(e.subreddit, "Crown.gif")
 				}) : n.a.createElement(o.a, {
 					className: r.crown
-				}), n.a.createElement(a, {
+				}), n.a.createElement(i, {
 					className: r.bling1
-				}), n.a.createElement(a, {
+				}), n.a.createElement(i, {
 					className: r.bling2
-				}), n.a.createElement(a, {
+				}), n.a.createElement(i, {
 					className: r.bling3
 				}), t ? n.a.createElement("img", {
 					className: r.icon,
@@ -549,7 +520,7 @@
 					style: {
 						backgroundColor: s
 					}
-				}) : n.a.createElement(c.a, {
+				}) : n.a.createElement(a.a, {
 					className: r.defaultIcon,
 					style: {
 						backgroundColor: s
@@ -578,9 +549,9 @@
 			r("./node_modules/core-js/modules/es6.symbol.js");
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./node_modules/react-redux/es/index.js"),
-				a = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/reddit/featureFlags/index.ts"),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/reselect/es/index.js"),
+				a = r("./src/reddit/featureFlags/index.ts"),
 				o = function(e, t) {
 					var r = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (r[s] = e[s]);
@@ -592,32 +563,32 @@
 				};
 
 			function d(e, t, r) {
-				const s = Object(a.c)({
-					featureEnabled: t => c.d[e](t)
+				const s = Object(i.c)({
+					featureEnabled: t => a.d[e](t)
 				});
-				return Object(i.b)(s)(e => {
+				return Object(c.b)(s)(e => {
 					const {
 						featureEnabled: s
-					} = e, i = o(e, ["featureEnabled"]);
-					return s ? n.a.createElement(t, i) : void 0 !== r ? n.a.createElement(r, i) : null
+					} = e, c = o(e, ["featureEnabled"]);
+					return s ? n.a.createElement(t, c) : void 0 !== r ? n.a.createElement(r, c) : null
 				})
 			}
 		},
 		"./src/reddit/helpers/economics/setupSubredditPremiumButton.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return a
+				return i
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var s = r("./src/lib/currency/centsToDollars/index.ts"),
 				n = r("./src/reddit/endpoints/economics/specialMembership.ts"),
-				i = r("./src/reddit/helpers/loadThirdPartyScript.ts");
-			async function a(e) {
+				c = r("./src/reddit/helpers/loadThirdPartyScript.ts");
+			async function i(e) {
 				let {
 					apiContext: t,
 					config: r,
-					elementId: a,
-					price: c,
+					elementId: i,
+					price: a,
 					purchaseFn: o,
 					username: d,
 					onCancel: l,
@@ -634,7 +605,7 @@
 				try {
 					const [e] = await Promise.all([Object(n.b)(t, {
 						username: d
-					}), Object(i.a)()]);
+					}), Object(c.a)()]);
 					if (!e.ok) return void g(e.error, "/ps/me/braintree-client-tokens");
 					const u = await braintree.client.create({
 							authorization: e.body.clientToken
@@ -646,13 +617,13 @@
 						});
 					m && m(), await paypal.Buttons({
 						createBillingAgreement: "subscription" === r.type ? () => (b && b(), h.createPayment({
-							amount: Object(s.a)(c(), !0),
+							amount: Object(s.a)(a(), !0),
 							billingAgreementDescription: r.billingAgreement,
 							currency: "USD",
 							flow: "vault"
 						})) : void 0,
 						createOrder: "purchase" === r.type ? () => (b && b(), h.createPayment({
-							amount: Object(s.a)(c(), !0),
+							amount: Object(s.a)(a(), !0),
 							currency: "USD",
 							flow: "checkout",
 							intent: "capture"
@@ -672,7 +643,7 @@
 						},
 						onCancel: () => l && l(),
 						onError: e => g(e, "paypalError")
-					}).render("#".concat(a))
+					}).render("#".concat(i))
 				} catch (h) {
 					g(h, "paypalError")
 				}
@@ -681,12 +652,12 @@
 		"./src/reddit/icons/svgs/Crown/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return c
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s);
 
-			function i(e) {
+			function c(e) {
 				return n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -706,4 +677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.61922fe834881a3a1cc1.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.e0786418b226ccb6c533.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.a01d22d9c0b731029fdb.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.7d44d6d062996b1f14bc.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
@@ -18,28 +18,28 @@
 			s.r(t);
 			var r = s("./node_modules/react/index.js"),
 				o = s.n(r),
-				n = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/higherOrderComponents/addOverlayEvents.tsx"),
-				d = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				c = s("./src/reddit/selectors/tooltip.ts"),
-				l = s("./node_modules/fbt/lib/FbtPublic.js"),
-				m = s("./node_modules/uuid/v4.js"),
-				u = s.n(m),
-				p = s("./src/lib/classNames/index.ts"),
-				b = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				_ = s("./src/reddit/controls/Button/index.tsx"),
-				C = s("./src/reddit/helpers/economics/membershipPage.ts"),
-				O = s("./src/reddit/icons/svgs/AddSquare/index.tsx"),
-				x = s("./src/reddit/icons/svgs/Crown/index.tsx"),
-				f = s("./src/reddit/selectors/economics.ts"),
-				g = s("./src/reddit/selectors/telemetry.ts"),
+				c = s("./node_modules/react-redux/es/index.js"),
+				n = s("./node_modules/reselect/es/index.js"),
+				a = s("./src/higherOrderComponents/addOverlayEvents.tsx"),
+				i = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				d = s("./src/reddit/selectors/tooltip.ts"),
+				l = s("./node_modules/uuid/v4.js"),
+				m = s.n(l),
+				u = s("./src/lib/classNames/index.ts"),
+				p = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
+				b = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				O = s("./src/reddit/controls/Button/index.tsx"),
+				h = s("./src/reddit/helpers/economics/membershipPage.ts"),
+				C = s("./src/reddit/i18n/utils.ts"),
+				_ = s("./src/reddit/icons/svgs/AddSquare/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Crown/index.tsx"),
+				g = s("./src/reddit/selectors/economics.ts"),
+				x = s("./src/reddit/selectors/telemetry.ts"),
 				v = s("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
 				w = s.n(v);
-			class j extends o.a.Component {
+			class E extends o.a.Component {
 				constructor(e) {
-					super(e), this.correlationId = e.correlationId || u()()
+					super(e), this.correlationId = e.correlationId || m()()
 				}
 				componentDidMount() {
 					this.props.sendEvent(e => Object.assign({
@@ -47,68 +47,56 @@
 						action: "open",
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId
-					}, g.defaults(e), {
-						subreddit: g.subreddit(e)
+					}, x.defaults(e), {
+						subreddit: x.subreddit(e)
 					}))
 				}
 				onOpenUploadDialog() {
 					this.props.onHideTooltip(), this.props.onOpenUploadDialog()
 				}
 				render() {
-					const e = this.props.userIsPremiumSubscriber === f.b.Subscribed,
+					const e = this.props.userIsPremiumSubscriber === g.b.Subscribed,
 						t = this.props.subreddit && this.props.subreddit.name || "",
 						s = this.props.meta;
 					return o.a.createElement("div", {
-						className: Object(p.a)(this.props.className, w.a.container),
+						className: Object(u.a)(this.props.className, w.a.container),
 						style: this.props.style
 					}, o.a.createElement("header", {
 						className: w.a.header
-					}, e ? l.fbt._("Custom Badge", null, {
-						hk: "4xui7o"
-					}) : l.fbt._("Upload Badge", null, {
-						hk: "41J8Iq"
-					})), o.a.createElement("article", {
+					}, e ? Object(C.c)("Custom Badge") : Object(C.c)("Upload Badge")), o.a.createElement("article", {
 						className: w.a.content
-					}, e ? l.fbt._("Create a custom badge. Share it with other {memberAltPlural} for a reward.", [l.fbt._param("memberAltPlural", s.memberAltPlural)], {
-						hk: "1GYswu"
-					}) : l.fbt._("Users without a {membershipAlt} can design and upload badges and receive 3 months of {membership} for free.", [l.fbt._param("membershipAlt", s.membershipAlt), l.fbt._param("membership", s.membership)], {
-						hk: "lVti0"
-					})), o.a.createElement("footer", {
+					}, e ? Object(C.c)("Create a custom badge. Share it with other ".concat(Object(C.b)("memberAltPlural", s.memberAltPlural), " for a reward.")) : Object(C.c)("Users without a ".concat(Object(C.b)("membershipAlt", s.membershipAlt), " can design and upload badges and receive 3 months of ").concat(Object(C.b)("membership", s.membership), " for free."))), o.a.createElement("footer", {
 						className: w.a.footer
-					}, o.a.createElement(_.n, {
+					}, o.a.createElement(O.n, {
 						className: w.a.link,
 						onClick: () => this.onOpenUploadDialog()
-					}, o.a.createElement(O.a, {
+					}, o.a.createElement(_.a, {
 						className: w.a.addCustomIcon
-					}), l.fbt._("upload custom badge", null, {
-						hk: "26VOvM"
-					})), !e && o.a.createElement(_.o, {
+					}), Object(C.c)("upload custom badge")), !e && o.a.createElement(O.o, {
 						className: w.a.link,
 						disabled: !this.props.subreddit,
-						to: Object(C.a)(t, this.correlationId),
+						to: Object(h.a)(t, this.correlationId),
 						onClick: e => {
 							e.stopPropagation(), this.props.sendEvent(e => Object.assign({
 								source: "meta",
 								action: "click",
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId
-							}, g.defaults(e), {
-								subreddit: g.subreddit(e)
+							}, x.defaults(e), {
+								subreddit: x.subreddit(e)
 							}))
 						}
-					}, o.a.createElement(x.a, {
+					}, o.a.createElement(j.a, {
 						className: w.a.crown
-					}), l.fbt._("Get {membershipAlt}", [l.fbt._param("membershipAlt", s.membershipAlt)], {
-						hk: "2RRNNM"
-					}))))
+					}), Object(C.c)("Get ".concat(Object(C.b)("membershipAlt", s.membershipAlt))))))
 				}
 			}
-			const A = Object(a.c)({
+			const A = Object(n.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.w)(e, s)
+					return Object(g.w)(e, s)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -120,23 +108,23 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.D)(e, s)
+					return Object(g.D)(e, s)
 				}
 			});
-			var E = Object(h.c)(Object(n.b)(A, e => ({
-				onOpenUploadDialog: () => e(Object(b.i)())
-			}))(j));
-			const k = Object(d.a)(E, [i.a.Click, i.a.Keydown]);
-			const D = Object(a.c)({
+			var D = Object(b.c)(Object(c.b)(A, e => ({
+				onOpenUploadDialog: () => e(Object(p.i)())
+			}))(E));
+			const f = Object(i.a)(D, [a.a.Click, a.a.Keydown]);
+			const y = Object(n.c)({
 				isOpen: (e, t) => {
 					let {
 						tooltipId: s
 					} = t;
-					return Object(c.b)(s)(e)
+					return Object(d.b)(s)(e)
 				}
 			});
-			t.default = Object(n.b)(D)((function(e) {
-				return e.isOpen ? o.a.createElement(k, e) : null
+			t.default = Object(c.b)(y)((function(e) {
+				return e.isOpen ? o.a.createElement(f, e) : null
 			}))
 		},
 		"./src/reddit/helpers/economics/membershipPage.ts": function(e, t, s) {
@@ -153,12 +141,12 @@
 		"./src/reddit/icons/svgs/Crown/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return n
+				return c
 			}));
 			var r = s("./node_modules/react/index.js"),
 				o = s.n(r);
 
-			function n(e) {
+			function c(e) {
 				return o.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -170,4 +158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.a01d22d9c0b731029fdb.js.map
+//# sourceMappingURL=CustomBadgeHovercardTooltip.7d44d6d062996b1f14bc.js.map

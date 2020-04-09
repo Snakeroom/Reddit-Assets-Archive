@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8c410e6f6693b2801366.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.41b3b40a893bbd23c1d7.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6104,20 +6104,16 @@
 		},
 		"./src/reddit/components/Governance/Proposal/NoProposalError/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./src/lib/classNames/index.ts"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				i = s("./src/reddit/components/Governance/Proposal/NoProposalError/index.m.less"),
-				a = s.n(i);
-			const {
-				fbt: d
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				r = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/i18n/components.tsx"),
+				a = s("./src/reddit/components/Governance/Proposal/NoProposalError/index.m.less"),
+				d = s.n(a);
 			t.a = function(e) {
-				return r.a.createElement("div", {
-					className: Object(n.a)(a.a.container, e.className)
-				}, d._("Error: Could not load poll", null, {
-					hk: "WWRIU"
-				}))
+				return o.a.createElement("div", {
+					className: Object(r.a)(d.a.container, e.className)
+				}, o.a.createElement(i.c, null, "Error: Could not load poll"))
 			}
 		},
 		"./src/reddit/components/Governance/Proposal/async.ts": function(e, t, s) {
@@ -16223,4 +16219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.8c410e6f6693b2801366.js.map
+//# sourceMappingURL=CollectionCommentsPage.41b3b40a893bbd23c1d7.js.map

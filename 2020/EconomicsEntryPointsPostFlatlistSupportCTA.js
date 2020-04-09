@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsPostFlatlistSupportCTA.97407cf30bd22953c1ec.js
-// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsPostFlatlistSupportCTA.261e6a2bead2ebdecad1.js
+// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsEntryPointsPostFlatlistSupportCTA"], {
 		"./src/reddit/actions/economics/paymentSystems/actionCreators.ts": function(t, e, n) {
@@ -51,28 +51,24 @@
 		"./src/reddit/components/Economics/EntryPoints/PostFlatlistSupportCTA/index.tsx": function(t, e, n) {
 			"use strict";
 			n.r(e);
-			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./src/lib/classNames/index.ts"),
-				r = n("./node_modules/react/index.js"),
-				c = n.n(r),
-				i = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
+			var o = n("./node_modules/react/index.js"),
+				s = n.n(o),
+				r = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
+				i = n("./src/reddit/i18n/utils.ts"),
 				a = n("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				d = n("./src/reddit/models/Payments/index.ts"),
 				l = n("./src/reddit/components/Economics/EntryPoints/PostFlatlistSupportCTA/index.m.less"),
 				p = n.n(l);
-			e.default = Object(i.a)((function(t) {
-				return c.a.createElement("button", {
-					className: Object(s.a)(p.a.button, {
+			e.default = Object(c.a)((function(t) {
+				return s.a.createElement("button", {
+					className: Object(r.a)(p.a.button, {
 						[p.a.buttonSelected]: t.tooltipIsOpen
 					}),
 					onClick: t.onToggleTooltip
-				}, c.a.createElement(a.a, {
+				}, s.a.createElement(a.a, {
 					className: p.a.icon
-				}), t.modModeEnabled ? o.fbt._("Tip", null, {
-					hk: "1CJVX4"
-				}) : o.fbt._("Tip Creator", null, {
-					hk: "2EiVpm"
-				}))
+				}), t.modModeEnabled ? Object(i.c)("Tip") : Object(i.c)("Tip Creator"))
 			}), d.a.Post)
 		},
 		"./src/reddit/components/Economics/EntryPoints/tooltipWrapper/PaymentReaction/index.m.less": function(t, e, n) {
@@ -111,7 +107,7 @@
 				b = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/PaymentReaction/index.m.less"),
 				C = n.n(b);
 
-			function h(t) {
+			function x(t) {
 				return s.a.createElement("div", {
 					className: Object(c.a)(C.a.container, t.className)
 				}, s.a.createElement("div", {
@@ -120,11 +116,11 @@
 					className: C.a.icon
 				}), Object(m.a)(Object(p.a)(t.amount, !0))))
 			}
-			var x = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
-				f = n.n(x);
+			var h = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
+				y = n.n(h);
 
-			function y() {
-				return (y = Object.assign || function(t) {
+			function f() {
+				return (f = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
@@ -173,12 +169,12 @@
 							targetName: r
 						} = this.props, a = this.shouldRenderBelow(), d = a ? i.a.Below : i.a.Above, l = "".concat(n, "-").concat(o, "-").concat(r);
 						return s.a.createElement("div", {
-							className: Object(c.a)(f.a.container, this.props.className),
+							className: Object(c.a)(y.a.container, this.props.className),
 							id: this.props.renderInPortal ? l : void 0,
 							ref: t => {
 								this.ref = t || void 0
 							}
-						}, s.a.createElement(t, y({}, this.props, {
+						}, s.a.createElement(t, f({}, this.props, {
 							tooltipIsOpen: this.state.tooltipIsOpen,
 							onToggleTooltip: () => this.handleToggleTooltip()
 						})), this.state.tooltipIsOpen && (this.props.renderInPortal ? s.a.createElement(v, {
@@ -188,7 +184,7 @@
 								id: this.props.contentId,
 								type: e
 							},
-							className: f.a.tooltipPortal,
+							className: y.a.tooltipPortal,
 							subredditId: this.props.subredditId,
 							targetName: r,
 							targetPosition: ["center", "bottom"],
@@ -200,15 +196,15 @@
 								id: this.props.contentId,
 								type: e
 							},
-							className: Object(c.a)(f.a.tooltip, {
-								[f.a.tooltipAbove]: !a,
-								[f.a.tooltipBelow]: a
+							className: Object(c.a)(y.a.tooltip, {
+								[y.a.tooltipAbove]: !a,
+								[y.a.tooltipBelow]: a
 							}),
 							position: d,
 							subredditId: this.props.subredditId,
 							targetName: r,
 							onClose: this.handleToggleTooltip
-						})), !!this.state.successfulPaymentAmount && s.a.createElement(h, {
+						})), !!this.state.successfulPaymentAmount && s.a.createElement(x, {
 							amount: this.state.successfulPaymentAmount
 						}))
 					}
@@ -334,9 +330,9 @@
 					}, a))
 				},
 				C = b(d.a),
-				h = b(a);
+				x = b(a);
 			e.a = t => {
-				const e = t.isHalfCheckboxSelected ? h : t.isCheckboxSelected ? C : c.a;
+				const e = t.isHalfCheckboxSelected ? x : t.isCheckboxSelected ? C : c.a;
 				return s.a.createElement("button", {
 					"aria-checked": t.isHalfCheckboxSelected ? "mixed" : t.isCheckboxSelected,
 					className: t.className,
@@ -520,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsEntryPointsPostFlatlistSupportCTA.97407cf30bd22953c1ec.js.map
+//# sourceMappingURL=EconomicsEntryPointsPostFlatlistSupportCTA.261e6a2bead2ebdecad1.js.map
