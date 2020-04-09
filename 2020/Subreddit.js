@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.71b10713464a33468113.js
-// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b1f1ad1997fc25f3cf0c.js
+// Retrieved at 4/9/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -3487,9 +3487,8 @@
 				u = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				p = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				b = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
-				h = n("./src/reddit/i18n/components.tsx"),
-				g = n("./src/reddit/icons/svgs/Plus/index.tsx"),
-				x = e => a.a.createElement("svg", {
+				h = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				g = e => a.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 16 17",
@@ -3498,13 +3497,13 @@
 					d: "M8.566 5.835l2.4 2.4a.8.8 0 0 1-1.132 1.131L8.8 8.332V13.6a.8.8 0 1 1-1.6 0V8.332L6.166 9.366a.8.8 0 0 1-1.132-1.131l2.4-2.4a.803.803 0 0 1 1.132 0zm3.091-2.292A3.547 3.547 0 0 1 15.2 7.085a.8.8 0 0 1-1.6 0 1.945 1.945 0 0 0-2.318-1.904.802.802 0 0 1-.869-.43A4.206 4.206 0 0 0 6.628 2.4 4.233 4.233 0 0 0 2.4 6.629a.8.8 0 0 1-1.6 0A5.835 5.835 0 0 1 6.628.799a5.788 5.788 0 0 1 4.941 2.745l.088-.001z",
 					id: "a"
 				})),
-				f = n("./src/reddit/models/ApiRequestState/index.ts"),
-				y = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
-				v = n("./src/reddit/components/SubredditIcon/index.m.less"),
-				_ = n.n(v);
+				x = n("./src/reddit/models/ApiRequestState/index.ts"),
+				f = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				y = n("./src/reddit/components/SubredditIcon/index.m.less"),
+				v = n.n(y);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -3512,7 +3511,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var E = function(e, t) {
+			var C = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -3521,7 +3520,7 @@
 				}
 				return n
 			};
-			class O extends a.a.Component {
+			class E extends a.a.Component {
 				constructor(e) {
 					super(e)
 				}
@@ -3532,18 +3531,18 @@
 							className: n,
 							inTopBar: s
 						} = e,
-						r = E(e, ["subredditId", "className", "inTopBar"]),
-						o = [n, _.a.inTopBar, _.a.iconContainer];
-					return s ? o.push(_.a.emptyEditableIconInTopBar) : o.push(_.a.editableIcon, _.a.emptyEditableIcon), a.a.createElement("span", C({}, r, {
+						r = C(e, ["subredditId", "className", "inTopBar"]),
+						o = [n, v.a.inTopBar, v.a.iconContainer];
+					return s ? o.push(v.a.emptyEditableIconInTopBar) : o.push(v.a.editableIcon, v.a.emptyEditableIcon), a.a.createElement("span", _({}, r, {
 						className: Object(d.a)(...o)
-					}), s ? a.a.createElement(x, {
-						className: _.a.emptyUploadButton
-					}) : a.a.createElement(g.a, {
-						className: _.a.emptyPlusButton
+					}), s ? a.a.createElement(g, {
+						className: v.a.emptyUploadButton
+					}) : a.a.createElement(h.a, {
+						className: v.a.emptyPlusButton
 					}), this.props.children)
 				}
 			}
-			const j = e => {
+			const O = e => {
 					const {
 						iconColor: t,
 						className: n,
@@ -3554,33 +3553,33 @@
 						src: c
 					} = e;
 					return a.a.createElement("span", {
-						className: _.a.iconContainer
+						className: v.a.iconContainer
 					}, a.a.createElement("img", {
 						alt: s,
 						onClick: o,
 						role: r,
 						src: c,
 						className: Object(d.a)(n, {
-							[_.a.editableIcon]: !i
+							[v.a.editableIcon]: !i
 						}),
 						style: {
 							backgroundColor: t || ""
 						}
 					}), e.children)
 				},
-				k = Object(i.c)({
-					isLoading: y.b
+				j = Object(i.c)({
+					isLoading: f.b
 				});
-			class w extends a.a.PureComponent {
+			class k extends a.a.PureComponent {
 				constructor(e) {
 					super(e), this.inputRef = null, this.openImageUpload = () => {
 						this.inputRef && this.inputRef.click(), this.props.sendEvent(b.b)
 					}, this.setInputRef = e => this.inputRef = e, this.renderImageUploader = () => a.a.createElement(m.a, {
-						className: _.a.imageUploader,
+						className: v.a.imageUploader,
 						inputRef: this.setInputRef,
 						multiple: !1,
 						onChange: e => {
-							const t = Object(f.b)();
+							const t = Object(x.b)();
 							this.setState({
 								apiRequestId: t
 							}), this.props.onFileSelected(e, t)
@@ -3597,9 +3596,13 @@
 						subredditOrProfile: this.props.subreddit
 					});
 					return this.props.inTopBar ? a.a.createElement("span", {
-						className: _.a.clickableUploadText,
+						className: v.a.clickableUploadText,
 						onClick: this.openImageUpload
-					}, e ? a.a.createElement(h.c, null, "Update icon") : a.a.createElement(h.c, null, "Add icon")) : null
+					}, e ? s.fbt._("Update icon", null, {
+						hk: "3zlPxT"
+					}) : s.fbt._("Add icon", null, {
+						hk: "1bbdMV"
+					})) : null
 				}
 				getSharedProps() {
 					return {
@@ -3615,7 +3618,7 @@
 					} = Object(p.a)({
 						shouldHideNsfwIcon: !1,
 						subredditOrProfile: this.props.subreddit
-					}), n = a.a.createElement(a.a.Fragment, null, a.a.createElement(j, C({
+					}), n = a.a.createElement(a.a.Fragment, null, a.a.createElement(O, _({
 						alt: s.fbt._("Subreddit icon", null, {
 							hk: "1oOA0s"
 						}),
@@ -3630,19 +3633,19 @@
 				renderEmptyState() {
 					return this.props.linkTo ? a.a.createElement("a", {
 						href: this.props.linkTo
-					}, a.a.createElement(O, C({
+					}, a.a.createElement(E, _({
 						subredditId: this.props.subreddit.id,
 						inTopBar: this.props.inTopBar
-					}, this.getSharedProps()), this.renderSpinner()), this.renderImageUploader()) : a.a.createElement(a.a.Fragment, null, a.a.createElement(O, C({
+					}, this.getSharedProps()), this.renderSpinner()), this.renderImageUploader()) : a.a.createElement(a.a.Fragment, null, a.a.createElement(E, _({
 						subredditId: this.props.subreddit.id,
 						inTopBar: this.props.inTopBar
 					}, this.getSharedProps()), this.renderSpinner()), this.renderImageUploader())
 				}
 				renderSpinner() {
 					if (this.props.isLoading) {
-						const e = [_.a.loadingIcon];
+						const e = [v.a.loadingIcon];
 						let t = 22;
-						return this.props.inTopBar && (e.push(_.a.loadingIconInTopBar), t = 32), a.a.createElement(u.a, {
+						return this.props.inTopBar && (e.push(v.a.loadingIconInTopBar), t = 32), a.a.createElement(u.a, {
 							className: Object(d.a)(...e),
 							sizePx: t
 						})
@@ -3657,15 +3660,15 @@
 						subredditOrProfile: this.props.subreddit
 					}), t = e ? this.renderEditableIcon() : this.renderEmptyState(), n = this.renderEditButton();
 					return n ? a.a.createElement("div", {
-						className: _.a.flexContainer
+						className: v.a.flexContainer
 					}, t, n) : t
 				}
 			}
-			t.a = Object(o.b)(k, (e, t) => ({
+			t.a = Object(o.b)(j, (e, t) => ({
 				onFileSelected: (n, s) => {
 					e(Object(c.a)(t.subreddit, n, s))
 				}
-			}))(Object(l.c)(w))
+			}))(Object(l.c)(k))
 		},
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7174,4 +7177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.71b10713464a33468113.js.map
+//# sourceMappingURL=Subreddit.b1f1ad1997fc25f3cf0c.js.map
