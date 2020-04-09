@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c00c28414e85d65394b4.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.abdf41764e56818445d0.js
+// Retrieved at 4/9/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -506,7 +506,7 @@
 					ProfileSnoobuilder: "09091ca686761330a9a9",
 					"vendors~MembershipPaywallPage": "31d6cfe0d16ae931b73c",
 					"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "f2d0128a6a3ca09401e7",
-					MembershipPaywallPage: "2a526876936439e64a42",
+					MembershipPaywallPage: "baa3f4ef9f8039d2f386",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
 					"Chat~RedesignChat": "3884c02cd52d52bca727",
 					RedesignChat: "31d6cfe0d16ae931b73c",
@@ -930,7 +930,7 @@
 						FrontpageSidebar: "30346e1d99ed1a1af1cb",
 						Frontpage: "f8a69f61ed238a2d0533",
 						Topic: "f7c99cb79d11b8f36291",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "6f6fe1619281822798c4",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "9fb75f69946ca3674f06",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "08318cbf9f3d726b72d6",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "b0fea5f5851bb13f0811",
 						PostDraft: "e861b6b14950fe5e014f",
@@ -982,7 +982,7 @@
 						ProfileSnoobuilder: "0be544ff95c50cf56899",
 						"vendors~MembershipPaywallPage": "4e8477ad35890bb4b9a2",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "b5762e50bd183dc39ec6",
-						MembershipPaywallPage: "9dfdab8865c045c5a0a9",
+						MembershipPaywallPage: "f2632247cf2d2a5932dc",
 						"vendors~Chat~RedesignChat": "5c6c446f6e045bc3c01b",
 						"Chat~RedesignChat": "42851c667209338ae247",
 						RedesignChat: "aa538921747f4605b0e2",
@@ -1202,4 +1202,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.c00c28414e85d65394b4.js.map
+//# sourceMappingURL=runtime~Reddit.abdf41764e56818445d0.js.map
