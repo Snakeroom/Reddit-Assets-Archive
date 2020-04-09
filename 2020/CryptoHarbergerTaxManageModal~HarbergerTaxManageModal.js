@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.bbd4595df1eb778f1f73.js
-// Retrieved at 4/9/2020, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.aa8ca0173096db658e68.js
+// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -41,17 +41,17 @@
 		"./src/reddit/actions/harbergerTax/thunkedActions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return x
+				return g
 			})), n.d(t, "b", (function() {
-				return f
+				return x
 			})), n.d(t, "c", (function() {
-				return I
+				return f
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/isEmpty.js"),
 				s = n.n(r),
-				a = n("./src/app/strings/index.ts"),
-				o = n("./src/reddit/actions/governance/errorToast.ts"),
+				a = n("./src/reddit/actions/governance/errorToast.ts"),
+				o = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
 				d = n("./src/reddit/actions/structuredStyles/index.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
 				i = n("./src/config.ts"),
@@ -71,82 +71,82 @@
 			}
 			var m = n("./src/reddit/models/Toast/index.ts"),
 				p = n("./src/reddit/selectors/gov.ts"),
-				b = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/actions/harbergerTax/actionCreators.ts");
-			const x = () => async (e, t) => {
-				const n = Object(b.O)(t());
+				b = n("./node_modules/fbt/lib/FbtPublic.js");
+			const g = () => async (e, t) => {
 				e(Object(c.e)({
 					kind: m.b.Error,
-					text: Object(a.a)(n, "gov.harberger.banner.uploadError")
+					text: b.fbt._("Could not upload image", null, {
+						hk: "2t0F9P"
+					})
 				}))
-			}, f = e => async (t, n, r) => {
+			}, x = e => async (t, n, r) => {
 				let {
 					apiContext: s
 				} = r;
 				const {
-					subredditId: a
-				} = e, d = n().user.account, c = Object(p.c)(n(), {
-					subredditId: a
+					subredditId: d
+				} = e, c = n().user.account, i = Object(p.c)(n(), {
+					subredditId: d
 				});
-				if (!d) return;
-				const i = d.displayText || "";
-				t(Object(g.f)({
+				if (!c) return;
+				const l = c.displayText || "";
+				t(Object(o.f)({
 					productId: "mainHeader",
-					subredditId: a
+					subredditId: d
 				}));
-				const l = await u(s(), {
-					subredditId: a,
+				const m = await u(s(), {
+					subredditId: d,
 					price: e.currentPrice,
 					products: [{
 						newPrice: e.newPrice,
-						owner: c && c.owner || "",
-						ownerId: c && c.ownerId || ""
+						owner: i && i.owner || "",
+						ownerId: i && i.ownerId || ""
 					}]
 				});
-				l.ok ? (t(Object(g.g)({
+				m.ok ? (t(Object(o.g)({
 					productId: "mainHeader",
-					subredditId: a,
+					subredditId: d,
 					mainHeader: {
-						owner: i,
-						ownerId: d.id,
+						owner: l,
+						ownerId: c.id,
 						price: e.newPrice || e.currentPrice,
-						content: c ? c.content : {}
+						content: i ? i.content : {}
 					}
-				})), t(Object(g.c)({
-					subredditId: a
-				}))) : (t(Object(g.d)({
+				})), t(Object(o.c)({
+					subredditId: d
+				}))) : (t(Object(o.d)({
 					productId: "mainHeader",
-					subredditId: a,
-					error: l.error
-				})), Object(o.a)(t, l.error))
-			}, I = e => async (t, n, r) => {
+					subredditId: d,
+					error: m.error
+				})), Object(a.a)(t, m.error))
+			}, f = e => async (t, n, r) => {
 				let {
-					apiContext: a
+					apiContext: c
 				} = r;
 				const {
-					subredditId: c
-				} = e, m = n().user.account, b = Object(p.c)(n(), {
-					subredditId: c
-				}), x = n().structuredStyles.models[c];
-				if (!m || !b) return;
-				const f = m.displayText || "",
+					subredditId: m
+				} = e, b = n().user.account, g = Object(p.c)(n(), {
+					subredditId: m
+				}), x = n().structuredStyles.models[m];
+				if (!b || !g) return;
+				const f = b.displayText || "",
 					I = [],
-					v = void 0 !== e.newPrice && b.price !== e.newPrice,
+					v = void 0 !== e.newPrice && g.price !== e.newPrice,
 					j = function(e, t, n) {
 						const r = {};
 						return e && e.bannerBackgroundImage !== t.bannerBackgroundImage && t.bannerBackgroundImage !== n.bannerBackgroundImage ? r.bannerBackgroundImage = t.bannerBackgroundImage : !e && t.bannerBackgroundImage && (r.bannerBackgroundImage = t.bannerBackgroundImage), e && e.bannerBackgroundImagePosition === t.bannerBackgroundImagePosition || (r.bannerBackgroundImagePosition = t.bannerBackgroundImagePosition), r
-					}(b.content, e.content, x),
+					}(g.content, e.content, x),
 					h = !s()(j);
-				(v || h) && t(Object(g.i)({
+				(v || h) && t(Object(o.i)({
 					productId: "mainHeader",
-					subredditId: c
-				})), v ? I.push(u(a(), {
-					subredditId: c,
+					subredditId: m
+				})), v ? I.push(u(c(), {
+					subredditId: m,
 					price: e.currentPrice,
 					products: [{
 						newPrice: e.newPrice,
-						owner: b.owner || "",
-						ownerId: b.ownerId || ""
+						owner: g.owner || "",
+						ownerId: g.ownerId || ""
 					}]
 				})) : I.push(Promise.resolve()), h && I.push(function(e, t) {
 					return Object(l.a)(e, {
@@ -160,49 +160,49 @@
 							}
 						}
 					})
-				}(a(), {
-					subredditId: c,
+				}(c(), {
+					subredditId: m,
 					content: j
 				}));
 				const [O, C] = await Promise.all(I);
-				v && O.ok && h && C.ok ? (t(Object(g.j)({
+				v && O.ok && h && C.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
-					subredditId: c,
+					subredditId: m,
 					mainHeader: {
 						owner: f,
-						ownerId: m.id,
-						price: e.newPrice || b.price,
+						ownerId: b.id,
+						price: e.newPrice || g.price,
 						content: e.content
 					}
 				})), t(Object(d.l)({
-					subredditId: c,
+					subredditId: m,
 					styles: j
-				}))) : v && O.ok ? (t(Object(g.j)({
+				}))) : v && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
-					subredditId: c,
+					subredditId: m,
 					mainHeader: {
 						owner: f,
-						ownerId: m.id,
-						price: e.newPrice || b.price,
-						content: b.content
+						ownerId: b.id,
+						price: e.newPrice || g.price,
+						content: g.content
 					}
-				})), h && !C.ok && Object(o.a)(t, C.error)) : h && C.ok ? (t(Object(g.j)({
+				})), h && !C.ok && Object(a.a)(t, C.error)) : h && C.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
-					subredditId: c,
+					subredditId: m,
 					mainHeader: {
 						owner: f,
-						ownerId: m.id,
-						price: b.price,
+						ownerId: b.id,
+						price: g.price,
 						content: e.content
 					}
 				})), t(Object(d.l)({
-					subredditId: c,
+					subredditId: m,
 					styles: j
-				})), v && !O.ok && Object(o.a)(t, O.error)) : (v && Object(o.a)(t, O.error), h && (t(Object(g.h)({
+				})), v && !O.ok && Object(a.a)(t, O.error)) : (v && Object(a.a)(t, O.error), h && (t(Object(o.h)({
 					productId: "mainHeader",
-					subredditId: c,
+					subredditId: m,
 					error: O.error
-				})), Object(o.a)(t, C.error)))
+				})), Object(a.a)(t, C.error)))
 			}
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, n) {
@@ -785,4 +785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.bbd4595df1eb778f1f73.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.aa8ca0173096db658e68.js.map

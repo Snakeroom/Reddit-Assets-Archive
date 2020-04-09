@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.45675ecde2b2c94f4e73.js
-// Retrieved at 4/9/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.a45a389582579caaf430.js
+// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5632,16 +5632,20 @@
 		},
 		"./src/reddit/components/Governance/Proposal/NoProposalError/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/i18n/components.tsx"),
-				i = s("./src/reddit/components/Governance/Proposal/NoProposalError/index.m.less"),
-				c = s.n(i);
+			var n = s("./src/lib/classNames/index.ts"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./src/reddit/components/Governance/Proposal/NoProposalError/index.m.less"),
+				i = s.n(a);
+			const {
+				fbt: c
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = function(e) {
-				return o.a.createElement("div", {
-					className: Object(r.a)(c.a.container, e.className)
-				}, o.a.createElement(a.c, null, "Error: Could not load poll"))
+				return r.a.createElement("div", {
+					className: Object(n.a)(i.a.container, e.className)
+				}, c._("Error: Could not load poll", null, {
+					hk: "WWRIU"
+				}))
 			}
 		},
 		"./src/reddit/components/Governance/Proposal/async.ts": function(e, t, s) {
@@ -15505,4 +15509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.45675ecde2b2c94f4e73.js.map
+//# sourceMappingURL=ProfileOverview.a45a389582579caaf430.js.map
