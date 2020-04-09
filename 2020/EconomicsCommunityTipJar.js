@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.0477dd9a532d0de0d265.js
-// Retrieved at 4/2/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.346454de58c11e3dc3f4.js
+// Retrieved at 4/9/2020, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -56,32 +56,36 @@
 				l = s("./src/lib/classNames/index.ts"),
 				u = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx"),
 				m = s("./src/reddit/controls/Button/index.tsx"),
-				p = s("./src/reddit/i18n/components.tsx"),
-				b = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
-				x = s("./src/reddit/models/Payments/index.ts"),
-				f = s("./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less"),
-				h = s.n(f);
+				p = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
+				b = s("./src/reddit/models/Payments/index.ts"),
+				x = s("./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less"),
+				f = s.n(x);
+			const {
+				fbt: h
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var g = Object(u.a)((function(e) {
 					return r.a.createElement(m.f, {
-						className: Object(l.a)(h.a.button, {
+						className: Object(l.a)(f.a.button, {
 							active: e.tooltipIsOpen
 						}),
 						onClick: e.onToggleTooltip
-					}, r.a.createElement(b.a, {
-						className: h.a.icon
-					}), r.a.createElement(p.c, null, "support"))
-				}), x.a.Subreddit),
+					}, r.a.createElement(p.a, {
+						className: f.a.icon
+					}), h._("support", null, {
+						hk: "3PJMdf"
+					}))
+				}), b.a.Subreddit),
 				C = s("./src/reddit/components/RawHTMLDisplay/Listing.tsx"),
 				v = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				y = s("./src/reddit/i18n/utils.ts"),
-				E = s("./src/reddit/selectors/economics.ts"),
-				O = s("./src/reddit/selectors/gov.ts"),
-				w = s("./src/reddit/selectors/subreddit.ts"),
-				T = s("./src/reddit/components/Economics/CommunityTipJar/index.m.less"),
-				j = s.n(T);
-			const I = 1e4,
-				N = 500;
-			class _ extends r.a.Component {
+				y = s("./src/reddit/selectors/economics.ts"),
+				E = s("./src/reddit/selectors/gov.ts"),
+				O = s("./src/reddit/selectors/subreddit.ts"),
+				w = s("./src/reddit/components/Economics/CommunityTipJar/index.m.less"),
+				_ = s.n(w);
+			const {
+				fbt: T
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = 1e4, j = 500;
+			class P extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						loadBufferTimePassed: !1
@@ -90,7 +94,7 @@
 				componentDidMount() {
 					this.props.onFetchDetails(), setTimeout(() => this.setState(() => ({
 						loadBufferTimePassed: !0
-					})), N)
+					})), j)
 				}
 				render() {
 					const {
@@ -101,45 +105,53 @@
 					} = this.props;
 					return t ? r.a.createElement(v.a, {
 						className: this.props.className,
-						title: Object(y.c)("Community Jar")
+						title: T._("Community Jar", null, {
+							hk: "2cynnd"
+						})
 					}, s && s.communityTipsDescription && s.communityTipsDescription.content && s.communityTipsDescription.content.bodyHtml && r.a.createElement("div", {
-						className: j.a.goal
+						className: _.a.goal
 					}, r.a.createElement("div", {
-						className: j.a.goalTitle
-					}, r.a.createElement(p.c, null, "goal")), r.a.createElement(C.a, {
+						className: _.a.goalTitle
+					}, T._("goal", null, {
+						hk: "PyJez"
+					})), r.a.createElement(C.a, {
 						html: s.communityTipsDescription.content.bodyHtml
 					})), e && n ? r.a.createElement("div", {
-						className: j.a.content
+						className: _.a.content
 					}, r.a.createElement(g, {
 						contentId: t.id,
 						subredditId: t.id,
 						targetName: t.displayText
 					}), r.a.createElement("div", {
-						className: j.a.tipJar
+						className: _.a.tipJar
 					}, r.a.createElement("div", {
-						className: j.a.amount
+						className: _.a.amount
 					}, "$", Object(c.a)(Object(a.a)(e, parseInt(e) < I))), r.a.createElement("div", {
-						className: j.a.tipJarDescription
-					}, r.a.createElement(p.c, null, "Community Jar")))) : r.a.createElement("div", {
-						className: j.a.loading
-					}, this.state.loadBufferTimePassed && Object(y.c)("Loading..."))) : null
+						className: _.a.tipJarDescription
+					}, T._("Community Jar", null, {
+						hk: "1MJKEy"
+					})))) : r.a.createElement("div", {
+						className: _.a.loading
+					}, this.state.loadBufferTimePassed && T._("Loading...", null, {
+						hk: "48VeuI"
+					}))) : null
 				}
 			}
-			const P = Object(i.c)({
-				communityTipJarAmount: E.k,
-				subredditAssets: O.l,
-				subreddit: w.P,
+			const N = Object(i.c)({
+				communityTipJarAmount: y.k,
+				subredditAssets: E.l,
+				subreddit: O.P,
 				tipsProportions: (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					return Object(E.y)(e, {
+					return Object(y.y)(e, {
 						subredditId: s,
 						contentId: s
 					})
 				}
 			});
-			t.default = Object(o.b)(P, (e, t) => {
+			t.default = Object(o.b)(N, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -149,7 +161,7 @@
 						contentIds: [s]
 					}))
 				}
-			})(_)
+			})(P)
 		},
 		"./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -434,7 +446,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return j
+				return T
 			})), s.d(t, "c", (function() {
 				return I
 			}));
@@ -535,10 +547,10 @@
 					}, r || e))
 				}
 			}
-			const T = Object(l.b)(O, e => ({
+			const _ = Object(l.b)(O, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(w),
-				j = e => {
+				T = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -548,19 +560,19 @@
 					} = e, i = o.length ? o : r ? [r] : [];
 					return i.length ? d.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => d.a.createElement(T, {
+					}, i.map((e, t) => d.a.createElement(_, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				I = e => d.a.createElement(j, {
+				I = e => d.a.createElement(T, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = T
+			t.b = _
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, s) {
 			"use strict";
@@ -707,15 +719,15 @@
 			})), s.d(t, "s", (function() {
 				return w
 			})), s.d(t, "a", (function() {
-				return T
+				return _
 			})), s.d(t, "f", (function() {
-				return j
+				return T
 			})), s.d(t, "r", (function() {
 				return I
 			})), s.d(t, "n", (function() {
-				return N
+				return j
 			})), s.d(t, "k", (function() {
-				return _
+				return P
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				r = s("./src/reddit/endpoints/governance/crypto.ts"),
@@ -791,18 +803,18 @@
 					const s = O(e, t);
 					return s && s.walletProvider
 				},
-				T = (e, t) => {
+				_ = (e, t) => {
 					const s = w(e, t),
 						n = O(e, t);
 					return s && s.provider || n && n.provider
 				},
-				j = (e, t) => {
-					const s = T(e, t);
+				T = (e, t) => {
+					const s = _(e, t);
 					return s === r.a.Ethereum || s === r.a.Rinkeby
 				},
 				I = (e, t) => {
 					const s = w(e, t),
-						n = T(e, t);
+						n = _(e, t);
 					if (s && !s.inTransition && n === r.a.Stellar) return {
 						address: s.extra && s.extra.issuerAddress || "",
 						decimals: s.extra && s.extra.decimals || 7,
@@ -817,7 +829,7 @@
 						image: i.image
 					}
 				},
-				N = (e, t) => {
+				j = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -828,11 +840,11 @@
 						address: void 0
 					}
 				},
-				_ = (e, t) => {
+				P = (e, t) => {
 					const s = O(e, t);
 					return !!s && !!s.walletProvider && !s.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.0477dd9a532d0de0d265.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.346454de58c11e3dc3f4.js.map
