@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.37c734d4b13f2229bd7f.js
-// Retrieved at 4/9/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.52317cd4bfeed845b2cc.js
+// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -326,9 +326,9 @@
 					to: e.postUrl,
 					className: H.a.button
 				}, n.a.createElement(A, null)),
-				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
-				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
-				z = s.n(D);
+				D = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
+				U = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
+				z = s.n(U);
 			class W extends i.Component {
 				constructor(e) {
 					super(e), this.step = .1, this.max = 1, this.min = 0, this.handleMouseDown = e => {
@@ -433,7 +433,7 @@
 				}
 				return s
 			};
-			const K = r.a.wrapped(U.a, "TooltipControl", Y.a),
+			const K = r.a.wrapped(D.a, "TooltipControl", Y.a),
 				Q = r.a.div("NormalControl", Y.a),
 				q = r.a.wrapped(K, "ControlSnoo", Y.a),
 				X = r.a.wrapped(K, "ControlPlay", Y.a),
@@ -849,37 +849,37 @@
 			const O = e => {
 					const t = Object(N.c)(e, {
 						experimentEligibilitySelector: N.a,
-						experimentName: _.gb
+						experimentName: _.hb
 					});
-					return Object(_.Xb)(t) ? void 0 : t
+					return Object(_.Yb)(t) ? void 0 : t
 				},
-				R = e => e === _.jb.On,
+				R = e => e === _.kb.On,
 				j = e => {
 					const t = Object(N.c)(e, {
 						experimentEligibilitySelector: N.a,
-						experimentName: _.hb
+						experimentName: _.ib
 					});
-					return Object(_.Xb)(t) ? void 0 : t
+					return Object(_.Yb)(t) ? void 0 : t
 				},
-				H = e => e === _.jb.On;
+				H = e => e === _.kb.On;
 			var A = s("./src/reddit/selectors/experiments/utils.ts");
 			const I = Object(m.a)(e => Object(N.c)(e, {
-					experimentName: _.Sb,
+					experimentName: _.Tb,
 					experimentEligibilitySelector: N.a
 				}), A.a),
-				U = Object(m.a)(I, (function(e) {
+				D = Object(m.a)(I, (function(e) {
 					switch (e) {
-						case _.Ub.BufferTwoSeconds:
+						case _.Vb.BufferTwoSeconds:
 							return 2;
-						case _.Ub.BufferFiveSeconds:
+						case _.Vb.BufferFiveSeconds:
 							return 5;
-						case _.Ub.BufferTenSeconds:
+						case _.Vb.BufferTenSeconds:
 							return 10;
 						default:
 							return
 					}
 				}));
-			var D = s("./src/reddit/selectors/media.ts"),
+			var U = s("./src/reddit/selectors/media.ts"),
 				z = s("./src/reddit/selectors/platform.ts"),
 				W = s("./src/reddit/selectors/posts.ts"),
 				G = s("./src/reddit/selectors/user.ts"),
@@ -1188,9 +1188,9 @@
 					d: "M25.4 24c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4.6-1.4 1.4-1.4 1.4.6 1.4 1.4zm5.3 0c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4zm-10.5 0c0 .8-.6 1.4-1.4 1.4s-1.5-.6-1.5-1.4.6-1.4 1.4-1.4 1.5.6 1.5 1.4z"
 				}))),
 				Ie = s("./src/reddit/icons/svgs/VideoPlayNow/index.m.less"),
-				Ue = s.n(Ie);
-			var De = e => d.a.createElement("svg", {
-					className: Object(f.a)(Ue.a.icon, e.className),
+				De = s.n(Ie);
+			var Ue = e => d.a.createElement("svg", {
+					className: Object(f.a)(De.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1312,7 +1312,7 @@
 				Install: d.a.createElement(Re, null),
 				Download: d.a.createElement(Re, null),
 				"Learn More": d.a.createElement(Ae, null),
-				"Play Now": d.a.createElement(De, null),
+				"Play Now": d.a.createElement(Ue, null),
 				"See Menu": d.a.createElement(Ge, null),
 				"Shop Now": d.a.createElement(Je, null),
 				"Sign Up": d.a.createElement(qe, null),
@@ -1419,7 +1419,7 @@
 					autoplayPref: G.b,
 					currentTime: Y.d,
 					currentUser: G.i,
-					isMutedPreference: D.a,
+					isMutedPreference: U.a,
 					isOverlayOpen: z.h,
 					language: G.O,
 					loadTimes: Y.f,
@@ -1428,9 +1428,9 @@
 					muxSamplingBVariant: j,
 					postUrl: W.P,
 					started: Y.i,
-					videoBufferTime: U,
+					videoBufferTime: D,
 					videoBufferVariant: I,
-					volume: D.b
+					volume: U.b
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1798,8 +1798,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("846489d-production", " ").concat(t);
-									return a && (s += " [".concat(_.Sb, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("acd258b-production", " ").concat(t);
+									return a && (s += " [".concat(_.Tb, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2254,4 +2254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.37c734d4b13f2229bd7f.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.52317cd4bfeed845b2cc.js.map

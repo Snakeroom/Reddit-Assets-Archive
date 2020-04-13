@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e3b824d7662f2860257b.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.2cff80f4755238b92188.js
+// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -545,6 +545,7 @@
 							postId: e.link_id,
 							score: e.score,
 							subredditId: e.subreddit_id,
+							treatmentTags: e.treatment_tags,
 							approvedAtUTC: null,
 							approvedBy: null,
 							bannedAtUTC: null,
@@ -2385,4 +2386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.e3b824d7662f2860257b.js.map
+//# sourceMappingURL=ChatPost.2cff80f4755238b92188.js.map

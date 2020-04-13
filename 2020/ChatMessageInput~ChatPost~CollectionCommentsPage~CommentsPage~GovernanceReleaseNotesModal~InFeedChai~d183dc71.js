@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.219c21a34654597a38cf.js
-// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5d9c09214e66e3e88eed.js
+// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1170,7 +1170,7 @@
 			})), n.d(t, "f", (function() {
 				return Y
 			})), n.d(t, "h", (function() {
-				return G
+				return X
 			})), n.d(t, "g", (function() {
 				return K
 			})), n.d(t, "i", (function() {
@@ -1290,8 +1290,8 @@
 					}
 				}),
 				N = n("./src/reddit/constants/experiments.ts"),
-				B = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				M = n("./src/reddit/selectors/subredditMention.ts");
+				M = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				B = n("./src/reddit/selectors/subredditMention.ts");
 			class D extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
@@ -1300,7 +1300,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(B.a)(Object.assign({}, e, {
+						t(Object(M.a)(Object.assign({}, e, {
 							subredditName: n
 						})))
 					}
@@ -1317,9 +1317,9 @@
 			}
 			const H = Object(u.c)(D),
 				R = Object(I.c)({
-					isFeatureFlagEnabled: M.b,
-					isUserInTreatment: M.e,
-					userVariant: M.a
+					isFeatureFlagEnabled: B.b,
+					isUserInTreatment: B.e,
+					userVariant: B.a
 				});
 			var U = Object(v.b)(R)(e => {
 					let {
@@ -1334,12 +1334,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Fb.SmIcon:
+						case N.Gb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Fb.SmIconHc:
+						case N.Gb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1375,7 +1375,7 @@
 					if (!r) return;
 					const o = r.length,
 						i = [];
-					for (let a = 0; a < o; a++) i.push(X(r[a], t, n, a));
+					for (let a = 0; a < o; a++) i.push(G(r[a], t, n, a));
 					return a.a.createElement(c.c, {
 						key: s
 					}, i)
@@ -1397,7 +1397,7 @@
 						const e = o[u].c;
 						e && e.length && i.push(a.a.createElement(c.g, {
 							key: u
-						}, e.map((e, n) => X(e, t, {
+						}, e.map((e, n) => G(e, t, {
 							renderingObjectInfo: r
 						}, n))))
 					}
@@ -1406,7 +1406,7 @@
 						key: s
 					}, i)
 				},
-				X = (e, t, n, s) => {
+				G = (e, t, n, s) => {
 					switch (e.e) {
 						case h.b:
 							return V(e, t, n, s);
@@ -1421,10 +1421,10 @@
 						case h.u:
 							return K(e, t, n, s);
 						case h.z:
-							return G(e, t, n, s)
+							return X(e, t, n, s)
 					}
 				},
-				G = (e, t, n, s) => {
+				X = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1782,12 +1782,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Bb
+						experimentName: s.Cb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Fb.SmIcon || t === s.Fb.SmIconHc
+					return t === s.Gb.SmIcon || t === s.Gb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.219c21a34654597a38cf.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5d9c09214e66e3e88eed.js.map
