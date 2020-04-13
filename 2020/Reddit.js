@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.537783e14b89ffa51c00.js
-// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.df7eb9fd36952a6e1f27.js
+// Retrieved at 4/13/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -7974,16 +7974,18 @@
 				return d
 			})), s.d(t, "m", (function() {
 				return l
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "n", (function() {
 				return m
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "e", (function() {
 				return u
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "j", (function() {
 				return p
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "k", (function() {
 				return h
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "i", (function() {
 				return b
+			})), s.d(t, "f", (function() {
+				return g
 			}));
 			const n = "DEFAULT",
 				a = "",
@@ -7993,33 +7995,34 @@
 				c = "moderating",
 				d = "UPANDCOMING",
 				l = "up-and-coming",
-				m = "/subreddits/leaderboard/",
-				u = {
+				m = "Around the World",
+				u = "/subreddits/leaderboard/",
+				p = {
 					id: a,
 					name: a
 				},
-				p = {
+				h = {
 					id: d,
 					name: l
 				},
-				h = [{
+				b = [{
 					name: "Sports",
 					id: "c1015",
-					path: "".concat(m, "sports/")
+					path: "".concat(u, "sports/")
 				}, {
 					name: "News",
 					id: "c1009",
-					path: "".concat(m, "news/")
+					path: "".concat(u, "news/")
 				}, {
 					name: "Gaming",
 					id: "c1005",
-					path: "".concat(m, "gaming/")
+					path: "".concat(u, "gaming/")
 				}, {
 					name: "Aww",
 					id: "c1000",
-					path: "".concat(m, "aww/")
+					path: "".concat(u, "aww/")
 				}],
-				b = ["Sports", "Gaming", "News", "TV", "Aww", "Memes", "Pics & Gifs", "Travel", "Tech", "Music"]
+				g = ["Sports", "Gaming", "News", "TV", "Aww", "Memes", "Pics & Gifs", "Travel", "Tech", "Music"]
 		},
 		"./src/reddit/contexts/AdminEvents.ts": function(e, t, s) {
 			"use strict";
@@ -12226,4 +12229,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.537783e14b89ffa51c00.js.map
+//# sourceMappingURL=Reddit.df7eb9fd36952a6e1f27.js.map

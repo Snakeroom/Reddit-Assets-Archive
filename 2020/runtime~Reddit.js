@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.eb0a37a54228050d13fc.js
-// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a21122209eb77f0ce5fe.js
+// Retrieved at 4/13/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -927,10 +927,10 @@
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic": "da774f38827548590b57",
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit": "e5931f1c590cd968ab6d",
 						"Frontpage~Subreddit~SubredditWiki": "41404ca4fa95ff0eadb6",
-						FrontpageSidebar: "c7dfec65ab60cddbae35",
+						FrontpageSidebar: "a077901712cea966db81",
 						Frontpage: "f8a69f61ed238a2d0533",
 						Topic: "f7c99cb79d11b8f36291",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "e5f9fa7e0ba5a47195f4",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "5492ae64e61487ce71a6",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "dea5af4c1079eada51d4",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "b0fea5f5851bb13f0811",
 						PostDraft: "e861b6b14950fe5e014f",
@@ -968,7 +968,7 @@
 						"ReportFlow~ReportPage": "8e24223dbb780c0a48df",
 						ReportPage: "04e9444ef67e56d7540d",
 						SubredditHovercard: "d9cf9571506167615cc8",
-						SubredditLeaderboard: "cc292bde38eb61462e1f",
+						SubredditLeaderboard: "3b6511e4e9c2086b78cf",
 						SubredditPremiumPurchaseModal: "61922fe834881a3a1cc1",
 						UserDataRequestPage: "ccc34509c3d01ec32307",
 						UserZoomIntegration: "3359ef8387876ef728ff",
@@ -1202,4 +1202,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.eb0a37a54228050d13fc.js.map
+//# sourceMappingURL=runtime~Reddit.a21122209eb77f0ce5fe.js.map

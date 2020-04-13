@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.cc292bde38eb61462e1f.js
-// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3b6511e4e9c2086b78cf.js
+// Retrieved at 4/13/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -587,8 +587,8 @@
 					}, o.a.createElement(u.a, {
 						onMouseDown: () => e.onSendEventClick("banner", e.categoryName || f.c),
 						to: e.categoryName === f.m ? "".concat(f.e).concat(f.m) : f.e
-					}, o.a.createElement(o.a.Fragment, null, e.categoryName ? (e => e === f.m ? i.fbt._("Up-and-coming Communities", null, {
-						hk: "1K101k"
+					}, o.a.createElement(o.a.Fragment, null, e.categoryName ? (e => e === f.m ? i.fbt._("Communities Around the World", null, {
+						hk: "3aVxNT"
 					}) : o.a.createElement(o.a.Fragment, null, i.fbt._("Top", null, {
 						hk: "4bbkOp"
 					}), o.a.createElement("span", {
@@ -1266,8 +1266,8 @@
 						className: x.a.mainContentHeader
 					}, o.a.createElement("h2", null, o.a.createElement("span", {
 						className: x.a.mainContentHeaderText
-					}, e ? i ? E.fbt._("Up-and-coming Communities", null, {
-						hk: "2O5aO5"
+					}, e ? i ? E.fbt._("Communities Around the World", null, {
+						hk: "1tOXyw"
 					}) : E.fbt._("Today's Top Growing in {categoryName}", [E.fbt._param("categoryName", T()(e))], {
 						hk: "4pneAv"
 					}) : E.fbt._("Today's Top Growing Communities", null, {
@@ -1289,8 +1289,8 @@
 			}
 			var G = Object(m.c)(M(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				V = r.n(K);
+				V = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = r.n(V);
 
 			function U() {
 				return (U = Object.assign || function(e) {
@@ -1308,7 +1308,7 @@
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, i = Object(c.a)(V.a.categoryLink, s && V.a.active, n);
+				} = e, i = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
 				return o.a.createElement("li", null, o.a.createElement(J.a, U({}, t.anchorProps, {
 					className: i,
 					"data-active": s,
@@ -1317,8 +1317,8 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				X = r("./src/reddit/controls/Button/index.tsx"),
+			var X = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				z = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/helpers/name/index.ts"),
 				q = r("./src/reddit/i18n/components.tsx");
 			const $ = 36;
@@ -1361,25 +1361,25 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: m
-					} = this.state, u = !m && d && r * d, p = a + (e ? r * e.length : 0), g = Object(c.a)(V.a.categoryList, m && V.a.expanded), h = e => !(!i || i !== Object(Y.f)(e)), b = o.a.createElement("ul", {
-						className: g,
+					} = this.state, u = !m && d && r * d, g = a + (e ? r * e.length : 0), h = Object(c.a)(K.a.categoryList, m && K.a.expanded), b = e => !(!i || i !== Object(Y.f)(e)), y = o.a.createElement("ul", {
+						className: h,
 						style: {
-							height: u || p
+							height: u || g
 						}
 					}, s, e && e.map((e, n) => {
 						const s = a + n * r;
 						return o.a.createElement(Z, {
 							category: e,
 							className: t,
-							isActive: h(e.name),
+							isActive: b(e.name),
 							key: e.id,
 							onSendEventClick: l,
 							tabIndex: u && s >= u ? -1 : 0
-						}, e.name)
+						}, e.name === p.m ? p.n : e.name)
 					}));
 					return o.a.createElement("div", {
-						className: Object(c.a)(V.a.categoryListContainer, n)
-					}, b)
+						className: Object(c.a)(K.a.categoryListContainer, n)
+					}, y)
 				}
 				render() {
 					const {
@@ -1390,14 +1390,14 @@
 						header: s,
 						headerClassName: a,
 						initialNumberOfCategories: i
-					} = this.props, d = r && i && r.length > i, l = d && !this.state.isExpanded ? "".concat(t, " More") : "".concat(t, " Less"), m = Object(c.a)(n, V.a.container);
-					return o.a.createElement(z.a, {
+					} = this.props, d = r && i && r.length > i, l = d && !this.state.isExpanded ? "".concat(t, " More") : "".concat(t, " Less"), m = Object(c.a)(n, K.a.container);
+					return o.a.createElement(X.a, {
 						className: m,
 						contentOnly: !0
 					}, o.a.createElement("div", {
-						className: Object(c.a)(V.a.header, a)
-					}, o.a.createElement("h2", null, s || o.a.createElement(q.c, null, "Categories"))), this.renderCategoryList(), d && o.a.createElement(X.n, {
-						className: Object(c.a)(V.a.button, e),
+						className: Object(c.a)(K.a.header, a)
+					}, o.a.createElement("h2", null, s || o.a.createElement(q.c, null, "Categories"))), this.renderCategoryList(), d && o.a.createElement(z.n, {
+						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o.a.createElement(q.c, null, l)))
 				}
@@ -1415,7 +1415,7 @@
 					key: e
 				}, e)
 			};
-			var de = e => o.a.createElement(z.a, {
+			var de = e => o.a.createElement(X.a, {
 					className: se.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -1558,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.cc292bde38eb61462e1f.js.map
+//# sourceMappingURL=SubredditLeaderboard.3b6511e4e9c2086b78cf.js.map
