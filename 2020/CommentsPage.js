@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.409b1f78417ffcd40ead.js
-// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7ec2ff5552321857fc3b.js
+// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3294,9 +3294,9 @@
 			const Ot = e => {
 				const t = Object(Ct.c)(e, {
 					experimentEligibilitySelector: Ct.a,
-					experimentName: vt.P
+					experimentName: vt.R
 				});
-				return !(!t || Object(vt.Yb)(t))
+				return !(!t || Object(vt.ac)(t))
 			};
 			var yt = s("./src/reddit/selectors/gild.ts"),
 				Et = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -10729,9 +10729,10 @@
 				r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/reddit/selectors/brandSafety.ts"),
 				a = s("./src/reddit/selectors/comments.ts"),
-				d = s("./src/reddit/selectors/user.ts"),
-				c = s("./src/reddit/components/SidebarAd/BaseSidebarAdDoNotUseOrYoureFired.tsx"),
-				l = function(e, t) {
+				d = s("./src/reddit/selectors/experiments/adsCardViewHoldout.ts"),
+				c = s("./src/reddit/selectors/user.ts"),
+				l = s("./src/reddit/components/SidebarAd/BaseSidebarAdDoNotUseOrYoureFired.tsx"),
+				m = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -10748,7 +10749,7 @@
 				return {
 					canShowAd: Object(i.a)(e, {
 						postId: s
-					}) && !Object(d.x)(e),
+					}) && !Object(c.x)(e) && !Object(d.a)(e),
 					waitForProgrammatic: Object(a.d)(e, {
 						commentsPageKey: n
 					})
@@ -10758,8 +10759,8 @@
 					canShowAd: t,
 					postId: s,
 					commentsPageKey: n
-				} = e, r = l(e, ["canShowAd", "postId", "commentsPageKey"]);
-				return t ? o.a.createElement(c.a, r) : null
+				} = e, r = m(e, ["canShowAd", "postId", "commentsPageKey"]);
+				return t ? o.a.createElement(l.a, r) : null
 			})
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -16245,6 +16246,21 @@
 					return n && n.endCursor || null
 				}
 		},
+		"./src/reddit/selectors/experiments/adsCardViewHoldout.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
+			var n = s("./src/reddit/constants/experiments.ts"),
+				o = s("./src/reddit/constants/postLayout.ts"),
+				r = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				i = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const a = e => o.e[Object(r.M)(e, {})] === o.d.Card,
+				d = e => Object(i.c)(e, {
+					experimentEligibilitySelector: a,
+					experimentName: n.v
+				}) === n.D.Treatment
+		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -16259,4 +16275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.409b1f78417ffcd40ead.js.map
+//# sourceMappingURL=CommentsPage.7ec2ff5552321857fc3b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.28cc4a5fd19a750661cf.js
-// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.cc292bde38eb61462e1f.js
+// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1301,7 +1301,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const X = e => {
+			const Z = e => {
 				const {
 					category: t,
 					children: r,
@@ -1317,8 +1317,8 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var Z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				z = r("./src/reddit/controls/Button/index.tsx"),
+			var z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				X = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/helpers/name/index.ts"),
 				q = r("./src/reddit/i18n/components.tsx");
 			const $ = 36;
@@ -1368,7 +1368,7 @@
 						}
 					}, s, e && e.map((e, n) => {
 						const s = a + n * r;
-						return o.a.createElement(X, {
+						return o.a.createElement(Z, {
 							category: e,
 							className: t,
 							isActive: h(e.name),
@@ -1391,12 +1391,12 @@
 						headerClassName: a,
 						initialNumberOfCategories: i
 					} = this.props, d = r && i && r.length > i, l = d && !this.state.isExpanded ? "".concat(t, " More") : "".concat(t, " Less"), m = Object(c.a)(n, V.a.container);
-					return o.a.createElement(Z.a, {
+					return o.a.createElement(z.a, {
 						className: m,
 						contentOnly: !0
 					}, o.a.createElement("div", {
 						className: Object(c.a)(V.a.header, a)
-					}, o.a.createElement("h2", null, s || o.a.createElement(q.c, null, "Categories"))), this.renderCategoryList(), d && o.a.createElement(z.n, {
+					}, o.a.createElement("h2", null, s || o.a.createElement(q.c, null, "Categories"))), this.renderCategoryList(), d && o.a.createElement(X.n, {
 						className: Object(c.a)(V.a.button, e),
 						onClick: this.toggleExpanded
 					}, o.a.createElement(q.c, null, l)))
@@ -1415,7 +1415,7 @@
 					key: e
 				}, e)
 			};
-			var de = e => o.a.createElement(Z.a, {
+			var de = e => o.a.createElement(z.a, {
 					className: se.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -1469,7 +1469,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				Ee = Object(u.Xb)(p.f),
+				Ee = Object(u.Zb)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(he.c)(e, {
 						categoriesOrder: Ee
@@ -1558,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.28cc4a5fd19a750661cf.js.map
+//# sourceMappingURL=SubredditLeaderboard.cc292bde38eb61462e1f.js.map
