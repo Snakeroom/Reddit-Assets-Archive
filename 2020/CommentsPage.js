@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7ec2ff5552321857fc3b.js
-// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.82989e2fe501e82b276c.js
+// Retrieved at 4/14/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10625,9 +10625,6 @@
 				w = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(g.B)(e.media) && e.media.content)),
 				P = e => !!e && e.isBlank,
 				I = [{
-					img: "/img/house-ads/old_recipes.png",
-					href: "/r/old_recipes"
-				}, {
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
 				}, {
@@ -16275,4 +16272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.7ec2ff5552321857fc3b.js.map
+//# sourceMappingURL=CommentsPage.82989e2fe501e82b276c.js.map

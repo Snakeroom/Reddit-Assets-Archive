@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.41404ca4fa95ff0eadb6.js
-// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.83467cbb8f69e9b5fdd2.js
+// Retrieved at 4/14/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -26,10 +26,10 @@
 				p = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				h = s("./src/reddit/helpers/trackers/ads.ts"),
 				y = s("./src/reddit/components/BannerAd/index.m.less"),
-				f = s.n(y),
-				g = s("./src/lib/lessComponent.tsx");
-			const x = g.a.div("Container", f.a),
-				v = g.a.div("LoadingHitbox", f.a),
+				x = s.n(y),
+				f = s("./src/lib/lessComponent.tsx");
+			const g = f.a.div("Container", x.a),
+				v = f.a.div("LoadingHitbox", x.a),
 				O = e => setTimeout(() => {
 					throw e
 				}, 0);
@@ -98,7 +98,7 @@
 						slot: t,
 						className: s
 					} = this.props;
-					return t ? r.a.createElement(x, {
+					return t ? r.a.createElement(g, {
 						"data-slot": t
 					}, r.a.createElement(v, {
 						key: "".concat(e, "-loadinghitbox"),
@@ -231,9 +231,9 @@
 				p = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				h = s("./src/reddit/helpers/adCount/index.ts"),
 				y = s("./src/reddit/models/Media/index.ts"),
-				f = s("./src/reddit/components/SidebarAd/BaseSidebarAdDoNotUseOrYoureFired.m.less"),
-				g = s.n(f),
-				x = s("./src/lib/lessComponent.tsx");
+				x = s("./src/reddit/components/SidebarAd/BaseSidebarAdDoNotUseOrYoureFired.m.less"),
+				f = s.n(x),
+				g = s("./src/lib/lessComponent.tsx");
 			const v = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-SidebarNativeAd",
@@ -265,9 +265,9 @@
 					pending: e => !e.sidebarPromotedPosts.firstFetch
 				}),
 				_ = Object(c.b)(O),
-				S = x.a.wrapped(m.a, "BannerAd", g.a),
-				C = x.a.wrapped(p.a, "ThemedWidget", g.a),
-				E = x.a.div("SidebarAdPlaceholder", g.a),
+				S = g.a.wrapped(m.a, "BannerAd", f.a),
+				C = g.a.wrapped(p.a, "ThemedWidget", f.a),
+				E = g.a.div("SidebarAdPlaceholder", f.a),
 				N = (e, t, s) => {
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
@@ -275,9 +275,6 @@
 				j = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(y.B)(e.media) && e.media.content)),
 				B = e => !!e && e.isBlank,
 				A = [{
-					img: "/img/house-ads/old_recipes.png",
-					href: "/r/old_recipes"
-				}, {
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
 				}, {
@@ -505,15 +502,15 @@
 				}
 				return s
 			};
-			const f = p.a.button("IconButton", u.a),
-				g = p.a.wrapped(d.a, "SubscribeIcon", u.a),
-				x = p.a.wrapped(c.a, "UnsubscribeIcon", u.a),
+			const x = p.a.button("IconButton", u.a),
+				f = p.a.wrapped(d.a, "SubscribeIcon", u.a),
+				g = p.a.wrapped(c.a, "UnsubscribeIcon", u.a),
 				v = p.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
 					} = e, n = y(e, ["border", "small"]);
-					return a.a.createElement(f, n, a.a.createElement(g, {
+					return a.a.createElement(x, n, a.a.createElement(f, {
 						className: Object(b.a)(n.className, {
 							[u.a.isSmall]: s
 						})
@@ -555,7 +552,7 @@
 						small: n,
 						type: r
 					} = e, o = y(e, ["border", "language", "small", "type"]);
-					return a.a.createElement(f, o, a.a.createElement(x, {
+					return a.a.createElement(x, o, a.a.createElement(g, {
 						className: Object(b.a)(i.n, o.className, {
 							[u.a.isSmall]: n
 						})
@@ -770,9 +767,9 @@
 					}
 				})(s("./src/reddit/components/SubscribeButton/Base.tsx").a),
 				y = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				f = s("./src/reddit/constants/componentSizes.ts"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				x = s("./src/reddit/constants/componentSizes.ts"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				g = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				v = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				O = s("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
 				_ = s("./src/reddit/models/Flair/index.ts"),
@@ -798,7 +795,7 @@
 					widgetKind: e.widget && e.widget.kind
 				}, a.a.createElement("div", {
 					className: E.a.container
-				}, e.isLoading ? a.a.createElement(x.a, {
+				}, e.isLoading ? a.a.createElement(g.a, {
 					className: E.a.loadingIcon,
 					sizePx: 32
 				}) : a.a.createElement(a.a.Fragment, null, e.isError ? a.a.createElement("p", {
@@ -820,7 +817,7 @@
 					useTertiaryButton: e.useTertiaryButton,
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
-				})))), e.bottomButtonText && e.onBottomButtonClick && a.a.createElement(g.n, {
+				})))), e.bottomButtonText && e.onBottomButtonClick && a.a.createElement(f.n, {
 					className: E.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
@@ -830,7 +827,7 @@
 				A = Object(i.b)(B)(e => a.a.createElement("div", {
 					className: E.a.communityItemContainer
 				}, a.a.createElement(O.a, {
-					widthRight: f.t
+					widthRight: x.t
 				}, a.a.createElement("div", {
 					className: E.a.iconContainer
 				}, e.communityIcon || e.iconUrl ? a.a.createElement("img", {
@@ -859,10 +856,10 @@
 						type: _.f.Nsfw,
 						text: "nsfw"
 					}
-				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? a.a.createElement(x.a, {
+				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? a.a.createElement(g.a, {
 					className: Object(d.a)(E.a.communityCta, E.a.smallLoadingIcon),
 					sizePx: 12
-				}) : a.a.createElement(g.n, {
+				}) : a.a.createElement(f.n, {
 					className: Object(d.a)(E.a.communityCta, {
 						[E.a.showOnHover]: e.showTertiaryButtonOnHover
 					}),
@@ -1046,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.41404ca4fa95ff0eadb6.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.83467cbb8f69e9b5fdd2.js.map
