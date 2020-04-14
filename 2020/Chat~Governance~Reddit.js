@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b49ca76a6927fbf98198.js
-// Retrieved at 4/14/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b27390a74355d13160cd.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10168,6 +10168,7 @@
 					EMPTY: "Empty",
 					DASHBOARD: "UiDashboard",
 					FRONTPAGE: "Frontpage",
+					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "MetaCommunityPointsLearnMorePage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "MetaMemberhipPaywallPage",
 					MULTIREDDIT: "Multireddit",
 					OVER18: "Over18",
@@ -10471,6 +10472,7 @@
 					DUPLICATES: "duplicates",
 					EXPLORE: "explore",
 					EMAIL_VERIFICATION: "emailVerification",
+					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "metaCommunityPointsLearnMorePage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "metaMembershipPaywallPage",
 					MULTIREDDIT: "multireddit",
 					SETTINGS: "settings",
@@ -10988,14 +10990,14 @@
 					}))
 				},
 				U = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("f223b23-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("116abd7-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f223b23-production",
+						release: "116abd7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new s.Integrations.Breadcrumbs({
@@ -11357,7 +11359,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f223b23-production",
+							releaseClient: "116abd7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -23142,13 +23144,13 @@
 					}), i
 				}),
 				f = Object(s.a)(h, g, (e, t) => !e || !r()(t) && 0 === t.subreddits.length),
-				b = Object(s.a)(u.d, c.y, (e, t) => e.map(e => Object(a.c)(e, t))),
+				b = Object(s.a)(u.e, c.y, (e, t) => e.map(e => Object(a.c)(e, t))),
 				w = Object(s.a)(h, g, f, e => e.subredditAutocomplete.api.pending, (e, t, i, n) => {
 					if (i) return !1;
 					let r = !1;
 					return _(e, e => n.hasOwnProperty(e) ? (r = n[e], !1) : (!t || t.key !== e) && void 0), r
 				}),
-				y = Object(s.a)(h, u.d, (e, t) => t.filter(t => -1 !== t.name.toLowerCase().indexOf(e))),
+				y = Object(s.a)(h, u.e, (e, t) => t.filter(t => -1 !== t.name.toLowerCase().indexOf(e))),
 				v = Object(s.a)(p, (e, t) => t.includeUserProfile, c.i, (e, t, i) => {
 					if (!t || r()(i) || Object(o.d)(e)) return null;
 					const n = Object(o.f)(Object(l.f)(i)),
@@ -23537,31 +23539,34 @@
 		},
 		"./src/reddit/selectors/subscriptions.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "e", (function() {
+			i.d(t, "f", (function() {
 				return o
-			})), i.d(t, "f", (function() {
-				return d
-			})), i.d(t, "d", (function() {
-				return a
-			})), i.d(t, "c", (function() {
-				return l
-			})), i.d(t, "a", (function() {
-				return u
 			})), i.d(t, "b", (function() {
+				return d
+			})), i.d(t, "g", (function() {
+				return a
+			})), i.d(t, "e", (function() {
+				return l
+			})), i.d(t, "d", (function() {
+				return u
+			})), i.d(t, "a", (function() {
 				return c
+			})), i.d(t, "c", (function() {
+				return m
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/posts.ts"),
 				s = i("./src/lib/objectSelector/index.ts");
 			const o = e => e.subscriptions.api.fetched,
-				d = Object(s.a)(e => {
+				d = e => e.subscriptions.subredditOrder,
+				a = Object(s.a)(e => {
 					const {
 						profileOrder: t,
 						subredditOrder: i
 					} = e.subscriptions;
 					return [...i, ...t]
 				}),
-				a = (Object(s.a)(e => {
+				l = (Object(s.a)(e => {
 					const {
 						profileOrder: t,
 						subredditOrder: i
@@ -23579,12 +23584,12 @@
 					for (const n of t) e[n] && i.push(e[n]);
 					return i
 				}))),
-				l = Object(s.a)(Object(n.a)(e => e.profiles.models, e => e.subscriptions.profileOrder, (e, t) => {
+				u = Object(s.a)(Object(n.a)(e => e.profiles.models, e => e.subscriptions.profileOrder, (e, t) => {
 					if (!t || !t.length) return [];
 					return t.map(t => e[t])
 				})),
-				u = e => e.subscriptions.favoriteSubredditOrder,
-				c = (Object(s.a)(e => {
+				c = e => e.subscriptions.favoriteSubredditOrder,
+				m = (Object(s.a)(e => {
 					const {
 						favoriteSubredditOrder: t,
 						favoriteProfileOrder: i
@@ -28283,4 +28288,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.b49ca76a6927fbf98198.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.b27390a74355d13160cd.js.map

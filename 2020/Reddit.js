@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.284c1d11c07c4e6575dd.js
-// Retrieved at 4/14/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a01f58032278ef822aec.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -798,6 +798,17 @@
 				a = s("./src/reddit/actions/notifications/constants.ts"),
 				r = s("./src/reddit/featureFlags/index.ts");
 			const o = e => r.d.pushNotificationsBrowserSupported(e) ? Object(n.a)() ? window.Notification && window.ServiceWorker && window.PushManager && window.navigator.serviceWorker ? a.f.NotificationsSupported : a.f.NotAllRequiredAPIsSupported : a.f.LocalStorageUnavailable : a.f.BrowserUnsupported
+		},
+		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, s) {
+			"use strict";
+			var n = s("./src/reddit/actions/subscription/index.ts"),
+				a = s("./src/reddit/actions/users.ts"),
+				r = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				o = s("./src/reddit/selectors/user.ts");
+			t.a = () => async (e, t) => {
+				let s = t();
+				Object(o.G)(s) || await e(Object(a.u)()), s = t(), Object(o.G)(s) ? await e(Object(n.e)()) : Object(r.a)(e, s)
+			}
 		},
 		"./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts": function(e, t, s) {
 			"use strict";
@@ -10275,7 +10286,7 @@
 				en = s("./src/reddit/routes/subredditLeaderboard/index.ts"),
 				tn = s("./src/reddit/routes/subredditWiki/index.ts"),
 				sn = s("./src/reddit/routes/topic/index.ts");
-			var nn = [ms.a, us.a, ps.a, hs.a, Us, Ws, Qs, ...ls.a, ...bs.a, vs, ...Es.a, Ls.a, ys.a, Os.a, Rs.a, As.a, ...Ts, xs, js.a, _s.a, Ms.a, ks.c, ws.a, Fs.a, Bs.a, Hs.a, Gs.a, Vs.a, qs.a, zs.a, ...Ys.a, ...Js, Ks.a, ...tn.a, sn.a, Xs.a, $s.a, en.a, Ss.a, Zs.a, ...gs],
+			var nn = [ms.a, us.a, ps.a, hs.a, Us, Ws, Qs, ...ls.a, ...bs.a, vs, ...Es.a, Ls.a, ys.a, Os.a, Rs.a, As.a, ...Ts, xs, ...js.a, _s.a, Ms.a, ks.c, ws.a, Fs.a, Bs.a, Hs.a, Gs.a, Vs.a, qs.a, zs.a, ...Ys.a, ...Js, Ks.a, ...tn.a, sn.a, Xs.a, $s.a, en.a, Ss.a, Zs.a, ...gs],
 				an = s("./src/reddit/constants/experiments.ts"),
 				rn = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				on = s("./src/reddit/selectors/experiments/utils.ts");
@@ -11072,39 +11083,67 @@
 			"use strict";
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = s("./src/lib/constants/index.ts"),
-				r = s("./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts");
-			const o = ["/web/special-membership/:subredditName", "/web/membership/:subredditName"],
-				i = Object(n.a)({
-					resolved: {},
-					chunkName: () => "MembershipPaywallPage",
-					isReady(e) {
-						const t = this.resolve(e);
-						return !1 !== this.resolved[t] && !!s.m[t]
-					},
-					importAsync: () => Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("vendors~MembershipPaywallPage"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("GovernanceTransferPointsModal~MembershipPaywallPage"), s.e("MembershipPaywallPage")]).then(s.bind(null, "./src/reddit/pages/meta/MembershipPaywallPage/index.tsx")),
-					requireAsync(e) {
-						const t = this.resolve(e);
-						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-					},
-					requireSync(e) {
-						const t = this.resolve(e);
-						return s(t)
-					},
-					resolve() {
-						return "./src/reddit/pages/meta/MembershipPaywallPage/index.tsx"
-					}
-				}),
-				c = {
+				r = s("./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts"),
+				o = s("./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts");
+			const i = {
 					action: r.a,
+					chunk: a.p.META_COMMUNITY_POINTS_LEARN_MORE_PAGE,
+					component: Object(n.a)({
+						resolved: {},
+						chunkName: () => "CommunityPointsLearnMore",
+						isReady(e) {
+							const t = this.resolve(e);
+							return !1 !== this.resolved[t] && !!s.m[t]
+						},
+						importAsync: () => Promise.all([s.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"), s.e("CommunityPointsLearnMore")]).then(s.bind(null, "./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.tsx")),
+						requireAsync(e) {
+							const t = this.resolve(e);
+							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+						},
+						requireSync(e) {
+							const t = this.resolve(e);
+							return s(t)
+						},
+						resolve() {
+							return "./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.tsx"
+						}
+					}),
+					exact: !0,
+					meta: {
+						name: a.zb.META_COMMUNITY_POINTS_LEARN_MORE_PAGE
+					},
+					path: ["/community-points/"]
+				},
+				c = {
+					action: o.a,
 					chunk: a.p.META_MEMBERSHIP_PAYWALL_PAGE,
-					component: i,
+					component: Object(n.a)({
+						resolved: {},
+						chunkName: () => "MembershipPaywallPage",
+						isReady(e) {
+							const t = this.resolve(e);
+							return !1 !== this.resolved[t] && !!s.m[t]
+						},
+						importAsync: () => Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("vendors~MembershipPaywallPage"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("GovernanceTransferPointsModal~MembershipPaywallPage"), s.e("MembershipPaywallPage")]).then(s.bind(null, "./src/reddit/pages/meta/MembershipPaywallPage/index.tsx")),
+						requireAsync(e) {
+							const t = this.resolve(e);
+							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+						},
+						requireSync(e) {
+							const t = this.resolve(e);
+							return s(t)
+						},
+						resolve() {
+							return "./src/reddit/pages/meta/MembershipPaywallPage/index.tsx"
+						}
+					}),
 					exact: !0,
 					meta: {
 						name: a.zb.META_MEMBERSHIP_PAYWALL_PAGE
 					},
-					path: o
+					path: ["/web/special-membership/:subredditName", "/web/membership/:subredditName"]
 				};
-			t.a = c
+			t.a = [i, c]
 		},
 		"./src/reddit/routes/modQueue/index.ts": function(e, t, s) {
 			"use strict";
@@ -11706,7 +11745,7 @@
 							const t = this.resolve(e);
 							return !1 !== this.resolved[t] && !!s.m[t]
 						},
-						importAsync: () => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("vendors~Settings~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-G~d7381b87"), s.e("ProfileModeration~Settings~SubredditCreation"), s.e("AuthorHovercard~Settings~SubredditWiki"), s.e("Settings")]).then(s.bind(null, "./src/reddit/pages/Settings/index.tsx")),
+						importAsync: () => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"), s.e("ProfileModeration~Settings~SubredditCreation"), s.e("AuthorHovercard~Settings~SubredditWiki"), s.e("Settings")]).then(s.bind(null, "./src/reddit/pages/Settings/index.tsx")),
 						requireAsync(e) {
 							const t = this.resolve(e);
 							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -12227,4 +12266,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.284c1d11c07c4e6575dd.js.map
+//# sourceMappingURL=Reddit.a01f58032278ef822aec.js.map

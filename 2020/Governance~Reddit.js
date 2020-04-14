@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.941f04fabf01e8647fa4.js
-// Retrieved at 4/14/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ff38adec6fa974fbe6e6.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -12676,7 +12676,7 @@
 							}), t(A({
 								subreddits: o,
 								profiles: c
-							})), !Object(h.e)(n())) {
+							})), !Object(h.f)(n())) {
 							const e = (e => {
 								const t = e.filter(e => e.user_is_subscriber);
 								return {
@@ -16407,7 +16407,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(j.b)(d()),
+							subscriptionsCount: Object(j.c)(d()),
 							userIsSubscriber: t,
 							widgetId: n
 						})), (await ((e, t) => {
@@ -16455,7 +16455,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(j.b)(d()),
+							subscriptionsCount: Object(j.c)(d()),
 							userIsSubscriber: !t,
 							widgetId: n
 						}));
@@ -50609,4 +50609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.941f04fabf01e8647fa4.js.map
+//# sourceMappingURL=Governance~Reddit.ff38adec6fa974fbe6e6.js.map

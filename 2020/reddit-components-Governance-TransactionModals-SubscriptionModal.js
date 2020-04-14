@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.73e6a1339ac79b5a4f4a.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b451a12fd3a4add9c027.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, n) {
@@ -122,7 +122,7 @@
 					className: d.a.qrCode
 				}, s.a.createElement(c.a, {
 					url: i
-				})), s.a.createElement("div", {
+				})), t && s.a.createElement("div", {
 					className: d.a.amount
 				}, t))))
 			}))
@@ -146,64 +146,76 @@
 				d = n("./src/reddit/components/Governance/Token/index.tsx"),
 				l = n("./src/reddit/helpers/governance/tokens.ts"),
 				m = n("./src/reddit/selectors/gov.ts"),
-				u = n("./src/reddit/selectors/user.ts"),
-				p = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
-				b = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
-				h = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
-				x = n.n(h);
+				u = n("./src/reddit/selectors/subreddit.ts"),
+				p = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
+				h = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
+				x = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
+				_ = n.n(x);
 			const {
-				fbt: _
+				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const v = Object(r.c)({
+			const E = Object(r.c)({
+				subredditName: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					const a = Object(u.P)(e, {
+						subredditId: n
+					});
+					return a && a.name || ""
+				},
 				tokenDisplayConversion: m.o,
 				tokenName: m.p,
 				userId: e => {
-					const t = Object(u.i)(e);
+					const t = Object(p.i)(e);
 					return t ? t.id : ""
 				}
 			});
-			t.default = Object(o.b)(v)((function(e) {
+			t.default = Object(o.b)(E)((function(e) {
 				const {
 					onClose: t,
 					price: n,
 					subredditId: a,
-					tokenDisplayConversion: o,
-					tokenName: r,
-					userId: m
+					subredditName: o,
+					tokenDisplayConversion: r,
+					tokenName: m,
+					userId: u
 				} = e;
-				return s.a.createElement(p.a, {
+				return s.a.createElement(b.a, {
 					onClose: t,
-					title: _._("Continue in the Mobile App", null, {
+					title: v._("Continue in the Mobile App", null, {
 						hk: "3seGfx"
 					}),
-					header: _._("Approve this transaction with Reddit Wallet", null, {
+					header: v._("Approve this transaction with Reddit Wallet", null, {
 						hk: "3BTiO3"
 					}),
-					content: s.a.createElement(s.a.Fragment, null, s.a.createElement(b.a, {
+					content: s.a.createElement(s.a.Fragment, null, s.a.createElement(h.a, {
 						index: "1"
-					}, _._("Scan the QR code with your Camera app", null, {
+					}, v._("Scan the QR code with your Camera app", null, {
 						hk: "DeLcL"
-					})), s.a.createElement(b.a, {
+					})), s.a.createElement(h.a, {
 						index: "2"
-					}, _._("Use that link to open your Wallet in the Reddit app", null, {
+					}, v._("Use that link to open your Wallet in the Reddit app", null, {
 						hk: "3BW2M8"
-					})), s.a.createElement(b.a, {
+					})), s.a.createElement(h.a, {
 						index: "3"
-					}, _._("Approve the transaction to start your monthly membership subscription", null, {
+					}, v._("Approve the transaction to start your monthly membership subscription", null, {
 						hk: "1XiP6x"
 					}))),
 					qrUrl: Object(c.a)("http://www.reddit.com/wallet/subscribe", {
-						u: m,
-						s: a
+						u,
+						s: a,
+						sn: o
 					}),
 					amount: s.a.createElement("div", {
-						className: x.a.amount
+						className: _.a.amount
 					}, s.a.createElement("div", null, s.a.createElement(d.a, {
-						className: x.a.tokenIcon,
+						className: _.a.tokenIcon,
 						subredditId: a
 					})), s.a.createElement("div", {
-						className: x.a.total
-					}, _._("{price} /mo", [_._param("price", Object(i.a)(Object(l.b)(n, o)) + " " + r)], {
+						className: _.a.total
+					}, v._("{price} /mo", [v._param("price", Object(i.a)(Object(l.b)(n, r)) + " " + m)], {
 						hk: "2sgoC6"
 					})))
 				})
@@ -211,4 +223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.73e6a1339ac79b5a4f4a.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.b451a12fd3a4add9c027.js.map

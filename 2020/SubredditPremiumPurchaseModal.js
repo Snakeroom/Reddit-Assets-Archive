@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.b73ac661dda0ed28a8d2.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.5b079ab4b52f84406cc9.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -177,7 +177,9 @@
 				w = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less"),
 				P = r.n(w);
 			const O = "subreddit-premium-purchase-braintree",
-				N = (e, t, r) => "\n  ".concat(s.fbt.param("communityName", e.displayText), " ").concat(s.fbt.param("membershipAlt", r.membershipAlt), ".\n  $").concat(s.fbt.param("price", Object(d.a)(t, !0)), "/month, automatically renews on a monthly basis.\n  Cancel anytime. There are no refunds for partial months.\n");
+				N = (e, t, r) => s.fbt._("{communityName} {membershipAlt}. ${price}/month, automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.", [s.fbt._param("communityName", e.displayText), s.fbt._param("membershipAlt", r.membershipAlt), s.fbt._param("price", Object(d.a)(t, !0))], {
+					hk: "3q2JqJ"
+				});
 			class v extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -706,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.b73ac661dda0ed28a8d2.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.5b079ab4b52f84406cc9.js.map

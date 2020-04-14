@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.c9e070fda592abe15206.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.8d5fc390a8d7053e71fe.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(A, t, e) {
@@ -80,8 +80,8 @@
 				x = e("./src/reddit/controls/Button/index.tsx"),
 				p = e("./src/reddit/endpoints/economics/banners.ts"),
 				I = e("./src/reddit/icons/svgs/Close/index.tsx"),
-				b = e("./src/reddit/selectors/economics.ts"),
-				u = e("./src/reddit/selectors/gov.ts"),
+				u = e("./src/reddit/selectors/economics.ts"),
+				b = e("./src/reddit/selectors/gov.ts"),
 				h = e("./src/reddit/selectors/subreddit.ts"),
 				C = e("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				S = e("./src/reddit/components/Governance/ClaimPointsBanner/banner-image.json"),
@@ -164,12 +164,12 @@
 					let {
 						subredditId: e
 					} = t;
-					return !1 === Object(b.h)(A, e, p.a.ClaimPoints)
+					return !1 === Object(u.h)(A, e, p.a.ClaimPoints)
 				},
-				claimablePoints: b.i,
-				karmaEarnedForClaimablePoints: b.o,
+				claimablePoints: u.i,
+				karmaEarnedForClaimablePoints: u.o,
 				subreddit: h.P,
-				tokenName: u.p
+				tokenName: b.p
 			});
 			t.default = Object(a.b)(X, (A, t) => {
 				let {
@@ -242,7 +242,7 @@
 					const t = this.resolve(A);
 					return !1 !== this.resolved[t] && !!e.m[t]
 				},
-				importAsync: () => Promise.all([e.e("vendors~Settings~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-G~d7381b87"), e.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(e.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				importAsync: () => Promise.all([e.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"), e.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(e.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
 				requireAsync(A) {
 					const t = this.resolve(A);
 					return this.resolved[t] = !1, this.importAsync(A).then(A => (this.resolved[t] = !0, A))
@@ -405,9 +405,9 @@
 			})), e.d(t, "g", (function() {
 				return I
 			})), e.d(t, "h", (function() {
-				return b
-			})), e.d(t, "i", (function() {
 				return u
+			})), e.d(t, "i", (function() {
+				return b
 			})), e.d(t, "j", (function() {
 				return h
 			})), e.d(t, "p", (function() {
@@ -475,7 +475,7 @@
 					} : o
 				},
 				I = (A, t) => t && t.subredditId ? (A.user.wallets[t.subredditId] || {}).latest : void 0,
-				b = (A, t) => {
+				u = (A, t) => {
 					if (Object(r.a)(A)) {
 						const t = Object(a.g)(A);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
@@ -488,7 +488,7 @@
 					}
 					return e
 				},
-				u = (A, t) => {
+				b = (A, t) => {
 					return (A.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
 				h = (A, t) => {
@@ -551,4 +551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.c9e070fda592abe15206.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.8d5fc390a8d7053e71fe.js.map

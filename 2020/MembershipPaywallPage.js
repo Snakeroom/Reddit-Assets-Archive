@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.6be220b3d64133663b67.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9482ff6ded0cdc7d9e61.js
+// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -381,7 +381,9 @@
 				j = a("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less"),
 				v = a.n(j);
 			const C = "subreddit-premium-purchase-braintree",
-				N = (e, t, a) => "\n  ".concat(s.fbt.param("communityName", e.displayText), " ").concat(s.fbt.param("membershipAlt", a.membershipAlt), ".\n  $").concat(s.fbt.param("price", Object(m.a)(t, !0)), "/month, automatically renews on a monthly basis.\n  Cancel anytime. There are no refunds for partial months.\n");
+				N = (e, t, a) => s.fbt._("{communityName} {membershipAlt}. ${price}/month, automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.", [s.fbt._param("communityName", e.displayText), s.fbt._param("membershipAlt", a.membershipAlt), s.fbt._param("price", Object(m.a)(t, !0))], {
+					hk: "3q2JqJ"
+				});
 			class O extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -640,7 +642,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!a.m[t]
 				},
-				importAsync: () => Promise.all([a.e("vendors~Settings~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-G~d7381b87"), a.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(a.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
+				importAsync: () => Promise.all([a.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"), a.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(a.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1787,8 +1789,8 @@
 				W = a("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"),
 				H = a("./src/reddit/icons/svgs/FormattingSpoiler/index.tsx"),
 				Z = a("./src/reddit/icons/svgs/FormattingStrikethrough/index.tsx"),
-				V = a("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"),
-				q = a("./src/reddit/icons/svgs/FormattingTable/index.tsx"),
+				q = a("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"),
+				V = a("./src/reddit/icons/svgs/FormattingTable/index.tsx"),
 				U = a("./src/reddit/icons/svgs/FormattingUnorderedList/index.tsx"),
 				K = a("./src/reddit/icons/svgs/Gif/index.tsx"),
 				J = a("./src/reddit/icons/svgs/Smile/index.tsx"),
@@ -2130,13 +2132,13 @@
 						className: me.a.icon
 					}), o.a.createElement(D.a, {
 						className: me.a.icon
-					}), o.a.createElement(V.a, {
+					}), o.a.createElement(q.a, {
 						className: me.a.icon
 					}), o.a.createElement(H.a, {
 						className: me.a.icon
 					}), o.a.createElement("div", {
 						className: me.a.divider
-					}), o.a.createElement(q.a, {
+					}), o.a.createElement(V.a, {
 						className: me.a.icon
 					}), o.a.createElement(U.a, {
 						className: me.a.icon
@@ -2702,7 +2704,7 @@
 					})))
 				}
 			}
-			const Ve = Object(n.c)({
+			const qe = Object(n.c)({
 				loyaltyBadges: (e, t) => {
 					let {
 						subreddit: a
@@ -2719,7 +2721,7 @@
 					return Object(O.w)(e, a.id)
 				}
 			});
-			var qe = Object(r.b)(Ve)(Ze),
+			var Ve = Object(r.b)(qe)(Ze),
 				Ue = a("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				Ke = a("./src/reddit/pages/meta/MembershipPaywallPage/FAQ/index.m.less"),
 				Je = a.n(Ke);
@@ -3143,10 +3145,10 @@
 						}) : ""
 					}
 				}),
-				Vt = Object(r.b)(Zt),
-				qt = Object(dt.t)(),
+				qt = Object(r.b)(Zt),
+				Vt = Object(dt.t)(),
 				Ut = Object(h.c)(Ht);
-			var Kt = Object(lt.a)("spPremium", Object(ct.a)(qt(Vt(Ut)))),
+			var Kt = Object(lt.a)("spPremium", Object(ct.a)(Vt(qt(Ut)))),
 				Jt = a("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Products/index.m.less"),
 				Qt = a.n(Jt);
 
@@ -3856,7 +3858,7 @@
 						className: Da.a.whatDoYouGet,
 						correlationId: this.correlationId,
 						subreddit: t
-					}), o.a.createElement(qe, {
+					}), o.a.createElement(Ve, {
 						className: Da.a.benefits,
 						correlationId: this.correlationId,
 						subreddit: t
@@ -3937,4 +3939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.6be220b3d64133663b67.js.map
+//# sourceMappingURL=MembershipPaywallPage.9482ff6ded0cdc7d9e61.js.map
