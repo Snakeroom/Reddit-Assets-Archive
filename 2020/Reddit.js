@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.325ee1e29bc40de213aa.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.284c1d11c07c4e6575dd.js
+// Retrieved at 4/14/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4527,20 +4527,18 @@
 							})
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
-						if (this.props.dropdownIsOpen || !this.props.subreddit) {
-							if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser && !this.props.subreddit) {
-								const e = Object(Ht.v)(this.props.currentUser.id);
-								e.length > 0 && (this.setState({
-									recentSearches: this.props.isLoggedIn ? e : [],
-									itemList: [...e, ...this.props.trendingItems]
-								}), e.forEach(e => {
-									this.onSendDropdownViewEvent(H.SearchDropdownNouns.Recent, H.StructureType.Recent, e.searchQuery)
-								})), this.props.trendingItems.length > 0 && this.props.trendingItems.forEach(e => {
-									this.onSendDropdownViewEvent(H.SearchDropdownNouns.Trending, H.StructureType.Trending, e.searchQuery)
-								})
-							}
-							this.props.onToggleDropdown()
+						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
+							const e = Object(Ht.v)(this.props.currentUser.id);
+							e.length > 0 && (this.setState({
+								recentSearches: this.props.isLoggedIn ? e : [],
+								itemList: [...e, ...this.props.trendingItems]
+							}), e.forEach(e => {
+								this.onSendDropdownViewEvent(H.SearchDropdownNouns.Recent, H.StructureType.Recent, e.searchQuery)
+							})), this.props.trendingItems.length > 0 && this.props.trendingItems.forEach(e => {
+								this.onSendDropdownViewEvent(H.SearchDropdownNouns.Trending, H.StructureType.Trending, e.searchQuery)
+							})
 						}
+						this.props.onToggleDropdown()
 					}, this.onFormSubmit = e => {
 						e.preventDefault(), this.onSearch(e);
 						const t = this.props.searchOptions || Object(Ga.c)({});
@@ -12229,4 +12227,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.325ee1e29bc40de213aa.js.map
+//# sourceMappingURL=Reddit.284c1d11c07c4e6575dd.js.map
