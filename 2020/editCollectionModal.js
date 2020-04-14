@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.d3389f2ee035a2aaef8a.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.897de2e14912f82c2b03.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -30,9 +30,9 @@
 		},
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, n) {
 			e.exports = {
-				postEventMeta: "UORiCb6Mik-agLw97Owil",
 				Metadata: "YxCA1Mpgi_ThsEnFr_EFv",
-				metadata: "YxCA1Mpgi_ThsEnFr_EFv"
+				metadata: "YxCA1Mpgi_ThsEnFr_EFv",
+				postEventMeta: "UORiCb6Mik-agLw97Owil"
 			}
 		},
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx": function(e, t, n) {
@@ -608,10 +608,10 @@
 			e.exports = {
 				FormPage: "_9ZuQyDXhFth1qKJF4KNm8",
 				formPage: "_9ZuQyDXhFth1qKJF4KNm8",
-				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
-				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				HomePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
+				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -701,15 +701,15 @@
 				modalInput: "_2-UQO_nq1P8ACGIq0yZJRz",
 				Input: "_1BJV17HgWhhC-BxrpqGjM",
 				input: "_1BJV17HgWhhC-BxrpqGjM",
-				iconStyles: "_349rJ1BueyeldYiZniwYOz",
-				RadioOn: "_2tv2vEpNmUbYbUPoOrSuAh",
-				radioOn: "_2tv2vEpNmUbYbUPoOrSuAh",
-				RadioOff: "_23-RdhX276B0bg5nrt0cpf",
-				radioOff: "_23-RdhX276B0bg5nrt0cpf",
 				Checkbox: "_29ZBtSa05ZCR4Sj1modCls",
 				checkbox: "_29ZBtSa05ZCR4Sj1modCls",
 				CheckboxSelected: "_1UmPxfh5dZu-x2VK6n61BM",
 				checkboxSelected: "_1UmPxfh5dZu-x2VK6n61BM",
+				iconStyles: "_349rJ1BueyeldYiZniwYOz",
+				RadioOff: "_23-RdhX276B0bg5nrt0cpf",
+				radioOff: "_23-RdhX276B0bg5nrt0cpf",
+				RadioOn: "_2tv2vEpNmUbYbUPoOrSuAh",
+				radioOn: "_2tv2vEpNmUbYbUPoOrSuAh",
 				Textarea: "_2gchCc4pmLk-CHEErYmFaP",
 				textarea: "_2gchCc4pmLk-CHEErYmFaP",
 				StyledLabel: "_3X0DVhTjHSRuQBMvaWD4N",
@@ -984,6 +984,7 @@
 			e.exports = {
 				iconFont: "WxKparxaBCy4-EWML7xc3",
 				approveIcon: "MAe2tslj1FAD6GliiZ3it",
+				calendarIcon: "_2YXLfgRGcJoCJROcTAGqir",
 				commentIcon: "_3ch9jJ0painNf41PmU4F9i",
 				lockIcon: "XHMWG1CPWX8RXeNg-o5-R",
 				modActions: "_3phKxmomoio9ulzAoL4XhZ",
@@ -993,7 +994,6 @@
 				shareIcon: "xwmljjCrovDE5C9MasZja",
 				spamIcon: "_1Gn6JH0U8GJtJXSIc54IMU",
 				stickyIcon: "hMF1wBi2Z6Lh9zHskfhX1",
-				calendarIcon: "_2YXLfgRGcJoCJROcTAGqir",
 				adminIcon: "_3ACtZ0jvC5KDN8RNxR0lXX",
 				archivedIcon: "_2trXhUAJMhIhxp8a2zvOVP",
 				liveIcon: "_3cdJ6BHH65ws78AzuO0KLw"
@@ -1048,4 +1048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.d3389f2ee035a2aaef8a.js.map
+//# sourceMappingURL=editCollectionModal.897de2e14912f82c2b03.js.map

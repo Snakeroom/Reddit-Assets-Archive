@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.8d2a7a605e691f87240c.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.8043b3ff57806ea083ec.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -287,8 +287,8 @@
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.m.less": function(e, t, r) {
 			e.exports = {
-				singleLineText: "_3vV5Hg-hZiDuQVXYnhgzdZ",
 				collectionTitle: "BKuPdCEiKWhUuAAZSV8Hu",
+				singleLineText: "_3vV5Hg-hZiDuQVXYnhgzdZ",
 				description: "_3K0DQ21Q-wH4kETiMxiaNo",
 				fullWidth: "_1HsWtVhofw3GuWXgyObfz4",
 				info: "_30GDKdvss889YcOkeQXbVz",
@@ -510,4 +510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.8d2a7a605e691f87240c.js.map
+//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.8043b3ff57806ea083ec.js.map

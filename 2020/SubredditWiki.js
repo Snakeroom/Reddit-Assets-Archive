@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.4dc7640009fcb7cc109a.js
-// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.bf8ad56214664f485cd5.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1212,10 +1212,10 @@
 			e.exports = {
 				authorLinkStyles: "_23wugcdiaj44hdfugIAlnX",
 				isUnstyled: "oQctV4n0yUb0uiHDdGnmE",
-				isOp: "_1uBAPhkb8ZOA-9p_B6inAR",
 				isAdmin: "_1-wk-QXxJ0S4snrasETuaA",
 				isAdminEmeritus: "sKTYSQHxlRLbA-0pCpguU",
 				isMod: "_1VChcviPF84MLFsL2xfBCP",
+				isOp: "_1uBAPhkb8ZOA-9p_B6inAR",
 				isStrong: "_2YPMtQeUrWhVZuFXPpgmXz",
 				isLivestreaming: "_3otDgT22VIln-JT-1XwFbr",
 				deletedAuthorLink: "lizQBHVukyun2S2babj-l"
@@ -1443,10 +1443,10 @@
 				privateSubredditName: "_3boUKJ5E--k1_9nH886_Wr",
 				Link: "o4oSRcSrppMzf__hxJKxn",
 				link: "o4oSRcSrppMzf__hxJKxn",
-				LinkRouterButton: "_2zJbrt0pYl6tbRsmVW0peX",
-				linkRouterButton: "_2zJbrt0pYl6tbRsmVW0peX",
 				LinkButton: "_1_UhYZsTnAQbBONlhaTTMS",
 				linkButton: "_1_UhYZsTnAQbBONlhaTTMS",
+				LinkRouterButton: "_2zJbrt0pYl6tbRsmVW0peX",
+				linkRouterButton: "_2zJbrt0pYl6tbRsmVW0peX",
 				SecondaryLinkRouterButton: "rDOqrXOt4-jCKENSEQG_N",
 				secondaryLinkRouterButton: "rDOqrXOt4-jCKENSEQG_N",
 				SecondaryLinkButton: "i2sTp1duDdXdwoKi1l8ED",
@@ -1457,10 +1457,10 @@
 				image: "_1jefpljVGT-eHObg40F8Dm",
 				ImagePlaceholder: "yIkP2FaSTqFA_kLFyyH1d",
 				imagePlaceholder: "yIkP2FaSTqFA_kLFyyH1d",
-				LeftLinkRouterButton: "_2V3wnL5o-KBHbU_hs7cMof",
-				leftLinkRouterButton: "_2V3wnL5o-KBHbU_hs7cMof",
 				LeftLinkButton: "_3cs2bzZ9PGS1kcZc2r7vdP",
 				leftLinkButton: "_3cs2bzZ9PGS1kcZc2r7vdP",
+				LeftLinkRouterButton: "_2V3wnL5o-KBHbU_hs7cMof",
+				leftLinkRouterButton: "_2V3wnL5o-KBHbU_hs7cMof",
 				SecondaryLeftLinkButton: "_3t2KyZopmra_0R16z-1xwr",
 				secondaryLeftLinkButton: "_3t2KyZopmra_0R16z-1xwr",
 				SecondaryLeftLinkRouterButton: "y7s2WWxfdEzMhMm2mjo-G",
@@ -1836,10 +1836,10 @@
 				footerContainer: "_3qDK09Tb3ktpZiYXSfeMzE",
 				UserAgreement: "_2qv_r3Tr8ZqOWkU9s1qRfw",
 				userAgreement: "_2qv_r3Tr8ZqOWkU9s1qRfw",
-				UserAgreementLink: "vzd9DQ5W5uhRFvqy1_xKh",
-				userAgreementLink: "vzd9DQ5W5uhRFvqy1_xKh",
 				PrivacyLink: "_2mk2nvnRu7inPdJY2i-H79",
-				privacyLink: "_2mk2nvnRu7inPdJY2i-H79"
+				privacyLink: "_2mk2nvnRu7inPdJY2i-H79",
+				UserAgreementLink: "vzd9DQ5W5uhRFvqy1_xKh",
+				userAgreementLink: "vzd9DQ5W5uhRFvqy1_xKh"
 			}
 		},
 		"./src/reddit/components/Governance/CommunityCard/async.tsx": function(e, t, n) {
@@ -2543,7 +2543,6 @@
 				bodyWrapper: "TRQWddBXkEbkcG_ubUuna",
 				mediaWrapper: "_1Gl3uwbMHh5VhlU0JATHu0",
 				textWrapper: "YH565aQWcKKY53qc9qHsm",
-				meta: "_363wpVC6QeLO7Vq0SwQcOg",
 				metaWrapper: "_232eNhzD3iKHOssx14WnYG",
 				thumbnail: "_3ot5Uav1x5Oa8hH19Mlogk",
 				trendingPost: "_3GfG_jvS9X-90Q_8zU4uCu",
@@ -2556,6 +2555,7 @@
 				description: "_2Jjv0TAohMSydVpAgyhjhA",
 				flexSpacer: "_2X1uOOj7bjYyM2hV3o5Eou",
 				flair: "_1efPRBcLSuPJJM0TacTA5c",
+				meta: "_363wpVC6QeLO7Vq0SwQcOg",
 				backgroundWrapper: "_3HD3Y7jXWPyFxKKnIJCHq3",
 				innerContainer: "_UTUAdpYopauDszuTA48r",
 				relatedSubredditMetaData: "_2JhihdjWU24No-68VLJ7D-",
@@ -3259,9 +3259,9 @@
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, n) {
 			e.exports = {
 				metaNavLink: "_3K8jBMDp0QPnKaJK8FVP6a",
+				navLink: "_1O30sSXmfkKMRZqSaESf0S",
 				navLinkStyles: "_2NJL-agPg8YnfLMLdMbED5",
 				subNavTitle: "_2wtKbmW1aPrT3MyHoaupQh",
-				navLink: "_1O30sSXmfkKMRZqSaESf0S",
 				topBannerVariant: "uGdFXCHH-nwVp4gU3UaTw",
 				mActive: "_1YpJV_aDQqujwuofx9-eAX",
 				navDropdownIcon: "_3u_CcXw7slod9vNJKIlYvx",
@@ -6225,4 +6225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.4dc7640009fcb7cc109a.js.map
+//# sourceMappingURL=SubredditWiki.bf8ad56214664f485cd5.js.map

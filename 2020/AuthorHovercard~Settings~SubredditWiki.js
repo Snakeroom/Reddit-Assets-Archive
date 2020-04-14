@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.b4cb303b8d83858b4b3b.js
-// Retrieved at 4/8/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.ce26a4737823ec556a74.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -401,10 +401,10 @@
 				userNameMetaData: "_1wu7a98opA-mU9WUQpJIuF",
 				GildedLastMonthDisplay: "_19NlUDUSw7ra6wC0luJwKV",
 				gildedLastMonthDisplay: "_19NlUDUSw7ra6wC0luJwKV",
-				MetaDataItem: "RcL4UXH2ABHT3YpYzu3ms",
-				metaDataItem: "RcL4UXH2ABHT3YpYzu3ms",
 				Bullet: "_2dfF2p_dwLpL5C-8pAvdbL",
 				bullet: "_2dfF2p_dwLpL5C-8pAvdbL",
+				MetaDataItem: "RcL4UXH2ABHT3YpYzu3ms",
+				metaDataItem: "RcL4UXH2ABHT3YpYzu3ms",
 				UserNameContainer: "J9OjkO5NR8gsgJUQrk2Ft",
 				userNameContainer: "J9OjkO5NR8gsgJUQrk2Ft",
 				UserInfoContainer: "_3l7ptRjFJYo-fcXXajRpqn",
@@ -930,4 +930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.b4cb303b8d83858b4b3b.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.ce26a4737823ec556a74.js.map

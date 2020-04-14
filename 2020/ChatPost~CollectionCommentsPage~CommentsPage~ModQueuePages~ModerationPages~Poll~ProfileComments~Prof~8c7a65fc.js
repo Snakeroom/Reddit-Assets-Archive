@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.2751487bae3ee7f39058.js
-// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.12dea8dda8176245b6e3.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -28,10 +28,10 @@
 			e.exports = {
 				authorLinkStyles: "_23wugcdiaj44hdfugIAlnX",
 				isUnstyled: "oQctV4n0yUb0uiHDdGnmE",
-				isOp: "_1uBAPhkb8ZOA-9p_B6inAR",
 				isAdmin: "_1-wk-QXxJ0S4snrasETuaA",
 				isAdminEmeritus: "sKTYSQHxlRLbA-0pCpguU",
 				isMod: "_1VChcviPF84MLFsL2xfBCP",
+				isOp: "_1uBAPhkb8ZOA-9p_B6inAR",
 				isStrong: "_2YPMtQeUrWhVZuFXPpgmXz",
 				isLivestreaming: "_3otDgT22VIln-JT-1XwFbr",
 				deletedAuthorLink: "lizQBHVukyun2S2babj-l"
@@ -1107,9 +1107,9 @@
 				icon: "_2kj4VmBwjxriyYFAErhLcT",
 				badge: "_2v3rPYFjifVGM7CfOh1dOl",
 				container: "_3AStxql1mQsrZuUIFP9xSg",
-				premiumIcon: "_6W0v52Yp6BzEfoWlrczS8",
-				contractorIcon: "MMQAY3zdk1u4R9hIKTklf",
 				adminIcon: "s46mo3ittWDxpPuCSXJ_T",
+				contractorIcon: "MMQAY3zdk1u4R9hIKTklf",
+				premiumIcon: "_6W0v52Yp6BzEfoWlrczS8",
 				crosspostIcon: "_3hh-iGjzOv78L_7t_PUHev",
 				link: "eQgJJIfdY4JNXam_N622j",
 				publicWallet: "SxdIdV2SgMWcIFG6Qsk0Q",
@@ -1710,4 +1710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.2751487bae3ee7f39058.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.12dea8dda8176245b6e3.js.map

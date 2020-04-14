@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.90a1879e22b2a3a2eddf.js
-// Retrieved at 4/13/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.f50e69d34604b185ca31.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -123,10 +123,10 @@
 				copyLink: "_2YI4WNXQggeYH_OgKGsYrK",
 				ViewTypeContainer: "_2xW_f6aU9tFU02mRmzFAn9",
 				viewTypeContainer: "_2xW_f6aU9tFU02mRmzFAn9",
-				Expand: "_37blXg4MXvkJEtr2nXu72_",
-				expand: "_37blXg4MXvkJEtr2nXu72_",
 				Collapse: "_1YeF_dvBY_9fiPp6qiukkU",
 				collapse: "_1YeF_dvBY_9fiPp6qiukkU",
+				Expand: "_37blXg4MXvkJEtr2nXu72_",
+				expand: "_37blXg4MXvkJEtr2nXu72_",
 				KeyValuePair: "pz35GewT1bdvra8ousYCX",
 				keyValuePair: "pz35GewT1bdvra8ousYCX",
 				CollpasedObjectPreview: "_2aOfSq-4wq02cDifp1j8rm",
@@ -227,12 +227,12 @@
 				content: "_iF_2yUP3PhPF2-NXYdD8",
 				Controls: "_2LpvpdjlFQJr_YahMor7PN",
 				controls: "_2LpvpdjlFQJr_YahMor7PN",
-				Close: "_2ktQeNmfgeAwOsy560ZaGu",
-				close: "_2ktQeNmfgeAwOsy560ZaGu",
 				ArrowCollapse: "VTRHGuADISRh13IoCIJ-j",
 				arrowCollapse: "VTRHGuADISRh13IoCIJ-j",
 				ArrowExpand: "_3saq4hAmO63jGKW4ch4Gz2",
-				arrowExpand: "_3saq4hAmO63jGKW4ch4Gz2"
+				arrowExpand: "_3saq4hAmO63jGKW4ch4Gz2",
+				Close: "_2ktQeNmfgeAwOsy560ZaGu",
+				close: "_2ktQeNmfgeAwOsy560ZaGu"
 			}
 		},
 		"./src/reddit/components/AdminPanel/index.tsx": function(e, t, n) {
@@ -1446,4 +1446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.90a1879e22b2a3a2eddf.js.map
+//# sourceMappingURL=AdminPanel.f50e69d34604b185ca31.js.map

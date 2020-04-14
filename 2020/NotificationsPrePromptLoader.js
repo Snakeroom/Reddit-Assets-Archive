@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.f1a32be5a9353c3b6cf8.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.88721764475ba3799b41.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, r) {
@@ -33,4 +33,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=NotificationsPrePromptLoader.f1a32be5a9353c3b6cf8.js.map
+//# sourceMappingURL=NotificationsPrePromptLoader.88721764475ba3799b41.js.map

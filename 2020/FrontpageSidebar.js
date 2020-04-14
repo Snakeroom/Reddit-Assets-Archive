@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a077901712cea966db81.js
-// Retrieved at 4/13/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.795b83a4dd85722f4930.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -952,4 +952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.a077901712cea966db81.js.map
+//# sourceMappingURL=FrontpageSidebar.795b83a4dd85722f4930.js.map

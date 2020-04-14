@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatEmpty.ffb7ad7ad9594bf63cf3.js
-// Retrieved at 3/10/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatEmpty.b833d894d7dc1b6b36de.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatEmpty"], {
 		"./src/chat/components/EmptyState/index.m.less": function(e, t, a) {
@@ -30,7 +30,9 @@
 		},
 		"./src/chat/pages/Empty.tsx": function(e, t, a) {
 			"use strict";
-			a.r(t);
+			a.r(t), a.d(t, "default", (function() {
+				return X
+			}));
 			var n = a("./node_modules/react/index.js"),
 				r = a.n(n),
 				s = a("./node_modules/fbt/lib/FbtPublic.js"),
@@ -72,9 +74,6 @@
 			}), " ", s.fbt._("New Chat", null, {
 				hk: "1fS294"
 			})))))));
-			a.d(t, "default", (function() {
-				return X
-			}));
 			class X extends r.a.Component {
 				render() {
 					return r.a.createElement(L, null)
@@ -83,4 +82,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatEmpty.ffb7ad7ad9594bf63cf3.js.map
+//# sourceMappingURL=ChatEmpty.b833d894d7dc1b6b36de.js.map

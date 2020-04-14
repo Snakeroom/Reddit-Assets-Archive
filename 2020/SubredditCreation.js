@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.c10777401916f606c91c.js
-// Retrieved at 4/8/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.9c2a2d868d5b76718b93.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -165,7 +165,6 @@
 				sublabel: "_3iEQMbJzyCJP7q0YQLg6j4",
 				subtitle: "_1NkQ5U2m0s_6vOfhCgiIgT",
 				radioDescription: "_2VfO_j9K0NqNwA6JyAl8Dk",
-				metaFieldDescription: "fd5WCBCH7kTLTlNepW054",
 				buttonContainer: "rktXqe6ilbY86M7UI5N0",
 				isOverlay: "_2-RGOjReVDKqocc0lhfKCD",
 				field: "lzEa7-AzGmC9abTt7-RJG",
@@ -176,10 +175,11 @@
 				nsfw: "_hnZsl3c6qOjy4qOD9r0R",
 				createButton: "rJOmFCS_DMZSRltlKtpyt",
 				pendingText: "oXus6jwjzhkeznWdE45YL",
+				metaFieldDescription: "fd5WCBCH7kTLTlNepW054",
 				numCommunityTopicsSelected: "_1QES7ND3zudXR2epk08OVa",
 				subtextContainer: "_1V23LtWm6tqb0xlD1Xkh-W",
-				radioContent: "luCqkz2vQaP-L_NeDD98b",
 				radioContainer: "_3qUROz4qvkxCG-oEJTkW3x",
+				radioContent: "luCqkz2vQaP-L_NeDD98b",
 				fullWidthTextContainer: "_2jvToia6nJCdTHqp_Tw_fp",
 				Info: "cP738yi9DxlBmCQTtFLop",
 				info: "cP738yi9DxlBmCQTtFLop",
@@ -187,10 +187,10 @@
 				radioOption: "_2uqw2bfrk5pQeRVMtPVRUR",
 				StyledTooltip: "_3mMji3dmYN3jsQ2Ri0owBm",
 				styledTooltip: "_3mMji3dmYN3jsQ2Ri0owBm",
-				RadioIcon: "_1vr9rsoGcISz-S6s7p_6s-",
-				radioIcon: "_1vr9rsoGcISz-S6s7p_6s-",
 				Public: "_3fiOvK-VXqZ9cZO0d912xA",
 				public: "_3fiOvK-VXqZ9cZO0d912xA",
+				RadioIcon: "_1vr9rsoGcISz-S6s7p_6s-",
+				radioIcon: "_1vr9rsoGcISz-S6s7p_6s-",
 				Restricted: "_3RYKKCLydFkeZVJov0xebO",
 				restricted: "_3RYKKCLydFkeZVJov0xebO",
 				Private: "_19fLjAFVy42ZR2vocDvgUW",
@@ -707,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.c10777401916f606c91c.js.map
+//# sourceMappingURL=SubredditCreation.9c2a2d868d5b76718b93.js.map

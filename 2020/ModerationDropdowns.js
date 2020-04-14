@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.46902f7c2e79a72ac6a4.js
-// Retrieved at 4/9/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.87dfc9e987d0cf84d68a.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -12,20 +12,20 @@
 				activeReportIcon: "_2PbiVXRQ59T8F7WkkcmNJJ",
 				ChevronDown: "_1K34tAjeMu5wwkF99T5U5N",
 				chevronDown: "_1K34tAjeMu5wwkF99T5U5N",
+				iconStyles: "KzVJcOJnWakQs6yTjNYG1",
 				IgnoreReport: "heUDQXPPxJ8ilm83gzEOL",
 				ignoreReport: "heUDQXPPxJ8ilm83gzEOL",
 				ReportIcon: "GFTfF_oGSdBjkBx808plH",
 				reportIcon: "GFTfF_oGSdBjkBx808plH",
-				iconStyles: "KzVJcOJnWakQs6yTjNYG1",
 				ReportsContainer: "_3p5RUX-xUh-Z5ajgM1VO9u",
 				reportsContainer: "_3p5RUX-xUh-Z5ajgM1VO9u",
 				collapseReports: "_38db2AwPYQmVZVN7aI39nE",
 				Button: "_38jNHw-Fx74ukOx-fzwEzP",
 				button: "_38jNHw-Fx74ukOx-fzwEzP",
-				Reports: "BvzGzzQ_gL4MGFqyaQ3zC",
-				reports: "BvzGzzQ_gL4MGFqyaQ3zC",
 				NumReports: "_4TK2s77zuWq2GpAmqfk1o",
-				numReports: "_4TK2s77zuWq2GpAmqfk1o"
+				numReports: "_4TK2s77zuWq2GpAmqfk1o",
+				Reports: "BvzGzzQ_gL4MGFqyaQ3zC",
+				reports: "BvzGzzQ_gL4MGFqyaQ3zC"
 			}
 		},
 		"./src/reddit/components/ModModeReports/_ModModeReports.tsx": function(e, t, s) {
@@ -426,10 +426,10 @@
 				listContainer: "VHCAEHBEuD8bln8MDFl35",
 				Icon: "_3WbGqnEpw_ds1P508Qawma",
 				icon: "_3WbGqnEpw_ds1P508Qawma",
-				DropdownRow: "x_9o8pHUgKrlsT51QhLnG",
-				dropdownRow: "x_9o8pHUgKrlsT51QhLnG",
 				CheckboxMenuItem: "_9csa2XobkeFZUX8Fc_FNY",
-				checkboxMenuItem: "_9csa2XobkeFZUX8Fc_FNY"
+				checkboxMenuItem: "_9csa2XobkeFZUX8Fc_FNY",
+				DropdownRow: "x_9o8pHUgKrlsT51QhLnG",
+				dropdownRow: "x_9o8pHUgKrlsT51QhLnG"
 			}
 		},
 		"./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx": function(e, t, s) {
@@ -830,9 +830,9 @@
 		},
 		"./src/reddit/controls/CheckboxMenuItem/index.m.less": function(e, t, s) {
 			e.exports = {
-				sharedIconStyles: "_19iKCOTFpWIyFwZ0bqQhg",
 				checkbox: "_2zOuGd5s9dLeXmKJ8TJF9T",
 				checkboxSelected: "LevaZhN5EO7Pei7YvAi1W",
+				sharedIconStyles: "_19iKCOTFpWIyFwZ0bqQhg",
 				checkboxMenuItem: "_2eawLPCtwzvTZhWKtaUgZQ",
 				expandRight: "_34Odk7t6y-rCPxPcYJa4Nw",
 				postCheckboxMenuItem: "_3LyKu57c-QkPvlFvAgWop5"
@@ -1244,6 +1244,7 @@
 			e.exports = {
 				iconFont: "WxKparxaBCy4-EWML7xc3",
 				approveIcon: "MAe2tslj1FAD6GliiZ3it",
+				calendarIcon: "_2YXLfgRGcJoCJROcTAGqir",
 				commentIcon: "_3ch9jJ0painNf41PmU4F9i",
 				lockIcon: "XHMWG1CPWX8RXeNg-o5-R",
 				modActions: "_3phKxmomoio9ulzAoL4XhZ",
@@ -1253,7 +1254,6 @@
 				shareIcon: "xwmljjCrovDE5C9MasZja",
 				spamIcon: "_1Gn6JH0U8GJtJXSIc54IMU",
 				stickyIcon: "hMF1wBi2Z6Lh9zHskfhX1",
-				calendarIcon: "_2YXLfgRGcJoCJROcTAGqir",
 				adminIcon: "_3ACtZ0jvC5KDN8RNxR0lXX",
 				archivedIcon: "_2trXhUAJMhIhxp8a2zvOVP",
 				liveIcon: "_3cdJ6BHH65ws78AzuO0KLw"
@@ -1373,4 +1373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.46902f7c2e79a72ac6a4.js.map
+//# sourceMappingURL=ModerationDropdowns.87dfc9e987d0cf84d68a.js.map

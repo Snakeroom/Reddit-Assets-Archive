@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.8be45c27e2649f891c68.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.f9dfba3d86c4f65fe537.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -246,8 +246,8 @@
 		},
 		"./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less": function(e, t, n) {
 			e.exports = {
-				centeredRow: "_25_AV7ckrxzh-D5xOTcE3O",
 				available: "_34YZ1BYomlSrsiAkyBzh9v",
+				centeredRow: "_25_AV7ckrxzh-D5xOTcE3O",
 				button: "_3e_LQKpHZ59nkcY3i4GvmR",
 				container: "_vu3nmkuhyRAROziDIRy9",
 				loadingIcon: "_3qu6rrPqBKfB-FCSjTniKm",
@@ -731,4 +731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal.8be45c27e2649f891c68.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal.f9dfba3d86c4f65fe537.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.af395feb74ed1cf4e02b.js
-// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e74bc4ee1c6fc406c861.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -294,8 +294,8 @@
 				gildFooter: "habPwBVb49a3L6odC1o_2",
 				footerContent: "p9n6xR53geDkMMJLRLxsQ",
 				coinBalanceSection: "_3R4j1vmZgkT6keOmp5osiV",
-				premiumButton: "_3QiLbbTpb2izwuTyxaeqdY",
 				gildButton: "_2qmjJbARve3fBrc8oz-Ufa",
+				premiumButton: "_3QiLbbTpb2izwuTyxaeqdY",
 				subredditIcon: "_1gm264-SD6RxF8VJfulxIL",
 				errorText: "_2K7QjhTDibWfT4O2YOQyLh",
 				loadingIcon: "OrV3EYarwTthoNCBGxsel"
@@ -1614,4 +1614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.af395feb74ed1cf4e02b.js.map
+//# sourceMappingURL=FramedGild~GildModal.e74bc4ee1c6fc406c861.js.map

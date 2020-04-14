@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.d9cf9571506167615cc8.js
-// Retrieved at 3/30/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.d05a344348d022a40485.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -125,6 +125,11 @@
 		},
 		"./src/reddit/components/Hovercards/HoverDiv/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return x
+			})), s.d(t, "b", (function() {
+				return y
+			}));
 			var r = s("./node_modules/react/index.js"),
 				o = s.n(r),
 				n = s("./src/lib/lessComponent.tsx"),
@@ -158,11 +163,6 @@
 				})),
 				h = s("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
 				f = s.n(h);
-			s.d(t, "a", (function() {
-				return x
-			})), s.d(t, "b", (function() {
-				return y
-			}));
 			class O extends o.a.Component {
 				constructor() {
 					super(...arguments), this.closeHovercardTimeoutId = 0, this.openHovercardTimeoutId = 0, this.isHovering = !1, this.hoverEl = void 0, this.onHoverElMouseEnter = () => {
@@ -433,6 +433,25 @@
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return O
+			})), s.d(t, "b", (function() {
+				return x
+			})), s.d(t, "c", (function() {
+				return y
+			})), s.d(t, "d", (function() {
+				return I
+			})), s.d(t, "e", (function() {
+				return g
+			})), s.d(t, "f", (function() {
+				return T
+			})), s.d(t, "g", (function() {
+				return N
+			})), s.d(t, "h", (function() {
+				return C
+			})), s.d(t, "i", (function() {
+				return _
+			}));
 			var r = s("./node_modules/react/index.js"),
 				o = s.n(r),
 				n = s("./node_modules/react-redux/es/index.js"),
@@ -713,25 +732,6 @@
 						type: e.subreddit.type
 					} : {}
 				}
-			}));
-			s.d(t, "a", (function() {
-				return O
-			})), s.d(t, "b", (function() {
-				return x
-			})), s.d(t, "c", (function() {
-				return y
-			})), s.d(t, "d", (function() {
-				return I
-			})), s.d(t, "e", (function() {
-				return g
-			})), s.d(t, "f", (function() {
-				return T
-			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "h", (function() {
-				return C
-			})), s.d(t, "i", (function() {
-				return _
 			}))
 		},
 		"./src/reddit/controls/IconTooltip/index.m.less": function(e, t, s) {
@@ -884,4 +884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.d9cf9571506167615cc8.js.map
+//# sourceMappingURL=SubredditHovercard.d05a344348d022a40485.js.map

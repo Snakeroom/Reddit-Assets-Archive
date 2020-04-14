@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.8daf4b51466583741589.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.1f62eddf1b62ae69e765.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -28,8 +28,8 @@
 		},
 		"./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/Type/index.m.less": function(e, t, a) {
 			e.exports = {
-				flexRow: "_2RG45iqa8ULlLmOztlvGBU",
 				card: "_1uGusjj-VvgYatFqBUl1vA",
+				flexRow: "_2RG45iqa8ULlLmOztlvGBU",
 				cardLogos: "lRR5E927GAjFSujtSrnyx",
 				container: "Rb3mFh2e8gJ4mBrj8gq4",
 				input: "_2lL8rNr3lYRHkf8mUK2xsV",
@@ -835,4 +835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.8daf4b51466583741589.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.1f62eddf1b62ae69e765.js.map

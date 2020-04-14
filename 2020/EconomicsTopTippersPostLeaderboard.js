@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.7a78d15d23a31cb5f8a0.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.083008ddedec8780407a.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsTopTippersPostLeaderboard"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -69,8 +69,8 @@
 		},
 		"./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Tipping/index.m.less": function(e, t, s) {
 			e.exports = {
-				flexRow: "t4yMK5MvHgXKkfneVt2Sg",
 				container: "_2KkML-m0RuZjJLHT9ljobe",
+				flexRow: "t4yMK5MvHgXKkfneVt2Sg",
 				postFlatlistIcon: "HQwBz_YkoXKoCF_H6V6nw",
 				postFlatlistItem: "W72lOik2tOHvpWDhgjdhJ",
 				tipButton: "_3fKqx88edjNtCw8ocjsGA6"
@@ -627,4 +627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.7a78d15d23a31cb5f8a0.js.map
+//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.083008ddedec8780407a.js.map

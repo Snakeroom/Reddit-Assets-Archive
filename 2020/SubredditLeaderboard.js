@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3b6511e4e9c2086b78cf.js
-// Retrieved at 4/13/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c701a5d501c0c5ff324c.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -454,10 +454,10 @@
 			e.exports = {
 				FormPage: "_9ZuQyDXhFth1qKJF4KNm8",
 				formPage: "_9ZuQyDXhFth1qKJF4KNm8",
-				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
-				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				HomePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
+				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -1558,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.3b6511e4e9c2086b78cf.js.map
+//# sourceMappingURL=SubredditLeaderboard.c701a5d501c0c5ff324c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.2cff80f4755238b92188.js
-// Retrieved at 4/13/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.ab91fc4314bbfb66348d.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -106,10 +106,10 @@
 				emptyText: "_2x3Avx0lbWMcic-5bE_guO",
 				LoadingFullPage: "_3kZ_esGcijvfnM9KjA27vj",
 				loadingFullPage: "_3kZ_esGcijvfnM9KjA27vj",
-				Upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
-				upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
 				Downvote: "_32W1DnzyRkYXP82ZO96H0V",
 				downvote: "_32W1DnzyRkYXP82ZO96H0V",
+				Upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
+				upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
 				TopMetaPlaceholder: "_24vSs1yG3YhINbU6QRiFR9",
 				topMetaPlaceholder: "_24vSs1yG3YhINbU6QRiFR9",
 				CommentBodyPlaceholder: "_3S0qviXPTlIEUjYjSKT_Lb",
@@ -2386,4 +2386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.2cff80f4755238b92188.js.map
+//# sourceMappingURL=ChatPost.ab91fc4314bbfb66348d.js.map

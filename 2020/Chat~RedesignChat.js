@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f41ce85267d2298c1a2f.js
-// Retrieved at 4/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.34e1bf1e60bdb56592d4.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -8017,10 +8017,10 @@
 		},
 		"./src/chat/components/OverlayNav/index.m.less": function(e, t, n) {
 			e.exports = {
-				Key: "_2VJvEvcJEb5Qi5bR-kioln",
-				key: "_2VJvEvcJEb5Qi5bR-kioln",
 				Group: "_1YPPlxZVDby6iOxA_2zGt5",
 				group: "_1YPPlxZVDby6iOxA_2zGt5",
+				Key: "_2VJvEvcJEb5Qi5bR-kioln",
+				key: "_2VJvEvcJEb5Qi5bR-kioln",
 				Nav: "_3CVk8skSg_xIxuTdTvDN73",
 				nav: "_3CVk8skSg_xIxuTdTvDN73",
 				TitleWrapper: "_1FXx-0D9q_ppO-Wvhxl2SH",
@@ -8035,10 +8035,10 @@
 			e.exports = {
 				Wrapper: "_1YLHv7p-GZBHZ9sw1cUr3T",
 				wrapper: "_1YLHv7p-GZBHZ9sw1cUr3T",
-				IconButton: "_8nwxQjcY53lLegyj4XGyA",
-				iconButton: "_8nwxQjcY53lLegyj4XGyA",
 				CloseButton: "bwxXoigjZ4E9ofWIggxmp",
-				closeButton: "bwxXoigjZ4E9ofWIggxmp"
+				closeButton: "bwxXoigjZ4E9ofWIggxmp",
+				IconButton: "_8nwxQjcY53lLegyj4XGyA",
+				iconButton: "_8nwxQjcY53lLegyj4XGyA"
 			}
 		},
 		"./src/chat/components/OverlayPrivateChannel/index.m.less": function(e, t, n) {
@@ -14039,4 +14039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.f41ce85267d2298c1a2f.js.map
+//# sourceMappingURL=Chat~RedesignChat.34e1bf1e60bdb56592d4.js.map

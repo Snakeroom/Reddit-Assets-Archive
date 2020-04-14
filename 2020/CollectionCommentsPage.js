@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4a067b0e5a41e3aef310.js
-// Retrieved at 4/14/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a109b337bb36c3ed8431.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1113,12 +1113,12 @@
 			e.exports = {
 				container: "_2ulKn_zs7Y3LWsOqoFLHPo",
 				mHasOtherDiscussions: "_3iO3U_i4YUx-2qahK_BTu1",
-				SortPicker: "_1nMYOibX9neGRqvcaCrPDz",
-				sortPicker: "_1nMYOibX9neGRqvcaCrPDz",
-				Row: "zW82EsY6Pakxpq4WWvsUG",
-				row: "zW82EsY6Pakxpq4WWvsUG",
 				HighlightPicker: "_1n6gZPmNQU56UBglU718cx",
 				highlightPicker: "_1n6gZPmNQU56UBglU718cx",
+				Row: "zW82EsY6Pakxpq4WWvsUG",
+				row: "zW82EsY6Pakxpq4WWvsUG",
+				SortPicker: "_1nMYOibX9neGRqvcaCrPDz",
+				sortPicker: "_1nMYOibX9neGRqvcaCrPDz",
 				ContestMode: "_3dAMO_XZMVp2K1JSO53ohA",
 				contestMode: "_3dAMO_XZMVp2K1JSO53ohA",
 				ToggleSwitch: "JVPG0c9TNru5TLSq9sdUG",
@@ -1594,10 +1594,10 @@
 				ViewReportsDropdown: "_1JwG70oEVxaFNeRI-8q_bd",
 				viewReportsDropdown: "_1JwG70oEVxaFNeRI-8q_bd",
 				supportButton: "_2YUu8EV4OahSxJwgb9xLbr",
-				Report: "tfULaYlP83dV84XOxX3YE",
-				report: "tfULaYlP83dV84XOxX3YE",
 				IgnoreReport: "_1QhRdH9FgEwuJIYiBlnog8",
 				ignoreReport: "_1QhRdH9FgEwuJIYiBlnog8",
+				Report: "tfULaYlP83dV84XOxX3YE",
+				report: "tfULaYlP83dV84XOxX3YE",
 				OverflowMenuSpacer: "hrV8gUgmt0V7wM2wgZ81l",
 				overflowMenuSpacer: "hrV8gUgmt0V7wM2wgZ81l",
 				DropdownRow: "uoWjzSc1sqcAD_cLV6MWa",
@@ -1894,9 +1894,9 @@
 				collapsed: "_2k27lgIDltx9kOzVGXt48i",
 				hasBadges: "_1KMFaeLEhRikeFEOlWE9Ti",
 				liveStreaming: "_1iUed95f0HTc84gBtoOxdc",
-				metaText: "_3_GZIIN1xcMEC5AVuv4kfa",
 				CrowdControlText: "Eoj3NCGwtl7hQcr7Rnc0N",
-				crowdControlText: "Eoj3NCGwtl7hQcr7Rnc0N"
+				crowdControlText: "Eoj3NCGwtl7hQcr7Rnc0N",
+				metaText: "_3_GZIIN1xcMEC5AVuv4kfa"
 			}
 		},
 		"./src/reddit/components/Comments/Comment/TopMeta/index.tsx": function(e, t, s) {
@@ -2582,10 +2582,10 @@
 				emptyText: "_2x3Avx0lbWMcic-5bE_guO",
 				LoadingFullPage: "_3kZ_esGcijvfnM9KjA27vj",
 				loadingFullPage: "_3kZ_esGcijvfnM9KjA27vj",
-				Upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
-				upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
 				Downvote: "_32W1DnzyRkYXP82ZO96H0V",
 				downvote: "_32W1DnzyRkYXP82ZO96H0V",
+				Upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
+				upvote: "_1lwmFW6D9PmeT_QA-R5F_0",
 				TopMetaPlaceholder: "_24vSs1yG3YhINbU6QRiFR9",
 				topMetaPlaceholder: "_24vSs1yG3YhINbU6QRiFR9",
 				CommentBodyPlaceholder: "_3S0qviXPTlIEUjYjSKT_Lb",
@@ -4183,9 +4183,9 @@
 				loaderWrapper: "_3k8JPc9w-DJrYLoer3GicH",
 				Icon: "_1nrdmuhkCLXh8N_46gKAyn",
 				icon: "_1nrdmuhkCLXh8N_46gKAyn",
-				gradientAnimation: "_3kGJh7EpOUlhrvN051jlhD",
 				Byline: "eI85Q_-1x9VERN15oDr3X",
-				byline: "eI85Q_-1x9VERN15oDr3X"
+				byline: "eI85Q_-1x9VERN15oDr3X",
+				gradientAnimation: "_3kGJh7EpOUlhrvN051jlhD"
 			}
 		},
 		"./src/reddit/components/CommentsChat/MessageInput/Loader.tsx": function(e, t, s) {
@@ -5675,8 +5675,8 @@
 				flexSpacer: "_21pmAV9gWG6F_UKVe7YIE0",
 				modActionsIcon: "_15c1hqseW25EvRu0WP2Dq5",
 				shareText: "_6_44iTtZoeY6_XChKt5b0",
-				supportButton: "_3NIVQWStkLT7RXnwKpKNuT",
 				commentsLink: "_2qww3J5KKzsD7e5DO0BvvU",
+				supportButton: "_3NIVQWStkLT7RXnwKpKNuT",
 				ShareButton: "kU8ebCMnbXfjCWfqn0WPb",
 				shareButton: "kU8ebCMnbXfjCWfqn0WPb",
 				shareIcon: "_1GQDWqbF-wkYWbrpmOvjqJ",
@@ -7402,10 +7402,10 @@
 		},
 		"./src/reddit/components/PostBadges/index.m.less": function(e, t, s) {
 			e.exports = {
-				icon: "_3vju76MdF2FaGmELBeiJ_r",
 				adminIcon: "_1cje4rrmwL0yZgCOlGyBJ-",
 				approveIcon: "_1knR9NIIXdSFC9IeFN11JL",
 				automoderator: "_2etEb_0bRB9axAqF3uX28S",
+				icon: "_3vju76MdF2FaGmELBeiJ_r",
 				lockIcon: "_3wTfn3Meg1rXJ-qd2jUWMt",
 				modIcon: "_SMl46gACTEszA_4A0Qfs",
 				removeIcon: "_3yuF1RnBRJL4OS_STsoXcC",
@@ -9386,10 +9386,10 @@
 				listContainer: "VHCAEHBEuD8bln8MDFl35",
 				Icon: "_3WbGqnEpw_ds1P508Qawma",
 				icon: "_3WbGqnEpw_ds1P508Qawma",
-				DropdownRow: "x_9o8pHUgKrlsT51QhLnG",
-				dropdownRow: "x_9o8pHUgKrlsT51QhLnG",
 				CheckboxMenuItem: "_9csa2XobkeFZUX8Fc_FNY",
-				checkboxMenuItem: "_9csa2XobkeFZUX8Fc_FNY"
+				checkboxMenuItem: "_9csa2XobkeFZUX8Fc_FNY",
+				DropdownRow: "x_9o8pHUgKrlsT51QhLnG",
+				dropdownRow: "x_9o8pHUgKrlsT51QhLnG"
 			}
 		},
 		"./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx": function(e, t, s) {
@@ -9451,16 +9451,16 @@
 				DropdownRow: "_1muOrgIRB6t41qDocDiXul",
 				dropdownRow: "_1muOrgIRB6t41qDocDiXul",
 				disabledRow: "_2Odc33_zXVGMHX8Um_2eO7",
-				Icon: "_2V4nGS1AmzWhA62lzdCu4r",
-				icon: "_2V4nGS1AmzWhA62lzdCu4r",
 				AddCollectionIcon: "_3McOViCQeBaGf3kRQLi-YJ",
 				addCollectionIcon: "_3McOViCQeBaGf3kRQLi-YJ",
-				LiveIcon: "otoj2GWn145x5kC1YJdJV",
-				liveIcon: "otoj2GWn145x5kC1YJdJV",
 				CalendarIcon: "_1zSdStUj7GoJJcKjQ7zhG8",
 				calendarIcon: "_1zSdStUj7GoJJcKjQ7zhG8",
+				Icon: "_2V4nGS1AmzWhA62lzdCu4r",
+				icon: "_2V4nGS1AmzWhA62lzdCu4r",
 				LinkIcon: "_1lgI_HBlGeEd4PRa5CuxRF",
 				linkIcon: "_1lgI_HBlGeEd4PRa5CuxRF",
+				LiveIcon: "otoj2GWn145x5kC1YJdJV",
+				liveIcon: "otoj2GWn145x5kC1YJdJV",
 				PostCheckboxMenuItem: "_3fGEO8uLSvUJEOP4lDX35p",
 				postCheckboxMenuItem: "_3fGEO8uLSvUJEOP4lDX35p"
 			}
@@ -11074,9 +11074,9 @@
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, s) {
 			e.exports = {
 				metaNavLink: "_3K8jBMDp0QPnKaJK8FVP6a",
+				navLink: "_1O30sSXmfkKMRZqSaESf0S",
 				navLinkStyles: "_2NJL-agPg8YnfLMLdMbED5",
 				subNavTitle: "_2wtKbmW1aPrT3MyHoaupQh",
-				navLink: "_1O30sSXmfkKMRZqSaESf0S",
 				topBannerVariant: "uGdFXCHH-nwVp4gU3UaTw",
 				mActive: "_1YpJV_aDQqujwuofx9-eAX",
 				navDropdownIcon: "_3u_CcXw7slod9vNJKIlYvx",
@@ -13243,9 +13243,9 @@
 		},
 		"./src/reddit/controls/CheckboxMenuItem/index.m.less": function(e, t, s) {
 			e.exports = {
-				sharedIconStyles: "_19iKCOTFpWIyFwZ0bqQhg",
 				checkbox: "_2zOuGd5s9dLeXmKJ8TJF9T",
 				checkboxSelected: "LevaZhN5EO7Pei7YvAi1W",
+				sharedIconStyles: "_19iKCOTFpWIyFwZ0bqQhg",
 				checkboxMenuItem: "_2eawLPCtwzvTZhWKtaUgZQ",
 				expandRight: "_34Odk7t6y-rCPxPcYJa4Nw",
 				postCheckboxMenuItem: "_3LyKu57c-QkPvlFvAgWop5"
@@ -13892,10 +13892,10 @@
 		},
 		"./src/reddit/helpers/styles/mixins/index.m.less": function(e, t, s) {
 			e.exports = {
+				baseLargeAndMediumPostStyles: "_2lHXa-mLMsRfm1Q5JxgU4r",
 				basePostStyles: "REwsaLIz5u3DhM7zbbzIU",
 				classicPostStyles: "bE7JgM2ex7W3aF3zci5bm",
 				compactPostStyles: "FeLWdhOO-cVXowAo3Rndk",
-				baseLargeAndMediumPostStyles: "_2lHXa-mLMsRfm1Q5JxgU4r",
 				largeAndMediumPostStyles: "_3Qkp11fjcAw9I9wtLo8frE",
 				baseClassicAndCompactPostStyles: "_2yN8L-c8UBoKxHn0-vg_dS",
 				baseSubredditStyles: "_2zRMh6o0BucltCL6o64pa4",
@@ -14713,6 +14713,7 @@
 			e.exports = {
 				iconFont: "WxKparxaBCy4-EWML7xc3",
 				approveIcon: "MAe2tslj1FAD6GliiZ3it",
+				calendarIcon: "_2YXLfgRGcJoCJROcTAGqir",
 				commentIcon: "_3ch9jJ0painNf41PmU4F9i",
 				lockIcon: "XHMWG1CPWX8RXeNg-o5-R",
 				modActions: "_3phKxmomoio9ulzAoL4XhZ",
@@ -14722,7 +14723,6 @@
 				shareIcon: "xwmljjCrovDE5C9MasZja",
 				spamIcon: "_1Gn6JH0U8GJtJXSIc54IMU",
 				stickyIcon: "hMF1wBi2Z6Lh9zHskfhX1",
-				calendarIcon: "_2YXLfgRGcJoCJROcTAGqir",
 				adminIcon: "_3ACtZ0jvC5KDN8RNxR0lXX",
 				archivedIcon: "_2trXhUAJMhIhxp8a2zvOVP",
 				liveIcon: "_3cdJ6BHH65ws78AzuO0KLw"
@@ -16345,4 +16345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.4a067b0e5a41e3aef310.js.map
+//# sourceMappingURL=CollectionCommentsPage.a109b337bb36c3ed8431.js.map

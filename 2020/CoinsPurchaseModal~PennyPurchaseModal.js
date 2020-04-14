@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.2db69390f6a16658d87a.js
-// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.39deabbe04ee33c8a86e.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal~PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -823,9 +823,9 @@
 				cardImageContainer: "_2UfEtRBZKGHh61YQvN-wG5",
 				cardImageContainerNightmode: "_28ZdrJfYvnuJaXkQVMVOGq",
 				brandImage: "_2mqcWSE8aspsp1q2xC8qBu",
+				cardDetails: "_34-t7dxtgTqGxiuyP72aPD",
 				unknownCC: "_2tXz9uqxu-ZiBFsHmFWdV6",
 				unknownCc: "_2tXz9uqxu-ZiBFsHmFWdV6",
-				cardDetails: "_34-t7dxtgTqGxiuyP72aPD",
 				expiry: "_2Qg2CXB4yQiIH6KZrB9lRT",
 				icon: "_1pvlE-J4rOcSVpJdWYQAm-",
 				confirmText: "_3_csWXQHhia1pXrA9w9OLK"
@@ -1055,4 +1055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.2db69390f6a16658d87a.js.map
+//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.39deabbe04ee33c8a86e.js.map

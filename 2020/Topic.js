@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.f7c99cb79d11b8f36291.js
-// Retrieved at 4/8/2020, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.4f9400f898906e5bd28d.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -502,10 +502,10 @@
 			e.exports = {
 				FormPage: "_9ZuQyDXhFth1qKJF4KNm8",
 				formPage: "_9ZuQyDXhFth1qKJF4KNm8",
-				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
-				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				HomePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
 				homePageBreadcrumb: "_2iNJX36LR2tMHx_unzEkVM",
+				HomePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
+				homePageTitle: "_1JmnMJclrTwTPpAip5U_Hm",
 				HomePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				homePageGroup: "_306gA2lxjCHX44ssikUp3O",
 				FormPageTitle: "_1Omf6afKRpv3RKNCWjIyJ4",
@@ -1536,4 +1536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.f7c99cb79d11b8f36291.js.map
+//# sourceMappingURL=Topic.4f9400f898906e5bd28d.js.map

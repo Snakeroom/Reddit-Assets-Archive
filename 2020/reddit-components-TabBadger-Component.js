@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.f1efdc106ee4d5f9a15f.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.9ca0b2e405cc9ca307ac.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/index.m.less": function(e, t, i) {
@@ -131,4 +131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-TabBadger-Component.f1efdc106ee4d5f9a15f.js.map
+//# sourceMappingURL=reddit-components-TabBadger-Component.9ca0b2e405cc9ca307ac.js.map

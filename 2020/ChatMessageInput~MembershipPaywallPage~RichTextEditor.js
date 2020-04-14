@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.b5762e50bd183dc39ec6.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.7b74b42a9c7547556496.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6970,8 +6970,8 @@
 				isUploaded: "_3Lj2c902Oeb7yL_jYu9v5L",
 				isSelected: "Eaps2a9y_jwhKHth8v14G",
 				imagePreview: "_2nlrFrYbO0bIKFeZ3HMbn_",
-				videoPreview: "_2MumquPHY8gruoy6114twC",
 				placeholder: "_1-LSy7nvfNGWVhRWwwQu6A",
+				videoPreview: "_2MumquPHY8gruoy6114twC",
 				alignCenter: "_3U9f0TNBM1K2bggm3KMHTk"
 			}
 		},
@@ -7958,4 +7958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.b5762e50bd183dc39ec6.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.7b74b42a9c7547556496.js.map

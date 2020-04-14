@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.8a08acfc2d258feeee29.js
-// Retrieved at 3/25/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.c09140081b251c663b56.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -338,7 +338,9 @@
 		},
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/index.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "GiphyTooltip", (function() {
+				return C
+			}));
 			var i = s("./node_modules/draft-js/lib/Draft.js"),
 				o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -393,9 +395,6 @@
 				},
 				E = s("./src/reddit/components/RichTextEditor/media/GifTooltip/index.m.less"),
 				_ = s.n(E);
-			s.d(t, "GiphyTooltip", (function() {
-				return C
-			}));
 			class C extends n.a.Component {
 				constructor(e) {
 					super(e), this.updateTooltipPosition = null, this.state = {
@@ -497,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.8a08acfc2d258feeee29.js.map
+//# sourceMappingURL=GifTooltip.c09140081b251c663b56.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.fe0ca1a8ec6f658a5152.js
-// Retrieved at 4/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.7d9c817ed73e505bc75f.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -375,9 +375,9 @@
 				formWrapper: "mfKS0B5uqUX6PXcuSjTop",
 				LivestreamingWrapper: "_1xV0i2uW_2xdNlBcbSEjpS",
 				livestreamingWrapper: "_1xV0i2uW_2xdNlBcbSEjpS",
-				inputLine: "_2rpcmnaHqKJnQeHI6-RZU8",
 				Form: "_76oPIY5CZD4GaQnn-06zO",
 				form: "_76oPIY5CZD4GaQnn-06zO",
+				inputLine: "_2rpcmnaHqKJnQeHI6-RZU8",
 				Editing: "CA5bQ-3lhJvw_xfOAOs4K",
 				editing: "CA5bQ-3lhJvw_xfOAOs4K",
 				SmallChatUserIcon: "_1qnAOkiRLjELVt-lGR1N2O",
@@ -1469,4 +1469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.fe0ca1a8ec6f658a5152.js.map
+//# sourceMappingURL=ChatMessageInput.7d9c817ed73e505bc75f.js.map

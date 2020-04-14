@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.20e9eaaec307b50bef15.js
-// Retrieved at 4/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.c02806ec64112834b642.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -651,10 +651,10 @@
 			e.exports = {
 				Section: "_2ZPCcqVx7uyG5HrA3z-OVv",
 				section: "_2ZPCcqVx7uyG5HrA3z-OVv",
-				ChevronUp: "ksp0av34zuZsBAcat30ua",
-				chevronUp: "ksp0av34zuZsBAcat30ua",
 				ChevronDown: "_1wKo3vVOtzUBLbhCHR_Vxg",
 				chevronDown: "_1wKo3vVOtzUBLbhCHR_Vxg",
+				ChevronUp: "ksp0av34zuZsBAcat30ua",
+				chevronUp: "ksp0av34zuZsBAcat30ua",
 				ArticleWrap: "_2Phr87zY79yoRfSQ409Z4R",
 				articleWrap: "_2Phr87zY79yoRfSQ409Z4R",
 				open: "_2vwyUBnqyOgaUEixVxUNZM",
@@ -678,4 +678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatReportFlow.20e9eaaec307b50bef15.js.map
+//# sourceMappingURL=ChatReportFlow.c02806ec64112834b642.js.map

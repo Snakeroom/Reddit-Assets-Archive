@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.bf2491866a41ebaa62f1.js
-// Retrieved at 3/31/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.1e0fe85734641373fe5c.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -10,6 +10,11 @@
 		},
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return x
+			})), s.d(t, "b", (function() {
+				return C
+			}));
 			var a = s("./node_modules/lodash/values.js"),
 				n = s.n(a),
 				i = s("./node_modules/react/index.js"),
@@ -159,11 +164,6 @@
 				},
 				h = s("./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less"),
 				b = s.n(h);
-			s.d(t, "a", (function() {
-				return x
-			})), s.d(t, "b", (function() {
-				return C
-			}));
 			const x = e => r.a.createElement("button", {
 					className: Object(o.a)(b.a.arrow, e.className),
 					onClick: e.onClick
@@ -962,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.bf2491866a41ebaa62f1.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.1e0fe85734641373fe5c.js.map

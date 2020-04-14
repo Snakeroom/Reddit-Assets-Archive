@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.a55c1531b951cba9b76f.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d27f7874586ae3f1651c.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -58,8 +58,8 @@
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.m.less": function(e, t, s) {
 			e.exports = {
-				singleLineText: "_3vV5Hg-hZiDuQVXYnhgzdZ",
 				collectionTitle: "BKuPdCEiKWhUuAAZSV8Hu",
+				singleLineText: "_3vV5Hg-hZiDuQVXYnhgzdZ",
 				description: "_3K0DQ21Q-wH4kETiMxiaNo",
 				fullWidth: "_1HsWtVhofw3GuWXgyObfz4",
 				info: "_30GDKdvss889YcOkeQXbVz",
@@ -1010,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.a55c1531b951cba9b76f.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.d27f7874586ae3f1651c.js.map

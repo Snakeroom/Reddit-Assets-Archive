@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.a01d22d9c0b731029fdb.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.884bf829845db41f1a7c.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
-				icon: "_2_a0AZEsekxVGOijC1h5y",
 				addCustomIcon: "_1QCswSWMKWdEyC-qp39OwF",
+				icon: "_2_a0AZEsekxVGOijC1h5y",
 				container: "yBY_FjDJXZ7QW3u79zCnu",
 				content: "_1IQuYqkzKpT292XMSDJU0A",
 				crown: "_283FDOTtEZcM-cJuyRYMi6",
@@ -170,4 +170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.a01d22d9c0b731029fdb.js.map
+//# sourceMappingURL=CustomBadgeHovercardTooltip.884bf829845db41f1a7c.js.map

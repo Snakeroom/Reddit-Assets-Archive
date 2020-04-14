@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.a28d98fed1b137c2c4b0.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e77c0f01535d957bc3cb.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -247,10 +247,10 @@
 		"./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less": function(e, t, s) {
 			e.exports = {
 				row: "_2Ge0QyGqQ2ohMh3nujj9kI",
-				flairPreviewCell: "_3SFR7AjB3wiRzkfpGm8pc3",
 				cssClassCell: "_1tSivioO33rCxJr8NbnGCB",
-				settingsCell: "_2JkfNJ7R1JE4IjqcpoT9Kc",
 				flairIdCell: "_2_R05GOuWSUDX3PyASVGmm",
+				flairPreviewCell: "_3SFR7AjB3wiRzkfpGm8pc3",
+				settingsCell: "_2JkfNJ7R1JE4IjqcpoT9Kc",
 				flairComponent: "_36dQHXyJCojtRpWCQSngY9",
 				removeButton: "_36ymF43Lc8scdO9e4wilot",
 				reordering: "_1BI3W_3n3-wJyOB0q5bD5r"
@@ -320,10 +320,10 @@
 				disabledBanner: "_2zhcnoXRRItZEJVXtE1Dez",
 				table: "_32J_8vxjcfCvTyyaKNxzMV",
 				tableHead: "_3X_p9WCvR91mqMt0eaAzjT",
-				flairPreviewColHeader: "_2so4kKMPMvORvnsfCZIrI6",
 				cssClassColHeader: "_3VPBNym2HhcfxWqX_XAtad",
-				settingsColHeader: "_13gi3MUppeK5PJ1_waWROR",
 				flairIdColHeader: "_2iWLnXdkCIwJvCNl66f_JX",
+				flairPreviewColHeader: "_2so4kKMPMvORvnsfCZIrI6",
+				settingsColHeader: "_13gi3MUppeK5PJ1_waWROR",
 				tableBody: "_6ltpvqnPD-3oGbRWx8i3b"
 			}
 		},
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.a28d98fed1b137c2c4b0.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e77c0f01535d957bc3cb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.76a97f30518f31a09a00.js
-// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.90126d30677632e5a513.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -1318,14 +1318,14 @@
 				appleIcon: "_3KWqmZWrSf8rUGBzgw4zPr",
 				LoadingIcon: "PYTg-gbJiYylgL7Ep40Ez",
 				loadingIcon: "PYTg-gbJiYylgL7Ep40Ez",
-				ConnectTwitter: "X3WnGWuTGeHRuSAUa5SvC",
-				connectTwitter: "X3WnGWuTGeHRuSAUa5SvC",
+				ConnectApple: "TAF33bKwRX0N0jqZED4G5",
+				connectApple: "TAF33bKwRX0N0jqZED4G5",
 				"m-responsive": "_2CDbVOW43orfPYw-t-nPiq",
 				mResponsive: "_2CDbVOW43orfPYw-t-nPiq",
 				ConnectGoogle: "_15mHBcXEigFDBhqx4A5u7z",
 				connectGoogle: "_15mHBcXEigFDBhqx4A5u7z",
-				ConnectApple: "TAF33bKwRX0N0jqZED4G5",
-				connectApple: "TAF33bKwRX0N0jqZED4G5",
+				ConnectTwitter: "X3WnGWuTGeHRuSAUa5SvC",
+				connectTwitter: "X3WnGWuTGeHRuSAUa5SvC",
 				ConnectTwitterButton: "_3492mSfQUroLGCVlS9cxuC",
 				connectTwitterButton: "_3492mSfQUroLGCVlS9cxuC",
 				ConnectGoogleButton: "_3PZhYrOiAsgZIW2cezS6tI",
@@ -1874,10 +1874,10 @@
 			e.exports = {
 				ListsWrapper: "_1el3NPZn6qsGupLNWd_uTE",
 				listsWrapper: "_1el3NPZn6qsGupLNWd_uTE",
-				SubheaderLink: "_2SoL5Q_2U0LQC1BPaNletZ",
-				subheaderLink: "_2SoL5Q_2U0LQC1BPaNletZ",
 				GenerateBackupCodesButton: "kLUeYesCcX7szHNBR8OZZ",
 				generateBackupCodesButton: "kLUeYesCcX7szHNBR8OZZ",
+				SubheaderLink: "_2SoL5Q_2U0LQC1BPaNletZ",
+				subheaderLink: "_2SoL5Q_2U0LQC1BPaNletZ",
 				ThirdPartyAuth: "_1GtysZnibU-p4KasVaXCT_",
 				thirdPartyAuth: "_1GtysZnibU-p4KasVaXCT_",
 				"m-responsive": "_1K1eSlv_SCeNBQRglVFRHo",
@@ -3555,12 +3555,12 @@
 				mResponsive: "_1DEuTh5wc7zh0WaUee6OMw",
 				CreatorTab: "_3QlgI2skRdNb0rUrRitQd3",
 				creatorTab: "_3QlgI2skRdNb0rUrRitQd3",
+				MessagingTab: "_3wCJvTvi_ME2B15BCVuMDo",
+				messagingTab: "_3wCJvTvi_ME2B15BCVuMDo",
 				PaymentsTab: "_2WMQ9c71jnOmx4epThzaxA",
 				paymentsTab: "_2WMQ9c71jnOmx4epThzaxA",
 				SpecialMembershipTab: "_33ITA9Gf4yLExGG5x52N6E",
-				specialMembershipTab: "_33ITA9Gf4yLExGG5x52N6E",
-				MessagingTab: "_3wCJvTvi_ME2B15BCVuMDo",
-				messagingTab: "_3wCJvTvi_ME2B15BCVuMDo"
+				specialMembershipTab: "_33ITA9Gf4yLExGG5x52N6E"
 			}
 		},
 		"./src/reddit/pages/Settings/index.tsx": function(e, t, n) {
@@ -6659,4 +6659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.76a97f30518f31a09a00.js.map
+//# sourceMappingURL=Settings.90126d30677632e5a513.js.map

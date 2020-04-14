@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.c0fc86200d9bf1f50f46.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.d45cdae56c1506e923d8.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -10,9 +10,9 @@
 				bannerTitle: "_2RlUIqHbJhtqBPVOWc9EIl",
 				button: "v2IDimagf9R1V7C7SahRI",
 				container: "_1hs-SYfOXsOvtGLvgYSGq",
-				flexRow: "_1Q5pm9fTTP3El8OlDEZLem",
-				controls: "_-9zD1vVqEYmUMZcelQho0",
 				content: "t61e4NmTLweNDu9wA2hM6",
+				controls: "_-9zD1vVqEYmUMZcelQho0",
+				flexRow: "_1Q5pm9fTTP3El8OlDEZLem",
 				cta: "_1aUSA6nx3p-1LER33aE5sM",
 				description: "_2JKRsNNJ0TUIpOpUjXAkpL",
 				glowInner: "xB16-1ZjXRo4UiBMlYtPy",
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.c0fc86200d9bf1f50f46.js.map
+//# sourceMappingURL=GovernanceVotingBanner.d45cdae56c1506e923d8.js.map

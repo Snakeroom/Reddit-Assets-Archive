@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.e839779355960bbac56c.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.e2a9cc39584d449beeb6.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation~SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less": function(e, t, s) {
@@ -10,6 +10,9 @@
 		},
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return R
+			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -71,9 +74,6 @@
 				C = s("./src/reddit/selectors/tags.ts"),
 				T = s("./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less"),
 				w = s.n(T);
-			s.d(t, "a", (function() {
-				return R
-			}));
 			const D = e => {
 					let {
 						hasPrimaryTag: t,
@@ -411,9 +411,9 @@
 		"./src/reddit/components/MultiOptionSelect/OptionsListDropdown/index.m.less": function(e, t, s) {
 			e.exports = {
 				activeOption: "_2Kg5EXAuLcqhsBbdEr4SGZ",
-				option: "_1xWVaijFIih7uj-n4FXzH2",
 				freeTextOption: "_2H29-4MOHAslt1eKYtcGaV",
 				lastFixedOption: "_1ClyNNAK4vP9o_uoSwKe0Q",
+				option: "_1xWVaijFIih7uj-n4FXzH2",
 				availableOptionContainer: "T2jLhmuhOy8DeOHjz6WRG",
 				addText: "_1OqThwyrfhl2eJ9YhWoy2I",
 				optionsContainer: "_1ZmC1GBXYnksnMU9IrTAHd",
@@ -1013,4 +1013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.e839779355960bbac56c.js.map
+//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.e2a9cc39584d449beeb6.js.map

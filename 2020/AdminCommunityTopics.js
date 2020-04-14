@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.56fe30252d8e028ee747.js
-// Retrieved at 4/6/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.a15db66846117ad5d397.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -14,8 +14,8 @@
 			e.exports = {
 				container: "_33EJz9cMfAfZ2FihfKUM0D",
 				content: "_2EMYvkawGbOjsemWVHvB48",
-				header: "_1-8q8nQZVVpSUAd9MzhwsX",
-				expandButton: "_1Vr7bKyPOCySgGKAvTCCw"
+				expandButton: "_1Vr7bKyPOCySgGKAvTCCw",
+				header: "_1-8q8nQZVVpSUAd9MzhwsX"
 			}
 		},
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/index.tsx": function(e, t, s) {
@@ -428,9 +428,9 @@
 		"./src/reddit/components/MultiOptionSelect/OptionsListDropdown/index.m.less": function(e, t, s) {
 			e.exports = {
 				activeOption: "_2Kg5EXAuLcqhsBbdEr4SGZ",
-				option: "_1xWVaijFIih7uj-n4FXzH2",
 				freeTextOption: "_2H29-4MOHAslt1eKYtcGaV",
 				lastFixedOption: "_1ClyNNAK4vP9o_uoSwKe0Q",
+				option: "_1xWVaijFIih7uj-n4FXzH2",
 				availableOptionContainer: "T2jLhmuhOy8DeOHjz6WRG",
 				addText: "_1OqThwyrfhl2eJ9YhWoy2I",
 				optionsContainer: "_1ZmC1GBXYnksnMU9IrTAHd",
@@ -870,4 +870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminCommunityTopics.56fe30252d8e028ee747.js.map
+//# sourceMappingURL=AdminCommunityTopics.a15db66846117ad5d397.js.map

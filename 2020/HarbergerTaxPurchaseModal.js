@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.f62331ca64cd117443be.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.4202a1991e3c23888c83.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -357,8 +357,8 @@
 		},
 		"./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
-				flexRow: "_1-qMhtN1yW5TgA3cxFjp3H",
 				container: "_33Tn1w9OJKFY3C2eX9m13w",
+				flexRow: "_1-qMhtN1yW5TgA3cxFjp3H",
 				cost: "_2yXwRPYRwoULzhEkzQNi6d",
 				owner: "_3mJKwu0ydKrHE7H4xRh5Dt",
 				ownerBadge: "_1JB0Y6d6obtMIzrNRZg8J-",
@@ -1044,4 +1044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxPurchaseModal.f62331ca64cd117443be.js.map
+//# sourceMappingURL=HarbergerTaxPurchaseModal.4202a1991e3c23888c83.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.d833d0728ee9c4ed3704.js
-// Retrieved at 4/14/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ec217b14279006184e97.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -11,23 +11,23 @@
 		"./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less": function(e, t, s) {
 			e.exports = {
 				baseControlStyles: "_2rtFq5-gNnsnqTzEcTSmVx",
-				TooltipControl: "_1mDDkogVo82R5-IFxvyPRX",
-				tooltipControl: "_1mDDkogVo82R5-IFxvyPRX",
 				NormalControl: "_3MU1RfVON0x2Jtnz9Zq3FA",
 				normalControl: "_3MU1RfVON0x2Jtnz9Zq3FA",
-				baseIconStyles: "_2c7UOdkceyJz77qZPoGPAL",
-				ControlSnoo: "_2Zt53GmI1y_S0N7pA0jMc0",
-				controlSnoo: "_2Zt53GmI1y_S0N7pA0jMc0",
-				ControlPlay: "fqsG3oqeIwcEC-HTRf23d",
-				controlPlay: "fqsG3oqeIwcEC-HTRf23d",
-				ControlVolume: "_2W9KLflUho3xU7KURAaHwH",
-				controlVolume: "_2W9KLflUho3xU7KURAaHwH",
+				TooltipControl: "_1mDDkogVo82R5-IFxvyPRX",
+				tooltipControl: "_1mDDkogVo82R5-IFxvyPRX",
 				AnimatedSettingIconParent: "_3KjMjt45Pg4_LoShJNFMEf",
 				animatedSettingIconParent: "_3KjMjt45Pg4_LoShJNFMEf",
-				ControlExpand: "_3ly5pJnuzH6jga1JGXpOXD",
-				controlExpand: "_3ly5pJnuzH6jga1JGXpOXD",
+				baseIconStyles: "_2c7UOdkceyJz77qZPoGPAL",
 				ControlCollapse: "_3uhleNVV7YkJm0tszcz4z9",
 				controlCollapse: "_3uhleNVV7YkJm0tszcz4z9",
+				ControlExpand: "_3ly5pJnuzH6jga1JGXpOXD",
+				controlExpand: "_3ly5pJnuzH6jga1JGXpOXD",
+				ControlPlay: "fqsG3oqeIwcEC-HTRf23d",
+				controlPlay: "fqsG3oqeIwcEC-HTRf23d",
+				ControlSnoo: "_2Zt53GmI1y_S0N7pA0jMc0",
+				controlSnoo: "_2Zt53GmI1y_S0N7pA0jMc0",
+				ControlVolume: "_2W9KLflUho3xU7KURAaHwH",
+				controlVolume: "_2W9KLflUho3xU7KURAaHwH",
 				Time: "_1z-qg2gzYKkI37gkYYJCi0",
 				time: "_1z-qg2gzYKkI37gkYYJCi0",
 				LiveLabel: "_1s8L9kNAgwvsmhnrpHl4Ef",
@@ -637,18 +637,18 @@
 				mIsActive: "KE4seaOPBFBF1jhkJyWzD",
 				VideoSettingContainer: "C_R5GVVZDJEPfB_2ZVw_j",
 				videoSettingContainer: "C_R5GVVZDJEPfB_2ZVw_j",
-				VideoResolutionContainer: "_3IZDbV1r5OQ2PtnsjF02A",
-				videoResolutionContainer: "_3IZDbV1r5OQ2PtnsjF02A",
-				VideoResolutionButton: "bAXkjkzl_SYFOHtU-04DK",
-				videoResolutionButton: "bAXkjkzl_SYFOHtU-04DK",
 				AutoplayContainer: "_2BOpKj2--T_MqNo_ZMRxNG",
 				autoplayContainer: "_2BOpKj2--T_MqNo_ZMRxNG",
 				SetAutoplayButton: "_3FgC5gbpQJUntY23YtQ89Z",
 				setAutoplayButton: "_3FgC5gbpQJUntY23YtQ89Z",
-				VideoResolutionDescription: "_1n_g7VROCpBaLnT_3bzFIL",
-				videoResolutionDescription: "_1n_g7VROCpBaLnT_3bzFIL",
+				VideoResolutionButton: "bAXkjkzl_SYFOHtU-04DK",
+				videoResolutionButton: "bAXkjkzl_SYFOHtU-04DK",
+				VideoResolutionContainer: "_3IZDbV1r5OQ2PtnsjF02A",
+				videoResolutionContainer: "_3IZDbV1r5OQ2PtnsjF02A",
 				AutoplayDescription: "_2NY4rl5z4S5VUOfEs8PdJ_",
 				autoplayDescription: "_2NY4rl5z4S5VUOfEs8PdJ_",
+				VideoResolutionDescription: "_1n_g7VROCpBaLnT_3bzFIL",
+				videoResolutionDescription: "_1n_g7VROCpBaLnT_3bzFIL",
 				VideoHd: "UyJedjQe5dUxEFYt6pF_G",
 				videoHd: "UyJedjQe5dUxEFYt6pF_G"
 			}
@@ -1798,7 +1798,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("91fe7aa-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("45d56ae-production", " ").concat(t);
 									return a && (s += " [".concat(_.Vb, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2254,4 +2254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.d833d0728ee9c4ed3704.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ec217b14279006184e97.js.map

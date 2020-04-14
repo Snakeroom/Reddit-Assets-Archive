@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0f9e98695bc8c87837cf.js
-// Retrieved at 4/9/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.01a9e83e792279a82c7f.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -209,8 +209,8 @@
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
-				flexRow: "a7j9hqSS-gQka3fEtYNMe",
 				container: "_1fFS9Nru2uTP9R4EHoPmx-",
+				flexRow: "a7j9hqSS-gQka3fEtYNMe",
 				cost: "VGyiEvbD-6rpR1P30_7p_",
 				owner: "_20Muaq7qHPEFtEH27DTRP5",
 				ownerBadge: "_2qYODBIzJZZa9DOXvQpPw8",
@@ -1747,4 +1747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.0f9e98695bc8c87837cf.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.01a9e83e792279a82c7f.js.map

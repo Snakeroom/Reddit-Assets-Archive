@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.33a1861eb7bc0975c7dc.js
-// Retrieved at 4/9/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.20f9d9ae320de30ce6d1.js
+// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -359,8 +359,8 @@
 		},
 		"./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less": function(e, t, r) {
 			e.exports = {
-				flexRow: "_27XFXY0Nde6JEGFwKDLXpX",
 				container: "_2nlSSvS0u4wdSdhODO2_LD",
+				flexRow: "_27XFXY0Nde6JEGFwKDLXpX",
 				points: "_3dubtJAHgSz_JV7AiRzk12",
 				position: "AzD_FyWlGp7oFW4xH0-MO",
 				badge: "_2i9Lr8K4mvo7KpJoZHGbz0",
@@ -1192,4 +1192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.33a1861eb7bc0975c7dc.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.20f9d9ae320de30ce6d1.js.map
