@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.13effa557fcd00aaca99.js
-// Retrieved at 4/14/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.941f04fabf01e8647fa4.js
+// Retrieved at 4/14/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -49234,38 +49234,34 @@
 		"./src/reddit/selectors/experiments/publicAccessNetwork.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return o
 			})), n.d(t, "b", (function() {
-				return i
+				return c
 			})), n.d(t, "c", (function() {
-				return a
+				return i
 			})), n.d(t, "d", (function() {
-				return d
+				return a
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/models/PublicAccessNetwork/index.ts");
-			const c = e => s.yb.Enabled === Object(r.c)(e, {
+				r = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => s.yb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.sb
 				}),
-				i = e => s.Gb.Enabled === Object(r.c)(e, {
+				c = e => s.Gb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Cb
 				}),
-				a = e => s.Hb.Enabled === Object(r.c)(e, {
+				i = e => s.Hb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Db
 				}),
-				d = (e, t, n) => {
-					const c = n(e, t);
-					if (!c || !c.meter) return !1;
-					const i = c.meter.enabled,
-						a = c.stream.state === o.b.IS_LIVE;
-					return i && a && s.Yb.Enabled === Object(r.c)(e, {
+				a = (e, t, n) => {
+					const o = n(e, t);
+					return !(!o || !o.meter) && (o.meter.enabled && i(e) && s.Yb.Enabled === Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.Wb
-					})
+					}))
 				}
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
@@ -50613,4 +50609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.13effa557fcd00aaca99.js.map
+//# sourceMappingURL=Governance~Reddit.941f04fabf01e8647fa4.js.map

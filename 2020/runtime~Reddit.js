@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.33a3a95f37541db00f05.js
-// Retrieved at 4/14/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.9e5768014b31a09a2a93.js
+// Retrieved at 4/14/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -558,7 +558,7 @@
 					GovernanceReleaseNotesModal: "a2af948e06f98f541c4d",
 					"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "31d6cfe0d16ae931b73c",
 					"LiveVideoPlayer~PublicAccessNetwork": "31d6cfe0d16ae931b73c",
-					PublicAccessNetwork: "d5c5793f2ad057758adf",
+					PublicAccessNetwork: "2a68f01f5955895976f5",
 					"vendors~ModListing": "31d6cfe0d16ae931b73c",
 					ModListing: "5a87a607e641663e4e89",
 					"vendors~ModQueuePages": "31d6cfe0d16ae931b73c",
@@ -930,7 +930,7 @@
 						FrontpageSidebar: "795b83a4dd85722f4930",
 						Frontpage: "47cddfa1b5bfbd76a1db",
 						Topic: "4f9400f898906e5bd28d",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "9d1ff53d69e9b31b9e04",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "22bed7c3a297a3b0c61d",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "93507339b4ccbb063799",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "a3882c8bc203baa8b28a",
 						PostDraft: "ed2d5c2b76f3f6b04192",
@@ -939,7 +939,7 @@
 						CryptoHarbergerTaxPurchaseModal: "01a9e83e792279a82c7f",
 						EmailCollectionBanner: "7a5edc7505272662c5b2",
 						EmailVerificationModals: "fc6b6d09d69e2ac57f45",
-						"FramedGild~GildModal": "e74bc4ee1c6fc406c861",
+						"FramedGild~GildModal": "e6b1c2d6fc6c8eecdfe4",
 						FramedGild: "5f82ef00bf66a414f40a",
 						FrontpageLinks: "f253d7b63939f31b1823",
 						GlobalModalContainer: "b830ceda6d3b20ffdeb8",
@@ -1034,7 +1034,7 @@
 						GovernanceReleaseNotesModal: "1ac6eb3b0561bd9fb042",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "84646860bf68da9f046f",
 						"LiveVideoPlayer~PublicAccessNetwork": "ec41862420f6a2bf07db",
-						PublicAccessNetwork: "8c8a61a06625b6d353ed",
+						PublicAccessNetwork: "a6a2086bad01207876a5",
 						"vendors~ModListing": "da8d7182357e33514153",
 						ModListing: "74d6bc202065f3cfceaf",
 						"vendors~ModQueuePages": "b6ea725bcfc100d1dc90",
@@ -1202,4 +1202,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.33a3a95f37541db00f05.js.map
+//# sourceMappingURL=runtime~Reddit.9e5768014b31a09a2a93.js.map
