@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.90126d30677632e5a513.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fee8d080a231a3ce510f.js
+// Retrieved at 4/15/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -5238,8 +5238,8 @@
 							hk: "3fiCzE"
 						})
 					}), r.a.createElement(J.n, {
-						label: xs._("New Comment Activity", null, {
-							hk: "4n1f2M"
+						label: xs._("New Top Level Comments", null, {
+							hk: "NGuzP"
 						}),
 						on: o.topLevelComment,
 						onClick: this.handleTopLevelCommentClick,
@@ -6659,4 +6659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.90126d30677632e5a513.js.map
+//# sourceMappingURL=Settings.fee8d080a231a3ce510f.js.map
