@@ -1,32 +1,40 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.52a896a64ddadc0f29f4.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.8f78d4653dfb19481ad1.js
+// Retrieved at 4/15/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var o = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				a = n("./src/reddit/actions/economics/me/constants.ts");
-			const i = Object(r.a)(a.a),
-				d = () => async (e, t, n) => {
-					let {
-						apiContext: r
-					} = n;
-					const a = t().user.account,
-						d = !t().economics.me.fetched;
-					if (a && d) {
-						const t = await
-						function(e) {
-							return Object(s.a)(e, {
-								method: "get",
-								endpoint: "".concat(o.a.metaUrl, "/users/me")
-							})
-						}(r());
-						t.ok && e(i(t.body))
+
+			function r(e, t) {
+				return Object(s.a)(e, {
+					method: "get",
+					endpoint: "".concat(o.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+				})
+			}
+			var a = n("./src/lib/makeActionCreator/index.ts"),
+				i = n("./src/reddit/actions/economics/me/constants.ts");
+			const d = Object(a.a)(i.a),
+				c = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+					return async (t, n, o) => {
+						let {
+							apiContext: s
+						} = o;
+						const a = n().user.account,
+							i = n(),
+							c = !i.economics.me.fetched || e && !i.economics.me.data.specialMemberships;
+						if (a && c) {
+							const n = await r(s(), e);
+							if (n.ok) {
+								const o = n.body;
+								e && !o.specialMemberships && (o.specialMemberships = {}), t(d(o))
+							}
+						}
 					}
 				}
 		},
@@ -83,7 +91,7 @@
 					apiContext: o
 				} = n;
 				if (!t().user.account) return;
-				await e(Object(C.a)());
+				await e(Object(C.a)(!0));
 				const s = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(s);
 				if (r.length) {
@@ -2754,4 +2762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.52a896a64ddadc0f29f4.js.map
+//# sourceMappingURL=RichTextEditor.8f78d4653dfb19481ad1.js.map

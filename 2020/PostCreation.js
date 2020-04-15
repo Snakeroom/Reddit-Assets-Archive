@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f656c9917c181dc3f16e.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6417a03133a2d095c56c.js
+// Retrieved at 4/15/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -924,28 +924,36 @@
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return l
 			}));
 			var s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				i = n("./src/reddit/actions/economics/me/constants.ts");
-			const a = Object(r.a)(i.a),
-				c = () => async (e, t, n) => {
-					let {
-						apiContext: r
-					} = n;
-					const i = t().user.account,
-						c = !t().economics.me.fetched;
-					if (i && c) {
-						const t = await
-						function(e) {
-							return Object(o.a)(e, {
-								method: "get",
-								endpoint: "".concat(s.a.metaUrl, "/users/me")
-							})
-						}(r());
-						t.ok && e(a(t.body))
+
+			function r(e, t) {
+				return Object(o.a)(e, {
+					method: "get",
+					endpoint: "".concat(s.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+				})
+			}
+			var i = n("./src/lib/makeActionCreator/index.ts"),
+				a = n("./src/reddit/actions/economics/me/constants.ts");
+			const c = Object(i.a)(a.a),
+				l = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+					return async (t, n, s) => {
+						let {
+							apiContext: o
+						} = s;
+						const i = n().user.account,
+							a = n(),
+							l = !a.economics.me.fetched || e && !a.economics.me.data.specialMemberships;
+						if (i && l) {
+							const n = await r(o(), e);
+							if (n.ok) {
+								const s = n.body;
+								e && !s.specialMemberships && (s.specialMemberships = {}), t(c(s))
+							}
+						}
 					}
 				}
 		},
@@ -1035,7 +1043,7 @@
 					apiContext: s
 				} = n;
 				if (!t().user.account) return;
-				await e(Object(y.a)());
+				await e(Object(y.a)(!0));
 				const o = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(o);
 				if (r.length) {
@@ -30691,4 +30699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.f656c9917c181dc3f16e.js.map
+//# sourceMappingURL=PostCreation.6417a03133a2d095c56c.js.map

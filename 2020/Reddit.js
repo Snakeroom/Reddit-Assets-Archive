@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b5caee2731411b37d41f.js
-// Retrieved at 4/15/2020, 6:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a5550696be04c84b4657.js
+// Retrieved at 4/15/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -266,28 +266,36 @@
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return d
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./src/reddit/endpoints/governance/requester.ts");
-			var r = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/reddit/actions/economics/me/constants.ts");
-			const i = Object(r.a)(o.a),
-				c = () => async (e, t, s) => {
-					let {
-						apiContext: r
-					} = s;
-					const o = t().user.account,
-						c = !t().economics.me.fetched;
-					if (o && c) {
-						const t = await
-						function(e) {
-							return Object(a.a)(e, {
-								method: "get",
-								endpoint: "".concat(n.a.metaUrl, "/users/me")
-							})
-						}(r());
-						t.ok && e(i(t.body))
+
+			function r(e, t) {
+				return Object(a.a)(e, {
+					method: "get",
+					endpoint: "".concat(n.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+				})
+			}
+			var o = s("./src/lib/makeActionCreator/index.ts"),
+				i = s("./src/reddit/actions/economics/me/constants.ts");
+			const c = Object(o.a)(i.a),
+				d = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+					return async (t, s, n) => {
+						let {
+							apiContext: a
+						} = n;
+						const o = s().user.account,
+							i = s(),
+							d = !i.economics.me.fetched || e && !i.economics.me.data.specialMemberships;
+						if (o && d) {
+							const s = await r(a(), e);
+							if (s.ok) {
+								const n = s.body;
+								e && !n.specialMemberships && (n.specialMemberships = {}), t(c(n))
+							}
+						}
 					}
 				}
 		},
@@ -383,7 +391,7 @@
 					apiContext: n
 				} = s;
 				if (!t().user.account) return;
-				await e(Object(v.a)());
+				await e(Object(v.a)(!0));
 				const a = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(a);
 				if (r.length) {
@@ -12283,4 +12291,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.b5caee2731411b37d41f.js.map
+//# sourceMappingURL=Reddit.a5550696be04c84b4657.js.map
