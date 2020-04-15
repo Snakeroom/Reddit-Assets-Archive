@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.34b8b86cc49d0e9fd7d4.js
-// Retrieved at 4/15/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.6ede5b87199bc455113e.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -1415,13 +1415,13 @@
 				Vt = 6e3,
 				_t = 100,
 				Bt = Object(h.b)(() => Object(m.c)({
-					isLoggedIn: G.G,
+					isLoggedIn: G.H,
 					autoplayPref: G.b,
 					currentTime: Y.d,
 					currentUser: G.i,
 					isMutedPreference: U.a,
 					isOverlayOpen: z.h,
-					language: G.O,
+					language: G.P,
 					loadTimes: Y.f,
 					metadata: Y.g,
 					muxSamplingAVariant: O,
@@ -1798,7 +1798,7 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("eb8e7ac-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("376253f-production", " ").concat(t);
 									return a && (s += " [".concat(_.Xb, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2254,4 +2254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.34b8b86cc49d0e9fd7d4.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.6ede5b87199bc455113e.js.map

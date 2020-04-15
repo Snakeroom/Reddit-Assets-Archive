@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.3553eb78493b33c79840.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.89a700878dcfd64dd48f.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -67,8 +67,8 @@
 				h = (Object(s.a)(j.g), Object(s.a)(j.h), Object(s.a)(j.i)),
 				w = Object(s.a)(j.j),
 				_ = Object(s.a)(j.k),
-				N = Object(s.a)(j.l),
-				P = Object(s.a)(j.r),
+				P = Object(s.a)(j.l),
+				N = Object(s.a)(j.r),
 				T = Object(s.a)(j.s),
 				E = Object(s.a)(j.t),
 				U = Object(s.a)(j.u),
@@ -94,7 +94,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(N(o.body));
+						} else n(P(o.body));
 						const s = r();
 						if ((a = s.polls.models[e]) && Object(m.d)(a)) {
 							const {
@@ -136,7 +136,7 @@
 						})), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(d.f)())) : (n(P({
+					})), t && n(Object(d.f)())) : (n(N({
 						error: m.error
 					})), Object(O.a)(n, m.error))
 				}, D = e => async (t, n, r) => {
@@ -230,7 +230,7 @@
 				x = n("./src/reddit/components/Governance/UserPublicPointsDisplay/index.m.less"),
 				v = n.n(x);
 			const y = Object(O.c)({
-				language: j.O,
+				language: j.P,
 				publicWallet: g.i,
 				tippingEnabled: b.d.spTipping,
 				tokenDisplayConversion: g.o,
@@ -539,9 +539,9 @@
 			})), n.d(t, "f", (function() {
 				return _
 			})), n.d(t, "r", (function() {
-				return N
-			})), n.d(t, "n", (function() {
 				return P
+			})), n.d(t, "n", (function() {
+				return N
 			})), n.d(t, "k", (function() {
 				return T
 			}));
@@ -610,7 +610,7 @@
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				v = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
 				y = (e, t) => {
-					const n = N(e, t);
+					const n = P(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				I = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -628,7 +628,7 @@
 					const n = w(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby
 				},
-				N = (e, t) => {
+				P = (e, t) => {
 					const n = h(e, t),
 						r = w(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
@@ -645,7 +645,7 @@
 						image: d.image
 					}
 				},
-				P = (e, t) => {
+				N = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -663,4 +663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.3553eb78493b33c79840.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.89a700878dcfd64dd48f.js.map

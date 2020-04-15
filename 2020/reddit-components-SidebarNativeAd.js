@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.de95d7d2ac34eb2295df.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.162cdbe964ae6d5e9169.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -423,17 +423,17 @@
 				k = y.a.div("PostMetaWrapper", O.a),
 				j = y.a.wrapped(p.c, "PostTitle", O.a),
 				w = y.a.div("FlatList", O.a),
-				S = y.a.div("FlatItem", O.a),
-				P = y.a.span("FlatListDotSpacer", O.a),
+				P = y.a.div("FlatItem", O.a),
+				S = y.a.span("FlatListDotSpacer", O.a),
 				C = y.a.wrapped(E, "LinkContainer", O.a),
 				I = y.a.div("Content", O.a),
 				T = y.a.div("ThumbnailContainer", O.a),
 				L = Object(d.c)({
 					isCurrentUserProfilePost: h.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.zb.TOPIC),
-					language: f.O,
+					language: f.P,
 					post: h.N,
-					shouldOpenPostInNewTab: f.S,
+					shouldOpenPostInNewTab: f.T,
 					subreddit: h.Z
 				}),
 				N = Object(i.b)(L);
@@ -492,12 +492,12 @@
 					} = e, {
 						score: s
 					} = t;
-					return r.a.createElement(w, null, r.a.createElement(S, null, n.fbt._({
+					return r.a.createElement(w, null, r.a.createElement(P, null, n.fbt._({
 						"*": "{point count} points",
 						_1: "1 point"
 					}, [n.fbt._plural(s, "point count", Object(l.b)(s))], {
 						hk: "PNZhd"
-					})), r.a.createElement(P, null), r.a.createElement(S, null, R(e)))
+					})), r.a.createElement(S, null), r.a.createElement(P, null, R(e)))
 				},
 				R = e => {
 					const {
@@ -582,8 +582,8 @@
 				k = s("./src/reddit/icons/fonts/Report/index.tsx"),
 				j = s("./src/reddit/icons/fonts/Spam/index.tsx"),
 				w = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				S = s("./src/reddit/icons/svgs/Automoderator/index.tsx"),
-				P = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				P = s("./src/reddit/icons/svgs/Automoderator/index.tsx"),
+				S = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				C = s("./src/reddit/components/PostBadges/index.m.less"),
 				I = s.n(C);
 
@@ -676,7 +676,7 @@
 					se = F("Pinned", X.id, z);
 				return r.a.createElement("div", {
 					className: t
-				}, a && s && X.distinguishType === c.B.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(P.a, {
+				}, a && s && X.distinguishType === c.B.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
 					className: I.a.modIcon,
 					desc: B(s),
 					id: Q,
@@ -759,7 +759,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: ee,
 					text: Object(v.e)(C, X)
-				}, D))), ("AutoModerator" === X.approvedBy || "AutoModerator" === X.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
+				}, D))), ("AutoModerator" === X.approvedBy || "AutoModerator" === X.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(P.a, {
 					className: Object(d.a)(I.a.automoderator, !!X.bannedBy && I.a.isRemoved),
 					desc: v.b,
 					id: q,
@@ -960,7 +960,7 @@
 					shouldShowSubscribeButton: k,
 					subredditOrProfile: j,
 					tooltipType: w
-				} = e, S = !!y;
+				} = e, P = !!y;
 				return o.a.createElement("div", {
 					className: g.a.metaContainer
 				}, !n && !E.isSponsored && j && o.a.createElement(a.a, {
@@ -997,7 +997,7 @@
 					className: g.a.donationAmount,
 					contentId: E.id,
 					subredditId: j.id
-				}), !S && o.a.createElement(r.a, {
+				}), !P && o.a.createElement(r.a, {
 					hideCta: s,
 					isOverlay: O,
 					thing: E,
@@ -1143,8 +1143,8 @@
 				k = s("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				j = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				w = s("./src/reddit/models/NewStructuredStyles/index.ts"),
-				S = s("./src/reddit/models/Theme/index.ts"),
-				P = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				P = s("./src/reddit/models/Theme/index.ts"),
+				S = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				C = s("./src/reddit/models/Media/index.ts"),
 				I = s("./src/reddit/components/NativeBannerAd/index.m.less"),
 				T = s.n(I);
@@ -1202,7 +1202,7 @@
 					}
 				},
 				Z = e => ({
-					background: Object(S.g)(Object(P.a)(e).body, null, null) || ""
+					background: Object(P.g)(Object(S.a)(e).body, null, null) || ""
 				});
 			class Q extends i.a.Component {
 				constructor() {
@@ -1450,7 +1450,7 @@
 						j = this.state.isHovered;
 					let w = m ? "subscribed" : "subscribe";
 					m && j && (w = "unsubscribe");
-					const S = Object(l.a)({
+					const P = Object(l.a)({
 						type: s.type,
 						key: w
 					});
@@ -1464,7 +1464,7 @@
 						belongsToType: s.type,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, k), c && o.a.createElement(g, null), !c && !j && o.a.createElement(g, null), !c && S) : c ? null : o.a.createElement(y, null) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h, x({
+					}, k), c && o.a.createElement(g, null), !c && !j && o.a.createElement(g, null), !c && P) : c ? null : o.a.createElement(y, null) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h, x({
 						className: Object(p.a)(t, {
 							[u.a.isLarge]: !c
 						}),
@@ -1474,7 +1474,7 @@
 						id: "subscribe-button-".concat(a),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}), o.a.createElement(O, null), !c && S))
+					}), o.a.createElement(O, null), !c && P))
 				}
 			}
 			t.a = Object(i.a)(Object(r.c)(_))
@@ -1535,4 +1535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.de95d7d2ac34eb2295df.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.162cdbe964ae6d5e9169.js.map

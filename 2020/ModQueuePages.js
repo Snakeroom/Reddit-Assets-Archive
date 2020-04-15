@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.1427c750e818069fd08d.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.b055b55fd7f93ee8ecb4.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -483,7 +483,7 @@
 				R = Object(a.c)({
 					comment: (e, t) => Object(C.n)(e, t),
 					flair: C.e,
-					language: k.O,
+					language: k.P,
 					subreddit: v.G
 				}),
 				T = Object(r.b)(R, (e, t) => {
@@ -1461,10 +1461,10 @@
 						n = t.redditStyle || Object(f.m)(e, {
 							subredditId: s
 						}),
-						o = Object(g.Q)(e);
+						o = Object(g.R)(e);
 					return n || o
 				},
-				nigtmode: g.Q,
+				nigtmode: g.R,
 				subredditId: m.m,
 				topPostVariant: x.d
 			}));
@@ -1552,7 +1552,7 @@
 				o = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.c)({
-				language: r.O
+				language: r.P
 			});
 
 			function i(e) {
@@ -2310,4 +2310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.1427c750e818069fd08d.js.map
+//# sourceMappingURL=ModQueuePages.b055b55fd7f93ee8ecb4.js.map

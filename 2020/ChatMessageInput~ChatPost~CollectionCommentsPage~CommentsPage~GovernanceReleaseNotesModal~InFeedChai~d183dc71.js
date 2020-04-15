@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.d39d2e0b537882f68335.js
-// Retrieved at 4/15/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5acaed3726c0e131e5e8.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -47,7 +47,7 @@
 				h = n("./src/reddit/components/Media/EmbedBox/index.m.less"),
 				m = n.n(h);
 			const b = Object(o.b)(() => Object(i.c)({
-				isNightmodeOn: p.Q
+				isNightmodeOn: p.R
 			}));
 			t.a = b(e => {
 				const t = {
@@ -155,7 +155,7 @@
 				},
 				v = Object(c.c)({
 					postPermalink: b.L,
-					shouldOpenPostInNewTab: f.S
+					shouldOpenPostInNewTab: f.T
 				}),
 				I = Object(i.b)(v);
 			t.a = I(e => e.outboundUrl ? o.a.createElement("a", {
@@ -1176,7 +1176,7 @@
 			})), n.d(t, "i", (function() {
 				return q
 			})), n.d(t, "e", (function() {
-				return Q
+				return Z
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -1315,13 +1315,13 @@
 					}, "r/".concat(e))
 				}
 			}
-			const H = Object(u.c)(D),
-				R = Object(I.c)({
+			const R = Object(u.c)(D),
+				H = Object(I.c)({
 					isFeatureFlagEnabled: B.b,
 					isUserInTreatment: B.e,
 					userVariant: B.a
 				});
-			var U = Object(v.b)(R)(e => {
+			var U = Object(v.b)(H)(e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -1329,7 +1329,7 @@
 						userVariant: r,
 						rtJsonElementProps: o
 					} = e;
-					if (!n || !t) return a.a.createElement(H, {
+					if (!n || !t) return a.a.createElement(R, {
 						subredditName: s,
 						rtJsonElementProps: o
 					});
@@ -1346,7 +1346,7 @@
 								rtJsonElementProps: o
 							});
 						default:
-							return a.a.createElement(H, {
+							return a.a.createElement(R, {
 								subredditName: s,
 								rtJsonElementProps: o
 							})
@@ -1360,7 +1360,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : Q(e, t, a))
+						o.push(e.e === h.w ? e.t : Z(e, t, a))
 					}
 					const d = c.w[r - 1];
 					return a.a.createElement(d, {
@@ -1480,7 +1480,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(Z(r, o));
+						if (r.e === h.A) s.push(Q(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, n)));
@@ -1496,18 +1496,18 @@
 									media: e
 								}))
 							}
-						} else s.push(Q(r, n, o))
+						} else s.push(Z(r, n, o))
 					}
 					return s
 				},
-				Q = (e, t, n) => {
+				Z = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
 							return a.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a
-							}, Z({
+							}, Q({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1531,7 +1531,7 @@
 							}, e.t)
 					}
 				},
-				Z = (e, t) => {
+				Q = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.d39d2e0b537882f68335.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5acaed3726c0e131e5e8.js.map

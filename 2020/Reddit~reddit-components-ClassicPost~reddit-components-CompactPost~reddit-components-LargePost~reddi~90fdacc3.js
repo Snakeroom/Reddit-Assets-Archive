@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.0ffc272e5df0eaa02dd1.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.564560560ae1c5cbd305.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -429,7 +429,7 @@
 				y = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				j = s.n(y);
 			const C = Object(i.b)(() => Object(o.c)({
-				labelNSFW: c.N
+				labelNSFW: c.O
 			}));
 			t.a = C(Object(a.c)(e => {
 				let {
@@ -881,7 +881,7 @@
 				u = s("./src/reddit/models/Flair/index.ts"),
 				m = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.N
+					labelNSFW: m.O
 				}),
 				b = Object(a.b)(p),
 				h = e => {
@@ -1695,7 +1695,7 @@
 							subredditId: s.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: V.S
+					shouldOpenPostInNewTab: V.T
 				}),
 				Q = Object(o.b)(Z),
 				G = e => {
@@ -2128,7 +2128,7 @@
 				f = s("./src/reddit/components/VerticalVotes/index.m.less"),
 				x = s.n(f);
 			const g = Object(a.c)({
-					isNightmode: h.Q
+					isNightmode: h.R
 				}),
 				v = Object(o.b)(g),
 				y = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
@@ -3605,4 +3605,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.0ffc272e5df0eaa02dd1.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.564560560ae1c5cbd305.js.map

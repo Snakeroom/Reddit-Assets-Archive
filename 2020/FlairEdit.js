@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.c3c3536d98064e3e116d.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.f1bd4438019d8a83539e.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/fbjs/lib/emptyFunction.js": function(e, t, o) {
@@ -168,9 +168,9 @@
 					}))))
 				},
 				D = o("./src/reddit/controls/Button/index.tsx"),
-				_ = o("./src/reddit/layout/row/Inline/index.tsx"),
-				P = o("./src/reddit/controls/EmojiPicker/Footer/index.m.less"),
-				k = o.n(P),
+				P = o("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = o("./src/reddit/controls/EmojiPicker/Footer/index.m.less"),
+				k = o.n(_),
 				R = e => {
 					const {
 						className: t,
@@ -178,7 +178,7 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(p.a)(k.a.footer, t)
-					}, o && a.a.createElement(_.a, {
+					}, o && a.a.createElement(P.a, {
 						className: k.a.emojiInfo
 					}, a.a.createElement("img", {
 						className: k.a.emojiPreview,
@@ -247,7 +247,7 @@
 				},
 				H = Object(c.c)({
 					emojis: y.c,
-					language: I.O
+					language: I.P
 				}),
 				G = {
 					onGetSubredditEmojis: g.l
@@ -360,7 +360,7 @@
 						onMouseDown: this.handleMouseDown,
 						onClick: this.handleClick,
 						onMouseOver: this.handleMouseOver
-					}, a.a.createElement(_.a, null, a.a.createElement(ee.a, {
+					}, a.a.createElement(P.a, null, a.a.createElement(ee.a, {
 						className: oe.a.emojiImageDisplay,
 						backgroundImage: e.url
 					}), a.a.createElement("div", {
@@ -380,7 +380,7 @@
 					})
 				}),
 				ae = Object(c.c)({
-					language: I.O,
+					language: I.P,
 					filteredEmojis: re
 				}),
 				le = {
@@ -525,7 +525,7 @@
 						r = "";
 					return o.type === ve.Image ? (i = (n = Oe(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
 				},
-				_e = (e, t) => {
+				Pe = (e, t) => {
 					const o = e.getSelection(),
 						i = o.merge({
 							focusOffset: o.getAnchorOffset()
@@ -533,7 +533,7 @@
 						n = De(e.getCurrentContent(), i, t);
 					return s.EditorState.push(e, n, "insert-characters")
 				},
-				Pe = Object(ue.a)(e => {
+				_e = Object(ue.a)(e => {
 					const t = e.getSelection(),
 						o = t.getStartOffset();
 					if (!t.isCollapsed()) return;
@@ -548,7 +548,7 @@
 					} : void 0
 				}),
 				ke = (e, t) => {
-					const o = Pe(e);
+					const o = _e(e);
 					if (!o) return;
 					let i = e.getCurrentContent();
 					const n = i.getPlainText().charAt(o.endIndex),
@@ -594,7 +594,7 @@
 						const i = Re(t, e);
 						return i ? (this.onChange(i), Ne) : Fe
 					}, this.checkEditorStateForEmojis = e => {
-						const t = Pe(e);
+						const t = _e(e);
 						this.setState({
 							emojiString: t ? t.emojiString : "",
 							suppressEmojiDropdown: !!t && this.state.suppressEmojiDropdown
@@ -638,7 +638,7 @@
 					if (this.props.editorState.getSelection().getHasFocus() && !this.state.suppressEmojiDropdown && this.state.emojiString) {
 						const {
 							offsetKey: e
-						} = Pe(this.props.editorState), t = this.containerRef.querySelector('[data-offset-key="'.concat(e, '"]')), {
+						} = _e(this.props.editorState), t = this.containerRef.querySelector('[data-offset-key="'.concat(e, '"]')), {
 							left: o,
 							bottom: s
 						} = t.getBoundingClientRect();
@@ -877,7 +877,7 @@
 							id: Object(m.b)(e.name),
 							url: e.url
 						};
-						let o = _e(this.state.editorState, t);
+						let o = Pe(this.state.editorState, t);
 						o = s.EditorState.forceSelection(o, o.getSelection()), this.setEditorState(o), this.onToggleEmojiPicker()
 					}, this.shouldEnableEmojis = () => {
 						const {
@@ -1296,4 +1296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FlairEdit.c3c3536d98064e3e116d.js.map
+//# sourceMappingURL=FlairEdit.f1bd4438019d8a83539e.js.map

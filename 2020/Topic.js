@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.4f9400f898906e5bd28d.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.5aff078bde613e29e04b.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -889,7 +889,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				language: a.O,
+				language: a.P,
 				userIsSubscriber: i.Z
 			}), (e, t) => {
 				let {
@@ -1101,10 +1101,10 @@
 				F = s("./src/reddit/models/Widgets/index.ts"),
 				B = s("./src/reddit/selectors/subreddit.ts"),
 				R = s("./src/reddit/selectors/user.ts"),
-				W = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
-				H = s.n(W);
+				H = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
+				W = s.n(H);
 			const M = Object(i.c)({
-				isLoggedIn: R.G,
+				isLoggedIn: R.H,
 				subreddit: B.y,
 				subredditAboutInfo: B.v
 			});
@@ -1129,20 +1129,20 @@
 						subreddit: s
 					} = this.props;
 					return s ? r.a.createElement("div", {
-						className: Object(a.a)(H.a.Container, e)
+						className: Object(a.a)(W.a.Container, e)
 					}, r.a.createElement(j.b, {
-						className: H.a.Icon,
+						className: W.a.Icon,
 						subredditOrProfile: s
 					}), r.a.createElement("div", {
-						className: H.a.Text
+						className: W.a.Text
 					}, r.a.createElement(P.a, {
-						className: H.a.Link,
+						className: W.a.Link,
 						onMouseDown: this.trackSubredditClick,
 						to: s.url
 					}, r.a.createElement("div", {
-						className: H.a.Name
+						className: W.a.Name
 					}, Object(k.b)(s.displayText || s.name)), r.a.createElement("div", {
-						className: H.a.Members
+						className: W.a.Members
 					}, C.fbt._({
 						"*": "{subscribers count} members",
 						_1: "member"
@@ -1150,8 +1150,8 @@
 						hk: "48BXj1"
 					})))), r.a.createElement(w.a, {
 						border: !1,
-						className: Object(a.a)(H.a.SubscribeButton, {
-							[H.a.hidden]: !t
+						className: Object(a.a)(W.a.SubscribeButton, {
+							[W.a.hidden]: !t
 						}),
 						identifier: {
 							name: s.name,
@@ -1170,19 +1170,19 @@
 						isLoading: !0
 					});
 					return r.a.createElement("div", {
-						className: Object(a.a)(H.a.Container, t)
+						className: Object(a.a)(W.a.Container, t)
 					}, r.a.createElement("div", {
-						className: Object(a.a)(H.a.Icon, H.a.placeholder, s)
+						className: Object(a.a)(W.a.Icon, W.a.placeholder, s)
 					}), r.a.createElement("div", {
-						className: H.a.Text
+						className: W.a.Text
 					}, r.a.createElement("div", {
-						className: H.a.Link
+						className: W.a.Link
 					}, r.a.createElement("div", {
-						className: Object(a.a)(H.a.Name, H.a.placeholder, s)
+						className: Object(a.a)(W.a.Name, W.a.placeholder, s)
 					}), r.a.createElement("div", {
-						className: Object(a.a)(H.a.Members, H.a.placeholder, s)
+						className: Object(a.a)(W.a.Members, W.a.placeholder, s)
 					}))), r.a.createElement("div", {
-						className: H.a.SubscribeButton
+						className: W.a.SubscribeButton
 					}))
 				},
 				U = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
@@ -1253,7 +1253,7 @@
 			const {
 				fbt: le
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ue = Object(i.c)({
-				isLoggedIn: R.G,
+				isLoggedIn: R.H,
 				subreddit: B.P,
 				subredditAboutInfo: (e, t) => {
 					let {
@@ -1434,13 +1434,13 @@
 				topicSlug: s
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.g)(t.match.params))
-			})), We = (e, t) => e === Ne.Communities ? te.g.Large : t;
-			class He extends r.a.Component {
+			})), He = (e, t) => e === Ne.Communities ? te.g.Large : t;
+			class We extends r.a.Component {
 				constructor(e) {
 					super(e), this.openTab = e => {
 						this.setState({
 							activeTab: e,
-							activeLayout: We(e, this.props.layout)
+							activeLayout: He(e, this.props.layout)
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
 						this.openTab(Ne.Communities)
@@ -1474,7 +1474,7 @@
 				static getDerivedStateFromProps(e, t) {
 					const s = t.activeTab && e.tabs && e.tabs.includes(t.activeTab) ? t.activeTab : e.tabs ? e.tabs[0] : void 0;
 					return {
-						activeLayout: We(s, e.layout),
+						activeLayout: He(s, e.layout),
 						activeTab: s
 					}
 				}
@@ -1532,8 +1532,8 @@
 					}))
 				}
 			}
-			t.default = Ie(Re(He))
+			t.default = Ie(Re(We))
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.4f9400f898906e5bd28d.js.map
+//# sourceMappingURL=Topic.5aff078bde613e29e04b.js.map

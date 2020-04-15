@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.c09140081b251c663b56.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.63f1865bef9384651825.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -57,10 +57,10 @@
 				w = s.n(j),
 				R = s("./src/lib/classNames/index.ts"),
 				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				O = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				B = s.n(O);
+				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				O = s.n(B);
 			const k = 400;
-			class M extends l.a.Component {
+			class P extends l.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
 						query: ""
@@ -84,23 +84,23 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return l.a.createElement("div", {
-						className: Object(R.a)(B.a.searchBox, this.props.className)
+						className: Object(R.a)(O.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
-						className: B.a.searchIconButton,
+						className: O.a.searchIconButton,
 						onClick: this.focusOnInput
 					}, l.a.createElement(S.a, {
-						className: B.a.searchIcon
+						className: O.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
 						type: "text",
-						className: B.a.searchInput,
+						className: O.a.searchInput,
 						placeholder: i.fbt._("Search GIFs", null, {
 							hk: "3upjCv"
 						}),
 						value: t,
 						onChange: this.onQueryChange
 					}), t.length < 25 && l.a.createElement("div", {
-						className: B.a.poweredByGiphy,
+						className: O.a.poweredByGiphy,
 						style: {
 							backgroundImage: "url(".concat(g.a.assetPath, "/img/memberships/").concat(s)
 						},
@@ -108,10 +108,10 @@
 					}))
 				}
 			}
-			const P = Object(p.c)({
-				isNightMode: C.Q
+			const M = Object(p.c)({
+				isNightMode: C.R
 			});
-			var H = Object(d.b)(P)(M),
+			var H = Object(d.b)(M)(P),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				U = s.n(A);
 			const F = 4,
@@ -301,7 +301,7 @@
 					} = t;
 					return Object(E.C)(e, s.id)
 				},
-				language: C.O
+				language: C.P
 			});
 			t.a = Object(u.c)(Object(d.b)(q, e => ({
 				showErrorToast: t => e(Object(h.e)({
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.c09140081b251c663b56.js.map
+//# sourceMappingURL=GifTooltip.63f1865bef9384651825.js.map

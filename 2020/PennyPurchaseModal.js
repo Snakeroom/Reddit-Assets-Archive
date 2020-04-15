@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.b6c89976033ab22da6ca.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.344f7df849cc35e37443.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -53,7 +53,7 @@
 					coinBalance: v.d,
 					gildThingId: O.q,
 					isIframed: C.h,
-					nightmode: v.Q,
+					nightmode: v.R,
 					savedCardsPending: O.t,
 					selectedAward: M.a,
 					selectedPayment: O.c,
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.b6c89976033ab22da6ca.js.map
+//# sourceMappingURL=PennyPurchaseModal.344f7df849cc35e37443.js.map

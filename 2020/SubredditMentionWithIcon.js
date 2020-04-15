@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9440475f4a3ec5b42c56.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ab9a7f0ef0f9c8fd971c.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -311,7 +311,7 @@
 				q = s.n(H);
 			const {
 				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(c.a)(e => e, A.N, A.d, D.O, (e, t, s, n) => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(c.a)(e => e, A.N, A.d, D.P, (e, t, s, n) => {
 				return {
 					crosspost: s,
 					language: n,
@@ -376,10 +376,10 @@
 					})))
 				}
 			}
-			var K = Object(a.b)(R, (e, t) => ({
+			var z = Object(a.b)(R, (e, t) => ({
 					openLightbox: t => e(Object(B.a)(t.permalink))
 				}))(V),
-				z = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
+				K = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
 				U = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				W = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
 				Y = s.n(W),
@@ -392,9 +392,9 @@
 					}
 					return s
 				};
-			const Q = Object(z.t)(),
+			const Q = Object(K.t)(),
 				J = Object(c.c)({
-					isFakeSubreddit: z.x
+					isFakeSubreddit: K.x
 				});
 			var Z = Q(Object(a.b)(J)(e => {
 					var {
@@ -516,8 +516,8 @@
 				fbt: he
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), fe = e => "".concat("subreddit-mention", "-").concat(e), Oe = Object(c.c)({
 				haveError: S.d,
-				hideNSFWPref: D.y,
-				isEmployee: D.D,
+				hideNSFWPref: D.z,
+				isEmployee: D.E,
 				isPending: S.c,
 				postIds: S.f,
 				subreddit: j.a,
@@ -647,7 +647,7 @@
 						className: pe.a.top
 					}), he._("Top posts of the last week", null, {
 						hk: "37poFw"
-					})), n.length > 0 ? n.map(e => o.a.createElement(K, {
+					})), n.length > 0 ? n.map(e => o.a.createElement(z, {
 						containerOnClick: this.onClickPost,
 						key: e,
 						postId: e,
@@ -901,7 +901,7 @@
 				o = s("./src/reddit/selectors/subreddit.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				language: a.O,
+				language: a.P,
 				userIsSubscriber: o.Z
 			}), (e, t) => {
 				let {
@@ -1046,4 +1046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.9440475f4a3ec5b42c56.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.ab9a7f0ef0f9c8fd971c.js.map

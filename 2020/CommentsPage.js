@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.95252caa1c09054e4381.js
-// Retrieved at 4/15/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.2d30a91ad516eda186f9.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2941,7 +2941,7 @@
 						} = t;
 						return Object(z.b)(Xe(s.id))(e)
 					},
-					isLoggedIn: _.G,
+					isLoggedIn: _.H,
 					postIsArchived: (e, t) => {
 						let {
 							comment: s
@@ -3346,9 +3346,9 @@
 					},
 					highlightTagsEnabled: Ot,
 					isEditing: C.z,
-					isLoggedIn: _.G,
+					isLoggedIn: _.H,
 					isPendingDeletion: C.A,
-					language: _.O,
+					language: _.P,
 					moderatorPermissions: (e, t) => {
 						const s = Object(C.n)(e, t);
 						return s ? Object(y.j)(e, {
@@ -3735,7 +3735,7 @@
 					const c = n === v.a.Last ? d.previousVisits[d.previousVisits.length - 1] : d.previousVisits[0];
 					return (a || i) && r.created > c
 				},
-				isNightmodeOn: _.Q
+				isNightmodeOn: _.R
 			}), (e, t) => {
 				let {
 					commentLink: s,
@@ -3873,7 +3873,7 @@
 					allCollapsed: C.a,
 					commentLinks: C.k,
 					commentThreadLinkSet: C.p,
-					language: _.O,
+					language: _.P,
 					measureScrollFPS: me.d.measureScrollFPS,
 					moreComments: C.b,
 					postPermalink: E.L
@@ -4246,7 +4246,7 @@
 					isChatPostExperiment: g.d,
 					isPostSEOEligible: x.f,
 					postPermalink: f.L,
-					shouldOpenPostInNewTab: v.S
+					shouldOpenPostInNewTab: v.T
 				})),
 				E = e => {
 					let t, {
@@ -4344,9 +4344,9 @@
 			const O = Object(c.c)({
 					canShowAds: (e, t) => {
 						const s = Object(h.a)(e, t),
-							n = !u.d.rabbitHole(e) && !Object(p.G)(t.pageLayer) && !Object(b.x)(e),
-							o = e.meta.isSessionSeo && !Object(b.G)(e);
-						return s && n && (o || Object(b.D)(e))
+							n = !u.d.rabbitHole(e) && !Object(p.G)(t.pageLayer) && !Object(b.y)(e),
+							o = e.meta.isSessionSeo && !Object(b.H)(e);
+						return s && n && (o || Object(b.E)(e))
 					},
 					ads: e => e.commentsPage.ads
 				}),
@@ -4478,7 +4478,7 @@
 					}
 				}),
 				L = Object(c.c)({
-					isLoggedIn: P.G,
+					isLoggedIn: P.H,
 					postSEOV2IdCardVariant: j.k,
 					widgets: Object(p.a)(w.r)
 				}),
@@ -4620,7 +4620,7 @@
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = "500px", O = 3, y = Object(i.c)({
 				hasDismissedTruncation: u.b,
-				isLoggedIn: g.F,
+				isLoggedIn: g.G,
 				isPostSEOEligible: b.f,
 				listingBelowAllVariant: h.b,
 				postSEOV2TruncatedVariant: b.l
@@ -4901,9 +4901,9 @@
 				N = Object(d.c)({
 					isCurrentUserProfilePost: x.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.zb.TOPIC),
-					language: f.O,
+					language: f.P,
 					post: x.N,
-					shouldOpenPostInNewTab: f.S,
+					shouldOpenPostInNewTab: f.T,
 					subreddit: x.Z
 				}),
 				M = Object(i.b)(N);
@@ -5845,7 +5845,7 @@
 				Ee = Object(a.c)({
 					activeModalId: me.a,
 					layout: U.M,
-					userIsOp: z.eb,
+					userIsOp: z.fb,
 					subreddit: U.q
 				}),
 				_e = Object(i.b)(Ee, (e, t) => {
@@ -8248,7 +8248,7 @@
 					flairStyleTemplate: le.Q,
 					currentUser: A.i,
 					crosspost: F.d,
-					hideNSFWPref: A.y,
+					hideNSFWPref: A.z,
 					isAdminOrMod: (e, t) => {
 						const s = Object(F.Z)(e, {
 							postId: t.postId
@@ -8260,7 +8260,7 @@
 					isCurrentUserProfilePost: F.j,
 					isExpanded: F.l,
 					post: F.N,
-					language: A.O,
+					language: A.P,
 					metaId: (e, t) => e.posts.metaMap[t.postId],
 					moderatorPermissions: L.i,
 					modModeEnabled: le.O,
@@ -8268,7 +8268,7 @@
 					showEditFlair: pe.a,
 					subredditOrProfile: F.Z,
 					isEditing: R.C,
-					userIsOp: A.eb
+					userIsOp: A.fb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -8943,7 +8943,7 @@
 					collection: C.r,
 					error: C.c,
 					isPending: C.h,
-					language: O.O
+					language: O.P
 				}),
 				W = Object(i.b)(D, (e, t) => ({
 					onCreate: (t, s) => e(Object(l.b)(t, s)),
@@ -9627,7 +9627,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(re.eb)(e, n) && Object(re.db)(e, {
+						return Object(K.B)(e, n) && s && Object(re.fb)(e, n) && Object(re.eb)(e, {
 							userName: Object(ne.N)(e, {
 								postId: n.postId
 							}).author
@@ -9635,7 +9635,7 @@
 					},
 					subredditOrProfile: ne.Z,
 					hasSubredditRules: oe.k,
-					userIsOp: re.eb,
+					userIsOp: re.fb,
 					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -10250,7 +10250,7 @@
 				}),
 				D = Object(c.c)({
 					isChatPost: E.d,
-					isLoggedIn: k.F,
+					isLoggedIn: k.G,
 					shouldShowSubredditUpsell: B
 				}),
 				W = Object(d.b)(D, e => ({
@@ -10746,7 +10746,7 @@
 				return {
 					canShowAd: Object(i.a)(e, {
 						postId: s
-					}) && !Object(c.x)(e) && !Object(d.a)(e),
+					}) && !Object(c.y)(e) && !Object(d.a)(e),
 					waitForProgrammatic: Object(a.d)(e, {
 						commentsPageKey: n
 					})
@@ -11369,7 +11369,7 @@
 			const te = Object(c.a)("spPolls", I),
 				se = Object(d.t)(),
 				ne = Object(i.c)({
-					language: l.O,
+					language: l.P,
 					layout: d.M,
 					widget: m.f
 				}),
@@ -11959,7 +11959,7 @@
 				p = s("./src/reddit/actions/subscription/index.ts"),
 				u = s("./src/reddit/selectors/user.ts");
 			const h = Object(d.c)({
-				language: u.O
+				language: u.P
 			});
 			var b = Object(i.b)(h, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -12025,7 +12025,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				P = Object(d.c)({
-					hideNSFWPref: u.y
+					hideNSFWPref: u.z
 				}),
 				I = Object(i.b)(P)(e => r.a.createElement("div", {
 					className: k.a.communityItemContainer
@@ -12528,10 +12528,10 @@
 						n = t.redditStyle || Object(x.m)(e, {
 							subredditId: s
 						}),
-						o = Object(f.Q)(e);
+						o = Object(f.R)(e);
 					return n || o
 				},
-				nigtmode: f.Q,
+				nigtmode: f.R,
 				subredditId: m.m,
 				topPostVariant: g.d
 			}));
@@ -12695,7 +12695,7 @@
 				j = p.a.wrapped(a.a, "RawHTMLDisplay", C.a);
 			var w = Object(r.b)(() => Object(i.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: f.Q
+					isNightmodeOn: f.R
 				}))(e => o.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -12747,7 +12747,7 @@
 				}
 			}
 			const U = Object(i.c)({
-				language: f.O
+				language: f.P
 			});
 			var G = Object(r.b)(U)(e => o.a.createElement(d.a, {
 					styles: e.widget.styles,
@@ -13067,7 +13067,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: a.O,
+				language: a.P,
 				userIsSubscriber: i.Z
 			}), (e, t) => {
 				let {
@@ -13089,7 +13089,7 @@
 				o = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const i = Object(o.c)({
-				language: r.O
+				language: r.P
 			});
 
 			function a(e) {
@@ -14927,8 +14927,8 @@
 				return s
 			};
 			const y = Object(r.b)(() => Object(i.c)({
-					showFPR: x.E,
-					showSuspended: x.K
+					showFPR: x.F,
+					showSuspended: x.L
 				})),
 				E = Object(d.a)(e => {
 					var {
@@ -15495,7 +15495,7 @@
 						return Object(le.f)(e, s)
 					},
 					contestModeIsEnabled: ae.E,
-					currentUserShowNSFW: le.T,
+					currentUserShowNSFW: le.U,
 					dismissedSubreddits: se.a,
 					fullyLoaded: $.v,
 					hasModeratorPostPermissions: ie.b,
@@ -15503,10 +15503,10 @@
 					isChatPost: ne.e,
 					isChatPostExperiment: ne.d,
 					isCommentsListTruncated: ee.a,
-					isLoggedIn: le.G,
-					isNightmodeOn: le.Q,
+					isLoggedIn: le.H,
+					isNightmodeOn: le.R,
 					isTooltipOpen: (e, t) => !!Object(ce.a)(e),
-					language: le.O,
+					language: le.P,
 					listingBelowAllVariant: ze.b,
 					origin: re.j,
 					post: $.F,
@@ -15527,7 +15527,7 @@
 						tooltipIdPrefix: B.a,
 						tooltipType: Te.c.StickyPost
 					}))(e),
-					userPrefs: le.gb
+					userPrefs: le.hb
 				}),
 				dt = (e, t) => ({
 					dismissTruncation: t => e(Object(me.a)({
@@ -16272,4 +16272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.95252caa1c09054e4381.js.map
+//# sourceMappingURL=CommentsPage.2d30a91ad516eda186f9.js.map

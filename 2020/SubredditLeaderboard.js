@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c08f5381fdb508012305.js
-// Retrieved at 4/15/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.cae3d3fe26f092247353.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -684,14 +684,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = async (e, t) => {
+			const M = async (e, t) => {
 				const r = await Object(F.a)(e, t);
 				if (r && r.ok) {
 					const e = r.body,
 						t = e && e.data && e.data.subredditLeaderboard;
 					return Object(B.c)(t)
 				}
-			}, M = async e => {
+			}, H = async e => {
 				const t = s()(A.a, 5),
 					r = await Object(W.a)(e, {
 						names: t
@@ -709,7 +709,7 @@
 							category: e,
 							first: t
 						} = this.props, r = e && e.id;
-						r !== f.l ? (r || r === f.d) && H(this.props.gqlContext(), {
+						r !== f.l ? (r || r === f.d) && M(this.props.gqlContext(), {
 							categoryId: r,
 							first: t
 						}).then(e => {
@@ -722,7 +722,7 @@
 									subreddits: r
 								}
 							}))
-						}).catch(e => console.error("Error >>>", e)) : M(this.props.gqlContext()).then(e => {
+						}).catch(e => console.error("Error >>>", e)) : H(this.props.gqlContext()).then(e => {
 							if (!e) return;
 							const {
 								rankings: t,
@@ -954,10 +954,10 @@
 						n = t.redditStyle || Object(y.m)(e, {
 							subredditId: r
 						}),
-						s = Object(f.Q)(e);
+						s = Object(f.R)(e);
 					return n || s
 				},
-				nigtmode: f.Q,
+				nigtmode: f.R,
 				subredditId: m.m,
 				topPostVariant: b.d
 			}));
@@ -1184,7 +1184,7 @@
 				R = r("./src/reddit/selectors/user.ts");
 			const A = 25,
 				D = .5,
-				H = Object(d.c)({
+				M = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
 							categoryId: r
@@ -1197,7 +1197,7 @@
 						} = t;
 						return Object(B.b)(e, r)
 					},
-					isMod: R.H,
+					isMod: R.I,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -1206,7 +1206,7 @@
 					},
 					subreddits: F.V
 				}),
-				M = Object(i.b)(H, e => ({
+				H = Object(i.b)(M, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(L.a)(t, r))
 				}));
 			class Q extends o.a.Component {
@@ -1287,7 +1287,7 @@
 					})))))
 				}
 			}
-			var G = Object(m.c)(M(Q)),
+			var G = Object(m.c)(H(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				V = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				K = r.n(V);
@@ -1558,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.c08f5381fdb508012305.js.map
+//# sourceMappingURL=SubredditLeaderboard.cae3d3fe26f092247353.js.map

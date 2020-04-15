@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.ce26a4737823ec556a74.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.86c12303588dfe9da427.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -68,8 +68,8 @@
 				H = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				j = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				M = r("./src/reddit/icons/svgs/Karma/index.tsx"),
-				O = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				N = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				N = r("./src/reddit/icons/svgs/Premium/index.tsx"),
+				O = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				y = r("./src/reddit/actions/inContextModeration.ts"),
 				U = r("./src/reddit/actions/modal.ts"),
 				P = r("./src/reddit/actions/subredditModeration.ts"),
@@ -90,7 +90,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(p.cb)(e, {
+				user: (e, t) => Object(p.db)(e, {
 					userName: t.username
 				})
 			});
@@ -135,7 +135,7 @@
 					})))
 				}
 			}
-			var J = Object(a.b)(V, (e, t) => {
+			var z = Object(a.b)(V, (e, t) => {
 					let {
 						username: r,
 						subredditId: n,
@@ -162,7 +162,7 @@
 						}
 					}
 				})(W),
-				z = r("./src/reddit/actions/userFlair.ts"),
+				J = r("./src/reddit/actions/userFlair.ts"),
 				X = r("./src/reddit/icons/svgs/Tag/index.tsx"),
 				G = r("./src/reddit/components/Hovercards/AuthorHovercard/ModFlairActions.m.less"),
 				$ = r.n(G);
@@ -170,7 +170,7 @@
 				fbt: ee
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), te = x.a.wrapped(X.a, "FlairIcon", $.a);
 			var re = Object(a.b)(null, (e, t) => ({
-					onToggleUserFlairModal: () => e(Object(z.p)(t.subredditId, t.username))
+					onToggleUserFlairModal: () => e(Object(J.p)(t.subredditId, t.username))
 				}))(e => s.a.createElement(k.a, {
 					role: "button",
 					onClick: () => {
@@ -195,7 +195,7 @@
 				de = x.a.wrapped(_.a, "SubscribeButton", se.a),
 				ie = x.a.wrapped(L.a, "ChatButton", se.a),
 				ce = x.a.wrapped(M.a, "KarmaIcon", se.a),
-				le = x.a.wrapped(O.a, "PremiumIcon", se.a),
+				le = x.a.wrapped(N.a, "PremiumIcon", se.a),
 				ue = x.a.wrapped(g.a, "UserNameLink", se.a),
 				me = x.a.div("UserNameMetaData", se.a),
 				pe = x.a.div("MetaDataItem", se.a),
@@ -283,7 +283,7 @@
 						language: c,
 						user: g,
 						userName: v
-					}), j && s.a.createElement(N.a, {
+					}), j && s.a.createElement(O.a, {
 						recentAwardings: j,
 						username: v
 					}), d && !o && s.a.createElement(ie, {
@@ -298,7 +298,7 @@
 						},
 						getEventFactory: e => Object(H.g)(e ? "unfollow" : "follow", r),
 						small: !0
-					})), E && r && !o && p && s.a.createElement(J, {
+					})), E && r && !o && p && s.a.createElement(z, {
 						contextId: r,
 						language: c,
 						subredditId: p,
@@ -322,25 +322,25 @@
 					isOpen: t
 				}, e))
 			};
-			const Oe = Object(o.c)({
+			const Ne = Object(o.c)({
 					tokenName: c.p,
 					activeTooltipId: m.a,
 					isCurrentUser: (e, t) => {
 						const r = Object(p.i)(e);
 						return !!r && Object(i.f)(r) === t.userName
 					},
-					isLoggedIn: p.G,
-					hideNSFWPref: p.y,
-					language: p.O,
+					isLoggedIn: p.H,
+					hideNSFWPref: p.z,
+					language: p.P,
 					moderatorPermissions: u.j,
 					origin: l.j,
-					user: p.cb,
+					user: p.db,
 					userFlair: v.c
 				}),
-				Ne = Object(a.b)(Oe, (e, t) => ({
+				Oe = Object(a.b)(Ne, (e, t) => ({
 					onHideTooltip: () => e(Object(d.i)())
 				}));
-			t.a = Ne(e => s.a.createElement("div", {
+			t.a = Oe(e => s.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
@@ -810,7 +810,7 @@
 			})), r.d(t, "n", (function() {
 				return M
 			})), r.d(t, "k", (function() {
-				return O
+				return N
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = r("./src/reddit/endpoints/governance/crypto.ts"),
@@ -923,11 +923,11 @@
 						address: void 0
 					}
 				},
-				O = (e, t) => {
+				N = (e, t) => {
 					const r = E(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.ce26a4737823ec556a74.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.86c12303588dfe9da427.js.map

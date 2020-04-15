@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.0411d50aeb81dbd12e97.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.9f1243c30478cab20065.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -112,8 +112,8 @@
 				_ = g.a.wrapped(u.i, "SecondaryButton", x.a),
 				y = g.a.wrapped(d.c, "StyledTooltip", x.a),
 				T = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Y)(e),
-					userIsSuspended: b.K
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.Z)(e),
+					userIsSuspended: b.L
 				});
 			t.a = Object(i.b)(T, (e, t) => {
 				let {
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard~SubredditWiki.0411d50aeb81dbd12e97.js.map
+//# sourceMappingURL=IdCard~SubredditWiki.9f1243c30478cab20065.js.map

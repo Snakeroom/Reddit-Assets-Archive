@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.3ece041f6afdaf3fa141.js
-// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.09eb0e048785004d21b0.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -830,7 +830,7 @@
 					activeSaleConfig: j.a,
 					coinPackages: j.b,
 					isGold: O.p,
-					isLoggedIn: O.G,
+					isLoggedIn: O.H,
 					premiumPackages: j.d,
 					purchaseCatalogPending: j.f,
 					shouldShowCoinPurchaseModal: I.r
@@ -1026,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.3ece041f6afdaf3fa141.js.map
+//# sourceMappingURL=Coins.09eb0e048785004d21b0.js.map

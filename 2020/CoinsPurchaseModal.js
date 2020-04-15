@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.5d965a89e8bf7d0406ab.js
-// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.e03f2c7fef2352955f93.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, s, a) {
@@ -117,7 +117,7 @@
 					dealCoinPackages: O.c,
 					gildThingId: k.q,
 					isIframed: E.h,
-					nightmode: f.Q,
+					nightmode: f.R,
 					savedCardsPending: k.t,
 					selectedAward: v.a,
 					selectedPayment: k.c,
@@ -302,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.5d965a89e8bf7d0406ab.js.map
+//# sourceMappingURL=CoinsPurchaseModal.e03f2c7fef2352955f93.js.map

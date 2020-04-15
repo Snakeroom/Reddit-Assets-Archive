@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.897de2e14912f82c2b03.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.18a7c24f6e638247efc8.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -283,7 +283,7 @@
 					collection: O.r,
 					displayLayout: O.b,
 					isPending: e => Object(O.h)(e) || Object(O.i)(e) || Object(O.k)(e) || Object(O.m)(e),
-					language: P.O,
+					language: P.P,
 					postsByIds: O.p
 				}),
 				R = Object(c.b)(B, (e, t) => ({
@@ -1048,4 +1048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.897de2e14912f82c2b03.js.map
+//# sourceMappingURL=editCollectionModal.18a7c24f6e638247efc8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.795b83a4dd85722f4930.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a52d4250a31451b0acbb.js
+// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -119,7 +119,7 @@
 						hk: "439kAh"
 					})))))
 				};
-			class O extends r.a.Component {
+			class v extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -182,10 +182,10 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var v = O,
+			var O = v,
 				T = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
-				L = n("./src/reddit/components/SidebarContainer/index.tsx"),
-				P = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				P = n("./src/reddit/components/SidebarContainer/index.tsx"),
+				L = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				F = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				w = n("./src/reddit/actions/post.ts"),
 				I = n("./src/reddit/components/MiniPost/index.tsx"),
@@ -228,7 +228,7 @@
 				X = n("./src/reddit/selectors/posts.ts"),
 				V = n("./src/reddit/selectors/user.ts");
 			const K = Object(i.c)({
-				language: V.O,
+				language: V.P,
 				recentPosts: X.W
 			});
 			var G = Object(o.b)(K, (e, t) => ({
@@ -281,7 +281,7 @@
 				de = n("./src/lib/constants/index.ts"),
 				le = n("./src/reddit/helpers/createBannerProperties/index.ts");
 			const me = Object(i.c)({
-					isMod: V.H,
+					isMod: V.I,
 					isLoggedIn: e => e.user.temporaryGQL.isLoggedIn,
 					isUpAndComingExperiment: ie.b,
 					trendingSubredditIds: z.X,
@@ -311,7 +311,7 @@
 						listingName: i,
 						trendingSubredditIds: d
 					} = this.props;
-					return r.a.createElement(L.a, {
+					return r.a.createElement(P.a, {
 						className: t
 					}, r.a.createElement(F.a, {
 						categories: ee.i,
@@ -334,9 +334,9 @@
 						})
 					})), a && r.a.createElement(l.a, null, r.a.createElement(c.a, {
 						listingName: i
-					})), pe(this.props) && r.a.createElement(G, null), n && r.a.createElement(l.a, null, r.a.createElement(v, {
+					})), pe(this.props) && r.a.createElement(G, null), n && r.a.createElement(l.a, null, r.a.createElement(O, {
 						links: n
-					})), r.a.createElement(P.a, {
+					})), r.a.createElement(L.a, {
 						adComponent: r.a.createElement(T.a, {
 							placement: de.c.BELOW_THE_FOLD,
 							listingName: i,
@@ -379,7 +379,7 @@
 				h = n("./src/reddit/selectors/user.ts"),
 				x = n("./src/reddit/components/MiniPost/index.m.less"),
 				_ = n.n(x);
-			const k = Object(i.a)(e => e, b.N, b.d, h.O, (e, t, n, s) => {
+			const k = Object(i.a)(e => e, b.N, b.d, h.P, (e, t, n, s) => {
 					return {
 						crosspost: n,
 						language: s,
@@ -598,7 +598,7 @@
 						hk: "2rXjVR"
 					})))(e.categoryName) : "Today's Top Growing Communities"))))
 				},
-				O = e => o.a.createElement("ol", null, e.rankings && e.rankings.map(t => {
+				v = e => o.a.createElement("ol", null, e.rankings && e.rankings.map(t => {
 					const n = e.subreddits[t.id];
 					return o.a.createElement(g.a, {
 						delta: t.rankDelta,
@@ -609,8 +609,8 @@
 						shouldDisplayDelta: e.shouldDisplayDelta,
 						subreddit: n
 					})
-				}), !e.rankings.length && v),
-				v = o.a.createElement(o.a.Fragment, null, m()(5, e => o.a.createElement(h.a, {
+				}), !e.rankings.length && O),
+				O = o.a.createElement(o.a.Fragment, null, m()(5, e => o.a.createElement(h.a, {
 					key: e
 				}))),
 				T = e => {
@@ -629,14 +629,14 @@
 						hk: "Txpck"
 					})))
 				},
-				L = e => o.a.createElement("div", {
+				P = e => o.a.createElement("div", {
 					className: f.a.categoryPicker
 				}, e.categories && e.categories.map(e => o.a.createElement(N, {
 					className: f.a.chip,
 					key: e.name,
 					to: "".concat(_.e).concat(Object(C.f)(e.name), "/")
 				}, e.name)));
-			var P = e => {
+			var L = e => {
 					const t = d()(e.rankings),
 						n = e.subreddits && t && e.subreddits[t.id],
 						s = "".concat(p.a.assetPath, "/img/leaderboard/banner-background.png"),
@@ -650,7 +650,7 @@
 						categoryName: e.categoryName,
 						onSendEventClick: e.onSendEventClick,
 						rankings: e.rankings
-					}), o.a.createElement(O, {
+					}), o.a.createElement(v, {
 						categoryName: e.categoryName,
 						large: e.large,
 						onSendEventClick: e.onSendEventClick,
@@ -662,7 +662,7 @@
 						isSecondaryButton: e.isSecondaryButton,
 						onSendEventClick: e.onSendEventClick,
 						to: r
-					}), e.categories && o.a.createElement(L, {
+					}), e.categories && o.a.createElement(P, {
 						categories: e.categories
 					}))
 				},
@@ -754,7 +754,7 @@
 						s = this.state[n],
 						a = s ? s.rankings : [],
 						r = s ? s.subreddits : {};
-					return o.a.createElement(P, R({
+					return o.a.createElement(L, R({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: a,
@@ -952,4 +952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.795b83a4dd85722f4930.js.map
+//# sourceMappingURL=FrontpageSidebar.a52d4250a31451b0acbb.js.map
