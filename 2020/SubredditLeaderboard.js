@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.cae3d3fe26f092247353.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ea4ffa20d34de2228a7f.js
+// Retrieved at 4/15/2020, 6:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1301,7 +1301,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const X = e => {
+			const Z = e => {
 				const {
 					category: t,
 					children: r,
@@ -1317,7 +1317,7 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var Z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+			var X = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				z = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/helpers/name/index.ts"),
 				q = r("./src/reddit/i18n/components.tsx");
@@ -1368,7 +1368,7 @@
 						}
 					}, s, e && e.map((e, n) => {
 						const s = a + n * r;
-						return o.a.createElement(X, {
+						return o.a.createElement(Z, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1391,7 +1391,7 @@
 						headerClassName: a,
 						initialNumberOfCategories: i
 					} = this.props, d = r && i && r.length > i, l = d && !this.state.isExpanded ? "".concat(t, " More") : "".concat(t, " Less"), m = Object(c.a)(n, K.a.container);
-					return o.a.createElement(Z.a, {
+					return o.a.createElement(X.a, {
 						className: m,
 						contentOnly: !0
 					}, o.a.createElement("div", {
@@ -1415,7 +1415,7 @@
 					key: e
 				}, e)
 			};
-			var de = e => o.a.createElement(Z.a, {
+			var de = e => o.a.createElement(X.a, {
 					className: se.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -1469,7 +1469,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				Ee = Object(u.bc)(p.f),
+				Ee = Object(u.Zb)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(he.c)(e, {
 						categoriesOrder: Ee
@@ -1558,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.cae3d3fe26f092247353.js.map
+//# sourceMappingURL=SubredditLeaderboard.ea4ffa20d34de2228a7f.js.map
