@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.762724c2837c64a6c2a4.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.3ece041f6afdaf3fa141.js
+// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -831,15 +831,15 @@
 					coinPackages: j.b,
 					isGold: O.p,
 					isLoggedIn: O.G,
-					premiumPackages: j.c,
-					purchaseCatalogPending: j.e,
+					premiumPackages: j.d,
+					purchaseCatalogPending: j.f,
 					shouldShowCoinPurchaseModal: I.r
 				}),
 				ce = Object(o.b)(re, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(m.b)("/settings/gold")),
 					onRouteToPremium: () => e(Object(m.b)("/premium")),
 					onOpenLoginModal: () => e(Object(x.e)()),
-					onPurchasePackage: a => e(Object(_.f)({
+					onPurchasePackage: a => e(Object(_.g)({
 						coinsToPurchase: a.coins
 					})),
 					requestPurchaseCatalog: () => e(Object(N.a)())
@@ -1026,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.762724c2837c64a6c2a4.js.map
+//# sourceMappingURL=Coins.3ece041f6afdaf3fa141.js.map

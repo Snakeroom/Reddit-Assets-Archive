@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.04fa4e02cce4fe6486bd.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.be340e7ef14615a2116a.js
+// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -375,8 +375,8 @@
 				f = a("./src/reddit/selectors/user.ts"),
 				E = a("./node_modules/fbt/lib/FbtPublic.js"),
 				v = a("./src/lib/loadRedditAdsPixel.ts"),
-				k = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
-				_ = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				_ = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
+				k = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				x = a("./src/reddit/helpers/createEmojiText/index.tsx"),
 				N = a("./src/reddit/icons/fonts/Premium/index.tsx"),
 				w = a("./src/reddit/components/PremiumPurchaseModal/index.m.less"),
@@ -429,10 +429,10 @@
 					}))), s.a.createElement("button", {
 						className: j.a.closeButton,
 						onClick: e.onCloseClick
-					}, s.a.createElement(_.b, {
+					}, s.a.createElement(k.b, {
 						className: j.a.closeIcon,
 						"data-redditstyle": !0
-					}))), s.a.createElement(k.a, {
+					}))), s.a.createElement(_.a, {
 						onCloseClick: e.onCloseClick
 					}))
 				}
@@ -545,7 +545,7 @@
 			})), s.a.createElement("button", {
 				className: j.a.closeButton,
 				onClick: e.onCloseClick
-			}, s.a.createElement(_.b, {
+			}, s.a.createElement(k.b, {
 				className: j.a.closeIcon,
 				"data-redditstyle": !0
 			})));
@@ -752,7 +752,7 @@
 			})), a.d(t, "g", (function() {
 				return v
 			})), a.d(t, "h", (function() {
-				return k
+				return _
 			}));
 			var n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/models/Gold/Coins/index.ts"),
@@ -773,7 +773,13 @@
 						y = t ? Object(h.a)(t) ? "comment" : "post" : void 0,
 						b = c.b(e),
 						g = Object(o.b)(e),
-						C = Object(s.b)(b, g, !!t);
+						C = Object(o.c)(e),
+						P = Object(s.b)(b, [...g, ...C], !!t),
+						f = P && "com.reddit.coins_deal_1" === P.mobileId,
+						E = f ? "low_coin_balance" : void 0,
+						v = P ? Math.round(1e4 * (P.baselinePennies - P.pennies) / P.baselinePennies) / 100 : 0,
+						_ = P ? Math.round(1e4 * (P.coins - P.baselineCoins) / P.coins) / 100 : 0,
+						k = P ? P.baselinePennies !== P.pennies ? "".concat(v, "_percent_price") : P.baselineCoins !== P.coins ? "".concat(_, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, i.defaults(e), {
 						comment: t ? i.comment(e, t) : null,
 						correlationId: Object(p.c)(p.a.GoldPayment),
@@ -788,11 +794,13 @@
 							type: m,
 							gildedContent: !!t,
 							contentType: y,
-							numberCoins: C ? C.coins : void 0
+							numberCoins: P ? P.coins : void 0,
+							offerContext: E,
+							offerType: f ? P ? "".concat(P.bonusPct, "_percent_bonus") : void 0 : k
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: m === d.Premium ? n.mb : C ? C.pennies : void 0
+							amountInSmallestDenom: m === d.Premium ? n.mb : P ? P.pennies : void 0
 						}
 					})
 				},
@@ -840,7 +848,7 @@
 						})
 					})
 				},
-				k = e => t => {
+				_ = e => t => {
 					const a = y(t, e);
 					return Object.assign({}, a, {
 						source: "gold_payment",
@@ -939,4 +947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.04fa4e02cce4fe6486bd.js.map
+//# sourceMappingURL=PremiumPurchaseModal.be340e7ef14615a2116a.js.map

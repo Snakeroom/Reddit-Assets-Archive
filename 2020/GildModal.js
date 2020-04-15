@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.be44614f1171613b59fb.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.4090bbd7cafbfbb1af5e.js
+// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
@@ -60,25 +60,27 @@
 				const {
 					active_sale: t,
 					coin_packages: s,
-					premium_packages: n
-				} = e.body, o = {
+					deals: n,
+					premium_packages: o
+				} = e.body, c = {
 					activeSaleConfig: h(t),
 					coinPackages: p(s),
-					premiumPackages: m(n)
+					dealCoinPackages: p(n),
+					premiumPackages: m(o)
 				};
 				return Object.assign({}, e, {
-					body: o
+					body: c
 				})
 			}
-			var x = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const g = Object(o.a)(x.g),
-				f = Object(o.a)(x.h),
-				_ = Object(o.a)(x.f),
+			var g = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const x = Object(o.a)(g.g),
+				f = Object(o.a)(g.h),
+				_ = Object(o.a)(g.f),
 				C = () => async (e, t, s) => {
 					let {
 						apiContext: o
 					} = s;
-					e(g());
+					e(x());
 					try {
 						const t = await (async e => {
 							const t = "".concat(e.apiUrl, "/api/v2/gold/purchase_package_details"),
@@ -147,11 +149,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = Object(a.c)({
+			const g = Object(a.c)({
 					showPurchaseModal: l.r,
 					thingId: d.d
 				}),
-				g = Object(u.a)(e => {
+				x = Object(u.a)(e => {
 					const {
 						thingId: t
 					} = e;
@@ -165,10 +167,10 @@
 				_ = {
 					backgroundColor: "transparent"
 				},
-				C = Object(c.b)(x, e => ({
+				C = Object(c.b)(g, e => ({
 					closeGildModal: () => e(Object(r.a)())
 				}));
-			t.default = C(e => o.a.createElement(g, b({}, e, {
+			t.default = C(e => o.a.createElement(x, b({}, e, {
 				className: h.a.gildModal,
 				withOverlay: !0,
 				onOverlayClick: e.closeGildModal,
@@ -303,17 +305,20 @@
 				return o
 			})), s.d(t, "c", (function() {
 				return c
-			})), s.d(t, "e", (function() {
-				return a
 			})), s.d(t, "d", (function() {
+				return a
+			})), s.d(t, "f", (function() {
 				return r
+			})), s.d(t, "e", (function() {
+				return i
 			}));
 			const n = e => e.goldPurchase.purchaseCatalog.activeSaleConfig,
 				o = e => e.goldPurchase.purchaseCatalog.coinPackages,
-				c = e => e.goldPurchase.purchaseCatalog.premiumPackages,
-				a = e => e.goldPurchase.purchaseCatalog.pending,
-				r = e => e.goldPurchase.purchaseCatalog.errorMessage
+				c = e => e.goldPurchase.purchaseCatalog.dealCoinPackages,
+				a = e => e.goldPurchase.purchaseCatalog.premiumPackages,
+				r = e => e.goldPurchase.purchaseCatalog.pending,
+				i = e => e.goldPurchase.purchaseCatalog.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.be44614f1171613b59fb.js.map
+//# sourceMappingURL=GildModal.4090bbd7cafbfbb1af5e.js.map

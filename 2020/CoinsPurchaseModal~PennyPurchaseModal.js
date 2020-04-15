@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.39deabbe04ee33c8a86e.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.d1ba92524cf2fd0f8fbd.js
+// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal~PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -297,7 +297,7 @@
 				y = (t("./node_modules/core-js/modules/es6.regexp.to-string.js"), t("./src/reddit/icons/svgs/Trash2/index.tsx"));
 			const {
 				fbt: P
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), f = e => 2 === e.length ? e : "0" + e, k = e => {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), f = e => 2 === e.length ? e : "0" + e, v = e => {
 				switch (e.toLowerCase()) {
 					case "visa":
 						return "".concat(c.a.assetPath, "/img/payment-icons/visa.png");
@@ -311,7 +311,7 @@
 						return null
 				}
 			};
-			class v extends r.a.PureComponent {
+			class k extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						showConfirmText: !1
@@ -331,7 +331,7 @@
 				render() {
 					const {
 						savedCard: e
-					} = this.props, a = k(e.brand);
+					} = this.props, a = v(e.brand);
 					return r.a.createElement("label", {
 						className: b.a.savedCardContainer
 					}, r.a.createElement("input", {
@@ -368,7 +368,7 @@
 					})))
 				}
 			}
-			var _ = v,
+			var _ = k,
 				x = t("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				w = t("./src/reddit/controls/LoadingIcon/index.tsx"),
 				E = t("./src/reddit/selectors/goldPurchaseModals.ts");
@@ -461,11 +461,11 @@
 				}
 			}
 			const L = Object(l.b)(H, (e, a) => ({
-				createPayment: () => "coinPackage" in a ? e(Object(F.h)(a.coinPackage)) : "awardId" in a ? e(Object(V.g)(a.awardId, a.pennies, a.thingId)) : void 0,
+				createPayment: () => "coinPackage" in a ? e(Object(F.i)(a.coinPackage)) : "awardId" in a ? e(Object(V.g)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, n) => {
 					if ("coinPackage" in a) {
-						if (t) return void e(Object(F.j)(n, a.coinPackage));
-						e(Object(F.i)(n, a.coinPackage))
+						if (t) return void e(Object(F.k)(n, a.coinPackage));
+						e(Object(F.j)(n, a.coinPackage))
 					} else "awardId" in a && e(Object(V.f)(n))
 				}
 			}))(Z);
@@ -548,10 +548,7 @@
 				hk: "ZGCBt"
 			})), r.a.createElement("img", {
 				className: Q.a.goldPackage,
-				src: e.purchasePackage.images.purchaseSuccess["3x"].url,
-				style: {
-					backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/coins-package-bg.jpg")')
-				}
+				src: e.purchasePackage.images.purchaseSuccess["3x"].url
 			}), r.a.createElement("button", {
 				className: Q.a.closeButton,
 				onClick: e.onCloseClick
@@ -844,9 +841,9 @@
 			})), t.d(a, "b", (function() {
 				return f
 			})), t.d(a, "f", (function() {
-				return k
-			})), t.d(a, "g", (function() {
 				return v
+			})), t.d(a, "g", (function() {
+				return k
 			})), t.d(a, "h", (function() {
 				return _
 			}));
@@ -869,7 +866,13 @@
 						g = a ? Object(h.a)(a) ? "comment" : "post" : void 0,
 						b = c.b(e),
 						C = Object(o.b)(e),
-						y = Object(s.b)(b, C, !!a);
+						y = Object(o.c)(e),
+						P = Object(s.b)(b, [...C, ...y], !!a),
+						f = P && "com.reddit.coins_deal_1" === P.mobileId,
+						v = f ? "low_coin_balance" : void 0,
+						k = P ? Math.round(1e4 * (P.baselinePennies - P.pennies) / P.baselinePennies) / 100 : 0,
+						_ = P ? Math.round(1e4 * (P.coins - P.baselineCoins) / P.coins) / 100 : 0,
+						x = P ? P.baselinePennies !== P.pennies ? "".concat(k, "_percent_price") : P.baselineCoins !== P.coins ? "".concat(_, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, d.defaults(e), {
 						comment: a ? d.comment(e, a) : null,
 						correlationId: Object(p.c)(p.a.GoldPayment),
@@ -884,11 +887,13 @@
 							type: m,
 							gildedContent: !!a,
 							contentType: g,
-							numberCoins: y ? y.coins : void 0
+							numberCoins: P ? P.coins : void 0,
+							offerContext: v,
+							offerType: f ? P ? "".concat(P.bonusPct, "_percent_bonus") : void 0 : x
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: m === l.Premium ? n.mb : y ? y.pennies : void 0
+							amountInSmallestDenom: m === l.Premium ? n.mb : P ? P.pennies : void 0
 						}
 					})
 				},
@@ -917,12 +922,12 @@
 					action: "click",
 					noun: "complete_credit_card"
 				}),
-				k = e => a => Object.assign({}, g(a, e), {
+				v = e => a => Object.assign({}, g(a, e), {
 					source: "gold_payment",
 					action: "display",
 					noun: "error"
 				}),
-				v = e => a => {
+				k = e => a => {
 					const t = g(a, e);
 					return Object.assign({}, t, {
 						source: "gold_payment",
@@ -1055,4 +1060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.39deabbe04ee33c8a86e.js.map
+//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.d1ba92524cf2fd0f8fbd.js.map

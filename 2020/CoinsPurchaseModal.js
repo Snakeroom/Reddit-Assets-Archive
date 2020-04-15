@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.7fb93c543efba7af210d.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.5d965a89e8bf7d0406ab.js
+// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, s, a) {
@@ -57,8 +57,8 @@
 				E = a("./src/reddit/selectors/gild.ts"),
 				v = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				O = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				M = a("./src/reddit/selectors/goldPurchaseModals.ts"),
-				k = a("./src/reddit/selectors/platform.ts"),
+				k = a("./src/reddit/selectors/goldPurchaseModals.ts"),
+				M = a("./src/reddit/selectors/platform.ts"),
 				f = a("./src/reddit/selectors/user.ts"),
 				_ = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				T = a("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -106,25 +106,26 @@
 				}).apply(this, arguments)
 			}
 			const D = Object(r.c)({
-					activePage: M.p,
+					activePage: k.p,
 					allowNavigationCallback: e => {
-						const s = Object(k.a)(e);
+						const s = Object(M.a)(e);
 						return null === s ? void 0 : s
 					},
 					coinBalance: f.d,
 					coinPackages: O.b,
-					coinsToPurchase: M.b,
-					gildThingId: M.q,
+					coinsToPurchase: k.b,
+					dealCoinPackages: O.c,
+					gildThingId: k.q,
 					isIframed: E.h,
 					nightmode: f.Q,
-					savedCardsPending: M.t,
+					savedCardsPending: k.t,
 					selectedAward: v.a,
-					selectedPayment: M.c,
-					stripeErrorMessage: M.j,
-					stripeTokenPending: M.m,
-					paypalErrorMessage: M.d,
-					purchaseCatalogError: O.d,
-					purchaseCatalogPending: O.e,
+					selectedPayment: k.c,
+					stripeErrorMessage: k.j,
+					stripeTokenPending: k.m,
+					paypalErrorMessage: k.d,
+					purchaseCatalogError: O.e,
+					purchaseCatalogPending: O.f,
 					userName: e => {
 						const s = Object(f.i)(e);
 						return "u/".concat(Object(j.f)(s))
@@ -132,7 +133,7 @@
 				}),
 				F = Object(n.b)(D, (e, s) => ({
 					closeModal: () => {
-						e(Object(m.e)()), e(Object(i.a)())
+						e(Object(m.f)()), e(Object(i.a)())
 					},
 					loadSavedCards: () => e(Object(p.loadSavedCards)()),
 					onFailedToLoadCatalog: s => {
@@ -145,7 +146,7 @@
 					onPaymentSelected: s => e(Object(p.selectPaymentMethod)(s)),
 					requestPurchaseCatalog: () => e(Object(u.a)()),
 					dispatchCompletePurchase: (s, a, t, o) => {
-						e(t ? Object(m.k)(s, a, o) : Object(m.l)(s, a))
+						e(t ? Object(m.l)(s, a, o) : Object(m.m)(s, a))
 					}
 				}), (e, s, a) => Object.assign({}, e, s, a, {
 					onCompletePurchaseClick: (a, t) => s.dispatchCompletePurchase(a, t, !!e.gildThingId, e.isIframed)
@@ -193,53 +194,54 @@
 						coinBalance: a,
 						coinPackages: t,
 						coinsToPurchase: n,
-						gildThingId: r,
-						isCompletePaypal: c,
-						nightmode: d,
-						onCompletePurchaseClick: l,
-						onFailedToLoadCatalog: i,
-						onPaymentSelected: m,
-						onTryCloseModal: p,
-						paypalErrorMessage: u,
-						purchaseCatalogError: h,
-						purchaseCatalogPending: g,
-						savedCardsPending: C,
-						selectedAward: P,
-						selectedPayment: b,
-						stripeErrorMessage: y,
-						stripeTokenPending: j,
-						userName: E
+						dealCoinPackages: r,
+						gildThingId: c,
+						isCompletePaypal: d,
+						nightmode: l,
+						onCompletePurchaseClick: i,
+						onFailedToLoadCatalog: m,
+						onPaymentSelected: p,
+						onTryCloseModal: u,
+						paypalErrorMessage: h,
+						purchaseCatalogError: g,
+						purchaseCatalogPending: C,
+						savedCardsPending: P,
+						selectedAward: b,
+						selectedPayment: y,
+						stripeErrorMessage: j,
+						stripeTokenPending: E,
+						userName: v
 					} = this.props;
-					if (h) return i(h), p(), null;
-					const v = !!r,
-						O = Object(x.b)(n, t, v);
-					return g || !O ? o.a.createElement("div", {
+					if (g) return m(g), u(), null;
+					const O = !!c,
+						k = Object(x.b)(n, [...t, ...r], O);
+					return C || !k ? o.a.createElement("div", {
 						className: s
 					}, o.a.createElement(I, {
-						award: P,
-						onClickClose: p
+						award: b,
+						onClickClose: u
 					})) : o.a.createElement("div", {
 						className: s
-					}, "selectPayment" === e && O && o.a.createElement(L.a, {
+					}, "selectPayment" === e && k && o.a.createElement(L.a, {
 						coinBalance: a,
-						gildThingId: r,
-						nightmode: d,
-						onCloseModal: p,
-						onCompletePurchaseClick: l,
-						onPaymentSelected: m,
-						paypalErrorMessage: u,
-						purchasePackage: O,
-						savedCardsPending: C,
-						selectedAward: P,
-						selectedPayment: b,
-						stripeErrorMessage: y,
-						stripeTokenPending: j,
-						userName: E
+						gildThingId: c,
+						nightmode: l,
+						onCloseModal: u,
+						onCompletePurchaseClick: i,
+						onPaymentSelected: p,
+						paypalErrorMessage: h,
+						purchasePackage: k,
+						savedCardsPending: P,
+						selectedAward: b,
+						selectedPayment: y,
+						stripeErrorMessage: j,
+						stripeTokenPending: E,
+						userName: v
 					}), "paymentCompleted" === e && o.a.createElement(A.a, {
-						isCompletePaypal: c,
-						isGild: v,
-						onCloseClick: p,
-						userName: E
+						isCompletePaypal: d,
+						isGild: O,
+						onCloseClick: u,
+						userName: v
 					}))
 				}
 			}
@@ -300,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.7fb93c543efba7af210d.js.map
+//# sourceMappingURL=CoinsPurchaseModal.5d965a89e8bf7d0406ab.js.map
