@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.33bdd32080cd18efc97f.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.2f14c21a55cc5d7d8a1b.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1538,6 +1538,9 @@
 				}), !v && r.a.createElement(_.a, {
 					className: te.a.publicPoints,
 					contentId: u.id,
+					metaSeparator: r.a.createElement(X.c, {
+						className: te.a.metaText
+					}),
 					subredditId: u.subredditId,
 					userId: u.authorId,
 					username: u.author
@@ -1728,11 +1731,10 @@
 						onMouseLeave: s.onHideTooltip
 					}), t.isAdmin && Ge(s.adminTooltipId, _e()), t.distinguishType === l.B.ALUMNI_ADMIN && r.a.createElement(de, {
 						"aria-label": Ie(),
-						children: "Δ",
 						id: s.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), t.distinguishType === l.B.ALUMNI_ADMIN && Ge(s.adminEmeritusTooltipId, Ie()), t.isMod && r.a.createElement(me, {
+					}, "Δ"), t.distinguishType === l.B.ALUMNI_ADMIN && Ge(s.adminEmeritusTooltipId, Ie()), t.isMod && r.a.createElement(me, {
 						desc: Se(s.subredditDisplayText),
 						id: s.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
@@ -7693,4 +7695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.33bdd32080cd18efc97f.js.map
+//# sourceMappingURL=ProfilePrivate.2f14c21a55cc5d7d8a1b.js.map

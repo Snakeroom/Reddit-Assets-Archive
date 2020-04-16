@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6417a03133a2d095c56c.js
-// Retrieved at 4/15/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e1f8ac6a3949a062cb88.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -9598,7 +9598,9 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: P,
 						tooltipType: M
-					} = this.props, N = u && u.meta && u.meta.name === c.zb.COMMENTS, R = Object(m.a)(h), L = i === F.b.Left, D = h.authorIsContractor && !!P && P.type === A.c.EmployeesOnly, U = !n && !N, K = o.a.createElement(o.a.Fragment, null, !R && o.a.createElement(G, {
+					} = this.props, N = u && u.meta && u.meta.name === c.zb.COMMENTS, R = Object(m.a)(h), L = i === F.b.Left, D = h.authorIsContractor && !!P && P.type === A.c.EmployeesOnly, U = !n && !N, K = () => o.a.createElement(q, {
+						className: this.props.metaSeparatorClassName
+					}, "•"), H = o.a.createElement(o.a.Fragment, null, !R && o.a.createElement(G, {
 						style: {
 							color: z(this.props)
 						}
@@ -9650,6 +9652,7 @@
 					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(B.h)(h.author) && o.a.createElement(E.a, {
 						className: V.a.publicWallet,
 						contentId: h.id,
+						metaSeparator: o.a.createElement(K, null),
 						subredditId: h.belongsTo.id,
 						userId: h.authorId,
 						username: h.author
@@ -9663,11 +9666,7 @@
 					}, o.a.createElement(T.a, {
 						"data-click-id": "subreddit",
 						to: P.url
-					}, P.displayText)), P && P.isQuarantined && o.a.createElement(k.a, null), g && !R && o.a.createElement(q, {
-						className: this.props.metaSeparatorClassName
-					}, "•"), h.isSponsored && o.a.createElement(s.Fragment, null, o.a.createElement(_.a, null), o.a.createElement(q, {
-						className: this.props.metaSeparatorClassName
-					}, "•")), K, o.a.createElement(w.e, {
+					}, P.displayText)), P && P.isQuarantined && o.a.createElement(k.a, null), g && !R && o.a.createElement(K, null), h.isSponsored && o.a.createElement(s.Fragment, null, o.a.createElement(_.a, null), o.a.createElement(K, null)), H, o.a.createElement(w.e, {
 						post: h
 					}), x && o.a.createElement("a", {
 						className: V.a.externalLink,
@@ -30699,4 +30698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.6417a03133a2d095c56c.js.map
+//# sourceMappingURL=PostCreation.e1f8ac6a3949a062cb88.js.map

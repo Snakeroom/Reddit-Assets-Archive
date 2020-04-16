@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.4f0f68b6488c36102a46.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d580c95e80cbb64e0b07.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -35,9 +35,9 @@
 			})), n.d(t, "i", (function() {
 				return S
 			})), n.d(t, "f", (function() {
-				return L
-			})), n.d(t, "g", (function() {
 				return B
+			})), n.d(t, "g", (function() {
+				return L
 			})), n.d(t, "j", (function() {
 				return D
 			})), n.d(t, "c", (function() {
@@ -76,7 +76,7 @@
 				A = Object(r.a)(y.w),
 				G = Object(r.a)(y.x),
 				S = Object(r.a)(y.y),
-				L = (e, t) => async (n, s, r) => {
+				B = (e, t) => async (n, s, r) => {
 					let o, {
 							apiContext: a,
 							gqlContext: d
@@ -106,7 +106,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(g.a)(n, o.error || o.errors[0].messsage)
-				}, B = (e, t) => async (n, r, i) => {
+				}, L = (e, t) => async (n, r, i) => {
 					let {
 						apiContext: u
 					} = i;
@@ -272,9 +272,9 @@
 				A = n("./src/reddit/helpers/governance/ethereum.ts"),
 				G = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				S = n("./src/reddit/models/Toast/index.ts"),
-				L = n("./src/reddit/selectors/tooltip.ts"),
-				B = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				D = n.n(B);
+				B = n("./src/reddit/selectors/tooltip.ts"),
+				L = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
+				D = n.n(L);
 			const R = Object(C.a)(T.a),
 				W = "BlockchainWalletInfo--SettingsMenu";
 			class U extends a.a.PureComponent {
@@ -356,7 +356,7 @@
 				}
 			}
 			const H = Object(l.c)({
-					dropdownIsOpen: Object(L.b)(W),
+					dropdownIsOpen: Object(B.b)(W),
 					provider: c.a,
 					token: c.r,
 					tokenName: c.p
@@ -525,8 +525,8 @@
 						title: _.title
 					}), a.a.createElement("div", {
 						className: se.a.explanation
-					}, r.fbt._("{tokenName} reward moderators, posters, and commenters for their contributions to the subreddit. They are distributed weekly and used to weight your vote on polls.", [r.fbt._param("tokenName", g)], {
-						hk: "3lDsyY"
+					}, r.fbt._("{tokenName} reward posters, commenters, and moderators for their contributions to the subreddit. They are distributed monthly and used to weight your vote on polls.", [r.fbt._param("tokenName", g)], {
+						hk: "3BpDbS"
 					})), !t && p && a.a.createElement(q, {
 						publicAddress: C,
 						subredditId: f
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.4f0f68b6488c36102a46.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.d580c95e80cbb64e0b07.js.map

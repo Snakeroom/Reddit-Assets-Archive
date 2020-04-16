@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.5a8cb43a286f716b217b.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c80698d0e05b930ad576.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4910,6 +4910,9 @@
 				}), !E && a.a.createElement(w.a, {
 					className: te.a.publicPoints,
 					contentId: p.id,
+					metaSeparator: a.a.createElement(X.c, {
+						className: te.a.metaText
+					}),
 					subredditId: p.subredditId,
 					userId: p.authorId,
 					username: p.author
@@ -5100,11 +5103,10 @@
 						onMouseLeave: s.onHideTooltip
 					}), t.isAdmin && qe(s.adminTooltipId, we()), t.distinguishType === c.B.ALUMNI_ADMIN && a.a.createElement(de, {
 						"aria-label": Ie(),
-						children: "Δ",
 						id: s.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), t.distinguishType === c.B.ALUMNI_ADMIN && qe(s.adminEmeritusTooltipId, Ie()), t.isMod && a.a.createElement(me, {
+					}, "Δ"), t.distinguishType === c.B.ALUMNI_ADMIN && qe(s.adminEmeritusTooltipId, Ie()), t.isMod && a.a.createElement(me, {
 						desc: Pe(s.subredditDisplayText),
 						id: s.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
@@ -28668,4 +28670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.5a8cb43a286f716b217b.js.map
+//# sourceMappingURL=ModerationPages.c80698d0e05b930ad576.js.map

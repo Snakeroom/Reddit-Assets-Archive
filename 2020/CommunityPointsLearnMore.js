@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.e7a47b79d0f6ef90a61d.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.db2b6175a3c5df498042.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -298,12 +298,14 @@
 						key: a
 					}, e))), t < P.length - 1 && o.a.createElement("div", {
 						className: C.a.pager
-					}, P.map((e, a) => o.a.createElement("div", {
+					}, P.map((e, n) => o.a.createElement("button", {
+						key: n,
+						onClick: () => a(n)
+					}, o.a.createElement("div", {
 						className: Object(v.a)(C.a.progressDot, {
-							[C.a.active]: a === t
-						}),
-						key: a
-					})), o.a.createElement("button", {
+							[C.a.active]: n === t
+						})
+					}))), o.a.createElement("button", {
 						"aria-label": "Next",
 						className: C.a.nextButton,
 						onClick: () => {
@@ -402,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.e7a47b79d0f6ef90a61d.js.map
+//# sourceMappingURL=CommunityPointsLearnMore.db2b6175a3c5df498042.js.map

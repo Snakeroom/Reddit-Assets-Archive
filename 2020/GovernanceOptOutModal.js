@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.b5255995bc52de62d3d8.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.280c7a8c5a62c2ab5f6c.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceOptOutModal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -33,9 +33,9 @@
 			})), n.d(t, "h", (function() {
 				return C
 			})), n.d(t, "i", (function() {
-				return B
-			})), n.d(t, "f", (function() {
 				return A
+			})), n.d(t, "f", (function() {
+				return B
 			})), n.d(t, "g", (function() {
 				return H
 			})), n.d(t, "j", (function() {
@@ -75,8 +75,8 @@
 				M = Object(s.a)(g.v),
 				G = Object(s.a)(g.w),
 				U = Object(s.a)(g.x),
-				B = Object(s.a)(g.y),
-				A = (e, t) => async (n, r, s) => {
+				A = Object(s.a)(g.y),
+				B = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: a,
 							gqlContext: c
@@ -346,8 +346,8 @@
 					tokenName: e.tokenName
 				}), o.a.createElement("div", {
 					className: k.a.explanation
-				}, r.fbt._("{tokenName} reward moderators, posters, and commenters for their contributions to the subreddit. They are distributed weekly and used to weight your vote on polls. By opting-out, you agree that:", [r.fbt._param("tokenName", t)], {
-					hk: "4hBas7"
+				}, r.fbt._("{tokenName} reward posters, commenters, and moderators for their contributions to the subreddit. They are distributed weekly and used to weight your vote on polls. By opting-out, you agree that:", [r.fbt._param("tokenName", t)], {
+					hk: "48Snaz"
 				})), o.a.createElement("ul", {
 					className: k.a.list
 				}, y(r.fbt._("You will no longer receive {tokenName} in {subredditName}.", [r.fbt._param("tokenName", t), r.fbt._param("subredditName", e.subreddit.name)], {
@@ -668,4 +668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceOptOutModal.b5255995bc52de62d3d8.js.map
+//# sourceMappingURL=GovernanceOptOutModal.280c7a8c5a62c2ab5f6c.js.map

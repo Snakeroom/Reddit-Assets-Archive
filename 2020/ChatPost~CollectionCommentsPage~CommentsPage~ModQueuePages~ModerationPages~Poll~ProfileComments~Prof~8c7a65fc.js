@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.752ab4ac29610443c2fc.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.103b3dac95fde48f7bfa.js
+// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1253,7 +1253,9 @@
 						showTimestamp: g = !0,
 						subredditOrProfile: I,
 						tooltipType: P
-					} = this.props, M = m && m.meta && m.meta.name === i.zb.COMMENTS, k = Object(p.a)(b), B = a === L.b.Left, H = b.authorIsContractor && !!I && I.type === D.c.EmployeesOnly, R = !s && !M, F = r.a.createElement(r.a.Fragment, null, !k && r.a.createElement(z, {
+					} = this.props, M = m && m.meta && m.meta.name === i.zb.COMMENTS, k = Object(p.a)(b), B = a === L.b.Left, H = b.authorIsContractor && !!I && I.type === D.c.EmployeesOnly, R = !s && !M, F = () => r.a.createElement(V, {
+						className: this.props.metaSeparatorClassName
+					}, "•"), Z = r.a.createElement(r.a.Fragment, null, !k && r.a.createElement(z, {
 						style: {
 							color: q(this.props)
 						}
@@ -1305,6 +1307,7 @@
 					})), b.belongsTo.type === _.a.SUBREDDIT && !Object(U.h)(b.author) && r.a.createElement(w.a, {
 						className: W.a.publicWallet,
 						contentId: b.id,
+						metaSeparator: r.a.createElement(F, null),
 						subredditId: b.belongsTo.id,
 						userId: b.authorId,
 						username: b.author
@@ -1318,11 +1321,7 @@
 					}, r.a.createElement(S.a, {
 						"data-click-id": "subreddit",
 						to: I.url
-					}, I.displayText)), I && I.isQuarantined && r.a.createElement(C.a, null), f && !k && r.a.createElement(V, {
-						className: this.props.metaSeparatorClassName
-					}, "•"), b.isSponsored && r.a.createElement(o.Fragment, null, r.a.createElement(N.a, null), r.a.createElement(V, {
-						className: this.props.metaSeparatorClassName
-					}, "•")), F, r.a.createElement(T.e, {
+					}, I.displayText)), I && I.isQuarantined && r.a.createElement(C.a, null), f && !k && r.a.createElement(F, null), b.isSponsored && r.a.createElement(o.Fragment, null, r.a.createElement(N.a, null), r.a.createElement(F, null)), Z, r.a.createElement(T.e, {
 						post: b
 					}), g && r.a.createElement("a", {
 						className: W.a.externalLink,
@@ -1710,4 +1709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.752ab4ac29610443c2fc.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.103b3dac95fde48f7bfa.js.map
