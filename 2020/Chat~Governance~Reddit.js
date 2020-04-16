@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.44b9bc5608049905991c.js
-// Retrieved at 4/15/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1f94cb1c2822a079c036.js
+// Retrieved at 4/16/2020, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10990,14 +10990,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("765553b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("839d53b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "765553b-production",
+						release: "839d53b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11359,7 +11359,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "765553b-production",
+							releaseClient: "839d53b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -15482,13 +15482,13 @@
 		"./src/reddit/helpers/chooseVariant/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return h
+				return _
 			})), i.d(t, "b", (function() {
-				return f
-			})), i.d(t, "c", (function() {
-				return b
-			})), i.d(t, "d", (function() {
 				return w
+			})), i.d(t, "c", (function() {
+				return y
+			})), i.d(t, "d", (function() {
+				return v
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -15544,8 +15544,9 @@
 						subreddit: l.subreddit(e),
 						user: l.user(e)
 					})
-				},
-				p = (e, t) => {
+				};
+			var p = i("./src/server/helpers/seoMetadata.tsx");
+			const h = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
 					if (t.isThrottled && s.a.isFeatureThrottled(t.experimentName)) return !1;
 					if (t.throttledVariants) {
@@ -15559,35 +15560,38 @@
 					}
 					return !0
 				},
-				h = () => !0,
-				_ = {},
-				g = [r.k, r.l],
-				f = Object(n.a)((e, t) => e, o.b, o.a, p, (e, t) => t.expEventOverride, (e, t) => t.experimentName, (e, t, i, n, r, s) => {
+				_ = () => !0,
+				g = {},
+				f = {},
+				b = [r.k, r.l],
+				w = Object(n.a)((e, t) => e, o.b, o.a, h, (e, t) => t.expEventOverride, (e, t) => t.experimentName, (e, t, i, n, r, s) => {
 					if (!n) return;
-					if (!t) return i && _[s] !== i && !1 !== r && (m(e, {
+					const o = Object(p.a)(e) || "",
+						d = f[o] || {};
+					if (!t) return i && d[s] !== i && !1 !== r && (m(e, {
 						experimentName: s
-					}), _[s] = i), i;
-					const o = t.name,
-						d = void 0 !== i ? i : t.variant;
-					if (d) {
-						_[o] === d || !1 === r || m(e, {
+					}), d[s] = i, f[o] = d), i;
+					const l = t.name,
+						a = void 0 !== i ? i : t.variant;
+					if (a) {
+						d[l] === a || !1 === r || (m(e, {
 							experimentName: s
-						})
+						}), d[s] = a, f[o] = d)
 					}
-					return d
+					return a
 				}),
-				b = Object(n.a)(o.b, o.a, e => l.user(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), p, (e, t) => t.experimentName, (function(e, t, i, n) {
+				y = Object(n.a)(o.b, o.a, e => l.user(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), h, (e, t) => t.experimentName, (function(e, t, i, n) {
 					let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
 						s = arguments.length > 5 ? arguments[5] : void 0,
 						o = arguments.length > 6 ? arguments[6] : void 0;
 					if (!s) return;
-					if (!e) return t && !1 !== n && _[o] !== t && !g.includes(o) && (c(i, {
+					if (!e) return t && !1 !== n && g[o] !== t && !b.includes(o) && (c(i, {
 						id: -1,
 						isOverride: !0,
 						name: o,
 						variant: t,
 						version: "-1"
-					}, r), _[o] = t), t;
+					}, r), g[o] = t), t;
 					const d = e.name,
 						{
 							id: l
@@ -15596,15 +15600,15 @@
 						u = a ? t : e.variant;
 					if (u) {
 						const t = -1 === l,
-							s = _[d] === u;
-						t || s || !1 === n || g.includes(o) || (c(i, Object.assign({}, e, {
+							s = g[d] === u;
+						t || s || !1 === n || b.includes(o) || (c(i, Object.assign({}, e, {
 							isOverride: a,
 							variant: u
-						}), r), _[d] = u)
+						}), r), g[d] = u)
 					}
 					return a ? t : u
 				})),
-				w = (e, t) => {
+				v = (e, t) => {
 					const i = l.user(e),
 						n = Object(o.b)(e, t),
 						r = Object(o.a)(e, t),
@@ -28335,4 +28339,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.44b9bc5608049905991c.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.1f94cb1c2822a079c036.js.map
