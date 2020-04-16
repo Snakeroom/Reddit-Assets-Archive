@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c80698d0e05b930ad576.js
-// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.659d24209946fdd8300e.js
+// Retrieved at 4/16/2020, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1439,7 +1439,7 @@
 					})(t, s, x) : Z ? await Object(h.eventPostsRequested)(v)(t, s, x) : W && await W(re, A)(t, s, x);
 					k.subreddits.rules[re] || await M.o(v)(t, s, x), t(I.l({
 						title: Y
-					})), Object(p.e)(s(), !!s().listings.postOrder.api.error[O], v)
+					}))
 				}
 			}
 		},
@@ -28670,4 +28670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.c80698d0e05b930ad576.js.map
+//# sourceMappingURL=ModerationPages.659d24209946fdd8300e.js.map
