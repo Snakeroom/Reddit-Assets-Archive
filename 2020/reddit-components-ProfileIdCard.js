@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3e50b7d75a26a70e2fff.js
-// Retrieved at 4/15/2020, 6:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.251a62c58814b1f70a54.js
+// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -235,8 +235,8 @@
 				F = c.a.div("Container", S.a),
 				B = c.a.div("Body", S.a),
 				R = c.a.h5("Title", S.a),
-				W = c.a.span("Label", S.a);
-			class U extends a.a.Component {
+				U = c.a.span("Label", S.a);
+			class W extends a.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -258,7 +258,7 @@
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return a.a.createElement(F, null, a.a.createElement(R, null, n), a.a.createElement(B, null, e, a.a.createElement(W, T({
+					return a.a.createElement(F, null, a.a.createElement(R, null, n), a.a.createElement(B, null, e, a.a.createElement(U, T({
 						key: "label"
 					}, o), t)), s && r && a.a.createElement(L.c, {
 						caretOnTop: !0,
@@ -271,7 +271,7 @@
 					toggleTooltip: t => e(Object(j.h)({
 						tooltipId: t
 					}))
-				}))(Object(I.b)(U)),
+				}))(Object(I.b)(W)),
 				H = n("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				G = n.n(H);
 			const K = Object(v.a)(P.j, (e, t) => {
@@ -533,8 +533,8 @@
 				F = n("./src/reddit/models/Gold/Premium/index.ts"),
 				B = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				R = n("./src/reddit/selectors/premium.ts"),
-				W = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
-				U = n.n(W);
+				U = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
+				W = n.n(U);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -570,7 +570,7 @@
 						isLoading: t
 					} = e, n = H(e, ["isLoading"]);
 					return s.a.createElement("div", A({}, n, {
-						className: Object(_.a)(U.a.Shimmer, Object(D.b)({
+						className: Object(_.a)(W.a.Shimmer, Object(D.b)({
 							isLoading: t
 						}))
 					}))
@@ -677,26 +677,26 @@
 						key: e.url,
 						onClick: e.onClick,
 						to: e.url,
-						className: U.a.menuItem
+						className: W.a.menuItem
 					}, e.text) : s.a.createElement(S.a, {
 						key: e.url,
 						href: e.url,
 						isSponsored: !1,
 						onClick: e.onClick,
 						source: void 0,
-						className: U.a.menuItem
+						className: W.a.menuItem
 					}, e.text) : s.a.createElement(u.n, {
-						className: U.a.menuItem,
+						className: W.a.menuItem,
 						key: e.text,
 						onClick: e.onClick
 					}, e.text));
 					this.state.expanded && this.isLoadingMods() && (r.unshift(s.a.createElement("div", {
-						className: U.a.menuItem,
+						className: W.a.menuItem,
 						key: "loading-1"
 					}, s.a.createElement(K, {
 						isLoading: this.props.areModeratedSubredditsPending
 					}))), r.unshift(s.a.createElement("div", {
-						className: U.a.menuItem,
+						className: W.a.menuItem,
 						key: "loading-2"
 					}, s.a.createElement(K, {
 						isLoading: this.props.areModeratedSubredditsPending
@@ -707,15 +707,16 @@
 						hk: "4ix9v1"
 					});
 					return s.a.createElement("div", {
-						className: U.a.container
+						className: W.a.container
 					}, r, s.a.createElement("div", {
-						className: U.a.expandContainer
+						className: W.a.expandContainer
 					}, s.a.createElement(u.n, {
-						className: U.a.expandButton,
+						className: W.a.expandButton,
 						onClick: this.moreOptionsToggled
 					}, o)), e && s.a.createElement(j, null), this.state.showCrisisModal && s.a.createElement(M.b, {
 						withOverlay: !0,
 						overlayCustomStyles: M.a,
+						fromUserProfile: !0,
 						username: this.props.profileName,
 						onCloseCrisisModal: this.onCloseCrisisModal
 					}))
@@ -1187,4 +1188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.3e50b7d75a26a70e2fff.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.251a62c58814b1f70a54.js.map

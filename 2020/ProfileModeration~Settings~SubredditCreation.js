@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.f5ecf8f4bea3530f01b6.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration~Settings~SubredditCreation.a505e6ad2cb2e499ec7d.js
+// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -223,8 +223,8 @@
 				b = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				f = n("./src/reddit/controls/Typography/index.tsx"),
 				v = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				C = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				g = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				g = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				C = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				E = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				_ = n("./node_modules/lodash/range.js"),
 				w = n.n(_),
@@ -236,8 +236,8 @@
 				j = n.n(S),
 				T = n("./src/lib/lessComponent.tsx");
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -245,7 +245,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var I = function(e, t) {
+			var R = function(e, t) {
 				var n = {};
 				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -254,8 +254,8 @@
 				}
 				return n
 			};
-			const R = Object(c.a)(p.a),
-				D = T.a.wrapped(C.a, "Circle", j.a),
+			const F = Object(c.a)(p.a),
+				D = T.a.wrapped(g.a, "Circle", j.a),
 				P = T.a.h3("Label", j.a),
 				L = T.a.wrapped(f.c, "Subtext", j.a),
 				M = T.a.wrapped(m.a, "HoverTooltip", j.a),
@@ -269,8 +269,8 @@
 						disabled: a,
 						indent: s,
 						last: o
-					} = e, i = I(e, ["className", "direction", "disabled", "indent", "last"]);
-					return r.a.createElement("div", F({}, i, {
+					} = e, i = R(e, ["className", "direction", "disabled", "indent", "last"]);
+					return r.a.createElement("div", I({}, i, {
 						className: Object(l.a)(j.a.Wrapper, t, {
 							[j.a.mColumn]: "column" === n,
 							[j.a.mDisabled]: !!a,
@@ -344,7 +344,7 @@
 					}
 				}, r.a.createElement(ee, null, r.a.createElement($, {
 					style: {
-						background: "linear-gradient(to right, " + e.ticks[e.value].color + " " + e.value / e.max * 100 + "%,#C5C5C5 " + e.value / e.max * 100 + "%," + w()(Number(e.value) + 1, e.max + 1).map((t, n) => t === e.max ? "" : "#C5C5C5 " + (t / e.max * 100 - 1) + "%,#FFFFFF " + (t / e.max * 100 - 1) + "%,#FFFFFF " + t / e.max * 100 + "%,#C5C5C5 " + t / e.max * 100 + "%") + "#C5C5C5 100%)"
+						background: "linear-gradient(to right, " + w()(1, e.max + 1).map((t, n) => t <= e.value ? "".concat(e.ticks[e.value].color, " ").concat((t - 1) / e.max * 100, "%,\n                    ").concat(e.ticks[e.value].color, " ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : t !== e.max ? "#c5c5c5 ".concat((t - 1) / e.max * 100, "%, #c5c5c5 ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : "#c5c5c5 ".concat((t - 1) / e.max * 100, "%")) + ", #C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -394,7 +394,7 @@
 				ie = T.a.div("DropdownWrapper", j.a),
 				ce = T.a.wrapped(x.b, "DropdownRow", j.a),
 				de = T.a.span("Row", j.a),
-				me = T.a.wrapped(g.b, "DropdownTriangle", j.a),
+				me = T.a.wrapped(C.b, "DropdownTriangle", j.a),
 				ue = T.a.div("DescriptionsRow", j.a),
 				pe = Object(o.c)({
 					isOpen: (e, t) => Object(N.b)(t.id)(e)
@@ -413,7 +413,7 @@
 					onClick: e.openDropdown
 				}, r.a.createElement(de, {
 					id: "".concat("SettingDropdown--").concat(e.id)
-				}, e.selected), r.a.createElement(me, null), r.a.createElement(R, {
+				}, e.selected), r.a.createElement(me, null), r.a.createElement(F, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -544,9 +544,9 @@
 			})), n.d(t, "b", (function() {
 				return v
 			})), n.d(t, "c", (function() {
-				return C
-			})), n.d(t, "d", (function() {
 				return g
+			})), n.d(t, "d", (function() {
+				return C
 			})), n.d(t, "j", (function() {
 				return E
 			}));
@@ -566,8 +566,8 @@
 				b = a.a.div("FormItem", s.a),
 				f = a.a.h3("FormElementTitle", s.a),
 				v = a.a.div("FormElementDescription", s.a),
-				C = a.a.div("FormElementError", s.a),
-				g = a.a.div("FormElementSubGroup", s.a),
+				g = a.a.div("FormElementError", s.a),
+				C = a.a.div("FormElementSubGroup", s.a),
 				E = a.a.li("FormListItem", s.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
@@ -612,7 +612,7 @@
 			})), n.d(t, "h", (function() {
 				return v
 			})), n.d(t, "g", (function() {
-				return C
+				return g
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				r = n("./src/reddit/controls/Input/ModalInput.tsx"),
@@ -630,7 +630,7 @@
 				b = a.a.wrapped(o.a, "CheckboxSelected", d.a),
 				f = a.a.textarea("Textarea", d.a),
 				v = a.a.label("StyledLabel", d.a),
-				C = a.a.input("StyledFileInput", d.a)
+				g = a.a.input("StyledFileInput", d.a)
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
@@ -783,22 +783,22 @@
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/layout/row/Inline/index.tsx"),
 				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				C = n.n(v);
-			var g = Object(h.a)(e => {
+				g = n.n(v);
+			var C = Object(h.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return c.a.createElement("div", {
-						className: C.a.wrapper
+						className: g.a.wrapper
 					}, c.a.createElement(f.a, {
-						className: C.a.titleRow
+						className: g.a.titleRow
 					}, n), c.a.createElement("div", {
-						className: C.a.detailsContainer
+						className: g.a.detailsContainer
 					}, t), c.a.createElement(f.a, {
-						className: C.a.buttonRow
+						className: g.a.buttonRow
 					}, c.a.createElement(b.f, {
-						className: C.a.confirmButton,
+						className: g.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -858,7 +858,7 @@
 					}, e), i && c.a.createElement("span", {
 						className: _.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === l && c.a.createElement(g, {
+					}, o), t === l && c.a.createElement(C, {
 						onConfirmed: this.toggleModal,
 						title: s
 					}, r || e))
@@ -917,7 +917,7 @@
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
-				return g
+				return C
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.symbol.js");
 			var a = n("./node_modules/react/index.js"),
@@ -1000,18 +1000,18 @@
 				}, e.text, " ", r.a.createElement(i.a, {
 					className: m.a.plus
 				}));
-			var C;
+			var g;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(C || (C = {}));
-			class g extends r.a.Component {
+			}(g || (g = {}));
+			class C extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						addingNewInputs: !1
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: C.ADD
+							action: g.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -1020,7 +1020,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: C.REMOVE,
+							action: g.REMOVE,
 							value: n,
 							index: e
 						})
@@ -1190,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.f5ecf8f4bea3530f01b6.js.map
+//# sourceMappingURL=ProfileModeration~Settings~SubredditCreation.a505e6ad2cb2e499ec7d.js.map

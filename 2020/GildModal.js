@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.4090bbd7cafbfbb1af5e.js
-// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.7de8cea3721a857acf49.js
+// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
@@ -111,7 +111,7 @@
 			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
 				o = s("./src/lib/loadWithRetries/index.ts"),
 				c = s("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const a = () => Object(o.a)(() => Promise.all([Promise.all([s.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e8822216"), s.e("CoinsPurchaseModal~PennyPurchaseModal"), s.e("CoinsPurchaseModal")]).then(s.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx")), Object(c.c)()])).then(e => e[0].default),
+			const a = () => Object(o.a)(() => Promise.all([Promise.all([s.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e3dfa4ce"), s.e("CoinsPurchaseModal~PennyPurchaseModal"), s.e("CoinsPurchaseModal")]).then(s.bind(null, "./src/reddit/components/CoinPurchaseModal/index.tsx")), Object(c.c)()])).then(e => e[0].default),
 				r = Object(n.a)({
 					getComponent: a,
 					ErrorComponent: () => null,
@@ -321,4 +321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.4090bbd7cafbfbb1af5e.js.map
+//# sourceMappingURL=GildModal.7de8cea3721a857acf49.js.map

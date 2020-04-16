@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.da0668a81bcce5e468dd.js
-// Retrieved at 4/16/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5bd7c30229fb8a6e7317.js
+// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -21709,17 +21709,17 @@
 							})
 					}
 				},
-				N = (e, t) => Object(r.b)(Object(o.a)(e, [c.a]), {
+				N = (e, t, n) => Object(r.b)(Object(o.a)(e, [c.a]), {
 					method: s.bb.POST,
 					endpoint: Object(i.a)("".concat(e.apiUrl, "/api/report")),
-					data: x(t)
+					data: x(t, n)
 				}),
-				x = e => {
-					const t = Object(a.b)(e);
-					return Object.assign({}, t, {
-						api_type: "json",
-						from_help_desk: !0
-					})
+				x = (e, t) => {
+					const n = Object(a.b)(e),
+						s = Object.assign({}, n, {
+							api_type: "json"
+						});
+					return t && (s.from_help_desk = !0), s
 				},
 				k = async (e, t, n) => Object(r.b)(Object(o.a)(e, [c.a]), {
 					method: s.bb.POST,
@@ -50643,4 +50643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.da0668a81bcce5e468dd.js.map
+//# sourceMappingURL=Governance~Reddit.5bd7c30229fb8a6e7317.js.map

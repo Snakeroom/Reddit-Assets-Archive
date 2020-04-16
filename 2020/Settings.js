@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d61a9cd09756792f2ab8.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.6aa5a333318fe77bb8fb.js
+// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -1704,7 +1704,7 @@
 				_ = n("./src/lib/loadWithRetries/index.ts"),
 				C = n("./src/reddit/helpers/loadThirdPartyScript.ts");
 			var y = Object(v.a)({
-					getComponent: () => Object(_.a)(() => Promise.all([Promise.all([n.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e8822216"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(C.c)()])).then(e => e[0].default),
+					getComponent: () => Object(_.a)(() => Promise.all([Promise.all([n.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e3dfa4ce"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(C.c)()])).then(e => e[0].default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -6708,4 +6708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.d61a9cd09756792f2ab8.js.map
+//# sourceMappingURL=Settings.6aa5a333318fe77bb8fb.js.map

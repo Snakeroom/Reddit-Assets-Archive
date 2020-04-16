@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.f2f8cedcfcfd13b48407.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.713fa5156069d242d778.js
+// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
@@ -817,8 +817,8 @@
 							this.setState({
 								reportPending: !0
 							});
-							const s = await Object(Ie.n)(e.apiContext(), n);
-							console.log(s), this.checkResponse(s, () => {
+							const s = await Object(Ie.n)(e.apiContext(), n, !0);
+							this.checkResponse(s, () => {
 								this.setState({
 									reportSuccess: !0
 								})
@@ -869,6 +869,7 @@
 						withOverlay: !0,
 						overlayCustomStyles: l.a,
 						username: this.getCleanUsername(e.chosenReasonPayload.usernames[0]),
+						fromReportPage: !0,
 						onSubmit: this.onSubmit,
 						onCloseCrisisModal: this.onCloseCrisisModal
 					}))
@@ -900,4 +901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportPage.f2f8cedcfcfd13b48407.js.map
+//# sourceMappingURL=ReportPage.713fa5156069d242d778.js.map
