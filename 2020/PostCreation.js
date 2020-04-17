@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e1f8ac6a3949a062cb88.js
-// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9d814dc718d1b442da9b.js
+// Retrieved at 4/17/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -28848,10 +28848,10 @@
 							key: s,
 							index: s,
 							displayText: l.fbt._({
-								"*": "days",
-								_1: "day"
-							}, [l.fbt._plural(r)], {
-								hk: "3lWwAt"
+								"*": "{number} days",
+								_1: "1 day"
+							}, [l.fbt._plural(r, "number")], {
+								hk: "bXXYo"
 							}),
 							isSelected: Math.floor(e.duration / m.w) === r,
 							onClick: () => n(r * m.w)
@@ -30698,4 +30698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.e1f8ac6a3949a062cb88.js.map
+//# sourceMappingURL=PostCreation.9d814dc718d1b442da9b.js.map
