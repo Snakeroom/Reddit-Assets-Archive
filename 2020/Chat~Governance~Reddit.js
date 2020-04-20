@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.764b63caa90faff5c98f.js
-// Retrieved at 4/20/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ad29fcb047f8ce125dfb.js
+// Retrieved at 4/20/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10990,14 +10990,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("9e8147c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("332beeb-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9e8147c-production",
+						release: "332beeb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11359,7 +11359,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "9e8147c-production",
+							releaseClient: "332beeb-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -11514,7 +11514,7 @@
 					headers: Object.assign({}, t.headers || {}, e.headers)
 				});
 				(0 === i.endpoint.indexOf(g.a.sendbirdServiceUrl) || (0 === i.endpoint.indexOf(g.a.redditUrl) || i.endpoint.indexOf(g.a.oauthUrl), 0)) && (i.headers = d()(i.headers, [m.a, m.c])), 0 !== i.endpoint.indexOf(g.a.gatewayUrl) && (i.headers = d()(i.headers, [m.b])), t.withoutRedditHeaders && (i.headers = d()(i.headers, [m.a, m.c, m.b]));
-				const n = f.b.getTracingHeaders();
+				const n = f.b.getTracingHeadersWithSecret();
 				i.headers = Object.assign({}, i.headers, n);
 				const {
 					host: r,
@@ -25044,7 +25044,7 @@
 				e.HttpMethod = "http.method", e.HttpUrl = "http.url", e.HttpStatusCode = "http.status_code"
 			}(l || (l = {})),
 			function(e) {
-				e.TraceId = "X-Trace", e.SpanId = "X-Span", e.ParentSpanId = "X-Parent", e.Sampled = "X-Sampled", e.Flags = "X-Flags", e.Hmac = "X-Trace-Hmac"
+				e.TraceId = "X-Trace", e.SpanId = "X-Span", e.ParentSpanId = "X-Parent", e.Sampled = "X-Sampled", e.Flags = "X-Flags", e.Hmac = "X-Trace-Hmac", e.Secret = "x-trace-secret"
 			}(a || (a = {})),
 			function(e) {
 				e.Signature = "X-Signature"
@@ -25099,6 +25099,9 @@
 						[a.Flags]: "0",
 						[a.Hmac]: t
 					} : {}
+				}
+				getTracingHeadersWithSecret() {
+					return this.getTracingHeaders()
 				}
 				getClientTraceApiHeaders() {
 					if (!this.isEnabled) return {};
@@ -28339,4 +28342,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.764b63caa90faff5c98f.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.ad29fcb047f8ce125dfb.js.map
