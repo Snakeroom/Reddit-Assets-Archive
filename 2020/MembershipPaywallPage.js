@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.373e09d6e016db241d9b.js
-// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.748f4889b5a7611e0f2c.js
+// Retrieved at 4/20/2020, 4:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -99,45 +99,46 @@
 				i = a("./node_modules/reselect/es/index.js"),
 				n = a("./src/lib/classNames/index.ts"),
 				c = a("./src/lib/currency/centsToDollars/index.ts"),
-				m = a("./src/reddit/components/Governance/Token/index.tsx"),
-				d = a("./src/reddit/helpers/governance/tokens.ts"),
-				l = a("./src/reddit/selectors/gov.ts"),
-				p = a("./src/reddit/components/Economics/Price/strings.ts"),
-				u = a("./src/reddit/components/Economics/Price/index.m.less"),
-				h = a.n(u);
+				m = a("./src/lib/prettyPrintNumber/index.ts"),
+				d = a("./src/reddit/components/Governance/Token/index.tsx"),
+				l = a("./src/reddit/helpers/governance/tokens.ts"),
+				p = a("./src/reddit/selectors/gov.ts"),
+				u = a("./src/reddit/components/Economics/Price/strings.ts"),
+				h = a("./src/reddit/components/Economics/Price/index.m.less"),
+				b = a.n(h);
 			const {
-				fbt: b
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), g = e => {
+				fbt: g
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), f = e => {
 				let {
 					subredditId: t,
 					pointPrice: a
 				} = e;
-				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
-					className: h.a.token,
+				return o.a.createElement(o.a.Fragment, null, o.a.createElement(d.a, {
+					className: b.a.token,
 					subredditId: t
 				}), a)
-			}, f = Object(i.c)({
-				tokenDisplayConversion: l.o,
-				tokenName: l.p
+			}, _ = Object(i.c)({
+				tokenDisplayConversion: p.o,
+				tokenName: p.p
 			});
-			t.a = Object(r.b)(f)(e => {
+			t.a = Object(r.b)(_)(e => {
 				const {
 					className: t,
 					monthly: a,
 					subredditId: s,
 					tokenDisplayConversion: r,
 					tokenName: i
-				} = e, m = e.dollarPrice && "$".concat(Object(c.a)(e.dollarPrice, !0)), l = e.tokenPrice && Object(d.b)(e.tokenPrice, r) + " " + i;
-				if (!m && !l) return null;
-				const u = a ? p.a.Monthly : p.a.Once;
+				} = e, d = e.dollarPrice && "$".concat(Object(c.a)(e.dollarPrice, !0)), p = e.tokenPrice && Object(m.a)(Object(l.b)(e.tokenPrice, r)) + " " + i;
+				if (!d && !p) return null;
+				const h = a ? u.a.Monthly : u.a.Once;
 				return o.a.createElement("span", {
-					className: Object(n.a)(t, h.a.price)
-				}, m && l ? b._("{dollar-price} or {point-price}", [b._param("dollar-price", Object(p.c)(m, u)), b._param("point-price", o.a.createElement(g, {
+					className: Object(n.a)(t, b.a.price)
+				}, d && p ? g._("{dollar-price} or {point-price}", [g._param("dollar-price", Object(u.c)(d, h)), g._param("point-price", o.a.createElement(f, {
 					subredditId: s,
-					pointPrice: Object(p.c)(l, u)
+					pointPrice: Object(u.c)(p, h)
 				}))], {
 					hk: "2Gif0l"
-				}) : m ? Object(p.b)(m, u) : l ? Object(p.b)(l, u) : null)
+				}) : d ? Object(u.b)(d, h) : p ? Object(u.b)(p, h) : null)
 			})
 		},
 		"./src/reddit/components/Economics/Price/strings.ts": function(e, t, a) {
@@ -3939,4 +3940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.373e09d6e016db241d9b.js.map
+//# sourceMappingURL=MembershipPaywallPage.748f4889b5a7611e0f2c.js.map
