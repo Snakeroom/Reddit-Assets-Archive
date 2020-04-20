@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.78c7295a835149aeab7d.js
-// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f253b9194767d79caf8a.js
+// Retrieved at 4/20/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2768,8 +2768,14 @@
 				g = s("./src/reddit/constants/gold.ts"),
 				x = (s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./src/config.ts"));
 			const f = {
-				flame: "".concat(x.a.assetPath, "/img/gold/highlight-flame.png"),
-				heart: "".concat(x.a.assetPath, "/img/gold/highlight-heart.png")
+				flame: {
+					asset: "".concat(x.a.assetPath, "/img/gold/highlight-flame.png"),
+					glowColor: "ff4500"
+				},
+				heart: {
+					asset: "".concat(x.a.assetPath, "/img/gold/highlight-heart.png"),
+					glowColor: "ff0000"
+				}
 			};
 			var v = s("./src/reddit/reducers/comments/visitHighlightingFilter/index.ts"),
 				C = s("./src/reddit/selectors/comments.ts"),
@@ -3420,7 +3426,7 @@
 						trackClick: D,
 						renderedInOverlay: W,
 						subredditType: H
-					} = e, V = !O && !n.isDeleted && !!u && u.length > 0, U = Object(P.a)(j.c.edit, n.id), G = Object(P.a)(j.c.replyToComment, n.id), K = Object(Z.a)(S), z = n.authorIsContractor && H === xt.c.EmployeesOnly, J = n.isLocked, q = f && v && v.glowHexColor, X = f && v && v.bubbleTreatmentAssetUrl, Q = f;
+					} = e, V = !O && !n.isDeleted && !!u && u.length > 0, U = Object(P.a)(j.c.edit, n.id), G = Object(P.a)(j.c.replyToComment, n.id), K = Object(Z.a)(S), z = n.authorIsContractor && H === xt.c.EmployeesOnly, J = n.isLocked, q = f && v && v.glowHexColor, X = f && v && v.bubbleTreatmentAssetUrl, Q = f, Y = K && T;
 					return i.a.createElement(Mt, {
 						className: Object(c.a)("Comment ".concat(n.id), {
 							[kt.a.highlightComment]: y && Q,
@@ -3451,9 +3457,9 @@
 							[kt.a.highlightComment]: y && !Q,
 							[kt.a.isActive]: C,
 							[kt.a.isCollapsed]: a,
-							[kt.a.isLocked]: J,
+							[kt.a.isLocked]: J && (!f || Y),
 							[kt.a.isPendingDeletion]: _,
-							[kt.a.isRemoved]: !!n.bannedBy
+							[kt.a.isRemoved]: !!n.bannedBy && (!f || Y)
 						})
 					}, i.a.createElement(gt.a, null, k.fbt._("level {depth}", [k.fbt._param("depth", m + 1)], {
 						hk: "2XnyAV"
@@ -3690,8 +3696,11 @@
 						const [s, n, o, r] = t.split(":");
 						if ("econ" !== s && "render" !== n) return e;
 						if ("glow" === o && (e.glowHexColor = r), "bubble" === o) {
-							const t = f[r];
-							e.bubbleTreatmentAssetUrl = t
+							const {
+								asset: t,
+								glowColor: s
+							} = f[r];
+							e.bubbleTreatmentAssetUrl = t, e.glowHexColor = s
 						}
 						return e
 					}, {}))(n.treatmentTags || []) : {}
@@ -16347,4 +16356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.78c7295a835149aeab7d.js.map
+//# sourceMappingURL=CollectionCommentsPage.f253b9194767d79caf8a.js.map
