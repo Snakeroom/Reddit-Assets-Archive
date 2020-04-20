@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9d814dc718d1b442da9b.js
-// Retrieved at 4/17/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2b2c1b26d5682f0f653c.js
+// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -2517,7 +2517,7 @@
 					} = this.props;
 					if (n <= 0) return null;
 					const u = e.icon32 ? e.icon32.url : e.icon.url,
-						p = e.awardType === j.d.Moderator,
+						p = e.awardType === j.e.Moderator,
 						m = Object(k.a)(e.id, a.id),
 						h = n > 1 || p,
 						b = "container" === d;
@@ -2731,7 +2731,7 @@
 						onToggleHideAwardModal: l,
 						allAwards: d,
 						thing: u
-					} = this.props, p = Object(j.m)(Object.keys(u.awardCountsById || {}).map(e => d[e]).filter(Boolean)), m = n && n.id === u.authorId, h = !!p.length, b = !a && o && u.isGildable && h;
+					} = this.props, p = Object(j.n)(Object.keys(u.awardCountsById || {}).map(e => d[e]).filter(Boolean)), m = n && n.id === u.authorId, h = !!p.length, b = !a && o && u.isGildable && h;
 					return r.a.createElement("div", {
 						className: Object(c.a)(t, M.a.awardBadges)
 					}, e, this.renderAwardings(p), b && r.a.createElement(A, {
@@ -30698,4 +30698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.9d814dc718d1b442da9b.js.map
+//# sourceMappingURL=PostCreation.2b2c1b26d5682f0f653c.js.map

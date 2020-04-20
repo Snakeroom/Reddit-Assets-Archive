@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.103b3dac95fde48f7bfa.js
-// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.80ad450bbc952fde1b4b.js
+// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -208,7 +208,7 @@
 					} = this.props;
 					if (s <= 0) return null;
 					const m = e.icon32 ? e.icon32.url : e.icon.url,
-						u = e.awardType === E.d.Moderator,
+						u = e.awardType === E.e.Moderator,
 						p = Object(C.a)(e.id, d.id),
 						b = s > 1 || u,
 						h = "container" === l;
@@ -422,7 +422,7 @@
 						onToggleHideAwardModal: c,
 						allAwards: l,
 						thing: m
-					} = this.props, u = Object(E.m)(Object.keys(m.awardCountsById || {}).map(e => l[e]).filter(Boolean)), p = s && s.id === m.authorId, b = !!u.length, h = !d && r && m.isGildable && b;
+					} = this.props, u = Object(E.n)(Object.keys(m.awardCountsById || {}).map(e => l[e]).filter(Boolean)), p = s && s.id === m.authorId, b = !!u.length, h = !d && r && m.isGildable && b;
 					return n.a.createElement("div", {
 						className: Object(i.a)(t, P.a.awardBadges)
 					}, e, this.renderAwardings(u), h && n.a.createElement(D, {
@@ -1709,4 +1709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.103b3dac95fde48f7bfa.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.80ad450bbc952fde1b4b.js.map

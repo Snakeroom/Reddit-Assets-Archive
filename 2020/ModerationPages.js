@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7e98fe099f5a1c6498c5.js
-// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fe1bbe519add0882ccd6.js
+// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5865,7 +5865,7 @@
 						className: R.a.awardDetail
 					}, e.coinPrice || 0), a.a.createElement("div", {
 						className: R.a.awardDetail
-					}, e.awardType === x.d.Moderator ? L._("Mod only", null, {
+					}, e.awardType === x.e.Moderator ? L._("Mod only", null, {
 						hk: "UxkP0"
 					}) : L._("All", null, {
 						hk: "2J55F0"
@@ -5995,7 +5995,7 @@
 					const o = Object(u.a)(n),
 						r = s && s.all,
 						i = this.getAwardSlots().filter(e => r && !o || e.filled),
-						d = e.filter(e => e.awardType === x.d.Moderator),
+						d = e.filter(e => e.awardType === x.e.Moderator),
 						l = e.length < m.d && d.length < m.e && r && !o;
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(D, {
 						subredditId: n
@@ -6008,7 +6008,7 @@
 				getAwardSlots() {
 					const {
 						awards: e
-					} = this.props, t = Object(x.g)(e), s = e => e.filled && e.award.awardType === x.d.Moderator;
+					} = this.props, t = Object(x.h)(e), s = e => e.filled && e.award.awardType === x.e.Moderator;
 					return t.sort((e, t) => s(e) && !s(t) ? 1 : s(t) && !s(e) ? -1 : e.price !== t.price ? e.price - t.price : e.filled && !t.filled ? -1 : (t.filled && e.filled, 1))
 				}
 				render() {
@@ -24938,7 +24938,7 @@
 				i = e => ({
 					awardId: e.id,
 					awardName: e.name,
-					isModAward: e.awardType === n.d.Moderator,
+					isModAward: e.awardType === n.e.Moderator,
 					numberCoins: e.coinPrice,
 					numberMonths: Math.floor((e.daysOfPremium || 0) / 30),
 					numberCoinsToRecipient: e.coinReward || 0,
@@ -28670,4 +28670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.7e98fe099f5a1c6498c5.js.map
+//# sourceMappingURL=ModerationPages.fe1bbe519add0882ccd6.js.map

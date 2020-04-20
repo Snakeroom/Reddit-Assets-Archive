@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d4e7a2c77a4a48fdd78a.js
-// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c1e51874fefc85fc9cca.js
+// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -175,7 +175,7 @@
 							data: t
 						})
 					}
-					if (j.awardType === l.d.Moderator && void 0 === e.subredditCoins) {
+					if (j.awardType === l.e.Moderator && void 0 === e.subredditCoins) {
 						const t = Object(E.H)(n, {
 								thingId: f
 							}),
@@ -539,7 +539,7 @@
 						className: K.a.spacer
 					}), n.a.createElement(se, {
 						award: t
-					}), t.awardType === u.d.Moderator ? n.a.createElement("span", {
+					}), t.awardType === u.e.Moderator ? n.a.createElement("span", {
 						className: K.a.giver
 					}, n.a.createElement(Q.a, {
 						className: K.a.modIcon
@@ -841,7 +841,7 @@
 						needPremium: t,
 						selectedAward: s,
 						thingId: a
-					} = this.props, n = s.awardType === u.d.Moderator;
+					} = this.props, n = s.awardType === u.e.Moderator;
 					return t ? Ae._("Get Premium", null, {
 						hk: "3VB1S9"
 					}) : !e || n ? Object(o.a)(a) ? Ae._("Award post", null, {
@@ -865,7 +865,7 @@
 						selectedAward: l,
 						subredditCoins: m,
 						userCoins: b
-					} = this.props, p = l.awardType === u.d.Moderator, h = (p ? m : b) || 0;
+					} = this.props, p = l.awardType === u.e.Moderator, h = (p ? m : b) || 0;
 					return n.a.createElement("div", {
 						className: Object(c.a)(e, je.a.gildFooter)
 					}, n.a.createElement("div", {
@@ -1029,7 +1029,7 @@
 						awardType: c,
 						coinPrice: d,
 						pennyPrice: l
-					} = n, m = c === u.d.Moderator, b = !!l || ((m ? r : i) || 0) < d && !(s && !m), p = a && a.media && "rpan" === a.media.type, h = a ? ((e, t) => {
+					} = n, m = c === u.e.Moderator, b = !!l || ((m ? r : i) || 0) < d && !(s && !m), p = a && a.media && "rpan" === a.media.type, h = a ? ((e, t) => {
 						const s = Object(o.a)(t.id);
 						return s ? e.filter(e => !(e => {
 							for (const t of e)
@@ -1623,4 +1623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.d4e7a2c77a4a48fdd78a.js.map
+//# sourceMappingURL=FramedGild~GildModal.c1e51874fefc85fc9cca.js.map

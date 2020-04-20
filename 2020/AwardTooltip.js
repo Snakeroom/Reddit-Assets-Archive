@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.7ceee907f2c1903aa65a.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.a6c7a6750f4e379498fa.js
+// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -211,7 +211,7 @@
 						className: Object(c.a)(A.a.headerBar, {
 							[A.a.headerBarPremium]: d
 						})
-					}, p && this.renderHideButton(), e.awardType !== f.d.Global && this.renderReporterButton()), n.a.createElement("div", {
+					}, p && this.renderHideButton(), e.awardType !== f.e.Global && this.renderReporterButton()), n.a.createElement("div", {
 						className: A.a.awardDetails
 					}, n.a.createElement("div", {
 						className: A.a.awardIconContainer
@@ -228,12 +228,12 @@
 						className: A.a.awardDescription
 					}, n.a.createElement(I, {
 						award: e
-					})), e.awardType === f.d.Community && i && n.a.createElement("div", {
+					})), e.awardType === f.e.Community && i && n.a.createElement("div", {
 						className: A.a.subreddit
 					}, n.a.createElement(E.b, {
 						className: A.a.subredditIcon,
 						subredditOrProfile: i
-					}), "r/".concat(i.name)), e.awardType === f.d.Moderator && n.a.createElement("div", {
+					}), "r/".concat(i.name)), e.awardType === f.e.Moderator && n.a.createElement("div", {
 						className: A.a.subreddit
 					}, n.a.createElement(N.a, {
 						className: Object(c.a)(A.a.subredditIcon, A.a.modShield)
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.7ceee907f2c1903aa65a.js.map
+//# sourceMappingURL=AwardTooltip.a6c7a6750f4e379498fa.js.map
