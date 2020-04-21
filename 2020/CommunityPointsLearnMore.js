@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.db2b6175a3c5df498042.js
-// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b174076f65cfcf03277e.js
+// Retrieved at 4/21/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -232,7 +232,7 @@
 				E = (a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/fbt/lib/FbtPublic.js")),
 				g = a("./src/config.ts"),
 				v = a("./src/lib/classNames/index.ts"),
-				x = e => o.a.createElement("svg", {
+				k = e => o.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 16 16",
 					version: "1.1",
@@ -240,8 +240,8 @@
 				}, o.a.createElement("path", {
 					d: "M8.56569 0.234315C8.25327 -0.0781049 7.74673 -0.0781049 7.43431 0.234315C7.12189 0.546734 7.12189 1.05327 7.43431 1.36569L13.2686 7.2H0.8C0.358172 7.2 0 7.55817 0 8C0 8.44183 0.358172 8.8 0.8 8.8H13.2686L7.43431 14.6343C7.12189 14.9467 7.12189 15.4533 7.43431 15.7657C7.74673 16.0781 8.25327 16.0781 8.56569 15.7657L15.7657 8.56569C16.0781 8.25327 16.0781 7.74673 15.7657 7.43431L8.56569 0.234315Z"
 				})),
-				k = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less"),
-				C = a.n(k);
+				x = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less"),
+				C = a.n(x);
 
 			function _(e) {
 				let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
@@ -311,7 +311,7 @@
 						onClick: () => {
 							a(t + 1), t + 2 === P.length && e.onComplete()
 						}
-					}, o.a.createElement(x, {
+					}, o.a.createElement(k, {
 						className: C.a.arrowIcon
 					}))))
 				},
@@ -375,14 +375,14 @@
 				W = a.n(D);
 			const {
 				fbt: F
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), S = "t5_2f1ola", H = "t5_2j7xd9";
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), S = ["t5_2l3wpx", "t5_2f1ola", "t5_2j7xd9"];
 			t.default = function() {
 				const e = Object(r.d)(f.b),
 					[t, a] = Object(n.useState)(!1),
 					[l, c] = Object(n.useState)(!1),
 					m = Object(r.d)(s.e),
 					d = Object(r.c)();
-				return -1 === e.indexOf(S) && -1 === e.indexOf(H) ? null : o.a.createElement("div", {
+				return S.some(t => e.includes(t)) ? o.a.createElement("div", {
 					className: W.a.container
 				}, o.a.createElement("div", {
 					className: W.a.title
@@ -399,9 +399,9 @@
 					hk: "17EJkT"
 				})), o.a.createElement(U, null)), l && o.a.createElement(b, {
 					onClose: () => c(!1)
-				}))
+				})) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.db2b6175a3c5df498042.js.map
+//# sourceMappingURL=CommunityPointsLearnMore.b174076f65cfcf03277e.js.map

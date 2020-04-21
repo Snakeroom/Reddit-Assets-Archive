@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9eab52339359fc2046e0.js
-// Retrieved at 4/21/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e28258e13b7768625f41.js
+// Retrieved at 4/21/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -954,7 +954,7 @@
 						FrontpageSidebar: "a52d4250a31451b0acbb",
 						Frontpage: "00267a78c2b970e9703c",
 						Topic: "5aff078bde613e29e04b",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "2754d2a53d8ca02d5f44",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "d6839442c5422e9b70f8",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "6d38c52b26d27c46df28",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "a3882c8bc203baa8b28a",
 						PostDraft: "d52fa53cc535811f68de",
@@ -1008,7 +1008,7 @@
 						ProfileSnoobuilder: "8c21127bb8b49612de71",
 						"vendors~MembershipPaywallPage": "4e8477ad35890bb4b9a2",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "7b74b42a9c7547556496",
-						MembershipPaywallPage: "748f4889b5a7611e0f2c",
+						MembershipPaywallPage: "d3eaff18c00408a0ff39",
 						"vendors~Chat~RedesignChat": "5c6c446f6e045bc3c01b",
 						"Chat~RedesignChat": "34e1bf1e60bdb56592d4",
 						RedesignChat: "aa538921747f4605b0e2",
@@ -1043,7 +1043,7 @@
 						EconomicsSupportPaymentModal: "149b988f0c38cc35ef7c",
 						PremiumPurchaseModal: "bf93cde0ba234c0a565f",
 						"vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33": "0c4153fe8b5ae94f9978",
-						CommunityPointsLearnMore: "db2b6175a3c5df498042",
+						CommunityPointsLearnMore: "b174076f65cfcf03277e",
 						"CryptoHarbergerTaxManageModal~HarbergerTaxManageModal": "7de6a6f276367c2b9ba4",
 						CryptoHarbergerTaxManageModal: "77b261a9f25517fae70d",
 						HarbergerTaxManageModal: "d5504365513f0f814722",
@@ -1232,4 +1232,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.9eab52339359fc2046e0.js.map
+//# sourceMappingURL=runtime~Reddit.e28258e13b7768625f41.js.map
