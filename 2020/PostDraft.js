@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.44604db85597ec64d54e.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.d52fa53cc535811f68de.js
+// Retrieved at 4/21/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -773,7 +773,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => n.e("reddit-components-ProfileIdCard").then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
+					importAsync: () => Promise.all([n.e("Settings~reddit-components-ProfileIdCard"), n.e("reddit-components-ProfileIdCard")]).then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -788,8 +788,8 @@
 				}),
 				P = j.a.div("Container", C.a),
 				M = Object(b.t)(),
-				L = new Set(["all", "post"]),
-				S = Object(d.a)((e, t) => {
+				S = new Set(["all", "post"]),
+				L = Object(d.a)((e, t) => {
 					let {
 						pageLayer: n
 					} = t;
@@ -799,7 +799,7 @@
 					return s && Object(v.O)(e, {
 						subredditId: s.id
 					})
-				}, e => (e || []).filter(e => L.has(e.kind))),
+				}, e => (e || []).filter(e => S.has(e.kind))),
 				N = (e, t) => {
 					let {
 						pageLayer: n
@@ -827,7 +827,7 @@
 						})
 					},
 					subreddit: b.q,
-					subredditRules: S,
+					subredditRules: L,
 					currentPostCollection: b.f
 				}),
 				R = Object(l.b)(T),
@@ -1328,7 +1328,7 @@
 				};
 			const P = ["right", "bottom"],
 				M = ["right", "top"];
-			var L = Object(a.b)(() => Object(l.c)({
+			var S = Object(a.b)(() => Object(l.c)({
 					post: v.N,
 					language: y.P
 				}), (e, t) => ({
@@ -1363,14 +1363,14 @@
 						isLoading: !0
 					})
 				}),
-				S = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
-				N = n.n(S);
+				L = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
+				N = n.n(L);
 			const {
 				fbt: T
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ["right", "bottom"], D = ["right", "top"];
 			class I extends r.a.PureComponent {
 				constructor() {
-					super(...arguments), this.renderItem = (e, t) => r.a.createElement(L, {
+					super(...arguments), this.renderItem = (e, t) => r.a.createElement(S, {
 						collectionId: this.props.collection.id,
 						key: e,
 						postId: e
@@ -1578,7 +1578,7 @@
 				subredditId: m.m,
 				topPostVariant: f.d
 			}));
-			class L extends r.a.Component {
+			class S extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1651,7 +1651,7 @@
 					})))
 				}
 			}
-			t.a = P(M(Object(l.a)(Object(c.c)(L))))
+			t.a = P(M(Object(l.a)(Object(c.c)(S))))
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
@@ -2017,12 +2017,12 @@
 					hk: "1xcVwQ"
 				})))),
 				M = n("./src/reddit/components/PostDraft/index.m.less"),
-				L = n.n(M);
-			const S = d.a.div("ReviewDraftHeader", L.a),
-				N = d.a.h2("PostDraftLabel", L.a),
-				T = d.a.div("Container", L.a),
-				R = d.a.time("DraftSavedTime", L.a),
-				D = d.a.h1("Title", L.a),
+				S = n.n(M);
+			const L = d.a.div("ReviewDraftHeader", S.a),
+				N = d.a.h2("PostDraftLabel", S.a),
+				T = d.a.div("Container", S.a),
+				R = d.a.time("DraftSavedTime", S.a),
+				D = d.a.h1("Title", S.a),
 				I = Object(c.t)(),
 				B = Object(i.c)({
 					language: m.P,
@@ -2036,7 +2036,7 @@
 					} = e;
 					if (!t) return null;
 					const o = Object(l.f)((t.modified || t.created) / 1e3);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(S, null, r.a.createElement(N, null, a.fbt._("Review draft", null, {
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(L, null, r.a.createElement(N, null, a.fbt._("Review draft", null, {
 						hk: "tclLq"
 					}))), r.a.createElement(T, null, s && r.a.createElement(R, null, a.fbt._("Draft last updated by {username} {timeAgo}", [a.fbt._param("username", "u/".concat(s.name)), a.fbt._param("timeAgo", "".concat(o))], {
 						hk: "31mRXt"
@@ -2087,4 +2087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.44604db85597ec64d54e.js.map
+//# sourceMappingURL=PostDraft.d52fa53cc535811f68de.js.map

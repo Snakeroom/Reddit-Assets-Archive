@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fe1bbe519add0882ccd6.js
-// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6a948587879bf5adcecf.js
+// Retrieved at 4/21/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -268,7 +268,7 @@
 				r = s("./src/reddit/models/Image/index.tsx"),
 				i = s("./src/reddit/selectors/imageUploads.ts");
 			const d = Object(o.c)({
-				_imageUploads: i.a
+				_imageUploads: i.b
 			});
 
 			function l(e, t) {
@@ -12492,7 +12492,7 @@
 						let {
 							pendingImage: s
 						} = t;
-						const n = Object(Ht.a)(e),
+						const n = Object(Ht.b)(e),
 							o = s && s.id;
 						return o && n[o] || void 0
 					}
@@ -20724,8 +20724,8 @@
 				render: t => o.a.createElement(v, {
 					className: Object(a.a)({
 						[u.a.isOver]: t
-					})
-				}, o.a.createElement(h, null, o.a.createElement(b, null)), o.a.createElement(g, null, e.label), o.a.createElement(d.a, {
+					}, e.labelClassName)
+				}, o.a.createElement(h, null, e.icon || o.a.createElement(b, null)), o.a.createElement(g, null, e.label), o.a.createElement(d.a, {
 					className: u.a.ImageInput,
 					name: e.name,
 					value: e.value,
@@ -28670,4 +28670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.fe1bbe519add0882ccd6.js.map
+//# sourceMappingURL=ModerationPages.6a948587879bf5adcecf.js.map

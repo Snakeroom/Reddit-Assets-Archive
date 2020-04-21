@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.7300c2af7191f0f23fbd.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.5b7122245184b6d7369c.js
+// Retrieved at 4/21/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -13,7 +13,7 @@
 				l = n("./src/reddit/models/Image/index.tsx"),
 				i = n("./src/reddit/selectors/imageUploads.ts");
 			const o = Object(r.c)({
-				_imageUploads: i.a
+				_imageUploads: i.b
 			});
 
 			function d(e, t) {
@@ -6462,8 +6462,8 @@
 				render: t => r.a.createElement(x, {
 					className: Object(s.a)({
 						[m.a.isOver]: t
-					})
-				}, r.a.createElement(g, null, r.a.createElement(p, null)), r.a.createElement(b, null, e.label), r.a.createElement(o.a, {
+					}, e.labelClassName)
+				}, r.a.createElement(g, null, e.icon || r.a.createElement(p, null)), r.a.createElement(b, null, e.label), r.a.createElement(o.a, {
 					className: m.a.ImageInput,
 					name: e.name,
 					value: e.value,
@@ -8364,4 +8364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.7300c2af7191f0f23fbd.js.map
+//# sourceMappingURL=StructuredStyles.5b7122245184b6d7369c.js.map

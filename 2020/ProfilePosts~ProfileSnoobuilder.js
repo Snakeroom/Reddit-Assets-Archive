@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.bc1f5aa753d178849276.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.72f000395c34826319bb.js
+// Retrieved at 4/21/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/ProfileNavMenu/index.m.less": function(e, t, n) {
@@ -41,8 +41,8 @@
 				N = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
 				k = n.n(N);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function S() {
+				return (S = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -50,7 +50,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = Object(f.t)({
+			const j = Object(f.t)({
 					routeName: f.T,
 					privateListingType: f.i
 				}),
@@ -62,7 +62,7 @@
 				}),
 				L = Object(l.a)(h.a),
 				I = "profile-nav-menu-tooltip";
-			t.a = S(Object(o.b)(C, e => ({
+			t.a = j(Object(o.b)(C, e => ({
 				toggleTooltip: t => e(Object(b.h)({
 					tooltipId: t
 				}))
@@ -82,13 +82,13 @@
 				}, i.a.createElement(p.a, {
 					bladeOpen: !1,
 					offsetLeft: d ? x.u : 0,
-					render: () => i.a.createElement(i.a.Fragment, null, P({
+					render: () => i.a.createElement(i.a.Fragment, null, A({
 						profileName: r,
 						isOwnProfile: n,
 						routeName: o,
 						privateListingType: s,
 						isSnoovatar30Enabled: c
-					}).map(e => i.a.createElement(T, j({
+					}).map(e => i.a.createElement(T, S({
 						key: e.key
 					}, e))), i.a.createElement("button", {
 						className: Object(u.a)(k.a.mainLink, k.a.overflowMenuButton),
@@ -103,7 +103,7 @@
 						isOwnProfile: n,
 						routeName: o,
 						privateListingType: s
-					}).map(e => i.a.createElement(A, j({
+					}).map(e => i.a.createElement(P, S({
 						key: e.key
 					}, e)))))
 				}))
@@ -130,7 +130,7 @@
 						href: r
 					}, s)
 				},
-				A = e => {
+				P = e => {
 					let {
 						isActive: t,
 						internal: n,
@@ -159,7 +159,7 @@
 						target: "_blank"
 					}, c)
 				},
-				P = e => {
+				A = e => {
 					let {
 						profileName: t,
 						isOwnProfile: n,
@@ -351,7 +351,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => n.e("reddit-components-ProfileIdCard").then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
+					importAsync: () => Promise.all([n.e("Settings~reddit-components-ProfileIdCard"), n.e("reddit-components-ProfileIdCard")]).then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1073,7 +1073,7 @@
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return j
+				return S
 			})), n.d(t, "a", (function() {
 				return C
 			}));
@@ -1119,7 +1119,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = e => i.a.createElement(f.a, {
+			const S = e => i.a.createElement(f.a, {
 					className: Object(d.a)(N.a.Container, e.className),
 					noGradient: !0,
 					styles: e.widget && e.widget.styles,
@@ -1154,10 +1154,10 @@
 					className: N.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
-				S = Object(c.c)({
+				j = Object(c.c)({
 					hideNSFWPref: b.z
 				}),
-				C = Object(o.b)(S)(e => i.a.createElement("div", {
+				C = Object(o.b)(j)(e => i.a.createElement("div", {
 					className: N.a.communityItemContainer
 				}, i.a.createElement(E.a, {
 					widthRight: h.t
@@ -1355,12 +1355,12 @@
 						userName: n.name
 					}) : null
 				}
-			}), j = Object(i.b)(k, e => ({
+			}), S = Object(i.b)(k, e => ({
 				trackTwitterAccountClicked: t => e((e, n) => u.k(n(), t))
 			}), (e, t, n) => Object.assign({}, n, e, t, {
 				onTwitterAccountClicked: () => t.trackTwitterAccountClicked(e.user)
 			}));
-			t.a = Object(c.c)(j(e => {
+			t.a = Object(c.c)(S(e => {
 				const {
 					onTwitterAccountClicked: t,
 					twitterAccount: n
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.bc1f5aa753d178849276.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.72f000395c34826319bb.js.map

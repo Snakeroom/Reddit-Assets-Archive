@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.a23377dc94aef9db1208.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.7de6a6f276367c2b9ba4.js
+// Retrieved at 4/21/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -299,23 +299,25 @@
 				render() {
 					const {
 						className: e,
-						label: t,
-						labelClassName: n,
-						value: r,
-						controlName: o,
-						isUploading: d,
-						tabIndex: c
+						icon: t,
+						label: n,
+						labelClassName: r,
+						value: o,
+						controlName: d,
+						isUploading: c,
+						tabIndex: i
 					} = this.props;
-					return d ? s.a.createElement(a.a, {
+					return c ? s.a.createElement(a.a, {
 						className: e
 					}) : s.a.createElement(a.b, {
 						className: e,
-						name: o,
-						label: t,
-						labelClassName: n,
+						icon: t,
+						name: d,
+						label: n,
+						labelClassName: r,
 						multiple: !1,
-						tabIndex: c,
-						value: r,
+						tabIndex: i,
+						value: o,
 						onChange: this.onChange
 					})
 				}
@@ -372,8 +374,8 @@
 				render: t => s.a.createElement(j, {
 					className: Object(a.a)({
 						[m.a.isOver]: t
-					})
-				}, s.a.createElement(g, null, s.a.createElement(b, null)), s.a.createElement(x, null, e.label), s.a.createElement(c.a, {
+					}, e.labelClassName)
+				}, s.a.createElement(g, null, e.icon || s.a.createElement(b, null)), s.a.createElement(x, null, e.label), s.a.createElement(c.a, {
 					className: m.a.ImageInput,
 					name: e.name,
 					value: e.value,
@@ -785,4 +787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.a23377dc94aef9db1208.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.7de6a6f276367c2b9ba4.js.map
