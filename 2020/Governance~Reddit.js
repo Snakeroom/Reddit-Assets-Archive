@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6771ba1803ac1765bcb2.js
-// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0affaaff0df5a07e229e.js
+// Retrieved at 4/22/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -19559,7 +19559,7 @@
 				r = "showRpanDu",
 				o = "topContentDismissalTime",
 				i = "topContentTimesDismissed",
-				c = [...["openPostInNewTab", "rememberCommunitySort", "sort", "stylesEnabled", "useMarkdown", "layout", "rememberCommunityLayout", "hasSeenCustomizeFlyout", s, r, o, i], "activityRelevantAds", "thirdPartyDataPersonalizedAds", "thirdPartySiteDataPersonalizedAds", "thirdPartySiteDataPersonalizedContent"]
+				c = [...["openPostInNewTab", "rememberCommunitySort", "sort", "stylesEnabled", "useMarkdown", "layout", "rememberCommunityLayout", "hasSeenCustomizeFlyout", s, r, o, i], "activityRelevantAds", "thirdPartyDataPersonalizedAds", "thirdPartySiteDataPersonalizedAds", "thirdPartySiteDataPersonalizedContent", "showLocationBasedRecommendations"]
 		},
 		"./src/reddit/constants/shortcuts.ts": function(e, t, n) {
 			"use strict";
@@ -22372,7 +22372,8 @@
 				topContentTimesDismissed: "top_content_times_dismissed",
 				thirdPartyDataPersonalizedAds: "third_party_data_personalized_ads",
 				thirdPartySiteDataPersonalizedAds: "third_party_site_data_personalized_ads",
-				thirdPartySiteDataPersonalizedContent: "third_party_site_data_personalized_content"
+				thirdPartySiteDataPersonalizedContent: "third_party_site_data_personalized_content",
+				showLocationBasedRecommendations: "show_location_based_recommendations"
 			};
 			var a = e => {
 				const t = {};
@@ -48363,6 +48364,7 @@
 					thirdPartyDataPersonalizedAds: !0,
 					thirdPartySiteDataPersonalizedAds: !0,
 					thirdPartySiteDataPersonalizedContent: !0,
+					showLocationBasedRecommendations: !0,
 					topContentDismissalTime: 0,
 					topContentTimesDismissed: 0,
 					rememberCommunitySort: !1,
@@ -50762,4 +50764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.6771ba1803ac1765bcb2.js.map
+//# sourceMappingURL=Governance~Reddit.0affaaff0df5a07e229e.js.map
