@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5567677a653a6812f874.js
-// Retrieved at 4/21/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.2c3fc212f6481bcaa9ce.js
+// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1160,9 +1160,9 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return W
-			})), n.d(t, "d", (function() {
 				return J
+			})), n.d(t, "d", (function() {
+				return W
 			})), n.d(t, "a", (function() {
 				return V
 			})), n.d(t, "b", (function() {
@@ -1334,12 +1334,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Nb.SmIcon:
+						case N.Jb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Nb.SmIconHc:
+						case N.Jb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1353,7 +1353,7 @@
 					}
 				}),
 				F = n("./src/reddit/helpers/richTextJson/index.ts");
-			const W = (e, t, n) => {
+			const J = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						o = [],
@@ -1367,7 +1367,7 @@
 						key: n
 					}, o)
 				},
-				J = e => a.a.createElement(c.e, {
+				W = e => a.a.createElement(c.e, {
 					key: e
 				}),
 				V = (e, t, n, s) => {
@@ -1413,9 +1413,9 @@
 						case h.c:
 							return A(e, s);
 						case h.k:
-							return W(e, n, s);
+							return J(e, n, s);
 						case h.l:
-							return J(s);
+							return W(s);
 						case h.p:
 							return Y(e, t, n, s);
 						case h.u:
@@ -1782,12 +1782,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Jb
+						experimentName: s.Fb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Nb.SmIcon || t === s.Nb.SmIconHc
+					return t === s.Jb.SmIcon || t === s.Jb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5567677a653a6812f874.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.2c3fc212f6481bcaa9ce.js.map

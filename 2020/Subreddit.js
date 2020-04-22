@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.cea2977512346570498f.js
-// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4d97d4d29389ceb80fb1.js
+// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -4846,26 +4846,23 @@
 				o = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/components/TabBadger/Loader.ts"),
 				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				c = n("./src/reddit/selectors/experiments/badging.ts"),
-				l = n("./src/reddit/selectors/platform.ts"),
-				m = n("./src/reddit/selectors/posts.ts");
-			const u = Object(o.c)({
-					postCount: m.S,
-					previousPageIsOverlay: l.o,
-					tabBadged: e => e.tabBadged,
-					variant: e => Object(c.d)(e)
+				c = n("./src/reddit/selectors/platform.ts"),
+				l = n("./src/reddit/selectors/posts.ts");
+			const m = Object(o.c)({
+					postCount: l.S,
+					previousPageIsOverlay: c.o,
+					tabBadged: e => e.tabBadged
 				}),
-				p = Object(a.b)(u);
-			t.a = p(Object(d.c)(e => 0 !== e.postCount && e.variant ? r.a.createElement(i.a, {
+				u = Object(a.b)(m);
+			t.a = u(Object(d.c)(e => 0 === e.postCount ? null : r.a.createElement(i.a, {
 				handlePillClick: e.handlePillClick,
 				previousPageIsOverlay: e.previousPageIsOverlay,
 				sendEvent: e.sendEvent,
 				shortTimer: e.shortTimer,
 				subredditName: e.subredditName,
 				subscriberCount: e.subscriberCount,
-				tabBadged: e.tabBadged,
-				variant: e.variant
-			}) : null))
+				tabBadged: e.tabBadged
+			})))
 		},
 		"./src/reddit/components/TopPostsWidgets/TopWeekPosts/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7180,4 +7177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.cea2977512346570498f.js.map
+//# sourceMappingURL=Subreddit.4d97d4d29389ceb80fb1.js.map

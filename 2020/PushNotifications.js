@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.0b166212e0dcae9f94bf.js
-// Retrieved at 4/21/2020, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.6e0949e089c596fe5776.js
+// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -12,7 +12,7 @@
 			})), i.d(t, "resetPermissionRequestClosed", (function() {
 				return N
 			})), i.d(t, "isBrowserSubscribedForPushNotifications", (function() {
-				return x
+				return q
 			})), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return P
 			})), i.d(t, "requestNotificationsPermissions", (function() {
@@ -48,15 +48,15 @@
 			var h = i("./src/reddit/helpers/tabBadging/index.ts"),
 				v = i("./src/reddit/helpers/trackers/notifications.ts"),
 				w = i("./src/reddit/models/Toast/index.ts"),
-				_ = i("./src/reddit/selectors/experiments/badging.ts"),
-				k = i("./src/reddit/selectors/meta.ts");
+				_ = i("./src/reddit/selectors/meta.ts"),
+				k = i("./src/reddit/selectors/user.ts");
 			const S = 4 * c.I,
 				y = () => {
 					const e = Object(u.a)() && "1" === localStorage.getItem("notification-permission-request-closed");
 					return "granted" === Notification.permission ? l.a.Granted : "denied" === Notification.permission ? l.a.Denied : e ? l.a.Closed : l.a.Default
 				},
 				N = () => !!Object(u.a)() && (localStorage.removeItem("notification-permission-request-closed"), !0),
-				x = async () => {
+				q = async () => {
 					let e;
 					try {
 						e = await navigator.serviceWorker.register("/sw.js")
@@ -64,7 +64,7 @@
 						return !1
 					}
 					return null !== await e.pushManager.getSubscription()
-				}, q = e => {
+				}, x = e => {
 					navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 						command: "registerClient",
 						v2EventBoilerPlate: v.a(e)
@@ -72,7 +72,7 @@
 				};
 			let I = !1;
 			const P = async (e, t) => {
-				const i = Object(_.a)(e);
+				const i = Object(k.G)(e);
 				if (I) return;
 				if (I = !0, Object(b.a)(e) !== l.f.NotificationsSupported) return;
 				try {
@@ -83,15 +83,15 @@
 				navigator.serviceWorker.addEventListener("message", s => {
 					const n = s.data,
 						r = n.command;
-					if ("registerWithServiceWorker" === r) q(e);
+					if ("registerWithServiceWorker" === r) x(e);
 					else if (r === h.a && i) {
 						const e = o()(n, ["command"]);
 						t(Object(f.c)(e))
 					}
-				}), q(e)
+				}), x(e)
 			}, W = (e, t) => async (i, s, n) => {
 				const r = s(),
-					o = Object(k.g)(r);
+					o = Object(_.g)(r);
 				if (await Object(a.a)() || o) return;
 				if (await P(r, i), Object(u.a)()) {
 					const t = localStorage.getItem("push-token-last-refresh-ms"),
@@ -256,4 +256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PushNotifications.0b166212e0dcae9f94bf.js.map
+//# sourceMappingURL=PushNotifications.6e0949e089c596fe5776.js.map

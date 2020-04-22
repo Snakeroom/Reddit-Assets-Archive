@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.0c717d44321bb49e5b6f.js
-// Retrieved at 4/22/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ef38ddc03d5b61419893.js
+// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -328,8 +328,8 @@
 				}, n.a.createElement(A, null)),
 				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
-				z = s.n(D);
-			class W extends i.Component {
+				W = s.n(D);
+			class z extends i.Component {
 				constructor(e) {
 					super(e), this.step = .1, this.max = 1, this.min = 0, this.handleMouseDown = e => {
 						if (0 === e.button && this.track) {
@@ -394,21 +394,21 @@
 						value: r
 					} = this.state, l = a ? 0 : e ? r : i, c = this.convertVolumeToPercent(l);
 					return n.a.createElement("div", {
-						className: Object(o.a)(z.a.VolumeControl, t),
+						className: Object(o.a)(W.a.VolumeControl, t),
 						ref: e => this.container = e
 					}, n.a.createElement("div", {
-						className: Object(o.a)(z.a.SliderTrack, z.a.SliderBar),
+						className: Object(o.a)(W.a.SliderTrack, W.a.SliderBar),
 						ref: e => this.track = e
 					}, n.a.createElement("div", {
-						className: Object(o.a)(z.a.SliderProgress, z.a.SliderBar, {
-							[z.a.Live]: s
+						className: Object(o.a)(W.a.SliderProgress, W.a.SliderBar, {
+							[W.a.Live]: s
 						}),
 						ref: e => this.progress = e,
 						style: {
 							height: "".concat(c, "%")
 						}
 					}, n.a.createElement("div", {
-						className: z.a.SliderThumb
+						className: W.a.SliderThumb
 					}))))
 				}
 			}
@@ -566,7 +566,7 @@
 						zeroOpacity: this.props.hideControlBar
 					}, this.renderContent(), this.props.hasAudio && n.a.createElement(ie, {
 						className: this.props.showVolumeIcon ? "disableHide" : ""
-					}, n.a.createElement(W, {
+					}, n.a.createElement(z, {
 						className: Y.a.VolumeControl,
 						ref: e => this.props.volumeRef(e),
 						active: this.props.settingChange === l.a.Volume,
@@ -849,39 +849,39 @@
 			const O = e => {
 					const t = Object(k.c)(e, {
 						experimentEligibilitySelector: k.a,
-						experimentName: _.ob
+						experimentName: _.kb
 					});
-					return Object(_.fc)(t) ? void 0 : t
+					return Object(_.bc)(t) ? void 0 : t
 				},
-				R = e => e === _.rb.On,
+				R = e => e === _.nb.On,
 				j = e => {
 					const t = Object(k.c)(e, {
 						experimentEligibilitySelector: k.a,
-						experimentName: _.pb
+						experimentName: _.lb
 					});
-					return Object(_.fc)(t) ? void 0 : t
+					return Object(_.bc)(t) ? void 0 : t
 				},
-				H = e => e === _.rb.On;
+				H = e => e === _.nb.On;
 			var A = s("./src/reddit/selectors/experiments/utils.ts");
 			const I = Object(m.a)(e => Object(k.c)(e, {
-					experimentName: _.ac,
+					experimentName: _.Wb,
 					experimentEligibilitySelector: k.a
 				}), A.a),
 				U = Object(m.a)(I, (function(e) {
 					switch (e) {
-						case _.cc.BufferTwoSeconds:
+						case _.Yb.BufferTwoSeconds:
 							return 2;
-						case _.cc.BufferFiveSeconds:
+						case _.Yb.BufferFiveSeconds:
 							return 5;
-						case _.cc.BufferTenSeconds:
+						case _.Yb.BufferTenSeconds:
 							return 10;
 						default:
 							return
 					}
 				}));
 			var D = s("./src/reddit/selectors/media.ts"),
-				z = s("./src/reddit/selectors/platform.ts"),
-				W = s("./src/reddit/selectors/posts.ts"),
+				W = s("./src/reddit/selectors/platform.ts"),
+				z = s("./src/reddit/selectors/posts.ts"),
 				G = s("./src/reddit/selectors/user.ts"),
 				Y = s("./src/reddit/selectors/video.ts"),
 				Z = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
@@ -1206,10 +1206,10 @@
 					fill: "#fff",
 					d: "M32.5,23.5c-0.7,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4 C33.8,22.8,33.2,23.5,32.5,23.5 M29.8,26.2c-0.7,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4c0.7,0,1.4,0.6,1.4,1.4 C31.1,25.6,30.5,26.2,29.8,26.2 M27.1,23.5c-0.7,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4c0.7,0,1.4,0.6,1.4,1.4 C28.4,22.8,27.8,23.5,27.1,23.5 M21.6,23.1H20v1.7c0,0.6-0.5,1-1,1s-1-0.5-1-1v-1.7h-1.7c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1H18 v-1.7c0-0.6,0.5-1,1-1s1,0.5,1,1v1.7h1.7c0.6,0,1,0.5,1,1C22.7,22.7,22.2,23.1,21.6,23.1 M29.8,18c0.7,0,1.4,0.6,1.4,1.4 c0,0.7-0.6,1.4-1.4,1.4c-0.7,0-1.4-0.6-1.4-1.4C28.4,18.6,29,18,29.8,18 M37.3,28.1l-1.7-9.5c-0.4-1.9-2-3.3-4-3.3H17.1 c-2,0-3.6,1.4-4,3.3l-1.7,9.5c-0.2,1.2,0.1,2.4,0.9,3.3c0.8,0.9,1.9,1.5,3.1,1.5h0.2c1.8,0,3.3-1.1,3.9-2.8l0.4-1.3h8.9 l0.4,1.3c0.6,1.7,2.1,2.8,3.9,2.8h0.2c1.2,0,2.3-0.5,3.1-1.5C37.2,30.5,37.5,29.3,37.3,28.1"
 				}))),
-				ze = s("./src/reddit/icons/svgs/VideoSeeMenu/index.m.less"),
-				We = s.n(ze);
+				We = s("./src/reddit/icons/svgs/VideoSeeMenu/index.m.less"),
+				ze = s.n(We);
 			var Ge = e => d.a.createElement("svg", {
-					className: Object(f.a)(We.a.icon, e.className),
+					className: Object(f.a)(ze.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1420,13 +1420,13 @@
 					currentTime: Y.d,
 					currentUser: G.i,
 					isMutedPreference: D.a,
-					isOverlayOpen: z.h,
+					isOverlayOpen: W.h,
 					language: G.P,
 					loadTimes: Y.f,
 					metadata: Y.g,
 					muxSamplingAVariant: O,
 					muxSamplingBVariant: j,
-					postUrl: W.P,
+					postUrl: z.P,
 					started: Y.i,
 					videoBufferTime: U,
 					videoBufferVariant: I,
@@ -1801,8 +1801,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("1edf4e5-production", " ").concat(t);
-									return a && (s += " [".concat(_.ac, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("654e4a0-production", " ").concat(t);
+									return a && (s += " [".concat(_.Wb, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2259,4 +2259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.0c717d44321bb49e5b6f.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ef38ddc03d5b61419893.js.map
