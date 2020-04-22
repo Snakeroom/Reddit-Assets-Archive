@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0affaaff0df5a07e229e.js
-// Retrieved at 4/22/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.261842fd72db11e77128.js
+// Retrieved at 4/22/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -18169,7 +18169,7 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[S.c, S.g, S.d, S.h, S.i].forEach(T), Object(w.y)(null), Object(D.a)(h.a.JustLoggedOut, !0), window.location.reload()
+						[S.c, S.d, S.h, S.i].forEach(T), Object(w.y)(null), Object(D.a)(h.a.JustLoggedOut, !0), window.location.reload()
 					})
 				}, P = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), x = n("./src/reddit/helpers/trackers/emailCollection.ts"), N = n("./src/reddit/helpers/trackers/emailVerification.ts"), k = n("./src/reddit/models/Toast/index.ts"), L = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), F = n("./src/reddit/selectors/user.ts"), G = n("./src/telemetry/index.ts"), B = function(e, t) {
 					var n = {};
@@ -50764,4 +50764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.0affaaff0df5a07e229e.js.map
+//# sourceMappingURL=Governance~Reddit.261842fd72db11e77128.js.map
