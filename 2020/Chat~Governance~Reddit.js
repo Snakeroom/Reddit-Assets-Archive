@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d7315551f4aef738a7ef.js
-// Retrieved at 4/21/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.03f0deb20492d547ad9d.js
+// Retrieved at 4/22/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10990,14 +10990,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("6a4e1f9-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("1edf4e5-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6a4e1f9-production",
+						release: "1edf4e5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11359,7 +11359,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6a4e1f9-production",
+							releaseClient: "1edf4e5-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -21922,7 +21922,11 @@
 				},
 				G = Object(a.a)(y.a, (e, t) => e.posts.pixelMetadata[t] || M(), (e, t) => {
 					const i = Object.assign({}, t);
-					return e && !i.timeImpressionViewed && (i.timeImpressionViewed = e.adImpression), e && !i.isGroupMViewable && (i.isGroupMViewable = !0), i
+					if (e && !i.timeImpressionViewed && (i.timeImpressionViewed = e.adImpression), e && !i.isGroupMViewable && (i.isGroupMViewable = !0), e) {
+						const t = Object.keys(e).length;
+						i.eventGlobalCount = t
+					}
+					return i
 				}),
 				U = e => {
 					return [1, 50, 100].reduce((e, t) => {
@@ -28368,4 +28372,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.d7315551f4aef738a7ef.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.03f0deb20492d547ad9d.js.map
