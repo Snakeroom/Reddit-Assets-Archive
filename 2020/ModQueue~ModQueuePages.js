@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.14473027fecd5c51ee77.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.2a754120e1f593bed796.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -69,19 +69,19 @@
 						apiContext: f
 					} = c;
 					switch (t) {
-						case s.fb.Edited:
+						case s.eb.Edited:
 							m = R, u = x, p = g;
 							break;
-						case s.fb.Modqueue:
+						case s.eb.Modqueue:
 							m = k, u = _, p = v;
 							break;
-						case s.fb.Reports:
+						case s.eb.Reports:
 							m = y, u = S, p = P;
 							break;
-						case s.fb.Spam:
+						case s.eb.Spam:
 							m = A, u = C, p = I;
 							break;
-						case s.fb.Unmoderated:
+						case s.eb.Unmoderated:
 							m = w, u = M, p = N;
 							break;
 						default:
@@ -381,7 +381,7 @@
 				j = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const h = (e, t) => Object(p.b)(Object(f.a)(e, [O.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/modactions/removal_reasons/"),
-					method: s.bb.POST,
+					method: s.ab.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -391,7 +391,7 @@
 				}),
 				k = (e, t, n) => Object(p.b)(Object(f.a)(e, [O.a]), {
 					endpoint: Object(j.a)("".concat(e.apiUrl, "/api/v1/modactions/removal_").concat(n, "_message/")),
-					method: s.bb.POST,
+					method: s.ab.POST,
 					type: "json",
 					data: t
 				});
@@ -416,7 +416,7 @@
 					t(C());
 					const c = await ((e, t) => Object(p.b)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons.json"),
-						method: s.bb.GET
+						method: s.ab.GET
 					}))(a(), r);
 					c.ok ? t(w({
 						subredditId: e,
@@ -430,7 +430,7 @@
 					n(E());
 					const i = await ((e, t, n) => Object(p.b)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
-						method: s.bb.POST,
+						method: s.ab.POST,
 						data: n
 					}))(c(), d, t);
 					if (i.ok) {
@@ -457,7 +457,7 @@
 					n(B());
 					const i = await ((e, t, n) => Object(p.b)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(n.id),
-						method: s.bb.PUT,
+						method: s.ab.PUT,
 						data: {
 							message: n.message,
 							title: n.title
@@ -480,7 +480,7 @@
 					n(L());
 					const i = await ((e, t, n) => Object(p.b)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(n),
-						method: s.bb.DELETE
+						method: s.ab.DELETE
 					}))(c(), d, t);
 					i.ok ? (n(q({
 						subredditId: e,
@@ -546,7 +546,7 @@
 											o = p.platform.currentPage && p.platform.currentPage.routeMatch;
 										let a = n && o && Object(R.a)(o, p, p.posts.models[e.postId]);
 										if (a || (a = Object(r.a)(e.postId, null, {
-												sort: s.s,
+												sort: s.r,
 												hasSortParam: !0
 											})), j === y.e.Post) {
 											const n = Object(c.a)(x.c.replyToPost, O);
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.14473027fecd5c51ee77.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.2a754120e1f593bed796.js.map

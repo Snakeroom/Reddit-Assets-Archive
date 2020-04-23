@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.f9f75ea5b7906974ea2e.js
-// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.20c2d79e4ae3fb28e6ed.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, n) {
@@ -243,7 +243,7 @@
 			class x extends o.a.Component {
 				componentDidMount() {
 					c.e() || c.f();
-					const e = r.zb.COINS;
+					const e = r.yb.COINS;
 					m.c.has(e) && this.props.sendEvent(Object(d.a)(p.TimerType.InApp, m.c.end(e)))
 				}
 				render() {
@@ -341,4 +341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsMobile.f9f75ea5b7906974ea2e.js.map
+//# sourceMappingURL=CoinsMobile.20c2d79e4ae3fb28e6ed.js.map

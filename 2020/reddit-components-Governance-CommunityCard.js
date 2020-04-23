@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.c96c4dd3ca90d46ba650.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.da907d5200081f72d07d.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -480,7 +480,7 @@
 						wallet: O
 					} = this.props, _ = O && O.inactive && function(e, t, n) {
 						const o = e.actionScheduledAt - Date.now(),
-							a = Math.max(1, Math.floor(o / u.w)),
+							a = Math.max(1, Math.floor(o / u.v)),
 							i = 1 !== a ? r.fbt._("{numDays} day", [r.fbt._param("numDays", String(a))], {
 								hk: "20neqo"
 							}) : r.fbt._("{numDays} days", [r.fbt._param("numDays", String(a))], {
@@ -843,7 +843,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: r.bb.GET
+					method: r.ab.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -864,7 +864,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: r.bb.POST,
+					method: r.ab.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1242,4 +1242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.c96c4dd3ca90d46ba650.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.da907d5200081f72d07d.js.map

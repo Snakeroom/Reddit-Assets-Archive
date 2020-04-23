@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.52ce061d232a68473c60.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2814096eafc7b76f04ee.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -332,12 +332,12 @@
 				j = g.a.div("EmptyHomepage", b.a),
 				C = e => {
 					switch (e) {
-						case d.N.RISING:
+						case d.M.RISING:
 							return n.fbt._("Create a new post and take all the glory", null, {
 								hk: "1NhXUe"
 							});
-						case d.N.TOP:
-						case d.N.CONTROVERSIAL:
+						case d.M.TOP:
+						case d.M.CONTROVERSIAL:
 							return null;
 						default:
 							return n.fbt._("Be the first to till this fertile land.", null, {
@@ -353,12 +353,12 @@
 					const r = C(s);
 					return a.a.createElement(y, null, a.a.createElement(v, null, (e => {
 						switch (e) {
-							case d.N.RISING:
+							case d.M.RISING:
 								return n.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
 									hk: "kJ3Te"
 								});
-							case d.N.TOP:
-							case d.N.CONTROVERSIAL:
+							case d.M.TOP:
+							case d.M.CONTROVERSIAL:
 								return n.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [n.fbt._param("listing sort option", o()(e))], {
 									hk: "48BeCW"
 								});
@@ -807,8 +807,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const I = new Set([b.N.CONTROVERSIAL, b.N.TOP]),
-				k = new Set([b.N.CONTROVERSIAL, b.N.RISING]),
+			const I = new Set([b.M.CONTROVERSIAL, b.M.TOP]),
+				k = new Set([b.M.CONTROVERSIAL, b.M.RISING]),
 				L = "ListingSort--Overflow",
 				T = Object(l.t)({
 					isFrontpage: l.y,
@@ -820,8 +820,8 @@
 						isPopularPage: r,
 						sortOptions: e
 					};
-					const o = [b.N.HOT, b.N.NEW, b.N.TOP, b.N.RISING];
-					return (t && (n || s) || r && s) && o.unshift(b.N.BEST), {
+					const o = [b.M.HOT, b.M.NEW, b.M.TOP, b.M.RISING];
+					return (t && (n || s) || r && s) && o.unshift(b.M.BEST), {
 						isPopularPage: r,
 						sortOptions: o
 					}
@@ -844,7 +844,7 @@
 							geopopularSort: s,
 							isPopularPage: n,
 							sort: o
-						} = this.props, a = n && !!s && e === b.N.HOT && o === b.N.HOT;
+						} = this.props, a = n && !!s && e === b.M.HOT && o === b.M.HOT;
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, r.a.createElement(_.a, {
@@ -899,7 +899,7 @@
 						onChange: s,
 						rowClassName: S.a.DropdownRow,
 						rowSelectedClassName: S.a.DropdownRowSelected,
-						timeSort: a || b.Rb,
+						timeSort: a || b.Qb,
 						wrapperClassName: S.a.DropdownSortWrapper
 					}), u.length > 0 && r.a.createElement(v.d, P({}, this.props, {
 						className: Object(i.a)(S.a.SortOverflow, e),
@@ -939,7 +939,7 @@
 						}
 					}
 				});
-			class V extends r.a.Component {
+			class M extends r.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						u.a.setState({
@@ -985,7 +985,7 @@
 					}))
 				}
 			}
-			t.a = H(F(Object(d.c)(V)))
+			t.a = H(F(Object(d.c)(M)))
 		},
 		"./src/reddit/components/InFeedPostCreation/async.tsx": function(e, t, s) {
 			"use strict";
@@ -1662,8 +1662,8 @@
 				U = s("./src/reddit/helpers/trackers/screenview.ts"),
 				H = s("./src/reddit/layout/page/Listing/index.tsx"),
 				F = s("./src/reddit/selectors/experiments/trending.ts"),
-				V = s("./src/reddit/selectors/frontpage.ts"),
-				M = s("./src/reddit/selectors/meta.ts"),
+				M = s("./src/reddit/selectors/frontpage.ts"),
+				V = s("./src/reddit/selectors/meta.ts"),
 				W = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				G = s("./src/reddit/selectors/user.ts"),
 				K = s("./src/lib/constants/index.ts"),
@@ -1695,11 +1695,11 @@
 					let {
 						match: s
 					} = t;
-					const n = Object(V.a)(e);
+					const n = Object(M.a)(e);
 					return s.params.sort || n
 				}
 			}), te = Object(b.c)({
-				countryMeta: M.b,
+				countryMeta: V.b,
 				geopopular: G.m
 			}), se = Object(b.c)({
 				isInTrendingEntrypointExperiment: F.a,
@@ -1725,9 +1725,9 @@
 					sort: d
 				} = t;
 				const l = A.t in c && c[A.t].toUpperCase(),
-					u = "string" == typeof l && l in K.Qb ? K.Qb[l] : K.Rb,
+					u = "string" == typeof l && l in K.Pb ? K.Pb[l] : K.Qb,
 					m = Object(x.a)(z.a, d, c),
-					p = i || K.v.Everywhere,
+					p = i || K.u.Everywhere,
 					h = a || p,
 					b = A.g in c ? c[A.g].toUpperCase() : h;
 				return n && [].push(r), Object.assign({
@@ -1880,7 +1880,7 @@
 						c = o
 					} else c = n;
 					if (!c.rpanDuDismissalTime) return !1;
-					return new Date(c.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.w
+					return new Date(c.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.v
 				}, (e, t) => {
 					let {
 						listingName: s
@@ -1942,9 +1942,9 @@
 			})), s.d(t, "e", (function() {
 				return U
 			})), s.d(t, "a", (function() {
-				return V
-			})), s.d(t, "h", (function() {
 				return M
+			})), s.d(t, "h", (function() {
+				return V
 			})), s.d(t, "b", (function() {
 				return W
 			})), s.d(t, "d", (function() {
@@ -2147,19 +2147,19 @@
 				return s[t] >= s[e]
 			}
 			const F = Object(n.a)(k, g, (e, t) => e && t.timestamps[e] || 0);
-			var V;
+			var M;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(V || (V = {}));
-			const M = Object(n.a)(k, w, h.b, (e, t, s) => {
-					if (s) return V.INTRO;
+			}(M || (M = {}));
+			const V = Object(n.a)(k, w, h.b, (e, t, s) => {
+					if (s) return M.INTRO;
 					const n = e && t[e];
-					if (!n) return V.UNAVAILABLE;
+					if (!n) return M.UNAVAILABLE;
 					const r = n.stream.state;
-					return r === a.b.IS_LIVE || r === a.b.DISCONNECTED ? V.LIVE : r === a.b.ENDED && n.stream.vod_accessible ? V.VOD : V.UNAVAILABLE
+					return r === a.b.IS_LIVE || r === a.b.DISCONNECTED ? M.LIVE : r === a.b.ENDED && n.stream.vod_accessible ? M.VOD : M.UNAVAILABLE
 				}),
-				W = Object(n.a)(D, M, h.b, l.c, l.p, (e, t, s, n, r) => s ? n : e ? t === V.LIVE || t === V.VOD ? e.stream.hls_url : r : void 0),
-				G = Object(n.a)(D, M, F, (e, t, s) => e ? t === V.LIVE ? e.broadcast_time : t === V.VOD && s < e.broadcast_time ? s : 0 : 0)
+				W = Object(n.a)(D, V, h.b, l.c, l.p, (e, t, s, n, r) => s ? n : e ? t === M.LIVE || t === M.VOD ? e.stream.hls_url : r : void 0),
+				G = Object(n.a)(D, V, F, (e, t, s) => e ? t === M.LIVE ? e.broadcast_time : t === M.VOD && s < e.broadcast_time ? s : 0 : 0)
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, s) {
 			"use strict";
@@ -2180,4 +2180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.52ce061d232a68473c60.js.map
+//# sourceMappingURL=Frontpage.2814096eafc7b76f04ee.js.map

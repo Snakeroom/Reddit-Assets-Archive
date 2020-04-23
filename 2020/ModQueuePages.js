@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.1c9b4c4e6cf1a6c3c51e.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.617656580d2b3bfc30e4.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -372,13 +372,13 @@
 						h(), R("approve")
 					}
 				}, r.a.createElement(L, null)), S && r.a.createElement(r.a.Fragment, null, r.a.createElement(A, {
-					text: s.bannedBy === d.k ? n.fbt._("Confirm Removal", null, {
+					text: s.bannedBy === d.j ? n.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : n.fbt._("Remove", null, {
 						hk: "VP5J0"
 					}),
 					onClick: () => {
-						v(), s.bannedBy === d.k ? R("confirm_remove") : R("remove")
+						v(), s.bannedBy === d.j ? R("confirm_remove") : R("remove")
 					}
 				}, r.a.createElement(F, null)), r.a.createElement(A, {
 					text: n.fbt._("Spam", null, {
@@ -750,25 +750,25 @@
 						className: t,
 						style: s
 					}, o.a.createElement(g, {
-						onClick: () => u(r.B.NONE, null),
+						onClick: () => u(r.A.NONE, null),
 						selected: !d && !n,
 						text: a.fbt._("Undistinguish", null, {
 							hk: "1P0FyT"
 						})
 					}), c && o.a.createElement(g, {
-						onClick: () => u(r.B.MODERATOR, null),
+						onClick: () => u(r.A.MODERATOR, null),
 						selected: d && !l,
 						text: a.fbt._("Distinguish as Mod", null, {
 							hk: "KDx42"
 						})
 					}), m && c && o.a.createElement(g, {
-						onClick: () => u(r.B.MODERATOR, !0),
+						onClick: () => u(r.A.MODERATOR, !0),
 						selected: l,
 						text: a.fbt._("Distinguish as Mod and Sticky", null, {
 							hk: "1J1DBd"
 						})
 					}), i && o.a.createElement(g, {
-						onClick: () => u(r.B.ADMIN, null),
+						onClick: () => u(r.A.ADMIN, null),
 						selected: n,
 						text: a.fbt._("Distinguish as Admin", null, {
 							hk: "1JsJOX"
@@ -802,7 +802,7 @@
 					isStickied: c,
 					isTopLevelComment: d,
 					onDistinguishComment: (e, t) => {
-						l(e, t), e === r.B.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.B.ADMIN ? m("admin_distinguish") : i && e !== r.B.MODERATOR ? m("undistinguish") : s && e !== r.B.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
+						l(e, t), e === r.A.MODERATOR ? m(!c && t ? "distinguish_sticky" : "distinguish") : e === r.A.ADMIN ? m("admin_distinguish") : i && e !== r.A.MODERATOR ? m("undistinguish") : s && e !== r.A.ADMIN && m("admin_undistinguish"), c && !t && m("unsticky")
 					}
 				}))
 			}
@@ -2310,4 +2310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.1c9b4c4e6cf1a6c3c51e.js.map
+//# sourceMappingURL=ModQueuePages.617656580d2b3bfc30e4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.aa538921747f4605b0e2.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.db18df6c6a6c92bd48d5.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -23,8 +23,8 @@
 				o = s("./src/lib/initializeClient/index.tsx"),
 				d = s("./src/lib/matchRoute/index.ts"),
 				u = s("./src/reduxMiddleware/apiContext.ts"),
-				l = s("./src/chat/actions/apiRequestHeaders.ts"),
-				h = s("./src/chat/actions/platform.ts"),
+				h = s("./src/chat/actions/apiRequestHeaders.ts"),
+				l = s("./src/chat/actions/platform.ts"),
 				m = s("./src/chat/actions/session.ts"),
 				p = s("./src/chat/actions/user.ts"),
 				b = s("./src/chat/components/PortalContainer/index.tsx"),
@@ -37,8 +37,8 @@
 				w = s("./src/chat/customMiddleware/tokenRefresher.ts"),
 				_ = s("./src/chat/customMiddleware/tracking.ts"),
 				v = s("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				R = s("./node_modules/lodash/uniqueId.js"),
-				k = s.n(R),
+				k = s("./node_modules/lodash/uniqueId.js"),
+				R = s.n(k),
 				y = s("./src/chat/constants/theme.ts"),
 				M = s("./src/chat/models/Theme/index.ts"),
 				S = s("./src/chat/reducers/meta/index.ts"),
@@ -97,10 +97,10 @@
 					return e
 				},
 				N = (e, t, s) => {
-					const r = k()(),
+					const r = R()(),
 						c = Object(a.c)(t.location.pathname, void 0, r),
 						i = Object(d.a)(Object(a.e)(c), s),
-						n = Object(D.b)(D.a, Object(h.e)({
+						n = Object(D.b)(D.a, Object(l.e)({
 							location: c,
 							action: "PUSH",
 							routeMatch: i
@@ -117,7 +117,7 @@
 				},
 				cookies: c.a,
 				receivedActions: {
-					headersReceived: l.a,
+					headersReceived: h.a,
 					loidReceived: p.e,
 					reddaidReceived: p.f,
 					sessionTrackerReceived: p.g,
@@ -125,7 +125,7 @@
 					userLoggedOut: m.b,
 					userReauthenticated: m.c
 				},
-				statsAppName: n.l.Chat
+				statsAppName: n.k.Chat
 			});
 
 			function q(e, t) {
@@ -137,7 +137,7 @@
 					routes: H.a,
 					apiContext: K.apiContext,
 					appFactory: b.a,
-					appName: n.l.Chat,
+					appName: n.k.Chat,
 					history: Object(a.d)({
 						initialEntries: [s],
 						initialIndex: 0
@@ -161,7 +161,7 @@
 						} = e;
 						return t.listen((e, t) => {
 							const c = Object(d.a)(Object(a.e)(e), s);
-							r.dispatch(Object(h.d)(e, t, c)), r.dispatch(Object(p.l)())
+							r.dispatch(Object(l.d)(e, t, c)), r.dispatch(Object(p.l)())
 						}), {}
 					},
 					target: c,
@@ -181,12 +181,12 @@
 			Object(o.a)(i.a);
 			const d = Object(o.a)(i.b);
 			var u = s("./src/reddit/actions/chat/unreadCount.ts"),
-				l = s("./src/reddit/selectors/chat.ts");
+				h = s("./src/reddit/selectors/chat.ts");
 			t.default = (e, t) => s => {
 				switch (s.type) {
 					case c.a: {
 						const a = s.payload,
-							c = Object(l.d)(t());
+							c = Object(h.d)(t());
 						r()(a, c) || e(Object(u.c)(a))
 					}
 					break;
@@ -197,4 +197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.aa538921747f4605b0e2.js.map
+//# sourceMappingURL=RedesignChat.db18df6c6a6c92bd48d5.js.map

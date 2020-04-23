@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.bb0622fc532becde3b5b.js
-// Retrieved at 4/16/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.b7348518cd0897d3f492.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -431,7 +431,7 @@
 				function(e, t) {
 					return Object(b.a)(e, {
 						endpoint: "".concat(u.a.metaUrl, "/ratings/").concat(t.subredditId, "/").concat(t.dateRange),
-						method: p.bb.GET
+						method: p.ab.GET
 					}).then(e => {
 						if (e.ok) {
 							let t = 0;
@@ -949,7 +949,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(n.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.bb.GET
+					method: s.ab.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -970,7 +970,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(n.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.bb.POST,
+					method: s.ab.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1189,4 +1189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.bb0622fc532becde3b5b.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.b7348518cd0897d3f492.js.map

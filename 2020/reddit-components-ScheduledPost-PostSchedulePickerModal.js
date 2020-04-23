@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.76c8aeea6187a5c50f54.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.5ac39bdfa0f9d338e53a.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./src/reddit/components/ScheduledPost/PostSchedulePickerModal/index.m.less": function(e, t, n) {
@@ -603,7 +603,7 @@
 						submitDate: t,
 						submitTime: n
 					} = e.state;
-					return t && n ? Object(a.f)(Object(r.a)(t, n)) < (Object(a.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.w)) ? s.fbt._("Submit time needs to be in the future", null, {
+					return t && n ? Object(a.f)(Object(r.a)(t, n)) < (Object(a.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.v)) ? s.fbt._("Submit time needs to be in the future", null, {
 						hk: "3YJESf"
 					}) : null : s.fbt._("Please enter valid submit time", null, {
 						hk: "sKXJR"
@@ -900,4 +900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ScheduledPost-PostSchedulePickerModal.76c8aeea6187a5c50f54.js.map
+//# sourceMappingURL=reddit-components-ScheduledPost-PostSchedulePickerModal.5ac39bdfa0f9d338e53a.js.map

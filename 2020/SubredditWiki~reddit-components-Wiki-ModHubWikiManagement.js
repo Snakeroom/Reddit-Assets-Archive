@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8db771d2f6e46f845ef2.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.51cbfb0595c7abf7f9ab.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
@@ -1058,7 +1058,7 @@
 				f = i("./src/reddit/constants/headers.ts");
 			var x = e => Object(k.b)(Object(g.a)(e.context, [f.a]), {
 					endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/edit"),
-					method: b.bb.POST,
+					method: b.ab.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -1821,7 +1821,7 @@
 						showTimeAgo: a = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, l = i.authorInfo && i.authorInfo.name || d.z, h = new Date(Object(b.d)(i.revisedAt)), g = o.a.createElement(u.a, {
+					} = this.state, l = i.authorInfo && i.authorInfo.name || d.y, h = new Date(Object(b.d)(i.revisedAt)), g = o.a.createElement(u.a, {
 						tooltipId: "wikipage-revision-author",
 						user: l,
 						sendHoverCardEvent: s.a
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8db771d2f6e46f845ef2.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.51cbfb0595c7abf7f9ab.js.map

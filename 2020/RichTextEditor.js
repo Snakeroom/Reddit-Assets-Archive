@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.90ed2812cfe062390bc8.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.066d0801fdaed3971739.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2016,9 +2016,9 @@
 					})(r, s, n);
 				return a ? [a] : (e => {
 					const t = [];
-					return e.image > C.R && t.push(o.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > C.Q && t.push(o.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > C.V && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > C.U && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(r)
@@ -2762,4 +2762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.90ed2812cfe062390bc8.js.map
+//# sourceMappingURL=RichTextEditor.066d0801fdaed3971739.js.map

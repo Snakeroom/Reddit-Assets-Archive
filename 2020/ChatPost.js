@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.3a7cf494a5ec59003dae.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.76df774c5b80ea185958.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -131,7 +131,7 @@
 			})), n.d(t, "f", (function() {
 				return N
 			})), n.d(t, "a", (function() {
-				return H
+				return q
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/lodash/times.js"),
@@ -250,7 +250,7 @@
 						isLoading: !0
 					}))
 				}),
-				H = () => i.a.createElement(M, null, r()(10, e => i.a.createElement(A, {
+				q = () => i.a.createElement(M, null, r()(10, e => i.a.createElement(A, {
 					key: e
 				}, i.a.createElement(P, null, i.a.createElement(D, null), i.a.createElement(W, null)), i.a.createElement(B, null, i.a.createElement(F, null), i.a.createElement(U, null)))))
 		},
@@ -306,7 +306,7 @@
 						userId: t
 					} = e, {
 						processingAvatarImageUrl: n
-					} = c.a, o = (e => e.replace(m.wb.Account + "_", ""))(t), {
+					} = c.a, o = (e => e.replace(m.vb.Account + "_", ""))(t), {
 						avatar: r,
 						color: a
 					} = (e => {
@@ -578,11 +578,11 @@
 				y = e => {
 					switch (e) {
 						case _.c.Admin:
-							return c.B.ADMIN;
+							return c.A.ADMIN;
 						case _.c.Moderator:
-							return c.B.MODERATOR;
+							return c.A.MODERATOR;
 						case _.c.Alumni:
-							return c.B.ALUMNI_ADMIN;
+							return c.A.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
@@ -712,8 +712,8 @@
 			var W = n("./src/reddit/selectors/comments.ts"),
 				F = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				U = n("./src/reddit/actions/comment/websocket/constants.ts");
-			const H = Object(p.a)(U.b),
-				q = Object(p.a)(U.c),
+			const q = Object(p.a)(U.b),
+				H = Object(p.a)(U.c),
 				K = Object(p.a)(U.a),
 				V = {},
 				z = (e, t, n, o) => async (s, r) => {
@@ -744,14 +744,14 @@
 											const t = Object(W.x)(i, {
 												commentsPageKey: e
 											});
-											s(H({
+											s(q({
 												authorFlair: n,
 												comment: a,
 												commentsPageKey: e,
 												headCommentId: t,
 												numComments: r
 											}))
-										} else s(q({
+										} else s(H({
 											authorFlair: n,
 											comment: a,
 											commentsPageKey: e,
@@ -770,7 +770,7 @@
 									if (i && c) {
 										const n = w(0, o, t.payload),
 											r = t.payload.total_comment_count;
-										s(q({
+										s(H({
 											authorFlair: n,
 											comment: c,
 											commentsPageKey: e,
@@ -967,10 +967,10 @@
 				We = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				Fe = n("./src/reddit/icons/svgs/Approve/index.tsx"),
 				Ue = n("./src/reddit/icons/svgs/Ban/index.tsx"),
-				He = n("./src/reddit/icons/svgs/Edit/index.m.less"),
-				qe = n.n(He);
+				qe = n("./src/reddit/icons/svgs/Edit/index.m.less"),
+				He = n.n(qe);
 			var Ke = e => s.a.createElement("svg", {
-					className: Object(X.a)(qe.a.edit, e.className),
+					className: Object(X.a)(He.a.edit, e.className),
 					viewBox: "4 4 12 12"
 				}, s.a.createElement("g", {
 					transform: "translate(-68.000000, -207.000000)"
@@ -1139,7 +1139,7 @@
 						spamTooltipId: A,
 						toggleDeleteCommentModal: P,
 						timestampUpdateTrigger: B
-					} = e, D = !!r && r.id === t.authorId, W = Object(Be.b)(t), F = t.isApproved && W, U = !t.bannedBy || t.bannedBy === c.k, H = {
+					} = e, D = !!r && r.id === t.authorId, W = Object(Be.b)(t), F = t.isApproved && W, U = !t.bannedBy || t.bannedBy === c.j, q = {
 						comment: t,
 						onHideTooltip: x,
 						onShowTooltip: y,
@@ -1194,16 +1194,16 @@
 							hk: "30rf1x"
 						}),
 						trackingNoun: "edit"
-					}, H), s.a.createElement(rt, null)), p ? null : h && U ? s.a.createElement(Me, nt({
+					}, q), s.a.createElement(rt, null)), p ? null : h && U ? s.a.createElement(Me, nt({
 						onClick: k,
 						tooltipId: N,
-						tooltipText: t.bannedBy === c.k ? Z.fbt._("Confirm removal", null, {
+						tooltipText: t.bannedBy === c.j ? Z.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : Z.fbt._("Remove", null, {
 							hk: "1f2QZ6"
 						}),
-						trackingNoun: t.bannedBy === c.k ? "confirm_remove" : "remove"
-					}, H), s.a.createElement(ct, null)) : D && s.a.createElement(Me, nt({
+						trackingNoun: t.bannedBy === c.j ? "confirm_remove" : "remove"
+					}, q), s.a.createElement(ct, null)) : D && s.a.createElement(Me, nt({
 						onClick: f,
 						tooltipId: i,
 						tooltipText: Z.fbt._("Delete", null, {
@@ -1235,7 +1235,7 @@
 							hk: "1XKY2A"
 						}),
 						trackingNoun: "sitewide_".concat(m ? "unblock" : "block")
-					}, H), m ? s.a.createElement(dt, null) : s.a.createElement(ot, null))), !p && s.a.createElement(Ae, nt({}, e, {
+					}, q), m ? s.a.createElement(dt, null) : s.a.createElement(ot, null))), !p && s.a.createElement(Ae, nt({}, e, {
 						tooltipId: o,
 						tooltipText: Object(ve.a)(t.created),
 						timestampUpdateTrigger: B
@@ -1486,9 +1486,9 @@
 						hk: "4rQ3ZP"
 					})))
 				};
-			var Ht = Ft,
-				qt = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/lodash/isEqual.js")),
-				Kt = n.n(qt),
+			var qt = Ft,
+				Ht = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/lodash/isEqual.js")),
+				Kt = n.n(Ht),
 				Vt = n("./node_modules/lodash/last.js"),
 				zt = n.n(Vt),
 				Gt = n("./src/reddit/controls/Button/index.tsx"),
@@ -1742,8 +1742,8 @@
 					loadMoreComments: n => e(Object(u.Z)(t.commentsPageKey, n)),
 					loadBlockedRedditors: () => e(Object(m.g)()),
 					loadComments: async () => await e(Object(G.q)(t.postId, void 0, {
-						sort: c.r.CHAT
-					}, c.r.CHAT))
+						sort: c.q.CHAT
+					}, c.q.CHAT))
 				}));
 			class cn extends s.a.Component {
 				constructor(e) {
@@ -1884,7 +1884,7 @@
 						commentCount: 1,
 						key: "scroll-node-".concat(t.id),
 						onClick: () => this.expandComment(t.id)
-					}) : s.a.createElement(Ht, {
+					}) : s.a.createElement(qt, {
 						ref: t.id,
 						key: "scroll-node-".concat(t.id),
 						commentId: t.id,
@@ -2180,25 +2180,25 @@
 					language: r
 				} = e;
 				switch (t.type) {
-					case s.D.AUTHORIZATION_ERROR:
+					case s.C.AUTHORIZATION_ERROR:
 						return n ? o.fbt._("You might need to be logged in to do that.", null, {
 							hk: "1313fG"
 						}) : o.fbt._("It looks like you aren't allowed to do that.", null, {
 							hk: "5tQod"
 						});
-					case s.D.VALIDATION_ERROR:
+					case s.C.VALIDATION_ERROR:
 						return o.fbt._("We weren't able to handle your request.", null, {
 							hk: "4umMwv"
 						});
-					case s.D.NOT_FOUND_ERROR:
+					case s.C.NOT_FOUND_ERROR:
 						return o.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 							hk: "2UmS4e"
 						});
-					case s.D.SERVER_ERROR:
+					case s.C.SERVER_ERROR:
 						return o.fbt._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "1Sxl7y"
 						});
-					case s.D.LIKELY_UBLOCK_ERROR:
+					case s.C.LIKELY_UBLOCK_ERROR:
 						return o.fbt._("It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use.", null, {
 							hk: "6Gh68"
 						});
@@ -2413,4 +2413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.3a7cf494a5ec59003dae.js.map
+//# sourceMappingURL=ChatPost.76df774c5b80ea185958.js.map

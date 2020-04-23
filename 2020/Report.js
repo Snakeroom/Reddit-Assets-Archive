@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Report.e9c5e2618203da2bb916.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.63718fa756d6b286bb4e.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
 		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
@@ -30,7 +30,7 @@
 					if (!i.user || !i.user.language) return;
 					const p = await (e => Object(a.b)(Object(o.a)(e, [c.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/report_page_rules.json"),
-						method: s.bb.GET
+						method: s.ab.GET
 					}))(n());
 					if (p.ok) {
 						const {
@@ -63,4 +63,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Report.e9c5e2618203da2bb916.js.map
+//# sourceMappingURL=Report.63718fa756d6b286bb4e.js.map

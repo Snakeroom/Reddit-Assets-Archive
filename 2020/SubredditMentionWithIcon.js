@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9effa450c3447828f921.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.467ae04891c5edfd7580.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -544,7 +544,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object(re.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object(re.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object(re.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.F), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.E), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -610,7 +610,7 @@
 					if (!r || !a || Object(g.g)(r)) return this.renderDefault();
 					const {
 						uniqueId: d
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.N.TOP), m = r.isNSFW && e || r.type === g.c.EmployeesOnly && !t || r.type === g.c.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.M.TOP), m = r.isNSFW && e || r.type === g.c.EmployeesOnly && !t || r.type === g.c.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: pe.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1046,4 +1046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.9effa450c3447828f921.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.467ae04891c5edfd7580.js.map

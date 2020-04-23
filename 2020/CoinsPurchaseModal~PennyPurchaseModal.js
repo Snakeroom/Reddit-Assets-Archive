@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.d1ba92524cf2fd0f8fbd.js
-// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~PennyPurchaseModal.9a4987bed3735d46e894.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal~PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -507,7 +507,7 @@
 					}, r.a.createElement(M.a, {
 						className: Q.a.balance,
 						coinBalance: a
-					}), o === i.vb ? e && e.pennyPrice && t ? r.a.createElement(W, {
+					}), o === i.ub ? e && e.pennyPrice && t ? r.a.createElement(W, {
 						awardId: e.id,
 						className: Object(u.a)(Q.a.purchaseButton, Q.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -515,7 +515,7 @@
 					}) : n && r.a.createElement(W, {
 						className: Object(u.a)(Q.a.purchaseButton, Q.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, o === i.ub && r.a.createElement(T.f, {
+					}) : null, o === i.tb && r.a.createElement(T.f, {
 						className: Q.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: c || s,
@@ -611,7 +611,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === i.ub && r.a.createElement(O, {
+			}), e.selectedPayment === i.tb && r.a.createElement(O, {
 				nightmode: e.nightmode
 			}), r.a.createElement("div", {
 				className: Q.a.checkoutFooter
@@ -619,9 +619,9 @@
 				className: Q.a.purchaseTotal
 			}, n.fbt._("Total: {totalAmount}", [n.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 				hk: "3dx6W8"
-			}))), e.selectedPayment === i.vb && e.paypalErrorMessage && r.a.createElement("div", {
+			}))), e.selectedPayment === i.ub && e.paypalErrorMessage && r.a.createElement("div", {
 				className: Q.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === i.ub && e.stripeErrorMessage && r.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === i.tb && e.stripeErrorMessage && r.a.createElement("div", {
 				className: Q.a.errorMessage
 			}, e.stripeErrorMessage), r.a.createElement("div", {
 				className: Q.a.agreementLink
@@ -893,7 +893,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: m === l.Premium ? n.mb : P ? P.pennies : void 0
+							amountInSmallestDenom: m === l.Premium ? n.lb : P ? P.pennies : void 0
 						}
 					})
 				},
@@ -1060,4 +1060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.d1ba92524cf2fd0f8fbd.js.map
+//# sourceMappingURL=CoinsPurchaseModal~PennyPurchaseModal.9a4987bed3735d46e894.js.map

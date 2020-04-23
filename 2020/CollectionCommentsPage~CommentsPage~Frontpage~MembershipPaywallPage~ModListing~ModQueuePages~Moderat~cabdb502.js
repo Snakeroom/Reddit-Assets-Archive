@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.6cb80f384f61bf46ec78.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.acf79f378a355fec63f8.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -125,7 +125,7 @@
 					},
 					p = g()(() => {
 						d(), o = window.setTimeout(a, s)
-					}, u.F);
+					}, u.E);
 				return {
 					cleanup: a,
 					eventHandler: e => {
@@ -135,24 +135,24 @@
 			}
 			var T = i("./src/lib/scheduler/index.ts"),
 				M = i("./src/lib/domUtils/index.ts"),
-				F = i("./src/lib/LinkedListMap/index.ts");
-			const O = (e, t) => e < 0 ? t + e : e % t;
-			class V {
+				O = i("./src/lib/LinkedListMap/index.ts");
+			const V = (e, t) => e < 0 ? t + e : e % t;
+			class F {
 				constructor(e) {
 					this.head = 0, this.size = 0, this.maxSize = e, this.items = new Array(e)
 				}
 				push(e) {
-					return this.items[this.head] = e, this.head = O(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
+					return this.items[this.head] = e, this.head = V(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
 				}
 				pop() {
 					if (this.size > 0) {
-						const e = O(this.head - 1, this.maxSize),
+						const e = V(this.head - 1, this.maxSize),
 							t = this.items[e];
 						return this.items[e] = void 0, this.head = e, this.size--, t
 					}
 				}
 				forEach(e) {
-					let t = this.size < this.maxSize ? O(this.head - this.size, this.maxSize) : this.head;
+					let t = this.size < this.maxSize ? V(this.head - this.size, this.maxSize) : this.head;
 					for (let i = 0; i < this.size; i++) e(this.items[t], i, this.size), t = (t + 1) % this.maxSize
 				}
 				map(e) {
@@ -172,8 +172,8 @@
 					for (let t = 0; t < e; t++) this.pop()
 				}
 			}
-			var y = i("./src/reddit/components/Scroller/getDocumentTop.ts");
-			class P {
+			var E = i("./src/reddit/components/Scroller/getDocumentTop.ts");
+			class y {
 				constructor(e) {
 					let {
 						top: t,
@@ -201,25 +201,25 @@
 					return e.bottom < this.top
 				}
 			}
-			const H = function() {
+			const P = function() {
 				let {
 					buffer: e,
 					container: t
 				} = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				const i = r()(e) ? 1e3 : e;
 				if ("undefined" != typeof window && t) {
-					const e = t === document ? Object(y.a)() : t.scrollTop;
-					return new P({
+					const e = t === document ? Object(E.a)() : t.scrollTop;
+					return new y({
 						top: e,
 						height: window.innerHeight
 					})
 				}
-				return new P({
+				return new y({
 					top: 0,
 					height: i
 				})
 			};
-			var E = i("./src/reddit/components/ResizeSensor/index.tsx"),
+			var H = i("./src/reddit/components/ResizeSensor/index.tsx"),
 				z = i("./src/reddit/constants/componentSizes.ts"),
 				k = i("./src/reddit/constants/elementClassNames.ts"),
 				W = i("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -229,7 +229,7 @@
 				A = i("./src/reddit/components/Scroller/Simple.m.less"),
 				N = i.n(A);
 			const U = z.g,
-				D = 5 * u.F,
+				D = 5 * u.E,
 				B = 3,
 				q = Object(p.c)({
 					isOverlayOpen: L.h
@@ -254,16 +254,16 @@
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				ie = 2 * u.F,
+				ie = 2 * u.E,
 				se = 400,
 				ne = 8,
-				le = 5 * u.F,
+				le = 5 * u.E,
 				re = 30,
 				oe = "object" == typeof performance && "function" == typeof performance.now,
 				he = () => oe ? performance.now() : Date.now();
 
 			function de(e, t) {
-				return F.a.fromArray(e.children.map((e, i) => {
+				return O.a.fromArray(e.children.map((e, i) => {
 					const s = t && t.get(e.id);
 					return s ? (s.isFocusable = !!e.isFocusable, s.trackOnEnteredViewport = e.trackOnEnteredViewport, s.trackOnExitedViewport = e.trackOnExitedViewport, s) : {
 						el: null,
@@ -288,7 +288,7 @@
 						};
 						j.b.enqueue(new T.a({
 							args: [e, t],
-							cb: (e, t) => Object(_.a)(u.l.Redesign, {
+							cb: (e, t) => Object(_.a)(u.k.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -354,7 +354,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(c.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = n()(() => {
 						this.handleScroll()
-					}, u.F), this.pauseAllElements = () => {
+					}, u.E), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -367,7 +367,7 @@
 						})
 					}, this.elementIsVisible = e => !!this.viewport && this.viewport.intersects(e), this.getItemsInViewportWithFilter = e => {
 						this.updateViewportInfo();
-						const t = new F.a("id");
+						const t = new O.a("id");
 						return this.state.renderableChildren.forEach(i => {
 							const s = this.childMap.get(i.id);
 							s && e(s) && t.push(s)
@@ -376,7 +376,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(c.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, u.F))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(c.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, u.E))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -394,7 +394,7 @@
 						const i = t.offsetTop + (this.parentOffsetTop || 0),
 							s = t.clientHeight,
 							n = "".concat(t.scrollHeight, "px"),
-							l = new P({
+							l = new y({
 								top: i,
 								height: s,
 								heightWithMargin: n
@@ -409,7 +409,7 @@
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, u.F), this.handleScroll = () => {
+					}, u.E), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = m.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(M.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
@@ -431,7 +431,7 @@
 								}
 							}
 							this.populateRenderableChildrenIfLastChildIsVisible();
-							const n = new F.a("id");
+							const n = new O.a("id");
 							let l, r;
 							const o = [];
 							this.state.renderableChildren.forEach(e => {
@@ -499,7 +499,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, u.F), this.hideChild = (e, t) => {
+					}, u.E), this.hideChild = (e, t) => {
 						const i = this.childMap.get(e);
 						if (!i || !i.el) return;
 						const s = i.el.firstChild;
@@ -525,7 +525,7 @@
 								const s = this.getScrollTop() + i.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(M.c)(this.scrollContainer, s), this.callOnScrollForItemsChanged())
-								}, u.F)
+								}, u.E)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -540,7 +540,7 @@
 							return n >= i + e && n < s
 						}
 						return !1
-					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new F.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new V(Z), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = le;
+					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new O.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new F(Z), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = le;
 					const i = this.getVisibleChildren();
 					i.length && (this.lastVisibleElId = i[i.length - 1].id), this.nextVisibleChildrenIndex = i.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: i
@@ -604,7 +604,7 @@
 						const e = this.getCacheKey();
 						Q[e] = this.lastRenderPosition
 					}
-					this.childMap = new F.a("id"), this.itemsInViewport = new F.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(c.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
+					this.childMap = new O.a("id"), this.itemsInViewport = new O.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(c.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
 				didLayoutAloneChange(e, t) {
 					return "string" == typeof e.layoutKey && "string" == typeof t.layoutKey && e.layoutKey !== t.layoutKey && "string" == typeof e.dataKey && "string" == typeof t.layoutKey && e.dataKey === t.dataKey
@@ -641,23 +641,23 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? X(this.scrollContainer) ? Object(y.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? X(this.scrollContainer) ? Object(E.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
-						this.viewport = H({
+						this.viewport = P({
 							buffer: 0,
 							container: this.scrollContainer
 						});
 						const {
 							viewportTopPadding: e = 0
 						} = this.props, t = window.innerHeight - e, i = 2 * t;
-						this.mountableViewport = new P({
+						this.mountableViewport = new y({
 							top: this.viewport.top - i,
 							height: this.viewport.height + 2 * i
 						});
 						const s = 4 * t;
-						this.renderableViewport = new P({
+						this.renderableViewport = new y({
 							top: this.viewport.top - s,
 							height: this.viewport.height + 2 * s
 						})
@@ -746,7 +746,7 @@
 						setScrollerChildRef: this.getChildRefFn(e.id),
 						shouldLoadInitially: t < ee,
 						width: U
-					})))), !!e && h.a.createElement(E.a, {
+					})))), !!e && h.a.createElement(H.a, {
 						containerRef: e,
 						onResize: this.handleContentContainerResize
 					}))
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.6cb80f384f61bf46ec78.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.acf79f378a355fec63f8.js.map

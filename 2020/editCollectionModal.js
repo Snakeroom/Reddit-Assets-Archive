@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.429a9f648c93dafe950a.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.c14120cc6f259f6baf3a.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -530,7 +530,7 @@
 					let h, E;
 					if (this.state.mounted || m === o.a.Live) h = function(e, t, n, s) {
 						const a = Object(o.e)(e, t),
-							l = new Date(e * i.Db);
+							l = new Date(e * i.Cb);
 						let d;
 						if (a === o.a.Live || s) return Object(r.a)(n, "posts.event.inProgress");
 						a === o.a.Future ? d = Object(o.d)(e) ? Object(r.a)(n, "posts.event.today") : Object(o.b)(e) >= 5 ? c(l, n) : function(e, t) {
@@ -1048,4 +1048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.429a9f648c93dafe950a.js.map
+//# sourceMappingURL=editCollectionModal.c14120cc6f259f6baf3a.js.map

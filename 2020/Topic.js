@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.27a3d6f5d2318b29da95.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0e1e3d95209fe7b3b3ad.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1418,7 +1418,7 @@
 				return s.params.topicSlug
 			}, ke = Object(i.a)(Pe, e => Object(d.a)(ee.b.Topic, null, {
 				topicSlug: e
-			})), Fe = (e, t) => t.match.params.sort || c.O, Be = e => {
+			})), Fe = (e, t) => t.match.params.sort || c.N, Be = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(Ne.Posts), e.hasSubreddits && t.push(Ne.Communities), t) : t
 			}, Re = Object(o.b)(() => Object(i.a)((e, t) => Object(O.c)(e, Pe(0, t), !0), (e, t) => Object(O.a)(e, {
@@ -1536,4 +1536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.27a3d6f5d2318b29da95.js.map
+//# sourceMappingURL=Topic.0e1e3d95209fe7b3b3ad.js.map

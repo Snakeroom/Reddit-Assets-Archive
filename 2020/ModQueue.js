@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.4068ef61006289512ada.js
-// Retrieved at 4/6/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.9339cf79d2a16b2c174f.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, r) {
@@ -37,7 +37,7 @@
 				if (g.modQueue[m].api.pending || L && !j) return;
 				Object(l.o)(g) || await Object(a.e)(A, m, O)(t, r, s);
 				const y = r();
-				if (d()(y.modQueue[m].api.error, "type") === i.D.AUTHENTICATION_ERROR) return Object(c.a)(t, y);
+				if (d()(y.modQueue[m].api.error, "type") === i.C.AUTHENTICATION_ERROR) return Object(c.a)(t, y);
 				Object(u.f)(y, m, b, f), t(p.l({
 					title: Object(o.d)()
 				}))
@@ -45,4 +45,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue.4068ef61006289512ada.js.map
+//# sourceMappingURL=ModQueue.9339cf79d2a16b2c174f.js.map

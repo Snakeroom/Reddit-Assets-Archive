@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c934bac24c2298bb592a.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4181de424358719297f8.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -407,7 +407,7 @@
 						userId: t
 					} = e, {
 						processingAvatarImageUrl: s
-					} = c.a, r = (e => e.replace(m.wb.Account + "_", ""))(t), {
+					} = c.a, r = (e => e.replace(m.vb.Account + "_", ""))(t), {
 						avatar: n,
 						color: i
 					} = (e => {
@@ -3334,8 +3334,8 @@
 					} = t;
 					return {
 						loadComments: () => e(Object(Fs.q)(s, void 0, {
-							sort: Ds.r.CHAT
-						}, Ds.r.CHAT)),
+							sort: Ds.q.CHAT
+						}, Ds.q.CHAT)),
 						openLoginModal: () => e(Object(u.g)()),
 						openRegisterModal: () => e(Object(u.h)())
 					}
@@ -4224,4 +4224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.c934bac24c2298bb592a.js.map
+//# sourceMappingURL=PublicAccessNetwork.4181de424358719297f8.js.map

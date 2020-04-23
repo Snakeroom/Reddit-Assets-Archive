@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.c5db6c522a321d3be4c0.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.261ac48e69710d7a9ca8.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -162,7 +162,7 @@
 					n = localStorage.getItem(t);
 				if (!n) return !1;
 				const r = new Date(n).getTime();
-				return Date.now() - c.w < r
+				return Date.now() - c.v < r
 			}
 			const B = Object(d.c)({
 					assets: (e, t) => {
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.c5db6c522a321d3be4c0.js.map
+//# sourceMappingURL=GovernanceVotingBanner.261ac48e69710d7a9ca8.js.map

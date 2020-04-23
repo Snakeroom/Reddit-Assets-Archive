@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.34e1bf1e60bdb56592d4.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d653af55296617a15db4.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1072,7 +1072,7 @@
 							} = e;
 							return Object(p.b)({
 								endpoint: "https://api.embed.ly/1/extract",
-								method: b.bb.GET,
+								method: b.ab.GET,
 								data: {
 									key: g,
 									url: a,
@@ -1192,7 +1192,7 @@
 							Object(d.b)("Error getting proxy unread count: ".concat(a))
 						}
 					})(i, o)) && !r()(i.messages.unread, m) && await a(b(m))
-				}, o.Db, {
+				}, o.Cb, {
 					leading: !0
 				})
 		},
@@ -1347,7 +1347,7 @@
 					t(p(e)), (e => {
 						if (!h(e)) {
 							const t = [...Object(a.b)("chat.promo") || [], e];
-							Object(a.d)("chat.promo", t, s.Yb)
+							Object(a.d)("chat.promo", t, s.Xb)
 						}
 					})(e)
 				}, f = () => async (e, t) => {
@@ -1460,7 +1460,7 @@
 							} = o.user;
 						if (d && l) {
 							let n;
-							const c = Object(a.c)(s.o.CHAT, "session", l.id),
+							const c = Object(a.c)(s.n.CHAT, "session", l.id),
 								o = Object(a.b)(c);
 							if (o && o.token) n = o;
 							else {
@@ -1486,7 +1486,7 @@
 				O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS",
 				j = Object(c.a)(O),
 				C = "SENDBIRD__SET_REDDIT_CONTACT_LIST",
-				_ = 6 * s.I,
+				_ = 6 * s.H,
 				E = Object(c.a)(C),
 				v = () => async (e, t, n) => {
 					let {
@@ -1494,7 +1494,7 @@
 					} = n;
 					const r = t(),
 						o = r.contacts.models,
-						d = Object(a.c)(s.o.CHAT, "contacts", r.user.account.id),
+						d = Object(a.c)(s.n.CHAT, "contacts", r.user.account.id),
 						u = Object(a.b)(d);
 					if (u && u.version === l.a) return void e(E(u.data));
 					const h = t().user.session;
@@ -1628,7 +1628,7 @@
 						const t = await ((e, t) => Object(c.b)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.bb.POST
+							method: s.ab.POST
 						}))(a(), r);
 						if (t.ok) {
 							const n = t.body;
@@ -1713,7 +1713,7 @@
 					if (l.sitewideRules && l.sitewideRules.length) return;
 					const u = await (e => Object(c.b)(Object(r.a)(e, [o.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/sitewide_rules.json"),
-						method: s.bb.GET
+						method: s.ab.GET
 					}))(a());
 					if (u.ok) {
 						const {
@@ -1783,7 +1783,7 @@
 				o = "TOAST__UPDATE_TOAST",
 				i = Object(a.a)(o),
 				l = e => async (t, n) => {
-					setTimeout(() => t(r()), e * s.Db)
+					setTimeout(() => t(r()), e * s.Cb)
 				}
 		},
 		"./src/chat/actions/tooltip.ts": function(e, t, n) {
@@ -2465,7 +2465,7 @@
 			}));
 			const k = (new Date).setHours(0, 0, 0, 0),
 				N = e => (e => k < e.getTime())(e) ? w(e) : (e => {
-					return k - b.w < e.getTime()
+					return k - b.v < e.getTime()
 				})(e) ? O.fbt._("Yesterday", null, {
 					hk: "2GVGk3"
 				}) : M(e),
@@ -2496,7 +2496,7 @@
 			const R = i.a.div("TimeWrapper", U.a),
 				P = i.a.time("Time", U.a);
 			var B = e => r.a.createElement(R, null, r.a.createElement(P, null, (e => {
-					const t = k - b.w,
+					const t = k - b.v,
 						n = new Date(k).setDate(1),
 						a = new Date(n).setMonth(0),
 						s = new Date(e);
@@ -2529,7 +2529,7 @@
 			var J = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				Z = n("./src/chat/icons/Userpic/index.m.less"),
 				Q = n.n(Z);
-			const Y = e => e.replace(b.wb.Account + "_", ""),
+			const Y = e => e.replace(b.vb.Account + "_", ""),
 				X = i.a.i("FallbackAvatar", Q.a),
 				$ = i.a.wrapped(X, "FallbackAvatarWrapper", Q.a),
 				ee = i.a.wrapped(e => {
@@ -3796,7 +3796,7 @@
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = xa()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), b.Db, {
+					}), b.Cb, {
 						leading: !0,
 						trailing: !1
 					}), this.onKeyUpListener = e => {
@@ -4753,7 +4753,7 @@
 									createdAt: c,
 									messageData: o,
 									sender: i
-								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.cb, f = !(p && g), O = o.type === ve.b.EMBED, j = h && r.a.createElement(B, {
+								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.bb, f = !(p && g), O = o.type === ve.b.EMBED, j = h && r.a.createElement(B, {
 									date: c
 								}), C = f && d && l && r.a.createElement(On, {
 									createdAt: c,
@@ -9020,7 +9020,7 @@
 							size: e
 						} = t.container;
 						e !== a.a.EMBED && e !== a.a.FULL || !document.hasFocus() || o(t), n()
-					}, 30 * i.Db)
+					}, 30 * i.Cb)
 				};
 				return n(), n => a => {
 					const s = n(a);
@@ -9071,7 +9071,7 @@
 							const t = e.getState();
 							e.dispatch(Object(u.sizeChanged)(b.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === i.zb.CHAT_MINIMIZE && e.dispatch(Object(d.P)());
+							a && a.meta && a.meta.name === i.yb.CHAT_MINIMIZE && e.dispatch(Object(d.P)());
 							const {
 								action: s,
 								noun: c,
@@ -9151,7 +9151,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === b.a.MINIMIZED || n === b.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.zb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.zb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.yb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.yb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -9171,7 +9171,7 @@
 					})(n) : s()(() => e.dispatch(Object(d.m)()))
 				};
 				let a;
-				Object(f.a)(e.getState()) === c.zb.CHAT_MINIMIZE ? s()(async () => {
+				Object(f.a)(e.getState()) === c.yb.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.m)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.b)()))
 				}) : n();
 				return i => g => {
@@ -9184,7 +9184,7 @@
 							const t = g.payload !== b.a.MINIMIZED && g.payload !== b.a.HIDDEN;
 							t && (clearTimeout(a), a = null), C && t && !_ && n(), !_ || g.payload !== b.a.HIDDEN && g.payload !== b.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * c.cb));
+							}, 10 * c.bb));
 							break
 						}
 						case l.a: {
@@ -9245,7 +9245,7 @@
 				r = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * c.cb;
+			const l = 5 * c.bb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -9380,8 +9380,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.d)(l, e, 5 * i.cb)
-			}, 5 * i.Db, {
+				Object(o.d)(l, e, 5 * i.bb)
+			}, 5 * i.Cb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -9389,7 +9389,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.b)(l) && Object(c.b)()
-				}, 5 * i.cb)
+				}, 5 * i.bb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -9400,7 +9400,7 @@
 						}
 					} = t,
 					a = n && n.id || "unknown";
-				l = Object(o.c)(i.o.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
+				l = Object(o.c)(i.n.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
 				try {
 					window.parent.addEventListener("focus", m)
 				} catch (s) {}
@@ -9432,7 +9432,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const c = async e => Object(s.b)(e, {
 				endpoint: "".concat(e.apiUrl, "/api/v1/me"),
-				method: a.bb.GET,
+				method: a.ab.GET,
 				data: {
 					raw_json: 1
 				}
@@ -9442,10 +9442,10 @@
 					raw_json: 1
 				},
 				endpoint: "".concat(e.apiUrl, "/api/block_user"),
-				method: a.bb.POST
+				method: a.ab.POST
 			}), o = async (e, t) => Object(s.b)(e, {
 				endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/about"),
-				method: a.bb.GET,
+				method: a.ab.GET,
 				data: {
 					raw_json: 1
 				}
@@ -9470,7 +9470,7 @@
 				r = n("./src/reddit/constants/headers.ts"),
 				o = n("./src/chat/models/Message/report.ts");
 			const i = (e, t) => Object(s.b)(e, {
-					method: a.bb.POST,
+					method: a.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/report_user"),
 					data: {
 						reason: t.reason,
@@ -9480,7 +9480,7 @@
 				l = (e, t, n) => {
 					const c = Object(o.c)(t, n);
 					return Object(s.b)(e, {
-						method: a.bb.POST,
+						method: a.ab.POST,
 						endpoint: "".concat(e.apiUrl, "/api/report_user"),
 						data: {
 							details: JSON.stringify(c),
@@ -9490,7 +9490,7 @@
 					})
 				},
 				d = (e, t) => Object(s.b)(e, {
-					method: a.bb.GET,
+					method: a.ab.GET,
 					endpoint: "".concat(e.apiUrl, "/api/user_data_by_account_ids"),
 					data: {
 						raw_json: 1,
@@ -9498,11 +9498,11 @@
 					}
 				}),
 				u = e => Object(s.b)(e, {
-					method: a.bb.GET,
+					method: a.ab.GET,
 					endpoint: "".concat(e.apiUrl, "/prefs/blocked.json")
 				}),
 				h = e => Object(s.b)(Object(c.a)(e, [r.a]), {
-					method: a.bb.POST,
+					method: a.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/seen_subreddit_chat_ftux")
 				})
 		},
@@ -9758,7 +9758,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || "".concat(a.wb.Account, "_").concat(e.id),
+					id: e.contact_account_id || "".concat(a.vb.Account, "_").concat(e.id),
 					name: e.name,
 					lastInteraction: e.last_interaction,
 					created: e.created_utc,
@@ -10052,7 +10052,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = "".concat(a.wb.Account, "_"),
+			const c = "".concat(a.vb.Account, "_"),
 				r = e => {
 					const t = {};
 					for (const n in e) t[n] = o(Object.assign({
@@ -11337,7 +11337,7 @@
 						return e
 				}
 			};
-			const At = he.y;
+			const At = he.x;
 			var Dt = Object(St.a)((function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : At,
 					t = arguments.length > 1 ? arguments[1] : void 0;
@@ -11654,11 +11654,11 @@
 				}),
 				i = {
 					action: c.b,
-					chunk: s.p.CHAT,
+					chunk: s.o.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT
+						name: s.yb.CHAT
 					},
 					path: "/chat/"
 				},
@@ -11685,11 +11685,11 @@
 			l.preload();
 			const d = {
 					action: c.b,
-					chunk: s.p.CHAT_EMPTY,
+					chunk: s.o.CHAT_EMPTY,
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT_EMPTY
+						name: s.yb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -11716,33 +11716,33 @@
 			u.preload();
 			const h = {
 					action: c.c,
-					chunk: s.p.CHAT_MINIMIZE,
+					chunk: s.o.CHAT_MINIMIZE,
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT_MINIMIZE
+						name: s.yb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
 				m = ["/chat/", "/chat/channel/:action(create)/", "/chat/channel/:channelId/:action(block|decline|delete|invite|invited|kick|members|leave|nsfw|report)?/:attr(invite|message|user)?/:attrId?", "/chat/r/:subredditName/channel/:channelId/:action(ban|block|decline|delete|deny|invite|invited|join|kick|leave|lock_confirmation|members|private|report)?/:attr(invite|message|user)?/:attrId?"],
 				b = {
 					action: c.a,
-					chunk: s.p.CHAT,
+					chunk: s.o.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT
+						name: s.yb.CHAT
 					},
 					path: m
 				},
 				p = ["/chat/user_id/:userIds/"],
 				g = {
 					action: c.d,
-					chunk: s.p.CHAT,
+					chunk: s.o.CHAT,
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.zb.CHAT
+						name: s.yb.CHAT
 					},
 					path: p
 				};
@@ -11753,10 +11753,10 @@
 			var a = n("./src/lib/constants/index.ts");
 			var s = {
 				action: n("./src/chat/actions/page.ts").b,
-				chunk: a.p.CHAT,
+				chunk: a.o.CHAT,
 				exact: !0,
 				meta: {
-					name: a.zb.CHAT
+					name: a.yb.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -12318,7 +12318,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(_.e)({
 							toast: x.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Db), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.F)())
+						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Cb), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.F)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
 				onReconnectFailed() {
@@ -13509,7 +13509,7 @@
 				class n extends r.Component {
 					constructor(e) {
 						super(e), this.handleKeyDown = e => {
-							e.keyCode === l.E && this.props.onKeyDown(e)
+							e.keyCode === l.D && this.props.onKeyDown(e)
 						}, this.handleMouseClick = e => {
 							this.props.onMouseClick(e)
 						}, this.handleResize = c()(e => {
@@ -14039,4 +14039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.34e1bf1e60bdb56592d4.js.map
+//# sourceMappingURL=Chat~RedesignChat.d653af55296617a15db4.js.map

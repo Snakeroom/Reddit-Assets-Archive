@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.2c1621bc7416d2f4afc8.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.6d3c66c33b0d6381aa84.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -683,7 +683,7 @@
 				B = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
 				R = t("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
 				q = t.n(R),
-				z = function(e, a) {
+				F = function(e, a) {
 					var t = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && a.indexOf(s) < 0 && (t[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -692,11 +692,11 @@
 					}
 					return t
 				};
-			var F = e => {
+			var z = e => {
 					var {
 						className: a,
 						isLargeView: t
-					} = e, s = z(e, ["className", "isLargeView"]);
+					} = e, s = F(e, ["className", "isLargeView"]);
 					const n = t ? q.a.large : "",
 						r = Object(B.b)(s);
 					return l.a.createElement("div", {
@@ -874,7 +874,7 @@
 						requestPurchaseCatalog: t
 					} = this.props;
 					e.length || a || t(), g.e() || g.f(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const s = u.zb.COINS;
+					const s = u.yb.COINS;
 					f.c.has(s) && this.props.sendEvent(Object(b.a)(k.TimerType.InApp, f.c.end(s))), Object(p.a)()
 				}
 				render() {
@@ -976,7 +976,7 @@
 						className: w.a.purchaseLogo
 					})), l.a.createElement("div", {
 						className: w.a.purchasePackages
-					}, r || !e.length ? c()(5, e => l.a.createElement(F, {
+					}, r || !e.length ? c()(5, e => l.a.createElement(z, {
 						className: w.a.purchasePackage,
 						isLargeView: 0 === e,
 						isLoading: !0,
@@ -1026,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.2c1621bc7416d2f4afc8.js.map
+//# sourceMappingURL=Coins.6d3c66c33b0d6381aa84.js.map

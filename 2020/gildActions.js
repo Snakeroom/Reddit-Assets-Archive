@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.7f55316efef30c3d4172.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.9b163922931d0d1d3e74.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -36,8 +36,8 @@
 				o = s("./src/reddit/actions/toaster.ts"),
 				u = s("./src/reddit/models/Gold/Award.ts"),
 				l = s("./src/reddit/models/Post/index.ts"),
-				b = s("./src/reddit/models/Toast/index.ts"),
-				g = s("./src/reddit/selectors/comments.ts"),
+				g = s("./src/reddit/models/Toast/index.ts"),
+				b = s("./src/reddit/selectors/comments.ts"),
 				p = s("./src/reddit/selectors/communityAwards.ts"),
 				m = s("./src/reddit/selectors/gild.ts"),
 				h = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -92,10 +92,10 @@
 							}, c);
 						let u = !1,
 							l = null,
-							b = null;
+							g = null;
 						if (a.ok) {
 							const e = a.body;
-							u = e.data.gild.ok, l = e.data.gild.fieldErrors, b = e.data.gild.errors
+							u = e.data.gild.ok, l = e.data.gild.fieldErrors, g = e.data.gild.errors
 						}
 						if (u) {
 							const t = a.body,
@@ -117,7 +117,7 @@
 							}))
 						} else {
 							const e = l && l[0] && l[0].message,
-								t = b && b[0] && b[0].message,
+								t = g && g[0] && g[0].message,
 								n = e || t || r.fbt._("An unknown error occurred", null, {
 									hk: "2oAbwZ"
 								});
@@ -138,7 +138,7 @@
 					}, 2e3)
 				}, R = Object(n.a)(E.m), F = e => async (t, s) => {
 					await t(R(e)), t(Object(o.e)({
-						kind: b.b.Error,
+						kind: g.b.Error,
 						duration: o.a,
 						text: e
 					}))
@@ -147,7 +147,7 @@
 						id: s
 					} = t, r = Object(v.a)(s) ? Object(f.N)(e, {
 						postId: s
-					}) : Object(g.n)(e, {
+					}) : Object(b.n)(e, {
 						commentId: s
 					}), n = Object(w.i)(e), a = e.gild, {
 						isAnonymous: i
@@ -162,15 +162,15 @@
 				}, K = e => async (t, s) => {
 					const n = s(),
 						{
-							awardId: g,
+							awardId: b,
 							id: w
 						} = e,
-						_ = Object(p.a)(n, g);
+						_ = Object(p.a)(n, b);
 					if (Object(m.h)(n)) {
 						const e = "success.gild",
 							t = {},
 							s = _.icon32 ? _.icon32.url : _.icon.url;
-						t.awardId = g, t.awardIcon = s, Object(a.a)({
+						t.awardId = b, t.awardIcon = s, Object(a.a)({
 							type: e,
 							data: t
 						})
@@ -196,10 +196,10 @@
 						}),
 						y = _.coinPrice;
 					Object(T.a)(Object(q.viewSuccessAwardEvent)(w, y, _)(n)), t(Object(o.e)({
-						kind: b.b.SuccessCommunity,
+						kind: g.b.SuccessCommunity,
 						text: j
 					})), setTimeout(() => {
-						const e = Object(C.a)(g, w),
+						const e = Object(C.a)(b, w),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
@@ -223,7 +223,7 @@
 				o = s("./src/reddit/constants/headers.ts"),
 				u = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				l = s("./src/reddit/endpoints/gold/purchase.ts");
-			const b = e => e.map(e => ({
+			const g = e => e.map(e => ({
 					baselineCoins: e.baseline_coins || e.coins,
 					baselinePennies: e.baseline_pennies || e.pennies,
 					bonusPct: e.bonus_pct,
@@ -238,7 +238,7 @@
 					mobileId: e.mobile_id,
 					pennies: e.pennies
 				})),
-				g = e => e.map(e => ({
+				b = e => e.map(e => ({
 					description: e.description,
 					frequency: e.frequency,
 					frequencyDays: e.frequency_days,
@@ -271,9 +271,9 @@
 					premium_packages: n
 				} = e.body, a = {
 					activeSaleConfig: p(t),
-					coinPackages: b(s),
-					dealCoinPackages: b(r),
-					premiumPackages: g(n)
+					coinPackages: g(s),
+					dealCoinPackages: g(r),
+					premiumPackages: b(n)
 				};
 				return Object.assign({}, e, {
 					body: a
@@ -293,15 +293,15 @@
 							const t = "".concat(e.apiUrl, "/api/v2/gold/purchase_package_details"),
 								s = Object(u.a)(t);
 							return Object(d.b)(Object(c.a)(e, [o.a]), {
-								method: i.bb.GET,
+								method: i.ab.GET,
 								endpoint: s
 							}).then(l.c).then(m)
 						})(n());
 						if (!t.ok) throw new Error(t.error && t.error.type || "Unknown error");
 						const s = t.body;
 						e(O(s))
-					} catch (b) {
-						a.c.captureException(b);
+					} catch (g) {
+						a.c.captureException(g);
 						const t = r.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
@@ -363,4 +363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.7f55316efef30c3d4172.js.map
+//# sourceMappingURL=gildActions.9b163922931d0d1d3e74.js.map

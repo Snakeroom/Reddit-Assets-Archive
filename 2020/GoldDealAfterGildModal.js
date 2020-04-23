@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldDealAfterGildModal.caecdbc9294be9f3242b.js
-// Retrieved at 4/15/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldDealAfterGildModal.edf8b3b4a61bb8498fe5.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldDealAfterGildModal"], {
 		"./src/reddit/components/Gold/DealAfterGildModal/index.m.less": function(e, t, n) {
@@ -178,7 +178,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: u === d.Premium ? o.mb : w ? w.pennies : void 0
+							amountInSmallestDenom: u === d.Premium ? o.lb : w ? w.pennies : void 0
 						}
 					})
 				},
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GoldDealAfterGildModal.caecdbc9294be9f3242b.js.map
+//# sourceMappingURL=GoldDealAfterGildModal.edf8b3b4a61bb8498fe5.js.map

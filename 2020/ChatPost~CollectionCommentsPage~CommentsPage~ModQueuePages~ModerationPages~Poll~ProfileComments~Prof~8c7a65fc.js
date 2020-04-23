@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.c72664104ac020e711bf.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6eb6645ca1cf7ed045ad.js
+// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -237,12 +237,12 @@
 					}))
 				}
 			}
-			var B = s("./src/reddit/icons/fonts/helpers.tsx");
-			var L = e => n.a.createElement("i", {
-				className: Object(i.a)(Object(B.b)("addGild"), e.className)
+			var L = s("./src/reddit/icons/fonts/helpers.tsx");
+			var B = e => n.a.createElement("i", {
+				className: Object(i.a)(Object(L.b)("addGild"), e.className)
 			});
 			var H = e => n.a.createElement("i", {
-				className: Object(i.a)(Object(B.b)("addGildDashed"), e.className)
+				className: Object(i.a)(Object(L.b)("addGildDashed"), e.className)
 			});
 			class U extends n.a.PureComponent {
 				constructor() {
@@ -262,7 +262,7 @@
 					const {
 						className: e,
 						onClick: t
-					} = this.props, s = this.state.isHovered ? L : H;
+					} = this.props, s = this.state.isHovered ? B : H;
 					return n.a.createElement("button", {
 						className: Object(i.a)(e, P.a.badgeButton, P.a.visibilityEffect),
 						onClick: t,
@@ -1179,8 +1179,8 @@
 				P = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				M = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				k = s("./src/reddit/helpers/styles/smartTextColor.ts"),
-				B = s("./src/reddit/icons/fonts/Admin/index.tsx"),
-				L = (s("./src/reddit/icons/fonts/Premium/index.tsx"), s("./src/reddit/models/Flair/index.ts")),
+				L = s("./src/reddit/icons/fonts/Admin/index.tsx"),
+				B = (s("./src/reddit/icons/fonts/Premium/index.tsx"), s("./src/reddit/models/Flair/index.ts")),
 				H = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				U = s("./src/reddit/models/Post/index.ts"),
 				D = s("./src/reddit/models/Subreddit/index.ts"),
@@ -1218,7 +1218,7 @@
 					}))
 				})),
 				K = e => {
-					const t = !e.isDeleted && e.post.distinguishType === i.B.ADMIN;
+					const t = !e.isDeleted && e.post.distinguishType === i.A.ADMIN;
 					return r.a.createElement(g.a, {
 						className: W.a.authorLink,
 						"data-click-id": "user",
@@ -1228,9 +1228,9 @@
 						isAuthorDeleted: e.isDeleted,
 						isUnstyled: !0,
 						style: e.style
-					}, "u/".concat(e.post.author), t && r.a.createElement(B.a, {
+					}, "u/".concat(e.post.author), t && r.a.createElement(L.a, {
 						className: W.a.adminIcon
-					}), e.renderContractorBadge && r.a.createElement(B.a, {
+					}), e.renderContractorBadge && r.a.createElement(L.a, {
 						className: W.a.contractorIcon
 					}), !1)
 				};
@@ -1253,7 +1253,7 @@
 						showTimestamp: g = !0,
 						subredditOrProfile: I,
 						tooltipType: P
-					} = this.props, M = m && m.meta && m.meta.name === i.zb.COMMENTS, k = Object(p.a)(b), B = a === L.b.Left, H = b.authorIsContractor && !!I && I.type === D.c.EmployeesOnly, R = !s && !M, F = () => r.a.createElement(V, {
+					} = this.props, M = m && m.meta && m.meta.name === i.yb.COMMENTS, k = Object(p.a)(b), L = a === B.b.Left, H = b.authorIsContractor && !!I && I.type === D.c.EmployeesOnly, R = !s && !M, F = () => r.a.createElement(V, {
 						className: this.props.metaSeparatorClassName
 					}, "•"), Z = r.a.createElement(r.a.Fragment, null, !k && r.a.createElement(z, {
 						style: {
@@ -1265,7 +1265,7 @@
 						style: {
 							color: q(this.props)
 						}
-					}, "Crossposted by")), h && B && r.a.createElement("div", {
+					}, "Crossposted by")), h && L && r.a.createElement("div", {
 						className: W.a.flairContainer
 					}, r.a.createElement(y.b, {
 						disabled: !n,
@@ -1288,7 +1288,7 @@
 						postOrComment: b,
 						tooltipType: P
 					}, r.a.createElement(O.b, {
-						ignore: Object(U.h)(b.author) || !!b.distinguishType && b.distinguishType !== i.B.NONE,
+						ignore: Object(U.h)(b.author) || !!b.distinguishType && b.distinguishType !== i.A.NONE,
 						subredditId: b.belongsTo.id,
 						userId: b.authorId
 					}, r.a.createElement(K, {
@@ -1297,7 +1297,7 @@
 						style: {
 							color: q(this.props)
 						}
-					})))), h && !B && r.a.createElement("div", {
+					})))), h && !L && r.a.createElement("div", {
 						className: W.a.flairContainer
 					}, r.a.createElement(y.b, {
 						disabled: !n,
@@ -1709,4 +1709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.c72664104ac020e711bf.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6eb6645ca1cf7ed045ad.js.map
