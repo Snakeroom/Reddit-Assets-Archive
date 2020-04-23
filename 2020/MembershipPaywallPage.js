@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d3eaff18c00408a0ff39.js
-// Retrieved at 4/21/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.dbc245dca8c05ad9473a.js
+// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -3289,7 +3289,7 @@
 				userIsLoggedIn: e => !!e.user.account
 			});
 			var na = Object(r.b)(ia, e => ({
-					openLoginModal: () => e(Object(rt.e)())
+					openLoginModal: () => e(Object(rt.g)())
 				}))(ra),
 				ca = a("./src/reddit/pages/meta/MembershipPaywallPage/Intro/index.m.less"),
 				ma = a.n(ca);
@@ -3941,4 +3941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.d3eaff18c00408a0ff39.js.map
+//# sourceMappingURL=MembershipPaywallPage.dbc245dca8c05ad9473a.js.map

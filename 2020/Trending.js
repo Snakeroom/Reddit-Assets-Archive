@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.4c68cf5bf2d0ec1f3127.js
-// Retrieved at 4/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.3b4dc987b8c081e3f348.js
+// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.4c68cf5bf2d0ec1f3127.js.map
+//# sourceMappingURL=Trending.3b4dc987b8c081e3f348.js.map

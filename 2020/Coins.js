@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.48afc6dc8dc5df8a4dfa.js
-// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.2c1621bc7416d2f4afc8.js
+// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -838,7 +838,7 @@
 				ce = Object(o.b)(re, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(m.b)("/settings/gold")),
 					onRouteToPremium: () => e(Object(m.b)("/premium")),
-					onOpenLoginModal: () => e(Object(x.e)()),
+					onOpenLoginModal: () => e(Object(x.g)()),
 					onPurchasePackage: a => e(Object(_.g)({
 						coinsToPurchase: a.coins
 					})),
@@ -1026,4 +1026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.48afc6dc8dc5df8a4dfa.js.map
+//# sourceMappingURL=Coins.2c1621bc7416d2f4afc8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.16875c1f08e17c88a0ad.js
-// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c934bac24c2298bb592a.js
+// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2090,7 +2090,7 @@
 						const s = Object(J.k)(r(), e);
 						null !== s.post.voteState && Object(Ct.e)(s.post.voteState) === t || await Object(wt.g)(n(), e, t)
 					}
-				else s(Object(u.e)())
+				else s(Object(u.g)())
 			};
 			var St = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				xt = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
@@ -3336,8 +3336,8 @@
 						loadComments: () => e(Object(Fs.q)(s, void 0, {
 							sort: Ds.r.CHAT
 						}, Ds.r.CHAT)),
-						openLoginModal: () => e(Object(u.e)()),
-						openRegisterModal: () => e(Object(u.f)())
+						openLoginModal: () => e(Object(u.g)()),
+						openRegisterModal: () => e(Object(u.h)())
 					}
 				})(cr),
 				lr = e => i.a.createElement("svg", {
@@ -3878,7 +3878,7 @@
 					return "home" === n || "r/popular" === n ? n : "popular" === i ? "r/popular" : i ? void 0 : "home"
 				}
 			}), Lr = Object(o.b)(Ir, (e, t) => ({
-				onOpenLoginModal: () => e(Object(u.e)()),
+				onOpenLoginModal: () => e(Object(u.g)()),
 				onStreamByIdRequested: t => e(Object(p.d)(t)),
 				updateLocation: (t, s) => {
 					let {
@@ -4224,4 +4224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.16875c1f08e17c88a0ad.js.map
+//# sourceMappingURL=PublicAccessNetwork.c934bac24c2298bb592a.js.map

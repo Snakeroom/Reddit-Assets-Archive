@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.75d945cf4fca4fd514c6.js
-// Retrieved at 4/22/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77e81580b9b2fc076172.js
+// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10990,14 +10990,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("81cb0be-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("deded2d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "81cb0be-production",
+						release: "deded2d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11359,7 +11359,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "81cb0be-production",
+							releaseClient: "deded2d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22859,7 +22859,7 @@
 								subredditName: i.name,
 								action: t
 							})) return !1;
-						const n = Object(b.hb)(e).subreddit[i.id];
+						const n = Object(b.ib)(e).subreddit[i.id];
 						if ((n ? n.isContributorRequestTimestamp : 0) > o) return !0
 					}
 					return !1
@@ -24571,7 +24571,7 @@
 						n = Object(H.g)(t, e.profileId),
 						r = Object(Q.n)(t, e.profileId),
 						s = Object(Z.a)(t),
-						o = Object(ee.hb)(t),
+						o = Object(ee.ib)(t),
 						d = r && r.bannerBackgroundImage;
 					return {
 						id: e.id,
@@ -24757,7 +24757,7 @@
 				return C
 			})), i.d(t, "u", (function() {
 				return k
-			})), i.d(t, "hb", (function() {
+			})), i.d(t, "ib", (function() {
 				return j
 			})), i.d(t, "a", (function() {
 				return N
@@ -24831,7 +24831,7 @@
 				return he
 			})), i.d(t, "g", (function() {
 				return _e
-			})), i.d(t, "gb", (function() {
+			})), i.d(t, "hb", (function() {
 				return ge
 			})), i.d(t, "J", (function() {
 				return fe
@@ -24847,6 +24847,8 @@
 				return Te
 			})), i.d(t, "w", (function() {
 				return Se
+			})), i.d(t, "gb", (function() {
+				return Ee
 			}));
 			var n = i("./node_modules/lodash/find.js"),
 				r = i.n(n),
@@ -25038,7 +25040,8 @@
 				},
 				ve = (e, t) => e.user.accountSettings["".concat(t)].api.pending,
 				Te = e => e.user.accountSettings.changeEmail.api.error,
-				Se = e => !1
+				Se = e => e.user && e.user.account && e.user.account.passwordSet,
+				Ee = e => e.user && e.user.account && e.user.account.linkedIdentities
 		},
 		"./src/reddit/singleton/tracing/index.ts": function(e, t, i) {
 			"use strict";
@@ -28355,4 +28358,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.75d945cf4fca4fd514c6.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.77e81580b9b2fc076172.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4e6425487d0c6c8090b9.js
-// Retrieved at 4/22/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a5b698dad0be834bb4b0.js
+// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -15574,7 +15574,7 @@
 						tooltipIdPrefix: W.a,
 						tooltipType: Le.c.StickyPost
 					}))(e),
-					userPrefs: ue.hb,
+					userPrefs: ue.ib,
 					isInCommentsPageAdExperiment: ie.a
 				}),
 				pt = (e, t) => ({
@@ -15592,8 +15592,8 @@
 					onToggleTooltip: t => e(Object(A.h)({
 						tooltipId: t
 					})),
-					openLoginModal: () => e(Object(R.e)()),
-					openRegisterModal: () => e(Object(R.f)()),
+					openLoginModal: () => e(Object(R.g)()),
+					openRegisterModal: () => e(Object(R.h)()),
 					goToSubredditPage: t => e(Object(v.b)(t)),
 					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(re.g)(n(), t, s)),
 					truncateCommentsList: () => e(Object(L.b)()),
@@ -16349,4 +16349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.4e6425487d0c6c8090b9.js.map
+//# sourceMappingURL=CommentsPage.a5b698dad0be834bb4b0.js.map
