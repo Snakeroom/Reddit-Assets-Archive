@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4c73fd6ca229cd159510.js
-// Retrieved at 4/23/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a52a1db4723555cf89cd.js
+// Retrieved at 4/23/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -154,7 +154,7 @@
 				b = e => {
 					const t = window.googletag = window.googletag || {};
 					t.cmd = t.cmd || [], h("//www.googletagservices.com/tag/js/gpt.js"), t.cmd.push(() => {
-						t.pubads().addEventListener("slotRequested", e.onRequest), t.pubads().addEventListener("impressionViewable", e.onAdView), t.pubads().disableInitialLoad(), t.enableServices()
+						t.pubads().addEventListener("slotRequested", e.onRequest), t.pubads().addEventListener("impressionViewable", t => e.onAdView(t, !1)), t.pubads().disableInitialLoad(), t.enableServices()
 					}), window.apstag || (window.apstag = {
 						_Q: []
 					}, window.apstag.init = function() {
@@ -176,7 +176,7 @@
 						initTime: (new Date).getTime(),
 						hst: location.hostname,
 						deliverExchangeDemand: () => {},
-						cmd: [],
+						cmd: [() => window.aax.addEventListener("impressionViewable", t => e.onAdView(t, !0))],
 						execute: [() => window.aax.limitDataProcessing(e.limitDataProcessing)]
 					}, h("//c.aaxads.com/aax.js?pub=".concat(window.aax.pubId, "&hst=").concat(window.aax.hst, "&ver=").concat(window.aax.ver)))
 				}
@@ -8927,25 +8927,27 @@
 				}, a.defaults(e), {
 					subreddit: a.subreddit(e)
 				}),
-				i = e => t => {
-					const s = e.slot.getSlotId().getDomId(),
-						r = -1 !== s.indexOf(n.c.ABOVE_THE_FOLD) ? n.c.ABOVE_THE_FOLD : n.c.BELOW_THE_FOLD,
-						o = document.querySelector("#" + s);
-					let i, c;
-					if (o && (i = n.f.HOUSE_AD, -1 !== o.innerHTML.indexOf("google_ads_iframe") && (i = n.f.PROGRAMMATIC_AD), o.children && o.children.length > 0)) {
-						const e = o.children[0];
-						c = "".concat(e.offsetWidth, "x").concat(e.offsetHeight)
+				i = (e, t) => s => {
+					const r = t ? e.dfpDetails.slot.getSlotId().getDomId() : e.slot.getSlotId().getDomId(),
+						o = -1 !== r.indexOf(n.c.ABOVE_THE_FOLD) ? n.c.ABOVE_THE_FOLD : n.c.BELOW_THE_FOLD,
+						i = document.querySelector("#" + r);
+					let c, d;
+					if (i && (c = n.f.HOUSE_AD, -1 !== i.innerHTML.indexOf("google_ads_iframe") && (c = n.f.PROGRAMMATIC_AD), i.children && i.children.length > 0)) {
+						const e = i.children[0];
+						d = "".concat(e.offsetWidth, "x").concat(e.offsetHeight)
 					}
+					const l = t ? "aax" : void 0;
 					return Object.assign({
 						source: "post",
 						action: "view",
 						noun: "programmatic_ad"
-					}, a.defaults(t), {
-						subreddit: a.subreddit(t),
+					}, a.defaults(s), {
+						subreddit: a.subreddit(s),
 						programmatic: {
-							adUnit: c ? "DESKTOP ".concat(c, " ").concat(r) : "DESKTOP ".concat(r),
+							adUnit: d ? "DESKTOP ".concat(d, " ").concat(o) : "DESKTOP ".concat(o),
 							count: 1,
-							type: i
+							partner: l,
+							type: c
 						}
 					})
 				}
@@ -9591,8 +9593,8 @@
 					super(e), Object(ie.f)({
 						limitDataProcessing: "CA" === this.props.region,
 						onRequest: () => this.props.sendEvent(Object(de.b)()),
-						onAdView: e => {
-							Math.random() <= i.a.telemetry.programmaticAdSampleRate && this.props.sendEvent(Object(de.c)(e))
+						onAdView: (e, t) => {
+							Math.random() <= i.a.telemetry.programmaticAdSampleRate && this.props.sendEvent(Object(de.c)(e, t))
 						}
 					})
 				}
@@ -12304,4 +12306,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.4c73fd6ca229cd159510.js.map
+//# sourceMappingURL=Reddit.a52a1db4723555cf89cd.js.map
