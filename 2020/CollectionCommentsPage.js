@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.07cd13d38f373a3e7fb9.js
-// Retrieved at 4/23/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.21bdec8ac5c1b6cfd074.js
+// Retrieved at 4/23/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -848,10 +848,7 @@
 			e.exports = {
 				spacer: "_25blA2uobENRg70NGewwpP",
 				isTopLevelComment: "_1chAIcRfDnelKBQkWMIXfl",
-				isCommentBoxDesign: "_2mGbbSC1nHodWNoj5NJEYY",
-				editor: "_3NuRqPrgRBPdjWunXX3Q8E",
-				byline: "_1KZHWcRRAqnSYcyX8FzWOK",
-				avatar: "_2gYdPXSssI0f1R9BPp9qsd"
+				byline: "_1KZHWcRRAqnSYcyX8FzWOK"
 			}
 		},
 		"./src/reddit/components/CommentCreation/Loader.tsx": function(e, t, s) {
@@ -859,60 +856,40 @@
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
-				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/reddit/components/RichTextEditor/Placeholder.tsx"),
-				c = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				l = s("./src/reddit/selectors/experiments/commentBox.ts"),
-				m = s("./src/lib/classNames/index.ts"),
-				p = s("./src/reddit/components/CommentCreation/Loader.m.less"),
-				u = s.n(p);
-
-			function h() {
-				return (h = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const b = "bottom",
-				g = Object(a.c)({
-					isCommentBoxDesignEnabled: l.a
-				}),
-				x = Object(i.b)(g),
-				f = e => {
+				i = s("./src/reddit/components/RichTextEditor/Placeholder.tsx"),
+				a = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				d = s("./src/lib/classNames/index.ts"),
+				c = s("./src/reddit/components/CommentCreation/Loader.m.less"),
+				l = s.n(c);
+			const m = "bottom",
+				p = e => {
 					let {
-						isCommentBoxDesignEnabled: t,
-						isTopLevelComment: s,
-						children: n
+						isTopLevelComment: t,
+						children: s
 					} = e;
 					return r.a.createElement("div", {
-						className: Object(m.a)(u.a.spacer, {
-							[u.a.isCommentBoxDesign]: t,
-							[u.a.isTopLevelComment]: s
+						className: Object(d.a)(l.a.spacer, {
+							[l.a.isTopLevelComment]: t
 						})
-					}, n)
+					}, s)
 				},
-				v = () => r.a.createElement("div", {
-					className: Object(m.a)(u.a.byline, Object(c.a)({
+				u = () => r.a.createElement("div", {
+					className: Object(d.a)(l.a.byline, Object(a.a)({
 						isLoading: !0
 					}))
 				}),
-				C = () => r.a.createElement("div", {
-					className: Object(m.a)(u.a.avatar, Object(c.a)({
-						isLoading: !0
+				h = e => {
+					let {
+						isTopLevelComment: t
+					} = e;
+					return r.a.createElement(p, {
+						isTopLevelComment: t
+					}, r.a.createElement(u, null), r.a.createElement(i.a, {
+						isLoading: !0,
+						toolbarPosition: m
 					}))
-				}),
-				O = e => r.a.createElement(f, e, e.isCommentBoxDesignEnabled ? r.a.createElement(C, null) : r.a.createElement(v, null), r.a.createElement(d.a, {
-					className: u.a.editor,
-					isCommentBoxDesignEnabled: e.isCommentBoxDesignEnabled,
-					isLoading: !0,
-					toolbarPosition: b
-				})),
-				y = x(O),
-				E = Object(n.a)({
+				},
+				b = Object(n.a)({
 					resolved: {},
 					chunkName: () => "RichTextEditor",
 					isReady(e) {
@@ -932,14 +909,10 @@
 						return "./src/reddit/components/CommentCreation/index.tsx"
 					}
 				}, {
+					fallback: r.a.createElement(h, null),
 					ssr: !1
-				}),
-				_ = e => r.a.createElement(E, h({}, e, {
-					fallback: r.a.createElement(y, {
-						isTopLevelComment: e.isTopLevelComment
-					})
-				}));
-			t.a = _
+				});
+			t.a = b
 		},
 		"./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3329,9 +3302,9 @@
 			const Ot = e => {
 				const t = Object(Ct.c)(e, {
 					experimentEligibilitySelector: Ct.a,
-					experimentName: vt.Q
+					experimentName: vt.O
 				});
-				return !(!t || Object(vt.dc)(t))
+				return !(!t || Object(vt.bc)(t))
 			};
 			var yt = s("./src/reddit/selectors/gild.ts"),
 				Et = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -10356,7 +10329,6 @@
 		"./src/reddit/components/RichTextEditor/Placeholder.m.less": function(e, t, s) {
 			e.exports = {
 				content: "_3Yo9aCwUoJBBuPKwf3r5cP",
-				mCollapsed: "_225DoZxfrLcZu0fM8-Svk8",
 				prompt: "_3CuuiBuYvA4VXTClabDCUK",
 				toolbar: "_31gqZmjkDlF5-81EKQ7w_Y",
 				topToolbar: "_6rO7u4xvTeWjMNR68asbw",
@@ -10375,29 +10347,26 @@
 			t.a = e => {
 				let {
 					className: t,
-					isCommentBoxDesignEnabled: s,
-					isLoading: n,
-					toolbarPosition: d
+					isLoading: s,
+					toolbarPosition: n
 				} = e;
 				return o.a.createElement("div", {
 					className: t
 				}, o.a.createElement(i.a, {
 					isFocused: !1
-				}, !s && "top" === d && o.a.createElement("div", {
+				}, "top" === n && o.a.createElement("div", {
 					className: Object(r.a)(c.a.toolbar, c.a.topToolbar, Object(a.a)({
-						isLoading: n
+						isLoading: s
 					}))
 				}), o.a.createElement("div", {
-					className: Object(r.a)(c.a.content, {
-						[c.a.mCollapsed]: s
-					})
+					className: c.a.content
 				}, o.a.createElement("div", {
 					className: Object(r.a)(c.a.prompt, Object(a.a)({
 						isLoading: !0
 					}))
-				})), !s && "bottom" === d && o.a.createElement("div", {
+				})), "bottom" === n && o.a.createElement("div", {
 					className: Object(r.a)(c.a.toolbar, c.a.bottomToolbar, Object(a.a)({
-						isLoading: n
+						isLoading: s
 					}))
 				})))
 			}
@@ -16311,23 +16280,8 @@
 			const a = e => o.e[Object(r.M)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.x
-				}) === n.E.Treatment
-		},
-		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
-			var n = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/constants/experiments.ts"),
-				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = s("./src/reddit/selectors/user.ts");
-			const a = Object(n.a)(i.H, i.G, (e, t) => e || t),
-				d = Object(n.a)(e => Object(r.c)(e, {
-					experimentEligibilitySelector: a,
-					experimentName: o.p
-				}), e => e === o.v.Enabled)
+					experimentName: n.v
+				}) === n.C.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentsPageAd.ts": function(e, t, s) {
 			"use strict";
@@ -16339,9 +16293,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.y
+					experimentName: n.w
 				});
-				return !!t && !Object(n.dc)(t)
+				return !!t && !Object(n.bc)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16358,4 +16312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.07cd13d38f373a3e7fb9.js.map
+//# sourceMappingURL=CollectionCommentsPage.21bdec8ac5c1b6cfd074.js.map

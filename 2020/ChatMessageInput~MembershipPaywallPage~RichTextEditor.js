@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.618c4b2ce04e89e7c196.js
-// Retrieved at 4/23/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.e161cac4edaecea9d337.js
+// Retrieved at 4/23/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -2527,15 +2527,10 @@
 		},
 		"./src/reddit/components/RichTextEditor/index.m.less": function(t, e, n) {
 			t.exports = {
-				Container: "_3YZ-jFfccqhepgq1dDuLEv",
-				container: "_3YZ-jFfccqhepgq1dDuLEv",
 				FocusableContent: "_3wl1bRnSzxHkKJfvqakrNI",
 				focusableContent: "_3wl1bRnSzxHkKJfvqakrNI",
 				showSubmitButton: "_3Imp2y02BMA96sEJAe9M3M",
-				mRedesign: "_2sl29I15jbNPrKiiB9kfVf",
 				editorWrapper: "_2baJGEALPiEMZpWB2iWQs7",
-				mExpanded: "_1UhKfcyzvaWRtDdXZmzg6D",
-				userIcon: "_1wS6Q6S9RvAbzxaselfK2i",
 				hasInitialHeight: "_35E-zXyMmfsLI7nv_sBvFL",
 				hasInitialMinHeight: "_18GfdTZmF2EPjYSkBDE0WI",
 				noBorder: "HXDWn-rmYOwqGcGtz9AKm",
@@ -6233,16 +6228,15 @@
 						selectionAfter: l
 					})
 				},
-				ac = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				lc = n("./src/reddit/constants/elementClassNames.ts"),
-				dc = n("./src/reddit/constants/keycodes.ts"),
-				uc = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				pc = n("./src/reddit/selectors/economics.ts"),
-				hc = n("./src/reddit/components/RichTextEditor/index.m.less"),
-				gc = n.n(hc);
+				ac = n("./src/reddit/constants/elementClassNames.ts"),
+				lc = n("./src/reddit/constants/keycodes.ts"),
+				dc = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				uc = n("./src/reddit/selectors/economics.ts"),
+				pc = n("./src/reddit/components/RichTextEditor/index.m.less"),
+				hc = n.n(pc);
 
-			function mc() {
-				return (mc = Object.assign || function(t) {
+			function gc() {
+				return (gc = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
@@ -6256,19 +6250,18 @@
 				getPendingThumbnailUploads: A.i,
 				isAllMediaUploaded: A.m
 			});
-			const fc = "handled",
-				bc = "not-handled",
-				yc = /^\s*$/,
-				Ec = 20,
-				Sc = m.a.wrapped(gs.a, "FocusableContent", gc.a),
-				xc = m.a.div("Container", gc.a),
-				Cc = Object(l.b)(() => {
+			const mc = "handled",
+				fc = "not-handled",
+				bc = /^\s*$/,
+				yc = 20,
+				Ec = m.a.wrapped(gs.a, "FocusableContent", hc.a),
+				Sc = Object(l.b)(() => {
 					const t = (() => Object(d.a)(t => t.uploads, (t, e) => Object(k.e)(k.b.RTE_MEDIA, e.rteState.editorKey), (t, e) => i()(t, t => t.key.startsWith(e))))();
 					return Object(d.c)({
 						editorUploads: t,
 						emotesEnabled: x.d.spEmotes,
 						giphyEnabled: x.d.spGiphy,
-						activeEmotes: (t, e) => !!e.destSubreddit && e.destSubreddit.id && Object(pc.c)(t, e.destSubreddit.id) || void 0
+						activeEmotes: (t, e) => !!e.destSubreddit && e.destSubreddit.id && Object(uc.c)(t, e.destSubreddit.id) || void 0
 					})
 				}, t => ({
 					onFetchEditorProducts: e => t(Object(E.e)(e)),
@@ -6276,7 +6269,7 @@
 					retryUpload: e => t(S.a(e)),
 					startUploads: (e, n, o) => t(S.b(e, n, o))
 				}));
-			class Oc extends c.Component {
+			class xc extends c.Component {
 				constructor(t) {
 					super(t), this.blockRenderMap = o.DefaultDraftBlockRenderMap.merge(ys, Cs, _n, Sr, kr, zr, sn), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
 						[v.BREAK_HEADER_ENTITY]: vo.b,
@@ -6366,8 +6359,8 @@
 						const {
 							editorState: e
 						} = this.state;
-						if (this.isMouseDown) return fc;
-						if (It(e, t)) return fc;
+						if (this.isMouseDown) return mc;
+						if (It(e, t)) return mc;
 						let n = function(t, e) {
 							const n = t.getSelection(),
 								s = n.getFocusOffset();
@@ -6385,24 +6378,24 @@
 								return o.EditorState.push(t, s, "insert-characters")
 							}
 						}(e, t) || e;
-						return (n = mn(n, t) || n) !== e ? (this.onChange(n), fc) : bc
+						return (n = mn(n, t) || n) !== e ? (this.onChange(n), mc) : fc
 					}, this.keyBindingFN = t => {
 						const {
 							editorState: e
 						} = this.state, {
 							submitOnEnter: n
 						} = this.props, s = e.getSelection();
-						if (t.metaKey && t.keyCode === dc.a.K) return v.OPEN_LINK_TOOLTIP;
-						if (t.keyCode === dc.a.Space) {
+						if (t.metaKey && t.keyCode === lc.a.K) return v.OPEN_LINK_TOOLTIP;
+						if (t.keyCode === lc.a.Space) {
 							if (ss(e)) return v.CONVERT_TO_LIST_ON_SPACE;
 							if (Object(No.d)(e)) return v.LINKIFY_ON_SPACE
-						} else if (t.keyCode === dc.a.Enter) {
+						} else if (t.keyCode === lc.a.Enter) {
 							if (t.ctrlKey || t.metaKey || n && !t.shiftKey) return v.SUBMIT;
 							if (t.shiftKey && ns(e)) return v.INSERT_LINE_BREAK; {
 								const t = this.enterKeyBinding(e);
 								if (t) return t
 							}
-						} else if (t.keyCode === dc.a.Backspace) {
+						} else if (t.keyCode === lc.a.Backspace) {
 							if (this.isJustLinkified || this.isJustConvertedToList) return B.h;
 							if (s.isCollapsed()) {
 								const t = e.getCurrentContent(),
@@ -6432,7 +6425,7 @@
 								} = s;
 								e = Object(No.f)(e, t, n)
 							}
-							return this.onChange(e), this.isJustLinkified = !!s, fc
+							return this.onChange(e), this.isJustLinkified = !!s, mc
 						};
 						if (n === v.SUBMIT) this.props.onSubmit();
 						else {
@@ -6443,7 +6436,7 @@
 							if (n === v.LINKIFY_ON_SPACE) return s = Object(No.d)(e), r(Object(vo.a)(e));
 							if (n === v.LINKIFY_ON_ENTER && (s = Object(No.d)(e), !(n = this.enterKeyBinding(e, !1)))) return r(Object(vo.d)(e))
 						}
-						if (n === v.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), fc;
+						if (n === v.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), mc;
 						if (n === v.MAKE_PLAIN_BLOCK) {
 							return r(Object(vo.i)(T.n, e))
 						}
@@ -6454,7 +6447,7 @@
 							if (t) return r(t)
 						}
 						const c = o.RichUtils.handleKeyCommand(e, n);
-						return c ? r(c) : bc
+						return c ? r(c) : fc
 					}, this.handleOnTab = t => {
 						if (this.emotesTooltipApi && this.emotesTooltipApi.handleTabInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent()) return void t.preventDefault();
 						const {
@@ -6474,7 +6467,7 @@
 						e && this.onChange(e), this.needSyncScroll = Fi.Down
 					}, this.handleReturn = t => {
 						const e = Rt(this.state.editorState);
-						return e ? (this.onChange(e), t.preventDefault(), fc) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (t.preventDefault(), fc) : bc
+						return e ? (this.onChange(e), t.preventDefault(), mc) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (t.preventDefault(), mc) : fc
 					}, this.suppressAutocompleteForFocusedLink = () => {
 						const t = Object(No.b)(this.state.editorState);
 						t && this.state.suppressAutocompleteForLink !== t.entityKey && this.setState({
@@ -6516,9 +6509,9 @@
 						this.isMouseDown = !0
 					}, this.handleOnMouseUp = t => {
 						this.isMouseDown = !1
-					}, this.handleDroppedFiles = (t, e) => fc, this.handleDrop = (t, e, n) => fc, this.handleBlur = () => {
+					}, this.handleDroppedFiles = (t, e) => mc, this.handleDrop = (t, e, n) => mc, this.handleBlur = () => {
 						this.props.onBlur && this.props.onBlur()
-					}, this.handlePastedText = (t, e) => fc, this.onInternalSuggestionSelected = t => {
+					}, this.handlePastedText = (t, e) => mc, this.onInternalSuggestionSelected = t => {
 						this.onChange(Object(No.g)(this.state.editorState, t)), this.isJustAutocompleteSelected = !0
 					}, this.onToolbarEmoteButtonClick = t => {
 						this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), this.emotesTooltipApi && this.emotesTooltipApi.toggleTooltip(t)
@@ -6566,7 +6559,7 @@
 						const {
 							files: e,
 							filesSource: n
-						} = t, o = e.slice(0, Ec);
+						} = t, o = e.slice(0, yc);
 						await this.props.startUploads(o, n, this.props.rteState.editorKey), this.insertValidatedMedia()
 					}, this.onRetryUpload = t => {
 						this.props.retryUpload(t)
@@ -6688,7 +6681,7 @@
 					}
 					this.editorRootStyleMutationObserver && (this.editorRootStyleMutationObserver.disconnect(), this.editorRootStyleMutationObserver = null)
 				}
-				UNSAFE_componentWillReceiveProps(t) {
+				componentWillReceiveProps(t) {
 					t.rteState !== this.props.rteState && t.rteState.isBound && t.rteState.editorState !== this.state.editorState && this.setState({
 						editorState: t.rteState.editorState
 					})
@@ -6714,10 +6707,10 @@
 						if (e && Object(No.d)(t)) return v.LINKIFY_ON_ENTER;
 						if (Object(T.r)(l) && d) return v.BREAK_HEADER_ENTITY;
 						if (Object(T.s)(l)) {
-							if (yc.test(a.getText())) return a.getDepth() > 0 ? v.REDUCE_LIST_INDENT : v.REMOVE_EXTRA_LIST_ITEM
+							if (bc.test(a.getText())) return a.getDepth() > 0 ? v.REDUCE_LIST_INDENT : v.REMOVE_EXTRA_LIST_ITEM
 						} else if (l === T.e) {
 							const t = n.getBlockBefore(r);
-							if (t && t.getType() === T.e && yc.test(t.getText()) && yc.test(a.getText())) return v.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+							if (t && t.getType() === T.e && bc.test(t.getText()) && bc.test(a.getText())) return v.RESET_CURRENT_AND_PREVIOUS_BLOCKS
 						} else if (l === T.f) {
 							const t = n.getBlockBefore(r),
 								e = n.getBlockAfter(r);
@@ -6766,67 +6759,61 @@
 						giphyEnabled: u,
 						hideToolbar: p,
 						rteState: g,
-						isExpanded: m,
-						isOverlay: f,
-						isCommentBoxDesignEnabled: b,
-						onSubmit: y,
-						placeholderText: E,
-						showSubmitButton: S = !1,
-						submitButtonClassName: x,
-						toolbarPosition: C = "top",
-						renderToolbar: O = this.renderToolbar
+						isOverlay: m,
+						onSubmit: f,
+						placeholderText: b,
+						showSubmitButton: y = !1,
+						submitButtonClassName: E,
+						toolbarPosition: S = "top",
+						renderToolbar: x = this.renderToolbar
 					} = this.props, {
-						editorKey: k
+						editorKey: C
 					} = g, {
-						containerRef: T,
-						editorState: v,
-						mediaToInsert: R,
-						shouldShowFtuMessage: B,
-						confirmModalOpen: _
-					} = this.state, I = this.props.readOnly || !!R, A = j(v), K = this.isEmpty(), M = !(!e || !Object.keys(e).length), L = O({
+						containerRef: O,
+						editorState: k,
+						mediaToInsert: T,
+						shouldShowFtuMessage: v,
+						confirmModalOpen: R
+					} = this.state, B = this.props.readOnly || !!T, _ = j(k), I = this.isEmpty(), A = !(!e || !Object.keys(e).length), K = x({
 						allowMediaUploads: r,
 						destSubreddit: c,
-						editorKey: k,
-						editorState: v,
-						isOverlay: !!f,
+						editorKey: C,
+						editorState: k,
+						isOverlay: !!m,
 						onChange: this.toolbarSetState,
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
-						readOnly: I,
+						readOnly: B,
 						onFtuTooltipClick: this.onToolbarFtuTooltipClick,
-						onEmoteButtonClick: M ? this.onToolbarEmoteButtonClick : void 0,
+						onEmoteButtonClick: A ? this.onToolbarEmoteButtonClick : void 0,
 						onGifButtonClick: u ? this.onToolbarGifButtonClick : void 0,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						onOverflowMenuClick: this.onToolbarOverflowMenuClick,
-						shouldShowFtuMessage: B,
+						shouldShowFtuMessage: v,
 						userCanUseGifs: !!n
-					}), D = !p && (!b || m);
-					return a.a.createElement(xc, {
+					});
+					return a.a.createElement("div", {
 						className: t,
 						ref: this.setContainerRef
-					}, b && a.a.createElement("div", {
-						className: gc.a.userIcon
-					}, a.a.createElement(ac.a, null)), a.a.createElement(Sc, {
+					}, a.a.createElement(Ec, {
 						className: Object(h.a)(d, {
-							[gc.a.showSubmitButton]: S,
-							[gc.a.mExpanded]: m,
-							[gc.a.mRedesign]: b
+							[hc.a.showSubmitButton]: y
 						}),
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, D && "top" === C && L, T && a.a.createElement(To, {
-						editorState: v,
-						readOnly: I,
+					}, !p && "top" === S && K, O && a.a.createElement(To, {
+						editorState: k,
+						readOnly: B,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
-						rteDomRef: T
+						rteDomRef: O
 					}), a.a.createElement("div", {
-						className: Object(h.a)(gc.a.editorWrapper, {
-							[gc.a.hasInitialHeight]: !!this.props.initialHeight,
-							[gc.a.hasInitialMinHeight]: !!this.props.initialMinHeight,
-							[gc.a.noBorder]: !!this.props.noBorder
+						className: Object(h.a)(hc.a.editorWrapper, {
+							[hc.a.hasInitialHeight]: !!this.props.initialHeight,
+							[hc.a.hasInitialMinHeight]: !!this.props.initialMinHeight,
+							[hc.a.noBorder]: !!this.props.noBorder
 						}),
 						style: {
 							"--rte-initial-height": this.props.initialHeight ? "".concat(this.props.initialHeight, "px") : void 0,
@@ -6840,23 +6827,23 @@
 						onMouseUp: this.handleOnMouseUp
 					}, a.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: "\n                .".concat(lc.b, "[").concat(lc.d, '="').concat(A, "-0-0\"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '").concat(E, "';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              ")
+							__html: "\n                .".concat(ac.b, "[").concat(ac.d, '="').concat(_, "-0-0\"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '").concat(b, "';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              ")
 						}
 					}), a.a.createElement(Is, {
-						allowMediaUploads: r && !I,
+						allowMediaUploads: r && !B,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
-						editorState: v,
+						editorState: k,
 						onChange: this.onChange
 					}, a.a.createElement(wo.Provider, {
 						value: this.entityElementRegistry
 					}, a.a.createElement(o.Editor, {
-						readOnly: I,
+						readOnly: B,
 						ref: this.setEditorRef,
 						blockRendererFn: this.blockRendererFn,
 						blockRenderMap: this.blockRenderMap,
-						editorKey: k,
-						editorState: v,
+						editorKey: C,
+						editorState: k,
 						keyBindingFn: this.keyBindingFN,
 						handleBeforeInput: this.handleBeforeInput,
 						handleKeyCommand: this.handleKeyCommand,
@@ -6873,35 +6860,35 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: wr()
-					})))), D && "bottom" === C && L, a.a.createElement(fr, {
-						editorState: v,
+					})))), !p && "bottom" === S && K, a.a.createElement(fr, {
+						editorState: k,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), M && !!c && l === Nt.a.Comment && a.a.createElement(Do, {
-						editorState: v,
+					}), A && !!c && l === Nt.a.Comment && a.a.createElement(Do, {
+						editorState: k,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: c
 					}), u && c && a.a.createElement(as, {
-						editorState: v,
+						editorState: k,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
 						subreddit: c,
 						userCanUseGifs: !!n
-					}), this.renderInternalLinkSuggestionDropdown(), S && a.a.createElement(Xt.a, {
+					}), this.renderInternalLinkSuggestionDropdown(), y && a.a.createElement(Xt.a, {
 						"aria-label": s.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
-						className: Object(h.a)(x, gc.a.insetSubmitButton, {
-							[gc.a.emptyContent]: K,
-							[gc.a.focusedContent]: this.isFocused()
+						className: Object(h.a)(E, hc.a.insetSubmitButton, {
+							[hc.a.emptyContent]: I,
+							[hc.a.focusedContent]: this.isFocused()
 						}),
-						disabled: K,
-						onClick: y,
+						disabled: I,
+						onClick: f,
 						tabIndex: -1,
 						type: "submit"
-					}, a.a.createElement(uc.a, null))), _ && a.a.createElement(w.a, {
+					}, a.a.createElement(dc.a, null))), R && a.a.createElement(w.a, {
 						toggleModal: this.toggleConfirmModal,
 						onConfirm: this.handleSwitchToMarkdownMode,
 						actionText: s.fbt._("Continue", null, {
@@ -6920,7 +6907,7 @@
 					}))
 				}
 			}
-			e.a = Cc(Object(Wr.b)(t => a.a.createElement(Oc, mc({
+			e.a = Sc(Object(Wr.b)(t => a.a.createElement(xc, gc({
 				key: t.rteState.editorKey
 			}, t))))
 		},
@@ -7971,4 +7958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.618c4b2ce04e89e7c196.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.e161cac4edaecea9d337.js.map
