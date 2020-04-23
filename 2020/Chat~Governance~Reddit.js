@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ea694da702d33221b96b.js
-// Retrieved at 4/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e5ec2406a08a099c2258.js
+// Retrieved at 4/23/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10642,10 +10642,12 @@
 				return l
 			})), i.d(t, "e", (function() {
 				return a
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "f", (function() {
 				return u
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "d", (function() {
 				return c
+			})), i.d(t, "a", (function() {
+				return m
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.split.js");
 			var n = i("./node_modules/lodash/isNil.js"),
@@ -10662,7 +10664,19 @@
 						return !!e && (e("--f:0") || e("--f", 0))
 					}
 				}),
-				u = o()(() => {
+				u = () => {
+					let e = !1;
+					try {
+						const t = Object.defineProperty({}, "passive", {
+							get() {
+								e = !0
+							}
+						});
+						window.addEventListener("test", null, t)
+					} catch (t) {}
+					return e
+				},
+				c = o()(() => {
 					const e = {},
 						t = "search tel url email datetime date month week time datetime-local number range color".split(" "); {
 						const i = "1)";
@@ -10674,7 +10688,7 @@
 						return e
 					}
 				}),
-				c = e => {
+				m = e => {
 					if (e) {
 						const t = document.getElementById(e);
 						t && t.focus()
@@ -10987,14 +11001,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4aae266-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("e258c50-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4aae266-production",
+						release: "e258c50-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11356,7 +11370,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4aae266-production",
+							releaseClient: "e258c50-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -12790,6 +12804,8 @@
 				return u
 			})), i.d(t, "g", (function() {
 				return p
+			})), i.d(t, "h", (function() {
+				return _
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
 				r = i("./src/reddit/endpoints/session/index.ts");
@@ -12807,14 +12823,20 @@
 					} = i;
 					const s = t().user.session;
 					if (s) {
-						const t = await Object(r.a)(n(), s);
+						const t = await Object(r.b)(n(), s);
 						if (t.ok) {
 							const i = t.body;
 							i.unsafeLoggedOut ? (s.unsafeLoggedOut || e(m()), e(h(i))) : e(c(i))
 						}
 					}
 				}),
-				h = (Object(n.a)(a), Object(n.a)(u))
+				h = (Object(n.a)(a), Object(n.a)(u)),
+				_ = () => async (e, t, i) => {
+					let {
+						apiContext: n
+					} = i;
+					await Object(r.a)(n())
+				}
 		},
 		"./src/reddit/components/RichTextEditor/RTEState/index.tsx": function(e, t, i) {
 			"use strict";
@@ -14986,16 +15008,24 @@
 		},
 		"./src/reddit/endpoints/session/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return s
+			i.d(t, "b", (function() {
+				return d
+			})), i.d(t, "a", (function() {
+				return l
 			}));
 			var n = i("./src/lib/constants/index.ts"),
-				r = i("./src/lib/makeApiRequest/index.ts");
-			const s = (e, t) => Object(r.b)(e, {
-				data: t,
-				endpoint: "/refreshproxy",
-				method: n.ab.POST
-			}, r.c)
+				r = i("./src/lib/makeApiRequest/index.ts"),
+				s = i("./src/lib/omitHeaders/index.ts"),
+				o = i("./src/reddit/constants/headers.ts");
+			const d = (e, t) => Object(r.b)(e, {
+					data: t,
+					endpoint: "/refreshproxy",
+					method: n.ab.POST
+				}, r.c),
+				l = e => Object(r.b)(Object(s.a)(e, [o.a]), {
+					endpoint: "/api/v2/issue_session",
+					method: n.ab.GET
+				})
 		},
 		"./src/reddit/featureFlags/communityTopics.ts": function(e, t, i) {
 			"use strict";
@@ -28364,4 +28394,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.ea694da702d33221b96b.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.e5ec2406a08a099c2258.js.map
