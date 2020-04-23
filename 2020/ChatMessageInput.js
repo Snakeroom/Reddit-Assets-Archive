@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.49b6589e59f693af6ca6.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.fa6a698dee48b4c22e08.js
+// Retrieved at 4/23/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -571,8 +571,8 @@
 				H = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				J = s.n(H);
 			const Z = {},
-				Y = 1e3,
-				X = "chat_submission_from_rte",
+				X = 1e3,
+				Y = "chat_submission_from_rte",
 				z = h.a.form("Form", J.a),
 				Q = h.a.wrapped(v.a, "ChatButton", J.a),
 				$ = h.a.div("CloseIconWrap", J.a),
@@ -640,7 +640,7 @@
 						})), this.props.isLivestreaming && t && this.passChangeToLivestreaming()
 					}, this.handleFocus = () => {
 						this.props.isLivestreaming && this.passChangeToLivestreaming()
-					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), Y, {
+					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), X, {
 						leading: !1,
 						trailing: !0
 					}), this.onClickGiveAward = async () => {
@@ -747,7 +747,7 @@
 						focusableContentRTEClassName: Object(m.a)({
 							[J.a.LivestreamingFocusableContent]: s && !t
 						}),
-						dataTestId: X,
+						dataTestId: Y,
 						editorType: w.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: s ? 20 : void 0,
@@ -1601,10 +1601,10 @@
 			const r = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.V
-				}) === n.cb.Enabled
+					experimentName: n.X
+				}) === n.eb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.49b6589e59f693af6ca6.js.map
+//# sourceMappingURL=ChatMessageInput.fa6a698dee48b4c22e08.js.map
