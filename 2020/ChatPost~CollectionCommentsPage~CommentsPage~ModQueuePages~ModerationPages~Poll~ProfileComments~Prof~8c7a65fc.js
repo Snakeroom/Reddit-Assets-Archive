@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6eb6645ca1cf7ed045ad.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.7bf80156543149649e51.js
+// Retrieved at 4/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1421,9 +1421,9 @@
 		},
 		"./src/reddit/components/SponsoredLabel/index.tsx": function(e, t, s) {
 			"use strict";
-			var o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				n = s("./src/reddit/i18n/components.tsx"),
+			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				n = s.n(r),
 				a = s("./src/reddit/components/SponsoredLabel/index.m.less"),
 				d = s.n(a);
 			const i = s("./src/lib/lessComponent.tsx").a.span("Wrapper", d.a);
@@ -1431,9 +1431,11 @@
 				let {
 					className: t
 				} = e;
-				return r.a.createElement(i, {
+				return n.a.createElement(i, {
 					className: t
-				}, r.a.createElement(n.c, null, "promoted"))
+				}, o.fbt._("promoted", null, {
+					hk: "1R81m"
+				}))
 			}
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, s) {
@@ -1709,4 +1711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6eb6645ca1cf7ed045ad.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.7bf80156543149649e51.js.map
