@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.3d51a53dfa74dcbdf121.js
-// Retrieved at 4/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.255ca64eb5d1cb4ee10f.js
+// Retrieved at 4/24/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2870,4 +2870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.3d51a53dfa74dcbdf121.js.map
+//# sourceMappingURL=RichTextEditor.255ca64eb5d1cb4ee10f.js.map

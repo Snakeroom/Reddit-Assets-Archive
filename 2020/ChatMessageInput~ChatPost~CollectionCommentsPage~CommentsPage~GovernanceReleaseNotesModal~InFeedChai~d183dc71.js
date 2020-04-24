@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.e4a77d93b24b031ace1d.js
-// Retrieved at 4/23/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.276bc4e0f5461432934d.js
+// Retrieved at 4/24/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1170,9 +1170,9 @@
 			})), n.d(t, "f", (function() {
 				return Y
 			})), n.d(t, "h", (function() {
-				return G
+				return X
 			})), n.d(t, "g", (function() {
-				return K
+				return G
 			})), n.d(t, "i", (function() {
 				return q
 			})), n.d(t, "e", (function() {
@@ -1315,13 +1315,13 @@
 					}, "r/".concat(e))
 				}
 			}
-			const H = Object(u.c)(D),
-				R = Object(I.c)({
+			const R = Object(u.c)(D),
+				H = Object(I.c)({
 					isFeatureFlagEnabled: B.b,
 					isUserInTreatment: B.e,
 					userVariant: B.a
 				});
-			var U = Object(v.b)(R)(e => {
+			var U = Object(v.b)(H)(e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -1329,24 +1329,24 @@
 						userVariant: r,
 						rtJsonElementProps: o
 					} = e;
-					if (!n || !t) return a.a.createElement(H, {
+					if (!n || !t) return a.a.createElement(R, {
 						subredditName: s,
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Lb.SmIcon:
+						case N.Kb.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Lb.SmIconHc:
+						case N.Kb.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: s,
 								isHoverable: !0,
 								rtJsonElementProps: o
 							});
 						default:
-							return a.a.createElement(H, {
+							return a.a.createElement(R, {
 								subredditName: s,
 								rtJsonElementProps: o
 							})
@@ -1375,7 +1375,7 @@
 					if (!r) return;
 					const o = r.length,
 						i = [];
-					for (let a = 0; a < o; a++) i.push(X(r[a], t, n, a));
+					for (let a = 0; a < o; a++) i.push(K(r[a], t, n, a));
 					return a.a.createElement(c.c, {
 						key: s
 					}, i)
@@ -1397,7 +1397,7 @@
 						const e = o[u].c;
 						e && e.length && i.push(a.a.createElement(c.g, {
 							key: u
-						}, e.map((e, n) => X(e, t, {
+						}, e.map((e, n) => K(e, t, {
 							renderingObjectInfo: r
 						}, n))))
 					}
@@ -1406,7 +1406,7 @@
 						key: s
 					}, i)
 				},
-				X = (e, t, n, s) => {
+				K = (e, t, n, s) => {
 					switch (e.e) {
 						case h.b:
 							return V(e, t, n, s);
@@ -1419,12 +1419,12 @@
 						case h.p:
 							return Y(e, t, n, s);
 						case h.u:
-							return K(e, t, n, s);
+							return G(e, t, n, s);
 						case h.z:
-							return G(e, t, n, s)
+							return X(e, t, n, s)
 					}
 				},
-				G = (e, t, n, s) => {
+				X = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1466,7 +1466,7 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				K = (e, t, n, s) => {
+				G = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
@@ -1782,12 +1782,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Hb
+						experimentName: s.Gb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Lb.SmIcon || t === s.Lb.SmIconHc
+					return t === s.Kb.SmIcon || t === s.Kb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1813,4 +1813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.e4a77d93b24b031ace1d.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.276bc4e0f5461432934d.js.map
