@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.76df774c5b80ea185958.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.c9612ecb65d540d54168.js
+// Retrieved at 4/27/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1151,7 +1151,7 @@
 						className: Object(X.a)(je.a.Menu, {
 							[je.a.Livestreaming]: p
 						})
-					}, (t.bannedBy || W) && h && !p && s.a.createElement(Me, nt({
+					}, (t.bannedBy || W) && h && s.a.createElement(Me, nt({
 						onClick: b,
 						tooltipId: S,
 						tooltipText: F ? Z.fbt._("Reapprove", null, {
@@ -1167,7 +1167,7 @@
 							hk: "14j3OR"
 						}),
 						trackingNoun: "reply"
-					}, e), s.a.createElement(it, null)), h && U && !p && s.a.createElement(Me, nt({
+					}, e), s.a.createElement(it, null)), h && U && s.a.createElement(Me, nt({
 						onClick: I,
 						tooltipId: A,
 						tooltipText: Z.fbt._("Spam", null, {
@@ -1194,7 +1194,7 @@
 							hk: "30rf1x"
 						}),
 						trackingNoun: "edit"
-					}, q), s.a.createElement(rt, null)), p ? null : h && U ? s.a.createElement(Me, nt({
+					}, q), s.a.createElement(rt, null)), h && U ? s.a.createElement(Me, nt({
 						onClick: k,
 						tooltipId: N,
 						tooltipText: t.bannedBy === c.j ? Z.fbt._("Confirm removal", null, {
@@ -2413,4 +2413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.76df774c5b80ea185958.js.map
+//# sourceMappingURL=ChatPost.c9612ecb65d540d54168.js.map
