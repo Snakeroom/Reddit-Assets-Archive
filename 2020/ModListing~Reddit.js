@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.e36597c395aad34b4c2c.js
-// Retrieved at 4/23/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.934e904155739e0def06.js
+// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -627,82 +627,6 @@
 				component: "_1VhYfuKTAdUU_3j4cMjkr5"
 			}
 		},
-		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, n) {
-			e.exports = {
-				BottomText: "_3uK2I0hi3JFTKnMUFHD2Pd",
-				bottomText: "_3uK2I0hi3JFTKnMUFHD2Pd",
-				Text: "HQ2VJViRjokXpRbJzPvvc",
-				text: "HQ2VJViRjokXpRbJzPvvc",
-				"fade-in": "_1tIZttmhLdrIGrB-6VvZcT",
-				fadeIn: "_1tIZttmhLdrIGrB-6VvZcT"
-			}
-		},
-		"./src/reddit/components/InfoTextTooltip/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return h
-			})), n.d(t, "a", (function() {
-				return y
-			}));
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				o = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/higherOrderComponents/addOverlayEvents.tsx"),
-				c = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				d = n("./src/reddit/selectors/tooltip.ts"),
-				l = n("./src/reddit/components/InfoTextTooltip/index.m.less"),
-				u = n.n(l),
-				p = n("./src/lib/lessComponent.tsx");
-
-			function m() {
-				return (m = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const f = p.a.div("Text", u.a),
-				b = p.a.div("BottomText", u.a),
-				h = e => s.a.createElement(f, {
-					className: e.className,
-					style: e.style
-				}, e.text, e.children),
-				y = e => {
-					const t = e.overflow ? e.overflow.left : 0;
-					return s.a.createElement(b, {
-						className: e.className,
-						style: Object.assign({}, e.style, {
-							"--infoTextTooltip-overflow-left": "".concat(t, "px")
-						})
-					}, e.text, e.children)
-				},
-				g = Object(i.c)({
-					isOpen: (e, t) => {
-						let {
-							tooltipId: n
-						} = t;
-						return Object(d.b)(n)(e)
-					}
-				}),
-				v = Object(c.a)(y, [a.a.Click, a.a.Keydown]),
-				x = Object(c.a)(h, [a.a.Click, a.a.Keydown]),
-				O = Object(o.b)(g);
-			t.c = O(e => {
-				const {
-					caretOnTop: t
-				} = e;
-				return t ? s.a.createElement(v, m({}, e, {
-					targetPosition: ["center", "bottom"],
-					tooltipPosition: ["center", "top"]
-				})) : s.a.createElement(x, m({}, e, {
-					targetPosition: ["center", "top"],
-					tooltipPosition: ["center", "bottom"]
-				}))
-			})
-		},
 		"./src/reddit/components/JumpToContent/index.m.less": function(e, t, n) {
 			e.exports = {
 				button: "_3KaTO_3YaHK3SMocnu8jV9",
@@ -867,53 +791,6 @@
 				C = r.a.wrapped(s.f, "PrimaryButton", c.a),
 				_ = r.a.wrapped(s.i, "CancelButton", c.a),
 				I = r.a.wrapped(s.n, "RemoveButton", c.a)
-		},
-		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			}));
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				o = n("./src/higherOrderComponents/asTooltip.tsx"),
-				i = n("./src/reddit/constants/elementIds.ts"),
-				a = n("./src/reddit/contexts/InsideOverlay.tsx");
-
-			function c() {
-				return (c = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-
-			function d(e, t) {
-				const n = Object(o.a)(e, t);
-				class r extends s.a.PureComponent {
-					constructor() {
-						super(...arguments), this.state = {
-							container: null
-						}
-					}
-					componentDidMount() {
-						if (this.props.isOverlay) {
-							const e = document.getElementById(i.d);
-							this.setState({
-								container: e
-							})
-						}
-					}
-					render() {
-						return s.a.createElement(n, c({}, this.props, {
-							container: this.state.container,
-							excludeContainerPosition: this.props.isOverlay
-						}))
-					}
-				}
-				return Object(a.b)(r)
-			}
 		},
 		"./src/reddit/components/Portal/index.tsx": function(e, t, n) {
 			"use strict";
@@ -3336,18 +3213,7 @@
 			}));
 			const r = e => e.tooltipId,
 				s = e => t => t.tooltipId === e
-		},
-		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "a", (function() {
-				return o
-			}));
-			var r = n("./src/lib/constants/index.ts");
-			const s = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
-				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.yb.MODERATION_PAGES)
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.e36597c395aad34b4c2c.js.map
+//# sourceMappingURL=ModListing~Reddit.934e904155739e0def06.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ad5367960bd17960445a.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.fc8c2e53ad305a0eafbc.js
+// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -5831,6 +5831,24 @@
 			}), "InfoIcon", o.a);
 			t.a = d
 		},
+		"./src/reddit/icons/fonts/Menu/index.m.less": function(e, t, n) {
+			e.exports = {
+				MenuIcon: "_2L8b_l8zFzAkWuMyZJ1_vg",
+				menuIcon: "_2L8b_l8zFzAkWuMyZJ1_vg"
+			}
+		},
+		"./src/reddit/icons/fonts/Menu/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				i = n("./src/reddit/icons/fonts/helpers.tsx"),
+				a = n("./src/reddit/icons/fonts/Menu/index.m.less"),
+				o = n.n(a);
+			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => r.a.createElement("i", {
+				className: "".concat(Object(i.b)("menu"), " ").concat(e.className)
+			}), "MenuIcon", o.a);
+			t.a = d
+		},
 		"./src/reddit/icons/fonts/Pencil/index.m.less": function(e, t, n) {
 			e.exports = {
 				PencilIcon: "fKeLCuOy1oZ3UGfRARX6w",
@@ -6225,4 +6243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.ad5367960bd17960445a.js.map
+//# sourceMappingURL=SubredditWiki.fc8c2e53ad305a0eafbc.js.map

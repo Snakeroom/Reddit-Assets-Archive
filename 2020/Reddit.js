@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b8bbde6a2fd678d56569.js
-// Retrieved at 4/27/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f1b951f4e284c7ccae95.js
+// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -12324,10 +12324,21 @@
 				return n
 			}));
 			const n = e => e.trending.models
+		},
+		"./src/reddit/selectors/userPrefs.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return a
+			})), s.d(t, "a", (function() {
+				return r
+			}));
+			var n = s("./src/lib/constants/index.ts");
+			const a = e => !r(e) && !!e.user.prefs.subscriptionsPinned,
+				r = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.yb.MODERATION_PAGES)
 		}
 	},
 	[
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.b8bbde6a2fd678d56569.js.map
+//# sourceMappingURL=Reddit.f1b951f4e284c7ccae95.js.map
