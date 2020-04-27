@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.09ee7a2938fe7c30ddae.js
-// Retrieved at 4/24/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b8bbde6a2fd678d56569.js
+// Retrieved at 4/27/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -9909,12 +9909,12 @@
 						broadcaster: t,
 						middleware: s => {
 							const n = s.getState();
-							return (Object(ee.b)(n) || Object(te.E)(n)) && (e = !0, Object(ft.d)(t)), n => a => {
+							return (Object(ee.b)(n) || Object(te.E)(n)) && (e = !0, Object(ft.c)(t)), n => a => {
 								const r = n(a),
 									o = s.getState();
 								if (!Object(ee.b)(o)) {
 									const s = Object(te.E)(o);
-									e && !s ? (e = !1, Object(ft.d)(void 0), t.setState([])) : s && !e && (t.setState([]), Object(ft.d)(t), e = !0)
+									e && !s ? (e = !1, Object(ft.c)(void 0), t.setState([])) : s && !e && (t.setState([]), Object(ft.c)(t), e = !0)
 								}
 								return r
 							}
@@ -10179,8 +10179,8 @@
 					return a
 				},
 				ms = s("./src/reddit/helpers/featureThrottling/store/index.ts"),
-				us = s("./src/reddit/helpers/onBeforeRequestFactory/index.ts"),
-				ps = s("./src/lib/permanentCookieOptions.ts");
+				us = s("./src/reddit/helpers/onBeforeRequestFactory/index.ts");
+			var ps = s("./src/lib/permanentCookieOptions.ts");
 			const hs = e => {
 				if (!e) return;
 				const t = (l.a.get(It.h) || "").split(",");
@@ -10445,16 +10445,17 @@
 			var yn = s("./src/reddit/singleton/EventSystem.ts"),
 				xn = s("./src/reddit/singleton/tracing/index.ts"),
 				On = s("./src/reddit/actions/global.ts");
-			const En = e => t => Object(j.a)(Object.assign({}, fn.defaults(t), {
+			const En = e => t => Object.assign({}, fn.defaults(t), {
 				action: "leave",
 				actionInfo: fn.actionInfo(t, {
 					reason: e
 				}),
 				noun: "app",
 				source: "global"
-			}));
+			});
+			var Sn = s("./src/telemetry/models/Event.ts");
 			Object(r.e)(r.b.EntryPointStart);
-			const Sn = Object(w.a)({
+			const wn = Object(w.a)({
 					actionDispatchers: {
 						reddaidReceived: Q.v,
 						loidReceived: Q.t,
@@ -10476,20 +10477,20 @@
 					onBeforeRequestFactory: us.a,
 					statsAppName: f.k.Redesign
 				}),
-				wn = Object(S.a)(Sn.apiContext),
-				jn = Ct();
-			let kn;
+				jn = Object(S.a)(wn.apiContext),
+				kn = Ct();
+			let Mn;
 			Object(y.a)({
 				reducers: gs.a,
 				routes: mn,
-				apiContext: Sn.apiContext,
-				gqlContext: wn.gqlContext,
+				apiContext: wn.apiContext,
+				gqlContext: jn.gqlContext,
 				appFactory: (e, t) => u.a.createElement(pt.a.Provider, {
-					value: jn.broadcaster
+					value: kn.broadcaster
 				}, u.a.createElement(ht.a.Provider, {
 					value: {
-						apiContext: Sn.apiContext,
-						gqlContext: wn.gqlContext
+						apiContext: wn.apiContext,
+						gqlContext: jn.gqlContext
 					}
 				}, u.a.createElement(bt.b, null, u.a.createElement(Xe, {
 					ok: !0,
@@ -10499,7 +10500,7 @@
 				appName: f.k.Redesign,
 				history: Object(c.a)({
 					getUserConfirmation(e, t) {
-						const s = kn;
+						const s = Mn;
 						if (!s) return;
 						s.dispatch(Object(q.k)({
 							allowNavigationCallback: function() {
@@ -10511,9 +10512,9 @@
 				}),
 				customMiddleware: [h.a.withExtraArgument({
 					routes: mn,
-					apiContext: Sn.apiContext,
-					gqlContext: wn.gqlContext
-				}), jn.middleware, wt, Sn.middleware, wn.middleware, Vt, Rt, ls, qt, Ht],
+					apiContext: wn.apiContext,
+					gqlContext: jn.gqlContext
+				}), kn.middleware, wt, wn.middleware, jn.middleware, Vt, Rt, ls, qt, Ht],
 				modifyInitialData: e => {
 					let {
 						initialData: t,
@@ -10548,9 +10549,15 @@
 								isDeleted: e.data.isDeleted || !1,
 								postId: "t3_".concat(e.data.id36)
 							}))
-						}), gn(n.getState()) && (Object(ft.c)(!0), window.addEventListener("beforeunload", () => {
-							En("tab_closed")(n.getState())
-						})),
+						}), gn(n.getState()) && window.addEventListener("beforeunload", () => {
+							const e = n.getState();
+							((e, t) => {
+								navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
+									command: e,
+									payload: t
+								})
+							})("sendV2Event", Sn.f(En("tab_closed")(e)))
+						}),
 						function(e) {
 							const t = String(e.split("/")[1]).toLowerCase();
 							return "framedgild" === t || "framedmodal" === t
@@ -10593,7 +10600,7 @@
 						store: l,
 						localStorageData: m
 					} = e;
-					kn = l;
+					Mn = l;
 					t.listen((e, t) => {
 						const s = l.getState(),
 							{
@@ -10727,7 +10734,7 @@
 							});
 							e()
 						}), gn(l.getState()) && document.addEventListener("visibilitychange", () => {
-							"visible" !== document.visibilityState && En("tab_backgrounded")(l.getState())
+							"visible" !== document.visibilityState && Object(j.a)(En("tab_backgrounded")(l.getState()))
 						})
 					}), window.history.scrollRestoration = "manual", yn.a.attachStore(l)
 				},
@@ -12323,4 +12330,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.09ee7a2938fe7c30ddae.js.map
+//# sourceMappingURL=Reddit.b8bbde6a2fd678d56569.js.map
