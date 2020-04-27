@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.91a0bcd4e3a4e1e19012.js
-// Retrieved at 4/24/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c51631634e689aecb64e.js
+// Retrieved at 4/27/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5451,7 +5451,7 @@
 			s.d(t, "a", (function() {
 				return u
 			}));
-			var n = s("./src/app/strings/index.ts"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/config.ts"),
 				r = s("./node_modules/react/index.js"),
 				i = s.n(r),
@@ -5472,10 +5472,13 @@
 					} = this.props;
 					return i.a.createElement(l, {
 						className: p,
-						"data-before-content": Object(n.a)("en", "sidebar.sponsored")
+						"data-before-content": n.fbt._("advertisement", null, {
+							hk: "4b2OD7"
+						})
 					}, i.a.createElement("a", {
 						href: o.a.redditUrl + e,
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, i.a.createElement(m, {
 						src: o.a.assetPath + t
 					})))
@@ -16237,4 +16240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.91a0bcd4e3a4e1e19012.js.map
+//# sourceMappingURL=CommentsPage.c51631634e689aecb64e.js.map
