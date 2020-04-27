@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a99b8d4c42c67d58c9bd.js
-// Retrieved at 4/27/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.aa01e76b2b3180692cb1.js
+// Retrieved at 4/27/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -10001,17 +10001,19 @@
 						if (!n) return m.c.captureMessage("Pixel of type ".concat(s, " has no url")), !1;
 						if (!_.get(n)) {
 							const e = /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(n);
+							let s;
 							if (t && e) {
 								const {
 									url: e,
-									query: s
+									query: r
 								} = O.a.parseUrl(n);
-								O.a.stringifyUrl({
+								s = O.a.stringifyUrl({
 									url: e,
-									query: Object.assign({}, s, t)
+									query: Object.assign({}, r, t)
 								})
 							}
-							return (new Image).src = n, _.set(n, !0), !0
+							const r = new Image;
+							return _.set(n, !0), s && (n = s), r.src = n, !0
 						}
 						return !1
 					})(e, r))
@@ -50780,4 +50782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a99b8d4c42c67d58c9bd.js.map
+//# sourceMappingURL=Governance~Reddit.aa01e76b2b3180692cb1.js.map
