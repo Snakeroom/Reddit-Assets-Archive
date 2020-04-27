@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.68380d5a79d204be7c30.js
-// Retrieved at 4/23/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3a693242b28b21d186d0.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -18574,7 +18574,7 @@
 		"./src/reddit/components/UserIcon/UserIcon.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return u
+				return p
 			}));
 			var s = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -18584,25 +18584,27 @@
 				c = n("./src/reddit/icons/svgs/MyProfile/index.tsx"),
 				l = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				d = n.n(l);
-			const u = e => !e || e.includes("avatar_default_");
+			const u = "".concat(s.a.assetPath, "/img/avatar_over18_square.png"),
+				p = e => !e || e.includes("avatar_default_");
 			t.a = e => {
 				const {
 					className: t,
 					iconUrl: n,
-					isCurrentUser: r,
-					isNSFW: l,
-					shouldHideNSFW: p
+					isCurrentUser: s,
+					isNSFW: r,
+					nsfwIconUrl: l,
+					shouldHideNSFW: m
 				} = e;
-				if (r && u(n)) return i.a.createElement(c.a, {
+				if (s && p(n) || !s && !n) return i.a.createElement(c.a, {
 					className: Object(a.a)(d.a.DefaultUserIcon, t)
 				});
-				const m = !r && l && p ? "".concat(s.a.assetPath, "/img/avatar_over18_square.png") : n;
+				const h = !s && r && m ? l || u : n;
 				return i.a.createElement("img", {
 					alt: o.fbt._("User avatar", null, {
 						hk: "X43nA"
 					}),
 					className: Object(a.a)(d.a.UserIcon, t),
-					src: m
+					src: h
 				})
 			}
 		},
@@ -30739,4 +30741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.68380d5a79d204be7c30.js.map
+//# sourceMappingURL=PostCreation.3a693242b28b21d186d0.js.map

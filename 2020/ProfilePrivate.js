@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.81167cdac8ca59b125cc.js
-// Retrieved at 4/24/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.f55a130e43e01f9ce372.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1473,23 +1473,24 @@
 					flair: y,
 					flairPosition: E,
 					hasBadges: O,
-					isLivestreaming: C,
-					ignoreFlairPosition: w,
-					ignoreLock: P,
-					language: k,
-					lockedTooltipId: I,
-					modTooltipId: M,
-					onHideTooltip: N,
-					onShowTooltip: L,
-					opTooltipId: R,
-					openRemovalReasonModal: F,
-					removeTooltipId: D,
-					renderContractorBadge: H,
-					renderedInOverlay: W,
-					reportTooltipId: V,
-					spamTooltipId: G,
-					subredditDisplayText: U,
-					topTippersEnabled: z
+					isAvatarsInCommentsEnabled: C,
+					isLivestreaming: w,
+					ignoreFlairPosition: P,
+					ignoreLock: k,
+					language: I,
+					lockedTooltipId: M,
+					modTooltipId: N,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					opTooltipId: F,
+					openRemovalReasonModal: D,
+					removeTooltipId: H,
+					renderContractorBadge: W,
+					renderedInOverlay: V,
+					reportTooltipId: G,
+					spamTooltipId: U,
+					subredditDisplayText: z,
+					topTippersEnabled: q
 				} = e;
 				if (u.isDeleted) return r.a.createElement(Le, se({}, e, {
 					className: Object(c.a)(d, te.a.container, {
@@ -1501,14 +1502,14 @@
 						[te.a.collapsed]: m
 					})
 				}));
-				const q = !w && E === B.b.Left;
+				const K = !P && E === B.b.Left;
 				return r.a.createElement("div", {
 					className: Object(c.a)(d, te.a.container, {
 						[te.a.collapsed]: m,
 						[te.a.hasBadges]: O,
-						[te.a.liveStreaming]: C
+						[te.a.liveStreaming]: w
 					})
-				}, y && q && r.a.createElement(j.b, {
+				}, y && K && r.a.createElement(j.b, {
 					flair: y,
 					forceSmallEmojis: v
 				}), !Object(A.d)(u) && r.a.createElement(Pe, {
@@ -1518,21 +1519,21 @@
 					uniqueIdentifier: u.id
 				}), r.a.createElement(Ce, {
 					postOrComment: u,
-					tooltipType: W ? T.c.Lightbox : void 0
+					tooltipType: V ? T.c.Lightbox : void 0
 				}, r.a.createElement(f.b, {
 					ignore: Object(A.d)(u) || !!u.distinguishType && u.distinguishType !== l.A.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, r.a.createElement(Be, {
 					comment: u,
-					isLivestreaming: C,
+					isLivestreaming: w,
 					isStrong: !!v,
 					isAuthorDeleted: Object(A.d)(u),
-					topTippersEnabled: z
+					topTippersEnabled: q
 				}, a && a))), p && r.a.createElement(Oe, null, "Crowd Control"), p && r.a.createElement(X.c, {
 					className: te.a.metaText,
 					key: "crowdControlSeparator"
-				}), y && !q && r.a.createElement(ne, {
+				}), y && !K && r.a.createElement(ne, {
 					flair: y,
 					forceSmallEmojis: v
 				}), !v && r.a.createElement(_.a, {
@@ -1556,19 +1557,19 @@
 					adminEmeritusTooltipId: t,
 					cakedayTooltipId: i,
 					contractorTooltipId: x,
-					language: k,
-					modTooltipId: M,
-					onHideTooltip: N,
-					onShowTooltip: L,
-					opTooltipId: R,
-					renderContractorBadge: H,
-					subredditDisplayText: U
-				})), !v && r.a.createElement(r.a.Fragment, null, !u.isDeleted && r.a.createElement(X.b, {
+					language: I,
+					modTooltipId: N,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					opTooltipId: F,
+					renderContractorBadge: W,
+					subredditDisplayText: z
+				})), !v && r.a.createElement(r.a.Fragment, null, !u.isDeleted && !C && r.a.createElement(X.b, {
 					className: te.a.metaText,
 					isScoreHidden: u.isScoreHidden,
-					language: k,
+					language: I,
 					score: u.score
-				}), r.a.createElement(X.c, {
+				}), !C && r.a.createElement(X.c, {
 					className: te.a.metaText,
 					key: "scoreCreatedSeparator"
 				}), r.a.createElement(Fe, se({
@@ -1577,21 +1578,21 @@
 					comment: u,
 					approveTooltipId: o,
 					automodTooltipId: n,
-					ignoreLock: P,
-					language: k,
-					lockedTooltipId: I,
-					onHideTooltip: N,
-					onShowTooltip: L,
-					openRemovalReasonModal: F,
-					removeTooltipId: D,
-					reportTooltipId: V,
-					spamTooltipId: G
+					ignoreLock: k,
+					language: I,
+					lockedTooltipId: M,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					openRemovalReasonModal: D,
+					removeTooltipId: H,
+					reportTooltipId: G,
+					spamTooltipId: U
 				}), r.a.createElement(g.a, {
 					className: te.a.DonationAmount,
 					contentId: u.id,
 					subredditId: u.subredditId
 				})), r.a.createElement(h.a, {
-					tooltipType: W ? T.c.Lightbox : void 0,
+					tooltipType: V ? T.c.Lightbox : void 0,
 					thing: u
 				}))
 			});
@@ -7695,4 +7696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.81167cdac8ca59b125cc.js.map
+//# sourceMappingURL=ProfilePrivate.f55a130e43e01f9ce372.js.map

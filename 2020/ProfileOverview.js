@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.9a712833be06f818dd40.js
-// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.bff6035930c277af3a42.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1733,23 +1733,24 @@
 					flair: O,
 					flairPosition: C,
 					hasBadges: E,
-					isLivestreaming: y,
-					ignoreFlairPosition: _,
-					ignoreLock: w,
-					language: j,
-					lockedTooltipId: S,
-					modTooltipId: T,
-					onHideTooltip: M,
-					onShowTooltip: L,
-					opTooltipId: R,
-					openRemovalReasonModal: B,
-					removeTooltipId: D,
-					renderContractorBadge: W,
-					renderedInOverlay: H,
-					reportTooltipId: U,
-					spamTooltipId: V,
-					subredditDisplayText: G,
-					topTippersEnabled: z
+					isAvatarsInCommentsEnabled: y,
+					isLivestreaming: _,
+					ignoreFlairPosition: w,
+					ignoreLock: j,
+					language: S,
+					lockedTooltipId: T,
+					modTooltipId: M,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					opTooltipId: B,
+					openRemovalReasonModal: D,
+					removeTooltipId: W,
+					renderContractorBadge: H,
+					renderedInOverlay: U,
+					reportTooltipId: V,
+					spamTooltipId: G,
+					subredditDisplayText: z,
+					topTippersEnabled: K
 				} = e;
 				if (u.isDeleted) return r.a.createElement(Le, se({}, e, {
 					className: Object(d.a)(c, te.a.container, {
@@ -1761,14 +1762,14 @@
 						[te.a.collapsed]: m
 					})
 				}));
-				const K = !_ && C === A.b.Left;
+				const J = !w && C === A.b.Left;
 				return r.a.createElement("div", {
 					className: Object(d.a)(c, te.a.container, {
 						[te.a.collapsed]: m,
 						[te.a.hasBadges]: E,
-						[te.a.liveStreaming]: y
+						[te.a.liveStreaming]: _
 					})
-				}, O && K && r.a.createElement(P.b, {
+				}, O && J && r.a.createElement(P.b, {
 					flair: O,
 					forceSmallEmojis: v
 				}), !Object(F.d)(u) && r.a.createElement(we, {
@@ -1778,21 +1779,21 @@
 					uniqueIdentifier: u.id
 				}), r.a.createElement(ye, {
 					postOrComment: u,
-					tooltipType: H ? N.c.Lightbox : void 0
+					tooltipType: U ? N.c.Lightbox : void 0
 				}, r.a.createElement(f.b, {
 					ignore: Object(F.d)(u) || !!u.distinguishType && u.distinguishType !== l.A.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, r.a.createElement(Ae, {
 					comment: u,
-					isLivestreaming: y,
+					isLivestreaming: _,
 					isStrong: !!v,
 					isAuthorDeleted: Object(F.d)(u),
-					topTippersEnabled: z
+					topTippersEnabled: K
 				}, i && i))), p && r.a.createElement(Ee, null, "Crowd Control"), p && r.a.createElement(Q.c, {
 					className: te.a.metaText,
 					key: "crowdControlSeparator"
-				}), O && !K && r.a.createElement(oe, {
+				}), O && !J && r.a.createElement(oe, {
 					flair: O,
 					forceSmallEmojis: v
 				}), !v && r.a.createElement(k.a, {
@@ -1816,19 +1817,19 @@
 					adminEmeritusTooltipId: t,
 					cakedayTooltipId: a,
 					contractorTooltipId: x,
-					language: j,
-					modTooltipId: T,
-					onHideTooltip: M,
-					onShowTooltip: L,
-					opTooltipId: R,
-					renderContractorBadge: W,
-					subredditDisplayText: G
-				})), !v && r.a.createElement(r.a.Fragment, null, !u.isDeleted && r.a.createElement(Q.b, {
+					language: S,
+					modTooltipId: M,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					opTooltipId: B,
+					renderContractorBadge: H,
+					subredditDisplayText: z
+				})), !v && r.a.createElement(r.a.Fragment, null, !u.isDeleted && !y && r.a.createElement(Q.b, {
 					className: te.a.metaText,
 					isScoreHidden: u.isScoreHidden,
-					language: j,
+					language: S,
 					score: u.score
-				}), r.a.createElement(Q.c, {
+				}), !y && r.a.createElement(Q.c, {
 					className: te.a.metaText,
 					key: "scoreCreatedSeparator"
 				}), r.a.createElement(Be, se({
@@ -1837,21 +1838,21 @@
 					comment: u,
 					approveTooltipId: n,
 					automodTooltipId: o,
-					ignoreLock: w,
-					language: j,
-					lockedTooltipId: S,
-					onHideTooltip: M,
-					onShowTooltip: L,
-					openRemovalReasonModal: B,
-					removeTooltipId: D,
-					reportTooltipId: U,
-					spamTooltipId: V
+					ignoreLock: j,
+					language: S,
+					lockedTooltipId: T,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					openRemovalReasonModal: D,
+					removeTooltipId: W,
+					reportTooltipId: V,
+					spamTooltipId: G
 				}), r.a.createElement(g.a, {
 					className: te.a.DonationAmount,
 					contentId: u.id,
 					subredditId: u.subredditId
 				})), r.a.createElement(h.a, {
-					tooltipType: H ? N.c.Lightbox : void 0,
+					tooltipType: U ? N.c.Lightbox : void 0,
 					thing: u
 				}))
 			});
@@ -5905,7 +5906,7 @@
 			const oe = Object(a.a)(E.T, e => e.some(ne.c)),
 				re = Object(a.a)(oe, e => e),
 				ae = (e, t) => Object(se.c)(e, {
-					experimentName: te.L,
+					experimentName: te.O,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -6025,7 +6026,7 @@
 						showEditFlair: he,
 						subredditOrProfile: xe,
 						userIsOp: fe
-					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], ve = ge ? void 0 : u, Oe = Object(l.a)(ne), Ce = oe && Oe, Ee = Object(c.a)(ne), ye = Object(d.a)(ne), _e = Object(R.c)(pe), we = !!pe.media && pe.media.type === h.n.RTJSON, Pe = fe && we, ke = s ? s - B.a : void 0, je = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Se = !(E && y || G), Ie = (e => e === te.vb.OnlyTitles)(ue) && !Object($.a)(pe), Ne = (e => e === te.vb.MediumHeight)(ue) && !Object($.a)(pe), Te = (e => {
+					} = e, ge = !!e.redditStyle || !!e["data-redditstyle"], ve = ge ? void 0 : u, Oe = Object(l.a)(ne), Ce = oe && Oe, Ee = Object(c.a)(ne), ye = Object(d.a)(ne), _e = Object(R.c)(pe), we = !!pe.media && pe.media.type === h.n.RTJSON, Pe = fe && we, ke = s ? s - B.a : void 0, je = !!le && !!Object.keys(le.options).filter(e => le.options[e].userSelected).length, Se = !(E && y || G), Ie = (e => e === te.yb.OnlyTitles)(ue) && !Object($.a)(pe), Ne = (e => e === te.yb.MediumHeight)(ue) && !Object($.a)(pe), Te = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -15049,4 +15050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.9a712833be06f818dd40.js.map
+//# sourceMappingURL=ProfileOverview.bff6035930c277af3a42.js.map

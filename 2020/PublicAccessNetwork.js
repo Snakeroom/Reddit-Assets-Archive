@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e497c642e5ed6e7a6ed6.js
-// Retrieved at 4/27/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4ee59bec8089d8c6052c.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1551,8 +1551,8 @@
 				D = s("./src/reddit/components/ReportFlow/index.tsx"),
 				B = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				F = s("./src/reddit/constants/history.ts"),
-				W = s("./src/reddit/constants/keycodes.ts"),
-				U = s("./src/reddit/helpers/dom/index.ts"),
+				U = s("./src/reddit/constants/keycodes.ts"),
+				W = s("./src/reddit/helpers/dom/index.ts"),
 				H = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				K = s("./src/reddit/helpers/trackers/rpan.ts"),
 				X = s("./src/reddit/helpers/trackers/screenview.ts"),
@@ -1725,14 +1725,14 @@
 					},
 					isPending: ve.d
 				})),
-				We = e => ({
+				Ue = e => ({
 					prevAwardedCommentLinks: e.isPending ? void 0 : [...e.awardedCommentLinks],
 					prevAwardedCommentLinksTopIndex: e.isPending ? 0 : e.awardedCommentLinks.length,
 					prevCommentsPageKey: e.commentsPageKey
 				});
-			class Ue extends n.Component {
+			class We extends n.Component {
 				constructor(e) {
-					super(e), this.state = We(e)
+					super(e), this.state = Ue(e)
 				}
 				shouldComponentUpdate(e) {
 					const {
@@ -1742,7 +1742,7 @@
 					return e.commentsPageKey !== s || e.awardedCommentLinks.length !== t.length
 				}
 				static getDerivedStateFromProps(e, t) {
-					if (e.commentsPageKey !== t.prevCommentsPageKey) return We(e);
+					if (e.commentsPageKey !== t.prevCommentsPageKey) return Ue(e);
 					return {
 						prevAwardedCommentLinks: e.isPending ? void 0 : [...e.awardedCommentLinks],
 						prevAwardedCommentLinksTopIndex: e.isPending ? 0 : t.prevAwardedCommentLinks ? t.prevAwardedCommentLinks.length : e.awardedCommentLinks.length
@@ -1768,7 +1768,7 @@
 					}))) : null
 				}
 			}
-			var He = Fe(Ue);
+			var He = Fe(We);
 			const Ke = (e, t) => e > t ? j.EXTENDED : e < ee ? j.CRITICAL : e < te ? j.LOW : j.NORMAL,
 				Xe = e => e / Q,
 				Ge = e => 5 * Math.round(e / 5) % se == 0;
@@ -2228,8 +2228,8 @@
 				Dt = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				Bt = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				Ft = s("./src/reddit/icons/svgs/Rules/index.tsx"),
-				Wt = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				Ut = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
+				Ut = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
+				Wt = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				Ht = s("./src/reddit/icons/svgs/VideoShare/index.m.less"),
 				Kt = s.n(Ht);
 			var Xt = e => i.a.createElement("svg", {
@@ -2277,7 +2277,7 @@
 							hk: "Enspe"
 						}),
 						value: "mute"
-					}, t ? i.a.createElement(Wt.a, {
+					}, t ? i.a.createElement(Ut.a, {
 						className: qt.a.volumeIcon
 					}) : i.a.createElement(Gt.a, {
 						className: qt.a.volumeIcon
@@ -2345,7 +2345,7 @@
 					return i.a.createElement("button", {
 						className: qt.a.promptButton,
 						onClick: t
-					}, i.a.createElement(Ut.a, null), i.a.createElement("span", null, g.fbt._("Replay Video", null, {
+					}, i.a.createElement(Wt.a, null), i.a.createElement("span", null, g.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
 					})))
 				},
@@ -3181,8 +3181,8 @@
 					const r = new Image;
 					r.onload = () => t(), r.onerror = () => s(), r.src = e
 				}).then(() => !0, () => !1);
-			var Ws = s("./src/reddit/components/PublicAccessNetwork/Theater/StaticScreen/index.m.less"),
-				Us = s.n(Ws);
+			var Us = s("./src/reddit/components/PublicAccessNetwork/Theater/StaticScreen/index.m.less"),
+				Ws = s.n(Us);
 			const Hs = Object(l.c)({
 				isIntroInProgress: z.b,
 				previewUrl: (e, t) => {
@@ -3223,14 +3223,14 @@
 						previewUrl: s
 					} = this.props, r = e && e.meter && e.estimated_remaining_time < te || !s, a = !r && !t && s;
 					return i.a.createElement("div", {
-						className: Us.a.staticContainer
+						className: Ws.a.staticContainer
 					}, r && i.a.createElement("div", {
-						className: Us.a.tvNoise,
+						className: Ws.a.tvNoise,
 						"aria-label": g.fbt._("video static", null, {
 							hk: "3FA8fk"
 						})
 					}), a && i.a.createElement("div", {
-						className: Us.a.previewContainer,
+						className: Ws.a.previewContainer,
 						"aria-label": g.fbt._("preview of video", null, {
 							hk: "4piisq"
 						}),
@@ -3584,7 +3584,7 @@
 						leading: !0,
 						trailing: !1
 					}), this.onNextStreamKeyHandler = e => {
-						Object(U.g)(e.target) ? e.stopPropagation() : e.keyCode === W.a.ArrowRight ? this.onNextStream() : e.keyCode === W.a.ArrowLeft && this.onPreviousStream()
+						Object(W.g)(e.target) ? e.stopPropagation() : e.keyCode === U.a.ArrowRight ? this.onNextStream() : e.keyCode === U.a.ArrowLeft && this.onPreviousStream()
 					}, this.onPlayPauseToggle = () => {
 						this.cancelSwitchingOnStreamEnded(), this.state.isVideoPaused ? this.playVideo() : this.pauseVideo()
 					}, this.onToggleMuteVideo = () => {
@@ -4074,9 +4074,9 @@
 			})), s.d(t, "e", (function() {
 				return D
 			})), s.d(t, "a", (function() {
-				return W
-			})), s.d(t, "h", (function() {
 				return U
+			})), s.d(t, "h", (function() {
+				return W
 			})), s.d(t, "b", (function() {
 				return H
 			})), s.d(t, "d", (function() {
@@ -4279,19 +4279,19 @@
 				return s[t] >= s[e]
 			}
 			const F = Object(r.a)(P, v, (e, t) => e && t.timestamps[e] || 0);
-			var W;
+			var U;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(W || (W = {}));
-			const U = Object(r.a)(P, S, h.b, (e, t, s) => {
-					if (s) return W.INTRO;
+			}(U || (U = {}));
+			const W = Object(r.a)(P, S, h.b, (e, t, s) => {
+					if (s) return U.INTRO;
 					const r = e && t[e];
-					if (!r) return W.UNAVAILABLE;
+					if (!r) return U.UNAVAILABLE;
 					const a = r.stream.state;
-					return a === o.b.IS_LIVE || a === o.b.DISCONNECTED ? W.LIVE : a === o.b.ENDED && r.stream.vod_accessible ? W.VOD : W.UNAVAILABLE
+					return a === o.b.IS_LIVE || a === o.b.DISCONNECTED ? U.LIVE : a === o.b.ENDED && r.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
 				}),
-				H = Object(r.a)(A, U, h.b, d.c, d.p, (e, t, s, r, a) => s ? r : e ? t === W.LIVE || t === W.VOD ? e.stream.hls_url : a : void 0),
-				K = Object(r.a)(A, U, F, (e, t, s) => e ? t === W.LIVE ? e.broadcast_time : t === W.VOD && s < e.broadcast_time ? s : 0 : 0)
+				H = Object(r.a)(A, W, h.b, d.c, d.p, (e, t, s, r, a) => s ? r : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : a : void 0),
+				K = Object(r.a)(A, W, F, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0)
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, s) {
 			"use strict";
@@ -4320,10 +4320,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.W
-				}) === r.db.Enabled
+					experimentName: r.Z
+				}) === r.gb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.e497c642e5ed6e7a6ed6.js.map
+//# sourceMappingURL=PublicAccessNetwork.4ee59bec8089d8c6052c.js.map

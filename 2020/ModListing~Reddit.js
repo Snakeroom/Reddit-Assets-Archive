@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.934e904155739e0def06.js
-// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.d9a0a721868d23cc957a.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1053,7 +1053,7 @@
 		"./src/reddit/components/UserIcon/UserIcon.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return u
+				return p
 			}));
 			var r = n("./src/config.ts"),
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1063,25 +1063,27 @@
 				c = n("./src/reddit/icons/svgs/MyProfile/index.tsx"),
 				d = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				l = n.n(d);
-			const u = e => !e || e.includes("avatar_default_");
+			const u = "".concat(r.a.assetPath, "/img/avatar_over18_square.png"),
+				p = e => !e || e.includes("avatar_default_");
 			t.a = e => {
 				const {
 					className: t,
 					iconUrl: n,
-					isCurrentUser: o,
-					isNSFW: d,
-					shouldHideNSFW: p
+					isCurrentUser: r,
+					isNSFW: o,
+					nsfwIconUrl: d,
+					shouldHideNSFW: m
 				} = e;
-				if (o && u(n)) return i.a.createElement(c.a, {
+				if (r && p(n) || !r && !n) return i.a.createElement(c.a, {
 					className: Object(a.a)(l.a.DefaultUserIcon, t)
 				});
-				const m = !o && d && p ? "".concat(r.a.assetPath, "/img/avatar_over18_square.png") : n;
+				const f = !r && o && m ? d || u : n;
 				return i.a.createElement("img", {
 					alt: s.fbt._("User avatar", null, {
 						hk: "X43nA"
 					}),
 					className: Object(a.a)(l.a.UserIcon, t),
-					src: m
+					src: f
 				})
 			}
 		},
@@ -3216,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.934e904155739e0def06.js.map
+//# sourceMappingURL=ModListing~Reddit.d9a0a721868d23cc957a.js.map

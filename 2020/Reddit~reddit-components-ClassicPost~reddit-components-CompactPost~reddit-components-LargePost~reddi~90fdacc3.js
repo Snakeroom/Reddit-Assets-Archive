@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.66a03b1bc2e1aa021c3b.js
-// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.547306388eb9da8b35eb.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -491,7 +491,7 @@
 				} = e, s = u(e, ["className"]);
 				return r.a.createElement(a.a, d({}, s, {
 					className: Object(o.a)(l.a.horizontalVotes, t),
-					scoreClassName: l.a.customScoreStyles,
+					scoreClassName: Object(o.a)(l.a.customScoreStyles, s.scoreClassName),
 					downvoteClassName: Object(a.b)(s) ? l.a.customDownvoteStyles : void 0
 				}))
 			});
@@ -3736,4 +3736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.66a03b1bc2e1aa021c3b.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.547306388eb9da8b35eb.js.map

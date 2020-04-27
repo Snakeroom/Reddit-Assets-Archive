@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.64c5b8590d68c1a23e0e.js
-// Retrieved at 4/24/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3e4053cef03451998a2e.js
+// Retrieved at 4/27/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -975,23 +975,24 @@
 					flair: v,
 					flairPosition: O,
 					hasBadges: C,
-					isLivestreaming: E,
-					ignoreFlairPosition: j,
-					ignoreLock: _,
-					language: S,
-					lockedTooltipId: w,
-					modTooltipId: T,
-					onHideTooltip: M,
-					onShowTooltip: L,
-					opTooltipId: R,
-					openRemovalReasonModal: B,
-					removeTooltipId: D,
-					renderContractorBadge: U,
-					renderedInOverlay: V,
-					reportTooltipId: W,
-					spamTooltipId: H,
-					subredditDisplayText: q,
-					topTippersEnabled: z
+					isAvatarsInCommentsEnabled: E,
+					isLivestreaming: j,
+					ignoreFlairPosition: _,
+					ignoreLock: S,
+					language: w,
+					lockedTooltipId: T,
+					modTooltipId: M,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					opTooltipId: B,
+					openRemovalReasonModal: D,
+					removeTooltipId: U,
+					renderContractorBadge: V,
+					renderedInOverlay: W,
+					reportTooltipId: H,
+					spamTooltipId: q,
+					subredditDisplayText: z,
+					topTippersEnabled: K
 				} = e;
 				if (u.isDeleted) return o.a.createElement(Le, se({}, e, {
 					className: Object(d.a)(c, te.a.container, {
@@ -1003,14 +1004,14 @@
 						[te.a.collapsed]: m
 					})
 				}));
-				const K = !j && O === A.b.Left;
+				const G = !_ && O === A.b.Left;
 				return o.a.createElement("div", {
 					className: Object(d.a)(c, te.a.container, {
 						[te.a.collapsed]: m,
 						[te.a.hasBadges]: C,
-						[te.a.liveStreaming]: E
+						[te.a.liveStreaming]: j
 					})
-				}, v && K && o.a.createElement(P.b, {
+				}, v && G && o.a.createElement(P.b, {
 					flair: v,
 					forceSmallEmojis: y
 				}), !Object(F.d)(u) && o.a.createElement(_e, {
@@ -1020,21 +1021,21 @@
 					uniqueIdentifier: u.id
 				}), o.a.createElement(Ee, {
 					postOrComment: u,
-					tooltipType: V ? N.c.Lightbox : void 0
+					tooltipType: W ? N.c.Lightbox : void 0
 				}, o.a.createElement(f.b, {
 					ignore: Object(F.d)(u) || !!u.distinguishType && u.distinguishType !== l.A.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, o.a.createElement(Ae, {
 					comment: u,
-					isLivestreaming: E,
+					isLivestreaming: j,
 					isStrong: !!y,
 					isAuthorDeleted: Object(F.d)(u),
-					topTippersEnabled: z
+					topTippersEnabled: K
 				}, i && i))), p && o.a.createElement(Ce, null, "Crowd Control"), p && o.a.createElement(X.c, {
 					className: te.a.metaText,
 					key: "crowdControlSeparator"
-				}), v && !K && o.a.createElement(re, {
+				}), v && !G && o.a.createElement(re, {
 					flair: v,
 					forceSmallEmojis: y
 				}), !y && o.a.createElement(k.a, {
@@ -1058,19 +1059,19 @@
 					adminEmeritusTooltipId: t,
 					cakedayTooltipId: a,
 					contractorTooltipId: x,
-					language: S,
-					modTooltipId: T,
-					onHideTooltip: M,
-					onShowTooltip: L,
-					opTooltipId: R,
-					renderContractorBadge: U,
-					subredditDisplayText: q
-				})), !y && o.a.createElement(o.a.Fragment, null, !u.isDeleted && o.a.createElement(X.b, {
+					language: w,
+					modTooltipId: M,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					opTooltipId: B,
+					renderContractorBadge: V,
+					subredditDisplayText: z
+				})), !y && o.a.createElement(o.a.Fragment, null, !u.isDeleted && !E && o.a.createElement(X.b, {
 					className: te.a.metaText,
 					isScoreHidden: u.isScoreHidden,
-					language: S,
+					language: w,
 					score: u.score
-				}), o.a.createElement(X.c, {
+				}), !E && o.a.createElement(X.c, {
 					className: te.a.metaText,
 					key: "scoreCreatedSeparator"
 				}), o.a.createElement(Be, se({
@@ -1079,21 +1080,21 @@
 					comment: u,
 					approveTooltipId: n,
 					automodTooltipId: r,
-					ignoreLock: _,
-					language: S,
-					lockedTooltipId: w,
-					onHideTooltip: M,
-					onShowTooltip: L,
-					openRemovalReasonModal: B,
-					removeTooltipId: D,
-					reportTooltipId: W,
-					spamTooltipId: H
+					ignoreLock: S,
+					language: w,
+					lockedTooltipId: T,
+					onHideTooltip: L,
+					onShowTooltip: R,
+					openRemovalReasonModal: D,
+					removeTooltipId: U,
+					reportTooltipId: H,
+					spamTooltipId: q
 				}), o.a.createElement(g.a, {
 					className: te.a.DonationAmount,
 					contentId: u.id,
 					subredditId: u.subredditId
 				})), o.a.createElement(h.a, {
-					tooltipType: V ? N.c.Lightbox : void 0,
+					tooltipType: W ? N.c.Lightbox : void 0,
 					thing: u
 				}))
 			});
@@ -9380,9 +9381,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.Cb.Treatment1 === Object(r.c)(e, {
+			const o = e => n.Fb.Treatment1 === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Bb
+				experimentName: n.Eb
 			})
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -9399,4 +9400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.64c5b8590d68c1a23e0e.js.map
+//# sourceMappingURL=SearchResults.3e4053cef03451998a2e.js.map
