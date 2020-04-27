@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.31b288478361d2267242.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.cc1cee079543ffd7b2c1.js
+// Retrieved at 4/27/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -166,7 +166,7 @@
 						className: O.a.tokenSymbol,
 						subredditId: d
 					})), E._param("amount", Object(l.a)(c.amount))], {
-						hk: "3gzKBX"
+						hk: "2uBJCn"
 					}))), (t = e.badge, r = e.onApplyBadge, s = e.onClose, a.a.createElement("div", {
 						className: O.a.controls
 					}, a.a.createElement(g.n, {
@@ -567,4 +567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.31b288478361d2267242.js.map
+//# sourceMappingURL=BadgePurchaseModal.cc1cee079543ffd7b2c1.js.map

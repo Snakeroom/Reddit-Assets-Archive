@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.dbc245dca8c05ad9473a.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.96cfaac192d0a18be3d5.js
+// Retrieved at 4/27/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -1791,8 +1791,8 @@
 				W = a("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"),
 				H = a("./src/reddit/icons/svgs/FormattingSpoiler/index.tsx"),
 				Z = a("./src/reddit/icons/svgs/FormattingStrikethrough/index.tsx"),
-				q = a("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"),
-				V = a("./src/reddit/icons/svgs/FormattingTable/index.tsx"),
+				V = a("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"),
+				q = a("./src/reddit/icons/svgs/FormattingTable/index.tsx"),
 				U = a("./src/reddit/icons/svgs/FormattingUnorderedList/index.tsx"),
 				K = a("./src/reddit/icons/svgs/Gif/index.tsx"),
 				J = a("./src/reddit/icons/svgs/Smile/index.tsx"),
@@ -2134,13 +2134,13 @@
 						className: me.a.icon
 					}), o.a.createElement(D.a, {
 						className: me.a.icon
-					}), o.a.createElement(q.a, {
+					}), o.a.createElement(V.a, {
 						className: me.a.icon
 					}), o.a.createElement(H.a, {
 						className: me.a.icon
 					}), o.a.createElement("div", {
 						className: me.a.divider
-					}), o.a.createElement(V.a, {
+					}), o.a.createElement(q.a, {
 						className: me.a.icon
 					}), o.a.createElement(U.a, {
 						className: me.a.icon
@@ -2706,7 +2706,7 @@
 					})))
 				}
 			}
-			const qe = Object(n.c)({
+			const Ve = Object(n.c)({
 				loyaltyBadges: (e, t) => {
 					let {
 						subreddit: a
@@ -2723,7 +2723,7 @@
 					return Object(O.w)(e, a.id)
 				}
 			});
-			var Ve = Object(r.b)(qe)(Ze),
+			var qe = Object(r.b)(Ve)(Ze),
 				Ue = a("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				Ke = a("./src/reddit/pages/meta/MembershipPaywallPage/FAQ/index.m.less"),
 				Je = a.n(Ke);
@@ -3024,8 +3024,8 @@
 					hk: "7b9oh"
 				})), o.a.createElement("div", {
 					className: Lt.a.requiresMobile
-				}, At._("Requires Reddit Wallet on mobile", null, {
-					hk: "31mXy8"
+				}, At._("Requires Reddit Vault on mobile", null, {
+					hk: "4oRRlp"
 				})))
 			}
 
@@ -3089,6 +3089,7 @@
 					const m = t.type === Gt.Badge ? t.product.price : t.dollarPrice,
 						d = t.type === Gt.Badge ? void 0 : t.tokenPrice;
 					if (this.state.showTokenTransactionModal && d) return o.a.createElement(mt.a, {
+						correlationId: e,
 						onClose: r,
 						price: d,
 						subredditId: a.id
@@ -3147,10 +3148,10 @@
 						}) : ""
 					}
 				}),
-				qt = Object(r.b)(Zt),
-				Vt = Object(dt.t)(),
+				Vt = Object(r.b)(Zt),
+				qt = Object(dt.t)(),
 				Ut = Object(h.c)(Ht);
-			var Kt = Object(lt.a)("spPremium", Object(ct.a)(Vt(qt(Ut)))),
+			var Kt = Object(lt.a)("spPremium", Object(ct.a)(qt(Vt(Ut)))),
 				Jt = a("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Products/index.m.less"),
 				Qt = a.n(Jt);
 
@@ -3860,7 +3861,7 @@
 						className: Da.a.whatDoYouGet,
 						correlationId: this.correlationId,
 						subreddit: t
-					}), o.a.createElement(Ve, {
+					}), o.a.createElement(qe, {
 						className: Da.a.benefits,
 						correlationId: this.correlationId,
 						subreddit: t
@@ -3941,4 +3942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.dbc245dca8c05ad9473a.js.map
+//# sourceMappingURL=MembershipPaywallPage.96cfaac192d0a18be3d5.js.map

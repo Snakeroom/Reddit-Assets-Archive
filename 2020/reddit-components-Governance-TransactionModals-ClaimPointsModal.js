@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.67fb0960dbea187ccc7f.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.fad709d7d9b1d956f84c.js
+// Retrieved at 4/27/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -180,8 +180,8 @@
 					title: E._("Claim Your Points", null, {
 						hk: "2j1Z6u"
 					}),
-					header: E._("Use mobile app to create a Reddit Wallet and claim your points", null, {
-						hk: "4wEchv"
+					header: E._("Use mobile app to create a Reddit Vault and claim your points", null, {
+						hk: "2A4Q2x"
 					}),
 					content: s.a.createElement(s.a.Fragment, null, s.a.createElement(x.a, {
 						index: "1"
@@ -197,10 +197,10 @@
 						hk: "FWSNM"
 					})), s.a.createElement(x.a, {
 						index: "4"
-					}, E._("Or, open the Reddit app and tap your profile photo at the top. Then tap Wallet, and follow the instructions", null, {
-						hk: "4e7EBq"
+					}, E._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
+						hk: "nnWfa"
 					}))),
-					qrUrl: Object(d.a)("http://www.reddit.com/wallet/claim", {
+					qrUrl: Object(d.a)("http://www.reddit.com/vault/claim", {
 						u: c,
 						s: n
 					}),
@@ -221,4 +221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.67fb0960dbea187ccc7f.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.fad709d7d9b1d956f84c.js.map
