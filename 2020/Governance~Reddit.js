@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c17db1b97589b762157d.js
-// Retrieved at 4/27/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.52384d148924e1976dae.js
+// Retrieved at 4/27/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -12691,19 +12691,19 @@
 					} = n;
 					const r = Object(E.i)(t());
 					r && r.profileId && await e(R(Object(y.f)(r)))
-				}, R = e => async (t, n, s) => {
+				}, R = (e, t) => async (n, s, i) => {
 					let {
-						apiContext: i
-					} = s;
-					const u = n();
-					if (!!(Object(j.j)(u, {
+						apiContext: u
+					} = i;
+					const l = s();
+					if (!!(Object(j.j)(l, {
 							profileName: e
-						}) && Object(j.h)(u, {
+						}) && Object(j.h)(l, {
 							profileName: e
-						}) && Object(E.db)(u, {
+						}) && Object(E.db)(l, {
 							userName: e
-						}))) return;
-					const l = await ((e, t) => Object(a.b)(Object(c.a)(e, [d.a]), {
+						})) && !t) return;
+					const b = await ((e, t) => Object(a.b)(Object(c.a)(e, [d.a]), {
 						endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/about.json"),
 						method: r.ab.GET,
 						data: {
@@ -12711,10 +12711,10 @@
 							awarded_detail: 1,
 							raw_json: 1
 						}
-					}))(i(), e);
-					l.ok ? (l.body && l.body.data && l.body.data.is_suspended && t(Object(o.u)({
+					}))(u(), e);
+					b.ok ? (b.body && b.body.data && b.body.data.is_suspended && n(Object(o.u)({
 						profileName: e
-					})), t(v(function(e) {
+					})), n(v(function(e) {
 						const {
 							data: t
 						} = e;
@@ -12730,9 +12730,9 @@
 						}, t.subreddit ? {
 							profile: Object(_.a)(t.subreddit, t.name)
 						} : null)
-					}(l.body)))) : (l.error && l.error.type === r.l && t(Object(o.s)({
+					}(b.body)))) : (b.error && b.error.type === r.l && n(Object(o.s)({
 						profileName: e
-					})), t(S(l.body)))
+					})), n(S(b.body)))
 				}, k = e => async (t, n, s) => {
 					let {
 						apiContext: o
@@ -50782,4 +50782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.c17db1b97589b762157d.js.map
+//# sourceMappingURL=Governance~Reddit.52384d148924e1976dae.js.map

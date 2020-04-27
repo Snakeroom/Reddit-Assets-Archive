@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.63fed0bb12da4eb005ae.js
-// Retrieved at 4/27/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.461224030dab97b71b03.js
+// Retrieved at 4/27/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -572,7 +572,7 @@
 					GovernanceReleaseNotesModal: "a2af948e06f98f541c4d",
 					"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "31d6cfe0d16ae931b73c",
 					"LiveVideoPlayer~PublicAccessNetwork": "31d6cfe0d16ae931b73c",
-					PublicAccessNetwork: "bd3a1175e83b1d06b714",
+					PublicAccessNetwork: "162ca9e45ed9bc88808e",
 					"vendors~ModListing": "31d6cfe0d16ae931b73c",
 					ModListing: "5a87a607e641663e4e89",
 					"vendors~ModQueuePages": "31d6cfe0d16ae931b73c",
@@ -954,7 +954,7 @@
 						FrontpageSidebar: "7fc12b32a3f56ac673f7",
 						Frontpage: "2814096eafc7b76f04ee",
 						Topic: "0e1e3d95209fe7b3b3ad",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "d055d1c2fa371acb5674",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "59fb350e5c26b01b5c14",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "276bc4e0f5461432934d",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "ccd5753d167520d63729",
@@ -1060,7 +1060,7 @@
 						GovernanceReleaseNotesModal: "f20b712efd315a2c14cd",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "84646860bf68da9f046f",
 						"LiveVideoPlayer~PublicAccessNetwork": "ec41862420f6a2bf07db",
-						PublicAccessNetwork: "599b110be1fe1538c015",
+						PublicAccessNetwork: "e497c642e5ed6e7a6ed6",
 						"vendors~ModListing": "da8d7182357e33514153",
 						ModListing: "17cb5c7a31b9900d4a18",
 						"vendors~ModQueuePages": "b6ea725bcfc100d1dc90",
@@ -1232,4 +1232,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.63fed0bb12da4eb005ae.js.map
+//# sourceMappingURL=runtime~Reddit.461224030dab97b71b03.js.map
