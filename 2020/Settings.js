@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f6b64cfe0d666f211191.js
-// Retrieved at 4/28/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5e8c4b4413b215433033.js
+// Retrieved at 4/28/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -560,16 +560,18 @@
 		"./src/reddit/components/Hovercards/AuthorHovercard/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
+				return i
 			}));
-			var s = n("./src/higherOrderComponents/makeAsync.tsx"),
-				a = n("./src/lib/loadWithRetries/index.ts");
-			const o = "UserInfoTooltip",
-				r = () => null;
-			t.b = Object(s.a)({
-				ErrorComponent: r,
-				getComponent: () => Object(a.a)(() => Promise.all([n.e("AuthorHovercard~Settings~SubredditWiki"), n.e("AuthorHovercard")]).then(n.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
-				LoadingComponent: r
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
+				o = n("./src/higherOrderComponents/makeAsync.tsx"),
+				r = n("./src/lib/loadWithRetries/index.ts");
+			const i = "UserInfoTooltip",
+				c = e => e.alwaysShowChildren ? a.a.createElement(a.a.Fragment, null, e.children) : null;
+			t.b = Object(o.a)({
+				ErrorComponent: c,
+				getComponent: () => Object(r.a)(() => Promise.all([n.e("AuthorHovercard~Settings~SubredditWiki"), n.e("AuthorHovercard")]).then(n.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
+				LoadingComponent: c
 			})
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, n) {
@@ -6397,4 +6399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.f6b64cfe0d666f211191.js.map
+//# sourceMappingURL=Settings.5e8c4b4413b215433033.js.map
