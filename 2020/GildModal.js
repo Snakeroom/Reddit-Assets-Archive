@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.c39950c57f0826a0498e.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.dcf8a9b94e0018bc803c.js
+// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
@@ -16,7 +16,7 @@
 				d = s("./src/reddit/constants/headers.ts"),
 				l = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				u = s("./src/reddit/endpoints/gold/purchase.ts");
-			const p = e => e.map(e => ({
+			const p = e => ({
 					baselineCoins: e.baseline_coins || e.coins,
 					baselinePennies: e.baseline_pennies || e.pennies,
 					bonusPct: e.bonus_pct,
@@ -30,8 +30,20 @@
 					},
 					mobileId: e.mobile_id,
 					pennies: e.pennies
-				})),
-				m = e => e.map(e => ({
+				}),
+				m = e => e.map(p),
+				b = e => e.map(e => {
+					const t = p(e);
+					return Object.assign({}, t, {
+						dealInfo: {
+							type: e.deal_info.type,
+							title: e.deal_info.title,
+							subtitle: e.deal_info.subtitle,
+							displayDelay: e.deal_info.display_delay
+						}
+					})
+				}),
+				h = e => e.map(e => ({
 					description: e.description,
 					frequency: e.frequency,
 					frequencyDays: e.frequency_days,
@@ -45,7 +57,7 @@
 					periodicalCoins: e.periodical_coins,
 					signupBonusCoins: e.signup_bonus_coins
 				})),
-				h = e => e ? {
+				x = e => e ? {
 					ctaText: e.cta_text,
 					dropdownHeaderText: e.dropdown_banner_text,
 					dropdownHeaderBackgroundAsset: e.dropdown_banner_image_url,
@@ -55,7 +67,7 @@
 					heroText: e.hero_text
 				} : null;
 
-			function b(e) {
+			function _(e) {
 				if (!e.ok) return e;
 				const {
 					active_sale: t,
@@ -63,24 +75,24 @@
 					deals: n,
 					premium_packages: o
 				} = e.body, c = {
-					activeSaleConfig: h(t),
-					coinPackages: p(s),
-					dealCoinPackages: p(n),
-					premiumPackages: m(o)
+					activeSaleConfig: x(t),
+					coinPackages: m(s),
+					dealCoinPackages: b(n),
+					premiumPackages: h(o)
 				};
 				return Object.assign({}, e, {
 					body: c
 				})
 			}
-			var g = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const x = Object(o.a)(g.g),
-				f = Object(o.a)(g.h),
-				_ = Object(o.a)(g.f),
+			var f = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const g = Object(o.a)(f.g),
+				y = Object(o.a)(f.h),
+				w = Object(o.a)(f.f),
 				C = () => async (e, t, s) => {
 					let {
 						apiContext: o
 					} = s;
-					e(x());
+					e(g());
 					try {
 						const t = await (async e => {
 							const t = "".concat(e.apiUrl, "/api/v2/gold/purchase_package_details"),
@@ -88,17 +100,17 @@
 							return Object(r.b)(Object(i.a)(e, [d.a]), {
 								method: a.ab.GET,
 								endpoint: s
-							}).then(u.c).then(b)
+							}).then(u.c).then(_)
 						})(o());
 						if (!t.ok) throw new Error(t.error && t.error.type || "Unknown error");
 						const s = t.body;
-						e(f(s))
+						e(y(s))
 					} catch (p) {
 						c.c.captureException(p);
 						const t = n.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
-						e(_(t))
+						e(w(t))
 					}
 				}
 		},
@@ -138,10 +150,10 @@
 				u = s("./src/higherOrderComponents/asModal/index.tsx"),
 				p = s("./src/reddit/components/GildModalContent/index.tsx"),
 				m = s("./src/reddit/components/GildModal/index.m.less"),
-				h = s.n(m);
+				b = s.n(m);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -149,11 +161,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = Object(a.c)({
+			const x = Object(a.c)({
 					showPurchaseModal: l.r,
 					thingId: d.d
 				}),
-				x = Object(u.a)(e => {
+				_ = Object(u.a)(e => {
 					const {
 						thingId: t
 					} = e;
@@ -164,17 +176,17 @@
 				f = {
 					backgroundColor: i.a.overlayReportFlow
 				},
-				_ = {
+				g = {
 					backgroundColor: "transparent"
 				},
-				C = Object(c.b)(g, e => ({
+				y = Object(c.b)(x, e => ({
 					closeGildModal: () => e(Object(r.a)())
 				}));
-			t.default = C(e => o.a.createElement(x, b({}, e, {
-				className: h.a.gildModal,
+			t.default = y(e => o.a.createElement(_, h({}, e, {
+				className: b.a.gildModal,
 				withOverlay: !0,
 				onOverlayClick: e.closeGildModal,
-				overlayCustomStyles: e.showPurchaseModal ? _ : f
+				overlayCustomStyles: e.showPurchaseModal ? g : f
 			})))
 		},
 		"./src/reddit/controls/CheckboxWithLabel/index.m.less": function(e, t, s) {
@@ -296,29 +308,7 @@
 			}, o.a.createElement("path", {
 				d: "M13.535 15.785c-1.678.244-2.883.742-3.535 1.071v-5.113a2 2 0 0 0-2-2H4.217c.044-.487.076-1.016.076-1.629 0-1.692-.489-2.968-.884-3.722L4.8 3.001H10v4.742a2 2 0 0 0 2 2h3.783c.06.67.144 1.248.22 1.742.097.632.182 1.177.182 1.745 0 1.045-.829 2.291-2.65 2.555m5.028-12.249l-2.242-2.242a1 1 0 0 0-.707-.293H4.386a1 1 0 0 0-.707.293L1.436 3.536a1 1 0 0 0-.069 1.337c.009.011.926 1.2.926 3.241 0 1.304-.145 2.24-.273 3.065-.106.684-.206 1.33-.206 2.051 0 1.939 1.499 4.119 4.364 4.534 2.086.304 3.254 1.062 3.261 1.065a1.016 1.016 0 0 0 1.117.004c.011-.007 1.18-.765 3.266-1.069 2.864-.415 4.363-2.595 4.363-4.534 0-.721-.099-1.367-.206-2.051-.128-.825-.272-1.761-.272-3.065 0-2.033.893-3.199.926-3.241a.999.999 0 0 0-.07-1.337"
 			}))
-		},
-		"./src/reddit/selectors/gold/purchaseCatalog.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			})), s.d(t, "b", (function() {
-				return o
-			})), s.d(t, "c", (function() {
-				return c
-			})), s.d(t, "d", (function() {
-				return a
-			})), s.d(t, "f", (function() {
-				return r
-			})), s.d(t, "e", (function() {
-				return i
-			}));
-			const n = e => e.goldPurchase.purchaseCatalog.activeSaleConfig,
-				o = e => e.goldPurchase.purchaseCatalog.coinPackages,
-				c = e => e.goldPurchase.purchaseCatalog.dealCoinPackages,
-				a = e => e.goldPurchase.purchaseCatalog.premiumPackages,
-				r = e => e.goldPurchase.purchaseCatalog.pending,
-				i = e => e.goldPurchase.purchaseCatalog.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.c39950c57f0826a0498e.js.map
+//# sourceMappingURL=GildModal.dcf8a9b94e0018bc803c.js.map

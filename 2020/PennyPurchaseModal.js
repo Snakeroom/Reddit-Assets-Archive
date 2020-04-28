@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.31ded7af99848762c7e2.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.454cb0e44e816e5adb06.js
+// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -27,8 +27,8 @@
 				y = t("./src/reddit/models/User/index.ts"),
 				C = t("./src/reddit/selectors/gild.ts"),
 				M = t("./src/reddit/selectors/gold/giveAwards.ts"),
-				O = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				b = t("./src/reddit/selectors/platform.ts"),
+				b = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				O = t("./src/reddit/selectors/platform.ts"),
 				v = t("./src/reddit/selectors/user.ts"),
 				j = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				E = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
@@ -45,27 +45,27 @@
 				}).apply(this, arguments)
 			}
 			const w = Object(r.c)({
-					activePage: O.p,
+					activePage: b.o,
 					allowNavigationCallback: e => {
-						const s = Object(b.a)(e);
+						const s = Object(O.a)(e);
 						return null === s ? void 0 : s
 					},
 					coinBalance: v.d,
-					gildThingId: O.q,
+					gildThingId: b.p,
 					isIframed: C.h,
 					nightmode: v.R,
-					savedCardsPending: O.t,
+					savedCardsPending: b.t,
 					selectedAward: M.a,
-					selectedPayment: O.c,
-					stripeErrorMessage: O.j,
-					stripeTokenPending: O.m,
-					paypalErrorMessage: O.d,
+					selectedPayment: b.b,
+					stripeErrorMessage: b.i,
+					stripeTokenPending: b.l,
+					paypalErrorMessage: b.c,
 					userName: e => {
 						const s = Object(v.i)(e);
 						return "u/".concat(Object(y.f)(s))
 					}
 				}),
-				f = Object(n.b)(w, (e, s) => ({
+				_ = Object(n.b)(w, (e, s) => ({
 					closeModal: () => {
 						e(Object(m.d)()), e(Object(i.a)())
 					},
@@ -77,7 +77,7 @@
 				}), (e, s, t) => Object.assign({}, e, s, t, {
 					onCompletePurchaseClick: t => s.dispatchCompletePurchase(t, e.isIframed)
 				}));
-			class _ extends a.a.Component {
+			class f extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
@@ -98,7 +98,7 @@
 						gildThingId: e,
 						sendEvent: s
 					} = this.props;
-					Object(u.d)(u.a.GoldPayment), s(Object(P.g)(e))
+					Object(u.d)(u.a.GoldPayment), s(Object(P.h)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -106,7 +106,7 @@
 							gildThingId: e,
 							sendEvent: s
 						} = this.props;
-						s(Object(P.f)(e))
+						s(Object(P.g)(e))
 					}
 				}
 				render() {
@@ -153,15 +153,15 @@
 					}))
 				}
 			}
-			const I = Object(d.a)(_);
-			s.default = f(Object(h.c)(class extends a.a.PureComponent {
+			const I = Object(d.a)(f);
+			s.default = _(Object(h.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
 							gildThingId: e,
 							sendEvent: s
 						} = this.props;
-						s(Object(P.a)(e)), this.onCloseModal()
+						s(Object(P.b)(e)), this.onCloseModal()
 					}, this.onCloseModal = () => {
 						this.props.closeModal(), this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
 					}
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.31ded7af99848762c7e2.js.map
+//# sourceMappingURL=PennyPurchaseModal.454cb0e44e816e5adb06.js.map

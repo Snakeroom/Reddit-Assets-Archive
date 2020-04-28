@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.3a122946e95701d1ec26.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.5edd0f8d470b82e5fa2e.js
+// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -633,9 +633,9 @@
 					isGold: S.p,
 					isPremiumSubscriber: S.q,
 					isLoggedIn: S.H,
-					premiumPackages: O.d,
-					purchaseCatalogPending: O.f,
-					shouldShowPremiumPurchaseModal: G.o,
+					premiumPackages: O.e,
+					purchaseCatalogPending: O.g,
+					shouldShowPremiumPurchaseModal: G.n,
 					shouldShowClaimGoldModal: _.b
 				}),
 				q = Object(l.b)(J, (e, t) => ({
@@ -778,4 +778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.3a122946e95701d1ec26.js.map
+//# sourceMappingURL=Premium.5edd0f8d470b82e5fa2e.js.map
