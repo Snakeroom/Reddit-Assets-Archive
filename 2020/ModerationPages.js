@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.53edf21fdce327212c0b.js
-// Retrieved at 4/27/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9d6f1ff5bc750346727c.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6833,10 +6833,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.K)()
+					e(Object(l.i)()), Object(p.L)()
 				},
 				onViewTooltip: () => {
-					Object(p.U)()
+					Object(p.V)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -7425,7 +7425,7 @@
 					post: y.N,
 					showEditFlair: O.a,
 					subredditOrProfile: y.Z,
-					userIsOp: j.fb
+					userIsOp: j.gb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -9292,7 +9292,7 @@
 				ke = Object(i.c)({
 					activeModalId: me.a,
 					layout: q.M,
-					userIsOp: z.fb,
+					userIsOp: z.gb,
 					subreddit: q.q
 				}),
 				Oe = Object(r.b)(ke, (e, t) => {
@@ -17841,7 +17841,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = be(t, ["isProfilePostListing"]);
-						return Object(G.B)(e, n) && s && Object(ae.fb)(e, n) && Object(ae.eb)(e, {
+						return Object(G.B)(e, n) && s && Object(ae.gb)(e, n) && Object(ae.eb)(e, {
 							userName: Object(ne.N)(e, {
 								postId: n.postId
 							}).author
@@ -17849,7 +17849,7 @@
 					},
 					subredditOrProfile: ne.Z,
 					hasSubredditRules: oe.k,
-					userIsOp: ae.fb,
+					userIsOp: ae.gb,
 					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -22957,7 +22957,7 @@
 					showEditFlair: p.a,
 					showMedia: l.r,
 					subredditOrProfile: b.Z,
-					userIsOp: h.fb,
+					userIsOp: h.gb,
 					flairStyleTemplate: l.Q
 				},
 				f = (e, t) => {
@@ -28692,4 +28692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.53edf21fdce327212c0b.js.map
+//# sourceMappingURL=ModerationPages.9d6f1ff5bc750346727c.js.map

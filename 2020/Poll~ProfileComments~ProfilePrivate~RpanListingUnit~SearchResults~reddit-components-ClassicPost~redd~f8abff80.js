@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.907445a877ec4b2bf940.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.d967fc275633376bd039.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1275,7 +1275,7 @@
 				Ee = Object(a.c)({
 					activeModalId: pe.a,
 					layout: V.M,
-					userIsOp: X.fb,
+					userIsOp: X.gb,
 					subreddit: V.q
 				}),
 				je = Object(i.b)(Ee, (e, t) => {
@@ -2563,7 +2563,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(re.fb)(e, n) && Object(re.eb)(e, {
+						return Object(K.B)(e, n) && s && Object(re.gb)(e, n) && Object(re.eb)(e, {
 							userName: Object(ne.N)(e, {
 								postId: n.postId
 							}).author
@@ -2571,7 +2571,7 @@
 					},
 					subredditOrProfile: ne.Z,
 					hasSubredditRules: oe.k,
-					userIsOp: re.fb,
+					userIsOp: re.gb,
 					isPostPartOfACollection: pe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -4062,4 +4062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.907445a877ec4b2bf940.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.d967fc275633376bd039.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5f517a8ff05b50299d09.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.31ded7af99848762c7e2.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.5f517a8ff05b50299d09.js.map
+//# sourceMappingURL=PennyPurchaseModal.31ded7af99848762c7e2.js.map

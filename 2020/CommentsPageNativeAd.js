@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.354c4db60b54d8d6cfc6.js
-// Retrieved at 4/27/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ee5c6d73dd90f8804104.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -658,7 +658,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: x.Z,
-					userIsOp: b.fb,
+					userIsOp: b.gb,
 					flairStyleTemplate: d.Q
 				},
 				g = (e, t) => {
@@ -776,4 +776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.354c4db60b54d8d6cfc6.js.map
+//# sourceMappingURL=CommentsPageNativeAd.ee5c6d73dd90f8804104.js.map

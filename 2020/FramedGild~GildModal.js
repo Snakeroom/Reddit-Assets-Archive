@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.03eec9f2dbce9ffcf75f.js
-// Retrieved at 4/23/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e74da6f25eddb90afa43.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -372,9 +372,9 @@
 				H = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				K = s.n(H),
 				X = s("./src/reddit/helpers/awards/message.ts"),
-				J = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				U = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				W = s("./src/reddit/icons/svgs/Eye/index.tsx"),
+				U = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				W = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				J = s("./src/reddit/icons/svgs/Eye/index.tsx"),
 				Q = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				z = s("./src/reddit/helpers/createEmojiText/index.tsx"),
 				Y = s("./src/reddit/icons/fonts/Coin/index.tsx"),
@@ -473,7 +473,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : n.a.createElement(U.a, {
+					return e ? null : n.a.createElement(W.a, {
 						className: K.a.giver,
 						isSelected: t,
 						text: q.fbt._("Make my gift anonymous", null, {
@@ -505,7 +505,7 @@
 						className: Object(c.a)(K.a.textAreaWrapper, {
 							[K.a.messageTooLong]: i
 						})
-					}, n.a.createElement(J.q, ae({
+					}, n.a.createElement(U.q, ae({
 						className: K.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -522,7 +522,7 @@
 					} = this.props;
 					return e ? n.a.createElement("div", {
 						className: K.a.publicIndicator
-					}, n.a.createElement(W.a, {
+					}, n.a.createElement(J.a, {
 						className: K.a.eyeIcon
 					}), q.fbt._("Shows my username", null, {
 						hk: "1HsXbA"
@@ -931,7 +931,7 @@
 					}, this.renderEmojiSubText())), n.a.createElement("button", {
 						className: _e.a.closeBtn,
 						onClick: this.handleCloseIconClick
-					}, n.a.createElement(J.b, {
+					}, n.a.createElement(U.b, {
 						className: _e.a.closeBtnIcon
 					})))
 				}
@@ -1099,7 +1099,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(l.J)(e)
+					Object(l.K)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -1239,7 +1239,7 @@
 					purchaseCatalogRequested: () => e(Object(v.a)()),
 					selectAward: t => e(w(t)),
 					setIsAnonymous: t => {
-						e(Object(p.setIsAnonymous)(t)), Object(l.J)(t)
+						e(Object(p.setIsAnonymous)(t)), Object(l.K)(t)
 					},
 					subredditAboutRequested: t => e(Object(O.t)(t)),
 					updateMessage: t => e(Object(p.updateMessage)(t))
@@ -1623,4 +1623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.03eec9f2dbce9ffcf75f.js.map
+//# sourceMappingURL=FramedGild~GildModal.e74da6f25eddb90afa43.js.map

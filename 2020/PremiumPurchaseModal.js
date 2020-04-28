@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a7b93a4e4a64226bc5c0.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a814e61796f3cd0b0cf5.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -947,4 +947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.a7b93a4e4a64226bc5c0.js.map
+//# sourceMappingURL=PremiumPurchaseModal.a814e61796f3cd0b0cf5.js.map

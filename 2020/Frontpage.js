@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a086290fbae4852efd03.js
-// Retrieved at 4/27/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0d41b6c2142d44717a6d.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -345,7 +345,7 @@
 							})
 					}
 				},
-				w = e => {
+				C = e => {
 					let {
 						listingName: t,
 						sort: s
@@ -373,7 +373,7 @@
 						hk: "1vnCSW"
 					}))))
 				},
-				C = () => a.a.createElement(_, null, a.a.createElement(O, {
+				w = () => a.a.createElement(_, null, a.a.createElement(O, {
 					src: "".concat(c.a.assetPath, "/img/snoo_discovery@1x.png")
 				}), a.a.createElement(v, null, n.fbt._("Reddit gets better when you join communities, so find some that you’ll love!", null, {
 					hk: "7B6oq"
@@ -385,7 +385,7 @@
 			t.a = g.a.wrapped(e => a.a.createElement(E, null, a.a.createElement(x, {
 				isLoading: !1,
 				layout: u.g.Classic
-			}), a.a.createElement(y, null, e.subreddit ? a.a.createElement(w, e) : a.a.createElement(C, null))), "Component", b.a)
+			}), a.a.createElement(y, null, e.subreddit ? a.a.createElement(C, e) : a.a.createElement(w, null))), "Component", b.a)
 		},
 		"./src/reddit/components/FeaturedLiveEntrypoint/Announcement.tsx": function(e, t, s) {
 			"use strict";
@@ -508,8 +508,8 @@
 				O = d.a.div("LiveLabel", y.a),
 				E = d.a.div("ViewCount", y.a),
 				P = d.a.div("Title", y.a),
-				w = d.a.wrapped(b.a, "OutboundLink", y.a),
-				C = d.a.div("Description", y.a),
+				C = d.a.wrapped(b.a, "OutboundLink", y.a),
+				w = d.a.div("Description", y.a),
 				N = Object(a.c)({
 					featuredLiveThread: e => e.live.featured
 				}),
@@ -526,7 +526,7 @@
 							id: e,
 							numTimesDismissable: t
 						} = this.props.featuredLiveThread;
-						Object(u.B)(e, t), this.props.sendEvent(Object(m.d)(e))
+						Object(u.C)(e, t), this.props.sendEvent(Object(m.d)(e))
 					}, this.clickedButtonCta = () => {
 						this.props.sendEvent(Object(m.c)(this.props.featuredLiveThread.id))
 					}
@@ -540,7 +540,7 @@
 						const s = Object(u.d)(e.id);
 						s < e.numTimesDismissable && (this.setState({
 							announcementBannerHidden: !1
-						}), t(Object(m.e)(e.id)), Object(u.B)(e.id, s + 1))
+						}), t(Object(m.e)(e.id)), Object(u.C)(e.id, s + 1))
 					}
 				}
 				render() {
@@ -555,12 +555,12 @@
 						href: "".concat(_).concat(e.id)
 					}, o.a.createElement(g.a, null, o.a.createElement(j, null), o.a.createElement(O, null, n.fbt._("live", null, {
 						hk: "aD7Tn"
-					}), o.a.createElement(p.c, null, "live")), o.a.createElement(C, null, "·"), o.a.createElement(E, null, n.fbt._({
+					}), o.a.createElement(p.c, null, "live")), o.a.createElement(w, null, "·"), o.a.createElement(E, null, n.fbt._({
 						"*": "{number} viewers",
 						_1: "1 viewer"
 					}, [n.fbt._plural(e.viewerCount, "number")], {
 						hk: "49aRHF"
-					}))), o.a.createElement(P, null, e.title, o.a.createElement(w, null)), o.a.createElement(C, null, e.description)) : null
+					}))), o.a.createElement(P, null, e.title, o.a.createElement(C, null)), o.a.createElement(w, null, e.description)) : null
 				}
 			}
 			t.a = k(Object(l.c)(I))
@@ -1225,8 +1225,8 @@
 				O = s("./src/reddit/components/FeaturedLiveEntrypoint/index.tsx"),
 				E = s("./src/reddit/components/FrontpageSidebar/index.tsx"),
 				P = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.tsx"),
-				w = s("./src/reddit/components/InFeedPostCreation/async.tsx"),
-				C = s("./src/reddit/components/JumpToContent/index.tsx"),
+				C = s("./src/reddit/components/InFeedPostCreation/async.tsx"),
+				w = s("./src/reddit/components/JumpToContent/index.tsx"),
 				N = s("./src/reddit/components/ListingPostList/index.tsx"),
 				k = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
 				I = s("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
@@ -1404,7 +1404,7 @@
 							className: z.a.duHeader
 						}, Y._("Popular posts", null, {
 							hk: "36DJb4"
-						})), p.a.createElement(O.a, null), t && p.a.createElement(w.a, null), p.a.createElement(P.a, d), p.a.createElement(C.a, null), p.a.createElement(T.a, {
+						})), p.a.createElement(O.a, null), t && p.a.createElement(C.a, null), p.a.createElement(P.a, d), p.a.createElement(w.a, null), p.a.createElement(T.a, {
 							listingKey: this.props.listingKey,
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
@@ -1445,7 +1445,7 @@
 					let {
 						listingName: s
 					} = t;
-					const n = Object(a.ib)(e);
+					const n = Object(a.jb)(e);
 					if (!n) return !1;
 					let c;
 					if (-1 === [o.P, "r/popular"].indexOf(s)) {
@@ -1502,9 +1502,9 @@
 			s.d(t, "k", (function() {
 				return O
 			})), s.d(t, "l", (function() {
-				return w
-			})), s.d(t, "m", (function() {
 				return C
+			})), s.d(t, "m", (function() {
+				return w
 			})), s.d(t, "g", (function() {
 				return I
 			})), s.d(t, "c", (function() {
@@ -1622,14 +1622,14 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				w = Object(n.a)(j, P, (e, t) => {
+				C = Object(n.a)(j, P, (e, t) => {
 					const s = t.find(t => {
 						const s = e[t];
 						return !!s && s.stream.state === a.b.IS_LIVE
 					});
 					if (s) return e[s]
 				}),
-				C = Object(n.a)(j, P, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === a.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				w = Object(n.a)(j, P, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === a.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				N = Object(n.a)(f, (e, t) => {
 					let {
 						related: s,
@@ -1756,4 +1756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.a086290fbae4852efd03.js.map
+//# sourceMappingURL=Frontpage.0d41b6c2142d44717a6d.js.map

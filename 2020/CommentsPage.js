@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.34d8917d1bedc05f95f9.js
-// Retrieved at 4/27/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7fd580c509ec8d245d57.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5867,7 +5867,7 @@
 				ye = Object(i.c)({
 					activeModalId: me.a,
 					layout: U.M,
-					userIsOp: z.fb,
+					userIsOp: z.gb,
 					subreddit: U.q
 				}),
 				_e = Object(a.b)(ye, (e, t) => {
@@ -8290,7 +8290,7 @@
 					showEditFlair: pe.a,
 					subredditOrProfile: F.Z,
 					isEditing: R.C,
-					userIsOp: A.fb
+					userIsOp: A.gb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -9649,7 +9649,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(re.fb)(e, n) && Object(re.eb)(e, {
+						return Object(K.B)(e, n) && s && Object(re.gb)(e, n) && Object(re.eb)(e, {
 							userName: Object(ne.N)(e, {
 								postId: n.postId
 							}).author
@@ -9657,7 +9657,7 @@
 					},
 					subredditOrProfile: ne.Z,
 					hasSubredditRules: oe.k,
-					userIsOp: re.fb,
+					userIsOp: re.gb,
 					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -15563,7 +15563,7 @@
 						tooltipIdPrefix: D.a,
 						tooltipType: Me.c.StickyPost
 					}))(e),
-					userPrefs: pe.ib,
+					userPrefs: pe.jb,
 					isInCommentsPageAdExperiment: re.a
 				}),
 				lt = (e, t) => ({
@@ -16347,4 +16347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.34d8917d1bedc05f95f9.js.map
+//# sourceMappingURL=CommentsPage.7fd580c509ec8d245d57.js.map

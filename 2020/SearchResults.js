@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.032b33998f54e0521778.js
-// Retrieved at 4/27/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9943e6e0c0e68c34686a.js
+// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -8221,7 +8221,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.Z,
-					userIsOp: h.fb,
+					userIsOp: h.gb,
 					flairStyleTemplate: d.Q
 				},
 				f = (e, t) => {
@@ -8438,7 +8438,7 @@
 				post: u.N,
 				showEditFlair: p.a,
 				subredditOrProfile: u.Z,
-				userIsOp: b.fb
+				userIsOp: b.gb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -9421,4 +9421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.032b33998f54e0521778.js.map
+//# sourceMappingURL=SearchResults.9943e6e0c0e68c34686a.js.map
