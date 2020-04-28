@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e8d299ae09ae13891f27.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.bae05fbcd1e6dbd12db6.js
+// Retrieved at 4/28/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -639,7 +639,7 @@
 					AuthorHovercard: "8af7608e65a5f98549ad",
 					AwardTooltip: "a38b7ba17f1b5f686b54",
 					ChatPost: "c35d01f35a573c90fc8e",
-					CommentsPageNativeAd: "986453b815b6b72e0edf",
+					CommentsPageNativeAd: "d5fa32dd9901fd00c0af",
 					EconomicsSupportDonationAmount: "2a59fde9d98256e177a2",
 					EconomicsTopTippersPostLeaderboard: "ef755b5604e16b9d618d",
 					GildModal: "3ed1ab8f02bbcd78346c",
@@ -958,7 +958,7 @@
 						FrontpageSidebar: "502bd7b4fc82b11ef631",
 						Frontpage: "0d41b6c2142d44717a6d",
 						Topic: "7886f873af7bdcc26dc1",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "598b0407a9f70baa2429",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "89d2fbf34911e6a7584a",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "593da1ba42b56801a0e0",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "2da00042c02276b3500c",
@@ -1129,7 +1129,7 @@
 						AuthorHovercard: "cb6eff8084f281cde30b",
 						AwardTooltip: "c0c78207708541813583",
 						ChatPost: "235a1772a33b0d5f4371",
-						CommentsPageNativeAd: "ee5c6d73dd90f8804104",
+						CommentsPageNativeAd: "cedafdd8ad672fb767ba",
 						EconomicsSupportDonationAmount: "fc1686d8601e11ae4b34",
 						EconomicsTopTippersPostLeaderboard: "083008ddedec8780407a",
 						GildModal: "dcf8a9b94e0018bc803c",
@@ -1237,4 +1237,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.e8d299ae09ae13891f27.js.map
+//# sourceMappingURL=runtime~Reddit.bae05fbcd1e6dbd12db6.js.map

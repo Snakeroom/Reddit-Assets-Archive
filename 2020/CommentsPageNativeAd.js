@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ee5c6d73dd90f8804104.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.cedafdd8ad672fb767ba.js
+// Retrieved at 4/28/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -97,9 +97,9 @@
 				N = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				T = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				_ = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
-				A = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				I = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				w = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				w = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				A = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				I = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				L = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				M = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				F = s.n(M),
@@ -153,7 +153,7 @@
 						subredditOrProfile: ne,
 						toggleCheckbox: ie,
 						userIsOp: ce
-					} = this.props, de = te ? void 0 : M, le = this.props.crosspost || void 0, pe = Object(w.a)(G), me = Object(A.a)(G), ue = Object(I.a)(G), xe = J && w.a, be = !!ee.media && ee.media.type === S.n.RTJSON, he = ce && be, ge = y && !ae, Oe = !!ee.media && Object(S.C)(ee.media), fe = {
+					} = this.props, de = te ? void 0 : M, le = this.props.crosspost || void 0, pe = Object(I.a)(G), me = Object(w.a)(G), ue = Object(A.a)(G), xe = J && I.a, be = !!ee.media && ee.media.type === S.n.RTJSON, he = ce && be, ge = y && !ae, Oe = !!ee.media && Object(S.C)(ee.media), fe = {
 						flairStyleTemplate: de,
 						post: ee,
 						inSubredditOrProfile: y,
@@ -363,8 +363,7 @@
 			var S = e => a.a.createElement(o.Fragment, null, a.a.createElement(P.a, {
 					className: k.a.authorLink,
 					"data-click-id": "user",
-					author: e.author,
-					isUnstyled: !0
+					author: e.author
 				}, "u/".concat(e.author)), a.a.createElement(E.a, {
 					isSmall: !0,
 					className: k.a.metaSeparator
@@ -372,11 +371,11 @@
 				N = s("./src/lib/classNames/index.ts"),
 				T = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				_ = s("./src/reddit/components/PlayButton/index.tsx"),
-				A = s("./src/reddit/components/Thumbnail/index.tsx"),
-				I = s("./src/reddit/icons/svgs/Close/index.tsx");
+				w = s("./src/reddit/components/Thumbnail/index.tsx"),
+				A = s("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function w() {
-				return (w = Object.assign || function(e) {
+			function I() {
+				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -399,7 +398,7 @@
 					usePreview: m,
 					mediaExpanded: u
 				} = e;
-				return i && i.media ? u && Object(C.F)(i.media) ? a.a.createElement("div", null, a.a.createElement(I.a, {
+				return i && i.media ? u && Object(C.F)(i.media) ? a.a.createElement("div", null, a.a.createElement(A.a, {
 					className: k.a.close,
 					onClick: s
 				}), a.a.createElement(T.b, {
@@ -418,7 +417,7 @@
 					callToActionText: i.callToAction,
 					isListing: !1,
 					playFromStart: !0
-				})) : a.a.createElement(A.a, {
+				})) : a.a.createElement(w.a, {
 					className: Object(N.a)(k.a.thumbnail, t),
 					containerClassName: l,
 					crosspost: r,
@@ -426,11 +425,19 @@
 					isMeta: n,
 					post: i,
 					redditStyle: c,
-					templatePlaceholderImage: d,
 					removeLink: Object(C.F)(i.media),
 					url: Object(C.F)(i.media) ? void 0 : p,
 					usePreview: m
-				}) : null
+				}) : a.a.createElement(w.a, {
+					className: Object(N.a)(k.a.thumbnail, t),
+					containerClassName: l,
+					crosspost: r,
+					forceShowNSFW: o,
+					isMeta: n,
+					post: i,
+					redditStyle: c,
+					usePreview: m
+				})
 			};
 			var M = e => {
 					const [t, s] = Object(o.useState)(!1), {
@@ -440,7 +447,7 @@
 					return a.a.createElement("div", {
 						className: t ? Object(N.a)(k.a.videoContainer, n) : Object(N.a)(k.a.thumbnailContainer, n),
 						onClick: i ? () => s(!0) : void 0
-					}, a.a.createElement(L, w({}, e, {
+					}, a.a.createElement(L, I({}, e, {
 						mediaExpanded: t,
 						closeVideo: () => s(!1)
 					})), i && a.a.createElement(_.a, {
@@ -478,22 +485,20 @@
 				}
 				renderAppropriateThumbnail() {
 					const {
-						flairStyleTemplate: e,
-						inSubredditOrProfile: t,
-						isMeta: s,
-						post: r,
-						redditStyle: o,
-						showMedia: n
-					} = this.props, i = !!r.media && Object(C.C)(r.media), {
-						media: c
-					} = r;
-					if (!(t && !n)) return a.a.createElement(M, {
-						isMeta: s,
-						post: r,
-						redditStyle: o,
-						templatePlaceholderImage: e && e.postPlaceholderImage,
-						removeLink: i,
-						isVideo: c && Object(C.F)(c)
+						inSubredditOrProfile: e,
+						isMeta: t,
+						post: s,
+						redditStyle: r,
+						showMedia: o
+					} = this.props, n = !!s.media && Object(C.C)(s.media), {
+						media: i
+					} = s;
+					if (!(e && !o)) return a.a.createElement(M, {
+						isMeta: t,
+						post: s,
+						redditStyle: r,
+						removeLink: n,
+						isVideo: i && Object(C.F)(i)
 					})
 				}
 				render() {
@@ -776,4 +781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.ee5c6d73dd90f8804104.js.map
+//# sourceMappingURL=CommentsPageNativeAd.cedafdd8ad672fb767ba.js.map
