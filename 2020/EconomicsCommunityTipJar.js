@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.1ee90d7f9b2534c2e4c6.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.8ed60285bbcb6142d8b1.js
+// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -59,19 +59,19 @@
 				p = s("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				b = s("./src/reddit/models/Payments/index.ts"),
 				x = s("./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less"),
-				f = s.n(x);
+				h = s.n(x);
 			const {
-				fbt: h
+				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var g = Object(u.a)((function(e) {
 					return r.a.createElement(m.f, {
-						className: Object(l.a)(f.a.button, {
+						className: Object(l.a)(h.a.button, {
 							active: e.tooltipIsOpen
 						}),
 						onClick: e.onToggleTooltip
 					}, r.a.createElement(p.a, {
-						className: f.a.icon
-					}), h._("support", null, {
+						className: h.a.icon
+					}), f._("support", null, {
 						hk: "3PJMdf"
 					}))
 				}), b.a.Subreddit),
@@ -81,9 +81,9 @@
 				E = s("./src/reddit/selectors/gov.ts"),
 				O = s("./src/reddit/selectors/subreddit.ts"),
 				w = s("./src/reddit/components/Economics/CommunityTipJar/index.m.less"),
-				_ = s.n(w);
+				T = s.n(w);
 			const {
-				fbt: T
+				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = 1e4, j = 500;
 			class P extends r.a.Component {
 				constructor() {
@@ -105,34 +105,34 @@
 					} = this.props;
 					return t ? r.a.createElement(v.a, {
 						className: this.props.className,
-						title: T._("Community Jar", null, {
+						title: _._("Community Jar", null, {
 							hk: "2cynnd"
 						})
 					}, s && s.communityTipsDescription && s.communityTipsDescription.content && s.communityTipsDescription.content.bodyHtml && r.a.createElement("div", {
-						className: _.a.goal
+						className: T.a.goal
 					}, r.a.createElement("div", {
-						className: _.a.goalTitle
-					}, T._("goal", null, {
+						className: T.a.goalTitle
+					}, _._("goal", null, {
 						hk: "PyJez"
 					})), r.a.createElement(C.a, {
 						html: s.communityTipsDescription.content.bodyHtml
 					})), e && n ? r.a.createElement("div", {
-						className: _.a.content
+						className: T.a.content
 					}, r.a.createElement(g, {
 						contentId: t.id,
 						subredditId: t.id,
 						targetName: t.displayText
 					}), r.a.createElement("div", {
-						className: _.a.tipJar
+						className: T.a.tipJar
 					}, r.a.createElement("div", {
-						className: _.a.amount
+						className: T.a.amount
 					}, "$", Object(c.a)(Object(a.a)(e, parseInt(e) < I))), r.a.createElement("div", {
-						className: _.a.tipJarDescription
-					}, T._("Community Jar", null, {
+						className: T.a.tipJarDescription
+					}, _._("Community Jar", null, {
 						hk: "1MJKEy"
 					})))) : r.a.createElement("div", {
-						className: _.a.loading
-					}, this.state.loadBufferTimePassed && T._("Loading...", null, {
+						className: T.a.loading
+					}, this.state.loadBufferTimePassed && _._("Loading...", null, {
 						hk: "48VeuI"
 					}))) : null
 				}
@@ -205,7 +205,7 @@
 				b = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/PaymentReaction/index.m.less"),
 				x = s.n(b);
 
-			function f(e) {
+			function h(e) {
 				return r.a.createElement("div", {
 					className: Object(i.a)(x.a.container, e.className)
 				}, r.a.createElement("div", {
@@ -214,8 +214,8 @@
 					className: x.a.icon
 				}), Object(m.a)(Object(u.a)(e.amount, !0))))
 			}
-			var h = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
-				g = s.n(h);
+			var f = s("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
+				g = s.n(f);
 
 			function C() {
 				return (C = Object.assign || function(e) {
@@ -302,7 +302,7 @@
 							subredditId: this.props.subredditId,
 							targetName: o,
 							onClose: this.handleToggleTooltip
-						})), !!this.state.successfulPaymentAmount && r.a.createElement(f, {
+						})), !!this.state.successfulPaymentAmount && r.a.createElement(h, {
 							amount: this.state.successfulPaymentAmount
 						}))
 					}
@@ -409,9 +409,9 @@
 					}, c))
 				},
 				x = b(d.a),
-				f = b(c);
+				h = b(c);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? f : e.isCheckboxSelected ? x : i.a;
+				const t = e.isHalfCheckboxSelected ? h : e.isCheckboxSelected ? x : i.a;
 				return r.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -446,7 +446,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return T
+				return _
 			})), s.d(t, "c", (function() {
 				return I
 			}));
@@ -463,8 +463,8 @@
 				p = s("./src/reddit/actions/modal.ts"),
 				b = s("./src/reddit/selectors/activeModalId.ts"),
 				x = s("./src/higherOrderComponents/asModal/index.tsx"),
-				f = s("./src/reddit/controls/Button/index.tsx"),
-				h = s("./src/reddit/layout/row/Inline/index.tsx"),
+				h = s("./src/reddit/controls/Button/index.tsx"),
+				f = s("./src/reddit/layout/row/Inline/index.tsx"),
 				g = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				C = s.n(g);
 			var v = Object(x.a)(e => {
@@ -474,13 +474,13 @@
 					} = e;
 					return d.a.createElement("div", {
 						className: C.a.wrapper
-					}, d.a.createElement(h.a, {
+					}, d.a.createElement(f.a, {
 						className: C.a.titleRow
 					}, s), d.a.createElement("div", {
 						className: C.a.detailsContainer
-					}, t), d.a.createElement(h.a, {
+					}, t), d.a.createElement(f.a, {
 						className: C.a.buttonRow
-					}, d.a.createElement(f.f, {
+					}, d.a.createElement(h.f, {
 						className: C.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -547,10 +547,10 @@
 					}, r || e))
 				}
 			}
-			const _ = Object(l.b)(O, e => ({
+			const T = Object(l.b)(O, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(w),
-				T = e => {
+				_ = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -560,19 +560,19 @@
 					} = e, i = o.length ? o : r ? [r] : [];
 					return i.length ? d.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => d.a.createElement(_, {
+					}, i.map((e, t) => d.a.createElement(T, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				I = e => d.a.createElement(T, {
+				I = e => d.a.createElement(_, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = _
+			t.b = T
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, s) {
 			"use strict";
@@ -593,8 +593,10 @@
 			function i(e) {
 				switch (e) {
 					case n.Ethereum:
+					case n.EthTraderEthereum:
 						return "Ethereum Main Network";
 					case n.Rinkeby:
+					case n.EthTraderRinkeby:
 						return "Rinkeby Test Network"
 				}
 				return e + " Network"
@@ -622,7 +624,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(s)
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(n || (n = {}))
 		},
 		"./src/reddit/icons/svgs/Dollar/index.tsx": function(e, t, s) {
@@ -701,9 +703,9 @@
 			})), s.d(t, "g", (function() {
 				return x
 			})), s.d(t, "h", (function() {
-				return f
-			})), s.d(t, "i", (function() {
 				return h
+			})), s.d(t, "i", (function() {
+				return f
 			})), s.d(t, "j", (function() {
 				return g
 			})), s.d(t, "p", (function() {
@@ -719,9 +721,9 @@
 			})), s.d(t, "s", (function() {
 				return w
 			})), s.d(t, "a", (function() {
-				return _
-			})), s.d(t, "f", (function() {
 				return T
+			})), s.d(t, "f", (function() {
+				return _
 			})), s.d(t, "r", (function() {
 				return I
 			})), s.d(t, "n", (function() {
@@ -771,7 +773,7 @@
 					} : d
 				},
 				x = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				f = (e, t) => {
+				h = (e, t) => {
 					if (Object(i.a)(e)) {
 						const t = Object(a.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
@@ -784,7 +786,7 @@
 					}
 					return s
 				},
-				h = (e, t) => {
+				f = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
 				g = (e, t) => {
@@ -803,18 +805,18 @@
 					const s = O(e, t);
 					return s && s.walletProvider
 				},
-				_ = (e, t) => {
+				T = (e, t) => {
 					const s = w(e, t),
 						n = O(e, t);
 					return s && s.provider || n && n.provider
 				},
-				T = (e, t) => {
-					const s = _(e, t);
-					return s === r.a.Ethereum || s === r.a.Rinkeby
+				_ = (e, t) => {
+					const s = T(e, t);
+					return s === r.a.Ethereum || s === r.a.Rinkeby || s === r.a.EthTraderEthereum || s === r.a.EthTraderRinkeby
 				},
 				I = (e, t) => {
 					const s = w(e, t),
-						n = _(e, t);
+						n = T(e, t);
 					if (s && !s.inTransition && n === r.a.Stellar) return {
 						address: s.extra && s.extra.issuerAddress || "",
 						decimals: s.extra && s.extra.decimals || 7,
@@ -847,4 +849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.1ee90d7f9b2534c2e4c6.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.8ed60285bbcb6142d8b1.js.map

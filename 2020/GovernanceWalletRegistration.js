@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.a6a3aad5f3e742d1d234.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ed063bad38a55ddde82f.js
+// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -94,9 +94,9 @@
 			})), n.d(t, "i", (function() {
 				return L
 			})), n.d(t, "f", (function() {
-				return B
-			})), n.d(t, "g", (function() {
 				return T
+			})), n.d(t, "g", (function() {
+				return B
 			})), n.d(t, "j", (function() {
 				return W
 			})), n.d(t, "c", (function() {
@@ -135,7 +135,7 @@
 				S = Object(s.a)(v.w),
 				A = Object(s.a)(v.x),
 				L = Object(s.a)(v.y),
-				B = (e, t) => async (n, a, s) => {
+				T = (e, t) => async (n, a, s) => {
 					let r, {
 							apiContext: o,
 							gqlContext: i
@@ -165,7 +165,7 @@
 						pollId: e,
 						error: r.error || r.errors[0].message
 					})), Object(f.a)(n, r.error || r.errors[0].messsage)
-				}, T = (e, t) => async (n, s, c) => {
+				}, B = (e, t) => async (n, s, c) => {
 					let {
 						apiContext: u
 					} = c;
@@ -699,8 +699,8 @@
 						className: C.a.buttonIcon
 					}))))
 				},
-				B = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./src/reddit/actions/governance/errorToast.ts")),
-				T = n("./src/reddit/actions/toaster.ts"),
+				T = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./src/reddit/actions/governance/errorToast.ts")),
+				B = n("./src/reddit/actions/toaster.ts"),
 				W = n("./src/reddit/contexts/ApiContext.tsx"),
 				G = n("./src/reddit/controls/Checkbox/index.tsx"),
 				D = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -722,7 +722,7 @@
 						}));
 						const t = this.props.provider;
 						if (!t.startsWith("ethereum")) throw new Error("expected Ethereum provider");
-						if (t.split(":").pop() !== Object(l.d)()) {
+						if (t.split(":")[1] !== Object(l.d)()) {
 							const e = Object(D.c)(t);
 							return void this.props.onError(V.fbt._("Please select the {providerName} in MetaMask", [V.fbt._param("providerName", e)], {
 								hk: "2uEOyT"
@@ -791,8 +791,8 @@
 				}
 			}
 			var F = Object(W.b)(Object(r.b)(void 0, e => ({
-				onGovernanceError: t => Object(B.a)(e, t),
-				onError: t => e(Object(T.e)({
+				onGovernanceError: t => Object(T.a)(e, t),
+				onError: t => e(Object(B.e)({
 					duration: 5e3,
 					kind: U.b.Error,
 					text: t
@@ -1239,8 +1239,10 @@
 			function o(e) {
 				switch (e) {
 					case a.Ethereum:
+					case a.EthTraderEthereum:
 						return "Ethereum Main Network";
 					case a.Rinkeby:
+					case a.EthTraderRinkeby:
 						return "Rinkeby Test Network"
 				}
 				return e + " Network"
@@ -1268,7 +1270,7 @@
 					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(n)
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(a || (a = {}))
 		},
 		"./src/reddit/endpoints/governance/poll.ts": function(e, t, n) {
@@ -1680,7 +1682,7 @@
 				},
 				N = (e, t) => {
 					const n = E(e, t);
-					return n === s.a.Ethereum || n === s.a.Rinkeby
+					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
 				_ = (e, t) => {
 					const n = j(e, t),
@@ -1717,4 +1719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.a6a3aad5f3e742d1d234.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.ed063bad38a55ddde82f.js.map

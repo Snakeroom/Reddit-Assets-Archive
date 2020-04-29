@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.373f54583fdc75974df0.js
-// Retrieved at 4/28/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.868af3f124f2de11fb81.js
+// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -22005,8 +22005,10 @@
 			function i(e) {
 				switch (e) {
 					case s.Ethereum:
+					case s.EthTraderEthereum:
 						return "Ethereum Main Network";
 					case s.Rinkeby:
+					case s.EthTraderRinkeby:
 						return "Rinkeby Test Network"
 				}
 				return e + " Network"
@@ -22034,7 +22036,7 @@
 					endpoint: "".concat(o.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(n)
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(s || (s = {}))
 		},
 		"./src/reddit/endpoints/governance/poll.ts": function(e, t, n) {
@@ -30608,7 +30610,7 @@
 				},
 				k = (e, t) => {
 					const n = S(e, t);
-					return n === o.a.Ethereum || n === o.a.Rinkeby
+					return n === o.a.Ethereum || n === o.a.Rinkeby || n === o.a.EthTraderEthereum || n === o.a.EthTraderRinkeby
 				},
 				w = (e, t) => {
 					const n = j(e, t),
@@ -30743,4 +30745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.373f54583fdc75974df0.js.map
+//# sourceMappingURL=PostCreation.868af3f124f2de11fb81.js.map

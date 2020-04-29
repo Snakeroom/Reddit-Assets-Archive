@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.de748353c9f58ef7c7a6.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.9192dff4c43f0d2861cd.js
+// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Badges/index.m.less": function(e, t, i) {
@@ -377,7 +377,7 @@
 				})),
 				B = i("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Gifs/index.m.less"),
 				z = i.n(B);
-			const D = (() => {
+			const R = (() => {
 				const e = {};
 				return async t => {
 					if (e[t]) return e[t];
@@ -573,7 +573,7 @@
 					return e[t] = i, i
 				}
 			})();
-			class W extends r.a.Component {
+			class D extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						imagesCol1: [],
@@ -582,7 +582,7 @@
 				}
 				async componentDidMount() {
 					const e = this.props.subreddit && this.props.subreddit.title || "reddit",
-						t = await D(e),
+						t = await R(e),
 						i = [],
 						a = [];
 					t.data.forEach((e, t) => {
@@ -638,7 +638,7 @@
 					})))) : null
 				}
 			}
-			const R = Object(n.c)({
+			const W = Object(n.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: i
@@ -646,9 +646,9 @@
 					return e.subreddits.models[i]
 				}
 			});
-			var A = Object(d.b)(R)(W),
-				F = i("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.m.less"),
-				T = i.n(F);
+			var T = Object(d.b)(W)(D),
+				A = i("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.m.less"),
+				F = i.n(A);
 			const G = 1e4,
 				L = 110;
 			class M extends r.a.Component {
@@ -663,9 +663,9 @@
 						switch (e) {
 							case "t5_3oeyf":
 							case "t5_socj8":
-								return [P, O, A];
+								return [P, O, T];
 							default:
-								return [P, A]
+								return [P, T]
 						}
 					}(e.subredditId)
 				}
@@ -688,12 +688,12 @@
 					return n ? r.a.createElement("div", {
 						className: e
 					}, r.a.createElement("header", {
-						className: T.a.title
+						className: F.a.title
 					}, r.a.createElement("img", {
-						className: T.a.crown,
+						className: F.a.crown,
 						src: Object(o.a)(n, "Crown.gif")
 					}), i.membershipAlt), !t && r.a.createElement(r.a.Fragment, null, r.a.createElement("article", {
-						className: T.a.benefits
+						className: F.a.benefits
 					}, r.a.createElement(s.TransitionMotion, {
 						defaultStyles: [{
 							key: "slide-0",
@@ -722,7 +722,7 @@
 							left: Object(s.spring)(-L)
 						})
 					}, e => r.a.createElement(a.Fragment, null, e.map(e => r.a.createElement("div", {
-						className: T.a.slide,
+						className: F.a.slide,
 						key: e.key,
 						style: {
 							left: "".concat(e.style.left, "%")
@@ -731,10 +731,10 @@
 					}, r.a.createElement(e.data.Component, {
 						subredditId: d
 					})))))), r.a.createElement("footer", {
-						className: T.a.indicators
+						className: F.a.indicators
 					}, this.slides.map((e, t) => r.a.createElement("div", {
-						className: Object(c.a)(T.a.indicator, {
-							[T.a.indicatorSelected]: t === l
+						className: Object(c.a)(F.a.indicator, {
+							[F.a.indicatorSelected]: t === l
 						}),
 						key: t,
 						onClick: () => this.setState({
@@ -782,8 +782,10 @@
 			function d(e) {
 				switch (e) {
 					case a.Ethereum:
+					case a.EthTraderEthereum:
 						return "Ethereum Main Network";
 					case a.Rinkeby:
+					case a.EthTraderRinkeby:
 						return "Rinkeby Test Network"
 				}
 				return e + " Network"
@@ -811,7 +813,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(i)
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(a || (a = {}))
 		},
 		"./src/reddit/helpers/economics/membershipPage.ts": function(e, t, i) {
@@ -962,7 +964,7 @@
 				},
 				P = (e, t) => {
 					const i = S(e, t);
-					return i === r.a.Ethereum || i === r.a.Rinkeby
+					return i === r.a.Ethereum || i === r.a.Rinkeby || i === r.a.EthTraderEthereum || i === r.a.EthTraderRinkeby
 				},
 				k = (e, t) => {
 					const i = N(e, t),
@@ -999,4 +1001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.de748353c9f58ef7c7a6.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.9192dff4c43f0d2861cd.js.map

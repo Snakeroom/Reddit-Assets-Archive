@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.4dd8b62ec7860fd66dde.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceOptOutModal.0e1836f09b104ef32a62.js
+// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceOptOutModal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -31,7 +31,7 @@
 			})), n.d(t, "e", (function() {
 				return _
 			})), n.d(t, "h", (function() {
-				return C
+				return P
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "f", (function() {
@@ -41,7 +41,7 @@
 			})), n.d(t, "j", (function() {
 				return S
 			})), n.d(t, "c", (function() {
-				return L
+				return R
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -68,10 +68,10 @@
 				N = Object(s.a)(g.j),
 				I = Object(s.a)(g.k),
 				w = Object(s.a)(g.l),
-				P = Object(s.a)(g.r),
-				C = Object(s.a)(g.s),
-				E = Object(s.a)(g.t),
-				T = Object(s.a)(g.u),
+				E = Object(s.a)(g.r),
+				P = Object(s.a)(g.s),
+				T = Object(s.a)(g.t),
+				C = Object(s.a)(g.u),
 				M = Object(s.a)(g.v),
 				G = Object(s.a)(g.w),
 				U = Object(s.a)(g.x),
@@ -110,7 +110,7 @@
 					let {
 						apiContext: l
 					} = d;
-					n(E());
+					n(T());
 					const b = s().transfers.communityPoints.contentId || void 0,
 						m = await
 					function(e, t) {
@@ -127,7 +127,7 @@
 					}(l(), Object.assign({}, e, {
 						contentId: b
 					}));
-					m.ok ? (n(T(Object.assign({}, m.body, {
+					m.ok ? (n(C(Object.assign({}, m.body, {
 						subredditId: e.subredditId
 					}))), n(Object(c.e)({
 						kind: p.b.SuccessCommunity,
@@ -136,7 +136,7 @@
 						})), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(a.f)())) : (n(P({
+					})), t && n(Object(a.f)())) : (n(E({
 						error: m.error
 					})), Object(j.a)(n, m.error))
 				}, S = e => async (t, n, r) => {
@@ -148,7 +148,7 @@
 					o.ok ? t(U(o.body)) : t(M({
 						error: o.error
 					}))
-				}, L = (e, t) => async (n, s, o) => {
+				}, R = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -381,8 +381,10 @@
 			function a(e) {
 				switch (e) {
 					case r.Ethereum:
+					case r.EthTraderEthereum:
 						return "Ethereum Main Network";
 					case r.Rinkeby:
+					case r.EthTraderRinkeby:
 						return "Rinkeby Test Network"
 				}
 				return e + " Network"
@@ -410,7 +412,7 @@
 					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(n)
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(r || (r = {}))
 		},
 		"./src/reddit/endpoints/governance/poll.ts": function(e, t, n) {
@@ -546,9 +548,9 @@
 			})), n.d(t, "r", (function() {
 				return w
 			})), n.d(t, "n", (function() {
-				return P
+				return E
 			})), n.d(t, "k", (function() {
-				return C
+				return P
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -631,7 +633,7 @@
 				},
 				I = (e, t) => {
 					const n = N(e, t);
-					return n === s.a.Ethereum || n === s.a.Rinkeby
+					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
 				w = (e, t) => {
 					const n = _(e, t),
@@ -650,7 +652,7 @@
 						image: a.image
 					}
 				},
-				P = (e, t) => {
+				E = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -661,11 +663,11 @@
 						address: void 0
 					}
 				},
-				C = (e, t) => {
+				P = (e, t) => {
 					const n = y(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceOptOutModal.4dd8b62ec7860fd66dde.js.map
+//# sourceMappingURL=GovernanceOptOutModal.0e1836f09b104ef32a62.js.map

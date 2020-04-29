@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.6653ca72bc53053ce226.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8a8c1e6a4474c380d836.js
+// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -77,15 +77,15 @@
 				}),
 				y = a("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				B = a.n(y);
-			const x = "add-custom-badge-tooltip",
-				E = 100,
-				_ = 2 * E;
+			const E = "add-custom-badge-tooltip",
+				x = 100,
+				_ = 2 * x;
 			class j extends s.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, E)), this.mouseOverTooltip = e
+						}, x)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
@@ -97,7 +97,7 @@
 						className: Object(i.a)(B.a.image, this.props.className),
 						src: "".concat(c.a.assetPath, "/img/badges/placeholder.png")
 					});
-					const e = "".concat(x, "-").concat(this.props.uniqueIdentifier);
+					const e = "".concat(E, "-").concat(this.props.uniqueIdentifier);
 					return s.a.createElement(n.Fragment, null, this.props.showAddCustom && s.a.createElement("div", {
 						className: B.a.wrapper,
 						id: e,
@@ -659,8 +659,8 @@
 					srcSet: "".concat(t, ", ").concat(a, " 2x")
 				}))
 			}
-			var x = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/BadgeGroup/index.m.less"),
-				E = a.n(x);
+			var E = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/BadgeGroup/index.m.less"),
+				x = a.n(E);
 
 			function _(e) {
 				const {
@@ -679,23 +679,23 @@
 					[]
 				]);
 				return s.a.createElement("div", {
-					className: Object(g.a)(a, E.a.container)
+					className: Object(g.a)(a, x.a.container)
 				}, s.a.createElement("div", {
-					className: E.a.centerContent
+					className: x.a.centerContent
 				}, c && s.a.createElement("header", {
-					className: E.a.title,
+					className: x.a.title,
 					style: {
 						color: d
 					}
 				}, c), n && s.a.createElement("div", {
-					className: E.a.description
+					className: x.a.description
 				}, n), s.a.createElement("article", {
-					className: E.a.grid
+					className: x.a.grid
 				}, i.map((e, t) => s.a.createElement("div", {
-					className: Object(g.a)(E.a.row),
+					className: Object(g.a)(x.a.row),
 					key: "".concat(c, "-").concat(t)
 				}, e.map((e, a) => s.a.createElement("div", {
-					className: Object(g.a)(E.a.item, E.a.itemBottom),
+					className: Object(g.a)(x.a.item, x.a.itemBottom),
 					key: "".concat(c, "-").concat(t, "-").concat(a)
 				}, e)))))))
 			}
@@ -1088,9 +1088,9 @@
 				fe = a("./src/reddit/helpers/economics/membershipPage.ts"),
 				ye = a("./src/reddit/selectors/telemetry.ts"),
 				Be = a("./node_modules/uuid/v4.js"),
-				xe = a.n(Be),
-				Ee = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/MyBadges/NoBadges/index.m.less"),
-				_e = a.n(Ee);
+				Ee = a.n(Be),
+				xe = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/MyBadges/NoBadges/index.m.less"),
+				_e = a.n(xe);
 			const je = Object(r.c)({
 				meta: (e, t) => {
 					let {
@@ -1115,7 +1115,7 @@
 					}
 				})((function(e) {
 					const t = "".concat(N.a.assetPath, "/img/memberships/badges/management/myBadges/").concat(e.subredditId, "/noBadges.png"),
-						a = xe()(),
+						a = Ee()(),
 						n = e.subreddit ? e.subreddit.name : "";
 					return s.a.createElement("div", {
 						className: Object(g.a)(_e.a.container, e.className)
@@ -1371,7 +1371,7 @@
 					}
 				})((function(e) {
 					const t = e.subreddit ? e.subreddit.name : "",
-						a = xe()();
+						a = Ee()();
 					return s.a.createElement("footer", {
 						className: Object(g.a)(e.className, ct.a.container)
 					}, s.a.createElement("div", {
@@ -1537,10 +1537,10 @@
 					stiffness: 210,
 					damping: 20
 				},
-				xt = () => ({
+				Et = () => ({
 					bottom: -200
 				}),
-				Et = () => ({
+				xt = () => ({
 					bottom: Object(Ge.spring)(-200, Bt)
 				}),
 				_t = [40, 68, 96];
@@ -1619,8 +1619,8 @@
 								bottom: Object(Ge.spring)(16, Bt)
 							}
 						}] : [],
-						willEnter: xt,
-						willLeave: Et
+						willEnter: Et,
+						willLeave: xt
 					}, t => s.a.createElement(s.a.Fragment, null, t.map(t => s.a.createElement("div", {
 						className: yt.a.badgePreviewContainer,
 						key: t.key,
@@ -2006,8 +2006,10 @@
 			function r(e) {
 				switch (e) {
 					case n.Ethereum:
+					case n.EthTraderEthereum:
 						return "Ethereum Main Network";
 					case n.Rinkeby:
+					case n.EthTraderRinkeby:
 						return "Rinkeby Test Network"
 				}
 				return e + " Network"
@@ -2035,7 +2037,7 @@
 					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(a)
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(n || (n = {}))
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, a) {
@@ -2285,9 +2287,9 @@
 			})), a.d(t, "q", (function() {
 				return B
 			})), a.d(t, "o", (function() {
-				return x
-			})), a.d(t, "l", (function() {
 				return E
+			})), a.d(t, "l", (function() {
+				return x
 			})), a.d(t, "m", (function() {
 				return _
 			})), a.d(t, "s", (function() {
@@ -2330,15 +2332,15 @@
 					}
 				},
 				u = (e, t) => {
-					const a = E(e, t);
+					const a = x(e, t);
 					if (a) return a.mainHeader
 				},
 				p = (e, t) => {
-					const a = E(e, t);
+					const a = x(e, t);
 					return a && a.mainHeader ? a.mainHeader.price : "0"
 				},
 				g = (e, t) => {
-					const a = E(e, t);
+					const a = x(e, t);
 					return a && a.mainHeader ? {
 						owner: a.mainHeader.owner,
 						ownerId: a.mainHeader.ownerId
@@ -2367,11 +2369,11 @@
 				},
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				B = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
-				x = (e, t) => {
+				E = (e, t) => {
 					const a = w(e, t);
 					return a && a.decimals ? "1" + "0".repeat(a.decimals) : "1"
 				},
-				E = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				x = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				_ = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				j = (e, t) => {
 					const a = _(e, t);
@@ -2384,7 +2386,7 @@
 				},
 				C = (e, t) => {
 					const a = O(e, t);
-					return a === s.a.Ethereum || a === s.a.Rinkeby
+					return a === s.a.Ethereum || a === s.a.Rinkeby || a === s.a.EthTraderEthereum || a === s.a.EthTraderRinkeby
 				},
 				w = (e, t) => {
 					const a = j(e, t),
@@ -2421,4 +2423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.6653ca72bc53053ce226.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.8a8c1e6a4474c380d836.js.map
