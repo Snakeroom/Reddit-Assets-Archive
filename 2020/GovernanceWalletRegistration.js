@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.ed063bad38a55ddde82f.js
-// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.79b36b189da5f28ecfda.js
+// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -126,8 +126,8 @@
 				j = (Object(s.a)(v.g), Object(s.a)(v.h), Object(s.a)(v.i)),
 				E = Object(s.a)(v.j),
 				N = Object(s.a)(v.k),
-				_ = Object(s.a)(v.l),
-				O = Object(s.a)(v.r),
+				O = Object(s.a)(v.l),
+				_ = Object(s.a)(v.r),
 				I = Object(s.a)(v.s),
 				M = Object(s.a)(v.t),
 				P = Object(s.a)(v.u),
@@ -153,7 +153,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(_(r.body));
+						} else n(O(r.body));
 						const s = a();
 						if ((d = s.polls.models[e]) && Object(b.d)(d)) {
 							const {
@@ -195,7 +195,7 @@
 						})), a.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(o.f)())) : (n(O({
+					})), t && n(Object(o.f)())) : (n(_({
 						error: b.error
 					})), Object(f.a)(n, b.error))
 				}, W = e => async (t, n, a) => {
@@ -238,6 +238,11 @@
 					}))) : Object(f.a)(n, c.error)
 				}
 		},
+		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
+			e.exports = {
+				grey: "_3oUx7R2UEz3llZLsIONH4x"
+			}
+		},
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
@@ -245,15 +250,29 @@
 				r = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/config.ts"),
-				i = n("./src/reddit/selectors/gov.ts");
-			const d = Object(o.c)({
-				tokenSymbol: i.q
+				i = n("./src/lib/classNames/index.ts"),
+				d = n("./src/reddit/selectors/gov.ts"),
+				l = n("./src/reddit/components/Governance/Token/index.m.less"),
+				u = n.n(l);
+			const m = Object(o.c)({
+				tokenSymbol: d.q
 			});
-			t.a = Object(r.b)(d)((function(e) {
-				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
+			t.a = Object(r.b)(m)((function(e) {
+				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
+					n = "".concat(c.a.assetPath, "/").concat(t);
+				if (e.grey && n.endsWith(".svg")) {
+					const t = "url(".concat(n, ") center/cover");
+					return s.a.createElement("div", {
+						className: Object(i.a)(u.a.grey, e.className),
+						style: {
+							mask: t,
+							WebkitMask: t
+						}
+					})
+				}
 				return s.a.createElement("img", {
 					className: e.className,
-					src: "".concat(c.a.assetPath, "/").concat(t)
+					src: n
 				})
 			}))
 		},
@@ -554,7 +573,7 @@
 			}
 			var E = n("./src/chat/icons/svgs/Refresh/index.tsx"),
 				N = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				_ = e => s.a.createElement("svg", {
+				O = e => s.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 16 16",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -563,7 +582,7 @@
 					clipRule: "evenodd",
 					d: "M10.5554 7.77144L7.88871 10.4381C7.81404 10.5128 7.71652 10.5493 7.619 10.5493C7.52224 10.5493 7.42471 10.5128 7.35004 10.4381L4.68338 7.77144C4.57443 7.66249 4.54166 7.49868 4.60109 7.3562C4.65976 7.21449 4.79843 7.12077 4.95233 7.12077H6.44338V5.06896C6.44338 4.85868 6.61404 4.68801 6.82433 4.68801H8.41443C8.62471 4.68801 8.79538 4.85868 8.79538 5.06896V7.12077H10.2857C10.4403 7.12077 10.579 7.21449 10.6377 7.3562C10.6971 7.49868 10.6643 7.66249 10.5554 7.77144M7.61926 1.14285C4.04821 1.14285 1.14307 4.048 1.14307 7.61904C1.14307 11.1893 4.04821 14.0952 7.61926 14.0952C11.1903 14.0952 14.0954 11.1893 14.0954 7.61904C14.0954 4.048 11.1903 1.14285 7.61926 1.14285"
 				})),
-				O = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
+				_ = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", P = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
@@ -622,7 +641,7 @@
 						className: C.a.buttonIcon
 					})) : e ? s.a.createElement(g.f, {
 						className: C.a.button,
-						onClick: O.a
+						onClick: _.a
 					}, I._("Reload page", null, {
 						hk: "14fa9z"
 					}), s.a.createElement(E.a, {
@@ -636,7 +655,7 @@
 						})
 					}, I._("Get Extension", null, {
 						hk: "ey9hD"
-					}), s.a.createElement(_, {
+					}), s.a.createElement(O, {
 						className: C.a.buttonIcon
 					}))))
 				}
@@ -937,7 +956,7 @@
 							activeTab: t
 						}), this.sendViewTabEvent(t)
 					}, this.correlationId = p()();
-					const t = Object(O.b)(e.pageLayer);
+					const t = Object(_.b)(e.pageLayer);
 					this.state = {
 						activeTab: t && Object(l.e)() ? Z.Wallet : Z.About
 					}
@@ -1595,9 +1614,9 @@
 			})), n.d(t, "f", (function() {
 				return N
 			})), n.d(t, "r", (function() {
-				return _
-			})), n.d(t, "n", (function() {
 				return O
+			})), n.d(t, "n", (function() {
+				return _
 			})), n.d(t, "k", (function() {
 				return I
 			}));
@@ -1666,7 +1685,7 @@
 				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				k = (e, t) => {
-					const n = _(e, t);
+					const n = O(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -1684,7 +1703,7 @@
 					const n = E(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
-				_ = (e, t) => {
+				O = (e, t) => {
 					const n = j(e, t),
 						a = E(e, t);
 					if (n && !n.inTransition && a === s.a.Stellar) return {
@@ -1701,7 +1720,7 @@
 						image: o.image
 					}
 				},
-				O = (e, t) => {
+				_ = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -1719,4 +1738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.ed063bad38a55ddde82f.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.79b36b189da5f28ecfda.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.f76548627d045580f6f4.js
-// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.6a5d986fcacead1b0bd9.js
+// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, n) {
@@ -13,6 +13,11 @@
 				return e.replace(/[^0-9.]/g, "").replace(/^0+/, "") || "0"
 			}
 		},
+		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
+			e.exports = {
+				grey: "_3oUx7R2UEz3llZLsIONH4x"
+			}
+		},
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -20,15 +25,29 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/config.ts"),
-				c = n("./src/reddit/selectors/gov.ts");
-			const d = Object(i.c)({
-				tokenSymbol: c.q
+				c = n("./src/lib/classNames/index.ts"),
+				d = n("./src/reddit/selectors/gov.ts"),
+				l = n("./src/reddit/components/Governance/Token/index.m.less"),
+				u = n.n(l);
+			const m = Object(i.c)({
+				tokenSymbol: d.q
 			});
-			t.a = Object(a.b)(d)((function(e) {
-				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
+			t.a = Object(a.b)(m)((function(e) {
+				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
+					n = "".concat(o.a.assetPath, "/").concat(t);
+				if (e.grey && n.endsWith(".svg")) {
+					const t = "url(".concat(n, ") center/cover");
+					return s.a.createElement("div", {
+						className: Object(c.a)(u.a.grey, e.className),
+						style: {
+							mask: t,
+							WebkitMask: t
+						}
+					})
+				}
 				return s.a.createElement("img", {
 					className: e.className,
-					src: "".concat(o.a.assetPath, "/").concat(t)
+					src: n
 				})
 			}))
 		},
@@ -62,11 +81,11 @@
 				v = n("./node_modules/fbt/lib/FbtPublic.js");
 			const E = 2,
 				C = 20;
-			var w;
+			var N;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Error = 1] = "Error", e[e.Invalid = 2] = "Invalid", e[e.Searching = 3] = "Searching", e[e.Valid = 4] = "Valid"
-			}(w || (w = {}));
-			class N extends i.a.PureComponent {
+			}(N || (N = {}));
+			class y extends i.a.PureComponent {
 				constructor(e) {
 					super(e), this.handleInputChange = e => {
 						const t = e.currentTarget.value;
@@ -77,16 +96,16 @@
 						if (e && e.length > E) {
 							switch (this.props.usernameAvailability[e]) {
 								case l.b.Available:
-									return w.Invalid;
+									return N.Invalid;
 								case l.b.Error:
-									return w.Error;
+									return N.Error;
 								case l.b.Unavailable:
-									return w.Valid;
+									return N.Valid;
 								default:
-									return w.Searching
+									return N.Searching
 							}
 						}
-						return w.Empty
+						return N.Empty
 					}, this.state = {
 						username: e.initialUsername || ""
 					}, e.initialUsername && e.onCheckUsername(e.initialUsername)
@@ -100,7 +119,7 @@
 				informParentOfNameChange() {
 					if (this.props.onChange) {
 						const e = this.state.username;
-						this.props.onChange(e, this.usernameValidity(e) === w.Valid)
+						this.props.onChange(e, this.usernameValidity(e) === N.Valid)
 					}
 				}
 				render() {
@@ -115,7 +134,7 @@
 						}),
 						max: C,
 						style: {
-							borderColor: y(e)
+							borderColor: w(e)
 						},
 						tabIndex: this.props.tabIndex,
 						type: "text",
@@ -123,27 +142,27 @@
 						onChange: this.handleInputChange
 					}), function(e) {
 						switch (e) {
-							case w.Error:
+							case N.Error:
 								return i.a.createElement(b.a, {
 									className: g.a.icon,
 									style: {
 										fill: u.a.notice
 									}
 								});
-							case w.Invalid:
+							case N.Invalid:
 								return i.a.createElement(f.a, {
 									className: g.a.icon,
 									style: {
 										fill: u.a.warning
 									}
 								});
-							case w.Searching:
+							case N.Searching:
 								return i.a.createElement("div", {
 									className: g.a.loadingIcon
 								}, i.a.createElement(p.a, {
 									sizePx: 8
 								}));
-							case w.Valid:
+							case N.Valid:
 								return i.a.createElement(h.a, {
 									className: g.a.icon
 								});
@@ -153,15 +172,15 @@
 					}(e), i.a.createElement("div", {
 						className: g.a.message,
 						style: {
-							color: y(e)
+							color: w(e)
 						}
 					}, function(e, t) {
 						switch (t) {
-							case w.Error:
+							case N.Error:
 								return v.fbt._("Could not check that username. Are you sure it's correct?", null, {
 									hk: "1sNHpI"
 								});
-							case w.Invalid:
+							case N.Invalid:
 								return v.fbt._("Cannot find this username.", null, {
 									hk: "Imvaj"
 								});
@@ -172,11 +191,11 @@
 				}
 			}
 
-			function y(e) {
+			function w(e) {
 				switch (e) {
-					case w.Error:
+					case N.Error:
 						return u.a.notice;
-					case w.Invalid:
+					case N.Invalid:
 						return u.a.warning
 				}
 			}
@@ -188,7 +207,7 @@
 				onCheckUsername: s()(t => e(Object(l.f)({
 					username: t
 				})), 250)
-			}))(N)
+			}))(y)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -251,11 +270,11 @@
 					}))))
 				}),
 				C = n("./src/reddit/controls/ErrorText/index.m.less"),
-				w = n.n(C);
-			const N = Object(u.c)({
+				N = n.n(C);
+			const y = Object(u.c)({
 				activeModalId: h.a
 			});
-			class y extends d.a.Component {
+			class w extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -297,12 +316,12 @@
 						textHasOverflowed: c
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(w.a.wrapper, n)
+						className: Object(m.a)(N.a.wrapper, n)
 					}, d.a.createElement("span", {
-						className: w.a.description,
+						className: N.a.description,
 						ref: this.spanRef
 					}, e), c && d.a.createElement("span", {
-						className: w.a.moreText,
+						className: N.a.moreText,
 						onClick: this.toggleModal
 					}, i), t === o && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
@@ -310,9 +329,9 @@
 					}, s || e))
 				}
 			}
-			const I = Object(l.b)(N, e => ({
+			const I = Object(l.b)(y, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(y),
+				}))(w),
 				j = e => {
 					const {
 						className: t,
@@ -707,11 +726,11 @@
 			})), n.d(t, "o", (function() {
 				return C
 			})), n.d(t, "l", (function() {
-				return w
-			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "m", (function() {
 				return y
+			})), n.d(t, "s", (function() {
+				return w
 			})), n.d(t, "a", (function() {
 				return I
 			})), n.d(t, "f", (function() {
@@ -721,7 +740,7 @@
 			})), n.d(t, "n", (function() {
 				return O
 			})), n.d(t, "k", (function() {
-				return T
+				return k
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -738,7 +757,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = y(e, {
+					const r = w(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -750,15 +769,15 @@
 					}
 				},
 				m = (e, t) => {
-					const n = w(e, t);
+					const n = N(e, t);
 					if (n) return n.mainHeader
 				},
 				p = (e, t) => {
-					const n = w(e, t);
+					const n = N(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				h = (e, t) => {
-					const n = w(e, t);
+					const n = N(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -791,15 +810,15 @@
 					const n = _(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				N = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				y = (e, t) => {
-					const n = N(e, t);
+				N = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				w = (e, t) => {
+					const n = y(e, t);
 					return n && n.walletProvider
 				},
 				I = (e, t) => {
-					const n = y(e, t),
-						r = N(e, t);
+					const n = w(e, t),
+						r = y(e, t);
 					return n && n.provider || r && r.provider
 				},
 				j = (e, t) => {
@@ -807,7 +826,7 @@
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
 				_ = (e, t) => {
-					const n = y(e, t),
+					const n = w(e, t),
 						r = I(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -827,18 +846,18 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = y(e, {
+					const r = w(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
 						address: void 0
 					}
 				},
-				T = (e, t) => {
-					const n = N(e, t);
+				k = (e, t) => {
+					const n = y(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.f76548627d045580f6f4.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.6a5d986fcacead1b0bd9.js.map

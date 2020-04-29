@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.777c5b8ffe01b7bec539.js
-// Retrieved at 4/29/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.772e2d938c498d4047a1.js
+// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -4948,6 +4948,11 @@
 				input: "AyMlaMkumG28uV6ZIz9ed"
 			}
 		},
+		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
+			e.exports = {
+				grey: "_3oUx7R2UEz3llZLsIONH4x"
+			}
+		},
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -4955,15 +4960,29 @@
 				r = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/config.ts"),
-				c = n("./src/reddit/selectors/gov.ts");
-			const l = Object(i.c)({
-				tokenSymbol: c.q
+				c = n("./src/lib/classNames/index.ts"),
+				l = n("./src/reddit/selectors/gov.ts"),
+				d = n("./src/reddit/components/Governance/Token/index.m.less"),
+				u = n.n(d);
+			const p = Object(i.c)({
+				tokenSymbol: l.q
 			});
-			t.a = Object(r.b)(l)((function(e) {
-				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
+			t.a = Object(r.b)(p)((function(e) {
+				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
+					n = "".concat(a.a.assetPath, "/").concat(t);
+				if (e.grey && n.endsWith(".svg")) {
+					const t = "url(".concat(n, ") center/cover");
+					return o.a.createElement("div", {
+						className: Object(c.a)(u.a.grey, e.className),
+						style: {
+							mask: t,
+							WebkitMask: t
+						}
+					})
+				}
 				return o.a.createElement("img", {
 					className: e.className,
-					src: "".concat(a.a.assetPath, "/").concat(t)
+					src: n
 				})
 			}))
 		},
@@ -30745,4 +30764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.777c5b8ffe01b7bec539.js.map
+//# sourceMappingURL=PostCreation.772e2d938c498d4047a1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.855cba624db4931c5e39.js
-// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.b773d1991683a459ad9c.js
+// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -148,9 +148,9 @@
 				v = a("./src/reddit/icons/svgs/Tag/index.tsx"),
 				f = a("./src/reddit/models/Flair/index.ts"),
 				C = a("./src/reddit/components/Badges/PickerModal/FlairPicker/index.m.less"),
-				E = a.n(C);
+				y = a.n(C);
 			const {
-				fbt: y
+				fbt: E
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			class k extends r.a.Component {
 				constructor(e) {
@@ -174,34 +174,34 @@
 				render() {
 					const e = this.props.userFlairData.permissions.canUserChange;
 					return r.a.createElement("div", {
-						className: Object(o.a)(this.props.className, E.a.container)
+						className: Object(o.a)(this.props.className, y.a.container)
 					}, e ? this.renderTitle() : this.renderCannotSetFlair(), r.a.createElement("div", {
-						className: E.a.content
+						className: y.a.content
 					}, e && this.renderFlairSearch(), r.a.createElement("div", {
-						className: E.a.controls
+						className: y.a.controls
 					}, this.renderToggleFlair(), r.a.createElement("div", {
-						className: E.a.buttons
+						className: y.a.buttons
 					}, e && this.renderFlairClear(), this.renderFlairApply()))))
 				}
 				renderTitle() {
 					return r.a.createElement("div", {
-						className: E.a.title
-					}, y._("select flair", null, {
+						className: y.a.title
+					}, E._("select flair", null, {
 						hk: "2V1TGh"
 					}))
 				}
 				renderCannotSetFlair() {
 					return r.a.createElement("div", {
-						className: E.a.cannotSet
+						className: y.a.cannotSet
 					}, r.a.createElement(v.a, {
-						className: E.a.tag
+						className: y.a.tag
 					}), r.a.createElement("div", {
-						className: E.a.cannotSetTitle
-					}, y._("unavailable", null, {
+						className: y.a.cannotSetTitle
+					}, E._("unavailable", null, {
 						hk: "4ph1Lx"
 					})), r.a.createElement("div", {
-						className: E.a.cannotSetText
-					}, y._("This community does not allow you to select flair", null, {
+						className: y.a.cannotSetText
+					}, E._("This community does not allow you to select flair", null, {
 						hk: "4qhrnl"
 					})))
 				}
@@ -209,7 +209,7 @@
 					return r.a.createElement(p.a, {
 						flair: this.state.previewFlair || null,
 						flairTemplateType: f.d.UserFlair,
-						className: E.a.flairSearch,
+						className: y.a.flairSearch,
 						subredditId: this.props.subredditId,
 						templates: this.props.userFlairData.templates,
 						templateIds: this.props.userFlairData.templateIds,
@@ -218,22 +218,22 @@
 				}
 				renderToggleFlair() {
 					return r.a.createElement("div", {
-						className: E.a.flairClear
+						className: y.a.flairClear
 					}, r.a.createElement(b.a, {
 						"data-redditstyle": !0,
 						name: "showFlair",
 						onChange: this.handleToggleFlair,
 						value: this.state.userAllowsFlair
 					}, r.a.createElement("span", {
-						className: E.a.flairClearText
-					}, y._("Show my user flair on this community", null, {
+						className: y.a.flairClearText
+					}, E._("Show my user flair on this community", null, {
 						hk: "1BGCCB"
 					}))))
 				}
 				renderFlairClear() {
 					return r.a.createElement(h.n, {
 						onClick: this.handleClearPreviewFlair
-					}, y._("Clear flair", null, {
+					}, E._("Clear flair", null, {
 						hk: "4eVLMj"
 					}))
 				}
@@ -241,7 +241,7 @@
 					return r.a.createElement(h.f, {
 						disabled: !!this.state.previewFlair && Object(x.g)(this.state.previewFlair).length > g.g,
 						onClick: () => this.props.onApplyFlair(this.state.previewFlair, this.state.previewFlair ? this.state.previewFlair.templateId : void 0, this.state.userAllowsFlair)
-					}, y._("Apply", null, {
+					}, E._("Apply", null, {
 						hk: "4xCiu1"
 					}))
 				}
@@ -276,8 +276,8 @@
 			}
 			var F = a("./src/lib/prettyPrintNumber/index.ts"),
 				M = a("./src/reddit/actions/product.ts"),
-				P = a("./src/reddit/components/Governance/Token/index.tsx"),
-				S = a("./src/reddit/models/Product/index.ts"),
+				S = a("./src/reddit/components/Governance/Token/index.tsx"),
+				P = a("./src/reddit/models/Product/index.ts"),
 				T = a("./src/reddit/selectors/gov.ts"),
 				L = a("./src/reddit/models/Badge/index.ts"),
 				A = a("./src/reddit/selectors/products.ts"),
@@ -301,7 +301,7 @@
 					className: H.a.placeholderImage
 				})
 			}
-			const K = Object(d.c)({
+			const Z = Object(d.c)({
 				alreadyOwned: A.b,
 				language: e => e.user.language,
 				product: (e, t) => {
@@ -323,7 +323,7 @@
 					}
 				}
 			});
-			var Z = Object(n.b)(K, (e, t) => {
+			var K = Object(n.b)(Z, (e, t) => {
 					let {
 						productId: a
 					} = t;
@@ -369,19 +369,19 @@
 					}(e.product, e.language))
 				})),
 				R = a("./src/reddit/components/Badges/PickerModal/Gallery/BadgePlaceholder/index.m.less"),
-				Q = a.n(R);
+				U = a.n(R);
 
-			function U(e) {
+			function Q(e) {
 				return r.a.createElement("div", {
-					className: Object(o.a)(Q.a.container, e.className)
+					className: Object(o.a)(U.a.container, e.className)
 				}, r.a.createElement("div", {
-					className: Q.a.image
+					className: U.a.image
 				}), r.a.createElement("div", {
-					className: Q.a.name
+					className: U.a.name
 				}), r.a.createElement("div", {
-					className: Q.a.button
+					className: U.a.button
 				}), r.a.createElement("div", {
-					className: Q.a.quantity
+					className: U.a.quantity
 				}))
 			}
 			var X = a("./src/reddit/components/Badges/PickerModal/Gallery/index.m.less"),
@@ -404,10 +404,10 @@
 						className: W.a.badges
 					}, this.props.productsPending ? Array.from({
 						length: 5
-					}).map((e, t) => r.a.createElement(U, {
+					}).map((e, t) => r.a.createElement(Q, {
 						className: W.a.badge,
 						key: t
-					})) : this.props.productIds.map(e => r.a.createElement(Z, {
+					})) : this.props.productIds.map(e => r.a.createElement(K, {
 						productId: e,
 						className: W.a.badge,
 						key: e
@@ -416,7 +416,7 @@
 				renderWallet(e, t) {
 					return r.a.createElement("div", {
 						className: W.a.wallet
-					}, r.a.createElement(P.a, {
+					}, r.a.createElement(S.a, {
 						className: W.a.tokenSymbol,
 						subredditId: t
 					}), Object(F.a)(e.amount))
@@ -429,7 +429,7 @@
 					} = t;
 					const s = e.subreddits.products[a] || {},
 						r = e.products.models;
-					return Object.keys(s).filter(e => !!r[e]).filter(e => r[e].type === S.a.Badge).sort((e, t) => {
+					return Object.keys(s).filter(e => !!r[e]).filter(e => r[e].type === P.a.Badge).sort((e, t) => {
 						const a = r[e],
 							s = r[t],
 							n = new _.BigNumber(a.price || "0"),
@@ -594,8 +594,8 @@
 				language: e => e.user.language
 			});
 			var Ce = Object(n.b)(fe)(xe),
-				Ee = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
-				ye = a.n(Ee);
+				ye = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
+				Ee = a.n(ye);
 			const {
 				fbt: ke
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -620,31 +620,31 @@
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: Object(o.a)(this.props.className, ye.a.container)
+						className: Object(o.a)(this.props.className, Ee.a.container)
 					}, this.renderTitle(), this.props.badgesPending ? this.renderPlaceholder() : this.props.badgeIds.length ? this.renderBadges() : this.renderNoBadges(), this.renderControls())
 				}
 				renderTitle() {
 					return r.a.createElement("header", {
-						className: ye.a.title
+						className: Ee.a.title
 					}, ke._("select badge", null, {
 						hk: "3PfVt7"
 					}))
 				}
 				renderPlaceholder() {
 					return r.a.createElement("article", {
-						className: ye.a.badges
+						className: Ee.a.badges
 					}, Array.from({
 						length: 5
-					}).map((e, t) => r.a.createElement(U, {
-						className: ye.a.placeholder,
+					}).map((e, t) => r.a.createElement(Q, {
+						className: Ee.a.placeholder,
 						key: t
 					})))
 				}
 				renderBadges() {
 					return r.a.createElement("article", {
-						className: ye.a.badges
+						className: Ee.a.badges
 					}, this.props.badgeIds.map(e => r.a.createElement("div", {
-						className: ye.a.badge,
+						className: Ee.a.badge,
 						key: e
 					}, r.a.createElement(Ce, {
 						badgeId: e,
@@ -655,15 +655,15 @@
 				}
 				renderNoBadges() {
 					return r.a.createElement("div", {
-						className: ye.a.noBadges
+						className: Ee.a.noBadges
 					}, r.a.createElement(te, {
-						className: ye.a.noBadgesIcon
+						className: Ee.a.noBadgesIcon
 					}), r.a.createElement("div", {
-						className: ye.a.noBadgesTitle
+						className: Ee.a.noBadgesTitle
 					}, ke._("no badges", null, {
 						hk: "6J0yS"
 					})), r.a.createElement("div", {
-						className: ye.a.noBadgesText
+						className: Ee.a.noBadgesText
 					}, ke._("You don't have any badges yet. Get them from the Gallery.", null, {
 						hk: "1ZYa4V"
 					})), r.a.createElement(h.i, {
@@ -674,12 +674,12 @@
 				}
 				renderControls() {
 					return r.a.createElement("div", {
-						className: ye.a.controls
+						className: Ee.a.controls
 					}, this.renderClear(), this.renderApply())
 				}
 				renderClear() {
 					return r.a.createElement("div", {
-						className: ye.a.toggleContainer
+						className: Ee.a.toggleContainer
 					}, r.a.createElement(h.n, {
 						disabled: 0 === this.state.selectedBadges.size || 0 === this.props.badgeIds.length,
 						onClick: this.handleClearBadges
@@ -769,23 +769,23 @@
 						flair: e.flair
 					})))
 				})),
-				Pe = a("./src/reddit/components/Badges/PickerModal/Title/index.m.less"),
-				Se = a.n(Pe);
+				Se = a("./src/reddit/components/Badges/PickerModal/Title/index.m.less"),
+				Pe = a.n(Se);
 			var Te = function(e) {
 					return r.a.createElement("div", {
-						className: Object(o.a)(Se.a.container, e.className)
+						className: Object(o.a)(Pe.a.container, e.className)
 					}, r.a.createElement("div", {
-						className: Se.a.title
+						className: Pe.a.title
 					}, q.fbt._("Community Flairs & Badges", null, {
 						hk: "1Yy8Ei"
 					})), r.a.createElement("div", {
-						className: Se.a.username
+						className: Pe.a.username
 					}, r.a.createElement(Me, {
 						badgeIds: e.badgeIds,
 						flair: e.flair,
 						subredditId: e.subredditId
 					})), r.a.createElement("div", {
-						className: Se.a.close
+						className: Pe.a.close
 					}, r.a.createElement(Ie.a, null)))
 				},
 				Le = a("./src/reddit/components/Badges/PickerModal/index.m.less"),
@@ -917,6 +917,11 @@
 				})
 			}))
 		},
+		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, a) {
+			e.exports = {
+				grey: "_3oUx7R2UEz3llZLsIONH4x"
+			}
+		},
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, a) {
 			"use strict";
 			var s = a("./node_modules/react/index.js"),
@@ -924,15 +929,29 @@
 				n = a("./node_modules/react-redux/es/index.js"),
 				d = a("./node_modules/reselect/es/index.js"),
 				i = a("./src/config.ts"),
-				l = a("./src/reddit/selectors/gov.ts");
-			const c = Object(d.c)({
-				tokenSymbol: l.q
+				l = a("./src/lib/classNames/index.ts"),
+				c = a("./src/reddit/selectors/gov.ts"),
+				o = a("./src/reddit/components/Governance/Token/index.m.less"),
+				u = a.n(o);
+			const m = Object(d.c)({
+				tokenSymbol: c.q
 			});
-			t.a = Object(n.b)(c)((function(e) {
-				const t = e.grey ? e.tokenSymbol.grey : e.tokenSymbol.filled;
+			t.a = Object(n.b)(m)((function(e) {
+				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
+					a = "".concat(i.a.assetPath, "/").concat(t);
+				if (e.grey && a.endsWith(".svg")) {
+					const t = "url(".concat(a, ") center/cover");
+					return r.a.createElement("div", {
+						className: Object(l.a)(u.a.grey, e.className),
+						style: {
+							mask: t,
+							WebkitMask: t
+						}
+					})
+				}
 				return r.a.createElement("img", {
 					className: e.className,
-					src: "".concat(i.a.assetPath, "/").concat(t)
+					src: a
 				})
 			}))
 		},
@@ -1109,9 +1128,9 @@
 			})), a.d(t, "q", (function() {
 				return C
 			})), a.d(t, "o", (function() {
-				return E
-			})), a.d(t, "l", (function() {
 				return y
+			})), a.d(t, "l", (function() {
+				return E
 			})), a.d(t, "m", (function() {
 				return k
 			})), a.d(t, "s", (function() {
@@ -1154,15 +1173,15 @@
 					}
 				},
 				m = (e, t) => {
-					const a = y(e, t);
+					const a = E(e, t);
 					if (a) return a.mainHeader
 				},
 				p = (e, t) => {
-					const a = y(e, t);
+					const a = E(e, t);
 					return a && a.mainHeader ? a.mainHeader.price : "0"
 				},
 				g = (e, t) => {
-					const a = y(e, t);
+					const a = E(e, t);
 					return a && a.mainHeader ? {
 						owner: a.mainHeader.owner,
 						ownerId: a.mainHeader.ownerId
@@ -1191,11 +1210,11 @@
 				},
 				f = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || o,
-				E = (e, t) => {
+				y = (e, t) => {
 					const a = I(e, t);
 					return a && a.decimals ? "1" + "0".repeat(a.decimals) : "1"
 				},
-				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				E = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				k = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				B = (e, t) => {
 					const a = k(e, t);
@@ -1245,4 +1264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.855cba624db4931c5e39.js.map
+//# sourceMappingURL=BadgePickerModal.b773d1991683a459ad9c.js.map
