@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.6d44ff156bcae1252df3.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.098714f6ecbda0b90934.js
+// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -1449,7 +1449,10 @@
 						toggleCreateModal: () => e(Object(g.i)(_.a.CREATE_SUBREDDIT_CHAT)),
 						toggleEditModal: () => e(Object(g.i)(_.a.EDIT_SUBREDDIT_CHAT)),
 						fetchSubredditChannels: t => e(Object(h.l)(t)),
-						onChatLinkClick: (t, n) => e(Object(p.b)(t, n)),
+						onChatLinkClick: (t, n) => e(Object(p.b)({
+							channelId: t,
+							subredditName: n
+						})),
 						onSelectChannel: t => e(Object(h.m)({
 							channelId: t
 						}))
@@ -1784,4 +1787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ManageChatRoomsModal.6d44ff156bcae1252df3.js.map
+//# sourceMappingURL=ManageChatRoomsModal.098714f6ecbda0b90934.js.map

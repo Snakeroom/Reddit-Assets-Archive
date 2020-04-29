@@ -1,16 +1,16 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.efaa6383cf347cdf7e36.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.3422e4e8f2af639bd8e1.js
+// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow~ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
+				return a
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.replace.js");
 			const r = /%\((\w+)\)s/g;
 
-			function o(e, t) {
+			function a(e, t) {
 				return e.replace(r, (function(e, n) {
 					return n in t ? t[n] : e
 				}))
@@ -37,8 +37,8 @@
 			"use strict";
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./node_modules/react-redux/es/index.js"),
+				a = n.n(r),
+				o = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/actions/tooltip.ts"),
 				i = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				l = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
@@ -60,53 +60,53 @@
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]])
+					var a = 0;
+					for (r = Object.getOwnPropertySymbols(e); a < r.length; a++) t.indexOf(r[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[a]) && (n[r[a]] = e[r[a]])
 				}
 				return n
 			};
 			const x = u.a.div("Section", d.a),
 				f = u.a.wrapped(l.a, "ChevronUp", d.a),
 				b = u.a.wrapped(i.a, "ChevronDown", d.a),
-				_ = u.a.wrapped(e => {
-					var {
-						className: t,
-						isOpen: n
-					} = e, r = h(e, ["className", "isOpen"]);
-					return o.a.createElement("div", p({
-						className: Object(m.a)(t, {
-							[d.a.mIsOpen]: n
-						})
-					}, r))
-				}, "ArticleWrap", d.a),
 				g = u.a.wrapped(e => {
 					var {
 						className: t,
 						isOpen: n
 					} = e, r = h(e, ["className", "isOpen"]);
-					return o.a.createElement("div", p({
+					return a.a.createElement("div", p({
+						className: Object(m.a)(t, {
+							[d.a.mIsOpen]: n
+						})
+					}, r))
+				}, "ArticleWrap", d.a),
+				C = u.a.wrapped(e => {
+					var {
+						className: t,
+						isOpen: n
+					} = e, r = h(e, ["className", "isOpen"]);
+					return a.a.createElement("div", p({
 						className: Object(m.a)(t, {
 							[d.a.mIsOpen]: n
 						})
 					}, r))
 				}, "SectionHead", d.a),
-				C = u.a.div("Article", d.a);
-			class v extends o.a.Component {
+				_ = u.a.div("Article", d.a);
+			class v extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleClick = () => {
 						this.props.open || (this.props.onOpen(), this.props.onSwitchSection())
 					}
 				}
 				render() {
-					return o.a.createElement("div", null, o.a.createElement(x, null, this.props.open ? o.a.createElement(f, null) : o.a.createElement(b, null), o.a.createElement(g, {
+					return a.a.createElement("div", null, a.a.createElement(x, null, this.props.open ? a.a.createElement(f, null) : a.a.createElement(b, null), a.a.createElement(C, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
-					}, this.props.title), o.a.createElement(_, {
+					}, this.props.title), a.a.createElement(g, {
 						isOpen: this.props.open
-					}, this.props.open ? o.a.createElement(C, null, this.props.children) : null)))
+					}, this.props.open ? a.a.createElement(_, null, this.props.children) : null)))
 				}
 			}
-			t.a = Object(a.b)(null, e => ({
+			t.a = Object(o.b)(null, e => ({
 				onSwitchSection: () => e(Object(s.i)())
 			}))(v)
 		},
@@ -124,32 +124,32 @@
 				return u
 			}));
 			var r = n("./src/config.ts"),
-				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
+				a = n("./node_modules/react/index.js"),
+				o = n.n(a),
 				s = n("./src/reddit/components/Translated/index.tsx"),
 				i = n("./src/reddit/components/ContentPolicy/index.m.less"),
 				l = n.n(i),
 				c = n("./src/lib/lessComponent.tsx");
 			const d = c.a.div("Content", l.a),
 				m = c.a.a("Link", l.a);
-			class u extends a.a.Component {
+			class u extends o.a.Component {
 				render() {
 					const {
 						props: e
 					} = this;
-					return a.a.createElement(d, null, a.a.createElement(s.a, {
+					return o.a.createElement(d, null, o.a.createElement(s.a, {
 						msgId: "reportFlow.contentPolicy.readThe"
-					}), " ", a.a.createElement(m, {
+					}), " ", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(r.a.redditUrl, "/help/contentpolicy")
-					}, a.a.createElement(s.a, {
+					}, o.a.createElement(s.a, {
 						msgId: "reportFlow.contentPolicy.link"
-					})), e.subredditOrProfile && !e.isLiveStreaming ? a.a.createElement("span", null, " ", a.a.createElement(s.a, {
+					})), e.subredditOrProfile && !e.isLiveStreaming ? o.a.createElement("span", null, " ", o.a.createElement(s.a, {
 						msgId: "reportFlow.contentPolicy.and"
-					}), " ", a.a.createElement(m, {
+					}), " ", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(e.subredditOrProfile.url, "about/rules")
-					}, e.subredditOrProfile.displayText, "'s ", a.a.createElement(s.a, {
+					}, e.subredditOrProfile.displayText, "'s ", o.a.createElement(s.a, {
 						msgId: "reportFlow.contentPolicy.rules"
 					}))) : null)
 				}
@@ -166,28 +166,19 @@
 		"./src/reddit/components/ReportPage/CustomTextInput/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/lib/lessComponent.tsx"),
+				a = n.n(r),
+				o = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
 				i = n("./src/reddit/components/Translated/index.tsx"),
-				l = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.constructor.js"), n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./node_modules/lodash/pick.js")),
-				c = n.n(l),
-				d = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
-				m = n.n(d);
-			const u = /\b(https?|chrome):\/\/[^\s$.?#].[^\s]*\b/;
-			var p = e => {
-				if (!e) return null;
-				const t = m.a.parse(e);
-				return c()(t, ["protocol", "hostname", "port", "pathname", "search", "hash", "host"])
-			};
-			const h = ["old", "new", "en", "www", "np", "m"],
-				x = ["reddit.com", "reddit.local"].concat("").concat(h.map((function(e) {
+				l = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.constructor.js"), n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./src/reddit/helpers/parseUrl.ts"));
+			const c = ["old", "new", "en", "www", "np", "m"],
+				d = ["reddit.com", "reddit.local"].concat("").concat(c.map((function(e) {
 					return e + ".reddit.com"
-				}))).concat(h.map((function(e) {
+				}))).concat(c.map((function(e) {
 					return e + ".reddit.local"
 				}))),
-				f = ["mod.reddit.com"],
-				b = {
+				m = ["mod.reddit.com"],
+				u = {
 					subreddit: {
 						pathnameComponents: ["subredditName"],
 						pathname: /^\/r\/(\w+)\/?$/
@@ -197,7 +188,7 @@
 						pathname: /^\/(?:user|u)\/(\w+)\/?$/
 					},
 					postShortlink: {
-						hostnames: x.concat("redd.it"),
+						hostnames: d.concat("redd.it"),
 						pathnameComponents: ["postID36"],
 						pathname: /^\/([A-Za-z0-9]+)\/?$/
 					},
@@ -210,34 +201,34 @@
 						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
 					},
 					modmailConversation: {
-						hostnames: f,
+						hostnames: m,
 						pathnameComponents: ["modmailConversationId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
 					},
 					modmailMessage: {
-						hostnames: f,
+						hostnames: m,
 						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
 					}
 				};
 
-			function _(e) {
-				return (e.match(new RegExp(u, "g")) || []).map((function(e) {
+			function p(e) {
+				return (e.match(new RegExp(l.b, "g")) || []).map((function(e) {
 					let t;
-					return Object.keys(b).some((function(n) {
+					return Object.keys(u).some((function(n) {
 						return t = function(e, t) {
-							const n = b[e];
-							if (!b) throw new Error("Could not find reddit URL spec: " + e);
-							const r = p(t);
+							const n = u[e];
+							if (!u) throw new Error("Could not find reddit URL spec: " + e);
+							const r = Object(l.a)(t);
 							if (!r) return void console.error("Could not parse url", t);
-							if (-1 === (n.hostnames || x).indexOf(r.hostname)) return;
-							const o = r.pathname.match(n.pathname);
-							if (o) {
+							if (-1 === (n.hostnames || d).indexOf(r.hostname)) return;
+							const a = r.pathname.match(n.pathname);
+							if (a) {
 								return {
 									url: t,
 									routeName: e,
 									components: n.pathnameComponents.reduce((function(e, t, n) {
-										return e[t] = o[n + 1], e
+										return e[t] = a[n + 1], e
 									}), {})
 								}
 							}
@@ -247,22 +238,22 @@
 					return e
 				}))
 			}
-			var g = n("./src/reddit/models/Rule/index.ts"),
-				C = n("./src/reddit/components/ReportPage/index.m.less"),
-				v = n.n(C),
-				y = n("./src/reddit/components/ReportPage/CustomTextInput/index.m.less"),
-				S = n.n(y);
-			const O = a.a.header("InputDescription", v.a);
-			class E extends o.a.Component {
+			var h = n("./src/reddit/models/Rule/index.ts"),
+				x = n("./src/reddit/components/ReportPage/index.m.less"),
+				f = n.n(x),
+				b = n("./src/reddit/components/ReportPage/CustomTextInput/index.m.less"),
+				g = n.n(b);
+			const C = o.a.header("InputDescription", f.a);
+			class _ extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						customText: "",
-						maxLength: g.d,
+						maxLength: h.d,
 						displayLength: 0
 					}, this.onCustomTextChange = e => {
 						this.setState(Object.assign({
 							customText: e.target.value
-						}, j(e.target.value))), this.props.onCustomTextChange(e.target.value)
+						}, v(e.target.value))), this.props.onCustomTextChange(e.target.value)
 					}
 				}
 				render() {
@@ -270,46 +261,46 @@
 						props: e,
 						state: t
 					} = this;
-					return o.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: e.className
-					}, o.a.createElement("fieldset", {
-						className: v.a.fieldset
-					}, e.description && o.a.createElement(O, null, e.description), o.a.createElement("div", {
-						className: v.a.field
-					}, o.a.createElement(s.c, {
+					}, a.a.createElement("fieldset", {
+						className: f.a.fieldset
+					}, e.description && a.a.createElement(C, null, e.description), a.a.createElement("div", {
+						className: f.a.field
+					}, a.a.createElement(s.c, {
 						backgroundColorState: s.a.WhiteFields,
-						className: S.a.customTextInput,
+						className: g.a.customTextInput,
 						label: e.title,
 						maxLength: t.maxLength,
 						onChange: this.onCustomTextChange,
 						value: t.customText
-					}), o.a.createElement("div", {
-						className: S.a.textAreaCounter
-					}, o.a.createElement(i.a, {
+					}), a.a.createElement("div", {
+						className: g.a.textAreaCounter
+					}, a.a.createElement(i.a, {
 						msgId: "reportPage.form.textAreaCounter",
 						replacements: {
 							length: t.displayLength,
-							maxLength: g.a
+							maxLength: h.a
 						}
 					})))))
 				}
 			}
-			const j = e => {
+			const v = e => {
 				const t = {
 					displayLength: 0,
-					maxLength: g.d
+					maxLength: h.d
 				};
 				if (!e) return t;
-				const n = g.a,
+				const n = h.a,
 					r = e.length,
-					o = _(e),
-					a = o.reduce((e, t) => t ? e + t.url.length : e, 0);
+					a = p(e),
+					o = a.reduce((e, t) => t ? e + t.url.length : e, 0);
 				return {
-					displayLength: Math.min(g.a, r - a + 15 * o.length),
-					maxLength: Math.min(g.d, n + a - 15 * o.length)
+					displayLength: Math.min(h.a, r - o + 15 * a.length),
+					maxLength: Math.min(h.d, n + o - 15 * a.length)
 				}
 			};
-			t.a = a.a.wrapped(E, "Component", S.a)
+			t.a = o.a.wrapped(_, "Component", g.a)
 		},
 		"./src/reddit/components/ReportPage/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -347,21 +338,21 @@
 		"./src/reddit/components/StructuredStyles/FormElementLabel/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/lib/classNames/index.ts"),
+				a = n.n(r),
+				o = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				l = n("./src/reddit/components/StructuredStyles/FormElementLabel/index.m.less"),
 				c = n.n(l);
 			const d = s.a.wrapped(i.e, "FormElementTitle", c.a),
 				m = s.a.wrapped(i.b, "FormElementDescription", c.a);
-			t.a = e => o.a.createElement("div", null, o.a.createElement(d, {
-				className: Object(a.a)({
+			t.a = e => a.a.createElement("div", null, a.a.createElement(d, {
+				className: Object(o.a)({
 					[c.a.fake]: e.fake,
 					[c.a.altColor]: e.altColor
 				})
-			}, e.label), e.description && o.a.createElement(m, {
-				className: Object(a.a)({
+			}, e.label), e.description && a.a.createElement(m, {
+				className: Object(o.a)({
 					[c.a.fake]: e.fake
 				})
 			}, e.description))
@@ -392,14 +383,14 @@
 			})), n.d(t, "a", (function() {
 				return b
 			})), n.d(t, "b", (function() {
-				return g
-			})), n.d(t, "c", (function() {
 				return C
+			})), n.d(t, "c", (function() {
+				return _
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/lib/classNames/index.ts"),
+				a = n.n(r),
+				o = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/controls/Input/index.tsx"),
 				l = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
@@ -419,8 +410,8 @@
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]])
+					var a = 0;
+					for (r = Object.getOwnPropertySymbols(e); a < r.length; a++) t.indexOf(r[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[a]) && (n[r[a]] = e[r[a]])
 				}
 				return n
 			};
@@ -434,8 +425,8 @@
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(b || (b = {}));
-			const _ = e => o.a.createElement("div", {
-					className: Object(a.a)(e.isRequired && d.a.required, e.className, Object.assign({
+			const g = e => a.a.createElement("div", {
+					className: Object(o.a)(e.isRequired && d.a.required, e.className, Object.assign({
 						[d.a.container]: !e.isTextarea,
 						[d.a.textareaContainer]: !!e.isTextarea
 					}, !!e.isTextarea && {
@@ -443,20 +434,20 @@
 						[d.a.mInvalid]: e.state === f.Invalid,
 						[d.a.mWhiteField]: e.backgroundColorState === b.WhiteFields
 					}))
-				}, o.a.createElement("label", {
-					className: Object(a.a)({
+				}, a.a.createElement("label", {
+					className: Object(o.a)({
 						[d.a.field]: !e.isTextarea,
 						[d.a.textareaField]: !!e.isTextarea
 					})
-				}, e.children, e.label && o.a.createElement("span", {
+				}, e.children, e.label && a.a.createElement("span", {
 					className: d.a.label
-				}, e.label), !!e.state && o.a.createElement(p, {
-					className: Object(a.a)({
+				}, e.label), !!e.state && a.a.createElement(p, {
+					className: Object(o.a)({
 						[d.a.mValid]: e.state === f.Valid,
 						[d.a.mInvalid]: e.state === f.Invalid
 					})
-				}, e.state === f.Valid && o.a.createElement(l.a, null), e.state === f.Invalid && o.a.createElement(x, null, "!")))),
-				g = e => {
+				}, e.state === f.Valid && a.a.createElement(l.a, null), e.state === f.Invalid && a.a.createElement(x, null, "!")))),
+				C = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
@@ -466,14 +457,14 @@
 						onKeyDown: c,
 						state: p
 					} = e, h = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return o.a.createElement(_, {
+					return a.a.createElement(g, {
 						backgroundColorState: t,
 						className: n,
 						isRequired: s,
 						label: l,
 						state: p
-					}, o.a.createElement(i.a, m({}, h, {
-						className: Object(a.a)(d.a.input, d.a.control, {
+					}, a.a.createElement(i.a, m({}, h, {
+						className: Object(o.a)(d.a.input, d.a.control, {
 							[d.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
@@ -481,7 +472,7 @@
 						onKeyDown: c
 					})))
 				},
-				C = e => {
+				_ = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
@@ -491,15 +482,15 @@
 						onKeyDown: l,
 						state: c
 					} = e, p = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return o.a.createElement(_, {
+					return a.a.createElement(g, {
 						backgroundColorState: t,
 						className: n,
 						isRequired: s,
 						label: i,
 						state: c,
 						isTextarea: !0
-					}, o.a.createElement(h, m({}, p, {
-						className: Object(a.a)({
+					}, a.a.createElement(h, m({}, p, {
+						className: Object(o.a)({
 							[d.a.mWhiteField]: e.backgroundColorState === b.WhiteFields
 						}),
 						"data-empty": !e.value,
@@ -519,24 +510,24 @@
 		"./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/lib/lessComponent.tsx"),
+				a = n.n(r),
+				o = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/components/StructuredStyles/FormElementLabel/index.tsx"),
 				i = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				l = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				c = n("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
 				d = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.m.less"),
 				m = n.n(d);
-			const u = a.a.wrapped(l.a, "RadioOption", m.a),
-				p = a.a.wrapped(c.a, "ExpandRight", m.a);
-			t.a = e => o.a.createElement(u, {
+			const u = o.a.wrapped(l.a, "RadioOption", m.a),
+				p = o.a.wrapped(c.a, "ExpandRight", m.a);
+			t.a = e => a.a.createElement(u, {
 				value: e.value,
 				selected: e.selected,
 				onClick: e.onClick
-			}, o.a.createElement(p, {
+			}, a.a.createElement(p, {
 				heightLeft: 16,
 				widthLeft: 16
-			}, e.selected ? o.a.createElement(i.f, null) : o.a.createElement(i.e, null), o.a.createElement(s.a, {
+			}, e.selected ? a.a.createElement(i.f, null) : a.a.createElement(i.e, null), a.a.createElement(s.a, {
 				altColor: e.altColor,
 				label: e.label,
 				description: e.description
@@ -605,33 +596,33 @@
 			})), n.d(t, "e", (function() {
 				return b
 			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return C
+			})), n.d(t, "d", (function() {
+				return _
 			})), n.d(t, "j", (function() {
 				return v
 			}));
 			var r = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
-				a = n.n(o);
-			const s = r.a.section("FormPage", a.a),
-				i = r.a.h1("HomePageTitle", a.a),
-				l = r.a.button("HomePageBreadcrumb", a.a),
-				c = r.a.div("HomePageGroup", a.a),
-				d = r.a.h1("FormPageTitle", a.a),
-				m = r.a.div("FormPageSection", a.a),
-				u = r.a.div("FormGroup", a.a),
-				p = r.a.h2("FormGroupTitle", a.a),
-				h = r.a.div("FormElement", a.a),
-				x = r.a.div("FormGroupDescription", a.a),
-				f = r.a.div("FormItem", a.a),
-				b = r.a.h3("FormElementTitle", a.a),
-				_ = r.a.div("FormElementDescription", a.a),
-				g = r.a.div("FormElementError", a.a),
-				C = r.a.div("FormElementSubGroup", a.a),
-				v = r.a.li("FormListItem", a.a)
+				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
+				o = n.n(a);
+			const s = r.a.section("FormPage", o.a),
+				i = r.a.h1("HomePageTitle", o.a),
+				l = r.a.button("HomePageBreadcrumb", o.a),
+				c = r.a.div("HomePageGroup", o.a),
+				d = r.a.h1("FormPageTitle", o.a),
+				m = r.a.div("FormPageSection", o.a),
+				u = r.a.div("FormGroup", o.a),
+				p = r.a.h2("FormGroupTitle", o.a),
+				h = r.a.div("FormElement", o.a),
+				x = r.a.div("FormGroupDescription", o.a),
+				f = r.a.div("FormItem", o.a),
+				b = r.a.h3("FormElementTitle", o.a),
+				g = r.a.div("FormElementDescription", o.a),
+				C = r.a.div("FormElementError", o.a),
+				_ = r.a.div("FormElementSubGroup", o.a),
+				v = r.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -673,44 +664,44 @@
 			})), n.d(t, "i", (function() {
 				return b
 			})), n.d(t, "h", (function() {
-				return _
-			})), n.d(t, "g", (function() {
 				return g
+			})), n.d(t, "g", (function() {
+				return C
 			}));
 			var r = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/reddit/controls/Input/ModalInput.tsx"),
-				a = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				a = n("./src/reddit/controls/Input/ModalInput.tsx"),
+				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
 				s = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				i = n("./src/reddit/icons/svgs/RadioOff/index.tsx"),
 				l = n("./src/reddit/icons/svgs/RadioOn/index.tsx"),
 				c = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less"),
 				d = n.n(c);
-			const m = r.a.wrapped(o.a, "ModalInput", d.a),
+			const m = r.a.wrapped(a.a, "ModalInput", d.a),
 				u = r.a.input("Input", d.a),
 				p = r.a.wrapped(l.a, "RadioOn", d.a),
 				h = r.a.wrapped(i.a, "RadioOff", d.a),
-				x = r.a.wrapped(a.a, "Checkbox", d.a),
+				x = r.a.wrapped(o.a, "Checkbox", d.a),
 				f = r.a.wrapped(s.a, "CheckboxSelected", d.a),
 				b = r.a.textarea("Textarea", d.a),
-				_ = r.a.label("StyledLabel", d.a),
-				g = r.a.input("StyledFileInput", d.a)
+				g = r.a.label("StyledLabel", d.a),
+				C = r.a.input("StyledFileInput", d.a)
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/reddit/controls/Input/index.m.less"),
-				a = n.n(o);
-			t.a = r.a.input("input", a.a)
+				a = n("./src/reddit/controls/Input/index.m.less"),
+				o = n.n(a);
+			t.a = r.a.input("input", o.a)
 		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r);
-			t.a = e => o.a.createElement("svg", {
+				a = n.n(r);
+			t.a = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 12 12",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("g", null, o.a.createElement("polygon", {
+			}, a.a.createElement("g", null, a.a.createElement("polygon", {
 				fill: "inherit",
 				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
@@ -727,8 +718,8 @@
 			"use strict";
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./src/higherOrderComponents/warnOnChildrenCount/index.tsx"),
+				a = n.n(r),
+				o = n("./src/higherOrderComponents/warnOnChildrenCount/index.tsx"),
 				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/layout/twoCol/ExpandRight/index.m.less"),
 				l = n.n(i);
@@ -746,29 +737,29 @@
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]])
+					var a = 0;
+					for (r = Object.getOwnPropertySymbols(e); a < r.length; a++) t.indexOf(r[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[a]) && (n[r[a]] = e[r[a]])
 				}
 				return n
 			};
-			t.a = Object(a.a)(e => {
+			t.a = Object(o.a)(e => {
 				const {
 					className: t,
 					children: n,
 					heightLeft: r,
-					widthLeft: a,
+					widthLeft: o,
 					gutter: i
 				} = e, m = d(e, ["className", "children", "heightLeft", "widthLeft", "gutter"]);
-				return o.a.createElement("div", c({
+				return a.a.createElement("div", c({
 					className: Object(s.a)(l.a.expandRightContainer, t)
-				}, m), o.a.createElement("div", {
+				}, m), a.a.createElement("div", {
 					className: l.a.left,
 					style: {
-						flexBasis: a,
+						flexBasis: o,
 						height: r,
 						marginRight: i
 					}
-				}, Array.isArray(n) && n[0]), o.a.createElement("div", {
+				}, Array.isArray(n) && n[0]), a.a.createElement("div", {
 					className: l.a.right
 				}, Array.isArray(n) && n[1]))
 			}, 2)
@@ -781,17 +772,17 @@
 				return i
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
-				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				a = n("./src/reddit/selectors/user.ts");
-			const s = e => r.a.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: a.H,
+				a = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				o = n("./src/reddit/selectors/user.ts");
+			const s = e => r.a.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: o.H,
 					experimentName: r.c
 				}),
-				i = e => r.b.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: a.H,
+				i = e => r.b.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: o.H,
 					experimentName: r.d
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow~ReportPage.efaa6383cf347cdf7e36.js.map
+//# sourceMappingURL=ReportFlow~ReportPage.3422e4e8f2af639bd8e1.js.map

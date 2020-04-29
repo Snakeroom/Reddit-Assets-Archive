@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.49fb804123b39af6c72d.js
-// Retrieved at 4/29/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2c5a5e551601500c1c37.js
+// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2653,18 +2653,20 @@
 						subreddit: n,
 						users: a
 					} = e;
+					const s = t.data && JSON.parse(t.data),
+						c = s && s.welcome_text;
 					return r.a.createElement(oe, null, n ? ((e, t) => {
 						const n = e.customData && e.customData.description;
 						return r.a.createElement(r.a.Fragment, null, r.a.createElement(ie, null, "r/".concat(t.name)), r.a.createElement(le, null, e.name), r.a.createElement(de, null, n))
-					})(t, n) : (e => r.a.createElement(r.a.Fragment, null, r.a.createElement(ue, null, e.map((e, t, n) => r.a.createElement(he, {
+					})(t, n) : ((e, t) => r.a.createElement(r.a.Fragment, null, r.a.createElement(ue, null, e.map((e, t, n) => r.a.createElement(he, {
 						key: e.id
 					}, r.a.createElement(se, {
 						height: "16px",
 						width: "16px",
 						userId: e.id
-					}), r.a.createElement(me, null, "".concat(e.name).concat(t < n.length - 1 ? "," : ""))))), r.a.createElement(de, null, O.fbt._("This is the start of a beautiful thing. Say something nice, or share a cat fact.", null, {
+					}), r.a.createElement(me, null, "".concat(e.name).concat(t < n.length - 1 ? "," : ""))))), r.a.createElement(de, null, t || O.fbt._("This is the start of a beautiful thing. Say something nice, or share a cat fact.", null, {
 						hk: "J8whX"
-					}))))(a))
+					}))))(a, c))
 				},
 				ge = n("./node_modules/uuid/v4.js"),
 				fe = n.n(ge),
@@ -12591,7 +12593,7 @@
 					return new Promise((n, a) => {
 						let s;
 						e === h.b.INVITED && t === h.f.NonSuper ? this.channelListQueryInvited ? s = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvited) : e === h.b.JOINED && t === h.f.NonSuper ? this.channelListQueryJoined ? s = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoined) : e === h.b.JOINED && t === h.f.Super ? this.channelListQueryJoinedSubreddit ? s = this.channelListQueryJoinedSubreddit : (this.channelListQueryJoinedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoinedSubreddit) : e === h.b.INVITED && t === h.f.Super && (this.channelListQueryInvitedSubreddit ? s = this.channelListQueryInvitedSubreddit : (this.channelListQueryInvitedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvitedSubreddit)), s.includeEmpty = !0, s.limit = v.a.Channels, s.memberStateFilter = this.self.GroupChannel.memberState[e], s.superChannelFilter = t, s.hasNext ? s.next((e, t) => {
-							if (t) a(t);
+							if (t) 800170 !== t.code && a(t);
 							else {
 								const t = s.hasNext;
 								n({
@@ -14039,4 +14041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.49fb804123b39af6c72d.js.map
+//# sourceMappingURL=Chat~RedesignChat.2c5a5e551601500c1c37.js.map

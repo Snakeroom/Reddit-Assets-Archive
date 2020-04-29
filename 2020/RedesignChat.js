@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.db18df6c6a6c92bd48d5.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.ef87f6987bb44b67610e.js
+// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -13,7 +13,7 @@
 		"./src/chat/initializer.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "default", (function() {
-				return q
+				return z
 			}));
 			var a = s("./node_modules/history/esm/history.js"),
 				r = s("./node_modules/js-cookie/src/js.cookie.js"),
@@ -23,8 +23,8 @@
 				o = s("./src/lib/initializeClient/index.tsx"),
 				d = s("./src/lib/matchRoute/index.ts"),
 				u = s("./src/reduxMiddleware/apiContext.ts"),
-				h = s("./src/chat/actions/apiRequestHeaders.ts"),
-				l = s("./src/chat/actions/platform.ts"),
+				l = s("./src/chat/actions/apiRequestHeaders.ts"),
+				h = s("./src/chat/actions/platform.ts"),
 				m = s("./src/chat/actions/session.ts"),
 				p = s("./src/chat/actions/user.ts"),
 				b = s("./src/chat/components/PortalContainer/index.tsx"),
@@ -43,9 +43,10 @@
 				M = s("./src/chat/models/Theme/index.ts"),
 				S = s("./src/chat/reducers/meta/index.ts"),
 				D = s("./src/chat/reducers/platform/index.ts"),
-				A = s("./src/chat/reducers/promos/index.ts");
-			const E = (e, t) => (e.chat && e.chat.promos && (t.promos = Object.assign({}, A.a, e.chat.promos)), t),
-				T = (e, t) => {
+				T = s("./src/chat/reducers/promos/index.ts"),
+				A = s("./src/chat/selectors/platform.ts");
+			const I = (e, t) => (e.chat && e.chat.promos && (t.promos = Object.assign({}, T.a, e.chat.promos)), t),
+				E = (e, t) => {
 					const {
 						account: s,
 						language: a,
@@ -78,10 +79,10 @@
 						session: n && n.unsafeLoggedOut ? null : n
 					}), t
 				},
-				I = e => (e.meta = Object.assign({}, S.a, {
+				L = e => (e.meta = Object.assign({}, S.a, {
 					isRedesign: !0
 				}), e),
-				L = e => {
+				N = e => {
 					if (e.user && e.user.prefs && e.user.prefs.nightmode) {
 						const {
 							NIGHT: t,
@@ -96,20 +97,27 @@
 					}
 					return e
 				},
-				N = (e, t, s) => {
+				F = (e, t, s) => {
 					const r = R()(),
 						c = Object(a.c)(t.location.pathname, void 0, r),
 						i = Object(d.a)(Object(a.e)(c), s),
-						n = Object(D.b)(D.a, Object(l.e)({
+						n = Object(D.b)(D.a, Object(h.e)({
 							location: c,
 							action: "PUSH",
 							routeMatch: i
 						}));
 					return e.platform = Object.assign({}, n), e
+				},
+				H = e => {
+					const t = Object(A.f)(e);
+					return e.sidebarTabs = {
+						activeIndex: t,
+						lastChannelIdPerTab: {}
+					}, e
 				};
-			var F = s("./src/chat/reducers/index.ts"),
-				H = s("./src/chat/routes/index.ts");
-			const K = Object(u.a)({
+			var K = s("./src/chat/reducers/index.ts"),
+				q = s("./src/chat/routes/index.ts");
+			const P = Object(u.a)({
 				actionDispatchers: {
 					reddaidReceived: p.r,
 					loidReceived: p.q,
@@ -117,7 +125,7 @@
 				},
 				cookies: c.a,
 				receivedActions: {
-					headersReceived: h.a,
+					headersReceived: l.a,
 					loidReceived: p.e,
 					reddaidReceived: p.f,
 					sessionTrackerReceived: p.g,
@@ -128,14 +136,14 @@
 				statsAppName: n.k.Chat
 			});
 
-			function q(e, t) {
+			function z(e, t) {
 				let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize";
 				const r = document.getElementById("2x-container"),
 					c = document.createElement("div");
 				return r.appendChild(c), Object(o.a)({
-					reducers: F.a,
-					routes: H.a,
-					apiContext: K.apiContext,
+					reducers: K.a,
+					routes: q.a,
+					apiContext: P.apiContext,
 					appFactory: b.a,
 					appName: n.k.Chat,
 					history: Object(a.d)({
@@ -143,15 +151,15 @@
 						initialIndex: 0
 					}),
 					customMiddleware: [i.a.withExtraArgument({
-						routes: H.a,
-						apiContext: K.apiContext
-					}), K.middleware, w.a, f.a, j.a, g.a, O.a, Object(_.a)(t), x.a, v.a, C.a],
+						routes: q.a,
+						apiContext: P.apiContext
+					}), P.middleware, w.a, f.a, j.a, g.a, O.a, Object(_.a)(t), x.a, v.a, C.a],
 					modifyInitialData: t => {
 						let {
 							initialData: s,
 							browserHistory: a
 						} = t;
-						return s = T(e, s), s = I(s), s = L(s), s = E(e, s), s = N(s, a, H.a)
+						return s = E(e, s), s = L(s), s = N(s), s = I(e, s), s = F(s, a, q.a), s = H(s)
 					},
 					preRender: e => {
 						let {
@@ -159,9 +167,9 @@
 							routes: s,
 							store: r
 						} = e;
-						return t.listen((e, t) => {
+						return r.dispatch(Object(p.l)()), t.listen((e, t) => {
 							const c = Object(d.a)(Object(a.e)(e), s);
-							r.dispatch(Object(l.d)(e, t, c)), r.dispatch(Object(p.l)())
+							r.dispatch(Object(h.d)(e, t, c)), r.dispatch(Object(p.l)())
 						}), {}
 					},
 					target: c,
@@ -181,12 +189,12 @@
 			Object(o.a)(i.a);
 			const d = Object(o.a)(i.b);
 			var u = s("./src/reddit/actions/chat/unreadCount.ts"),
-				h = s("./src/reddit/selectors/chat.ts");
+				l = s("./src/reddit/selectors/chat.ts");
 			t.default = (e, t) => s => {
 				switch (s.type) {
 					case c.a: {
 						const a = s.payload,
-							c = Object(h.d)(t());
+							c = Object(l.d)(t());
 						r()(a, c) || e(Object(u.c)(a))
 					}
 					break;
@@ -197,4 +205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.db18df6c6a6c92bd48d5.js.map
+//# sourceMappingURL=RedesignChat.ef87f6987bb44b67610e.js.map
