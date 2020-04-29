@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5161f9eb0436726b58c5.js
-// Retrieved at 4/29/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.485c22da0d623908a82e.js
+// Retrieved at 4/29/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -19738,7 +19738,7 @@
 					return s
 				})),
 				function(e) {
-					e[e.Viewable = 1] = "Viewable", e[e.VideoViewable = 2] = "VideoViewable", e[e.VideoFullyViewable = 3] = "VideoFullyViewable", e[e.Impression = 4] = "Impression", e[e.VendorFullyViewable = 5] = "VendorFullyViewable", e[e.VendorFullyViewableSeconds5 = 6] = "VendorFullyViewableSeconds5", e[e.VendorFullyViewableSeconds15 = 7] = "VendorFullyViewableSeconds15", e[e.GroupMViewable = 8] = "GroupMViewable", e[e.MRCVideoViewableImpression = 9] = "MRCVideoViewableImpression", e[e.VideoGroupMViewable = 10] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 11] = "VideoVendorFullyViewable50"
+					e[e.Viewable = 1] = "Viewable", e[e.VideoViewable = 2] = "VideoViewable", e[e.VideoFullyViewable = 3] = "VideoFullyViewable", e[e.Impression = 4] = "Impression", e[e.VendorFullyViewable = 10] = "VendorFullyViewable", e[e.VendorFullyViewableSeconds5 = 11] = "VendorFullyViewableSeconds5", e[e.VendorFullyViewableSeconds15 = 12] = "VendorFullyViewableSeconds15", e[e.GroupMViewable = 13] = "GroupMViewable", e[e.VideoGroupMViewable = 113] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 114] = "VideoVendorFullyViewable50", e[e.MRCVideoViewableImpression = 115] = "MRCVideoViewableImpression"
 				}(s || (s = {}))
 		},
 		"./src/reddit/customMiddleware/gqlContext.ts": function(e, t, n) {
@@ -51017,4 +51017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.5161f9eb0436726b58c5.js.map
+//# sourceMappingURL=Governance~Reddit.485c22da0d623908a82e.js.map
