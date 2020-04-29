@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.55b9a9139ed638923f53.js
-// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b2e9ea13587f7927b629.js
+// Retrieved at 4/29/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -24473,7 +24473,7 @@
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/models/Subreddit/index.ts");
-			const o = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo"]),
+			const o = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british"]),
 				a = new Set([n.c.Private]),
 				r = e => !(!e || !e.name) && (!!o.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !a.has(e.type))
 		},
@@ -28694,4 +28694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.55b9a9139ed638923f53.js.map
+//# sourceMappingURL=ModerationPages.b2e9ea13587f7927b629.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.73ca50553eb4f54ff928.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8dcd838ee52dbf71384e.js
+// Retrieved at 4/29/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2536,7 +2536,7 @@
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/models/Subreddit/index.ts");
-			const r = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo"]),
+			const r = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british"]),
 				o = new Set([s.c.Private]),
 				i = e => !(!e || !e.name) && (!!r.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !o.has(e.type))
 		},
@@ -2840,4 +2840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.73ca50553eb4f54ff928.js.map
+//# sourceMappingURL=IdCard.8dcd838ee52dbf71384e.js.map
