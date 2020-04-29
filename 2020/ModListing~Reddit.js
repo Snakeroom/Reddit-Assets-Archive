@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.aa5a9f3de3e1fa234642.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.e1f07d382cd9cab1044b.js
+// Retrieved at 4/29/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1129,11 +1129,11 @@
 					isNSFW: r,
 					user: o,
 					userName: i
-				} = e, d = u(e, ["currentUser", "iconUrl", "isNSFW", "user", "userName"]), p = o && o.accountIcon || n, m = o ? o.isNSFW : r;
+				} = e, d = u(e, ["currentUser", "iconUrl", "isNSFW", "user", "userName"]), p = !!t && Object(a.f)(t) === i, m = p && t.accountIcon || o && o.accountIcon || n, f = o ? o.isNSFW : r;
 				return s.a.createElement(c.a, l({}, d, {
-					iconUrl: p,
-					isCurrentUser: !!t && Object(a.f)(t) === i,
-					isNSFW: m
+					iconUrl: m,
+					isCurrentUser: p,
+					isNSFW: f
 				}))
 			})
 		},
@@ -3218,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.aa5a9f3de3e1fa234642.js.map
+//# sourceMappingURL=ModListing~Reddit.e1f07d382cd9cab1044b.js.map

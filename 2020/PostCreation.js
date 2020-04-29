@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.868af3f124f2de11fb81.js
-// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.777c5b8ffe01b7bec539.js
+// Retrieved at 4/29/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -18652,11 +18652,11 @@
 					isNSFW: s,
 					user: r,
 					userName: i
-				} = e, l = u(e, ["currentUser", "iconUrl", "isNSFW", "user", "userName"]), p = r && r.accountIcon || n, m = r ? r.isNSFW : s;
+				} = e, l = u(e, ["currentUser", "iconUrl", "isNSFW", "user", "userName"]), p = !!t && Object(a.f)(t) === i, m = p && t.accountIcon || r && r.accountIcon || n, h = r ? r.isNSFW : s;
 				return o.a.createElement(c.a, d({}, l, {
-					iconUrl: p,
-					isCurrentUser: !!t && Object(a.f)(t) === i,
-					isNSFW: m
+					iconUrl: m,
+					isCurrentUser: p,
+					isNSFW: h
 				}))
 			})
 		},
@@ -30745,4 +30745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.868af3f124f2de11fb81.js.map
+//# sourceMappingURL=PostCreation.777c5b8ffe01b7bec539.js.map
