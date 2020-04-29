@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a6930e5dfdaa22fab4b1.js
-// Retrieved at 4/29/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e3e4a2e34a6af0034edf.js
+// Retrieved at 4/29/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -68,6 +68,9 @@
 		},
 		"./src/graphql/operations/PostFeedAndOtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"64131f4665de"}')
+		},
+		"./src/graphql/operations/ProfileTrophies.json": function(e) {
+			e.exports = JSON.parse('{"id":"3c59e5ed6f14"}')
 		},
 		"./src/graphql/operations/RedditorMultireddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"3d04e2bb92b5"}')
@@ -17581,57 +17584,63 @@
 		"./src/reddit/actions/trophyCase.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return i
 			})), n.d(t, "b", (function() {
-				return O
+				return u
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
-				r = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/lodash/pickBy.js")),
-				o = n.n(r),
-				a = n("./src/lib/constants/index.ts"),
-				i = n("./src/lib/makeApiRequest/index.ts"),
-				c = n("./src/lib/omitHeaders/index.ts"),
-				d = n("./src/lib/redditId/index.ts"),
-				u = n("./src/reddit/constants/headers.ts");
-			var l = (e, t) => Object(i.b)(Object(c.a)(e, [u.a]), {
-				method: a.ab.GET,
-				endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/trophies.json")
-			}).then(e => {
-				const t = e.body && e.body.data && e.body.data.trophies;
-				if (e.ok && t) {
-					const n = o()(t.map(b), "id"),
-						s = Object.keys(n);
-					return Object.assign({}, e, {
-						body: {
-							trophies: n,
-							trophyIds: s
-						}
-					})
+				r = n("./src/graphql/operations/ProfileTrophies.json"),
+				o = n("./src/lib/makeGqlRequest/index.ts");
+			n("./node_modules/core-js/modules/es6.symbol.js");
+			var a = function(e, t) {
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var r = 0;
+					for (s = Object.getOwnPropertySymbols(e); r < s.length; r++) t.indexOf(s[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[r]) && (n[s[r]] = e[s[r]])
 				}
-				return e
-			});
-			const b = e => ({
-					awardId: e.data.award_id,
-					description: e.data.description || "",
-					icon: e.data.icon_40 || "",
-					id: Object(d.b)(e.data.id, e.kind),
-					name: e.data.name,
-					url: e.data.url || ""
-				}),
-				p = "TROPHYCASE__FETCH_SUCCESS",
-				f = Object(s.a)(p),
-				m = Object(s.a)("TROPHYCASE__FETCH_FAILED"),
-				O = (e, t) => async (n, s, r) => {
+				return n
+			};
+			const i = "TROPHYCASE__FETCH_SUCCESS",
+				c = Object(s.a)(i),
+				d = Object(s.a)("TROPHYCASE__FETCH_FAILED"),
+				u = (e, t) => async (n, s, i) => {
 					let {
-						apiContext: o
-					} = r;
-					const a = await l(o(), e);
-					a.ok ? n(f(Object.assign({
+						gqlContext: u
+					} = i;
+					const l = await ((e, t) => Object(o.a)(e, Object.assign({}, r, {
+							variables: t
+						})))(u(), {
+							profileName: e
+						}),
+						b = l.body.data;
+					if (l.ok && b) {
+						const s = {},
+							r = [];
+						b.redditor.trophies.map(e => {
+							const t = (e => {
+									var {
+										icon40Url: t,
+										trophyId: n
+									} = e, s = a(e, ["icon40Url", "trophyId"]);
+									return Object.assign({
+										icon: t,
+										id: n
+									}, s)
+								})(e),
+								{
+									id: n
+								} = t;
+							s[n] = t, r.push(n)
+						}), n(c({
+							profileId: t,
+							profileName: e,
+							trophies: s,
+							trophyIds: r
+						}))
+					} else n(d({
 						profileId: t,
-						profileName: e
-					}, a.body))) : n(m({
-						profileId: t,
-						error: a.error
+						error: l.error
 					}))
 				}
 		},
@@ -51279,4 +51288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a6930e5dfdaa22fab4b1.js.map
+//# sourceMappingURL=Governance~Reddit.e3e4a2e34a6af0034edf.js.map
