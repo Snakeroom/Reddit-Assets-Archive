@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b5fd49fcc21c7fbdd261.js
-// Retrieved at 4/30/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0aacbe7812d453d2955b.js
+// Retrieved at 4/30/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -47127,17 +47127,17 @@
 					case oC.a: {
 						const {
 							linkedIdentity: n
-						} = t.payload;
+						} = t.payload, s = e && e.linkedIdentities || [];
 						return e ? Object.assign({}, e, {
-							linkedIdentities: [...e.linkedIdentities, n]
+							linkedIdentities: [...s, n]
 						}) : e
 					}
 					case oC.b: {
 						const {
 							linkedIdentity: n
-						} = t.payload;
+						} = t.payload, s = e && e.linkedIdentities || [];
 						return e ? Object.assign({}, e, {
-							linkedIdentities: e.linkedIdentities.filter(e => e !== n)
+							linkedIdentities: s.filter(e => e !== n)
 						}) : e
 					}
 					default:
@@ -51288,4 +51288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.b5fd49fcc21c7fbdd261.js.map
+//# sourceMappingURL=Governance~Reddit.0aacbe7812d453d2955b.js.map
