@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.482765857bad79ed6401.js
-// Retrieved at 4/30/2020, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42f86b75e2a2f5e96d76.js
+// Retrieved at 4/30/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -9353,6 +9353,9 @@
 				accountManagerOrigin: (Object(n.b)(), "https://www.reddit.com"),
 				adsPath: {}.ADS_URL || "/api/request_promo.json",
 				dfpSlotPrefix: {}.DFP_SLOT_PREFIX || "/32173961/desktop",
+				dfpRefreshSlotId: "/32173961/Desktop-Refresh",
+				dfpRefreshSlotTestSubreddit: "askreddit",
+				dfpRefreshSlotInterval: 24e4,
 				apiHeaders: (e => e.split(";").reduce((e, t) => {
 					if (t && t.indexOf("=") > 0) {
 						const [i, n] = t.split("=");
@@ -11001,14 +11004,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("e5d4f43-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("618bc31-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e5d4f43-production",
+						release: "618bc31-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11370,7 +11373,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "e5d4f43-production",
+							releaseClient: "618bc31-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -28445,4 +28448,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.482765857bad79ed6401.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.42f86b75e2a2f5e96d76.js.map

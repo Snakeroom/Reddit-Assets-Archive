@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7f8f5340c035eaf8cbe6.js
-// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d446d0de872c71c187eb.js
+// Retrieved at 4/30/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -64,9 +64,10 @@
 				r = s("./src/lib/isFakeSubreddit/index.ts"),
 				o = s("./src/lib/fastdom/index.ts");
 			const i = new Map,
-				c = (e, t) => {
-					const s = [n.a.dfpSlotPrefix];
-					return t !== a.yb.PROFILE && (Object(r.a)(e) ? s.push("frontpage") : s.push("r.".concat(e))), t === a.yb.INDEX ? s.push(a.yb.LISTING) : t && s.push(t), s.join("/")
+				c = (e, t, s) => {
+					if (t === a.yb.SUBREDDIT && e === n.a.dfpRefreshSlotTestSubreddit && s === a.c.BELOW_THE_FOLD) return n.a.dfpRefreshSlotId;
+					const o = [n.a.dfpSlotPrefix];
+					return t !== a.yb.PROFILE && (Object(r.a)(e) ? o.push("frontpage") : o.push("r.".concat(e))), t === a.yb.INDEX ? o.push(a.yb.LISTING) : t && o.push(t), o.join("/")
 				},
 				d = (e, t) => {
 					e.setTargeting("keywords", t.keywords);
@@ -12427,4 +12428,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.7f8f5340c035eaf8cbe6.js.map
+//# sourceMappingURL=Reddit.d446d0de872c71c187eb.js.map
