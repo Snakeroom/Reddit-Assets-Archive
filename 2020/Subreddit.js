@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.477c9b6c42deaf399b2d.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b1ff0c15b2e307e6cf26.js
+// Retrieved at 4/30/2020, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -1172,10 +1172,10 @@
 					});
 					return r.a.createElement(S, null, r.a.createElement(N, null, i ? r.a.createElement(P, {
 						src: i
-					}) : r.a.createElement(k, null)), r.a.createElement(w, null, v._("Find people in {SubredditName} who want to chat", [v._param("SubredditName", "r/".concat(n.name))], {
-						hk: "3MC2RG"
-					})), r.a.createElement(O, null, v._("Bored at home? Want someone to talk to? We'll match you with members who want to chat too.", null, {
-						hk: "3ogWBx"
+					}) : r.a.createElement(k, null)), r.a.createElement(w, null, v._("Find people who want to chat", null, {
+						hk: "3Y6Pm1"
+					})), r.a.createElement(O, null, v._("Bored at home? Want someone to talk to? Reddit will match you with members who want to chat too.", null, {
+						hk: "3HaCWZ"
 					})), r.a.createElement(j, null, r.a.createElement(x.a, {
 						subreddit: n
 					}), e ? r.a.createElement(E, null, v._("{viewingCount} Online", [v._param("viewingCount", Object(d.b)(e))], {
@@ -6977,4 +6977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.477c9b6c42deaf399b2d.js.map
+//# sourceMappingURL=Subreddit.b1ff0c15b2e307e6cf26.js.map
