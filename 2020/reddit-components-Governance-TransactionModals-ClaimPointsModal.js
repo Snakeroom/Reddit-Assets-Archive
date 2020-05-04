@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.ea76bca733da75333e93.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.c6a6e48b6562cb141c49.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -221,4 +221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.ea76bca733da75333e93.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.c6a6e48b6562cb141c49.js.map

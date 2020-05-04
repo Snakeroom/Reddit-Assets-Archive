@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e65251a03bf91366844d.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.b36ee9b22d451bec6021.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -689,7 +689,7 @@
 						return e.posts.models[s]
 					},
 					tippers: (e, t) => {
-						if (y.d.spTopTippers(e)) return Object(v.x)(e, t)
+						if (y.d.spTopTippers(e)) return Object(v.y)(e, t)
 					}
 				}))((function(e) {
 					if (e.tippers && e.tippers.allTippers.has(e.userId)) {
@@ -828,7 +828,7 @@
 						let {
 							comment: s
 						} = t;
-						return !!Object(v.v)(e, s.subredditId, s.authorId).length
+						return !!Object(v.w)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
 						const s = Object(Z.G)(e, {
@@ -9421,4 +9421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.e65251a03bf91366844d.js.map
+//# sourceMappingURL=SearchResults.b36ee9b22d451bec6021.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ece1f8fc4d5e05b68d12.js
-// Retrieved at 4/30/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ee3b2fcc0abfe7b7b30c.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -266,37 +266,57 @@
 		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return d
+			s.d(t, "b", (function() {
+				return p
+			})), s.d(t, "a", (function() {
+				return h
 			}));
-			var n = s("./src/config.ts"),
-				a = s("./src/reddit/endpoints/governance/requester.ts");
+			var n = s("./src/lib/constants/index.ts"),
+				a = s("./src/lib/makeRequest/index.ts"),
+				r = s("./src/config.ts"),
+				o = s("./src/reddit/endpoints/governance/requester.ts");
 
-			function r(e, t) {
-				return Object(a.a)(e, {
+			function i(e, t) {
+				return Object(o.a)(e, {
 					method: "get",
-					endpoint: "".concat(n.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+					endpoint: "".concat(r.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
 				})
 			}
-			var o = s("./src/lib/makeActionCreator/index.ts"),
-				i = s("./src/reddit/actions/economics/me/constants.ts");
-			const c = Object(o.a)(i.a),
-				d = function() {
+			var c = s("./src/lib/makeActionCreator/index.ts"),
+				d = s("./src/reddit/actions/economics/me/constants.ts");
+			const l = Object(c.a)(d.a),
+				m = Object(c.a)(d.b),
+				u = Object(c.a)(d.c),
+				p = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
 					return async (t, s, n) => {
 						let {
 							apiContext: a
 						} = n;
-						const o = s().user.account,
-							i = s(),
-							d = !i.economics.me.fetched || e && !i.economics.me.data.specialMemberships;
-						if (o && d) {
-							const s = await r(a(), e);
+						const r = s().user.account,
+							o = s(),
+							c = !o.economics.me.fetched || e && !o.economics.me.data.specialMemberships;
+						if (r && c) {
+							const s = await i(a(), e);
 							if (s.ok) {
 								const n = s.body;
-								e && !n.specialMemberships && (n.specialMemberships = {}), t(c(n))
+								e && !n.specialMemberships && (n.specialMemberships = {}), t(l(n))
 							}
 						}
+					}
+				},
+				h = () => async (e, t) => {
+					const s = t(),
+						r = s.economics.me.data;
+					if (!r) throw new Error("me data required for copy to be fetched");
+					if (!s.economics.pointsCopy.fetched) {
+						e(m());
+						const t = "https://".concat(r.pointsDocsBaseUrl, "v1.json?web"),
+							s = await Object(a.b)({
+								endpoint: t,
+								method: n.ab.GET
+							});
+						s.ok && s.body && e(u(s.body))
 					}
 				}
 		},
@@ -392,7 +412,7 @@
 					apiContext: n
 				} = s;
 				if (!t().user.account) return;
-				await e(Object(v.a)(!0));
+				await e(Object(v.b)(!0));
 				const a = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(a);
 				if (r.length) {
@@ -824,13 +844,17 @@
 		},
 		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/reddit/actions/subscription/index.ts"),
-				a = s("./src/reddit/actions/users.ts"),
-				r = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				o = s("./src/reddit/selectors/user.ts");
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = s("./src/reddit/actions/economics/me/thunkedActions.ts"),
+				a = s("./src/reddit/actions/subscription/index.ts"),
+				r = s("./src/reddit/actions/users.ts"),
+				o = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				i = s("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
 				let s = t();
-				Object(o.H)(s) || await e(Object(a.u)()), s = t(), Object(o.H)(s) ? await e(Object(n.e)()) : Object(r.a)(e, s)
+				Object(i.H)(s) || await e(Object(r.u)()), s = t(), Object(i.H)(s) ? await Promise.all([e(Object(a.e)()), e(Object(n.b)()).then(() => {
+					if (t().economics.me.data) return e(Object(n.a)())
+				})]) : Object(o.a)(e, s)
 			}
 		},
 		"./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts": function(e, t, s) {
@@ -12428,4 +12452,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.ece1f8fc4d5e05b68d12.js.map
+//# sourceMappingURL=Reddit.ee3b2fcc0abfe7b7b30c.js.map

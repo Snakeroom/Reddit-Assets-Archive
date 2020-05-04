@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.9cc281a60b9e52f28b8b.js
-// Retrieved at 4/29/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.67cf271f04c4f7df64ee.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -317,7 +317,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(_.w)(e, s.id)
+					return Object(_.x)(e, s.id)
 				}
 			});
 			var L = Object(m.c)(Object(a.b)(M)((function(e) {
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.9cc281a60b9e52f28b8b.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.67cf271f04c4f7df64ee.js.map

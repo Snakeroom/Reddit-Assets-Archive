@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.1ea22388c7c644b5bba1.js
-// Retrieved at 4/30/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b572e1c4adb0aa3d11f3.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1979,7 +1979,7 @@
 						return e.posts.models[s]
 					},
 					tippers: (e, t) => {
-						if (v.d.spTopTippers(e)) return Object(C.x)(e, t)
+						if (v.d.spTopTippers(e)) return Object(C.y)(e, t)
 					}
 				}))((function(e) {
 					if (e.tippers && e.tippers.allTippers.has(e.userId)) {
@@ -2118,7 +2118,7 @@
 						let {
 							comment: s
 						} = t;
-						return !!Object(C.v)(e, s.subredditId, s.authorId).length
+						return !!Object(C.w)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
 						const s = Object(Z.G)(e, {
@@ -16362,4 +16362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.1ea22388c7c644b5bba1.js.map
+//# sourceMappingURL=CommentsPage.b572e1c4adb0aa3d11f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.eb4349f4831a7a1220bc.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.b5fc990ae2815eaf57b8.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -174,8 +174,8 @@
 				E = r("./src/reddit/selectors/telemetry.ts"),
 				C = r("./src/reddit/selectors/user.ts"),
 				j = r("./node_modules/reselect/es/index.js"),
-				w = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less"),
-				P = r.n(w);
+				P = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.m.less"),
+				w = r.n(P);
 			const O = "subreddit-premium-purchase-braintree",
 				N = (e, t, r) => s.fbt._("{communityName} {membershipAlt}. ${price}/month, automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.", [s.fbt._param("communityName", e.displayText), s.fbt._param("membershipAlt", r.membershipAlt), s.fbt._param("price", Object(d.a)(t, !0))], {
 					hk: "3q2JqJ"
@@ -250,20 +250,20 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: Object(o.a)(this.props.className, P.a.container)
+						className: Object(o.a)(this.props.className, w.a.container)
 					}, this.alreadyPurchased() ? i.a.createElement("div", {
-						className: P.a.alreadyPurchased
+						className: w.a.alreadyPurchased
 					}, s.fbt._("Already Purchased", null, {
 						hk: "2h3Eug"
 					})) : i.a.createElement(n.Fragment, null, i.a.createElement("div", {
-						className: Object(o.a)(P.a.button, {
-							[P.a.buttonWithoutCards]: !this.props.showCards,
-							[P.a.loading]: this.state.loading,
-							[P.a.submitting]: this.state.submitting
+						className: Object(o.a)(w.a.button, {
+							[w.a.buttonWithoutCards]: !this.props.showCards,
+							[w.a.loading]: this.state.loading,
+							[w.a.submitting]: this.state.submitting
 						}),
 						id: this.getId()
 					}), this.state.submitting && i.a.createElement(h.a, {
-						className: P.a.loadingIcon,
+						className: w.a.loadingIcon,
 						sizePx: 24
 					})))
 				}
@@ -280,13 +280,13 @@
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.w)(e, r.id)
+					return Object(y.x)(e, r.id)
 				},
 				userIsPremiumSubscriber: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.D)(e, r.id)
+					return Object(y.E)(e, r.id)
 				}
 			});
 			t.a = Object(g.b)(Object(a.b)(S, (e, t) => {
@@ -377,14 +377,14 @@
 				E = r("./src/reddit/selectors/economics.ts"),
 				C = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/PurchaseButton/index.tsx"),
 				j = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Footer/index.m.less"),
-				w = r.n(j);
-			const P = (e, t, r) => {
+				P = r.n(j);
+			const w = (e, t, r) => {
 				const s = '<a href="'.concat(y.a, '" target="_blank">Reddit Beta Terms of Service</a>'),
 					i = _.fbt._("{communityName} {membershipAlt} automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months. By purchasing a {communityNameAgain} {membershipAltAgain}, you agree to the {userAgreement} and {beta}", [_.fbt._param("communityName", e.name), _.fbt._param("membershipAlt", r.membershipAlt), _.fbt._param("communityNameAgain", e.name), _.fbt._param("membershipAltAgain", r.membershipAlt), _.fbt._param("userAgreement", '<a href="https://www.redditinc.com/policies/user-agreement" target="_blank">Reddit User Agreement</a>'), _.fbt._param("beta", s)], {
 						hk: "1qjeof"
 					});
 				return n.a.createElement("div", {
-					className: w.a.legalWrapper,
+					className: P.a.legalWrapper,
 					dangerouslySetInnerHTML: {
 						__html: i
 					},
@@ -399,21 +399,21 @@
 					let {
 						subreddit: r
 					} = t;
-					return Object(E.w)(e, r.id)
+					return Object(E.x)(e, r.id)
 				}
 			});
 			var N = Object(i.b)(O)((function(e) {
 					return n.a.createElement("footer", {
-						className: Object(x.a)(e.className, w.a.container),
+						className: Object(x.a)(e.className, P.a.container),
 						style: {
 							backgroundColor: e.isNightmode ? "rgba(0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.3)"
 						}
 					}, n.a.createElement("div", {
-						className: w.a.buttonWrapper
+						className: P.a.buttonWrapper
 					}, n.a.createElement(C.a, {
 						price: e.price,
 						subreddit: e.subreddit
-					})), P(e.subreddit, e.isNightmode, e.meta))
+					})), w(e.subreddit, e.isNightmode, e.meta))
 				})),
 				v = r("./src/reddit/components/Economics/SubredditPremium/PurchaseModal/index.m.less"),
 				S = r.n(v);
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.eb4349f4831a7a1220bc.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.b5fc990ae2815eaf57b8.js.map

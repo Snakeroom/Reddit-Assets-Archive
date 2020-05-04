@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.877969df61a79506ed48.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.46c232823c303f7f69bf.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -3315,15 +3315,15 @@
 			"use strict";
 			s.d(t, "d", (function() {
 				return h
-			})), s.d(t, "s", (function() {
+			})), s.d(t, "t", (function() {
 				return f
 			})), s.d(t, "b", (function() {
 				return x
-			})), s.d(t, "D", (function() {
+			})), s.d(t, "E", (function() {
 				return g
 			})), s.d(t, "g", (function() {
 				return v
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "w", (function() {
 				return y
 			})), s.d(t, "j", (function() {
 				return j
@@ -3333,11 +3333,11 @@
 				return C
 			})), s.d(t, "m", (function() {
 				return w
-			})), s.d(t, "F", (function() {
+			})), s.d(t, "G", (function() {
 				return E
 			})), s.d(t, "q", (function() {
 				return S
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "s", (function() {
 				return k
 			})), s.d(t, "f", (function() {
 				return N
@@ -3345,31 +3345,31 @@
 				return _
 			})), s.d(t, "n", (function() {
 				return T
-			})), s.d(t, "t", (function() {
+			})), s.d(t, "u", (function() {
 				return I
 			})), s.d(t, "a", (function() {
 				return P
-			})), s.d(t, "u", (function() {
+			})), s.d(t, "v", (function() {
 				return F
 			})), s.d(t, "p", (function() {
 				return M
-			})), s.d(t, "w", (function() {
-				return D
 			})), s.d(t, "x", (function() {
-				return R
+				return D
 			})), s.d(t, "y", (function() {
+				return R
+			})), s.d(t, "z", (function() {
 				return B
-			})), s.d(t, "E", (function() {
+			})), s.d(t, "F", (function() {
 				return W
-			})), s.d(t, "A", (function() {
-				return z
 			})), s.d(t, "B", (function() {
+				return z
+			})), s.d(t, "C", (function() {
 				return H
 			})), s.d(t, "c", (function() {
 				return q
-			})), s.d(t, "C", (function() {
+			})), s.d(t, "D", (function() {
 				return Z
-			})), s.d(t, "z", (function() {
+			})), s.d(t, "A", (function() {
 				return U
 			})), s.d(t, "h", (function() {
 				return Q
@@ -3377,6 +3377,8 @@
 				return G
 			})), s.d(t, "o", (function() {
 				return K
+			})), s.d(t, "r", (function() {
+				return X
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/bignumber.js/bignumber.js"),
@@ -3676,7 +3678,8 @@
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.userKarma), new n.BigNumber(0)).toString() : null
-				}
+				},
+				X = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, s) {
 			"use strict";
@@ -3736,4 +3739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.877969df61a79506ed48.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.46c232823c303f7f69bf.js.map

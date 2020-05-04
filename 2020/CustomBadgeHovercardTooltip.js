@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.884bf829845db41f1a7c.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b2a69e423f641430c225.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
@@ -36,8 +36,8 @@
 				f = s("./src/reddit/selectors/economics.ts"),
 				g = s("./src/reddit/selectors/telemetry.ts"),
 				v = s("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
-				w = s.n(v);
-			class j extends o.a.Component {
+				j = s.n(v);
+			class w extends o.a.Component {
 				constructor(e) {
 					super(e), this.correlationId = e.correlationId || u()()
 				}
@@ -59,31 +59,31 @@
 						t = this.props.subreddit && this.props.subreddit.name || "",
 						s = this.props.meta;
 					return o.a.createElement("div", {
-						className: Object(p.a)(this.props.className, w.a.container),
+						className: Object(p.a)(this.props.className, j.a.container),
 						style: this.props.style
 					}, o.a.createElement("header", {
-						className: w.a.header
+						className: j.a.header
 					}, e ? l.fbt._("Custom Badge", null, {
 						hk: "4xui7o"
 					}) : l.fbt._("Upload Badge", null, {
 						hk: "41J8Iq"
 					})), o.a.createElement("article", {
-						className: w.a.content
+						className: j.a.content
 					}, e ? l.fbt._("Create a custom badge. Share it with other {memberAltPlural} for a reward.", [l.fbt._param("memberAltPlural", s.memberAltPlural)], {
 						hk: "1GYswu"
 					}) : l.fbt._("Users without a {membershipAlt} can design and upload badges and receive 3 months of {membership} for free.", [l.fbt._param("membershipAlt", s.membershipAlt), l.fbt._param("membership", s.membership)], {
 						hk: "lVti0"
 					})), o.a.createElement("footer", {
-						className: w.a.footer
+						className: j.a.footer
 					}, o.a.createElement(_.n, {
-						className: w.a.link,
+						className: j.a.link,
 						onClick: () => this.onOpenUploadDialog()
 					}, o.a.createElement(O.a, {
-						className: w.a.addCustomIcon
+						className: j.a.addCustomIcon
 					}), l.fbt._("upload custom badge", null, {
 						hk: "26VOvM"
 					})), !e && o.a.createElement(_.o, {
-						className: w.a.link,
+						className: j.a.link,
 						disabled: !this.props.subreddit,
 						to: Object(C.a)(t, this.correlationId),
 						onClick: e => {
@@ -97,7 +97,7 @@
 							}))
 						}
 					}, o.a.createElement(x.a, {
-						className: w.a.crown
+						className: j.a.crown
 					}), l.fbt._("Get {membershipAlt}", [l.fbt._param("membershipAlt", s.membershipAlt)], {
 						hk: "2RRNNM"
 					}))))
@@ -108,7 +108,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.w)(e, s)
+					return Object(f.x)(e, s)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -120,12 +120,12 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.D)(e, s)
+					return Object(f.E)(e, s)
 				}
 			});
 			var E = Object(h.c)(Object(n.b)(A, e => ({
 				onOpenUploadDialog: () => e(Object(b.i)())
-			}))(j));
+			}))(w));
 			const k = Object(d.a)(E, [i.a.Click, i.a.Keydown]);
 			const D = Object(a.c)({
 				isOpen: (e, t) => {
@@ -170,4 +170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.884bf829845db41f1a7c.js.map
+//# sourceMappingURL=CustomBadgeHovercardTooltip.b2a69e423f641430c225.js.map

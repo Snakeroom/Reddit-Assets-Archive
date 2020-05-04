@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.083008ddedec8780407a.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.27172f443b6aead7ea78.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsTopTippersPostLeaderboard"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -201,7 +201,7 @@
 				j = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/GenerousSupporters/index.m.less"),
 				w = s.n(j);
 			const L = Object(c.c)({
-				tippers: b.x,
+				tippers: b.y,
 				account: e => e.user.account
 			});
 			var S, O = Object(r.b)(L)((function(e) {
@@ -250,39 +250,39 @@
 					})))
 				})),
 				B = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Item/index.m.less"),
-				A = s.n(B);
+				y = s.n(B);
 
-			function P(e) {
+			function A(e) {
 				const t = e.alignment || S.Left;
 				return a.a.createElement("div", {
-					className: Object(o.a)(e.className, A.a.container)
+					className: Object(o.a)(e.className, y.a.container)
 				}, a.a.createElement("article", {
-					className: A.a.content
+					className: y.a.content
 				}, a.a.createElement("div", {
-					className: Object(o.a)(A.a.contentInner, {
-						[A.a.contentAlignmentCenter]: t === S.Center,
-						[A.a.contentAlignmentLeft]: t === S.Left,
-						[A.a.contentAlignmentRight]: t === S.Right
+					className: Object(o.a)(y.a.contentInner, {
+						[y.a.contentAlignmentCenter]: t === S.Center,
+						[y.a.contentAlignmentLeft]: t === S.Left,
+						[y.a.contentAlignmentRight]: t === S.Right
 					})
 				}, e.children)), a.a.createElement("footer", {
-					className: A.a.footer
+					className: y.a.footer
 				}, void 0 !== e.index && a.a.createElement("div", {
-					className: A.a.number
+					className: y.a.number
 				}, e.index + 1), a.a.createElement("div", {
-					className: A.a.description
+					className: y.a.description
 				}, e.description)))
 			}! function(e) {
 				e.Center = "center", e.Left = "left", e.Right = "right"
 			}(S || (S = {}));
-			var F = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Row/index.m.less"),
-				U = s.n(F);
+			var P = s("./src/reddit/components/Economics/FTUE/TopTippersBenefits/Carousel/Row/index.m.less"),
+				F = s.n(P);
 
-			function y(e) {
+			function U(e) {
 				return a.a.createElement("div", {
-					className: Object(o.a)(e.className, U.a.container)
+					className: Object(o.a)(e.className, F.a.container)
 				}, e.children.map((e, t) => a.a.cloneElement(e, {
 					index: t,
-					className: Object(o.a)(e.props.className, U.a.item),
+					className: Object(o.a)(e.props.className, F.a.item),
 					key: t
 				})))
 			}
@@ -345,9 +345,9 @@
 				J = s.n(Q);
 
 			function $(e) {
-				return a.a.createElement(y, {
+				return a.a.createElement(U, {
 					className: e.className
-				}, a.a.createElement(P, {
+				}, a.a.createElement(A, {
 					alignment: S.Center,
 					className: J.a.firstItem,
 					description: E.fbt._("Look for the tip button under the post", null, {
@@ -356,7 +356,7 @@
 				}, a.a.createElement(z, {
 					className: J.a.tipping,
 					postId: e.contentId
-				})), a.a.createElement(P, {
+				})), a.a.createElement(A, {
 					description: E.fbt._("Be listed as a generous supporter under the post", null, {
 						hk: "2E1zW6"
 					})
@@ -365,7 +365,7 @@
 					contentId: e.contentId,
 					creatorId: e.creatorId,
 					subredditId: e.subredditId
-				})), a.a.createElement(P, {
+				})), a.a.createElement(A, {
 					description: E.fbt._("Get a distinguished username and an icon in comments", null, {
 						hk: "3U9mLv"
 					})
@@ -558,7 +558,7 @@
 				fbt: u
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const b = Object(i.c)({
-				tippers: o.x
+				tippers: o.y
 			});
 			t.default = Object(r.b)(b)((function(e) {
 				const {
@@ -627,4 +627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.083008ddedec8780407a.js.map
+//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.27172f443b6aead7ea78.js.map

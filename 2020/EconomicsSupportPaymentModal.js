@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.201abb685f534f8ee96e.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.e99a850a1eddd8042041.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -279,7 +279,7 @@
 			const Y = Object(b.a)(E.a),
 				q = "economy-support-paymentmodal-card-dropdown";
 			const G = Object(r.c)({
-				savedPayments: h.t,
+				savedPayments: h.u,
 				dropdownIsOpen: e => e.tooltipId === q,
 				language: e => e.user.language
 			});
@@ -488,7 +488,7 @@
 				}
 			}
 			const be = Object(r.c)({
-					savedPayments: h.t,
+					savedPayments: h.u,
 					user: y.db
 				}),
 				ge = Object(o.b)(be, (e, t) => {
@@ -835,4 +835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.201abb685f534f8ee96e.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.e99a850a1eddd8042041.js.map

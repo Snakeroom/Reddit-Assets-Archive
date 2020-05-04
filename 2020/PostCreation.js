@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.772e2d938c498d4047a1.js
-// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7bef378632069126732a.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -923,37 +923,57 @@
 		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return l
+			n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "a", (function() {
+				return h
 			}));
-			var s = n("./src/config.ts"),
-				o = n("./src/reddit/endpoints/governance/requester.ts");
+			var s = n("./src/lib/constants/index.ts"),
+				o = n("./src/lib/makeRequest/index.ts"),
+				r = n("./src/config.ts"),
+				i = n("./src/reddit/endpoints/governance/requester.ts");
 
-			function r(e, t) {
-				return Object(o.a)(e, {
+			function a(e, t) {
+				return Object(i.a)(e, {
 					method: "get",
-					endpoint: "".concat(s.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+					endpoint: "".concat(r.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
 				})
 			}
-			var i = n("./src/lib/makeActionCreator/index.ts"),
-				a = n("./src/reddit/actions/economics/me/constants.ts");
-			const c = Object(i.a)(a.a),
-				l = function() {
+			var c = n("./src/lib/makeActionCreator/index.ts"),
+				l = n("./src/reddit/actions/economics/me/constants.ts");
+			const d = Object(c.a)(l.a),
+				u = Object(c.a)(l.b),
+				p = Object(c.a)(l.c),
+				m = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
 					return async (t, n, s) => {
 						let {
 							apiContext: o
 						} = s;
-						const i = n().user.account,
-							a = n(),
-							l = !a.economics.me.fetched || e && !a.economics.me.data.specialMemberships;
-						if (i && l) {
-							const n = await r(o(), e);
+						const r = n().user.account,
+							i = n(),
+							c = !i.economics.me.fetched || e && !i.economics.me.data.specialMemberships;
+						if (r && c) {
+							const n = await a(o(), e);
 							if (n.ok) {
 								const s = n.body;
-								e && !s.specialMemberships && (s.specialMemberships = {}), t(c(s))
+								e && !s.specialMemberships && (s.specialMemberships = {}), t(d(s))
 							}
 						}
+					}
+				},
+				h = () => async (e, t) => {
+					const n = t(),
+						r = n.economics.me.data;
+					if (!r) throw new Error("me data required for copy to be fetched");
+					if (!n.economics.pointsCopy.fetched) {
+						e(u());
+						const t = "https://".concat(r.pointsDocsBaseUrl, "v1.json?web"),
+							n = await Object(o.b)({
+								endpoint: t,
+								method: s.ab.GET
+							});
+						n.ok && n.body && e(p(n.body))
 					}
 				}
 		},
@@ -1043,7 +1063,7 @@
 					apiContext: s
 				} = n;
 				if (!t().user.account) return;
-				await e(Object(y.a)(!0));
+				await e(Object(y.b)(!0));
 				const o = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(o);
 				if (r.length) {
@@ -3969,7 +3989,7 @@
 						subredditId: n,
 						userId: s
 					} = t;
-					return Object(p.v)(e, n, s)
+					return Object(p.w)(e, n, s)
 				},
 				customBadgesEnabled: u.d.spCustomBadges,
 				premiumEnabled: e => u.d.spPremium(e)
@@ -4009,7 +4029,7 @@
 						subredditId: n,
 						userId: s
 					} = t;
-					return Object(a.v)(e, n, s)
+					return Object(a.w)(e, n, s)
 				}
 			}))(c)
 		},
@@ -30129,15 +30149,15 @@
 			"use strict";
 			n.d(t, "d", (function() {
 				return b
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "t", (function() {
 				return f
 			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(t, "D", (function() {
+			})), n.d(t, "E", (function() {
 				return x
 			})), n.d(t, "g", (function() {
 				return y
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return v
 			})), n.d(t, "j", (function() {
 				return C
@@ -30147,11 +30167,11 @@
 				return O
 			})), n.d(t, "m", (function() {
 				return j
-			})), n.d(t, "F", (function() {
+			})), n.d(t, "G", (function() {
 				return S
 			})), n.d(t, "q", (function() {
 				return k
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "f", (function() {
 				return _
@@ -30159,31 +30179,31 @@
 				return T
 			})), n.d(t, "n", (function() {
 				return I
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "u", (function() {
 				return P
 			})), n.d(t, "a", (function() {
 				return M
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return N
 			})), n.d(t, "p", (function() {
 				return F
-			})), n.d(t, "w", (function() {
-				return B
 			})), n.d(t, "x", (function() {
-				return A
+				return B
 			})), n.d(t, "y", (function() {
+				return A
+			})), n.d(t, "z", (function() {
 				return U
-			})), n.d(t, "E", (function() {
+			})), n.d(t, "F", (function() {
 				return K
-			})), n.d(t, "A", (function() {
-				return H
 			})), n.d(t, "B", (function() {
+				return H
+			})), n.d(t, "C", (function() {
 				return W
 			})), n.d(t, "c", (function() {
 				return V
-			})), n.d(t, "C", (function() {
+			})), n.d(t, "D", (function() {
 				return z
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "A", (function() {
 				return q
 			})), n.d(t, "h", (function() {
 				return G
@@ -30191,6 +30211,8 @@
 				return J
 			})), n.d(t, "o", (function() {
 				return Q
+			})), n.d(t, "r", (function() {
+				return Z
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/bignumber.js/bignumber.js"),
@@ -30490,7 +30512,8 @@
 					if (!t || !t.subredditId) return null;
 					const n = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return n && n.length ? n.reduce((e, t) => e.plus(t.userKarma), new s.BigNumber(0)).toString() : null
-				}
+				},
+				Z = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/editorContent.ts": function(e, t, n) {
 			"use strict";
@@ -30764,4 +30787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.772e2d938c498d4047a1.js.map
+//# sourceMappingURL=PostCreation.7bef378632069126732a.js.map

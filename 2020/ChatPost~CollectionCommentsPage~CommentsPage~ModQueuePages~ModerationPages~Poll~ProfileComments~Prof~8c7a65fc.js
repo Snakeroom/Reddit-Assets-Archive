@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a0b8815aa6e1bed602cb.js
-// Retrieved at 4/28/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.d2533284db7bd04221bc.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -691,7 +691,7 @@
 						subredditId: s,
 						userId: o
 					} = t;
-					return Object(u.v)(e, s, o)
+					return Object(u.w)(e, s, o)
 				},
 				customBadgesEnabled: m.d.spCustomBadges,
 				premiumEnabled: e => m.d.spPremium(e)
@@ -731,7 +731,7 @@
 						subredditId: s,
 						userId: o
 					} = t;
-					return Object(d.v)(e, s, o)
+					return Object(d.w)(e, s, o)
 				}
 			}))(i)
 		},
@@ -1713,4 +1713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.a0b8815aa6e1bed602cb.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.d2533284db7bd04221bc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.e67bbdf330e9a37a532e.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.e3744043e22a42024497.js
+// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"], {
 		"./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less": function(e, t, s) {
@@ -215,7 +215,7 @@
 					})
 				},
 				X = s("./src/reddit/components/Economics/Stripe/FormElements/index.tsx"),
-				G = e => n.a.createElement("svg", {
+				z = e => n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 103 18"
@@ -224,18 +224,18 @@
 				}), n.a.createElement("path", {
 					d: "M102.545 10.051H96.9859C97.1129 11.382 98.0879 11.774 99.1949 11.774C100.322 11.774 101.21 11.536 101.984 11.146V13.433C101.213 13.861 100.194 14.169 98.8369 14.169C96.0709 14.169 94.1329 12.437 94.1329 9.01298C94.1329 6.12098 95.7769 3.82498 98.4779 3.82498C101.175 3.82498 102.583 6.11998 102.583 9.02798C102.583 9.30298 102.558 9.89798 102.545 10.051ZM98.4599 6.13998C97.7499 6.13998 96.9609 6.67598 96.9609 7.95498H99.8969C99.8969 6.67698 99.1569 6.13998 98.4599 6.13998ZM89.5369 14.169C88.5429 14.169 87.9359 13.75 87.5279 13.451L87.5219 16.664L84.6829 17.268L84.6819 4.01398H87.1819L87.3299 4.71498C87.7219 4.34898 88.4409 3.82498 89.5539 3.82498C91.5479 3.82498 93.4259 5.62098 93.4259 8.92698C93.4259 12.535 91.5679 14.169 89.5369 14.169ZM88.8749 6.33998C88.2239 6.33998 87.8149 6.57798 87.5189 6.90298L87.5359 11.122C87.8119 11.421 88.2089 11.661 88.8749 11.661C89.9249 11.661 90.6289 10.518 90.6289 8.98898C90.6289 7.50398 89.9139 6.33998 88.8749 6.33998ZM80.5779 4.01398H83.4279V13.966H80.5779V4.01398ZM80.5779 0.83598L83.4279 0.22998V2.54298L80.5779 3.14898V0.83598ZM77.5389 7.21898V13.966H74.7009V4.01398H77.1559L77.3339 4.85298C77.9989 3.63098 79.3259 3.87898 79.7039 4.01498V6.62498C79.3429 6.50798 78.2099 6.33798 77.5389 7.21898ZM71.4529 10.475C71.4529 12.148 73.2449 11.627 73.6079 11.482V13.793C73.2299 14.001 72.5439 14.169 71.6159 14.169C69.9309 14.169 68.6659 12.928 68.6659 11.247L68.6789 2.13798L71.4509 1.54798L71.4529 4.01398H73.6089V6.43498H71.4529V10.475ZM67.9139 10.959C67.9139 13.003 66.2869 14.169 63.9259 14.169C62.9469 14.169 61.8769 13.979 60.8209 13.525V10.814C61.7739 11.332 62.9879 11.721 63.9289 11.721C64.5619 11.721 65.0179 11.551 65.0179 11.026C65.0179 9.67098 60.7019 10.181 60.7019 7.03798C60.7019 5.02798 62.2369 3.82498 64.5399 3.82498C65.4809 3.82498 66.4209 3.96898 67.3619 4.34398V7.01898C66.4979 6.55198 65.4009 6.28798 64.5379 6.28798C63.9429 6.28798 63.5729 6.45998 63.5729 6.90298C63.5729 8.18098 67.9139 7.57298 67.9139 10.959Z"
 				})),
-				Y = s("./src/reddit/components/Economics/Support/PaymentTooltip/NewCard/index.m.less"),
-				R = s.n(Y);
+				G = s("./src/reddit/components/Economics/Support/PaymentTooltip/NewCard/index.m.less"),
+				Y = s.n(G);
 			const {
-				fbt: q
+				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var z = function(e) {
+			var q = function(e) {
 					return n.a.createElement("div", {
-						className: Object(i.a)(R.a.container, e.className)
+						className: Object(i.a)(Y.a.container, e.className)
 					}, n.a.createElement(F.c, {
 						redditStyle: !0,
-						className: R.a.input,
-						label: q._("name on card", null, {
+						className: Y.a.input,
+						label: R._("name on card", null, {
 							hk: "2IGHFb"
 						}),
 						type: "text",
@@ -254,20 +254,20 @@
 							element: t
 						}))
 					}), e.isLoggedIn && n.a.createElement("div", {
-						className: R.a.saveCard,
+						className: Y.a.saveCard,
 						onClick: () => e.onChange(Object.assign({}, e.card, {
 							saveCard: !e.card.saveCard
 						}))
 					}, n.a.createElement("div", {
-						className: R.a.saveCardText
+						className: Y.a.saveCardText
 					}, n.a.createElement(T.a, {
 						redditStyle: !0,
-						className: R.a.checkbox,
+						className: Y.a.checkbox,
 						isCheckboxSelected: !!e.card.saveCard
-					}), q._("Save card", null, {
+					}), R._("Save card", null, {
 						hk: "4iuuuw"
-					})), n.a.createElement(G, {
-						className: R.a.stripeIcon
+					})), n.a.createElement(z, {
+						className: Y.a.stripeIcon
 					})))
 				},
 				K = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
@@ -280,7 +280,7 @@
 				return e.type === N.b.SavedPayPal || e.type === N.b.SavedStripe
 			}
 			const se = Object(c.c)({
-				savedPayments: x.t
+				savedPayments: x.u
 			});
 			var ae = Object(r.b)(se)((function(e) {
 					return n.a.createElement("div", {
@@ -386,7 +386,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(x.y)(e, {
+					return Object(x.z)(e, {
 						subredditId: s,
 						contentId: s
 					})
@@ -499,7 +499,7 @@
 			const xe = Object(c.c)({
 				language: e => e.user.language,
 				tipsProportions: (e, t) => {
-					if (t.subreddit) return Object(x.y)(e, {
+					if (t.subreddit) return Object(x.z)(e, {
 						contentId: t.contentId,
 						subredditId: t.subreddit.id
 					})
@@ -601,7 +601,7 @@
 						onSelectPayment: this.handleChangePayment
 					}), this.props.savedPaymentsState === x.a.Fetching && n.a.createElement(me, {
 						className: Te.a.paymentSelector
-					}), !!this.state.selectedPayment && this.state.selectedPayment.type === N.b.NewStripe && (this.state.stripeInstance ? n.a.createElement(z, {
+					}), !!this.state.selectedPayment && this.state.selectedPayment.type === N.b.NewStripe && (this.state.stripeInstance ? n.a.createElement(q, {
 						card: this.state.selectedPayment,
 						className: Te.a.newCard,
 						isLoggedIn: this.props.isLoggedIn,
@@ -661,8 +661,8 @@
 				}
 			}
 			const we = Object(c.c)({
-				savedPayments: x.t,
-				savedPaymentsState: x.u,
+				savedPayments: x.u,
+				savedPaymentsState: x.v,
 				accountId: e => e.user.account && e.user.account.id || "",
 				accountUsername: e => e.user.account && e.user.account.displayText || "",
 				isLoggedIn: e => !!e.user.account,
@@ -726,4 +726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.e67bbdf330e9a37a532e.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.e3744043e22a42024497.js.map
