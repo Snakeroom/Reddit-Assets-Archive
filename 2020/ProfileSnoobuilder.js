@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.2071d52c05255c6311a8.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.8f8b5481745e5d2eafb4.js
+// Retrieved at 5/5/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -510,7 +510,7 @@
 					}
 					return n
 				};
-			var T = o.a.memo(e => {
+			var L = o.a.memo(e => {
 					let t = [e.text];
 					return e.parseMdLinks && (t = S()(t, R)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = j.e.add(C.g.subreddit.prefix, C.g.subreddit.config).match(e);
@@ -535,7 +535,7 @@
 						}, t)
 					}), " ")
 				}),
-				L = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				T = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				N = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/models/ContentGate.ts"),
 				z = n("./src/reddit/selectors/meta.ts"),
@@ -549,7 +549,7 @@
 				language: M.P,
 				origin: z.j,
 				user: M.i
-			}), de = Object(L.t)(), le = Object(i.b)(ae, (e, t) => {
+			}), de = Object(T.t)(), le = Object(i.b)(ae, (e, t) => {
 				let {
 					subredditName: n
 				} = t;
@@ -604,8 +604,8 @@
 							hk: "49p4or"
 						})) : o.a.createElement(Z, {
 							href: Object(l.a)(d, u)
-						}, D._("Log In", null, {
-							hk: "35J1JT"
+						}, D._("Log in", null, {
+							hk: "odEG4"
 						}))));
 					case B.a.Nsfw:
 					case B.a.NsfwCustomFeed:
@@ -694,7 +694,7 @@
 							src: "".concat(s.a.assetPath, "/img/content-gate-icons/banned.png")
 						}), o.a.createElement(re, null, D._("r/{community name} has been banned from Reddit", [D._param("community name", x)], {
 							hk: "2at9Se"
-						})), (e => o.a.createElement(U, null, e ? o.a.createElement(T, {
+						})), (e => o.a.createElement(U, null, e ? o.a.createElement(L, {
 							linkClassName: A.a.Link,
 							text: e,
 							parseMdLinks: !0,
@@ -1650,4 +1650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.2071d52c05255c6311a8.js.map
+//# sourceMappingURL=ProfileSnoobuilder.8f8b5481745e5d2eafb4.js.map
