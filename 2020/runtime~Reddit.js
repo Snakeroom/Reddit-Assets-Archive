@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.009e693163d5e8a21735.js
-// Retrieved at 5/5/2020, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8d2c9622297021f0547f.js
+// Retrieved at 5/5/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -530,13 +530,13 @@
 					Subreddit: "be1eb3ea6ad2c2bbdbf7",
 					"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf": "27e58e00b356c4dcd63c",
 					"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "e010879daf6a469e1853",
-					CollectionCommentsPage: "de6b64d89b5166edd7ea",
-					CommentsPage: "de6b64d89b5166edd7ea",
+					CollectionCommentsPage: "6c3c0484dd7698cba1c8",
+					CommentsPage: "6c3c0484dd7698cba1c8",
 					"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "31d6cfe0d16ae931b73c",
 					ModerationPages: "98aeddbe786b2f04f1eb",
 					"vendors~PostCreation~RichTextEditor": "31d6cfe0d16ae931b73c",
 					"vendors~PostCreation": "31d6cfe0d16ae931b73c",
-					PostCreation: "faaf951a191b44282b3a",
+					PostCreation: "fc50bf6c3cf13475d9c5",
 					"vendors~Multireddit": "31d6cfe0d16ae931b73c",
 					"Multireddit~reddit-components-AdHocMultiredditSidebar": "fa7fcae64d93c173a51e",
 					Multireddit: "00ef8079cb3da64660eb",
@@ -638,7 +638,7 @@
 					"reddit-components-Governance-ClaimPointsBanner": "cf3d4beeeea933269a40",
 					AuthorHovercard: "8af7608e65a5f98549ad",
 					AwardTooltip: "a38b7ba17f1b5f686b54",
-					ChatPost: "c35d01f35a573c90fc8e",
+					ChatPost: "9a214f73ed8286a2ba15",
 					CommentsPageNativeAd: "d5fa32dd9901fd00c0af",
 					EconomicsSupportDonationAmount: "2a59fde9d98256e177a2",
 					EconomicsTopTippersPostLeaderboard: "ef755b5604e16b9d618d",
@@ -958,7 +958,7 @@
 						FrontpageSidebar: "502bd7b4fc82b11ef631",
 						Frontpage: "4d58fbda7ce98a6ade78",
 						Topic: "49aad577adf91d03bbd9",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "bfbb7a8406d8bdc96b2a",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "776cb04f787a88626b3e",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "16b378d4bed75cb52297",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "24355ba24dd56bbc651f",
@@ -1020,13 +1020,13 @@
 						Subreddit: "c566e4fd8ee3fde25b29",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf": "eb361118c5308bc2f057",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "9c8f237478b233d05c04",
-						CollectionCommentsPage: "ba9342b51f1386b731bb",
-						CommentsPage: "454249de11ed68bd738c",
+						CollectionCommentsPage: "a0c596b9e4cfa892c556",
+						CommentsPage: "7f1ba32329f5bd729153",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "febb84e7692b724cdf36",
 						ModerationPages: "cc240be6febf3ff79750",
 						"vendors~PostCreation~RichTextEditor": "ecf670dbf9b7450b5178",
 						"vendors~PostCreation": "c051114172e8b42d437b",
-						PostCreation: "1f19eb39533778642f72",
+						PostCreation: "6db4df4df5d4bf0b037b",
 						"vendors~Multireddit": "ed2022bd9feff50ce623",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "bc252f2eabae4765593d",
 						Multireddit: "f9b03993ee719febb708",
@@ -1126,9 +1126,9 @@
 						EconomicsCommunityTipJar: "f15796655bac800ff716",
 						"vendors~reddit-components-Governance-ClaimPointsBanner": "c26d27a3e854bec09da8",
 						"reddit-components-Governance-ClaimPointsBanner": "5d0ad4297ff103da4d1e",
-						AuthorHovercard: "cb6eff8084f281cde30b",
+						AuthorHovercard: "0e4db32b23647633d1a0",
 						AwardTooltip: "c0c78207708541813583",
-						ChatPost: "9a2f72ff2b0d4c59e0e5",
+						ChatPost: "2879603c10c834534bb3",
 						CommentsPageNativeAd: "1fb4fac8f2a4db326985",
 						EconomicsSupportDonationAmount: "7c70747014144379d9c8",
 						EconomicsTopTippersPostLeaderboard: "27172f443b6aead7ea78",
@@ -1237,4 +1237,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.009e693163d5e8a21735.js.map
+//# sourceMappingURL=runtime~Reddit.8d2c9622297021f0547f.js.map
