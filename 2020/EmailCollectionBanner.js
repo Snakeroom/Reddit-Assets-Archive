@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.90f0cb8ef3b0108688b0.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.8e3cddf0a910fcc8ee29.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -113,18 +113,18 @@
 				H = s.n(D);
 			const {
 				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = "banner", F = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = "banner", M = Object(r.c)({
 				user: I.i
-			}), A = Object(o.b)(F, e => ({
+			}), A = Object(o.b)(M, e => ({
 				onAddEmail: () => e(Object(l.h)(S.c)),
 				onClose: () => e(Object(c.a)())
 			}));
 			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.closeBanner = () => {
-						this.props.sendEvent(Object(k.e)(M)), this.props.onClose()
+						this.props.sendEvent(Object(k.e)(F)), this.props.onClose()
 					}, this.addEmail = () => {
-						this.props.onAddEmail(), this.props.sendEvent(Object(k.a)(M))
+						this.props.onAddEmail(), this.props.sendEvent(Object(k.a)(F))
 					}, this.renderLayout = () => {
 						const {
 							user: e
@@ -154,7 +154,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(k.f)(M))
+					this.props.sendEvent(Object(k.f)(F))
 				}
 				render() {
 					const {
@@ -232,7 +232,7 @@
 				h = s("./src/lib/lessComponent.tsx");
 			const v = Object(m.t)(),
 				b = Object(r.c)({
-					layout: m.M
+					layout: m.N
 				}),
 				f = Object(o.b)(b);
 			class x extends a.a.Component {
@@ -347,4 +347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailCollectionBanner.90f0cb8ef3b0108688b0.js.map
+//# sourceMappingURL=EmailCollectionBanner.8e3cddf0a910fcc8ee29.js.map

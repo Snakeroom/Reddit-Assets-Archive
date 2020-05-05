@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.053a3ef168630057685e.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8f9f2fd3e845f3c9407f.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -965,7 +965,7 @@
 					activeModalId: g.a,
 					currentUser: _.i,
 					hideNSFWPref: _.z,
-					flairStyleTemplate: q.Q,
+					flairStyleTemplate: q.R,
 					isCurrentUserProfilePost: O.j,
 					isLoggedIn: _.H,
 					language: _.P,
@@ -973,7 +973,7 @@
 					isPostChainDismissed: y.c,
 					isPostChained: y.d,
 					moderatorPermissions: P.i,
-					modModeEnabled: q.O,
+					modModeEnabled: q.P,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
@@ -1633,4 +1633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.053a3ef168630057685e.js.map
+//# sourceMappingURL=reddit-components-LargePost.8f9f2fd3e845f3c9407f.js.map

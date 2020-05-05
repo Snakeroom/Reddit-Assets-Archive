@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.be19c0d3b9a1535cc550.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.09efd138e4eaabcfe15c.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -5653,7 +5653,7 @@
 			};
 			var Qi = n("./src/reddit/selectors/telemetry.ts");
 			const Yi = Object(Br.t)({
-					queryParams: Br.R
+					queryParams: Br.S
 				}),
 				Zi = e => t => t ? e.go(t.relativePosition) : e.goBack();
 			var Ji, Xi = Yi((Ji = Object(P.c)(e => {
@@ -8364,4 +8364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.be19c0d3b9a1535cc550.js.map
+//# sourceMappingURL=StructuredStyles.09efd138e4eaabcfe15c.js.map

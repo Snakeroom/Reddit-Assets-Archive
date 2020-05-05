@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.5cf4f2b04c932f9ecb7d.js
-// Retrieved at 4/30/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.46f6f4a8b38ecfdb4c70.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -1034,7 +1034,7 @@
 				r = s("./src/reddit/constants/postLayout.ts"),
 				a = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.e[Object(a.M)(e, {})] === r.d.Card,
+			const o = e => r.e[Object(a.N)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.A
@@ -1042,4 +1042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.5cf4f2b04c932f9ecb7d.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.46f6f4a8b38ecfdb4c70.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.4b46b31bf71463bb7f1d.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.4ce9374823aa53b8eadf.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -532,8 +532,8 @@
 				M = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
 				L = t.n(M),
 				A = t("./src/lib/classNames/index.ts"),
-				D = t("./src/reddit/controls/Button/index.tsx"),
-				S = t("./src/reddit/icons/svgs/Coin/index.tsx"),
+				S = t("./src/reddit/controls/Button/index.tsx"),
+				D = t("./src/reddit/icons/svgs/Coin/index.tsx"),
 				V = e => l.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 96 96",
@@ -579,7 +579,7 @@
 						className: Object(A.a)(L.a.contentContainer, N)
 					}, l.a.createElement("div", {
 						className: Object(A.a)(L.a.price, N)
-					}, l.a.createElement(S.a, {
+					}, l.a.createElement(D.a, {
 						className: L.a.priceCoinIcon
 					}), l.a.createElement("div", null, l.a.createElement("div", {
 						className: L.a.priceValue
@@ -595,7 +595,7 @@
 						className: Object(A.a)(L.a.description, N)
 					}, d), l.a.createElement("div", {
 						className: L.a.ctaContainer
-					}, l.a.createElement(D.f, {
+					}, l.a.createElement(S.f, {
 						className: Object(A.a)(L.a.cta, N),
 						onClick: c
 					}, g), v && l.a.createElement("div", {
@@ -652,12 +652,12 @@
 					className: X.a.premiumDescription
 				}, W._("Get {Number of monthly coins} Coins every month with Reddit Premium and browse ads-free", [W._param("Number of monthly coins", d)], {
 					hk: "33Zpqj"
-				})), t ? l.a.createElement(D.f, {
+				})), t ? l.a.createElement(S.f, {
 					className: X.a.premiumCTA,
 					onClick: c
 				}, W._("Manage", null, {
 					hk: "4BQsAp"
-				})) : l.a.createElement(D.f, {
+				})) : l.a.createElement(S.f, {
 					className: X.a.premiumCTA,
 					onClick: n
 				}, W._("{monthly-price}/Month", [W._param("monthly-price", m)], {
@@ -738,7 +738,7 @@
 					className: ae.a.heroDescription
 				}, te._("Coins are a virtual good you can use to award exemplary posts or comments. Support Reddit and encourage your favorite contributors to keep making Reddit better.", null, {
 					hk: "3rPVMo"
-				})), l.a.createElement(D.c, {
+				})), l.a.createElement(S.c, {
 					className: ae.a.heroCTA,
 					onClick: n
 				}, te._("Get coins", null, {
@@ -747,7 +747,7 @@
 			});
 			const ne = 3e3,
 				ce = Object(P.t)({
-					isCompletePaypal: e => !!Object(P.R)(e).thanks
+					isCompletePaypal: e => !!Object(P.S)(e).thanks
 				}),
 				re = Object(d.c)({
 					activeSaleConfig: O.a,
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.4b46b31bf71463bb7f1d.js.map
+//# sourceMappingURL=Coins.4ce9374823aa53b8eadf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.22c69d33f10088a88312.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.15dcb3499112e9aebf9b.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -366,7 +366,7 @@
 			var K = Object(v.t)({
 					currentProfileName: v.h,
 					isCommentsPage: v.w,
-					isProfilePostListing: v.H,
+					isProfilePostListing: v.I,
 					isProfilePage: v.G,
 					pageLayer: e => e
 				})(Object(l.b)(() => Object(i.c)({
@@ -374,7 +374,7 @@
 					galleryThumbnail: y.e,
 					isFutureEvent: y.j,
 					language: B.P,
-					layout: v.M,
+					layout: v.N,
 					post: S.N,
 					shouldShowCollectionPostEdits: y.t,
 					subredditOrProfile: S.Z
@@ -740,4 +740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Collection.22c69d33f10088a88312.js.map
+//# sourceMappingURL=reddit-components-Collection.15dcb3499112e9aebf9b.js.map

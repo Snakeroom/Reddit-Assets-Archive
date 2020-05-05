@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7bef378632069126732a.js
-// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.26c38188f87e67c1efab.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -6076,12 +6076,7 @@
 				},
 				ne = Object(M.t)(),
 				se = Object(u.c)({
-					isPostImageAltTextVariant: (e, t) => {
-						let {
-							isCommentsPage: n
-						} = t;
-						return !!n && Object(U.b)(e)
-					},
+					isPostImageAltTextVariant: U.b,
 					subredditOrProfileDisplayText: (e, t) => {
 						let {
 							post: n
@@ -6955,8 +6950,8 @@
 					return n ? "".concat(s, "--").concat(n) : s
 				},
 				A = Object(h.t)({
-					isProfilePostListing: h.H,
-					isSubreddit: h.J,
+					isProfilePostListing: h.I,
+					isSubreddit: h.K,
 					pageLayer: e => e
 				}),
 				U = Object(a.c)({
@@ -6968,7 +6963,7 @@
 							postId: n.id
 						})
 					},
-					modModeEnabled: h.O
+					modModeEnabled: h.P
 				}),
 				K = Object(i.b)(U, (e, t) => ({
 					onHideTooltip: () => e(Object(d.i)()),
@@ -17816,7 +17811,7 @@
 		"./src/reddit/components/SubredditIcon/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return j
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -17826,16 +17821,17 @@
 				a = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/reddit/components/UserIcon/index.tsx"),
 				l = n("./src/reddit/constants/colors.ts"),
-				d = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
-				u = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				p = n("./src/reddit/models/Subreddit/index.ts"),
-				m = n("./src/reddit/selectors/experiments/postSeo.ts"),
-				h = n("./src/reddit/components/SubredditIcon/index.m.less"),
-				b = n.n(h),
-				f = n("./src/lib/lessComponent.tsx");
+				d = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
+				p = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				m = n("./src/reddit/models/Subreddit/index.ts"),
+				h = n("./src/reddit/selectors/experiments/postSeo.ts"),
+				b = n("./src/reddit/components/SubredditIcon/index.m.less"),
+				f = n.n(b),
+				g = n("./src/lib/lessComponent.tsx");
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -17843,7 +17839,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var x = function(e, t) {
+			var y = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -17852,36 +17848,37 @@
 				}
 				return n
 			};
-			const y = f.a.wrapped(c.a, "UserIcon", b.a),
-				v = f.a.img("Image", b.a),
-				C = e => {
+			const v = g.a.wrapped(c.a, "UserIcon", f.a),
+				C = g.a.img("Image", f.a),
+				E = e => {
 					var {
 						iconColor: t
-					} = e, n = x(e, ["iconColor"]);
-					return r.a.createElement(v, g({
+					} = e, n = y(e, ["iconColor"]);
+					return r.a.createElement(C, x({
 						style: {
 							backgroundColor: t || ""
 						}
 					}, n))
 				},
-				E = f.a.wrapped(e => {
+				O = g.a.wrapped(e => {
 					var {
 						className: t,
 						color: n
-					} = e, s = x(e, ["className", "color"]);
-					return r.a.createElement(u.a, g({
+					} = e, s = y(e, ["className", "color"]);
+					return r.a.createElement(p.a, x({
 						className: t,
 						style: {
 							background: n || ""
 						}
 					}, s))
-				}, "PlanetIcon", b.a),
-				O = f.a.div("BackupImage", b.a),
-				j = Object(a.c)({
-					isSubredditImageAltTextVariant: m.e
+				}, "PlanetIcon", f.a),
+				j = g.a.div("BackupImage", f.a),
+				S = Object(d.t)(),
+				k = Object(a.c)({
+					isSubredditImageAltTextVariant: h.e
 				}),
-				S = Object(i.b)(j);
-			t.b = S(e => {
+				w = Object(i.b)(k);
+			t.b = S(w(e => {
 				let t, n, o, i = s.fbt._("Subreddit Icon", null, {
 					hk: "134aM1"
 				});
@@ -17889,31 +17886,31 @@
 					const {
 						url: s,
 						color: i
-					} = Object(d.a)({
+					} = Object(u.a)({
 						shouldHideNsfwIcon: !!e.shouldHideNsfwIcon,
 						subredditOrProfile: e.subredditOrProfile
 					});
-					Object(p.e)(e.subredditOrProfile) ? o = r.a.createElement(y, {
+					Object(m.e)(e.subredditOrProfile) ? o = r.a.createElement(v, {
 						className: e.className,
 						iconUrl: s,
 						isNSFW: e.subredditOrProfile.isNSFW,
 						userName: e.subredditOrProfile.name
 					}) : (t = s, n = i)
 				} else t = e.iconUrl, n = e.primaryColor || l.a.alienblue;
-				return t ? o = r.a.createElement(C, {
+				return t ? o = r.a.createElement(E, {
 					alt: i,
 					className: e.className,
 					iconColor: n,
 					role: "presentation",
 					src: t
-				}) : o || (o = r.a.createElement(E, {
+				}) : o || (o = r.a.createElement(O, {
 					className: e.className,
 					color: e.redditStyle ? l.a.alienblue : n,
 					role: "presentation"
 				})), e.linkTo ? r.a.createElement("a", {
 					href: e.linkTo
 				}, o) : r.a.createElement(r.a.Fragment, null, o)
-			})
+			}))
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -25518,7 +25515,7 @@
 			const b = Object(l.t)(),
 				f = Object(i.c)({
 					isEditing: d.j,
-					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(l.N)(e, t)
 				}),
 				g = Object(r.b)(f),
 				x = e => {
@@ -29735,7 +29732,7 @@
 					draftId: E.u,
 					isPostCreationPage: E.D,
 					pageLayer: e => e,
-					sourcePostId: e => Object(E.S)(e).source_id
+					sourcePostId: e => Object(E.T)(e).source_id
 				}),
 				gd = Object(i.c)({
 					submissionType: S.a,
@@ -29745,7 +29742,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						const s = Object(E.P)(e, {
+						const s = Object(E.Q)(e, {
 							pageLayer: n
 						});
 						return !!s && "/" === s[0]
@@ -30787,4 +30784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.7bef378632069126732a.js.map
+//# sourceMappingURL=PostCreation.26c38188f87e67c1efab.js.map

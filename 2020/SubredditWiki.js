@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.74db4b85482c1ded59ea.js
-// Retrieved at 5/5/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.b9170194641688b2cb8c.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -3631,7 +3631,7 @@
 				ne = Object(d.t)(),
 				se = Object(a.c)({
 					language: l.P,
-					layout: d.M,
+					layout: d.N,
 					widget: u.f
 				}),
 				re = Object(i.b)(se);
@@ -4611,8 +4611,8 @@
 			};
 			const j = 129,
 				_ = Object(h.t)({
-					filterName: e => Object(h.R)(e)[b.f],
-					url: e => Object(h.W)(e)
+					filterName: e => Object(h.S)(e)[b.f],
+					url: e => Object(h.X)(e)
 				}),
 				N = Object(o.c)({
 					subredditId: (e, t) => Object(w.D)(e, t.subredditName)
@@ -5390,12 +5390,12 @@
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
 				currentUser: b.i,
-				flairStyleTemplate: c.Q,
+				flairStyleTemplate: c.R,
 				hideNSFWPref: b.z,
 				isActive: p.i,
 				language: b.P,
 				moderatorPermissions: u.i,
-				modModeEnabled: c.O,
+				modModeEnabled: c.P,
 				post: p.N,
 				showEditFlair: m.a,
 				subredditOrProfile: p.Z,
@@ -6104,7 +6104,7 @@
 						return Object(D.f)(e, n.params.subredditName)
 					},
 					language: D.P,
-					layout: y.M,
+					layout: y.N,
 					over18Pref: D.U,
 					subreddit: (e, t) => {
 						let {
@@ -6331,4 +6331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.74db4b85482c1ded59ea.js.map
+//# sourceMappingURL=SubredditWiki.b9170194641688b2cb8c.js.map

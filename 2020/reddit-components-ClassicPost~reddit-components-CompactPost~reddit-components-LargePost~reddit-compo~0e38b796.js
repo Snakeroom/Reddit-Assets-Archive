@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.243e67352788977d4e91.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.2dd912fc45d3754f9b48.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -612,8 +612,8 @@
 					return s ? "".concat(n, "--").concat(s) : n
 				},
 				H = Object(b.t)({
-					isProfilePostListing: b.H,
-					isSubreddit: b.J,
+					isProfilePostListing: b.I,
+					isSubreddit: b.K,
 					pageLayer: e => e
 				}),
 				V = Object(a.c)({
@@ -625,7 +625,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: b.O
+					modModeEnabled: b.P
 				}),
 				D = Object(c.b)(V, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -657,8 +657,8 @@
 						caretOnTop: !1
 					},
 					X = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === p.a.SUBREDDIT,
-					J = B("Approve", z.id, W),
-					Z = B("Archived", z.id, W),
+					Z = B("Approve", z.id, W),
+					J = B("Archived", z.id, W),
 					K = B("Automod", z.id, W),
 					q = B("Lock", z.id, W),
 					Y = B("Mod", z.id, W),
@@ -681,11 +681,11 @@
 				}, U))), z.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(g.a, {
 					className: w.a.archivedIcon,
 					desc: N(),
-					id: Z,
-					onMouseEnter: G(Z),
+					id: J,
+					onMouseEnter: G(J),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, I({
-					tooltipId: Z,
+					tooltipId: J,
 					text: N()
 				}, U))), z.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					className: w.a.lockIcon,
@@ -717,11 +717,11 @@
 				}, U))), (z.isApproved || z.approvedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
 					className: w.a.approveIcon,
 					desc: Object(v.a)(z),
-					id: J,
-					onMouseEnter: G(J),
+					id: Z,
+					onMouseEnter: G(Z),
 					onMouseLeave: V
 				}), r.a.createElement(u.c, I({
-					tooltipId: J,
+					tooltipId: Z,
 					text: Object(v.a)(z)
 				}, U))), Object(x.a)(z) && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					className: w.a.removeIcon,
@@ -1410,4 +1410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.243e67352788977d4e91.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.2dd912fc45d3754f9b48.js.map

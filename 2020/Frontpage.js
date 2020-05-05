@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0d41b6c2142d44717a6d.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4d58fbda7ce98a6ade78.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1238,8 +1238,8 @@
 				R = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				B = s("./src/reddit/helpers/trackers/screenview.ts"),
 				U = s("./src/reddit/layout/page/Listing/index.tsx"),
-				M = s("./src/reddit/selectors/experiments/trending.ts"),
-				F = s("./src/reddit/selectors/frontpage.ts"),
+				F = s("./src/reddit/selectors/experiments/trending.ts"),
+				M = s("./src/reddit/selectors/frontpage.ts"),
 				H = s("./src/reddit/selectors/meta.ts"),
 				V = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				W = s("./src/reddit/selectors/user.ts"),
@@ -1272,14 +1272,14 @@
 					let {
 						match: s
 					} = t;
-					const n = Object(F.a)(e);
+					const n = Object(M.a)(e);
 					return s.params.sort || n
 				}
 			}), ee = Object(b.c)({
 				countryMeta: H.b,
 				geopopular: W.m
 			}), te = Object(b.c)({
-				isInTrendingEntrypointExperiment: M.a,
+				isInTrendingEntrypointExperiment: F.a,
 				isLoggedIn: W.H,
 				isPopular: R.C,
 				isRpanDuVisible: e => Object(V.a)(e, {
@@ -1288,7 +1288,7 @@
 				rpanInjectionIndex: e => Object(V.b)(e, {
 					listingName: q.P
 				}),
-				layout: R.M
+				layout: R.N
 			}), se = () => Object(b.a)(ee, $, te, e => Object(V.a)(e, {
 				listingName: q.P
 			}), e => Object(V.b)(e, {
@@ -1551,7 +1551,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							r = M(n, a.b.ENDED) ? a.b.ENDED : n,
+							r = F(n, a.b.ENDED) ? a.b.ENDED : n,
 							o = s.stream.vod_accessible;
 						return r === n && !0 === o ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1566,7 +1566,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							r = M(n, a.b.ENDED) ? a.b.ENDED : n,
+							r = F(n, a.b.ENDED) ? a.b.ENDED : n,
 							o = s.stream.vod_accessible;
 						return r === n && !1 === o ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1710,7 +1710,7 @@
 					return s ? O(e, s) : void 0
 				}, e => !e || e.chat_disabled);
 
-			function M(e, t) {
+			function F(e, t) {
 				const s = {
 					[a.b.NOT_STARTED]: 0,
 					[a.b.PUBLISHED]: 1,
@@ -1722,7 +1722,7 @@
 				};
 				return s[t] >= s[e]
 			}
-			const F = Object(n.a)(L, g, (e, t) => e && t.timestamps[e] || 0);
+			const M = Object(n.a)(L, g, (e, t) => e && t.timestamps[e] || 0);
 			var H;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
@@ -1735,7 +1735,7 @@
 					return r === a.b.IS_LIVE || r === a.b.DISCONNECTED ? H.LIVE : r === a.b.ENDED && n.stream.vod_accessible ? H.VOD : H.UNAVAILABLE
 				}),
 				W = Object(n.a)(D, V, h.b, l.c, l.p, (e, t, s, n, r) => s ? n : e ? t === H.LIVE || t === H.VOD ? e.stream.hls_url : r : void 0),
-				K = Object(n.a)(D, V, F, (e, t, s) => e ? t === H.LIVE ? e.broadcast_time : t === H.VOD && s < e.broadcast_time ? s : 0 : 0)
+				K = Object(n.a)(D, V, M, (e, t, s) => e ? t === H.LIVE ? e.broadcast_time : t === H.VOD && s < e.broadcast_time ? s : 0 : 0)
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, s) {
 			"use strict";
@@ -1756,4 +1756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0d41b6c2142d44717a6d.js.map
+//# sourceMappingURL=Frontpage.4d58fbda7ce98a6ade78.js.map

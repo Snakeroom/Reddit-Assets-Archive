@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.fed76d4142a99d24b048.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.4f131b41f772f0d0af4f.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -622,7 +622,7 @@
 					pageLayer: e => e
 				}),
 				S = Object(a.c)({
-					layout: b.M,
+					layout: b.N,
 					isDropdownOpen: (e, t) => {
 						let {
 							tooltipId: s
@@ -1373,4 +1373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.fed76d4142a99d24b048.js.map
+//# sourceMappingURL=ModerationDropdowns.4f131b41f772f0d0af4f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.807aacf41182ecc6d2dc.js
-// Retrieved at 4/29/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.5cc27a2ad83a32045e84.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -588,4 +588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.807aacf41182ecc6d2dc.js.map
+//# sourceMappingURL=BadgePurchaseModal.5cc27a2ad83a32045e84.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.c149141c22bbc93289ab.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.1b0e5aa42f81b5ca026f.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -230,16 +230,16 @@
 				R = Object(g.t)(),
 				M = Object(i.c)({
 					dropdownIsOpen: Object(v.b)(k),
-					postLayout: g.M,
+					postLayout: g.N,
 					redditStyle: g.A
 				}),
-				T = Object(a.b)(M, e => ({
+				I = Object(a.b)(M, e => ({
 					onListingLayoutChange: (t, s) => e(Object(m.v)(t, s)),
 					openDropdown: () => e(Object(p.h)({
 						tooltipId: k
 					}))
 				}));
-			class I extends r.a.Component {
+			class T extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -310,7 +310,7 @@
 					}), r.a.createElement(f.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = R(T(Object(u.c)(Object(l.a)(I))))
+			t.a = R(I(Object(u.c)(Object(l.a)(T))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -794,8 +794,8 @@
 					isCommentPermalink: l.v,
 					isCommentsPage: l.w,
 					isFrontpage: l.y,
-					isProfilePostListing: l.H,
-					isTopicPage: l.L,
+					isProfilePostListing: l.I,
+					isTopicPage: l.M,
 					pageLayer: e => e
 				})
 			}
@@ -804,7 +804,7 @@
 					apiError: g.c,
 					apiPending: g.d,
 					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.N)(e, t),
 					loadMore: g.g,
 					postsById: f.Y,
 					postIds: Object(r.a)((e, t) => {
@@ -817,7 +817,7 @@
 					}),
 					subredditsById: b.V,
 					viewportDataLoaded: y.a,
-					pageReferrer: l.P,
+					pageReferrer: l.Q,
 					postListPlaceholderComponent: () => u.a
 				},
 				w = Object(n.c)(C),
@@ -1286,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.c149141c22bbc93289ab.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.1b0e5aa42f81b5ca026f.js.map

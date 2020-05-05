@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7731631f688186a85004.js
-// Retrieved at 5/5/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.77affd57260a58709a48.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2537,7 +2537,7 @@
 						pageLayer: s
 					} = t;
 					const n = !!e.user.account,
-						a = Object(En.T)(s);
+						a = Object(En.U)(s);
 					switch (a) {
 						case "index":
 						case "listing":
@@ -2614,7 +2614,7 @@
 								type: qn.Settings, model: r
 							}
 					}
-					const o = Object(En.N)(e, {
+					const o = Object(En.O)(e, {
 						pageLayer: s
 					});
 					if ("all" === o) return {
@@ -4503,7 +4503,7 @@
 				co = s("./src/reddit/controls/Search/index.m.less"),
 				lo = s.n(co);
 			const mo = Object(En.t)({
-					searchQuery: En.U,
+					searchQuery: En.V,
 					pageLayer: e => e
 				}),
 				uo = (e, t, s) => e(e => Object.assign({}, Object(to.c)(e), {
@@ -4526,7 +4526,7 @@
 						let {
 							pageLayer: s
 						} = t;
-						return Object(En.K)(s)
+						return Object(En.L)(s)
 					},
 					language: Vt.P,
 					multireddit: En.d,
@@ -5792,7 +5792,7 @@
 						let {
 							pageLayer: s
 						} = t;
-						return Object(En.J)(s) && !!Object(Vt.l)(e) && !Object(Vt.x)(e) && Object(Vt.H)(e) && !Object(Vt.F)(e)
+						return Object(En.K)(s) && !!Object(Vt.l)(e) && !Object(Vt.x)(e) && Object(Vt.H)(e) && !Object(Vt.F)(e)
 					},
 					unreadNotifications: Vt.cb
 				}),
@@ -6719,7 +6719,7 @@
 					isFPR: Vt.F,
 					posts: cm.Q,
 					profileCollectionsEnabled: Fl.a,
-					showEmailCollectionBanner: e => !Object(En.I)(Object(ns.b)(e)) && gm(e)
+					showEmailCollectionBanner: e => !Object(En.J)(Object(ns.b)(e)) && gm(e)
 				}), e => ({
 					onClickOutsideOverlay: t => e(Object(h.b)(t)),
 					onUnpinSubscriptions: () => e(Object(E.j)())
@@ -12452,4 +12452,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.7731631f688186a85004.js.map
+//# sourceMappingURL=Reddit.77affd57260a58709a48.js.map

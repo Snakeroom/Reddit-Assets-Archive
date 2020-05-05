@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b572e1c4adb0aa3d11f3.js
-// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.454249de11ed68bd738c.js
+// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1759,7 +1759,7 @@
 							subredditId: s.subredditId
 						})
 					},
-					modModeEnabled: x.O
+					modModeEnabled: x.P
 				}),
 				z = Object(i.b)(K, (e, t) => {
 					let {
@@ -3419,7 +3419,7 @@
 							subredditId: s.subredditId
 						}) : null
 					},
-					modModeEnabled: xt.O,
+					modModeEnabled: xt.P,
 					errorMsgs: C.E,
 					replyFormOpen: C.H,
 					subreddit: xt.q,
@@ -5865,12 +5865,12 @@
 					currentProfileName: U.h,
 					isCommentPermalink: U.v,
 					isCommentsPage: U.w,
-					isProfilePostListing: U.H,
+					isProfilePostListing: U.I,
 					pageLayer: e => e
 				}),
 				ye = Object(a.c)({
 					activeModalId: me.a,
-					layout: U.M,
+					layout: U.N,
 					userIsOp: z.gb,
 					subreddit: U.q
 				}),
@@ -7507,8 +7507,8 @@
 					return s ? "".concat(n, "--").concat(s) : n
 				},
 				D = Object(h.t)({
-					isProfilePostListing: h.H,
-					isSubreddit: h.J,
+					isProfilePostListing: h.I,
+					isSubreddit: h.K,
 					pageLayer: e => e
 				}),
 				W = Object(a.c)({
@@ -7520,7 +7520,7 @@
 							postId: s.id
 						})
 					},
-					modModeEnabled: h.O
+					modModeEnabled: h.P
 				}),
 				H = Object(i.b)(W, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -8271,7 +8271,7 @@
 				}),
 				De = Object(r.b)(() => Object(a.c)({
 					activeModalId: N.a,
-					flairStyleTemplate: le.Q,
+					flairStyleTemplate: le.R,
 					currentUser: A.i,
 					crosspost: F.d,
 					hideNSFWPref: A.z,
@@ -8289,7 +8289,7 @@
 					language: A.P,
 					metaId: (e, t) => e.posts.metaMap[t.postId],
 					moderatorPermissions: L.i,
-					modModeEnabled: le.O,
+					modModeEnabled: le.P,
 					isInCategoriesExperiment: M.a,
 					showEditFlair: pe.a,
 					subredditOrProfile: F.Z,
@@ -11411,7 +11411,7 @@
 				se = Object(d.t)(),
 				ne = Object(i.c)({
 					language: l.P,
-					layout: d.M,
+					layout: d.N,
 					widget: m.f
 				}),
 				oe = Object(r.b)(ne);
@@ -12267,8 +12267,8 @@
 			};
 			const j = 129,
 				w = Object(b.t)({
-					filterName: e => Object(b.R)(e)[h.f],
-					url: e => Object(b.W)(e)
+					filterName: e => Object(b.S)(e)[h.f],
+					url: e => Object(b.X)(e)
 				}),
 				P = Object(a.c)({
 					subredditId: (e, t) => Object(O.D)(e, t.subredditName)
@@ -13047,8 +13047,8 @@
 					isCommentPermalink: l.v,
 					isCommentsPage: l.w,
 					isFrontpage: l.y,
-					isProfilePostListing: l.H,
-					isTopicPage: l.L,
+					isProfilePostListing: l.I,
+					isTopicPage: l.M,
 					pageLayer: e => e
 				})
 			}
@@ -13057,7 +13057,7 @@
 					apiError: b.c,
 					apiPending: b.d,
 					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.M)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(l.N)(e, t),
 					loadMore: b.g,
 					postsById: g.Y,
 					postIds: Object(r.a)((e, t) => {
@@ -13070,7 +13070,7 @@
 					}),
 					subredditsById: x.V,
 					viewportDataLoaded: f.a,
-					pageReferrer: l.P,
+					pageReferrer: l.Q,
 					postListPlaceholderComponent: () => u.a
 				},
 				E = Object(o.c)(O),
@@ -16312,7 +16312,7 @@
 				o = s("./src/reddit/constants/postLayout.ts"),
 				r = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => o.e[Object(r.M)(e, {})] === o.d.Card,
+			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: n.A
@@ -16362,4 +16362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.b572e1c4adb0aa3d11f3.js.map
+//# sourceMappingURL=CommentsPage.454249de11ed68bd738c.js.map
