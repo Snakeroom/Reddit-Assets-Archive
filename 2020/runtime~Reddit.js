@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e7cb6f3a43fabffb6bd2.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.847797be4abcd783b24c.js
+// Retrieved at 5/5/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -521,7 +521,7 @@
 					"ProfilePosts~ProfileSnoobuilder": "5c771509d12608736156",
 					ProfileSnoobuilder: "46cae83c4ac75907ff38",
 					"vendors~MembershipPaywallPage": "31d6cfe0d16ae931b73c",
-					"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "858873e0145d80a1598e",
+					"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "8a68032ef2ec6ba99576",
 					MembershipPaywallPage: "301aa89e3822e16d3d13",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
 					"Chat~RedesignChat": "c3c1e0818ef11bc4a07a",
@@ -536,7 +536,7 @@
 					ModerationPages: "98aeddbe786b2f04f1eb",
 					"vendors~PostCreation~RichTextEditor": "31d6cfe0d16ae931b73c",
 					"vendors~PostCreation": "31d6cfe0d16ae931b73c",
-					PostCreation: "a941beedfb4b89d3a216",
+					PostCreation: "9ac4efed557fae218d05",
 					"vendors~Multireddit": "31d6cfe0d16ae931b73c",
 					"Multireddit~reddit-components-AdHocMultiredditSidebar": "fa7fcae64d93c173a51e",
 					Multireddit: "00ef8079cb3da64660eb",
@@ -653,7 +653,7 @@
 					removalReasonActions: "31d6cfe0d16ae931b73c",
 					schedulePickerModal: "6f502202fa26aec4d2d5",
 					ChatMessageInput: "40f8a5534cab32573632",
-					RichTextEditor: "50ec1fd83904e4adac8d",
+					RichTextEditor: "44d37adc6fb599da1245",
 					EconomicsEntryPointsCommentFlatlistSupportCTA: "bfc48acb1f4fe6d70ea6",
 					EconomicsEntryPointsPostFlatlistSupportCTA: "d916b7b05a78e157cb1f",
 					LiveVideoPlayer: "dd4c3eaf3d1ef7024efa",
@@ -958,7 +958,7 @@
 						FrontpageSidebar: "502bd7b4fc82b11ef631",
 						Frontpage: "4d58fbda7ce98a6ade78",
 						Topic: "49aad577adf91d03bbd9",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "9a54a71f23dc358dbff5",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "2f53f573150d84b93485",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "16b378d4bed75cb52297",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "24355ba24dd56bbc651f",
@@ -1011,7 +1011,7 @@
 						"ProfilePosts~ProfileSnoobuilder": "8452e3980402876d9bce",
 						ProfileSnoobuilder: "deb4f63a99293d857af0",
 						"vendors~MembershipPaywallPage": "4e8477ad35890bb4b9a2",
-						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "b25130261af2b617f451",
+						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "b25300bcf1ac4631ab38",
 						MembershipPaywallPage: "4389a15936249e7cf010",
 						"vendors~Chat~RedesignChat": "5c6c446f6e045bc3c01b",
 						"Chat~RedesignChat": "2c5a5e551601500c1c37",
@@ -1026,7 +1026,7 @@
 						ModerationPages: "cc240be6febf3ff79750",
 						"vendors~PostCreation~RichTextEditor": "ecf670dbf9b7450b5178",
 						"vendors~PostCreation": "c051114172e8b42d437b",
-						PostCreation: "26c38188f87e67c1efab",
+						PostCreation: "529f02ebee2eb06603b2",
 						"vendors~Multireddit": "ed2022bd9feff50ce623",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "bc252f2eabae4765593d",
 						Multireddit: "f9b03993ee719febb708",
@@ -1143,7 +1143,7 @@
 						removalReasonActions: "aa2bd394514b4d59fe0d",
 						schedulePickerModal: "423ee922d5d3fdef820f",
 						ChatMessageInput: "fdc0367e36118de67c1a",
-						RichTextEditor: "86ace0d8ea513d067380",
+						RichTextEditor: "c4bbcbb6806643f1b2c1",
 						EconomicsEntryPointsCommentFlatlistSupportCTA: "5e99e8b5eb7b8d0c56af",
 						EconomicsEntryPointsPostFlatlistSupportCTA: "c98f9cd9e91ade9fdc07",
 						LiveVideoPlayer: "a1651e8ccb423d710705",
@@ -1237,4 +1237,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.e7cb6f3a43fabffb6bd2.js.map
+//# sourceMappingURL=runtime~Reddit.847797be4abcd783b24c.js.map
