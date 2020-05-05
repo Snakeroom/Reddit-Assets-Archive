@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.92bd3b722b4bf01ffaa1.js
-// Retrieved at 5/5/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.09a40fa39b5c19da25b9.js
+// Retrieved at 5/5/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -18542,7 +18542,7 @@
 					if (c.ok && c.body && c.body.success) {
 						e && (Object(G.a)(Object(N.f)(e)(u)), _e(t, u));
 						const n = Object(L.a)(u),
-							s = n === l.c || n === l.i ? l.i : l.b;
+							s = n === l.c || n === l.j ? l.j : l.b;
 						t(Object(i.i)(s))
 					} else t(Object(d.e)({
 						duration: d.a,
@@ -19537,18 +19537,20 @@
 				return r
 			})), n.d(t, "c", (function() {
 				return o
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return a
-			})), n.d(t, "f", (function() {
-				return i
 			})), n.d(t, "g", (function() {
-				return c
+				return i
 			})), n.d(t, "h", (function() {
+				return c
+			})), n.d(t, "i", (function() {
 				return d
 			})), n.d(t, "d", (function() {
 				return u
 			})), n.d(t, "e", (function() {
 				return l
+			})), n.d(t, "f", (function() {
+				return b
 			}));
 			const s = "change_email_modal_id",
 				r = "check_email_modal_id",
@@ -19558,7 +19560,8 @@
 				c = "reset_pw_sso_google_link_modal_id",
 				d = "reset_pw_sso_google_unlink_modal_id",
 				u = "reset_pw_sso_apple_link_modal_id",
-				l = "reset_pw_sso_apple_unlink_modal_id"
+				l = "reset_pw_sso_apple_unlink_modal_id",
+				b = "reset_pw_sso_deactivate_account_modal_id"
 		},
 		"./src/reddit/components/TrackingHelper/index.tsx": function(e, t, n) {
 			"use strict";
@@ -51314,4 +51317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.92bd3b722b4bf01ffaa1.js.map
+//# sourceMappingURL=Governance~Reddit.09a40fa39b5c19da25b9.js.map

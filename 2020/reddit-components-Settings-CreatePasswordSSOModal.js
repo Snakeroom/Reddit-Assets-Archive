@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.5f59f49f1d5efb22515e.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.9b1152c7e79736a66530.js
+// Retrieved at 5/5/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
@@ -53,7 +53,7 @@
 				h = s("./src/reddit/controls/Button/index.tsx"),
 				w = s("./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less"),
 				g = s.n(w);
-			var E = e => n.a.createElement(u.a, {
+			var b = e => n.a.createElement(u.a, {
 				icon: n.a.createElement(m.a, null),
 				description: c.fbt._("We sent a message to {email} with a link to create your password.", [c.fbt._param("email", e.userEmail || "")], {
 					hk: "2YDohi"
@@ -71,7 +71,7 @@
 			}, c.fbt._("Ok", null, {
 				hk: "wn6jy"
 			}))));
-			var C, b = e => n.a.createElement(u.a, {
+			var C, O = e => n.a.createElement(u.a, {
 				icon: n.a.createElement(m.a, null),
 				description: e.description,
 				onClose: e.onClose,
@@ -109,21 +109,21 @@
 					}
 				}
 				render() {
-					return this.state.step === C.Prompt ? n.a.createElement(b, {
+					return this.state.step === C.Prompt ? n.a.createElement(O, {
 						description: this.props.description,
 						handleContinueClick: this.handleContinueClick,
 						onClose: this.props.onClose,
 						title: this.props.title
-					}) : n.a.createElement(E, {
+					}) : n.a.createElement(b, {
 						onClose: this.props.onClose,
 						userEmail: this.props.userEmail
 					})
 				}
 			}
-			var O = Object(d.a)(k);
+			var E = Object(d.a)(k);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -131,7 +131,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var _ = e => n.a.createElement(o.Fragment, null, e.resetPasswordForEmailModalOpen && n.a.createElement(O, x({
+			var f = e => n.a.createElement(o.Fragment, null, e.resetPasswordForEmailModalOpen && n.a.createElement(E, v({
 					description: c.fbt._("To change your email address, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2cstEg"
 					}),
@@ -141,7 +141,7 @@
 					onClose: e.closeResetPasswordForEmailModal,
 					onOverlayClick: e.closeResetPasswordForEmailModal,
 					withOverlay: !0
-				}, e)), e.resetPasswordForAppleLinkModalOpen && n.a.createElement(O, x({
+				}, e)), e.resetPasswordForAppleLinkModalOpen && n.a.createElement(E, v({
 					description: c.fbt._("To connect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2agOta"
 					}),
@@ -151,7 +151,7 @@
 					onClose: e.closeResetPasswordForAppleLinkModal,
 					onOverlayClick: e.closeResetPasswordForAppleLinkModal,
 					withOverlay: !0
-				}, e)), e.resetPasswordForAppleLinkModalOpen && n.a.createElement(O, x({
+				}, e)), e.resetPasswordForAppleLinkModalOpen && n.a.createElement(E, v({
 					description: c.fbt._("To connect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2agOta"
 					}),
@@ -161,7 +161,7 @@
 					onClose: e.closeResetPasswordForAppleLinkModal,
 					onOverlayClick: e.closeResetPasswordForAppleLinkModal,
 					withOverlay: !0
-				}, e)), e.resetPasswordForAppleUnlinkModalOpen && n.a.createElement(O, x({
+				}, e)), e.resetPasswordForAppleUnlinkModalOpen && n.a.createElement(E, v({
 					description: c.fbt._("To disconnect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "47P4uJ"
 					}),
@@ -171,7 +171,7 @@
 					onClose: e.closeResetPasswordForAppleUnlinkModal,
 					onOverlayClick: e.closeResetPasswordForAppleUnlinkModal,
 					withOverlay: !0
-				}, e)), e.resetPasswordForGoogleLinkModalOpen && n.a.createElement(O, x({
+				}, e)), e.resetPasswordForGoogleLinkModalOpen && n.a.createElement(E, v({
 					description: c.fbt._("To connect your Google account, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "4xWcaj"
 					}),
@@ -181,7 +181,7 @@
 					onClose: e.closeResetPasswordForGoogleLinkModal,
 					onOverlayClick: e.closeResetPasswordForGoogleLinkModal,
 					withOverlay: !0
-				}, e)), e.resetPasswordForGoogleUnlinkModalOpen && n.a.createElement(O, x({
+				}, e)), e.resetPasswordForGoogleUnlinkModalOpen && n.a.createElement(E, v({
 					description: c.fbt._("To disconnect your Google account, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2MyWqh"
 					}),
@@ -191,32 +191,44 @@
 					onClose: e.closeResetPasswordForGoogleUnlinkModal,
 					onOverlayClick: e.closeResetPasswordForGoogleUnlinkModal,
 					withOverlay: !0
+				}, e)), e.resetPasswordForDeactivateAccountModalOpen && n.a.createElement(E, v({
+					description: c.fbt._("To deactivate your Reddit account, you need to create a Reddit password first. We'll walk you through it.", null, {
+						hk: "C7fCQ"
+					}),
+					title: c.fbt._("Deactivate account", null, {
+						hk: "VyFq"
+					}),
+					onClose: e.closeResetPasswordForDeactivateAccountModal,
+					onOverlayClick: e.closeResetPasswordForDeactivateAccountModal,
+					withOverlay: !0
 				}, e))),
-				f = s("./src/reddit/components/Settings/modalIds.ts"),
-				v = s("./src/reddit/models/User/index.ts"),
-				y = s("./src/reddit/selectors/activeModalId.ts"),
+				y = s("./src/reddit/components/Settings/modalIds.ts"),
+				_ = s("./src/reddit/models/User/index.ts"),
+				x = s("./src/reddit/selectors/activeModalId.ts"),
 				P = s("./src/reddit/selectors/user.ts");
-			const j = Object(l.c)({
-					resetPasswordForEmailModalOpen: Object(y.b)(f.f),
-					resetPasswordForAppleLinkModalOpen: Object(y.b)(f.d),
-					resetPasswordForAppleUnlinkModalOpen: Object(y.b)(f.e),
-					resetPasswordForGoogleLinkModalOpen: Object(y.b)(f.g),
-					resetPasswordForGoogleUnlinkModalOpen: Object(y.b)(f.h),
+			const M = Object(l.c)({
+					resetPasswordForEmailModalOpen: Object(x.b)(y.g),
+					resetPasswordForAppleLinkModalOpen: Object(x.b)(y.d),
+					resetPasswordForAppleUnlinkModalOpen: Object(x.b)(y.e),
+					resetPasswordForDeactivateAccountModalOpen: Object(x.b)(y.f),
+					resetPasswordForGoogleLinkModalOpen: Object(x.b)(y.h),
+					resetPasswordForGoogleUnlinkModalOpen: Object(x.b)(y.i),
 					userEmail: P.l,
 					username: e => {
 						const t = Object(P.i)(e);
-						return t && Object(v.f)(t) || ""
+						return t && Object(_.f)(t) || ""
 					}
 				}),
-				M = Object(a.b)(j, e => ({
-					closeResetPasswordForEmailModal: () => e(Object(r.g)(f.f)),
-					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(f.d)),
-					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(f.e)),
-					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(f.g)),
-					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(f.h)),
+				j = Object(a.b)(M, e => ({
+					closeResetPasswordForEmailModal: () => e(Object(r.g)(y.g)),
+					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(y.d)),
+					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(y.e)),
+					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(y.f)),
+					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(y.h)),
+					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(y.i)),
 					sendResetEmail: t => e(Object(i.z)(t))
 				}));
-			t.default = M(e => e.userEmail && e.username ? n.a.createElement(_, e) : null)
+			t.default = j(e => e.userEmail && e.username ? n.a.createElement(f, e) : null)
 		},
 		"./src/reddit/components/Settings/ModalContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -297,4 +309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Settings-CreatePasswordSSOModal.5f59f49f1d5efb22515e.js.map
+//# sourceMappingURL=reddit-components-Settings-CreatePasswordSSOModal.9b1152c7e79736a66530.js.map
