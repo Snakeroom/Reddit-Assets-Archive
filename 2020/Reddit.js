@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.77affd57260a58709a48.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.78c88e8c3eb9a3dd2bbd.js
+// Retrieved at 5/5/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1114,12 +1114,9 @@
 				IframeContainer: "_34uo64r1j-TcpBGXAQcZJ1",
 				iframeContainer: "_34uo64r1j-TcpBGXAQcZJ1",
 				small: "FBb4FZ4ng7CvLYrT6LBdp",
-				linkSSO: "_1tkWI8llrZeOKvpC2V8tlV",
-				linkSso: "_1tkWI8llrZeOKvpC2V8tlV",
-				linkSSOFail: "_3AjwpUOSJodTzxQVB71-yC",
-				linkSsoFail: "_3AjwpUOSJodTzxQVB71-yC",
-				unlinkSSO: "_2TMy4J7EMLqOVL5X_cBjGa",
-				unlinkSso: "_2TMy4J7EMLqOVL5X_cBjGa"
+				ssoConfirmPassword: "_3CQoZKhSqrJrbOGJxp03DS",
+				linkActionSSOFail: "_1ALB_4jSDt6vPeELvg9lKL",
+				linkActionSsoFail: "_1ALB_4jSDt6vPeELvg9lKL"
 			}
 		},
 		"./src/reddit/components/AlertBanner/Wrapper.m.less": function(e, t, s) {
@@ -1266,11 +1263,10 @@
 							linkedIdentity: s
 						})), e(Object(N.g)(n)), e(Object(D.e)(Object(D.d)(t, z.b.SuccessCommunity)))
 					},
-					onSSOUnlinkFail: t => e(Object(D.e)(Object(D.d)(t, z.b.Error))),
-					onSSOUnlinkSuccess: (t, s) => {
+					onSSOUnlinkSuccess: (t, s, n) => {
 						e(F({
 							linkedIdentity: s
-						})), e(Object(D.e)(Object(D.d)(t, z.b.SuccessCommunity)))
+						})), e(Object(N.g)(n)), e(Object(D.e)(Object(D.d)(t, z.b.SuccessCommunity)))
 					}
 				})),
 				re = e => {
@@ -1295,6 +1291,11 @@
 						this.props.onSSOLinkSuccess(n.fbt._("Account connected", null, {
 							hk: "2X2Y2n"
 						}), e, t)
+					}, this.handleUnlinkSSOSuccess = e => {
+						const t = e === Q.a.Apple ? G.a.UNLINK_APPLE_SSO : G.a.UNLINK_GOOGLE_SSO;
+						this.props.onSSOUnlinkSuccess(n.fbt._("Account disconnected", null, {
+							hk: "mUOBy"
+						}), e, t)
 					}, this.onMessage = e => {
 						const {
 							data: t
@@ -1311,18 +1312,14 @@
 								e.height && e.width && (this.iframeRef.current.style.height = "".concat(e.height, "px"), this.iframeRef.current.style.width = "".concat(e.width, "px"))
 							}
 						} else if (t.type === U.a.TwoFactorChanged) this.props.onTwoFactorChanged();
-						else if (t.type === U.a.SSOLinkFail) this.props.onSSOLinkFail && this.props.onSSOLinkFail();
+						else if (t.type === U.a.SSOLinkFail) this.props.onSSOLinkActionFail && this.props.onSSOLinkActionFail();
 						else if (t.type === U.a.SSOLinkSuccess) {
 							const e = t.payload && t.payload.issuerId;
 							this.handleLinkSSOSuccess(e)
-						} else if (t.type === U.a.SSOUnlinkFail) this.props.onSSOUnlinkFail(n.fbt._("Could not disconnect. Please try again", null, {
-							hk: "RtOkn"
-						}));
+						} else if (t.type === U.a.SSOUnlinkFail) this.props.onSSOLinkActionFail && this.props.onSSOLinkActionFail();
 						else if (t.type === U.a.SSOUnlinkSuccess) {
 							const e = t.payload && t.payload.issuerId;
-							this.props.onSSOUnlinkSuccess(n.fbt._("Account disconnected", null, {
-								hk: "mUOBy"
-							}), e)
+							this.handleUnlinkSSOSuccess(e)
 						} else this.onSignUp(t.numberSubredditsSelected, t.subredditIds)
 					}, this.onSubscribe = e => {
 						this.props.onSubscriptionsChanged && this.props.onSubscriptionsChanged(e || [])
@@ -2049,14 +2046,14 @@
 			class Ss extends m.a.Component {
 				constructor() {
 					super(...arguments), this.subscriptions = [], this.state = {
-						isSSOLinkFailedModal: !1
+						isSSOLinkActionFailedModal: !1
 					}, this.closeModal = () => {
 						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(K.f)(this.props.frontpageSignupVariant) && Cs.a.throttleFeature(fs.O), this.props.sendEvent(le(this.subscriptions))
 					}, this.updateSubscriptions = e => {
 						this.subscriptions = e
-					}, this.handleSSOLinkFail = () => {
+					}, this.handleSSOLinkActionFail = () => {
 						this.setState({
-							isSSOLinkFailedModal: !0
+							isSSOLinkActionFailedModal: !0
 						})
 					}
 				}
@@ -2065,27 +2062,21 @@
 						frontpageSignupVariant: e,
 						path: t
 					} = this.props, {
-						isSSOLinkFailedModal: s
-					} = this.state, n = Object(K.c)(e) || Object(K.d)(e), a = t === U.b.LinkAppleSSO || t === U.b.LinkGoogleSSO, r = t === U.b.UnlinkAppleSSO || t === U.b.UnlinkGoogleSSO, o = Object(g.a)({
+						isSSOLinkActionFailedModal: s
+					} = this.state, n = Object(K.c)(e) || Object(K.d)(e), a = t === U.b.LinkAppleSSO || t === U.b.LinkGoogleSSO || t === U.b.UnlinkAppleSSO || t === U.b.UnlinkGoogleSSO, r = Object(g.a)({
 						[ys.a.small]: n,
-						[ys.a.linkSSO]: a,
-						[ys.a.unlinkSSO]: r,
-						[ys.a.linkSSOFail]: s
+						[ys.a.ssoConfirmPassword]: a,
+						[ys.a.linkActionSSOFail]: s
 					});
-					return r ? (() => m.a.createElement(xs, {
-						className: o
+					return m.a.createElement(Ps, null, m.a.createElement(xs, {
+						className: r
 					}, m.a.createElement(ie, {
 						onClose: this.closeModal,
-						path: t
-					})))() : (() => m.a.createElement(Ps, null, m.a.createElement(xs, {
-						className: o
-					}, m.a.createElement(ie, {
-						onClose: this.closeModal,
-						onSSOLinkFail: this.handleSSOLinkFail,
+						onSSOLinkActionFail: this.handleSSOLinkActionFail,
 						onSubscriptionsChanged: this.updateSubscriptions,
 						path: t,
 						showCloseButton: !n && !s
-					}))))()
+					})))
 				}
 			}
 			const ws = Object(u.b)(Os, (e, t) => ({
@@ -12452,4 +12443,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.77affd57260a58709a48.js.map
+//# sourceMappingURL=Reddit.78c88e8c3eb9a3dd2bbd.js.map
