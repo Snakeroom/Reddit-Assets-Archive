@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a73d8925e7354161f3bb.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e6ae1108861df2df8724.js
+// Retrieved at 5/5/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1263,7 +1263,7 @@
 				w = e => t => {
 					const s = Object(r.k)(t, e);
 					return Object.assign({
-						source: "stream_player",
+						source: "stream_chat",
 						action: "click",
 						noun: "send_chat"
 					}, n(t, s))
@@ -4326,4 +4326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.a73d8925e7354161f3bb.js.map
+//# sourceMappingURL=PublicAccessNetwork.e6ae1108861df2df8724.js.map

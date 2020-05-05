@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4d58fbda7ce98a6ade78.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.fbf725d79fcf6e069a5c.js
+// Retrieved at 5/5/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -324,8 +324,8 @@
 				g = s("./src/lib/lessComponent.tsx");
 			const v = g.a.div("PrimaryText", b.a),
 				f = g.a.div("SecondaryText", b.a),
-				y = g.a.div("MainContentWrapper", b.a),
-				_ = g.a.div("MainContent", b.a),
+				_ = g.a.div("MainContentWrapper", b.a),
+				y = g.a.div("MainContent", b.a),
 				x = g.a.wrapped(p.a, "BackgroundPlaceholder", b.a),
 				j = g.a.wrapped(m.h, "SubmitLink", b.a),
 				O = g.a.img("SnooImg", b.a),
@@ -351,7 +351,7 @@
 						sort: s
 					} = e;
 					const r = P(s);
-					return a.a.createElement(_, null, a.a.createElement(v, null, (e => {
+					return a.a.createElement(y, null, a.a.createElement(v, null, (e => {
 						switch (e) {
 							case d.M.RISING:
 								return n.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
@@ -373,7 +373,7 @@
 						hk: "1vnCSW"
 					}))))
 				},
-				w = () => a.a.createElement(_, null, a.a.createElement(O, {
+				w = () => a.a.createElement(y, null, a.a.createElement(O, {
 					src: "".concat(c.a.assetPath, "/img/snoo_discovery@1x.png")
 				}), a.a.createElement(v, null, n.fbt._("Reddit gets better when you join communities, so find some that you’ll love!", null, {
 					hk: "7B6oq"
@@ -385,7 +385,7 @@
 			t.a = g.a.wrapped(e => a.a.createElement(E, null, a.a.createElement(x, {
 				isLoading: !1,
 				layout: u.g.Classic
-			}), a.a.createElement(y, null, e.subreddit ? a.a.createElement(C, e) : a.a.createElement(w, null))), "Component", b.a)
+			}), a.a.createElement(_, null, e.subreddit ? a.a.createElement(C, e) : a.a.createElement(w, null))), "Component", b.a)
 		},
 		"./src/reddit/components/FeaturedLiveEntrypoint/Announcement.tsx": function(e, t, s) {
 			"use strict";
@@ -501,15 +501,15 @@
 				g = s("./src/reddit/layout/row/Inline/index.tsx");
 			var v = s("./src/reddit/components/FeaturedLiveEntrypoint/Announcement.tsx"),
 				f = s("./src/reddit/components/FeaturedLiveEntrypoint/index.m.less"),
-				y = s.n(f);
-			const _ = "".concat(c.a.redditUrl, "/live/"),
-				x = d.a.a("Container", y.a),
-				j = d.a.wrapped(h.a, "Circle", y.a),
-				O = d.a.div("LiveLabel", y.a),
-				E = d.a.div("ViewCount", y.a),
-				P = d.a.div("Title", y.a),
-				C = d.a.wrapped(b.a, "OutboundLink", y.a),
-				w = d.a.div("Description", y.a),
+				_ = s.n(f);
+			const y = "".concat(c.a.redditUrl, "/live/"),
+				x = d.a.a("Container", _.a),
+				j = d.a.wrapped(h.a, "Circle", _.a),
+				O = d.a.div("LiveLabel", _.a),
+				E = d.a.div("ViewCount", _.a),
+				P = d.a.div("Title", _.a),
+				C = d.a.wrapped(b.a, "OutboundLink", _.a),
+				w = d.a.div("Description", _.a),
 				N = Object(a.c)({
 					featuredLiveThread: e => e.live.featured
 				}),
@@ -552,7 +552,7 @@
 						onBtnClick: this.clickedButtonCta,
 						onClose: this.dismissModal
 					}) : o.a.createElement(x, {
-						href: "".concat(_).concat(e.id)
+						href: "".concat(y).concat(e.id)
 					}, o.a.createElement(g.a, null, o.a.createElement(j, null), o.a.createElement(O, null, n.fbt._("live", null, {
 						hk: "aD7Tn"
 					}), o.a.createElement(p.c, null, "live")), o.a.createElement(w, null, "·"), o.a.createElement(E, null, n.fbt._({
@@ -699,7 +699,7 @@
 					className: t
 				})
 			};
-			const y = Object(i.a)({
+			const _ = Object(i.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: e => {
 					let {
@@ -713,7 +713,7 @@
 				},
 				getComponent: () => Promise.all([s.e("vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"), s.e("Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"), s.e("RpanListingUnit")]).then(s.bind(null, "./src/reddit/components/PublicAccessNetwork/ListingUnit/index.tsx")).then(e => e.default)
 			});
-			var _ = e => r.a.createElement(y, e),
+			var y = e => r.a.createElement(_, e),
 				x = s("./src/reddit/helpers/trackers/rpan.ts");
 			const j = e => e === u.g.Classic ? 88 : e === u.g.Compact ? 42 : 340,
 				O = new o.a(20),
@@ -731,7 +731,7 @@
 									let {
 										className: s
 									} = t;
-									return r.a.createElement(_, {
+									return r.a.createElement(y, {
 										className: s,
 										layout: e.layout,
 										listingName: e.listingName
@@ -1022,7 +1022,7 @@
 			})), s.d(t, "i", (function() {
 				return f
 			})), s.d(t, "h", (function() {
-				return y
+				return _
 			}));
 			var n = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
@@ -1113,12 +1113,12 @@
 				f = e => t => {
 					const s = Object(n.k)(t, e);
 					return Object.assign({
-						source: "stream_player",
+						source: "stream_chat",
 						action: "click",
 						noun: "send_chat"
 					}, o(t, s))
 				},
-				y = (e, t) => s => Object.assign({
+				_ = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -1218,8 +1218,8 @@
 				g = s("./src/lib/classNames/index.ts"),
 				v = s("./src/lib/extractQueryParams/index.ts"),
 				f = s("./src/lib/fastdom/index.ts"),
-				y = s("./src/lib/makeListingKey/index.ts"),
-				_ = s("./src/lib/performanceTimings/index.tsx"),
+				_ = s("./src/lib/makeListingKey/index.ts"),
+				y = s("./src/lib/performanceTimings/index.tsx"),
 				x = s("./src/reddit/actions/frontpage.ts"),
 				j = s("./src/reddit/components/EmptySubreddit.tsx"),
 				O = s("./src/reddit/components/FeaturedLiveEntrypoint/index.tsx"),
@@ -1303,7 +1303,7 @@
 				} = t;
 				const l = D.t in c && c[D.t].toUpperCase(),
 					u = "string" == typeof l && l in K.Pb ? K.Pb[l] : K.Qb,
-					m = Object(y.a)(Q.a, d, c),
+					m = Object(_.a)(Q.a, d, c),
 					p = i || K.u.Everywhere,
 					h = a || p,
 					b = D.g in c ? c[D.g].toUpperCase() : h;
@@ -1354,8 +1354,8 @@
 							sort: t
 						} = this.props;
 						f.a.read(() => {
-							const s = "".concat(_.c.FrontPage, "-").concat(t);
-							Object(_.d)(s, e)
+							const s = "".concat(y.c.FrontPage, "-").concat(t);
+							Object(y.d)(s, e)
 						})
 					}
 				}
@@ -1543,10 +1543,10 @@
 				g = e => e.publicAccessNetwork.history,
 				v = e => e.publicAccessNetwork.history.cursor,
 				f = e => e.publicAccessNetwork.history.visitOrder,
-				y = e => e.publicAccessNetwork.hlsStreams,
-				_ = Object(n.a)(y, e => e.ended),
-				x = Object(n.a)(y, e => e.removed),
-				j = Object(n.a)(e => e.publicAccessNetwork.models, _, x, (e, t, s) => {
+				_ = e => e.publicAccessNetwork.hlsStreams,
+				y = Object(n.a)(_, e => e.ended),
+				x = Object(n.a)(_, e => e.removed),
+				j = Object(n.a)(e => e.publicAccessNetwork.models, y, x, (e, t, s) => {
 					const n = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -1756,4 +1756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.4d58fbda7ce98a6ade78.js.map
+//# sourceMappingURL=Frontpage.fbf725d79fcf6e069a5c.js.map

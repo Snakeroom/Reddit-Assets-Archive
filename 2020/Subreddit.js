@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c566e4fd8ee3fde25b29.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5465ad4d42c1e569461b.js
+// Retrieved at 5/5/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -5764,7 +5764,7 @@
 				f = e => t => {
 					const n = Object(s.k)(t, e);
 					return Object.assign({
-						source: "stream_player",
+						source: "stream_chat",
 						action: "click",
 						noun: "send_chat"
 					}, a(t, n))
@@ -6977,4 +6977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.c566e4fd8ee3fde25b29.js.map
+//# sourceMappingURL=Subreddit.5465ad4d42c1e569461b.js.map

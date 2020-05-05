@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.fdc0367e36118de67c1a.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.8ec55a326e4b716124f8.js
+// Retrieved at 5/5/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -1254,7 +1254,7 @@
 				f = e => t => {
 					const s = Object(n.k)(t, e);
 					return Object.assign({
-						source: "stream_player",
+						source: "stream_chat",
 						action: "click",
 						noun: "send_chat"
 					}, r(t, s))
@@ -1607,4 +1607,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.fdc0367e36118de67c1a.js.map
+//# sourceMappingURL=ChatMessageInput.8ec55a326e4b716124f8.js.map
