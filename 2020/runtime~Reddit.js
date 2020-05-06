@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a21c47d449ee6757bffe.js
-// Retrieved at 5/6/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.82051e30e187a5f53c6c.js
+// Retrieved at 5/6/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -958,7 +958,7 @@
 						FrontpageSidebar: "502bd7b4fc82b11ef631",
 						Frontpage: "fbf725d79fcf6e069a5c",
 						Topic: "49aad577adf91d03bbd9",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "5347524093d07d8a21c0",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "1f38583f734dd2964d4e",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "f5106a7efa4a2bba5aa0",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "24355ba24dd56bbc651f",
@@ -1053,7 +1053,7 @@
 						HarbergerTaxManageModal: "824f92f2dbc0a4a30a24",
 						SubredditPremiumUploadModal: "70c83f815987953d9c31",
 						"Settings~reddit-components-ProfileIdCard": "1c223ba3d37fe1971418",
-						Settings: "fbc1609dfa6b1e76de3c",
+						Settings: "d8d1ba8b2fa8503e7a9b",
 						"vendors~EconHelperActions~SubredditPremiumBadgeManagement": "d1cf1838505b58032d67",
 						EconHelperActions: "105a4157be4b2eb6ac93",
 						SubredditPremiumBadgeManagement: "6f6d778c000482eebd6c",
@@ -1159,7 +1159,7 @@
 						TimezoneList: "a206f79d6f686712818d",
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "23384aff75feb43fa777",
 						InFeedChaining: "831a8e039cc4202b589b",
-						"reddit-components-Settings-CreatePasswordSSOModal": "9b1152c7e79736a66530",
+						"reddit-components-Settings-CreatePasswordSSOModal": "516a88cc1273ff399e04",
 						UpdateCardModal: "d16b07e2d85e3bbf032a",
 						RpanOnboardingModal: "0ecf0ba2b72b0ca52027",
 						"reddit-components-BlankPost": "fd72a2dce4e516a44f73",
@@ -1237,4 +1237,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.a21c47d449ee6757bffe.js.map
+//# sourceMappingURL=runtime~Reddit.82051e30e187a5f53c6c.js.map
