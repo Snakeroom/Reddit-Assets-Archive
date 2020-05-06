@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e27c9146de550ac44466.js
-// Retrieved at 5/6/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c5c6e4444222fcd3ee3c.js
+// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -7999,35 +7999,43 @@
 			"use strict";
 			i.d(t, "b", (function() {
 				return f
+			})), i.d(t, "c", (function() {
+				return b
 			}));
 			var n = i("./node_modules/lodash/once.js"),
 				r = i.n(n),
-				s = i("./src/chat/actions/container.ts"),
-				o = i("./src/chat/constants/container.ts"),
-				d = i("./src/chat/customMiddleware/noop.ts"),
-				l = i("./src/chat/selectors/app.ts"),
-				a = i("./src/lib/cache/index.ts"),
-				u = i("./src/lib/constants/index.ts"),
-				c = i("./src/lib/messageIframeParent/index.ts");
-			const m = o.a.HIDDEN,
-				p = o.a.HIDDEN,
-				h = e => e && o.b[e] && e !== o.a.FULL && e || m || p;
+				s = i("./src/lib/cache/index.ts"),
+				o = i("./src/lib/constants/index.ts"),
+				d = i("./src/lib/messageIframeParent/index.ts"),
+				l = i("./src/chat/actions/container.ts"),
+				a = i("./src/chat/constants/container.ts"),
+				u = i("./src/chat/customMiddleware/noop.ts"),
+				c = i("./src/chat/selectors/app.ts");
+			const m = a.a.HIDDEN,
+				p = a.a.HIDDEN,
+				h = e => e && a.b[e] && e !== a.a.FULL && e || m || p;
 			let _;
-			const g = e => Object(c.a)({
+			const g = e => Object(d.a)({
 					type: "resize.chat",
 					data: {
 						size: e,
-						dimensions: o.b[e]
+						dimensions: a.b[e]
 					}
 				}),
 				f = r()(e => {
 					const t = e.getState(),
-						i = Object(l.d)(t);
-					let n;
-					n = t.meta.isRedesign ? p : i ? m : o.a.FULL, e.dispatch(Object(s.sizeChanged)(n)), g(n)
-				});
+						i = Object(c.d)(t),
+						n = b(t.user.account && t.user.account.id);
+					let r;
+					r = t.meta.isRedesign && n ? a.a.MINIMIZED : t.meta.isRedesign ? p : i ? m : a.a.FULL, e.dispatch(Object(l.sizeChanged)(r)), g(r)
+				}),
+				b = e => {
+					_ = Object(s.b)(o.n.CHAT, "container_size", e || "unknown");
+					const t = Object(s.a)(_);
+					return !(!t || t === a.a.HIDDEN)
+				};
 			t.a = e => {
-				if ("undefined" == typeof window) return d.a;
+				if ("undefined" == typeof window) return u.a;
 				const t = e.getState(),
 					{
 						user: {
@@ -8035,7 +8043,7 @@
 						}
 					} = t,
 					n = i && i.id || "unknown";
-				return _ = Object(a.c)(u.n.CHAT, "container", n), window.addEventListener("storage", e => {
+				return _ = Object(s.b)(o.n.CHAT, "container_size", n), window.addEventListener("storage", e => {
 					switch (e.key) {
 						case _:
 							0
@@ -8043,10 +8051,10 @@
 				}), e => t => {
 					const i = e(t);
 					switch (t.type) {
-						case s.SIZE_CHANGED: {
+						case l.SIZE_CHANGED: {
 							const e = h(t.payload);
 							(e => {
-								Object(a.d)(_, e, a.a)
+								Object(s.c)(_, e, o.Wb)
 							})(e), g(e);
 							break
 						}
@@ -9820,14 +9828,12 @@
 		},
 		"./src/lib/cache/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return a
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
 				return u
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return c
-			})), i.d(t, "d", (function() {
-				return m
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/redditId/index.ts"),
@@ -9847,7 +9853,7 @@
 				},
 				l = (e, t, i) => {
 					const n = {
-						expires: "number" == typeof i ? Date.now() + 1e3 * i : i.getTime(),
+						expires: "number" == typeof i ? Date.now() + i : i.getTime(),
 						value: t
 					};
 					try {
@@ -9857,10 +9863,9 @@
 					}
 					return !1
 				},
-				a = (n.H, n.Xb),
-				u = (e, t, i) => e + "." + t + (i ? "{" + Object(r.b)(i, n.vb.Account) + "}" : ""),
-				c = d,
-				m = l
+				a = (n.H, n.Xb, (e, t, i) => e + "." + t + (i ? "{" + Object(r.b)(i, n.vb.Account) + "}" : "")),
+				u = d,
+				c = l
 		},
 		"./src/lib/classNames/index.ts": function(e, t, i) {
 			"use strict";
@@ -11004,14 +11009,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("3cfa14e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("81262e7-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3cfa14e-production",
+						release: "81262e7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11373,7 +11378,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3cfa14e-production",
+							releaseClient: "81262e7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -28462,4 +28467,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.e27c9146de550ac44466.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.c5c6e4444222fcd3ee3c.js.map

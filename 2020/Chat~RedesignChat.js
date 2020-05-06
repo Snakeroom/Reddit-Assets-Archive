@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2c5a5e551601500c1c37.js
-// Retrieved at 4/29/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a8cac92850228175c843.js
+// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1328,7 +1328,7 @@
 				d = n("./src/chat/selectors/user.ts"),
 				u = n("./src/chat/tracking/events/platform.ts");
 			var h = e => {
-					const t = Object(a.b)("chat.promo") || [];
+					const t = Object(a.a)("chat.promo") || [];
 					return e = (e => {
 						switch (e) {
 							case o.c.LegacySubredditChatFtux:
@@ -1346,8 +1346,8 @@
 				g = e => async (t, n) => {
 					t(p(e)), (e => {
 						if (!h(e)) {
-							const t = [...Object(a.b)("chat.promo") || [], e];
-							Object(a.d)("chat.promo", t, s.Xb)
+							const t = [...Object(a.a)("chat.promo") || [], e];
+							Object(a.c)("chat.promo", t, s.Xb)
 						}
 					})(e)
 				}, f = () => async (e, t) => {
@@ -1460,8 +1460,8 @@
 							} = o.user;
 						if (d && l) {
 							let n;
-							const c = Object(a.c)(s.n.CHAT, "session", l.id),
-								o = Object(a.b)(c);
+							const c = Object(a.b)(s.n.CHAT, "session", l.id),
+								o = Object(a.a)(c);
 							if (o && o.token) n = o;
 							else {
 								const e = await Object(i.h)(r(), d);
@@ -1473,7 +1473,7 @@
 									n = {
 										expires: t,
 										token: s
-									}, Object(a.d)(c, n, new Date(t))
+									}, Object(a.c)(c, n, new Date(t))
 								}
 							}
 							if (n) return void t(g(Object.assign({}, n, {
@@ -1494,8 +1494,8 @@
 					} = n;
 					const r = t(),
 						o = r.contacts.models,
-						d = Object(a.c)(s.n.CHAT, "contacts", r.user.account.id),
-						u = Object(a.b)(d);
+						d = Object(a.b)(s.n.CHAT, "contacts", r.user.account.id),
+						u = Object(a.a)(d);
 					if (u && u.version === l.a) return void e(E(u.data));
 					const h = t().user.session;
 					if (!h) return;
@@ -1505,7 +1505,7 @@
 							version: l.a,
 							data: b
 						};
-					Object(a.d)(d, p, _), e(E(b))
+					Object(a.c)(d, p, _), e(E(b))
 				}, y = "SENDBIRD__IDENTIFY_CONTACT_BEGIN", I = "SENDBIRD__IDENTIFY_CONTACT_END", x = Object(c.a)(y), S = Object(c.a)(I), k = e => async (t, n, a) => {
 					let {
 						apiContext: s
@@ -9382,7 +9382,7 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.d)(l, e, 5 * i.bb)
+				Object(o.c)(l, e, 5 * i.bb)
 			}, 5 * i.Cb, {
 				leading: !1,
 				trailing: !0
@@ -9390,7 +9390,7 @@
 			let h;
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
-					void 0 === Object(o.b)(l) && Object(c.b)()
+					void 0 === Object(o.a)(l) && Object(c.b)()
 				}, 5 * i.bb)
 			};
 			t.a = e => {
@@ -9402,7 +9402,7 @@
 						}
 					} = t,
 					a = n && n.id || "unknown";
-				l = Object(o.c)(i.n.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
+				l = Object(o.b)(i.n.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
 				try {
 					window.parent.addEventListener("focus", m)
 				} catch (s) {}
@@ -14041,4 +14041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.2c5a5e551601500c1c37.js.map
+//# sourceMappingURL=Chat~RedesignChat.a8cac92850228175c843.js.map

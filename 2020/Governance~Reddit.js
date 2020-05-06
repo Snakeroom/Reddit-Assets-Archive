@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.250358a1033b3c65fc10.js
-// Retrieved at 5/6/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e82af455d498ad1bd849.js
+// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1280,40 +1280,43 @@
 		},
 		"./src/reddit/actions/chat/toggle.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return l
-			})), n.d(t, "a", (function() {
+			n.d(t, "d", (function() {
 				return b
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return f
+			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "c", (function() {
+				return O
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react-router-redux/es/index.js"),
 				r = n("./src/lib/loadWithRetries/index.ts"),
 				o = n("./src/chat/constants/container.ts"),
-				a = n("./src/reddit/actions/chat/init.ts"),
-				i = n("./src/reddit/helpers/trackers/authorHovercard.ts");
-			const c = () => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/actions/meta.ts"))).then(e => e.setExternalData),
-				d = () => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/actions/container.ts"))).then(e => e.sizeChanged);
-			async function u(e, t, n, r) {
+				a = n("./src/chat/customMiddleware/containerSize.ts"),
+				i = n("./src/reddit/actions/chat/init.ts"),
+				c = n("./src/reddit/helpers/trackers/authorHovercard.ts");
+			const d = () => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/actions/meta.ts"))).then(e => e.setExternalData),
+				u = () => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/actions/container.ts"))).then(e => e.sizeChanged);
+			async function l(e, t, n, r) {
 				const [{
-					chatStore: u,
+					chatStore: a,
 					firstInit: l
-				}, b] = await Promise.all([Object(a.c)(e, t, n), d()]), p = t(), f = await c(), m = Object(i.h)(p, r);
-				u.dispatch(f(m)), u.getState().container.size !== o.a.EMBED && u.dispatch(b(o.a.EMBED)), !l && u.dispatch(Object(s.c)(n))
+				}, b] = await Promise.all([Object(i.c)(e, t, n), u()]), p = t(), f = await d(), m = Object(c.h)(p, r);
+				a.dispatch(f(m)), a.getState().container.size !== o.a.EMBED && a.dispatch(b(o.a.EMBED)), !l && a.dispatch(Object(s.c)(n))
 			}
-			const l = () => async (e, t) => Promise.all([Object(a.c)(e, t), d()]).then(e => {
+			const b = () => async (e, t) => Promise.all([Object(i.c)(e, t), u()]).then(e => {
 				let [{
 					chatStore: t,
 					firstInit: n
 				}, s] = e;
 				t.getState().container.size !== o.a.EMBED || n ? t.dispatch(s(o.a.EMBED)) : t.dispatch(s(o.a.HIDDEN))
-			}), b = (e, t) => async (s, o) => {
+			}), p = (e, t) => async (s, o) => {
 				const a = (await (() => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/helpers/urls/index.ts"))).then(e => e.channelUserIdUrl))())(e);
-				await u(s, o, a, t)
-			}, p = e => {
+				await l(s, o, a, t)
+			}, f = e => {
 				let {
 					channelId: t,
 					subredditName: s,
@@ -1325,12 +1328,16 @@
 						o = e(t, s)
 					}
 					if (!o) throw new Error("Please specify channelUrl or channelId (subredditName is optional)");
-					await u(e, a, o)
+					await l(e, a, o)
 				}
-			}, f = e => async (t, s) => {
-				if (!a.b) return;
+			}, m = e => async (t, s) => {
+				if (!i.b) return;
 				const o = await (() => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/actions/theme.ts"))).then(e => e.switchTheme))();
-				a.b.dispatch(o(e))
+				i.b.dispatch(o(e))
+			}, O = () => async (e, t) => {
+				const n = t(),
+					s = n.user.account && n.user.account.id || "unknown";
+				Object(a.c)(s) && Object(i.c)(e, t)
 			}
 		},
 		"./src/reddit/actions/chat/unreadCount.ts": function(e, t, n) {
@@ -12317,7 +12324,7 @@
 						}
 						t(te({
 							nightmode: e
-						})), t(Object(O.d)(e)), i.a.remove(y.d, {
+						})), t(Object(O.e)(e)), i.a.remove(y.d, {
 							domain: r.a.cookieDomain
 						})
 					}
@@ -51327,4 +51334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.250358a1033b3c65fc10.js.map
+//# sourceMappingURL=Governance~Reddit.e82af455d498ad1bd849.js.map
