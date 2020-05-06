@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.60a6a819287e5abf17b1.js
-// Retrieved at 5/6/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2109ad2b3ab59dc0ea9b.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25455,35 +25455,34 @@
 		"./src/reddit/helpers/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return m
+				return f
 			})), n.d(t, "a", (function() {
-				return g
+				return O
 			})), n.d(t, "i", (function() {
-				return _
+				return g
 			})), n.d(t, "c", (function() {
-				return y
+				return _
 			})), n.d(t, "d", (function() {
-				return h
+				return y
 			})), n.d(t, "f", (function() {
-				return j
+				return h
 			})), n.d(t, "e", (function() {
-				return I
+				return E
 			})), n.d(t, "h", (function() {
-				return v
+				return I
 			})), n.d(t, "g", (function() {
-				return S
+				return v
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
-			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./src/app/strings/index.ts");
+			var s = n("./node_modules/fbt/lib/FbtPublic.js");
 			n("./node_modules/react/index.js");
-			const o = function(e) {
+			const r = function(e) {
 				if (void 0 === e) throw new Error("invariant(...): Second argument must be a string.")
 			};
 
-			function a(e, t) {
-				for (var n = arguments.length, s = new Array(n > 2 ? n - 2 : 0), r = 2; r < n; r++) s[r - 2] = arguments[r];
-				if (o(t), !e) {
+			function o(e, t) {
+				for (var n = arguments.length, s = new Array(n > 2 ? n - 2 : 0), o = 2; o < n; o++) s[o - 2] = arguments[o];
+				if (r(t), !e) {
 					let e;
 					if (void 0 === t) e = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
 					else {
@@ -25493,45 +25492,45 @@
 					throw e.framesToPop = 1, e
 				}
 			}
-			const i = {
+			const a = {
 					AND: "AND",
 					NONE: "NONE",
 					OR: "OR"
 				},
-				c = {
+				i = {
 					COMMA: "COMMA",
 					SEMICOLON: "SEMICOLON"
 				};
-			var d = function(e, t, n) {
+			var c = function(e, t, n) {
 					const r = e.length;
 					if (0 === r) return "";
 					if (1 === r) return e[0];
-					const o = e[r - 1];
+					const c = e[r - 1];
 					let d = e[0];
-					for (let a = 1; a < r - 1; ++a) switch (n) {
-						case c.SEMICOLON:
-							d = s.fbt._("{previous items}; {following items}", [s.fbt._param("previous items", d), s.fbt._param("following items", e[a])], {
+					for (let o = 1; o < r - 1; ++o) switch (n) {
+						case i.SEMICOLON:
+							d = s.fbt._("{previous items}; {following items}", [s.fbt._param("previous items", d), s.fbt._param("following items", e[o])], {
 								hk: "4hs4xq"
 							});
 							break;
 						default:
-							d = s.fbt._("{previous items}, {following items}", [s.fbt._param("previous items", d), s.fbt._param("following items", e[a])], {
+							d = s.fbt._("{previous items}, {following items}", [s.fbt._param("previous items", d), s.fbt._param("following items", e[o])], {
 								hk: "2z8RMb"
 							})
 					}
 					return function(e, t, n, r) {
 						switch (n) {
-							case i.AND:
+							case a.AND:
 								return s.fbt._("{list of items} and {last item }", [s.fbt._param("list of items", e), s.fbt._param("last item ", t)], {
 									hk: "1ylan1"
 								});
-							case i.OR:
+							case a.OR:
 								return s.fbt._("{list of items} or {last item}", [s.fbt._param("list of items", e), s.fbt._param("last item", t)], {
 									hk: "3q8AmB"
 								});
-							case i.NONE:
+							case a.NONE:
 								switch (r) {
-									case c.SEMICOLON:
+									case i.SEMICOLON:
 										return s.fbt._("{previous item}; {last item}", [s.fbt._param("previous item", e), s.fbt._param("last item", t)], {
 											hk: "1h77rJ"
 										});
@@ -25541,15 +25540,15 @@
 										})
 								}
 								default:
-									a(!1, "Invalid conjunction %s provided to intlList", n)
+									o(!1, "Invalid conjunction %s provided to intlList", n)
 						}
-					}(d, o, t || i.AND, n || c.COMMA)
+					}(d, c, t || a.AND, n || i.COMMA)
 				},
-				u = n("./src/lib/timezone/index.ts"),
-				l = n("./src/reddit/helpers/isArrayEqual.ts"),
-				b = n("./src/reddit/helpers/ordinal/index.ts"),
-				p = n("./src/reddit/models/ScheduledPost/index.ts");
-			const f = (e, t) => {
+				d = n("./src/lib/timezone/index.ts"),
+				u = n("./src/reddit/helpers/isArrayEqual.ts"),
+				l = n("./src/reddit/helpers/ordinal/index.ts"),
+				b = n("./src/reddit/models/ScheduledPost/index.ts");
+			const p = (e, t) => {
 					const n = e.toLocaleDateString(t, {
 							month: "numeric",
 							day: "numeric"
@@ -25560,36 +25559,38 @@
 						});
 					return "".concat(n, " @ ").concat(s.replace(" ", "").toLowerCase())
 				},
-				m = (e, t, n) => {
+				f = (e, t, n) => {
 					if (e && t) {
-						const s = Object(u.f)(g(e, t)),
-							o = f(s, n);
-						return Object(r.a)(n, "postCreation.schedulePicker.submitAtTime", {
-							time: o
+						const r = Object(d.f)(O(e, t)),
+							o = p(r, n);
+						return s.fbt._("Submit post at {time}", [s.fbt._param("time", o)], {
+							hk: "IZ3L"
 						})
 					}
-					return Object(r.a)(n, "postCreation.schedulePicker.submitAtTimeScheduleTime")
+					return s.fbt._("Submit post at scheduled event time", null, {
+						hk: "lYsoU"
+					})
 				},
-				O = e => e.slice(0, 5),
-				g = (e, t) => "".concat(e, "T").concat(O(t), ":00"),
-				_ = e => {
+				m = e => e.slice(0, 5),
+				O = (e, t) => "".concat(e, "T").concat(m(t), ":00"),
+				g = e => {
 					const [t, n] = e.split("T");
-					return [t, O(n)]
+					return [t, m(n)]
 				},
-				y = (e, t) => {
-					const [n, s] = _(e);
+				_ = (e, t) => {
+					const [n, s] = g(e);
 					if (n && s) {
-						const e = Object(u.f)(g(n, s));
-						return f(e, t)
+						const e = Object(d.f)(O(n, s));
+						return p(e, t)
 					}
 					return ""
 				},
-				h = e => {
-					const t = Object(u.d)(e);
+				y = e => {
+					const t = Object(d.d)(e);
 					let n, s = e;
 					if (t) {
 						n = t.offset;
-						const r = Object(u.e)(t.offset),
+						const r = Object(d.e)(t.offset),
 							o = e.replace("/", " - ").replace(/_/g, " ");
 						s = "(GMT".concat(r, ") ").concat(o)
 					}
@@ -25599,41 +25600,41 @@
 						offset: n
 					}
 				},
-				j = e => "string" == typeof e,
-				E = e => {
+				h = e => "string" == typeof e,
+				j = e => {
 					const t = new Date,
 						n = e - t.getDay();
 					return t.setDate(t.getDate() + n), t.toLocaleDateString(void 0, {
 						weekday: "long"
 					})
 				},
-				I = e => {
+				E = e => {
 					const t = (e => {
-						const [t, n] = _(e);
+						const [t, n] = g(e);
 						if (t && n) {
-							return Object(u.f)(g(t, n)).toLocaleTimeString(void 0, {
+							return Object(d.f)(O(t, n)).toLocaleTimeString(void 0, {
 								hour: "numeric",
 								minute: "numeric"
 							})
 						}
 						return ""
 					})(e.publishAt);
-					if (e.frequency === p.d.Hourly) return 2 === e.interval ? s.fbt._("Every other hour", null, {
+					if (e.frequency === b.d.Hourly) return 2 === e.interval ? s.fbt._("Every other hour", null, {
 						hk: "64vzK"
 					}) : e.interval > 1 ? s.fbt._("Every {hour interval} hours", [s.fbt._param("hour interval", e.interval.toString())], {
 						hk: "3x8zaD"
 					}) : s.fbt._("Every hour", null, {
 						hk: "1VzCs"
 					});
-					if (e.frequency === p.d.Daily) return 2 === e.interval ? s.fbt._("Every other day at {start time}", [s.fbt._param("start time", t)], {
+					if (e.frequency === b.d.Daily) return 2 === e.interval ? s.fbt._("Every other day at {start time}", [s.fbt._param("start time", t)], {
 						hk: "yTynp"
 					}) : e.interval > 1 ? s.fbt._("Every {day interval} days at {start time}", [s.fbt._param("day interval", e.interval.toString()), s.fbt._param("start time", t)], {
 						hk: "2OoGlG"
 					}) : s.fbt._("Every day at {start time}", [s.fbt._param("start time", t)], {
 						hk: "1cvwm2"
 					});
-					if (e.frequency === p.d.Weekly) {
-						const n = (e => d(e.map(p.j).sort((e, t) => e - t).map(E), i.AND, c.COMMA))(e.byWeekDays);
+					if (e.frequency === b.d.Weekly) {
+						const n = (e => c(e.map(b.j).sort((e, t) => e - t).map(j), a.AND, i.COMMA))(e.byWeekDays);
 						return 2 === e.interval ? s.fbt._("Every other week on {days of week } at {start time}", [s.fbt._param("days of week ", n), s.fbt._param("start time", t)], {
 							hk: "43xwaa"
 						}) : e.interval > 1 ? s.fbt._("Every {interval} weeks on {days of week} at {start time}", [s.fbt._param("interval", e.interval.toString()), s.fbt._param("days of week", n), s.fbt._param("start time", t)], {
@@ -25642,7 +25643,7 @@
 							hk: "2Zl0L"
 						})
 					}
-					const n = (e => d(e.sort((e, t) => e - t).map(b.a), i.AND, c.COMMA))(e.byMonthDays);
+					const n = (e => c(e.sort((e, t) => e - t).map(l.a), a.AND, i.COMMA))(e.byMonthDays);
 					return 2 === e.interval ? s.fbt._({
 						"*": "Every other month on the {days of month} days at {start time}",
 						_1: "Every other month on the {days of month} day at {start time}"
@@ -25660,13 +25661,13 @@
 						hk: "1jBuYc"
 					})
 				},
-				v = e => {
+				I = e => {
 					let t = null;
-					e.frequency && (t = e.frequency), (e.byWeekDays.length > 1 || e.byMonthDays.length > 1 || e.interval > 1) && (t = p.b);
-					const n = Object(u.f)(e.publishAt),
-						s = Object(p.o)(n.getDay()),
+					e.frequency && (t = e.frequency), (e.byWeekDays.length > 1 || e.byMonthDays.length > 1 || e.interval > 1) && (t = b.b);
+					const n = Object(d.f)(e.publishAt),
+						s = Object(b.o)(n.getDay()),
 						r = n.getDate();
-					return 1 === e.byWeekDays.length && e.byWeekDays[0] !== s && (t = p.b), 1 === e.byMonthDays.length && e.byMonthDays[0] !== r && (t = p.b), {
+					return 1 === e.byWeekDays.length && e.byWeekDays[0] !== s && (t = b.b), 1 === e.byMonthDays.length && e.byMonthDays[0] !== r && (t = b.b), {
 						recurrenceInfo: e.frequency ? {
 							frequency: e.frequency,
 							byMonthDays: e.byMonthDays,
@@ -25678,13 +25679,13 @@
 						timezoneName: e.clientTimezone
 					}
 				},
-				S = (e, t) => {
+				v = (e, t) => {
 					if (!e && t || e && !t) return !1;
 					if (!e && !t) return !0;
 					for (const n in e) {
 						if (!t) return !1;
 						if (e.hasOwnProperty(n)) {
-							if (Array.isArray(e[n]) && (!Array.isArray(t[n]) || !Object(l.a)(e[n], t[n]))) return !1;
+							if (Array.isArray(e[n]) && (!Array.isArray(t[n]) || !Object(u.a)(e[n], t[n]))) return !1;
 							if (e[n] !== t[n]) return !1
 						}
 					}
@@ -51334,4 +51335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.60a6a819287e5abf17b1.js.map
+//# sourceMappingURL=Governance~Reddit.2109ad2b3ab59dc0ea9b.js.map

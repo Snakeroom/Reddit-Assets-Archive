@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.acb6f725704cbf5ef4c0.js
-// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3ff93f92e3d4803f0979.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -8904,46 +8904,51 @@
 				k = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				O = s("./src/reddit/icons/fonts/Photos/index.tsx"),
 				y = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				j = s("./src/reddit/models/Media/index.ts"),
-				w = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				S = s.n(w);
-			const I = Object(r.b)(null, (e, t) => ({
+				j = s("./src/reddit/icons/svgs/Poll/index.tsx"),
+				w = s("./src/reddit/models/Media/index.ts"),
+				S = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				I = s.n(S);
+			const N = Object(r.b)(null, (e, t) => ({
 					toggle: () => e(Object(c.x)({
 						postId: t.post.id
 					}))
 				})),
-				N = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					const s = Object(d.a)(S.a.icon, S.a.hideOnHover);
+				T = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+						s = arguments.length > 2 ? arguments[2] : void 0;
+					const n = Object(d.a)(I.a.icon, I.a.hideOnHover);
 					if (t) return a.a.createElement(p.a, {
-						className: s
+						className: n
+					});
+					if (s.pollData) return a.a.createElement(j.a, {
+						className: n
 					});
 					switch (e) {
-						case j.n.GIFVIDEO:
+						case w.n.GIFVIDEO:
 							return a.a.createElement(C.a, {
-								className: s
+								className: n
 							});
-						case j.n.IMAGE:
+						case w.n.IMAGE:
 							return a.a.createElement(O.a, {
-								className: s
+								className: n
 							});
-						case j.n.TEXT:
-						case j.n.RTJSON:
+						case w.n.TEXT:
+						case w.n.RTJSON:
 							return a.a.createElement(y.a, {
-								className: s
+								className: n
 							});
-						case j.n.VIDEO:
+						case w.n.VIDEO:
 							return a.a.createElement(v.a, {
-								className: s
+								className: n
 							});
-						case j.n.EMBED:
+						case w.n.EMBED:
 						default:
 							return a.a.createElement(_.a, {
-								className: s
+								className: n
 							})
 					}
 				};
-			t.a = I(e => {
+			t.a = N(e => {
 				const {
 					className: t,
 					crosspost: s,
@@ -8953,26 +8958,26 @@
 					toggle: p,
 					useMediaIcons: g
 				} = e, f = s || c, x = o && !!s;
-				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(u.a)(f)) ? a.a.createElement("button", {
+				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(u.a)(f)) || !!c.pollData ? a.a.createElement("button", {
 					"aria-expanded": r,
 					"aria-haspopup": !0,
 					"aria-label": n.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(d.a)(t, S.a.outer),
+					className: Object(d.a)(t, I.a.outer),
 					"data-click-id": r ? "expando_close" : "expando_open",
 					onClick: p
 				}, r ? a.a.createElement(b.a, {
-					className: S.a.icon
-				}) : g ? a.a.createElement(a.a.Fragment, null, N(f.media && f.media.type, x), a.a.createElement(h.a, {
-					className: Object(d.a)(S.a.icon, S.a.showOnHover)
+					className: I.a.icon
+				}) : g ? a.a.createElement(a.a.Fragment, null, T(f.media && f.media.type, x, c), a.a.createElement(h.a, {
+					className: Object(d.a)(I.a.icon, I.a.showOnHover)
 				})) : a.a.createElement(h.a, {
-					className: S.a.icon
+					className: I.a.icon
 				})) : f.source && f.source.url ? a.a.createElement(m.a, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(d.a)(t, S.a.outer),
+					className: Object(d.a)(t, I.a.outer),
 					"data-click-id": "expando_open",
 					href: f.source.url,
 					isSponsored: c.isSponsored,
@@ -8980,17 +8985,17 @@
 					source: c.source,
 					target: "_blank"
 				}, a.a.createElement(k.a, {
-					className: Object(d.a)(S.a.icon, S.a.outboundLinkIcon)
+					className: Object(d.a)(I.a.icon, I.a.outboundLinkIcon)
 				})) : a.a.createElement(i.a, {
 					"aria-label": n.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(d.a)(t, S.a.outer),
+					className: Object(d.a)(t, I.a.outer),
 					"data-click-id": "expando_open",
 					to: Object(l.a)(f.permalink),
 					rel: "nofollow"
 				}, a.a.createElement(E, {
-					className: S.a.icon
+					className: I.a.icon
 				}))
 			})
 		},
@@ -9204,9 +9209,9 @@
 						className: I.a.container
 					}, a.a.createElement("div", {
 						className: I.a.newBadge
-					}, a.a.createElement(y.c, null, "New")), a.a.createElement("div", {
+					}, a.a.createElement(y.a, null, "New")), a.a.createElement("div", {
 						className: I.a.text
-					}, a.a.createElement(y.c, null, "Try giving a new Appreciation Award"))))
+					}, a.a.createElement(y.a, null, "Try giving a new Appreciation Award"))))
 				}
 			}
 			var T = N,
@@ -15957,7 +15962,7 @@
 						})
 					}), s && r.a.createElement("span", {
 						className: y.a.optionsOverflowIndication
-					}, r.a.createElement(k.c, null, "+".concat(this.props.options.length - (this.props.maxOptionsToDisplay || 0)))), this.props.children, !Object(_.c)(this.props.readOnlyMode) && r.a.createElement("input", {
+					}, r.a.createElement(k.a, null, "+".concat(this.props.options.length - (this.props.maxOptionsToDisplay || 0)))), this.props.children, !Object(_.c)(this.props.readOnlyMode) && r.a.createElement("input", {
 						className: Object(i.a)(y.a.input, {
 							[y.a.hiddenInput]: Object(_.b)(this.props.readOnlyMode)
 						}),
@@ -28694,4 +28699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.acb6f725704cbf5ef4c0.js.map
+//# sourceMappingURL=ModerationPages.3ff93f92e3d4803f0979.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.531bbdeab178a4f96d3b.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.f71863080c4f5505b0c8.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1187,9 +1187,9 @@
 						className: I.a.container
 					}, r.a.createElement("div", {
 						className: I.a.newBadge
-					}, r.a.createElement(k.c, null, "New")), r.a.createElement("div", {
+					}, r.a.createElement(k.a, null, "New")), r.a.createElement("div", {
 						className: I.a.text
-					}, r.a.createElement(k.c, null, "Try giving a new Appreciation Award"))))
+					}, r.a.createElement(k.a, null, "Try giving a new Appreciation Award"))))
 				}
 			}
 			var T = S,
@@ -4062,4 +4062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.531bbdeab178a4f96d3b.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.f71863080c4f5505b0c8.js.map

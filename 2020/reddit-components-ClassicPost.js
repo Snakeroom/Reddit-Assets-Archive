@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3fbf5eace406083e6a31.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.64019de3be1b542b4d76.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return w
+				return E
 			}));
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -103,7 +103,7 @@
 						return t
 					}), {})
 				},
-				w = function(e) {
+				E = function(e) {
 					var t, s;
 
 					function o() {
@@ -154,7 +154,7 @@
 						}) : null
 					}, o
 				}(r.a.Component);
-			v(w, "displayName", "IntersectionObserver")
+			v(E, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, s) {
 			"use strict";
@@ -698,8 +698,8 @@
 				_ = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				j = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				P = s("./src/reddit/components/PostTitle/index.tsx"),
-				w = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				E = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				w = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				C = s("./src/reddit/models/Media/index.ts"),
 				k = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				N = s("./src/reddit/connectors/ClassicPost/index.tsx"),
@@ -825,7 +825,7 @@
 						size: P.b.Medium,
 						titleColor: ce && ce.postTitleColor,
 						isOverlay: G
-					}, ee.source && !le && r.a.createElement(E.a, {
+					}, ee.source && !le && r.a.createElement(w.a, {
 						href: ee.source.url,
 						isSponsored: ee.isSponsored,
 						postId: ee.id,
@@ -839,7 +839,7 @@
 						className: F.a.spacer
 					}), ee.source && ee.source.url && ee.isSponsored && r.a.createElement(c.a, {
 						className: F.a.adLinkWrapper
-					}, r.a.createElement(E.a, {
+					}, r.a.createElement(w.a, {
 						href: ee.source.url.replace(n.a.redditUrl, ""),
 						isSponsored: ee.isSponsored,
 						postId: ee.id,
@@ -879,7 +879,7 @@
 						post: ee,
 						showEditPost: he,
 						showEditFlair: re,
-						tooltipType: G ? w.c.Lightbox : void 0,
+						tooltipType: G ? E.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(_.h)({
 							editPost: !be,
 							save: !be,
@@ -966,8 +966,8 @@
 			}
 			const j = O.a.div("Container", y.a),
 				P = O.a.div("PostMetaWrapper", y.a),
-				w = O.a.wrapped(u.c, "PostTitle", y.a),
-				E = O.a.div("FlatList", y.a),
+				E = O.a.wrapped(u.c, "PostTitle", y.a),
+				w = O.a.div("FlatList", y.a),
 				C = O.a.div("FlatItem", y.a),
 				k = O.a.span("FlatListDotSpacer", y.a),
 				N = O.a.wrapped(j, "LinkContainer", y.a),
@@ -1013,7 +1013,7 @@
 					className: l
 				}, n.a.createElement(P, null, n.a.createElement(m.a, c)), L(a), A(e), B(e))
 			});
-			const L = e => n.a.createElement(w, {
+			const L = e => n.a.createElement(E, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
@@ -1037,7 +1037,7 @@
 					} = e, {
 						score: s
 					} = t;
-					return n.a.createElement(E, null, n.a.createElement(C, null, o.fbt._({
+					return n.a.createElement(w, null, n.a.createElement(C, null, o.fbt._({
 						"*": "{point count} points",
 						_1: "1 point"
 					}, [o.fbt._plural(s, "point count", Object(l.b)(s))], {
@@ -1102,47 +1102,52 @@
 				_ = s("./src/reddit/icons/fonts/Link/index.tsx"),
 				j = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				P = s("./src/reddit/icons/fonts/Photos/index.tsx"),
-				w = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				E = s("./src/reddit/models/Media/index.ts"),
-				C = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				k = s.n(C);
-			const N = Object(a.b)(null, (e, t) => ({
+				E = s("./src/reddit/icons/fonts/Text/index.tsx"),
+				w = s("./src/reddit/icons/svgs/Poll/index.tsx"),
+				C = s("./src/reddit/models/Media/index.ts"),
+				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				N = s.n(k);
+			const S = Object(a.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
-				S = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					const s = Object(d.a)(k.a.icon, k.a.hideOnHover);
+				T = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+						s = arguments.length > 2 ? arguments[2] : void 0;
+					const o = Object(d.a)(N.a.icon, N.a.hideOnHover);
 					if (t) return n.a.createElement(u.a, {
-						className: s
+						className: o
+					});
+					if (s.pollData) return n.a.createElement(w.a, {
+						className: o
 					});
 					switch (e) {
-						case E.n.GIFVIDEO:
+						case C.n.GIFVIDEO:
 							return n.a.createElement(O.a, {
-								className: s
+								className: o
 							});
-						case E.n.IMAGE:
+						case C.n.IMAGE:
 							return n.a.createElement(P.a, {
-								className: s
+								className: o
 							});
-						case E.n.TEXT:
-						case E.n.RTJSON:
-							return n.a.createElement(w.a, {
-								className: s
+						case C.n.TEXT:
+						case C.n.RTJSON:
+							return n.a.createElement(E.a, {
+								className: o
 							});
-						case E.n.VIDEO:
+						case C.n.VIDEO:
 							return n.a.createElement(y.a, {
-								className: s
+								className: o
 							});
-						case E.n.EMBED:
+						case C.n.EMBED:
 						default:
 							return n.a.createElement(_.a, {
-								className: s
+								className: o
 							})
 					}
 				};
-			t.a = N(e => {
+			t.a = S(e => {
 				const {
 					className: t,
 					crosspost: s,
@@ -1152,26 +1157,26 @@
 					toggle: u,
 					useMediaIcons: h
 				} = e, f = s || l, v = r && !!s;
-				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(m.a)(f)) ? n.a.createElement("button", {
+				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(m.a)(f)) || !!l.pollData ? n.a.createElement("button", {
 					"aria-expanded": a,
 					"aria-haspopup": !0,
 					"aria-label": o.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(d.a)(t, k.a.outer),
+					className: Object(d.a)(t, N.a.outer),
 					"data-click-id": a ? "expando_close" : "expando_open",
 					onClick: u
 				}, a ? n.a.createElement(b.a, {
-					className: k.a.icon
-				}) : h ? n.a.createElement(n.a.Fragment, null, S(f.media && f.media.type, v), n.a.createElement(x.a, {
-					className: Object(d.a)(k.a.icon, k.a.showOnHover)
+					className: N.a.icon
+				}) : h ? n.a.createElement(n.a.Fragment, null, T(f.media && f.media.type, v, l), n.a.createElement(x.a, {
+					className: Object(d.a)(N.a.icon, N.a.showOnHover)
 				})) : n.a.createElement(x.a, {
-					className: k.a.icon
+					className: N.a.icon
 				})) : f.source && f.source.url ? n.a.createElement(p.a, {
 					"aria-label": o.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(d.a)(t, k.a.outer),
+					className: Object(d.a)(t, N.a.outer),
 					"data-click-id": "expando_open",
 					href: f.source.url,
 					isSponsored: l.isSponsored,
@@ -1179,17 +1184,17 @@
 					source: l.source,
 					target: "_blank"
 				}, n.a.createElement(j.a, {
-					className: Object(d.a)(k.a.icon, k.a.outboundLinkIcon)
+					className: Object(d.a)(N.a.icon, N.a.outboundLinkIcon)
 				})) : n.a.createElement(i.a, {
 					"aria-label": o.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(d.a)(t, k.a.outer),
+					className: Object(d.a)(t, N.a.outer),
 					"data-click-id": "expando_open",
 					to: Object(c.a)(f.permalink),
 					rel: "nofollow"
 				}, n.a.createElement(g, {
-					className: k.a.icon
+					className: N.a.icon
 				}))
 			})
 		},
@@ -1304,23 +1309,23 @@
 					language: _,
 					post: j,
 					shouldShowSubscribeButton: P,
-					subredditOrProfile: w,
-					tooltipType: E
+					subredditOrProfile: E,
+					tooltipType: w
 				} = e, C = !!O;
 				return r.a.createElement("div", {
 					className: g.a.metaContainer
-				}, !o && !j.isSponsored && w && r.a.createElement(i.a, {
+				}, !o && !j.isSponsored && E && r.a.createElement(i.a, {
 					postId: j.id,
-					subredditName: w.name
+					subredditName: E.name
 				}, r.a.createElement(m.a, {
 					className: g.a.subredditName,
 					"data-click-id": "subreddit",
-					to: w.url
-				}, w.displayText)), w && w.isQuarantined && r.a.createElement(p.a, null), !o && !j.isSponsored && w && P && !v && r.a.createElement(u.a, {
+					to: E.url
+				}, E.displayText)), E && E.isQuarantined && r.a.createElement(p.a, null), !o && !j.isSponsored && E && P && !v && r.a.createElement(u.a, {
 					getEventFactory: e => Object(h.f)(j.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
-						name: w.name,
-						type: Object(f.e)(w) ? b.a.PROFILE : b.a.SUBREDDIT
+						name: E.name,
+						type: Object(f.e)(E) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: j.id,
 					small: !0
@@ -1332,22 +1337,22 @@
 					flairStyleTemplate: t,
 					language: _,
 					post: j,
-					tooltipType: E
+					tooltipType: w
 				}), r.a.createElement(c.a, {
-					displayText: w ? w.displayText : null,
+					displayText: E ? E.displayText : null,
 					inSubredditOrProfile: !!o,
 					language: _,
 					post: j,
-					tooltipType: E
-				}), w && r.a.createElement(a.a, {
+					tooltipType: w
+				}), E && r.a.createElement(a.a, {
 					className: g.a.donationAmount,
 					contentId: j.id,
-					subredditId: w.id
+					subredditId: E.id
 				}), !C && r.a.createElement(n.a, {
 					hideCta: s,
 					isOverlay: y,
 					thing: j,
-					tooltipType: E
+					tooltipType: w
 				}))
 			}
 		},
@@ -1674,4 +1679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.3fbf5eace406083e6a31.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.64019de3be1b542b4d76.js.map

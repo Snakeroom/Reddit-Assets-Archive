@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.66f92ff0958591db1e71.js
-// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.86b3e1e9002b2f795fd3.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2688,46 +2688,51 @@
 				E = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				j = s("./src/reddit/icons/fonts/Photos/index.tsx"),
 				_ = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				P = s("./src/reddit/models/Media/index.ts"),
-				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				S = s.n(k);
-			const w = Object(a.b)(null, (e, t) => ({
+				P = s("./src/reddit/icons/svgs/Poll/index.tsx"),
+				k = s("./src/reddit/models/Media/index.ts"),
+				S = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				w = s.n(S);
+			const I = Object(a.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
-				I = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					const s = Object(c.a)(S.a.icon, S.a.hideOnHover);
+				N = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+						s = arguments.length > 2 ? arguments[2] : void 0;
+					const n = Object(c.a)(w.a.icon, w.a.hideOnHover);
 					if (t) return o.a.createElement(u.a, {
-						className: s
+						className: n
+					});
+					if (s.pollData) return o.a.createElement(P.a, {
+						className: n
 					});
 					switch (e) {
-						case P.n.GIFVIDEO:
+						case k.n.GIFVIDEO:
 							return o.a.createElement(O.a, {
-								className: s
+								className: n
 							});
-						case P.n.IMAGE:
+						case k.n.IMAGE:
 							return o.a.createElement(j.a, {
-								className: s
+								className: n
 							});
-						case P.n.TEXT:
-						case P.n.RTJSON:
+						case k.n.TEXT:
+						case k.n.RTJSON:
 							return o.a.createElement(_.a, {
-								className: s
+								className: n
 							});
-						case P.n.VIDEO:
+						case k.n.VIDEO:
 							return o.a.createElement(v.a, {
-								className: s
+								className: n
 							});
-						case P.n.EMBED:
+						case k.n.EMBED:
 						default:
 							return o.a.createElement(C.a, {
-								className: s
+								className: n
 							})
 					}
 				};
-			t.a = w(e => {
+			t.a = I(e => {
 				const {
 					className: t,
 					crosspost: s,
@@ -2737,26 +2742,26 @@
 					toggle: u,
 					useMediaIcons: x
 				} = e, f = s || l, g = r && !!s;
-				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(p.a)(f)) ? o.a.createElement("button", {
+				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(p.a)(f)) || !!l.pollData ? o.a.createElement("button", {
 					"aria-expanded": a,
 					"aria-haspopup": !0,
 					"aria-label": n.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(c.a)(t, S.a.outer),
+					className: Object(c.a)(t, w.a.outer),
 					"data-click-id": a ? "expando_close" : "expando_open",
 					onClick: u
 				}, a ? o.a.createElement(b.a, {
-					className: S.a.icon
-				}) : x ? o.a.createElement(o.a.Fragment, null, I(f.media && f.media.type, g), o.a.createElement(h.a, {
-					className: Object(c.a)(S.a.icon, S.a.showOnHover)
+					className: w.a.icon
+				}) : x ? o.a.createElement(o.a.Fragment, null, N(f.media && f.media.type, g, l), o.a.createElement(h.a, {
+					className: Object(c.a)(w.a.icon, w.a.showOnHover)
 				})) : o.a.createElement(h.a, {
-					className: S.a.icon
+					className: w.a.icon
 				})) : f.source && f.source.url ? o.a.createElement(m.a, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(c.a)(t, S.a.outer),
+					className: Object(c.a)(t, w.a.outer),
 					"data-click-id": "expando_open",
 					href: f.source.url,
 					isSponsored: l.isSponsored,
@@ -2764,17 +2769,17 @@
 					source: l.source,
 					target: "_blank"
 				}, o.a.createElement(E.a, {
-					className: Object(c.a)(S.a.icon, S.a.outboundLinkIcon)
+					className: Object(c.a)(w.a.icon, w.a.outboundLinkIcon)
 				})) : o.a.createElement(i.a, {
 					"aria-label": n.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(c.a)(t, S.a.outer),
+					className: Object(c.a)(t, w.a.outer),
 					"data-click-id": "expando_open",
 					to: Object(d.a)(f.permalink),
 					rel: "nofollow"
 				}, o.a.createElement(y, {
-					className: S.a.icon
+					className: w.a.icon
 				}))
 			})
 		},
@@ -9421,4 +9426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.66f92ff0958591db1e71.js.map
+//# sourceMappingURL=SearchResults.86b3e1e9002b2f795fd3.js.map

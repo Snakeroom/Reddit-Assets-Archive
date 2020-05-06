@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fbf725d79fcf6e069a5c.js
-// Retrieved at 5/5/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.daf07ac0630c61a61895.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -555,7 +555,7 @@
 						href: "".concat(y).concat(e.id)
 					}, o.a.createElement(g.a, null, o.a.createElement(j, null), o.a.createElement(O, null, n.fbt._("live", null, {
 						hk: "aD7Tn"
-					}), o.a.createElement(p.c, null, "live")), o.a.createElement(w, null, "·"), o.a.createElement(E, null, n.fbt._({
+					}), o.a.createElement(p.a, null, "live")), o.a.createElement(w, null, "·"), o.a.createElement(E, null, n.fbt._({
 						"*": "{number} viewers",
 						_1: "1 viewer"
 					}, [n.fbt._plural(e.viewerCount, "number")], {
@@ -1756,4 +1756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.fbf725d79fcf6e069a5c.js.map
+//# sourceMappingURL=Frontpage.daf07ac0630c61a61895.js.map

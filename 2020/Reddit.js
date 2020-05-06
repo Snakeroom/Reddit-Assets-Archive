@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3bdf4df5b33f92470df0.js
-// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3e48e1b52e1c53efe030.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2354,15 +2354,15 @@
 					}
 				}
 				render() {
-					return m.a.createElement(wt.c, null, m.a.createElement(wt.g, null, m.a.createElement(kt.a, null, m.a.createElement(wt.n, null, m.a.createElement(ln.c, null, "Discard unsaved changes before leaving?")), m.a.createElement(jt.a, {
+					return m.a.createElement(wt.c, null, m.a.createElement(wt.g, null, m.a.createElement(kt.a, null, m.a.createElement(wt.n, null, m.a.createElement(ln.a, null, "Discard unsaved changes before leaving?")), m.a.createElement(jt.a, {
 						onClick: this.onCancelClick
-					}, m.a.createElement(wt.b, null)))), m.a.createElement(wt.j, null, m.a.createElement(wt.m, null, m.a.createElement(ln.c, null, "You have made some changes to your community, do you wish to leave this menu without saving?"))), m.a.createElement(wt.e, null, m.a.createElement(wt.a, {
+					}, m.a.createElement(wt.b, null)))), m.a.createElement(wt.j, null, m.a.createElement(wt.m, null, m.a.createElement(ln.a, null, "You have made some changes to your community, do you wish to leave this menu without saving?"))), m.a.createElement(wt.e, null, m.a.createElement(wt.a, {
 						onClick: this.onCancelClick,
 						"data-redditstyle": !0
-					}, m.a.createElement(ln.c, null, "Cancel")), m.a.createElement(wt.o, {
+					}, m.a.createElement(ln.a, null, "Cancel")), m.a.createElement(wt.o, {
 						onClick: this.onDiscardClick,
 						"data-redditstyle": !0
-					}, m.a.createElement(ln.c, null, "Discard"))))
+					}, m.a.createElement(ln.a, null, "Discard"))))
 				}
 			}
 			const hn = Object($e.a)(un(pn));
@@ -12444,4 +12444,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.3bdf4df5b33f92470df0.js.map
+//# sourceMappingURL=Reddit.3e48e1b52e1c53efe030.js.map

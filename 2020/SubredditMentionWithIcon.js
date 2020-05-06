@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8f2e257f80f08e437ad1.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.5b406e1a0e81d7115108.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -496,9 +496,9 @@
 						getEventFactory: this.getSubscribeEventFactory
 					}))), o.a.createElement("div", {
 						className: ce.a.subredditMeta
-					}, o.a.createElement(oe.c, null, "".concat(c, " member").concat(a > 1 ? "s" : ""))), s && o.a.createElement("div", {
+					}, o.a.createElement(oe.a, null, "".concat(c, " member").concat(a > 1 ? "s" : ""))), s && o.a.createElement("div", {
 						className: ce.a.subredditMeta
-					}, o.a.createElement(ie.c, null), o.a.createElement(oe.c, null, "".concat(d, " online"))), t && r && o.a.createElement($.a, {
+					}, o.a.createElement(ie.c, null), o.a.createElement(oe.a, null, "".concat(d, " online"))), t && r && o.a.createElement($.a, {
 						className: ce.a.subredditDescriptionContainer,
 						to: n.url,
 						onClick: this.onSubredditClick,
@@ -1046,4 +1046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.8f2e257f80f08e437ad1.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.5b406e1a0e81d7115108.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.de3c9ae4d53f357edb2e.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ca71cc5f17331cc88264.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -3062,46 +3062,51 @@
 				O = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				C = n("./src/reddit/icons/fonts/Photos/index.tsx"),
 				_ = n("./src/reddit/icons/fonts/Text/index.tsx"),
-				k = n("./src/reddit/models/Media/index.ts"),
-				j = n("./src/reddit/components/ExpandoButton/index.m.less"),
-				P = n.n(j);
-			const S = Object(a.b)(null, (e, t) => ({
+				k = n("./src/reddit/icons/svgs/Poll/index.tsx"),
+				j = n("./src/reddit/models/Media/index.ts"),
+				P = n("./src/reddit/components/ExpandoButton/index.m.less"),
+				S = n.n(P);
+			const I = Object(a.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
-				I = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					const n = Object(c.a)(P.a.icon, P.a.hideOnHover);
+				N = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+						n = arguments.length > 2 ? arguments[2] : void 0;
+					const s = Object(c.a)(S.a.icon, S.a.hideOnHover);
 					if (t) return r.a.createElement(u.a, {
-						className: n
+						className: s
+					});
+					if (n.pollData) return r.a.createElement(k.a, {
+						className: s
 					});
 					switch (e) {
-						case k.n.GIFVIDEO:
+						case j.n.GIFVIDEO:
 							return r.a.createElement(E.a, {
-								className: n
+								className: s
 							});
-						case k.n.IMAGE:
+						case j.n.IMAGE:
 							return r.a.createElement(C.a, {
-								className: n
+								className: s
 							});
-						case k.n.TEXT:
-						case k.n.RTJSON:
+						case j.n.TEXT:
+						case j.n.RTJSON:
 							return r.a.createElement(_.a, {
-								className: n
+								className: s
 							});
-						case k.n.VIDEO:
+						case j.n.VIDEO:
 							return r.a.createElement(y.a, {
-								className: n
+								className: s
 							});
-						case k.n.EMBED:
+						case j.n.EMBED:
 						default:
 							return r.a.createElement(w.a, {
-								className: n
+								className: s
 							})
 					}
 				};
-			t.a = S(e => {
+			t.a = I(e => {
 				const {
 					className: t,
 					crosspost: n,
@@ -3111,26 +3116,26 @@
 					toggle: u,
 					useMediaIcons: x
 				} = e, f = n || l, g = o && !!n;
-				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(p.a)(f)) ? r.a.createElement("button", {
+				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(p.a)(f)) || !!l.pollData ? r.a.createElement("button", {
 					"aria-expanded": a,
 					"aria-haspopup": !0,
 					"aria-label": s.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(c.a)(t, P.a.outer),
+					className: Object(c.a)(t, S.a.outer),
 					"data-click-id": a ? "expando_close" : "expando_open",
 					onClick: u
 				}, a ? r.a.createElement(b.a, {
-					className: P.a.icon
-				}) : x ? r.a.createElement(r.a.Fragment, null, I(f.media && f.media.type, g), r.a.createElement(h.a, {
-					className: Object(c.a)(P.a.icon, P.a.showOnHover)
+					className: S.a.icon
+				}) : x ? r.a.createElement(r.a.Fragment, null, N(f.media && f.media.type, g, l), r.a.createElement(h.a, {
+					className: Object(c.a)(S.a.icon, S.a.showOnHover)
 				})) : r.a.createElement(h.a, {
-					className: P.a.icon
+					className: S.a.icon
 				})) : f.source && f.source.url ? r.a.createElement(m.a, {
 					"aria-label": s.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(c.a)(t, P.a.outer),
+					className: Object(c.a)(t, S.a.outer),
 					"data-click-id": "expando_open",
 					href: f.source.url,
 					isSponsored: l.isSponsored,
@@ -3138,17 +3143,17 @@
 					source: l.source,
 					target: "_blank"
 				}, r.a.createElement(O.a, {
-					className: Object(c.a)(P.a.icon, P.a.outboundLinkIcon)
+					className: Object(c.a)(S.a.icon, S.a.outboundLinkIcon)
 				})) : r.a.createElement(i.a, {
 					"aria-label": s.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(c.a)(t, P.a.outer),
+					className: Object(c.a)(t, S.a.outer),
 					"data-click-id": "expando_open",
 					to: Object(d.a)(f.permalink),
 					rel: "nofollow"
 				}, r.a.createElement(v, {
-					className: P.a.icon
+					className: S.a.icon
 				}))
 			})
 		},
@@ -7111,72 +7116,71 @@
 		},
 		"./src/reddit/components/SidebarProfileMultireddits/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/reddit/actions/profile/index.ts"),
-				d = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				l = n("./src/reddit/components/SidebarSpacer/index.tsx"),
-				m = n("./src/reddit/i18n/components.tsx"),
-				p = n("./src/reddit/i18n/utils.ts"),
-				u = n("./src/reddit/selectors/profile.ts"),
-				b = n("./src/reddit/components/SidebarProfileMultireddits/index.m.less"),
-				h = n.n(b);
-			const x = Object(i.c)({
-					hasMoreMultireddits: u.e,
-					loadMorePending: u.b,
-					multireddits: u.o
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/reddit/actions/profile/index.ts"),
+				l = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
+				m = n("./src/reddit/components/SidebarSpacer/index.tsx"),
+				p = n("./src/reddit/selectors/profile.ts"),
+				u = n("./src/reddit/components/SidebarProfileMultireddits/index.m.less"),
+				b = n.n(u);
+			const h = Object(c.c)({
+					hasMoreMultireddits: p.e,
+					loadMorePending: p.b,
+					multireddits: p.o
 				}),
-				f = Object(r.b)(x, (e, t) => ({
-					onLoadMoreMultireddits: () => e(Object(c.e)(t.profileName, !0))
+				x = Object(a.b)(h, (e, t) => ({
+					onLoadMoreMultireddits: () => e(Object(d.e)(t.profileName, !0))
 				}), (e, t, n) => Object.assign({}, n, e, t, {
 					onLoadMore: () => {
 						e.hasMoreMultireddits && t.onLoadMoreMultireddits()
 					}
 				})),
-				g = e => {
+				f = e => {
 					let {
 						item: t
 					} = e;
-					return o.a.createElement("div", {
-						className: h.a.listItem,
+					return r.a.createElement("div", {
+						className: b.a.listItem,
 						key: t.url
-					}, o.a.createElement("img", {
-						className: h.a.icon,
+					}, r.a.createElement("img", {
+						className: b.a.icon,
 						src: t.icon
-					}), o.a.createElement("div", {
-						className: h.a.description
-					}, o.a.createElement(a.a, {
-						className: h.a.name,
+					}), r.a.createElement("div", {
+						className: b.a.description
+					}, r.a.createElement(i.a, {
+						className: b.a.name,
 						to: t.url
-					}, t.displayText), o.a.createElement("div", {
-						className: h.a.meta
-					}, o.a.createElement(m.c, null, o.a.createElement(m.b, {
-						name: "subredditCount"
-					}, t.subredditCount), " ", o.a.createElement(m.a, {
-						name: "communities",
-						singular: "community",
-						plural: "communities",
-						count: t.subredditCount
-					})))))
+					}, t.displayText), r.a.createElement("div", {
+						className: b.a.meta
+					}, s.fbt._({
+						"*": "{communities} communities",
+						_1: "1 community"
+					}, [s.fbt._plural(t.subredditCount, "communities")], {
+						hk: "1eyxrS"
+					}))))
 				};
-			t.a = f(e => {
+			t.a = x(e => {
 				const {
 					hasMoreMultireddits: t,
 					loadMorePending: n,
-					multireddits: s,
-					onLoadMore: r,
-					profileName: a
+					multireddits: o,
+					onLoadMore: a,
+					profileName: i
 				} = e;
-				return s && s.length ? o.a.createElement(l.a, null, o.a.createElement(d.a, {
+				return o && o.length ? r.a.createElement(m.a, null, r.a.createElement(l.a, {
 					hasMoreItems: t,
-					items: s,
-					onLoadMore: r,
+					items: o,
+					onLoadMore: a,
 					pending: n,
-					renderItem: g,
-					title: Object(p.b)("Public custom feeds by u/".concat(Object(p.a)("username", a)))
+					renderItem: f,
+					title: s.fbt._("Public custom feeds by u/{profileName}", [s.fbt._param("profileName", i)], {
+						hk: "16Oicc"
+					})
 				})) : null
 			})
 		},
@@ -9937,4 +9941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.de3c9ae4d53f357edb2e.js.map
+//# sourceMappingURL=ProfileComments.ca71cc5f17331cc88264.js.map

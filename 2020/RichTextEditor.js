@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.00a7e6c25a9018a8aebc.js
-// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.dafab994cb2606ca320b.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2056,22 +2056,24 @@
 				c = n("./node_modules/react-router-redux/es/index.js"),
 				l = n("./node_modules/reselect/es/index.js"),
 				m = n("./src/lib/classNames/index.ts"),
-				u = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				p = n("./src/reddit/models/PostCreationForm/index.ts"),
-				h = n("./src/reddit/models/PostRequirements/index.ts"),
-				b = n("./src/reddit/selectors/postCreations.ts"),
-				f = n("./src/reddit/actions/postCreation/editing.ts"),
-				x = n("./src/reddit/actions/postCreation/editorContent.ts"),
-				g = n("./src/reddit/components/CommentCreation/NavigationModule/index.ts"),
-				C = n("./src/lib/constants/index.ts"),
-				E = n("./src/lib/memoizeByReference/index.ts"),
-				w = n("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			const v = Object(E.a)((e, t) => {
+				u = n("./src/reddit/components/Governance/Proposal/async.ts"),
+				p = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				h = n("./src/reddit/models/PostCreationForm/index.ts"),
+				b = n("./src/reddit/models/PostRequirements/index.ts"),
+				f = n("./src/reddit/selectors/platform.ts"),
+				x = n("./src/reddit/selectors/postCreations.ts"),
+				g = n("./src/reddit/actions/postCreation/editing.ts"),
+				C = n("./src/reddit/actions/postCreation/editorContent.ts"),
+				E = n("./src/reddit/components/CommentCreation/NavigationModule/index.ts"),
+				w = n("./src/lib/constants/index.ts"),
+				v = n("./src/lib/memoizeByReference/index.ts"),
+				_ = n("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			const y = Object(v.a)((e, t) => {
 				const n = e.name,
 					{
 						allowedPostTypes: s
 					} = e,
-					r = Object(w.g)(t),
+					r = Object(_.g)(t),
 					a = ((e, t, n) => {
 						if (!t) return null;
 						let s = "";
@@ -2085,51 +2087,52 @@
 					})(r, s, n);
 				return a ? [a] : (e => {
 					const t = [];
-					return e.image > C.Q && t.push(o.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > w.Q && t.push(o.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > C.U && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > w.U && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(r)
 			});
-			var _ = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.tsx"),
-				y = n("./src/reddit/components/RichTextEditor/index.tsx"),
-				O = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				k = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				M = n("./src/reddit/controls/ErrorText/index.tsx"),
-				T = n("./src/reddit/helpers/richTextEditor/index.ts"),
-				j = n("./src/reddit/selectors/user.ts"),
-				R = n("./src/reddit/controls/Button/index.tsx"),
-				S = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				B = n("./src/reddit/components/PostEditForm/index.m.less"),
-				F = n.n(B),
-				I = n("./src/lib/lessComponent.tsx");
-			const P = I.a.div("BottomRow", F.a),
-				A = I.a.div("FormContent", F.a),
-				D = I.a.wrapped(R.f, "SubmitButton", F.a),
-				W = I.a.wrapped(S.a, "LoadingIcon", F.a),
-				H = Object(k.t)(),
-				N = Object(l.c)({
-					destSubreddit: b.g,
-					editorMode: b.h,
-					errorMessages: b.i,
-					hasError: b.j,
-					language: j.P,
-					markdownDraft: b.k,
-					pending: b.P,
-					postRequirements: b.db,
-					rteDraft: b.l,
-					subreddit: k.q,
+			var O = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.tsx"),
+				k = n("./src/reddit/components/RichTextEditor/index.tsx"),
+				M = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				T = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				j = n("./src/reddit/controls/ErrorText/index.tsx"),
+				R = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				S = n("./src/reddit/selectors/user.ts"),
+				B = n("./src/reddit/controls/Button/index.tsx"),
+				F = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				I = n("./src/reddit/components/PostEditForm/index.m.less"),
+				P = n.n(I),
+				A = n("./src/lib/lessComponent.tsx");
+			const D = A.a.div("BottomRow", P.a),
+				W = A.a.div("FormContent", P.a),
+				H = A.a.wrapped(B.f, "SubmitButton", P.a),
+				N = A.a.wrapped(F.a, "LoadingIcon", P.a),
+				L = Object(T.t)(),
+				z = Object(l.c)({
+					destSubreddit: x.g,
+					editorMode: x.h,
+					errorMessages: x.i,
+					hasError: x.j,
+					language: S.P,
+					markdownDraft: x.k,
+					pending: x.P,
+					postRequirements: x.db,
+					rteDraft: x.l,
+					subreddit: T.q,
 					uploads: e => e.uploads,
-					user: j.i
+					user: S.i,
+					isCommentsPage: f.g
 				}),
-				L = Object(d.b)(N, (e, t) => ({
-					onCancel: t => e(f.b(t)),
-					onSubmitDraft: t => e(f.c(t)),
+				U = Object(d.b)(z, (e, t) => ({
+					onCancel: t => e(g.b(t)),
+					onSubmitDraft: t => e(g.c(t)),
 					onSuccess: t => e(Object(c.b)(t)),
-					onToggleEditorMode: (t, n) => e(x.d(p.g.POST_EDITING, t, n))
+					onToggleEditorMode: (t, n) => e(C.d(h.g.POST_EDITING, t, n))
 				}));
-			class z extends i.a.Component {
+			class q extends i.a.Component {
 				constructor(e) {
 					super(e), this.onEditorResize = e => {
 						this.setState({
@@ -2148,14 +2151,14 @@
 							rteState: e,
 							richtextPostDraftChanged: this.state.richtextPostDraftChanged || t
 						})
-					}, this.haveMarkdownPostDraft = () => !!(this.state.markdownBody || "").trim(), this.haveDraft = () => this.props.editorMode === p.h.RICH_TEXT ? this.haveRichPostDraft() : this.haveMarkdownPostDraft(), this.onSubmit = () => {
+					}, this.haveMarkdownPostDraft = () => !!(this.state.markdownBody || "").trim(), this.haveDraft = () => this.props.editorMode === h.h.RICH_TEXT ? this.haveRichPostDraft() : this.haveMarkdownPostDraft(), this.onSubmit = () => {
 						const e = this.buildPostSubmission();
 						e && this.props.onSubmitDraft(e)
 					}, this.onToggleEditorMode = async (e, t) => {
 						this.setState({
 							markdownPostDraftChanged: !1,
 							richtextPostDraftChanged: !1
-						}), await this.props.onToggleEditorMode(e, t), e === p.h.RICH_TEXT ? this.rteRef && this.rteRef.focus() : this.markdownEditorRef && this.markdownEditorRef.focus()
+						}), await this.props.onToggleEditorMode(e, t), e === h.h.RICH_TEXT ? this.rteRef && this.rteRef.focus() : this.markdownEditorRef && this.markdownEditorRef.focus()
 					}, this.getMediaValidationErrors = () => {
 						const {
 							editorMode: e,
@@ -2163,7 +2166,7 @@
 						} = this.props, {
 							rteState: n
 						} = this.state;
-						return n.isBound && e === p.h.RICH_TEXT ? v(t, n.editorState.getCurrentContent()) : []
+						return n.isBound && e === h.h.RICH_TEXT ? y(t, n.editorState.getCurrentContent()) : []
 					}, this.getTextPostContent = () => {
 						const {
 							editorMode: e,
@@ -2172,7 +2175,7 @@
 							markdownBody: n,
 							rteState: o
 						} = this.state;
-						return e === p.h.RICH_TEXT ? O.a.toRichTextJSON(o, t) : {
+						return e === h.h.RICH_TEXT ? M.a.toRichTextJSON(o, t) : {
 							markdown: n
 						}
 					}, this.buildPostSubmission = () => {
@@ -2194,10 +2197,10 @@
 					}
 				}
 				componentDidMount() {
-					Object(u.d)(u.a.PostComposer)
+					Object(p.d)(p.a.PostComposer)
 				}
 				componentWillUnmount() {
-					Object(u.b)(u.a.PostComposer), this.cancelEdit()
+					Object(p.b)(p.a.PostComposer), this.cancelEdit()
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					e.rteDraft !== this.props.rteDraft && this.setState({
@@ -2212,7 +2215,7 @@
 					const {
 						rteState: e
 					} = this.state;
-					return O.a.hasContent(e)
+					return M.a.hasContent(e)
 				}
 				hasChanged() {
 					const {
@@ -2221,83 +2224,87 @@
 						markdownPostDraftChanged: t,
 						richtextPostDraftChanged: n
 					} = this.state;
-					return e === p.h.RICH_TEXT ? !!n : e === p.h.MARKDOWN && !!t
+					return e === h.h.RICH_TEXT ? !!n : e === h.h.MARKDOWN && !!t
 				}
 				render() {
 					const {
-						language: e,
-						pending: t,
-						editorMode: n,
-						errorMessages: s,
-						hasError: a,
-						post: d,
-						postRequirements: c,
-						uploads: l
+						editorMode: e,
+						errorMessages: t,
+						hasError: n,
+						isCommentsPage: s,
+						language: a,
+						pending: d,
+						post: c,
+						postRequirements: l,
+						uploads: p
 					} = this.props, {
-						markdownBody: u,
-						markdownPostDraftChanged: b,
-						richtextPostDraftChanged: f,
-						rteState: x
-					} = this.state, C = c && c.bodyRestrictionPolicy === h.a.Required ? o.fbt._("Text (required)", null, {
+						markdownBody: f,
+						markdownPostDraftChanged: x,
+						richtextPostDraftChanged: g,
+						rteState: C
+					} = this.state, w = l && l.bodyRestrictionPolicy === b.a.Required ? o.fbt._("Text (required)", null, {
 						hk: "E1dIP"
 					}) : o.fbt._("Text (optional)", null, {
 						hk: "4jfNex"
-					}), E = this.getMediaValidationErrors(), w = [...s, ...E];
-					a && !w.length && w.push(o.fbt._("Something went wrong. Just don't panic.", null, {
+					}), v = this.getMediaValidationErrors(), _ = [...t, ...v];
+					n && !_.length && _.push(o.fbt._("Something went wrong. Just don't panic.", null, {
 						hk: "FsWrq"
 					}));
-					const v = !O.a.isAllMediaUploaded(x, l);
-					return i.a.createElement(A, null, n === p.h.RICH_TEXT ? i.a.createElement(y.a, {
+					const y = !M.a.isAllMediaUploaded(C, p);
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(W, null, e === h.h.RICH_TEXT ? i.a.createElement(k.a, {
 						allowMediaUploads: !0,
-						className: Object(m.a)(F.a.Editor, {
-							[F.a.isPending]: !!t
+						className: Object(m.a)(P.a.Editor, {
+							[P.a.isPending]: !!d
 						}),
 						destSubreddit: this.props.destSubreddit,
-						editorType: T.a.Post,
+						editorType: R.a.Post,
 						initialHeight: this.state.editorHeight,
-						rteState: x,
+						rteState: C,
 						onChange: this.onRichPostChange,
 						onEditorResize: this.onEditorResize,
 						onSubmit: this.onSubmit,
 						onSwitchEditorMode: this.onToggleEditorMode,
-						readOnly: !!t,
+						readOnly: !!d,
 						rteRef: this.setRteRef,
 						trackToolbarClick: r.a,
-						placeholderText: C
-					}) : i.a.createElement(_.a, {
-						language: e,
+						placeholderText: w
+					}) : i.a.createElement(O.a, {
+						language: a,
 						initialHeight: this.state.editorHeight,
 						instanceRef: this.setMarkdownEditorRef,
-						disabled: !!t,
-						value: u,
+						disabled: !!d,
+						value: f,
 						onChange: this.onMarkdownPostChange,
 						onEditorResize: this.onEditorResize,
 						onSubmit: this.onSubmit,
 						onSwitchEditorMode: this.onToggleEditorMode,
-						placeholderText: C
-					}), i.a.createElement(P, null, i.a.createElement(R.n, {
-						disabled: !!t,
+						placeholderText: w
+					}), i.a.createElement(D, null, i.a.createElement(B.n, {
+						disabled: !!d,
 						onClick: this.cancelEdit
 					}, o.fbt._("cancel", null, {
 						hk: "24fH4T"
-					})), i.a.createElement(D, {
-						disabled: !!t || !!E.length || !this.hasChanged() || v,
+					})), i.a.createElement(H, {
+						disabled: !!d || !!v.length || !this.hasChanged() || y,
 						onClick: this.onSubmit
-					}, t ? i.a.createElement(W, {
+					}, d ? i.a.createElement(N, {
 						sizePx: 10
 					}) : o.fbt._("save", null, {
 						hk: "1RZ7vw"
-					}))), i.a.createElement(M.a, {
-						className: F.a.errorMessages,
-						messages: w
-					}), i.a.createElement(g.a, {
-						editKey: d.id,
-						hasValue: !(!b && !f),
+					}))), i.a.createElement(j.a, {
+						className: P.a.errorMessages,
+						messages: _
+					}), i.a.createElement(E.a, {
+						editKey: c.id,
+						hasValue: !(!x && !g),
 						isPostEdit: !0
+					})), i.a.createElement(u.a, {
+						postId: c.id,
+						isCommentsPage: !!s
 					}))
 				}
 			}
-			t.default = H(L(z))
+			t.default = L(U(q))
 		},
 		"./src/reddit/components/RequestPendingBanner/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2890,4 +2897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.00a7e6c25a9018a8aebc.js.map
+//# sourceMappingURL=RichTextEditor.dafab994cb2606ca320b.js.map

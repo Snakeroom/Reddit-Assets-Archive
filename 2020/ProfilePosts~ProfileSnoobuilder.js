@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.8452e3980402876d9bce.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.8e3148a429f915dabc48.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -151,15 +151,15 @@
 					routeName: f.U,
 					privateListingType: f.i
 				}),
-				C = Object(c.c)({
+				j = Object(c.c)({
 					isDropdownMenuOpen: e => Object(_.a)(e) === I,
 					isOwnProfile: (e, t) => Object(O.K)(e, t.profileName),
 					isSnoovatar30Enabled: E.d.snoovatar30,
 					isSubscriptionsPinned: N.b
 				}),
-				j = Object(l.a)(h.a),
+				C = Object(l.a)(h.a),
 				I = "profile-nav-menu-tooltip";
-			t.a = L(Object(o.b)(C, e => ({
+			t.a = L(Object(o.b)(j, e => ({
 				toggleTooltip: t => e(Object(p.h)({
 					tooltipId: t
 				}))
@@ -191,7 +191,7 @@
 						className: Object(u.a)(k.a.mainLink, k.a.overflowMenuButton),
 						id: I,
 						onClick: () => a(I)
-					}, i.a.createElement(v.a, null)), i.a.createElement(j, {
+					}, i.a.createElement(v.a, null)), i.a.createElement(C, {
 						className: k.a.dropdown,
 						isOpen: t,
 						tooltipId: I
@@ -714,72 +714,71 @@
 		},
 		"./src/reddit/components/SidebarProfileMultireddits/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				i = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/reddit/actions/profile/index.ts"),
-				d = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				l = n("./src/reddit/components/SidebarSpacer/index.tsx"),
-				u = n("./src/reddit/i18n/components.tsx"),
-				m = n("./src/reddit/i18n/utils.ts"),
-				p = n("./src/reddit/selectors/profile.ts"),
-				b = n("./src/reddit/components/SidebarProfileMultireddits/index.m.less"),
-				x = n.n(b);
-			const f = Object(a.c)({
-					hasMoreMultireddits: p.e,
-					loadMorePending: p.b,
-					multireddits: p.o
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				i = n.n(r),
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/reddit/actions/profile/index.ts"),
+				l = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
+				u = n("./src/reddit/components/SidebarSpacer/index.tsx"),
+				m = n("./src/reddit/selectors/profile.ts"),
+				p = n("./src/reddit/components/SidebarProfileMultireddits/index.m.less"),
+				b = n.n(p);
+			const x = Object(c.c)({
+					hasMoreMultireddits: m.e,
+					loadMorePending: m.b,
+					multireddits: m.o
 				}),
-				h = Object(i.b)(f, (e, t) => ({
-					onLoadMoreMultireddits: () => e(Object(c.e)(t.profileName, !0))
+				f = Object(o.b)(x, (e, t) => ({
+					onLoadMoreMultireddits: () => e(Object(d.e)(t.profileName, !0))
 				}), (e, t, n) => Object.assign({}, n, e, t, {
 					onLoadMore: () => {
 						e.hasMoreMultireddits && t.onLoadMoreMultireddits()
 					}
 				})),
-				y = e => {
+				h = e => {
 					let {
 						item: t
 					} = e;
-					return r.a.createElement("div", {
-						className: x.a.listItem,
+					return i.a.createElement("div", {
+						className: b.a.listItem,
 						key: t.url
-					}, r.a.createElement("img", {
-						className: x.a.icon,
+					}, i.a.createElement("img", {
+						className: b.a.icon,
 						src: t.icon
-					}), r.a.createElement("div", {
-						className: x.a.description
-					}, r.a.createElement(o.a, {
-						className: x.a.name,
+					}), i.a.createElement("div", {
+						className: b.a.description
+					}, i.a.createElement(a.a, {
+						className: b.a.name,
 						to: t.url
-					}, t.displayText), r.a.createElement("div", {
-						className: x.a.meta
-					}, r.a.createElement(u.c, null, r.a.createElement(u.b, {
-						name: "subredditCount"
-					}, t.subredditCount), " ", r.a.createElement(u.a, {
-						name: "communities",
-						singular: "community",
-						plural: "communities",
-						count: t.subredditCount
-					})))))
+					}, t.displayText), i.a.createElement("div", {
+						className: b.a.meta
+					}, s.fbt._({
+						"*": "{communities} communities",
+						_1: "1 community"
+					}, [s.fbt._plural(t.subredditCount, "communities")], {
+						hk: "1eyxrS"
+					}))))
 				};
-			t.a = h(e => {
+			t.a = f(e => {
 				const {
 					hasMoreMultireddits: t,
 					loadMorePending: n,
-					multireddits: s,
-					onLoadMore: i,
-					profileName: o
+					multireddits: r,
+					onLoadMore: o,
+					profileName: a
 				} = e;
-				return s && s.length ? r.a.createElement(l.a, null, r.a.createElement(d.a, {
+				return r && r.length ? i.a.createElement(u.a, null, i.a.createElement(l.a, {
 					hasMoreItems: t,
-					items: s,
-					onLoadMore: i,
+					items: r,
+					onLoadMore: o,
 					pending: n,
-					renderItem: y,
-					title: Object(m.b)("Public custom feeds by u/".concat(Object(m.a)("username", o)))
+					renderItem: h,
+					title: s.fbt._("Public custom feeds by u/{profileName}", [s.fbt._param("profileName", a)], {
+						hk: "16Oicc"
+					})
 				})) : null
 			})
 		},
@@ -1172,7 +1171,7 @@
 			n.d(t, "b", (function() {
 				return S
 			})), n.d(t, "a", (function() {
-				return C
+				return j
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1232,7 +1231,7 @@
 					className: w.a.errorMsg
 				}, e.errorMsg || s.fbt._("Something went wrong.", null, {
 					hk: "pHwDP"
-				})) : i.a.createElement(i.a.Fragment, null, e.communities.map(t => i.a.createElement(C, k({
+				})) : i.a.createElement(i.a.Fragment, null, e.communities.map(t => i.a.createElement(j, k({
 					key: t.name
 				}, t, {
 					getSubscribeEventFactory: e.getSubscribeEventFactoryHandler ? e.getSubscribeEventFactoryHandler(t) : void 0,
@@ -1254,7 +1253,7 @@
 				L = Object(c.c)({
 					hideNSFWPref: p.z
 				}),
-				C = Object(o.b)(L)(e => i.a.createElement("div", {
+				j = Object(o.b)(L)(e => i.a.createElement("div", {
 					className: w.a.communityItemContainer
 				}, i.a.createElement(E.a, {
 					widthRight: h.t
@@ -1558,4 +1557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.8452e3980402876d9bce.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.8e3148a429f915dabc48.js.map

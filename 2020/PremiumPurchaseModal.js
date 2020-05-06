@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.faf3a515a3ae0becb640.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.bbb58a345698e0362d37.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -581,7 +581,7 @@
 				className: O.a.errorMessage
 			}, e.stripeErrorMessage), s.a.createElement("div", {
 				className: O.a.membershipDescription
-			}, s.a.createElement(S.c, null, "Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.")), s.a.createElement("div", {
+			}, s.a.createElement(S.a, null, "Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.")), s.a.createElement("div", {
 				className: O.a.agreementLink
 			}, Object(x.a)(_.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [_.fbt._param("Link text", ":agreement:")], {
 				hk: "fXr9v"
@@ -589,7 +589,7 @@
 				":agreement:": s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
 					target: "_blank"
-				}, s.a.createElement(S.c, null, "Reddit User Agreement"))
+				}, s.a.createElement(S.a, null, "Reddit User Agreement"))
 			}))), s.a.createElement(D, {
 				onCompletePurchaseClick: e.onCompletePurchaseClick,
 				passthrough: e.passthrough,
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.faf3a515a3ae0becb640.js.map
+//# sourceMappingURL=PremiumPurchaseModal.bbb58a345698e0362d37.js.map

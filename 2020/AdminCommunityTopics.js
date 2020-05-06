@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.df97ded591ad24e49bf2.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.651376e9cb15ce55fb5f.js
+// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -753,7 +753,7 @@
 						})
 					}), s && r.a.createElement("span", {
 						className: I.a.optionsOverflowIndication
-					}, r.a.createElement(S.c, null, "+".concat(this.props.options.length - (this.props.maxOptionsToDisplay || 0)))), this.props.children, !Object(v.c)(this.props.readOnlyMode) && r.a.createElement("input", {
+					}, r.a.createElement(S.a, null, "+".concat(this.props.options.length - (this.props.maxOptionsToDisplay || 0)))), this.props.children, !Object(v.c)(this.props.readOnlyMode) && r.a.createElement("input", {
 						className: Object(a.a)(I.a.input, {
 							[I.a.hiddenInput]: Object(v.b)(this.props.readOnlyMode)
 						}),
@@ -870,4 +870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminCommunityTopics.df97ded591ad24e49bf2.js.map
+//# sourceMappingURL=AdminCommunityTopics.651376e9cb15ce55fb5f.js.map
