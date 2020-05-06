@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.81664e2882dad589c05d.js
-// Retrieved at 5/5/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.88da39670dbd0be3c4d4.js
+// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3363,7 +3363,7 @@
 					experimentEligibilitySelector: kt.a,
 					experimentName: _t.V
 				});
-				return !(!t || Object(_t.kc)(t))
+				return !(!t || Object(_t.ic)(t))
 			};
 			var Pt = s("./src/reddit/selectors/gild.ts"),
 				wt = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -16435,7 +16435,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.B
 				});
-				return !!t && !Object(n.kc)(t)
+				return !!t && !Object(n.ic)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16452,4 +16452,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.81664e2882dad589c05d.js.map
+//# sourceMappingURL=CollectionCommentsPage.88da39670dbd0be3c4d4.js.map

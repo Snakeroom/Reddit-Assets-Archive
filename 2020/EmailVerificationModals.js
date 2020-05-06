@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.f148de025e4081ca9cf2.js
-// Retrieved at 5/5/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.e56a91cda0388baebb7d.js
+// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, a) {
@@ -383,7 +383,7 @@
 			var se = Object(u.a)(te(Object(k.c)(Object(q.a)(ae)))),
 				ne = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				ie = a("./src/reddit/selectors/activeModalId.ts"),
-				re = a("./src/reddit/selectors/experiments/responsiveSettings.ts"),
+				re = a("./src/reddit/selectors/responsiveSettings.ts"),
 				oe = a("./src/reddit/components/EmailVerificationModals/index.m.less"),
 				le = a.n(oe);
 			const ce = Object(o.c)({
@@ -1003,4 +1003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailVerificationModals.f148de025e4081ca9cf2.js.map
+//# sourceMappingURL=EmailVerificationModals.e56a91cda0388baebb7d.js.map

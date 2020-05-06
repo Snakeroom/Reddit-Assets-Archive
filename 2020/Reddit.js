@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7b9b199f9090514432d2.js
-// Retrieved at 5/5/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d980b70ef2c19a8b388d.js
+// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4484,9 +4484,9 @@
 				to = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				so = s("./src/reddit/selectors/experiments/trending.ts"),
 				no = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const ao = e => Object(Vt.E)(e) || fs.cc.Treatment1 === Object(no.c)(e, {
+			const ao = e => Object(Vt.E)(e) || fs.ac.Treatment1 === Object(no.c)(e, {
 				experimentEligibilitySelector: no.a,
-				experimentName: fs.Zb
+				experimentName: fs.Xb
 			});
 			var ro = s("./src/reddit/selectors/searchResults.ts"),
 				oo = s("./src/reddit/selectors/tooltip.ts"),
@@ -4807,7 +4807,7 @@
 			var bo = Object(ce.c)(mo(Object(Qr.b)(po(ho)))),
 				go = s("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				fo = s("./src/reddit/icons/svgs/Wordmark/index.tsx"),
-				Co = s("./src/reddit/selectors/experiments/responsiveSettings.ts"),
+				Co = s("./src/reddit/selectors/responsiveSettings.ts"),
 				vo = s("./src/reddit/components/Header/MwebResponsiveHeader/index.m.less"),
 				yo = s.n(vo);
 			var Po, xo = e => {
@@ -12254,18 +12254,18 @@
 				o = s("./src/reddit/constants/accountManager.ts"),
 				i = s("./src/reddit/constants/experiments.ts"),
 				c = s("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				d = s("./src/reddit/selectors/experiments/responsiveSettings.ts"),
-				l = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				m = s("./src/reddit/selectors/experiments/utils.ts"),
-				u = s("./src/reddit/selectors/user.ts");
-			const p = Object(a.a)(e => Object(l.c)(e, {
+				d = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				l = s("./src/reddit/selectors/experiments/utils.ts"),
+				m = s("./src/reddit/selectors/user.ts");
+			const u = Object(a.a)(e => Object(d.c)(e, {
 					experimentName: i.G,
-					experimentEligibilitySelector: e => !Object(u.G)(e)
-				}), m.a),
-				h = Object(a.a)(p, e => e === i.L.SSO),
-				b = e => e.accountManagerModalData.actionSource,
+					experimentEligibilitySelector: e => !Object(m.G)(e)
+				}), l.a),
+				p = Object(a.a)(u, e => e === i.L.SSO);
+			var h = s("./src/reddit/selectors/responsiveSettings.ts");
+			const b = e => e.accountManagerModalData.actionSource,
 				g = e => e.accountManagerModalData.redirectUrl,
-				f = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, h, d.b, (e, t, s, a, c, d) => {
+				f = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, p, h.a, (e, t, s, a, c, d) => {
 					let l = "".concat(n.a.accountManagerOrigin).concat(e);
 					return a && (l = Object(r.a)(l, {
 						[i.O]: a,
@@ -12273,7 +12273,7 @@
 					})), c && (l = Object(r.a)(l, {
 						[i.G]: c
 					})), d && (l = Object(r.a)(l, {
-						[i.vb]: d
+						mweb_responsive_settings: "treatment"
 					})), e === o.b.Index || e === o.b.ChangePassword ? l : l = Object(r.a)(l, {
 						actionSource: s
 					})
@@ -12302,9 +12302,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.bc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.Zb.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Yb
+				experimentName: n.Wb
 			}))
 		},
 		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
@@ -12316,9 +12316,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.ec.All === Object(a.c)(e, {
+			const r = e => n.cc.All === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.dc
+					experimentName: n.bc
 				}),
 				o = ["gwinnett", "broomfield", "bakersfield", "northampton", "newjersey", "mankato", "statenisland", "brampton", "gnv", "inlandempire", "lincoln", "alameda", "abbotsford", "montana", "juneau", "barrie", "newhampshire", "lascruces", "williamsport", "charlotte", "fortwayne", "collinsbeach", "desmoines", "minnesota", "metaquebec", "berkeley", "ohio", "joplinmo", "westchester", "pueblo", "virginia", "oregon", "fortworth", "houston", "washington", "cincinnati", "florenceal", "cedarrapids", "detroit", "bowlinggreen", "greeley", "ames", "newarkohio", "fortcollins", "kingstonontario", "santafe", "fargomoorhead", "daytonabeach", "wilmingtonde", "berkeleyca", "redmond", "panamacity", "maine", "texarkana", "hawaii", "idaho", "edmonton", "hillsboro", "timmins", "everett", "america", "boulder", "humboldt", "coachellavalley", "bayridge", "antelopevalley", "plano", "frisco", "stcharlesmo", "nwt", "rochester", "orlando", "triangle", "guelph", "lehighvalley", "daltonga", "escondido", "lancaster", "hollandmichigan", "peoriail", "asheville", "ventura", "eastside", "orangecounty", "nebraska", "stgeorge", "santabarbara", "kamloops", "algonquinpark", "tahoe", "marin", "tampa", "ozarks", "arlington", "chattanooga", "benicia", "fremont", "elkgrove", "kenosha", "milton", "longmont", "logan", "augusta", "clarksville", "pei", "grandcanyon", "airdrie", "sanjose", "southernillinois", "greenbay", "boston", "cary", "victoriabc", "tempe", "mississippi", "halifax", "destin", "lafayette", "delaware", "dtla", "twincitiessocial", "pflugerville", "harrisonburg", "durango", "cascadia", "albuquerque", "minneapolis", "macon", "corpus", "laredo", "kentwa", "redding", "arkansas", "anaheim", "mobileal", "newyork", "norfolk", "santamonica", "fresno", "somerville", "idahofalls", "indianapolis", "tallahassee", "renton", "lexington", "austin", "ontario", "nyc", "sudbury", "illinois", "puyallupwa", "evanston", "bend", "fairbanks", "westchesterpa", "denver", "readingpa", "venturacounty", "aspen", "keywest", "lakewood", "brownsville", "peterborough", "richmondhill", "staugustine", "moncton", "santaclarita", "huntingtonbeach", "pacifica", "greenville", "roseville", "albany", "southdakota", "waco", "salem", "nwi", "cleveland", "kzoo", "biloxi", "hudsonvalley", "scottsdale", "normanok", "longisland", "kitsap", "yakima", "reno", "beaverton", "medicinehat", "vancouverwa", "salemma", "westvirginia", "southbend", "wisconsin", "lawrence", "seattle", "columbiasc", "columbusga", "roanoke", "texas", "toledo", "brooklyn", "murfreesboro", "rockland", "atlanta", "corpuschristi", "delco", "yellowstone", "bloomington", "corvallis", "vermont", "joshuatree", "vancouver", "jacksonhole", "myrtlebeach", "modesto", "bentonville", "grandforks", "eau_claire", "toronto", "springfieldil", "memphis", "fargo", "siouxfalls", "denton", "stpetersburgfl", "nunavut", "johnstown", "springfieldmo", "quadcities", "durham", "pennsylvania", "southjersey", "spartanburg", "northdakota", "321", "asburypark", "california", "stlouis", "burlington", "seattlewa", "syracuse", "chicago", "fortlauderdale", "ithaca", "twinfalls", "moab", "bloomingtonnormal", "hiltonhead", "riverside", "saginaw", "fayettenam", "maui", "losangeles", "providence", "whistler", "corona", "reddeer", "glendale", "montgomerycountymd", "vancouverisland", "montco", "olympia", "nola", "littlerock", "bronx", "coloradosprings", "vegas", "niagara", "broward", "napa", "springfield", "santarosa", "newbrunswicknj", "columbus", "rhodeisland", "fortmcmurray", "san_angelo", "porttownsend", "yuma", "pasadena", "milwaukee", "ogden", "riograndevalley", "clemson", "tacoma", "camaswashington", "regina", "cypresstx", "novascotia", "plattsburgh", "bullcity", "omaha", "lakeland", "dayton", "auburn", "newhaven", "vaughan", "martinsburg", "maryland", "siliconvalley", "newmexico", "pickering", "hamptonroads", "collegestation", "rolla"]
 		},
@@ -12443,4 +12443,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.7b9b199f9090514432d2.js.map
+//# sourceMappingURL=Reddit.d980b70ef2c19a8b388d.js.map

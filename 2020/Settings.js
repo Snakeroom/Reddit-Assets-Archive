@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.988fc7d96d7c24fee6e0.js
-// Retrieved at 5/5/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.fbc1609dfa6b1e76de3c.js
+// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -4600,9 +4600,9 @@
 				os = n("./src/reddit/actions/notifications/utils.ts"),
 				rs = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				is = n("./src/reddit/helpers/trackers/notifications.ts"),
-				cs = n("./src/reddit/selectors/experiments/responsiveSettings.ts"),
-				ls = n("./src/reddit/selectors/meta.ts"),
-				ds = n("./src/reddit/selectors/notificationPrefs.ts"),
+				cs = n("./src/reddit/selectors/meta.ts"),
+				ls = n("./src/reddit/selectors/notificationPrefs.ts"),
+				ds = n("./src/reddit/selectors/responsiveSettings.ts"),
 				ms = n("./src/higherOrderComponents/asModal/index.tsx"),
 				us = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				ps = n("./src/reddit/constants/keycodes.ts"),
@@ -4702,12 +4702,12 @@
 				areNotificationsAvailable: e => {
 					return Object(os.a)(e) === ts.f.NotificationsSupported
 				},
-				isChrome: ls.d,
-				isFirefox: ls.f,
-				isMobileDevice: ls.g,
-				isOpera: ls.h,
-				isResponsiveSettingsEnabled: cs.a,
-				preferences: ds.d
+				isChrome: cs.d,
+				isFirefox: cs.f,
+				isMobileDevice: cs.g,
+				isOpera: cs.h,
+				isResponsiveSettingsEnabled: ds.a,
+				preferences: ls.d
 			}), Ms = Object(r.b)(Ps, e => ({
 				requestNotificationPermission: () => Object(ns.a)().then(t => e(t.requestNotificationsPermissions(!0, !0))),
 				setPreferences: t => e(Object(ss.b)(t)),
@@ -6200,7 +6200,7 @@
 					savedPayments: sn.u,
 					userIsWhitelistedCreator: sn.F,
 					allowNavigationCallback: Uo.a,
-					isResponsiveSettingsEnabled: cs.a,
+					isResponsiveSettingsEnabled: ds.a,
 					language: w.P,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
@@ -6426,4 +6426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.988fc7d96d7c24fee6e0.js.map
+//# sourceMappingURL=Settings.fbc1609dfa6b1e76de3c.js.map
