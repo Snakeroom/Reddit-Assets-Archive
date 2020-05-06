@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5fe529eda72a8c34bd7e.js
-// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.66cd34d5f1c5afd600fd.js
+// Retrieved at 5/6/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -522,7 +522,7 @@
 					ProfileSnoobuilder: "46cae83c4ac75907ff38",
 					"vendors~MembershipPaywallPage": "31d6cfe0d16ae931b73c",
 					"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "8a68032ef2ec6ba99576",
-					MembershipPaywallPage: "301aa89e3822e16d3d13",
+					MembershipPaywallPage: "bb7c1041ac73d9c5bc90",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
 					"Chat~RedesignChat": "c3c1e0818ef11bc4a07a",
 					RedesignChat: "31d6cfe0d16ae931b73c",
@@ -958,7 +958,7 @@
 						FrontpageSidebar: "502bd7b4fc82b11ef631",
 						Frontpage: "fbf725d79fcf6e069a5c",
 						Topic: "49aad577adf91d03bbd9",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "4e6b7188e7b022420672",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "de2421465dbd5088c912",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "f5106a7efa4a2bba5aa0",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "24355ba24dd56bbc651f",
@@ -1012,7 +1012,7 @@
 						ProfileSnoobuilder: "deb4f63a99293d857af0",
 						"vendors~MembershipPaywallPage": "4e8477ad35890bb4b9a2",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "b25300bcf1ac4631ab38",
-						MembershipPaywallPage: "4389a15936249e7cf010",
+						MembershipPaywallPage: "d01b0e5f54bdeeb6600b",
 						"vendors~Chat~RedesignChat": "5c6c446f6e045bc3c01b",
 						"Chat~RedesignChat": "a8cac92850228175c843",
 						RedesignChat: "21c2668f9649ac6d7ccc",
@@ -1026,7 +1026,7 @@
 						ModerationPages: "acb6f725704cbf5ef4c0",
 						"vendors~PostCreation~RichTextEditor": "ecf670dbf9b7450b5178",
 						"vendors~PostCreation": "c051114172e8b42d437b",
-						PostCreation: "6db4df4df5d4bf0b037b",
+						PostCreation: "bd81a8446ff870570b9a",
 						"vendors~Multireddit": "ed2022bd9feff50ce623",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "bc252f2eabae4765593d",
 						Multireddit: "f9b03993ee719febb708",
@@ -1043,7 +1043,7 @@
 						"vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e3dfa4ce": "ccb4fdbfe636e44da79e",
 						"CoinsPurchaseModal~PennyPurchaseModal": "b117895b7f3405222428",
 						CoinsPurchaseModal: "2e2b1c1819c2884a09be",
-						"EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44": "90e9a1a8afad81b4b47b",
+						"EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44": "928d48fadafbbc1e52ce",
 						EconomicsSupportPaymentModal: "e99a850a1eddd8042041",
 						PremiumPurchaseModal: "faf3a515a3ae0becb640",
 						"vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33": "0c4153fe8b5ae94f9978",
@@ -1053,9 +1053,9 @@
 						HarbergerTaxManageModal: "824f92f2dbc0a4a30a24",
 						SubredditPremiumUploadModal: "70c83f815987953d9c31",
 						"Settings~reddit-components-ProfileIdCard": "1c223ba3d37fe1971418",
-						Settings: "d8d1ba8b2fa8503e7a9b",
+						Settings: "99e5132ccce2883ce344",
 						"vendors~EconHelperActions~SubredditPremiumBadgeManagement": "d1cf1838505b58032d67",
-						EconHelperActions: "105a4157be4b2eb6ac93",
+						EconHelperActions: "a9edb0a6b9429966fb75",
 						SubredditPremiumBadgeManagement: "6f6d778c000482eebd6c",
 						"vendors~ExportTheme~ImportTheme": "ac9dfd0a6b6500fe1dfd",
 						ExportTheme: "762f066e922015f9f9b6",
@@ -1237,4 +1237,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.5fe529eda72a8c34bd7e.js.map
+//# sourceMappingURL=runtime~Reddit.66cd34d5f1c5afd600fd.js.map

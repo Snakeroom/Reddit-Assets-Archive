@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6db4df4df5d4bf0b037b.js
-// Retrieved at 5/5/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bd81a8446ff870570b9a.js
+// Retrieved at 5/6/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -30237,7 +30237,7 @@
 					if (n && n.status === p.a.Fetched) {
 						const e = n.data.subscription,
 							t = e && e.active;
-						if (t) return t.membership || t.provisional_membership || null
+						if (t) return t.fiat_membership || t.membership || t.provisional_membership || null
 					}
 					return null
 				},
@@ -30784,4 +30784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.6db4df4df5d4bf0b037b.js.map
+//# sourceMappingURL=PostCreation.bd81a8446ff870570b9a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.105a4157be4b2eb6ac93.js
-// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.a9edb0a6b9429966fb75.js
+// Retrieved at 5/6/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -53,12 +53,12 @@
 					}
 					if (!f) return;
 					const g = [],
-						y = l.concat(u),
-						h = n(),
-						j = b(h),
-						O = h.comments.models,
-						v = h.posts.models,
-						w = new Set(h.user.account ? [h.user.account.id] : []);
+						h = l.concat(u),
+						y = n(),
+						j = b(y),
+						O = y.comments.models,
+						v = y.posts.models,
+						w = new Set(y.user.account ? [y.user.account.id] : []);
 					l.forEach(e => {
 						const t = v[e];
 						t && w.add(t.authorId)
@@ -72,9 +72,9 @@
 						userIds: I
 					}))), !p.includes("communityDetails") && j(["spKarmaPoints", "spLoadtest", "spPoints", "spSupport"]) && g.push(t(Object(i.a)({
 						subredditId: f
-					}))), !p.includes("subscription") && j(["spLoadtest", "spPremium"]) && g.push(t(Object(c.f)(f))), !p.includes("tips") && y.length && j(["spLoadtest", "spSupport"]) && g.push(t(Object(d.a)({
+					}))), !p.includes("subscription") && j(["spLoadtest", "spPremium"]) && g.push(t(Object(c.f)(f))), !p.includes("tips") && h.length && j(["spLoadtest", "spSupport"]) && g.push(t(Object(d.a)({
 						subredditId: f,
-						contentIds: y
+						contentIds: h
 					}))), !p.includes("wallets") && I.length && j(["spKarmaPoints", "spLoadtest", "spPoints"]) && g.push(t(Object(a.a)({
 						subredditId: f,
 						userIds: I
@@ -206,8 +206,8 @@
 				p = n("./src/reddit/models/Badge/managementPage.ts"),
 				f = n("./src/reddit/models/Product/index.ts"),
 				g = n("./src/reddit/reducers/economics/subredditPremium/index.ts"),
-				y = n("./src/reddit/selectors/economics.ts"),
-				h = n("./src/reddit/selectors/products.ts"),
+				h = n("./src/reddit/selectors/economics.ts"),
+				y = n("./src/reddit/selectors/products.ts"),
 				j = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
 				O = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts");
 
@@ -247,7 +247,7 @@
 				} = s;
 				const c = n(),
 					d = c.user.account,
-					i = Object(y.g)(c, e.subredditId),
+					i = Object(h.g)(c, e.subredditId),
 					u = Object.keys(i).map(e => i[e]).filter(Boolean);
 				if (d && e.badge) {
 					let n, s;
@@ -303,10 +303,10 @@
 				} = o;
 				if (await s(P(e, !0)), n && t) {
 					const n = r(),
-						o = Object(y.g)(n, e),
-						c = Object(h.a)(n, t);
+						o = Object(h.g)(n, e),
+						c = Object(y.a)(n, t);
 					if (!o[Object(p.d)(c.placement)] && c) {
-						const t = Object(y.q)(n, {
+						const t = Object(h.q)(n, {
 							subredditId: e,
 							badge: c
 						});
@@ -541,12 +541,12 @@
 					}),
 					b = Object(i.b)(e, t),
 					l = Object(c.c)(e, t, n),
-					[p, f, g, y] = await Promise.all([u, m, b, l]);
+					[p, f, g, h] = await Promise.all([u, m, b, l]);
 				if (p.ok ? s.collections = p.body : s.errors.collections = p.error, f.ok) {
 					const e = f.body;
 					s.subscription = e.specialMemberships, s.communityRaw = e
 				}
-				return g.ok ? s.products = g.body : s.errors.products = g.error, y.ok ? (r()(s.badges, y.body.badges), s.userOwnedBadges = y.body.userOwnedBadges) : s.errors.userBadges = y.error, s
+				return g.ok ? s.products = g.body : s.errors.products = g.error, h.ok ? (r()(s.badges, h.body.badges), s.userOwnedBadges = h.body.userOwnedBadges) : s.errors.userBadges = h.error, s
 			}
 			const m = (e, t) => Object(a.a)(e, {
 				endpoint: "".concat(o.a.metaUrl, "/products/").concat(t, "?types=badge,membership"),
@@ -687,9 +687,9 @@
 			})), n.d(t, "t", (function() {
 				return g
 			})), n.d(t, "b", (function() {
-				return y
-			})), n.d(t, "E", (function() {
 				return h
+			})), n.d(t, "E", (function() {
+				return y
 			})), n.d(t, "g", (function() {
 				return j
 			})), n.d(t, "w", (function() {
@@ -775,7 +775,7 @@
 					if (n && n.status === b.a.Fetched) {
 						const e = n.data.subscription,
 							t = e && e.active;
-						if (t) return t.membership || t.provisional_membership || null
+						if (t) return t.fiat_membership || t.membership || t.provisional_membership || null
 					}
 					return null
 				},
@@ -783,18 +783,18 @@
 					const n = f(e, t);
 					return n && n.endsAt || null
 				};
-			var y;
+			var h;
 			! function(e) {
 				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
-			}(y || (y = {}));
-			const h = (e, t) => {
+			}(h || (h = {}));
+			const y = (e, t) => {
 					const n = e.economics.subredditPremium[t];
 					if (n && n.status === b.a.Fetched) {
 						const n = g(e, t),
 							s = Date.now();
-						return n && s < n ? y.Subscribed : y.NotSubscribed
+						return n && s < n ? h.Subscribed : h.NotSubscribed
 					}
-					return y.DontKnow
+					return h.DontKnow
 				},
 				j = (e, t) => {
 					const n = e.user.account,
@@ -1084,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.105a4157be4b2eb6ac93.js.map
+//# sourceMappingURL=EconHelperActions.a9edb0a6b9429966fb75.js.map

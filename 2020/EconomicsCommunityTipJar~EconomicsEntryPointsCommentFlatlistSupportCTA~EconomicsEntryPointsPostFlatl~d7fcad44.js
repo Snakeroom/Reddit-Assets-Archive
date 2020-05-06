@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.90e9a1a8afad81b4b47b.js
-// Retrieved at 4/16/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.928d48fadafbbc1e52ce.js
+// Retrieved at 5/6/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -337,16 +337,15 @@
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
 				a = s.n(o),
-				r = s("./src/reddit/components/Translated/index.tsx"),
-				i = s("./src/reddit/contexts/ApiContext.tsx"),
-				c = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/config.ts"),
-				d = s("./src/reddit/models/Payments/index.ts"),
-				u = s("./src/reddit/endpoints/governance/requester.ts");
+				r = s("./src/reddit/contexts/ApiContext.tsx"),
+				i = s("./src/reddit/controls/Button/index.tsx"),
+				c = s("./src/config.ts"),
+				l = s("./src/reddit/models/Payments/index.ts"),
+				d = s("./src/reddit/endpoints/governance/requester.ts");
 
-			function m(e, t) {
-				return Object(u.a)(e, {
-					endpoint: "".concat(l.a.metaUrl, "/orders"),
+			function u(e, t) {
+				return Object(d.a)(e, {
+					endpoint: "".concat(c.a.metaUrl, "/orders"),
 					method: "post",
 					data: {
 						currency: "usd",
@@ -359,7 +358,7 @@
 						providerArgs: t.savedCardId ? {
 							source: t.savedCardId
 						} : void 0,
-						providerName: d.c.Stripe,
+						providerName: l.c.Stripe,
 						subredditId: t.subredditId,
 						targetArgs: {
 							anonymous: t.anonymous,
@@ -369,12 +368,12 @@
 					}
 				})
 			}
-			var p = s("./src/reddit/helpers/favoriteCreators/index.ts");
+			var m = s("./src/reddit/helpers/favoriteCreators/index.ts");
 
-			function h(e) {
-				return e === d.a.Comment || e === d.a.Post || e === d.a.Profile
+			function p(e) {
+				return e === l.a.Comment || e === l.a.Post || e === l.a.Profile
 			}
-			class b extends a.a.Component {
+			class h extends a.a.Component {
 				constructor() {
 					super(...arguments), this.changeSubmitState = e => {
 						this.props.onChangeSubmitState && this.props.onChangeSubmitState(e)
@@ -394,16 +393,16 @@
 						}) : (this.changeSubmitState({
 							submitting: !1,
 							success: !0
-						}), this.props.user && Object(p.b)(this.props.subredditId, this.props.user.id))
+						}), this.props.user && Object(m.b)(this.props.subredditId, this.props.user.id))
 					}, this.handleSubmit = async () => {
-						if ((!h(this.props.content.type) || this.props.user) && this.props.selectedPayment) switch (this.props.selectedPayment.type) {
-							case d.b.NewStripe: {
+						if ((!p(this.props.content.type) || this.props.user) && this.props.selectedPayment) switch (this.props.selectedPayment.type) {
+							case l.b.NewStripe: {
 								if (!this.props.selectedPayment.element || !this.props.stripeInstance) return;
 								this.changeSubmitState({
 									submitting: !0,
 									success: !1
 								});
-								const e = await m(this.props.apiContext(), {
+								const e = await u(this.props.apiContext(), {
 									amount: this.props.amount.value,
 									anonymous: this.props.anonymous,
 									content: this.props.content,
@@ -426,13 +425,13 @@
 								});
 								return
 							}
-							case d.b.SavedStripe: {
+							case l.b.SavedStripe: {
 								if (!this.props.stripeInstance) return;
 								this.changeSubmitState({
 									submitting: !0,
 									success: !1
 								});
-								const e = await m(this.props.apiContext(), {
+								const e = await u(this.props.apiContext(), {
 									amount: this.props.amount.value,
 									anonymous: this.props.anonymous,
 									content: this.props.content,
@@ -462,23 +461,20 @@
 					}
 				}
 				render() {
-					return a.a.createElement(c.f, {
+					return a.a.createElement(i.f, {
 						"data-redditstyle": !0,
 						className: this.props.className,
-						disabled: (e = this.props, !(e.selectedPayment && (e.selectedPayment.type !== d.b.NewStripe || Object(d.e)(e.selectedPayment) && e.stripeInstance && e.selectedPayment.element) && (e.user || !h(e.content.type)) && !e.submitting)),
+						disabled: (e = this.props, !(e.selectedPayment && (e.selectedPayment.type !== l.b.NewStripe || Object(l.e)(e.selectedPayment) && e.stripeInstance && e.selectedPayment.element) && (e.user || !p(e.content.type)) && !e.submitting)),
 						onClick: this.handleSubmit
-					}, h(this.props.content.type) ? a.a.createElement(r.a, {
-						msgId: "economy.support.payment.footer.submit.buttonText",
-						replacements: {
-							username: this.getUsername()
-						}
+					}, p(this.props.content.type) ? n.fbt._("Tip {username}", [n.fbt._param("username", this.getUsername())], {
+						hk: "3ywd0T"
 					}) : n.fbt._("Support {communityName}", [n.fbt._param("communityName", this.props.fallbackTargetName)], {
 						hk: "j303q"
 					}));
 					var e
 				}
 			}
-			t.a = Object(i.b)(b)
+			t.a = Object(r.b)(h)
 		},
 		"./src/reddit/components/Economics/Support/Common/WrappedStripeProvider/index.tsx": function(e, t, s) {
 			"use strict";
@@ -774,4 +770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.90e9a1a8afad81b4b47b.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.928d48fadafbbc1e52ce.js.map
