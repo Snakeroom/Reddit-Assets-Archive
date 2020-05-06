@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.66a78c783ab75279e9f5.js
-// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.f5106a7efa4a2bba5aa0.js
+// Retrieved at 5/6/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -46,10 +46,11 @@
 				p = n("./src/reddit/selectors/user.ts"),
 				h = n("./src/reddit/components/Media/EmbedBox/index.m.less"),
 				m = n.n(h);
-			const b = Object(o.b)(() => Object(i.c)({
-				isNightmodeOn: p.R
-			}));
-			t.a = b(e => {
+			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
+				f = Object(o.b)(() => Object(i.c)({
+					isNightmodeOn: p.R
+				}));
+			t.a = f(e => {
 				const t = {
 						responsive: "true",
 						is_nightmode: e.isNightmodeOn
@@ -65,6 +66,7 @@
 					onLoad: e.onLoad,
 					ref: e.childRef,
 					title: e.title,
+					sandbox: b,
 					scrolling: "no",
 					src: n,
 					style: s,
@@ -721,9 +723,9 @@
 			})), n.d(t, "s", (function() {
 				return P
 			})), n.d(t, "r", (function() {
-				return L
-			})), n.d(t, "a", (function() {
 				return k
+			})), n.d(t, "a", (function() {
+				return L
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -762,8 +764,8 @@
 				S = c.a.td("Tdc", a.a),
 				T = c.a.td("Tdr", a.a),
 				P = c.a.th("Thl", a.a),
-				L = c.a.th("Thc", a.a),
-				k = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(o.a, d({}, e, {
+				k = c.a.th("Thc", a.a),
+				L = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(o.a, d({}, e, {
 					isSponsored: !1,
 					source: null
 				})), "A", a.a))
@@ -1272,8 +1274,8 @@
 				S = n("./src/lib/loadWithRetries/index.ts"),
 				T = n("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
 				P = n("./src/reddit/components/SubredditMention/SubredditIconsWeighting/index.m.less"),
-				L = n.n(P);
-			var k = Object(b.a)({
+				k = n.n(P);
+			var L = Object(b.a)({
 					ErrorComponent: () => null,
 					getComponent: () => Object(S.a)(() => n.e("SubredditMentionWithIcon").then(n.bind(null, "./src/reddit/components/SubredditMention/SubredditIconsWeighting/index.tsx"))).then(e => e.default),
 					LoadingComponent: e => {
@@ -1281,11 +1283,11 @@
 							subredditName: t
 						} = e;
 						return a.a.createElement("span", {
-							className: L.a.subredditMentionContainer
+							className: k.a.subredditMentionContainer
 						}, a.a.createElement(T.a, {
 							href: "/r/".concat(t, "/")
 						}, a.a.createElement("span", {
-							className: L.a.subredditIconContainer
+							className: k.a.subredditIconContainer
 						}, a.a.createElement(T.b, null)), "r/".concat(t)))
 					}
 				}),
@@ -1335,12 +1337,12 @@
 					});
 					switch (r) {
 						case N.Qb.SmIcon:
-							return a.a.createElement(k, {
+							return a.a.createElement(L, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
 						case N.Qb.SmIconHc:
-							return a.a.createElement(k, {
+							return a.a.createElement(L, {
 								subredditName: s,
 								isHoverable: !0,
 								rtJsonElementProps: o
@@ -1813,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.66a78c783ab75279e9f5.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.f5106a7efa4a2bba5aa0.js.map
