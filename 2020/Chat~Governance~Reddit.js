@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b123f55d78f90a407562.js
-// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a041b1cc303e700b054b.js
+// Retrieved at 5/7/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11009,14 +11009,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("32e74ba-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("6c06281-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "32e74ba-production",
+						release: "6c06281-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11378,7 +11378,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "32e74ba-production",
+							releaseClient: "6c06281-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -24464,9 +24464,9 @@
 						} : null
 					}
 					if ("stream_player" === t) {
-						const t = e.platform.currentPage.urlParams.subreddit.toLowerCase();
+						const t = e.platform.currentPage.urlParams.subreddit;
 						if (!t) return null;
-						const i = Object(J.D)(e, t),
+						const i = Object(J.D)(e, t.toLowerCase()),
 							n = Object(J.P)(e, {
 								subredditId: i
 							}),
@@ -28515,4 +28515,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.b123f55d78f90a407562.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.a041b1cc303e700b054b.js.map
