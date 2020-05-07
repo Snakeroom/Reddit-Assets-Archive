@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.86b3e1e9002b2f795fd3.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.6a23f94fd382f922c1b6.js
+// Retrieved at 5/7/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -5398,8 +5398,11 @@
 					}
 					return s
 				};
-			const ys = [i.Ib.Relevance, i.Ib.Top, i.Ib.New, i.Ib.Comments],
+			const ys = [i.Ib.Relevance, i.Ib.Hot, i.Ib.Top, i.Ib.New, i.Ib.Comments],
 				vs = {
+					[i.Ib.Hot]: () => l.fbt._("Hot", null, {
+						hk: "3c99Ga"
+					}),
 					[i.Ib.Relevance]: () => l.fbt._("Relevance", null, {
 						hk: "LvJkD"
 					}),
@@ -9426,4 +9429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.86b3e1e9002b2f795fd3.js.map
+//# sourceMappingURL=SearchResults.6a23f94fd382f922c1b6.js.map
