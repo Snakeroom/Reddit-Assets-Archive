@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.831a8e039cc4202b589b.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.e796c35ea6ce18bcd485.js
+// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -1209,6 +1209,18 @@
 			});
 			s.a = h
 		},
+		"./src/reddit/i18n/components.tsx": function(e, s, t) {
+			"use strict";
+			t.d(s, "a", (function() {
+				return n
+			}));
+			var r = t("./node_modules/react/index.js"),
+				i = t.n(r);
+
+			function n(e) {
+				return i.a.createElement(i.a.Fragment, null, e.children)
+			}
+		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, s, t) {
 			"use strict";
 			var r = t("./node_modules/react/index.js"),
@@ -1223,4 +1235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.831a8e039cc4202b589b.js.map
+//# sourceMappingURL=InFeedChaining.e796c35ea6ce18bcd485.js.map

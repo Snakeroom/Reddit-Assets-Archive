@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a9e07c6d4b0e26c559e7.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1b8c50180aa5b28faf41.js
+// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1580,6 +1580,7 @@
 		"./src/reddit/components/Comments/Comment/BubbleHighlight/index.m.less": function(e, t, s) {
 			e.exports = {
 				bubbleHighlightContainer: "_13gxSQ0PxEaE0KssKdDcgk",
+				effectContainer: "_2aXEtvAbqdRvZWJCHd389O",
 				bubble: "FS2E8F_poALO3YkEsjObG",
 				bubble1: "_1skMl2SFhm_3G21o0XIoMJ",
 				scaleLg: "qK9WNHg9kesOYqYx8TUAV",
@@ -2868,13 +2869,15 @@
 					}), []);
 					return S(o, a, d), i.a.createElement("div", {
 						"aria-role": "presentation",
-						className: N.a.bubbleHighlightContainer,
+						className: N.a.bubbleHighlightContainer
+					}, i.a.createElement("div", {
+						className: N.a.effectContainer,
 						ref: o
 					}, s && [1, 2, 3, 4, 5].map(e => i.a.createElement("img", {
 						key: e,
 						className: Object(c.a)(N.a.bubble, N.a["bubble".concat(e)]),
 						src: t
-					})))
+					}))))
 				}),
 				L = s("./src/reddit/icons/fonts/helpers.tsx"),
 				R = s("./src/reddit/icons/fonts/Expand/index.m.less"),
@@ -5773,19 +5776,21 @@
 				}))((function(e) {
 					return e.featureEnabled && e.userAcceptsSupport ? r.a.createElement(y, e) : null
 				})),
-				k = s("./src/reddit/i18n/components.tsx"),
-				j = s("./src/reddit/constants/colors.ts"),
-				w = s("./src/reddit/components/ContentTooltip/index.tsx"),
-				P = s("./src/reddit/components/GiveAwardTooltip/index.m.less"),
-				I = s.n(P);
+				k = s("./src/reddit/constants/colors.ts"),
+				j = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				w = s("./src/reddit/components/GiveAwardTooltip/index.m.less"),
+				P = s.n(w);
+			const {
+				fbt: I
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			class S extends r.a.Component {
 				render() {
 					const {
 						tooltipId: e
 					} = this.props;
-					return r.a.createElement(w.a, {
+					return r.a.createElement(j.a, {
 						caretColor: {
-							top: j.a.op
+							top: k.a.op
 						},
 						tooltipSizeEstimate: {
 							height: 39,
@@ -5794,12 +5799,16 @@
 						tooltipId: e,
 						defaultTooltipPosition: "bottom"
 					}, r.a.createElement("div", {
-						className: I.a.container
+						className: P.a.container
 					}, r.a.createElement("div", {
-						className: I.a.newBadge
-					}, r.a.createElement(k.a, null, "New")), r.a.createElement("div", {
-						className: I.a.text
-					}, r.a.createElement(k.a, null, "Try giving a new Appreciation Award"))))
+						className: P.a.newBadge
+					}, I._("New", null, {
+						hk: "1XUPF"
+					})), r.a.createElement("div", {
+						className: P.a.text
+					}, I._("Try giving a new Appreciation Award", null, {
+						hk: "1V7ZWF"
+					}))))
 				}
 			}
 			var T = S,
@@ -16308,4 +16317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.a9e07c6d4b0e26c559e7.js.map
+//# sourceMappingURL=CommentsPage.1b8c50180aa5b28faf41.js.map

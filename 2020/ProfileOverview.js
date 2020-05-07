@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.e3b3ccf1f757262a23e6.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.abc051b27a3e91f6f697.js
+// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -4246,19 +4246,21 @@
 				}))((function(e) {
 					return e.featureEnabled && e.userAcceptsSupport ? r.a.createElement(y, e) : null
 				})),
-				w = s("./src/reddit/i18n/components.tsx"),
-				P = s("./src/reddit/constants/colors.ts"),
-				k = s("./src/reddit/components/ContentTooltip/index.tsx"),
-				j = s("./src/reddit/components/GiveAwardTooltip/index.m.less"),
-				S = s.n(j);
+				w = s("./src/reddit/constants/colors.ts"),
+				P = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				k = s("./src/reddit/components/GiveAwardTooltip/index.m.less"),
+				j = s.n(k);
+			const {
+				fbt: S
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			class I extends r.a.Component {
 				render() {
 					const {
 						tooltipId: e
 					} = this.props;
-					return r.a.createElement(k.a, {
+					return r.a.createElement(P.a, {
 						caretColor: {
-							top: P.a.op
+							top: w.a.op
 						},
 						tooltipSizeEstimate: {
 							height: 39,
@@ -4267,12 +4269,16 @@
 						tooltipId: e,
 						defaultTooltipPosition: "bottom"
 					}, r.a.createElement("div", {
-						className: S.a.container
+						className: j.a.container
 					}, r.a.createElement("div", {
-						className: S.a.newBadge
-					}, r.a.createElement(w.a, null, "New")), r.a.createElement("div", {
-						className: S.a.text
-					}, r.a.createElement(w.a, null, "Try giving a new Appreciation Award"))))
+						className: j.a.newBadge
+					}, S._("New", null, {
+						hk: "1XUPF"
+					})), r.a.createElement("div", {
+						className: j.a.text
+					}, S._("Try giving a new Appreciation Award", null, {
+						hk: "1V7ZWF"
+					}))))
 				}
 			}
 			var N = I,
@@ -15003,4 +15009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.e3b3ccf1f757262a23e6.js.map
+//# sourceMappingURL=ProfileOverview.abc051b27a3e91f6f697.js.map

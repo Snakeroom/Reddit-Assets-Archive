@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3ff93f92e3d4803f0979.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.19a62e4a39ab203712c2.js
+// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -9185,19 +9185,21 @@
 				}))((function(e) {
 					return e.featureEnabled && e.userAcceptsSupport ? a.a.createElement(k, e) : null
 				})),
-				y = s("./src/reddit/i18n/components.tsx"),
-				j = s("./src/reddit/constants/colors.ts"),
-				w = s("./src/reddit/components/ContentTooltip/index.tsx"),
-				S = s("./src/reddit/components/GiveAwardTooltip/index.m.less"),
-				I = s.n(S);
+				y = s("./src/reddit/constants/colors.ts"),
+				j = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				w = s("./src/reddit/components/GiveAwardTooltip/index.m.less"),
+				S = s.n(w);
+			const {
+				fbt: I
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			class N extends a.a.Component {
 				render() {
 					const {
 						tooltipId: e
 					} = this.props;
-					return a.a.createElement(w.a, {
+					return a.a.createElement(j.a, {
 						caretColor: {
-							top: j.a.op
+							top: y.a.op
 						},
 						tooltipSizeEstimate: {
 							height: 39,
@@ -9206,12 +9208,16 @@
 						tooltipId: e,
 						defaultTooltipPosition: "bottom"
 					}, a.a.createElement("div", {
-						className: I.a.container
+						className: S.a.container
 					}, a.a.createElement("div", {
-						className: I.a.newBadge
-					}, a.a.createElement(y.a, null, "New")), a.a.createElement("div", {
-						className: I.a.text
-					}, a.a.createElement(y.a, null, "Try giving a new Appreciation Award"))))
+						className: S.a.newBadge
+					}, I._("New", null, {
+						hk: "1XUPF"
+					})), a.a.createElement("div", {
+						className: S.a.text
+					}, I._("Try giving a new Appreciation Award", null, {
+						hk: "1V7ZWF"
+					}))))
 				}
 			}
 			var T = N,
@@ -28699,4 +28705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.3ff93f92e3d4803f0979.js.map
+//# sourceMappingURL=ModerationPages.19a62e4a39ab203712c2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2d617857366e7f6c9836.js
-// Retrieved at 5/7/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.10bf03a59d000de1e41b.js
+// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -9223,6 +9223,18 @@
 				return e.subredditName && (s = "/r/".concat(e.subredditName, t ? "/about/wiki" : "/wiki"), e.wikiSubRoute && (s += "/".concat(e.wikiSubRoute))), e.wikiPageName ? s += "/".concat(e.wikiPageName.toLowerCase()) : e.wikiSubRoute || (s += "/".concat(n.i)), s
 			}
 		},
+		"./src/reddit/i18n/components.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var n = s("./node_modules/react/index.js"),
+				a = s.n(n);
+
+			function r(e) {
+				return a.a.createElement(a.a.Fragment, null, e.children)
+			}
+		},
 		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, s) {
 			e.exports = {
 				CoinIcon: "_12xlue8dQ1odPw1J81FIGQ",
@@ -12443,4 +12455,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.2d617857366e7f6c9836.js.map
+//# sourceMappingURL=Reddit.10bf03a59d000de1e41b.js.map
