@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9ab307c5da6406684387.js
-// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4fdd58d45703de265b98.js
+// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1147,17 +1147,17 @@
 		},
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "m", (function() {
+			s.d(t, "n", (function() {
 				return o
 			})), s.d(t, "a", (function() {
 				return c
 			})), s.d(t, "b", (function() {
 				return l
-			})), s.d(t, "k", (function() {
-				return d
 			})), s.d(t, "l", (function() {
+				return d
+			})), s.d(t, "m", (function() {
 				return m
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "k", (function() {
 				return u
 			})), s.d(t, "f", (function() {
 				return p
@@ -1169,10 +1169,12 @@
 				return v
 			})), s.d(t, "c", (function() {
 				return g
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "j", (function() {
 				return w
 			})), s.d(t, "h", (function() {
 				return C
+			})), s.d(t, "i", (function() {
+				return f
 			}));
 			var r = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				a = s("./src/reddit/selectors/telemetry.ts");
@@ -1275,7 +1277,16 @@
 					targetSubreddit: {
 						name: e.name.toLowerCase()
 					}
-				}, n(s, t))
+				}, n(s, t)),
+				f = (e, t, s) => r => Object.assign({
+					source: "stream_player",
+					action: "scrub",
+					noun: "video",
+					playback: {
+						scrubbing_start_ms: e,
+						scrubbing_end_ms: t
+					}
+				}, i(r), n(r, s))
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3564,7 +3575,7 @@
 						} = this.props;
 						!s && t && this.isCurrentStreamWatchable() && r(t.post.id, e)
 					}, O.p), this.onVideoPlayerPositionUpdate = e => {
-						this.state.videoCurrentTime !== e && (this.setState({
+						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(K.i)(this.state.videoCurrentTime, e, this.props.currentStream)), this.setState({
 							videoCurrentTime: e
 						}), this.hlsVideoApi && this.hlsVideoApi.setCurrentTime(e))
 					}, this.onNextStream = C()(() => {
@@ -3820,14 +3831,14 @@
 						}), t) return a(!0), void this.setState(Object.assign({}, this.state, {
 						isLoading: !!e
 					}));
-					e && r(Object(K.j)(e)), s !== Z.a.VOD || this.state.isVodStreamJustFinished || this.setState({
+					e && r(Object(K.k)(e)), s !== Z.a.VOD || this.state.isVodStreamJustFinished || this.setState({
 						isVodStreamJustFinished: !0
 					}), this.isCurrentStreamWatchable() || this.state.isUnavailableVideoJustFinished || this.setState({
 						isUnavailableVideoJustFinished: !0
 					})
 				}
 				onPlayerError() {
-					this.props.sendEvent(Object(K.k)(this.props.currentStream)), this.setState(Object.assign({}, this.state, {
+					this.props.sendEvent(Object(K.l)(this.props.currentStream)), this.setState(Object.assign({}, this.state, {
 						isError: !0
 					}))
 				}
@@ -3915,7 +3926,7 @@
 					e && (this.setState({
 						videoCurrentTime: 0,
 						videoTotalTime: 0
-					}), a(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), r(Object(K.l)(e)), this.showOverlayAfterStreamSwitching())
+					}), a(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), r(Object(K.m)(e)), this.showOverlayAfterStreamSwitching())
 				}
 				showOverlayAfterStreamSwitching() {
 					window.clearTimeout(this.overlayVisibilityTimeout), this.overlayVisibilityTimeout = window.setTimeout(() => this.setState({
@@ -4326,4 +4337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.9ab307c5da6406684387.js.map
+//# sourceMappingURL=PublicAccessNetwork.4fdd58d45703de265b98.js.map

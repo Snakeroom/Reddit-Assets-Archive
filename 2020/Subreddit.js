@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.589bea86bf6f41d43919.js
-// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0ca19a87d4f160583276.js
+// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -2413,7 +2413,7 @@
 							child: {
 								id: t,
 								estHeight: E(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(_.m)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(_.n)()),
 								render: t => {
 									let {
 										className: n
@@ -5648,17 +5648,17 @@
 		},
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "m", (function() {
+			n.d(t, "n", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return d
 			})), n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "k", (function() {
-				return l
 			})), n.d(t, "l", (function() {
+				return l
+			})), n.d(t, "m", (function() {
 				return m
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return u
 			})), n.d(t, "f", (function() {
 				return p
@@ -5670,10 +5670,12 @@
 				return g
 			})), n.d(t, "c", (function() {
 				return x
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return f
 			})), n.d(t, "h", (function() {
 				return y
+			})), n.d(t, "i", (function() {
+				return v
 			}));
 			var s = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -5776,7 +5778,16 @@
 					targetSubreddit: {
 						name: e.name.toLowerCase()
 					}
-				}, a(n, t))
+				}, a(n, t)),
+				v = (e, t, n) => s => Object.assign({
+					source: "stream_player",
+					action: "scrub",
+					noun: "video",
+					playback: {
+						scrubbing_start_ms: e,
+						scrubbing_end_ms: t
+					}
+				}, i(s), a(s, n))
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -6977,4 +6988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.589bea86bf6f41d43919.js.map
+//# sourceMappingURL=Subreddit.0ca19a87d4f160583276.js.map

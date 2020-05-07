@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.72a31e76d4e9d0ce0616.js
-// Retrieved at 5/5/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.17878dfd6142c94d00a6.js
+// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2451,7 +2451,8 @@
 				M = () => e => Object.assign({
 					source: "global",
 					action: "view",
-					noun: "screen"
+					noun: "screen",
+					subreddit: g.subreddit(e)
 				}, g.defaults(e)),
 				U = () => e => Object.assign({
 					source: "global",
@@ -3220,4 +3221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.72a31e76d4e9d0ce0616.js.map
+//# sourceMappingURL=ModListing~Reddit.17878dfd6142c94d00a6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.daf07ac0630c61a61895.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.53fefff3a90ceaad50ad.js
+// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -726,7 +726,7 @@
 							child: {
 								id: t,
 								estHeight: j(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(x.m)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(x.n)()),
 								render: t => {
 									let {
 										className: s
@@ -997,17 +997,17 @@
 		},
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "m", (function() {
+			s.d(t, "n", (function() {
 				return a
 			})), s.d(t, "a", (function() {
 				return c
 			})), s.d(t, "b", (function() {
 				return d
-			})), s.d(t, "k", (function() {
-				return l
 			})), s.d(t, "l", (function() {
+				return l
+			})), s.d(t, "m", (function() {
 				return u
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "k", (function() {
 				return m
 			})), s.d(t, "f", (function() {
 				return p
@@ -1019,10 +1019,12 @@
 				return g
 			})), s.d(t, "c", (function() {
 				return v
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "j", (function() {
 				return f
 			})), s.d(t, "h", (function() {
 				return _
+			})), s.d(t, "i", (function() {
+				return y
 			}));
 			var n = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
@@ -1125,7 +1127,16 @@
 					targetSubreddit: {
 						name: e.name.toLowerCase()
 					}
-				}, o(s, t))
+				}, o(s, t)),
+				y = (e, t, s) => n => Object.assign({
+					source: "stream_player",
+					action: "scrub",
+					noun: "video",
+					playback: {
+						scrubbing_start_ms: e,
+						scrubbing_end_ms: t
+					}
+				}, i(n), o(n, s))
 		},
 		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1756,4 +1767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.daf07ac0630c61a61895.js.map
+//# sourceMappingURL=Frontpage.53fefff3a90ceaad50ad.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4836c0d6995eb9889f1b.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.606b51f6ace5ac528f70.js
+// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -23864,7 +23864,8 @@
 				L = () => e => Object.assign({
 					source: "global",
 					action: "view",
-					noun: "screen"
+					noun: "screen",
+					subreddit: x.subreddit(e)
 				}, x.defaults(e)),
 				F = () => e => Object.assign({
 					source: "global",
@@ -30818,4 +30819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.4836c0d6995eb9889f1b.js.map
+//# sourceMappingURL=PostCreation.606b51f6ace5ac528f70.js.map
