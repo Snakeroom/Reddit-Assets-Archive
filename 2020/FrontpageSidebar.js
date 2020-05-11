@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.502bd7b4fc82b11ef631.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f3220d434877732d73ea.js
+// Retrieved at 5/11/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -189,28 +189,28 @@
 				F = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				w = n("./src/reddit/actions/post.ts"),
 				I = n("./src/reddit/components/MiniPost/index.tsx"),
-				A = n("./src/reddit/components/Widgets/Base/index.tsx");
-			class B extends r.a.Component {
+				B = n("./src/reddit/components/Widgets/Base/index.tsx");
+			class A extends r.a.Component {
 				render() {
-					return r.a.createElement("div", null, r.a.createElement(A.a, null, this.props.headerText), this.props.posts.map(e => r.a.createElement(I.a, {
+					return r.a.createElement("div", null, r.a.createElement(B.a, null, this.props.headerText), this.props.posts.map(e => r.a.createElement(I.a, {
 						key: e.id,
 						postId: e.id
 					})))
 				}
 			}
-			var D = B,
+			var D = A,
 				W = n("./src/reddit/helpers/overlay/index.ts"),
-				R = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
-				U = n.n(R),
+				U = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
+				R = n.n(U),
 				J = n("./src/lib/lessComponent.tsx");
 			const Q = Object(o.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(W.a)(t.permalink)),
 					clearLinks: () => e(Object(w.u)())
 				})),
-				M = J.a.button("ClearButton", U.a);
+				M = J.a.button("ClearButton", R.a);
 			class Z extends r.a.Component {
 				render() {
-					return r.a.createElement(A.b, null, r.a.createElement(D, {
+					return r.a.createElement(B.b, null, r.a.createElement(D, {
 						className: this.props.className,
 						headerText: s.fbt._("Recent posts", null, {
 							hk: "1olaOT"
@@ -286,7 +286,8 @@
 					isUpAndComingExperiment: ie.b,
 					trendingSubredditIds: z.X,
 					currentUser: V.i,
-					frontpageLinks: ce.b
+					frontpageLinks: ce.b,
+					isOver18: V.U
 				}),
 				ue = e => !(!e.trendingSubredditIds.length || e.currentUser && !e.currentUser.showTrending),
 				pe = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
@@ -307,39 +308,41 @@
 						className: t,
 						frontpageLinks: n,
 						isLoggedIn: a,
-						isUpAndComingExperiment: o,
-						listingName: i,
-						trendingSubredditIds: d
+						isOver18: o,
+						isUpAndComingExperiment: i,
+						listingName: d,
+						trendingSubredditIds: m
 					} = this.props;
 					return r.a.createElement(P.a, {
 						className: t
 					}, r.a.createElement(F.a, {
 						categories: ee.i,
-						category: o ? ee.k : ee.j,
+						category: i ? ee.k : ee.j,
 						first: 5,
+						isOver18: o,
 						shouldDisplayDelta: this.props.isMod,
-						to: o ? "".concat(ee.e).concat(ee.m) : ee.e
+						to: i ? "".concat(ee.e).concat(ee.m) : ee.e
 					}), r.a.createElement(T.a, {
 						placement: de.c.ABOVE_THE_FOLD,
-						listingName: i,
+						listingName: d,
 						position: le.a.FIRST,
 						sizes: de.h,
 						placementIndex: e++
 					}), be(this.props) && r.a.createElement(_, null), ue(this.props) && r.a.createElement(l.a, null, r.a.createElement($, {
 						getClickEventFactory: oe,
 						getSubscribeEventFactoryHandler: re,
-						subredditIds: d,
+						subredditIds: m,
 						title: s.fbt._("Trending Communities", null, {
 							hk: "2WTgEw"
 						})
 					})), a && r.a.createElement(l.a, null, r.a.createElement(c.a, {
-						listingName: i
+						listingName: d
 					})), pe(this.props) && r.a.createElement(G, null), n && r.a.createElement(l.a, null, r.a.createElement(O, {
 						links: n
 					})), r.a.createElement(L.a, {
 						adComponent: r.a.createElement(T.a, {
 							placement: de.c.BELOW_THE_FOLD,
-							listingName: i,
+							listingName: d,
 							position: le.a.BOTTOM,
 							sizes: de.m,
 							placementIndex: e++
@@ -575,7 +578,7 @@
 			const j = e => {
 					const t = !(!e.rankings || !e.rankings.length),
 						n = !t && f.a.communityBannerPlaceholder,
-						s = e.bannerBackgroundImage ? {
+						s = e.bannerBackgroundImage && e.shouldDisplayBannerImg ? {
 							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
 						} : void 0;
 					return o.a.createElement("div", {
@@ -649,7 +652,8 @@
 						bannerBackgroundImage: a,
 						categoryName: e.categoryName,
 						onSendEventClick: e.onSendEventClick,
-						rankings: e.rankings
+						rankings: e.rankings,
+						shouldDisplayBannerImg: e.shouldDisplayBannerImg
 					}), o.a.createElement(v, {
 						categoryName: e.categoryName,
 						large: e.large,
@@ -669,13 +673,13 @@
 				F = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				w = n("./src/reddit/contexts/ApiContext.tsx"),
 				I = n("./src/reddit/endpoints/subreddit/models.ts"),
-				A = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
-				B = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
+				B = n("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
+				A = n("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
 				D = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
 				W = n("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
 
-			function R() {
-				return (R = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -683,12 +687,12 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const U = async (e, t) => {
-				const n = await Object(A.a)(e, t);
+			const R = async (e, t) => {
+				const n = await Object(B.a)(e, t);
 				if (n && n.ok) {
 					const e = n.body,
 						t = e && e.data && e.data.subredditLeaderboard;
-					return Object(B.c)(t)
+					return Object(A.c)(t)
 				}
 			}, J = async e => {
 				const t = a()(W.a, 5),
@@ -698,7 +702,7 @@
 				if (n && n.ok) {
 					const e = n.body,
 						t = e && e.data && e.data.subredditsInfoByNames;
-					return Object(B.a)(t)
+					return Object(A.a)(t)
 				}
 			};
 			class Q extends o.a.Component {
@@ -708,7 +712,7 @@
 							category: e,
 							first: t
 						} = this.props, n = e && e.id;
-						n !== _.l ? (n || n === _.d) && U(this.props.gqlContext(), {
+						n !== _.l ? (n || n === _.d) && R(this.props.gqlContext(), {
 							categoryId: n,
 							first: t
 						}).then(e => {
@@ -753,11 +757,14 @@
 						n = t || _.a,
 						s = this.state[n],
 						a = s ? s.rankings : [],
-						r = s ? s.subreddits : {};
-					return o.a.createElement(L, R({
+						r = s ? s.subreddits : {},
+						i = r && r[0],
+						c = i && !i.isNSFW || this.props.isOver18;
+					return o.a.createElement(L, U({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: a,
+						shouldDisplayBannerImg: c,
 						shouldDisplayDelta: this.props.shouldDisplayDelta,
 						subreddits: r
 					}, this.props))
@@ -952,4 +959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.502bd7b4fc82b11ef631.js.map
+//# sourceMappingURL=FrontpageSidebar.f3220d434877732d73ea.js.map

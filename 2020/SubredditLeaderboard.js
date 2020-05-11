@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ecf818f6cb704fc0a7a9.js
-// Retrieved at 5/6/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c37d07d18c35dbeee76d.js
+// Retrieved at 5/11/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -576,7 +576,7 @@
 			const N = e => {
 					const t = !(!e.rankings || !e.rankings.length),
 						r = !t && v.a.communityBannerPlaceholder,
-						n = e.bannerBackgroundImage ? {
+						n = e.bannerBackgroundImage && e.shouldDisplayBannerImg ? {
 							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
 						} : void 0;
 					return o.a.createElement("div", {
@@ -650,7 +650,8 @@
 						bannerBackgroundImage: s,
 						categoryName: e.categoryName,
 						onSendEventClick: e.onSendEventClick,
-						rankings: e.rankings
+						rankings: e.rankings,
+						shouldDisplayBannerImg: e.shouldDisplayBannerImg
 					}), o.a.createElement(j, {
 						categoryName: e.categoryName,
 						large: e.large,
@@ -673,10 +674,10 @@
 				F = r("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				B = r("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
 				R = r("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
-				A = r("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
+				D = r("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -692,7 +693,7 @@
 					return Object(B.c)(t)
 				}
 			}, H = async e => {
-				const t = s()(A.a, 5),
+				const t = s()(D.a, 5),
 					r = await Object(W.a)(e, {
 						names: t
 					});
@@ -754,11 +755,14 @@
 						r = t || f.a,
 						n = this.state[r],
 						s = n ? n.rankings : [],
-						a = n ? n.subreddits : {};
-					return o.a.createElement(P, D({
+						a = n ? n.subreddits : {},
+						i = a && a[0],
+						d = i && !i.isNSFW || this.props.isOver18;
+					return o.a.createElement(P, A({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: s,
+						shouldDisplayBannerImg: d,
 						shouldDisplayDelta: this.props.shouldDisplayDelta,
 						subreddits: a
 					}, this.props))
@@ -1182,8 +1186,8 @@
 				F = r("./src/reddit/selectors/subreddit.ts"),
 				B = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				R = r("./src/reddit/selectors/user.ts");
-			const A = 25,
-				D = .5,
+			const D = 25,
+				A = .5,
 				M = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
@@ -1241,7 +1245,7 @@
 					return {
 						after: a,
 						categoryId: e === p.a ? p.d : e,
-						first: A,
+						first: D,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1280,7 +1284,7 @@
 						className: _.a.subredditRankingsList
 					}, s ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(S.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: D,
+						threshold: A,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(W.a, {
 						large: !0
@@ -1564,4 +1568,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.ecf818f6cb704fc0a7a9.js.map
+//# sourceMappingURL=SubredditLeaderboard.c37d07d18c35dbeee76d.js.map
