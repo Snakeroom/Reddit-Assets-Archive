@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.9c8f237478b233d05c04.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.e9f245642a4b17f6d413.js
+// Retrieved at 5/11/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -140,8 +140,8 @@
 				g = s("./src/reddit/actions/modal.ts"),
 				v = s("./src/reddit/actions/tooltip.ts"),
 				O = s("./src/reddit/helpers/isPost.ts"),
-				y = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				w = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				w = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				y = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				j = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				E = s("./src/reddit/models/Gold/Award.ts"),
 				A = s("./src/reddit/selectors/activeModalId.ts"),
@@ -406,7 +406,7 @@
 						onClick: this.handleShowAllAwards,
 						onMouseEnter: () => d(p),
 						onMouseLeave: a
-					}, x), n.a.createElement(w.c, {
+					}, x), n.a.createElement(y.c, {
 						tooltipId: p,
 						text: "View all Awards"
 					})))
@@ -427,7 +427,7 @@
 						className: Object(i.a)(t, P.a.awardBadges)
 					}, e, this.renderAwardings(u), h && n.a.createElement(D, {
 						onClick: this.handleAddAward
-					}), a && s && this.state.selectedAward && n.a.createElement(y.a, {
+					}), a && s && this.state.selectedAward && n.a.createElement(w.a, {
 						actionText: o.fbt._("Hide", null, {
 							hk: "4FKnfB"
 						}),
@@ -435,8 +435,8 @@
 							hk: "4a7Cbu"
 						}) : o.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
-						}) : Object(O.a)(m.id) ? o.fbt._("The award giver(s) and recipient will be notified that moderator u/{modName} has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [o.fbt._param("modName", s.displayText ? s.displayText : s.username || ""), o.fbt._param("awardName", this.state.selectedAward.name)], {
-							hk: "1c649v"
+						}) : Object(O.a)(m.id) ? o.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
+							hk: "3LQVs7"
 						}) : o.fbt._("The award giver(s) and recipient will be notified that moderator u/{modName} has hidden the {awardName} award. Are you sure you want to hide this award from the comment?", [o.fbt._param("modName", s.displayText ? s.displayText : s.username || ""), o.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "1aqKr5"
 						}),
@@ -493,15 +493,15 @@
 				}),
 				v = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				O = s.n(v);
-			const y = "add-custom-badge-tooltip",
-				w = 100,
-				j = 2 * w;
+			const w = "add-custom-badge-tooltip",
+				y = 100,
+				j = 2 * y;
 			class E extends r.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, w)), this.mouseOverTooltip = e
+						}, y)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
@@ -513,7 +513,7 @@
 						className: Object(i.a)(O.a.image, this.props.className),
 						src: "".concat(d.a.assetPath, "/img/badges/placeholder.png")
 					});
-					const e = "".concat(y, "-").concat(this.props.uniqueIdentifier);
+					const e = "".concat(w, "-").concat(this.props.uniqueIdentifier);
 					return r.a.createElement(o.Fragment, null, this.props.showAddCustom && r.a.createElement("div", {
 						className: O.a.wrapper,
 						id: e,
@@ -808,7 +808,7 @@
 			})), s.d(t, "b", (function() {
 				return O
 			})), s.d(t, "c", (function() {
-				return y
+				return w
 			})), s.d(t, "d", (function() {
 				return j
 			})), s.d(t, "e", (function() {
@@ -941,7 +941,7 @@
 					}
 				}
 			}));
-			var y = Object(n.b)(() => Object(a.c)({
+			var w = Object(n.b)(() => Object(a.c)({
 					subreddit: x.P
 				}))(e => r.a.createElement(b, {
 					className: e.className,
@@ -955,12 +955,12 @@
 						} : {}
 					}
 				})),
-				w = s("./src/reddit/selectors/posts.ts");
+				y = s("./src/reddit/selectors/posts.ts");
 			var j = Object(n.b)(() => Object(a.c)({
-				post: w.N,
-				subredditOrProfile: w.Z,
+				post: y.N,
+				subredditOrProfile: y.Z,
 				isModerator: (e, t) => {
-					const s = Object(w.Z)(e, t);
+					const s = Object(y.Z)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -994,11 +994,11 @@
 				}
 			}));
 			var E = Object(n.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(w.Z)(e, {
+				subredditOrProfile: (e, t) => Object(y.Z)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(w.Z)(e, {
+					const s = Object(y.Z)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -1020,10 +1020,10 @@
 				}
 			}));
 			var A = Object(n.b)(() => Object(a.c)({
-				post: w.N,
-				subredditOrProfile: w.Z,
+				post: y.N,
+				subredditOrProfile: y.Z,
 				isModerator: (e, t) => {
-					const s = Object(w.Z)(e, t);
+					const s = Object(y.Z)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1167,8 +1167,8 @@
 				g = s("./src/reddit/components/AuthorLink/index.tsx"),
 				v = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
 				O = s("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
-				y = s("./src/reddit/components/Flair/index.tsx"),
-				w = s("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
+				w = s("./src/reddit/components/Flair/index.tsx"),
+				y = s("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
 				j = s("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				E = s("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				A = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
@@ -1269,7 +1269,7 @@
 						}
 					}, "Crossposted by")), h && L && r.a.createElement("div", {
 						className: W.a.flairContainer
-					}, r.a.createElement(y.b, {
+					}, r.a.createElement(w.b, {
 						disabled: !n,
 						flair: h,
 						forceSmallEmojis: !0,
@@ -1301,12 +1301,12 @@
 						}
 					})))), h && !L && r.a.createElement("div", {
 						className: W.a.flairContainer
-					}, r.a.createElement(y.b, {
+					}, r.a.createElement(w.b, {
 						disabled: !n,
 						flair: h,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: R
-					})), b.belongsTo.type === _.a.SUBREDDIT && !Object(U.h)(b.author) && r.a.createElement(w.a, {
+					})), b.belongsTo.type === _.a.SUBREDDIT && !Object(U.h)(b.author) && r.a.createElement(y.a, {
 						className: W.a.publicWallet,
 						contentId: b.id,
 						metaSeparator: r.a.createElement(F, null),
@@ -1713,4 +1713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.9c8f237478b233d05c04.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.e9f245642a4b17f6d413.js.map

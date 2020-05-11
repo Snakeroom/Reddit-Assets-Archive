@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.606b51f6ace5ac528f70.js
-// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2cec2148678dbda8305f.js
+// Retrieved at 5/11/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -2764,8 +2764,8 @@
 							hk: "4a7Cbu"
 						}) : s.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
-						}) : Object(v.a)(u.id) ? s.fbt._("The award giver(s) and recipient will be notified that moderator u/{modName} has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [s.fbt._param("modName", n.displayText ? n.displayText : n.username || ""), s.fbt._param("awardName", this.state.selectedAward.name)], {
-							hk: "1c649v"
+						}) : Object(v.a)(u.id) ? s.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
+							hk: "3LQVs7"
 						}) : s.fbt._("The award giver(s) and recipient will be notified that moderator u/{modName} has hidden the {awardName} award. Are you sure you want to hide this award from the comment?", [s.fbt._param("modName", n.displayText ? n.displayText : n.username || ""), s.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "1aqKr5"
 						}),
@@ -30819,4 +30819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.606b51f6ace5ac528f70.js.map
+//# sourceMappingURL=PostCreation.2cec2148678dbda8305f.js.map
