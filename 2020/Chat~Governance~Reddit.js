@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcd23656276cc3fd8d9a.js
-// Retrieved at 5/8/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.62ec4f621b6c26fa4d3a.js
+// Retrieved at 5/11/2020, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11009,14 +11009,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("3aeb3f9-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("cba9532-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3aeb3f9-production",
+						release: "cba9532-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11378,7 +11378,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3aeb3f9-production",
+							releaseClient: "cba9532-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -25163,25 +25163,41 @@
 		"./src/reddit/singleton/tracing/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return l
+				return u
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var n = i("./node_modules/crypto-js/hmac-sha256.js"),
-				r = i.n(n),
-				s = i("./node_modules/zipkin/es/index.js"),
-				o = i("./node_modules/zipkin-transport-http/lib/index.js"),
-				d = i("./src/lib/createSignature/index.ts");
-			var l, a, u;
+			var n = i("./node_modules/zipkin/es/index.js"),
+				r = i("./node_modules/crypto-js/hmac-sha256.js"),
+				s = i.n(r),
+				o = i("./node_modules/zipkin-transport-http/lib/index.js");
+			class d extends o.HttpLogger {
+				constructor(e) {
+					super(e), this.headers = {
+						"Content-Type": "application/json"
+					}, this.queue = [], this.key = e.key, this.secret = e.secret
+				}
+				processQueue() {
+					if (this.queue.length > 0) {
+						const e = "[".concat(this.queue.join(","), "]");
+						if (!this.key || !this.secret) return;
+						const t = s()(e, this.secret).toString(),
+							i = Object.assign({}, this.headers, {
+								"X-Signature": "key=".concat(this.key, ", mac=").concat(t)
+							});
+						this.headers = i, super.processQueue()
+					}
+				}
+			}
+			var l = d,
+				a = i("./src/lib/createSignature/index.ts");
+			var u, c;
 			! function(e) {
 				e.HttpMethod = "http.method", e.HttpUrl = "http.url", e.HttpStatusCode = "http.status_code"
-			}(l || (l = {})),
+			}(u || (u = {})),
 			function(e) {
 				e.TraceId = "X-Trace", e.SpanId = "X-Span", e.ParentSpanId = "X-Parent", e.Sampled = "X-Sampled", e.Flags = "X-Flags", e.Hmac = "X-Trace-Hmac", e.Secret = "x-trace-secret"
-			}(a || (a = {})),
-			function(e) {
-				e.Signature = "X-Signature"
-			}(u || (u = {}));
-			class c {
+			}(c || (c = {}));
+			class m {
 				constructor(e) {
 					let {
 						traceId: t,
@@ -25192,24 +25208,25 @@
 				}
 			}
 
-			function m() {
+			function p() {
 				let e = "";
 				for (let t = 0; t < 16; t++) {
 					e += "0123456789" [Math.floor(10 * Math.random())]
 				}
 				return e
 			}
-			const p = 5e3;
-			let h = new class {
+			const h = 5e3;
+			let _ = new class {
 				constructor() {
-					this.isEnabled = !1, this.serviceName = "desktop2x", this.shouldRecordTrace = !1, this.context = new s.ExplicitContext, this.consoleRecorder = new s.ConsoleRecorder, this.recorder = new s.BatchRecorder({
-						logger: new o.HttpLogger({
+					this.isEnabled = !1, this.serviceName = "desktop2x", this.shouldRecordTrace = !1, this.context = new n.ExplicitContext, this.consoleRecorder = new n.ConsoleRecorder, this.shouldRecordTrace = !0, this.recorder = new n.BatchRecorder({
+						logger: new l({
 							endpoint: "https://diagnostics.redditmedia.com/spans",
-							jsonEncoder: s.jsonEncoder.JSON_V2,
-							timeout: p,
-							headers: this.getClientTraceApiHeaders()
+							jsonEncoder: n.jsonEncoder.JSON_V2,
+							timeout: h,
+							key: {}.CLIENT_TRACING_KEY,
+							secret: "f45658cb24214a5d9f9579da9fc808ea"
 						})
-					}), this.shouldRecordTrace = !0
+					})
 				}
 				enableTracing() {
 					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
@@ -25224,28 +25241,16 @@
 					if (!(this.isEnabled && this.shouldRecordTrace && e && t)) return {};
 					let i = "";
 					return e.parentSpanId.ifPresent(e => i = e), i ? {
-						[a.TraceId]: e.traceId.toString(),
-						[a.ParentSpanId]: i,
-						[a.SpanId]: e.spanId.toString(),
-						[a.Sampled]: this.getSampledValue(e),
-						[a.Flags]: "0",
-						[a.Hmac]: t
+						[c.TraceId]: e.traceId.toString(),
+						[c.ParentSpanId]: i,
+						[c.SpanId]: e.spanId.toString(),
+						[c.Sampled]: this.getSampledValue(e),
+						[c.Flags]: "0",
+						[c.Hmac]: t
 					} : {}
 				}
 				getTracingHeadersWithSecret() {
 					return this.getTracingHeaders()
-				}
-				getClientTraceApiHeaders() {
-					if (!this.isEnabled) return {};
-					const e = {}.CLIENT_TRACING_KEY,
-						t = "f45658cb24214a5d9f9579da9fc808ea";
-					if (e) {
-						const i = r()(t);
-						return {
-							[u.Signature]: "key=".concat(e, ", mac=").concat(i)
-						}
-					}
-					return {}
 				}
 				getTraceHmac() {
 					const e = this.getCurrentTraceId();
@@ -25255,31 +25260,31 @@
 					const i = e.isDebug() ? 1 : 0,
 						n = [e.traceId.toString(), t, e.spanId.toString(), this.getSampledValue(e), i].join("-"),
 						r = "MHQmvfC2IB7ADUbzJXqTjPVzJ4lLaljDwonReqQq";
-					return Object(d.a)(n, r)
+					return Object(a.a)(n, r)
 				}
 				getCurrentTraceId() {
 					return this.isEnabled ? this.context.getContext() : null
 				}
 				createTraceFromId(e) {
-					return new s.TraceId({
+					return new n.TraceId({
 						traceId: e,
-						parentId: s.option.None,
+						parentId: n.option.None,
 						spanId: e,
-						sampled: new s.option.Some(!1),
+						sampled: new n.option.Some(!0),
 						debug: !1
 					})
 				}
 				createRootSpanId() {
-					const e = m();
+					const e = p();
 					return this.createTraceFromId(e)
 				}
 				createChildSpanId() {
 					const e = this.context.getContext();
-					return new s.TraceId({
+					return new n.TraceId({
 						traceId: e.traceId,
-						parentId: e ? s.option.fromNullable(e.spanId.toString()) : s.option.None,
-						spanId: m(),
-						sampled: new s.option.Some(!1),
+						parentId: e ? n.option.fromNullable(e.spanId.toString()) : n.option.None,
+						spanId: p(),
+						sampled: new n.option.Some(!0),
 						debug: !1
 					})
 				}
@@ -25287,29 +25292,29 @@
 					this.context.setContext(e)
 				}
 				recordTraceAnnotation(e, t) {
-					this.shouldRecordTrace && e && this.recorder.record(new c({
+					this.shouldRecordTrace && e && this.recorder.record(new m({
 						traceId: e,
 						timestamp: 1e3 * Date.now(),
 						annotation: t
 					}))
 				}
 				recordPerformanceTimings(e, t, i) {
-					const n = this.createChildSpanId();
-					this.recordServiceName(n, this.serviceName), this.recorder.record(new c({
-						traceId: n,
+					const r = this.createChildSpanId();
+					this.recordServiceName(r, this.serviceName), this.recorder.record(new m({
+						traceId: r,
 						timestamp: 1e3 * t,
-						annotation: new s.Annotation.LocalOperationStart(e)
-					})), this.recorder.record(new c({
-						traceId: n,
+						annotation: new n.Annotation.LocalOperationStart(e)
+					})), this.recorder.record(new m({
+						traceId: r,
 						timestamp: 1e3 * i,
-						annotation: new s.Annotation.LocalOperationStop
+						annotation: new n.Annotation.LocalOperationStop
 					}))
 				}
 				recordServiceName(e, t) {
-					this.recordTraceAnnotation(e, new s.Annotation.ServiceName(t))
+					this.recordTraceAnnotation(e, new n.Annotation.ServiceName(t))
 				}
 				recordBinary(e, t, i) {
-					this.recordTraceAnnotation(e, new s.Annotation.BinaryAnnotation(t, i))
+					this.recordTraceAnnotation(e, new n.Annotation.BinaryAnnotation(t, i))
 				}
 				recordLocalSpan(e, t) {
 					return t()
@@ -25318,8 +25323,8 @@
 					let i;
 					arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 					if (!this.isEnabled) return i = await t();
-					const n = this.createChildSpanId();
-					return this.recordServiceName(n, this.serviceName), this.recordTraceAnnotation(n, new s.Annotation.LocalOperationStart(e)), i = await t(), this.recordTraceAnnotation(n, new s.Annotation.LocalOperationStop), i
+					const r = this.createChildSpanId();
+					return this.recordServiceName(r, this.serviceName), this.recordTraceAnnotation(r, new n.Annotation.LocalOperationStart(e)), i = await t(), this.recordTraceAnnotation(r, new n.Annotation.LocalOperationStop), i
 				}
 				async recordLocalSpanAsync(e, t) {
 					return await this.recordAsyncSpan(e, t)
@@ -25328,17 +25333,17 @@
 					return await this.recordAsyncSpan(e, t, !0)
 				}
 				async recordRequest(e, t, i) {
-					let n;
-					if (!this.isEnabled) return n = await i();
-					const r = this.getCurrentTraceId() || this.createRootSpanId();
+					let r;
+					if (!this.isEnabled) return r = await i();
+					const s = this.getCurrentTraceId() || this.createRootSpanId();
 					return Object.keys(t).forEach(e => {
-						this.recordBinary(r, e, t[e])
-					}), this.recordServiceName(r, this.serviceName), this.recordTraceAnnotation(r, new s.Annotation.LocalOperationStart(e)), await this.context.scoped(async () => {
-						this.setParent(r), n = await i()
-					}), this.recordTraceAnnotation(r, new s.Annotation.LocalOperationStop), n
+						this.recordBinary(s, e, t[e])
+					}), this.recordServiceName(s, this.serviceName), this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStart(e)), await this.context.scoped(async () => {
+						this.setParent(s), r = await i()
+					}), this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStop), r
 				}
 			};
-			t.b = h
+			t.b = _
 		},
 		"./src/reduxMiddleware/apiContext.ts": function(e, t, i) {
 			"use strict";
@@ -28515,4 +28520,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.bcd23656276cc3fd8d9a.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.62ec4f621b6c26fa4d3a.js.map
