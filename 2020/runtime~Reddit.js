@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.cdc285f36488f0637a58.js
-// Retrieved at 5/11/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.12dd158c6db8348d0704.js
+// Retrieved at 5/11/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -958,7 +958,7 @@
 						FrontpageSidebar: "f3220d434877732d73ea",
 						Frontpage: "53fefff3a90ceaad50ad",
 						Topic: "49aad577adf91d03bbd9",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "f40a533b74134478cf7d",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "537ebc4924f4a3e689fb",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "f5106a7efa4a2bba5aa0",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "ce971899f5cba6211d2c",
 						PostDraft: "24355ba24dd56bbc651f",
@@ -1122,7 +1122,7 @@
 						SubredditPremiumNewUserWelcome: "022afa7eb2d5c82d8a4a",
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "ceed840acc136d9acff8",
 						"reddit-components-Governance-CommunityCard": "a144df75cdbbfe0fbbaf",
-						"reddit-components-Governance-Leaderboard": "e2b93b4b3b88d2106326",
+						"reddit-components-Governance-Leaderboard": "cabaa3bdc8ce117ea7c7",
 						EconomicsCommunityTipJar: "f15796655bac800ff716",
 						"vendors~reddit-components-Governance-ClaimPointsBanner": "c26d27a3e854bec09da8",
 						"reddit-components-Governance-ClaimPointsBanner": "5d0ad4297ff103da4d1e",
@@ -1237,4 +1237,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.cdc285f36488f0637a58.js.map
+//# sourceMappingURL=runtime~Reddit.12dd158c6db8348d0704.js.map
