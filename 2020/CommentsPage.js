@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.814a4f04aa4c1b23b54d.js
-// Retrieved at 5/12/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.e99e371ba857ae20cb0b.js
+// Retrieved at 5/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3364,16 +3364,16 @@
 			const jt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.W
+						experimentName: _t.Y
 					});
-					return !(!t || Object(_t.jc)(t))
+					return !(!t || Object(_t.lc)(t))
 				},
 				wt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.V
+						experimentName: _t.X
 					});
-					return !(!t || Object(_t.jc)(t))
+					return !(!t || Object(_t.lc)(t))
 				};
 			var Pt = s("./src/reddit/selectors/gild.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -16279,8 +16279,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.A
-				}) === n.H.Treatment
+					experimentName: n.B
+				}) === n.J.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -16307,9 +16307,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.B
+					experimentName: n.C
 				});
-				return !!t && !Object(n.jc)(t)
+				return !!t && !Object(n.lc)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16326,4 +16326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.814a4f04aa4c1b23b54d.js.map
+//# sourceMappingURL=CommentsPage.e99e371ba857ae20cb0b.js.map

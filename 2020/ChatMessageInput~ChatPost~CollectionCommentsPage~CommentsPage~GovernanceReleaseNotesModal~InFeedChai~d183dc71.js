@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.86310e4cc422e2318576.js
-// Retrieved at 5/11/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.897795b282d169c44869.js
+// Retrieved at 5/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1294,7 +1294,7 @@
 				N = n("./src/reddit/constants/experiments.ts"),
 				M = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				B = n("./src/reddit/selectors/subredditMention.ts");
-			class R extends a.a.PureComponent {
+			class D extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
 						const {
@@ -1317,7 +1317,7 @@
 					}, "r/".concat(e))
 				}
 			}
-			const D = Object(u.c)(R),
+			const R = Object(u.c)(D),
 				H = Object(I.c)({
 					isFeatureFlagEnabled: B.b,
 					isUserInTreatment: B.e,
@@ -1331,24 +1331,24 @@
 						userVariant: r,
 						rtJsonElementProps: o
 					} = e;
-					if (!n || !t) return a.a.createElement(D, {
+					if (!n || !t) return a.a.createElement(R, {
 						subredditName: s,
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Rb.SmIcon:
+						case N.Tb.SmIcon:
 							return a.a.createElement(L, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Rb.SmIconHc:
+						case N.Tb.SmIconHc:
 							return a.a.createElement(L, {
 								subredditName: s,
 								isHoverable: !0,
 								rtJsonElementProps: o
 							});
 						default:
-							return a.a.createElement(D, {
+							return a.a.createElement(R, {
 								subredditName: s,
 								rtJsonElementProps: o
 							})
@@ -1784,12 +1784,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Nb
+						experimentName: s.Pb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Rb.SmIcon || t === s.Rb.SmIconHc
+					return t === s.Tb.SmIcon || t === s.Tb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.86310e4cc422e2318576.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.897795b282d169c44869.js.map
