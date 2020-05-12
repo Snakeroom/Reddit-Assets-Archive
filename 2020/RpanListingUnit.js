@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.6ae319654c3881873bb2.js
-// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.fce65512f84223c12cf6.js
+// Retrieved at 5/12/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -835,20 +835,20 @@
 							onHideRpanUnit: s,
 							sendEvent: r
 						} = this.props;
-						s(), r(Object(v.a)())
+						s(), r(Object(v.e)())
 					}, this.onStreamClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t,
 							stream: s
 						} = this.props;
-						t(s ? Object(v.b)(s, 1) : Object(v.b)()), this.openOverlay()
+						t(s ? Object(v.f)(s, 1) : Object(v.f)()), this.openOverlay()
 					}, this.onHeaderClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t
 						} = this.props;
-						t(Object(v.b)()), this.openOverlay()
+						t(Object(v.f)()), this.openOverlay()
 					}
 				}
 				componentDidMount() {
@@ -1276,4 +1276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.6ae319654c3881873bb2.js.map
+//# sourceMappingURL=RpanListingUnit.fce65512f84223c12cf6.js.map

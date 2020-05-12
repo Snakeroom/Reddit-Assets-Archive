@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4ab34a43152724fb42cf.js
-// Retrieved at 5/11/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.667ecee0feeb94a71127.js
+// Retrieved at 5/12/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -2413,7 +2413,7 @@
 							child: {
 								id: t,
 								estHeight: E(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(_.n)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(_.t)()),
 								render: t => {
 									let {
 										className: n
@@ -5648,34 +5648,46 @@
 		},
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "n", (function() {
+			n.d(t, "t", (function() {
 				return o
-			})), n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "l", (function() {
-				return l
-			})), n.d(t, "m", (function() {
-				return m
-			})), n.d(t, "k", (function() {
-				return u
-			})), n.d(t, "f", (function() {
-				return p
-			})), n.d(t, "g", (function() {
-				return b
-			})), n.d(t, "d", (function() {
-				return h
 			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "c", (function() {
-				return x
+				return d
+			})), n.d(t, "f", (function() {
+				return c
+			})), n.d(t, "q", (function() {
+				return l
+			})), n.d(t, "r", (function() {
+				return m
+			})), n.d(t, "p", (function() {
+				return u
 			})), n.d(t, "j", (function() {
-				return f
+				return p
+			})), n.d(t, "k", (function() {
+				return b
 			})), n.d(t, "h", (function() {
-				return y
+				return h
 			})), n.d(t, "i", (function() {
+				return g
+			})), n.d(t, "g", (function() {
+				return x
+			})), n.d(t, "o", (function() {
+				return f
+			})), n.d(t, "l", (function() {
+				return y
+			})), n.d(t, "n", (function() {
 				return v
+			})), n.d(t, "a", (function() {
+				return _
+			})), n.d(t, "b", (function() {
+				return E
+			})), n.d(t, "c", (function() {
+				return C
+			})), n.d(t, "m", (function() {
+				return O
+			})), n.d(t, "s", (function() {
+				return j
+			})), n.d(t, "d", (function() {
+				return k
 			}));
 			var s = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -5738,7 +5750,7 @@
 				p = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
-					noun: "share"
+					noun: "share_video"
 				}, i(t), a(t, e)),
 				b = e => t => Object.assign({
 					source: "stream_player",
@@ -5787,7 +5799,37 @@
 						scrubbing_start_ms: e,
 						scrubbing_end_ms: t
 					}
-				}, i(s), a(s, n))
+				}, i(s), a(s, n)),
+				_ = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
+					noun: "close"
+				}, a(t, e)),
+				E = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
+					noun: "pause"
+				}, a(t, e)),
+				C = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
+					noun: "play"
+				}, a(t, e)),
+				O = e => t => Object.assign({
+					source: "stream_player",
+					action: "mute",
+					noun: "volume"
+				}, a(t, e)),
+				j = e => t => Object.assign({
+					source: "stream_player",
+					action: "unmute",
+					noun: "volume"
+				}, a(t, e)),
+				k = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
+					noun: "replay_video"
+				}, a(t, e))
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -6988,4 +7030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.4ab34a43152724fb42cf.js.map
+//# sourceMappingURL=Subreddit.667ecee0feeb94a71127.js.map
