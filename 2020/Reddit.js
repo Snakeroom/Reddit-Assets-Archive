@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a268368343dbdac1b3c8.js
-// Retrieved at 5/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1ff4d89376379fd798c1.js
+// Retrieved at 5/12/2020, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4163,7 +4163,7 @@
 			var Pr = (e, t, s, n, a, r) => {
 					let o, i;
 					if ("" !== n.searchQuery) {
-						if (n.isTypeaheadSuggestion) o = "/".concat(n.searchQuery);
+						if (n.isTypeaheadSuggestion) o = "/".concat(n.isProfile ? n.searchQuery.replace("u/", "user/") : n.searchQuery);
 						else {
 							if (i = "".concat(q.o, "=").concat(Object(vr.b)(n.rawQuery || n.searchQuery)), o = "/search/", n.section === yr.c.trending && a && a.source && (i += "&source=".concat(a.source)), e && r ? (o = "/r/".concat(e.name).concat(o), i = "".concat(i, "&").concat(q.p, "=1")) : !e && n.subredditOrProfileRestrictedName && (o = "/".concat(n.subredditOrProfileRestrictedName).concat(o), i = "".concat(i, "&").concat(q.p, "=1")), t) {
 								const e = t.url.split("/")[2];
@@ -4357,7 +4357,7 @@
 						key: a.searchQuery,
 						role: "link",
 						tabIndex: -1,
-						to: "/".concat(a.searchQuery)
+						to: "/".concat(a.isProfile ? a.searchQuery.replace("u/", "user/") : a.searchQuery)
 					}, a.displayInfo && a.displayInfo.iconUrl ? m.a.createElement("div", {
 						className: wr.a.subredditIcon,
 						style: {
@@ -12473,4 +12473,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.a268368343dbdac1b3c8.js.map
+//# sourceMappingURL=Reddit.1ff4d89376379fd798c1.js.map
