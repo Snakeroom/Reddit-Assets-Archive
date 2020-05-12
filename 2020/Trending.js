@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.ca61a5228e08a281fb4a.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.f5297fa7ee366a1026f5.js
+// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -221,8 +221,8 @@
 			}
 			var x = Object(a.b)(null, e => ({
 					fireAdPixelsOfType: (t, s) => e(Object(l.z)(t, s)),
-					trackPostView: t => e((e, s) => p.x(s(), t)),
-					trackPostClick: t => e((e, s) => p.w(s(), t))
+					trackPostView: t => e((e, s) => p.H(s(), t)),
+					trackPostClick: t => e((e, s) => p.G(s(), t))
 				}))(g),
 				P = s("./src/reddit/components/Translated/index.tsx"),
 				_ = s("./src/reddit/contexts/ApiContext.tsx"),
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.ca61a5228e08a281fb4a.js.map
+//# sourceMappingURL=Trending.f5297fa7ee366a1026f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.69294de8b5691ceab231.js
-// Retrieved at 5/12/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d5da105626b7b7fc6da3.js
+// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -3332,7 +3332,7 @@
 						return t && Object(L.f)(t) || ""
 					}
 				}),
-				W = Object(r.b)(F, e => ({
+				H = Object(r.b)(F, e => ({
 					changeEmail: t => e(Object(y.w)(t)),
 					sendResetEmail: t => e(Object(y.z)(t)),
 					showErrorToast: t => e(Object(I.e)({
@@ -3341,7 +3341,7 @@
 						text: t
 					}))
 				})),
-				H = e => e ? o.a.createElement(T.a, {
+				W = e => e ? o.a.createElement(T.a, {
 					className: Object(m.a)(U.a.image, U.a.success)
 				}) : o.a.createElement(R.a, {
 					className: Object(m.a)(U.a.image, U.a.error)
@@ -3418,7 +3418,7 @@
 						hk: "DTXMF"
 					})), o.a.createElement("div", {
 						className: U.a.status
-					}, H(e), o.a.createElement("h3", {
+					}, W(e), o.a.createElement("h3", {
 						className: U.a.statusText
 					}, z(e))), o.a.createElement("p", {
 						className: U.a.description
@@ -3449,7 +3449,7 @@
 					}))))
 				}
 			}
-			var Y = W(Z),
+			var Y = H(Z),
 				Q = n("./src/reddit/components/Settings/modalIds.ts"),
 				q = n("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
 				K = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
@@ -3702,8 +3702,8 @@
 				De = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				Ue = n("./src/reddit/icons/svgs/Twitter/index.tsx"),
 				Fe = n("./src/reddit/models/ExternalAccount/index.ts");
-			const We = ve.a.wrapped(Ue.a, "TwitterIcon", fe.a),
-				He = ve.a.wrapped(De.a, "LoadingIcon", fe.a),
+			const He = ve.a.wrapped(Ue.a, "TwitterIcon", fe.a),
+				We = ve.a.wrapped(De.a, "LoadingIcon", fe.a),
 				Ge = ve.a.wrapped(K.c, "ConnectTwitter", fe.a),
 				ze = ve.a.wrapped(x.f, "ConnectTwitterButton", fe.a),
 				Ve = ve.a.span("TextAndIconWrapper", fe.a),
@@ -3764,9 +3764,9 @@
 					}, o.a.createElement(ze, {
 						className: r,
 						onClick: t
-					}, a ? o.a.createElement(He, {
+					}, a ? o.a.createElement(We, {
 						sizePx: 15
-					}) : o.a.createElement(Ve, null, o.a.createElement(We, null), s.fbt._("Connect to Twitter", null, {
+					}) : o.a.createElement(Ve, null, o.a.createElement(He, null), s.fbt._("Connect to Twitter", null, {
 						hk: "3r8ltg"
 					}))))
 				})(), o.a.createElement(K.n, {
@@ -3821,7 +3821,7 @@
 					const [t, n] = Object(a.useState)(!1);
 					return Object(a.useEffect)(() => {
 						if (e.userId) {
-							const t = !!Object(tt.y)(e.userId);
+							const t = !!Object(tt.z)(e.userId);
 							n(t)
 						}
 					}, [e.userId]), o.a.createElement(et, nt({
@@ -4007,8 +4007,8 @@
 				Dt = ve.a.h4("ListHeading", Bt.a),
 				Ut = ve.a.div("ListBox", Bt.a),
 				Ft = ve.a.div("MoreWrapper", Bt.a),
-				Wt = ve.a.button("MoreButton", Bt.a),
-				Ht = ve.a.wrapped(K.l, "Subtext", Bt.a);
+				Ht = ve.a.button("MoreButton", Bt.a),
+				Wt = ve.a.wrapped(K.l, "Subtext", Bt.a);
 			class Gt extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -4041,7 +4041,7 @@
 						className: Object(m.a)(Bt.a.container, n, {
 							[Bt.a.mPadBottom]: !!r
 						})
-					}, o.a.createElement(Dt, null, u), void 0 !== p && o.a.createElement(Ht, null, p), o.a.createElement(M.a, {
+					}, o.a.createElement(Dt, null, u), void 0 !== p && o.a.createElement(Wt, null, p), o.a.createElement(M.a, {
 						buttonText: "add",
 						disabled: s.new === At.a.pending,
 						label: d,
@@ -4058,7 +4058,7 @@
 						img: e.icon_img,
 						date: 1e3 * e.date,
 						language: l
-					})), c.length > Lt && !e ? o.a.createElement(Ft, null, o.a.createElement(Wt, {
+					})), c.length > Lt && !e ? o.a.createElement(Ft, null, o.a.createElement(Ht, {
 						onClick: () => this.setState({
 							showAll: !0
 						})
@@ -4440,16 +4440,16 @@
 					}))))
 				}
 			}
-			var Wn = n("./src/reddit/constants/postLayout.ts"),
-				Hn = n("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
+			var Hn = n("./src/reddit/constants/postLayout.ts"),
+				Wn = n("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
 				Gn = n("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
 				zn = n("./src/reddit/icons/svgs/LargePosts/index.tsx"),
 				Vn = n("./src/reddit/controls/Dropdown/index.m.less"),
 				Jn = n.n(Vn);
 			const Zn = {
-				[Wn.d.Card]: zn.a,
-				[Wn.d.Classic]: Hn.a,
-				[Wn.d.Compact]: Gn.a
+				[Hn.d.Card]: zn.a,
+				[Hn.d.Classic]: Wn.a,
+				[Hn.d.Compact]: Gn.a
 			};
 			var Yn = e => {
 				const t = Zn[e.layout];
@@ -4457,7 +4457,7 @@
 					className: Jn.a.iconStyles
 				})
 			};
-			const Qn = [Wn.d.Card, Wn.d.Classic, Wn.d.Compact];
+			const Qn = [Hn.d.Card, Hn.d.Classic, Hn.d.Compact];
 			var qn = e => {
 					const {
 						dropdownId: t
@@ -4773,7 +4773,7 @@
 							permission: n
 						} = e;
 						let s = !1;
-						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && tt.G(t)), this.setState(e => ({
+						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && tt.H(t)), this.setState(e => ({
 							desktopNotifications: s ? t : e.desktopNotifications,
 							notificationPermission: n
 						})), this.lastNotificationsState = e
@@ -4783,7 +4783,7 @@
 						this.setState({
 							desktopNotifications: e
 						}, () => {
-							this.trackPreferenceToggled("desktop_notification_permissions", e), tt.G(e)
+							this.trackPreferenceToggled("desktop_notification_permissions", e), tt.H(e)
 						})
 					}, this.handleDesktopNotificationsClick = () => {
 						const {
@@ -5231,7 +5231,7 @@
 				Us = n.n(Ds);
 			const Fs = e => "economy.settings.payments.header.".concat(e);
 
-			function Ws(e) {
+			function Hs(e) {
 				return o.a.createElement("header", {
 					className: Object(m.a)(Us.a.container, e.className)
 				}, o.a.createElement("div", {
@@ -5244,7 +5244,7 @@
 					msgId: Fs("description")
 				})))
 			}
-			var Hs = n("./src/reddit/actions/economics/paymentSystems/actionCreators.ts"),
+			var Ws = n("./src/reddit/actions/economics/paymentSystems/actionCreators.ts"),
 				Gs = n("./src/reddit/models/Payments/index.ts"),
 				zs = n("./src/reddit/components/Settings/Payments/PaymentMethods/index.m.less"),
 				Vs = n.n(zs);
@@ -5305,9 +5305,9 @@
 						text: Object(sn.a)(t)
 					})),
 					onRemovePayment: t => {
-						t.type === Gs.b.SavedStripe && e(Object(Hs.a)({
+						t.type === Gs.b.SavedStripe && e(Object(Ws.a)({
 							cardId: t.id
-						})), t.type === Gs.b.SavedPayPal && e(Object(Hs.e)({
+						})), t.type === Gs.b.SavedPayPal && e(Object(Ws.e)({
 							sourceId: t.id
 						}))
 					}
@@ -5315,7 +5315,7 @@
 			var Qs = Object(tn.b)(Ys(Js)),
 				qs = n("./src/reddit/components/Settings/Payments/index.m.less"),
 				Ks = n.n(qs),
-				Xs = () => o.a.createElement(ie.a, null, o.a.createElement(Ws, {
+				Xs = () => o.a.createElement(ie.a, null, o.a.createElement(Hs, {
 					className: Ks.a.header
 				}), o.a.createElement(Qs, null)),
 				$s = n("./src/reddit/components/Settings/PremiumForm.tsx"),
@@ -5821,18 +5821,18 @@
 						})
 					}
 				},
-				Wa = n("./src/reddit/components/Settings/SpecialMembership/Header/index.m.less"),
-				Ha = n.n(Wa);
+				Ha = n("./src/reddit/components/Settings/SpecialMembership/Header/index.m.less"),
+				Wa = n.n(Ha);
 
 			function Ga(e) {
 				return o.a.createElement("header", {
 					className: e.className
 				}, o.a.createElement("div", {
-					className: Ha.a.title
+					className: Wa.a.title
 				}, s.fbt._("Special Memberships", null, {
 					hk: "3eWAHi"
 				})), o.a.createElement("div", {
-					className: Ha.a.subtitle
+					className: Wa.a.subtitle
 				}, s.fbt._("View and manage your Special Membership subscriptions.", null, {
 					hk: "rHjy"
 				})))
@@ -6208,8 +6208,8 @@
 				Do = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
 				Uo = n("./src/reddit/selectors/platform.ts"),
 				Fo = n("./src/reddit/pages/Settings/index.m.less"),
-				Wo = n.n(Fo);
-			const Ho = (e, t, n, a) => [{
+				Ho = n.n(Fo);
+			const Wo = (e, t, n, a) => [{
 					key: u.Lb.Account,
 					title: s.fbt._("Account", null, {
 						hk: "kL0Ow"
@@ -6240,28 +6240,28 @@
 						hk: "3mygAP"
 					})
 				}, {
-					className: Wo.a.CreatorTab,
+					className: Ho.a.CreatorTab,
 					key: u.Lb.Creator,
 					title: s.fbt._("Reddit Creator", null, {
 						hk: "45BriY"
 					}),
 					disabled: !t
 				}, {
-					className: Wo.a.PaymentsTab,
+					className: Ho.a.PaymentsTab,
 					key: u.Lb.Payments,
 					title: s.fbt._("Payments", null, {
 						hk: "31LCer"
 					}),
 					disabled: !a.length
 				}, {
-					className: Wo.a.SpecialMembershipTab,
+					className: Ho.a.SpecialMembershipTab,
 					key: u.Lb.SpecialMembership,
 					title: s.fbt._("Special Memberships", null, {
 						hk: "3ZoNj3"
 					}),
 					disabled: !n
 				}, {
-					className: Wo.a.MessagingTab,
+					className: Ho.a.MessagingTab,
 					key: u.Lb.Messaging,
 					title: s.fbt._("Chat & Messaging", null, {
 						hk: "3uLoYZ"
@@ -6470,8 +6470,8 @@
 						savedPayments: i
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Object(m.a)(Wo.a.Container, {
-							[Wo.a["m-responsive"]]: t
+						className: Object(m.a)(Ho.a.Container, {
+							[Ho.a["m-responsive"]]: t
 						})
 					}, o.a.createElement(Bo.c, {
 						constrainWidth: !0,
@@ -6482,7 +6482,7 @@
 						}),
 						icon: Bo.b.GEAR,
 						onTouchMove: this.startScrolling
-					}, Ho(n, a, r, i).filter(e => !e.disabled).map(this.renderTab)), this.renderForm(e.params.page))
+					}, Wo(n, a, r, i).filter(e => !e.disabled).map(this.renderTab)), this.renderForm(e.params.page))
 				}
 			}
 			t.default = zo(Vo(Object(cs.c)(Zo)))
@@ -6497,4 +6497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.69294de8b5691ceab231.js.map
+//# sourceMappingURL=Settings.d5da105626b7b7fc6da3.js.map

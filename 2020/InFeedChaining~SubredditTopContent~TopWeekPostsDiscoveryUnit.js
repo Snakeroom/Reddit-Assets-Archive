@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.b9c0a678d7909430e2a8.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.73a9bc3e915c6404dcca.js
+// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -697,8 +697,8 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(d.a)(t.permalink)),
-						trackPostClick: (t, s) => e((e, n) => a ? m.l(n(), a, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? m.n(n(), s, t) : a ? m.n(n(), a, t) : null)
+						trackPostClick: (t, s) => e((e, n) => a ? m.v(n(), a, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? m.x(n(), s, t) : a ? m.x(n(), a, t) : null)
 					}
 				});
 			class Ne extends l.c {
@@ -716,7 +716,7 @@
 							discoveryUnitSubreddit: s,
 							searchDiscoveryUnit: a
 						} = this.props;
-						return (a ? m.v() : m.k(t, s))(e)
+						return (a ? m.F() : m.u(t, s))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -962,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.b9c0a678d7909430e2a8.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.73a9bc3e915c6404dcca.js.map

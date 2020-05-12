@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6f0daa2e1b9d15f7e1e8.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.55ec6aecc66f81917804.js
+// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -1103,7 +1103,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(l.K)(e)
+					Object(l.M)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -1243,7 +1243,7 @@
 					purchaseCatalogRequested: () => e(Object(v.a)()),
 					selectAward: t => e(w(t)),
 					setIsAnonymous: t => {
-						e(Object(b.setIsAnonymous)(t)), Object(l.K)(t)
+						e(Object(b.setIsAnonymous)(t)), Object(l.M)(t)
 					},
 					subredditAboutRequested: t => e(Object(O.t)(t)),
 					updateMessage: t => e(Object(b.updateMessage)(t))
@@ -1627,4 +1627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.6f0daa2e1b9d15f7e1e8.js.map
+//# sourceMappingURL=FramedGild~GildModal.55ec6aecc66f81917804.js.map

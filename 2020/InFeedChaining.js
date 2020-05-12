@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.e796c35ea6ce18bcd485.js
-// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.9eabb17b1d5e9336b751.js
+// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -716,7 +716,7 @@
 							discoveryUnit: s,
 							postSubreddit: t
 						} = this.props;
-						if (s) return Object(y.p)(s, e, t)
+						if (s) return Object(y.z)(s, e, t)
 					}, this.trackDiscoveryUnitViewed = () => {
 						const {
 							discoveryUnit: e,
@@ -732,19 +732,19 @@
 						const {
 							postSubreddit: t
 						} = this.props;
-						this.props.sendEvent(Object(y.r)(e, s, void 0, t))
+						this.props.sendEvent(Object(y.B)(e, s, void 0, t))
 					}, this.trackSubredditClicked = () => {
 						const {
 							discoveryUnit: e,
 							postSubreddit: s
 						} = this.props;
-						e && s && this.props.sendEvent(Object(y.u)(e, s))
+						e && s && this.props.sendEvent(Object(y.E)(e, s))
 					}, this.trackPostSubredditOrProfileClicked = e => {
 						const {
 							discoveryUnit: s,
 							postSubreddit: t
 						} = this.props;
-						s && this.props.sendEvent(Object(y.o)(s, e, void 0, t))
+						s && this.props.sendEvent(Object(y.y)(s, e, void 0, t))
 					}, this.openPost = (e, s) => {
 						this.props.openPost(s);
 						const {
@@ -1235,4 +1235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.e796c35ea6ce18bcd485.js.map
+//# sourceMappingURL=InFeedChaining.9eabb17b1d5e9336b751.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.c8231965c0e42730f492.js
-// Retrieved at 5/11/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2a59df5721a1aa6c1063.js
+// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2231,8 +2231,8 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(l.a)(t.permalink)),
-						trackPostClick: (t, s) => e((e, r) => n ? m.l(r(), n, t, s) : null),
-						trackPostSubredditClick: t => e((e, r) => s ? m.n(r(), s, t) : n ? m.n(r(), n, t) : null)
+						trackPostClick: (t, s) => e((e, r) => n ? m.v(r(), n, t, s) : null),
+						trackPostSubredditClick: t => e((e, r) => s ? m.x(r(), s, t) : n ? m.x(r(), n, t) : null)
 					}
 				});
 			class _e extends d.c {
@@ -2250,7 +2250,7 @@
 							discoveryUnitSubreddit: s,
 							searchDiscoveryUnit: n
 						} = this.props;
-						return (n ? m.v() : m.k(t, s))(e)
+						return (n ? m.F() : m.u(t, s))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -4385,7 +4385,7 @@
 						}
 					})
 				}, e => ({
-					trackPostView: p()((t, s, n) => e((e, r) => f.q(r(), t, s, n)), (e, t) => {
+					trackPostView: p()((t, s, n) => e((e, r) => f.A(r(), t, s, n)), (e, t) => {
 						let {
 							id: s
 						} = e;
@@ -4685,7 +4685,7 @@
 						searchOptions: r
 					} = t;
 					return {
-						trackSubredditView: p()((t, s) => e((e, n) => f.s(n(), t, s, r)), (e, t) => {
+						trackSubredditView: p()((t, s) => e((e, n) => f.C(n(), t, s, r)), (e, t) => {
 							let {
 								id: s
 							} = e, {
@@ -4694,7 +4694,7 @@
 							return "".concat(s, "-").concat(n)
 						}),
 						navigateToSubreddit: t => e((e, r) => {
-							s ? f.i(r(), s, t) : n && f.y(r(), n, t), t.displayText && e(Object(j.b)("/".concat(t.displayText)))
+							s ? f.s(r(), s, t) : n && f.I(r(), n, t), t.displayText && e(Object(j.b)("/".concat(t.displayText)))
 						})
 					}
 				})(ie),
@@ -9429,4 +9429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.c8231965c0e42730f492.js.map
+//# sourceMappingURL=SearchResults.2a59df5721a1aa6c1063.js.map
