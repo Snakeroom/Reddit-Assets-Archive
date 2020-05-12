@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8115ed5dcfea76e0b0f2.js
-// Retrieved at 5/12/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ef983fbecdbdca4e79fa.js
+// Retrieved at 5/12/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3081,7 +3081,15 @@
 						postId: s
 					})
 				},
-				language: Et.P
+				language: Et.P,
+				replyComment: (e, t) => {
+					let {
+						postId: s
+					} = t;
+					return Object(ve.t)(e, {
+						commentsPageKey: Object(ie.a)(s)
+					})
+				}
 			});
 			class vr extends n.Component {
 				constructor(e) {
@@ -3107,8 +3115,9 @@
 						openLoginModal: c,
 						openRegisterModal: l,
 						sendEvent: m,
-						subredditId: u
-					} = this.props, p = Object(ie.a)(e), h = Object(Ys.a)(mr.c.replyToPost, e);
+						subredditId: u,
+						replyComment: p
+					} = this.props, h = Object(ie.a)(e), b = p ? Object(Ys.a)(mr.c.replyToComment, p.id) : Object(Ys.a)(mr.c.replyToPost, e);
 					return s ? i.a.createElement("div", {
 						className: Object(d.a)(hr.a.streamingChat, hr.a.prompt)
 					}, g.fbt._("Chat has been disabled", null, {
@@ -3127,13 +3136,14 @@
 						key: "commentsChat",
 						postId: e,
 						subredditId: u,
-						commentsPageKey: p
+						commentsPageKey: h
 					}), r && i.a.createElement(zs.a, {
 						key: "chatCommentsForm",
 						language: n,
 						postId: e,
-						draftKey: h,
-						commentsPageKey: p,
+						replyComment: p,
+						draftKey: b,
+						commentsPageKey: h,
 						isEditing: !1,
 						sendEvent: m,
 						isLivestreaming: !0
@@ -3788,4 +3798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.8115ed5dcfea76e0b0f2.js.map
+//# sourceMappingURL=PublicAccessNetwork.ef983fbecdbdca4e79fa.js.map

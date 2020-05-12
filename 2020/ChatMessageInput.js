@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.0bb424ccf1bbc0e18b87.js
-// Retrieved at 5/12/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.d2bb3cbd1ec3b5eeb920.js
+// Retrieved at 5/12/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -285,6 +285,7 @@
 				richTextJson: "_2i9z4_kONlAq_kaKny5o8A",
 				Reply: "_1VGxfswi7Ejb0tozdhOhnJ",
 				reply: "_1VGxfswi7Ejb0tozdhOhnJ",
+				isLivestreaming: "_1pHXu-8skDLlMxqw7GXg9W",
 				ReplyComment: "_3vHha2uHlOOSaJHExNUTkt",
 				replyComment: "_3vHha2uHlOOSaJHExNUTkt",
 				CloseIconWrap: "_3SwwKU0q7pRO0pohludkXl",
@@ -445,18 +446,18 @@
 			}
 			var H = D(U),
 				J = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				Y = s.n(J);
-			const X = {},
+				X = s.n(J);
+			const Y = {},
 				Z = 1e3,
 				V = "chat_submission_from_rte",
-				Q = h.a.form("Form", Y.a),
-				z = h.a.wrapped(j.a, "ChatButton", Y.a),
-				$ = h.a.div("CloseIconWrap", Y.a),
-				ee = h.a.div("Reply", Y.a),
-				te = h.a.div("ReplyAuthor", Y.a),
-				se = h.a.div("ReplyComment", Y.a),
-				ne = h.a.wrapped(f.a, "RichTextEditor", Y.a),
-				oe = h.a.wrapped(b.a, "SmallChatUserIcon", Y.a),
+				Q = h.a.form("Form", X.a),
+				z = h.a.wrapped(j.a, "ChatButton", X.a),
+				$ = h.a.div("CloseIconWrap", X.a),
+				ee = h.a.div("Reply", X.a),
+				te = h.a.div("ReplyAuthor", X.a),
+				se = h.a.div("ReplyComment", X.a),
+				ne = h.a.wrapped(f.a, "RichTextEditor", X.a),
+				oe = h.a.wrapped(b.a, "SmallChatUserIcon", X.a),
 				ae = Object(c.b)(() => Object(m.c)({
 					draft: A.i,
 					errorMsgs: A.I,
@@ -592,23 +593,27 @@
 						hk: "3yojgj"
 					}), h = i.isGildable && s && !t, p = s;
 					return l.a.createElement("div", {
-						className: Object(u.a)(Y.a.FormWrapper, {
-							[Y.a.LivestreamingWrapper]: s
+						className: Object(u.a)(X.a.FormWrapper, {
+							[X.a.LivestreamingWrapper]: s
 						})
-					}, !t && c && l.a.createElement(ee, null, l.a.createElement(se, {
+					}, !t && c && l.a.createElement(ee, {
+						className: Object(u.a)({
+							[X.a.isLivestreaming]: s
+						})
+					}, l.a.createElement(se, {
 						onClick: this.handleCloseReply
 					}, l.a.createElement(te, null, n.fbt._("Replying to u/ {username}:", [n.fbt._param("username", c.author)], {
 						hk: "2YZre5"
 					})), l.a.createElement(v.a, {
-						className: Y.a.RichTextJson,
+						className: X.a.RichTextJson,
 						key: "rich-text-".concat(c.id),
 						content: Object(I.a)(c),
-						rtJsonElementProps: X
+						rtJsonElementProps: Y
 					}), l.a.createElement($, null, l.a.createElement(R.a, null)))), l.a.createElement("div", {
-						className: Y.a.inputLine
+						className: X.a.inputLine
 					}, l.a.createElement(Q, {
 						className: Object(u.a)({
-							[Y.a.Editing]: t
+							[X.a.Editing]: t
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
@@ -616,12 +621,12 @@
 						isEditing: !!t,
 						isLivestreaming: !!s
 					}), l.a.createElement(ne, {
-						className: Object(u.a)(Y.a.RichTextEditor, {
-							[Y.a.Livestreaming]: s && !t,
-							[Y.a.Editing]: !s && t
+						className: Object(u.a)(X.a.RichTextEditor, {
+							[X.a.Livestreaming]: s && !t,
+							[X.a.Editing]: !s && t
 						}),
 						focusableContentRTEClassName: Object(u.a)({
-							[Y.a.LivestreamingFocusableContent]: s && !t
+							[X.a.LivestreamingFocusableContent]: s && !t
 						}),
 						dataTestId: V,
 						editorType: O.a.Comment,
@@ -635,21 +640,21 @@
 						placeholderText: m,
 						readOnly: r,
 						showSubmitButton: p,
-						submitButtonClassName: Y.a.insetSubmitButton,
+						submitButtonClassName: X.a.insetSubmitButton,
 						submitOnEnter: !0,
 						trackToolbarClick: a.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
 					}), t && l.a.createElement(z, {
-						className: Object(u.a)(Y.a.ChatButton, {
-							[Y.a.LivestreamingResetButton]: s
+						className: Object(u.a)(X.a.ChatButton, {
+							[X.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
 					}, l.a.createElement(R.a, null)), !p && l.a.createElement(z, {
-						className: Object(u.a)(Y.a.ChatButton, {
-							[Y.a.LivestreamingChatButton]: s && !t,
-							[Y.a.LivestreamingResetButton]: s && t
+						className: Object(u.a)(X.a.ChatButton, {
+							[X.a.LivestreamingChatButton]: s && !t,
+							[X.a.LivestreamingResetButton]: s && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
@@ -657,9 +662,9 @@
 							hk: "4bL65Y"
 						})
 					}, l.a.createElement(S.a, null))), h && l.a.createElement(z, {
-						className: Object(u.a)(Y.a.ChatButton, {
-							[Y.a.LivestreamingChatButton]: s,
-							[Y.a.leftPad]: !p
+						className: Object(u.a)(X.a.ChatButton, {
+							[X.a.LivestreamingChatButton]: s,
+							[X.a.leftPad]: !p
 						}),
 						"aria-label": n.fbt._("give award", null, {
 							hk: "1nXRWY"
@@ -1062,4 +1067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.0bb424ccf1bbc0e18b87.js.map
+//# sourceMappingURL=ChatMessageInput.d2bb3cbd1ec3b5eeb920.js.map
