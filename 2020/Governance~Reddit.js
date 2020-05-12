@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.752a5c23bf32880f2b6f.js
-// Retrieved at 5/11/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.635dbb270d4729885de2.js
+// Retrieved at 5/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -43,7 +43,7 @@
 			e.exports = JSON.parse('{"id":"c03afa35c319"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"b23fa07fea75"}')
+			e.exports = JSON.parse('{"id":"b13543f30c74"}')
 		},
 		"./src/graphql/operations/GetPostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"4231b7734ef9"}')
@@ -61,7 +61,7 @@
 			e.exports = JSON.parse('{"id":"3c148c0b5100"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"4285e44c7afc"}')
+			e.exports = JSON.parse('{"id":"27ca6db5c559"}')
 		},
 		"./src/graphql/operations/OtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"717c239ddb6a"}')
@@ -82,7 +82,7 @@
 			e.exports = JSON.parse('{"id":"7d0ee544a263"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"6bc717ce7cf4"}')
+			e.exports = JSON.parse('{"id":"8da27ce8b679"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -106,7 +106,7 @@
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"84c847f4393b"}')
+			e.exports = JSON.parse('{"id":"cfea806fa14c"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -24410,7 +24410,9 @@
 					inRedesignBeta: u.isInRedesignBeta,
 					isEmployee: !!b.isEmployee,
 					isFPR: !!b.isForcePasswordReset,
+					isNameEditable: !!b.isNameEditable,
 					isMod: !!b.isModerator,
+					isPasswordSet: !!b.isPasswordSet,
 					isSuspended: b.isSuspended,
 					nightmode: u.isNightModeEnabled,
 					seenLayoutSwitch: !!f && f.isLayoutSwitchAware,
@@ -51335,4 +51337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.752a5c23bf32880f2b6f.js.map
+//# sourceMappingURL=Governance~Reddit.635dbb270d4729885de2.js.map
