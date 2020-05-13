@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.12ce030ecb9228d252ec.js
-// Retrieved at 5/13/2020, 1:30:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2da160cc4751d63c27d0.js
+// Retrieved at 5/13/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -181,9 +181,9 @@
 				u = n("./src/reddit/selectors/structuredStyles.ts"),
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/telemetry/index.ts");
-			const h = Object(r.a)(i.r),
-				g = Object(r.a)(i.s),
-				x = Object(r.a)(i.q),
+			const h = Object(r.a)(i.p),
+				g = Object(r.a)(i.q),
+				x = Object(r.a)(i.o),
 				f = (e, t, n) => async (s, r, a) => {
 					const i = Object(p.y)(r(), {
 						subredditName: e
@@ -7030,4 +7030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.12ce030ecb9228d252ec.js.map
+//# sourceMappingURL=Subreddit.2da160cc4751d63c27d0.js.map

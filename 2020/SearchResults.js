@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f385f63414f0a95ba945.js
-// Retrieved at 5/13/2020, 1:30:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0762875469f2b4ce1e68.js
+// Retrieved at 5/13/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -128,9 +128,9 @@
 				p = s("./src/reddit/selectors/structuredStyles.ts"),
 				u = s("./src/reddit/selectors/subreddit.ts"),
 				b = s("./src/telemetry/index.ts");
-			const h = Object(r.a)(a.r),
-				x = Object(r.a)(a.s),
-				f = Object(r.a)(a.q),
+			const h = Object(r.a)(a.p),
+				x = Object(r.a)(a.q),
+				f = Object(r.a)(a.o),
 				g = (e, t, s) => async (n, r, o) => {
 					const a = Object(u.y)(r(), {
 						subredditName: e
@@ -9429,4 +9429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.f385f63414f0a95ba945.js.map
+//# sourceMappingURL=SearchResults.0762875469f2b4ce1e68.js.map
