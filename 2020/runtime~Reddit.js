@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e0167ccf4399be083568.js
-// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.08c368f2aa27ce5b0f49.js
+// Retrieved at 5/13/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -975,7 +975,7 @@
 						Frontpage: "3f1aa158dbedecf280fc",
 						"Geotagging~Topic": "a5afbe19464611cac95d",
 						Topic: "5dded3198e6ad18a49ba",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "1253956c27b0f07b60fa",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "f777bf058e14985dd81c",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "ebb5eb5b44d5ddd2e26a",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "3797f5437a4a2295de53",
 						PostDraft: "97997e485b1419bad6e2",
@@ -1030,7 +1030,7 @@
 						ProfileSnoobuilder: "deb4f63a99293d857af0",
 						"vendors~MembershipPaywallPage": "4e8477ad35890bb4b9a2",
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "b25300bcf1ac4631ab38",
-						MembershipPaywallPage: "e52595734431a7a4f5f5",
+						MembershipPaywallPage: "36e472f9c64dc81c6e11",
 						"vendors~Chat~RedesignChat": "5c6c446f6e045bc3c01b",
 						"Chat~RedesignChat": "a8cac92850228175c843",
 						RedesignChat: "21c2668f9649ac6d7ccc",
@@ -1117,7 +1117,7 @@
 						"vendors~dashjs": "ea4a5615e62a98ef98b2",
 						CustomBadgeHovercardTooltip: "b2a69e423f641430c225",
 						"vendors~CryptoLibEthers": "334a43cc7741e9f42d72",
-						"EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip": "be24a769558d4091ab77",
+						"EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip": "366353f3bd668aa4ff1c",
 						SubredditPremiumBadgeHovercardTooltip: "bb7a31aa3c3b8af47f8f",
 						PennyPurchaseModal: "454cb0e44e816e5adb06",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "4b79dcbc244966fea928",
@@ -1257,4 +1257,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.e0167ccf4399be083568.js.map
+//# sourceMappingURL=runtime~Reddit.08c368f2aa27ce5b0f49.js.map

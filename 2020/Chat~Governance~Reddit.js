@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.93b26b0bc3e70438690e.js
-// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a21a4a4e6f78b4a83aee.js
+// Retrieved at 5/13/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11011,14 +11011,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("1381f8f-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("e8ac78c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1381f8f-production",
+						release: "e8ac78c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11380,7 +11380,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1381f8f-production",
+							releaseClient: "e8ac78c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -15408,27 +15408,27 @@
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/reddit/selectors/platform.ts");
 			const r = new Set(["daonuts", "ethtrader", "karma_chameleon", "pointsrtesty", "stellartest"]),
-				s = new Set(["cryptocurrencytest", "funkygoose", "gigapoints", "pointsnitebr"]),
+				s = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
 				o = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
 				d = new Set(["daonuts", "ethtrader", "stellartest"]),
 				l = new Set(["funkygoose"]),
-				a = new Set(["badgesroyaletest", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
+				a = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
 				u = new Set(["fortnitebr", "funkygoose"]),
 				c = new Set(["funkygoose"]),
-				m = new Set(["badgesroyaletest", "daonuts", "cryptocurrencytest", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
+				m = new Set(["badgesroyaletest", "daonuts", "cryptocurrency", "cryptocurrencytest", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
 				p = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
 				h = new Set(["daonuts", "ethtrader", "funkygoose", "stellar"]),
 				_ = new Set(["badgesroyaletest", "fortnitebr"]),
-				g = new Set(["badgesroyaletest", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellar", "stellartest"]),
+				g = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellar", "stellartest"]),
 				f = new Set([]),
-				b = new Set(["cryptocurrencytest", "daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				w = new Set(["cryptocurrencytest", "daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				y = new Set(["badgesroyaletest", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
-				v = new Set(["badgesroyaletest", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
+				b = new Set(["cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
+				w = new Set(["cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
+				y = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
+				v = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
 				T = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
-				S = new Set(["cryptocurrencytest", "daonuts", "ethtrader", "funkygoose", "gigapoints", "mountainbiking", "pointsnitebr", "stellar", "stellartest"]),
+				S = new Set(["cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "mountainbiking", "pointsnitebr", "stellar", "stellartest"]),
 				E = new Set(["funkygoose"]),
-				F = new Set(["badgesroyaletest", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "shittymorph", "stellartest"]),
+				F = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "shittymorph", "stellartest"]),
 				I = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
 				O = new Set(["funkygoose"]),
 				x = new Set(["stellar", "stellartest"]),
@@ -28602,4 +28602,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.93b26b0bc3e70438690e.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.a21a4a4e6f78b4a83aee.js.map
