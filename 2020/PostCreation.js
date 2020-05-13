@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5f139898670343cf93c1.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a19bfced20c286afc3ee.js
+// Retrieved at 5/13/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -950,10 +950,8 @@
 						let {
 							apiContext: o
 						} = s;
-						const r = n().user.account,
-							i = n(),
-							c = !i.economics.me.fetched || e && !i.economics.me.data.specialMemberships;
-						if (r && c) {
+						const r = n();
+						if (!r.economics.me.fetched || e && !r.economics.me.data.specialMemberships) {
 							const n = await a(o(), e);
 							if (n.ok) {
 								const s = n.body;
@@ -30826,4 +30824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5f139898670343cf93c1.js.map
+//# sourceMappingURL=PostCreation.a19bfced20c286afc3ee.js.map

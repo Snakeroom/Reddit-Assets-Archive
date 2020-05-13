@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.90fa1eee38e04ad39518.js
-// Retrieved at 5/13/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d01c09c686449a0daffa.js
+// Retrieved at 5/13/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11011,14 +11011,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("255d004-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("173943d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "255d004-production",
+						release: "173943d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11380,7 +11380,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "255d004-production",
+							releaseClient: "173943d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -23341,13 +23341,13 @@
 					}), i
 				}),
 				f = Object(s.a)(h, g, (e, t) => !e || !r()(t) && 0 === t.subreddits.length),
-				b = Object(s.a)(u.e, c.z, (e, t) => e.map(e => Object(l.c)(e, t))),
+				b = Object(s.a)(u.d, c.z, (e, t) => e.map(e => Object(l.c)(e, t))),
 				w = Object(s.a)(h, g, f, e => e.subredditAutocomplete.api.pending, (e, t, i, n) => {
 					if (i) return !1;
 					let r = !1;
 					return _(e, e => n.hasOwnProperty(e) ? (r = n[e], !1) : (!t || t.key !== e) && void 0), r
 				}),
-				y = Object(s.a)(h, u.e, (e, t) => t.filter(t => -1 !== t.name.toLowerCase().indexOf(e))),
+				y = Object(s.a)(h, u.d, (e, t) => t.filter(t => -1 !== t.name.toLowerCase().indexOf(e))),
 				v = Object(s.a)(p, (e, t) => t.includeUserProfile, c.i, (e, t, i) => {
 					if (!t || r()(i) || Object(o.d)(e)) return null;
 					const n = Object(o.f)(Object(a.f)(i)),
@@ -23736,34 +23736,31 @@
 		},
 		"./src/reddit/selectors/subscriptions.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "f", (function() {
+			i.d(t, "e", (function() {
 				return o
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "f", (function() {
 				return d
-			})), i.d(t, "g", (function() {
-				return l
-			})), i.d(t, "e", (function() {
-				return a
 			})), i.d(t, "d", (function() {
-				return u
-			})), i.d(t, "a", (function() {
-				return c
+				return l
 			})), i.d(t, "c", (function() {
-				return m
+				return a
+			})), i.d(t, "a", (function() {
+				return u
+			})), i.d(t, "b", (function() {
+				return c
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/posts.ts"),
 				s = i("./src/lib/objectSelector/index.ts");
 			const o = e => e.subscriptions.api.fetched,
-				d = e => e.subscriptions.subredditOrder,
-				l = Object(s.a)(e => {
+				d = Object(s.a)(e => {
 					const {
 						profileOrder: t,
 						subredditOrder: i
 					} = e.subscriptions;
 					return [...i, ...t]
 				}),
-				a = (Object(s.a)(e => {
+				l = (Object(s.a)(e => {
 					const {
 						profileOrder: t,
 						subredditOrder: i
@@ -23781,12 +23778,12 @@
 					for (const n of t) e[n] && i.push(e[n]);
 					return i
 				}))),
-				u = Object(s.a)(Object(n.a)(e => e.profiles.models, e => e.subscriptions.profileOrder, (e, t) => {
+				a = Object(s.a)(Object(n.a)(e => e.profiles.models, e => e.subscriptions.profileOrder, (e, t) => {
 					if (!t || !t.length) return [];
 					return t.map(t => e[t])
 				})),
-				c = e => e.subscriptions.favoriteSubredditOrder,
-				m = (Object(s.a)(e => {
+				u = e => e.subscriptions.favoriteSubredditOrder,
+				c = (Object(s.a)(e => {
 					const {
 						favoriteSubredditOrder: t,
 						favoriteProfileOrder: i
@@ -28605,4 +28602,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.90fa1eee38e04ad39518.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d01c09c686449a0daffa.js.map

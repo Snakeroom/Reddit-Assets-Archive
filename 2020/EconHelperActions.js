@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.a9edb0a6b9429966fb75.js
-// Retrieved at 5/6/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.9a17ebd648250548f2dc.js
+// Retrieved at 5/13/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -110,10 +110,8 @@
 						let {
 							apiContext: r
 						} = s;
-						const o = n().user.account,
-							c = n(),
-							i = !c.economics.me.fetched || e && !c.economics.me.data.specialMemberships;
-						if (o && i) {
+						const o = n();
+						if (!o.economics.me.fetched || e && !o.economics.me.data.specialMemberships) {
 							const n = await d(r(), e);
 							if (n.ok) {
 								const s = n.body;
@@ -1084,4 +1082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.a9edb0a6b9429966fb75.js.map
+//# sourceMappingURL=EconHelperActions.9a17ebd648250548f2dc.js.map

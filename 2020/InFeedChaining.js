@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.9eabb17b1d5e9336b751.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.3ad138564f38f864cc7a.js
+// Retrieved at 5/13/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -669,8 +669,8 @@
 					postChain: S.f,
 					postSubreddit: O.Z,
 					routeName: _.q,
-					subscribedProfiles: j.d,
-					subscribedSubreddits: j.e
+					subscribedProfiles: j.c,
+					subscribedSubreddits: j.d
 				}),
 				F = Object(a.b)(D, (e, s) => {
 					let {
@@ -1235,4 +1235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.9eabb17b1d5e9336b751.js.map
+//# sourceMappingURL=InFeedChaining.3ad138564f38f864cc7a.js.map

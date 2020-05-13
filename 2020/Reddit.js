@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c5c44b89055679a0f7ef.js
-// Retrieved at 5/13/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4b69b7fa90e84aca299f.js
+// Retrieved at 5/13/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -293,10 +293,8 @@
 						let {
 							apiContext: a
 						} = n;
-						const r = s().user.account,
-							o = s(),
-							c = !o.economics.me.fetched || e && !o.economics.me.data.specialMemberships;
-						if (r && c) {
+						const r = s();
+						if (!r.economics.me.fetched || e && !r.economics.me.data.specialMemberships) {
 							const s = await i(a(), e);
 							if (s.ok) {
 								const n = s.body;
@@ -846,17 +844,11 @@
 		},
 		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./src/reddit/actions/economics/me/thunkedActions.ts"),
-				a = s("./src/reddit/actions/subscription/index.ts"),
-				r = s("./src/reddit/actions/users.ts"),
-				o = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				i = s("./src/reddit/selectors/user.ts");
+			var n = s("./src/reddit/actions/economics/me/thunkedActions.ts");
 			t.a = () => async (e, t) => {
-				let s = t();
-				Object(i.H)(s) || await e(Object(r.u)()), s = t(), Object(i.H)(s) ? await Promise.all([e(Object(a.e)()), e(Object(n.b)()).then(() => {
+				await e(Object(n.b)()).then(() => {
 					if (t().economics.me.data) return e(Object(n.a)())
-				})]) : Object(o.a)(e, s)
+				})
 			}
 		},
 		"./src/reddit/actions/pages/meta/specialMembershipPaywallPage.ts": function(e, t, s) {
@@ -12546,4 +12538,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.c5c44b89055679a0f7ef.js.map
+//# sourceMappingURL=Reddit.4b69b7fa90e84aca299f.js.map
