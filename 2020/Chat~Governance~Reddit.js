@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bafda55cf5ad2e7a64eb.js
-// Retrieved at 5/13/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3e19a4aada9764d64ff9.js
+// Retrieved at 5/13/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11009,14 +11009,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("516a1a2-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("946c8bd-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "516a1a2-production",
+						release: "946c8bd-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11378,7 +11378,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "516a1a2-production",
+							releaseClient: "946c8bd-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -25233,7 +25233,7 @@
 		"./src/reddit/singleton/tracing/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return u
+				return m
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/zipkin/es/index.js"),
@@ -25260,14 +25260,16 @@
 			}
 			var l = d,
 				a = i("./src/lib/createSignature/index.ts");
-			var u, c;
+			const u = "Local",
+				c = "Remote";
+			var m, p;
 			! function(e) {
 				e.HttpMethod = "http.method", e.HttpUrl = "http.url", e.HttpStatusCode = "http.status_code"
-			}(u || (u = {})),
+			}(m || (m = {})),
 			function(e) {
 				e.TraceId = "X-Trace", e.SpanId = "X-Span", e.ParentSpanId = "X-Parent", e.Sampled = "X-Sampled", e.Flags = "X-Flags", e.Hmac = "X-Trace-Hmac", e.Secret = "x-trace-secret"
-			}(c || (c = {}));
-			class m {
+			}(p || (p = {}));
+			class h {
 				constructor(e) {
 					let {
 						traceId: t,
@@ -25278,21 +25280,21 @@
 				}
 			}
 
-			function p() {
+			function _() {
 				let e = "";
 				for (let t = 0; t < 16; t++) {
 					e += "0123456789" [Math.floor(10 * Math.random())]
 				}
 				return e
 			}
-			const h = 5e3;
-			let _ = new class {
+			const g = 5e3;
+			let f = new class {
 				constructor() {
 					this.isEnabled = !1, this.serviceName = "desktop2x", this.shouldRecordTrace = !1, this.context = new n.ExplicitContext, this.consoleRecorder = new n.ConsoleRecorder, this.shouldRecordTrace = !0, this.recorder = new n.BatchRecorder({
 						logger: new l({
 							endpoint: "https://diagnostics.redditmedia.com/spans",
-							jsonEncoder: n.jsonEncoder.JSON_V2,
-							timeout: h,
+							jsonEncoder: n.jsonEncoder.JSON_V1,
+							timeout: g,
 							key: {}.CLIENT_TRACING_KEY,
 							secret: "f45658cb24214a5d9f9579da9fc808ea"
 						})
@@ -25311,12 +25313,12 @@
 					if (!(this.isEnabled && this.shouldRecordTrace && e && t)) return {};
 					let i = "";
 					return e.parentSpanId.ifPresent(e => i = e), i ? {
-						[c.TraceId]: e.traceId.toString(),
-						[c.ParentSpanId]: i,
-						[c.SpanId]: e.spanId.toString(),
-						[c.Sampled]: this.getSampledValue(e),
-						[c.Flags]: "0",
-						[c.Hmac]: t
+						[p.TraceId]: e.traceId.toString(),
+						[p.ParentSpanId]: i,
+						[p.SpanId]: e.spanId.toString(),
+						[p.Sampled]: this.getSampledValue(e),
+						[p.Flags]: "0",
+						[p.Hmac]: t
 					} : {}
 				}
 				getTracingHeadersWithSecret() {
@@ -25345,7 +25347,7 @@
 					})
 				}
 				createRootSpanId() {
-					const e = p();
+					const e = _();
 					return this.createTraceFromId(e)
 				}
 				createChildSpanId() {
@@ -25353,7 +25355,7 @@
 					return new n.TraceId({
 						traceId: e.traceId,
 						parentId: e ? n.option.fromNullable(e.spanId.toString()) : n.option.None,
-						spanId: p(),
+						spanId: _(),
 						sampled: new n.option.Some(!0),
 						debug: !1
 					})
@@ -25362,7 +25364,7 @@
 					this.context.setContext(e)
 				}
 				recordTraceAnnotation(e, t) {
-					this.shouldRecordTrace && e && this.recorder.record(new m({
+					this.shouldRecordTrace && e && this.recorder.record(new h({
 						traceId: e,
 						timestamp: 1e3 * Date.now(),
 						annotation: t
@@ -25370,11 +25372,11 @@
 				}
 				recordPerformanceTimings(e, t, i) {
 					const r = this.createChildSpanId();
-					this.recordServiceName(r, this.serviceName), this.recorder.record(new m({
+					this.recordServiceName(r, this.serviceName), this.recorder.record(new h({
 						traceId: r,
 						timestamp: 1e3 * t,
 						annotation: new n.Annotation.LocalOperationStart(e)
-					})), this.recorder.record(new m({
+					})), this.recorder.record(new h({
 						traceId: r,
 						timestamp: 1e3 * i,
 						annotation: new n.Annotation.LocalOperationStop
@@ -25390,11 +25392,14 @@
 					return t()
 				}
 				async recordAsyncSpan(e, t) {
-					let i;
-					arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+					let i, r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 					if (!this.isEnabled) return i = await t();
-					const r = this.createChildSpanId();
-					return this.recordServiceName(r, this.serviceName), this.recordTraceAnnotation(r, new n.Annotation.LocalOperationStart(e)), i = await t(), this.recordTraceAnnotation(r, new n.Annotation.LocalOperationStop), i
+					const s = this.createChildSpanId();
+					if (this.recordServiceName(s, this.serviceName), this.recordBinary(s, "operation", r ? c : u), this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStart(e)), r && this.recordTraceAnnotation(s, new n.Annotation.ClientSend), i = await t(), r && (this.recordTraceAnnotation(s, new n.Annotation.ClientRecv), i && (i.status && this.recordBinary(s, m.HttpStatusCode, i.status), i.error))) {
+						const e = i.error;
+						this.recordBinary(s, "error", e.type)
+					}
+					return this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStop), i
 				}
 				async recordLocalSpanAsync(e, t) {
 					return await this.recordAsyncSpan(e, t)
@@ -25413,7 +25418,7 @@
 					}), this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStop), r
 				}
 			};
-			t.b = _
+			t.b = f
 		},
 		"./src/reduxMiddleware/apiContext.ts": function(e, t, i) {
 			"use strict";
@@ -28590,4 +28595,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.bafda55cf5ad2e7a64eb.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.3e19a4aada9764d64ff9.js.map
