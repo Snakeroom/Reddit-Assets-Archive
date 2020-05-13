@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.8c96fdd7d2b8c3818bf9.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.20d5e345282706cfc868.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -81,7 +81,7 @@
 				f = i.a.wrapped(u.b, "DropdownRow", x.a),
 				_ = Object(d.c)({
 					oldSiteRules: p.a,
-					subredditRules: h.O
+					subredditRules: h.P
 				}),
 				w = Object(o.b)(_);
 			class y extends a.a.Component {
@@ -206,8 +206,8 @@
 				I = l.a.wrapped(h.f, "PrimaryButton", v.a),
 				N = l.a.wrapped(p.m, "ModalText", v.a),
 				O = l.a.div("DescriptionText", v.a),
-				j = l.a.span("Bullet", v.a),
-				P = l.a.wrapped(O, "VisibilityNote", v.a),
+				P = l.a.span("Bullet", v.a),
+				j = l.a.wrapped(O, "VisibilityNote", v.a),
 				T = l.a.wrapped(p.e, "ModalFooter", v.a),
 				U = l.a.div("FooterRow", v.a),
 				A = Object(d.c)({
@@ -364,7 +364,7 @@
 						togglePermanent: this.togglePermanent
 					})), a.a.createElement(T, null, a.a.createElement(U, null, a.a.createElement(N, null, s.fbt._("Note to include in ban message", null, {
 						hk: "44jlkB"
-					}), a.a.createElement(j, null, "•"))), a.a.createElement(U, null, a.a.createElement(p.q, {
+					}), a.a.createElement(P, null, "•"))), a.a.createElement(U, null, a.a.createElement(p.q, {
 						onChange: e => this.setState({
 							banMessage: e.currentTarget.value
 						}),
@@ -380,7 +380,7 @@
 						onClick: this.onRemove
 					}, a.a.createElement(B, null), s.fbt._("Unban", null, {
 						hk: "3zNsVi"
-					})) : a.a.createElement(P, null, a.a.createElement(j, null, "•"), s.fbt._("Visible to banned user", null, {
+					})) : a.a.createElement(j, null, a.a.createElement(P, null, "•"), s.fbt._("Visible to banned user", null, {
 						hk: "1PQbxq"
 					})), a.a.createElement(C.a, null, a.a.createElement(p.a, {
 						onClick: e.toggleModal,
@@ -777,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BannedUserModal.8c96fdd7d2b8c3818bf9.js.map
+//# sourceMappingURL=BannedUserModal.20d5e345282706cfc868.js.map

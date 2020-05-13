@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.4f131b41f772f0d0af4f.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9b276f910fea5fbb404d.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -329,7 +329,7 @@
 				},
 				R = Object(c.c)({
 					flairData: _.d,
-					subreddit: E.P,
+					subreddit: E.Q,
 					isMod: (e, t) => !!Object(v.j)(e, t)
 				});
 			class j extends a.a.Component {
@@ -1373,4 +1373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.4f131b41f772f0d0af4f.js.map
+//# sourceMappingURL=ModerationDropdowns.9b276f910fea5fbb404d.js.map

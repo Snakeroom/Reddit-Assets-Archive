@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.9339cf79d2a16b2c174f.js
-// Retrieved at 4/23/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.1dd94db2ed23949940f2.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, r) {
@@ -22,27 +22,27 @@
 					pageName: m
 				} = e.params, O = e.queryParams, {
 					page: _,
-					profile: f,
+					profile: g,
 					subreddit: b
-				} = O, g = r();
+				} = O, f = r();
 				if (!m) return;
 				const A = Object(n.a)({
 						onlyOfType: O.only,
 						profile: O.profile,
 						subreddit: O.subreddit
 					}),
-					Q = g.modQueue[m].itemOrder[A],
+					Q = f.modQueue[m].itemOrder[A],
 					L = !!(Q && Q[_] && Q[_].length),
-					j = g.modQueue[m].api.error;
-				if (g.modQueue[m].api.pending || L && !j) return;
-				Object(l.o)(g) || await Object(a.e)(A, m, O)(t, r, s);
+					j = f.modQueue[m].api.error;
+				if (f.modQueue[m].api.pending || L && !j) return;
+				Object(l.o)(f) || await Object(a.e)(A, m, O)(t, r, s);
 				const y = r();
 				if (d()(y.modQueue[m].api.error, "type") === i.C.AUTHENTICATION_ERROR) return Object(c.a)(t, y);
-				Object(u.f)(y, m, b, f), t(p.l({
+				Object(u.g)(y, m, b, g), t(p.l({
 					title: Object(o.d)()
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue.9339cf79d2a16b2c174f.js.map
+//# sourceMappingURL=ModQueue.1dd94db2ed23949940f2.js.map

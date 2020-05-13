@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f7b3533cc3d4e6e27138.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.7045a68c889c9dcfa6a6.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -484,7 +484,7 @@
 					comment: (e, t) => Object(C.n)(e, t),
 					flair: C.e,
 					language: k.P,
-					subreddit: v.G
+					subreddit: v.H
 				}),
 				T = Object(r.b)(R, (e, t) => {
 					let {
@@ -1070,48 +1070,38 @@
 		"./src/reddit/components/Popup/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return l
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/uuid/v4.js"),
-				a = s.n(r);
-			var i = s("./src/reddit/components/Popup/index.m.less"),
-				c = s.n(i);
+				a = s.n(r),
+				i = s("./src/reddit/hooks/useOnClickOutside.ts"),
+				c = s("./src/reddit/components/Popup/index.m.less"),
+				d = s.n(c);
 
-			function d(e) {
+			function l(e) {
 				const {
 					id: t = a()(),
 					onClose: s,
-					onClickOutside: r,
-					title: i,
-					children: d
+					onClickOutside: n,
+					title: r,
+					children: c
 				} = e;
-				return function(e, t) {
-					const s = Object(n.useCallback)(s => {
-						if (!t) return;
-						const n = document.getElementById(e);
-						n && (n.contains(s.target) || t(s))
-					}, [e, t]);
-					Object(n.useEffect)(() => {
-						if (t) return document.body.addEventListener("click", s), () => {
-							document.body.removeEventListener("click", s)
-						}
-					}, [t, s])
-				}(t, r), o.a.createElement("div", {
+				return Object(i.a)(t, n), o.a.createElement("div", {
 					id: t,
 					"aria-modal": !0,
-					className: c.a.popup,
+					className: d.a.popup,
 					role: "dialog",
 					tabIndex: -1
 				}, o.a.createElement("h3", {
-					className: c.a.header
+					className: d.a.header
 				}, o.a.createElement("span", {
-					className: c.a.title
-				}, i), o.a.createElement("button", {
-					className: c.a.closeButton,
+					className: d.a.title
+				}, r), o.a.createElement("button", {
+					className: d.a.closeButton,
 					onClick: s
-				}, "✕")), d)
+				}, "✕")), c)
 			}
 		},
 		"./src/reddit/components/PostFlairPicker/index.m.less": function(e, t, s) {
@@ -1156,7 +1146,7 @@
 				},
 				j = Object(c.c)({
 					flairData: C.d,
-					subreddit: v.P,
+					subreddit: v.Q,
 					isMod: (e, t) => !!Object(g.j)(e, t)
 				});
 			class E extends a.a.Component {
@@ -1989,6 +1979,26 @@
 					post: n.post(r, t)
 				})
 		},
+		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return o
+			}));
+			var n = s("./node_modules/react/index.js");
+
+			function o(e, t) {
+				const s = Object(n.useCallback)(s => {
+					if (!t) return;
+					const n = document.getElementById(e);
+					n && (n.contains(s.target) || t(s))
+				}, [e, t]);
+				Object(n.useEffect)(() => {
+					if (t) return document.body.addEventListener("click", s), () => {
+						document.body.removeEventListener("click", s)
+					}
+				}, [t, s])
+			}
+		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, s) {
 			"use strict";
 			var n = s("./src/reddit/components/TrackingHelper/index.tsx");
@@ -2310,4 +2320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.f7b3533cc3d4e6e27138.js.map
+//# sourceMappingURL=ModQueuePages.7045a68c889c9dcfa6a6.js.map

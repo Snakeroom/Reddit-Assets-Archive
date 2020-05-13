@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.ca71cc5f17331cc88264.js
-// Retrieved at 5/6/2020, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.93cb8ec22644c7ff19cc.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1092,7 +1092,7 @@
 						return !!Object(y.w)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(X.G)(e, {
+						const n = Object(X.H)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -5069,48 +5069,38 @@
 		"./src/reddit/components/Popup/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return l
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./node_modules/uuid/v4.js"),
-				a = n.n(r);
-			var i = n("./src/reddit/components/Popup/index.m.less"),
-				c = n.n(i);
+				a = n.n(r),
+				i = n("./src/reddit/hooks/useOnClickOutside.ts"),
+				c = n("./src/reddit/components/Popup/index.m.less"),
+				d = n.n(c);
 
-			function d(e) {
+			function l(e) {
 				const {
 					id: t = a()(),
 					onClose: n,
-					onClickOutside: r,
-					title: i,
-					children: d
+					onClickOutside: s,
+					title: r,
+					children: c
 				} = e;
-				return function(e, t) {
-					const n = Object(s.useCallback)(n => {
-						if (!t) return;
-						const s = document.getElementById(e);
-						s && (s.contains(n.target) || t(n))
-					}, [e, t]);
-					Object(s.useEffect)(() => {
-						if (t) return document.body.addEventListener("click", n), () => {
-							document.body.removeEventListener("click", n)
-						}
-					}, [t, n])
-				}(t, r), o.a.createElement("div", {
+				return Object(i.a)(t, s), o.a.createElement("div", {
 					id: t,
 					"aria-modal": !0,
-					className: c.a.popup,
+					className: d.a.popup,
 					role: "dialog",
 					tabIndex: -1
 				}, o.a.createElement("h3", {
-					className: c.a.header
+					className: d.a.header
 				}, o.a.createElement("span", {
-					className: c.a.title
-				}, i), o.a.createElement("button", {
-					className: c.a.closeButton,
+					className: d.a.title
+				}, r), o.a.createElement("button", {
+					className: d.a.closeButton,
 					onClick: n
-				}, "✕")), d)
+				}, "✕")), c)
 			}
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, n) {
@@ -8495,7 +8485,7 @@
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
 				language: i.P,
-				userIsSubscriber: a.Z
+				userIsSubscriber: a.ab
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -9175,6 +9165,26 @@
 					post: s.post(r, t)
 				})
 		},
+		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./node_modules/react/index.js");
+
+			function o(e, t) {
+				const n = Object(s.useCallback)(n => {
+					if (!t) return;
+					const s = document.getElementById(e);
+					s && (s.contains(n.target) || t(n))
+				}, [e, t]);
+				Object(s.useEffect)(() => {
+					if (t) return document.body.addEventListener("click", n), () => {
+						document.body.removeEventListener("click", n)
+					}
+				}, [t, n])
+			}
+		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/components/TrackingHelper/index.tsx");
@@ -9731,7 +9741,7 @@
 					measureScrollFPS: Z.d.measureScrollFPS,
 					layout: j.N,
 					loadMore: Y.d,
-					subredditsById: X.V,
+					subredditsById: X.W,
 					viewportDataLoaded: $.a,
 					commentsById: S.r,
 					itemIds: Y.f,
@@ -9912,7 +9922,7 @@
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(x.a, E), a.a.createElement(f.a, null), a.a.createElement(ce, {
 						listingKey: r,
 						listingName: g,
-						listingViewed: (e, t) => Object(me.j)(r, p, t, e, u),
+						listingViewed: (e, t) => Object(me.k)(r, p, t, e, u),
 						noPostsComponent: () => a.a.createElement(h.b, {
 							profileName: m,
 							timeSort: u
@@ -9941,4 +9951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.ca71cc5f17331cc88264.js.map
+//# sourceMappingURL=ProfileComments.93cb8ec22644c7ff19cc.js.map

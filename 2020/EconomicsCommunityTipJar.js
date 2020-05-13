@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.f15796655bac800ff716.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.997c1c23b62aeb2297b6.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -85,7 +85,7 @@
 			const {
 				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = 1e4, j = 500;
-			class P extends r.a.Component {
+			class N extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						loadBufferTimePassed: !1
@@ -137,10 +137,10 @@
 					}))) : null
 				}
 			}
-			const N = Object(i.c)({
+			const P = Object(i.c)({
 				communityTipJarAmount: y.k,
 				subredditAssets: E.l,
-				subreddit: O.P,
+				subreddit: O.Q,
 				tipsProportions: (e, t) => {
 					let {
 						subredditId: s
@@ -151,7 +151,7 @@
 					})
 				}
 			});
-			t.default = Object(o.b)(N, (e, t) => {
+			t.default = Object(o.b)(P, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -161,7 +161,7 @@
 						contentIds: [s]
 					}))
 				}
-			})(P)
+			})(N)
 		},
 		"./src/reddit/components/Economics/EntryPoints/CommunitySupportCTA/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -729,7 +729,7 @@
 			})), s.d(t, "n", (function() {
 				return j
 			})), s.d(t, "k", (function() {
-				return P
+				return N
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				r = s("./src/reddit/endpoints/governance/crypto.ts"),
@@ -842,11 +842,11 @@
 						address: void 0
 					}
 				},
-				P = (e, t) => {
+				N = (e, t) => {
 					const s = O(e, t);
 					return !!s && !!s.walletProvider && !s.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.f15796655bac800ff716.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.997c1c23b62aeb2297b6.js.map

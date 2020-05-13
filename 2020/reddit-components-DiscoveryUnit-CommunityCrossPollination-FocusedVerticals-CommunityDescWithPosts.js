@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.f5c2b006ba98a949150a.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.0779ded9ef1c7a7bbb30.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -509,8 +509,8 @@
 			const {
 				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(c.c)({
-				subreddit: g.P,
-				subredditAboutInfo: g.v
+				subreddit: g.Q,
+				subredditAboutInfo: g.w
 			}), S = Object(o.b)(j);
 			class y extends r.a.Component {
 				constructor() {
@@ -1155,7 +1155,7 @@
 								subredditName: n,
 								[r]: s.id
 							},
-							i = Object(l.y)(e, {
+							i = Object(l.z)(e, {
 								subredditName: n
 							});
 						return i ? {
@@ -1260,4 +1260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.f5c2b006ba98a949150a.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.0779ded9ef1c7a7bbb30.js.map

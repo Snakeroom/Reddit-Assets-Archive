@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e99e371ba857ae20cb0b.js
-// Retrieved at 5/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.11270e14a1329898b9ac.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -734,7 +734,7 @@
 					const s = e.platform.currentPage;
 					if (!s) return {};
 					const n = "".concat(e.meta.protocol, "://").concat(e.meta.domain);
-					return Object(u.b)(t.placement, e.user, Object(d.a)("".concat(n).concat(s.url), s.queryParams), Object(h.y)(e, {
+					return Object(u.b)(t.placement, e.user, Object(d.a)("".concat(n).concat(s.url), s.queryParams), Object(h.z)(e, {
 						subredditName: t.listingName
 					}), t.position)
 				}),
@@ -2122,7 +2122,7 @@
 						return !!Object(C.w)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Z.G)(e, {
+						const s = Object(Z.H)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -3048,7 +3048,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return s ? Object(te.v)(e, {
+						return s ? Object(te.w)(e, {
 							subredditName: s.name
 						}) : void 0
 					},
@@ -6677,8 +6677,8 @@
 					className: b.a.icon
 				}),
 				x = Object(a.c)({
-					subreddit: p.y,
-					subredditAboutInfo: p.v
+					subreddit: p.z,
+					subredditAboutInfo: p.w
 				}),
 				f = Object(i.b)(x);
 			t.a = f(e => {
@@ -7367,48 +7367,38 @@
 		"./src/reddit/components/Popup/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return l
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/uuid/v4.js"),
-				i = s.n(r);
-			var a = s("./src/reddit/components/Popup/index.m.less"),
-				d = s.n(a);
+				i = s.n(r),
+				a = s("./src/reddit/hooks/useOnClickOutside.ts"),
+				d = s("./src/reddit/components/Popup/index.m.less"),
+				c = s.n(d);
 
-			function c(e) {
+			function l(e) {
 				const {
 					id: t = i()(),
 					onClose: s,
-					onClickOutside: r,
-					title: a,
-					children: c
+					onClickOutside: n,
+					title: r,
+					children: d
 				} = e;
-				return function(e, t) {
-					const s = Object(n.useCallback)(s => {
-						if (!t) return;
-						const n = document.getElementById(e);
-						n && (n.contains(s.target) || t(s))
-					}, [e, t]);
-					Object(n.useEffect)(() => {
-						if (t) return document.body.addEventListener("click", s), () => {
-							document.body.removeEventListener("click", s)
-						}
-					}, [t, s])
-				}(t, r), o.a.createElement("div", {
+				return Object(a.a)(t, n), o.a.createElement("div", {
 					id: t,
 					"aria-modal": !0,
-					className: d.a.popup,
+					className: c.a.popup,
 					role: "dialog",
 					tabIndex: -1
 				}, o.a.createElement("h3", {
-					className: d.a.header
+					className: c.a.header
 				}, o.a.createElement("span", {
-					className: d.a.title
-				}, a), o.a.createElement("button", {
-					className: d.a.closeButton,
+					className: c.a.title
+				}, r), o.a.createElement("button", {
+					className: c.a.closeButton,
 					onClick: s
-				}, "✕")), c)
+				}, "✕")), d)
 			}
 		},
 		"./src/reddit/components/PostBadges/index.m.less": function(e, t, s) {
@@ -8694,7 +8684,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(w.P)(e, {
+					return s ? Object(w.Q)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -9046,7 +9036,7 @@
 				},
 				j = Object(d.c)({
 					flairData: v.d,
-					subreddit: C.P,
+					subreddit: C.Q,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
 			class w extends i.a.Component {
@@ -10243,7 +10233,7 @@
 				}));
 			class H extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(b.d) : null, this.onViewed = (e, t) => Object(C.d)(this.listingKey(), l.M.TOP, t, e, l.Pb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(b.d) : null, this.onViewed = (e, t) => Object(C.e)(this.listingKey(), l.M.TOP, t, e, l.Pb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(v.c)("recommended_footer"))
 					}
 				}
@@ -12230,7 +12220,7 @@
 					url: e => Object(b.X)(e)
 				}),
 				P = Object(a.c)({
-					subredditId: (e, t) => Object(O.D)(e, t.subredditName)
+					subredditId: (e, t) => Object(O.E)(e, t.subredditName)
 				}),
 				I = Object(i.b)(P),
 				S = l.a.div("WidgetContent", y.a),
@@ -13027,7 +13017,7 @@
 						} = t;
 						return Object(g.J)(e, s, n, o)
 					}),
-					subredditsById: x.V,
+					subredditsById: x.W,
 					viewportDataLoaded: f.a,
 					pageReferrer: l.Q,
 					postListPlaceholderComponent: () => u.a
@@ -13068,7 +13058,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
 				language: a.P,
-				userIsSubscriber: i.Z
+				userIsSubscriber: i.ab
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -14320,6 +14310,26 @@
 					})
 				})
 		},
+		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return o
+			}));
+			var n = s("./node_modules/react/index.js");
+
+			function o(e, t) {
+				const s = Object(n.useCallback)(s => {
+					if (!t) return;
+					const n = document.getElementById(e);
+					n && (n.contains(s.target) || t(s))
+				}, [e, t]);
+				Object(n.useEffect)(() => {
+					if (t) return document.body.addEventListener("click", s), () => {
+						document.body.removeEventListener("click", s)
+					}
+				}, [t, s])
+			}
+		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, s) {
 			"use strict";
 			var n = s("./src/reddit/components/TrackingHelper/index.tsx");
@@ -15529,7 +15539,7 @@
 						let {
 							subredditName: s
 						} = t;
-						return s ? Object(me.v)(e, {
+						return s ? Object(me.w)(e, {
 							subredditName: s
 						}) : void 0
 					},
@@ -16326,4 +16336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.e99e371ba857ae20cb0b.js.map
+//# sourceMappingURL=CommentsPage.11270e14a1329898b9ac.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.022afa7eb2d5c82d8a4a.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.39b76a8ae0c9a2db4604.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -362,7 +362,7 @@
 				q = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
 				K = s.n(q);
 			const z = "newbie_badge";
-			class Z extends r.a.Component {
+			class V extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object(H.a)(this.props.apiContext(), {
@@ -404,10 +404,10 @@
 					})))) : null
 				}
 			}
-			const V = Object(c.c)({
+			const Z = Object(c.c)({
 				newbieBadge: e => Object(G.a)(e, z)
 			});
-			var Q = Object(b.b)(Object(m.c)(Object(a.b)(V, (e, t) => {
+			var Q = Object(b.b)(Object(m.c)(Object(a.b)(Z, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -420,7 +420,7 @@
 							}))
 						}
 					}
-				})(Z))),
+				})(V))),
 				Y = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.m.less"),
 				X = s.n(Y);
 			class J extends r.a.Component {
@@ -494,7 +494,7 @@
 					subreddit: p.q,
 					userIsSubscribed: (e, t) => {
 						const s = Object(p.q)(e, t);
-						return !!s && Object(j.Z)(e, {
+						return !!s && Object(j.ab)(e, {
 							identifier: {
 								name: s.name,
 								type: "subreddit"
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.022afa7eb2d5c82d8a4a.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.39b76a8ae0c9a2db4604.js.map

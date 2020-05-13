@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.e1eed41bb16001c0d2f3.js
-// Retrieved at 5/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.ca3a1cf45b9b003ae345.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -129,7 +129,7 @@
 					const s = e.platform.currentPage;
 					if (!s) return {};
 					const n = "".concat(e.meta.protocol, "://").concat(e.meta.domain);
-					return Object(b.b)(t.placement, e.user, Object(c.a)("".concat(n).concat(s.url), s.queryParams), Object(p.y)(e, {
+					return Object(b.b)(t.placement, e.user, Object(c.a)("".concat(n).concat(s.url), s.queryParams), Object(p.z)(e, {
 						subredditName: t.listingName
 					}), t.position)
 				}),
@@ -961,7 +961,7 @@
 				o = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
 				language: o.P,
-				userIsSubscriber: i.Z
+				userIsSubscriber: i.ab
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1045,4 +1045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.e1eed41bb16001c0d2f3.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.ca3a1cf45b9b003ae345.js.map

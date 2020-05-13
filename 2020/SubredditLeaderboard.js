@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6b287733eb70a178bc71.js
-// Retrieved at 5/13/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.4c121b66a792c06b84fa.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1207,9 +1207,9 @@
 						let {
 							categoryId: r
 						} = t;
-						return Object(F.K)(e, r)
+						return Object(F.L)(e, r)
 					},
-					subreddits: F.V
+					subreddits: F.W
 				}),
 				H = Object(i.b)(M, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(L.a)(t, r))
@@ -1530,7 +1530,7 @@
 				}
 				componentDidMount() {
 					const e = this.getWidgetCategories();
-					this.setWidgetCategories(e), this.props.sendEvent(Object(b.c)())
+					this.setWidgetCategories(e), this.props.sendEvent(Object(b.d)())
 				}
 				componentDidUpdate(e) {
 					this.resetScrollPosition(), this.updateWidgetCategories(e)
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.6b287733eb70a178bc71.js.map
+//# sourceMappingURL=SubredditLeaderboard.4c121b66a792c06b84fa.js.map

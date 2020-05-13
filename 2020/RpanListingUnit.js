@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.fce65512f84223c12cf6.js
-// Retrieved at 5/12/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.537de20c7c7e0417a38e.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -495,7 +495,7 @@
 				v = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(h.n)(e, t),
-					r = Object(v.G)(e, t);
+					r = Object(v.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -533,7 +533,7 @@
 			}));
 			const S = (e, t) => {
 				const s = Object(h.n)(e, t),
-					r = Object(v.G)(e, t);
+					r = Object(v.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -559,7 +559,7 @@
 				}
 			}));
 			var O = Object(i.b)(() => Object(n.c)({
-					subreddit: v.P
+					subreddit: v.Q
 				}))(e => a.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -671,7 +671,7 @@
 				}
 			}));
 			var w = Object(i.b)(() => Object(n.c)({
-				subreddit: v.P
+				subreddit: v.Q
 			}))(e => a.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -684,7 +684,7 @@
 				}
 			}));
 			var N = Object(i.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(v.J)(e, {
+				subredditOrProfile: (e, t) => Object(v.K)(e, {
 					identifier: t
 				})
 			}))(e => a.a.createElement(p, {
@@ -703,7 +703,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(v.P)(e, {
+					return s ? Object(v.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -814,7 +814,7 @@
 			}, V._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
-			class J extends r.Component {
+			class K extends r.Component {
 				constructor() {
 					super(...arguments), this._unsubscribeConfig = () => {}, this._unsubscribeStats = () => {}, this._unsubscribeStreams = () => {}, this.observableElement = a.a.createRef(), this.state = {
 						isReady: !1,
@@ -892,9 +892,9 @@
 					}, e !== b.g.Large && a.a.createElement(_.b, {
 						className: F.a.leftRail,
 						withoutComputedStyles: e === b.g.Compact
-					}, a.a.createElement(G, {
+					}, a.a.createElement(J, {
 						isVertical: !0
-					}), e === b.g.Compact && a.a.createElement(G, {
+					}), e === b.g.Compact && a.a.createElement(J, {
 						isVertical: !1
 					})), a.a.createElement(R.a, {
 						className: F.a.backgroundWrapper,
@@ -913,7 +913,7 @@
 						className: F.a.header
 					}, this.renderTitleAndDescription(), a.a.createElement("div", {
 						className: F.a.flatListContainer
-					}, a.a.createElement(q, {
+					}, a.a.createElement(G, {
 						onClick: this.onHideUnitClicked
 					}))), a.a.createElement("div", {
 						className: F.a.body
@@ -938,11 +938,11 @@
 						className: F.a.main
 					}, this.renderTitleAndDescription(!0), a.a.createElement("div", {
 						className: F.a.flatListContainer
-					}, a.a.createElement(K, {
+					}, a.a.createElement(Z, {
 						onClick: this.onHeaderClicked
 					}), a.a.createElement(g.a, {
 						className: F.a.flatlistSeparator
-					}), a.a.createElement("div", null, a.a.createElement(Z, {
+					}), a.a.createElement("div", null, a.a.createElement(q, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
@@ -951,11 +951,11 @@
 						className: F.a.body
 					}, a.a.createElement("div", {
 						className: F.a.main
-					}, a.a.createElement(K, {
+					}, a.a.createElement(Z, {
 						onClick: this.onHeaderClicked
 					}), this.renderTitleAndDescription(!0), a.a.createElement("div", {
 						className: F.a.flatListContainer
-					}, a.a.createElement(q, {
+					}, a.a.createElement(G, {
 						onClick: this.onHideUnitClicked
 					}))))
 				}
@@ -1055,7 +1055,7 @@
 					this.unsubscribeConfig(), this.unsubscribeStreams(), this.unsubscribeStats()
 				}
 			}
-			const G = e => a.a.createElement(y.a, {
+			const J = e => a.a.createElement(y.a, {
 					className: Object(o.a)({
 						[F.a.verticalVotes]: e.isVertical,
 						[F.a.horizontalVotes]: !e.isVertical
@@ -1066,7 +1066,7 @@
 					score: 0,
 					voteState: E.a.notVoted
 				})),
-				K = e => {
+				Z = e => {
 					let {
 						onClick: t
 					} = e;
@@ -1077,7 +1077,7 @@
 						className: F.a.expandoIcon
 					}))
 				},
-				Z = e => {
+				q = e => {
 					let {
 						onClick: t,
 						isLoggedIn: s
@@ -1093,7 +1093,7 @@
 						noBreakpoints: !0
 					}, a.a.createElement(M.a, null))
 				},
-				q = e => {
+				G = e => {
 					let {
 						onClick: t
 					} = e;
@@ -1113,7 +1113,7 @@
 						className: F.a.hideIcon
 					})))
 				};
-			t.default = W(Object(A.c)(J))
+			t.default = W(Object(A.c)(K))
 		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1276,4 +1276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.fce65512f84223c12cf6.js.map
+//# sourceMappingURL=RpanListingUnit.537de20c7c7e0417a38e.js.map

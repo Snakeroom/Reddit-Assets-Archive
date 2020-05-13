@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.1f474b56a36170853abe.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.2de3218fb0c3e768100f.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -21,7 +21,7 @@
 			})), s.d(t, "triggerLoader", (function() {
 				return D
 			})), s.d(t, "gildPending", (function() {
-				return H
+				return B
 			})), s.d(t, "gildFailed", (function() {
 				return U
 			})), s.d(t, "gildSuccessful", (function() {
@@ -77,7 +77,7 @@
 							isOldReddit: c,
 							isLivestream: o
 						} = t;
-					s(H());
+					s(B());
 					try {
 						const t = {
 								gildingTypeId: a.selectedAward.id,
@@ -132,7 +132,7 @@
 					} finally {
 						Object(P.b)(P.a.GildingFlow)
 					}
-				}, D = Object(i.a)(E.r), M = Object(i.a)(E.n), H = () => async (e, t) => {
+				}, D = Object(i.a)(E.r), M = Object(i.a)(E.n), B = () => async (e, t) => {
 					e(M()), window.setTimeout(() => {
 						t().gild.api.pending && e(D())
 					}, 2e3)
@@ -142,7 +142,7 @@
 						duration: c.a,
 						text: e
 					}))
-				}, B = Object(i.a)(E.q), F = (e, t) => {
+				}, F = Object(i.a)(E.q), H = (e, t) => {
 					const {
 						id: s
 					} = t, n = Object(C.a)(s) ? Object(h.N)(e, {
@@ -151,10 +151,10 @@
 						commentId: s
 					}), i = Object(O.i)(e), r = e.gild, {
 						isAnonymous: d
-					} = r, a = !d && i && (i.username || i.displayText) ? i.username || i.displayText : void 0, c = n ? n.author : void 0, o = Object(_.H)(e, {
+					} = r, a = !d && i && (i.username || i.displayText) ? i.username || i.displayText : void 0, c = n ? n.author : void 0, o = Object(_.I)(e, {
 						thingId: s
 					});
-					return B(Object.assign({}, t, {
+					return F(Object.assign({}, t, {
 						gilder: a,
 						gildee: c,
 						subredditId: o && o.id
@@ -176,16 +176,16 @@
 						})
 					}
 					if (j.awardType === o.e.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(_.H)(i, {
+						const t = Object(_.I)(i, {
 								thingId: O
 							}),
-							s = t && Object(_.A)(i, {
+							s = t && Object(_.B)(i, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - j.coinPrice)
 					}
-					t(F(i, e)), (i.posts.instances[O] || []).forEach(s => {
-						t(F(i, Object.assign({}, e, {
+					t(H(i, e)), (i.posts.instances[O] || []).forEach(s => {
+						t(H(i, Object.assign({}, e, {
 							id: s
 						})))
 					});
@@ -357,4 +357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.1f474b56a36170853abe.js.map
+//# sourceMappingURL=gildActions.2de3218fb0c3e768100f.js.map

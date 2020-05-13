@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.55ec6aecc66f81917804.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.79c6a4ba9be9e4f4492a.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -47,16 +47,16 @@
 				j = s("./src/graphql/operations/GildComment.json"),
 				v = s("./src/graphql/operations/GildPost.json"),
 				O = s("./src/lib/makeGqlRequest/index.ts"),
-				N = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const P = (e, t, s) => Object(O.a)(e, Object.assign({}, v, {
+				I = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const N = (e, t, s) => Object(O.a)(e, Object.assign({}, v, {
 					variables: t
 				}), {
-					query: s ? {} : Object(N.b)()
+					query: s ? {} : Object(I.b)()
 				}),
-				I = (e, t, s) => Object(O.a)(e, Object.assign({}, j, {
+				P = (e, t, s) => Object(O.a)(e, Object.assign({}, j, {
 					variables: t
 				}), {
-					query: s ? {} : Object(N.b)()
+					query: s ? {} : Object(I.b)()
 				});
 			var A = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				C = s("./src/reddit/helpers/awards/message.ts"),
@@ -86,7 +86,7 @@
 								message: Object(C.d)(c.message, c.selectedAward, o),
 								nodeId: e
 							},
-							n = Object(_.a)(e) ? P : I,
+							n = Object(_.a)(e) ? N : P,
 							r = await n(i(), {
 								input: t
 							}, d);
@@ -151,7 +151,7 @@
 						commentId: s
 					}), n = Object(f.i)(e), r = e.gild, {
 						isAnonymous: i
-					} = r, c = !i && n && (n.username || n.displayText) ? n.username || n.displayText : void 0, d = a ? a.author : void 0, o = Object(E.H)(e, {
+					} = r, c = !i && n && (n.username || n.displayText) ? n.username || n.displayText : void 0, d = a ? a.author : void 0, o = Object(E.I)(e, {
 						thingId: s
 					});
 					return q(Object.assign({}, t, {
@@ -176,10 +176,10 @@
 						})
 					}
 					if (j.awardType === o.e.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(E.H)(n, {
+						const t = Object(E.I)(n, {
 								thingId: f
 							}),
-							s = t && Object(E.A)(n, {
+							s = t && Object(E.B)(n, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - j.coinPrice)
@@ -203,14 +203,14 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const N = Object(_.a)(f) && Object(m.i)(Object(w.N)(n, {
+					const I = Object(_.a)(f) && Object(m.i)(Object(w.N)(n, {
 						postId: f
 					}));
 					await t(Object(c.a)());
-					const P = Object(g.d)(s()).filter(e => l.a.has(e.dealInfo.type));
-					P.length && setTimeout(() => t(Object(i.h)({
-						packageId: P[0].mobileId
-					})), N ? 600 : 10)
+					const N = Object(g.d)(s()).filter(e => l.a.has(e.dealInfo.type));
+					N.length && setTimeout(() => t(Object(i.h)({
+						packageId: N[0].mobileId
+					})), I ? 600 : 10)
 				}
 		},
 		"./src/reddit/components/AnimatedPillBadge/index.m.less": function(e, t, s) {
@@ -349,9 +349,9 @@
 				j = s("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts"),
 				v = s("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				O = s("./src/reddit/actions/subreddit.ts"),
-				N = s("./src/reddit/selectors/comments.ts"),
-				P = s("./src/reddit/selectors/communityAwards.ts"),
-				I = s("./src/reddit/selectors/experiments/goldPremiumAwards.ts"),
+				I = s("./src/reddit/selectors/comments.ts"),
+				N = s("./src/reddit/selectors/communityAwards.ts"),
+				P = s("./src/reddit/selectors/experiments/goldPremiumAwards.ts"),
 				A = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				C = s("./src/reddit/selectors/gild.ts"),
 				x = s("./src/reddit/selectors/gold/giveAwards.ts"),
@@ -816,10 +816,10 @@
 				je = s.n(fe),
 				ve = s("./src/reddit/components/CoinBalance/index.tsx"),
 				Oe = s("./src/reddit/controls/Button/index.tsx"),
-				Ne = s("./src/reddit/controls/LoadingIcon/index.tsx");
+				Ie = s("./src/reddit/controls/LoadingIcon/index.tsx");
 			const {
-				fbt: Pe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ie = 10;
+				fbt: Ne
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Pe = 10;
 			class Ae extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleQuestionMarkClick = () => this.props.sendEvent(Object(m.clickQuestionMarkEvent)(this.props.thingId))
@@ -835,7 +835,7 @@
 					}, n.a.createElement(oe.b, {
 						className: je.a.subredditIcon,
 						subredditOrProfile: e
-					}), Pe._("r/{subredditName} Coin balance:", [Pe._param("subredditName", s)], {
+					}), Ne._("r/{subredditName} Coin balance:", [Ne._param("subredditName", s)], {
 						hk: "2ktWRF"
 					}), n.a.createElement("span", null, n.a.createElement(Y.a, null), a))
 				}
@@ -846,13 +846,13 @@
 						selectedAward: s,
 						thingId: a
 					} = this.props, n = s.awardType === u.e.Moderator;
-					return t ? Pe._("Get Premium", null, {
+					return t ? Ne._("Get Premium", null, {
 						hk: "3VB1S9"
-					}) : !e || n ? Object(o.a)(a) ? Pe._("Award post", null, {
+					}) : !e || n ? Object(o.a)(a) ? Ne._("Award post", null, {
 						hk: "1Ydq4H"
-					}) : Pe._("Award comment", null, {
+					}) : Ne._("Award comment", null, {
 						hk: "4CfMGF"
-					}) : Pe._("Next", null, {
+					}) : Ne._("Next", null, {
 						hk: "zG5NI"
 					})
 				}
@@ -883,9 +883,9 @@
 						"data-redditstyle": !0,
 						disabled: o || b && s,
 						onClick: a ? r : s ? d : i
-					}, o ? n.a.createElement(Ne.a, {
+					}, o ? n.a.createElement(Ie.a, {
 						className: je.a.loadingIcon,
-						sizePx: Ie
+						sizePx: Pe
 					}) : this.renderButtonText())), t && n.a.createElement("div", {
 						className: je.a.errorText
 					}, t))
@@ -948,7 +948,7 @@
 							subredditId: a
 						} = t, n = a;
 						if (!a) {
-							const t = Object(M.H)(e, {
+							const t = Object(M.I)(e, {
 								thingId: s
 							});
 							n = t && t.id
@@ -959,7 +959,7 @@
 							});
 							n = t && t.belongsTo.id
 						}
-						return n ? Object(P.g)(e, {
+						return n ? Object(N.g)(e, {
 							subredditId: n
 						}) : []
 					},
@@ -969,13 +969,13 @@
 							subredditId: a
 						} = t, n = a;
 						if (!a) {
-							const t = Object(M.H)(e, {
+							const t = Object(M.I)(e, {
 								thingId: s
 							});
 							if (!t) return !1;
 							n = t.id
 						}
-						return Object(P.f)(e, {
+						return Object(N.f)(e, {
 							subredditId: n
 						})
 					},
@@ -992,25 +992,25 @@
 						} = t;
 						return Object(o.a)(s) ? Object(k.N)(e, {
 							postId: s
-						}) : Object(N.n)(e, {
+						}) : Object(I.n)(e, {
 							commentId: s
 						})
 					},
 					purchaseCatalogPending: _.g,
-					showPremiumAwards: I.a,
+					showPremiumAwards: P.a,
 					showPurchaseModal: y.r,
 					selectedAward: x.a,
-					subreddit: M.H,
+					subreddit: M.I,
 					subredditCoins: (e, t) => {
 						let {
 							thingId: s,
 							subredditId: a
 						} = t;
-						const n = Object(M.H)(e, {
+						const n = Object(M.I)(e, {
 								thingId: s
 							}),
 							r = n ? n.id : a;
-						return Object(M.z)(e, {
+						return Object(M.A)(e, {
 							subredditId: r
 						})
 					},
@@ -1151,23 +1151,23 @@
 						selectAward: j,
 						selectedAward: v,
 						sendEvent: O,
-						showPurchaseModal: N,
-						showPremiumAwards: P,
-						subreddit: I,
+						showPurchaseModal: I,
+						showPremiumAwards: N,
+						subreddit: P,
 						subredditCoins: A,
 						subredditName: C,
 						thingId: x,
 						userCoins: _
 					} = this.props, {
 						showPurchaseModalInThisInstance: y
-					} = this.state, k = f ? f.author : e, S = Object(o.a)(x) ? "post" : "comment", M = N && y, T = M && !v.pennyPrice, B = M && !!v.pennyPrice, G = (T || B) && !l;
+					} = this.state, k = f ? f.author : e, S = Object(o.a)(x) ? "post" : "comment", M = I && y, T = M && !v.pennyPrice, B = M && !!v.pennyPrice, G = (T || B) && !l;
 					if (T && G) return n.a.createElement(L.a, {
 						isCompletePaypal: !1
 					});
 					if (B && G) return n.a.createElement(R, {
 						isCompletePaypal: !1
 					});
-					const D = I ? I.name : C,
+					const D = P ? P.name : C,
 						F = Me.includes(D) ? "pan" : D,
 						V = !i || !i.isGold && v.awardSubType === u.c.Premium;
 					return n.a.createElement("div", {
@@ -1188,8 +1188,8 @@
 						},
 						selectedAward: v,
 						sendEvent: O,
-						showPremiumAwards: P,
-						subreddit: I,
+						showPremiumAwards: N,
+						subreddit: P,
 						subredditName: F,
 						thingId: x,
 						isLivestream: b,
@@ -1214,7 +1214,7 @@
 						pending: E,
 						selectedAward: v,
 						sendEvent: O,
-						subreddit: I,
+						subreddit: P,
 						subredditName: F,
 						subredditCoins: A,
 						thingId: x,
@@ -1364,7 +1364,7 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "k", (function() {
-				return N
+				return I
 			})), s.d(t, "l", (function() {
 				return A
 			})), s.d(t, "m", (function() {
@@ -1442,10 +1442,10 @@
 						})
 					}, a)
 				}),
-				N = (e, t) => {
+				I = (e, t) => {
 					return O(e)[Object(i.g)(t)]
 				},
-				P = Object(a.a)((e, t) => {
+				N = Object(a.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -1468,7 +1468,7 @@
 					const o = new Set([...a, ...n]);
 					return Object.keys(s).filter(e => !o.has(e)).map(e => s[e]).filter(e => e.rank !== r.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== c.b.KILLED && e.stream.state !== c.b.PURGED).map(e => e.post.id)
 				}),
-				I = Object(a.a)((e, t) => {
+				P = Object(a.a)((e, t) => {
 					let {
 						count: s
 					} = t;
@@ -1478,7 +1478,7 @@
 						listingName: s,
 						streamIdFromPath: a
 					} = t;
-					return P(e, {
+					return N(e, {
 						listingName: s,
 						streamIdFromPath: a
 					})
@@ -1486,21 +1486,21 @@
 					const a = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? a.slice(0, e) : a
 				}),
-				A = Object(a.a)(O, I, (e, t) => {
+				A = Object(a.a)(O, P, (e, t) => {
 					const s = t.find(t => {
 						const s = e[t];
 						return !!s && s.stream.state === c.b.IS_LIVE
 					});
 					if (s) return e[s]
 				}),
-				C = Object(a.a)(O, I, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === c.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				C = Object(a.a)(O, P, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === c.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				x = Object(a.a)(E, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: a,
 						subreddit: n
 					} = t;
-					return I(e, {
+					return P(e, {
 						listingName: s || n,
 						streamIdFromPath: a
 					})
@@ -1520,7 +1520,7 @@
 						streamIdFromPath: a,
 						subreddit: n
 					} = t;
-					return I(e, {
+					return P(e, {
 						listingName: s || n,
 						streamIdFromPath: a
 					})
@@ -1547,7 +1547,7 @@
 						streamIdFromPath: a,
 						subreddit: n
 					} = t;
-					return I(e, {
+					return P(e, {
 						listingName: s || n,
 						streamIdFromPath: a
 					})
@@ -1571,7 +1571,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? N(e, s) : void 0
+					return s ? I(e, s) : void 0
 				}, e => !e || e.chat_disabled);
 
 			function F(e, t) {
@@ -1627,4 +1627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.55ec6aecc66f81917804.js.map
+//# sourceMappingURL=FramedGild~GildModal.79c6a4ba9be9e4f4492a.js.map

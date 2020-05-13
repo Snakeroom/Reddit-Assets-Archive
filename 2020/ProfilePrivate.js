@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.8fd76805bbcd6ab5560e.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.784d4530c8b61dc053fc.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1329,7 +1329,7 @@
 						return !!Object(y.w)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Y.G)(e, {
+						const s = Object(Y.H)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -3465,48 +3465,38 @@
 		"./src/reddit/components/Popup/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return l
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./node_modules/uuid/v4.js"),
-				i = s.n(r);
-			var a = s("./src/reddit/components/Popup/index.m.less"),
-				d = s.n(a);
+				i = s.n(r),
+				a = s("./src/reddit/hooks/useOnClickOutside.ts"),
+				d = s("./src/reddit/components/Popup/index.m.less"),
+				c = s.n(d);
 
-			function c(e) {
+			function l(e) {
 				const {
 					id: t = i()(),
 					onClose: s,
-					onClickOutside: r,
-					title: a,
-					children: c
+					onClickOutside: o,
+					title: r,
+					children: d
 				} = e;
-				return function(e, t) {
-					const s = Object(o.useCallback)(s => {
-						if (!t) return;
-						const o = document.getElementById(e);
-						o && (o.contains(s.target) || t(s))
-					}, [e, t]);
-					Object(o.useEffect)(() => {
-						if (t) return document.body.addEventListener("click", s), () => {
-							document.body.removeEventListener("click", s)
-						}
-					}, [t, s])
-				}(t, r), n.a.createElement("div", {
+				return Object(a.a)(t, o), n.a.createElement("div", {
 					id: t,
 					"aria-modal": !0,
-					className: d.a.popup,
+					className: c.a.popup,
 					role: "dialog",
 					tabIndex: -1
 				}, n.a.createElement("h3", {
-					className: d.a.header
+					className: c.a.header
 				}, n.a.createElement("span", {
-					className: d.a.title
-				}, a), n.a.createElement("button", {
-					className: d.a.closeButton,
+					className: c.a.title
+				}, r), n.a.createElement("button", {
+					className: c.a.closeButton,
 					onClick: s
-				}, "✕")), c)
+				}, "✕")), d)
 			}
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
@@ -6649,7 +6639,7 @@
 					currentUser: f.i,
 					layout: l.N,
 					loadMore: b.d,
-					subredditsById: h.V,
+					subredditsById: h.W,
 					viewportDataLoaded: x.a,
 					commentsById: b.g,
 					itemIds: b.f,
@@ -6684,7 +6674,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(o.b)(() => Object(n.c)({
 				language: a.P,
-				userIsSubscriber: i.Z
+				userIsSubscriber: i.ab
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -7262,6 +7252,26 @@
 					post: o.post(r, t)
 				})
 		},
+		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			}));
+			var o = s("./node_modules/react/index.js");
+
+			function n(e, t) {
+				const s = Object(o.useCallback)(s => {
+					if (!t) return;
+					const o = document.getElementById(e);
+					o && (o.contains(s.target) || t(s))
+				}, [e, t]);
+				Object(o.useEffect)(() => {
+					if (t) return document.body.addEventListener("click", s), () => {
+						document.body.removeEventListener("click", s)
+					}
+				}, [t, s])
+			}
+		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, s) {
 			"use strict";
 			var o = s("./src/reddit/components/TrackingHelper/index.tsx");
@@ -7679,13 +7689,13 @@
 						listingKey: r,
 						noPostsComponent: this.renderNoPosts(t),
 						listingName: o,
-						listingViewed: Object(V.m)(r),
+						listingViewed: Object(V.n)(r),
 						onLoadMore: this.onLoadMore
 					}) : n.a.createElement(Q, {
 						listingKey: r,
 						noPostsComponent: this.renderNoPosts(t),
 						listingName: o,
-						listingViewed: Object(V.m)(r),
+						listingViewed: Object(V.n)(r),
 						onLoadMore: this.onLoadMore
 					}) : n.a.createElement(d.a, null)
 				}
@@ -7721,4 +7731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.8fd76805bbcd6ab5560e.js.map
+//# sourceMappingURL=ProfilePrivate.784d4530c8b61dc053fc.js.map

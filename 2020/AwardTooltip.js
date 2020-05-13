@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.c0c78207708541813583.js
-// Retrieved at 4/28/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.fe99c73e0fc4b882802d.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -53,8 +53,8 @@
 				y = o("./src/reddit/icons/svgs/Hide/index.tsx"),
 				N = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				T = o("./src/reddit/icons/svgs/Report/index.tsx"),
-				k = (o("./node_modules/core-js/modules/es6.regexp.split.js"), o("./src/reddit/icons/fonts/Coin/index.tsx"));
-			const I = e => {
+				I = (o("./node_modules/core-js/modules/es6.regexp.split.js"), o("./src/reddit/icons/fonts/Coin/index.tsx"));
+			const k = e => {
 				const {
 					award: t
 				} = e;
@@ -62,7 +62,7 @@
 					const e = t.description.split("%{coin_symbol}");
 					return n.a.createElement(n.a.Fragment, null, e.map((e, t) => 0 === t ? e : n.a.createElement(n.a.Fragment, {
 						key: e
-					}, n.a.createElement(k.a, null), e)))
+					}, n.a.createElement(I.a, null), e)))
 				}
 				return null
 			};
@@ -74,7 +74,7 @@
 						let {
 							postOrComment: o
 						} = t;
-						const r = Object(O.H)(e, {
+						const r = Object(O.I)(e, {
 							thingId: o.id
 						});
 						return r ? Object(g.j)(e, {
@@ -85,7 +85,7 @@
 						let {
 							postOrComment: o
 						} = t;
-						return Object(O.H)(e, {
+						return Object(O.I)(e, {
 							thingId: o.id
 						})
 					}
@@ -226,7 +226,7 @@
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
 						className: A.a.awardDescription
-					}, n.a.createElement(I, {
+					}, n.a.createElement(k, {
 						award: e
 					})), e.awardType === f.e.Community && i && n.a.createElement("div", {
 						className: A.a.subreddit
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.c0c78207708541813583.js.map
+//# sourceMappingURL=AwardTooltip.fe99c73e0fc4b882802d.js.map

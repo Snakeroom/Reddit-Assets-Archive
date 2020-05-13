@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f91c3bd032e8644e8d28.js
-// Retrieved at 5/13/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1bc37ced3faaf76f6402.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -202,12 +202,12 @@
 				W = n("./src/reddit/helpers/overlay/index.ts"),
 				U = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
 				R = n.n(U),
-				J = n("./src/lib/lessComponent.tsx");
-			const Q = Object(o.b)(null, (e, t) => ({
+				Q = n("./src/lib/lessComponent.tsx");
+			const J = Object(o.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(W.a)(t.permalink)),
 					clearLinks: () => e(Object(w.u)())
 				})),
-				M = J.a.button("ClearButton", R.a);
+				M = Q.a.button("ClearButton", R.a);
 			class Z extends r.a.Component {
 				render() {
 					return r.a.createElement(B.b, null, r.a.createElement(D, {
@@ -224,14 +224,14 @@
 					})))
 				}
 			}
-			var H = Q(Z),
+			var H = J(Z),
 				X = n("./src/reddit/selectors/posts.ts"),
 				V = n("./src/reddit/selectors/user.ts");
 			const K = Object(i.c)({
 				language: V.P,
 				recentPosts: X.W
 			});
-			var G = Object(o.b)(K, (e, t) => ({
+			var Y = Object(o.b)(K, (e, t) => ({
 					openLightbox: t => () => e(Object(W.a)(t.permalink))
 				}))(e => {
 					let {
@@ -248,12 +248,12 @@
 						posts: n
 					})) : null
 				}),
-				Y = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				G = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				q = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
 				z = n("./src/reddit/selectors/subreddit.ts");
 			var $ = Object(o.b)(Object(i.c)({
 					communities: z.g
-				}))(Object(Y.c)(e => r.a.createElement(q.b, {
+				}))(Object(G.c)(e => r.a.createElement(q.b, {
 					className: e.className,
 					communities: e.communities,
 					getClickEventFactory: e.getClickEventFactory,
@@ -284,7 +284,7 @@
 					isMod: V.I,
 					isLoggedIn: e => e.user.temporaryGQL.isLoggedIn,
 					isUpAndComingExperiment: ie.b,
-					trendingSubredditIds: z.X,
+					trendingSubredditIds: z.Y,
 					currentUser: V.i,
 					frontpageLinks: ce.b,
 					isOver18: V.U
@@ -337,7 +337,7 @@
 						})
 					})), a && r.a.createElement(l.a, null, r.a.createElement(c.a, {
 						listingName: d
-					})), pe(this.props) && r.a.createElement(G, null), n && r.a.createElement(l.a, null, r.a.createElement(O, {
+					})), pe(this.props) && r.a.createElement(Y, null), n && r.a.createElement(l.a, null, r.a.createElement(O, {
 						links: n
 					})), r.a.createElement(L.a, {
 						adComponent: r.a.createElement(T.a, {
@@ -387,7 +387,7 @@
 						crosspost: n,
 						language: s,
 						post: t,
-						subredditOrProfile: Object(g.J)(e, {
+						subredditOrProfile: Object(g.K)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -694,7 +694,7 @@
 						t = e && e.data && e.data.subredditLeaderboard;
 					return Object(A.c)(t)
 				}
-			}, J = async e => {
+			}, Q = async e => {
 				const t = a()(W.a, 5),
 					n = await Object(I.a)(e, {
 						names: t
@@ -705,7 +705,7 @@
 					return Object(A.a)(t)
 				}
 			};
-			class Q extends o.a.Component {
+			class J extends o.a.Component {
 				constructor(e) {
 					super(e), this.fetchTopSubreddits = () => {
 						const {
@@ -725,7 +725,7 @@
 									subreddits: n
 								}
 							}))
-						}).catch(e => console.error("Error >>>", e)) : J(this.props.gqlContext()).then(e => {
+						}).catch(e => console.error("Error >>>", e)) : Q(this.props.gqlContext()).then(e => {
 							if (!e) return;
 							const {
 								rankings: t,
@@ -771,7 +771,7 @@
 					}, this.props))
 				}
 			}
-			t.a = Object(w.b)(Object(F.c)(Q))
+			t.a = Object(w.b)(Object(F.c)(J))
 		},
 		"./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx": function(e, t, n) {
 			"use strict";
@@ -960,4 +960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.f91c3bd032e8644e8d28.js.map
+//# sourceMappingURL=FrontpageSidebar.1bc37ced3faaf76f6402.js.map

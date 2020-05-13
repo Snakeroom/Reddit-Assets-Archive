@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d4d3d3a51d6de6940580.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.e4cdb4d37a8aede8987a.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -216,8 +216,8 @@
 			const {
 				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(a.c)({
-				subreddit: x.P,
-				subredditAboutInfo: x.v
+				subreddit: x.Q,
+				subredditAboutInfo: x.w
 			}), S = Object(r.b)(j);
 			class C extends i.a.Component {
 				constructor() {
@@ -386,11 +386,11 @@
 						o = Object(E.c)(r, {
 							subredditName: e
 						}),
-						a = !!Object(y.y)(r, {
+						a = !!Object(y.z)(r, {
 							subredditName: e
-						}) && !!Object(y.v)(r, {
+						}) && !!Object(y.w)(r, {
 							subredditName: e
-						}) || !!Object(y.Y)(r, {
+						}) || !!Object(y.Z)(r, {
 							subredditName: e
 						}),
 						d = Object(E.d)(r, {
@@ -447,8 +447,8 @@
 					}))
 				};
 			var k = s("./src/reddit/actions/subredditTopContent.ts"),
-				P = s("./src/reddit/actions/tooltip.ts"),
-				w = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				w = s("./src/reddit/actions/tooltip.ts"),
+				P = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				T = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
 				I = s("./src/lib/classNames/index.ts"),
 				L = s("./src/lib/prettyPrintNumber/index.ts"),
@@ -466,7 +466,7 @@
 					crosspost: s,
 					language: n,
 					post: t,
-					subredditOrProfile: Object(y.J)(e, {
+					subredditOrProfile: Object(y.K)(e, {
 						identifier: t.belongsTo
 					})
 				}
@@ -529,8 +529,8 @@
 			var Q = Object(a.b)(U, (e, t) => ({
 					openLightbox: t => e(Object(A.a)(t.permalink))
 				}))(V),
-				W = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
-				z = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				z = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
+				W = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
 				K = s.n(G),
 				J = function(e, t) {
@@ -542,16 +542,16 @@
 					}
 					return s
 				};
-			const Y = Object(W.t)(),
+			const Y = Object(z.t)(),
 				Z = Object(d.c)({
-					isFakeSubreddit: W.x
+					isFakeSubreddit: z.x
 				});
 			var X = Y(Object(a.b)(Z)(e => {
 					var {
 						className: t,
 						showSubreddit: s
 					} = e, n = J(e, ["className", "showSubreddit"]);
-					const i = Object(z.a)(n);
+					const i = Object(W.a)(n);
 					return o.a.createElement("div", {
 						className: Object(I.a)(q.a.container, t)
 					}, o.a.createElement("div", {
@@ -593,7 +593,7 @@
 				isPending: E.c,
 				postIds: E.f,
 				subreddit: y.a,
-				subredditAboutInfo: y.v
+				subredditAboutInfo: y.w
 			}), de = Object(a.b)(ae, (e, t) => {
 				let {
 					subredditName: s,
@@ -602,11 +602,11 @@
 				return {
 					subredditDataRequested: t => e(N(t)),
 					showTooltip: t => {
-						e(Object(P.f)({
+						e(Object(w.f)({
 							tooltipId: t
 						})), e(Object(k.d)(s))
 					},
-					onHideTooltip: () => e(Object(P.i)())
+					onHideTooltip: () => e(Object(w.i)())
 				}
 			}), ce = 600;
 			class le extends o.a.Component {
@@ -696,7 +696,7 @@
 						className: ie.a.subredditIconContainer
 					}, o.a.createElement($.b, {
 						subredditOrProfile: m ? void 0 : r
-					})), "r/".concat(d)), s && !p && o.a.createElement(w.a, {
+					})), "r/".concat(d)), s && !p && o.a.createElement(P.a, {
 						defaultTooltipPosition: "right",
 						tooltipId: oe(c),
 						tooltipSizeEstimate: {
@@ -961,7 +961,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
 				language: a.P,
-				userIsSubscriber: o.Z
+				userIsSubscriber: o.ab
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1105,4 +1105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.d4d3d3a51d6de6940580.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.e4cdb4d37a8aede8987a.js.map

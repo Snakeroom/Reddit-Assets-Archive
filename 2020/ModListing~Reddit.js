@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.17878dfd6142c94d00a6.js
-// Retrieved at 5/7/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.97478c90994b486c1627.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2057,38 +2057,40 @@
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "h", (function() {
 				return x
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return O
-			})), n.d(t, "k", (function() {
-				return j
 			})), n.d(t, "l", (function() {
-				return w
-			})), n.d(t, "j", (function() {
-				return C
+				return j
 			})), n.d(t, "m", (function() {
+				return w
+			})), n.d(t, "k", (function() {
+				return C
+			})), n.d(t, "n", (function() {
 				return _
 			})), n.d(t, "b", (function() {
 				return I
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return S
-			})), n.d(t, "e", (function() {
-				return E
 			})), n.d(t, "f", (function() {
+				return E
+			})), n.d(t, "g", (function() {
 				return N
 			})), n.d(t, "a", (function() {
 				return P
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return T
-			})), n.d(t, "n", (function() {
-				return M
-			})), n.d(t, "p", (function() {
-				return U
-			})), n.d(t, "c", (function() {
-				return D
 			})), n.d(t, "o", (function() {
+				return M
+			})), n.d(t, "q", (function() {
+				return U
+			})), n.d(t, "d", (function() {
+				return D
+			})), n.d(t, "c", (function() {
 				return F
+			})), n.d(t, "p", (function() {
+				return H
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var r = n("./src/lib/constants/index.ts"),
@@ -2381,7 +2383,7 @@
 						actionInfo: g.actionInfo(e, {
 							success: t
 						}),
-						subreddit: g.subredditById(e, Object(p.D)(e, n)),
+						subreddit: g.subredditById(e, Object(p.E)(e, n)),
 						userSubreddit: g.userSubreddit(e),
 						adblock: g.adblock(e)
 					}))
@@ -2393,7 +2395,7 @@
 						noun: "screen"
 					}, g.defaults(e), {
 						profile: g.profileById(e, Object(u.m)(e, r)),
-						subreddit: g.subredditById(e, Object(p.D)(e, n)),
+						subreddit: g.subredditById(e, Object(p.E)(e, n)),
 						userSubreddit: g.userSubreddit(e),
 						adblock: g.adblock(e)
 					}))
@@ -2475,7 +2477,12 @@
 					userSubreddit: g.userSubreddit(n),
 					adblock: g.adblock(n)
 				}),
-				F = (e, t, n, s, o) => i => {
+				F = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, g.defaults(e)),
+				H = (e, t, n, s, o) => i => {
 					let a = !0;
 					if (t.type.indexOf(r.Kb.Posts) > -1) {
 						const {
@@ -3221,4 +3228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.17878dfd6142c94d00a6.js.map
+//# sourceMappingURL=ModListing~Reddit.97478c90994b486c1627.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e3af80ee9d180677fbe7.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.83ad0b53b6eaab6722c0.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
@@ -427,7 +427,7 @@
 			const Y = Object(r.c)({
 				hasError: C.o,
 				hasWikiModPerms: (e, t) => {
-					const i = Object(P.y)(e, t);
+					const i = Object(P.z)(e, t);
 					return !!i && Object(E.f)(e, {
 						subredditId: i.id
 					})
@@ -1602,7 +1602,7 @@
 				M = i.n(y);
 			const L = Object(c.c)({
 					hasWikiModPerms: (e, t) => {
-						const i = Object(x.y)(e, t);
+						const i = Object(x.z)(e, t);
 						return !!i && Object(f.f)(e, {
 							subredditId: i.id
 						})
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e3af80ee9d180677fbe7.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.83ad0b53b6eaab6722c0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.73eb62f838308f2d60f7.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3f48867eed363d9f22e0.js
+// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1579,7 +1579,7 @@
 							key: "listing",
 							listingKey: i,
 							listingName: z.b,
-							listingViewed: (e, t) => Object(U.d)(i, this.props.sort, t, e, this.props.timeSort),
+							listingViewed: (e, t) => Object(U.e)(i, this.props.sort, t, e, this.props.timeSort),
 							onLoadMore: this.props.onLoadMorePosts
 						})),
 						sidebar: h
@@ -1612,7 +1612,7 @@
 					let c;
 					if (-1 === [o.P, "r/popular"].indexOf(s)) {
 						const t = s.replace(/^r\//, ""),
-							r = Object(i.D)(e, t),
+							r = Object(i.E)(e, t),
 							o = n.subreddit[r];
 						if (!o) return !1;
 						c = o
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.73eb62f838308f2d60f7.js.map
+//# sourceMappingURL=Frontpage.3f48867eed363d9f22e0.js.map
