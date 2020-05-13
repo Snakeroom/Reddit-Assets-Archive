@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.62e244bb48ec35c9e76e.js
-// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.854d24aa5c610de832ef.js
+// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -1693,18 +1693,6 @@
 					}
 				}
 		},
-		"./src/reddit/i18n/components.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			}));
-			var o = s("./node_modules/react/index.js"),
-				r = s.n(o);
-
-			function n(e) {
-				return r.a.createElement(r.a.Fragment, null, e.children)
-			}
-		},
 		"./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.m.less": function(e, t, s) {
 			e.exports = {
 				CollapseIcon: "_3D7Ev4BX__nKnbqb-KPpvI",
@@ -1771,4 +1759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.62e244bb48ec35c9e76e.js.map
+//# sourceMappingURL=reddit-components-CompactPost.854d24aa5c610de832ef.js.map

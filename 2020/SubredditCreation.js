@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.dddb2d7a02cacf6720d2.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.3d95f1126bc433832e19.js
+// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -33,6 +33,18 @@
 			}), e.value ? n.a.createElement(o.a, {
 				className: d.a.checkboxSelected
 			}) : n.a.createElement(r.a, null), e.children)
+		},
+		"./src/reddit/i18n/components.tsx": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return i
+			}));
+			var s = a("./node_modules/react/index.js"),
+				n = a.n(s);
+
+			function i(e) {
+				return n.a.createElement(n.a.Fragment, null, e.children)
+			}
 		},
 		"./src/reddit/icons/svgs/Admin/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -325,8 +337,8 @@
 				q = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				V = a("./src/reddit/icons/svgs/Eye/index.tsx"),
 				Z = a("./src/reddit/icons/svgs/Info/index.tsx"),
-				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
-				F = a("./src/reddit/icons/svgs/User/index.tsx"),
+				F = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				J = a("./src/reddit/icons/svgs/User/index.tsx"),
 				W = a("./src/reddit/models/Subreddit/index.ts"),
 				Q = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				K = a("./src/config.ts"),
@@ -360,9 +372,9 @@
 				se = $.a.wrapped(Z.a, "Info", G.a),
 				ne = $.a.wrapped(R.a, "RadioOption", G.a),
 				ie = $.a.wrapped(T.c, "Tooltip", G.a),
-				re = $.a.wrapped(F.a, "Public", G.a),
+				re = $.a.wrapped(J.a, "Public", G.a),
 				oe = $.a.wrapped(V.a, "Restricted", G.a),
-				le = $.a.wrapped(J.a, "Private", G.a),
+				le = $.a.wrapped(F.a, "Private", G.a),
 				ce = $.a.wrapped(B.a, "Employee", G.a),
 				de = $.a.wrapped(q.a, "CloseButton", G.a),
 				me = $.a.wrapped(I.b, "ErrorText", G.a),
@@ -707,4 +719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.dddb2d7a02cacf6720d2.js.map
+//# sourceMappingURL=SubredditCreation.3d95f1126bc433832e19.js.map

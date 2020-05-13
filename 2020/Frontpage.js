@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3f48867eed363d9f22e0.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3f1aa158dbedecf280fc.js
+// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1272,6 +1272,18 @@
 					noun: "replay_video"
 				}, o(t, e))
 		},
+		"./src/reddit/i18n/components.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return o
+			}));
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+
+			function o(e) {
+				return r.a.createElement(r.a.Fragment, null, e.children)
+			}
+		},
 		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, s) {
 			e.exports = {
 				circle: "_17IuRdA-NY8vFk-Tt991sn"
@@ -1918,4 +1930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.3f48867eed363d9f22e0.js.map
+//# sourceMappingURL=Frontpage.3f1aa158dbedecf280fc.js.map
