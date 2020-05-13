@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c8322175e46251ff9f78.js
-// Retrieved at 5/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6b287733eb70a178bc71.js
+// Retrieved at 5/13/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -756,13 +756,14 @@
 						n = this.state[r],
 						s = n ? n.rankings : [],
 						a = n ? n.subreddits : {},
-						i = a && a[0],
-						d = i && !i.isNSFW || this.props.isOver18;
+						i = s && s[0] && s[0].id,
+						d = a && a[i],
+						c = !(d && d.isNSFW) || this.props.isOver18;
 					return o.a.createElement(P, A({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: s,
-						shouldDisplayBannerImg: d,
+						shouldDisplayBannerImg: c,
 						shouldDisplayDelta: this.props.shouldDisplayDelta,
 						subreddits: a
 					}, this.props))
@@ -1568,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.c8322175e46251ff9f78.js.map
+//# sourceMappingURL=SubredditLeaderboard.6b287733eb70a178bc71.js.map

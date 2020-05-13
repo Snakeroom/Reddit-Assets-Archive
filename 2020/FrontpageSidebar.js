@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f3220d434877732d73ea.js
-// Retrieved at 5/11/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f91c3bd032e8644e8d28.js
+// Retrieved at 5/13/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -758,13 +758,14 @@
 						s = this.state[n],
 						a = s ? s.rankings : [],
 						r = s ? s.subreddits : {},
-						i = r && r[0],
-						c = i && !i.isNSFW || this.props.isOver18;
+						i = a && a[0] && a[0].id,
+						c = r && r[i],
+						d = !(c && c.isNSFW) || this.props.isOver18;
 					return o.a.createElement(L, U({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
 						rankings: a,
-						shouldDisplayBannerImg: c,
+						shouldDisplayBannerImg: d,
 						shouldDisplayDelta: this.props.shouldDisplayDelta,
 						subreddits: r
 					}, this.props))
@@ -959,4 +960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.f3220d434877732d73ea.js.map
+//# sourceMappingURL=FrontpageSidebar.f91c3bd032e8644e8d28.js.map
