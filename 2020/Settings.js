@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.154f00fcf0d20b7832c8.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.47603dd14766e2db038c.js
+// Retrieved at 5/14/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -6166,9 +6166,10 @@
 						memberships: a
 					} = e, r = Object.keys(a).map(e => (function(e) {
 						if (!e.active) return null;
-						const t = e.active.fiat_membership || e.active.membership;
-						return t && Date.now() < t.endsAt ? {
-							membership: t,
+						const t = Object.keys(e.active).filter(e => "provisional_membership" !== e),
+							n = e.active[t[0]];
+						return n && Date.now() < n.endsAt ? {
+							membership: n,
 							settings: e.settings
 						} : null
 					})(a[e])).filter(e => !!e).sort((e, t) => e.membership.endsAt - t.membership.endsAt), i = !!r.length;
@@ -6497,4 +6498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.154f00fcf0d20b7832c8.js.map
+//# sourceMappingURL=Settings.47603dd14766e2db038c.js.map
