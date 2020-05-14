@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.16f39f6f1e98222e138f.js
-// Retrieved at 5/14/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1a0960855fe4415f1035.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1209,7 +1209,7 @@
 						} = t;
 						return Object(F.L)(e, r)
 					},
-					subreddits: F.W
+					subreddits: F.X
 				}),
 				H = Object(i.b)(M, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(L.a)(t, r))
@@ -1306,7 +1306,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = e => {
+			const X = e => {
 				const {
 					category: t,
 					children: r,
@@ -1322,7 +1322,7 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var X = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+			var z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				Z = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/helpers/name/index.ts");
 			const {
@@ -1374,7 +1374,7 @@
 						}
 					}, s, e && e.map((e, n) => {
 						const s = a + n * r;
-						return o.a.createElement(z, {
+						return o.a.createElement(X, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1396,7 +1396,7 @@
 						headerClassName: s,
 						initialNumberOfCategories: a
 					} = this.props, i = t && a && t.length > a, d = Object(c.a)(r, K.a.container);
-					return o.a.createElement(X.a, {
+					return o.a.createElement(z.a, {
 						className: d,
 						contentOnly: !0
 					}, o.a.createElement("div", {
@@ -1426,7 +1426,7 @@
 					key: e
 				}, e)
 			};
-			var de = e => o.a.createElement(X.a, {
+			var de = e => o.a.createElement(z.a, {
 					className: se.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -1480,7 +1480,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				Ce = Object(u.mc)(p.f),
+				Ce = Object(u.oc)(p.f),
 				Ee = Object(d.c)({
 					categories: e => Object(he.c)(e, {
 						categoriesOrder: Ce
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.16f39f6f1e98222e138f.js.map
+//# sourceMappingURL=SubredditLeaderboard.1a0960855fe4415f1035.js.map

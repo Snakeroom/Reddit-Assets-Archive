@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.70c83f815987953d9c31.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.9a8f3134cd78abac7e3c.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, n) {
@@ -110,8 +110,8 @@
 				h = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = n("./src/reddit/controls/Button/index.tsx"),
 				b = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				x = n("./src/reddit/controls/TextButton/index.tsx"),
-				f = n("./src/reddit/endpoints/economics/uploadedAssets.ts"),
+				f = n("./src/reddit/controls/TextButton/index.tsx"),
+				x = n("./src/reddit/endpoints/economics/uploadedAssets.ts"),
 				v = n("./src/reddit/models/Image/index.tsx"),
 				C = n("./src/reddit/models/User/index.ts"),
 				E = n("./src/reddit/selectors/telemetry.ts"),
@@ -121,7 +121,7 @@
 				k = n("./src/reddit/icons/svgs/Remove/index.tsx"),
 				S = n("./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less"),
 				O = n.n(S),
-				j = function() {
+				N = function() {
 					return o.a.createElement("svg", {
 						className: O.a.uploadDropImage,
 						width: "120",
@@ -145,7 +145,7 @@
 					}))
 				};
 			const {
-				fbt: N
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var M = function(e) {
 					const {
@@ -160,7 +160,7 @@
 							})
 						}, o.a.createElement("div", {
 							className: O.a.label
-						}, N._("Image", null, {
+						}, j._("Image", null, {
 							hk: "34LRIF"
 						}), t && o.a.createElement("button", {
 							className: O.a.trashIcon,
@@ -174,7 +174,7 @@
 							style: {
 								backgroundImage: "url(".concat(t.url, ")")
 							}
-						})) : o.a.createElement(j, null), o.a.createElement("input", {
+						})) : o.a.createElement(N, null), o.a.createElement("input", {
 							type: "file",
 							className: O.a.imageInput,
 							onChange: e => {
@@ -311,7 +311,7 @@
 						hk: "2i3L33"
 					})), o.a.createElement(V, null, H._("Add 4px black outline", null, {
 						hk: "2mHGJn"
-					}))), o.a.createElement("br", null), n === f.b.Badge && t && a ? o.a.createElement("div", null, o.a.createElement("div", {
+					}))), o.a.createElement("br", null), n === x.b.Badge && t && a ? o.a.createElement("div", null, o.a.createElement("div", {
 						className: F.a.label
 					}, H._("Preview", null, {
 						hk: "cOBjy"
@@ -334,7 +334,7 @@
 						to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
 					}, H._("artistic guide", null, {
 						hk: "3giRwj"
-					})), " ", n === f.b.Badge ? H._("to design your badge to fit in with existing ones.", null, {
+					})), " ", n === x.b.Badge ? H._("to design your badge to fit in with existing ones.", null, {
 						hk: "1k1Q99"
 					}) : H._("to design your emoji to fit in with existing ones.", null, {
 						hk: "4FDotU"
@@ -387,27 +387,27 @@
 						name: s,
 						onCloseModal: a
 					} = e;
-					return o.a.createElement(m.c, {
+					return o.a.createElement(m.d, {
 						className: ne.a.modalBody
-					}, o.a.createElement(m.g, {
+					}, o.a.createElement(m.h, {
 						className: ne.a.modalHeader
-					}, o.a.createElement(m.n, {
+					}, o.a.createElement(m.p, {
 						className: ne.a.title
 					}, se._("Thanks!", null, {
 						hk: "SMfWZ"
-					})), o.a.createElement(x.a, {
+					})), o.a.createElement(f.a, {
 						onClick: a
-					}, o.a.createElement(m.b, null))), o.a.createElement(m.j, {
+					}, o.a.createElement(m.b, null))), o.a.createElement(m.k, {
 						className: ne.a.modalMain
 					}, o.a.createElement("div", {
 						className: ne.a.modMessage
 					}, se._("Give us a couple of days to review. We'll keep you posted. – Mods", null, {
 						hk: "2XafSh"
-					})), e.type === f.b.Badge ? o.a.createElement(ee, {
+					})), e.type === x.b.Badge ? o.a.createElement(ee, {
 						image: n,
 						name: s,
 						description: t
-					}) : o.a.createElement(ae, e)), o.a.createElement(m.e, null, o.a.createElement(g.f, {
+					}) : o.a.createElement(ae, e)), o.a.createElement(m.f, null, o.a.createElement(g.f, {
 						onClick: a
 					}, se._("Okay", null, {
 						hk: "406S0g"
@@ -421,12 +421,12 @@
 				displayText: () => re.fbt._("Badge", null, {
 					hk: "41rGrX"
 				}),
-				value: f.b.Badge
+				value: x.b.Badge
 			}, {
 				displayText: () => re.fbt._("Emoji", null, {
 					hk: "20CBIq"
 				}),
-				value: f.b.Emote
+				value: x.b.Emote
 			}];
 			var me = function(e) {
 					const t = de.find(t => t.value === e.type) || de[0];
@@ -448,13 +448,13 @@
 				ge = n("./src/reddit/components/Economics/SubredditPremium/UploadModal/UsernameColor/index.m.less"),
 				be = n.n(ge);
 			const {
-				fbt: xe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), fe = /^#?[0-9a-f]{6}$/i;
+				fbt: fe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), xe = /^#?[0-9a-f]{6}$/i;
 			class ve extends o.a.Component {
 				constructor(e) {
 					super(e), this.onInputChange = e => {
 						let t = e.currentTarget.value.toLowerCase();
-						const n = fe.test(t);
+						const n = xe.test(t);
 						n && !t.startsWith("#") && (t = "#" + t), this.setState({
 							value: t
 						}), t && !n || this.onChange(t)
@@ -467,7 +467,7 @@
 						className: be.a.container
 					}, o.a.createElement("div", {
 						className: be.a.label
-					}, xe._("Username color", null, {
+					}, fe._("Username color", null, {
 						hk: "4EQjHC"
 					})), o.a.createElement("div", {
 						className: be.a.control
@@ -483,7 +483,7 @@
 						className: be.a.textInput,
 						disabled: this.props.disabled,
 						onChange: this.onInputChange,
-						placeholder: this.state.value ? void 0 : xe._("#HEX", null, {
+						placeholder: this.state.value ? void 0 : fe._("#HEX", null, {
 							hk: "4FrAf4"
 						}),
 						value: this.state.value
@@ -496,13 +496,13 @@
 				Ee = n.n(Ce);
 			const {
 				fbt: _e
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), ke = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), Se = /[^a-z0-9_]/g, Oe = .65, je = .075;
-			class Ne extends o.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), ke = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), Se = /[^a-z0-9_]/g, Oe = .65, Ne = .075;
+			class je extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTypeSelected = e => {
 						this.setState({
 							type: e
-						}), e === f.b.Emote && this.onEmoteNameChanged(this.state.name)
+						}), e === x.b.Emote && this.onEmoteNameChanged(this.state.name)
 					}, this.onImageChanged = async e => {
 						if (this.state.image && Object(v.d)(this.state.image), !e) return void this.setState({
 							image: void 0
@@ -529,7 +529,7 @@
 						const n = Object(s.b)(e);
 						n > Oe ? t = _e._("Darker please", null, {
 							hk: "3ld2n2"
-						}) : n < je && (t = _e._("Lighter please", null, {
+						}) : n < Ne && (t = _e._("Lighter please", null, {
 							hk: "4zH6v4"
 						})), this.setState({
 							usernameColor: e,
@@ -545,7 +545,7 @@
 							assetName: this.state.name,
 							imageFile: this.state.image.file
 						};
-						this.state.type === f.b.Badge && (e.badgeColor = this.state.usernameColor, e.badgeDescription = this.state.description + this.state.byUserNameSuffix()), Object(f.e)(this.props.apiContext(), this.props.subreddit.id, e).then(e => {
+						this.state.type === x.b.Badge && (e.badgeColor = this.state.usernameColor, e.badgeDescription = this.state.description + this.state.byUserNameSuffix()), Object(x.e)(this.props.apiContext(), this.props.subreddit.id, e).then(e => {
 							e.ok || this.props.onGovernanceError(e.error), this.setState({
 								uploading: !1,
 								submitted: e.ok
@@ -558,7 +558,7 @@
 					}, this.closeModal = () => {
 						this.state.image && Object(v.d)(this.state.image), this.props.onClose()
 					}, this.state = {
-						type: e.uploadAssetType || f.b.Badge,
+						type: e.uploadAssetType || x.b.Badge,
 						name: "",
 						usernameColor: "",
 						description: "",
@@ -600,10 +600,10 @@
 						usernameColorError: l
 					} = this.state;
 					switch (o) {
-						case f.b.Badge:
+						case x.b.Badge:
 							if (!ye(s) || !i.length || l || !ke(t + e())) return !1;
 							break;
-						case f.b.Emote:
+						case x.b.Emote:
 							if (!we(s)) return !1
 					}
 					return !r && !a && n && J(n)
@@ -615,7 +615,7 @@
 					} = this.state;
 					if (e.length) return e.length < 2 ? _e._("Must be at least 2 characters.", null, {
 						hk: "3j8QQc"
-					}) : e.match(/^[a-zA-Z0-9]/) ? e.match(/[a-zA-Z0-9]$/) ? t === f.b.Badge && e.match(/[^-'!a-zA-Z0-9_ ]/) ? _e._("Can only contain letters, numbers, spaces and these symbols: - _ ' !", null, {
+					}) : e.match(/^[a-zA-Z0-9]/) ? e.match(/[a-zA-Z0-9]$/) ? t === x.b.Badge && e.match(/[^-'!a-zA-Z0-9_ ]/) ? _e._("Can only contain letters, numbers, spaces and these symbols: - _ ' !", null, {
 						hk: "3saqi3"
 					}) : void 0 : _e._("Must end with a letter or number.", null, {
 						hk: "1FGtRl"
@@ -656,22 +656,22 @@
 						description: s + n(),
 						onCloseModal: this.closeModal
 					});
-					const p = l === f.b.Badge ? ye(r) : we(r),
+					const p = l === x.b.Badge ? ye(r) : we(r),
 						h = p ? void 0 : this.getNameErrorMessage(),
 						v = ke(s + n()),
 						C = v ? void 0 : this.getDescriptionErrorMessage();
-					return o.a.createElement(m.c, {
+					return o.a.createElement(m.d, {
 						className: Ee.a.modalBody
-					}, o.a.createElement(m.g, {
+					}, o.a.createElement(m.h, {
 						className: Ee.a.modalHeader
-					}, o.a.createElement(m.n, {
+					}, o.a.createElement(m.p, {
 						className: Ee.a.title
 					}, _e._("Upload Badge or Emoji", null, {
 						hk: "2xnG8y"
-					})), o.a.createElement(x.a, {
+					})), o.a.createElement(f.a, {
 						disabled: c,
 						onClick: this.closeModal
-					}, o.a.createElement(m.b, null))), o.a.createElement(m.j, null, o.a.createElement(me, {
+					}, o.a.createElement(m.b, null))), o.a.createElement(m.k, null, o.a.createElement(me, {
 						type: l,
 						onItemTypeSelected: this.onTypeSelected
 					}), o.a.createElement("div", {
@@ -684,7 +684,7 @@
 						image: a,
 						username: e,
 						usernameColor: d
-					})), l === f.b.Badge ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+					})), l === x.b.Badge ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: Ee.a.nameAndColor
 					}, o.a.createElement(U, {
 						disabled: c,
@@ -738,7 +738,7 @@
 						className: Ee.a.tickerDescription
 					}, _e._("Be creative. This is what users can type to enter in your emoji.", null, {
 						hk: "2FMSyr"
-					})))), o.a.createElement(m.e, null, o.a.createElement(m.a, {
+					})))), o.a.createElement(m.f, null, o.a.createElement(m.a, {
 						disabled: c,
 						onClick: this.closeModal
 					}, _e._("Cancel", null, {
@@ -768,7 +768,7 @@
 				onGovernanceError: t => {
 					Object(c.a)(e, t)
 				}
-			}))(Ne)))))
+			}))(je)))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -808,9 +808,9 @@
 			})), n.d(t, "b", (function() {
 				return b
 			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "h", (function() {
 				return f
+			})), n.d(t, "h", (function() {
+				return x
 			})), n.d(t, "g", (function() {
 				return v
 			}));
@@ -828,14 +828,14 @@
 				h = s.a.wrapped(i.a, "RadioOff", d.a),
 				g = s.a.wrapped(o.a, "Checkbox", d.a),
 				b = s.a.wrapped(r.a, "CheckboxSelected", d.a),
-				x = s.a.textarea("Textarea", d.a),
-				f = s.a.label("StyledLabel", d.a),
+				f = s.a.textarea("Textarea", d.a),
+				x = s.a.label("StyledLabel", d.a),
 				v = s.a.input("StyledFileInput", d.a)
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return x
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/throttle.js"),
@@ -861,7 +861,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var x = function(e, t) {
+			var f = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -870,7 +870,7 @@
 				}
 				return n
 			};
-			class f extends r.a.Component {
+			class x extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = a()(() => {
 						const {
@@ -921,13 +921,13 @@
 			t.b = e => {
 				var {
 					className: t
-				} = e, n = x(e, ["className"]);
+				} = e, n = f(e, ["className"]);
 				const s = Object(i.a)(g.a.row, t, {
 					[g.a.mIsInteractive]: !n.noHover,
 					[g.a.mIsSelected]: n.isSelected,
 					[g.a.topics]: n.isTopicsStyle
 				});
-				return r.a.createElement(f, b({
+				return r.a.createElement(x, b({
 					className: s
 				}, n))
 			}
@@ -1252,4 +1252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumUploadModal.70c83f815987953d9c31.js.map
+//# sourceMappingURL=SubredditPremiumUploadModal.9a8f3134cd78abac7e3c.js.map

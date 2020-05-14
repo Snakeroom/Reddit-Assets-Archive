@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.cf82f5ef5b2fdc7e1f0b.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.a79243be24356020b250.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -509,7 +509,7 @@
 						O = e[0],
 						j = Object(v.a)(O) ? y.e.Post : y.e.Comment,
 						g = j === y.e.Post ? p.posts.models[O] : p.comments.models[O],
-						P = j === y.e.Post ? u.R : i.R;
+						P = j === y.e.Post ? u.T : i.R;
 					if (!g || !f) return;
 					d(J()), d(P({
 						[O]: {
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.cf82f5ef5b2fdc7e1f0b.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.a79243be24356020b250.js.map

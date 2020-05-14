@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.6270d6427ed3158fbb08.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.5b24293b5d1b8aad1bf2.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				g = n("./src/reddit/actions/toaster.ts"),
-				O = n("./src/lib/makeApiRequest/index.ts"),
-				f = n("./src/lib/omitHeaders/index.ts"),
+				f = n("./src/lib/makeApiRequest/index.ts"),
+				O = n("./src/lib/omitHeaders/index.ts"),
 				k = n("./src/reddit/constants/headers.ts"),
 				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var y = async (e, t, n, s, o, c) => {
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: c
 				};
-				return Object(O.b)(Object(f.a)(e, [k.a]), {
+				return Object(f.b)(Object(O.a)(e, [k.a]), {
 					method: b.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
@@ -275,9 +275,9 @@
 						message: r,
 						selectedPackage: d
 					} = this.state, u = Object(R.d)(d), p = a ? [l.a.messageInputOpen] : "";
-					return c.a.createElement(T.c, {
+					return c.a.createElement(T.d, {
 						className: e
-					}, c.a.createElement(T.g, null, c.a.createElement(G.a, null, c.a.createElement(T.n, null, s.fbt._("Give Premium", null, {
+					}, c.a.createElement(T.h, null, c.a.createElement(G.a, null, c.a.createElement(T.p, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), c.a.createElement(K.a, {
 						onClick: this.onClickClose
@@ -308,7 +308,7 @@
 							hk: "I4chZ"
 						}),
 						onClick: this.handleToggleIncludeMessage
-					})), c.a.createElement(T.q, {
+					})), c.a.createElement(T.s, {
 						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
 						value: r,
@@ -319,7 +319,7 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), c.a.createElement(T.e, null, c.a.createElement(G.a, {
+					}))), c.a.createElement(T.f, null, c.a.createElement(G.a, {
 						className: l.a.coinCountSection
 					}, c.a.createElement(P.a, {
 						className: l.a.coinCount,
@@ -330,7 +330,7 @@
 						onClick: this.onClickClose
 					}, s.fbt._("Cancel", null, {
 						hk: "370pdF"
-					})), c.a.createElement(T.o, {
+					})), c.a.createElement(T.q, {
 						className: l.a.confirmButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -388,7 +388,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return f
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/throttle.js"),
@@ -423,7 +423,7 @@
 				}
 				return n
 			};
-			class O extends a.a.Component {
+			class f extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = o()(() => {
 						const {
@@ -480,7 +480,7 @@
 					[b.a.mIsSelected]: n.isSelected,
 					[b.a.topics]: n.isTopicsStyle
 				});
-				return a.a.createElement(O, x({
+				return a.a.createElement(f, x({
 					className: s
 				}, n))
 			}
@@ -795,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.6270d6427ed3158fbb08.js.map
+//# sourceMappingURL=GivePremiumModal.5b24293b5d1b8aad1bf2.js.map

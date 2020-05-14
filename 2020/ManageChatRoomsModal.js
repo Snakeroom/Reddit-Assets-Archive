@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.f1cb86517c7a1109ce05.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.8a146fb4f3c90abd99d5.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -207,14 +207,14 @@
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var y = n("./src/higherOrderComponents/asTooltip.tsx"),
 				L = n("./src/reddit/actions/tooltip.ts"),
-				j = n("./src/reddit/controls/Dropdown/index.tsx"),
-				O = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				O = n("./src/reddit/controls/Dropdown/index.tsx"),
+				j = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				R = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				A = n("./src/reddit/selectors/tooltip.ts"),
 				T = n("./src/reddit/components/ManageChatRoomsModal/_DomainFilterDropDown.m.less"),
 				N = n.n(T);
 			const B = i.a.button("DropdownTarget", N.a),
-				P = i.a.wrapped(O.b, "DropdownRow", N.a),
+				P = i.a.wrapped(j.b, "DropdownRow", N.a),
 				F = i.a.wrapped(R.b, "DropdownTriangle", N.a),
 				U = Object(r.c)({
 					isOpen: (e, t) => Object(A.b)(t.id)(e)
@@ -226,7 +226,7 @@
 						}))
 					}
 				})),
-				K = Object(y.a)(j.a);
+				K = Object(y.a)(O.a);
 			var W = H(e => s.a.createElement(s.a.Fragment, null, s.a.createElement(B, {
 					type: "button",
 					id: e.id,
@@ -248,10 +248,10 @@
 				G = n("./src/reddit/components/ManageChatRoomsModal/_Modal.m.less"),
 				z = n.n(G);
 			const Z = i.a.form("ModalForm", z.a),
-				X = i.a.wrapped(V.l, "ModalSmallText", z.a),
-				J = i.a.wrapped(V.d, "ModalDescriptionText", z.a),
-				q = i.a.wrapped(V.f, "ModalFormItemRow", z.a),
-				Q = i.a.wrapped(V.f, "ModalFormItemColumn", z.a),
+				X = i.a.wrapped(V.n, "ModalSmallText", z.a),
+				J = i.a.wrapped(V.e, "ModalDescriptionText", z.a),
+				q = i.a.wrapped(V.g, "ModalFormItemRow", z.a),
+				Q = i.a.wrapped(V.g, "ModalFormItemColumn", z.a),
 				Y = i.a.div("ModalFormColumn", z.a),
 				$ = i.a.wrapped(X, "ModalLabelText", z.a);
 			var ee = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -426,11 +426,11 @@
 					return s.a.createElement(Z, {
 						onSubmit: this.onSubmit,
 						onReset: this.onReset
-					}, s.a.createElement(V.g, null, s.a.createElement(V.n, null, e ? c.fbt._("Edit Room", null, {
+					}, s.a.createElement(V.h, null, s.a.createElement(V.p, null, e ? c.fbt._("Edit Room", null, {
 						hk: "49xYWz"
 					}) : c.fbt._("Create Room", null, {
 						hk: "1NcP2X"
-					}))), s.a.createElement(V.j, null, s.a.createElement(V.f, null, s.a.createElement(X, null, c.fbt._("Name", null, {
+					}))), s.a.createElement(V.k, null, s.a.createElement(V.g, null, s.a.createElement(X, null, c.fbt._("Name", null, {
 						hk: "4CvrbF"
 					})), s.a.createElement(g.c, {
 						placeholder: c.fbt._("Ex: cat-facts", null, {
@@ -443,7 +443,7 @@
 					})), s.a.createElement(p.a, {
 						text: r,
 						maxChars: te.b
-					})), s.a.createElement(V.f, null, s.a.createElement(X, null, c.fbt._("Description", null, {
+					})), s.a.createElement(V.g, null, s.a.createElement(X, null, c.fbt._("Description", null, {
 						hk: "42weBh"
 					})), s.a.createElement(S, {
 						defaultValue: n,
@@ -454,14 +454,14 @@
 					}), s.a.createElement(p.a, {
 						maxChars: te.a,
 						text: n
-					})), !e && s.a.createElement(V.f, null, s.a.createElement($, null, c.fbt._("Private", null, {
+					})), !e && s.a.createElement(V.g, null, s.a.createElement($, null, c.fbt._("Private", null, {
 						hk: "HJpTN"
 					})), s.a.createElement(me, {
 						checked: i === re.c.Private,
 						onChange: this.onCheckboxChange
 					}), s.a.createElement(J, null, c.fbt._("Private channels are only visible to people who have been invited to them.", null, {
 						hk: "257D8b"
-					}))), s.a.createElement(V.f, null, s.a.createElement(X, null, c.fbt._("Minimum account age", null, {
+					}))), s.a.createElement(V.g, null, s.a.createElement(X, null, c.fbt._("Minimum account age", null, {
 						hk: "3eARK5"
 					})), s.a.createElement(W, {
 						id: "minimumAgeDropDown",
@@ -470,7 +470,7 @@
 						onClick: this.onSelectMinimumAcctAge
 					}), s.a.createElement(J, null, c.fbt._("People will be unable to send messages until their accounts reach this age", null, {
 						hk: "4zrOeI"
-					}))), s.a.createElement(V.f, null, s.a.createElement(X, null, c.fbt._("New member muting", null, {
+					}))), s.a.createElement(V.g, null, s.a.createElement(X, null, c.fbt._("New member muting", null, {
 						hk: "ZDkMo"
 					})), s.a.createElement(W, {
 						id: "newMemberMutingDropDown",
@@ -484,7 +484,7 @@
 						onClick: this.onDelete
 					}, s.a.createElement(oe.a, null), c.fbt._("Delete Room", null, {
 						hk: "2h6q0B"
-					}))), s.a.createElement(V.e, null, s.a.createElement(V.a, {
+					}))), s.a.createElement(V.f, null, s.a.createElement(V.a, {
 						type: "reset"
 					}, c.fbt._("Cancel", null, {
 						hk: "SknuM"
@@ -528,11 +528,11 @@
 						modalToggled: e,
 						subredditChannel: t
 					} = this.props;
-					return s.a.createElement("div", null, s.a.createElement(V.g, null, s.a.createElement(V.n, null, t && "".concat(c.fbt._("Delete", null, {
+					return s.a.createElement("div", null, s.a.createElement(V.h, null, s.a.createElement(V.p, null, t && "".concat(c.fbt._("Delete", null, {
 						hk: "38E65A"
-					}), "\n               ").concat(t.name))), s.a.createElement(V.j, null, s.a.createElement(V.m, null, c.fbt._("Are you sure you want to delete this room? This action cannot be undone.", null, {
+					}), "\n               ").concat(t.name))), s.a.createElement(V.k, null, s.a.createElement(V.o, null, c.fbt._("Are you sure you want to delete this room? This action cannot be undone.", null, {
 						hk: "1OMvap"
-					}))), s.a.createElement(V.e, null, s.a.createElement(V.a, {
+					}))), s.a.createElement(V.f, null, s.a.createElement(V.a, {
 						onClick: () => e(ne.a.EDIT_SUBREDDIT_CHAT)
 					}, c.fbt._("Cancel", null, {
 						hk: "3f5ajZ"
@@ -555,7 +555,7 @@
 				Ie = n.n(we);
 			const {
 				fbt: De
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = i.a.wrapped(V.g, "ModalHeader", Ie.a), Le = i.a.wrapped(Se.b, "SubredditChannelList", Ie.a), je = i.a.button("ModalHeadButton", Ie.a), Oe = Object(r.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = i.a.wrapped(V.h, "ModalHeader", Ie.a), Le = i.a.wrapped(Se.b, "SubredditChannelList", Ie.a), Oe = i.a.button("ModalHeadButton", Ie.a), je = Object(r.c)({
 				isModerator: ve.e
 			});
 			class Re extends s.a.Component {
@@ -568,13 +568,13 @@
 							subredditId: a
 						}
 					} = this;
-					return s.a.createElement("div", null, s.a.createElement(ye, null, s.a.createElement(V.n, null, De._("Rooms", null, {
+					return s.a.createElement("div", null, s.a.createElement(ye, null, s.a.createElement(V.p, null, De._("Rooms", null, {
 						hk: "TpZ9p"
-					})), n && s.a.createElement(ke.a, null, s.a.createElement(je, {
+					})), n && s.a.createElement(ke.a, null, s.a.createElement(Oe, {
 						onClick: t
 					}, s.a.createElement(Me.a, null), De._("Settings", null, {
 						hk: "r8zYB"
-					})), s.a.createElement(je, {
+					})), s.a.createElement(Oe, {
 						onClick: e
 					}, De._("+ Add room", null, {
 						hk: "2nISIO"
@@ -585,7 +585,7 @@
 					}))
 				}
 			}
-			var Ae = Object(o.b)(Oe)(Re),
+			var Ae = Object(o.b)(je)(Re),
 				Te = n("./src/reddit/actions/chat/subredditSettings.ts");
 			var Ne = e => {
 					let {
@@ -607,9 +607,9 @@
 								})
 							}
 						}
-					}, s.a.createElement(V.g, null, s.a.createElement(V.n, null, c.fbt._("Custom list of banned words", null, {
+					}, s.a.createElement(V.h, null, s.a.createElement(V.p, null, c.fbt._("Custom list of banned words", null, {
 						hk: "3vV3ZV"
-					}))), s.a.createElement(V.j, null, s.a.createElement(Q, null, s.a.createElement(X, null, c.fbt._("Banned words", null, {
+					}))), s.a.createElement(V.k, null, s.a.createElement(Q, null, s.a.createElement(X, null, c.fbt._("Banned words", null, {
 						hk: "32rfzC"
 					})), s.a.createElement(J, null, c.fbt._("List comma separated words to ban", null, {
 						hk: "3yZ9bl"
@@ -619,7 +619,7 @@
 						placeholder: c.fbt._("Ex: poop, dogs, cats, fools", null, {
 							hk: "1Wmi8E"
 						})
-					}))), s.a.createElement(V.e, null, s.a.createElement(V.a, {
+					}))), s.a.createElement(V.f, null, s.a.createElement(V.a, {
 						type: "reset",
 						onClick: t
 					}, c.fbt._("Cancel", null, {
@@ -652,9 +652,9 @@
 								})
 							}
 						}
-					}, s.a.createElement(V.g, null, s.a.createElement(V.n, null, c.fbt._("Configure domains", null, {
+					}, s.a.createElement(V.h, null, s.a.createElement(V.p, null, c.fbt._("Configure domains", null, {
 						hk: "2uvV8w"
-					}))), s.a.createElement(V.j, null, s.a.createElement(Q, null, s.a.createElement(X, null, o ? c.fbt._("Approved domains", null, {
+					}))), s.a.createElement(V.k, null, s.a.createElement(Q, null, s.a.createElement(X, null, o ? c.fbt._("Approved domains", null, {
 						hk: "3k4EgS"
 					}) : c.fbt._("Banned domains", null, {
 						hk: "11qMqU"
@@ -664,7 +664,7 @@
 						placeholder: c.fbt._("Ex: google.com, youtube.com, imgur.com", null, {
 							hk: "4AMdIe"
 						})
-					}))), s.a.createElement(V.e, null, s.a.createElement(V.a, {
+					}))), s.a.createElement(V.f, null, s.a.createElement(V.a, {
 						type: "reset",
 						onClick: t
 					}, c.fbt._("Cancel", null, {
@@ -800,9 +800,9 @@
 					} = Ye.getSelectedRegex(l, i);
 					return s.a.createElement(Z, {
 						onSubmit: this.onRegexSettingsUpdate
-					}, s.a.createElement(V.g, null, s.a.createElement(V.n, null, c.fbt._("Configure regex rule", null, {
+					}, s.a.createElement(V.h, null, s.a.createElement(V.p, null, c.fbt._("Configure regex rule", null, {
 						hk: "3Ur4ma"
-					}))), s.a.createElement(V.j, null, s.a.createElement(Q, null, s.a.createElement(X, null, c.fbt._("Rule name", null, {
+					}))), s.a.createElement(V.k, null, s.a.createElement(Q, null, s.a.createElement(X, null, c.fbt._("Rule name", null, {
 						hk: "46id3M"
 					})), s.a.createElement(k, {
 						name: qe,
@@ -820,7 +820,7 @@
 							hk: "4DWBV9"
 						}),
 						onChange: a
-					}), t() ? s.a.createElement(Xe, null, "".concat(d, "/").concat(te.d)) : s.a.createElement(Je, null, "".concat(d, "/").concat(te.d)))), s.a.createElement(V.e, null, l && s.a.createElement(V.p, {
+					}), t() ? s.a.createElement(Xe, null, "".concat(d, "/").concat(te.d)) : s.a.createElement(Je, null, "".concat(d, "/").concat(te.d)))), s.a.createElement(V.f, null, l && s.a.createElement(V.r, {
 						type: "button",
 						onClick: o
 					}, c.fbt._("Delete Rule", null, {
@@ -1008,9 +1008,9 @@
 					}
 					return s.a.createElement(Z, {
 						onSubmit: this.onSubmit
-					}, s.a.createElement(V.g, null, s.a.createElement(V.n, null, c.fbt._("Chat Room Settings", null, {
+					}, s.a.createElement(V.h, null, s.a.createElement(V.p, null, c.fbt._("Chat Room Settings", null, {
 						hk: "1oybiN"
-					}))), s.a.createElement(V.j, null, s.a.createElement(q, null, s.a.createElement(Y, null, s.a.createElement(X, null, c.fbt._("Block messages using default banned words list", null, {
+					}))), s.a.createElement(V.k, null, s.a.createElement(q, null, s.a.createElement(Y, null, s.a.createElement(X, null, c.fbt._("Block messages using default banned words list", null, {
 						hk: "2353zP"
 					})), s.a.createElement(J, null, c.fbt._("Messages with any of these words will fail to send", null, {
 						hk: "2ln78N"
@@ -1095,7 +1095,7 @@
 						type: "number",
 						value: o || Be.b,
 						onChange: this.onRateLimitChange
-					})))), s.a.createElement(V.e, null, s.a.createElement(V.a, {
+					})))), s.a.createElement(V.f, null, s.a.createElement(V.a, {
 						type: "reset",
 						onClick: () => t(n)
 					}, c.fbt._("Cancel", null, {
@@ -1118,7 +1118,7 @@
 				ht = n.n(mt);
 			const {
 				fbt: pt
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), gt = i.a.wrapped(V.c, "ModalBody", ht.a), bt = i.a.wrapped(V.b, "CloseIcon", ht.a), Ct = i.a.wrapped(ut.a, "CloseButton", ht.a), Et = Object(r.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), gt = i.a.wrapped(V.d, "ModalBody", ht.a), bt = i.a.wrapped(V.b, "CloseIcon", ht.a), Ct = i.a.wrapped(ut.a, "CloseButton", ht.a), Et = Object(r.c)({
 				activeModalId: le.a
 			}), _t = Object(o.b)(Et, (e, t) => {
 				let {
@@ -1400,10 +1400,10 @@
 				D = n("./src/reddit/selectors/subredditChannel.ts"),
 				y = n("./src/reddit/selectors/user.ts"),
 				L = n("./src/reddit/components/SubredditChannelList/index.m.less"),
-				j = n.n(L);
+				O = n.n(L);
 			const {
-				fbt: O
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = d.a.wrapped(b.f, "ModalFormItem", j.a), A = d.a.wrapped(x.f, "PrimaryButton", j.a), T = d.a.wrapped(b.m, "ModalText", j.a), N = d.a.a("ItemLink", j.a), B = d.a.p("Detail", j.a), P = d.a.p("DescText", j.a), F = d.a.div("Title", j.a), U = d.a.div("Header", j.a), H = d.a.wrapped(M.a, "ChatIcon", j.a), K = d.a.wrapped(k.a, "PlanetIcon", j.a), W = d.a.wrapped(S.a, "Pencil", j.a), V = d.a.wrapped(e => {
+				fbt: j
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = d.a.wrapped(b.g, "ModalFormItem", O.a), A = d.a.wrapped(x.f, "PrimaryButton", O.a), T = d.a.wrapped(b.o, "ModalText", O.a), N = d.a.a("ItemLink", O.a), B = d.a.p("Detail", O.a), P = d.a.p("DescText", O.a), F = d.a.div("Title", O.a), U = d.a.div("Header", O.a), H = d.a.wrapped(M.a, "ChatIcon", O.a), K = d.a.wrapped(k.a, "PlanetIcon", O.a), W = d.a.wrapped(S.a, "Pencil", O.a), V = d.a.wrapped(e => {
 				let {
 					className: t
 				} = e;
@@ -1416,7 +1416,7 @@
 				}, r.a.createElement("path", {
 					d: "M30.7205152,44.3911599 L31.8223802,44.3911599 C32.9364596,44.3911599 33.8428946,45.2673804 33.8428946,46.3443238 C33.8428946,46.6873548 33.5548926,46.9657568 33.2000329,46.9657568 L29.3428625,46.9657568 C28.9880028,46.9657568 28.7000008,46.6873548 28.7000008,46.3443238 C28.7000008,45.2673804 29.6064358,44.3911599 30.7205152,44.3911599 Z M32.7044508,42.3845527 C32.7044508,43.1482939 32.0615891,43.7697269 31.271512,43.7697269 C30.4814349,43.7697269 29.8385732,43.1482939 29.8385732,42.3845527 C29.8385732,41.6208116 30.4814349,41 31.271512,41 C32.0615891,41 32.7044508,41.6208116 32.7044508,42.3845527 Z M35.8634091,47.1254029 L36.9652741,47.1254029 C38.0793535,47.1254029 38.9857885,48.0016234 38.9857885,49.0785668 C38.9857885,49.4215978 38.6977865,49.6999998 38.3429268,49.6999998 L34.4857564,49.6999998 C34.1308967,49.6999998 33.8428946,49.4215978 33.8428946,49.0785668 C33.8428946,48.0016234 34.7493297,47.1254029 35.8634091,47.1254029 Z M37.8473447,45.1187958 C37.8473447,45.8825369 37.2044829,46.5039699 36.4144059,46.5039699 C35.6243288,46.5039699 34.9814671,45.8825369 34.9814671,45.1187958 C34.9814671,44.3550546 35.6243288,43.734243 36.4144059,43.734243 C37.2044829,43.734243 37.8473447,44.3550546 37.8473447,45.1187958 Z"
 				})))
-			}, "Group", j.a), G = d.a.wrapped(e => {
+			}, "Group", O.a), G = d.a.wrapped(e => {
 				let {
 					className: t
 				} = e;
@@ -1427,7 +1427,7 @@
 				}, r.a.createElement("path", {
 					d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
 				}))
-			}, "Key", j.a), z = d.a.wrapped(C.b, "SubredditIcon", j.a), Z = d.a.button("EditButton", j.a), X = d.a.button("ShowAllLink", j.a), J = d.a.span("ChannelName", j.a), q = d.a.div("HeaderText", j.a);
+			}, "Key", O.a), z = d.a.wrapped(C.b, "SubredditIcon", O.a), Z = d.a.button("EditButton", O.a), X = d.a.button("ShowAllLink", O.a), J = d.a.span("ChannelName", O.a), q = d.a.div("HeaderText", O.a);
 			var Q;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
@@ -1578,15 +1578,15 @@
 					}, e.description))), this.displayShowAllLink() && r.a.createElement(X, {
 						type: "button",
 						onClick: () => this.onShowAllClick()
-					}, O._("See more", null, {
+					}, j._("See more", null, {
 						hk: "lhTm0"
-					}))) : n ? r.a.createElement(R, null, r.a.createElement(T, null, O._("Create your first room and get your community chatting in real time.", null, {
+					}))) : n ? r.a.createElement(R, null, r.a.createElement(T, null, j._("Create your first room and get your community chatting in real time.", null, {
 						hk: "2zKL0L"
 					})), r.a.createElement(A, {
 						onClick: s || d
-					}, O._("+ Add room", null, {
+					}, j._("+ Add room", null, {
 						hk: "2vBAvZ"
-					}))) : r.a.createElement(R, null, r.a.createElement(T, null, O._("There are no joined chatrooms yet", null, {
+					}))) : r.a.createElement(R, null, r.a.createElement(T, null, j._("There are no joined chatrooms yet", null, {
 						hk: "3n65KN"
 					}))))
 				}
@@ -1787,4 +1787,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ManageChatRoomsModal.f1cb86517c7a1109ce05.js.map
+//# sourceMappingURL=ManageChatRoomsModal.8a146fb4f3c90abd99d5.js.map

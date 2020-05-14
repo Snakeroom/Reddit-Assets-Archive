@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.231236d1ba78fcbdd7e7.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.5e68027441cc31fc8c89.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -784,11 +784,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Qe = Object(l.a)(e => d.a.createElement(m.c, {
+			const Qe = Object(l.a)(e => d.a.createElement(m.d, {
 					className: Ge.a.modalContainer
-				}, !e.shouldHideHeader && d.a.createElement(m.g, null, d.a.createElement(qe.a, null, d.a.createElement(m.n, null, e.multireddit.displayText), d.a.createElement(We.a, {
+				}, !e.shouldHideHeader && d.a.createElement(m.h, null, d.a.createElement(qe.a, null, d.a.createElement(m.p, null, e.multireddit.displayText), d.a.createElement(We.a, {
 					onClick: e.onCloseModal
-				}, d.a.createElement(m.b, null)))), d.a.createElement(m.j, null, d.a.createElement(X, {
+				}, d.a.createElement(m.b, null)))), d.a.createElement(m.k, null, d.a.createElement(X, {
 					mode: Y.Modal,
 					multireddit: e.multireddit,
 					subredditCategory: e.subredditCategory
@@ -1561,4 +1561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.231236d1ba78fcbdd7e7.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.5e68027441cc31fc8c89.js.map

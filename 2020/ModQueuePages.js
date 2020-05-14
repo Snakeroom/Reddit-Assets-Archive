@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.7045a68c889c9dcfa6a6.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.38233f59e434f6889a6d.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -318,7 +318,7 @@
 					},
 					modModeEnabled: f.P
 				}),
-				G = Object(a.b)(H, (e, t) => {
+				z = Object(a.b)(H, (e, t) => {
 					let {
 						comment: s
 					} = t;
@@ -334,7 +334,7 @@
 						}))
 					}
 				});
-			t.c = V(G(l.a.wrapped(Object(x.c)(e => {
+			t.c = V(z(l.a.wrapped(Object(x.c)(e => {
 				var {
 					className: t,
 					comment: s,
@@ -903,14 +903,14 @@
 					id: g,
 					title: _,
 					onClose: () => {
-						f(!1), P("close", "click"), C(Object(c.G)()), C(Object(c.R)({
+						f(!1), P("close", "click"), C(Object(c.I)()), C(Object(c.T)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						C(Object(c.G)())
+						C(Object(c.I)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -970,10 +970,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						g(n.Closed), _("close", "click"), v(Object(d.G)())
+						g(n.Closed), _("close", "click"), v(Object(d.I)())
 					},
 					onClickOutside: () => {
-						v(Object(d.G)())
+						v(Object(d.I)())
 					}
 				};
 				switch (f) {
@@ -2320,4 +2320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.7045a68c889c9dcfa6a6.js.map
+//# sourceMappingURL=ModQueuePages.38233f59e434f6889a6d.js.map

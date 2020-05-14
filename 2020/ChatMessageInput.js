@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.d2bb3cbd1ec3b5eeb920.js
-// Retrieved at 5/12/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.b4b1212e32a6ea7cc716.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -319,8 +319,8 @@
 				j = s("./src/reddit/controls/Button/index.tsx"),
 				E = s("./src/reddit/controls/ErrorText/index.tsx"),
 				w = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				I = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				O = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				O = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				I = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				y = s("./src/reddit/helpers/trackers/rpan.ts"),
 				R = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				S = s("./src/reddit/icons/svgs/Send/index.tsx"),
@@ -373,7 +373,7 @@
 					return Object(A.g)(e, {
 						commentsPageKey: Object(M.a)(s)
 					})
-				}, N.N, (e, t) => {
+				}, N.O, (e, t) => {
 					let {
 						postId: s
 					} = t;
@@ -464,7 +464,7 @@
 					hasError: A.w,
 					liveStreamingChatCharacterLimit: k.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: N.N
+					post: N.O
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -607,7 +607,7 @@
 					})), l.a.createElement(v.a, {
 						className: X.a.RichTextJson,
 						key: "rich-text-".concat(c.id),
-						content: Object(I.a)(c),
+						content: Object(O.a)(c),
 						rtJsonElementProps: Y
 					}), l.a.createElement($, null, l.a.createElement(R.a, null)))), l.a.createElement("div", {
 						className: X.a.inputLine
@@ -629,7 +629,7 @@
 							[X.a.LivestreamingFocusableContent]: s && !t
 						}),
 						dataTestId: V,
-						editorType: O.a.Comment,
+						editorType: I.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: s ? 20 : void 0,
 						rteState: this.state.rteState,
@@ -709,15 +709,15 @@
 				c = s("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = s.n(c);
 			const u = e => e.preventDefault();
-			t.a = Object(r.a)(e => a.a.createElement(i.c, null, a.a.createElement(i.g, null, a.a.createElement(l.a, null, a.a.createElement(i.n, null, e.headerText || n.fbt._("Confirm", null, {
+			t.a = Object(r.a)(e => a.a.createElement(i.d, null, a.a.createElement(i.h, null, a.a.createElement(l.a, null, a.a.createElement(i.p, null, e.headerText || n.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), a.a.createElement(d.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, a.a.createElement(i.b, null)))), a.a.createElement(i.j, null, a.a.createElement(i.m, {
+			}, a.a.createElement(i.b, null)))), a.a.createElement(i.k, null, a.a.createElement(i.o, {
 				className: m.a.ModalText
-			}, e.modalText)), a.a.createElement(i.e, null, a.a.createElement(i.a, {
+			}, e.modalText)), a.a.createElement(i.f, null, a.a.createElement(i.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -726,7 +726,7 @@
 				"data-redditstyle": !0
 			}, e.cancelActionText || n.fbt._("Cancel", null, {
 				hk: "3DgVq6"
-			})), a.a.createElement(i.r, {
+			})), a.a.createElement(i.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: t => {
@@ -852,7 +852,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return O
+				return I
 			})), s.d(t, "c", (function() {
 				return y
 			}));
@@ -953,10 +953,10 @@
 					}, o || e))
 				}
 			}
-			const I = Object(c.b)(E, e => ({
+			const O = Object(c.b)(E, e => ({
 					toggleErrorTextModal: t => e(Object(h.i)(t))
 				}))(w),
-				O = e => {
+				I = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -966,19 +966,19 @@
 					} = e, r = a.length ? a : o ? [o] : [];
 					return r.length ? l.a.createElement("div", {
 						className: t
-					}, r.map((e, t) => l.a.createElement(I, {
+					}, r.map((e, t) => l.a.createElement(O, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				y = e => l.a.createElement(O, {
+				y = e => l.a.createElement(I, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = I
+			t.b = O
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1067,4 +1067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.d2bb3cbd1ec3b5eeb920.js.map
+//# sourceMappingURL=ChatMessageInput.b4b1212e32a6ea7cc716.js.map

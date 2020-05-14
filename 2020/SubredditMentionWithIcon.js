@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.e4cdb4d37a8aede8987a.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.5542e375206cd4c323cc.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -390,7 +390,7 @@
 							subredditName: e
 						}) && !!Object(y.w)(r, {
 							subredditName: e
-						}) || !!Object(y.Z)(r, {
+						}) || !!Object(y.ab)(r, {
 							subredditName: e
 						}),
 						d = Object(E.d)(r, {
@@ -461,7 +461,7 @@
 				q = s.n(H);
 			const {
 				fbt: R
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = Object(d.a)(e => e, D.N, D.d, F.P, (e, t, s, n) => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = Object(d.a)(e => e, D.O, D.d, F.P, (e, t, s, n) => {
 				return {
 					crosspost: s,
 					language: n,
@@ -961,7 +961,7 @@
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
 				language: a.P,
-				userIsSubscriber: o.ab
+				userIsSubscriber: o.bb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1105,4 +1105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.e4cdb4d37a8aede8987a.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.5542e375206cd4c323cc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.7d5fa0ae39ad499fd65f.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.bf13fd1c971a51cc1d79.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -159,7 +159,7 @@
 							const {
 								postId: e
 							} = d, t = s.posts.models[e];
-							t && t.voteState === h.a.notVoted && n(Object(c.ab)(e))
+							t && t.voteState === h.a.notVoted && n(Object(c.cb)(e))
 						}
 					} else n(E({
 						pollId: e,
@@ -1069,9 +1069,9 @@
 						subredditId: n,
 						token: a
 					} = this.props;
-					return n && e ? s.a.createElement(d.c, {
+					return n && e ? s.a.createElement(d.d, {
 						className: p.a.modalBody
-					}, s.a.createElement(d.j, {
+					}, s.a.createElement(d.k, {
 						className: p.a.modalMain
 					}, s.a.createElement(m.a, {
 						provider: e,
@@ -1738,4 +1738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.7d5fa0ae39ad499fd65f.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.bf13fd1c971a51cc1d79.js.map

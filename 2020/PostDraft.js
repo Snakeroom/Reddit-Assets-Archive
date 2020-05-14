@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.97997e485b1419bad6e2.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.8d48e3200a9df8a9c14a.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -302,15 +302,15 @@
 				c = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = n.n(c);
 			const u = e => e.preventDefault();
-			t.a = Object(i.a)(e => o.a.createElement(a.c, null, o.a.createElement(a.g, null, o.a.createElement(d.a, null, o.a.createElement(a.n, null, e.headerText || s.fbt._("Confirm", null, {
+			t.a = Object(i.a)(e => o.a.createElement(a.d, null, o.a.createElement(a.h, null, o.a.createElement(d.a, null, o.a.createElement(a.p, null, e.headerText || s.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), o.a.createElement(l.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, o.a.createElement(a.b, null)))), o.a.createElement(a.j, null, o.a.createElement(a.m, {
+			}, o.a.createElement(a.b, null)))), o.a.createElement(a.k, null, o.a.createElement(a.o, {
 				className: m.a.ModalText
-			}, e.modalText)), o.a.createElement(a.e, null, o.a.createElement(a.a, {
+			}, e.modalText)), o.a.createElement(a.f, null, o.a.createElement(a.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -319,7 +319,7 @@
 				"data-redditstyle": !0
 			}, e.cancelActionText || s.fbt._("Cancel", null, {
 				hk: "3DgVq6"
-			})), o.a.createElement(a.r, {
+			})), o.a.createElement(a.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: t => {
@@ -1075,7 +1075,7 @@
 					shouldShowCollectionEditOptions: g.t
 				}),
 				M = Object(a.b)(P, (e, t) => ({
-					copyLink: () => e(Object(m.D)(t.permalink)),
+					copyLink: () => e(Object(m.F)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(l.b)(n))
 					},
@@ -1329,7 +1329,7 @@
 			const P = ["right", "bottom"],
 				M = ["right", "top"];
 			var S = Object(a.b)(() => Object(l.c)({
-					post: v.N,
+					post: v.O,
 					language: y.P
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(g.g)(t.collectionId, t.postId))
@@ -2087,4 +2087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.97997e485b1419bad6e2.js.map
+//# sourceMappingURL=PostDraft.8d48e3200a9df8a9c14a.js.map

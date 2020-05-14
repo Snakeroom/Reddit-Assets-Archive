@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.2de3218fb0c3e768100f.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.cf24c89ca50ec7b699ef.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -13,9 +13,9 @@
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
 				return S
 			})), s.d(t, "setIncludeMessage", (function() {
-				return N
-			})), s.d(t, "updateMessage", (function() {
 				return G
+			})), s.d(t, "updateMessage", (function() {
+				return N
 			})), s.d(t, "gildGqlRequested", (function() {
 				return L
 			})), s.d(t, "triggerLoader", (function() {
@@ -42,8 +42,8 @@
 				m = s("./src/reddit/selectors/gild.ts"),
 				f = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				h = s("./src/reddit/selectors/posts.ts"),
-				_ = s("./src/reddit/selectors/subreddit.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/selectors/subreddit.ts"),
+				_ = s("./src/reddit/selectors/user.ts"),
 				j = s("./src/graphql/operations/GildComment.json"),
 				w = s("./src/graphql/operations/GildPost.json"),
 				y = s("./src/lib/makeGqlRequest/index.ts"),
@@ -66,8 +66,8 @@
 				T = s("./src/telemetry/index.ts"),
 				E = s("./src/reddit/actions/gold/constants.ts");
 			const S = Object(i.a)(E.p),
-				N = Object(i.a)(E.o),
-				G = Object(i.a)(E.s),
+				G = Object(i.a)(E.o),
+				N = Object(i.a)(E.s),
 				L = (e, t) => async (s, i, r) => {
 					let {
 						gqlContext: d
@@ -145,13 +145,13 @@
 				}, F = Object(i.a)(E.q), H = (e, t) => {
 					const {
 						id: s
-					} = t, n = Object(C.a)(s) ? Object(h.N)(e, {
+					} = t, n = Object(C.a)(s) ? Object(h.O)(e, {
 						postId: s
 					}) : Object(g.n)(e, {
 						commentId: s
-					}), i = Object(O.i)(e), r = e.gild, {
+					}), i = Object(_.i)(e), r = e.gild, {
 						isAnonymous: d
-					} = r, a = !d && i && (i.username || i.displayText) ? i.username || i.displayText : void 0, c = n ? n.author : void 0, o = Object(_.I)(e, {
+					} = r, a = !d && i && (i.username || i.displayText) ? i.username || i.displayText : void 0, c = n ? n.author : void 0, o = Object(O.I)(e, {
 						thingId: s
 					});
 					return F(Object.assign({}, t, {
@@ -163,7 +163,7 @@
 					const i = s(),
 						{
 							awardId: g,
-							id: O
+							id: _
 						} = e,
 						j = Object(p.a)(i, g);
 					if (Object(m.h)(i)) {
@@ -176,35 +176,35 @@
 						})
 					}
 					if (j.awardType === o.e.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(_.I)(i, {
-								thingId: O
+						const t = Object(O.I)(i, {
+								thingId: _
 							}),
-							s = t && Object(_.B)(i, {
+							s = t && Object(O.B)(i, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - j.coinPrice)
 					}
-					t(H(i, e)), (i.posts.instances[O] || []).forEach(s => {
+					t(H(i, e)), (i.posts.instances[_] || []).forEach(s => {
 						t(H(i, Object.assign({}, e, {
 							id: s
 						})))
 					});
-					const w = Object(C.a)(O) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", j.name)], {
+					const w = Object(C.a)(_) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", j.name)], {
 							hk: "1Ndi4Z"
 						}) : n.fbt._("Success! You have given this comment the {awardName} Award", [n.fbt._param("awardName", j.name)], {
 							hk: "2sIK9Y"
 						}),
 						y = j.coinPrice;
-					Object(T.a)(Object(q.viewSuccessAwardEvent)(O, y, j)(i)), t(Object(c.e)({
+					Object(T.a)(Object(q.viewSuccessAwardEvent)(_, y, j)(i)), t(Object(c.e)({
 						kind: b.b.SuccessCommunity,
 						text: w
 					})), setTimeout(() => {
-						const e = Object(A.a)(g, O),
+						const e = Object(A.a)(g, _),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const I = Object(C.a)(O) && Object(u.i)(Object(h.N)(i, {
-						postId: O
+					const I = Object(C.a)(_) && Object(u.i)(Object(h.O)(i, {
+						postId: _
 					}));
 					await t(Object(a.a)());
 					const k = Object(f.d)(s()).filter(e => l.a.has(e.dealInfo.type));
@@ -295,15 +295,15 @@
 					body: r
 				})
 			}
-			var _ = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const O = Object(i.a)(_.g),
-				j = Object(i.a)(_.h),
-				w = Object(i.a)(_.f),
+			var O = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const _ = Object(i.a)(O.g),
+				j = Object(i.a)(O.h),
+				w = Object(i.a)(O.f),
 				y = () => async (e, t, s) => {
 					let {
 						apiContext: i
 					} = s;
-					e(O());
+					e(_());
 					try {
 						const t = await (async e => {
 							const t = "".concat(e.apiUrl, "/api/v2/gold/purchase_package_details"),
@@ -357,4 +357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.2de3218fb0c3e768100f.js.map
+//# sourceMappingURL=gildActions.cf24c89ca50ec7b699ef.js.map

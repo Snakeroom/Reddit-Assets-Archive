@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.3797f5437a4a2295de53.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.839f5e0a9aa96fb6b3f7.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -11,7 +11,7 @@
 			})), o.d(e, "g", (function() {
 				return A
 			})), o.d(e, "a", (function() {
-				return N
+				return R
 			})), o.d(e, "c", (function() {
 				return G
 			})), o.d(e, "h", (function() {
@@ -160,7 +160,7 @@
 					} = i;
 					if ((await C(l(), t, e)).ok) {
 						const i = s(),
-							l = Object(y.N)(i, {
+							l = Object(y.O)(i, {
 								postId: e
 							}),
 							d = l && l.title || "",
@@ -177,7 +177,7 @@
 									collectionId: t
 								}),
 								n = o && o.postIds && o.postIds[u] || "",
-								i = Object(y.N)(e, {
+								i = Object(y.O)(e, {
 									postId: n
 								});
 							i && i.permalink && c(Object(g.a)(i.permalink))
@@ -190,7 +190,7 @@
 							buttonText: n.fbt._("UNDO", null, {
 								hk: "3KPLib"
 							}),
-							buttonAction: N(t, e)
+							buttonAction: R(t, e)
 						}))
 					} else c(Object(r.e)({
 						kind: x.b.Error,
@@ -198,7 +198,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), N = (t, e) => async (o, c, s) => {
+				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), R = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -211,7 +211,7 @@
 							collectionId: t,
 							postId: e
 						}));
-						const c = Object(y.N)(l, {
+						const c = Object(y.O)(l, {
 								postId: e
 							}),
 							s = Object(E.r)(l, {
@@ -234,7 +234,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, R = Object(i.a)(l.e), G = (t, e) => async (o, i, l) => {
+				}, N = Object(i.a)(l.e), G = (t, e) => async (o, i, l) => {
 					let {
 						apiContext: d
 					} = l;
@@ -245,7 +245,7 @@
 						} = a.platform.currentPage, l = Object(E.r)(a, {
 							collectionId: t
 						}), d = l && l.title || "", u = l && l.subredditId, p = u ? Object(S.c)(a, u) : "/";
-						o(R({
+						o(N({
 							collectionId: t,
 							collection: l
 						})), o(e ? Object(c.c)(Object(s.a)(i, ["collection"])) : Object(c.b)(p)), o(Object(r.e)({
@@ -732,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.3797f5437a4a2295de53.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.839f5e0a9aa96fb6b3f7.js.map

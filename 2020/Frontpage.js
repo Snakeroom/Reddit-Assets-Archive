@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3f1aa158dbedecf280fc.js
-// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.337fdb4baf4f8b718fe3.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1022,7 +1022,7 @@
 				d = s("./src/reddit/selectors/platform.ts"),
 				l = s("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.S,
+					postCount: l.T,
 					previousPageIsOverlay: d.o,
 					tabBadged: e => e.tabBadged
 				}),
@@ -1760,7 +1760,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => p(t.listingName)(e, t), j, b, c.h, d.b, (e, t, s, n, r, c) => {
+				}, (e, t) => p(t.listingName)(e, t), j, b, c.i, d.b, (e, t, s, n, r, c) => {
 					if (c) {
 						const o = [];
 						if (e) {
@@ -1851,7 +1851,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s ? Object(i.g)(s) : void 0
-				}, k, b, c.h, (e, t) => {
+				}, k, b, c.i, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
@@ -1930,4 +1930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.3f1aa158dbedecf280fc.js.map
+//# sourceMappingURL=Frontpage.337fdb4baf4f8b718fe3.js.map

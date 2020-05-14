@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.97478c90994b486c1627.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.b1ab33aafe390b4ed0b8.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -694,6 +694,8 @@
 				closeIcon: "_3XSQHPxjCTSWWZh_u-d0Xf",
 				ModalBody: "_2R3RlhymCOkPrz9TusvcPq",
 				modalBody: "_2R3RlhymCOkPrz9TusvcPq",
+				ModalPostPreview: "HydQQ-TD4TUsVnxkYk_5F",
+				modalPostPreview: "HydQQ-TD4TUsVnxkYk_5F",
 				ModalText: "mFTHPdbEAklUs8yhT4Xm7",
 				modalText: "mFTHPdbEAklUs8yhT4Xm7",
 				ModalSmallText: "_3cwQrg-XvocnoG0U22wT8t",
@@ -716,6 +718,8 @@
 				modalTitle: "eLnlHLGCDxjFf3jfGTcZu",
 				ModalMain: "_1uaasV6RaxBfRyVgQJdiKs",
 				modalMain: "_1uaasV6RaxBfRyVgQJdiKs",
+				ModalAnnotation: "gLlWG7Oj89Ost4_twUu8w",
+				modalAnnotation: "gLlWG7Oj89Ost4_twUu8w",
 				TextArea: "_2h8O7PjrCXfaJJWKrAxJPL",
 				textArea: "_2h8O7PjrCXfaJJWKrAxJPL",
 				WarningButton: "_17UyTSs2atqnKg9dIq5ERg",
@@ -732,40 +736,44 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return d
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return l
 			})), n.d(t, "m", (function() {
 				return u
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "o", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "n", (function() {
 				return m
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "e", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "l", (function() {
 				return b
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return h
 			})), n.d(t, "i", (function() {
 				return y
-			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "g", (function() {
-				return v
-			})), n.d(t, "n", (function() {
-				return x
 			})), n.d(t, "j", (function() {
-				return O
-			})), n.d(t, "q", (function() {
-				return j
-			})), n.d(t, "r", (function() {
-				return w
-			})), n.d(t, "o", (function() {
-				return C
-			})), n.d(t, "a", (function() {
-				return _
+				return g
+			})), n.d(t, "f", (function() {
+				return v
+			})), n.d(t, "h", (function() {
+				return x
 			})), n.d(t, "p", (function() {
+				return O
+			})), n.d(t, "c", (function() {
+				return j
+			})), n.d(t, "k", (function() {
+				return w
+			})), n.d(t, "s", (function() {
+				return C
+			})), n.d(t, "t", (function() {
+				return _
+			})), n.d(t, "q", (function() {
 				return I
+			})), n.d(t, "a", (function() {
+				return S
+			})), n.d(t, "r", (function() {
+				return E
 			}));
 			var r = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/controls/Button/index.tsx"),
@@ -775,22 +783,24 @@
 				c = n.n(a);
 			const d = r.a.wrapped(i.a, "CloseIcon", c.a),
 				l = r.a.section("ModalBody", c.a),
-				u = r.a.p("ModalText", c.a),
-				p = r.a.div("ModalSmallText", c.a),
-				m = r.a.div("ModalDescriptionText", c.a),
-				f = r.a.div("ModalMetaText", c.a),
-				b = r.a.label("ModalFormItem", c.a),
-				h = r.a.wrapped(o.a, "ModalInput", c.a),
-				y = r.a.label("ModalInputLabel", c.a),
-				g = r.a.footer("ModalFooter", c.a),
-				v = r.a.header("ModalHeader", c.a),
-				x = r.a.div("ModalTitle", c.a),
-				O = r.a.div("ModalMain", c.a),
-				j = r.a.textarea("TextArea", c.a),
-				w = r.a.wrapped(s.f, "WarningButton", c.a),
-				C = r.a.wrapped(s.f, "PrimaryButton", c.a),
-				_ = r.a.wrapped(s.i, "CancelButton", c.a),
-				I = r.a.wrapped(s.n, "RemoveButton", c.a)
+				u = r.a.section("ModalPostPreview", c.a),
+				p = r.a.p("ModalText", c.a),
+				m = r.a.div("ModalSmallText", c.a),
+				f = r.a.div("ModalDescriptionText", c.a),
+				b = r.a.div("ModalMetaText", c.a),
+				h = r.a.label("ModalFormItem", c.a),
+				y = r.a.wrapped(o.a, "ModalInput", c.a),
+				g = r.a.label("ModalInputLabel", c.a),
+				v = r.a.footer("ModalFooter", c.a),
+				x = r.a.header("ModalHeader", c.a),
+				O = r.a.div("ModalTitle", c.a),
+				j = r.a.div("ModalAnnotation", c.a),
+				w = r.a.div("ModalMain", c.a),
+				C = r.a.textarea("TextArea", c.a),
+				_ = r.a.wrapped(s.f, "WarningButton", c.a),
+				I = r.a.wrapped(s.f, "PrimaryButton", c.a),
+				S = r.a.wrapped(s.i, "CancelButton", c.a),
+				E = r.a.wrapped(s.n, "RemoveButton", c.a)
 		},
 		"./src/reddit/components/Portal/index.tsx": function(e, t, n) {
 			"use strict";
@@ -3228,4 +3238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.97478c90994b486c1627.js.map
+//# sourceMappingURL=ModListing~Reddit.b1ab33aafe390b4ed0b8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.5e71a1c9a27439a4a713.js
-// Retrieved at 5/14/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.f508263b3e3b392b1717.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2145,18 +2145,18 @@
 					}
 				}
 				render() {
-					return r.a.createElement(c.c, null, r.a.createElement(c.g, null, r.a.createElement(l.a, null, r.a.createElement(c.n, null, u._("Save changes before leaving?", null, {
+					return r.a.createElement(c.d, null, r.a.createElement(c.h, null, r.a.createElement(l.a, null, r.a.createElement(c.p, null, u._("Save changes before leaving?", null, {
 						hk: "34wJXL"
 					})), r.a.createElement(d.a, {
 						onClick: this.onCancelClick
-					}, r.a.createElement(c.b, null)))), r.a.createElement(c.j, null, r.a.createElement(c.m, null, u._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, r.a.createElement(c.b, null)))), r.a.createElement(c.k, null, r.a.createElement(c.o, null, u._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "2SOiAP"
-					}))), r.a.createElement(c.e, null, r.a.createElement(c.a, {
+					}))), r.a.createElement(c.f, null, r.a.createElement(c.a, {
 						onClick: this.onDiscardClick,
 						"data-redditstyle": !0
 					}, u._("Discard", null, {
 						hk: "ViASy"
-					})), r.a.createElement(c.o, {
+					})), r.a.createElement(c.q, {
 						onClick: this.onSaveClick,
 						"data-redditstyle": !0
 					}, u._("Save", null, {
@@ -2471,7 +2471,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
 				language: a.P,
-				userIsSubscriber: i.ab
+				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -2840,4 +2840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.5e71a1c9a27439a4a713.js.map
+//# sourceMappingURL=IdCard.f508263b3e3b392b1717.js.map

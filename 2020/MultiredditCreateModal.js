@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.98773c334adb541b7e29.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.fd8f36a937b979496dc0.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -140,13 +140,13 @@
 					} = this.state, x = e || r || d;
 					return i.a.createElement(h.a, {
 						forceRedditTheme: !0
-					}, i.a.createElement(u.c, null, i.a.createElement(u.g, null, i.a.createElement(g.a, null, i.a.createElement(u.n, null, s ? a.fbt._("Duplicate This Custom Feed", null, {
+					}, i.a.createElement(u.d, null, i.a.createElement(u.h, null, i.a.createElement(g.a, null, i.a.createElement(u.p, null, s ? a.fbt._("Duplicate This Custom Feed", null, {
 						hk: "owR2J"
 					}) : a.fbt._("Create a Custom Feed", null, {
 						hk: "IDT2Q"
 					})), i.a.createElement("button", {
 						onClick: o
-					}, i.a.createElement(u.b, null)))), i.a.createElement(u.j, null, i.a.createElement(u.f, null, i.a.createElement(p.b, {
+					}, i.a.createElement(u.b, null)))), i.a.createElement(u.k, null, i.a.createElement(u.g, null, i.a.createElement(p.b, {
 						isRequired: !0,
 						label: a.fbt._("custom feed name", null, {
 							hk: "4rkm37"
@@ -167,7 +167,7 @@
 					})) : i.a.createElement(m.a, {
 						text: c,
 						maxChars: E.c
-					})), i.a.createElement(u.f, null, i.a.createElement(p.c, {
+					})), i.a.createElement(u.g, null, i.a.createElement(p.c, {
 						className: F.a.descriptionTextarea,
 						label: a.fbt._("description (optional)", null, {
 							hk: "4mWEDA"
@@ -178,7 +178,7 @@
 					}), i.a.createElement(m.a, {
 						text: l,
 						maxChars: E.b
-					}))), i.a.createElement(u.e, null, i.a.createElement(u.o, {
+					}))), i.a.createElement(u.f, null, i.a.createElement(u.q, {
 						onClick: this.onSubmit
 					}, t || n ? i.a.createElement(b.a, {
 						className: F.a.loadingIcon,
@@ -473,4 +473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditCreateModal.98773c334adb541b7e29.js.map
+//# sourceMappingURL=MultiredditCreateModal.fd8f36a937b979496dc0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.36e472f9c64dc81c6e11.js
-// Retrieved at 5/13/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.496ab1be085c2900c1f9.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -59,15 +59,15 @@
 				d = a("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				l = a.n(d);
 			const p = e => e.preventDefault();
-			t.a = Object(i.a)(e => r.a.createElement(n.c, null, r.a.createElement(n.g, null, r.a.createElement(m.a, null, r.a.createElement(n.n, null, e.headerText || s.fbt._("Confirm", null, {
+			t.a = Object(i.a)(e => r.a.createElement(n.d, null, r.a.createElement(n.h, null, r.a.createElement(m.a, null, r.a.createElement(n.p, null, e.headerText || s.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), r.a.createElement(c.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, r.a.createElement(n.b, null)))), r.a.createElement(n.j, null, r.a.createElement(n.m, {
+			}, r.a.createElement(n.b, null)))), r.a.createElement(n.k, null, r.a.createElement(n.o, {
 				className: l.a.ModalText
-			}, e.modalText)), r.a.createElement(n.e, null, r.a.createElement(n.a, {
+			}, e.modalText)), r.a.createElement(n.f, null, r.a.createElement(n.a, {
 				className: l.a.buttonWidth,
 				onMouseDown: p,
 				onClick: () => {
@@ -76,7 +76,7 @@
 				"data-redditstyle": !0
 			}, e.cancelActionText || s.fbt._("Cancel", null, {
 				hk: "3DgVq6"
-			})), r.a.createElement(n.r, {
+			})), r.a.createElement(n.t, {
 				className: l.a.buttonWidth,
 				onMouseDown: p,
 				onClick: t => {
@@ -3797,4 +3797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.36e472f9c64dc81c6e11.js.map
+//# sourceMappingURL=MembershipPaywallPage.496ab1be085c2900c1f9.js.map

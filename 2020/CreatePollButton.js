@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.26c4669428f57ad7cb6f.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.481273fa9fb8cb6c6591.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -21,15 +21,15 @@
 				d = t("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = t.n(d);
 			const u = e => e.preventDefault();
-			a.a = Object(r.a)(e => n.a.createElement(i.c, null, n.a.createElement(i.g, null, n.a.createElement(c.a, null, n.a.createElement(i.n, null, e.headerText || o.fbt._("Confirm", null, {
+			a.a = Object(r.a)(e => n.a.createElement(i.d, null, n.a.createElement(i.h, null, n.a.createElement(c.a, null, n.a.createElement(i.p, null, e.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), n.a.createElement(l.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, n.a.createElement(i.b, null)))), n.a.createElement(i.j, null, n.a.createElement(i.m, {
+			}, n.a.createElement(i.b, null)))), n.a.createElement(i.k, null, n.a.createElement(i.o, {
 				className: m.a.ModalText
-			}, e.modalText)), n.a.createElement(i.e, null, n.a.createElement(i.a, {
+			}, e.modalText)), n.a.createElement(i.f, null, n.a.createElement(i.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -38,7 +38,7 @@
 				"data-redditstyle": !0
 			}, e.cancelActionText || o.fbt._("Cancel", null, {
 				hk: "3DgVq6"
-			})), n.a.createElement(i.r, {
+			})), n.a.createElement(i.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: a => {
@@ -111,4 +111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CreatePollButton.26c4669428f57ad7cb6f.js.map
+//# sourceMappingURL=CreatePollButton.481273fa9fb8cb6c6591.js.map

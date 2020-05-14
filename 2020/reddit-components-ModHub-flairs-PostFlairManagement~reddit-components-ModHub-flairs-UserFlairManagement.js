@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.6aece93b6c9220b73780.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e1b38c19ea40cda02fc7.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -505,9 +505,9 @@
 						s = t !== this.props.settings;
 					return o.a.createElement("div", {
 						className: ne.a.container
-					}, o.a.createElement(G.g, {
+					}, o.a.createElement(G.h, {
 						className: ne.a.modalHeader
-					}, o.a.createElement(G.n, null, e ? U.fbt._("User flair settings", null, {
+					}, o.a.createElement(G.p, null, e ? U.fbt._("User flair settings", null, {
 						hk: "RXint"
 					}) : U.fbt._("Post flair settings", null, {
 						hk: "2mhOeo"
@@ -541,7 +541,7 @@
 						hk: "L2y8H"
 					}) : U.fbt._("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair.", null, {
 						hk: "20qd2P"
-					}))), o.a.createElement(G.e, {
+					}))), o.a.createElement(G.f, {
 						className: ne.a.modalFooter
 					}, o.a.createElement(G.a, {
 						onClick: this.props.onClose
@@ -830,14 +830,14 @@
 				rt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
 				dt = s.n(rt);
 			const ct = Object(_e.c)({
-					examplePost: e => Object(Je.N)(e, {
+					examplePost: e => Object(Je.O)(e, {
 						postId: u.e
 					})
 				}),
 				pt = Object(ke.b)(ct, (e, t) => ({
 					deleteExamplePost: () => e(Object(Be.b)(u.e)),
 					makeExamplePost: s => e(Object(Be.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Ue.R)({
+					updateExamplePost: t => e(Object(Ue.T)({
 						[u.e]: {
 							flair: [t]
 						}
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.6aece93b6c9220b73780.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e1b38c19ea40cda02fc7.js.map

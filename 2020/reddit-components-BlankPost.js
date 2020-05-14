@@ -1,9 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.fd72a2dce4e516a44f73.js
-// Retrieved at 3/31/2020, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.59beb721384943659138.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
 			"use strict";
+			i.d(t, "a", (function() {
+				return S
+			}));
 			var r = i("./node_modules/react/index.js"),
 				n = i.n(r),
 				o = i("./node_modules/react-dom/index.js"),
@@ -151,9 +154,7 @@
 						}) : null
 					}, r
 				}(n.a.Component);
-			g(S, "displayName", "IntersectionObserver"), i.d(t, "a", (function() {
-				return S
-			}))
+			g(S, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, i) {
 			"use strict";
@@ -384,7 +385,7 @@
 				l = i("./src/reddit/selectors/posts.ts"),
 				d = i("./src/lib/classNames/index.ts");
 			const c = Object(a.a)(() => Object(o.c)({
-					post: l.N
+					post: l.O
 				})),
 				u = e => {
 					let {
@@ -412,12 +413,12 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: n.P,
-					pixelPostHasEnteredView: n.A,
-					pixelPostHasExitedView: n.B
+					onPostViewable: n.R,
+					pixelPostHasEnteredView: n.C,
+					pixelPostHasExitedView: n.D
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.fd72a2dce4e516a44f73.js.map
+//# sourceMappingURL=reddit-components-BlankPost.59beb721384943659138.js.map

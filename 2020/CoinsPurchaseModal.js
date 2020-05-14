@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.2e2b1c1819c2884a09be.js
-// Retrieved at 4/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.91918ef56c39cf108b34.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, a, s) {
@@ -303,4 +303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.2e2b1c1819c2884a09be.js.map
+//# sourceMappingURL=CoinsPurchaseModal.91918ef56c39cf108b34.js.map

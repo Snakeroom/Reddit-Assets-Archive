@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.582b1c8db7b29a87c831.js
-// Retrieved at 5/7/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.15737c4c8743647bb1f7.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/components/Gold/TargetedOfferModal/index.m.less": function(e, t, n) {
@@ -81,7 +81,7 @@
 				}) : w ? r.fbt._("Save {baseline price} off normal price!", [r.fbt._param("baseline price", "$".concat(j / 100))], {
 					hk: "CRTYf"
 				}) : m.description;
-				return a.a.createElement(f.c, {
+				return a.a.createElement(f.d, {
 					className: h.a.body
 				}, a.a.createElement("button", {
 					onClick: () => {
@@ -113,7 +113,7 @@
 					hk: "11oBec"
 				})))], {
 					hk: "3RTwKy"
-				})), a.a.createElement(f.o, {
+				})), a.a.createElement(f.q, {
 					className: h.a.button,
 					"data-redditstyle": !0,
 					onClick: () => {
@@ -284,4 +284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GoldTargetedOfferModal.582b1c8db7b29a87c831.js.map
+//# sourceMappingURL=GoldTargetedOfferModal.15737c4c8743647bb1f7.js.map

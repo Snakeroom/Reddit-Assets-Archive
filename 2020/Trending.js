@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.f5297fa7ee366a1026f5.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.63813d7c9e93a31d2618.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -99,8 +99,8 @@
 					L = h ? h.numComments : 0,
 					M = h && h.isSponsored,
 					A = Object(j.a)(e).body,
-					Y = "linear-gradient(\n      ".concat(Object(n.g)(A, .2), ",\n      ").concat(Object(n.g)(A, .3), ",\n      ").concat(Object(n.g)(A, .4), ",\n      ").concat(Object(n.g)(A, .6), ",\n      ").concat(Object(n.g)(A, .8), ",\n      ").concat(A, "\n    )"),
-					R = i.a.createElement("div", {
+					R = "linear-gradient(\n      ".concat(Object(n.g)(A, .2), ",\n      ").concat(Object(n.g)(A, .3), ",\n      ").concat(Object(n.g)(A, .4), ",\n      ").concat(Object(n.g)(A, .6), ",\n      ").concat(Object(n.g)(A, .8), ",\n      ").concat(A, "\n    )"),
+					Y = i.a.createElement("div", {
 						className: Object(d.a)(y.a.trendingPost, {
 							[y.a["m-background"]]: !!S
 						})
@@ -110,7 +110,7 @@
 						className: Object(d.a)(y.a.backgroundWrapper, f.a.backgroundWrapper, t),
 						style: {
 							background: Object(O.g)(Object(j.a)(e).body, S || Object(j.a)(e).banner.backgroundImage, "cover"),
-							"--SearchDiscoveryUnits-TrendingPosts-Post-background": Y
+							"--SearchDiscoveryUnits-TrendingPosts-Post-background": R
 						}
 					}, M && i.a.createElement("div", {
 						className: y.a.promoted
@@ -160,7 +160,7 @@
 					})))))));
 				return M ? i.a.createElement(b.a, {
 					post: h
-				}, R) : R
+				}, Y) : Y
 			})))
 		},
 		"./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/index.m.less": function(e, t, s) {
@@ -220,7 +220,7 @@
 				}
 			}
 			var x = Object(a.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(l.z)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(l.B)(t, s)),
 					trackPostView: t => e((e, s) => p.H(s(), t)),
 					trackPostClick: t => e((e, s) => p.G(s(), t))
 				}))(g),
@@ -283,13 +283,13 @@
 				currentUser: u.i,
 				flairStyleTemplate: c.R,
 				hideNSFWPref: u.z,
-				isActive: b.i,
+				isActive: b.j,
 				language: u.P,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
-				post: b.N,
+				post: b.O,
 				showEditFlair: p.a,
-				subredditOrProfile: b.Z,
+				subredditOrProfile: b.bb,
 				userIsOp: u.gb
 			}), (e, t) => {
 				let {
@@ -309,10 +309,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === d.a.upvoted ? Object(a.ab)(s) : Object(a.w)(s);
+						const r = t === d.a.upvoted ? Object(a.cb)(s) : Object(a.y)(s);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.Y)(s)),
+					onIgnoreReports: () => e(Object(a.ab)(s)),
 					onOpenReportsDropdown: t => e(Object(o.h)({
 						tooltipId: t
 					}))
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.f5297fa7ee366a1026f5.js.map
+//# sourceMappingURL=Trending.63813d7c9e93a31d2618.js.map

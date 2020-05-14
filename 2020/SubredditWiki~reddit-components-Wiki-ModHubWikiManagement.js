@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.83ad0b53b6eaab6722c0.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.81a556805c1a016aa341.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
@@ -1114,9 +1114,9 @@
 					} = this.state, i = p.g - t.length;
 					return a.a.createElement("div", {
 						className: V.a.container
-					}, a.a.createElement(U.g, {
+					}, a.a.createElement(U.h, {
 						className: V.a.modalHeader
-					}, a.a.createElement(U.n, null, n.fbt._("Add a reason for your revision", null, {
+					}, a.a.createElement(U.p, null, n.fbt._("Add a reason for your revision", null, {
 						hk: "3ozq8e"
 					})), a.a.createElement(z.a, {
 						onClick: this.props.onCancel
@@ -1142,7 +1142,7 @@
 						_1: "1 character left"
 					}, [n.fbt._plural(i, "number")], {
 						hk: "1Ra9c8"
-					}))), a.a.createElement(U.e, {
+					}))), a.a.createElement(U.f, {
 						className: V.a.modalFooter
 					}, a.a.createElement(U.a, {
 						onClick: this.props.onCancel
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.83ad0b53b6eaab6722c0.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.81a556805c1a016aa341.js.map

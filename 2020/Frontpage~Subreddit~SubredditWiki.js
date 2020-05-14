@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.487c1bc388452fc4502d.js
-// Retrieved at 5/14/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.656aaf54b105d792def1.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -961,7 +961,7 @@
 				o = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
 				language: o.P,
-				userIsSubscriber: i.ab
+				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1045,4 +1045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.487c1bc388452fc4502d.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.656aaf54b105d792def1.js.map

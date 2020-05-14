@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.9c877393669c262ad9cb.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.14dbd6e806879bc9ebd9.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -452,10 +452,10 @@
 				})),
 				S = n("./src/reddit/selectors/posts.ts");
 			var I = Object(s.b)(() => Object(l.c)({
-				post: S.N,
-				subredditOrProfile: S.Z,
+				post: S.O,
+				subredditOrProfile: S.bb,
 				isModerator: (e, t) => {
-					const n = Object(S.Z)(e, t);
+					const n = Object(S.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => r.a.createElement(p, {
@@ -489,11 +489,11 @@
 				}
 			}));
 			var y = Object(s.b)(() => Object(l.c)({
-				subredditOrProfile: (e, t) => Object(S.Z)(e, {
+				subredditOrProfile: (e, t) => Object(S.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const n = Object(S.Z)(e, {
+					const n = Object(S.bb)(e, {
 						postId: t.post.id
 					});
 					return n && !!e.moderatingSubreddits[n.name] || !1
@@ -515,10 +515,10 @@
 				}
 			}));
 			var k = Object(s.b)(() => Object(l.c)({
-				post: S.N,
-				subredditOrProfile: S.Z,
+				post: S.O,
+				subredditOrProfile: S.bb,
 				isModerator: (e, t) => {
-					const n = Object(S.Z)(e, t);
+					const n = Object(S.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => r.a.createElement(p, {
@@ -810,18 +810,18 @@
 					}
 				}
 				render() {
-					return r.a.createElement($.c, null, r.a.createElement($.g, null, r.a.createElement(B.a, null, r.a.createElement($.n, null, te._("Reset to default styling?", null, {
+					return r.a.createElement($.d, null, r.a.createElement($.h, null, r.a.createElement(B.a, null, r.a.createElement($.p, null, te._("Reset to default styling?", null, {
 						hk: "2Ztjzn"
 					})), r.a.createElement(ee.a, {
 						onClick: this.handleClose
-					}, r.a.createElement($.b, null)))), r.a.createElement($.j, null, r.a.createElement($.m, null, te._("Resetting to defaults here will rollback all your past edits to when your community was first created.", null, {
+					}, r.a.createElement($.b, null)))), r.a.createElement($.k, null, r.a.createElement($.o, null, te._("Resetting to defaults here will rollback all your past edits to when your community was first created.", null, {
 						hk: "3eSsCv"
-					}))), r.a.createElement($.e, null, r.a.createElement($.a, {
+					}))), r.a.createElement($.f, null, r.a.createElement($.a, {
 						onClick: this.handleCancel,
 						"data-redditstyle": !0
 					}, te._("Cancel", null, {
 						hk: "twJ06"
-					})), r.a.createElement($.o, {
+					})), r.a.createElement($.q, {
 						onClick: this.handleSave,
 						"data-redditstyle": !0
 					}, te._("Reset", null, {
@@ -1351,18 +1351,18 @@
 					}
 				}
 				render() {
-					return r.a.createElement($.c, null, r.a.createElement($.g, null, r.a.createElement(B.a, null, r.a.createElement($.n, null, ct._("Save changes before leaving?", null, {
+					return r.a.createElement($.d, null, r.a.createElement($.h, null, r.a.createElement(B.a, null, r.a.createElement($.p, null, ct._("Save changes before leaving?", null, {
 						hk: "2Dr4N3"
 					})), r.a.createElement(ee.a, {
 						onClick: this.handleClose
-					}, r.a.createElement($.b, null)))), r.a.createElement($.j, null, r.a.createElement($.m, null, ct._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, r.a.createElement($.b, null)))), r.a.createElement($.k, null, r.a.createElement($.o, null, ct._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "4A9yJT"
-					}))), r.a.createElement($.e, null, r.a.createElement($.a, {
+					}))), r.a.createElement($.f, null, r.a.createElement($.a, {
 						onClick: this.handleCancel,
 						"data-redditstyle": !0
 					}, ct._("Discard", null, {
 						hk: "1SiwLl"
-					})), r.a.createElement($.o, {
+					})), r.a.createElement($.q, {
 						onClick: this.handleSave,
 						"data-redditstyle": !0
 					}, ct._("Save", null, {
@@ -1750,12 +1750,12 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement($.c, null, r.a.createElement($.g, null, r.a.createElement(B.a, null, r.a.createElement($.n, null, e.modalTitle), r.a.createElement(ee.a, {
+					return r.a.createElement($.d, null, r.a.createElement($.h, null, r.a.createElement(B.a, null, r.a.createElement($.p, null, e.modalTitle), r.a.createElement(ee.a, {
 						onClick: this.props.toggleModal
-					}, r.a.createElement($.b, null)))), r.a.createElement($.j, null, r.a.createElement($.m, null, e.modalText)), r.a.createElement($.e, null, r.a.createElement($.a, {
+					}, r.a.createElement($.b, null)))), r.a.createElement($.k, null, r.a.createElement($.o, null, e.modalText)), r.a.createElement($.f, null, r.a.createElement($.a, {
 						onClick: this.onCancel,
 						"data-redditstyle": !0
-					}, e.onCancelText), r.a.createElement($.o, {
+					}, e.onCancelText), r.a.createElement($.q, {
 						onClick: this.onSave,
 						"data-redditstyle": !0
 					}, e.onSaveText)))
@@ -2026,18 +2026,18 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement($.c, null, r.a.createElement($.g, null, r.a.createElement(B.a, null, r.a.createElement($.n, null, l.fbt._("Leave this menu without saving?", null, {
+					return r.a.createElement($.d, null, r.a.createElement($.h, null, r.a.createElement(B.a, null, r.a.createElement($.p, null, l.fbt._("Leave this menu without saving?", null, {
 						hk: "2VpfMT"
 					})), r.a.createElement(ee.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement($.b, null)))), r.a.createElement($.j, null, r.a.createElement($.m, null, l.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, r.a.createElement($.b, null)))), r.a.createElement($.k, null, r.a.createElement($.o, null, l.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "3dOZum"
-					}))), r.a.createElement($.e, null, r.a.createElement($.a, {
+					}))), r.a.createElement($.f, null, r.a.createElement($.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, l.fbt._("Cancel", null, {
 						hk: "2CQBL1"
-					})), r.a.createElement($.o, {
+					})), r.a.createElement($.q, {
 						onClick: e.onLeave,
 						"data-redditstyle": !0
 					}, l.fbt._("Leave", null, {
@@ -8364,4 +8364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.9c877393669c262ad9cb.js.map
+//# sourceMappingURL=StructuredStyles.14dbd6e806879bc9ebd9.js.map

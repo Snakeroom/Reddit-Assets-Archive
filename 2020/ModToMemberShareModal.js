@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.56d2823eabbd0df7011f.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.7c6da1486d776236d657.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -15,16 +15,16 @@
 				o = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				a = s("./src/reddit/components/CharacterCountdown/index.m.less"),
-				c = s.n(a);
+				d = s.n(a);
 			const {
-				fbt: d
+				fbt: c
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(i.b, {
-				className: Object(o.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
-			}, d._({
+				className: Object(o.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
+			}, c._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
-			}, [d._plural(e.maxChars - e.text.length, "characters")], {
+			}, [c._plural(e.maxChars - e.text.length, "characters")], {
 				hk: "V22sW"
 			}))
 		},
@@ -32,8 +32,11 @@
 			e.exports = {
 				container: "_3fWuhJ6bVet7XJT5A0mZM2",
 				title: "_2uR1aBUWmKIo8Fcg-D7bPi",
+				crowdControlPreview: "_1R-_n2amB7t3lRrMWDZFYz",
 				thumbnailContainer: "tN3XUE_42h_qcAw7KSnlh",
 				postDetails: "_2mURCICbBWv1kFMX2GPzA_",
+				SubredditLink: "_3g8BYpbdZDmGNwV4UIA3GI",
+				subredditLink: "_3g8BYpbdZDmGNwV4UIA3GI",
 				subAndMeta: "_3GMQrxl5pvXDUEFvUjr9Qh",
 				isSingleLine: "dZATEZTPQCHPtvhujPV0L",
 				separator: "_2q6RJ3jSwGkeuWcg6aU-nY",
@@ -47,8 +50,8 @@
 				o = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/lib/prettyPrintNumber/index.ts"),
+				d = s("./src/lib/classNames/index.ts"),
+				c = s("./src/lib/prettyPrintNumber/index.ts"),
 				m = s("./src/lib/timeAgo/index.ts"),
 				l = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				u = s("./src/reddit/components/Thumbnail/index.tsx"),
@@ -58,7 +61,7 @@
 				_ = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				f = s.n(x);
-			const C = Object(a.a)(e => e, b.N, b.d, _.P, (e, t, s, n) => {
+			const C = Object(a.a)(e => e, b.O, b.d, _.P, (e, t, s, n) => {
 					return {
 						crosspost: s,
 						language: n,
@@ -101,10 +104,11 @@
 						post: t,
 						showSubreddit: s = !1,
 						subredditOrProfile: r,
-						subredditSameLine: i
+						subredditSameLine: i,
+						crowdControlPreview: a
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Object(c.a)(f.a.container, e),
+						className: Object(d.a)(f.a.container, e, a ? f.a.crowdControlPreview : null),
 						onClick: this.onClickContainer
 					}, o.a.createElement("div", {
 						className: f.a.thumbnailContainer,
@@ -117,27 +121,28 @@
 						className: f.a.title,
 						title: t.title
 					}, t.title), o.a.createElement("div", {
-						className: Object(c.a)(f.a.subAndMeta, {
+						className: Object(d.a)(f.a.subAndMeta, {
 							[f.a.isSingleLine]: i
 						})
 					}, s && r && r.displayText && o.a.createElement(l.a, {
+						className: f.a.SubredditLink,
 						to: r.url,
 						onClick: this.onClickSubreddit
 					}, r.displayText), i && o.a.createElement("div", {
 						className: f.a.separator
-					}), o.a.createElement("div", null, o.a.createElement("span", {
+					}), !a && o.a.createElement("div", null, o.a.createElement("span", {
 						className: f.a.meta
 					}, n.fbt._({
 						"*": "{number} points",
 						_1: "1 point"
-					}, [n.fbt._plural(t.score, "number", Object(d.b)(t.score))], {
+					}, [n.fbt._plural(t.score, "number", Object(c.b)(t.score))], {
 						hk: "1Jm6il"
 					})), o.a.createElement("span", {
 						className: f.a.meta
 					}, n.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
-					}, [n.fbt._plural(t.numComments, "number", Object(d.b)(t.numComments))], {
+					}, [n.fbt._plural(t.numComments, "number", Object(c.b)(t.numComments))], {
 						hk: "2jjoyt"
 					})), o.a.createElement("span", {
 						className: f.a.meta
@@ -165,8 +170,8 @@
 				o = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/higherOrderComponents/asModal/index.tsx"),
-				d = s("./src/reddit/actions/modal.ts"),
+				d = s("./src/higherOrderComponents/asModal/index.tsx"),
+				c = s("./src/reddit/actions/modal.ts"),
 				m = s("./src/reddit/actions/toaster.ts"),
 				l = s("./src/reddit/components/CharacterCountdown/index.tsx"),
 				u = s("./src/reddit/components/MiniPost/index.tsx"),
@@ -189,22 +194,22 @@
 				}),
 				E = s("./src/reddit/selectors/posts.ts"),
 				N = s("./src/reddit/selectors/telemetry.ts"),
-				j = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
-				O = s.n(j);
+				O = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
+				P = s.n(O);
 			const F = 400,
-				P = Object(a.c)({
-					post: E.z,
-					subreddit: E.A
+				j = Object(a.c)({
+					post: E.A,
+					subreddit: E.B
 				}),
-				T = Object(i.b)(P, (e, t) => ({
-					onClose: () => e(Object(d.f)()),
+				v = Object(i.b)(j, (e, t) => ({
+					onClose: () => e(Object(c.f)()),
 					showSuccessToast: () => e(Object(m.e)({
 						text: n.fbt._("Messages sent!", null, {
 							hk: "187c4y"
 						})
 					}))
 				}));
-			class v extends o.a.Component {
+			class T extends o.a.Component {
 				constructor(e) {
 					super(e), this.event = (e, t) => {
 						this.props.sendEvent(s => Object.assign({
@@ -272,26 +277,26 @@
 							success: i
 						}
 					} = this;
-					if (e && t) return o.a.createElement(p.c, {
-						className: O.a.body
-					}, o.a.createElement(p.g, {
-						className: O.a.header
-					}, o.a.createElement(p.n, {
-						className: O.a.title
+					if (e && t) return o.a.createElement(p.d, {
+						className: P.a.body
+					}, o.a.createElement(p.h, {
+						className: P.a.header
+					}, o.a.createElement(p.p, {
+						className: P.a.title
 					}, n.fbt._("Send message with link", null, {
 						hk: "mnEN"
 					})), o.a.createElement("button", {
 						onClick: this.onCloseClicked
-					}, o.a.createElement(p.b, null))), o.a.createElement(p.j, {
-						className: O.a.main
+					}, o.a.createElement(p.b, null))), o.a.createElement(p.k, {
+						className: P.a.main
 					}, o.a.createElement(u.a, {
-						className: O.a.miniPost,
+						className: P.a.miniPost,
 						openLinksNewTab: !0,
 						postId: e.id,
 						showSubreddit: !0,
 						subredditSameLine: !0
-					}), o.a.createElement(p.q, {
-						className: O.a.textarea,
+					}), o.a.createElement(p.s, {
+						className: P.a.textarea,
 						maxLength: F,
 						onChange: this.onMessageChange,
 						onFocus: this.onMessageFocus,
@@ -300,13 +305,13 @@
 					}), o.a.createElement(l.a, {
 						text: s,
 						maxChars: F
-					})), o.a.createElement(p.e, null, !1 === i && o.a.createElement("p", {
-						className: O.a.errorText
+					})), o.a.createElement(p.f, null, !1 === i && o.a.createElement("p", {
+						className: P.a.errorText
 					}, "Something went wrong. Try again in a bit."), o.a.createElement(p.a, {
 						onClick: this.onCloseClicked
 					}, n.fbt._("Cancel", null, {
 						hk: "43y97X"
-					})), o.a.createElement(p.o, {
+					})), o.a.createElement(p.q, {
 						onClick: this.onFormSubmit
 					}, r ? o.a.createElement(_.a, {
 						sizePx: 12
@@ -317,7 +322,7 @@
 					}))))
 				}
 			}
-			t.default = Object(c.a)(Object(h.b)(T(Object(b.c)(v))))
+			t.default = Object(d.a)(Object(h.b)(v(Object(b.c)(T))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, s) {
 			e.exports = {
@@ -362,9 +367,9 @@
 			})), s.d(t, "p", (function() {
 				return a
 			})), s.d(t, "n", (function() {
-				return c
-			})), s.d(t, "o", (function() {
 				return d
+			})), s.d(t, "o", (function() {
+				return c
 			})), s.d(t, "m", (function() {
 				return m
 			})), s.d(t, "l", (function() {
@@ -395,8 +400,8 @@
 				o = s.n(r);
 			const i = n.a.section("FormPage", o.a),
 				a = n.a.h1("HomePageTitle", o.a),
-				c = n.a.button("HomePageBreadcrumb", o.a),
-				d = n.a.div("HomePageGroup", o.a),
+				d = n.a.button("HomePageBreadcrumb", o.a),
+				c = n.a.div("HomePageGroup", o.a),
 				m = n.a.h1("FormPageTitle", o.a),
 				l = n.a.div("FormPageSection", o.a),
 				u = n.a.div("FormGroup", o.a),
@@ -426,4 +431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.56d2823eabbd0df7011f.js.map
+//# sourceMappingURL=ModToMemberShareModal.7c6da1486d776236d657.js.map

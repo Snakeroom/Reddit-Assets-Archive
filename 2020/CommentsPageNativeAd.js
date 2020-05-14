@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.1fb4fac8f2a4db326985.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.66bfafec000fcda92f82.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -97,8 +97,8 @@
 				N = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				T = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				_ = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
-				w = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				A = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				A = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				w = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				I = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				L = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				M = s("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -141,8 +141,8 @@
 						moderatorPermissions: G,
 						modModeEnabled: J,
 						onClickPost: Y,
-						onIgnoreReports: q,
-						onOpenReportsDropdown: X,
+						onIgnoreReports: X,
+						onOpenReportsDropdown: q,
 						poll: $,
 						post: ee,
 						redditStyle: te,
@@ -153,7 +153,7 @@
 						subredditOrProfile: ne,
 						toggleCheckbox: ie,
 						userIsOp: ce
-					} = this.props, de = te ? void 0 : M, le = this.props.crosspost || void 0, pe = Object(I.a)(G), me = Object(w.a)(G), ue = Object(A.a)(G), xe = J && I.a, be = !!ee.media && ee.media.type === S.n.RTJSON, he = ce && be, ge = y && !ae, Oe = !!ee.media && Object(S.C)(ee.media), fe = {
+					} = this.props, de = te ? void 0 : M, le = this.props.crosspost || void 0, pe = Object(I.a)(G), me = Object(A.a)(G), ue = Object(w.a)(G), xe = J && I.a, be = !!ee.media && ee.media.type === S.n.RTJSON, he = ce && be, ge = y && !ae, Oe = !!ee.media && Object(S.C)(ee.media), fe = {
 						flairStyleTemplate: de,
 						post: ee,
 						inSubredditOrProfile: y,
@@ -226,7 +226,7 @@
 					}, Object(c.a)(ee))), o.a.createElement(C.a, R({
 						key: "PostMeta"
 					}, fe)), J && pe && Object(g.c)(ee) && o.a.createElement(h.a, {
-						onIgnoreReports: q,
+						onIgnoreReports: X,
 						reportable: ee
 					}), o.a.createElement("div", {
 						className: B.a.spacer
@@ -267,8 +267,8 @@
 						isOverlay: !!K,
 						language: Q,
 						modModeEnabled: J,
-						onIgnoreReports: q,
-						onOpenReportsDropdown: X,
+						onIgnoreReports: X,
+						onOpenReportsDropdown: q,
 						post: ee,
 						showEditPost: he,
 						showEditFlair: oe,
@@ -371,8 +371,8 @@
 				N = s("./src/lib/classNames/index.ts"),
 				T = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				_ = s("./src/reddit/components/PlayButton/index.tsx"),
-				w = s("./src/reddit/components/Thumbnail/index.tsx"),
-				A = s("./src/reddit/icons/svgs/Close/index.tsx");
+				A = s("./src/reddit/components/Thumbnail/index.tsx"),
+				w = s("./src/reddit/icons/svgs/Close/index.tsx");
 
 			function I() {
 				return (I = Object.assign || function(e) {
@@ -398,7 +398,7 @@
 					usePreview: m,
 					mediaExpanded: u
 				} = e;
-				return i && i.media ? u && Object(C.F)(i.media) ? a.a.createElement("div", null, a.a.createElement(A.a, {
+				return i && i.media ? u && Object(C.F)(i.media) ? a.a.createElement("div", null, a.a.createElement(w.a, {
 					className: k.a.close,
 					onClick: s
 				}), a.a.createElement(T.b, {
@@ -417,7 +417,7 @@
 					callToActionText: i.callToAction,
 					isListing: !1,
 					playFromStart: !0
-				})) : a.a.createElement(w.a, {
+				})) : a.a.createElement(A.a, {
 					className: Object(N.a)(k.a.thumbnail, t),
 					containerClassName: l,
 					crosspost: r,
@@ -428,7 +428,7 @@
 					removeLink: Object(C.F)(i.media),
 					url: Object(C.F)(i.media) ? void 0 : p,
 					usePreview: m
-				}) : a.a.createElement(w.a, {
+				}) : a.a.createElement(A.a, {
 					className: Object(N.a)(k.a.thumbnail, t),
 					containerClassName: l,
 					crosspost: r,
@@ -641,28 +641,28 @@
 					activeModalId: l.a,
 					crosspost: x.d,
 					currentUser: b.i,
-					isActive: x.i,
+					isActive: x.j,
 					isChatPostExperiment: p.d,
-					isCurrentUserProfilePost: x.j,
-					isExpanded: x.l,
+					isCurrentUserProfilePost: x.k,
+					isExpanded: x.m,
 					isLoggedIn: b.H,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						return Object(x.q)(e, s)
+						return Object(x.r)(e, s)
 					},
 					language: b.P,
 					moderatorPermissions: m.i,
 					modModeEnabled: d.P,
-					post: x.N,
+					post: x.O,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: u.a,
 					showMedia: d.r,
-					subredditOrProfile: x.Z,
+					subredditOrProfile: x.bb,
 					userIsOp: b.gb,
 					flairStyleTemplate: d.R
 				},
@@ -674,10 +674,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === i.a.upvoted ? Object(a.ab)(o) : Object(a.w)(o);
+							const s = t === i.a.upvoted ? Object(a.cb)(o) : Object(a.y)(o);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(a.Y)(o)),
+						onIgnoreReports: () => e(Object(a.ab)(o)),
 						onOpenReportsDropdown: t => e(Object(n.h)({
 							tooltipId: t
 						}))
@@ -781,4 +781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.1fb4fac8f2a4db326985.js.map
+//# sourceMappingURL=CommentsPageNativeAd.66bfafec000fcda92f82.js.map

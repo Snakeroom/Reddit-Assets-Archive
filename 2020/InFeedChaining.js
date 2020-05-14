@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.fb223aec3a463b5e11a4.js
-// Retrieved at 5/13/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.d4cc3a1400402eb38f89.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -351,7 +351,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return Y
+				return q
 			}));
 			t("./node_modules/core-js/modules/es6.symbol.js");
 			var r = t("./node_modules/react/index.js"),
@@ -533,11 +533,11 @@
 					}
 					return t
 				};
-			const Z = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
+			const Q = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
 				if (!e) return !1;
 				return (Object(p.e)(e) ? s : t).some(s => s.id === e.id)
 			});
-			class Q extends i.a.Component {
+			class Z extends i.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditOrProfileClicked = e => {
 						e.stopPropagation(), this.props.onSubredditOrProfileClick(this.props.postId)
@@ -561,7 +561,7 @@
 							subscribedProfiles: b,
 							subscribedSubreddits: h
 						} = t,
-						v = !Z({
+						v = !Q({
 							subredditOrProfile: p,
 							subscribedProfiles: b,
 							subscribedSubreddits: h
@@ -589,8 +589,8 @@
 					}))
 				}
 			}
-			const K = Object(m.a)(Object(a.a)(Q));
-			class Y extends i.a.Component {
+			const K = Object(m.a)(Object(a.a)(Z));
+			class q extends i.a.Component {
 				render() {
 					return i.a.createElement(K, this.props)
 				}
@@ -667,7 +667,7 @@
 				D = Object(d.c)({
 					discoveryUnit: S.b,
 					postChain: S.f,
-					postSubreddit: O.Z,
+					postSubreddit: O.bb,
 					routeName: _.q,
 					subscribedProfiles: j.c,
 					subscribedSubreddits: j.d
@@ -1158,13 +1158,13 @@
 				currentUser: b.i,
 				flairStyleTemplate: c.R,
 				hideNSFWPref: b.z,
-				isActive: p.i,
+				isActive: p.j,
 				language: b.P,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
-				post: p.N,
+				post: p.O,
 				showEditFlair: u.a,
-				subredditOrProfile: p.Z,
+				subredditOrProfile: p.bb,
 				userIsOp: b.gb
 			}), (e, s) => {
 				let {
@@ -1184,10 +1184,10 @@
 						}))
 					},
 					handleVote: s => {
-						const r = s === d.a.upvoted ? Object(n.ab)(t) : Object(n.w)(t);
+						const r = s === d.a.upvoted ? Object(n.cb)(t) : Object(n.y)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(n.Y)(t)),
+					onIgnoreReports: () => e(Object(n.ab)(t)),
 					onOpenReportsDropdown: s => e(Object(a.h)({
 						tooltipId: s
 					}))
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.fb223aec3a463b5e11a4.js.map
+//# sourceMappingURL=InFeedChaining.d4cc3a1400402eb38f89.js.map

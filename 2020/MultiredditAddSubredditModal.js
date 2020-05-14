@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.6ec901d6d2d7cf4e2fb7.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.98a65341ec61052147bd.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -81,8 +81,8 @@
 				y = r("./src/reddit/constants/posts.ts"),
 				E = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				v = r("./src/reddit/controls/Button/index.tsx"),
-				O = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				k = r("./src/reddit/helpers/multireddit/index.ts"),
+				k = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				O = r("./src/reddit/helpers/multireddit/index.ts"),
 				N = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				w = r("./src/reddit/models/Multireddit/index.ts"),
 				F = r("./src/reddit/models/Subreddit/index.ts"),
@@ -188,7 +188,7 @@
 							showCreateSuccess: !1
 						})
 					}, this.onCreateSubmit = () => {
-						const e = Object(k.a)({
+						const e = Object(O.a)({
 							displayText: this.state.creatingName,
 							myMultireddits: this.props.myMultireddits,
 							thisMultireddit: null
@@ -257,18 +257,18 @@
 					} = this;
 					return l.a.createElement(S.a, {
 						forceRedditTheme: !0
-					}, l.a.createElement(x.c, null, l.a.createElement(x.g, null, l.a.createElement(N.a, null, l.a.createElement(x.n, null, a.fbt._("Add community to Custom Feed", null, {
+					}, l.a.createElement(x.d, null, l.a.createElement(x.h, null, l.a.createElement(N.a, null, l.a.createElement(x.p, null, a.fbt._("Add community to Custom Feed", null, {
 						hk: "1twPIx"
 					})), l.a.createElement("button", {
 						onClick: s
-					}, l.a.createElement(x.b, null)))), l.a.createElement(x.j, {
+					}, l.a.createElement(x.b, null)))), l.a.createElement(x.k, {
 						className: M.a.main
 					}, l.a.createElement("div", {
 						className: M.a.listContainer,
 						ref: this.setScrollRef
 					}, t ? l.a.createElement("div", {
 						className: M.a.loadingContainer
-					}, l.a.createElement(O.a, {
+					}, l.a.createElement(k.a, {
 						className: Object(h.a)(M.a.loadingIcon, M.a.forUser),
 						sizePx: T
 					})) : r.map(e => l.a.createElement(I, {
@@ -301,7 +301,7 @@
 					})) : l.a.createElement(f.a, {
 						text: o,
 						maxChars: w.c
-					}), !b && !p && (e ? l.a.createElement(O.a, {
+					}), !b && !p && (e ? l.a.createElement(k.a, {
 						className: Object(h.a)(M.a.createSubmitBtn, M.a.loading),
 						sizePx: L
 					}) : l.a.createElement(v.n, {
@@ -314,10 +314,10 @@
 						onClick: this.onCreateClick
 					}, a.fbt._("+ Create a custom feed", null, {
 						hk: "6VkVz"
-					})))), l.a.createElement(x.e, null, l.a.createElement(x.o, {
+					})))), l.a.createElement(x.f, null, l.a.createElement(x.q, {
 						disabled: !!i || !u.length || e,
 						onClick: this.onSubmit
-					}, i ? l.a.createElement(O.a, {
+					}, i ? l.a.createElement(k.a, {
 						className: M.a.loadingIcon,
 						sizePx: L
 					}) : a.fbt._("Update", null, {
@@ -703,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.6ec901d6d2d7cf4e2fb7.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.98a65341ec61052147bd.js.map

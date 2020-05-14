@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.3f4e65a3e3539f464d26.js
-// Retrieved at 4/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.500e28dbc3381af8e962.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -630,12 +630,12 @@
 					} = this.state, u = e.filter(e => e.awardType === y.e.Moderator);
 					return s.a.createElement("section", {
 						className: Object(f.a)(t, b.a.communityAwardCreationModal)
-					}, s.a.createElement(x.g, null, s.a.createElement(O.a, null, s.a.createElement(x.n, null, p.fbt._("Create Award", null, {
+					}, s.a.createElement(x.h, null, s.a.createElement(O.a, null, s.a.createElement(x.p, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
 					})), s.a.createElement(_.a, {
 						onClick: a,
 						disabled: n
-					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.j, null, s.a.createElement("div", {
+					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.k, null, s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: b.a.formLabelText
@@ -709,12 +709,12 @@
 						className: b.a.modToggleLabelText
 					}, p.fbt._("Make Award Temporary", null, {
 						hk: "4GtfNs"
-					})))), this.renderDatePicker()), s.a.createElement(x.e, null, s.a.createElement(x.a, {
+					})))), this.renderDatePicker()), s.a.createElement(x.f, null, s.a.createElement(x.a, {
 						onClick: a,
 						disabled: n
 					}, p.fbt._("Cancel", null, {
 						hk: "38BQBa"
-					})), s.a.createElement(x.o, {
+					})), s.a.createElement(x.q, {
 						className: b.a.createBtn,
 						"data-redditstyle": !0,
 						disabled: !this.inputsAreValid() || n,
@@ -1126,12 +1126,12 @@
 					} = this.state;
 					return s.a.createElement("section", {
 						className: Object(f.a)(e, Oe.a.communityAwardCreationModal)
-					}, s.a.createElement(x.g, null, s.a.createElement(O.a, null, s.a.createElement(x.n, null, p.fbt._("Create Award", null, {
+					}, s.a.createElement(x.h, null, s.a.createElement(O.a, null, s.a.createElement(x.p, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
 					})), s.a.createElement(_.a, {
 						onClick: t,
 						disabled: a
-					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.j, null, s.a.createElement("div", {
+					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.k, null, s.a.createElement("div", {
 						className: Oe.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: Oe.a.formLabelText
@@ -1187,7 +1187,7 @@
 						className: Oe.a.formLabelText
 					}, p.fbt._("Description", null, {
 						hk: "162GGk"
-					})), s.a.createElement(x.q, {
+					})), s.a.createElement(x.s, {
 						name: "description",
 						onChange: this.handleDescriptionChange,
 						placeholder: p.fbt._("Award Description", null, {
@@ -1209,12 +1209,12 @@
 						className: Oe.a.modToggleLabelText
 					}, p.fbt._("Make Award Temporary", null, {
 						hk: "4GtfNs"
-					})))), this.renderDatePicker(), this.renderGlobalAwardOptions()), s.a.createElement(x.e, null, s.a.createElement(x.a, {
+					})))), this.renderDatePicker(), this.renderGlobalAwardOptions()), s.a.createElement(x.f, null, s.a.createElement(x.a, {
 						onClick: t,
 						disabled: a
 					}, p.fbt._("Cancel", null, {
 						hk: "38BQBa"
-					})), s.a.createElement(x.o, {
+					})), s.a.createElement(x.q, {
 						className: Oe.a.createBtn,
 						"data-redditstyle": !0,
 						disabled: !this.inputsAreValid() || a,
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.3f4e65a3e3539f464d26.js.map
+//# sourceMappingURL=AwardCreationModal.500e28dbc3381af8e962.js.map

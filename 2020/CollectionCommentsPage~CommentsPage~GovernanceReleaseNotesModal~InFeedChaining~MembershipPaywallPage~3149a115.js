@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.f6fc4b52c28d7058f6be.js
-// Retrieved at 5/14/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.531c39f8901a1790f7e0.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -851,7 +851,7 @@
 						experimentEligibilitySelector: N.a,
 						experimentName: _.wb
 					});
-					return Object(_.nc)(t) ? void 0 : t
+					return Object(_.pc)(t) ? void 0 : t
 				},
 				R = e => e === _.yb.On,
 				j = e => {
@@ -859,21 +859,21 @@
 						experimentEligibilitySelector: N.a,
 						experimentName: _.xb
 					});
-					return Object(_.nc)(t) ? void 0 : t
+					return Object(_.pc)(t) ? void 0 : t
 				},
 				H = e => e === _.yb.On;
 			var A = s("./src/reddit/selectors/experiments/utils.ts");
 			const I = Object(m.a)(e => Object(N.c)(e, {
-					experimentName: _.ic,
+					experimentName: _.kc,
 					experimentEligibilitySelector: N.a
 				}), A.a),
 				U = Object(m.a)(I, (function(e) {
 					switch (e) {
-						case _.kc.BufferTwoSeconds:
+						case _.mc.BufferTwoSeconds:
 							return 2;
-						case _.kc.BufferFiveSeconds:
+						case _.mc.BufferFiveSeconds:
 							return 5;
-						case _.kc.BufferTenSeconds:
+						case _.mc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1428,7 +1428,7 @@
 					metadata: Y.g,
 					muxSamplingAVariant: O,
 					muxSamplingBVariant: j,
-					postUrl: W.P,
+					postUrl: W.Q,
 					started: Y.i,
 					videoBufferTime: U,
 					videoBufferVariant: I,
@@ -1803,8 +1803,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("bda680d-production", " ").concat(t);
-									return a && (s += " [".concat(_.ic, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("7404118-production", " ").concat(t);
+									return a && (s += " [".concat(_.kc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2261,4 +2261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.f6fc4b52c28d7058f6be.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.531c39f8901a1790f7e0.js.map

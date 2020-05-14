@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.58f1bd82e71738cf776c.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.4fdc69841c68579d6bec.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -24,7 +24,7 @@
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "ModalHeader", (function() {
-				return k
+				return I
 			})), a.d(t, "ModalTitle", (function() {
 				return F
 			})), a.d(t, "CloseIcon", (function() {
@@ -49,18 +49,18 @@
 				C = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				y = a("./src/reddit/models/Theme/index.ts"),
-				g = a("./src/reddit/selectors/platform.ts"),
-				E = a("./src/reddit/selectors/structuredStyles.ts"),
-				R = a("./src/reddit/selectors/subreddit.ts"),
-				j = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				q = a.n(j),
+				E = a("./src/reddit/selectors/platform.ts"),
+				g = a("./src/reddit/selectors/structuredStyles.ts"),
+				q = a("./src/reddit/selectors/subreddit.ts"),
+				R = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				j = a.n(R),
 				O = a("./src/lib/lessComponent.tsx");
-			const I = O.a.wrapped(m.c, "ModalBody", q.a),
-				k = O.a.wrapped(m.g, "ModalHeader", q.a),
-				F = O.a.div("ModalTitle", q.a),
-				S = O.a.div("Title", q.a),
-				M = O.a.div("Description", q.a),
-				w = O.a.wrapped(m.b, "CloseIcon", q.a);
+			const k = O.a.wrapped(m.d, "ModalBody", j.a),
+				I = O.a.wrapped(m.h, "ModalHeader", j.a),
+				F = O.a.div("ModalTitle", j.a),
+				S = O.a.div("Title", j.a),
+				M = O.a.div("Description", j.a),
+				w = O.a.wrapped(m.b, "CloseIcon", j.a);
 			class N extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
@@ -80,9 +80,9 @@
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						a = this.props.theme ? Object(y.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
-					return o.a.createElement(I, {
-						className: q.a.requestModal
-					}, o.a.createElement(k, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(F, {
+					return o.a.createElement(k, {
+						className: j.a.requestModal
+					}, o.a.createElement(I, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(F, {
 						style: {
 							color: a
 						}
@@ -93,17 +93,17 @@
 							color: a
 						}
 					}, o.a.createElement(b.b, {
-						className: q.a.subredditIcon,
+						className: j.a.subredditIcon,
 						iconUrl: this.props.subredditIcon.url,
 						primaryColor: this.props.subredditIcon.color
 					}), o.a.createElement("span", null, e))), o.a.createElement(x.a, {
 						onClick: this.onCancelRequest
-					}, o.a.createElement(w, null)))), o.a.createElement(m.j, null, t ? o.a.createElement(M, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
+					}, o.a.createElement(w, null)))), o.a.createElement(m.k, null, t ? o.a.createElement(M, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
 					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(M, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), o.a.createElement(p.c, {
-						className: q.a.textarea,
+						className: j.a.textarea,
 						label: s.fbt._("Request to moderators", null, {
 							hk: "4hiUqP"
 						}),
@@ -111,7 +111,7 @@
 						onChange: this.onTextAreaChange,
 						state: void 0,
 						required: !0
-					}))), o.a.createElement(m.e, null, t ? o.a.createElement(m.o, {
+					}))), o.a.createElement(m.f, null, t ? o.a.createElement(m.q, {
 						onClick: () => this.props.toggleContributorRequestModal()
 					}, s.fbt._("ok", null, {
 						hk: "22zWTN"
@@ -120,7 +120,7 @@
 						onClick: this.onCancelRequest
 					}, s.fbt._("Cancel", null, {
 						hk: "3YzMhr"
-					})), o.a.createElement(m.o, {
+					})), o.a.createElement(m.q, {
 						onClick: () => {
 							this.props.sendEvent(Object(_.b)("request_approval")), this.props.makeContributorRequest(e, this.state.message, this.props.restrictions), this.props.toggleContributorRequestModal()
 						}
@@ -130,14 +130,14 @@
 				}
 			}
 			t.default = O.a.wrapped(Object(r.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: R.j,
-				restrictions: R.o,
-				subreddit: g.f,
-				subredditIcon: E.c
+				subredditAboutInfo: q.j,
+				restrictions: q.o,
+				subreddit: E.f,
+				subredditIcon: g.c
 			}), e => ({
 				makeContributorRequest: (t, a, s) => e(Object(u.n)(t, a, s)),
 				toggleContributorRequestModal: () => e(Object(c.i)(h.a.CONTRIBUTOR_REQUEST))
-			}))(Object(f.c)(N)))), "Component", q.a)
+			}))(Object(f.c)(N)))), "Component", j.a)
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -324,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ContributorRequestRequestModal.58f1bd82e71738cf776c.js.map
+//# sourceMappingURL=ContributorRequestRequestModal.4fdc69841c68579d6bec.js.map

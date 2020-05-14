@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.0779ded9ef1c7a7bbb30.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.b23102417ff6a7b8a184.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -249,8 +249,8 @@
 			const B = e => "".concat(e, "--FocusedVerticalRecommendationItem"),
 				L = Object(i.c)({
 					language: N.P,
-					post: P.N,
-					subreddit: P.Z
+					post: P.O,
+					subreddit: P.bb
 				});
 			class w extends r.a.Component {
 				constructor() {
@@ -363,7 +363,7 @@
 			}
 			var U = Object(o.b)(L, e => ({
 					onPostClick: t => {
-						e(Object(_.K)({
+						e(Object(_.M)({
 							postOrComment: t
 						}))
 					}
@@ -389,7 +389,7 @@
 					return Object(h.i)(e, s)
 				}
 			}), W = Object(o.b)(H);
-			class K extends r.a.PureComponent {
+			class G extends r.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -435,7 +435,7 @@
 					})))
 				}
 			}
-			t.default = W(K)
+			t.default = W(G)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1260,4 +1260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.0779ded9ef1c7a7bbb30.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.b23102417ff6a7b8a184.js.map

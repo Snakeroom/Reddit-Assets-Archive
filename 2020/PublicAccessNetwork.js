@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6187a686c36da77880d0.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5aa165988e3982db286f.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1280,8 +1280,8 @@
 				W = s("./src/reddit/constants/keycodes.ts"),
 				H = s("./src/reddit/helpers/dom/index.ts"),
 				U = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				X = s("./src/reddit/helpers/trackers/rpan.ts"),
-				K = s("./src/reddit/helpers/trackers/screenview.ts"),
+				K = s("./src/reddit/helpers/trackers/rpan.ts"),
+				X = s("./src/reddit/helpers/trackers/screenview.ts"),
 				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				Y = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				J = s("./src/reddit/selectors/media.ts"),
@@ -1495,8 +1495,8 @@
 				}
 			}
 			var Ue = Fe(He);
-			const Xe = (e, t) => e > t ? T.EXTENDED : e < ee ? T.CRITICAL : e < te ? T.LOW : T.NORMAL,
-				Ke = e => e / Q,
+			const Ke = (e, t) => e > t ? T.EXTENDED : e < ee ? T.CRITICAL : e < te ? T.LOW : T.NORMAL,
+				Xe = e => e / Q,
 				Ge = e => 5 * Math.round(e / 5) % se == 0;
 			var Ye = s("./src/reddit/components/PublicAccessNetwork/Theater/MeterBar/index.m.less"),
 				Je = s.n(Ye);
@@ -1587,7 +1587,7 @@
 								hk: "4zE2Hn"
 							})
 						} {
-							const e = Math.round(Ke(a));
+							const e = Math.round(Xe(a));
 							return g.fbt._({
 								"*": "+{minutes time added} minutes airtime given",
 								_1: "+1 minute airtime given"
@@ -1597,19 +1597,19 @@
 						}
 					}
 					if (n > s.meter.full_meter_duration) {
-						const e = Math.round(Ke(s.meter.full_meter_duration)).toLocaleString();
+						const e = Math.round(Xe(s.meter.full_meter_duration)).toLocaleString();
 						return g.fbt._("{number of minutes}+ minutes airtime left", [g.fbt._param("number of minutes", e)], {
 							hk: "2Tjt0F"
 						})
 					}
 					if (Ge(n) && !r && n > te) {
-						const e = Math.round(Ke(n)).toLocaleString();
+						const e = Math.round(Xe(n)).toLocaleString();
 						return g.fbt._("{number of minutes} minutes airtime left", [g.fbt._param("number of minutes", e)], {
 							hk: "3DZxvE"
 						})
 					}
 					const o = Math.round(n),
-						c = Math.floor(Ke(o)),
+						c = Math.floor(Xe(o)),
 						l = o % Q,
 						d = "".concat(c, ":").concat(l < 10 ? "0" : "").concat(l);
 					return g.fbt._("{mm:ss timestamp of remaining time} airtime left", [g.fbt._param("mm:ss timestamp of remaining time", d)], {
@@ -1687,7 +1687,7 @@
 						pillLabel: n
 					} = this.state;
 					if (!(s && e && e.meter && a)) return null;
-					const o = Xe(a, e.meter.full_meter_duration),
+					const o = Ke(a, e.meter.full_meter_duration),
 						c = !r,
 						l = a < te || t,
 						m = this.state.timerDiff > 0;
@@ -1939,7 +1939,7 @@
 						}));
 						this.props.vote(t.post.id, e), this.setState(Object.assign({}, this.state, {
 							displayedVoteState: e
-						})), e === xt.a.upvoted ? this.props.sendEvent(Object(X.k)(t)) : this.props.sendEvent(Object(X.h)(t))
+						})), e === xt.a.upvoted ? this.props.sendEvent(Object(K.k)(t)) : this.props.sendEvent(Object(K.h)(t))
 					}
 				}
 			}
@@ -1957,9 +1957,9 @@
 				Wt = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
 				Ht = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				Ut = s("./src/reddit/icons/svgs/VideoShare/index.m.less"),
-				Xt = s.n(Ut);
-			var Kt = e => i.a.createElement("svg", {
-					className: Object(d.a)(Xt.a.icon, e.className),
+				Kt = s.n(Ut);
+			var Xt = e => i.a.createElement("svg", {
+					className: Object(d.a)(Kt.a.icon, e.className),
 					viewBox: "0 0 64 64",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, i.a.createElement("g", null, i.a.createElement("circle", {
@@ -2082,7 +2082,7 @@
 					return i.a.createElement("button", {
 						className: Jt.a.promptButton,
 						onClick: t
-					}, i.a.createElement(Kt, null), i.a.createElement("span", null, g.fbt._("Share Video", null, {
+					}, i.a.createElement(Xt, null), i.a.createElement("span", null, g.fbt._("Share Video", null, {
 						hk: "FYgQy"
 					})))
 				},
@@ -2365,7 +2365,7 @@
 					} = this.props, {
 						id: r
 					} = t.post;
-					this.setVoteState(r, e), this.props.vote(r, e), e === xt.a.upvoted ? s(Object(X.k)(t)) : e === xt.a.downvoted && s(Object(X.h)(t))
+					this.setVoteState(r, e), this.props.vote(r, e), e === xt.a.upvoted ? s(Object(K.k)(t)) : e === xt.a.downvoted && s(Object(K.h)(t))
 				}
 			}), fs = e => {
 				let {
@@ -2480,7 +2480,7 @@
 						subreddit: s
 					} = t;
 					const r = s && s.split("/").pop();
-					return !!r && Object(be.ab)(e, {
+					return !!r && Object(be.bb)(e, {
 						identifier: {
 							name: r,
 							type: me.a.SUBREDDIT
@@ -2493,7 +2493,7 @@
 					} = t;
 					const r = s && Object(z.k)(e, s),
 						a = r && r.post.authorInfo && r.post.authorInfo.name;
-					return !!a && Object(be.ab)(e, {
+					return !!a && Object(be.bb)(e, {
 						identifier: {
 							name: a,
 							type: me.a.PROFILE
@@ -2559,7 +2559,7 @@
 							onShareVideo: s,
 							sendEvent: r
 						} = this.props;
-						t && (e("".concat(ne.a.redditUrl).concat(t.share_link)), s(), r(Object(X.j)(t)))
+						t && (e("".concat(ne.a.redditUrl).concat(t.share_link)), s(), r(Object(K.j)(t)))
 					}, this.state = {
 						isHovered: !1,
 						isHoveringVolumeControl: !1,
@@ -2868,9 +2868,9 @@
 				}
 			}
 			var Vs = Object(o.b)(Ms, (e, t) => ({
-				copyLink: t => e(Object(ce.D)(t)),
+				copyLink: t => e(Object(ce.F)(t)),
 				onHide: () => {
-					t.currentStreamId && (e(Object(ce.X)(t.currentStreamId, !0, !0, !0)), e(N(t.currentStreamId)))
+					t.currentStreamId && (e(Object(ce.Z)(t.currentStreamId, !0, !0, !0)), e(N(t.currentStreamId)))
 				},
 				handleGiveAward: () => {
 					t.currentStreamId && e(Object(oe.d)(t.currentStreamId))
@@ -2920,7 +2920,7 @@
 					}) : void 0
 				}
 			});
-			class Xs extends n.Component {
+			class Ks extends n.Component {
 				constructor(e) {
 					super(e)
 				}
@@ -2969,12 +2969,12 @@
 					return !!e && (t && e.post.id !== t.post.id || !t)
 				}
 			}
-			var Ks = Object(o.b)(Us, (e, t) => ({
+			var Xs = Object(o.b)(Us, (e, t) => ({
 					preloadImages: t => e(((e, t) => async (s, r) => {
 						const a = await s(Bs(e, t));
 						s(Rs(a))
 					})(t))
-				}))(Xs),
+				}))(Ks),
 				Gs = s("./src/lib/constants/index.ts"),
 				Ys = s("./src/lib/makeDraftKey/index.ts"),
 				Js = s("./src/reddit/actions/page.ts"),
@@ -2992,7 +2992,7 @@
 						let {
 							postId: s
 						} = t;
-						return Object(er.N)(e, {
+						return Object(er.O)(e, {
 							postId: s
 						})
 					}
@@ -3077,7 +3077,7 @@
 					let {
 						postId: s
 					} = t;
-					return !!Object(er.N)(e, {
+					return !!Object(er.O)(e, {
 						postId: s
 					})
 				},
@@ -3094,7 +3094,7 @@
 			class vr extends n.Component {
 				constructor(e) {
 					super(e), this.onChatClick = () => {
-						this.props.sendEvent(Object(X.g)(this.props.postId))
+						this.props.sendEvent(Object(K.g)(this.props.postId))
 					}
 				}
 				componentDidMount() {
@@ -3300,7 +3300,7 @@
 						} = this.props;
 						!s && t && this.isCurrentStreamWatchable() && r(t.post.id, e)
 					}, k.p), this.onVideoPlayerPositionUpdate = e => {
-						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(X.n)(this.state.videoCurrentTime, e, this.props.currentStream)), this.setState({
+						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(K.n)(this.state.videoCurrentTime, e, this.props.currentStream)), this.setState({
 							videoCurrentTime: e
 						}), this.hlsVideoApi && this.hlsVideoApi.setCurrentTime(e))
 					}, this.onNextStream = C()(() => {
@@ -3340,10 +3340,10 @@
 						this.props.setMuteSettings(e);
 						const t = this.hlsVideoApi;
 						if (!t) return;
-						const s = e ? X.m : X.s;
+						const s = e ? K.m : K.s;
 						this.props.sendEvent(s(this.props.currentStream)), e || t.setVolume(this.props.volume)
 					}, this.goToSubreddit = e => {
-						this.props.sendEvent(Object(X.l)(e, this.props.currentStream)), this.props.onNavigation(e.path)
+						this.props.sendEvent(Object(K.l)(e, this.props.currentStream)), this.props.onNavigation(e.path)
 					}, this.isCurrentStreamWatchable = () => this.props.playbackState === z.a.LIVE || this.props.playbackState === z.a.VOD, this.state = {
 						isUnavailableVideoJustFinished: !1,
 						isVodStreamJustFinished: !1,
@@ -3360,7 +3360,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusRef.current;
-					e.classList.add(kr.a.focusVisible), Object(f.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, S(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(K.o)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
+					e.classList.add(kr.a.focusVisible), Object(f.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, S(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(X.o)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
 				}
 				componentDidUpdate(e) {
 					const {
@@ -3445,7 +3445,7 @@
 						className: Object(d.a)(kr.a.pane, kr.a.leftPane)
 					}, i.a.createElement("div", {
 						className: kr.a.videoContainer
-					}, (this.state.isLoading || this.state.isError || _) && i.a.createElement(Ks, {
+					}, (this.state.isLoading || this.state.isError || _) && i.a.createElement(Xs, {
 						previousStream: p,
 						currentStream: e,
 						nextStream: m
@@ -3558,14 +3558,14 @@
 						}), t) return a(!0), void this.setState(Object.assign({}, this.state, {
 						isLoading: !!e
 					}));
-					e && r(Object(X.p)(e)), s !== z.a.VOD || this.state.isVodStreamJustFinished || this.setState({
+					e && r(Object(K.p)(e)), s !== z.a.VOD || this.state.isVodStreamJustFinished || this.setState({
 						isVodStreamJustFinished: !0
 					}), this.isCurrentStreamWatchable() || this.state.isUnavailableVideoJustFinished || this.setState({
 						isUnavailableVideoJustFinished: !0
 					})
 				}
 				onPlayerError() {
-					this.props.sendEvent(Object(X.q)(this.props.currentStream)), this.setState(Object.assign({}, this.state, {
+					this.props.sendEvent(Object(K.q)(this.props.currentStream)), this.setState(Object.assign({}, this.state, {
 						isError: !0
 					}))
 				}
@@ -3573,10 +3573,10 @@
 					this.props.setMuteSettings(!0)
 				}
 				onClose() {
-					this.props.sendEvent(Object(X.a)(this.props.currentStream)), this.props.isOverlay && this.props.closeLocation()
+					this.props.sendEvent(Object(K.a)(this.props.currentStream)), this.props.isOverlay && this.props.closeLocation()
 				}
 				onReport() {
-					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id), this.props.sendEvent(Object(X.i)(this.props.currentStream)))
+					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id), this.props.sendEvent(Object(K.i)(this.props.currentStream)))
 				}
 				hideStreamEndedPrompt() {
 					this.state.showStreamEndedPrompt && this.setState({
@@ -3591,7 +3591,7 @@
 					})
 				}
 				pauseVideo() {
-					this.state.isVideoPaused || (this.props.sendEvent(Object(X.b)(this.props.currentStream)), this.setState({
+					this.state.isVideoPaused || (this.props.sendEvent(Object(K.b)(this.props.currentStream)), this.setState({
 						isVideoPaused: !0
 					}))
 				}
@@ -3599,12 +3599,12 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
 						sendEvent: !0
 					};
-					this.state.isVideoPaused && (e.sendEvent && this.props.sendEvent(Object(X.c)(this.props.currentStream)), this.hideStreamEndedPrompt(), this.setState({
+					this.state.isVideoPaused && (e.sendEvent && this.props.sendEvent(Object(K.c)(this.props.currentStream)), this.hideStreamEndedPrompt(), this.setState({
 						isVideoPaused: !1
 					}))
 				}
 				replayVideo() {
-					this.props.sendEvent(Object(X.d)(this.props.currentStream)), this.onVideoPlayerPositionUpdate(0), this.playVideo({
+					this.props.sendEvent(Object(K.d)(this.props.currentStream)), this.onVideoPlayerPositionUpdate(0), this.playVideo({
 						sendEvent: !1
 					})
 				}
@@ -3658,7 +3658,7 @@
 					e && (this.setState({
 						videoCurrentTime: 0,
 						videoTotalTime: 0
-					}), a(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), r(Object(X.r)(e)), this.showOverlayAfterStreamSwitching())
+					}), a(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), r(Object(K.r)(e)), this.showOverlayAfterStreamSwitching())
 				}
 				showOverlayAfterStreamSwitching() {
 					window.clearTimeout(this.overlayVisibilityTimeout), this.overlayVisibilityTimeout = window.setTimeout(() => this.setState({
@@ -3798,4 +3798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.6187a686c36da77880d0.js.map
+//# sourceMappingURL=PublicAccessNetwork.5aa165988e3982db286f.js.map

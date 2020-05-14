@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.4df34fac5de17fa53f9d.js
-// Retrieved at 5/14/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.89bf325f7fb11877a960.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -156,7 +156,7 @@
 					}, e.children)
 				},
 				v = Object(c.c)({
-					postPermalink: b.L,
+					postPermalink: b.M,
 					shouldOpenPostInNewTab: f.T
 				}),
 				I = Object(i.b)(v);
@@ -1178,7 +1178,7 @@
 			})), n.d(t, "i", (function() {
 				return q
 			})), n.d(t, "e", (function() {
-				return Q
+				return Z
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -1336,12 +1336,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Vb.SmIcon:
+						case N.Xb.SmIcon:
 							return a.a.createElement(L, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Vb.SmIconHc:
+						case N.Xb.SmIconHc:
 							return a.a.createElement(L, {
 								subredditName: s,
 								isHoverable: !0,
@@ -1362,7 +1362,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : Q(e, t, a))
+						o.push(e.e === h.w ? e.t : Z(e, t, a))
 					}
 					const d = c.w[r - 1];
 					return a.a.createElement(d, {
@@ -1482,7 +1482,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(Z(r, o));
+						if (r.e === h.A) s.push(z(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, n)));
@@ -1498,18 +1498,18 @@
 									media: e
 								}))
 							}
-						} else s.push(Q(r, n, o))
+						} else s.push(Z(r, n, o))
 					}
 					return s
 				},
-				Q = (e, t, n) => {
+				Z = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
 							return a.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a
-							}, Z({
+							}, z({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1533,7 +1533,7 @@
 							}, e.t)
 					}
 				},
-				Z = (e, t) => {
+				z = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -1549,7 +1549,7 @@
 					}
 					return c < r.length && o.push($(0, r.substr(c), "remaining".concat(a))), o
 				},
-				z = {
+				Q = {
 					[h.j.monospace]: c.h,
 					[h.j.bold]: c.b,
 					[h.j.italic]: c.f,
@@ -1560,7 +1560,7 @@
 				},
 				$ = (e, t, n) => {
 					let s = t;
-					return s = o()(z, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = o()(Q, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
@@ -1784,12 +1784,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Qb
+						experimentName: s.Sb
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Vb.SmIcon || t === s.Vb.SmIconHc
+					return t === s.Xb.SmIcon || t === s.Xb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.4df34fac5de17fa53f9d.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.89bf325f7fb11877a960.js.map

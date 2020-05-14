@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.dfc9028818cb91c7d88a.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.1031aede9f3677ea40ac.js
+// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -429,12 +429,12 @@
 				I = _.a.div("Content", O.a),
 				T = _.a.div("ThumbnailContainer", O.a),
 				L = Object(d.c)({
-					isCurrentUserProfilePost: h.j,
+					isCurrentUserProfilePost: h.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.yb.TOPIC),
 					language: f.P,
-					post: h.N,
+					post: h.O,
 					shouldOpenPostInNewTab: f.T,
-					subreddit: h.Z
+					subreddit: h.bb
 				}),
 				N = Object(i.b)(L);
 			t.a = N(e => {
@@ -628,7 +628,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(g.t)(e, {
+						return Object(g.u)(e, {
 							postId: s.id
 						})
 					},
@@ -1268,7 +1268,7 @@
 			}
 			const Y = Object(a.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, s) => {
-					e(Object(v.z)(t, s))
+					e(Object(v.B)(t, s))
 				},
 				refreshSidebarPromotedPost: () => {
 					const {
@@ -1537,4 +1537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.dfc9028818cb91c7d88a.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.1031aede9f3677ea40ac.js.map
