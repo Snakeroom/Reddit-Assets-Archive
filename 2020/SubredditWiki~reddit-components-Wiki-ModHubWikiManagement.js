@@ -1,51 +1,7 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.81a556805c1a016aa341.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.aab793e6b722174fc4b5.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
-		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, i) {
-			"use strict";
-			var n = i("./node_modules/react/index.js"),
-				s = i.n(n),
-				a = i("./node_modules/react-redux/es/index.js"),
-				o = i("./node_modules/react-router/esm/react-router.js"),
-				r = i("./src/reddit/actions/modal.ts");
-			const c = "non-empty-string-to-block-navigation";
-			class d extends s.a.Component {
-				constructor() {
-					super(...arguments), this.onBeforeUnload = e => {
-						if (this.props.enabled) return e.preventDefault(), e.returnValue = "", ""
-					}, this.message = (e, t) => {
-						return !0 === (this.props.confirmNavigate || this.defaultConfirmNavigate)(e, t) || c
-					}, this.defaultConfirmNavigate = (e, t) => {
-						const {
-							ignoreCurrentLocation: i = !0,
-							location: n,
-							showModal: s,
-							dialogId: a
-						} = this.props;
-						return !(!i || e.pathname !== n.pathname) || (a && s(), !1)
-					}
-				}
-				componentDidMount() {
-					this.props.blockOnBeforeUnload && window.addEventListener("beforeunload", this.onBeforeUnload)
-				}
-				componentWillUnmount() {
-					this.props.blockOnBeforeUnload && window.removeEventListener("beforeunload", this.onBeforeUnload)
-				}
-				render() {
-					const {
-						enabled: e = !0
-					} = this.props;
-					return s.a.createElement(o.b, {
-						message: this.message,
-						when: e
-					})
-				}
-			}
-			t.a = Object(a.b)(null, (e, t) => ({
-				showModal: () => e(Object(r.h)(t.dialogId))
-			}))(Object(o.i)(d))
-		},
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
 			e.exports = {
 				editorWrapper: "VBa-xDMEbFi3vsO4id4OC",
@@ -1964,4 +1920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.81a556805c1a016aa341.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.aab793e6b722174fc4b5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.d6bef6450fe6383e6529.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.46d29ae85c1e41cb3481.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -245,7 +245,7 @@
 				selectedOptions: v.k,
 				isLoading: v.E,
 				currentInput: v.g,
-				language: E.P,
+				language: E.Q,
 				selectedPrimaryTag: v.y,
 				hasSecondaryTags: v.q
 			});
@@ -331,14 +331,14 @@
 				I = a("./src/reddit/controls/ErrorText/index.tsx"),
 				M = a("./src/reddit/controls/RadioInput/index.tsx"),
 				R = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				P = a("./src/reddit/helpers/trackers/screenview.ts"),
-				A = a("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				A = a("./src/reddit/helpers/trackers/screenview.ts"),
+				P = a("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				B = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				V = a("./src/reddit/icons/svgs/Eye/index.tsx"),
-				Z = a("./src/reddit/icons/svgs/Info/index.tsx"),
-				F = a("./src/reddit/icons/svgs/Lock/index.tsx"),
-				J = a("./src/reddit/icons/svgs/User/index.tsx"),
+				F = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				Z = a("./src/reddit/icons/svgs/User/index.tsx"),
 				W = a("./src/reddit/models/Subreddit/index.ts"),
 				Q = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				K = a("./src/config.ts"),
@@ -369,12 +369,12 @@
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
-				se = $.a.wrapped(Z.a, "Info", G.a),
+				se = $.a.wrapped(F.a, "Info", G.a),
 				ne = $.a.wrapped(R.a, "RadioOption", G.a),
 				ie = $.a.wrapped(T.c, "Tooltip", G.a),
-				re = $.a.wrapped(J.a, "Public", G.a),
+				re = $.a.wrapped(Z.a, "Public", G.a),
 				oe = $.a.wrapped(V.a, "Restricted", G.a),
-				le = $.a.wrapped(F.a, "Private", G.a),
+				le = $.a.wrapped(J.a, "Private", G.a),
 				ce = $.a.wrapped(B.a, "Employee", G.a),
 				de = $.a.wrapped(q.a, "CloseButton", G.a),
 				me = $.a.wrapped(I.b, "ErrorText", G.a),
@@ -382,9 +382,9 @@
 					error: U.i,
 					isCreatePending: U.l,
 					isEmployee: E.E,
-					language: E.P,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.Z)(e),
-					userIsSuspended: E.L,
+					language: E.Q,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.ab)(e),
+					userIsSuspended: E.M,
 					allTags: v.e,
 					existingTags: v.h,
 					newTags: v.i,
@@ -551,7 +551,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(P.q)()), this.props.clearErrors()
+					e(Object(A.q)()), this.props.clearErrors()
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout)
@@ -588,7 +588,7 @@
 						hk: "SlFa7"
 					}), n && i.a.createElement(de, {
 						onClick: () => {
-							m(Object(A.a)()), o(g.state[j.a.CloseLocation])
+							m(Object(P.a)()), o(g.state[j.a.CloseLocation])
 						}
 					})), u ? i.a.createElement("h2", {
 						className: G.a.sublabel
@@ -702,7 +702,7 @@
 						disabled: t,
 						className: G.a.createButton,
 						onClick: () => {
-							o(g.state[j.a.CloseLocation]), m(Object(A.a)())
+							o(g.state[j.a.CloseLocation]), m(Object(P.a)())
 						}
 					}, s.fbt._("Cancel", null, {
 						hk: "1L11X7"
@@ -719,4 +719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.d6bef6450fe6383e6529.js.map
+//# sourceMappingURL=SubredditCreation.46d29ae85c1e41cb3481.js.map

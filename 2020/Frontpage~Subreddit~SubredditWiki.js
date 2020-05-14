@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.656aaf54b105d792def1.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.ce05319a0032e725240a.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -289,8 +289,8 @@
 					return n && (a += "overlay-"), a += "sidebar-".concat(e), null != r && (a += "-".concat(r)), a
 				},
 				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(y.B)(e.media) && e.media.content)),
-				P = e => !!e && e.isBlank,
-				L = [{
+				L = e => !!e && e.isBlank,
+				P = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
 				}, {
@@ -309,11 +309,11 @@
 					return s !== e.className || n !== e.redditStyle
 				}
 				render() {
-					const e = o()(0, L.length - 1),
+					const e = o()(0, P.length - 1),
 						{
 							img: t,
 							href: s
-						} = L[e],
+						} = P[e],
 						{
 							className: n,
 							redditStyle: r
@@ -368,7 +368,7 @@
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: u
-					}, P(s) && d.a.createElement(E, {
+					}, L(s) && d.a.createElement(E, {
 						post: s,
 						refreshKey: i,
 						listingName: o,
@@ -776,7 +776,7 @@
 				u = s("./src/reddit/actions/subscription/index.ts"),
 				b = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-				language: b.P
+				language: b.Q
 			});
 			var h = Object(i.b)(p, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -960,7 +960,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				o = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				language: o.P,
+				language: o.Q,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -1040,9 +1040,9 @@
 			const o = e => r.e[Object(a.N)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.B
-				}) === n.J.Treatment
+					experimentName: n.D
+				}) === n.L.Treatment
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.656aaf54b105d792def1.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.ce05319a0032e725240a.js.map

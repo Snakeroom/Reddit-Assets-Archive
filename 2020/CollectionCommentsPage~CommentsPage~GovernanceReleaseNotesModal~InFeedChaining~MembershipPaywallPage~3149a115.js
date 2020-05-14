@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.f665807074527a16c63d.js
-// Retrieved at 5/14/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.64f83f077638c102db5c.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -137,8 +137,8 @@
 				B = r.a.div("Floating", M.a),
 				L = r.a.video("PreviewVideo", M.a),
 				F = r.a.div("PreviewTime", M.a),
-				k = r.a.div("VideoSeekbar", M.a);
-			class N extends n.a.PureComponent {
+				N = r.a.div("VideoSeekbar", M.a);
+			class k extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.setParentRect = e => this.parentRect = e, this.setPreviewThumbnailContainer = e => this.previewThumbnailContainer = e, this.setPreviewThumbnailVideo = e => this.previewThumbnailVideo = e, this.setPreviewThumbnailTime = e => this.previewThumbnailTime = e, this.setProgressBar = e => this.progressBar = e, this.handleMouseDown = e => {
 						if (0 === e.button && this.parentRect) {
@@ -258,7 +258,7 @@
 							marginLeft: this.getThumbMargin(i),
 							opacity: e ? 1 : 0
 						};
-					return n.a.createElement(k, {
+					return n.a.createElement(N, {
 						innerRef: this.setParentRect,
 						onKeyDown: this.handleKeyDown,
 						onMouseLeave: this.handleMouseLeave,
@@ -315,17 +315,17 @@
 					d: "M13.43,13.02125 C12.5683333,13.02125 11.8675,12.3204167 11.8675,11.45875 C11.8675,10.5970833 12.5683333,9.89583333 13.43,9.89583333 C14.2916667,9.89583333 14.9925,10.5970833 14.9925,11.45875 C14.9925,12.3204167 14.2916667,13.02125 13.43,13.02125 M13.705,15.5875 C12.63875,16.6525 10.595,16.735 9.99416667,16.735 C9.39333333,16.735 7.34958333,16.6525 6.28458333,15.5870833 C6.12625,15.4291667 6.12625,15.1725 6.28458333,15.0145833 C6.4425,14.8566667 6.69916667,14.85625 6.85708333,15.0145833 C7.52916667,15.6866667 8.96708333,15.9254167 9.99416667,15.9254167 C11.02125,15.9254167 12.4595833,15.6866667 13.1329167,15.0141667 C13.29125,14.85625 13.5475,14.8566667 13.7054167,15.0145833 C13.8633333,15.1729167 13.8633333,15.4291667 13.705,15.5875 M4.9925,11.45875 C4.9925,10.5970833 5.69375,9.89583333 6.55583333,9.89583333 C7.41666667,9.89583333 8.1175,10.5970833 8.1175,11.45875 C8.1175,12.32 7.41666667,13.0208333 6.55583333,13.0208333 C5.69375,13.0208333 4.9925,12.32 4.9925,11.45875 M19.99,9.89583333 C19.99,8.68791667 19.0108333,7.70833333 17.8025,7.70833333 C17.2129167,7.70833333 16.67875,7.94291667 16.2854167,8.32208333 C14.79,7.24333333 12.73,6.54625 10.4354167,6.46625 L11.4316667,1.77833333 L14.6875,2.47041667 C14.7270833,3.29791667 15.405,3.95833333 16.2425,3.95833333 C17.1054167,3.95833333 17.805,3.25875 17.805,2.39583333 C17.805,1.53291667 17.1054167,0.833333333 16.2425,0.833333333 C15.62875,0.833333333 15.1029167,1.19083333 14.8475,1.70541667 L11.2120833,0.932916667 C11.1108333,0.910833333 11.005,0.930833333 10.9183333,0.987083333 C10.83125,1.04375 10.7704167,1.1325 10.74875,1.23375 L9.65541667,6.37791667 C9.64916667,6.4075 9.65416667,6.43541667 9.65458333,6.46458333 C7.31875,6.52583333 5.21875,7.22458333 3.7,8.31833333 C3.30708333,7.94125 2.775,7.70833333 2.1875,7.70833333 C0.979166667,7.70833333 0,8.68791667 0,9.89583333 C0,10.785 0.530833333,11.5483333 1.29208333,11.8904167 C1.25833333,12.1079167 1.24,12.32875 1.24,12.5520833 C1.24,15.9179167 5.1575,18.6458333 9.99,18.6458333 C14.8225,18.6458333 18.74,15.9179167 18.74,12.5520833 C18.74,12.33 18.7220833,12.1108333 18.68875,11.895 C19.455,11.5545833 19.99,10.7883333 19.99,9.89583333"
 				}))),
 				j = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
-				H = s.n(j);
-			const A = () => n.a.createElement("div", {
-				className: H.a.icon
+				A = s.n(j);
+			const H = () => n.a.createElement("div", {
+				className: A.a.icon
 			}, n.a.createElement(R, null));
 			var I = e => "string" == typeof e.postUrl ? n.a.createElement("a", {
 					href: e.postUrl,
-					className: H.a.button
-				}, n.a.createElement(A, null)) : n.a.createElement(O.a, {
+					className: A.a.button
+				}, n.a.createElement(H, null)) : n.a.createElement(O.a, {
 					to: e.postUrl,
-					className: H.a.button
-				}, n.a.createElement(A, null)),
+					className: A.a.button
+				}, n.a.createElement(H, null)),
 				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
 				z = s.n(D);
@@ -521,7 +521,7 @@
 						"aria-label": T,
 						className: Y.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? n.a.createElement(m, null) : n.a.createElement(p, null))), n.a.createElement(ee, null, w(b, C)), n.a.createElement(ae, null, n.a.createElement(N, {
+					}, this.props.isPaused ? n.a.createElement(m, null) : n.a.createElement(p, null))), n.a.createElement(ee, null, w(b, C)), n.a.createElement(ae, null, n.a.createElement(k, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -844,36 +844,36 @@
 				B = s("./src/reddit/constants/video.ts"),
 				L = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				F = s("./src/reddit/helpers/media/index.ts"),
-				k = s("./src/reddit/helpers/trackers/media.ts"),
-				N = s("./src/reddit/helpers/chooseVariant/index.ts");
+				N = s("./src/reddit/helpers/trackers/media.ts"),
+				k = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const O = e => {
-					const t = Object(N.c)(e, {
-						experimentEligibilitySelector: N.a,
-						experimentName: _.wb
+					const t = Object(k.c)(e, {
+						experimentEligibilitySelector: k.a,
+						experimentName: _.yb
 					});
-					return Object(_.pc)(t) ? void 0 : t
+					return Object(_.rc)(t) ? void 0 : t
 				},
-				R = e => e === _.yb.On,
+				R = e => e === _.Ab.On,
 				j = e => {
-					const t = Object(N.c)(e, {
-						experimentEligibilitySelector: N.a,
-						experimentName: _.xb
+					const t = Object(k.c)(e, {
+						experimentEligibilitySelector: k.a,
+						experimentName: _.zb
 					});
-					return Object(_.pc)(t) ? void 0 : t
+					return Object(_.rc)(t) ? void 0 : t
 				},
-				H = e => e === _.yb.On;
-			var A = s("./src/reddit/selectors/experiments/utils.ts");
-			const I = Object(m.a)(e => Object(N.c)(e, {
-					experimentName: _.kc,
-					experimentEligibilitySelector: N.a
-				}), A.a),
+				A = e => e === _.Ab.On;
+			var H = s("./src/reddit/selectors/experiments/utils.ts");
+			const I = Object(m.a)(e => Object(k.c)(e, {
+					experimentName: _.mc,
+					experimentEligibilitySelector: k.a
+				}), H.a),
 				U = Object(m.a)(I, (function(e) {
 					switch (e) {
-						case _.mc.BufferTwoSeconds:
+						case _.oc.BufferTwoSeconds:
 							return 2;
-						case _.mc.BufferFiveSeconds:
+						case _.oc.BufferFiveSeconds:
 							return 5;
-						case _.mc.BufferTenSeconds:
+						case _.oc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1152,9 +1152,9 @@
 					d: "M32.2 20.3c-.3-.2-.7-.2-1 0l-2.4 1.4v-1.5c0-1.1-.9-1.9-1.9-1.9h-7.7c-1.1 0-1.9.9-1.9 1.9v7.7c0 1.1.9 1.9 1.9 1.9h7.7c1.1 0 1.9-.9 1.9-1.9v-1.6l2.4 1.4c.2.1.3.1.5.1s.3 0 .5-.1c.3-.2.5-.5.5-.8v-5.8c-.1-.3-.2-.6-.5-.8"
 				}))),
 				Fe = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
-				ke = s.n(Fe);
-			var Ne = e => d.a.createElement("svg", {
-					className: Object(f.a)(ke.a.icon, e.className),
+				Ne = s.n(Fe);
+			var ke = e => d.a.createElement("svg", {
+					className: Object(f.a)(Ne.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1189,10 +1189,10 @@
 					fill: "#fff",
 					d: "M25.4 24c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4.6-1.4 1.4-1.4 1.4.6 1.4 1.4zm5.3 0c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4zm-10.5 0c0 .8-.6 1.4-1.4 1.4s-1.5-.6-1.5-1.4.6-1.4 1.4-1.4 1.5.6 1.5 1.4z"
 				}))),
-				He = s("./src/reddit/icons/svgs/VideoPlayNow/index.m.less"),
-				Ae = s.n(He);
+				Ae = s("./src/reddit/icons/svgs/VideoPlayNow/index.m.less"),
+				He = s.n(Ae);
 			var Ie = e => d.a.createElement("svg", {
-					className: Object(f.a)(Ae.a.icon, e.className),
+					className: Object(f.a)(He.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, d.a.createElement("g", {
@@ -1311,8 +1311,8 @@
 				"Learn More": d.a.createElement(je, null),
 				"Get a Quote": d.a.createElement(Ve, null),
 				"Get Showtimes": d.a.createElement(Le, null),
-				Install: d.a.createElement(Ne, null),
-				Download: d.a.createElement(Ne, null),
+				Install: d.a.createElement(ke, null),
+				Download: d.a.createElement(ke, null),
 				"Learn More": d.a.createElement(je, null),
 				"Play Now": d.a.createElement(Ie, null),
 				"See Menu": d.a.createElement(ze, null),
@@ -1423,7 +1423,7 @@
 					currentUser: G.i,
 					isMutedPreference: D.a,
 					isOverlayOpen: z.h,
-					language: G.P,
+					language: G.Q,
 					loadTimes: Y.f,
 					metadata: Y.g,
 					muxSamplingAVariant: O,
@@ -1511,7 +1511,7 @@
 						let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const i = t.HTML5StreamPlayerVideo;
 						if (i && null != t.props.postId) {
-							const i = a ? k.b(t.props.postId, e, s) : k.a(t.props.postId, e, s);
+							const i = a ? N.b(t.props.postId, e, s) : N.a(t.props.postId, e, s);
 							t.props.sendEvent(i)
 						}
 					}, this.getVideoQualityList = () => {
@@ -1803,8 +1803,8 @@
 									const {
 										appName: t
 									} = g.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("7eb4646-production", " ").concat(t);
-									return a && (s += " [".concat(_.kc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("0e41db3-production", " ").concat(t);
+									return a && (s += " [".concat(_.mc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1823,7 +1823,7 @@
 							this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0)
 						}), this.dashPlayer.on(e.MediaPlayer.events.BUFFER_EMPTY, e => {
 							if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
-								const e = k.c(this.props.postId);
+								const e = N.c(this.props.postId);
 								this.props.sendEvent(e), this.setState({
 									ignoreUnderrunsUntil: Date.now() + Mt
 								})
@@ -1846,7 +1846,7 @@
 							parseInt(o()(this.props.postId).toString(), 16)
 						});
 						let i = !1;
-						_t.lastGeoPathSeen && ("NA-NA" === _t.lastGeoPathSeen && this.props.muxSamplingAVariant && R(this.props.muxSamplingAVariant) && (i = !0), "NA-NA" !== _t.lastGeoPathSeen && this.props.muxSamplingBVariant && H(this.props.muxSamplingBVariant) && (i = !0)), i && C().then(e => {
+						_t.lastGeoPathSeen && ("NA-NA" === _t.lastGeoPathSeen && this.props.muxSamplingAVariant && R(this.props.muxSamplingAVariant) && (i = !0), "NA-NA" !== _t.lastGeoPathSeen && this.props.muxSamplingBVariant && A(this.props.muxSamplingBVariant) && (i = !0)), i && C().then(e => {
 							if (void 0 !== typeof e) {
 								const s = Object(p.y)(this.props.mpegDashSource);
 								e.monitor(t, {
@@ -2261,4 +2261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.f665807074527a16c63d.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.64f83f077638c102db5c.js.map

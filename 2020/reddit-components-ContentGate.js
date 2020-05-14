@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.400873e7a93e5410fbc4.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f0ee3c04c1b465b520ae.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -132,16 +132,16 @@
 				D = n("./src/reddit/controls/Button/index.tsx"),
 				O = n("./src/reddit/models/ContentGate.ts"),
 				U = n("./src/reddit/selectors/meta.ts"),
-				F = n("./src/reddit/selectors/user.ts"),
-				G = n("./src/reddit/components/ContentGate/index.m.less"),
-				M = n.n(G);
+				M = n("./src/reddit/selectors/user.ts"),
+				F = n("./src/reddit/components/ContentGate/index.m.less"),
+				G = n.n(F);
 			const {
 				fbt: A
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = p.a.div("ButtonsContainer", M.a), H = p.a.div("Container", M.a), q = p.a.div("Description", M.a), I = p.a.div("PrivateSubredditDetails", M.a), z = p.a.div("PrivateSubredditDescription", M.a), Y = p.a.h3("PrivateSubredditName", M.a), W = p.a.a("Link", M.a), K = p.a.wrapped(D.h, "LinkRouterButton", M.a), J = p.a.wrapped(D.g, "LinkButton", M.a), Z = p.a.wrapped(D.k, "SecondaryLinkRouterButton", M.a), V = p.a.wrapped(D.j, "SecondaryLinkButton", M.a), X = p.a.wrapped(K, "GoHomeLinkButton", M.a), Q = p.a.img("Image", M.a), $ = p.a.img("ImagePlaceholder", M.a), ee = p.a.wrapped(K, "LeftLinkRouterButton", M.a), te = p.a.wrapped(J, "LeftLinkButton", M.a), ne = p.a.wrapped(V, "SecondaryLeftLinkButton", M.a), ae = p.a.wrapped(Z, "SecondaryLeftLinkRouterButton", M.a), re = p.a.h3("Title", M.a), oe = p.a.div("PageBody", M.a), le = p.a.div("QuarantineMessageWrapper", M.a), se = Object(i.c)({
-				isLoggedIn: F.G,
-				language: F.P,
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = p.a.div("ButtonsContainer", G.a), H = p.a.div("Container", G.a), q = p.a.div("Description", G.a), I = p.a.div("PrivateSubredditDetails", G.a), z = p.a.div("PrivateSubredditDescription", G.a), Y = p.a.h3("PrivateSubredditName", G.a), W = p.a.a("Link", G.a), K = p.a.wrapped(D.h, "LinkRouterButton", G.a), J = p.a.wrapped(D.g, "LinkButton", G.a), V = p.a.wrapped(D.k, "SecondaryLinkRouterButton", G.a), X = p.a.wrapped(D.j, "SecondaryLinkButton", G.a), Z = p.a.wrapped(K, "GoHomeLinkButton", G.a), Q = p.a.img("Image", G.a), $ = p.a.img("ImagePlaceholder", G.a), ee = p.a.wrapped(K, "LeftLinkRouterButton", G.a), te = p.a.wrapped(J, "LeftLinkButton", G.a), ne = p.a.wrapped(X, "SecondaryLeftLinkButton", G.a), ae = p.a.wrapped(V, "SecondaryLeftLinkRouterButton", G.a), re = p.a.h3("Title", G.a), oe = p.a.div("PageBody", G.a), le = p.a.div("QuarantineMessageWrapper", G.a), se = Object(i.c)({
+				isLoggedIn: M.G,
+				language: M.Q,
 				origin: U.j,
-				user: F.i
+				user: M.i
 			}), ie = Object(R.t)(), ce = Object(l.b)(se, (e, t) => {
 				let {
 					subredditName: n
@@ -195,7 +195,7 @@
 							to: "/"
 						}, A._("Go Home", null, {
 							hk: "49p4or"
-						})) : o.a.createElement(V, {
+						})) : o.a.createElement(X, {
 							href: Object(c.a)(i, d)
 						}, A._("Log in", null, {
 							hk: "odEG4"
@@ -214,7 +214,7 @@
 							to: "/"
 						}, A._("No", null, {
 							hk: "3fMglW"
-						})), o.a.createElement(V, {
+						})), o.a.createElement(X, {
 							onClick: L
 						}, A._("Yes", null, {
 							hk: "2hpRkN"
@@ -276,7 +276,7 @@
 								to: "/"
 							}, A._("No Thank You", null, {
 								hk: "4B26AR"
-							})), o.a.createElement(V, {
+							})), o.a.createElement(X, {
 								onClick: n
 							}, A._("Continue", null, {
 								hk: "4nU0mS"
@@ -288,7 +288,7 @@
 						}), o.a.createElement(re, null, A._("r/{community name} has been banned from Reddit", [A._param("community name", y)], {
 							hk: "2at9Se"
 						})), (e => o.a.createElement(q, null, e ? o.a.createElement(C, {
-							linkClassName: M.a.Link,
+							linkClassName: G.a.Link,
 							text: e,
 							parseMdLinks: !0,
 							parseRegularLinks: !0
@@ -316,7 +316,7 @@
 							hk: "1lYMG2"
 						})), o.a.createElement(N, null, f && o.a.createElement(m.a, {
 							eventSource: "content_gate"
-						}), o.a.createElement(X, {
+						}), o.a.createElement(Z, {
 							to: "/"
 						}, A._("Go Home", null, {
 							hk: "49p4or"
@@ -355,7 +355,7 @@
 										hk: "36ab4J"
 									})))
 							}
-						})(e)), o.a.createElement(N, null, o.a.createElement(X, {
+						})(e)), o.a.createElement(N, null, o.a.createElement(Z, {
 							to: "/"
 						}, A._("Go Home", null, {
 							hk: "49p4or"
@@ -365,7 +365,7 @@
 							src: "".concat(a.a.assetPath, "/img/snoomoji/snoo_thoughtful.png")
 						}), o.a.createElement(re, null, A._("Sorry, this custom feed is private or does not exist.", null, {
 							hk: "2Ml4j9"
-						})), o.a.createElement(N, null, o.a.createElement(X, {
+						})), o.a.createElement(N, null, o.a.createElement(Z, {
 							to: "/"
 						}, A._("Go Home", null, {
 							hk: "49p4or"
@@ -413,8 +413,8 @@
 				g = E.a.wrapped(d.i, "SecondaryButton", k.a),
 				y = E.a.wrapped(c.c, "StyledTooltip", k.a),
 				f = Object(s.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.Z)(e),
-					userIsSuspended: h.L
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ab)(e),
+					userIsSuspended: h.M
 				});
 			t.a = Object(l.b)(f, (e, t) => {
 				let {
@@ -478,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ContentGate.400873e7a93e5410fbc4.js.map
+//# sourceMappingURL=reddit-components-ContentGate.f0ee3c04c1b465b520ae.js.map

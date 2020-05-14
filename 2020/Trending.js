@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.63813d7c9e93a31d2618.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.b5880019335c5a925bc9.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -58,15 +58,15 @@
 				h = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = s("./src/reddit/controls/InternalLink/index.tsx"),
 				x = s("./src/reddit/controls/Search/RelatedSubredditMetaData.tsx"),
-				P = s("./src/reddit/helpers/name/index.ts"),
-				_ = s("./src/reddit/models/Flair/index.ts"),
+				_ = s("./src/reddit/helpers/name/index.ts"),
+				P = s("./src/reddit/models/Flair/index.ts"),
 				O = s("./src/reddit/models/Theme/index.ts"),
 				j = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				C = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				f = s.n(C),
 				v = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
 				y = s.n(v);
-			const N = e => e.type === _.f.Spoiler,
+			const N = e => e.type === P.f.Spoiler,
 				k = Object(h.t)();
 			t.a = k(Object(u.a)(Object(c.a)(e => {
 				const {
@@ -75,7 +75,7 @@
 					innerContainerClassName: c,
 					onPostClick: u,
 					trendingPost: h,
-					trendingSearch: _,
+					trendingSearch: P,
 					shouldOpenPost: C,
 					showSubredditMeta: v = !0,
 					showSubredditName: k,
@@ -83,17 +83,17 @@
 					trackPostView: w
 				} = e;
 				Object(a.useEffect)(() => {
-					w && w(_)
-				}, [w, _]);
+					w && w(P)
+				}, [w, P]);
 				const S = h && h.preview && h.preview.url || void 0,
 					D = h && h.isSponsored ? "promoted_trend" : "trending",
 					I = h && Object(l.a)(h.permalink) || "",
-					U = C && I || _ && Object(o.a)("/search", {
-						q: _.rawQuery,
+					U = C && I || P && Object(o.a)("/search", {
+						q: P.rawQuery,
 						source: D
 					}) || I,
-					E = _ ? _.subredditInfo && _.subredditInfo.icon : T && T.icon.url,
-					V = _ ? _.subredditInfo && _.subredditInfo.displayText : T && (T.displayText || T.name),
+					E = P ? P.subredditInfo && P.subredditInfo.icon : T && T.icon.url,
+					V = P ? P.subredditInfo && P.subredditInfo.displayText : T && (T.displayText || T.name),
 					W = h ? h.flair.filter(N) : [],
 					F = h ? h.score : 0,
 					L = h ? h.numComments : 0,
@@ -143,7 +143,7 @@
 						className: y.a.metaLine
 					}, k && V && i.a.createElement("span", {
 						className: y.a.meta
-					}, Object(P.b)(V)), i.a.createElement("span", {
+					}, Object(_.b)(V)), i.a.createElement("span", {
 						className: y.a.meta
 					}, r.fbt._({
 						"*": "{number} points",
@@ -224,8 +224,8 @@
 					trackPostView: t => e((e, s) => p.H(s(), t)),
 					trackPostClick: t => e((e, s) => p.G(s(), t))
 				}))(g),
-				P = s("./src/reddit/components/Translated/index.tsx"),
-				_ = s("./src/reddit/contexts/ApiContext.tsx"),
+				_ = s("./src/reddit/components/Translated/index.tsx"),
+				P = s("./src/reddit/contexts/ApiContext.tsx"),
 				O = s("./src/reddit/selectors/trending.ts"),
 				j = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
 				C = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx");
@@ -241,7 +241,7 @@
 				render() {
 					const e = n.a.createElement(n.a.Fragment, null, n.a.createElement(d.a, {
 						className: this.props.discoveryUnitHeaderClassName
-					}, n.a.createElement(P.a, {
+					}, n.a.createElement(_.a, {
 						msgId: "discoveryUnits.trendingToday"
 					})));
 					if (!this.props.trendingItems || 0 === this.props.trendingItems.length) return n.a.createElement(C.a, {
@@ -259,7 +259,7 @@
 					}))
 				}
 			}
-			t.default = Object(_.b)(f(v))
+			t.default = Object(P.b)(f(v))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -284,13 +284,13 @@
 				flairStyleTemplate: c.R,
 				hideNSFWPref: u.z,
 				isActive: b.j,
-				language: u.P,
+				language: u.Q,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
 				post: b.O,
 				showEditFlair: p.a,
 				subredditOrProfile: b.bb,
-				userIsOp: u.gb
+				userIsOp: u.hb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.63813d7c9e93a31d2618.js.map
+//# sourceMappingURL=Trending.b5880019335c5a925bc9.js.map

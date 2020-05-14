@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.89bf325f7fb11877a960.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5738d871add14a4ab9be.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -48,7 +48,7 @@
 				m = n.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: p.R
+					isNightmodeOn: p.S
 				}));
 			t.a = f(e => {
 				const t = {
@@ -157,7 +157,7 @@
 				},
 				v = Object(c.c)({
 					postPermalink: b.M,
-					shouldOpenPostInNewTab: f.T
+					shouldOpenPostInNewTab: f.U
 				}),
 				I = Object(i.b)(v);
 			t.a = I(e => e.outboundUrl ? o.a.createElement("a", {
@@ -1317,13 +1317,13 @@
 					}, "r/".concat(e))
 				}
 			}
-			const R = Object(u.c)(D),
-				H = Object(I.c)({
+			const H = Object(u.c)(D),
+				R = Object(I.c)({
 					isFeatureFlagEnabled: B.b,
 					isUserInTreatment: B.e,
 					userVariant: B.a
 				});
-			var U = Object(v.b)(H)(e => {
+			var U = Object(v.b)(R)(e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -1331,24 +1331,24 @@
 						userVariant: r,
 						rtJsonElementProps: o
 					} = e;
-					if (!n || !t) return a.a.createElement(R, {
+					if (!n || !t) return a.a.createElement(H, {
 						subredditName: s,
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Xb.SmIcon:
+						case N.Zb.SmIcon:
 							return a.a.createElement(L, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case N.Xb.SmIconHc:
+						case N.Zb.SmIconHc:
 							return a.a.createElement(L, {
 								subredditName: s,
 								isHoverable: !0,
 								rtJsonElementProps: o
 							});
 						default:
-							return a.a.createElement(R, {
+							return a.a.createElement(H, {
 								subredditName: s,
 								rtJsonElementProps: o
 							})
@@ -1784,12 +1784,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Sb
+						experimentName: s.Ub
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Xb.SmIcon || t === s.Xb.SmIconHc
+					return t === s.Zb.SmIcon || t === s.Zb.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.89bf325f7fb11877a960.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71.5738d871add14a4ab9be.js.map

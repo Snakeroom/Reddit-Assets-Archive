@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.0caffd8743ec2cd55d07.js
-// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.ddfedbe3820d8c4fe96a.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -55,12 +55,12 @@
 			}
 			var j = s("./node_modules/lodash/debounce.js"),
 				w = s.n(j),
-				R = s("./src/lib/classNames/index.ts"),
-				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				S = s("./src/lib/classNames/index.ts"),
+				R = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				O = s.n(B);
 			const k = 400;
-			class P extends l.a.Component {
+			class M extends l.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
 						query: ""
@@ -84,11 +84,11 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return l.a.createElement("div", {
-						className: Object(R.a)(O.a.searchBox, this.props.className)
+						className: Object(S.a)(O.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
 						className: O.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(S.a, {
+					}, l.a.createElement(R.a, {
 						className: O.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -108,10 +108,10 @@
 					}))
 				}
 			}
-			const M = Object(p.c)({
-				isNightMode: C.R
+			const P = Object(p.c)({
+				isNightMode: C.S
 			});
-			var H = Object(d.b)(M)(P),
+			var H = Object(d.b)(P)(M),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				U = s.n(A);
 			const F = 4,
@@ -301,7 +301,7 @@
 					} = t;
 					return Object(E.D)(e, s.id)
 				},
-				language: C.P
+				language: C.Q
 			});
 			t.a = Object(u.c)(Object(d.b)(q, e => ({
 				showErrorToast: t => e(Object(h.e)({
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.0caffd8743ec2cd55d07.js.map
+//# sourceMappingURL=GifTooltip.ddfedbe3820d8c4fe96a.js.map

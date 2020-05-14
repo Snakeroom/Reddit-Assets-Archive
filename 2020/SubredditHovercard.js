@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.d89d74d4cf4fa636837f.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.f9cf4f5a60cb5a621426.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -345,7 +345,7 @@
 			const V = Object(m.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.z,
-				language: h.P,
+				language: h.Q,
 				subreddit: b.z,
 				subredditAboutInfo: b.w
 			});
@@ -369,8 +369,8 @@
 				tooltipPosition: e.tooltipPosition,
 				tooltipType: e.tooltipType
 			}))));
-			const W = "SubredditInfoTooltip";
-			class J extends o.a.Component {
+			const Q = "SubredditInfoTooltip";
+			class W extends o.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(l(this.props.subredditName, this.props.postId))
 				}
@@ -380,7 +380,7 @@
 					} = this, t = Object(n.b)({
 						itemId: e.postId,
 						subredditName: e.subredditName,
-						tooltipIdPrefix: W,
+						tooltipIdPrefix: Q,
 						tooltipType: e.tooltipType
 					}), s = "".concat(t, "-hover-id");
 					return o.a.createElement(i.b, {
@@ -399,7 +399,7 @@
 					}))
 				}
 			}
-			t.default = Object(d.c)(J)
+			t.default = Object(d.c)(W)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -884,4 +884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.d89d74d4cf4fa636837f.js.map
+//# sourceMappingURL=SubredditHovercard.f9cf4f5a60cb5a621426.js.map

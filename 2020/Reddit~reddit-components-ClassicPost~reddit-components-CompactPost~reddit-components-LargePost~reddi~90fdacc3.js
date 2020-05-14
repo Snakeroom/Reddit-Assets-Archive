@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.27d4163440000b27c3b3.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f7fdd046cb9360c80774.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -429,7 +429,7 @@
 				y = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				j = s.n(y);
 			const C = Object(o.b)(() => Object(i.c)({
-				labelNSFW: c.O
+				labelNSFW: c.P
 			}));
 			t.a = C(Object(a.c)(e => {
 				let {
@@ -750,7 +750,7 @@
 				z = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(k.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(k.a)(e).post, y.a.black, y.a.white) : e.textColor === S.e.Dark ? y.a.black : y.a.white,
 				H = m.a.wrapped(W, "TextFlair", _.a),
 				q = m.a.wrapped(B, "RichTextFlair", _.a),
-				Z = e => {
+				U = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -760,8 +760,8 @@
 							return Object(o.j)(.1, Object(k.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				U = m.a.wrapped(e => {
-					const t = Z(e),
+				Z = m.a.wrapped(e => {
+					const t = U(e),
 						s = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -838,7 +838,7 @@
 						});
 					case S.f.Nsfw:
 					case S.f.Spoiler:
-						return a.a.createElement(U, {
+						return a.a.createElement(Z, {
 							className: t,
 							text: n.text,
 							type: n.type
@@ -881,7 +881,7 @@
 				u = s("./src/reddit/models/Flair/index.ts"),
 				m = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.O
+					labelNSFW: m.P
 				}),
 				b = Object(a.b)(p),
 				h = e => {
@@ -1778,7 +1778,7 @@
 						})
 					}), r.children)
 				},
-				Z = e => {
+				U = e => {
 					var {
 						disableVisited: t,
 						nowrap: s
@@ -1790,7 +1790,7 @@
 						})
 					}))
 				},
-				U = Object(p.t)({
+				Z = Object(p.t)({
 					isCommentPermalink: p.v,
 					pageLayer: e => e
 				}),
@@ -1819,7 +1819,7 @@
 							subredditId: s.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: M.T
+					shouldOpenPostInNewTab: M.U
 				}),
 				G = Object(i.b)(Q),
 				K = e => {
@@ -1829,7 +1829,7 @@
 					} = e, {
 						isSponsored: n
 					} = t;
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Z, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(U, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(b.a, {
@@ -1840,7 +1840,7 @@
 					}, o.a.createElement(X, e)); {
 						const r = t.media && Object(C.C)(t.media) ? Object(v.b)(t.id, s) : t.permalink,
 							i = e.isCommentPermalink ? Object(g.b)(r) : Object(f.a)(r);
-						return o.a.createElement(Z, {
+						return o.a.createElement(U, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? o.a.createElement(X, e) : o.a.createElement(q, {
@@ -1950,7 +1950,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = u.a.wrapped(U(G(Object(d.a)(Object(m.c)(Y)))), "Component", D.a)
+			t.c = u.a.wrapped(Z(G(Object(d.a)(Object(m.c)(Y)))), "Component", D.a)
 		},
 		"./src/reddit/components/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2148,7 +2148,7 @@
 						placeholderImage: x,
 						redditStyle: b,
 						theme: v
-					}), O = q(e), w = U(p, t, C, j, g, v, O, l, f, h, b, d, u, m, r), E = Object(N.A)(p);
+					}), O = q(e), w = Z(p, t, C, j, g, v, O, l, f, h, b, d, u, m, r), E = Object(N.A)(p);
 					return Object(n.a)(E) && !h && E.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(i.a)(P.a.container, y ? P.a.usePreview : "", s)
 					}, o.a.createElement(S.a, {
@@ -2173,13 +2173,13 @@
 						media: i,
 						thumbnail: a
 					} = t || s;
-					return r && o ? o.url : Z(i) ? i.scrubberThumbSource : a.url
+					return r && o ? o.url : U(i) ? i.scrubberThumbSource : a.url
 				},
-				Z = e => !!e && e.type === N.n.LIVEVIDEO,
-				U = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
+				U = e => !!e && e.type === N.n.LIVEVIDEO,
+				Z = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
 					const v = e.source && !e.isSponsored || !1;
 					if (Object(n.a)(d)) {
-						const s = Z(e.media),
+						const s = U(e.media),
 							n = s ? {
 								errorSrc: l.S
 							} : {},
@@ -2260,7 +2260,7 @@
 				f = s("./src/reddit/components/VerticalVotes/index.m.less"),
 				x = s.n(f);
 			const g = Object(a.c)({
-					isNightmode: h.R
+					isNightmode: h.S
 				}),
 				v = Object(i.b)(g),
 				y = e => !0 !== e.redditStyle && Object(p.a)(e).voteIcons.downvoteInactive && Object(p.a)(e).voteIcons.downvoteActive;
@@ -3345,9 +3345,9 @@
 			})), s.d(t, "c", (function() {
 				return q
 			})), s.d(t, "D", (function() {
-				return Z
-			})), s.d(t, "A", (function() {
 				return U
+			})), s.d(t, "A", (function() {
+				return Z
 			})), s.d(t, "h", (function() {
 				return Q
 			})), s.d(t, "i", (function() {
@@ -3627,13 +3627,13 @@
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				Z = (e, t) => {
+				U = (e, t) => {
 					const s = t && e.economics.gifs[t];
 					return !!s && s.hasGifProduct
 				},
-				U = (e, t, s) => {
+				Z = (e, t, s) => {
 					const n = r.d.spGiphy(e),
-						o = Z(e, t),
+						o = U(e, t),
 						a = "replyToPost" !== s && Object(p.n)(e, {
 							commentId: s
 						}),
@@ -3716,4 +3716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.27d4163440000b27c3b3.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f7fdd046cb9360c80774.js.map

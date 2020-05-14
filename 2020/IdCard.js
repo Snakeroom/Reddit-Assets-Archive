@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f508263b3e3b392b1717.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.aff5603f9fd9ad9aa167.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1410,8 +1410,8 @@
 			const Bt = G.a.wrapped(k.n, "TertiaryButton", Ft.a),
 				Lt = Object(u.c)({
 					shouldShowFlairPicker: ct.b,
-					stylesDisabledForSubreddit: F.ab,
-					stylesDisabledGlobally: F.bb
+					stylesDisabledForSubreddit: F.bb,
+					stylesDisabledGlobally: F.cb
 				});
 			class Rt extends o.a.Component {
 				constructor(e) {
@@ -1503,8 +1503,8 @@
 					showContributorRequestFlow: e => Object(re.q)(e, Ve.e.Post),
 					showCreatePollButton: e => (e => Object(Xe.c)(e, {
 						experimentEligibilitySelector: Xe.a,
-						experimentName: Je.t
-					}) === Je.z.Treatment)(e) && !Object(Fe.f)(),
+						experimentName: Je.u
+					}) === Je.B.Treatment)(e) && !Object(Fe.f)(),
 					subreddit: (e, t) => Object(re.z)(e, {
 						subredditName: t.listingName
 					}),
@@ -2470,7 +2470,7 @@
 				i = n("./src/reddit/selectors/subreddit.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: a.P,
+				language: a.Q,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -2832,7 +2832,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(o.E)(e) || s.u.Treatment1 === Object(r.c)(e, {
+				return Object(o.E)(e) || s.v.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.m
 				})
@@ -2840,4 +2840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.f508263b3e3b392b1717.js.map
+//# sourceMappingURL=IdCard.aff5603f9fd9ad9aa167.js.map

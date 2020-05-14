@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bc229afd986b6bdab0e8.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cba317e4c18c5a6b689a.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3364,16 +3364,16 @@
 			const jt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.Y
+						experimentName: _t.ab
 					});
-					return !(!t || Object(_t.pc)(t))
+					return !(!t || Object(_t.rc)(t))
 				},
 				wt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.X
+						experimentName: _t.Z
 					});
-					return !(!t || Object(_t.pc)(t))
+					return !(!t || Object(_t.rc)(t))
 				};
 			var Pt = s("./src/reddit/selectors/gild.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -3430,7 +3430,7 @@
 					isEditing: C.z,
 					isLoggedIn: _.H,
 					isPendingDeletion: C.A,
-					language: _.P,
+					language: _.Q,
 					moderatorPermissions: (e, t) => {
 						const s = Object(C.n)(e, t);
 						return s ? Object(E.j)(e, {
@@ -3853,7 +3853,7 @@
 					const c = n === v.a.Last ? d.previousVisits[d.previousVisits.length - 1] : d.previousVisits[0];
 					return (a || i) && r.created > c
 				},
-				isNightmodeOn: _.R
+				isNightmodeOn: _.S
 			}), (e, t) => {
 				let {
 					commentLink: s,
@@ -3996,7 +3996,7 @@
 					allCollapsed: C.a,
 					commentLinks: C.k,
 					commentThreadLinkSet: C.p,
-					language: _.P,
+					language: _.Q,
 					measureScrollFPS: me.d.measureScrollFPS,
 					moreComments: C.b,
 					postPermalink: y.M
@@ -4369,7 +4369,7 @@
 					isChatPostExperiment: g.d,
 					isPostSEOEligible: x.f,
 					postPermalink: f.M,
-					shouldOpenPostInNewTab: v.T
+					shouldOpenPostInNewTab: v.U
 				})),
 				y = e => {
 					let t, {
@@ -4945,9 +4945,9 @@
 				N = Object(d.c)({
 					isCurrentUserProfilePost: x.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.yb.TOPIC),
-					language: f.P,
+					language: f.Q,
 					post: x.O,
-					shouldOpenPostInNewTab: f.T,
+					shouldOpenPostInNewTab: f.U,
 					subreddit: x.bb
 				}),
 				M = Object(i.b)(N);
@@ -5903,7 +5903,7 @@
 				ye = Object(a.c)({
 					activeModalId: me.a,
 					layout: U.N,
-					userIsOp: z.gb,
+					userIsOp: z.hb,
 					subreddit: U.q
 				}),
 				_e = Object(i.b)(ye, (e, t) => {
@@ -8255,14 +8255,14 @@
 					isCurrentUserProfilePost: F.k,
 					isExpanded: F.m,
 					post: F.O,
-					language: A.P,
+					language: A.Q,
 					moderatorPermissions: L.i,
 					modModeEnabled: de.P,
 					isInCategoriesExperiment: M.a,
 					showEditFlair: le.a,
 					subredditOrProfile: F.bb,
 					isEditing: R.C,
-					userIsOp: A.gb
+					userIsOp: A.hb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -8915,7 +8915,7 @@
 					collection: C.r,
 					error: C.c,
 					isPending: C.h,
-					language: O.P
+					language: O.Q
 				}),
 				W = Object(i.b)(D, (e, t) => ({
 					onCreate: (t, s) => e(Object(l.b)(t, s)),
@@ -9599,7 +9599,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(re.gb)(e, n) && Object(re.eb)(e, {
+						return Object(K.B)(e, n) && s && Object(re.hb)(e, n) && Object(re.fb)(e, {
 							userName: Object(ne.O)(e, {
 								postId: n.postId
 							}).author
@@ -9607,7 +9607,7 @@
 					},
 					subredditOrProfile: ne.bb,
 					hasSubredditRules: oe.k,
-					userIsOp: re.gb,
+					userIsOp: re.hb,
 					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -11359,7 +11359,7 @@
 			const te = Object(c.a)("spPolls", I),
 				se = Object(d.t)(),
 				ne = Object(i.c)({
-					language: l.P,
+					language: l.Q,
 					layout: d.N,
 					widget: m.f
 				}),
@@ -11949,7 +11949,7 @@
 				p = s("./src/reddit/actions/subscription/index.ts"),
 				u = s("./src/reddit/selectors/user.ts");
 			const h = Object(d.c)({
-				language: u.P
+				language: u.Q
 			});
 			var b = Object(i.b)(h, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -12518,10 +12518,10 @@
 						n = t.redditStyle || Object(x.m)(e, {
 							subredditId: s
 						}),
-						o = Object(f.R)(e);
+						o = Object(f.S)(e);
 					return n || o
 				},
-				nigtmode: f.R,
+				nigtmode: f.S,
 				subredditId: m.m,
 				topPostVariant: g.d
 			}));
@@ -12685,7 +12685,7 @@
 				j = p.a.wrapped(a.a, "RawHTMLDisplay", C.a);
 			var w = Object(r.b)(() => Object(i.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: f.R
+					isNightmodeOn: f.S
 				}))(e => o.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -12737,7 +12737,7 @@
 				}
 			}
 			const U = Object(i.c)({
-				language: f.P
+				language: f.Q
 			});
 			var G = Object(r.b)(U)(e => o.a.createElement(d.a, {
 					styles: e.widget.styles,
@@ -13057,7 +13057,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: a.P,
+				language: a.Q,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -13079,7 +13079,7 @@
 				o = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const i = Object(o.c)({
-				language: r.P
+				language: r.Q
 			});
 
 			function a(e) {
@@ -14938,7 +14938,7 @@
 			};
 			const E = Object(r.b)(() => Object(i.c)({
 					showFPR: x.F,
-					showSuspended: x.L
+					showSuspended: x.M
 				})),
 				y = Object(d.a)(e => {
 					var {
@@ -15588,7 +15588,7 @@
 						return Object(ue.f)(e, s)
 					},
 					contestModeIsEnabled: le.F,
-					currentUserShowNSFW: ue.U,
+					currentUserShowNSFW: ue.V,
 					dismissedSubreddits: ne.a,
 					fullyLoaded: ee.v,
 					hasModeratorPostPermissions: ce.b,
@@ -15598,16 +15598,16 @@
 					isChatPostExperiment: re.d,
 					isCommentsListTruncated: te.a,
 					isLoggedIn: ue.H,
-					isNightmodeOn: ue.R,
+					isNightmodeOn: ue.S,
 					isTooltipOpen: (e, t) => !!Object(pe.a)(e),
-					language: ue.P,
+					language: ue.Q,
 					listingBelowAllVariant: Xe.b,
 					origin: de.j,
 					post: ee.F,
 					postSEOV2IdCardVariant: ae.k,
 					profileCollectionsEnabled: X.a,
 					replyComment: ee.t,
-					shouldOpenPostInNewTab: ue.T,
+					shouldOpenPostInNewTab: ue.U,
 					subredditAboutInfo: (e, t) => {
 						let {
 							subredditName: s
@@ -15622,7 +15622,7 @@
 						tooltipIdPrefix: D.a,
 						tooltipType: Le.c.StickyPost
 					}))(e),
-					userPrefs: ue.jb,
+					userPrefs: ue.kb,
 					isInCommentsPageAdExperiment: ie.a
 				}),
 				mt = (e, t) => ({
@@ -16362,8 +16362,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.B
-				}) === n.J.Treatment
+					experimentName: n.D
+				}) === n.L.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -16377,8 +16377,8 @@
 			const a = Object(n.a)(i.H, i.G, (e, t) => e || t),
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: o.s
-				}), e => e === o.y.Enabled)
+					experimentName: o.t
+				}), e => e === o.A.Enabled)
 		},
 		"./src/reddit/selectors/experiments/commentsPageAd.ts": function(e, t, s) {
 			"use strict";
@@ -16390,9 +16390,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.C
+					experimentName: n.E
 				});
-				return !!t && !Object(n.pc)(t)
+				return !!t && !Object(n.rc)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16409,4 +16409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.bc229afd986b6bdab0e8.js.map
+//# sourceMappingURL=CollectionCommentsPage.cba317e4c18c5a6b689a.js.map

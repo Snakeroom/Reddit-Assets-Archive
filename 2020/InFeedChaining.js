@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.d4cc3a1400402eb38f89.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.4dea1bdf5813f27ba84e.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -1159,13 +1159,13 @@
 				flairStyleTemplate: c.R,
 				hideNSFWPref: b.z,
 				isActive: p.j,
-				language: b.P,
+				language: b.Q,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
 				post: p.O,
 				showEditFlair: u.a,
 				subredditOrProfile: p.bb,
-				userIsOp: b.gb
+				userIsOp: b.hb
 			}), (e, s) => {
 				let {
 					postId: t
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.d4cc3a1400402eb38f89.js.map
+//# sourceMappingURL=InFeedChaining.4dea1bdf5813f27ba84e.js.map

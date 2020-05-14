@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.bc60cc51135073e37894.js
-// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.69315755d52789853083.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -90,7 +90,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(p.db)(e, {
+				user: (e, t) => Object(p.eb)(e, {
 					userName: t.username
 				})
 			});
@@ -331,10 +331,10 @@
 					},
 					isLoggedIn: p.H,
 					hideNSFWPref: p.z,
-					language: p.P,
+					language: p.Q,
 					moderatorPermissions: u.j,
 					origin: l.j,
-					user: p.db,
+					user: p.eb,
 					userFlair: v.c
 				}),
 				Oe = Object(a.b)(Ne, (e, t) => ({
@@ -932,4 +932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.bc60cc51135073e37894.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.69315755d52789853083.js.map

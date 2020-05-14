@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a3e92af6e7b50a4e4c5a.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.52e4ae49d8842643b064.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -257,7 +257,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var _ = function(e, t) {
+			var S = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -266,14 +266,14 @@
 				}
 				return s
 			};
-			const w = c.e[1] + 24,
-				S = p.f + 8 + 152 + 32 + 16,
-				j = S + w + 8,
+			const _ = c.e[1] + 24,
+				w = p.f + 8 + 152 + 32 + 16,
+				j = w + _ + 8,
 				k = x.a.div("Container", y.a),
 				O = x.a.wrapped(e => {
 					var {
 						className: t
-					} = e, s = _(e, ["className"]);
+					} = e, s = S(e, ["className"]);
 					return o.a.createElement(b, E({
 						className: t,
 						style: {
@@ -297,7 +297,7 @@
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > j,
-						shouldFooterSticky: this.windowHeight > S
+						shouldFooterSticky: this.windowHeight > w
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -388,14 +388,14 @@
 				y = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/models/Theme/index.ts"),
 				E = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const _ = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(E.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				w = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(E.a)(e).widgetColors.sidebarWidgetHeaderColor,
-				S = e => {
-					const t = _(e);
+			const S = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(E.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				_ = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(E.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				w = e => {
+					const t = S(e);
 					return Object(x.f)(t)
 				},
 				j = e => {
-					const t = w(e);
+					const t = _(e);
 					return Object(x.f)(t)
 				};
 			var k = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
@@ -408,10 +408,10 @@
 						n = t.redditStyle || Object(f.m)(e, {
 							subredditId: s
 						}),
-						a = Object(y.R)(e);
+						a = Object(y.S)(e);
 					return n || a
 				},
-				nigtmode: y.R,
+				nigtmode: y.S,
 				subredditId: u.m,
 				topPostVariant: g.d
 			}));
@@ -438,11 +438,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = _(this.props), e.borderColor = Object(p.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = S(this.props), e
+					return e.backgroundColor = S(this.props), e.borderColor = Object(p.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = w(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = w(this.props), e.color = e.fill = j(this.props), e
+					return e.backgroundColor = _(this.props), e.color = e.fill = j(this.props), e
 				}
 				render() {
 					const {
@@ -631,22 +631,22 @@
 				y = s("./src/reddit/layout/page/Listing/index.tsx"),
 				x = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				E = s("./src/reddit/controls/Button/index.tsx"),
-				_ = s("./src/reddit/pages/Geotagging/index.m.less"),
-				w = s.n(_);
+				S = s("./src/reddit/pages/Geotagging/index.m.less"),
+				_ = s.n(S);
 			const {
-				fbt: S
+				fbt: w
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function j() {
 				return a.a.createElement("div", {
-					className: w.a.done
+					className: _.a.done
 				}, a.a.createElement("p", {
-					className: w.a.headerText1
-				}, S._("Done and done!", null, {
+					className: _.a.headerText1
+				}, w._("Done and done!", null, {
 					hk: "1RzJEG"
 				})), a.a.createElement("p", {
-					className: w.a.headerText2
-				}, S._("Thanks for all your help. Your contributions have helped make Reddit a better place.", null, {
+					className: _.a.headerText2
+				}, w._("Thanks for all your help. Your contributions have helped make Reddit a better place.", null, {
 					hk: "1xzgiX"
 				})), a.a.createElement(x.a, {
 					to: "/"
@@ -659,16 +659,16 @@
 
 			function C() {
 				return a.a.createElement("div", {
-					className: w.a.header
+					className: _.a.header
 				}, a.a.createElement("img", {
-					className: w.a.headerImage,
+					className: _.a.headerImage,
 					src: "".concat(k.a.assetPath, "/img/mtm-snoo.png")
 				}), a.a.createElement("div", null, a.a.createElement("p", {
-					className: w.a.headerText1
+					className: _.a.headerText1
 				}, O._("Okay, lets do this", null, {
 					hk: "1AIkwG"
 				})), a.a.createElement("p", {
-					className: w.a.headerText2
+					className: _.a.headerText2
 				}, O._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
 					hk: "fVUF3"
 				}))))
@@ -825,14 +825,14 @@
 					}
 				}(l, s, r), f = "location-input-".concat(c);
 				return a.a.createElement("div", {
-					className: w.a.autocompleteInput
+					className: _.a.autocompleteInput
 				}, a.a.createElement("label", {
-					className: w.a.geoLabel,
+					className: _.a.geoLabel,
 					htmlFor: f
 				}, a.a.createElement(ae, {
-					className: w.a.locationIcon
+					className: _.a.locationIcon
 				})), a.a.createElement("input", {
-					className: w.a.geoInput,
+					className: _.a.geoInput,
 					name: f,
 					disabled: i,
 					onKeyDown: b,
@@ -864,13 +864,13 @@
 					onClickOutside: i
 				} = e;
 				return Object(ne.a)("autocomplete-dropdown-".concat(t), i), a.a.createElement("ul", {
-					className: w.a.autocompleteDropdown,
+					className: _.a.autocompleteDropdown,
 					id: "autocomplete-dropdown-".concat(t)
 				}, s.map((e, t) => a.a.createElement("li", {
 					key: "".concat(e).concat(t),
 					onClick: () => r(t),
 					className: Object(Y.a)({
-						[w.a.highlight]: t === n
+						[_.a.highlight]: t === n
 					})
 				}, e)))
 			}
@@ -888,8 +888,8 @@
 					subreddit: t,
 					onClose: s
 				} = e, i = g(), o = Object(r.c)(), [c, d] = Object(n.useState)(""), [l, u] = Object(n.useState)(""), [m, b] = Object(n.useState)(!1), [h, p] = Object(n.useState)(!1), [y] = Object(n.useState)(() => N()()), {
-					isClosed: _,
-					close: S
+					isClosed: S,
+					close: w
 				} = function() {
 					const [e, t] = Object(n.useState)(!1);
 					return {
@@ -908,41 +908,41 @@
 						})
 					}))
 				}
-				return _ || !t ? null : a.a.createElement("div", {
-					className: w.a.subredditGeotag
+				return S || !t ? null : a.a.createElement("div", {
+					className: _.a.subredditGeotag
 				}, a.a.createElement("div", {
-					className: w.a.subredditTitle
+					className: _.a.subredditTitle
 				}, a.a.createElement(P.b, {
-					className: w.a.icon,
+					className: _.a.icon,
 					subredditOrProfile: Object(B.a)(t),
 					linkTo: t.path
 				}), a.a.createElement(x.a, {
 					to: t.path
 				}, a.a.createElement("div", {
-					className: w.a.title
+					className: _.a.title
 				}, t.prefixedName)), a.a.createElement("button", {
-					className: w.a.dismiss,
+					className: _.a.dismiss,
 					onClick: function() {
-						ce(t.id), j(H(t)), S(), s(t.id)
+						ce(t.id), j(H(t)), w(), s(t.id)
 					}
 				}, a.a.createElement(K, null))), a.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !h ? a.a.createElement("div", {
-					className: w.a.questionContainer
+					className: _.a.questionContainer
 				}, a.a.createElement("div", {
-					className: w.a.question
+					className: _.a.question
 				}, oe._("Is this community specific to {place}?", [oe._param("place", t.geoPlace.name)], {
 					hk: "bIGM4"
 				})), a.a.createElement(E.i, {
-					className: w.a.rejectButton,
+					className: _.a.rejectButton,
 					onClick: function() {
 						p(!0), j(W(t, t.geoPlace.id))
 					}
 				}, "No"), a.a.createElement(E.f, {
-					className: w.a.verifyButton,
+					className: _.a.verifyButton,
 					onClick: function() {
-						ce(t.id), j(M(t, t.geoPlace.id)), S(), s(t.id), k()
+						ce(t.id), j(M(t, t.geoPlace.id)), w(), s(t.id), k()
 					}
 				}, "Yes")) : a.a.createElement("form", {
-					className: w.a.geoForm,
+					className: _.a.geoForm,
 					onSubmit: async function(e) {
 						e.preventDefault(), b(!0);
 						try {
@@ -970,7 +970,7 @@
 								duration: 5e3
 							}))
 						}
-						b(!1), j(D(t, l)), S(), s(t.id), k()
+						b(!1), j(D(t, l)), w(), s(t.id), k()
 					}
 				}, a.a.createElement(re, {
 					value: c,
@@ -982,7 +982,7 @@
 					disabled: m,
 					onFocus: () => j(q(t))
 				}), l && a.a.createElement(E.i, {
-					className: w.a.submitButton,
+					className: _.a.submitButton,
 					type: "submit",
 					disabled: m
 				}, oe._("Submit", null, {
@@ -1028,19 +1028,19 @@
 					hk: "4hQNVu"
 				})) : t ? a.a.createElement(a.a.Fragment, null, a.a.createElement(C, null), a.a.createElement(i.a, {
 					isLoading: !0,
-					className: w.a.subredditGeotag
+					className: _.a.subredditGeotag
 				}), a.a.createElement(i.a, {
 					isLoading: !0,
-					className: w.a.subredditGeotag
+					className: _.a.subredditGeotag
 				}), a.a.createElement(i.a, {
 					isLoading: !0,
-					className: w.a.subredditGeotag
+					className: _.a.subredditGeotag
 				}), a.a.createElement(i.a, {
 					isLoading: !0,
-					className: w.a.subredditGeotag
+					className: _.a.subredditGeotag
 				}), a.a.createElement(i.a, {
 					isLoading: !0,
-					className: w.a.subredditGeotag
+					className: _.a.subredditGeotag
 				})) : r >= s.length ? a.a.createElement(j, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(C, null), s.map(e => a.a.createElement(de, {
 					key: e.id,
 					subreddit: e,
@@ -1058,12 +1058,12 @@
 				return Object(n.useEffect)(() => {
 					s(Object(h.c)())
 				}, []), a.a.createElement(o.a, null, a.a.createElement(y.a, {
-					className: w.a.Container,
+					className: _.a.Container,
 					content: a.a.createElement(me, null),
 					fitPageToContent: !0,
 					sidebars: [null, a.a.createElement(c.a, {
 						key: "right",
-						className: w.a.SidebarRight,
+						className: _.a.SidebarRight,
 						listingName: "geotagging"
 					}, t && a.a.createElement(d.a, {
 						subredditIds: t.subredditIds,
@@ -1075,4 +1075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging.a3e92af6e7b50a4e4c5a.js.map
+//# sourceMappingURL=Geotagging.52e4ae49d8842643b064.js.map

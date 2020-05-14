@@ -1,51 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.002de6584505ba19faa4.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.bb8a8f318e4a746c4bac.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
-		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				i = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/react-router/esm/react-router.js"),
-				o = n("./src/reddit/actions/modal.ts");
-			const l = "non-empty-string-to-block-navigation";
-			class d extends i.a.Component {
-				constructor() {
-					super(...arguments), this.onBeforeUnload = e => {
-						if (this.props.enabled) return e.preventDefault(), e.returnValue = "", ""
-					}, this.message = (e, t) => {
-						return !0 === (this.props.confirmNavigate || this.defaultConfirmNavigate)(e, t) || l
-					}, this.defaultConfirmNavigate = (e, t) => {
-						const {
-							ignoreCurrentLocation: n = !0,
-							location: s,
-							showModal: i,
-							dialogId: r
-						} = this.props;
-						return !(!n || e.pathname !== s.pathname) || (r && i(), !1)
-					}
-				}
-				componentDidMount() {
-					this.props.blockOnBeforeUnload && window.addEventListener("beforeunload", this.onBeforeUnload)
-				}
-				componentWillUnmount() {
-					this.props.blockOnBeforeUnload && window.removeEventListener("beforeunload", this.onBeforeUnload)
-				}
-				render() {
-					const {
-						enabled: e = !0
-					} = this.props;
-					return i.a.createElement(a.b, {
-						message: this.message,
-						when: e
-					})
-				}
-			}
-			t.a = Object(r.b)(null, (e, t) => ({
-				showModal: () => e(Object(o.h)(t.dialogId))
-			}))(Object(a.i)(d))
-		},
 		"./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_26QbsLXJCM9nhMCYYHK1hm",
@@ -106,8 +62,8 @@
 				d = n.n(l),
 				c = n("./node_modules/react-redux/es/index.js"),
 				m = n("./node_modules/reselect/es/index.js"),
-				u = n("./src/reddit/actions/modal.ts"),
-				g = n("./src/reddit/actions/postRequirements/index.ts"),
+				g = n("./src/reddit/actions/modal.ts"),
+				u = n("./src/reddit/actions/postRequirements/index.ts"),
 				h = n("./src/reddit/components/BlockNavigation/index.tsx"),
 				b = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				p = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
@@ -159,7 +115,7 @@
 			const w = "".concat(j.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360010322091"),
 				N = 15,
 				P = 40,
-				D = {
+				F = {
 					guidelines: {
 						enabled: !1,
 						guidelineText: "",
@@ -220,8 +176,8 @@
 						enabled: !1
 					}
 				};
-			var M = n("./node_modules/lodash/times.js"),
-				F = n.n(M),
+			var D = n("./node_modules/lodash/times.js"),
+				M = n.n(D),
 				I = n("./src/lib/classNames/index.ts"),
 				A = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				U = n("./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less"),
@@ -234,7 +190,7 @@
 						className: Object(I.a)(H.a.container, Object(A.a)({
 							isLoading: !1
 						}))
-					}, F()(3).map(e => l.createElement("div", {
+					}, M()(3).map(e => l.createElement("div", {
 						key: e,
 						className: H.a.section
 					}, l.createElement("div", {
@@ -243,7 +199,7 @@
 						}))
 					}), l.createElement("div", {
 						className: H.a.line
-					}), F()(2).map(e => l.createElement("div", {
+					}), M()(2).map(e => l.createElement("div", {
 						key: e,
 						className: Object(I.a)(H.a.sectionBodyRow, Object(A.b)({
 							isLoading: t
@@ -424,10 +380,10 @@
 				ce = n.n(de);
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
 			const me = e => e.split(/[,;\s]/).filter(Boolean),
-				ue = e => e.join(", "),
-				ge = ["i.redd.it", "v.redd.it"],
+				ge = e => e.join(", "),
+				ue = ["i.redd.it", "v.redd.it"],
 				he = /^(?:[\w-]+\.)+[\w]+$/,
-				be = e => ge.includes(e.toLowerCase());
+				be = e => ue.includes(e.toLowerCase());
 			var pe = e => {
 					const t = me(e),
 						n = [],
@@ -672,7 +628,7 @@
 						}, this.onLinkDomainsBlur = () => {
 							const {
 								linkDomains: e
-							} = this.props.formState, t = (e => ue(me(e)))(e.domainsText), n = pe(t);
+							} = this.props.formState, t = (e => ge(me(e)))(e.domainsText), n = pe(t);
 							this.props.onChange({
 								linkDomains: Object.assign({}, e, {
 									domainsText: t,
@@ -762,10 +718,10 @@
 						}))
 					}
 				},
-				De = n("./src/lib/memoizeByReference/index.ts"),
-				Me = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
-				Fe = n("./src/reddit/components/ModHub/PostRequirements/MultiStringsInput/index.m.less"),
-				Ie = n.n(Fe);
+				Fe = n("./src/lib/memoizeByReference/index.ts"),
+				De = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
+				Me = n("./src/reddit/components/ModHub/PostRequirements/MultiStringsInput/index.m.less"),
+				Ie = n.n(Me);
 			class Ae extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -774,7 +730,7 @@
 						this.setState({
 							pendingItemText: e
 						})
-					}, this.getOptions = Object(De.a)(e => e.map(e => ({
+					}, this.getOptions = Object(Fe.a)(e => e.map(e => ({
 						id: e,
 						displayText: e,
 						selected: !0
@@ -789,7 +745,7 @@
 				render() {
 					const e = this.getOptions(this.props.strings),
 						t = e.length < N;
-					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Me.a, {
+					return d.a.createElement(d.a.Fragment, null, d.a.createElement(De.a, {
 						className: Ie.a.control,
 						addText: s.fbt._("Add", null, {
 							hk: "4e6qQJ"
@@ -1200,20 +1156,20 @@
 						linkRepostAge: d,
 						linkRestrictionPolicy: c,
 						titleBlacklistedStrings: m,
-						titleRegexes: u,
-						titleRequiredStrings: g,
+						titleRegexes: g,
+						titleRequiredStrings: u,
 						titleTextMaxLength: h,
 						titleTextMinLength: b
 					} = e;
-					return Object.assign({}, D, {
+					return Object.assign({}, F, {
 						guidelines: {
 							enabled: !(!o || !o.trim()),
 							guidelineText: o || "",
 							clientErrors: []
 						},
 						titleRequiredStrings: {
-							enabled: !!g.length,
-							strings: g,
+							enabled: !!u.length,
+							strings: u,
 							clientErrors: []
 						},
 						titleBlacklistedStrings: {
@@ -1249,14 +1205,14 @@
 						}
 					} : null, {
 						titleRegexes: {
-							enabled: !!u.length,
-							regexes: u,
+							enabled: !!g.length,
+							regexes: g,
 							serverErrors: []
 						},
 						linkDomains: {
 							enabled: c !== E.b.None,
 							restrictionPolicy: c === E.b.None ? E.b.Whitelist : c,
-							domainsText: c !== E.b.None ? ue(c === E.b.Whitelist ? a : r) : "",
+							domainsText: c !== E.b.None ? ge(c === E.b.Whitelist ? a : r) : "",
 							clientErrors: [],
 							serverErrors: []
 						},
@@ -1278,9 +1234,9 @@
 					requirements: O.b
 				}),
 				it = Object(c.b)(st, (e, t) => ({
-					closeAllModals: () => e(Object(u.f)()),
-					onSave: n => e(Object(g.b)(t.subredditName, n)),
-					toggleModal: t => e(Object(u.i)(t))
+					closeAllModals: () => e(Object(g.f)()),
+					onSave: n => e(Object(u.b)(t.subredditName, n)),
+					toggleModal: t => e(Object(g.i)(t))
 				}));
 			class rt extends d.a.Component {
 				constructor(e) {
@@ -1353,7 +1309,7 @@
 							}
 						})
 					};
-					const n = e.requirements ? et(e.requirements) : D;
+					const n = e.requirements ? et(e.requirements) : F;
 					this.state = {
 						areRequirementsLoaded: !!e.requirements,
 						formState: n,
@@ -1480,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-PostRequirements.002de6584505ba19faa4.js.map
+//# sourceMappingURL=reddit-components-ModHub-PostRequirements.bb8a8f318e4a746c4bac.js.map

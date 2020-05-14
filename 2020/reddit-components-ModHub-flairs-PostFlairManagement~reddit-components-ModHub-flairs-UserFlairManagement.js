@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e1b38c19ea40cda02fc7.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e9b0b84965fa2b32828f.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -141,50 +141,6 @@
 				});
 				s(E(n))
 			}
-		},
-		"./src/reddit/components/BlockNavigation/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				n = s.n(a),
-				o = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/react-router/esm/react-router.js"),
-				l = s("./src/reddit/actions/modal.ts");
-			const r = "non-empty-string-to-block-navigation";
-			class d extends n.a.Component {
-				constructor() {
-					super(...arguments), this.onBeforeUnload = e => {
-						if (this.props.enabled) return e.preventDefault(), e.returnValue = "", ""
-					}, this.message = (e, t) => {
-						return !0 === (this.props.confirmNavigate || this.defaultConfirmNavigate)(e, t) || r
-					}, this.defaultConfirmNavigate = (e, t) => {
-						const {
-							ignoreCurrentLocation: s = !0,
-							location: a,
-							showModal: n,
-							dialogId: o
-						} = this.props;
-						return !(!s || e.pathname !== a.pathname) || (o && n(), !1)
-					}
-				}
-				componentDidMount() {
-					this.props.blockOnBeforeUnload && window.addEventListener("beforeunload", this.onBeforeUnload)
-				}
-				componentWillUnmount() {
-					this.props.blockOnBeforeUnload && window.removeEventListener("beforeunload", this.onBeforeUnload)
-				}
-				render() {
-					const {
-						enabled: e = !0
-					} = this.props;
-					return n.a.createElement(i.b, {
-						message: this.message,
-						when: e
-					})
-				}
-			}
-			t.a = Object(o.b)(null, (e, t) => ({
-				showModal: () => e(Object(l.h)(t.dialogId))
-			}))(Object(i.i)(d))
 		},
 		"./src/reddit/components/ModHub/flairs/FlairManagement/FlairSettingsModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -398,14 +354,14 @@
 					})
 				});
 			var B, U = s("./node_modules/fbt/lib/FbtPublic.js"),
-				L = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				A = s("./src/reddit/constants/colors.ts"),
+				A = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
+				L = s("./src/reddit/constants/colors.ts"),
 				H = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				V = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairsDisabledBanner/index.m.less"),
 				W = s.n(V),
-				Q = e => o.a.createElement(L.a, {
+				Q = e => o.a.createElement(A.a, {
 					className: e.className,
-					color: A.a.quarantine,
+					color: L.a.quarantine,
 					icon: o.a.createElement(H.a, {
 						className: W.a.icon
 					}),
@@ -560,9 +516,9 @@
 			}
 			var ie = Object(q.a)(oe),
 				le = s("./src/reddit/helpers/validateFlairCssClass.ts");
-			const re = e => !e || e === A.b,
+			const re = e => !e || e === L.b,
 				de = e => Object.assign({}, e, {
-					backgroundColor: re(e.backgroundColor) ? A.a.defaultFlair : A.b
+					backgroundColor: re(e.backgroundColor) ? L.a.defaultFlair : L.b
 				}),
 				ce = e => !(!e.textEditable || e.modOnly),
 				pe = e => {
@@ -621,7 +577,7 @@
 						} = t;
 						return Object(je.b)(s)(e)
 					},
-					language: Ie.P
+					language: Ie.Q
 				});
 			var Ne = Object(ke.b)(De, (e, t) => ({
 					onToggleDropdown: () => e(Object(we.h)(t))
@@ -656,8 +612,8 @@
 			}
 			var Be = s("./src/reddit/actions/flairManagement/index.ts"),
 				Ue = s("./src/reddit/actions/post.ts"),
-				Le = s("./src/reddit/components/ThemeProvider/index.tsx"),
-				Ae = s("./src/reddit/constants/postLayout.ts"),
+				Ae = s("./src/reddit/components/ThemeProvider/index.tsx"),
+				Le = s("./src/reddit/constants/postLayout.ts"),
 				He = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				Ve = s("./src/reddit/controls/LayoutSwitch/index.tsx"),
 				We = s("./src/reddit/helpers/dom/index.ts"),
@@ -846,7 +802,7 @@
 			class mt extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.postWrapperRef = o.a.createRef(), this.state = {
-						previewLayout: Ae.d.Classic
+						previewLayout: Le.d.Classic
 					}, this.onPostStyleTemplateChange = e => {
 						const {
 							templateDraft: t
@@ -888,7 +844,7 @@
 					if (!s) return null;
 					const {
 						previewLayout: a
-					} = this.state, n = t.styleTemplate || {}, i = Ae.b[a], l = Object(Qe.b)({
+					} = this.state, n = t.styleTemplate || {}, i = Le.b[a], l = Object(Qe.b)({
 						isFirstPost: !1,
 						layout: i,
 						post: s
@@ -905,7 +861,7 @@
 						ref: this.postWrapperRef,
 						onClickCapture: this.onPostPreviewClickCapture,
 						className: Object(Z.a)(dt.a.postWrapper, dt.a[a])
-					}, o.a.createElement(Le.a, {
+					}, o.a.createElement(Ae.a, {
 						forceDayMode: !0
 					}, o.a.createElement(l, {
 						className: dt.a.postComponent,
@@ -1045,7 +1001,7 @@
 					} = this.props, n = a === f.d.UserFlair, i = a === f.d.LinkFlair, l = s !== this.initialTemplate, {
 						hasFieldError: r,
 						cssClassErrorMessage: c
-					} = ge(s), p = this.state.flairEditHadFocus || l, m = Object(Ee.a)(), g = Object(b.c)(s, !1), C = re(s.backgroundColor), v = i || !C, E = C ? A.a.defaultFlair : s.backgroundColor, x = Object(b.l)(s);
+					} = ge(s), p = this.state.flairEditHadFocus || l, m = Object(Ee.a)(), g = Object(b.c)(s, !1), C = re(s.backgroundColor), v = i || !C, E = C ? L.a.defaultFlair : s.backgroundColor, x = Object(b.l)(s);
 					return o.a.createElement("div", {
 						className: gt.a.container,
 						ref: this.containerRef
@@ -1221,7 +1177,7 @@
 					hk: "33SB9g"
 				}) : "",
 				yt = e => Object.assign({}, u.a, {
-					backgroundColor: e === f.d.UserFlair ? A.b : A.a.defaultFlair
+					backgroundColor: e === f.d.UserFlair ? L.b : L.a.defaultFlair
 				});
 			var Tt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less"),
 				St = s.n(Tt);
@@ -2101,4 +2057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e1b38c19ea40cda02fc7.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e9b0b84965fa2b32828f.js.map

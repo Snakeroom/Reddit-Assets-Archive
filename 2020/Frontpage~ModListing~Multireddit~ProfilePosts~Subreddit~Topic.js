@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2cb2ccaa41094ff7d44b.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.f08f617214132271d3d6.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -680,10 +680,10 @@
 						o = t.redditStyle || Object(b.m)(e, {
 							subredditId: s
 						}),
-						n = Object(y.R)(e);
+						n = Object(y.S)(e);
 					return o || n
 				},
-				nigtmode: y.R,
+				nigtmode: y.S,
 				subredditId: m.m,
 				topPostVariant: f.d
 			}));
@@ -856,7 +856,7 @@
 				n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.c)({
-				language: r.P
+				language: r.Q
 			});
 
 			function i(e) {
@@ -1286,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2cb2ccaa41094ff7d44b.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.f08f617214132271d3d6.js.map

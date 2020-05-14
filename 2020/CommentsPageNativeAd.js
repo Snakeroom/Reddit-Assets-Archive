@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.66bfafec000fcda92f82.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.485c30a7171fd5b7d6e6.js
+// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -83,8 +83,8 @@
 				x = s("./src/reddit/components/Flatlist/index.tsx"),
 				b = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				h = s("./src/reddit/components/ModModeReports/index.tsx"),
-				g = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				O = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				O = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				g = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
 				y = s("./src/reddit/components/PostMedia/index.tsx"),
 				C = s("./src/reddit/components/PostMeta/index.tsx"),
@@ -153,7 +153,7 @@
 						subredditOrProfile: ne,
 						toggleCheckbox: ie,
 						userIsOp: ce
-					} = this.props, de = te ? void 0 : M, le = this.props.crosspost || void 0, pe = Object(I.a)(G), me = Object(A.a)(G), ue = Object(w.a)(G), xe = J && I.a, be = !!ee.media && ee.media.type === S.n.RTJSON, he = ce && be, ge = y && !ae, Oe = !!ee.media && Object(S.C)(ee.media), fe = {
+					} = this.props, de = te ? void 0 : M, le = this.props.crosspost || void 0, pe = Object(I.a)(G), me = Object(A.a)(G), ue = Object(w.a)(G), xe = J && I.a, be = !!ee.media && ee.media.type === S.n.RTJSON, he = ce && be, Oe = y && !ae, ge = !!ee.media && Object(S.C)(ee.media), fe = {
 						flairStyleTemplate: de,
 						post: ee,
 						inSubredditOrProfile: y,
@@ -178,7 +178,7 @@
 						flairStyleTemplate: de,
 						redditStyle: te,
 						subreddit: ne
-					}), o.a.createElement(O.a, {
+					}), o.a.createElement(g.a, {
 						"data-click-id": "background",
 						flairStyleTemplate: de
 					}, o.a.createElement(m.a, {
@@ -188,15 +188,15 @@
 					}), o.a.createElement("div", {
 						className: B.a.mainBody
 					}, o.a.createElement("div", {
-						className: ge ? B.a.expandoContainer : B.a.thumbnailContainer
-					}, !ge && o.a.createElement(N.a, {
+						className: Oe ? B.a.expandoContainer : B.a.thumbnailContainer
+					}, !Oe && o.a.createElement(N.a, {
 						className: B.a.classicThumbnail,
 						crosspost: le && ee,
 						isMeta: i,
 						post: le || ee,
 						redditStyle: te,
 						templatePlaceholderImage: de && de.postPlaceholderImage,
-						removeLink: Oe
+						removeLink: ge
 					}), o.a.createElement(u.a, {
 						crosspost: le,
 						className: B.a.rightExpando,
@@ -225,7 +225,7 @@
 						source: ee.source
 					}, Object(c.a)(ee))), o.a.createElement(C.a, R({
 						key: "PostMeta"
-					}, fe)), J && pe && Object(g.c)(ee) && o.a.createElement(h.a, {
+					}, fe)), J && pe && Object(O.c)(ee) && o.a.createElement(h.a, {
 						onIgnoreReports: X,
 						reportable: ee
 					}), o.a.createElement("div", {
@@ -350,8 +350,8 @@
 				x = s("./src/reddit/components/ClassicPost/index.tsx"),
 				b = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				h = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				g = s("./src/reddit/components/PostContainer/index.tsx"),
-				O = s("./src/reddit/components/PostTitle/index.tsx"),
+				O = s("./src/reddit/components/PostContainer/index.tsx"),
+				g = s("./src/reddit/components/PostTitle/index.tsx"),
 				f = s("./src/reddit/constants/componentTestIds.ts"),
 				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				C = s("./src/reddit/models/Media/index.ts"),
@@ -516,7 +516,7 @@
 						postId: n.id
 					}) : a.a.createElement("div", null, a.a.createElement("div", {
 						className: k.a.commentsSpacer
-					}), a.a.createElement(g.a, {
+					}), a.a.createElement(O.a, {
 						className: k.a.postContainer,
 						isOverlay: r,
 						post: n,
@@ -534,7 +534,7 @@
 						className: k.a.contentRow
 					}, this.renderAppropriateThumbnail(), a.a.createElement("div", {
 						className: k.a.contentColumn
-					}, a.a.createElement(O.c, {
+					}, a.a.createElement(g.c, {
 						format: s,
 						outboundLinkClassName: k.a.outboundLink,
 						className: k.a.postTitle,
@@ -621,7 +621,7 @@
 			s.d(t, "c", (function() {
 				return h
 			})), s.d(t, "b", (function() {
-				return g
+				return O
 			}));
 			var r = s("./node_modules/react-redux/es/index.js"),
 				o = s("./node_modules/reselect/es/index.js"),
@@ -652,7 +652,7 @@
 						} = t;
 						return Object(x.r)(e, s)
 					},
-					language: b.P,
+					language: b.Q,
 					moderatorPermissions: m.i,
 					modModeEnabled: d.P,
 					post: x.O,
@@ -663,10 +663,10 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: x.bb,
-					userIsOp: b.gb,
+					userIsOp: b.hb,
 					flairStyleTemplate: d.R
 				},
-				g = (e, t) => {
+				O = (e, t) => {
 					let {
 						listingKey: s,
 						listingName: r,
@@ -683,10 +683,10 @@
 						}))
 					}
 				},
-				O = Object(r.b)(() => Object(o.c)(h), g, (e, t, s) => Object.assign({}, e, t, s, {
+				g = Object(r.b)(() => Object(o.c)(h), O, (e, t, s) => Object.assign({}, e, t, s, {
 					formatTitle: e => e.title
 				}));
-			t.a = e => O(Object(c.b)(e))
+			t.a = e => g(Object(c.b)(e))
 		},
 		"./src/reddit/connectors/ClassicPost/searchResults.tsx": function(e, t, s) {
 			"use strict";
@@ -740,7 +740,7 @@
 			})), s.d(t, "a", (function() {
 				return h
 			})), s.d(t, "d", (function() {
-				return g
+				return O
 			}));
 			var r = s("./node_modules/polished/dist/polished.es.js"),
 				o = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
@@ -770,7 +770,7 @@
 					backgroundColor: x(e.postBackgroundColor)
 				} : p,
 				h = e => e.isActive ? l.a.mIsActive : void 0,
-				g = e => {
+				O = e => {
 					const t = Object(a.a)(Object(o.a)(e), n.a.actionIcon, n.b.actionIcon);
 					return {
 						color: t,
@@ -781,4 +781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.66bfafec000fcda92f82.js.map
+//# sourceMappingURL=CommentsPageNativeAd.485c30a7171fd5b7d6e6.js.map
