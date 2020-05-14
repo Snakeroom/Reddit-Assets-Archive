@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4e140f4d6aeab1b58c92.js
-// Retrieved at 5/14/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.93463acbcea3481f8193.js
+// Retrieved at 5/14/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -546,7 +546,7 @@
 					"Chat~RedesignChat": "c3c1e0818ef11bc4a07a",
 					RedesignChat: "31d6cfe0d16ae931b73c",
 					"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit": "31d6cfe0d16ae931b73c",
-					Subreddit: "97f835cb8dfdce4e2005",
+					Subreddit: "0c099e8074c236844a7a",
 					"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf": "27e58e00b356c4dcd63c",
 					"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "e010879daf6a469e1853",
 					CollectionCommentsPage: "2e26ef2e5869fb7c3b1b",
@@ -989,7 +989,7 @@
 						Frontpage: "e84ae3e0ebf4860a1f19",
 						"Geotagging~Topic": "bb499325cc83ec84f870",
 						Topic: "d13e3d1e0ca6b2326279",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "629341fc9fd178a3bbcb",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115": "6f1ce04c12e3f3b56595",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71": "5738d871add14a4ab9be",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "839f5e0a9aa96fb6b3f7",
 						PostDraft: "9ab6e08e308d24e91ff8",
@@ -1050,7 +1050,7 @@
 						"Chat~RedesignChat": "a8cac92850228175c843",
 						RedesignChat: "21c2668f9649ac6d7ccc",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit": "0fbb841463155b07b288",
-						Subreddit: "03ca2f53c3c2ba2064ba",
+						Subreddit: "9ab67738c02a83d7cae3",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf": "39c3c6600a32f062d793",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "fa811137e0cd8845fb76",
 						CollectionCommentsPage: "cba317e4c18c5a6b689a",
@@ -1272,4 +1272,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.4e140f4d6aeab1b58c92.js.map
+//# sourceMappingURL=runtime~Reddit.93463acbcea3481f8193.js.map
