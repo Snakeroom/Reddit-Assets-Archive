@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.9d369172206f004a91e3.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3c942140715036783fdf.js
+// Retrieved at 5/14/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -8633,15 +8633,21 @@
 						})
 					}), m && d && o.a.createElement(x, {
 						onClick: () => u(a.A.MODERATOR, !0),
-						selected: c,
+						selected: l && c,
 						text: r.fbt._("Distinguish as Mod and Sticky", null, {
 							hk: "1J1DBd"
 						})
 					}), i && o.a.createElement(x, {
 						onClick: () => u(a.A.ADMIN, null),
-						selected: n,
+						selected: n && !c,
 						text: r.fbt._("Distinguish as Admin", null, {
 							hk: "1JsJOX"
+						})
+					}), i && d && m && o.a.createElement(x, {
+						onClick: () => u(a.A.ADMIN, !0),
+						selected: n && c,
+						text: r.fbt._("Distinguish as Admin and Sticky", null, {
+							hk: "3x8QWN"
 						})
 					}))
 				}, "DistinguishOptions", p.a);
@@ -28821,4 +28827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.9d369172206f004a91e3.js.map
+//# sourceMappingURL=ModerationPages.3c942140715036783fdf.js.map
