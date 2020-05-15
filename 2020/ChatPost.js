@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.2fe74996460708e7d5d4.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.431fe202a9d0aaf4bc7e.js
+// Retrieved at 5/14/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -282,6 +282,46 @@
 				coinIcon: "_2uSjw9de_n2QHtDV1EiJPd"
 			}
 		},
+		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, n) {
+			"use strict";
+			n("./node_modules/core-js/modules/es6.regexp.replace.js");
+			var s = n("./src/config.ts"),
+				o = n("./node_modules/lodash/memoize.js"),
+				r = n.n(o),
+				a = n("./node_modules/react/index.js"),
+				i = n.n(a),
+				c = n("./src/lib/constants/index.ts"),
+				l = n("./src/lib/lessComponent.tsx"),
+				d = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
+				m = n("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
+				u = n.n(m);
+			const p = l.a.div("Userpic", u.a);
+			t.a = r()(e => {
+				const {
+					userId: t
+				} = e, {
+					processingAvatarImageUrl: n
+				} = s.a, o = (e => e.replace(c.vb.Account + "_", ""))(t), {
+					avatar: r,
+					color: a
+				} = (e => {
+					const t = d.length,
+						n = parseInt(e, 36),
+						s = n % 20 + 1,
+						o = Math.floor(n / 20) % t;
+					return {
+						avatar: ("0" + s).slice(-2),
+						color: d[o]
+					}
+				})(o), l = "".concat(n, "/avatar_default_").concat(r, "_").concat(a, ".png");
+				return i.a.createElement(p, {
+					style: {
+						backgroundImage: "url(".concat(l, ")"),
+						backgroundColor: "#".concat(a)
+					}
+				})
+			})
+		},
 		"./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_3SwKz63oDhqTWK_aG-xnXF",
@@ -300,47 +340,17 @@
 				r = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/lib/lessComponent.tsx"),
-				c = (n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./src/config.ts")),
-				l = n("./node_modules/lodash/memoize.js"),
-				d = n.n(l),
-				m = n("./src/lib/constants/index.ts"),
-				u = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
-				p = n("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
-				h = n.n(p);
-			const C = i.a.div("Userpic", h.a);
-			var g = d()(e => {
-					const {
-						userId: t
-					} = e, {
-						processingAvatarImageUrl: n
-					} = c.a, s = (e => e.replace(m.vb.Account + "_", ""))(t), {
-						avatar: r,
-						color: a
-					} = (e => {
-						const t = u.length,
-							n = parseInt(e, 36),
-							s = n % 20 + 1,
-							o = Math.floor(n / 20) % t;
-						return {
-							avatar: ("0" + s).slice(-2),
-							color: u[o]
-						}
-					})(s), i = "".concat(n, "/avatar_default_").concat(r, "_").concat(a, ".png");
-					return o.a.createElement(C, {
-						style: {
-							backgroundImage: "url(".concat(i, ")"),
-							backgroundColor: "#".concat(a)
-						}
-					})
-				}),
-				b = n("./src/reddit/icons/svgs/Redditor/index.tsx"),
-				v = n("./src/reddit/icons/svgs/Remove/index.tsx");
-			const f = i.a.img("Userpic", h.a),
-				_ = Object(a.c)({
+				c = n("./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx"),
+				l = n("./src/reddit/icons/svgs/Redditor/index.tsx"),
+				d = n("./src/reddit/icons/svgs/Remove/index.tsx"),
+				m = n("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
+				u = n.n(m);
+			const p = i.a.img("Userpic", u.a),
+				h = Object(a.c)({
 					account: e => e.user.account
 				}),
-				x = Object(r.b)(_);
-			t.a = i.a.wrapped(x(e => {
+				C = Object(r.b)(h);
+			t.a = i.a.wrapped(C(e => {
 				let {
 					account: t,
 					className: n,
@@ -348,37 +358,37 @@
 					isLivestreaming: r,
 					trash: a,
 					userId: i,
-					width: c
+					width: m
 				} = e;
-				const l = r ? 36 : 20,
-					d = {
-						height: s || l,
-						width: c || l,
-						minWidth: c || l
+				const h = r ? 36 : 20,
+					C = {
+						height: s || h,
+						width: m || h,
+						minWidth: m || h
 					};
 				return a ? o.a.createElement("div", {
 					className: n,
-					style: d
-				}, o.a.createElement(v.a, {
-					className: h.a.TrashIcon
+					style: C
+				}, o.a.createElement(d.a, {
+					className: u.a.TrashIcon
 				})) : i ? o.a.createElement("div", {
 					className: n,
-					style: d
-				}, t && t.accountIcon && t.id === i ? o.a.createElement(f, {
+					style: C
+				}, t && t.accountIcon && t.id === i ? o.a.createElement(p, {
 					src: t.accountIcon,
 					alt: "user icon"
-				}) : o.a.createElement(g, {
+				}) : o.a.createElement(c.a, {
 					userId: i
 				})) : o.a.createElement("div", {
 					className: n,
-					style: d
-				}, t && t.accountIcon ? o.a.createElement(f, {
+					style: C
+				}, t && t.accountIcon ? o.a.createElement(p, {
 					src: t.accountIcon,
 					alt: "user icon"
-				}) : o.a.createElement(b.a, {
-					className: h.a.ProfileIcon
+				}) : o.a.createElement(l.a, {
+					className: u.a.ProfileIcon
 				}))
-			}), "ChatIcon", h.a)
+			}), "ChatIcon", u.a)
 		},
 		"./src/reddit/components/CommentsChat/Comment/CollapsedComment/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2430,4 +2440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.2fe74996460708e7d5d4.js.map
+//# sourceMappingURL=ChatPost.431fe202a9d0aaf4bc7e.js.map
