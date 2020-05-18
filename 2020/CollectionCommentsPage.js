@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d3a9fc479fddace23e8b.js
-// Retrieved at 5/18/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.604d17c7aac097c3e1ea.js
+// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3364,16 +3364,16 @@
 			const jt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.Y
+						experimentName: _t.ab
 					});
-					return !(!t || Object(_t.pc)(t))
+					return !(!t || Object(_t.rc)(t))
 				},
 				wt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.X
+						experimentName: _t.Z
 					});
-					return !(!t || Object(_t.pc)(t))
+					return !(!t || Object(_t.rc)(t))
 				};
 			var Pt = s("./src/reddit/selectors/gild.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -16368,8 +16368,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.B
-				}) === n.J.Treatment
+					experimentName: n.D
+				}) === n.L.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -16383,8 +16383,8 @@
 			const a = Object(n.a)(i.I, i.H, (e, t) => e || t),
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: o.s
-				}), e => e === o.y.Enabled)
+					experimentName: o.t
+				}), e => e === o.A.Enabled)
 		},
 		"./src/reddit/selectors/experiments/commentsPageAd.ts": function(e, t, s) {
 			"use strict";
@@ -16396,9 +16396,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.C
+					experimentName: n.E
 				});
-				return !!t && !Object(n.pc)(t)
+				return !!t && !Object(n.rc)(t)
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16415,4 +16415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.d3a9fc479fddace23e8b.js.map
+//# sourceMappingURL=CollectionCommentsPage.604d17c7aac097c3e1ea.js.map

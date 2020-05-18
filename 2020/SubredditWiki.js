@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c16128583ed48863944b.js
-// Retrieved at 5/18/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.3bbbc62e7058bb6b0175.js
+// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -6179,9 +6179,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.W.Enabled === Object(r.c)(e, {
+			const i = e => s.Y.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.U
+				experimentName: s.W
 			})
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, n) {
@@ -6331,4 +6331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.c16128583ed48863944b.js.map
+//# sourceMappingURL=SubredditWiki.3bbbc62e7058bb6b0175.js.map
