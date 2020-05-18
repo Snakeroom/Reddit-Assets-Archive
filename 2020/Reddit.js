@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.60e32fa67c3834d477be.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3c9c65d8dc725a2b5a26.js
+// Retrieved at 5/18/2020, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -12501,32 +12501,35 @@
 		"./src/reddit/selectors/accountManager.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return m
-			})), s.d(t, "b", (function() {
 				return u
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "b", (function() {
 				return p
+			})), s.d(t, "c", (function() {
+				return h
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/lib/addQueryParams/index.ts"),
 				o = s("./src/reddit/constants/accountManager.ts"),
 				i = s("./src/reddit/constants/experiments.ts"),
-				c = s("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				d = s("./src/reddit/selectors/experiments/sso.ts"),
-				l = s("./src/reddit/selectors/responsiveSettings.ts");
-			const m = e => e.accountManagerModalData.actionSource,
-				u = e => e.accountManagerModalData.redirectUrl,
-				p = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, m, c.a, d.a, l.a, (e, t, s, a, c, d) => {
-					let l = "".concat(n.a.accountManagerOrigin).concat(e);
-					return a && (l = Object(r.a)(l, {
+				c = s("./src/reddit/selectors/experiments/changeUsername.ts"),
+				d = s("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				l = s("./src/reddit/selectors/experiments/sso.ts"),
+				m = s("./src/reddit/selectors/responsiveSettings.ts");
+			const u = e => e.accountManagerModalData.actionSource,
+				p = e => e.accountManagerModalData.redirectUrl,
+				h = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, u, d.a, l.a, c.a, m.a, (e, t, s, a, c, d, l) => {
+					let m = "".concat(n.a.accountManagerOrigin).concat(e);
+					return a && (m = Object(r.a)(m, {
 						[i.S]: a,
 						uiMode: t
-					})), c && (l = Object(r.a)(l, {
+					})), c && (m = Object(r.a)(m, {
 						[i.J]: c
-					})), d && (l = Object(r.a)(l, {
+					})), d && (m = Object(r.a)(m, {
+						[i.n]: d
+					})), l && (m = Object(r.a)(m, {
 						mweb_responsive_settings: "treatment"
-					})), e === o.b.Index || e === o.b.ChangePassword ? l : l = Object(r.a)(l, {
+					})), e === o.b.Index || e === o.b.ChangePassword ? m : m = Object(r.a)(m, {
 						actionSource: s
 					})
 				})
@@ -12718,4 +12721,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.60e32fa67c3834d477be.js.map
+//# sourceMappingURL=Reddit.3c9c65d8dc725a2b5a26.js.map
