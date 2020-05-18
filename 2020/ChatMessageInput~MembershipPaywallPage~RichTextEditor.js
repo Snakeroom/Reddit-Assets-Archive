@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.e3da7b21ba659e733736.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.6588e5e0672c70fd2e3e.js
+// Retrieved at 5/18/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -2536,6 +2536,8 @@
 				editorWrapper: "_2baJGEALPiEMZpWB2iWQs7",
 				mExpanded: "_1UhKfcyzvaWRtDdXZmzg6D",
 				userIcon: "_1wS6Q6S9RvAbzxaselfK2i",
+				CurrentUserIcon: "_1RdaOAYbtM4Zwt3M_YE8kp",
+				currentUserIcon: "_1RdaOAYbtM4Zwt3M_YE8kp",
 				hasInitialHeight: "_35E-zXyMmfsLI7nv_sBvFL",
 				hasInitialMinHeight: "_18GfdTZmF2EPjYSkBDE0WI",
 				noBorder: "HXDWn-rmYOwqGcGtz9AKm",
@@ -6262,7 +6264,8 @@
 				Ec = 20,
 				Sc = m.a.wrapped(gs.a, "FocusableContent", gc.a),
 				xc = m.a.div("Container", gc.a),
-				Cc = Object(l.b)(() => {
+				Cc = m.a.wrapped(ac.a, "CurrentUserIcon", gc.a),
+				Oc = Object(l.b)(() => {
 					const t = (() => Object(d.a)(t => t.uploads, (t, e) => Object(k.e)(k.b.RTE_MEDIA, e.rteState.editorKey), (t, e) => i()(t, t => t.key.startsWith(e))))();
 					return Object(d.c)({
 						editorUploads: t,
@@ -6276,7 +6279,7 @@
 					retryUpload: e => t(S.a(e)),
 					startUploads: (e, n, o) => t(S.b(e, n, o))
 				}));
-			class Oc extends c.Component {
+			class kc extends c.Component {
 				constructor(t) {
 					super(t), this.blockRenderMap = o.DefaultDraftBlockRenderMap.merge(ys, Cs, _n, Sr, kr, zr, sn), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
 						[v.BREAK_HEADER_ENTITY]: vo.b,
@@ -6789,7 +6792,7 @@
 						innerRef: this.setContainerRef
 					}, b && a.a.createElement("div", {
 						className: gc.a.userIcon
-					}, a.a.createElement(ac.a, null)), a.a.createElement(Sc, {
+					}, a.a.createElement(Cc, null)), a.a.createElement(Sc, {
 						className: Object(h.a)(d, {
 							[gc.a.showSubmitButton]: S,
 							[gc.a.mExpanded]: m,
@@ -6902,7 +6905,7 @@
 					}))
 				}
 			}
-			e.a = Cc(Object(Wr.b)(t => a.a.createElement(Oc, mc({
+			e.a = Oc(Object(Wr.b)(t => a.a.createElement(kc, mc({
 				key: t.rteState.editorKey
 			}, t))))
 		},
@@ -7953,4 +7956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.e3da7b21ba659e733736.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.6588e5e0672c70fd2e3e.js.map

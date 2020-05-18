@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f64690eee2243c609233.js
-// Retrieved at 5/18/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.23af54016ccfeb2366ae.js
+// Retrieved at 5/18/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "9842950-production"
+					SENTRY_RELEASE_VERSION: "0b62b86-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -3429,6 +3429,8 @@
 				FormFooter: "OQubMtSYxy2qH2Q1upQvp",
 				formFooter: "OQubMtSYxy2qH2Q1upQvp",
 				userIcon: "_1LJWM5yPEtZv26nvbB_mvr",
+				CurrentUserIcon: "_6R8kWvljXn9F_7IAh1RG4",
+				currentUserIcon: "_6R8kWvljXn9F_7IAh1RG4",
 				pending: "_1N53zdZlGyvjHMUoXkJa42",
 				focused: "_2sPOgUISlhUYTMcHhUPCTP"
 			}
@@ -3436,7 +3438,7 @@
 		"./src/reddit/components/CommentCreation/MarkdownCommentForm/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return ae
+				return ce
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
@@ -3552,15 +3554,16 @@
 				oe = j.a.wrapped(x.a, "HelpIcon", Y.a),
 				re = j.a.wrapped(G.a, "ResizableAutosizeTextarea", Y.a),
 				ie = j.a.wrapped(v.a, "FormFooter", Y.a),
-				ae = e => r.a.createElement(se, {
+				ae = j.a.wrapped(b.a, "CurrentUserIcon", Y.a),
+				ce = e => r.a.createElement(se, {
 					className: e.className,
 					onClick: e.onClick
 				}, r.a.createElement(oe, null)),
-				ce = 8,
-				le = 16,
-				de = j.a.div("Wrapper", Y.a),
-				ue = j.a.div("FormWrapper", Y.a),
-				pe = Object(a.b)(() => Object(c.c)({
+				le = 8,
+				de = 16,
+				ue = j.a.div("Wrapper", Y.a),
+				pe = j.a.div("FormWrapper", Y.a),
+				me = Object(a.b)(() => Object(c.c)({
 					activeModalId: V.a,
 					userName: e => e.user.account ? Object(Z.e)(e.user.account) : "",
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
@@ -3570,7 +3573,7 @@
 					cancelModalToggled: () => e(Object(q.i)(Object(U.a)(t.draftKey))),
 					helpModalToggled: () => e(Object(q.i)(h.b))
 				}));
-			class me extends r.a.Component {
+			class he extends r.a.Component {
 				constructor(e) {
 					super(e), this.textAreaRef = null, this.cancelForm = () => {
 						this.props.onCancel(), this.onBlur()
@@ -3681,7 +3684,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(i.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + ce + le + K.o : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + le + de + K.o : void 0
 				}
 				render() {
 					const {
@@ -3692,114 +3695,114 @@
 						disableAutofocus: i,
 						depth: a,
 						draft: c,
-						draftKey: g,
-						draftType: x,
-						errorMsgs: v,
-						pending: C,
-						language: E,
-						modalSeen: O,
-						submitButtonText: j,
-						isCommentBoxDesignEnabled: S,
-						isExpanded: _,
-						isTopLevelComment: k,
-						onSwitchMode: T,
-						userName: I
+						draftKey: b,
+						draftType: g,
+						errorMsgs: x,
+						pending: v,
+						language: C,
+						modalSeen: E,
+						submitButtonText: O,
+						isCommentBoxDesignEnabled: j,
+						isExpanded: S,
+						isTopLevelComment: _,
+						onSwitchMode: k,
+						userName: T
 					} = this.props, {
-						cancelModalText: P,
-						showError: M,
-						text: N,
-						breakOut: R,
-						wrapperHeight: L
-					} = this.state, D = Object(U.a)(g), A = c.draftType === J.c.edit;
-					return r.a.createElement(de, {
+						cancelModalText: I,
+						showError: P,
+						text: M,
+						breakOut: N,
+						wrapperHeight: R
+					} = this.state, L = Object(U.a)(b), D = c.draftType === J.c.edit;
+					return r.a.createElement(ue, {
 						"data-test-id": H.b,
 						className: Object(B.a)(o, {
-							[Y.a.isTopLevelComment]: k,
-							[Y.a.mExpanded]: _,
-							[Y.a.mRedesign]: S
+							[Y.a.isTopLevelComment]: _,
+							[Y.a.mExpanded]: S,
+							[Y.a.mRedesign]: j
 						}),
 						ref: this.setWrapperRef,
 						style: {
-							height: R ? L : void 0
+							height: N ? R : void 0
 						}
-					}, !S && k && r.a.createElement(te, null, r.a.createElement(ne, null, s.fbt._("Comment as {authorLink}", [s.fbt._param("authorLink", r.a.createElement(d.a, {
-						author: I,
+					}, !j && _ && r.a.createElement(te, null, r.a.createElement(ne, null, s.fbt._("Comment as {authorLink}", [s.fbt._param("authorLink", r.a.createElement(d.a, {
+						author: T,
 						isAdmin: !1,
 						isAdminEmeritus: !1,
 						isAuthorDeleted: !1,
 						isMod: !1,
 						isOp: !1
-					}, I))], {
+					}, T))], {
 						hk: "4pMWAk"
 					}))), r.a.createElement(y.a, {
-						breakOut: R,
+						breakOut: N,
 						depth: a,
-						isEditing: A
-					}, S && r.a.createElement("div", {
+						isEditing: D
+					}, j && r.a.createElement("div", {
 						className: Y.a.userIcon
-					}, r.a.createElement(b.a, null)), r.a.createElement(ue, {
+					}, r.a.createElement(ae, null)), r.a.createElement(pe, {
 						className: Object(B.a)({
-							[Y.a.pending]: C,
+							[Y.a.pending]: v,
 							[Y.a.focused]: c.hasFocus
 						})
 					}, r.a.createElement(re, {
 						innerRef: this.setTextAreaRef,
 						autoFocus: t && !i,
-						disabled: C,
+						disabled: v,
 						initialHeight: this.props.initialHeight,
 						onBlur: this.onBlur,
 						onChange: this.onChange,
 						onEditorResize: this.props.onEditorResize,
 						onFocus: this.onFocus,
 						onKeyDown: this.handleKeyDown,
-						placeholder: S ? s.fbt._("Add a comment", null, {
+						placeholder: j ? s.fbt._("Add a comment", null, {
 							hk: "39ZBm0"
 						}) : s.fbt._("What are your thoughts?", null, {
 							hk: "4or1AH"
 						}),
-						value: N
-					}), (!S || _) && r.a.createElement(ie, {
-						cancelButtonEnabled: x !== J.c.replyToPost,
+						value: M
+					}), (!j || S) && r.a.createElement(ie, {
+						cancelButtonEnabled: g !== J.c.replyToPost,
 						onSubmit: this.onSubmit,
 						onCancel: this.onCancel,
-						pending: C,
-						submitButtonText: j,
+						pending: v,
+						submitButtonText: O,
 						canSubmit: this.userHasEnteredText()
 					}, r.a.createElement(w, null, e => "compact" === e ? r.a.createElement(F, {
 						buttonRef: e => this.switchModeBtn = e,
-						onClick: () => T(Q.h.RICH_TEXT, N, g),
+						onClick: () => k(Q.h.RICH_TEXT, M, b),
 						isConverting: this.props.isConverting
 					}) : r.a.createElement("div", null, r.a.createElement($, {
 						innerRef: e => this.switchModeBtn = e,
-						onClick: () => T(Q.h.RICH_TEXT, N, g)
+						onClick: () => k(Q.h.RICH_TEXT, M, b)
 					}, "Switch to Fancy Pants Editor", this.props.isConverting && r.a.createElement(ee, {
 						sizePx: 12
-					})))), r.a.createElement(ae, {
+					})))), r.a.createElement(ce, {
 						onClick: this.props.helpModalToggled
-					})))), M && Object(f.c)(v), e === D && r.a.createElement(m.a, {
+					})))), P && Object(f.c)(x), e === L && r.a.createElement(m.a, {
 						actionText: s.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
 						cancelActionText: s.fbt._("keep", null, {
 							hk: "J0ER1"
 						}),
-						modalText: P,
+						modalText: I,
 						onConfirm: () => this.cancelForm(),
 						toggleModal: n,
 						trackClick: () => {}
 					}), e === h.b && r.a.createElement(h.a, {
-						language: E
+						language: C
 					}), e === l.qb && r.a.createElement(p.a, {
 						onSubmit: this.onSubmit,
-						modalSeen: O,
+						modalSeen: E,
 						withOverlay: !0
 					}), r.a.createElement(u.a, {
-						editKey: g,
-						hasValue: !!N
+						editKey: b,
+						hasValue: !!M
 					}))
 				}
 			}
-			t.b = pe(me)
+			t.b = me(he)
 		},
 		"./src/reddit/components/CommentCreation/NavigationModule/index.ts": function(e, t, n) {
 			"use strict";
@@ -12879,6 +12882,8 @@
 				editorWrapper: "_2baJGEALPiEMZpWB2iWQs7",
 				mExpanded: "_1UhKfcyzvaWRtDdXZmzg6D",
 				userIcon: "_1wS6Q6S9RvAbzxaselfK2i",
+				CurrentUserIcon: "_1RdaOAYbtM4Zwt3M_YE8kp",
+				currentUserIcon: "_1RdaOAYbtM4Zwt3M_YE8kp",
 				hasInitialHeight: "_35E-zXyMmfsLI7nv_sBvFL",
 				hasInitialMinHeight: "_18GfdTZmF2EPjYSkBDE0WI",
 				noBorder: "HXDWn-rmYOwqGcGtz9AKm",
@@ -16605,7 +16610,8 @@
 				ya = 20,
 				va = b.a.wrapped(ho.a, "FocusableContent", ha.a),
 				Ca = b.a.div("Container", ha.a),
-				Ea = Object(l.b)(() => {
+				Ea = b.a.wrapped(ca.a, "CurrentUserIcon", ha.a),
+				Oa = Object(l.b)(() => {
 					const e = (() => Object(d.a)(e => e.uploads, (e, t) => Object(j.e)(j.b.RTE_MEDIA, t.rteState.editorKey), (e, t) => i()(e, e => e.key.startsWith(t))))();
 					return Object(d.c)({
 						editorUploads: e,
@@ -16619,7 +16625,7 @@
 					retryUpload: t => e(v.a(t)),
 					startUploads: (t, n, s) => e(v.b(t, n, s))
 				}));
-			class Oa extends a.Component {
+			class ja extends a.Component {
 				constructor(e) {
 					super(e), this.blockRenderMap = s.DefaultDraftBlockRenderMap.merge(xo, Eo, Pn, vr, jr, Vr, on), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
 						[_.BREAK_HEADER_ENTITY]: Ss.b,
@@ -17132,7 +17138,7 @@
 						innerRef: this.setContainerRef
 					}, g && c.a.createElement("div", {
 						className: ha.a.userIcon
-					}, c.a.createElement(ca.a, null)), c.a.createElement(va, {
+					}, c.a.createElement(Ea, null)), c.a.createElement(va, {
 						className: Object(m.a)(d, {
 							[ha.a.showSubmitButton]: v,
 							[ha.a.mExpanded]: b,
@@ -17245,7 +17251,7 @@
 					}))
 				}
 			}
-			t.a = Ea(Object(Wr.b)(e => c.a.createElement(Oa, ba({
+			t.a = Oa(Object(Wr.b)(e => c.a.createElement(ja, ba({
 				key: e.rteState.editorKey
 			}, e))))
 		},
@@ -31120,4 +31126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.f64690eee2243c609233.js.map
+//# sourceMappingURL=PostCreation.23af54016ccfeb2366ae.js.map
