@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e127c664b848a064073b.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.88ecca81313dae1807ca.js
+// Retrieved at 5/18/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -2593,7 +2593,7 @@
 							child: {
 								id: t,
 								estHeight: _(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(E.t)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(E.v)()),
 								render: t => {
 									let {
 										className: n
@@ -5828,150 +5828,159 @@
 		},
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "t", (function() {
-				return o
-			})), n.d(t, "e", (function() {
+			n.d(t, "v", (function() {
 				return c
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "e", (function() {
 				return d
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "f", (function() {
 				return l
 			})), n.d(t, "r", (function() {
 				return m
-			})), n.d(t, "p", (function() {
-				return u
-			})), n.d(t, "j", (function() {
-				return p
-			})), n.d(t, "k", (function() {
-				return b
-			})), n.d(t, "h", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return g
-			})), n.d(t, "g", (function() {
-				return x
-			})), n.d(t, "o", (function() {
-				return f
-			})), n.d(t, "l", (function() {
-				return v
-			})), n.d(t, "n", (function() {
-				return y
-			})), n.d(t, "a", (function() {
-				return E
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "c", (function() {
-				return C
-			})), n.d(t, "m", (function() {
-				return O
 			})), n.d(t, "s", (function() {
+				return u
+			})), n.d(t, "q", (function() {
+				return p
+			})), n.d(t, "j", (function() {
+				return b
+			})), n.d(t, "k", (function() {
+				return h
+			})), n.d(t, "h", (function() {
+				return g
+			})), n.d(t, "i", (function() {
+				return x
+			})), n.d(t, "g", (function() {
+				return f
+			})), n.d(t, "p", (function() {
+				return v
+			})), n.d(t, "l", (function() {
+				return y
+			})), n.d(t, "o", (function() {
+				return E
+			})), n.d(t, "u", (function() {
+				return _
+			})), n.d(t, "m", (function() {
+				return C
+			})), n.d(t, "a", (function() {
+				return O
+			})), n.d(t, "b", (function() {
 				return j
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return k
+			})), n.d(t, "n", (function() {
+				return N
+			})), n.d(t, "t", (function() {
+				return w
+			})), n.d(t, "d", (function() {
+				return P
 			}));
-			var s = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts");
-			const a = (e, t) => {
+			var s = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				r = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				a = n("./src/reddit/selectors/telemetry.ts");
+			const i = (e, t) => {
 					if (t) {
-						const n = r.media(e, t.post.id);
+						const n = a.media(e, t.post.id),
+							s = {
+								id: t.post.subreddit.id,
+								name: t.post.subreddit.name
+							};
 						if (n) {
 							n.streamPublicId = t.stream.stream_id;
-							const r = Object(s.h)(e, {
+							const s = Object(r.h)(e, {
 								streamIdFromPath: t.post.id
 							});
-							r === s.a.LIVE ? n.type = "stream_live" : r === s.a.VOD ? n.type = "stream_vod" : r === s.a.UNAVAILABLE && (n.type = "stream_unavailable")
+							s === r.a.LIVE ? n.type = "stream_live" : s === r.a.VOD ? n.type = "stream_vod" : s === r.a.UNAVAILABLE && (n.type = "stream_unavailable")
 						}
 						return {
-							post: r.post(e, t.post.id),
+							post: a.post(e, t.post.id),
 							media: n,
-							subreddit: r.subreddit(e)
+							subreddit: s
 						}
 					}
 					return {
-						subreddit: r.subreddit(e)
+						subreddit: a.subreddit(e)
 					}
 				},
-				i = e => ({
+				o = e => ({
 					correlationId: e.publicAccessNetwork.theaterSettings.correlationId
 				}),
-				o = () => e => Object.assign({
+				c = () => e => Object.assign({
 					source: "stream_du",
 					action: "view",
 					noun: "stream_du"
-				}, a(e)),
-				c = () => e => Object.assign({
+				}, i(e)),
+				d = () => e => Object.assign({
 					source: "stream_du",
 					action: "click",
 					noun: "show_less"
-				}, a(e)),
-				d = (e, t) => n => Object.assign({
+				}, i(e)),
+				l = (e, t) => n => Object.assign({
 					source: "stream_du",
 					action: "click",
 					noun: "rpan",
 					actionInfo: {
 						position: t || 0
 					}
-				}, a(n, e)),
-				l = e => t => Object.assign({
+				}, i(n, e)),
+				m = e => t => Object.assign({
 					source: "stream_player",
 					action: "fail",
 					noun: "stream"
-				}, i(t), e && Object.assign({}, a(t, e))),
-				m = e => t => Object.assign({
+				}, o(t), e && Object.assign({}, i(t, e))),
+				u = e => t => Object.assign({
 					source: "stream_player",
 					action: "play",
 					noun: "stream"
-				}, i(t), a(t, e)),
-				u = e => t => Object.assign({
+				}, o(t), i(t, e)),
+				p = e => t => Object.assign({
 					source: "stream_player",
 					action: "complete",
 					noun: "stream"
-				}, i(t), a(t, e)),
-				p = e => t => Object.assign({
-					source: "stream_player",
-					action: "click",
-					noun: "share_video"
-				}, i(t), a(t, e)),
+				}, o(t), i(t, e)),
 				b = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
-					noun: "upvote"
-				}, i(t), a(t, e)),
+					noun: "share_video"
+				}, o(t), i(t, e)),
 				h = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
-					noun: "downvote"
-				}, i(t), a(t, e)),
+					noun: "upvote"
+				}, o(t), i(t, e)),
 				g = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
+					noun: "downvote"
+				}, o(t), i(t, e)),
+				x = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
 					noun: "report"
-				}, i(t), a(t, e)),
-				x = e => t => {
-					const n = Object(s.k)(t, e);
+				}, o(t), i(t, e)),
+				f = e => t => {
+					const n = Object(r.k)(t, e);
 					return Object.assign({
 						source: "stream_player",
 						action: "click",
 						noun: "chat"
-					}, a(t, n))
+					}, i(t, n))
 				},
-				f = e => t => {
-					const n = Object(s.k)(t, e);
+				v = e => t => {
+					const n = Object(r.k)(t, e);
 					return Object.assign({
 						source: "stream_chat",
 						action: "click",
 						noun: "send_chat"
-					}, a(t, n))
+					}, i(t, n))
 				},
-				v = (e, t) => n => Object.assign({
+				y = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
 					targetSubreddit: {
 						name: e.name.toLowerCase()
 					}
-				}, a(n, t)),
-				y = (e, t, n) => s => Object.assign({
+				}, i(n, t)),
+				E = (e, t, n) => n => Object.assign({
 					source: "stream_player",
 					action: "scrub",
 					noun: "video",
@@ -5979,37 +5988,54 @@
 						scrubbing_start_ms: e,
 						scrubbing_end_ms: t
 					}
-				}, i(s), a(s, n)),
-				E = e => t => Object.assign({
+				}, o(n)),
+				_ = e => t => Object.assign({
+					source: "post",
+					action: "view",
+					noun: "post",
+					profile: a.profile(t),
+					screen: a.screen(t)
+				}, i(t, e)),
+				C = e => e => {
+					const t = i(e);
+					return !Object(s.e)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+						source: "post",
+						action: "consume",
+						noun: "post",
+						profile: a.profile(e),
+						screen: a.screen(e)
+					}, t)
+				},
+				O = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "close"
-				}, a(t, e)),
-				_ = e => t => Object.assign({
+				}, i(t, e)),
+				j = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "pause"
-				}, a(t, e)),
-				C = e => t => Object.assign({
-					source: "stream_player",
-					action: "click",
-					noun: "play"
-				}, a(t, e)),
-				O = e => t => Object.assign({
-					source: "stream_player",
-					action: "mute",
-					noun: "volume"
-				}, a(t, e)),
-				j = e => t => Object.assign({
-					source: "stream_player",
-					action: "unmute",
-					noun: "volume"
-				}, a(t, e)),
+				}, i(t, e)),
 				k = e => t => Object.assign({
 					source: "stream_player",
 					action: "click",
+					noun: "play"
+				}, i(t, e)),
+				N = e => t => Object.assign({
+					source: "stream_player",
+					action: "mute",
+					noun: "volume"
+				}, i(t, e)),
+				w = e => t => Object.assign({
+					source: "stream_player",
+					action: "unmute",
+					noun: "volume"
+				}, i(t, e)),
+				P = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
 					noun: "replay_video"
-				}, a(t, e))
+				}, i(t, e))
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -7248,11 +7274,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Wb.Enabled === Object(r.c)(e, {
+			const a = e => s.Yb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Rb
+				experimentName: s.Tb
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.e127c664b848a064073b.js.map
+//# sourceMappingURL=Subreddit.88ecca81313dae1807ca.js.map

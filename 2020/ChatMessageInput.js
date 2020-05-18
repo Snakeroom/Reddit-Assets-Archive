@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.b4b1212e32a6ea7cc716.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.431ad8737d8bed982aa8.js
+// Retrieved at 5/18/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -548,7 +548,7 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, T.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(y.o)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(y.p)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -1067,4 +1067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.b4b1212e32a6ea7cc716.js.map
+//# sourceMappingURL=ChatMessageInput.431ad8737d8bed982aa8.js.map

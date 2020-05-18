@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.411b15645da2ed46793f.js
-// Retrieved at 5/18/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.68376bb1e30feb0c54ec.js
+// Retrieved at 5/18/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -4833,13 +4833,13 @@
 								experimentEligibilitySelector: y.a,
 								experimentName: _.cb
 							});
-							return !(!t || Object(_.rc)(t))
+							return !(!t || Object(_.tc)(t))
 						})(s)) && ("repeat_purchaser" !== r.dealInfo.type || (e => {
 							const t = Object(y.c)(e, {
 								experimentEligibilitySelector: y.a,
 								experimentName: _.bb
 							});
-							return !(!t || Object(_.rc)(t))
+							return !(!t || Object(_.tc)(t))
 						})(s)) && (e(C({
 							packageId: t
 						})), e(Object(d.i)(i.a.GOLD_TARGETED_OFFER_MODAL))) : c.c.captureMessage("Tried to show targeted offer, but could not find package id: ".concat(t))
@@ -7401,7 +7401,7 @@
 				}, (e, t, n, s, r) => !!r && !e && !n && s && !Object(ae.e)(t)),
 				Ie = Object(Oe.a)((e, t) => Object(ge.c)(e, {
 					experimentEligibilitySelector: e => Ee(e, t),
-					experimentName: Q.Qb
+					experimentName: Q.Sb
 				}), _e.a);
 			var Se, ve = n("./src/reddit/selectors/frontpage.ts"),
 				Te = n("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -7525,10 +7525,10 @@
 					if (!n || !r) return "";
 					const o = e.posts.models[t].title,
 						c = function(e) {
-							return Object(d.a)(e, Q.cc, Q.ec)
+							return Object(d.a)(e, Q.ec, Q.gc)
 						};
 					let i;
-					switch (o.length >= Q.bc ? i = Object(fe.h)(e) : o.length <= Q.dc && (i = Object(fe.m)(e)), i) {
+					switch (o.length >= Q.dc ? i = Object(fe.h)(e) : o.length <= Q.fc && (i = Object(fe.m)(e)), i) {
 						case Q.rb.TruncTitleSubBrand:
 							return "".concat(c(o), " - ").concat(n.name, " - Reddit");
 						case Q.rb.TruncTitleReddit:
@@ -19176,7 +19176,7 @@
 								experimentEligibilitySelector: e => Object(R.H)(e),
 								experimentName: O.hb
 							});
-							return Object(O.rc)(t) ? void 0 : t
+							return Object(O.tc)(t) ? void 0 : t
 						})(V) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: a
@@ -23052,7 +23052,7 @@
 								experimentName: o.s,
 								expEventOverride: t
 							});
-							return !!(Object(o.rc)(n) ? void 0 : n)
+							return !!(Object(o.tc)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -27361,7 +27361,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: r.experiment(o, s.mc),
+					experiment: r.experiment(o, s.oc),
 					post: r.post(o, e),
 					media: r.media(o, e),
 					profile: r.profile(o),
@@ -27373,7 +27373,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: r.experiment(t, s.mc),
+					experiment: r.experiment(t, s.oc),
 					post: r.post(t, e),
 					profile: r.profile(t),
 					subreddit: r.subreddit(t),
@@ -50451,7 +50451,7 @@
 					experimentEligibilitySelector: e => Object(o.H)(e),
 					experimentName: s.ib
 				});
-				return Object(s.rc)(t) ? void 0 : t
+				return Object(s.tc)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(e, t, n) {
@@ -50491,34 +50491,40 @@
 		},
 		"./src/reddit/selectors/experiments/publicAccessNetwork.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "e", (function() {
 				return o
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return i
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return a
+			})), n.d(t, "d", (function() {
+				return d
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.Nb.Enabled === Object(r.c)(e, {
+			const o = e => s.Rb.Enabled === Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.Pb
+				}),
+				c = e => s.Nb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Gb
 				}),
-				c = e => s.Xb.Enabled === Object(r.c)(e, {
+				i = e => s.Zb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Sb
+					experimentName: s.Ub
 				}),
-				i = e => s.Yb.Enabled === Object(r.c)(e, {
+				a = e => s.ac.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Tb
+					experimentName: s.Vb
 				}),
-				a = (e, t, n) => {
+				d = (e, t, n) => {
 					const o = n(e, t);
-					return !(!o || !o.meter) && (o.meter.enabled && i(e) && s.pc.Enabled === Object(r.c)(e, {
+					return !(!o || !o.meter) && (o.meter.enabled && a(e) && s.rc.Enabled === Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.nc
+						experimentName: s.pc
 					}))
 				}
 		},
@@ -50553,9 +50559,9 @@
 					experimentName: r.U,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === r.hc.NoCommunityWidgets,
-				l = e => e === r.hc.NoRulesModerators,
-				b = e => e === r.hc.RelatedPostsDu
+				u = e => e === r.jc.NoCommunityWidgets,
+				l = e => e === r.jc.NoRulesModerators,
+				b = e => e === r.jc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, n) {
 			"use strict";
@@ -50564,7 +50570,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts");
 			const r = e => {
-				if (!Object(s.rc)(e)) return e || void 0
+				if (!Object(s.tc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
@@ -52015,4 +52021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.411b15645da2ed46793f.js.map
+//# sourceMappingURL=Governance~Reddit.68376bb1e30feb0c54ec.js.map
