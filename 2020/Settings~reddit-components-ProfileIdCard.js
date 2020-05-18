@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.3d6a724609f6ed3e4ab8.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.911b899925f8a32932b3.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -214,13 +214,13 @@
 				}).apply(this, arguments)
 			}
 			const D = Object(_.c)({
-					language: S.R
+					language: S.Q
 				}),
 				M = c.a.div("Container", k.a),
 				W = c.a.div("Body", k.a),
 				F = c.a.h5("Title", k.a),
 				R = c.a.span("Label", k.a);
-			class K extends o.a.Component {
+			class z extends o.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -251,19 +251,19 @@
 					}))
 				}
 			}
-			var z = Object(v.b)(D, e => ({
+			var K = Object(v.b)(D, e => ({
 					toggleTooltip: t => e(Object(B.h)({
 						tooltipId: t
 					}))
-				}))(Object(O.b)(K)),
+				}))(Object(O.b)(z)),
 				A = n("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				H = n.n(A);
 			const G = Object(_.a)(w.j, (e, t) => {
 					let {
 						profileName: n
 					} = t;
-					return Object(S.kb)(e, n)
-				}, S.R, (e, t, n) => ({
+					return Object(S.jb)(e, n)
+				}, S.Q, (e, t, n) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					language: n,
 					postKarma: t ? t.postKarma : 0,
@@ -294,7 +294,7 @@
 					}, [r.fbt._plural(i, "number", Object(E.b)(s, !0))], {
 						hk: "26iPTL"
 					});
-					return o.a.createElement(J, null, o.a.createElement(z, {
+					return o.a.createElement(J, null, o.a.createElement(K, {
 						icon: o.a.createElement(N.a, {
 							className: H.a.icon,
 							key: "karma"
@@ -305,7 +305,7 @@
 						}),
 						tooltipId: l,
 						tooltip: "".concat(m, "\n").concat(u)
-					}), o.a.createElement(z, {
+					}), o.a.createElement(K, {
 						icon: o.a.createElement(P.a, {
 							className: H.a.icon,
 							key: "cakeDay"
@@ -316,7 +316,7 @@
 						}),
 						tooltipId: d,
 						tooltip: Object(y.d)(a, t)
-					}), c > 0 && o.a.createElement(z, {
+					}), c > 0 && o.a.createElement(K, {
 						icon: o.a.createElement(j.a, {
 							className: H.a.icon,
 							key: "followers"
@@ -511,7 +511,7 @@
 							backgroundImage: "url(".concat(e, ")")
 						}
 					}) : null;
-					return n && Object(c.f)(n) === l ? s.a.createElement(i.a, {
+					return n && Object(c.e)(n) === l ? s.a.createElement(i.a, {
 						altText: a.fbt._("{userName} banner image", [a.fbt._param("userName", l)], {
 							hk: "1PcEBS"
 						}),
@@ -574,7 +574,7 @@
 						isNSFW: r,
 						userName: d
 					});
-					return t && Object(l.f)(t) === d ? s.a.createElement(i.a, {
+					return t && Object(l.e)(t) === d ? s.a.createElement(i.a, {
 						altText: a.fbt._("{userName} avatar image", [a.fbt._param("userName", d)], {
 							hk: "1LJxYE"
 						}),
@@ -594,8 +594,8 @@
 				s = n("./src/reddit/actions/preferences.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = Object(r.c)({
-					currentUser: o.j,
-					hideNSFWPref: o.A
+					currentUser: o.i,
+					hideNSFWPref: o.z
 				}),
 				c = Object(a.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(s.z)(t, n))
@@ -744,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.3d6a724609f6ed3e4ab8.js.map
+//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.911b899925f8a32932b3.js.map

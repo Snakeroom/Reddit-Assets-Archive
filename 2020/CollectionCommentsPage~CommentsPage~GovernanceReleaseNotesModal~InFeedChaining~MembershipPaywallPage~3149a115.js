@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.f30253ce6cf8b52e4899.js
-// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.51371cdd049a638bbb82.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -325,17 +325,17 @@
 					fill: "#FFF",
 					d: "M13.43,13.02125 C12.5683333,13.02125 11.8675,12.3204167 11.8675,11.45875 C11.8675,10.5970833 12.5683333,9.89583333 13.43,9.89583333 C14.2916667,9.89583333 14.9925,10.5970833 14.9925,11.45875 C14.9925,12.3204167 14.2916667,13.02125 13.43,13.02125 M13.705,15.5875 C12.63875,16.6525 10.595,16.735 9.99416667,16.735 C9.39333333,16.735 7.34958333,16.6525 6.28458333,15.5870833 C6.12625,15.4291667 6.12625,15.1725 6.28458333,15.0145833 C6.4425,14.8566667 6.69916667,14.85625 6.85708333,15.0145833 C7.52916667,15.6866667 8.96708333,15.9254167 9.99416667,15.9254167 C11.02125,15.9254167 12.4595833,15.6866667 13.1329167,15.0141667 C13.29125,14.85625 13.5475,14.8566667 13.7054167,15.0145833 C13.8633333,15.1729167 13.8633333,15.4291667 13.705,15.5875 M4.9925,11.45875 C4.9925,10.5970833 5.69375,9.89583333 6.55583333,9.89583333 C7.41666667,9.89583333 8.1175,10.5970833 8.1175,11.45875 C8.1175,12.32 7.41666667,13.0208333 6.55583333,13.0208333 C5.69375,13.0208333 4.9925,12.32 4.9925,11.45875 M19.99,9.89583333 C19.99,8.68791667 19.0108333,7.70833333 17.8025,7.70833333 C17.2129167,7.70833333 16.67875,7.94291667 16.2854167,8.32208333 C14.79,7.24333333 12.73,6.54625 10.4354167,6.46625 L11.4316667,1.77833333 L14.6875,2.47041667 C14.7270833,3.29791667 15.405,3.95833333 16.2425,3.95833333 C17.1054167,3.95833333 17.805,3.25875 17.805,2.39583333 C17.805,1.53291667 17.1054167,0.833333333 16.2425,0.833333333 C15.62875,0.833333333 15.1029167,1.19083333 14.8475,1.70541667 L11.2120833,0.932916667 C11.1108333,0.910833333 11.005,0.930833333 10.9183333,0.987083333 C10.83125,1.04375 10.7704167,1.1325 10.74875,1.23375 L9.65541667,6.37791667 C9.64916667,6.4075 9.65416667,6.43541667 9.65458333,6.46458333 C7.31875,6.52583333 5.21875,7.22458333 3.7,8.31833333 C3.30708333,7.94125 2.775,7.70833333 2.1875,7.70833333 C0.979166667,7.70833333 0,8.68791667 0,9.89583333 C0,10.785 0.530833333,11.5483333 1.29208333,11.8904167 C1.25833333,12.1079167 1.24,12.32875 1.24,12.5520833 C1.24,15.9179167 5.1575,18.6458333 9.99,18.6458333 C14.8225,18.6458333 18.74,15.9179167 18.74,12.5520833 C18.74,12.33 18.7220833,12.1108333 18.68875,11.895 C19.455,11.5545833 19.99,10.7883333 19.99,9.89583333"
 				}))),
-				j = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
-				H = s.n(j);
+				H = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
+				j = s.n(H);
 			const A = () => o.a.createElement("div", {
-				className: H.a.icon
+				className: j.a.icon
 			}, o.a.createElement(O, null));
 			var I = e => "string" == typeof e.postUrl ? o.a.createElement("a", {
 					href: e.postUrl,
-					className: H.a.button
+					className: j.a.button
 				}, o.a.createElement(A, null)) : o.a.createElement(R.a, {
 					to: e.postUrl,
-					className: H.a.button
+					className: j.a.button
 				}, o.a.createElement(A, null)),
 				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
@@ -872,8 +872,8 @@
 			var N = s("./src/reddit/selectors/media.ts"),
 				R = s("./src/reddit/selectors/platform.ts"),
 				O = s("./src/reddit/selectors/posts.ts"),
-				j = s("./src/reddit/selectors/user.ts"),
-				H = s("./src/reddit/selectors/video.ts"),
+				H = s("./src/reddit/selectors/user.ts"),
+				j = s("./src/reddit/selectors/video.ts"),
 				A = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
 				I = s.n(A),
 				U = s("./src/lib/lessComponent.tsx"),
@@ -1218,9 +1218,9 @@
 					d: "M29.3 20.2h-5.8c-.2 0-.5-.3-.5-.5 0-.3.2-.5.5-.5h5.8c.3 0 .5.2.5.5 0 .2-.3.5-.5.5zm0 4.3h-5.8c-.2 0-.5-.2-.5-.5s.2-.5.5-.5h5.8c.3 0 .5.2.5.5s-.3.5-.5.5zm0 4.3h-5.8c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5.8c.3 0 .5.2.5.5s-.3.5-.5.5zm-8.2-8.2c0 .3-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5v-1.9c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5v1.9zm0 4.4c0 .3-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5v2zm0 4.3c0 .3-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5v-1.9c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5v1.9zm8.7-13H18.2c-1.1 0-1.9.9-1.9 1.9v11.5c0 1.1.9 1.9 1.9 1.9h11.5c1.1 0 1.9-.9 1.9-1.9V18.2c.1-1-.8-1.9-1.8-1.9z"
 				}))),
 				Oe = s("./src/reddit/icons/svgs/VideoShopNow/index.m.less"),
-				je = s.n(Oe);
-			var He = e => l.a.createElement("svg", {
-					className: Object(u.a)(je.a.icon, e.className),
+				He = s.n(Oe);
+			var je = e => l.a.createElement("svg", {
+					className: Object(u.a)(He.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("g", {
@@ -1306,7 +1306,7 @@
 				"Learn More": l.a.createElement(Be, null),
 				"Play Now": l.a.createElement(Fe, null),
 				"See Menu": l.a.createElement(Re, null),
-				"Shop Now": l.a.createElement(He, null),
+				"Shop Now": l.a.createElement(je, null),
 				"Sign Up": l.a.createElement(Ue, null),
 				"View More": l.a.createElement(We, null),
 				"Watch Now": l.a.createElement(Je, null)
@@ -1407,17 +1407,17 @@
 				yt = 6e3,
 				xt = 100,
 				St = Object(c.b)(() => Object(d.c)({
-					isLoggedIn: j.I,
-					autoplayPref: j.b,
-					currentTime: H.d,
-					currentUser: j.j,
+					isLoggedIn: H.H,
+					autoplayPref: H.b,
+					currentTime: j.d,
+					currentUser: H.i,
 					isMutedPreference: N.a,
 					isOverlayOpen: R.h,
-					language: j.R,
-					loadTimes: H.f,
-					metadata: H.g,
+					language: H.Q,
+					loadTimes: j.f,
+					metadata: j.g,
 					postUrl: O.Q,
-					started: H.i,
+					started: j.i,
 					videoBufferTime: k,
 					videoBufferVariant: F,
 					volume: N.b
@@ -1792,7 +1792,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("d772799-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("8a13fd6-production", " ").concat(t);
 									return a && (s += " [".concat(T.mc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2215,4 +2215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.f30253ce6cf8b52e4899.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.51371cdd049a638bbb82.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7a2ed047cb0aa12f20f8.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.a558aa8d3d5b7dd0490c.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -545,10 +545,10 @@
 			const {
 				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = h.a.div("ButtonsContainer", A.a), H = h.a.div("Container", A.a), U = h.a.div("Description", A.a), I = h.a.div("PrivateSubredditDetails", A.a), G = h.a.div("PrivateSubredditDescription", A.a), q = h.a.h3("PrivateSubredditName", A.a), J = h.a.a("Link", A.a), V = h.a.wrapped(N.h, "LinkRouterButton", A.a), K = h.a.wrapped(N.g, "LinkButton", A.a), Y = h.a.wrapped(N.k, "SecondaryLinkRouterButton", A.a), Z = h.a.wrapped(N.j, "SecondaryLinkButton", A.a), X = h.a.wrapped(V, "GoHomeLinkButton", A.a), Q = h.a.img("Image", A.a), $ = h.a.img("ImagePlaceholder", A.a), ee = h.a.wrapped(V, "LeftLinkRouterButton", A.a), te = h.a.wrapped(K, "LeftLinkButton", A.a), ne = h.a.wrapped(Z, "SecondaryLeftLinkButton", A.a), se = h.a.wrapped(Y, "SecondaryLeftLinkRouterButton", A.a), re = h.a.h3("Title", A.a), oe = h.a.div("PageBody", A.a), ie = h.a.div("QuarantineMessageWrapper", A.a), ae = Object(d.c)({
-				isLoggedIn: M.H,
-				language: M.R,
+				isLoggedIn: M.G,
+				language: M.Q,
 				origin: z.j,
-				user: M.j
+				user: M.i
 			}), de = Object(L.t)(), le = Object(i.b)(ae, (e, t) => {
 				let {
 					subredditName: n
@@ -820,8 +820,8 @@
 				v = g.a.wrapped(u.i, "SecondaryButton", b.a),
 				x = g.a.wrapped(l.c, "StyledTooltip", b.a),
 				_ = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.bb)(e),
-					userIsSuspended: p.N
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.ab)(e),
+					userIsSuspended: p.M
 				});
 			t.a = Object(i.b)(_, (e, t) => {
 				let {
@@ -1359,10 +1359,10 @@
 						s = t.redditStyle || Object(g.m)(e, {
 							subredditId: n
 						}),
-						r = Object(y.T)(e);
+						r = Object(y.S)(e);
 					return s || r
 				},
-				nigtmode: y.T,
+				nigtmode: y.S,
 				subredditId: u.m,
 				topPostVariant: b.d
 			}));
@@ -1602,7 +1602,7 @@
 				f = n("./src/reddit/selectors/user.ts");
 			const b = n("./src/reddit/components/Snoobuilder/index.tsx").default,
 				g = Object(a.t)(),
-				y = Object(i.a)(a.B, f.W, (e, t) => {
+				y = Object(i.a)(a.B, f.V, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -1650,4 +1650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.7a2ed047cb0aa12f20f8.js.map
+//# sourceMappingURL=ProfileSnoobuilder.a558aa8d3d5b7dd0490c.js.map

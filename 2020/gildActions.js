@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.0546380f5674de1d5994.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.879064d6854e1e1f5818.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -28,8 +28,8 @@
 				return K
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				r = s("./src/lib/makeActionCreator/index.ts"),
-				i = s("./src/lib/messageIframeParent/index.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				r = s("./src/lib/messageIframeParent/index.ts"),
 				d = s("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				a = s("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				c = s("./src/reddit/actions/toaster.ts"),
@@ -65,14 +65,14 @@
 				q = s("./src/reddit/helpers/trackers/gild.ts"),
 				T = s("./src/telemetry/index.ts"),
 				E = s("./src/reddit/actions/gold/constants.ts");
-			const S = Object(r.a)(E.p),
-				G = Object(r.a)(E.o),
-				N = Object(r.a)(E.s),
-				L = (e, t) => async (s, r, i) => {
+			const S = Object(i.a)(E.p),
+				G = Object(i.a)(E.o),
+				N = Object(i.a)(E.s),
+				L = (e, t) => async (s, i, r) => {
 					let {
 						gqlContext: d
-					} = i;
-					const a = r().gild,
+					} = r;
+					const a = i().gild,
 						{
 							isOldReddit: c,
 							isLivestream: o
@@ -86,27 +86,27 @@
 								message: Object(v.d)(a.message, a.selectedAward, o),
 								nodeId: e
 							},
-							r = Object(C.a)(e) ? k : x,
-							i = await r(d(), {
+							i = Object(C.a)(e) ? k : x,
+							r = await i(d(), {
 								input: t
 							}, c);
 						let l = !1,
 							u = null,
 							b = null;
-						if (i.ok) {
-							const e = i.body;
+						if (r.ok) {
+							const e = r.body;
 							l = e.data.gild.ok, u = e.data.gild.fieldErrors, b = e.data.gild.errors
 						}
 						if (l) {
-							const t = i.body,
+							const t = r.body,
 								{
 									gild: n
 								} = t.data,
-								r = Object(C.a)(e) ? i.body.data.gild.postInfo : i.body.data.gild.comment,
+								i = Object(C.a)(e) ? r.body.data.gild.postInfo : r.body.data.gild.comment,
 								{
 									awardings: d,
 									treatmentTags: c
-								} = r;
+								} = i;
 							await s(K({
 								awardId: a.selectedAward.id,
 								awardings: d,
@@ -118,10 +118,10 @@
 						} else {
 							const e = u && u[0] && u[0].message,
 								t = b && b[0] && b[0].message,
-								r = e || t || n.fbt._("An unknown error occurred", null, {
+								i = e || t || n.fbt._("An unknown error occurred", null, {
 									hk: "2oAbwZ"
 								});
-							await s(U(r))
+							await s(U(i))
 						}
 					} catch (l) {
 						const e = l,
@@ -132,26 +132,26 @@
 					} finally {
 						Object(P.b)(P.a.GildingFlow)
 					}
-				}, D = Object(r.a)(E.r), M = Object(r.a)(E.n), B = () => async (e, t) => {
+				}, D = Object(i.a)(E.r), M = Object(i.a)(E.n), B = () => async (e, t) => {
 					e(M()), window.setTimeout(() => {
 						t().gild.api.pending && e(D())
 					}, 2e3)
-				}, R = Object(r.a)(E.m), U = e => async (t, s) => {
+				}, R = Object(i.a)(E.m), U = e => async (t, s) => {
 					await t(R(e)), t(Object(c.e)({
 						kind: b.b.Error,
 						duration: c.a,
 						text: e
 					}))
-				}, F = Object(r.a)(E.q), H = (e, t) => {
+				}, F = Object(i.a)(E.q), H = (e, t) => {
 					const {
 						id: s
 					} = t, n = Object(C.a)(s) ? Object(h.O)(e, {
 						postId: s
 					}) : Object(g.n)(e, {
 						commentId: s
-					}), r = Object(_.j)(e), i = e.gild, {
+					}), i = Object(_.i)(e), r = e.gild, {
 						isAnonymous: d
-					} = i, a = !d && r && (r.username || r.displayText) ? r.username || r.displayText : void 0, c = n ? n.author : void 0, o = Object(O.I)(e, {
+					} = r, a = !d && i && (i.username || i.displayText) ? i.username || i.displayText : void 0, c = n ? n.author : void 0, o = Object(O.I)(e, {
 						thingId: s
 					});
 					return F(Object.assign({}, t, {
@@ -160,32 +160,32 @@
 						subredditId: o && o.id
 					}))
 				}, K = e => async (t, s) => {
-					const r = s(),
+					const i = s(),
 						{
 							awardId: g,
 							id: _
 						} = e,
-						j = Object(p.a)(r, g);
-					if (Object(m.h)(r)) {
+						j = Object(p.a)(i, g);
+					if (Object(m.h)(i)) {
 						const e = "success.gild",
 							t = {},
 							s = j.icon32 ? j.icon32.url : j.icon.url;
-						t.awardId = g, t.awardIcon = s, Object(i.a)({
+						t.awardId = g, t.awardIcon = s, Object(r.a)({
 							type: e,
 							data: t
 						})
 					}
 					if (j.awardType === o.e.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(O.I)(r, {
+						const t = Object(O.I)(i, {
 								thingId: _
 							}),
-							s = t && Object(O.B)(r, {
+							s = t && Object(O.B)(i, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - j.coinPrice)
 					}
-					t(H(r, e)), (r.posts.instances[_] || []).forEach(s => {
-						t(H(r, Object.assign({}, e, {
+					t(H(i, e)), (i.posts.instances[_] || []).forEach(s => {
+						t(H(i, Object.assign({}, e, {
 							id: s
 						})))
 					});
@@ -195,7 +195,7 @@
 							hk: "2sIK9Y"
 						}),
 						y = j.coinPrice;
-					Object(T.a)(Object(q.viewSuccessAwardEvent)(_, y, j)(r)), t(Object(c.e)({
+					Object(T.a)(Object(q.viewSuccessAwardEvent)(_, y, j)(i)), t(Object(c.e)({
 						kind: b.b.SuccessCommunity,
 						text: w
 					})), setTimeout(() => {
@@ -203,7 +203,7 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const I = Object(C.a)(_) && Object(u.i)(Object(h.O)(r, {
+					const I = Object(C.a)(_) && Object(u.i)(Object(h.O)(i, {
 						postId: _
 					}));
 					await t(Object(a.a)());
@@ -219,8 +219,8 @@
 				return y
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				r = s("./src/lib/makeActionCreator/index.ts"),
-				i = s("./src/lib/sentry/index.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				r = s("./src/lib/sentry/index.ts"),
 				d = s("./src/lib/constants/index.ts"),
 				a = s("./src/lib/makeApiRequest/index.ts"),
 				c = s("./src/lib/omitHeaders/index.ts"),
@@ -284,24 +284,24 @@
 					active_sale: t,
 					coin_packages: s,
 					deals: n,
-					premium_packages: r
-				} = e.body, i = {
+					premium_packages: i
+				} = e.body, r = {
 					activeSaleConfig: f(t),
 					coinPackages: g(s),
 					dealCoinPackages: p(n),
-					premiumPackages: m(r)
+					premiumPackages: m(i)
 				};
 				return Object.assign({}, e, {
-					body: i
+					body: r
 				})
 			}
 			var O = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const _ = Object(r.a)(O.g),
-				j = Object(r.a)(O.h),
-				w = Object(r.a)(O.f),
+			const _ = Object(i.a)(O.g),
+				j = Object(i.a)(O.h),
+				w = Object(i.a)(O.f),
 				y = () => async (e, t, s) => {
 					let {
-						apiContext: r
+						apiContext: i
 					} = s;
 					e(_());
 					try {
@@ -312,12 +312,12 @@
 								method: d.ab.GET,
 								endpoint: s
 							}).then(u.c).then(h)
-						})(r());
+						})(i());
 						if (!t.ok) throw new Error(t.error && t.error.type || "Unknown error");
 						const s = t.body;
 						e(j(s))
 					} catch (b) {
-						i.c.captureException(b);
+						r.c.captureException(b);
 						const t = n.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
@@ -337,24 +337,24 @@
 			s.d(t, "a", (function() {
 				return n
 			})), s.d(t, "b", (function() {
-				return r
-			})), s.d(t, "c", (function() {
 				return i
+			})), s.d(t, "c", (function() {
+				return r
 			})), s.d(t, "d", (function() {
 				return d
 			}));
 			const n = 500,
-				r = 1800,
-				i = function(e) {
+				i = 1800,
+				r = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					return t ? e.coinPrice < n ? 0 : e.coinPrice < r ? 50 : 100 : 2048
+					return t ? e.coinPrice < n ? 0 : e.coinPrice < i ? 50 : 100 : 2048
 				},
 				d = function(e, t) {
 					let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-					const n = i(t, s);
+					const n = r(t, s);
 					return e.slice(0, n)
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.0546380f5674de1d5994.js.map
+//# sourceMappingURL=gildActions.879064d6854e1e1f5818.js.map

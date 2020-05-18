@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.8aa7a492a8422ae01f50.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.1eec105668e7bc467776.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, a) {
@@ -144,10 +144,10 @@
 				},
 				O = Object(r.c)({
 					changeEmailError: v.c,
-					currentEmail: v.m
+					currentEmail: v.l
 				}),
 				S = Object(o.b)(O, e => ({
-					changeEmail: t => e(Object(p.w)(t))
+					changeEmail: t => e(Object(p.t)(t))
 				}));
 			class N extends i.a.Component {
 				constructor() {
@@ -315,11 +315,11 @@
 				Q = a("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
 				V = a.n(Q);
 			const X = Object(r.c)({
-					emailDigests: v.l,
+					emailDigests: v.k,
 					isEmailPermissionRequired: z.e
 				}),
 				Y = Object(o.b)(X, e => ({
-					resendEmail: () => e(Object(p.y)()),
+					resendEmail: () => e(Object(p.v)()),
 					toggleEmailDigests: t => e(Object(D.F)({
 						emailDigests: t
 					}))
@@ -1032,4 +1032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailVerificationModals.8aa7a492a8422ae01f50.js.map
+//# sourceMappingURL=EmailVerificationModals.1eec105668e7bc467776.js.map

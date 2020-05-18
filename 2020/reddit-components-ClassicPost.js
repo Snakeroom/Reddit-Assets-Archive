@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3d5a43ca50a2d99ef2ba.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.601014b053d4ec6c6d78.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -976,9 +976,9 @@
 				I = Object(d.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.yb.TOPIC),
-					language: v.R,
+					language: v.Q,
 					post: f.O,
-					shouldOpenPostInNewTab: v.V,
+					shouldOpenPostInNewTab: v.U,
 					subreddit: f.bb
 				}),
 				M = Object(a.b)(I);
@@ -1474,19 +1474,19 @@
 					autoplayPref: x.b,
 					activeModalId: l.a,
 					crosspost: b.d,
-					currentUser: x.j,
+					currentUser: x.i,
 					isActive: b.j,
 					isChatPostExperiment: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
-					isLoggedIn: x.I,
+					isLoggedIn: x.H,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
 						return Object(b.r)(e, s)
 					},
-					language: x.R,
+					language: x.Q,
 					moderatorPermissions: m.i,
 					modModeEnabled: c.P,
 					post: b.O,
@@ -1497,7 +1497,7 @@
 					showEditFlair: u.a,
 					showMedia: c.r,
 					subredditOrProfile: b.bb,
-					userIsOp: x.ib,
+					userIsOp: x.hb,
 					flairStyleTemplate: c.R
 				},
 				f = (e, t) => {
@@ -1679,4 +1679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.3d5a43ca50a2d99ef2ba.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.601014b053d4ec6c6d78.js.map

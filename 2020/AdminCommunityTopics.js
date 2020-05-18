@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.3baabd0b3c5fd04d68f8.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.f3ffd5432201d3bd1f1f.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -150,7 +150,7 @@
 							subredditId: s
 						})
 					},
-					language: e => Object(R.R)(e)
+					language: e => Object(R.Q)(e)
 				}),
 				M = Object(r.b)(B, (e, t) => {
 					let {
@@ -306,7 +306,7 @@
 						subredditId: s
 					})
 				},
-				language: e => Object(m.R)(e)
+				language: e => Object(m.Q)(e)
 			});
 			class y extends i.a.Component {
 				constructor() {
@@ -882,4 +882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminCommunityTopics.3baabd0b3c5fd04d68f8.js.map
+//# sourceMappingURL=AdminCommunityTopics.f3ffd5432201d3bd1f1f.js.map

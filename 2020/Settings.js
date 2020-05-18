@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.57a4040b2b81a6af23b6.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.65c25cf3f2a6ada68523.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -1413,13 +1413,13 @@
 				j = "update_card_modal_id",
 				N = Object(l.c)({
 					cancelSubscriptionModalIsOpen: Object(x.b)("settings_optout_modal_id"),
-					goldExpiration: E.o,
-					hasAndroidSubscription: E.p,
-					hasIOSSubscription: E.s,
-					hasStripeSubscription: E.w,
-					hasPaypalSubscription: E.u,
-					isGold: E.q,
-					isPremiumSubscriber: E.r,
+					goldExpiration: E.n,
+					hasAndroidSubscription: E.o,
+					hasIOSSubscription: E.r,
+					hasStripeSubscription: E.v,
+					hasPaypalSubscription: E.t,
+					isGold: E.p,
+					isPremiumSubscriber: E.q,
 					updateCardModalIsOpen: Object(x.b)(j)
 				}),
 				P = Object(i.b)(N, e => ({
@@ -2459,7 +2459,7 @@
 				r = n("./src/reddit/selectors/subreddit.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(a.c)({
-				language: i.R,
+				language: i.Q,
 				userIsSubscriber: r.bb
 			}), (e, t) => {
 				let {
@@ -2909,7 +2909,7 @@
 					action: "view",
 					noun: "page",
 					goldPurchase: {
-						type: Object(a.r)(e) ? o.Cancel : o.GetPremium
+						type: Object(a.q)(e) ? o.Cancel : o.GetPremium
 					}
 				}),
 				d = () => e => Object.assign({}, i(e), {
@@ -3311,10 +3311,10 @@
 				x = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/reddit/controls/Button/index.tsx")),
 				E = n("./src/reddit/models/Sso/index.ts"),
 				w = n("./src/reddit/selectors/user.ts");
-			const S = Object(c.a)(w.jb, e => !(!e || !e.length)),
-				O = Object(c.a)(S, w.x, (e, t) => e && !t),
-				j = Object(c.a)(w.jb, e => e && e.find(e => e === E.a.Apple)),
-				N = Object(c.a)(w.jb, e => e && e.find(e => e === E.a.Google));
+			const S = Object(c.a)(w.ib, e => !(!e || !e.length)),
+				O = Object(c.a)(S, w.w, (e, t) => e && !t),
+				j = Object(c.a)(w.ib, e => e && e.find(e => e === E.a.Apple)),
+				N = Object(c.a)(w.ib, e => e && e.find(e => e === E.a.Google));
 			var P = n("./src/lib/validateEmail/index.ts"),
 				I = n("./src/reddit/actions/toaster.ts"),
 				M = n("./src/reddit/components/Settings/shared/FatInput.tsx"),
@@ -3328,13 +3328,13 @@
 			const F = Object(c.c)({
 					emailSent: e => e.user.accountSettings.sendResetEmail.api.emailSent,
 					username: e => {
-						const t = Object(w.j)(e);
-						return t && Object(L.f)(t) || ""
+						const t = Object(w.i)(e);
+						return t && Object(L.e)(t) || ""
 					}
 				}),
 				H = Object(r.b)(F, e => ({
-					changeEmail: t => e(Object(y.w)(t)),
-					sendResetEmail: t => e(Object(y.z)(t)),
+					changeEmail: t => e(Object(y.t)(t)),
+					sendResetEmail: t => e(Object(y.w)(t)),
 					showErrorToast: t => e(Object(I.e)({
 						duration: I.a,
 						kind: B.b.Error,
@@ -3465,14 +3465,14 @@
 					return n
 				};
 			const te = Object(c.c)({
-					hasVerifiedEmail: w.y,
-					isFPR: w.G,
+					hasVerifiedEmail: w.x,
+					isFPR: w.F,
 					shouldShowSSOCreatePasswordModal: O
 				}),
 				ne = Object(r.b)(te, e => ({
 					openChangeEmailModal: () => e(Object(k.i)(Y.a)),
 					openSSOCreatePasswordForEmailModal: () => e(Object(k.h)(Y.k)),
-					resendEmail: () => e(Object(y.y)())
+					resendEmail: () => e(Object(y.v)())
 				})),
 				se = e => {
 					let {
@@ -3815,7 +3815,7 @@
 			const at = Object(c.c)({
 				hasLinkedIdentities: S,
 				isInSSOSettingsVariant: nt.b,
-				userId: w.hb
+				userId: w.gb
 			});
 			var ot = Object(r.b)(at)(e => {
 					const [t, n] = Object(a.useState)(!1), s = e.hasLinkedIdentities || e.isInSSOSettingsVariant || t;
@@ -3843,15 +3843,15 @@
 						path: ce.b.ChangePassword
 					}),
 					deactivateModalOpen: Object(me.b)("deactivate_modal_id"),
-					email: w.m,
-					inRedesignBeta: w.C,
+					email: w.l,
+					inRedesignBeta: w.B,
 					optoutModalOpen: Object(me.b)("settins_optout_modal_id"),
 					shouldShowSSOCreatePasswordModal: O,
-					user: w.j
+					user: w.i
 				}),
 				gt = Object(r.b)(ht, (e, t) => ({
 					deactivate: t => {
-						e(Object(y.x)(t))
+						e(Object(y.u)(t))
 					},
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(k.h)(Y.j)),
 					optOut: async () => {
@@ -3860,7 +3860,7 @@
 							domain: pe.a.cookieDomain
 						}), await e(Object(v.b)()), window.location.href = "".concat(pe.a.redditUrl, "/prefs")
 					},
-					resendEmail: () => e(Object(y.y)()),
+					resendEmail: () => e(Object(y.v)()),
 					toggleChangePasswordModal: () => e(Object(_.b)()),
 					toggleDeactivateModal: () => e(Object(k.i)("deactivate_modal_id")),
 					toggleOptoutModal: () => e(Object(k.i)("settins_optout_modal_id"))
@@ -5525,13 +5525,13 @@
 				ya = n.n(ka);
 			const {
 				fbt: Ca
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), xa = 30, Ea = 200, wa = Object(c.a)(w.R, w.j, va.a, w.lb, fa.o, me.a, ga.a, (e, t, n, s, a, o, r) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), xa = 30, Ea = 200, wa = Object(c.a)(w.Q, w.i, va.a, w.kb, fa.o, me.a, ga.a, (e, t, n, s, a, o, r) => {
 				const i = t && t.profileId,
 					c = i && a[i] ? a[i].bannerBackgroundImage : void 0;
 				return {
 					awardedLastMonth: t.awardedLastMonth,
 					contentVisible: n.contentVisible,
-					currentUserName: Object(L.f)(t),
+					currentUserName: Object(L.e)(t),
 					currentUserUrl: t.url,
 					isEditProfileImagesInlineEnabled: r,
 					isEmployee: t.isEmployee,
@@ -5848,7 +5848,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const Xa = Object(c.c)({
 				userId: e => {
-					const t = Object(w.j)(e);
+					const t = Object(w.i)(e);
 					return t ? t.id : ""
 				}
 			});
@@ -6273,7 +6273,7 @@
 					userIsWhitelistedCreator: rn.F,
 					allowNavigationCallback: Fo.a,
 					isResponsiveSettingsEnabled: ps.a,
-					language: w.R,
+					language: w.Q,
 					prefs: e => e.user.prefs,
 					userHasSpecialMembership: e => {
 						if (e.economics.me.fetched) {
@@ -6498,4 +6498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.57a4040b2b81a6af23b6.js.map
+//# sourceMappingURL=Settings.65c25cf3f2a6ada68523.js.map

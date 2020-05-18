@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6b287ce8e5424c9e077d.js
-// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.803a1681976ada2d888c.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -530,7 +530,7 @@
 				D = Object(a.c)({
 					crowdControlLevelEnabled: C.d.enableCrowdControlLevel,
 					postLevelCrowdControlEnabled: e => j.Ib.Enabled === Object(N.c)(e, {
-						experimentEligibilitySelector: L.J,
+						experimentEligibilitySelector: L.I,
 						experimentName: j.Bb
 					})
 				});
@@ -1407,4 +1407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.6b287ce8e5424c9e077d.js.map
+//# sourceMappingURL=ModerationDropdowns.803a1681976ada2d888c.js.map

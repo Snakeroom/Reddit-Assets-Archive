@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.4d6257dff884741b8dd6.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.02ef1a6c767dc066d113.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
@@ -703,7 +703,7 @@
 			const {
 				fbt: Me
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(o.c)({
-				currentUser: Te.j,
+				currentUser: Te.i,
 				reportPageRules: e => e.reportPage.reportPageRules,
 				crisisFlowEnabled: Ne.b
 			}), Ae = Object(a.b)(Le);
@@ -901,4 +901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportPage.4d6257dff884741b8dd6.js.map
+//# sourceMappingURL=ReportPage.02ef1a6c767dc066d113.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.c7de9302ce80d6783d35.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.013a866c49a075003a37.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx": function(e, s, t) {
@@ -310,7 +310,7 @@
 				a = t("./src/reddit/selectors/subreddit.ts"),
 				c = t("./src/reddit/selectors/user.ts");
 			s.a = Object(r.b)(() => Object(n.c)({
-				language: c.R,
+				language: c.Q,
 				userIsSubscriber: a.bb
 			}), (e, s) => {
 				let {
@@ -337,4 +337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard.c7de9302ce80d6783d35.js.map
+//# sourceMappingURL=AuthorHovercard.013a866c49a075003a37.js.map

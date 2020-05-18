@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.24fb39fd08853a0704ec.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.634ae072f65590e26b3b.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -676,16 +676,16 @@
 				M = s("./src/reddit/components/Economics/Support/DonationAmount/async.tsx"),
 				L = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				A = s("./src/reddit/components/ExpandoButton/index.tsx"),
-				R = s("./src/reddit/components/Flatlist/index.tsx"),
-				B = s("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
+				B = s("./src/reddit/components/Flatlist/index.tsx"),
+				R = s("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
 				F = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				D = s("./src/reddit/components/ModActionsMenu/index.tsx"),
 				W = s("./src/reddit/components/ModerationPrompts/Prompt.tsx"),
-				V = s("./src/reddit/components/ModerationPrompts/Survey.tsx"),
-				H = s("./src/reddit/components/ModModeReports/index.tsx"),
-				z = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				K = s("./src/reddit/components/ModToolsFlatlist/index.tsx"),
-				U = s("./src/reddit/components/PopupPortal/index.tsx"),
+				H = s("./src/reddit/components/ModerationPrompts/Survey.tsx"),
+				V = s("./src/reddit/components/ModModeReports/index.tsx"),
+				U = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				z = s("./src/reddit/components/ModToolsFlatlist/index.tsx"),
+				K = s("./src/reddit/components/PopupPortal/index.tsx"),
 				G = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				Z = s("./src/reddit/components/PostBadges/index.tsx"),
 				J = s("./src/reddit/components/PostContainer/index.tsx"),
@@ -749,11 +749,11 @@
 				we = Object(n.b)(() => Object(i.c)({
 					activeModalId: O.a,
 					crosspost: w.d,
-					currentUser: P.j,
+					currentUser: P.i,
 					flairStyleTemplate: de.R,
 					isActive: w.j,
 					isExpanded: w.m,
-					language: P.R,
+					language: P.Q,
 					layout: de.N,
 					moderatorPermissions: E.i,
 					modModeEnabled: de.P,
@@ -764,7 +764,7 @@
 					post: w.O,
 					showEditFlair: j.a,
 					subredditOrProfile: w.bb,
-					userIsOp: P.ib
+					userIsOp: P.hb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -845,8 +845,8 @@
 						toggleCheckbox: we,
 						tooltipType: Pe,
 						sendEvent: ke
-					} = this.props, Se = !!de.media && de.media.type === f.n.RTJSON, Ie = ve && Se, Me = Object(X.b)(de.id, _), Le = Object(be.a)(P), Ae = Object(me.a)(P), Re = Object(ue.a)(P), Be = "-mod-actions-menu-".concat(de.id), Fe = "voting-arrows-".concat(de.id), De = !!n && Object(h.f)(n) === de.author, We = Object(z.c)(de), Ve = Object(B.a)("View--Reports", de.id, Pe), He = Object(z.a)(de), ze = !(_ || v || g), Ke = de.media && de.media.type === f.n.LIVEVIDEO, {
-						moderationPrompt: Ue
+					} = this.props, Se = !!de.media && de.media.type === f.n.RTJSON, Ie = ve && Se, Me = Object(X.b)(de.id, _), Le = Object(be.a)(P), Ae = Object(me.a)(P), Be = Object(ue.a)(P), Re = "-mod-actions-menu-".concat(de.id), Fe = "voting-arrows-".concat(de.id), De = !!n && Object(h.e)(n) === de.author, We = Object(U.c)(de), He = Object(R.a)("View--Reports", de.id, Pe), Ve = Object(U.a)(de), Ue = !(_ || v || g), ze = de.media && de.media.type === f.n.LIVEVIDEO, {
+						moderationPrompt: Ke
 					} = de, Ge = e => ke(Object(x.f)(de.id, e)), Ze = r.a.createElement(J.a, {
 						className: Object(c.a)(ge.a.compactPostStyles, _e.a.postContainer, Object(b.a)(this.props), t),
 						isOverlay: _,
@@ -885,9 +885,9 @@
 						model: de,
 						onVoteClick: l,
 						upvoteTooltipId: Fe
-					}), Ue && r.a.createElement(U.b, {
+					}), Ke && r.a.createElement(K.b, {
 						rightOf: Fe
-					}, "survey" === Ue ? r.a.createElement(V.a, {
+					}, "survey" === Ke ? r.a.createElement(H.a, {
 						post: de,
 						subredditName: le.name,
 						isOverlay: !!_
@@ -940,7 +940,7 @@
 						isOverlay: _,
 						tooltipType: Pe,
 						thing: de
-					})), ze && !Ke && r.a.createElement("div", null, r.a.createElement(S.a, {
+					})), Ue && !ze && r.a.createElement("div", null, r.a.createElement(S.a, {
 						className: _e.a.liveDiscussionIcon,
 						isMod: Le,
 						postId: de.postId
@@ -956,7 +956,7 @@
 						modModeEnabled: A,
 						numComments: de.numComments,
 						type: m.g.Compact
-					}), r.a.createElement(K.a, {
+					}), r.a.createElement(z.a, {
 						className: _e.a.modToolsFlatlist,
 						isOverlay: !1,
 						layout: w,
@@ -965,30 +965,30 @@
 						sendEvent: ke,
 						showIconsOnly: !0
 					}), Le && r.a.createElement(D.a, {
-						dropdownId: Be,
+						dropdownId: Re,
 						onClick: () => Ge("post_mod_action_menu")
-					}, r.a.createElement(R.b, null), r.a.createElement(q.a, {
+					}, r.a.createElement(B.b, null), r.a.createElement(q.a, {
 						canEditFlair: Ae && je,
 						hasModPostPerms: Le,
-						hasModFullPerms: Re,
+						hasModFullPerms: Be,
 						isOverlay: !1,
 						isPostAuthor: De,
 						language: j,
 						modModeEnabled: A,
 						post: de,
-						tooltipId: Be
+						tooltipId: Re
 					})), Le && We && !A && r.a.createElement(se.c, {
-						text: "".concat(He),
+						text: "".concat(Ve),
 						onClick: () => {
-							this.props.onOpenReportsDropdown(Ve), Ge("post_report_menu")
+							this.props.onOpenReportsDropdown(He), Ge("post_report_menu")
 						},
-						id: Ve
+						id: He
 					}, r.a.createElement(ae.a, {
 						model: de,
 						onIgnoreReports: () => {
 							re(), Ge(de.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
-						tooltipId: Ve
+						tooltipId: He
 					}), de.ignoreReports ? r.a.createElement(fe.a, null) : r.a.createElement(he.a, null)), r.a.createElement($.g, {
 						currentProfileName: s,
 						isCommentsPage: v,
@@ -1024,7 +1024,7 @@
 						isNotCardView: !0
 					}, de.callToAction)), A && Le && We && r.a.createElement("div", {
 						className: _e.a.compactPostRow
-					}, r.a.createElement(H.a, {
+					}, r.a.createElement(V.a, {
 						onIgnoreReports: re,
 						reportable: de
 					})), r.a.createElement(F.d, {
@@ -1156,9 +1156,9 @@
 				I = Object(d.c)({
 					isCurrentUserProfilePost: h.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.yb.TOPIC),
-					language: v.R,
+					language: v.Q,
 					post: h.O,
-					shouldOpenPostInNewTab: v.V,
+					shouldOpenPostInNewTab: v.U,
 					subreddit: h.bb
 				}),
 				M = Object(a.b)(I);
@@ -1189,9 +1189,9 @@
 					className: l
 				}, n.a.createElement(S, null, n.a.createElement(j, null, n.a.createElement(m.a, c)), L(a), a.source && n.a.createElement(b.a, {
 					post: a
-				}), R(e)), F(e)) : n.a.createElement(E, {
+				}), B(e)), F(e)) : n.a.createElement(E, {
 					className: l
-				}, n.a.createElement(j, null, n.a.createElement(m.a, c)), L(a), A(e), R(e))
+				}, n.a.createElement(j, null, n.a.createElement(m.a, c)), L(a), A(e), B(e))
 			});
 			const L = e => n.a.createElement(w, {
 					isCrosspost: !0,
@@ -1211,7 +1211,7 @@
 						className: y.a.mediaContainer
 					})))
 				},
-				R = e => {
+				B = e => {
 					const {
 						post: t
 					} = e, {
@@ -1222,9 +1222,9 @@
 						_1: "1 point"
 					}, [o.fbt._plural(s, "point count", Object(l.b)(s))], {
 						hk: "PNZhd"
-					})), n.a.createElement(k, null), n.a.createElement(C, null, B(e)))
+					})), n.a.createElement(k, null), n.a.createElement(C, null, R(e)))
 				},
-				B = e => {
+				R = e => {
 					const {
 						post: t,
 						shouldOpenPostInNewTab: s
@@ -1759,4 +1759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.24fb39fd08853a0704ec.js.map
+//# sourceMappingURL=reddit-components-CompactPost.634ae072f65590e26b3b.js.map

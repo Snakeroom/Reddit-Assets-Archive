@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.7bc0bcc3a59c5d333ee6.js
-// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.d0c5fb16a96451f897da.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "d772799-production"
+					SENTRY_RELEASE_VERSION: "8a13fd6-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -257,7 +257,7 @@
 						forwardedRef: t
 					}))),
 					A = Object(n.c)({
-						redditUserId: b.h,
+						redditUserId: b.g,
 						isMuxEnabled: u
 					});
 				return Object(a.b)(A, null, null, {
@@ -1047,7 +1047,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = Object(o.a)(j.a, {
 				playerName: "RPAN DU Video Player"
 			}), K = Object(a.b)(() => Object(n.c)({
-				isLoggedIn: x.I,
+				isLoggedIn: x.H,
 				isOverlayOpen: O.h,
 				location: (e, t) => {
 					let {
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.7bc0bcc3a59c5d333ee6.js.map
+//# sourceMappingURL=RpanListingUnit.d0c5fb16a96451f897da.js.map

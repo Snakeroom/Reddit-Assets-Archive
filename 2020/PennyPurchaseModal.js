@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f6c078e52c20b55eb633.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4225583e01dc539a79be.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -33,10 +33,10 @@
 				j = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				E = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
 				x = t("./src/reddit/components/PennyPurchaseModal/index.m.less"),
-				T = t.n(x);
+				k = t.n(x);
 
-			function k() {
-				return (k = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o])
@@ -53,7 +53,7 @@
 					coinBalance: v.d,
 					gildThingId: b.p,
 					isIframed: C.h,
-					nightmode: v.T,
+					nightmode: v.S,
 					savedCardsPending: b.t,
 					selectedAward: M.a,
 					selectedPayment: b.b,
@@ -61,8 +61,8 @@
 					stripeTokenPending: b.l,
 					paypalErrorMessage: b.c,
 					userName: e => {
-						const s = Object(v.j)(e);
-						return "u/".concat(Object(y.f)(s))
+						const s = Object(v.i)(e);
+						return "u/".concat(Object(y.e)(s))
 					}
 				}),
 				_ = Object(n.b)(w, (e, s) => ({
@@ -77,7 +77,7 @@
 				}), (e, s, t) => Object.assign({}, e, s, t, {
 					onCompletePurchaseClick: t => s.dispatchCompletePurchase(t, e.isIframed)
 				}));
-			class f extends a.a.Component {
+			class I extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
@@ -153,7 +153,7 @@
 					}))
 				}
 			}
-			const I = Object(d.a)(f);
+			const N = Object(d.a)(I);
 			s.default = _(Object(h.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -174,8 +174,8 @@
 						paddingTop: 12,
 						paddingBottom: 12
 					} : {});
-					return a.a.createElement(I, k({}, this.props, {
-						className: Object(l.a)(this.props.className, T.a.pennyPurchaseModal),
+					return a.a.createElement(N, T({}, this.props, {
+						className: Object(l.a)(this.props.className, k.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
 						onTryCloseModal: this.onTryCloseModal,
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.f6c078e52c20b55eb633.js.map
+//# sourceMappingURL=PennyPurchaseModal.4225583e01dc539a79be.js.map

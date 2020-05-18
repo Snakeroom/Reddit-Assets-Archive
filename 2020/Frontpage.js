@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.6aa9d6f2956609ff227d.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1f49376d23a6ef3f478f.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1436,10 +1436,10 @@
 				}
 			}), se = Object(b.c)({
 				countryMeta: K.b,
-				geopopular: q.n
+				geopopular: q.m
 			}), ne = Object(b.c)({
 				isInTrendingEntrypointExperiment: F.a,
-				isLoggedIn: q.I,
+				isLoggedIn: q.H,
 				isPopular: M.C,
 				isRpanDuVisible: e => Object(W.a)(e, {
 					listingName: Q.P
@@ -1619,7 +1619,7 @@
 					let {
 						listingName: s
 					} = t;
-					const n = Object(a.lb)(e);
+					const n = Object(a.kb)(e);
 					if (!n) return !1;
 					let c;
 					if (-1 === [o.P, "r/popular"].indexOf(s)) {
@@ -1930,4 +1930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.6aa9d6f2956609ff227d.js.map
+//# sourceMappingURL=Frontpage.1f49376d23a6ef3f478f.js.map

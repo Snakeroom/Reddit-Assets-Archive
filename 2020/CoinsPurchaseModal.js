@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.23ac72eb0c9a89d5271b.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal.b487b92740d16952a214.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, a, s) {
@@ -95,8 +95,8 @@
 				B = s("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				A = s("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx");
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function S() {
+				return (S = Object.assign || function(e) {
 					for (var a = 1; a < arguments.length; a++) {
 						var s = arguments[a];
 						for (var t in s) Object.prototype.hasOwnProperty.call(s, t) && (e[t] = s[t])
@@ -104,7 +104,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = Object(r.c)({
+			const L = Object(r.c)({
 					activePage: k.o,
 					allowNavigationCallback: e => {
 						const a = Object(O.a)(e);
@@ -115,7 +115,7 @@
 					dealCoinPackages: v.d,
 					gildThingId: k.p,
 					isIframed: E.h,
-					nightmode: M.T,
+					nightmode: M.S,
 					savedCardsPending: k.t,
 					selectedAward: j.a,
 					selectedPayment: k.b,
@@ -126,11 +126,11 @@
 					purchaseCatalogPending: v.g,
 					purchasePackageId: k.q,
 					userName: e => {
-						const a = Object(M.j)(e);
-						return "u/".concat(Object(x.f)(a))
+						const a = Object(M.i)(e);
+						return "u/".concat(Object(x.e)(a))
 					}
 				}),
-				D = Object(o.b)(S, (e, a) => ({
+				D = Object(o.b)(L, (e, a) => ({
 					closeModal: () => {
 						e(Object(m.e)()), e(Object(i.a)())
 					},
@@ -267,7 +267,7 @@
 						paddingTop: 12,
 						paddingBottom: 12
 					} : {});
-					return n.a.createElement(G, L({}, this.props, {
+					return n.a.createElement(G, S({}, this.props, {
 						className: Object(l.a)(this.props.className, w.a.coinPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -303,4 +303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal.23ac72eb0c9a89d5271b.js.map
+//# sourceMappingURL=CoinsPurchaseModal.b487b92740d16952a214.js.map

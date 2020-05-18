@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.1e67713e9c0b83beff98.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.05e14a7da7542e5e9efc.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -47,8 +47,8 @@
 				O = o("./src/reddit/selectors/subreddit.ts"),
 				_ = o("./src/reddit/selectors/user.ts"),
 				P = o("./src/reddit/components/ContentTooltip/index.tsx"),
-				j = o("./src/reddit/components/SubredditIcon/index.tsx"),
-				E = o("./src/reddit/controls/Button/index.tsx"),
+				E = o("./src/reddit/components/SubredditIcon/index.tsx"),
+				j = o("./src/reddit/controls/Button/index.tsx"),
 				v = o("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				y = o("./src/reddit/icons/svgs/Hide/index.tsx"),
 				N = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
@@ -69,7 +69,7 @@
 			var L = o("./src/reddit/components/AwardTooltip/index.m.less"),
 				A = o.n(L);
 			const R = Object(d.c)({
-					currentUser: _.j,
+					currentUser: _.i,
 					moderatorPermissions: (e, t) => {
 						let {
 							postOrComment: o
@@ -175,7 +175,7 @@
 						currentUser: t,
 						onClickPremium: o
 					} = this.props, s = e.awardSubType === f.c.Premium, i = !!t && t.isGold;
-					return s ? i ? null : n.a.createElement(E.e, {
+					return s ? i ? null : n.a.createElement(j.e, {
 						className: A.a.premiumCta,
 						onClick: o
 					}, r.fbt._("Get Premium", null, {
@@ -230,7 +230,7 @@
 						award: e
 					})), e.awardType === f.e.Community && i && n.a.createElement("div", {
 						className: A.a.subreddit
-					}, n.a.createElement(j.b, {
+					}, n.a.createElement(E.b, {
 						className: A.a.subredditIcon,
 						subredditOrProfile: i
 					}), "r/".concat(i.name)), e.awardType === f.e.Moderator && n.a.createElement("div", {
@@ -337,7 +337,7 @@
 				}),
 				_ = Object(d.a)(g, [r.a.Click, r.a.Keydown]),
 				P = Object(i.b)(O);
-			class j extends n.a.Component {
+			class E extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
@@ -415,7 +415,7 @@
 					}))
 				}
 			}
-			t.a = P(j)
+			t.a = P(E)
 		},
 		"./src/reddit/helpers/hasModFullPermissions/index.ts": function(e, t, o) {
 			"use strict";
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.1e67713e9c0b83beff98.js.map
+//# sourceMappingURL=AwardTooltip.05e14a7da7542e5e9efc.js.map

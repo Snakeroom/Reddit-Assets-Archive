@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.129eb9ab1ee4351a978f.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.6ddcbe7788d260984f7d.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -432,12 +432,12 @@
 			var Y = s("./src/reddit/constants/keycodes.ts"),
 				J = s("./src/reddit/layout/row/Inline/index.tsx"),
 				q = s("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
-				W = s.n(q);
-			const Z = Object(a.c)({
+				Q = s.n(q);
+			const W = Object(a.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: A
 			});
-			class Q extends o.a.Component {
+			class Z extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditInput: ""
@@ -460,7 +460,7 @@
 						props: e
 					} = this;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(J.a, null, o.a.createElement("input", {
-						className: W.a.input,
+						className: Q.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
 						placeholder: f.fbt._("r/community", null, {
@@ -471,19 +471,19 @@
 						"aria-label": f.fbt._("Hide", null, {
 							hk: "1BnFmX"
 						}),
-						className: W.a.hideButton,
+						className: Q.a.hideButton,
 						disabled: !this.canSubmitInput(),
 						onClick: this.submitInput
 					}, f.fbt._("Hide", null, {
 						hk: "1BnFmX"
 					}))), e.apiError && e.apiError.explanation && o.a.createElement("div", {
-						className: W.a.errorText
+						className: Q.a.errorText
 					}, e.apiError.explanation))
 				}
 			}
-			var U = Object(d.b)(Z, e => ({
+			var U = Object(d.b)(W, e => ({
 					hide: t => e(Object(m.a)(t))
-				}))(Object(w.c)(Q)),
+				}))(Object(w.c)(Z)),
 				X = s("./src/lib/lessComponent.tsx"),
 				z = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				$ = s("./src/lib/classNames/index.ts"),
@@ -637,7 +637,7 @@
 						match: s
 					} = t;
 					return Object(V.d)(s.path)
-				}, ke.h, ke.c, Ne.R, (e, t, s, r, i, o) => {
+				}, ke.h, ke.c, Ne.Q, (e, t, s, r, i, o) => {
 					const d = n()([...Object(c.a)(e)]),
 						a = Ie.t in d && d[Ie.t].toUpperCase(),
 						m = "string" == typeof a && a in l.Pb ? l.Pb[a] : l.Qb,
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing.129eb9ab1ee4351a978f.js.map
+//# sourceMappingURL=ModListing.6ddcbe7788d260984f7d.js.map

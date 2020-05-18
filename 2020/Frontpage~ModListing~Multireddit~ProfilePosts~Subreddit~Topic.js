@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.15f6ebb8a7c1a4a6964c.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.bc48d643d87a2171b631.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -233,13 +233,13 @@
 					postLayout: g.N,
 					redditStyle: g.A
 				}),
-				T = Object(a.b)(M, e => ({
+				I = Object(a.b)(M, e => ({
 					onListingLayoutChange: (t, s) => e(Object(m.v)(t, s)),
 					openDropdown: () => e(Object(p.h)({
 						tooltipId: k
 					}))
 				}));
-			class I extends r.a.Component {
+			class T extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -310,7 +310,7 @@
 					}), r.a.createElement(f.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = R(T(Object(u.c)(Object(l.a)(I))))
+			t.a = R(I(Object(u.c)(Object(l.a)(T))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -680,10 +680,10 @@
 						o = t.redditStyle || Object(b.m)(e, {
 							subredditId: s
 						}),
-						n = Object(y.T)(e);
+						n = Object(y.S)(e);
 					return o || n
 				},
-				nigtmode: y.T,
+				nigtmode: y.S,
 				subredditId: m.m,
 				topPostVariant: f.d
 			}));
@@ -856,7 +856,7 @@
 				n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.c)({
-				language: r.R
+				language: r.Q
 			});
 
 			function i(e) {
@@ -1286,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.15f6ebb8a7c1a4a6964c.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.bc48d643d87a2171b631.js.map

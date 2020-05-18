@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.948fcb1f4cc6e69c4828.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.3839d77135fbe7438abe.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -90,7 +90,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(p.fb)(e, {
+				user: (e, t) => Object(p.eb)(e, {
 					userName: t.username
 				})
 			});
@@ -135,7 +135,7 @@
 					})))
 				}
 			}
-			var J = Object(a.b)(V, (e, t) => {
+			var z = Object(a.b)(V, (e, t) => {
 					let {
 						username: r,
 						subredditId: n,
@@ -162,7 +162,7 @@
 						}
 					}
 				})(W),
-				z = r("./src/reddit/actions/userFlair.ts"),
+				J = r("./src/reddit/actions/userFlair.ts"),
 				X = r("./src/reddit/icons/svgs/Tag/index.tsx"),
 				G = r("./src/reddit/components/Hovercards/AuthorHovercard/ModFlairActions.m.less"),
 				$ = r.n(G);
@@ -170,7 +170,7 @@
 				fbt: ee
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), te = h.a.wrapped(X.a, "FlairIcon", $.a);
 			var re = Object(a.b)(null, (e, t) => ({
-					onToggleUserFlairModal: () => e(Object(z.p)(t.subredditId, t.username))
+					onToggleUserFlairModal: () => e(Object(J.p)(t.subredditId, t.username))
 				}))(e => s.a.createElement(k.a, {
 					role: "button",
 					onClick: () => {
@@ -298,7 +298,7 @@
 						},
 						getEventFactory: e => Object(H.g)(e ? "unfollow" : "follow", r),
 						small: !0
-					})), f && r && !o && p && s.a.createElement(J, {
+					})), f && r && !o && p && s.a.createElement(z, {
 						contextId: r,
 						language: c,
 						subredditId: p,
@@ -326,15 +326,15 @@
 					tokenName: c.p,
 					activeTooltipId: m.a,
 					isCurrentUser: (e, t) => {
-						const r = Object(p.j)(e);
-						return !!r && Object(i.f)(r) === t.userName
+						const r = Object(p.i)(e);
+						return !!r && Object(i.e)(r) === t.userName
 					},
-					isLoggedIn: p.I,
-					hideNSFWPref: p.A,
-					language: p.R,
+					isLoggedIn: p.H,
+					hideNSFWPref: p.z,
+					language: p.Q,
 					moderatorPermissions: u.j,
 					origin: l.j,
-					user: p.fb,
+					user: p.eb,
 					userFlair: v.c
 				}),
 				Oe = Object(a.b)(Ne, (e, t) => ({
@@ -932,4 +932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.948fcb1f4cc6e69c4828.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.3839d77135fbe7438abe.js.map

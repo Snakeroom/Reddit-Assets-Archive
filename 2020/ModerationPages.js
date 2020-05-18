@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6d49e4f58547e062ff6d.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b07638e7d7669fcefd3d.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -833,7 +833,7 @@
 							});
 							o(M(t))
 						}
-						e === (m.user.account && Object(g.f)(m.user.account)) ? o(T(p)) : u || o(P(p))
+						e === (m.user.account && Object(g.e)(m.user.account)) ? o(T(p)) : u || o(P(p))
 					} else {
 						const e = Object(l.d)(n.fbt._("Sorry, flair wasn't saved.", null, {
 							hk: "4hXQvr"
@@ -1327,7 +1327,7 @@
 					H = O.listings.postOrder.api.pending[k];
 				if (U) return;
 				if (H || B && !U) Object(p.f)(s(), !0, v);
-				else if (await t(Object(w.i)(k, v, {})), !Object(re.I)(s()) && C !== a.Nb.Moderators) return void Object(m.a)(t, s());
+				else if (await t(Object(w.i)(k, v, {})), !Object(re.H)(s()) && C !== a.Nb.Moderators) return void Object(m.a)(t, s());
 				if (!C) return;
 				let W, V, q, G, z, K, Q, J, X;
 				switch (C) {
@@ -1410,7 +1410,7 @@
 					}),
 					le = Object(d.a)(de),
 					ce = Object(oe.Y)(O),
-					me = Object(re.F)(Z),
+					me = Object(re.E)(Z),
 					ue = Object(ae.a)(Z),
 					pe = Object(se.j)(Z, {
 						subredditId: ie
@@ -3358,7 +3358,7 @@
 					approvedSubmittersListPending: j.a,
 					isAddUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(y.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--RemoveUserConfirmation" === Object(y.a)(e),
-					language: w.R,
+					language: w.Q,
 					loadMoreToken: j.b,
 					searchPending: j.c,
 					searchResult: j.d
@@ -3643,7 +3643,7 @@
 					bannedUsers: I.m,
 					bannedUsersList: I.i,
 					bannedUsersListPending: I.h,
-					language: N.R,
+					language: N.Q,
 					loadMoreToken: I.j,
 					isBanUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(S.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--BanUserConfirmation" === Object(S.a)(e),
@@ -4310,7 +4310,7 @@
 				V = Object(f.t)(),
 				q = e => "Distinguish--Dropdown--".concat(e),
 				G = Object(i.c)({
-					currentUser: k.j,
+					currentUser: k.i,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
 							comment: s
@@ -5156,7 +5156,7 @@
 				P = Object(r.c)({
 					comment: (e, t) => Object(E.n)(e, t),
 					flair: E.e,
-					language: C.R,
+					language: C.Q,
 					subreddit: v.H
 				}),
 				M = Object(a.b)(P, (e, t) => {
@@ -5504,7 +5504,7 @@
 					isChatPostExperiment: g.d,
 					isPostSEOEligible: f.f,
 					postPermalink: x.M,
-					shouldOpenPostInNewTab: E.V
+					shouldOpenPostInNewTab: E.U
 				})),
 				k = e => {
 					let t, {
@@ -6658,7 +6658,7 @@
 				crowdControlModeEnabled: g.d.enableCrowdControlMode,
 				crowdControlLevelEnabled: g.d.enableCrowdControlLevel,
 				isChatPostsCreationEnabled: (e, t) => Object(v.c)(e, t.subredditId),
-				isEmployee: k.F,
+				isEmployee: k.E,
 				restrictions: C.o,
 				settings: (e, t) => Object(C.S)(e, t.subredditId),
 				subreddit: C.Q,
@@ -7150,7 +7150,7 @@
 						subredditId: s
 					})
 				},
-				language: e => Object(h.R)(e)
+				language: e => Object(h.Q)(e)
 			});
 			class E extends a.a.Component {
 				constructor() {
@@ -7404,11 +7404,11 @@
 				ye = Object(a.b)(() => Object(i.c)({
 					activeModalId: _.a,
 					crosspost: y.d,
-					currentUser: j.j,
+					currentUser: j.i,
 					flairStyleTemplate: de.R,
 					isActive: y.j,
 					isExpanded: y.m,
-					language: j.R,
+					language: j.Q,
 					layout: de.N,
 					moderatorPermissions: k.i,
 					modModeEnabled: de.P,
@@ -7419,7 +7419,7 @@
 					post: y.O,
 					showEditFlair: O.a,
 					subredditOrProfile: y.bb,
-					userIsOp: j.ib
+					userIsOp: j.hb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -7500,7 +7500,7 @@
 						toggleCheckbox: ye,
 						tooltipType: je,
 						sendEvent: Se
-					} = this.props, Ne = !!de.media && de.media.type === g.n.RTJSON, Pe = xe && Ne, Me = Object(J.b)(de.id, C), Re = Object(be.a)(j), Le = Object(ue.a)(j), Ae = Object(pe.a)(j), Fe = "-mod-actions-menu-".concat(de.id), De = "voting-arrows-".concat(de.id), Be = !!a && Object(f.f)(a) === de.author, Ue = Object(V.c)(de), He = Object(F.a)("View--Reports", de.id, je), We = Object(V.a)(de), Ve = !(C || x || E), qe = de.media && de.media.type === g.n.LIVEVIDEO, {
+					} = this.props, Ne = !!de.media && de.media.type === g.n.RTJSON, Pe = xe && Ne, Me = Object(J.b)(de.id, C), Re = Object(be.a)(j), Le = Object(ue.a)(j), Ae = Object(pe.a)(j), Fe = "-mod-actions-menu-".concat(de.id), De = "voting-arrows-".concat(de.id), Be = !!a && Object(f.e)(a) === de.author, Ue = Object(V.c)(de), He = Object(F.a)("View--Reports", de.id, je), We = Object(V.a)(de), Ve = !(C || x || E), qe = de.media && de.media.type === g.n.LIVEVIDEO, {
 						moderationPrompt: Ge
 					} = de, ze = e => Se(Object(h.f)(de.id, e)), Ke = o.a.createElement(Q.a, {
 						className: Object(l.a)(Ee.a.compactPostStyles, Ce.a.postContainer, Object(b.a)(this.props), t),
@@ -7915,10 +7915,10 @@
 			const {
 				fbt: B
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", D.a), H = p.a.div("Container", D.a), W = p.a.div("Description", D.a), V = p.a.div("PrivateSubredditDetails", D.a), q = p.a.div("PrivateSubredditDescription", D.a), G = p.a.h3("PrivateSubredditName", D.a), z = p.a.a("Link", D.a), K = p.a.wrapped(M.h, "LinkRouterButton", D.a), Q = p.a.wrapped(M.g, "LinkButton", D.a), J = p.a.wrapped(M.k, "SecondaryLinkRouterButton", D.a), X = p.a.wrapped(M.j, "SecondaryLinkButton", D.a), Z = p.a.wrapped(K, "GoHomeLinkButton", D.a), Y = p.a.img("Image", D.a), $ = p.a.img("ImagePlaceholder", D.a), ee = p.a.wrapped(K, "LeftLinkRouterButton", D.a), te = p.a.wrapped(Q, "LeftLinkButton", D.a), se = p.a.wrapped(X, "SecondaryLeftLinkButton", D.a), ne = p.a.wrapped(J, "SecondaryLeftLinkRouterButton", D.a), oe = p.a.h3("Title", D.a), ae = p.a.div("PageBody", D.a), re = p.a.div("QuarantineMessageWrapper", D.a), ie = Object(d.c)({
-				isLoggedIn: A.H,
-				language: A.R,
+				isLoggedIn: A.G,
+				language: A.Q,
 				origin: L.j,
-				user: A.j
+				user: A.i
 			}), de = Object(P.t)(), le = Object(r.b)(ie, (e, t) => {
 				let {
 					subredditName: s
@@ -8363,8 +8363,8 @@
 				E = f.a.wrapped(m.i, "SecondaryButton", g.a),
 				v = f.a.wrapped(l.c, "StyledTooltip", g.a),
 				C = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.bb)(e),
-					userIsSuspended: b.N
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ab)(e),
+					userIsSuspended: b.M
 				});
 			t.a = Object(r.b)(C, (e, t) => {
 				let {
@@ -8480,9 +8480,9 @@
 				P = Object(d.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.yb.TOPIC),
-					language: x.R,
+					language: x.Q,
 					post: f.O,
-					shouldOpenPostInNewTab: x.V,
+					shouldOpenPostInNewTab: x.U,
 					subreddit: f.bb
 				}),
 				M = Object(r.b)(P);
@@ -9303,7 +9303,7 @@
 				ke = Object(i.c)({
 					activeModalId: me.a,
 					layout: V.N,
-					userIsOp: z.ib,
+					userIsOp: z.hb,
 					subreddit: V.q
 				}),
 				Oe = Object(r.b)(ke, (e, t) => {
@@ -9412,7 +9412,7 @@
 						toggleEditStartTimeModal: V,
 						tooltipType: q,
 						userIsOp: G
-					} = this.props, z = !!r && Object(oe.f)(r) === S.author, Q = Object(ie.a)("View--Reports", S.id, q), Y = Object(ie.a)("View--GiveAward", S.id, q), se = Object(M.c)(S), de = je("-mod-actions-menu", S.id, h, f), me = Object(M.a)(S), ue = S.postId, be = C === W.g.Large, he = !p && be || c && _, fe = !(h || p || u), Ce = r && S.isGildable, _e = S.media && S.media.type === te.n.LIVEVIDEO;
+					} = this.props, z = !!r && Object(oe.e)(r) === S.author, Q = Object(ie.a)("View--Reports", S.id, q), Y = Object(ie.a)("View--GiveAward", S.id, q), se = Object(M.c)(S), de = je("-mod-actions-menu", S.id, h, f), me = Object(M.a)(S), ue = S.postId, be = C === W.g.Large, he = !p && be || c && _, fe = !(h || p || u), Ce = r && S.isGildable, _e = S.media && S.media.type === te.n.LIVEVIDEO;
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
 						className: Object(d.a)(pe.a.flatlistContainer, s)
 					}, a.a.createElement(E.a, {
@@ -10321,7 +10321,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(p.fb)(e, {
+				user: (e, t) => Object(p.eb)(e, {
 					userName: t.username
 				})
 			});
@@ -10557,15 +10557,15 @@
 					tokenName: l.p,
 					activeTooltipId: u.a,
 					isCurrentUser: (e, t) => {
-						const s = Object(p.j)(e);
-						return !!s && Object(d.f)(s) === t.userName
+						const s = Object(p.i)(e);
+						return !!s && Object(d.e)(s) === t.userName
 					},
-					isLoggedIn: p.I,
-					hideNSFWPref: p.A,
-					language: p.R,
+					isLoggedIn: p.H,
+					hideNSFWPref: p.z,
+					language: p.Q,
 					moderatorPermissions: m.j,
 					origin: c.j,
-					user: p.fb,
+					user: p.eb,
 					userFlair: b.c
 				}),
 				Ne = Object(a.b)(Ie, (e, t) => ({
@@ -12125,7 +12125,7 @@
 				At = Object(c.c)({
 					emojis: N.d,
 					isSnoomojiSubreddit: $.m,
-					language: Fe.R,
+					language: Fe.Q,
 					reservedEmojiNames: N.e
 				}),
 				Ft = Object(l.b)(At, (e, t) => {
@@ -12407,7 +12407,7 @@
 			const Wt = m.a.div("UploaderContainer", Be.a),
 				Vt = m.a.wrapped(Wt, "editEmojiDisplay", Be.a),
 				qt = Object(c.c)({
-					language: Fe.R,
+					language: Fe.Q,
 					reduxImage: (e, t) => {
 						let {
 							pendingImage: s
@@ -14038,7 +14038,7 @@
 						} = t;
 						return ((e, t) => e.moderationLog.moderators[t] || [])(e, s)
 					},
-					language: q.R
+					language: q.Q
 				});
 			class J extends r.a.Component {
 				constructor(e) {
@@ -14497,16 +14497,16 @@
 					let n, o, a, i = t.target;
 					switch (s) {
 						case we.f.SubredditPost:
-							n = (i = i).authorInfo && i.authorInfo.__typename === pe.d.AvailableRedditor && i.authorInfo.name || null, o = i.title, a = i.permalink;
+							n = (i = i).authorInfo && i.authorInfo.__typename === pe.c.AvailableRedditor && i.authorInfo.name || null, o = i.title, a = i.permalink;
 							break;
 						case we.f.DeletedSubredditPost:
 							n = null, o = (i = i).title, a = i.permalink;
 							break;
-						case pe.d.AvailableRedditor:
+						case pe.c.AvailableRedditor:
 							n = (i = i) && i.name || null, o = null;
 							break;
 						case je.b.Comment:
-							n = (i = i).authorInfo && i.authorInfo.__typename === pe.d.AvailableRedditor && i.authorInfo.name || null, o = i.content && i.content.markdown, a = i.permalink;
+							n = (i = i).authorInfo && i.authorInfo.__typename === pe.c.AvailableRedditor && i.authorInfo.name || null, o = i.content && i.content.markdown, a = i.permalink;
 							break;
 						case je.b.DeletedComment:
 							n = null, o = (i = i).postInfo && i.postInfo.title, a = i.postInfo && i.postInfo.permalink;
@@ -14540,7 +14540,7 @@
 				constructor() {
 					super(...arguments), this.createTimestamp = e => {
 						return new Date(e).toString()
-					}, this.getTooltipId = e => "".concat(Pe).concat(e), this.getActionModeratorName = e => e && e.__typename === pe.d.AvailableRedditor ? e.name : null
+					}, this.getTooltipId = e => "".concat(Pe).concat(e), this.getActionModeratorName = e => e && e.__typename === pe.c.AvailableRedditor ? e.name : null
 				}
 				render() {
 					const {
@@ -14605,7 +14605,7 @@
 				Ge = Object(d.c)({
 					actionsList: H,
 					endCursor: W,
-					language: q.R,
+					language: q.Q,
 					nextPage: (e, t) => {
 						let {
 							subredditId: s
@@ -15420,7 +15420,7 @@
 			const {
 				fbt: Se
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ie = Object(d.c)({
-				language: S.R
+				language: S.Q
 			}), Ne = Object(i.b)(Ie, (e, t) => {
 				let {
 					subredditId: s,
@@ -15470,7 +15470,7 @@
 					currentPageUrl: v.e
 				}),
 				Be = Object(d.c)({
-					currentUser: S.j,
+					currentUser: S.i,
 					nextAfterToken: w.x,
 					nextAfterEditableToken: w.p,
 					nextBeforeToken: w.y,
@@ -15486,7 +15486,7 @@
 					isInvitePendingModalOpen: Object(O.b)("ModerationPage--Modal--InvitePending"),
 					isModeratorListPending: w.v,
 					isResignAsModeratorModalOpen: Object(O.b)("ModerationPage--Modal--Resign"),
-					language: S.R,
+					language: S.Q,
 					origin: y.j,
 					searchPending: w.z,
 					searchResult: w.A
@@ -16232,7 +16232,7 @@
 				U = Object(d.c)({
 					isAddUserModalOpen: e => "ModerationPage--Modal--AddUser" === Object(y.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--RemoveUserConfirmation" === Object(y.a)(e),
-					language: w.R,
+					language: w.Q,
 					loadMoreToken: j.E,
 					mutedUsers: j.H,
 					mutedUsersListPending: j.D,
@@ -16931,7 +16931,7 @@
 						subredditId: s
 					}) : void 0
 				},
-				user: S.j
+				user: S.i
 			});
 			class B extends r.a.PureComponent {
 				constructor() {
@@ -16945,7 +16945,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: n
-					} = this.props, o = t && Object(y.e)(t) && s ? Object(O.c)(Object(j.f)(s)) : t ? t.displayText : "", a = e.postIds.length;
+					} = this.props, o = t && Object(y.e)(t) && s ? Object(O.c)(Object(j.e)(s)) : t ? t.displayText : "", a = e.postIds.length;
 					return r.a.createElement(M, {
 						onClick: this.onClick,
 						className: N.a.container
@@ -17158,7 +17158,7 @@
 					collection: v.r,
 					error: v.c,
 					isPending: v.h,
-					language: C.R
+					language: C.Q
 				}),
 				U = Object(r.b)(B, (e, t) => ({
 					onCreate: (t, s) => e(Object(c.b)(t, s)),
@@ -17813,7 +17813,7 @@
 					}
 				},
 				Re = Object(i.b)(() => Object(l.c)({
-					currentUser: ae.j,
+					currentUser: ae.i,
 					isConfirmDeleteOpen: (e, t) => {
 						let {
 							postId: s
@@ -17842,7 +17842,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = be(t, ["isProfilePostListing"]);
-						return Object(G.B)(e, n) && s && Object(ae.ib)(e, n) && Object(ae.gb)(e, {
+						return Object(G.B)(e, n) && s && Object(ae.hb)(e, n) && Object(ae.fb)(e, {
 							userName: Object(ne.O)(e, {
 								postId: n.postId
 							}).author
@@ -17850,7 +17850,7 @@
 					},
 					subredditOrProfile: ne.bb,
 					hasSubredditRules: oe.k,
-					userIsOp: ae.ib,
+					userIsOp: ae.hb,
 					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -18647,7 +18647,7 @@
 				selectedReason: null
 			}, q = Object(r.c)({
 				currentUserName: e => {
-					const t = Object(_.j)(e);
+					const t = Object(_.i)(e);
 					if (t) return t.displayText
 				},
 				isLoading: v.a,
@@ -22282,7 +22282,7 @@
 					isConfirmModalOpen: e => "SubredditRule--Modal--DeleteConfirmation" === Object(W.a)(e),
 					isRuleEditorOpen: e => "SubredditRule--Editor--Modal" === Object(W.a)(e),
 					isSubredditRulesPending: e => Object(v.O)(e),
-					language: q.R,
+					language: q.Q,
 					ruleOrder: (e, t) => Object(v.M)(e, {
 						subredditId: t.subreddit.id
 					}),
@@ -22992,19 +22992,19 @@
 					autoplayPref: h.b,
 					activeModalId: c.a,
 					crosspost: b.d,
-					currentUser: h.j,
+					currentUser: h.i,
 					isActive: b.j,
 					isChatPostExperiment: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
-					isLoggedIn: h.I,
+					isLoggedIn: h.H,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
 						return Object(b.r)(e, s)
 					},
-					language: h.R,
+					language: h.Q,
 					moderatorPermissions: u.i,
 					modModeEnabled: l.P,
 					post: b.O,
@@ -23015,7 +23015,7 @@
 					showEditFlair: p.a,
 					showMedia: l.r,
 					subredditOrProfile: b.bb,
-					userIsOp: h.ib,
+					userIsOp: h.hb,
 					flairStyleTemplate: l.R
 				},
 				f = (e, t) => {
@@ -23089,7 +23089,7 @@
 				r = s("./src/reddit/selectors/subreddit.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				language: i.R,
+				language: i.Q,
 				userIsSubscriber: r.bb
 			}), (e, t) => {
 				let {
@@ -23111,7 +23111,7 @@
 				o = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/reddit/selectors/user.ts");
 			const r = Object(o.c)({
-				language: a.R
+				language: a.Q
 			});
 
 			function i(e) {
@@ -27729,7 +27729,7 @@
 				Ze = m.a.wrapped(f.b, "SubredditIcon", Ke.a),
 				Ye = m.a.div("Body", Ke.a),
 				$e = Object(d.c)({
-					contentGateInfo: (e, t) => Object(T.f)(e, t.match.params.subredditName)
+					contentGateInfo: (e, t) => Object(T.e)(e, t.match.params.subredditName)
 				}),
 				et = Object(d.c)({
 					queryParams: (e, t) => {
@@ -27752,7 +27752,7 @@
 						subredditName: t.match.params.subredditName
 					})
 				}),
-				nt = Object(i.b)(() => Object(d.a)($e, T.F, I.a, T.R, E.N, tt, T.W, S.Y, st, et, (e, t) => t.match.params.pageName, (e, t, s, n, o, a, r, i, d, l, c) => {
+				nt = Object(i.b)(() => Object(d.a)($e, T.E, I.a, T.Q, E.N, tt, T.V, S.Y, st, et, (e, t) => t.match.params.pageName, (e, t, s, n, o, a, r, i, d, l, c) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -27939,7 +27939,7 @@
 				selectedOptions: E.k,
 				isLoading: E.E,
 				currentInput: E.g,
-				language: v.R,
+				language: v.Q,
 				selectedPrimaryTag: E.y,
 				hasSecondaryTags: E.q
 			});
@@ -28075,10 +28075,10 @@
 				ue = Object(d.c)({
 					error: X.i,
 					isCreatePending: X.l,
-					isEmployee: v.F,
-					language: v.R,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(v.bb)(e),
-					userIsSuspended: v.N,
+					isEmployee: v.E,
+					language: v.Q,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(v.ab)(e),
+					userIsSuspended: v.M,
 					allTags: E.e,
 					existingTags: E.h,
 					newTags: E.i,
@@ -28655,7 +28655,7 @@
 					whitelistedUsers: []
 				},
 				r = e => {
-					const t = Object(n.j)(e);
+					const t = Object(n.i)(e);
 					return t && t.isEmployee || !1
 				},
 				i = (e, t) => {
@@ -28827,4 +28827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.6d49e4f58547e062ff6d.js.map
+//# sourceMappingURL=ModerationPages.b07638e7d7669fcefd3d.js.map

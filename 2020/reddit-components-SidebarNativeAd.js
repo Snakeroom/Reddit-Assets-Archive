@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d6b9345461ce97656dbe.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6f9d3aa86575d0f7bb4e.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -431,9 +431,9 @@
 				L = Object(d.c)({
 					isCurrentUserProfilePost: h.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.yb.TOPIC),
-					language: f.R,
+					language: f.Q,
 					post: h.O,
-					shouldOpenPostInNewTab: f.V,
+					shouldOpenPostInNewTab: f.U,
 					subreddit: h.bb
 				}),
 				N = Object(i.b)(L);
@@ -658,22 +658,22 @@
 					onOpenRemovalReasonModal: G,
 					onShowTooltip: K,
 					post: X,
-					tooltipType: D
+					tooltipType: U
 				} = e;
-				const U = {
+				const D = {
 						caretOnTop: !1
 					},
 					V = X.isRemoved && !X.modRemovalReason && !X.modNote && X.belongsTo.type === p.a.SUBREDDIT,
-					z = F("Approve", X.id, D),
-					J = F("Archived", X.id, D),
-					q = F("Automod", X.id, D),
-					Z = F("Lock", X.id, D),
-					Q = F("Mod", X.id, D),
-					Y = F("Remove", X.id, D),
-					$ = F("Report", X.id, D),
-					ee = F("Spam", X.id, D),
-					te = F("Sticky", X.id, D),
-					se = F("Pinned", X.id, D);
+					z = F("Approve", X.id, U),
+					J = F("Archived", X.id, U),
+					q = F("Automod", X.id, U),
+					Z = F("Lock", X.id, U),
+					Q = F("Mod", X.id, U),
+					Y = F("Remove", X.id, U),
+					$ = F("Report", X.id, U),
+					ee = F("Spam", X.id, U),
+					te = F("Sticky", X.id, U),
+					se = F("Pinned", X.id, U);
 				return r.a.createElement("div", {
 					className: t
 				}, a && s && X.distinguishType === c.A.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
@@ -685,7 +685,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: Q,
 					text: B(s)
-				}, U))), X.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
+				}, D))), X.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					className: C.a.archivedIcon,
 					desc: N(),
 					id: J,
@@ -694,7 +694,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: J,
 					text: N()
-				}, U))), X.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
+				}, D))), X.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
 					className: C.a.lockIcon,
 					desc: M(),
 					id: Z,
@@ -703,7 +703,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: Z,
 					text: M()
-				}, U))), i && Object(f.k)(X) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
+				}, D))), i && Object(f.k)(X) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
 					className: C.a.stickyIcon,
 					desc: A(),
 					id: te,
@@ -712,7 +712,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: te,
 					text: A()
-				}, U))), g && b && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
+				}, D))), g && b && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
 					className: C.a.stickyIcon,
 					desc: R(),
 					id: se,
@@ -721,7 +721,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: se,
 					text: R()
-				}, U))), (X.isApproved || X.approvedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
+				}, D))), (X.isApproved || X.approvedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
 					className: C.a.approveIcon,
 					desc: Object(v.a)(X),
 					id: z,
@@ -730,7 +730,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: z,
 					text: Object(v.a)(X)
-				}, U))), Object(x.a)(X) && r.a.createElement(o.Fragment, null, r.a.createElement(E.a, {
+				}, D))), Object(x.a)(X) && r.a.createElement(o.Fragment, null, r.a.createElement(E.a, {
 					className: C.a.removeIcon,
 					desc: Object(v.c)(X),
 					id: Y,
@@ -750,7 +750,7 @@
 				})), r.a.createElement(m.c, T({
 					tooltipId: Y,
 					text: Object(v.c)(X)
-				}, U))), X.bannedBy && X.isSpam && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
+				}, D))), X.bannedBy && X.isSpam && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					className: C.a.spamIcon,
 					desc: Object(v.e)(I, X),
 					id: ee,
@@ -759,7 +759,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: ee,
 					text: Object(v.e)(I, X)
-				}, U))), ("AutoModerator" === X.approvedBy || "AutoModerator" === X.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(P.a, {
+				}, D))), ("AutoModerator" === X.approvedBy || "AutoModerator" === X.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(P.a, {
 					className: Object(d.a)(C.a.automoderator, !!X.bannedBy && C.a.isRemoved),
 					desc: v.b,
 					id: q,
@@ -768,7 +768,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: q,
 					text: v.b
-				}, U))), Object(h.a)(X) && !W && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
+				}, D))), Object(h.a)(X) && !W && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
 					className: C.a.reportIcon,
 					desc: Object(v.d)(X.numReports),
 					id: $,
@@ -777,7 +777,7 @@
 				}), r.a.createElement(m.c, T({
 					tooltipId: $,
 					text: Object(v.d)(X.numReports)
-				}, U))))
+				}, D))))
 			}))
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, s) {
@@ -1188,8 +1188,8 @@
 				G = p.a.div("SourceLinkWrapper", B.a),
 				K = p.a.div("TopLine", B.a),
 				X = p.a.wrapped(c.c, "PostTitle", B.a),
-				D = p.a.div("PostMediaWrapper", B.a),
-				U = p.a.div("BackgroundWrapper", B.a),
+				U = p.a.div("PostMediaWrapper", B.a),
+				D = p.a.div("BackgroundWrapper", B.a),
 				V = p.a.wrapped(h.a, "PostContainer", B.a),
 				z = 640,
 				J = e => Object(k.a)(e.title, 100),
@@ -1233,7 +1233,7 @@
 						})
 					}, m = i.a.createElement(N, {
 						post: e
-					})) : (a = W, m = i.a.createElement(U, {
+					})) : (a = W, m = i.a.createElement(D, {
 						style: Z(this.props)
 					}, i.a.createElement(K, null, i.a.createElement(A, {
 						tooltipType: r ? l.c.Lightbox : void 0,
@@ -1249,7 +1249,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), i.a.createElement(H, null))), i.a.createElement(D, null, e.media && i.a.createElement(d.a, {
+					}, Object(u.a)(e), i.a.createElement(H, null))), i.a.createElement(U, null, e.media && i.a.createElement(d.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -1537,4 +1537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.d6b9345461ce97656dbe.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.6f9d3aa86575d0f7bb4e.js.map

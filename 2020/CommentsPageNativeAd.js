@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f925dce3a64de4a07dfe.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.e06356b0b35d7c7a8753.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -640,19 +640,19 @@
 					autoplayPref: b.b,
 					activeModalId: l.a,
 					crosspost: x.d,
-					currentUser: b.j,
+					currentUser: b.i,
 					isActive: x.j,
 					isChatPostExperiment: p.d,
 					isCurrentUserProfilePost: x.k,
 					isExpanded: x.m,
-					isLoggedIn: b.I,
+					isLoggedIn: b.H,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
 						return Object(x.r)(e, s)
 					},
-					language: b.R,
+					language: b.Q,
 					moderatorPermissions: m.i,
 					modModeEnabled: d.P,
 					post: x.O,
@@ -663,7 +663,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: x.bb,
-					userIsOp: b.ib,
+					userIsOp: b.hb,
 					flairStyleTemplate: d.R
 				},
 				O = (e, t) => {
@@ -781,4 +781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.f925dce3a64de4a07dfe.js.map
+//# sourceMappingURL=CommentsPageNativeAd.e06356b0b35d7c7a8753.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.a560bf39f8d4b8fb82f3.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.fa7c7b6103511e13f5cb.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -426,9 +426,9 @@
 				language: e => e.user.language,
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Y = Object(c.b)(K)(Object(O.c)(z)),
-				J = n("./src/reddit/components/Poll/index.m.less"),
-				Q = n.n(J);
+			var Q = Object(c.b)(K)(Object(O.c)(z)),
+				Y = n("./src/reddit/components/Poll/index.m.less"),
+				J = n.n(Y);
 			class W extends a.a.Component {
 				constructor() {
 					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(j.g)(e, t), this.sendPollResultsEvent = () => {
@@ -465,13 +465,13 @@
 					return s ? a.a.createElement("div", {
 						className: e
 					}, c && a.a.createElement("div", {
-						className: Q.a.title
+						className: J.a.title
 					}, c), o && Object(j.e)(s, o) ? a.a.createElement(L, {
 						displayType: t,
 						poll: s,
 						result: o,
 						subredditId: r
-					}) : a.a.createElement(Y, {
+					}) : a.a.createElement(Q, {
 						poll: s,
 						onVoteSelection: n,
 						voteInProgress: i,
@@ -553,7 +553,7 @@
 				}))
 			}
 			const pe = Object(i.c)({
-				language: re.R,
+				language: re.Q,
 				poll: (e, t) => {
 					let {
 						pollId: n
@@ -1250,4 +1250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.a560bf39f8d4b8fb82f3.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.fa7c7b6103511e13f5cb.js.map

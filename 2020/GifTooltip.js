@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.09a181cad58b29026aa7.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.bc769354da8269923b0a.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -55,8 +55,8 @@
 			}
 			var j = s("./node_modules/lodash/debounce.js"),
 				w = s.n(j),
-				R = s("./src/lib/classNames/index.ts"),
-				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				S = s("./src/lib/classNames/index.ts"),
+				R = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				O = s.n(B);
 			const k = 400;
@@ -84,11 +84,11 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return l.a.createElement("div", {
-						className: Object(R.a)(O.a.searchBox, this.props.className)
+						className: Object(S.a)(O.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
 						className: O.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(S.a, {
+					}, l.a.createElement(R.a, {
 						className: O.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -109,7 +109,7 @@
 				}
 			}
 			const P = Object(p.c)({
-				isNightMode: C.T
+				isNightMode: C.S
 			});
 			var H = Object(d.b)(P)(M),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -301,7 +301,7 @@
 					} = t;
 					return Object(E.D)(e, s.id)
 				},
-				language: C.R
+				language: C.Q
 			});
 			t.a = Object(u.c)(Object(d.b)(q, e => ({
 				showErrorToast: t => e(Object(h.e)({
@@ -496,4 +496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.09a181cad58b29026aa7.js.map
+//# sourceMappingURL=GifTooltip.bc769354da8269923b0a.js.map

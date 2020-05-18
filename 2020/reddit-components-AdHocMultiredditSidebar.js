@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.ba33f53681f8ca9d8e86.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.a39fb2554b5b023b2a38.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, d, t) {
@@ -22,7 +22,7 @@
 				a = t("./src/reddit/selectors/user.ts");
 			const u = Object(c.t)(),
 				_ = Object(i.c)({
-					language: a.R,
+					language: a.Q,
 					multireddit: l.a,
 					subredditCategory: c.l
 				}),
@@ -31,4 +31,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-AdHocMultiredditSidebar.ba33f53681f8ca9d8e86.js.map
+//# sourceMappingURL=reddit-components-AdHocMultiredditSidebar.a39fb2554b5b023b2a38.js.map

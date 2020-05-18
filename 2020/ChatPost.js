@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.ad7b38870c243a9cd7a2.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.82302f8ac0de9895bc53.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -129,9 +129,9 @@
 			})), n.d(t, "e", (function() {
 				return S
 			})), n.d(t, "d", (function() {
-				return R
-			})), n.d(t, "f", (function() {
 				return N
+			})), n.d(t, "f", (function() {
+				return R
 			})), n.d(t, "a", (function() {
 				return H
 			}));
@@ -227,8 +227,8 @@
 						hk: "BoP8d"
 					})))
 				}),
-				R = () => i.a.createElement("div", null, "500"),
-				N = d.a.wrapped(e => {
+				N = () => i.a.createElement("div", null, "500"),
+				R = d.a.wrapped(e => {
 					let {
 						className: t
 					} = e;
@@ -661,13 +661,13 @@
 			! function(e) {
 				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment"
 			}(S || (S = {}));
-			const R = {
+			const N = {
 					backoffTime: 2e3,
 					connectionAttempts: 0,
 					jitterAmount: 3e3,
 					maximumRetries: 9
 				},
-				N = (e, t) => {
+				R = (e, t) => {
 					const n = j(t),
 						s = L.get(n);
 					s && s.socket && (s.isClosePlanned = !0, s.socket.close())
@@ -684,8 +684,8 @@
 						isClosePlanned: !1
 					};
 					L.set(o, a), a.socket.addEventListener("open", () => {
-						a.retries = Object.assign({}, R)
-					}), a.socket.addEventListener("message", B.bind(null, s)), a.socket.addEventListener("close", A.bind(null, o, s)), a.socket.addEventListener("error", D.bind(null, o)), window && window.addEventListener("beforeunload", N.bind(null, e, t))
+						a.retries = Object.assign({}, N)
+					}), a.socket.addEventListener("message", B.bind(null, s)), a.socket.addEventListener("close", A.bind(null, o, s)), a.socket.addEventListener("error", D.bind(null, o)), window && window.addEventListener("beforeunload", R.bind(null, e, t))
 				},
 				A = (e, t, n) => {
 					const s = L.get(e);
@@ -742,7 +742,7 @@
 							url: n,
 							uniqueId: s
 						} = e;
-						M(n, s, Object.assign({}, R), t)
+						M(n, s, Object.assign({}, N), t)
 					})({
 						uniqueId: n,
 						url: t,
@@ -935,8 +935,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Re = $.a.button("MenuItem", je.a),
-				Ne = $.a.a("MenuItemPermalink", je.a),
+			const Ne = $.a.button("MenuItem", je.a),
+				Re = $.a.a("MenuItemPermalink", je.a),
 				Me = e => {
 					let {
 						children: t,
@@ -949,7 +949,7 @@
 						tooltipText: l,
 						trackingNoun: d
 					} = e;
-					return o.a.createElement(Re, {
+					return o.a.createElement(Ne, {
 						id: c,
 						onMouseEnter: a.bind(void 0, c),
 						onMouseLeave: r.bind(void 0, c),
@@ -975,7 +975,7 @@
 				},
 				Ae = e => o.a.createElement(Me, Se({
 					onClick: e.onHideTooltip
-				}, e), o.a.createElement(Ne, {
+				}, e), o.a.createElement(Re, {
 					href: e.comment.permalink,
 					rel: "nofollow",
 					target: "_blank"
@@ -1048,7 +1048,7 @@
 				},
 				ut = e => "Comment-".concat(e, "--Modal--DeleteComment"),
 				pt = Object(i.c)({
-					currentUser: tt.j,
+					currentUser: tt.i,
 					isMod: (e, t) => {
 						let {
 							comment: n
@@ -1152,8 +1152,8 @@
 						replyTooltipId: L,
 						reportTooltipId: j,
 						approveTooltipId: S,
-						blockTooltipId: R,
-						removeTooltipId: N,
+						blockTooltipId: N,
+						removeTooltipId: R,
 						sendEvent: M,
 						spamTooltipId: A,
 						toggleDeleteCommentModal: P,
@@ -1215,7 +1215,7 @@
 						trackingNoun: "edit"
 					}, q), o.a.createElement(rt, null)), h && U ? o.a.createElement(Me, nt({
 						onClick: k,
-						tooltipId: N,
+						tooltipId: R,
 						tooltipText: t.bannedBy === c.j ? Z.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : Z.fbt._("Remove", null, {
@@ -1247,7 +1247,7 @@
 						withOverlay: !0
 					}), !p && o.a.createElement(Me, nt({
 						onClick: () => m ? w() : v(),
-						tooltipId: R,
+						tooltipId: N,
 						tooltipText: m ? Z.fbt._("Unblock User", null, {
 							hk: "26F2c9"
 						}) : Z.fbt._("Block User", null, {
@@ -1306,8 +1306,8 @@
 				Lt = n.n(Ot);
 			const jt = 250,
 				St = 10,
-				Rt = $.a.wrapped(It.b, "ErrorText", Lt.a),
-				Nt = $.a.wrapped(ne.a, "TopMeta", Lt.a),
+				Nt = $.a.wrapped(It.b, "ErrorText", Lt.a),
+				Rt = $.a.wrapped(ne.a, "TopMeta", Lt.a),
 				Mt = $.a.span("DeleteText", Lt.a),
 				At = $.a.wrapped(Et, "Reply", Lt.a),
 				Pt = Object(yt.t)(),
@@ -1335,7 +1335,7 @@
 						return Boolean(e.shortcuts.activeCommentId && n === e.shortcuts.activeCommentId)
 					},
 					isEditing: W.z,
-					language: tt.R,
+					language: tt.Q,
 					subreddit: yt.q
 				})),
 				Dt = Object(te.b)(e => ({
@@ -1440,7 +1440,7 @@
 						commentsPageKey: s,
 						isEditing: c,
 						comment: n
-					}), k && o.a.createElement(o.a.Fragment, null, o.a.createElement(Nt, {
+					}), k && o.a.createElement(o.a.Fragment, null, o.a.createElement(Rt, {
 						childrenInfo: t,
 						collapsedBecauseCrowdControl: !1,
 						collapsed: !1,
@@ -1486,7 +1486,7 @@
 						isLivestreaming: l,
 						language: m,
 						timestampUpdateTrigger: g
-					})]), n.isDeleted && o.a.createElement(Ut, null), k && r && r.map((e, t) => o.a.createElement(Rt, {
+					})]), n.isDeleted && o.a.createElement(Ut, null), k && r && r.map((e, t) => o.a.createElement(Nt, {
 						key: "".concat(t, "-").concat(e),
 						language: m
 					}, e)), !c && x && o.a.createElement("button", {
@@ -1764,7 +1764,7 @@
 				an = Object(a.b)(rn, (e, t) => ({
 					onLiveCommentsSubscribe: (n, s, o) => e(z(n, s, o, t.subredditId)),
 					offLiveCommentsSubscribe: (t, n) => e(((e, t) => async () => {
-						N(0, t)
+						R(0, t)
 					})(0, n)),
 					loadMoreComments: n => e(Object(u.Z)(t.commentsPageKey, n)),
 					loadBlockedRedditors: () => e(Object(m.g)()),
@@ -2440,4 +2440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.ad7b38870c243a9cd7a2.js.map
+//# sourceMappingURL=ChatPost.82302f8ac0de9895bc53.js.map

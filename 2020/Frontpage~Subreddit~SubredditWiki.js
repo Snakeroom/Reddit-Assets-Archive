@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.2bbe9b716832926db691.js
-// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.72a5278b344631d312bc.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -428,7 +428,7 @@
 						listingName: s,
 						pageLayer: n
 					}),
-					a = Object(d.z)(e) || Object(c.a)(e),
+					a = Object(d.y)(e) || Object(c.a)(e),
 					i = Object(o.e)(e);
 				return {
 					canShowAd: r && !a,
@@ -776,7 +776,7 @@
 				u = s("./src/reddit/actions/subscription/index.ts"),
 				b = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-				language: b.R
+				language: b.Q
 			});
 			var h = Object(i.b)(p, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -842,7 +842,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(c.c)({
-					hideNSFWPref: b.A
+					hideNSFWPref: b.z
 				}),
 				w = Object(i.b)(j)(e => a.a.createElement("div", {
 					className: C.a.communityItemContainer
@@ -960,7 +960,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				o = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				language: o.R,
+				language: o.Q,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -1045,4 +1045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.2bbe9b716832926db691.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.72a5278b344631d312bc.js.map

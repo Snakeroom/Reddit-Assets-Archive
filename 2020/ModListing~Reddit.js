@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.f1d7eb136a4e14516723.js
-// Retrieved at 5/18/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.4d1ffa136e4ccf148ccf.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1129,9 +1129,9 @@
 				return n
 			};
 			const p = Object(i.c)({
-					currentUser: d.j,
-					shouldHideNSFW: d.A,
-					user: d.fb
+					currentUser: d.i,
+					shouldHideNSFW: d.z,
+					user: d.eb
 				}),
 				m = Object(o.b)(p);
 			t.a = m(e => {
@@ -1141,7 +1141,7 @@
 					isNSFW: r,
 					user: o,
 					userName: i
-				} = e, d = u(e, ["currentUser", "iconUrl", "isNSFW", "user", "userName"]), p = !!t && Object(a.f)(t) === i, m = p && t.accountIcon || o && o.accountIcon || n, f = o ? o.isNSFW : r;
+				} = e, d = u(e, ["currentUser", "iconUrl", "isNSFW", "user", "userName"]), p = !!t && Object(a.e)(t) === i, m = p && t.accountIcon || o && o.accountIcon || n, f = o ? o.isNSFW : r;
 				return s.a.createElement(c.a, l({}, d, {
 					iconUrl: m,
 					isCurrentUser: p,
@@ -3238,4 +3238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.f1d7eb136a4e14516723.js.map
+//# sourceMappingURL=ModListing~Reddit.4d1ffa136e4ccf148ccf.js.map

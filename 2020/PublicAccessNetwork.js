@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2a19529cbae3308f08fb.js
-// Retrieved at 5/18/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7af0545d4c59fdcafd39.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -336,7 +336,7 @@
 			};
 			const f = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "d772799-production"
+					SENTRY_RELEASE_VERSION: "8a13fd6-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -511,7 +511,7 @@
 						forwardedRef: t
 					}))),
 					k = Object(i.c)({
-						redditUserId: h.h,
+						redditUserId: h.g,
 						isMuxEnabled: u
 					});
 				return Object(n.b)(k, null, null, {
@@ -2080,7 +2080,7 @@
 					apiContext: n
 				} = a;
 				const i = r();
-				if (Object(yt.I)(i))
+				if (Object(yt.H)(i))
 					if (Object(J.c)(i)) await Object(Et.g)(n(), e, t);
 					else {
 						await Object(p.d)(e);
@@ -2715,7 +2715,7 @@
 				const {
 					id: s,
 					name: r
-				} = t, a = Object(o.d)(e => Object(yt.fb)(e, {
+				} = t, a = Object(o.d)(e => Object(yt.eb)(e, {
 					userName: r
 				})), n = Rs(a);
 				return i.a.createElement("div", {
@@ -2745,9 +2745,9 @@
 			}, i.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), Rs = e => {
-				const t = Object(o.d)(yt.j),
-					s = Object(o.d)(yt.A),
-					r = Object(o.d)(yt.W);
+				const t = Object(o.d)(yt.i),
+					s = Object(o.d)(yt.z),
+					r = Object(o.d)(yt.V);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}, Ds = e => Object(o.d)(t => Object(ve.bb)(t, {
 				identifier: {
@@ -3366,7 +3366,7 @@
 				isDisabled: (e, t) => Object(Q.e)(e, {
 					streamIdFromPath: t.postId
 				}),
-				isLoggedIn: yt.I,
+				isLoggedIn: yt.H,
 				isPostDataLoaded: (e, t) => {
 					let {
 						postId: s
@@ -3375,7 +3375,7 @@
 						postId: s
 					})
 				},
-				language: yt.R,
+				language: yt.Q,
 				replyComment: (e, t) => {
 					let {
 						postId: s
@@ -4108,4 +4108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.2a19529cbae3308f08fb.js.map
+//# sourceMappingURL=PublicAccessNetwork.7af0545d4c59fdcafd39.js.map

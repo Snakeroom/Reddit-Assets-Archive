@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.e3070c72fa34a3589dc1.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.797f95bb9661a78ab0f2.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -270,10 +270,10 @@
 			const F = "https://www.redditinc.com/policies/content-policy",
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
 				S = Object(i.c)({
-					currentUser: v.j
+					currentUser: v.i
 				}),
 				w = Object(s.b)(S, e => ({
-					logoutUser: () => e(Object(p.s)()),
+					logoutUser: () => e(Object(p.p)()),
 					onSubmitAppeal: (a, t) => e(k(a, t))
 				}));
 			class D extends r.a.Component {
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Appeal.e3070c72fa34a3589dc1.js.map
+//# sourceMappingURL=Appeal.797f95bb9661a78ab0f2.js.map

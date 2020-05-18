@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.9751c8314dff2d950dbe.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.7e1f0d207d203ed6f7a6.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -171,14 +171,14 @@
 							subredditId: n ? n.id : void 0
 						})
 					},
-					language: _.R,
+					language: _.Q,
 					subreddit: m.q
 				}),
-				R = Object(i.b)(B, e => ({
+				A = Object(i.b)(B, e => ({
 					onOpenPoll: e => {}
 				})),
-				A = Object(m.t)();
-			t.default = Object(j.a)("spGovPolls", A(Object(u.b)(R(T))))
+				H = Object(m.t)();
+			t.default = Object(j.a)("spGovPolls", H(Object(u.b)(A(T))))
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, n) {
 			"use strict";
@@ -497,4 +497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.9751c8314dff2d950dbe.js.map
+//# sourceMappingURL=GovernanceVotingBanner.7e1f0d207d203ed6f7a6.js.map

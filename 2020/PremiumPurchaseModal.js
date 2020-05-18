@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2476ed7abc3144a96514.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.d5b1d194f989907f6d94.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -373,8 +373,8 @@
 				C = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				P = a("./src/reddit/selectors/platform.ts"),
 				E = a("./src/reddit/selectors/user.ts"),
-				f = a("./node_modules/fbt/lib/FbtPublic.js"),
-				_ = a("./src/lib/loadRedditAdsPixel.ts"),
+				_ = a("./node_modules/fbt/lib/FbtPublic.js"),
+				f = a("./src/lib/loadRedditAdsPixel.ts"),
 				v = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
 				x = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				k = a("./src/reddit/helpers/createEmojiText/index.tsx"),
@@ -386,7 +386,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(g.i)()), Object(_.b)()
+					e(Object(g.i)()), Object(f.b)()
 				}
 				render() {
 					const e = this.props;
@@ -397,29 +397,29 @@
 						}
 					}, s.a.createElement(N.a, {
 						className: O.a.premiumIcon,
-						title: f.fbt._("Reddit Premium", null, {
+						title: _.fbt._("Reddit Premium", null, {
 							hk: "34acNx"
 						})
 					}), s.a.createElement("div", {
 						className: O.a.paymentCompleteTitleMain
-					}, f.fbt._("Thanks for purchasing Reddit Premium!", null, {
+					}, _.fbt._("Thanks for purchasing Reddit Premium!", null, {
 						hk: "27KGKp"
 					})), s.a.createElement("div", {
 						className: O.a.paymentCompleteTitleDescription
 					}, s.a.createElement("div", {
 						className: O.a.paymentCompleteTitleItem
-					}, f.fbt._("You will receive a message in your inbox once your purchase is confirmed.", null, {
+					}, _.fbt._("You will receive a message in your inbox once your purchase is confirmed.", null, {
 						hk: "27tvU4"
 					})), s.a.createElement("div", {
 						className: O.a.paymentCompleteTitleItem
 					}, s.a.createElement("a", {
 						href: "/settings/premium",
 						target: "_blank"
-					}, f.fbt._("Manage your ads-free experience.", null, {
+					}, _.fbt._("Manage your ads-free experience.", null, {
 						hk: "1RxPah"
 					}))), s.a.createElement("div", {
 						className: O.a.paymentCompleteTitleItemLast
-					}, Object(k.a)(f.fbt._("Find more about {anchor text} on Reddit.", [f.fbt._param("anchor text", ":loungeLink:")], {
+					}, Object(k.a)(_.fbt._("Find more about {anchor text} on Reddit.", [_.fbt._param("anchor text", ":loungeLink:")], {
 						hk: "2RGr1F"
 					}), {
 						":loungeLink:": s.a.createElement("a", {
@@ -510,7 +510,7 @@
 						"data-redditstyle": !0,
 						disabled: !e,
 						onSubmit: this.onPaypalSubmit,
-						title: f.fbt._("Continue to paypal", null, {
+						title: _.fbt._("Continue to paypal", null, {
 							hk: "1iCLet"
 						})
 					}), a === i.tb && s.a.createElement(F.f, {
@@ -518,7 +518,7 @@
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onCompletePurchaseClick
-					}, f.fbt._("Complete purchase", null, {
+					}, _.fbt._("Complete purchase", null, {
 						hk: "15ZI2y"
 					})))
 				}
@@ -531,16 +531,16 @@
 				}
 			}, s.a.createElement(N.a, {
 				className: O.a.premiumIcon,
-				title: f.fbt._("Reddit Premium", null, {
+				title: _.fbt._("Reddit Premium", null, {
 					hk: "34acNx"
 				})
 			}), s.a.createElement("div", {
 				className: O.a.titleMain
-			}, f.fbt._("Buy Reddit Premium!", null, {
+			}, _.fbt._("Buy Reddit Premium!", null, {
 				hk: "3XxwQZ"
 			})), s.a.createElement("div", {
 				className: O.a.titleDescription
-			}, f.fbt._("You're purchasing Reddit Premium for yourself, {username}!", [f.fbt._param("username", e.userName)], {
+			}, _.fbt._("You're purchasing Reddit Premium for yourself, {username}!", [_.fbt._param("username", e.userName)], {
 				hk: "bCrwe"
 			})), s.a.createElement("button", {
 				className: O.a.closeButton,
@@ -567,7 +567,7 @@
 				className: O.a.checkoutFooter
 			}, s.a.createElement("div", {
 				className: O.a.premiumPurchaseTotal
-			}, f.fbt._("Total: {Price}/monthly", [f.fbt._param("Price", "$".concat(e.total / 100))], {
+			}, _.fbt._("Total: {Price}/monthly", [_.fbt._param("Price", "$".concat(e.total / 100))], {
 				hk: "1KYlb8"
 			})), e.selectedPayment === i.tb && s.a.createElement("a", {
 				href: "https://stripe.com",
@@ -583,7 +583,7 @@
 				className: O.a.membershipDescription
 			}, s.a.createElement(S.a, null, "Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.")), s.a.createElement("div", {
 				className: O.a.agreementLink
-			}, Object(k.a)(f.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [f.fbt._param("Link text", ":agreement:")], {
+			}, Object(k.a)(_.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [_.fbt._param("Link text", ":agreement:")], {
 				hk: "fXr9v"
 			}), {
 				":agreement:": s.a.createElement("a", {
@@ -613,15 +613,15 @@
 						const t = Object(P.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: E.T,
+					nightmode: E.S,
 					passthrough: C.d,
 					selectedPayment: C.b,
 					stripeErrorMessage: C.i,
 					stripeTokenPending: C.l,
 					paypalErrorMessage: C.c,
 					userName: e => {
-						const t = Object(E.j)(e);
-						return "u/".concat(Object(b.f)(t))
+						const t = Object(E.i)(e);
+						return "u/".concat(Object(b.e)(t))
 					}
 				}),
 				H = Object(r.b)(Y, (e, t) => ({
@@ -750,9 +750,9 @@
 			})), a.d(t, "a", (function() {
 				return E
 			})), a.d(t, "g", (function() {
-				return f
-			})), a.d(t, "h", (function() {
 				return _
+			})), a.d(t, "h", (function() {
+				return f
 			})), a.d(t, "i", (function() {
 				return v
 			}));
@@ -772,11 +772,11 @@
 						thingId: a,
 						packageId: c
 					} = t, i = s.a(e), h = i ? Object(m.getAwardTypeFromAward)(i) : null, y = a ? h : o.n(e) ? d.Premium : d.Coins, g = a ? Object(p.a)(a) ? "comment" : "post" : void 0, b = c || o.q(e), C = [...Object(r.b)(e), ...Object(r.d)(e)].filter(e => e.mobileId === b)[0], P = C && C.dealInfo && C.dealInfo.type, E = "low_coin_upsell" === P;
-					let f;
-					E && (f = "low_coin_balance"), "new_purchaser" === P && (f = "new_user_targeted_offer"), "repeat_purchaser" === P && (f = "repeat_user_targeted_offer");
-					const _ = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0,
+					let _;
+					E && (_ = "low_coin_balance"), "new_purchaser" === P && (_ = "new_user_targeted_offer"), "repeat_purchaser" === P && (_ = "repeat_user_targeted_offer");
+					const f = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0,
 						v = C ? Math.round(1e4 * (C.coins - C.baselineCoins) / C.coins) / 100 : 0,
-						x = C ? C.baselinePennies !== C.pennies ? "".concat(_, "_percent_price") : C.baselineCoins !== C.coins ? "".concat(v, "_percent_bonus") : void 0 : void 0;
+						x = C ? C.baselinePennies !== C.pennies ? "".concat(f, "_percent_price") : C.baselineCoins !== C.coins ? "".concat(v, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, l.defaults(e), {
 						comment: a ? l.comment(e, a) : null,
 						correlationId: Object(u.c)(u.a.GoldPayment),
@@ -792,7 +792,7 @@
 							gildedContent: !!a,
 							contentType: g,
 							numberCoins: C ? C.coins : void 0,
-							offerContext: f,
+							offerContext: _,
 							offerType: E ? C ? "".concat(C.bonusPct, "_percent_bonus") : void 0 : x
 						}),
 						payment: {
@@ -844,14 +844,14 @@
 					action: "click",
 					noun: "confirm"
 				}),
-				f = e => t => Object.assign({}, h(t, {
+				_ = e => t => Object.assign({}, h(t, {
 					thingId: e
 				}), {
 					source: "gold_payment",
 					action: "display",
 					noun: "error"
 				}),
-				_ = (e, t) => t => {
+				f = (e, t) => t => {
 					const a = h(t, {
 						thingId: e
 					});
@@ -902,4 +902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.2476ed7abc3144a96514.js.map
+//# sourceMappingURL=PremiumPurchaseModal.d5b1d194f989907f6d94.js.map

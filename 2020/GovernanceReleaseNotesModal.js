@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.e306204a3e351059e67d.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.f1c58c10238a51784e2c.js
+// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -202,20 +202,20 @@
 					post: e.releaseNote
 				})))
 			}
-			var R = n("./src/reddit/controls/Button/index.tsx"),
-				I = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+			var I = n("./src/reddit/controls/Button/index.tsx"),
+				R = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				S = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
 				T = n.n(S);
 
 			function L(e) {
 				return a.a.createElement("div", {
 					className: Object(g.a)(T.a.container, e.className)
-				}, !e.isFirst && a.a.createElement(R.i, {
+				}, !e.isFirst && a.a.createElement(I.i, {
 					className: T.a.prev,
 					onClick: e.onPrevSlide
-				}, a.a.createElement(I.a, {
+				}, a.a.createElement(R.a, {
 					className: T.a.arrow
-				})), a.a.createElement(R.f, {
+				})), a.a.createElement(I.f, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? s.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -297,7 +297,7 @@
 			}
 			const H = Object(p.c)({
 					releaseNotes: m.j,
-					language: x.R,
+					language: x.Q,
 					subreddit: u.q
 				}),
 				A = Object(o.b)(H, e => ({
@@ -488,9 +488,9 @@
 			})), n.d(t, "r", (function() {
 				return O
 			})), n.d(t, "n", (function() {
-				return R
-			})), n.d(t, "k", (function() {
 				return I
+			})), n.d(t, "k", (function() {
+				return R
 			}));
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				r = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -592,7 +592,7 @@
 						image: o.image
 					}
 				},
-				R = (e, t) => {
+				I = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -603,11 +603,11 @@
 						address: void 0
 					}
 				},
-				I = (e, t) => {
+				R = (e, t) => {
 					const n = E(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.e306204a3e351059e67d.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.f1c58c10238a51784e2c.js.map
