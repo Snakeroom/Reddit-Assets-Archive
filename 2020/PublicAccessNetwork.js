@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0cd89194061eb01be8eb.js
-// Retrieved at 5/18/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.188c2cf64bc46d4c7a86.js
+// Retrieved at 5/18/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -288,7 +288,7 @@
 					experimentName: d.zb
 				});
 				return Object(d.rc)(t) ? void 0 : t
-			}, (e, t) => (e => e === d.Ab.On)(e) && (e => e === d.Ab.On)(t));
+			}, (e, t) => e === d.Ab.Enabled && t === d.Ab.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -336,7 +336,7 @@
 			};
 			const f = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "a948362-production"
+					SENTRY_RELEASE_VERSION: "5b3850a-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -4108,4 +4108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.0cd89194061eb01be8eb.js.map
+//# sourceMappingURL=PublicAccessNetwork.188c2cf64bc46d4c7a86.js.map

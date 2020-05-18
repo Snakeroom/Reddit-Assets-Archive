@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e4afe9362a0dee0dc90d.js
-// Retrieved at 5/18/2020, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a885458070fa33ea9a53.js
+// Retrieved at 5/18/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11023,14 +11023,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("a948362-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5b3850a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a948362-production",
+						release: "5b3850a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11392,7 +11392,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "a948362-production",
+							releaseClient: "5b3850a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -13828,7 +13828,7 @@
 				e.NoActions = "no_actions", e.NoAds = "no_ads", e.NoWidgets = "no_widgets", e.Combined = "combined"
 			}(je || (je = {})),
 			function(e) {
-				e.On = "on"
+				e.Enabled = "enabled"
 			}(Ne || (Ne = {})),
 			function(e) {
 				e.IdCard = "id_card", e.RailSwap = "rail_swap"
@@ -14036,8 +14036,8 @@
 					[d]: [xe.ShowTopContent],
 					[l]: [Be.Rollout],
 					[a]: [Be.Holdout],
-					[m]: [Ne.On],
-					[p]: [Ne.On],
+					[m]: [Ne.Enabled],
+					[p]: [Ne.Enabled],
 					[Q]: [bt.Enabled],
 					[X]: [yt.Enabled],
 					[Z]: [Tt.Treatment],
@@ -28671,4 +28671,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.e4afe9362a0dee0dc90d.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.a885458070fa33ea9a53.js.map
