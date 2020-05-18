@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.6f11efcaead0f2d62cdd.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.dc05ea0b0d8f0b885f20.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -489,7 +489,7 @@
 			}
 			const be = Object(r.c)({
 					savedPayments: h.u,
-					user: y.eb
+					user: y.fb
 				}),
 				ge = Object(o.b)(be, (e, t) => {
 					let {
@@ -835,4 +835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.6f11efcaead0f2d62cdd.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.dc05ea0b0d8f0b885f20.js.map

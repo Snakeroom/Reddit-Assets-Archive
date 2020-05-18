@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.cb8eabc027a28d15aa24.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.ad43ea364ba7b1b8c77c.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
@@ -245,7 +245,7 @@
 				S = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
 				N = a.n(S);
 			const v = Object(q.c)({
-					currentUser: R.i,
+					currentUser: R.j,
 					userDataExportEligibility: _.a,
 					userDataRequestPageLoadingApiState: _.b
 				}),
@@ -498,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=UserDataRequestPage.cb8eabc027a28d15aa24.js.map
+//# sourceMappingURL=UserDataRequestPage.ad43ea364ba7b1b8c77c.js.map

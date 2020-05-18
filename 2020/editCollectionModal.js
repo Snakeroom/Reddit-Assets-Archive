@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.7afb810c6472e7c9bd7d.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.d8f3e9ec6c805053fa1e.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -279,14 +279,14 @@
 					}),
 					onClick: e.onClick
 				}, e.children), "Tab", j.a),
-				B = Object(l.c)({
+				R = Object(l.c)({
 					collection: O.r,
 					displayLayout: O.b,
 					isPending: e => Object(O.h)(e) || Object(O.i)(e) || Object(O.k)(e) || Object(O.m)(e),
-					language: P.Q,
+					language: P.R,
 					postsByIds: O.p
 				}),
-				R = Object(c.b)(B, (e, t) => ({
+				B = Object(c.b)(R, (e, t) => ({
 					editCollection: t => e(Object(u.d)(t))
 				}));
 			class G extends i.a.PureComponent {
@@ -455,7 +455,7 @@
 					}))))
 				}
 			}
-			const U = Object(d.a)(R(G))
+			const U = Object(d.a)(B(G))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1048,4 +1048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.7afb810c6472e7c9bd7d.js.map
+//# sourceMappingURL=editCollectionModal.d8f3e9ec6c805053fa1e.js.map

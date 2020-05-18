@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6de2eb65010cf40ba208.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6d31d11258c481ae2907.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -163,8 +163,8 @@
 				I = n("./src/config.ts"),
 				M = n("./src/lib/classNames/index.ts"),
 				_ = n("./src/reddit/actions/gold/modals.ts"),
-				E = n("./src/reddit/actions/modal.ts"),
-				P = n("./src/reddit/actions/multireddit/index.ts"),
+				P = n("./src/reddit/actions/modal.ts"),
+				E = n("./src/reddit/actions/multireddit/index.ts"),
 				O = n("./src/reddit/actions/profile/index.ts"),
 				y = n("./src/reddit/components/CrisisFlow/index.tsx"),
 				L = n("./src/higherOrderComponents/makeAsync.tsx"),
@@ -181,12 +181,12 @@
 				F = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				R = n("./src/reddit/models/Gold/Premium/index.ts"),
 				U = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				H = n("./src/reddit/selectors/premium.ts"),
-				W = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
-				G = n.n(W);
+				W = n("./src/reddit/selectors/premium.ts"),
+				G = n("./src/reddit/components/ProfileIdCard/footer.m.less"),
+				B = n.n(G);
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -206,11 +206,11 @@
 			const Z = Object(o.c)({
 					areModeratedSubredditsPending: b.a,
 					coinsToSpend: g.d,
-					givePremiumModalIsOpen: H.c,
+					givePremiumModalIsOpen: W.c,
 					hasFetchedModerators: b.k,
-					isEmployee: g.E,
-					isLoggedIn: g.H,
-					language: g.Q,
+					isEmployee: g.F,
+					isLoggedIn: g.I,
+					language: g.R,
 					profile: b.j,
 					crisisFlowEnabled: U.b
 				}),
@@ -218,8 +218,8 @@
 					var {
 						isLoading: t
 					} = e, n = D(e, ["isLoading"]);
-					return r.a.createElement("div", B({}, n, {
-						className: Object(M.a)(G.a.Shimmer, Object(F.b)({
+					return r.a.createElement("div", H({}, n, {
+						className: Object(M.a)(B.a.Shimmer, Object(F.b)({
 							isLoading: t
 						}))
 					}))
@@ -326,26 +326,26 @@
 						key: e.url,
 						onClick: e.onClick,
 						to: e.url,
-						className: G.a.menuItem
+						className: B.a.menuItem
 					}, e.text) : r.a.createElement(T.a, {
 						key: e.url,
 						href: e.url,
 						isSponsored: !1,
 						onClick: e.onClick,
 						source: void 0,
-						className: G.a.menuItem
+						className: B.a.menuItem
 					}, e.text) : r.a.createElement(u.n, {
-						className: G.a.menuItem,
+						className: B.a.menuItem,
 						key: e.text,
 						onClick: e.onClick
 					}, e.text));
 					this.state.expanded && this.isLoadingMods() && (s.unshift(r.a.createElement("div", {
-						className: G.a.menuItem,
+						className: B.a.menuItem,
 						key: "loading-1"
 					}, r.a.createElement(K, {
 						isLoading: this.props.areModeratedSubredditsPending
 					}))), s.unshift(r.a.createElement("div", {
-						className: G.a.menuItem,
+						className: B.a.menuItem,
 						key: "loading-2"
 					}, r.a.createElement(K, {
 						isLoading: this.props.areModeratedSubredditsPending
@@ -356,11 +356,11 @@
 						hk: "4ix9v1"
 					});
 					return r.a.createElement("div", {
-						className: G.a.container
+						className: B.a.container
 					}, s, r.a.createElement("div", {
-						className: G.a.expandContainer
+						className: B.a.expandContainer
 					}, r.a.createElement(u.n, {
-						className: G.a.expandButton,
+						className: B.a.expandButton,
 						onClick: this.moreOptionsToggled
 					}, i)), e && r.a.createElement(j, null), this.state.showCrisisModal && r.a.createElement(y.b, {
 						withOverlay: !0,
@@ -377,7 +377,7 @@
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(P.g)(!0, !0)), e(Object(E.h)(N.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(E.g)(!0, !0)), e(Object(P.h)(N.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
 						onClickGivePremium: () => e(Object(_.e)(n)),
 						onModeratorsRequested: () => e(Object(O.b)(n))
@@ -388,10 +388,10 @@
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
-				account: g.i,
+				account: g.j,
 				activeTooltipId: C.a,
 				currentUserHasSubreddit: g.g,
-				hideNSFWPref: g.z,
+				hideNSFWPref: g.A,
 				isEditProfileImagesInlineEnabled: p.a,
 				isModerator: b.f,
 				profile: b.j,
@@ -401,7 +401,7 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(g.fb)(e, {
+					return Object(g.gb)(e, {
 						userName: n
 					})
 				},
@@ -409,7 +409,7 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(g.eb)(e, {
+					return Object(g.fb)(e, {
 						userName: n
 					})
 				},
@@ -492,39 +492,39 @@
 					isGold: I,
 					prefShowSnoovatar: M,
 					username: _
-				} = f, E = !!t && t.id === w, P = h && h.bannerBackgroundImage, O = !!m && m.isNSFW, y = !i && O && s, L = !(!u || !u.userIsSubscriber), k = "/user/".concat(_, "/"), j = C && C.url === k;
+				} = f, P = !!t && t.id === w, E = h && h.bannerBackgroundImage, O = !!m && m.isNSFW, y = !i && O && s, L = !(!u || !u.userIsSubscriber), k = "/user/".concat(_, "/"), j = C && C.url === k;
 				return r.a.createElement(l.a, {
 					isEditProfileImagesInlineEnabled: i,
 					isEmployee: v,
 					isGold: I,
 					isNSFW: O,
 					isOverlay: a,
-					isOwnProfile: E,
+					isOwnProfile: P,
 					publicDescription: u ? u.publicDescription : void 0,
 					title: m ? m.title : void 0,
 					url: j ? null : k,
 					username: _,
 					recentAwardings: x,
-					actions: r.a.createElement(r.a.Fragment, null, E && !d && X({
+					actions: r.a.createElement(r.a.Fragment, null, P && !d && X({
 						username: _,
 						currentUserHasSubreddit: n
-					}), !E && b && $({
+					}), !P && b && $({
 						profileName: _,
 						onToggleFollow: c,
 						userIsSubscriber: L
-					}), !!t && !E && ee({
+					}), !!t && !P && ee({
 						userId: w
 					})),
 					footer: r.a.createElement(V, {
 						hasSubreddit: b,
 						isModerator: o,
-						isOwnProfile: E,
+						isOwnProfile: P,
 						allowViewSnoovatar: M,
 						profileName: _,
 						sendEvent: p
 					}),
 					profileIcon: g,
-					bannerBackgroundImage: y ? void 0 : P
+					bannerBackgroundImage: y ? void 0 : E
 				})
 			}))
 		},
@@ -726,11 +726,11 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => s.a.Enabled === Object(r.c)(e, {
-					experimentEligibilitySelector: i.H,
+					experimentEligibilitySelector: i.I,
 					experimentName: s.c
 				}),
 				a = e => s.b.Enabled === Object(r.c)(e, {
-					experimentEligibilitySelector: i.H,
+					experimentEligibilitySelector: i.I,
 					experimentName: s.d
 				})
 		},
@@ -752,4 +752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.6de2eb65010cf40ba208.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.6d31d11258c481ae2907.js.map

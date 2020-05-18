@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a0a1aca68a9dd08f86e3.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2476ed7abc3144a96514.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -613,14 +613,14 @@
 						const t = Object(P.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: E.S,
+					nightmode: E.T,
 					passthrough: C.d,
 					selectedPayment: C.b,
 					stripeErrorMessage: C.i,
 					stripeTokenPending: C.l,
 					paypalErrorMessage: C.c,
 					userName: e => {
-						const t = Object(E.i)(e);
+						const t = Object(E.j)(e);
 						return "u/".concat(Object(b.f)(t))
 					}
 				}),
@@ -902,4 +902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.a0a1aca68a9dd08f86e3.js.map
+//# sourceMappingURL=PremiumPurchaseModal.2476ed7abc3144a96514.js.map

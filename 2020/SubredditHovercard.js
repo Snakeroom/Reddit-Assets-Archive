@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.f9cf4f5a60cb5a621426.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.7c79fc1fdab01e1060b7.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -288,7 +288,7 @@
 			}
 			const {
 				fbt: w
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = O.a.wrapped(I.b, "SubredditIcon", C.a), S = O.a.wrapped(f.a, "SubredditNameDisplay", C.a), H = O.a.div("SubredditDescription", C.a), M = O.a.div("SubredditNameContainer", C.a), A = O.a.div("SubredditInfoContainer", C.a), L = O.a.div("Subscribers", C.a), D = O.a.div("Online", C.a), B = O.a.div("Count", C.a), k = O.a.div("CountLabel", C.a), U = O.a.div("Container", C.a), R = O.a.div("CardContainer", C.a), Z = e => o.a.createElement(A, null, o.a.createElement(L, null, o.a.createElement(B, null, Object(E.b)(e.subredditAboutInfo.subscribers)), o.a.createElement(k, null, w._({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = O.a.wrapped(I.b, "SubredditIcon", C.a), S = O.a.wrapped(f.a, "SubredditNameDisplay", C.a), H = O.a.div("SubredditDescription", C.a), A = O.a.div("SubredditNameContainer", C.a), M = O.a.div("SubredditInfoContainer", C.a), L = O.a.div("Subscribers", C.a), D = O.a.div("Online", C.a), B = O.a.div("Count", C.a), k = O.a.div("CountLabel", C.a), U = O.a.div("Container", C.a), R = O.a.div("CardContainer", C.a), Z = e => o.a.createElement(M, null, o.a.createElement(L, null, o.a.createElement(B, null, Object(E.b)(e.subredditAboutInfo.subscribers)), o.a.createElement(k, null, w._({
 				"*": "Members",
 				_1: " Member"
 			}, [w._plural(e.subredditAboutInfo.subscribers)], {
@@ -313,7 +313,7 @@
 					className: t,
 					id: r,
 					style: d
-				}, o.a.createElement(R, null, o.a.createElement(M, null, o.a.createElement(P, {
+				}, o.a.createElement(R, null, o.a.createElement(A, null, o.a.createElement(P, {
 					subredditOrProfile: a,
 					shouldHideNsfwIcon: s
 				}), o.a.createElement(S, {
@@ -344,8 +344,8 @@
 			};
 			const V = Object(m.c)({
 				activeTooltipId: v.a,
-				hideNSFWPref: h.z,
-				language: h.Q,
+				hideNSFWPref: h.A,
+				language: h.R,
 				subreddit: b.z,
 				subredditAboutInfo: b.w
 			});
@@ -369,8 +369,8 @@
 				tooltipPosition: e.tooltipPosition,
 				tooltipType: e.tooltipType
 			}))));
-			const Q = "SubredditInfoTooltip";
-			class W extends o.a.Component {
+			const W = "SubredditInfoTooltip";
+			class J extends o.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(l(this.props.subredditName, this.props.postId))
 				}
@@ -380,7 +380,7 @@
 					} = this, t = Object(n.b)({
 						itemId: e.postId,
 						subredditName: e.subredditName,
-						tooltipIdPrefix: Q,
+						tooltipIdPrefix: W,
 						tooltipType: e.tooltipType
 					}), s = "".concat(t, "-hover-id");
 					return o.a.createElement(i.b, {
@@ -399,7 +399,7 @@
 					}))
 				}
 			}
-			t.default = Object(d.c)(W)
+			t.default = Object(d.c)(J)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -884,4 +884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.f9cf4f5a60cb5a621426.js.map
+//# sourceMappingURL=SubredditHovercard.7c79fc1fdab01e1060b7.js.map

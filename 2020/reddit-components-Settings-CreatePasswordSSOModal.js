@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.c85be562be4451fbedb6.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.bd392ea4d054ae601810.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
@@ -17,16 +17,16 @@
 				a = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/icons/svgs/Envelope/index.tsx"),
 				r = s("./src/reddit/icons/svgs/Warning/index.tsx"),
-				i = s("./src/reddit/components/EmailCollection/Envelope/index.m.less"),
-				c = s.n(i);
+				c = s("./src/reddit/components/EmailCollection/Envelope/index.m.less"),
+				i = s.n(c);
 			t.a = e => n.a.createElement("div", {
-				className: Object(a.a)(c.a.container, e.className)
+				className: Object(a.a)(i.a.container, e.className)
 			}, n.a.createElement("div", {
-				className: c.a.content
+				className: i.a.content
 			}, n.a.createElement(l.a, {
-				className: c.a.envelopeIcon
+				className: i.a.envelopeIcon
 			}), n.a.createElement(r.a, {
-				className: Object(a.a)(c.a.warningIcon, e.warningClassName)
+				className: Object(a.a)(i.a.warningIcon, e.warningClassName)
 			})))
 		},
 		"./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less": function(e, t, s) {
@@ -44,31 +44,31 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/actions/modal.ts"),
-				i = s("./src/reddit/actions/users.ts"),
-				c = s("./node_modules/fbt/lib/FbtPublic.js"),
+				c = s("./src/reddit/actions/users.ts"),
+				i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				d = s("./src/higherOrderComponents/asModal/index.tsx"),
-				p = s("./src/lib/classNames/index.ts"),
-				m = s("./src/reddit/components/EmailCollection/Envelope/index.tsx"),
+				m = s("./src/lib/classNames/index.ts"),
+				p = s("./src/reddit/components/EmailCollection/Envelope/index.tsx"),
 				u = s("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				h = s("./src/reddit/controls/Button/index.tsx"),
 				w = s("./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less"),
 				b = s.n(w);
 			var O = e => n.a.createElement(u.a, {
-					icon: n.a.createElement(m.a, null),
-					description: c.fbt._("We sent a message to {email} with a link to create your password.", [c.fbt._param("email", e.userEmail || "")], {
+					icon: n.a.createElement(p.a, null),
+					description: i.fbt._("We sent a message to {email} with a link to create your password.", [i.fbt._param("email", e.userEmail || "")], {
 						hk: "2YDohi"
 					}),
 					onClose: e.onClose,
-					title: c.fbt._("Check your email", null, {
+					title: i.fbt._("Check your email", null, {
 						hk: "1gDhgD"
 					})
 				}, n.a.createElement("div", {
 					className: b.a.buttonWrapper
 				}, n.a.createElement(h.f, {
-					className: Object(p.a)(b.a.commonBtn, b.a.primaryBtn),
+					className: Object(m.a)(b.a.commonBtn, b.a.primaryBtn),
 					onClick: e.onClose,
 					redditStyle: !0
-				}, c.fbt._("Ok", null, {
+				}, i.fbt._("Ok", null, {
 					hk: "wn6jy"
 				})))),
 				k = s("./src/reddit/helpers/trackers/sso.ts"),
@@ -79,7 +79,7 @@
 					t(k.e)
 				}, [t]);
 				return n.a.createElement(u.a, {
-					icon: n.a.createElement(m.a, null),
+					icon: n.a.createElement(p.a, null),
 					description: e.description,
 					onClose: e.onClose,
 					title: e.title
@@ -90,15 +90,15 @@
 						t(Object(k.b)("cancel")), e.onClose()
 					},
 					redditStyle: !0
-				}, c.fbt._("Cancel", null, {
+				}, i.fbt._("Cancel", null, {
 					hk: "Dz9bg"
 				})), n.a.createElement(h.f, {
-					className: Object(p.a)(b.a.commonBtn, b.a.primaryBtn),
+					className: Object(m.a)(b.a.commonBtn, b.a.primaryBtn),
 					onClick: () => {
 						t(Object(k.b)("continue")), e.handleContinueClick()
 					},
 					redditStyle: !0
-				}, c.fbt._("Continue", null, {
+				}, i.fbt._("Continue", null, {
 					hk: "2U1GLB"
 				}))))
 			};
@@ -144,70 +144,70 @@
 				}).apply(this, arguments)
 			}
 			var _ = e => n.a.createElement(o.Fragment, null, e.resetPasswordForEmailModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To change your email address, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To change your email address, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2cstEg"
 					}),
-					title: c.fbt._("Change your email address", null, {
+					title: i.fbt._("Change your email address", null, {
 						hk: "3GlFK"
 					}),
 					onClose: e.closeResetPasswordForEmailModal,
 					onOverlayClick: e.closeResetPasswordForEmailModal,
 					withOverlay: !0
 				}, e)), e.resetPasswordForAppleLinkModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To connect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To connect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2agOta"
 					}),
-					title: c.fbt._("Connect your Apple ID", null, {
+					title: i.fbt._("Connect your Apple ID", null, {
 						hk: "Cg7l9"
 					}),
 					onClose: e.closeResetPasswordForAppleLinkModal,
 					onOverlayClick: e.closeResetPasswordForAppleLinkModal,
 					withOverlay: !0
 				}, e)), e.resetPasswordForAppleLinkModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To connect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To connect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2agOta"
 					}),
-					title: c.fbt._("Connect your Apple ID", null, {
+					title: i.fbt._("Connect your Apple ID", null, {
 						hk: "Cg7l9"
 					}),
 					onClose: e.closeResetPasswordForAppleLinkModal,
 					onOverlayClick: e.closeResetPasswordForAppleLinkModal,
 					withOverlay: !0
 				}, e)), e.resetPasswordForAppleUnlinkModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To disconnect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To disconnect your Apple ID, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "47P4uJ"
 					}),
-					title: c.fbt._("Disconnect from Apple", null, {
+					title: i.fbt._("Disconnect from Apple", null, {
 						hk: "1UpB3j"
 					}),
 					onClose: e.closeResetPasswordForAppleUnlinkModal,
 					onOverlayClick: e.closeResetPasswordForAppleUnlinkModal,
 					withOverlay: !0
 				}, e)), e.resetPasswordForGoogleLinkModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To connect your Google account, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To connect your Google account, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "4xWcaj"
 					}),
-					title: c.fbt._("Connect your Google Account", null, {
+					title: i.fbt._("Connect your Google Account", null, {
 						hk: "3JniU1"
 					}),
 					onClose: e.closeResetPasswordForGoogleLinkModal,
 					onOverlayClick: e.closeResetPasswordForGoogleLinkModal,
 					withOverlay: !0
 				}, e)), e.resetPasswordForGoogleUnlinkModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To disconnect your Google account, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To disconnect your Google account, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "2MyWqh"
 					}),
-					title: c.fbt._("Disconnect from Google", null, {
+					title: i.fbt._("Disconnect from Google", null, {
 						hk: "2sw2TE"
 					}),
 					onClose: e.closeResetPasswordForGoogleUnlinkModal,
 					onOverlayClick: e.closeResetPasswordForGoogleUnlinkModal,
 					withOverlay: !0
 				}, e)), e.resetPasswordForDeactivateAccountModalOpen && n.a.createElement(y, f({
-					description: c.fbt._("To deactivate your Reddit account, you need to create a Reddit password first. We'll walk you through it.", null, {
+					description: i.fbt._("To deactivate your Reddit account, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "C7fCQ"
 					}),
-					title: c.fbt._("Deactivate account", null, {
+					title: i.fbt._("Deactivate account", null, {
 						hk: "VyFq"
 					}),
 					onClose: e.closeResetPasswordForDeactivateAccountModal,
@@ -225,9 +225,9 @@
 					resetPasswordForDeactivateAccountModalOpen: Object(P.b)(x.j),
 					resetPasswordForGoogleLinkModalOpen: Object(P.b)(x.l),
 					resetPasswordForGoogleUnlinkModalOpen: Object(P.b)(x.m),
-					userEmail: M.l,
+					userEmail: M.m,
 					username: e => {
-						const t = Object(M.i)(e);
+						const t = Object(M.j)(e);
 						return t && Object(j.f)(t) || ""
 					}
 				}),
@@ -238,7 +238,7 @@
 					closeResetPasswordForDeactivateAccountModal: () => e(Object(r.g)(x.j)),
 					closeResetPasswordForGoogleLinkModal: () => e(Object(r.g)(x.l)),
 					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(x.m)),
-					sendResetEmail: t => e(Object(i.z)(t))
+					sendResetEmail: t => e(Object(c.z)(t))
 				}));
 			t.default = F(e => e.userEmail && e.username ? n.a.createElement(_, e) : null)
 		},
@@ -261,37 +261,37 @@
 				a = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				r = s("./src/reddit/components/Settings/ModalContainer/index.m.less"),
-				i = s.n(r);
+				c = s.n(r);
 			t.a = e => {
 				const {
 					bodyClassName: t,
 					children: s,
 					className: o,
 					description: r,
-					descriptionClassName: c,
+					descriptionClassName: i,
 					headerClassName: d,
-					icon: p,
-					iconClassName: m,
+					icon: m,
+					iconClassName: p,
 					onClose: u,
 					title: h
 				} = e;
 				return n.a.createElement("div", {
-					className: Object(a.a)(i.a.container, o)
+					className: Object(a.a)(c.a.container, o)
 				}, u && n.a.createElement("button", {
-					className: i.a.closeButton,
+					className: c.a.closeButton,
 					onClick: u
 				}, n.a.createElement(l.a, {
-					className: i.a.closeIcon
+					className: c.a.closeIcon
 				})), n.a.createElement("div", {
-					className: Object(a.a)(i.a.header, d)
-				}, p && n.a.createElement("div", {
-					className: Object(a.a)(i.a.icon, m)
-				}, p), n.a.createElement("h2", {
-					className: i.a.title
+					className: Object(a.a)(c.a.header, d)
+				}, m && n.a.createElement("div", {
+					className: Object(a.a)(c.a.icon, p)
+				}, m), n.a.createElement("h2", {
+					className: c.a.title
 				}, h)), r && n.a.createElement("p", {
-					className: Object(a.a)(i.a.description, c)
+					className: Object(a.a)(c.a.description, i)
 				}, r), n.a.createElement("div", {
-					className: Object(a.a)(i.a.body, t)
+					className: Object(a.a)(c.a.body, t)
 				}, s))
 			}
 		},
@@ -324,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Settings-CreatePasswordSSOModal.c85be562be4451fbedb6.js.map
+//# sourceMappingURL=reddit-components-Settings-CreatePasswordSSOModal.bd392ea4d054ae601810.js.map

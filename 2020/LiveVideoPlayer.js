@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a1651e8ccb423d710705.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.367cc613ae63258b71c5.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -27,11 +27,11 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return L
+				return w
 			})), s.d(t, "Overlay", (function() {
-				return T
-			})), s.d(t, "LiveIndicator", (function() {
 				return E
+			})), s.d(t, "LiveIndicator", (function() {
+				return f
 			}));
 			var i = s("./node_modules/lodash/isUndefined.js"),
 				a = s.n(i),
@@ -39,28 +39,33 @@
 				n = s.n(o),
 				r = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/lib/classNames/index.ts"),
-				h = s("./src/lib/focusVisible/index.js"),
-				u = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
-				c = s("./src/reddit/components/HlsVideo/index.tsx"),
-				m = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
-				p = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
-				v = s("./src/reddit/constants/keycodes.ts"),
-				b = s("./src/reddit/selectors/platform.ts"),
-				g = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				P = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				M = s.n(P);
+				d = s("./src/higherOrderComponents/withMux/index.tsx"),
+				h = s("./src/lib/classNames/index.ts"),
+				u = s("./src/lib/focusVisible/index.js"),
+				c = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				m = s("./src/reddit/components/HlsVideo/index.tsx"),
+				p = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				v = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
+				b = s("./src/reddit/constants/keycodes.ts"),
+				g = s("./src/reddit/selectors/platform.ts"),
+				P = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				M = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				S = s.n(M);
 			const {
-				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = 3e3, V = Object(l.c)({
-				isOverlayOpen: b.h,
-				unavailableVideoUrl: g.p
-			}), C = Object(r.b)(V, (e, t) => ({
-				onHeartbeatSubscribe: t => e(u.a.subscribeHeartbeat(t))
+				fbt: V
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(d.a)(m.a, {
+				playerName: "RPAN Listing Player"
+			}), C = 3e3, L = Object(l.c)({
+				isOverlayOpen: g.h,
+				unavailableVideoUrl: P.p
+			}), T = Object(r.b)(L, (e, t) => ({
+				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
 			}));
-			class L extends o.Component {
+			class w extends o.Component {
 				constructor(e) {
-					super(e), this.sleepTimeout = null, this.handleClick = e => {
+					super(e), this.sleepTimeout = null, this.handleHlsRefChange = e => {
+						this.hlsVideo = e
+					}, this.handleClick = e => {
 						a()(this.state.settingChange) || (e.stopPropagation(), this.setState({
 							settingChange: void 0
 						}))
@@ -73,7 +78,7 @@
 							hasError: !0
 						})
 					}, this.onKeyPress = e => {
-						e.key === v.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
+						e.key === b.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
 					}, this.handleLevelLoaded = e => {
 						const {
 							live: t,
@@ -90,9 +95,9 @@
 							volumeControl: s
 						} = this;
 						e.target instanceof Element && (e.stopPropagation(), t && t.parentRect && t.parentRect.contains(e.target) && (this.setState({
-							settingChange: m.a.SeekBar
+							settingChange: p.a.SeekBar
 						}), t.handleMouseDown(e)), s && s.container && s.container.contains(e.target) && (this.setState({
-							settingChange: m.a.Volume
+							settingChange: p.a.Volume
 						}), s.handleMouseDown(e)))
 					}, this.handleMouseLeave = () => {
 						this.setState({
@@ -102,17 +107,17 @@
 					}, this.handleMouseMove = () => {
 						this.state.isHovered || this.setState({
 							isHovered: !0
-						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, y)
+						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, C)
 					}, this.handleMouseMoveControls = e => {
 						const {
 							seekBar: t,
 							volumeControl: s
 						} = this;
 						switch (this.state.settingChange) {
-							case m.a.SeekBar:
+							case p.a.SeekBar:
 								t && t.handleMouseMove(e);
 								break;
-							case m.a.Volume:
+							case p.a.Volume:
 								s && s.handleMouseMove(e)
 						}
 					}, this.handleMouseUpControls = e => {
@@ -121,10 +126,10 @@
 							volumeControl: s
 						} = this;
 						switch (e.stopPropagation(), this.state.settingChange) {
-							case m.a.SeekBar:
+							case p.a.SeekBar:
 								t && t.handleMouseUp(e);
 								break;
-							case m.a.Volume:
+							case p.a.Volume:
 								s && s.handleMouseUp(e)
 						}
 					}, this.handlePause = () => {
@@ -215,7 +220,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusVisibleRef.current;
-					e.classList.add(M.a.focusVisible), Object(h.a)(e)
+					e.classList.add(S.a.focusVisible), Object(u.a)(e)
 				}
 				componentDidUpdate(e, t) {
 					const {
@@ -231,8 +236,8 @@
 				}
 				render() {
 					return n.a.createElement("div", {
-						className: Object(d.a)(M.a.LiveVideoPlayer, {
-							[M.a.isSleeping]: this.state.isSleeping && !this.shouldPause
+						className: Object(h.a)(S.a.LiveVideoPlayer, {
+							[S.a.isSleeping]: this.state.isSleeping && !this.shouldPause
 						}),
 						onBlur: this.handleMouseLeave,
 						onClick: this.handleClick,
@@ -243,12 +248,16 @@
 					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
-					return n.a.createElement(T, null, this.state.live ? n.a.createElement(E, null) : null, this.shouldRenderControls ? this.renderControls() : null)
+					return n.a.createElement(E, null, this.state.live ? n.a.createElement(f, null) : null, this.shouldRenderControls ? this.renderControls() : null)
 				}
 				renderVideo() {
+					const {
+						postId: e,
+						postTitle: t
+					} = this.props;
 					return n.a.createElement("div", {
-						className: M.a.clip9x16
-					}, n.a.createElement(c.a, {
+						className: S.a.clip9x16
+					}, n.a.createElement(y, {
 						autoplay: this.shouldPause,
 						controls: !1,
 						isPaused: this.shouldPause,
@@ -256,6 +265,10 @@
 						playMutedOnPrevented: !0,
 						startTime: this.state.currentTime,
 						url: this.url,
+						muxVideoDuration: void 0,
+						muxVideoId: e,
+						muxVideoIsLive: this.state.live,
+						muxVideoTitle: t,
 						onEnded: this.handleEnded,
 						onError: this.handleError,
 						onLevelLoaded: this.handleLevelLoaded,
@@ -263,7 +276,7 @@
 						onPlay: this.handlePlay,
 						onResourceRemoved: this.handleResourceRemoved,
 						onTimeUpdate: this.handleTimeUpdate,
-						ref: e => this.hlsVideo = e
+						ref: this.handleHlsRefChange
 					}))
 				}
 				renderControls() {
@@ -277,11 +290,11 @@
 						volume: r
 					} = this.state;
 					return n.a.createElement("div", {
-						className: M.a.controls,
+						className: S.a.controls,
 						onMouseDown: this.handleMouseDownControls,
 						onMouseMove: this.handleMouseMoveControls,
 						onMouseUp: this.handleMouseUpControls
-					}, n.a.createElement(p.a, {
+					}, n.a.createElement(v.a, {
 						currentTime: e,
 						hasAudio: !0,
 						hideControlBar: !s || i && !this.shouldPause,
@@ -314,21 +327,21 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = C(L);
-			const T = e => {
+			t.default = T(w);
+			const E = e => {
 					let {
 						children: t
 					} = e;
 					return n.a.createElement("div", {
-						className: M.a.Overlay
+						className: S.a.Overlay
 					}, t)
 				},
-				E = () => n.a.createElement("span", {
-					className: M.a.LiveIndicator
-				}, S._("Live", null, {
+				f = () => n.a.createElement("span", {
+					className: S.a.LiveIndicator
+				}, V._("Live", null, {
 					hk: "TwJSs"
 				}))
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.a1651e8ccb423d710705.js.map
+//# sourceMappingURL=LiveVideoPlayer.367cc613ae63258b71c5.js.map

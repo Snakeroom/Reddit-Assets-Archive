@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.78f14aaa897f6deecfc7.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.b6abe650932425d30ff5.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -526,8 +526,8 @@
 				P = t("./src/reddit/contexts/PageLayer/index.tsx"),
 				j = t("./src/reddit/models/Gold/Coins/index.ts"),
 				O = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				y = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				I = t("./src/reddit/selectors/user.ts"),
+				I = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				y = t("./src/reddit/selectors/user.ts"),
 				T = t("./src/reddit/components/CoinPurchaseModal/Loader.tsx"),
 				M = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
 				L = t.n(M),
@@ -604,8 +604,8 @@
 				},
 				G = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
 				z = t("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				F = t.n(z),
-				q = function(e, a) {
+				q = t.n(z),
+				F = function(e, a) {
 					var t = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && a.indexOf(s) < 0 && (t[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -618,11 +618,11 @@
 					var {
 						className: a,
 						isLargeView: t
-					} = e, s = q(e, ["className", "isLargeView"]);
-					const n = t ? F.a.large : "",
+					} = e, s = F(e, ["className", "isLargeView"]);
+					const n = t ? q.a.large : "",
 						c = Object(G.b)(s);
 					return l.a.createElement("div", {
-						className: Object(A.a)(c, F.a.packagePlaceholder, n, a)
+						className: Object(A.a)(c, q.a.packagePlaceholder, n, a)
 					})
 				},
 				Q = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
@@ -753,11 +753,11 @@
 					activeSaleConfig: O.a,
 					coinPackages: O.b,
 					dealCoinPackages: O.d,
-					isGold: I.p,
-					isLoggedIn: I.H,
+					isGold: y.q,
+					isLoggedIn: y.I,
 					premiumPackages: O.e,
 					purchaseCatalogPending: O.g,
-					shouldShowCoinPurchaseModal: y.r
+					shouldShowCoinPurchaseModal: I.r
 				}),
 				ie = Object(o.b)(re, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(m.b)("/settings/gold")),
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.78f14aaa897f6deecfc7.js.map
+//# sourceMappingURL=Coins.b6abe650932425d30ff5.js.map

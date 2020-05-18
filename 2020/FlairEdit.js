@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.f88aab1ed1055d1239ee.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.4c80bbfef0ccbf82d48b.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/fbjs/lib/emptyFunction.js": function(e, t, o) {
@@ -247,7 +247,7 @@
 				},
 				H = Object(c.c)({
 					emojis: y.c,
-					language: I.Q
+					language: I.R
 				}),
 				G = {
 					onGetSubredditEmojis: g.l
@@ -327,12 +327,12 @@
 			var q = Object(l.b)(H, G)(J),
 				z = o("./src/reddit/controls/IconTooltip/index.tsx");
 			o("./node_modules/draft-js/dist/Draft.css"), o("./node_modules/core-js/modules/es6.regexp.replace.js");
-			const Q = /\r?\n|\r/g;
-			var Y, V = e => e.replace(Q, ""),
+			const Y = /\r?\n|\r/g;
+			var Q, V = e => e.replace(Y, ""),
 				X = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx");
 			! function(e) {
 				e.AddImage = "add_image", e.Add = "add", e.Delete = "delete", e.Edit = "edit", e.EnableOff = "enable_off", e.EnableOn = "enable_on"
-			}(Y || (Y = {}));
+			}(Q || (Q = {}));
 			const Z = ":",
 				$ = /:[A-Za-z0-9_-]+/g;
 			var ee = o("./src/reddit/controls/ImageDisplay/index.tsx"),
@@ -380,7 +380,7 @@
 					})
 				}),
 				ae = Object(c.c)({
-					language: I.Q,
+					language: I.R,
 					filteredEmojis: re
 				}),
 				le = {
@@ -713,11 +713,11 @@
 					targetPosition: ["right", "top"],
 					tooltipPosition: ["right", "bottom"]
 				},
-				Qe = {
+				Ye = {
 					targetPosition: ["right", "bottom"],
 					tooltipPosition: ["right", "top"]
 				},
-				Ye = e => {
+				Qe = e => {
 					const t = [];
 					return e.type === We.f.Richtext ? e.richtext.forEach(e => {
 						e.e === We.c.Emoji ? t.push({
@@ -774,7 +774,7 @@
 							currentContent: i,
 							selection: c
 						}), t && (o = s.EditorState.forceSelection(o, c)), o
-					}(Ye(e))
+					}(Qe(e))
 				},
 				Xe = (e, t, o, s, i) => {
 					const n = (e => {
@@ -828,7 +828,7 @@
 						cssClass: i
 					}
 				},
-				Ze = (e, t) => n()(Ye(e), Ye(t)),
+				Ze = (e, t) => n()(Qe(e), Qe(t)),
 				$e = Object(d.a)(h.a.wrapped(x.a, "Component", Ge.a)),
 				et = e => {
 					e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
@@ -978,7 +978,7 @@
 						isOverlay: !0,
 						isOpen: l,
 						tooltipId: o
-					}, this.state.shouldPositionPickerOnTop ? ze : Qe), a.a.createElement("div", {
+					}, this.state.shouldPositionPickerOnTop ? ze : Ye), a.a.createElement("div", {
 						onClick: et
 					}, a.a.createElement(q, {
 						flairTemplateType: n,
@@ -1296,4 +1296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FlairEdit.f88aab1ed1055d1239ee.js.map
+//# sourceMappingURL=FlairEdit.4c80bbfef0ccbf82d48b.js.map

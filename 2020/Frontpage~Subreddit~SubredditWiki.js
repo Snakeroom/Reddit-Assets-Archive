@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.ce05319a0032e725240a.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.2bbe9b716832926db691.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -288,7 +288,7 @@
 					let a = "";
 					return n && (a += "overlay-"), a += "sidebar-".concat(e), null != r && (a += "-".concat(r)), a
 				},
-				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(y.B)(e.media) && e.media.content)),
+				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(y.A)(e.media) && e.media.content)),
 				L = e => !!e && e.isBlank,
 				P = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
@@ -428,7 +428,7 @@
 						listingName: s,
 						pageLayer: n
 					}),
-					a = Object(d.y)(e) || Object(c.a)(e),
+					a = Object(d.z)(e) || Object(c.a)(e),
 					i = Object(o.e)(e);
 				return {
 					canShowAd: r && !a,
@@ -776,7 +776,7 @@
 				u = s("./src/reddit/actions/subscription/index.ts"),
 				b = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-				language: b.Q
+				language: b.R
 			});
 			var h = Object(i.b)(p, (e, t) => {
 					const s = t.widget.id || void 0;
@@ -842,7 +842,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(c.c)({
-					hideNSFWPref: b.z
+					hideNSFWPref: b.A
 				}),
 				w = Object(i.b)(j)(e => a.a.createElement("div", {
 					className: C.a.communityItemContainer
@@ -960,7 +960,7 @@
 				i = s("./src/reddit/selectors/subreddit.ts"),
 				o = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				language: o.Q,
+				language: o.R,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -1045,4 +1045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.ce05319a0032e725240a.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.2bbe9b716832926db691.js.map

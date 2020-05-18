@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.19e0b52bbc5cde2cf38c.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f6c078e52c20b55eb633.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -33,10 +33,10 @@
 				j = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				E = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
 				x = t("./src/reddit/components/PennyPurchaseModal/index.m.less"),
-				k = t.n(x);
+				T = t.n(x);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function k() {
+				return (k = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o])
@@ -53,7 +53,7 @@
 					coinBalance: v.d,
 					gildThingId: b.p,
 					isIframed: C.h,
-					nightmode: v.S,
+					nightmode: v.T,
 					savedCardsPending: b.t,
 					selectedAward: M.a,
 					selectedPayment: b.b,
@@ -61,7 +61,7 @@
 					stripeTokenPending: b.l,
 					paypalErrorMessage: b.c,
 					userName: e => {
-						const s = Object(v.i)(e);
+						const s = Object(v.j)(e);
 						return "u/".concat(Object(y.f)(s))
 					}
 				}),
@@ -174,8 +174,8 @@
 						paddingTop: 12,
 						paddingBottom: 12
 					} : {});
-					return a.a.createElement(I, T({}, this.props, {
-						className: Object(l.a)(this.props.className, k.a.pennyPurchaseModal),
+					return a.a.createElement(I, k({}, this.props, {
+						className: Object(l.a)(this.props.className, T.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
 						onTryCloseModal: this.onTryCloseModal,
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.19e0b52bbc5cde2cf38c.js.map
+//# sourceMappingURL=PennyPurchaseModal.f6c078e52c20b55eb633.js.map

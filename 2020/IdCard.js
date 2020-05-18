@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.aff5603f9fd9ad9aa167.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.33609b57267143e97a25.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -981,7 +981,7 @@
 				return n
 			};
 			const M = Object(u.c)({
-				isLoggedIn: F.H
+				isLoggedIn: F.I
 			});
 			var D = Object(i.b)(M, e => ({
 				openLoginModal: () => {
@@ -1322,7 +1322,7 @@
 				vt = Object(it.a)("spBadges", rt.a),
 				Et = Object(u.c)({
 					badgesEnabled: Oe.d.spBadges,
-					currentUser: F.i,
+					currentUser: F.j,
 					userFlairData: ct.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -1410,8 +1410,8 @@
 			const Bt = G.a.wrapped(k.n, "TertiaryButton", Ft.a),
 				Lt = Object(u.c)({
 					shouldShowFlairPicker: ct.b,
-					stylesDisabledForSubreddit: F.bb,
-					stylesDisabledGlobally: F.cb
+					stylesDisabledForSubreddit: F.cb,
+					stylesDisabledGlobally: F.db
 				});
 			class Rt extends o.a.Component {
 				constructor(e) {
@@ -1492,7 +1492,7 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(re.h)(e, Ve.e.Post),
-					isLoggedIn: F.H,
+					isLoggedIn: F.I,
 					moderatorPermissions: (e, t) => {
 						const n = Object(re.E)(e, t.listingName);
 						if (n) return Object(Qe.j)(e, {
@@ -2470,7 +2470,7 @@
 				i = n("./src/reddit/selectors/subreddit.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: a.Q,
+				language: a.R,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -2832,7 +2832,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(o.E)(e) || s.v.Treatment1 === Object(r.c)(e, {
+				return Object(o.F)(e) || s.v.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.m
 				})
@@ -2840,4 +2840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.aff5603f9fd9ad9aa167.js.map
+//# sourceMappingURL=IdCard.33609b57267143e97a25.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.386fc648a288df3b4dfe.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.184a66fe94d10c26ca72.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -153,7 +153,7 @@
 				}),
 				j = Object(c.c)({
 					isDropdownMenuOpen: e => Object(_.a)(e) === I,
-					isOwnProfile: (e, t) => Object(O.L)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(O.M)(e, t.profileName),
 					isSnoovatar30Enabled: E.d.snoovatar30,
 					isSubscriptionsPinned: N.b
 				}),
@@ -632,8 +632,8 @@
 				x = n("./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less"),
 				f = n.n(x);
 			const h = Object(a.c)({
-					currentUser: b.i,
-					language: b.Q,
+					currentUser: b.j,
+					language: b.R,
 					moderated: m.n,
 					subscriptions: p.f,
 					hasMoreModerated: m.d,
@@ -1185,7 +1185,7 @@
 				m = n("./src/reddit/actions/subscription/index.ts"),
 				p = n("./src/reddit/selectors/user.ts");
 			const b = Object(c.c)({
-				language: p.Q
+				language: p.R
 			});
 			var x = Object(o.b)(b, (e, t) => {
 					const n = t.widget.id || void 0;
@@ -1251,7 +1251,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				L = Object(c.c)({
-					hideNSFWPref: p.z
+					hideNSFWPref: p.A
 				}),
 				j = Object(o.b)(L)(e => i.a.createElement("div", {
 					className: w.a.communityItemContainer
@@ -1447,7 +1447,7 @@
 					let {
 						subredditOrProfile: n
 					} = t;
-					return n.type === l.a.PROFILE ? Object(b.eb)(e, {
+					return n.type === l.a.PROFILE ? Object(b.fb)(e, {
 						userName: n.name
 					}) : null
 				}
@@ -1480,7 +1480,7 @@
 				o = n("./src/reddit/selectors/subreddit.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: a.Q,
+				language: a.R,
 				userIsSubscriber: o.bb
 			}), (e, t) => {
 				let {
@@ -1557,4 +1557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.386fc648a288df3b4dfe.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.184a66fe94d10c26ca72.js.map

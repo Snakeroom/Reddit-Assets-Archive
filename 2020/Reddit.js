@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.22d1b2e88af3ff04fb67.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.43a72049b40cf92f5b65.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -756,7 +756,7 @@
 						apiContext: n
 					} = s;
 					const a = t();
-					if (!Object(u.i)(a)) return;
+					if (!Object(u.j)(a)) return;
 					const r = Object(m.b)(a),
 						l = Object(m.a)(a);
 					if (r || l) return;
@@ -792,7 +792,7 @@
 						apiContext: p
 					} = a;
 					const h = s();
-					if (!Object(u.i)(h)) return;
+					if (!Object(u.j)(h)) return;
 					if (Object(m.e)(h)) return;
 					const b = Object(m.d)(h);
 					t(C({
@@ -938,7 +938,7 @@
 					if (d) {
 						const s = [],
 							l = t();
-						Object(c.H)(l) || s.push(e(Object(o.u)()));
+						Object(c.I)(l) || s.push(e(Object(o.u)()));
 						const m = Object(n.a)(d, null);
 						s.push(e(Object(r.i)(m, d, {}))), await Promise.all(s);
 						const u = Object(i.E)(t(), d);
@@ -984,7 +984,7 @@
 				const w = [t(Object(b.x)(!0)), t(Object(m.a)())];
 				s().economics.paymentSystems.status === O.a.NotFetched && w.push(t(Object(l.a)())), await Promise.all(w); {
 					const e = s();
-					if (!Object(S.H)(e)) return Object(x.a)(t, e)
+					if (!Object(S.I)(e)) return Object(x.a)(t, e)
 				}
 				const {
 					page: j = r.Lb.Account
@@ -1028,7 +1028,7 @@
 					title: Object(n.i)()
 				})), await e(Object(o.u)());
 				const s = t();
-				Object(c.H)(s) ? await e(Object(r.f)()) : Object(i.a)(e, s)
+				Object(c.I)(s) ? await e(Object(r.f)()) : Object(i.a)(e, s)
 			}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, s) {
@@ -1067,7 +1067,7 @@
 				}, v = e => async (t, s) => {
 					await t(Object(r.h)());
 					const n = s(),
-						a = Object(g.I)(n),
+						a = Object(g.J)(n),
 						o = Object(h.b)(n) && e === m.m;
 					if (Object(b.a)(n, e)) return;
 					const i = e && Object(p.f)(n, {
@@ -1900,7 +1900,7 @@
 			}
 			const es = Object(u.b)(() => Object(b.c)({
 				authorFlair: qt.b,
-				currentUser: Vt.i,
+				currentUser: Vt.j,
 				inContextAuthor: qt.c,
 				isMod: (e, t) => !!Object(Wt.j)(e, t),
 				userFlairData: Qt.c
@@ -1961,11 +1961,11 @@
 				subredditId: ns.d,
 				subredditPremiumPurchaseModalOpen: Object(tt.b)(G.a.SUBREDDIT_PREMIUM_PURCHASE_MODAL),
 				userFlairModalIsOpen: Object(tt.b)(G.a.USER_FLAIR_MODAL_ID),
-				userHasSeenRedesignModal: Vt.u,
-				userInRedesignBeta: Vt.B,
-				userIsLoggedIn: Vt.H,
-				userIsMod: Vt.I,
-				userIsNew: Vt.K
+				userHasSeenRedesignModal: Vt.v,
+				userInRedesignBeta: Vt.C,
+				userIsLoggedIn: Vt.I,
+				userIsMod: Vt.J,
+				userIsNew: Vt.L
 			});
 			class us extends m.a.Component {
 				constructor(e) {
@@ -3303,9 +3303,9 @@
 				}).apply(this, arguments)
 			}
 			const Ra = Object(b.c)({
-					currentUser: Vt.i,
-					hideNSFWPref: Vt.z,
-					isLoggedIn: Vt.H
+					currentUser: Vt.j,
+					hideNSFWPref: Vt.A,
+					isLoggedIn: Vt.I
 				}),
 				La = Object(u.b)(Ra, (e, t) => ({
 					toggleFavorite: s => {
@@ -3601,7 +3601,7 @@
 								model: {
 									displayText: ""
 								}
-							}) : Ea(a, s), Pa.forEach(e => a.push(e(r))), Object(Vt.ab)(e) && a.push({
+							}) : Ea(a, s), Pa.forEach(e => a.push(e(r))), Object(Vt.bb)(e) && a.push({
 								id: Vn.CreateCommunity,
 								type: ga.GenericLink,
 								model: {
@@ -3630,7 +3630,7 @@
 								},
 								telemetryNoun: "create_community"
 							}), xa.forEach(e => a.push(e(r))), r.isMod && Oa.forEach(e => a.push(e(r)))
-						} else s.subscriptions.length || Object(Vt.H)(e) ? va.forEach(e => a.push(e(null))) : ya.forEach(e => a.push(e(null))), a.push({
+						} else s.subscriptions.length || Object(Vt.I)(e) ? va.forEach(e => a.push(e(null))) : ya.forEach(e => a.push(e(null))), a.push({
 							id: "reddit-other",
 							type: ga.Header,
 							model: {
@@ -3905,9 +3905,9 @@
 				}),
 				ar = Object(b.c)({
 					currentPage: ra,
-					hideNSFWPref: Vt.z,
+					hideNSFWPref: Vt.A,
 					isDropdownOpen: kn.a,
-					isLoggedIn: Vt.H,
+					isLoggedIn: Vt.I,
 					isOverlayOpen: ns.h,
 					isPinnedSubscriptionsMenuDisabled: Mn.a,
 					isSubscriptionsPinned: Mn.b
@@ -4576,7 +4576,7 @@
 				no = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				ao = s("./src/reddit/selectors/experiments/trending.ts"),
 				ro = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const oo = e => Object(Vt.E)(e) || fs.jc.Treatment1 === Object(ro.c)(e, {
+			const oo = e => Object(Vt.F)(e) || fs.jc.Treatment1 === Object(ro.c)(e, {
 				experimentEligibilitySelector: ro.a,
 				experimentName: fs.gc
 			});
@@ -4599,19 +4599,19 @@
 				})),
 				bo = Object(u.b)(() => Object(b.c)({
 					currentSubredditName: ns.e,
-					currentUser: Vt.i,
+					currentUser: Vt.j,
 					dropdownIsOpen: Object(co.b)(Wr),
 					typeaheadIdsByQuery: io.c,
 					isInTrendingExperiment: ao.a,
 					isInTypeaheadExperiment: oo,
-					isLoggedIn: Vt.H,
+					isLoggedIn: Vt.I,
 					isSubredditSearchAllowed: (e, t) => {
 						let {
 							pageLayer: s
 						} = t;
 						return Object(Sn.L)(s)
 					},
-					language: Vt.Q,
+					language: Vt.R,
 					multireddit: Sn.d,
 					routeName: ns.q,
 					subreddit: Sn.q,
@@ -5153,7 +5153,7 @@
 				hi = s.n(pi);
 			const bi = Object(b.c)({
 				coinPackages: di.b,
-				isPremiumSubscriber: Vt.q,
+				isPremiumSubscriber: Vt.r,
 				premiumPackages: di.e,
 				purchaseCatalogError: di.f,
 				purchaseCatalogPending: di.g
@@ -5651,7 +5651,7 @@
 				_c = Object(u.b)(() => Object(b.c)({
 					isModModeEnabled: rs.t,
 					isOpen: Object(co.b)("USER_DROPDOWN_ID"),
-					nightmode: Vt.S,
+					nightmode: Vt.T,
 					url: ns.r
 				}), e => ({
 					toggleNightmode: t => e(Object(T.w)(t)),
@@ -5875,7 +5875,7 @@
 				}),
 				qc = Object(b.c)({
 					activeDropdownId: co.a,
-					email: Vt.l,
+					email: Vt.m,
 					isChangeUsernameActiveVariant: Lc.a,
 					isChangeUsernameTooltipShowing: e => e.isChangeUsernameTooltipShowing,
 					isCustomizeFlyoutShowing: e => e.user.isCustomizeFlyoutShowing,
@@ -5885,9 +5885,9 @@
 						let {
 							pageLayer: s
 						} = t;
-						return Object(Sn.K)(s) && !!Object(Vt.l)(e) && !Object(Vt.x)(e) && Object(Vt.H)(e) && !Object(Vt.F)(e)
+						return Object(Sn.K)(s) && !!Object(Vt.m)(e) && !Object(Vt.y)(e) && Object(Vt.I)(e) && !Object(Vt.G)(e)
 					},
-					unreadNotifications: Vt.db
+					unreadNotifications: Vt.eb
 				}),
 				Wc = Object(u.b)(qc, (e, t) => ({
 					closeChangeUsernameTooltip: () => e(Object(To.d)()),
@@ -6144,8 +6144,8 @@
 			}
 			const nd = M.a.header("HeaderDynamicStyles", td.a),
 				ad = Object(b.c)({
-					isLoggedIn: Vt.H,
-					isNightmode: Vt.S,
+					isLoggedIn: Vt.I,
+					isNightmode: Vt.T,
 					isResponsiveSettingsEnabled: yo.a,
 					language: e => e.user.language,
 					isBladeOpen: e => !!e.structuredStyles.isEditing
@@ -6836,12 +6836,12 @@
 							pageLayer: t
 						})
 					},
-					hasInvalidSession: Vt.s,
+					hasInvalidSession: Vt.t,
 					language: e => e.user.language,
-					isLoggedIn: Vt.H,
+					isLoggedIn: Vt.I,
 					isSubscriptionsPinned: Mn.b,
-					isSuspended: Vt.M,
-					isFPR: Vt.F,
+					isSuspended: Vt.N,
+					isFPR: Vt.G,
 					posts: Cm.R,
 					profileCollectionsEnabled: zl.a,
 					showEmailCollectionBanner: e => !Object(Sn.J)(Object(ns.b)(e)) && wm(e)
@@ -8136,12 +8136,12 @@
 			}, (e, t) => {
 				if (Object(p.j)(e)) return Object(p.g)(e, t)
 			}, C, Object(c.a)((e, t) => {
-				if (Object(p.j)(e) || Object(b.cb)(e)) return;
+				if (Object(p.j)(e) || Object(b.db)(e)) return;
 				const s = C(e, t);
 				if (!s) return;
 				const n = Object(h.E)(e, s);
 				if (!n) return;
-				if (Object(b.bb)(e, {
+				if (Object(b.cb)(e, {
 						subredditId: n
 					})) return;
 				const a = e.structuredStyles.models[n];
@@ -8155,9 +8155,9 @@
 				return n ? n.emojisCustomSize : void 0
 			}, (e, t) => {
 				if (t.forceDayMode) return !1;
-				return Object(b.kb)(e).nightmode
+				return Object(b.lb)(e).nightmode
 			}, (e, t) => {
-				if (!Object(b.kb)(e).hideNSFW) return !0;
+				if (!Object(b.lb)(e).hideNSFW) return !0;
 				const s = C(e, t);
 				if (s) {
 					const t = Object(h.z)(e, {
@@ -8344,8 +8344,8 @@
 				return s
 			};
 			const m = Object(o.c)({
-					currentUser: i.i,
-					shouldHideNSFW: i.z
+					currentUser: i.j,
+					shouldHideNSFW: i.A
 				}),
 				u = Object(r.b)(m);
 			t.a = u(e => {
@@ -9864,7 +9864,7 @@
 				K = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				Y = s("./src/reddit/selectors/user.ts");
 			const J = Object(W.c)({
-					shouldEnable: e => Object(K.b)(e) || Object(Y.E)(e)
+					shouldEnable: e => Object(K.b)(e) || Object(Y.F)(e)
 				}),
 				X = Object(G.b)(J),
 				$ = () => m.a.createElement(l.Fragment, null);
@@ -10207,7 +10207,7 @@
 				enabled: !0,
 				syncOnMount: !0
 			};
-			const tt = Object(W.a)(Y.H, e => ({
+			const tt = Object(W.a)(Y.I, e => ({
 				storageKey: Ke.o,
 				value: {},
 				enabled: !e
@@ -10231,11 +10231,11 @@
 						broadcaster: t,
 						middleware: s => {
 							const n = s.getState();
-							return (Object(K.b)(n) || Object(Y.E)(n)) && (e = !0, Object(pt.c)(t)), n => a => {
+							return (Object(K.b)(n) || Object(Y.F)(n)) && (e = !0, Object(pt.c)(t)), n => a => {
 								const r = n(a),
 									o = s.getState();
 								if (!Object(K.b)(o)) {
-									const s = Object(Y.E)(o);
+									const s = Object(Y.F)(o);
 									e && !s ? (e = !1, Object(pt.c)(void 0), t.setState([])) : s && !e && (t.setState([]), Object(pt.c)(t), e = !0)
 								}
 								return r
@@ -10309,10 +10309,10 @@
 									{
 										dispatch: a
 									} = e;
-								if (!Object(Y.G)(s)) break;
+								if (!Object(Y.H)(s)) break;
 								const r = Object(At.a)(s),
 									o = n.payload && n.payload.basicChannelCount,
-									i = Object(Y.C)(s),
+									i = Object(Y.D)(s),
 									c = o + i;
 								if (Ft(c, t), a(Object(Rt.b)({
 										hasUnreadMessages: !!c
@@ -10330,8 +10330,8 @@
 									{
 										dispatch: a
 									} = e;
-								if (!Object(Y.G)(s)) break;
-								const r = Object(Y.C)(s),
+								if (!Object(Y.H)(s)) break;
+								const r = Object(Y.D)(s),
 									o = n.payload.account && n.payload.account.inboxCount,
 									i = Object(At.a)(s),
 									c = o && o + i;
@@ -10355,12 +10355,12 @@
 				const n = t(s);
 				if (s.type === F.e) {
 					const t = e.getState(),
-						n = Object(Y.G)(t),
+						n = Object(Y.H)(t),
 						{
 							meta: a
 						} = s.payload;
 					n ? ((e, t) => {
-						const s = Object(Y.C)(e) || 0,
+						const s = Object(Y.D)(e) || 0,
 							n = Object(At.a)(e);
 						Ft(n + s, t)
 					})(t, a.title) : Nt.a.write(() => {
@@ -10706,7 +10706,7 @@
 							const t = String(e.split("/")[1]).toLowerCase();
 							return "framedgild" === t || "framedmodal" === t
 						}(t.location.pathname) || n.dispatch(Object(F.g)());
-					const a = Object(Y.S)(n.getState());
+					const a = Object(Y.T)(n.getState());
 					n.dispatch(Object(U.c)({
 						nightmode: a
 					}));
@@ -10793,7 +10793,7 @@
 								x.a && x.a.timing && ws.b.isEnabled && (ws.b.recordPerformanceTimings("time_to_first_byte", x.a.timing.fetchStart, x.a.timing.responseStart), ws.b.recordPerformanceTimings("time_to_interactive", x.a.timing.fetchStart, x.a.timing.domInteractive));
 								const n = [],
 									r = {
-										isLoggedIn: Object(Y.H)(e),
+										isLoggedIn: Object(Y.I)(e),
 										name: t,
 										statsdPathsForExperiments: n
 									};
@@ -10825,7 +10825,7 @@
 							}
 							d.dispatch(Object(_.c)())
 						}
-						Object(Y.H)(d.getState()) && (d.dispatch(Object(M.d)()), d.dispatch(Object(k.c)())), Object(h.requestIdleCallback)(async () => {
+						Object(Y.I)(d.getState()) && (d.dispatch(Object(M.d)()), d.dispatch(Object(k.c)())), Object(h.requestIdleCallback)(async () => {
 							d.dispatch(Object(A.d)()), await Object(b.a)() && (e => Object(S.a)(Object.assign({}, Ps.defaults(e), {
 								source: "global",
 								action: "view",
@@ -11388,7 +11388,7 @@
 						const n = s(),
 							a = e.params.verificationToken,
 							r = e.queryParams && e.queryParams.source;
-						if (r && Object(f.a)(Object(h.b)(r)(n)), !Object(g.H)(n)) return Object(p.a)(t, n);
+						if (r && Object(f.a)(Object(h.b)(r)(n)), !Object(g.I)(n)) return Object(p.a)(t, n);
 						const o = await t(Object(C.b)(a));
 						o === b.a.Success && Object(f.a)(Object(h.d)()(n)), t(Object(m.c)("/?verifiedEmail=".concat(o)))
 					},
@@ -12540,7 +12540,7 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(r.E)(e) || n.v.Treatment1 === Object(a.c)(e, {
+				return Object(r.F)(e) || n.v.Treatment1 === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: n.m
 				})
@@ -12560,12 +12560,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const c = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: a.J,
-					experimentEligibilitySelector: e => !Object(i.G)(e)
+					experimentEligibilitySelector: e => !Object(i.H)(e)
 				}), o.a),
 				d = Object(n.a)(c, e => e === a.P.SSO),
 				l = Object(n.a)(e => Object(r.c)(e, {
 					experimentName: a.K,
-					experimentEligibilitySelector: e => Object(i.G)(e) || Object(i.H)(e)
+					experimentEligibilitySelector: e => Object(i.H)(e) || Object(i.I)(e)
 				}), o.a),
 				m = Object(n.a)(l, e => e === a.C.SSO)
 		},
@@ -12577,7 +12577,7 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.ic.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.F)(e) || !(n.ic.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
 				experimentName: n.fc
 			}))
@@ -12718,4 +12718,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.22d1b2e88af3ff04fb67.js.map
+//# sourceMappingURL=Reddit.43a72049b40cf92f5b65.js.map

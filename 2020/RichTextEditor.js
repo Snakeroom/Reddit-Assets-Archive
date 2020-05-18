@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f3fcd583dd36e4c16a9d.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.e1027e203ad465aa896e.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -474,9 +474,9 @@
 				q = n("./src/reddit/selectors/comments.ts"),
 				V = n("./src/reddit/selectors/editorContent.ts"),
 				K = n("./src/reddit/actions/modal.ts"),
-				Q = n("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
-				X = n("./src/reddit/models/PostCreationForm/index.ts"),
-				Z = n("./src/reddit/models/PostDraft/index.ts"),
+				X = n("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
+				Z = n("./src/reddit/models/PostCreationForm/index.ts"),
+				Q = n("./src/reddit/models/PostDraft/index.ts"),
 				G = n("./src/reddit/models/User/index.ts"),
 				J = n("./src/reddit/components/CommentCreation/MarkdownCommentForm/index.m.less"),
 				Y = n.n(J);
@@ -486,7 +486,7 @@
 				ne = y.a.span("FormHeaderText", Y.a),
 				oe = y.a.button("HelpButton", Y.a),
 				se = y.a.wrapped(g.a, "HelpIcon", Y.a),
-				re = y.a.wrapped(Q.a, "ResizableAutosizeTextarea", Y.a),
+				re = y.a.wrapped(X.a, "ResizableAutosizeTextarea", Y.a),
 				ae = y.a.wrapped(E.a, "FormFooter", Y.a),
 				ie = e => r.a.createElement(oe, {
 					className: e.className,
@@ -536,7 +536,7 @@
 						}), () => {
 							w.a.read(this.detectBreakout)
 						})
-					}, this.shouldConfirmCancel = () => this.userHasEnteredText() && this.state.hasChanged && this.props.draftType === Z.c.edit, this.onCancel = () => {
+					}, this.shouldConfirmCancel = () => this.userHasEnteredText() && this.state.hasChanged && this.props.draftType === Q.c.edit, this.onCancel = () => {
 						this.shouldConfirmCancel() ? this.props.cancelModalToggled() : this.cancelForm()
 					}, this.onBlur = e => {
 						(!e || e && e.relatedTarget !== this.switchModeBtn) && (this.textAreaRef && this.textAreaRef.blur(), this.props.onFocusChanged(!1))
@@ -551,7 +551,7 @@
 						(t || n) && o === H.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
 						this.props.onSubmit({
-							commentMode: X.h.MARKDOWN,
+							commentMode: Z.h.MARKDOWN,
 							draftType: this.props.draftType,
 							editorState: null,
 							text: this.getCurrentText(),
@@ -578,7 +578,7 @@
 						breakOut: !1,
 						wrapperHeight: void 0,
 						formHeight: null,
-						cancelModalText: t === Z.c.edit ? o.fbt._("Are you sure that you want to discard your edits?", null, {
+						cancelModalText: t === Q.c.edit ? o.fbt._("Are you sure that you want to discard your edits?", null, {
 							hk: "1ZfaWW"
 						}) : o.fbt._("Are you sure that you want to discard your comment?", null, {
 							hk: "3d8gJY"
@@ -646,7 +646,7 @@
 						text: F,
 						breakOut: I,
 						wrapperHeight: P
-					} = this.state, A = Object(N.a)(x), H = d.draftType === Z.c.edit;
+					} = this.state, A = Object(N.a)(x), H = d.draftType === Q.c.edit;
 					return r.a.createElement(le, {
 						"data-test-id": z.b,
 						className: Object(W.a)(s, {
@@ -695,7 +695,7 @@
 						}),
 						value: F
 					}), (!k || O) && r.a.createElement(ae, {
-						cancelButtonEnabled: g !== Z.c.replyToPost,
+						cancelButtonEnabled: g !== Q.c.replyToPost,
 						onSubmit: this.onSubmit,
 						onCancel: this.onCancel,
 						pending: w,
@@ -703,11 +703,11 @@
 						canSubmit: this.userHasEnteredText()
 					}, r.a.createElement(M, null, e => "compact" === e ? r.a.createElement(D, {
 						buttonRef: e => this.switchModeBtn = e,
-						onClick: () => j(X.h.RICH_TEXT, F, x),
+						onClick: () => j(Z.h.RICH_TEXT, F, x),
 						isConverting: this.props.isConverting
 					}) : r.a.createElement("div", null, r.a.createElement($, {
 						innerRef: e => this.switchModeBtn = e,
-						onClick: () => j(X.h.RICH_TEXT, F, x)
+						onClick: () => j(Z.h.RICH_TEXT, F, x)
 					}, "Switch to Fancy Pants Editor", this.props.isConverting && r.a.createElement(ee, {
 						sizePx: 12
 					})))), r.a.createElement(ie, {
@@ -1032,8 +1032,8 @@
 			const q = 33,
 				V = e => e.preventDefault(),
 				K = e => "Comment--Overflow-Dropdown__".concat(e),
-				Q = e => e.reduce((e, t) => (Array.isArray(t) ? e += t.length : t && e++, e), 0);
-			class X extends a.a.Component {
+				X = e => e.reduce((e, t) => (Array.isArray(t) ? e += t.length : t && e++, e), 0);
+			class Z extends a.a.Component {
 				constructor(e) {
 					super(e), this.updateCurrentBreakpoint = () => {
 						k.a.read(() => {
@@ -1055,7 +1055,7 @@
 							})
 						})
 					};
-					const t = Array.isArray(e.children) ? Q(e.children) : 1;
+					const t = Array.isArray(e.children) ? X(e.children) : 1;
 					this.state = {
 						indexOfCurrentBreakpoint: t - 1,
 						shouldShowOverflow: !1,
@@ -1113,7 +1113,7 @@
 					}, e)))))))
 				}
 			}
-			var Z = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
+			var Q = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
 				G = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/icons/svgs/Smile/index.tsx")),
 				J = n("./src/reddit/selectors/economics.ts"),
 				Y = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
@@ -1206,7 +1206,7 @@
 							onGifButtonClick: d,
 							userCanUseGifs: p
 						});
-					return a.a.createElement(X, {
+					return a.a.createElement(Z, {
 						className: t,
 						oveflowMenuDropdownId: o,
 						onOverflowMenuClick: c
@@ -1214,11 +1214,11 @@
 						controlsState: h,
 						subredditId: n && n.id,
 						onEmoteButtonClick: i
-					}), d && !p && f, (b || d) && a.a.createElement(me, null), Object(Z.g)(Z.f, h, s, r, m), a.a.createElement(Z.a, {
+					}), d && !p && f, (b || d) && a.a.createElement(me, null), Object(Q.g)(Q.f, h, s, r, m), a.a.createElement(Q.a, {
 						controlsState: h,
 						trackOnClick: m,
 						onLinkButtonClick: u
-					}), Object(Z.g)(Z.h, h, s, r, m), a.a.createElement(me, null), Object(Z.g)(Z.e, h, s, r, m), a.a.createElement(me, null), a.a.createElement(Z.d, {
+					}), Object(Q.g)(Q.h, h, s, r, m), a.a.createElement(me, null), Object(Q.g)(Q.e, h, s, r, m), a.a.createElement(me, null), a.a.createElement(Q.d, {
 						controlsState: h,
 						editorState: s,
 						trackOnClick: m,
@@ -1516,17 +1516,17 @@
 					}))
 				}
 			}
-			var Qe = Object(Oe.t)()(Ve(Ke)),
-				Xe = n("./src/reddit/components/RequestPendingBanner/index.tsx"),
-				Ze = n("./src/reddit/models/User/index.ts"),
+			var Xe = Object(Oe.t)()(Ve(Ke)),
+				Ze = n("./src/reddit/components/RequestPendingBanner/index.tsx"),
+				Qe = n("./src/reddit/models/User/index.ts"),
 				Ge = n("./src/reddit/selectors/experiments/commentBox.ts"),
 				Je = n("./src/reddit/selectors/subreddit.ts");
 			const Ye = Object(d.c)({
 					activeModalId: Re.a,
 					contributorRequestPending: e => Object(Je.h)(e, b.e.Comment),
 					isCommentBoxDesignEnabled: Ge.a,
-					language: Be.Q,
-					userName: e => e.user.account ? Object(Ze.f)(e.user.account) : "",
+					language: Be.R,
+					userName: e => e.user.account ? Object(Qe.f)(e.user.account) : "",
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
 					hasError: Se.w,
 					errorMsgs: Se.I,
@@ -1639,7 +1639,7 @@
 							onSwitchMode: this.onSwitchMode,
 							showWarningModal: this.state.showWarningModal
 						};
-					return e.contributorRequestPending ? a.a.createElement(Xe.a, null) : e.showContributorRequestFlow ? a.a.createElement(E, null) : e.draft.commentMode === Ee.h.RICH_TEXT ? a.a.createElement(Qe, n) : a.a.createElement(m.b, n)
+					return e.contributorRequestPending ? a.a.createElement(Ze.a, null) : e.showContributorRequestFlow ? a.a.createElement(E, null) : e.draft.commentMode === Ee.h.RICH_TEXT ? a.a.createElement(Xe, n) : a.a.createElement(m.b, n)
 				}
 			})
 		},
@@ -2114,14 +2114,14 @@
 					editorMode: x.h,
 					errorMessages: x.i,
 					hasError: x.j,
-					language: S.Q,
+					language: S.R,
 					markdownDraft: x.k,
 					pending: x.P,
 					postRequirements: x.db,
 					rteDraft: x.l,
 					subreddit: T.q,
 					uploads: e => e.uploads,
-					user: S.i,
+					user: S.j,
 					isCommentsPage: f.g
 				}),
 				U = Object(d.b)(z, (e, t) => ({
@@ -2517,8 +2517,8 @@
 				return n
 			};
 			const m = Object(a.c)({
-					currentUser: i.i,
-					shouldHideNSFW: i.z
+					currentUser: i.j,
+					shouldHideNSFW: i.A
 				}),
 				u = Object(r.b)(m);
 			t.a = u(e => {
@@ -2855,7 +2855,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const i = Object(o.a)(a.H, a.G, (e, t) => e || t),
+			const i = Object(o.a)(a.I, a.H, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: s.t
@@ -2895,4 +2895,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.f3fcd583dd36e4c16a9d.js.map
+//# sourceMappingURL=RichTextEditor.e1027e203ad465aa896e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.46d29ae85c1e41cb3481.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.1f0319380027c00595f9.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -245,7 +245,7 @@
 				selectedOptions: v.k,
 				isLoading: v.E,
 				currentInput: v.g,
-				language: E.Q,
+				language: E.R,
 				selectedPrimaryTag: v.y,
 				hasSecondaryTags: v.q
 			});
@@ -329,14 +329,14 @@
 				L = a("./src/reddit/controls/Button/index.tsx"),
 				D = a("./src/reddit/controls/CheckboxInput/index.tsx"),
 				I = a("./src/reddit/controls/ErrorText/index.tsx"),
-				M = a("./src/reddit/controls/RadioInput/index.tsx"),
-				R = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				R = a("./src/reddit/controls/RadioInput/index.tsx"),
+				M = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				A = a("./src/reddit/helpers/trackers/screenview.ts"),
 				P = a("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				B = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				V = a("./src/reddit/icons/svgs/Eye/index.tsx"),
-				F = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				F = a("./src/reddit/icons/svgs/Eye/index.tsx"),
+				V = a("./src/reddit/icons/svgs/Info/index.tsx"),
 				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
 				Z = a("./src/reddit/icons/svgs/User/index.tsx"),
 				W = a("./src/reddit/models/Subreddit/index.ts"),
@@ -369,11 +369,11 @@
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
-				se = $.a.wrapped(F.a, "Info", G.a),
-				ne = $.a.wrapped(R.a, "RadioOption", G.a),
+				se = $.a.wrapped(V.a, "Info", G.a),
+				ne = $.a.wrapped(M.a, "RadioOption", G.a),
 				ie = $.a.wrapped(T.c, "Tooltip", G.a),
 				re = $.a.wrapped(Z.a, "Public", G.a),
-				oe = $.a.wrapped(V.a, "Restricted", G.a),
+				oe = $.a.wrapped(F.a, "Restricted", G.a),
 				le = $.a.wrapped(J.a, "Private", G.a),
 				ce = $.a.wrapped(B.a, "Employee", G.a),
 				de = $.a.wrapped(q.a, "CloseButton", G.a),
@@ -381,10 +381,10 @@
 				ue = Object(l.c)({
 					error: U.i,
 					isCreatePending: U.l,
-					isEmployee: E.E,
-					language: E.Q,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.ab)(e),
-					userIsSuspended: E.M,
+					isEmployee: E.F,
+					language: E.R,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.bb)(e),
+					userIsSuspended: E.N,
 					allTags: v.e,
 					existingTags: v.h,
 					newTags: v.i,
@@ -665,7 +665,7 @@
 						direction: "column",
 						isCreateCommunity: !0,
 						textContainerClassName: G.a.fullWidthTextContainer
-					}, i.a.createElement(M.a, {
+					}, i.a.createElement(R.a, {
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
@@ -719,4 +719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.46d29ae85c1e41cb3481.js.map
+//# sourceMappingURL=SubredditCreation.1f0319380027c00595f9.js.map

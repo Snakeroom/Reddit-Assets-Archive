@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b681d7b73dba83f8c246.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3d5a43ca50a2d99ef2ba.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -760,7 +760,7 @@
 						subredditOrProfile: ae,
 						toggleCheckbox: ie,
 						userIsOp: de
-					} = this.props, ce = te ? void 0 : A, le = this.props.crosspost || void 0, pe = Object(M.a)(K), me = Object(T.a)(K), ue = Object(I.a)(K), be = Q && M.a, xe = !!ee.media && ee.media.type === C.n.RTJSON, he = de && xe, fe = y && !ne, ve = !!ee.media && Object(C.C)(ee.media), ge = {
+					} = this.props, ce = te ? void 0 : A, le = this.props.crosspost || void 0, pe = Object(M.a)(K), me = Object(T.a)(K), ue = Object(I.a)(K), be = Q && M.a, xe = !!ee.media && ee.media.type === C.n.RTJSON, he = de && xe, fe = y && !ne, ve = !!ee.media && Object(C.B)(ee.media), ge = {
 						flairStyleTemplate: ce,
 						post: ee,
 						inSubredditOrProfile: y,
@@ -976,9 +976,9 @@
 				I = Object(d.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.yb.TOPIC),
-					language: v.Q,
+					language: v.R,
 					post: f.O,
-					shouldOpenPostInNewTab: v.U,
+					shouldOpenPostInNewTab: v.V,
 					subreddit: f.bb
 				}),
 				M = Object(a.b)(I);
@@ -1474,19 +1474,19 @@
 					autoplayPref: x.b,
 					activeModalId: l.a,
 					crosspost: b.d,
-					currentUser: x.i,
+					currentUser: x.j,
 					isActive: b.j,
 					isChatPostExperiment: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
-					isLoggedIn: x.H,
+					isLoggedIn: x.I,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
 						return Object(b.r)(e, s)
 					},
-					language: x.Q,
+					language: x.R,
 					moderatorPermissions: m.i,
 					modModeEnabled: c.P,
 					post: b.O,
@@ -1497,7 +1497,7 @@
 					showEditFlair: u.a,
 					showMedia: c.r,
 					subredditOrProfile: b.bb,
-					userIsOp: x.hb,
+					userIsOp: x.ib,
 					flairStyleTemplate: c.R
 				},
 				f = (e, t) => {
@@ -1679,4 +1679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.b681d7b73dba83f8c246.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.3d5a43ca50a2d99ef2ba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.f33da1b8b9adad3edb32.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.2350d8d507bc2a024bfa.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -268,8 +268,8 @@
 				F = Object(l.c)({
 					loadingPostComponentForLayout: () => T
 				}),
-				U = Object(d.b)(F);
-			class B extends c.a.Component {
+				B = Object(d.b)(F);
+			class U extends c.a.Component {
 				constructor() {
 					super(...arguments), this.mounted = !1, this.state = {
 						visible: !1
@@ -308,7 +308,7 @@
 					}, c.a.Children.toArray(h))
 				}
 			}
-			t.a = U(B)
+			t.a = B(U)
 		},
 		"./src/reddit/components/PostList/SomethingWrong.tsx": function(e, t, s) {
 			"use strict";
@@ -411,8 +411,8 @@
 			const T = 500,
 				A = new w.a(T),
 				F = new w.a(T),
-				U = new w.a(T),
-				B = {
+				B = new w.a(T),
+				U = {
 					LARGE: 1,
 					MEDIUM: 1,
 					CLASSIC: 3,
@@ -437,13 +437,13 @@
 				},
 				Q = (e, t) => {
 					const s = "click-".concat(e);
-					let o = U.get(s);
+					let o = B.get(s);
 					return void 0 === o && (o = (e, s) => {
 						s.isSponsored && t.fireAdPixelsOfType(s, O.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(b.d)(s.source.outboundUrl, b.c.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(C.a)(e)
 						})
-					}, U.set(s, o)), o
+					}, B.set(s, o)), o
 				},
 				J = (e, t) => {
 					const s = [...e];
@@ -621,7 +621,7 @@
 						L = {
 							estHeight: Object(S.c)(C, o),
 							id: e,
-							isFocusable: !(!j.media || !(o === v.g.Large || o === v.g.Classic && Object(_.C)(j.media))) && (_.d.has(j.media.type) && (!M || !_.q.has(M)) && !j.isSpoiler && !j.isNSFW),
+							isFocusable: !(!j.media || !(o === v.g.Large || o === v.g.Classic && Object(_.B)(j.media))) && (_.d.has(j.media.type) && (!M || !_.q.has(M)) && !j.isSpoiler && !j.isNSFW),
 							trackOnEnteredViewport: I,
 							trackOnExitedViewport: R,
 							render: t => {
@@ -707,7 +707,7 @@
 						className: n,
 						isLoading: !!t,
 						layout: o,
-						countOverride: B[o]
+						countOverride: U[o]
 					}), !!e && d.a.createElement(f.a, {
 						apiError: e,
 						onTryAgain: r
@@ -823,4 +823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.f33da1b8b9adad3edb32.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.2350d8d507bc2a024bfa.js.map

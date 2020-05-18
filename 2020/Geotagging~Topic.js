@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.bb499325cc83ec84f870.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.72961b221bc2690b8456.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -500,7 +500,7 @@
 				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				j = s.n(O);
 			const C = Object(g.c)({
-				isLoggedIn: y.H,
+				isLoggedIn: y.I,
 				subreddit: N.Q,
 				subredditAboutInfo: N.v
 			});
@@ -672,7 +672,7 @@
 				o = s("./src/reddit/selectors/subreddit.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				language: i.Q,
+				language: i.R,
 				userIsSubscriber: o.bb
 			}), (e, t) => {
 				let {
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.bb499325cc83ec84f870.js.map
+//# sourceMappingURL=Geotagging~Topic.72961b221bc2690b8456.js.map

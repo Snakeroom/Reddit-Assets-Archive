@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1e2687eb78c94abc0eba.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aa57f8f08abfea90863d.js
+// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -149,7 +149,7 @@
 						postId: s
 					}) : Object(p.n)(e, {
 						commentId: s
-					}), n = Object(f.i)(e), r = e.gild, {
+					}), n = Object(f.j)(e), r = e.gild, {
 						isAnonymous: i
 					} = r, c = !i && n && (n.username || n.displayText) ? n.username || n.displayText : void 0, d = a ? a.author : void 0, o = Object(E.I)(e, {
 						thingId: s
@@ -979,11 +979,11 @@
 							subredditId: n
 						})
 					},
-					currentUser: T.i,
+					currentUser: T.j,
 					errorMessage: C.a,
 					isAnonymous: C.g,
 					iFramed: C.h,
-					isEmployee: T.E,
+					isEmployee: T.F,
 					message: C.b,
 					pending: C.e,
 					postOrComment: (e, t) => {
@@ -1627,4 +1627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.1e2687eb78c94abc0eba.js.map
+//# sourceMappingURL=FramedGild~GildModal.aa57f8f08abfea90863d.js.map
