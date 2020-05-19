@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b32b8c4b0928df6eee51.js
-// Retrieved at 5/19/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3fbafada5fab4137103.js
+// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -12976,87 +12976,95 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return v
+				return C
 			})), s.d(t, "d", (function() {
-				return O
+				return E
 			})), s.d(t, "b", (function() {
-				return y
+				return _
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				o = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/lib/objectSelector/index.ts"),
 				i = s("./src/reddit/actions/ads/index.ts"),
-				a = s("./src/reddit/actions/post.ts"),
-				d = s("./src/reddit/actions/postList.ts"),
-				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				m = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				p = s("./src/reddit/helpers/trackers/post.ts"),
-				u = s("./src/reddit/components/PostList/Placeholder.tsx"),
-				h = s("./src/reddit/featureFlags/index.ts"),
-				b = s("./src/reddit/selectors/listings.ts"),
-				g = s("./src/reddit/selectors/posts.ts"),
-				x = s("./src/reddit/selectors/subreddit.ts"),
-				f = s("./src/reddit/selectors/tracking.ts");
+				a = s("./src/reddit/actions/focusedVerticals/index.ts"),
+				d = s("./src/reddit/actions/post.ts"),
+				c = s("./src/reddit/actions/postList.ts"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				u = s("./src/reddit/helpers/trackers/post.ts"),
+				h = s("./src/reddit/components/PostList/Placeholder.tsx"),
+				b = s("./src/reddit/featureFlags/index.ts"),
+				g = s("./src/reddit/selectors/listings.ts"),
+				x = s("./src/reddit/selectors/posts.ts"),
+				f = s("./src/reddit/selectors/subreddit.ts"),
+				v = s("./src/reddit/selectors/tracking.ts");
 
-			function v() {
-				return Object(l.t)({
-					currentProfileName: l.h,
-					isCommentPermalink: l.v,
-					isCommentsPage: l.w,
-					isFrontpage: l.y,
-					isProfilePostListing: l.I,
-					isTopicPage: l.M,
+			function C() {
+				return Object(m.t)({
+					currentProfileName: m.h,
+					isCommentPermalink: m.v,
+					isCommentsPage: m.w,
+					isFrontpage: m.y,
+					isProfilePostListing: m.I,
+					isTopicPage: m.M,
 					pageLayer: e => e
 				})
 			}
-			const C = v(),
-				O = {
-					apiError: b.c,
-					apiPending: b.d,
-					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.N)(e, t),
-					loadMore: b.g,
-					postsById: g.Z,
+			const O = C(),
+				E = {
+					apiError: g.c,
+					apiPending: g.d,
+					measureScrollFPS: b.d.measureScrollFPS,
+					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
+					loadMore: g.g,
+					postsById: x.Z,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: o
 						} = t;
-						return Object(g.K)(e, s, n, o)
+						return Object(x.K)(e, s, n, o)
 					}),
-					subredditsById: x.X,
-					viewportDataLoaded: f.a,
-					pageReferrer: l.Q,
-					postListPlaceholderComponent: () => u.a
+					subredditsById: f.X,
+					viewportDataLoaded: v.a,
+					pageReferrer: m.Q,
+					postListPlaceholderComponent: () => h.a
 				},
-				E = Object(o.c)(O),
-				y = (e, t) => ({
-					onBottomViewed: (t, s) => e(d.c(t, s)),
-					adBrandSafetyStatusReceived: t => {
-						e(i.d({
-							isViewSafe: t
-						}))
-					},
-					openPost: t => {
-						e(a.M(t))
-					},
-					fireAdPixelsOfType: (t, s) => {
-						e(a.B(t, s))
-					},
-					trackOnPostEnteredViewport: (t, s, n) => {
-						e(a.P(t, n))
-					},
-					trackOnPostExitedViewport: (t, s, n, o) => {
-						e(a.Q(t, n, o))
+				y = Object(o.c)(E),
+				_ = (e, t) => {
+					let {
+						isFrontpage: s
+					} = t;
+					return {
+						onBottomViewed: (t, s) => e(c.c(t, s)),
+						adBrandSafetyStatusReceived: t => {
+							e(i.d({
+								isViewSafe: t
+							}))
+						},
+						openPost: t => {
+							s && e(Object(a.a)({
+								lastLoadedEnv: "server"
+							})), e(d.M(t))
+						},
+						fireAdPixelsOfType: (t, s) => {
+							e(d.B(t, s))
+						},
+						trackOnPostEnteredViewport: (t, s, n) => {
+							e(d.P(t, n))
+						},
+						trackOnPostExitedViewport: (t, s, n, o) => {
+							e(d.Q(t, n, o))
+						}
 					}
-				}),
-				_ = Object(n.b)(E, y, (e, t, s) => Object.assign({}, e, t, s, {
-					postClickEvent: p.f,
-					postComponentForLayout: e => Object(m.b)(Object.assign({}, e))
+				},
+				k = Object(n.b)(y, _, (e, t, s) => Object.assign({}, e, t, s, {
+					postClickEvent: u.f,
+					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(c.c)(C(_(e)))
+			t.a = e => Object(l.c)(O(k(e)))
 		},
 		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, s) {
 			"use strict";
@@ -16418,4 +16426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.b32b8c4b0928df6eee51.js.map
+//# sourceMappingURL=CollectionCommentsPage.c3fbafada5fab4137103.js.map

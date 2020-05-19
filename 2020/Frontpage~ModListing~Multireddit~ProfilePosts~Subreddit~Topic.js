@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.bc48d643d87a2171b631.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.9f2654498b0f7573024c.js
+// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -765,87 +765,95 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return P
+				return x
 			})), s.d(t, "d", (function() {
-				return C
+				return w
 			})), s.d(t, "b", (function() {
-				return v
+				return O
 			}));
 			var o = s("./node_modules/react-redux/es/index.js"),
 				n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/lib/objectSelector/index.ts"),
 				a = s("./src/reddit/actions/ads/index.ts"),
-				i = s("./src/reddit/actions/post.ts"),
-				c = s("./src/reddit/actions/postList.ts"),
-				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				m = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				p = s("./src/reddit/helpers/trackers/post.ts"),
-				u = s("./src/reddit/components/PostList/Placeholder.tsx"),
-				h = s("./src/reddit/featureFlags/index.ts"),
-				g = s("./src/reddit/selectors/listings.ts"),
-				f = s("./src/reddit/selectors/posts.ts"),
-				b = s("./src/reddit/selectors/subreddit.ts"),
-				y = s("./src/reddit/selectors/tracking.ts");
+				i = s("./src/reddit/actions/focusedVerticals/index.ts"),
+				c = s("./src/reddit/actions/post.ts"),
+				d = s("./src/reddit/actions/postList.ts"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				u = s("./src/reddit/helpers/trackers/post.ts"),
+				h = s("./src/reddit/components/PostList/Placeholder.tsx"),
+				g = s("./src/reddit/featureFlags/index.ts"),
+				f = s("./src/reddit/selectors/listings.ts"),
+				b = s("./src/reddit/selectors/posts.ts"),
+				y = s("./src/reddit/selectors/subreddit.ts"),
+				P = s("./src/reddit/selectors/tracking.ts");
 
-			function P() {
-				return Object(l.t)({
-					currentProfileName: l.h,
-					isCommentPermalink: l.v,
-					isCommentsPage: l.w,
-					isFrontpage: l.y,
-					isProfilePostListing: l.I,
-					isTopicPage: l.M,
+			function x() {
+				return Object(m.t)({
+					currentProfileName: m.h,
+					isCommentPermalink: m.v,
+					isCommentsPage: m.w,
+					isFrontpage: m.y,
+					isProfilePostListing: m.I,
+					isTopicPage: m.M,
 					pageLayer: e => e
 				})
 			}
-			const x = P(),
-				C = {
-					apiError: g.c,
-					apiPending: g.d,
-					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(l.N)(e, t),
-					loadMore: g.g,
-					postsById: f.Z,
+			const C = x(),
+				w = {
+					apiError: f.c,
+					apiPending: f.d,
+					measureScrollFPS: g.d.measureScrollFPS,
+					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
+					loadMore: f.g,
+					postsById: b.Z,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: o,
 							inSubredditOrProfile: n
 						} = t;
-						return Object(f.K)(e, s, o, n)
+						return Object(b.K)(e, s, o, n)
 					}),
-					subredditsById: b.X,
-					viewportDataLoaded: y.a,
-					pageReferrer: l.Q,
-					postListPlaceholderComponent: () => u.a
+					subredditsById: y.X,
+					viewportDataLoaded: P.a,
+					pageReferrer: m.Q,
+					postListPlaceholderComponent: () => h.a
 				},
-				w = Object(n.c)(C),
-				v = (e, t) => ({
-					onBottomViewed: (t, s) => e(c.c(t, s)),
-					adBrandSafetyStatusReceived: t => {
-						e(a.d({
-							isViewSafe: t
-						}))
-					},
-					openPost: t => {
-						e(i.M(t))
-					},
-					fireAdPixelsOfType: (t, s) => {
-						e(i.B(t, s))
-					},
-					trackOnPostEnteredViewport: (t, s, o) => {
-						e(i.P(t, o))
-					},
-					trackOnPostExitedViewport: (t, s, o, n) => {
-						e(i.Q(t, o, n))
+				v = Object(n.c)(w),
+				O = (e, t) => {
+					let {
+						isFrontpage: s
+					} = t;
+					return {
+						onBottomViewed: (t, s) => e(d.c(t, s)),
+						adBrandSafetyStatusReceived: t => {
+							e(a.d({
+								isViewSafe: t
+							}))
+						},
+						openPost: t => {
+							s && e(Object(i.a)({
+								lastLoadedEnv: "server"
+							})), e(c.M(t))
+						},
+						fireAdPixelsOfType: (t, s) => {
+							e(c.B(t, s))
+						},
+						trackOnPostEnteredViewport: (t, s, o) => {
+							e(c.P(t, o))
+						},
+						trackOnPostExitedViewport: (t, s, o, n) => {
+							e(c.Q(t, o, n))
+						}
 					}
-				}),
-				O = Object(o.b)(w, v, (e, t, s) => Object.assign({}, e, t, s, {
-					postClickEvent: p.f,
-					postComponentForLayout: e => Object(m.b)(Object.assign({}, e))
+				},
+				j = Object(o.b)(v, O, (e, t, s) => Object.assign({}, e, t, s, {
+					postClickEvent: u.f,
+					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(d.c)(x(O(e)))
+			t.a = e => Object(l.c)(C(j(e)))
 		},
 		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, s) {
 			"use strict";
@@ -1286,4 +1294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.bc48d643d87a2171b631.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.9f2654498b0f7573024c.js.map
