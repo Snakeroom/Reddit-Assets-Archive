@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.31d01eb4b6a7711bf3a7.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b9ac4d9e6cdb61698921.js
+// Retrieved at 5/19/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "88a58eb-production"
+					SENTRY_RELEASE_VERSION: "8347f56-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -31565,4 +31565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.31d01eb4b6a7711bf3a7.js.map
+//# sourceMappingURL=PostCreation.b9ac4d9e6cdb61698921.js.map
