@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.fda6a9b4969aadfe15f6.js
-// Retrieved at 5/19/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ff6dd1299a817480c74a.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -25,16 +25,16 @@
 			const u = Object(n.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.zb
+					experimentName: l.Bb
 				});
-				return Object(l.uc)(t) ? void 0 : t
+				return Object(l.wc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.Ab
+					experimentName: l.Cb
 				});
-				return Object(l.uc)(t) ? void 0 : t
-			}, (e, t) => e === l.Bb.Enabled && t === l.Bb.Enabled);
+				return Object(l.wc)(t) ? void 0 : t
+			}, (e, t) => e === l.Db.Enabled && t === l.Db.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -82,7 +82,7 @@
 			};
 			const y = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "8347f56-production"
+					SENTRY_RELEASE_VERSION: "2616400-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -112,7 +112,7 @@
 					saltTimeToLive: j,
 					viewerUserIdLength: N
 				} = Object.assign({}, _, t);
-				class I extends r.Component {
+				class w extends r.Component {
 					constructor() {
 						super(...arguments), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => {
 							this.setDashInstance(e)
@@ -186,11 +186,11 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || I.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || w.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = f(),
 							r = "".concat(s).concat(e).concat(t);
-						return (await S(r)).substr(0, I.VIEWER_USER_ID_LENGTH)
+						return (await S(r)).substr(0, w.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -214,25 +214,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return Object.assign({
-							debug: I.DEBUG,
-							disableCookies: I.DISABLE_COOKIES,
-							respectDoNotTrack: I.RESPECT_DO_NOT_TRACK
+							debug: w.DEBUG,
+							disableCookies: w.DISABLE_COOKIES,
+							respectDoNotTrack: w.RESPECT_DO_NOT_TRACK
 						}, s, {
 							data: Object.assign({
-								env_key: I.ENV_KEY,
+								env_key: w.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: I.PLAYER_NAME,
-								player_version: I.PLAYER_VERSION
+								player_name: w.PLAYER_NAME,
+								player_version: w.PLAYER_VERSION
 							}, t, {
 								viewer_user_id: e
 							})
 						})
 					}
 					getOrCreateSalt() {
-						const e = I.LOCAL_STORAGE_SALT_KEY;
+						const e = w.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(o.a)(e);
-						return t || (t = p(I.SALT_LENGTH), Object(o.b)(e, t, I.SALT_TIME_TO_LIVE)), t
+						return t || (t = p(w.SALT_LENGTH), Object(o.b)(e, t, w.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return Object.assign({}, this.getDashInstanceData(), this.getHlsInstanceData())
@@ -245,15 +245,15 @@
 							muxVideoTitle: r
 						} = this.props;
 						return {
-							video_duration: s ? I.DURATION_LIVE : e,
+							video_duration: s ? w.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? I.STREAM_TYPE_LIVE : I.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? w.STREAM_TYPE_LIVE : w.STREAM_TYPE_ON_DEMAND,
 							video_title: r
 						}
 					}
 				}
-				I.displayName = y(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = E, I.PLAYER_VERSION = g, I.RESPECT_DO_NOT_TRACK = C, I.SALT_LENGTH = R, I.SALT_TIME_TO_LIVE = j, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = N;
-				const w = Object(r.forwardRef)((e, t) => i.a.createElement(I, x({}, e, {
+				w.displayName = y(e), w.ANONYMOUS_USER_ID = s, w.DEBUG = c, w.DISABLE_COOKIES = l, w.DURATION_LIVE = 1 / 0, w.ENV_KEY = m, w.LOCAL_STORAGE_SALT_KEY = h, w.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, w.PLAYER_NAME = E, w.PLAYER_VERSION = g, w.RESPECT_DO_NOT_TRACK = C, w.SALT_LENGTH = R, w.SALT_TIME_TO_LIVE = j, w.STREAM_TYPE_LIVE = "live", w.STREAM_TYPE_ON_DEMAND = "on-demand", w.VIEWER_USER_ID_LENGTH = N;
+				const I = Object(r.forwardRef)((e, t) => i.a.createElement(w, x({}, e, {
 						forwardedRef: t
 					}))),
 					A = Object(n.c)({
@@ -262,7 +262,7 @@
 					});
 				return Object(a.b)(A, null, null, {
 					forwardRef: !0
-				})(w)
+				})(I)
 			}
 		},
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1029,8 +1029,8 @@
 				R = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				j = s("./src/reddit/components/HlsVideo/index.tsx"),
 				N = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				I = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				w = s("./src/reddit/components/PostLeftRail/index.tsx"),
+				w = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				I = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				A = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				M = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				T = s("./src/reddit/controls/Dropdown/Row.tsx"),
@@ -1043,8 +1043,8 @@
 				U = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				F = s.n(U);
 			const {
-				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = Object(o.a)(j.a, {
+				fbt: W
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = Object(o.a)(j.a, {
 				playerName: "RPAN DU Video Player"
 			}), K = Object(a.b)(() => Object(n.c)({
 				isLoggedIn: y.H,
@@ -1084,11 +1084,11 @@
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
 			})), z = () => i.a.createElement("h3", {
 				className: F.a.title
-			}, B._("Top broadcast right now", null, {
+			}, W._("Top broadcast right now", null, {
 				hk: "2hS1kb"
 			})), G = () => i.a.createElement("p", {
 				className: F.a.description
-			}, B._("Live from the internet, this is RPAN", null, {
+			}, W._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class Y extends r.Component {
@@ -1176,14 +1176,14 @@
 							[F.a.compact]: e === b.g.Compact
 						}, this.props.className),
 						ref: this.observableElement
-					}, e !== b.g.Large && i.a.createElement(w.b, {
+					}, e !== b.g.Large && i.a.createElement(I.b, {
 						className: F.a.leftRail,
 						withoutComputedStyles: e === b.g.Compact
 					}, i.a.createElement(J, {
 						isVertical: !0
 					}), e === b.g.Compact && i.a.createElement(J, {
 						isVertical: !1
-					})), i.a.createElement(I.a, {
+					})), i.a.createElement(w.a, {
 						className: F.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
@@ -1261,14 +1261,14 @@
 						className: F.a.bigExpandoIcon
 					})), i.a.createElement("span", {
 						className: F.a.watchingCount
-					}, B._({
+					}, W._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [B._plural(s, "number")], {
+					}, [W._plural(s, "number")], {
 						hk: "33zJ5F"
 					})), this.isLive && i.a.createElement("span", {
 						className: F.a.liveStatus
-					}, B._("Live", null, {
+					}, W._("Live", null, {
 						hk: "TwJSs"
 					})))
 				}
@@ -1289,7 +1289,7 @@
 						r = 1e3 * t.broadcast_time,
 						a = t.post.id,
 						n = t.post.title;
-					return i.a.createElement(W, {
+					return i.a.createElement(B, {
 						url: t.stream.hls_url,
 						autoplay: !0,
 						controls: !1,
@@ -1376,7 +1376,7 @@
 						isLoggedIn: s
 					} = e;
 					return i.a.createElement(R.a, {
-						displayText: B._("Show me less of this", null, {
+						displayText: W._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: C.a.Hide,
@@ -1396,7 +1396,7 @@
 						dropdownId: "rpan-du-overflow"
 					}, i.a.createElement(T.b, {
 						className: F.a.overflowItem,
-						displayText: B._("Show me less of this", null, {
+						displayText: W._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
 						iconWrapperClassName: F.a.overflowItemIconWrapper,
@@ -1590,4 +1590,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.fda6a9b4969aadfe15f6.js.map
+//# sourceMappingURL=RpanListingUnit.ff6dd1299a817480c74a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.00edf7e45310c0e72fb5.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.c3f0d480964fe00b012d.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -8017,8 +8017,9 @@
 					className: _.a.communityDescriptionContainer
 				}, r.a.createElement(i.a, {
 					className: _.a.communityName,
-					to: Object(O.a)(e.name, e.type),
-					onClick: e.onCommunityNameClick
+					onClick: e.onCommunityNameClick,
+					title: Object(O.b)(e.name, e.type),
+					to: Object(O.a)(e.name, e.type)
 				}, Object(O.b)(e.name, e.type)), r.a.createElement("div", {
 					className: _.a.communityInfoContainer
 				}, !!e.subscribers && r.a.createElement("p", {
@@ -9952,4 +9953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.00edf7e45310c0e72fb5.js.map
+//# sourceMappingURL=ProfileComments.c3f0d480964fe00b012d.js.map

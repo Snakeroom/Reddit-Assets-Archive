@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.9d295c87063d5d62844b.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.b583be7f2d051936a06c.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6152,8 +6152,9 @@
 					className: j.a.communityDescriptionContainer
 				}, r.a.createElement(a.a, {
 					className: j.a.communityName,
-					to: Object(C.a)(e.name, e.type),
-					onClick: e.onCommunityNameClick
+					onClick: e.onCommunityNameClick,
+					title: Object(C.b)(e.name, e.type),
+					to: Object(C.a)(e.name, e.type)
 				}, Object(C.b)(e.name, e.type)), r.a.createElement("div", {
 					className: j.a.communityInfoContainer
 				}, !!e.subscribers && r.a.createElement("p", {
@@ -7732,4 +7733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.9d295c87063d5d62844b.js.map
+//# sourceMappingURL=ProfilePrivate.b583be7f2d051936a06c.js.map

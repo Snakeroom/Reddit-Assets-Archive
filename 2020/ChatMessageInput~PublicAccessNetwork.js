@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~PublicAccessNetwork.8d688b328d0d24aa3995.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~PublicAccessNetwork.9d502ab4aa307b69f7c1.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~PublicAccessNetwork"], {
 		"./src/reddit/actions/publicAccessNetwork/theaterSettings.ts": function(e, t, s) {
@@ -633,9 +633,9 @@
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: r.kb
-				}) === r.rb.Enabled
+				}) === r.sb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~PublicAccessNetwork.8d688b328d0d24aa3995.js.map
+//# sourceMappingURL=ChatMessageInput~PublicAccessNetwork.9d502ab4aa307b69f7c1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.2917aa09c71f5ad41c66.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.031b10bb887e810d01ff.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -276,8 +276,8 @@
 					isSubredditPage: e => Object(x.q)(e) === S.yb.SUBREDDIT
 				}),
 				N = Object(l.b)(C),
-				B = _.a.wrapped(b.a, "BannerAd", O.a),
-				j = _.a.wrapped(f.a, "ThemedWidget", O.a),
+				j = _.a.wrapped(b.a, "BannerAd", O.a),
+				B = _.a.wrapped(f.a, "ThemedWidget", O.a),
 				w = _.a.div("SidebarAdPlaceholder", O.a),
 				A = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === u.a.dfpRefreshSlotTestSubreddit && e === S.c.BELOW_THE_FOLD),
 				I = (e, t, s, n, r) => {
@@ -318,7 +318,7 @@
 							className: n,
 							redditStyle: r
 						} = this.props;
-					return d.a.createElement(h.a, null, d.a.createElement(j, {
+					return d.a.createElement(h.a, null, d.a.createElement(B, {
 						className: n,
 						contentOnly: !0,
 						redditStyle: r
@@ -349,7 +349,7 @@
 					} = this.props, y = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
 					});
-					return b || t || !k(s) && f ? d.a.createElement(h.a, null, d.a.createElement(j, {
+					return b || t || !k(s) && f ? d.a.createElement(h.a, null, d.a.createElement(B, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: u
@@ -364,7 +364,7 @@
 						listingName: o,
 						placement: c,
 						placementIndex: a
-					})) : d.a.createElement(h.a, null, d.a.createElement(j, {
+					})) : d.a.createElement(h.a, null, d.a.createElement(B, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: u
@@ -374,7 +374,7 @@
 						listingName: o,
 						placement: c,
 						placementIndex: a
-					}), d.a.createElement(B, {
+					}), d.a.createElement(j, {
 						id: I(c, g, o, r, a),
 						isRefreshableAd: A(c, g, o),
 						sizes: l,
@@ -760,7 +760,7 @@
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return B
+				return j
 			})), s.d(t, "a", (function() {
 				return w
 			}));
@@ -806,7 +806,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const B = e => a.a.createElement(f.a, {
+			const j = e => a.a.createElement(f.a, {
 					className: Object(d.a)(C.a.Container, e.className),
 					noGradient: !0,
 					styles: e.widget && e.widget.styles,
@@ -841,10 +841,10 @@
 					className: C.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
-				j = Object(c.c)({
+				B = Object(c.c)({
 					hideNSFWPref: b.z
 				}),
-				w = Object(i.b)(j)(e => a.a.createElement("div", {
+				w = Object(i.b)(B)(e => a.a.createElement("div", {
 					className: C.a.communityItemContainer
 				}, a.a.createElement(O.a, {
 					widthRight: g.t
@@ -860,8 +860,9 @@
 					className: C.a.communityDescriptionContainer
 				}, a.a.createElement(o.a, {
 					className: C.a.communityName,
-					to: Object(_.a)(e.name, e.type),
-					onClick: e.onCommunityNameClick
+					onClick: e.onCommunityNameClick,
+					title: Object(_.b)(e.name, e.type),
+					to: Object(_.a)(e.name, e.type)
 				}, Object(_.b)(e.name, e.type)), a.a.createElement("div", {
 					className: C.a.communityInfoContainer
 				}, !!e.subscribers && a.a.createElement("p", {
@@ -1045,4 +1046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.2917aa09c71f5ad41c66.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.031b10bb887e810d01ff.js.map

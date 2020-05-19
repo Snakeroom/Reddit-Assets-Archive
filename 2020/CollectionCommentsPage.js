@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a9307ff9ac913674aaef.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.058de7b19632ff2635ce.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3370,14 +3370,14 @@
 						experimentEligibilitySelector: kt.a,
 						experimentName: _t.bb
 					});
-					return !(!t || Object(_t.uc)(t))
+					return !(!t || Object(_t.wc)(t))
 				},
 				wt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
 						experimentName: _t.ab
 					});
-					return !(!t || Object(_t.uc)(t))
+					return !(!t || Object(_t.wc)(t))
 				};
 			var Pt = s("./src/reddit/selectors/gild.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -12071,8 +12071,9 @@
 					className: k.a.communityDescriptionContainer
 				}, r.a.createElement(i.a, {
 					className: k.a.communityName,
-					to: Object(y.a)(e.name, e.type),
-					onClick: e.onCommunityNameClick
+					onClick: e.onCommunityNameClick,
+					title: Object(y.b)(e.name, e.type),
+					to: Object(y.a)(e.name, e.type)
 				}, Object(y.b)(e.name, e.type)), r.a.createElement("div", {
 					className: k.a.communityInfoContainer
 				}, !!e.subscribers && r.a.createElement("p", {
@@ -16417,7 +16418,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.E
 				});
-				return !!t && !Object(n.uc)(t)
+				return !!t && !Object(n.wc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16432,7 +16433,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.Z
 				});
-				return !(!t || Object(n.uc)(t))
+				return !(!t || Object(n.wc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16449,4 +16450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.a9307ff9ac913674aaef.js.map
+//# sourceMappingURL=CollectionCommentsPage.058de7b19632ff2635ce.js.map

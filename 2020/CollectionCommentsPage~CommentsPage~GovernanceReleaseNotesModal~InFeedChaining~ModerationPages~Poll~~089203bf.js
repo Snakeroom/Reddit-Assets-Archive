@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.b08f5739ee491353fa2b.js
-// Retrieved at 5/19/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.460da066197b60e43a16.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, i) {
@@ -17,16 +17,16 @@
 			const u = Object(a.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: c.zb
+					experimentName: c.Bb
 				});
-				return Object(c.uc)(t) ? void 0 : t
+				return Object(c.wc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: c.Ab
+					experimentName: c.Cb
 				});
-				return Object(c.uc)(t) ? void 0 : t
-			}, (e, t) => e === c.Bb.Enabled && t === c.Bb.Enabled);
+				return Object(c.wc)(t) ? void 0 : t
+			}, (e, t) => e === c.Db.Enabled && t === c.Db.Enabled);
 			var m = i("./src/config.ts");
 			var p = i("./src/reddit/selectors/user.ts");
 			i("./node_modules/core-js/modules/es6.regexp.to-string.js"), i("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -44,15 +44,15 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var x;
+			var w;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(x || (x = {}));
-			const w = async e => (async (e, t) => {
+			}(w || (w = {}));
+			const x = async e => (async (e, t) => {
 				const i = (new TextEncoder).encode(t),
 					s = await crypto.subtle.digest(e, i);
 				return Array.from(new Uint8Array(s)).map(v).join("")
-			})(x.SHA1, e);
+			})(w.SHA1, e);
 
 			function f() {
 				return (f = Object.assign || function(e) {
@@ -74,7 +74,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				S = Object({
-					SENTRY_RELEASE_VERSION: "8347f56-production"
+					SENTRY_RELEASE_VERSION: "2616400-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -97,7 +97,7 @@
 					envKey: h,
 					localStorageSaltKey: m,
 					localStorageViewerUserIdKey: v,
-					playerName: x,
+					playerName: w,
 					playerVersion: S,
 					respectDoNotTrack: O,
 					saltLength: C,
@@ -182,7 +182,7 @@
 							t = this.getOrCreateSalt(),
 							i = g(),
 							s = "".concat(i).concat(e).concat(t);
-						return (await w(s)).substr(0, V.VIEWER_USER_ID_LENGTH)
+						return (await x(s)).substr(0, V.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -244,7 +244,7 @@
 						}
 					}
 				}
-				V.displayName = E(e), V.ANONYMOUS_USER_ID = i, V.DEBUG = d, V.DISABLE_COOKIES = c, V.DURATION_LIVE = 1 / 0, V.ENV_KEY = h, V.LOCAL_STORAGE_SALT_KEY = m, V.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, V.PLAYER_NAME = x, V.PLAYER_VERSION = S, V.RESPECT_DO_NOT_TRACK = O, V.SALT_LENGTH = C, V.SALT_TIME_TO_LIVE = T, V.STREAM_TYPE_LIVE = "live", V.STREAM_TYPE_ON_DEMAND = "on-demand", V.VIEWER_USER_ID_LENGTH = M;
+				V.displayName = E(e), V.ANONYMOUS_USER_ID = i, V.DEBUG = d, V.DISABLE_COOKIES = c, V.DURATION_LIVE = 1 / 0, V.ENV_KEY = h, V.LOCAL_STORAGE_SALT_KEY = m, V.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, V.PLAYER_NAME = w, V.PLAYER_VERSION = S, V.RESPECT_DO_NOT_TRACK = O, V.SALT_LENGTH = C, V.SALT_TIME_TO_LIVE = T, V.STREAM_TYPE_LIVE = "live", V.STREAM_TYPE_ON_DEMAND = "on-demand", V.VIEWER_USER_ID_LENGTH = M;
 				const L = Object(s.forwardRef)((e, t) => n.a.createElement(V, f({}, e, {
 						forwardedRef: t
 					}))),
@@ -310,8 +310,8 @@
 				b = 1,
 				g = 2e3,
 				v = 15e3,
-				x = [m, p, b],
-				w = e => "boolean" == typeof e.cumulative,
+				w = [m, p, b],
+				x = e => "boolean" == typeof e.cumulative,
 				f = Object(r.c)({
 					buffering: (e, t) => {
 						let {
@@ -422,7 +422,7 @@
 					this.props.videoDuration ? e.viewabilityMinimum = Math.min(.5 * this.props.videoDuration, v) : e.viewabilityMinimum = v, e.remainingTime = e.viewabilityMinimum
 				}
 				checkViewability(e, t) {
-					if (w(t) && void 0 === t.remainingTime && this.setViewabilityMinimum(t), !t.threshold && e && this.props.videoDuration) {
+					if (x(t) && void 0 === t.remainingTime && this.setViewabilityMinimum(t), !t.threshold && e && this.props.videoDuration) {
 						const {
 							height: i,
 							width: s
@@ -434,7 +434,7 @@
 							const e = this.getLengthForTimer(t);
 							return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 						}
-						w(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
+						x(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
 					}
 				}
 				clearTimer(e) {
@@ -453,7 +453,7 @@
 				}
 				render() {
 					return a.a.createElement(d.a, {
-						threshold: x,
+						threshold: w,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
@@ -564,20 +564,20 @@
 					isExpando: h,
 					isTitleOnly: m,
 					postId: v,
-					showFull: x
-				} = e, w = g(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
+					showFull: w
+				} = e, x = g(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
 				const f = {
-						[u.a.richTextContainerFull]: x,
-						[u.a.richTextContainerTitleOnly]: m && !x,
-						[u.a.richTextContainer]: !x && !m
+						[u.a.richTextContainerFull]: w,
+						[u.a.richTextContainerTitleOnly]: m && !w,
+						[u.a.richTextContainer]: !w && !m
 					},
 					y = {};
-				x || (y.maxHeight = "".concat(m ? r.l : l ? r.k : r.j, "px")), d && (y.maxWidth = "".concat(a.d, "px"));
-				const E = c && x;
+				w || (y.maxHeight = "".concat(m ? r.l : l ? r.k : r.j, "px")), d && (y.maxWidth = "".concat(a.d, "px"));
+				const E = c && w;
 				return n.a.createElement("div", b({
 					className: Object(o.a)(f, s),
 					style: y
-				}, w), i, E && n.a.createElement(p, {
+				}, x), i, E && n.a.createElement(p, {
 					canLoadContent: !!t,
 					isExpando: h,
 					postId: v
@@ -622,8 +622,8 @@
 				}).apply(this, arguments)
 			}
 			const v = 350,
-				x = 100,
-				w = 300;
+				w = 100,
+				x = 300;
 			class f extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -654,7 +654,7 @@
 						title: r
 					} = this.props, {
 						isFullyLoaded: p
-					} = this.state, f = i.height || (t.isDeleted ? x : w);
+					} = this.state, f = i.height || (t.isDeleted ? w : x);
 					return n.a.createElement(l.a, g({}, i, {
 						alwaysWrapMedia: !0,
 						height: f,
@@ -751,8 +751,8 @@
 				b = i("./src/lib/isUrl/index.ts"),
 				g = i("./src/lib/objectSelector/index.ts"),
 				v = i("./src/lib/onFocusAndVisibilityChange/index.ts"),
-				x = i("./src/lib/sentry/index.ts"),
-				w = i("./src/reddit/components/AdViewabilityMRC/index.tsx"),
+				w = i("./src/lib/sentry/index.ts"),
+				x = i("./src/reddit/components/AdViewabilityMRC/index.tsx"),
 				f = i("./src/reddit/components/Governance/Proposal/async.ts"),
 				y = i("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				E = i("./src/reddit/components/Media/constants.ts"),
@@ -1169,12 +1169,12 @@
 						case B.n.TEXT:
 							if (Object(F.a)(u)) {
 								const t = "Text post should not include body content";
-								return x.c.withScope(e => {
+								return w.c.withScope(e => {
 									e.setExtra("info", {
 										post: u,
 										isListing: a,
 										isCommentsPage: n
-									}), x.c.captureMessage(t)
+									}), w.c.captureMessage(t)
 								}), Object(p.a)() && console.log("".concat(u.id, ": ").concat(t)), l.a.createElement(C.a, {
 									postId: u.id,
 									className: e,
@@ -1299,7 +1299,7 @@
 								muxVideoIsLive: !1,
 								muxVideoTitle: u.title
 							}));
-							return u.isSponsored ? l.a.createElement(w.a, {
+							return u.isSponsored ? l.a.createElement(x.a, {
 								post: u
 							}, i) : i
 						}
@@ -1461,4 +1461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.b08f5739ee491353fa2b.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.460da066197b60e43a16.js.map

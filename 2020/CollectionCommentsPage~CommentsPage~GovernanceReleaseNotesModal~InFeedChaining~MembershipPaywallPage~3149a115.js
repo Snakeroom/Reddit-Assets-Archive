@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.882075d20813abb553b7.js
-// Retrieved at 5/19/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.1c47abc9723f12c9125a.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -854,16 +854,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
 			const F = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: T.pc,
+					experimentName: T.rc,
 					experimentEligibilitySelector: L.a
 				}), _.a),
 				k = Object(d.a)(F, (function(e) {
 					switch (e) {
-						case T.rc.BufferTwoSeconds:
+						case T.tc.BufferTwoSeconds:
 							return 2;
-						case T.rc.BufferFiveSeconds:
+						case T.tc.BufferFiveSeconds:
 							return 5;
-						case T.rc.BufferTenSeconds:
+						case T.tc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1792,8 +1792,8 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("8347f56-production", " ").concat(t);
-									return a && (s += " [".concat(T.pc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("2616400-production", " ").concat(t);
+									return a && (s += " [".concat(T.rc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2215,4 +2215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.882075d20813abb553b7.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.1c47abc9723f12c9125a.js.map

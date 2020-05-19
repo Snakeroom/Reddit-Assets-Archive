@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b9ac4d9e6cdb61698921.js
-// Retrieved at 5/19/2020, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.02d364dfca3552dadfb1.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -515,16 +515,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.zb
+					experimentName: d.Bb
 				});
-				return Object(d.uc)(t) ? void 0 : t
+				return Object(d.wc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.Ab
+					experimentName: d.Cb
 				});
-				return Object(d.uc)(t) ? void 0 : t
-			}, (e, t) => e === d.Bb.Enabled && t === d.Bb.Enabled);
+				return Object(d.wc)(t) ? void 0 : t
+			}, (e, t) => e === d.Db.Enabled && t === d.Db.Enabled);
 			var m = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "8347f56-production"
+					SENTRY_RELEASE_VERSION: "2616400-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -31565,4 +31565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b9ac4d9e6cdb61698921.js.map
+//# sourceMappingURL=PostCreation.02d364dfca3552dadfb1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.7e9ebc44278354779bac.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.e72daea8f42071037c6d.js
+// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -1269,8 +1269,9 @@
 					className: w.a.communityDescriptionContainer
 				}, i.a.createElement(a.a, {
 					className: w.a.communityName,
-					to: Object(O.a)(e.name, e.type),
-					onClick: e.onCommunityNameClick
+					onClick: e.onCommunityNameClick,
+					title: Object(O.b)(e.name, e.type),
+					to: Object(O.a)(e.name, e.type)
 				}, Object(O.b)(e.name, e.type)), i.a.createElement("div", {
 					className: w.a.communityInfoContainer
 				}, !!e.subscribers && i.a.createElement("p", {
@@ -1557,4 +1558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.7e9ebc44278354779bac.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.e72daea8f42071037c6d.js.map
