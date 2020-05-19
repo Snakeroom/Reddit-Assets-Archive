@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.935c2fda96816a890334.js
-// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.79add0d3c4c8f01ec60b.js
+// Retrieved at 5/19/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -915,9 +915,11 @@
 		},
 		"./src/reddit/actions/pages/meta/communityPointsLearnMorePage.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/reddit/actions/economics/me/thunkedActions.ts");
+			var n = s("./src/reddit/actions/economics/me/thunkedActions.ts"),
+				a = s("./src/reddit/actions/users.ts"),
+				r = s("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
-				await e(Object(n.b)()).then(() => {
+				Object(r.H)(t()) || await e(Object(a.r)()), await e(Object(n.b)()).then(() => {
 					if (t().economics.me.data) return e(Object(n.a)())
 				})
 			}
@@ -12827,4 +12829,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.935c2fda96816a890334.js.map
+//# sourceMappingURL=Reddit.79add0d3c4c8f01ec60b.js.map
