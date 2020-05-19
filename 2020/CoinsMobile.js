@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.76c7fe0701f635224b6e.js
-// Retrieved at 5/13/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.ef885b751f4b2249a5c0.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -201,7 +201,7 @@
 					}), {
 						":coin_price:": r.a.createElement("span", {
 							className: h.a.nowrap
-						}, r.a.createElement(E.a, null), g.m.coinPrice)
+						}, r.a.createElement(E.a, null), g.n.coinPrice)
 					})), r.a.createElement(f.a, {
 						className: h.a.gridItem,
 						icon: r.a.createElement("img", {
@@ -219,7 +219,7 @@
 						}, r.a.createElement(E.a, null), "100"),
 						":coin_price:": r.a.createElement("span", {
 							className: h.a.nowrap
-						}, r.a.createElement(E.a, null), g.k.coinPrice)
+						}, r.a.createElement(E.a, null), g.l.coinPrice)
 					})), r.a.createElement(f.a, {
 						className: h.a.gridItem,
 						icon: r.a.createElement("img", {
@@ -237,7 +237,7 @@
 						}, r.a.createElement(E.a, null), "700"),
 						":coin_price:": r.a.createElement("span", {
 							className: h.a.nowrap
-						}, r.a.createElement(E.a, null), g.l.coinPrice)
+						}, r.a.createElement(E.a, null), g.m.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
@@ -263,4 +263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsMobile.76c7fe0701f635224b6e.js.map
+//# sourceMappingURL=CoinsMobile.ef885b751f4b2249a5c0.js.map

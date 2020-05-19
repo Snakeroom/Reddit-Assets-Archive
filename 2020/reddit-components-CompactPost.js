@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.634ae072f65590e26b3b.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.5d9184b143b491172f7c.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -937,8 +937,7 @@
 						contentId: de.id,
 						subredditId: le.id
 					}), r.a.createElement(k.a, {
-						isOverlay: _,
-						tooltipType: Pe,
+						isOverlay: !!_,
 						thing: de
 					})), Ue && !ze && r.a.createElement("div", null, r.a.createElement(S.a, {
 						className: _e.a.liveDiscussionIcon,
@@ -1530,9 +1529,8 @@
 					subredditId: w.id
 				}), !C && r.a.createElement(n.a, {
 					hideCta: s,
-					isOverlay: y,
-					thing: E,
-					tooltipType: P
+					isOverlay: !!y,
+					thing: E
 				}))
 			}
 		},
@@ -1759,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.634ae072f65590e26b3b.js.map
+//# sourceMappingURL=reddit-components-CompactPost.5d9184b143b491172f7c.js.map

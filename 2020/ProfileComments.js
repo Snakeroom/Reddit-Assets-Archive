@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.7846cafb38b43809a795.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.00edf7e45310c0e72fb5.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1263,7 +1263,7 @@
 					contentId: u.id,
 					subredditId: u.subredditId
 				})), r.a.createElement(h.a, {
-					tooltipType: U ? N.c.Lightbox : void 0,
+					isOverlay: U,
 					thing: u
 				}))
 			});
@@ -1909,7 +1909,9 @@
 						deleteComment: () => s && e(Object(k.db)(n.id, n.postId)),
 						onDistinguishComment: (t, s) => e(Object(k.S)(n.id, t, s)),
 						onIgnoreReports: () => e(Object(k.pb)(n.id)),
-						onGildClick: () => e(Object(j.d)(n.id)),
+						onGildClick: () => e(Object(j.d)({
+							thingId: n.id
+						})),
 						onReportClick: () => e(Object(S.j)(n.id)),
 						onToggleDistinguishDropdown: () => e(Object(I.h)({
 							tooltipId: Ie(n.id)
@@ -5971,9 +5973,8 @@
 					subredditId: _.id
 				}), !j && o.a.createElement(r.a, {
 					hideCta: n,
-					isOverlay: y,
-					thing: O,
-					tooltipType: k
+					isOverlay: !!y,
+					thing: O
 				}))
 			}
 		},
@@ -9951,4 +9952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.7846cafb38b43809a795.js.map
+//# sourceMappingURL=ProfileComments.00edf7e45310c0e72fb5.js.map

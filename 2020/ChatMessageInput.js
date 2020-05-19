@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.431ad8737d8bed982aa8.js
-// Retrieved at 5/18/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.71c4234da2760f594969.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -319,22 +319,22 @@
 				j = s("./src/reddit/controls/Button/index.tsx"),
 				E = s("./src/reddit/controls/ErrorText/index.tsx"),
 				w = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				O = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				I = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				I = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				O = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				y = s("./src/reddit/helpers/trackers/rpan.ts"),
 				R = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				S = s("./src/reddit/icons/svgs/Send/index.tsx"),
-				T = s("./src/reddit/models/PostCreationForm/index.ts"),
+				T = s("./src/reddit/icons/svgs/Send/index.tsx"),
+				S = s("./src/reddit/models/PostCreationForm/index.ts"),
 				A = s("./src/reddit/selectors/comments.ts"),
-				N = s("./src/reddit/selectors/posts.ts"),
-				k = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				k = s("./src/reddit/selectors/posts.ts"),
+				N = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				M = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
 				L = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
 				B = s("./src/reddit/selectors/communityAwards.ts"),
-				F = s("./src/reddit/icons/fonts/Gild/index.tsx"),
+				F = s("./src/reddit/icons/fonts/Gift/index.tsx"),
 				P = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
 				W = s.n(P);
-			class K extends d.Component {
+			class G extends d.Component {
 				render() {
 					const {
 						award: e,
@@ -358,14 +358,14 @@
 					}, s) : null)
 				}
 			}
-			var G = Object(c.b)(() => Object(m.c)({
+			var U = Object(c.b)(() => Object(m.c)({
 				award: (e, t) => {
 					let {
 						awardId: s
 					} = t;
 					return s ? Object(B.a)(e, s) : void 0
 				}
-			}))(K);
+			}))(G);
 			const D = Object(c.b)(() => Object(m.a)(e => e, (e, t) => {
 					let {
 						postId: s
@@ -373,7 +373,7 @@
 					return Object(A.g)(e, {
 						commentsPageKey: Object(M.a)(s)
 					})
-				}, N.O, (e, t) => {
+				}, k.O, (e, t) => {
 					let {
 						postId: s
 					} = t;
@@ -399,18 +399,18 @@
 						postAwardCount: s.awardCountsById ? Object.values(s.awardCountsById).reduce((e, t) => e + t, 0) : s.allAwardings ? s.allAwardings.reduce((e, t) => e + t.count, 0) : 0
 					}
 				})),
-				q = e => ({
+				K = e => ({
 					initialCommentAwardIds: e.isPending ? [] : [...e.commentAwardIds],
 					initialPostAwardCount: e.isPending ? 0 : e.postAwardCount,
 					prevIsPending: e.isPending,
 					prevPostId: e.postId
 				});
-			class U extends d.Component {
+			class q extends d.Component {
 				constructor(e) {
-					super(e), this.state = q(e)
+					super(e), this.state = K(e)
 				}
 				static getDerivedStateFromProps(e, t) {
-					return t.prevPostId !== e.postId || t.prevIsPending && !e.isPending ? q(e) : null
+					return t.prevPostId !== e.postId || t.prevIsPending && !e.isPending ? K(e) : null
 				}
 				render() {
 					const {
@@ -423,19 +423,19 @@
 						inGoldRpanLivePreview: a,
 						isPending: r
 					} = this.props;
-					if (r) return l.a.createElement(G, {
+					if (r) return l.a.createElement(U, {
 						className: o,
 						count: 0
 					});
 					const i = Math.max(s, e + n.length - t.length);
-					if (!a) return l.a.createElement(G, {
+					if (!a) return l.a.createElement(U, {
 						className: o,
 						count: i
 					});
 					const d = n.length - 1,
 						c = n[d],
 						m = n.length !== t.length;
-					return l.a.createElement(G, {
+					return l.a.createElement(U, {
 						awardId: c,
 						className: o,
 						count: i,
@@ -444,13 +444,13 @@
 					})
 				}
 			}
-			var H = D(U),
+			var H = D(q),
 				J = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				X = s.n(J);
 			const Y = {},
 				Z = 1e3,
-				V = "chat_submission_from_rte",
-				Q = h.a.form("Form", X.a),
+				Q = "chat_submission_from_rte",
+				V = h.a.form("Form", X.a),
 				z = h.a.wrapped(j.a, "ChatButton", X.a),
 				$ = h.a.div("CloseIconWrap", X.a),
 				ee = h.a.div("Reply", X.a),
@@ -462,9 +462,9 @@
 					draft: A.i,
 					errorMsgs: A.I,
 					hasError: A.w,
-					liveStreamingChatCharacterLimit: k.a,
+					liveStreamingChatCharacterLimit: N.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: N.O
+					post: k.O
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -493,7 +493,9 @@
 								editorMode: i
 							})) : await e(Object(_.lb)(r, o, a, t, i, !0, d)), l && l()
 						},
-						handleGiveAward: () => e(Object(x.d)(r)),
+						handleGiveAward: () => e(Object(x.d)({
+							thingId: r
+						})),
 						onCancelEdit: () => n && e(Object(_.U)({
 							commentId: n.id,
 							commentsPageKey: o
@@ -540,13 +542,13 @@
 					}, this.onSubmit = () => {
 						if (this.canSubmit()) {
 							const e = {
-								commentMode: T.h.RICH_TEXT,
+								commentMode: S.h.RICH_TEXT,
 								draftType: p.c.replyToComment,
 								rteState: this.state.rteState,
 								hasFocus: !0,
 								text: ""
 							};
-							this.cleanInputForm(), this.props.dispatchSubmit(e, T.h.RICH_TEXT, this.props.replyComment)
+							this.cleanInputForm(), this.props.dispatchSubmit(e, S.h.RICH_TEXT, this.props.replyComment)
 						}
 						this.props.isLivestreaming && this.props.sendEvent(Object(y.p)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
@@ -607,11 +609,11 @@
 					})), l.a.createElement(v.a, {
 						className: X.a.RichTextJson,
 						key: "rich-text-".concat(c.id),
-						content: Object(O.a)(c),
+						content: Object(I.a)(c),
 						rtJsonElementProps: Y
 					}), l.a.createElement($, null, l.a.createElement(R.a, null)))), l.a.createElement("div", {
 						className: X.a.inputLine
-					}, l.a.createElement(Q, {
+					}, l.a.createElement(V, {
 						className: Object(u.a)({
 							[X.a.Editing]: t
 						}),
@@ -628,8 +630,8 @@
 						focusableContentRTEClassName: Object(u.a)({
 							[X.a.LivestreamingFocusableContent]: s && !t
 						}),
-						dataTestId: V,
-						editorType: I.a.Comment,
+						dataTestId: Q,
+						editorType: O.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: s ? 20 : void 0,
 						rteState: this.state.rteState,
@@ -661,7 +663,7 @@
 						"aria-label": n.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, l.a.createElement(S.a, null))), h && l.a.createElement(z, {
+					}, l.a.createElement(T.a, null))), h && l.a.createElement(z, {
 						className: Object(u.a)(X.a.ChatButton, {
 							[X.a.LivestreamingChatButton]: s,
 							[X.a.leftPad]: !p
@@ -852,7 +854,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return I
+				return O
 			})), s.d(t, "c", (function() {
 				return y
 			}));
@@ -953,10 +955,10 @@
 					}, o || e))
 				}
 			}
-			const O = Object(c.b)(E, e => ({
+			const I = Object(c.b)(E, e => ({
 					toggleErrorTextModal: t => e(Object(h.i)(t))
 				}))(w),
-				I = e => {
+				O = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -966,19 +968,19 @@
 					} = e, r = a.length ? a : o ? [o] : [];
 					return r.length ? l.a.createElement("div", {
 						className: t
-					}, r.map((e, t) => l.a.createElement(O, {
+					}, r.map((e, t) => l.a.createElement(I, {
 						className: s,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				y = e => l.a.createElement(I, {
+				y = e => l.a.createElement(O, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = O
+			t.b = I
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1017,25 +1019,25 @@
 				},
 				i = e => Object(n.a)(a.a.loadingBar, r(e))
 		},
-		"./src/reddit/icons/fonts/Gild/index.m.less": function(e, t, s) {
+		"./src/reddit/icons/fonts/Gift/index.m.less": function(e, t, s) {
 			e.exports = {
-				GildIcon: "_31hC6liK9ba3nW1h_0cKS3",
-				gildIcon: "_31hC6liK9ba3nW1h_0cKS3"
+				GiftIcon: "_12P1l1cITUMF05krI6QUSj",
+				giftIcon: "_12P1l1cITUMF05krI6QUSj"
 			}
 		},
-		"./src/reddit/icons/fonts/Gild/index.tsx": function(e, t, s) {
+		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				a = s("./src/reddit/icons/fonts/helpers.tsx"),
-				r = s("./src/reddit/icons/fonts/Gild/index.m.less"),
+				r = s("./src/reddit/icons/fonts/Gift/index.m.less"),
 				i = s.n(r);
 			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(a.b)("gild"), " ").concat(e.className),
+				className: "".concat(Object(a.b)("gift"), " ").concat(e.className),
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave
-			}, o.a.createElement(a.a, null, e.desc)), "GildIcon", i.a);
+			}, o.a.createElement(a.a, null, e.desc)), "GiftIcon", i.a);
 			t.a = d
 		},
 		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, s) {
@@ -1067,4 +1069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.431ad8737d8bed982aa8.js.map
+//# sourceMappingURL=ChatMessageInput.71c4234da2760f594969.js.map

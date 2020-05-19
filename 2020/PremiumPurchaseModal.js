@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.d5b1d194f989907f6d94.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.beb76f5f11cd1f6101f2.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -375,9 +375,9 @@
 				E = a("./src/reddit/selectors/user.ts"),
 				_ = a("./node_modules/fbt/lib/FbtPublic.js"),
 				f = a("./src/lib/loadRedditAdsPixel.ts"),
-				v = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
-				x = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				k = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				x = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
+				k = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				v = a("./src/reddit/helpers/createEmojiText/index.tsx"),
 				N = a("./src/reddit/icons/fonts/Premium/index.tsx"),
 				j = a("./src/reddit/components/PremiumPurchaseModal/index.m.less"),
 				O = a.n(j);
@@ -419,7 +419,7 @@
 						hk: "1RxPah"
 					}))), s.a.createElement("div", {
 						className: O.a.paymentCompleteTitleItemLast
-					}, Object(k.a)(_.fbt._("Find more about {anchor text} on Reddit.", [_.fbt._param("anchor text", ":loungeLink:")], {
+					}, Object(v.a)(_.fbt._("Find more about {anchor text} on Reddit.", [_.fbt._param("anchor text", ":loungeLink:")], {
 						hk: "2RGr1F"
 					}), {
 						":loungeLink:": s.a.createElement("a", {
@@ -429,10 +429,10 @@
 					}))), s.a.createElement("button", {
 						className: O.a.closeButton,
 						onClick: e.onCloseClick
-					}, s.a.createElement(x.b, {
+					}, s.a.createElement(k.b, {
 						className: O.a.closeIcon,
 						"data-redditstyle": !0
-					}))), s.a.createElement(v.a, {
+					}))), s.a.createElement(x.a, {
 						onCloseClick: e.onCloseClick
 					}))
 				}
@@ -545,7 +545,7 @@
 			})), s.a.createElement("button", {
 				className: O.a.closeButton,
 				onClick: e.onCloseClick
-			}, s.a.createElement(x.b, {
+			}, s.a.createElement(k.b, {
 				className: O.a.closeIcon,
 				"data-redditstyle": !0
 			})));
@@ -583,7 +583,7 @@
 				className: O.a.membershipDescription
 			}, s.a.createElement(S.a, null, "Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.")), s.a.createElement("div", {
 				className: O.a.agreementLink
-			}, Object(k.a)(_.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [_.fbt._param("Link text", ":agreement:")], {
+			}, Object(v.a)(_.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [_.fbt._param("Link text", ":agreement:")], {
 				hk: "fXr9v"
 			}), {
 				":agreement:": s.a.createElement("a", {
@@ -754,7 +754,7 @@
 			})), a.d(t, "h", (function() {
 				return f
 			})), a.d(t, "i", (function() {
-				return v
+				return x
 			}));
 			var n = a("./src/lib/constants/index.ts"),
 				s = a("./src/reddit/selectors/gold/giveAwards.ts"),
@@ -775,8 +775,8 @@
 					let _;
 					E && (_ = "low_coin_balance"), "new_purchaser" === P && (_ = "new_user_targeted_offer"), "repeat_purchaser" === P && (_ = "repeat_user_targeted_offer");
 					const f = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0,
-						v = C ? Math.round(1e4 * (C.coins - C.baselineCoins) / C.coins) / 100 : 0,
-						x = C ? C.baselinePennies !== C.pennies ? "".concat(f, "_percent_price") : C.baselineCoins !== C.coins ? "".concat(v, "_percent_bonus") : void 0 : void 0;
+						x = C ? Math.round(1e4 * (C.coins - C.baselineCoins) / C.coins) / 100 : 0,
+						k = C ? C.baselinePennies !== C.pennies ? "".concat(f, "_percent_price") : C.baselineCoins !== C.coins ? "".concat(x, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, l.defaults(e), {
 						comment: a ? l.comment(e, a) : null,
 						correlationId: Object(u.c)(u.a.GoldPayment),
@@ -793,7 +793,7 @@
 							contentType: g,
 							numberCoins: C ? C.coins : void 0,
 							offerContext: _,
-							offerType: E ? C ? "".concat(C.bonusPct, "_percent_bonus") : void 0 : x
+							offerType: E ? C ? "".concat(C.bonusPct, "_percent_bonus") : void 0 : k
 						}),
 						payment: {
 							currency: "USD",
@@ -867,7 +867,7 @@
 						})
 					})
 				},
-				v = e => t => {
+				x = e => t => {
 					const a = h(t, {
 						thingId: e
 					});
@@ -892,14 +892,7 @@
 			function r(e) {
 				return s.a.createElement(s.a.Fragment, null, e.children)
 			}
-		},
-		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return n
-			}));
-			const n = e => e.gild.selectedAward
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.d5b1d194f989907f6d94.js.map
+//# sourceMappingURL=PremiumPurchaseModal.beb76f5f11cd1f6101f2.js.map

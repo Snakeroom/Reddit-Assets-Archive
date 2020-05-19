@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.eb32c397fb7dbf12e959.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.8a2fa3492a2fb50ced38.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -452,7 +452,7 @@
 					}, this.onCostInputOpen = () => {
 						this.props.sendEvent(Object(u.c)("click", "coin_cost_input"))
 					}, this.getCostDropdownMenuItems = () => {
-						return Object(y.i)(this.props.awards).map(e => ({
+						return Object(y.j)(this.props.awards).map(e => ({
 							displayText: p.fbt._("{Award cost} Coins", [p.fbt._param("Award cost", e.toLocaleString())], {
 								hk: "4rKGHp"
 							}),
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.eb32c397fb7dbf12e959.js.map
+//# sourceMappingURL=AwardCreationModal.8a2fa3492a2fb50ced38.js.map

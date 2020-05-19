@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.15737c4c8743647bb1f7.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.271503603c5d85453520.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/components/Gold/TargetedOfferModal/index.m.less": function(e, t, n) {
@@ -18,8 +18,8 @@
 			"use strict";
 			n.r(t);
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				a = n.n(s),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
 				c = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -56,7 +56,7 @@
 						purchasePackageId: i
 					} = e,
 					m = n.filter(e => e.mobileId === i)[0];
-				if (Object(s.useEffect)(() => {
+				if (Object(a.useEffect)(() => {
 						m && (Object(d.d)(d.a.GoldPayment), t(Object(l.h)(void 0, m.mobileId)))
 					}, []), !m) return c(), null;
 				const {
@@ -66,46 +66,46 @@
 					dealInfo: _,
 					pennies: y,
 					mobileId: k
-				} = m, O = g !== p, P = "".concat(Math.round(100 * (g / p - 1)), "%"), j = b - y, w = y !== b, {
-					title: C,
-					subtitle: I,
+				} = m, O = g !== p, P = "".concat(Math.round(100 * (g / p - 1)), "%"), j = b - y, C = y !== b, {
+					title: I,
+					subtitle: w,
 					type: M
-				} = _, v = C || ("low_coin_upsell" === M ? r.fbt._("You’re low on Coins", null, {
+				} = _, v = I || ("low_coin_upsell" === M ? r.fbt._("You’re low on Coins", null, {
 					hk: "2rWB40"
 				}) : r.fbt._("Special Offer!", null, {
 					hk: "2wnTrq"
-				})), T = I || r.fbt._("Stock up and save with this limited-time offer", null, {
+				})), T = w || r.fbt._("Stock up and save with this limited-time offer", null, {
 					hk: "2eml5T"
 				}), x = O ? r.fbt._("Buy {coin amount} for {price} and get {bonus coins percentage} bonus Coins", [r.fbt._param("coin amount", p.toLocaleString()), r.fbt._param("price", "$".concat(m.pennies / 100)), r.fbt._param("bonus coins percentage", P)], {
 					hk: "2KNC96"
-				}) : w ? r.fbt._("Save {baseline price} off normal price!", [r.fbt._param("baseline price", "$".concat(j / 100))], {
+				}) : C ? r.fbt._("Save {baseline price} off normal price!", [r.fbt._param("baseline price", "$".concat(j / 100))], {
 					hk: "CRTYf"
 				}) : m.description;
-				return a.a.createElement(f.d, {
+				return s.a.createElement(f.d, {
 					className: h.a.body
-				}, a.a.createElement("button", {
+				}, s.a.createElement("button", {
 					onClick: () => {
 						t(Object(l.b)(void 0, k)), c()
 					},
 					className: h.a.closeButton
-				}, a.a.createElement(f.b, null)), a.a.createElement("img", {
+				}, s.a.createElement(f.b, null)), s.a.createElement("img", {
 					className: h.a.image,
 					src: m.images.marketing["2x"].url
-				}), a.a.createElement("h4", {
+				}), s.a.createElement("h4", {
 					className: h.a.dealTitle
-				}, v), a.a.createElement("p", {
+				}, v), s.a.createElement("p", {
 					className: h.a.dealDescription
-				}, T), a.a.createElement("h4", {
+				}, T), s.a.createElement("h4", {
 					className: h.a.deal
-				}, x), a.a.createElement("p", {
+				}, x), s.a.createElement("p", {
 					className: h.a.agreementLink
-				}, r.fbt._("By purchasing Coins, you agree to our {user agreement} and {privacy plicy}", [r.fbt._param("user agreement", a.a.createElement("a", {
+				}, r.fbt._("By purchasing Coins, you agree to our {user agreement} and {privacy plicy}", [r.fbt._param("user agreement", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
 					target: "_blank",
 					rel: "noopener noreferrer"
 				}, r.fbt._("User Agreement", null, {
 					hk: "n6txc"
-				}))), r.fbt._param("privacy plicy", a.a.createElement("a", {
+				}))), r.fbt._param("privacy plicy", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/privacy-policy",
 					target: "_blank",
 					rel: "noopener noreferrer"
@@ -113,7 +113,7 @@
 					hk: "11oBec"
 				})))], {
 					hk: "3RTwKy"
-				})), a.a.createElement(f.q, {
+				})), s.a.createElement(f.q, {
 					className: h.a.button,
 					"data-redditstyle": !0,
 					onClick: () => {
@@ -146,8 +146,8 @@
 				return j
 			}));
 			var r = n("./src/lib/constants/index.ts"),
-				s = n("./src/reddit/selectors/gold/giveAwards.ts"),
-				a = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				a = n("./src/reddit/selectors/gold/giveAwards.ts"),
+				s = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				c = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				o = n("./src/reddit/selectors/platform.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts"),
@@ -160,12 +160,12 @@
 					const {
 						thingId: n,
 						packageId: o
-					} = t, l = s.a(e), b = l ? Object(u.getAwardTypeFromAward)(l) : null, g = n ? b : c.n(e) ? d.Premium : d.Coins, f = n ? Object(p.a)(n) ? "comment" : "post" : void 0, _ = o || c.q(e), h = [...Object(a.b)(e), ...Object(a.d)(e)].filter(e => e.mobileId === _)[0], y = h && h.dealInfo && h.dealInfo.type, k = "low_coin_upsell" === y;
+					} = t, l = a.a(e), b = l ? Object(u.getAwardTypeFromAward)(l) : null, g = n ? b : c.n(e) ? d.Premium : d.Coins, f = n ? Object(p.a)(n) ? "comment" : "post" : void 0, _ = o || c.q(e), h = [...Object(s.b)(e), ...Object(s.d)(e)].filter(e => e.mobileId === _)[0], y = h && h.dealInfo && h.dealInfo.type, k = "low_coin_upsell" === y;
 					let O;
 					k && (O = "low_coin_balance"), "new_purchaser" === y && (O = "new_user_targeted_offer"), "repeat_purchaser" === y && (O = "repeat_user_targeted_offer");
 					const P = h ? Math.round(1e4 * (h.baselinePennies - h.pennies) / h.baselinePennies) / 100 : 0,
 						j = h ? Math.round(1e4 * (h.coins - h.baselineCoins) / h.coins) / 100 : 0,
-						w = h ? h.baselinePennies !== h.pennies ? "".concat(P, "_percent_price") : h.baselineCoins !== h.coins ? "".concat(j, "_percent_bonus") : void 0 : void 0;
+						C = h ? h.baselinePennies !== h.pennies ? "".concat(P, "_percent_price") : h.baselineCoins !== h.coins ? "".concat(j, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, i.defaults(e), {
 						comment: n ? i.comment(e, n) : null,
 						correlationId: Object(m.c)(m.a.GoldPayment),
@@ -182,7 +182,7 @@
 							contentType: f,
 							numberCoins: h ? h.coins : void 0,
 							offerContext: O,
-							offerType: k ? h ? "".concat(h.bonusPct, "_percent_bonus") : void 0 : w
+							offerType: k ? h ? "".concat(h.bonusPct, "_percent_bonus") : void 0 : C
 						}),
 						payment: {
 							currency: "USD",
@@ -274,14 +274,7 @@
 			"use strict";
 			var r = n("./src/reddit/components/TrackingHelper/index.tsx");
 			t.a = r.b
-		},
-		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			const r = e => e.gild.selectedAward
 		}
 	}
 ]);
-//# sourceMappingURL=GoldTargetedOfferModal.15737c4c8743647bb1f7.js.map
+//# sourceMappingURL=GoldTargetedOfferModal.271503603c5d85453520.js.map

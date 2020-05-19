@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b07638e7d7669fcefd3d.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.45200a530bf81a58f03f.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4866,7 +4866,7 @@
 					contentId: p.id,
 					subredditId: p.subredditId
 				})), a.a.createElement(h.a, {
-					tooltipType: W ? T.c.Lightbox : void 0,
+					isOverlay: W,
 					thing: p
 				}))
 			});
@@ -5911,7 +5911,7 @@
 				getAwardSlots() {
 					const {
 						awards: e
-					} = this.props, t = Object(x.h)(e), s = e => e.filled && e.award.awardType === x.e.Moderator;
+					} = this.props, t = Object(x.i)(e), s = e => e.filled && e.award.awardType === x.e.Moderator;
 					return t.sort((e, t) => s(e) && !s(t) ? 1 : s(t) && !s(e) ? -1 : e.price !== t.price ? e.price - t.price : e.filled && !t.filled ? -1 : (t.filled && e.filled, 1))
 				}
 				render() {
@@ -7592,8 +7592,7 @@
 						contentId: de.id,
 						subredditId: ce.id
 					}), o.a.createElement(S.a, {
-						isOverlay: C,
-						tooltipType: je,
+						isOverlay: !!C,
 						thing: de
 					})), Ve && !qe && o.a.createElement("div", null, o.a.createElement(N.a, {
 						className: Ce.a.liveDiscussionIcon,
@@ -9323,7 +9322,10 @@
 							e(Object(h.a)(n.postId, t))
 						},
 						onFlairPost: () => e(Object(p.i)(Object(L.b)(n.postId, o))),
-						onGildClick: () => e(Object(u.d)(n.postId, o)),
+						onGildClick: () => e(Object(u.d)({
+							thingId: n.postId,
+							isOverlay: o
+						})),
 						onFlairChanged: t => {
 							let {
 								selectedTemplateId: s,
@@ -9441,7 +9443,7 @@
 						isUserOp: G,
 						onClick: this.handleGild,
 						skipRoleAttr: !0
-					}, a.a.createElement(F.f, {
+					}, a.a.createElement(F.a, {
 						id: Y
 					})), a.a.createElement(T, {
 						postOrComment: S,
@@ -9474,7 +9476,7 @@
 						isUserOp: G,
 						onClick: this.props.onEdit,
 						skipRoleAttr: !0
-					}, a.a.createElement(F.b, null)), (!c || !_) && a.a.createElement(K.a, {
+					}, a.a.createElement(F.c, null)), (!c || !_) && a.a.createElement(K.a, {
 						displayText: S.saved ? n.fbt._("unsave", null, {
 							hk: "4Dn4IT"
 						}) : n.fbt._("save", null, {
@@ -9485,7 +9487,7 @@
 						isUserOp: G,
 						onClick: this.onSaveClick,
 						skipRoleAttr: !0
-					}, S.saved ? a.a.createElement(F.e, null) : a.a.createElement(F.d, null)), !S.isSponsored && !he && a.a.createElement(K.a, {
+					}, S.saved ? a.a.createElement(F.f, null) : a.a.createElement(F.e, null)), !S.isSponsored && !he && a.a.createElement(K.a, {
 						displayText: S.hidden ? n.fbt._("unhide", null, {
 							hk: "151XLs"
 						}) : n.fbt._("hide", null, {
@@ -9496,7 +9498,7 @@
 						isUserOp: G,
 						onClick: this.onHideClick,
 						skipRoleAttr: !0
-					}, a.a.createElement(F.a, null)), !z && !S.isSponsored && !he && a.a.createElement(K.a, {
+					}, a.a.createElement(F.b, null)), !z && !S.isSponsored && !he && a.a.createElement(K.a, {
 						displayText: n.fbt._("report", null, {
 							hk: "1phfns"
 						}),
@@ -9505,7 +9507,7 @@
 						isUserOp: G,
 						onClick: this.onReportClick,
 						skipRoleAttr: !0
-					}, a.a.createElement(F.c, null)), a.a.createElement(R.a, {
+					}, a.a.createElement(F.d, null)), a.a.createElement(R.a, {
 						isOverlay: h,
 						layout: C,
 						modModeEnabled: _,
@@ -17589,9 +17591,8 @@
 					subredditId: y.id
 				}), !w && o.a.createElement(a.a, {
 					hideCta: s,
-					isOverlay: v,
-					thing: k,
-					tooltipType: j
+					isOverlay: !!v,
+					thing: k
 				}))
 			}
 		},
@@ -17688,12 +17689,12 @@
 				return ge
 			})), s.d(t, "c", (function() {
 				return fe
-			})), s.d(t, "e", (function() {
-				return xe
 			})), s.d(t, "d", (function() {
-				return Ee
+				return xe
 			})), s.d(t, "f", (function() {
-				return Ce
+				return Ee
+			})), s.d(t, "e", (function() {
+				return ve
 			})), s.d(t, "h", (function() {
 				return Me
 			}));
@@ -17720,7 +17721,7 @@
 				_ = s("./src/reddit/icons/fonts/Admin/index.tsx"),
 				k = s("./src/reddit/icons/fonts/Calendar/index.tsx"),
 				O = s("./src/reddit/icons/fonts/Embed/index.tsx"),
-				y = s("./src/reddit/icons/fonts/Gild/index.tsx"),
+				y = s("./src/reddit/icons/fonts/Gift/index.tsx"),
 				j = s("./src/reddit/icons/fonts/helpers.tsx"),
 				w = s("./src/reddit/icons/fonts/Hide/index.m.less"),
 				S = s.n(w);
@@ -17776,13 +17777,13 @@
 					}
 					return s
 				};
-			const he = u.a.wrapped(I, "Icon", pe.a),
-				ge = u.a.wrapped(P.a, "Icon", pe.a),
-				fe = u.a.wrapped(M.a, "Icon", pe.a),
-				xe = u.a.wrapped(H.a, "Icon", pe.a),
-				Ee = u.a.wrapped(R.a, "Icon", pe.a),
-				ve = u.a.wrapped(_.a, "Icon", pe.a),
-				Ce = u.a.wrapped(y.a, "Icon", pe.a),
+			const he = u.a.wrapped(y.a, "Icon", pe.a),
+				ge = u.a.wrapped(I, "Icon", pe.a),
+				fe = u.a.wrapped(P.a, "Icon", pe.a),
+				xe = u.a.wrapped(M.a, "Icon", pe.a),
+				Ee = u.a.wrapped(H.a, "Icon", pe.a),
+				ve = u.a.wrapped(R.a, "Icon", pe.a),
+				Ce = u.a.wrapped(_.a, "Icon", pe.a),
 				_e = u.a.wrapped(U.a, "AddCollectionIcon", pe.a),
 				ke = u.a.wrapped(O.a, "Icon", pe.a),
 				Oe = u.a.wrapped(L.a, "Icon", pe.a),
@@ -17877,7 +17878,10 @@
 						onCopyLink: () => e(Object(f.F)(s)),
 						onDelete: t => e(Object(f.O)(n, t, o)),
 						onDistinguishPost: t => e(Object(f.x)(n, t)),
-						onGildClick: () => e(Object(b.d)(n, o)),
+						onGildClick: () => e(Object(b.d)({
+							thingId: n,
+							isOverlay: o
+						})),
 						onToggleSave: () => e(Object(f.V)(n)),
 						onToggleNSFW: () => e(Object(f.K)(n)),
 						onToggleOC: () => e(Object(f.L)(n)),
@@ -17993,7 +17997,7 @@
 							hk: "3mYeGJ"
 						}),
 						onClick: this.handleGild
-					}, r.a.createElement(Ce, null)), r.a.createElement(Te, {
+					}, r.a.createElement(he, null)), r.a.createElement(Te, {
 						className: this.getBreakpointClass(Q.a.Share),
 						displayText: n.fbt._("Copy link", null, {
 							hk: "ETZxA"
@@ -18016,7 +18020,7 @@
 						}),
 						onClick: this.handleEdit,
 						isSelected: e.isHidden
-					}, r.a.createElement(ge, null)), c && r.a.createElement(Te, {
+					}, r.a.createElement(fe, null)), c && r.a.createElement(Te, {
 						displayText: n.fbt._("Edit flair", null, {
 							hk: "qt3W7"
 						}),
@@ -18031,7 +18035,7 @@
 						}),
 						onClick: this.toggleSave,
 						isSelected: e.isSaved
-					}, e.isSaved ? r.a.createElement(xe, null) : r.a.createElement(Ee, null)), m && r.a.createElement(Te, {
+					}, e.isSaved ? r.a.createElement(Ee, null) : r.a.createElement(ve, null)), m && r.a.createElement(Te, {
 						displayText: a ? n.fbt._("Unpin Post from Profile", null, {
 							hk: "6DYfk"
 						}) : n.fbt._("Pin Post to Profile", null, {
@@ -18047,13 +18051,13 @@
 						}),
 						onClick: this.toggleHide,
 						isSelected: e.isHidden
-					}, r.a.createElement(he, null)), !e.isSponsored && !b && r.a.createElement(Te, {
+					}, r.a.createElement(ge, null)), !e.isSponsored && !b && r.a.createElement(Te, {
 						className: this.getBreakpointClass(Q.a.Report),
 						displayText: n.fbt._("report", null, {
 							hk: "128RPn"
 						}),
 						onClick: this.handleReport
-					}, r.a.createElement(fe, null)), l && s && i && r.a.createElement(Te, {
+					}, r.a.createElement(xe, null)), l && s && i && r.a.createElement(Te, {
 						onClick: i,
 						displayText: n.fbt._("Start event now", null, {
 							hk: "3VomTN"
@@ -18087,7 +18091,7 @@
 							hk: "2xltiM"
 						}),
 						onClick: () => e.post.distinguishType === o.A.ADMIN ? e.onDistinguishPost(o.A.NONE) : e.onDistinguishPost(o.A.ADMIN)
-					}, r.a.createElement(ve, null)), b && f && !g && r.a.createElement(Pe, {
+					}, r.a.createElement(Ce, null)), b && f && !g && r.a.createElement(Pe, {
 						text: n.fbt._("Mark as OC", null, {
 							hk: "2vGyoC"
 						}),
@@ -25882,27 +25886,6 @@
 				lightboxIcon: "_1RQFWa5zHMcVoJ2MvnnGM3"
 			}
 		},
-		"./src/reddit/icons/fonts/Gild/index.m.less": function(e, t, s) {
-			e.exports = {
-				GildIcon: "_31hC6liK9ba3nW1h_0cKS3",
-				gildIcon: "_31hC6liK9ba3nW1h_0cKS3"
-			}
-		},
-		"./src/reddit/icons/fonts/Gild/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				a = s("./src/reddit/icons/fonts/helpers.tsx"),
-				r = s("./src/reddit/icons/fonts/Gild/index.m.less"),
-				i = s.n(r);
-			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(a.b)("gild"), " ").concat(e.className),
-				id: e.id,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave
-			}, o.a.createElement(a.a, null, e.desc)), "GildIcon", i.a);
-			t.a = d
-		},
 		"./src/reddit/icons/fonts/Hide/index.m.less": function(e, t, s) {
 			e.exports = {
 				HideIcon: "_1ps3GcyMra2ZVakeRQFnGj",
@@ -26208,32 +26191,6 @@
 			}), o.a.createElement("path", {
 				d: "M22.8,11.3v2.3c0,1.4-1,2.7-2.5,2.9c-1.6,0.2-3-1.1-3-2.7v-5c0,0,0-0.1,0-0.1l-0.8-0.4c-0.9-0.4-2-0.3-2.7,0.4L2.5,18.5h35L22.8,11.3z"
 			}))))
-		},
-		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, s) {
-			e.exports = {
-				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
-			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				a = s("./src/lib/classNames/index.ts"),
-				r = s("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				i = s.n(r);
-			t.a = e => o.a.createElement("svg", {
-				className: Object(a.a)(i.a.chevron, e.className),
-				viewBox: "0 0 9 14",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("g", {
-				transform: "translate(-6.000000, -3.000000)"
-			}, o.a.createElement("polygon", {
-				fill: "none",
-				points: "0 20 20 20 20 0 0 0"
-			}), o.a.createElement("polygon", {
-				fill: "inherit",
-				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
-			})))
 		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, s) {
 			"use strict";
@@ -28827,4 +28784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.b07638e7d7669fcefd3d.js.map
+//# sourceMappingURL=ModerationPages.45200a530bf81a58f03f.js.map

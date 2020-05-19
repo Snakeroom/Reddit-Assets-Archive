@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a69aa31ea972ef201a7d.js
-// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.71e99daa12b21abe793f.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -279,16 +279,16 @@
 			const u = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.yb
+					experimentName: d.zb
 				});
-				return Object(d.tc)(t) ? void 0 : t
+				return Object(d.uc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.zb
+					experimentName: d.Ab
 				});
-				return Object(d.tc)(t) ? void 0 : t
-			}, (e, t) => e === d.Ab.Enabled && t === d.Ab.Enabled);
+				return Object(d.uc)(t) ? void 0 : t
+			}, (e, t) => e === d.Bb.Enabled && t === d.Bb.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -336,7 +336,7 @@
 			};
 			const f = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "760a24e-production"
+					SENTRY_RELEASE_VERSION: "88a58eb-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -3154,7 +3154,9 @@
 					t.currentStreamId && (e(Object(me.Z)(t.currentStreamId, !0, !0, !0)), e(k(t.currentStreamId)))
 				},
 				handleGiveAward: () => {
-					t.currentStreamId && e(Object(de.d)(t.currentStreamId))
+					t.currentStreamId && e(Object(de.d)({
+						thingId: t.currentStreamId
+					}))
 				},
 				onSubscribeSubreddit: () => {
 					const s = t.subreddit && t.subreddit.split("/").pop();
@@ -4094,4 +4096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.a69aa31ea972ef201a7d.js.map
+//# sourceMappingURL=PublicAccessNetwork.71e99daa12b21abe793f.js.map

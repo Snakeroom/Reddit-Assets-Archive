@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.17b534651683098619e0.js
-// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a26c562dec8f3cadc953.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1002,7 +1002,7 @@
 					contentId: u.id,
 					subredditId: u.subredditId
 				})), o.a.createElement(h.a, {
-					tooltipType: W ? N.c.Lightbox : void 0,
+					isOverlay: W,
 					thing: u
 				}))
 			});
@@ -4080,9 +4080,8 @@
 					subredditId: _.id
 				}), !k && r.a.createElement(o.a, {
 					hideCta: s,
-					isOverlay: v,
-					thing: E,
-					tooltipType: P
+					isOverlay: !!v,
+					thing: E
 				}))
 			}
 		},
@@ -9436,9 +9435,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.Qb.Treatment1 === Object(r.c)(e, {
+			const o = e => n.Rb.Treatment1 === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Ob
+				experimentName: n.Pb
 			})
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -9455,4 +9454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.17b534651683098619e0.js.map
+//# sourceMappingURL=SearchResults.a26c562dec8f3cadc953.js.map

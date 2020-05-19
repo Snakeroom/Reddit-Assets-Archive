@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.b3dfdbd8059ac5ddd7a6.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.82aac008782ef542c556.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -859,7 +859,7 @@
 					}), {
 						":coin_price:": l.a.createElement("span", {
 							className: N.a.nowrap
-						}, l.a.createElement(Z.a, null), v.m.coinPrice)
+						}, l.a.createElement(Z.a, null), v.n.coinPrice)
 					})), l.a.createElement(H.a, {
 						className: N.a.gridItem,
 						icon: l.a.createElement("img", {
@@ -876,7 +876,7 @@
 						}, l.a.createElement(Z.a, null), "100"),
 						":coin_price:": l.a.createElement("span", {
 							className: N.a.nowrap
-						}, l.a.createElement(Z.a, null), v.k.coinPrice)
+						}, l.a.createElement(Z.a, null), v.l.coinPrice)
 					})), l.a.createElement(H.a, {
 						className: N.a.gridItem,
 						icon: l.a.createElement("img", {
@@ -893,7 +893,7 @@
 						}, l.a.createElement(Z.a, null), "700"),
 						":coin_price:": l.a.createElement("span", {
 							className: N.a.nowrap
-						}, l.a.createElement(Z.a, null), v.l.coinPrice)
+						}, l.a.createElement(Z.a, null), v.m.coinPrice)
 					}))))
 				}
 				renderPurchase() {
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.b3dfdbd8059ac5ddd7a6.js.map
+//# sourceMappingURL=Coins.82aac008782ef542c556.js.map

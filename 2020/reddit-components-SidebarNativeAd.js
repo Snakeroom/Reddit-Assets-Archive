@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6f9d3aa86575d0f7bb4e.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.060473be26a2dcf6882a.js
+// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -999,9 +999,8 @@
 					subredditId: j.id
 				}), !P && o.a.createElement(r.a, {
 					hideCta: s,
-					isOverlay: O,
-					thing: E,
-					tooltipType: w
+					isOverlay: !!O,
+					thing: E
 				}))
 			}
 		},
@@ -1537,4 +1536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.6f9d3aa86575d0f7bb4e.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.060473be26a2dcf6882a.js.map
