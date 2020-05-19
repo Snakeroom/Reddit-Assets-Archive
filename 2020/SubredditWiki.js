@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b8dda7e7aaa52a09c4ec.js
-// Retrieved at 5/19/2020, 4:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.e5e851e03594b5088eab.js
+// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1562,7 +1562,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = p.a.div("ButtonsContainer", D.a), U = p.a.div("Container", D.a), H = p.a.div("Description", D.a), V = p.a.div("PrivateSubredditDetails", D.a), z = p.a.div("PrivateSubredditDescription", D.a), K = p.a.h3("PrivateSubredditName", D.a), G = p.a.a("Link", D.a), q = p.a.wrapped(L.h, "LinkRouterButton", D.a), J = p.a.wrapped(L.g, "LinkButton", D.a), Z = p.a.wrapped(L.k, "SecondaryLinkRouterButton", D.a), X = p.a.wrapped(L.j, "SecondaryLinkButton", D.a), Y = p.a.wrapped(q, "GoHomeLinkButton", D.a), Q = p.a.img("Image", D.a), $ = p.a.img("ImagePlaceholder", D.a), ee = p.a.wrapped(q, "LeftLinkRouterButton", D.a), te = p.a.wrapped(J, "LeftLinkButton", D.a), ne = p.a.wrapped(X, "SecondaryLeftLinkButton", D.a), se = p.a.wrapped(Z, "SecondaryLeftLinkRouterButton", D.a), re = p.a.h3("Title", D.a), ie = p.a.div("PageBody", D.a), ae = p.a.div("QuarantineMessageWrapper", D.a), oe = Object(d.c)({
 				isLoggedIn: W.G,
 				language: W.Q,
-				origin: R.j,
+				origin: R.k,
 				user: W.i
 			}), de = Object(I.t)(), ce = Object(a.b)(oe, (e, t) => {
 				let {
@@ -6377,4 +6377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.b8dda7e7aaa52a09c4ec.js.map
+//# sourceMappingURL=SubredditWiki.e5e851e03594b5088eab.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.45200a530bf81a58f03f.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4c7a76cb930d535c5f34.js
+// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -7916,7 +7916,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", D.a), H = p.a.div("Container", D.a), W = p.a.div("Description", D.a), V = p.a.div("PrivateSubredditDetails", D.a), q = p.a.div("PrivateSubredditDescription", D.a), G = p.a.h3("PrivateSubredditName", D.a), z = p.a.a("Link", D.a), K = p.a.wrapped(M.h, "LinkRouterButton", D.a), Q = p.a.wrapped(M.g, "LinkButton", D.a), J = p.a.wrapped(M.k, "SecondaryLinkRouterButton", D.a), X = p.a.wrapped(M.j, "SecondaryLinkButton", D.a), Z = p.a.wrapped(K, "GoHomeLinkButton", D.a), Y = p.a.img("Image", D.a), $ = p.a.img("ImagePlaceholder", D.a), ee = p.a.wrapped(K, "LeftLinkRouterButton", D.a), te = p.a.wrapped(Q, "LeftLinkButton", D.a), se = p.a.wrapped(X, "SecondaryLeftLinkButton", D.a), ne = p.a.wrapped(J, "SecondaryLeftLinkRouterButton", D.a), oe = p.a.h3("Title", D.a), ae = p.a.div("PageBody", D.a), re = p.a.div("QuarantineMessageWrapper", D.a), ie = Object(d.c)({
 				isLoggedIn: A.G,
 				language: A.Q,
-				origin: L.j,
+				origin: L.k,
 				user: A.i
 			}), de = Object(P.t)(), le = Object(r.b)(ie, (e, t) => {
 				let {
@@ -10033,7 +10033,7 @@
 					isFlairedUsersListPending: e => e.flairedUsers.api.pending,
 					isSearchPending: e => e.flairedUsers.search.api.pending,
 					isUserFlairEnabled: $.a,
-					origin: Y.j,
+					origin: Y.k,
 					pageInfo: (e, t) => {
 						const s = Object(X.d)(t.subredditId, t.after, t.before);
 						return e.flairedUsers.pageInfo[s]
@@ -10566,7 +10566,7 @@
 					hideNSFWPref: p.z,
 					language: p.Q,
 					moderatorPermissions: m.j,
-					origin: c.j,
+					origin: c.k,
 					user: p.eb,
 					userFlair: b.c
 				}),
@@ -15489,7 +15489,7 @@
 					isModeratorListPending: w.v,
 					isResignAsModeratorModalOpen: Object(O.b)("ModerationPage--Modal--Resign"),
 					language: S.Q,
-					origin: y.j,
+					origin: y.k,
 					searchPending: w.z,
 					searchResult: w.A
 				}),
@@ -28784,4 +28784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.45200a530bf81a58f03f.js.map
+//# sourceMappingURL=ModerationPages.4c7a76cb930d535c5f34.js.map

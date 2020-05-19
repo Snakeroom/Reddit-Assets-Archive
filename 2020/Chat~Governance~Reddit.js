@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.83f6f0ddbcb1fd3aad81.js
-// Retrieved at 5/19/2020, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c2eba0749e6ea6778a23.js
+// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11023,14 +11023,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("bc669d1-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("c3aae2a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bc669d1-production",
+						release: "c3aae2a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11392,7 +11392,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "bc669d1-production",
+							releaseClient: "c3aae2a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -20281,7 +20281,7 @@
 			const c = e => e.page.experiments.canonicalUrl === Object(u.a)(e);
 			var m = i("./src/reddit/selectors/posts.ts"),
 				p = i("./src/reddit/selectors/user.ts");
-			const h = Object(n.a)(a.l, e => {
+			const h = Object(n.a)(a.m, e => {
 					return "reddit.com" !== e.split(".").splice(1).join(".")
 				}),
 				_ = (e, t) => {
@@ -20490,13 +20490,13 @@
 		},
 		"./src/reddit/selectors/meta.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "j", (function() {
+			i.d(t, "k", (function() {
 				return o
 			})), i.d(t, "a", (function() {
 				return d
 			})), i.d(t, "b", (function() {
 				return l
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return a
 			})), i.d(t, "c", (function() {
 				return u
@@ -20508,12 +20508,14 @@
 				return p
 			})), i.d(t, "g", (function() {
 				return h
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return _
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return g
 			})), i.d(t, "e", (function() {
 				return f
+			})), i.d(t, "i", (function() {
+				return b
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/constants/euCookiePolicy.ts"),
@@ -20529,7 +20531,8 @@
 				h = Object(n.a)(e => e.meta.userAgent, s.e),
 				_ = Object(n.a)(e => e.meta.userAgent, s.g),
 				g = e => e.meta && e.meta.sessionReferrerDomain,
-				f = e => e.meta.country && r.a.includes(e.meta.country) || !1
+				f = e => e.meta.country && r.a.includes(e.meta.country) || !1,
+				b = e => e.meta.isSessionSeo
 		},
 		"./src/reddit/selectors/moderatorPermissions.ts": function(e, t, i) {
 			"use strict";
@@ -22722,7 +22725,7 @@
 				s = i("./src/reddit/selectors/meta.ts"),
 				o = i("./src/reddit/selectors/user.ts");
 			const d = new Set([n.Lb.Creator, n.Lb.Messaging, n.Lb.Payments, n.Lb.SpecialMembership]),
-				l = (e, t) => !(!Object(s.g)(e) && !Object(s.i)(e)) && (!(!Object(o.G)(e) && !Object(o.H)(e)) && (!!Object(r.J)(t.pageLayer) && (!(!t.pageLayer || !t.pageLayer.routeMatch) && !d.has(t.pageLayer.routeMatch.match.params.page))))
+				l = (e, t) => !(!Object(s.g)(e) && !Object(s.j)(e)) && (!(!Object(o.G)(e) && !Object(o.H)(e)) && (!!Object(r.J)(t.pageLayer) && (!(!t.pageLayer || !t.pageLayer.routeMatch) && !d.has(t.pageLayer.routeMatch.match.params.page))))
 		},
 		"./src/reddit/selectors/runTimeEnvVars.ts": function(e, t, i) {
 			"use strict";
@@ -28673,7 +28676,7 @@
 			}));
 			var n, r = i("./src/telemetry/eventSchemas/timer_types.js");
 			! function(e) {
-				e.Initial = "initial_page_load", e.InApp = "in_app_navigation", e.UserCancelled = "user_cancelled", e.HeartbeatIdleTime = "heartbeat_idle_time", e.ChatLoadInboxNew = "chat_performance_load_inbox_new", e.ChatLoadInboxCached = "chat_performance_load_inbox_cached", e.ChatLoadChannelNew = "chat_performance_load_channel_new", e.ChatLoadChannelCached = "chat_performance_load_channel_cached", e.VideoFirstFrame = "video_first_frame"
+				e.GoodVisit = "good_visit", e.Initial = "initial_page_load", e.InApp = "in_app_navigation", e.UserCancelled = "user_cancelled", e.HeartbeatIdleTime = "heartbeat_idle_time", e.ChatLoadInboxNew = "chat_performance_load_inbox_new", e.ChatLoadInboxCached = "chat_performance_load_inbox_cached", e.ChatLoadChannelNew = "chat_performance_load_channel_new", e.ChatLoadChannelCached = "chat_performance_load_channel_cached", e.VideoFirstFrame = "video_first_frame"
 			}(n || (n = {}));
 			const s = e => new r.Timer({
 				type: e.type,
@@ -28690,4 +28693,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.83f6f0ddbcb1fd3aad81.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.c2eba0749e6ea6778a23.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.2812ddf197f067e901d9.js
-// Retrieved at 5/19/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.79a844a50475e0486935.js
+// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -266,7 +266,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", R.a), H = p.a.div("Container", R.a), z = p.a.div("Description", R.a), G = p.a.div("PrivateSubredditDetails", R.a), W = p.a.div("PrivateSubredditDescription", R.a), J = p.a.h3("PrivateSubredditName", R.a), X = p.a.a("Link", R.a), q = p.a.wrapped(P.h, "LinkRouterButton", R.a), V = p.a.wrapped(P.g, "LinkButton", R.a), Z = p.a.wrapped(P.k, "SecondaryLinkRouterButton", R.a), K = p.a.wrapped(P.j, "SecondaryLinkButton", R.a), Y = p.a.wrapped(q, "GoHomeLinkButton", R.a), Q = p.a.img("Image", R.a), $ = p.a.img("ImagePlaceholder", R.a), ee = p.a.wrapped(q, "LeftLinkRouterButton", R.a), te = p.a.wrapped(V, "LeftLinkButton", R.a), ne = p.a.wrapped(K, "SecondaryLeftLinkButton", R.a), re = p.a.wrapped(Z, "SecondaryLeftLinkRouterButton", R.a), se = p.a.h3("Title", R.a), ae = p.a.div("PageBody", R.a), ie = p.a.div("QuarantineMessageWrapper", R.a), oe = Object(l.c)({
 				isLoggedIn: D.G,
 				language: D.Q,
-				origin: M.j,
+				origin: M.k,
 				user: D.i
 			}), le = Object(S.t)(), ce = Object(i.b)(oe, (e, t) => {
 				let {
@@ -1814,4 +1814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.2812ddf197f067e901d9.js.map
+//# sourceMappingURL=Multireddit.79a844a50475e0486935.js.map
