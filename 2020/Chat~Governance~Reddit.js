@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c2eba0749e6ea6778a23.js
-// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d6d81a1dc49c637c739f.js
+// Retrieved at 5/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11023,14 +11023,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("c3aae2a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("ba915d6-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c3aae2a-production",
+						release: "ba915d6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11392,7 +11392,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "c3aae2a-production",
+							releaseClient: "ba915d6-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -13355,27 +13355,33 @@
 			"use strict";
 			i.d(t, "e", (function() {
 				return n
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "f", (function() {
 				return r
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return s
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
 				return o
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return d
+			})), i.d(t, "d", (function() {
+				return l
 			}));
 			const n = {
-					public: "room_public",
-					private: "room_private"
-				},
-				r = 140,
-				s = 30,
-				o = 10,
-				d = 500;
-			var l;
+				public: "room_public",
+				private: "room_private"
+			};
+			var r;
+			! function(e) {
+				e.None = "none", e.Compact = "compact", e.Full = "full_screen"
+			}(r || (r = {}));
+			const s = 140,
+				o = 30,
+				d = 10,
+				l = 500;
+			var a;
 			! function(e) {
 				e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux"
-			}(l || (l = {}))
+			}(a || (a = {}))
 		},
 		"./src/reddit/constants/colors.ts": function(e, t, i) {
 			"use strict";
@@ -27686,12 +27692,14 @@
 			var n = {};
 			i.r(n), i.d(n, "start", (function() {
 				return c
-			})), i.d(n, "end", (function() {
+			})), i.d(n, "getTime", (function() {
 				return m
-			})), i.d(n, "cancel", (function() {
+			})), i.d(n, "end", (function() {
 				return p
-			})), i.d(n, "has", (function() {
+			})), i.d(n, "cancel", (function() {
 				return h
+			})), i.d(n, "has", (function() {
+				return _
 			}));
 			var r = i("./src/telemetry/helpers/sendEvent.ts"),
 				s = i("./src/telemetry/helpers/sendTiming.ts");
@@ -27706,12 +27714,16 @@
 				},
 				m = e => {
 					const t = o[e];
+					return t ? Date.now() - t : (console.error(l(e)), -1)
+				},
+				p = e => {
+					const t = o[e];
 					if (!t) return console.error(l(e)), -1;
 					const i = Date.now() - t;
 					return delete o[e], u--, i
 				},
-				p = e => !!o[e] && (delete o[e], u--, !0),
-				h = e => !!o[e]
+				h = e => !!o[e] && (delete o[e], u--, !0),
+				_ = e => !!o[e]
 		},
 		"./src/telemetry/models/App.ts": function(e, t, i) {
 			"use strict";
@@ -28109,8 +28121,18 @@
 				Ce = i("./src/telemetry/models/Payment.ts"),
 				ke = i("./src/telemetry/eventSchemas/playback_types.js");
 			const je = e => new ke.Playback({
-				scrubbing_start_ms: e.scrubbing_start_ms,
-				scrubbing_end_ms: e.scrubbing_end_ms
+				chat_state: e.chatState,
+				heartbeat_duration_ms: e.heartbeatDurationMs,
+				id: e.id,
+				is_live: e.isLive,
+				playhead_offset_ms: e.playheadOffsetMs,
+				scrubbing_end_ms: e.scrubbingEndMs,
+				scrubbing_start_ms: e.scrubbingStartMs,
+				session_duration_ms: e.sessionDurationMs,
+				start_time_ms: e.startTimeMs,
+				timestamp_ms: e.timestampMs,
+				volume: e.volume,
+				watch_duration_ms: e.watchDurationMs
 			});
 			var Ne = i("./src/telemetry/eventSchemas/poll_types.js");
 			const Pe = e => new Ne.Poll({
@@ -28693,4 +28715,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.c2eba0749e6ea6778a23.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d6d81a1dc49c637c739f.js.map
