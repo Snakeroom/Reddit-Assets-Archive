@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0f66205915a518eb240b.js
-// Retrieved at 5/19/2020, 4:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.85e0fa9c5fa07df6b6e2.js
+// Retrieved at 5/19/2020, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -17070,20 +17070,18 @@
 							}),
 							subscribe: t
 						})).ok) {
-						if (t) {
-							const n = 1 === e.length ? "".concat("subreddit" === e[0].type ? i.d.subreddit : i.d.profile).concat(e[0].name) : "".concat(s.fbt.plural("community", e.length, {
-								many: "communities",
-								name: "communities",
-								showCount: "yes"
-							}));
-							o(Object(u.e)({
-								text: 1 === e.length && "profile" === e[0].type ? s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "followed" : "unfollowed"), s.fbt._param("communityname", n)], {
-									hk: "1hY5KX"
-								}) : s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "joined" : "left"), s.fbt._param("communityname", n)], {
-									hk: "1hY5KX"
-								})
-							}))
-						}
+						const n = 1 === e.length ? "".concat("subreddit" === e[0].type ? i.d.subreddit : i.d.profile).concat(e[0].name) : "".concat(s.fbt.plural("community", e.length, {
+							many: "communities",
+							name: "communities",
+							showCount: "yes"
+						}));
+						o(Object(u.e)({
+							text: 1 === e.length && "profile" === e[0].type ? s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "followed" : "unfollowed"), s.fbt._param("communityname", n)], {
+								hk: "1hY5KX"
+							}) : s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "joined" : "left"), s.fbt._param("communityname", n)], {
+								hk: "1hY5KX"
+							})
+						}))
 					} else {
 						o(T({
 							identifiers: I,
@@ -52144,4 +52142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.0f66205915a518eb240b.js.map
+//# sourceMappingURL=Governance~Reddit.85e0fa9c5fa07df6b6e2.js.map
