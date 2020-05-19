@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.14520f7ae6c592164bca.js
-// Retrieved at 5/18/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a10d8465e09bb14e6be1.js
+// Retrieved at 5/19/2020, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11023,14 +11023,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("0b62b86-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("ba274c1-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0b62b86-production",
+						release: "ba274c1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11392,7 +11392,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "0b62b86-production",
+							releaseClient: "ba274c1-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -11548,7 +11548,7 @@
 				});
 				(0 === i.endpoint.indexOf(g.a.sendbirdServiceUrl) || (0 === i.endpoint.indexOf(g.a.redditUrl) || i.endpoint.indexOf(g.a.oauthUrl), 0)) && (i.headers = d()(i.headers, [m.a, m.c])), 0 !== i.endpoint.indexOf(g.a.gatewayUrl) && (i.headers = d()(i.headers, [m.b])), t.withoutRedditHeaders && (i.headers = d()(i.headers, [m.a, m.c, m.b]));
 				let n = {};
-				(0 === i.endpoint.indexOf(g.a.gatewayUrl) || 0 === i.endpoint.indexOf(g.a.redditUrl) || 0 === i.endpoint.indexOf(g.a.apiUrl) || i.endpoint.indexOf(g.a.oauthUrl)) && (n = f.b.getTracingHeadersWithSecret()), i.headers = Object.assign({}, i.headers, n);
+				0 !== i.endpoint.indexOf(g.a.gatewayUrl) && 0 !== i.endpoint.indexOf(g.a.redditUrl) && 0 !== i.endpoint.indexOf(g.a.apiUrl) && 0 !== i.endpoint.indexOf(g.a.oauthUrl) || (n = f.b.getTracingHeadersWithSecret()), i.headers = Object.assign({}, i.headers, n);
 				const {
 					host: r,
 					protocol: s
@@ -28663,4 +28663,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.14520f7ae6c592164bca.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.a10d8465e09bb14e6be1.js.map
