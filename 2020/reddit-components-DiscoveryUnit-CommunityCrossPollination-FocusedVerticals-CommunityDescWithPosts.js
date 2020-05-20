@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.68fa1e6b5088f7e6a5e6.js
-// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.de0ca034296e8c88ee64.js
+// Retrieved at 5/20/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -150,13 +150,13 @@
 					let {
 						numInstance: s
 					} = t;
-					return Object(m.h)(e, s)
+					return Object(m.i)(e, s)
 				},
 				interactedSubredditId: (e, t) => {
 					let {
 						numInstance: s
 					} = t;
-					return Object(m.g)(e, s)
+					return Object(m.h)(e, s)
 				},
 				cityLocation: m.c
 			});
@@ -239,15 +239,15 @@
 				S = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				I = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				f = s("./src/reddit/constants/posts.ts"),
-				P = s("./src/reddit/selectors/posts.ts"),
-				k = s("./src/reddit/selectors/user.ts"),
+				k = s("./src/reddit/selectors/posts.ts"),
+				P = s("./src/reddit/selectors/user.ts"),
 				N = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
-				D = s.n(N);
-			const T = e => "".concat(e, "--FocusedVerticalRecommendationItem"),
+				T = s.n(N);
+			const D = e => "".concat(e, "--FocusedVerticalRecommendationItem"),
 				B = Object(i.c)({
-					language: k.Q,
-					post: P.O,
-					subreddit: P.bb
+					language: P.Q,
+					post: k.O,
+					subreddit: k.bb
 				});
 			class L extends r.a.Component {
 				constructor() {
@@ -301,27 +301,27 @@
 						subreddit: i
 					} = this.props;
 					return t ? r.a.createElement(y.a, {
-						className: Object(c.a)(D.a.postContainer, {
-							[D.a.hideBottomBorder]: s
+						className: Object(c.a)(T.a.postContainer, {
+							[T.a.hideBottomBorder]: s
 						}),
-						makePostContainerId: T,
+						makePostContainerId: D,
 						post: t,
 						onClick: this.onPostClick
 					}, r.a.createElement("div", {
-						className: D.a.postContent
+						className: T.a.postContent
 					}, r.a.createElement(_.a, {
-						classNameInnerThumbnail: D.a.thumbnailOverride,
+						classNameInnerThumbnail: T.a.thumbnailOverride,
 						post: t
 					}), r.a.createElement("div", {
-						className: D.a.postBodyWrapper
+						className: T.a.postBodyWrapper
 					}, !n && i && r.a.createElement("div", {
-						className: Object(c.a)(D.a.subredditContainer)
+						className: Object(c.a)(T.a.subredditContainer)
 					}, r.a.createElement(S.a, {
-						className: D.a.subredditLink,
+						className: T.a.subredditLink,
 						to: i.url,
 						onClick: this.onSubredditNameClick
 					}, i.displayText), o ? r.a.createElement("div", {
-						className: D.a.subredditSubscribeLargeButton
+						className: T.a.subredditSubscribeLargeButton
 					}, r.a.createElement(I.a, {
 						identifier: {
 							name: i.name,
@@ -331,7 +331,7 @@
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
 					})) : r.a.createElement(I.a, {
-						className: D.a.subredditSubscribeButton,
+						className: T.a.subredditSubscribeButton,
 						getEventFactory: this.getSubscribeEventFactory,
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
@@ -341,17 +341,17 @@
 						postId: t.id,
 						small: !0
 					})), r.a.createElement("div", {
-						className: Object(c.a)(D.a.postBody, {
-							[D.a.isFirst]: n || !i
+						className: Object(c.a)(T.a.postBody, {
+							[T.a.isFirst]: n || !i
 						}),
 						"data-click-id": "body"
 					}, r.a.createElement("div", {
-						className: D.a.postTitle,
+						className: T.a.postTitle,
 						style: {
 							WebkitBoxOrient: "vertical"
 						}
 					}, t.title)), r.a.createElement("div", {
-						className: D.a.bottomline
+						className: T.a.bottomline
 					}, r.a.createElement(j.b, {
 						post: t,
 						language: e
@@ -368,28 +368,27 @@
 					}
 				}))(Object(l.c)(L)),
 				U = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
-				V = s("./src/reddit/featureFlags/index.ts"),
-				F = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
-				R = s.n(F);
+				V = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
+				F = s.n(V);
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = Object(i.c)({
-				isFeatureFlag: V.d.geoSubredditRecommendationDU,
-				isPending: m.d,
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(i.c)({
+				isFeatureFlag: m.d,
+				isPending: m.e,
 				subredditData: (e, t) => {
 					let {
 						numInstance: s
 					} = t;
-					return Object(m.i)(e, s)
+					return Object(m.j)(e, s)
 				},
 				topPostIds: (e, t) => {
 					let {
 						numInstance: s
 					} = t;
-					return Object(m.j)(e, s)
+					return Object(m.k)(e, s)
 				}
-			}), H = Object(o.b)(M);
-			class W extends r.a.PureComponent {
+			}), M = Object(o.b)(R);
+			class H extends r.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -422,7 +421,7 @@
 						position: o,
 						pubsub: c
 					}), r.a.createElement("div", {
-						className: R.a.topPostsTitle
+						className: F.a.topPostsTitle
 					}, A._("Top post", null, {
 						hk: "3BdOuj"
 					})), d.slice(0, 1).map(e => r.a.createElement(w, {
@@ -436,7 +435,7 @@
 					})))
 				}
 			}
-			t.default = H(W)
+			t.default = M(H)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1261,4 +1260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.68fa1e6b5088f7e6a5e6.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.de0ca034296e8c88ee64.js.map
