@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.4b9b4564d07b1ccd4ca6.js
-// Retrieved at 5/18/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.8677313f63d886d11604.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -219,8 +219,8 @@
 				M = c.a.div("Container", k.a),
 				W = c.a.div("Body", k.a),
 				F = c.a.h5("Title", k.a),
-				R = c.a.span("Label", k.a);
-			class z extends o.a.Component {
+				K = c.a.span("Label", k.a);
+			class R extends o.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -242,7 +242,7 @@
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return o.a.createElement(M, null, o.a.createElement(F, null, n), o.a.createElement(W, null, e, o.a.createElement(R, T({
+					return o.a.createElement(M, null, o.a.createElement(F, null, n), o.a.createElement(W, null, e, o.a.createElement(K, T({
 						key: "label"
 					}, s), t)), r && a && o.a.createElement(L.c, {
 						caretOnTop: !0,
@@ -251,11 +251,11 @@
 					}))
 				}
 			}
-			var K = Object(v.b)(D, e => ({
+			var z = Object(v.b)(D, e => ({
 					toggleTooltip: t => e(Object(B.h)({
 						tooltipId: t
 					}))
-				}))(Object(O.b)(z)),
+				}))(Object(O.b)(R)),
 				A = n("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				H = n.n(A);
 			const G = Object(_.a)(w.j, (e, t) => {
@@ -268,7 +268,8 @@
 					language: n,
 					postKarma: t ? t.postKarma : 0,
 					profileCreated: t ? t.created : 0,
-					subscribers: e && e.subscribers || 0
+					subscribers: e && e.subscribers || 0,
+					totalKarma: t ? t.totalKarma || t.postKarma + t.commentKarma : 0
 				})),
 				J = c.a.div("Container", H.a);
 
@@ -282,30 +283,31 @@
 						language: a,
 						commentKarma: s,
 						postKarma: i,
-						subscribers: c
-					} = e, l = V(n, "karma"), d = V(n, "cakeday"), m = r.fbt._({
+						totalKarma: c,
+						subscribers: l
+					} = e, d = V(n, "karma"), m = V(n, "cakeday"), u = r.fbt._({
 						"*": "{number} Post Karma",
 						_1: "1 Post Karma"
 					}, [r.fbt._plural(i, "number", Object(E.b)(i, !0))], {
 						hk: "husfU"
-					}), u = r.fbt._({
+					}), p = r.fbt._({
 						"*": "{number} Comment Karma",
 						_1: "1 Comment Karma"
 					}, [r.fbt._plural(i, "number", Object(E.b)(s, !0))], {
 						hk: "26iPTL"
 					});
-					return o.a.createElement(J, null, o.a.createElement(K, {
+					return o.a.createElement(J, null, o.a.createElement(z, {
 						icon: o.a.createElement(N.a, {
 							className: H.a.icon,
 							key: "karma"
 						}),
-						label: Object(E.b)(s + i, !0),
+						label: Object(E.b)(c, !0),
 						title: r.fbt._("Karma", null, {
 							hk: "RtSgN"
 						}),
-						tooltipId: l,
-						tooltip: "".concat(m, "\n").concat(u)
-					}), o.a.createElement(K, {
+						tooltipId: d,
+						tooltip: "".concat(u, "\n").concat(p)
+					}), o.a.createElement(z, {
 						icon: o.a.createElement(P.a, {
 							className: H.a.icon,
 							key: "cakeDay"
@@ -314,9 +316,9 @@
 						title: r.fbt._("Cake day", null, {
 							hk: "4x2LB5"
 						}),
-						tooltipId: d,
+						tooltipId: m,
 						tooltip: Object(y.d)(a, t)
-					}), c > 0 && o.a.createElement(K, {
+					}), l > 0 && o.a.createElement(z, {
 						icon: o.a.createElement(j.a, {
 							className: H.a.icon,
 							key: "followers"
@@ -324,7 +326,7 @@
 						title: r.fbt._("Followers", null, {
 							hk: "4ucimK"
 						}),
-						label: Object(E.b)(c, !0)
+						label: Object(E.b)(l, !0)
 					}))
 				})),
 				Z = n("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.tsx"),
@@ -744,4 +746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.4b9b4564d07b1ccd4ca6.js.map
+//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.8677313f63d886d11604.js.map

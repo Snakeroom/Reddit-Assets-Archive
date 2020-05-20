@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bfadd30f06bceee6343a.js
-// Retrieved at 5/19/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.53dab204ec9d2b1b7950.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -279,16 +279,16 @@
 			const u = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.zb
+					experimentName: d.Ab
 				});
-				return Object(d.uc)(t) ? void 0 : t
+				return Object(d.vc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Ab
+					experimentName: d.Bb
 				});
-				return Object(d.uc)(t) ? void 0 : t
-			}, (e, t) => e === d.Bb.Enabled && t === d.Bb.Enabled);
+				return Object(d.vc)(t) ? void 0 : t
+			}, (e, t) => e === d.Cb.Enabled && t === d.Cb.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -336,7 +336,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "fb7221e-production"
+					SENTRY_RELEASE_VERSION: "645ebe0-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -1565,7 +1565,7 @@
 				fe = s("./src/reddit/selectors/comments.ts"),
 				_e = s("./src/reddit/selectors/communityAwards.ts"),
 				Ee = s("./src/reddit/models/Gold/Award.ts");
-			var xe = e => e < 500 || !e ? Ee.d.Silver : e < 1800 ? Ee.d.Gold : Ee.d.Platinum,
+			var xe = e => e < 500 || !e ? Ee.e.Silver : e < 1800 ? Ee.e.Gold : Ee.e.Platinum,
 				ye = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
 				Oe = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlay/AwardIconWithAttributionAnimation/TierAttribution/index.m.less"),
 				Te = s.n(Oe);
@@ -1580,16 +1580,16 @@
 					giverId: r,
 					tier: a,
 					className: n
-				} = e, o = a === Ee.d.Silver ? Te.a.silverTierAttribution : a === Ee.d.Gold ? Te.a.goldTierAttribution : Te.a.platinumTierAttribution;
+				} = e, o = a === Ee.e.Silver ? Te.a.silverTierAttribution : a === Ee.e.Gold ? Te.a.goldTierAttribution : Te.a.platinumTierAttribution;
 				return i.a.createElement("div", {
 					"aria-role": "presentation",
 					className: Object(d.a)(n, Te.a.tierAttribution, o)
-				}, a !== Ee.d.Silver && i.a.createElement(ye.a, {
+				}, a !== Ee.e.Silver && i.a.createElement(ye.a, {
 					className: Te.a.giverIcon,
 					userId: r,
 					width: 16,
 					height: 16
-				}), i.a.createElement("span", null, a !== Ee.d.Silver && Pe._("{giverName} gave {space}", [Pe._param("giverName", s), Pe._param("space", " ")], {
+				}), i.a.createElement("span", null, a !== Ee.e.Silver && Pe._("{giverName} gave {space}", [Pe._param("giverName", s), Pe._param("space", " ")], {
 					hk: "SzDdi"
 				}), i.a.createElement("strong", {
 					className: Te.a.awardName
@@ -1606,7 +1606,7 @@
 					iconUrl: t,
 					tier: s,
 					className: r
-				} = e, a = s === Ee.d.Silver ? Me.a.silverTierAwardIcon : s === Ee.d.Gold ? Me.a.goldTierAwardIcon : Me.a.platinumTierAwardIcon, n = s !== Ee.d.Silver, o = s === Ee.d.Platinum;
+				} = e, a = s === Ee.e.Silver ? Me.a.silverTierAwardIcon : s === Ee.e.Gold ? Me.a.goldTierAwardIcon : Me.a.platinumTierAwardIcon, n = s !== Ee.e.Silver, o = s === Ee.e.Platinum;
 				return i.a.createElement("div", {
 					"aria-role": "presentation",
 					className: Object(d.a)(r, Me.a.tierAwardIcon)
@@ -4188,4 +4188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.bfadd30f06bceee6343a.js.map
+//# sourceMappingURL=PublicAccessNetwork.53dab204ec9d2b1b7950.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.8a2fa3492a2fb50ced38.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.7964a7a1313ec7a7b2aa.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -94,8 +94,8 @@
 				T = a("./src/reddit/controls/DropdownSelector/index.tsx"),
 				S = a("./src/reddit/controls/FormFields/index.tsx"),
 				N = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				_ = a("./src/reddit/controls/TextButton/index.tsx"),
-				k = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				k = a("./src/reddit/controls/TextButton/index.tsx"),
+				_ = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				O = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				D = a("./src/lib/timezone/index.ts"),
 				P = a("./src/reddit/models/PostCreationForm/index.ts"),
@@ -452,7 +452,7 @@
 					}, this.onCostInputOpen = () => {
 						this.props.sendEvent(Object(u.c)("click", "coin_cost_input"))
 					}, this.getCostDropdownMenuItems = () => {
-						return Object(y.j)(this.props.awards).map(e => ({
+						return Object(y.k)(this.props.awards).map(e => ({
 							displayText: p.fbt._("{Award cost} Coins", [p.fbt._param("Award cost", e.toLocaleString())], {
 								hk: "4rKGHp"
 							}),
@@ -583,8 +583,8 @@
 					})
 				}
 				getAwardSubTypeDropdownMenuItems() {
-					return Object.keys(y.c).map(e => {
-						const t = y.c[e];
+					return Object.keys(y.d).map(e => {
+						const t = y.d[e];
 						return {
 							displayText: t,
 							value: t
@@ -627,12 +627,12 @@
 						isModOnly: c,
 						isTemporary: d,
 						nameValue: m
-					} = this.state, u = e.filter(e => e.awardType === y.e.Moderator);
+					} = this.state, u = e.filter(e => e.awardType === y.f.Moderator);
 					return s.a.createElement("section", {
 						className: Object(f.a)(t, b.a.communityAwardCreationModal)
 					}, s.a.createElement(x.h, null, s.a.createElement(O.a, null, s.a.createElement(x.p, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
-					})), s.a.createElement(_.a, {
+					})), s.a.createElement(k.a, {
 						onClick: a,
 						disabled: n
 					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.k, null, s.a.createElement("div", {
@@ -689,7 +689,7 @@
 						hk: "2iX7Vn"
 					}))))), u.length < E.e && s.a.createElement("div", {
 						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
-					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(k.a, {
+					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(_.a, {
 						activeColorOverride: w.a.moderator,
 						className: b.a.modToggle,
 						on: c,
@@ -700,7 +700,7 @@
 						hk: "1d7p5V"
 					})))), this.renderCostDropdown(), r && s.a.createElement("div", {
 						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
-					}, s.a.createElement("label", null, s.a.createElement(k.a, {
+					}, s.a.createElement("label", null, s.a.createElement(_.a, {
 						activeColorOverride: w.a.moderator,
 						className: b.a.modToggle,
 						on: d,
@@ -820,9 +820,9 @@
 					})))) : null
 				}
 			}
-			var _e = Object(C.a)(Ne),
-				ke = a("./src/reddit/components/AwardCreationModal/GlobalAwardCreationModal/index.m.less"),
-				Oe = a.n(ke),
+			var ke = Object(C.a)(Ne),
+				_e = a("./src/reddit/components/AwardCreationModal/GlobalAwardCreationModal/index.m.less"),
+				Oe = a.n(_e),
 				De = a("./src/reddit/controls/NumberInput/index.tsx");
 			const Pe = "GlobalAwardCreationModalImageInput",
 				Me = 15,
@@ -929,9 +929,9 @@
 						giverCoinReward: e
 					}), this.onCostInputOpen = () => {
 						this.props.sendEvent(Object(u.c)("click", "coin_cost_input"))
-					}, this.getIconFormatDropdownMenuItems = () => Object.keys(y.b).map(e => ({
+					}, this.getIconFormatDropdownMenuItems = () => Object.keys(y.c).map(e => ({
 						displayText: e,
-						value: y.b[e]
+						value: y.c[e]
 					})), this.handleAwardSubTypeChange = e => {
 						const t = e.value;
 						this.setState({
@@ -978,11 +978,11 @@
 								hk: "1pkgpd"
 							}))
 						}
-						const _ = ce(N),
-							k = Object(D.f)(Be(x, T)),
+						const k = ce(N),
+							_ = Object(D.f)(Be(x, T)),
 							O = Object(D.f)(Be(c, d));
-						k.setTime(k.getTime()), O.setTime(O.getTime());
-						const P = f ? k.toISOString() : void 0,
+						_.setTime(_.getTime()), O.setTime(O.getTime());
+						const P = f ? _.toISOString() : void 0,
 							M = f ? O.toISOString() : void 0;
 						await t({
 							awardName: w,
@@ -1004,7 +1004,7 @@
 							startDate: P,
 							subredditCoinReward: S
 						});
-						const F = await _;
+						const F = await k;
 						if (!F.ok) {
 							return this.handleImageRemoval(), void a(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
@@ -1052,8 +1052,8 @@
 						endDate: s,
 						endTime: o,
 						nameValue: "",
-						selectedAwardSubType: y.c.Global,
-						selectedIconFormat: y.b.png,
+						selectedAwardSubType: y.d.Global,
+						selectedIconFormat: y.c.png,
 						subredditCoinReward: 0,
 						startDate: a,
 						startTime: n,
@@ -1082,8 +1082,8 @@
 					}))
 				}
 				getAwardSubTypeDropdownMenuItems() {
-					return Object.keys(y.c).map(e => {
-						const t = y.c[e];
+					return Object.keys(y.d).map(e => {
+						const t = y.d[e];
 						return {
 							displayText: t,
 							value: t
@@ -1128,7 +1128,7 @@
 						className: Object(f.a)(e, Oe.a.communityAwardCreationModal)
 					}, s.a.createElement(x.h, null, s.a.createElement(O.a, null, s.a.createElement(x.p, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
-					})), s.a.createElement(_.a, {
+					})), s.a.createElement(k.a, {
 						onClick: t,
 						disabled: a
 					}, s.a.createElement(x.b, null)))), s.a.createElement("form", null, s.a.createElement(x.k, null, s.a.createElement("div", {
@@ -1200,7 +1200,7 @@
 						hk: "40lFWr"
 					}))), this.renderCostSelector(), s.a.createElement("div", {
 						className: Object(f.a)(Oe.a.formSection, Oe.a.modToggleSection)
-					}, s.a.createElement("label", null, s.a.createElement(k.a, {
+					}, s.a.createElement("label", null, s.a.createElement(_.a, {
 						activeColorOverride: w.a.moderator,
 						className: Oe.a.modToggle,
 						on: l,
@@ -1334,7 +1334,7 @@
 					} = this.state;
 					return s.a.createElement(s.a.Fragment, null, this.renderIconFormatDropdown(), this.renderAwardSubTypeDropdown(), s.a.createElement("div", {
 						className: Object(f.a)(Oe.a.formSection, Oe.a.modToggleSection)
-					}, s.a.createElement("label", null, s.a.createElement(k.a, {
+					}, s.a.createElement("label", null, s.a.createElement(_.a, {
 						activeColorOverride: w.a.moderator,
 						className: Oe.a.modToggle,
 						on: o,
@@ -1512,7 +1512,7 @@
 						onTryCloseModal: this.onTryCloseModal,
 						withOverlay: !0,
 						onOverlayClick: this.onTryCloseModal
-					})) : s.a.createElement(_e, Xe({}, this.props, {
+					})) : s.a.createElement(ke, Xe({}, this.props, {
 						onTryCloseModal: this.onTryCloseModal,
 						withOverlay: !0,
 						onOverlayClick: this.onTryCloseModal
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.8a2fa3492a2fb50ced38.js.map
+//# sourceMappingURL=AwardCreationModal.7964a7a1313ec7a7b2aa.js.map

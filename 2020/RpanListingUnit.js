@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.0dca580a69b7e8783ee3.js
-// Retrieved at 5/19/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.261ecc44535ee7f86468.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -25,16 +25,16 @@
 			const u = Object(n.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.zb
+					experimentName: l.Ab
 				});
-				return Object(l.uc)(t) ? void 0 : t
+				return Object(l.vc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.Ab
+					experimentName: l.Bb
 				});
-				return Object(l.uc)(t) ? void 0 : t
-			}, (e, t) => e === l.Bb.Enabled && t === l.Bb.Enabled);
+				return Object(l.vc)(t) ? void 0 : t
+			}, (e, t) => e === l.Cb.Enabled && t === l.Cb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -82,7 +82,7 @@
 			};
 			const y = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "fb7221e-production"
+					SENTRY_RELEASE_VERSION: "645ebe0-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -1043,8 +1043,8 @@
 				U = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				F = s.n(U);
 			const {
-				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = Object(o.a)(j.a, {
+				fbt: W
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = Object(o.a)(j.a, {
 				playerName: "RPAN DU Video Player"
 			}), K = Object(a.b)(() => Object(n.c)({
 				isLoggedIn: y.H,
@@ -1084,11 +1084,11 @@
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
 			})), z = () => i.a.createElement("h3", {
 				className: F.a.title
-			}, B._("Top broadcast right now", null, {
+			}, W._("Top broadcast right now", null, {
 				hk: "2hS1kb"
 			})), G = () => i.a.createElement("p", {
 				className: F.a.description
-			}, B._("Live from the internet, this is RPAN", null, {
+			}, W._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class Y extends r.Component {
@@ -1261,14 +1261,14 @@
 						className: F.a.bigExpandoIcon
 					})), i.a.createElement("span", {
 						className: F.a.watchingCount
-					}, B._({
+					}, W._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [B._plural(s, "number")], {
+					}, [W._plural(s, "number")], {
 						hk: "33zJ5F"
 					})), this.isLive && i.a.createElement("span", {
 						className: F.a.liveStatus
-					}, B._("Live", null, {
+					}, W._("Live", null, {
 						hk: "TwJSs"
 					})))
 				}
@@ -1289,7 +1289,7 @@
 						r = 1e3 * t.broadcast_time,
 						a = t.post.id,
 						n = t.post.title;
-					return i.a.createElement(W, {
+					return i.a.createElement(B, {
 						url: t.stream.hls_url,
 						autoplay: !0,
 						controls: !1,
@@ -1376,7 +1376,7 @@
 						isLoggedIn: s
 					} = e;
 					return i.a.createElement(R.a, {
-						displayText: B._("Show me less of this", null, {
+						displayText: W._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: C.a.Hide,
@@ -1396,7 +1396,7 @@
 						dropdownId: "rpan-du-overflow"
 					}, i.a.createElement(T.b, {
 						className: F.a.overflowItem,
-						displayText: B._("Show me less of this", null, {
+						displayText: W._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
 						iconWrapperClassName: F.a.overflowItemIconWrapper,
@@ -1590,4 +1590,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.0dca580a69b7e8783ee3.js.map
+//# sourceMappingURL=RpanListingUnit.261ecc44535ee7f86468.js.map

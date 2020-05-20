@@ -1,228 +1,265 @@
-// https://www.redditstatic.com/desktop2x/gildActions.f4fdeb7ea84728449981.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.fe0a11ccf9aed565aea8.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"e3fd25f3fd15"}')
+			e.exports = JSON.parse('{"id":"c25f21e6351f"}')
 		},
 		"./src/graphql/operations/GildPost.json": function(e) {
-			e.exports = JSON.parse('{"id":"df757af47083"}')
+			e.exports = JSON.parse('{"id":"496275fd4bb6"}')
 		},
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return S
-			})), s.d(t, "setIncludeMessage", (function() {
-				return G
-			})), s.d(t, "updateMessage", (function() {
-				return N
-			})), s.d(t, "gildGqlRequested", (function() {
-				return L
-			})), s.d(t, "triggerLoader", (function() {
 				return D
-			})), s.d(t, "gildPending", (function() {
-				return B
-			})), s.d(t, "gildFailed", (function() {
+			})), s.d(t, "setIncludeMessage", (function() {
 				return U
+			})), s.d(t, "updateMessage", (function() {
+				return B
+			})), s.d(t, "gildGqlRequested", (function() {
+				return F
+			})), s.d(t, "triggerLoader", (function() {
+				return H
+			})), s.d(t, "gildPending", (function() {
+				return Z
+			})), s.d(t, "gildFailed", (function() {
+				return z
 			})), s.d(t, "gildSuccessful", (function() {
-				return K
+				return X
+			})), s.d(t, "awardKarmaUpdated", (function() {
+				return W
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				i = s("./src/lib/makeActionCreator/index.ts"),
-				r = s("./src/lib/messageIframeParent/index.ts"),
+			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/lib/messageIframeParent/index.ts"),
 				d = s("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
-				a = s("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				i = s("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				c = s("./src/reddit/actions/toaster.ts"),
-				o = s("./src/reddit/models/Gold/Award.ts"),
-				l = s("./src/reddit/models/Gold/Coins/index.ts"),
-				u = s("./src/reddit/models/Post/index.ts"),
-				b = s("./src/reddit/models/Toast/index.ts"),
-				g = s("./src/reddit/selectors/comments.ts"),
-				p = s("./src/reddit/selectors/communityAwards.ts"),
-				m = s("./src/reddit/selectors/gild.ts"),
-				f = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				h = s("./src/reddit/selectors/posts.ts"),
-				O = s("./src/reddit/selectors/subreddit.ts"),
-				_ = s("./src/reddit/selectors/user.ts"),
-				j = s("./src/graphql/operations/GildComment.json"),
-				w = s("./src/graphql/operations/GildPost.json"),
-				y = s("./src/lib/makeGqlRequest/index.ts"),
-				I = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const k = (e, t, s) => Object(y.a)(e, Object.assign({}, w, {
+				o = s("./node_modules/react/index.js"),
+				l = s.n(o),
+				u = s("./src/reddit/models/Gold/Award.ts"),
+				b = s("./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less"),
+				m = s.n(b);
+			const {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = e => p._("Sent! You earned {=awarder karma}", [p._param("=awarder karma", l.a.createElement("a", {
+				className: m.a.karmaLink,
+				href: u.a,
+				target: "_blank",
+				rel: "noopener noreferrer"
+			}, p._({
+				"*": "{awarder karma} awarder karma",
+				_1: "1 awarder karma"
+			}, [p._plural(e.awarderKarmaReceived, "awarder karma")], {
+				hk: "2Llmz0"
+			})))], {
+				hk: "3ItXUT"
+			});
+			var f = s("./src/reddit/models/Gold/Coins/index.ts"),
+				w = s("./src/reddit/models/Post/index.ts"),
+				h = s("./src/reddit/models/Toast/index.ts"),
+				_ = s("./src/reddit/selectors/comments.ts"),
+				O = s("./src/reddit/selectors/communityAwards.ts"),
+				j = s("./src/reddit/selectors/experiments/econAwardKarma.ts"),
+				y = s("./src/reddit/selectors/gild.ts"),
+				k = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				x = s("./src/reddit/selectors/posts.ts"),
+				A = s("./src/reddit/selectors/subreddit.ts"),
+				I = s("./src/reddit/selectors/user.ts"),
+				v = s("./src/graphql/operations/GildComment.json"),
+				P = s("./src/graphql/operations/GildPost.json"),
+				C = s("./src/lib/makeGqlRequest/index.ts"),
+				T = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const q = (e, t, s) => Object(C.a)(e, Object.assign({}, P, {
 					variables: t
 				}), {
-					query: s ? {} : Object(I.b)()
+					query: s ? {} : Object(T.b)()
 				}),
-				x = (e, t, s) => Object(y.a)(e, Object.assign({}, j, {
+				S = (e, t, s) => Object(C.a)(e, Object.assign({}, v, {
 					variables: t
 				}), {
-					query: s ? {} : Object(I.b)()
+					query: s ? {} : Object(T.b)()
 				});
-			var A = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				v = s("./src/reddit/helpers/awards/message.ts"),
-				P = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				C = s("./src/reddit/helpers/isPost.ts"),
-				q = s("./src/reddit/helpers/trackers/gild.ts"),
-				T = s("./src/telemetry/index.ts"),
-				E = s("./src/reddit/actions/gold/constants.ts");
-			const S = Object(i.a)(E.p),
-				G = Object(i.a)(E.o),
-				N = Object(i.a)(E.s),
-				L = (e, t) => async (s, i, r) => {
+			var E = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				K = s("./src/reddit/helpers/awards/message.ts"),
+				N = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				G = s("./src/reddit/helpers/isPost.ts"),
+				L = s("./src/reddit/helpers/trackers/gild.ts"),
+				R = s("./src/telemetry/index.ts"),
+				M = s("./src/reddit/actions/gold/constants.ts");
+			const D = Object(a.a)(M.q),
+				U = Object(a.a)(M.p),
+				B = Object(a.a)(M.t),
+				F = (e, t) => async (s, a, n) => {
 					let {
 						gqlContext: d
-					} = r;
-					const a = i().gild,
+					} = n;
+					const i = a().gild,
 						{
 							isOldReddit: c,
 							isLivestream: o
 						} = t;
-					s(B());
+					s(Z());
 					try {
 						const t = {
-								gildingTypeId: a.selectedAward.id,
-								isAnonymous: a.isAnonymous,
+								gildingTypeId: i.selectedAward.id,
+								isAnonymous: i.isAnonymous,
 								isGildFunded: !1,
-								message: Object(v.d)(a.message, a.selectedAward, o),
+								message: Object(K.d)(i.message, i.selectedAward, o),
 								nodeId: e
 							},
-							i = Object(C.a)(e) ? k : x,
-							r = await i(d(), {
+							a = Object(G.a)(e) ? q : S,
+							n = await a(d(), {
 								input: t
 							}, c);
 						let l = !1,
 							u = null,
 							b = null;
-						if (r.ok) {
-							const e = r.body;
+						if (n.ok) {
+							const e = n.body;
 							l = e.data.gild.ok, u = e.data.gild.fieldErrors, b = e.data.gild.errors
 						}
 						if (l) {
-							const t = r.body,
+							const t = n.body,
 								{
-									gild: n
+									gild: r
 								} = t.data,
-								i = Object(C.a)(e) ? r.body.data.gild.postInfo : r.body.data.gild.comment,
+								a = Object(G.a)(e) ? n.body.data.gild.postInfo : n.body.data.gild.comment,
 								{
 									awardings: d,
 									treatmentTags: c
-								} = i;
-							await s(K({
-								awardId: a.selectedAward.id,
+								} = a;
+							await s(X({
+								awardId: i.selectedAward.id,
 								awardings: d,
-								coins: n.coins,
+								awardKarmaReceived: r.awardKarmaReceived,
+								coins: r.coins,
 								id: e,
-								subredditCoins: n.subredditCoins,
+								subredditCoins: r.subredditCoins,
 								treatmentTags: c
 							}))
 						} else {
 							const e = u && u[0] && u[0].message,
 								t = b && b[0] && b[0].message,
-								i = e || t || n.fbt._("An unknown error occurred", null, {
+								a = e || t || r.fbt._("An unknown error occurred", null, {
 									hk: "2oAbwZ"
 								});
-							await s(U(i))
+							await s(z(a))
 						}
 					} catch (l) {
 						const e = l,
-							t = e && e.message || n.fbt._("An unknown error occurred", null, {
+							t = e && e.message || r.fbt._("An unknown error occurred", null, {
 								hk: "2oAbwZ"
 							});
-						await s(U(t))
+						await s(z(t))
 					} finally {
-						Object(P.b)(P.a.GildingFlow)
+						Object(N.b)(N.a.GildingFlow)
 					}
-				}, D = Object(i.a)(E.r), M = Object(i.a)(E.n), B = () => async (e, t) => {
-					e(M()), window.setTimeout(() => {
-						t().gild.api.pending && e(D())
+				}, H = Object(a.a)(M.s), Y = Object(a.a)(M.o), Z = () => async (e, t) => {
+					e(Y()), window.setTimeout(() => {
+						t().gild.api.pending && e(H())
 					}, 2e3)
-				}, R = Object(i.a)(E.m), U = e => async (t, s) => {
-					await t(R(e)), t(Object(c.e)({
-						kind: b.b.Error,
+				}, J = Object(a.a)(M.n), z = e => async (t, s) => {
+					await t(J(e)), t(Object(c.e)({
+						kind: h.b.Error,
 						duration: c.a,
 						text: e
 					}))
-				}, F = Object(i.a)(E.q), H = (e, t) => {
+				}, Q = Object(a.a)(M.r), V = (e, t) => {
 					const {
 						id: s
-					} = t, n = Object(C.a)(s) ? Object(h.O)(e, {
+					} = t, r = Object(G.a)(s) ? Object(x.O)(e, {
 						postId: s
-					}) : Object(g.n)(e, {
+					}) : Object(_.n)(e, {
 						commentId: s
-					}), i = Object(_.i)(e), r = e.gild, {
+					}), a = Object(I.i)(e), n = e.gild, {
 						isAnonymous: d
-					} = r, a = !d && i && (i.username || i.displayText) ? i.username || i.displayText : void 0, c = n ? n.author : void 0, o = Object(O.I)(e, {
+					} = n, i = !d && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, c = r ? r.author : void 0, o = Object(A.I)(e, {
 						thingId: s
 					});
-					return F(Object.assign({}, t, {
-						gilder: a,
+					return Q(Object.assign({}, t, {
+						gilder: i,
 						gildee: c,
 						subredditId: o && o.id
 					}))
-				}, K = e => async (t, s) => {
-					const i = s(),
+				}, X = e => async (t, s) => {
+					const a = s(),
 						{
-							awardId: g,
-							id: _
+							awardId: o,
+							id: l
 						} = e,
-						j = Object(p.a)(i, g);
-					if (Object(m.h)(i)) {
+						b = Object(O.a)(a, o),
+						m = Object(j.a)(a),
+						p = e.awardKarmaReceived,
+						_ = Object(I.i)(a);
+					if (Object(y.h)(a)) {
 						const e = "success.gild",
 							t = {},
-							s = j.icon32 ? j.icon32.url : j.icon.url;
-						t.awardId = g, t.awardIcon = s, Object(r.a)({
+							s = b.icon32 ? b.icon32.url : b.icon.url;
+						t.awardId = o, t.awardIcon = s, Object(n.a)({
 							type: e,
 							data: t
 						})
 					}
-					if (j.awardType === o.e.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(O.I)(i, {
-								thingId: _
+					if (b.awardType === u.f.Moderator && void 0 === e.subredditCoins) {
+						const t = Object(A.I)(a, {
+								thingId: l
 							}),
-							s = t && Object(O.B)(i, {
+							s = t && Object(A.B)(a, {
 								subredditName: t.name
 							});
-						s && (e.subredditCoins = s - j.coinPrice)
+						s && (e.subredditCoins = s - b.coinPrice)
 					}
-					t(H(i, e)), (i.posts.instances[_] || []).forEach(s => {
-						t(H(i, Object.assign({}, e, {
+					if (t(V(a, e)), _ && _.displayName) {
+						const e = _.awarderKarma + p;
+						t(W({
+							userName: _.displayName,
+							awarderKarma: e
+						}))
+					}(a.posts.instances[l] || []).forEach(s => {
+						t(V(a, Object.assign({}, e, {
 							id: s
 						})))
 					});
-					const w = Object(C.a)(_) ? n.fbt._("Success! You have given this post the {awardName} Award", [n.fbt._param("awardName", j.name)], {
+					const v = Object(G.a)(l) ? r.fbt._("Success! You have given this post the {awardName} Award", [r.fbt._param("awardName", b.name)], {
 							hk: "1Ndi4Z"
-						}) : n.fbt._("Success! You have given this comment the {awardName} Award", [n.fbt._param("awardName", j.name)], {
+						}) : r.fbt._("Success! You have given this comment the {awardName} Award", [r.fbt._param("awardName", b.name)], {
 							hk: "2sIK9Y"
 						}),
-						y = j.coinPrice;
-					Object(T.a)(Object(q.viewSuccessAwardEvent)(_, y, j)(i)), t(Object(c.e)({
-						kind: b.b.SuccessCommunity,
-						text: w
+						P = b.coinPrice;
+					Object(R.a)(Object(L.viewSuccessAwardEvent)(l, P, b)(a));
+					const C = b.icon64 ? b.icon64.url : b.icon.url;
+					t(Object(c.e)({
+						customIconAsset: C,
+						kind: h.b.SuccessAward,
+						text: m && p > 0 ? g({
+							awarderKarmaReceived: p
+						}) : v
 					})), setTimeout(() => {
-						const e = Object(A.a)(g, _),
+						const e = Object(E.a)(o, l),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const I = Object(C.a)(_) && Object(u.i)(Object(h.O)(i, {
-						postId: _
+					const T = Object(G.a)(l) && Object(w.i)(Object(x.O)(a, {
+						postId: l
 					}));
-					await t(Object(a.a)());
-					const k = Object(f.d)(s()).filter(e => l.a.has(e.dealInfo.type));
-					k.length && setTimeout(() => t(Object(d.h)({
-						packageId: k[0].mobileId
-					})), I ? 600 : 10)
-				}
+					await t(Object(i.a)());
+					const q = Object(k.d)(s()).filter(e => f.a.has(e.dealInfo.type));
+					q.length && setTimeout(() => t(Object(d.h)({
+						packageId: q[0].mobileId
+					})), T ? 600 : 10)
+				}, W = Object(a.a)(M.a)
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
 				return y
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				i = s("./src/lib/makeActionCreator/index.ts"),
-				r = s("./src/lib/sentry/index.ts"),
+			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
+				a = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/lib/sentry/index.ts"),
 				d = s("./src/lib/constants/index.ts"),
-				a = s("./src/lib/makeApiRequest/index.ts"),
+				i = s("./src/lib/makeApiRequest/index.ts"),
 				c = s("./src/lib/omitHeaders/index.ts"),
 				o = s("./src/reddit/constants/headers.ts"),
 				l = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
@@ -242,7 +279,7 @@
 					mobileId: e.mobile_id,
 					pennies: e.pennies
 				}),
-				g = e => e.map(b),
+				m = e => e.map(b),
 				p = e => e.map(e => {
 					const t = b(e);
 					return Object.assign({}, t, {
@@ -254,7 +291,7 @@
 						}
 					})
 				}),
-				m = e => e.map(e => ({
+				g = e => e.map(e => ({
 					description: e.description,
 					frequency: e.frequency,
 					frequencyDays: e.frequency_days,
@@ -278,83 +315,104 @@
 					heroText: e.hero_text
 				} : null;
 
-			function h(e) {
+			function w(e) {
 				if (!e.ok) return e;
 				const {
 					active_sale: t,
 					coin_packages: s,
-					deals: n,
-					premium_packages: i
-				} = e.body, r = {
+					deals: r,
+					premium_packages: a
+				} = e.body, n = {
 					activeSaleConfig: f(t),
-					coinPackages: g(s),
-					dealCoinPackages: p(n),
-					premiumPackages: m(i)
+					coinPackages: m(s),
+					dealCoinPackages: p(r),
+					premiumPackages: g(a)
 				};
 				return Object.assign({}, e, {
-					body: r
+					body: n
 				})
 			}
-			var O = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const _ = Object(i.a)(O.g),
-				j = Object(i.a)(O.h),
-				w = Object(i.a)(O.f),
+			var h = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const _ = Object(a.a)(h.g),
+				O = Object(a.a)(h.h),
+				j = Object(a.a)(h.f),
 				y = () => async (e, t, s) => {
 					let {
-						apiContext: i
+						apiContext: a
 					} = s;
 					e(_());
 					try {
 						const t = await (async e => {
 							const t = "".concat(e.apiUrl, "/api/v2/gold/purchase_package_details"),
 								s = Object(l.a)(t);
-							return Object(a.b)(Object(c.a)(e, [o.a]), {
+							return Object(i.b)(Object(c.a)(e, [o.a]), {
 								method: d.ab.GET,
 								endpoint: s
-							}).then(u.c).then(h)
-						})(i());
+							}).then(u.c).then(w)
+						})(a());
 						if (!t.ok) throw new Error(t.error && t.error.type || "Unknown error");
 						const s = t.body;
-						e(j(s))
+						e(O(s))
 					} catch (b) {
-						r.c.captureException(b);
-						const t = n.fbt._("There was an error fetching available products", null, {
+						n.c.captureException(b);
+						const t = r.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
-						e(w(t))
+						e(j(t))
 					}
 				}
+		},
+		"./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less": function(e, t, s) {
+			e.exports = {
+				karmaLink: "_33-F8KNeBDS4RS9mUMQdxH"
+			}
 		},
 		"./src/reddit/helpers/awards/getAwardItemId.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return n
+				return r
 			}));
-			const n = (e, t) => "awardItem__".concat(t, "-").concat(e)
+			const r = (e, t) => "awardItem__".concat(t, "-").concat(e)
 		},
 		"./src/reddit/helpers/awards/message.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return n
-			})), s.d(t, "b", (function() {
-				return i
-			})), s.d(t, "c", (function() {
 				return r
+			})), s.d(t, "b", (function() {
+				return a
+			})), s.d(t, "c", (function() {
+				return n
 			})), s.d(t, "d", (function() {
 				return d
 			}));
-			const n = 500,
-				i = 1800,
-				r = function(e) {
+			const r = 500,
+				a = 1800,
+				n = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					return t ? e.coinPrice < n ? 0 : e.coinPrice < i ? 50 : 100 : 2048
+					return t ? e.coinPrice < r ? 0 : e.coinPrice < a ? 50 : 100 : 2048
 				},
 				d = function(e, t) {
 					let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-					const n = r(t, s);
-					return e.slice(0, n)
+					const r = n(t, s);
+					return e.slice(0, r)
 				}
+		},
+		"./src/reddit/selectors/experiments/econAwardKarma.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
+			var r = s("./src/reddit/constants/experiments.ts"),
+				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				n = s("./src/reddit/selectors/user.ts");
+			const d = e => {
+				const t = Object(a.c)(e, {
+					experimentEligibilitySelector: n.H,
+					experimentName: r.Y
+				});
+				return !(!t || Object(r.vc)(t))
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.f4fdeb7ea84728449981.js.map
+//# sourceMappingURL=gildActions.fe0a11ccf9aed565aea8.js.map

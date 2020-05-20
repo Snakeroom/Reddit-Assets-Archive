@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.367e713665d251d88f68.js
-// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eaa3b0aa21bed7663972.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3368,16 +3368,16 @@
 			const jt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.Z
+						experimentName: _t.ab
 					});
-					return !(!t || Object(_t.uc)(t))
+					return !(!t || Object(_t.vc)(t))
 				},
 				wt = e => {
 					const t = Object(kt.c)(e, {
 						experimentEligibilitySelector: kt.a,
-						experimentName: _t.Y
+						experimentName: _t.Z
 					});
-					return !(!t || Object(_t.uc)(t))
+					return !(!t || Object(_t.vc)(t))
 				};
 			var Pt = s("./src/reddit/selectors/gild.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -16421,7 +16421,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.E
 				});
-				return !!t && !Object(n.uc)(t)
+				return !!t && !Object(n.vc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16436,7 +16436,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.X
 				});
-				return !(!t || Object(n.uc)(t))
+				return !(!t || Object(n.vc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16453,4 +16453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.367e713665d251d88f68.js.map
+//# sourceMappingURL=CollectionCommentsPage.eaa3b0aa21bed7663972.js.map

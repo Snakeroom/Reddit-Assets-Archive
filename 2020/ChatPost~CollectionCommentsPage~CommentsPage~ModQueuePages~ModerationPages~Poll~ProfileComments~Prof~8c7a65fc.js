@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.b20a3c7b8d9f4a23d426.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.f13ff5d017521d5aeb4d.js
+// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -35,7 +35,7 @@
 				n = s("./src/reddit/actions/modal.ts"),
 				r = s("./src/reddit/constants/modals.ts"),
 				a = s("./src/reddit/actions/gold/constants.ts");
-			const i = Object(o.a)(a.K),
+			const i = Object(o.a)(a.L),
 				d = () => async e => {
 					e(Object(n.i)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
@@ -159,7 +159,7 @@
 				u = s("./src/reddit/models/Toast/index.ts"),
 				p = s("./src/lib/makeGqlRequest/index.ts"),
 				h = s("./src/reddit/actions/gold/constants.ts");
-			const b = Object(c.a)(h.C),
+			const b = Object(c.a)(h.D),
 				f = e => {
 					let {
 						awardId: t,
@@ -241,7 +241,7 @@
 							onAddAward: e,
 							award: t
 						} = this.props;
-						e(t.id === y.f ? void 0 : t.id)
+						e(t.id === y.g ? void 0 : t.id)
 					}, this.handleMouseEnter = () => {
 						const {
 							onShowTooltip: e,
@@ -284,7 +284,7 @@
 						tooltipId: s,
 						triggerOverlayAnimation: o
 					} = this.props;
-					e.id !== y.f && (this.setState({
+					e.id !== y.g && (this.setState({
 						userGiven: !0,
 						shouldAnimate: !t
 					}), t || (o(s), setTimeout(() => {
@@ -567,7 +567,7 @@
 					} = this.props;
 					if (s <= 0) return null;
 					const l = e.icon32 ? e.icon32.url : e.icon.url,
-						m = e.awardType === y.e.Moderator,
+						m = e.awardType === y.f.Moderator,
 						u = Object(L.a)(e.id, i.id),
 						p = "container" === c;
 					return r.a.createElement("span", {
@@ -798,7 +798,7 @@
 						triggerOverlayAnimation: h
 					} = this.props, {
 						showAllAwards: b
-					} = this.state, f = "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, g = Object(y.o)(Object.keys(p.awardCountsById || {}).map(t => e[t]).filter(Boolean)), x = d ? O.c.Lightbox : void 0, w = s && s.id === p.authorId;
+					} = this.state, f = "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, g = Object(y.p)(Object.keys(p.awardCountsById || {}).map(t => e[t]).filter(Boolean)), x = d ? O.c.Lightbox : void 0, w = s && s.id === p.authorId;
 					return r.a.createElement(r.a.Fragment, null, t ? r.a.createElement(te, {
 						awards: g,
 						multiline: !!c,
@@ -2154,4 +2154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.b20a3c7b8d9f4a23d426.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.f13ff5d017521d5aeb4d.js.map
