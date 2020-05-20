@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.eaf89dd10fe54ba6cc46.js
-// Retrieved at 5/20/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.01adfff9c1804462653f.js
+// Retrieved at 5/20/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -50701,29 +50701,33 @@
 		"./src/reddit/selectors/experiments/subredditSeo.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "b", (function() {
 				return u
+			})), n.d(t, "b", (function() {
+				return l
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts"),
-				c = n("./src/reddit/selectors/user.ts"),
-				i = n("./src/reddit/selectors/widgets.ts");
-			const d = e => {
+				c = n("./src/reddit/selectors/telemetry.ts"),
+				i = n("./src/reddit/selectors/user.ts"),
+				d = n("./src/reddit/selectors/widgets.ts");
+			const u = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.pb
+						experimentName: r.pb,
+						customPayloadMaker: e => ({
+							request: c.request(e)
+						})
 					}) === r.xb.LinkModule
 				},
-				u = Object(s.a)(e => {
+				l = Object(s.a)(e => {
 					return !!Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: r.pb,
 						expEventOverride: !1
 					})
-				}, c.H, a.Q, i.j, (e, t, n, s) => e && !t && !n.isNSFW && !s.some(e => "community-list" === e))
+				}, i.H, a.Q, d.j, (e, t, n, s) => e && !t && !n.isNSFW && !s.some(e => "community-list" === e))
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
 			"use strict";
@@ -52239,4 +52243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.eaf89dd10fe54ba6cc46.js.map
+//# sourceMappingURL=Governance~Reddit.01adfff9c1804462653f.js.map
