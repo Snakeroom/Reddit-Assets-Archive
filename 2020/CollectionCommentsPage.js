@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eaa3b0aa21bed7663972.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.56ed4636a0c6324dcd2d.js
+// Retrieved at 5/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10667,9 +10667,11 @@
 						} = L[e],
 						{
 							className: n,
-							redditStyle: o
-						} = this.props;
-					return c.a.createElement(b.a, null, c.a.createElement(P, {
+							redditStyle: o,
+							removeSidebarSpacer: r
+						} = this.props,
+						a = r ? c.a.Fragment : b.a;
+					return c.a.createElement(a, null, c.a.createElement(P, {
 						className: n,
 						contentOnly: !0,
 						redditStyle: o
@@ -10696,26 +10698,28 @@
 						forcePlaceholder: u,
 						forceHouseAd: h,
 						waitForProgrammatic: g,
-						isSubredditPage: x
-					} = this.props, f = n.fbt._("advertisement", null, {
+						isSubredditPage: x,
+						removeSidebarSpacer: f
+					} = this.props, v = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
-					});
-					return u || t || !N(s) && g ? c.a.createElement(b.a, null, c.a.createElement(P, {
+					}), C = f ? c.a.Fragment : b.a;
+					return u || t || !N(s) && g ? c.a.createElement(C, null, c.a.createElement(P, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: p
 					}, c.a.createElement(I, {
-						"data-before-content": f
+						"data-before-content": v
 					}))) : h ? c.a.createElement(R, {
 						className: e,
-						redditStyle: p
-					}) : N(s) ? c.a.createElement(b.a, null, c.a.createElement(_, {
+						redditStyle: p,
+						removeSidebarSpacer: f
+					}) : N(s) ? c.a.createElement(C, null, c.a.createElement(_, {
 						post: s,
 						refreshKey: a,
 						listingName: i,
 						placement: d,
 						placementIndex: r
-					})) : c.a.createElement(b.a, null, c.a.createElement(P, {
+					})) : c.a.createElement(C, null, c.a.createElement(P, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: p
@@ -10733,7 +10737,7 @@
 						listingName: i,
 						refreshKey: a,
 						position: m,
-						dataBeforeContent: f
+						dataBeforeContent: v
 					})))
 				}
 			}
@@ -16453,4 +16457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.eaa3b0aa21bed7663972.js.map
+//# sourceMappingURL=CollectionCommentsPage.56ed4636a0c6324dcd2d.js.map
