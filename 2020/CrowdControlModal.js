@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.618ed7804782d7b1682a.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.0b652d6f6755d4fe03b2.js
+// Retrieved at 5/20/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -134,7 +134,7 @@
 						label: n.fbt._("Adjust Crowd Control", null, {
 							hk: "4oJUSP"
 						}),
-						subtext: n.fbt._("{subText}", [n.fbt._param("subText", _[1].subText)], {
+						subtext: n.fbt._("{subText}", [n.fbt._param("subText", _[o].subText)], {
 							hk: "3ZFhAV"
 						})
 					}), void 0 !== s && r.a.createElement(m.c, null, n.fbt._("Community level Crowd Control is set to {subredditCrowdControl} .", [n.fbt._param("subredditCrowdControl", r.a.createElement("strong", null, _[s].text))], {
@@ -444,4 +444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal.618ed7804782d7b1682a.js.map
+//# sourceMappingURL=CrowdControlModal.0b652d6f6755d4fe03b2.js.map
