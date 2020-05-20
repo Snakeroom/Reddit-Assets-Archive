@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5305e9b718f1b06104c8.js
-// Retrieved at 5/20/2020, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d84b31777674dc1e961d.js
+// Retrieved at 5/20/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "0cefa2c-production"
+					SENTRY_RELEASE_VERSION: "db98ea4-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -1428,7 +1428,7 @@
 				i = n("./src/reddit/actions/gold/constants.ts");
 			const a = Object(s.a)(i.L),
 				c = () => async e => {
-					e(Object(o.i)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
+					e(Object(o.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
 		},
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
@@ -2953,7 +2953,7 @@
 				$ = 100;
 			class ee extends r.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = r.a.createRef(), this.newlyGivenAwards = new Set, this.handleResize = k()(() => {
+					super(e), this.plaqueRef = r.a.createRef(), this.originalAwards = new Set, this.handleResize = k()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -3000,7 +3000,7 @@
 					this.state = {
 						canScrollLeft: !1,
 						canScrollRight: t && !e.multiline
-					}
+					}, e.awards.forEach(e => this.originalAwards.add(e.id))
 				}
 				shouldComponentUpdate(e, t) {
 					if (this.props.awards !== e.awards) {
@@ -3008,7 +3008,7 @@
 						if (e.awards.reduce((n, s) => {
 								const o = t[s.id],
 									r = (e.post.awardCountsById || {})[s.id];
-								return o || this.newlyGivenAwards.add(s.id), n || o !== r
+								return n || o !== r
 							}, !1)) return !0
 					}
 					if (this.props.post.id !== e.post.id) return !0;
@@ -3080,7 +3080,7 @@
 							onShowTooltip: c,
 							post: n,
 							prefersReducedMotion: s,
-							shouldAnimateOnMount: this.newlyGivenAwards.has(e.id),
+							shouldAnimateOnMount: !this.originalAwards.has(e.id),
 							tooltipId: "".concat(m, "-").concat(e.id),
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
@@ -31565,4 +31565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5305e9b718f1b06104c8.js.map
+//# sourceMappingURL=PostCreation.d84b31777674dc1e961d.js.map

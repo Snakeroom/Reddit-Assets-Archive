@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.98118a29293f9f5e892b.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6e925faee9cb7f0a8dcb.js
+// Retrieved at 5/20/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -7646,9 +7646,9 @@
 		"./src/reddit/components/Gold/GildAnimationOverlay/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SPARKLE_ASSET_PATH", (function() {
-				return b
-			})), s.d(t, "STARBURST_ASSET_PATH", (function() {
 				return g
+			})), s.d(t, "STARBURST_ASSET_PATH", (function() {
+				return f
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -7659,18 +7659,19 @@
 				d = s("./src/higherOrderComponents/asModal/index.tsx"),
 				l = s("./src/lib/classNames/index.ts"),
 				m = s("./src/reddit/actions/modal.ts"),
-				u = s("./src/reddit/selectors/gold/giveAwards.ts"),
-				p = s("./src/reddit/components/Gold/GildAnimationOverlay/index.m.less"),
-				h = s.n(p);
-			const b = "".concat(n.a.assetPath, "/img/gold/animated-sparkle-256.png"),
-				g = "".concat(n.a.assetPath, "/img/gold/animated-starburst-256.png"),
-				f = Object(c.c)({
-					award: u.a
+				u = s("./src/reddit/constants/modals.ts"),
+				p = s("./src/reddit/selectors/gold/giveAwards.ts"),
+				h = s("./src/reddit/components/Gold/GildAnimationOverlay/index.m.less"),
+				b = s.n(h);
+			const g = "".concat(n.a.assetPath, "/img/gold/animated-sparkle-256.png"),
+				f = "".concat(n.a.assetPath, "/img/gold/animated-starburst-256.png"),
+				C = Object(c.c)({
+					award: p.a
 				}),
-				C = Object(i.b)(f, e => ({
-					onClose: () => e(Object(m.f)())
+				v = Object(i.b)(C, e => ({
+					onClose: () => e(Object(m.g)(u.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}));
-			t.default = Object(d.a)(C(e => {
+			t.default = Object(d.a)(v(e => {
 				const {
 					award: t,
 					onClose: s
@@ -7681,20 +7682,20 @@
 						hk: "222osK"
 					});
 				return o.a.createElement("div", {
-					className: h.a.gildAnimationContainer
+					className: b.a.gildAnimationContainer
 				}, o.a.createElement("div", {
-					className: Object(l.a)(h.a.animationComponent, h.a.starburst),
+					className: Object(l.a)(b.a.animationComponent, b.a.starburst),
 					style: {
-						backgroundImage: "url(".concat(g, ")")
+						backgroundImage: "url(".concat(f, ")")
 					}
 				}), o.a.createElement("img", {
 					alt: r,
-					className: Object(l.a)(h.a.animationComponent, h.a.awardAsset),
+					className: Object(l.a)(b.a.animationComponent, b.a.awardAsset),
 					src: n
 				}), o.a.createElement("div", {
-					className: Object(l.a)(h.a.animationComponent, h.a.sparkle),
+					className: Object(l.a)(b.a.animationComponent, b.a.sparkle),
 					style: {
-						backgroundImage: "url(".concat(b, ")")
+						backgroundImage: "url(".concat(g, ")")
 					}
 				}))
 			}))
@@ -12853,4 +12854,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.98118a29293f9f5e892b.js.map
+//# sourceMappingURL=Reddit.6e925faee9cb7f0a8dcb.js.map

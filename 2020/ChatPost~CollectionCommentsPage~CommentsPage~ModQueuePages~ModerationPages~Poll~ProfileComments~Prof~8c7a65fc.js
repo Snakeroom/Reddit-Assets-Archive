@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.f13ff5d017521d5aeb4d.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.9deb2bd582b936463b0a.js
+// Retrieved at 5/20/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -37,7 +37,7 @@
 				a = s("./src/reddit/actions/gold/constants.ts");
 			const i = Object(o.a)(a.L),
 				d = () => async e => {
-					e(Object(n.i)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
+					e(Object(n.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
 		},
 		"./src/reddit/components/AuthorLink/index.m.less": function(e, t, s) {
@@ -234,7 +234,7 @@
 				U = s.n(R);
 			const F = 3500,
 				q = 500;
-			class G extends r.a.PureComponent {
+			class Q extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.handleOnClick = () => {
 						const {
@@ -334,8 +334,8 @@
 					}))
 				}
 			}
-			var Q = G,
-				W = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
+			var W = Q,
+				G = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				V = s("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				z = s.n(V);
 			var J = r.a.memo(e => {
@@ -356,7 +356,7 @@
 					className: z.a.scrollButton,
 					name: a ? d : i,
 					onClick: n
-				}, r.a.createElement(W.a, {
+				}, r.a.createElement(G.a, {
 					className: z.a.chevronIcon
 				})))
 			});
@@ -371,7 +371,7 @@
 				$ = 100;
 			class ee extends r.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = r.a.createRef(), this.newlyGivenAwards = new Set, this.handleResize = S()(() => {
+					super(e), this.plaqueRef = r.a.createRef(), this.originalAwards = new Set, this.handleResize = S()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -418,7 +418,7 @@
 					this.state = {
 						canScrollLeft: !1,
 						canScrollRight: t && !e.multiline
-					}
+					}, e.awards.forEach(e => this.originalAwards.add(e.id))
 				}
 				shouldComponentUpdate(e, t) {
 					if (this.props.awards !== e.awards) {
@@ -426,7 +426,7 @@
 						if (e.awards.reduce((s, o) => {
 								const n = t[o.id],
 									r = (e.post.awardCountsById || {})[o.id];
-								return n || this.newlyGivenAwards.add(o.id), s || n !== r
+								return s || n !== r
 							}, !1)) return !0
 					}
 					if (this.props.post.id !== e.post.id) return !0;
@@ -488,7 +488,7 @@
 						const {
 							awardCountsById: t = {}
 						} = s, c = t[e.id];
-						return r.a.createElement(Q, {
+						return r.a.createElement(W, {
 							award: e,
 							count: c,
 							key: e.id,
@@ -498,7 +498,7 @@
 							onShowTooltip: d,
 							post: s,
 							prefersReducedMotion: o,
-							shouldAnimateOnMount: this.newlyGivenAwards.has(e.id),
+							shouldAnimateOnMount: !this.originalAwards.has(e.id),
 							tooltipId: "".concat(p, "-").concat(e.id),
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
@@ -1583,14 +1583,14 @@
 				U = s("./src/reddit/selectors/authorFlair.ts"),
 				F = s("./src/reddit/selectors/userFlair.ts"),
 				q = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				G = s("./src/reddit/components/PostTopMeta/index.m.less"),
-				Q = s.n(G);
+				Q = s("./src/reddit/components/PostTopMeta/index.m.less"),
+				W = s.n(Q);
 			! function(e) {
 				e.StickyPost = "sticky", e.Lightbox = "lightbox"
 			}(b || (b = {}));
-			const W = e => Object(k.a)(Object(M.a)(e), H.a.metaText, H.b.metaText),
-				V = m.a.wrapped(N.b, "MetaSeparator", Q.a),
-				z = m.a.span("text", Q.a),
+			const G = e => Object(k.a)(Object(M.a)(e), H.a.metaText, H.b.metaText),
+				V = m.a.wrapped(N.b, "MetaSeparator", W.a),
+				z = m.a.span("text", W.a),
 				J = Object(q.t)(),
 				K = Object(r.b)(() => Object(a.c)({
 					authorFlair: U.a,
@@ -1616,7 +1616,7 @@
 				Z = e => {
 					const t = !e.isDeleted && e.post.distinguishType === d.A.ADMIN;
 					return n.a.createElement(x.a, {
-						className: Q.a.authorLink,
+						className: W.a.authorLink,
 						"data-click-id": "user",
 						author: e.post.author,
 						isAdmin: t,
@@ -1625,9 +1625,9 @@
 						isUnstyled: !0,
 						style: e.style
 					}, "u/".concat(e.post.author), t && n.a.createElement(L.a, {
-						className: Q.a.adminIcon
+						className: W.a.adminIcon
 					}), e.renderContractorBadge && n.a.createElement(L.a, {
-						className: Q.a.contractorIcon
+						className: W.a.contractorIcon
 					}), !1)
 				};
 			class Y extends n.a.PureComponent {
@@ -1653,16 +1653,16 @@
 						className: this.props.metaSeparatorClassName
 					}, "•"), q = n.a.createElement(n.a.Fragment, null, !k && n.a.createElement(z, {
 						style: {
-							color: W(this.props)
+							color: G(this.props)
 						}
 					}, "Posted by"), k && n.a.createElement(o.Fragment, null, n.a.createElement(f, {
-						className: Q.a.crosspostIcon
+						className: W.a.crosspostIcon
 					}), n.a.createElement(z, {
 						style: {
-							color: W(this.props)
+							color: G(this.props)
 						}
 					}, "Crossposted by")), b && L && n.a.createElement("div", {
-						className: Q.a.flairContainer
+						className: W.a.flairContainer
 					}, n.a.createElement(A.b, {
 						disabled: !r,
 						flair: b,
@@ -1673,10 +1673,10 @@
 						isDeleted: !0,
 						renderContractorBadge: H,
 						style: {
-							color: W(this.props)
+							color: G(this.props)
 						}
 					}) : n.a.createElement(o.Fragment, null, !Object(D.h)(h.author) && n.a.createElement(w.b, {
-						className: Q.a.badge,
+						className: W.a.badge,
 						subredditId: h.belongsTo.id,
 						uniqueIdentifier: "".concat(h.id, "-").concat(s),
 						userId: h.authorId
@@ -1691,17 +1691,17 @@
 						post: h,
 						renderContractorBadge: H,
 						style: {
-							color: W(this.props)
+							color: G(this.props)
 						}
 					})))), b && !L && n.a.createElement("div", {
-						className: Q.a.flairContainer
+						className: W.a.flairContainer
 					}, n.a.createElement(A.b, {
 						disabled: !r,
 						flair: b,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: U
 					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(D.h)(h.author) && n.a.createElement(O.a, {
-						className: Q.a.publicWallet,
+						className: W.a.publicWallet,
 						contentId: h.id,
 						metaSeparator: n.a.createElement(F, null),
 						subredditId: h.belongsTo.id,
@@ -1709,7 +1709,7 @@
 						username: h.author
 					}));
 					return n.a.createElement("div", {
-						className: Object(i.a)(Q.a.container, e)
+						className: Object(i.a)(W.a.container, e)
 					}, g && P && n.a.createElement(y.a, {
 						postId: h.id,
 						subredditName: P.name,
@@ -1720,14 +1720,14 @@
 					}, P.displayText)), P && P.isQuarantined && n.a.createElement(C.a, null), g && !k && n.a.createElement(F, null), h.isSponsored && n.a.createElement(o.Fragment, null, n.a.createElement(S.a, null), n.a.createElement(F, null)), q, n.a.createElement(T.e, {
 						post: h
 					}), x && n.a.createElement("a", {
-						className: Q.a.externalLink,
+						className: W.a.externalLink,
 						"data-click-id": "timestamp",
 						href: h.permalink,
 						id: t,
 						onMouseEnter: this.onShowCreatedTooltip,
 						onMouseLeave: c,
 						style: {
-							color: W(this.props)
+							color: G(this.props)
 						},
 						target: "_blank",
 						rel: "nofollow noopener"
@@ -2154,4 +2154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.f13ff5d017521d5aeb4d.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.9deb2bd582b936463b0a.js.map
