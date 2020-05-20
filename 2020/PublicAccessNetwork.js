@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.26fe45c706afe76658cd.js
-// Retrieved at 5/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bfadd30f06bceee6343a.js
+// Retrieved at 5/19/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -336,7 +336,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "ba915d6-production"
+					SENTRY_RELEASE_VERSION: "fb7221e-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -3845,12 +3845,9 @@
 					})
 				}
 				onSendHeartbeat() {
-					const e = Object.assign({}, this.getPlaybackStats(), {
-						heartbeatDurationMs: 0
-					});
-					this.setState({
+					this.props.sendEvent(Object(q.q)(this.props.currentStream, this.getPlaybackStats())), this.setState({
 						heartbeatDurationOffset: this.getWatchDuration()
-					}), this.props.sendEvent(Object(q.q)(this.props.currentStream, e))
+					})
 				}
 				startTimers() {
 					this.startWatch(), f.c.start(this.getSessionDurationTimer(this.state.id)), this.fiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 5e3), this.fifteenSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 15e3), this.thirtySecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 3e4), this.fortyfiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 45e3), this.minuteSessionTimer = window.setInterval(this.onSendHeartbeat, 6e4)
@@ -4191,4 +4188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.26fe45c706afe76658cd.js.map
+//# sourceMappingURL=PublicAccessNetwork.bfadd30f06bceee6343a.js.map
