@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.f406a5c446d4c81daa90.js
-// Retrieved at 5/20/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1a38b3fd43f58a3fcb0c.js
+// Retrieved at 5/20/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FeaturedLiveEntrypointAnnouncement"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1142,11 +1142,7 @@
 				i = s("./src/reddit/selectors/telemetry.ts");
 			const a = (e, t) => {
 					if (t) {
-						const s = i.media(e, t.post.id),
-							n = {
-								id: t.post.subreddit.id,
-								name: t.post.subreddit.name
-							};
+						const s = i.media(e, t.post.id);
 						if (s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(o.h)(e, {
@@ -1154,10 +1150,20 @@
 							});
 							n === o.a.LIVE ? s.type = "stream_live" : n === o.a.VOD ? s.type = "stream_vod" : n === o.a.UNAVAILABLE && (s.type = "stream_unavailable")
 						}
+						if (t.post.subreddit) {
+							const n = {
+								id: t.post.subreddit.id,
+								name: t.post.subreddit.name
+							};
+							return {
+								post: i.post(e, t.post.id),
+								media: s,
+								subreddit: n
+							}
+						}
 						return {
 							post: i.post(e, t.post.id),
-							media: s,
-							subreddit: n
+							media: s
 						}
 					}
 					return {
@@ -1994,4 +2000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.f406a5c446d4c81daa90.js.map
+//# sourceMappingURL=Frontpage.1a38b3fd43f58a3fcb0c.js.map
