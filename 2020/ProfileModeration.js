@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.d50f0cd54d030d1d8e73.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.be74884cb70672cd3aa5.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, n) {
@@ -325,7 +325,7 @@
 				y = n("./src/reddit/pages/ProfileModSettings/Navigation.m.less"),
 				v = n.n(y);
 			const _ = p.a.li("listItem", v.a),
-				E = p.a.wrapped(b.i, "sectionWrapper", v.a);
+				E = p.a.wrapped(b.j, "sectionWrapper", v.a);
 			class k extends r.a.PureComponent {
 				render() {
 					const {
@@ -337,11 +337,11 @@
 						hk: "3wd5uz"
 					})), r.a.createElement(x, null, r.a.createElement(g.c, null, o.fbt._("Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.", null, {
 						hk: "1fhfms"
-					})), r.a.createElement(g.c, null, o.fbt._("If you do choose to post to your profile, then it's important to get familiar with your {=moderation tools} and the {=mod guidelines} to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile. Below, you'll find a basic guide for the tools provided to you:", [o.fbt._param("=moderation tools", r.a.createElement(b.m, {
+					})), r.a.createElement(g.c, null, o.fbt._("If you do choose to post to your profile, then it's important to get familiar with your {=moderation tools} and the {=mod guidelines} to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile. Below, you'll find a basic guide for the tools provided to you:", [o.fbt._param("=moderation tools", r.a.createElement(b.n, {
 						href: "https://www.reddithelp.com/en/categories/using-reddit/profiles/profile-moderation-tools"
 					}, o.fbt._("moderation tools", null, {
 						hk: "134iKj"
-					}))), o.fbt._param("=mod guidelines", r.a.createElement(b.m, {
+					}))), o.fbt._param("=mod guidelines", r.a.createElement(b.n, {
 						href: "https://www.reddit.com/help/healthycommunities/"
 					}, o.fbt._("mod guidelines", null, {
 						hk: "1pCYsz"
@@ -379,11 +379,11 @@
 						url: "".concat(h.a.redditUrl, "/").concat(t, "/wiki/edit/config/automoderator/")
 					}, r.a.createElement(r.a.Fragment, null, o.fbt._("Automoderator is our friendly robot that can be used to help you moderate your community. Automod is a versatile tool that can be set up to remove or flag content posted on your page so you can review it.", null, {
 						hk: "39AqGb"
-					}), r.a.createElement("ul", null, r.a.createElement(_, null, o.fbt._("If you have questions about setting up rules, {=r/Automoderator} is a valuable resource for help and advice. You can see the {=full documentation of how it works here}", [o.fbt._param("=r/Automoderator", r.a.createElement(b.m, {
+					}), r.a.createElement("ul", null, r.a.createElement(_, null, o.fbt._("If you have questions about setting up rules, {=r/Automoderator} is a valuable resource for help and advice. You can see the {=full documentation of how it works here}", [o.fbt._param("=r/Automoderator", r.a.createElement(b.n, {
 						href: "".concat(h.a.redditUrl, "/r/automoderator")
 					}, o.fbt._("r/Automoderator", null, {
 						hk: "4G6JG7"
-					}))), o.fbt._param("=full documentation of how it works here", r.a.createElement(b.m, {
+					}))), o.fbt._param("=full documentation of how it works here", r.a.createElement(b.n, {
 						href: "".concat(h.a.redditUrl, "/wiki/automoderator/full-documentation")
 					}, o.fbt._("full documentation of how it works here", null, {
 						hk: "38DU6Z"
@@ -401,11 +401,11 @@
 							hk: "1aSzpl"
 						}),
 						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/banned")
-					}, r.a.createElement(r.a.Fragment, null, o.fbt._("This tool allows you to ban users from participating in your page and should be used sparingly. If users are violating site-wide rules or harassing you, please contact the admins using our {=contact form} or {=r/reddit.com modmail} .", [o.fbt._param("=contact form", r.a.createElement(b.m, {
+					}, r.a.createElement(r.a.Fragment, null, o.fbt._("This tool allows you to ban users from participating in your page and should be used sparingly. If users are violating site-wide rules or harassing you, please contact the admins using our {=contact form} or {=r/reddit.com modmail} .", [o.fbt._param("=contact form", r.a.createElement(b.n, {
 						href: "https://www.reddithelp.com/en/submit-request"
 					}, o.fbt._("contact form", null, {
 						hk: "2SNqWb"
-					}))), o.fbt._param("=r/reddit.com modmail", r.a.createElement(b.m, {
+					}))), o.fbt._param("=r/reddit.com modmail", r.a.createElement(b.n, {
 						href: "https://www.reddit.com/message/compose?to=%2Fr%2Freddit.com"
 					}, o.fbt._("r/reddit.com modmail", null, {
 						hk: "39y2SZ"
@@ -435,7 +435,7 @@
 						hk: "4n2TOC"
 					})))), r.a.createElement(x, null, o.fbt._("Have more questions?", null, {
 						hk: "2YqHcl"
-					}), r.a.createElement(b.m, {
+					}), r.a.createElement(b.n, {
 						href: "https://www.reddithelp.com/en/submit-request"
 					}, o.fbt._("Submit a request", null, {
 						hk: "1poUz6"
@@ -460,7 +460,7 @@
 				let {
 					children: t
 				} = e;
-				return r.a.createElement(E, null, r.a.createElement(b.l, null, t))
+				return r.a.createElement(E, null, r.a.createElement(b.m, null, t))
 			}
 			var S = k;
 			const O = Object(i.c)({
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileModeration.d50f0cd54d030d1d8e73.js.map
+//# sourceMappingURL=ProfileModeration.be74884cb70672cd3aa5.js.map

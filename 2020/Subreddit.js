@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.db4406f703a50ed96fa4.js
-// Retrieved at 5/20/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.53715cea9971bf276556.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -485,7 +485,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(m.A(n)), window.location.reload()
+						await e(m.C(n)), window.location.reload()
 					},
 					setNSFWPreference: async () => {
 						await e(Object(l.l)())
@@ -6707,7 +6707,7 @@
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
 				})),
-				setTopContentDismissalPref: () => e(Object(w.D)())
+				setTopContentDismissalPref: () => e(Object(w.F)())
 			}), ze = Object(b.b)(Ke, Ze), qe = Object(d.a)({
 				resolved: {},
 				chunkName: () => "Trending",
@@ -7371,4 +7371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.db4406f703a50ed96fa4.js.map
+//# sourceMappingURL=Subreddit.53715cea9971bf276556.js.map

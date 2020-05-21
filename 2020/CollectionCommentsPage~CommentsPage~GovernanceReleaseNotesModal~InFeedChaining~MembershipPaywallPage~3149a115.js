@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.6223fffca379bba7ab4e.js
-// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ffb8ba314f2428d33b71.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1459,7 +1459,7 @@
 								isPlaying: t
 							}))
 						},
-						setAutoplayPref: t => e(P.r(t)),
+						setAutoplayPref: t => e(P.s(t)),
 						setVideoFullscreen: () => {
 							s && e(b.N(s))
 						},
@@ -1792,7 +1792,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("ea5455c-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("f68a954-production", " ").concat(t);
 									return a && (s += " [".concat(T.qc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2215,4 +2215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.6223fffca379bba7ab4e.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.ffb8ba314f2428d33b71.js.map

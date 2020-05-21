@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.337722f92f300b3c6f30.js
-// Retrieved at 5/19/2020, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.90cec02d91ac240b443c.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -2252,7 +2252,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(m.A(n)), window.location.reload()
+						await e(m.C(n)), window.location.reload()
 					},
 					setNSFWPreference: async () => {
 						await e(Object(l.l)())
@@ -3253,7 +3253,7 @@
 					redditStyle: h.A
 				}),
 				M = Object(a.b)(L, e => ({
-					onListingLayoutChange: (t, n) => e(Object(m.v)(t, n)),
+					onListingLayoutChange: (t, n) => e(Object(m.x)(t, n)),
 					openDropdown: () => e(Object(p.h)({
 						tooltipId: P
 					}))
@@ -3715,7 +3715,7 @@
 						tooltipId: "StateSort--StateSortPicker"
 					})),
 					onClickLink: (t, n) => {
-						e(Object(x.b)(t)), e(Object(c.t)(h.u.UnitedStates + "_" + n))
+						e(Object(x.b)(t)), e(Object(c.u)(h.u.UnitedStates + "_" + n))
 					}
 				}));
 			var ce = L.a.wrapped(re(ie(e => {
@@ -3872,7 +3872,7 @@
 						tooltipId: t
 					})),
 					onClickLink: (t, n) => {
-						e(Object(x.b)(t)), e(Object(c.t)(n))
+						e(Object(x.b)(t)), e(Object(c.u)(n))
 					}
 				}))(e => {
 					const t = se(e.sort),
@@ -4115,7 +4115,7 @@
 									sort: t,
 									timeSort: s
 								});
-								e(Object(c.G)(n, o))
+								e(Object(c.I)(n, o))
 							}
 						}
 					}
@@ -9953,4 +9953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.337722f92f300b3c6f30.js.map
+//# sourceMappingURL=ProfileComments.90cec02d91ac240b443c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.eaf9e96957973c783eb6.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.50988b9cb43b81e5c00a.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -627,7 +627,7 @@
 						})))
 					}), h.name && i.a.createElement(me, {
 						language: r
-					}, h.name), i.a.createElement(w.j, {
+					}, h.name), i.a.createElement(w.k, {
 						isRequired: !0,
 						label: s.fbt._("Topics", null, {
 							hk: "2iixv1"
@@ -658,7 +658,7 @@
 						value: this.state.description
 					}), h.publicDescription && i.a.createElement(me, {
 						language: r
-					}, h.publicDescription), i.a.createElement(w.j, {
+					}, h.publicDescription), i.a.createElement(w.k, {
 						label: s.fbt._("Community type", null, {
 							hk: "152EhZ"
 						}),
@@ -719,4 +719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.eaf9e96957973c783eb6.js.map
+//# sourceMappingURL=SubredditCreation.50988b9cb43b81e5c00a.js.map

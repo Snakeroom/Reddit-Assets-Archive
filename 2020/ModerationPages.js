@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.83002016b83f719dd2ff.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.069b536c824586e46020.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6179,7 +6179,7 @@
 					onChange: e => m(e.currentTarget.value, "title"),
 					textContainerClassName: K.a.fullWidthTextContainer,
 					value: C || ""
-				}), t && r.a.createElement(T.j, {
+				}), t && r.a.createElement(T.k, {
 					label: y.fbt._("Community topics", null, {
 						hk: "49aoGo"
 					}),
@@ -6223,7 +6223,7 @@
 						hk: "llaA4"
 					}),
 					value: h || ""
-				}), U && r.a.createElement(T.n, {
+				}), U && r.a.createElement(T.o, {
 					className: _ ? K.a.welcomeMessageEnabled : void 0,
 					on: _,
 					onClick: () => m(!_, "welcomeMessageEnabled"),
@@ -6257,7 +6257,7 @@
 					value: k || ""
 				})), r.a.createElement(N.a, null, y.fbt._("community type", null, {
 					hk: "3T2OkK"
-				})), r.a.createElement(T.j, {
+				})), r.a.createElement(T.k, {
 					label: y.fbt._("Type of Community", null, {
 						hk: "2PReGw"
 					}),
@@ -6266,12 +6266,12 @@
 					value: v,
 					name: "type",
 					onChange: e => m(e, "subredditType")
-				}, Object(F.radioOptions)(s, n))), r.a.createElement(T.n, {
+				}, Object(F.radioOptions)(s, n))), r.a.createElement(T.o, {
 					on: b,
 					onClick: () => m(!b, "over18"),
 					label: r.a.createElement("span", null, y.fbt._("18+ year old community", null, {
 						hk: "3VzYZp"
-					}), r.a.createElement(T.k, {
+					}), r.a.createElement(T.l, {
 						flair: L.f.Nsfw
 					})),
 					subtext: y.fbt._("When your community is marked as an 18+ community, users must be flagged as 18+ in their user settings", null, {
@@ -6293,7 +6293,7 @@
 					},
 					id: "restrictionOptions",
 					descriptions: D
-				}), r.a.createElement(T.n, {
+				}), r.a.createElement(T.o, {
 					on: !u,
 					onClick: () => m(!u, "disableContributorRequests"),
 					label: y.fbt._("Accepting new requests to post", null, {
@@ -6347,42 +6347,42 @@
 						onClick: e => n(q.h[e], "contentOptions"),
 						id: "contentOptions",
 						descriptions: q.g
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: c,
 						onClick: () => n(!c, "allowPostCrossposts"),
 						label: y.fbt._("Allow crossposting of posts.", null, {
 							hk: "19EiBT"
 						})
-					}), o && r.a.createElement(T.n, {
+					}), o && r.a.createElement(T.o, {
 						on: a,
 						onClick: () => n(!a, "allowChatPostCreation"),
 						label: y.fbt._("Allow chat posts creation by users.", null, {
 							hk: "4zwoUf"
 						})
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: E,
 						onClick: () => n(!E, "spoilersEnabled"),
 						label: r.a.createElement("span", null, y.fbt._("Enable spoiler tag", null, {
 							hk: "2CtBpB"
-						}), r.a.createElement(T.k, {
+						}), r.a.createElement(T.l, {
 							flair: L.f.Spoiler
 						})),
 						subtext: y.fbt._("Media on posts with the spoiler tag are blurred", null, {
 							hk: "4rVOs6"
 						})
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: i,
 						onClick: () => n(!i, "allowImages"),
 						label: y.fbt._("Allow image uploads and links to image hosting sites", null, {
 							hk: "20ETVO"
 						})
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: d,
 						onClick: () => n(!d, "allowPolls"),
 						label: y.fbt._("Allow polls", null, {
 							hk: "15LXRO"
 						})
-					}), r.a.createElement(T.j, {
+					}), r.a.createElement(T.k, {
 						label: y.fbt._("Spam filter strength", null, {
 							hk: "4C4qar"
 						}),
@@ -6429,13 +6429,13 @@
 						selected: Object(q.p)(q.i, v),
 						onClick: e => n(q.i[e], "suggestedCommentSort"),
 						id: "suggestedCommentSort"
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: m,
 						onClick: () => n(!m, "collapseDeletedComments"),
 						label: y.fbt._("Collapse deleted and removed comments", null, {
 							hk: "Iw8kU"
 						})
-					}), r.a.createElement(T.j, {
+					}), r.a.createElement(T.k, {
 						label: y.fbt._("Minutes to hide comment scores", null, {
 							hk: "1DJhj0"
 						}),
@@ -6504,7 +6504,7 @@
 						hk: "34ghQV"
 					})), r.a.createElement(N.a, null, y.fbt._("Safety", null, {
 						hk: "2QSter"
-					})), r.a.createElement(T.n, {
+					})), r.a.createElement(T.o, {
 						on: h,
 						onClick: () => i(!h, "excludeBannedModqueue"),
 						label: y.fbt._("Exclude posts by site-wide banned users", null, {
@@ -6513,7 +6513,7 @@
 						subtext: y.fbt._("Posts are excluded from modqueue/unmoderated", null, {
 							hk: "2P2pfc"
 						})
-					}), t && r.a.createElement(T.n, {
+					}), t && r.a.createElement(T.o, {
 						on: m,
 						onClick: () => i(!m, "crowdControlMode"),
 						label: y.fbt._("Turn on crowd control mode", null, {
@@ -6522,7 +6522,7 @@
 						subtext: y.fbt._("When crowd control is enabled, comments from users who aren't yet fully trusted in your community (including new users) will display as collapsed by default", null, {
 							hk: "13Z3pC"
 						})
-					}), s && r.a.createElement(T.h, {
+					}), s && r.a.createElement(T.i, {
 						ticks: x,
 						min: 0,
 						max: Object.keys(x).length - 1,
@@ -6535,7 +6535,7 @@
 						subtext: y.fbt._("{subText}", [y.fbt._param("subText", x[u].subText)], {
 							hk: "3ZFhAV"
 						})
-					}), n && r.a.createElement(r.a.Fragment, null, r.a.createElement(T.h, {
+					}), n && r.a.createElement(r.a.Fragment, null, r.a.createElement(T.i, {
 						ticks: x,
 						min: 0,
 						max: Object.keys(x).length - 1,
@@ -6548,7 +6548,7 @@
 						subtext: y.fbt._("{subText}", [y.fbt._param("subText", x[b].subText)], {
 							hk: "12hf9Y"
 						})
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: !!Number(g),
 						onClick: () => {
 							i(Number(g) ? "0" : "1", "toxicityThresholdChatLevel")
@@ -6561,13 +6561,13 @@
 						})
 					})), r.a.createElement(N.a, null, y.fbt._("Privacy", null, {
 						hk: "758Oq"
-					})), r.a.createElement(T.n, {
+					})), r.a.createElement(T.o, {
 						on: c,
 						onClick: () => i(!c, "contentVisible"),
 						label: y.fbt._("Allow posts in /r/all, /r/popular, default, and trending lists", null, {
 							hk: "3tUKh6"
 						})
-					}), r.a.createElement(T.n, {
+					}), r.a.createElement(T.o, {
 						on: d,
 						onClick: () => i(!d, "allowDiscovery"),
 						label: y.fbt._("Allow community in discovery and onboarding", null, {
@@ -6611,7 +6611,7 @@
 						onClick: e => n(q.o[e], "wikimode"),
 						id: "wikimode",
 						descriptions: q.n
-					}), r.a.createElement(T.j, {
+					}), r.a.createElement(T.k, {
 						label: y.fbt._("Karma required to edit and create wiki pages", null, {
 							hk: "3OgR7v"
 						}),
@@ -6623,7 +6623,7 @@
 						max: q.m,
 						type: "number",
 						value: a
-					})), r.a.createElement(T.j, {
+					})), r.a.createElement(T.k, {
 						label: y.fbt._("Age of Reddit account required to edit and create wiki pages", null, {
 							hk: "3UE6cD"
 						}),
@@ -7924,7 +7924,7 @@
 				} = t;
 				return {
 					continueToQuarantinedSubreddit: async () => {
-						await e(m.A(s)), window.location.reload()
+						await e(m.C(s)), window.location.reload()
 					},
 					setNSFWPreference: async () => {
 						await e(Object(c.l)())
@@ -19917,6 +19917,8 @@
 				mDisabled: "LvI7FSBTGgYo2skaf18Zv",
 				Subtext: "_1NdK7EwgYqUxJObBr3ym4o",
 				subtext: "_1NdK7EwgYqUxJObBr3ym4o",
+				Wrapper__LineBreak: "wVinKyEoajEmwhqwINYGd",
+				wrapperLineBreak: "wVinKyEoajEmwhqwINYGd",
 				Link: "oFObIzV6ZJDQuG09BXh8u",
 				link: "oFObIzV6ZJDQuG09BXh8u",
 				SubtextLink: "_3MGA27y-8plrsOsPbyYwgs",
@@ -19963,34 +19965,36 @@
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "l", (function() {
-				return A
-			})), s.d(t, "i", (function() {
-				return H
-			})), s.d(t, "m", (function() {
-				return V
+			s.d(t, "m", (function() {
+				return q
 			})), s.d(t, "j", (function() {
-				return z
-			})), s.d(t, "k", (function() {
-				return Z
+				return J
 			})), s.d(t, "n", (function() {
-				return Y
-			})), s.d(t, "h", (function() {
-				return oe
-			})), s.d(t, "b", (function() {
+				return Z
+			})), s.d(t, "k", (function() {
+				return te
+			})), s.d(t, "l", (function() {
 				return ae
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "o", (function() {
 				return re
-			})), s.d(t, "a", (function() {
-				return ie
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "i", (function() {
+				return ue
+			})), s.d(t, "b", (function() {
+				return pe
+			})), s.d(t, "f", (function() {
 				return be
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "a", (function() {
 				return he
+			})), s.d(t, "d", (function() {
+				return _e
+			})), s.d(t, "h", (function() {
+				return ke
+			})), s.d(t, "c", (function() {
+				return Oe
 			})), s.d(t, "e", (function() {
-				return ge
+				return ye
 			})), s.d(t, "g", (function() {
-				return fe
+				return je
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/react/index.js"),
@@ -20006,24 +20010,13 @@
 				p = s("./src/reddit/controls/Dropdown/index.tsx"),
 				b = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				h = s("./src/reddit/controls/FormFields/index.tsx"),
-				g = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				f = s("./src/reddit/controls/Typography/index.tsx"),
-				x = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				E = s("./src/reddit/icons/svgs/Circle/index.tsx"),
-				v = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				C = s("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				_ = s("./node_modules/lodash/range.js"),
-				k = s.n(_),
-				O = s("./src/reddit/controls/Button/index.tsx"),
-				y = s("./src/reddit/layout/row/Inline/index.tsx"),
-				j = s("./src/reddit/models/Flair/index.ts"),
-				w = s("./src/reddit/selectors/tooltip.ts"),
-				S = s("./src/reddit/components/Settings/shared/Widgets.m.less"),
-				I = s.n(S),
-				N = s("./src/lib/lessComponent.tsx");
+				g = s("./src/lib/lessComponent.tsx"),
+				f = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				x = s("./src/reddit/controls/Select/index.m.less"),
+				E = s.n(x);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -20031,7 +20024,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var P = function(e, t) {
+			var C = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -20040,15 +20033,67 @@
 				}
 				return s
 			};
-			const M = Object(l.a)(p.a),
-				R = N.a.wrapped(E.a, "Circle", I.a),
-				L = N.a.h3("Label", I.a),
-				A = N.a.wrapped(f.c, "Subtext", I.a),
-				F = N.a.wrapped(m.a, "HoverTooltip", I.a),
-				D = N.a.div("ControlContainer", I.a),
-				B = N.a.div("TextContainer", I.a),
-				U = N.a.div("ActionContainer", I.a),
-				H = e => {
+			const _ = g.a.span("Wrapper", E.a),
+				k = g.a.select("Inner", E.a),
+				O = g.a.wrapped(f.b, "Caret", E.a);
+
+			function y(e) {
+				var {
+					className: t,
+					innerClassName: s
+				} = e, n = C(e, ["className", "innerClassName"]);
+				const a = n.disabled ? {
+					"data-disabled": n.disabled
+				} : {};
+				return o.a.createElement(_, {
+					className: t
+				}, o.a.createElement(k, v({
+					className: s
+				}, n)), o.a.createElement(O, v({
+					isSubreddit: !0
+				}, a)))
+			}
+			var j = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				w = s("./src/reddit/controls/Typography/index.tsx"),
+				S = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				I = s("./src/reddit/icons/svgs/Circle/index.tsx"),
+				N = s("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				T = s("./node_modules/lodash/range.js"),
+				P = s.n(T),
+				M = s("./src/reddit/controls/Button/index.tsx"),
+				R = s("./src/reddit/layout/row/Inline/index.tsx"),
+				L = s("./src/reddit/models/Flair/index.ts"),
+				A = s("./src/reddit/selectors/tooltip.ts"),
+				F = s("./src/reddit/components/Settings/shared/Widgets.m.less"),
+				D = s.n(F);
+
+			function B() {
+				return (B = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var U = function(e, t) {
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+			const H = Object(l.a)(p.a),
+				W = g.a.wrapped(I.a, "Circle", D.a),
+				V = g.a.h3("Label", D.a),
+				q = g.a.wrapped(w.c, "Subtext", D.a),
+				G = g.a.wrapped(m.a, "HoverTooltip", D.a),
+				K = g.a.div("ControlContainer", D.a),
+				z = g.a.div("TextContainer", D.a),
+				Q = g.a.div("ActionContainer", D.a),
+				J = e => {
 					var {
 						className: t,
 						direction: s,
@@ -20056,85 +20101,85 @@
 						disabled: a,
 						indent: r,
 						last: d
-					} = e, l = P(e, ["className", "direction", "inModal", "disabled", "indent", "last"]);
-					return o.a.createElement("div", T({}, l, {
-						className: Object(i.a)(I.a.Wrapper, t, {
-							[I.a.mColumn]: "column" === s,
-							[I.a.mDisabled]: !!a,
-							[I.a.mIndent]: !!r,
-							[I.a.mLast]: !!d,
-							[I.a.isCreateCommunity]: l.isCreateCommunity,
-							[I.a.inModal]: !!n
+					} = e, l = U(e, ["className", "direction", "inModal", "disabled", "indent", "last"]);
+					return o.a.createElement("div", B({}, l, {
+						className: Object(i.a)(D.a.Wrapper, t, {
+							[D.a.mColumn]: "column" === s,
+							[D.a.mDisabled]: !!a,
+							[D.a.mIndent]: !!r,
+							[D.a.mLast]: !!d,
+							[D.a.isCreateCommunity]: l.isCreateCommunity,
+							[D.a.inModal]: !!n
 						})
 					}))
 				},
-				W = N.a.a("Link", I.a),
-				V = N.a.wrapped(W, "SubtextLink", I.a),
-				q = N.a.wrapped(C.a, "LinkIcon", I.a),
-				G = N.a.button("LinkButton", I.a),
-				K = N.a.wrapped(x.a, "ArrowRight", I.a),
-				z = e => o.a.createElement(H, {
+				X = g.a.a("Link", D.a),
+				Z = g.a.wrapped(X, "SubtextLink", D.a),
+				Y = g.a.wrapped(N.a, "LinkIcon", D.a),
+				$ = g.a.button("LinkButton", D.a),
+				ee = g.a.wrapped(S.a, "ArrowRight", D.a),
+				te = e => o.a.createElement(J, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					isCreateCommunity: e.isCreateCommunity,
 					last: e.last
-				}, o.a.createElement(B, {
+				}, o.a.createElement(z, {
 					className: e.textContainerClassName
-				}, o.a.createElement(L, null, e.label, e.isRequired && o.a.createElement(R, null)), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, e.children)),
-				Q = N.a.div("StyledFlair", I.a),
-				J = N.a.wrapped(Q, "SpoilerFlair", I.a),
-				X = N.a.wrapped(Q, "NSFWFlair", I.a),
-				Z = e => {
+				}, o.a.createElement(V, null, e.label, e.isRequired && o.a.createElement(W, null)), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, e.children)),
+				se = g.a.div("StyledFlair", D.a),
+				ne = g.a.wrapped(se, "SpoilerFlair", D.a),
+				oe = g.a.wrapped(se, "NSFWFlair", D.a),
+				ae = e => {
 					switch (e.flair) {
-						case j.f.Nsfw:
-							return o.a.createElement(X, null, "NSFW");
-						case j.f.Spoiler:
-							return o.a.createElement(J, null, "SPOILER");
+						case L.f.Nsfw:
+							return o.a.createElement(oe, null, "NSFW");
+						case L.f.Spoiler:
+							return o.a.createElement(ne, null, "SPOILER");
 						default:
 							return null
 					}
 				},
-				Y = e => o.a.createElement(H, {
+				re = e => o.a.createElement(J, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, o.a.createElement(B, null, o.a.createElement(y.a, null, o.a.createElement(L, null, e.label)), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, o.a.createElement(D, null, e.tooltip && o.a.createElement(F, {
+				}, o.a.createElement(z, null, o.a.createElement(R.a, null, o.a.createElement(V, null, e.label)), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, o.a.createElement(K, null, e.tooltip && o.a.createElement(G, {
 					tooltipContentClass: e.tooltipContentClassName,
 					text: e.tooltip
-				}), o.a.createElement(g.a, {
+				}), o.a.createElement(j.a, {
 					on: e.on,
 					onToggle: e.onClick,
 					disabled: e.disabled
 				})))),
-				$ = N.a.input("RangeSliderInput", I.a),
-				ee = N.a.div("RangeSlider", I.a),
-				te = N.a.div("Ticks", I.a),
-				se = N.a.div("TickText", I.a),
-				ne = N.a.div("PreSubText", I.a),
-				oe = e => o.a.createElement(H, {
+				ie = g.a.input("RangeSliderInput", D.a),
+				de = g.a.div("RangeSlider", D.a),
+				le = g.a.div("Ticks", D.a),
+				ce = g.a.div("TickText", D.a),
+				me = g.a.div("PreSubText", D.a),
+				ue = e => o.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
 					inModal: e.inModal,
 					direction: e.direction
-				}, o.a.createElement(B, {
+				}, o.a.createElement(z, {
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && o.a.createElement(y.a, null, o.a.createElement(L, null, e.label)), o.a.createElement(A, null, " ", o.a.createElement(ne, {
+				}, !e.inModal && o.a.createElement(R.a, null, o.a.createElement(V, null, e.label)), o.a.createElement(q, null, " ", o.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), o.a.createElement(U, {
+				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), o.a.createElement(Q, {
 					style: {
 						flex: 3,
 						margin: "20px 20px 0 0"
 					}
-				}, o.a.createElement(ee, null, o.a.createElement($, {
+				}, o.a.createElement(de, null, o.a.createElement(ie, {
 					style: {
-						background: "linear-gradient(to right, " + k()(1, e.max + 1).map((t, s) => t <= e.value ? "".concat(e.ticks[e.value].color, " ").concat((t - 1) / e.max * 100, "%,\n                    ").concat(e.ticks[e.value].color, " ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : t !== e.max ? "#c5c5c5 ".concat((t - 1) / e.max * 100, "%, #c5c5c5 ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : "#c5c5c5 ".concat((t - 1) / e.max * 100, "%")) + ", #C5C5C5 100%)"
+						background: "linear-gradient(to right, " + P()(1, e.max + 1).map((t, s) => t <= e.value ? "".concat(e.ticks[e.value].color, " ").concat((t - 1) / e.max * 100, "%,\n                    ").concat(e.ticks[e.value].color, " ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : t !== e.max ? "#c5c5c5 ".concat((t - 1) / e.max * 100, "%, #c5c5c5 ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : "#c5c5c5 ".concat((t - 1) / e.max * 100, "%")) + ", #C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -20144,85 +20189,116 @@
 					value: e.value,
 					onChange: e.onChange,
 					onInput: e.onChange
-				}), o.a.createElement(te, null, Object.keys(e.ticks).map((t, s) => o.a.createElement(se, {
+				}), o.a.createElement(le, null, Object.keys(e.ticks).map((t, s) => o.a.createElement(ce, {
 					key: t,
 					style: {
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text)))))),
-				ae = e => o.a.createElement(H, {
+				pe = e => o.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, o.a.createElement(B, null, o.a.createElement(y.a, null, o.a.createElement(L, null, e.label)), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, o.a.createElement(D, null, o.a.createElement(O.i, {
+				}, o.a.createElement(z, null, o.a.createElement(R.a, null, o.a.createElement(V, null, e.label)), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, o.a.createElement(K, null, o.a.createElement(M.i, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				re = e => o.a.createElement(H, {
+				be = e => o.a.createElement(J, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, o.a.createElement(B, null, o.a.createElement(W, {
+				}, o.a.createElement(z, null, o.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, o.a.createElement(q, null)), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, o.a.createElement(W, {
+				}, e.label, o.a.createElement(Y, null)), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, o.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, o.a.createElement(K, null)))),
-				ie = e => o.a.createElement(H, {
+				}, o.a.createElement(ee, null)))),
+				he = e => o.a.createElement(J, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, o.a.createElement(B, null, o.a.createElement(G, {
+				}, o.a.createElement(z, null, o.a.createElement($, {
 					onClick: e.onClick
-				}, e.label), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, o.a.createElement(G, {
+				}, e.label), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, o.a.createElement($, {
 					onClick: e.onClick
-				}, o.a.createElement(K, null)))),
-				de = N.a.div("DropdownWrapper", I.a),
-				le = N.a.wrapped(b.b, "DropdownRow", I.a),
-				ce = N.a.span("Row", I.a),
-				me = N.a.wrapped(v.b, "DropdownTriangle", I.a),
-				ue = N.a.div("DescriptionsRow", I.a),
-				pe = Object(r.c)({
-					isOpen: (e, t) => Object(w.b)(t.id)(e)
+				}, o.a.createElement(ee, null)))),
+				ge = g.a.div("DropdownWrapper", D.a),
+				fe = g.a.wrapped(b.b, "DropdownRow", D.a),
+				xe = g.a.span("Row", D.a),
+				Ee = g.a.wrapped(f.b, "DropdownTriangle", D.a),
+				ve = g.a.div("DescriptionsRow", D.a),
+				Ce = Object(r.c)({
+					isOpen: (e, t) => Object(A.b)(t.id)(e)
 				}),
-				be = Object(a.b)(pe, (e, t) => ({
+				_e = Object(a.b)(Ce, (e, t) => ({
 					openDropdown: () => {
 						e(Object(d.h)({
 							tooltipId: t.id
 						}))
 					}
-				}))(e => o.a.createElement(H, {
+				}))(e => o.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, o.a.createElement(B, null, o.a.createElement(L, null, e.label), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, (e => o.a.createElement(de, {
+				}, o.a.createElement(z, null, o.a.createElement(V, null, e.label), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, (e => o.a.createElement(ge, {
 					onClick: e.openDropdown
-				}, o.a.createElement(ce, {
+				}, o.a.createElement(xe, {
 					id: "".concat("SettingDropdown--").concat(e.id)
-				}, e.selected), o.a.createElement(me, null), o.a.createElement(M, {
+				}, e.selected), o.a.createElement(Ee, null), o.a.createElement(H, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
 					isOverlay: !1,
 					tooltipId: "".concat("SettingDropdown--").concat(e.id)
-				}, e.items.map((t, s) => o.a.createElement(le, {
+				}, e.items.map((t, s) => o.a.createElement(fe, {
 					displayText: t,
 					isSelected: e.selected === t,
 					onClick: () => e.onClick(t),
 					key: s
-				}))), e.descriptions && o.a.createElement(ue, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
-				he = e => o.a.createElement(H, {
+				}))), e.descriptions && o.a.createElement(ve, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
+				ke = e => {
+					var {
+						disabled: t,
+						last: s,
+						onChange: a
+					} = e, r = U(e, ["disabled", "last", "onChange"]);
+					const i = Object(n.useCallback)(e => a(e.target.value), [a]);
+					return o.a.createElement(J, {
+						disabled: t
+					}, o.a.createElement(z, null, o.a.createElement(V, null, r.label), o.a.createElement(q, null, r.subtext)), o.a.createElement("div", {
+						className: D.a.Wrapper__LineBreak
+					}), o.a.createElement(J, {
+						last: s,
+						indent: !0,
+						disabled: t
+					}, o.a.createElement(y, {
+						className: "redditStyle",
+						disabled: t || r.inputDisabled,
+						onChange: i,
+						value: r.selected
+					}, r.items.map(e => {
+						let {
+							value: t,
+							text: s
+						} = e;
+						return o.a.createElement("option", {
+							key: t,
+							value: t
+						}, s)
+					}))))
+				},
+				Oe = e => o.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, o.a.createElement(B, null, o.a.createElement(L, null, e.label), o.a.createElement(A, null, e.subtext)), o.a.createElement(U, null, e.children)),
-				ge = e => o.a.createElement(z, {
+				}, o.a.createElement(z, null, o.a.createElement(V, null, e.label), o.a.createElement(q, null, e.subtext)), o.a.createElement(Q, null, e.children)),
+				ye = e => o.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -20241,7 +20317,7 @@
 					maxChars: e.maxChars,
 					text: e.value
 				})),
-				fe = e => o.a.createElement(z, {
+				je = e => o.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -20261,12 +20337,12 @@
 					value: e.value,
 					onBlur: e.onBlur
 				}), o.a.createElement("div", {
-					className: I.a.MultiLineInputSettingsBottomRow
+					className: D.a.MultiLineInputSettingsBottomRow
 				}, !e.hideCountdown && o.a.createElement(c.a, {
 					maxChars: e.maxChars,
 					text: e.value || ""
 				}), !!e.actionLink && o.a.createElement("div", {
-					className: I.a.ActionLinkContainer
+					className: D.a.ActionLinkContainer
 				}, e.actionLink)))
 		},
 		"./src/reddit/components/ShareMenu/index.m.less": function(e, t, s) {
@@ -20587,12 +20663,12 @@
 						hk: "byVoG"
 					})), a.a.createElement("div", {
 						className: O.a.formBody
-					}, a.a.createElement(p.n, {
+					}, a.a.createElement(p.o, {
 						on: t,
 						label: n.fbt._("Is Enabled:", null, {
 							hk: "3nJuI1"
 						})
-					}), a.a.createElement(p.j, {
+					}), a.a.createElement(p.k, {
 						label: n.fbt._("Max Streams:", null, {
 							hk: "4iD2Qm"
 						}),
@@ -20605,7 +20681,7 @@
 						min: 0,
 						max: 1e3,
 						value: s
-					})), a.a.createElement(p.j, {
+					})), a.a.createElement(p.k, {
 						label: n.fbt._("Min Karma:", null, {
 							hk: "3A0HeV"
 						}),
@@ -20617,7 +20693,7 @@
 						type: "number",
 						min: 0,
 						value: o
-					})), a.a.createElement(p.j, {
+					})), a.a.createElement(p.k, {
 						label: n.fbt._("Min Account Age:", null, {
 							hk: "48vjNT"
 						}),
@@ -20629,7 +20705,7 @@
 						min: 0,
 						type: "number",
 						value: r
-					})), a.a.createElement(p.j, {
+					})), a.a.createElement(p.k, {
 						label: n.fbt._("Duration limit(seconds):", null, {
 							hk: "1qYFbP"
 						}),
@@ -20642,7 +20718,7 @@
 						min: 0,
 						max: 86400,
 						value: i
-					})), a.a.createElement(p.j, {
+					})), a.a.createElement(p.k, {
 						label: n.fbt._("Whitelisted Users:", null, {
 							hk: "22mRdu"
 						}),
@@ -24211,6 +24287,17 @@
 				}, [n.fbt._plural(e, "number", Object(i.b)(e))], {
 					hk: "3bVMk9"
 				}))
+		},
+		"./src/reddit/controls/Select/index.m.less": function(e, t, s) {
+			e.exports = {
+				Wrapper: "DuuuuIp9EubfvJyrdxytL",
+				wrapper: "DuuuuIp9EubfvJyrdxytL",
+				Caret: "_8fOXBcWxu_c3tlrAKMR3R",
+				caret: "_8fOXBcWxu_c3tlrAKMR3R",
+				Inner: "_3-_epznhOfLDNH3-plYM6l",
+				inner: "_3-_epznhOfLDNH3-plYM6l",
+				redditStyle: "_2PDExzXmSTOdxzNjRB1Pww"
+			}
 		},
 		"./src/reddit/controls/Sortable/index.tsx": function(e, t, s) {
 			"use strict";
@@ -28333,7 +28420,7 @@
 						})))
 					}), b.name && a.a.createElement(me, {
 						language: r
-					}, b.name), a.a.createElement(w.j, {
+					}, b.name), a.a.createElement(w.k, {
 						isRequired: !0,
 						label: n.fbt._("Topics", null, {
 							hk: "2iixv1"
@@ -28364,7 +28451,7 @@
 						value: this.state.description
 					}), b.publicDescription && a.a.createElement(me, {
 						language: r
-					}, b.publicDescription), a.a.createElement(w.j, {
+					}, b.publicDescription), a.a.createElement(w.k, {
 						label: n.fbt._("Community type", null, {
 							hk: "152EhZ"
 						}),
@@ -28855,4 +28942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.83002016b83f719dd2ff.js.map
+//# sourceMappingURL=ModerationPages.069b536c824586e46020.js.map

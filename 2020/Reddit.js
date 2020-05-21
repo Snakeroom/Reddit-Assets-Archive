@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ed1ee7f817f2233e12c6.js
-// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9736dffde958ec932da5.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -530,7 +530,7 @@
 			const u = a()(l.c),
 				p = () => async (e, t) => {
 					const s = t();
-					u(), Object(m.a)(s) && (await e(Object(i.x)()), Object(m.a)(t()) && e(Object(o.d)({
+					u(), Object(m.a)(s) && (await e(Object(i.z)()), Object(m.a)(t()) && e(Object(o.d)({
 						notificationBannerId: c.a.EmailCollectionBannerId
 					})))
 				}, h = () => async (e, t) => {
@@ -987,7 +987,7 @@
 				S = s("./src/reddit/selectors/user.ts");
 			const w = e => async (t, s) => {
 				await t(Object(v.r)());
-				const w = [t(Object(b.x)(!0)), t(Object(m.a)())];
+				const w = [t(Object(b.z)(!0)), t(Object(m.a)())];
 				s().economics.paymentSystems.status === O.a.NotFetched && w.push(t(Object(l.a)())), await Promise.all(w); {
 					const e = s();
 					if (!Object(S.H)(e)) return Object(x.a)(t, e)
@@ -1328,7 +1328,7 @@
 							}, $)
 						})
 					},
-					onTwoFactorChanged: () => e(Object(T.x)(!1)),
+					onTwoFactorChanged: () => e(Object(T.z)(!1)),
 					onSSOLinkSuccess: (t, s, n) => {
 						e(A({
 							linkedIdentity: s
@@ -5683,7 +5683,7 @@
 					nightmode: Vt.S,
 					url: ns.r
 				}), e => ({
-					toggleNightmode: t => e(Object(T.w)(t)),
+					toggleNightmode: t => e(Object(T.y)(t)),
 					onOptIntoRedesign: () => e(Object(oc.a)()),
 					onOptOutOfRedesign: () => {
 						"new.reddit.com" !== window.location.host ? (Ze.a.get("rseor3") && Ze.a.remove("rseor3", {
@@ -5921,7 +5921,7 @@
 					closeChangeUsernameTooltip: () => e(Object(Fo.d)()),
 					closeEmailVerificationTooltip: () => e(Object(Uo.b)()),
 					onChatClick: () => e(Object(Do.d)()),
-					onDismissCustomizeFlyout: () => e(Object(T.s)()),
+					onDismissCustomizeFlyout: () => e(Object(T.t)()),
 					onOpenModerationDropdown: () => e(Object(xr.h)({
 						tooltipId: Ac.a
 					})),
@@ -10377,7 +10377,7 @@
 				jt = s("./src/reddit/actions/preferences.ts"),
 				kt = s("./src/reddit/constants/cookie.ts"),
 				_t = s("./src/reddit/constants/preferences.ts");
-			const Mt = new Set([jt.f, jt.h, U.b, jt.c, jt.n, wt.d, wt.e, jt.q]);
+			const Mt = new Set([jt.f, jt.i, U.b, jt.c, jt.o, wt.d, wt.e, jt.r]);
 			var It = e => t => s => {
 					const n = t(s);
 					if (Mt.has(s.type)) {
@@ -11508,7 +11508,7 @@
 				C = s("./src/reddit/actions/emailVerification.ts");
 			var v = {
 					action: e => async (t, s) => {
-						await t(u.x());
+						await t(u.z());
 						const n = s(),
 							a = e.params.verificationToken,
 							r = e.queryParams && e.queryParams.source;
@@ -12858,4 +12858,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.ed1ee7f817f2233e12c6.js.map
+//# sourceMappingURL=Reddit.9736dffde958ec932da5.js.map

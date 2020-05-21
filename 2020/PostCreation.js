@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.82312e8d6edb4e4dd6ab.js
-// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bc5ae61a2dc3c5513311.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "ea5455c-production"
+					SENTRY_RELEASE_VERSION: "f68a954-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -25500,25 +25500,49 @@
 		"./src/reddit/icons/svgs/Dropdown/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return d
 			}));
+			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/icons/svgs/Dropdown/index.m.less"),
 				a = n.n(i);
-			const c = e => o.a.createElement("svg", {
-				className: Object(r.a)(e.className, a.a.dropdown, {
-					[a.a.mRedditStyle]: !e.isSubreddit
-				}),
-				style: e.style,
-				onClick: e.onClick,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("path", {
-				d: "M14.17,9.35,10,13.53,5.83,9.35a.5.5,0,0,1,.35-.85h7.64a.5.5,0,0,1,.35.85"
-			}));
-			t.b = c
+
+			function c() {
+				return (c = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var l = function(e, t) {
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (s = Object.getOwnPropertySymbols(e); o < s.length; o++) t.indexOf(s[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[o]) && (n[s[o]] = e[s[o]])
+				}
+				return n
+			};
+			const d = e => {
+				var {
+					className: t,
+					isSubreddit: n
+				} = e, s = l(e, ["className", "isSubreddit"]);
+				return o.a.createElement("svg", c({
+					className: Object(r.a)(a.a.dropdown, {
+						[a.a.mRedditStyle]: !n
+					}, t),
+					viewBox: "0 0 20 20",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, s), o.a.createElement("path", {
+					d: "M14.17,9.35,10,13.53,5.83,9.35a.5.5,0,0,1,.35-.85h7.64a.5.5,0,0,1,.35.85"
+				}))
+			};
+			t.b = d
 		},
 		"./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -31541,4 +31565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.82312e8d6edb4e4dd6ab.js.map
+//# sourceMappingURL=PostCreation.bc5ae61a2dc3c5513311.js.map

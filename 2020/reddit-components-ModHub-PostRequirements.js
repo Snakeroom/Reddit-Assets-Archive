@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.bb8a8f318e4a746c4bac.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.2ccd76ce705682a5de0f.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -224,7 +224,7 @@
 				K = n("./src/reddit/featureFlags/component.tsx"),
 				$ = n("./src/reddit/components/ModHub/PostRequirements/index.m.less"),
 				ee = n.n($);
-			const te = Z.a.wrapped(z.n, "toggleSetting", ee.a),
+			const te = Z.a.wrapped(z.o, "toggleSetting", ee.a),
 				ne = Object(K.a)("newPostRequirements", d.a.Fragment),
 				se = () => d.a.createElement("a", {
 					className: ee.a.externalLink,
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-PostRequirements.bb8a8f318e4a746c4bac.js.map
+//# sourceMappingURL=reddit-components-ModHub-PostRequirements.2ccd76ce705682a5de0f.js.map

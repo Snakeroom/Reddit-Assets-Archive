@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.dcb21ecb7dfc3893f8b1.js
-// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.d33b6dd08afdc953e10a.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "ea5455c-production"
+					SENTRY_RELEASE_VERSION: "f68a954-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -964,7 +964,7 @@
 				},
 				totalLiveWatchers: y.m
 			}), (e, t) => ({
-				onHideRpanUnit: () => e(Object(l.B)(t.listingName)),
+				onHideRpanUnit: () => e(Object(l.D)(t.listingName)),
 				openOverlay: t => e(Object(p.a)(t)),
 				subscribeConfig: () => e(u.a.subscribeConfig(t.listingName)),
 				subscribeStats: t => e(u.a.subscribeStats(t)),
@@ -1477,4 +1477,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.dcb21ecb7dfc3893f8b1.js.map
+//# sourceMappingURL=RpanListingUnit.d33b6dd08afdc953e10a.js.map

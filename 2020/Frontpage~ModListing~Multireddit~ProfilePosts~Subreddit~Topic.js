@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.9f2654498b0f7573024c.js
-// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2e43d3ff893f68b32340.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -234,7 +234,7 @@
 					redditStyle: g.A
 				}),
 				I = Object(a.b)(M, e => ({
-					onListingLayoutChange: (t, s) => e(Object(m.v)(t, s)),
+					onListingLayoutChange: (t, s) => e(Object(m.x)(t, s)),
 					openDropdown: () => e(Object(p.h)({
 						tooltipId: k
 					}))
@@ -1294,4 +1294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.9f2654498b0f7573024c.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2e43d3ff893f68b32340.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.0b652d6f6755d4fe03b2.js
-// Retrieved at 5/20/2020, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.a38b070f50fd6213e994.js
+// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -122,7 +122,7 @@
 						postId: t.id,
 						showSubreddit: !0,
 						crowdControlPreview: !0
-					})), r.a.createElement(v.h, {
+					})), r.a.createElement(v.i, {
 						direction: "column",
 						inModal: !0,
 						ticks: _,
@@ -444,4 +444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal.0b652d6f6755d4fe03b2.js.map
+//# sourceMappingURL=CrowdControlModal.a38b070f50fd6213e994.js.map
