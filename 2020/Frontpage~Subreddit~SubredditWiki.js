@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.5a6e16ecb579f3529989.js
-// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.39d8c88bde273450ee32.js
+// Retrieved at 5/21/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -276,8 +276,8 @@
 					isSubredditPage: e => Object(x.q)(e) === O.yb.SUBREDDIT
 				}),
 				N = Object(l.b)(C),
-				B = _.a.wrapped(b.a, "BannerAd", S.a),
-				j = _.a.wrapped(f.a, "ThemedWidget", S.a),
+				j = _.a.wrapped(b.a, "BannerAd", S.a),
+				B = _.a.wrapped(f.a, "ThemedWidget", S.a),
 				w = _.a.div("SidebarAdPlaceholder", S.a),
 				A = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === u.a.dfpRefreshSlotTestSubreddit && e === O.c.BELOW_THE_FOLD),
 				I = (e, t, s, n, r) => {
@@ -320,7 +320,7 @@
 							removeSidebarSpacer: a
 						} = this.props,
 						i = a ? d.a.Fragment : h.a;
-					return d.a.createElement(i, null, d.a.createElement(j, {
+					return d.a.createElement(i, null, d.a.createElement(B, {
 						className: n,
 						contentOnly: !0,
 						redditStyle: r
@@ -352,7 +352,7 @@
 					} = this.props, x = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
 					}), v = y ? d.a.Fragment : h.a;
-					return b || t || !k(s) && f ? d.a.createElement(v, null, d.a.createElement(j, {
+					return b || t || !k(s) && f ? d.a.createElement(v, null, d.a.createElement(B, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: u
@@ -368,7 +368,7 @@
 						listingName: o,
 						placement: c,
 						placementIndex: a
-					})) : d.a.createElement(v, null, d.a.createElement(j, {
+					})) : d.a.createElement(v, null, d.a.createElement(B, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: u
@@ -378,7 +378,7 @@
 						listingName: o,
 						placement: c,
 						placementIndex: a
-					}), d.a.createElement(B, {
+					}), d.a.createElement(j, {
 						id: I(c, g, o, r, a),
 						isRefreshableAd: A(c, g, o),
 						sizes: l,
@@ -764,7 +764,7 @@
 		"./src/reddit/components/Widgets/CommunityList/SubredditList.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return B
+				return j
 			})), s.d(t, "a", (function() {
 				return w
 			}));
@@ -810,7 +810,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const B = e => a.a.createElement(f.a, {
+			const j = e => a.a.createElement(f.a, {
 					className: Object(d.a)(C.a.Container, e.className),
 					noGradient: !0,
 					styles: e.widget && e.widget.styles,
@@ -845,10 +845,10 @@
 					className: C.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
-				j = Object(c.c)({
+				B = Object(c.c)({
 					hideNSFWPref: b.z
 				}),
-				w = Object(i.b)(j)(e => a.a.createElement("div", {
+				w = Object(i.b)(B)(e => a.a.createElement("div", {
 					className: C.a.communityItemContainer
 				}, a.a.createElement(S.a, {
 					widthRight: g.t
@@ -1045,9 +1045,9 @@
 			const o = e => r.e[Object(a.N)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.B
-				}) === n.I.Treatment
+					experimentName: n.z
+				}) === n.G.Treatment
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.5a6e16ecb579f3529989.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.39d8c88bde273450ee32.js.map

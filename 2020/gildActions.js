@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.86e9e5bbfc8f6a799a4a.js
-// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.7dba607655b03ad4cd57.js
+// Retrieved at 5/21/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -11,9 +11,9 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return D
-			})), s.d(t, "setIncludeMessage", (function() {
 				return U
+			})), s.d(t, "setIncludeMessage", (function() {
+				return D
 			})), s.d(t, "updateMessage", (function() {
 				return B
 			})), s.d(t, "gildGqlRequested", (function() {
@@ -25,9 +25,9 @@
 			})), s.d(t, "gildFailed", (function() {
 				return z
 			})), s.d(t, "gildSuccessful", (function() {
-				return W
-			})), s.d(t, "awardKarmaUpdated", (function() {
 				return X
+			})), s.d(t, "awardKarmaUpdated", (function() {
+				return W
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
@@ -87,8 +87,8 @@
 				L = s("./src/reddit/helpers/trackers/gild.ts"),
 				R = s("./src/telemetry/index.ts"),
 				M = s("./src/reddit/actions/gold/constants.ts");
-			const D = Object(a.a)(M.q),
-				U = Object(a.a)(M.p),
+			const U = Object(a.a)(M.q),
+				D = Object(a.a)(M.p),
 				B = Object(a.a)(M.t),
 				F = (e, t) => async (s, a, n) => {
 					let {
@@ -129,7 +129,7 @@
 									awardings: d,
 									treatmentTags: c
 								} = a;
-							await s(W({
+							await s(X({
 								awardId: i.selectedAward.id,
 								awardings: d,
 								awardKarmaReceived: r.awardKarmaReceived,
@@ -182,7 +182,7 @@
 						gildee: c,
 						subredditId: o && o.id
 					}))
-				}, W = e => async (t, s) => {
+				}, X = e => async (t, s) => {
 					const a = s(),
 						{
 							awardId: o,
@@ -212,7 +212,7 @@
 					}
 					if (t(V(a, e)), _ && _.displayName) {
 						const e = _.awarderKarma + p;
-						t(X({
+						t(W({
 							userName: _.displayName,
 							awarderKarma: e
 						}))
@@ -248,7 +248,7 @@
 					q.length && setTimeout(() => t(Object(d.h)({
 						packageId: q[0].mobileId
 					})), T ? 600 : 10)
-				}, X = Object(a.a)(M.a)
+				}, W = Object(a.a)(M.a)
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
 			"use strict";
@@ -408,11 +408,11 @@
 			const d = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: n.H,
-					experimentName: r.W
+					experimentName: r.U
 				});
-				return !(!t || Object(r.tc)(t))
+				return !(!t || Object(r.rc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.86e9e5bbfc8f6a799a4a.js.map
+//# sourceMappingURL=gildActions.7dba607655b03ad4cd57.js.map
