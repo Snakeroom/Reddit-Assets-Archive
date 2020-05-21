@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.8f2ee7311b41752ce471.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.ae1b4b6ee65e1a99bf30.js
+// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -87,7 +87,7 @@
 				Y = r.n(q);
 			const {
 				fbt: V
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), z = g.a.wrapped(B.a, "BanIcon", Y.a), W = g.a.wrapped(S.a, "MuteIcon", Y.a), G = g.a.wrapped(Z.a, "UnbanIcon", Y.a), J = Object(o.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = g.a.wrapped(B.a, "BanIcon", Y.a), z = g.a.wrapped(S.a, "MuteIcon", Y.a), G = g.a.wrapped(Z.a, "UnbanIcon", Y.a), J = Object(o.c)({
 				hasModMailPermissions: Object(m.a)(D.c.mail),
 				isUserBanned: (e, t) => !!Object(R.g)(e, {
 					subredditId: t.subredditId,
@@ -126,14 +126,14 @@
 						onClick: () => {
 							d(), o(H.a(t))
 						}
-					}, a.a.createElement(z, null), V._("Ban User", null, {
+					}, a.a.createElement(W, null), V._("Ban User", null, {
 						hk: "3OhuLx"
 					})), r && a.a.createElement(F.a, {
 						role: "button",
 						onClick: () => {
 							i(), o(H.d(t))
 						}
-					}, a.a.createElement(W, null), V._("Mute User", null, {
+					}, a.a.createElement(z, null), V._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
@@ -850,9 +850,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: s.H,
-					experimentName: n.Y
+					experimentName: n.W
 				});
-				return !(!t || Object(n.vc)(t))
+				return !(!t || Object(n.tc)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
@@ -1021,4 +1021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.8f2ee7311b41752ce471.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.ae1b4b6ee65e1a99bf30.js.map

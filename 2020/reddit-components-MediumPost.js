@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.95d42a972c5d52e7d7cf.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8fca0b52a5a0b633ff5d.js
+// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -957,7 +957,7 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				n = r("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(n.E)(e) || s.v.Treatment1 === Object(o.c)(e, {
+				return Object(n.E)(e) || s.u.Treatment1 === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: s.m
 				})
@@ -973,11 +973,11 @@
 			const n = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.X
+					experimentName: s.V
 				});
-				return !(!t || Object(s.vc)(t))
+				return !(!t || Object(s.tc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.95d42a972c5d52e7d7cf.js.map
+//# sourceMappingURL=reddit-components-MediumPost.8fca0b52a5a0b633ff5d.js.map

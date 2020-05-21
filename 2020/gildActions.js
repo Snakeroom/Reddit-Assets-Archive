@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.fe0a11ccf9aed565aea8.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.86e9e5bbfc8f6a799a4a.js
+// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -25,9 +25,9 @@
 			})), s.d(t, "gildFailed", (function() {
 				return z
 			})), s.d(t, "gildSuccessful", (function() {
-				return X
-			})), s.d(t, "awardKarmaUpdated", (function() {
 				return W
+			})), s.d(t, "awardKarmaUpdated", (function() {
+				return X
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
@@ -129,7 +129,7 @@
 									awardings: d,
 									treatmentTags: c
 								} = a;
-							await s(X({
+							await s(W({
 								awardId: i.selectedAward.id,
 								awardings: d,
 								awardKarmaReceived: r.awardKarmaReceived,
@@ -182,7 +182,7 @@
 						gildee: c,
 						subredditId: o && o.id
 					}))
-				}, X = e => async (t, s) => {
+				}, W = e => async (t, s) => {
 					const a = s(),
 						{
 							awardId: o,
@@ -212,7 +212,7 @@
 					}
 					if (t(V(a, e)), _ && _.displayName) {
 						const e = _.awarderKarma + p;
-						t(W({
+						t(X({
 							userName: _.displayName,
 							awarderKarma: e
 						}))
@@ -248,7 +248,7 @@
 					q.length && setTimeout(() => t(Object(d.h)({
 						packageId: q[0].mobileId
 					})), T ? 600 : 10)
-				}, W = Object(a.a)(M.a)
+				}, X = Object(a.a)(M.a)
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, s) {
 			"use strict";
@@ -408,11 +408,11 @@
 			const d = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: n.H,
-					experimentName: r.Y
+					experimentName: r.W
 				});
-				return !(!t || Object(r.vc)(t))
+				return !(!t || Object(r.tc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=gildActions.fe0a11ccf9aed565aea8.js.map
+//# sourceMappingURL=gildActions.86e9e5bbfc8f6a799a4a.js.map

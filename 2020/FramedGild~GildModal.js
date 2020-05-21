@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.675366709fe5acbd91f0.js
-// Retrieved at 5/20/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.edf6ff3ca3bd6dc32fe7.js
+// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -23,7 +23,7 @@
 			})), s.d(t, "gildPending", (function() {
 				return X
 			})), s.d(t, "gildFailed", (function() {
-				return W
+				return Q
 			})), s.d(t, "gildSuccessful", (function() {
 				return Y
 			})), s.d(t, "awardKarmaUpdated", (function() {
@@ -144,14 +144,14 @@
 								r = e || t || a.fbt._("An unknown error occurred", null, {
 									hk: "2oAbwZ"
 								});
-							await s(W(r))
+							await s(Q(r))
 						}
 					} catch (l) {
 						const e = l,
 							t = e && e.message || a.fbt._("An unknown error occurred", null, {
 								hk: "2oAbwZ"
 							});
-						await s(W(t))
+						await s(Q(t))
 					} finally {
 						Object(L.b)(L.a.GildingFlow)
 					}
@@ -159,8 +159,8 @@
 					e(U()), window.setTimeout(() => {
 						t().gild.api.pending && e(H())
 					}, 2e3)
-				}, Q = Object(r.a)(R.n), W = e => async (t, s) => {
-					await t(Q(e)), t(Object(c.e)({
+				}, W = Object(r.a)(R.n), Q = e => async (t, s) => {
+					await t(W(e)), t(Object(c.e)({
 						kind: f.b.Error,
 						duration: c.a,
 						text: e
@@ -430,8 +430,8 @@
 				H = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				U = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				X = s("./src/reddit/icons/svgs/Eye/index.tsx"),
-				Q = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				W = s("./src/reddit/helpers/createEmojiText/index.tsx"),
+				W = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				Q = s("./src/reddit/helpers/createEmojiText/index.tsx"),
 				J = s("./src/reddit/icons/fonts/Coin/index.tsx"),
 				z = s("./src/reddit/components/TimeLeft/TimeLeft.tsx");
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -468,7 +468,7 @@
 						className: q.a.price
 					}, a ? F.fbt._("Purchase for ${dollarPrice}", [F.fbt._param("dollarPrice", (e.pennyPrice / 100).toLocaleString())], {
 						hk: "229G45"
-					}) : Object(W.a)(F.fbt._("Spend :coin:{coinPrice}", [F.fbt._param("coinPrice", e.coinPrice.toLocaleString())], {
+					}) : Object(Q.a)(F.fbt._("Spend :coin:{coinPrice}", [F.fbt._param("coinPrice", e.coinPrice.toLocaleString())], {
 						hk: "4aXpIB"
 					}), {
 						":coin:": r.a.createElement(J.a, null)
@@ -596,7 +596,7 @@
 						award: t
 					}), t.awardType === u.f.Moderator ? r.a.createElement("span", {
 						className: q.a.giver
-					}, r.a.createElement(Q.a, {
+					}, r.a.createElement(W.a, {
 						className: q.a.modIcon
 					}), F.fbt._("Given by a Moderator", null, {
 						hk: "2k1UCp"
@@ -665,7 +665,7 @@
 						className: de.a.metaText
 					}, e.pennyPrice ? F.fbt._("Purchase for ${cost}", [F.fbt._param("cost", (e.pennyPrice / 100).toLocaleString())], {
 						hk: "4ypYLM"
-					}) : Object(W.a)(F.fbt._("Spend :coin:{cost}", [F.fbt._param("cost", e.coinPrice.toLocaleString())], {
+					}) : Object(Q.a)(F.fbt._("Spend :coin:{cost}", [F.fbt._param("cost", e.coinPrice.toLocaleString())], {
 						hk: "2FdXrq"
 					}).toString(), {
 						":coin:": r.a.createElement(J.a, null)
@@ -812,7 +812,7 @@
 						className: de.a.awardSectionContainer
 					}, t && r.a.createElement("div", {
 						className: de.a.awardSectionTitle
-					}, r.a.createElement(Q.a, {
+					}, r.a.createElement(W.a, {
 						className: Object(i.a)(de.a.modIcon, de.a.awardSectionIcon)
 					}), pe._("r/{subredditName} Moderator Awards", [pe._param("subredditName", d)], {
 						hk: "4vVQ2A"
@@ -955,7 +955,7 @@
 					const {
 						postOrComment: e
 					} = this.props;
-					return Object(W.a)(F.fbt._("Spend Coins to highlight this {Post or comment} for all to see! :learnMoreLink:", [F.fbt._param("Post or comment", e)], {
+					return Object(Q.a)(F.fbt._("Spend Coins to highlight this {Post or comment} for all to see! :learnMoreLink:", [F.fbt._param("Post or comment", e)], {
 						hk: "2srS0W"
 					}), {
 						":learnMoreLink:": r.a.createElement("a", {
@@ -1685,11 +1685,11 @@
 			const d = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: n.H,
-					experimentName: a.Y
+					experimentName: a.W
 				});
-				return !(!t || Object(a.vc)(t))
+				return !(!t || Object(a.tc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.675366709fe5acbd91f0.js.map
+//# sourceMappingURL=FramedGild~GildModal.edf6ff3ca3bd6dc32fe7.js.map
