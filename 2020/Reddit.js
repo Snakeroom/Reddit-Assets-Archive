@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9736dffde958ec932da5.js
-// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.698d6adb45f466e707bb.js
+// Retrieved at 5/21/2020, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5909,6 +5909,7 @@
 					isEmailVerificationTooltipShowing: e => e.isEmailVerificationTooltipShowing,
 					isModerator: Wt.h,
 					isNameEditable: Vt.J,
+					isResponsiveSettingsEnabled: Eo.a,
 					shouldOpenEmailVerificationTooltip: (e, t) => {
 						let {
 							pageLayer: s
@@ -5973,24 +5974,25 @@
 						isChangeUsernameTooltipShowing: o,
 						isCustomizeFlyoutShowing: i,
 						isEmailVerificationTooltipShowing: c,
-						isModerator: d,
-						isNameEditable: u,
-						language: p,
-						onDismissCustomizeFlyout: h,
-						onOpenUserDropdown: b,
-						openChangeUsernameModal: f,
-						openKeepUsernameModal: C,
-						resendEmail: v,
-						shouldOpenEmailVerificationTooltip: y,
-						toggleChangeEmailModal: P,
-						toggleTooltip: x,
-						unreadNotifications: O,
-						user: E
-					} = this.props, S = !(!O || !O.hasUnreadModmail && !O.hasUnreadOldModmail), w = (e, t) => m.a.createElement(Er.c, {
+						isResponsiveSettingsEnabled: d,
+						isModerator: u,
+						isNameEditable: p,
+						language: h,
+						onDismissCustomizeFlyout: b,
+						onOpenUserDropdown: f,
+						openChangeUsernameModal: C,
+						openKeepUsernameModal: v,
+						resendEmail: y,
+						shouldOpenEmailVerificationTooltip: P,
+						toggleChangeEmailModal: x,
+						toggleTooltip: O,
+						unreadNotifications: E,
+						user: S
+					} = this.props, w = !(!E || !E.hasUnreadModmail && !E.hasUnreadOldModmail), j = (e, t) => m.a.createElement(Er.c, {
 						caretOnTop: !0,
 						tooltipId: e,
 						text: t
-					}), j = E && Object(Gt.e)(E) || "";
+					}), k = S && Object(Gt.e)(S) || "";
 					return m.a.createElement(Bt.a, {
 						id: Hc,
 						ref: e => this.container = e,
@@ -5998,12 +6000,12 @@
 					}, m.a.createElement(Bt.a, {
 						className: Zi.a.headerLinks,
 						id: Uc
-					}, d && m.a.createElement(l.Fragment, null, m.a.createElement("span", {
+					}, u && m.a.createElement(l.Fragment, null, m.a.createElement("span", {
 						className: Zi.a.iconWrapper,
 						id: qc,
 						key: qc,
-						onMouseEnter: () => x(qc),
-						onMouseLeave: () => e === qc && x(qc)
+						onMouseEnter: () => O(qc),
+						onMouseLeave: () => e === qc && O(qc)
 					}, m.a.createElement(qi, {
 						"aria-expanded": e === Ac.a,
 						"aria-haspopup": !0,
@@ -6015,48 +6017,48 @@
 						isOpen: e === Ac.a
 					}, m.a.createElement(zn.a, {
 						className: Object(g.a)(Zi.a.moderateIcon, {
-							[Zi.a.isLit]: S
+							[Zi.a.isLit]: w
 						})
-					})), w(qc, n.fbt._("Moderation", null, {
+					})), j(qc, n.fbt._("Moderation", null, {
 						hk: "4uQPyx"
 					}))), m.a.createElement(Ac.b, {
 						className: Zi.a.moderationDropdown,
 						isOpen: e === Ac.a,
 						key: Ac.a,
-						unreadNotifications: O,
+						unreadNotifications: E,
 						sendEventWithName: this.sendEventWithName
-					})), E && m.a.createElement(l.Fragment, null, m.a.createElement("span", {
+					})), S && m.a.createElement(l.Fragment, null, m.a.createElement("span", {
 						className: Zi.a.iconWrapper,
 						id: Bc,
 						key: Bc,
-						onMouseEnter: () => x(Bc),
-						onMouseLeave: () => e === Bc && x(Bc)
+						onMouseEnter: () => O(Bc),
+						onMouseLeave: () => e === Bc && O(Bc)
 					}, m.a.createElement("a", {
 						className: Zi.a.link,
 						href: "".concat(M.a.redditUrl, "/chat"),
 						onClick: Object(Ao.a)(this.onClickChat)
-					}, m.a.createElement(tc, null)), w(Bc, n.fbt._("Chat", null, {
+					}, m.a.createElement(tc, null)), j(Bc, n.fbt._("Chat", null, {
 						hk: "4nXRWH"
 					}))), m.a.createElement("span", {
 						className: Zi.a.iconWrapper,
 						id: Gc,
 						key: Gc,
-						onMouseEnter: () => x(Gc),
-						onMouseLeave: () => e === Gc && x(Gc)
+						onMouseEnter: () => O(Gc),
+						onMouseLeave: () => e === Gc && O(Gc)
 					}, m.a.createElement("a", {
 						className: Zi.a.link,
-						href: O && O.hasUnreadMail ? "/message/unread" : "/message/inbox",
+						href: E && E.hasUnreadMail ? "/message/unread" : "/message/inbox",
 						onClick: this.onClickMail
 					}, m.a.createElement(rc, {
-						unreadCount: O && O.inboxCount || 0
-					})), w(Gc, n.fbt._("Messages", null, {
+						unreadCount: E && E.inboxCount || 0
+					})), j(Gc, n.fbt._("Messages", null, {
 						hk: "Txokh"
 					}))), m.a.createElement("span", {
 						className: Zi.a.iconWrapper,
 						id: Wc,
 						key: Wc,
-						onMouseEnter: () => x(Wc),
-						onMouseLeave: () => e === Wc && x(Wc)
+						onMouseEnter: () => O(Wc),
+						onMouseLeave: () => e === Wc && O(Wc)
 					}, m.a.createElement("button", {
 						className: Zi.a.link,
 						"aria-label": n.fbt._("Create Post", null, {
@@ -6065,37 +6067,37 @@
 						onClick: this.onClickCreatePost
 					}, m.a.createElement(Xn.a, {
 						className: Zi.a.postIcon
-					})), w(Wc, n.fbt._("Create Post", null, {
+					})), j(Wc, n.fbt._("Create Post", null, {
 						hk: "1TvNGq"
 					}))), m.a.createElement("span", {
 						className: Zi.a.iconWrapper
 					}, m.a.createElement(Ai, null)))), m.a.createElement(Lc, {
 						className: Zi.a.headerUserDropdown,
-						onClick: b,
-						user: E,
+						onClick: f,
+						user: S,
 						sendEventWithName: this.sendEventWithName
 					}), i && m.a.createElement(ac, {
-						onCloseFlyout: h
+						onCloseFlyout: b
 					}), m.a.createElement(ei, {
 						closeTooltip: a,
 						email: r,
-						isOpen: y && c,
-						resendEmail: v,
-						toggleChangeEmailModal: P,
+						isOpen: P && c,
+						resendEmail: y,
+						toggleChangeEmailModal: x,
 						tooltipId: Hc
 					}), m.a.createElement(Qo, {
 						email: r,
-						language: p,
-						shouldOpenTooltip: y
-					}), u && m.a.createElement(l.Fragment, null, m.a.createElement(Vo.a, {
+						language: h,
+						shouldOpenTooltip: P
+					}), p && !d && m.a.createElement(l.Fragment, null, m.a.createElement(Vo.a, {
 						closeTooltip: s,
 						isOpen: o,
-						openChangeUsernameModal: f,
-						openKeepUsernameModal: C,
+						openChangeUsernameModal: C,
+						openKeepUsernameModal: v,
 						tooltipId: Uc,
-						username: j
+						username: k
 					}), m.a.createElement(Wo.a, {
-						username: j
+						username: k
 					}), m.a.createElement(qo.a, {
 						confirmNavigate: this.confirmNavigate
 					})))
@@ -12858,4 +12860,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.9736dffde958ec932da5.js.map
+//# sourceMappingURL=Reddit.698d6adb45f466e707bb.js.map
