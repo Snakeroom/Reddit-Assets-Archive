@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7604690dc753cfec1f6a.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.68503e842f825819be34.js
+// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -75,30 +75,6 @@
 					for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i];
 					return null !== t && o.length === t.length && r()(o, (e, s) => e === t[s]) || (t = o, s = e(...o)), s
 				}
-			}
-		},
-		"./src/lib/prettyPrintNumber/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			})), s.d(t, "b", (function() {
-				return u
-			}));
-			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js"), s("./node_modules/core-js/modules/es6.regexp.split.js");
-			const n = e => {
-					const t = e.split(".");
-					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
-				},
-				r = 1e3,
-				o = 100 * r,
-				i = 10 * o,
-				a = 100 * i,
-				c = 10 * a,
-				l = 100 * c,
-				d = 51;
-
-			function u(e, t) {
-				return t ? n(e.toString()) : e >= l - d ? "".concat(Math.floor(e / c), "b") : e >= c - d && e < l - d ? "".concat((e / c).toFixed(1), "b") : e >= a - d && e < c - d ? "".concat(Math.floor(e / i), "m") : e >= i - d && e < a - d ? "".concat((e / i).toFixed(1), "m") : e >= o - d && e < i - d ? "".concat(Math.floor(e / r), "k") : e >= r && e < o - d ? "".concat((e / r).toFixed(1), "k") : String(e)
 			}
 		},
 		"./src/lib/timeUntil/index.ts": function(e, t, s) {
@@ -3719,4 +3695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7604690dc753cfec1f6a.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.68503e842f825819be34.js.map

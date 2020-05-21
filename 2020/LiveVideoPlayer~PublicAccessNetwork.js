@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.8928ce0954fc3b425219.js
-// Retrieved at 5/18/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.703edef5a8e515f44b6f.js
+// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -36,18 +36,18 @@
 					t = !1
 				}
 
-				function c() {
-					document.addEventListener("mousemove", d), document.addEventListener("mousedown", d), document.addEventListener("mouseup", d), document.addEventListener("pointermove", d), document.addEventListener("pointerdown", d), document.addEventListener("pointerup", d), document.addEventListener("touchmove", d), document.addEventListener("touchstart", d), document.addEventListener("touchend", d)
+				function d() {
+					document.addEventListener("mousemove", c), document.addEventListener("mousedown", c), document.addEventListener("mouseup", c), document.addEventListener("pointermove", c), document.addEventListener("pointerdown", c), document.addEventListener("pointerup", c), document.addEventListener("touchmove", c), document.addEventListener("touchstart", c), document.addEventListener("touchend", c)
 				}
 
-				function d(e) {
-					e.target.nodeName && "html" === e.target.nodeName.toLowerCase() || (t = !1, document.removeEventListener("mousemove", d), document.removeEventListener("mousedown", d), document.removeEventListener("mouseup", d), document.removeEventListener("pointermove", d), document.removeEventListener("pointerdown", d), document.removeEventListener("pointerup", d), document.removeEventListener("touchmove", d), document.removeEventListener("touchstart", d), document.removeEventListener("touchend", d))
+				function c(e) {
+					e.target.nodeName && "html" === e.target.nodeName.toLowerCase() || (t = !1, document.removeEventListener("mousemove", c), document.removeEventListener("mousedown", c), document.removeEventListener("mouseup", c), document.removeEventListener("pointermove", c), document.removeEventListener("pointerdown", c), document.removeEventListener("pointerup", c), document.removeEventListener("touchmove", c), document.removeEventListener("touchstart", c), document.removeEventListener("touchend", c))
 				}
 				document.addEventListener("keydown", (function(s) {
 					s.metaKey || s.altKey || s.ctrlKey || (a(e.activeElement) && o(e.activeElement), t = !0)
 				}), !0), document.addEventListener("mousedown", n, !0), document.addEventListener("pointerdown", n, !0), document.addEventListener("touchstart", n, !0), document.addEventListener("visibilitychange", (function(e) {
-					"hidden" === document.visibilityState && (s && (t = !0), c())
-				}), !0), c(), e.addEventListener("focus", (function(e) {
+					"hidden" === document.visibilityState && (s && (t = !0), d())
+				}), !0), d(), e.addEventListener("focus", (function(e) {
 					var s, i, n;
 					a(e.target) && (t || (s = e.target, i = s.type, "INPUT" === (n = s.tagName) && r[i] && !s.readOnly || "TEXTAREA" === n && !s.readOnly || s.isContentEditable)) && o(e.target)
 				}), !0), e.addEventListener("blur", (function(e) {
@@ -78,7 +78,7 @@
 				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				o = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				n = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const c = new class {
+			const d = new class {
 				constructor() {
 					this.isInitialized = !1, this.currentStreamsRateSec = a.c, this.currentConfigRateSec = a.d, this.heartbeatDelaySec = a.f, this.heartbeatRateSec = a.g, this.statsRefreshRateSec = a.j, this.recommendedViewerSubredditsRefreshRateSec = a.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startStreamsWork(e, t, s)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStatsId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentHeartbeatId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
 				}
@@ -110,10 +110,10 @@
 					this.currentConfigRateSec !== a && (this.currentConfigRateSec = a);
 					const o = i.viewer_streams_refresh;
 					this.currentStreamsRateSec !== o && (this.currentStreamsRateSec = o, this.startStreamsWork(e, t, s));
-					const c = i.viewer_heartbeat_interval;
-					c && this.heartbeatRateSec !== c && this.startHeartbeatWork(t, s);
 					const d = i.viewer_heartbeat_interval;
-					d && this.statsRefreshRateSec !== d && this.startStatsWork(t, s), this.configTimeout = window.setTimeout(() => this.startConfigWork(e, t, s), this.getConfigTimeout())
+					d && this.heartbeatRateSec !== d && this.startHeartbeatWork(t, s);
+					const c = i.viewer_heartbeat_interval;
+					c && this.statsRefreshRateSec !== c && this.startStatsWork(t, s), this.configTimeout = window.setTimeout(() => this.startConfigWork(e, t, s), this.getConfigTimeout())
 				}
 				async startStreamsWork(e, t, s) {
 					window.clearTimeout(this.streamsTimeout), await t(Object(o.e)(e)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s), this.getStreamsTimeout(s()))
@@ -135,12 +135,12 @@
 					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
 					const o = 1e3 * this.heartbeatDelaySec;
 					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
-					const c = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
-						d = () => {
+					const d = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
+						c = () => {
 							this.currentHeartbeatId && e(Object(r.d)(this.currentHeartbeatId))
 						};
 					this.clearSendHeartbeatInterval = Object(i.a)(() => {
-						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(i.a)(d, c)
+						c(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(i.a)(c, d)
 					}, o)
 				}
 				getStreamsTimeout(e) {
@@ -155,120 +155,7 @@
 					return Math.random() * t * s
 				}
 			};
-			t.a = c
-		},
-		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "c", (function() {
-				return m
-			})), s.d(t, "a", (function() {
-				return S
-			})), s.d(t, "b", (function() {
-				return w
-			})), s.d(t, "d", (function() {
-				return E
-			})), s.d(t, "e", (function() {
-				return g
-			}));
-			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var i = s("./node_modules/query-string/index.js"),
-				r = s.n(i),
-				a = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				n = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
-				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				h = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const u = new Set(["home", "r/popular"]),
-				m = e => {
-					const t = location && location.search || "",
-						s = r.a.parse(t);
-					u.has(e) && (s.related = e);
-					const i = r.a.stringify(s);
-					return i ? "?".concat(i) : ""
-				},
-				l = Object(a.a)(o.L),
-				b = Object(a.a)(o.x),
-				v = Object(a.a)(o.M),
-				p = Object(a.a)(o.y),
-				f = Object(a.a)(o.K),
-				R = Object(a.a)(o.J),
-				S = Object(a.a)(o.s),
-				w = Object(a.a)(o.t),
-				y = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
-					post: Object.assign({}, t.post, {
-						subreddit: Object.assign({}, t.post.subreddit, {
-							name: "pan"
-						})
-					})
-				}),
-				E = e => async (t, s, i) => {
-					let {
-						gqlContext: r
-					} = i;
-					const a = Object(c.g)(e),
-						o = s();
-					if (Object(h.e)(o, a)) return;
-					t(l(a));
-					const d = await Object(n.d)(r(), a),
-						u = Date.now();
-					if (d.ok && d.body && d.body.data) {
-						let e = d.body.data;
-						const i = Object(h.b)(s());
-						i && "pan" !== i && (e = y(i)(e)), t(b({
-							model: e,
-							utcTimeStamp: u
-						}))
-					} else t(L({
-						streamId: a,
-						error: d.error,
-						utcTimeStamp: u
-					}))
-				}, g = e => async (t, s) => Object(d.b)(s()) ? t(O(e)) : t(_()), _ = () => async (e, t, s) => {
-					let {
-						gqlContext: i
-					} = s;
-					const r = t();
-					if (Object(h.g)(r)) return;
-					e(v());
-					const a = await Object(n.f)(i()),
-						o = Date.now();
-					if (a.ok && a.body && a.body.data) {
-						const t = a.body.data;
-						e(p({
-							models: t,
-							utcTimeStamp: o
-						}))
-					} else e(A({
-						error: a.error,
-						utcTimeStamp: o
-					}))
-				}, O = e => async (t, s, i) => {
-					let {
-						gqlContext: r
-					} = i;
-					const a = s();
-					if (Object(h.g)(a)) return;
-					t(v());
-					const o = await Object(n.e)(r(), e),
-						c = Date.now();
-					if (o.ok && o.body && o.body.data) {
-						let i = o.body.data;
-						const r = Object(h.b)(s());
-						r && "pan" !== r && (i = i.map(y(r))), t(p({
-							listingName: e,
-							models: i,
-							utcTimeStamp: c
-						}))
-					} else t(A({
-						error: o.error,
-						utcTimeStamp: c
-					}))
-				}, L = e => async t => {
-					t(f(e))
-				}, A = e => async t => {
-					t(R(e))
-				}
+			t.a = d
 		},
 		"./src/reddit/components/HlsVideo/index.tsx": function(e, t, s) {
 			"use strict";
@@ -280,8 +167,8 @@
 				a = s("./node_modules/hls.js/dist/hls.js"),
 				o = s.n(a),
 				n = s("./src/lib/combineRefs/index.tsx"),
-				c = s("./src/lib/env/index.ts");
-			const d = 3,
+				d = s("./src/lib/env/index.ts");
+			const c = 3,
 				h = 5e3,
 				u = 1e3;
 			class m extends i.Component {
@@ -295,7 +182,7 @@
 						if ("NotAllowedError" === t.name) return s && s(), void(i && this.setState(Object.assign({}, this.state, {
 							isMuteForced: !0
 						})));
-						Object(c.a)() && console.error(t), e && this.onIrrecoverableError(e)
+						Object(d.a)() && console.error(t), e && this.onIrrecoverableError(e)
 					}, this.state = {
 						isInitialized: !1,
 						isMuteForced: !1
@@ -354,7 +241,7 @@
 					} = this.props;
 					if (!n || !this.video) return;
 					this.destroyHls();
-					const c = new o.a({
+					const d = new o.a({
 						enableWorker: !1,
 						fragLoadingMaxRetry: 2,
 						levelLoadingMaxRetry: 4,
@@ -363,15 +250,15 @@
 						liveSyncDurationCount: 2,
 						maxMaxBufferLength: 10
 					});
-					this.hls = c, i && i(c), this.subscribeErrorHandlers(c), c.on(o.a.Events.MANIFEST_LOADING, () => {
+					this.hls = d, i && i(d), this.subscribeErrorHandlers(d), d.on(o.a.Events.MANIFEST_LOADING, () => {
 						a && a()
-					}), c.on(o.a.Events.MANIFEST_PARSED, (i, r) => {
-						e && !s && this.video && (this.video.currentTime = t, this.video.play().catch(this.onPlayError(c))), this.setState(Object.assign({}, this.state, {
+					}), d.on(o.a.Events.MANIFEST_PARSED, (i, r) => {
+						e && !s && this.video && (this.video.currentTime = t, this.video.play().catch(this.onPlayError(d))), this.setState(Object.assign({}, this.state, {
 							isInitialized: !0
 						}))
-					}), c.on(o.a.Events.LEVEL_LOADED, (e, t) => {
+					}), d.on(o.a.Events.LEVEL_LOADED, (e, t) => {
 						r && r(t.details)
-					}), c.loadSource(n), c.attachMedia(this.video)
+					}), d.loadSource(n), d.attachMedia(this.video)
 				}
 				subscribeErrorHandlers(e) {
 					e.on(o.a.Events.ERROR, (t, s) => {
@@ -399,7 +286,7 @@
 					t.details !== o.a.ErrorDetails.FRAG_LOAD_ERROR && t.details !== o.a.ErrorDetails.FRAG_LOAD_TIMEOUT ? this.onIrrecoverableError(e) : this.handleBadFragment(e, t.frag)
 				}
 				handleBadFragment(e, t) {
-					this.resetBadFragmentsCountIfCooldownPassed(), this.fragmentRecoveryAttemptsCount > d || !t ? this.onIrrecoverableError(e) : (this.fragmentRecoveryAttemptsCount++, this.fragmentRecoveryLastAttemptUtc = Date.now(), e.startLoad())
+					this.resetBadFragmentsCountIfCooldownPassed(), this.fragmentRecoveryAttemptsCount > c || !t ? this.onIrrecoverableError(e) : (this.fragmentRecoveryAttemptsCount++, this.fragmentRecoveryLastAttemptUtc = Date.now(), e.startLoad())
 				}
 				resetBadFragmentsCountIfCooldownPassed() {
 					this.fragmentRecoveryLastAttemptUtc + h < Date.now() && (this.fragmentRecoveryAttemptsCount = 0)
@@ -431,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.8928ce0954fc3b425219.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.703edef5a8e515f44b6f.js.map

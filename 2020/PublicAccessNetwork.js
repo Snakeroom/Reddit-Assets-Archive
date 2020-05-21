@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b6f76093fe5af6bbc05c.js
-// Retrieved at 5/20/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.80dd24044c1f0e75730a.js
+// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -336,7 +336,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "f275abe-production"
+					SENTRY_RELEASE_VERSION: "ea5455c-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -4109,7 +4109,9 @@
 						match: r
 					} = t;
 					const n = a()([...Object(m.a)(s.search)]).related,
-						i = r.params.subreddit;
+						{
+							subredditName: i
+						} = r.params;
 					return "home" === n || "r/popular" === n ? n : "popular" === i ? "r/popular" : i ? void 0 : "home"
 				}
 			}), ea = Object(o.b)($r, (e, t) => ({
@@ -4135,7 +4137,7 @@
 						onStreamByIdRequested: t,
 						isEnabled: s
 					} = this.props;
-					s && e.params.streamId && t(e.params.streamId)
+					s && e.params.partialPostId && t(e.params.partialPostId)
 				}
 				shouldUpdateLocation(e) {
 					return e.replace(/[?].*/, "") !== this.props.match.url
@@ -4162,8 +4164,8 @@
 						match: n,
 						related: o
 					} = this.props, {
-						subreddit: c,
-						streamId: l
+						subredditName: c,
+						partialPostId: l
 					} = n.params;
 					return e ? i.a.createElement("div", {
 						className: Object(d.a)(Zr.a.rpanContainer, {
@@ -4188,4 +4190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.b6f76093fe5af6bbc05c.js.map
+//# sourceMappingURL=PublicAccessNetwork.80dd24044c1f0e75730a.js.map

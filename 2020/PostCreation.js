@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6d7c735be6e48c29a54a.js
-// Retrieved at 5/20/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.82312e8d6edb4e4dd6ab.js
+// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "f275abe-production"
+					SENTRY_RELEASE_VERSION: "ea5455c-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -1101,30 +1101,6 @@
 				unsubscribe: e => {
 					l.unsubscribe(e)
 				}
-			}
-		},
-		"./src/lib/prettyPrintNumber/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "b", (function() {
-				return u
-			}));
-			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.split.js");
-			const s = e => {
-					const t = e.split(".");
-					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
-				},
-				o = 1e3,
-				r = 100 * o,
-				i = 10 * r,
-				a = 100 * i,
-				c = 10 * a,
-				l = 100 * c,
-				d = 51;
-
-			function u(e, t) {
-				return t ? s(e.toString()) : e >= l - d ? "".concat(Math.floor(e / c), "b") : e >= c - d && e < l - d ? "".concat((e / c).toFixed(1), "b") : e >= a - d && e < c - d ? "".concat(Math.floor(e / i), "m") : e >= i - d && e < a - d ? "".concat((e / i).toFixed(1), "m") : e >= r - d && e < i - d ? "".concat(Math.floor(e / o), "k") : e >= o && e < r - d ? "".concat((e / o).toFixed(1), "k") : String(e)
 			}
 		},
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -31565,4 +31541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.6d7c735be6e48c29a54a.js.map
+//# sourceMappingURL=PostCreation.82312e8d6edb4e4dd6ab.js.map

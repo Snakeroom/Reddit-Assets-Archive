@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fa72757a33068318ef26.js
-// Retrieved at 5/20/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.60752870ff1b6d2dbe1f.js
+// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11023,14 +11023,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("f275abe-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("ea5455c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f275abe-production",
+						release: "ea5455c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -11392,7 +11392,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f275abe-production",
+							releaseClient: "ea5455c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -12179,6 +12179,30 @@
 				return t.setFullYear(t.getFullYear() + e), Object.assign({}, n.w, {
 					expires: t
 				})
+			}
+		},
+		"./src/lib/prettyPrintNumber/index.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return n
+			})), i.d(t, "b", (function() {
+				return c
+			}));
+			i("./node_modules/core-js/modules/es6.regexp.to-string.js"), i("./node_modules/core-js/modules/es6.regexp.replace.js"), i("./node_modules/core-js/modules/es6.regexp.split.js");
+			const n = e => {
+					const t = e.split(".");
+					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
+				},
+				r = 1e3,
+				s = 100 * r,
+				o = 10 * s,
+				d = 100 * o,
+				l = 10 * d,
+				a = 100 * l,
+				u = 51;
+
+			function c(e, t) {
+				return t ? n(e.toString()) : e >= a - u ? "".concat(Math.floor(e / l), "b") : e >= l - u && e < a - u ? "".concat((e / l).toFixed(1), "b") : e >= d - u && e < l - u ? "".concat(Math.floor(e / o), "m") : e >= o - u && e < d - u ? "".concat((e / o).toFixed(1), "m") : e >= s - u && e < o - u ? "".concat(Math.floor(e / r), "k") : e >= r && e < s - u ? "".concat((e / r).toFixed(1), "k") : String(e)
 			}
 		},
 		"./src/lib/redditId/index.ts": function(e, t, i) {
@@ -19788,6 +19812,80 @@
 				r = "/r/:subredditName/submit",
 				s = "/user/:profileName/submit"
 		},
+		"./src/reddit/selectors/PublicAccessNetwork/api.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "l", (function() {
+				return d
+			})), i.d(t, "d", (function() {
+				return l
+			})), i.d(t, "f", (function() {
+				return a
+			})), i.d(t, "e", (function() {
+				return u
+			})), i.d(t, "g", (function() {
+				return c
+			})), i.d(t, "j", (function() {
+				return m
+			})), i.d(t, "m", (function() {
+				return p
+			})), i.d(t, "n", (function() {
+				return h
+			})), i.d(t, "c", (function() {
+				return _
+			})), i.d(t, "p", (function() {
+				return g
+			})), i.d(t, "o", (function() {
+				return f
+			})), i.d(t, "h", (function() {
+				return b
+			})), i.d(t, "a", (function() {
+				return w
+			})), i.d(t, "b", (function() {
+				return y
+			})), i.d(t, "i", (function() {
+				return T
+			})), i.d(t, "k", (function() {
+				return E
+			}));
+			var n = i("./node_modules/reselect/es/index.js"),
+				r = i("./src/lib/objectSelector/index.ts"),
+				s = i("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				o = i("./src/reddit/helpers/publicAccessNetwork/index.ts");
+			const d = e => e.publicAccessNetwork.api.config,
+				l = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(o.g)(t)],
+				a = e => l(e, s.b),
+				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(o.g)(t)] && e.publicAccessNetwork.api.pending[Object(o.g)(t)].isPending,
+				c = e => u(e, s.b),
+				m = e => e.publicAccessNetwork.api.pending[s.b] && e.publicAccessNetwork.api.pending[s.b].fetchedUtcTimeStamp,
+				p = Object(n.a)(d, e => e.global),
+				h = Object(n.a)((e, t) => {
+					let {
+						subreddit: i
+					} = t;
+					return i
+				}, d, (e, t) => {
+					const i = e.toLowerCase();
+					return t.subreddits[i]
+				}),
+				_ = Object(n.a)(d, e => e.global.rpan_intro_video_url),
+				g = Object(n.a)(d, e => e.global.url_to_show_for_unavailable_video),
+				f = Object(n.a)(d, e => !1),
+				b = Object(n.a)(d, e => e.isError),
+				w = Object(n.a)(d, e => e.global.max_chat_comment_length),
+				y = Object(n.a)(p, e => e.dedicated_subreddit),
+				v = e => e.publicAccessNetwork.api.recommendedViewerSubreddits,
+				T = (Object(n.a)(v, e => e.isError), Object(n.a)(v, e => e.isPending)),
+				S = Object(r.a)(Object(n.a)(v, e => e.subreddits)),
+				E = Object(n.a)(S, e => [{
+					name: "All",
+					prefixedName: "All",
+					path: Object(o.d)()
+				}, ...e.map(e => ({
+					name: e,
+					prefixedName: "r/".concat(e),
+					path: Object(o.f)(e)
+				}))])
+		},
 		"./src/reddit/selectors/ads.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -25740,16 +25838,16 @@
 				o = i("./src/lib/constants/index.ts"),
 				d = (i("./src/lib/addQueryParams/index.ts"), i("./src/lib/isAdHocMultireddit/index.ts")),
 				l = i("./src/lib/isFakeSubreddit/index.ts"),
-				a = (i("./src/lib/makeCommentsPageKey/index.ts"), i("./src/lib/truncateText/index.ts"), i("./src/reddit/constants/experiments.ts"), i("./src/reddit/constants/page.ts"), i("./src/reddit/constants/topic.ts")),
+				a = (i("./src/lib/makeCommentsPageKey/index.ts"), i("./src/lib/prettyPrintNumber/index.ts"), i("./src/lib/truncateText/index.ts"), i("./src/reddit/constants/experiments.ts"), i("./src/reddit/constants/page.ts"), i("./src/reddit/constants/topic.ts")),
 				u = i("./src/reddit/contexts/PageLayer/index.tsx"),
 				c = i("./src/reddit/helpers/canonicalUrls.ts"),
 				m = (i("./src/reddit/helpers/getRichTextContent/index.ts"), i("./src/reddit/helpers/getSubredditErrorProps/index.ts")),
-				p = (i("./src/reddit/models/Comment/index.ts"), i("./src/reddit/models/Post/index.ts")),
-				h = (i("./src/reddit/selectors/comments.ts"), i("./src/reddit/selectors/experiments/postSeo.ts"), i("./src/reddit/selectors/multireddit.ts"), i("./src/reddit/selectors/platform.ts")),
+				p = (i("./src/reddit/helpers/publicAccessNetwork/index.ts"), i("./src/reddit/models/Comment/index.ts"), i("./src/reddit/models/Post/index.ts")),
+				h = (i("./src/reddit/models/PublicAccessNetwork/index.ts"), i("./src/reddit/selectors/comments.ts"), i("./src/reddit/selectors/experiments/postSeo.ts"), i("./src/reddit/selectors/multireddit.ts"), i("./src/reddit/selectors/platform.ts")),
 				_ = i("./src/reddit/selectors/postCollection.ts"),
 				g = i("./src/reddit/selectors/posts.ts"),
 				f = i("./src/reddit/selectors/profile.ts"),
-				b = (i("./src/reddit/selectors/structuredStyles.ts"), i("./src/reddit/selectors/subreddit.ts")),
+				b = (i("./src/reddit/selectors/PublicAccessNetwork/api.ts"), i("./src/reddit/selectors/structuredStyles.ts"), i("./src/reddit/selectors/subreddit.ts")),
 				w = (i("./src/reddit/selectors/topic.ts"), i("./src/reddit/selectors/user.ts"));
 			i("./src/reddit/models/Media/index.ts");
 			const y = new Set([302, 400, 401, 403, 404, 421, 429, 500, 502, 503, 504, 0, void 0, null]),
@@ -28727,4 +28825,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.fa72757a33068318ef26.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.60752870ff1b6d2dbe1f.js.map
