@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.31134aabdae4db914457.js
-// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d0e9fe4f4295563935c0.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -504,7 +504,7 @@
 		"./src/reddit/components/Flair/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return W
+				return B
 			})), s.d(t, "a", (function() {
 				return H
 			}));
@@ -642,7 +642,7 @@
 						ref: this.setTooltipTargetRef,
 						style: {
 							backgroundColor: this.props.backgroundColor || Object(S.a)(this.props).flair,
-							color: "".concat(W(this.props))
+							color: "".concat(B(this.props))
 						}
 					}, this.props.text, this.props.isSelected && a.a.createElement(L, {
 						to: "./",
@@ -671,7 +671,7 @@
 				}
 			}
 			const R = Object(u.a)(z),
-				B = Object(u.a)(e => {
+				W = Object(u.a)(e => {
 					let t = "",
 						s = !1;
 					const n = e.richtext.map((n, r) => {
@@ -700,7 +700,7 @@
 						}),
 						style: Object.assign({}, r, {
 							backgroundColor: e.backgroundColor || Object(S.a)(e).flair,
-							color: "".concat(W(e))
+							color: "".concat(B(e))
 						})
 					}, n, e.isSelected && a.a.createElement(L, {
 						to: "./",
@@ -723,9 +723,9 @@
 						to: e.to
 					})
 				}),
-				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(S.a)(e).post, y.a.black, y.a.white) : e.textColor === k.e.Dark ? y.a.black : y.a.white,
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(S.a)(e).post, y.a.black, y.a.white) : e.textColor === k.e.Dark ? y.a.black : y.a.white,
 				H = m.a.wrapped(R, "TextFlair", _.a),
-				q = m.a.wrapped(B, "RichTextFlair", _.a),
+				q = m.a.wrapped(W, "RichTextFlair", _.a),
 				U = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -1617,7 +1617,7 @@
 		"./src/reddit/components/PostTitle/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return B
+				return W
 			})), s.d(t, "a", (function() {
 				return H
 			}));
@@ -1690,7 +1690,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var B, W = function(e, t) {
+			var W, B = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1701,7 +1701,7 @@
 			};
 			! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
-			}(B || (B = {}));
+			}(W || (W = {}));
 			const H = u.a.wrapped(Object(d.a)(e => {
 					var {
 						size: t,
@@ -1711,22 +1711,22 @@
 						children: i,
 						className: a,
 						redditStyle: c
-					} = e, d = W(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle"]);
+					} = e, d = B(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle"]);
 					let u = "";
 					switch (t) {
-						case B.ExtraLarge:
+						case W.ExtraLarge:
 							u = D.a.ExtraLarge;
 							break;
-						case B.Large:
+						case W.Large:
 							u = D.a.Large;
 							break;
-						case B.Medium:
+						case W.Medium:
 							u = D.a.Medium;
 							break;
-						case B.Small:
+						case W.Small:
 							u = D.a.Small;
 							break;
-						case B.ExtraSmall:
+						case W.ExtraSmall:
 							u = D.a.ExtraSmall
 					}
 					return o.a.createElement("div", R({
@@ -1747,7 +1747,7 @@
 						className: t,
 						disableVisited: s,
 						titleColor: n
-					} = e, r = W(e, ["className", "disableVisited", "titleColor"]);
+					} = e, r = B(e, ["className", "disableVisited", "titleColor"]);
 					return o.a.createElement(a.a, R({}, r, {
 						className: Object(l.a)(t, D.a.styledLink, {
 							[D.a.isVisitedEnabled]: !s
@@ -1758,7 +1758,7 @@
 					var {
 						disableVisited: t,
 						nowrap: s
-					} = e, n = W(e, ["disableVisited", "nowrap"]);
+					} = e, n = B(e, ["disableVisited", "nowrap"]);
 					return o.a.createElement("div", R({}, n, {
 						className: Object(l.a)(D.a.titleContainer, n.className, {
 							[D.a.isNoWrap]: s,
@@ -1855,7 +1855,7 @@
 						post: s
 					} = e, {
 						isSponsored: n
-					} = s, r = !t && !e.isCrosspost && e.size !== B.Large && !s.isSponsored && !(s.media && Object(O.B)(s.media)) && (s.source || s.media && (s.media.type === O.n.GIFVIDEO || s.media.type === O.n.IMAGE || s.media.type === O.n.EMBED));
+					} = s, r = !t && !e.isCrosspost && e.size !== W.Large && !s.isSponsored && !(s.media && Object(O.B)(s.media)) && (s.source || s.media && (s.media.type === O.n.GIFVIDEO || s.media.type === O.n.IMAGE || s.media.type === O.n.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (r) return o.a.createElement(h.a, {
 							className: e.outboundLinkClassName,
@@ -1866,7 +1866,7 @@
 						}, Object(w.a)(s), !s.isSponsored && o.a.createElement(y.a, {
 							className: D.a.outboundLinkIcon
 						}))
-					} else if (s.source && !e.isCrosspost && e.size !== B.Large && e.size !== B.ExtraLarge) return o.a.createElement(h.a, {
+					} else if (s.source && !e.isCrosspost && e.size !== W.Large && e.size !== W.ExtraLarge) return o.a.createElement(h.a, {
 						className: e.outboundLinkClassName,
 						href: s.source.url,
 						isSponsored: n,
@@ -2074,7 +2074,7 @@
 					}))
 				},
 				R = e => e.isOutbound ? Object(T.a)(e).button : e.placeholderImage ? "transparent" : Object(T.a)(e).line,
-				B = e => {
+				W = e => {
 					const t = L(e),
 						s = t && {
 							background: Object(_.g)(Object(T.a)(e).placeholder, t, V(e))
@@ -2098,7 +2098,7 @@
 						className: e.linkTextClassName
 					}, e.text)))
 				},
-				W = e => o.a.createElement(z, F({}, e, {
+				B = e => o.a.createElement(z, F({}, e, {
 					className: Object(i.a)(P.a.blurredThumbnail, e.className)
 				})),
 				H = Object(a.a)(e => {
@@ -2162,7 +2162,7 @@
 							u = Object(i.a)(t, {
 								[P.a.verticallyCenterThumbnail]: s
 							});
-						return r ? o.a.createElement(W, F({
+						return r ? o.a.createElement(B, F({
 							"data-click-id": "image",
 							src: d
 						}, n, {
@@ -2188,7 +2188,7 @@
 							theme: c
 						}))
 					}
-					return o.a.createElement(B, {
+					return o.a.createElement(W, {
 						className: t,
 						contentTypeClassName: g,
 						placeholderImage: s,
@@ -3312,71 +3312,71 @@
 		"./src/reddit/selectors/economics.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return h
-			})), s.d(t, "t", (function() {
-				return f
-			})), s.d(t, "b", (function() {
 				return x
-			})), s.d(t, "E", (function() {
+			})), s.d(t, "t", (function() {
 				return g
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "b", (function() {
 				return v
-			})), s.d(t, "w", (function() {
+			})), s.d(t, "E", (function() {
 				return y
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "g", (function() {
 				return j
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "w", (function() {
 				return O
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "j", (function() {
 				return C
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "l", (function() {
 				return w
-			})), s.d(t, "G", (function() {
+			})), s.d(t, "k", (function() {
 				return E
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "m", (function() {
 				return k
-			})), s.d(t, "s", (function() {
+			})), s.d(t, "G", (function() {
 				return S
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "q", (function() {
 				return N
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "s", (function() {
 				return _
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "f", (function() {
 				return T
-			})), s.d(t, "u", (function() {
+			})), s.d(t, "e", (function() {
 				return I
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "n", (function() {
 				return P
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "u", (function() {
 				return F
+			})), s.d(t, "a", (function() {
+				return L
+			})), s.d(t, "v", (function() {
+				return V
 			})), s.d(t, "p", (function() {
-				return M
-			})), s.d(t, "x", (function() {
 				return D
-			})), s.d(t, "y", (function() {
-				return z
-			})), s.d(t, "z", (function() {
+			})), s.d(t, "x", (function() {
 				return R
-			})), s.d(t, "F", (function() {
-				return B
-			})), s.d(t, "B", (function() {
+			})), s.d(t, "y", (function() {
 				return W
-			})), s.d(t, "C", (function() {
+			})), s.d(t, "z", (function() {
+				return B
+			})), s.d(t, "F", (function() {
 				return H
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "B", (function() {
 				return q
-			})), s.d(t, "D", (function() {
+			})), s.d(t, "C", (function() {
 				return U
-			})), s.d(t, "A", (function() {
+			})), s.d(t, "c", (function() {
 				return Z
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "D", (function() {
 				return Q
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "A", (function() {
 				return G
-			})), s.d(t, "o", (function() {
+			})), s.d(t, "h", (function() {
 				return K
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "i", (function() {
 				return X
+			})), s.d(t, "o", (function() {
+				return J
+			})), s.d(t, "r", (function() {
+				return Y
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/bignumber.js/bignumber.js"),
@@ -3385,12 +3385,14 @@
 				i = s("./src/reddit/helpers/richTextJson/index.ts"),
 				a = s("./src/reddit/models/Badge/index.ts"),
 				c = s("./src/reddit/models/Badge/managementPage.ts"),
-				l = s("./src/reddit/models/Payments/index.ts"),
-				d = s("./src/reddit/models/Product/index.ts"),
-				u = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
-				m = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
-				p = s("./src/reddit/selectors/comments.ts"),
-				b = function(e, t) {
+				l = s("./src/reddit/models/Gold/Powerups/index.ts"),
+				d = s("./src/reddit/models/Payments/index.ts"),
+				u = s("./src/reddit/models/Product/index.ts"),
+				m = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
+				p = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
+				b = s("./src/reddit/selectors/comments.ts"),
+				h = s("./src/reddit/selectors/gold/powerups.ts"),
+				f = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -3399,9 +3401,9 @@
 					}
 					return s
 				};
-			const h = (e, t) => {
+			const x = (e, t) => {
 					const s = e.economics.subredditPremium[t];
-					if (s && s.status === m.a.Fetched) {
+					if (s && s.status === p.a.Fetched) {
 						const e = s.data.subscription,
 							t = e && e.active;
 						if (t) {
@@ -3411,27 +3413,27 @@
 					}
 					return null
 				},
-				f = (e, t) => {
-					const s = h(e, t);
+				g = (e, t) => {
+					const s = x(e, t);
 					return s && s.endsAt || null
 				};
-			var x;
+			var v;
 			! function(e) {
 				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
-			}(x || (x = {}));
-			const g = (e, t) => {
+			}(v || (v = {}));
+			const y = (e, t) => {
 					const s = e.economics.subredditPremium[t];
-					if (s && s.status === m.a.Fetched) {
-						const s = f(e, t),
+					if (s && s.status === p.a.Fetched) {
+						const s = g(e, t),
 							n = Date.now();
-						return s && n < s ? x.Subscribed : x.NotSubscribed
+						return s && n < s ? v.Subscribed : v.NotSubscribed
 					}
-					return x.DontKnow
+					return v.DontKnow
 				},
-				v = (e, t) => {
+				j = (e, t) => {
 					const s = e.user.account,
 						n = e.economics.subredditPremium[t];
-					if (s && n && n.status === m.a.Fetched) {
+					if (s && n && n.status === p.a.Fetched) {
 						const n = ((e.users.appliedBadges[s.id] || {})[t] || []).map(t => e.badges.models[t]).filter(Boolean);
 						if (n) return {
 							[c.a.Loyalty]: n.find(e => e.placement === a.a.First),
@@ -3445,14 +3447,14 @@
 						[c.a.Cosmetic]: void 0
 					}
 				},
-				y = (e, t, s) => {
+				O = (e, t, s) => {
 					if (!r.d.spBadges(e) && !r.d.spPremium(e)) return [];
 					const n = (e.users.appliedBadges[s] || {})[t] || [];
 					return Object(o.a)(n.map(t => e.badges.models[t]).filter(Boolean))
 				},
-				j = (e, t) => {
+				C = (e, t) => {
 					const s = e.economics.subredditPremium[t.subredditId];
-					if (s && s.status === m.a.Fetched) {
+					if (s && s.status === p.a.Fetched) {
 						const e = s.raw.collections[t.collectionId];
 						if (e) return {
 							highlight: e.extra && e.extra.style && e.extra.style.color,
@@ -3460,18 +3462,18 @@
 						}
 					}
 				},
-				O = (e, t) => {
-					const s = R(e, t);
+				w = (e, t) => {
+					const s = B(e, t);
 					return !!s && !!s.creator
 				},
-				C = (e, t) => {
+				E = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
 					const n = e.subreddits.gov.communityJar[s];
 					return n ? n.usdr : void 0
 				},
-				w = (e, t) => {
+				k = (e, t) => {
 					const s = e.economics.tipDetails[t.subredditId];
 					if (s) {
 						const e = s[t.contentId];
@@ -3480,12 +3482,12 @@
 					return "0"
 				};
 
-			function E(e, t) {
+			function S(e, t) {
 				const s = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(s && s.settings && s.settings.optOut)
 			}
 
-			function k(e, t) {
+			function N(e, t) {
 				const {
 					badge: s,
 					subredditId: n
@@ -3497,65 +3499,65 @@
 				return Object.keys(i).map(e => o[e]).find(e => e && e.type === c)
 			}
 
-			function S(e, t, s, n) {
+			function _(e, t, s, n) {
 				const r = e.economics.subredditPremium[t];
-				if (r && r.status === m.a.Fetched) {
+				if (r && r.status === p.a.Fetched) {
 					if (s === c.a.Loyalty || s === c.a.Achievement) return r.data.collections[s];
 					if (s === c.a.Cosmetic && n) return r.data.collections[s][n]
 				}
 				return []
 			}
 
-			function N(e, t) {
-				const s = S(e, t, c.a.Loyalty).find(e => "membership" === e.id);
+			function T(e, t) {
+				const s = _(e, t, c.a.Loyalty).find(e => "membership" === e.id);
 				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : []
 			}
 
-			function _(e, t) {
+			function I(e, t) {
 				const s = e.economics.subredditPremium[t];
-				if (s && s.status === m.a.Fetched) {
+				if (s && s.status === p.a.Fetched) {
 					const e = s.data.collections[c.a.Cosmetic];
 					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(a.d)
 				}
 				return []
 			}
 
-			function T(e, t) {
-				return S(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
+			function P(e, t) {
+				return _(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
 			}
-			const I = e => {
+			const F = e => {
 				const t = [],
 					s = e.economics.paymentSystems;
-				if (s.status === u.a.Fetched && s.data.stripe && s.data.stripe.sources) {
+				if (s.status === m.a.Fetched && s.data.stripe && s.data.stripe.sources) {
 					const e = s.data.stripe.sources;
 					for (const s in e) {
 						const n = e[s];
 						t.push({
 							display: "".concat(n.brand, " •••• ").concat(n.last4),
 							id: s,
-							type: l.b.SavedStripe
+							type: d.b.SavedStripe
 						})
 					}
 				}
-				if (s.status === u.a.Fetched && s.data.braintree && s.data.braintree.sources) {
+				if (s.status === m.a.Fetched && s.data.braintree && s.data.braintree.sources) {
 					const e = s.data.braintree.sources;
 					for (const s in e) {
 						const n = e[s];
 						"PayPal" === n.brand && t.push({
 							display: "PayPal",
 							id: n.id,
-							type: l.b.SavedPayPal
+							type: d.b.SavedPayPal
 						})
 					}
 				}
 				return t
 			};
-			var P;
+			var L;
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(P || (P = {}));
-			const F = e => e.economics.paymentSystems.status === u.a.NotFetched ? P.NotFetched : e.economics.paymentSystems.status === u.a.Pending ? P.Fetching : P.Fetched,
-				L = {
+			}(L || (L = {}));
+			const V = e => e.economics.paymentSystems.status === m.a.NotFetched ? L.NotFetched : e.economics.paymentSystems.status === m.a.Pending ? L.Fetching : L.Fetched,
+				M = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -3564,7 +3566,7 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				V = {
+				A = {
 					t5_vsb5g: {
 						points: "5000000000000000000000"
 					},
@@ -3572,31 +3574,31 @@
 						points: "5000000000000000000000"
 					}
 				},
-				M = (e, t) => Object.values(e.products.models).filter(e => e.type === d.a.Membership && t && e.subredditId === t),
-				A = (e, t) => {
+				D = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
+				z = (e, t) => {
 					if (!t) return {};
-					if (V[t]) return V[t];
-					const s = L.prices;
-					M(e, t).forEach(e => {
+					if (A[t]) return A[t];
+					const s = M.prices;
+					D(e, t).forEach(e => {
 						e.price && e.currency && (s[e.currency] = e.price)
 					});
-					const n = h(e, t);
+					const n = x(e, t);
 					return n && n.price && n.currency && (s[n.currency] = n.price), s
 				},
-				D = (e, t) => {
+				R = (e, t) => {
 					const s = e.subreddits.gov.meta[t || ""],
-						n = s && s.extra && s.extra.nomenclature || L;
+						n = s && s.extra && s.extra.nomenclature || M;
 					return {
-						prices: A(e, t),
-						member: n.member || L.member,
-						memberPlural: n.memberPlural || L.memberPlural,
-						memberAlt: n.memberAlt || L.memberAlt,
-						memberAltPlural: n.memberAltPlural || L.memberAltPlural,
-						membership: n.membership || L.membership,
-						membershipAlt: n.membershipAlt || L.membershipAlt
+						prices: z(e, t),
+						member: n.member || M.member,
+						memberPlural: n.memberPlural || M.memberPlural,
+						memberAlt: n.memberAlt || M.memberAlt,
+						memberAltPlural: n.memberAltPlural || M.memberAltPlural,
+						membership: n.membership || M.membership,
+						membershipAlt: n.membershipAlt || M.membershipAlt
 					}
 				},
-				z = (e, t) => {
+				W = (e, t) => {
 					const s = e.economics.tipDetails[t.subredditId];
 					if (s) {
 						const e = s[t.contentId];
@@ -3605,7 +3607,7 @@
 								{
 									anonymous: s
 								} = t,
-								n = b(t, ["anonymous"]),
+								n = f(t, ["anonymous"]),
 								r = Object.keys(n),
 								o = r.map(e => Object.assign({
 									id: e
@@ -3628,59 +3630,63 @@
 						}
 					}
 				},
-				R = (e, t) => {
+				B = (e, t) => {
 					const s = e.economics.tipDetails[t.subredditId];
 					if (s) {
 						const e = s[t.contentId];
 						if (e && e.amounts && e.amounts.usdr && e.amounts.usdr.tipsProportions) return e.amounts.usdr.tipsProportions
 					}
 				},
-				B = e => {
+				H = e => {
 					const t = e.economics.paymentSystems;
-					return !!(t.status === u.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
+					return !!(t.status === m.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				W = (e, t) => {
+				q = (e, t) => {
 					const s = e.user.ownedBadges[t] || {};
 					return !!Object.keys(s).length
 				},
-				H = e => {
+				U = e => {
 					const t = e.economics.paymentSystems;
-					return t.status === u.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
+					return t.status === m.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				q = (e, t) => {
+				Z = (e, t) => {
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				U = (e, t) => {
+				Q = (e, t) => {
 					const s = t && e.economics.gifs[t];
 					return !!s && s.hasGifProduct
 				},
-				Z = (e, t, s) => {
+				G = (e, t, s) => {
+					if (t && Object(h.e)(e, {
+							subredditId: t,
+							benefit: l.a.CommentsWithGifs
+						})) return !0;
 					const n = r.d.spGiphy(e),
-						o = U(e, t),
-						a = "replyToPost" !== s && Object(p.n)(e, {
+						o = Q(e, t),
+						a = "replyToPost" !== s && Object(b.n)(e, {
 							commentId: s
 						}),
 						c = !!a && Object(i.a)(a);
 					return n && (o || c)
 				},
-				Q = (e, t, s) => {
+				K = (e, t, s) => {
 					if (t) {
 						const n = e.economics.banners.dismissedBanners[t];
 						if (n && n.data) return !!n.data[s]
 					}
 				},
-				G = (e, t) => {
+				X = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.pointsToClaim), new n.BigNumber(0)).toString() : null
 				},
-				K = (e, t) => {
+				J = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
 					return s && s.length ? s.reduce((e, t) => e.plus(t.userKarma), new n.BigNumber(0)).toString() : null
 				},
-				X = e => e.economics.pointsCopy.data
+				Y = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, s) {
 			"use strict";
@@ -3740,4 +3746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.31134aabdae4db914457.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d0e9fe4f4295563935c0.js.map

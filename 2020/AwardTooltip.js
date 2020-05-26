@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.3d732f3da6d0ddf64a79.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.b66db2ad435d439b16de.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -40,7 +40,7 @@
 				h = o("./src/reddit/models/Toast/index.ts"),
 				w = o("./src/reddit/endpoints/gold/communityAwards.ts"),
 				b = o("./src/reddit/actions/gold/constants.ts");
-			const C = Object(p.a)(b.K);
+			const C = Object(p.a)(b.P);
 			var x = o("./src/reddit/actions/tooltip.ts"),
 				f = o("./src/reddit/models/Gold/Award.ts"),
 				g = o("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.3d732f3da6d0ddf64a79.js.map
+//# sourceMappingURL=AwardTooltip.b66db2ad435d439b16de.js.map

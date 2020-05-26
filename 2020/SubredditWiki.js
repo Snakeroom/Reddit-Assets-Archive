@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d085c0f1174a6fb2a2a2.js
-// Retrieved at 5/21/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.fa7ea53c0766955bcedf.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1260,6 +1260,13 @@
 				button: "_1m03hmspTHlre1O1CXbY9Y"
 			}
 		},
+		"./src/reddit/components/CommunityIdTopBar/LevelBadge/index.m.less": function(e, t, n) {
+			e.exports = {
+				container: "_3wU37K5r41vOkCGVpEDcRK",
+				icon: "_3nyGWtYJVWP4_98uoGJ_71",
+				text: "_3sYDh6pENyPn_M3y6_TWkw"
+			}
+		},
 		"./src/reddit/components/CommunityIdTopBar/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_3JDs8KEQIXSMn1bTF2ZqJ_",
@@ -1277,7 +1284,8 @@
 				description: "_33aRtz9JtW0dIrBNKFAl0y",
 				subscribeButtonContainer: "_1Q_zPN5YtTLQVG72WhRuf3",
 				startChattingButtonContainer: "gamImsFjuVPnHzfq-JdwT",
-				subredditNavContainer: "_15Pk_bZ2XZNa9zBvnxq6HX"
+				subredditNavContainer: "_15Pk_bZ2XZNa9zBvnxq6HX",
+				levelBadge: "_135_8DPabrU8OFXuqt2i7x"
 			}
 		},
 		"./src/reddit/components/CommunityIdTopBar/index.tsx": function(e, t, n) {
@@ -1289,100 +1297,131 @@
 				o = n("./src/lib/classNames/index.ts"),
 				d = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				c = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/components/DownToChatBanner/StartChattingButton/index.tsx"),
-				u = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
-				m = n("./src/reddit/components/SubredditNav/index.tsx"),
-				p = n("./src/reddit/components/SubscribeButton/index.tsx"),
-				b = n("./src/reddit/constants/postLayout.ts"),
-				h = n("./src/reddit/constants/posts.ts"),
-				g = n("./src/reddit/featureFlags/index.ts"),
-				x = n("./src/reddit/helpers/getSubredditIcon/index.ts"),
-				f = n("./src/reddit/constants/tracking.ts"),
-				k = n("./src/reddit/selectors/telemetry.ts");
-			var y = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				w = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
-				O = n("./src/reddit/selectors/widgets.ts"),
-				v = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
-				C = n.n(v);
-			const E = c.a.wrapped(y.a, "Planet", C.a),
-				j = c.a.img("SubredditIcon", C.a),
-				_ = Object(a.c)({
-					spPollsEnabled: g.d.spPolls,
+				l = n("./src/reddit/constants/modals.ts"),
+				u = n("./src/reddit/actions/modal.ts"),
+				m = n("./src/reddit/components/DownToChatBanner/StartChattingButton/index.tsx"),
+				p = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
+				b = n("./src/reddit/components/SubredditNav/index.tsx"),
+				h = n("./src/reddit/components/SubscribeButton/index.tsx"),
+				g = n("./src/reddit/constants/postLayout.ts"),
+				x = n("./src/reddit/constants/posts.ts"),
+				f = n("./src/reddit/featureFlags/index.ts"),
+				k = n("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				y = n("./src/reddit/constants/tracking.ts"),
+				w = n("./src/reddit/selectors/telemetry.ts");
+			var O = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				v = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
+				C = n("./src/reddit/selectors/gold/powerups.ts"),
+				E = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				j = n("./src/reddit/selectors/widgets.ts"),
+				_ = n("./src/reddit/icons/svgs/Powerup/index.tsx"),
+				N = n("./src/reddit/components/CommunityIdTopBar/LevelBadge/index.m.less"),
+				S = n.n(N);
+			const {
+				fbt: P
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			var T = e => r.a.createElement("button", {
+					className: Object(o.a)(e.className, S.a.container),
+					onClick: e.onClick
+				}, r.a.createElement(_.a, {
+					className: S.a.icon
+				}), r.a.createElement("div", {
+					className: S.a.text
+				}, P._("Level {level}", [P._param("level", e.level)], {
+					hk: "4BNMWs"
+				}))),
+				I = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
+				L = n.n(I);
+			const M = c.a.wrapped(O.a, "Planet", L.a),
+				R = c.a.img("SubredditIcon", L.a),
+				W = Object(a.c)({
+					arePowerupsEnabled: v.a,
+					powerups: C.g,
+					spPollsEnabled: f.d.spPolls,
 					subredditInlineEditingEnabled: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return Object(w.a)(e, {
+						return Object(E.a)(e, {
 							subredditId: n
 						})
 					},
-					widget: O.f
+					widget: j.f
 				});
-			t.a = Object(i.b)(_)(Object(d.a)(e => {
+			t.a = Object(i.b)(W, (e, t) => ({
+				openPowerupsModal: () => {
+					e(Object(u.i)(l.a.ECON_POWERUPS_PURCHASE))
+				}
+			}))(Object(d.a)(e => {
 				const t = e.subreddit ? e.subreddit.id : e.subredditId,
 					n = e.subreddit ? e.subreddit.name : e.subredditName,
 					s = e.subreddit ? e.subreddit.url : e.subredditUrl,
 					i = e.subreddit ? e.subreddit.title : "",
-					a = e.subreddit && Object(x.a)(e),
+					a = e.subreddit && Object(k.a)(e),
 					d = !(!e.theme || !a),
 					c = n.charAt(0).toUpperCase() + n.slice(1),
-					g = !!e.subreddit && e.subredditInlineEditingEnabled,
-					y = Object(o.a)(C.a.SubredditIcon, C.a.editableIcon, {
-						[C.a.emptyEditableIcon]: !a
+					l = !!e.subreddit && e.subredditInlineEditingEnabled,
+					u = Object(o.a)(L.a.SubredditIcon, L.a.editableIcon, {
+						[L.a.emptyEditableIcon]: !a
 					}),
-					w = r.a.createElement(u.a, {
-						className: y,
+					f = e.arePowerupsEnabled && e.powerups && e.powerups.tiersInfo.length > 1,
+					O = r.a.createElement(p.a, {
+						className: u,
 						subreddit: e.subreddit,
 						iconUrl: a || void 0,
 						inTopBar: !0
 					}),
-					O = d ? r.a.createElement(j, {
+					v = d ? r.a.createElement(R, {
 						src: a || void 0
-					}) : r.a.createElement(E, null),
-					v = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0);
+					}) : r.a.createElement(M, null),
+					C = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0);
 				return r.a.createElement("div", {
-					className: C.a.container,
+					className: L.a.container,
 					style: {
-						maxWidth: e.layout === b.g.Large ? "".concat(984, "px") : "100%"
+						maxWidth: e.layout === g.g.Large ? "".concat(984, "px") : "100%"
 					}
 				}, r.a.createElement("div", {
-					className: C.a.subredditMetaContainer
-				}, g ? w : O, r.a.createElement("div", {
-					className: Object(o.a)(C.a.textContainer, {
-						[C.a.textContainerNoIcon]: !d
+					className: L.a.subredditMetaContainer
+				}, l ? O : v, r.a.createElement("div", {
+					className: Object(o.a)(L.a.textContainer, {
+						[L.a.textContainerNoIcon]: !d
 					})
 				}, r.a.createElement("div", {
-					className: C.a.text
+					className: L.a.text
 				}, r.a.createElement("h1", {
-					className: C.a.title
+					className: L.a.title
 				}, i || c), !!i && r.a.createElement("h2", {
-					className: C.a.description
-				}, "r/", n)), r.a.createElement("div", {
-					className: C.a.subscribeButtonContainer
-				}, r.a.createElement(p.a, {
-					className: C.a.subscribeButton,
+					className: L.a.description
+				}, "r/", n), f && r.a.createElement(T, {
+					level: e.powerups.tier,
+					className: L.a.levelBadge,
+					onClick: e.openPowerupsModal
+				})), r.a.createElement("div", {
+					className: L.a.subscribeButtonContainer
+				}, r.a.createElement(h.a, {
+					className: L.a.subscribeButton,
 					getEventFactory: e => {
-						return (e => t => Object.assign({}, k.defaults(t), {
+						return (e => t => Object.assign({}, w.defaults(t), {
 							source: "id_banner",
-							action: f.c.CLICK,
+							action: y.c.CLICK,
 							noun: e,
-							subreddit: k.subreddit(t)
+							subreddit: w.subreddit(t)
 						}))(e ? "unsubscribe" : "subscribe")
 					},
 					identifier: {
 						name: n,
-						type: h.a.SUBREDDIT
+						type: x.a.SUBREDDIT
 					},
 					small: !0
-				})), e.subreddit && r.a.createElement(l.a, {
+				})), e.subreddit && r.a.createElement(m.a, {
 					subreddit: e.subreddit,
 					headerButton: !0
-				}))), v && r.a.createElement(m.a, {
+				}))), C && r.a.createElement(b.a, {
 					disableFullscreen: !0,
 					isTopBannerVariant: !0,
 					homeUrl: s,
 					subredditId: t,
-					subredditNavContainerClassName: C.a.subredditNavContainer
+					subredditNavContainerClassName: L.a.subredditNavContainer
 				}))
 			}))
 		},
@@ -1899,7 +1938,7 @@
 						className: Object(a.a)(t, c.a.loading)
 					})
 				},
-				getComponent: () => Promise.all([n.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e3dfa4ce"), n.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"), n.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"), n.e("EconomicsCommunityTipJar")]).then(n.bind(null, "./src/reddit/components/Economics/CommunityTipJar/index.tsx")).then(e => e.default)
+				getComponent: () => Promise.all([n.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), n.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"), n.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"), n.e("EconomicsCommunityTipJar")]).then(n.bind(null, "./src/reddit/components/Economics/CommunityTipJar/index.tsx")).then(e => e.default)
 			});
 			t.a = Object(o.a)("spCommunityTipJar", l)
 		},
@@ -5997,6 +6036,38 @@
 				fill: "inherit"
 			}))
 		},
+		"./src/reddit/icons/svgs/Powerup/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 32 32",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				d: "M12.249 32c-.4 0-.8-.1-1.2-.25l-.05-.05-5.05-2.6c-1.25-.7-1.75-2.2-1.25-3.5l.05-.1 2.45-5.45-3.15-1.5a2.985 2.985 0 01-1.4-3.55l3.5-12.05C6.649 1.2 8.299 0 10.099 0h7.8c.45 0 .9.1 1.3.3l.15.1 4.85 2.45c1.5.8 2.05 2.55 1.35 4.05l-2.2 4.3 4.45 2.25c.8.45 1.35 1.25 1.45 2.2.1.9-.2 1.8-.9 2.45l-14.15 13.15c-.55.5-1.25.75-1.95.75z",
+				fill: "#000"
+			}), r.a.createElement("path", {
+				d: "M10.648 17l-.85 2.1-4.65-2.2c.1.05.25.1.4.1h5.1zM23.749 13.6l3.1 1.6c.5.3.65 1 .15 1.45L12.849 29.8c-.3.25-.65.3-.95.15l-4.85-2.5c.3.1.65.1.9-.15l14.15-13.15c.5-.45.35-1.15-.15-1.45l1.8.9z",
+				fill: "#FF4500"
+			}), r.a.createElement("path", {
+				d: "M23.75 13.6l3.1 1.6c.5.3.65 1 .15 1.45l-4.9-2.5c.5-.45.35-1.15-.15-1.45l1.8.9z",
+				fill: "#FF8717"
+			}), r.a.createElement("path", {
+				d: "M18.898 3.5c.25-.55.05-1.1-.45-1.4l4.9 2.5c.5.25.7.85.45 1.4l-3.35 6.55h-6.05l4.5-9.05z",
+				fill: "#FF4500"
+			}), r.a.createElement("path", {
+				d: "M18.9 3.5c.25-.55.05-1.1-.45-1.4l4.9 2.5c.5.25.7.85.45 1.4l-4.9-2.5z",
+				fill: "#FF8717"
+			}), r.a.createElement("path", {
+				d: "M21.95 12.65c.5.3.65 1 .15 1.45L7.95 27.3c-.3.25-.65.3-.9.15l-.1-.05a.86.86 0 01-.4-1.05l4.1-9.35h-5.1c-.15 0-.3-.05-.45-.1l-.1-.05c-.4-.25-.65-.75-.5-1.25L8.05 3.55A2.19 2.19 0 0110.15 2h7.8c.15 0 .3.05.45.1l.05.05c.45.25.7.85.45 1.4l-4.5 9.05h7.1c.15 0 .3.05.4.1l.05-.05z",
+				fill: "#FFD635"
+			}), r.a.createElement("path", {
+				d: "M15.599 3.45c.55-.15 1.15-.25 1.7-.45-.6-.1-1.15-.15-1.75-.2-.6-.05-1.15-.05-1.75-.1-1.15-.05-2.25 0-3.4.05-.55 0-1.05.3-1.35.8-.15.3-.15.35-.2.5l-.15.4-.5 1.55c-.35 1.05-.7 2.1-1 3.15-.3 1.05-.65 2.1-.9 3.2-.3 1.05-.6 2.15-.8 3.25.55-1 1-2 1.5-3 .45-1 .9-2 1.35-3.05.4-1 .85-2.05 1.2-3.1l.6-1.55.25-.65h.05c1.15-.1 2.3-.25 3.4-.45.6-.1 1.15-.2 1.75-.35zM20.25 13.35c-1.1-.05-2.2-.05-3.3 0-.55 0-1.1.05-1.65.1-.55.05-1.1.1-1.65.2.55.15 1.1.25 1.6.35.55.1 1.1.2 1.65.25.6.1 1.25.15 1.85.2-.45.45-.9.85-1.3 1.3-.75.75-1.5 1.5-2.25 2.3-.75.8-1.5 1.55-2.2 2.35-.7.8-1.45 1.6-2.1 2.45.9-.65 1.7-1.3 2.55-2 .85-.7 1.65-1.4 2.45-2.1.8-.7 1.6-1.45 2.4-2.15l2.35-2.2c.1-.1.15-.25.2-.4 0-.4-.3-.65-.6-.65z",
+				fill: "#fff"
+			}))
+		},
 		"./src/reddit/models/SubredditWikiPage/index.ts": function(e, t, n) {
 			"use strict";
 			var s, r;
@@ -6359,4 +6430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.d085c0f1174a6fb2a2a2.js.map
+//# sourceMappingURL=SubredditWiki.fa7ea53c0766955bcedf.js.map

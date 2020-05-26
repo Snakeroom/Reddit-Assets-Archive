@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2e43d3ff893f68b32340.js
-// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2981797f68d4a95b3643.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -96,13 +96,13 @@
 						key: "d"
 					}, t)))
 				},
-				w = () => n.a.createElement(C, null, n.a.createElement("div", {
+				v = () => n.a.createElement(C, null, n.a.createElement("div", {
 					className: f.a.emptyScore,
 					key: "s"
 				}));
 			t.b = y(x(e => n.a.createElement("div", {
 				className: Object(i.a)(e.className, h.a.classicPostStyles, h.a.classicAndCompactPlaceholderStyles)
-			}, n.a.createElement(c.b, null, n.a.createElement(w, null)), n.a.createElement("div", {
+			}, n.a.createElement(c.b, null, n.a.createElement(v, null)), n.a.createElement("div", {
 				className: f.a.mainBody
 			}, n.a.createElement("div", {
 				className: f.a.thumbnailContainer
@@ -194,8 +194,8 @@
 				P = s("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
 				x = s("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
 				C = s("./src/reddit/icons/svgs/LargePosts/index.tsx"),
-				w = s("./src/reddit/selectors/telemetry.ts"),
-				v = s("./src/reddit/selectors/tooltip.ts"),
+				v = s("./src/reddit/selectors/telemetry.ts"),
+				w = s("./src/reddit/selectors/tooltip.ts"),
 				O = s("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
 				j = s.n(O);
 
@@ -229,7 +229,7 @@
 				},
 				R = Object(g.t)(),
 				M = Object(i.c)({
-					dropdownIsOpen: Object(v.b)(k),
+					dropdownIsOpen: Object(w.b)(k),
 					postLayout: g.N,
 					redditStyle: g.A
 				}),
@@ -252,8 +252,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(w.screen)(t),
-							subreddit: Object(w.subreddit)(t)
+							screen: Object(v.screen)(t),
+							subreddit: Object(v.subreddit)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -538,9 +538,9 @@
 				}
 				return s
 			};
-			const w = c.e[1] + 24,
-				v = g.f + 8 + 152 + 32 + 16,
-				O = v + w + 8,
+			const v = c.e[1] + 24,
+				w = g.f + 8 + 152 + 32 + 16,
+				O = w + v + 8,
 				j = P.a.div("Container", y.a),
 				S = P.a.wrapped(e => {
 					var {
@@ -569,7 +569,7 @@
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > O,
-						shouldFooterSticky: this.windowHeight > v
+						shouldFooterSticky: this.windowHeight > w
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -661,13 +661,13 @@
 				P = s("./src/reddit/models/Theme/index.ts"),
 				x = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			const C = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				w = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
-				v = e => {
+				v = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				w = e => {
 					const t = C(e);
 					return Object(P.f)(t)
 				},
 				O = e => {
-					const t = w(e);
+					const t = v(e);
 					return Object(P.f)(t)
 				};
 			var j = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
@@ -710,11 +710,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = C(this.props), e.borderColor = Object(g.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = v(this.props), e
+					return e.backgroundColor = C(this.props), e.borderColor = Object(g.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = w(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = w(this.props), e.color = e.fill = O(this.props), e
+					return e.backgroundColor = v(this.props), e.color = e.fill = O(this.props), e
 				}
 				render() {
 					const {
@@ -767,7 +767,7 @@
 			s.d(t, "c", (function() {
 				return x
 			})), s.d(t, "d", (function() {
-				return w
+				return v
 			})), s.d(t, "b", (function() {
 				return O
 			}));
@@ -801,7 +801,7 @@
 				})
 			}
 			const C = x(),
-				w = {
+				v = {
 					apiError: f.c,
 					apiPending: f.d,
 					measureScrollFPS: g.d.measureScrollFPS,
@@ -821,7 +821,7 @@
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => h.a
 				},
-				v = Object(n.c)(w),
+				w = Object(n.c)(v),
 				O = (e, t) => {
 					let {
 						isFrontpage: s
@@ -849,7 +849,7 @@
 						}
 					}
 				},
-				j = Object(o.b)(v, O, (e, t, s) => Object.assign({}, e, t, s, {
+				j = Object(o.b)(w, O, (e, t, s) => Object.assign({}, e, t, s, {
 					postClickEvent: u.f,
 					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
@@ -1207,12 +1207,21 @@
 			"use strict";
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => n.a.createElement("svg", r({
 				viewBox: "0 0 11.4 11.4",
 				version: "1.1",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("g", null, n.a.createElement("path", {
+			}, e), n.a.createElement("g", null, n.a.createElement("path", {
 				fill: "inherit",
 				d: "m11.17929,5.99479c0.08081,-0.19519 0.08081,-0.41599 0,-0.61118c-0.0408,-0.0984 -0.0992,-0.1864 -0.17361,-0.2608l-4.79963,-4.79911c-0.31283,-0.3128 -0.81847,-0.3128 -1.1313,0c-0.31283,0.31279 -0.31283,0.81918 0,1.13118l3.43471,3.43433l-7.66949,0c-0.44244,0 -0.80007,0.3584 -0.80007,0.79999c0,0.44159 0.35763,0.79999 0.80007,0.79999l7.66949,0l-3.43471,3.43433c-0.31283,0.3128 -0.31283,0.81919 0,1.13118c0.15601,0.156 0.36083,0.2344 0.56565,0.2344c0.20482,0 0.40964,-0.0784 0.56565,-0.2344l4.79963,-4.79911c0.07441,-0.0744 0.13281,-0.1624 0.17361,-0.2608"
 			})))
@@ -1294,4 +1303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2e43d3ff893f68b32340.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.2981797f68d4a95b3643.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmotesTooltip.5ae89cc3bdf43f999bba.js
-// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmotesTooltip.ece9e883c20b60ef0f07.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/tooltip.m.less": function(e, t, o) {
@@ -222,20 +222,21 @@
 				render() {
 					const {
 						showUpsell: e,
-						subreddit: t
+						subreddit: t,
+						shouldHideAddEmote: o
 					} = this.props, {
-						emoteBeingTyped: o,
-						isTooltipVisible: s
-					} = this.state, n = this.getMatchingEmotes(o), c = d()(), l = t.name, r = Object(h.a)("/web/special-membership/".concat(l, "?corr=").concat(c));
+						emoteBeingTyped: s,
+						isTooltipVisible: n
+					} = this.state, c = this.getMatchingEmotes(s), l = d()(), r = t.name, p = Object(h.a)("/web/special-membership/".concat(r, "?corr=").concat(l));
 					return a.a.createElement(w.b, {
-						className: o ? void 0 : O.a.toolbarTooltip,
+						className: s ? void 0 : O.a.toolbarTooltip,
 						onSetPositionUpdater: e => this.updateTooltipPosition = e,
 						trianglePlacement: w.a.Below
-					}, s && a.a.createElement("div", {
+					}, n && a.a.createElement("div", {
 						className: O.a.tooltip
 					}, a.a.createElement("div", {
 						className: O.a.header
-					}, o ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", o)], {
+					}, s ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", s)], {
 						hk: "tVQ7S"
 					}) : i.fbt._("Add r/{communityName} Emote", [i.fbt._param("communityName", t.name)], {
 						hk: "21G6fU"
@@ -247,7 +248,7 @@
 					})), a.a.createElement("div", {
 						className: O.a.body,
 						ref: e => this.bodyEl = e
-					}, n.map((e, t) => a.a.createElement("article", {
+					}, c.map((e, t) => a.a.createElement("article", {
 						className: O.a.emotePack,
 						key: t
 					}, e.title && a.a.createElement("header", {
@@ -267,19 +268,20 @@
 						style: {
 							backgroundImage: "url(".concat(e.emoji.path, ")")
 						}
-					})))))), !o && e && a.a.createElement("div", {
+					})))))), !s && e && a.a.createElement("div", {
 						className: O.a.upsell
 					}, a.a.createElement("div", {
 						className: Object(m.a)(O.a.upsellMoreEmotes, O.a.emotes)
-					}, C.map(e => a.a.createElement("img", {
+					}, C.map((e, t) => a.a.createElement("img", {
 						className: O.a.upsellMoreEmotesImg,
-						src: e
+						src: e,
+						key: "".concat(e, "_").concat(t)
 					}))), a.a.createElement(g.h, {
 						className: O.a.upsellMoreEmotesButton,
-						to: r,
+						to: p,
 						onClick: e => {
 							e.stopPropagation(), this.props.sendEvent(e => Object.assign({
-								correlationId: c,
+								correlationId: l,
 								source: "meta",
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more"
@@ -289,7 +291,7 @@
 						}
 					}, i.fbt._("Get More Emotes", null, {
 						hk: "3GJcvl"
-					}))), !o && a.a.createElement("article", {
+					}))), !s && !o && a.a.createElement("article", {
 						className: O.a.emotePack
 					}, a.a.createElement("header", {
 						className: O.a.emotePackTitle
@@ -401,4 +403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmotesTooltip.5ae89cc3bdf43f999bba.js.map
+//# sourceMappingURL=EmotesTooltip.ece9e883c20b60ef0f07.js.map

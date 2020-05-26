@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.a25e7c6ebc1d686da417.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.48f6d8a1eb8428c22fda.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
@@ -176,10 +176,10 @@
 				y = n("./src/reddit/selectors/gov.ts"),
 				k = n("./node_modules/reselect/es/index.js"),
 				x = n("./src/reddit/components/Governance/WalletRegistration/StellarBanner/index.m.less"),
-				I = n.n(x);
+				w = n.n(x);
 			const {
-				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = 1576476e6;
+				fbt: I
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = 1576476e6;
 			class j extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -223,48 +223,48 @@
 						sep7link: o
 					} = this.state;
 					return o && e ? r ? s.a.createElement("div", {
-						className: Object(a.a)(I.a.completedBanner, t)
+						className: Object(a.a)(w.a.completedBanner, t)
 					}, s.a.createElement(i.a, {
-						deadline: w,
+						deadline: _,
 						subredditId: n
 					}), s.a.createElement(g.a, {
-						className: I.a.checkIcon
-					}), _._("Registered for distribution", null, {
+						className: w.a.checkIcon
+					}), I._("Registered for distribution", null, {
 						hk: "p7lNT"
 					})) : s.a.createElement("article", {
-						className: Object(a.a)(I.a.container, t)
+						className: Object(a.a)(w.a.container, t)
 					}, s.a.createElement("div", {
-						className: I.a.content
+						className: w.a.content
 					}, s.a.createElement(i.a, {
-						deadline: w,
+						deadline: _,
 						subredditId: n
 					}), s.a.createElement("header", {
-						className: I.a.title
-					}, _._("Register for Photons Distribution on the Stellar Blockchain", null, {
+						className: w.a.title
+					}, I._("Register for Photons Distribution on the Stellar Blockchain", null, {
 						hk: "1jg78N"
 					})), s.a.createElement("div", {
-						className: I.a.requirements
-					}, _._("Requires an app that can handle SEP7 links, like {=Lobstr} .", [_._param("=Lobstr", s.a.createElement("a", {
+						className: w.a.requirements
+					}, I._("Requires an app that can handle SEP7 links, like {=Lobstr} .", [I._param("=Lobstr", s.a.createElement("a", {
 						href: "https://lobstr.co/",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, _._("Lobstr", null, {
+					}, I._("Lobstr", null, {
 						hk: "2Z47KX"
 					})))], {
 						hk: "3epiNq"
 					})), s.a.createElement("div", {
-						className: I.a.disclaimer
-					}, _._("Disclaimer: Neither Stellar nor Lobstr are affiliated with Reddit and the following is not an advertisement or an endorsement. You understand and agree that Reddit is not responsible for any actions or inactions or harm caused by using either Stellar or Lobstr.", null, {
+						className: w.a.disclaimer
+					}, I._("Disclaimer: Neither Stellar nor Lobstr are affiliated with Reddit and the following is not an advertisement or an endorsement. You understand and agree that Reddit is not responsible for any actions or inactions or harm caused by using either Stellar or Lobstr.", null, {
 						hk: "2rEXAk"
 					}))), s.a.createElement(d.g, {
-						className: I.a.registerLink,
+						className: w.a.registerLink,
 						href: o,
 						target: "_blank",
 						onClick: this.checkForComplete
-					}, _._("register", null, {
+					}, I._("register", null, {
 						hk: "3Pr9JU"
 					})), s.a.createElement(v.a, {
-						className: I.a.close,
+						className: w.a.close,
 						onClick: this.onClose
 					})) : null
 				}
@@ -325,7 +325,7 @@
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
 				}(r || (r = {})),
 				function(e) {
-					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
+					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.Powerups = "powerups", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(s || (s = {}));
 			const l = async (e, t, n) => d(e, t, n, !0), u = async (e, t, n) => d(e, t, n, !1), m = (e, t) => i(e, t, r.UpsellBanners, Object.keys(s).reduce((e, t) => (e[s[t]] = !1, e), {}))
 		},
@@ -414,11 +414,11 @@
 			})), n.d(t, "o", (function() {
 				return x
 			})), n.d(t, "l", (function() {
-				return I
-			})), n.d(t, "m", (function() {
-				return _
-			})), n.d(t, "s", (function() {
 				return w
+			})), n.d(t, "m", (function() {
+				return I
+			})), n.d(t, "s", (function() {
+				return _
 			})), n.d(t, "a", (function() {
 				return j
 			})), n.d(t, "f", (function() {
@@ -445,7 +445,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = w(e, {
+					const r = _(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -457,15 +457,15 @@
 					}
 				},
 				m = (e, t) => {
-					const n = I(e, t);
+					const n = w(e, t);
 					if (n) return n.mainHeader
 				},
 				b = (e, t) => {
-					const n = I(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				p = (e, t) => {
-					const n = I(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -498,15 +498,15 @@
 					const n = S(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				I = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				_ = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				w = (e, t) => {
-					const n = _(e, t);
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				I = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				_ = (e, t) => {
+					const n = I(e, t);
 					return n && n.walletProvider
 				},
 				j = (e, t) => {
-					const n = w(e, t),
-						r = _(e, t);
+					const n = _(e, t),
+						r = I(e, t);
 					return n && n.provider || r && r.provider
 				},
 				E = (e, t) => {
@@ -514,7 +514,7 @@
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
 				S = (e, t) => {
-					const n = w(e, t),
+					const n = _(e, t),
 						r = j(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -534,7 +534,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = w(e, {
+					const r = _(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
@@ -542,10 +542,10 @@
 					}
 				},
 				N = (e, t) => {
-					const n = _(e, t);
+					const n = I(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.a25e7c6ebc1d686da417.js.map
+//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.48f6d8a1eb8428c22fda.js.map

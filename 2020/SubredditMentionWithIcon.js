@@ -1,9 +1,9 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.007a53b3f6020662ac22.js
-// Retrieved at 5/19/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.96793b0530b7943d3247.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
-			e.exports = JSON.parse('{"id":"f492118344c7"}')
+			e.exports = JSON.parse('{"id":"50214b269705"}')
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1105,4 +1105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.007a53b3f6020662ac22.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.96793b0530b7943d3247.js.map

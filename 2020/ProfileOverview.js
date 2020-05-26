@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a87064bd671e3733bb4c.js
-// Retrieved at 5/26/2020, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.fa9cb9341d15892e0940.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -4240,7 +4240,7 @@
 			const y = Object(O.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
-				getComponent: () => Promise.all([s.e("vendors~CoinsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~Ec~e3dfa4ce"), s.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"), s.e("EconomicsEntryPointsPostFlatlistSupportCTA")]).then(s.bind(null, "./src/reddit/components/Economics/EntryPoints/PostFlatlistSupportCTA/index.tsx")).then(e => e.default)
+				getComponent: () => Promise.all([s.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), s.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"), s.e("EconomicsEntryPointsPostFlatlistSupportCTA")]).then(s.bind(null, "./src/reddit/components/Economics/EntryPoints/PostFlatlistSupportCTA/index.tsx")).then(e => e.default)
 			});
 			var _ = Object(a.b)(() => Object(i.c)({
 					featureEnabled: C.d.spSupport,
@@ -5900,7 +5900,7 @@
 						showEditFlair: pe,
 						subredditOrProfile: ue,
 						userIsOp: be
-					} = e, he = !!e.redditStyle || !!e["data-redditstyle"], xe = he ? void 0 : u, fe = Object(l.a)(te), ge = se && fe, ve = Object(c.a)(te), Oe = Object(d.a)(te), Ce = Object(L.c)(ae), Ee = !!ae.media && ae.media.type === h.n.RTJSON, ye = be && Ee, _e = s ? s - A.a : void 0, we = !(C && E || U), ke = (e => e === ee.Fb.OnlyTitles)(ie) && !Object(Y.a)(ae), Pe = (e => e === ee.Fb.MediumHeight)(ie) && !Object(Y.a)(ae), je = (e => {
+					} = e, he = !!e.redditStyle || !!e["data-redditstyle"], xe = he ? void 0 : u, fe = Object(l.a)(te), ge = se && fe, ve = Object(c.a)(te), Oe = Object(d.a)(te), Ce = Object(L.c)(ae), Ee = !!ae.media && ae.media.type === h.n.RTJSON, ye = be && Ee, _e = s ? s - A.a : void 0, we = !(C && E || U), ke = (e => e === ee.Hb.OnlyTitles)(ie) && !Object(Y.a)(ae), Pe = (e => e === ee.Hb.MediumHeight)(ie) && !Object(Y.a)(ae), je = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -13705,12 +13705,21 @@
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n);
-			t.a = e => o.a.createElement("svg", {
-				className: e.className,
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => o.a.createElement("svg", r({
 				viewBox: "0 0 11.4 11.4",
 				version: "1.1",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("g", null, o.a.createElement("path", {
+			}, e), o.a.createElement("g", null, o.a.createElement("path", {
 				fill: "inherit",
 				d: "m11.17929,5.99479c0.08081,-0.19519 0.08081,-0.41599 0,-0.61118c-0.0408,-0.0984 -0.0992,-0.1864 -0.17361,-0.2608l-4.79963,-4.79911c-0.31283,-0.3128 -0.81847,-0.3128 -1.1313,0c-0.31283,0.31279 -0.31283,0.81918 0,1.13118l3.43471,3.43433l-7.66949,0c-0.44244,0 -0.80007,0.3584 -0.80007,0.79999c0,0.44159 0.35763,0.79999 0.80007,0.79999l7.66949,0l-3.43471,3.43433c-0.31283,0.3128 -0.31283,0.81919 0,1.13118c0.15601,0.156 0.36083,0.2344 0.56565,0.2344c0.20482,0 0.40964,-0.0784 0.56565,-0.2344l4.79963,-4.79911c0.07441,-0.0744 0.13281,-0.1624 0.17361,-0.2608"
 			})))
@@ -15028,7 +15037,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.T
 				});
-				return !(!t || Object(n.rc)(t))
+				return !(!t || Object(n.tc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15045,4 +15054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.a87064bd671e3733bb4c.js.map
+//# sourceMappingURL=ProfileOverview.fa9cb9341d15892e0940.js.map

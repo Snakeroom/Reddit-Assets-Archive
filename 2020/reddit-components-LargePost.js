@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fc672c8314d0f0cd7039.js
-// Retrieved at 5/21/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0ecd96d546c0eaff9140.js
+// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -852,17 +852,17 @@
 				F = s("./src/reddit/components/PostMedia/index.tsx"),
 				W = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				D = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				U = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
-				H = s.n(U);
+				H = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
+				U = s.n(H);
 			const {
 				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var z = () => r.a.createElement("div", {
-					className: H.a.container
+					className: U.a.container
 				}, r.a.createElement(D.a, {
-					className: H.a.pinnedIcon
+					className: U.a.pinnedIcon
 				}), r.a.createElement("span", {
-					className: H.a.metaText
+					className: U.a.metaText
 				}, V._("pinned by moderators", null, {
 					hk: "1qU8t4"
 				}))),
@@ -976,8 +976,8 @@
 						isLoggedIn: O,
 						isOverlay: _,
 						isPostChainDismissed: D,
-						isPostChained: U,
-						isTopicPage: H,
+						isPostChained: H,
+						isTopicPage: U,
 						language: V,
 						listingKey: q,
 						listingName: Q,
@@ -993,7 +993,7 @@
 						showEditFlair: me,
 						subredditOrProfile: ue,
 						userIsOp: be
-					} = e, he = !!e.redditStyle || !!e["data-redditstyle"], xe = he ? void 0 : u, ve = Object(l.a)(te), fe = se && ve, ge = Object(d.a)(te), ye = Object(c.a)(te), Pe = Object(A.c)(ie), Oe = !!ie.media && ie.media.type === h.n.RTJSON, _e = be && Oe, Ce = s ? s - B.a : void 0, je = !(P && O || H), we = (e => e === ee.Fb.OnlyTitles)(ae) && !Object(Y.a)(ie), Se = (e => e === ee.Fb.MediumHeight)(ae) && !Object(Y.a)(ie), ke = (e => {
+					} = e, he = !!e.redditStyle || !!e["data-redditstyle"], xe = he ? void 0 : u, ve = Object(l.a)(te), fe = se && ve, ge = Object(d.a)(te), ye = Object(c.a)(te), Pe = Object(A.c)(ie), Oe = !!ie.media && ie.media.type === h.n.RTJSON, _e = be && Oe, Ce = s ? s - B.a : void 0, je = !(P && O || U), we = (e => e === ee.Hb.OnlyTitles)(ae) && !Object(Y.a)(ie), Se = (e => e === ee.Hb.MediumHeight)(ae) && !Object(Y.a)(ie), ke = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -1051,7 +1051,7 @@
 						isCompactPinnedPost: !!ke,
 						isCurrentUserProfilePost: y,
 						isOverlay: !!_,
-						isTopicPage: !!H,
+						isTopicPage: !!U,
 						language: V,
 						post: ie,
 						shouldShowSubscribeButton: je,
@@ -1133,7 +1133,7 @@
 							report: !1
 						})
 					}))));
-					return r.a.createElement(r.a.Fragment, null, Te, U && !D && r.a.createElement(T.a, {
+					return r.a.createElement(r.a.Fragment, null, Te, H && !D && r.a.createElement(T.a, {
 						className: le.a.chain,
 						listingKey: q,
 						listingName: Q,
@@ -1580,9 +1580,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.T
 				});
-				return !(!t || Object(o.rc)(t))
+				return !(!t || Object(o.tc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.fc672c8314d0f0cd7039.js.map
+//# sourceMappingURL=reddit-components-LargePost.0ecd96d546c0eaff9140.js.map
