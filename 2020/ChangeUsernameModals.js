@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.4855f36e04a56d5f12d0.js
-// Retrieved at 5/26/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c9fa707f4dd519f2724d.js
+// Retrieved at 5/26/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -820,4 +820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChangeUsernameModals.4855f36e04a56d5f12d0.js.map
+//# sourceMappingURL=ChangeUsernameModals.c9fa707f4dd519f2724d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.029f7f224e0b4d049d9f.js
-// Retrieved at 5/26/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cfaf9e1d26e936a4928e.js
+// Retrieved at 5/26/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -4006,7 +4006,9 @@
 						overlayClassName: f,
 						user: h,
 						withOverlay: !0
-					}), d && o.a.createElement(le.a, null))
+					}), d && o.a.createElement(le.a, {
+						isResponsiveSettingsEnabled: r
+					}))
 				}
 			}
 			var Ct = Object(pe.t)()(kt(yt)),
@@ -6556,4 +6558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.029f7f224e0b4d049d9f.js.map
+//# sourceMappingURL=Settings.cfaf9e1d26e936a4928e.js.map
