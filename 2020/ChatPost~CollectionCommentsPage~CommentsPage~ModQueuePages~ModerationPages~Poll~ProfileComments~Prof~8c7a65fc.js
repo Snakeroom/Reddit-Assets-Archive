@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.9deb2bd582b936463b0a.js
-// Retrieved at 5/20/2020, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.62d28c85d15a16c6f544.js
+// Retrieved at 5/26/2020, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -225,18 +225,33 @@
 				L = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				B = s("./src/higherOrderComponents/makeAsync.tsx"),
 				H = s("./src/lib/loadWithRetries/index.ts");
-			var D = Object(B.a)({
+			var R = Object(B.a)({
 					getComponent: () => Object(H.a)(() => s.e("AwardTooltip").then(s.bind(null, "./src/reddit/components/AwardTooltip/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				R = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				U = s.n(R);
+				D = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
+				U = s.n(D);
 			const F = 3500,
 				q = 500;
 			class Q extends r.a.PureComponent {
 				constructor(e) {
-					super(e), this.handleOnClick = () => {
+					super(e), this.imageRef = r.a.createRef(), this.triggerAnimation = () => {
+						const {
+							award: e,
+							prefersReducedMotion: t,
+							tooltipId: s,
+							triggerOverlayAnimation: o
+						} = this.props;
+						e.id !== y.g && (this.setState({
+							userGiven: !0,
+							shouldAnimate: !t
+						}), t || (o(s), setTimeout(() => {
+							this.setState({
+								shouldAnimate: !1
+							})
+						}, F)))
+					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
 							award: t
@@ -272,26 +287,12 @@
 					}
 				}
 				componentDidMount() {
-					!!this.props.shouldAnimateOnMount && this.triggerAnimation()
+					const e = this.imageRef ? this.imageRef.current : null;
+					e && e.addEventListener("awardAdded", this.triggerAnimation)
 				}
-				componentDidUpdate(e) {
-					e.count < this.props.count && this.triggerAnimation()
-				}
-				triggerAnimation() {
-					const {
-						award: e,
-						prefersReducedMotion: t,
-						tooltipId: s,
-						triggerOverlayAnimation: o
-					} = this.props;
-					e.id !== y.g && (this.setState({
-						userGiven: !0,
-						shouldAnimate: !t
-					}), t || (o(s), setTimeout(() => {
-						this.setState({
-							shouldAnimate: !1
-						})
-					}, F)))
+				componentWillUnmount() {
+					const e = this.imageRef ? this.imageRef.current : null;
+					e && e.removeEventListener("awardAdded", this.triggerAnimation)
 				}
 				render() {
 					const {
@@ -319,6 +320,7 @@
 							[U.a.hidden]: a
 						}),
 						id: c,
+						ref: this.imageRef,
 						src: i
 					}), a && r.a.createElement("img", {
 						alt: e.name,
@@ -326,7 +328,7 @@
 						src: d
 					})), r.a.createElement("span", {
 						className: U.a.count
-					}, t.toLocaleString()), r.a.createElement(D, {
+					}, t.toLocaleString()), r.a.createElement(R, {
 						award: e,
 						onHideAward: this.handleHideAward,
 						postOrComment: s,
@@ -371,7 +373,7 @@
 				$ = 100;
 			class ee extends r.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = r.a.createRef(), this.originalAwards = new Set, this.handleResize = S()(() => {
+					super(e), this.plaqueRef = r.a.createRef(), this.handleResize = S()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -418,7 +420,7 @@
 					this.state = {
 						canScrollLeft: !1,
 						canScrollRight: t && !e.multiline
-					}, e.awards.forEach(e => this.originalAwards.add(e.id))
+					}
 				}
 				shouldComponentUpdate(e, t) {
 					if (this.props.awards !== e.awards) {
@@ -463,50 +465,50 @@
 				render() {
 					const {
 						awards: e,
-						multiline: t,
-						post: s,
-						prefersReducedMotion: o,
-						onAddAward: n,
-						onHideAward: a,
-						onHideTooltip: i,
-						onShowTooltip: d,
-						tooltipType: c
+						hideAddAwardButton: t,
+						multiline: s,
+						post: o,
+						prefersReducedMotion: n,
+						onAddAward: a,
+						onHideAward: i,
+						onHideTooltip: d,
+						onShowTooltip: c,
+						tooltipType: l
 					} = this.props, {
-						canScrollLeft: l,
-						canScrollRight: m
-					} = this.state, u = e.length > 0, p = K(s.id, c);
+						canScrollLeft: m,
+						canScrollRight: u
+					} = this.state, p = e.length > 0, h = K(o.id, l);
 					return r.a.createElement("div", {
 						className: Object(_.a)(Y.a.awardBadges, {
-							[Y.a.noAwards]: !u,
-							[Y.a.multiline]: t
+							[Y.a.noAwards]: !p,
+							[Y.a.multiline]: s
 						}),
 						ref: this.plaqueRef
-					}, l && r.a.createElement(J, {
+					}, m && r.a.createElement(J, {
 						direction: "left",
 						onClick: this.handleScrollLeft
 					}), e.map(e => {
 						const {
 							awardCountsById: t = {}
-						} = s, c = t[e.id];
+						} = o, s = t[e.id];
 						return r.a.createElement(W, {
 							award: e,
-							count: c,
+							count: s,
 							key: e.id,
-							onAddAward: n,
-							onHideAward: a,
-							onHideTooltip: i,
-							onShowTooltip: d,
-							post: s,
-							prefersReducedMotion: o,
-							shouldAnimateOnMount: !this.originalAwards.has(e.id),
-							tooltipId: "".concat(p, "-").concat(e.id),
+							onAddAward: a,
+							onHideAward: i,
+							onHideTooltip: d,
+							onShowTooltip: c,
+							post: o,
+							prefersReducedMotion: n,
+							tooltipId: "".concat(h, "-").concat(e.id),
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
-					}), r.a.createElement(k, {
-						onAddAward: n
-					}), !t && r.a.createElement("div", {
+					}), !t && r.a.createElement(k, {
+						onAddAward: a
+					}), !s && r.a.createElement("div", {
 						className: Y.a.spacer
-					}), m && r.a.createElement(J, {
+					}), u && r.a.createElement(J, {
 						direction: "right",
 						onClick: this.handleScrollRight
 					}))
@@ -585,7 +587,7 @@
 						id: u,
 						ref: this.imageRef,
 						src: l
-					})), r.a.createElement("span", null, s > 1 && s, m && this.renderModAwardName()), r.a.createElement(D, {
+					})), r.a.createElement("span", null, s > 1 && s, m && this.renderModAwardName()), r.a.createElement(R, {
 						award: e,
 						onHideAward: () => n(e),
 						postOrComment: i,
@@ -801,6 +803,7 @@
 					} = this.state, f = "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, g = Object(y.p)(Object.keys(p.awardCountsById || {}).map(t => e[t]).filter(Boolean)), x = d ? O.c.Lightbox : void 0, w = s && s.id === p.authorId;
 					return r.a.createElement(r.a.Fragment, null, t ? r.a.createElement(te, {
 						awards: g,
+						hideAddAwardButton: !1 === p.isGildable || !0 === w,
 						multiline: !!c,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
@@ -1578,8 +1581,8 @@
 				L = s("./src/reddit/icons/fonts/Admin/index.tsx"),
 				B = (s("./src/reddit/icons/fonts/Premium/index.tsx"), s("./src/reddit/models/Flair/index.ts")),
 				H = s("./src/reddit/models/NewStructuredStyles/index.ts"),
-				D = s("./src/reddit/models/Post/index.ts"),
-				R = s("./src/reddit/models/Subreddit/index.ts"),
+				R = s("./src/reddit/models/Post/index.ts"),
+				D = s("./src/reddit/models/Subreddit/index.ts"),
 				U = s("./src/reddit/selectors/authorFlair.ts"),
 				F = s("./src/reddit/selectors/userFlair.ts"),
 				q = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1649,7 +1652,7 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: P,
 						tooltipType: N
-					} = this.props, M = m && m.meta && m.meta.name === d.yb.COMMENTS, k = Object(p.a)(h), L = a === B.b.Left, H = h.authorIsContractor && !!P && P.type === R.c.EmployeesOnly, U = !s && !M, F = () => n.a.createElement(V, {
+					} = this.props, M = m && m.meta && m.meta.name === d.yb.COMMENTS, k = Object(p.a)(h), L = a === B.b.Left, H = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, U = !s && !M, F = () => n.a.createElement(V, {
 						className: this.props.metaSeparatorClassName
 					}, "•"), q = n.a.createElement(n.a.Fragment, null, !k && n.a.createElement(z, {
 						style: {
@@ -1668,14 +1671,14 @@
 						flair: b,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: U
-					})), Object(D.h)(h.author) ? n.a.createElement(Z, {
+					})), Object(R.h)(h.author) ? n.a.createElement(Z, {
 						post: h,
 						isDeleted: !0,
 						renderContractorBadge: H,
 						style: {
 							color: G(this.props)
 						}
-					}) : n.a.createElement(o.Fragment, null, !Object(D.h)(h.author) && n.a.createElement(w.b, {
+					}) : n.a.createElement(o.Fragment, null, !Object(R.h)(h.author) && n.a.createElement(w.b, {
 						className: W.a.badge,
 						subredditId: h.belongsTo.id,
 						uniqueIdentifier: "".concat(h.id, "-").concat(s),
@@ -1684,7 +1687,7 @@
 						postOrComment: h,
 						tooltipType: N
 					}, n.a.createElement(v.b, {
-						ignore: Object(D.h)(h.author) || !!h.distinguishType && h.distinguishType !== d.A.NONE,
+						ignore: Object(R.h)(h.author) || !!h.distinguishType && h.distinguishType !== d.A.NONE,
 						subredditId: h.belongsTo.id,
 						userId: h.authorId
 					}, n.a.createElement(Z, {
@@ -1700,7 +1703,7 @@
 						flair: b,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: U
-					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(D.h)(h.author) && n.a.createElement(O.a, {
+					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(R.h)(h.author) && n.a.createElement(O.a, {
 						className: W.a.publicWallet,
 						contentId: h.id,
 						metaSeparator: n.a.createElement(F, null),
@@ -1878,13 +1881,6 @@
 					isSmall: s
 				})
 			}
-		},
-		"./src/reddit/helpers/awards/getAwardItemId.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return o
-			}));
-			const o = (e, t) => "awardItem__".concat(t, "-").concat(e)
 		},
 		"./src/reddit/helpers/isCrosspost.ts": function(e, t, s) {
 			"use strict";
@@ -2154,4 +2150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.9deb2bd582b936463b0a.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.62d28c85d15a16c6f544.js.map

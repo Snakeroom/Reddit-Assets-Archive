@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.f304c272dbb16c38a7c2.js
-// Retrieved at 5/20/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.6b1afba5db0be7392847.js
+// Retrieved at 5/26/2020, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5274,7 +5274,7 @@
 					multireddits: p.o
 				}),
 				x = Object(i.b)(h, (e, t) => ({
-					onLoadMoreMultireddits: () => e(Object(c.e)(t.profileName, !0))
+					onLoadMoreMultireddits: () => e(Object(c.f)(t.profileName, !0))
 				}), (e, t, s) => Object.assign({}, s, e, t, {
 					onLoadMore: () => {
 						e.hasMoreMultireddits && t.onLoadMoreMultireddits()
@@ -7733,4 +7733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.f304c272dbb16c38a7c2.js.map
+//# sourceMappingURL=ProfilePrivate.6b1afba5db0be7392847.js.map

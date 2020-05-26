@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5726f2ffddc9b77cfd6d.js
-// Retrieved at 5/26/2020, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.30deb9a9248f706fa157.js
+// Retrieved at 5/26/2020, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "064c04d-production"
+					SENTRY_RELEASE_VERSION: "ebdfab8-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -2794,7 +2794,22 @@
 				H = 500;
 			class V extends r.a.PureComponent {
 				constructor(e) {
-					super(e), this.handleOnClick = () => {
+					super(e), this.imageRef = r.a.createRef(), this.triggerAnimation = () => {
+						const {
+							award: e,
+							prefersReducedMotion: t,
+							tooltipId: n,
+							triggerOverlayAnimation: s
+						} = this.props;
+						e.id !== j.g && (this.setState({
+							userGiven: !0,
+							shouldAnimate: !t
+						}), t || (s(n), setTimeout(() => {
+							this.setState({
+								shouldAnimate: !1
+							})
+						}, K)))
+					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
 							award: t
@@ -2830,26 +2845,12 @@
 					}
 				}
 				componentDidMount() {
-					!!this.props.shouldAnimateOnMount && this.triggerAnimation()
+					const e = this.imageRef ? this.imageRef.current : null;
+					e && e.addEventListener("awardAdded", this.triggerAnimation)
 				}
-				componentDidUpdate(e) {
-					e.count < this.props.count && this.triggerAnimation()
-				}
-				triggerAnimation() {
-					const {
-						award: e,
-						prefersReducedMotion: t,
-						tooltipId: n,
-						triggerOverlayAnimation: s
-					} = this.props;
-					e.id !== j.g && (this.setState({
-						userGiven: !0,
-						shouldAnimate: !t
-					}), t || (s(n), setTimeout(() => {
-						this.setState({
-							shouldAnimate: !1
-						})
-					}, K)))
+				componentWillUnmount() {
+					const e = this.imageRef ? this.imageRef.current : null;
+					e && e.removeEventListener("awardAdded", this.triggerAnimation)
 				}
 				render() {
 					const {
@@ -2877,6 +2878,7 @@
 							[U.a.hidden]: i
 						}),
 						id: l,
+						ref: this.imageRef,
 						src: a
 					}), i && r.a.createElement("img", {
 						alt: e.name,
@@ -2929,7 +2931,7 @@
 				$ = 100;
 			class ee extends r.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = r.a.createRef(), this.originalAwards = new Set, this.handleResize = k()(() => {
+					super(e), this.plaqueRef = r.a.createRef(), this.handleResize = k()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -2976,7 +2978,7 @@
 					this.state = {
 						canScrollLeft: !1,
 						canScrollRight: t && !e.multiline
-					}, e.awards.forEach(e => this.originalAwards.add(e.id))
+					}
 				}
 				shouldComponentUpdate(e, t) {
 					if (this.props.awards !== e.awards) {
@@ -3021,50 +3023,50 @@
 				render() {
 					const {
 						awards: e,
-						multiline: t,
-						post: n,
-						prefersReducedMotion: s,
-						onAddAward: o,
-						onHideAward: i,
-						onHideTooltip: a,
-						onShowTooltip: c,
-						tooltipType: l
+						hideAddAwardButton: t,
+						multiline: n,
+						post: s,
+						prefersReducedMotion: o,
+						onAddAward: i,
+						onHideAward: a,
+						onHideTooltip: c,
+						onShowTooltip: l,
+						tooltipType: d
 					} = this.props, {
-						canScrollLeft: d,
-						canScrollRight: u
-					} = this.state, p = e.length > 0, m = J(n.id, l);
+						canScrollLeft: u,
+						canScrollRight: p
+					} = this.state, m = e.length > 0, h = J(s.id, d);
 					return r.a.createElement("div", {
 						className: Object(T.a)(X.a.awardBadges, {
-							[X.a.noAwards]: !p,
-							[X.a.multiline]: t
+							[X.a.noAwards]: !m,
+							[X.a.multiline]: n
 						}),
 						ref: this.plaqueRef
-					}, d && r.a.createElement(Q, {
+					}, u && r.a.createElement(Q, {
 						direction: "left",
 						onClick: this.handleScrollLeft
 					}), e.map(e => {
 						const {
 							awardCountsById: t = {}
-						} = n, l = t[e.id];
+						} = s, n = t[e.id];
 						return r.a.createElement(W, {
 							award: e,
-							count: l,
+							count: n,
 							key: e.id,
-							onAddAward: o,
-							onHideAward: i,
-							onHideTooltip: a,
-							onShowTooltip: c,
-							post: n,
-							prefersReducedMotion: s,
-							shouldAnimateOnMount: !this.originalAwards.has(e.id),
-							tooltipId: "".concat(m, "-").concat(e.id),
+							onAddAward: i,
+							onHideAward: a,
+							onHideTooltip: c,
+							onShowTooltip: l,
+							post: s,
+							prefersReducedMotion: o,
+							tooltipId: "".concat(h, "-").concat(e.id),
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
-					}), r.a.createElement(R, {
-						onAddAward: o
-					}), !t && r.a.createElement("div", {
+					}), !t && r.a.createElement(R, {
+						onAddAward: i
+					}), !n && r.a.createElement("div", {
 						className: X.a.spacer
-					}), u && r.a.createElement(Q, {
+					}), p && r.a.createElement(Q, {
 						direction: "right",
 						onClick: this.handleScrollRight
 					}))
@@ -3359,6 +3361,7 @@
 					} = this.state, f = "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, g = Object(j.p)(Object.keys(m.awardCountsById || {}).map(t => e[t]).filter(Boolean)), x = c ? E.c.Lightbox : void 0, y = n && n.id === m.authorId;
 					return r.a.createElement(r.a.Fragment, null, t ? r.a.createElement(te, {
 						awards: g,
+						hideAddAwardButton: !1 === m.isGildable || !0 === y,
 						multiline: !!l,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
@@ -23064,13 +23067,6 @@
 				})
 			}
 		},
-		"./src/reddit/helpers/awards/getAwardItemId.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			const s = (e, t) => "awardItem__".concat(t, "-").concat(e)
-		},
 		"./src/reddit/helpers/canPreviewSelfText/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/helpers/postHasSelfText/index.ts");
@@ -31581,4 +31577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5726f2ffddc9b77cfd6d.js.map
+//# sourceMappingURL=PostCreation.30deb9a9248f706fa157.js.map
