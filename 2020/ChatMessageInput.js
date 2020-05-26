@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.071a351244d3595b2972.js
-// Retrieved at 5/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.2095418cb72b3cfc1ba0.js
+// Retrieved at 5/26/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -320,18 +320,18 @@
 				E = s("./src/reddit/controls/ErrorText/index.tsx"),
 				w = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				I = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				O = s("./src/reddit/helpers/richTextEditor/index.ts"),
-				y = s("./src/reddit/helpers/trackers/rpan.ts"),
+				y = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				O = s("./src/reddit/helpers/trackers/rpan.ts"),
 				R = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Send/index.tsx"),
 				S = s("./src/reddit/models/PostCreationForm/index.ts"),
 				A = s("./src/reddit/selectors/comments.ts"),
-				k = s("./src/reddit/selectors/posts.ts"),
-				N = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				M = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
-				L = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
-				B = s("./src/reddit/selectors/communityAwards.ts"),
-				F = s("./src/reddit/icons/fonts/Gift/index.tsx"),
+				L = s("./src/reddit/selectors/posts.ts"),
+				k = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				N = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
+				M = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
+				F = s("./src/reddit/selectors/communityAwards.ts"),
+				B = s("./src/reddit/icons/fonts/Gift/index.tsx"),
 				P = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
 				W = s.n(P);
 			class G extends d.Component {
@@ -346,7 +346,7 @@
 						className: Object(u.a)(W.a.container, t, {
 							[W.a.isAnimated]: n
 						})
-					}, l.a.createElement(F.a, {
+					}, l.a.createElement(B.a, {
 						className: W.a.gildIcon
 					}), n && o && l.a.createElement("div", {
 						className: W.a.awardingIcon,
@@ -363,7 +363,7 @@
 					let {
 						awardId: s
 					} = t;
-					return s ? Object(B.a)(e, s) : void 0
+					return s ? Object(F.a)(e, s) : void 0
 				}
 			}))(G);
 			const D = Object(c.b)(() => Object(m.a)(e => e, (e, t) => {
@@ -371,16 +371,16 @@
 						postId: s
 					} = t;
 					return Object(A.g)(e, {
-						commentsPageKey: Object(M.a)(s)
+						commentsPageKey: Object(N.a)(s)
 					})
-				}, k.O, (e, t) => {
+				}, L.O, (e, t) => {
 					let {
 						postId: s
 					} = t;
-					return Object(A.d)(e, {
-						commentsPageKey: Object(M.a)(s)
+					return Object(A.v)(e, {
+						commentsPageKey: Object(N.a)(s)
 					})
-				}, L.a, (e, t, s, n, o) => {
+				}, M.a, (e, t, s, n, o) => {
 					return {
 						commentAwardIds: t.length ? t.reduce((t, s) => {
 							const n = Object(A.n)(e, {
@@ -395,14 +395,14 @@
 							return t
 						}, []) : [],
 						inGoldRpanLivePreview: o,
-						isPending: n,
+						isFullyLoaded: n,
 						postAwardCount: s.awardCountsById ? Object.values(s.awardCountsById).reduce((e, t) => e + t, 0) : s.allAwardings ? s.allAwardings.reduce((e, t) => e + t.count, 0) : 0
 					}
 				})),
 				K = e => ({
-					initialCommentAwardIds: e.isPending ? [] : [...e.commentAwardIds],
-					initialPostAwardCount: e.isPending ? 0 : e.postAwardCount,
-					prevIsPending: e.isPending,
+					initialCommentAwardIds: e.isFullyLoaded ? [...e.commentAwardIds] : [],
+					initialPostAwardCount: e.isFullyLoaded ? e.postAwardCount : 0,
+					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
 			class q extends d.Component {
@@ -410,7 +410,7 @@
 					super(e), this.state = K(e)
 				}
 				static getDerivedStateFromProps(e, t) {
-					return t.prevPostId !== e.postId || t.prevIsPending && !e.isPending ? K(e) : null
+					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? K(e) : null
 				}
 				render() {
 					const {
@@ -420,15 +420,15 @@
 						postAwardCount: s,
 						commentAwardIds: n,
 						className: o,
-						inGoldRpanLivePreview: a,
-						isPending: r
+						isFullyLoaded: a,
+						inGoldRpanLivePreview: r
 					} = this.props;
-					if (r) return l.a.createElement(U, {
+					if (!a) return l.a.createElement(U, {
 						className: o,
 						count: 0
 					});
 					const i = Math.max(s, e + n.length - t.length);
-					if (!a) return l.a.createElement(U, {
+					if (!r) return l.a.createElement(U, {
 						className: o,
 						count: i
 					});
@@ -462,9 +462,9 @@
 					draft: A.i,
 					errorMsgs: A.I,
 					hasError: A.w,
-					liveStreamingChatCharacterLimit: N.a,
+					liveStreamingChatCharacterLimit: k.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: k.O
+					post: L.O
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -550,7 +550,7 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, S.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(y.p)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(O.p)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -631,7 +631,7 @@
 							[X.a.LivestreamingFocusableContent]: s && !t
 						}),
 						dataTestId: Q,
-						editorType: O.a.Comment,
+						editorType: y.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: s ? 20 : void 0,
 						rteState: this.state.rteState,
@@ -854,9 +854,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return O
-			})), s.d(t, "c", (function() {
 				return y
+			})), s.d(t, "c", (function() {
+				return O
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/lodash/uniqueId.js"),
@@ -958,7 +958,7 @@
 			const I = Object(c.b)(E, e => ({
 					toggleErrorTextModal: t => e(Object(h.i)(t))
 				}))(w),
-				O = e => {
+				y = e => {
 					const {
 						className: t,
 						errorClassName: s,
@@ -974,7 +974,7 @@
 						key: t
 					}, e))) : null
 				},
-				y = e => l.a.createElement(O, {
+				O = e => l.a.createElement(y, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -1069,4 +1069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.071a351244d3595b2972.js.map
+//# sourceMappingURL=ChatMessageInput.2095418cb72b3cfc1ba0.js.map
