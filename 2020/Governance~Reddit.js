@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b6ed6f8cd1fd19fee0bc.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f7a20067e55e9a417d0c.js
+// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -11369,7 +11369,7 @@
 					const r = Object(j.N)(s(), e.id);
 					y(e, t, r)
 				}, Fe = (e, t) => async (n, s) => {
-					const r = e.media && "video" === e.media.type,
+					const r = e && e.media && "video" === e.media.type,
 						o = [Z.a.VendorFullyViewable, Z.a.VendorFullyViewableSeconds5, Z.a.VendorFullyViewableSeconds15];
 					if (r && t === Z.a.VideoViewable) n(Object(v.F)(e.id));
 					else if (r && t === Z.a.VideoFullyViewable) n(Object(v.C)(e.id));
@@ -20577,36 +20577,36 @@
 				return s
 			})), n.d(t, "j", (function() {
 				return r
-			})), n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "e", (function() {
-				return a
 			})), n.d(t, "k", (function() {
-				return c
-			})), n.d(t, "h", (function() {
-				return i
+				return o
 			})), n.d(t, "g", (function() {
-				return d
+				return a
 			})), n.d(t, "f", (function() {
-				return u
+				return c
+			})), n.d(t, "e", (function() {
+				return i
 			})), n.d(t, "d", (function() {
-				return l
+				return d
 			})), n.d(t, "i", (function() {
+				return u
+			})), n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "h", (function() {
 				return b
 			})), n.d(t, "b", (function() {
 				return p
 			}));
 			const s = .01,
 				r = .5,
-				o = 1,
-				a = [r, o, s],
-				c = 1e3,
-				i = 100,
-				d = 5e3,
-				u = 15e3,
-				l = 0,
-				b = 2e3,
-				p = 3e3
+				o = 1e3,
+				a = 100,
+				c = 5e3,
+				i = 15e3,
+				d = 0,
+				u = 2e3,
+				l = 3e3,
+				b = .8,
+				p = 1
 		},
 		"./src/reddit/constants/cookie.ts": function(e, t, n) {
 			"use strict";
@@ -24076,11 +24076,14 @@
 						l = d > s.k,
 						b = document.getElementById(e);
 					if (!b) return null;
-					const p = b.getBoundingClientRect();
-					n = p.width, r = p.height;
-					const f = t.isGroupMViewable,
-						m = t[100].maxContinuousTime > 1e3,
-						O = {
+					const p = b.getElementsByTagName("video");
+					let f;
+					p && p[0] && (f = p[0].getBoundingClientRect());
+					const m = b.getBoundingClientRect();
+					n = Math.floor(m.width), r = Math.floor(m.height);
+					const O = t.isGroupMViewable,
+						g = t[100].maxContinuousTime > 1e3,
+						_ = {
 							w: n,
 							h: r,
 							sw: window.screen.width,
@@ -24093,7 +24096,7 @@
 							e: d,
 							f: u
 						};
-					return t.timeImpressionViewed > 0 && (O.i = Date.now() - t.timeImpressionViewed), l && (O.o = 1), f && (O.g = 1), m && (O.q = 1), t.eventGlobalCount && (O.r = t.eventGlobalCount), O
+					return t.timeImpressionViewed > 0 && (_.i = Date.now() - t.timeImpressionViewed), l && (_.o = 1), O && (_.g = 1), g && (_.q = 1), t.eventGlobalCount && (_.r = t.eventGlobalCount), f && (_.vh = Math.floor(f.height), _.vw = Math.floor(f.width)), _
 				}
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, n) {
@@ -50875,7 +50878,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), n.e("vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit"), n.e("vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor"), n.e("vendors~PostCreation~RichTextEditor"), n.e("vendors~PostCreation"), n.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), n.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), n.e("PostCreation")]).then(n.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
+					importAsync: () => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), n.e("vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit"), n.e("vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor"), n.e("vendors~PostCreation~RichTextEditor"), n.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), n.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), n.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), n.e("PostCreation")]).then(n.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -52970,9 +52973,9 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "b", (function() {
-				return r
 			})), n.d(t, "e", (function() {
+				return r
+			})), n.d(t, "b", (function() {
 				return o
 			})), n.d(t, "f", (function() {
 				return a
@@ -52982,10 +52985,12 @@
 				return i
 			})), n.d(t, "i", (function() {
 				return d
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "j", (function() {
 				return u
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return l
+			})), n.d(t, "c", (function() {
+				return b
 			}));
 			const s = (e, t) => {
 					let {
@@ -52997,39 +53002,45 @@
 					let {
 						postId: n
 					} = t;
-					return !!e.posts.video.consumed[n]
+					return !e.posts.video.buffering[n] && !!e.posts.video.playing[n]
 				},
 				o = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					return !!e.posts.video.playing[n]
+					return !!e.posts.video.consumed[n]
 				},
 				a = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					return e.posts.video.loadTimes[n]
+					return !!e.posts.video.playing[n]
 				},
 				c = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					return e.posts.video.metadata[n]
+					return e.posts.video.loadTimes[n]
 				},
 				i = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					return !!e.posts.video.loadable[n]
+					return e.posts.video.metadata[n]
 				},
 				d = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					return !!e.posts.video.started[n]
+					return !!e.posts.video.loadable[n]
 				},
 				u = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					return !!e.posts.video.started[n]
+				},
+				l = (e, t) => {
 					let {
 						postId: n
 					} = t;
@@ -53037,7 +53048,7 @@
 					const s = e.posts.video.time[n];
 					return s ? s.currentTime / 1e3 : null
 				},
-				l = (e, t) => {
+				b = (e, t) => {
 					let {
 						postId: n
 					} = t;
@@ -53143,4 +53154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.b6ed6f8cd1fd19fee0bc.js.map
+//# sourceMappingURL=Governance~Reddit.f7a20067e55e9a417d0c.js.map

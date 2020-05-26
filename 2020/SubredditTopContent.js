@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.ca2956dd8059ee5aea90.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.b40eac6e72677d672876.js
+// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -262,7 +262,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.e)(e, {
+						return Object(u.f)(e, {
 							postId: s.id
 						})
 					},
@@ -287,46 +287,38 @@
 				}
 				render() {
 					const {
-						pixelPostHasEnteredView: e,
-						pixelPostHasExitedView: t,
-						afterClickTracking: s,
-						buffering: n,
-						children: r,
-						className: c,
-						continuousViewingStartedAt: a,
-						gildModalIsOpen: p,
-						makePostContainerId: u,
-						playing: h,
-						post: x,
-						onClick: g,
-						onPostContentClick: f,
-						onPostViewable: O,
-						style: C,
-						ref: _
-					} = this.props, j = o.a.createElement("div", {
-						style: C,
-						ref: _,
+						afterClickTracking: e,
+						children: t,
+						className: s,
+						gildModalIsOpen: n,
+						makePostContainerId: r,
+						post: c,
+						onClick: a,
+						onPostContentClick: p,
+						style: u,
+						ref: h
+					} = this.props, x = o.a.createElement("div", {
+						style: u,
+						ref: h,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
-						onClick: e => {
-							!this.cancelClick && e.button < 2 && (s(() => g && g(e, x))(e), f && y(e) && f(e, x))
+						onClick: t => {
+							!this.cancelClick && t.button < 2 && (e(() => a && a(t, c))(t), p && y(t) && p(t, c))
 						},
-						className: Object(m.a)(b.a.WrappedPost, c, "Post ".concat(x.id), {
-							promotedlink: x.isSponsored
+						className: Object(m.a)(b.a.WrappedPost, s, "Post ".concat(c.id), {
+							promotedlink: c.isSponsored
 						}),
-						id: u ? u(x.id) : x.id,
+						id: r ? r(c.id) : c.id,
 						tabIndex: -1
-					}, r, p && o.a.createElement(d.a, null)), v = !!x.media && x.media.type === l.n.VIDEO;
-					return x.isSponsored || v ? o.a.createElement(i.a, {
-						onViewable: e => O(x, e),
-						pixelPostHasEnteredView: t => e(x, t),
-						pixelPostHasExitedView: e => t(x, e),
-						trackVideoMetrics: v && !n && h,
-						continuousViewingStartedAt: a
-					}, j) : j
+					}, t, n && o.a.createElement(d.a, null)), g = !!c.media && c.media.type === l.n.VIDEO;
+					return c.isSponsored || g ? o.a.createElement(i.a, {
+						post: c,
+						trackVideo: !0,
+						trackDisplay: !0
+					}, x) : x
 				}
 			}
 			t.a = f(Object(h.c)(O))
@@ -491,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.ca2956dd8059ee5aea90.js.map
+//# sourceMappingURL=SubredditTopContent.b40eac6e72677d672876.js.map

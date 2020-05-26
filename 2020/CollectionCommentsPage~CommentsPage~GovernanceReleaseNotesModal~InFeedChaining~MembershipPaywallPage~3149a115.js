@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.e7b9122fc26ab9bad554.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.6a0327f1877fb41ff5ab.js
+// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -142,13 +142,13 @@
 				};
 			var C = s("./src/reddit/constants/keycodes.ts"),
 				T = s("./src/reddit/components/HTML5StreamPlayer/SeekBar/index.m.less"),
-				M = s.n(T);
-			const V = r.a.div("Thumb", M.a),
-				B = r.a.div("ProgressBar", M.a),
-				L = r.a.div("Floating", M.a),
-				_ = r.a.video("PreviewVideo", M.a),
-				F = r.a.div("PreviewTime", M.a),
-				k = r.a.div("VideoSeekbar", M.a);
+				V = s.n(T);
+			const M = r.a.div("Thumb", V.a),
+				B = r.a.div("ProgressBar", V.a),
+				L = r.a.div("Floating", V.a),
+				_ = r.a.video("PreviewVideo", V.a),
+				F = r.a.div("PreviewTime", V.a),
+				k = r.a.div("VideoSeekbar", V.a);
 			class N extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.setParentRect = e => this.parentRect = e, this.setPreviewThumbnailContainer = e => this.previewThumbnailContainer = e, this.setPreviewThumbnailVideo = e => this.previewThumbnailVideo = e, this.setPreviewThumbnailTime = e => this.previewThumbnailTime = e, this.setProgressBar = e => this.progressBar = e, this.handleMouseDown = e => {
@@ -281,23 +281,23 @@
 						"aria-valuemax": Math.round(this.props.totalTime),
 						"aria-valuemin": 0,
 						"aria-valuenow": this.props.currentTime,
-						className: M.a.Mainbar,
+						className: V.a.Mainbar,
 						role: "slider",
 						tabIndex: 0
 					}, o.a.createElement("div", {
-						className: Object(n.a)(M.a.Bar, M.a.Background)
+						className: Object(n.a)(V.a.Bar, V.a.Background)
 					}), o.a.createElement("div", {
-						className: Object(n.a)(M.a.Bar, M.a.Lookahead),
+						className: Object(n.a)(V.a.Bar, V.a.Lookahead),
 						ref: e => this.lookaheadBar = e
 					}), o.a.createElement("div", {
-						className: Object(n.a)(M.a.Bar, M.a.Buffered),
+						className: Object(n.a)(V.a.Bar, V.a.Buffered),
 						style: this.getBufferedStyle()
 					}), o.a.createElement(B, {
-						className: this.props.isLive && M.a.Live,
+						className: this.props.isLive && V.a.Live,
 						innerRef: this.setProgressBar,
 						style: r
-					})), o.a.createElement(V, {
-						className: this.props.isLive && M.a.Live,
+					})), o.a.createElement(M, {
+						className: this.props.isLive && V.a.Live,
 						innerRef: this.setProgressThumbRef,
 						style: l
 					}), !this.props.controlBarIsHidden && o.a.createElement(L, {
@@ -848,8 +848,8 @@
 				w = s("./src/reddit/components/PlayButton/index.tsx"),
 				C = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				T = s("./src/reddit/constants/experiments.ts"),
-				M = s("./src/reddit/constants/video.ts"),
-				V = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				V = s("./src/reddit/constants/video.ts"),
+				M = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				B = s("./src/reddit/helpers/trackers/media.ts"),
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
@@ -1160,10 +1160,10 @@
 					fill: "#fff",
 					d: "M30.7 25c.5 0 1 .4 1 1v2.9c0 1.6-1.3 2.9-2.9 2.9h-9.6c-1.6 0-2.9-1.3-2.9-2.9v-3c0-.5.4-1 1-1s1 .4 1 1v2.9c0 .5.4 1 1 1h9.6c.5 0 1-.4 1-1v-2.9c-.1-.5.3-.9.8-.9zm-7.4 1.6l-2.9-2.9c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l1.2 1.3v-6.3c0-.5.4-1 1-1 .5 0 1 .4 1 1v6.3l1.2-1.2c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-2.9 2.8c-.1.1-.2.2-.3.2-.2.1-.3.1-.4.1-.1 0-.2 0-.4-.1-.1 0-.2-.1-.3-.2z"
 				}))),
-				Me = s("./src/reddit/icons/svgs/VideoLearnMore/index.m.less"),
-				Ve = s.n(Me);
+				Ve = s("./src/reddit/icons/svgs/VideoLearnMore/index.m.less"),
+				Me = s.n(Ve);
 			var Be = e => l.a.createElement("svg", {
-					className: Object(u.a)(Ve.a.icon, e.className),
+					className: Object(u.a)(Me.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("g", {
@@ -1414,10 +1414,10 @@
 					isMutedPreference: N.a,
 					isOverlayOpen: R.h,
 					language: H.Q,
-					loadTimes: j.f,
-					metadata: j.g,
+					loadTimes: j.g,
+					metadata: j.h,
 					postUrl: O.Q,
-					started: j.i,
+					started: j.j,
 					videoBufferTime: k,
 					videoBufferVariant: F,
 					volume: N.b
@@ -1442,8 +1442,8 @@
 								postId: s,
 								time: t
 							}))
-						}, M.k, {
-							maxWait: M.l
+						}, V.k, {
+							maxWait: V.l
 						}),
 						openLightbox: t => {
 							t ? e(Object(h.a)(t)) : x.c.withScope(e => {
@@ -1486,15 +1486,15 @@
 				constructor(e) {
 					var t;
 					super(e), t = this, this.percentagePixelsFired = {
-						[M.b]: !1,
-						[M.c]: !1,
-						[M.d]: !1,
-						[M.e]: !1,
-						[M.a]: !1
+						[V.b]: !1,
+						[V.c]: !1,
+						[V.d]: !1,
+						[V.e]: !1,
+						[V.a]: !1
 					}, this.timePixelsFired = {
-						[M.g]: !1,
-						[M.h]: !1,
-						[M.f]: !1
+						[V.g]: !1,
+						[V.h]: !1,
+						[V.f]: !1
 					}, this.sendEvent = function(e, s) {
 						let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const i = t.HTML5StreamPlayerVideo;
@@ -1729,8 +1729,8 @@
 						}
 					}, this.triggerAdWatchedPixels = (e, t, s) => {
 						const a = this.getWatchedPercentRange(e, t);
-						s >= t && this.triggerPercentagePixels(M.a), this.triggerPercentagePixels(a);
-						s / t >= .95 && this.triggerTimeWatchedPixels(M.f), this.triggerTimeWatchedPixels(s)
+						s >= t && this.triggerPercentagePixels(V.a), this.triggerPercentagePixels(a);
+						s / t >= .95 && this.triggerTimeWatchedPixels(V.f), this.triggerTimeWatchedPixels(s)
 					}, this.updateContinuousStartTime = e => {
 						this.props.onUpdateContinuousViewStartTime(e)
 					}, this.onVideoPlayable = e => {
@@ -1792,7 +1792,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("f71ed07-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("f60cc40-production", " ").concat(t);
 									return a && (s += " [".concat(T.oc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1898,15 +1898,15 @@
 				}
 				getWatchedPercentRange(e, t) {
 					const s = e / t;
-					return 1 === s ? M.a : s >= .95 ? M.e : s >= .75 ? M.d : s >= .5 ? M.c : s >= .25 ? M.b : 0
+					return 1 === s ? V.a : s >= .95 ? V.e : s >= .75 ? V.d : s >= .5 ? V.c : s >= .25 ? V.b : 0
 				}
 				triggerPercentagePixels(e) {
-					M.i.forEach(t => {
+					V.i.forEach(t => {
 						t <= e && !this.percentagePixelsFired[t] && (this.props.onWatchedPercent(t), this.percentagePixelsFired[t] = !0)
 					})
 				}
 				triggerTimeWatchedPixels(e) {
-					M.j.forEach(t => {
+					V.j.forEach(t => {
 						t <= e && !this.timePixelsFired[t] && (this.props.onWatchedSeconds(t), this.timePixelsFired[t] = !0)
 					})
 				}
@@ -2003,7 +2003,7 @@
 					}))
 				}
 			}
-			t.b = St(Object(C.c)(Object(V.b)(Pt)))
+			t.b = St(Object(C.c)(Object(M.b)(Pt)))
 		},
 		"./src/reddit/components/Media/LoadingIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2202,17 +2202,7 @@
 			e.exports = {
 				icon: "egx9Z9oH6-wpjLKKhAEoM"
 			}
-		},
-		"./src/reddit/selectors/media.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return a
-			})), s.d(t, "b", (function() {
-				return i
-			}));
-			const a = e => e.mediaPlayback.isMuted,
-				i = e => e.mediaPlayback.volume
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.e7b9122fc26ab9bad554.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115.6a0327f1877fb41ff5ab.js.map
