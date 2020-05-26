@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.f04bc39360cbf71c4331.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.e1ccecb692697f08b627.js
+// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -163,7 +163,7 @@
 				l = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				m = r("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				u = r("./src/reddit/actions/governance/errorToast.ts"),
-				b = r("./src/reddit/actions/shortcuts.ts"),
+				b = r("./src/reddit/actions/shortcuts/close.ts"),
 				p = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				g = r("./src/reddit/contexts/ApiContext.tsx"),
 				h = r("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -297,7 +297,7 @@
 				return {
 					onError: t => Object(u.a)(e, t),
 					onPaymentSuccessful: t => {
-						t ? e(Object(m.f)(r.id, !0)).then(() => e(Object(b.d)(() => {}))).then(() => s && s()).then(() => e(Object(l.c)({
+						t ? e(Object(m.f)(r.id, !0)).then(() => e(Object(b.a)(() => {}))).then(() => s && s()).then(() => e(Object(l.c)({
 							subredditId: r.id,
 							initialView: x.c.MyBadges
 						}))) : e(Object(c.b)(r.url))
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.f04bc39360cbf71c4331.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.e1ccecb692697f08b627.js.map

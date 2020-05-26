@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7929f9d4dc7e460c8cba.js
-// Retrieved at 5/26/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.56b51af74f1b3bc6f6f7.js
+// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
@@ -87,7 +87,7 @@
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/FocusTrap/index.ts"),
-				a = n("./src/reddit/actions/shortcuts.ts"),
+				a = n("./src/reddit/actions/shortcuts/utils.ts"),
 				c = n("./src/reddit/components/Portal/index.tsx"),
 				l = n("./src/reddit/constants/shortcuts.ts"),
 				d = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
@@ -141,7 +141,7 @@
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(d.b)(), Object(a.r)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(d.b)(), Object(a.d)(), this.focusTrap && this.focusTrap.deactivate()
 					}
 					render() {
 						const {
@@ -572,7 +572,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "3e341f9-production"
+					SENTRY_RELEASE_VERSION: "59d755a-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -20247,6 +20247,22 @@
 				f = "ListingLayout-backgroundContainer",
 				g = "ListingLayout-outerContainer"
 		},
+		"./src/reddit/constants/elementIds.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "d", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return i
+			}));
+			const s = "bladeContainer",
+				o = "header",
+				r = "overlayScrollContainer",
+				i = "collectionPostListScrollContainer"
+		},
 		"./src/reddit/constants/jsapiEvents.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -31565,4 +31581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.7929f9d4dc7e460c8cba.js.map
+//# sourceMappingURL=PostCreation.56b51af74f1b3bc6f6f7.js.map

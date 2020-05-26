@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.68503e842f825819be34.js
-// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.31134aabdae4db914457.js
+// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -559,8 +559,8 @@
 				C = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				w = s("./src/reddit/i18n/utils.ts"),
 				E = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				S = s("./src/reddit/models/Flair/index.ts"),
-				k = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				k = s("./src/reddit/models/Flair/index.ts"),
+				S = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				N = s("./src/reddit/components/Flair/index.m.less"),
 				_ = s.n(N);
 
@@ -641,7 +641,7 @@
 						onMouseLeave: this.props.tooltip ? this.onHideTooltip : void 0,
 						ref: this.setTooltipTargetRef,
 						style: {
-							backgroundColor: this.props.backgroundColor || Object(k.a)(this.props).flair,
+							backgroundColor: this.props.backgroundColor || Object(S.a)(this.props).flair,
 							color: "".concat(W(this.props))
 						}
 					}, this.props.text, this.props.isSelected && a.a.createElement(L, {
@@ -650,7 +650,7 @@
 					}, a.a.createElement(E.a, {
 						className: _.a.CloseIcon,
 						style: {
-							fill: this.props.backgroundColor || Object(k.a)(this.props).flair
+							fill: this.props.backgroundColor || Object(S.a)(this.props).flair
 						}
 					})), !!this.props.tooltip && a.a.createElement(P, {
 						text: this.props.tooltip,
@@ -675,7 +675,7 @@
 					let t = "",
 						s = !1;
 					const n = e.richtext.map((n, r) => {
-						if (n.e === S.c.Emoji) {
+						if (n.e === k.c.Emoji) {
 							const o = n;
 							return t += o.a, s = !0, a.a.createElement(V, {
 								forceSmallEmojis: e.forceSmallEmojis,
@@ -699,7 +699,7 @@
 							[_.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
 						}),
 						style: Object.assign({}, r, {
-							backgroundColor: e.backgroundColor || Object(k.a)(e).flair,
+							backgroundColor: e.backgroundColor || Object(S.a)(e).flair,
 							color: "".concat(W(e))
 						})
 					}, n, e.isSelected && a.a.createElement(L, {
@@ -708,7 +708,7 @@
 					}, a.a.createElement(E.a, {
 						className: _.a.CloseIcon,
 						style: {
-							fill: e.backgroundColor || Object(k.a)(e).flair
+							fill: e.backgroundColor || Object(S.a)(e).flair
 						}
 					})));
 					return a.a.createElement(D, {
@@ -723,7 +723,7 @@
 						to: e.to
 					})
 				}),
-				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(k.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(k.a)(e).post, y.a.black, y.a.white) : e.textColor === S.e.Dark ? y.a.black : y.a.white,
+				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(C.a)(Object(S.a)(e).post, y.a.black, y.a.white) : e.textColor === k.e.Dark ? y.a.black : y.a.white,
 				H = m.a.wrapped(R, "TextFlair", _.a),
 				q = m.a.wrapped(B, "RichTextFlair", _.a),
 				U = e => {
@@ -733,7 +733,7 @@
 						case "nsfw":
 							return "#FF585B";
 						default:
-							return Object(o.j)(.1, Object(k.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
+							return Object(o.j)(.1, Object(S.a)(r()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
 				Z = m.a.wrapped(e => {
@@ -770,7 +770,7 @@
 					[_.a.large]: r && e.large
 				}, t);
 				switch (n.type) {
-					case S.f.Richtext:
+					case k.f.Richtext:
 						return s || !n.richtext ? null : a.a.createElement(q, {
 							backgroundColor: n.backgroundColor,
 							className: h,
@@ -786,7 +786,7 @@
 							textColor: n.textColor,
 							to: b
 						});
-					case S.f.Text:
+					case k.f.Text:
 						return s || !n.text ? null : a.a.createElement(H, {
 							backgroundColor: n.backgroundColor,
 							className: h,
@@ -801,7 +801,7 @@
 							redditStyle: !m,
 							to: b
 						});
-					case S.f.Meta:
+					case k.f.Meta:
 						return a.a.createElement(H, {
 							backgroundColor: n.backgroundColor,
 							className: t,
@@ -812,20 +812,20 @@
 							redditStyle: !m,
 							to: b
 						});
-					case S.f.Nsfw:
-					case S.f.Spoiler:
+					case k.f.Nsfw:
+					case k.f.Spoiler:
 						return a.a.createElement(Z, {
 							className: t,
 							text: n.text,
 							type: n.type
 						});
-					case S.f.Quarantined:
+					case k.f.Quarantined:
 						return null;
-					case S.f.Oc:
+					case k.f.Oc:
 						return a.a.createElement(H, {
 							backgroundColor: y.a.alienblue,
 							text: n.text,
-							textColor: S.e.Light,
+							textColor: k.e.Light,
 							tooltip: Object(w.b)("This post is marked as Original Content [OC]")
 						});
 					default:
@@ -1104,11 +1104,11 @@
 				C = s.n(O);
 			const w = "FlairSearch-EmojiPicker-DropdownId",
 				E = Object(l.a)(e => e && Object(u.c)(e)),
-				S = Object(a.c)({
+				k = Object(a.c)({
 					areFlairRestrictionsEnabled: d.d.flairRestrictions,
 					isModerator: m.d
 				}),
-				k = Object(i.b)(S);
+				S = Object(i.b)(k);
 			class N extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onFlairEdit = e => {
@@ -1169,7 +1169,7 @@
 					})) : null)
 				}
 			}
-			t.a = k(N)
+			t.a = S(N)
 		},
 		"./src/reddit/components/FlairWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1268,12 +1268,12 @@
 				} = e;
 				const w = n === h.b.Left,
 					E = C || O(a, f),
-					S = [];
-				let k = [];
+					k = [];
+				let S = [];
 				w ? E.map(e => {
-					Object(p.p)(e.type) ? S.push(e) : k.push(e)
-				}) : k = E;
-				const N = u ? y.a.flairNoWrap : S.length > 0 || k.length > 0 || x && v ? y.a.flairWrapper : null,
+					Object(p.p)(e.type) ? k.push(e) : S.push(e)
+				}) : S = E;
+				const N = u ? y.a.flairNoWrap : k.length > 0 || S.length > 0 || x && v ? y.a.flairWrapper : null,
 					_ = e => {
 						const t = {
 							id: f.belongsTo.id,
@@ -1290,13 +1290,13 @@
 					P = !!(v && x && x.length);
 				return I || P ? o.a.createElement("div", {
 					className: Object(c.a)(N, t)
-				}, I && S && o.a.createElement(d.a, {
+				}, I && k && o.a.createElement(d.a, {
 					className: y.a.flairList,
 					isFlairFilter: r,
 					key: "leftFlair",
 					onClick: _,
 					onMouseDown: T,
-					flair: S,
+					flair: k,
 					disabled: !i,
 					subredditName: j
 				}), I && o.a.createElement(d.a, {
@@ -1305,7 +1305,7 @@
 					key: "rightFlair",
 					onClick: _,
 					onMouseDown: T,
-					flair: k,
+					flair: S,
 					disabled: !i,
 					subredditName: j
 				}), P && o.a.createElement(l.a, {
@@ -1645,8 +1645,8 @@
 				C = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				w = s("./src/lib/getShortenedLink.ts"),
 				E = s("./src/reddit/components/FlairWrapper/index.tsx"),
-				S = s("./node_modules/fbt/lib/FbtPublic.js"),
-				k = s("./src/lib/prettyPrintNumber/index.ts"),
+				k = s("./node_modules/fbt/lib/FbtPublic.js"),
+				S = s("./src/lib/prettyPrintNumber/index.ts"),
 				N = s("./src/reddit/components/Poll/MetaData/index.tsx"),
 				_ = s("./src/reddit/components/Governance/PostPollMetaData/index.m.less"),
 				T = s.n(_);
@@ -1662,10 +1662,10 @@
 					} = e, n = s ? s.totalVotes : "0";
 					return o.a.createElement("div", {
 						className: Object(l.a)(e.className, T.a.proposalMetaData)
-					}, o.a.createElement("span", null, S.fbt._({
+					}, o.a.createElement("span", null, k.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [S.fbt._param("count", Object(k.a)(n)), S.fbt._plural(parseInt(n))], {
+					}, [k.fbt._param("count", Object(S.a)(n)), k.fbt._plural(parseInt(n))], {
 						hk: "4rP1VK"
 					})), t && o.a.createElement(N.a, {
 						className: T.a.proposalMetaDataTime,
@@ -2009,8 +2009,8 @@
 							return o.a.createElement(w, e)
 					}
 				},
-				S = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				k = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				k = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				S = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				N = s("./src/reddit/models/Media/index.ts"),
 				_ = s("./src/reddit/models/Theme/index.ts"),
 				T = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
@@ -2064,7 +2064,7 @@
 						}
 					}, e.isOutbound && o.a.createElement(A, {
 						className: e.linkIconClassName
-					}, o.a.createElement(k.a, {
+					}, o.a.createElement(S.a, {
 						className: Object(i.a)(P.a.outboundLinkIcon, e.outboundLinkIconClassName)
 					}), e.text && o.a.createElement(M, {
 						className: e.linkTextClassName
@@ -2092,7 +2092,7 @@
 						type: e.isMeta || e.isPoll ? "meta" : e.type
 					}), e.isOutbound && o.a.createElement(A, {
 						className: e.linkIconClassName
-					}, o.a.createElement(k.a, {
+					}, o.a.createElement(S.a, {
 						className: Object(i.a)(P.a.outboundLinkIcon, e.outboundLinkIconClassName)
 					}), e.text && o.a.createElement(M, {
 						className: e.linkTextClassName
@@ -2127,7 +2127,7 @@
 					}), C = q(e), w = Z(p, t, O, j, g, v, C, l, f, h, b, d, u, m, r), E = Object(N.z)(p);
 					return Object(n.a)(E) && !h && E.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(i.a)(P.a.container, y ? P.a.usePreview : "", s)
-					}, o.a.createElement(S.a, {
+					}, o.a.createElement(k.a, {
 						href: Object(N.z)(p),
 						isSponsored: p.isSponsored,
 						postId: p.id,
@@ -2707,6 +2707,51 @@
 				let t = e.substring(n.length);
 				return t.indexOf("|") && (t = t.split("|")[0]), "https://giphy.com/gifs/".concat(t)
 			}
+		},
+		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "c", (function() {
+				return l
+			})), s.d(t, "d", (function() {
+				return d
+			})), s.d(t, "a", (function() {
+				return u
+			}));
+			var n = s("./src/reddit/constants/tracking.ts"),
+				r = s("./src/telemetry/index.ts"),
+				o = s("./src/reddit/selectors/platform.ts"),
+				i = s("./src/reddit/selectors/telemetry.ts");
+			const a = e => ({
+					profile: i.profile(e),
+					screen: i.screen(e),
+					subreddit: i.subreddit(e)
+				}),
+				c = (e, t, s) => n => Object.assign({
+					source: Object(o.h)(n) || s ? "post_lightbox" : "post_detail",
+					action: "click",
+					noun: t
+				}, a(n), {
+					post: i.post(n, e)
+				}),
+				l = (e, t) => s => {
+					const n = i.currentPost(s);
+					return n ? c(n.id, e, t)(s) : Object.assign({
+						source: Object(o.h)(s) || t ? "post_lightbox" : "post_detail",
+						action: "click",
+						noun: e
+					}, a(s))
+				},
+				d = (e, t) => s => Object(r.a)(Object.assign({}, c(e, t)(s), i.defaults(s))),
+				u = e => t => Object.assign({
+					source: "id_card",
+					action: n.c.CLICK,
+					noun: e
+				}, a(t), {
+					post: i.currentPost(t),
+					userSubreddit: i.userSubreddit(t)
+				})
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, s) {
 			"use strict";
@@ -3289,9 +3334,9 @@
 			})), s.d(t, "G", (function() {
 				return E
 			})), s.d(t, "q", (function() {
-				return S
-			})), s.d(t, "s", (function() {
 				return k
+			})), s.d(t, "s", (function() {
+				return S
 			})), s.d(t, "f", (function() {
 				return N
 			})), s.d(t, "e", (function() {
@@ -3440,7 +3485,7 @@
 				return !!(s && s.settings && s.settings.optOut)
 			}
 
-			function S(e, t) {
+			function k(e, t) {
 				const {
 					badge: s,
 					subredditId: n
@@ -3452,7 +3497,7 @@
 				return Object.keys(i).map(e => o[e]).find(e => e && e.type === c)
 			}
 
-			function k(e, t, s, n) {
+			function S(e, t, s, n) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === m.a.Fetched) {
 					if (s === c.a.Loyalty || s === c.a.Achievement) return r.data.collections[s];
@@ -3462,7 +3507,7 @@
 			}
 
 			function N(e, t) {
-				const s = k(e, t, c.a.Loyalty).find(e => "membership" === e.id);
+				const s = S(e, t, c.a.Loyalty).find(e => "membership" === e.id);
 				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : []
 			}
 
@@ -3476,7 +3521,7 @@
 			}
 
 			function T(e, t) {
-				return k(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
+				return S(e, t, c.a.Cosmetic, c.c.Gallery).some(e => e.locked.some(e => Object(a.d)(e) || !!e.price))
 			}
 			const I = e => {
 				const t = [],
@@ -3695,4 +3740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.68503e842f825819be34.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.31134aabdae4db914457.js.map

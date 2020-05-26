@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.c0d88cea405d5024edfa.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.dfa83503e86e3ffb95ae.js
+// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -367,7 +367,7 @@
 				d = a("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				l = a("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				p = a("./src/reddit/actions/governance/errorToast.ts"),
-				u = a("./src/reddit/actions/shortcuts.ts"),
+				u = a("./src/reddit/actions/shortcuts/close.ts"),
 				b = a("./src/reddit/components/TrackingHelper/index.tsx"),
 				h = a("./src/reddit/contexts/ApiContext.tsx"),
 				g = a("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -501,7 +501,7 @@
 				return {
 					onError: t => Object(p.a)(e, t),
 					onPaymentSuccessful: t => {
-						t ? e(Object(l.f)(a.id, !0)).then(() => e(Object(u.d)(() => {}))).then(() => s && s()).then(() => e(Object(d.c)({
+						t ? e(Object(l.f)(a.id, !0)).then(() => e(Object(u.a)(() => {}))).then(() => s && s()).then(() => e(Object(d.c)({
 							subredditId: a.id,
 							initialView: y.c.MyBadges
 						}))) : e(Object(n.b)(a.url))
@@ -3797,4 +3797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.c0d88cea405d5024edfa.js.map
+//# sourceMappingURL=MembershipPaywallPage.dfa83503e86e3ffb95ae.js.map

@@ -1,22 +1,7 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.a1fe1d3e67af348da74f.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.9128b7f3b683b2761516.js
+// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
-		"./node_modules/fbjs/lib/emptyFunction.js": function(e, t, o) {
-			"use strict";
-
-			function s(e) {
-				return function() {
-					return e
-				}
-			}
-			var i = function() {};
-			i.thatReturns = s, i.thatReturnsFalse = s(!1), i.thatReturnsTrue = s(!0), i.thatReturnsNull = s(null), i.thatReturnsThis = function() {
-				return this
-			}, i.thatReturnsArgument = function(e) {
-				return e
-			}, e.exports = i
-		},
 		"./node_modules/lodash/_baseInRange.js": function(e, t) {
 			var o = Math.max,
 				s = Math.min;
@@ -168,17 +153,17 @@
 					}))))
 				},
 				D = o("./src/reddit/controls/Button/index.tsx"),
-				_ = o("./src/reddit/layout/row/Inline/index.tsx"),
-				P = o("./src/reddit/controls/EmojiPicker/Footer/index.m.less"),
-				k = o.n(P),
-				R = e => {
+				P = o("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = o("./src/reddit/controls/EmojiPicker/Footer/index.m.less"),
+				k = o.n(_),
+				N = e => {
 					const {
 						className: t,
 						emoji: o
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(p.a)(k.a.footer, t)
-					}, o && a.a.createElement(_.a, {
+					}, o && a.a.createElement(P.a, {
 						className: k.a.emojiInfo
 					}, a.a.createElement("img", {
 						className: k.a.emojiPreview,
@@ -192,7 +177,7 @@
 						hk: "1f5Zk8"
 					})))
 				},
-				N = (o("./node_modules/core-js/modules/es6.symbol.js"), o("./src/reddit/icons/svgs/Search/index.tsx")),
+				R = (o("./node_modules/core-js/modules/es6.symbol.js"), o("./src/reddit/icons/svgs/Search/index.tsx")),
 				F = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
 				B = o.n(F);
 
@@ -221,7 +206,7 @@
 					} = e, s = A(e, ["className", "inputRef"]);
 					return a.a.createElement("div", {
 						className: Object(p.a)(B.a.searchBar, t)
-					}, a.a.createElement(N.a, {
+					}, a.a.createElement(R.a, {
 						className: B.a.searchIcon
 					}), a.a.createElement("div", {
 						className: B.a.inputWrapper
@@ -318,7 +303,7 @@
 						onEmojiEnter: this.onEmojiEnter,
 						onEmojiLeave: this.onEmojiLeave,
 						onEmojiSelect: this.onEmojiSelect
-					}), a.a.createElement(R, {
+					}), a.a.createElement(N, {
 						emoji: s,
 						onCancelClick: this.props.onCancel
 					}))
@@ -360,7 +345,7 @@
 						onMouseDown: this.handleMouseDown,
 						onClick: this.handleClick,
 						onMouseOver: this.handleMouseOver
-					}, a.a.createElement(_.a, null, a.a.createElement(ee.a, {
+					}, a.a.createElement(P.a, null, a.a.createElement(ee.a, {
 						className: oe.a.emojiImageDisplay,
 						backgroundImage: e.url
 					}), a.a.createElement("div", {
@@ -525,7 +510,7 @@
 						r = "";
 					return o.type === ve.Image ? (i = (n = Oe(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
 				},
-				_e = (e, t) => {
+				Pe = (e, t) => {
 					const o = e.getSelection(),
 						i = o.merge({
 							focusOffset: o.getAnchorOffset()
@@ -533,7 +518,7 @@
 						n = De(e.getCurrentContent(), i, t);
 					return s.EditorState.push(e, n, "insert-characters")
 				},
-				Pe = Object(ue.a)(e => {
+				_e = Object(ue.a)(e => {
 					const t = e.getSelection(),
 						o = t.getStartOffset();
 					if (!t.isCollapsed()) return;
@@ -548,7 +533,7 @@
 					} : void 0
 				}),
 				ke = (e, t) => {
-					const o = Pe(e);
+					const o = _e(e);
 					if (!o) return;
 					let i = e.getCurrentContent();
 					const n = i.getPlainText().charAt(o.endIndex),
@@ -563,7 +548,7 @@
 						};
 					return i = De(i, r, a), s.EditorState.push(e, i, "insert-characters")
 				},
-				Re = (e, t) => {
+				Ne = (e, t) => {
 					const o = e.getSelection(),
 						i = o.getFocusOffset(),
 						n = o.getFocusKey(),
@@ -576,7 +561,7 @@
 						return s.EditorState.push(e, i, "insert-characters")
 					}
 				},
-				Ne = "handled",
+				Re = "handled",
 				Fe = "not-handled";
 			class Be extends a.a.Component {
 				constructor(e) {
@@ -585,16 +570,16 @@
 							editorState: t,
 							maxLength: o
 						} = this.props, s = t.getCurrentContent().getPlainText();
-						if (o && s.length >= o) return Ne;
+						if (o && s.length >= o) return Re;
 						if (e === Z && this.emojiDropdownApi && this.state.emojiString) {
 							const e = this.emojiDropdownApi.getCurrent(),
 								t = this.state.emojiString.toLowerCase();
-							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Ne
+							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Re
 						}
-						const i = Re(t, e);
-						return i ? (this.onChange(i), Ne) : Fe
+						const i = Ne(t, e);
+						return i ? (this.onChange(i), Re) : Fe
 					}, this.checkEditorStateForEmojis = e => {
-						const t = Pe(e);
+						const t = _e(e);
 						this.setState({
 							emojiString: t ? t.emojiString : "",
 							suppressEmojiDropdown: !!t && this.state.suppressEmojiDropdown
@@ -614,19 +599,19 @@
 							t && (e.preventDefault(), this.handleSelectEmoji(t))
 						}
 					}, this.handlePastedText = (e, t) => {
-						if (!this.editorRef) return Ne;
+						if (!this.editorRef) return Re;
 						const {
 							editorState: o,
 							maxLength: i
 						} = this.props, n = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), l = o.getCurrentContent().getPlainText().length + a;
-						if (i && l > i) return Ne;
+						if (i && l > i) return Re;
 						if (n && n.first().getText() === e) return Fe;
 						const c = V(e);
 						let d = o.getCurrentContent();
 						d = s.Modifier.replaceText(d, r, c);
 						const p = s.EditorState.push(o, d, "insert-characters");
-						return this.onChange(p), Ne
-					}, this.handleReturn = e => (e.preventDefault(), Ne), this.onChange = e => {
+						return this.onChange(p), Re
+					}, this.handleReturn = e => (e.preventDefault(), Re), this.onChange = e => {
 						this.props.onChange(e)
 					}, this.setEmojiDropdownPositionUpdater = e => this.updateEmojiDropdownPosition = e, this.state = {
 						emojiString: "",
@@ -638,7 +623,7 @@
 					if (this.props.editorState.getSelection().getHasFocus() && !this.state.suppressEmojiDropdown && this.state.emojiString) {
 						const {
 							offsetKey: e
-						} = Pe(this.props.editorState), t = this.containerRef.querySelector('[data-offset-key="'.concat(e, '"]')), {
+						} = _e(this.props.editorState), t = this.containerRef.querySelector('[data-offset-key="'.concat(e, '"]')), {
 							left: o,
 							bottom: s
 						} = t.getBoundingClientRect();
@@ -877,7 +862,7 @@
 							id: Object(m.b)(e.name),
 							url: e.url
 						};
-						let o = _e(this.state.editorState, t);
+						let o = Pe(this.state.editorState, t);
 						o = s.EditorState.forceSelection(o, o.getSelection()), this.setEditorState(o), this.onToggleEmojiPicker()
 					}, this.shouldEnableEmojis = () => {
 						const {
@@ -1296,4 +1281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FlairEdit.a1fe1d3e67af348da74f.js.map
+//# sourceMappingURL=FlairEdit.9128b7f3b683b2761516.js.map

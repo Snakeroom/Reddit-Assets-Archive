@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.58dd245896f706c3a8a3.js
-// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.612ec7a8f23e7cd5f186.js
+// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -72,7 +72,7 @@
 				s = n.n(r),
 				o = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/FocusTrap/index.ts"),
-				i = n("./src/reddit/actions/shortcuts.ts"),
+				i = n("./src/reddit/actions/shortcuts/utils.ts"),
 				c = n("./src/reddit/components/Portal/index.tsx"),
 				d = n("./src/reddit/constants/shortcuts.ts"),
 				l = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
@@ -126,7 +126,7 @@
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(l.b)(), Object(i.r)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(l.b)(), Object(i.d)(), this.focusTrap && this.focusTrap.deactivate()
 					}
 					render() {
 						const {
@@ -1476,6 +1476,22 @@
 				b = "styled-outbound-link",
 				h = "ListingLayout-backgroundContainer",
 				y = "ListingLayout-outerContainer"
+		},
+		"./src/reddit/constants/elementIds.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "c", (function() {
+				return s
+			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return a
+			}));
+			const r = "bladeContainer",
+				s = "header",
+				o = "overlayScrollContainer",
+				a = "collectionPostListScrollContainer"
 		},
 		"./src/reddit/constants/keycodes.ts": function(e, t, n) {
 			"use strict";
@@ -3294,4 +3310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.58dd245896f706c3a8a3.js.map
+//# sourceMappingURL=ModListing~Reddit.612ec7a8f23e7cd5f186.js.map
