@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c47aedb41e92f607ba12.js
-// Retrieved at 5/21/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1e4e20895424a3d61ed5.js
+// Retrieved at 5/26/2020, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -10913,7 +10913,7 @@
 									type: "rum"
 								}), Object(v.c)(e.meta.userAgent) && window.innerWidth > ct.b) {
 								const s = Object(a.f)(c);
-								x.a && x.a.timing && Ms.b.isEnabled && (Ms.b.recordPerformanceTimings("time_to_first_byte", x.a.timing.fetchStart, x.a.timing.responseStart), Ms.b.recordPerformanceTimings("time_to_interactive", x.a.timing.fetchStart, x.a.timing.domInteractive));
+								x.a && x.a.timing && Ms.b.isEnabled && (Ms.b.recordPerformanceTimings("".concat(t, "_time_to_first_byte"), x.a.timing.fetchStart, x.a.timing.responseStart), Ms.b.recordPerformanceTimings("".concat(t, "_time_to_interactive"), x.a.timing.fetchStart, x.a.timing.domInteractive));
 								const n = [],
 									r = {
 										isLoggedIn: Object(Y.H)(e),
@@ -12854,4 +12854,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.c47aedb41e92f607ba12.js.map
+//# sourceMappingURL=Reddit.1e4e20895424a3d61ed5.js.map
