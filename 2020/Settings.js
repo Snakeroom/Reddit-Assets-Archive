@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.cd8cf7fbdb7737531e36.js
-// Retrieved at 5/21/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.029f7f224e0b4d049d9f.js
+// Retrieved at 5/26/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, n) {
@@ -6556,4 +6556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.cd8cf7fbdb7737531e36.js.map
+//# sourceMappingURL=Settings.029f7f224e0b4d049d9f.js.map
