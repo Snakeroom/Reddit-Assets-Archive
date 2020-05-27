@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.00a001fd084995c95a4d.js
-// Retrieved at 5/27/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0bba179413437b937838.js
+// Retrieved at 5/27/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -48064,7 +48064,7 @@
 						case Be.b:
 						case No.a:
 						case zw.c:
-							if (t.payload && t.payload.preferences && t.payload.preferences.nightmode) {
+							if (t.payload && t.payload.preferences && "nightmode" in t.payload.preferences) {
 								const {
 									nightmode: e
 								} = t.payload.preferences;
@@ -48107,7 +48107,7 @@
 						case ne.q:
 						case ne.w:
 						case ne.v:
-							if (t.payload && t.payload.response && t.payload.response.preferences && t.payload.response.preferences.nightmode) {
+							if (t.payload && t.payload.response && t.payload.response.preferences && "nightmode" in t.payload.response.preferences) {
 								const {
 									nightmode: e
 								} = t.payload.response.preferences;
@@ -53124,4 +53124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.00a001fd084995c95a4d.js.map
+//# sourceMappingURL=Governance~Reddit.0bba179413437b937838.js.map
