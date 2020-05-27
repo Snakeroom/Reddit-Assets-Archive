@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d47d5b6e59af437c3e71.js
-// Retrieved at 5/27/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d7b132b85f45d58f57df.js
+// Retrieved at 5/27/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11024,14 +11024,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("6181150-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("8610b40-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6181150-production",
+						release: "8610b40-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11393,7 +11393,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6181150-production",
+							releaseClient: "8610b40-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -15444,7 +15444,7 @@
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/reddit/models/User/index.ts");
-			const r = new Set(["0perspective", "almondparfitt", "almondparfitt", "avocadoast", "chtorrr", "coachzzz", "crowd__pleaser", "dadintech", "flash_55", "igabeup", "kalluraya", "kp-krunal", "kpkrunal", "lakelly000", "sodypop", "vlkoti", "wokata", "wting", "mynameizkhan", "mattkula", "wokata", "vladkonon", "jamiewu683", "casualwill", "Mother_of_Memes", "hardleyjeannite", "recklessmaterialism", "toyotausa", "allierightmeow"]),
+			const r = new Set(["0perspective", "almondparfitt", "almondparfitt", "avocadoast", "chtorrr", "coachzzz", "crowd__pleaser", "dadintech", "flash_55", "igabeup", "kalluraya", "kp-krunal", "kpkrunal", "lakelly000", "sodypop", "vlkoti", "wokata", "wting", "mynameizkhan", "mattkula", "wokata", "vladkonon", "jamiewu683", "casualwill", "Mother_of_Memes", "hardleyjeannite", "recklessmaterialism", "toyotausa", "allierightmeow", "shotteh22", "adsforthewin", "cheepono_foundation", "captainenergy"]),
 				s = e => {
 					if (!e.user.account) return !1;
 					const t = Object(n.e)(e.user.account).toLowerCase();
@@ -29054,4 +29054,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.d47d5b6e59af437c3e71.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d7b132b85f45d58f57df.js.map
