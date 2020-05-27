@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.53cef08e0164d8ac227f.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.20a05fb21c459382bd83.js
+// Retrieved at 5/27/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -1300,22 +1300,18 @@
 				return y
 			})), n.d(t, "b", (function() {
 				return v
-			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "e", (function() {
-				return j
-			})), n.d(t, "h", (function() {
-				return T
-			})), n.d(t, "i", (function() {
-				return L
-			})), n.d(t, "f", (function() {
-				return B
-			})), n.d(t, "g", (function() {
-				return D
-			})), n.d(t, "j", (function() {
-				return F
 			})), n.d(t, "c", (function() {
-				return A
+				return E
+			})), n.d(t, "f", (function() {
+				return S
+			})), n.d(t, "g", (function() {
+				return N
+			})), n.d(t, "d", (function() {
+				return R
+			})), n.d(t, "e", (function() {
+				return L
+			})), n.d(t, "h", (function() {
+				return B
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -1323,9 +1319,9 @@
 				i = n("./src/reddit/actions/modal.ts"),
 				a = n("./src/reddit/actions/post.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
-				l = n("./src/config.ts"),
-				d = n("./src/reddit/endpoints/governance/requester.ts");
-			var u = n("./src/reddit/endpoints/governance/poll.ts");
+				l = n("./src/reddit/endpoints/governance/poll.ts"),
+				d = n("./src/config.ts"),
+				u = n("./src/reddit/endpoints/governance/requester.ts");
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
 				m = n("./src/reddit/models/Poll/index.ts"),
 				h = n("./src/reddit/models/Toast/index.ts"),
@@ -1335,73 +1331,71 @@
 				x = n("./src/reddit/actions/governance/errorToast.ts");
 			const y = Object(s.a)(g.b),
 				v = Object(s.a)(g.c),
-				C = Object(s.a)(g.d),
-				E = Object(s.a)(g.e),
-				O = Object(s.a)(g.f),
-				j = (Object(s.a)(g.g), Object(s.a)(g.h), Object(s.a)(g.i)),
-				_ = Object(s.a)(g.j),
-				k = Object(s.a)(g.k),
-				S = Object(s.a)(g.l),
-				w = Object(s.a)(g.r),
-				T = Object(s.a)(g.s),
-				I = Object(s.a)(g.t),
-				P = Object(s.a)(g.u),
-				M = Object(s.a)(g.v),
-				N = Object(s.a)(g.w),
-				R = Object(s.a)(g.x),
-				L = Object(s.a)(g.y),
-				B = (e, t) => async (n, o, s) => {
+				C = Object(s.a)(g.e),
+				E = (Object(s.a)(g.f), Object(s.a)(g.g), Object(s.a)(g.h)),
+				O = Object(s.a)(g.i),
+				j = Object(s.a)(g.j),
+				_ = Object(s.a)(g.k),
+				k = Object(s.a)(g.q),
+				S = Object(s.a)(g.r),
+				w = Object(s.a)(g.s),
+				T = Object(s.a)(g.t),
+				I = Object(s.a)(g.u),
+				P = Object(s.a)(g.v),
+				M = Object(s.a)(g.w),
+				N = Object(s.a)(g.x),
+				R = (e, t) => async (n, o, s) => {
 					let r, {
 							apiContext: i,
 							gqlContext: c
 						} = s,
-						l = o().polls.models[e];
-					if (n(k({
+						d = o().polls.models[e];
+					if (n(j({
 							pollId: e
-						})), (r = l.type === m.a.GA ? await Object(u.c)(c(), e, t) : await Object(u.b)(i(), l.subredditId, e, t)).ok) {
-						if (l.type === m.a.GA) {
+						})), (r = d.type === m.a.GA ? await Object(l.c)(c(), e, t) : await Object(l.b)(i(), d.subredditId, e, t)).ok) {
+						if (d.type === m.a.GA) {
 							const {
 								options: e
 							} = r.body.data.updatePostPollVoteState.poll;
-							n(O({
-								pollId: l.id,
+							n(C({
+								pollId: d.id,
 								optionId: t,
 								options: e
 							}))
-						} else n(S(r.body));
+						} else n(_(r.body));
 						const s = o();
-						if ((l = s.polls.models[e]) && Object(m.d)(l)) {
+						if ((d = s.polls.models[e]) && Object(m.d)(d)) {
 							const {
 								postId: e
-							} = l, t = s.posts.models[e];
+							} = d, t = s.posts.models[e];
 							t && t.voteState === b.a.notVoted && n(Object(a.cb)(e))
 						}
-					} else n(_({
+					} else n(O({
 						pollId: e,
 						error: r.error || r.errors[0].message
 					})), Object(x.a)(n, r.error || r.errors[0].messsage)
-				}, D = (e, t) => async (n, s, a) => {
+				}, L = (e, t) => async (n, s, a) => {
 					let {
-						apiContext: u
+						apiContext: l
 					} = a;
-					n(I());
+					n(w());
 					const p = s().transfers.communityPoints.contentId || void 0,
 						m = await
 					function(e, t) {
-						return Object(d.a)(e, {
+						return Object(u.a)(e, {
 							data: {
 								amount: t.amount,
 								contentId: t.contentId,
 								description: t.message,
 								receiveUserName: t.recipient
 							},
-							endpoint: "".concat(l.a.metaUrl, "/wallets/me/").concat(t.subredditId, "/transfers"),
+							endpoint: "".concat(d.a.metaUrl, "/wallets/me/").concat(t.subredditId, "/transfers"),
 							method: "post"
 						})
-					}(u(), Object.assign({}, e, {
+					}(l(), Object.assign({}, e, {
 						contentId: p
 					}));
-					m.ok ? (n(P(Object.assign({}, m.body, {
+					m.ok ? (n(T(Object.assign({}, m.body, {
 						subredditId: e.subredditId
 					}))), n(Object(c.e)({
 						kind: h.b.SuccessCommunity,
@@ -1410,47 +1404,18 @@
 						})), o.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(i.f)())) : (n(w({
+					})), t && n(Object(i.f)())) : (n(k({
 						error: m.error
 					})), Object(x.a)(n, m.error))
-				}, F = e => async (t, n, o) => {
+				}, B = e => async (t, n, o) => {
 					let {
 						apiContext: s
 					} = o;
-					t(N());
+					t(P());
 					const r = await Object(p.a)(s(), e);
-					r.ok ? t(R(r.body)) : t(M({
+					r.ok ? t(M(r.body)) : t(I({
 						error: r.error
 					}))
-				}, A = (e, t) => async (n, s, r) => {
-					let {
-						apiContext: i
-					} = r;
-					n(C());
-					const a = await
-					function(e, t, n) {
-						return Object(d.a)(e, {
-							data: {
-								optOut: t
-							},
-							method: "patch",
-							endpoint: "".concat(l.a.metaUrl, "/wallets/").concat(n, "/me")
-						})
-					}(i(), e, t);
-					a.ok ? (n(R({
-						[t]: a.body
-					})), n(Object(c.e)({
-						kind: h.b.SuccessCommunity,
-						text: e ? o.fbt._("You have successfully opted out of receiving {tokenName}", [o.fbt._param("tokenName", Object(f.p)(s(), {
-							subredditId: t
-						}))], {
-							hk: "2GTi3T"
-						}) : o.fbt._("You have opted into receiving {tokenName}", [o.fbt._param("tokenName", Object(f.p)(s(), {
-							subredditId: t
-						}))], {
-							hk: "2Xx98N"
-						})
-					}))) : Object(x.a)(n, a.error)
 				}
 		},
 		"./src/reddit/actions/postCollection/index.ts": function(e, t, n) {
@@ -25736,7 +25701,7 @@
 						t(he({
 							draftId: i.draftId,
 							response: n
-						})), u && t(Object(R.e)({
+						})), u && t(Object(R.c)({
 							poll: n.poll
 						}));
 						const o = (n.path || "/user/".concat(Object(le.e)(e), "/posts")).replace(/^\/r\/u_/, "/user/");
@@ -30331,4 +30296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.53cef08e0164d8ac227f.js.map
+//# sourceMappingURL=PostCreation.20a05fb21c459382bd83.js.map

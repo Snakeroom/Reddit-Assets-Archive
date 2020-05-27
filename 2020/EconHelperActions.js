@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.628c6c6c14304bfbb1a1.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.6a554fb941fecb2ba43f.js
+// Retrieved at 5/27/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -371,9 +371,9 @@
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/reddit/endpoints/governance/wallet.ts"),
 				o = n("./src/reddit/actions/governance/constants.ts");
-			const c = Object(s.a)(o.n),
-				d = Object(s.a)(o.o),
-				i = Object(s.a)(o.m);
+			const c = Object(s.a)(o.m),
+				d = Object(s.a)(o.n),
+				i = Object(s.a)(o.l);
 			t.a = e => async (t, n, s) => {
 				let {
 					apiContext: o
@@ -1091,4 +1091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.628c6c6c14304bfbb1a1.js.map
+//# sourceMappingURL=EconHelperActions.6a554fb941fecb2ba43f.js.map
