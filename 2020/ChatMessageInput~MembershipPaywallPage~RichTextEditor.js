@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.626dcef8553760fe6ffd.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d0ad03b8a178d7c735b9.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -373,22 +373,19 @@
 					let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3;
 					return async (n, s) => {
 						const {
-							uploads: r,
-							user: {
-								language: i
-							}
-						} = s(), a = t.map(t => r[t]).filter(t => t.status === b.a.FAILED && !t.metadata.mimetype).map(t => t.error), d = a.length > e ? e - 1 : a.length, u = a.length - d;
-						a.slice(0, d).forEach(t => n(Object(l.e)({
+							uploads: r
+						} = s(), i = t.map(t => r[t]).filter(t => t.status === b.a.FAILED && !t.metadata.mimetype).map(t => t.error), a = i.length > e ? e - 1 : i.length, d = i.length - a;
+						i.slice(0, a).forEach(t => n(Object(l.e)({
 							duration: l.a,
 							kind: C.b.Error,
-							text: Object(c.a)(i, t)
-						}))), u > 0 && n(Object(l.e)({
+							text: Object(c.a)(t)
+						}))), d > 0 && n(Object(l.e)({
 							duration: l.a,
 							kind: C.b.Error,
 							text: o.fbt._({
 								"*": "Couldn't add {number} more files",
 								_1: "Couldn't add 1 more file"
-							}, [o.fbt._plural(u, "number")], {
+							}, [o.fbt._plural(d, "number")], {
 								hk: "2fQwvl"
 							})
 						}))
@@ -3236,7 +3233,7 @@
 						} = t;
 						return e === T.a.CANCELED ? s.fbt._("Upload was canceled", null, {
 							hk: "71azQ"
-						}) : e === T.a.FAILED ? s.fbt._("Upload failed: {errorText}", [s.fbt._param("errorText", Object(Jt.a)("en", t.error))], {
+						}) : e === T.a.FAILED ? s.fbt._("Upload failed: {errorText}", [s.fbt._param("errorText", Object(Jt.a)(t.error))], {
 							hk: "3NGGzE"
 						}) : 100 === (n && n.percent || 0) ? s.fbt._("Success!", null, {
 							hk: "3622uh"
@@ -7980,4 +7977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.626dcef8553760fe6ffd.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.d0ad03b8a178d7c735b9.js.map

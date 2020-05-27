@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.5234672f928a2ad5e976.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.95e9d28dd4e6adf2e5ba.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
@@ -147,8 +147,8 @@
 				c = n("./src/lib/lessComponent.tsx"),
 				h = n("./src/reddit/components/ReportPage/index.m.less"),
 				p = n.n(h),
-				m = n("./node_modules/fbt/lib/FbtPublic.js");
-			const u = c.a.header("Header", p.a),
+				u = n("./node_modules/fbt/lib/FbtPublic.js");
+			const m = c.a.header("Header", p.a),
 				g = c.a.div("Description", p.a),
 				C = c.a.div("LinkHolder", p.a),
 				f = c.a.footer("Footer", p.a),
@@ -156,42 +156,42 @@
 				R = c.a.a("RedirectToRedditLink", p.a);
 			var b = e => r.a.createElement("div", {
 					className: e.className
-				}, r.a.createElement(u, null, e.complaintPageTitle), r.a.createElement(g, null, e.complaintPrompt || m.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
+				}, r.a.createElement(m, null, e.complaintPageTitle), r.a.createElement(g, null, e.complaintPrompt || u.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
 				})), r.a.createElement(C, null, r.a.createElement(E, {
 					href: e.complaintUrl
 				}, e.complaintButtonText)), r.a.createElement(f, null, r.a.createElement(R, {
 					href: "".concat(d.a.redditUrl)
-				}, m.fbt._("Redirect back to your home in Reddit universe", null, {
+				}, u.fbt._("Redirect back to your home in Reddit universe", null, {
 					hk: "1pMLva"
 				})))),
 				x = n("./src/reddit/components/ReportPage/FinalPage/index.m.less"),
 				y = n.n(x);
 			const P = c.a.div("OptionHolder", y.a),
 				S = c.a.div("OptionHeader", y.a),
-				v = c.a.div("OptionDescription", y.a),
-				_ = c.a.header("Header", p.a),
+				_ = c.a.div("OptionDescription", y.a),
+				v = c.a.header("Header", p.a),
 				k = c.a.footer("Footer", p.a),
 				F = c.a.div("Description", p.a),
 				w = c.a.a("Link", p.a),
 				O = c.a.a("RedirectToRedditLink", p.a),
-				I = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
-			class U extends r.a.Component {
+				U = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
+			class I extends r.a.Component {
 				constructor() {
-					super(...arguments), this.renderAbuseOfReportButtonOption = () => r.a.createElement(P, null, r.a.createElement(S, null, m.fbt._("Turn off free-form reports", null, {
+					super(...arguments), this.renderAbuseOfReportButtonOption = () => r.a.createElement(P, null, r.a.createElement(S, null, u.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
-					})), r.a.createElement(v, null, m.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [m.fbt._param("=visit the Help Center", r.a.createElement(w, {
+					})), r.a.createElement(_, null, u.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [u.fbt._param("=visit the Help Center", r.a.createElement(w, {
 						target: "_blank",
-						href: I
-					}, m.fbt._("visit the Help Center", null, {
+						href: U
+					}, u.fbt._("visit the Help Center", null, {
 						hk: "1bc2jS"
 					})))], {
 						hk: "3sQZ0g"
-					}))), this.renderWithoutOptions = () => r.a.createElement(r.a.Fragment, null, r.a.createElement(F, null, m.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
+					}))), this.renderWithoutOptions = () => r.a.createElement(r.a.Fragment, null, r.a.createElement(F, null, u.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
 						hk: "2tRkyQ"
 					})), r.a.createElement(k, null, r.a.createElement(O, {
 						href: "/"
-					}, m.fbt._("Redirect back to your home in Reddit universe", null, {
+					}, u.fbt._("Redirect back to your home in Reddit universe", null, {
 						hk: "1pMLva"
 					}))))
 				}
@@ -201,9 +201,9 @@
 					} = this;
 					return r.a.createElement("div", {
 						className: e.className
-					}, r.a.createElement(_, null, m.fbt._("Thank you for your report.", null, {
+					}, r.a.createElement(v, null, u.fbt._("Thank you for your report.", null, {
 						hk: "2l8iOp"
-					})), e.chosenRule.isAbuseOfReportButton ? r.a.createElement(r.a.Fragment, null, r.a.createElement(F, null, m.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), e.chosenRule.isAbuseOfReportButton ? r.a.createElement(r.a.Fragment, null, r.a.createElement(F, null, u.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "12EkwP"
 					})), this.renderAbuseOfReportButtonOption()) : this.renderWithoutOptions())
 				}
@@ -212,14 +212,13 @@
 				T = n("./src/reddit/components/ContentPolicy/index.tsx"),
 				D = n("./src/lib/classNames/index.ts"),
 				V = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
-				M = n("./src/reddit/components/Translated/index.tsx"),
-				L = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				A = n("./src/reddit/components/ReportPage/AdditionalInfoInput/index.m.less"),
-				j = n.n(A);
-			const q = c.a.fieldset("Fieldset", p.a),
-				B = c.a.div("AdditionalInfoCheckboxes", j.a),
-				H = c.a.wrapped(L.a, "AdditionalInfoCheckbox", j.a);
-			class W extends r.a.Component {
+				M = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				L = n("./src/reddit/components/ReportPage/AdditionalInfoInput/index.m.less"),
+				A = n.n(L);
+			const j = c.a.fieldset("Fieldset", p.a),
+				q = c.a.div("AdditionalInfoCheckboxes", A.a),
+				H = c.a.wrapped(M.a, "AdditionalInfoCheckbox", A.a);
+			class B extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						additionalInfo: []
@@ -237,7 +236,7 @@
 					} = this;
 					return r.a.createElement("div", {
 						className: e.className
-					}, r.a.createElement(q, null, r.a.createElement(B, null, e.additionalCheckboxes.checkboxes.map(e => r.a.createElement(H, {
+					}, r.a.createElement(j, null, r.a.createElement(q, null, e.additionalCheckboxes.checkboxes.map(e => r.a.createElement(H, {
 						key: e.name,
 						isSelected: t.additionalInfo.indexOf(e.name) > -1,
 						onClick: this.onAdditionalInfoCheckboxClick(e.name),
@@ -245,12 +244,12 @@
 					})))))
 				}
 			}
-			var Z = n("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
-				z = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				K = n("./src/reddit/components/ReportPage/SubredditNameInput/index.m.less"),
-				X = n.n(K);
-			const G = c.a.header("InputDescription", p.a);
-			class Q extends r.a.Component {
+			var W = n("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
+				Z = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
+				z = n("./src/reddit/components/ReportPage/SubredditNameInput/index.m.less"),
+				K = n.n(z);
+			const X = c.a.header("InputDescription", p.a);
+			class G extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						subredditName: ""
@@ -278,31 +277,31 @@
 						className: e.className
 					}, r.a.createElement("fieldset", {
 						className: p.a.fieldset
-					}, r.a.createElement(G, null, m.fbt._("You must be a moderator of the subreddit in which the evasion is taking place.", null, {
+					}, r.a.createElement(X, null, u.fbt._("You must be a moderator of the subreddit in which the evasion is taking place.", null, {
 						hk: "2jQgis"
 					})), r.a.createElement("div", {
 						className: p.a.field
-					}, r.a.createElement(z.b, {
-						backgroundColorState: z.a.WhiteFields,
+					}, r.a.createElement(Z.b, {
+						backgroundColorState: Z.a.WhiteFields,
 						className: p.a.input,
-						label: m.fbt._("Subreddit", null, {
+						label: u.fbt._("Subreddit", null, {
 							hk: "3cWPAa"
 						}),
 						onChange: this.onSubredditNameChange,
-						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : z.d.Invalid,
+						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : Z.d.Invalid,
 						value: t.subredditName
 					}), !e.showErrors || !n && e.regexValid || e.isDirty ? null : r.a.createElement("div", {
-						className: X.a.errorMessage
-					}, e.regexValid ? n ? s : "" : m.fbt._("Please match the requested format.", null, {
+						className: K.a.errorMessage
+					}, e.regexValid ? n ? s : "" : u.fbt._("Please match the requested format.", null, {
 						hk: "3TUeTn"
 					})))))
 				}
 			}
-			var J = c.a.wrapped(Q, "Component", X.a),
-				Y = n("./src/reddit/components/ReportPage/ThingUrlInput/index.m.less"),
-				$ = n.n(Y);
-			const ee = c.a.header("InputDescription", p.a);
-			class te extends r.a.Component {
+			var Q = c.a.wrapped(G, "Component", K.a),
+				J = n("./src/reddit/components/ReportPage/ThingUrlInput/index.m.less"),
+				Y = n.n(J);
+			const $ = c.a.header("InputDescription", p.a);
+			class ee extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						thingUrl: ""
@@ -330,49 +329,49 @@
 						className: e.className
 					}, r.a.createElement("fieldset", {
 						className: p.a.fieldset
-					}, e.description && r.a.createElement(ee, null, e.description), r.a.createElement("div", {
+					}, e.description && r.a.createElement($, null, e.description), r.a.createElement("div", {
 						className: p.a.field
-					}, r.a.createElement(z.b, {
-						backgroundColorState: z.a.WhiteFields,
+					}, r.a.createElement(Z.b, {
+						backgroundColorState: Z.a.WhiteFields,
 						className: p.a.input,
-						label: m.fbt._("Link to Post/Comment/PM on Reddit", null, {
+						label: u.fbt._("Link to Post/Comment/PM on Reddit", null, {
 							hk: "23bqQ6"
 						}),
 						onChange: this.onThingUrlChange,
-						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : z.d.Invalid,
+						state: !e.showErrors || !n && e.regexValid || e.isDirty ? void 0 : Z.d.Invalid,
 						value: t.thingUrl
 					}), !e.showErrors || !n && e.regexValid || e.isDirty ? null : r.a.createElement("div", {
-						className: $.a.errorMessage
-					}, e.regexValid ? n ? s : "" : m.fbt._("Please match the requested format.", null, {
+						className: Y.a.errorMessage
+					}, e.regexValid ? n ? s : "" : u.fbt._("Please match the requested format.", null, {
 						hk: "3TUeTn"
 					})))))
 				}
 			}
-			var ne = c.a.wrapped(te, "Component", $.a),
-				se = n("./src/reddit/icons/svgs/Plus/index.tsx"),
-				re = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				ae = n("./src/reddit/components/ReportPage/UsernamesInput/index.m.less"),
-				oe = n.n(ae);
-			const ie = 10,
-				le = ["u/"],
-				de = c.a.header("InputDescription", p.a);
-			class ce extends r.a.Component {
+			var te = c.a.wrapped(ee, "Component", Y.a),
+				ne = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				se = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				re = n("./src/reddit/components/ReportPage/UsernamesInput/index.m.less"),
+				ae = n.n(re);
+			const oe = 10,
+				ie = ["u/"],
+				le = c.a.header("InputDescription", p.a);
+			class de extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
-						usernames: le
+						usernames: ie
 					}, this.getAddUsernameButton = () => r.a.createElement("button", {
-						className: oe.a.addUsernameButton,
+						className: ae.a.addUsernameButton,
 						onClick: this.handleAddUsername
-					}, r.a.createElement(se.a, {
-						className: oe.a.addUsernameButtonIcon
+					}, r.a.createElement(ne.a, {
+						className: ae.a.addUsernameButtonIcon
 					}), r.a.createElement("span", {
-						className: oe.a.addUsernameButtonText
-					}, m.fbt._("Add username", null, {
+						className: ae.a.addUsernameButtonText
+					}, u.fbt._("Add username", null, {
 						hk: "51073"
 					}))), this.getDeleteUsernameButton = e => r.a.createElement("button", {
-						className: oe.a.deleteUsernameFieldButton,
+						className: ae.a.deleteUsernameFieldButton,
 						onClick: this.handleRemoveUsername(e)
-					}, r.a.createElement(re.b, null)), this.handleUsernameChange = e => t => {
+					}, r.a.createElement(se.b, null)), this.handleUsernameChange = e => t => {
 						const n = this.state.usernames.map((n, s) => e !== s ? n : t.target.value);
 						this.setState({
 							usernames: n
@@ -420,7 +419,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.onUsernamesChange(le)
+					this.props.onUsernamesChange(ie)
 				}
 				render() {
 					const {
@@ -431,9 +430,9 @@
 						className: e.className
 					}, r.a.createElement("fieldset", {
 						className: p.a.fieldset
-					}, r.a.createElement(de, null, e.banEvadingUsernames ? m.fbt._("List up ban-evading accounts, starting with the originally banned user.", null, {
+					}, r.a.createElement(le, null, e.banEvadingUsernames ? u.fbt._("List up ban-evading accounts, starting with the originally banned user.", null, {
 						hk: "16rcm5"
-					}) : e.usernamesInputDescription || m.fbt._("Please provide related usernames you want to report.", null, {
+					}) : e.usernamesInputDescription || u.fbt._("Please provide related usernames you want to report.", null, {
 						hk: "2loBL6"
 					})), t.usernames.map((n, s) => {
 						let a = !1,
@@ -445,27 +444,30 @@
 						const i = !1 !== e.fieldsValidity["username_".concat(s)];
 						return r.a.createElement("div", {
 							className: p.a.field
-						}, r.a.createElement(z.b, {
-							backgroundColorState: z.a.WhiteFields,
+						}, r.a.createElement(Z.b, {
+							backgroundColorState: Z.a.WhiteFields,
 							className: p.a.input,
-							label: m.fbt._("Username", null, {
+							label: u.fbt._("Username", null, {
 								hk: "4hkwGi"
 							}) + (e.oneUsername ? "" : " ".concat(s + 1)),
 							onChange: this.handleUsernameChange(s),
-							state: !e.showErrors || !a && i || e.dirtyFields["username_".concat(s)] ? void 0 : z.d.Invalid,
+							state: !e.showErrors || !a && i || e.dirtyFields["username_".concat(s)] ? void 0 : Z.d.Invalid,
 							value: n
 						}), t.usernames.length > 1 && this.getDeleteUsernameButton(s), e.showErrors && (a || !i) && !e.dirtyFields["username_".concat(s)] && r.a.createElement("div", {
-							className: oe.a.errorMessage
-						}, i ? a ? o : "" : m.fbt._("Please match the requested format.", null, {
+							className: ae.a.errorMessage
+						}, i ? a ? o : "" : u.fbt._("Please match the requested format.", null, {
 							hk: "3TUeTn"
 						})))
-					}), !e.oneUsername && t.usernames.length < ie ? this.getAddUsernameButton() : null))
+					}), !e.oneUsername && t.usernames.length < oe ? this.getAddUsernameButton() : null))
 				}
 			}
-			var he = c.a.wrapped(ce, "Component", oe.a),
-				pe = n("./src/reddit/components/ReportPage/ChildReasons/index.m.less"),
-				me = n.n(pe);
-			class ue extends r.a.Component {
+			var ce = c.a.wrapped(de, "Component", ae.a),
+				he = n("./src/reddit/components/ReportPage/ChildReasons/index.m.less"),
+				pe = n.n(he);
+			const {
+				fbt: ue
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			class me extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleClickIfChildrenExist = (e, t) => () => {
 						this.props.onUpdateRulesSequence(e, t), this.onChosenRuleCleared()
@@ -492,14 +494,14 @@
 						rulesSequence: t
 					} = e, n = e.parentRule.nextStepReasons, s = t && t.length > e.depthOfParentRule ? t[e.depthOfParentRule] : -1, a = t && t.length > e.depthOfParentRule + 1 ? t[e.depthOfParentRule + 1] : -1, o = 0 === e.depthOfParentRule, i = s === e.indexOfParentRule;
 					if (!n || !n.length) return null;
-					const l = i ? me.a.open : me.a.closed,
-						d = o ? me.a.topLevelSubSection : me.a.subSection;
+					const l = i ? pe.a.open : pe.a.closed,
+						d = o ? pe.a.topLevelSubSection : pe.a.subSection;
 					return r.a.createElement("div", {
 						className: Object(D.a)(l, d, e.className)
 					}, e.depthOfParentRule > 0 ? r.a.createElement("div", {
-						className: me.a.radioOptionsSectionHeader
-					}, e.parentRule.nextStepHeader || r.a.createElement(M.a, {
-						msgId: "reportPage.selectARule"
+						className: pe.a.radioOptionsSectionHeader
+					}, e.parentRule.nextStepHeader || ue._("Select a rule", null, {
+						hk: "3dqfv6"
 					})) : null, n.map((t, n) => {
 						const s = a === n;
 						return r.a.createElement(r.a.Fragment, {
@@ -510,7 +512,7 @@
 							label: t.reasonTextToShow,
 							selected: s,
 							onClick: t.nextStepReasons && t.nextStepReasons.length ? this.handleClickIfChildrenExist(n, e.depthOfParentRule + 1) : this.handleClickIfChildrenNotExist(n, e.depthOfParentRule + 1, t)
-						}), s && t.canSpecifySubreddit && r.a.createElement(J, {
+						}), s && t.canSpecifySubreddit && r.a.createElement(Q, {
 							depth: e.depthOfParentRule + 1,
 							isDirty: e.dirtyFields.subredditName,
 							onMakeFieldDirty: e.onMakeFieldDirty,
@@ -518,7 +520,7 @@
 							regexValid: e.fieldsValidity.subredditName,
 							reportError: e.reportError,
 							showErrors: e.showErrors
-						}), s && t.canSpecifyUsernames && r.a.createElement(he, {
+						}), s && t.canSpecifyUsernames && r.a.createElement(ce, {
 							banEvadingUsernames: t.banEvadingUsernames,
 							usernamesInputDescription: t.usernamesInputDescription,
 							dirtyFields: e.dirtyFields,
@@ -530,7 +532,7 @@
 							onUsernamesChange: this.onFieldChange("usernames"),
 							reportError: e.reportError,
 							showErrors: e.showErrors
-						}), s && t.canSpecifyThing && r.a.createElement(ne, {
+						}), s && t.canSpecifyThing && r.a.createElement(te, {
 							depth: e.depthOfParentRule + 1,
 							isDirty: e.dirtyFields.thingId,
 							onMakeFieldDirty: e.onMakeFieldDirty,
@@ -539,16 +541,16 @@
 							reportError: e.reportError,
 							showErrors: e.showErrors,
 							description: t.thingInputDescription
-						}), s && t.additionalCheckboxes && t.additionalCheckboxes.checkboxes && t.additionalCheckboxes.checkboxes.length && r.a.createElement(W, {
+						}), s && t.additionalCheckboxes && t.additionalCheckboxes.checkboxes && t.additionalCheckboxes.checkboxes.length && r.a.createElement(B, {
 							additionalCheckboxes: t.additionalCheckboxes,
 							depth: e.depthOfParentRule + 1,
 							onAdditionalInfoChange: this.onFieldChange("additionalInfo")
-						}), s && t.canWriteNotes && r.a.createElement(Z.a, {
+						}), s && t.canWriteNotes && r.a.createElement(W.a, {
 							depth: e.depthOfParentRule + 1,
 							onCustomTextChange: this.onFieldChange("customText"),
 							title: t.notesInputTitle,
 							description: t.notesInputDescription
-						}), r.a.createElement(ue, {
+						}), r.a.createElement(me, {
 							chosenReasonPayload: e.chosenReasonPayload,
 							depthOfParentRule: e.depthOfParentRule + 1,
 							dirtyFields: e.dirtyFields,
@@ -568,7 +570,7 @@
 					}))
 				}
 			}
-			var ge = c.a.wrapped(ue, "Component", me.a);
+			var ge = c.a.wrapped(me, "Component", pe.a);
 			class Ce extends r.a.Component {
 				render() {
 					const {
@@ -599,13 +601,12 @@
 				be = n("./src/reddit/models/RulesSequence/index.ts"),
 				xe = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
 				ye = n.n(xe);
-			const Pe = c.a.header("Header", p.a),
-				Se = c.a.wrapped(Re.a, "Footer", ye.a),
-				ve = c.a.wrapped(fe.f, "SubmitButton", ye.a),
-				_e = Object(o.c)({
-					initialReason: e => e.reportPage.initialReason
-				});
-			class ke extends r.a.Component {
+			const {
+				fbt: Pe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Se = c.a.header("Header", p.a), _e = c.a.wrapped(Re.a, "Footer", ye.a), ve = c.a.wrapped(fe.f, "SubmitButton", ye.a), ke = Object(o.c)({
+				initialReason: e => e.reportPage.initialReason
+			});
+			class Fe extends r.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
 						this.setState({
@@ -650,17 +651,17 @@
 					} = e;
 					return t && t.length ? r.a.createElement("div", {
 						className: e.className
-					}, r.a.createElement(Pe, null, r.a.createElement(M.a, {
-						msgId: "reportPage.form.header"
-					})), t.map((e, t) => this.renderRulesSection(e, t)), r.a.createElement(Se, null, r.a.createElement("div", {
+					}, r.a.createElement(Se, null, Pe._("How can we help?", null, {
+						hk: "1iOApB"
+					})), t.map((e, t) => this.renderRulesSection(e, t)), r.a.createElement(_e, null, r.a.createElement("div", {
 						className: ye.a.contentPolicyHolder
 					}, r.a.createElement(T.a, null)), r.a.createElement(ve, {
 						onClick: this.onSubmit,
 						disabled: !e.isReasonChosen
-					}, e.isReportPending ? r.a.createElement(M.a, {
-						msgId: "reportPage.submitButton.pending"
-					}) : r.a.createElement(M.a, {
-						msgId: "reportPage.submitButton.submit"
+					}, e.isReportPending ? Pe._("Pending", null, {
+						hk: "2w0p3b"
+					}) : Pe._("Submit", null, {
+						hk: "3ydLzW"
 					})))) : null
 				}
 				renderRulesSection(e, t) {
@@ -691,23 +692,23 @@
 					}))
 				}
 			}
-			var Fe = Object(a.b)(_e)(ke),
-				we = n("./src/reddit/contexts/ApiContext.tsx"),
-				Oe = n("./src/reddit/endpoints/accounts/index.ts"),
+			var we = Object(a.b)(ke)(Fe),
+				Oe = n("./src/reddit/contexts/ApiContext.tsx"),
+				Ue = n("./src/reddit/endpoints/accounts/index.ts"),
 				Ie = n("./src/reddit/endpoints/post/index.tsx"),
-				Ue = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
-				Ne = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				Te = n("./src/reddit/selectors/user.ts"),
-				De = n("./src/reddit/pages/ReportPage/index.m.less"),
-				Ve = n.n(De);
+				Ne = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
+				Te = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				De = n("./src/reddit/selectors/user.ts"),
+				Ve = n("./src/reddit/pages/ReportPage/index.m.less"),
+				Me = n.n(Ve);
 			const {
-				fbt: Me
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Le = Object(o.c)({
-				currentUser: Te.i,
+				fbt: Le
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ae = Object(o.c)({
+				currentUser: De.i,
 				reportPageRules: e => e.reportPage.reportPageRules,
-				crisisFlowEnabled: Ne.b
-			}), Ae = Object(a.b)(Le);
-			class je extends r.a.Component {
+				crisisFlowEnabled: Te.b
+			}), je = Object(a.b)(Ae);
+			class qe extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						dirtyFields: {},
@@ -767,7 +768,7 @@
 					}, this.checkResponse = (e, t) => {
 						e.ok ? t() : (e.body.json && e.body.json.errors.length && (e = Object.assign({}, e, {
 							ok: !1,
-							error: Object(Ue.a)(e)
+							error: Object(Ne.a)(e)
 						})), this.setState({
 							reportError: e.error,
 							reportPending: !1
@@ -795,7 +796,7 @@
 									reportError: null
 								});
 								const t = this.getCleanUsername(n.usernames[0]),
-									s = await Object(Oe.b)(e.apiContext(), t);
+									s = await Object(Ue.b)(e.apiContext(), t);
 								return s.error && "NOT_FOUND_ERROR" === s.error.type && (s.error = {
 									type: "USER_DOESNT_EXIST_HELPCENTER",
 									fields: [{
@@ -833,14 +834,14 @@
 					return e.currentUser ? r.a.createElement("div", {
 						className: e.className
 					}, r.a.createElement("div", {
-						className: Ve.a.content
+						className: Me.a.content
 					}, r.a.createElement("h1", {
-						className: Ve.a.header
-					}, Me._("Submit a report", null, {
+						className: Me.a.header
+					}, Le._("Submit a report", null, {
 						hk: "3IySnr"
 					})), e.reportPageRules && e.reportPageRules.length ? r.a.createElement("div", {
-						className: Ve.a.form
-					}, this.getContentWithModal()) : r.a.createElement("div", null, Me._("Loading...", null, {
+						className: Me.a.form
+					}, this.getContentWithModal()) : r.a.createElement("div", null, Le._("Loading...", null, {
 						hk: "47z90C"
 					})))) : null
 				}
@@ -857,7 +858,7 @@
 						complaintUrl: Object(i.a)(decodeURI(t.reason.complaintUrl), {
 							thing: void 0
 						})
-					})) : t && e.reportSuccess ? r.a.createElement(U, {
+					})) : t && e.reportSuccess ? r.a.createElement(I, {
 						chosenRule: t.reason
 					}) : this.getFirstPage()
 				}
@@ -881,7 +882,7 @@
 					} = this, {
 						chosenReasonPayload: n
 					} = t;
-					return r.a.createElement(Fe, {
+					return r.a.createElement(we, {
 						chosenReasonPayload: n,
 						dirtyFields: t.dirtyFields,
 						fieldsValidity: t.fieldsValidity,
@@ -897,8 +898,8 @@
 					})
 				}
 			}
-			t.default = Object(we.b)(Ae(je))
+			t.default = Object(Oe.b)(je(qe))
 		}
 	}
 ]);
-//# sourceMappingURL=ReportPage.5234672f928a2ad5e976.js.map
+//# sourceMappingURL=ReportPage.95e9d28dd4e6adf2e5ba.js.map

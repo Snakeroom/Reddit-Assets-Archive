@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.741d4e581862cca80add.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8c8351ff05482d0f82c7.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9037,7 +9037,7 @@
 						sizePx: 10
 					}) : d)), t && r.a.createElement(B, {
 						language: o
-					}, Object(c.a)(o, t))))
+					}, Object(c.a)(t))))
 				}
 			}
 			t.a = Object(d.a)(W(H))
@@ -9187,18 +9187,18 @@
 			s.d(t, "a", (function() {
 				return b
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/actions/post.ts"),
-				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/components/Translated/index.tsx"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/lib/classNames/index.ts"),
+				c = s("./src/reddit/actions/post.ts"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/postCollection.ts"),
 				p = s("./src/reddit/components/PostFollow/index.m.less"),
 				u = s.n(p);
-			class h extends o.a.Component {
+			class h extends r.a.Component {
 				constructor(e) {
 					super(e), this.onFollowClick = () => {
 						const {
@@ -9236,29 +9236,33 @@
 						className: e,
 						isEventFollow: t,
 						post: s
-					} = this.props, n = this.state.isHovered, r = s.isFollowed;
-					let a = r ? "collection.follow.followed" : "collection.follow.follow";
-					return r && n && (a = "collection.follow.unfollow"), o.a.createElement("button", {
-						className: Object(i.a)(u.a.collectionFollow, {
+					} = this.props, o = this.state.isHovered, a = s.isFollowed;
+					let i = a ? n.fbt._("Followed", null, {
+						hk: "2oc9IH"
+					}) : n.fbt._("Follow", null, {
+						hk: "NkunG"
+					});
+					return a && o && (i = n.fbt._("Unfollow", null, {
+						hk: "2sJ8xn"
+					})), r.a.createElement("button", {
+						className: Object(d.a)(u.a.collectionFollow, {
 							[u.a.isFollowed]: !!s.isFollowed,
 							[u.a.isEventFollow]: t
 						}, e),
 						onClick: this.onFollowClick,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, o.a.createElement(l.a, {
-						msgId: a
-					}))
+					}, i)
 				}
 			}
-			const b = Object(r.b)(() => Object(a.c)({}), (e, t) => {
+			const b = Object(a.b)(() => Object(i.c)({}), (e, t) => {
 				let {
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.E)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.E)(s.isSponsored ? s.postId : s.id))
 				}
-			})(Object(c.c)(h))
+			})(Object(l.c)(h))
 		},
 		"./src/reddit/components/PostLeftRail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -11388,22 +11392,24 @@
 						maxWidth: e.disableFullscreen || e.layout === G.g.Large ? "".concat(e.maxWidth || K.a, "px") : "100%"
 					}
 				}, o.a.createElement("div", null, e.children), o.a.createElement(U, null))),
-				Y = s("./src/reddit/components/Translated/index.tsx"),
-				Z = s("./src/reddit/constants/wiki.ts"),
-				$ = s("./src/reddit/helpers/trackers/subredditWiki.ts");
+				Y = s("./src/reddit/constants/wiki.ts"),
+				Z = s("./src/reddit/helpers/trackers/subredditWiki.ts");
+			const {
+				fbt: $
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var ee = e => {
 				const {
 					homeUrl: t,
 					isTopBannerVariant: s,
 					pageLayer: n
-				} = e, r = !!n && !!n.meta && n.meta.name === R.yb.SUBREDDIT_WIKI, a = "wiki/".concat(Z.i), i = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
+				} = e, r = !!n && !!n.meta && n.meta.name === R.yb.SUBREDDIT_WIKI, a = "wiki/".concat(Y.i), i = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
 				return o.a.createElement(y, {
 					isActive: r,
 					isTopBannerVariant: s,
 					to: i,
-					onClick: () => e.sendEvent(Object($.g)())
-				}, o.a.createElement(Y.a, {
-					msgId: "structuredStyles.forms.menuLinks.wikiHomeLinkLabel"
+					onClick: () => e.sendEvent(Object(Z.g)())
+				}, $._("Wiki", null, {
+					hk: "1miZk"
 				}))
 			};
 			const te = Object(c.a)("spPolls", I),
@@ -16481,4 +16487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.741d4e581862cca80add.js.map
+//# sourceMappingURL=CollectionCommentsPage.8c8351ff05482d0f82c7.js.map

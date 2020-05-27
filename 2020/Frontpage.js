@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.7cb95dbf187c74d38e4d.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.28f05f42926339b7880b.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -874,36 +874,36 @@
 				o = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
 				c = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
-				a = s("./src/reddit/components/Translated/index.tsx"),
-				d = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				l = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.m.less"),
-				u = s.n(l);
-			const m = r.a.createElement(i.a, {
-					className: u.a.duHeader
-				}, r.a.createElement(a.a, {
-					msgId: "discoveryUnits.trendingToday"
-				})),
-				p = Object(d.a)({
-					isLoading: !0
-				});
+				a = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				d = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.m.less"),
+				l = s.n(d);
+			const {
+				fbt: u
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = r.a.createElement(i.a, {
+				className: l.a.duHeader
+			}, u._("Trending today", null, {
+				hk: "3rOxuO"
+			})), p = Object(a.a)({
+				isLoading: !0
+			});
 			t.a = e => r.a.createElement(c.a, {
 				className: e.className,
 				header: m,
-				layoutBodyClassName: u.a.layoutBody,
+				layoutBodyClassName: l.a.layoutBody,
 				showCardView: e.showCardView
 			}, Array.from({
 				length: e.numberOfItems || 6
 			}).map((e, t) => r.a.createElement("div", {
-				className: u.a.post,
+				className: l.a.post,
 				key: "placeholder-post-".concat(t)
 			}, r.a.createElement("div", {
-				className: Object(o.a)(u.a.desc, u.a.one, p)
+				className: Object(o.a)(l.a.desc, l.a.one, p)
 			}), r.a.createElement("div", {
-				className: Object(o.a)(u.a.desc, u.a.two, p)
+				className: Object(o.a)(l.a.desc, l.a.two, p)
 			}), r.a.createElement("div", {
-				className: Object(o.a)(u.a.icon, p)
+				className: Object(o.a)(l.a.icon, p)
 			}), r.a.createElement("div", {
-				className: Object(o.a)(u.a.name, p)
+				className: Object(o.a)(l.a.name, p)
 			}))))
 		},
 		"./src/reddit/components/TabBadger/Loader.ts": function(e, t, s) {
@@ -1906,4 +1906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.7cb95dbf187c74d38e4d.js.map
+//# sourceMappingURL=Frontpage.28f05f42926339b7880b.js.map

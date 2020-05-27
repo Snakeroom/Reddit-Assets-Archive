@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.612ec7a8f23e7cd5f186.js
-// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.bd0e559ecb44b0eb5a78.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1031,29 +1031,6 @@
 				}, s) : o.a.createElement(o.a.Fragment, null, s)
 			}))
 		},
-		"./src/reddit/components/Translated/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			}));
-			var r = n("./node_modules/lodash/isEqual.js"),
-				s = n.n(r),
-				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
-				i = n("./src/app/strings/index.ts"),
-				c = n("./src/reddit/contexts/Language.tsx");
-			class d extends a.a.Component {
-				constructor() {
-					super(...arguments), this.getString = e => Object(i.a)(e, this.props.msgId, this.props.replacements)
-				}
-				shouldComponentUpdate(e) {
-					return this.props.msgId !== e.msgId || !s()(this.props.replacements, e.replacements)
-				}
-				render() {
-					return a.a.createElement(c.a.Consumer, null, this.getString)
-				}
-			}
-		},
 		"./src/reddit/components/UserIcon/UserIcon.m.less": function(e, t, n) {
 			e.exports = {
 				DefaultUserIcon: "_3utuhrSAkEkzgaswqglvpN",
@@ -1579,14 +1556,6 @@
 					}
 				}
 			}
-		},
-		"./src/reddit/contexts/Language.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			var r = n("./node_modules/react/index.js");
-			const s = Object(r.createContext)("en")
 		},
 		"./src/reddit/controls/Button/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3310,4 +3279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.612ec7a8f23e7cd5f186.js.map
+//# sourceMappingURL=ModListing~Reddit.bd0e559ecb44b0eb5a78.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.50988b9cb43b81e5c00a.js
-// Retrieved at 5/20/2020, 8:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.e3ad68455a4afa97f570.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -33,18 +33,6 @@
 			}), e.value ? n.a.createElement(o.a, {
 				className: d.a.checkboxSelected
 			}) : n.a.createElement(r.a, null), e.children)
-		},
-		"./src/reddit/i18n/components.tsx": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return i
-			}));
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s);
-
-			function i(e) {
-				return n.a.createElement(n.a.Fragment, null, e.children)
-			}
 		},
 		"./src/reddit/icons/svgs/Admin/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -336,9 +324,9 @@
 				B = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				V = a("./src/reddit/icons/svgs/Eye/index.tsx"),
-				F = a("./src/reddit/icons/svgs/Info/index.tsx"),
-				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
-				Z = a("./src/reddit/icons/svgs/User/index.tsx"),
+				J = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				Z = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				F = a("./src/reddit/icons/svgs/User/index.tsx"),
 				W = a("./src/reddit/models/Subreddit/index.ts"),
 				Q = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				K = a("./src/config.ts"),
@@ -369,12 +357,12 @@
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
-				se = $.a.wrapped(F.a, "Info", G.a),
+				se = $.a.wrapped(J.a, "Info", G.a),
 				ne = $.a.wrapped(R.a, "RadioOption", G.a),
 				ie = $.a.wrapped(T.c, "Tooltip", G.a),
-				re = $.a.wrapped(Z.a, "Public", G.a),
+				re = $.a.wrapped(F.a, "Public", G.a),
 				oe = $.a.wrapped(V.a, "Restricted", G.a),
-				le = $.a.wrapped(J.a, "Private", G.a),
+				le = $.a.wrapped(Z.a, "Private", G.a),
 				ce = $.a.wrapped(B.a, "Employee", G.a),
 				de = $.a.wrapped(q.a, "CloseButton", G.a),
 				me = $.a.wrapped(I.b, "ErrorText", G.a),
@@ -535,7 +523,7 @@
 							}
 						}
 						return {
-							generic: Object(d.a)(this.props.language, e)
+							generic: Object(d.a)(e)
 						}
 					}, this.state = {
 						name: "",
@@ -719,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.50988b9cb43b81e5c00a.js.map
+//# sourceMappingURL=SubredditCreation.e3ad68455a4afa97f570.js.map

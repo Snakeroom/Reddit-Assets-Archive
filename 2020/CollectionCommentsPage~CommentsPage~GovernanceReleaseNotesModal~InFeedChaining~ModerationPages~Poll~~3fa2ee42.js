@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.02df7e4f3e9bef1ff58a.js
-// Retrieved at 5/27/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.1a23ca6bb03aec301ffd.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "8610b40-production"
+					SENTRY_RELEASE_VERSION: "4f727aa-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -429,24 +429,23 @@
 		"./src/reddit/components/Media/TwitterEmbed/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return v
+				return E
 			}));
-			var i = s("./node_modules/react/index.js"),
-				n = s.n(i),
-				o = s("./src/lib/classNames/index.ts"),
-				a = s("./src/lib/intersectionObserver/index.ts"),
-				r = s("./src/reddit/components/Media/constants.ts"),
-				d = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				c = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
-				l = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				h = s("./src/reddit/i18n/components.tsx"),
-				u = s("./src/reddit/i18n/utils.ts"),
-				p = s("./src/reddit/models/Media/index.ts"),
-				m = s("./src/reddit/components/Media/TwitterEmbed/index.m.less"),
-				b = s.n(m);
+			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				a = s("./src/lib/classNames/index.ts"),
+				r = s("./src/lib/intersectionObserver/index.ts"),
+				d = s("./src/reddit/components/Media/constants.ts"),
+				c = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
+				l = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
+				h = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				u = s("./src/reddit/models/Media/index.ts"),
+				p = s("./src/reddit/components/Media/TwitterEmbed/index.m.less"),
+				m = s.n(p);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -454,10 +453,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = 350,
-				f = 100,
-				E = 300;
-			class v extends n.a.Component {
+			const g = 350,
+				x = 100,
+				f = 300;
+			class E extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						isFullyLoaded: !1
@@ -466,8 +465,8 @@
 							isFullyLoaded: !0
 						})
 					}, this.embedBoxChildRef = e => {
-						this.iframe = e, e && a.a(e, (t, s) => {
-							e && e.contentWindow && !this.props.media.height && s && e.contentWindow.postMessage("twitter-measure-requested", r.a)
+						this.iframe = e, e && r.a(e, (t, s) => {
+							e && e.contentWindow && !this.props.media.height && s && e.contentWindow.postMessage("twitter-measure-requested", d.a)
 						}), this.props.embedBoxChildRef(e)
 					}
 				}
@@ -475,48 +474,52 @@
 					window.addEventListener("message", this.onWindowMessage)
 				}
 				componentWillUnmount() {
-					this.iframe && a.b(this.iframe), window.removeEventListener("message", this.onWindowMessage)
+					this.iframe && r.b(this.iframe), window.removeEventListener("message", this.onWindowMessage)
 				}
 				render() {
 					const {
 						canLoadContent: e,
 						media: t,
 						mediaContainerProps: s,
-						onIframeLoaded: i,
-						source: a,
-						title: r
+						onIframeLoaded: n,
+						source: r,
+						title: d
 					} = this.props, {
-						isFullyLoaded: m
-					} = this.state, v = s.height || (t.isDeleted ? f : E);
-					return n.a.createElement(c.a, g({}, s, {
+						isFullyLoaded: p
+					} = this.state, E = s.height || (t.isDeleted ? x : f);
+					return o.a.createElement(l.a, b({}, s, {
 						alwaysWrapMedia: !0,
-						height: v,
+						height: E,
 						showFull: !s.isListing,
-						width: x
-					}), e && n.a.createElement(n.a.Fragment, null, (!s.height || !m) && (t.isDeleted ? n.a.createElement("p", {
-						className: b.a.tweetDeleted
-					}, Object(u.b)("This Tweet has been deleted.")) : n.a.createElement("div", {
-						className: Object(o.a)(Object(l.a)({
+						width: g
+					}), e && o.a.createElement(o.a.Fragment, null, (!s.height || !p) && (t.isDeleted ? o.a.createElement("p", {
+						className: m.a.tweetDeleted
+					}, i.fbt._("This Tweet has been deleted.", null, {
+						hk: "1LhcOw"
+					})) : o.a.createElement("div", {
+						className: Object(a.a)(Object(h.a)({
 							isLoading: !0
-						}), b.a.tweetPlaceholder)
-					})), n.a.createElement(d.a, {
+						}), m.a.tweetPlaceholder)
+					})), o.a.createElement(c.a, {
 						childRef: this.embedBoxChildRef,
-						className: Object(o.a)(b.a.tweetEmbedBox, {
-							[b.a.isInvisible]: !s.height || !m
+						className: Object(a.a)(m.a.tweetEmbedBox, {
+							[m.a.isInvisible]: !s.height || !p
 						}),
-						height: v,
+						height: E,
 						isListing: s.isListing,
 						isResponsive: !0,
-						maxHeight: s.isListing ? p.i : null,
-						onLoad: i,
+						maxHeight: s.isListing ? u.i : null,
+						onLoad: n,
 						showCentered: s.showCentered,
 						showFull: !0,
-						source: a,
-						title: r,
-						width: x
-					}), s.isListing && v > p.i && n.a.createElement("div", {
-						className: b.a.seeMore
-					}, n.a.createElement(h.a, null, "see full tweet"))))
+						source: r,
+						title: d,
+						width: g
+					}), s.isListing && E > u.i && o.a.createElement("div", {
+						className: m.a.seeMore
+					}, i.fbt._("See full tweet", null, {
+						hk: "1bxtrd"
+					}))))
 				}
 			}
 		},
@@ -1274,19 +1277,7 @@
 			function n(e, t, s) {
 				return e.replace('href="https://www.reddit.com/poll/'.concat(Object(i.c)(t)), 'class="'.concat(s, '" href="https://www.reddit.com/poll/').concat(Object(i.c)(t)))
 			}
-		},
-		"./src/reddit/i18n/components.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return o
-			}));
-			var i = s("./node_modules/react/index.js"),
-				n = s.n(i);
-
-			function o(e) {
-				return n.a.createElement(n.a.Fragment, null, e.children)
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.02df7e4f3e9bef1ff58a.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.1a23ca6bb03aec301ffd.js.map

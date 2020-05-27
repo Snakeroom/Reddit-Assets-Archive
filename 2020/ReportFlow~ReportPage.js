@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.985bc17ec4f4e5c5fd7f.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.5433d187211ea2bb9fb1.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow~ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -65,10 +65,10 @@
 				}
 				return n
 			};
-			const x = u.a.div("Section", d.a),
-				f = u.a.wrapped(l.a, "ChevronUp", d.a),
-				b = u.a.wrapped(i.a, "ChevronDown", d.a),
-				g = u.a.wrapped(e => {
+			const f = u.a.div("Section", d.a),
+				x = u.a.wrapped(l.a, "ChevronUp", d.a),
+				_ = u.a.wrapped(i.a, "ChevronDown", d.a),
+				b = u.a.wrapped(e => {
 					var {
 						className: t,
 						isOpen: n
@@ -90,25 +90,25 @@
 						})
 					}, r))
 				}, "SectionHead", d.a),
-				_ = u.a.div("Article", d.a);
-			class v extends a.a.Component {
+				g = u.a.div("Article", d.a);
+			class y extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleClick = () => {
 						this.props.open || (this.props.onOpen(), this.props.onSwitchSection())
 					}
 				}
 				render() {
-					return a.a.createElement("div", null, a.a.createElement(x, null, this.props.open ? a.a.createElement(f, null) : a.a.createElement(b, null), a.a.createElement(C, {
+					return a.a.createElement("div", null, a.a.createElement(f, null, this.props.open ? a.a.createElement(x, null) : a.a.createElement(_, null), a.a.createElement(C, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
-					}, this.props.title), a.a.createElement(g, {
+					}, this.props.title), a.a.createElement(b, {
 						isOpen: this.props.open
-					}, this.props.open ? a.a.createElement(_, null, this.props.children) : null)))
+					}, this.props.open ? a.a.createElement(g, null, this.props.children) : null)))
 				}
 			}
 			t.a = Object(o.b)(null, e => ({
 				onSwitchSection: () => e(Object(s.i)())
-			}))(v)
+			}))(y)
 		},
 		"./src/reddit/components/ContentPolicy/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -126,32 +126,39 @@
 			var r = n("./src/config.ts"),
 				a = n("./node_modules/react/index.js"),
 				o = n.n(a),
-				s = n("./src/reddit/components/Translated/index.tsx"),
+				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/ContentPolicy/index.m.less"),
-				l = n.n(i),
-				c = n("./src/lib/lessComponent.tsx");
-			const d = c.a.div("Content", l.a),
-				m = c.a.a("Link", l.a);
+				l = n.n(i);
+			const {
+				fbt: c
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), d = s.a.div("Content", l.a), m = s.a.a("Link", l.a);
 			class u extends o.a.Component {
 				render() {
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(d, null, o.a.createElement(s.a, {
-						msgId: "reportFlow.contentPolicy.readThe"
-					}), " ", o.a.createElement(m, {
+					return o.a.createElement(d, null, e.subredditOrProfile && !e.isLiveStreaming ? c._("Read the {=Reddit Content Policy}{=and [communityName] 's rules}", [c._param("=Reddit Content Policy", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(r.a.redditUrl, "/help/contentpolicy")
-					}, o.a.createElement(s.a, {
-						msgId: "reportFlow.contentPolicy.link"
-					})), e.subredditOrProfile && !e.isLiveStreaming ? o.a.createElement("span", null, " ", o.a.createElement(s.a, {
-						msgId: "reportFlow.contentPolicy.and"
-					}), " ", o.a.createElement(m, {
+					}, c._("Reddit Content Policy", null, {
+						hk: "2ExUXr"
+					}))), c._param("=and [communityName] 's rules", o.a.createElement("span", null, c._("and {=[communityName] 's rules}", [c._param("=[communityName] 's rules", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(e.subredditOrProfile.url, "about/rules")
-					}, e.subredditOrProfile.displayText, "'s ", o.a.createElement(s.a, {
-						msgId: "reportFlow.contentPolicy.rules"
-					}))) : null)
+					}, c._("{communityName} 's rules", [c._param("communityName", e.subredditOrProfile.displayText)], {
+						hk: "JAsFF"
+					})))], {
+						hk: "Vm81O"
+					})))], {
+						hk: "Mm0Ks"
+					}) : c._("Read the {=Reddit Content Policy}", [c._param("=Reddit Content Policy", o.a.createElement(m, {
+						target: "_blank",
+						href: "".concat(r.a.redditUrl, "/help/contentpolicy")
+					}, c._("Reddit Content Policy", null, {
+						hk: "1a3o6N"
+					})))], {
+						hk: "7x0QT"
+					}))
 				}
 			}
 		},
@@ -169,16 +176,15 @@
 				a = n.n(r),
 				o = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				i = n("./src/reddit/components/Translated/index.tsx"),
-				l = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.constructor.js"), n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./src/reddit/helpers/parseUrl.ts"));
-			const c = ["old", "new", "en", "www", "np", "m"],
-				d = ["reddit.com", "reddit.local"].concat("").concat(c.map((function(e) {
+				i = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.constructor.js"), n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./src/reddit/helpers/parseUrl.ts"));
+			const l = ["old", "new", "en", "www", "np", "m"],
+				c = ["reddit.com", "reddit.local"].concat("").concat(l.map((function(e) {
 					return e + ".reddit.com"
-				}))).concat(c.map((function(e) {
+				}))).concat(l.map((function(e) {
 					return e + ".reddit.local"
 				}))),
-				m = ["mod.reddit.com"],
-				u = {
+				d = ["mod.reddit.com"],
+				m = {
 					subreddit: {
 						pathnameComponents: ["subredditName"],
 						pathname: /^\/r\/(\w+)\/?$/
@@ -188,7 +194,7 @@
 						pathname: /^\/(?:user|u)\/(\w+)\/?$/
 					},
 					postShortlink: {
-						hostnames: d.concat("redd.it"),
+						hostnames: c.concat("redd.it"),
 						pathnameComponents: ["postID36"],
 						pathname: /^\/([A-Za-z0-9]+)\/?$/
 					},
@@ -201,27 +207,27 @@
 						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
 					},
 					modmailConversation: {
-						hostnames: m,
+						hostnames: d,
 						pathnameComponents: ["modmailConversationId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
 					},
 					modmailMessage: {
-						hostnames: m,
+						hostnames: d,
 						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
 					}
 				};
 
-			function p(e) {
-				return (e.match(new RegExp(l.b, "g")) || []).map((function(e) {
+			function u(e) {
+				return (e.match(new RegExp(i.b, "g")) || []).map((function(e) {
 					let t;
-					return Object.keys(u).some((function(n) {
+					return Object.keys(m).some((function(n) {
 						return t = function(e, t) {
-							const n = u[e];
-							if (!u) throw new Error("Could not find reddit URL spec: " + e);
-							const r = Object(l.a)(t);
+							const n = m[e];
+							if (!m) throw new Error("Could not find reddit URL spec: " + e);
+							const r = Object(i.a)(t);
 							if (!r) return void console.error("Could not parse url", t);
-							if (-1 === (n.hostnames || d).indexOf(r.hostname)) return;
+							if (-1 === (n.hostnames || c).indexOf(r.hostname)) return;
 							const a = r.pathname.match(n.pathname);
 							if (a) {
 								return {
@@ -238,22 +244,22 @@
 					return e
 				}))
 			}
-			var h = n("./src/reddit/models/Rule/index.ts"),
-				x = n("./src/reddit/components/ReportPage/index.m.less"),
-				f = n.n(x),
-				b = n("./src/reddit/components/ReportPage/CustomTextInput/index.m.less"),
-				g = n.n(b);
-			const C = o.a.header("InputDescription", f.a);
-			class _ extends a.a.Component {
+			var p = n("./src/reddit/models/Rule/index.ts"),
+				h = n("./src/reddit/components/ReportPage/index.m.less"),
+				f = n.n(h),
+				x = n("./src/reddit/components/ReportPage/CustomTextInput/index.m.less"),
+				_ = n.n(x);
+			const b = o.a.header("InputDescription", f.a);
+			class C extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						customText: "",
-						maxLength: h.d,
+						maxLength: p.d,
 						displayLength: 0
 					}, this.onCustomTextChange = e => {
 						this.setState(Object.assign({
 							customText: e.target.value
-						}, v(e.target.value))), this.props.onCustomTextChange(e.target.value)
+						}, g(e.target.value))), this.props.onCustomTextChange(e.target.value)
 					}
 				}
 				render() {
@@ -265,42 +271,36 @@
 						className: e.className
 					}, a.a.createElement("fieldset", {
 						className: f.a.fieldset
-					}, e.description && a.a.createElement(C, null, e.description), a.a.createElement("div", {
+					}, e.description && a.a.createElement(b, null, e.description), a.a.createElement("div", {
 						className: f.a.field
 					}, a.a.createElement(s.c, {
 						backgroundColorState: s.a.WhiteFields,
-						className: g.a.customTextInput,
+						className: _.a.customTextInput,
 						label: e.title,
 						maxLength: t.maxLength,
 						onChange: this.onCustomTextChange,
 						value: t.customText
 					}), a.a.createElement("div", {
-						className: g.a.textAreaCounter
-					}, a.a.createElement(i.a, {
-						msgId: "reportPage.form.textAreaCounter",
-						replacements: {
-							length: t.displayLength,
-							maxLength: h.a
-						}
-					})))))
+						className: _.a.textAreaCounter
+					}, "".concat(t.displayLength, "/").concat(p.a)))))
 				}
 			}
-			const v = e => {
+			const g = e => {
 				const t = {
 					displayLength: 0,
-					maxLength: h.d
+					maxLength: p.d
 				};
 				if (!e) return t;
-				const n = h.a,
+				const n = p.a,
 					r = e.length,
-					a = p(e),
+					a = u(e),
 					o = a.reduce((e, t) => t ? e + t.url.length : e, 0);
 				return {
-					displayLength: Math.min(h.a, r - o + 15 * a.length),
-					maxLength: Math.min(h.d, n + o - 15 * a.length)
+					displayLength: Math.min(p.a, r - o + 15 * a.length),
+					maxLength: Math.min(p.d, n + o - 15 * a.length)
 				}
 			};
-			t.a = o.a.wrapped(_, "Component", g.a)
+			t.a = o.a.wrapped(C, "Component", _.a)
 		},
 		"./src/reddit/components/ReportPage/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -379,13 +379,13 @@
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return f
+				return x
 			})), n.d(t, "a", (function() {
-				return b
+				return _
 			})), n.d(t, "b", (function() {
 				return C
 			})), n.d(t, "c", (function() {
-				return _
+				return g
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -417,22 +417,22 @@
 			};
 			const p = s.a.div("icon", d.a),
 				h = s.a.textarea("textarea", d.a),
-				x = s.a.span("Invalid", d.a);
-			var f, b;
+				f = s.a.span("Invalid", d.a);
+			var x, _;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
-			}(f || (f = {})),
+			}(x || (x = {})),
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
-			}(b || (b = {}));
-			const g = e => a.a.createElement("div", {
+			}(_ || (_ = {}));
+			const b = e => a.a.createElement("div", {
 					className: Object(o.a)(e.isRequired && d.a.required, e.className, Object.assign({
 						[d.a.container]: !e.isTextarea,
 						[d.a.textareaContainer]: !!e.isTextarea
 					}, !!e.isTextarea && {
-						[d.a.mValid]: e.state === f.Valid,
-						[d.a.mInvalid]: e.state === f.Invalid,
-						[d.a.mWhiteField]: e.backgroundColorState === b.WhiteFields
+						[d.a.mValid]: e.state === x.Valid,
+						[d.a.mInvalid]: e.state === x.Invalid,
+						[d.a.mWhiteField]: e.backgroundColorState === _.WhiteFields
 					}))
 				}, a.a.createElement("label", {
 					className: Object(o.a)({
@@ -443,10 +443,10 @@
 					className: d.a.label
 				}, e.label), !!e.state && a.a.createElement(p, {
 					className: Object(o.a)({
-						[d.a.mValid]: e.state === f.Valid,
-						[d.a.mInvalid]: e.state === f.Invalid
+						[d.a.mValid]: e.state === x.Valid,
+						[d.a.mInvalid]: e.state === x.Invalid
 					})
-				}, e.state === f.Valid && a.a.createElement(l.a, null), e.state === f.Invalid && a.a.createElement(x, null, "!")))),
+				}, e.state === x.Valid && a.a.createElement(l.a, null), e.state === x.Invalid && a.a.createElement(f, null, "!")))),
 				C = e => {
 					const {
 						backgroundColorState: t,
@@ -457,7 +457,7 @@
 						onKeyDown: c,
 						state: p
 					} = e, h = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return a.a.createElement(g, {
+					return a.a.createElement(b, {
 						backgroundColorState: t,
 						className: n,
 						isRequired: s,
@@ -472,7 +472,7 @@
 						onKeyDown: c
 					})))
 				},
-				_ = e => {
+				g = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
@@ -482,7 +482,7 @@
 						onKeyDown: l,
 						state: c
 					} = e, p = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
-					return a.a.createElement(g, {
+					return a.a.createElement(b, {
 						backgroundColorState: t,
 						className: n,
 						isRequired: s,
@@ -491,7 +491,7 @@
 						isTextarea: !0
 					}, a.a.createElement(h, m({}, p, {
 						className: Object(o.a)({
-							[d.a.mWhiteField]: e.backgroundColorState === b.WhiteFields
+							[d.a.mWhiteField]: e.backgroundColorState === _.WhiteFields
 						}),
 						"data-empty": !e.value,
 						innerRef: r,
@@ -590,19 +590,19 @@
 			})), n.d(t, "a", (function() {
 				return h
 			})), n.d(t, "g", (function() {
-				return x
-			})), n.d(t, "i", (function() {
 				return f
+			})), n.d(t, "i", (function() {
+				return x
 			})), n.d(t, "e", (function() {
-				return b
+				return _
 			})), n.d(t, "b", (function() {
-				return g
+				return b
 			})), n.d(t, "c", (function() {
 				return C
 			})), n.d(t, "d", (function() {
-				return _
+				return g
 			})), n.d(t, "j", (function() {
-				return v
+				return y
 			}));
 			var r = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -616,13 +616,13 @@
 				u = r.a.div("FormGroup", o.a),
 				p = r.a.h2("FormGroupTitle", o.a),
 				h = r.a.div("FormElement", o.a),
-				x = r.a.div("FormGroupDescription", o.a),
-				f = r.a.div("FormItem", o.a),
-				b = r.a.h3("FormElementTitle", o.a),
-				g = r.a.div("FormElementDescription", o.a),
+				f = r.a.div("FormGroupDescription", o.a),
+				x = r.a.div("FormItem", o.a),
+				_ = r.a.h3("FormElementTitle", o.a),
+				b = r.a.div("FormElementDescription", o.a),
 				C = r.a.div("FormElementError", o.a),
-				_ = r.a.div("FormElementSubGroup", o.a),
-				v = r.a.li("FormListItem", o.a)
+				g = r.a.div("FormElementSubGroup", o.a),
+				y = r.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -658,13 +658,13 @@
 			})), n.d(t, "e", (function() {
 				return h
 			})), n.d(t, "a", (function() {
-				return x
-			})), n.d(t, "b", (function() {
 				return f
+			})), n.d(t, "b", (function() {
+				return x
 			})), n.d(t, "i", (function() {
-				return b
+				return _
 			})), n.d(t, "h", (function() {
-				return g
+				return b
 			})), n.d(t, "g", (function() {
 				return C
 			}));
@@ -680,10 +680,10 @@
 				u = r.a.input("Input", d.a),
 				p = r.a.wrapped(l.a, "RadioOn", d.a),
 				h = r.a.wrapped(i.a, "RadioOff", d.a),
-				x = r.a.wrapped(o.a, "Checkbox", d.a),
-				f = r.a.wrapped(s.a, "CheckboxSelected", d.a),
-				b = r.a.textarea("Textarea", d.a),
-				g = r.a.label("StyledLabel", d.a),
+				f = r.a.wrapped(o.a, "Checkbox", d.a),
+				x = r.a.wrapped(s.a, "CheckboxSelected", d.a),
+				_ = r.a.textarea("Textarea", d.a),
+				b = r.a.label("StyledLabel", d.a),
 				C = r.a.input("StyledFileInput", d.a)
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, n) {
@@ -785,4 +785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow~ReportPage.985bc17ec4f4e5c5fd7f.js.map
+//# sourceMappingURL=ReportFlow~ReportPage.5433d187211ea2bb9fb1.js.map

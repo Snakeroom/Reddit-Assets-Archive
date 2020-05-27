@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d7b132b85f45d58f57df.js
-// Retrieved at 5/27/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.36d233e7a3bc5f27eda7.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -17,7 +17,79 @@
 				s = (i("./node_modules/react/index.js"), i("./src/lib/constants/index.ts")),
 				o = i("./src/lib/logs/console.ts"),
 				d = i("./src/lib/stringInterpolate/index.ts"),
-				l = i("./src/app/strings/sources/error.js"),
+				l = {
+					authentication: {
+						en: "There was an authentication error"
+					},
+					clickHere: {
+						en: "Click here to try again."
+					},
+					generic: {
+						en: "Something went wrong"
+					},
+					genericPage: {
+						en: "Something went wrong loading this page. Try again?"
+					},
+					oops: {
+						en: "Oops"
+					},
+					ok: {
+						en: "ok"
+					},
+					reload: {
+						en: "Reload Page"
+					},
+					tryAgainLater: {
+						en: "An error has occured. Please try again later"
+					},
+					tryLater: {
+						en: "Give us a few minutes to fix the problem. Sorry!"
+					},
+					type: {
+						blocked: {
+							en: "It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use."
+						},
+						forbidden: {
+							en: "Sorry, You do not have permission to view this page."
+						},
+						generic: {
+							en: "Something went wrong. Just don't panic."
+						},
+						invalidUser: {
+							en: "Looks like you entered an invalid user."
+						},
+						notAuthorized: {
+							en: "It looks like you aren't allowed to do that."
+						},
+						notFound: {
+							en: "Sorry, there doesn't seem to be anything here."
+						},
+						notLoggedIn: {
+							en: "You might need to be logged in to do that."
+						},
+						server: {
+							en: "Sorry, for some reason reddit can't be reached."
+						},
+						validation: {
+							en: "We weren't able to handle your request."
+						}
+					},
+					[s.i]: {
+						en: "you're not allowed to do that"
+					},
+					[s.Vb]: {
+						en: "Video size must be less than ".concat((s.W / s.Y / 1024).toFixed(1), "GB")
+					},
+					[s.I]: {
+						en: "Image size must be less than ".concat(Math.floor(s.R / s.Y), "MB")
+					},
+					[s.F]: {
+						en: "GIF size must be less than ".concat(Math.floor(s.P / s.Y), "MB")
+					},
+					[s.K]: {
+						en: "Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)"
+					}
+				},
 				a = {
 					all: {
 						en: "View all"
@@ -2178,7 +2250,7 @@
 							}
 						}
 					},
-					error: l.a,
+					error: l,
 					euCookiePolicy: {
 						buttonText: {
 							en: "I Agree"
@@ -7773,83 +7845,6 @@
 				}, n || {}))
 			}
 		},
-		"./src/app/strings/sources/error.js": function(e, t, i) {
-			"use strict";
-			var n = i("./src/lib/constants/index.ts");
-			t.a = {
-				authentication: {
-					en: "There was an authentication error"
-				},
-				clickHere: {
-					en: "Click here to try again."
-				},
-				generic: {
-					en: "Something went wrong"
-				},
-				genericPage: {
-					en: "Something went wrong loading this page. Try again?"
-				},
-				oops: {
-					en: "Oops"
-				},
-				ok: {
-					en: "ok"
-				},
-				reload: {
-					en: "Reload Page"
-				},
-				tryAgainLater: {
-					en: "An error has occured. Please try again later"
-				},
-				tryLater: {
-					en: "Give us a few minutes to fix the problem. Sorry!"
-				},
-				type: {
-					blocked: {
-						en: "It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use."
-					},
-					forbidden: {
-						en: "Sorry, You do not have permission to view this page."
-					},
-					generic: {
-						en: "Something went wrong. Just don't panic."
-					},
-					invalidUser: {
-						en: "Looks like you entered an invalid user."
-					},
-					notAuthorized: {
-						en: "It looks like you aren't allowed to do that."
-					},
-					notFound: {
-						en: "Sorry, there doesn't seem to be anything here."
-					},
-					notLoggedIn: {
-						en: "You might need to be logged in to do that."
-					},
-					server: {
-						en: "Sorry, for some reason reddit can't be reached."
-					},
-					validation: {
-						en: "We weren't able to handle your request."
-					}
-				},
-				[n.i]: {
-					en: "you're not allowed to do that"
-				},
-				[n.Vb]: {
-					en: "Video size must be less than ".concat((n.W / n.Y / 1024).toFixed(1), "GB")
-				},
-				[n.I]: {
-					en: "Image size must be less than ".concat(Math.floor(n.R / n.Y), "MB")
-				},
-				[n.F]: {
-					en: "GIF size must be less than ".concat(Math.floor(n.P / n.Y), "MB")
-				},
-				[n.K]: {
-					en: "Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)"
-				}
-			}
-		},
 		"./src/chat/actions/container.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "SIZE_CHANGED", (function() {
@@ -11024,14 +11019,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("8610b40-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("4f727aa-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8610b40-production",
+						release: "4f727aa-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11393,7 +11388,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "8610b40-production",
+							releaseClient: "4f727aa-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -29054,4 +29049,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.d7b132b85f45d58f57df.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.36d233e7a3bc5f27eda7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.2bdc0e911655f9fee002.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.eada66f2ff74a54e69e3.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -3689,7 +3689,7 @@
 			})), s.d(t, "d", (function() {
 				return v
 			})), s.d(t, "a", (function() {
-				return y
+				return _
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -3730,20 +3730,22 @@
 				}))
 			};
 			var f = e => {
-					let {
-						className: t,
-						profileName: s,
-						timeSort: o = a.Pb.ALL
-					} = e;
-					return r.a.createElement(h, {
-						className: t
-					}, o === a.Pb.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", "u/".concat(s))], {
-						hk: "28vBEd"
-					}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", "u/".concat(s))], {
-						hk: "38GhqN"
-					}))
-				},
-				g = s("./src/reddit/components/Translated/index.tsx");
+				let {
+					className: t,
+					profileName: s,
+					timeSort: o = a.Pb.ALL
+				} = e;
+				return r.a.createElement(h, {
+					className: t
+				}, o === a.Pb.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", "u/".concat(s))], {
+					hk: "28vBEd"
+				}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", "u/".concat(s))], {
+					hk: "38GhqN"
+				}))
+			};
+			const {
+				fbt: g
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var v = e => {
 					let {
 						className: t,
@@ -3751,29 +3753,29 @@
 					} = e;
 					return r.a.createElement(h, {
 						className: t
-					}, r.a.createElement(g.a, {
-						msgId: "listings.privateEmpty",
-						replacements: {
-							verb: s
-						}
+					}, g._("hmm... looks like you haven't {verb} yet", [g._param("verb", s)], {
+						hk: "142tKN"
 					}))
 				},
 				O = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				C = s("./src/reddit/components/EmptyProfile/forbidden.m.less"),
-				E = s.n(C),
-				y = () => r.a.createElement("div", {
-					className: E.a.container
-				}, r.a.createElement(O.a, {
-					className: E.a.hideIcon
-				}), r.a.createElement("h3", {
-					className: E.a.title
-				}, r.a.createElement(g.a, {
-					msgId: "profile.forbidden.title"
-				})), r.a.createElement("p", {
-					className: E.a.subtitle
-				}, r.a.createElement(g.a, {
-					msgId: "profile.forbidden.savedSubtitle"
-				})))
+				E = s.n(C);
+			const {
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			var _ = () => r.a.createElement("div", {
+				className: E.a.container
+			}, r.a.createElement(O.a, {
+				className: E.a.hideIcon
+			}), r.a.createElement("h3", {
+				className: E.a.title
+			}, y._("You do not have permission to access this resource", null, {
+				hk: "10cPyp"
+			})), r.a.createElement("p", {
+				className: E.a.subtitle
+			}, y._("You can only look at your own saved posts and comments", null, {
+				hk: "3pWGtF"
+			})))
 		},
 		"./src/reddit/components/EventPost/EventMetaHeader/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -8165,7 +8167,7 @@
 						sizePx: 10
 					}) : c)), t && r.a.createElement(B, {
 						language: o
-					}, Object(d.a)(o, t))))
+					}, Object(d.a)(t))))
 				}
 			}
 			t.a = Object(c.a)(W(H))
@@ -8315,18 +8317,18 @@
 			s.d(t, "a", (function() {
 				return h
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n),
-				r = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/actions/post.ts"),
-				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/components/Translated/index.tsx"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/actions/post.ts"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/postCollection.ts"),
 				p = s("./src/reddit/components/PostFollow/index.m.less"),
 				u = s.n(p);
-			class b extends o.a.Component {
+			class b extends r.a.Component {
 				constructor(e) {
 					super(e), this.onFollowClick = () => {
 						const {
@@ -8364,29 +8366,33 @@
 						className: e,
 						isEventFollow: t,
 						post: s
-					} = this.props, n = this.state.isHovered, r = s.isFollowed;
-					let a = r ? "collection.follow.followed" : "collection.follow.follow";
-					return r && n && (a = "collection.follow.unfollow"), o.a.createElement("button", {
-						className: Object(i.a)(u.a.collectionFollow, {
+					} = this.props, o = this.state.isHovered, a = s.isFollowed;
+					let i = a ? n.fbt._("Followed", null, {
+						hk: "2oc9IH"
+					}) : n.fbt._("Follow", null, {
+						hk: "NkunG"
+					});
+					return a && o && (i = n.fbt._("Unfollow", null, {
+						hk: "2sJ8xn"
+					})), r.a.createElement("button", {
+						className: Object(c.a)(u.a.collectionFollow, {
 							[u.a.isFollowed]: !!s.isFollowed,
 							[u.a.isEventFollow]: t
 						}, e),
 						onClick: this.onFollowClick,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, o.a.createElement(l.a, {
-						msgId: a
-					}))
+					}, i)
 				}
 			}
-			const h = Object(r.b)(() => Object(a.c)({}), (e, t) => {
+			const h = Object(a.b)(() => Object(i.c)({}), (e, t) => {
 				let {
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.E)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.E)(s.isSponsored ? s.postId : s.id))
 				}
-			})(Object(d.c)(b))
+			})(Object(l.c)(b))
 		},
 		"./src/reddit/components/PostLeftRail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -15046,4 +15052,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.2bdc0e911655f9fee002.js.map
+//# sourceMappingURL=ProfileOverview.eada66f2ff74a54e69e3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.7499caaccab487261bcb.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.2c5737cbfc40cbbe18cf.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"], {
 		"./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less": function(e, t, s) {
@@ -110,7 +110,7 @@
 		"./src/reddit/components/Economics/Support/PaymentTooltip/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Se
+				return _e
 			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
@@ -129,13 +129,13 @@
 				b = s("./src/reddit/components/Economics/Support/Common/SubmitButton/index.tsx"),
 				C = s("./src/reddit/components/Economics/Support/Common/WrappedStripeProvider/index.tsx"),
 				g = s("./src/reddit/helpers/economics/getStripeInstance.ts"),
-				E = s("./src/reddit/helpers/governanceErrorText/index.ts"),
-				P = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				P = s("./src/reddit/helpers/governanceErrorText/index.ts"),
+				E = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				N = s("./src/reddit/models/Payments/index.ts"),
 				x = s("./src/reddit/selectors/economics.ts"),
-				S = s("./src/reddit/selectors/user.ts"),
-				_ = s("./node_modules/fbt/lib/FbtPublic.js"),
+				_ = s("./src/reddit/selectors/user.ts"),
+				S = s("./node_modules/fbt/lib/FbtPublic.js"),
 				f = s("./src/reddit/components/Translated/index.tsx"),
 				T = s("./src/reddit/controls/Checkbox/index.tsx"),
 				I = s("./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less"),
@@ -149,7 +149,7 @@
 					redditStyle: !0,
 					className: O.a.checkbox,
 					isCheckboxSelected: e.anonymous
-				}), e.contentType === N.a.Subreddit ? _.fbt._("Make my support anonymous", null, {
+				}), e.contentType === N.a.Subreddit ? S.fbt._("Make my support anonymous", null, {
 					hk: "3UIJ6q"
 				}) : n.a.createElement(f.a, {
 					msgId: "economy.support.payment.anonymous"
@@ -199,14 +199,14 @@
 					className: B.a.spacer
 				}))
 			}
-			var F = s("./src/reddit/controls/FormFields/index.tsx"),
-				D = s("./src/reddit/components/Economics/Support/PaymentTooltip/Message/index.m.less"),
-				U = s.n(D);
+			var D = s("./src/reddit/controls/FormFields/index.tsx"),
+				F = s("./src/reddit/components/Economics/Support/PaymentTooltip/Message/index.m.less"),
+				U = s.n(F);
 			var W = function(e) {
-					return n.a.createElement(F.c, {
+					return n.a.createElement(D.c, {
 						redditStyle: !0,
 						className: Object(i.a)(U.a.input, e.className),
-						label: _.fbt._("Private Message (optional)", null, {
+						label: S.fbt._("Private Message (optional)", null, {
 							hk: "4t7gCK"
 						}),
 						type: "text",
@@ -232,7 +232,7 @@
 			var q = function(e) {
 					return n.a.createElement("div", {
 						className: Object(i.a)(Y.a.container, e.className)
-					}, n.a.createElement(F.c, {
+					}, n.a.createElement(D.c, {
 						redditStyle: !0,
 						className: Y.a.input,
 						label: R._("name on card", null, {
@@ -301,8 +301,8 @@
 							[ee.a.selected]: !te(e.selectedPayment) && e.selectedPayment.type === N.b.NewStripe
 						}),
 						onClick: () => e.onSelectPayment(Object(N.d)())
-					}, n.a.createElement(f.a, {
-						msgId: "economy.support.payment.card.selector.other"
+					}, S.fbt._("Add New Card", null, {
+						hk: "PN0KD"
 					}), !te(e.selectedPayment) && e.selectedPayment.type === N.b.NewStripe && n.a.createElement(Q.a, {
 						className: ee.a.check
 					})))
@@ -333,8 +333,8 @@
 						className: oe.a.lockIcon
 					}), n.a.createElement("div", {
 						className: oe.a.cardType
-					}, this.props.selectedPayment.type === N.b.NewStripe || this.props.selectedPayment.type === N.b.NewPayPal ? n.a.createElement(f.a, {
-						msgId: "economy.support.payment.card.selector.other"
+					}, this.props.selectedPayment.type === N.b.NewStripe || this.props.selectedPayment.type === N.b.NewPayPal ? S.fbt._("Add New Card", null, {
+						hk: "PN0KD"
 					}) : this.props.selectedPayment.display), n.a.createElement(K.a, {
 						className: oe.a.dropdownCaret
 					})))
@@ -358,13 +358,13 @@
 						a = String(Math.floor(100 * e.community)),
 						n = String(Math.floor(100 * e.reddit));
 					return {
-						communityPercentText: _.fbt._("{communityPercent}%* goes to {communityName}", [_.fbt._param("communityPercent", a), _.fbt._param("communityName", s)], {
+						communityPercentText: S.fbt._("{communityPercent}%* goes to {communityName}", [S.fbt._param("communityPercent", a), S.fbt._param("communityName", s)], {
 							hk: "4j0I4f"
 						}),
-						communityPercentTextFees: _.fbt._("{communityPercent}% goes to {communityName} (excluding fees)", [_.fbt._param("communityPercent", a), _.fbt._param("communityName", s)], {
+						communityPercentTextFees: S.fbt._("{communityPercent}% goes to {communityName} (excluding fees)", [S.fbt._param("communityPercent", a), S.fbt._param("communityName", s)], {
 							hk: "426o5D"
 						}),
-						redditPercentText: _.fbt._("{redditPercent}% goes to Reddit", [_.fbt._param("redditPercent", n)], {
+						redditPercentText: S.fbt._("{redditPercent}% goes to Reddit", [S.fbt._param("redditPercent", n)], {
 							hk: "VgZds"
 						})
 					}
@@ -420,32 +420,32 @@
 				})),
 				Ce = s("./src/reddit/components/Economics/Support/PaymentTooltip/UserDisplay/index.m.less"),
 				ge = s.n(Ce);
-			const Ee = (e, t, s) => {
+			const Pe = (e, t, s) => {
 					if (t && t.community) {
 						const a = Math.floor(100 * t.community),
-							n = e ? e.displayText : _.fbt._("the subreddit", null, {
+							n = e ? e.displayText : S.fbt._("the subreddit", null, {
 								hk: "jAOBG"
 							});
-						return s ? _.fbt._("{amount}% goes to {name} (excluding fees)", [_.fbt._param("amount", String(a)), _.fbt._param("name", n)], {
+						return s ? S.fbt._("{amount}% goes to {name} (excluding fees)", [S.fbt._param("amount", String(a)), S.fbt._param("name", n)], {
 							hk: "1fLsRt"
-						}) : _.fbt._("{amount}%* goes to {name}", [_.fbt._param("amount", String(a)), _.fbt._param("name", n)], {
+						}) : S.fbt._("{amount}%* goes to {name}", [S.fbt._param("amount", String(a)), S.fbt._param("name", n)], {
 							hk: "48nqW3"
 						})
 					}
 					return ""
 				},
-				Pe = e => e && e.reddit ? _.fbt._("{amount}% goes to Reddit", [_.fbt._param("amount", String(Math.floor(100 * e.reddit)))], {
+				Ee = e => e && e.reddit ? S.fbt._("{amount}% goes to Reddit", [S.fbt._param("amount", String(Math.floor(100 * e.reddit)))], {
 					hk: "2kvg4m"
 				}) : "",
 				ve = (e, t, s) => {
 					if (t && t.creator) {
 						const a = String(Math.floor(100 * t.creator)),
 							n = "u/".concat(e);
-						return t.community ? _.fbt._("{amount}% goes to {name}", [_.fbt._param("amount", a), _.fbt._param("name", n)], {
+						return t.community ? S.fbt._("{amount}% goes to {name}", [S.fbt._param("amount", a), S.fbt._param("name", n)], {
 							hk: "16mwwo"
-						}) : s ? _.fbt._("{amount}% goes to {name} (excluding fees)", [_.fbt._param("amount", String(a)), _.fbt._param("name", n)], {
+						}) : s ? S.fbt._("{amount}% goes to {name} (excluding fees)", [S.fbt._param("amount", String(a)), S.fbt._param("name", n)], {
 							hk: "1fLsRt"
-						}) : _.fbt._("{amount}%* goes to {name}", [_.fbt._param("amount", String(a)), _.fbt._param("name", n)], {
+						}) : S.fbt._("{amount}%* goes to {name}", [S.fbt._param("amount", String(a)), S.fbt._param("name", n)], {
 							hk: "48nqW3"
 						})
 					}
@@ -477,16 +477,16 @@
 						className: ge.a.content
 					}, e ? n.a.createElement("div", {
 						className: ge.a.usernameLoading
-					}, _.fbt._("Loading...", null, {
+					}, S.fbt._("Loading...", null, {
 						hk: "259Say"
 					})) : n.a.createElement("div", {
 						className: ge.a.username
 					}, this.props.user && this.props.user.username ? this.props.user && this.props.user.username : ""), this.props.tipsProportions && !e && this.props.user && this.props.user.username && function(e, t) {
 						if (e.tipsProportions) {
 							let s;
-							if (e.tipsProportions.community ? s = Ee(e.subreddit, e.tipsProportions) : e.tipsProportions.creator && (s = ve(t, e.tipsProportions)), s) return n.a.createElement("div", {
+							if (e.tipsProportions.community ? s = Pe(e.subreddit, e.tipsProportions) : e.tipsProportions.creator && (s = ve(t, e.tipsProportions)), s) return n.a.createElement("div", {
 								className: ge.a.msgWrapper,
-								title: [ve(t, e.tipsProportions, !0), Ee(e.subreddit, e.tipsProportions, !0), Pe(e.tipsProportions)].filter(Boolean).join(", ")
+								title: [ve(t, e.tipsProportions, !0), Pe(e.subreddit, e.tipsProportions, !0), Ee(e.tipsProportions)].filter(Boolean).join(", ")
 							}, n.a.createElement("div", {
 								className: ge.a.msg
 							}, s), n.a.createElement(le.a, {
@@ -505,12 +505,12 @@
 					})
 				}
 			});
-			var Se, _e = Object(r.b)(xe)(Ne),
+			var _e, Se = Object(r.b)(xe)(Ne),
 				fe = s("./src/reddit/components/Economics/Support/PaymentTooltip/index.m.less"),
 				Te = s.n(fe);
 			! function(e) {
 				e[e.Above = 0] = "Above", e[e.Below = 1] = "Below", e[e.Modal = 2] = "Modal"
-			}(Se || (Se = {}));
+			}(_e || (_e = {}));
 			const Ie = [{
 					key: "container",
 					style: {
@@ -571,7 +571,7 @@
 					}, n.a.createElement("div", {
 						className: Object(i.a)(Te.a.container, this.props.className),
 						style: this.props.style
-					}, this.tipTargetIsUser() && n.a.createElement(_e, {
+					}, this.tipTargetIsUser() && n.a.createElement(Se, {
 						className: Te.a.userDisplay,
 						contentId: this.props.content.id,
 						subreddit: this.props.subreddit,
@@ -612,7 +612,7 @@
 						className: Te.a.error
 					}, n.a.createElement(v.a, {
 						className: Te.a.errorIcon
-					}), Object(E.a)(this.state.submissionError)), n.a.createElement(b.a, {
+					}), Object(P.a)(this.state.submissionError)), n.a.createElement(b.a, {
 						amount: this.state.amount,
 						anonymous: this.state.anonymous,
 						className: Te.a.submit,
@@ -629,7 +629,7 @@
 						anonymous: this.state.anonymous,
 						className: Te.a.legal,
 						contentType: this.props.content.type
-					}), n.a.createElement(P.a, {
+					}), n.a.createElement(E.a, {
 						className: Te.a.close,
 						onClick: () => this.props.onClose()
 					}), n.a.createElement(o.TransitionMotion, {
@@ -652,10 +652,10 @@
 					}, n.a.createElement(A, {
 						className: Te.a.coin,
 						value: this.state.amount.value
-					})))))), this.props.position !== Se.Modal && n.a.createElement("div", {
+					})))))), this.props.position !== _e.Modal && n.a.createElement("div", {
 						className: Object(i.a)(Te.a.arrow, {
-							[Te.a.arrowBelow]: this.props.position === Se.Above,
-							[Te.a.arrowAbove]: this.props.position === Se.Below
+							[Te.a.arrowBelow]: this.props.position === _e.Above,
+							[Te.a.arrowAbove]: this.props.position === _e.Below
 						})
 					})))
 				}
@@ -676,7 +676,7 @@
 					let {
 						targetName: s
 					} = t;
-					return Object(S.eb)(e, {
+					return Object(_.eb)(e, {
 						userName: s
 					})
 				}
@@ -726,4 +726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.7499caaccab487261bcb.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.2c5737cbfc40cbbe18cf.js.map

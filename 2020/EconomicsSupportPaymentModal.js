@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.5de8ac5ce77a1fffe019.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSupportPaymentModal.b844362e334ead49c680.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSupportPaymentModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
-			var s = a("./node_modules/lodash/toString.js"),
-				n = 0;
+			var n = a("./node_modules/lodash/toString.js"),
+				s = 0;
 			e.exports = function(e) {
-				var t = ++n;
-				return s(e) + t
+				var t = ++s;
+				return n(e) + t
 			}
 		},
 		"./src/reddit/components/Economics/Support/PaymentModal/CardSelector/NewPayment/Form/index.m.less": function(e, t, a) {
@@ -96,8 +96,8 @@
 		"./src/reddit/components/Economics/Support/PaymentModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t);
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s),
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				o = a("./node_modules/react-redux/es/index.js"),
 				r = a("./node_modules/reselect/es/index.js"),
 				c = a("./src/higherOrderComponents/asModal/index.tsx"),
@@ -125,9 +125,9 @@
 				language: e => e.user.language
 			});
 			var O = Object(o.b)(j)((function(e) {
-					return n.a.createElement("div", {
+					return s.a.createElement("div", {
 						className: Object(g.a)(_.a.container, e.className)
-					}, n.a.createElement(P.c, {
+					}, s.a.createElement(P.c, {
 						className: _.a.name,
 						label: x.fbt._("name on card", null, {
 							hk: "1zwfs9"
@@ -137,9 +137,9 @@
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							name: t.currentTarget.value
 						}))
-					}), n.a.createElement("div", {
+					}), s.a.createElement("div", {
 						className: _.a.twoColumn
-					}, n.a.createElement(v.d, {
+					}, s.a.createElement(v.d, {
 						labelClassName: _.a.half,
 						labelText: x.fbt._("card number", null, {
 							hk: "4xtq9o"
@@ -150,7 +150,7 @@
 						onReady: t => e.onChange(Object.assign({}, e.card, {
 							element: t
 						}))
-					}), n.a.createElement(v.c, {
+					}), s.a.createElement(v.c, {
 						labelClassName: _.a.half,
 						labelText: x.fbt._("mm/yy", null, {
 							hk: "141YoD"
@@ -158,9 +158,9 @@
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							cardExpiryComplete: t.complete
 						}))
-					})), n.a.createElement("div", {
+					})), s.a.createElement("div", {
 						className: _.a.twoColumn
-					}, n.a.createElement(v.b, {
+					}, s.a.createElement(v.b, {
 						labelClassName: _.a.half,
 						labelText: x.fbt._("ccv", null, {
 							hk: "1B7gnp"
@@ -168,7 +168,7 @@
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							cardCVCComplete: t.complete
 						}))
-					}), n.a.createElement(v.e, {
+					}), s.a.createElement(v.e, {
 						labelClassName: _.a.half,
 						labelText: x.fbt._("zip code", null, {
 							hk: "EfqN4"
@@ -182,21 +182,21 @@
 				k = a.n(M);
 
 			function T(e) {
-				return n.a.createElement("div", {
+				return s.a.createElement("div", {
 					className: e.className
-				}, n.a.createElement("div", {
+				}, s.a.createElement("div", {
 					className: k.a.fullBox
-				}), n.a.createElement("div", {
+				}), s.a.createElement("div", {
 					className: k.a.twoColumn
-				}, n.a.createElement("div", {
+				}, s.a.createElement("div", {
 					className: k.a.halfBox
-				}), n.a.createElement("div", {
+				}), s.a.createElement("div", {
 					className: k.a.halfBox
-				})), n.a.createElement("div", {
+				})), s.a.createElement("div", {
 					className: k.a.twoColumn
-				}, n.a.createElement("div", {
+				}, s.a.createElement("div", {
 					className: k.a.halfBox
-				}), n.a.createElement("div", {
+				}), s.a.createElement("div", {
 					className: k.a.halfBox
 				})))
 			}
@@ -208,11 +208,11 @@
 			function B(e) {
 				const t = e.allowedPaymentTypes || new Set([u.b.NewStripe, u.b.NewPayPal]),
 					a = t.size > 1;
-				return n.a.createElement("div", {
+				return s.a.createElement("div", {
 					className: Object(g.a)(L.a.container, e.className)
-				}, t.has(u.b.NewPayPal) && n.a.createElement("label", {
+				}, t.has(u.b.NewPayPal) && s.a.createElement("label", {
 					className: L.a.paypal
-				}, a && n.a.createElement("input", {
+				}, a && s.a.createElement("input", {
 					className: L.a.input,
 					defaultChecked: e.selectedPayment.type === u.b.NewPayPal,
 					name: "paymentType",
@@ -222,16 +222,16 @@
 						})
 					},
 					type: "radio"
-				}), n.a.createElement("div", {
+				}), s.a.createElement("div", {
 					className: L.a.logoWrapper
-				}, n.a.createElement("img", {
+				}, s.a.createElement("img", {
 					className: L.a.logo,
 					src: "".concat(I.a.assetPath, "/img/payment-icons/paypal.png")
-				}))), t.has(u.b.NewStripe) && n.a.createElement("label", {
+				}))), t.has(u.b.NewStripe) && s.a.createElement("label", {
 					className: L.a.card
-				}, n.a.createElement("div", {
+				}, s.a.createElement("div", {
 					className: L.a.cardLogos
-				}, a && n.a.createElement("input", {
+				}, a && s.a.createElement("input", {
 					className: L.a.input,
 					defaultChecked: e.selectedPayment.type === u.b.NewStripe,
 					name: "paymentType",
@@ -239,16 +239,16 @@
 						e.selectedPayment.type !== u.b.NewStripe && e.onChangePayment(Object(u.d)())
 					},
 					type: "radio"
-				}), n.a.createElement("div", {
+				}), s.a.createElement("div", {
 					className: L.a.logoWrapper
-				}, ["visa.png", "mastercard.png", "amex.png", "discover.jpg"].map((e, t) => n.a.createElement("img", {
+				}, ["visa.png", "mastercard.png", "amex.png", "discover.jpg"].map((e, t) => s.a.createElement("img", {
 					className: L.a.logo,
 					key: t,
 					src: "".concat(I.a.assetPath, "/img/payment-icons/").concat(e)
-				})))), e.selectedPayment.type === u.b.NewStripe && n.a.createElement("a", {
+				})))), e.selectedPayment.type === u.b.NewStripe && s.a.createElement("a", {
 					href: A,
 					target: "_blank"
-				}, n.a.createElement("img", {
+				}, s.a.createElement("img", {
 					className: L.a.stripeImg,
 					src: "".concat(I.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
 				}))))
@@ -259,23 +259,23 @@
 			const F = Object(r.c)({
 				language: e => e.user.language
 			});
-			var Z = Object(o.b)(F)((function(e) {
-					return n.a.createElement("div", {
+			var W = Object(o.b)(F)((function(e) {
+					return s.a.createElement("div", {
 						className: Object(g.a)(K.a.container, e.className)
-					}, n.a.createElement(B, {
+					}, s.a.createElement(B, {
 						allowedPaymentTypes: U,
 						selectedPayment: e.selectedPayment,
 						onChangePayment: e.onChangePayment
-					}), e.selectedPayment.type === u.b.NewStripe && (e.stripeClientLoaded ? n.a.createElement(O, {
+					}), e.selectedPayment.type === u.b.NewStripe && (e.stripeClientLoaded ? s.a.createElement(O, {
 						card: e.selectedPayment,
 						className: K.a.form,
 						onChange: e.onChangePayment
-					}) : n.a.createElement(T, {
+					}) : s.a.createElement(T, {
 						className: K.a.form
 					})))
 				})),
-				z = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/index.m.less"),
-				W = a.n(z);
+				Z = a("./src/reddit/components/Economics/Support/PaymentModal/CardSelector/index.m.less"),
+				z = a.n(Z);
 			const Y = Object(b.a)(E.a),
 				q = "economy-support-paymentmodal-card-dropdown";
 			const G = Object(r.c)({
@@ -288,41 +288,41 @@
 						tooltipId: q
 					}))
 				}))((function(e) {
-					return n.a.createElement("div", {
-						className: Object(g.a)(W.a.container, e.className)
-					}, n.a.createElement("div", {
-						className: W.a.selected
-					}, n.a.createElement(C.a, {
-						className: W.a.lockIcon
-					}), n.a.createElement("div", {
-						className: W.a.label
+					return s.a.createElement("div", {
+						className: Object(g.a)(z.a.container, e.className)
+					}, s.a.createElement("div", {
+						className: z.a.selected
+					}, s.a.createElement(C.a, {
+						className: z.a.lockIcon
+					}), s.a.createElement("div", {
+						className: z.a.label
 					}, x.fbt._("Payment Method", null, {
 						hk: "laYn7"
-					})), n.a.createElement("div", {
-						className: W.a.cardType,
+					})), s.a.createElement("div", {
+						className: z.a.cardType,
 						id: q,
 						onClick: e.onToggleDropdown
 					}, e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal ? x.fbt._("Add New Card", null, {
 						hk: "wnQx5"
-					}) : e.selectedPayment.display, n.a.createElement(w.a, {
-						className: W.a.dropdownCaret
-					}))), (e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal) && n.a.createElement(Z, {
-						className: W.a.newPayment,
+					}) : e.selectedPayment.display, s.a.createElement(w.a, {
+						className: z.a.dropdownCaret
+					}))), (e.selectedPayment.type === u.b.NewStripe || e.selectedPayment.type === u.b.NewPayPal) && s.a.createElement(W, {
+						className: z.a.newPayment,
 						selectedPayment: e.selectedPayment,
 						stripeClientLoaded: e.stripeClientLoaded,
 						onChangePayment: e.onSelectPayment
-					}), n.a.createElement(Y, {
+					}), s.a.createElement(Y, {
 						isOverlay: !0,
 						isOpen: e.dropdownIsOpen,
 						tooltipId: q
-					}, e.savedPayments.map((t, a) => n.a.createElement(f.b, {
+					}, e.savedPayments.map((t, a) => s.a.createElement(f.b, {
 						"data-redditstyle": !0,
 						displayText: t.display,
 						index: a,
 						isSelected: e.selectedPayment.type === u.b.SavedStripe && e.selectedPayment.id === t.id,
 						key: a,
 						onClick: () => e.onSelectPayment(t)
-					})), n.a.createElement(f.b, {
+					})), s.a.createElement(f.b, {
 						"data-redditstyle": !0,
 						displayText: x.fbt._("Add New Card", null, {
 							hk: "wnQx5"
@@ -339,13 +339,13 @@
 				Q = a.n(X);
 
 			function $(e) {
-				return n.a.createElement("div", {
+				return s.a.createElement("div", {
 					className: Object(g.a)(Q.a.container, e.className)
-				}, n.a.createElement(J.b, {
+				}, s.a.createElement(J.b, {
 					anonymous: e.anonymous,
 					className: Q.a.legal,
 					contentType: e.content.type
-				}), n.a.createElement(V.a, {
+				}), s.a.createElement(V.a, {
 					amount: e.amount,
 					anonymous: e.anonymous,
 					className: Q.a.submit,
@@ -360,60 +360,59 @@
 					onChangeSubmitState: e.onChangeSubmitState
 				}))
 			}
-			var ee = a("./src/reddit/components/Translated/index.tsx"),
-				te = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				ae = a("./src/reddit/components/Economics/Support/PaymentModal/Header/index.m.less"),
-				se = a.n(ae);
+			var ee = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				te = a("./src/reddit/components/Economics/Support/PaymentModal/Header/index.m.less"),
+				ae = a.n(te);
 			var ne = function(e) {
-					return n.a.createElement("div", {
-						className: Object(g.a)(se.a.container, e.className)
-					}, n.a.createElement("div", {
-						className: se.a.title
-					}, n.a.createElement(ee.a, {
-						msgId: "economy.support.payment.header.title"
-					})), n.a.createElement("div", {
-						className: se.a.subtext
-					}, n.a.createElement(ee.a, {
-						msgId: "economy.support.payment.header.subtext1"
-					})), n.a.createElement("div", {
-						className: se.a.subtext
-					}, n.a.createElement(ee.a, {
-						msgId: "economy.support.payment.header.subtext2"
-					})), n.a.createElement(te.a, {
-						className: se.a.closeIcon,
+					return s.a.createElement("div", {
+						className: Object(g.a)(ae.a.container, e.className)
+					}, s.a.createElement("div", {
+						className: ae.a.title
+					}, x.fbt._("Tip Reddit Creators", null, {
+						hk: "4ocW4d"
+					})), s.a.createElement("div", {
+						className: ae.a.subtext
+					}, x.fbt._("Send money to your favorite Reddit Creators.", null, {
+						hk: "uWO8L"
+					})), s.a.createElement("div", {
+						className: ae.a.subtext
+					}, x.fbt._("Help them create more great stuff.", null, {
+						hk: "JUj1A"
+					})), s.a.createElement(ee.a, {
+						className: ae.a.closeIcon,
 						onClick: () => e.onClose()
 					}))
 				},
-				oe = a("./node_modules/lodash/debounce.js"),
-				re = a.n(oe),
-				ce = a("./src/reddit/components/Economics/Support/PaymentModal/Message/index.m.less"),
-				le = a.n(ce);
-			var de = function(e) {
-					return n.a.createElement("input", {
-						className: Object(g.a)(le.a.input, e.className),
+				se = a("./node_modules/lodash/debounce.js"),
+				oe = a.n(se),
+				re = a("./src/reddit/components/Economics/Support/PaymentModal/Message/index.m.less"),
+				ce = a.n(re);
+			var le = function(e) {
+					return s.a.createElement("input", {
+						className: Object(g.a)(ce.a.input, e.className),
 						placeholder: x.fbt._("Private Message (optional)", null, {
 							hk: "4t7gCK"
 						}),
-						onChange: re()(t => e.onMessageChange(t.currentTarget.value), 250)
+						onChange: oe()(t => e.onMessageChange(t.currentTarget.value), 250)
 					})
 				},
-				ie = a("./src/reddit/components/Economics/Support/PaymentModal/UserDisplay/index.m.less"),
-				me = a.n(ie);
+				de = a("./src/reddit/components/Economics/Support/PaymentModal/UserDisplay/index.m.less"),
+				ie = a.n(de);
 
-			function pe(e) {
-				return n.a.createElement("div", {
-					className: Object(g.a)(e.className, me.a.container)
-				}, n.a.createElement("div", {
-					className: me.a.username
-				}, e.user ? e.user.displayName : e.fallbackUsername), n.a.createElement("img", {
-					className: me.a.picture,
+			function me(e) {
+				return s.a.createElement("div", {
+					className: Object(g.a)(e.className, ie.a.container)
+				}, s.a.createElement("div", {
+					className: ie.a.username
+				}, e.user ? e.user.displayName : e.fallbackUsername), s.a.createElement("img", {
+					className: ie.a.picture,
 					src: e.user && e.user.accountIcon ? e.user.accountIcon : void 0
 				}))
 			}
-			var ue = a("./src/reddit/components/Economics/Support/PaymentModal/index.m.less"),
-				he = a.n(ue);
-			const ye = ["300", "500", "1000"];
-			class xe extends n.a.Component {
+			var pe = a("./src/reddit/components/Economics/Support/PaymentModal/index.m.less"),
+				ue = a.n(pe);
+			const he = ["300", "500", "1000"];
+			class ye extends s.a.Component {
 				constructor(e) {
 					super(e), this.handleChangePayment = e => this.setState({
 						selectedPayment: e
@@ -430,8 +429,8 @@
 						this.props.onClose ? this.props.onClose(e) : this.props.onCloseAllModals()
 					}, this.state = {
 						amount: {
-							value: ye[0],
-							id: ye[0]
+							value: he[0],
+							id: he[0]
 						},
 						anonymous: !0,
 						selectedPayment: e.savedPayments[0] || Object(u.d)(),
@@ -446,35 +445,35 @@
 					})), this.props.user || this.props.onFetchUser()
 				}
 				render() {
-					return n.a.createElement(m.a, {
+					return s.a.createElement(m.a, {
 						stripeInstance: this.state.stripeInstance
-					}, n.a.createElement("div", {
-						className: he.a.container
-					}, n.a.createElement(ne, {
+					}, s.a.createElement("div", {
+						className: ue.a.container
+					}, s.a.createElement(ne, {
 						onClose: this.close
-					}), n.a.createElement("div", {
-						className: he.a.body
-					}, n.a.createElement(pe, {
-						className: he.a.userDisplay,
+					}), s.a.createElement("div", {
+						className: ue.a.body
+					}, s.a.createElement(me, {
+						className: ue.a.userDisplay,
 						fallbackUsername: this.props.userName,
 						user: this.props.user
-					}), n.a.createElement(i.a, {
-						amounts: ye,
-						className: he.a.amount,
+					}), s.a.createElement(i.a, {
+						amounts: he,
+						className: ue.a.amount,
 						currentlySelected: this.state.amount,
 						onUpdateAmount: this.handleChangeTipAmount
-					}), n.a.createElement(de, {
-						className: he.a.message,
+					}), s.a.createElement(le, {
+						className: ue.a.message,
 						onMessageChange: this.handleMessageChange
-					}), n.a.createElement(H, {
-						className: he.a.cardSelector,
+					}), s.a.createElement(H, {
+						className: ue.a.cardSelector,
 						selectedPayment: this.state.selectedPayment,
 						stripeClientLoaded: !!this.state.stripeInstance,
 						onSelectPayment: this.handleChangePayment
-					})), n.a.createElement($, {
+					})), s.a.createElement($, {
 						amount: this.state.amount,
 						anonymous: this.state.anonymous,
-						className: he.a.footer,
+						className: ue.a.footer,
 						content: this.props.content,
 						fallbackUsername: this.props.userName,
 						message: this.state.message,
@@ -487,11 +486,11 @@
 					})))
 				}
 			}
-			const be = Object(r.c)({
+			const xe = Object(r.c)({
 					savedPayments: h.u,
 					user: y.eb
 				}),
-				ge = Object(o.b)(be, (e, t) => {
+				be = Object(o.b)(xe, (e, t) => {
 					let {
 						userName: a
 					} = t;
@@ -500,8 +499,8 @@
 						onCloseAllModals: () => e(Object(l.f)())
 					}
 				}),
-				Ne = Object(c.a)(ge(xe));
-			t.default = Ne
+				ge = Object(c.a)(be(ye));
+			t.default = ge
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, a) {
 			"use strict";
@@ -509,8 +508,8 @@
 				return g
 			}));
 			a("./node_modules/core-js/modules/es6.symbol.js");
-			var s = a("./node_modules/lodash/throttle.js"),
-				n = a.n(s),
+			var n = a("./node_modules/lodash/throttle.js"),
+				s = a.n(n),
 				o = a("./node_modules/react/index.js"),
 				r = a.n(o),
 				c = a("./src/lib/classNames/index.ts"),
@@ -527,23 +526,23 @@
 				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
-						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			var b = function(e, t) {
 				var a = {};
-				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (a[s] = e[s]);
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (a[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var n = 0;
-					for (s = Object.getOwnPropertySymbols(e); n < s.length; n++) t.indexOf(s[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[n]) && (a[s[n]] = e[s[n]])
+					var s = 0;
+					for (n = Object.getOwnPropertySymbols(e); s < n.length; s++) t.indexOf(n[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[s]) && (a[n[s]] = e[n[s]])
 				}
 				return a
 			};
 			class g extends r.a.Component {
 				constructor() {
-					super(...arguments), this.handleMouseMove = n()(() => {
+					super(...arguments), this.handleMouseMove = s()(() => {
 						const {
 							props: e
 						} = this;
@@ -577,7 +576,7 @@
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
 						onMouseDown: e.onMouseDown,
-						onMouseMove: n()(this.handleMouseMove, 500)
+						onMouseMove: s()(this.handleMouseMove, 500)
 					}), e.children && (e.noIcon ? r.a.createElement("div", null, e.children) : r.a.createElement("span", {
 						className: a
 					}, e.children)), e.displayText && r.a.createElement("span", {
@@ -593,13 +592,13 @@
 				var {
 					className: t
 				} = e, a = b(e, ["className"]);
-				const s = Object(c.a)(y.a.row, t, {
+				const n = Object(c.a)(y.a.row, t, {
 					[y.a.mIsInteractive]: !a.noHover,
 					[y.a.mIsSelected]: a.isSelected,
 					[y.a.topics]: a.isTopicsStyle
 				});
 				return r.a.createElement(g, x({
-					className: s
+					className: n
 				}, a))
 			}
 		},
@@ -638,9 +637,9 @@
 			})), a.d(t, "c", (function() {
 				return _
 			}));
-			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
-				n = a("./node_modules/lodash/uniqueId.js"),
-				o = a.n(n),
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				s = a("./node_modules/lodash/uniqueId.js"),
+				o = a.n(s),
 				r = a("./node_modules/raf/index.js"),
 				c = a.n(r),
 				l = a("./node_modules/react/index.js"),
@@ -671,7 +670,7 @@
 					}, d.a.createElement(x.f, {
 						className: N.a.confirmButton,
 						onClick: e.onConfirmed
-					}, s.fbt._("Ok", null, {
+					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
@@ -710,11 +709,11 @@
 						children: e,
 						activeModalId: t,
 						className: a,
-						errorModalBody: n,
-						errorModalTitle: o = s.fbt._("Error", null, {
+						errorModalBody: s,
+						errorModalTitle: o = n.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: r = s.fbt._("More", null, {
+						moreText: r = n.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
@@ -732,7 +731,7 @@
 					}, r), t === c && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
 						title: o
-					}, n || e))
+					}, s || e))
 				}
 			}
 			const P = Object(i.b)(C, e => ({
@@ -742,20 +741,20 @@
 					const {
 						className: t,
 						errorClassName: a,
-						errorModalTitle: s,
-						fallbackMessage: n,
+						errorModalTitle: n,
+						fallbackMessage: s,
 						messages: o = []
-					} = e, r = o.length ? o : n ? [n] : [];
+					} = e, r = o.length ? o : s ? [s] : [];
 					return r.length ? d.a.createElement("div", {
 						className: t
 					}, r.map((e, t) => d.a.createElement(P, {
 						className: a,
-						errorModalTitle: s,
+						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
 				_ = e => d.a.createElement(S, {
-					fallbackMessage: s.fbt._("Something went wrong", null, {
+					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
@@ -769,11 +768,11 @@
 		},
 		"./src/reddit/controls/UnstyledInternalLink/index.tsx": function(e, t, a) {
 			"use strict";
-			var s = a("./src/lib/lessComponent.tsx"),
-				n = a("./src/reddit/controls/InternalLink/index.tsx"),
+			var n = a("./src/lib/lessComponent.tsx"),
+				s = a("./src/reddit/controls/InternalLink/index.tsx"),
 				o = a("./src/reddit/controls/UnstyledInternalLink/index.m.less"),
 				r = a.n(o);
-			t.a = s.a.wrapped(n.a, "unstyledInternalLink", r.a)
+			t.a = n.a.wrapped(s.a, "unstyledInternalLink", r.a)
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -783,25 +782,25 @@
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, a) {
 			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s),
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				o = a("./src/reddit/icons/fonts/helpers.tsx"),
 				r = a("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				c = a.n(r);
-			const l = a("./src/lib/lessComponent.tsx").a.wrapped(e => n.a.createElement("i", {
+			const l = a("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
 				className: "".concat(Object(o.b)("dropdownTriangle"), " ").concat(e.className)
 			}), "DropdownTriangle", c.a);
 			t.a = l
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
 			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s);
-			t.a = e => n.a.createElement("svg", {
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
+			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 22",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("g", null, n.a.createElement("path", {
+			}, s.a.createElement("g", null, s.a.createElement("path", {
 				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
 				fill: "inherit"
 			})))
@@ -816,23 +815,23 @@
 			a.d(t, "a", (function() {
 				return l
 			}));
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s),
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n),
 				o = a("./src/lib/classNames/index.ts"),
 				r = a("./src/reddit/icons/svgs/Trash2/index.m.less"),
 				c = a.n(r);
-			const l = e => n.a.createElement("svg", {
+			const l = e => s.a.createElement("svg", {
 				className: Object(o.a)(c.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
-			}, n.a.createElement("path", {
+			}, s.a.createElement("path", {
 				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
-			}), n.a.createElement("path", {
+			}), s.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
 			t.b = l
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSupportPaymentModal.5de8ac5ce77a1fffe019.js.map
+//# sourceMappingURL=EconomicsSupportPaymentModal.b844362e334ead49c680.js.map

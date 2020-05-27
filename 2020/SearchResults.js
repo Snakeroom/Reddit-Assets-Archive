@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.57a8e3beaf2c45f831e9.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.dc4c68bd834f5a2d0fa5.js
+// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -3865,18 +3865,18 @@
 			s.d(t, "a", (function() {
 				return h
 			}));
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/actions/post.ts"),
-				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/components/Translated/index.tsx"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r),
+				a = s("./node_modules/react-redux/es/index.js"),
+				i = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/actions/post.ts"),
+				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/postCollection.ts"),
 				p = s("./src/reddit/components/PostFollow/index.m.less"),
 				u = s.n(p);
-			class b extends r.a.Component {
+			class b extends o.a.Component {
 				constructor(e) {
 					super(e), this.onFollowClick = () => {
 						const {
@@ -3914,29 +3914,33 @@
 						className: e,
 						isEventFollow: t,
 						post: s
-					} = this.props, n = this.state.isHovered, o = s.isFollowed;
-					let a = o ? "collection.follow.followed" : "collection.follow.follow";
-					return o && n && (a = "collection.follow.unfollow"), r.a.createElement("button", {
-						className: Object(i.a)(u.a.collectionFollow, {
+					} = this.props, r = this.state.isHovered, a = s.isFollowed;
+					let i = a ? n.fbt._("Followed", null, {
+						hk: "2oc9IH"
+					}) : n.fbt._("Follow", null, {
+						hk: "NkunG"
+					});
+					return a && r && (i = n.fbt._("Unfollow", null, {
+						hk: "2sJ8xn"
+					})), o.a.createElement("button", {
+						className: Object(c.a)(u.a.collectionFollow, {
 							[u.a.isFollowed]: !!s.isFollowed,
 							[u.a.isEventFollow]: t
 						}, e),
 						onClick: this.onFollowClick,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, r.a.createElement(l.a, {
-						msgId: a
-					}))
+					}, i)
 				}
 			}
-			const h = Object(o.b)(() => Object(a.c)({}), (e, t) => {
+			const h = Object(a.b)(() => Object(i.c)({}), (e, t) => {
 				let {
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.E)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.E)(s.isSponsored ? s.postId : s.id))
 				}
-			})(Object(d.c)(b))
+			})(Object(l.c)(b))
 		},
 		"./src/reddit/components/PostLeftRail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9455,4 +9459,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.57a8e3beaf2c45f831e9.js.map
+//# sourceMappingURL=SearchResults.dc4c68bd834f5a2d0fa5.js.map
