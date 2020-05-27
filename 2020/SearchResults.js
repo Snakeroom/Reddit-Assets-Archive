@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8f1e880d272d3dd249e6.js
-// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.57a8e3beaf2c45f831e9.js
+// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -9310,12 +9310,12 @@
 				M = s.n(T);
 			const L = Object(i.a)({
 					resolved: {},
-					chunkName: () => "FeaturedLiveEntrypointAnnouncement",
+					chunkName: () => "FeaturedLiveEntrypointLegacyAnnouncement",
 					isReady(e) {
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => s.e("FeaturedLiveEntrypointAnnouncement").then(s.bind(null, "./src/reddit/components/FeaturedLiveEntrypoint/Announcement.tsx")),
+					importAsync: () => s.e("FeaturedLiveEntrypointLegacyAnnouncement").then(s.bind(null, "./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -9325,7 +9325,7 @@
 						return s(t)
 					},
 					resolve() {
-						return "./src/reddit/components/FeaturedLiveEntrypoint/Announcement.tsx"
+						return "./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx"
 					}
 				}),
 				R = Object(j.t)({
@@ -9436,9 +9436,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.Qb.Treatment1 === Object(r.c)(e, {
+			const o = e => n.Sb.Treatment1 === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Ob
+				experimentName: n.Qb
 			})
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -9455,4 +9455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.8f1e880d272d3dd249e6.js.map
+//# sourceMappingURL=SearchResults.57a8e3beaf2c45f831e9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.0b2fe885bd86b3e42c6d.js
-// Retrieved at 5/12/2020, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.ab864c42e090a8939616.js
+// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation~SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less": function(e, t, s) {
@@ -62,10 +62,10 @@
 			}
 			var g = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.N)()
+					e(Object(c.i)()), Object(u.O)()
 				},
 				onViewTooltip: () => {
-					Object(u.X)()
+					Object(u.Y)()
 				}
 			}))(Object(d.c)(y));
 			const b = "editable-primary-topic-idcard";
@@ -139,7 +139,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.l)()
+						tooltipDismissed: Object(u.m)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -1013,4 +1013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.0b2fe885bd86b3e42c6d.js.map
+//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.ab864c42e090a8939616.js.map

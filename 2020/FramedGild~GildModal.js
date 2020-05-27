@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1633ab17658e854b1b80.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1ea658673a5809a82f95.js
+// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, s) {
@@ -906,7 +906,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(l.M)(e)
+					Object(l.N)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -927,7 +927,7 @@
 						subredditName: b,
 						thingId: g
 					} = this.props;
-					d(Object(m.viewGildModalEvent)(c.id, t, g)), o(!s && Object(l.k)());
+					d(Object(m.viewGildModalEvent)(c.id, t, g)), o(!s && Object(l.l)());
 					const w = u ? u.id : h || (n && n.belongsTo ? n.belongsTo.id : void 0);
 					if (w && e(w), u || b) {
 						p(u ? u.name : b)
@@ -1046,7 +1046,7 @@
 					purchaseCatalogRequested: () => e(Object(N.a)()),
 					selectAward: t => e(Object(b.a)(t)),
 					setIsAnonymous: t => {
-						e(Object(h.setIsAnonymous)(t)), Object(l.M)(t)
+						e(Object(h.setIsAnonymous)(t)), Object(l.N)(t)
 					},
 					subredditAboutRequested: t => e(Object(v.t)(t)),
 					updateMessage: t => e(Object(h.updateMessage)(t))
@@ -1393,4 +1393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.1633ab17658e854b1b80.js.map
+//# sourceMappingURL=FramedGild~GildModal.1ea658673a5809a82f95.js.map

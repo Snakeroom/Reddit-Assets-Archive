@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.b3fccc24072bd146d9b0.js
-// Retrieved at 5/27/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.c211ab8822ef9c80deab.js
+// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const u = Object(a.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.yb
+					experimentName: l.Ab
 				});
-				return Object(l.tc)(t) ? void 0 : t
+				return Object(l.vc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.zb
+					experimentName: l.Bb
 				});
-				return Object(l.tc)(t) ? void 0 : t
-			}, (e, t) => e === l.Ab.Enabled && t === l.Ab.Enabled);
+				return Object(l.vc)(t) ? void 0 : t
+			}, (e, t) => e === l.Cb.Enabled && t === l.Cb.Enabled);
 			var p = s("./src/config.ts");
 			var m = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "33e8081-production"
+					SENTRY_RELEASE_VERSION: "9ebc6c9-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -623,7 +623,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = Object(o.a)({
+			const q = Object(o.a)({
 					resolved: {},
 					chunkName: () => "LiveVideoPlayer",
 					isReady(e) {
@@ -645,7 +645,7 @@
 				}, {
 					ssr: !1
 				}),
-				q = Object(u.a)(v.b, {
+				z = Object(u.a)(v.b, {
 					playerName: "Reddit Player"
 				}),
 				Q = 1200,
@@ -1110,7 +1110,7 @@
 							})), c.a.createElement(M.a, null)))) : c.a.createElement(S.a, J({}, $, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
-							}), v && c.a.createElement(q, {
+							}), v && c.a.createElement(z, {
 								autoPlay: "boolean" == typeof N ? !N : void 0,
 								isExpando: o,
 								shouldLoad: !0,
@@ -1134,7 +1134,7 @@
 						case F.n.LIVEVIDEO:
 							return c.a.createElement(ee, {
 								isVisible: v
-							}, c.a.createElement(z, {
+							}, c.a.createElement(q, {
 								canLoad: v,
 								postId: u.id,
 								postTitle: u.title,
@@ -1289,4 +1289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.b3fccc24072bd146d9b0.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.c211ab8822ef9c80deab.js.map

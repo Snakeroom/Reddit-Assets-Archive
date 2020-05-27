@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7d0f3872ffad68e55f12.js
-// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.150a9c163414974a7b39.js
+// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1917,14 +1917,14 @@
 						e && Ze.a.remove(os.a, {
 							domain: M.a.cookieDomain
 						});
-						const t = Object(cs.q)(G.a.ALPHA_CONSUMER);
-						t && Object(cs.B)(G.a.ALPHA_CONSUMER), (e || t) && Object(cs.R)(G.a.REDESIGN_MODAL, !0)
+						const t = Object(cs.r)(G.a.ALPHA_CONSUMER);
+						t && Object(cs.C)(G.a.ALPHA_CONSUMER), (e || t) && Object(cs.S)(G.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
-					} = this.props, s = Object(cs.q)(G.a.REDESIGN_MODAL);
-					!e && s ? t() : e && !s && Object(cs.R)(G.a.REDESIGN_MODAL, !0)
+					} = this.props, s = Object(cs.r)(G.a.REDESIGN_MODAL);
+					!e && s ? t() : e && !s && Object(cs.S)(G.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -2055,7 +2055,7 @@
 					super(...arguments), this.subscriptions = [], this.state = {
 						isSSOLinkActionFailedModal: !1
 					}, this.closeModal = () => {
-						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(K.f)(this.props.frontpageSignupVariant) && vs.a.throttleFeature(fs.M), this.props.sendEvent(le(this.subscriptions))
+						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(K.f)(this.props.frontpageSignupVariant) && vs.a.throttleFeature(fs.O), this.props.sendEvent(le(this.subscriptions))
 					}, this.updateSubscriptions = e => {
 						this.subscriptions = e
 					}, this.handleSSOLinkActionFail = () => {
@@ -4545,9 +4545,9 @@
 				uo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				po = s("./src/reddit/selectors/experiments/trending.ts"),
 				ho = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const bo = e => Object(Vt.E)(e) || fs.lc.Treatment1 === Object(ho.c)(e, {
+			const bo = e => Object(Vt.E)(e) || fs.nc.Treatment1 === Object(ho.c)(e, {
 				experimentEligibilitySelector: ho.a,
-				experimentName: fs.ic
+				experimentName: fs.kc
 			});
 			var go = s("./src/reddit/selectors/searchResults.ts"),
 				fo = s("./src/reddit/selectors/tooltip.ts"),
@@ -4666,7 +4666,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(cs.C)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(cs.D)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -4676,7 +4676,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(cs.W)(Object.assign({}, e, {
+							recentSearches: Object(cs.X)(Object.assign({}, e, {
 								section: Mr.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -4763,7 +4763,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(cs.v)(this.props.currentUser.id);
+							const e = Object(cs.w)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -9449,27 +9449,14 @@
 		},
 		"./src/reddit/helpers/trackers/banners.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "e", (function() {
+			s.d(t, "c", (function() {
 				return n
-			})), s.d(t, "d", (function() {
-				return a
-			})), s.d(t, "c", (function() {
-				return r
 			})), s.d(t, "b", (function() {
-				return o
+				return a
 			})), s.d(t, "a", (function() {
-				return i
+				return r
 			}));
-			const n = e => t => ({
-					source: "announcement",
-					noun: "announcement",
-					action: "view",
-					liveThread: {
-						id: e,
-						isAnnouncement: !0
-					}
-				}),
-				a = e => t => ({
+			const n = (e, t) => s => Object.assign({
 					source: "announcement",
 					noun: "announcement",
 					action: "dismiss",
@@ -9477,17 +9464,14 @@
 						id: e,
 						isAnnouncement: !0
 					}
-				}),
-				r = e => t => ({
-					source: "announcement",
-					noun: "announcement",
-					action: "click",
-					liveThread: {
-						id: e,
-						isAnnouncement: !0
+				}, t && {
+					announcement: {
+						id: t.id,
+						title: t.title,
+						body: t.description || ""
 					}
 				}),
-				o = () => e => ({
+				a = () => e => ({
 					source: "banner",
 					noun: "update_old_browser",
 					action: "view",
@@ -9495,7 +9479,7 @@
 						id: "update_old_browser"
 					}
 				}),
-				i = () => e => ({
+				r = () => e => ({
 					source: "banner",
 					noun: "old_browser_r2",
 					action: "click",
@@ -10265,7 +10249,7 @@
 			const Ae = 1e3;
 			class Fe extends m.a.Component {
 				constructor() {
-					super(...arguments), this.flush = Re()(() => Object(Le.O)(this.props.storageKey, this.props.value), Ae)
+					super(...arguments), this.flush = Re()(() => Object(Le.P)(this.props.storageKey, this.props.value), Ae)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -10285,7 +10269,7 @@
 				syncOnMount: !0
 			};
 			const De = Object(W.a)(Y.H, e => ({
-				storageKey: Ne.o,
+				storageKey: Ne.p,
 				value: {},
 				enabled: !e
 			}));
@@ -10626,15 +10610,15 @@
 				os = s("./src/reddit/selectors/experiments/utils.ts");
 			const is = Object(W.a)(e => Object(rs.c)(e, {
 					experimentEligibilitySelector: rs.a,
-					experimentName: as.f,
+					experimentName: as.g,
 					expEventOverride: !1
 				}), os.a),
-				cs = Object(W.a)(is, e => e === as.i.Enabled),
+				cs = Object(W.a)(is, e => e === as.k.Enabled),
 				ds = {
 					displayDelay: 15,
 					displayOnRoutes: [g.yb.SUBREDDIT, g.yb.COMMENTS],
-					experimentName: as.nb,
-					experimentVariant: as.wb.On,
+					experimentName: as.pb,
+					experimentVariant: as.yb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -10824,7 +10808,7 @@
 						Object(Ht.i)(c) && e.push(We.d), e.length > 0 && n.dispatch(Object(u.c)(Object(C.a)(d.url, e)))
 					}
 					return Vt.a.initialize(), {
-						localStorageData: Object(Le.n)()
+						localStorageData: Object(Le.o)()
 					}
 				},
 				postRender: e => {
@@ -10904,7 +10888,7 @@
 									text: n.fbt._("Successfully logged in!", null, {
 										hk: "2POUVB"
 									})
-								})), i = !0, Object(Ft.c)(Ge.a.JustLoggedIn), history.replaceState(history.state, "", Object(C.a)(window.location.href, [We.n]))), Object(Ft.b)(Ge.a.JustLoggedOut) && (i = !0, Object(Ft.c)(Ge.a.JustLoggedOut)), Object(L.b)(e), !1 !== Le.x() && Object(R.a)().then(e => e.requestNotificationsPermissions).then(e => d.dispatch(e(i, !1))), t === g.yb.MULTIREDDIT && r.routeMatch) {
+								})), i = !0, Object(Ft.c)(Ge.a.JustLoggedIn), history.replaceState(history.state, "", Object(C.a)(window.location.href, [We.n]))), Object(Ft.b)(Ge.a.JustLoggedOut) && (i = !0, Object(Ft.c)(Ge.a.JustLoggedOut)), Object(L.b)(e), !1 !== Le.y() && Object(R.a)().then(e => e.requestNotificationsPermissions).then(e => d.dispatch(e(i, !1))), t === g.yb.MULTIREDDIT && r.routeMatch) {
 								const {
 									multiredditName: e,
 									username: t
@@ -12611,12 +12595,12 @@
 				p = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, m, c.a, d.d, l.a, (e, t, s, a, c, l) => {
 					let m = "".concat(n.a.accountManagerOrigin).concat(e);
 					if (a && (m = Object(r.a)(m, {
-							[i.M]: a,
+							[i.O]: a,
 							uiMode: t
 						})), c) {
 						const e = Object(d.a)(c) || c;
 						m = Object(r.a)(m, {
-							[i.E]: e
+							[i.G]: e
 						})
 					}
 					return l && (m = Object(r.a)(m, {
@@ -12635,9 +12619,9 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(r.E)(e) || n.t.Treatment1 === Object(a.c)(e, {
+				return Object(r.E)(e) || n.v.Treatment1 === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.m
+					experimentName: n.o
 				})
 			}
 		},
@@ -12660,15 +12644,15 @@
 				c = s("./src/reddit/selectors/experiments/utils.ts"),
 				d = s("./src/reddit/selectors/user.ts");
 			const l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.E,
+					experimentName: r.G,
 					experimentEligibilitySelector: e => !Object(d.G)(e)
 				}), c.a),
-				m = e => e === r.J.SSO,
+				m = e => e === r.L.SSO,
 				u = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.F,
+					experimentName: r.H,
 					experimentEligibilitySelector: e => Object(d.G)(e) || Object(d.H)(e)
 				}), c.a),
-				p = Object(n.a)(u, e => e === r.y.SSO),
+				p = Object(n.a)(u, e => e === r.A.SSO),
 				h = Object(n.a)(i.a, e => !!e && [a.b, a.d, a.e, a.f].includes(e))
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
@@ -12679,9 +12663,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.kc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.mc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.hc
+				experimentName: n.jc
 			}))
 		},
 		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
@@ -12693,9 +12677,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.nc.All === Object(a.c)(e, {
+			const r = e => n.pc.All === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.mc
+					experimentName: n.oc
 				}),
 				o = ["gwinnett", "broomfield", "bakersfield", "northampton", "newjersey", "mankato", "statenisland", "brampton", "gnv", "inlandempire", "lincoln", "alameda", "abbotsford", "montana", "juneau", "barrie", "newhampshire", "lascruces", "williamsport", "charlotte", "fortwayne", "collinsbeach", "desmoines", "minnesota", "metaquebec", "berkeley", "ohio", "joplinmo", "westchester", "pueblo", "virginia", "oregon", "fortworth", "houston", "washington", "cincinnati", "florenceal", "cedarrapids", "detroit", "bowlinggreen", "greeley", "ames", "newarkohio", "fortcollins", "kingstonontario", "santafe", "fargomoorhead", "daytonabeach", "wilmingtonde", "berkeleyca", "redmond", "panamacity", "maine", "texarkana", "hawaii", "idaho", "edmonton", "hillsboro", "timmins", "everett", "america", "boulder", "humboldt", "coachellavalley", "bayridge", "antelopevalley", "plano", "frisco", "stcharlesmo", "nwt", "rochester", "orlando", "triangle", "guelph", "lehighvalley", "daltonga", "escondido", "lancaster", "hollandmichigan", "peoriail", "asheville", "ventura", "eastside", "orangecounty", "nebraska", "stgeorge", "santabarbara", "kamloops", "algonquinpark", "tahoe", "marin", "tampa", "ozarks", "arlington", "chattanooga", "benicia", "fremont", "elkgrove", "kenosha", "milton", "longmont", "logan", "augusta", "clarksville", "pei", "grandcanyon", "airdrie", "sanjose", "southernillinois", "greenbay", "boston", "cary", "victoriabc", "tempe", "mississippi", "halifax", "destin", "lafayette", "delaware", "dtla", "twincitiessocial", "pflugerville", "harrisonburg", "durango", "cascadia", "albuquerque", "minneapolis", "macon", "corpus", "laredo", "kentwa", "redding", "arkansas", "anaheim", "mobileal", "newyork", "norfolk", "santamonica", "fresno", "somerville", "idahofalls", "indianapolis", "tallahassee", "renton", "lexington", "austin", "ontario", "nyc", "sudbury", "illinois", "puyallupwa", "evanston", "bend", "fairbanks", "westchesterpa", "denver", "readingpa", "venturacounty", "aspen", "keywest", "lakewood", "brownsville", "peterborough", "richmondhill", "staugustine", "moncton", "santaclarita", "huntingtonbeach", "pacifica", "greenville", "roseville", "albany", "southdakota", "waco", "salem", "nwi", "cleveland", "kzoo", "biloxi", "hudsonvalley", "scottsdale", "normanok", "longisland", "kitsap", "yakima", "reno", "beaverton", "medicinehat", "vancouverwa", "salemma", "westvirginia", "southbend", "wisconsin", "lawrence", "seattle", "columbiasc", "columbusga", "roanoke", "texas", "toledo", "brooklyn", "murfreesboro", "rockland", "atlanta", "corpuschristi", "delco", "yellowstone", "bloomington", "corvallis", "vermont", "joshuatree", "vancouver", "jacksonhole", "myrtlebeach", "modesto", "bentonville", "grandforks", "eau_claire", "toronto", "springfieldil", "memphis", "fargo", "siouxfalls", "denton", "stpetersburgfl", "nunavut", "johnstown", "springfieldmo", "quadcities", "durham", "pennsylvania", "southjersey", "spartanburg", "northdakota", "321", "asburypark", "california", "stlouis", "burlington", "seattlewa", "syracuse", "chicago", "fortlauderdale", "ithaca", "twinfalls", "moab", "bloomingtonnormal", "hiltonhead", "riverside", "saginaw", "fayettenam", "maui", "losangeles", "providence", "whistler", "corona", "reddeer", "glendale", "montgomerycountymd", "vancouverisland", "montco", "olympia", "nola", "littlerock", "bronx", "coloradosprings", "vegas", "niagara", "broward", "napa", "springfield", "santarosa", "newbrunswicknj", "columbus", "rhodeisland", "fortmcmurray", "san_angelo", "porttownsend", "yuma", "pasadena", "milwaukee", "ogden", "riograndevalley", "clemson", "tacoma", "camaswashington", "regina", "cypresstx", "novascotia", "plattsburgh", "bullcity", "omaha", "lakeland", "dayton", "auburn", "newhaven", "vaughan", "martinsburg", "maryland", "siliconvalley", "newmexico", "pickering", "hamptonroads", "collegestation", "rolla"]
 		},
@@ -12827,4 +12811,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.7d0f3872ffad68e55f12.js.map
+//# sourceMappingURL=Reddit.150a9c163414974a7b39.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b85ee02ec416eb222220.js
-// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c1346568a9a2dec91cdc.js
+// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -932,7 +932,7 @@
 			class y extends i.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.E)(s.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.F)(s.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -950,7 +950,7 @@
 				onUpdate() {
 					const {
 						subreddit: e
-					} = this.props, t = Object(c.a)() && !Object(u.e)(s.CREATE_POST_BANNER, e.id);
+					} = this.props, t = Object(c.a)() && !Object(u.f)(s.CREATE_POST_BANNER, e.id);
 					t !== this.state.visible && (this.props.sendEvent(Object(p.c)()), this.setState({
 						visible: t
 					}))
@@ -4553,7 +4553,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(ut.Q)(jt, !0, this.props.subredditId), this.props.sendEvent(Object(pt.d)("close"))
+						}), Object(ut.R)(jt, !0, this.props.subredditId), this.props.sendEvent(Object(pt.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(pt.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -4579,7 +4579,7 @@
 						modHasEditedColors: n,
 						modHasEditedIcon: s,
 						subredditId: r
-					} = this.props, a = e && !(t && n && s) && (!Object(et.a)() || !Object(ut.p)(jt, r));
+					} = this.props, a = e && !(t && n && s) && (!Object(et.a)() || !Object(ut.q)(jt, r));
 					a !== this.state.visible && (this.setState({
 						visible: a
 					}), a && this.props.sendEvent(Object(pt.e)("mod_edu_banner")))
@@ -7465,9 +7465,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.S.Enabled === Object(r.c)(e, {
+			const a = e => s.U.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Q
+				experimentName: s.S
 			})
 		},
 		"./src/reddit/selectors/experiments/snoovatar.ts": function(e, t, n) {
@@ -7477,11 +7477,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Yb.Enabled === Object(r.c)(e, {
+			const a = e => s.ac.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Tb
+				experimentName: s.Vb
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.b85ee02ec416eb222220.js.map
+//# sourceMappingURL=Subreddit.c1346568a9a2dec91cdc.js.map
