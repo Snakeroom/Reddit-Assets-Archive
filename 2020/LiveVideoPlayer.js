@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.367cc613ae63258b71c5.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.24328e68c4570f9a40ca.js
+// Retrieved at 5/28/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -27,11 +27,11 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return w
-			})), s.d(t, "Overlay", (function() {
 				return E
-			})), s.d(t, "LiveIndicator", (function() {
+			})), s.d(t, "Overlay", (function() {
 				return f
+			})), s.d(t, "LiveIndicator", (function() {
+				return R
 			}));
 			var i = s("./node_modules/lodash/isUndefined.js"),
 				a = s.n(i),
@@ -49,19 +49,21 @@
 				b = s("./src/reddit/constants/keycodes.ts"),
 				g = s("./src/reddit/selectors/platform.ts"),
 				P = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				M = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				S = s.n(M);
+				M = s("./src/reddit/selectors/user.ts"),
+				S = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				y = s.n(S);
 			const {
 				fbt: V
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(d.a)(m.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(d.a)(m.a, {
 				playerName: "RPAN Listing Player"
-			}), C = 3e3, L = Object(l.c)({
+			}), L = 3e3, T = Object(l.c)({
+				autoplay: M.b,
 				isOverlayOpen: g.h,
 				unavailableVideoUrl: P.p
-			}), T = Object(r.b)(L, (e, t) => ({
+			}), w = Object(r.b)(T, (e, t) => ({
 				onHeartbeatSubscribe: t => e(c.a.subscribeHeartbeat(t))
 			}));
-			class w extends o.Component {
+			class E extends o.Component {
 				constructor(e) {
 					super(e), this.sleepTimeout = null, this.handleHlsRefChange = e => {
 						this.hlsVideo = e
@@ -107,7 +109,7 @@
 					}, this.handleMouseMove = () => {
 						this.state.isHovered || this.setState({
 							isHovered: !0
-						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, C)
+						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, L)
 					}, this.handleMouseMoveControls = e => {
 						const {
 							seekBar: t,
@@ -200,7 +202,16 @@
 					return !(this.state.wasRemoved || this.state.hasError)
 				}
 				get shouldPause() {
-					return !!this.props.isOverlayOpen || (!!this.state.isEnded || (this.state.userShowedIntent ? this.state.userPaused : this.props.shouldPause))
+					const {
+						autoplay: e,
+						isOverlayOpen: t,
+						shouldPause: s
+					} = this.props, {
+						isEnded: i,
+						userPaused: a,
+						userShowedIntent: o
+					} = this.state;
+					return !!t || (!!i || (o ? a : !e || s))
 				}
 				get shouldRenderOverlay() {
 					return this.shouldRenderVideo && this.hasPlayableMedia
@@ -220,7 +231,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusVisibleRef.current;
-					e.classList.add(S.a.focusVisible), Object(u.a)(e)
+					e.classList.add(y.a.focusVisible), Object(u.a)(e)
 				}
 				componentDidUpdate(e, t) {
 					const {
@@ -236,8 +247,8 @@
 				}
 				render() {
 					return n.a.createElement("div", {
-						className: Object(h.a)(S.a.LiveVideoPlayer, {
-							[S.a.isSleeping]: this.state.isSleeping && !this.shouldPause
+						className: Object(h.a)(y.a.LiveVideoPlayer, {
+							[y.a.isSleeping]: this.state.isSleeping && !this.shouldPause
 						}),
 						onBlur: this.handleMouseLeave,
 						onClick: this.handleClick,
@@ -248,17 +259,18 @@
 					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
-					return n.a.createElement(E, null, this.state.live ? n.a.createElement(f, null) : null, this.shouldRenderControls ? this.renderControls() : null)
+					return n.a.createElement(f, null, this.state.live ? n.a.createElement(R, null) : null, this.shouldRenderControls ? this.renderControls() : null)
 				}
 				renderVideo() {
 					const {
-						postId: e,
-						postTitle: t
+						autoplay: e,
+						postId: t,
+						postTitle: s
 					} = this.props;
 					return n.a.createElement("div", {
-						className: S.a.clip9x16
-					}, n.a.createElement(y, {
-						autoplay: this.shouldPause,
+						className: y.a.clip9x16
+					}, n.a.createElement(C, {
+						autoplay: e,
 						controls: !1,
 						isPaused: this.shouldPause,
 						muted: this.state.muted,
@@ -266,9 +278,9 @@
 						startTime: this.state.currentTime,
 						url: this.url,
 						muxVideoDuration: void 0,
-						muxVideoId: e,
+						muxVideoId: t,
 						muxVideoIsLive: this.state.live,
-						muxVideoTitle: t,
+						muxVideoTitle: s,
 						onEnded: this.handleEnded,
 						onError: this.handleError,
 						onLevelLoaded: this.handleLevelLoaded,
@@ -290,7 +302,7 @@
 						volume: r
 					} = this.state;
 					return n.a.createElement("div", {
-						className: S.a.controls,
+						className: y.a.controls,
 						onMouseDown: this.handleMouseDownControls,
 						onMouseMove: this.handleMouseMoveControls,
 						onMouseUp: this.handleMouseUpControls
@@ -327,21 +339,21 @@
 					this._unsubscribeHeartbeat && (this._unsubscribeHeartbeat(), delete this._unsubscribeHeartbeat)
 				}
 			}
-			t.default = T(w);
-			const E = e => {
+			t.default = w(E);
+			const f = e => {
 					let {
 						children: t
 					} = e;
 					return n.a.createElement("div", {
-						className: S.a.Overlay
+						className: y.a.Overlay
 					}, t)
 				},
-				f = () => n.a.createElement("span", {
-					className: S.a.LiveIndicator
+				R = () => n.a.createElement("span", {
+					className: y.a.LiveIndicator
 				}, V._("Live", null, {
 					hk: "TwJSs"
 				}))
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.367cc613ae63258b71c5.js.map
+//# sourceMappingURL=LiveVideoPlayer.24328e68c4570f9a40ca.js.map

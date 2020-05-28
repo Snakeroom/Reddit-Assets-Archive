@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.89c22293bfca6d003d6f.js
-// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ed9002c65c8bd7d37fe4.js
+// Retrieved at 5/28/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "ea5f017-production"
+					SENTRY_RELEASE_VERSION: "d1c7c5f-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -934,6 +934,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = Object(o.a)(I.a, {
 				playerName: "RPAN DU Video Player"
 			}), K = Object(a.b)(() => Object(n.c)({
+				autoplay: O.b,
 				isLoggedIn: O.H,
 				isOverlayOpen: x.h,
 				location: (e, t) => {
@@ -1024,6 +1025,13 @@
 						state: t
 					} = e.stream;
 					return t === E.b.IS_LIVE || t === E.b.DISCONNECTED
+				}
+				get isPaused() {
+					const {
+						autoplay: e,
+						isOverlayOpen: t
+					} = this.props;
+					return !e || !this.state.isVisible || t
 				}
 				componentDidMount() {
 					this.observableElement.current && d.a(this.observableElement.current, e => {
@@ -1168,25 +1176,24 @@
 				}
 				renderVideo() {
 					const {
-						isOverlayOpen: e,
+						autoplay: e,
 						stream: t
 					} = this.props;
 					if (!t) return;
-					const s = !this.state || !this.state.isVisible || e,
-						r = 1e3 * t.broadcast_time,
-						a = t.post.id,
-						n = t.post.title;
+					const s = 1e3 * t.broadcast_time,
+						r = t.post.id,
+						a = t.post.title;
 					return i.a.createElement(B, {
 						url: t.stream.hls_url,
-						autoplay: !0,
+						autoplay: e,
 						controls: !1,
 						muted: !0,
-						muxVideoDuration: r,
-						muxVideoId: a,
+						muxVideoDuration: s,
+						muxVideoId: r,
 						muxVideoIsLive: this.isLive,
-						muxVideoTitle: n,
+						muxVideoTitle: a,
 						startTime: t.broadcast_time,
-						isPaused: s,
+						isPaused: this.isPaused,
 						onEnded: this.onEnded,
 						onError: this.onError,
 						onLoadedData: this.onLoadedData,
@@ -1477,4 +1484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.89c22293bfca6d003d6f.js.map
+//# sourceMappingURL=RpanListingUnit.ed9002c65c8bd7d37fe4.js.map
