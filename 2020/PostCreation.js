@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2f92e38afa83e0877e1f.js
-// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.da2b74389bc4292d48e6.js
+// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -1289,7 +1289,7 @@
 				s = n("./src/reddit/actions/modal.ts"),
 				r = n("./src/reddit/constants/modals.ts"),
 				i = n("./src/reddit/actions/gold/constants.ts");
-			const a = Object(o.a)(i.Q),
+			const a = Object(o.a)(i.X),
 				c = () => async e => {
 					e(Object(s.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
@@ -30291,4 +30291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.2f92e38afa83e0877e1f.js.map
+//# sourceMappingURL=PostCreation.da2b74389bc4292d48e6.js.map

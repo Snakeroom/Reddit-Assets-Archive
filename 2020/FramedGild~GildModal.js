@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1ea658673a5809a82f95.js
-// Retrieved at 5/27/2020, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0ad5851002991fb96cdc.js
+// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, s) {
@@ -13,7 +13,7 @@
 				n = s("./src/reddit/actions/modal.ts"),
 				r = s("./src/reddit/constants/modals.ts"),
 				i = s("./src/reddit/actions/gold/constants.ts");
-			const c = Object(a.a)(i.Q),
+			const c = Object(a.a)(i.X),
 				d = () => async e => {
 					e(Object(n.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
@@ -182,8 +182,8 @@
 				X = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				U = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				K = s("./src/reddit/icons/svgs/Eye/index.tsx"),
-				Q = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				W = s("./src/reddit/helpers/createEmojiText/index.tsx"),
+				W = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				Q = s("./src/reddit/helpers/createEmojiText/index.tsx"),
 				z = s("./src/reddit/icons/fonts/Coin/index.tsx"),
 				J = s("./src/reddit/components/TimeLeft/TimeLeft.tsx");
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -220,7 +220,7 @@
 						className: q.a.price
 					}, a ? R.fbt._("Purchase for ${dollarPrice}", [R.fbt._param("dollarPrice", (e.pennyPrice / 100).toLocaleString())], {
 						hk: "229G45"
-					}) : Object(W.a)(R.fbt._("Spend :coin:{coinPrice}", [R.fbt._param("coinPrice", e.coinPrice.toLocaleString())], {
+					}) : Object(Q.a)(R.fbt._("Spend :coin:{coinPrice}", [R.fbt._param("coinPrice", e.coinPrice.toLocaleString())], {
 						hk: "4aXpIB"
 					}), {
 						":coin:": n.a.createElement(z.a, null)
@@ -348,7 +348,7 @@
 						award: t
 					}), t.awardType === u.f.Moderator ? n.a.createElement("span", {
 						className: q.a.giver
-					}, n.a.createElement(Q.a, {
+					}, n.a.createElement(W.a, {
 						className: q.a.modIcon
 					}), R.fbt._("Given by a Moderator", null, {
 						hk: "2k1UCp"
@@ -417,7 +417,7 @@
 						className: ie.a.metaText
 					}, e.pennyPrice ? R.fbt._("Purchase for ${cost}", [R.fbt._param("cost", (e.pennyPrice / 100).toLocaleString())], {
 						hk: "4ypYLM"
-					}) : Object(W.a)(R.fbt._("Spend :coin:{cost}", [R.fbt._param("cost", e.coinPrice.toLocaleString())], {
+					}) : Object(Q.a)(R.fbt._("Spend :coin:{cost}", [R.fbt._param("cost", e.coinPrice.toLocaleString())], {
 						hk: "2FdXrq"
 					}).toString(), {
 						":coin:": n.a.createElement(z.a, null)
@@ -564,7 +564,7 @@
 						className: ie.a.awardSectionContainer
 					}, t && n.a.createElement("div", {
 						className: ie.a.awardSectionTitle
-					}, n.a.createElement(Q.a, {
+					}, n.a.createElement(W.a, {
 						className: Object(c.a)(ie.a.modIcon, ie.a.awardSectionIcon)
 					}), he._("r/{subredditName} Moderator Awards", [he._param("subredditName", i)], {
 						hk: "4vVQ2A"
@@ -707,7 +707,7 @@
 					const {
 						postOrComment: e
 					} = this.props;
-					return Object(W.a)(R.fbt._("Spend Coins to highlight this {Post or comment} for all to see! :learnMoreLink:", [R.fbt._param("Post or comment", e)], {
+					return Object(Q.a)(R.fbt._("Spend Coins to highlight this {Post or comment} for all to see! :learnMoreLink:", [R.fbt._param("Post or comment", e)], {
 						hk: "2srS0W"
 					}), {
 						":learnMoreLink:": n.a.createElement("a", {
@@ -1393,4 +1393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.1ea658673a5809a82f95.js.map
+//# sourceMappingURL=FramedGild~GildModal.0ad5851002991fb96cdc.js.map

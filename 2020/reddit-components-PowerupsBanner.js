@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.739f2bb6ec84a571dd9f.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.b3a9e23216491b1730c6.js
+// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, s, t) {
@@ -187,7 +187,7 @@
 					hk: "1GKp8N"
 				})), c.map(e => r.a.createElement(a.a, {
 					className: i.a.supporter,
-					key: e && e.supporterInfo ? e.supporterInfo.id : void 0,
+					key: e.lastSupportedAt,
 					supporter: e
 				})))
 			}
@@ -228,8 +228,8 @@
 				g = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = t("./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.tsx"),
 				E = t("./src/reddit/components/PowerupsBanner/Supporters/index.tsx"),
-				N = t("./src/reddit/components/PowerupsBanner/index.m.less"),
-				S = t.n(N);
+				S = t("./src/reddit/components/PowerupsBanner/index.m.less"),
+				N = t.n(S);
 			const {
 				fbt: j
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
@@ -290,9 +290,9 @@
 						show: i
 					} = this.state;
 					return s && i !== P.Hidden && t && 1 !== t.tiersInfo.length ? this.state.show === P.Dismissed ? r.a.createElement("div", {
-						className: Object(c.a)(S.a.dismissedContainer, e)
+						className: Object(c.a)(N.a.dismissedContainer, e)
 					}, r.a.createElement("div", {
-						className: S.a.dismissedText
+						className: N.a.dismissedText
 					}, j._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
 					})), r.a.createElement(_.f, {
@@ -300,28 +300,28 @@
 					}, j._("undo", null, {
 						hk: "1A9z3Y"
 					}))) : r.a.createElement("article", {
-						className: Object(c.a)(S.a.container, e)
+						className: Object(c.a)(N.a.container, e)
 					}, o && r.a.createElement(f.b, {
 						subredditOrProfile: o,
-						className: S.a.subredditIcon
+						className: N.a.subredditIcon
 					}), r.a.createElement("h2", {
-						className: S.a.title
+						className: N.a.title
 					}, j._("Powerups unlock features for the whole community", null, {
 						hk: "2ZaVtr"
 					})), a && r.a.createElement(E.a, {
 						supporters: a,
-						className: S.a.topSupporters,
+						className: N.a.topSupporters,
 						maxSupporters: B
 					}), r.a.createElement(k.a, {
-						className: S.a.powerupsRemainingToUnlock,
+						className: N.a.powerupsRemainingToUnlock,
 						powerups: t
 					}), r.a.createElement(_.f, {
-						className: S.a.button,
+						className: N.a.button,
 						onClick: n
 					}, j._("Powerup", null, {
 						hk: "261t2N"
 					})), r.a.createElement(g.a, {
-						className: S.a.close,
+						className: N.a.close,
 						onClick: this.handleDismiss
 					})) : null
 				}
@@ -409,4 +409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.739f2bb6ec84a571dd9f.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.b3a9e23216491b1730c6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.23943ee28d6b83581fbe.js
-// Retrieved at 5/28/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1bfa5e8dbe88a19f9812.js
+// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11019,14 +11019,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("51c3156-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("ea5f017-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "51c3156-production",
+						release: "ea5f017-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11388,7 +11388,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "51c3156-production",
+							releaseClient: "ea5f017-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17295,8 +17295,10 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return s
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return o
+			})), i.d(t, "b", (function() {
+				return d
 			}));
 			var n, r = i("./node_modules/fbt/lib/FbtPublic.js");
 			! function(e) {
@@ -17308,22 +17310,31 @@
 				e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD"
 			}(s || (s = {}));
 			const o = {
-				[s.SdVideo]: r.fbt._("720p SD Videos", null, {
-					hk: "2fAsdM"
-				}),
-				[s.HdVideo]: r.fbt._("1080p HD video", null, {
-					hk: "1laooJ"
-				}),
-				[s.CommentsWithGifs]: r.fbt._("Gifs in comments", null, {
-					hk: "2zfRvk"
-				}),
-				[s.CommentsWithEmoji]: r.fbt._("Snoomojis", null, {
-					hk: "1arNaj"
-				}),
-				[s.PostsImageUpload]: r.fbt._("Upload images", null, {
-					hk: "DLmVt"
-				})
-			}
+					[s.SdVideo]: r.fbt._("720p SD Videos", null, {
+						hk: "2fAsdM"
+					}),
+					[s.HdVideo]: r.fbt._("HD video", null, {
+						hk: "2LKEks"
+					}),
+					[s.CommentsWithGifs]: r.fbt._("Gifs in comments", null, {
+						hk: "2zfRvk"
+					}),
+					[s.CommentsWithEmoji]: r.fbt._("Snoomojis", null, {
+						hk: "1arNaj"
+					}),
+					[s.PostsImageUpload]: r.fbt._("Upload images", null, {
+						hk: "DLmVt"
+					})
+				},
+				d = {
+					[s.SdVideo]: "",
+					[s.HdVideo]: r.fbt._("Up to 2 GB", null, {
+						hk: "3pt2FN"
+					}),
+					[s.CommentsWithGifs]: "",
+					[s.CommentsWithEmoji]: "",
+					[s.PostsImageUpload]: ""
+				}
 		},
 		"./src/reddit/models/GqlTopLevelField.ts": function(e, t, i) {
 			"use strict";
@@ -20566,14 +20577,18 @@
 				return d
 			})), i.d(t, "a", (function() {
 				return l
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return a
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "k", (function() {
 				return u
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "i", (function() {
 				return c
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return m
+			})), i.d(t, "c", (function() {
+				return p
+			})), i.d(t, "b", (function() {
+				return _
 			}));
 			var n = i("./src/reddit/models/Gold/Powerups/index.ts");
 			const r = (e, t) => {
@@ -20616,9 +20631,11 @@
 				},
 				l = e => e.goldPurchase.powerupsPurchaseModal.purchaseCompleted,
 				a = e => e.user.powerups.data,
-				u = e => e.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				c = e => e.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				m = e => e.goldPurchase.powerupsPurchaseModal.freeReallocation.pending
+				u = e => e.user.powerups.fetched,
+				c = e => e.user.powerups.allocationByKey,
+				m = e => e.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				p = e => e.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				_ = e => e.goldPurchase.powerupsPurchaseModal.freeReallocation.pending
 		},
 		"./src/reddit/selectors/listings.ts": function(e, t, i) {
 			"use strict";
@@ -29057,4 +29074,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.23943ee28d6b83581fbe.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.1bfa5e8dbe88a19f9812.js.map
