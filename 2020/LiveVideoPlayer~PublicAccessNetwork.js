@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.703edef5a8e515f44b6f.js
-// Retrieved at 5/20/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.81087a7f68d04b812a0e.js
+// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -100,12 +100,12 @@
 				async initializeConfig(e, t, s) {
 					if (this.isInitialized) return;
 					await t(Object(r.c)(e));
-					const i = Object(n.m)(s());
+					const i = Object(n.l)(s());
 					i.lastUpdated && (this.currentStreamsRateSec = i.viewer_streams_refresh, this.currentConfigRateSec = i.rpan_config_refresh_rate, this.isInitialized = !0)
 				}
 				async startConfigWork(e, t, s) {
 					window.clearTimeout(this.configTimeout), await t(Object(r.c)(e));
-					const i = Object(n.m)(s()),
+					const i = Object(n.l)(s()),
 						a = i.rpan_config_refresh_rate;
 					this.currentConfigRateSec !== a && (this.currentConfigRateSec = a);
 					const o = i.viewer_streams_refresh;
@@ -120,18 +120,18 @@
 				}
 				async startRecommendedViewerSubredditsWork(e, t) {
 					await this.initializeConfig(a.P, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(r.b)());
-					const s = Object(n.m)(t()).recommended_viewer_subreddits_refresh_rate;
+					const s = Object(n.l)(t()).recommended_viewer_subreddits_refresh_rate;
 					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(i.a)(() => e(Object(r.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(a.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(n.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(i.a)(() => {
+					await this.initializeConfig(a.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(n.l)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(i.a)(() => {
 						this.currentStatsId && e(Object(o.d)(this.currentStatsId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
 					if (await this.initializeConfig(a.P, e, t), !this.currentHeartbeatId) return;
 					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
-					const s = Object(n.m)(t());
+					const s = Object(n.l)(t());
 					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
 					const o = 1e3 * this.heartbeatDelaySec;
 					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
@@ -150,7 +150,7 @@
 					return Math.max(1e3 * this.currentConfigRateSec, this.MIN_RATE_MS)
 				}
 				getRandomFetchStreamsJitterSec(e) {
-					const t = Object(n.m)(e).viewer_streams_refresh_slop,
+					const t = Object(n.l)(e).viewer_streams_refresh_slop,
 						s = Math.cos(Math.PI * Math.round(Math.random()));
 					return Math.random() * t * s
 				}
@@ -318,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.703edef5a8e515f44b6f.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.81087a7f68d04b812a0e.js.map

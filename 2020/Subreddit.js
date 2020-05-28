@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6215e87ff9d67c6b4940.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c10bbfb31c17041ce50b.js
+// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -7175,10 +7175,10 @@
 					let {
 						listingName: n
 					} = t;
-					return Object(d.n)(e, {
+					return Object(d.m)(e, {
 						subreddit: n
 					})
-				}, d.l, (e, t, n, s, r, i) => {
+				}, d.k, (e, t, n, s, r, i) => {
 					if (!e) return !1;
 					if (i.isPermanentlyCanceled) return !1;
 					if (n) return !1;
@@ -7195,10 +7195,10 @@
 					let {
 						listingName: n
 					} = t;
-					return Object(d.n)(e, {
+					return Object(d.m)(e, {
 						subreddit: n
 					})
-				}, d.m, (e, t, n, s) => {
+				}, d.l, (e, t, n, s) => {
 					if (!e) {
 						const e = "home" === t ? s.home_feed_discovery_unit_index : "r/popular" === t ? s.popular_feed_discovery_unit_index : a.i;
 						return "number" == typeof e ? e : a.i
@@ -7443,7 +7443,7 @@
 					const r = s.stream.state;
 					return r === o.b.IS_LIVE || r === o.b.DISCONNECTED ? U.LIVE : r === o.b.ENDED && s.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
 				}),
-				V = Object(s.a)(L, H, b.b, l.c, l.p, (e, t, n, s, r) => n ? s : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : r : void 0),
+				V = Object(s.a)(L, H, b.b, l.b, l.o, (e, t, n, s, r) => n ? s : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : r : void 0),
 				G = Object(s.a)(L, H, W, (e, t, n) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && n < e.broadcast_time ? n : 0 : 0)
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, n) {
@@ -7459,7 +7459,7 @@
 				r = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				a = n("./src/reddit/selectors/PublicAccessNetwork/api.ts");
 			const i = e => e.publicAccessNetwork.theaterSettings,
-				o = Object(s.a)(i, a.o, (e, t) => t && !e.isIntroFinished),
+				o = Object(s.a)(i, a.n, (e, t) => t && !e.isIntroFinished),
 				c = Object(s.a)(i, e => e.lastChatActivityUtcTs),
 				d = e => !!e && e + r.a > Date.now()
 		},
@@ -7489,4 +7489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.6215e87ff9d67c6b4940.js.map
+//# sourceMappingURL=Subreddit.c10bbfb31c17041ce50b.js.map

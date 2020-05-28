@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.eb8f9e2d37633b0cc424.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.6916daad5dc766855bca.js
+// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "48aadf4-production"
+					SENTRY_RELEASE_VERSION: "4507d81-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -318,12 +318,12 @@
 				async initializeConfig(e, t, s) {
 					if (this.isInitialized) return;
 					await t(Object(i.c)(e));
-					const r = Object(o.m)(s());
+					const r = Object(o.l)(s());
 					r.lastUpdated && (this.currentStreamsRateSec = r.viewer_streams_refresh, this.currentConfigRateSec = r.rpan_config_refresh_rate, this.isInitialized = !0)
 				}
 				async startConfigWork(e, t, s) {
 					window.clearTimeout(this.configTimeout), await t(Object(i.c)(e));
-					const r = Object(o.m)(s()),
+					const r = Object(o.l)(s()),
 						a = r.rpan_config_refresh_rate;
 					this.currentConfigRateSec !== a && (this.currentConfigRateSec = a);
 					const n = r.viewer_streams_refresh;
@@ -338,18 +338,18 @@
 				}
 				async startRecommendedViewerSubredditsWork(e, t) {
 					await this.initializeConfig(a.P, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(i.b)());
-					const s = Object(o.m)(t()).recommended_viewer_subreddits_refresh_rate;
+					const s = Object(o.l)(t()).recommended_viewer_subreddits_refresh_rate;
 					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(i.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(a.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.m)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
+					await this.initializeConfig(a.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.l)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
 						this.currentStatsId && e(Object(n.d)(this.currentStatsId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
 					if (await this.initializeConfig(a.P, e, t), !this.currentHeartbeatId) return;
 					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
-					const s = Object(o.m)(t());
+					const s = Object(o.l)(t());
 					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
 					const n = 1e3 * this.heartbeatDelaySec;
 					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
@@ -368,7 +368,7 @@
 					return Math.max(1e3 * this.currentConfigRateSec, this.MIN_RATE_MS)
 				}
 				getRandomFetchStreamsJitterSec(e) {
-					const t = Object(o.m)(e).viewer_streams_refresh_slop,
+					const t = Object(o.l)(e).viewer_streams_refresh_slop,
 						s = Math.cos(Math.PI * Math.round(Math.random()));
 					return Math.random() * t * s
 				}
@@ -1484,4 +1484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.eb8f9e2d37633b0cc424.js.map
+//# sourceMappingURL=RpanListingUnit.6916daad5dc766855bca.js.map

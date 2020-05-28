@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a3630e3987f773a9b539.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a5b2c84cdd6755a8deb1.js
+// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -8304,7 +8304,7 @@
 				Ae = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
 				Re = n("./src/reddit/selectors/multireddit.ts"),
 				Pe = n("./src/reddit/selectors/posts.ts"),
-				ke = (n("./src/reddit/selectors/PublicAccessNetwork/api.ts"), n("./src/reddit/selectors/runTimeEnvVars.ts")),
+				ke = n("./src/reddit/selectors/runTimeEnvVars.ts"),
 				xe = n("./src/lib/makeCommentsPageKey/index.ts"),
 				Ne = n("./src/lib/makeListingKey/index.ts"),
 				Le = n("./src/lib/matchRoute/index.ts"),
@@ -14504,7 +14504,7 @@
 						let {
 							gqlContext: s
 						} = n;
-						const r = Object(c.l)(t()),
+						const r = Object(c.k)(t()),
 							o = r.global.lastUpdated || 0,
 							i = 1e3 * r.global.rpan_config_refresh_rate;
 						if (r.isPending || Date.now() < o + i) return;
@@ -14518,8 +14518,8 @@
 					let {
 						gqlContext: r
 					} = s;
-					const o = Object(c.l)(n()),
-						i = Object(c.n)(n(), {
+					const o = Object(c.k)(n()),
+						i = Object(c.m)(n(), {
 							subreddit: e
 						}),
 						p = i && i.lastUpdated || 0,
@@ -14552,7 +14552,7 @@
 						gqlContext: s
 					} = n;
 					const r = t();
-					if (!Object(i.b)(r) || Object(c.i)(r)) return;
+					if (!Object(i.b)(r) || Object(c.h)(r)) return;
 					e(y());
 					const o = await Object(a.c)(s());
 					o.ok && o.body && o.body.data ? e(_({
@@ -14571,9 +14571,9 @@
 			})), n.d(t, "b", (function() {
 				return j
 			})), n.d(t, "d", (function() {
-				return E
+				return h
 			})), n.d(t, "e", (function() {
-				return I
+				return E
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.search.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/query-string/index.js"),
@@ -14600,41 +14600,33 @@
 				_ = Object(o.a)(a.J),
 				y = Object(o.a)(a.s),
 				j = Object(o.a)(a.t),
-				h = e => t => t.post.subreddit.name !== e ? t : Object.assign({}, t, {
-					post: Object.assign({}, t.post, {
-						subreddit: Object.assign({}, t.post.subreddit, {
-							name: "pan"
-						})
-					})
-				}),
-				E = e => async (t, n, s) => {
+				h = e => async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const o = Object(c.g)(e),
 						a = n();
-					if (Object(u.e)(a, o)) return;
+					if (Object(u.d)(a, o)) return;
 					t(p(o));
 					const d = await Object(i.d)(r(), o),
 						l = Date.now();
 					if (d.ok && d.body && d.body.data) {
-						let e = d.body.data;
-						const s = Object(u.b)(n());
-						s && "pan" !== s && (e = h(s)(e)), t(f({
+						const e = d.body.data;
+						t(f({
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(T({
+					} else t(v({
 						streamId: o,
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, I = e => async (t, n) => Object(d.b)(n()) ? t(v(e)) : t(S()), S = () => async (e, t, n) => {
+				}, E = e => async (t, n) => Object(d.b)(n()) ? t(S(e)) : t(I()), I = () => async (e, t, n) => {
 					let {
 						gqlContext: s
 					} = n;
 					const r = t();
-					if (Object(u.g)(r)) return;
+					if (Object(u.f)(r)) return;
 					e(m());
 					const o = await Object(i.f)(s()),
 						a = Date.now();
@@ -14644,34 +14636,33 @@
 							models: t,
 							utcTimeStamp: a
 						}))
-					} else e(w({
+					} else e(T({
 						error: o.error,
 						utcTimeStamp: a
 					}))
-				}, v = e => async (t, n, s) => {
+				}, S = e => async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const o = n();
-					if (Object(u.g)(o)) return;
+					if (Object(u.f)(o)) return;
 					t(m());
 					const a = await Object(i.e)(r(), e),
 						c = Date.now();
 					if (a.ok && a.body && a.body.data) {
-						let s = a.body.data;
-						const r = Object(u.b)(n());
-						r && "pan" !== r && (s = s.map(h(r))), t(O({
+						const n = a.body.data;
+						t(O({
 							listingName: e,
-							models: s,
+							models: n,
 							utcTimeStamp: c
 						}))
-					} else t(w({
+					} else t(T({
 						error: a.error,
 						utcTimeStamp: c
 					}))
-				}, T = e => async t => {
+				}, v = e => async t => {
 					t(g(e))
-				}, w = e => async t => {
+				}, T = e => async t => {
 					t(_(e))
 				}
 		},
@@ -51290,6 +51281,77 @@
 				};
 			t.a = f
 		},
+		"./src/reddit/selectors/PublicAccessNetwork/api.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "k", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "e", (function() {
+				return d
+			})), n.d(t, "d", (function() {
+				return u
+			})), n.d(t, "f", (function() {
+				return l
+			})), n.d(t, "i", (function() {
+				return b
+			})), n.d(t, "l", (function() {
+				return p
+			})), n.d(t, "m", (function() {
+				return f
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "o", (function() {
+				return O
+			})), n.d(t, "n", (function() {
+				return g
+			})), n.d(t, "g", (function() {
+				return _
+			})), n.d(t, "a", (function() {
+				return y
+			})), n.d(t, "h", (function() {
+				return h
+			})), n.d(t, "j", (function() {
+				return I
+			}));
+			var s = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/lib/objectSelector/index.ts"),
+				o = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				a = n("./src/reddit/helpers/publicAccessNetwork/index.ts");
+			const i = e => e.publicAccessNetwork.api.config,
+				c = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(a.g)(t)],
+				d = e => c(e, o.b),
+				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(a.g)(t)] && e.publicAccessNetwork.api.pending[Object(a.g)(t)].isPending,
+				l = e => u(e, o.b),
+				b = e => e.publicAccessNetwork.api.pending[o.b] && e.publicAccessNetwork.api.pending[o.b].fetchedUtcTimeStamp,
+				p = Object(s.a)(i, e => e.global),
+				f = Object(s.a)((e, t) => {
+					let {
+						subreddit: n
+					} = t;
+					return n
+				}, i, (e, t) => {
+					const n = e.toLowerCase();
+					return t.subreddits[n]
+				}),
+				m = Object(s.a)(i, e => e.global.rpan_intro_video_url),
+				O = Object(s.a)(i, e => e.global.url_to_show_for_unavailable_video),
+				g = Object(s.a)(i, e => !1),
+				_ = Object(s.a)(i, e => e.isError),
+				y = Object(s.a)(i, e => e.global.max_chat_comment_length),
+				j = e => e.publicAccessNetwork.api.recommendedViewerSubreddits,
+				h = (Object(s.a)(j, e => e.isError), Object(s.a)(j, e => e.isPending)),
+				E = Object(r.a)(Object(s.a)(j, e => e.subreddits)),
+				I = Object(s.a)(E, e => [{
+					name: "All",
+					prefixedName: "All",
+					path: Object(a.d)()
+				}, ...e.map(e => ({
+					name: e,
+					prefixedName: "r/".concat(e),
+					path: Object(a.f)(e)
+				}))])
+		},
 		"./src/reddit/selectors/activeModalId.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -53597,4 +53659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a3630e3987f773a9b539.js.map
+//# sourceMappingURL=Governance~Reddit.a5b2c84cdd6755a8deb1.js.map

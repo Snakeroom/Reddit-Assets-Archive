@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6445fed44b1cb52c0aa1.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.de7e0807fefe82a7a133.js
+// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11088,14 +11088,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("48aadf4-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("4507d81-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "48aadf4-production",
+						release: "4507d81-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11457,7 +11457,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "48aadf4-production",
+							releaseClient: "4507d81-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -19910,80 +19910,6 @@
 				r = "/r/:subredditName/submit",
 				s = "/user/:profileName/submit"
 		},
-		"./src/reddit/selectors/PublicAccessNetwork/api.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "l", (function() {
-				return d
-			})), i.d(t, "d", (function() {
-				return l
-			})), i.d(t, "f", (function() {
-				return a
-			})), i.d(t, "e", (function() {
-				return u
-			})), i.d(t, "g", (function() {
-				return c
-			})), i.d(t, "j", (function() {
-				return m
-			})), i.d(t, "m", (function() {
-				return p
-			})), i.d(t, "n", (function() {
-				return _
-			})), i.d(t, "c", (function() {
-				return h
-			})), i.d(t, "p", (function() {
-				return g
-			})), i.d(t, "o", (function() {
-				return f
-			})), i.d(t, "h", (function() {
-				return b
-			})), i.d(t, "a", (function() {
-				return w
-			})), i.d(t, "b", (function() {
-				return y
-			})), i.d(t, "i", (function() {
-				return T
-			})), i.d(t, "k", (function() {
-				return E
-			}));
-			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/lib/objectSelector/index.ts"),
-				s = i("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				o = i("./src/reddit/helpers/publicAccessNetwork/index.ts");
-			const d = e => e.publicAccessNetwork.api.config,
-				l = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(o.g)(t)],
-				a = e => l(e, s.b),
-				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(o.g)(t)] && e.publicAccessNetwork.api.pending[Object(o.g)(t)].isPending,
-				c = e => u(e, s.b),
-				m = e => e.publicAccessNetwork.api.pending[s.b] && e.publicAccessNetwork.api.pending[s.b].fetchedUtcTimeStamp,
-				p = Object(n.a)(d, e => e.global),
-				_ = Object(n.a)((e, t) => {
-					let {
-						subreddit: i
-					} = t;
-					return i
-				}, d, (e, t) => {
-					const i = e.toLowerCase();
-					return t.subreddits[i]
-				}),
-				h = Object(n.a)(d, e => e.global.rpan_intro_video_url),
-				g = Object(n.a)(d, e => e.global.url_to_show_for_unavailable_video),
-				f = Object(n.a)(d, e => !1),
-				b = Object(n.a)(d, e => e.isError),
-				w = Object(n.a)(d, e => e.global.max_chat_comment_length),
-				y = Object(n.a)(p, e => e.dedicated_subreddit),
-				v = e => e.publicAccessNetwork.api.recommendedViewerSubreddits,
-				T = (Object(n.a)(v, e => e.isError), Object(n.a)(v, e => e.isPending)),
-				S = Object(r.a)(Object(n.a)(v, e => e.subreddits)),
-				E = Object(n.a)(S, e => [{
-					name: "All",
-					prefixedName: "All",
-					path: Object(o.d)()
-				}, ...e.map(e => ({
-					name: e,
-					prefixedName: "r/".concat(e),
-					path: Object(o.f)(e)
-				}))])
-		},
 		"./src/reddit/selectors/ads.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -26054,7 +25980,7 @@
 				h = i("./src/reddit/selectors/postCollection.ts"),
 				g = i("./src/reddit/selectors/posts.ts"),
 				f = i("./src/reddit/selectors/profile.ts"),
-				b = (i("./src/reddit/selectors/PublicAccessNetwork/api.ts"), i("./src/reddit/selectors/structuredStyles.ts"), i("./src/reddit/selectors/subreddit.ts")),
+				b = (i("./src/reddit/selectors/structuredStyles.ts"), i("./src/reddit/selectors/subreddit.ts")),
 				w = (i("./src/reddit/selectors/topic.ts"), i("./src/reddit/selectors/user.ts"));
 			i("./src/reddit/models/Media/index.ts");
 			const y = new Set([302, 400, 401, 403, 404, 421, 429, 500, 502, 503, 504, 0, void 0, null]),
@@ -29113,4 +29039,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.6445fed44b1cb52c0aa1.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.de7e0807fefe82a7a133.js.map
