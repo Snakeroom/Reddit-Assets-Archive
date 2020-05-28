@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.ff6125d46a07726bc645.js
-// Retrieved at 5/28/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.11e7bd7d2b76cb72f4a2.js
+// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -251,7 +251,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~MembershipPaywallPage~3149a115"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChai~d183dc71"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"), s.e("reddit-components-SidebarNativeAd")]).then(s.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"), s.e("reddit-components-SidebarNativeAd")]).then(s.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -286,7 +286,7 @@
 				},
 				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(y.A)(e.media) && e.media.content)),
 				L = e => !!e && e.isBlank,
-				P = [{
+				F = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
 				}, {
@@ -296,7 +296,7 @@
 					img: "/img/house-ads/castiron.png",
 					href: "/r/castiron"
 				}];
-			class F extends d.a.Component {
+			class P extends d.a.Component {
 				shouldComponentUpdate(e, t) {
 					const {
 						className: s,
@@ -305,11 +305,11 @@
 					return s !== e.className || n !== e.redditStyle
 				}
 				render() {
-					const e = o()(0, P.length - 1),
+					const e = o()(0, F.length - 1),
 						{
 							img: t,
 							href: s
-						} = P[e],
+						} = F[e],
 						{
 							className: n,
 							redditStyle: r,
@@ -354,7 +354,7 @@
 						redditStyle: u
 					}, d.a.createElement(w, {
 						"data-before-content": x
-					}))) : p ? d.a.createElement(F, {
+					}))) : p ? d.a.createElement(P, {
 						className: e,
 						redditStyle: u,
 						removeSidebarSpacer: y
@@ -1046,4 +1046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.ff6125d46a07726bc645.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.11e7bd7d2b76cb72f4a2.js.map

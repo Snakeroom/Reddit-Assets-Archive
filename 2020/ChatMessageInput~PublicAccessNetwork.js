@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~PublicAccessNetwork.c93dd3b79d3a77f67f06.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~PublicAccessNetwork.5d437276a483fd71f1aa.js
+// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~PublicAccessNetwork"], {
 		"./src/reddit/actions/publicAccessNetwork/theaterSettings.ts": function(e, t, s) {
@@ -7,9 +7,9 @@
 			s.d(t, "c", (function() {
 				return i
 			})), s.d(t, "a", (function() {
-				return d
-			})), s.d(t, "b", (function() {
 				return u
+			})), s.d(t, "b", (function() {
+				return d
 			}));
 			var r = s("./node_modules/uuid/v4.js"),
 				c = s.n(r),
@@ -18,11 +18,11 @@
 			const o = Object(n.a)(a.A),
 				i = e => async t => {
 					t(o(e))
-				}, d = () => async e => {
+				}, u = () => async e => {
 					e(o({
 						lastChatActivityUtcTs: Date.now()
 					}))
-				}, u = () => async e => {
+				}, d = () => async e => {
 					e(o({
 						correlationId: c()()
 					}))
@@ -37,11 +37,11 @@
 				a = s("./node_modules/react/index.js"),
 				o = s.n(a),
 				i = s("./src/lib/constants/index.ts"),
-				d = s("./src/lib/lessComponent.tsx"),
-				u = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
+				u = s("./src/lib/lessComponent.tsx"),
+				d = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				l = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
 				m = s.n(l);
-			const b = d.a.div("Userpic", m.a);
+			const b = u.a.div("Userpic", m.a);
 			t.a = n()(e => {
 				const {
 					userId: t
@@ -51,18 +51,18 @@
 					avatar: n,
 					color: a
 				} = (e => {
-					const t = u.length,
+					const t = d.length,
 						s = parseInt(e, 36),
 						r = s % 20 + 1,
 						c = Math.floor(s / 20) % t;
 					return {
 						avatar: ("0" + r).slice(-2),
-						color: u[c]
+						color: d[c]
 					}
-				})(c), d = "".concat(s, "/avatar_default_").concat(n, "_").concat(a, ".png");
+				})(c), u = "".concat(s, "/avatar_default_").concat(n, "_").concat(a, ".png");
 				return o.a.createElement(b, {
 					style: {
-						backgroundImage: "url(".concat(d, ")"),
+						backgroundImage: "url(".concat(u, ")"),
 						backgroundColor: "#".concat(a)
 					}
 				})
@@ -87,8 +87,8 @@
 				a = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/lib/lessComponent.tsx"),
 				i = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx"),
-				d = s("./src/reddit/icons/svgs/Redditor/index.tsx"),
-				u = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				u = s("./src/reddit/icons/svgs/Redditor/index.tsx"),
+				d = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				l = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
 				m = s.n(l);
 			const b = o.a.img("Userpic", m.a),
@@ -115,7 +115,7 @@
 				return a ? c.a.createElement("div", {
 					className: s,
 					style: f
-				}, c.a.createElement(u.a, {
+				}, c.a.createElement(d.a, {
 					className: m.a.TrashIcon
 				})) : o ? c.a.createElement("div", {
 					className: s,
@@ -131,7 +131,7 @@
 				}, t && t.accountIcon ? c.a.createElement(b, {
 					src: t.accountIcon,
 					alt: "user icon"
-				}) : c.a.createElement(d.a, {
+				}) : c.a.createElement(u.a, {
 					className: m.a.ProfileIcon
 				}))
 			}), "ChatIcon", m.a)
@@ -139,7 +139,7 @@
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "w", (function() {
-				return u
+				return d
 			})), s.d(t, "e", (function() {
 				return l
 			})), s.d(t, "f", (function() {
@@ -239,10 +239,10 @@
 						scrubbingEndMs: s.scrubbingEndMs
 					}
 				},
-				d = e => ({
+				u = e => ({
 					correlationId: e.publicAccessNetwork.theaterSettings.correlationId
 				}),
-				u = () => e => Object.assign({
+				d = () => e => Object.assign({
 					source: "stream_du",
 					action: "view",
 					noun: "stream_du"
@@ -265,49 +265,49 @@
 					action: "fail",
 					noun: "stream",
 					playback: i(s, e, t)
-				}, d(s), e && Object.assign({}, o(s, e))),
+				}, u(s), e && Object.assign({}, o(s, e))),
 				p = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "heartbeat",
 					noun: "stream",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				f = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "play",
 					noun: "stream",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				O = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "complete",
 					noun: "stream",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				h = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "share_video",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				j = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "upvote",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				_ = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				g = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "report",
 					playback: i(s, e, t)
-				}, d(s), o(s, e)),
+				}, u(s), o(s, e)),
 				I = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
@@ -336,7 +336,7 @@
 					action: "scrub",
 					noun: "video",
 					playback: i(s, e, t)
-				}, d(s)),
+				}, u(s)),
 				C = e => t => Object.assign({
 					source: "post",
 					action: "view",
@@ -445,8 +445,8 @@
 				a = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				o = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts"),
-				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				u = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				l = s("./node_modules/lodash/memoize.js");
 			const m = e => e.publicAccessNetwork.listings,
 				b = s.n(l)()(e => Object(c.a)(Object(r.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
@@ -498,7 +498,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => b(t.listingName)(e, t), k, f, i.i, d.b, (e, t, s, r, c, i) => {
+				}, (e, t) => b(t.listingName)(e, t), k, f, i.i, u.b, (e, t, s, r, c, i) => {
 					if (i) {
 						const n = [];
 						if (e) {
@@ -506,15 +506,15 @@
 							s[t] && n.push(t)
 						}
 						const i = n.concat(t),
-							d = [...new Set(i)],
-							u = new Set([...r, ...c]);
-						return d.filter(e => {
+							u = [...new Set(i)],
+							d = new Set([...r, ...c]);
+						return u.filter(e => {
 							const t = s[e];
-							return !u.has(e) && !t.post.isHidden && t.stream.state !== o.b.KILLED && t.stream.state !== o.b.PURGED
+							return !d.has(e) && !t.post.isHidden && t.stream.state !== o.b.KILLED && t.stream.state !== o.b.PURGED
 						})
 					}
-					const d = new Set([...r, ...c]);
-					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== n.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.b.KILLED && e.stream.state !== o.b.PURGED).map(e => e.post.id)
+					const u = new Set([...r, ...c]);
+					return Object.keys(s).filter(e => !u.has(e)).map(e => s[e]).filter(e => e.rank !== n.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.b.KILLED && e.stream.state !== o.b.PURGED).map(e => e.post.id)
 				}),
 				C = Object(r.a)((e, t) => {
 					let {
@@ -646,7 +646,7 @@
 					const c = r.stream.state;
 					return c === o.b.IS_LIVE || c === o.b.DISCONNECTED ? R.LIVE : c === o.b.ENDED && r.stream.vod_accessible ? R.VOD : R.UNAVAILABLE
 				}),
-				H = Object(r.a)(P, z, p.b, u.c, u.p, (e, t, s, r, c) => s ? r : e ? t === R.LIVE || t === R.VOD ? e.stream.hls_url : c : void 0),
+				H = Object(r.a)(P, z, p.b, d.c, d.p, (e, t, s, r, c) => s ? r : e ? t === R.LIVE || t === R.VOD ? e.stream.hls_url : c : void 0),
 				K = Object(r.a)(P, z, T, (e, t, s) => e ? t === R.LIVE ? e.broadcast_time : t === R.VOD && s < e.broadcast_time ? s : 0 : 0)
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, s) {
@@ -656,7 +656,7 @@
 			})), s.d(t, "c", (function() {
 				return i
 			})), s.d(t, "a", (function() {
-				return d
+				return u
 			}));
 			var r = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
@@ -664,7 +664,7 @@
 			const a = e => e.publicAccessNetwork.theaterSettings,
 				o = Object(r.a)(a, n.o, (e, t) => t && !e.isIntroFinished),
 				i = Object(r.a)(a, e => e.lastChatActivityUtcTs),
-				d = e => !!e && e + c.a > Date.now()
+				u = e => !!e && e + c.a > Date.now()
 		},
 		"./src/reddit/selectors/experiments/goldRpanLivePreview.ts": function(e, t, s) {
 			"use strict";
@@ -676,10 +676,10 @@
 			const n = e => {
 				return Object(c.c)(e, {
 					experimentEligibilitySelector: c.a,
-					experimentName: r.jb
-				}) === r.sb.Enabled
+					experimentName: r.lb
+				}) === r.ub.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~PublicAccessNetwork.c93dd3b79d3a77f67f06.js.map
+//# sourceMappingURL=ChatMessageInput~PublicAccessNetwork.5d437276a483fd71f1aa.js.map

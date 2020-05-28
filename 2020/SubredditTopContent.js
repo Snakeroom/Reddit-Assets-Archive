@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.22c625c2af12eac9f71c.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.0f4acf2b16d603dec2ee.js
+// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -117,16 +117,16 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = s("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.E)(e) || g.gc.ShowTopContent === Object(f.c)(e, {
+			const C = e => Object(y.E)(e) || g.ic.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.bc
+				experimentName: g.dc
 			});
-			var C = s("./src/reddit/selectors/subreddit.ts"),
+			var O = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
 				j = s.n(_);
 			const v = Object(d.b)(() => Object(l.c)({
-				inSubredditTopContentExperiment: O,
-				subredditUrl: C.d
+				inSubredditTopContentExperiment: C,
+				subredditUrl: O.d
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, s) => b.f(s(), t)),
 				trackDismissClick: t => e((e, s) => b.h(s(), t)),
@@ -206,7 +206,7 @@
 			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
 				o = s("./src/lib/loadWithRetries/index.ts");
 			const r = Object(n.a)({
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("FramedGild~GildModal"), s.e("GildModal")]).then(s.bind(null, "./src/reddit/components/GildModal/index.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"), s.e("FramedGild~GildModal"), s.e("GildModal")]).then(s.bind(null, "./src/reddit/components/GildModal/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => null,
 				LoadingComponent: () => null
 			});
@@ -281,7 +281,7 @@
 						s = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class O extends o.a.Component {
+			class C extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -321,7 +321,7 @@
 					}, x) : x
 				}
 			}
-			t.a = f(Object(h.c)(O))
+			t.a = f(Object(h.c)(C))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.22c625c2af12eac9f71c.js.map
+//# sourceMappingURL=SubredditTopContent.0f4acf2b16d603dec2ee.js.map

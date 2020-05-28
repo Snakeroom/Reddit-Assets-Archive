@@ -1,7 +1,12 @@
-// https://www.redditstatic.com/desktop2x/GildModal.4b1cbfa4038fa0dcc506.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.706d149deffe3c051dae.js
+// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, s) {
+				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== t && (e = e >= t ? e : t)), e
+			}
+		},
 		"./src/reddit/components/CoinPurchaseModal/Loader.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
@@ -206,4 +211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.4b1cbfa4038fa0dcc506.js.map
+//# sourceMappingURL=GildModal.706d149deffe3c051dae.js.map
