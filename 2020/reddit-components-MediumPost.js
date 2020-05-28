@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.26b2bd7ec3196fc30392.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.3bd5ae9304d280fbfd4a.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -364,7 +364,7 @@
 					getEventFactory: e => Object(c.f)(r.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: b.name,
-						type: Object(l.e)(b) ? d.a.PROFILE : d.a.SUBREDDIT
+						type: Object(l.f)(b) ? d.a.PROFILE : d.a.SUBREDDIT
 					},
 					postId: r.id
 				})), o.a.createElement(a.a, {
@@ -873,7 +873,7 @@
 					getEventFactory: e => Object(x.f)(I.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: L.name,
-						type: Object(v.e)(L) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(v.f)(L) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: I.id
 				}, "Subscribe"), A && o.a.createElement(h.a, {
@@ -980,4 +980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.26b2bd7ec3196fc30392.js.map
+//# sourceMappingURL=reddit-components-MediumPost.3bd5ae9304d280fbfd4a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5f3dbb2252c40a8486ee.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8081c88c59e37b6ca951.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2010,7 +2010,7 @@
 					}, P)));
 					const V = !F && !k;
 					let q;
-					return j && (q = Object(U.e)(j) ? Object(W.h)(j) : Object(W.i)(j)), o.a.createElement(L.a, {
+					return j && (q = Object(U.f)(j) ? Object(W.h)(j) : Object(W.i)(j)), o.a.createElement(L.a, {
 						className: Object(c.a)(G.a.container, z.a.largeAndMediumActiveStyles, z.a.largeAndMediumPostStyles, H.a.postContainer, Object(B.a)(this.props), s),
 						post: f,
 						onClick: x,
@@ -4051,7 +4051,7 @@
 					getEventFactory: e => Object(x.f)(E.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: _.name,
-						type: Object(f.e)(_) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(f.f)(_) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: E.id,
 					small: !0
@@ -9459,4 +9459,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.5f3dbb2252c40a8486ee.js.map
+//# sourceMappingURL=SearchResults.8081c88c59e37b6ca951.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.e05ee559c2fcb5bbd2c9.js
-// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.0573679b36837223730d.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5946,7 +5946,7 @@
 					getEventFactory: e => Object(x.f)(w.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: _.name,
-						type: Object(f.e)(_) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(f.f)(_) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: w.id,
 					small: !0
@@ -9951,4 +9951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.e05ee559c2fcb5bbd2c9.js.map
+//# sourceMappingURL=ProfileComments.0573679b36837223730d.js.map

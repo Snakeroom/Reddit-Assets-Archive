@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.bd0e559ecb44b0eb5a78.js
-// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.5d6e9765e2105db98917.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1009,7 +1009,7 @@
 						shouldHideNsfwIcon: !!e.shouldHideNsfwIcon,
 						subredditOrProfile: e.subredditOrProfile
 					});
-					Object(p.e)(e.subredditOrProfile) ? s = o.a.createElement(O, {
+					Object(p.f)(e.subredditOrProfile) ? s = o.a.createElement(O, {
 						className: e.className,
 						iconUrl: r,
 						isNSFW: e.subredditOrProfile.isNSFW,
@@ -3279,4 +3279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.bd0e559ecb44b0eb5a78.js.map
+//# sourceMappingURL=ModListing~Reddit.5d6e9765e2105db98917.js.map

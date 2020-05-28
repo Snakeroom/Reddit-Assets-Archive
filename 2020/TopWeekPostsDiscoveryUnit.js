@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5469e424e7f23390747e.js
-// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.3829b3b064b892f52c94.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -270,7 +270,7 @@
 						onSubredditOrProfileClick: n,
 						shouldShowSubscribeButton: o,
 						subredditOrProfile: a
-					} = e, c = Object(u.e)(a) ? D.a.PROFILE : D.a.SUBREDDIT;
+					} = e, c = Object(u.f)(a) ? D.a.PROFILE : D.a.SUBREDDIT;
 					return r.a.createElement("div", {
 						className: Object(i.a)(B.a.header, t)
 					}, r.a.createElement(W.a, {
@@ -315,7 +315,7 @@
 				};
 			const J = Object(o.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
-				return (Object(u.e)(e) ? t : s).some(t => t.id === e.id)
+				return (Object(u.f)(e) ? t : s).some(t => t.id === e.id)
 			});
 			class q extends r.a.Component {
 				constructor() {
@@ -760,4 +760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.5469e424e7f23390747e.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.3829b3b064b892f52c94.js.map

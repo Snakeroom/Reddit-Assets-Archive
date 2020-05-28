@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.98a65341ec61052147bd.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.435a2e30891cf3479e11.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -158,7 +158,7 @@
 					onSubmit: r => {
 						e.currentSubredditOrProfile && t.onAddToMulireddits({
 							name: e.currentSubredditOrProfile.name,
-							type: e.currentSubredditOrProfile.type === F.c.User ? y.a.PROFILE : y.a.SUBREDDIT
+							type: e.currentSubredditOrProfile.type === F.d.User ? y.a.PROFILE : y.a.SUBREDDIT
 						}, r)
 					}
 				}));
@@ -233,7 +233,7 @@
 						const {
 							currentSubredditOrProfile: t
 						} = this.props;
-						return t && (t.type === F.c.User && e.profileIds && e.profileIds.indexOf(t.id) > -1 || t.type !== F.c.User && e.subredditIds && e.subredditIds.indexOf(t.id) > -1) || !1
+						return t && (t.type === F.d.User && e.profileIds && e.profileIds.indexOf(t.id) > -1 || t.type !== F.d.User && e.subredditIds && e.subredditIds.indexOf(t.id) > -1) || !1
 					}, this.inputRef = null, this.recentRef = null, this.scrollRef = null, this.onCheckFnCache = {}
 				}
 				render() {
@@ -703,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.98a65341ec61052147bd.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.435a2e30891cf3479e11.js.map

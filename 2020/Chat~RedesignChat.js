@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4f0ead6217e369216eb4.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d2e474ebe3a57c1c2c66.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1625,7 +1625,7 @@
 					} = n;
 					const r = t().user.session;
 					if (r) {
-						const t = await ((e, t) => Object(c.b)(e, {
+						const t = await ((e, t) => Object(c.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
 							method: s.ab.POST
@@ -1711,7 +1711,7 @@
 					const l = t();
 					if (!l.user || !l.user.language) return;
 					if (l.sitewideRules && l.sitewideRules.length) return;
-					const u = await (e => Object(c.b)(Object(r.a)(e, [o.a]), {
+					const u = await (e => Object(c.a)(Object(r.a)(e, [o.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/sitewide_rules.json"),
 						method: s.ab.GET
 					}))(a());
@@ -9432,20 +9432,20 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/makeApiRequest/index.ts");
-			const c = async e => Object(s.b)(e, {
+			const c = async e => Object(s.a)(e, {
 				endpoint: "".concat(e.apiUrl, "/api/v1/me"),
 				method: a.ab.GET,
 				data: {
 					raw_json: 1
 				}
-			}), r = async (e, t) => Object(s.b)(e, {
+			}), r = async (e, t) => Object(s.a)(e, {
 				data: {
 					account_id: t,
 					raw_json: 1
 				},
 				endpoint: "".concat(e.apiUrl, "/api/block_user"),
 				method: a.ab.POST
-			}), o = async (e, t) => Object(s.b)(e, {
+			}), o = async (e, t) => Object(s.a)(e, {
 				endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/about"),
 				method: a.ab.GET,
 				data: {
@@ -9471,7 +9471,7 @@
 				c = n("./src/lib/omitHeaders/index.ts"),
 				r = n("./src/reddit/constants/headers.ts"),
 				o = n("./src/chat/models/Message/report.ts");
-			const i = (e, t) => Object(s.b)(e, {
+			const i = (e, t) => Object(s.a)(e, {
 					method: a.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/report_user"),
 					data: {
@@ -9481,7 +9481,7 @@
 				}),
 				l = (e, t, n) => {
 					const c = Object(o.c)(t, n);
-					return Object(s.b)(e, {
+					return Object(s.a)(e, {
 						method: a.ab.POST,
 						endpoint: "".concat(e.apiUrl, "/api/report_user"),
 						data: {
@@ -9491,7 +9491,7 @@
 						}
 					})
 				},
-				d = (e, t) => Object(s.b)(e, {
+				d = (e, t) => Object(s.a)(e, {
 					method: a.ab.GET,
 					endpoint: "".concat(e.apiUrl, "/api/user_data_by_account_ids"),
 					data: {
@@ -9499,11 +9499,11 @@
 						ids: t.join(",")
 					}
 				}),
-				u = e => Object(s.b)(e, {
+				u = e => Object(s.a)(e, {
 					method: a.ab.GET,
 					endpoint: "".concat(e.apiUrl, "/prefs/blocked.json")
 				}),
-				h = e => Object(s.b)(Object(c.a)(e, [r.a]), {
+				h = e => Object(s.a)(Object(c.a)(e, [r.a]), {
 					method: a.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/seen_subreddit_chat_ftux")
 				})
@@ -14041,4 +14041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.4f0ead6217e369216eb4.js.map
+//# sourceMappingURL=Chat~RedesignChat.d2e474ebe3a57c1c2c66.js.map

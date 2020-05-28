@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5d05ba134fa60fdfbcbf.js
-// Retrieved at 5/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c19ecccdc3c66ccb98f0.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -235,7 +235,7 @@
 				} = n;
 				(await
 					function(e) {
-						return Object(a.b)(Object(r.a)(e, [o.a]), {
+						return Object(a.a)(Object(r.a)(e, [o.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/leave_redesign_beta"),
 							method: "post",
 							type: "json"
@@ -250,7 +250,7 @@
 				} = s;
 				Object(i.a)(),
 					function(e) {
-						Object(a.b)(Object(r.a)(e, [o.a]), {
+						Object(a.a)(Object(r.a)(e, [o.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/join_redesign_beta"),
 							method: "post",
 							type: "json"
@@ -597,7 +597,7 @@
 				let {
 					apiContext: c
 				} = n;
-				const l = await ((e, t) => Object(r.b)(Object(o.a)(e, [i.a]), {
+				const l = await ((e, t) => Object(r.a)(Object(o.a)(e, [i.a]), {
 					method: a.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v1/verify_email/").concat(t),
 					data: {}
@@ -649,7 +649,7 @@
 						l = Object(m.a)(a);
 					if (r || l) return;
 					e(h());
-					const p = await (e => Object(c.b)(e, {
+					const p = await (e => Object(c.a)(e, {
 						endpoint: Object(d.a)("".concat(o.a.gatewayUrl, "/redditmobile/1/push/preferences")),
 						method: i.ab.GET
 					}))(n());
@@ -688,7 +688,7 @@
 					t(C({
 						preferences: e
 					}));
-					const g = await ((e, t) => Object(c.b)(e, {
+					const g = await ((e, t) => Object(c.a)(e, {
 						endpoint: Object(d.a)("".concat(o.a.gatewayUrl, "/redditmobile/1/push/preferences")),
 						method: i.ab.POST,
 						data: {
@@ -4516,7 +4516,7 @@
 				so = s("./src/lib/makeApiRequest/index.ts"),
 				no = s("./src/lib/omitHeaders/index.ts"),
 				ao = s("./src/reddit/constants/headers.ts");
-			const ro = (e, t) => Object(so.b)(Object(no.a)(e, [ao.a]), {
+			const ro = (e, t) => Object(so.a)(Object(no.a)(e, [ao.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/subreddit_autocomplete_v2.json"),
 				method: f.ab.GET,
 				data: {
@@ -12820,4 +12820,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.5d05ba134fa60fdfbcbf.js.map
+//# sourceMappingURL=Reddit.c19ecccdc3c66ccb98f0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.287db0e06b4b4ea76e5a.js
-// Retrieved at 5/18/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.96d28486425b2e1a2f76.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -476,7 +476,7 @@
 					}, _)));
 					const F = !A && !k;
 					let Q;
-					return O && (Q = Object(R.e)(O) ? Object(B.h)(O) : Object(B.i)(O)), i.a.createElement(W.a, {
+					return O && (Q = Object(R.f)(O) ? Object(B.h)(O) : Object(B.i)(O)), i.a.createElement(W.a, {
 						className: Object(c.a)(Z.a.container, z.a.largeAndMediumActiveStyles, z.a.largeAndMediumPostStyles, H.a.postContainer, Object(T.a)(this.props), s),
 						post: C,
 						onClick: x,
@@ -962,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.287db0e06b4b4ea76e5a.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.96d28486425b2e1a2f76.js.map

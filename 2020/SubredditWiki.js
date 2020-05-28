@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.1fe4620f5cbd3fe93b06.js
-// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.bf30e1f28f161002a737.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -512,7 +512,7 @@
 					}));
 					return d.ok
 				}, O = Object(i.a)(h.e), v = (e, t) => async (n, i, d) => {
-					const l = await ((e, t, n) => Object(o.b)(Object(c.a)(e, [u.a]), {
+					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/friend"),
 						method: r.ab.POST,
 						data: {
@@ -557,7 +557,7 @@
 					}
 					return l.ok
 				}, C = Object(i.a)(h.f), E = (e, t) => async (n, i, d) => {
-					const l = await ((e, t, n) => Object(o.b)(Object(c.a)(e, [u.a]), {
+					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/unfriend"),
 						method: r.ab.POST,
 						data: {
@@ -717,7 +717,7 @@
 					}));
 					return d.ok
 				}, O = Object(i.a)(h.e), v = (e, t) => async (n, i, d) => {
-					const l = await ((e, t, n) => Object(o.b)(Object(c.a)(e, [u.a]), {
+					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/friend"),
 						method: r.ab.POST,
 						data: {
@@ -763,7 +763,7 @@
 					}
 					return l.ok
 				}, C = Object(i.a)(h.f), E = (e, t) => async (n, i, d) => {
-					const l = await ((e, t, n) => Object(o.b)(Object(c.a)(e, [u.a]), {
+					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/unfriend"),
 						method: r.ab.POST,
 						data: {
@@ -936,7 +936,7 @@
 						subredditName: i
 					} = e;
 					return async (e, a, o) => {
-						const c = await (e => Object(d.b)(Object(l.a)(e.context, [u.a]), {
+						const c = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 							endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/wiki/settings/").concat(e.wikiPageName),
 							method: r.ab.POST,
 							data: {
@@ -966,7 +966,7 @@
 						wikiPageName: i
 					} = e;
 					return async (e, a, c) => {
-						const m = await (e => Object(d.b)(Object(l.a)(e.context, [u.a]), {
+						const m = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 							endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/alloweditor/add"),
 							method: r.ab.POST,
 							data: {
@@ -1004,7 +1004,7 @@
 						wikiPageName: s
 					} = e;
 					return async (e, i, a) => {
-						const c = await (e => Object(d.b)(Object(l.a)(e.context, [u.a]), {
+						const c = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 							endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/alloweditor/del"),
 							method: r.ab.POST,
 							data: {
@@ -1050,7 +1050,7 @@
 				u = n("./src/lib/omitHeaders/index.ts"),
 				m = n("./src/reddit/constants/headers.ts"),
 				p = n("./src/reddit/helpers/wiki/wikiRevision.ts");
-			var b = (e, t) => Object(l.b)(Object(u.a)(e, [m.a]), {
+			var b = (e, t) => Object(l.a)(Object(u.a)(e, [m.a]), {
 				endpoint: "".concat(e.apiUrl, "/r/").concat(t.subredditName, "/api/wiki/hide"),
 				method: r.ab.POST,
 				data: {
@@ -1058,7 +1058,7 @@
 					revision: Object(p.b)(t.revisionId)
 				}
 			});
-			var h = (e, t) => Object(l.b)(Object(u.a)(e, [m.a]), {
+			var h = (e, t) => Object(l.a)(Object(u.a)(e, [m.a]), {
 				endpoint: "".concat(e.apiUrl, "/r/").concat(t.subredditName, "/api/wiki/revert"),
 				method: r.ab.POST,
 				data: {
@@ -3949,7 +3949,7 @@
 						className: _e.a.metaLine
 					}, s && !!r && o.a.createElement("span", {
 						className: _e.a.meta
-					}, Object(Ce.e)(r) ? Object(ue.c)(r.displayText || r.name) : Object(ue.b)(r.displayText || r.name)), o.a.createElement("span", {
+					}, Object(Ce.f)(r) ? Object(ue.c)(r.displayText || r.name) : Object(ue.b)(r.displayText || r.name)), o.a.createElement("span", {
 						className: _e.a.meta
 					}, Ne._({
 						"*": "{score} points",
@@ -6435,4 +6435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.1fe4620f5cbd3fe93b06.js.map
+//# sourceMappingURL=SubredditWiki.bf30e1f28f161002a737.js.map

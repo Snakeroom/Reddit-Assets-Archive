@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c9fa707f4dd519f2724d.js
-// Retrieved at 5/26/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.8ab94fb01e647269c866.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -98,7 +98,7 @@
 						m(!0), setTimeout(() => {
 							m(!1)
 						}, 10 * C.Cb);
-						const e = await (e => Object(E.b)(Object(O.a)(e, [j.a]), {
+						const e = await (e => Object(E.a)(Object(O.a)(e, [j.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/v1/generate_username.json"),
 							method: C.ab.GET
 						}))(t());
@@ -408,7 +408,7 @@
 				} = e;
 				const [f, v] = Object(s.useState)(b || ""), [N, x] = Object(s.useState)(!1), U = Object($.a)(), M = Object(s.useCallback)(async () => {
 					x(!0);
-					const e = await ((e, t) => Object(E.b)(Object(O.a)(e, [j.a]), {
+					const e = await ((e, t) => Object(E.a)(Object(O.a)(e, [j.a]), {
 						method: C.ab.POST,
 						endpoint: "".concat(e.apiUrl, "/api/update_name"),
 						data: {
@@ -820,4 +820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChangeUsernameModals.c9fa707f4dd519f2724d.js.map
+//# sourceMappingURL=ChangeUsernameModals.8ab94fb01e647269c866.js.map

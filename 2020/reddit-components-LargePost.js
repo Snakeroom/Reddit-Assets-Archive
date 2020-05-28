@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7770e8094f442a9d92e3.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2a279ed8640660498d27.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -1269,7 +1269,7 @@
 					getEventFactory: e => Object(x.f)(_.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: j.name,
-						type: Object(v.e)(j) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(v.f)(j) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: _.id,
 					small: !0
@@ -1463,7 +1463,7 @@
 					getEventFactory: e => Object(x.f)(N.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: R.name,
-						type: Object(g.e)(R) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(g.f)(R) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: N.id
 				}, "Subscribe"), L && r.a.createElement(h.a, {
@@ -1585,4 +1585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.7770e8094f442a9d92e3.js.map
+//# sourceMappingURL=reddit-components-LargePost.2a279ed8640660498d27.js.map

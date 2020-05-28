@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.50816d8c1e991d05c633.js
-// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.002e4fcbb9257a26a47c.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -4279,7 +4279,7 @@
 						className: Ne.a.metaLine
 					}, s && !!r && o.a.createElement("span", {
 						className: Ne.a.meta
-					}, Object(Oe.e)(r) ? Object(me.c)(r.displayText || r.name) : Object(me.b)(r.displayText || r.name)), o.a.createElement("span", {
+					}, Object(Oe.f)(r) ? Object(me.c)(r.displayText || r.name) : Object(me.b)(r.displayText || r.name)), o.a.createElement("span", {
 						className: Ne.a.meta
 					}, we._({
 						"*": "{score} points",
@@ -7489,4 +7489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.50816d8c1e991d05c633.js.map
+//# sourceMappingURL=Subreddit.002e4fcbb9257a26a47c.js.map

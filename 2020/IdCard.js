@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.c7bc6763f2d605127780.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.bca99c93f751424c71d5.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -670,7 +670,7 @@
 					subreddit: a
 				} = e;
 				switch (a.type) {
-					case g.c.Restricted:
+					case g.d.Restricted:
 						return o.a.createElement(w, {
 							className: t,
 							icon: o.a.createElement(m.a, {
@@ -683,7 +683,7 @@
 							description: Object(f.g)(r),
 							subreddit: a
 						});
-					case g.c.Private:
+					case g.d.Private:
 						return o.a.createElement(w, {
 							className: t,
 							icon: o.a.createElement(p.a, {
@@ -698,7 +698,7 @@
 							}),
 							subreddit: a
 						});
-					case g.c.EmployeesOnly:
+					case g.d.EmployeesOnly:
 						return o.a.createElement(w, {
 							className: t,
 							icon: o.a.createElement(u.a, {
@@ -2537,7 +2537,7 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/models/Subreddit/index.ts");
 			const r = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british"]),
-				o = new Set([s.c.Private]),
+				o = new Set([s.d.Private]),
 				i = e => !(!e || !e.name) && (!!r.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !o.has(e.type))
 		},
 		"./src/reddit/helpers/trackers/idCard.ts": function(e, t, n) {
@@ -2885,4 +2885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.c7bc6763f2d605127780.js.map
+//# sourceMappingURL=IdCard.bca99c93f751424c71d5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.3fd51e7ce9b8f1e1e9bb.js
-// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.da16280e3d20eb568125.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1652,7 +1652,7 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: P,
 						tooltipType: N
-					} = this.props, M = m && m.meta && m.meta.name === d.yb.COMMENTS, k = Object(p.a)(h), L = a === B.b.Left, H = h.authorIsContractor && !!P && P.type === D.c.EmployeesOnly, U = !s && !M, F = () => n.a.createElement(V, {
+					} = this.props, M = m && m.meta && m.meta.name === d.yb.COMMENTS, k = Object(p.a)(h), L = a === B.b.Left, H = h.authorIsContractor && !!P && P.type === D.d.EmployeesOnly, U = !s && !M, F = () => n.a.createElement(V, {
 						className: this.props.metaSeparatorClassName
 					}, "•"), q = n.a.createElement(n.a.Fragment, null, !k && n.a.createElement(z, {
 						style: {
@@ -2150,4 +2150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.3fd51e7ce9b8f1e1e9bb.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.da16280e3d20eb568125.js.map

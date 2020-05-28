@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3a72f70a53ad92df35fd.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.66d969ef5f1a0b6a4108.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -1325,7 +1325,7 @@
 					getEventFactory: e => Object(h.f)(j.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: E.name,
-						type: Object(f.e)(E) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(f.f)(E) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: j.id,
 					small: !0
@@ -1678,4 +1678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.3a72f70a53ad92df35fd.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.66d969ef5f1a0b6a4108.js.map

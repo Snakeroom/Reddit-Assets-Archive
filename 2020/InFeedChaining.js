@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.78db0e9bb6f66f5e5856.js
-// Retrieved at 5/18/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.a035b4f6826a5d1bfb09.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -490,7 +490,7 @@
 						onSubredditOrProfileClick: r,
 						shouldShowSubscribeButton: n,
 						subredditOrProfile: a
-					} = e, d = Object(p.e)(a) ? L.a.PROFILE : L.a.SUBREDDIT;
+					} = e, d = Object(p.f)(a) ? L.a.PROFILE : L.a.SUBREDDIT;
 					return i.a.createElement("div", {
 						className: Object(o.a)(R.a.header, s)
 					}, i.a.createElement(M.a, {
@@ -535,7 +535,7 @@
 				};
 			const Q = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
 				if (!e) return !1;
-				return (Object(p.e)(e) ? s : t).some(s => s.id === e.id)
+				return (Object(p.f)(e) ? s : t).some(s => s.id === e.id)
 			});
 			class Z extends i.a.Component {
 				constructor() {
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.78db0e9bb6f66f5e5856.js.map
+//# sourceMappingURL=InFeedChaining.a035b4f6826a5d1bfb09.js.map

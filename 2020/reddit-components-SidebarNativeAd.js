@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ee1cfb12b61357b23f3e.js
-// Retrieved at 5/26/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4f0382ecee2ea7ce1b42.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -966,7 +966,7 @@
 					getEventFactory: e => Object(v.f)(E.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: j.name,
-						type: Object(h.e)(j) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(h.f)(j) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
 					postId: E.id,
 					small: !0
@@ -1528,4 +1528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.ee1cfb12b61357b23f3e.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.4f0382ecee2ea7ce1b42.js.map

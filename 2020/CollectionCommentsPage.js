@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8b822e7cb69bc5a55898.js
-// Retrieved at 5/28/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3ae9d86e0133d6e6757f.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -350,7 +350,7 @@
 			var l = s("./src/lib/makeApiRequest/index.ts"),
 				m = s("./src/lib/omitHeaders/index.ts"),
 				p = s("./src/reddit/constants/headers.ts");
-			var u = (e, t, s, n, r) => Object(l.b)(Object(m.a)(e, [p.a]), {
+			var u = (e, t, s, n, r) => Object(l.a)(Object(m.a)(e, [p.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/event_post_time.json"),
 				method: o.ab.POST,
 				data: {
@@ -360,7 +360,7 @@
 					event_tz: r
 				}
 			});
-			var h = (e, t) => Object(l.b)(Object(m.a)(e, [p.a]), {
+			var h = (e, t) => Object(l.a)(Object(m.a)(e, [p.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/start_event_post.json"),
 					method: o.ab.POST,
 					data: {
@@ -535,7 +535,7 @@
 				text: e.markdown,
 				return_rtjson: !0
 			}))(e));
-			var b = (e, t) => Object(d.b)(Object(c.a)(e, [l.a]), {
+			var b = (e, t) => Object(d.a)(Object(c.a)(e, [l.a]), {
 					endpoint: Object(u.a)(Object(m.a)("".concat(e.apiUrl, "/api/editusertext"))),
 					method: i.ab.POST,
 					data: h(t)
@@ -1200,7 +1200,7 @@
 				let {
 					apiContext: a
 				} = r;
-				const i = await (async (e, t, s) => Object(g.b)(Object(x.a)(e, [f.a]), {
+				const i = await (async (e, t, s) => Object(g.a)(Object(x.a)(e, [f.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/set_suggested_sort/"),
 						method: c.ab.POST,
 						data: {
@@ -3529,7 +3529,7 @@
 						trackClick: H,
 						renderedInOverlay: V,
 						subredditType: U
-					} = e, G = !E && !n.isDeleted && !!u && u.length > 0, K = Object(w.a)(j.c.edit, n.id), z = Object(w.a)(j.c.replyToComment, n.id), q = Object(Z.a)(N), J = n.authorIsContractor && U === yt.c.EmployeesOnly, Q = n.isLocked, X = v && C && C.glowHexColor, Y = v && C && C.bubbleTreatmentAssetUrl, $ = v, ee = q && L, te = !E && !n.isDeleted && (P || y);
+					} = e, G = !E && !n.isDeleted && !!u && u.length > 0, K = Object(w.a)(j.c.edit, n.id), z = Object(w.a)(j.c.replyToComment, n.id), q = Object(Z.a)(N), J = n.authorIsContractor && U === yt.d.EmployeesOnly, Q = n.isLocked, X = v && C && C.glowHexColor, Y = v && C && C.bubbleTreatmentAssetUrl, $ = v, ee = q && L, te = !E && !n.isDeleted && (P || y);
 					return a.a.createElement(Vt, {
 						className: Object(c.a)("Comment ".concat(n.id), Tt.a.CommentWrapper, {
 							[Tt.a.highlightComment]: _ && $,
@@ -4710,7 +4710,7 @@
 						numberOfComments: b,
 						onClick: g,
 						subredditOrProfile: O
-					} = this.props, y = !(!O || Object(m.e)(O)), E = d && y && (b >= C && !h || !r) && !u, _ = E && !e, k = E ? x.a.TruncatedComments : "";
+					} = this.props, y = !(!O || Object(m.f)(O)), E = d && y && (b >= C && !h || !r) && !u, _ = E && !e, k = E ? x.a.TruncatedComments : "";
 					return o.a.createElement("div", {
 						onClick: g,
 						ref: a
@@ -6611,7 +6611,7 @@
 				})), {
 					className: m.a.lockIcon
 				}),
-				u = e => Object(d.e)(e) ? a.d.profile : a.d.subreddit;
+				u = e => Object(d.f)(e) ? a.d.profile : a.d.subreddit;
 			t.a = e => {
 				let {
 					subredditOrProfile: t
@@ -6860,7 +6860,7 @@
 					getEventFactory: e => Object(c.f)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: h.name,
-						type: Object(l.e)(h) ? d.a.PROFILE : d.a.SUBREDDIT
+						type: Object(l.f)(h) ? d.a.PROFILE : d.a.SUBREDDIT
 					},
 					postId: s.id
 				})), o.a.createElement(i.a, {
@@ -8750,7 +8750,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: n
-					} = this.props, o = t && Object(k.e)(t) && s ? Object(_.c)(Object(j.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, o = t && Object(k.f)(t) && s ? Object(_.c)(Object(j.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
 					return a.a.createElement(M, {
 						onClick: this.onClick,
 						className: S.a.container
@@ -9373,7 +9373,7 @@
 					getEventFactory: e => Object(g.f)(E.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: k.name,
-						type: Object(x.e)(k) ? h.a.PROFILE : h.a.SUBREDDIT
+						type: Object(x.f)(k) ? h.a.PROFILE : h.a.SUBREDDIT
 					},
 					postId: E.id,
 					small: !0
@@ -9671,7 +9671,7 @@
 							postId: s
 						});
 						if (!n) return !1;
-						const o = n.type === te.c.User;
+						const o = n.type === te.d.User;
 						return Object(me.s)(e, n.name, o)
 					}
 				}), (e, t) => {
@@ -9797,7 +9797,7 @@
 						toggleAddEventStartTimeModal: p,
 						toggleEditStartTimeModal: u,
 						userIsOp: h
-					} = e, b = e.currentUser && e.currentUser.isEmployee, g = Object(Z.a)(e.post), x = e.post.belongsTo.type === C.a.PROFILE || Object(te.d)(e.postSubredditAboutInfo), f = t && d.isGildable, v = Object($.a)(e.post);
+					} = e, b = e.currentUser && e.currentUser.isEmployee, g = Object(Z.a)(e.post), x = e.post.belongsTo.type === C.a.PROFILE || Object(te.e)(e.postSubredditAboutInfo), f = t && d.isGildable, v = Object($.a)(e.post);
 					return a.a.createElement("div", null, f && a.a.createElement(Te, {
 						className: this.getBreakpointClass(J.a.Gild),
 						displayText: n.fbt._("Give Award", null, {
@@ -10117,7 +10117,7 @@
 					getEventFactory: e => Object(g.f)(T.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: F.name,
-						type: Object(v.e)(F) ? h.a.PROFILE : h.a.SUBREDDIT
+						type: Object(v.f)(F) ? h.a.PROFILE : h.a.SUBREDDIT
 					},
 					postId: T.id
 				}, "Subscribe"), M && o.a.createElement(b.a, {
@@ -10537,7 +10537,7 @@
 					}
 				});
 			t.a = w(Object(i.i)(e => {
-				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.c.Public,
+				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.d.Public,
 					s = !!e.post && e.post.isCrosspostable && !e.post.isSponsored;
 				return r.a.createElement("div", {
 					className: e.className,
@@ -15998,7 +15998,7 @@
 						key: "event-post-id-".concat(i.id),
 						postId: this.state.commentNativeAdId,
 						isOverlay: a
-					}), this.renderCommentPanes())), m && !Object($.e)(m) && x.a.createElement(W.a, {
+					}), this.renderCommentPanes())), m && !Object($.f)(m) && x.a.createElement(W.a, {
 						contentContainerRef: this.state.layoutRef,
 						isOverlay: a,
 						post: i,
@@ -16246,7 +16246,7 @@
 							prefixedHeaderText: p.displayText,
 							subredditOrProfile: p,
 							url: p.url
-						}), !Object($.e)(p) && x.a.createElement(Re.a, {
+						}), !Object($.f)(p) && x.a.createElement(Re.a, {
 							disableFullscreen: !0,
 							homeUrl: p.url,
 							maxWidth: u,
@@ -16483,4 +16483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.8b822e7cb69bc5a55898.js.map
+//# sourceMappingURL=CollectionCommentsPage.3ae9d86e0133d6e6757f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.4fe01815aec72ad3993d.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.e1eed72e3f2a37faffae.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -89,7 +89,7 @@
 				O = o("./src/lib/omitHeaders/index.ts"),
 				R = o("./src/reddit/constants/headers.ts"),
 				p = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const j = (e, t) => Object(f.b)(Object(O.a)(e, [R.a]), {
+			const j = (e, t) => Object(f.a)(Object(O.a)(e, [R.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/modactions/removal_reasons/"),
 					method: s.ab.POST,
 					type: "json",
@@ -99,7 +99,7 @@
 						mod_note: t.modNote
 					}
 				}),
-				v = (e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
+				v = (e, t, o) => Object(f.a)(Object(O.a)(e, [R.a]), {
 					endpoint: Object(p.a)("".concat(e.apiUrl, "/api/v1/modactions/removal_").concat(o, "_message/")),
 					method: s.ab.POST,
 					type: "json",
@@ -124,7 +124,7 @@
 					} = n;
 					const d = o().subreddits.models[e].name;
 					t(C());
-					const r = await ((e, t) => Object(f.b)(Object(O.a)(e, [R.a]), {
+					const r = await ((e, t) => Object(f.a)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons.json"),
 						method: s.ab.GET
 					}))(a(), d);
@@ -138,7 +138,7 @@
 					} = d;
 					const c = a().subreddits.models[e].name;
 					o(M());
-					const i = await ((e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
+					const i = await ((e, t, o) => Object(f.a)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
 						method: s.ab.POST,
 						data: o
@@ -165,7 +165,7 @@
 					} = d;
 					const c = a().subreddits.models[e].name;
 					o(N());
-					const i = await ((e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
+					const i = await ((e, t, o) => Object(f.a)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(o.id),
 						method: s.ab.PUT,
 						data: {
@@ -188,7 +188,7 @@
 					} = d;
 					const c = a().subreddits.models[e].name;
 					o(q());
-					const i = await ((e, t, o) => Object(f.b)(Object(O.a)(e, [R.a]), {
+					const i = await ((e, t, o) => Object(f.a)(Object(O.a)(e, [R.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(o),
 						method: s.ab.DELETE
 					}))(r(), c, t);
@@ -390,4 +390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=removalReasonActions.4fe01815aec72ad3993d.js.map
+//# sourceMappingURL=removalReasonActions.e1eed72e3f2a37faffae.js.map

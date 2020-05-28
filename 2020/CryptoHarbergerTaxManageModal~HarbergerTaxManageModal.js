@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.5304b7201b81d026bcf6.js
-// Retrieved at 5/5/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.38b474f6fc33e25fb341.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -549,7 +549,7 @@
 				a = n("./src/lib/makeApiRequest/index.ts"),
 				o = n("./src/lib/omitHeaders/index.ts"),
 				d = n("./src/reddit/constants/headers.ts");
-			const c = async (e, t, n, c, i) => Object(a.b)(Object(o.a)(e, [d.a]), {
+			const c = async (e, t, n, c, i) => Object(a.a)(Object(o.a)(e, [d.a]), {
 				endpoint: "".concat(r.a.metaUrl, "/communities/").concat(t, "/upload-lease"),
 				method: s.ab.POST,
 				data: {
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.5304b7201b81d026bcf6.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.38b474f6fc33e25fb341.js.map

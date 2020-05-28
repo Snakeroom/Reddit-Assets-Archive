@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.aab793e6b722174fc4b5.js
-// Retrieved at 5/14/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3ec3575cf5e74f131d16.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -1012,7 +1012,7 @@
 				k = i("./src/lib/makeApiRequest/index.ts"),
 				g = i("./src/lib/omitHeaders/index.ts"),
 				f = i("./src/reddit/constants/headers.ts");
-			var x = e => Object(k.b)(Object(g.a)(e.context, [f.a]), {
+			var x = e => Object(k.a)(Object(g.a)(e.context, [f.a]), {
 					endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/edit"),
 					method: b.ab.POST,
 					data: {
@@ -1920,4 +1920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.aab793e6b722174fc4b5.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.3ec3575cf5e74f131d16.js.map

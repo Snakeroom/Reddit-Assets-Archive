@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.839f5e0a9aa96fb6b3f7.js
-// Retrieved at 5/14/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.8fda7d93351768b7b4ca.js
+// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -33,7 +33,7 @@
 				u = o("./src/lib/makeApiRequest/index.ts"),
 				p = o("./src/lib/omitHeaders/index.ts"),
 				b = o("./src/reddit/constants/headers.ts");
-			var O = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var O = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/add_post_to_collection.json"),
 				method: a.ab.POST,
 				data: {
@@ -41,7 +41,7 @@
 					link_fullname: o
 				}
 			});
-			var m = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var m = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/create_collection.json"),
 				method: a.ab.POST,
 				data: {
@@ -49,7 +49,7 @@
 					sr_fullname: o
 				}
 			});
-			var j = (t, e) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var j = (t, e) => Object(u.a)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/delete_collection.json"),
 					method: a.ab.POST,
 					data: {
@@ -57,11 +57,11 @@
 					}
 				}),
 				f = o("./src/config.ts");
-			var _ = (t, e) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var _ = (t, e) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(f.a.gatewayUrl, "/desktopapi/v1/subreddit_collections/").concat(e),
 				method: a.ab.GET
 			});
-			var C = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var C = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/remove_post_in_collection.json"),
 				method: a.ab.POST,
 				data: {
@@ -69,7 +69,7 @@
 					link_fullname: o
 				}
 			});
-			var I = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var I = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_title.json"),
 				method: a.ab.POST,
 				data: {
@@ -77,7 +77,7 @@
 					title: o
 				}
 			});
-			var w = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var w = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/reorder_collection.json"),
 				method: a.ab.POST,
 				data: {
@@ -85,7 +85,7 @@
 					link_ids: o.join(",")
 				}
 			});
-			var k = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var k = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_description.json"),
 				method: a.ab.POST,
 				data: {
@@ -93,7 +93,7 @@
 					description: o
 				}
 			});
-			var v = (t, e, o) => Object(u.b)(Object(p.a)(t, [b.a]), {
+			var v = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_display_layout.json"),
 					method: a.ab.POST,
 					data: {
@@ -732,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.839f5e0a9aa96fb6b3f7.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a.8fda7d93351768b7b4ca.js.map
