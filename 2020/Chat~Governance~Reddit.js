@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3e4a3371b5d11ceeb8e6.js
-// Retrieved at 5/28/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a217e4a7c576b83a3c3d.js
+// Retrieved at 5/28/2020, 12:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11019,14 +11019,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("3e43549-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5066501-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3e43549-production",
+						release: "5066501-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11388,7 +11388,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3e43549-production",
+							releaseClient: "5066501-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -15748,18 +15748,19 @@
 				l = i("./src/reddit/selectors/telemetry.ts"),
 				a = i("./src/telemetry/index.ts"),
 				u = i("./src/telemetry/models/Event.ts");
-			const c = (e, t, i) => {
+			const c = (e, t, i, n) => {
 					Object(a.a)(Object.assign({
-						source: u.e.Experiment,
 						action: u.c.Expose,
-						noun: u.d.UserId,
 						actionInfo: void 0,
 						app: l.app(),
-						experiment: t,
+						experiment: i,
+						noun: u.d.UserId,
 						referrer: void 0,
+						request: t,
 						session: void 0,
+						source: u.e.Experiment,
 						user: e
-					}, i))
+					}, n))
 				},
 				m = (e, t) => {
 					const i = l.request(e),
@@ -15830,43 +15831,44 @@
 					}
 					return a
 				}),
-				y = Object(n.a)(o.c, o.b, e => l.user(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), _, (e, t) => t.experimentName, (function(e, t, i, n) {
-					let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-						s = arguments.length > 5 ? arguments[5] : void 0,
-						o = arguments.length > 6 ? arguments[6] : void 0;
-					if (!s) return;
-					if (!e) return t && !1 !== n && g[o] !== t && !b.includes(o) && (c(i, {
+				y = Object(n.a)(o.c, o.b, e => l.user(e), e => l.request(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), _, (e, t) => t.experimentName, (function(e, t, i, n, r) {
+					let s = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : {},
+						o = arguments.length > 6 ? arguments[6] : void 0,
+						d = arguments.length > 7 ? arguments[7] : void 0;
+					if (!o) return;
+					if (!e) return t && !1 !== r && g[d] !== t && !b.includes(d) && (c(i, n, {
 						id: -1,
 						isOverride: !0,
-						name: o,
+						name: d,
 						variant: t,
 						version: "-1"
-					}, r), g[o] = t), t;
-					const d = e.name,
+					}, s), g[d] = t), t;
+					const l = e.name,
 						{
-							id: l
+							id: a
 						} = e,
-						a = void 0 !== t,
-						u = a ? t : e.variant;
-					if (u) {
-						const t = -1 === l,
-							s = g[d] === u;
-						t || s || !1 === n || b.includes(o) || (c(i, Object.assign({}, e, {
-							isOverride: a,
-							variant: u
-						}), r), g[d] = u)
+						u = void 0 !== t,
+						m = u ? t : e.variant;
+					if (m) {
+						const t = -1 === a,
+							o = g[l] === m;
+						t || o || !1 === r || b.includes(d) || (c(i, n, Object.assign({}, e, {
+							isOverride: u,
+							variant: m
+						}), s), g[l] = m)
 					}
-					return a ? t : u
+					return u ? t : m
 				})),
 				v = (e, t) => {
 					const i = l.user(e),
-						n = Object(o.c)(e, t),
-						r = Object(o.b)(e, t),
-						s = void 0 !== r;
-					if (n) {
-						const e = s ? r : n.variant;
-						e && c(i, Object.assign({}, n, {
-							isOverride: s,
+						n = l.request(e),
+						r = Object(o.c)(e, t),
+						s = Object(o.b)(e, t),
+						d = void 0 !== s;
+					if (r) {
+						const e = d ? s : r.variant;
+						e && c(i, n, Object.assign({}, r, {
+							isOverride: d,
 							variant: e
 						}), {})
 					}
@@ -29055,4 +29057,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.3e4a3371b5d11ceeb8e6.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.a217e4a7c576b83a3c3d.js.map
