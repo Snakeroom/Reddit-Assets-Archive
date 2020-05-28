@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4d4e04794c28aeb14307.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5d05ba134fa60fdfbcbf.js
+// Retrieved at 5/28/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2068,23 +2068,25 @@
 					const {
 						frontpageSignupVariant: e,
 						isResponsiveSettingsEnabled: t,
-						path: s
+						pageLayer: s,
+						path: n
 					} = this.props, {
-						isSSOLinkActionFailedModal: n
-					} = this.state, a = Object(K.c)(e) || Object(K.d)(e), r = s === U.b.LinkAppleSSO || s === U.b.LinkGoogleSSO || s === U.b.UnlinkAppleSSO || s === U.b.UnlinkGoogleSSO, o = Object(g.a)({
-						[xs.a.small]: a,
-						[xs.a.ssoConfirmPassword]: r,
-						[xs.a.linkActionSSOFail]: n,
+						isSSOLinkActionFailedModal: a
+					} = this.state, r = Object(K.c)(e) || Object(K.d)(e), o = n === U.b.LinkAppleSSO || n === U.b.LinkGoogleSSO || n === U.b.UnlinkAppleSSO || n === U.b.UnlinkGoogleSSO, i = Object(g.a)({
+						[xs.a.small]: r,
+						[xs.a.ssoConfirmPassword]: o,
+						[xs.a.linkActionSSOFail]: a,
 						[xs.a.mResponsive]: t
-					}), i = !a && !n && !t;
+					}), c = !r && !a && !t;
 					return m.a.createElement(Os, null, m.a.createElement(Es, {
-						className: o
+						className: i
 					}, m.a.createElement(ie, {
 						onClose: this.closeModal,
 						onSSOLinkActionFail: this.handleSSOLinkActionFail,
 						onSubscriptionsChanged: this.updateSubscriptions,
-						path: s,
-						showCloseButton: i
+						pageLayer: s,
+						path: n,
+						showCloseButton: c
 					})))
 				}
 			}
@@ -12818,4 +12820,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.4d4e04794c28aeb14307.js.map
+//# sourceMappingURL=Reddit.5d05ba134fa60fdfbcbf.js.map
