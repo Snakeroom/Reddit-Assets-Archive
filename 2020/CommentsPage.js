@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.ee2866f0ea21f961e060.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.661b7bdb3f0f918d0e5e.js
+// Retrieved at 5/28/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -682,7 +682,7 @@
 						this.isWithinLoadingDistance = !0, this.refreshedOnce || (this.frame && l.e(this.frame, {
 							viewable: e.intersectionRatio > .5
 						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshInterval && e.isIntersecting ? this.refreshInterval = window.setInterval(() => {
-							this.refresh(this.props)
+							window.document.hasFocus() && this.props.isRefreshableAd && this.refresh(this.props)
 						}, a.a.dfpRefreshSlotInterval) : this.refreshInterval && !e.isIntersecting && (window.clearInterval(this.refreshInterval), this.refreshInterval = null))
 					})
 				}
@@ -10650,13 +10650,9 @@
 				P = y.a.wrapped(g.a, "ThemedWidget", O.a),
 				I = y.a.div("SidebarAdPlaceholder", O.a),
 				S = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === p.a.dfpRefreshSlotTestSubreddit && e === E.c.BELOW_THE_FOLD),
-				T = (e, t, s, n, o) => {
-					if (S(e, t, s)) {
-						const t = "sidebar-".concat(e, "-refresh");
-						return null != o ? "".concat(t, "-").concat(o) : t
-					}
-					let r = "";
-					return n && (r += "overlay-"), r += "sidebar-".concat(e), null != o && (r += "-".concat(o)), r
+				T = (e, t, s) => {
+					let n = "";
+					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
 				},
 				N = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.A)(e.media) && e.media.content)),
 				M = e => !!e && e.isBlank,
@@ -10749,7 +10745,7 @@
 						placement: d,
 						placementIndex: r
 					}), c.a.createElement(w, {
-						id: T(d, x, a, o, r),
+						id: T(d, o, r),
 						isRefreshableAd: S(d, x, a),
 						sizes: l,
 						placement: d,
@@ -16414,4 +16410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.ee2866f0ea21f961e060.js.map
+//# sourceMappingURL=CommentsPage.661b7bdb3f0f918d0e5e.js.map

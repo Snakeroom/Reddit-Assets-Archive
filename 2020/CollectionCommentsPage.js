@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.68e1e7f6dcf3871a4359.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8b822e7cb69bc5a55898.js
+// Retrieved at 5/28/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -682,7 +682,7 @@
 						this.isWithinLoadingDistance = !0, this.refreshedOnce || (this.frame && l.e(this.frame, {
 							viewable: e.intersectionRatio > .5
 						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshInterval && e.isIntersecting ? this.refreshInterval = window.setInterval(() => {
-							this.refresh(this.props)
+							window.document.hasFocus() && this.props.isRefreshableAd && this.refresh(this.props)
 						}, i.a.dfpRefreshSlotInterval) : this.refreshInterval && !e.isIntersecting && (window.clearInterval(this.refreshInterval), this.refreshInterval = null))
 					})
 				}
@@ -10650,13 +10650,9 @@
 				P = E.a.wrapped(g.a, "ThemedWidget", O.a),
 				I = E.a.div("SidebarAdPlaceholder", O.a),
 				S = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === p.a.dfpRefreshSlotTestSubreddit && e === y.c.BELOW_THE_FOLD),
-				T = (e, t, s, n, o) => {
-					if (S(e, t, s)) {
-						const t = "sidebar-".concat(e, "-refresh");
-						return null != o ? "".concat(t, "-").concat(o) : t
-					}
-					let r = "";
-					return n && (r += "overlay-"), r += "sidebar-".concat(e), null != o && (r += "-".concat(o)), r
+				T = (e, t, s) => {
+					let n = "";
+					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
 				},
 				N = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(f.A)(e.media) && e.media.content)),
 				M = e => !!e && e.isBlank,
@@ -10749,7 +10745,7 @@
 						placement: d,
 						placementIndex: r
 					}), c.a.createElement(w, {
-						id: T(d, x, i, o, r),
+						id: T(d, o, r),
 						isRefreshableAd: S(d, x, i),
 						sizes: l,
 						placement: d,
@@ -16487,4 +16483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.68e1e7f6dcf3871a4359.js.map
+//# sourceMappingURL=CollectionCommentsPage.8b822e7cb69bc5a55898.js.map

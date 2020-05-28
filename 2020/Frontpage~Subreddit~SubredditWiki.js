@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.1d6c2b6f41022a7f848c.js
-// Retrieved at 5/27/2020, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.ff6125d46a07726bc645.js
+// Retrieved at 5/28/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -77,7 +77,7 @@
 						this.isWithinLoadingDistance = !0, this.refreshedOnce || (this.frame && l.e(this.frame, {
 							viewable: e.intersectionRatio > .5
 						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshInterval && e.isIntersecting ? this.refreshInterval = window.setInterval(() => {
-							this.refresh(this.props)
+							window.document.hasFocus() && this.props.isRefreshableAd && this.refresh(this.props)
 						}, o.a.dfpRefreshSlotInterval) : this.refreshInterval && !e.isIntersecting && (window.clearInterval(this.refreshInterval), this.refreshInterval = null))
 					})
 				}
@@ -280,13 +280,9 @@
 				B = _.a.wrapped(f.a, "ThemedWidget", S.a),
 				w = _.a.div("SidebarAdPlaceholder", S.a),
 				A = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === u.a.dfpRefreshSlotTestSubreddit && e === O.c.BELOW_THE_FOLD),
-				I = (e, t, s, n, r) => {
-					if (A(e, t, s)) {
-						const t = "sidebar-".concat(e, "-refresh");
-						return null != r ? "".concat(t, "-").concat(r) : t
-					}
-					let a = "";
-					return n && (a += "overlay-"), a += "sidebar-".concat(e), null != r && (a += "-".concat(r)), a
+				I = (e, t, s) => {
+					let n = "";
+					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
 				},
 				k = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(y.A)(e.media) && e.media.content)),
 				L = e => !!e && e.isBlank,
@@ -379,7 +375,7 @@
 						placement: c,
 						placementIndex: a
 					}), d.a.createElement(j, {
-						id: I(c, g, o, r, a),
+						id: I(c, r, a),
 						isRefreshableAd: A(c, g, o),
 						sizes: l,
 						placement: c,
@@ -1050,4 +1046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.1d6c2b6f41022a7f848c.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.ff6125d46a07726bc645.js.map
