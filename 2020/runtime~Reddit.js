@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4bcef9aee2e422f5ce02.js
-// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.dcb99fba08817c8ec073.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -214,6 +214,7 @@
 			LiveVideoPlayer: 1,
 			AwardCreationModal: 1,
 			"reddit-components-Wiki-ModHubWikiManagement": 1,
+			"reddit-components-ModHub-ChatSettings": 1,
 			"reddit-components-ModHub-PostRequirements": 1,
 			"reddit-components-ModHub-TrafficStats": 1,
 			"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": 1,
@@ -450,6 +451,7 @@
 					AwardCreationModal: "AwardCreationModal",
 					"reddit-components-ModHub-Content-ModQueue": "reddit-components-ModHub-Content-ModQueue",
 					"reddit-components-Wiki-ModHubWikiManagement": "reddit-components-Wiki-ModHubWikiManagement",
+					"reddit-components-ModHub-ChatSettings": "reddit-components-ModHub-ChatSettings",
 					"reddit-components-ModHub-PostRequirements": "reddit-components-ModHub-PostRequirements",
 					"reddit-components-ModHub-TrafficStats": "reddit-components-ModHub-TrafficStats",
 					"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement",
@@ -558,7 +560,7 @@
 					"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "31d6cfe0d16ae931b73c",
 					ModerationPages: "5edeb474633714ee4c30",
 					"vendors~PostCreation~RichTextEditor": "31d6cfe0d16ae931b73c",
-					PostCreation: "0ce3bf7a38bdb4e9799c",
+					PostCreation: "6a28ca824b79b1962591",
 					"vendors~Multireddit": "31d6cfe0d16ae931b73c",
 					"Multireddit~reddit-components-AdHocMultiredditSidebar": "fa7fcae64d93c173a51e",
 					Multireddit: "00ef8079cb3da64660eb",
@@ -683,7 +685,7 @@
 					removalReasonActions: "31d6cfe0d16ae931b73c",
 					schedulePickerModal: "6f502202fa26aec4d2d5",
 					ChatMessageInput: "f98c33f4180b5140ee82",
-					RichTextEditor: "cb68af11ce73c68a223f",
+					RichTextEditor: "46affceb134fab1bf7ea",
 					EconomicsEntryPointsCommentFlatlistSupportCTA: "bfc48acb1f4fe6d70ea6",
 					EconomicsEntryPointsPostFlatlistSupportCTA: "d916b7b05a78e157cb1f",
 					LiveVideoPlayer: "dd4c3eaf3d1ef7024efa",
@@ -691,6 +693,7 @@
 					AwardCreationModal: "e34b2c25c48280e61dff",
 					"reddit-components-ModHub-Content-ModQueue": "31d6cfe0d16ae931b73c",
 					"reddit-components-Wiki-ModHubWikiManagement": "275ecedc9e2170cf64ed",
+					"reddit-components-ModHub-ChatSettings": "9e6f2a419255f811ccee",
 					"reddit-components-ModHub-PostRequirements": "576fe8560828cafd5ee1",
 					"reddit-components-ModHub-TrafficStats": "eabcd9b81b2b2cc6a731",
 					"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "2d3490434704a122789b",
@@ -960,6 +963,7 @@
 						AwardCreationModal: "AwardCreationModal",
 						"reddit-components-ModHub-Content-ModQueue": "reddit-components-ModHub-Content-ModQueue",
 						"reddit-components-Wiki-ModHubWikiManagement": "reddit-components-Wiki-ModHubWikiManagement",
+						"reddit-components-ModHub-ChatSettings": "reddit-components-ModHub-ChatSettings",
 						"reddit-components-ModHub-PostRequirements": "reddit-components-ModHub-PostRequirements",
 						"reddit-components-ModHub-TrafficStats": "reddit-components-ModHub-TrafficStats",
 						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement",
@@ -992,7 +996,7 @@
 						ChangeUsernameTooltip: "163dcfafbc3dfb5229c7",
 						Coins: "03958e7004fa699dfe6d",
 						CoinsMobile: "4730a229c76c61dc3ec3",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2": "78556985dfe355a4fc46",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2": "a65bc5f0ad56e50003a3",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac": "fd3cbe68e66053e75264",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "8fda7d93351768b7b4ca",
 						PostDraft: "c0eb5f38de1aff34eaff",
@@ -1009,7 +1013,7 @@
 						Topic: "45b53318a56219430c79",
 						ContributorRequestPendingModal: "a0d2e3d05ef85237288d",
 						ContributorRequestRequestModal: "4fdc69841c68579d6bec",
-						"CrowdControlModal~ProfileModeration~Settings~SubredditCreation": "36793317ebdbd36b9799",
+						"CrowdControlModal~ProfileModeration~Settings~SubredditCreation": "e53a2137428a4b9720e1",
 						CrowdControlModal: "a38b070f50fd6213e994",
 						ProfileModeration: "be74884cb70672cd3aa5",
 						"SubredditCreation~SubredditInlineEditing": "338ca48caffb9503dd08",
@@ -1061,14 +1065,14 @@
 						RedesignChat: "21c2668f9649ac6d7ccc",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit": "0fbb841463155b07b288",
 						Subreddit: "c10bbfb31c17041ce50b",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42": "6934a40f6b9e425d8fa1",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42": "6036f686a3d094a9f469",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "d80fd9b6476dca227a47",
 						CollectionCommentsPage: "d541fe30dbc87dfbe6e0",
 						CommentsPage: "9ff68add380c552facf1",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "febb84e7692b724cdf36",
-						ModerationPages: "2c6d9c40a158a7720765",
+						ModerationPages: "db62415ebbd31c1e5abc",
 						"vendors~PostCreation~RichTextEditor": "c5d36f035bdc13a829ea",
-						PostCreation: "862bd9bbd6953775badb",
+						PostCreation: "359d9425d9dd0a950479",
 						"vendors~Multireddit": "ed2022bd9feff50ce623",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "5e68027441cc31fc8c89",
 						Multireddit: "eec1c2437d4bce4cd25e",
@@ -1108,7 +1112,7 @@
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "84646860bf68da9f046f",
 						"ChatMessageInput~PublicAccessNetwork": "d265735a407859eb5006",
 						"LiveVideoPlayer~PublicAccessNetwork": "81087a7f68d04b812a0e",
-						PublicAccessNetwork: "9b87a2fafb1f62bf599d",
+						PublicAccessNetwork: "981b5cfbc499a15c8127",
 						"vendors~ModListing": "da8d7182357e33514153",
 						ModListing: "6ddcbe7788d260984f7d",
 						"vendors~ModQueuePages": "b6ea725bcfc100d1dc90",
@@ -1142,7 +1146,7 @@
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "2921da85fab4f919eee7",
 						"reddit-components-InFeedPostCreation": "d91941ef86fbb8e48fbb",
 						"reddit-components-TabBadger-Component": "92ad5ab0b295d30a01f3",
-						RpanListingUnit: "6916daad5dc766855bca",
+						RpanListingUnit: "4bc6350c695df9c7a7b1",
 						GovernanceVotingBanner: "7e1f0d207d203ed6f7a6",
 						StructuredStyles: "56cc81b40954a6bcac07",
 						CustomBadgeHovercardTooltip: "b2a69e423f641430c225",
@@ -1193,7 +1197,7 @@
 						removalReasonActions: "e1eed72e3f2a37faffae",
 						schedulePickerModal: "37cd3bfc84df6f1a47b8",
 						ChatMessageInput: "47fbaf4931e29bdf4a29",
-						RichTextEditor: "dbdacc9810ac1735f7f6",
+						RichTextEditor: "f231a9cf5e4fb0d9455d",
 						EconomicsEntryPointsCommentFlatlistSupportCTA: "5e99e8b5eb7b8d0c56af",
 						EconomicsEntryPointsPostFlatlistSupportCTA: "73734ddcb9b2bb02a351",
 						LiveVideoPlayer: "1b392323c3936d4b34e3",
@@ -1201,6 +1205,7 @@
 						AwardCreationModal: "6155390ad5dec0668e5d",
 						"reddit-components-ModHub-Content-ModQueue": "52414601533f706a59fa",
 						"reddit-components-Wiki-ModHubWikiManagement": "82571d6626e065aaa90e",
+						"reddit-components-ModHub-ChatSettings": "30d223dbb00d1ce0b475",
 						"reddit-components-ModHub-PostRequirements": "2ccd76ce705682a5de0f",
 						"reddit-components-ModHub-TrafficStats": "9ae5ae465e62ed76c75f",
 						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "76c1eda120d6c7da939d",
@@ -1287,4 +1292,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.4bcef9aee2e422f5ce02.js.map
+//# sourceMappingURL=runtime~Reddit.dcb99fba08817c8ec073.js.map

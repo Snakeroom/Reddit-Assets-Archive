@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.862bd9bbd6953775badb.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.359d9425d9dd0a950479.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -21305,7 +21305,7 @@
 			t.a = e => s.a.createElement("button", {
 				"aria-checked": e.on,
 				className: Object(r.a)(a.a.toggleSwitch, e.className, {
-					[a.a.mActive]: e.on && !e.disabled,
+					[a.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
 					[a.a.mDisabled]: e.disabled
 				}),
 				style: e.on && !e.disabled && e.activeColorOverride ? {
@@ -30291,4 +30291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.862bd9bbd6953775badb.js.map
+//# sourceMappingURL=PostCreation.359d9425d9dd0a950479.js.map

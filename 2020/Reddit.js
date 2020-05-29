@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4a1a29d0564cc4685850.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.cf90e03f78c188bf64b2.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -8805,7 +8805,7 @@
 			t.a = e => a.a.createElement("button", {
 				"aria-checked": e.on,
 				className: Object(r.a)(i.a.toggleSwitch, e.className, {
-					[i.a.mActive]: e.on && !e.disabled,
+					[i.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
 					[i.a.mDisabled]: e.disabled
 				}),
 				style: e.on && !e.disabled && e.activeColorOverride ? {
@@ -12820,4 +12820,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.4a1a29d0564cc4685850.js.map
+//# sourceMappingURL=Reddit.cf90e03f78c188bf64b2.js.map

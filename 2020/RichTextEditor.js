@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.dbdacc9810ac1735f7f6.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f231a9cf5e4fb0d9455d.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2473,7 +2473,7 @@
 			t.a = e => s.a.createElement("button", {
 				"aria-checked": e.on,
 				className: Object(r.a)(i.a.toggleSwitch, e.className, {
-					[i.a.mActive]: e.on && !e.disabled,
+					[i.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
 					[i.a.mDisabled]: e.disabled
 				}),
 				style: e.on && !e.disabled && e.activeColorOverride ? {
@@ -2809,4 +2809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.dbdacc9810ac1735f7f6.js.map
+//# sourceMappingURL=RichTextEditor.f231a9cf5e4fb0d9455d.js.map

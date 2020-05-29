@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.36793317ebdbd36b9799.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.e53a2137428a4b9720e1.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal~ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -365,6 +365,7 @@
 					text: e.tooltip
 				}), r.a.createElement(k.a, {
 					on: e.on,
+					forceOn: e.forceOn,
 					onToggle: e.onClick,
 					disabled: e.disabled
 				})))),
@@ -1291,4 +1292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.36793317ebdbd36b9799.js.map
+//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.e53a2137428a4b9720e1.js.map

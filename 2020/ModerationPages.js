@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2c6d9c40a158a7720765.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.db62415ebbd31c1e5abc.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1136,7 +1136,7 @@
 		"./src/reddit/actions/pages/moderationPages/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "moderationPageRequested", (function() {
-				return ie
+				return de
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/react-router-redux/es/index.js"),
@@ -1196,65 +1196,66 @@
 					}
 				};
 			var j = s("./src/reddit/actions/modQueue/index.ts"),
-				w = s("./src/reddit/actions/pages/subreddit.ts"),
-				S = s("./src/reddit/actions/pages/subredditWiki/index.ts"),
-				I = s("./src/reddit/actions/platform.ts"),
-				N = s("./src/reddit/actions/postRequirements/index.ts"),
-				T = s("./src/reddit/actions/removalReasons/index.ts"),
-				P = s("./src/reddit/actions/streaming/modSettings.ts"),
-				M = s("./src/reddit/actions/subreddit.ts"),
-				R = s("./src/reddit/actions/subredditModeration.ts"),
-				L = s("./src/reddit/actions/subredditSettings.ts"),
-				A = s("./src/reddit/actions/tags/index.ts"),
-				F = s("./node_modules/fbt/lib/FbtPublic.js"),
-				D = s("./src/reddit/actions/toaster.ts"),
-				B = s("./src/reddit/actions/trafficStats/constants.ts"),
-				U = s("./src/graphql/operations/FetchSubredditTrafficStats.json"),
-				H = s("./src/lib/makeGqlRequest/index.ts");
+				w = s("./src/reddit/actions/pages/chatSettings.ts"),
+				S = s("./src/reddit/actions/pages/subreddit.ts"),
+				I = s("./src/reddit/actions/pages/subredditWiki/index.ts"),
+				N = s("./src/reddit/actions/platform.ts"),
+				T = s("./src/reddit/actions/postRequirements/index.ts"),
+				P = s("./src/reddit/actions/removalReasons/index.ts"),
+				M = s("./src/reddit/actions/streaming/modSettings.ts"),
+				R = s("./src/reddit/actions/subreddit.ts"),
+				L = s("./src/reddit/actions/subredditModeration.ts"),
+				A = s("./src/reddit/actions/subredditSettings.ts"),
+				F = s("./src/reddit/actions/tags/index.ts"),
+				D = s("./node_modules/fbt/lib/FbtPublic.js"),
+				B = s("./src/reddit/actions/toaster.ts"),
+				U = s("./src/reddit/actions/trafficStats/constants.ts"),
+				H = s("./src/graphql/operations/FetchSubredditTrafficStats.json"),
+				W = s("./src/lib/makeGqlRequest/index.ts");
 			s("./node_modules/core-js/modules/es6.array.sort.js");
-			var W = s("./node_modules/lodash/forEach.js"),
-				q = s.n(W),
-				V = s("./src/reddit/helpers/graphql/helpers.ts"),
-				G = s("./src/reddit/models/TrafficStats/index.ts");
-			const K = e => ({
+			var q = s("./node_modules/lodash/forEach.js"),
+				V = s.n(q),
+				G = s("./src/reddit/helpers/graphql/helpers.ts"),
+				K = s("./src/reddit/models/TrafficStats/index.ts");
+			const z = e => ({
 					desktop: new Array(e).fill(0),
 					oldReddit: new Array(e).fill(0),
 					mWeb: new Array(e).fill(0),
 					apps: new Array(e).fill(0),
 					total: new Array(e).fill(0)
 				}),
-				z = (e, t) => {
-					return Object(V.d)(e.startsAt) > Object(V.d)(t.startsAt) ? 1 : -1
+				Q = (e, t) => {
+					return Object(G.d)(e.startsAt) > Object(G.d)(t.startsAt) ? 1 : -1
 				},
-				Q = (e, t, s) => {
+				J = (e, t, s) => {
 					const n = {
-							pageViews: K(t),
-							uniqueUsers: K(t)
+							pageViews: z(t),
+							uniqueUsers: z(t)
 						},
-						o = Object(V.d)(e[0].startsAt);
+						o = Object(G.d)(e[0].startsAt);
 					return e.map(e => {
-						const a = Object(V.d)(e.startsAt),
+						const a = Object(G.d)(e.startsAt),
 							r = new Date(a),
-							i = t === G.c ? r.getMonth() : Math.round((a - o) / s) % t,
-							d = G.d[e.client];
+							i = t === K.c ? r.getMonth() : Math.round((a - o) / s) % t,
+							d = K.d[e.client];
 						n.pageViews[d][i] += e.pageViews, n.uniqueUsers[d][i] += e.uniqueUsers
 					}), n
 				};
-			var J = s("./src/reddit/models/Toast/index.ts");
-			const X = Object(x.a)(B.b),
-				Z = Object(x.a)(B.c),
-				Y = Object(x.a)(B.a),
-				$ = e => async (t, s, n) => {
+			var X = s("./src/reddit/models/Toast/index.ts");
+			const Z = Object(x.a)(U.b),
+				Y = Object(x.a)(U.c),
+				$ = Object(x.a)(U.a),
+				ee = e => async (t, s, n) => {
 					let {
 						gqlContext: o
 					} = n;
 					const r = Object(_.Q)(s(), {
 						subredditId: e
 					}).name;
-					t(Z({
+					t(Y({
 						subredditId: e
 					}));
-					const i = await ((e, t) => Object(H.a)(e, Object.assign({}, U, {
+					const i = await ((e, t) => Object(W.a)(e, Object.assign({}, H, {
 						variables: t
 					})))(o(), {
 						subredditName: r
@@ -1263,13 +1264,13 @@
 						const s = i.body.data.subreddit.moderation;
 						if (s && s.trafficStats) {
 							const n = (e => {
-								const t = q()(e, (e, t) => e.sort(z)),
+								const t = V()(e, (e, t) => e.sort(Q)),
 									s = t.subscriptionData,
 									n = s.map(e => e.subscribers),
 									o = s.map(e => e.unsubscribers),
-									r = Q(t.hourStats, G.b, a.H),
-									i = Q(t.dayStats, G.a, a.v),
-									d = Q(t.monthStats, G.c, a.cb);
+									r = J(t.hourStats, K.b, a.H),
+									i = J(t.dayStats, K.a, a.v),
+									d = J(t.monthStats, K.c, a.cb);
 								return {
 									pageViews: {
 										byHour: r.pageViews,
@@ -1285,29 +1286,29 @@
 									unsubscribers: o
 								}
 							})(s.trafficStats);
-							t(X({
+							t(Z({
 								subredditId: e,
 								trafficStats: n
 							}))
 						}
-					} else t(Y({
+					} else t($({
 						subredditId: e
-					})), t(D.e({
+					})), t(B.e({
 						id: "error-block-trafficStats",
-						kind: J.b.Error,
-						text: F.fbt._("Try again later", null, {
+						kind: X.b.Error,
+						text: D.fbt._("Try again later", null, {
 							hk: "41Goel"
 						})
 					}))
 				};
-			var ee = s("./src/reddit/models/ModQueue/index.ts"),
-				te = s("./src/reddit/models/ScheduledPost/index.ts"),
-				se = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				ne = s("./src/reddit/selectors/platform.ts"),
-				oe = s("./src/reddit/selectors/postCreations.ts"),
-				ae = s("./src/reddit/selectors/streamingModSettings.ts"),
-				re = s("./src/reddit/selectors/user.ts");
-			const ie = e => async (t, s, x) => {
+			var te = s("./src/reddit/models/ModQueue/index.ts"),
+				se = s("./src/reddit/models/ScheduledPost/index.ts"),
+				ne = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				oe = s("./src/reddit/selectors/platform.ts"),
+				ae = s("./src/reddit/selectors/postCreations.ts"),
+				re = s("./src/reddit/selectors/streamingModSettings.ts"),
+				ie = s("./src/reddit/selectors/user.ts");
+			const de = e => async (t, s, x) => {
 				const {
 					params: E
 				} = e, {
@@ -1315,131 +1316,134 @@
 					pageName: C
 				} = E;
 				if (C === a.Nb.Wiki) {
-					if (await t(Object(S.handleWikiRedirects)(e))) return
+					if (await t(Object(I.handleWikiRedirects)(e))) return
 				}
-				if (C === a.Nb.SubredditContent) return void t(Object(n.c)(te.p));
+				if (C === a.Nb.SubredditContent) return void t(Object(n.c)(se.p));
 				const k = Object(r.a)(v, a.M.HOT),
 					O = s(),
-					F = e.queryParams,
-					D = F.page || ee.b,
-					B = O.listings.postOrder.ids[k],
-					U = O.listings.postOrder.api.error[k],
-					H = O.listings.postOrder.api.pending[k];
-				if (U) return;
-				if (H || B && !U) Object(p.f)(s(), !0, v);
-				else if (await t(Object(w.i)(k, v, {})), !Object(re.H)(s()) && C !== a.Nb.Moderators) return void Object(m.a)(t, s());
+					D = e.queryParams,
+					B = D.page || te.b,
+					U = O.listings.postOrder.ids[k],
+					H = O.listings.postOrder.api.error[k],
+					W = O.listings.postOrder.api.pending[k];
+				if (H) return;
+				if (W || U && !H) Object(p.f)(s(), !0, v);
+				else if (await t(Object(S.i)(k, v, {})), !Object(ie.H)(s()) && C !== a.Nb.Moderators) return void Object(m.a)(t, s());
 				if (!C) return;
-				let W, q, V, G, K, z, Q, J, X;
+				let q, V, G, K, z, Q, J, X, Z, Y;
 				switch (C) {
 					case a.Nb.Awards:
-						W = g.g;
+						q = g.g;
 						break;
 					case a.Nb.Muted:
-						W = R.ib;
+						q = L.ib;
 						break;
 					case a.Nb.Contributors:
-						W = R.V;
+						q = L.V;
 						break;
 					case a.Nb.Banned:
-						W = R.Z;
+						q = L.Z;
 						break;
 					case a.Nb.Moderators:
-						V = !0;
+						K = !0;
 						break;
 					case a.Nb.Removal:
-						W = T.removalReasonsRequested;
+						q = P.removalReasonsRequested;
 						break;
 					case a.Nb.PostRequirements:
-						W = N.a, z = !0;
+						q = T.a, J = !0;
+						break;
+					case a.Nb.ChatSettings:
+						G = !0;
 						break;
 					case a.Nb.CommunitySettings:
-						W = L.f, Q = !0;
+						q = A.f, X = !0;
 						break;
 					case a.Nb.Flair:
-						W = f.b, K = !0;
+						q = f.b, Q = !0;
 						break;
 					case a.Nb.UserFlair:
 					case a.Nb.PostFlair:
-						W = void 0;
+						q = void 0;
 						break;
 					case a.Nb.Emojis:
-						W = b.l;
+						q = b.l;
 						break;
 					case a.Nb.Badges:
 					case a.Nb.Emotes:
 					case a.Nb.SubredditRules:
-						W = void 0;
+						q = void 0;
 						break;
 					case a.Nb.Traffic:
-						W = $;
+						q = ee;
 						break;
 					case a.Nb.Modlog:
-						W = y, G = !0;
+						q = y, z = !0;
 						break;
 					case a.Nb.Streaming:
-						W = P.a;
+						q = M.a;
 						break;
 					case a.Nb.Modqueue:
 					case a.Nb.Reports:
 					case a.Nb.Spam:
 					case a.Nb.Edited:
 					case a.Nb.Unmoderated:
-						q = C;
+						V = C;
 						break;
 					case a.Nb.Wiki:
 					case a.Nb.WikiContributors:
 					case a.Nb.WikiBanned:
-						await t(Object(S.subredditWikDataRequested)(E, F, !0));
+						await t(Object(I.subredditWikDataRequested)(E, D, !0));
 						break;
 					case a.Nb.ScheduledPostContent:
-						J = !0, W = i.i;
+						Z = !0, q = i.i;
 						break;
 					case a.Nb.EventPostContent:
-						X = !0;
+						Y = !0;
 						break;
 					default:
 						return Object(o.a)(C)
 				}
-				const Z = s(),
-					Y = Object(_.T)(Z, {
+				const $ = s(),
+					de = Object(_.T)($, {
 						subredditName: v.toLowerCase()
 					}),
-					ie = Object(_.E)(Z, v),
-					de = Object(_.Q)(Z, {
-						subredditId: ie
+					le = Object(_.E)($, v),
+					ce = Object(_.Q)($, {
+						subredditId: le
 					}),
-					le = Object(d.a)(de),
-					ce = Object(oe.Y)(O),
-					me = Object(re.E)(Z),
-					ue = Object(ae.a)(Z),
-					pe = Object(se.j)(Z, {
-						subredditId: ie
+					me = Object(d.a)(ce),
+					ue = Object(ae.Y)(O),
+					pe = Object(ie.E)($),
+					be = Object(re.a)($),
+					he = Object(ne.j)($, {
+						subredditId: le
 					});
-				if (Object(l.a)(C, pe, le, ce, me, ue)) {
-					if (q) {
+				if (Object(l.a)(C, he, me, ue, pe, be)) {
+					if (V) {
 						const e = Object(c.a)({
-								onlyOfType: F.only,
+								onlyOfType: D.only,
 								subreddit: v
 							}),
-							n = O.modQueue[q].itemOrder[e],
-							o = !!(n && n[D] && n[D].length),
-							a = O.modQueue[q].api.error;
-						if (O.modQueue[q].api.pending || o && !a) return;
-						if (!Object(ne.o)(O)) {
-							const n = Object(j.e)(e, q, Object.assign({}, F, {
+							n = O.modQueue[V].itemOrder[e],
+							o = !!(n && n[B] && n[B].length),
+							a = O.modQueue[V].api.error;
+						if (O.modQueue[V].api.pending || o && !a) return;
+						if (!Object(oe.o)(O)) {
+							const n = Object(j.e)(e, V, Object.assign({}, D, {
 								subreddit: v
 							}));
 							await n(t, s, x)
 						}
-					} else if (V) {
-						if (await Object(R.fb)(ie, F)(t, s, x), O.moderatingSubreddits[ie]) {
-							await Object(R.db)(ie, F)(t, s, x), O.moderators.invitedModerators.userOrder[ie] || await Object(R.eb)(ie)(t, s, x)
+					} else if (K) {
+						if (await Object(L.fb)(le, D)(t, s, x), O.moderatingSubreddits[le]) {
+							await Object(L.db)(le, D)(t, s, x), O.moderators.invitedModerators.userOrder[le] || await Object(L.eb)(le)(t, s, x)
 						}
-					} else z ? await W(v)(t, s, x) : Q ? await Promise.all([W(v, ie)(t, s, x), Object(A.k)(ie, u.a.communitySettings)(t, s, x)]) : G || K ? await W(v, F)(t, s, x) : J ? await Object(i.i)({
-						subredditId: ie
-					})(t, s, x) : X ? await Object(h.eventPostsRequested)(v)(t, s, x) : W && await W(ie, F)(t, s, x);
-					O.subreddits.rules[ie] || await M.o(v)(t, s, x), t(I.l({
-						title: Y
+					} else J ? await q(v)(t, s, x) : G ? await Object(w.e)(le)(t, s, x) : X ? await Promise.all([q(v, le)(t, s, x), Object(F.k)(le, u.a.communitySettings)(t, s, x)]) : z || Q ? await q(v, D)(t, s, x) : Z ? await Object(i.i)({
+						subredditId: le
+					})(t, s, x) : Y ? await Object(h.eventPostsRequested)(v)(t, s, x) : q && await q(le, D)(t, s, x);
+					O.subreddits.rules[le] || await R.o(v)(t, s, x), t(N.l({
+						title: de
 					}))
 				}
 			}
@@ -11420,6 +11424,26 @@
 				}),
 				w = Object(a.a)({
 					resolved: {},
+					chunkName: () => "reddit-components-ModHub-ChatSettings",
+					isReady(e) {
+						const t = this.resolve(e);
+						return !1 !== this.resolved[t] && !!s.m[t]
+					},
+					importAsync: () => s.e("reddit-components-ModHub-ChatSettings").then(s.bind(null, "./src/reddit/components/ModHub/ChatSettings/index.tsx")),
+					requireAsync(e) {
+						const t = this.resolve(e);
+						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+					},
+					requireSync(e) {
+						const t = this.resolve(e);
+						return s(t)
+					},
+					resolve() {
+						return "./src/reddit/components/ModHub/ChatSettings/index.tsx"
+					}
+				}),
+				S = Object(a.a)({
+					resolved: {},
 					chunkName: () => "reddit-components-ModHub-TrafficStats",
 					isReady(e) {
 						const t = this.resolve(e);
@@ -11438,7 +11462,7 @@
 						return "./src/reddit/components/ModHub/TrafficStats/index.tsx"
 					}
 				}),
-				S = Object(a.a)({
+				I = Object(a.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ModHub-flairs-PostFlairManagement",
 					isReady(e) {
@@ -11458,7 +11482,7 @@
 						return "./src/reddit/components/ModHub/flairs/PostFlairManagement/index.tsx"
 					}
 				}),
-				I = Object(a.a)({
+				N = Object(a.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ModHub-flairs-UserFlairManagement",
 					isReady(e) {
@@ -11478,7 +11502,7 @@
 						return "./src/reddit/components/ModHub/flairs/UserFlairManagement/index.tsx"
 					}
 				}),
-				N = Object(a.a)({
+				T = Object(a.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-Wiki-ModHubWikiManagement",
 					isReady(e) {
@@ -11498,7 +11522,7 @@
 						return "./src/reddit/components/Wiki/ModHubWikiManagement/index.tsx"
 					}
 				}),
-				T = Object(a.a)({
+				P = Object(a.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ModHub-Content-ModQueue",
 					isReady(e) {
@@ -11518,14 +11542,14 @@
 						return "./src/reddit/components/ModHub/Content/ModQueue.tsx"
 					}
 				}),
-				P = e => {
+				M = e => {
 					const {
 						language: t,
 						layout: s,
 						pageName: n,
 						postTypeFilter: o,
 						subpageName: a
-					} = e, r = y(e, ["language", "layout", "pageName", "postTypeFilter", "subpageName"]), P = Object.assign({}, r, {
+					} = e, r = y(e, ["language", "layout", "pageName", "postTypeFilter", "subpageName"]), M = Object.assign({}, r, {
 						subredditId: e.subreddit.id
 					});
 					switch (n) {
@@ -11535,23 +11559,28 @@
 								sendEventWithName: e.sendEventWithName
 							});
 						case l.Nb.Contributors:
-							return i.a.createElement(c.a, P);
+							return i.a.createElement(c.a, M);
 						case l.Nb.Banned:
-							return i.a.createElement(m.a, P);
+							return i.a.createElement(m.a, M);
 						case l.Nb.Streaming:
 							return i.a.createElement(C.a, {
 								subredditName: e.subreddit.name,
 								subredditId: e.subreddit.id
 							});
 						case l.Nb.Muted:
-							return i.a.createElement(E.a, P);
+							return i.a.createElement(E.a, M);
 						case l.Nb.Moderators:
-							return i.a.createElement(g.a, P);
+							return i.a.createElement(g.a, M);
 						case l.Nb.Modlog:
-							return i.a.createElement(h.a, P);
+							return i.a.createElement(h.a, M);
 						case l.Nb.PostRequirements:
 							return i.a.createElement(j, {
 								subredditName: e.subreddit.name
+							});
+						case l.Nb.ChatSettings:
+							return i.a.createElement(w, {
+								subredditName: e.subreddit.name,
+								subredditId: e.subreddit.id
 							});
 						case l.Nb.Flair:
 							return i.a.createElement(b.a, {
@@ -11560,11 +11589,11 @@
 								subredditId: e.subreddit.id
 							});
 						case l.Nb.PostFlair:
-							return i.a.createElement(S, {
+							return i.a.createElement(I, {
 								subredditId: e.subreddit.id
 							});
 						case l.Nb.UserFlair:
-							return i.a.createElement(I, {
+							return i.a.createElement(N, {
 								subredditId: e.subreddit.id
 							});
 						case l.Nb.Badges:
@@ -11590,7 +11619,7 @@
 						case l.Nb.Spam:
 						case l.Nb.Edited:
 						case l.Nb.Unmoderated:
-							return i.a.createElement(T, {
+							return i.a.createElement(P, {
 								after: e.after,
 								layout: s,
 								page: e.page,
@@ -11600,7 +11629,7 @@
 								subredditName: e.subreddit.name
 							});
 						case l.Nb.Awards:
-							return i.a.createElement(u.a, P);
+							return i.a.createElement(u.a, M);
 						case l.Nb.Emojis:
 							return i.a.createElement(x.a, {
 								subreddit: e.subreddit
@@ -11608,11 +11637,11 @@
 						case l.Nb.Wiki:
 						case l.Nb.WikiContributors:
 						case l.Nb.WikiBanned:
-							return i.a.createElement(N, {
+							return i.a.createElement(T, {
 								subreddit: e.subreddit
 							});
 						case l.Nb.Traffic:
-							return i.a.createElement(w, {
+							return i.a.createElement(S, {
 								subreddit: e.subreddit
 							});
 						case l.Nb.SubredditContent:
@@ -11629,7 +11658,7 @@
 							return Object(d.a)(n)
 					}
 				};
-			t.a = P
+			t.a = M
 		},
 		"./src/reddit/components/ModHub/Emojis/EmojiUploadModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -20148,6 +20177,7 @@
 					text: e.tooltip
 				}), o.a.createElement(j.a, {
 					on: e.on,
+					forceOn: e.forceOn,
 					onToggle: e.onClick,
 					disabled: e.disabled
 				})))),
@@ -24731,6 +24761,8 @@
 					case n.Nb.PostRequirements:
 					case n.Nb.Removal:
 						return !(!t || !t.posts);
+					case n.Nb.ChatSettings:
+						return !(!t || !(t.chatConfig || t.chatOperator || t.all));
 					case n.Nb.Badges:
 					case n.Nb.Emojis:
 						return !!t;
@@ -26977,6 +27009,10 @@
 						return p.fbt._("Post requirements", null, {
 							hk: "3UBlR0"
 						});
+					case h.Nb.ChatSettings:
+						return p.fbt._("Chat settings", null, {
+							hk: "3gycCw"
+						});
 					case h.Nb.Modlog:
 						return p.fbt._("Mod log", null, {
 							hk: "3uy7LL"
@@ -27473,7 +27509,7 @@
 				constructor() {
 					super(...arguments), this.trackClick = e => this.props.sendEvent(y.b(e)), this.trackCommunitySettingsNavItemClick = e => this.props.sendEvent(Object(G.a)(e)), this.onClickAwards = () => this.trackClick("awards"), this.onClickStreaming = () => this.trackClick("streaming"), this.onClickModQueue = () => this.trackClick("mod_queue"), this.onClickReports = () => this.trackClick("reports"), this.onClickSpam = () => this.trackClick("spam"), this.onClickEdited = () => this.trackClick("edited"), this.onClickUnmoderated = () => this.trackClick("unmoderated"), this.onClickBannedUsers = () => this.trackClick("ban_users"), this.onClickMutedUsers = () => this.trackClick("mute_users"), this.onClickApprovedSubmitters = () => this.trackClick("approved_submitters"), this.onClickEmojis = () => this.trackClick("emoji"), this.onClickModerators = () => this.trackClick("moderators"), this.onClickManageChatrooms = () => {
 						this.props.toggleManageChatroomsModal(), this.trackClick("manage_chatrooms")
-					}, this.onClickCommunitySettings = () => this.trackClick("community_settings"), this.onClickCommunityAppearance = () => this.trackClick("community_appearance"), this.onClickModMail = () => {
+					}, this.onClickChatSettings = () => this.trackClick("chat_settings"), this.onClickCommunitySettings = () => this.trackClick("community_settings"), this.onClickCommunityAppearance = () => this.trackClick("community_appearance"), this.onClickModMail = () => {
 						const e = this.props.isUsingNewModMail ? "mod_mail" : "old_modmail";
 						this.trackClick(e)
 					}, this.onClickRemovalReasons = () => this.trackClick("removal_reasons"), this.onClickRules = () => this.trackClick("rules"), this.onClickPostRequirements = () => this.trackClick("post_requirements"), this.onClickAutomodConfig = () => this.trackClick("automod_config"), this.onClickWikiPages = () => this.trackClick("wiki"), this.onClickTraffic = () => this.trackClick("traffic"), this.onClickModLog = () => this.trackClick("mod_log"), this.onClickModSupport = () => this.trackClick("r_mod_support"), this.onClickModHelp = () => this.trackClick("mod_help"), this.onClickContactReddit = () => this.trackClick("contact_reddit"), this.onClickModGuidelines = () => this.trackClick("mod_guidelines"), this.onClickModHelpCenter = () => this.trackClick("mod_help_center"), this.onClickPostFlair = () => this.trackClick("post_flair"), this.onClickUserFlair = () => this.trackClick("user_flair"), this.onClickGrantUserFlair = () => this.trackClick("grant_user_flair"), this.onClickBadges = () => this.trackClick("badges"), this.onClickEmotes = () => this.trackClick("emotes"), this.onClickScheduledPosts = () => this.props.sendEvent(Object(K.o)()), this.onClickEventPosts = () => this.props.sendEvent(Object(K.h)()), this.onGoToModHub = () => {
@@ -27760,6 +27796,12 @@
 									hk: "3TLjjv"
 								}),
 								onClick: this.onClickManageChatrooms
+							}), e.moderatorPermissions.config && r.a.createElement(me, {
+								isActive: e.pageName === h.Nb.ChatSettings,
+								label: g(h.Nb.ChatSettings),
+								onClick: this.onClickChatSettings,
+								path: "".concat(e.subreddit.url, "about/chat"),
+								isNew: !0
 							})), r.a.createElement("div", {
 								className: re.a.navSection
 							}, r.a.createElement("div", {
@@ -28933,4 +28975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.2c6d9c40a158a7720765.js.map
+//# sourceMappingURL=ModerationPages.db62415ebbd31c1e5abc.js.map

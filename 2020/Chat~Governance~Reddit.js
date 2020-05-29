@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.de7e0807fefe82a7a133.js
-// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3dacc00fe0df790dd794.js
+// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -10637,7 +10637,7 @@
 				ze = new Set(o()(He));
 			var Ke, Ye, Qe, Je;
 			! function(e) {
-				e.Awards = "awards", e.Muted = "muted", e.Badges = "badges", e.Banned = "banned", e.Contributors = "contributors", e.Emojis = "emojis", e.Emotes = "emotes", e.EventPostContent = "eventposts", e.Moderators = "moderators", e.SubredditRules = "rules", e.Removal = "removal", e.Modqueue = "modqueue", e.Reports = "reports", e.Spam = "spam", e.Unmoderated = "unmoderated", e.Edited = "edited", e.PostFlair = "postflair", e.PostRequirements = "settings", e.Modlog = "log", e.Flair = "flair", e.CommunitySettings = "edit", e.UserFlair = "userflair", e.Wiki = "wiki", e.WikiContributors = "wikicontributors", e.WikiBanned = "wikibanned", e.Traffic = "traffic", e.ScheduledPostContent = "scheduledposts", e.Streaming = "streaming", e.SubredditContent = "content"
+				e.Awards = "awards", e.Muted = "muted", e.Badges = "badges", e.Banned = "banned", e.ChatSettings = "chat", e.Contributors = "contributors", e.Emojis = "emojis", e.Emotes = "emotes", e.EventPostContent = "eventposts", e.Moderators = "moderators", e.SubredditRules = "rules", e.Removal = "removal", e.Modqueue = "modqueue", e.Reports = "reports", e.Spam = "spam", e.Unmoderated = "unmoderated", e.Edited = "edited", e.PostFlair = "postflair", e.PostRequirements = "settings", e.Modlog = "log", e.Flair = "flair", e.CommunitySettings = "edit", e.UserFlair = "userflair", e.Wiki = "wiki", e.WikiContributors = "wikicontributors", e.WikiBanned = "wikibanned", e.Traffic = "traffic", e.ScheduledPostContent = "scheduledposts", e.Streaming = "streaming", e.SubredditContent = "content"
 			}(Ke || (Ke = {})),
 			function(e) {
 				e.Community = "community", e.Safety = "safety", e.Posts = "posts", e.Wikis = "wikis"
@@ -11088,14 +11088,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4507d81-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("94a4e1b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4507d81-production",
+						release: "94a4e1b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11457,7 +11457,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4507d81-production",
+							releaseClient: "94a4e1b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -28658,7 +28658,7 @@
 				});
 			var kt, Ct, Nt, Pt, At;
 			! function(e) {
-				e.Ban = "ban", e.Click = "click", e.Dismiss = "dismiss", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Load = "load", e.ModDelete = "mod_delete", e.Submit = "submit", e.View = "view"
+				e.Ban = "ban", e.Click = "click", e.Dismiss = "dismiss", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Load = "load", e.ModDelete = "mod_delete", e.OptOut = "opt_out", e.Submit = "submit", e.View = "view"
 			}(kt || (kt = {})),
 			function(e) {
 				e.Experiment = "experiment", e.Page = "page"
@@ -29039,4 +29039,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.de7e0807fefe82a7a133.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.3dacc00fe0df790dd794.js.map
