@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.311120053b65d7771cbe.js
-// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.4ff6bc2a308574c9a3cd.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -750,7 +750,7 @@
 			var n = s("./src/config.ts"),
 				o = s("./src/reddit/helpers/loadThirdPartyScript.ts");
 			async function r() {
-				return await Object(o.c)(), (0, window.Stripe)(n.a.stripe.economyKey, {
+				return await Object(o.d)(), (0, window.Stripe)(n.a.stripe.economyKey, {
 					betas: ["payment_intent_beta_3"]
 				})
 			}
@@ -793,4 +793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.311120053b65d7771cbe.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44.4ff6bc2a308574c9a3cd.js.map

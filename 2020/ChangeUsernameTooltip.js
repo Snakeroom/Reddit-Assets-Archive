@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.163dcfafbc3dfb5229c7.js
-// Retrieved at 5/26/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.1ff67928950c57d4e3c9.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -190,4 +190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChangeUsernameTooltip.163dcfafbc3dfb5229c7.js.map
+//# sourceMappingURL=ChangeUsernameTooltip.1ff67928950c57d4e3c9.js.map

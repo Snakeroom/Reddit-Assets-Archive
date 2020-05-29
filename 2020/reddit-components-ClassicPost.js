@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.66d969ef5f1a0b6a4108.js
-// Retrieved at 5/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3626fcb67b5232396108.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return E
+				return w
 			}));
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -92,18 +92,18 @@
 			var g = ["root", "rootMargin", "threshold"],
 				y = ["root", "rootMargin", "threshold", "disabled"],
 				O = Object.prototype,
-				_ = O.hasOwnProperty,
-				j = O.toString,
+				j = O.hasOwnProperty,
+				_ = O.toString,
 				P = function(e) {
 					return g.reduce((function(t, s) {
-						if (_.call(e, s)) {
-							var o = "root" === s && "[object String]" === j.call(e[s]);
+						if (j.call(e, s)) {
+							var o = "root" === s && "[object String]" === _.call(e[s]);
 							t[s] = o ? document.querySelector(e[s]) : e[s]
 						}
 						return t
 					}), {})
 				},
-				E = function(e) {
+				w = function(e) {
 					var t, s;
 
 					function o() {
@@ -154,7 +154,7 @@
 						}) : null
 					}, o
 				}(r.a.Component);
-			v(E, "displayName", "IntersectionObserver")
+			v(w, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, s) {
 			"use strict";
@@ -239,7 +239,7 @@
 						g = s(/version\/(\d+(\.\d+)?)/i),
 						y = /tablet/i.test(t) && !/tablet pc/i.test(t),
 						O = !y && /[^-]mobi/i.test(t),
-						_ = /xbox/i.test(t);
+						j = /xbox/i.test(t);
 					/opera/i.test(t) ? r = {
 						name: "Opera",
 						opera: e,
@@ -379,9 +379,9 @@
 					} : {
 						name: s(/^(.*)\/(.*) /),
 						version: o(/^(.*)\/(.*) /)
-					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && g && (r.version = g)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || s(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !a && !r.silk ? !r.windowsphone && n ? (r[n] = e, r.ios = e, r.osname = "iOS") : h ? (r.mac = e, r.osname = "macOS") : _ ? (r.xbox = e, r.osname = "Xbox") : x ? (r.windows = e, r.osname = "Windows") : f && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
-					var j = "";
-					r.windows ? j = function(e) {
+					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && g && (r.version = g)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || s(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !a && !r.silk ? !r.windowsphone && n ? (r[n] = e, r.ios = e, r.osname = "iOS") : h ? (r.mac = e, r.osname = "macOS") : j ? (r.xbox = e, r.osname = "Xbox") : x ? (r.windows = e, r.osname = "Windows") : f && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
+					var _ = "";
+					r.windows ? _ = function(e) {
 						switch (e) {
 							case "NT":
 								return "NT";
@@ -406,8 +406,8 @@
 							default:
 								return
 						}
-					}(s(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? j = s(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? j = (j = s(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : n ? j = (j = s(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : a ? j = s(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? j = s(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? j = s(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? j = s(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (j = s(/tizen[\/\s](\d+(\.\d+)*)/i)), j && (r.osversion = j);
-					var P = !r.windows && j.split(".")[0];
+					}(s(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? _ = s(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? _ = (_ = s(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : n ? _ = (_ = s(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : a ? _ = s(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? _ = s(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? _ = s(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? _ = s(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (_ = s(/tizen[\/\s](\d+(\.\d+)*)/i)), _ && (r.osversion = _);
+					var P = !r.windows && _.split(".")[0];
 					return y || d || "ipad" == n || a && (3 == P || P >= 4 && !O) || r.silk ? r.tablet = e : (O || "iphone" == n || "ipod" == n || a || i || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var s = t("undefined" != typeof navigator && navigator.userAgent || "");
@@ -457,25 +457,9 @@
 				}, s._detect = t, s.detect = t, s
 			}, e.exports ? e.exports = o() : s("./node_modules/webpack/buildin/amd-define.js")("bowser", o)
 		},
-		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
-			e.exports = function(e, t) {
-				for (var s = -1, o = null == e ? 0 : e.length; ++s < o;)
-					if (!t(e[s], s, e)) return !1;
-				return !0
-			}
-		},
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
 			e.exports = function(e, t, s) {
 				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== t && (e = e >= t ? e : t)), e
-			}
-		},
-		"./node_modules/lodash/_baseEvery.js": function(e, t, s) {
-			var o = s("./node_modules/lodash/_baseEach.js");
-			e.exports = function(e, t) {
-				var s = !0;
-				return o(e, (function(e, o, r) {
-					return s = !!t(e, o, r)
-				})), s
 			}
 		},
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -498,17 +482,6 @@
 				r = s("./node_modules/lodash/toNumber.js");
 			e.exports = function(e, t, s) {
 				return void 0 === s && (s = t, t = void 0), void 0 !== s && (s = (s = r(s)) == s ? s : 0), void 0 !== t && (t = (t = r(t)) == t ? t : 0), o(r(e), t, s)
-			}
-		},
-		"./node_modules/lodash/every.js": function(e, t, s) {
-			var o = s("./node_modules/lodash/_arrayEvery.js"),
-				r = s("./node_modules/lodash/_baseEvery.js"),
-				n = s("./node_modules/lodash/_baseIteratee.js"),
-				a = s("./node_modules/lodash/isArray.js"),
-				i = s("./node_modules/lodash/_isIterateeCall.js");
-			e.exports = function(e, t, s) {
-				var d = a(e) ? o : r;
-				return s && i(e, t, s) && (t = void 0), d(e, n(t, 3))
 			}
 		},
 		"./node_modules/lodash/findKey.js": function(e, t, s) {
@@ -695,11 +668,11 @@
 				g = s("./src/reddit/components/PostContainer/index.tsx"),
 				y = s("./src/reddit/components/PostMedia/index.tsx"),
 				O = s("./src/reddit/components/PostMeta/index.tsx"),
-				_ = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				j = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				j = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
+				_ = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				P = s("./src/reddit/components/PostTitle/index.tsx"),
-				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				w = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				w = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				E = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				C = s("./src/reddit/models/Media/index.ts"),
 				k = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				S = s("./src/reddit/connectors/ClassicPost/index.tsx"),
@@ -776,7 +749,7 @@
 						post: ee,
 						onClick: q,
 						eventFactory: S
-					}, r.a.createElement(j.a, {
+					}, r.a.createElement(_.a, {
 						model: ee,
 						handleVote: s,
 						showBulkActionCheckbox: oe,
@@ -825,7 +798,7 @@
 						size: P.b.Medium,
 						titleColor: ce && ce.postTitleColor,
 						isOverlay: G
-					}, ee.source && !le && r.a.createElement(w.a, {
+					}, ee.source && !le && r.a.createElement(E.a, {
 						href: ee.source.url,
 						isSponsored: ee.isSponsored,
 						postId: ee.id,
@@ -839,7 +812,7 @@
 						className: F.a.spacer
 					}), ee.source && ee.source.url && ee.isSponsored && r.a.createElement(c.a, {
 						className: F.a.adLinkWrapper
-					}, r.a.createElement(w.a, {
+					}, r.a.createElement(E.a, {
 						href: ee.source.url.replace(n.a.redditUrl, ""),
 						isSponsored: ee.isSponsored,
 						postId: ee.id,
@@ -879,8 +852,8 @@
 						post: ee,
 						showEditPost: he,
 						showEditFlair: re,
-						tooltipType: G ? E.c.Lightbox : void 0,
-						useFlatlistBreakpoints: Object(_.h)({
+						tooltipType: G ? w.c.Lightbox : void 0,
+						useFlatlistBreakpoints: Object(j.h)({
 							editPost: !be,
 							save: !be,
 							hide: !be,
@@ -909,6 +882,54 @@
 				U = Object(i.a)(V),
 				X = Object(N.a)(U);
 			t.default = Object(S.a)(U)
+		},
+		"./src/reddit/components/CompactPost/HorizontalVotes/index.m.less": function(e, t, s) {
+			e.exports = {
+				horizontalVotes: "_2oM1YqCxIwkvwyeZamWwhW",
+				customScoreStyles: "_25IkBM0rRUqWX5ZojEMAFQ",
+				customDownvoteStyles: "_783RL1AYIib59nxLCXhgv"
+			}
+		},
+		"./src/reddit/components/CompactPost/HorizontalVotes/index.tsx": function(e, t, s) {
+			"use strict";
+			s("./node_modules/core-js/modules/es6.symbol.js");
+			var o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				n = s("./src/lib/classNames/index.ts"),
+				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				i = s("./src/reddit/components/VerticalVotes/index.tsx"),
+				d = s("./src/reddit/components/CompactPost/HorizontalVotes/index.m.less"),
+				c = s.n(d);
+
+			function l() {
+				return (l = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var p = function(e, t) {
+				var s = {};
+				for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (s[o] = e[o]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var r = 0;
+					for (o = Object.getOwnPropertySymbols(e); r < o.length; r++) t.indexOf(o[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[r]) && (s[o[r]] = e[o[r]])
+				}
+				return s
+			};
+			const m = Object(a.a)(e => {
+				var {
+					className: t
+				} = e, s = p(e, ["className"]);
+				return r.a.createElement(i.a, l({}, s, {
+					className: Object(n.a)(c.a.horizontalVotes, t),
+					scoreClassName: Object(n.a)(c.a.customScoreStyles, s.scoreClassName),
+					downvoteClassName: Object(i.b)(s) ? c.a.customDownvoteStyles : void 0
+				}))
+			});
+			t.a = m
 		},
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -955,8 +976,8 @@
 				y = s.n(g),
 				O = s("./src/lib/lessComponent.tsx");
 
-			function _() {
-				return (_ = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -964,13 +985,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = O.a.div("Container", y.a),
+			const _ = O.a.div("Container", y.a),
 				P = O.a.div("PostMetaWrapper", y.a),
-				E = O.a.wrapped(u.c, "PostTitle", y.a),
-				w = O.a.div("FlatList", y.a),
+				w = O.a.wrapped(u.c, "PostTitle", y.a),
+				E = O.a.div("FlatList", y.a),
 				C = O.a.div("FlatItem", y.a),
 				k = O.a.span("FlatListDotSpacer", y.a),
-				S = O.a.wrapped(j, "LinkContainer", y.a),
+				S = O.a.wrapped(_, "LinkContainer", y.a),
 				N = O.a.div("Content", y.a),
 				T = O.a.div("ThumbnailContainer", y.a),
 				I = Object(d.c)({
@@ -1009,11 +1030,11 @@
 					className: l
 				}, n.a.createElement(N, null, n.a.createElement(P, null, n.a.createElement(m.a, c)), L(a), a.source && n.a.createElement(b.a, {
 					post: a
-				}), B(e)), F(e)) : n.a.createElement(j, {
+				}), B(e)), F(e)) : n.a.createElement(_, {
 					className: l
 				}, n.a.createElement(P, null, n.a.createElement(m.a, c)), L(a), A(e), B(e))
 			});
-			const L = e => n.a.createElement(E, {
+			const L = e => n.a.createElement(w, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
@@ -1027,7 +1048,7 @@
 						post: s,
 						crosspost: t.post
 					});
-					return n.a.createElement("div", null, n.a.createElement(p.a, _({}, o, {
+					return n.a.createElement("div", null, n.a.createElement(p.a, j({}, o, {
 						className: y.a.mediaContainer
 					})))
 				},
@@ -1037,7 +1058,7 @@
 					} = e, {
 						score: s
 					} = t;
-					return n.a.createElement(w, null, n.a.createElement(C, null, o.fbt._({
+					return n.a.createElement(E, null, n.a.createElement(C, null, o.fbt._({
 						"*": "{point count} points",
 						_1: "1 point"
 					}, [o.fbt._plural(s, "point count", Object(l.b)(s))], {
@@ -1099,11 +1120,11 @@
 				}), "LightboxIcon", v.a),
 				y = s("./src/reddit/icons/fonts/Expandos/Media/Video/index.tsx"),
 				O = s("./src/reddit/icons/fonts/Gif/index.tsx"),
-				_ = s("./src/reddit/icons/fonts/Link/index.tsx"),
-				j = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				j = s("./src/reddit/icons/fonts/Link/index.tsx"),
+				_ = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				P = s("./src/reddit/icons/fonts/Photos/index.tsx"),
-				E = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				w = s("./src/reddit/icons/svgs/Poll/index.tsx"),
+				w = s("./src/reddit/icons/fonts/Text/index.tsx"),
+				E = s("./src/reddit/icons/svgs/Poll/index.tsx"),
 				C = s("./src/reddit/models/Media/index.ts"),
 				k = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(k);
@@ -1119,7 +1140,7 @@
 					if (t) return n.a.createElement(u.a, {
 						className: o
 					});
-					if (s.pollData) return n.a.createElement(w.a, {
+					if (s.pollData) return n.a.createElement(E.a, {
 						className: o
 					});
 					switch (e) {
@@ -1133,7 +1154,7 @@
 							});
 						case C.n.TEXT:
 						case C.n.RTJSON:
-							return n.a.createElement(E.a, {
+							return n.a.createElement(w.a, {
 								className: o
 							});
 						case C.n.VIDEO:
@@ -1142,7 +1163,7 @@
 							});
 						case C.n.EMBED:
 						default:
-							return n.a.createElement(_.a, {
+							return n.a.createElement(j.a, {
 								className: o
 							})
 					}
@@ -1183,7 +1204,7 @@
 					postId: l.id,
 					source: l.source,
 					target: "_blank"
-				}, n.a.createElement(j.a, {
+				}, n.a.createElement(_.a, {
 					className: Object(d.a)(S.a.icon, S.a.outboundLinkIcon)
 				})) : n.a.createElement(i.a, {
 					"aria-label": o.fbt._("View content", null, {
@@ -1306,52 +1327,52 @@
 					isCurrentUserProfilePost: v,
 					isOverlay: y,
 					isTopicPage: O,
-					language: _,
-					post: j,
+					language: j,
+					post: _,
 					shouldShowSubscribeButton: P,
-					subredditOrProfile: E,
-					tooltipType: w
+					subredditOrProfile: w,
+					tooltipType: E
 				} = e, C = !!O;
 				return r.a.createElement("div", {
 					className: g.a.metaContainer
-				}, !o && !j.isSponsored && E && r.a.createElement(i.a, {
-					postId: j.id,
-					subredditName: E.name
+				}, !o && !_.isSponsored && w && r.a.createElement(i.a, {
+					postId: _.id,
+					subredditName: w.name
 				}, r.a.createElement(m.a, {
 					className: g.a.subredditName,
 					"data-click-id": "subreddit",
-					to: E.url
-				}, E.displayText)), E && E.isQuarantined && r.a.createElement(p.a, null), !o && !j.isSponsored && E && P && !v && r.a.createElement(u.a, {
-					getEventFactory: e => Object(h.f)(j.id, e ? "unsubscribe" : "subscribe"),
+					to: w.url
+				}, w.displayText)), w && w.isQuarantined && r.a.createElement(p.a, null), !o && !_.isSponsored && w && P && !v && r.a.createElement(u.a, {
+					getEventFactory: e => Object(h.f)(_.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
-						name: E.name,
-						type: Object(f.f)(E) ? b.a.PROFILE : b.a.SUBREDDIT
+						name: w.name,
+						type: Object(f.f)(w) ? b.a.PROFILE : b.a.SUBREDDIT
 					},
-					postId: j.id,
+					postId: _.id,
 					small: !0
-				}), !o && !j.isSponsored && r.a.createElement(x.b, null), !o && !j.isSponsored && r.a.createElement(d.h, {
-					type: j.belongsTo.type,
-					id: j.belongsTo.id
+				}), !o && !_.isSponsored && r.a.createElement(x.b, null), !o && !_.isSponsored && r.a.createElement(d.h, {
+					type: _.belongsTo.type,
+					id: _.belongsTo.id
 				}), r.a.createElement(l.d, {
 					className: g.a.postTopMeta,
 					flairStyleTemplate: t,
-					language: _,
-					post: j,
-					tooltipType: w
+					language: j,
+					post: _,
+					tooltipType: E
 				}), r.a.createElement(c.a, {
-					displayText: E ? E.displayText : null,
+					displayText: w ? w.displayText : null,
 					inSubredditOrProfile: !!o,
-					language: _,
-					post: j,
-					tooltipType: w
-				}), E && r.a.createElement(a.a, {
+					language: j,
+					post: _,
+					tooltipType: E
+				}), w && r.a.createElement(a.a, {
 					className: g.a.donationAmount,
-					contentId: j.id,
-					subredditId: E.id
+					contentId: _.id,
+					subredditId: w.id
 				}), !C && r.a.createElement(n.a, {
 					hideCta: s,
 					isOverlay: !!y,
-					thing: j
+					thing: _
 				}))
 			}
 		},
@@ -1678,4 +1699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.66d969ef5f1a0b6a4108.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.3626fcb67b5232396108.js.map

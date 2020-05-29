@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d.884da6f57e72815113c0.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d.8e8f123cd1caccf403f6.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -673,4 +673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d.884da6f57e72815113c0.js.map
+//# sourceMappingURL=vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d.8e8f123cd1caccf403f6.js.map

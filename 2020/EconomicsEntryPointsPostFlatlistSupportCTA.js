@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsPostFlatlistSupportCTA.73734ddcb9b2bb02a351.js
-// Retrieved at 5/27/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsPostFlatlistSupportCTA.87aa77283ac1b2b58fb4.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsEntryPointsPostFlatlistSupportCTA"], {
 		"./src/reddit/actions/economics/paymentSystems/actionCreators.ts": function(t, e, n) {
@@ -95,7 +95,7 @@
 		"./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.tsx": function(t, e, n) {
 			"use strict";
 			n.d(e, "a", (function() {
-				return O
+				return v
 			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
@@ -106,25 +106,25 @@
 				d = n("./src/reddit/models/Payments/index.ts"),
 				l = n("./src/reddit/selectors/telemetry.ts"),
 				p = n("./src/lib/currency/centsToDollars/index.ts"),
-				u = n("./src/lib/prettyPrintNumber/index.ts"),
-				m = n("./src/reddit/icons/svgs/Dollar/index.tsx"),
+				m = n("./src/lib/prettyPrintNumber/index.ts"),
+				u = n("./src/reddit/icons/svgs/Dollar/index.tsx"),
 				b = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/PaymentReaction/index.m.less"),
 				C = n.n(b);
 
-			function f(t) {
+			function x(t) {
 				return s.a.createElement("div", {
 					className: Object(c.a)(C.a.container, t.className)
 				}, s.a.createElement("div", {
 					className: C.a.pill
-				}, s.a.createElement(m.a, {
+				}, s.a.createElement(u.a, {
 					className: C.a.icon
-				}), Object(u.a)(Object(p.a)(t.amount, !0))))
+				}), Object(m.a)(Object(p.a)(t.amount, !0))))
 			}
-			var y = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
-				x = n.n(y);
+			var f = n("./src/reddit/components/Economics/EntryPoints/tooltipWrapper/index.m.less"),
+				h = n.n(f);
 
-			function h() {
-				return (h = Object.assign || function(t) {
+			function y() {
+				return (y = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
@@ -132,10 +132,10 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const v = 500,
+			const O = 500,
 				g = Object(r.a)(i.b);
 
-			function O(t, e) {
+			function v(t, e) {
 				return Object(a.c)(class extends s.a.Component {
 					constructor() {
 						super(...arguments), this.ref = void 0, this.state = {
@@ -146,7 +146,7 @@
 								const {
 									top: t
 								} = this.ref.getBoundingClientRect();
-								return t <= v
+								return t <= O
 							}
 							return !1
 						}, this.handleToggleTooltip = t => {
@@ -173,12 +173,12 @@
 							targetName: r
 						} = this.props, a = this.shouldRenderBelow(), d = a ? i.a.Below : i.a.Above, l = "".concat(n, "-").concat(o, "-").concat(r);
 						return s.a.createElement("div", {
-							className: Object(c.a)(x.a.container, this.props.className),
+							className: Object(c.a)(h.a.container, this.props.className),
 							id: this.props.renderInPortal ? l : void 0,
 							ref: t => {
 								this.ref = t || void 0
 							}
-						}, s.a.createElement(t, h({}, this.props, {
+						}, s.a.createElement(t, y({}, this.props, {
 							tooltipIsOpen: this.state.tooltipIsOpen,
 							onToggleTooltip: () => this.handleToggleTooltip()
 						})), this.state.tooltipIsOpen && (this.props.renderInPortal ? s.a.createElement(g, {
@@ -188,7 +188,7 @@
 								id: this.props.contentId,
 								type: e
 							},
-							className: x.a.tooltipPortal,
+							className: h.a.tooltipPortal,
 							subredditId: this.props.subredditId,
 							targetName: r,
 							targetPosition: ["center", "bottom"],
@@ -200,15 +200,15 @@
 								id: this.props.contentId,
 								type: e
 							},
-							className: Object(c.a)(x.a.tooltip, {
-								[x.a.tooltipAbove]: !a,
-								[x.a.tooltipBelow]: a
+							className: Object(c.a)(h.a.tooltip, {
+								[h.a.tooltipAbove]: !a,
+								[h.a.tooltipBelow]: a
 							}),
 							position: d,
 							subredditId: this.props.subredditId,
 							targetName: r,
 							onClose: this.handleToggleTooltip
-						})), !!this.state.successfulPaymentAmount && s.a.createElement(f, {
+						})), !!this.state.successfulPaymentAmount && s.a.createElement(x, {
 							amount: this.state.successfulPaymentAmount
 						}))
 					}
@@ -308,8 +308,8 @@
 				l = n("./src/reddit/controls/Checkbox/index.m.less"),
 				p = n.n(l);
 
-			function u() {
-				return (u = Object.assign || function(t) {
+			function m() {
+				return (m = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
@@ -317,7 +317,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			var m = function(t, e) {
+			var u = function(t, e) {
 				var n = {};
 				for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && e.indexOf(o) < 0 && (n[o] = t[o]);
 				if (null != t && "function" == typeof Object.getOwnPropertySymbols) {
@@ -332,19 +332,19 @@
 						disabled: o,
 						redditStyle: c,
 						"data-redditstyle": i
-					} = e, a = m(e, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((t, e, n) => {
+					} = e, a = u(e, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((t, e, n) => {
 						const o = !(!e && !n);
 						let s = "";
 						return s = t ? o ? p.a.mDisabledRedditStyle : p.a.mDisabled : o ? p.a.mActiveRedditStyle : p.a.mActive
 					})(o, c, i);
-					return s.a.createElement(t, u({
+					return s.a.createElement(t, m({
 						className: Object(r.a)(p.a.Checkbox, d, n)
 					}, a))
 				},
 				C = b(d.a),
-				f = b(a);
+				x = b(a);
 			e.a = t => {
-				const e = t.isHalfCheckboxSelected ? f : t.isCheckboxSelected ? C : c.a;
+				const e = t.isHalfCheckboxSelected ? x : t.isCheckboxSelected ? C : c.a;
 				return s.a.createElement("button", {
 					"aria-checked": t.isHalfCheckboxSelected ? "mixed" : t.isCheckboxSelected,
 					className: t.className,
@@ -416,56 +416,6 @@
 					endpoint: "".concat(o.a.metaUrl, "/ps/me/braintree-sources/").concat(e),
 					method: "delete"
 				})
-			}
-		},
-		"./src/reddit/helpers/loadThirdPartyScript.ts": function(t, e, n) {
-			"use strict";
-			n.d(e, "c", (function() {
-				return d
-			})), n.d(e, "b", (function() {
-				return l
-			})), n.d(e, "a", (function() {
-				return p
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var o = n("./src/config.ts"),
-				s = n("./src/lib/fastdom/index.ts");
-			const r = "https://js.stripe.com/v3/",
-				c = "https://www.paypalobjects.com/api/checkout.js",
-				i = {
-					checkout: "https://js.braintreegateway.com/web/3.44.2/js/paypal-checkout.min.js",
-					client: "https://js.braintreegateway.com/web/3.44.2/js/client.min.js",
-					paypal: "https://www.paypal.com/sdk/js?client-id=".concat(o.a.paypal.braintreeApiKey) + "&currency=USD&vault=true"
-				};
-
-			function a(t, e) {
-				return e() ? Promise.resolve() : new Promise((n, o) => s.a.write(() => {
-					e() && n();
-					const o = document.head;
-					let s = o.querySelector("script[src='".concat(t, "']"));
-					s || ((s = document.createElement("script")).src = t, o.appendChild(s)), s.addEventListener("load", (function t() {
-						this.removeEventListener("load", t), n()
-					}))
-				}))
-			}
-
-			function d() {
-				return a(r, () => "undefined" != typeof Stripe)
-			}
-
-			function l() {
-				return a(c, () => "undefined" != typeof paypalCheckout).then(() => {
-					"undefined" == typeof paypalCheckout && "undefined" != typeof window && (window.paypalCheckout = paypal), paypal = void 0
-				})
-			}
-
-			function p() {
-				return Promise.all(Object.keys(i).map(t => {
-					const e = "__" + t;
-					return a(i[t], () => void 0 !== window[e]).then(() => {
-						window[e] = !0
-					})
-				}))
 			}
 		},
 		"./src/reddit/icons/svgs/Dollar/index.tsx": function(t, e, n) {
@@ -552,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsEntryPointsPostFlatlistSupportCTA.73734ddcb9b2bb02a351.js.map
+//# sourceMappingURL=EconomicsEntryPointsPostFlatlistSupportCTA.87aa77283ac1b2b58fb4.js.map

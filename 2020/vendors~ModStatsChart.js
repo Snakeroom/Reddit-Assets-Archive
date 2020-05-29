@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ModStatsChart.dcd40adc139bb8dccee7.js
-// Retrieved at 5/18/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ModStatsChart.3706d58c64f52702bd36.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ModStatsChart"], {
 		"./node_modules/chart.js/dist/Chart.js": function(e, t, n) {
@@ -17438,4 +17438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~ModStatsChart.dcd40adc139bb8dccee7.js.map
+//# sourceMappingURL=vendors~ModStatsChart.3706d58c64f52702bd36.js.map

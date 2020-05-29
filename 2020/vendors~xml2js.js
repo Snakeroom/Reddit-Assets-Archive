@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~xml2js.e604871502e901fbf002.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~xml2js.2811349dbc1fc6bf5a4b.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~xml2js"], {
 		"./node_modules/sax/lib/sax.js": function(t, e, i) {
@@ -2102,4 +2102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~xml2js.e604871502e901fbf002.js.map
+//# sourceMappingURL=vendors~xml2js.2811349dbc1fc6bf5a4b.js.map

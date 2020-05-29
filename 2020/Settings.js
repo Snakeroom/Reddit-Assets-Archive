@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c91f05fbb82be3f94ab1.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.6e49edd7c968743ba49e.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1779,7 +1779,7 @@
 				H = n("./src/lib/loadWithRetries/index.ts"),
 				W = n("./src/reddit/helpers/loadThirdPartyScript.ts");
 			var G = Object(F.a)({
-					getComponent: () => Object(H.a)(() => Promise.all([Promise.all([n.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(W.c)()])).then(e => e[0].default),
+					getComponent: () => Object(H.a)(() => Promise.all([Promise.all([n.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(W.d)()])).then(e => e[0].default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -6961,4 +6961,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.c91f05fbb82be3f94ab1.js.map
+//# sourceMappingURL=Settings.6e49edd7c968743ba49e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.e1ccecb692697f08b627.js
-// Retrieved at 5/26/2020, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.a19639d36103b7e9e30c.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -636,7 +636,7 @@
 				try {
 					const [e] = await Promise.all([Object(n.b)(t, {
 						username: d
-					}), Object(i.a)()]);
+					}), Object(i.b)()]);
 					if (!e.ok) return void g(e.error, "/ps/me/braintree-client-tokens");
 					const u = await braintree.client.create({
 							authorization: e.body.clientToken
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.e1ccecb692697f08b627.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.a19639d36103b7e9e30c.js.map

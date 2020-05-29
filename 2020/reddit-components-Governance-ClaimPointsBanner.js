@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.31f230e69f5f97c80a52.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7d9cb7cb7f6bf07621d1.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(A, e, t) {
@@ -660,4 +660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.31f230e69f5f97c80a52.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.7d9cb7cb7f6bf07621d1.js.map

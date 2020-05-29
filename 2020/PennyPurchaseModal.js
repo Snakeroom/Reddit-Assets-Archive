@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.875824c846d93a0f6915.js
-// Retrieved at 5/26/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.73accf95e690b5293d1a.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -106,8 +106,8 @@
 				h = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				g = t("./src/reddit/controls/Button/index.tsx"),
 				P = t("./src/reddit/helpers/trackers/goldPayment.ts"),
-				b = t("./node_modules/react-dom/index.js"),
-				C = t.n(b),
+				C = t("./node_modules/react-dom/index.js"),
+				b = t.n(C),
 				y = t("./node_modules/react-redux/es/index.js"),
 				k = t("./node_modules/reselect/es/index.js"),
 				v = t("./src/higherOrderComponents/makeAsync.tsx"),
@@ -134,7 +134,7 @@
 						className: e
 					} = this.props, a = paypalCheckout.Button.driver("react", {
 						React: r.a,
-						ReactDOM: C.a
+						ReactDOM: b.a
 					}), t = {
 						sandbox: c.a.paypal.apiKey,
 						production: c.a.paypal.apiKey
@@ -167,7 +167,7 @@
 				}
 			}))(N);
 			var M = Object(v.a)({
-					getComponent: () => Object(E.b)().then(() => j),
+					getComponent: () => Object(E.c)().then(() => j),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -426,8 +426,8 @@
 				h = t("./src/reddit/constants/colors.ts"),
 				g = t("./src/reddit/helpers/correlationIdTracker.ts"),
 				P = t("./src/reddit/helpers/trackers/goldPayment.ts"),
-				b = t("./src/reddit/models/User/index.ts"),
-				C = t("./src/reddit/selectors/gild.ts"),
+				C = t("./src/reddit/models/User/index.ts"),
+				b = t("./src/reddit/selectors/gild.ts"),
 				y = t("./src/reddit/selectors/gold/giveAwards.ts"),
 				k = t("./src/reddit/selectors/goldPurchaseModals.ts"),
 				v = t("./src/reddit/selectors/platform.ts"),
@@ -454,7 +454,7 @@
 					},
 					coinBalance: E.d,
 					gildThingId: k.p,
-					isIframed: C.h,
+					isIframed: b.h,
 					nightmode: E.S,
 					savedCardsPending: k.t,
 					selectedAward: y.a,
@@ -464,7 +464,7 @@
 					paypalErrorMessage: k.c,
 					userName: e => {
 						const a = Object(E.i)(e);
-						return "u/".concat(Object(b.e)(a))
+						return "u/".concat(Object(C.e)(a))
 					}
 				}),
 				M = Object(r.b)(j, (e, a) => ({
@@ -589,4 +589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.875824c846d93a0f6915.js.map
+//# sourceMappingURL=PennyPurchaseModal.73accf95e690b5293d1a.js.map

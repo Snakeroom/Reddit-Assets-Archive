@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.0531d00cc4077a228bd2.js
-// Retrieved at 5/19/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.01f6eff0922c1fe0a69d.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -781,4 +781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.0531d00cc4077a228bd2.js.map
+//# sourceMappingURL=CommentsPageNativeAd.01f6eff0922c1fe0a69d.js.map

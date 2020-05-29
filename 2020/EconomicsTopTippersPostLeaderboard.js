@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.27172f443b6aead7ea78.js
-// Retrieved at 5/4/2020, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.1e143f7eabe5bded1ef3.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsTopTippersPostLeaderboard"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -627,4 +627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.27172f443b6aead7ea78.js.map
+//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.1e143f7eabe5bded1ef3.js.map

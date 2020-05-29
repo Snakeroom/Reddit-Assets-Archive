@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.bb7a31aa3c3b8af47f8f.js
-// Retrieved at 5/6/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.13e2233c6487b9c709ca.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -510,4 +510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.bb7a31aa3c3b8af47f8f.js.map
+//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.13e2233c6487b9c709ca.js.map

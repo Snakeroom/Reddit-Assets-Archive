@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.b3a9e23216491b1730c6.js
-// Retrieved at 5/28/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.695c5102af2d0f5eb9c8.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, s, t) {
@@ -409,4 +409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.b3a9e23216491b1730c6.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.695c5102af2d0f5eb9c8.js.map

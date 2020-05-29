@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageLinks.f253d7b63939f31b1823.js
-// Retrieved at 3/3/2020, 6:36:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageLinks.346f5c0dd284e69f841d.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageLinks"], {
 		"./src/reddit/endpoints/goodContent/frontpageLinks.json": function(r) {
@@ -7,4 +7,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageLinks.f253d7b63939f31b1823.js.map
+//# sourceMappingURL=FrontpageLinks.346f5c0dd284e69f841d.js.map

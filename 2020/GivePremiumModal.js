@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.05bc9a46aa910d6121f1.js
-// Retrieved at 5/28/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.6c45190af15361c4fb5c.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -795,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.05bc9a46aa910d6121f1.js.map
+//# sourceMappingURL=GivePremiumModal.6c45190af15361c4fb5c.js.map

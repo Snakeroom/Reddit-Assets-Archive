@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.0c4153fe8b5ae94f9978.js
-// Retrieved at 4/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.512d4af461dfb6919f2f.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.0c4153fe8b5ae94f9978.js.map
+//# sourceMappingURL=vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.512d4af461dfb6919f2f.js.map

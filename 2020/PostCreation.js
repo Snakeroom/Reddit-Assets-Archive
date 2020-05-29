@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.359d9425d9dd0a950479.js
-// Retrieved at 5/28/2020, 8:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b0aa32dc558fc708f303.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -27,25 +27,9 @@
 				}
 			}
 		},
-		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
-			e.exports = function(e, t) {
-				for (var n = -1, o = null == e ? 0 : e.length; ++n < o;)
-					if (!t(e[n], n, e)) return !1;
-				return !0
-			}
-		},
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
 			e.exports = function(e, t, n) {
 				return e == e && (void 0 !== n && (e = e <= n ? e : n), void 0 !== t && (e = e >= t ? e : t)), e
-			}
-		},
-		"./node_modules/lodash/_baseEvery.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_baseEach.js");
-			e.exports = function(e, t) {
-				var n = !0;
-				return o(e, (function(e, o, s) {
-					return n = !!t(e, o, s)
-				})), n
 			}
 		},
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -54,17 +38,6 @@
 				return n(e, (function(e, n, s) {
 					if (t(e, n, s)) return o = n, !1
 				})), o
-			}
-		},
-		"./node_modules/lodash/every.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/_arrayEvery.js"),
-				s = n("./node_modules/lodash/_baseEvery.js"),
-				r = n("./node_modules/lodash/_baseIteratee.js"),
-				i = n("./node_modules/lodash/isArray.js"),
-				a = n("./node_modules/lodash/_isIterateeCall.js");
-			e.exports = function(e, t, n) {
-				var c = i(e) ? o : s;
-				return n && a(e, t, n) && (t = void 0), c(e, r(t, 3))
 			}
 		},
 		"./node_modules/lodash/findKey.js": function(e, t, n) {
@@ -30291,4 +30264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.359d9425d9dd0a950479.js.map
+//# sourceMappingURL=PostCreation.b0aa32dc558fc708f303.js.map

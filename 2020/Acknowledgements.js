@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Acknowledgements.7adf8e09f4bcd00a76c3.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Acknowledgements.6288c7040594dacc89e9.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Acknowledgements"], {
 		"./src/reddit/pages/Acknowledgements/index.m.less": function(e, r, t) {
@@ -28,4 +28,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Acknowledgements.7adf8e09f4bcd00a76c3.js.map
+//# sourceMappingURL=Acknowledgements.6288c7040594dacc89e9.js.map

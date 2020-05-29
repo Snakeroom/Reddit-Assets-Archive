@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsCommentFlatlistSupportCTA.5e99e8b5eb7b8d0c56af.js
-// Retrieved at 4/14/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsEntryPointsCommentFlatlistSupportCTA.0d6e22a4ee45d067bbfc.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsEntryPointsCommentFlatlistSupportCTA"], {
 		"./src/reddit/components/Economics/EntryPoints/CommentFlatlistSupportCTA/index.m.less": function(t, e, o) {
@@ -184,4 +184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsEntryPointsCommentFlatlistSupportCTA.5e99e8b5eb7b8d0c56af.js.map
+//# sourceMappingURL=EconomicsEntryPointsCommentFlatlistSupportCTA.0d6e22a4ee45d067bbfc.js.map

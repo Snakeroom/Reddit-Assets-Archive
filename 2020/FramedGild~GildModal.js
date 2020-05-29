@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.38c654458112f62a640b.js
-// Retrieved at 5/28/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3c1ec8412561ac639881.js
+// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -522,7 +522,7 @@
 				L = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/higherOrderComponents/makeAsync.tsx")),
 				V = a("./src/lib/loadWithRetries/index.ts"),
 				G = a("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const R = () => Object(V.a)(() => Promise.all([Promise.all([a.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), a.e("CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"), a.e("PennyPurchaseModal")]).then(a.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(G.c)()])).then(e => e[0].default);
+			const R = () => Object(V.a)(() => Promise.all([Promise.all([a.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), a.e("CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"), a.e("PennyPurchaseModal")]).then(a.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(G.d)()])).then(e => e[0].default);
 			var D = Object(L.a)({
 					getComponent: R,
 					ErrorComponent: () => null,
@@ -2399,4 +2399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.38c654458112f62a640b.js.map
+//# sourceMappingURL=FramedGild~GildModal.3c1ec8412561ac639881.js.map
