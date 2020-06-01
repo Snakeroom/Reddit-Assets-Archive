@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3c1ec8412561ac639881.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.13a5197889dd4e629f82.js
+// Retrieved at 6/1/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -1230,9 +1230,10 @@
 			var ze = Object(r.b)((e, t) => {
 					if (Object(c.a)(t.thingId)) {
 						const a = Object(y.O)(e, {
-								postId: t.thingId
-							}),
-							s = !!a.media && "rpan" === a.media.type,
+							postId: t.thingId
+						});
+						if (!a) return {};
+						const s = !!a.media && "rpan" === a.media.type,
 							n = s && Object(P.d)(e, t.thingId, A.k);
 						return {
 							post: Object.assign({}, a, {
@@ -1855,7 +1856,7 @@
 					} = this.props;
 					l(Object(u.viewGildModalEvent)(c.id, s, v)), p(!n && Object(m.l)());
 					const E = h ? h.id : g || (i && i.belongsTo ? i.belongsTo.id : void 0);
-					if (E && !t && a(E), E && i && t && (e(E, i.id), w(E)), h || f) {
+					if (E && !t && a(E), E && t && (e(E, v), w(E)), h || f) {
 						b(h ? h.name : f)
 					}
 					r && (c.pennyPrice ? R() : Object(T.b)(), o || d())
@@ -2399,4 +2400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.3c1ec8412561ac639881.js.map
+//# sourceMappingURL=FramedGild~GildModal.13a5197889dd4e629f82.js.map
