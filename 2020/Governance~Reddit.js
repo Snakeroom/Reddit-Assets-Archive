@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a42bee25d79cb77a5d4a.js
-// Retrieved at 6/1/2020, 4:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d31d7e2c9c46ccd0bfc6.js
+// Retrieved at 6/1/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -14898,67 +14898,80 @@
 			n.d(t, "c", (function() {
 				return D
 			})), n.d(t, "a", (function() {
-				return R
+				return A
 			})), n.d(t, "d", (function() {
-				return k
+				return R
 			})), n.d(t, "b", (function() {
-				return N
+				return k
 			}));
-			var s = n("./src/lib/asyncActions/index.ts");
-
-			function r(e) {
-				return new Promise(t => setTimeout(t, e))
-			}
-			n("./src/lib/reCaptchaEnterprise/reCaptcha.css");
-			var a = n("./src/config.ts"),
-				o = n("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const i = e => "object" == typeof e && null !== e,
-				c = () => i(globalThis.window) && i(globalThis.window.grecaptcha) && i(globalThis.window.grecaptcha.enterprise),
-				d = () => c() ? globalThis.window.grecaptcha.enterprise : void 0,
-				u = e => "https://www.google.com/recaptcha/enterprise.js?render=".concat(e),
-				l = e => Object(o.a)(u(e), c),
-				b = e => new Promise(t => e.ready(t));
-			var p, f = n("./node_modules/ts-error/lib/cjs.js"),
-				m = n.n(f);
-			class MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError extends m.a {
+			var s = n("./src/lib/asyncActions/index.ts"),
+				r = (n("./src/lib/reCaptchaEnterprise/reCaptcha.css"), n("./src/config.ts")),
+				a = n("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const o = e => "object" == typeof e && null !== e,
+				i = () => o(globalThis.window) && o(globalThis.window.grecaptcha) && o(globalThis.window.grecaptcha.enterprise),
+				c = () => i() ? globalThis.window.grecaptcha.enterprise : void 0,
+				d = e => "https://www.google.com/recaptcha/enterprise.js?render=".concat(e),
+				u = e => Object(a.a)(d(e), i),
+				l = e => new Promise(t => e.ready(t));
+			var b, p = n("./node_modules/ts-error/lib/cjs.js"),
+				f = n.n(p);
+			class MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError extends f.a {
 				constructor() {
 					super("reCaptcha Enterprise site key is not set")
 				}
 			}
-			class ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError extends m.a {
+			class ReCaptchaEnterpriseClientIsNotReadyError_ReCaptchaEnterpriseClientIsNotReadyError extends f.a {
+				constructor() {
+					super("reCaptcha Enterprise client is not ready")
+				}
+			}
+			class ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError extends f.a {
 				constructor() {
 					super("reCaptcha Enterprise client is not available")
 				}
 			}! function(e) {
 				e.PageLoad = "PAGE_LOAD"
-			}(p || (p = {}));
+			}(b || (b = {}));
+			var m = b;
 			n("./src/lib/reCaptchaEnterprise/ReCaptchaEnterpriseClient.ts");
 			var O = new class {
 					constructor() {
 						var e = this;
-						let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a.a.reCaptchaEnterprise.siteKey,
+						let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r.a.reCaptchaEnterprise.siteKey,
 							n = arguments.length > 1 ? arguments[1] : void 0;
-						this.siteKey = t, this.hasSiteKey = () => !!this.siteKey, this.hasClient = () => !!this.instance, this.scriptUrl = () => u(this.siteKey), this.client = () => {
+						this.siteKey = t, this.isReady = !1, this.hasSiteKey = () => !!this.siteKey, this.hasClient = () => !!this.instance, this.setInstance = e => {
+							e && (this.instance = e, this.isReady = !1)
+						}, this.scriptUrl = () => d(this.siteKey), this.ensureSiteKey = () => {
+							if (!this.hasSiteKey) throw new MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError
+						}, this.ensureClient = () => {
 							const e = this.instance;
 							if (!e) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
 							return e
-						}, this.readyClient = async () => {
-							const e = this.client();
-							return await b(e), e
+						}, this.waitUntilClientIsReady = async () => {
+							const e = this.ensureClient();
+							return await l(e), this.isReady = !0, e
+						}, this.ensureClientIsReady = () => {
+							const e = this.ensureClient();
+							if (!this.isReady) throw new ReCaptchaEnterpriseClientIsNotReadyError_ReCaptchaEnterpriseClientIsNotReadyError;
+							return e
 						}, this.loadScript = async function() {
-							arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-							if (e.instance) return;
-							if (!e.hasSiteKey) throw new MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError;
-							await l(e.siteKey);
-							const t = d();
-							if (!t) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
-							e.instance = t
+							let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+							if (!e.instance || t) {
+								e.ensureSiteKey(), await u(e.siteKey);
+								const t = c();
+								if (!t) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
+								e.setInstance(t)
+							}
+							e.isReady || await e.waitUntilClientIsReady()
 						}, this.execute = async e => {
-							if (!this.hasSiteKey) throw new MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError;
-							return (await this.readyClient()).execute(this.siteKey, {
-								action: e
-							})
-						}, this.instance = n || d()
+							this.ensureSiteKey();
+							const t = this.ensureClientIsReady(),
+								n = await t.execute(this.siteKey, e);
+							if (e.fast) {
+								return JSON.parse(n)[1]
+							}
+							return n
+						}, this.setInstance(n || c())
 					}
 				},
 				g = n("./src/lib/sentry/index.ts");
@@ -14974,18 +14987,18 @@
 				j = n("./node_modules/aggregate-error/index.js"),
 				E = n.n(j),
 				I = n("./src/graphql/operations/VerifyRecaptchaToken.json");
-			class GraphQLRequestError_GraphQLRequestError extends m.a {
+			class GraphQLRequestError_GraphQLRequestError extends f.a {
 				constructor(e) {
 					super("An error occurred during a GraphQL request. The following response was received:\n\n".concat(JSON.stringify(e, void 0, 2))), this.response = e
 				}
 			}
 			var S = n("./src/lib/makeGqlRequest/index.ts");
-			class MissingDataError_MissingDataError extends m.a {
+			class MissingDataError_MissingDataError extends f.a {
 				constructor() {
 					super("Missing data in GraphQL response")
 				}
 			}
-			class RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError extends m.a {
+			class RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError extends f.a {
 				constructor() {
 					super("GraphQL request failed without errors")
 				}
@@ -14995,32 +15008,13 @@
 			const w = e => v.d.reCaptchaEnterprise(e),
 				C = Object(T.d)(T.f, T.g),
 				D = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
-				A = () => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
-					e(D.requested());
-					try {
-						await O.loadScript(), e(D.succeeded())
-					} catch (t) {
-						throw e(D.failed()), t
-					}
-				}),
-				R = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
-				P = e => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
-					t(R.requested());
-					try {
-						const n = await O.execute(e);
-						return t(R.succeeded({
-							token: n
-						})), n
-					} catch (n) {
-						throw t(R.failed()), n
-					}
-				}),
-				k = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
-				x = e => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, n, s) => {
+				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
+				R = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
+				P = e => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
-					t(k.requested());
+					t(R.requested());
 					try {
 						await (async (e, t) => {
 							const n = await Object(S.a)(e, Object.assign({}, I, {
@@ -15038,31 +15032,40 @@
 							} = n.body.data.verifyRecaptchaToken;
 							if (r && r.length > 0) throw new E.a(r);
 							if (!s) throw new RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError
-						})(r(), e), t(k.succeeded())
+						})(r(), e), t(R.succeeded())
 					} catch (a) {
-						throw t(k.failed()), a
+						throw t(R.failed()), a
 					}
 				}),
-				N = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 5e3;
-					return _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (t, n) => {
-						const s = async () => {
-							const e = await t(P());
-							e && await t(x(e))
-						}, a = async e => {
-							e.preventDefault(), e.returnValue = "", await s()
-						}, o = async e => {
-							e.preventDefault(), await s()
-						};
-						try {
-							window.addEventListener("beforeunload", a), window.addEventListener("unload", o), await t(A()), await r(e), await s()
-						} catch (i) {
-							g.c.captureException(i)
-						} finally {
-							window.removeEventListener("beforeunload", a), window.removeEventListener("unload", o)
-						}
-					})
-				}
+				k = () => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (e, t) => {
+					try {
+						await e((() => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
+							e(D.requested());
+							try {
+								await O.loadScript(), e(D.succeeded())
+							} catch (t) {
+								throw e(D.failed()), t
+							}
+						}))());
+						const t = await e((e => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
+							t(A.requested());
+							try {
+								const n = await O.execute(e);
+								return t(A.succeeded({
+									token: n
+								})), n
+							} catch (n) {
+								throw t(A.failed()), n
+							}
+						}))({
+							action: m.PageLoad,
+							fast: !0
+						}));
+						t && await e(P(t))
+					} catch (n) {
+						g.c.captureException(n)
+					}
+				})
 		},
 		"./src/reddit/actions/redditEmbed.ts": function(e, t, n) {
 			"use strict";
@@ -54161,4 +54164,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a42bee25d79cb77a5d4a.js.map
+//# sourceMappingURL=Governance~Reddit.d31d7e2c9c46ccd0bfc6.js.map
