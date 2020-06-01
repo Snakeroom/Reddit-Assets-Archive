@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.fe880d911fe6906e9d3d.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.fe3e67dad4957a2213c0.js
+// Retrieved at 6/1/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -9,8 +9,8 @@
 			}));
 			var r = i("./node_modules/react/index.js"),
 				n = i.n(r),
-				o = i("./node_modules/react-dom/index.js"),
-				s = (i("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
+				s = i("./node_modules/react-dom/index.js"),
+				o = (i("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
 
 			function a(e, t) {
 				return Array.isArray(e) && Array.isArray(t) && e.length === t.length ? e.some((function(i, r) {
@@ -23,18 +23,18 @@
 				void 0 === e && (e = {});
 				for (var t, i = e.root || null, r = function(e) {
 						var t = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
-								if (!s.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
+								if (!o.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
 								return e
 							})),
 							i = t[0],
 							r = void 0 === i ? "0px" : i,
 							n = t[1],
-							o = void 0 === n ? r : n,
+							s = void 0 === n ? r : n,
 							a = t[2],
 							l = void 0 === a ? r : a,
 							d = t[3];
-						return r + " " + o + " " + l + " " + (void 0 === d ? o : d)
-					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], o = l.keys(); t = o.next().value;) {
+						return r + " " + s + " " + l + " " + (void 0 === d ? s : d)
+					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], s = l.keys(); t = s.next().value;) {
 					if (!(i !== t.root || r !== t.rootMargin || a(n, t.thresholds))) return t
 				}
 				return null
@@ -116,7 +116,7 @@
 								var r = i.ref;
 								r && ("function" == typeof r ? r(e) : "object" == typeof r && (r.current = e))
 							}
-							t.targetNode = e && Object(o.findDOMNode)(e)
+							t.targetNode = e && Object(s.findDOMNode)(e)
 						})), g(w(t), "observe", (function() {
 							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(j(t.props)), t.target = t.targetNode, e = w(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (b.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
@@ -132,22 +132,22 @@
 						})), t
 					}
 					i = e, (t = r).prototype = Object.create(i.prototype), t.prototype.constructor = t, t.__proto__ = i;
-					var s = r.prototype;
-					return s.getSnapshotBeforeUpdate = function(e) {
+					var o = r.prototype;
+					return o.getSnapshotBeforeUpdate = function(e) {
 						var t = this;
 						this.prevTargetNode = this.targetNode;
 						var i = y.some((function(i) {
 							return a(t.props[i], e[i])
 						}));
 						return i && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), i
-					}, s.componentDidUpdate = function(e, t, i) {
+					}, o.componentDidUpdate = function(e, t, i) {
 						var r = !1;
 						i || (r = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (i || r) && this.observe()
-					}, s.componentDidMount = function() {
+					}, o.componentDidMount = function() {
 						this.observe()
-					}, s.componentWillUnmount = function() {
+					}, o.componentWillUnmount = function() {
 						this.targetNode && this.unobserve(this.targetNode)
-					}, s.render = function() {
+					}, o.render = function() {
 						var e = this.props.children;
 						return null != e ? n.a.cloneElement(n.a.Children.only(e), {
 							ref: this.handleNode
@@ -162,10 +162,10 @@
 
 			function n() {}
 
-			function o() {}
-			o.resetWarningCache = n, e.exports = function() {
-				function e(e, t, i, n, o, s) {
-					if (s !== r) {
+			function s() {}
+			s.resetWarningCache = n, e.exports = function() {
+				function e(e, t, i, n, s, o) {
+					if (o !== r) {
 						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw a.name = "Invariant Violation", a
 					}
@@ -194,7 +194,7 @@
 					oneOfType: t,
 					shape: t,
 					exact: t,
-					checkPropTypes: o,
+					checkPropTypes: s,
 					resetWarningCache: n
 				};
 				return i.PropTypes = i, i
@@ -211,8 +211,8 @@
 			"use strict";
 			var r = i("./node_modules/lodash/isEqual.js"),
 				n = i.n(r),
-				o = i("./node_modules/react/index.js"),
-				s = i.n(o),
+				s = i("./node_modules/react/index.js"),
+				o = i.n(s),
 				a = i("./node_modules/reselect/es/index.js"),
 				l = i("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
 				d = i("./src/reddit/connectors/PostViewable/index.ts"),
@@ -289,8 +289,8 @@
 						cumulative: i = !1,
 						cumulativeElapsedTime: r,
 						remainingTime: n,
-						threshold: o = null,
-						viewabilityMinimum: s,
+						threshold: s = null,
+						viewabilityMinimum: o,
 						checkAudible: a = !1,
 						timeViewingInterrupted: l
 					} = e;
@@ -300,10 +300,10 @@
 						checkAudible: a,
 						timer: null,
 						fired: !1,
-						threshold: o,
+						threshold: s,
 						remainingTime: n,
 						cumulativeElapsedTime: 0,
-						viewabilityMinimum: s,
+						viewabilityMinimum: o,
 						timeViewingInitialized: 0,
 						timeViewingInterrupted: l
 					}
@@ -342,7 +342,7 @@
 					}
 				}),
 				_ = Object(d.a)(T);
-			class j extends o.Component {
+			class j extends s.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = w(), this.videoStats = g(), this.inView = [], this.outOfView = [], this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e), this.props.trackDisplay && this.handleThresholds(e)
@@ -390,10 +390,10 @@
 						pixelPostHasEnteredView: t,
 						pixelPostHasExitedView: i,
 						post: r
-					} = this.props, o = y.filter(t => this.isAdequatelyInView(e, t));
-					n()(o, this.inView) || (o.length > 0 && t(r, o), this.inView = o);
-					const s = y.filter(t => !this.isAdequatelyInView(e, t));
-					n()(s, this.outOfView) || (s.length > 0 && i(r, s), this.outOfView = s)
+					} = this.props, s = y.filter(t => this.isAdequatelyInView(e, t));
+					n()(s, this.inView) || (s.length > 0 && t(r, s), this.inView = s);
+					const o = y.filter(t => !this.isAdequatelyInView(e, t));
+					n()(o, this.outOfView) || (o.length > 0 && i(r, o), this.outOfView = o)
 				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.isIntersecting && e.intersectionRatio >= t
@@ -432,7 +432,7 @@
 					}, t)
 				}
 				render() {
-					return s.a.createElement(l.a, {
+					return o.a.createElement(l.a, {
 						threshold: this.props.trackVideo ? f : y,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
@@ -447,12 +447,12 @@
 			}));
 			var r = i("./node_modules/react/index.js"),
 				n = i.n(r),
-				o = i("./node_modules/reselect/es/index.js"),
-				s = i("./src/reddit/components/AdViewability/index.tsx"),
+				s = i("./node_modules/reselect/es/index.js"),
+				o = i("./src/reddit/components/AdViewability/index.tsx"),
 				a = i("./src/reddit/connectors/PostViewable/index.ts"),
 				l = i("./src/reddit/selectors/posts.ts"),
 				d = i("./src/lib/classNames/index.ts");
-			const u = Object(a.a)(() => Object(o.c)({
+			const u = Object(a.a)(() => Object(s.c)({
 					post: l.O
 				})),
 				c = e => {
@@ -460,13 +460,12 @@
 						className: t,
 						post: i,
 						onPostViewable: r,
-						pixelPostHasEnteredView: o,
+						pixelPostHasEnteredView: s,
 						pixelPostHasExitedView: a
 					} = e;
-					return i.isSponsored ? n.a.createElement(s.a, {
+					return i.isSponsored ? n.a.createElement(o.a, {
 						post: i,
-						trackDisplay: !0,
-						trackVideo: !0
+						trackDisplay: !0
 					}, n.a.createElement("div", {
 						className: Object(d.a)(t, "Blank ".concat(i.id))
 					})) : null
@@ -498,4 +497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.fe880d911fe6906e9d3d.js.map
+//# sourceMappingURL=reddit-components-BlankPost.fe3e67dad4957a2213c0.js.map

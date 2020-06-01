@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.ac9c8cf8dde39c3c0838.js
-// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.033ce7f80deb8faac8af.js
+// Retrieved at 6/1/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -7757,7 +7757,6 @@
 					}, t, n && o.a.createElement(c.a, null)), f = !!i.media && i.media.type === l.n.VIDEO;
 					return i.isSponsored || f ? o.a.createElement(a.a, {
 						post: i,
-						trackVideo: !0,
 						trackDisplay: !0
 					}, h) : h
 				}
@@ -15043,4 +15042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.ac9c8cf8dde39c3c0838.js.map
+//# sourceMappingURL=ProfileOverview.033ce7f80deb8faac8af.js.map

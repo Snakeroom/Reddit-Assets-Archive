@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8901d010da016a261e9a.js
-// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b50830760ec71ea046bd.js
+// Retrieved at 6/1/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -16908,7 +16908,6 @@
 					}, t, n && o.a.createElement(d.a, null)), f = !!i.media && i.media.type === c.n.VIDEO;
 					return i.isSponsored || f ? o.a.createElement(r.a, {
 						post: i,
-						trackVideo: !0,
 						trackDisplay: !0
 					}, h) : h
 				}
@@ -28962,4 +28961,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.8901d010da016a261e9a.js.map
+//# sourceMappingURL=ModerationPages.b50830760ec71ea046bd.js.map

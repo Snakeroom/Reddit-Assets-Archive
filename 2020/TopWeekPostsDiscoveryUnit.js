@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.143e93a3d0ad31feb649.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.147e22b92ecaca3f8fa8.js
+// Retrieved at 6/1/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -304,7 +304,7 @@
 				G = s.n(H),
 				K = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
 				Q = s.n(K),
-				V = function(e, t) {
+				J = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -313,7 +313,7 @@
 					}
 					return s
 				};
-			const J = Object(o.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
+			const V = Object(o.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
 				return (Object(u.f)(e) ? t : s).some(t => t.id === e.id)
 			});
@@ -331,7 +331,7 @@
 						{
 							className: t
 						} = e,
-						s = V(e, ["className"]),
+						s = J(e, ["className"]),
 						{
 							eventFactory: n,
 							flairStyleTemplate: o,
@@ -341,7 +341,7 @@
 							subscribedProfiles: b,
 							subscribedSubreddits: h
 						} = s,
-						x = !J({
+						x = !V({
 							subredditOrProfile: u,
 							subscribedProfiles: b,
 							subscribedSubreddits: h
@@ -593,7 +593,6 @@
 					}, t, n && r.a.createElement(c.a, null)), f = !!a.media && a.media.type === l.n.VIDEO;
 					return a.isSponsored || f ? r.a.createElement(i.a, {
 						post: a,
-						trackVideo: !0,
 						trackDisplay: !0
 					}, h) : h
 				}
@@ -760,4 +759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.143e93a3d0ad31feb649.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.147e22b92ecaca3f8fa8.js.map
