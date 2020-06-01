@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6d59751ece8a77369729.js
-// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5bc37e37e600127aca01.js
+// Retrieved at 6/1/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2577,7 +2577,7 @@
 						let {
 							post: n
 						} = t;
-						const o = Object(m.h)(e, {
+						const o = Object(m.i)(e, {
 							postId: n.id
 						});
 						if (o) return o.length
@@ -30605,16 +30605,6 @@
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		},
-		"./src/reddit/selectors/media.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "b", (function() {
-				return s
-			}));
-			const o = e => e.mediaPlayback.isMuted,
-				s = e => e.mediaPlayback.volume
-		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -30715,4 +30705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.6d59751ece8a77369729.js.map
+//# sourceMappingURL=PostCreation.5bc37e37e600127aca01.js.map

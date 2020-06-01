@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.0ff3d4696a88c5224e05.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.fff9d7fc3b0a677e0001.js
+// Retrieved at 6/1/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -278,7 +278,7 @@
 						let {
 							post: s
 						} = t;
-						const n = Object(p.h)(e, {
+						const n = Object(p.i)(e, {
 							postId: s.id
 						});
 						if (n) return n.length
@@ -3708,16 +3708,6 @@
 				},
 				Y = e => e.economics.pointsCopy.data
 		},
-		"./src/reddit/selectors/media.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			})), s.d(t, "b", (function() {
-				return r
-			}));
-			const n = e => e.mediaPlayback.isMuted,
-				r = e => e.mediaPlayback.volume
-		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, s) {
 			"use strict";
 			var n = s("./src/config.ts"),
@@ -3776,4 +3766,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.0ff3d4696a88c5224e05.js.map
+//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.fff9d7fc3b0a677e0001.js.map
