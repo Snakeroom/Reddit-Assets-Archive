@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c924d2ea0b882dcfde77.js
-// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0a30843739bf19b5e94e.js
+// Retrieved at 6/1/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -515,6 +515,7 @@
 			}
 		},
 		"./src/lib/reCaptchaEnterprise/ReCaptchaEnterpriseClient.ts": function(e, t) {},
+		"./src/lib/reCaptchaEnterprise/reCaptcha.css": function(e, t, n) {},
 		"./src/lib/timezone/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -14908,6 +14909,7 @@
 			function r(e) {
 				return new Promise(t => setTimeout(t, e))
 			}
+			n("./src/lib/reCaptchaEnterprise/reCaptcha.css");
 			var o = n("./src/config.ts"),
 				a = n("./src/reddit/helpers/loadThirdPartyScript.ts");
 			const i = e => "object" == typeof e && null !== e,
@@ -54242,4 +54244,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.c924d2ea0b882dcfde77.js.map
+//# sourceMappingURL=Governance~Reddit.0a30843739bf19b5e94e.js.map
