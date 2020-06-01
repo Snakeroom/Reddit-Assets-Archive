@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d2bd67e2b9fbdb7b741c.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.090c429cc0fd164330e2.js
+// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -5818,34 +5818,31 @@
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
 				r = n.n(o),
-				a = n("./src/reddit/connectors/connectToLanguage.ts"),
-				i = n("./src/reddit/controls/Button/index.tsx"),
-				c = n("./src/reddit/helpers/describeApiError/index.ts"),
-				d = n("./src/reddit/components/PostList/index.m.less"),
-				l = n.n(d);
-			t.a = Object(a.a)(e => {
+				a = n("./src/reddit/controls/Button/index.tsx"),
+				i = n("./src/reddit/helpers/describeApiError/index.ts"),
+				c = n("./src/reddit/components/PostList/index.m.less"),
+				d = n.n(c);
+			t.a = e => {
 				const {
-					language: t,
-					onTryAgain: n,
-					apiError: o
+					onTryAgain: t,
+					apiError: n
 				} = e;
-				let a = s.fbt._("Something went wrong while loading.", null, {
+				let o = s.fbt._("Something went wrong while loading.", null, {
 					hk: "1ijaef"
 				});
-				return o && (a = Object(c.a)({
-					apiError: o,
-					language: t,
+				return n && (o = Object(i.a)({
+					apiError: n,
 					isLoggedOut: !1
 				})), r.a.createElement("div", {
-					className: l.a.somethingWrong
+					className: d.a.somethingWrong
 				}, r.a.createElement("div", {
-					className: l.a.somethingWrongText
-				}, a), n && r.a.createElement(i.f, {
-					onClick: n
+					className: d.a.somethingWrongText
+				}, o), t && r.a.createElement(a.f, {
+					onClick: t
 				}, s.fbt._("Try again", null, {
 					hk: "3JPIhw"
 				})))
-			})
+			}
 		},
 		"./src/reddit/components/PostList/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -8488,22 +8485,6 @@
 				}
 			})
 		},
-		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				r = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.c)({
-				language: r.Q
-			});
-
-			function i(e) {
-				return Object(s.b)(a)(e)
-			}
-		},
 		"./src/reddit/constants/listingSorts.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -8865,8 +8846,7 @@
 			function r(e) {
 				let {
 					apiError: t,
-					isLoggedOut: n,
-					language: r
+					isLoggedOut: n
 				} = e;
 				switch (t.type) {
 					case o.C.AUTHORIZATION_ERROR:
@@ -9958,4 +9938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.d2bd67e2b9fbdb7b741c.js.map
+//# sourceMappingURL=ProfileComments.090c429cc0fd164330e2.js.map

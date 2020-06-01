@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.33d7c87a3c23b99af520.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.14ec4773fcfe23d475d1.js
+// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -6686,22 +6686,6 @@
 				}
 			})
 		},
-		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return a
-			}));
-			var o = s("./node_modules/react-redux/es/index.js"),
-				n = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/reddit/selectors/user.ts");
-			const i = Object(n.c)({
-				language: r.Q
-			});
-
-			function a(e) {
-				return Object(o.b)(i)(e)
-			}
-		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
 				Checkbox: "_2nBuBcqz2x0pSPNZfAPkF",
@@ -7740,4 +7724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.33d7c87a3c23b99af520.js.map
+//# sourceMappingURL=ProfilePrivate.14ec4773fcfe23d475d1.js.map

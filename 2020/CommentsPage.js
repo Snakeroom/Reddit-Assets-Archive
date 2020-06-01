@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4fc2176780538d240444.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.077971eb876a21c7b35c.js
+// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2631,6 +2631,8 @@
 				errorTitle: "_2Nj40mHW74FkFefq6oqWkb",
 				EmptyText: "_2x3Avx0lbWMcic-5bE_guO",
 				emptyText: "_2x3Avx0lbWMcic-5bE_guO",
+				ErrorFullPage: "_2ze7IsXK_2d3McYZHK6v_D",
+				errorFullPage: "_2ze7IsXK_2d3McYZHK6v_D",
 				LoadingFullPage: "_3kZ_esGcijvfnM9KjA27vj",
 				loadingFullPage: "_3kZ_esGcijvfnM9KjA27vj",
 				Downvote: "_32W1DnzyRkYXP82ZO96H0V",
@@ -2735,24 +2737,37 @@
 				})(e => {
 					let {
 						apiError: t,
-						language: s,
-						onClick: o
+						onClick: s
 					} = e;
 					return i.a.createElement("div", {
 						className: E.a.StateContainer
 					}, i.a.createElement(_, null), i.a.createElement(j, null, t ? Object(h.a)({
 						apiError: t,
-						language: s,
 						isLoggedOut: !1
 					}) : n.fbt._("Sorry, comments couldn't load!", null, {
 						hk: "2h6LDi"
 					})), i.a.createElement(u.f, {
-						onClick: o
+						onClick: s
 					}, n.fbt._("retry", null, {
 						hk: "BoP8d"
 					})))
 				}),
-				N = () => i.a.createElement("div", null, "500"),
+				N = e => {
+					let {
+						postId: t,
+						commentId: s,
+						sort: n,
+						apiError: o
+					} = e;
+					return i.a.createElement("div", {
+						className: Object(c.a)(E.a.StateContainer, E.a.ErrorFullPage)
+					}, i.a.createElement(T, {
+						postId: t,
+						commentId: s,
+						sort: n,
+						apiError: o
+					}))
+				},
 				M = l.a.wrapped(e => {
 					let {
 						className: t
@@ -13131,22 +13146,6 @@
 				}
 			})
 		},
-		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var n = s("./node_modules/react-redux/es/index.js"),
-				o = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/reddit/selectors/user.ts");
-			const a = Object(o.c)({
-				language: r.Q
-			});
-
-			function i(e) {
-				return Object(n.b)(a)(e)
-			}
-		},
 		"./src/reddit/constants/componentTestIds.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
@@ -15846,90 +15845,97 @@
 						apiError: e,
 						apiPending: t,
 						closeLocation: s,
-						commentsPageKey: n,
-						isNightmodeOn: o,
-						isLoggedIn: r,
-						isOverlay: a,
-						post: i,
-						postId: d,
-						postSEOV2IdCardVariant: c,
-						sendEvent: l,
-						subredditOrProfile: m,
-						profileCollectionsEnabled: p,
-						isInCommentsPageAdExperiment: u
-					} = this.props, h = Object(ie.g)(c);
-					if (!i) {
+						commentId: n,
+						commentsPageKey: o,
+						isNightmodeOn: r,
+						isLoggedIn: a,
+						isOverlay: i,
+						post: d,
+						postId: c,
+						postSEOV2IdCardVariant: l,
+						sort: m,
+						sendEvent: p,
+						subredditOrProfile: u,
+						profileCollectionsEnabled: h,
+						isInCommentsPageAdExperiment: b
+					} = this.props, g = Object(ie.g)(l);
+					if (!d) {
 						if (t) return x.a.createElement(fe.f, null);
 						const s = this.renderPageError();
 						return s || (e ? e.type === k.l ? x.a.createElement(at, {
 							contentGateType: ze.a.PostBlockedForLegalReason
-						}) : x.a.createElement(fe.d, null) : x.a.createElement(fe.f, null))
+						}) : x.a.createElement(fe.d, {
+							postId: c,
+							commentId: n,
+							apiError: e,
+							sort: m
+						}) : x.a.createElement(fe.f, null))
 					} {
 						const e = this.renderPageError();
 						if (e) return e
 					}
-					const b = this.isCommentPermalink(),
-						g = i.belongsTo.type === K.a.PROFILE,
-						f = Object(We.a)(i) && (!g || p),
-						v = !r;
+					const f = this.isCommentPermalink(),
+						v = d.belongsTo.type === K.a.PROFILE,
+						C = Object(We.a)(d) && (!v || h),
+						O = !a;
 					return x.a.createElement(bt, {
 						closeLocation: s,
-						commentsPageKey: n,
+						commentsPageKey: o,
 						containerRef: this.setLayoutRef,
 						handleFakeLightboxClick: this.handleFakeLightboxClick,
 						handleFakeLightboxOverlayClick: this.handleFakeLightboxOverlayClick,
-						isLoggedIn: r,
-						isOverlay: a,
-						isSwapVariant: h,
-						post: i,
-						subredditOrProfile: m,
-						shouldFitPageToContent: v,
-						isCollectionLayout: f
-					}, m && m.isQuarantined && x.a.createElement(Te.a, {
-						subredditName: m.name
+						isLoggedIn: a,
+						isOverlay: i,
+						isSwapVariant: g,
+						post: d,
+						subredditOrProfile: u,
+						shouldFitPageToContent: O,
+						isCollectionLayout: C
+					}, u && u.isQuarantined && x.a.createElement(Te.a, {
+						subredditName: u.name
 					}), x.a.createElement(Ne.a, null), x.a.createElement("div", {
 						className: Object(_.a)(Qe.a.PageContentWrapper, {
-							[Qe.a.LargePageContent]: f,
+							[Qe.a.LargePageContent]: C,
 							[Qe.a.ChatPage]: this.props.isChatPostExperiment
 						}),
 						key: "PostContentWrapper"
-					}, f && x.a.createElement(rt, {
-						isOverlay: a,
-						isNightmodeOn: o,
-						postId: d
+					}, C && x.a.createElement(rt, {
+						isOverlay: i,
+						isNightmodeOn: r,
+						postId: c
 					}), x.a.createElement($e, {
-						condition: f,
+						condition: C,
 						wrap: e => x.a.createElement("div", {
 							ref: this.updateCollPostWrapperRef,
 							className: Qe.a.CollectionBodyWrapper
 						}, e)
 					}, x.a.createElement(Me.a, {
-						isCommentPermalink: b,
+						isCommentPermalink: f,
 						isExclusivePost: !0,
-						isOverlay: a,
-						postId: d,
-						redditStyle: a,
+						isOverlay: i,
+						postId: c,
+						redditStyle: i,
 						scrollerItemRef: this.setPostScrollItemRef,
-						sendEvent: l
-					}), m && x.a.createElement(ke.a, {
+						sendEvent: p
+					}), u && x.a.createElement(ke.a, {
 						className: Qe.a.TopTippers,
-						contentId: d,
-						creatorId: i.authorId,
-						subredditId: m.id
-					}), m && x.a.createElement(_e.a, {
+						contentId: c,
+						creatorId: d.authorId,
+						subredditId: u.id
+					}), u && x.a.createElement(_e.a, {
 						className: Qe.a.TopTippersBenefits,
-						contentId: d,
-						creatorId: i.authorId,
-						subredditId: m.id
-					}), u && this.state.commentNativeAdId && x.a.createElement(B.a, {
-						key: "event-post-id-".concat(i.id),
+						contentId: c,
+						creatorId: d.authorId,
+						subredditId: u.id
+					}), b && this.state.commentNativeAdId && x.a.createElement(B.a, {
+						key: "event-post-id-".concat(d.id),
 						postId: this.state.commentNativeAdId,
-						isOverlay: a
-					}), this.renderCommentPanes())), m && !Object($.f)(m) && x.a.createElement(W.a, {
+						isOverlay: i
+					}), this.renderCommentPanes())), u && !Object($.f)(u) && x.a.createElement(W.a, {
 						contentContainerRef: this.state.layoutRef,
-						isOverlay: a,
-						post: i,
-						subredditOrProfile: m
+						isOverlay: i,
+						post: d,
+						subredditOrProfile: u
 					}))
 				}
 				renderCommentPanes() {
@@ -16026,7 +16032,6 @@
 							if (g) L.push(x.a.createElement(ot, {
 								commentSort: w,
 								key: "otherDiscussions",
-								language: h,
 								postId: y,
 								isOverlay: u,
 								postPermalink: E.permalink
@@ -16086,7 +16091,6 @@
 						renderedInOverlay: u
 					})))), e && d ? L.push(x.a.createElement(fe.e, {
 						key: "commentsErrorState",
-						language: h,
 						postId: y,
 						commentId: n,
 						sort: w,
@@ -16096,7 +16100,6 @@
 						key: "commentsPlaceholder"
 					}));
 					else L.push(x.a.createElement(fe.e, {
-						language: h,
 						postId: y,
 						commentId: n,
 						sort: w,
@@ -16410,4 +16413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.4fc2176780538d240444.js.map
+//# sourceMappingURL=CommentsPage.077971eb876a21c7b35c.js.map

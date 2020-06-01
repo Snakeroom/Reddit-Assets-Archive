@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.7c081beb8c02528293fa.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.63b19890d4bd1adc36cb.js
+// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -30,9 +30,9 @@
 				O = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				p = t("./src/reddit/constants/page.ts"),
 				b = t("./src/reddit/constants/postLayout.ts"),
-				g = t("./src/reddit/helpers/path/index.ts"),
-				h = t("./src/reddit/helpers/trackers/otherDiscussions.ts"),
-				C = t("./src/reddit/helpers/trackers/screenview.ts"),
+				h = t("./src/reddit/helpers/path/index.ts"),
+				C = t("./src/reddit/helpers/trackers/otherDiscussions.ts"),
+				g = t("./src/reddit/helpers/trackers/screenview.ts"),
 				x = t("./src/reddit/icons/fonts/Comment/index.tsx"),
 				D = t("./src/reddit/selectors/listings.ts"),
 				_ = t("./src/reddit/selectors/posts.ts"),
@@ -71,16 +71,15 @@
 					apiPending: t,
 					commentSort: n,
 					isOverlay: r,
-					language: o,
-					otherDiscussionsCount: a,
-					postId: O,
-					postPermalink: D,
-					sendEvent: _
+					otherDiscussionsCount: o,
+					postId: a,
+					postPermalink: O,
+					sendEvent: D
 				} = e;
-				const y = Object(d.a)(O, null, {
+				const _ = Object(d.a)(a, null, {
 						isOtherDiscussions: !0
 					}),
-					E = a > 0 ? a : 0;
+					y = o > 0 ? o : 0;
 				return i.a.createElement(v, null, i.a.createElement("div", {
 					className: Object(c.a)(P.a.HeaderPane, L.a.CommentsNavigationPane)
 				}, i.a.createElement("div", {
@@ -88,13 +87,13 @@
 				}, j._({
 					"*": "{Other discussions count} other discussions",
 					_1: "1 other discussion"
-				}, [j._plural(E, "Other discussions count")], {
+				}, [j._plural(y, "Other discussions count")], {
 					hk: "3ee7xp"
 				})), i.a.createElement(m.a, {
 					className: L.a.OtherDiscussionsLink,
 					isOverlay: r,
-					onClick: () => _(Object(h.b)(O)),
-					to: Object(g.b)(D)
+					onClick: () => D(Object(C.b)(a)),
+					to: Object(h.b)(O)
 				}, i.a.createElement(x.a, {
 					className: P.a.CommentIcon,
 					role: "presentation"
@@ -103,15 +102,14 @@
 				}))), s && i.a.createElement(l.e, {
 					apiError: s,
 					commentId: null,
-					language: o,
-					postId: O,
+					postId: a,
 					sort: n
 				}), t && !s && i.a.createElement(l.f, null), !t && !s && i.a.createElement(u.a, {
 					enableElementHiding: !1,
 					forcedLayout: b.g.Compact,
-					listingKey: y,
+					listingKey: _,
 					listingName: p.c.OtherDiscussions,
-					listingViewed: (e, s) => Object(C.e)(y, n, s, e),
+					listingViewed: (e, s) => Object(g.e)(_, n, s, e),
 					noPostsComponent: () => i.a.createElement(l.b, null),
 					inSubredditOrProfile: !1,
 					preventScrollOnMount: !0
@@ -120,4 +118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.7c081beb8c02528293fa.js.map
+//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.63b19890d4bd1adc36cb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.58e9cdca144a0f92f9f3.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.009cb94b2e430eaab42c.js
+// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -8402,22 +8402,6 @@
 				}
 			})
 		},
-		"./src/reddit/connectors/connectToLanguage.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var n = s("./node_modules/react-redux/es/index.js"),
-				r = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/selectors/user.ts");
-			const a = Object(r.c)({
-				language: o.Q
-			});
-
-			function i(e) {
-				return Object(n.b)(a)(e)
-			}
-		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react-redux/es/index.js"),
@@ -9459,4 +9443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.58e9cdca144a0f92f9f3.js.map
+//# sourceMappingURL=SearchResults.009cb94b2e430eaab42c.js.map
