@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e0f75f84fd5c0ec77aba.js
-// Retrieved at 6/1/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.491fe74e28af9cdc76f1.js
+// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3404,20 +3404,14 @@
 				_t = s("./src/reddit/constants/experiments.ts"),
 				kt = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const jt = e => {
-					const t = Object(kt.c)(e, {
-						experimentEligibilitySelector: kt.a,
-						experimentName: _t.bb
-					});
-					return !(!t || Object(_t.zc)(t))
-				},
-				wt = e => {
-					const t = Object(kt.c)(e, {
-						experimentEligibilitySelector: kt.a,
-						experimentName: _t.ab
-					});
-					return !(!t || Object(_t.zc)(t))
-				};
-			var Pt = s("./src/reddit/selectors/gild.ts"),
+				const t = Object(kt.c)(e, {
+					experimentEligibilitySelector: kt.a,
+					experimentName: _t.bb
+				});
+				return !(!t || Object(_t.zc)(t))
+			};
+			var wt = s("./src/reddit/selectors/gild.ts"),
+				Pt = s("./src/reddit/selectors/userPrefs.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
 				St = s("./src/reddit/components/Comments/Comment/index.m.less"),
 				Tt = s.n(St);
@@ -3465,9 +3459,15 @@
 							commentId: s
 						} = t;
 						const n = Object(it.b)(s);
-						return Object(Pt.c)(e, n)
+						return Object(wt.c)(e, n)
 					},
-					highlightAnimationEnabled: wt,
+					highlightAnimationEnabled: e => (e => {
+						const t = Object(kt.c)(e, {
+							experimentEligibilitySelector: kt.a,
+							experimentName: _t.ab
+						});
+						return !(!t || Object(_t.zc)(t))
+					})(e) && !Object(Pt.c)(e),
 					highlightTagsEnabled: jt,
 					isEditing: C.z,
 					isLoggedIn: _.H,
@@ -3544,20 +3544,20 @@
 						trackClick: H,
 						renderedInOverlay: V,
 						subredditType: U
-					} = e, G = !y && !n.isDeleted && !!u && u.length > 0, K = Object(w.a)(j.c.edit, n.id), z = Object(w.a)(j.c.replyToComment, n.id), q = Object(Z.a)(N), J = n.authorIsContractor && U === Et.d.EmployeesOnly, X = n.isLocked, Q = v && C && C.glowHexColor, Y = v && C && C.bubbleTreatmentAssetUrl, $ = v, ee = q && L, te = !y && !n.isDeleted && (P || E);
+					} = e, G = n.isDeleted, K = !y && !G && !!u && u.length > 0, z = Object(w.a)(j.c.edit, n.id), q = Object(w.a)(j.c.replyToComment, n.id), J = Object(Z.a)(N), X = n.authorIsContractor && U === Et.d.EmployeesOnly, Q = n.isLocked, Y = v && C && C.glowHexColor, $ = v && C && C.bubbleTreatmentAssetUrl, ee = v, te = J && L, se = !y && !G && (P || E);
 					return a.a.createElement(Vt, {
 						className: Object(c.a)("Comment ".concat(n.id), Tt.a.CommentWrapper, {
-							[Tt.a.highlightComment]: _ && $,
-							[Tt.a.deleted]: n.isDeleted,
+							[Tt.a.highlightComment]: _ && ee,
+							[Tt.a.deleted]: G,
 							[Tt.a.focused]: b,
 							[Tt.a.redesign]: E,
 							[Tt.a.topLevel]: !m
 						})
-					}, !i && Y && f && a.a.createElement(M, {
-						assetUrl: Y
-					}), !i && Q && a.a.createElement(tt, {
-						hexColor: Q
-					}), !i && !Q && x && a.a.createElement(ot, null), i && a.a.createElement(Lt, {
+					}, !G && !i && $ && f && a.a.createElement(M, {
+						assetUrl: $
+					}), !G && !i && Y && a.a.createElement(tt, {
+						hexColor: Y
+					}), !G && !i && !Y && x && a.a.createElement(ot, null), i && a.a.createElement(Lt, {
 						className: n.id,
 						onClick: () => {
 							s(), R(), H("collapse")()
@@ -3579,7 +3579,7 @@
 						isNSFW: n.profileOver18 || !1,
 						nsfwIconUrl: "https://www.redditstatic.com/avatars/avatar_default_02_24A0ED.png",
 						userName: n.author
-					}))) : n.isDeleted ? null : a.a.createElement(At, {
+					}))) : G ? null : a.a.createElement(At, {
 						compact: !0,
 						downvoteButtonClassName: Tt.a.voteButton,
 						downvoteClassName: Tt.a.upDownVote,
@@ -3589,12 +3589,12 @@
 						upvoteClassName: Tt.a.upDownVote
 					})), a.a.createElement(Ht, {
 						className: Object(c.a)({
-							[Tt.a.highlightComment]: _ && !$,
+							[Tt.a.highlightComment]: _ && !ee,
 							[Tt.a.isActive]: O,
 							[Tt.a.isCollapsed]: i,
-							[Tt.a.isLocked]: X && (!v || ee),
+							[Tt.a.isLocked]: Q && (!v || te),
 							[Tt.a.isPendingDeletion]: S,
-							[Tt.a.isRemoved]: !!n.bannedBy && (!v || ee)
+							[Tt.a.isRemoved]: !!n.bannedBy && (!v || te)
 						})
 					}, a.a.createElement(Ot.a, null, k.fbt._("level {depth}", [k.fbt._param("depth", m + 1)], {
 						hk: "2XnyAV"
@@ -3611,14 +3611,14 @@
 						isAvatarsInCommentsEnabled: E,
 						language: T,
 						renderedInOverlay: V,
-						renderContractorBadge: J
+						renderContractorBadge: X
 					}), !i && a.a.createElement(r.Fragment, null, y && a.a.createElement(I.a, {
 						className: Object(c.a)(Tt.a.EditCommentForm, Tt.a.CommentCreation),
 						autofocus: !0,
 						commentsPageKey: o,
 						depth: m,
 						draftType: j.c.edit,
-						draftKey: K,
+						draftKey: z,
 						rtJson: Object(bt.a)(n),
 						mediaMetadata: n.media && n.media.mediaMetadata || void 0,
 						isTopLevelComment: !1,
@@ -3627,22 +3627,22 @@
 							id: n.id,
 							commentsPageKey: o,
 							depth: m,
-							draftKey: K,
+							draftKey: z,
 							formData: e
 						}),
 						submitButtonText: k.fbt._("save edits", null, {
 							hk: "3xLSWW"
 						})
-					}), !y && !n.isDeleted && a.a.createElement(Ut, {
+					}), !y && !G && a.a.createElement(Ut, {
 						"data-test-id": gt.d
 					}, a.a.createElement(pt.a, {
 						content: Object(bt.a)(n),
 						mediaMetadata: n.media && n.media.mediaMetadata,
 						rtJsonElementProps: qt(e)
-					})), L && q && Object(ge.c)(n) && a.a.createElement(lt.a, {
+					})), L && J && Object(ge.c)(n) && a.a.createElement(lt.a, {
 						onIgnoreReports: F,
 						reportable: n
-					}), te && a.a.createElement(Dt, null, E && a.a.createElement(Bt, {
+					}), se && a.a.createElement(Dt, null, E && a.a.createElement(Bt, {
 						downvoteButtonClassName: Tt.a.voteButton,
 						downvoteClassName: Tt.a.upDownVote,
 						model: n,
@@ -3662,7 +3662,7 @@
 						renderedInOverlay: V,
 						subreddit: W,
 						trackClick: H
-					})), G && u.map(e => a.a.createElement(Ft, {
+					})), K && u.map(e => a.a.createElement(Ft, {
 						key: e,
 						language: T
 					}, e)), D && a.a.createElement(I.a, {
@@ -3671,7 +3671,7 @@
 						commentsPageKey: o,
 						depth: m,
 						draftType: j.c.replyToComment,
-						draftKey: z,
+						draftKey: q,
 						isTopLevelComment: !1,
 						parentCommentId: n.id,
 						submitAction: (e, t) => {
@@ -3680,14 +3680,14 @@
 							} = e, r = Mt(e, ["validate"]);
 							return s ? Object(p.sb)({
 								commentsPageKey: o,
-								draftKey: z,
+								draftKey: q,
 								parentCommentDepth: m,
 								parentCommentId: n.id,
 								formData: r,
 								editorMode: t
 							}) : Object(p.jb)({
 								commentsPageKey: o,
-								draftKey: z,
+								draftKey: q,
 								parentCommentDepth: m,
 								parentCommentId: n.id,
 								formData: r,
@@ -16412,4 +16412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.e0f75f84fd5c0ec77aba.js.map
+//# sourceMappingURL=CommentsPage.491fe74e28af9cdc76f1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1da456218c159955a527.js
-// Retrieved at 6/1/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d8d8645d062f92dd62a0.js
+// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -43,7 +43,7 @@
 			e.exports = JSON.parse('{"id":"c03afa35c319"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"771b12e5d835"}')
+			e.exports = JSON.parse('{"id":"40e0d6101ae5"}')
 		},
 		"./src/graphql/operations/GetPostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"4231b7734ef9"}')
@@ -70,7 +70,7 @@
 			e.exports = JSON.parse('{"id":"3c148c0b5100"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"8e1d1ebfc136"}')
+			e.exports = JSON.parse('{"id":"095999a356b9"}')
 		},
 		"./src/graphql/operations/OtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"717c239ddb6a"}')
@@ -118,7 +118,7 @@
 			e.exports = JSON.parse('{"id":"e74dba05ccd0"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"2991161be1ce"}')
+			e.exports = JSON.parse('{"id":"cecb82dfb088"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -148,7 +148,7 @@
 			e.exports = JSON.parse('{"id":"3b630128c0db"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"d76750596043"}')
+			e.exports = JSON.parse('{"id":"95bf7bda37f4"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -21250,7 +21250,7 @@
 				r = "showRpanDu",
 				a = "topContentDismissalTime",
 				o = "topContentTimesDismissed",
-				i = [...["openPostInNewTab", "rememberCommunitySort", "sort", "stylesEnabled", "useMarkdown", "layout", "rememberCommunityLayout", "hasSeenCustomizeFlyout", s, r, a, o], "activityRelevantAds", "thirdPartyDataPersonalizedAds", "thirdPartySiteDataPersonalizedAds", "thirdPartySiteDataPersonalizedContent", "showLocationBasedRecommendations"]
+				i = [...["openPostInNewTab", "rememberCommunitySort", "sort", "stylesEnabled", "useMarkdown", "layout", "rememberCommunityLayout", "hasSeenCustomizeFlyout", "reduceAnimationsFromAwards", s, r, a, o], "activityRelevantAds", "thirdPartyDataPersonalizedAds", "thirdPartySiteDataPersonalizedAds", "thirdPartySiteDataPersonalizedContent", "showLocationBasedRecommendations"]
 		},
 		"./src/reddit/constants/shortcuts.ts": function(e, t, n) {
 			"use strict";
@@ -24090,6 +24090,7 @@
 				showUsernameMentionNotifications: "monitor_mentions",
 				privateFeeds: "private_feeds",
 				autoplayVideo: "video_autoplay",
+				reduceAnimationsFromAwards: "reduce_animations_from_awards",
 				rpanDuDismissalTime: "rpan_du_dismissal_time",
 				showActiveCommunities: "top_karma_subreddits",
 				showRpanDu: n("./src/reddit/constants/preferences.ts").c,
@@ -25584,6 +25585,7 @@
 				markMessagesRead: e.isMessageAutoReadEnabled,
 				nightmode: e.isNightModeEnabled,
 				over18: e.isNsfwContentShown,
+				reduceAnimationsFromAwards: e.isReduceAnimationsFromAwardsEnabled,
 				account: {
 					openPostInNewTab: e.isNewTabOpenedForPostView,
 					rpanDuDismissalTime: e.rpanDuDismissedAt,
@@ -51503,6 +51505,7 @@
 					openPostInNewTab: !1,
 					over18: !1,
 					profileLayout: void 0,
+					reduceAnimationsFromAwards: !1,
 					rpanDuDismissalTime: void 0,
 					showActiveCommunities: !0,
 					showRpanDu: !0,
@@ -54158,4 +54161,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.1da456218c159955a527.js.map
+//# sourceMappingURL=Governance~Reddit.d8d8645d062f92dd62a0.js.map

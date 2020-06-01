@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.b70e1506f18bd0dc5200.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.16e1fe2141fec1e46c69.js
+// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -347,4 +347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailCollectionBanner.b70e1506f18bd0dc5200.js.map
+//# sourceMappingURL=EmailCollectionBanner.16e1fe2141fec1e46c69.js.map

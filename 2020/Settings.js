@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f1688805334396e89f10.js
-// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.f1f1dded4f86381dcd7f.js
+// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4952,16 +4952,17 @@
 							openPostInNewTab: i,
 							over18: c,
 							privateFeeds: l,
-							rememberCommunitySort: d,
-							sort: u,
-							stylesEnabled: p,
-							useMarkdown: b,
-							layout: h,
-							rememberCommunityLayout: g
+							reduceAnimationsFromAwards: d,
+							rememberCommunitySort: u,
+							sort: p,
+							stylesEnabled: b,
+							useMarkdown: h,
+							layout: g,
+							rememberCommunityLayout: f
 						},
-						update: f
+						update: v
 					} = e;
-					const v = Object(m.a)({
+					const _ = Object(m.a)({
 						[as.a["m-responsive"]]: t
 					});
 					return o.a.createElement(me.a, null, o.a.createElement(de.b, {
@@ -4972,7 +4973,7 @@
 						hk: "76osn"
 					})), o.a.createElement(ee.o, {
 						on: c,
-						onClick: () => f(!c, "over18"),
+						onClick: () => v(!c, "over18"),
 						label: s.fbt._("Adult content", null, {
 							hk: "4les43"
 						}),
@@ -4985,13 +4986,13 @@
 							hk: "CeEkN"
 						}),
 						on: !!c && r,
-						onClick: () => f(!r, "hideNSFW"),
+						onClick: () => v(!r, "hideNSFW"),
 						subtext: s.fbt._("Blur thumbnails and media preview for anything labeled NSFW (not safe for work)", null, {
 							hk: "403VoR"
 						})
 					}), o.a.createElement(ee.o, {
 						on: a,
-						onClick: () => f(!a, "autoplayVideo"),
+						onClick: () => v(!a, "autoplayVideo"),
 						label: s.fbt._("Autoplay media", null, {
 							hk: "4huarG"
 						}),
@@ -4999,8 +5000,17 @@
 							hk: "1YYoIq"
 						})
 					}), o.a.createElement(ee.o, {
-						on: !!p,
-						onClick: () => f(!p, "stylesEnabled"),
+						on: d,
+						onClick: () => v(!d, "reduceAnimationsFromAwards"),
+						label: s.fbt._("Reduce Animations", null, {
+							hk: "329Lwa"
+						}),
+						subtext: s.fbt._("Reduce award-related animations on posts and comments", null, {
+							hk: "1sut6Z"
+						})
+					}), o.a.createElement(ee.o, {
+						on: !!b,
+						onClick: () => v(!b, "stylesEnabled"),
 						label: s.fbt._("Community themes", null, {
 							hk: "8TpCA"
 						}),
@@ -5008,18 +5018,18 @@
 							hk: "2EVyTQ"
 						})
 					}), o.a.createElement(Gn, {
-						className: v,
+						className: _,
 						dropdownPrefix: "subreddit-sort-setting",
 						language: n,
-						fullSort: u,
+						fullSort: p,
 						onChange: e => {
-							u !== e && f(e, "sort")
+							p !== e && v(e, "sort")
 						}
 					}), o.a.createElement(ee.o, {
-						className: v,
+						className: _,
 						indent: !0,
-						on: !!d,
-						onClick: () => f(!d, "rememberCommunitySort"),
+						on: !!u,
+						onClick: () => v(!u, "rememberCommunitySort"),
 						label: s.fbt._("Remember per community", null, {
 							hk: "44RHeL"
 						}),
@@ -5027,20 +5037,20 @@
 							hk: "2zgrQz"
 						})
 					}), o.a.createElement(ns, {
-						className: v,
+						className: _,
 						dropdownPrefix: "subreddit-view-setting",
 						label: s.fbt._("Global content view", null, {
 							hk: "1tWTJK"
 						}),
-						layout: h,
-						onChange: e => f(e, "layout"),
+						layout: g,
+						onChange: e => v(e, "layout"),
 						subtext: s.fbt._("Choose how you would like content displayed in feeds. This control is also found above your feed.", null, {
 							hk: "1NyVGg"
 						})
 					}), o.a.createElement(ee.o, {
-						className: v,
-						on: !!g,
-						onClick: () => f(!g, "rememberCommunityLayout"),
+						className: _,
+						on: !!f,
+						onClick: () => v(!f, "rememberCommunityLayout"),
 						label: s.fbt._("Remember per community", null, {
 							hk: "42Ianh"
 						}),
@@ -5049,9 +5059,9 @@
 						}),
 						indent: !0
 					}), o.a.createElement(ee.o, {
-						className: v,
+						className: _,
 						on: !!i,
-						onClick: () => f(!i, "openPostInNewTab"),
+						onClick: () => v(!i, "openPostInNewTab"),
 						label: s.fbt._("Open posts in new tab", null, {
 							hk: "eOvQi"
 						}),
@@ -5059,13 +5069,13 @@
 							hk: "l3HZX"
 						})
 					}), o.a.createElement($.a, {
-						className: v
+						className: _
 					}, s.fbt._("Post Preferences", null, {
 						hk: "35wQ1I"
 					})), o.a.createElement(ee.o, {
-						className: v,
-						on: !!b,
-						onClick: () => f(!b, "useMarkdown"),
+						className: _,
+						on: !!h,
+						onClick: () => v(!h, "useMarkdown"),
 						label: s.fbt._("Default to markdown", null, {
 							hk: "1gcz1a"
 						}),
@@ -6775,6 +6785,7 @@
 					openPostInNewTab: "posts_in_new_tab",
 					over18: "adult_content",
 					privateFeeds: "private_feeds",
+					reduceAnimationsFromAwards: "reduce_animations_from_awards",
 					rememberCommunitySort: "remember_community_sort",
 					rpanDuDismissalTime: "rpan_du_dismissal_time",
 					sendWelcomeMessages: "welcome_message",
@@ -6961,4 +6972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.f1688805334396e89f10.js.map
+//# sourceMappingURL=Settings.f1f1dded4f86381dcd7f.js.map
