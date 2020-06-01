@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7e118b50e90b00e3aa81.js
-// Retrieved at 6/1/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e274b1da6b2047426f4c.js
+// Retrieved at 6/1/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -9063,7 +9063,7 @@
 						})), t
 					}
 				}, P = {
-					dtc_opt_out: (e, t, n) => Object.assign({
+					start_chatting_opt_out: (e, t, n) => Object.assign({
 						source: g.b.Chat,
 						action: g.a.OptOut,
 						noun: "down_to_chat_subreddit",
@@ -54244,4 +54244,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7e118b50e90b00e3aa81.js.map
+//# sourceMappingURL=Governance~Reddit.e274b1da6b2047426f4c.js.map
