@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.491fe74e28af9cdc76f1.js
-// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.5781b48e158d6cf23322.js
+// Retrieved at 6/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3408,7 +3408,7 @@
 					experimentEligibilitySelector: kt.a,
 					experimentName: _t.bb
 				});
-				return !(!t || Object(_t.zc)(t))
+				return !(!t || Object(_t.Ac)(t))
 			};
 			var wt = s("./src/reddit/selectors/gild.ts"),
 				Pt = s("./src/reddit/selectors/userPrefs.ts"),
@@ -3466,7 +3466,7 @@
 							experimentEligibilitySelector: kt.a,
 							experimentName: _t.ab
 						});
-						return !(!t || Object(_t.zc)(t))
+						return !(!t || Object(_t.Ac)(t))
 					})(e) && !Object(Pt.c)(e),
 					highlightTagsEnabled: jt,
 					isEditing: C.z,
@@ -16380,7 +16380,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.E
 				});
-				return !!t && !Object(n.zc)(t)
+				return !!t && !Object(n.Ac)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16395,7 +16395,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.X
 				});
-				return !(!t || Object(n.zc)(t))
+				return !(!t || Object(n.Ac)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16412,4 +16412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.491fe74e28af9cdc76f1.js.map
+//# sourceMappingURL=CommentsPage.5781b48e158d6cf23322.js.map

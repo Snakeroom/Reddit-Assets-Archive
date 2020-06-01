@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f590fe6b8120d02a9a9e.js
-// Retrieved at 6/1/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.90ce61de42366c67e744.js
+// Retrieved at 6/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -27,13 +27,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: l.Eb
 				});
-				return Object(l.zc)(t) ? void 0 : t
+				return Object(l.Ac)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: l.Fb
 				});
-				return Object(l.zc)(t) ? void 0 : t
+				return Object(l.Ac)(t) ? void 0 : t
 			}, (e, t) => e === l.Gb.Enabled && t === l.Gb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -82,7 +82,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "c0c098d-production"
+					SENTRY_RELEASE_VERSION: "a653f3b-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -885,9 +885,9 @@
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "RpanTitle", (function() {
-				return z
-			})), s.d(t, "RpanDescription", (function() {
 				return G
+			})), s.d(t, "RpanDescription", (function() {
+				return z
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var r = s("./node_modules/react/index.js"),
@@ -970,11 +970,11 @@
 				subscribeConfig: () => e(u.a.subscribeConfig(t.listingName)),
 				subscribeStats: t => e(u.a.subscribeStats(t)),
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
-			})), z = () => i.a.createElement("h3", {
+			})), G = () => i.a.createElement("h3", {
 				className: F.a.title
 			}, W._("Top broadcast right now", null, {
 				hk: "2hS1kb"
-			})), G = () => i.a.createElement("p", {
+			})), z = () => i.a.createElement("p", {
 				className: F.a.description
 			}, W._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
@@ -1088,7 +1088,7 @@
 						className: F.a.titleAndDescriptionContainer
 					}, i.a.createElement(L.a, {
 						to: this.props.location
-					}, i.a.createElement(z, null), e && i.a.createElement(G, null)))
+					}, i.a.createElement(G, null), e && i.a.createElement(z, null)))
 				}
 				renderLargeContent() {
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
@@ -1484,4 +1484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.f590fe6b8120d02a9a9e.js.map
+//# sourceMappingURL=RpanListingUnit.90ce61de42366c67e744.js.map

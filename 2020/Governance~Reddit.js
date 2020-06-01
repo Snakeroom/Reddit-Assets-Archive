@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.651afe9b5638a7b23fa1.js
-// Retrieved at 6/1/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0e0b8c0669cd9f86787e.js
+// Retrieved at 6/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -515,6 +515,83 @@
 			}
 		},
 		"./src/lib/reCaptchaEnterprise/ReCaptchaEnterpriseClient.ts": function(e, t) {},
+		"./src/lib/reCaptchaEnterprise/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return f
+			}));
+			n("./src/lib/reCaptchaEnterprise/reCaptcha.css");
+			var s = n("./src/config.ts"),
+				r = n("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const a = e => "object" == typeof e && null !== e,
+				o = () => a(globalThis.window) && a(globalThis.window.grecaptcha) && a(globalThis.window.grecaptcha.enterprise),
+				i = () => o() ? globalThis.window.grecaptcha.enterprise : void 0,
+				c = e => "https://www.google.com/recaptcha/enterprise.js?render=".concat(e),
+				d = e => Object(r.a)(c(e), o),
+				u = e => new Promise(t => e.ready(t));
+			var l, b = n("./node_modules/ts-error/lib/cjs.js"),
+				p = n.n(b);
+			class MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError extends p.a {
+				constructor() {
+					super("reCaptcha Enterprise site key is not set")
+				}
+			}
+			class ReCaptchaEnterpriseClientIsNotReadyError_ReCaptchaEnterpriseClientIsNotReadyError extends p.a {
+				constructor() {
+					super("reCaptcha Enterprise client is not ready")
+				}
+			}
+			class ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError extends p.a {
+				constructor() {
+					super("reCaptcha Enterprise client is not available")
+				}
+			}! function(e) {
+				e.PageLoad = "PAGE_LOAD"
+			}(l || (l = {}));
+			var f = l;
+			n("./src/lib/reCaptchaEnterprise/ReCaptchaEnterpriseClient.ts");
+			const m = new class {
+				constructor() {
+					var e = this;
+					let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s.a.reCaptchaEnterprise.siteKey,
+						n = arguments.length > 1 ? arguments[1] : void 0;
+					this.siteKey = t, this.isReady = !1, this.hasSiteKey = () => !!this.siteKey, this.hasClient = () => !!this.instance, this.setInstance = e => {
+						e && (this.instance = e, this.isReady = !1)
+					}, this.scriptUrl = () => c(this.siteKey), this.ensureSiteKey = () => {
+						if (!this.hasSiteKey) throw new MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError
+					}, this.ensureClient = () => {
+						const e = this.instance;
+						if (!e) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
+						return e
+					}, this.waitUntilClientIsReady = async () => {
+						const e = this.ensureClient();
+						return await u(e), this.isReady = !0, e
+					}, this.ensureClientIsReady = () => {
+						const e = this.ensureClient();
+						if (!this.isReady) throw new ReCaptchaEnterpriseClientIsNotReadyError_ReCaptchaEnterpriseClientIsNotReadyError;
+						return e
+					}, this.loadScript = async function() {
+						let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+						if (!e.instance || t) {
+							e.ensureSiteKey(), await d(e.siteKey);
+							const t = i();
+							if (!t) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
+							e.setInstance(t)
+						}
+						e.isReady || await e.waitUntilClientIsReady()
+					}, this.execute = async e => {
+						this.ensureSiteKey();
+						const t = this.ensureClientIsReady(),
+							n = await t.execute(this.siteKey, e);
+						if (e.fast) {
+							return JSON.parse(n)[1]
+						}
+						return n
+					}, this.setInstance(n || i())
+				}
+			};
+			t.b = m
+		},
 		"./src/lib/reCaptchaEnterprise/reCaptcha.css": function(e, t, n) {},
 		"./src/lib/timezone/index.ts": function(e, t, n) {
 			"use strict";
@@ -5675,13 +5752,13 @@
 								experimentEligibilitySelector: y.a,
 								experimentName: _.db
 							});
-							return !(!t || Object(_.zc)(t))
+							return !(!t || Object(_.Ac)(t))
 						})(s)) && ("repeat_purchaser" !== r.dealInfo.type || (e => {
 							const t = Object(y.c)(e, {
 								experimentEligibilitySelector: y.a,
 								experimentName: _.cb
 							});
-							return !(!t || Object(_.zc)(t))
+							return !(!t || Object(_.Ac)(t))
 						})(s)) && (e(C({
 							packageId: t
 						})), e(Object(d.i)(i.a.GOLD_TARGETED_OFFER_MODAL))) : o.c.captureMessage("Tried to show targeted offer, but could not find package id: ".concat(t))
@@ -8354,7 +8431,7 @@
 				}, (e, t, n, s, r) => !!r && !e && !n && s && !Object(ue.f)(t)),
 				Te = Object(ye.a)((e, t) => Object(he.c)(e, {
 					experimentEligibilitySelector: e => ve(e, t),
-					experimentName: J.Yb
+					experimentName: J.Zb
 				}), je.a);
 			var we, Ce = n("./src/reddit/selectors/frontpage.ts"),
 				De = n("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -8480,10 +8557,10 @@
 					if (!n || !r) return "";
 					const a = e.posts.models[t].title,
 						o = function(e) {
-							return Object(d.a)(e, J.kc, J.mc)
+							return Object(d.a)(e, J.lc, J.nc)
 						};
 					let i;
-					switch (a.length >= J.jc ? i = Object(ge.h)(e) : a.length <= J.lc && (i = Object(ge.m)(e)), i) {
+					switch (a.length >= J.kc ? i = Object(ge.h)(e) : a.length <= J.mc && (i = Object(ge.m)(e)), i) {
 						case J.wb.TruncTitleSubBrand:
 							return "".concat(o(a), " - ").concat(n.name, " - Reddit");
 						case J.wb.TruncTitleReddit:
@@ -14896,128 +14973,87 @@
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return D
+				return E
 			})), n.d(t, "a", (function() {
-				return A
+				return S
 			})), n.d(t, "d", (function() {
-				return R
+				return T
 			})), n.d(t, "b", (function() {
-				return k
+				return D
 			}));
 			var s = n("./src/lib/asyncActions/index.ts"),
-				r = (n("./src/lib/reCaptchaEnterprise/reCaptcha.css"), n("./src/config.ts")),
-				a = n("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const o = e => "object" == typeof e && null !== e,
-				i = () => o(globalThis.window) && o(globalThis.window.grecaptcha) && o(globalThis.window.grecaptcha.enterprise),
-				c = () => i() ? globalThis.window.grecaptcha.enterprise : void 0,
-				d = e => "https://www.google.com/recaptcha/enterprise.js?render=".concat(e),
-				u = e => Object(a.a)(d(e), i),
-				l = e => new Promise(t => e.ready(t));
-			var b, p = n("./node_modules/ts-error/lib/cjs.js"),
-				f = n.n(p);
-			class MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError extends f.a {
-				constructor() {
-					super("reCaptcha Enterprise site key is not set")
-				}
-			}
-			class ReCaptchaEnterpriseClientIsNotReadyError_ReCaptchaEnterpriseClientIsNotReadyError extends f.a {
-				constructor() {
-					super("reCaptcha Enterprise client is not ready")
-				}
-			}
-			class ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError extends f.a {
-				constructor() {
-					super("reCaptcha Enterprise client is not available")
-				}
-			}! function(e) {
-				e.PageLoad = "PAGE_LOAD"
-			}(b || (b = {}));
-			var m = b;
-			n("./src/lib/reCaptchaEnterprise/ReCaptchaEnterpriseClient.ts");
-			var O = new class {
-					constructor() {
-						var e = this;
-						let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r.a.reCaptchaEnterprise.siteKey,
-							n = arguments.length > 1 ? arguments[1] : void 0;
-						this.siteKey = t, this.isReady = !1, this.hasSiteKey = () => !!this.siteKey, this.hasClient = () => !!this.instance, this.setInstance = e => {
-							e && (this.instance = e, this.isReady = !1)
-						}, this.scriptUrl = () => d(this.siteKey), this.ensureSiteKey = () => {
-							if (!this.hasSiteKey) throw new MissingReCaptchaEnterpriseSiteKeyError_MissingReCaptchaEnterpriseSiteKeyError
-						}, this.ensureClient = () => {
-							const e = this.instance;
-							if (!e) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
-							return e
-						}, this.waitUntilClientIsReady = async () => {
-							const e = this.ensureClient();
-							return await l(e), this.isReady = !0, e
-						}, this.ensureClientIsReady = () => {
-							const e = this.ensureClient();
-							if (!this.isReady) throw new ReCaptchaEnterpriseClientIsNotReadyError_ReCaptchaEnterpriseClientIsNotReadyError;
-							return e
-						}, this.loadScript = async function() {
-							let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-							if (!e.instance || t) {
-								e.ensureSiteKey(), await u(e.siteKey);
-								const t = c();
-								if (!t) throw new ReCaptchaEnterpriseClientNotAvailableError_ReCaptchaEnterpriseClientNotAvailableError;
-								e.setInstance(t)
-							}
-							e.isReady || await e.waitUntilClientIsReady()
-						}, this.execute = async e => {
-							this.ensureSiteKey();
-							const t = this.ensureClientIsReady(),
-								n = await t.execute(this.siteKey, e);
-							if (e.fast) {
-								return JSON.parse(n)[1]
-							}
-							return n
-						}, this.setInstance(n || c())
-					}
-				},
-				g = n("./src/lib/sentry/index.ts");
+				r = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/reCaptchaEnterprise/index.ts"),
+				o = n("./src/lib/sentry/index.ts");
 
-			function _(e) {
+			function i(e) {
 				return t => async (n, s, r) => {
 					const a = s();
 					if (e(a)) return t(n, s, r)
 				}
 			}
-			var y = n("./node_modules/lodash/every.js"),
-				h = n.n(y),
-				j = n("./node_modules/aggregate-error/index.js"),
-				E = n.n(j),
-				I = n("./src/graphql/operations/VerifyRecaptchaToken.json");
-			class GraphQLRequestError_GraphQLRequestError extends f.a {
+			var c = n("./node_modules/lodash/every.js"),
+				d = n.n(c),
+				u = n("./src/reddit/constants/experiments.ts"),
+				l = n("./node_modules/aggregate-error/index.js"),
+				b = n.n(l),
+				p = n("./src/graphql/operations/VerifyRecaptchaToken.json"),
+				f = n("./node_modules/ts-error/lib/cjs.js"),
+				m = n.n(f);
+			class GraphQLRequestError_GraphQLRequestError extends m.a {
 				constructor(e) {
 					super("An error occurred during a GraphQL request. The following response was received:\n\n".concat(JSON.stringify(e, void 0, 2))), this.response = e
 				}
 			}
-			var S = n("./src/lib/makeGqlRequest/index.ts");
-			class MissingDataError_MissingDataError extends f.a {
+			var O = n("./src/lib/makeGqlRequest/index.ts");
+			class MissingDataError_MissingDataError extends m.a {
 				constructor() {
 					super("Missing data in GraphQL response")
 				}
 			}
-			class RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError extends f.a {
+			class RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError extends m.a {
 				constructor() {
 					super("GraphQL request failed without errors")
 				}
 			}
-			var v = n("./src/reddit/featureFlags/index.ts"),
-				T = n("./src/reddit/featureFlags/utils.ts");
-			const w = e => v.d.reCaptchaEnterprise(e),
-				C = Object(T.d)(T.f, T.g),
-				D = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
-				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
-				R = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
-				P = e => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, n, s) => {
+			var g = n("./src/reddit/featureFlags/index.ts"),
+				_ = n("./src/reddit/featureFlags/utils.ts"),
+				y = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const h = e => g.d.reCaptchaEnterprise(e),
+				j = Object(_.e)(_.g, _.h, e => !!Object(y.c)(e, {
+					experimentEligibilitySelector: Object(_.b)(r.u.UnitedStates),
+					experimentName: u.Vb
+				})),
+				E = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
+				I = () => i(e => d()([h, j, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
+					e(E.requested());
+					try {
+						await a.b.loadScript(), e(E.succeeded())
+					} catch (t) {
+						throw e(E.failed()), t
+					}
+				}),
+				S = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
+				v = e => i(e => d()([h, j, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
+					t(S.requested());
+					try {
+						const n = await a.b.execute(e);
+						return t(S.succeeded({
+							token: n
+						})), n
+					} catch (n) {
+						throw t(S.failed()), n
+					}
+				}),
+				T = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
+				w = e => i(e => d()([h, j, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
-					t(R.requested());
+					t(T.requested());
 					try {
 						await (async (e, t) => {
-							const n = await Object(S.a)(e, Object.assign({}, I, {
+							const n = await Object(O.a)(e, Object.assign({}, p, {
 								variables: {
 									input: {
 										token: t
@@ -15030,41 +15066,29 @@
 								ok: s,
 								errors: r
 							} = n.body.data.verifyRecaptchaToken;
-							if (r && r.length > 0) throw new E.a(r);
+							if (r && r.length > 0) throw new b.a(r);
 							if (!s) throw new RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError
-						})(r(), e), t(R.succeeded())
+						})(r(), e), t(T.succeeded())
 					} catch (a) {
-						throw t(R.failed()), a
+						throw t(T.failed()), a
 					}
 				}),
-				k = () => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (e, t) => {
-					try {
-						await e((() => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
-							e(D.requested());
-							try {
-								await O.loadScript(), e(D.succeeded())
-							} catch (t) {
-								throw e(D.failed()), t
-							}
-						}))());
-						const t = await e((e => _(e => h()([w, C, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
-							t(A.requested());
-							try {
-								const n = await O.execute(e);
-								return t(A.succeeded({
-									token: n
-								})), n
-							} catch (n) {
-								throw t(A.failed()), n
-							}
-						}))({
-							action: m.PageLoad
-						}));
-						t && await e(P(t))
-					} catch (n) {
-						g.c.captureException(n)
-					}
-				})
+				C = (e, t) => Object(_.g)(t) ? (e => "".concat("STAGING__").concat(e))(e) : e,
+				D = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a.a.PageLoad;
+					return i(e => d()([h, j, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (t, n) => {
+						const s = n();
+						try {
+							await t(I());
+							const n = await t(v({
+								action: C(e, s)
+							}));
+							n && await t(w(n))
+						} catch (r) {
+							o.c.captureException(r)
+						}
+					})
+				}
 		},
 		"./src/reddit/actions/redditEmbed.ts": function(e, t, n) {
 			"use strict";
@@ -20451,7 +20475,7 @@
 								experimentEligibilitySelector: e => Object(R.H)(e),
 								experimentName: O.jb
 							});
-							return Object(O.zc)(t) ? void 0 : t
+							return Object(O.Ac)(t) ? void 0 : t
 						})(V) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: c
@@ -24369,7 +24393,7 @@
 								experimentName: a.t,
 								expEventOverride: t
 							});
-							return !!(Object(a.zc)(n) ? void 0 : n)
+							return !!(Object(a.Ac)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -28725,7 +28749,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: r.experiment(a, s.uc),
+					experiment: r.experiment(a, s.vc),
 					post: r.post(a, e),
 					media: r.media(a, e),
 					profile: r.profile(a),
@@ -28737,7 +28761,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: r.experiment(t, s.uc),
+					experiment: r.experiment(t, s.vc),
 					post: r.post(t, e),
 					profile: r.profile(t),
 					subreddit: r.subreddit(t),
@@ -52507,7 +52531,7 @@
 					experimentEligibilitySelector: a.H,
 					experimentName: s.Y
 				});
-				return !(!t || Object(s.zc)(t))
+				return !(!t || Object(s.Ac)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardSheetV2.ts": function(e, t, n) {
@@ -52594,7 +52618,7 @@
 					experimentEligibilitySelector: e => Object(a.H)(e),
 					experimentName: s.kb
 				});
-				return Object(s.zc)(t) ? void 0 : t
+				return Object(s.Ac)(t) ? void 0 : t
 			})(e)
 		},
 		"./src/reddit/selectors/experiments/goldSubredditPowerups.ts": function(e, t, n) {
@@ -52644,27 +52668,27 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Xb.Enabled === Object(r.c)(e, {
+			const a = e => s.Yb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Vb
+					experimentName: s.Wb
 				}),
 				o = e => s.Tb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Mb
 				}),
-				i = e => s.fc.Enabled === Object(r.c)(e, {
-					experimentEligibilitySelector: r.a,
-					experimentName: s.ac
-				}),
-				c = e => s.gc.Enabled === Object(r.c)(e, {
+				i = e => s.gc.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.bc
 				}),
+				c = e => s.hc.Enabled === Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.cc
+				}),
 				d = (e, t, n) => {
 					const a = n(e, t);
-					return !(!a || !a.meter) && (a.meter.enabled && c(e) && s.xc.Enabled === Object(r.c)(e, {
+					return !(!a || !a.meter) && (a.meter.enabled && c(e) && s.yc.Enabled === Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.vc
+						experimentName: s.wc
 					}))
 				}
 		},
@@ -52726,9 +52750,9 @@
 					experimentName: r.S,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				u = e => e === r.pc.NoCommunityWidgets,
-				l = e => e === r.pc.NoRulesModerators,
-				b = e => e === r.pc.RelatedPostsDu
+				u = e => e === r.qc.NoCommunityWidgets,
+				l = e => e === r.qc.NoRulesModerators,
+				b = e => e === r.qc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, n) {
 			"use strict";
@@ -52737,7 +52761,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts");
 			const r = e => {
-				if (!Object(s.zc)(e)) return e || void 0
+				if (!Object(s.Ac)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
@@ -54163,4 +54187,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.651afe9b5638a7b23fa1.js.map
+//# sourceMappingURL=Governance~Reddit.0e0b8c0669cd9f86787e.js.map
