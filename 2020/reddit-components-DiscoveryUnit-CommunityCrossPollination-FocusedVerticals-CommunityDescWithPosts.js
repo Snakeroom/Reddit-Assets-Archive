@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.879e603ce9df5629769f.js
-// Retrieved at 6/1/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.0496407c2837dfc07c85.js
+// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -179,7 +179,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.i)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.x)(), this.setLocalStorageDisabled = Object(u.M)()
+					}, this.getLocalStorageDisabled = Object(u.y)(), this.setLocalStorageDisabled = Object(u.N)()
 				}
 				componentDidMount() {
 					const {
@@ -371,8 +371,8 @@
 				w = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
 				V = s.n(w);
 			const {
-				fbt: M
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(i.c)({
+				fbt: R
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = Object(i.c)({
 				isFeatureFlag: m.d,
 				isPending: m.e,
 				subredditData: (e, t) => {
@@ -387,7 +387,7 @@
 					} = t;
 					return Object(m.k)(e, s)
 				}
-			}), A = Object(o.b)(R);
+			}), A = Object(o.b)(M);
 			class H extends r.a.PureComponent {
 				render() {
 					const {
@@ -422,7 +422,7 @@
 						pubsub: c
 					}), r.a.createElement("div", {
 						className: V.a.topPostsTitle
-					}, M._("Top post", null, {
+					}, R._("Top post", null, {
 						hk: "3BdOuj"
 					})), d.slice(0, 1).map(e => r.a.createElement(U, {
 						key: e,
@@ -1251,4 +1251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.879e603ce9df5629769f.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.0496407c2837dfc07c85.js.map

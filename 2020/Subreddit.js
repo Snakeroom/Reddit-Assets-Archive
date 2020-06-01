@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3feec343f114ebeb7055.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.05436b8fc431a0961bf2.js
+// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -932,7 +932,7 @@
 			class y extends i.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.F)(s.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.G)(s.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -4558,7 +4558,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(mt.R)(Ct, !0, this.props.subredditId), this.props.sendEvent(Object(ut.d)("close"))
+						}), Object(mt.T)(Ct, !0, this.props.subredditId), this.props.sendEvent(Object(ut.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(ut.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -4584,7 +4584,7 @@
 						modHasEditedColors: n,
 						modHasEditedIcon: s,
 						subredditId: r
-					} = this.props, a = e && !(t && n && s) && (!Object($e.a)() || !Object(mt.q)(Ct, r));
+					} = this.props, a = e && !(t && n && s) && (!Object($e.a)() || !Object(mt.r)(Ct, r));
 					a !== this.state.visible && (this.setState({
 						visible: a
 					}), a && this.props.sendEvent(Object(ut.e)("mod_edu_banner")))
@@ -7489,4 +7489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.3feec343f114ebeb7055.js.map
+//# sourceMappingURL=Subreddit.05436b8fc431a0961bf2.js.map

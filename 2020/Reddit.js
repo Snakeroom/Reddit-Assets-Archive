@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c8eeffa94878b9a56311.js
-// Retrieved at 6/1/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d366e21db49cc52b39c2.js
+// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1917,14 +1917,14 @@
 						e && Ze.a.remove(os.a, {
 							domain: M.a.cookieDomain
 						});
-						const t = Object(cs.r)(H.a.ALPHA_CONSUMER);
-						t && Object(cs.C)(H.a.ALPHA_CONSUMER), (e || t) && Object(cs.S)(H.a.REDESIGN_MODAL, !0)
+						const t = Object(cs.s)(H.a.ALPHA_CONSUMER);
+						t && Object(cs.D)(H.a.ALPHA_CONSUMER), (e || t) && Object(cs.U)(H.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
-					} = this.props, s = Object(cs.r)(H.a.REDESIGN_MODAL);
-					!e && s ? t() : e && !s && Object(cs.S)(H.a.REDESIGN_MODAL, !0)
+					} = this.props, s = Object(cs.s)(H.a.REDESIGN_MODAL);
+					!e && s ? t() : e && !s && Object(cs.U)(H.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -4662,7 +4662,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(cs.D)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(cs.E)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -4672,7 +4672,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(cs.X)(Object.assign({}, e, {
+							recentSearches: Object(cs.Z)(Object.assign({}, e, {
 								section: _r.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -4759,7 +4759,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(cs.w)(this.props.currentUser.id);
+							const e = Object(cs.x)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -10252,7 +10252,7 @@
 			const Fe = 1e3;
 			class De extends m.a.Component {
 				constructor() {
-					super(...arguments), this.flush = Le()(() => Object(Ae.P)(this.props.storageKey, this.props.value), Fe)
+					super(...arguments), this.flush = Le()(() => Object(Ae.R)(this.props.storageKey, this.props.value), Fe)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -10814,7 +10814,7 @@
 						Object(Ht.i)(c) && e.push(Ve.d), e.length > 0 && n.dispatch(Object(u.c)(Object(C.a)(d.url, e)))
 					}
 					return Qt.a.initialize(), {
-						localStorageData: Object(Ae.o)()
+						localStorageData: Object(Ae.p)()
 					}
 				},
 				postRender: e => {
@@ -10894,7 +10894,7 @@
 									text: n.fbt._("Successfully logged in!", null, {
 										hk: "2POUVB"
 									})
-								})), i = !0, Object(Dt.c)(qe.a.JustLoggedIn), history.replaceState(history.state, "", Object(C.a)(window.location.href, [Ve.n]))), Object(Dt.b)(qe.a.JustLoggedOut) && (i = !0, Object(Dt.c)(qe.a.JustLoggedOut)), Object(L.b)(e), !1 !== Ae.y() && Object(R.a)().then(e => e.requestNotificationsPermissions).then(e => d.dispatch(e(i, !1))), t === g.yb.MULTIREDDIT && r.routeMatch) {
+								})), i = !0, Object(Dt.c)(qe.a.JustLoggedIn), history.replaceState(history.state, "", Object(C.a)(window.location.href, [Ve.n]))), Object(Dt.b)(qe.a.JustLoggedOut) && (i = !0, Object(Dt.c)(qe.a.JustLoggedOut)), Object(L.b)(e), !1 !== Ae.z() && Object(R.a)().then(e => e.requestNotificationsPermissions).then(e => d.dispatch(e(i, !1))), t === g.yb.MULTIREDDIT && r.routeMatch) {
 								const {
 									multiredditName: e,
 									username: t
@@ -12817,4 +12817,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.c8eeffa94878b9a56311.js.map
+//# sourceMappingURL=Reddit.d366e21db49cc52b39c2.js.map

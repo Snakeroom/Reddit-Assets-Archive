@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e274b1da6b2047426f4c.js
-// Retrieved at 6/1/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4fa63f54680cc00aba20.js
+// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1175,7 +1175,7 @@
 					t(w({
 						categoryId: e,
 						rank: s + 1
-					})), Object(u.G)(Object(l.e)(n()))
+					})), Object(u.H)(Object(l.e)(n()))
 				}
 		},
 		"./src/reddit/actions/changeUsername.ts": function(e, t, n) {
@@ -6948,7 +6948,7 @@
 				j = Object(a.a)(h),
 				E = e => {
 					const t = Date.now() - e,
-						n = Object(f.s)();
+						n = Object(f.t)();
 					return Object.keys(n).filter(e => n[e].when >= t).map(e => n[e])
 				},
 				I = e => {
@@ -6960,12 +6960,12 @@
 					return async (e, a) => {
 						if (!s) return;
 						if (!(t === p.f || t === p.b)) return;
-						0 === E(o.cb).length && Object(f.T)(!1);
+						0 === E(o.cb).length && Object(f.V)(!1);
 						let l = a();
 						if (Object(g.d)(l, {
 								listingKey: n,
 								postId: s
-							}) || Object(g.a)(l).length >= b.a || Object(f.z)() || E(o.v).length >= b.a) return;
+							}) || Object(g.a)(l).length >= b.a || Object(f.A)() || E(o.v).length >= b.a) return;
 						const O = Object(_.C)(l, {
 							listingKey: n,
 							postId: s
@@ -7022,14 +7022,14 @@
 				v = (Object(a.a)(S), "FEED_CHAINING__CHAINING_TOGGLED"),
 				T = Object(a.a)(v),
 				w = () => async e => {
-					Object(f.T)(!0), e(T({
+					Object(f.V)(!0), e(T({
 						isDismissed: !0
 					})), e(Object(l.e)(Object(l.d)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), O.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(f.T)(!1), e(T({
+						Object(f.V)(!1), e(T({
 							isDismissed: !1
 						}))
 					})))
@@ -7372,7 +7372,7 @@
 						t(p(e))
 					}
 				}, y = () => async (e, t, n) => {
-					Object(c.S)(a.a.REDESIGN_MODAL, !0), Object(l.H)(t()) && Object(i.e)(n.apiContext())
+					Object(c.U)(a.a.REDESIGN_MODAL, !0), Object(l.H)(t()) && Object(i.e)(n.apiContext())
 				}, h = "SET_ACCOUNT_MANAGER_MODAL_DATA";
 			var j;
 			! function(e) {
@@ -10582,7 +10582,7 @@
 				} = i, d = !!c && c >= 51 && c <= 100, l = !o || Object(u.a)(o), b = a && a.urlParams.subredditName === o, p = Object(L.H)(s), f = Object(k.g)(s, {
 					subredditId: Object(N.E)(s, o)
 				});
-				if (l || b || Object(D.p)() || !d || !p || f) return;
+				if (l || b || Object(D.q)() || !d || !p || f) return;
 				const m = Object(U.d)(t(), {
 					subredditName: o
 				});
@@ -10596,7 +10596,7 @@
 					id: "createPostCta",
 					kind: R.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(D.Q)(),
+					secondButtonAction: async () => Object(D.S)(),
 					secondButtonText: "Dismiss",
 					text: "There have been over ".concat(g, " visits to r/").concat(o, " in the past week. Create a new post and start the next conversation.")
 				}))
@@ -12444,7 +12444,7 @@
 						}),
 						kind: l.b.SuccessCommunity,
 						text: c
-					})), Object(i.K)(r + 1)
+					})), Object(i.L)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/general.ts": function(e, t, n) {
@@ -14887,10 +14887,10 @@
 					const t = u();
 					t && e(i(t))
 				}, u = () => {
-					return Object(a.n)(o.y) || void 0
+					return Object(a.o)(o.y) || void 0
 				}, l = () => async (e, t) => {
 					const n = t().publicAccessNetwork.userSettings;
-					Object(a.P)(o.y, n)
+					Object(a.R)(o.y, n)
 				}
 		},
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, n) {
@@ -19872,7 +19872,7 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[v.c, v.d, v.h, v.i].forEach(T), Object(A.B)(null), Object(w.a)(j.a.JustLoggedOut, !0), window.location.reload()
+						[v.c, v.d, v.h, v.i].forEach(T), Object(A.C)(null), Object(w.a)(j.a.JustLoggedOut, !0), window.location.reload()
 					})
 				}, P = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), k = n("./src/reddit/helpers/trackers/emailCollection.ts"), x = n("./src/reddit/helpers/trackers/emailVerification.ts"), N = n("./src/reddit/models/Toast/index.ts"), L = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), F = n("./src/reddit/selectors/user.ts"), G = n("./src/telemetry/index.ts"), B = function(e, t) {
 					var n = {};
@@ -54244,4 +54244,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.e274b1da6b2047426f4c.js.map
+//# sourceMappingURL=Governance~Reddit.4fa63f54680cc00aba20.js.map

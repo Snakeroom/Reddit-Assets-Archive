@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0e7e2ca67f5a33105159.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6c7472f336816f27c86b.js
+// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -485,12 +485,13 @@
 				r = s("./node_modules/react/index.js"),
 				o = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
-				c = s("./src/reddit/helpers/trackers/announcement.ts"),
-				a = s("./src/reddit/helpers/trackers/banners.ts"),
-				d = s("./src/reddit/hooks/useTracking.ts"),
-				l = s("./src/reddit/selectors/experiments/announcementToolV2.ts"),
-				u = s("./src/reddit/selectors/live.ts");
-			const m = Object(n.a)({
+				c = s("./src/reddit/helpers/localStorage/index.ts"),
+				a = s("./src/reddit/helpers/trackers/announcement.ts"),
+				d = s("./src/reddit/helpers/trackers/banners.ts"),
+				l = s("./src/reddit/hooks/useTracking.ts"),
+				u = s("./src/reddit/selectors/experiments/announcementToolV2.ts"),
+				m = s("./src/reddit/selectors/live.ts");
+			const p = Object(n.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointAnnouncementsCarousel",
 					isReady(e) {
@@ -510,7 +511,7 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.tsx"
 					}
 				}),
-				p = Object(n.a)({
+				h = Object(n.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointLegacyAnnouncement",
 					isReady(e) {
@@ -530,7 +531,7 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx"
 					}
 				}),
-				h = Object(n.a)({
+				b = Object(n.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointAnnouncement",
 					isReady(e) {
@@ -550,34 +551,39 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/LiveThread/index.tsx"
 					}
 				}),
-				b = () => {
-					const e = Object(i.d)(u.a, (e, t) => e && t && e[0].id === t[0].id || !1),
-						t = Object(i.d)(u.b),
-						s = Object(i.d)(l.a);
-					return t ? o.a.createElement(h, {
+				g = () => {
+					const e = Object(i.d)(m.a, (e, t) => e && t && e[0].id === t[0].id || !1),
+						t = Object(i.d)(m.b),
+						s = Object(i.d)(u.a);
+					return t ? o.a.createElement(b, {
 						featuredLiveThread: t
-					}) : e && e.length ? s ? o.a.createElement(m, {
+					}) : e && e.length ? s ? o.a.createElement(p, {
 						announcements: e
-					}) : o.a.createElement(g, {
+					}) : o.a.createElement(y, {
 						announcement: e[0]
 					}) : null
 				},
-				g = e => {
+				y = e => {
 					let {
 						announcement: t
 					} = e;
-					const [s, n] = Object(r.useState)(!1), i = Object(d.a)(), l = Object(r.useCallback)(() => {
-						i(Object(c.a)("click", t))
-					}, [t, i]), u = Object(r.useCallback)(() => {
-						n(!0), i(Object(a.c)(t.id, t))
+					const [s, n] = Object(r.useState)(!0), i = Object(l.a)(), u = Object(r.useCallback)(() => {
+						i(Object(a.a)("click", t))
+					}, [t, i]), m = Object(r.useCallback)(() => {
+						n(!0), i(Object(d.c)(t.id, t)), Object(c.Q)(t.id, t.maxImpressionsCount)
 					}, [t, i]);
-					return s ? null : o.a.createElement(p, {
+					return Object(r.useEffect)(() => {
+						const {
+							id: e
+						} = t, s = Object(c.n)(e);
+						t && s < t.maxImpressionsCount && (n(!1), Object(c.Q)(e, s + 1))
+					}, []), s ? null : o.a.createElement(h, {
 						announcement: t,
-						onBtnClick: l,
-						onClose: u
+						onBtnClick: u,
+						onClose: m
 					})
 				};
-			t.a = b
+			t.a = g
 		},
 		"./src/reddit/components/InFeedPostCreation/async.tsx": function(e, t, s) {
 			"use strict";
@@ -1906,4 +1912,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0e7e2ca67f5a33105159.js.map
+//# sourceMappingURL=Frontpage.6c7472f336816f27c86b.js.map

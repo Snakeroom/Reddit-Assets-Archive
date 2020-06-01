@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.6c45190af15361c4fb5c.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.a7540495c82d2f2a1a89.js
+// Retrieved at 6/1/2020, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				g = n("./src/reddit/actions/toaster.ts"),
-				f = n("./src/lib/makeApiRequest/index.ts"),
-				O = n("./src/lib/omitHeaders/index.ts"),
+				O = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/lib/omitHeaders/index.ts"),
 				k = n("./src/reddit/constants/headers.ts"),
 				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var y = async (e, t, n, s, o, c) => {
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: c
 				};
-				return Object(f.a)(Object(O.a)(e, [k.a]), {
+				return Object(O.a)(Object(f.a)(e, [k.a]), {
 					method: b.ab.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
@@ -251,7 +251,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.N)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.O)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -388,7 +388,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return O
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/throttle.js"),
@@ -423,7 +423,7 @@
 				}
 				return n
 			};
-			class f extends a.a.Component {
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = o()(() => {
 						const {
@@ -480,7 +480,7 @@
 					[b.a.mIsSelected]: n.isSelected,
 					[b.a.topics]: n.isTopicsStyle
 				});
-				return a.a.createElement(f, x({
+				return a.a.createElement(O, x({
 					className: s
 				}, n))
 			}
@@ -795,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.6c45190af15361c4fb5c.js.map
+//# sourceMappingURL=GivePremiumModal.a7540495c82d2f2a1a89.js.map
