@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.ddc478239ccb0e0d0518.js
-// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.85677678c6e99ff30f5c.js
+// Retrieved at 6/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -471,6 +471,8 @@
 				LivestreamingCommentWrapper: "_2eTWiuSXGVaOGc5m6zQgeI",
 				livestreamingCommentWrapper: "_2eTWiuSXGVaOGc5m6zQgeI",
 				livestreamingTimeStamp: "_3tm5nGCrgdKGC7teW20lkz",
+				DeleteText: "_3NYb7Rn0lpswKMy5MQyLQd",
+				deleteText: "_3NYb7Rn0lpswKMy5MQyLQd",
 				HighlightTarget: "_1xb8KSvW9CPjS0xPMZ7Dwf",
 				highlightTarget: "_1xb8KSvW9CPjS0xPMZ7Dwf",
 				Time: "_3zcUapb9ifA8a4OWCpuUSq",
@@ -485,8 +487,6 @@
 				topMeta: "SJ4qRd99ApBBSiNYdfSoh",
 				ChatIcon: "_3vCuaD6pLcosMuwzU6nhAB",
 				chatIcon: "_3vCuaD6pLcosMuwzU6nhAB",
-				DeleteText: "_3NYb7Rn0lpswKMy5MQyLQd",
-				deleteText: "_3NYb7Rn0lpswKMy5MQyLQd",
 				Reply: "_3F-9o12RM4UV20egYU2h21",
 				reply: "_3F-9o12RM4UV20egYU2h21",
 				CommentTruncated: "_3PXAOD2xpFqPtI_Lvf2_yc",
@@ -2431,4 +2431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.ddc478239ccb0e0d0518.js.map
+//# sourceMappingURL=ChatPost.85677678c6e99ff30f5c.js.map

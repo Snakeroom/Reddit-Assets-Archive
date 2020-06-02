@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.fc555101d92283f035fe.js
-// Retrieved at 6/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.40fb9df5d50275364c8b.js
+// Retrieved at 6/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && P.push(n[d][0]), n[d] = 0;
@@ -670,7 +670,7 @@
 					"reddit-components-Governance-ClaimPointsBanner": "cf3d4beeeea933269a40",
 					AuthorHovercard: "8af7608e65a5f98549ad",
 					AwardTooltip: "a38b7ba17f1b5f686b54",
-					ChatPost: "6a9a38351429b98d6a66",
+					ChatPost: "dc95976c296bc0050d39",
 					GildModal: "3ed1ab8f02bbcd78346c",
 					CommentsPageNativeAd: "d5fa32dd9901fd00c0af",
 					EconomicsSupportDonationAmount: "2a59fde9d98256e177a2",
@@ -996,7 +996,7 @@
 						ChangeUsernameTooltip: "1ff67928950c57d4e3c9",
 						Coins: "9d19479fc1550931ea48",
 						CoinsMobile: "9c049f7b38d298418cf5",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2": "9d751e3e6414e687ba8d",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2": "00f9cfdb948f7c39784b",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac": "374dc2a79ef0ab36e0a7",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a": "5d1d3350ba6e2e33f182",
 						PostDraft: "f4e40c9018dc801e6861",
@@ -1065,10 +1065,10 @@
 						RedesignChat: "3fef4057fff22be64b2b",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit": "d139391720ae7bcd24d5",
 						Subreddit: "fa4e0ac932c62a0935c7",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42": "a29216ce21a675af1e73",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42": "b04205be358303cae925",
 						"ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc": "8744daae3b7c1578a98e",
-						CollectionCommentsPage: "e0dde6610d722c42404e",
-						CommentsPage: "5781b48e158d6cf23322",
+						CollectionCommentsPage: "16209148d64df9bc5f3d",
+						CommentsPage: "aaf5fddad2ea4802122b",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "89d5b210bfc876cd6658",
 						ModerationPages: "e5dfa2aeb74cf2079676",
 						"vendors~PostCreation~RichTextEditor": "35837ecf3d087e76be2f",
@@ -1112,7 +1112,7 @@
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"ChatMessageInput~PublicAccessNetwork": "81cdcdb439d134a5b60b",
 						"LiveVideoPlayer~PublicAccessNetwork": "df083c58d2169d81188d",
-						PublicAccessNetwork: "e6439b8f95b89e5184b1",
+						PublicAccessNetwork: "a87845e0306605681324",
 						"vendors~ModListing": "adcaa0ac8d5dc193132e",
 						ModListing: "f14923b20e942d98b657",
 						"vendors~ModQueuePages": "0f73702bf47f2335174f",
@@ -1146,7 +1146,7 @@
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "ec669f01a443f0dc3fd0",
 						"reddit-components-InFeedPostCreation": "1259529e9bc901b5e5e0",
 						"reddit-components-TabBadger-Component": "656832e77f4b5fe1fd29",
-						RpanListingUnit: "8477078400df3d1a1150",
+						RpanListingUnit: "1970dc1903c6c47642de",
 						GovernanceVotingBanner: "3b2b62377b0204887ab3",
 						StructuredStyles: "e31a0b8884beb7d04778",
 						CustomBadgeHovercardTooltip: "63e14676b1113038e23f",
@@ -1182,7 +1182,7 @@
 						"reddit-components-Governance-ClaimPointsBanner": "7d9cb7cb7f6bf07621d1",
 						AuthorHovercard: "1a91c562e404cb495c9e",
 						AwardTooltip: "9674f174bb794a7b978b",
-						ChatPost: "ddc478239ccb0e0d0518",
+						ChatPost: "85677678c6e99ff30f5c",
 						GildModal: "e744e59e9680a0ade478",
 						CommentsPageNativeAd: "01f6eff0922c1fe0a69d",
 						EconomicsSupportDonationAmount: "417f0965a4373d2a0308",
@@ -1292,4 +1292,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=runtime~Reddit.fc555101d92283f035fe.js.map
+//# sourceMappingURL=runtime~Reddit.40fb9df5d50275364c8b.js.map

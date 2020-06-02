@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.5781b48e158d6cf23322.js
-// Retrieved at 6/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.aaf5fddad2ea4802122b.js
+// Retrieved at 6/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -15321,7 +15321,7 @@
 		"./src/reddit/pages/CommentsPage/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "CommentsPage", (function() {
-				return ut
+				return ht
 			}));
 			var n = s("./node_modules/core-js/modules/es6.array.sort.js"),
 				o = s.n(n),
@@ -15517,6 +15517,14 @@
 					}
 				}),
 				it = e => {
+					let {
+						postId: t,
+						commentId: s,
+						commentsPageKey: n
+					} = e;
+					return s ? Object(I.a)(t) : n
+				},
+				dt = e => {
 					const {
 						state: t
 					} = e.location, s = u()(t, U.a.IsOverlay, !1), n = u()(t, U.a.CloseLocation, null), o = u()(t, U.a.ScrollOnLoad, !1);
@@ -15526,7 +15534,7 @@
 						partialPostId: a,
 						subredditName: i
 					} = e.match.params, d = Object(Z.m)(a), c = r && Object(Q.e)(r);
-					return x.a.createElement(ut, {
+					return x.a.createElement(ht, {
 						closeLocation: n,
 						commentId: c,
 						commentsPageKey: e.commentsPageKey,
@@ -15539,8 +15547,8 @@
 						subredditName: i
 					})
 				},
-				dt = Object(q.t)(),
-				ct = () => Object(C.c)({
+				ct = Object(q.t)(),
+				lt = () => Object(C.c)({
 					apiError: ee.c,
 					apiPending: ee.d,
 					canCommentAsModerator: (e, t) => {
@@ -15578,7 +15586,20 @@
 					post: ee.F,
 					postSEOV2IdCardVariant: ie.k,
 					profileCollectionsEnabled: X.a,
-					replyComment: ee.t,
+					replyComment: (e, t) => {
+						let {
+							postId: s,
+							commentId: n,
+							commentsPageKey: o
+						} = t;
+						return Object(ee.t)(e, {
+							commentsPageKey: it({
+								postId: s,
+								commentId: n,
+								commentsPageKey: o
+							})
+						})
+					},
 					shouldOpenPostInNewTab: ue.U,
 					subredditAboutInfo: (e, t) => {
 						let {
@@ -15597,7 +15618,7 @@
 					userPrefs: ue.kb,
 					isInCommentsPageAdExperiment: ae.a
 				}),
-				lt = (e, t) => ({
+				mt = (e, t) => ({
 					dismissTruncation: t => e(Object(he.a)({
 						subredditId: t
 					})),
@@ -15619,8 +15640,8 @@
 					truncateCommentsList: () => e(Object(L.b)()),
 					fetchCommentsNativeAd: t => e(Object(N.a)(t))
 				}),
-				mt = Object(f.b)(ct, lt);
-			class pt extends x.a.Component {
+				pt = Object(f.b)(lt, mt);
+			class ut extends x.a.Component {
 				constructor(e) {
 					super(e), this.collectionPostWrapperRef = null, this.didRenderLoading = !1, this.needsUpdatedMeasurements = !0, this.scrollY = null, this.recheckScrollTimer = -1, this.postPaused = !0, this.setPostScrollItemRef = e => {
 						this.postScrollItemRef = e, setTimeout(this.handleScroll)
@@ -15877,7 +15898,7 @@
 						v = d.belongsTo.type === K.a.PROFILE,
 						C = Object(We.a)(d) && (!v || h),
 						O = !a;
-					return x.a.createElement(bt, {
+					return x.a.createElement(gt, {
 						closeLocation: s,
 						commentsPageKey: o,
 						containerRef: this.setLayoutRef,
@@ -15964,24 +15985,24 @@
 						sendEvent: j,
 						sort: w,
 						subredditAboutInfo: P,
-						subredditOrProfile: T
+						subredditOrProfile: I
 					} = this.props;
 					if (!E) return null;
-					const N = this.isCommentPermalink(),
-						L = [],
-						R = E.isLocked && !s,
-						F = !(N || E.isArchived || P && P.userIsBanned);
-					if (R) L.push(x.a.createElement(Ie.a, {
+					const T = this.isCommentPermalink(),
+						N = [],
+						L = E.isLocked && !s,
+						R = !(T || E.isArchived || P && P.userIsBanned);
+					if (L) N.push(x.a.createElement(Ie.a, {
 						key: "commentThreadBanner",
-						subredditOrProfile: T
+						subredditOrProfile: I
 					}));
-					else if (E.isArchived) L.push(x.a.createElement(Pe.a, {
+					else if (E.isArchived) N.push(x.a.createElement(Pe.a, {
 						key: "commentThreadBanner"
 					}));
-					else if (F && !m && !g)
+					else if (R && !m && !g)
 						if (p) {
 							const e = Object(S.a)(O.c.replyToPost, y);
-							L.push(x.a.createElement(be.a, {
+							N.push(x.a.createElement(be.a, {
 								autofocus: !1,
 								isTopLevelComment: !0,
 								depth: 0,
@@ -16000,7 +16021,7 @@
 									hk: "E1PqE"
 								})
 							}))
-						} else L.push(x.a.createElement(ge.a, {
+						} else N.push(x.a.createElement(ge.a, {
 							key: "loggedOutCommentForm",
 							language: h,
 							location: b,
@@ -16008,10 +16029,10 @@
 							openRegisterModal: v,
 							origin: C
 						}));
-					if (r && L.push(x.a.createElement(Se.a, {
+					if (r && N.push(x.a.createElement(Se.a, {
 							hasModeratorPostPermissions: i,
 							key: "contestModeBanner"
-						})), !m && !g && L.push(x.a.createElement(Oe.a, {
+						})), !m && !g && N.push(x.a.createElement(Oe.a, {
 							commentId: n,
 							elementRef: this.updateCommentSortRef,
 							isOverlay: u,
@@ -16028,7 +16049,7 @@
 							postId: y
 						})), !t || d || m || g)
 						if (!e || d || g)
-							if (g) L.push(x.a.createElement(ot, {
+							if (g) N.push(x.a.createElement(ot, {
 								commentSort: w,
 								key: "otherDiscussions",
 								postId: y,
@@ -16036,10 +16057,14 @@
 								postPermalink: E.permalink
 							}));
 							else if (m) {
-						if (T && T.id) {
+						if (I && I.id) {
 							const e = k ? Object(S.a)(O.c.replyToComment, k.id) : Object(S.a)(O.c.replyToPost, y),
-								s = n ? Object(I.a)(y) : o;
-							L.push(x.a.createElement(ve.a, {
+								s = it({
+									postId: y,
+									commentId: n,
+									commentsPageKey: o
+								});
+							N.push(x.a.createElement(ve.a, {
 								commentId: n,
 								commentsPageKey: s,
 								draftKey: e,
@@ -16047,7 +16072,7 @@
 								key: "commentsChat",
 								postId: y,
 								renderedInOverlay: u,
-								subredditId: T.id
+								subredditId: I.id
 							}, t => {
 								let {
 									scrollToBottom: n
@@ -16073,7 +16098,7 @@
 								})
 							}))
 						}
-					} else L.push(x.a.createElement("div", {
+					} else N.push(x.a.createElement("div", {
 						className: Object(_.a)(Qe.a.CommentsPaneWrapper, {
 							[Qe.a.mIsInOverlay]: u
 						}),
@@ -16088,34 +16113,34 @@
 						commentsPageKey: o,
 						postId: y,
 						renderedInOverlay: u
-					})))), e && d ? L.push(x.a.createElement(fe.e, {
+					})))), e && d ? N.push(x.a.createElement(fe.e, {
 						key: "commentsErrorState",
 						postId: y,
 						commentId: n,
 						sort: w,
 						apiError: e
-					})) : !a && t && L.push(x.a.createElement(fe.a, {
+					})) : !a && t && N.push(x.a.createElement(fe.a, {
 						isAvatarsInCommentsEnabled: c,
 						key: "commentsPlaceholder"
 					}));
-					else L.push(x.a.createElement(fe.e, {
+					else N.push(x.a.createElement(fe.e, {
 						postId: y,
 						commentId: n,
 						sort: w,
 						apiError: e
 					}));
-					else this.didRenderLoading = !0, L.push(x.a.createElement(fe.a, {
+					else this.didRenderLoading = !0, N.push(x.a.createElement(fe.a, {
 						isAvatarsInCommentsEnabled: c,
 						key: "commentsPlaceholder"
 					}));
 					return x.a.createElement(J.a.Provider, {
 						value: this.sendEventWithName
-					}, L)
+					}, N)
 				}
 			}
-			const ut = dt(mt(Object(Fe.c)(pt))),
-				ht = P.a.wrapped(Ee.a, "DetailsPageSidebar", Qe.a),
-				bt = e => {
+			const ht = ct(pt(Object(Fe.c)(ut))),
+				bt = P.a.wrapped(Ee.a, "DetailsPageSidebar", Qe.a),
+				gt = e => {
 					const {
 						children: t,
 						commentsPageKey: s,
@@ -16181,7 +16206,7 @@
 							maxWidth: u,
 							subredditId: p.id
 						})]),
-						sidebar: p && x.a.createElement(ht, {
+						sidebar: p && x.a.createElement(bt, {
 							commentsPageKey: s,
 							post: l,
 							subredditName: p.name,
@@ -16189,7 +16214,7 @@
 						})
 					})
 				};
-			t.default = Object(Je.a)(it)
+			t.default = Object(Je.a)(dt)
 		},
 		"./src/reddit/pages/CommentsPage/withPageSorting.tsx": function(e, t, s) {
 			"use strict";
@@ -16412,4 +16437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.5781b48e158d6cf23322.js.map
+//# sourceMappingURL=CommentsPage.aaf5fddad2ea4802122b.js.map
