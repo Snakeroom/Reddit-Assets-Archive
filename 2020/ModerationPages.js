@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e5dfa2aeb74cf2079676.js
-// Retrieved at 6/1/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.370fdf21e5807252ebd6.js
+// Retrieved at 6/2/2020, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6071,6 +6071,8 @@
 				welcomeMessageHelpLink: "_3-XV8EhlxRlIzoFKUI6gmQ",
 				fullWidthTextContainer: "_2SnK_8NMPSqmFfF-es2GGa",
 				subtextContainer: "_2sWG233wmE9wNycTEyRHRN",
+				sectionSubtext: "_2gZA-d4bPf-v-QStyl39CP",
+				subtextLink: "_3m7YXm3a55mNltI6wwKkal",
 				numCommunityTopicsSelected: "Ty_datAAaSbn2GX5-1O58",
 				welcomeMessageEnabled: "_21a0DjKnRl3i1ItjJ8cSyf"
 			}
@@ -6563,19 +6565,36 @@
 						subtext: y.fbt._("Comments that our model scores as toxic will be automatically collapsed.", null, {
 							hk: "Rohtu"
 						})
-					})), r.a.createElement(N.a, null, y.fbt._("Privacy", null, {
-						hk: "758Oq"
+					})), r.a.createElement(N.a, null, y.fbt._("Discover", null, {
+						hk: "1I53SY"
+					})), r.a.createElement(T.m, {
+						className: K.a.sectionSubtext
+					}, y.fbt._("Show your community to the general Reddit population or just to people who have similar interests, by adjusting how people can find it. Not sure what’s best for you? {=Learn More.}", [y.fbt._param("=Learn More.", r.a.createElement("a", {
+						className: K.a.subtextLink,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						href: "https://mods.reddithelp.com/hc/en-us/sections/360000685771-General-Common-Questions"
+					}, y.fbt._("Learn More.", null, {
+						hk: "3oTITT"
+					})))], {
+						hk: "4nomNH"
 					})), r.a.createElement(T.o, {
 						on: c,
 						onClick: () => i(!c, "contentVisible"),
-						label: y.fbt._("Allow posts in /r/all, /r/popular, default, and trending lists", null, {
-							hk: "3tUKh6"
+						label: y.fbt._("Show up in high-traffic feeds", null, {
+							hk: "3l7KBc"
+						}),
+						subtext: y.fbt._("Allow your community to be in r/all, r/popular, and trending lists where it can be seen by the general Reddit population.", null, {
+							hk: "iH0lY"
 						})
 					}), r.a.createElement(T.o, {
 						on: d,
 						onClick: () => i(!d, "allowDiscovery"),
-						label: y.fbt._("Allow community in discovery and onboarding", null, {
-							hk: "XAWET"
+						label: y.fbt._("Get recommended to individual redditors", null, {
+							hk: "4wmaiH"
+						}),
+						subtext: y.fbt._("Let Reddit recommend your community to people who have similar interests.", null, {
+							hk: "487MMM"
 						})
 					}), r.a.createElement(N.a, null, y.fbt._("Advanced Settings", null, {
 						hk: "3TL9Or"
@@ -28961,4 +28980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.e5dfa2aeb74cf2079676.js.map
+//# sourceMappingURL=ModerationPages.370fdf21e5807252ebd6.js.map
