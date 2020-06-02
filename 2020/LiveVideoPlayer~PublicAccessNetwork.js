@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.df083c58d2169d81188d.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.84a7a4e7ff1fb965d2a9.js
+// Retrieved at 6/2/2020, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -186,7 +186,7 @@
 					}, this.state = {
 						isInitialized: !1,
 						isMuteForced: !1
-					}, this.hls = void 0, this.onVideoPause = this.onVideoPause.bind(this), this.onVideoPlay = this.onVideoPlay.bind(this), this.onTimeUpdated = this.onTimeUpdated.bind(this), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
+					}, this.hls = void 0, this.onVideoLoadedData = this.onVideoLoadedData.bind(this), this.onVideoPause = this.onVideoPause.bind(this), this.onVideoPlay = this.onVideoPlay.bind(this), this.onTimeUpdated = this.onTimeUpdated.bind(this), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 				}
 				get video() {
 					return this.videoRef.current
@@ -208,15 +208,14 @@
 					const {
 						controls: e,
 						muted: t,
-						onEnded: s,
-						onLoadedData: i
+						onEnded: s
 					} = this.props;
 					return r.a.createElement("video", {
 						controls: e,
 						tabIndex: e ? 0 : -1,
 						muted: t || this.state.isMuteForced,
 						onEnded: s,
-						onLoadedData: i,
+						onLoadedData: this.onVideoLoadedData,
 						onPlay: this.onVideoPlay,
 						onPause: this.onVideoPause,
 						onTimeUpdate: this.onTimeUpdated,
@@ -294,17 +293,23 @@
 				onTimeUpdated() {
 					this.video && this.props.onTimeUpdate && this.props.onTimeUpdate(this.video.currentTime)
 				}
+				onVideoLoadedData() {
+					const {
+						onLoadedData: e
+					} = this.props, t = !this.video || this.video.paused;
+					this.hls && t && this.hls.stopLoad(), e && e()
+				}
 				onVideoPause() {
 					const {
 						onPause: e
 					} = this.props;
-					e && e()
+					this.hls && this.hls.stopLoad(), e && e()
 				}
 				onVideoPlay() {
 					const {
 						onPlay: e
 					} = this.props;
-					e && e(), this.state.isMuteForced && this.setState(Object.assign({}, this.state, {
+					this.hls && this.hls.startLoad(), e && e(), this.state.isMuteForced && this.setState(Object.assign({}, this.state, {
 						isMuteForced: !1
 					}))
 				}
@@ -318,4 +323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.df083c58d2169d81188d.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.84a7a4e7ff1fb965d2a9.js.map

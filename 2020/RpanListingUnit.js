@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1970dc1903c6c47642de.js
-// Retrieved at 6/1/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ad16706719806528803a.js
+// Retrieved at 6/2/2020, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -36,9 +36,9 @@
 				return Object(l.Ac)(t) ? void 0 : t
 			}, (e, t) => e === l.Gb.Enabled && t === l.Gb.Enabled);
 			var h = s("./src/config.ts");
-			var b = s("./src/reddit/selectors/user.ts");
+			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
-			const p = e => {
+			const b = e => {
 					const t = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						s = t.length,
 						r = new Uint32Array(e);
@@ -82,7 +82,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "d783e8d-production"
+					SENTRY_RELEASE_VERSION: "bf8d7bf-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -232,7 +232,7 @@
 					getOrCreateSalt() {
 						const e = j.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(o.a)(e);
-						return t || (t = p(j.SALT_LENGTH), Object(o.b)(e, t, j.SALT_TIME_TO_LIVE)), t
+						return t || (t = b(j.SALT_LENGTH), Object(o.b)(e, t, j.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return Object.assign({}, this.getDashInstanceData(), this.getHlsInstanceData())
@@ -257,7 +257,7 @@
 						forwardedRef: t
 					}))),
 					A = Object(n.c)({
-						redditUserId: b.g,
+						redditUserId: p.g,
 						isMuxEnabled: u
 					});
 				return Object(a.b)(A, null, null, {
@@ -449,7 +449,7 @@
 					}, this.state = {
 						isInitialized: !1,
 						isMuteForced: !1
-					}, this.hls = void 0, this.onVideoPause = this.onVideoPause.bind(this), this.onVideoPlay = this.onVideoPlay.bind(this), this.onTimeUpdated = this.onTimeUpdated.bind(this), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
+					}, this.hls = void 0, this.onVideoLoadedData = this.onVideoLoadedData.bind(this), this.onVideoPause = this.onVideoPause.bind(this), this.onVideoPlay = this.onVideoPlay.bind(this), this.onTimeUpdated = this.onTimeUpdated.bind(this), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 				}
 				get video() {
 					return this.videoRef.current
@@ -471,15 +471,14 @@
 					const {
 						controls: e,
 						muted: t,
-						onEnded: s,
-						onLoadedData: r
+						onEnded: s
 					} = this.props;
 					return i.a.createElement("video", {
 						controls: e,
 						tabIndex: e ? 0 : -1,
 						muted: t || this.state.isMuteForced,
 						onEnded: s,
-						onLoadedData: r,
+						onLoadedData: this.onVideoLoadedData,
 						onPlay: this.onVideoPlay,
 						onPause: this.onVideoPause,
 						onTimeUpdate: this.onTimeUpdated,
@@ -557,17 +556,23 @@
 				onTimeUpdated() {
 					this.video && this.props.onTimeUpdate && this.props.onTimeUpdate(this.video.currentTime)
 				}
+				onVideoLoadedData() {
+					const {
+						onLoadedData: e
+					} = this.props, t = !this.video || this.video.paused;
+					this.hls && t && this.hls.stopLoad(), e && e()
+				}
 				onVideoPause() {
 					const {
 						onPause: e
 					} = this.props;
-					e && e()
+					this.hls && this.hls.stopLoad(), e && e()
 				}
 				onVideoPlay() {
 					const {
 						onPlay: e
 					} = this.props;
-					e && e(), this.state.isMuteForced && this.setState(Object.assign({}, this.state, {
+					this.hls && this.hls.startLoad(), e && e(), this.state.isMuteForced && this.setState(Object.assign({}, this.state, {
 						isMuteForced: !1
 					}))
 				}
@@ -651,11 +656,11 @@
 					}))) : null
 				}
 			}
-			var b = Object(a.b)(u, {})(h),
-				p = s("./src/reddit/selectors/comments.ts"),
+			var p = Object(a.b)(u, {})(h),
+				b = s("./src/reddit/selectors/comments.ts"),
 				v = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
-				const s = Object(p.n)(e, t),
+				const s = Object(b.n)(e, t),
 					r = Object(v.H)(e, t);
 				return {
 					comment: s,
@@ -663,9 +668,9 @@
 					subredditOrProfile: r
 				}
 			};
-			var E = Object(a.b)(() => Object(n.a)(f, p.j, (e, t) => Object.assign({}, e, {
+			var E = Object(a.b)(() => Object(n.a)(f, b.j, (e, t) => Object.assign({}, e, {
 				depth: t
-			})))(e => i.a.createElement(b, {
+			})))(e => i.a.createElement(p, {
 				type: "comment",
 				data: {
 					author: e.comment.author,
@@ -693,7 +698,7 @@
 				}
 			}));
 			const S = (e, t) => {
-				const s = Object(p.n)(e, t),
+				const s = Object(b.n)(e, t),
 					r = Object(v.H)(e, t);
 				return {
 					comment: s,
@@ -701,7 +706,7 @@
 					subredditOrProfile: r
 				}
 			};
-			var x = Object(a.b)(() => Object(n.a)(S, e => e))(e => i.a.createElement(b, {
+			var x = Object(a.b)(() => Object(n.a)(S, e => e))(e => i.a.createElement(p, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -721,7 +726,7 @@
 			}));
 			var y = Object(a.b)(() => Object(n.c)({
 					subreddit: v.Q
-				}))(e => i.a.createElement(b, {
+				}))(e => i.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
 					data: {
@@ -741,7 +746,7 @@
 					const s = Object(O.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
-			}))(e => i.a.createElement(b, {
+			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "post",
 				data: {
@@ -781,7 +786,7 @@
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
-			}))(e => i.a.createElement(b, {
+			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "postAuthor",
 				data: {
@@ -804,7 +809,7 @@
 					const s = Object(O.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
-			}))(e => i.a.createElement(b, {
+			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "postModTools",
 				data: {
@@ -833,7 +838,7 @@
 			}));
 			var R = Object(a.b)(() => Object(n.c)({
 				subreddit: v.Q
-			}))(e => i.a.createElement(b, {
+			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
 				data: {
@@ -848,7 +853,7 @@
 				subredditOrProfile: (e, t) => Object(v.K)(e, {
 					identifier: t
 				})
-			}))(e => i.a.createElement(b, {
+			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "subreddit",
 				data: {
@@ -868,7 +873,7 @@
 						subredditId: s
 					}) : null
 				}
-			}))(e => i.a.createElement(b, {
+			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "userHovercard",
 				data: {
@@ -901,8 +906,8 @@
 				m = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				u = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				h = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				b = s("./src/reddit/constants/postLayout.ts"),
-				p = s("./src/reddit/helpers/overlay/index.ts"),
+				p = s("./src/reddit/constants/postLayout.ts"),
+				b = s("./src/reddit/helpers/overlay/index.ts"),
 				v = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				f = s("./src/reddit/helpers/trackers/rpan.ts"),
 				E = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
@@ -966,7 +971,7 @@
 				totalLiveWatchers: y.m
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(l.D)(t.listingName)),
-				openOverlay: t => e(Object(p.a)(t)),
+				openOverlay: t => e(Object(b.a)(t)),
 				subscribeConfig: () => e(u.a.subscribeConfig(t.listingName)),
 				subscribeStats: t => e(u.a.subscribeStats(t)),
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
@@ -1060,23 +1065,23 @@
 				render() {
 					const {
 						layout: e
-					} = this.props, t = e === b.g.Classic ? this.renderClassicContent() : e === b.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
+					} = this.props, t = e === p.g.Classic ? this.renderClassicContent() : e === p.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return i.a.createElement("div", {
 						className: Object(c.a)(F.a.container, {
-							[H.a.largeAndMediumPostStyles]: e === b.g.Large || e === b.g.Medium,
-							[H.a.classicPostStyles]: e === b.g.Classic,
-							[H.a.compactPostStyles]: e === b.g.Compact,
-							[F.a.large]: e === b.g.Large || e === b.g.Medium,
-							[F.a.classic]: e === b.g.Classic,
-							[F.a.compact]: e === b.g.Compact
+							[H.a.largeAndMediumPostStyles]: e === p.g.Large || e === p.g.Medium,
+							[H.a.classicPostStyles]: e === p.g.Classic,
+							[H.a.compactPostStyles]: e === p.g.Compact,
+							[F.a.large]: e === p.g.Large || e === p.g.Medium,
+							[F.a.classic]: e === p.g.Classic,
+							[F.a.compact]: e === p.g.Compact
 						}, this.props.className),
 						ref: this.observableElement
-					}, e !== b.g.Large && i.a.createElement(w.b, {
+					}, e !== p.g.Large && i.a.createElement(w.b, {
 						className: F.a.leftRail,
-						withoutComputedStyles: e === b.g.Compact
+						withoutComputedStyles: e === p.g.Compact
 					}, i.a.createElement(J, {
 						isVertical: !0
-					}), e === b.g.Compact && i.a.createElement(J, {
+					}), e === p.g.Compact && i.a.createElement(J, {
 						isVertical: !1
 					})), i.a.createElement(j.a, {
 						className: F.a.backgroundWrapper,
@@ -1484,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.1970dc1903c6c47642de.js.map
+//# sourceMappingURL=RpanListingUnit.ad16706719806528803a.js.map
