@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8668b2d5aa8c07caba61.js
-// Retrieved at 6/2/2020, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2e5b616ea1ea28a94460.js
+// Retrieved at 6/2/2020, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11091,14 +11091,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d0a375e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("dd1138b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d0a375e-production",
+						release: "dd1138b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11460,7 +11460,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d0a375e-production",
+							releaseClient: "dd1138b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17869,7 +17869,8 @@
 					linkText: "#0079D3",
 					monospaceColor: "#FF006D",
 					pageHeader: "#0079D3",
-					postFlairText: "#1A1A1B"
+					postFlairText: "#1A1A1B",
+					blackoutSnooFace: "#FFF"
 				},
 				u = (e, t, i) => Object(n.c)(i, (e => e ? "#FFFFFF" : "#000000")(t), e),
 				c = (e, t) => u(e, t, .2),
@@ -18042,7 +18043,8 @@
 						sidebarWidgetTextColorShaded80: Object(n.i)(.8, "#D7DADC"),
 						sidebarWidgetTitleColor: "#818384",
 						lineColor: "#343536"
-					}
+					},
+					blackoutSnooFace: "#D7DADC"
 				},
 				f = Object.assign({}, g, {
 					actionIconAlpha20: Object(n.g)(g.actionIcon, .2),
@@ -29225,4 +29227,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.8668b2d5aa8c07caba61.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.2e5b616ea1ea28a94460.js.map
