@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4d58d2a61b12ff8b6257.js
-// Retrieved at 6/2/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5813453785b8a5bbda31.js
+// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1604,35 +1604,36 @@
 			n.d(t, "a", (function() {
 				return s
 			})), n.d(t, "c", (function() {
-				return p
+				return f
 			})), n.d(t, "b", (function() {
-				return O
+				return g
 			})), n.d(t, "d", (function() {
-				return y
+				return h
 			}));
 			var s, r = n("./src/lib/constants/index.ts"),
 				a = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/chat/endpoints/sendbird/index.ts"),
-				i = n("./src/reddit/selectors/chat.ts"),
-				c = n("./src/reddit/selectors/user.ts");
+				i = n("./src/reddit/actions/tabBadging.ts"),
+				c = n("./src/reddit/selectors/chat.ts"),
+				d = n("./src/reddit/selectors/user.ts");
 			! function(e) {
 				e.SYNC = "UNREAD_COUNT__SYNC", e.REQUEST_FAILED = "UNREAD_COUNT__REQUEST_FAILED", e.REQUEST_PENDING = "UNREAD_COUNT__REQUEST_PENDING", e.REQUEST_SUCCESS = "UNREAD_COUNT__REQUEST_SUCCESS"
 			}(s || (s = {}));
 			const {
-				SYNC: d,
-				REQUEST_FAILED: u,
-				REQUEST_PENDING: l,
-				REQUEST_SUCCESS: b
-			} = s, p = Object(a.a)(d), f = Object(a.a)(u), m = Object(a.a)(l), O = Object(a.a)(b);
-			let g;
-			const _ = 5 * r.bb,
-				y = () => async (e, t, n) => {
+				SYNC: u,
+				REQUEST_FAILED: l,
+				REQUEST_PENDING: b,
+				REQUEST_SUCCESS: p
+			} = s, f = Object(a.a)(u), m = Object(a.a)(l), O = Object(a.a)(b), g = Object(a.a)(p);
+			let _;
+			const y = 5 * r.bb,
+				h = () => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
 					const r = t();
-					if (!Object(c.H)(r) || !Object(i.f)(r)) return clearTimeout(g);
-					g || e((() => async (e, t, n) => {
+					if (!Object(d.H)(r) || !Object(c.f)(r)) return clearTimeout(_);
+					_ || e((() => async (e, t, n) => {
 						let {
 							apiContext: s
 						} = n;
@@ -1640,19 +1641,19 @@
 							{
 								session: a
 							} = r.user;
-						if (a && Object(c.H)(r) && Object(i.f)(r)) {
-							e(m());
+						if (a && Object(d.H)(r) && Object(c.f)(r)) {
+							e(O());
 							const t = await Object(o.i)(s(), a);
-							t && t.ok ? e(O({
+							t && t.ok ? (e(g({
 								basicChannelCount: t.body.unread_count || 0,
 								subredditChannelCount: t.body.subreddit_unread_count || 0
-							})) : e(f({
+							})), e(Object(i.c)())) : e(m({
 								error: t.error
 							}))
 						}
-					})()), g = setTimeout(() => {
-						e(y())
-					}, _)
+					})()), _ = setTimeout(() => {
+						e(h())
+					}, y)
 				}
 		},
 		"./src/reddit/actions/chat/userSettings.ts": function(e, t, n) {
@@ -12702,7 +12703,7 @@
 						isProfile: f
 					} = e, _ = Object(m.f)(i), y = _ && !f && Object(l.a)(_.name, p), j = i.creations.api.subreddit.change.pending;
 					if (y || j) return;
-					const E = Object(u.t)(t);
+					const E = Object(u.u)(t);
 					if (!p) return void n(S(e, E));
 					n(h(e));
 					const I = f ? {
@@ -12983,7 +12984,7 @@
 							draftId: e,
 							draftsCount: s
 						}));
-						const r = Object(d.t)(t);
+						const r = Object(d.u)(t);
 						e === r && n(Object(o.q)(!0, t))
 					} else {
 						const t = O.error;
@@ -15095,28 +15096,29 @@
 		"./src/reddit/actions/redditEmbed.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return o
-			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return c
 			})), n.d(t, "c", (function() {
-				return l
+				return b
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/reddit/endpoints/me/index.ts"),
-				a = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
-			const o = "REDDIT_EMBED_LOADED",
-				i = "REDDIT_EMBED_FAILED",
-				c = Object(s.a)("REDDIT_EMBED_PENDING"),
-				d = Object(s.a)(o),
+				r = n("./src/reddit/actions/tabBadging.ts"),
+				a = n("./src/reddit/endpoints/me/index.ts"),
+				o = n("./src/reddit/helpers/pageActionLoginRedirect.ts");
+			const i = "REDDIT_EMBED_LOADED",
+				c = "REDDIT_EMBED_FAILED",
+				d = Object(s.a)("REDDIT_EMBED_PENDING"),
 				u = Object(s.a)(i),
-				l = (e, t) => async (e, n, s) => {
+				l = Object(s.a)(c),
+				b = (e, t) => async (e, n, s) => {
 					let {
-						apiContext: o
+						apiContext: i
 					} = s;
-					const i = n();
-					e(c());
-					const l = await Object(r.a)(o());
-					l.ok && l.body ? !t || l.body.account ? e(d(l.body)) : Object(a.a)(e, i) : e(u(l.error))
+					const c = n();
+					e(d());
+					const b = await Object(a.a)(i());
+					b.ok && b.body ? !t || b.body.account ? (e(u(b.body)), e(Object(r.c)())) : Object(o.a)(e, c) : e(l(b.error))
 				}
 		},
 		"./src/reddit/actions/removalReasons/constants.ts": function(e, t, n) {
@@ -18416,33 +18418,69 @@
 		"./src/reddit/actions/tabBadging.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return l
+			})), n.d(t, "d", (function() {
+				return p
 			})), n.d(t, "b", (function() {
-				return d
+				return f
 			})), n.d(t, "c", (function() {
-				return u
+				return g
 			}));
-			var s = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/reddit/actions/chat/unreadCount.ts"),
-				a = n("./src/reddit/actions/inbox.ts"),
-				o = n("./src/reddit/selectors/chat.ts"),
-				i = n("./src/reddit/selectors/user.ts");
-			const c = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
-				d = Object(s.a)(c),
-				u = e => async (t, n) => {
+			var s = n("./src/lib/fastdom/index.ts"),
+				r = n("./src/lib/makeActionCreator/index.ts"),
+				a = n("./src/reddit/actions/chat/unreadCount.ts"),
+				o = n("./src/reddit/actions/inbox.ts"),
+				i = n("./src/reddit/contexts/PageLayer/selectors.ts"),
+				c = n("./src/reddit/helpers/tabBadging/index.ts"),
+				d = n("./src/reddit/selectors/chat.ts"),
+				u = n("./src/reddit/selectors/user.ts");
+			const l = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
+				b = Object(r.a)(l),
+				p = e => async (t, n) => {
 					const s = n(),
-						c = Object(o.a)(s),
-						d = Object(o.d)(s),
-						u = Object(i.C)(s),
+						r = Object(d.a)(s),
+						i = Object(d.d)(s),
+						c = Object(u.C)(s),
 						{
 							basicChannelCount: l,
 							inboxCount: b
 						} = e;
-					c !== l && t(Object(r.b)(Object.assign({}, d, {
+					r !== l && t(Object(a.b)(Object.assign({}, i, {
 						basicChannelCount: l
-					}))), b && u !== b && t(Object(a.b)({
+					}))), b && b !== c && t(Object(o.b)({
 						inboxCount: b
+					})), (r !== l || b && b !== c) && t(O())
+				}, f = (e, t) => {
+					e <= 0 ? s.a.write(() => {
+						Object(c.b)(!1), window.document.title = t
+					}) : s.a.write(() => {
+						Object(c.b)(), window.document.title = "(".concat(e, ") ").concat(t)
+					})
+				}, m = e => {
+					return {
+						inboxCount: Object(u.C)(e) || 0,
+						basicChannelCount: Object(d.a)(e) || 0
+					}
+				}, O = () => async (e, t) => {
+					const n = t(),
+						s = Object(i.e)(n, {});
+					if (!(Object(u.G)(n) || Object(u.H)(n)) || !s) return;
+					const r = (e => {
+						const {
+							inboxCount: t,
+							basicChannelCount: n
+						} = m(e);
+						return t + n
+					})(n);
+					f(r, s), e(b({
+						hasUnreadMessages: !!r
 					}))
+				}, g = () => async (e, t) => {
+					{
+						e(O());
+						const n = m(t());
+						Object(c.c)(n)
+					}
 				}
 		},
 		"./src/reddit/actions/tags/constants.ts": function(e, t, n) {
@@ -20519,7 +20557,7 @@
 										subredditId: r.belongsTo.id
 									})) return;
 								if (Object(x.b)(V)) return;
-								if (Object(g.E)(V.platform && V.platform.currentPage)) return;
+								if (Object(g.F)(V.platform && V.platform.currentPage)) return;
 								if (r.isSponsored) return;
 								if ("profile" === r.belongsTo.type) return;
 								const a = V.experimentOverrides[O.T],
@@ -27335,6 +27373,35 @@
 						}
 					}
 					return !0
+				}
+		},
+		"./src/reddit/helpers/tabBadging/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return u
+			})), n.d(t, "c", (function() {
+				return l
+			}));
+			var s = n("./src/config.ts");
+			const r = "".concat(s.a.assetPath, "/img/favicon/badged-favicon-32x32.png"),
+				a = "".concat(s.a.assetPath, "/img/favicon/badged-favicon-16x16.png"),
+				o = "".concat(s.a.assetPath, "/img/favicon/favicon-32x32.png"),
+				i = "".concat(s.a.assetPath, "/img/favicon/favicon-16x16.png"),
+				c = "badgeCountSync",
+				d = e => window.document.querySelector('link[href="'.concat(e, '"]')),
+				u = function() {
+					let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
+					const t = d(e ? o : r),
+						n = d(e ? i : a);
+					t && n && (t.href = e ? r : o, n.href = e ? a : i)
+				},
+				l = e => {
+					navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
+						command: c,
+						badgeCounts: e
+					})
 				}
 		},
 		"./src/reddit/helpers/tags/index.ts": function(e, t, n) {
@@ -54189,4 +54256,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.4d58d2a61b12ff8b6257.js.map
+//# sourceMappingURL=Governance~Reddit.5813453785b8a5bbda31.js.map

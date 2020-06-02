@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.54609b3c7f83d3580e57.js
-// Retrieved at 6/2/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8c490ea1345094f603ba.js
+// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11091,14 +11091,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("a870f1d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("2a33354-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a870f1d-production",
+						release: "2a33354-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11460,7 +11460,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "a870f1d-production",
+							releaseClient: "2a33354-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -14610,95 +14610,95 @@
 			})), i.d(t, "d", (function() {
 				return s.d
 			})), i.d(t, "e", (function() {
-				return s.e
-			})), i.d(t, "f", (function() {
 				return s.f
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "f", (function() {
 				return s.g
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return s.h
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "h", (function() {
 				return s.i
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return s.j
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "j", (function() {
 				return s.k
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return s.l
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "l", (function() {
 				return s.m
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "m", (function() {
 				return s.n
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return s.o
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "o", (function() {
 				return s.p
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return s.q
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "q", (function() {
 				return s.r
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "r", (function() {
 				return s.s
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "s", (function() {
 				return s.t
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "u", (function() {
 				return s.u
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "v", (function() {
 				return s.v
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "w", (function() {
 				return s.w
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "x", (function() {
 				return s.x
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "y", (function() {
 				return s.y
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "z", (function() {
 				return s.z
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "A", (function() {
 				return s.A
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "B", (function() {
 				return s.B
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "C", (function() {
 				return s.C
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "D", (function() {
 				return s.D
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "E", (function() {
 				return s.E
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "F", (function() {
 				return s.F
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "G", (function() {
 				return s.G
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "H", (function() {
 				return s.H
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "I", (function() {
 				return s.I
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "J", (function() {
 				return s.J
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "K", (function() {
 				return s.K
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "L", (function() {
 				return s.L
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "M", (function() {
 				return s.M
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "N", (function() {
 				return s.N
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "O", (function() {
 				return s.O
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "P", (function() {
 				return s.P
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "Q", (function() {
 				return s.Q
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "R", (function() {
 				return s.R
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "S", (function() {
 				return s.S
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "T", (function() {
 				return s.T
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "U", (function() {
 				return s.U
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "V", (function() {
 				return s.V
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "W", (function() {
 				return s.W
+			})), i.d(t, "X", (function() {
+				return s.X
 			}));
 			const o = r.a.createContext(null);
 
@@ -14722,104 +14722,106 @@
 		},
 		"./src/reddit/contexts/PageLayer/selectors.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "e", (function() {
+			i.d(t, "f", (function() {
 				return C
-			})), i.d(t, "x", (function() {
-				return N
-			})), i.d(t, "D", (function() {
-				return P
-			})), i.d(t, "L", (function() {
-				return A
-			})), i.d(t, "N", (function() {
-				return L
-			})), i.d(t, "w", (function() {
-				return D
-			})), i.d(t, "B", (function() {
-				return M
-			})), i.d(t, "z", (function() {
-				return G
-			})), i.d(t, "T", (function() {
-				return U
-			})), i.d(t, "v", (function() {
-				return q
-			})), i.d(t, "u", (function() {
-				return V
 			})), i.d(t, "y", (function() {
-				return W
-			})), i.d(t, "K", (function() {
-				return H
-			})), i.d(t, "G", (function() {
-				return z
-			})), i.d(t, "C", (function() {
-				return K
-			})), i.d(t, "H", (function() {
-				return Q
+				return N
 			})), i.d(t, "E", (function() {
-				return J
-			})), i.d(t, "J", (function() {
-				return X
+				return P
+			})), i.d(t, "M", (function() {
+				return A
+			})), i.d(t, "O", (function() {
+				return L
+			})), i.d(t, "x", (function() {
+				return D
+			})), i.d(t, "C", (function() {
+				return M
+			})), i.d(t, "A", (function() {
+				return G
+			})), i.d(t, "U", (function() {
+				return U
+			})), i.d(t, "w", (function() {
+				return q
+			})), i.d(t, "v", (function() {
+				return V
+			})), i.d(t, "z", (function() {
+				return W
+			})), i.d(t, "L", (function() {
+				return H
+			})), i.d(t, "H", (function() {
+				return z
+			})), i.d(t, "D", (function() {
+				return K
 			})), i.d(t, "I", (function() {
+				return Q
+			})), i.d(t, "F", (function() {
+				return J
+			})), i.d(t, "K", (function() {
+				return X
+			})), i.d(t, "J", (function() {
 				return Z
 			})), i.d(t, "c", (function() {
 				return $
 			})), i.d(t, "a", (function() {
 				return ee
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "t", (function() {
 				return te
 			})), i.d(t, "d", (function() {
 				return ie
-			})), i.d(t, "n", (function() {
-				return ne
-			})), i.d(t, "q", (function() {
-				return re
-			})), i.d(t, "m", (function() {
-				return se
 			})), i.d(t, "o", (function() {
-				return oe
-			})), i.d(t, "p", (function() {
-				return de
-			})), i.d(t, "F", (function() {
-				return le
-			})), i.d(t, "h", (function() {
-				return ae
-			})), i.d(t, "i", (function() {
-				return ue
-			})), i.d(t, "j", (function() {
-				return ce
-			})), i.d(t, "k", (function() {
-				return me
-			})), i.d(t, "A", (function() {
-				return pe
-			})), i.d(t, "g", (function() {
-				return _e
-			})), i.d(t, "P", (function() {
-				return he
-			})), i.d(t, "R", (function() {
-				return ge
-			})), i.d(t, "U", (function() {
-				return fe
-			})), i.d(t, "W", (function() {
-				return be
-			})), i.d(t, "M", (function() {
-				return we
-			})), i.d(t, "O", (function() {
-				return ye
+				return ne
 			})), i.d(t, "r", (function() {
-				return ve
+				return re
+			})), i.d(t, "n", (function() {
+				return se
+			})), i.d(t, "p", (function() {
+				return oe
+			})), i.d(t, "q", (function() {
+				return de
+			})), i.d(t, "G", (function() {
+				return le
+			})), i.d(t, "i", (function() {
+				return ae
+			})), i.d(t, "j", (function() {
+				return ue
+			})), i.d(t, "k", (function() {
+				return ce
+			})), i.d(t, "l", (function() {
+				return me
+			})), i.d(t, "B", (function() {
+				return pe
+			})), i.d(t, "h", (function() {
+				return _e
 			})), i.d(t, "Q", (function() {
+				return he
+			})), i.d(t, "S", (function() {
+				return ge
+			})), i.d(t, "V", (function() {
+				return fe
+			})), i.d(t, "X", (function() {
+				return be
+			})), i.d(t, "N", (function() {
+				return we
+			})), i.d(t, "P", (function() {
+				return ye
+			})), i.d(t, "s", (function() {
+				return ve
+			})), i.d(t, "R", (function() {
 				return Te
 			})), i.d(t, "b", (function() {
 				return Se
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "u", (function() {
 				return Ee
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "T", (function() {
 				return Fe
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "g", (function() {
 				return Ie
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return Oe
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "W", (function() {
 				return xe
+			})), i.d(t, "e", (function() {
+				return Be
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.match.js");
 			var n = i("./node_modules/lodash/isEmpty.js"),
@@ -15244,6 +15246,20 @@
 				xe = e => {
 					const t = fe(e);
 					return !!t && !!c.b.filter(e => t.toLowerCase().includes(e)).length
+				},
+				Be = (e, t) => {
+					let {
+						pageLayer: i
+					} = t;
+					if (i && i.title) return i.title; {
+						const t = e.platform.currentPage,
+							i = e.platform.metas;
+						if (t && i) {
+							const e = i[t.key];
+							if (e) return e.title
+						}
+						return null
+					}
 				}
 		},
 		"./src/reddit/endpoints/session/index.ts": function(e, t, i) {
@@ -20394,7 +20410,7 @@
 					return n && s && o
 				},
 				h = (e, t) => {
-					const i = t.subredditId || Object(r.m)(e, t),
+					const i = t.subredditId || Object(r.n)(e, t),
 						n = a(e, i),
 						s = u(e, i),
 						o = !!i && Object(d.g)(e, {
@@ -21960,7 +21976,7 @@
 					}) && Object(B.f)(e) ? Object(g.a)(r.url, v.b) : v.b
 				},
 				Ce = (e, t) => {
-					const i = Object(u.o)(e, t);
+					const i = Object(u.p)(e, t);
 					return (!i || !i.isQuarantined) && e.creations.formData.postToTwitter
 				},
 				Ne = e => {
@@ -29232,4 +29248,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.54609b3c7f83d3580e57.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.8c490ea1345094f603ba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.bc7bff9b7e2d823712dc.js
-// Retrieved at 6/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.e4c97b86c796162127c8.js
+// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1224,7 +1224,7 @@
 				Pe = Object(i.b)(() => Object(d.c)({
 					activeModalId: we.a,
 					destSubreddit: (e, t) => {
-						const n = Object(ge.o)(e, t);
+						const n = Object(ge.p)(e, t);
 						return n ? {
 							name: n.name,
 							isProfile: n.type === Ee.d.User,
@@ -1233,7 +1233,7 @@
 					},
 					draft: ve.i,
 					userCanUseGifs: (e, t) => {
-						const n = Object(ge.o)(e, t);
+						const n = Object(ge.p)(e, t);
 						return Object(z.A)(e, n ? n.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
@@ -2809,4 +2809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.bc7bff9b7e2d823712dc.js.map
+//# sourceMappingURL=RichTextEditor.e4c97b86c796162127c8.js.map

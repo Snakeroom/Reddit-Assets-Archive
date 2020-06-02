@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.3fef4057fff22be64b2b.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.ba93eb7c5a8ab1b3530a.js
+// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -28,8 +28,8 @@
 				m = s("./src/chat/actions/session.ts"),
 				p = s("./src/chat/actions/user.ts"),
 				b = s("./src/chat/components/PortalContainer/index.tsx"),
-				x = s("./src/chat/customMiddleware/containerSize.ts"),
-				g = s("./src/chat/customMiddleware/heartbeat.ts"),
+				g = s("./src/chat/customMiddleware/containerSize.ts"),
+				x = s("./src/chat/customMiddleware/heartbeat.ts"),
 				j = s("./src/chat/customMiddleware/iframeDispatcher.ts"),
 				O = s("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				f = s("./src/chat/customMiddleware/sendbirdToken.ts"),
@@ -153,7 +153,7 @@
 					customMiddleware: [i.a.withExtraArgument({
 						routes: q.a,
 						apiContext: P.apiContext
-					}), P.middleware, w.a, f.a, j.a, g.a, O.a, Object(_.a)(t), x.a, v.a, C.a],
+					}), P.middleware, w.a, f.a, j.a, x.a, O.a, Object(_.a)(t), g.a, v.a, C.a],
 					modifyInitialData: t => {
 						let {
 							initialData: s,
@@ -189,13 +189,14 @@
 			Object(o.a)(i.a);
 			const d = Object(o.a)(i.b);
 			var u = s("./src/reddit/actions/chat/unreadCount.ts"),
-				l = s("./src/reddit/selectors/chat.ts");
+				l = s("./src/reddit/actions/tabBadging.ts"),
+				h = s("./src/reddit/selectors/chat.ts");
 			t.default = (e, t) => s => {
 				switch (s.type) {
 					case c.a: {
 						const a = s.payload,
-							c = Object(l.d)(t());
-						r()(a, c) || e(Object(u.c)(a))
+							c = Object(h.d)(t());
+						r()(a, c) || (e(Object(u.c)(a)), e(Object(l.c)()))
 					}
 					break;
 				case i.b:
@@ -205,4 +206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.3fef4057fff22be64b2b.js.map
+//# sourceMappingURL=RedesignChat.ba93eb7c5a8ab1b3530a.js.map

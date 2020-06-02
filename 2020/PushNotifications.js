@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.b6075576d97c13fb9cf8.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.a3f6c21696ca5482a5d8.js
+// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -86,7 +86,7 @@
 					if ("registerWithServiceWorker" === r) x(e);
 					else if (r === h.a && i) {
 						const e = o()(n, ["command"]);
-						t(Object(f.c)(e))
+						t(Object(f.d)(e))
 					}
 				}), x(e)
 			}, W = (e, t) => async (i, s, n) => {
@@ -256,4 +256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PushNotifications.b6075576d97c13fb9cf8.js.map
+//# sourceMappingURL=PushNotifications.a3f6c21696ca5482a5d8.js.map
