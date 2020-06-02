@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9b663b8852b40adf3fa1.js
-// Retrieved at 6/2/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f630e03a1a7ec31e179a.js
+// Retrieved at 6/2/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -10780,7 +10780,7 @@
 				const P = "error-".concat(e),
 					k = Object(u.a)(t) || i()(A.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
 				if (w.ok && k) {
-					if (Object(ae.a)(l)) {
+					if (!Object(u.a)(t) && Object(ae.a)(l)) {
 						const e = Object.keys(A.subredditAboutInfo)[0];
 						await Promise.all([a(Object(h.e)()), a(Object(h.d)(e)), a(Object(j.a)(e, $.a.Powerups))])
 					}
@@ -54256,4 +54256,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9b663b8852b40adf3fa1.js.map
+//# sourceMappingURL=Governance~Reddit.f630e03a1a7ec31e179a.js.map
