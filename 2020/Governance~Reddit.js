@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.282ae12c76b9a5e5973c.js
-// Retrieved at 6/1/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7f77664a82c03520831b.js
+// Retrieved at 6/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -9106,39 +9106,41 @@
 						gqlContext: d
 					} = c;
 					if (await r(D(e))) return [];
-					let l = !1;
-					const b = a()(n, t),
-						p = Object(_.b)(b),
-						f = {
-							subredditId: e,
-							subredditChatSettings: p
-						},
-						O = await m(d(), {
-							input: f
-						});
-					if (O.ok) {
-						const e = (O.body || {}).data.updateSubredditChatSettings;
-						l = !!e && e.ok
+					let l, b = !1;
+					const p = a()(n, t),
+						f = Object(_.b)(p);
+					if (f && f.length) {
+						const t = {
+								subredditId: e,
+								subredditChatSettings: f
+							},
+							n = await m(d(), {
+								input: t
+							});
+						if (n.ok) {
+							const e = (n.body || {}).data.updateSubredditChatSettings;
+							b = !!e && e.ok
+						} else l = n && n.error || {
+							type: i.C.UNKNOWN_ERROR
+						}
 					}
-					if (l) return r(C({
+					return b ? (r(C({
 						subredditId: e,
 						chatSettings: n
-					})), r(k(t, b)), n; {
-						const n = O && O.error || {
-							type: i.C.UNKNOWN_ERROR
-						};
-						return r(T({
-							subredditId: e,
-							error: n
-						})), r(Object(u.e)({
-							duration: u.a,
-							id: "CHAT_SETTING_UPDATE_ERROR",
-							kind: y.b.Error,
-							text: s.fbt._("Something went wrong", null, {
-								hk: "3HpR6h"
-							})
-						})), t
-					}
+					})), r(k(t, p)), n) : (l && r(T({
+						subredditId: e,
+						error: l
+					})), r(C({
+						subredditId: e,
+						chatSettings: t
+					})), r(Object(u.e)({
+						duration: u.a,
+						id: "CHAT_SETTING_UPDATE_ERROR",
+						kind: y.b.Error,
+						text: s.fbt._("Something went wrong", null, {
+							hk: "3HpR6h"
+						})
+					})), t)
 				}, P = {
 					start_chatting_opt_out: (e, t, n) => Object.assign({
 						source: g.b.Chat,
@@ -29643,10 +29645,10 @@
 					}
 					return e
 				}, []) : [],
-				a = e => e.map(e => ({
-					id: e.settingId,
-					state: String(e.state)
-				}))
+				a = e => e.reduce((e, t) => (t.isEditable && e.push({
+					id: t.settingId,
+					state: String(t.state)
+				}), e), [])
 		},
 		"./src/reddit/models/Comment/addProfileImgParam.ts": function(e, t, n) {
 			"use strict";
@@ -54187,4 +54189,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.282ae12c76b9a5e5973c.js.map
+//# sourceMappingURL=Governance~Reddit.7f77664a82c03520831b.js.map

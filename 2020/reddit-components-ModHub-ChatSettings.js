@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.2bc40db50b70389d63b5.js
-// Retrieved at 6/1/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.ec7ba41380ef4e09f4bc.js
+// Retrieved at 6/1/2020, 8:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less": function(e, t, s) {
@@ -42,8 +42,8 @@
 				u = s("./src/reddit/components/BlockNavigation/index.tsx"),
 				p = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				b = s("./node_modules/lodash/times.js"),
-				f = s.n(b),
-				S = s("./src/lib/classNames/index.ts"),
+				S = s.n(b),
+				f = s("./src/lib/classNames/index.ts"),
 				v = s("./src/lib/lessComponent.tsx"),
 				C = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
 				x = s("./src/reddit/helpers/styles/mixins/loading.ts"),
@@ -66,20 +66,20 @@
 						isLoading: t
 					} = e;
 					return l.a.createElement("div", {
-						className: Object(S.a)(L.a.container, Object(x.a)({
+						className: Object(f.a)(L.a.container, Object(x.a)({
 							isLoading: !1
 						}))
 					}, l.a.createElement("div", {
 						className: L.a.section
 					}, l.a.createElement("div", {
-						className: Object(S.a)(L.a.sectionTitle, Object(x.b)({
+						className: Object(f.a)(L.a.sectionTitle, Object(x.b)({
 							isLoading: t
 						}))
 					}), l.a.createElement("div", {
 						className: L.a.line
-					}), f()(5).map(e => l.a.createElement("div", {
+					}), S()(5).map(e => l.a.createElement("div", {
 						key: e,
-						className: Object(S.a)(L.a.sectionBodyRow, Object(x.b)({
+						className: Object(f.a)(L.a.sectionBodyRow, Object(x.b)({
 							isLoading: t
 						}))
 					}))))
@@ -87,9 +87,9 @@
 				k = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/logs/console.ts")),
 				w = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				y = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				M = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
-				U = s.n(M);
-			const H = v.a.wrapped(w.o, "toggleSetting", U.a);
+				U = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
+				M = s.n(U);
+			const H = v.a.wrapped(w.o, "toggleSetting", M.a);
 			var P = e => {
 					let {
 						controlState: t,
@@ -111,7 +111,7 @@
 						})),
 						label: o,
 						subtext: i && l.a.createElement("span", null, i, r && l.a.createElement(y.a, {
-							className: U.a.welcomeMessageHelpLink,
+							className: M.a.welcomeMessageHelpLink,
 							isSponsored: !1,
 							source: null,
 							href: r,
@@ -133,7 +133,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var D = class extends l.a.Component {
+			var F = class extends l.a.Component {
 					get groupSettings() {
 						const e = {},
 							t = [];
@@ -178,11 +178,11 @@
 						return l.a.createElement(l.a.Fragment, null, Object.keys(e).map((t, s) => l.a.createElement("fieldset", {
 							key: "settings-group-".concat(s)
 						}, l.a.createElement("legend", {
-							className: U.a.sectionLegend
+							className: M.a.sectionLegend
 						}, t), this.buildControls(e[t]))), this.buildControls(t))
 					}
 				},
-				F = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				D = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				A = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				R = s("./src/reddit/controls/Button/index.tsx"),
 				T = s("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -218,8 +218,12 @@
 								formState: t,
 								initialFormState: s
 							} = e, n = !r()(t, s);
-							return n !== e.hasUnsavedChanges ? {
-								hasUnsavedChanges: n
+							return !s.length && t.length ? {
+								initialFormState: t,
+								hasUnsavedChanges: !1
+							} : n !== e.hasUnsavedChanges ? {
+								hasUnsavedChanges: n,
+								initialFormState: s
 							} : null
 						})
 					}, 200, {
@@ -291,28 +295,28 @@
 						hasUnsavedChanges: o
 					} = e;
 					return l.a.createElement("div", {
-						className: U.a.container
-					}, l.a.createElement(F.c, {
-						className: U.a.topBar
+						className: M.a.container
+					}, l.a.createElement(D.c, {
+						className: M.a.topBar
 					}, l.a.createElement(R.f, {
 						disabled: t || !o,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? n.fbt._("Saved", null, {
 						hk: "38ZPdi"
 					}) : e.isSavePending ? l.a.createElement(T.a, {
-						className: U.a.loadingIcon,
+						className: M.a.loadingIcon,
 						sizePx: 10
 					}) : n.fbt._("Save changes", null, {
 						hk: "TTPsK"
-					}))), l.a.createElement(F.a, {
-						className: U.a.contentContainer
-					}, l.a.createElement(F.b, null, n.fbt._("Chat settings", null, {
+					}))), l.a.createElement(D.a, {
+						className: M.a.contentContainer
+					}, l.a.createElement(D.b, null, n.fbt._("Chat settings", null, {
 						hk: "174Drb"
 					})), a ? l.a.createElement("div", {
-						className: U.a.formBody,
+						className: M.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, this.state.formState && this.state.formState.length ? l.a.createElement(D, {
+					}, this.state.formState && this.state.formState.length ? l.a.createElement(F, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
@@ -344,4 +348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-ChatSettings.2bc40db50b70389d63b5.js.map
+//# sourceMappingURL=reddit-components-ModHub-ChatSettings.ec7ba41380ef4e09f4bc.js.map
