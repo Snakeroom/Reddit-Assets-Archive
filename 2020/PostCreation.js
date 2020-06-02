@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.abc4fc4574de50c0c8cf.js
-// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6a9ffa2e8f9226439cc9.js
+// Retrieved at 6/2/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -16774,7 +16774,7 @@
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: a,
-						shouldHideAddEmote: !u && d
+						shouldHideAddEmote: !(u || d)
 					}), (b || h) && a && c.a.createElement(ls, {
 						editorState: P,
 						onChange: this.onChange,
@@ -30705,4 +30705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.abc4fc4574de50c0c8cf.js.map
+//# sourceMappingURL=PostCreation.6a9ffa2e8f9226439cc9.js.map

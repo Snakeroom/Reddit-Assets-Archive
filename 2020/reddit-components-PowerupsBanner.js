@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.695c5102af2d0f5eb9c8.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.f7f16d7093023c6eb738.js
+// Retrieved at 6/2/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, s, t) {
@@ -9,7 +9,7 @@
 			})), t.d(s, "a", (function() {
 				return u
 			})), t.d(s, "c", (function() {
-				return m
+				return p
 			}));
 			var n = t("./src/reddit/endpoints/economics/banners.ts"),
 				r = t("./src/lib/makeActionCreator/index.ts"),
@@ -39,7 +39,7 @@
 						subredditId: e,
 						bannerType: s
 					})), Object(n.c)(a(), e, s)
-				}, m = (e, s) => async (t, r, o) => {
+				}, p = (e, s) => async (t, r, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -76,18 +76,18 @@
 					tier: n,
 					count: i,
 					tiersInfo: u,
-					supportersCount: m
-				} = t, p = u[n], b = p && p.powerupsCost && p.powerupsCost > i ? p.powerupsCost - i : 0;
+					supportersCount: p
+				} = t, m = u[n], b = m && m.powerupsCost && m.powerupsCost > i ? m.powerupsCost - i : 0;
 				return r.a.createElement("div", {
 					className: Object(o.a)(s, d.a.container)
 				}, b ? r.a.createElement(r.a.Fragment, null, r.a.createElement(c.a, {
 					className: d.a.lockIcon
-				}), r.a.createElement("span", null, l._("{remainingToUnlock} more subscribers to unlock!", [l._param("remainingToUnlock", b)], {
-					hk: "1zb8BF"
+				}), r.a.createElement("span", null, l._("{remainingToUnlock} more supporters to unlock!", [l._param("remainingToUnlock", b)], {
+					hk: "4k6uGF"
 				}))) : r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, {
 					className: d.a.checkmarkIcon
-				}), r.a.createElement("span", null, l._("Unlocked by {unlockedAlready} subscribers", [l._param("unlockedAlready", m)], {
-					hk: "QgHaK"
+				}), r.a.createElement("span", null, l._("Unlocked by {unlockedAlready} supporters", [l._param("unlockedAlready", p)], {
+					hk: "2zLbrH"
 				}))))
 			}
 		},
@@ -123,11 +123,11 @@
 					supporter: r
 				} = e, {
 					score: l,
-					lastSupportedAt: m,
-					supporterInfo: p
-				} = r, b = new Date(m).valueOf() / 1e3, h = p ? p.name : n.fbt._("Anonymous", null, {
+					lastSupportedAt: p,
+					supporterInfo: m
+				} = r, b = new Date(p).valueOf() / 1e3, h = m ? m.name : n.fbt._("Anonymous", null, {
 					hk: "1Q4Y6O"
-				}).toString(), w = p && p.icon.url ? p.icon.url : void 0, x = !!p && p.profile.isNsfw;
+				}).toString(), w = m && m.icon.url ? m.icon.url : void 0, x = !!m && m.profile.isNsfw;
 				return o.a.createElement("div", {
 					className: Object(a.a)(s, u.a.container)
 				}, o.a.createElement("div", {
@@ -183,8 +183,8 @@
 					})
 				}, r.a.createElement("h3", {
 					className: i.a.title
-				}, d._("Recent Subscribers", null, {
-					hk: "1GKp8N"
+				}, d._("Recent Supporters", null, {
+					hk: "1cY1Du"
 				})), c.map(e => r.a.createElement(a.a, {
 					className: i.a.supporter,
 					key: e.lastSupportedAt,
@@ -217,8 +217,8 @@
 				d = t("./src/reddit/actions/modal.ts"),
 				l = t("./src/reddit/endpoints/economics/banners.ts"),
 				u = t("./src/reddit/actions/economics/banners/thunkedActions.ts"),
-				m = t("./src/reddit/components/TrackingHelper/index.tsx"),
-				p = t("./src/reddit/contexts/ApiContext.tsx"),
+				p = t("./src/reddit/components/TrackingHelper/index.tsx"),
+				m = t("./src/reddit/contexts/ApiContext.tsx"),
 				b = t("./src/reddit/selectors/economics.ts"),
 				h = t("./src/reddit/selectors/gold/powerups.ts"),
 				w = t("./src/reddit/selectors/subreddit.ts"),
@@ -326,8 +326,8 @@
 					})) : null
 				}
 			}
-			const C = Object(m.c)(O);
-			s.default = Object(p.b)(Object(o.b)(v, (e, s) => {
+			const C = Object(p.c)(O);
+			s.default = Object(m.b)(Object(o.b)(v, (e, s) => {
 				let {
 					subredditId: t
 				} = s;
@@ -350,7 +350,7 @@
 			})), t.d(s, "e", (function() {
 				return u
 			})), t.d(s, "d", (function() {
-				return m
+				return p
 			}));
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r, o = t("./src/config.ts"),
@@ -383,7 +383,7 @@
 				function(e) {
 					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.Powerups = "powerups", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(r || (r = {}));
-			const l = async (e, s, t) => d(e, s, t, !0), u = async (e, s, t) => d(e, s, t, !1), m = (e, s) => c(e, s, n.UpsellBanners, Object.keys(r).reduce((e, s) => (e[r[s]] = !1, e), {}))
+			const l = async (e, s, t) => d(e, s, t, !0), u = async (e, s, t) => d(e, s, t, !1), p = (e, s) => c(e, s, n.UpsellBanners, Object.keys(r).reduce((e, s) => (e[r[s]] = !1, e), {}))
 		},
 		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, s, t) {
 			"use strict";
@@ -409,4 +409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.695c5102af2d0f5eb9c8.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.f7f16d7093023c6eb738.js.map
