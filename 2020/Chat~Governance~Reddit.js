@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3aa01c735fc6af297b08.js
-// Retrieved at 6/2/2020, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.54609b3c7f83d3580e57.js
+// Retrieved at 6/2/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -11091,14 +11091,14 @@
 					}))
 				},
 				G = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("1aebd87-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("a870f1d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1aebd87-production",
+						release: "a870f1d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(j.d)(), new s.Integrations.Breadcrumbs({
@@ -11460,7 +11460,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1aebd87-production",
+							releaseClient: "a870f1d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -27383,11 +27383,11 @@
 			"use strict";
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
-				s = (n.Q, i("./node_modules/node-int64/Int64.js"), i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Playback = function(e) {
-					this.id = null, this.scrubbing_start_ms = null, this.scrubbing_end_ms = null, this.session_duration_ms = null, this.watch_duration_ms = null, this.heartbeat_duration_ms = null, this.is_live = null, this.playhead_offset_ms = null, this.timestamp_ms = null, this.start_time_ms = null, this.volume = null, this.chat_state = null, e && (void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.scrubbing_start_ms && null !== e.scrubbing_start_ms && (this.scrubbing_start_ms = e.scrubbing_start_ms), void 0 !== e.scrubbing_end_ms && null !== e.scrubbing_end_ms && (this.scrubbing_end_ms = e.scrubbing_end_ms), void 0 !== e.session_duration_ms && null !== e.session_duration_ms && (this.session_duration_ms = e.session_duration_ms), void 0 !== e.watch_duration_ms && null !== e.watch_duration_ms && (this.watch_duration_ms = e.watch_duration_ms), void 0 !== e.heartbeat_duration_ms && null !== e.heartbeat_duration_ms && (this.heartbeat_duration_ms = e.heartbeat_duration_ms), void 0 !== e.is_live && null !== e.is_live && (this.is_live = e.is_live), void 0 !== e.playhead_offset_ms && null !== e.playhead_offset_ms && (this.playhead_offset_ms = e.playhead_offset_ms), void 0 !== e.timestamp_ms && null !== e.timestamp_ms && (this.timestamp_ms = e.timestamp_ms), void 0 !== e.start_time_ms && null !== e.start_time_ms && (this.start_time_ms = e.start_time_ms), void 0 !== e.volume && null !== e.volume && (this.volume = e.volume), void 0 !== e.chat_state && null !== e.chat_state && (this.chat_state = e.chat_state))
+				s = (n.Q, i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Playback = function(e) {
+					this.id = null, this.scrubbing_start_ms = null, this.scrubbing_end_ms = null, this.session_duration_ms = null, this.watch_duration_ms = null, this.heartbeat_duration_ms = null, this.is_live = null, this.playhead_offset_ms = null, this.timestamp_ms = null, this.start_time_ms = null, this.volume = null, this.chat_state = null, this.player_type = null, e && (void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.scrubbing_start_ms && null !== e.scrubbing_start_ms && (this.scrubbing_start_ms = e.scrubbing_start_ms), void 0 !== e.scrubbing_end_ms && null !== e.scrubbing_end_ms && (this.scrubbing_end_ms = e.scrubbing_end_ms), void 0 !== e.session_duration_ms && null !== e.session_duration_ms && (this.session_duration_ms = e.session_duration_ms), void 0 !== e.watch_duration_ms && null !== e.watch_duration_ms && (this.watch_duration_ms = e.watch_duration_ms), void 0 !== e.heartbeat_duration_ms && null !== e.heartbeat_duration_ms && (this.heartbeat_duration_ms = e.heartbeat_duration_ms), void 0 !== e.is_live && null !== e.is_live && (this.is_live = e.is_live), void 0 !== e.playhead_offset_ms && null !== e.playhead_offset_ms && (this.playhead_offset_ms = e.playhead_offset_ms), void 0 !== e.timestamp_ms && null !== e.timestamp_ms && (this.timestamp_ms = e.timestamp_ms), void 0 !== e.start_time_ms && null !== e.start_time_ms && (this.start_time_ms = e.start_time_ms), void 0 !== e.volume && null !== e.volume && (this.volume = e.volume), void 0 !== e.chat_state && null !== e.chat_state && (this.chat_state = e.chat_state), void 0 !== e.player_type && null !== e.player_type && (this.player_type = e.player_type))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
-				e.writeStructBegin("Playback"), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.STRING, 1), e.writeString(this.id), e.writeFieldEnd()), null !== this.scrubbing_start_ms && void 0 !== this.scrubbing_start_ms && (e.writeFieldBegin("scrubbing_start_ms", r.Type.I64, 2), e.writeI64(this.scrubbing_start_ms), e.writeFieldEnd()), null !== this.scrubbing_end_ms && void 0 !== this.scrubbing_end_ms && (e.writeFieldBegin("scrubbing_end_ms", r.Type.I64, 3), e.writeI64(this.scrubbing_end_ms), e.writeFieldEnd()), null !== this.session_duration_ms && void 0 !== this.session_duration_ms && (e.writeFieldBegin("session_duration_ms", r.Type.I64, 4), e.writeI64(this.session_duration_ms), e.writeFieldEnd()), null !== this.watch_duration_ms && void 0 !== this.watch_duration_ms && (e.writeFieldBegin("watch_duration_ms", r.Type.I64, 5), e.writeI64(this.watch_duration_ms), e.writeFieldEnd()), null !== this.heartbeat_duration_ms && void 0 !== this.heartbeat_duration_ms && (e.writeFieldBegin("heartbeat_duration_ms", r.Type.I64, 6), e.writeI64(this.heartbeat_duration_ms), e.writeFieldEnd()), null !== this.is_live && void 0 !== this.is_live && (e.writeFieldBegin("is_live", r.Type.BOOL, 7), e.writeBool(this.is_live), e.writeFieldEnd()), null !== this.playhead_offset_ms && void 0 !== this.playhead_offset_ms && (e.writeFieldBegin("playhead_offset_ms", r.Type.I64, 8), e.writeI64(this.playhead_offset_ms), e.writeFieldEnd()), null !== this.timestamp_ms && void 0 !== this.timestamp_ms && (e.writeFieldBegin("timestamp_ms", r.Type.I64, 9), e.writeI64(this.timestamp_ms), e.writeFieldEnd()), null !== this.start_time_ms && void 0 !== this.start_time_ms && (e.writeFieldBegin("start_time_ms", r.Type.I64, 10), e.writeI64(this.start_time_ms), e.writeFieldEnd()), null !== this.volume && void 0 !== this.volume && (e.writeFieldBegin("volume", r.Type.I64, 11), e.writeI64(this.volume), e.writeFieldEnd()), null !== this.chat_state && void 0 !== this.chat_state && (e.writeFieldBegin("chat_state", r.Type.STRING, 12), e.writeString(this.chat_state), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("Playback"), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.STRING, 1), e.writeString(this.id), e.writeFieldEnd()), null !== this.scrubbing_start_ms && void 0 !== this.scrubbing_start_ms && (e.writeFieldBegin("scrubbing_start_ms", r.Type.I64, 2), e.writeI64(this.scrubbing_start_ms), e.writeFieldEnd()), null !== this.scrubbing_end_ms && void 0 !== this.scrubbing_end_ms && (e.writeFieldBegin("scrubbing_end_ms", r.Type.I64, 3), e.writeI64(this.scrubbing_end_ms), e.writeFieldEnd()), null !== this.session_duration_ms && void 0 !== this.session_duration_ms && (e.writeFieldBegin("session_duration_ms", r.Type.I64, 4), e.writeI64(this.session_duration_ms), e.writeFieldEnd()), null !== this.watch_duration_ms && void 0 !== this.watch_duration_ms && (e.writeFieldBegin("watch_duration_ms", r.Type.I64, 5), e.writeI64(this.watch_duration_ms), e.writeFieldEnd()), null !== this.heartbeat_duration_ms && void 0 !== this.heartbeat_duration_ms && (e.writeFieldBegin("heartbeat_duration_ms", r.Type.I64, 6), e.writeI64(this.heartbeat_duration_ms), e.writeFieldEnd()), null !== this.is_live && void 0 !== this.is_live && (e.writeFieldBegin("is_live", r.Type.BOOL, 7), e.writeBool(this.is_live), e.writeFieldEnd()), null !== this.playhead_offset_ms && void 0 !== this.playhead_offset_ms && (e.writeFieldBegin("playhead_offset_ms", r.Type.I64, 8), e.writeI64(this.playhead_offset_ms), e.writeFieldEnd()), null !== this.timestamp_ms && void 0 !== this.timestamp_ms && (e.writeFieldBegin("timestamp_ms", r.Type.I64, 9), e.writeI64(this.timestamp_ms), e.writeFieldEnd()), null !== this.start_time_ms && void 0 !== this.start_time_ms && (e.writeFieldBegin("start_time_ms", r.Type.I64, 10), e.writeI64(this.start_time_ms), e.writeFieldEnd()), null !== this.volume && void 0 !== this.volume && (e.writeFieldBegin("volume", r.Type.I64, 11), e.writeI64(this.volume), e.writeFieldEnd()), null !== this.chat_state && void 0 !== this.chat_state && (e.writeFieldBegin("chat_state", r.Type.STRING, 12), e.writeString(this.chat_state), e.writeFieldEnd()), null !== this.player_type && void 0 !== this.player_type && (e.writeFieldBegin("player_type", r.Type.STRING, 13), e.writeString(this.player_type), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/poll_types.js": function(e, t, i) {
@@ -29232,4 +29232,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.3aa01c735fc6af297b08.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.54609b3c7f83d3580e57.js.map
