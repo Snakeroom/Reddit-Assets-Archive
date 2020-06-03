@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f6171600745d37b6cac3.js
-// Retrieved at 6/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c000c4e91cd75ed2ee19.js
+// Retrieved at 6/3/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3475,11 +3475,15 @@
 					}
 				}))(r(), e);
 				if (o.ok && o.body) {
+					const {
+						feature_enabled: n,
+						experiment_enabled: s
+					} = o.body;
 					if (t(D({
 							subredditId: e,
-							bannerEnabled: !!o.body.feature_enabled,
-							buttonEnabled: !!o.body.experiment_enabled
-						})), o.body.feature_enabled) {
+							bannerEnabled: n,
+							buttonEnabled: s
+						})), n) {
 						const e = (e => Object.assign({
 							source: O.b.Chat,
 							action: O.a.View,
@@ -3506,11 +3510,17 @@
 						subreddit_id: t
 					}
 				}))(r(), e);
-				a.ok && a.body && (t(P({
-					subredditId: e,
-					bannerEnabled: !!a.body.feature_enabled,
-					buttonEnabled: !!a.body.experiment_enabled
-				})), a.body.feature_enabled || t(k()));
+				if (a.ok && a.body) {
+					const {
+						feature_enabled: n,
+						experiment_enabled: s
+					} = a.body;
+					t(P({
+						subredditId: e,
+						bannerEnabled: n,
+						buttonEnabled: s
+					})), n || t(k())
+				}
 				const o = (e => Object.assign({
 					source: O.b.Chat,
 					action: O.a.Dismiss,
@@ -3530,11 +3540,13 @@
 						subreddit_id: t
 					}
 				}))(_(), e);
-				if (j.ok && j.body && j.body.deeplink_url) {
+				if (j.ok && j.body) {
 					t(Object(a.i)(i.a.DOWN_TO_CHAT_PENDING_MODAL));
-					const e = Object(f.a)(j.body.deeplink_url);
-					e && e.pathname && t(Object(r.b)({
-						channelUrl: e.pathname
+					const {
+						deeplink_url: e
+					} = j.body, n = Object(f.a)(e);
+					n && n.pathname && t(Object(r.b)({
+						channelUrl: n.pathname
 					}))
 				} else t(Object(o.e)({
 					kind: g.b.Error,
@@ -54256,4 +54268,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.f6171600745d37b6cac3.js.map
+//# sourceMappingURL=Governance~Reddit.c000c4e91cd75ed2ee19.js.map
