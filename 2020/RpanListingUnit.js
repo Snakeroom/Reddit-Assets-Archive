@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.aca3ec3f616501e72a39.js
-// Retrieved at 6/3/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.68e2215b8d79da7bc367.js
+// Retrieved at 6/3/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				g = Object({
-					SENTRY_RELEASE_VERSION: "d0196e0-production"
+					SENTRY_RELEASE_VERSION: "b778bed-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -1005,20 +1005,20 @@
 							onHideRpanUnit: s,
 							sendEvent: r
 						} = this.props;
-						s(), r(Object(f.e)())
+						s(), r(Object(f.f)())
 					}, this.onStreamClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t,
 							stream: s
 						} = this.props;
-						t(s ? Object(f.f)(s, 1) : Object(f.f)()), this.openOverlay()
+						t(s ? Object(f.g)(s, 1) : Object(f.g)()), this.openOverlay()
 					}, this.onHeaderClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t
 						} = this.props;
-						t(Object(f.f)()), this.openOverlay()
+						t(Object(f.g)()), this.openOverlay()
 					}
 				}
 				get isLive() {
@@ -1489,4 +1489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.aca3ec3f616501e72a39.js.map
+//# sourceMappingURL=RpanListingUnit.68e2215b8d79da7bc367.js.map
