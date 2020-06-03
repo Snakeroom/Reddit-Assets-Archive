@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.816b7ea335c24fec0021.js
-// Retrieved at 6/3/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a2d60dc2caa73de49ed2.js
+// Retrieved at 6/3/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -230,7 +230,7 @@
 						userShowedIntent: !1,
 						volume: .8,
 						wasRemoved: !1,
-						id: 0,
+						id: "",
 						sessionDuration: 0,
 						sessionTimerId: "",
 						watchDuration: 0,
@@ -442,4 +442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.816b7ea335c24fec0021.js.map
+//# sourceMappingURL=LiveVideoPlayer.a2d60dc2caa73de49ed2.js.map
