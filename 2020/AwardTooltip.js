@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.9674f174bb794a7b978b.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.48a27e313cef0e130d53.js
+// Retrieved at 6/4/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -47,8 +47,8 @@
 				O = o("./src/reddit/selectors/subreddit.ts"),
 				_ = o("./src/reddit/selectors/user.ts"),
 				P = o("./src/reddit/components/ContentTooltip/index.tsx"),
-				E = o("./src/reddit/components/SubredditIcon/index.tsx"),
-				j = o("./src/reddit/controls/Button/index.tsx"),
+				j = o("./src/reddit/components/SubredditIcon/index.tsx"),
+				E = o("./src/reddit/controls/Button/index.tsx"),
 				v = o("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				y = o("./src/reddit/icons/svgs/Hide/index.tsx"),
 				N = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
@@ -175,7 +175,7 @@
 						currentUser: t,
 						onClickPremium: o
 					} = this.props, s = e.awardSubType === f.d.Premium, i = !!t && t.isGold;
-					return s ? i ? null : n.a.createElement(j.e, {
+					return s ? i ? null : n.a.createElement(E.e, {
 						className: A.a.premiumCta,
 						onClick: o
 					}, r.fbt._("Get Premium", null, {
@@ -196,7 +196,7 @@
 						postOrComment: s,
 						subreddit: i,
 						tooltipId: a
-					} = this.props, d = e.awardSubType === f.d.Premium, p = e.isEnabled && (t && s.authorId === t.id || Object(l.a)(o));
+					} = this.props, d = e.awardSubType === f.d.Premium, p = t && s.authorId === t.id || Object(l.a)(o);
 					return n.a.createElement(P.a, {
 						caretColor: {
 							top: d ? m.a.orangered : m.a.alienblue
@@ -230,7 +230,7 @@
 						award: e
 					})), e.awardType === f.f.Community && i && n.a.createElement("div", {
 						className: A.a.subreddit
-					}, n.a.createElement(E.b, {
+					}, n.a.createElement(j.b, {
 						className: A.a.subredditIcon,
 						subredditOrProfile: i
 					}), "r/".concat(i.name)), e.awardType === f.f.Moderator && n.a.createElement("div", {
@@ -337,7 +337,7 @@
 				}),
 				_ = Object(d.a)(g, [r.a.Click, r.a.Keydown]),
 				P = Object(i.b)(O);
-			class E extends n.a.Component {
+			class j extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
@@ -415,7 +415,7 @@
 					}))
 				}
 			}
-			t.a = P(E)
+			t.a = P(j)
 		},
 		"./src/reddit/helpers/hasModFullPermissions/index.ts": function(e, t, o) {
 			"use strict";
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.9674f174bb794a7b978b.js.map
+//# sourceMappingURL=AwardTooltip.48a27e313cef0e130d53.js.map
