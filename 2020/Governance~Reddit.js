@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a64d98c46a37f714a5c4.js
-// Retrieved at 6/4/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.91d3f27e2e12168de4f4.js
+// Retrieved at 6/4/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5578,11 +5578,11 @@
 								powerups: r,
 								supporters: a
 							} = s.data.subredditInfoById;
-							return void(await t(j({
+							await t(j({
 								powerups: r,
 								subredditId: e,
-								topSupporters: a.topSupporters
-							})))
+								topSupporters: a ? a.topSupporters : []
+							}))
 						}
 					} catch (i) {
 						await t(I(s.fbt._("Something went wrong", null, {
@@ -5695,11 +5695,9 @@
 							if (s.ok) {
 								const r = s.body;
 								if (r.errors && r.errors.length) return void(await n(f(r.errors[0].message)));
-								const {
-									offers: a
-								} = r.data.subredditInfoById.productOffers;
+								const a = r.data.subredditInfoById.productOffers ? r.data.subredditInfoById.productOffers.offers : [];
 								return void(await n(b({
-									productOffers: a,
+									productOffers: a || [],
 									subredditId: e,
 									type: t
 								})))
@@ -35962,7 +35960,7 @@
 								powerups: n,
 								subredditId: s
 							} = t.payload;
-							if (n.mediaPacks) {
+							if (n && n.mediaPacks) {
 								const t = n.mediaPacks.map(e => ({
 									title: e.name,
 									emotes: e.emotes.reduce((t, n) => Object.assign({}, t, {
@@ -54249,4 +54247,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a64d98c46a37f714a5c4.js.map
+//# sourceMappingURL=Governance~Reddit.91d3f27e2e12168de4f4.js.map
