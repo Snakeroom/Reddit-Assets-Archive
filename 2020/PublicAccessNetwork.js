@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bbe7700005a908f182ab.js
-// Retrieved at 6/4/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.eabf89d0d9014ca45fd2.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -336,7 +336,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "2f99842-production"
+					SENTRY_RELEASE_VERSION: "936049b-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -650,7 +650,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: s
-				} = r.a, a = (e => e.replace(c.vb.Account + "_", ""))(t), {
+				} = r.a, a = (e => e.replace(c.wb.Account + "_", ""))(t), {
 					avatar: n,
 					color: i
 				} = (e => {
@@ -3600,8 +3600,8 @@
 					} = t;
 					return {
 						loadComments: () => e(Object(lr.q)(s, void 0, {
-							sort: or.q.CHAT
-						}, or.q.CHAT)),
+							sort: or.r.CHAT
+						}, or.r.CHAT)),
 						openLoginModal: () => e(Object(u.g)()),
 						openRegisterModal: () => e(Object(u.h)())
 					}
@@ -4353,4 +4353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.bbe7700005a908f182ab.js.map
+//# sourceMappingURL=PublicAccessNetwork.eabf89d0d9014ca45fd2.js.map

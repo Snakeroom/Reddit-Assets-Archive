@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.a3f6c21696ca5482a5d8.js
-// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.25bee096b87c3aef6a26.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -14,7 +14,7 @@
 			})), i.d(t, "isBrowserSubscribedForPushNotifications", (function() {
 				return q
 			})), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return I
+				return P
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return W
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -38,8 +38,8 @@
 					return s
 				}),
 				l = i("./src/reddit/actions/notifications/constants.ts"),
-				g = i("./src/reddit/actions/notifications/state.ts"),
-				b = i("./src/reddit/actions/notifications/utils.ts"),
+				b = i("./src/reddit/actions/notifications/state.ts"),
+				g = i("./src/reddit/actions/notifications/utils.ts"),
 				f = i("./src/reddit/actions/tabBadging.ts"),
 				p = i("./src/reddit/actions/toaster.ts"),
 				m = i("./src/graphql/operations/RegisterWebPushToken.json"),
@@ -50,7 +50,7 @@
 				w = i("./src/reddit/models/Toast/index.ts"),
 				_ = i("./src/reddit/selectors/meta.ts"),
 				k = i("./src/reddit/selectors/user.ts");
-			const S = 4 * c.H,
+			const S = 4 * c.I,
 				y = () => {
 					const e = Object(u.a)() && "1" === localStorage.getItem("notification-permission-request-closed");
 					return "granted" === Notification.permission ? l.a.Granted : "denied" === Notification.permission ? l.a.Denied : e ? l.a.Closed : l.a.Default
@@ -70,11 +70,11 @@
 						v2EventBoilerPlate: v.a(e)
 					})
 				};
-			let P = !1;
-			const I = async (e, t) => {
+			let I = !1;
+			const P = async (e, t) => {
 				const i = Object(k.G)(e);
-				if (P) return;
-				if (P = !0, Object(b.a)(e) !== l.f.NotificationsSupported) return;
+				if (I) return;
+				if (I = !0, Object(g.a)(e) !== l.f.NotificationsSupported) return;
 				try {
 					await navigator.serviceWorker.register("/sw.js")
 				} catch (s) {
@@ -91,16 +91,16 @@
 				}), x(e)
 			}, W = (e, t) => async (i, s, n) => {
 				const r = s(),
-					o = Object(_.g)(r);
+					o = Object(_.h)(r);
 				if (await Object(a.a)() || o) return;
-				if (await I(r, i), Object(u.a)()) {
+				if (await P(r, i), Object(u.a)()) {
 					const t = localStorage.getItem("push-token-last-refresh-ms"),
 						i = (new Date).getTime();
 					if (!e && t && parseInt(t) + S > i) return;
 					localStorage.setItem("push-token-last-refresh-ms", i.toString())
 				}
 				v.h(r);
-				const c = Object(b.a)(r);
+				const c = Object(g.a)(r);
 				if (c === l.f.BrowserUnsupported) return;
 				if (c === l.f.LocalStorageUnavailable) return;
 				if (c === l.f.NotAllRequiredAPIsSupported) return;
@@ -129,7 +129,7 @@
 						};
 						c = await a.pushManager.subscribe(e)
 					}
-					Object(g.c)();
+					Object(b.c)();
 					const u = await ((e, t, i) => {
 							const s = {
 								pushToken: JSON.stringify(i),
@@ -155,7 +155,7 @@
 				try {
 					const i = await navigator.serviceWorker.register("/sw.js"),
 						s = await i.pushManager.getSubscription();
-					s && (s.unsubscribe(), Object(g.c)(), e && t(Object(p.e)({
+					s && (s.unsubscribe(), Object(b.c)(), e && t(Object(p.e)({
 						kind: w.b.SuccessCommunity,
 						text: n.fbt._("Changes saved", null, {
 							hk: "wGH5U"
@@ -175,9 +175,9 @@
 			})), i.d(t, "d", (function() {
 				return d
 			})), i.d(t, "h", (function() {
-				return g
-			})), i.d(t, "i", (function() {
 				return b
+			})), i.d(t, "i", (function() {
+				return g
 			})), i.d(t, "g", (function() {
 				return f
 			})), i.d(t, "a", (function() {
@@ -222,13 +222,13 @@
 					}),
 					noun: "push_token"
 				}),
-				g = e => {
+				b = e => {
 					Object(n.a)(Object.assign({}, l(e, !0), {
 						action: "request",
 						source: "notification"
 					}))
 				},
-				b = e => {
+				g = e => {
 					Object(n.a)(Object.assign({}, l(e, !0), {
 						action: "register",
 						source: "notification"
@@ -256,4 +256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PushNotifications.a3f6c21696ca5482a5d8.js.map
+//# sourceMappingURL=PushNotifications.25bee096b87c3aef6a26.js.map

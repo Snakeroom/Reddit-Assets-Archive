@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.56325197d633afd739ac.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.7db89e080214f21ce890.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -526,8 +526,8 @@
 				P = t("./src/reddit/contexts/PageLayer/index.tsx"),
 				j = t("./src/reddit/models/Gold/Coins/index.ts"),
 				O = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				y = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				I = t("./src/reddit/selectors/user.ts"),
+				I = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				y = t("./src/reddit/selectors/user.ts"),
 				T = t("./src/reddit/components/CoinPurchaseModal/Loader.tsx"),
 				M = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
 				L = t.n(M),
@@ -753,11 +753,11 @@
 					activeSaleConfig: O.a,
 					coinPackages: O.b,
 					dealCoinPackages: O.d,
-					isGold: I.p,
-					isLoggedIn: I.H,
+					isGold: y.p,
+					isLoggedIn: y.H,
 					premiumPackages: O.e,
 					purchaseCatalogPending: O.g,
-					shouldShowCoinPurchaseModal: y.r
+					shouldShowCoinPurchaseModal: I.r
 				}),
 				ie = Object(o.b)(re, (e, a) => ({
 					onRouteToManagePremium: () => e(Object(m.b)("/settings/gold")),
@@ -801,7 +801,7 @@
 						requestPurchaseCatalog: t
 					} = this.props;
 					e.length || a || t(), g.e() || g.f(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const s = p.yb.COINS;
+					const s = p.zb.COINS;
 					b.c.has(s) && this.props.sendEvent(Object(f.a)(k.TimerType.InApp, b.c.end(s))), Object(u.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.56325197d633afd739ac.js.map
+//# sourceMappingURL=Coins.7db89e080214f21ce890.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.685f09281a6570b67a90.js
-// Retrieved at 6/4/2020, 3:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.65fcd9a2d522320cfa67.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -424,12 +424,12 @@
 				E = g.a.div("EmptyHomepage", b.a),
 				P = e => {
 					switch (e) {
-						case d.M.RISING:
+						case d.N.RISING:
 							return n.fbt._("Create a new post and take all the glory", null, {
 								hk: "1NhXUe"
 							});
-						case d.M.TOP:
-						case d.M.CONTROVERSIAL:
+						case d.N.TOP:
+						case d.N.CONTROVERSIAL:
 							return null;
 						default:
 							return n.fbt._("Be the first to till this fertile land.", null, {
@@ -445,12 +445,12 @@
 					const r = P(s);
 					return c.a.createElement(_, null, c.a.createElement(y, null, (e => {
 						switch (e) {
-							case d.M.RISING:
+							case d.N.RISING:
 								return n.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
 									hk: "kJ3Te"
 								});
-							case d.M.TOP:
-							case d.M.CONTROVERSIAL:
+							case d.N.TOP:
+							case d.N.CONTROVERSIAL:
 								return n.fbt._("No posts were found using the {listing sort option} sort. Try changing the sort.", [n.fbt._param("listing sort option", o()(e))], {
 									hk: "48BeCW"
 								});
@@ -1360,17 +1360,17 @@
 				D = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				S = s("./src/reddit/constants/parameters.ts"),
 				R = s("./src/reddit/constants/postLayout.ts"),
-				M = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				U = s("./src/reddit/helpers/trackers/screenview.ts"),
-				F = s("./src/reddit/layout/page/Listing/index.tsx"),
+				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				F = s("./src/reddit/helpers/trackers/screenview.ts"),
+				M = s("./src/reddit/layout/page/Listing/index.tsx"),
 				V = s("./src/reddit/selectors/experiments/trending.ts"),
 				B = s("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
 				H = s("./src/reddit/selectors/frontpage.ts"),
 				K = s("./src/reddit/selectors/meta.ts"),
 				W = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				q = s("./src/reddit/selectors/user.ts"),
-				G = s("./src/lib/constants/index.ts"),
-				Q = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				Q = s("./src/lib/constants/index.ts"),
+				G = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				Z = s("./src/lib/objectSelector/index.ts"),
 				J = s("./src/reddit/constants/page.ts"),
 				z = s("./src/reddit/pages/Frontpage/index.m.less"),
@@ -1387,7 +1387,7 @@
 			}
 			const {
 				fbt: $
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), ee = Object(M.t)(), te = Object(b.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), ee = Object(U.t)(), te = Object(b.c)({
 				queryParams: Object(Z.a)((e, t) => {
 					let {
 						location: s
@@ -1407,18 +1407,18 @@
 			}), ne = Object(b.c)({
 				isInTrendingEntrypointExperiment: V.a,
 				isLoggedIn: q.H,
-				isPopular: M.C,
+				isPopular: U.C,
 				isRpanDuVisible: e => Object(W.a)(e, {
-					listingName: Q.P
+					listingName: G.P
 				}),
 				rpanInjectionIndex: e => Object(W.b)(e, {
-					listingName: Q.P
+					listingName: G.P
 				}),
-				layout: M.N
+				layout: U.N
 			}), re = () => Object(b.a)(se, te, ne, e => Object(W.a)(e, {
-				listingName: Q.P
+				listingName: G.P
 			}), e => Object(W.b)(e, {
-				listingName: Q.P
+				listingName: G.P
 			}), e => e, (e, t, s, n, r, o) => {
 				let {
 					countryMeta: i,
@@ -1428,9 +1428,9 @@
 					sort: d
 				} = t;
 				const l = S.t in a && a[S.t].toUpperCase(),
-					u = "string" == typeof l && l in G.Pb ? G.Pb[l] : G.Qb,
+					u = "string" == typeof l && l in Q.Qb ? Q.Qb[l] : Q.Rb,
 					m = Object(v.a)(J.a, d, a),
-					p = i || G.u.Everywhere,
+					p = i || Q.v.Everywhere,
 					h = c || p,
 					b = S.g in a ? a[S.g].toUpperCase() : h,
 					g = [];
@@ -1525,7 +1525,7 @@
 							desiredIndex: c,
 							layout: o,
 							listingKey: i,
-							listingName: Q.P,
+							listingName: G.P,
 							sendEvent: a
 						});
 						u[t] = e
@@ -1535,7 +1535,7 @@
 						listingKey: i,
 						listingName: J.b
 					});
-					return p.a.createElement(F.a, {
+					return p.a.createElement(M.a, {
 						className: Object(g.a)(Y.a.Container, this.props.className),
 						fitPageToContent: !0,
 						trendingUnit: d && p.a.createElement(ae, {
@@ -1558,7 +1558,7 @@
 							key: "listing",
 							listingKey: i,
 							listingName: J.b,
-							listingViewed: (e, t) => Object(U.e)(i, this.props.sort, t, e, this.props.timeSort),
+							listingViewed: (e, t) => Object(F.e)(i, this.props.sort, t, e, this.props.timeSort),
 							onLoadMore: this.props.onLoadMorePosts
 						})),
 						sidebar: h
@@ -1597,7 +1597,7 @@
 						a = o
 					} else a = n;
 					if (!a.rpanDuDismissalTime) return !1;
-					return new Date(a.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.v
+					return new Date(a.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.w
 				}, (e, t) => {
 					let {
 						listingName: s
@@ -1655,9 +1655,9 @@
 			})), s.d(t, "j", (function() {
 				return R
 			})), s.d(t, "i", (function() {
-				return M
-			})), s.d(t, "e", (function() {
 				return U
+			})), s.d(t, "e", (function() {
+				return F
 			})), s.d(t, "a", (function() {
 				return B
 			})), s.d(t, "h", (function() {
@@ -1692,7 +1692,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							r = F(n, c.b.ENDED) ? c.b.ENDED : n,
+							r = M(n, c.b.ENDED) ? c.b.ENDED : n,
 							o = s.stream.vod_accessible;
 						return r === n && !0 === o ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1707,7 +1707,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							r = F(n, c.b.ENDED) ? c.b.ENDED : n,
+							r = M(n, c.b.ENDED) ? c.b.ENDED : n,
 							o = s.stream.vod_accessible;
 						return r === n && !1 === o ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1836,7 +1836,7 @@
 				D = Object(r.a)(Object(n.a)(L, O, (e, t) => e ? t[e] : void 0)),
 				S = Object(r.a)(Object(n.a)(A, O, (e, t) => e ? t[e] : void 0)),
 				R = Object(r.a)(Object(n.a)(T, O, (e, t) => e ? t[e] : void 0)),
-				M = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign({}, t[s], {
+				U = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign({}, t[s], {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)((e, t) => {
 					let {
@@ -1844,14 +1844,14 @@
 					} = t;
 					return s
 				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
-				U = Object(n.a)((e, t) => {
+				F = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
 					return s ? j(e, s) : void 0
 				}, e => !e || e.chat_disabled);
 
-			function F(e, t) {
+			function M(e, t) {
 				const s = {
 					[c.b.NOT_STARTED]: 0,
 					[c.b.PUBLISHED]: 1,
@@ -1919,4 +1919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.685f09281a6570b67a90.js.map
+//# sourceMappingURL=Frontpage.65fcd9a2d522320cfa67.js.map

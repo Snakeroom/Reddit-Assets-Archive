@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.b3febd18694c3d715e5c.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.cabf78ec81d625be968a.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -43,15 +43,15 @@
 				p = n("./src/lib/lessComponent.tsx"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/controls/Button/index.m.less"),
-				v = n.n(f);
-			const h = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", v.a),
-				g = p.a.wrapped(b.l, "InvertedTertiaryButton", v.a);
+				h = n.n(f);
+			const v = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", h.a),
+				g = p.a.wrapped(b.l, "InvertedTertiaryButton", h.a);
 			var x = n("./src/reddit/endpoints/governance/poll.ts"),
 				j = n("./src/reddit/featureFlags/component.tsx"),
 				E = n("./src/reddit/helpers/overlay/index.ts"),
 				O = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
-				y = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				w = n("./src/reddit/selectors/gov.ts"),
+				w = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				y = n("./src/reddit/selectors/gov.ts"),
 				_ = n("./src/reddit/components/Governance/VotingBanner/index.m.less"),
 				I = n.n(_);
 			const P = 100,
@@ -117,7 +117,7 @@
 						className: I.a.content
 					}, a.a.createElement("div", {
 						className: I.a.redditIconContainer
-					}, a.a.createElement(y.a, {
+					}, a.a.createElement(w.a, {
 						className: I.a.redditIcon
 					}), a.a.createElement("div", {
 						className: I.a.glowInner
@@ -138,7 +138,7 @@
 						onClick: this.dismissBanner
 					}, r.fbt._("later", null, {
 						hk: "3jW79t"
-					})), a.a.createElement(h, {
+					})), a.a.createElement(v, {
 						className: I.a.button,
 						to: Object(E.b)(this.state.postUrl),
 						onClick: this.dismissBanner
@@ -161,12 +161,12 @@
 					n = localStorage.getItem(t);
 				if (!n) return !1;
 				const r = new Date(n).getTime();
-				return Date.now() - c.v < r
+				return Date.now() - c.w < r
 			}
 			const S = Object(d.c)({
 					assets: (e, t) => {
 						const n = Object(m.q)(e, t);
-						if (n) return Object(w.l)(e, {
+						if (n) return Object(y.l)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
@@ -349,9 +349,9 @@
 			})), n.d(t, "g", (function() {
 				return f
 			})), n.d(t, "h", (function() {
-				return v
-			})), n.d(t, "i", (function() {
 				return h
+			})), n.d(t, "i", (function() {
+				return v
 			})), n.d(t, "j", (function() {
 				return g
 			})), n.d(t, "p", (function() {
@@ -363,9 +363,9 @@
 			})), n.d(t, "l", (function() {
 				return O
 			})), n.d(t, "m", (function() {
-				return y
-			})), n.d(t, "s", (function() {
 				return w
+			})), n.d(t, "s", (function() {
+				return y
 			})), n.d(t, "a", (function() {
 				return _
 			})), n.d(t, "f", (function() {
@@ -392,7 +392,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = w(e, {
+					const r = y(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -419,7 +419,7 @@
 					} : c
 				},
 				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				v = (e, t) => {
+				h = (e, t) => {
 					if (Object(o.a)(e)) {
 						const t = Object(i.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
@@ -432,7 +432,7 @@
 					}
 					return n
 				},
-				h = (e, t) => {
+				v = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
 				g = (e, t) => {
@@ -446,14 +446,14 @@
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				O = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				w = (e, t) => {
-					const n = y(e, t);
+				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				y = (e, t) => {
+					const n = w(e, t);
 					return n && n.walletProvider
 				},
 				_ = (e, t) => {
-					const n = w(e, t),
-						r = y(e, t);
+					const n = y(e, t),
+						r = w(e, t);
 					return n && n.provider || r && r.provider
 				},
 				I = (e, t) => {
@@ -461,7 +461,7 @@
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
 				P = (e, t) => {
-					const n = w(e, t),
+					const n = y(e, t),
 						r = _(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -481,7 +481,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = w(e, {
+					const r = y(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
@@ -489,10 +489,10 @@
 					}
 				},
 				N = (e, t) => {
-					const n = y(e, t);
+					const n = w(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.b3febd18694c3d715e5c.js.map
+//# sourceMappingURL=GovernanceVotingBanner.cabf78ec81d625be968a.js.map

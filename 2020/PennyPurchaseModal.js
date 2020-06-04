@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.73accf95e690b5293d1a.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.9b0352af4d66f5363579.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -204,7 +204,7 @@
 					}, r.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: a
-					}), o === d.ub ? e && e.pennyPrice && t ? r.a.createElement(M, {
+					}), o === d.vb ? e && e.pennyPrice && t ? r.a.createElement(M, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -212,7 +212,7 @@
 					}) : s && r.a.createElement(M, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: s
-					}) : null, o === d.tb && r.a.createElement(g.f, {
+					}) : null, o === d.ub && r.a.createElement(g.f, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: c || n,
@@ -308,7 +308,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === d.tb && r.a.createElement(l.a, {
+			}), e.selectedPayment === d.ub && r.a.createElement(l.a, {
 				nightmode: e.nightmode
 			}), r.a.createElement("div", {
 				className: T.a.checkoutFooter
@@ -316,9 +316,9 @@
 				className: T.a.purchaseTotal
 			}, s.fbt._("Total: {totalAmount}", [s.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 				hk: "3dx6W8"
-			}))), e.selectedPayment === d.ub && e.paypalErrorMessage && r.a.createElement("div", {
+			}))), e.selectedPayment === d.vb && e.paypalErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === d.tb && e.stripeErrorMessage && r.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === d.ub && e.stripeErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
 			}, e.stripeErrorMessage), r.a.createElement("div", {
 				className: T.a.agreementLink
@@ -589,4 +589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.73accf95e690b5293d1a.js.map
+//# sourceMappingURL=PennyPurchaseModal.9b0352af4d66f5363579.js.map

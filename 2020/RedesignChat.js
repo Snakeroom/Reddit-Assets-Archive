@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.ba93eb7c5a8ab1b3530a.js
-// Retrieved at 6/2/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.2e8bb15e8a1653c9750e.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -37,8 +37,8 @@
 				w = s("./src/chat/customMiddleware/tokenRefresher.ts"),
 				_ = s("./src/chat/customMiddleware/tracking.ts"),
 				v = s("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				k = s("./node_modules/lodash/uniqueId.js"),
-				R = s.n(k),
+				R = s("./node_modules/lodash/uniqueId.js"),
+				k = s.n(R),
 				y = s("./src/chat/constants/theme.ts"),
 				M = s("./src/chat/models/Theme/index.ts"),
 				S = s("./src/chat/reducers/meta/index.ts"),
@@ -98,7 +98,7 @@
 					return e
 				},
 				F = (e, t, s) => {
-					const r = R()(),
+					const r = k()(),
 						c = Object(a.c)(t.location.pathname, void 0, r),
 						i = Object(d.a)(Object(a.e)(c), s),
 						n = Object(D.b)(D.a, Object(h.e)({
@@ -133,7 +133,7 @@
 					userLoggedOut: m.b,
 					userReauthenticated: m.c
 				},
-				statsAppName: n.k.Chat
+				statsAppName: n.l.Chat
 			});
 
 			function z(e, t) {
@@ -145,7 +145,7 @@
 					routes: q.a,
 					apiContext: P.apiContext,
 					appFactory: b.a,
-					appName: n.k.Chat,
+					appName: n.l.Chat,
 					history: Object(a.d)({
 						initialEntries: [s],
 						initialIndex: 0
@@ -206,4 +206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.ba93eb7c5a8ab1b3530a.js.map
+//# sourceMappingURL=RedesignChat.2e8bb15e8a1653c9750e.js.map

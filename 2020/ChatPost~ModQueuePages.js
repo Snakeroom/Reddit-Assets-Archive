@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.c8fda42e663b023d3e01.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.03d69ebcca4276d32fa8.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, o, t) {
@@ -136,8 +136,8 @@
 				g = t("./src/reddit/components/Flair/index.tsx"),
 				w = t("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
 				y = t("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
-				A = t("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				S = t("./src/reddit/components/JSAPIContainers/index.tsx"),
+				S = t("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				A = t("./src/reddit/components/JSAPIContainers/index.tsx"),
 				O = t("./src/reddit/components/PostTopMeta/index.tsx"),
 				j = t("./src/reddit/helpers/isRemoved.ts"),
 				L = t("./src/reddit/helpers/modTooltipTemplates/index.ts"),
@@ -145,8 +145,8 @@
 				R = t("./src/reddit/actions/comment/index.ts"),
 				H = t("./src/reddit/models/Comment/index.ts"),
 				D = t("./src/reddit/models/Flair/index.ts"),
-				P = t("./src/reddit/icons/fonts/Admin/index.tsx"),
-				B = t("./src/reddit/icons/fonts/Approve/index.tsx"),
+				B = t("./src/reddit/icons/fonts/Admin/index.tsx"),
+				P = t("./src/reddit/icons/fonts/Approve/index.tsx"),
 				F = t("./src/reddit/icons/fonts/Lock/index.tsx"),
 				U = t("./src/reddit/icons/fonts/helpers.tsx"),
 				V = t("./src/reddit/icons/fonts/Op/index.m.less"),
@@ -188,8 +188,8 @@
 				return t
 			};
 			const re = m.a.wrapped(g.b, "RightPositionedAuthorFlair", oe.a),
-				ae = m.a.wrapped(P.a, "AdminIcon", oe.a),
-				se = m.a.wrapped(B.a, "Approve", oe.a),
+				ae = m.a.wrapped(B.a, "AdminIcon", oe.a),
+				se = m.a.wrapped(P.a, "Approve", oe.a),
 				de = m.a.wrapped(F.a, "Lock", oe.a),
 				ie = m.a.div("AdminEmeritus", oe.a),
 				ce = m.a.wrapped(K.a, "Automoderator", oe.a),
@@ -199,7 +199,7 @@
 				ue = m.a.wrapped(J.a, "Report", oe.a),
 				he = m.a.wrapped(z.a, "Spam", oe.a),
 				Te = m.a.wrapped(W, "Op", oe.a),
-				be = m.a.wrapped(P.a, "Contractor", oe.a),
+				be = m.a.wrapped(B.a, "Contractor", oe.a),
 				Ie = m.a.a("MetaLink", oe.a),
 				Ee = m.a.wrapped(Z.a, "EditedText", oe.a),
 				ve = m.a.wrapped(Z.a, "StickiedText", oe.a),
@@ -222,10 +222,10 @@
 				ye = () => n.fbt._("Cake day", null, {
 					hk: "1xptSi"
 				}),
-				Ae = () => n.fbt._("Reddit admin emeritus", null, {
+				Se = () => n.fbt._("Reddit admin emeritus", null, {
 					hk: "1Md5AV"
 				}),
-				Se = e => n.fbt._("Moderator of {subredditDisplayText}, speaking officially", [n.fbt._param("subredditDisplayText", e)], {
+				Ae = e => n.fbt._("Moderator of {subredditDisplayText}, speaking officially", [n.fbt._param("subredditDisplayText", e)], {
 					hk: "3pHm3n"
 				}),
 				Oe = () => n.fbt._("Original Poster", null, {
@@ -312,13 +312,13 @@
 					isLivestreaming: k,
 					ignoreFlairPosition: _,
 					ignoreLock: y,
-					lockedTooltipId: A,
+					lockedTooltipId: S,
 					modTooltipId: j,
 					onHideTooltip: L,
 					onShowTooltip: N,
 					opTooltipId: R,
-					openRemovalReasonModal: P,
-					removeTooltipId: B,
+					openRemovalReasonModal: B,
+					removeTooltipId: P,
 					renderContractorBadge: F,
 					renderedInOverlay: U,
 					reportTooltipId: V,
@@ -355,7 +355,7 @@
 					postOrComment: u,
 					tooltipType: U ? O.c.Lightbox : void 0
 				}, a.a.createElement(I.b, {
-					ignore: Object(H.d)(u) || !!u.distinguishType && u.distinguishType !== l.A.NONE,
+					ignore: Object(H.d)(u) || !!u.distinguishType && u.distinguishType !== l.B.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, a.a.createElement(De, {
@@ -379,9 +379,9 @@
 					subredditId: u.subredditId,
 					userId: u.authorId,
 					username: u.author
-				}), a.a.createElement(a.a.Fragment, null, a.a.createElement(S.b, {
+				}), a.a.createElement(a.a.Fragment, null, a.a.createElement(A.b, {
 					commentId: u.id
-				}), a.a.createElement(S.a, {
+				}), a.a.createElement(A.a, {
 					commentId: u.id,
 					commentsPageKey: h
 				}), a.a.createElement(Fe, {
@@ -404,18 +404,18 @@
 				}), !C && a.a.createElement(Z.c, {
 					className: oe.a.metaText,
 					key: "scoreCreatedSeparator"
-				}), a.a.createElement(Pe, te({
+				}), a.a.createElement(Be, te({
 					key: "Created"
 				}, e)), u.isStickied && Ve(), u.editedAt && He(u.editedAt)), a.a.createElement(a.a.Fragment, null, a.a.createElement(Ue, {
 					comment: u,
 					approveTooltipId: n,
 					automodTooltipId: r,
 					ignoreLock: y,
-					lockedTooltipId: A,
+					lockedTooltipId: S,
 					onHideTooltip: L,
 					onShowTooltip: N,
-					openRemovalReasonModal: P,
-					removeTooltipId: B,
+					openRemovalReasonModal: B,
+					removeTooltipId: P,
 					reportTooltipId: V,
 					spamTooltipId: G
 				}), a.a.createElement(E.a, {
@@ -440,9 +440,9 @@
 						hk: "1Rtt4V"
 					}) : n.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
-					})), a.a.createElement(Pe, te({
+					})), a.a.createElement(Be, te({
 						key: "Created"
-					}, e)), t && Be({
+					}, e)), t && Pe({
 						childrenInfo: o
 					}))
 				},
@@ -465,9 +465,9 @@
 					}), a.a.createElement(Z.c, {
 						className: oe.a.metaText,
 						key: "scoreCreatedSeparator"
-					}), a.a.createElement(Pe, te({
+					}), a.a.createElement(Be, te({
 						key: "Created"
-					}, e)), Be({
+					}, e)), Pe({
 						childrenInfo: n
 					}))
 				},
@@ -481,7 +481,7 @@
 						className: oe.a.CommentAuthorLink,
 						author: e.comment.author,
 						isAdmin: e.comment.isAdmin,
-						isAdminEmeritus: e.comment.distinguishType === l.A.ALUMNI_ADMIN,
+						isAdminEmeritus: e.comment.distinguishType === l.B.ALUMNI_ADMIN,
 						isAuthorDeleted: e.isAuthorDeleted,
 						isLivestreaming: e.isLivestreaming,
 						isMod: e.comment.isMod,
@@ -495,7 +495,7 @@
 						userId: e.comment.authorId
 					}, o) : o
 				};
-			class Pe extends a.a.PureComponent {
+			class Be extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onShowCreatedTooltip = () => this.props.onShowTooltip(this.props.createdTooltipId)
 				}
@@ -517,7 +517,7 @@
 					}, a.a.createElement("span", null, Object(u.d)(o.created)), Ge(n.createdTooltipId, Object(p.a)(o.created)))
 				}
 			}
-			const Be = e => {
+			const Pe = e => {
 				const {
 					hasContinueThread: o,
 					numChildren: t
@@ -559,17 +559,17 @@
 						id: t.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: t.onHideTooltip
-					}), o.isAdmin && Ge(t.adminTooltipId, we()), o.distinguishType === l.A.ALUMNI_ADMIN && a.a.createElement(ie, {
-						"aria-label": Ae(),
+					}), o.isAdmin && Ge(t.adminTooltipId, we()), o.distinguishType === l.B.ALUMNI_ADMIN && a.a.createElement(ie, {
+						"aria-label": Se(),
 						id: t.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: t.onHideTooltip
-					}, "Δ"), o.distinguishType === l.A.ALUMNI_ADMIN && Ge(t.adminEmeritusTooltipId, Ae()), o.isMod && a.a.createElement(pe, {
-						desc: Se(t.subredditDisplayText),
+					}, "Δ"), o.distinguishType === l.B.ALUMNI_ADMIN && Ge(t.adminEmeritusTooltipId, Se()), o.isMod && a.a.createElement(pe, {
+						desc: Ae(t.subredditDisplayText),
 						id: t.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
 						onMouseLeave: t.onHideTooltip
-					}), o.isMod && Ge(t.modTooltipId, Se(t.subredditDisplayText)), o.isOp && a.a.createElement(Te, {
+					}), o.isMod && Ge(t.modTooltipId, Ae(t.subredditDisplayText)), o.isOp && a.a.createElement(Te, {
 						desc: Oe(),
 						id: t.opTooltipId,
 						onMouseEnter: this.onShowOpTooltip,
@@ -647,7 +647,7 @@
 				}), a.a.createElement(ve, null, n.fbt._("Stickied comment", null, {
 					hk: "XUSav"
 				}))),
-				Ge = (e, o) => a.a.createElement(A.c, {
+				Ge = (e, o) => a.a.createElement(S.c, {
 					tooltipId: e,
 					text: o
 				})
@@ -770,4 +770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~ModQueuePages.c8fda42e663b023d3e01.js.map
+//# sourceMappingURL=ChatPost~ModQueuePages.03d69ebcca4276d32fa8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.45b0b7e5d54136fe9868.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.20e44ae931b5dadabf8c.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/components/Gold/TargetedOfferModal/index.m.less": function(e, t, n) {
@@ -186,7 +186,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: g === d.Premium ? r.lb : h ? h.pennies : void 0
+							amountInSmallestDenom: g === d.Premium ? r.mb : h ? h.pennies : void 0
 						}
 					})
 				},
@@ -277,4 +277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GoldTargetedOfferModal.45b0b7e5d54136fe9868.js.map
+//# sourceMappingURL=GoldTargetedOfferModal.20e44ae931b5dadabf8c.js.map

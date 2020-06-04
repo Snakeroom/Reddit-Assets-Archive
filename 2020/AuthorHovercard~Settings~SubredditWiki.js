@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.0270335acbca08d3d9a7.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.cb80ba7b6324e2197fe3.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -73,9 +73,9 @@
 				y = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				K = r("./src/reddit/models/Gold/Award.ts"),
 				U = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
-				k = r("./src/reddit/actions/inContextModeration.ts"),
-				A = r("./src/reddit/actions/modal.ts"),
-				T = r("./src/reddit/actions/subredditModeration.ts"),
+				A = r("./src/reddit/actions/inContextModeration.ts"),
+				T = r("./src/reddit/actions/modal.ts"),
+				k = r("./src/reddit/actions/subredditModeration.ts"),
 				P = r("./src/reddit/constants/modals.ts"),
 				F = r("./src/reddit/components/Hovercards/helpers.ts"),
 				B = r("./src/reddit/icons/svgs/Ban/index.tsx"),
@@ -145,23 +145,23 @@
 						contextId: a
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(T.nb)(n, t)),
-						requestUserBanInfo: () => e(Object(T.Z)(n, {
+						onUnbanUser: t => e(Object(k.nb)(n, t)),
+						requestUserBanInfo: () => e(Object(k.Z)(n, {
 							username: r
 						})),
 						toggleBanModal: () => {
-							e(Object(k.c)({
+							e(Object(A.c)({
 								username: r,
 								subredditId: n,
 								contextId: a
-							})), e(Object(T.X)(n, r))
+							})), e(Object(k.X)(n, r))
 						},
 						toggleMuteModal: () => {
-							e(Object(k.d)({
+							e(Object(A.d)({
 								username: r,
 								subredditId: n,
 								contextId: a
-							})), e(Object(A.i)(P.a.MUTE_USER))
+							})), e(Object(T.i)(P.a.MUTE_USER))
 						}
 					}
 				})(Q),
@@ -276,7 +276,7 @@
 						hk: "3gKRx9"
 					}))))
 				},
-				ke = Object(_.a)(e => {
+				Ae = Object(_.a)(e => {
 					const {
 						className: t,
 						contextId: r,
@@ -357,13 +357,13 @@
 						user: v
 					}), !(E || d) && a.a.createElement(Me, null))
 				});
-			var Ae = e => {
+			var Te = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return a.a.createElement(ke, ie({
+				return a.a.createElement(Ae, ie({
 					isOpen: t
 				}, e))
 			};
-			const Te = Object(o.c)({
+			const ke = Object(o.c)({
 					tokenName: l.p,
 					activeTooltipId: p.a,
 					isCurrentUser: (e, t) => {
@@ -373,19 +373,19 @@
 					isLoggedIn: b.H,
 					hideNSFWPref: b.z,
 					moderatorPermissions: u.j,
-					origin: m.k,
+					origin: m.l,
 					showAwardKarma: c.a,
 					user: b.eb,
 					userFlair: v.c
 				}),
-				Pe = Object(s.b)(Te, (e, t) => ({
+				Pe = Object(s.b)(ke, (e, t) => ({
 					onHideTooltip: () => e(Object(d.i)())
 				}));
 			t.a = Pe(e => a.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
-			}, a.a.createElement(Ae, {
+			}, a.a.createElement(Te, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				isCurrentUser: e.isCurrentUser,
@@ -999,4 +999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.0270335acbca08d3d9a7.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.cb80ba7b6324e2197fe3.js.map

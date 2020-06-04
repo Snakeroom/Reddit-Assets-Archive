@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.ce7cfffab31ba6c47b93.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.74c0d95736379371f0cf.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -316,7 +316,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: n
-				} = s.a, o = (e => e.replace(c.vb.Account + "_", ""))(t), {
+				} = s.a, o = (e => e.replace(c.wb.Account + "_", ""))(t), {
 					avatar: r,
 					color: a
 				} = (e => {
@@ -611,11 +611,11 @@
 				T = e => {
 					switch (e) {
 						case _.c.Admin:
-							return i.A.ADMIN;
+							return i.B.ADMIN;
 						case _.c.Moderator:
-							return i.A.MODERATOR;
+							return i.B.MODERATOR;
 						case _.c.Alumni:
-							return i.A.ALUMNI_ADMIN;
+							return i.B.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
@@ -1171,7 +1171,7 @@
 						spamTooltipId: M,
 						toggleDeleteCommentModal: A,
 						timestampUpdateTrigger: P
-					} = e, B = !!r && r.id === t.authorId, D = Object(Pe.b)(t), F = t.isApproved && D, W = !t.bannedBy || t.bannedBy === i.j, U = {
+					} = e, B = !!r && r.id === t.authorId, D = Object(Pe.b)(t), F = t.isApproved && D, W = !t.bannedBy || t.bannedBy === i.k, U = {
 						comment: t,
 						onHideTooltip: f,
 						onShowTooltip: T,
@@ -1229,12 +1229,12 @@
 					}, U), o.a.createElement(ot, null)), h && W ? o.a.createElement(Re, tt({
 						onClick: x,
 						tooltipId: N,
-						tooltipText: t.bannedBy === i.j ? G.fbt._("Confirm removal", null, {
+						tooltipText: t.bannedBy === i.k ? G.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : G.fbt._("Remove", null, {
 							hk: "1f2QZ6"
 						}),
-						trackingNoun: t.bannedBy === i.j ? "confirm_remove" : "remove"
+						trackingNoun: t.bannedBy === i.k ? "confirm_remove" : "remove"
 					}, U), o.a.createElement(it, null)) : B && o.a.createElement(Re, tt({
 						onClick: v,
 						tooltipId: c,
@@ -1775,8 +1775,8 @@
 					loadMoreComments: n => e(Object(m.Z)(t.commentsPageKey, n)),
 					loadBlockedRedditors: () => e(Object(d.g)()),
 					loadComments: async () => await e(Object(z.q)(t.postId, void 0, {
-						sort: i.q.CHAT
-					}, i.q.CHAT))
+						sort: i.r.CHAT
+					}, i.r.CHAT))
 				}));
 			class an extends o.a.Component {
 				constructor(e) {
@@ -2189,25 +2189,25 @@
 					isLoggedOut: n
 				} = e;
 				switch (t.type) {
-					case o.C.AUTHORIZATION_ERROR:
+					case o.D.AUTHORIZATION_ERROR:
 						return n ? s.fbt._("You might need to be logged in to do that.", null, {
 							hk: "1313fG"
 						}) : s.fbt._("It looks like you aren't allowed to do that.", null, {
 							hk: "5tQod"
 						});
-					case o.C.VALIDATION_ERROR:
+					case o.D.VALIDATION_ERROR:
 						return s.fbt._("We weren't able to handle your request.", null, {
 							hk: "4umMwv"
 						});
-					case o.C.NOT_FOUND_ERROR:
+					case o.D.NOT_FOUND_ERROR:
 						return s.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 							hk: "2UmS4e"
 						});
-					case o.C.SERVER_ERROR:
+					case o.D.SERVER_ERROR:
 						return s.fbt._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "1Sxl7y"
 						});
-					case o.C.LIKELY_UBLOCK_ERROR:
+					case o.D.LIKELY_UBLOCK_ERROR:
 						return s.fbt._("It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use.", null, {
 							hk: "6Gh68"
 						});
@@ -2422,4 +2422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.ce7cfffab31ba6c47b93.js.map
+//# sourceMappingURL=ChatPost.74c0d95736379371f0cf.js.map

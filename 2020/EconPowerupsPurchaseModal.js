@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.de2d69748b9ff6abe225.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.442d5ab7275ac697d840.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -425,7 +425,7 @@
 						savedCardsPending: d,
 						subreddit: p,
 						subredditId: b
-					} = e, E = Object(s.c)(), [f, w] = Object(r.useState)($.tb);
+					} = e, E = Object(s.c)(), [f, w] = Object(r.useState)($.ub);
 					Object(r.useEffect)(() => {
 						E(Object(ee.c)())
 					}, []);
@@ -478,7 +478,7 @@
 						onPaymentSelected: w
 					}), k && n.a.createElement("div", {
 						className: Ee.a.errorMessage
-					}, k), f === $.tb && n.a.createElement(le.a, {
+					}, k), f === $.ub && n.a.createElement(le.a, {
 						nightmode: a,
 						className: Ee.a.stripeForm,
 						shouldDeleteCardWithGql: !0
@@ -498,12 +498,12 @@
 						className: Ee.a.toggler,
 						on: t,
 						onToggle: () => (e => E(Object(h.a)(e)))(!t)
-					})), f === $.ub && n.a.createElement(ce.f, {
+					})), f === $.vb && n.a.createElement(ce.f, {
 						onClick: () => {},
 						className: Ee.a.button
 					}, he._("Continue to paypal", null, {
 						hk: "2YfwjX"
-					})), f === $.tb && n.a.createElement(pe, {
+					})), f === $.ub && n.a.createElement(pe, {
 						onClick: e => {
 							e && i && E(Object(ee.d)(e, i, b, t, o))
 						},
@@ -900,4 +900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.de2d69748b9ff6abe225.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.442d5ab7275ac697d840.js.map

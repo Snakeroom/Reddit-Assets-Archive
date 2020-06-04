@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3b6e09524c2fa11b5814.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.924f9511435027d6fe43.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -1168,7 +1168,7 @@
 				N = O.a.div("ThumbnailContainer", g.a),
 				I = Object(d.c)({
 					isCurrentUserProfilePost: h.k,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.yb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.zb.TOPIC),
 					post: h.O,
 					shouldOpenPostInNewTab: v.U,
 					subreddit: h.bb
@@ -1764,4 +1764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.3b6e09524c2fa11b5814.js.map
+//# sourceMappingURL=reddit-components-CompactPost.924f9511435027d6fe43.js.map

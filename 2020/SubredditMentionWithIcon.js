@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8288eab1f7a87cfdfc0f.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.1a1295e28d17b52841bf.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -88,7 +88,7 @@
 						})
 					}, a), t)
 				}),
-				E = Object(a.c)({
+				j = Object(a.c)({
 					isOpen: (e, t) => {
 						let {
 							tooltipId: s
@@ -96,8 +96,8 @@
 						return Object(m.b)(s)(e)
 					}
 				}),
-				j = Object(d.a)(y, [n.a.Click, n.a.Keydown]),
-				g = Object(o.b)(E);
+				E = Object(d.a)(y, [n.a.Click, n.a.Keydown]),
+				g = Object(o.b)(j);
 			class S extends r.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
@@ -169,7 +169,7 @@
 						tooltipPosition: s,
 						caretPosition: n
 					} = this.getPositions(e);
-					return r.a.createElement(j, f({}, this.props, {
+					return r.a.createElement(E, f({}, this.props, {
 						caretPosition: n,
 						targetPosition: t,
 						tooltipPosition: s
@@ -212,9 +212,9 @@
 				O = s("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				x = s("./src/reddit/selectors/subreddit.ts"),
 				y = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.m.less"),
-				E = s.n(y);
+				j = s.n(y);
 			const {
-				fbt: j
+				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(a.c)({
 				subreddit: x.Q,
 				subredditAboutInfo: x.w
@@ -273,24 +273,24 @@
 						p = Object(c.b)(l),
 						v = Object(c.b)(r.accountsActive);
 					return i.a.createElement("div", {
-						className: Object(d.a)(E.a.subredditContainer, {
-							[E.a.hideBottomBorder]: e
+						className: Object(d.a)(j.a.subredditContainer, {
+							[j.a.hideBottomBorder]: e
 						})
 					}, i.a.createElement("div", {
-						className: E.a.subredditContent
+						className: j.a.subredditContent
 					}, i.a.createElement("div", null, i.a.createElement(o.a, {
 						to: n.url,
 						onClick: this.onSubredditClick
 					}, i.a.createElement(u.b, {
 						subredditOrProfile: n,
-						className: E.a.iconContainer
+						className: j.a.iconContainer
 					}))), i.a.createElement("div", {
-						className: E.a.subredditBodyWrapper
+						className: j.a.subredditBodyWrapper
 					}, i.a.createElement("div", {
-						className: E.a.subredditBody,
+						className: j.a.subredditBody,
 						"data-click-id": "body"
 					}, i.a.createElement(b.a, {
-						className: E.a.subredditTitle,
+						className: j.a.subredditTitle,
 						to: n.url,
 						onClick: this.onSubredditClick
 					}, n.displayText), i.a.createElement("div", null, i.a.createElement(m.a, {
@@ -302,21 +302,21 @@
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
 					}))), i.a.createElement("div", {
-						className: E.a.subredditMeta
-					}, j._({
+						className: j.a.subredditMeta
+					}, E._({
 						"*": "{number} members",
 						_1: "1 member"
-					}, [j._plural(l, "number", p)], {
+					}, [E._plural(l, "number", p)], {
 						hk: "4yqFU9"
 					})), s && i.a.createElement("div", {
-						className: E.a.subredditMeta
-					}, i.a.createElement(f.c, null), j._({
+						className: j.a.subredditMeta
+					}, i.a.createElement(f.c, null), E._({
 						"*": "{number} onlines",
 						_1: "1 online"
-					}, [j._plural(r.accountsActive, "number", v)], {
+					}, [E._plural(r.accountsActive, "number", v)], {
 						hk: "1oCA5j"
 					})), t && a && i.a.createElement(o.a, {
-						className: E.a.subredditDescriptionContainer,
+						className: j.a.subredditDescriptionContainer,
 						to: n.url,
 						onClick: this.onSubredditClick,
 						style: {
@@ -372,8 +372,8 @@
 				O = s("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
 				x = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
 				y = s("./src/reddit/models/Subreddit/index.ts"),
-				E = s("./src/reddit/selectors/subreddit.ts"),
-				j = s("./src/reddit/selectors/subredditMention.ts");
+				j = s("./src/reddit/selectors/subreddit.ts"),
+				E = s("./src/reddit/selectors/subredditMention.ts");
 			const g = Object(m.a)(p.d),
 				S = Object(m.a)(p.c),
 				C = Object(m.a)(p.b),
@@ -383,17 +383,17 @@
 						gqlContext: i
 					} = n;
 					const r = s(),
-						o = Object(j.c)(r, {
+						o = Object(E.c)(r, {
 							subredditName: e
 						}),
-						a = !!Object(E.z)(r, {
+						a = !!Object(j.z)(r, {
 							subredditName: e
-						}) && !!Object(E.w)(r, {
+						}) && !!Object(j.w)(r, {
 							subredditName: e
-						}) || !!Object(E.ab)(r, {
+						}) || !!Object(j.ab)(r, {
 							subredditName: e
 						}),
-						d = Object(j.d)(r, {
+						d = Object(E.d)(r, {
 							subredditName: e
 						}),
 						c = v.d.subredditMentionD2xExperiment(r);
@@ -464,7 +464,7 @@
 				return {
 					crosspost: s,
 					post: t,
-					subredditOrProfile: Object(E.K)(e, {
+					subredditOrProfile: Object(j.K)(e, {
 						identifier: t.belongsTo
 					})
 				}
@@ -586,13 +586,13 @@
 			const {
 				fbt: re
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), oe = e => "".concat("subreddit-mention", "-").concat(e), ae = Object(d.c)({
-				haveError: j.d,
+				haveError: E.d,
 				hideNSFWPref: se.z,
 				isEmployee: se.E,
-				isPending: j.c,
-				postIds: j.f,
-				subreddit: E.a,
-				subredditAboutInfo: E.w
+				isPending: E.c,
+				postIds: E.f,
+				subreddit: j.a,
+				subredditAboutInfo: j.w
 			}), de = Object(a.b)(ae, (e, t) => {
 				let {
 					subredditName: s,
@@ -615,7 +615,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object(ee.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object(ee.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object(ee.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.E), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.F), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -681,7 +681,7 @@
 					if (!r || !a || Object(y.h)(r)) return this.renderDefault();
 					const {
 						uniqueId: c
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.M.TOP), m = r.isNSFW && e || r.type === y.d.EmployeesOnly && !t || r.type === y.d.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.N.TOP), m = r.isNSFW && e || r.type === y.d.EmployeesOnly && !t || r.type === y.d.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: ie.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -827,8 +827,8 @@
 				}, "UnsubscribeButton", b.a),
 				x = p.a.wrapped(d.a, "Checkmark", b.a),
 				y = p.a.wrapped(c.a, "Plus", b.a),
-				E = p.a.div("ButtonSpacer", b.a);
-			class j extends i.a.Component {
+				j = p.a.div("ButtonSpacer", b.a);
+			class E extends i.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -869,7 +869,7 @@
 							userIsSubscriber: c,
 							doNotHideOtherSubscribeButtons: u,
 							getEventFactory: p,
-							onSubscriptionsRequested: j
+							onSubscriptionsRequested: E
 						} = e,
 						g = f(e, ["className", "identifier", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
 						S = this.state.isHovered;
@@ -889,7 +889,7 @@
 						belongsToType: s.type,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, g), d && i.a.createElement(x, null), !d && !S && i.a.createElement(x, null), !d && _) : d ? null : i.a.createElement(E, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(v, h({
+					}, g), d && i.a.createElement(x, null), !d && !S && i.a.createElement(x, null), !d && _) : d ? null : i.a.createElement(j, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(v, h({
 						className: Object(m.a)(t, {
 							[b.a.isLarge]: !d
 						}),
@@ -902,7 +902,7 @@
 					}), i.a.createElement(y, null), !d && _))
 				}
 			}
-			t.a = Object(o.a)(Object(r.c)(j))
+			t.a = Object(o.a)(Object(r.c)(E))
 		},
 		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, s) {
 			"use strict";
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.8288eab1f7a87cfdfc0f.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.1a1295e28d17b52841bf.js.map

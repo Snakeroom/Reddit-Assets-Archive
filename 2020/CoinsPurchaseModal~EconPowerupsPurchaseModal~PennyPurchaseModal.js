@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.5117c20ce0162106a457.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.210751050be121228cb8.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -719,7 +719,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: h === i.Premium ? r.lb : y ? y.pennies : void 0
+							amountInSmallestDenom: h === i.Premium ? r.mb : y ? y.pennies : void 0
 						}
 					})
 				},
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.5117c20ce0162106a457.js.map
+//# sourceMappingURL=CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.210751050be121228cb8.js.map

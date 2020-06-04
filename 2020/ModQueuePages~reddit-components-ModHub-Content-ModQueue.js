@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.3adf9164bec9214efece.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.760c6531d61ecdb3fb38.js
+// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -109,7 +109,7 @@
 			const I = p.a.wrapped(S.b, "Row", v.a),
 				P = Object(l.c)({
 					currentPage: e => e.platform.currentPage,
-					origin: _.k
+					origin: _.l
 				});
 			var w = Object(i.b)(P)(e => a.a.createElement("div", null, a.a.createElement(O.a, {
 					onClick: e.sendEventWithName("content_type_both"),
@@ -150,7 +150,7 @@
 				}),
 				M = Object(l.c)({
 					moderatingSubreddits: N.k,
-					origin: _.k
+					origin: _.l
 				}),
 				Q = Object(i.b)(M),
 				A = p.a.div("DropdownContainer", B.a),
@@ -918,7 +918,7 @@
 					isModQueueListingPending: Oe.c,
 					loadMore: Oe.e,
 					modQueueListingItems: Oe.d,
-					origin: Se.k,
+					origin: Se.l,
 					selectedItems: Oe.g,
 					subredditId: (e, t) => t.subredditName ? Object(_e.E)(e, t.subredditName) : null
 				}),
@@ -1386,4 +1386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.3adf9164bec9214efece.js.map
+//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.760c6531d61ecdb3fb38.js.map
