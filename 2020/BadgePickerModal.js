@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.9e733eb4b666ad40efc4.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.6aaf6f642f8dfc3d3556.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -141,8 +141,8 @@
 				u = a("./src/reddit/actions/modal.ts"),
 				m = a("./src/reddit/actions/userFlair.ts"),
 				p = a("./src/reddit/components/FlairSearch/index.tsx"),
-				g = a("./src/reddit/constants/flair.ts"),
-				h = a("./src/reddit/controls/Button/index.tsx"),
+				h = a("./src/reddit/constants/flair.ts"),
+				g = a("./src/reddit/controls/Button/index.tsx"),
 				b = a("./src/reddit/controls/CheckboxInput/index.tsx"),
 				x = a("./src/reddit/helpers/flair.ts"),
 				v = a("./src/reddit/icons/svgs/Tag/index.tsx"),
@@ -231,15 +231,15 @@
 					}))))
 				}
 				renderFlairClear() {
-					return r.a.createElement(h.n, {
+					return r.a.createElement(g.n, {
 						onClick: this.handleClearPreviewFlair
 					}, E._("Clear flair", null, {
 						hk: "4eVLMj"
 					}))
 				}
 				renderFlairApply() {
-					return r.a.createElement(h.f, {
-						disabled: !!this.state.previewFlair && Object(x.g)(this.state.previewFlair).length > g.g,
+					return r.a.createElement(g.f, {
+						disabled: !!this.state.previewFlair && Object(x.g)(this.state.previewFlair).length > h.g,
 						onClick: () => this.props.onApplyFlair(this.state.previewFlair, this.state.previewFlair ? this.state.previewFlair.templateId : void 0, this.state.userAllowsFlair)
 					}, E._("Apply", null, {
 						hk: "4xCiu1"
@@ -303,7 +303,6 @@
 			}
 			const Z = Object(d.c)({
 				alreadyOwned: A.b,
-				language: e => e.user.language,
 				product: (e, t) => {
 					let {
 						productId: a
@@ -340,22 +339,22 @@
 					return r.a.createElement("div", {
 						className: Object(o.a)(H.a.container, e.className),
 						title: e.product.description
-					}, V(e.product), D(e.product), e.product.price && function(e, t, a, s, n) {
+					}, V(e.product), D(e.product), e.product.price && function(e, t, a, s) {
 						if (!e.price) return null;
-						return r.a.createElement(h.i, {
+						return r.a.createElement(g.i, {
 							"data-redditstyle": !0,
-							disabled: a,
-							onClick: () => n && n()
-						}, s ? q.fbt._("owned", null, {
+							disabled: t,
+							onClick: () => s && s()
+						}, a ? q.fbt._("owned", null, {
 							hk: "2XP8Rw"
 						}) : "0" === e.price ? q.fbt._("free", null, {
 							hk: "2WANGH"
 						}) : Object(F.a)(e.price))
-					}(e.product, e.language, s, e.alreadyOwned, e.onCheckout), !e.product.price && (e.product, e.language, r.a.createElement("div", {
+					}(e.product, s, e.alreadyOwned, e.onCheckout), !e.product.price && (e.product, r.a.createElement("div", {
 						className: H.a.achievement
 					}, q.fbt._("Achievement", null, {
 						hk: "1F0QuQ"
-					}))), function(e, t) {
+					}))), function(e) {
 						if (!e.price) return r.a.createElement("div", {
 							className: H.a.quantity
 						}, "∞");
@@ -366,7 +365,7 @@
 						}) : q.fbt._("sold out", null, {
 							hk: "3HqXG5"
 						}))
-					}(e.product, e.language))
+					}(e.product))
 				})),
 				R = a("./src/reddit/components/Badges/PickerModal/Gallery/BadgePlaceholder/index.m.less"),
 				U = a.n(R);
@@ -489,43 +488,41 @@
 					icon: te
 				}
 			};
-			const de = (e, t) => a => {
-					const s = ne[a];
-					return r.a.createElement("div", {
-						className: Object(o.a)(re.a.mode, {
-							[re.a.modeSelected]: e === a
-						}),
-						onClick: () => t(a)
-					}, r.a.createElement(s.icon, {
-						className: re.a.icon
-					}), s.str())
-				},
-				ie = Object(d.c)({
-					language: e => e.user.language
-				});
-			var le = Object(n.b)(ie)((function(e) {
-					const t = de(e.currentMode, e.onSelectMode);
-					return r.a.createElement("div", {
-						className: e.className
-					}, r.a.createElement("div", {
-						className: Object(o.a)(re.a.sectionTitle, re.a.sectionBadges)
-					}, q.fbt._("badges", null, {
-						hk: "33xQMz"
-					})), t($.Gallery), t($.MyBadges), r.a.createElement("div", {
-						className: Object(o.a)(re.a.sectionTitle, re.a.sectionFlairs)
-					}, q.fbt._("flairs", null, {
-						hk: "42LtF9"
-					})), t($.Flairs))
-				})),
-				ce = a("./src/reddit/actions/badge.ts"),
-				oe = a("./src/higherOrderComponents/asTooltip.tsx"),
-				ue = a("./src/lib/timeUntil/index.ts"),
-				me = a("./src/reddit/constants/zIndex.ts"),
-				pe = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				ge = a("./src/reddit/icons/svgs/Clock/index.tsx"),
+
+			function de(e) {
+				const t = ie(e.currentMode, e.onSelectMode);
+				return r.a.createElement("div", {
+					className: e.className
+				}, r.a.createElement("div", {
+					className: Object(o.a)(re.a.sectionTitle, re.a.sectionBadges)
+				}, q.fbt._("badges", null, {
+					hk: "33xQMz"
+				})), t($.Gallery), t($.MyBadges), r.a.createElement("div", {
+					className: Object(o.a)(re.a.sectionTitle, re.a.sectionFlairs)
+				}, q.fbt._("flairs", null, {
+					hk: "42LtF9"
+				})), t($.Flairs))
+			}
+			const ie = (e, t) => a => {
+				const s = ne[a];
+				return r.a.createElement("div", {
+					className: Object(o.a)(re.a.mode, {
+						[re.a.modeSelected]: e === a
+					}),
+					onClick: () => t(a)
+				}, r.a.createElement(s.icon, {
+					className: re.a.icon
+				}), s.str())
+			};
+			var le = a("./src/reddit/actions/badge.ts"),
+				ce = a("./src/higherOrderComponents/asTooltip.tsx"),
+				oe = a("./src/lib/timeUntil/index.ts"),
+				ue = a("./src/reddit/constants/zIndex.ts"),
+				me = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				pe = a("./src/reddit/icons/svgs/Clock/index.tsx"),
 				he = a("./src/reddit/components/Badges/PickerModal/MyBadges/Badge/index.m.less"),
-				be = a.n(he);
-			class xe extends r.a.Component {
+				ge = a.n(he);
+			class be extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						showTooltip: !1
@@ -541,65 +538,64 @@
 				}
 				render() {
 					return this.props.badge ? r.a.createElement("div", {
-						className: Object(o.a)(this.props.className, be.a.container, {
-							[be.a.containerApplied]: !!this.props.isApplied,
-							[be.a.containerSelected]: !!this.props.isSelected
+						className: Object(o.a)(this.props.className, ge.a.container, {
+							[ge.a.containerApplied]: !!this.props.isApplied,
+							[ge.a.containerSelected]: !!this.props.isSelected
 						}),
 						onClick: this.props.onClick
-					}, r.a.createElement(pe.a, {
-						className: be.a.check
+					}, r.a.createElement(me.a, {
+						className: ge.a.check
 					}), r.a.createElement("div", {
 						onMouseEnter: this.handleTooltipEnter,
 						onMouseLeave: this.handleTooltipExit
 					}, r.a.createElement("div", {
 						id: "badgedesctooltip-".concat(this.props.badge.id)
-					}, V(this.props.badge)), D(this.props.badge), r.a.createElement(ve, {
+					}, V(this.props.badge)), D(this.props.badge), r.a.createElement(xe, {
 						isFixed: !0,
 						badge: this.props.badge,
 						isOpen: this.state.showTooltip,
 						targetPosition: ["center", "bottom"],
 						tooltipId: "badgedesctooltip-".concat(this.props.badge.id),
 						tooltipPosition: ["center", "top"]
-					})), (e = this.props.badge, t = this.props.language, r.a.createElement("div", {
-						className: be.a.expiry
-					}, r.a.createElement(ge.a, {
-						className: be.a.clock
-					}), r.a.createElement("span", null, Object(ue.a)(t, new Date(e.endsAt), !0))))) : null;
-					var e, t
+					})), (e = this.props.badge, r.a.createElement("div", {
+						className: ge.a.expiry
+					}, r.a.createElement(pe.a, {
+						className: ge.a.clock
+					}), r.a.createElement("span", null, Object(oe.a)(new Date(e.endsAt), !0))))) : null;
+					var e
 				}
 			}
-			const ve = Object(oe.a)((function(e) {
+			const xe = Object(ce.a)((function(e) {
 				let {
 					badge: t,
 					style: a
 				} = e;
 				return r.a.createElement("div", {
-					className: be.a.tooltip,
+					className: ge.a.tooltip,
 					style: Object.assign({}, a, {
-						zIndex: me.h
+						zIndex: ue.h
 					})
 				}, r.a.createElement("div", {
-					className: be.a.tooltipBadgeName
+					className: ge.a.tooltipBadgeName
 				}, t.title), r.a.createElement("div", {
-					className: be.a.tooltipBadgeDesc
+					className: ge.a.tooltipBadgeDesc
 				}, t.description))
 			}));
-			const fe = Object(d.c)({
+			const ve = Object(d.c)({
 				badge: (e, t) => {
 					let {
 						badgeId: a
 					} = t;
 					return e.badges.models[a]
-				},
-				language: e => e.user.language
+				}
 			});
-			var Ce = Object(n.b)(fe)(xe),
-				ye = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
-				Ee = a.n(ye);
+			var fe = Object(n.b)(ve)(be),
+				Ce = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
+				ye = a.n(Ce);
 			const {
-				fbt: ke
+				fbt: Ee
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			class Be extends r.a.Component {
+			class ke extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleSelectBadge = e => {
 						this.setState({
@@ -620,33 +616,33 @@
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: Object(o.a)(this.props.className, Ee.a.container)
+						className: Object(o.a)(this.props.className, ye.a.container)
 					}, this.renderTitle(), this.props.badgesPending ? this.renderPlaceholder() : this.props.badgeIds.length ? this.renderBadges() : this.renderNoBadges(), this.renderControls())
 				}
 				renderTitle() {
 					return r.a.createElement("header", {
-						className: Ee.a.title
-					}, ke._("select badge", null, {
+						className: ye.a.title
+					}, Ee._("select badge", null, {
 						hk: "3PfVt7"
 					}))
 				}
 				renderPlaceholder() {
 					return r.a.createElement("article", {
-						className: Ee.a.badges
+						className: ye.a.badges
 					}, Array.from({
 						length: 5
 					}).map((e, t) => r.a.createElement(Q, {
-						className: Ee.a.placeholder,
+						className: ye.a.placeholder,
 						key: t
 					})))
 				}
 				renderBadges() {
 					return r.a.createElement("article", {
-						className: Ee.a.badges
+						className: ye.a.badges
 					}, this.props.badgeIds.map(e => r.a.createElement("div", {
-						className: Ee.a.badge,
+						className: ye.a.badge,
 						key: e
-					}, r.a.createElement(Ce, {
+					}, r.a.createElement(fe, {
 						badgeId: e,
 						isApplied: this.props.appliedBadges.has(e),
 						isSelected: this.state.selectedBadges.has(e),
@@ -655,48 +651,48 @@
 				}
 				renderNoBadges() {
 					return r.a.createElement("div", {
-						className: Ee.a.noBadges
+						className: ye.a.noBadges
 					}, r.a.createElement(te, {
-						className: Ee.a.noBadgesIcon
+						className: ye.a.noBadgesIcon
 					}), r.a.createElement("div", {
-						className: Ee.a.noBadgesTitle
-					}, ke._("no badges", null, {
+						className: ye.a.noBadgesTitle
+					}, Ee._("no badges", null, {
 						hk: "6J0yS"
 					})), r.a.createElement("div", {
-						className: Ee.a.noBadgesText
-					}, ke._("You don't have any badges yet. Get them from the Gallery.", null, {
+						className: ye.a.noBadgesText
+					}, Ee._("You don't have any badges yet. Get them from the Gallery.", null, {
 						hk: "1ZYa4V"
-					})), r.a.createElement(h.i, {
+					})), r.a.createElement(g.i, {
 						onClick: this.props.onGotoGallery
-					}, ke._("get badge", null, {
+					}, Ee._("get badge", null, {
 						hk: "A4fxk"
 					})))
 				}
 				renderControls() {
 					return r.a.createElement("div", {
-						className: Ee.a.controls
+						className: ye.a.controls
 					}, this.renderClear(), this.renderApply())
 				}
 				renderClear() {
 					return r.a.createElement("div", {
-						className: Ee.a.toggleContainer
-					}, r.a.createElement(h.n, {
+						className: ye.a.toggleContainer
+					}, r.a.createElement(g.n, {
 						disabled: 0 === this.state.selectedBadges.size || 0 === this.props.badgeIds.length,
 						onClick: this.handleClearBadges
-					}, ke._("clear selection", null, {
+					}, Ee._("clear selection", null, {
 						hk: "UzL1B"
 					})))
 				}
 				renderApply() {
-					return r.a.createElement(h.f, {
+					return r.a.createElement(g.f, {
 						disabled: 0 === this.props.badgeIds.length || w()(Array.from(this.props.appliedBadges), Array.from(this.state.selectedBadges)),
 						onClick: this.handleApplyBadges
-					}, ke._("apply", null, {
+					}, Ee._("apply", null, {
 						hk: "2vTZSt"
 					}))
 				}
 			}
-			const Ne = Object(d.c)({
+			const Be = Object(d.c)({
 				appliedBadges: O((e, t) => {
 					let {
 						subredditId: a
@@ -724,27 +720,27 @@
 					return !!e.badges.api.user.pending[a]
 				}
 			});
-			var _e = Object(n.b)(Ne, (e, t) => {
+			var Ne = Object(n.b)(Be, (e, t) => {
 					let {
 						subredditId: a
 					} = t;
 					return {
 						onApplyBadges: t => {
-							e(Object(ce.k)({
+							e(Object(le.k)({
 								badgeIds: t,
 								subredditId: a
 							})), e(Object(u.f)())
 						},
-						onFetchBadges: () => e(Object(ce.m)({
+						onFetchBadges: () => e(Object(le.m)({
 							subredditId: a
 						}))
 					}
-				})(Be),
-				Ie = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
-				we = a("./src/reddit/components/Flair/index.tsx"),
-				je = a("./src/reddit/components/Badges/PickerModal/UserDisplay/index.m.less"),
-				Oe = a.n(je);
-			const Fe = Object(d.c)({
+				})(ke),
+				_e = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
+				Ie = a("./src/reddit/components/Flair/index.tsx"),
+				we = a("./src/reddit/components/Badges/PickerModal/UserDisplay/index.m.less"),
+				je = a.n(we);
+			const Oe = Object(d.c)({
 				badges: (e, t) => {
 					let {
 						badgeIds: a
@@ -753,54 +749,54 @@
 				},
 				user: e => e.user.account
 			});
-			var Me = Object(n.b)(Fe)((function(e) {
+			var Fe = Object(n.b)(Oe)((function(e) {
 					return r.a.createElement("div", {
 						className: e.className
 					}, e.badges.map(e => {
 						const t = Object(L.b)(24, 24, e);
 						return r.a.createElement("img", {
-							className: Oe.a.badge,
+							className: je.a.badge,
 							src: t.url2x,
 							srcSet: "".concat(t.url, ", ").concat(t.url2x, " 2x")
 						})
 					}), r.a.createElement("span", null, e.user ? "u/".concat(e.user.displayText) : "u/username"), e.flair && r.a.createElement("span", {
-						className: Oe.a.flair
-					}, r.a.createElement(we.b, {
+						className: je.a.flair
+					}, r.a.createElement(Ie.b, {
 						flair: e.flair
 					})))
 				})),
-				Se = a("./src/reddit/components/Badges/PickerModal/Title/index.m.less"),
-				Pe = a.n(Se);
-			var Te = function(e) {
+				Me = a("./src/reddit/components/Badges/PickerModal/Title/index.m.less"),
+				Se = a.n(Me);
+			var Pe = function(e) {
 					return r.a.createElement("div", {
-						className: Object(o.a)(Pe.a.container, e.className)
+						className: Object(o.a)(Se.a.container, e.className)
 					}, r.a.createElement("div", {
-						className: Pe.a.title
+						className: Se.a.title
 					}, q.fbt._("Community Flairs & Badges", null, {
 						hk: "1Yy8Ei"
 					})), r.a.createElement("div", {
-						className: Pe.a.username
-					}, r.a.createElement(Me, {
+						className: Se.a.username
+					}, r.a.createElement(Fe, {
 						badgeIds: e.badgeIds,
 						flair: e.flair,
 						subredditId: e.subredditId
 					})), r.a.createElement("div", {
-						className: Pe.a.close
-					}, r.a.createElement(Ie.a, null)))
+						className: Se.a.close
+					}, r.a.createElement(_e.a, null)))
 				},
-				Le = a("./src/reddit/components/Badges/PickerModal/index.m.less"),
-				Ae = a.n(Le);
+				Te = a("./src/reddit/components/Badges/PickerModal/index.m.less"),
+				Le = a.n(Te);
 
-			function Ge(e) {
+			function Ae(e) {
 				return e.userFlairData && e.userFlairData.applied || void 0
 			}
-			class He extends r.a.Component {
+			class Ge extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleModeChange = e => {
 						this.setState((t, a) => ({
 							currentMode: e,
 							previewBadges: a.userBadgeIds,
-							previewFlair: Ge(a)
+							previewFlair: Ae(a)
 						}))
 					}, this.handleFlairChange = e => this.setState({
 						previewFlair: e
@@ -809,28 +805,28 @@
 					}), this.state = {
 						currentMode: $.MyBadges,
 						previewBadges: e.userBadgeIds,
-						previewFlair: Ge(e)
+						previewFlair: Ae(e)
 					}
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: Ae.a.container
+						className: Le.a.container
 					}, r.a.createElement("div", {
-						className: Ae.a.title
-					}, this.props.subredditId && r.a.createElement(Te, {
+						className: Le.a.title
+					}, this.props.subredditId && r.a.createElement(Pe, {
 						badgeIds: this.state.previewBadges,
 						flair: this.state.previewFlair,
 						subredditId: this.props.subredditId
 					})), r.a.createElement("div", {
-						className: Ae.a.content
+						className: Le.a.content
 					}, r.a.createElement("div", {
-						className: Ae.a.modeSelectorContainer
-					}, r.a.createElement(le, {
-						className: Ae.a.modeSelector,
+						className: Le.a.modeSelectorContainer
+					}, r.a.createElement(de, {
+						className: Le.a.modeSelector,
 						currentMode: this.state.currentMode,
 						onSelectMode: this.handleModeChange
 					})), r.a.createElement("div", {
-						className: Ae.a.modeSelectorContent
+						className: Le.a.modeSelectorContent
 					}, this.renderMode())))
 				}
 				renderMode() {
@@ -845,7 +841,7 @@
 								subredditId: this.props.subredditId
 							});
 						case $.MyBadges:
-							return r.a.createElement(_e, {
+							return r.a.createElement(Ne, {
 								subredditId: this.props.subredditId,
 								onBadgesChange: this.handleBadgesChange,
 								onGotoGallery: () => this.handleModeChange($.Gallery)
@@ -854,7 +850,7 @@
 					return r.a.createElement("div", null)
 				}
 			}
-			const qe = Object(d.c)({
+			const He = Object(d.c)({
 					subredditId: l.m,
 					userBadgeIds: (e, t) => {
 						let {
@@ -882,9 +878,9 @@
 						}
 					}
 				}),
-				De = Object(n.b)(qe),
-				Ve = Object(l.t)();
-			t.default = Object(i.a)(Ve(De(He)))
+				qe = Object(n.b)(He),
+				De = Object(l.t)();
+			t.default = Object(i.a)(De(qe(Ge)))
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1114,9 +1110,9 @@
 			})), a.d(t, "d", (function() {
 				return p
 			})), a.d(t, "e", (function() {
-				return g
-			})), a.d(t, "g", (function() {
 				return h
+			})), a.d(t, "g", (function() {
+				return g
 			})), a.d(t, "h", (function() {
 				return b
 			})), a.d(t, "i", (function() {
@@ -1180,14 +1176,14 @@
 					const a = E(e, t);
 					return a && a.mainHeader ? a.mainHeader.price : "0"
 				},
-				g = (e, t) => {
+				h = (e, t) => {
 					const a = E(e, t);
 					return a && a.mainHeader ? {
 						owner: a.mainHeader.owner,
 						ownerId: a.mainHeader.ownerId
 					} : c
 				},
-				h = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				b = (e, t) => {
 					if (Object(d.a)(e)) {
 						const t = Object(i.g)(e);
@@ -1264,4 +1260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.9e733eb4b666ad40efc4.js.map
+//# sourceMappingURL=BadgePickerModal.6aaf6f642f8dfc3d3556.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.a6db5121828f3f4c0d72.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.dfafe54960ad909a5c16.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -366,7 +366,7 @@
 						to: s
 					}, Object(f.b)(e.author, t)), i.a.createElement("span", {
 						className: P.a.timestamp
-					}, Object(C.d)(e.language, e.created / 1e3)))))
+					}, Object(C.d)(e.created / 1e3)))))
 				},
 				O = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				N = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
@@ -395,7 +395,7 @@
 						className: _.a.separator
 					}, "•"), i.a.createElement("span", {
 						className: _.a.timestamp
-					}, Object(C.d)(e.language, e.created / 1e3)))))
+					}, Object(C.d)(e.created / 1e3)))))
 				},
 				j = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				I = s("./src/reddit/components/Media/index.tsx"),
@@ -439,19 +439,18 @@
 						forceLoadMedia: l,
 						hideNSFWPref: d,
 						isMiniCard: m = !0,
-						language: b,
-						onClickPost: x,
-						post: C,
-						scrollerItemRef: g,
-						shouldPause: f,
-						showAuthorBlock: v = !1,
-						showMetaLine: E = !0,
-						showSubscribeBlock: P = !1,
-						subredditOrProfile: O
+						onClickPost: b,
+						post: x,
+						scrollerItemRef: C,
+						shouldPause: g,
+						showAuthorBlock: f = !1,
+						showMetaLine: v = !0,
+						showSubscribeBlock: E = !1,
+						subredditOrProfile: P
 					} = this.props, {
-						media: N
-					} = a || C, k = !N && !!C.source && Object(p.a)(C.source.url);
-					let _ = N && i.a.createElement(I.a, {
+						media: O
+					} = a || x, N = !O && !!x.source && Object(p.a)(x.source.url);
+					let k = O && i.a.createElement(I.a, {
 							autoplayPref: e,
 							availableWidth: t,
 							className: H.a.media,
@@ -461,25 +460,25 @@
 							isListing: !0,
 							isMiniCard: m,
 							isNotCardView: !0,
-							post: a || C,
-							scrollerItemRef: g,
-							shouldPause: f,
+							post: a || x,
+							scrollerItemRef: C,
+							shouldPause: g,
 							shouldLoad: l,
 							showCentered: !1,
 							showFull: !1
 						}),
-						A = !1;
-					N && _ && (N.type !== V.n.RTJSON && N.type !== V.n.TEXT ? (_ = i.a.createElement("div", {
+						_ = !1;
+					O && k && (O.type !== V.n.RTJSON && O.type !== V.n.TEXT ? (k = i.a.createElement("div", {
 						className: Z.a.mediaWrapper
-					}, _), A = !0) : N && N.content && Object(U.a)(C) && (_ = i.a.createElement("div", {
+					}, k), _ = !0) : O && O.content && Object(U.a)(x) && (k = i.a.createElement("div", {
 						className: Z.a.textWrapper
-					}, _)));
-					const F = !A && !k;
-					let Q;
-					return O && (Q = Object(R.f)(O) ? Object(B.h)(O) : Object(B.i)(O)), i.a.createElement(W.a, {
+					}, k)));
+					const A = !_ && !N;
+					let F;
+					return P && (F = Object(R.f)(P) ? Object(B.h)(P) : Object(B.i)(P)), i.a.createElement(W.a, {
 						className: Object(c.a)(Z.a.container, z.a.largeAndMediumActiveStyles, z.a.largeAndMediumPostStyles, H.a.postContainer, Object(T.a)(this.props), s),
-						post: C,
-						onClick: x,
+						post: x,
+						onClick: b,
 						eventFactory: r,
 						style: Object.assign({}, Object(T.b)(this.props.flairStyleTemplate), Object(T.d)(this.props), this.props.style)
 					}, i.a.createElement(M.a, {
@@ -487,54 +486,52 @@
 						flairStyleTemplate: o
 					}, i.a.createElement("div", {
 						className: Object(c.a)(Z.a.innerContainer, H.a.innerContainer)
-					}, P && O && i.a.createElement(w, q({
-						created: C.created,
-						language: b
-					}, Q)), v && O && i.a.createElement(y, q({
-						created: C.created,
-						language: b,
-						author: C.author
-					}, Q)), i.a.createElement(D.c, {
-						className: F ? Z.a.postTitle : Z.a.postTitleCompact,
+					}, E && P && i.a.createElement(w, q({
+						created: x.created
+					}, F)), f && P && i.a.createElement(y, q({
+						created: x.created,
+						author: x.author
+					}, F)), i.a.createElement(D.c, {
+						className: A ? Z.a.postTitle : Z.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
-						post: C,
+						post: x,
 						size: D.b.Large,
 						titleColor: o && o.postTitleColor
-					}), E && O && i.a.createElement(L.a, {
+					}), v && P && i.a.createElement(L.a, {
 						className: Z.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
-						post: C,
-						subredditOrProfile: O
-					}), (A || k) && i.a.createElement("div", {
+						post: x,
+						subredditOrProfile: P
+					}), (_ || N) && i.a.createElement("div", {
 						className: Z.a.flexSpacer
-					}), k && i.a.createElement("div", {
+					}), N && i.a.createElement("div", {
 						className: Z.a.mediaWrapper
 					}, i.a.createElement(S.a, {
 						className: Z.a.thumbnailWrapper,
 						thumbnailClassName: Z.a.thumbnail,
 						thumbnailContainerClassName: Z.a.thumbnailContainer,
-						post: C,
+						post: x,
 						templatePlaceholderImage: o && o.postPlaceholderImage
-					})), _, i.a.createElement("div", {
+					})), k, i.a.createElement("div", {
 						className: Z.a.metaWrapper
 					}, i.a.createElement("span", {
 						className: Z.a.meta
 					}, u.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
-					}, [u.fbt._plural(C.score, "number", Object(h.b)(C.score))], {
+					}, [u.fbt._plural(x.score, "number", Object(h.b)(x.score))], {
 						hk: "2ncFte"
 					})), i.a.createElement("span", {
 						className: Z.a.meta
 					}, u.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
-					}, [u.fbt._plural(C.numComments, "number", Object(h.b)(C.numComments))], {
+					}, [u.fbt._plural(x.numComments, "number", Object(h.b)(x.numComments))], {
 						hk: "1QQoSA"
 					}))))), i.a.createElement(j.d, {
-						postId: C.id
+						postId: x.id
 					}))
 				}
 			}
@@ -962,4 +959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.a6db5121828f3f4c0d72.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.dfafe54960ad909a5c16.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.c566a4c1d348d0101938.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.db7358584d944ccf72c4.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -44,19 +44,19 @@
 				y = s("./src/reddit/models/Toast/index.ts"),
 				E = s("./src/reddit/selectors/economics.ts"),
 				_ = s("./src/reddit/selectors/telemetry.ts"),
-				C = s("./src/reddit/selectors/user.ts"),
-				I = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				v = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
+				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
+				I = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
-			let G;
+			let v;
 
-			function N() {
-				G || (G = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function G() {
+				v || (v = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var j = s("./node_modules/lodash/debounce.js"),
-				w = s.n(j),
-				S = s("./src/lib/classNames/index.ts"),
-				R = s("./src/reddit/icons/svgs/Search/index.tsx"),
+			var N = s("./node_modules/lodash/debounce.js"),
+				j = s.n(N),
+				w = s("./src/lib/classNames/index.ts"),
+				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				R = s("./src/reddit/selectors/user.ts"),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				O = s.n(B);
 			const k = 400;
@@ -68,7 +68,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = w()(() => {
+					}, this.dispatchOnChange = j()(() => {
 						this.props.onChange(this.state.query)
 					}, k), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -84,11 +84,11 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return l.a.createElement("div", {
-						className: Object(S.a)(O.a.searchBox, this.props.className)
+						className: Object(w.a)(O.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
 						className: O.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(R.a, {
+					}, l.a.createElement(S.a, {
 						className: O.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -109,7 +109,7 @@
 				}
 			}
 			const P = Object(p.c)({
-				isNightMode: C.S
+				isNightMode: R.S
 			});
 			var H = Object(d.b)(P)(M),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -172,12 +172,12 @@
 							})
 						});
 						const t = this.props.editorState,
-							s = Object(v.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), I.a.after);
+							s = Object(I.k)(t, e.id, e.url, e.hasDownsizedImage, e.width, e.height, t.getSelection().getEndKey(), C.a.after);
 						this.props.onChange(s), this.props.onClose()
 					}
 				}
 				componentDidMount() {
-					!this.state.query && this.state.loading && this.loadTrendingGifs(), N()
+					!this.state.query && this.state.loading && this.loadTrendingGifs(), G()
 				}
 				loadTrendingGifs() {
 					L().then(e => {
@@ -192,7 +192,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return N(), G.then(t => {
+							return G(), v.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -202,14 +202,12 @@
 								api_key: g.a.giphyApiKey,
 								q: e.query,
 								offset: e.offset || 0,
-								rating: e.rating || b,
-								language: e.language
+								rating: e.rating || b
 							});
 							return fetch(t).then(x)
 						}({
 							query: s,
-							offset: t,
-							language: this.props.language
+							offset: t
 						}).then(e => {
 							this.addGiphyResults(e)
 						}).catch(() => {
@@ -300,8 +298,7 @@
 						subreddit: s
 					} = t;
 					return Object(E.D)(e, s.id)
-				},
-				language: C.Q
+				}
 			});
 			t.a = Object(u.c)(Object(d.b)(q, e => ({
 				showErrorToast: t => e(Object(h.e)({
@@ -496,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.c566a4c1d348d0101938.js.map
+//# sourceMappingURL=GifTooltip.db7358584d944ccf72c4.js.map

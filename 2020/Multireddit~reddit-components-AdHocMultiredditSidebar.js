@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.32d33451a22dd97a70d9.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.b59b356eb396a8afbd9e.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -346,7 +346,7 @@
 						})
 					})), d.a.createElement(c, null, s.fbt._("Curated by u/ {username}", [s.fbt._param("username", Object(L.i)(n.url))], {
 						hk: "1AxWQt"
-					}), "· ", Object(P.f)(n.created))) : () => null, m = Object(L.f)(n) && n.description ? () => d.a.createElement(a, null, o ? d.a.createElement(Z, {
+					}), "· ", Object(P.d)(n.created))) : () => null, m = Object(L.f)(n) && n.description ? () => d.a.createElement(a, null, o ? d.a.createElement(Z, {
 						onSeeMoreDetails: i
 					}, n.description) : d.a.createElement(T.a, {
 						html: n.description
@@ -1561,4 +1561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.32d33451a22dd97a70d9.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.b59b356eb396a8afbd9e.js.map

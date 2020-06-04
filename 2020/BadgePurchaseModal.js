@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.a827f675149207f0db12.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.7f4f93acb1a6fe6d4f2c.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -43,8 +43,8 @@
 			"use strict";
 			r.r(t);
 			var n = r("./node_modules/react/index.js"),
-				a = r.n(n),
-				s = r("./node_modules/react-redux/es/index.js"),
+				s = r.n(n),
+				a = r("./node_modules/react-redux/es/index.js"),
 				c = r("./node_modules/reselect/es/index.js"),
 				d = r("./src/higherOrderComponents/asModal/index.tsx"),
 				o = r("./src/lib/classNames/index.ts"),
@@ -58,12 +58,12 @@
 				f = r("./src/reddit/icons/svgs/Clock/index.tsx");
 
 			function x(e) {
-				return a.a.createElement("svg", {
+				return s.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
 					viewBox: "0 0 450 450",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("path", {
+				}, s.a.createElement("path", {
 					clipRule: "evenodd",
 					d: "m206.073.784912c-27.274 2.271728-53.166 9.407988-76.806 20.538788l94.176 200.9793-126.9464-182.0213c-21.8975 15.262-40.9531 34.3177-56.2149 56.2151l182.0213 126.9462-200.9793-94.177c-11.1308 23.641-18.26755 49.533-20.539032 76.807l221.101332 18.927-221.101332 18.927c2.271482 27.274 9.408232 53.167 20.539032 76.807l200.9803-94.177-182.0223 126.946c15.2618 21.898 34.3179 40.954 56.2154 56.215l126.9459-182.021-94.176 200.979c23.64 11.131 49.532 18.268 76.806 20.539l18.927-221.101 18.927 221.101c27.274-2.271 53.166-9.408 76.806-20.539l-94.176-200.979 126.946 182.021c21.897-15.261 40.954-34.317 56.215-56.215l-182.022-126.946 200.98 94.177c11.131-23.64 18.268-49.533 20.539-76.807l-221.101-18.927 221.101-18.927c-2.271-27.274-9.407-53.166-20.538-76.806l-200.98 94.176 182.022-126.9457c-15.262-21.8974-34.318-40.9536-56.216-56.2156l-126.946 182.0213 94.176-200.9793c-23.64-11.1308-49.532-18.26706-76.806-20.538788l-18.927 221.101088z",
 					fill: "inherit",
@@ -77,9 +77,9 @@
 				I = r.n(_);
 
 			function k(e) {
-				return a.a.createElement("header", {
+				return s.a.createElement("header", {
 					className: I.a.header
-				}, e.children, a.a.createElement(y.a, {
+				}, e.children, s.a.createElement(y.a, {
 					afterClose: e.afterClose
 				}))
 			}
@@ -96,11 +96,10 @@
 					const n = e.products.models[r];
 					if (n) {
 						const t = n.subredditId,
-							a = Object.keys(e.user.ownedBadges[t] || {}).map(t => e.badges.models[t]).filter(Boolean).filter(e => e.type === r);
-						if (a.length) return a[0]
+							s = Object.keys(e.user.ownedBadges[t] || {}).map(t => e.badges.models[t]).filter(Boolean).filter(e => e.type === r);
+						if (s.length) return s[0]
 					}
 				},
-				language: e => e.user.language,
 				product: (e, t) => {
 					let {
 						productId: r
@@ -120,7 +119,7 @@
 					}
 				}
 			});
-			var w = Object(s.b)(O, e => ({
+			var w = Object(a.b)(O, e => ({
 					onApplyBadge: (t, r) => {
 						e(Object(m.k)({
 							badgeIds: [r],
@@ -134,51 +133,51 @@
 						e(Object(m.j)())
 					}
 				}))((function(e) {
-					return e.product && e.wallet && e.badge ? a.a.createElement("div", {
+					return e.product && e.wallet && e.badge ? s.a.createElement("div", {
 						className: e.className
-					}, a.a.createElement(k, {
+					}, s.a.createElement(k, {
 						afterClose: e.onOpenGallery
 					}, N._("you got a new badge!", null, {
 						hk: "1dFWkt"
-					})), a.a.createElement("div", {
+					})), s.a.createElement("div", {
 						className: j.a.content
 					}, function(e) {
 						const t = Object(v.b)(128, 128, e);
-						return a.a.createElement(n.Fragment, null, a.a.createElement(x, {
+						return s.a.createElement(n.Fragment, null, s.a.createElement(x, {
 							className: j.a.sunburst
-						}), a.a.createElement("img", {
+						}), s.a.createElement("img", {
 							className: j.a.image,
 							src: t.url2x,
 							srcSet: "".concat(t.url, ", ").concat(t.url2x, " 2x")
 						}))
-					}(e.badge), (e.badge, o = e.product, i = e.language, a.a.createElement("div", {
+					}(e.badge), (e.badge, o = e.product, s.a.createElement("div", {
 						className: j.a.expiry
-					}, N._("Expires in {clock}{timeLeft}", [N._param("clock", a.a.createElement(f.a, {
+					}, N._("Expires in {clock}{timeLeft}", [N._param("clock", s.a.createElement(f.a, {
 						className: j.a.clock
-					})), N._param("timeLeft", Object(u.a)(i, new Date(Date.now() + 1e3 * o.duration), !0))], {
+					})), N._param("timeLeft", Object(u.a)(new Date(Date.now() + 1e3 * o.duration), !0))], {
 						hk: "1nLM5D"
-					})))), a.a.createElement("footer", {
+					})))), s.a.createElement("footer", {
 						className: j.a.footer
-					}, (c = e.wallet, d = e.product.subredditId, a.a.createElement("div", {
+					}, (c = e.wallet, d = e.product.subredditId, s.a.createElement("div", {
 						className: j.a.wallet
-					}, N._("You have {token}{amount}", [N._param("token", a.a.createElement(p.a, {
+					}, N._("You have {token}{amount}", [N._param("token", s.a.createElement(p.a, {
 						grey: !0,
 						className: j.a.tokenSymbol,
 						subredditId: d
 					})), N._param("amount", Object(l.a)(c.amount))], {
 						hk: "2uBJCn"
-					}))), (t = e.badge, r = e.onApplyBadge, s = e.onClose, a.a.createElement("div", {
+					}))), (t = e.badge, r = e.onApplyBadge, a = e.onClose, s.a.createElement("div", {
 						className: j.a.controls
-					}, a.a.createElement(g.n, {
-						onClick: s
+					}, s.a.createElement(g.n, {
+						onClick: a
 					}, N._("done", null, {
 						hk: "1mAQca"
-					})), a.a.createElement(g.f, {
+					})), s.a.createElement(g.f, {
 						onClick: () => r(t.subredditId, t.id)
 					}, N._("apply badge", null, {
 						hk: "25p6rC"
 					})))))) : null;
-					var t, r, s, c, d, o, i
+					var t, r, a, c, d, o
 				})),
 				P = r("./src/reddit/actions/product.ts"),
 				C = r("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -188,7 +187,6 @@
 				fbt: T
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const L = Object(c.c)({
-				language: e => e.user.language,
 				product: (e, t) => {
 					let {
 						productId: r
@@ -211,7 +209,7 @@
 					})
 				}
 			});
-			var S = Object(s.b)(L, (e, t) => {
+			var S = Object(a.b)(L, (e, t) => {
 					let {
 						productId: r
 					} = t;
@@ -221,63 +219,63 @@
 						}))
 					}
 				})((function(e) {
-					return e.product ? a.a.createElement("div", {
+					return e.product ? s.a.createElement("div", {
 						className: e.className
-					}, a.a.createElement(k, null, T._("get badge", null, {
+					}, s.a.createElement(k, null, T._("get badge", null, {
 						hk: "36uzzU"
-					})), a.a.createElement("div", {
+					})), s.a.createElement("div", {
 						className: B.a.content
 					}, function(e) {
 						const t = Object(v.b)(96, 96, e);
-						return a.a.createElement("img", {
+						return s.a.createElement("img", {
 							className: B.a.badgeImage,
 							src: t.url2x,
 							srcSet: "".concat(t.url, ", ").concat(t.url2x, " 2x")
 						})
-					}(e.product), (s = e.product, a.a.createElement("div", {
+					}(e.product), (a = e.product, s.a.createElement("div", {
 						className: B.a.badgeName
-					}, s.title)), function(e) {
-						return a.a.createElement("div", {
+					}, a.title)), function(e) {
+						return s.a.createElement("div", {
 							className: B.a.badgeDesc
 						}, e.description)
-					}(e.product), function(e, t) {
-						return a.a.createElement("div", {
+					}(e.product), function(e) {
+						return s.a.createElement("div", {
 							className: B.a.badgesNumLeft
 						}, T._("{numerator}/{total} left", [T._param("numerator", Object(l.a)(e.quantityLeft || "")), T._param("total", Object(l.a)(e.quantityTotal || ""))], {
 							hk: "Ua52c"
 						}))
-					}(e.product, e.language)), a.a.createElement("footer", {
+					}(e.product)), s.a.createElement("footer", {
 						className: B.a.footer
 					}, function(e) {
 						if (!e.price) return null;
-						return a.a.createElement("div", {
+						return s.a.createElement("div", {
 							className: B.a.badgePrice
-						}, a.a.createElement(p.a, {
+						}, s.a.createElement(p.a, {
 							className: B.a.tokenSymbol,
 							subredditId: e.subredditId
 						}), Object(l.a)(e.price))
-					}(e.product), (t = e.purchaseInProgress, e.language, r = e.tokenName, n = e.onPurchase, a.a.createElement(g.f, {
+					}(e.product), (t = e.purchaseInProgress, r = e.tokenName, n = e.onPurchase, s.a.createElement(g.f, {
 						onClick: n
-					}, t ? a.a.createElement(C.a, {
+					}, t ? s.a.createElement(C.a, {
 						className: B.a.loadingIcon,
 						sizePx: 20
 					}) : T._("convert {tokenName}", [T._param("tokenName", r)], {
 						hk: "2wpeqV"
 					}))))) : null;
-					var t, r, n, s
+					var t, r, n, a
 				})),
 				U = r("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
 				R = r.n(U);
 			const H = Object(c.c)({
 					alreadyOwned: i.b
 				}),
-				q = Object(s.b)(H);
+				q = Object(a.b)(H);
 			t.default = Object(d.a)(q((function(e) {
-				return a.a.createElement("div", {
+				return s.a.createElement("div", {
 					className: Object(o.a)(R.a.container, e.className)
-				}, e.alreadyOwned ? a.a.createElement(w, {
+				}, e.alreadyOwned ? s.a.createElement(w, {
 					productId: e.productId
-				}) : a.a.createElement(S, {
+				}) : s.a.createElement(S, {
 					productId: e.productId
 				}))
 			})))
@@ -290,14 +288,14 @@
 		"./src/reddit/components/Governance/ModalClose/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
-				a = r.n(n),
-				s = r("./node_modules/react-redux/es/index.js"),
+				s = r.n(n),
+				a = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/lib/classNames/index.ts"),
 				d = r("./src/reddit/actions/modal.ts"),
 				o = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				i = r("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				l = r.n(i);
-			t.a = Object(s.b)(void 0, (e, t) => {
+			t.a = Object(a.b)(void 0, (e, t) => {
 				let {
 					afterClose: r
 				} = t;
@@ -307,7 +305,7 @@
 					}
 				}
 			})((function(e) {
-				return a.a.createElement(o.a, {
+				return s.a.createElement(o.a, {
 					className: Object(c.a)(l.a.closeIcon, e.className),
 					onClick: e.onClose
 				})
@@ -321,8 +319,8 @@
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
-				a = r.n(n),
-				s = r("./node_modules/react-redux/es/index.js"),
+				s = r.n(n),
+				a = r("./node_modules/react-redux/es/index.js"),
 				c = r("./node_modules/reselect/es/index.js"),
 				d = r("./src/config.ts"),
 				o = r("./src/lib/classNames/index.ts"),
@@ -332,12 +330,12 @@
 			const m = Object(c.c)({
 				tokenSymbol: i.q
 			});
-			t.a = Object(s.b)(m)((function(e) {
+			t.a = Object(a.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
 					r = "".concat(d.a.assetPath, "/").concat(t);
 				if (e.grey && r.endsWith(".svg")) {
 					const t = "url(".concat(r, ") center/cover");
-					return a.a.createElement("div", {
+					return s.a.createElement("div", {
 						className: Object(o.a)(u.a.grey, e.className),
 						style: {
 							mask: t,
@@ -345,7 +343,7 @@
 						}
 					})
 				}
-				return a.a.createElement("img", {
+				return s.a.createElement("img", {
 					className: e.className,
 					src: r
 				})
@@ -364,8 +362,8 @@
 			})), r.d(t, "b", (function() {
 				return i
 			}));
-			var n, a = r("./src/config.ts"),
-				s = r("./src/reddit/endpoints/governance/requester.ts");
+			var n, s = r("./src/config.ts"),
+				a = r("./src/reddit/endpoints/governance/requester.ts");
 
 			function c(e) {
 				switch (e) {
@@ -379,9 +377,9 @@
 				return e + " Network"
 			}
 			async function d(e, t, r) {
-				return Object(s.a)(e, {
+				return Object(a.a)(e, {
 					method: "post",
-					endpoint: "".concat(a.a.metaUrl, "/crypto/").concat(t, "/challenges"),
+					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/challenges"),
 					data: {
 						challengeType: "registration-challenge-EIP712",
 						address: r
@@ -389,16 +387,16 @@
 				})
 			}
 			async function o(e, t, r) {
-				return await Object(s.a)(e, {
+				return await Object(a.a)(e, {
 					method: "post",
-					endpoint: "".concat(a.a.metaUrl, "/crypto/").concat(t, "/registrations"),
+					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations"),
 					data: r
 				})
 			}
 			async function i(e, t, r) {
-				return await Object(s.a)(e, {
+				return await Object(a.a)(e, {
 					method: "delete",
-					endpoint: "".concat(a.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(r)
+					endpoint: "".concat(s.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(r)
 				})
 			}! function(e) {
 				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
@@ -407,15 +405,15 @@
 		"./src/reddit/icons/svgs/Clock/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
-				a = r.n(n);
-			t.a = e => a.a.createElement("svg", {
+				s = r.n(n);
+			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 11 11"
-			}, a.a.createElement("g", null, a.a.createElement("path", {
+			}, s.a.createElement("g", null, s.a.createElement("path", {
 				d: "M5 3.75C5 3.47388 5.22363 3.25 5.5 3.25C5.77637 3.25 6 3.47388 6 3.75V5.53735L7.81689 6.58643C8.05615 6.72449 8.13818 7.03027 8 7.26941C7.86182 7.50861 7.55615 7.59052 7.31689 7.45245L5.25049 6.25934C5.07861 6.16028 4.98779 5.97504 5.00146 5.78992L5 5.75V3.75Z",
 				fill: "inherit"
-			}), a.a.createElement("path", {
+			}), s.a.createElement("path", {
 				fillRule: "evenodd",
 				clipRule: "evenodd",
 				d: "M11 5.5C11 8.53754 8.5376 11 5.5 11C2.4624 11 0 8.53754 0 5.5C0 2.46246 2.4624 0 5.5 0C8.5376 0 11 2.46246 11 5.5ZM10 5.5C10 7.98529 7.98535 10 5.5 10C3.01465 10 1 7.98529 1 5.5C1 3.01471 3.01465 1 5.5 1C7.98535 1 10 3.01471 10 5.5Z",
@@ -471,8 +469,8 @@
 				return P
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				a = r("./src/reddit/endpoints/governance/crypto.ts"),
-				s = r("./src/reddit/featureFlags/index.ts"),
+				s = r("./src/reddit/endpoints/governance/crypto.ts"),
+				a = r("./src/reddit/featureFlags/index.ts"),
 				c = r("./src/reddit/selectors/experiments/pollsGA.ts"),
 				d = r("./src/reddit/selectors/postCreations.ts");
 			const o = [],
@@ -517,7 +515,7 @@
 						const t = Object(d.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const r = s.d.spPolls(e) || s.d.spKarmaPoints(e),
+					const r = a.d.spPolls(e) || a.d.spKarmaPoints(e),
 						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (n) {
 						const e = !!n.polls && !1 === n.polls.canCreate;
@@ -551,18 +549,18 @@
 				},
 				N = (e, t) => {
 					const r = j(e, t);
-					return r === a.a.Ethereum || r === a.a.Rinkeby || r === a.a.EthTraderEthereum || r === a.a.EthTraderRinkeby
+					return r === s.a.Ethereum || r === s.a.Rinkeby || r === s.a.EthTraderEthereum || r === s.a.EthTraderRinkeby
 				},
 				O = (e, t) => {
 					const r = E(e, t),
 						n = j(e, t);
-					if (r && !r.inTransition && n === a.a.Stellar) return {
+					if (r && !r.inTransition && n === s.a.Stellar) return {
 						address: r.extra && r.extra.issuerAddress || "",
 						decimals: r.extra && r.extra.decimals || 7,
 						symbol: r.extra && r.extra.token || "PHOTON"
 					};
-					const s = r && r.extra && r.extra.contracts,
-						c = s && s.unlocked;
+					const a = r && r.extra && r.extra.contracts,
+						c = a && a.unlocked;
 					return c && {
 						address: c.address,
 						symbol: c.token || "",
@@ -588,4 +586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePurchaseModal.a827f675149207f0db12.js.map
+//# sourceMappingURL=BadgePurchaseModal.7f4f93acb1a6fe6d4f2c.js.map

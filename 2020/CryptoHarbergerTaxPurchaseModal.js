@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9461dcbc2c7ba3b119b9.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.8e84e4e5b6a615d605a2.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -1477,7 +1477,7 @@
 			async function b(e, t, r) {
 				await c();
 				const a = o() || "";
-				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(Object(n.b)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(Object(n.a)("Please select your registered address in MetaMask: ") + t);
 				return l(e, Promise.resolve(h), "subscribe", [t, r])
 			}
 
@@ -1494,7 +1494,7 @@
 						else {
 							const e = t && t.result;
 							e ? r(e) : a({
-								message: Object(n.b)("No signature returned from ethereum provider.")
+								message: Object(n.a)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -1544,6 +1544,16 @@
 					a = new n.BigNumber(t);
 				return r.multipliedBy(a).toFixed(0)
 			}
+		},
+		"./src/reddit/i18n/utils.ts": function(e, t, r) {
+			"use strict";
+
+			function n(e) {
+				return e
+			}
+			r.d(t, "a", (function() {
+				return n
+			}))
 		},
 		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, r) {
 			"use strict";
@@ -1768,4 +1778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.9461dcbc2c7ba3b119b9.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.8e84e4e5b6a615d605a2.js.map

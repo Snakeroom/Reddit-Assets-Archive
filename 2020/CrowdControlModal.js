@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.c5387ee5887f6c34cba9.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.6299c639ecf14b79d70d.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -106,8 +106,8 @@
 					subText: "Comments from users who haven’t joined your community, new users, and users with negative karma in your community are automatically collapsed."
 				}
 			};
-			var g, L = o("./src/reddit/components/CrowdControlModal/Main/index.m.less"),
-				E = o.n(L),
+			var L, E = o("./src/reddit/components/CrowdControlModal/Main/index.m.less"),
+				g = o.n(E),
 				N = e => {
 					const {
 						post: t,
@@ -117,7 +117,7 @@
 						onCrowdControlLevelUpdate: i
 					} = e;
 					return r.a.createElement(m.k, {
-						className: E.a.main
+						className: g.a.main
 					}, r.a.createElement(m.m, null, t && r.a.createElement(f.a, {
 						postId: t.id,
 						showSubreddit: !0,
@@ -152,7 +152,7 @@
 				y = o("./src/lib/makeGqlRequest/index.ts");
 			! function(e) {
 				e.Off = "OFF", e.Lenient = "LENIENT", e.Medium = "MEDIUM", e.Strict = "STRICT"
-			}(g || (g = {}));
+			}(L || (L = {}));
 			var S = o("./src/graphql/operations/UpdateCrowdControlLevel.json");
 			const M = (e, t, o) => Object(y.a)(e, Object.assign({}, S, {
 				variables: {
@@ -322,23 +322,21 @@
 				C = o("./src/reddit/helpers/overlay/index.ts"),
 				p = o("./src/reddit/selectors/posts.ts"),
 				b = o("./src/reddit/selectors/subreddit.ts"),
-				w = o("./src/reddit/selectors/user.ts"),
-				x = o("./src/reddit/components/MiniPost/index.m.less"),
-				h = o.n(x);
-			const k = Object(i.a)(e => e, p.O, p.d, w.Q, (e, t, o, n) => {
+				w = o("./src/reddit/components/MiniPost/index.m.less"),
+				x = o.n(w);
+			const h = Object(i.a)(e => e, p.O, p.d, (e, t, o) => {
 					return {
 						crosspost: o,
-						language: n,
 						post: t,
 						subredditOrProfile: Object(b.K)(e, {
 							identifier: t.belongsTo
 						})
 					}
 				}),
-				f = Object(a.b)(k, (e, t) => ({
+				k = Object(a.b)(h, (e, t) => ({
 					openLightbox: t => e(Object(C.a)(t.permalink))
 				}));
-			class v extends r.a.PureComponent {
+			class f extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClickContainer = () => {
 						const {
@@ -372,48 +370,48 @@
 						crowdControlPreview: i
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(l.a)(h.a.container, e, i ? h.a.crowdControlPreview : null),
+						className: Object(l.a)(x.a.container, e, i ? x.a.crowdControlPreview : null),
 						onClick: this.onClickContainer
 					}, r.a.createElement("div", {
-						className: h.a.thumbnailContainer,
+						className: x.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
 					}, r.a.createElement(u.a, {
 						post: t
 					})), r.a.createElement("div", {
-						className: h.a.postDetails
+						className: x.a.postDetails
 					}, r.a.createElement("p", {
-						className: h.a.title,
+						className: x.a.title,
 						title: t.title
 					}, t.title), r.a.createElement("div", {
-						className: Object(l.a)(h.a.subAndMeta, {
-							[h.a.isSingleLine]: a
+						className: Object(l.a)(x.a.subAndMeta, {
+							[x.a.isSingleLine]: a
 						})
 					}, o && s && s.displayText && r.a.createElement(m.a, {
-						className: h.a.SubredditLink,
+						className: x.a.SubredditLink,
 						to: s.url,
 						onClick: this.onClickSubreddit
 					}, s.displayText), a && r.a.createElement("div", {
-						className: h.a.separator
+						className: x.a.separator
 					}), !i && r.a.createElement("div", null, r.a.createElement("span", {
-						className: h.a.meta
+						className: x.a.meta
 					}, n.fbt._({
 						"*": "{number} points",
 						_1: "1 point"
 					}, [n.fbt._plural(t.score, "number", Object(d.b)(t.score))], {
 						hk: "1Jm6il"
 					})), r.a.createElement("span", {
-						className: h.a.meta
+						className: x.a.meta
 					}, n.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [n.fbt._plural(t.numComments, "number", Object(d.b)(t.numComments))], {
 						hk: "2jjoyt"
 					})), r.a.createElement("span", {
-						className: h.a.meta
-					}, Object(c.d)(this.props.language, t.created / 1e3, !0, !0))))))
+						className: x.a.meta
+					}, Object(c.a)(t.created / 1e3, !0))))))
 				}
 			}
-			t.a = f(v)
+			t.a = k(f)
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -444,4 +442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal.c5387ee5887f6c34cba9.js.map
+//# sourceMappingURL=CrowdControlModal.6299c639ecf14b79d70d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.ba2ed9d7385675437714.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.daa53150e781450d6b0b.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -104,10 +104,9 @@
 				j = s("./src/reddit/models/Tags/index.ts"),
 				E = s("./src/reddit/models/Toast/index.ts"),
 				w = s("./src/reddit/reducers/tags/selected/index.ts"),
-				R = s("./src/reddit/selectors/user.ts"),
-				D = s("./src/reddit/components/CommunityTopics/AdminCommunityTopics/index.m.less"),
-				_ = s.n(D);
-			const B = Object(c.c)({
+				R = s("./src/reddit/components/CommunityTopics/AdminCommunityTopics/index.m.less"),
+				D = s.n(R);
+			const _ = Object(c.c)({
 					availableSubredditTags: (e, t) => {
 						let {
 							subredditId: s
@@ -149,10 +148,9 @@
 						return Object(m.m)(e, {
 							subredditId: s
 						})
-					},
-					language: e => Object(R.Q)(e)
+					}
 				}),
-				M = Object(r.b)(B, (e, t) => {
+				B = Object(r.b)(_, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -187,7 +185,7 @@
 						})
 					}
 				})(p.a);
-			class N extends i.a.Component {
+			class M extends i.a.Component {
 				constructor(e) {
 					super(e), this.onContainerClick = e => e.stopPropagation(), this.onExpandButtonClick = () => {
 						this.setState({
@@ -202,17 +200,17 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: _.a.container,
+						className: D.a.container,
 						onClick: this.onContainerClick
 					}, i.a.createElement(v.n, {
-						className: _.a.expandButton,
+						className: D.a.expandButton,
 						onClick: this.onExpandButtonClick
 					}, n.fbt._("Admin Community Topics", null, {
 						hk: "37srVU"
 					}), this.state.isOpen ? i.a.createElement(I.a, null) : i.a.createElement(T.a, null)), this.state.isOpen && i.a.createElement("div", {
-						className: _.a.content
+						className: D.a.content
 					}, i.a.createElement("div", {
-						className: _.a.header
+						className: D.a.header
 					}, n.fbt._("Moderator Added Topics", null, {
 						hk: "3GQoal"
 					})), i.a.createElement(p.b, {
@@ -221,10 +219,10 @@
 						readOnlyMode: S.a.readOnly,
 						selectedOptionComponent: C
 					}), i.a.createElement("br", null), i.a.createElement("div", {
-						className: _.a.header
+						className: D.a.header
 					}, n.fbt._("Admin Suggested Topics", null, {
 						hk: "12wo5g"
-					})), i.a.createElement(M, {
+					})), i.a.createElement(B, {
 						context: h.a.communitySettings,
 						subredditId: this.props.subredditId
 					})))
@@ -237,7 +235,7 @@
 				return {
 					subredditDataRequested: () => e(Object(a.k)(s, h.a.communitySettings))
 				}
-			})(N)
+			})(M)
 		},
 		"./src/reddit/components/CommunityTopics/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -247,7 +245,7 @@
 		"./src/reddit/components/CommunityTopics/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return y
+				return f
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -261,10 +259,9 @@
 				h = s("./src/reddit/models/Tags/index.ts"),
 				u = s("./src/reddit/models/Toast/index.ts"),
 				O = s("./src/reddit/selectors/tags.ts"),
-				m = s("./src/reddit/selectors/user.ts"),
-				b = s("./src/reddit/components/CommunityTopics/index.m.less"),
-				x = s.n(b);
-			const f = Object(a.c)({
+				m = s("./src/reddit/components/CommunityTopics/index.m.less"),
+				b = s.n(m);
+			const x = Object(a.c)({
 				availableSubredditTags: (e, t) => {
 					let {
 						subredditId: s
@@ -305,10 +302,9 @@
 					return Object(O.l)(e, {
 						subredditId: s
 					})
-				},
-				language: e => Object(m.Q)(e)
+				}
 			});
-			class y extends i.a.Component {
+			class f extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionsChanged = e => {
 						const t = e.filter(e => e.selected),
@@ -337,7 +333,7 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: x.a.communityTopicsContainer
+						className: b.a.communityTopicsContainer
 					}, i.a.createElement(c.a, {
 						readOnlyMode: this.props.readOnlyMode,
 						addText: n.fbt._("Add", null, {
@@ -366,7 +362,7 @@
 					}, this.props.children))
 				}
 			}
-			t.b = Object(r.b)(f, (e, t) => {
+			t.b = Object(r.b)(x, (e, t) => {
 				let {
 					subredditId: s,
 					context: o
@@ -412,7 +408,7 @@
 						})))
 					})
 				}
-			})(y)
+			})(f)
 		},
 		"./src/reddit/components/MultiOptionSelect/OptionSearchBar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -869,4 +865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminCommunityTopics.ba2ed9d7385675437714.js.map
+//# sourceMappingURL=AdminCommunityTopics.daa53150e781450d6b0b.js.map

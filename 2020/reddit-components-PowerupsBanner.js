@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.f7f16d7093023c6eb738.js
-// Retrieved at 6/2/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.2580f3f6e1d5abf85f7c.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, s, t) {
@@ -145,7 +145,7 @@
 					className: u.a.name
 				}, h), !t && o.a.createElement("span", {
 					className: u.a.lastSupported
-				}, Object(c.f)(b)))), o.a.createElement("div", {
+				}, Object(c.d)(b)))), o.a.createElement("div", {
 					className: u.a.counter
 				}, o.a.createElement(d.a, {
 					className: u.a.powerupIcon
@@ -409,4 +409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.f7f16d7093023c6eb738.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.2580f3f6e1d5abf85f7c.js.map

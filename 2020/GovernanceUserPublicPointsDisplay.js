@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.99117cd5dc8f2c3427a8.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.48fed1dee4e2006ac3c2.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -199,40 +199,38 @@
 				s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				d = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/actions/governance/index.ts"),
-				a = n("./src/reddit/actions/tooltip.ts"),
-				u = n("./src/reddit/components/Governance/Token/index.tsx"),
-				l = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				b = n("./src/reddit/featureFlags/index.ts"),
-				m = n("./src/reddit/featureFlags/component.tsx"),
-				p = n("./src/reddit/helpers/governance/tokens.ts"),
-				f = n("./src/reddit/selectors/economics.ts"),
-				g = n("./src/reddit/selectors/gov.ts"),
-				j = n("./src/reddit/selectors/user.ts"),
-				x = n("./node_modules/reselect/es/index.js"),
-				O = n("./src/reddit/components/Governance/UserPublicPointsDisplay/index.m.less"),
-				y = n.n(O);
-			const v = Object(x.c)({
-				language: j.Q,
-				publicWallet: g.i,
-				tippingEnabled: b.d.spTipping,
-				tokenDisplayConversion: g.o,
-				tokenName: g.p,
-				useCrypto: g.k,
+				c = n("./node_modules/reselect/es/index.js"),
+				i = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/actions/governance/index.ts"),
+				u = n("./src/reddit/actions/tooltip.ts"),
+				l = n("./src/reddit/components/Governance/Token/index.tsx"),
+				b = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				m = n("./src/reddit/featureFlags/index.ts"),
+				p = n("./src/reddit/featureFlags/component.tsx"),
+				f = n("./src/reddit/helpers/governance/tokens.ts"),
+				g = n("./src/reddit/selectors/economics.ts"),
+				j = n("./src/reddit/selectors/gov.ts"),
+				x = n("./src/reddit/components/Governance/UserPublicPointsDisplay/index.m.less"),
+				O = n.n(x);
+			const y = Object(c.c)({
+				publicWallet: j.i,
+				tippingEnabled: m.d.spTipping,
+				tokenDisplayConversion: j.o,
+				tokenName: j.p,
+				useCrypto: j.k,
 				userOptedOut: (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					return Object(f.G)(e, n)
+					return Object(g.G)(e, n)
 				}
 			});
-			t.default = Object(m.a)("spPublicPoints", Object(d.b)(v, e => ({
-				onHideTooltip: () => e(Object(a.i)()),
-				onShowTooltip: t => e(Object(a.f)({
+			t.default = Object(p.a)("spPublicPoints", Object(d.b)(y, e => ({
+				onHideTooltip: () => e(Object(u.i)()),
+				onShowTooltip: t => e(Object(u.f)({
 					tooltipId: t
 				})),
-				onTip: (t, n, r) => e(Object(i.f)({
+				onTip: (t, n, r) => e(Object(a.f)({
 					recipient: t,
 					contentId: n,
 					publicAddress: r
@@ -244,43 +242,43 @@
 					metaSeparator: n,
 					publicWallet: s,
 					subredditId: d,
-					tippingEnabled: i,
+					tippingEnabled: c,
 					tokenDisplayConversion: a,
-					tokenName: b,
+					tokenName: u,
 					useCrypto: m,
-					username: f
+					username: p
 				} = e, g = s && s.amount || void 0;
 				if (!g) return null;
-				const j = "public-wallets-".concat(f, "-").concat(d, "-").concat(t),
+				const j = "public-wallets-".concat(p, "-").concat(d, "-").concat(t),
 					x = s && s.publicAddress;
 				if (m && !x) return null;
-				const O = Object(p.c)(g, a);
+				const y = Object(f.c)(g, a);
 				return o.a.createElement("div", {
-					className: Object(c.a)(e.className, y.a.container, {
-						[y.a.tippable]: i
+					className: Object(i.a)(e.className, O.a.container, {
+						[O.a.tippable]: c
 					}),
 					id: j,
 					onClick: t => {
-						i && (t.stopPropagation(), e.onTip(e.username, e.contentId, x))
+						c && (t.stopPropagation(), e.onTip(e.username, e.contentId, x))
 					},
 					onMouseEnter: () => e.onShowTooltip(j),
 					onMouseLeave: () => e.onHideTooltip(),
-					title: i ? "" : r.fbt._("{username} has {amount} {token name}", [r.fbt._param("username", e.username), r.fbt._param("amount", O), r.fbt._param("token name", b)], {
+					title: c ? "" : r.fbt._("{username} has {amount} {token name}", [r.fbt._param("username", e.username), r.fbt._param("amount", y), r.fbt._param("token name", u)], {
 						hk: "6WL3V"
 					})
-				}, o.a.createElement(u.a, {
-					className: y.a.tokenFilled,
+				}, o.a.createElement(l.a, {
+					className: O.a.tokenFilled,
 					subredditId: e.subredditId
-				}), o.a.createElement(u.a, {
+				}), o.a.createElement(l.a, {
 					grey: !0,
-					className: y.a.tokenGrey,
+					className: O.a.tokenGrey,
 					subredditId: e.subredditId
 				}), o.a.createElement("span", {
-					className: y.a.amount
-				}, O), n, i && o.a.createElement(l.c, {
+					className: O.a.amount
+				}, y), n, c && o.a.createElement(b.c, {
 					caretOnTop: !0,
 					tooltipId: j,
-					text: r.fbt._("Tip {username} with {tokenname}", [r.fbt._param("username", e.username), r.fbt._param("tokenname", b)], {
+					text: r.fbt._("Tip {username} with {tokenname}", [r.fbt._param("username", e.username), r.fbt._param("tokenname", u)], {
 						hk: "2Raj4F"
 					})
 				}))
@@ -656,4 +654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.99117cd5dc8f2c3427a8.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.48fed1dee4e2006ac3c2.js.map

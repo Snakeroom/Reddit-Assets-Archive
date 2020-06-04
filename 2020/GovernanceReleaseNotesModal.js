@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.155062a91c466a8fa609.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.40a0521a2026d2e12aaa.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -146,53 +146,51 @@
 				l = n("./src/reddit/constants/keycodes.ts"),
 				u = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				m = n("./src/reddit/selectors/gov.ts"),
-				p = n("./src/reddit/selectors/user.ts"),
 				x = n("./node_modules/reselect/es/index.js"),
-				g = n("./src/lib/classNames/index.ts"),
+				p = n("./src/lib/classNames/index.ts"),
 				h = n("./node_modules/shallowequal/index.js"),
 				b = n.n(h),
 				v = n("./src/reddit/components/Governance/ReleaseNotesModal/ReleaseDate/index.m.less"),
 				f = n.n(v);
 
-			function w(e) {
+			function g(e) {
 				return [e.getDate(), e.getMonth(), e.getFullYear()]
 			}
 
-			function y(e) {
-				const t = (n = new Date(Date.now() + 60 * (new Date).getTimezoneOffset() * 1e3), r = new Date(e.date), b()(w(n), w(r)));
+			function w(e) {
+				const t = (n = new Date(Date.now() + 60 * (new Date).getTimezoneOffset() * 1e3), r = new Date(e.date), b()(g(n), g(r)));
 				var n, r;
 				return a.a.createElement("div", {
-					className: Object(g.a)(f.a.date, e.className)
+					className: Object(p.a)(f.a.date, e.className)
 				}, t ? s.fbt._("today", null, {
 					hk: "4pfpUs"
 				}) : function(e) {
-					const [t, , n] = w(e);
+					const [t, , n] = g(e);
 					return "".concat(e.toLocaleString("en-US", {
 						month: "short"
 					}), " ").concat(t, ", ").concat(n)
 				}(new Date(e.date)))
 			}
-			var N = n("./src/reddit/components/Media/index.tsx"),
-				E = n("./src/reddit/components/RichTextJson/index.tsx"),
-				j = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
-				_ = n.n(j);
-			const M = {};
+			var y = n("./src/reddit/components/Media/index.tsx"),
+				N = n("./src/reddit/components/RichTextJson/index.tsx"),
+				E = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
+				j = n.n(E);
+			const _ = {};
 
-			function O(e) {
+			function M(e) {
 				return a.a.createElement("div", {
 					className: e.className
 				}, a.a.createElement("div", {
-					className: _.a.title
+					className: j.a.title
 				}, e.releaseNote.title), e.releaseNote.media && "rtjson" === e.releaseNote.media.type ? a.a.createElement("div", {
-					className: _.a.text
-				}, a.a.createElement(E.a, {
-					content: e.releaseNote.media.richtextContent,
-					language: e.language,
-					mediaMetadata: e.releaseNote.media.mediaMetadata,
-					rtJsonElementProps: M
-				})) : a.a.createElement("div", {
-					className: _.a.media
+					className: j.a.text
 				}, a.a.createElement(N.a, {
+					content: e.releaseNote.media.richtextContent,
+					mediaMetadata: e.releaseNote.media.mediaMetadata,
+					rtJsonElementProps: _
+				})) : a.a.createElement("div", {
+					className: j.a.media
+				}, a.a.createElement(y.a, {
 					isListing: !0,
 					isNotCardView: !1,
 					primaryContent: !0,
@@ -202,20 +200,20 @@
 					post: e.releaseNote
 				})))
 			}
-			var I = n("./src/reddit/controls/Button/index.tsx"),
-				R = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				S = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
-				T = n.n(S);
+			var O = n("./src/reddit/controls/Button/index.tsx"),
+				I = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				R = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
+				S = n.n(R);
 
-			function L(e) {
+			function T(e) {
 				return a.a.createElement("div", {
-					className: Object(g.a)(T.a.container, e.className)
-				}, !e.isFirst && a.a.createElement(I.i, {
-					className: T.a.prev,
+					className: Object(p.a)(S.a.container, e.className)
+				}, !e.isFirst && a.a.createElement(O.i, {
+					className: S.a.prev,
 					onClick: e.onPrevSlide
-				}, a.a.createElement(R.a, {
-					className: T.a.arrow
-				})), a.a.createElement(I.f, {
+				}, a.a.createElement(I.a, {
+					className: S.a.arrow
+				})), a.a.createElement(O.f, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? s.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -223,23 +221,23 @@
 					hk: "2uULSy"
 				})))
 			}
-			var C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
-				k = n.n(C);
+			var L = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideIndicator/index.m.less"),
+				C = n.n(L);
 
-			function D(e) {
+			function k(e) {
 				return a.a.createElement("div", {
-					className: Object(g.a)(k.a.container, e.className)
+					className: Object(p.a)(C.a.container, e.className)
 				}, Array.from({
 					length: e.totalSlides
 				}).map((t, n) => a.a.createElement("div", {
-					className: Object(g.a)(k.a.dot, {
-						[k.a.dotSelected]: n === e.currentSlide
+					className: Object(p.a)(C.a.dot, {
+						[C.a.dotSelected]: n === e.currentSlide
 					})
 				})))
 			}
-			var P = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
-				G = n.n(P);
-			class V extends a.a.Component {
+			var D = n("./src/reddit/components/Governance/ReleaseNotesModal/index.m.less"),
+				P = n.n(D);
+			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						currentlyViewingIndex: 0
@@ -268,43 +266,39 @@
 					if (!this.props.subreddit) return null;
 					const e = this.props.releaseNotes[this.state.currentlyViewingIndex];
 					return a.a.createElement("div", null, a.a.createElement(c.a, {
-						className: G.a.title
+						className: P.a.title
 					}, s.fbt._("What's New in {subredditName}?", [s.fbt._param("subredditName", this.props.subreddit.displayText)], {
 						hk: "31ALcQ"
-					})), a.a.createElement(O, {
-						language: this.props.language,
+					})), a.a.createElement(M, {
 						releaseNote: e
 					}), a.a.createElement("div", {
-						className: G.a.controls
-					}, a.a.createElement(y, {
-						className: G.a.controlBox,
-						date: e.created,
-						language: this.props.language
-					}), a.a.createElement(D, {
-						className: G.a.controlBox,
+						className: P.a.controls
+					}, a.a.createElement(w, {
+						className: P.a.controlBox,
+						date: e.created
+					}), a.a.createElement(k, {
+						className: P.a.controlBox,
 						currentSlide: this.state.currentlyViewingIndex,
 						totalSlides: this.props.releaseNotes.length
-					}), a.a.createElement(L, {
-						className: G.a.controlBox,
+					}), a.a.createElement(T, {
+						className: P.a.controlBox,
 						isFirst: 0 === this.state.currentlyViewingIndex,
 						isLast: this.state.currentlyViewingIndex === this.props.releaseNotes.length - 1,
-						language: this.props.language,
 						onClose: this.props.onClose,
 						onNextSlide: this.handleViewNextSlide,
 						onPrevSlide: this.handleViewPrevSlide
 					})))
 				}
 			}
-			const H = Object(x.c)({
+			const V = Object(x.c)({
 					releaseNotes: m.j,
-					language: p.Q,
 					subreddit: u.q
 				}),
-				A = Object(o.b)(H, e => ({
+				H = Object(o.b)(V, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
-				B = Object(u.t)();
-			t.default = Object(i.a)(B(A(V)))
+				A = Object(u.t)();
+			t.default = Object(i.a)(A(H(G)))
 		},
 		"./src/reddit/components/RawHTMLDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -324,10 +318,10 @@
 				l = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				u = n("./src/reddit/components/RawHTMLDisplay/index.m.less"),
 				m = n.n(u);
-			const p = Object(o.b)(null, e => ({
+			const x = Object(o.b)(null, e => ({
 					onNavigate: t => e(Object(c.G)(t))
 				})),
-				x = d.a.wrapped(e => a.a.createElement("div", {
+				p = d.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					dangerouslySetInnerHTML: {
 						__html: e.html
@@ -345,7 +339,7 @@
 						"--RawHTMLDisplay-tr-odd": Object(s.g)(Object(l.a)(e).line, .8)
 					})
 				}), "StyledRawHTMLDisplay", m.a);
-			t.a = p(Object(i.a)(x))
+			t.a = x(Object(i.a)(p))
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, n) {
 			"use strict";
@@ -467,19 +461,19 @@
 			})), n.d(t, "c", (function() {
 				return m
 			})), n.d(t, "d", (function() {
-				return p
-			})), n.d(t, "e", (function() {
 				return x
+			})), n.d(t, "e", (function() {
+				return p
 			})), n.d(t, "g", (function() {
-				return g
-			})), n.d(t, "h", (function() {
 				return h
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return b
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return v
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "j", (function() {
 				return f
+			})), n.d(t, "p", (function() {
+				return g
 			})), n.d(t, "q", (function() {
 				return w
 			})), n.d(t, "o", (function() {
@@ -531,19 +525,19 @@
 					const n = N(e, t);
 					if (n) return n.mainHeader
 				},
-				p = (e, t) => {
+				x = (e, t) => {
 					const n = N(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
-				x = (e, t) => {
+				p = (e, t) => {
 					const n = N(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
 					} : c
 				},
-				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				h = (e, t) => {
+				h = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				b = (e, t) => {
 					if (Object(o.a)(e)) {
 						const t = Object(i.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
@@ -556,14 +550,14 @@
 					}
 					return n
 				},
-				b = (e, t) => {
+				v = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				v = (e, t) => {
+				f = (e, t) => {
 					const n = Object(s.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || d
 				},
-				f = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				g = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				w = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				y = (e, t) => {
 					const n = O(e, t);
@@ -619,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceReleaseNotesModal.155062a91c466a8fa609.js.map
+//# sourceMappingURL=GovernanceReleaseNotesModal.40a0521a2026d2e12aaa.js.map

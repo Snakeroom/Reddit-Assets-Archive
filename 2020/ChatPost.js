@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e2538070dd9950ba53ae.js
-// Retrieved at 6/3/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.ce7cfffab31ba6c47b93.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1150,33 +1150,32 @@
 						isLivestreaming: p,
 						isMod: h,
 						isSimpleReply: C,
-						language: g,
-						onApproveClick: b,
-						onBlockClick: v,
-						onDeleteClick: _,
-						onEditClick: f,
-						onHideTooltip: x,
-						onRemoveClick: k,
-						onReplyClick: E,
-						onReportClick: T,
-						onShowTooltip: y,
-						onSpamClick: I,
-						onUnblockClick: w,
-						reportFlowIsOpen: O,
-						replyTooltipId: L,
-						reportTooltipId: j,
-						approveTooltipId: S,
-						blockTooltipId: N,
-						removeTooltipId: R,
-						sendEvent: M,
-						spamTooltipId: A,
-						toggleDeleteCommentModal: P,
-						timestampUpdateTrigger: B
-					} = e, D = !!r && r.id === t.authorId, F = Object(Pe.b)(t), W = t.isApproved && F, U = !t.bannedBy || t.bannedBy === i.j, H = {
+						onApproveClick: g,
+						onBlockClick: b,
+						onDeleteClick: v,
+						onEditClick: _,
+						onHideTooltip: f,
+						onRemoveClick: x,
+						onReplyClick: k,
+						onReportClick: E,
+						onShowTooltip: T,
+						onSpamClick: y,
+						onUnblockClick: I,
+						reportFlowIsOpen: w,
+						replyTooltipId: O,
+						reportTooltipId: L,
+						approveTooltipId: j,
+						blockTooltipId: S,
+						removeTooltipId: N,
+						sendEvent: R,
+						spamTooltipId: M,
+						toggleDeleteCommentModal: A,
+						timestampUpdateTrigger: P
+					} = e, B = !!r && r.id === t.authorId, D = Object(Pe.b)(t), F = t.isApproved && D, W = !t.bannedBy || t.bannedBy === i.j, U = {
 						comment: t,
-						onHideTooltip: x,
-						onShowTooltip: y,
-						sendEvent: M
+						onHideTooltip: f,
+						onShowTooltip: T,
+						sendEvent: R
 					};
 					return o.a.createElement("div", {
 						className: n
@@ -1184,60 +1183,60 @@
 						className: Object(Q.a)(Le.a.Menu, {
 							[Le.a.Livestreaming]: p
 						})
-					}, (t.bannedBy || F) && h && o.a.createElement(Re, tt({
-						onClick: b,
-						tooltipId: S,
-						tooltipText: W ? G.fbt._("Reapprove", null, {
+					}, (t.bannedBy || D) && h && o.a.createElement(Re, tt({
+						onClick: g,
+						tooltipId: j,
+						tooltipText: F ? G.fbt._("Reapprove", null, {
 							hk: "vlRqn"
 						}) : G.fbt._("Approve", null, {
 							hk: "3Vc0Oh"
 						}),
 						trackingNoun: "approve"
 					}, e), o.a.createElement(rt, null)), C && !t.isLocked && o.a.createElement(Re, tt({
-						onClick: E,
-						tooltipId: L,
+						onClick: k,
+						tooltipId: O,
 						tooltipText: G.fbt._("Reply", null, {
 							hk: "14j3OR"
 						}),
 						trackingNoun: "reply"
-					}, e), o.a.createElement(at, null)), h && U && o.a.createElement(Re, tt({
-						onClick: I,
-						tooltipId: A,
+					}, e), o.a.createElement(at, null)), h && W && o.a.createElement(Re, tt({
+						onClick: y,
+						tooltipId: M,
 						tooltipText: G.fbt._("Spam", null, {
 							hk: "15R6K5"
 						}),
 						trackingNoun: "spam"
-					}, e), o.a.createElement(ct, null)), !D && o.a.createElement(Re, tt({
-						onClick: T,
-						tooltipId: j,
+					}, e), o.a.createElement(ct, null)), !B && o.a.createElement(Re, tt({
+						onClick: E,
+						tooltipId: L,
 						tooltipText: G.fbt._("Report", null, {
 							hk: "OHiOO"
 						}),
 						trackingNoun: "report"
-					}, e), o.a.createElement(st, null)), O && o.a.createElement(Be.a, {
+					}, e), o.a.createElement(st, null)), w && o.a.createElement(Be.a, {
 						commentId: t.id,
 						useLiveStreamingFlow: p,
 						overlayCustomStyles: Be.b,
 						postId: t.postId,
 						withOverlay: !0
-					}), D && !p && o.a.createElement(Re, tt({
-						onClick: f,
+					}), B && !p && o.a.createElement(Re, tt({
+						onClick: _,
 						tooltipId: d,
 						tooltipText: G.fbt._("Edit", null, {
 							hk: "30rf1x"
 						}),
 						trackingNoun: "edit"
-					}, H), o.a.createElement(ot, null)), h && U ? o.a.createElement(Re, tt({
-						onClick: k,
-						tooltipId: R,
+					}, U), o.a.createElement(ot, null)), h && W ? o.a.createElement(Re, tt({
+						onClick: x,
+						tooltipId: N,
 						tooltipText: t.bannedBy === i.j ? G.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : G.fbt._("Remove", null, {
 							hk: "1f2QZ6"
 						}),
 						trackingNoun: t.bannedBy === i.j ? "confirm_remove" : "remove"
-					}, H), o.a.createElement(it, null)) : D && o.a.createElement(Re, tt({
-						onClick: _,
+					}, U), o.a.createElement(it, null)) : B && o.a.createElement(Re, tt({
+						onClick: v,
 						tooltipId: c,
 						tooltipText: G.fbt._("Delete", null, {
 							hk: "48iIX1"
@@ -1257,22 +1256,22 @@
 							hk: "227ya0"
 						}),
 						onConfirm: a,
-						toggleModal: P,
+						toggleModal: A,
 						withOverlay: !0
 					}), !p && o.a.createElement(Re, tt({
-						onClick: () => m ? w() : v(),
-						tooltipId: N,
+						onClick: () => m ? I() : b(),
+						tooltipId: S,
 						tooltipText: m ? G.fbt._("Unblock User", null, {
 							hk: "26F2c9"
 						}) : G.fbt._("Block User", null, {
 							hk: "1XKY2A"
 						}),
 						trackingNoun: "sitewide_".concat(m ? "unblock" : "block")
-					}, H), m ? o.a.createElement(lt, null) : o.a.createElement(nt, null))), !p && o.a.createElement(Me, tt({}, e, {
+					}, U), m ? o.a.createElement(lt, null) : o.a.createElement(nt, null))), !p && o.a.createElement(Me, tt({}, e, {
 						tooltipId: s,
 						tooltipText: Object(be.a)(t.created),
-						timestampUpdateTrigger: B
-					}), Object(l.d)(g, t.created)))
+						timestampUpdateTrigger: P
+					}), Object(l.d)(t.created)))
 				})),
 				ht = n("./src/chat/helpers/dom.ts"),
 				Ct = n("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
@@ -1349,7 +1348,6 @@
 						return Boolean(e.shortcuts.activeCommentId && n === e.shortcuts.activeCommentId)
 					},
 					isEditing: D.z,
-					language: et.Q,
 					subreddit: Tt.q
 				})),
 				Bt = Object(ee.b)(e => ({
@@ -1412,49 +1410,47 @@
 						isActive: i,
 						isEditing: c,
 						isLivestreaming: d,
-						language: m,
-						postId: u,
-						renderedInOverlay: p,
-						sendEvent: h,
-						targetComment: C,
-						timestampUpdateTrigger: g,
-						addToRefList: b,
-						onReplyClick: v
+						postId: m,
+						renderedInOverlay: u,
+						sendEvent: p,
+						targetComment: h,
+						timestampUpdateTrigger: C,
+						addToRefList: g,
+						onReplyClick: b
 					} = this.props, {
-						isCollapsed: _,
-						isExpanded: f,
-						isTruncated: x
+						isCollapsed: v,
+						isExpanded: _,
+						isTruncated: f
 					} = this.state;
 					if (!n) return null;
-					i && J()(() => this.elemRef.current && this.elemRef.current.focus()), J()(() => this.elemRef && this.elemRef.current && b && b(this.elemRef));
-					const k = !c && !n.isDeleted,
-						E = !!e,
-						T = Object(Q.a)({
+					i && J()(() => this.elemRef.current && this.elemRef.current.focus()), J()(() => this.elemRef && this.elemRef.current && g && g(this.elemRef));
+					const x = !c && !n.isDeleted,
+						k = !!e,
+						E = Object(Q.a)({
 							[Ot.a.CommentWrapper]: !d,
-							[Ot.a.CommentExpanded]: f,
-							[Ot.a.CommentTruncated]: x,
-							[Ot.a.HighlightTarget]: C,
+							[Ot.a.CommentExpanded]: _,
+							[Ot.a.CommentTruncated]: f,
+							[Ot.a.HighlightTarget]: h,
 							[Ot.a.LivestreamingCommentWrapper]: d
 						});
-					return _ ? o.a.createElement(ge, {
+					return v ? o.a.createElement(ge, {
 						commentCount: 1,
 						onClick: this.expandCollapsedComment
 					}) : o.a.createElement("div", {
-						id: C ? "targetComment" : void 0,
+						id: h ? "targetComment" : void 0,
 						ref: this.elemRef,
 						tabIndex: 0,
-						className: T
+						className: E
 					}, c && o.a.createElement(Et.a, {
 						key: "chatCommentsForm",
 						isLivestreaming: d,
-						language: m,
-						postId: u,
-						sendEvent: h,
+						postId: m,
+						sendEvent: p,
 						draftKey: Object($.a)(Je.c.edit, n.id),
 						commentsPageKey: s,
 						isEditing: c,
 						comment: n
-					}), k && o.a.createElement(o.a.Fragment, null, o.a.createElement(Nt, {
+					}), x && o.a.createElement(o.a.Fragment, null, o.a.createElement(Nt, {
 						childrenInfo: t,
 						collapsedBecauseCrowdControl: !1,
 						collapsed: !1,
@@ -1465,8 +1461,7 @@
 						ignoreFlairPosition: !0,
 						ignoreLock: !0,
 						isLivestreaming: d,
-						language: m,
-						renderedInOverlay: p
+						renderedInOverlay: u
 					}, o.a.createElement(ue.a, {
 						className: Object(Q.a)(Ot.a.ChatIcon, {
 							[Ot.a.Livestreaming]: d
@@ -1475,11 +1470,11 @@
 						userId: n.authorId
 					})), n.parentId && o.a.createElement(Mt, {
 						commentId: n.parentId,
-						onReplyClick: v,
+						onReplyClick: b,
 						isLivestreaming: d
 					}), d && o.a.createElement("span", {
 						className: Ot.a.livestreamingTimeStamp
-					}, Object(l.d)(m, n.created)), E && e && d ? o.a.createElement(me, {
+					}, Object(l.d)(n.created)), k && e && d ? o.a.createElement(me, {
 						award: e,
 						comment: n
 					}) : [o.a.createElement(oe.a, {
@@ -1498,12 +1493,10 @@
 						comment: n,
 						commentsPageKey: s,
 						isLivestreaming: d,
-						language: m,
-						timestampUpdateTrigger: g
-					})]), n.isDeleted && o.a.createElement(Wt, null), k && r && r.map((e, t) => o.a.createElement(St, {
-						key: "".concat(t, "-").concat(e),
-						language: m
-					}, e)), !c && x && o.a.createElement("button", {
+						timestampUpdateTrigger: C
+					})]), n.isDeleted && o.a.createElement(Wt, null), x && r && r.map((e, t) => o.a.createElement(St, {
+						key: "".concat(t, "-").concat(e)
+					}, e)), !c && f && o.a.createElement("button", {
 						className: Object(Q.a)(Ot.a.CommentReadMoreButton, {
 							[Ot.a.Livestreaming]: d
 						}),
@@ -2429,4 +2422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.e2538070dd9950ba53ae.js.map
+//# sourceMappingURL=ChatPost.ce7cfffab31ba6c47b93.js.map

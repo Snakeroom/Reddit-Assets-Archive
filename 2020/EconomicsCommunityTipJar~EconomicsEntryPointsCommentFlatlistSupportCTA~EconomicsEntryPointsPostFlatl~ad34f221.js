@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.74a46aa3b2713a41dd22.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.9453abf3e28fa9cf13cb.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"], {
 		"./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less": function(e, t, s) {
@@ -110,7 +110,7 @@
 		"./src/reddit/components/Economics/Support/PaymentTooltip/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return _e
+				return xe
 			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
@@ -136,28 +136,27 @@
 				x = s("./src/reddit/selectors/economics.ts"),
 				_ = s("./src/reddit/selectors/user.ts"),
 				S = s("./node_modules/fbt/lib/FbtPublic.js"),
-				f = s("./src/reddit/components/Translated/index.tsx"),
-				T = s("./src/reddit/controls/Checkbox/index.tsx"),
-				I = s("./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less"),
-				O = s.n(I);
+				f = s("./src/reddit/controls/Checkbox/index.tsx"),
+				T = s("./src/reddit/components/Economics/Support/PaymentTooltip/Anonymous/index.m.less"),
+				O = s.n(T);
 
-			function j(e) {
+			function I(e) {
 				return n.a.createElement("div", {
 					className: Object(i.a)(O.a.container, e.className),
 					onClick: e.onToggle
-				}, n.a.createElement(T.a, {
+				}, n.a.createElement(f.a, {
 					redditStyle: !0,
 					className: O.a.checkbox,
 					isCheckboxSelected: e.anonymous
 				}), e.contentType === N.a.Subreddit ? S.fbt._("Make my support anonymous", null, {
 					hk: "3UIJ6q"
-				}) : n.a.createElement(f.a, {
-					msgId: "economy.support.payment.anonymous"
+				}) : S.fbt._("Make my tip anonymous", null, {
+					hk: "18yEFt"
 				}))
 			}
-			var w = s("./src/lib/currency/centsToDollars/index.ts"),
-				M = s("./src/lib/prettyPrintNumber/index.ts"),
-				L = e => n.a.createElement("svg", {
+			var j = s("./src/lib/currency/centsToDollars/index.ts"),
+				w = s("./src/lib/prettyPrintNumber/index.ts"),
+				M = e => n.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 20 20",
 					className: e.className
@@ -165,47 +164,47 @@
 					fill: "inherit",
 					d: "M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z"
 				}))),
-				k = s("./src/reddit/components/Economics/Support/PaymentTooltip/Coin/index.m.less"),
-				H = s.n(k);
+				L = s("./src/reddit/components/Economics/Support/PaymentTooltip/Coin/index.m.less"),
+				k = s.n(L);
 
-			function A(e) {
+			function H(e) {
 				return n.a.createElement("div", {
-					className: Object(i.a)(H.a.container, e.className)
+					className: Object(i.a)(k.a.container, e.className)
 				}, n.a.createElement("div", {
-					className: H.a.heads
-				}, "$", Object(M.a)(Object(w.a)(e.value))), n.a.createElement("div", {
-					className: H.a.headsInner
+					className: k.a.heads
+				}, "$", Object(w.a)(Object(j.a)(e.value))), n.a.createElement("div", {
+					className: k.a.headsInner
 				}), n.a.createElement("div", {
-					className: H.a.thickness
+					className: k.a.thickness
 				}), n.a.createElement("div", {
-					className: H.a.tails
-				}, n.a.createElement(L, {
-					className: H.a.coinSnooHead
+					className: k.a.tails
+				}, n.a.createElement(M, {
+					className: k.a.coinSnooHead
 				})), n.a.createElement("div", {
-					className: H.a.tailsInner
+					className: k.a.tailsInner
 				}))
 			}
-			var V = s("./src/reddit/components/Economics/Support/PaymentTooltip/FormLoading/index.m.less"),
-				B = s.n(V);
+			var A = s("./src/reddit/components/Economics/Support/PaymentTooltip/FormLoading/index.m.less"),
+				V = s.n(A);
 
-			function Z(e) {
+			function B(e) {
 				return n.a.createElement("div", {
 					className: e.className
 				}, n.a.createElement("div", {
-					className: B.a.box
+					className: V.a.box
 				}), n.a.createElement("div", {
-					className: B.a.box
+					className: V.a.box
 				}), e.isLoggedIn && n.a.createElement("div", {
-					className: B.a.spacer
+					className: V.a.spacer
 				}))
 			}
-			var D = s("./src/reddit/controls/FormFields/index.tsx"),
-				F = s("./src/reddit/components/Economics/Support/PaymentTooltip/Message/index.m.less"),
-				U = s.n(F);
-			var W = function(e) {
-					return n.a.createElement(D.c, {
+			var F = s("./src/reddit/controls/FormFields/index.tsx"),
+				Z = s("./src/reddit/components/Economics/Support/PaymentTooltip/Message/index.m.less"),
+				D = s.n(Z);
+			var U = function(e) {
+					return n.a.createElement(F.c, {
 						redditStyle: !0,
-						className: Object(i.a)(U.a.input, e.className),
+						className: Object(i.a)(D.a.input, e.className),
 						label: S.fbt._("Private Message (optional)", null, {
 							hk: "4t7gCK"
 						}),
@@ -214,8 +213,8 @@
 						onChange: t => e.onChange(t.currentTarget.value)
 					})
 				},
-				X = s("./src/reddit/components/Economics/Stripe/FormElements/index.tsx"),
-				z = e => n.a.createElement("svg", {
+				W = s("./src/reddit/components/Economics/Stripe/FormElements/index.tsx"),
+				X = e => n.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 103 18"
@@ -224,18 +223,18 @@
 				}), n.a.createElement("path", {
 					d: "M102.545 10.051H96.9859C97.1129 11.382 98.0879 11.774 99.1949 11.774C100.322 11.774 101.21 11.536 101.984 11.146V13.433C101.213 13.861 100.194 14.169 98.8369 14.169C96.0709 14.169 94.1329 12.437 94.1329 9.01298C94.1329 6.12098 95.7769 3.82498 98.4779 3.82498C101.175 3.82498 102.583 6.11998 102.583 9.02798C102.583 9.30298 102.558 9.89798 102.545 10.051ZM98.4599 6.13998C97.7499 6.13998 96.9609 6.67598 96.9609 7.95498H99.8969C99.8969 6.67698 99.1569 6.13998 98.4599 6.13998ZM89.5369 14.169C88.5429 14.169 87.9359 13.75 87.5279 13.451L87.5219 16.664L84.6829 17.268L84.6819 4.01398H87.1819L87.3299 4.71498C87.7219 4.34898 88.4409 3.82498 89.5539 3.82498C91.5479 3.82498 93.4259 5.62098 93.4259 8.92698C93.4259 12.535 91.5679 14.169 89.5369 14.169ZM88.8749 6.33998C88.2239 6.33998 87.8149 6.57798 87.5189 6.90298L87.5359 11.122C87.8119 11.421 88.2089 11.661 88.8749 11.661C89.9249 11.661 90.6289 10.518 90.6289 8.98898C90.6289 7.50398 89.9139 6.33998 88.8749 6.33998ZM80.5779 4.01398H83.4279V13.966H80.5779V4.01398ZM80.5779 0.83598L83.4279 0.22998V2.54298L80.5779 3.14898V0.83598ZM77.5389 7.21898V13.966H74.7009V4.01398H77.1559L77.3339 4.85298C77.9989 3.63098 79.3259 3.87898 79.7039 4.01498V6.62498C79.3429 6.50798 78.2099 6.33798 77.5389 7.21898ZM71.4529 10.475C71.4529 12.148 73.2449 11.627 73.6079 11.482V13.793C73.2299 14.001 72.5439 14.169 71.6159 14.169C69.9309 14.169 68.6659 12.928 68.6659 11.247L68.6789 2.13798L71.4509 1.54798L71.4529 4.01398H73.6089V6.43498H71.4529V10.475ZM67.9139 10.959C67.9139 13.003 66.2869 14.169 63.9259 14.169C62.9469 14.169 61.8769 13.979 60.8209 13.525V10.814C61.7739 11.332 62.9879 11.721 63.9289 11.721C64.5619 11.721 65.0179 11.551 65.0179 11.026C65.0179 9.67098 60.7019 10.181 60.7019 7.03798C60.7019 5.02798 62.2369 3.82498 64.5399 3.82498C65.4809 3.82498 66.4209 3.96898 67.3619 4.34398V7.01898C66.4979 6.55198 65.4009 6.28798 64.5379 6.28798C63.9429 6.28798 63.5729 6.45998 63.5729 6.90298C63.5729 8.18098 67.9139 7.57298 67.9139 10.959Z"
 				})),
-				G = s("./src/reddit/components/Economics/Support/PaymentTooltip/NewCard/index.m.less"),
-				Y = s.n(G);
+				z = s("./src/reddit/components/Economics/Support/PaymentTooltip/NewCard/index.m.less"),
+				G = s.n(z);
 			const {
-				fbt: R
+				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var q = function(e) {
+			var R = function(e) {
 					return n.a.createElement("div", {
-						className: Object(i.a)(Y.a.container, e.className)
-					}, n.a.createElement(D.c, {
+						className: Object(i.a)(G.a.container, e.className)
+					}, n.a.createElement(F.c, {
 						redditStyle: !0,
-						className: Y.a.input,
-						label: R._("name on card", null, {
+						className: G.a.input,
+						label: Y._("name on card", null, {
 							hk: "2IGHFb"
 						}),
 						type: "text",
@@ -243,7 +242,7 @@
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							name: t.currentTarget.value
 						}))
-					}), n.a.createElement(X.a, {
+					}), n.a.createElement(W.a, {
 						onChange: t => e.onChange(Object.assign({}, e.card, {
 							cardCVCComplete: t.complete,
 							cardExpiryComplete: t.complete,
@@ -254,62 +253,62 @@
 							element: t
 						}))
 					}), e.isLoggedIn && n.a.createElement("div", {
-						className: Y.a.saveCard,
+						className: G.a.saveCard,
 						onClick: () => e.onChange(Object.assign({}, e.card, {
 							saveCard: !e.card.saveCard
 						}))
 					}, n.a.createElement("div", {
-						className: Y.a.saveCardText
-					}, n.a.createElement(T.a, {
+						className: G.a.saveCardText
+					}, n.a.createElement(f.a, {
 						redditStyle: !0,
-						className: Y.a.checkbox,
+						className: G.a.checkbox,
 						isCheckboxSelected: !!e.card.saveCard
-					}), R._("Save card", null, {
+					}), Y._("Save card", null, {
 						hk: "4iuuuw"
-					})), n.a.createElement(z, {
-						className: Y.a.stripeIcon
+					})), n.a.createElement(X, {
+						className: G.a.stripeIcon
 					})))
 				},
-				K = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				J = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				Q = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				$ = s("./src/reddit/components/Economics/Support/PaymentTooltip/PaymentSelector/List/index.m.less"),
-				ee = s.n($);
+				q = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				K = s("./src/reddit/icons/svgs/Lock/index.tsx"),
+				J = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				Q = s("./src/reddit/components/Economics/Support/PaymentTooltip/PaymentSelector/List/index.m.less"),
+				$ = s.n(Q);
 
-			function te(e) {
+			function ee(e) {
 				return e.type === N.b.SavedPayPal || e.type === N.b.SavedStripe
 			}
-			const se = Object(c.c)({
+			const te = Object(c.c)({
 				savedPayments: x.u
 			});
-			var ae = Object(r.b)(se)((function(e) {
+			var se = Object(r.b)(te)((function(e) {
 					return n.a.createElement("div", {
-						className: Object(i.a)(ee.a.container, e.className)
+						className: Object(i.a)($.a.container, e.className)
 					}, e.savedPayments.map(t => {
-						const s = !!te(e.selectedPayment) && t.id === e.selectedPayment.id;
+						const s = !!ee(e.selectedPayment) && t.id === e.selectedPayment.id;
 						return n.a.createElement("button", {
-							className: Object(i.a)(ee.a.paymentOption, {
-								[ee.a.selected]: s
+							className: Object(i.a)($.a.paymentOption, {
+								[$.a.selected]: s
 							}),
 							key: t.id,
 							onClick: () => e.onSelectPayment(t)
-						}, t.display, s && n.a.createElement(Q.a, {
-							className: ee.a.check
+						}, t.display, s && n.a.createElement(J.a, {
+							className: $.a.check
 						}))
 					}), n.a.createElement("button", {
-						className: Object(i.a)(ee.a.paymentOption, {
-							[ee.a.selected]: !te(e.selectedPayment) && e.selectedPayment.type === N.b.NewStripe
+						className: Object(i.a)($.a.paymentOption, {
+							[$.a.selected]: !ee(e.selectedPayment) && e.selectedPayment.type === N.b.NewStripe
 						}),
 						onClick: () => e.onSelectPayment(Object(N.d)())
 					}, S.fbt._("Add New Card", null, {
 						hk: "PN0KD"
-					}), !te(e.selectedPayment) && e.selectedPayment.type === N.b.NewStripe && n.a.createElement(Q.a, {
-						className: ee.a.check
+					}), !ee(e.selectedPayment) && e.selectedPayment.type === N.b.NewStripe && n.a.createElement(J.a, {
+						className: $.a.check
 					})))
 				})),
-				ne = s("./src/reddit/components/Economics/Support/PaymentTooltip/PaymentSelector/index.m.less"),
-				oe = s.n(ne);
-			class re extends n.a.Component {
+				ae = s("./src/reddit/components/Economics/Support/PaymentTooltip/PaymentSelector/index.m.less"),
+				ne = s.n(ae);
+			class oe extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						selectorOpen: !1
@@ -319,40 +318,40 @@
 				}
 				render() {
 					return n.a.createElement("div", {
-						className: Object(i.a)(oe.a.container, this.props.className)
-					}, this.state.selectorOpen ? n.a.createElement(ae, {
-						className: oe.a.list,
+						className: Object(i.a)(ne.a.container, this.props.className)
+					}, this.state.selectorOpen ? n.a.createElement(se, {
+						className: ne.a.list,
 						selectedPayment: this.props.selectedPayment,
 						onSelectPayment: e => {
 							this.props.onSelectPayment(e), this.handleSelectorToggle()
 						}
 					}) : n.a.createElement("button", {
-						className: oe.a.currentlySelected,
+						className: ne.a.currentlySelected,
 						onClick: this.handleSelectorToggle
-					}, n.a.createElement(J.a, {
-						className: oe.a.lockIcon
+					}, n.a.createElement(K.a, {
+						className: ne.a.lockIcon
 					}), n.a.createElement("div", {
-						className: oe.a.cardType
+						className: ne.a.cardType
 					}, this.props.selectedPayment.type === N.b.NewStripe || this.props.selectedPayment.type === N.b.NewPayPal ? S.fbt._("Add New Card", null, {
 						hk: "PN0KD"
-					}) : this.props.selectedPayment.display), n.a.createElement(K.a, {
-						className: oe.a.dropdownCaret
+					}) : this.props.selectedPayment.display), n.a.createElement(q.a, {
+						className: ne.a.dropdownCaret
 					})))
 				}
 			}
-			var ce = s("./src/reddit/components/Economics/Support/PaymentTooltip/SavedCardsLoading/index.m.less"),
-				ie = s.n(ce);
+			var re = s("./src/reddit/components/Economics/Support/PaymentTooltip/SavedCardsLoading/index.m.less"),
+				ce = s.n(re);
 
-			function me(e) {
+			function ie(e) {
 				return n.a.createElement("div", {
-					className: Object(i.a)(ie.a.container, e.className)
+					className: Object(i.a)(ce.a.container, e.className)
 				})
 			}
-			var de = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				le = s("./src/reddit/icons/svgs/Info/index.tsx"),
-				pe = s("./src/reddit/components/Economics/Support/PaymentTooltip/SubredditDisplay/index.m.less"),
-				ue = s.n(pe);
-			const he = (e, t) => {
+			var me = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				de = s("./src/reddit/icons/svgs/Info/index.tsx"),
+				le = s("./src/reddit/components/Economics/Support/PaymentTooltip/SubredditDisplay/index.m.less"),
+				pe = s.n(le);
+			const ue = (e, t) => {
 				if (e) {
 					const s = t ? t.displayText : "the community",
 						a = String(Math.floor(100 * e.community)),
@@ -375,7 +374,7 @@
 					redditPercentText: ""
 				}
 			};
-			const ye = Object(c.c)({
+			const he = Object(c.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: s
@@ -392,35 +391,35 @@
 					})
 				}
 			});
-			var be = Object(r.b)(ye)((function(e) {
+			var ye = Object(r.b)(he)((function(e) {
 					const {
 						communityPercentText: t,
 						communityPercentTextFees: s,
 						redditPercentText: a
-					} = he(e.tipsProportions, e.subreddit);
+					} = ue(e.tipsProportions, e.subreddit);
 					return n.a.createElement("div", {
-						className: Object(i.a)(e.className, ue.a.container)
+						className: Object(i.a)(e.className, pe.a.container)
 					}, e.subreddit && e.subreddit.icon ? n.a.createElement("img", {
-						className: ue.a.subredditIconImage,
+						className: pe.a.subredditIconImage,
 						src: e.subreddit.communityIcon || e.subreddit.icon.url
-					}) : n.a.createElement(de.a, {
-						className: ue.a.subredditIconDefault
+					}) : n.a.createElement(me.a, {
+						className: pe.a.subredditIconDefault
 					}), n.a.createElement("div", {
-						className: ue.a.content
+						className: pe.a.content
 					}, e.subreddit && n.a.createElement("div", {
-						className: ue.a.subredditName
+						className: pe.a.subredditName
 					}, e.subreddit.displayText), e.tipsProportions && n.a.createElement("div", {
-						className: ue.a.msgWrapper,
+						className: pe.a.msgWrapper,
 						title: [s, a].join(", ")
 					}, n.a.createElement("div", {
-						className: ue.a.msg
-					}, t), n.a.createElement(le.a, {
-						className: ue.a.infoIcon
+						className: pe.a.msg
+					}, t), n.a.createElement(de.a, {
+						className: pe.a.infoIcon
 					}))))
 				})),
-				Ce = s("./src/reddit/components/Economics/Support/PaymentTooltip/UserDisplay/index.m.less"),
-				ge = s.n(Ce);
-			const Pe = (e, t, s) => {
+				be = s("./src/reddit/components/Economics/Support/PaymentTooltip/UserDisplay/index.m.less"),
+				Ce = s.n(be);
+			const ge = (e, t, s) => {
 					if (t && t.community) {
 						const a = Math.floor(100 * t.community),
 							n = e ? e.displayText : S.fbt._("the subreddit", null, {
@@ -434,10 +433,10 @@
 					}
 					return ""
 				},
-				Ee = e => e && e.reddit ? S.fbt._("{amount}% goes to Reddit", [S.fbt._param("amount", String(Math.floor(100 * e.reddit)))], {
+				Pe = e => e && e.reddit ? S.fbt._("{amount}% goes to Reddit", [S.fbt._param("amount", String(Math.floor(100 * e.reddit)))], {
 					hk: "2kvg4m"
 				}) : "",
-				ve = (e, t, s) => {
+				Ee = (e, t, s) => {
 					if (t && t.creator) {
 						const a = String(Math.floor(100 * t.creator)),
 							n = "u/".concat(e);
@@ -451,7 +450,7 @@
 					}
 					return ""
 				};
-			class Ne extends n.a.Component {
+			class ve extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						loadingBufferTimePassed: !1
@@ -467,37 +466,36 @@
 				render() {
 					const e = this.state.loadingBufferTimePassed && !this.props.user;
 					return n.a.createElement("div", {
-						className: Object(i.a)(this.props.className, ge.a.container)
+						className: Object(i.a)(this.props.className, Ce.a.container)
 					}, this.props.user && this.props.user.accountIcon ? n.a.createElement("img", {
-						className: ge.a.picture,
+						className: Ce.a.picture,
 						src: this.props.user.accountIcon
 					}) : n.a.createElement("div", {
-						className: ge.a.picture
+						className: Ce.a.picture
 					}), n.a.createElement("div", {
-						className: ge.a.content
+						className: Ce.a.content
 					}, e ? n.a.createElement("div", {
-						className: ge.a.usernameLoading
+						className: Ce.a.usernameLoading
 					}, S.fbt._("Loading...", null, {
 						hk: "259Say"
 					})) : n.a.createElement("div", {
-						className: ge.a.username
+						className: Ce.a.username
 					}, this.props.user && this.props.user.username ? this.props.user && this.props.user.username : ""), this.props.tipsProportions && !e && this.props.user && this.props.user.username && function(e, t) {
 						if (e.tipsProportions) {
 							let s;
-							if (e.tipsProportions.community ? s = Pe(e.subreddit, e.tipsProportions) : e.tipsProportions.creator && (s = ve(t, e.tipsProportions)), s) return n.a.createElement("div", {
-								className: ge.a.msgWrapper,
-								title: [ve(t, e.tipsProportions, !0), Pe(e.subreddit, e.tipsProportions, !0), Ee(e.tipsProportions)].filter(Boolean).join(", ")
+							if (e.tipsProportions.community ? s = ge(e.subreddit, e.tipsProportions) : e.tipsProportions.creator && (s = Ee(t, e.tipsProportions)), s) return n.a.createElement("div", {
+								className: Ce.a.msgWrapper,
+								title: [Ee(t, e.tipsProportions, !0), ge(e.subreddit, e.tipsProportions, !0), Pe(e.tipsProportions)].filter(Boolean).join(", ")
 							}, n.a.createElement("div", {
-								className: ge.a.msg
-							}, s), n.a.createElement(le.a, {
-								className: ge.a.infoIcon
+								className: Ce.a.msg
+							}, s), n.a.createElement(de.a, {
+								className: Ce.a.infoIcon
 							}))
 						}
 					}(this.props, this.props.user.username)))
 				}
 			}
-			const xe = Object(c.c)({
-				language: e => e.user.language,
+			const Ne = Object(c.c)({
 				tipsProportions: (e, t) => {
 					if (t.subreddit) return Object(x.z)(e, {
 						contentId: t.contentId,
@@ -505,13 +503,13 @@
 					})
 				}
 			});
-			var _e, Se = Object(r.b)(xe)(Ne),
-				fe = s("./src/reddit/components/Economics/Support/PaymentTooltip/index.m.less"),
-				Te = s.n(fe);
+			var xe, _e = Object(r.b)(Ne)(ve),
+				Se = s("./src/reddit/components/Economics/Support/PaymentTooltip/index.m.less"),
+				fe = s.n(Se);
 			! function(e) {
 				e[e.Above = 0] = "Above", e[e.Below = 1] = "Below", e[e.Modal = 2] = "Modal"
-			}(_e || (_e = {}));
-			const Ie = [{
+			}(xe || (xe = {}));
+			const Te = [{
 					key: "container",
 					style: {
 						marginBottom: Object(o.spring)(0),
@@ -520,7 +518,7 @@
 					}
 				}],
 				Oe = ["300", "500", "1000"];
-			class je extends n.a.Component {
+			class Ie extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleChangeAnonymous = () => this.setState(e => ({
 						anonymous: !e.anonymous
@@ -569,53 +567,53 @@
 					return n.a.createElement(C.a, {
 						stripeInstance: this.state.stripeInstance
 					}, n.a.createElement("div", {
-						className: Object(i.a)(Te.a.container, this.props.className),
+						className: Object(i.a)(fe.a.container, this.props.className),
 						style: this.props.style
-					}, this.tipTargetIsUser() && n.a.createElement(Se, {
-						className: Te.a.userDisplay,
+					}, this.tipTargetIsUser() && n.a.createElement(_e, {
+						className: fe.a.userDisplay,
 						contentId: this.props.content.id,
 						subreddit: this.props.subreddit,
 						user: this.props.user
-					}), this.props.content.type === N.a.Subreddit && n.a.createElement(be, {
+					}), this.props.content.type === N.a.Subreddit && n.a.createElement(ye, {
 						subredditId: this.props.subredditId
 					}), n.a.createElement(h.a, {
 						small: !0,
 						amounts: Oe,
-						className: Te.a.amount,
+						className: fe.a.amount,
 						currentlySelected: this.state.amount,
 						onUpdateAmount: this.handleChangeTipAmount
-					}), this.tipTargetIsUser() && n.a.createElement(W, {
-						className: Te.a.message,
+					}), this.tipTargetIsUser() && n.a.createElement(U, {
+						className: fe.a.message,
 						message: this.state.message,
 						onChange: this.handleChangeMessage
-					}), n.a.createElement(j, {
+					}), n.a.createElement(I, {
 						anonymous: this.state.anonymous,
-						className: Object(i.a)(Te.a.anonymous, {
-							[Te.a.anonymousMargin]: this.props.content.type === N.a.Subreddit
+						className: Object(i.a)(fe.a.anonymous, {
+							[fe.a.anonymousMargin]: this.props.content.type === N.a.Subreddit
 						}),
 						contentType: this.props.content.type,
 						onToggle: this.handleChangeAnonymous
-					}), !!this.props.savedPayments.length && !!this.state.selectedPayment && n.a.createElement(re, {
-						className: Te.a.paymentSelector,
+					}), !!this.props.savedPayments.length && !!this.state.selectedPayment && n.a.createElement(oe, {
+						className: fe.a.paymentSelector,
 						selectedPayment: this.state.selectedPayment,
 						onSelectPayment: this.handleChangePayment
-					}), this.props.savedPaymentsState === x.a.Fetching && n.a.createElement(me, {
-						className: Te.a.paymentSelector
-					}), !!this.state.selectedPayment && this.state.selectedPayment.type === N.b.NewStripe && (this.state.stripeInstance ? n.a.createElement(q, {
+					}), this.props.savedPaymentsState === x.a.Fetching && n.a.createElement(ie, {
+						className: fe.a.paymentSelector
+					}), !!this.state.selectedPayment && this.state.selectedPayment.type === N.b.NewStripe && (this.state.stripeInstance ? n.a.createElement(R, {
 						card: this.state.selectedPayment,
-						className: Te.a.newCard,
+						className: fe.a.newCard,
 						isLoggedIn: this.props.isLoggedIn,
 						onChange: this.handleChangePayment
-					}) : n.a.createElement(Z, {
-						className: Te.a.newCard
+					}) : n.a.createElement(B, {
+						className: fe.a.newCard
 					})), this.state.submissionError && n.a.createElement("div", {
-						className: Te.a.error
+						className: fe.a.error
 					}, n.a.createElement(v.a, {
-						className: Te.a.errorIcon
+						className: fe.a.errorIcon
 					}), Object(P.a)(this.state.submissionError)), n.a.createElement(b.a, {
 						amount: this.state.amount,
 						anonymous: this.state.anonymous,
-						className: Te.a.submit,
+						className: fe.a.submit,
 						content: this.props.content,
 						fallbackTargetName: this.props.targetName,
 						message: this.state.message,
@@ -627,40 +625,40 @@
 						onChangeSubmitState: this.handleSubmitStateChange
 					}), n.a.createElement(y.a, {
 						anonymous: this.state.anonymous,
-						className: Te.a.legal,
+						className: fe.a.legal,
 						contentType: this.props.content.type
 					}), n.a.createElement(E.a, {
-						className: Te.a.close,
+						className: fe.a.close,
 						onClick: () => this.props.onClose()
 					}), n.a.createElement(o.TransitionMotion, {
 						defaultStyles: [],
-						styles: this.state.submitting ? Ie : [],
+						styles: this.state.submitting ? Te : [],
 						willEnter: this.coinAnimationWillEnter,
 						willLeave: this.coinAnimationWillLeave
 					}, e => n.a.createElement(a.Fragment, null, e.map(e => n.a.createElement("div", {
-						className: Te.a.submitCover,
+						className: fe.a.submitCover,
 						key: e.key,
 						style: {
 							opacity: e.style.opacity
 						}
 					}, n.a.createElement("div", {
-						className: Te.a.coinWrapper,
+						className: fe.a.coinWrapper,
 						style: {
 							marginBottom: e.style.marginBottom,
 							transform: "scale(".concat(e.style.scale, ")")
 						}
-					}, n.a.createElement(A, {
-						className: Te.a.coin,
+					}, n.a.createElement(H, {
+						className: fe.a.coin,
 						value: this.state.amount.value
-					})))))), this.props.position !== _e.Modal && n.a.createElement("div", {
-						className: Object(i.a)(Te.a.arrow, {
-							[Te.a.arrowBelow]: this.props.position === _e.Above,
-							[Te.a.arrowAbove]: this.props.position === _e.Below
+					})))))), this.props.position !== xe.Modal && n.a.createElement("div", {
+						className: Object(i.a)(fe.a.arrow, {
+							[fe.a.arrowBelow]: this.props.position === xe.Above,
+							[fe.a.arrowAbove]: this.props.position === xe.Below
 						})
 					})))
 				}
 			}
-			const we = Object(c.c)({
+			const je = Object(c.c)({
 				savedPayments: x.u,
 				savedPaymentsState: x.v,
 				accountId: e => e.user.account && e.user.account.id || "",
@@ -681,7 +679,7 @@
 					})
 				}
 			});
-			t.b = Object(r.b)(we, (e, t) => {
+			t.b = Object(r.b)(je, (e, t) => {
 				let {
 					content: s,
 					targetName: a,
@@ -707,7 +705,7 @@
 				onPaymentComplete: (s, a) => {
 					t.onPaymentComplete(s, a, e.accountId, e.accountUsername)
 				}
-			}))(je)
+			}))(Ie)
 		},
 		"./src/reddit/icons/svgs/Nsfw/index.tsx": function(e, t, s) {
 			"use strict";
@@ -726,4 +724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.74a46aa3b2713a41dd22.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221.9453abf3e28fa9cf13cb.js.map

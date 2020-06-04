@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.2235ddc44ddaa9d957cd.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.544ff58ed06eaa2dcbb9.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -457,8 +457,7 @@
 					}))))
 				})),
 				y = r("./node_modules/fbt/lib/FbtPublic.js"),
-				O = r("./src/reddit/selectors/user.ts"),
-				k = function(e) {
+				O = function(e) {
 					return a.a.createElement("svg", {
 						className: e.className,
 						viewBox: "0 0 32 29",
@@ -508,7 +507,7 @@
 						stroke: "#1A1A1B"
 					}))
 				},
-				T = function(e) {
+				k = function(e) {
 					return a.a.createElement("svg", {
 						className: e.className,
 						viewBox: "0 0 27 32",
@@ -602,50 +601,49 @@
 						fill: "#5E75C6"
 					}))
 				},
-				N = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Upsell/index.m.less"),
-				P = r.n(N);
-			const C = Object(u.c)({
-				tokenName: f.p,
-				language: O.Q
+				T = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Upsell/index.m.less"),
+				N = r.n(T);
+			const P = Object(u.c)({
+				tokenName: f.p
 			});
-			var _ = Object(s.b)(C)((function(e) {
+			var C = Object(s.b)(P)((function(e) {
 					const {
 						className: t,
 						subredditName: r,
 						tokenName: n
 					} = e;
 					return a.a.createElement("div", {
-						className: Object(c.a)(P.a.container, t)
+						className: Object(c.a)(N.a.container, t)
 					}, a.a.createElement("div", {
-						className: P.a.section
+						className: N.a.section
 					}, a.a.createElement("div", {
-						className: P.a.image
-					}, a.a.createElement(k, {
-						className: P.a.bannerImage
+						className: N.a.image
+					}, a.a.createElement(O, {
+						className: N.a.bannerImage
 					})), a.a.createElement("div", {
-						className: P.a.textSection
+						className: N.a.textSection
 					}, a.a.createElement("div", {
-						className: P.a.title
+						className: N.a.title
 					}, y.fbt._("Buy r/{subredditName}'s Top Banner with {tokenName}", [y.fbt._param("subredditName", r), y.fbt._param("tokenName", n)], {
 						hk: "1v5pFU"
 					})), a.a.createElement("div", {
-						className: P.a.text
+						className: N.a.text
 					}, y.fbt._("Set the image to whatever you want", null, {
 						hk: "saxQd"
 					})))), a.a.createElement("div", {
-						className: P.a.section
+						className: N.a.section
 					}, a.a.createElement("div", {
-						className: P.a.image
-					}, a.a.createElement(T, {
-						className: P.a.taxImage
+						className: N.a.image
+					}, a.a.createElement(k, {
+						className: N.a.taxImage
 					})), a.a.createElement("div", {
-						className: P.a.textSection
+						className: N.a.textSection
 					}, a.a.createElement("div", {
-						className: P.a.title
+						className: N.a.title
 					}, y.fbt._("Hamburger Tax", null, {
 						hk: "3eNLF3"
 					})), a.a.createElement("ul", {
-						className: P.a.text
+						className: N.a.text
 					}, a.a.createElement("li", null, y.fbt._("The owner sets the price for the banner", null, {
 						hk: "19Rdj7"
 					})), a.a.createElement("li", null, y.fbt._("They pay a daily tax rate of 1% by burning {tokenName}", [y.fbt._param("tokenName", n)], {
@@ -658,32 +656,32 @@
 						hk: "4bvKhT"
 					}))))))
 				})),
-				B = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/index.m.less"),
-				H = r.n(B);
+				_ = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/index.m.less"),
+				B = r.n(_);
 			const {
-				fbt: M
+				fbt: H
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const A = Object(u.c)({
+			const M = Object(u.c)({
 					subreddit: i.q
 				}),
-				L = Object(s.b)(A),
-				S = Object(i.t)();
-			t.default = Object(l.a)("spHarberger", Object(o.a)(S(L((function(e) {
+				A = Object(s.b)(M),
+				L = Object(i.t)();
+			t.default = Object(l.a)("spHarberger", Object(o.a)(L(A((function(e) {
 				const {
 					className: t,
 					subreddit: r
 				} = e;
 				return r ? a.a.createElement("div", {
-					className: Object(c.a)(H.a.container, t)
+					className: Object(c.a)(B.a.container, t)
 				}, a.a.createElement(d.a, {
-					className: H.a.title
-				}, M._("Buy Banner", null, {
+					className: B.a.title
+				}, H._("Buy Banner", null, {
 					hk: "3Mp8CG"
-				})), a.a.createElement(_, {
+				})), a.a.createElement(C, {
 					subredditId: r.id,
 					subredditName: r.name
 				}), a.a.createElement(j, {
-					className: H.a.controls,
+					className: B.a.controls,
 					subredditId: r.id
 				})) : null
 			})))))
@@ -1065,4 +1063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxPurchaseModal.2235ddc44ddaa9d957cd.js.map
+//# sourceMappingURL=HarbergerTaxPurchaseModal.544ff58ed06eaa2dcbb9.js.map

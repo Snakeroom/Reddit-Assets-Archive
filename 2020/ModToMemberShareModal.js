@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.f5df67bfec8443dd7cca.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.2c5bafb0d46a37e24c7a.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -58,23 +58,21 @@
 				p = s("./src/reddit/helpers/overlay/index.ts"),
 				b = s("./src/reddit/selectors/posts.ts"),
 				h = s("./src/reddit/selectors/subreddit.ts"),
-				_ = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/components/MiniPost/index.m.less"),
-				f = s.n(x);
-			const C = Object(a.a)(e => e, b.O, b.d, _.Q, (e, t, s, n) => {
+				_ = s("./src/reddit/components/MiniPost/index.m.less"),
+				x = s.n(_);
+			const f = Object(a.a)(e => e, b.O, b.d, (e, t, s) => {
 					return {
 						crosspost: s,
-						language: n,
 						post: t,
 						subredditOrProfile: Object(h.K)(e, {
 							identifier: t.belongsTo
 						})
 					}
 				}),
-				g = Object(i.b)(C, (e, t) => ({
+				C = Object(i.b)(f, (e, t) => ({
 					openLightbox: t => e(Object(p.a)(t.permalink))
 				}));
-			class k extends o.a.PureComponent {
+			class g extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClickContainer = () => {
 						const {
@@ -108,48 +106,48 @@
 						crowdControlPreview: a
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Object(d.a)(f.a.container, e, a ? f.a.crowdControlPreview : null),
+						className: Object(d.a)(x.a.container, e, a ? x.a.crowdControlPreview : null),
 						onClick: this.onClickContainer
 					}, o.a.createElement("div", {
-						className: f.a.thumbnailContainer,
+						className: x.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
 					}, o.a.createElement(u.a, {
 						post: t
 					})), o.a.createElement("div", {
-						className: f.a.postDetails
+						className: x.a.postDetails
 					}, o.a.createElement("p", {
-						className: f.a.title,
+						className: x.a.title,
 						title: t.title
 					}, t.title), o.a.createElement("div", {
-						className: Object(d.a)(f.a.subAndMeta, {
-							[f.a.isSingleLine]: i
+						className: Object(d.a)(x.a.subAndMeta, {
+							[x.a.isSingleLine]: i
 						})
 					}, s && r && r.displayText && o.a.createElement(l.a, {
-						className: f.a.SubredditLink,
+						className: x.a.SubredditLink,
 						to: r.url,
 						onClick: this.onClickSubreddit
 					}, r.displayText), i && o.a.createElement("div", {
-						className: f.a.separator
+						className: x.a.separator
 					}), !a && o.a.createElement("div", null, o.a.createElement("span", {
-						className: f.a.meta
+						className: x.a.meta
 					}, n.fbt._({
 						"*": "{number} points",
 						_1: "1 point"
 					}, [n.fbt._plural(t.score, "number", Object(c.b)(t.score))], {
 						hk: "1Jm6il"
 					})), o.a.createElement("span", {
-						className: f.a.meta
+						className: x.a.meta
 					}, n.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [n.fbt._plural(t.numComments, "number", Object(c.b)(t.numComments))], {
 						hk: "2jjoyt"
 					})), o.a.createElement("span", {
-						className: f.a.meta
-					}, Object(m.d)(this.props.language, t.created / 1e3, !0, !0))))))
+						className: x.a.meta
+					}, Object(m.a)(t.created / 1e3, !0))))))
 				}
 			}
-			t.a = g(k)
+			t.a = C(g)
 		},
 		"./src/reddit/components/ModToMemberShareModal/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -431,4 +429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.f5df67bfec8443dd7cca.js.map
+//# sourceMappingURL=ModToMemberShareModal.2c5bafb0d46a37e24c7a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.8744daae3b7c1578a98e.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6d9bd1626d20bcf7683d.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1734,7 +1734,7 @@
 						},
 						target: "_blank",
 						rel: "nofollow noopener"
-					}, Object(u.f)(h.created / 1e3), n.a.createElement(j.c, {
+					}, Object(u.d)(h.created / 1e3), n.a.createElement(j.c, {
 						caretOnTop: s,
 						tooltipId: t,
 						text: Object(l.a)(h.created)
@@ -1933,7 +1933,7 @@
 				}, [o.fbt._plural(e, "number")], {
 					hk: "3S0yx6"
 				}),
-				c = (e, t) => t.bannedBy && "string" == typeof t.bannedBy && t.bannedAtUTC ? o.fbt._("Removed as spam by {username} at {time}", [o.fbt._param("username", t.bannedBy), o.fbt._param("time", Object(n.a)(t.bannedAtUTC))], {
+				c = e => e.bannedBy && "string" == typeof e.bannedBy && e.bannedAtUTC ? o.fbt._("Removed as spam by {username} at {time}", [o.fbt._param("username", e.bannedBy), o.fbt._param("time", Object(n.a)(e.bannedAtUTC))], {
 					hk: "2uutjk"
 				}) : o.fbt._("Removed as spam", null, {
 					hk: "1hD9G0"
@@ -2150,4 +2150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.8744daae3b7c1578a98e.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6d9bd1626d20bcf7683d.js.map

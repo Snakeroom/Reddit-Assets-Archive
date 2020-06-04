@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.6b5a5ecc734280b254af.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8d95bdb81918041e0db7.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -1726,9 +1726,9 @@
 		"./src/reddit/components/Wiki/common/RevisionInfo/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return N
+				return _
 			})), i.d(t, "a", (function() {
-				return E
+				return N
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/lodash/noop.js"),
@@ -1742,19 +1742,17 @@
 				m = i("./src/reddit/components/AuthorLink/index.tsx"),
 				u = i("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
 				h = i("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				p = i("./src/reddit/contexts/Language.tsx"),
-				b = i("./src/reddit/helpers/graphql/helpers.ts"),
-				k = i("./src/reddit/models/Post/index.ts"),
-				g = i("./src/reddit/components/Wiki/common/RevisionInfo/index.m.less"),
-				f = i.n(g);
+				p = i("./src/reddit/helpers/graphql/helpers.ts"),
+				b = i("./src/reddit/models/Post/index.ts"),
+				k = i("./src/reddit/components/Wiki/common/RevisionInfo/index.m.less"),
+				g = i.n(k);
 			const {
-				fbt: x
-			} = i("./node_modules/fbt/lib/FbtPublic.js"), v = ["center", "top"], w = ["center", "bottom"], _ = Object(r.a)(h.b), N = function(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "en";
-				const i = new Date(Object(b.d)(e.revisedAt));
-				return Object(l.d)(t, i.valueOf() / 1e3)
+				fbt: f
+			} = i("./node_modules/fbt/lib/FbtPublic.js"), x = ["center", "top"], v = ["center", "bottom"], w = Object(r.a)(h.b), _ = e => {
+				const t = new Date(Object(p.d)(e.revisedAt));
+				return Object(l.d)(t.valueOf() / 1e3)
 			};
-			class E extends o.a.Component {
+			class N extends o.a.Component {
 				constructor(e) {
 					super(e), this.tooltipTargetElement = null, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onShowTooltip = () => {
 						this.setState({
@@ -1777,32 +1775,32 @@
 						showTimeAgo: a = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, l = i.authorInfo && i.authorInfo.name || d.y, h = new Date(Object(b.d)(i.revisedAt)), g = o.a.createElement(u.a, {
+					} = this.state, l = i.authorInfo && i.authorInfo.name || d.y, h = new Date(Object(p.d)(i.revisedAt)), k = o.a.createElement(u.a, {
 						tooltipId: "wikipage-revision-author",
 						user: l,
 						sendHoverCardEvent: s.a
 					}, o.a.createElement(m.a, {
-						className: f.a.authorLink,
+						className: g.a.authorLink,
 						author: l,
-						isAuthorDeleted: Object(k.h)(l),
+						isAuthorDeleted: Object(b.h)(l),
 						isUnstyled: !0
 					}, l));
 					return o.a.createElement("span", {
-						className: Object(c.a)(e, f.a.container)
-					}, t ? x._("Last revised by {username}", [x._param("username", g)], {
+						className: Object(c.a)(e, g.a.container)
+					}, t ? f._("Last revised by {username}", [f._param("username", k)], {
 						hk: "jNOhx"
-					}) : x._("Revised by {username}", [x._param("username", g)], {
+					}) : f._("Revised by {username}", [f._param("username", k)], {
 						hk: "2Q35rs"
 					}), a && o.a.createElement("span", {
 						ref: this.setTooltipTargetRef,
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
-					}, " - ", o.a.createElement(p.a.Consumer, null, e => N(i, e)), o.a.createElement(_, {
+					}, " - ", _(i), o.a.createElement(w, {
 						text: h.toString(),
 						isOpen: r,
 						tooltipTarget: this.tooltipTargetElement,
-						targetPosition: v,
-						tooltipPosition: w
+						targetPosition: x,
+						tooltipPosition: v
 					})), n && i.reason && o.a.createElement("span", null, " - ", i.reason))
 				}
 			}
@@ -1920,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.6b5a5ecc734280b254af.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8d95bdb81918041e0db7.js.map

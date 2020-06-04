@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.12b7f5ad79c0ff9daa21.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.bd96d53b041732387f85.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, n) {
@@ -77,8 +77,8 @@
 				b = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				f = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				x = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
-				g = n.n(x),
-				v = n("./node_modules/fbt/lib/FbtPublic.js");
+				v = n.n(x),
+				g = n("./node_modules/fbt/lib/FbtPublic.js");
 			const E = 2,
 				C = 20;
 			var N;
@@ -125,11 +125,11 @@
 				render() {
 					const e = this.usernameValidity(this.state.username);
 					return i.a.createElement("div", {
-						className: Object(d.a)(g.a.container, this.props.className)
+						className: Object(d.a)(v.a.container, this.props.className)
 					}, i.a.createElement(m.c, {
 						redditStyle: !0,
-						className: g.a.input,
-						label: v.fbt._("username", null, {
+						className: v.a.input,
+						label: g.fbt._("username", null, {
 							hk: "2f1L4u"
 						}),
 						max: C,
@@ -144,50 +144,50 @@
 						switch (e) {
 							case N.Error:
 								return i.a.createElement(b.a, {
-									className: g.a.icon,
+									className: v.a.icon,
 									style: {
 										fill: u.a.notice
 									}
 								});
 							case N.Invalid:
 								return i.a.createElement(f.a, {
-									className: g.a.icon,
+									className: v.a.icon,
 									style: {
 										fill: u.a.warning
 									}
 								});
 							case N.Searching:
 								return i.a.createElement("div", {
-									className: g.a.loadingIcon
+									className: v.a.loadingIcon
 								}, i.a.createElement(p.a, {
 									sizePx: 8
 								}));
 							case N.Valid:
 								return i.a.createElement(h.a, {
-									className: g.a.icon
+									className: v.a.icon
 								});
 							default:
 								return null
 						}
 					}(e), i.a.createElement("div", {
-						className: g.a.message,
+						className: v.a.message,
 						style: {
 							color: w(e)
 						}
-					}, function(e, t) {
-						switch (t) {
+					}, function(e) {
+						switch (e) {
 							case N.Error:
-								return v.fbt._("Could not check that username. Are you sure it's correct?", null, {
+								return g.fbt._("Could not check that username. Are you sure it's correct?", null, {
 									hk: "1sNHpI"
 								});
 							case N.Invalid:
-								return v.fbt._("Cannot find this username.", null, {
+								return g.fbt._("Cannot find this username.", null, {
 									hk: "Imvaj"
 								});
 							default:
 								return ""
 						}
-					}(this.props.language, e)))
+					}(e)))
 				}
 			}
 
@@ -200,7 +200,6 @@
 				}
 			}
 			const I = Object(c.c)({
-				language: e => e.user.language,
 				usernameAvailability: e => e.users.nameAvailable
 			});
 			t.a = Object(o.b)(I, e => ({
@@ -247,23 +246,23 @@
 				b = n("./src/higherOrderComponents/asModal/index.tsx"),
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/layout/row/Inline/index.tsx"),
-				g = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = n.n(g);
+				v = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				g = n.n(v);
 			var E = Object(b.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return d.a.createElement("div", {
-						className: v.a.wrapper
+						className: g.a.wrapper
 					}, d.a.createElement(x.a, {
-						className: v.a.titleRow
+						className: g.a.titleRow
 					}, n), d.a.createElement("div", {
-						className: v.a.detailsContainer
+						className: g.a.detailsContainer
 					}, t), d.a.createElement(x.a, {
-						className: v.a.buttonRow
+						className: g.a.buttonRow
 					}, d.a.createElement(f.f, {
-						className: v.a.confirmButton,
+						className: g.a.confirmButton,
 						onClick: e.onConfirmed
 					}, r.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -459,16 +458,16 @@
 						})
 					}, e.label), e.children)
 				},
-				g = e => s.a.createElement("div", {
+				v = e => s.a.createElement("div", {
 					className: Object(a.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", s.a.createElement(c.a, {
 					className: u.a.plus
 				}));
-			var v;
+			var g;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(v || (v = {}));
+			}(g || (g = {}));
 			class E extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -476,7 +475,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: v.ADD
+							action: g.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -485,7 +484,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: v.REMOVE,
+							action: g.REMOVE,
 							value: n,
 							index: e
 						})
@@ -546,10 +545,10 @@
 					const c = !(!!r && n.length >= r) && !o;
 					return s.a.createElement("div", {
 						className: Object(a.a)(u.a.multiInputWrapper, e)
-					}, t && c && s.a.createElement(g, {
+					}, t && c && s.a.createElement(v, {
 						onClick: this.addValue,
 						text: i
-					}), this.renderFields(), !t && c && s.a.createElement(g, {
+					}), this.renderFields(), !t && c && s.a.createElement(v, {
 						onClick: this.addValue,
 						text: i
 					}))
@@ -718,9 +717,9 @@
 			})), n.d(t, "i", (function() {
 				return x
 			})), n.d(t, "j", (function() {
-				return g
-			})), n.d(t, "p", (function() {
 				return v
+			})), n.d(t, "p", (function() {
+				return g
 			})), n.d(t, "q", (function() {
 				return E
 			})), n.d(t, "o", (function() {
@@ -800,11 +799,11 @@
 				x = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				g = (e, t) => {
+				v = (e, t) => {
 					const n = Object(r.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || c
 				},
-				v = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				g = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				E = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				C = (e, t) => {
 					const n = _(e, t);
@@ -860,4 +859,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.12b7f5ad79c0ff9daa21.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal~MembershipPaywallPage.bd96d53b041732387f85.js.map

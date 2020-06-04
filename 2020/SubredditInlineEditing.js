@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.40b74e2b9d76fbd089c5.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.378a6572de6a5dc04dc7.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -135,7 +135,7 @@
 		"./src/reddit/components/CommunityTopics/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return T
+				return x
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -149,10 +149,9 @@
 				u = s("./src/reddit/models/Tags/index.ts"),
 				m = s("./src/reddit/models/Toast/index.ts"),
 				b = s("./src/reddit/selectors/tags.ts"),
-				h = s("./src/reddit/selectors/user.ts"),
-				g = s("./src/reddit/components/CommunityTopics/index.m.less"),
-				O = s.n(g);
-			const x = Object(r.c)({
+				h = s("./src/reddit/components/CommunityTopics/index.m.less"),
+				g = s.n(h);
+			const O = Object(r.c)({
 				availableSubredditTags: (e, t) => {
 					let {
 						subredditId: s
@@ -193,10 +192,9 @@
 					return Object(b.l)(e, {
 						subredditId: s
 					})
-				},
-				language: e => Object(h.Q)(e)
+				}
 			});
-			class T extends i.a.Component {
+			class x extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionsChanged = e => {
 						const t = e.filter(e => e.selected),
@@ -225,7 +223,7 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: O.a.communityTopicsContainer
+						className: g.a.communityTopicsContainer
 					}, i.a.createElement(l.a, {
 						readOnlyMode: this.props.readOnlyMode,
 						addText: n.fbt._("Add", null, {
@@ -254,7 +252,7 @@
 					}, this.props.children))
 				}
 			}
-			t.b = Object(d.b)(x, (e, t) => {
+			t.b = Object(d.b)(O, (e, t) => {
 				let {
 					subredditId: s,
 					context: o
@@ -300,7 +298,7 @@
 						})))
 					})
 				}
-			})(T)
+			})(x)
 		},
 		"./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -461,8 +459,8 @@
 				}
 			}
 			var J = q(X),
-				Q = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
-				Y = s.n(Q);
+				Y = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
+				Q = s.n(Y);
 			const {
 				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 4, $ = Object(d.c)({
@@ -493,8 +491,8 @@
 					}
 				}
 			}), te = {
-				optionsListDropdownClassName: Y.a.optionsListDropdown,
-				searchBarClassName: Y.a.searchBar
+				optionsListDropdownClassName: Q.a.optionsListDropdown,
+				searchBarClassName: Q.a.searchBar
 			};
 			class se extends o.a.Component {
 				constructor(e) {
@@ -536,18 +534,18 @@
 						subredditId: e
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Y.a.controlRow
+						className: Q.a.controlRow
 					}, o.a.createElement("span", {
-						className: Y.a.numSelected
+						className: Q.a.numSelected
 					}, o.a.createElement(u.a, {
 						subredditId: e
 					})), o.a.createElement("span", {
-						className: Y.a.cancel,
+						className: Q.a.cancel,
 						onClick: this.onCancel
 					}, Z._("Cancel", null, {
 						hk: "3OZmBh"
 					})), o.a.createElement("span", {
-						className: Y.a.save,
+						className: Q.a.save,
 						onClick: this.onSave
 					}, Z._("Save", null, {
 						hk: "1JNPXe"
@@ -560,7 +558,7 @@
 					} = this.props;
 					return t || e ? o.a.createElement("div", {
 						tabIndex: -1,
-						className: Y.a.emptyStateContainer,
+						className: Q.a.emptyStateContainer,
 						onFocus: this.onFocus,
 						onClick: this.onFocus
 					}, o.a.createElement(j, null)) : null
@@ -579,7 +577,7 @@
 						selectedPrimaryTag: e
 					} = this.props;
 					return o.a.createElement(o.a.Fragment, null, !e && o.a.createElement("span", {
-						className: Y.a.newBadge
+						className: Q.a.newBadge
 					}, Z._("New", null, {
 						hk: "3LXNw5"
 					})), Z._("Community topics", null, {
@@ -602,8 +600,8 @@
 						isEditing: t
 					} = this.state;
 					return o.a.createElement("div", {
-						className: Object(r.a)(Y.a.inlineTopicsContainer, {
-							[Y.a.inlineTopicsContainerEditing]: t
+						className: Object(r.a)(Q.a.inlineTopicsContainer, {
+							[Q.a.inlineTopicsContainerEditing]: t
 						}),
 						tabIndex: -1,
 						ref: this.topicsEditorContainer,
@@ -618,21 +616,21 @@
 						readOnlyMode: t ? _.a.editable : _.a.focusableReadOnly,
 						maxTopicsToDisplay: t ? void 0 : z
 					}, !t && o.a.createElement(F.a, {
-						className: Y.a.pencil
+						className: Q.a.pencil
 					}), this.renderFocusGrabber()), t && this.renderControlRow())
 				}
 				renderSubtext() {
 					return o.a.createElement("div", {
-						className: Y.a.titleSubtext
+						className: Q.a.titleSubtext
 					}, o.a.createElement(k.a, {
-						className: Y.a.modIcon
+						className: Q.a.modIcon
 					}), Z._("Only visible to mods", null, {
 						hk: "3DMuXs"
 					}))
 				}
 				renderPlaceholder() {
 					return o.a.createElement("div", {
-						className: Y.a.container
+						className: Q.a.container
 					}, o.a.createElement(h.a, null))
 				}
 				render() {
@@ -643,21 +641,21 @@
 						unsavedChangesModalIsOpen: n
 					} = this.props;
 					return t ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: Y.a.container
+						className: Q.a.container
 					}, o.a.createElement("div", {
-						className: Y.a.title
+						className: Q.a.title
 					}, this.renderTitle(), this.renderSubtext()), o.a.createElement(m.b, {
 						subredditId: s,
 						shouldShowTooltip: !0
 					}), this.shouldRenderSecondaryTagEmptyState() ? this.renderEmptyState() : this.renderTopicsEditor(), o.a.createElement(b.a, {
 						context: e,
-						className: Object(r.a)(Y.a.relatedTopicsContainer, {
-							[Y.a.relatedTopicsContainerEmptyState]: this.shouldRenderSecondaryTagEmptyState()
+						className: Object(r.a)(Q.a.relatedTopicsContainer, {
+							[Q.a.relatedTopicsContainerEmptyState]: this.shouldRenderSecondaryTagEmptyState()
 						}),
 						subredditId: s,
 						onOptionSelected: this.onSuggestedOptionSelected
 					}, o.a.createElement("div", {
-						className: Y.a.relatedTopicsCopy
+						className: Q.a.relatedTopicsCopy
 					}, Z._("Related topics", null, {
 						hk: "2Hw7ep"
 					})))), n && o.a.createElement(v.b, {
@@ -689,4 +687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditInlineEditing.40b74e2b9d76fbd089c5.js.map
+//# sourceMappingURL=SubredditInlineEditing.378a6572de6a5dc04dc7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.d6689d3716074c59f1f4.js
-// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.75acd3ccba42e67c3f1d.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -42,9 +42,9 @@
 				m = s("./src/lib/loadWithRetries/index.ts"),
 				b = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				p = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				g = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				_ = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				x = s("./src/reddit/selectors/structuredStyles.ts"),
+				_ = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				x = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				g = s("./src/reddit/selectors/structuredStyles.ts"),
 				f = s("./src/reddit/selectors/userPrefs.ts"),
 				h = s("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
 				E = s.n(h),
@@ -59,7 +59,7 @@
 				};
 			const {
 				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = u.a.div("BladeContainer", E.a), y = u.a.wrapped(g.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), j = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), L = u.a.wrapped(p.a, "ThemedChevron", E.a), T = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = u.a.div("BladeContainer", E.a), y = u.a.wrapped(_.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), j = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), L = u.a.wrapped(p.a, "ThemedChevron", E.a), T = e => {
 				var t = S(e, []);
 				return o.a.createElement(N, null, o.a.createElement(y, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, v._("Back to mod tools", null, {
 					hk: "1YCI0W"
@@ -83,9 +83,9 @@
 					isLoading: !0
 				})
 			}), B = Object(c.c)({
-				isEditing: x.j,
+				isEditing: g.j,
 				isSubscriptionsPinned: f.b,
-				moderatorPermissions: _.j
+				moderatorPermissions: x.j
 			});
 			t.a = Object(i.b)(B)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
@@ -153,11 +153,11 @@
 			})), s.d(t, "a", (function() {
 				return p
 			})), s.d(t, "g", (function() {
-				return g
-			})), s.d(t, "i", (function() {
 				return _
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "i", (function() {
 				return x
+			})), s.d(t, "e", (function() {
+				return g
 			})), s.d(t, "b", (function() {
 				return f
 			})), s.d(t, "c", (function() {
@@ -179,9 +179,9 @@
 				m = n.a.div("FormGroup", a.a),
 				b = n.a.h2("FormGroupTitle", a.a),
 				p = n.a.div("FormElement", a.a),
-				g = n.a.div("FormGroupDescription", a.a),
-				_ = n.a.div("FormItem", a.a),
-				x = n.a.h3("FormElementTitle", a.a),
+				_ = n.a.div("FormGroupDescription", a.a),
+				x = n.a.div("FormItem", a.a),
+				g = n.a.h3("FormElementTitle", a.a),
 				f = n.a.div("FormElementDescription", a.a),
 				h = n.a.div("FormElementError", a.a),
 				E = n.a.div("FormElementSubGroup", a.a),
@@ -230,8 +230,8 @@
 				b = s("./src/lib/classNames/index.ts"),
 				p = s("./src/lib/lessComponent.tsx");
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -239,7 +239,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var _ = function(e, t) {
+			var x = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -248,15 +248,15 @@
 				}
 				return s
 			};
-			const x = p.a.button("IconButton", m.a),
+			const g = p.a.button("IconButton", m.a),
 				f = p.a.wrapped(l.a, "SubscribeIcon", m.a),
 				h = p.a.wrapped(c.a, "UnsubscribeIcon", m.a),
 				E = p.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
-					} = e, n = _(e, ["border", "small"]);
-					return a.a.createElement(x, n, a.a.createElement(f, {
+					} = e, n = x(e, ["border", "small"]);
+					return a.a.createElement(g, n, a.a.createElement(f, {
 						className: Object(b.a)(n.className, {
 							[m.a.isSmall]: s
 						})
@@ -266,12 +266,12 @@
 					var {
 						border: t,
 						small: s
-					} = e, n = _(e, ["border", "small"]);
-					return t ? a.a.createElement(i.f, g({}, n, {
+					} = e, n = x(e, ["border", "small"]);
+					return t ? a.a.createElement(i.f, _({}, n, {
 						className: Object(b.a)(n.className, {
 							[m.a.isSmall]: s
 						})
-					})) : a.a.createElement(i.n, g({}, n, {
+					})) : a.a.createElement(i.n, _({}, n, {
 						className: Object(b.a)(n.className, {
 							[m.a.isSmall]: s
 						})
@@ -280,12 +280,12 @@
 				v = e => {
 					var {
 						icon: t
-					} = e, s = _(e, ["icon"]);
-					return t ? a.a.createElement(E, g({}, s, {
+					} = e, s = x(e, ["icon"]);
+					return t ? a.a.createElement(E, _({}, s, {
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
-					})) : a.a.createElement(S, g({}, s, {
+					})) : a.a.createElement(S, _({}, s, {
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
@@ -294,56 +294,54 @@
 				N = p.a.wrapped(e => {
 					var {
 						border: t,
-						language: s,
-						small: n,
-						type: r
-					} = e, i = _(e, ["border", "language", "small", "type"]);
-					return a.a.createElement(x, i, a.a.createElement(h, {
-						className: Object(b.a)(o.n, i.className, {
-							[m.a.isSmall]: n
+						small: s,
+						type: n
+					} = e, r = x(e, ["border", "small", "type"]);
+					return a.a.createElement(g, r, a.a.createElement(h, {
+						className: Object(b.a)(o.n, r.className, {
+							[m.a.isSmall]: s
 						})
 					}))
 				}, "UnsubscribeIconButton", m.a),
 				y = p.a.wrapped(e => {
 					var {
 						border: t,
-						language: s,
-						small: r,
-						type: o
-					} = e, c = _(e, ["border", "language", "small", "type"]);
-					const l = a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
+						small: s,
+						type: r
+					} = e, o = x(e, ["border", "small", "type"]);
+					const c = a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
 							className: m.a.UnsubscribeButtonDefault
-						}, "subreddit" === o ? n.fbt._("Joined", null, {
+						}, "subreddit" === r ? n.fbt._("Joined", null, {
 							hk: "1MTmIz"
 						}) : n.fbt._("Following", null, {
 							hk: "1wQlVR"
 						})), a.a.createElement("span", {
 							className: m.a.UnsubscribeButtonHover
-						}, "subreddit" === o ? n.fbt._("Leave", null, {
+						}, "subreddit" === r ? n.fbt._("Leave", null, {
 							hk: "2lLnnn"
 						}) : n.fbt._("Unfollow", null, {
 							hk: "2b5ERD"
 						}))),
-						d = Object(b.a)(c.className, {
-							[m.a.isSmall]: r
+						l = Object(b.a)(o.className, {
+							[m.a.isSmall]: s
 						});
-					return t ? a.a.createElement(i.i, g({}, c, {
-						className: d,
-						children: l
-					})) : a.a.createElement(i.n, g({}, c, {
-						className: d,
-						children: l
+					return t ? a.a.createElement(i.i, _({}, o, {
+						className: l,
+						children: c
+					})) : a.a.createElement(i.n, _({}, o, {
+						className: l,
+						children: c
 					}))
 				}, "UnsubscribeButton", m.a),
 				O = e => {
 					var {
 						icon: t
-					} = e, s = _(e, ["icon"]);
-					return t ? a.a.createElement(N, g({}, s, {
+					} = e, s = x(e, ["icon"]);
+					return t ? a.a.createElement(N, _({}, s, {
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
-					})) : a.a.createElement(y, g({}, s, {
+					})) : a.a.createElement(y, _({}, s, {
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
@@ -367,19 +365,17 @@
 						className: t,
 						icon: s = !1,
 						id: n,
-						language: r,
-						small: o = !1
-					} = this.props, i = {
+						small: r = !1
+					} = this.props, o = {
 						border: e,
 						className: t,
 						icon: s,
 						onClick: this.onClick,
-						small: o
+						small: r
 					};
-					return this.props.userIsSubscriber ? a.a.createElement(O, g({}, i, {
-						language: r,
+					return this.props.userIsSubscriber ? a.a.createElement(O, _({}, o, {
 						type: this.props.identifier.type
-					})) : a.a.createElement(v, g({}, i, {
+					})) : a.a.createElement(v, _({}, o, {
 						id: n
 					}), this.props.children, Object(d.a)({
 						type: this.props.identifier.type,
@@ -487,9 +483,9 @@
 				m = s("./src/reddit/models/DiscoveryUnit/index.ts"),
 				b = s("./node_modules/fbt/lib/FbtPublic.js"),
 				p = s("./node_modules/react-redux/es/index.js"),
-				g = s("./node_modules/reselect/es/index.js"),
-				_ = s("./src/lib/prettyPrintNumber/index.ts"),
-				x = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				_ = s("./node_modules/reselect/es/index.js"),
+				x = s("./src/lib/prettyPrintNumber/index.ts"),
+				g = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				f = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				h = s("./src/reddit/constants/posts.ts"),
 				E = s("./src/reddit/controls/InternalLink/index.tsx"),
@@ -499,7 +495,7 @@
 				y = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				j = s.n(O);
-			const C = Object(g.c)({
+			const C = Object(_.c)({
 				isLoggedIn: y.H,
 				subreddit: N.Q,
 				subredditAboutInfo: N.v
@@ -526,7 +522,7 @@
 					} = this.props;
 					return s ? r.a.createElement("div", {
 						className: Object(o.a)(j.a.Container, e)
-					}, r.a.createElement(x.b, {
+					}, r.a.createElement(g.b, {
 						className: j.a.Icon,
 						subredditOrProfile: s
 					}), r.a.createElement("div", {
@@ -542,7 +538,7 @@
 					}, b.fbt._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [b.fbt._plural(s.subscribers, "subscribers count", Object(_.b)(s.subscribers))], {
+					}, [b.fbt._plural(s.subscribers, "subscribers count", Object(x.b)(s.subscribers))], {
 						hk: "48BXj1"
 					})))), r.a.createElement(f.a, {
 						border: !1,
@@ -669,10 +665,8 @@
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/reddit/actions/subscription/index.ts"),
-				o = s("./src/reddit/selectors/subreddit.ts"),
-				i = s("./src/reddit/selectors/user.ts");
+				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				language: i.Q,
 				userIsSubscriber: o.bb
 			}), (e, t) => {
 				let {
@@ -713,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.d6689d3716074c59f1f4.js.map
+//# sourceMappingURL=Geotagging~Topic.75acd3ccba42e67c3f1d.js.map

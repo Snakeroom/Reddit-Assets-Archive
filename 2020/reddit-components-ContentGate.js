@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.d2c213cfdfe40f81686f.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.91cde304f6b600860367.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -139,7 +139,6 @@
 				fbt: N
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = p.a.div("ButtonsContainer", G.a), H = p.a.div("Container", G.a), q = p.a.div("Description", G.a), I = p.a.div("PrivateSubredditDetails", G.a), z = p.a.div("PrivateSubredditDescription", G.a), Y = p.a.h3("PrivateSubredditName", G.a), W = p.a.a("Link", G.a), K = p.a.wrapped(D.h, "LinkRouterButton", G.a), J = p.a.wrapped(D.g, "LinkButton", G.a), V = p.a.wrapped(D.k, "SecondaryLinkRouterButton", G.a), X = p.a.wrapped(D.j, "SecondaryLinkButton", G.a), Z = p.a.wrapped(K, "GoHomeLinkButton", G.a), Q = p.a.img("Image", G.a), $ = p.a.img("ImagePlaceholder", G.a), ee = p.a.wrapped(K, "LeftLinkRouterButton", G.a), te = p.a.wrapped(J, "LeftLinkButton", G.a), ne = p.a.wrapped(X, "SecondaryLeftLinkButton", G.a), ae = p.a.wrapped(V, "SecondaryLeftLinkRouterButton", G.a), re = p.a.h3("Title", G.a), oe = p.a.div("PageBody", G.a), le = p.a.div("QuarantineMessageWrapper", G.a), se = Object(i.c)({
 				isLoggedIn: M.G,
-				language: M.Q,
 				origin: U.k,
 				user: M.i
 			}), ie = Object(R.t)(), ce = Object(l.b)(se, (e, t) => {
@@ -160,43 +159,42 @@
 					contentGateType: n,
 					continueToQuarantinedSubreddit: r,
 					isLoggedIn: l,
-					language: s,
-					location: i,
-					origin: d,
-					pageLayer: p,
-					quarantineRequiresEmail: h,
-					quarantineMessage: _,
-					quarantineMessageHtml: k,
-					quarantineMessageRTJson: E,
-					setNSFWPreference: b,
-					subredditDescription: g,
-					subredditName: y,
-					user: f
-				} = e, L = () => {
-					l ? b() : Object(u.k)(), window.location.reload()
+					location: s,
+					origin: i,
+					pageLayer: d,
+					quarantineRequiresEmail: p,
+					quarantineMessage: h,
+					quarantineMessageHtml: _,
+					quarantineMessageRTJson: k,
+					setNSFWPreference: E,
+					subredditDescription: b,
+					subredditName: g,
+					user: y
+				} = e, f = () => {
+					l ? E() : Object(u.k)(), window.location.reload()
 				};
 				switch (n) {
 					case O.a.GoldSubreddit:
 						return o.a.createElement("div", null, o.a.createElement(Q, {
 							src: "".concat(a.a.assetPath, "/img/gold/premium-crest.png")
-						}), o.a.createElement(re, null, N._("r/{community name} is a Reddit Premium community", [N._param("community name", y)], {
+						}), o.a.createElement(re, null, N._("r/{community name} is a Reddit Premium community", [N._param("community name", g)], {
 							hk: "2lyDwB"
 						})), o.a.createElement(q, null, N._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
 							hk: "mIiOw"
-						})), o.a.createElement(A, null, f ? o.a.createElement(ne, {
+						})), o.a.createElement(A, null, y ? o.a.createElement(ne, {
 							href: "".concat(a.a.redditUrl, "/premium")
 						}, N._("Get Premium", null, {
 							hk: "3ChWi4"
 						})) : o.a.createElement(te, {
-							href: Object(c.a)(i, d)
+							href: Object(c.a)(s, i)
 						}, N._("Sign Up", null, {
 							hk: "rvpjy"
-						})), f ? o.a.createElement(K, {
+						})), y ? o.a.createElement(K, {
 							to: "/"
 						}, N._("Go Home", null, {
 							hk: "49p4or"
 						})) : o.a.createElement(X, {
-							href: Object(c.a)(i, d)
+							href: Object(c.a)(s, i)
 						}, N._("Log in", null, {
 							hk: "odEG4"
 						}))));
@@ -215,7 +213,7 @@
 						}, N._("No", null, {
 							hk: "3fMglW"
 						})), o.a.createElement(X, {
-							onClick: L
+							onClick: f
 						}, N._("Yes", null, {
 							hk: "2hpRkN"
 						}))));
@@ -224,19 +222,19 @@
 							src: "".concat(a.a.assetPath, "/img/content-gate-icons/private.png")
 						}), o.a.createElement(re, null, N._("You must be invited to visit this community", null, {
 							hk: "dHP8K"
-						})), g && g.length && o.a.createElement(I, null, o.a.createElement(Y, null, "r/", y), o.a.createElement(z, null, o.a.createElement("div", null, g))), o.a.createElement(q, null, N._("The moderators in this community have set it to private. You must be a moderator or approved user to visit.", null, {
+						})), b && b.length && o.a.createElement(I, null, o.a.createElement(Y, null, "r/", g), o.a.createElement(z, null, o.a.createElement("div", null, b))), o.a.createElement(q, null, N._("The moderators in this community have set it to private. You must be a moderator or approved user to visit.", null, {
 							hk: "nwL0k"
-						})), o.a.createElement(A, null, f ? o.a.createElement(ne, {
-							href: "".concat(a.a.redditUrl, "/message/compose?to=/r/").concat(y)
+						})), o.a.createElement(A, null, y ? o.a.createElement(ne, {
+							href: "".concat(a.a.redditUrl, "/message/compose?to=/r/").concat(g)
 						}, N._("Message Mods", null, {
 							hk: "vVe1i"
 						})) : o.a.createElement(ne, {
-							href: Object(c.a)(i, d)
+							href: Object(c.a)(s, i)
 						}, N._("Sign Up", null, {
 							hk: "rvpjy"
 						})), o.a.createElement(K, {
 							to: "/"
-						}, f ? N._("Go Home", null, {
+						}, y ? N._("Go Home", null, {
 							hk: "49p4or"
 						}) : N._("Explore Reddit", null, {
 							hk: "3IwwVU"
@@ -252,19 +250,19 @@
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), o.a.createElement(le, null, E ? o.a.createElement(x.a, {
-							content: E,
+						}), o.a.createElement(le, null, k ? o.a.createElement(x.a, {
+							content: k,
 							rtJsonElementProps: {
-								pageLayer: p
+								pageLayer: d
 							}
-						}) : k ? o.a.createElement(v.a, {
-							html: k
-						}) : _ || N._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
+						}) : _ ? o.a.createElement(v.a, {
+							html: _
+						}) : h || N._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
 							hk: "3kRIzE"
 						})), N._("Are you certain you want to continue?", null, {
 							hk: "1gr5Bw"
-						})), o.a.createElement(A, null, ((e, t, n, r) => {
-							return !(e && e.hasVerifiedEmail) && r ? o.a.createElement(A, null, o.a.createElement(ae, {
+						})), o.a.createElement(A, null, ((e, t, n) => {
+							return !(e && e.hasVerifiedEmail) && n ? o.a.createElement(A, null, o.a.createElement(ae, {
 								to: "/"
 							}, N._("No Thank You", null, {
 								hk: "4B26AR"
@@ -277,15 +275,15 @@
 							}, N._("No Thank You", null, {
 								hk: "4B26AR"
 							})), o.a.createElement(X, {
-								onClick: n
+								onClick: t
 							}, N._("Continue", null, {
 								hk: "4nU0mS"
 							})))
-						})(f, 0, r, h)));
+						})(y, r, p)));
 					case O.a.SubredditBanned:
 						return o.a.createElement("div", null, o.a.createElement(Q, {
 							src: "".concat(a.a.assetPath, "/img/content-gate-icons/banned.png")
-						}), o.a.createElement(re, null, N._("r/{community name} has been banned from Reddit", [N._param("community name", y)], {
+						}), o.a.createElement(re, null, N._("r/{community name} has been banned from Reddit", [N._param("community name", g)], {
 							hk: "2at9Se"
 						})), (e => o.a.createElement(q, null, e ? o.a.createElement(C, {
 							linkClassName: G.a.Link,
@@ -314,7 +312,7 @@
 							hk: "31DRpe"
 						})), o.a.createElement(q, null, N._("This community may have been banned or the community name is incorrect.", null, {
 							hk: "1lYMG2"
-						})), o.a.createElement(A, null, f && o.a.createElement(m.a, {
+						})), o.a.createElement(A, null, y && o.a.createElement(m.a, {
 							eventSource: "content_gate"
 						}), o.a.createElement(Z, {
 							to: "/"
@@ -478,4 +476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ContentGate.d2c213cfdfe40f81686f.js.map
+//# sourceMappingURL=reddit-components-ContentGate.91cde304f6b600860367.js.map

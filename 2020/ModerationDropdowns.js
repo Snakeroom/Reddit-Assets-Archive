@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1c1e777c1ce20e55234a.js
-// Retrieved at 6/4/2020, 3:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d7bf209c7da9af608aea.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -697,78 +697,76 @@
 						isOverlay: c,
 						isPostAuthor: l,
 						isProfilePage: d,
-						language: p,
-						layout: u,
-						modModeEnabled: x,
-						onApprovePost: b,
-						onDistinguishPost: h,
-						onFlairPost: C,
-						onLockPost: v,
-						onNsfwPost: _,
-						onOcPost: w,
-						onCcPost: E,
-						onRemovePost: O,
-						onModToMemberShareOpened: k,
-						onSpamPost: g,
-						onSpoilerPost: M,
-						onStickyPost: R,
-						post: j,
-						sendEvent: N,
-						tooltipId: L
-					} = e, I = j.distinguishType === i.A.MODERATOR, P = I ? i.A.NONE : i.A.MODERATOR, y = Object(m.b)(j.id, c);
+						layout: p,
+						modModeEnabled: u,
+						onApprovePost: x,
+						onDistinguishPost: b,
+						onFlairPost: h,
+						onLockPost: C,
+						onNsfwPost: v,
+						onOcPost: _,
+						onCcPost: w,
+						onRemovePost: E,
+						onModToMemberShareOpened: O,
+						onSpamPost: k,
+						onSpoilerPost: g,
+						onStickyPost: M,
+						post: R,
+						sendEvent: j,
+						tooltipId: N
+					} = e, L = R.distinguishType === i.A.MODERATOR, I = L ? i.A.NONE : i.A.MODERATOR, P = Object(m.b)(R.id, c);
 					return n.a.createElement(G, {
 						className: F.a.dropdown,
 						isOpen: r,
-						tooltipId: L
+						tooltipId: N
 					}, n.a.createElement(S, {
 						canEditFlair: t,
 						hasModFullPerms: s,
 						hasModPostPerms: o,
-						isDistinguished: I,
+						isDistinguished: L,
 						isModToMemberShareEnabled: a,
 						isOverlay: c,
 						isPostAuthor: l,
 						isProfilePage: d,
-						layout: u,
-						language: p,
-						modModeEnabled: x,
+						layout: p,
+						modModeEnabled: u,
 						onApprovePost: () => {
-							b(), N(Object(f.i)("approve", j.id))
+							x(), j(Object(f.i)("approve", R.id))
 						},
 						onRemovePost: () => {
-							O(), N(Object(f.i)("remove", j.id))
+							E(), j(Object(f.i)("remove", R.id))
 						},
 						onSpamPost: () => {
-							g(), N(Object(f.i)("spam", j.id))
+							k(), j(Object(f.i)("spam", R.id))
 						},
 						onDistinguishPost: () => {
-							h(P), N(Object(f.i)(I ? "undistinguish" : "distinguish", j.id))
+							b(I), j(Object(f.i)(L ? "undistinguish" : "distinguish", R.id))
 						},
 						onFlairPost: () => {
-							C(y), N(Object(f.i)("post_flair", j.id))
+							h(P), j(Object(f.i)("post_flair", R.id))
 						},
 						onLockPost: () => {
-							v(), N(Object(f.i)(j.isLocked ? "unlock" : "lock", j.id))
+							C(), j(Object(f.i)(R.isLocked ? "unlock" : "lock", R.id))
 						},
 						onNsfwPost: () => {
-							_(), N(Object(f.i)(j.isNSFW ? "unmark_nsfw" : "mark_nsfw", j.id))
+							v(), j(Object(f.i)(R.isNSFW ? "unmark_nsfw" : "mark_nsfw", R.id))
 						},
 						onOcPost: () => {
-							w(), N(Object(f.i)(j.isOriginalContent ? "unmark_original_content" : "mark_original_content", j.id))
+							_(), j(Object(f.i)(R.isOriginalContent ? "unmark_original_content" : "mark_original_content", R.id))
 						},
 						onCcPost: () => {
-							E()
+							w()
 						},
 						onModToMemberShareOpened: () => {
-							k(), N(Object(f.i)("mod_to_member_share", j.id))
+							O(), j(Object(f.i)("mod_to_member_share", R.id))
 						},
 						onSpoilerPost: () => {
-							M(), N(Object(f.i)(j.isSpoiler ? "unmark_spoiler" : "mark_spoiler", j.id))
+							g(), j(Object(f.i)(R.isSpoiler ? "unmark_spoiler" : "mark_spoiler", R.id))
 						},
 						onStickyPost: () => {
-							R(), N(Object(f.i)(j.isStickied ? "unsticky" : "sticky", j.id))
+							M(), j(Object(f.i)(R.isStickied ? "unsticky" : "sticky", R.id))
 						},
-						post: j
+						post: R
 					}))
 				})));
 			t.default = V
@@ -1407,4 +1405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.1c1e777c1ce20e55234a.js.map
+//# sourceMappingURL=ModerationDropdowns.d7bf209c7da9af608aea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.dd92acb6dcc040412776.js
-// Retrieved at 6/4/2020, 3:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1ba53cbd74764d28b53d.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1855,7 +1855,7 @@
 					hk: "8Y46b"
 				})), o.a.createElement(de.c, {
 					caretOnTop: !0,
-					text: Object(f.f)(c),
+					text: Object(f.d)(c),
 					tooltipId: l
 				}))));
 			t.default = Object(B.c)(Vt(Object(p.a)(Gt)))
@@ -2273,45 +2273,43 @@
 				_ = b.a.wrapped(e => {
 					var {
 						border: t,
-						language: n,
-						small: s,
-						type: r
-					} = e, a = g(e, ["border", "language", "small", "type"]);
-					return o.a.createElement(f, a, o.a.createElement(v, {
-						className: Object(p.a)(i.n, a.className, {
-							[m.a.isSmall]: s
+						small: n,
+						type: s
+					} = e, r = g(e, ["border", "small", "type"]);
+					return o.a.createElement(f, r, o.a.createElement(v, {
+						className: Object(p.a)(i.n, r.className, {
+							[m.a.isSmall]: n
 						})
 					}))
 				}, "UnsubscribeIconButton", m.a),
 				O = b.a.wrapped(e => {
 					var {
 						border: t,
-						language: n,
-						small: r,
-						type: i
-					} = e, c = g(e, ["border", "language", "small", "type"]);
-					const d = o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
+						small: n,
+						type: r
+					} = e, i = g(e, ["border", "small", "type"]);
+					const c = o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 							className: m.a.UnsubscribeButtonDefault
-						}, "subreddit" === i ? s.fbt._("Joined", null, {
+						}, "subreddit" === r ? s.fbt._("Joined", null, {
 							hk: "1MTmIz"
 						}) : s.fbt._("Following", null, {
 							hk: "1wQlVR"
 						})), o.a.createElement("span", {
 							className: m.a.UnsubscribeButtonHover
-						}, "subreddit" === i ? s.fbt._("Leave", null, {
+						}, "subreddit" === r ? s.fbt._("Leave", null, {
 							hk: "2lLnnn"
 						}) : s.fbt._("Unfollow", null, {
 							hk: "2b5ERD"
 						}))),
-						l = Object(p.a)(c.className, {
-							[m.a.isSmall]: r
+						d = Object(p.a)(i.className, {
+							[m.a.isSmall]: n
 						});
-					return t ? o.a.createElement(a.i, h({}, c, {
-						className: l,
-						children: d
-					})) : o.a.createElement(a.n, h({}, c, {
-						className: l,
-						children: d
+					return t ? o.a.createElement(a.i, h({}, i, {
+						className: d,
+						children: c
+					})) : o.a.createElement(a.n, h({}, i, {
+						className: d,
+						children: c
 					}))
 				}, "UnsubscribeButton", m.a),
 				w = e => {
@@ -2346,19 +2344,17 @@
 						className: t,
 						icon: n = !1,
 						id: s,
-						language: r,
-						small: i = !1
-					} = this.props, a = {
+						small: r = !1
+					} = this.props, i = {
 						border: e,
 						className: t,
 						icon: n,
 						onClick: this.onClick,
-						small: i
+						small: r
 					};
-					return this.props.userIsSubscriber ? o.a.createElement(w, h({}, a, {
-						language: r,
+					return this.props.userIsSubscriber ? o.a.createElement(w, h({}, i, {
 						type: this.props.identifier.type
-					})) : o.a.createElement(y, h({}, a, {
+					})) : o.a.createElement(y, h({}, i, {
 						id: s
 					}), this.props.children, Object(l.a)({
 						type: this.props.identifier.type,
@@ -2467,10 +2463,8 @@
 			var s = n("./node_modules/react-redux/es/index.js"),
 				r = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/actions/subscription/index.ts"),
-				i = n("./src/reddit/selectors/subreddit.ts"),
-				a = n("./src/reddit/selectors/user.ts");
+				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				language: a.Q,
 				userIsSubscriber: i.bb
 			}), (e, t) => {
 				let {
@@ -2885,4 +2879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.dd92acb6dcc040412776.js.map
+//# sourceMappingURL=IdCard.1ba53cbd74764d28b53d.js.map

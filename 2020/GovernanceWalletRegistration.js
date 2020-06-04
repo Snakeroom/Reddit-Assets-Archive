@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.d787f7d1cc0d5f954ba3.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.cb5298905db5f5c49770.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1458,7 +1458,7 @@
 			async function h(e, t, n) {
 				await i();
 				const s = o() || "";
-				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(a.b)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(a.a)("Please select your registered address in MetaMask: ") + t);
 				return l(e, Promise.resolve(p), "subscribe", [t, n])
 			}
 
@@ -1475,7 +1475,7 @@
 						else {
 							const e = t && t.result;
 							e ? n(e) : s({
-								message: Object(a.b)("No signature returned from ethereum provider.")
+								message: Object(a.a)("No signature returned from ethereum provider.")
 							})
 						}
 					})
@@ -1496,6 +1496,16 @@
 					})
 				})
 			}
+		},
+		"./src/reddit/i18n/utils.ts": function(e, t, n) {
+			"use strict";
+
+			function a(e) {
+				return e
+			}
+			n.d(t, "a", (function() {
+				return a
+			}))
 		},
 		"./src/reddit/icons/svgs/ArrowRight/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1712,4 +1722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.d787f7d1cc0d5f954ba3.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.cb5298905db5f5c49770.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c01a000900033a6d065d.js
-// Retrieved at 6/2/2020, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.de2d69748b9ff6abe225.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -761,7 +761,7 @@
 					className: m.a.name
 				}, E), !a && s.a.createElement("span", {
 					className: m.a.lastSupported
-				}, Object(c.f)(b)))), s.a.createElement("div", {
+				}, Object(c.d)(b)))), s.a.createElement("div", {
 					className: m.a.counter
 				}, s.a.createElement(i.a, {
 					className: m.a.powerupIcon
@@ -900,4 +900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.c01a000900033a6d065d.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.de2d69748b9ff6abe225.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.08ea4b571e512dad4d7c.js
-// Retrieved at 6/4/2020, 3:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8e425a0216e32854d50a.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -210,7 +210,6 @@
 					hasFetchedModerators: b.k,
 					isEmployee: g.E,
 					isLoggedIn: g.H,
-					language: g.Q,
 					profile: b.j,
 					crisisFlowEnabled: U.b
 				}),
@@ -383,8 +382,8 @@
 						onModeratorsRequested: () => e(Object(O.b)(n))
 					}
 				})(q),
-				Q = n("./src/reddit/components/ProfileIdCard/index.m.less"),
-				z = n.n(Q);
+				z = n("./src/reddit/components/ProfileIdCard/index.m.less"),
+				Q = n.n(z);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
@@ -420,9 +419,9 @@
 					currentUserHasSubreddit: n
 				} = e;
 				return r.a.createElement("div", {
-					className: z.a.actionItem
+					className: Q.a.actionItem
 				}, r.a.createElement(u.h, {
-					className: z.a.button,
+					className: Q.a.button,
 					to: n ? "/user/".concat(t, "/submit") : "/submit"
 				}, Y._("New post", null, {
 					hk: "QD6O4"
@@ -434,14 +433,14 @@
 					userIsSubscriber: s
 				} = e;
 				return r.a.createElement("div", {
-					className: z.a.actionItem
+					className: Q.a.actionItem
 				}, s ? r.a.createElement(u.i, {
-					className: z.a.button,
+					className: Q.a.button,
 					onClick: () => n(t, s)
 				}, Y._("Unfollow", null, {
 					hk: "1nM1SO"
 				})) : r.a.createElement(u.f, {
-					className: z.a.button,
+					className: Q.a.button,
 					onClick: () => n(t, s)
 				}, Y._("Follow", null, {
 					hk: "OPQuq"
@@ -451,10 +450,10 @@
 					userId: t
 				} = e;
 				return r.a.createElement("div", {
-					className: z.a.actionItem
+					className: Q.a.actionItem
 				}, r.a.createElement(d.a, {
 					contextId: t,
-					className: z.a.button,
+					className: Q.a.button,
 					userId: t
 				}, Y._("Chat", null, {
 					hk: "UKkIW"
@@ -752,4 +751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.08ea4b571e512dad4d7c.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.8e425a0216e32854d50a.js.map

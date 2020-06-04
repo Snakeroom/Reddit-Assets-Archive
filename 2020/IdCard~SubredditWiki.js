@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.c8e613e517d0370851d7.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.7c601215e8bc56783746.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -14,7 +14,7 @@
 				a = (e, t, n) => {
 					const i = t ? e.getUTCMonth() : e.getMonth(),
 						a = n ? o : s;
-					return Object(r.b)(a[i])
+					return Object(r.a)(a[i])
 				},
 				c = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
@@ -646,6 +646,16 @@
 				})
 			}
 		},
+		"./src/reddit/i18n/utils.ts": function(e, t, n) {
+			"use strict";
+
+			function r(e) {
+				return e
+			}
+			n.d(t, "a", (function() {
+				return r
+			}))
+		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -662,4 +672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard~SubredditWiki.c8e613e517d0370851d7.js.map
+//# sourceMappingURL=IdCard~SubredditWiki.7c601215e8bc56783746.js.map

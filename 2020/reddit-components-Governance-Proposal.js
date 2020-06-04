@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.02bfbe2332e3ec6440c2.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.8afd0703e0e0d5894f46.js
+// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -44,8 +44,8 @@
 				r = n("./src/lib/prettyPrintNumber/index.ts"),
 				a = n("./src/reddit/actions/modal.ts"),
 				c = n("./src/reddit/actions/post.ts"),
-				l = n("./src/reddit/actions/toaster.ts"),
-				i = n("./src/reddit/endpoints/governance/poll.ts"),
+				i = n("./src/reddit/actions/toaster.ts"),
+				l = n("./src/reddit/endpoints/governance/poll.ts"),
 				d = n("./src/config.ts"),
 				u = n("./src/reddit/endpoints/governance/requester.ts");
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
@@ -73,12 +73,12 @@
 				V = (e, t) => async (n, s, o) => {
 					let r, {
 							apiContext: a,
-							gqlContext: l
+							gqlContext: i
 						} = o,
 						d = s().polls.models[e];
 					if (n(j({
 							pollId: e
-						})), (r = d.type === m.a.GA ? await Object(i.c)(l(), e, t) : await Object(i.b)(a(), d.subredditId, e, t)).ok) {
+						})), (r = d.type === m.a.GA ? await Object(l.c)(i(), e, t) : await Object(l.b)(a(), d.subredditId, e, t)).ok) {
 						if (d.type === m.a.GA) {
 							const {
 								options: e
@@ -102,7 +102,7 @@
 					})), Object(f.a)(n, r.error || r.errors[0].messsage)
 				}, L = (e, t) => async (n, o, c) => {
 					let {
-						apiContext: i
+						apiContext: l
 					} = c;
 					n(P());
 					const p = o().transfers.communityPoints.contentId || void 0,
@@ -118,12 +118,12 @@
 							endpoint: "".concat(d.a.metaUrl, "/wallets/me/").concat(t.subredditId, "/transfers"),
 							method: "post"
 						})
-					}(i(), Object.assign({}, e, {
+					}(l(), Object.assign({}, e, {
 						contentId: p
 					}));
 					m.ok ? (n(w(Object.assign({}, m.body, {
 						subredditId: e.subredditId
-					}))), n(Object(l.e)({
+					}))), n(Object(i.e)({
 						kind: b.b.SuccessCommunity,
 						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(r.a)(e.amount)), s.fbt._param("tokenName", Object(v.p)(o(), {
 							subredditId: e.subredditId
@@ -206,8 +206,8 @@
 				r = n("./node_modules/react/index.js"),
 				a = n.n(r),
 				c = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/lib/classNames/index.ts"),
+				i = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/lib/classNames/index.ts"),
 				d = n("./src/reddit/components/Governance/Proposal/NoProposalError/index.m.less"),
 				u = n.n(d);
 			const {
@@ -215,7 +215,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var m = function(e) {
 					return a.a.createElement("div", {
-						className: Object(i.a)(u.a.container, e.className)
+						className: Object(l.a)(u.a.container, e.className)
 					}, p._("Error: Could not load poll", null, {
 						hk: "WWRIU"
 					}))
@@ -226,7 +226,7 @@
 
 			function h(e) {
 				return a.a.createElement("div", {
-					className: Object(i.a)(v.a.container, e.className)
+					className: Object(l.a)(v.a.container, e.className)
 				}, a.a.createElement("div", {
 					className: v.a.pill
 				}, a.a.createElement(b.a, {
@@ -259,7 +259,7 @@
 						r = new s.BigNumber(n).isZero() ? 0 : Object(_.a)(o.votes, n),
 						c = Object(P.c)(o.votes, e.tokenDisplayConversion);
 					return a.a.createElement("div", {
-						className: Object(i.a)(e.className, T.a.container),
+						className: Object(l.a)(e.className, T.a.container),
 						title: e.displayType === f.Count ? o.votes : "".concat(r.toFixed(2), "% (").concat(c, " ").concat(e.tokenName, ")")
 					}, a.a.createElement("div", {
 						className: T.a.bar,
@@ -268,12 +268,12 @@
 							width: "".concat(r, "%")
 						}
 					}), a.a.createElement("div", {
-						className: Object(i.a)(T.a.count, {
+						className: Object(l.a)(T.a.count, {
 							[T.a.hide]: e.displayType !== f.Count,
 							[T.a.show]: e.displayType === f.Count
 						})
 					}, Object(E.b)(parseInt(o.votes))), a.a.createElement("div", {
-						className: Object(i.a)(T.a.percent, {
+						className: Object(l.a)(T.a.percent, {
 							[T.a.hide]: e.displayType === f.Count,
 							[T.a.show]: e.displayType !== f.Count
 						})
@@ -285,10 +285,9 @@
 				},
 				B = n("./src/reddit/components/Poll/ClosedPoll/index.m.less"),
 				V = n.n(B);
-			const L = Object(l.c)({
+			const L = Object(i.c)({
 				tokenName: j.p,
-				tokenDisplayConversion: j.o,
-				language: e => e.user.language
+				tokenDisplayConversion: j.o
 			});
 			var S = Object(c.b)(L)((function(e) {
 					let t;
@@ -311,7 +310,6 @@
 						tokenDisplayConversion: e.tokenDisplayConversion
 					})), a.a.createElement(I.a, {
 						className: V.a.metaData,
-						language: e.language,
 						poll: e.poll
 					}))
 				})),
@@ -382,18 +380,16 @@
 						hk: "MnQpC"
 					}))), a.a.createElement(I.a, {
 						className: M.a.metaData,
-						language: this.props.language,
 						poll: this.props.poll
 					})))
 				}
 			}
-			const K = Object(l.c)({
-				language: e => e.user.language,
+			const K = Object(i.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Q = Object(c.b)(K)(Object(x.c)(z)),
-				J = n("./src/reddit/components/Poll/index.m.less"),
-				W = n.n(J);
+			var J = Object(c.b)(K)(Object(x.c)(z)),
+				Q = n("./src/reddit/components/Poll/index.m.less"),
+				W = n.n(Q);
 			class Y extends a.a.Component {
 				constructor() {
 					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(N.g)(e, t), this.sendPollResultsEvent = () => {
@@ -424,8 +420,8 @@
 						result: o,
 						subredditId: r,
 						title: c,
-						voteInProgress: l,
-						votingIcon: i
+						voteInProgress: i,
+						votingIcon: l
 					} = this.props;
 					return s ? a.a.createElement("div", {
 						className: e
@@ -436,15 +432,15 @@
 						poll: s,
 						result: o,
 						subredditId: r
-					}) : a.a.createElement(Q, {
+					}) : a.a.createElement(J, {
 						poll: s,
 						onVoteSelection: n,
-						voteInProgress: l,
-						votingIcon: i
+						voteInProgress: i,
+						votingIcon: l
 					})) : null
 				}
 			}
-			const X = Object(l.c)({
+			const X = Object(i.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
@@ -471,54 +467,52 @@
 					"clip-rule": "evenodd",
 					d: "M10.7771 0.961401C10.3769 0.466643 9.62244 0.466642 9.22221 0.961401L8.71391 1.58973C8.42377 1.9484 7.92591 2.06204 7.50887 1.86478L6.77829 1.51921C6.20302 1.2471 5.52329 1.57445 5.37735 2.19386L5.19202 2.98051C5.08623 3.42955 4.68698 3.74795 4.22565 3.75117L3.41748 3.75681C2.78112 3.76125 2.31073 4.3511 2.44801 4.97249L2.62234 5.76165C2.72186 6.21213 2.50029 6.67222 2.08605 6.87528L1.36036 7.23101C0.788947 7.51112 0.621066 8.24665 1.01436 8.74695L1.51383 9.38231C1.79895 9.745 1.79895 10.2557 1.51383 10.6184L1.01436 11.2537C0.621067 11.754 0.788947 12.4895 1.36036 12.7697L2.08605 13.1254C2.50029 13.3284 2.72186 13.7885 2.62234 14.239L2.44801 15.0282C2.31073 15.6496 2.78112 16.2394 3.41748 16.2439L4.22565 16.2495C4.68698 16.2527 5.08623 16.5711 5.19202 17.0202L5.37735 17.8068C5.52329 18.4262 6.20302 18.7536 6.77829 18.4815L7.50887 18.1359C7.92591 17.9386 8.42376 18.0523 8.71391 18.4109L9.22221 19.0393C9.62244 19.534 10.3769 19.534 10.7771 19.0393L11.2854 18.4109C11.5756 18.0523 12.0734 17.9386 12.4905 18.1359L13.221 18.4815C13.7963 18.7536 14.476 18.4262 14.622 17.8068L14.8073 17.0202C14.9131 16.5711 15.3124 16.2527 15.7737 16.2495L16.5819 16.2439C17.2182 16.2394 17.6886 15.6496 17.5513 15.0282L17.377 14.239C17.2775 13.7885 17.499 13.3284 17.9133 13.1254L18.639 12.7697C19.2104 12.4895 19.3783 11.754 18.985 11.2537L18.4855 10.6184C18.2004 10.2557 18.2004 9.745 18.4855 9.38231L18.985 8.74695C19.3783 8.24665 19.2104 7.51112 18.639 7.23101L17.9133 6.87528C17.499 6.67222 17.2775 6.21213 17.377 5.76165L17.5513 4.97249C17.6886 4.3511 17.2182 3.76125 16.5819 3.75681L15.7737 3.75117C15.3124 3.74795 14.9131 3.42956 14.8073 2.98051L14.622 2.19386C14.476 1.57445 13.7963 1.2471 13.221 1.51921L12.4905 1.86478C12.0734 2.06204 11.5756 1.94841 11.2854 1.58973L10.7771 0.961401ZM12.5231 7.71779L13.0827 8.27779C13.2391 8.43419 13.2391 8.68699 13.0827 8.84339L9.44271 12.4834C9.36471 12.5614 9.26231 12.6006 9.1599 12.6006C9.0575 12.6006 8.95551 12.5614 8.8771 12.4834L6.9171 10.5234C6.7607 10.3674 6.7607 10.1142 6.9171 9.95779L7.4771 9.39779C7.6335 9.24139 7.8867 9.24139 8.0427 9.39779L9.1599 10.515L11.9575 7.71779C12.0323 7.64259 12.1339 7.60059 12.2403 7.60059C12.3463 7.60059 12.4479 7.64259 12.5231 7.71779Z"
 				})))),
-				re = n("./src/reddit/selectors/user.ts"),
-				ae = n("./src/reddit/components/Governance/Proposal/ResultsSelector/DecisionThreshold/index.m.less"),
-				ce = n.n(ae),
-				le = n("./node_modules/fbt/lib/FbtPublic.js");
+				re = n("./src/reddit/components/Governance/Proposal/ResultsSelector/DecisionThreshold/index.m.less"),
+				ae = n.n(re),
+				ce = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function ie(e) {
 				return a.a.createElement(r.Fragment, null, a.a.createElement("div", {
-					className: ce.a.text
-				}, le.fbt._("Achieved Decision Threshold", null, {
+					className: ae.a.text
+				}, ce.fbt._("Achieved Decision Threshold", null, {
 					hk: "vyCtz"
 				})), a.a.createElement("div", {
-					className: ce.a.decisionIcon,
+					className: ae.a.decisionIcon,
 					title: e.votes
 				}, a.a.createElement(oe, {
-					className: ce.a.decisionThreshold
+					className: ae.a.decisionThreshold
 				})))
 			}
 
-			function de(e) {
+			function le(e) {
 				return a.a.createElement(r.Fragment, null, a.a.createElement("div", {
-					className: ce.a.text
-				}, le.fbt._("Decision Threshold: {amount}", [le.fbt._param("amount", Object(E.b)(parseInt(Object(P.b)(e.threshold, e.tokenDisplayConversion))))], {
+					className: ae.a.text
+				}, ce.fbt._("Decision Threshold: {amount}", [ce.fbt._param("amount", Object(E.b)(parseInt(Object(P.b)(e.threshold, e.tokenDisplayConversion))))], {
 					hk: "4p3578"
-				})), a.a.createElement(ue, {
+				})), a.a.createElement(de, {
 					percent: e.percent
 				}))
 			}
 
-			function ue(e) {
+			function de(e) {
 				const t = Math.floor(e.percent / 100 * 360);
 				return a.a.createElement("div", {
-					className: ce.a.pieContainer,
+					className: ae.a.pieContainer,
 					title: "".concat(e.percent, "%")
 				}, a.a.createElement("div", {
-					className: ce.a.pie
+					className: ae.a.pie
 				}), a.a.createElement("div", {
-					className: ce.a.pieInvertedMask
+					className: ae.a.pieInvertedMask
 				}), a.a.createElement("div", {
-					className: Object(i.a)(ce.a.pieMask, {
-						[ce.a.pieSwap]: e.percent >= 50
+					className: Object(l.a)(ae.a.pieMask, {
+						[ae.a.pieSwap]: e.percent >= 50
 					}),
 					style: {
 						transform: e.percent < 50 ? "rotate(".concat(t, "deg)") : "rotate(".concat(t - 180, "deg)")
 					}
 				}))
 			}
-			const pe = Object(l.c)({
-				language: re.Q,
+			const ue = Object(i.c)({
 				poll: (e, t) => {
 					let {
 						pollId: n
@@ -533,7 +527,7 @@
 				},
 				tokenDisplayConversion: j.o
 			});
-			var me = Object(c.b)(pe)((function(e) {
+			var pe = Object(c.b)(ue)((function(e) {
 					if (!(e.poll && e.poll.decisionThreshold && e.pollResult)) return null;
 					const t = Object(N.c)(e.poll, e.pollResult),
 						n = new o.a(e.pollResult.options[t.id].votes),
@@ -541,36 +535,34 @@
 						r = n.isGreaterThanOrEqualTo(new o.a(s)),
 						c = Object(_.a)(e.pollResult.options[t.id].votes, s);
 					return a.a.createElement("div", {
-						className: Object(i.a)(ce.a.container, e.className)
+						className: Object(l.a)(ae.a.container, e.className)
 					}, r ? a.a.createElement(ie, {
-						language: e.language,
 						votes: n.toString()
-					}) : a.a.createElement(de, {
-						language: e.language,
+					}) : a.a.createElement(le, {
 						threshold: s,
 						percent: c,
 						tokenDisplayConversion: e.tokenDisplayConversion
 					}))
 				})),
-				be = n("./src/reddit/components/Governance/Proposal/ResultsSelector/index.m.less"),
-				ge = n.n(be),
-				ve = n("./src/reddit/components/Governance/Proposal/ResultsSelector/Tab/index.m.less"),
-				he = n.n(ve);
+				me = n("./src/reddit/components/Governance/Proposal/ResultsSelector/index.m.less"),
+				be = n.n(me),
+				ge = n("./src/reddit/components/Governance/Proposal/ResultsSelector/Tab/index.m.less"),
+				ve = n.n(ge);
 
-			function fe(e) {
+			function he(e) {
 				return a.a.createElement("a", {
-					className: Object(i.a)(e.className, he.a.container, {
-						[he.a.selectable]: !!e.selectable,
-						[he.a.selected]: !!e.selectable && !!e.isSelected
+					className: Object(l.a)(e.className, ve.a.container, {
+						[ve.a.selectable]: !!e.selectable,
+						[ve.a.selected]: !!e.selectable && !!e.isSelected
 					}),
 					onClick: e.onSelect,
 					title: e.tooltipText
 				}, e.text)
 			}
 			const {
-				fbt: ye
+				fbt: fe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const xe = Object(l.c)({
+			const ye = Object(i.c)({
 				tokenName: j.p,
 				tokenDisplayConversion: j.o,
 				distribution: (e, t) => {
@@ -579,7 +571,6 @@
 					} = t;
 					return e.subreddits.gov.distributions[n]
 				},
-				language: e => e.user.language,
 				poll: (e, t) => {
 					let {
 						pollId: n
@@ -596,44 +587,44 @@
 				},
 				wallet: j.g
 			});
-			var Oe = Object(c.b)(xe)((function(e) {
+			var xe = Object(c.b)(ye)((function(e) {
 					const {
 						distribution: t,
 						poll: n,
 						resultsByVoters: o,
 						resultsByVotingPower: r,
 						tokenDisplayConversion: c,
-						tokenName: l,
+						tokenName: i,
 						wallet: d
 					} = e, u = r ? r.totalVotes : "0", p = !new s.BigNumber(u).isZero() && d && t ? Object(_.a)(u, t.totalAvailable) : 0, m = o ? o.totalVotes : "0", b = Object(P.c)(u, c), g = Object(E.b)(parseInt(m));
 					return a.a.createElement("div", {
-						className: Object(i.a)(e.className, ge.a.container)
-					}, a.a.createElement("div", null, n.type !== N.a.GA && a.a.createElement(fe, {
+						className: Object(l.a)(e.className, be.a.container)
+					}, a.a.createElement("div", null, n.type !== N.a.GA && a.a.createElement(he, {
 						isSelected: e.currentResultType === N.b.ByVotingPower,
 						selectable: e.pollIsClosed,
-						text: "".concat(b, " ").concat(l),
-						tooltipText: ye._("{count} {tokenName} ({percent}% of all {tokenNameAgain})", [ye._param("count", Object(P.c)(u, c)), ye._param("tokenName", l), ye._param("percent", p.toFixed(2)), ye._param("tokenNameAgain", l)], {
+						text: "".concat(b, " ").concat(i),
+						tooltipText: fe._("{count} {tokenName} ({percent}% of all {tokenNameAgain})", [fe._param("count", Object(P.c)(u, c)), fe._param("tokenName", i), fe._param("percent", p.toFixed(2)), fe._param("tokenNameAgain", i)], {
 							hk: "3R2TN1"
 						}),
 						onSelect: () => e.onChangeResultType && e.onChangeResultType(N.b.ByVotingPower)
-					}), a.a.createElement(fe, {
+					}), a.a.createElement(he, {
 						isSelected: e.currentResultType === N.b.ByVoters,
 						selectable: e.pollIsClosed,
-						text: ye._({
+						text: fe._({
 							"*": "{count} votes",
 							_1: "{count} vote"
-						}, [ye._param("count", g), ye._plural(parseInt(m))], {
+						}, [fe._param("count", g), fe._plural(parseInt(m))], {
 							hk: "3oK0a3"
 						}),
 						onSelect: () => e.onChangeResultType && e.onChangeResultType(N.b.ByVoters)
-					})), Object(N.d)(n) && a.a.createElement(me, {
+					})), Object(N.d)(n) && a.a.createElement(pe, {
 						pollId: e.pollId,
 						subredditId: e.subredditId
 					}))
 				})),
-				Ce = n("./src/reddit/components/Governance/Proposal/index.m.less"),
-				Ne = n.n(Ce);
-			class je extends a.a.Component {
+				Oe = n("./src/reddit/components/Governance/Proposal/index.m.less"),
+				Ce = n.n(Oe);
+			class Ne extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						displayReward: !1,
@@ -646,8 +637,8 @@
 				}
 				componentDidUpdate(e, t) {
 					if (!!this.props.pollReward && !new s.BigNumber(this.props.pollReward).isZero()) {
-						const n = Ie(e, t.resultType),
-							s = Ie(this.props, this.state.resultType);
+						const n = je(e, t.resultType),
+							s = je(this.props, this.state.resultType);
 						if (n && s && e.poll && this.props.poll) {
 							const t = !Object(N.e)(e.poll, n),
 								o = Object(N.e)(this.props.poll, s);
@@ -666,29 +657,29 @@
 						pollId: o,
 						subredditOrProfile: r,
 						post: c,
-						className: l,
+						className: i,
 						resultsByVotingPower: d,
 						pollReward: u
 					} = this.props;
 					if (!o || !n || !r) return null;
 					if (c.isMeta && (!o || !n || !r)) return a.a.createElement(m, {
-						className: Ne.a.noProposalError
+						className: Ce.a.noProposalError
 					});
-					let p = Ne.a.ContainerForNonCommentsPage,
+					let p = Ce.a.ContainerForNonCommentsPage,
 						b = "";
-					return e ? p = Object(i.a)(Ne.a.ForCommentsPage, {
-						[Ne.a.isEditing]: t
-					}) : b = Object(i.a)(Ne.a.ForNonCommentsPage, {
-						[Ne.a.mHasNotVoted]: !s,
-						[Ne.a.mPollIsClosed]: !!s && Object(N.e)(n, s),
-						[Ne.a.mGAPoll]: n.type === N.a.GA
+					return e ? p = Object(l.a)(Ce.a.ForCommentsPage, {
+						[Ce.a.isEditing]: t
+					}) : b = Object(l.a)(Ce.a.ForNonCommentsPage, {
+						[Ce.a.mHasNotVoted]: !s,
+						[Ce.a.mPollIsClosed]: !!s && Object(N.e)(n, s),
+						[Ce.a.mGAPoll]: n.type === N.a.GA
 					}), a.a.createElement("div", {
 						className: p
 					}, a.a.createElement("div", {
-						className: Object(i.a)(l, Ne.a.container, b),
+						className: Object(l.a)(i, Ce.a.container, b),
 						onClick: this.handleContainerClick
-					}, a.a.createElement(Oe, {
-						className: Ne.a.resultsSelector,
+					}, a.a.createElement(xe, {
+						className: Ce.a.resultsSelector,
 						currentResultType: this.state.resultType,
 						pollId: o,
 						resultsByVoters: s,
@@ -697,26 +688,26 @@
 						onChangeResultType: this.handleResultTypeChange
 					}), a.a.createElement($, {
 						key: o,
-						className: Ne.a.poll,
+						className: Ce.a.poll,
 						displayType: this.state.resultType === N.b.ByVoters ? f.Count : f.Percent,
 						pollId: o,
 						resultType: this.state.resultType,
 						subredditId: r.id,
 						votingIcon: Object(N.d)(n) ? a.a.createElement(ee.a, {
-							className: Ne.a.govIcon
+							className: Ce.a.govIcon
 						}) : void 0
 					}), u && this.state.displayReward && a.a.createElement(h, {
 						amount: u,
-						className: Ne.a.votingReward,
+						className: Ce.a.votingReward,
 						subredditId: r.id
 					})))
 				}
 			}
 
-			function Ie(e, t) {
+			function je(e, t) {
 				return t === N.b.ByVotingPower ? e.resultsByVotingPower : e.resultsByVoters
 			}
-			const _e = Object(l.c)({
+			const Ie = Object(i.c)({
 				isEditing: ne.C,
 				poll: (e, t) => {
 					let {
@@ -758,7 +749,7 @@
 				},
 				subredditOrProfile: se.bb
 			});
-			t.default = Object(c.b)(_e)(je)
+			t.default = Object(c.b)(Ie)(Ne)
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -772,12 +763,12 @@
 				r = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/config.ts"),
-				l = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/selectors/gov.ts"),
+				i = n("./src/lib/classNames/index.ts"),
+				l = n("./src/reddit/selectors/gov.ts"),
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				u = n.n(d);
 			const p = Object(a.c)({
-				tokenSymbol: i.q
+				tokenSymbol: l.q
 			});
 			t.a = Object(r.b)(p)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -785,7 +776,7 @@
 				if (e.grey && n.endsWith(".svg")) {
 					const t = "url(".concat(n, ") center/cover");
 					return o.a.createElement("div", {
-						className: Object(l.a)(u.a.grey, e.className),
+						className: Object(i.a)(u.a.grey, e.className),
 						style: {
 							mask: t,
 							WebkitMask: t
@@ -854,9 +845,9 @@
 			})), n.d(t, "d", (function() {
 				return c
 			})), n.d(t, "e", (function() {
-				return l
-			})), n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return l
 			}));
 			var s, o = n("./src/config.ts"),
 				r = n("./src/reddit/endpoints/governance/requester.ts");
@@ -882,14 +873,14 @@
 					}
 				})
 			}
-			async function l(e, t, n) {
+			async function i(e, t, n) {
 				return await Object(r.a)(e, {
 					method: "post",
 					endpoint: "".concat(o.a.metaUrl, "/crypto/").concat(t, "/registrations"),
 					data: n
 				})
 			}
-			async function i(e, t, n) {
+			async function l(e, t, n) {
 				return await Object(r.a)(e, {
 					method: "delete",
 					endpoint: "".concat(o.a.metaUrl, "/crypto/").concat(t, "/registrations/").concat(n)
@@ -912,8 +903,8 @@
 				r = n("./src/config.ts"),
 				a = n("./src/graphql/operations/PollVote.json"),
 				c = n("./src/lib/makeGqlRequest/index.ts"),
-				l = n("./src/lib/omitHeaders/index.ts"),
-				i = n("./src/reddit/constants/headers.ts"),
+				i = n("./src/lib/omitHeaders/index.ts"),
+				l = n("./src/reddit/constants/headers.ts"),
 				d = (n("./src/reddit/models/Poll/index.ts"), n("./src/reddit/endpoints/governance/requester.ts"));
 
 			function u(e, t, n, s) {
@@ -932,7 +923,7 @@
 			}));
 
 			function m(e, t) {
-				return Object(d.a)(Object(l.a)(e, [i.a]), {
+				return Object(d.a)(Object(i.a)(e, [l.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
 				}).then(e => e.ok ? Object.assign({}, e, {
@@ -1102,8 +1093,8 @@
 				r = n("./src/reddit/featureFlags/index.ts"),
 				a = n("./src/reddit/selectors/experiments/pollsGA.ts"),
 				c = n("./src/reddit/selectors/postCreations.ts");
-			const l = [],
-				i = {},
+			const i = [],
+				l = {},
 				d = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
@@ -1136,7 +1127,7 @@
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
-					} : i
+					} : l
 				},
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				v = (e, t) => {
@@ -1157,7 +1148,7 @@
 				},
 				f = (e, t) => {
 					const n = Object(s.m)(e, t);
-					return n && e.subreddits.gov.releaseNotes[n] || l
+					return n && e.subreddits.gov.releaseNotes[n] || i
 				},
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || d,
@@ -1215,4 +1206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.02bfbe2332e3ec6440c2.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.8afd0703e0e0d5894f46.js.map
