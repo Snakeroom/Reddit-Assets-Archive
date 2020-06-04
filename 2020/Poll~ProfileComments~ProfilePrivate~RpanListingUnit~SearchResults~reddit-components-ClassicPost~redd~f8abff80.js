@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.e9b7bc43e25dbf96355a.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.2e281f2674151b1614b3.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -518,24 +518,24 @@
 		"./src/reddit/components/CommentsChat/LiveIcon/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/i18n/utils.ts"),
+				o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				i = s.n(r),
+				a = s("./node_modules/react-redux/es/index.js"),
+				c = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/selectors/experiments/chatPost.ts"),
 				p = s("./src/reddit/components/CommentsChat/LiveIcon/index.m.less"),
 				m = s.n(p);
 			const u = .1,
-				h = Object(a.c)({
+				h = Object(c.c)({
 					isChatPost: l.e,
 					isChatPostExperiment: l.d
 				}),
-				b = Object(i.b)(h, e => ({
+				b = Object(a.b)(h, e => ({
 					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(l.g)(n(), t, s))
 				}));
-			class x extends r.a.Component {
+			class x extends i.a.Component {
 				constructor(e) {
 					super(e), this.onVisibilityChange = e => {
 						e.isIntersecting && e.intersectionRatio >= u ? this.state.visible || (this.setState({
@@ -561,36 +561,38 @@
 					} = this.state, {
 						isChatPost: t,
 						isChatPostExperiment: s
-					} = this.props, o = s && (null === e || e);
-					return t ? r.a.createElement(n.a, {
+					} = this.props, r = s && (null === e || e);
+					return t ? i.a.createElement(n.a, {
 						rootMargin: "20px 0px 20px 0px",
 						threshold: u,
 						onChange: this.onVisibilityChange
-					}, s ? r.a.createElement("div", {
-						className: Object(c.a)(m.a.Icon, this.props.className)
-					}, r.a.createElement("span", {
-						className: Object(c.a)(m.a.Animate, m.a.top, {
-							[m.a.play]: o
+					}, s ? i.a.createElement("div", {
+						className: Object(d.a)(m.a.Icon, this.props.className)
+					}, i.a.createElement("span", {
+						className: Object(d.a)(m.a.Animate, m.a.top, {
+							[m.a.play]: r
 						})
-					}, r.a.createElement("span", {
+					}, i.a.createElement("span", {
 						className: m.a.bigCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: m.a.midCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: m.a.smallCircle
-					})), r.a.createElement("p", {
+					})), i.a.createElement("p", {
 						className: m.a.IconText
-					}, Object(d.a)("Live Discussion")), r.a.createElement("span", {
-						className: Object(c.a)(m.a.Animate, m.a.bottom, {
-							[m.a.play]: o
+					}, o.fbt._("Live Discussion", null, {
+						hk: "2akFwx"
+					})), i.a.createElement("span", {
+						className: Object(d.a)(m.a.Animate, m.a.bottom, {
+							[m.a.play]: r
 						})
-					}, r.a.createElement("span", {
+					}, i.a.createElement("span", {
 						className: m.a.bigCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: m.a.midCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: m.a.smallCircle
-					}))) : r.a.createElement("span", null)) : null
+					}))) : i.a.createElement("span", null)) : null
 				}
 			}
 			t.a = b(x)
@@ -3611,16 +3613,6 @@
 					})
 				}
 		},
-		"./src/reddit/i18n/utils.ts": function(e, t, s) {
-			"use strict";
-
-			function n(e) {
-				return e
-			}
-			s.d(t, "a", (function() {
-				return n
-			}))
-		},
 		"./src/reddit/icons/fonts/Calendar/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -4061,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.e9b7bc43e25dbf96355a.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.2e281f2674151b1614b3.js.map

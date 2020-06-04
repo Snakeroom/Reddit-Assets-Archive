@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.c32d9102d856e01725b4.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.81f383fb40f3c7cbae42.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -282,7 +282,7 @@
 				return g
 			}));
 			r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = r("./src/reddit/i18n/utils.ts");
+			var n = r("./node_modules/fbt/lib/FbtPublic.js");
 
 			function s() {
 				return window.ethereum
@@ -372,7 +372,9 @@
 			async function p(e, t, r) {
 				await c();
 				const s = d() || "";
-				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(n.a)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(n.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [n.fbt._param("subscriberAddress", t)], {
+					hk: "3rehSL"
+				}).toString());
 				return u(e, Promise.resolve(f), "subscribe", [t, r])
 			}
 
@@ -389,7 +391,9 @@
 						else {
 							const e = t && t.result;
 							e ? r(e) : s({
-								message: Object(n.a)("No signature returned from ethereum provider.")
+								message: n.fbt._("No signature returned from ethereum provider.", null, {
+									hk: "eiYBF"
+								}).toString()
 							})
 						}
 					})
@@ -606,4 +610,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.c32d9102d856e01725b4.js.map
+//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.81f383fb40f3c7cbae42.js.map

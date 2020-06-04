@@ -1,29 +1,22 @@
-// https://www.redditstatic.com/desktop2x/Premium.e4bc7f355e88047d6dcb.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.e7927bd2fe472b554972.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
 			"use strict";
-			a.d(t, "a", (function() {
-				return o
-			}));
-			var n = a("./src/reddit/i18n/utils.ts");
-			const s = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-				r = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-				i = (e, t) => t ? e.getUTCDate() : e.getDate(),
-				l = (e, t, a) => {
-					const i = t ? e.getUTCMonth() : e.getMonth(),
-						l = a ? r : s;
-					return Object(n.a)(l[i])
-				},
-				c = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
-			function o(e, t, a, n) {
-				const s = new Date(1e3 * e),
-					r = l(s, a, n),
-					o = t ? i(s, a) + ", " : "";
-				return "".concat(r, " ").concat(o).concat(c(s, a))
+			function n(e, t, a, n) {
+				const s = new Date(1e3 * e);
+				return new Intl.DateTimeFormat("default", {
+					month: n ? "short" : "long",
+					day: t ? "numeric" : void 0,
+					year: "numeric",
+					timeZone: a ? "UTC" : void 0
+				}).format(s)
 			}
+			a.d(t, "a", (function() {
+				return n
+			}))
 		},
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
 			"use strict";
@@ -305,16 +298,6 @@
 				}, e))
 			}
 		},
-		"./src/reddit/i18n/utils.ts": function(e, t, a) {
-			"use strict";
-
-			function n(e) {
-				return e
-			}
-			a.d(t, "a", (function() {
-				return n
-			}))
-		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
 			"use strict";
 			var n = a("./node_modules/react/index.js"),
@@ -490,13 +473,13 @@
 				N = a("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				x = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
 				M = a("./src/reddit/components/MarketingPageFooter/index.tsx"),
-				y = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
-				I = a("./src/reddit/controls/Button/index.tsx"),
+				I = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
+				y = a("./src/reddit/controls/Button/index.tsx"),
 				j = a("./src/reddit/models/Gold/Premium/index.ts"),
-				O = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				G = a("./src/reddit/selectors/goldPurchaseModals.ts"),
+				G = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				O = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				S = a("./src/reddit/selectors/user.ts"),
-				A = e => i.a.createElement("svg", {
+				F = e => i.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 558 98",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -514,7 +497,7 @@
 					d: "M59.4115 56.5569c-2.757 0-5-2.243-5-5 0-2.758 2.243-5.001 5-5.001s5 2.243 5 5.001c0 2.757-2.243 5-5 5m.88 8.212c-3.412 3.407-9.951 3.672-11.874 3.672-1.924 0-8.464-.265-11.872-3.673-.506-.506-.506-1.326.001-1.833.505-.505 1.326-.506 1.832.001 2.15 2.15 6.752 2.914 10.039 2.914 3.286 0 7.889-.764 10.043-2.915.507-.506 1.327-.505 1.832.001.506.507.506 1.327-.001 1.833m-27.88-13.212c0-2.758 2.244-5.001 5.002-5.001 2.756 0 4.998 2.243 4.998 5.001 0 2.756-2.242 4.999-4.998 4.999-2.758 0-5.002-2.243-5.002-4.999m47.992-5.001c0-3.866-3.135-7-7-7-1.887 0-3.596.75-4.855 1.964-4.784-3.452-11.377-5.683-18.72-5.939l3.188-15.003 10.418 2.215c.127 2.649 2.296 4.763 4.977 4.763 2.761 0 5-2.238 5-5s-2.239-5-5-5c-1.965 0-3.646 1.143-4.465 2.791l-11.633-2.474c-.323-.07-.662-.006-.94.175-.278.181-.473.464-.542.788l-3.561 16.741c-7.451.207-14.149 2.439-18.995 5.93-1.258-1.206-2.961-1.951-4.841-1.951-3.866 0-7 3.134-7 7 0 2.845 1.7 5.287 4.136 6.383-.108.695-.167 1.401-.167 2.117 0 10.77 12.536 19.5 28 19.5s28-8.73 28-19.5c0-.711-.058-1.412-.165-2.103 2.452-1.089 4.165-3.542 4.165-6.397",
 					fill: "#FFF"
 				})),
-				F = a("./src/lib/classNames/index.ts"),
+				A = a("./src/lib/classNames/index.ts"),
 				L = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				R = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				T = a("./src/reddit/pages/Premium/PurchaseSection/index.m.less"),
@@ -543,7 +526,7 @@
 						shouldShowClaimGoldModal: m
 					} = this.props, d = "".concat(n.a.assetPath, "/img/gold/crest-with-background.jpg");
 					return i.a.createElement("div", {
-						className: Object(F.a)(e, z.a.purchaseSection)
+						className: Object(A.a)(e, z.a.purchaseSection)
 					}, i.a.createElement("h2", {
 						className: z.a.purchaseSectionTitle
 					}, s.fbt._("Join Reddit Premium Today", null, {
@@ -563,16 +546,16 @@
 					})), i.a.createElement("div", {
 						className: z.a.miscContainer
 					}, i.a.createElement("div", {
-						className: Object(F.a)(z.a.miscItem, z.a.renewalSubtext)
+						className: Object(A.a)(z.a.miscItem, z.a.renewalSubtext)
 					}, s.fbt._("Subscription automatically renews monthly", null, {
 						hk: "21TCR6"
-					})), i.a.createElement(I.n, {
+					})), i.a.createElement(y.n, {
 						className: z.a.redeemCodeLink,
 						onClick: this.onClaimGoldClick
 					}, s.fbt._("Redeem a gift code", null, {
 						hk: "2NJLkV"
 					})), i.a.createElement("form", {
-						className: Object(F.a)(z.a.giftCodeInputContainer, {
+						className: Object(A.a)(z.a.giftCodeInputContainer, {
 							[z.a.giftCodeHidden]: !m
 						}),
 						onSubmit: this.onGiftCodeRedeem
@@ -585,7 +568,7 @@
 						}),
 						onChange: c,
 						value: t
-					}), i.a.createElement(I.f, {
+					}), i.a.createElement(y.f, {
 						className: z.a.redeemButton
 					}, s.fbt._("Redeem", null, {
 						hk: "1d2cH2"
@@ -593,7 +576,7 @@
 				}
 			}
 			const D = () => i.a.createElement("div", {
-					className: Object(F.a)(z.a.leftPanel, z.a.loaderContainer)
+					className: Object(A.a)(z.a.leftPanel, z.a.loaderContainer)
 				}, i.a.createElement(L.a, {
 					sizePx: 80
 				})),
@@ -628,7 +611,7 @@
 						className: z.a.checkmark
 					}), s.fbt._("{monthly-coins} Coins every month", [s.fbt._param("monthly-coins", d)], {
 						hk: "CngQz"
-					}))), i.a.createElement(I.e, {
+					}))), i.a.createElement(y.e, {
 						className: z.a.premiumButton,
 						onClick: t ? n : a
 					}, t ? s.fbt._("Manage", null, {
@@ -637,18 +620,18 @@
 						hk: "2xmHVK"
 					})))
 				},
-				J = Object(o.c)({
+				q = Object(o.c)({
 					giftCode: _.a,
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
 					isGold: S.p,
 					isPremiumSubscriber: S.q,
 					isLoggedIn: S.H,
-					premiumPackages: O.e,
-					purchaseCatalogPending: O.g,
-					shouldShowPremiumPurchaseModal: G.n,
+					premiumPackages: G.e,
+					purchaseCatalogPending: G.g,
+					shouldShowPremiumPurchaseModal: O.n,
 					shouldShowClaimGoldModal: _.b
 				}),
-				q = Object(l.b)(J, (e, t) => ({
+				H = Object(l.b)(q, (e, t) => ({
 					onGiftCodeInput: t => {
 						t.stopPropagation(), e(Object(E.j)(t.target.value))
 					},
@@ -659,7 +642,7 @@
 					requestPurchaseCatalog: () => e(Object(N.a)()),
 					toggleClaimGoldModal: () => e(Object(E.i)())
 				}));
-			class H extends i.a.Component {
+			class J extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onClickGetPremium = () => {
 						this.onPurchase(g.a)
@@ -701,13 +684,13 @@
 						className: C.a.heroInner
 					}, i.a.createElement("h1", {
 						className: C.a.heroTitle
-					}, i.a.createElement(A, {
+					}, i.a.createElement(F, {
 						className: C.a.heroLogo
 					})), i.a.createElement("p", {
 						className: C.a.heroDescription
 					}, s.fbt._("Reddit Premium gives you an ad-free experience, special benefits, and directly supports Reddit. The more Reddit is user-supported, the freer we are to make Reddit the best it can be.", null, {
 						hk: "3BejFp"
-					})), i.a.createElement(I.e, {
+					})), i.a.createElement(y.e, {
 						className: C.a.heroCTA,
 						onClick: this.onClickGetPremium
 					}, a ? s.fbt._("Manage Premium", null, {
@@ -778,14 +761,14 @@
 					}, e.answer()))))
 				}
 				renderModal() {
-					return this.props.shouldShowPremiumPurchaseModal && i.a.createElement(y.a, null)
+					return this.props.shouldShowPremiumPurchaseModal && i.a.createElement(I.a, null)
 				}
 				componentWillUnmount() {
 					g.e()
 				}
 			}
-			t.default = q(Object(h.c)(H))
+			t.default = H(Object(h.c)(J))
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.e4bc7f355e88047d6dcb.js.map
+//# sourceMappingURL=Premium.e7927bd2fe472b554972.js.map

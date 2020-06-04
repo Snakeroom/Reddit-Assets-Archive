@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.8e84e4e5b6a615d605a2.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.eba46307c47cd70a17e0.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -71,7 +71,7 @@
 			r.d(t, "b", (function() {
 				return j
 			})), r.d(t, "c", (function() {
-				return _
+				return C
 			})), r.d(t, "a", (function() {
 				return T
 			}));
@@ -184,7 +184,7 @@
 					},
 					useHovercard: h.d.spPremium
 				}),
-				C = Object(o.c)({
+				_ = Object(o.c)({
 					badges: (e, t) => {
 						let {
 							subredditId: r
@@ -204,8 +204,8 @@
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenUploadDialog: () => e(Object(d.i)())
 				}),
-				_ = Object(s.b)(O, k)(j),
-				T = Object(s.b)(C, k)(j)
+				C = Object(s.b)(O, k)(j),
+				T = Object(s.b)(_, k)(j)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -486,15 +486,15 @@
 					}))
 				},
 				O = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
-				C = r.n(O);
+				_ = r.n(O);
 			const {
 				fbt: k
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const _ = Object(u.c)({
+			const C = Object(u.c)({
 				tokenName: f.p,
 				details: f.b
 			});
-			var T = Object(s.b)(_)((function(e) {
+			var T = Object(s.b)(C)((function(e) {
 					const {
 						className: t,
 						details: r,
@@ -502,37 +502,37 @@
 						tokenName: s
 					} = e, o = "".concat(r.taxRate, "%");
 					return a.a.createElement("div", {
-						className: Object(i.a)(C.a.container, t)
+						className: Object(i.a)(_.a.container, t)
 					}, a.a.createElement("div", {
-						className: C.a.section
+						className: _.a.section
 					}, a.a.createElement("div", {
-						className: C.a.image
+						className: _.a.image
 					}, a.a.createElement(N, {
-						className: C.a.bannerImage
+						className: _.a.bannerImage
 					})), a.a.createElement("div", {
-						className: C.a.textSection
+						className: _.a.textSection
 					}, a.a.createElement("div", {
-						className: C.a.title
+						className: _.a.title
 					}, k._("Buy r/{communityName} 's Top Banner", [k._param("communityName", n)], {
 						hk: "2hXSyn"
 					})), a.a.createElement("div", {
-						className: C.a.text
+						className: _.a.text
 					}, k._("Set the image to whatever you want", null, {
 						hk: "45iv1p"
 					})))), a.a.createElement("div", {
-						className: C.a.section
+						className: _.a.section
 					}, a.a.createElement("div", {
-						className: C.a.image
+						className: _.a.image
 					}, a.a.createElement(j, {
-						className: C.a.taxImage
+						className: _.a.taxImage
 					})), a.a.createElement("div", {
-						className: C.a.textSection
+						className: _.a.textSection
 					}, a.a.createElement("div", {
-						className: C.a.title
+						className: _.a.title
 					}, k._("Harberger Tax", null, {
 						hk: "1RH5bF"
 					})), a.a.createElement("ul", {
-						className: C.a.text
+						className: _.a.text
 					}, a.a.createElement("li", null, k._("The owner sets the price for the banner", null, {
 						hk: "1EnVw2"
 					})), a.a.createElement("li", null, k._("They pay a daily tax of {tax} by burning {token}", [k._param("tax", o), k._param("token", s)], {
@@ -561,23 +561,23 @@
 				}))
 			}
 			var B = r("./node_modules/bignumber.js/bignumber.js"),
-				H = r("./src/lib/currency/cleanNumber/index.ts"),
-				S = r("./src/reddit/actions/harbergerTax/actionCreators.ts"),
+				S = r("./src/lib/currency/cleanNumber/index.ts"),
+				H = r("./src/reddit/actions/harbergerTax/actionCreators.ts"),
 				A = r("./src/reddit/actions/toaster.ts"),
 				D = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				G = r("./src/reddit/controls/FormFields/index.tsx"),
-				R = r("./src/reddit/helpers/governance/ethereum.ts"),
-				F = r("./src/reddit/models/Toast/index.ts"),
+				F = r("./src/reddit/controls/FormFields/index.tsx"),
+				G = r("./src/reddit/helpers/governance/ethereum.ts"),
+				R = r("./src/reddit/models/Toast/index.ts"),
 				V = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				W = r.n(V);
+				L = r.n(V);
 
-			function L(e) {
+			function W(e) {
 				return a.a.createElement("article", {
-					className: Object(i.a)(e.className, W.a.container)
+					className: Object(i.a)(e.className, L.a.container)
 				}, a.a.createElement("div", {
-					className: W.a.title
+					className: L.a.title
 				}, e.title), a.a.createElement("div", {
-					className: W.a.description
+					className: L.a.description
 				}, e.description), e.children)
 			}
 			var U = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/index.m.less"),
@@ -599,10 +599,10 @@
 				constructor(e) {
 					super(e), this.handlePriceChange = e => {
 						this.setState({
-							price: Object(x.a)(Object(H.a)(e || "0"), this.props.tokenDisplayConversion)
+							price: Object(x.a)(Object(S.a)(e || "0"), this.props.tokenDisplayConversion)
 						})
 					}, this.handlePrepayChange = e => this.setState({
-						prepayDays: Object(H.a)(e)
+						prepayDays: Object(S.a)(e)
 					}), this.handlePurchase = async () => {
 						const {
 							cost: e,
@@ -615,7 +615,7 @@
 						if (!s || !o) return this.props.onError();
 						const i = new B.BigNumber(n).multipliedBy(t.taxRate / 100).multipliedBy(parseInt(a));
 						try {
-							await Object(R.f)(s, o, e || "0", n, i.toFixed(0)), this.props.onPurchaseComplete()
+							await Object(G.f)(s, o, e || "0", n, i.toFixed(0)), this.props.onPurchaseComplete()
 						} catch (c) {
 							return this.props.onError(c.message)
 						}
@@ -636,7 +636,7 @@
 					} = this.props, d = t || "0", l = this.state.price || "0", u = parseInt(l) * (s.taxRate / 100), f = u * parseInt(this.state.prepayDays), v = parseInt(d) + f, g = "".concat(s.taxRate, "%");
 					return a.a.createElement("div", {
 						className: Object(i.a)(q.a.container, e)
-					}, a.a.createElement(L, {
+					}, a.a.createElement(W, {
 						className: q.a.section,
 						description: J.fbt._("You must pay this amount to the current owner to buy the banner.", null, {
 							hk: "36sgxo"
@@ -660,7 +660,7 @@
 						userId: r
 					}), a.a.createElement("span", {
 						className: q.a.username
-					}, n)))), a.a.createElement(L, {
+					}, n)))), a.a.createElement(W, {
 						className: q.a.section,
 						description: J.fbt._("You can protect your ownership by raising the price. This also increases the daily tax. You can also lower the price to lower the tax.", null, {
 							hk: "20EBr1"
@@ -670,7 +670,7 @@
 						})
 					}, a.a.createElement("div", {
 						className: q.a.price
-					}, a.a.createElement(G.c, {
+					}, a.a.createElement(F.c, {
 						redditStyle: !0,
 						className: q.a.priceInput,
 						label: J.fbt._("new price", null, {
@@ -692,7 +692,7 @@
 							hk: "1kg5ZE"
 						}),
 						tokenDisplayConversion: c
-					}))), a.a.createElement(L, {
+					}))), a.a.createElement(W, {
 						className: q.a.section,
 						description: J.fbt._("You must deposit money to pay the daily tax. You can top this up at any time. If the balance goes to zero, the price of the banner drops to zero. If someone else buys the banner, you will be refunded any pre-paid tax you allocated.", null, {
 							hk: "3rkkNS"
@@ -702,7 +702,7 @@
 						})
 					}, a.a.createElement("div", {
 						className: q.a.prePay
-					}, a.a.createElement(G.c, {
+					}, a.a.createElement(F.c, {
 						redditStyle: !0,
 						className: q.a.prepayInput,
 						label: J.fbt._("# of days to prepay", null, {
@@ -755,12 +755,12 @@
 			var K = Object(s.b)(Q, e => ({
 					onError: t => e(Object(A.e)({
 						duration: 5e3,
-						kind: F.b.Error,
+						kind: R.b.Error,
 						text: t || J.fbt._("Something wen't wrong with the purchase. Please try again later.", null, {
 							hk: "18lJda"
 						})
 					})),
-					onPurchaseComplete: () => e(Object(S.a)())
+					onPurchaseComplete: () => e(Object(H.a)())
 				}))(z),
 				$ = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/index.m.less"),
 				ee = r.n($);
@@ -951,7 +951,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return C
+				return _
 			})), r.d(t, "c", (function() {
 				return k
 			}));
@@ -1055,7 +1055,7 @@
 			const O = Object(l.b)(N, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(j),
-				C = e => {
+				_ = e => {
 					const {
 						className: t,
 						errorClassName: r,
@@ -1071,7 +1071,7 @@
 						key: t
 					}, e))) : null
 				},
-				k = e => d.a.createElement(C, {
+				k = e => d.a.createElement(_, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -1387,7 +1387,7 @@
 				return f
 			}));
 			r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = r("./src/reddit/i18n/utils.ts");
+			var n = r("./node_modules/fbt/lib/FbtPublic.js");
 
 			function a() {
 				return window.ethereum
@@ -1477,7 +1477,9 @@
 			async function b(e, t, r) {
 				await c();
 				const a = o() || "";
-				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(Object(n.a)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(n.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [n.fbt._param("subscriberAddress", t)], {
+					hk: "3rehSL"
+				}).toString());
 				return l(e, Promise.resolve(h), "subscribe", [t, r])
 			}
 
@@ -1494,7 +1496,9 @@
 						else {
 							const e = t && t.result;
 							e ? r(e) : a({
-								message: Object(n.a)("No signature returned from ethereum provider.")
+								message: n.fbt._("No signature returned from ethereum provider.", null, {
+									hk: "eiYBF"
+								}).toString()
 							})
 						}
 					})
@@ -1544,16 +1548,6 @@
 					a = new n.BigNumber(t);
 				return r.multipliedBy(a).toFixed(0)
 			}
-		},
-		"./src/reddit/i18n/utils.ts": function(e, t, r) {
-			"use strict";
-
-			function n(e) {
-				return e
-			}
-			r.d(t, "a", (function() {
-				return n
-			}))
 		},
 		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, r) {
 			"use strict";
@@ -1652,11 +1646,11 @@
 			})), r.d(t, "a", (function() {
 				return O
 			})), r.d(t, "f", (function() {
-				return C
+				return _
 			})), r.d(t, "r", (function() {
 				return k
 			})), r.d(t, "n", (function() {
-				return _
+				return C
 			})), r.d(t, "k", (function() {
 				return T
 			}));
@@ -1739,7 +1733,7 @@
 						n = N(e, t);
 					return r && r.provider || n && n.provider
 				},
-				C = (e, t) => {
+				_ = (e, t) => {
 					const r = O(e, t);
 					return r === a.a.Ethereum || r === a.a.Rinkeby || r === a.a.EthTraderEthereum || r === a.a.EthTraderRinkeby
 				},
@@ -1760,7 +1754,7 @@
 						image: o.image
 					}
 				},
-				_ = (e, t) => {
+				C = (e, t) => {
 					let {
 						subredditId: r
 					} = t;
@@ -1778,4 +1772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.8e84e4e5b6a615d605a2.js.map
+//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.eba46307c47cd70a17e0.js.map

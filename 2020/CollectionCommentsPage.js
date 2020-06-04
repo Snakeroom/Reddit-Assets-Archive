@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ed6e5a004e644254597d.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.75c0e4b3962d3b3157f2.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -148,26 +148,19 @@
 		},
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return c
-			}));
-			var n = s("./src/reddit/i18n/utils.ts");
-			const o = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-				r = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-				i = (e, t) => t ? e.getUTCDate() : e.getDate(),
-				a = (e, t, s) => {
-					const i = t ? e.getUTCMonth() : e.getMonth(),
-						a = s ? r : o;
-					return Object(n.a)(a[i])
-				},
-				d = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
-			function c(e, t, s, n) {
-				const o = new Date(1e3 * e),
-					r = a(o, s, n),
-					c = t ? i(o, s) + ", " : "";
-				return "".concat(r, " ").concat(c).concat(d(o, s))
+			function n(e, t, s, n) {
+				const o = new Date(1e3 * e);
+				return new Intl.DateTimeFormat("default", {
+					month: n ? "short" : "long",
+					day: t ? "numeric" : void 0,
+					year: "numeric",
+					timeZone: s ? "UTC" : void 0
+				}).format(o)
 			}
+			s.d(t, "a", (function() {
+				return n
+			}))
 		},
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
 			"use strict";
@@ -4224,24 +4217,24 @@
 		"./src/reddit/components/CommentsChat/LiveIcon/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/i18n/utils.ts"),
+				o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				i = s.n(r),
+				a = s("./node_modules/react-redux/es/index.js"),
+				d = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/selectors/experiments/chatPost.ts"),
 				m = s("./src/reddit/components/CommentsChat/LiveIcon/index.m.less"),
 				p = s.n(m);
 			const u = .1,
-				h = Object(a.c)({
+				h = Object(d.c)({
 					isChatPost: l.e,
 					isChatPostExperiment: l.d
 				}),
-				b = Object(i.b)(h, e => ({
+				b = Object(a.b)(h, e => ({
 					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(l.g)(n(), t, s))
 				}));
-			class x extends r.a.Component {
+			class x extends i.a.Component {
 				constructor(e) {
 					super(e), this.onVisibilityChange = e => {
 						e.isIntersecting && e.intersectionRatio >= u ? this.state.visible || (this.setState({
@@ -4267,36 +4260,38 @@
 					} = this.state, {
 						isChatPost: t,
 						isChatPostExperiment: s
-					} = this.props, o = s && (null === e || e);
-					return t ? r.a.createElement(n.a, {
+					} = this.props, r = s && (null === e || e);
+					return t ? i.a.createElement(n.a, {
 						rootMargin: "20px 0px 20px 0px",
 						threshold: u,
 						onChange: this.onVisibilityChange
-					}, s ? r.a.createElement("div", {
-						className: Object(d.a)(p.a.Icon, this.props.className)
-					}, r.a.createElement("span", {
-						className: Object(d.a)(p.a.Animate, p.a.top, {
-							[p.a.play]: o
+					}, s ? i.a.createElement("div", {
+						className: Object(c.a)(p.a.Icon, this.props.className)
+					}, i.a.createElement("span", {
+						className: Object(c.a)(p.a.Animate, p.a.top, {
+							[p.a.play]: r
 						})
-					}, r.a.createElement("span", {
+					}, i.a.createElement("span", {
 						className: p.a.bigCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: p.a.midCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: p.a.smallCircle
-					})), r.a.createElement("p", {
+					})), i.a.createElement("p", {
 						className: p.a.IconText
-					}, Object(c.a)("Live Discussion")), r.a.createElement("span", {
-						className: Object(d.a)(p.a.Animate, p.a.bottom, {
-							[p.a.play]: o
+					}, o.fbt._("Live Discussion", null, {
+						hk: "2akFwx"
+					})), i.a.createElement("span", {
+						className: Object(c.a)(p.a.Animate, p.a.bottom, {
+							[p.a.play]: r
 						})
-					}, r.a.createElement("span", {
+					}, i.a.createElement("span", {
 						className: p.a.bigCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: p.a.midCircle
-					}), r.a.createElement("span", {
+					}), i.a.createElement("span", {
 						className: p.a.smallCircle
-					}))) : r.a.createElement("span", null)) : null
+					}))) : i.a.createElement("span", null)) : null
 				}
 			}
 			t.a = b(x)
@@ -14372,16 +14367,6 @@
 			var n = s("./src/reddit/components/TrackingHelper/index.tsx");
 			t.a = n.b
 		},
-		"./src/reddit/i18n/utils.ts": function(e, t, s) {
-			"use strict";
-
-			function n(e) {
-				return e
-			}
-			s.d(t, "a", (function() {
-				return n
-			}))
-		},
 		"./src/reddit/icons/fonts/Archived/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -16495,4 +16480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.ed6e5a004e644254597d.js.map
+//# sourceMappingURL=CollectionCommentsPage.75c0e4b3962d3b3157f2.js.map

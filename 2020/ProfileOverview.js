@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6ecf760f6909a9520cfc.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.6d19bb26e1f2145957ef.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -2511,24 +2511,24 @@
 		"./src/reddit/components/CommentsChat/LiveIcon/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/i18n/utils.ts"),
+				o = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				a = s.n(r),
+				i = s("./node_modules/react-redux/es/index.js"),
+				c = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/selectors/experiments/chatPost.ts"),
 				m = s("./src/reddit/components/CommentsChat/LiveIcon/index.m.less"),
 				p = s.n(m);
 			const u = .1,
-				b = Object(i.c)({
+				b = Object(c.c)({
 					isChatPost: l.e,
 					isChatPostExperiment: l.d
 				}),
-				h = Object(a.b)(b, e => ({
+				h = Object(i.b)(b, e => ({
 					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(l.g)(n(), t, s))
 				}));
-			class x extends r.a.Component {
+			class x extends a.a.Component {
 				constructor(e) {
 					super(e), this.onVisibilityChange = e => {
 						e.isIntersecting && e.intersectionRatio >= u ? this.state.visible || (this.setState({
@@ -2554,36 +2554,38 @@
 					} = this.state, {
 						isChatPost: t,
 						isChatPostExperiment: s
-					} = this.props, o = s && (null === e || e);
-					return t ? r.a.createElement(n.a, {
+					} = this.props, r = s && (null === e || e);
+					return t ? a.a.createElement(n.a, {
 						rootMargin: "20px 0px 20px 0px",
 						threshold: u,
 						onChange: this.onVisibilityChange
-					}, s ? r.a.createElement("div", {
-						className: Object(c.a)(p.a.Icon, this.props.className)
-					}, r.a.createElement("span", {
-						className: Object(c.a)(p.a.Animate, p.a.top, {
-							[p.a.play]: o
+					}, s ? a.a.createElement("div", {
+						className: Object(d.a)(p.a.Icon, this.props.className)
+					}, a.a.createElement("span", {
+						className: Object(d.a)(p.a.Animate, p.a.top, {
+							[p.a.play]: r
 						})
-					}, r.a.createElement("span", {
+					}, a.a.createElement("span", {
 						className: p.a.bigCircle
-					}), r.a.createElement("span", {
+					}), a.a.createElement("span", {
 						className: p.a.midCircle
-					}), r.a.createElement("span", {
+					}), a.a.createElement("span", {
 						className: p.a.smallCircle
-					})), r.a.createElement("p", {
+					})), a.a.createElement("p", {
 						className: p.a.IconText
-					}, Object(d.a)("Live Discussion")), r.a.createElement("span", {
-						className: Object(c.a)(p.a.Animate, p.a.bottom, {
-							[p.a.play]: o
+					}, o.fbt._("Live Discussion", null, {
+						hk: "2akFwx"
+					})), a.a.createElement("span", {
+						className: Object(d.a)(p.a.Animate, p.a.bottom, {
+							[p.a.play]: r
 						})
-					}, r.a.createElement("span", {
+					}, a.a.createElement("span", {
 						className: p.a.bigCircle
-					}), r.a.createElement("span", {
+					}), a.a.createElement("span", {
 						className: p.a.midCircle
-					}), r.a.createElement("span", {
+					}), a.a.createElement("span", {
 						className: p.a.smallCircle
-					}))) : r.a.createElement("span", null)) : null
+					}))) : a.a.createElement("span", null)) : null
 				}
 			}
 			t.a = h(x)
@@ -13217,16 +13219,6 @@
 			var n = s("./src/reddit/components/TrackingHelper/index.tsx");
 			t.a = n.b
 		},
-		"./src/reddit/i18n/utils.ts": function(e, t, s) {
-			"use strict";
-
-			function n(e) {
-				return e
-			}
-			s.d(t, "a", (function() {
-				return n
-			}))
-		},
 		"./src/reddit/icons/fonts/Archived/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -14985,4 +14977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.6ecf760f6909a9520cfc.js.map
+//# sourceMappingURL=ProfileOverview.6d19bb26e1f2145957ef.js.map

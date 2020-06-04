@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.75a3d8f39203839a6b2e.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b90ba664b46592c23cfe.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -53,26 +53,19 @@
 		},
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			}));
-			var s = n("./src/reddit/i18n/utils.ts");
-			const r = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-				a = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-				i = (e, t) => t ? e.getUTCDate() : e.getDate(),
-				o = (e, t, n) => {
-					const i = t ? e.getUTCMonth() : e.getMonth(),
-						o = n ? a : r;
-					return Object(s.a)(o[i])
-				},
-				c = (e, t) => t ? e.getUTCFullYear() : e.getFullYear();
 
-			function d(e, t, n, s) {
-				const r = new Date(1e3 * e),
-					a = o(r, n, s),
-					d = t ? i(r, n) + ", " : "";
-				return "".concat(a, " ").concat(d).concat(c(r, n))
+			function s(e, t, n, s) {
+				const r = new Date(1e3 * e);
+				return new Intl.DateTimeFormat("default", {
+					month: s ? "short" : "long",
+					day: t ? "numeric" : void 0,
+					year: "numeric",
+					timeZone: n ? "UTC" : void 0
+				}).format(r)
 			}
+			n.d(t, "a", (function() {
+				return s
+			}))
 		},
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
 			"use strict";
@@ -6283,16 +6276,6 @@
 					})
 				})
 		},
-		"./src/reddit/i18n/utils.ts": function(e, t, n) {
-			"use strict";
-
-			function s(e) {
-				return e
-			}
-			n.d(t, "a", (function() {
-				return s
-			}))
-		},
 		"./src/reddit/icons/fonts/Envelope/index.m.less": function(e, t, n) {
 			e.exports = {
 				Envelope: "gsQG-L1wCCIUe8dJEOA6C",
@@ -7488,4 +7471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.75a3d8f39203839a6b2e.js.map
+//# sourceMappingURL=Subreddit.b90ba664b46592c23cfe.js.map

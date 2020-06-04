@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.7620d1265fd4ec28a79a.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.430d0b8537f257028b01.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -61,24 +61,24 @@
 				h = s("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				b = s("./src/lib/classNames/index.ts"),
 				f = s("./src/lib/prettyPrintNumber/index.ts"),
-				x = s("./src/reddit/components/Governance/Token/index.tsx"),
-				g = s("./src/reddit/helpers/governance/tokens.ts"),
+				g = s("./src/reddit/components/Governance/Token/index.tsx"),
+				x = s("./src/reddit/helpers/governance/tokens.ts"),
 				v = s("./src/reddit/selectors/gov.ts"),
 				_ = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
-				E = s.n(_);
-			const k = Object(d.c)({
+				k = s.n(_);
+			const E = Object(d.c)({
 				latestWallet: v.g,
 				tokenDisplayConversion: v.o
 			});
-			var w = Object(l.b)(k)((function(e) {
+			var w = Object(l.b)(E)((function(e) {
 					const t = e.latestWallet && e.latestWallet.amount || "0";
 					return c.a.createElement("div", {
-						className: Object(b.a)(E.a.container, e.className)
-					}, "You have", c.a.createElement(x.a, {
+						className: Object(b.a)(k.a.container, e.className)
+					}, "You have", c.a.createElement(g.a, {
 						grey: !0,
-						className: E.a.token,
+						className: k.a.token,
 						subredditId: e.subredditId
-					}), Object(f.a)(Object(g.b)(t, e.tokenDisplayConversion)))
+					}), Object(f.a)(Object(x.b)(t, e.tokenDisplayConversion)))
 				})),
 				N = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				j = s("./src/reddit/controls/Button/index.tsx"),
@@ -92,9 +92,9 @@
 				T = s("./src/reddit/selectors/subreddit.ts"),
 				A = s("./src/reddit/constants/disclaimers.ts"),
 				B = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Footer/index.m.less"),
-				D = s.n(B);
+				F = s.n(B);
 			const {
-				fbt: F
+				fbt: D
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const R = Object(d.c)({
 				meta: (e, t) => {
@@ -106,24 +106,24 @@
 			});
 			var L = Object(l.b)(R)((function(e) {
 					return c.a.createElement("footer", {
-						className: D.a.container
-					}, F._("By purchasing a {membershipAlt}, you agree to the", [F._param("membershipAlt", e.meta.membershipAlt)], {
+						className: F.a.container
+					}, D._("By purchasing a {membershipAlt}, you agree to the", [D._param("membershipAlt", e.meta.membershipAlt)], {
 						hk: "3o8SmE"
 					}), c.a.createElement("a", {
-						className: D.a.link,
+						className: F.a.link,
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank"
-					}, F._("Reddit User Agreement", null, {
+					}, D._("Reddit User Agreement", null, {
 						hk: "1F3eUP"
-					})), F._("and", null, {
+					})), D._("and", null, {
 						hk: "3daFuU"
 					}), c.a.createElement("a", {
-						className: D.a.linkLast,
+						className: F.a.linkLast,
 						href: A.a,
 						target: "_blank"
-					}, F._("Reddit Beta Terms of Service", null, {
+					}, D._("Reddit Beta Terms of Service", null, {
 						hk: "1asVGG"
-					})), F._(".", null, {
+					})), D._(".", null, {
 						hk: "294bnM"
 					}))
 				})),
@@ -141,7 +141,7 @@
 					return Object(I.x)(e, s)
 				}
 			});
-			var X = Object(l.b)(H)((function(e) {
+			var Y = Object(l.b)(H)((function(e) {
 					const {
 						meta: t
 					} = e;
@@ -156,8 +156,8 @@
 						onClick: e.onClose
 					}))
 				})),
-				Y = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/index.m.less"),
-				z = s.n(Y);
+				X = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/index.m.less"),
+				z = s.n(X);
 			const {
 				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -214,7 +214,7 @@
 					} = this.props, {
 						numMonths: r
 					} = this.state, o = new n.BigNumber(e).multipliedBy(r).toString();
-					return Object(M.a)(s && s.address || "", s && s.symbol || "", Object(g.b)(o, t) || "0")
+					return Object(M.a)(s && s.address || "", s && s.symbol || "", Object(x.b)(o, t) || "0")
 				}
 				pollForMembership() {
 					if (!this.pollForMembershipSuccessTimeout) {
@@ -246,7 +246,7 @@
 					} = this.state, u = l > this.getMonthsUserCanAfford();
 					return c.a.createElement("div", {
 						className: z.a.container
-					}, c.a.createElement(X, {
+					}, c.a.createElement(Y, {
 						subredditId: a,
 						onClose: e
 					}), c.a.createElement("div", {
@@ -484,9 +484,9 @@
 				h = s("./src/reddit/selectors/activeModalId.ts"),
 				b = s("./src/higherOrderComponents/asModal/index.tsx"),
 				f = s("./src/reddit/controls/Button/index.tsx"),
-				x = s("./src/reddit/layout/row/Inline/index.tsx"),
-				g = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = s.n(g);
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				x = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				v = s.n(x);
 			var _ = Object(b.a)(e => {
 					const {
 						children: t,
@@ -494,11 +494,11 @@
 					} = e;
 					return l.a.createElement("div", {
 						className: v.a.wrapper
-					}, l.a.createElement(x.a, {
+					}, l.a.createElement(g.a, {
 						className: v.a.titleRow
 					}, s), l.a.createElement("div", {
 						className: v.a.detailsContainer
-					}, t), l.a.createElement(x.a, {
+					}, t), l.a.createElement(g.a, {
 						className: v.a.buttonRow
 					}, l.a.createElement(f.f, {
 						className: v.a.confirmButton,
@@ -507,8 +507,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				E = s("./src/reddit/controls/ErrorText/index.m.less"),
-				k = s.n(E);
+				k = s("./src/reddit/controls/ErrorText/index.m.less"),
+				E = s.n(k);
 			const w = Object(u.c)({
 				activeModalId: h.a
 			});
@@ -554,12 +554,12 @@
 						textHasOverflowed: c
 					} = this.state;
 					return l.a.createElement("div", {
-						className: Object(m.a)(k.a.wrapper, s)
+						className: Object(m.a)(E.a.wrapper, s)
 					}, l.a.createElement("span", {
-						className: k.a.description,
+						className: E.a.description,
 						ref: this.spanRef
 					}, e), c && l.a.createElement("span", {
-						className: k.a.moreText,
+						className: E.a.moreText,
 						onClick: this.toggleModal
 					}, a), t === i && l.a.createElement(_, {
 						onConfirmed: this.toggleModal,
@@ -618,7 +618,7 @@
 			})), s.d(t, "b", (function() {
 				return f
 			})), s.d(t, "c", (function() {
-				return x
+				return g
 			})), s.d(t, "d", (function() {
 				return _
 			}));
@@ -676,7 +676,7 @@
 						})
 					}, e.label), e.children)
 				},
-				x = e => {
+				g = e => {
 					const {
 						label: t,
 						children: s,
@@ -697,7 +697,7 @@
 						})
 					}, e.label), e.children)
 				},
-				g = e => r.a.createElement("div", {
+				x = e => r.a.createElement("div", {
 					className: Object(o.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", r.a.createElement(c.a, {
@@ -784,10 +784,10 @@
 					const c = !(!!n && s.length >= n) && !i;
 					return r.a.createElement("div", {
 						className: Object(o.a)(u.a.multiInputWrapper, e)
-					}, t && c && r.a.createElement(g, {
+					}, t && c && r.a.createElement(x, {
 						onClick: this.addValue,
 						text: a
-					}), this.renderFields(), !t && c && r.a.createElement(g, {
+					}), this.renderFields(), !t && c && r.a.createElement(x, {
 						onClick: this.addValue,
 						text: a
 					}))
@@ -813,10 +813,10 @@
 			})), s.d(t, "h", (function() {
 				return f
 			})), s.d(t, "i", (function() {
-				return x
+				return g
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./src/reddit/i18n/utils.ts");
+			var n = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function r() {
 				return window.ethereum
@@ -906,7 +906,9 @@
 			async function b(e, t, s) {
 				await c();
 				const r = a() || "";
-				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(Object(n.a)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(n.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [n.fbt._param("subscriberAddress", t)], {
+					hk: "3rehSL"
+				}).toString());
 				return d(e, Promise.resolve(h), "subscribe", [t, s])
 			}
 
@@ -923,14 +925,16 @@
 						else {
 							const e = t && t.result;
 							e ? s(e) : r({
-								message: Object(n.a)("No signature returned from ethereum provider.")
+								message: n.fbt._("No signature returned from ethereum provider.", null, {
+									hk: "eiYBF"
+								}).toString()
 							})
 						}
 					})
 				})
 			}
 
-			function x(e) {
+			function g(e) {
 				return new Promise((t, s) => {
 					r().sendAsync({
 						method: "metamask_watchAsset",
@@ -1010,16 +1014,6 @@
 				return s.multipliedBy(r).toFixed(0)
 			}
 		},
-		"./src/reddit/i18n/utils.ts": function(e, t, s) {
-			"use strict";
-
-			function n(e) {
-				return e
-			}
-			s.d(t, "a", (function() {
-				return n
-			}))
-		},
 		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, s) {
 			e.exports = {
 				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
@@ -1049,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.7620d1265fd4ec28a79a.js.map
+//# sourceMappingURL=SubredditPremiumBlockchainCheckoutModal.430d0b8537f257028b01.js.map

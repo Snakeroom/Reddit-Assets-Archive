@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.cb5298905db5f5c49770.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.31e4d537f9c86a62216e.js
+// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -88,7 +88,7 @@
 			})), n.d(t, "c", (function() {
 				return y
 			})), n.d(t, "f", (function() {
-				return _
+				return N
 			})), n.d(t, "g", (function() {
 				return S
 			})), n.d(t, "d", (function() {
@@ -121,8 +121,8 @@
 				w = Object(s.a)(v.i),
 				j = Object(s.a)(v.j),
 				E = Object(s.a)(v.k),
-				N = Object(s.a)(v.q),
-				_ = Object(s.a)(v.r),
+				_ = Object(s.a)(v.q),
+				N = Object(s.a)(v.r),
 				O = Object(s.a)(v.s),
 				I = Object(s.a)(v.t),
 				M = Object(s.a)(v.u),
@@ -189,7 +189,7 @@
 						})), a.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(o.f)())) : (n(N({
+					})), t && n(Object(o.f)())) : (n(_({
 						error: b.error
 					})), Object(f.a)(n, b.error))
 				}, T = e => async (t, n, a) => {
@@ -537,8 +537,8 @@
 				}
 			}
 			var E = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				N = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				_ = e => s.a.createElement("svg", {
+				_ = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				N = e => s.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 16 16",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -571,7 +571,7 @@
 						className: C.a.header
 					}, I._("Install the MetaMask Browser Extension", null, {
 						hk: "3MOJpi"
-					}), t && s.a.createElement(N.a, {
+					}), t && s.a.createElement(_.a, {
 						className: C.a.installedCheckmark
 					})), s.a.createElement("div", {
 						className: C.a.body
@@ -620,7 +620,7 @@
 						})
 					}, I._("Get Extension", null, {
 						hk: "ey9hD"
-					}), s.a.createElement(_, {
+					}), s.a.createElement(N, {
 						className: C.a.buttonIcon
 					}))))
 				}
@@ -815,9 +815,9 @@
 						className: C.a.buttonIcon
 					}))))
 				},
-				J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
-				Q = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
-				Y = n.n(Q);
+				Y = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+				J = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
+				Q = n.n(J);
 
 			function K(e) {
 				const {
@@ -825,8 +825,8 @@
 					isActive: n
 				} = e;
 				return s.a.createElement("div", {
-					className: Object(o.a)(Y.a.tab, {
-						[Y.a.tabActive]: n
+					className: Object(o.a)(Q.a.tab, {
+						[Q.a.tabActive]: n
 					})
 				}, t)
 			}! function(e) {
@@ -875,9 +875,9 @@
 				updateActiveTabLine() {
 					const e = this.el;
 					if (!e) return;
-					const t = e.getElementsByClassName(Y.a.tabActive)[0];
+					const t = e.getElementsByClassName(Q.a.tabActive)[0];
 					if (t) {
-						const n = e.getElementsByClassName(Y.a.activeTabLine)[0];
+						const n = e.getElementsByClassName(Q.a.activeTabLine)[0];
 						n.style.left = t.offsetLeft + "px", n.style.top = t.offsetTop + t.offsetHeight - 3 + "px", n.style.width = t.offsetWidth + "px"
 					}
 				}
@@ -886,13 +886,13 @@
 						activeTab: e
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Y.a.tabBar,
+						className: Q.a.tabBar,
 						ref: this.setRef
 					}, $.map(t => s.a.createElement(K, {
 						isActive: e === t.id,
 						key: t.id
 					}, t.name())), s.a.createElement("div", {
-						className: Y.a.activeTabLine
+						className: Q.a.activeTabLine
 					}))
 				}
 			}
@@ -956,16 +956,16 @@
 						activeTab: c
 					} = this.state, i = c === Z.About ? k : c === Z.MetaMask ? R : c === Z.Wallet ? X : c === Z.Connect ? j : c === Z.Verify ? F : L;
 					return s.a.createElement("article", {
-						className: Object(o.a)(Y.a.container, e)
-					}, s.a.createElement(J.a, {
+						className: Object(o.a)(Q.a.container, e)
+					}, s.a.createElement(Y.a, {
 						subredditId: a
 					}), s.a.createElement("button", {
-						className: Y.a.closeButton,
+						className: Q.a.closeButton,
 						onClick: t
 					}, s.a.createElement(u.a, {
-						className: Y.a.closeIcon
+						className: Q.a.closeIcon
 					})), s.a.createElement("div", {
-						className: Y.a.title
+						className: Q.a.title
 					}, te._("Register for Donuts Distribution on the Ethereum Blockchain", null, {
 						hk: "3kf8PF"
 					})), s.a.createElement(ee, {
@@ -1368,7 +1368,7 @@
 				return v
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./src/reddit/i18n/utils.ts");
+			var a = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function s() {
 				return window.ethereum
@@ -1458,7 +1458,9 @@
 			async function h(e, t, n) {
 				await i();
 				const s = o() || "";
-				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(Object(a.a)("Please select your registered address in MetaMask: ") + t);
+				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(a.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [a.fbt._param("subscriberAddress", t)], {
+					hk: "3rehSL"
+				}).toString());
 				return l(e, Promise.resolve(p), "subscribe", [t, n])
 			}
 
@@ -1475,7 +1477,9 @@
 						else {
 							const e = t && t.result;
 							e ? n(e) : s({
-								message: Object(a.a)("No signature returned from ethereum provider.")
+								message: a.fbt._("No signature returned from ethereum provider.", null, {
+									hk: "eiYBF"
+								}).toString()
 							})
 						}
 					})
@@ -1496,16 +1500,6 @@
 					})
 				})
 			}
-		},
-		"./src/reddit/i18n/utils.ts": function(e, t, n) {
-			"use strict";
-
-			function a(e) {
-				return e
-			}
-			n.d(t, "a", (function() {
-				return a
-			}))
 		},
 		"./src/reddit/icons/svgs/ArrowRight/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1596,9 +1590,9 @@
 			})), n.d(t, "a", (function() {
 				return E
 			})), n.d(t, "f", (function() {
-				return N
-			})), n.d(t, "r", (function() {
 				return _
+			})), n.d(t, "r", (function() {
+				return N
 			})), n.d(t, "n", (function() {
 				return O
 			})), n.d(t, "k", (function() {
@@ -1669,7 +1663,7 @@
 				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				k = (e, t) => {
-					const n = _(e, t);
+					const n = N(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -1683,11 +1677,11 @@
 						a = w(e, t);
 					return n && n.provider || a && a.provider
 				},
-				N = (e, t) => {
+				_ = (e, t) => {
 					const n = E(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
-				_ = (e, t) => {
+				N = (e, t) => {
 					const n = j(e, t),
 						a = E(e, t);
 					if (n && !n.inTransition && a === s.a.Stellar) return {
@@ -1722,4 +1716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.cb5298905db5f5c49770.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.31e4d537f9c86a62216e.js.map
