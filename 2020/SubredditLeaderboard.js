@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.59f11f56b11b4039b4ea.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.637ea36e689f99167cb4.js
+// Retrieved at 6/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1297,8 +1297,8 @@
 				V = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				K = r.n(V);
 
-			function U() {
-				return (U = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1306,7 +1306,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const X = e => {
+			const U = e => {
 				const {
 					category: t,
 					children: r,
@@ -1314,7 +1314,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, i = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
-				return o.a.createElement("li", null, o.a.createElement(J.a, U({}, t.anchorProps, {
+				return o.a.createElement("li", null, o.a.createElement(J.a, z({}, t.anchorProps, {
 					className: i,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1322,7 +1322,7 @@
 					to: t.path || ""
 				}), r, t.customIcon))
 			};
-			var z = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+			var X = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				Z = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/helpers/name/index.ts");
 			const {
@@ -1374,7 +1374,7 @@
 						}
 					}, s, e && e.map((e, n) => {
 						const s = a + n * r;
-						return o.a.createElement(X, {
+						return o.a.createElement(U, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1396,7 +1396,7 @@
 						headerClassName: s,
 						initialNumberOfCategories: a
 					} = this.props, i = t && a && t.length > a, d = Object(c.a)(r, K.a.container);
-					return o.a.createElement(z.a, {
+					return o.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, o.a.createElement("div", {
@@ -1426,7 +1426,7 @@
 					key: e
 				}, e)
 			};
-			var de = e => o.a.createElement(z.a, {
+			var de = e => o.a.createElement(X.a, {
 					className: se.a.Widget,
 					redditStyle: e.redditStyle,
 					contentOnly: !0
@@ -1480,7 +1480,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				Ce = Object(u.xc)(p.f),
+				Ce = Object(u.zc)(p.f),
 				Ee = Object(d.c)({
 					categories: e => Object(he.c)(e, {
 						categoriesOrder: Ce
@@ -1569,4 +1569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.59f11f56b11b4039b4ea.js.map
+//# sourceMappingURL=SubredditLeaderboard.637ea36e689f99167cb4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3a030a9e040a104a7825.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3d59a35698831caf3735.js
+// Retrieved at 6/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -529,9 +529,9 @@
 				y = () => void 0,
 				D = Object(a.c)({
 					crowdControlLevelEnabled: C.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.Mb.Enabled === Object(N.c)(e, {
+					postLevelCrowdControlEnabled: e => j.Ob.Enabled === Object(N.c)(e, {
 						experimentEligibilitySelector: L.I,
-						experimentName: j.Fb
+						experimentName: j.Hb
 					})
 				});
 			var S = Object(r.b)(D)(e => {
@@ -687,7 +687,7 @@
 					}
 				}),
 				G = Object(p.a)(h.a),
-				V = A(W(Object(u.c)(e => {
+				H = A(W(Object(u.c)(e => {
 					const {
 						canEditFlair: t,
 						hasModFullPerms: s,
@@ -769,7 +769,7 @@
 						post: R
 					}))
 				})));
-			t.default = V
+			t.default = H
 		},
 		"./src/reddit/components/Reports/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1405,4 +1405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.3a030a9e040a104a7825.js.map
+//# sourceMappingURL=ModerationDropdowns.3d59a35698831caf3735.js.map
