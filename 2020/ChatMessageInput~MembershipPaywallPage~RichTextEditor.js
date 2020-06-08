@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.30c49317e6e2fc1ed20e.js
-// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.f90afec31dac80f53e34.js
+// Retrieved at 6/8/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6268,7 +6268,7 @@
 					const t = (() => Object(d.a)(t => t.uploads, (t, e) => Object(T.e)(T.b.RTE_MEDIA, e.rteState.editorKey), (t, e) => i()(t, t => t.key.startsWith(e))))();
 					return Object(d.c)({
 						editorUploads: t,
-						emotesPowerupBenefitEnabled: (t, e) => {
+						emotesPowerupBenefitUnlocked: (t, e) => {
 							let {
 								destSubreddit: n
 							} = e;
@@ -6278,7 +6278,7 @@
 							})
 						},
 						emotesSpecialMembershipEnabled: x.d.spEmotes,
-						giphyPowerupBenefitEnabled: (t, e) => {
+						giphyPowerupBenefitEnabledUnlocked: (t, e) => {
 							let {
 								destSubreddit: n
 							} = e;
@@ -6768,10 +6768,10 @@
 						dataTestId: i,
 						destSubreddit: c,
 						editorType: l,
-						emotesPowerupBenefitEnabled: d,
+						emotesPowerupBenefitUnlocked: d,
 						emotesSpecialMembershipEnabled: u,
 						focusableContentRTEClassName: p,
-						giphyPowerupBenefitEnabled: g,
+						giphyPowerupBenefitEnabledUnlocked: g,
 						giphySpecialMembershipEnabled: m,
 						hideToolbar: f,
 						rteState: b,
@@ -6791,7 +6791,7 @@
 						editorState: _,
 						mediaToInsert: I,
 						confirmModalOpen: A
-					} = this.state, K = this.props.readOnly || !!I, M = R(_), L = this.isEmpty(), D = !(!e || !Object.keys(e).length), N = v({
+					} = this.state, K = this.props.readOnly || !!I, M = R(_), L = this.isEmpty(), D = !(!e || !Object.keys(e).length), N = (u || d) && D, F = m || g, P = v({
 						allowMediaUploads: r,
 						destSubreddit: c,
 						editorKey: j,
@@ -6801,12 +6801,12 @@
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
 						readOnly: K,
-						onEmoteButtonClick: D ? this.onToolbarEmoteButtonClick : void 0,
-						onGifButtonClick: m || g ? this.onToolbarGifButtonClick : void 0,
+						onEmoteButtonClick: N ? this.onToolbarEmoteButtonClick : void 0,
+						onGifButtonClick: F ? this.onToolbarGifButtonClick : void 0,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						userCanUseGifs: !!n
-					}), F = !f && (!S || y);
+					}), U = !f && (!S || y);
 					return a.a.createElement(Oc, {
 						className: t,
 						innerRef: this.setContainerRef
@@ -6821,7 +6821,7 @@
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, F && "top" === T && N, w && a.a.createElement(vo, {
+					}, U && "top" === T && P, w && a.a.createElement(vo, {
 						editorState: _,
 						readOnly: K,
 						onChange: this.onChange,
@@ -6878,18 +6878,18 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: Br()
-					})))), F && "bottom" === T && N, a.a.createElement(br, {
+					})))), U && "bottom" === T && P, a.a.createElement(br, {
 						editorState: _,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), (d || u) && D && !!c && l === Pt.a.Comment && a.a.createElement(No, {
+					}), N && !!c && l === Pt.a.Comment && a.a.createElement(No, {
 						editorState: _,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: c,
 						shouldHideAddEmote: !u
-					}), (m || g) && c && a.a.createElement(ls, {
+					}), F && c && a.a.createElement(ls, {
 						editorState: _,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
@@ -7977,4 +7977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.30c49317e6e2fc1ed20e.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.f90afec31dac80f53e34.js.map

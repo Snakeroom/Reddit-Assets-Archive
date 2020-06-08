@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.980752047841b289446d.js
-// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.269299d88fca8fc83309.js
+// Retrieved at 6/8/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -16158,7 +16158,7 @@
 					const e = (() => Object(d.a)(e => e.uploads, (e, t) => Object(_.e)(_.b.RTE_MEDIA, t.rteState.editorKey), (e, t) => i()(e, e => e.key.startsWith(t))))();
 					return Object(d.c)({
 						editorUploads: e,
-						emotesPowerupBenefitEnabled: (e, t) => {
+						emotesPowerupBenefitUnlocked: (e, t) => {
 							let {
 								destSubreddit: n
 							} = t;
@@ -16168,7 +16168,7 @@
 							})
 						},
 						emotesSpecialMembershipEnabled: C.d.spEmotes,
-						giphyPowerupBenefitEnabled: (e, t) => {
+						giphyPowerupBenefitEnabledUnlocked: (e, t) => {
 							let {
 								destSubreddit: n
 							} = t;
@@ -16658,10 +16658,10 @@
 						dataTestId: i,
 						destSubreddit: a,
 						editorType: l,
-						emotesPowerupBenefitEnabled: d,
+						emotesPowerupBenefitUnlocked: d,
 						emotesSpecialMembershipEnabled: u,
 						focusableContentRTEClassName: p,
-						giphyPowerupBenefitEnabled: h,
+						giphyPowerupBenefitEnabledUnlocked: h,
 						giphySpecialMembershipEnabled: b,
 						hideToolbar: f,
 						rteState: g,
@@ -16681,7 +16681,7 @@
 						editorState: P,
 						mediaToInsert: M,
 						confirmModalOpen: N
-					} = this.state, R = this.props.readOnly || !!M, L = S(P), D = this.isEmpty(), B = !(!t || !Object.keys(t).length), F = k({
+					} = this.state, R = this.props.readOnly || !!M, L = S(P), D = this.isEmpty(), B = !(!t || !Object.keys(t).length), F = (u || d) && B, A = b || h, U = k({
 						allowMediaUploads: r,
 						destSubreddit: a,
 						editorKey: w,
@@ -16691,12 +16691,12 @@
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
 						readOnly: R,
-						onEmoteButtonClick: B ? this.onToolbarEmoteButtonClick : void 0,
-						onGifButtonClick: b || h ? this.onToolbarGifButtonClick : void 0,
+						onEmoteButtonClick: F ? this.onToolbarEmoteButtonClick : void 0,
+						onGifButtonClick: A ? this.onToolbarGifButtonClick : void 0,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						userCanUseGifs: !!n
-					}), A = !f && (!v || x);
+					}), K = !f && (!v || x);
 					return c.a.createElement(Oa, {
 						className: e,
 						innerRef: this.setContainerRef
@@ -16711,7 +16711,7 @@
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, A && "top" === _ && F, T && c.a.createElement(ko, {
+					}, K && "top" === _ && U, T && c.a.createElement(ko, {
 						editorState: P,
 						readOnly: R,
 						onChange: this.onChange,
@@ -16768,18 +16768,18 @@
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
 						customStyleMap: Ir()
-					})))), A && "bottom" === _ && F, c.a.createElement(gr, {
+					})))), K && "bottom" === _ && U, c.a.createElement(gr, {
 						editorState: P,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), (d || u) && B && !!a && l === Ue.a.Comment && c.a.createElement(Fo, {
+					}), F && !!a && l === Ue.a.Comment && c.a.createElement(Fo, {
 						editorState: P,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: a,
 						shouldHideAddEmote: !u
-					}), (b || h) && a && c.a.createElement(ls, {
+					}), A && a && c.a.createElement(ls, {
 						editorState: P,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
@@ -30675,4 +30675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.980752047841b289446d.js.map
+//# sourceMappingURL=PostCreation.269299d88fca8fc83309.js.map
