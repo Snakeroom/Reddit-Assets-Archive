@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.2580f3f6e1d5abf85f7c.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.5488b54ac4c075d9a876.js
+// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, s, t) {
@@ -160,6 +160,7 @@
 		},
 		"./src/reddit/components/PowerupsBanner/Supporters/index.tsx": function(e, s, t) {
 			"use strict";
+			t("./node_modules/core-js/modules/es6.array.sort.js");
 			var n = t("./node_modules/react/index.js"),
 				r = t.n(n),
 				o = t("./src/lib/classNames/index.ts"),
@@ -176,7 +177,7 @@
 					supporters: n
 				} = e;
 				if (!n.length) return null;
-				const c = n.slice(0, t || u);
+				const c = n.sort((e, s) => e.supporterInfo && !s.supporterInfo ? -1 : !e.supporterInfo && s.supporterInfo ? 1 : 0).slice(0, t || u);
 				return r.a.createElement("div", {
 					className: Object(o.a)(s, {
 						[i.a.withShade]: c.length >= l && (!t || t < n.length)
@@ -229,9 +230,9 @@
 				k = t("./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.tsx"),
 				E = t("./src/reddit/components/PowerupsBanner/Supporters/index.tsx"),
 				S = t("./src/reddit/components/PowerupsBanner/index.m.less"),
-				N = t.n(S);
+				j = t.n(S);
 			const {
-				fbt: j
+				fbt: N
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			var P;
 			! function(e) {
@@ -290,38 +291,38 @@
 						show: i
 					} = this.state;
 					return s && i !== P.Hidden && t && 1 !== t.tiersInfo.length ? this.state.show === P.Dismissed ? r.a.createElement("div", {
-						className: Object(c.a)(N.a.dismissedContainer, e)
+						className: Object(c.a)(j.a.dismissedContainer, e)
 					}, r.a.createElement("div", {
-						className: N.a.dismissedText
-					}, j._("Ok, we won't show you this again.", null, {
+						className: j.a.dismissedText
+					}, N._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
 					})), r.a.createElement(_.f, {
 						onClick: this.handleUndoDismiss
-					}, j._("undo", null, {
+					}, N._("undo", null, {
 						hk: "1A9z3Y"
 					}))) : r.a.createElement("article", {
-						className: Object(c.a)(N.a.container, e)
+						className: Object(c.a)(j.a.container, e)
 					}, o && r.a.createElement(f.b, {
 						subredditOrProfile: o,
-						className: N.a.subredditIcon
+						className: j.a.subredditIcon
 					}), r.a.createElement("h2", {
-						className: N.a.title
-					}, j._("Powerups unlock features for the whole community", null, {
+						className: j.a.title
+					}, N._("Powerups unlock features for the whole community", null, {
 						hk: "2ZaVtr"
 					})), a && r.a.createElement(E.a, {
 						supporters: a,
-						className: N.a.topSupporters,
+						className: j.a.topSupporters,
 						maxSupporters: B
 					}), r.a.createElement(k.a, {
-						className: N.a.powerupsRemainingToUnlock,
+						className: j.a.powerupsRemainingToUnlock,
 						powerups: t
 					}), r.a.createElement(_.f, {
-						className: N.a.button,
+						className: j.a.button,
 						onClick: n
-					}, j._("Powerup", null, {
+					}, N._("Powerup", null, {
 						hk: "261t2N"
 					})), r.a.createElement(g.a, {
-						className: N.a.close,
+						className: j.a.close,
 						onClick: this.handleDismiss
 					})) : null
 				}
@@ -409,4 +410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.2580f3f6e1d5abf85f7c.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.5488b54ac4c075d9a876.js.map

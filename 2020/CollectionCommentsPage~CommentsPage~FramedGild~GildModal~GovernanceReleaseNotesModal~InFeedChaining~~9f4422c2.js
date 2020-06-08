@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.0ce1f406710cd8ac9e56.js
-// Retrieved at 6/8/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.9a57c07420d4bd6f88ff.js
+// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -854,16 +854,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
 			const F = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: T.vc,
+					experimentName: T.uc,
 					experimentEligibilitySelector: L.a
 				}), _.a),
 				k = Object(d.a)(F, (function(e) {
 					switch (e) {
-						case T.xc.BufferTwoSeconds:
+						case T.wc.BufferTwoSeconds:
 							return 2;
-						case T.xc.BufferFiveSeconds:
+						case T.wc.BufferFiveSeconds:
 							return 5;
-						case T.xc.BufferTenSeconds:
+						case T.wc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1791,8 +1791,8 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("0a1d25d-production", " ").concat(t);
-									return a && (s += " [".concat(T.vc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("16b8e96-production", " ").concat(t);
+									return a && (s += " [".concat(T.uc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2204,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.0ce1f406710cd8ac9e56.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.9a57c07420d4bd6f88ff.js.map

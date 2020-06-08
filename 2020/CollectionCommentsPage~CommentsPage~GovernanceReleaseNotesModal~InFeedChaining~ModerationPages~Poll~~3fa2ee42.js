@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.c98525bebfd76b64db6f.js
-// Retrieved at 6/8/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.7e9825132592bd7a957e.js
+// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const u = Object(a.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Eb
+					experimentName: l.Db
 				});
-				return Object(l.Ac)(t) ? void 0 : t
+				return Object(l.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Fb
+					experimentName: l.Eb
 				});
-				return Object(l.Ac)(t) ? void 0 : t
-			}, (e, t) => e === l.Gb.Enabled && t === l.Gb.Enabled);
+				return Object(l.zc)(t) ? void 0 : t
+			}, (e, t) => e === l.Fb.Enabled && t === l.Fb.Enabled);
 			var p = s("./src/config.ts");
 			var m = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "0a1d25d-production"
+					SENTRY_RELEASE_VERSION: "16b8e96-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -608,8 +608,8 @@
 				V = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				A = s("./src/reddit/helpers/name/index.ts"),
 				H = s("./src/reddit/helpers/postHasSelfText/index.ts"),
-				W = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
-				F = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
+				F = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
+				W = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				B = s("./src/reddit/models/Media/index.ts"),
 				U = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				k = s("./src/reddit/selectors/postCreations.ts"),
@@ -618,8 +618,8 @@
 				K = s("./src/reddit/components/Media/index.m.less"),
 				J = s.n(K);
 
-			function q() {
-				return (q = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -627,7 +627,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = Object(o.a)({
+			const q = Object(o.a)({
 					resolved: {},
 					chunkName: () => "LiveVideoPlayer",
 					isReady(e) {
@@ -956,11 +956,11 @@
 						}),
 						se = this.shouldBlur(),
 						ie = !(!u.isSponsored || !u.source);
-					if (G && se) return c.a.createElement(I.a, q({}, ee, {
+					if (G && se) return c.a.createElement(I.a, z({}, ee, {
 						blurSrc: G
 					}), c.a.createElement(te, {
 						isVisible: y
-					}, c.a.createElement(S.a, q({}, $, {
+					}, c.a.createElement(S.a, z({}, $, {
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
 						imageClassName: this.props.imageBoxClassName,
@@ -993,7 +993,7 @@
 								showFull: x
 							}, c.a.createElement(N.a, {
 								flairStyleTemplate: s,
-								content: u.isMeta ? Object(F.a)(i, u.id) : i,
+								content: u.isMeta ? Object(W.a)(i, u.id) : i,
 								mediaMetadata: u.media.mediaMetadata,
 								postId: u.id,
 								rtJsonElementProps: ce(this.props),
@@ -1019,16 +1019,16 @@
 									showFull: x
 								}, c.a.createElement(j.a, {
 									flairStyleTemplate: s,
-									html: u.isMeta ? Object(W.a)(u.media.content, u.id, J.a.hiddenLink) : u.media.content
+									html: u.isMeta ? Object(F.a)(u.media.content, u.id, J.a.hiddenLink) : u.media.content
 								}))
 							}
 							return null;
 						case B.n.EMBED:
-							return this.props.isMiniCard && u.preview && u.preview.url ? c.a.createElement(I.a, q({}, ee, {
+							return this.props.isMiniCard && u.preview && u.preview.url ? c.a.createElement(I.a, z({}, ee, {
 								alwaysWrapMedia: !0
 							}), c.a.createElement(te, {
 								isVisible: y
-							}, c.a.createElement(c.a.Fragment, null, c.a.createElement(S.a, q({}, $, {
+							}, c.a.createElement(c.a.Fragment, null, c.a.createElement(S.a, z({}, $, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1049,7 +1049,7 @@
 								onIframeLoaded: this.onIframeLoaded,
 								source: k,
 								title: u.title
-							}) : c.a.createElement(I.a, q({}, ee, {
+							}) : c.a.createElement(I.a, z({}, ee, {
 								alwaysWrapMedia: !0,
 								height: o ? Y : B.i,
 								width: o ? K : B.i * (16 / 9)
@@ -1064,9 +1064,9 @@
 								showFull: x,
 								source: k,
 								title: u.title
-							})) : c.a.createElement(I.a, q({}, ee, {
+							})) : c.a.createElement(I.a, z({}, ee, {
 								alwaysWrapMedia: !0
-							}), y && c.a.createElement(O.a, q({}, $, {
+							}), y && c.a.createElement(O.a, z({}, $, {
 								isResponsive: o || u.media.provider === B.t.IFrameEmbed,
 								title: u.title,
 								childRef: this.storeChildRef,
@@ -1077,11 +1077,11 @@
 						case B.n.GIFVIDEO: {
 							let e = Y,
 								t = K;
-							return e > B.i && (t = K / Y * (e = B.i)), c.a.createElement(I.a, q({}, ee, {
+							return e > B.i && (t = K / Y * (e = B.i)), c.a.createElement(I.a, z({}, ee, {
 								blurSrc: X ? u.media.gifBackgroundImage : void 0
 							}), c.a.createElement(te, {
 								isVisible: y
-							}, c.a.createElement(M.a, q({}, $, {
+							}, c.a.createElement(M.a, z({}, $, {
 								isNotCardView: d,
 								height: o ? void 0 : e,
 								width: o ? void 0 : t,
@@ -1094,11 +1094,11 @@
 						}
 						case B.n.VIDEO: {
 							const e = u.media.posterUrl || u.preview && u.preview.url;
-							if (this.props.isMiniCard && e) return c.a.createElement(I.a, q({}, ee, {
+							if (this.props.isMiniCard && e) return c.a.createElement(I.a, z({}, ee, {
 								alwaysWrapMedia: !0
 							}), c.a.createElement(te, {
 								isVisible: y
-							}, c.a.createElement(c.a.Fragment, null, c.a.createElement(S.a, q({}, $, {
+							}, c.a.createElement(c.a.Fragment, null, c.a.createElement(S.a, z({}, $, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1112,7 +1112,7 @@
 								source: e,
 								originalSource: e
 							})), c.a.createElement(T.a, null))));
-							const s = c.a.createElement(I.a, q({}, ee, {
+							const s = c.a.createElement(I.a, z({}, ee, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), y && c.a.createElement(Q, {
@@ -1143,7 +1143,7 @@
 						case B.n.LIVEVIDEO:
 							return c.a.createElement(te, {
 								isVisible: y
-							}, c.a.createElement(z, {
+							}, c.a.createElement(q, {
 								canLoad: y,
 								postId: u.id,
 								postTitle: u.title,
@@ -1154,12 +1154,12 @@
 							const w = this.state.viewportHeight - 2 * Z,
 								D = this.state.viewportWidth - 2 * Z;
 							let P, G = k;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (u.thumbnail && Object(b.a)(u.thumbnail.url) ? G = u.thumbnail.url : u.preview && Object(b.a)(u.preview.url) && (G = u.preview.url)), l && (P = g ? "".concat(g, " - ").concat(u.title) : u.title), c.a.createElement(I.a, q({}, ee, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (u.thumbnail && Object(b.a)(u.thumbnail.url) ? G = u.thumbnail.url : u.preview && Object(b.a)(u.preview.url) && (G = u.preview.url)), l && (P = g ? "".concat(g, " - ").concat(u.title) : u.title), c.a.createElement(I.a, z({}, ee, {
 								blurSrc: X ? G : void 0,
 								isExpando: !!o
 							}), c.a.createElement(te, {
 								isVisible: y
-							}, c.a.createElement(S.a, q({}, $, {
+							}, c.a.createElement(S.a, z({}, $, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1286,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.c98525bebfd76b64db6f.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~3fa2ee42.7e9825132592bd7a957e.js.map

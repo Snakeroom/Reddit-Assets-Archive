@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.6998b9b7fef793d18326.js
-// Retrieved at 6/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.c6d5369f80511ca6ee17.js
+// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -56,7 +56,7 @@
 				b = t("./src/reddit/helpers/trackers/announcement.ts"),
 				x = t("./src/reddit/hooks/useTracking.ts"),
 				p = t("./src/reddit/selectors/experiments/index.ts");
-			const A = e => {
+			const _ = e => {
 				let {
 					announcements: n,
 					setActiveIndex: t,
@@ -75,7 +75,7 @@
 									} = e;
 									return n === t.experimentName
 								});
-								if (n && Object(u.Ac)(n.variant)) return !1
+								if (n && Object(u.zc)(n.variant)) return !1
 							}
 							return !((n[t.id] || 0) >= t.maxImpressionsCount)
 						})(o, e)).slice(0, 5),
@@ -83,8 +83,8 @@
 					d()(a.map(e => e.id), c.map(e => e.id)) || (i(a), t(a.indexOf(r)), s(!1))
 				}, [])
 			};
-			var _ = t("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
-				C = t.n(_);
+			var A = t("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
+				C = t.n(A);
 			const h = i.a.memo(e => {
 				let {
 					announcement: n,
@@ -116,7 +116,7 @@
 					announcements: n
 				} = e;
 				const [t, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!0), [u, p] = Object(a.useState)(0);
-				A({
+				_({
 					announcements: n,
 					setActiveIndex: p,
 					setIsHidden: m,
@@ -124,7 +124,7 @@
 					visibleAnnouncements: t
 				});
 				const {
-					onCarouselNavigate: _,
+					onCarouselNavigate: A,
 					isTransitionComplete: O
 				} = (e => {
 					let {
@@ -210,7 +210,7 @@
 					className: C.a.Carousel
 				}, t.length > 1 && i.a.createElement("button", {
 					className: C.a.LeftArrow,
-					onClick: _("prev")
+					onClick: A("prev")
 				}, i.a.createElement(o.a, null)), i.a.createElement("div", {
 					className: C.a.AnnouncementsWrapper
 				}, t.map((e, n) => i.a.createElement(h, {
@@ -226,7 +226,7 @@
 					onClick: E
 				}))), t.length > 1 && i.a.createElement("button", {
 					className: C.a.RightArrow,
-					onClick: _("next")
+					onClick: A("next")
 				}, i.a.createElement(o.a, null))), t.length > 1 && i.a.createElement("div", {
 					className: C.a.Dots
 				}, t.map((e, n) => i.a.createElement("button", {
@@ -266,4 +266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FeaturedLiveEntrypointAnnouncementsCarousel.6998b9b7fef793d18326.js.map
+//# sourceMappingURL=FeaturedLiveEntrypointAnnouncementsCarousel.c6d5369f80511ca6ee17.js.map

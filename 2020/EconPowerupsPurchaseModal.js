@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.442d5ab7275ac697d840.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c7f23a0268a88dc13b89.js
+// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -142,9 +142,9 @@
 				N = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = a("./src/reddit/models/Gold/Powerups/index.ts"),
 				j = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/BenefitsGrid/index.m.less"),
-				M = a.n(j);
+				y = a.n(j);
 			const {
-				fbt: y
+				fbt: M
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var S = e => {
 					const {
@@ -152,22 +152,22 @@
 						benefits: a
 					} = e;
 					return a.length ? n.a.createElement("div", {
-						className: Object(u.a)(t, M.a.benefits)
+						className: Object(u.a)(t, y.a.benefits)
 					}, a.map(e => n.a.createElement("div", {
-						className: M.a.benefit,
+						className: y.a.benefit,
 						key: e
 					}, n.a.createElement("h2", {
-						className: M.a.benefitTitle
+						className: y.a.benefitTitle
 					}, C.c[e]), C.b[e] && n.a.createElement("span", {
-						className: M.a.benefitDescription
+						className: y.a.benefitDescription
 					}, C.b[e])))) : n.a.createElement("div", {
-						className: Object(u.a)(t, M.a.benefits)
+						className: Object(u.a)(t, y.a.benefits)
 					}, n.a.createElement("div", {
-						className: M.a.benefit,
+						className: y.a.benefit,
 						key: "default"
 					}, n.a.createElement("h2", {
-						className: M.a.benefitTitle
-					}, y._("Default", null, {
+						className: y.a.benefitTitle
+					}, M._("Default", null, {
 						hk: "1AGsQj"
 					}))))
 				},
@@ -610,8 +610,8 @@
 						hk: "35mYoJ"
 					}))))
 				})),
-				Me = a("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
-				ye = a.n(Me);
+				ye = a("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
+				Me = a.n(ye);
 
 			function Se() {
 				return (Se = Object.assign || function(e) {
@@ -639,14 +639,14 @@
 						purchaseCompleted: a
 					} = e, [l, c] = Object(r.useState)(Te.Marketing), i = Object(s.c)(), u = () => i(Object(d.g)(o.a.ECON_POWERUPS_PURCHASE));
 					return t ? n.a.createElement("div", {
-						className: ye.a.inner
+						className: Me.a.inner
 					}, n.a.createElement("div", {
-						className: ye.a.modalHeader
+						className: Me.a.modalHeader
 					}, l !== Te.Purchase || a ? n.a.createElement(E.a, {
-						className: ye.a.closeIcon,
+						className: Me.a.closeIcon,
 						onClick: u
 					}) : n.a.createElement(b.a, {
-						className: ye.a.backIcon,
+						className: Me.a.backIcon,
 						onClick: () => c(Te.Marketing)
 					})), l === Te.Marketing && !a && n.a.createElement(V, {
 						subredditId: t,
@@ -662,7 +662,7 @@
 				})),
 				Le = Object(c.a)(Oe(Be(Ae)));
 			t.default = e => n.a.createElement(Le, Se({}, e, {
-				className: Object(u.a)(e.className, ye.a.modal)
+				className: Object(u.a)(e.className, Me.a.modal)
 			}))
 		},
 		"./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less": function(e, t, a) {
@@ -776,6 +776,7 @@
 		},
 		"./src/reddit/components/PowerupsBanner/Supporters/index.tsx": function(e, t, a) {
 			"use strict";
+			a("./node_modules/core-js/modules/es6.array.sort.js");
 			var r = a("./node_modules/react/index.js"),
 				n = a.n(r),
 				s = a("./src/lib/classNames/index.ts"),
@@ -792,7 +793,7 @@
 					supporters: r
 				} = e;
 				if (!r.length) return null;
-				const c = r.slice(0, a || m);
+				const c = r.sort((e, t) => e.supporterInfo && !t.supporterInfo ? -1 : !e.supporterInfo && t.supporterInfo ? 1 : 0).slice(0, a || m);
 				return n.a.createElement("div", {
 					className: Object(s.a)(t, {
 						[o.a.withShade]: c.length >= u && (!a || a < r.length)
@@ -900,4 +901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.442d5ab7275ac697d840.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.c7f23a0268a88dc13b89.js.map
