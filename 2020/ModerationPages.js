@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.9a2c87ae6aeb23b7ea67.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f9ed5be4843817c3c5cb.js
+// Retrieved at 6/8/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -10448,7 +10448,7 @@
 					})
 				}), e.user.isGold && o.a.createElement(x.a, {
 					to: "/premium"
-				}, o.a.createElement(pe, null))), o.a.createElement(he, null, e.user.username && o.a.createElement(ge, null, e.user.username, o.a.createElement(fe, null, "•")), o.a.createElement(ge, null, Object(C.d)(e.user.created)))),
+				}, o.a.createElement(pe, null))), o.a.createElement(he, null, e.user.username && o.a.createElement(ge, null, e.user.username, o.a.createElement(fe, null, "•")), o.a.createElement(ge, null, Object(C.d)(e.user.createdUtc || e.user.created)))),
 				Me = e => {
 					const {
 						showAwardKarma: t,
@@ -28870,4 +28870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.9a2c87ae6aeb23b7ea67.js.map
+//# sourceMappingURL=ModerationPages.f9ed5be4843817c3c5cb.js.map

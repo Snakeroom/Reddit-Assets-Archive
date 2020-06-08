@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.cb80ba7b6324e2197fe3.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.62fdb26aed467ef4c93f.js
+// Retrieved at 6/8/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -226,7 +226,7 @@
 					})
 				}), e.user.isGold && a.a.createElement(h.a, {
 					to: "/premium"
-				}, a.a.createElement(pe, null))), a.a.createElement(ve, null, e.user.username && a.a.createElement(Ce, null, e.user.username, a.a.createElement(xe, null, "•")), a.a.createElement(Ce, null, Object(f.d)(e.user.created)))),
+				}, a.a.createElement(pe, null))), a.a.createElement(ve, null, e.user.username && a.a.createElement(Ce, null, e.user.username, a.a.createElement(xe, null, "•")), a.a.createElement(Ce, null, Object(f.d)(e.user.createdUtc || e.user.created)))),
 				Ue = e => {
 					const {
 						showAwardKarma: t,
@@ -999,4 +999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.cb80ba7b6324e2197fe3.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.62fdb26aed467ef4c93f.js.map

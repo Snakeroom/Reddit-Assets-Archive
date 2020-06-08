@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.573d29ad39537c489e2b.js
-// Retrieved at 6/4/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.8a898641e0576d333f41.js
+// Retrieved at 6/8/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -194,8 +194,8 @@
 				B = n("./src/reddit/selectors/user.ts"),
 				S = n("./src/reddit/actions/tooltip.ts"),
 				L = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				k = n("./src/reddit/components/ProfileIdCard/Highlight.m.less"),
-				U = n.n(k);
+				U = n("./src/reddit/components/ProfileIdCard/Highlight.m.less"),
+				k = n.n(U);
 
 			function T() {
 				return (T = Object.assign || function(e) {
@@ -206,10 +206,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = c.a.div("Container", U.a),
-				W = c.a.div("Body", U.a),
-				F = c.a.h5("Title", U.a),
-				M = c.a.span("Label", U.a);
+			const D = c.a.div("Container", k.a),
+				W = c.a.div("Body", k.a),
+				F = c.a.h5("Title", k.a),
+				M = c.a.span("Label", k.a);
 			class K extends o.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
@@ -256,7 +256,7 @@
 				}, (e, t) => ({
 					commentKarma: t ? t.commentKarma : 0,
 					postKarma: t ? t.postKarma : 0,
-					profileCreated: t ? t.created : 0,
+					profileCreated: t && (t.createdUtc || t.created) || 0,
 					subscribers: e && e.subscribers || 0,
 					totalKarma: t ? t.totalKarma || t.postKarma + t.commentKarma : 0
 				})),
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.573d29ad39537c489e2b.js.map
+//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.8a898641e0576d333f41.js.map
