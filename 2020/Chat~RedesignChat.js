@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e4610bd2c8c750846efc.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.25e50612abfbde73c78b.js
+// Retrieved at 6/8/2020, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1468,12 +1468,12 @@
 								if (e.ok) {
 									const {
 										valid_until: t,
-										sb_access_token: s
+										sb_access_token: a
 									} = e.body;
 									n = {
 										expires: t,
-										token: s
-									}, Object(a.c)(c, n, new Date(t))
+										token: a
+									}
 								}
 							}
 							if (n) return void t(g(Object.assign({}, n, {
@@ -14041,4 +14041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.e4610bd2c8c750846efc.js.map
+//# sourceMappingURL=Chat~RedesignChat.25e50612abfbde73c78b.js.map
