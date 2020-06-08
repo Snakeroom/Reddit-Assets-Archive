@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.740a4b4ee36a4aa2259b.js
-// Retrieved at 6/5/2020, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7a04ba268d136e5db26e.js
+// Retrieved at 6/8/2020, 12:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -508,8 +508,8 @@
 				x = a("./src/reddit/selectors/comments.ts"),
 				C = a("./src/reddit/selectors/communityAwards.ts"),
 				O = a("./src/reddit/selectors/experiments/econAwardSheetV2.ts"),
-				I = a("./src/reddit/selectors/experiments/goldPremiumAwards.ts"),
-				P = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				P = a("./src/reddit/selectors/experiments/goldPremiumAwards.ts"),
+				I = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				_ = a("./src/reddit/selectors/gild.ts"),
 				j = a("./src/reddit/selectors/gold/giveAwards.ts"),
 				S = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -860,7 +860,7 @@
 						className: Ce.a.sheen
 					}))
 				};
-			class Ie extends n.a.Component {
+			class Pe extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionClick = () => {
 						const {
@@ -915,7 +915,7 @@
 					})))
 				}
 			}
-			var Pe = Ie;
+			var Ie = Pe;
 			const {
 				fbt: _e
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -949,7 +949,7 @@
 						hk: "2HH3hC"
 					})), n.a.createElement("div", {
 						className: ve.a.awardSection
-					}, e.map(e => n.a.createElement(Pe, {
+					}, e.map(e => n.a.createElement(Ie, {
 						award: e,
 						isSelected: e.id === s.id,
 						key: e.id,
@@ -975,7 +975,7 @@
 						hk: "35bhoK"
 					})), n.a.createElement("div", {
 						className: ve.a.awardSection
-					}, e.map(e => n.a.createElement(Pe, {
+					}, e.map(e => n.a.createElement(Ie, {
 						award: e,
 						isSelected: e.id === s.id,
 						key: e.id,
@@ -999,7 +999,7 @@
 						hk: "1RRXJc"
 					})), n.a.createElement("div", {
 						className: ve.a.awardSection
-					}, e.map(e => n.a.createElement(Pe, {
+					}, e.map(e => n.a.createElement(Ie, {
 						award: e,
 						isSelected: e.id === s.id,
 						key: e.id,
@@ -1030,7 +1030,7 @@
 						className: ve.a.awardSection
 					}, e.map(e => {
 						const t = e.id === s.id;
-						return n.a.createElement(Pe, {
+						return n.a.createElement(Ie, {
 							award: e,
 							isSelected: t,
 							key: e.id,
@@ -1060,7 +1060,7 @@
 						className: ve.a.awardSection
 					}, e.map(e => {
 						const t = e.id === s.id;
-						return n.a.createElement(Pe, {
+						return n.a.createElement(Ie, {
 							award: e,
 							isSelected: t,
 							key: e.id,
@@ -1234,7 +1234,7 @@
 						});
 						if (!a) return {};
 						const s = !!a.media && "rpan" === a.media.type,
-							n = s && Object(P.d)(e, t.thingId, y.k);
+							n = s && Object(I.d)(e, t.thingId, y.k);
 						return {
 							post: Object.assign({}, a, {
 								isRPANBroadcast: s,
@@ -1476,7 +1476,7 @@
 						E = b[f],
 						[N, x] = Object(s.useState)(!1),
 						[C, O] = Object(s.useState)(1),
-						I = Object(s.useCallback)(e => {
+						P = Object(s.useCallback)(e => {
 							if (null !== e) {
 								const t = e.clientWidth,
 									{
@@ -1494,7 +1494,7 @@
 					if (a || !t.length) return n.a.createElement("div", {
 						className: Fe.a.awardSelectorPane
 					});
-					const P = e => {
+					const I = e => {
 						i(e);
 						const t = v.find(e => e.tag === f) || tt,
 							a = E.findIndex(t => t === e.id),
@@ -1524,7 +1524,7 @@
 						className: Object(o.a)(Fe.a.awardSection, {
 							[Fe.a.singleRowGrid]: N
 						}),
-						ref: I
+						ref: P
 					}, E.map(e => {
 						const t = p[e].award,
 							a = e === d.id;
@@ -1534,7 +1534,7 @@
 							isSelected: a,
 							key: t.id,
 							premiumUser: r,
-							onSelect: P,
+							onSelect: I,
 							thingId: m
 						})
 					})))))
@@ -1693,7 +1693,7 @@
 					})
 				},
 				purchaseCatalogPending: S.g,
-				showPremiumAwards: I.a,
+				showPremiumAwards: P.a,
 				showPurchaseModal: A.r,
 				selectedAward: j.a,
 				subreddit: M.I,
@@ -1752,7 +1752,7 @@
 					let {
 						thingId: a
 					} = t;
-					return Object(P.d)(e, a, y.k)
+					return Object(I.d)(e, a, y.k)
 				}
 			}), e => {
 				const {
@@ -1891,8 +1891,8 @@
 						selectedAward: x,
 						sendEvent: C,
 						showPurchaseModal: O,
-						showPremiumAwards: I,
-						subreddit: P,
+						showPremiumAwards: P,
+						subreddit: I,
 						subredditCoins: _,
 						subredditName: j,
 						tags: S,
@@ -1908,7 +1908,7 @@
 					if (R && F) return n.a.createElement(D, {
 						isCompletePaypal: !1
 					});
-					const W = P ? P.name : j,
+					const W = I ? I.name : j,
 						z = !(!m || !m.isGold),
 						q = {
 							needPayment: v,
@@ -1953,8 +1953,8 @@
 						onSelect: this.props.selectAward,
 						selectedAward: x,
 						sendEvent: C,
-						showPremiumAwards: I,
-						subreddit: P,
+						showPremiumAwards: P,
+						subreddit: I,
 						subredditName: W,
 						thingId: k,
 						isLivestream: g,
@@ -1976,7 +1976,7 @@
 					})), !r && n.a.createElement(Te, lt({
 						errorMessage: u || void 0,
 						sendEvent: C,
-						subreddit: P,
+						subreddit: I,
 						subredditName: W,
 						subredditCoins: _,
 						userCoins: y
@@ -2153,7 +2153,7 @@
 			a.d(t, "k", (function() {
 				return C
 			})), a.d(t, "l", (function() {
-				return P
+				return I
 			})), a.d(t, "m", (function() {
 				return _
 			})), a.d(t, "g", (function() {
@@ -2255,7 +2255,7 @@
 					const c = new Set([...s, ...n]);
 					return Object.keys(a).filter(e => !c.has(e)).map(e => a[e]).filter(e => e.rank !== r.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.b.KILLED && e.stream.state !== o.b.PURGED).map(e => e.post.id)
 				}),
-				I = Object(s.a)((e, t) => {
+				P = Object(s.a)((e, t) => {
 					let {
 						count: a
 					} = t;
@@ -2273,21 +2273,18 @@
 					const s = a.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? s.slice(0, e) : s
 				}),
-				P = Object(s.a)(x, I, (e, t) => {
-					const a = t.find(t => {
-						const a = e[t];
-						return !!a && a.stream.state === o.b.IS_LIVE
-					});
+				I = Object(s.a)(x, P, (e, t) => {
+					const a = t[0];
 					if (a) return e[a]
 				}),
-				_ = Object(s.a)(x, I, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				_ = Object(s.a)(x, P, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				j = Object(s.a)(w, (e, t) => {
 					let {
 						related: a,
 						streamIdFromPath: s,
 						subreddit: n
 					} = t;
-					return I(e, {
+					return P(e, {
 						listingName: a || n,
 						streamIdFromPath: s
 					})
@@ -2307,7 +2304,7 @@
 						streamIdFromPath: s,
 						subreddit: n
 					} = t;
-					return I(e, {
+					return P(e, {
 						listingName: a || n,
 						streamIdFromPath: s
 					})
@@ -2334,7 +2331,7 @@
 						streamIdFromPath: s,
 						subreddit: n
 					} = t;
-					return I(e, {
+					return P(e, {
 						listingName: a || n,
 						streamIdFromPath: s
 					})
@@ -2407,4 +2404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.740a4b4ee36a4aa2259b.js.map
+//# sourceMappingURL=FramedGild~GildModal.7a04ba268d136e5db26e.js.map

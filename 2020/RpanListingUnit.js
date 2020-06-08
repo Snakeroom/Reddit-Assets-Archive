@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8c7e37b1445cf0e5890d.js
-// Retrieved at 6/6/2020, 10:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.8d23a676ea8fdebd38d6.js
+// Retrieved at 6/8/2020, 12:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "fa699fc-production"
+					SENTRY_RELEASE_VERSION: "9c7e939-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -1200,30 +1200,35 @@
 					}))))
 				}
 				renderInfo() {
-					const {
-						stream: e,
-						totalLiveWatchers: t
-					} = this.props;
-					if (!e || !this.state.isReady) return;
-					const s = Math.max(1, t);
-					return i.a.createElement("div", {
+					if (this.props.stream && this.state.isReady) return i.a.createElement("div", {
 						className: G.a.infoContainer
-					}, i.a.createElement("div", {
+					}, this.renderExpandIcon(), this.renderLiveStatus(), this.renderWatcherCount())
+				}
+				renderExpandIcon() {
+					return i.a.createElement("div", {
 						className: G.a.bigExpando
 					}, i.a.createElement(U.a, {
 						className: G.a.bigExpandoIcon
-					})), i.a.createElement("span", {
+					}))
+				}
+				renderLiveStatus() {
+					return this.isLive ? i.a.createElement("span", {
+						className: G.a.liveStatus
+					}, z._("Live", null, {
+						hk: "TwJSs"
+					})) : null
+				}
+				renderWatcherCount() {
+					if (!this.isLive) return null;
+					const e = Math.max(1, this.props.totalLiveWatchers);
+					return i.a.createElement("span", {
 						className: G.a.watchingCount
 					}, z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [z._plural(s, "number")], {
+					}, [z._plural(e, "number")], {
 						hk: "33zJ5F"
-					})), this.isLive && i.a.createElement("span", {
-						className: G.a.liveStatus
-					}, z._("Live", null, {
-						hk: "TwJSs"
-					})))
+					}))
 				}
 				renderThumbnail() {
 					return i.a.createElement("div", {
@@ -1572,4 +1577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.8c7e37b1445cf0e5890d.js.map
+//# sourceMappingURL=RpanListingUnit.8d23a676ea8fdebd38d6.js.map

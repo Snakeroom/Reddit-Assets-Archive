@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c91dc809c1ebe599595b.js
-// Retrieved at 6/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1831c242577de4762f8b.js
+// Retrieved at 6/8/2020, 12:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -7319,10 +7319,7 @@
 					return e ? s.slice(0, e) : s
 				}),
 				k = Object(s.a)(_, j, (e, t) => {
-					const n = t.find(t => {
-						const n = e[t];
-						return !!n && n.stream.state === o.b.IS_LIVE
-					});
+					const n = t[0];
 					if (n) return e[n]
 				}),
 				N = Object(s.a)(_, j, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
@@ -7476,4 +7473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.c91dc809c1ebe599595b.js.map
+//# sourceMappingURL=Subreddit.1831c242577de4762f8b.js.map

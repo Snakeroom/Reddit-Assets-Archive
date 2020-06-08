@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.25a0f3bb2fcbeb9f4ed0.js
-// Retrieved at 6/3/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.e3c544b7865568a82d78.js
+// Retrieved at 6/8/2020, 12:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -350,11 +350,11 @@
 			})), s.d(t, "h", (function() {
 				return _
 			})), s.d(t, "q", (function() {
-				return S
-			})), s.d(t, "m", (function() {
 				return g
-			})), s.d(t, "p", (function() {
+			})), s.d(t, "m", (function() {
 				return R
+			})), s.d(t, "p", (function() {
+				return S
 			})), s.d(t, "w", (function() {
 				return j
 			})), s.d(t, "n", (function() {
@@ -506,7 +506,7 @@
 					noun: "chat",
 					playback: d(s, e, t)
 				}, c(s, e)),
-				S = e => t => {
+				g = e => t => {
 					const s = Object(n.k)(t, e);
 					return Object.assign({
 						source: "stream_chat",
@@ -514,7 +514,7 @@
 						noun: "send_chat"
 					}, c(t, s))
 				},
-				g = (e, t, s) => r => Object.assign({
+				R = (e, t, s) => r => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -523,7 +523,7 @@
 					},
 					playback: d(r, t, s)
 				}, c(r, t)),
-				R = (e, t) => s => Object.assign({
+				S = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "scrub",
 					noun: "video",
@@ -586,7 +586,7 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "k", (function() {
-				return S
+				return g
 			})), s.d(t, "l", (function() {
 				return j
 			})), s.d(t, "m", (function() {
@@ -664,10 +664,10 @@
 						})
 					}, r)
 				}),
-				S = (e, t) => {
+				g = (e, t) => {
 					return _(e)[Object(n.g)(t)]
 				},
-				g = Object(r.a)((e, t) => {
+				R = Object(r.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -690,7 +690,7 @@
 					const d = new Set([...r, ...i]);
 					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.b.KILLED && e.stream.state !== o.b.PURGED).map(e => e.post.id)
 				}),
-				R = Object(r.a)((e, t) => {
+				S = Object(r.a)((e, t) => {
 					let {
 						count: s
 					} = t;
@@ -700,7 +700,7 @@
 						listingName: s,
 						streamIdFromPath: r
 					} = t;
-					return g(e, {
+					return R(e, {
 						listingName: s,
 						streamIdFromPath: r
 					})
@@ -708,21 +708,18 @@
 					const r = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? r.slice(0, e) : r
 				}),
-				j = Object(r.a)(_, R, (e, t) => {
-					const s = t.find(t => {
-						const s = e[t];
-						return !!s && s.stream.state === o.b.IS_LIVE
-					});
+				j = Object(r.a)(_, S, (e, t) => {
+					const s = t[0];
 					if (s) return e[s]
 				}),
-				I = Object(r.a)(_, R, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				I = Object(r.a)(_, S, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				L = Object(r.a)(E, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: r,
 						subreddit: i
 					} = t;
-					return R(e, {
+					return S(e, {
 						listingName: s || i,
 						streamIdFromPath: r
 					})
@@ -742,7 +739,7 @@
 						streamIdFromPath: r,
 						subreddit: i
 					} = t;
-					return R(e, {
+					return S(e, {
 						listingName: s || i,
 						streamIdFromPath: r
 					})
@@ -769,7 +766,7 @@
 						streamIdFromPath: r,
 						subreddit: i
 					} = t;
-					return R(e, {
+					return S(e, {
 						listingName: s || i,
 						streamIdFromPath: r
 					})
@@ -793,7 +790,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? S(e, s) : void 0
+					return s ? g(e, s) : void 0
 				}, e => !e || e.chat_disabled);
 
 			function U(e, t) {
@@ -842,4 +839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.25a0f3bb2fcbeb9f4ed0.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.e3c544b7865568a82d78.js.map
