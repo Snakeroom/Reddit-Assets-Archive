@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.206513de7ce0c805d05b.js
-// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.3bdd6498eb7442459635.js
+// Retrieved at 6/8/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -537,14 +537,15 @@
 					onOpenReportsDropdown: te,
 					post: re,
 					redditStyle: se,
-					showAwardsPlaque: oe,
-					showBulkActionCheckbox: ne,
-					showEditFlair: ie,
-					showMedia: ae,
-					sendEvent: de,
-					subredditOrProfile: ce,
-					toggleCheckbox: le
-				} = e, pe = se ? void 0 : c, ue = Object(B.a)(Y), me = K && ue, be = Object(R.a)(Y), he = Object(L.a)(Y), xe = Object(P.c)(re), fe = Object(A.a)(re), ge = p && !ae, ve = ge && !!re.source && !s, ye = !(V && D || H || W), Oe = o.a.createElement(S.a, {
+					shouldHideFlair: oe,
+					showAwardsPlaque: ne,
+					showBulkActionCheckbox: ie,
+					showEditFlair: ae,
+					showMedia: de,
+					sendEvent: ce,
+					subredditOrProfile: le,
+					toggleCheckbox: pe
+				} = e, ue = se ? void 0 : c, me = Object(B.a)(Y), be = K && me, he = Object(R.a)(Y), xe = Object(L.a)(Y), fe = Object(P.c)(re), ge = Object(A.a)(re), ve = p && !de, ye = ve && !!re.source && !s, Oe = !(V && D || H || W), Pe = o.a.createElement(S.a, {
 					className: Object(d.a)(J.a.container, r, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(F.a)(e), {
 						[Q.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 					}),
@@ -557,16 +558,16 @@
 				}, o.a.createElement(w.a, {
 					model: re,
 					handleVote: e.handleVote,
-					showBulkActionCheckbox: ne,
+					showBulkActionCheckbox: ie,
 					isCheckboxSelected: I,
-					toggleCheckbox: le,
-					flairStyleTemplate: pe,
+					toggleCheckbox: pe,
+					flairStyleTemplate: ue,
 					redditStyle: se,
-					subreddit: ce
+					subreddit: le
 				}), o.a.createElement(C.a, {
 					className: J.a.backgroundWrapper,
 					"data-click-id": "background",
-					flairStyleTemplate: pe,
+					flairStyleTemplate: ue,
 					post: re,
 					redditStyle: se
 				}, o.a.createElement(f.a, {
@@ -578,7 +579,7 @@
 					"data-click-id": "body"
 				}, o.a.createElement(E.a, {
 					className: J.a.postTopLine,
-					hideAwards: oe,
+					hideAwards: ne,
 					hideNSFWPref: l,
 					iconClassName: J.a.postTopLineIcon,
 					inSubredditOrProfile: p,
@@ -588,38 +589,38 @@
 					isTopicPage: !!H,
 					post: re,
 					shouldShowSubscribeButton: !1,
-					showCornerOutboundLink: ve,
+					showCornerOutboundLink: ye,
 					showSubreddit: !p && !re.isSponsored,
 					showSubredditIcon: !0,
-					subredditOrProfile: ce
+					subredditOrProfile: le
 				}), o.a.createElement(N.c, {
 					className: J.a.postTitle,
 					post: re,
 					redditStyle: se,
 					size: N.b.Large,
-					titleColor: pe && pe.postTitleColor,
+					titleColor: ue && ue.postTitleColor,
 					isOverlay: U
-				}), T && (re.flair && re.flair.length > 0 || e.isInCategoriesExperiment) && o.a.createElement(g.a, {
+				}), T && !oe && (re.flair && re.flair.length > 0 || e.isInCategoriesExperiment) && o.a.createElement(g.a, {
 					className: T ? J.a.leftPadding : null,
 					disableFlair: !T,
 					post: re,
-					sendEvent: de,
+					sendEvent: ce,
 					showCategoryTag: e.isInCategoriesExperiment && T
 				}), re.source && !re.isSponsored && !s && o.a.createElement(_.a, {
 					className: J.a.sourceLink,
 					isCommentsPage: T,
 					post: re
-				})), !ge && fe && o.a.createElement(Z.a, {
+				})), !ve && ge && o.a.createElement(Z.a, {
 					crosspost: s ? re : void 0,
-					hasModPostPerms: ue,
+					hasModPostPerms: me,
 					isCommentsPage: T,
 					isOverlay: U,
 					modModeEnabled: K,
 					post: s || re,
 					redditStyle: se,
-					shouldShowSubscribeButton: ye && !p,
-					subredditOrProfile: ce,
-					templatePlaceholderImage: pe && pe.postPlaceholderImage
+					shouldShowSubscribeButton: Oe && !p,
+					subredditOrProfile: le,
+					templatePlaceholderImage: ue && ue.postPlaceholderImage
 				})), re.source && re.source.url && re.isSponsored && o.a.createElement(u.a, {
 					className: J.a.adLinkWrapper
 				}, o.a.createElement(M.a, {
@@ -633,13 +634,13 @@
 					postId: re.id,
 					source: re.source,
 					isNotCardView: !0
-				}, re.callToAction)), K && ue && xe && o.a.createElement(O.a, {
+				}, re.callToAction)), K && me && fe && o.a.createElement(O.a, {
 					className: J.a.modModeReports,
 					onIgnoreReports: ee,
 					reportable: re
 				}), o.a.createElement(y.d, {
 					postId: re.id
-				}), oe && o.a.createElement(m.a, {
+				}), ne && o.a.createElement(m.a, {
 					awardsPlaqueStyle: !0,
 					isOverlay: !!U,
 					isPostDetail: T,
@@ -649,30 +650,30 @@
 				}, o.a.createElement(h.a, {
 					className: J.a.horizontalVotes,
 					compact: !1,
-					flairStyleTemplate: pe,
+					flairStyleTemplate: ue,
 					redditStyle: se,
 					model: re,
 					onVoteClick: e.handleVote
 				}), o.a.createElement(v.c, {
 					currentUser: n,
-					hasModFlairPerms: be,
-					hasModFullPerms: he,
-					hasModPostPerms: ue,
+					hasModFlairPerms: he,
+					hasModFullPerms: xe,
+					hasModPostPerms: me,
 					isOverlay: !!U,
 					modModeEnabled: K,
 					onIgnoreReports: ee,
 					onOpenReportsDropdown: te,
 					post: re,
-					showEditFlair: ie,
+					showEditFlair: ae,
 					tooltipType: U ? k.c.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(j.h)({
-						editPost: !me,
-						save: !me,
+						editPost: !be,
+						save: !be,
 						hide: !1,
 						report: !1
 					})
 				}))));
-				return o.a.createElement(o.a.Fragment, null, Oe, G && !z && o.a.createElement(x.a, {
+				return o.a.createElement(o.a.Fragment, null, Pe, G && !z && o.a.createElement(x.a, {
 					className: J.a.chain,
 					listingKey: q,
 					listingName: X,
@@ -993,4 +994,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.206513de7ce0c805d05b.js.map
+//# sourceMappingURL=reddit-components-MediumPost.3bdd6498eb7442459635.js.map

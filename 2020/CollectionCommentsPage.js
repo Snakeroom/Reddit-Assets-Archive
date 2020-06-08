@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cf95682615944a1772c6.js
-// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7d6c7f76f5df1fa20b75.js
+// Retrieved at 6/8/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10340,7 +10340,8 @@
 						onLoadMore: r.a,
 						preventScrollOnMount: !0,
 						inSubredditOrProfile: !0,
-						scrollContentContainerRef: e
+						scrollContentContainerRef: e,
+						shouldHideFlair: !0
 					}), a.a.createElement(L, {
 						className: F.a.footer,
 						onClick: this.onFooterClick,
@@ -16480,4 +16481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.cf95682615944a1772c6.js.map
+//# sourceMappingURL=CollectionCommentsPage.7d6c7f76f5df1fa20b75.js.map

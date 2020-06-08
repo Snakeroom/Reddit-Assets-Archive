@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.21a699b35ab82686b959.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.71e72e6671bf88a09263.js
+// Retrieved at 6/8/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -584,52 +584,53 @@
 						pageLayer: u,
 						pageReferrer: b,
 						postClickEvent: y,
-						redditStyle: f
-					} = this.props, E = 0 === t, x = s ? "last-index" : "", O = "post-".concat(o, "-").concat(e, "-").concat(t, "-").concat(x, "-").concat(h, "-").concat(m, "-").concat(b);
-					let v;
-					if (void 0 === (v = this.scrollChildCache.get(O))) {
+						redditStyle: f,
+						shouldHideFlair: E
+					} = this.props, x = 0 === t, O = s ? "last-index" : "", v = "post-".concat(o, "-").concat(e, "-").concat(t, "-").concat(O, "-").concat(h, "-").concat(m, "-").concat(b);
+					let P;
+					if (void 0 === (P = this.scrollChildCache.get(v))) {
 						const {
-							inSubredditOrProfile: x,
-							postsById: P
-						} = this.props, C = P[e], j = C.crosspostRootId && P[C.crosspostRootId] ? P[C.crosspostRootId] : C;
-						C.crosspostRootId && !P[C.crosspostRootId] && g.c.withScope(e => {
-							e.setExtra("errorType", p.q.API), e.setExtra("description", "Post ".concat(C.id, " is crosspost of ").concat(C.crosspostRootId, ", but ") + "".concat(C.crosspostRootId, " details are missing in the state")), g.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: O,
+							postsById: C
+						} = this.props, j = C[e], k = j.crosspostRootId && C[j.crosspostRootId] ? C[j.crosspostRootId] : j;
+						j.crosspostRootId && !C[j.crosspostRootId] && g.c.withScope(e => {
+							e.setExtra("errorType", p.q.API), e.setExtra("description", "Post ".concat(j.id, " is crosspost of ").concat(j.crosspostRootId, ", but ") + "".concat(j.crosspostRootId, " details are missing in the state")), g.c.captureMessage("Crosspost parent details are missing")
 						});
-						const k = this.props.postComponentForLayout({
-								isCrosspost: !!C.crosspostRootId,
-								isFirstPost: E,
+						const w = this.props.postComponentForLayout({
+								isCrosspost: !!j.crosspostRootId,
+								isFirstPost: x,
 								layout: o,
-								post: j
+								post: k
 							}),
-							w = "post-list-item-[layout: ".concat(o, "]-[postId: ").concat(e, "]"),
-							I = W(e, o, s, m, h, b, this.props, t),
-							R = H(e, o, this.props, t),
-							N = Q(e, this.props),
-							M = j.media && j.media.type === _.n.EMBED ? j.media.provider : null;
-						v = {
-							estHeight: Object(S.c)(C, o),
+							I = "post-list-item-[layout: ".concat(o, "]-[postId: ").concat(e, "]"),
+							R = W(e, o, s, m, h, b, this.props, t),
+							N = H(e, o, this.props, t),
+							M = Q(e, this.props),
+							V = k.media && k.media.type === _.n.EMBED ? k.media.provider : null;
+						P = {
+							estHeight: Object(S.c)(j, o),
 							id: e,
-							isFocusable: !(!j.media || !(o === L.g.Large || o === L.g.Classic && Object(_.B)(j.media))) && (_.d.has(j.media.type) && (!M || !_.q.has(M)) && !j.isSpoiler && !j.isNSFW),
-							trackOnEnteredViewport: I,
-							trackOnExitedViewport: R,
+							isFocusable: !(!k.media || !(o === L.g.Large || o === L.g.Classic && Object(_.B)(k.media))) && (_.d.has(k.media.type) && (!V || !_.q.has(V)) && !k.isSpoiler && !k.isNSFW),
+							trackOnEnteredViewport: R,
+							trackOnExitedViewport: N,
 							render: t => {
 								let {
 									className: o,
 									height: p,
 									width: b,
 									remeasure: g,
-									setScrollerChildRef: O,
-									shouldLoadInitially: L
+									setScrollerChildRef: L,
+									shouldLoadInitially: v
 								} = t;
-								return d.a.createElement(k, {
+								return d.a.createElement(w, {
 									className: o,
 									currentProfileName: n,
-									key: w,
+									key: I,
 									availableWidth: b,
 									eventFactory: y,
-									first: E,
-									forceLoadMedia: L,
-									inSubredditOrProfile: x,
+									first: x,
+									forceLoadMedia: v,
+									inSubredditOrProfile: O,
 									isCommentPermalink: r,
 									isCommentsPage: i,
 									isFrontpage: a,
@@ -639,17 +640,18 @@
 									listingName: h,
 									pageLayer: u,
 									last: s,
-									onClickPost: N,
+									onClickPost: M,
 									onSizeChanged: g,
 									postId: e,
 									redditStyle: f,
 									sendEvent: this.props.sendEvent,
-									scrollerItemRef: O
+									scrollerItemRef: L,
+									shouldHideFlair: E
 								})
 							}
-						}, this.scrollChildCache.set(O, v)
+						}, this.scrollChildCache.set(v, P)
 					}
-					return v
+					return P
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -810,4 +812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.21a699b35ab82686b959.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.71e72e6671bf88a09263.js.map
