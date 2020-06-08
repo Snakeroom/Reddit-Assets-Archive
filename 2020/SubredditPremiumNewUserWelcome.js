@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c73c0e828b8a538464e8.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.8a46f965cabf82abcec4.js
+// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -294,15 +294,15 @@
 				})))
 			}
 			var N = s("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.tsx"),
-				P = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
-				C = s.n(P);
+				C = s("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
+				P = s.n(C);
 			const k = [0, 500];
 
 			function B(e) {
 				return r.a.createElement("div", {
-					className: Object(d.a)(C.a.container, e.className)
+					className: Object(d.a)(P.a.container, e.className)
 				}, r.a.createElement(N.a, {
-					className: C.a.assets,
+					className: P.a.assets,
 					scrollRange: k,
 					subreddit: e.subreddit
 				}))
@@ -663,7 +663,7 @@
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
 				}(n || (n = {})),
 				function(e) {
-					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.Powerups = "powerups", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
+					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
 				}(r || (r = {}));
 			const l = async (e, t, s) => d(e, t, s, !0), m = async (e, t, s) => d(e, t, s, !1), u = (e, t) => i(e, t, n.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
 		},
@@ -888,9 +888,9 @@
 			})), s.d(t, "f", (function() {
 				return N
 			})), s.d(t, "r", (function() {
-				return P
-			})), s.d(t, "n", (function() {
 				return C
+			})), s.d(t, "n", (function() {
+				return P
 			})), s.d(t, "k", (function() {
 				return k
 			}));
@@ -959,7 +959,7 @@
 				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				y = (e, t) => {
-					const s = P(e, t);
+					const s = C(e, t);
 					return s && s.decimals ? "1" + "0".repeat(s.decimals) : "1"
 				},
 				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -977,7 +977,7 @@
 					const s = O(e, t);
 					return s === r.a.Ethereum || s === r.a.Rinkeby || s === r.a.EthTraderEthereum || s === r.a.EthTraderRinkeby
 				},
-				P = (e, t) => {
+				C = (e, t) => {
 					const s = v(e, t),
 						n = O(e, t);
 					if (s && !s.inTransition && n === r.a.Stellar) return {
@@ -994,7 +994,7 @@
 						image: c.image
 					}
 				},
-				C = (e, t) => {
+				P = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.c73c0e828b8a538464e8.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.8a46f965cabf82abcec4.js.map

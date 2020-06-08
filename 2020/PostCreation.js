@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.09874ca8017259797597.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.980752047841b289446d.js
+// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -16773,12 +16773,12 @@
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), B && !!a && l === Ue.a.Comment && c.a.createElement(Fo, {
+					}), (d || u) && B && !!a && l === Ue.a.Comment && c.a.createElement(Fo, {
 						editorState: P,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: a,
-						shouldHideAddEmote: !(u || d)
+						shouldHideAddEmote: !u
 					}), (b || h) && a && c.a.createElement(ls, {
 						editorState: P,
 						onChange: this.onChange,
@@ -30675,4 +30675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.09874ca8017259797597.js.map
+//# sourceMappingURL=PostCreation.980752047841b289446d.js.map

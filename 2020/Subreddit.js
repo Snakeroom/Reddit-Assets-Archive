@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.805793fe5b2338c5c7ca.js
-// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3fc76833233c288e9a73.js
+// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -868,38 +868,36 @@
 		},
 		"./src/reddit/components/CreatePostBanner/index.tsx": function(e, t, n) {
 			"use strict";
-			var s, r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				a = n("./node_modules/react/index.js"),
-				i = n.n(a),
-				o = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/lib/localStorageAvailable/index.ts"),
-				d = n("./src/reddit/actions/toaster.ts"),
-				l = n("./src/reddit/components/TrackingHelper/index.tsx");
-			! function(e) {
-				e.STYLES_ENTRY_BANNER = "styles_entry_banner", e.CREATE_POST_BANNER = "create_post_banner"
-			}(s || (s = {}));
-			var m = n("./src/reddit/controls/Button/index.tsx"),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				a = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
+				o = n("./src/lib/localStorageAvailable/index.ts"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				l = n("./src/reddit/constants/banners.ts"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
 				u = n("./src/reddit/helpers/localStorage/index.ts"),
 				p = n("./src/reddit/helpers/trackers/modOnboarding.ts"),
-				b = e => i.a.createElement("svg", {
+				b = e => a.a.createElement("svg", {
 					viewBox: "0 0 56 56",
 					xmlns: "http://www.w3.org/2000/svg",
 					className: e.className
-				}, i.a.createElement("g", {
+				}, a.a.createElement("g", {
 					transform: "translate(1 1)",
 					fill: "inherit",
 					stroke: "inherit",
 					fillRule: "evenodd"
-				}, i.a.createElement("rect", {
+				}, a.a.createElement("rect", {
 					x: "16",
 					y: "35",
 					width: "22.4",
 					height: "2.8",
 					rx: "1.4",
 					stroke: "none"
-				}), i.a.createElement("path", {
+				}), a.a.createElement("path", {
 					d: "M20.4 34.08h3.96c.372 0 .727-.147.99-.41l11.32-11.32a1.398 1.398 0 0 0 0-1.98l-3.96-3.96a1.398 1.398 0 0 0-1.98 0L19.41 27.73c-.263.263-.41.618-.41.99v3.96a1.4 1.4 0 0 0 1.4 1.4"
-				}), i.a.createElement("circle", {
+				}), a.a.createElement("circle", {
 					strokeWidth: "2",
 					fill: "none",
 					cx: "27",
@@ -910,20 +908,20 @@
 				g = n("./src/reddit/models/Toast/index.ts"),
 				x = n("./src/reddit/components/CreatePostBanner/index.m.less"),
 				f = n.n(x);
-			const v = Object(o.b)(null, e => ({
+			const v = Object(i.b)(null, e => ({
 				showToast: () => {
-					e(Object(d.e)({
+					e(Object(c.e)({
 						kind: g.b.SuccessCommunity,
-						text: r.fbt._("Dismissed", null, {
+						text: s.fbt._("Dismissed", null, {
 							hk: "3YBtnR"
 						})
 					}))
 				}
 			}));
-			class y extends i.a.Component {
+			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.G)(s.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.G)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -941,7 +939,7 @@
 				onUpdate() {
 					const {
 						subreddit: e
-					} = this.props, t = Object(c.a)() && !Object(u.f)(s.CREATE_POST_BANNER, e.id);
+					} = this.props, t = Object(o.a)() && !Object(u.f)(l.a.CREATE_POST_BANNER, e.id);
 					t !== this.state.visible && (this.props.sendEvent(Object(p.c)()), this.setState({
 						visible: t
 					}))
@@ -950,38 +948,38 @@
 					const {
 						subreddit: e
 					} = this.props;
-					return this.state.visible ? i.a.createElement("div", {
+					return this.state.visible ? a.a.createElement("div", {
 						className: f.a.banner
-					}, i.a.createElement("button", {
+					}, a.a.createElement("button", {
 						className: f.a.closeContainer,
 						onClick: this.closeBanner
-					}, i.a.createElement(h.a, {
+					}, a.a.createElement(h.a, {
 						className: f.a.close
-					})), i.a.createElement(b, {
+					})), a.a.createElement(b, {
 						className: f.a.postIcon
-					}), i.a.createElement("div", {
+					}), a.a.createElement("div", {
 						className: f.a.heading
-					}, r.fbt._("Create the ideal {subredditDisplayText} post", [r.fbt._param("subredditDisplayText", " ".concat(e.displayText, " "))], {
+					}, s.fbt._("Create the ideal {subredditDisplayText} post", [s.fbt._param("subredditDisplayText", " ".concat(e.displayText, " "))], {
 						hk: "3ZioIj"
-					})), i.a.createElement("div", {
+					})), a.a.createElement("div", {
 						className: f.a.text
-					}, r.fbt._("Content is an important part of any new community.", null, {
+					}, s.fbt._("Content is an important part of any new community.", null, {
 						hk: "4nsVy"
-					}), i.a.createElement("br", null), r.fbt._("Try creating your own post now!", null, {
+					}), a.a.createElement("br", null), s.fbt._("Try creating your own post now!", null, {
 						hk: "1KCWqr"
-					})), i.a.createElement("div", {
+					})), a.a.createElement("div", {
 						className: f.a.buttonWrapper
-					}, i.a.createElement(m.g, {
+					}, a.a.createElement(m.g, {
 						className: f.a.button,
 						target: "_blank",
 						href: "/".concat(e.displayText, "/submit"),
 						onClick: this.createPost
-					}, r.fbt._("Create Post", null, {
+					}, s.fbt._("Create Post", null, {
 						hk: "sSUAI"
 					})))) : null
 				}
 			}
-			t.a = v(Object(l.c)(y))
+			t.a = v(Object(d.c)(y))
 		},
 		"./src/reddit/components/DiscoveryUnit/Layout/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5741,6 +5739,16 @@
 			});
 			t.a = h
 		},
+		"./src/reddit/constants/banners.ts": function(e, t, n) {
+			"use strict";
+			var s;
+			n.d(t, "a", (function() {
+					return s
+				})),
+				function(e) {
+					e.STYLES_ENTRY_BANNER = "styles_entry_banner", e.CREATE_POST_BANNER = "create_post_banner", e.POWERUPS_BANNER = "powerups_banner"
+				}(s || (s = {}))
+		},
 		"./src/reddit/controls/ImageInput/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -7473,4 +7481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.805793fe5b2338c5c7ca.js.map
+//# sourceMappingURL=Subreddit.3fc76833233c288e9a73.js.map
