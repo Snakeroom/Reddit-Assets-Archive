@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e8ff01c03e5700b6d58d.js
-// Retrieved at 6/8/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dcd529e150ee828b681c.js
+// Retrieved at 6/8/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2162,13 +2162,16 @@
 		},
 		"./src/lib/constants/euCookiePolicy.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "c", (function() {
 				return n
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return r
+			})), i.d(t, "a", (function() {
+				return s
 			}));
 			const n = 3,
-				r = ["AT", "AU", "BE", "BG", "BR", "CA", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "NL", "PH", "PL", "PT", "RO", "SE", "SI", "SK"]
+				r = ["AT", "BE", "BG", "BL", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GF", "GG", "GI", "GP", "GR", "HR", "HU", "IE", "IM", "IS", "IT", "JE", "LI", "LT", "LU", "LV", "MF", "MQ", "MT", "NL", "NO", "PL", "PM", "PT", "RE", "RO", "SE", "SI", "SK", "UK", "YT"],
+				s = ["AT", "AU", "BE", "BG", "BR", "CA", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "NL", "PH", "PL", "PT", "RO", "SE", "SI", "SK"]
 		},
 		"./src/lib/constants/headers.ts": function(e, t, i) {
 			"use strict";
@@ -3259,14 +3262,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("8109a42-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("0a1d25d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8109a42-production",
+						release: "0a1d25d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3628,7 +3631,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "8109a42-production",
+							releaseClient: "0a1d25d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7502,7 +7505,7 @@
 				r = i.n(n),
 				s = i("./node_modules/lodash/mapValues.js"),
 				o = i.n(s),
-				d = i("./src/lib/constants/index.ts"),
+				d = i("./src/lib/constants/euCookiePolicy.ts"),
 				l = i("./src/lib/getParsedUserAgent/index.ts"),
 				a = i("./src/reddit/featureFlags/utils.ts"),
 				u = i("./src/reddit/featureFlags/communityTopics.ts"),
@@ -7602,7 +7605,7 @@
 					subredditMentionD2xExperiment: a.l,
 					privacySettingLocationBasedRecommendations: a.l,
 					langSelect: Object(a.e)(a.g, a.h),
-					reCaptchaEnterprise: Object(a.e)(a.g, a.h, Object(a.b)(d.v.UnitedStates)),
+					reCaptchaEnterprise: Object(a.e)(a.g, a.h, Object(a.d)(Object(a.b)(...d.b))),
 					__requiredDoNotRemove: a.k
 				},
 				v = o()(y, (e, t) => i => {
@@ -21410,4 +21413,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.e8ff01c03e5700b6d58d.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.dcd529e150ee828b681c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5ba8fc8b31af150ff3c6.js
-// Retrieved at 6/8/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d87f4c1d9ced67be4cc6.js
+// Retrieved at 6/8/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -14996,88 +14996,89 @@
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return I
+				return S
 			})), n.d(t, "a", (function() {
-				return v
+				return T
 			})), n.d(t, "d", (function() {
-				return w
+				return D
 			})), n.d(t, "b", (function() {
-				return A
+				return R
 			}));
 			var s = n("./src/lib/asyncActions/index.ts"),
 				r = n("./src/lib/constants/index.ts"),
-				o = n("./node_modules/ts-error/lib/cjs.js"),
-				a = n.n(o);
-			class GraphQLRequestError_GraphQLRequestError extends a.a {
+				o = n("./src/lib/constants/euCookiePolicy.ts"),
+				a = n("./node_modules/ts-error/lib/cjs.js"),
+				i = n.n(a);
+			class GraphQLRequestError_GraphQLRequestError extends i.a {
 				constructor(e) {
 					super("An error occurred during a GraphQL request. The following response was received:\n\n".concat(JSON.stringify(e, void 0, 2))), this.response = e
 				}
 			}
-			var i = n("./src/lib/reCaptchaEnterprise/index.ts"),
-				c = n("./src/lib/sentry/index.ts");
+			var c = n("./src/lib/reCaptchaEnterprise/index.ts"),
+				d = n("./src/lib/sentry/index.ts");
 
-			function d(e) {
+			function u(e) {
 				return t => async (n, s, r) => {
 					const o = s();
 					if (e(o)) return t(n, s, r)
 				}
 			}
-			var u = n("./node_modules/lodash/every.js"),
-				l = n.n(u),
-				b = n("./src/reddit/constants/experiments.ts"),
-				p = n("./node_modules/aggregate-error/index.js"),
-				f = n.n(p),
-				m = n("./src/graphql/operations/VerifyRecaptchaToken.json"),
-				O = n("./src/lib/makeGqlRequest/index.ts");
-			class MissingDataError_MissingDataError extends a.a {
+			var l = n("./node_modules/lodash/every.js"),
+				b = n.n(l),
+				p = n("./src/reddit/constants/experiments.ts"),
+				f = n("./node_modules/aggregate-error/index.js"),
+				m = n.n(f),
+				O = n("./src/graphql/operations/VerifyRecaptchaToken.json"),
+				g = n("./src/lib/makeGqlRequest/index.ts");
+			class MissingDataError_MissingDataError extends i.a {
 				constructor() {
 					super("Missing data in GraphQL response")
 				}
 			}
-			class RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError extends a.a {
+			class RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError extends i.a {
 				constructor() {
 					super("GraphQL request failed without errors")
 				}
 			}
-			var g = n("./src/reddit/featureFlags/index.ts"),
-				_ = n("./src/reddit/featureFlags/utils.ts"),
-				h = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				y = n("./src/reddit/selectors/meta.ts");
-			const j = e => g.d.reCaptchaEnterprise(e) && !Object(y.d)(e),
-				E = Object(_.e)(_.g, _.h, e => !!Object(h.c)(e, {
-					experimentEligibilitySelector: Object(_.b)(r.v.UnitedStates),
-					experimentName: b.Vb
+			var _ = n("./src/reddit/featureFlags/index.ts"),
+				h = n("./src/reddit/featureFlags/utils.ts"),
+				y = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				j = n("./src/reddit/selectors/meta.ts");
+			const E = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
+				I = Object(h.e)(h.g, h.h, e => !!Object(y.c)(e, {
+					experimentEligibilitySelector: Object(h.d)(Object(h.b)(...o.b)),
+					experimentName: p.Vb
 				})),
-				I = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
-				S = () => d(e => l()([j, E, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
-					e(I.requested());
+				S = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
+				v = () => u(e => b()([E, I, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
+					e(S.requested());
 					try {
-						await i.b.loadScript(), e(I.succeeded())
+						await c.b.loadScript(), e(S.succeeded())
 					} catch (t) {
-						throw e(I.failed()), t
+						throw e(S.failed()), t
 					}
 				}),
-				v = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
-				T = e => d(e => l()([j, E, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
-					t(v.requested());
+				T = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
+				w = e => u(e => b()([E, I, e => e.tracking.reCaptchaEnterprise.load === s.a.Succeeded && e.tracking.reCaptchaEnterprise.execute === s.a.New], t => t(e)))(async t => {
+					t(T.requested());
 					try {
-						const n = await i.b.execute(e);
-						return t(v.succeeded({
+						const n = await c.b.execute(e);
+						return t(T.succeeded({
 							token: n
 						})), n
 					} catch (n) {
-						throw t(v.failed()), n
+						throw t(T.failed()), n
 					}
 				}),
-				w = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
-				D = e => d(e => l()([j, E, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, n, s) => {
+				D = Object(s.b)("SEND_RECAPTCHA_TOKEN"),
+				C = e => u(e => b()([E, I, e => e.tracking.reCaptchaEnterprise.send === s.a.New && e.tracking.reCaptchaEnterprise.execute === s.a.Succeeded && e.tracking.reCaptchaEnterprise.load === s.a.Succeeded], t => t(e)))(async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
-					t(w.requested());
+					t(D.requested());
 					try {
 						await (async (e, t) => {
-							const n = await Object(O.a)(e, Object.assign({}, m, {
+							const n = await Object(g.a)(e, Object.assign({}, O, {
 								variables: {
 									input: {
 										token: t
@@ -15090,30 +15091,30 @@
 								ok: s,
 								errors: r
 							} = n.body.data.verifyRecaptchaToken;
-							if (r && r.length > 0) throw new f.a(r);
+							if (r && r.length > 0) throw new m.a(r);
 							if (!s) throw new RequestFailedWithoutErrorsError_RequestFailedWithoutErrorsError
-						})(r(), e), t(w.succeeded())
+						})(r(), e), t(D.succeeded())
 					} catch (o) {
-						throw t(w.failed()), o
+						throw t(D.failed()), o
 					}
 				}),
-				C = (e, t) => Object(_.g)(t) ? (e => "".concat("STAGING__").concat(e))(e) : e,
-				A = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i.a.PageLoad;
-					return d(e => l()([j, E, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (t, n) => {
+				A = (e, t) => Object(h.g)(t) ? (e => "".concat("STAGING__").concat(e))(e) : e,
+				R = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c.a.PageLoad;
+					return u(e => b()([E, I, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async (t, n) => {
 						const s = n();
 						try {
-							await t(S());
-							const n = await t(T({
-								action: C(e, s)
+							await t(v());
+							const n = await t(w({
+								action: A(e, s)
 							}));
-							n && await t(D(n))
+							n && await t(C(n))
 						} catch (o) {
 							if (o instanceof GraphQLRequestError_GraphQLRequestError && "object" == typeof o.response.error && null !== o.response.error && o.response.error.type === r.i) return;
-							c.c.withScope(e => {
-								Object(c.a)(e, {
+							d.c.withScope(e => {
+								Object(d.a)(e, {
 									serverLogging: !1
-								}), c.c.captureException(o)
+								}), d.c.captureException(o)
 							})
 						}
 					})
@@ -54279,4 +54280,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.5ba8fc8b31af150ff3c6.js.map
+//# sourceMappingURL=Governance~Reddit.d87f4c1d9ced67be4cc6.js.map
