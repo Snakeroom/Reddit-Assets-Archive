@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.58b153c4321cb4519b72.js
-// Retrieved at 6/9/2020, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b20799cdf8b94a93b664.js
+// Retrieved at 6/9/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -7261,7 +7261,7 @@
 				p = "MEDIA__SET_VOLUME",
 				f = Object(s.a)(p),
 				m = (e, t) => async (n, s) => {
-					n(b(e)), !e && t && n(Object(u.J)(t))
+					n(b(e)), !e && t && n(Object(u.L)(t))
 				}, O = "MEDIA__EMBED_HEIGHT_MEASURED", g = Object(s.a)(O), _ = e => {
 					let {
 						height: t,
@@ -11821,11 +11821,11 @@
 				}, Fe = (e, t) => async (n, s) => {
 					const r = e && e.media && "video" === e.media.type,
 						o = [Z.a.VendorFullyViewable, Z.a.VendorFullyViewableSeconds5, Z.a.VendorFullyViewableSeconds15];
-					if (r && t === Z.a.VideoViewable) n(Object(v.F)(e.id));
-					else if (r && t === Z.a.VideoFullyViewable) n(Object(v.C)(e.id));
-					else if (r && t === Z.a.MRCVideoViewableImpression) n(Object(v.B)(e.id));
-					else if (r && t === Z.a.VideoGroupMViewable) n(Object(v.D)(e.id));
-					else if (r && t === Z.a.VideoVendorFullyViewable50) n(Object(v.E)(e.id));
+					if (r && t === Z.a.VideoViewable) n(Object(v.H)(e.id));
+					else if (r && t === Z.a.VideoFullyViewable) n(Object(v.E)(e.id));
+					else if (r && t === Z.a.MRCVideoViewableImpression) n(Object(v.D)(e.id));
+					else if (r && t === Z.a.VideoGroupMViewable) n(Object(v.F)(e.id));
+					else if (r && t === Z.a.VideoVendorFullyViewable50) n(Object(v.G)(e.id));
 					else if (e.isSponsored)
 						if (o.includes(t)) n(((e, t) => async n => {
 							n(Me(e, t)), n(Ne(t, {
@@ -20134,39 +20134,39 @@
 		},
 		"./src/reddit/actions/video.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "k", (function() {
 				return f
-			})), n.d(t, "r", (function() {
-				return m
-			})), n.d(t, "k", (function() {
-				return O
-			})), n.d(t, "l", (function() {
-				return g
-			})), n.d(t, "m", (function() {
-				return _
-			})), n.d(t, "n", (function() {
-				return h
-			})), n.d(t, "o", (function() {
-				return y
-			})), n.d(t, "q", (function() {
-				return j
-			})), n.d(t, "s", (function() {
-				return E
-			})), n.d(t, "u", (function() {
-				return I
-			})), n.d(t, "v", (function() {
-				return S
 			})), n.d(t, "t", (function() {
-				return v
-			})), n.d(t, "h", (function() {
-				return T
+				return m
+			})), n.d(t, "m", (function() {
+				return O
+			})), n.d(t, "n", (function() {
+				return g
+			})), n.d(t, "o", (function() {
+				return _
 			})), n.d(t, "p", (function() {
-				return w
+				return h
+			})), n.d(t, "q", (function() {
+				return y
+			})), n.d(t, "s", (function() {
+				return j
+			})), n.d(t, "u", (function() {
+				return E
+			})), n.d(t, "w", (function() {
+				return I
+			})), n.d(t, "x", (function() {
+				return S
+			})), n.d(t, "v", (function() {
+				return v
 			})), n.d(t, "j", (function() {
+				return T
+			})), n.d(t, "r", (function() {
+				return w
+			})), n.d(t, "l", (function() {
 				return D
 			})), n.d(t, "a", (function() {
 				return C
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return A
 			})), n.d(t, "b", (function() {
 				return R
@@ -20176,56 +20176,60 @@
 				return k
 			})), n.d(t, "f", (function() {
 				return x
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "e", (function() {
 				return N
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "h", (function() {
+				return L
+			})), n.d(t, "i", (function() {
 				return U
-			})), n.d(t, "F", (function() {
-				return z
 			})), n.d(t, "B", (function() {
-				return Q
-			})), n.d(t, "D", (function() {
-				return J
-			})), n.d(t, "E", (function() {
-				return X
-			})), n.d(t, "C", (function() {
-				return Z
-			})), n.d(t, "R", (function() {
-				return $
-			})), n.d(t, "J", (function() {
-				return ee
-			})), n.d(t, "S", (function() {
-				return te
-			})), n.d(t, "T", (function() {
-				return ne
-			})), n.d(t, "G", (function() {
-				return re
+				return F
 			})), n.d(t, "H", (function() {
-				return ae
+				return J
+			})), n.d(t, "D", (function() {
+				return X
+			})), n.d(t, "F", (function() {
+				return Z
+			})), n.d(t, "G", (function() {
+				return $
+			})), n.d(t, "E", (function() {
+				return ee
+			})), n.d(t, "T", (function() {
+				return te
 			})), n.d(t, "L", (function() {
-				return de
-			})), n.d(t, "P", (function() {
-				return ue
-			})), n.d(t, "A", (function() {
-				return le
-			})), n.d(t, "Q", (function() {
-				return pe
-			})), n.d(t, "O", (function() {
-				return Oe
-			})), n.d(t, "N", (function() {
-				return ge
-			})), n.d(t, "x", (function() {
-				return _e
-			})), n.d(t, "M", (function() {
-				return he
-			})), n.d(t, "w", (function() {
-				return ye
+				return ne
+			})), n.d(t, "U", (function() {
+				return se
+			})), n.d(t, "V", (function() {
+				return re
 			})), n.d(t, "I", (function() {
+				return ae
+			})), n.d(t, "J", (function() {
+				return ce
+			})), n.d(t, "N", (function() {
+				return le
+			})), n.d(t, "R", (function() {
+				return be
+			})), n.d(t, "C", (function() {
+				return pe
+			})), n.d(t, "S", (function() {
+				return me
+			})), n.d(t, "Q", (function() {
+				return _e
+			})), n.d(t, "P", (function() {
+				return he
+			})), n.d(t, "z", (function() {
+				return ye
+			})), n.d(t, "O", (function() {
 				return je
-			})), n.d(t, "K", (function() {
-				return Ee
 			})), n.d(t, "y", (function() {
+				return Ee
+			})), n.d(t, "K", (function() {
 				return Ie
+			})), n.d(t, "M", (function() {
+				return Se
+			})), n.d(t, "A", (function() {
+				return ve
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/reddit/constants/adEvents.ts"),
@@ -20256,11 +20260,13 @@
 				C = "AD__MRC_VIDEO_VIEWABLE",
 				A = "AD__VIDEO_VIEWABLE",
 				R = "AD__VIDEO_FULLY_VIEWABLE",
-				P = "AD__VIDEO_STARTED",
-				k = "AD__VIDEO_PLAYED_WITH_SOUND",
-				x = "AD__VIDEO_WATCHED_PERCENT",
-				N = "AD__VIDEO_WATCHED_SECONDS",
-				L = (() => {
+				P = "AD__VIDEO_GROUP_M_VIEWABLE",
+				k = "AD__VIDEO_FULLY_VIEWABLE_50",
+				x = "AD__VIDEO_STARTED",
+				N = "AD__VIDEO_PLAYED_WITH_SOUND",
+				L = "AD__VIDEO_WATCHED_PERCENT",
+				U = "AD__VIDEO_WATCHED_SECONDS",
+				M = (() => {
 					let e = "";
 					return (t, n, s, r) => async (o, i) => {
 						if (null != t) {
@@ -20271,39 +20277,23 @@
 						}
 					}
 				})(),
-				U = Object(s.a)(D),
-				M = Object(s.a)(A),
-				F = Object(s.a)(R),
-				G = Object(s.a)(C),
-				B = Object(s.a)("AD__VIDEO_GROUP_M_VIEWABLE"),
-				q = Object(s.a)("AD__VIDEO_FULLY_VIEWABLE_50"),
+				F = Object(s.a)(D),
+				G = Object(s.a)(A),
+				B = Object(s.a)(R),
+				q = Object(s.a)(C),
 				V = Object(s.a)(P),
 				H = Object(s.a)(k),
-				K = Object(s.a)("AD__VIDEO_PLAYED_EXPANDED"),
-				W = Object(s.a)(x),
-				Y = Object(s.a)(N),
-				z = e => async (t, n) => {
+				K = Object(s.a)(x),
+				W = Object(s.a)(N),
+				Y = Object(s.a)("AD__VIDEO_PLAYED_EXPANDED"),
+				z = Object(s.a)(L),
+				Q = Object(s.a)(U),
+				J = e => async (t, n) => {
 					const s = n(),
 						o = Object(l.O)(s, {
 							postId: e
 						});
-					t(L(e, "is_viewable", "video", !1)), o.isSponsored && (t(Object(i.B)(o, r.a.VideoViewableImpression)), t(M({
-						postId: e
-					})))
-				}, Q = e => async (t, n) => {
-					const s = n(),
-						o = Object(l.O)(s, {
-							postId: e
-						});
-					o.isSponsored && (t(Object(i.B)(o, r.a.MRCVideoViewableImpression)), t(G({
-						postId: e
-					})))
-				}, J = e => async (t, n) => {
-					const s = n(),
-						o = Object(l.O)(s, {
-							postId: e
-						});
-					o.isSponsored && (t(Object(i.B)(o, r.a.VideoGroupMViewable)), t(B({
+					t(M(e, "is_viewable", "video", !1)), o.isSponsored && (t(Object(i.B)(o, r.a.VideoViewableImpression)), t(G({
 						postId: e
 					})))
 				}, X = e => async (t, n) => {
@@ -20311,7 +20301,7 @@
 						o = Object(l.O)(s, {
 							postId: e
 						});
-					o.isSponsored && (t(Object(i.B)(o, r.a.VideoVendorFullyViewable50)), t(q({
+					o.isSponsored && (t(Object(i.B)(o, r.a.MRCVideoViewableImpression)), t(q({
 						postId: e
 					})))
 				}, Z = e => async (t, n) => {
@@ -20319,30 +20309,44 @@
 						o = Object(l.O)(s, {
 							postId: e
 						});
-					t(L(e, "is_fully_viewable", "video", !1)), o.isSponsored && (t(Object(i.B)(o, r.a.VideoFullyViewableImpression)), t(F({
+					o.isSponsored && (t(Object(i.B)(o, r.a.VideoGroupMViewable)), t(V({
 						postId: e
 					})))
 				}, $ = e => async (t, n) => {
-					const s = Object(l.O)(n(), {
-						postId: e
-					});
-					t(L(e, "start", "video", !1)), s.isSponsored && (t(Object(i.B)(s, r.a.VideoStarted)), t(V({
+					const s = n(),
+						o = Object(l.O)(s, {
+							postId: e
+						});
+					o.isSponsored && (t(Object(i.B)(o, r.a.VideoVendorFullyViewable50)), t(H({
 						postId: e
 					})))
 				}, ee = e => async (t, n) => {
+					const s = n(),
+						o = Object(l.O)(s, {
+							postId: e
+						});
+					t(M(e, "is_fully_viewable", "video", !1)), o.isSponsored && (t(Object(i.B)(o, r.a.VideoFullyViewableImpression)), t(B({
+						postId: e
+					})))
+				}, te = e => async (t, n) => {
 					const s = Object(l.O)(n(), {
 						postId: e
 					});
-					t(L(e, "play_with_sound", "video", !1)), t(L(e, "is_viewable", "video", !1)), t(L(e, "is_fully_viewable", "video", !1)), s.isSponsored && (t(Object(i.B)(s, r.a.VideoPlayedWithSound)), t(Object(i.B)(s, r.a.VideoViewableImpression)), t(Object(i.B)(s, r.a.VideoFullyViewableImpression)), t(Object(i.B)(s, r.a.MRCVideoViewableImpression)), t(H({
+					t(M(e, "start", "video", !1)), s.isSponsored && (t(Object(i.B)(s, r.a.VideoStarted)), t(K({
 						postId: e
-					})), t(M({
+					})))
+				}, ne = e => async (t, n) => {
+					const s = Object(l.O)(n(), {
 						postId: e
-					})), t(F({
+					});
+					t(M(e, "play_with_sound", "video", !1)), t(M(e, "is_viewable", "video", !1)), t(M(e, "is_fully_viewable", "video", !1)), s.isSponsored && (t(Object(i.B)(s, r.a.VideoPlayedWithSound)), t(Object(i.B)(s, r.a.VideoViewableImpression)), t(Object(i.B)(s, r.a.VideoFullyViewableImpression)), t(Object(i.B)(s, r.a.MRCVideoViewableImpression)), t(W({
 						postId: e
 					})), t(G({
 						postId: e
+					})), t(B({
+						postId: e
 					})))
-				}, te = (e, t) => async (n, s) => {
+				}, se = (e, t) => async (n, s) => {
 					const a = Object(l.O)(s(), {
 						postId: t
 					});
@@ -20363,11 +20367,11 @@
 						default:
 							c = "watch_100_percent", d = r.a.VideoWatched100
 					}
-					n(L(t, c, "video", !1)), a.isSponsored && (n(Object(i.B)(a, d)), n(W({
+					n(M(t, c, "video", !1)), a.isSponsored && (n(Object(i.B)(a, d)), n(z({
 						postId: t,
 						percentage: e
 					})))
-				}, ne = (e, t) => async (n, s) => {
+				}, re = (e, t) => async (n, s) => {
 					const a = Object(l.O)(s(), {
 						postId: t
 					});
@@ -20382,64 +20386,62 @@
 						default:
 							c = "watch_10_seconds", d = r.a.VideoWatchedSeconds10
 					}
-					n(L(t, c, "video", !1)), a.isSponsored && (n(Object(i.B)(a, d)), n(Y({
+					n(M(t, c, "video", !1)), a.isSponsored && (n(Object(i.B)(a, d)), n(Q({
 						postId: t,
 						seconds: e
 					})))
-				}, se = Object(s.a)(f), re = Object(s.a)(g), oe = Object(s.a)(_), ae = Object(s.a)(h), ie = Object(s.a)(y), ce = Object(s.a)(m), de = Object(s.a)(j), ue = Object(s.a)(v), le = Object(s.a)(O), be = Object(s.a)(E), pe = Object(s.a)(I), fe = Object(s.a)(S), me = Object(s.a)(T), Oe = Object(s.a)(w), ge = e => async (t, n) => {
+				}, oe = Object(s.a)(f), ae = Object(s.a)(g), ie = Object(s.a)(_), ce = Object(s.a)(h), de = Object(s.a)(y), ue = Object(s.a)(m), le = Object(s.a)(j), be = Object(s.a)(v), pe = Object(s.a)(O), fe = Object(s.a)(E), me = Object(s.a)(I), Oe = Object(s.a)(S), ge = Object(s.a)(T), _e = Object(s.a)(w), he = e => async (t, n) => {
 					const s = Object(l.O)(n(), {
 						postId: e
 					});
-					t(ce({
+					t(ue({
 						postId: e
 					})), ((e, t, n) => {
-						n(L(t, "play_expanded", "video", !1)), n(L(t, "is_viewable", "video", !1)), n(L(t, "is_fully_viewable", "video", !1)), e.isSponsored && (n(Object(i.B)(e, r.a.VideoPlayedExpanded)), n(Object(i.B)(e, r.a.VideoViewableImpression)), n(Object(i.B)(e, r.a.VideoFullyViewableImpression)), n(Object(i.B)(e, r.a.MRCVideoViewableImpression)), n(K({
-							postId: t
-						})), n(M({
-							postId: t
-						})), n(F({
+						n(M(t, "play_expanded", "video", !1)), n(M(t, "is_viewable", "video", !1)), n(M(t, "is_fully_viewable", "video", !1)), e.isSponsored && (n(Object(i.B)(e, r.a.VideoPlayedExpanded)), n(Object(i.B)(e, r.a.VideoViewableImpression)), n(Object(i.B)(e, r.a.VideoFullyViewableImpression)), n(Object(i.B)(e, r.a.MRCVideoViewableImpression)), n(Y({
 							postId: t
 						})), n(G({
 							postId: t
+						})), n(B({
+							postId: t
 						})))
 					})(s, e, t)
-				}, _e = (e, t) => async (n, s) => {
+				}, ye = (e, t) => async (n, s) => {
 					const r = s();
-					r.posts.video.autoPlayed[e] && Object(u.j)(r) && (d.d(r, e), void 0 !== t && n(me({
+					r.posts.video.autoPlayed[e] && Object(u.j)(r) && (d.d(r, e), void 0 !== t && n(ge({
 						postId: e,
 						isBuffering: t
 					})))
-				}, he = e => async (t, n) => {
+				}, je = e => async (t, n) => {
 					const s = n();
 					s.posts.video.autoPlayed[e] && Object(u.j)(s) && d.h(s, e)
-				}, ye = (e, t) => async (n, s) => {
-					n(oe({
-						postId: e,
-						time: t
-					}));
-					const r = s();
-					Object(u.j)(r) && d.f(r, e)
-				}, je = (e, t) => async (n, s) => {
+				}, Ee = (e, t) => async (n, s) => {
 					n(ie({
 						postId: e,
 						time: t
 					}));
 					const r = s();
+					Object(u.j)(r) && d.f(r, e)
+				}, Ie = (e, t) => async (n, s) => {
+					n(de({
+						postId: e,
+						time: t
+					}));
+					const r = s();
 					Object(u.j)(r) && d.a(r, e)
-				}, Ee = e => async (t, n) => {
+				}, Se = e => async (t, n) => {
 					const s = n(),
 						r = s.posts.video.autoPlayed[e],
 						o = s.posts.video.started[e];
-					t(be({
+					t(fe({
 						postId: e
-					})), t(fe({
+					})), t(Oe({
 						postId: e
 					})), !o && r && Object(u.j)(s) && d.c(s, e)
-				}, Ie = e => async (t, n) => {
+				}, ve = e => async (t, n) => {
 					const s = n(),
 						r = s.posts.video.autoPlayed[e],
 						o = s.posts.video.consumed[e];
-					t(se({
+					t(oe({
 						postId: e
 					})), r && Object(u.j)(s) && !o && d.b(s, e)
 				}
@@ -31141,26 +31143,30 @@
 							return S(e, t.payload.postId, "adImpression");
 						case y.b:
 							return S(e, t.payload.postId, "adViewableImpression");
-						case E.e:
+						case E.g:
 							return S(e, t.payload.postId, "adVideoViewable");
 						case E.a:
 							return S(e, t.payload.postId, "adMRCVideoViewable");
 						case E.b:
 							return S(e, t.payload.postId, "adVideoFullyViewable");
-						case E.d:
+						case E.f:
 							return S(e, t.payload.postId, "adVideoStarted");
-						case E.c:
+						case E.e:
 							return S(e, t.payload.postId, "adVideoPlayedWithSound");
-						case E.r:
+						case E.d:
+							return S(e, t.payload.postId, "adVideoGroupMViewable");
+						case E.c:
+							return S(e, t.payload.postId, "adVideoFullyViewable50");
+						case E.t:
 							return S(e, t.payload.postId, "adVideoPlayedExpanded");
-						case E.f: {
+						case E.h: {
 							const {
 								postId: n,
 								percentage: s
 							} = t.payload;
 							return S(e, n, "adVideoWatchedPercent".concat(s))
 						}
-						case E.g: {
+						case E.i: {
 							const {
 								postId: n,
 								seconds: s
@@ -42993,7 +42999,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.l: {
+					case E.n: {
 						const {
 							auto: n,
 							postId: s
@@ -43011,7 +43017,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.h: {
+					case E.j: {
 						const {
 							postId: n,
 							isBuffering: s
@@ -43029,7 +43035,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : v_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.i: {
+					case E.k: {
 						const {
 							postId: n
 						} = t.payload;
@@ -43046,7 +43052,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : w_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.j: {
+					case E.l: {
 						const {
 							postId: n,
 							time: s
@@ -43063,13 +43069,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.r: {
+					case E.t: {
 						const {
 							postId: e
 						} = t.payload;
 						return e
 					}
-					case E.k:
+					case E.m:
 						return null;
 					default:
 						return e
@@ -43080,7 +43086,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.u: {
+					case E.w: {
 						const {
 							postId: n
 						} = t.payload;
@@ -43088,7 +43094,7 @@
 							[n]: !1
 						}) : e
 					}
-					case E.l: {
+					case E.n: {
 						const {
 							postId: n
 						} = t.payload;
@@ -43104,7 +43110,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.o: {
+					case E.q: {
 						const {
 							postId: n,
 							time: s
@@ -43118,7 +43124,7 @@
 							})
 						})
 					}
-					case E.m: {
+					case E.o: {
 						const {
 							postId: n,
 							time: s
@@ -43139,7 +43145,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : x_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.q: {
+					case E.s: {
 						const {
 							postId: n,
 							metadata: s
@@ -43157,7 +43163,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.v: {
+					case E.x: {
 						const {
 							postId: n
 						} = t.payload;
@@ -43165,7 +43171,7 @@
 							[n]: !1
 						}) : e
 					}
-					case E.n: {
+					case E.p: {
 						const {
 							postId: n
 						} = t.payload;
@@ -43181,7 +43187,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M_,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.p: {
+					case E.r: {
 						const {
 							postId: n,
 							isPlaying: s
@@ -43199,7 +43205,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G_,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.s: {
+						case E.u: {
 							const {
 								postId: n
 							} = t.payload;
@@ -43217,7 +43223,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V_,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.t: {
+						case E.v: {
 							const {
 								postId: n,
 								time: s
@@ -54262,4 +54268,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.58b153c4321cb4519b72.js.map
+//# sourceMappingURL=Governance~Reddit.b20799cdf8b94a93b664.js.map
