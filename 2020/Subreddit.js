@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4ff8291b7aeec614ee16.js
-// Retrieved at 6/8/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3a73e08eb200ad3c9ea0.js
+// Retrieved at 6/9/2020, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -6879,7 +6879,7 @@
 					isSnoovatarEmbedEnabled: t,
 					subreddit: n
 				} = e;
-				return !!n && t && !!n.name && "reddit15" === n.name.toLowerCase()
+				return !!n && t && !!n.name && "snoovatar" === n.name.toLowerCase()
 			}
 			class tt extends p.a.Component {
 				constructor() {
@@ -7481,4 +7481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.4ff8291b7aeec614ee16.js.map
+//# sourceMappingURL=Subreddit.3a73e08eb200ad3c9ea0.js.map
