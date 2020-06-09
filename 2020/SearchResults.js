@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5ff6d0b5f159a62bde19.js
-// Retrieved at 6/8/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.cf445c4917a777a0f095.js
+// Retrieved at 6/9/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -6805,6 +6805,8 @@
 				backToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
 				StickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				stickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
+				StickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
+				stickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
 				LargeOffset: "_2Fh9XKrAUp6CQHSgW98LEb",
 				largeOffset: "_2Fh9XKrAUp6CQHSgW98LEb"
 			}
@@ -6877,11 +6879,13 @@
 					let {
 						children: t,
 						className: s,
-						isSticky: r
+						isFakeOverlay: r,
+						isSticky: o
 					} = e;
 					return i.a.createElement("div", {
 						className: Object(n.a)(s, {
-							[y.a.StickyStyles]: r
+							[y.a.StickyStyles]: o && !r,
+							[y.a.StickyStylesFakeOverlay]: !!r
 						})
 					}, t)
 				};
@@ -6922,17 +6926,19 @@
 					const {
 						props: {
 							adComponent: e,
-							children: t,
-							className: s,
-							hideFooter: n
+							adComponentOnFakeOverlay: t,
+							children: s,
+							className: n,
+							hideFooter: r
 						}
-					} = this, r = this.state.isAdSticky && !(!e && !t);
+					} = this, o = this.state.isAdSticky && !(!e && !s);
 					return i.a.createElement(_, {
-						className: s,
+						className: n,
 						innerRef: this.setWrapperRef
 					}, i.a.createElement(P, {
-						isSticky: r
-					}, e, t, !n && i.a.createElement(b.a, null)), !this.props.hideBackToTop && i.a.createElement(k, null))
+						isFakeOverlay: t,
+						isSticky: o
+					}, e, s, !r && i.a.createElement(b.a, null)), !this.props.hideBackToTop && i.a.createElement(k, null))
 				}
 			}
 			const w = Object(x.t)();
@@ -9395,4 +9401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.5ff6d0b5f159a62bde19.js.map
+//# sourceMappingURL=SearchResults.cf445c4917a777a0f095.js.map

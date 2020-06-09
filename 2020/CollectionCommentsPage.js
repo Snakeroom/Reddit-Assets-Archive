@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4cad8f3d98150f9aeac4.js
-// Retrieved at 6/8/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3f00321933f1bc5c39ac.js
+// Retrieved at 6/9/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4509,22 +4509,21 @@
 				b = s("./src/reddit/components/Governance/Leaderboard/async.tsx"),
 				x = s("./src/reddit/components/IdCard/async.tsx"),
 				g = s("./src/reddit/components/SidebarAd/CommentsPageSidebarAd.tsx"),
-				f = s("./src/reddit/components/SidebarFooter/index.tsx"),
-				v = s("./src/reddit/components/SidebarSpacer/index.tsx"),
-				C = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				O = s("./src/reddit/components/Widgets/AdRules/index.tsx"),
-				y = s("./src/reddit/components/Widgets/Widget/index.tsx"),
-				E = s("./src/reddit/featureFlags/component.tsx"),
-				_ = s("./src/reddit/helpers/createBannerProperties/index.ts"),
-				k = s("./src/reddit/models/Post/index.ts"),
-				j = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				P = s("./src/reddit/selectors/subreddit.ts"),
-				w = s("./src/reddit/selectors/user.ts"),
-				I = s("./src/reddit/components/CommentsPageSidebar/index.m.less"),
-				S = s.n(I);
-			const T = Object(E.a)("spPoints", h.a),
-				N = Object(E.a)("spLeaderboard", b.a),
-				M = Object(n.a)({
+				f = s("./src/reddit/components/SidebarSpacer/index.tsx"),
+				v = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				C = s("./src/reddit/components/Widgets/AdRules/index.tsx"),
+				O = s("./src/reddit/components/Widgets/Widget/index.tsx"),
+				y = s("./src/reddit/featureFlags/component.tsx"),
+				E = s("./src/reddit/helpers/createBannerProperties/index.ts"),
+				_ = s("./src/reddit/models/Post/index.ts"),
+				k = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				j = s("./src/reddit/selectors/subreddit.ts"),
+				P = s("./src/reddit/selectors/user.ts"),
+				w = s("./src/reddit/components/CommentsPageSidebar/index.m.less"),
+				I = s.n(w);
+			const S = Object(y.a)("spPoints", h.a),
+				T = Object(y.a)("spLeaderboard", b.a),
+				N = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ProfileIdCard",
 					isReady(e) {
@@ -4544,13 +4543,13 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				L = Object(c.c)({
-					isLoggedIn: w.H,
-					postSEOV2IdCardVariant: j.k,
-					widgets: Object(p.a)(P.r)
+				M = Object(c.c)({
+					isLoggedIn: P.H,
+					postSEOV2IdCardVariant: k.k,
+					widgets: Object(p.a)(j.r)
 				}),
-				R = Object(d.b)(L);
-			class F extends a.a.Component {
+				L = Object(d.b)(M);
+			class R extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						isMounted: !1
@@ -4570,26 +4569,18 @@
 						isOverlay: s,
 						subredditName: n,
 						post: o,
-						postSEOV2IdCardVariant: r
-					} = this.props, i = !Object(j.a)(r) && !Object(j.g)(r);
-					return s ? a.a.createElement(a.a.Fragment, null, a.a.createElement(g.a, {
-						postId: o.id,
-						isOverlay: s,
-						listingName: n,
-						placement: m.c.BELOW_THE_FOLD,
-						placementIndex: e,
-						position: _.a.BOTTOM,
-						refreshKey: o.id,
-						sizes: m.n,
-						commentsPageKey: t
-					}), a.a.createElement(f.a, null)) : a.a.createElement(C.a, {
-						adComponent: i ? a.a.createElement(g.a, {
+						isFakeOverlay: r,
+						postSEOV2IdCardVariant: i
+					} = this.props, d = !Object(k.a)(i) && !Object(k.g)(i);
+					return a.a.createElement(v.a, {
+						adComponentOnFakeOverlay: r,
+						adComponent: d ? a.a.createElement(g.a, {
 							postId: o.id,
 							isOverlay: s,
 							listingName: n,
 							placement: m.c.BELOW_THE_FOLD,
 							placementIndex: e,
-							position: _.a.BOTTOM,
+							position: E.a.BOTTOM,
 							refreshKey: o.id,
 							sizes: m.n,
 							commentsPageKey: t
@@ -4609,21 +4600,21 @@
 						widgets: c
 					} = this.props;
 					let p = 0;
-					const h = Object(j.a)(r) || Object(j.g)(r),
+					const h = Object(k.a)(r) || Object(k.g)(r),
 						b = a.a.createElement(g.a, {
 							postId: o.id,
 							isOverlay: n,
 							listingName: d,
 							placement: m.c.ABOVE_THE_FOLD,
 							placementIndex: p++,
-							position: _.a.FIRST,
+							position: E.a.FIRST,
 							refreshKey: o.id,
 							sizes: m.h,
 							commentsPageKey: t
 						});
 					return a.a.createElement("div", {
-						className: Object(l.a)(S.a.outerWrapper, e)
-					}, Object(k.j)(o) ? a.a.createElement(M, {
+						className: Object(l.a)(I.a.outerWrapper, e)
+					}, Object(_.j)(o) ? a.a.createElement(N, {
 						profileName: d,
 						isOverlay: n || !1
 					}) : a.a.createElement(x.a, {
@@ -4635,25 +4626,25 @@
 						rememberPosition: o.numComments > 0,
 						isMinimal: h
 					}), a.a.createElement(u.a, {
-						className: S.a.communityTipJar,
+						className: I.a.communityTipJar,
 						subredditId: i
+					}), a.a.createElement(S, {
+						className: I.a.communityTokens,
+						subredditId: i,
+						uniqueId: o.id
 					}), a.a.createElement(T, {
-						className: S.a.communityTokens,
+						className: I.a.leaderboard,
 						subredditId: i,
 						uniqueId: o.id
-					}), a.a.createElement(N, {
-						className: S.a.leaderboard,
-						subredditId: i,
-						uniqueId: o.id
-					}), b, s && c.map((e, t) => a.a.createElement(v.a, {
+					}), b, s && c.map((e, t) => a.a.createElement(f.a, {
 						key: "widgetSpacer".concat(t)
-					}, a.a.createElement(y.a, {
+					}, a.a.createElement(O.a, {
 						subredditName: d,
 						widget: e
-					}))), o.isSponsored && a.a.createElement(v.a, null, a.a.createElement(O.a, null)), this.renderFooter(p++))
+					}))), o.isSponsored && a.a.createElement(f.a, null, a.a.createElement(C.a, null)), this.renderFooter(p++))
 				}
 			}
-			t.a = R(F)
+			t.a = L(R)
 		},
 		"./src/reddit/components/CommentsWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -10939,6 +10930,8 @@
 				backToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
 				StickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				stickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
+				StickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
+				stickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
 				LargeOffset: "_2Fh9XKrAUp6CQHSgW98LEb",
 				largeOffset: "_2Fh9XKrAUp6CQHSgW98LEb"
 			}
@@ -11011,11 +11004,13 @@
 					let {
 						children: t,
 						className: s,
-						isSticky: o
+						isFakeOverlay: o,
+						isSticky: r
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(n.a)(s, {
-							[f.a.StickyStyles]: o
+							[f.a.StickyStyles]: r && !o,
+							[f.a.StickyStylesFakeOverlay]: !!o
 						})
 					}, t)
 				};
@@ -11056,17 +11051,19 @@
 					const {
 						props: {
 							adComponent: e,
-							children: t,
-							className: s,
-							hideFooter: n
+							adComponentOnFakeOverlay: t,
+							children: s,
+							className: n,
+							hideFooter: o
 						}
-					} = this, o = this.state.isAdSticky && !(!e && !t);
+					} = this, r = this.state.isAdSticky && !(!e && !s);
 					return a.a.createElement(k, {
-						className: s,
+						className: n,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(P, {
-						isSticky: o
-					}, e, t, !n && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(j, null))
+						isFakeOverlay: t,
+						isSticky: r
+					}, e, s, !o && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(j, null))
 				}
 			}
 			const I = Object(x.t)();
@@ -16209,6 +16206,7 @@
 						post: l,
 						sidebar: p && g.a.createElement(ye.a, {
 							commentsPageKey: s,
+							isFakeOverlay: !0,
 							isOverlay: !0,
 							post: l,
 							subredditName: p.name,
@@ -16481,4 +16479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.4cad8f3d98150f9aeac4.js.map
+//# sourceMappingURL=CollectionCommentsPage.3f00321933f1bc5c39ac.js.map
