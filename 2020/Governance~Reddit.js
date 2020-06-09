@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ccd0683bc7f4f1a8e01.js
-// Retrieved at 6/9/2020, 4:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2550d108a44718b4a9d6.js
+// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5191,7 +5191,7 @@
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/lib/messageIframeParent/index.ts"),
+				o = n("./src/lib/postParentMessage/index.ts"),
 				a = n("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				i = n("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
@@ -5432,7 +5432,7 @@
 				return S
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/lib/messageIframeParent/index.ts"),
+				r = n("./src/lib/postParentMessage/index.ts"),
 				o = n("./src/reddit/helpers/isPost.ts"),
 				a = n("./src/reddit/selectors/gild.ts"),
 				i = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -5526,25 +5526,25 @@
 			var l = n("./src/reddit/selectors/gold/powerups.ts"),
 				b = n("./src/reddit/selectors/user.ts"),
 				p = n("./src/reddit/actions/gold/constants.ts");
-			const f = () => async (e, t, n) => {
+			const f = e => async (t, n, r) => {
 				let {
-					gqlContext: r
-				} = n;
-				if (!!t().user.powerups.fetched) return;
-				e(m());
-				const o = s.fbt._("Something went wrong", null, {
+					gqlContext: o
+				} = r;
+				if (!!n().user.powerups.fetched && !e) return;
+				t(m());
+				const a = s.fbt._("Something went wrong", null, {
 					hk: "1IJNeH"
 				});
 				try {
-					const t = await (e => Object(u.a)(e, d))(r());
-					if (t.ok) {
-						const n = t.body;
-						return n.errors && n.errors.length ? void(await e(_(o))) : void(await e(O({
+					const e = await (e => Object(u.a)(e, d))(o());
+					if (e.ok) {
+						const n = e.body;
+						return n.errors && n.errors.length ? void(await t(_(a))) : void(await t(O({
 							powerups: n.data.identity.powerups
 						})))
 					}
-				} catch (a) {
-					await e(_(o))
+				} catch (i) {
+					await t(_(a))
 				}
 			}, m = Object(r.a)(p.kb), O = Object(r.a)(p.jb), g = Object(r.a)(p.ib), _ = e => async (t, n) => {
 				await t(g(e)), t(Object(o.e)({
@@ -5677,7 +5677,7 @@
 						gqlContext: a
 					} = o;
 					const u = r();
-					if (!Object(d.a)(u, {
+					if (!Object(d.b)(u, {
 							subredditId: e,
 							type: t
 						})) {
@@ -53036,17 +53036,30 @@
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return r
+			n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return a
 			}));
-			var s = n("./src/lib/makeProductOfferKey/index.ts");
-			const r = (e, t) => {
-				let {
-					subredditId: n,
-					type: r
-				} = t;
-				return e.subreddits.productOffers[Object(s.a)(n, r)]
-			}
+			var s = n("./src/lib/makeProductOfferKey/index.ts"),
+				r = n("./src/reddit/models/Gold/ProductOffer.ts");
+			const o = (e, t) => {
+					let {
+						subredditId: n,
+						type: r
+					} = t;
+					return e.subreddits.productOffers[Object(s.a)(n, r)]
+				},
+				a = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					const s = o(e, {
+						subredditId: n,
+						type: r.a.Powerups
+					});
+					return s && s[0]
+				}
 		},
 		"./src/reddit/selectors/gold/purchaseCatalog.ts": function(e, t, n) {
 			"use strict";
@@ -54268,4 +54281,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7ccd0683bc7f4f1a8e01.js.map
+//# sourceMappingURL=Governance~Reddit.2550d108a44718b4a9d6.js.map

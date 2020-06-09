@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3c14c9c4099bbc401d19.js
-// Retrieved at 6/8/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e703c4254439511f4322.js
+// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -886,7 +886,7 @@
 				} = e.params;
 				if (k === r.Mb.Gold) return void t(Object(a.c)("/settings/premium"));
 				const _ = [];
-				k === r.Mb.Profile && (_.push(t(Object(f.a)())), _.push(t(Object(C.e)()))), k === r.Mb.Account && _.push(t(Object(u.o)())), k === r.Mb.Notifications && _.push(t(Object(h.a)())), k !== r.Mb.Privacy && k !== r.Mb.Messaging || _.push(t(Object(d.b)())), k === r.Mb.Premium && (_.push(t(Object(f.a)())), _.push(t(Object(p.e)()))), await Promise.all(_); {
+				k === r.Mb.Profile && (_.push(t(Object(f.a)())), _.push(t(Object(C.e)()))), k === r.Mb.Account && _.push(t(Object(u.o)())), k === r.Mb.Notifications && _.push(t(Object(h.a)())), k !== r.Mb.Privacy && k !== r.Mb.Messaging || _.push(t(Object(d.b)())), k === r.Mb.Premium && (_.push(t(Object(f.a)())), _.push(t(Object(p.e)(!0)))), await Promise.all(_); {
 					const e = s(),
 						r = e.platform.currentPage,
 						{
@@ -12724,4 +12724,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.3c14c9c4099bbc401d19.js.map
+//# sourceMappingURL=Reddit.e703c4254439511f4322.js.map

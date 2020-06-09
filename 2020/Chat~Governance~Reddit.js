@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.46dc4c7efd87f4b89ad5.js
-// Retrieved at 6/9/2020, 4:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.807569fc67636c9b751e.js
+// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -160,7 +160,7 @@
 				r = i.n(n),
 				s = i("./src/lib/cache/index.ts"),
 				o = i("./src/lib/constants/index.ts"),
-				d = i("./src/lib/messageIframeParent/index.ts"),
+				d = i("./src/lib/postParentMessage/index.ts"),
 				l = i("./src/chat/actions/container.ts"),
 				a = i("./src/chat/constants/container.ts"),
 				u = i("./src/chat/customMiddleware/noop.ts"),
@@ -3262,14 +3262,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("ea26d90-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("db51d46-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ea26d90-production",
+						release: "db51d46-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3631,7 +3631,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "ea26d90-production",
+							releaseClient: "db51d46-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -4043,22 +4043,6 @@
 				}
 			}
 		},
-		"./src/lib/messageIframeParent/index.ts": function(e, t, i) {
-			"use strict";
-			t.a = function(e, t) {
-				let {
-					type: i,
-					data: n = {}
-				} = e, r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "*";
-				if (window.parent !== window) {
-					const e = {
-						type: t ? "".concat(i, ".").concat(t) : i,
-						data: n
-					};
-					window.parent.postMessage(JSON.stringify(e), r)
-				}
-			}
-		},
 		"./src/lib/objectSelector/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
@@ -4367,6 +4351,22 @@
 				return t.setFullYear(t.getFullYear() + e), Object.assign({}, n.x, {
 					expires: t
 				})
+			}
+		},
+		"./src/lib/postParentMessage/index.ts": function(e, t, i) {
+			"use strict";
+			t.a = function(e, t) {
+				let {
+					type: i,
+					data: n = {}
+				} = e, r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "*", s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : window.parent;
+				if (s !== window) {
+					const e = {
+						type: t ? "".concat(i, ".").concat(t) : i,
+						data: n
+					};
+					s.postMessage(JSON.stringify(e), r)
+				}
 			}
 		},
 		"./src/lib/prettyPrintNumber/index.ts": function(e, t, i) {
@@ -9568,8 +9568,8 @@
 				e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD"
 			}(s || (s = {}));
 			const o = {
-					[s.SdVideo]: r.fbt._("720p SD Videos", null, {
-						hk: "2fAsdM"
+					[s.SdVideo]: r.fbt._("SD video", null, {
+						hk: "1N7Ncu"
 					}),
 					[s.HdVideo]: r.fbt._("HD video", null, {
 						hk: "2LKEks"
@@ -21400,4 +21400,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.46dc4c7efd87f4b89ad5.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.807569fc67636c9b751e.js.map

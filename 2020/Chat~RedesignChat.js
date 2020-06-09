@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.25e50612abfbde73c78b.js
-// Retrieved at 6/8/2020, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f943df8b3c945dc1ba19.js
+// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9037,7 +9037,7 @@
 				r = n("./node_modules/react-router-redux/es/index.js"),
 				o = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				i = n("./src/lib/constants/index.ts"),
-				l = n("./src/lib/messageIframeParent/index.ts"),
+				l = n("./src/lib/postParentMessage/index.ts"),
 				d = n("./src/chat/actions/channel.ts"),
 				u = n("./src/chat/actions/container.ts"),
 				h = n("./src/chat/actions/message/unreadCount.ts"),
@@ -14041,4 +14041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.25e50612abfbde73c78b.js.map
+//# sourceMappingURL=Chat~RedesignChat.f943df8b3c945dc1ba19.js.map

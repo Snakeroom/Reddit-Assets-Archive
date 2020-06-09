@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.cb496a1b24101e9fd394.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.1496e6f9c07e048c8e2d.js
+// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, s, t) {
@@ -60,18 +60,19 @@
 			t.r(s);
 			t("./node_modules/core-js/modules/es6.regexp.search.js"), t("./node_modules/core-js/modules/es6.regexp.match.js");
 			var r = t("./node_modules/lodash/fromPairs.js"),
-				o = t.n(r),
-				i = t("./node_modules/react/index.js"),
-				a = t.n(i),
+				i = t.n(r),
+				o = t("./node_modules/react/index.js"),
+				a = t.n(o),
 				n = t("./src/lib/extractQueryParams/index.ts"),
-				d = t("./src/lib/messageIframeParent/index.ts"),
+				d = t("./src/lib/postParentMessage/index.ts"),
 				l = t("./src/reddit/pages/FramedModalPage/index.m.less"),
 				c = t.n(l),
 				m = t("./src/reddit/components/CrisisFlow/async.tsx"),
-				p = t("./src/reddit/pages/FramedModalPage/async.tsx");
+				p = t("./src/reddit/pages/PaypalFinishPage/async.tsx"),
+				h = t("./src/reddit/pages/FramedModalPage/async.tsx");
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r])
@@ -79,44 +80,48 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const u = /.*\.reddit\.(com|local)$|.*staging\.snooguts\.net$/,
+			const y = /.*\.reddit\.(com|local)$|.*(staging|dev)\.snooguts\.net$/,
 				g = "framedmodal",
-				y = {
+				P = {
 					PARENT_ORIGIN: "_o"
 				},
-				P = {
+				v = {
 					SUPPORT: "support",
-					CTL: "ctl"
+					CTL: "ctl",
+					PAYPAL_FINISH: "paypal-finish"
 				};
 			class f extends a.a.Component {
 				constructor(e) {
-					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.modalType = e.match.params.type, this.modalType !== P.SUPPORT && this.modalType !== P.CTL) throw new Error("Unknown modal page type: " + e.match.params.type);
-					this.queryParams = o()([...Object(n.a)(this.props.location.search)]);
-					const s = this.queryParams[y.PARENT_ORIGIN];
-					if (!u.test(s)) throw new Error("Invalid parent origin: " + s);
+					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.modalType = e.match.params.type, this.modalType !== v.SUPPORT && this.modalType !== v.CTL && this.modalType !== v.PAYPAL_FINISH) throw new Error("Unknown modal page type: " + e.match.params.type);
+					this.queryParams = i()([...Object(n.a)(this.props.location.search)]);
+					const s = this.queryParams[P.PARENT_ORIGIN];
+					if (!y.test(s)) throw new Error("Invalid parent origin: " + s);
 					this.parentOrigin = s
 				}
 				postMessage(e) {
-					Object(d.a)(e, g, this.parentOrigin)
+					Object(d.a)(e, g, this.parentOrigin, window.opener || window.parent)
 				}
 				render() {
 					return a.a.createElement("div", {
 						className: c.a.fullScreen,
 						ref: e => this.setElement(e)
-					}, this.modalType === P.SUPPORT && a.a.createElement(p.a, {
+					}, this.modalType === v.SUPPORT && a.a.createElement(h.a, {
 						params: this.queryParams,
 						onClose: () => this.postMessage({
 							type: "close"
 						}),
 						postMessage: e => this.postMessage(e)
-					}), this.modalType === P.CTL && a.a.createElement(m.a, h({
+					}), this.modalType === v.CTL && a.a.createElement(m.a, u({
 						iframed: !0,
 						username: this.queryParams.author,
 						onCloseReportFlow: () => this.postMessage({
 							type: "close"
 						}),
 						postMessage: e => this.postMessage(e)
-					}, this.queryParams)))
+					}, this.queryParams)), this.modalType === v.PAYPAL_FINISH && a.a.createElement(p.a, {
+						params: this.queryParams,
+						postMessage: e => this.postMessage(e)
+					}))
 				}
 				componentDidMount() {
 					this.postMessage({
@@ -127,13 +132,15 @@
 					this.maybeResize()
 				}
 				setElement(e) {
-					this.element = e, new MutationObserver(() => {
-						this.maybeResize()
-					}).observe(e, {
-						attributes: !0,
-						childList: !0,
-						subtree: !0
-					})
+					if (this.element = e, e) {
+						new MutationObserver(() => {
+							this.maybeResize()
+						}).observe(e, {
+							attributes: !0,
+							childList: !0,
+							subtree: !0
+						})
+					}
 				}
 				maybeResize() {
 					const e = this.element && this.element.firstElementChild;
@@ -150,7 +157,31 @@
 				}
 			}
 			s.default = f
+		},
+		"./src/reddit/pages/PaypalFinishPage/async.tsx": function(e, s, t) {
+			"use strict";
+			var r = t("./node_modules/@loadable/component/dist/loadable.esm.js");
+			s.a = Object(r.a)({
+				resolved: {},
+				chunkName: () => "reddit-pages-PaypalFinishPage",
+				isReady(e) {
+					const s = this.resolve(e);
+					return !1 !== this.resolved[s] && !!t.m[s]
+				},
+				importAsync: () => t.e("reddit-pages-PaypalFinishPage").then(t.bind(null, "./src/reddit/pages/PaypalFinishPage/index.tsx")),
+				requireAsync(e) {
+					const s = this.resolve(e);
+					return this.resolved[s] = !1, this.importAsync(e).then(e => (this.resolved[s] = !0, e))
+				},
+				requireSync(e) {
+					const s = this.resolve(e);
+					return t(s)
+				},
+				resolve() {
+					return "./src/reddit/pages/PaypalFinishPage/index.tsx"
+				}
+			})
 		}
 	}
 ]);
-//# sourceMappingURL=FramedModal.cb496a1b24101e9fd394.js.map
+//# sourceMappingURL=FramedModal.1496e6f9c07e048c8e2d.js.map
