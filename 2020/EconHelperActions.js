@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.7d0dbe4ee19de5aee3d1.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.c10457906343ee455cb1.js
+// Retrieved at 6/9/2020, 4:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -57,16 +57,16 @@
 						h = n(),
 						j = b(h),
 						O = h.comments.models,
-						v = h.posts.models,
-						w = new Set(h.user.account ? [h.user.account.id] : []);
+						w = h.posts.models,
+						v = new Set(h.user.account ? [h.user.account.id] : []);
 					l.forEach(e => {
-						const t = v[e];
-						t && w.add(t.authorId)
+						const t = w[e];
+						t && v.add(t.authorId)
 					}), u.forEach(e => {
 						const t = O[e];
-						t && w.add(t.authorId)
+						t && v.add(t.authorId)
 					});
-					const I = Array.from(w);
+					const I = Array.from(v);
 					!p.includes("badges") && I.length && j(["spBadges", "spLoadtest", "spPremium"]) && g.push(t(Object(o.l)({
 						subredditId: f,
 						userIds: I
@@ -209,12 +209,12 @@
 				j = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
 				O = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts");
 
-			function v(e) {
+			function w(e) {
 				return !!e && "removeBadge" === e.type
 			}
 
-			function w(e) {
-				if (!v(e)) return e
+			function v(e) {
+				if (!w(e)) return e
 			}
 			const I = () => async (e, t, n) => {
 				let {
@@ -250,10 +250,10 @@
 				if (d && e.badge) {
 					let n, s;
 					n = e.placement === l.a.First ? i[p.a.Loyalty] : e.placement === l.a.Second ? i[p.a.Achievement] : i[p.a.Cosmetic], t(Object(O.a)(Object.assign({}, e, {
-						badge: w(e.badge),
+						badge: v(e.badge),
 						currentAppliedBadges: u,
 						userId: d.id
-					}))), v(e.badge) && n ? s = await Object(a.a)(r(), e.subredditId, n.id, !1) : v(e.badge) || (s = await Object(a.a)(r(), e.subredditId, e.badge.id)), s && !s.ok && (t(Object(O.a)(Object.assign({}, e, {
+					}))), w(e.badge) && n ? s = await Object(a.a)(r(), e.subredditId, n.id, !1) : w(e.badge) || (s = await Object(a.a)(r(), e.subredditId, e.badge.id)), s && !s.ok && (t(Object(O.a)(Object.assign({}, e, {
 						badge: n,
 						currentAppliedBadges: u,
 						userId: d.id
@@ -689,9 +689,9 @@
 			})), n.d(t, "E", (function() {
 				return O
 			})), n.d(t, "g", (function() {
-				return v
-			})), n.d(t, "w", (function() {
 				return w
+			})), n.d(t, "w", (function() {
+				return v
 			})), n.d(t, "j", (function() {
 				return I
 			})), n.d(t, "l", (function() {
@@ -719,7 +719,7 @@
 			})), n.d(t, "v", (function() {
 				return E
 			})), n.d(t, "p", (function() {
-				return L
+				return U
 			})), n.d(t, "x", (function() {
 				return q
 			})), n.d(t, "y", (function() {
@@ -799,7 +799,7 @@
 					}
 					return j.DontKnow
 				},
-				v = (e, t) => {
+				w = (e, t) => {
 					const n = e.user.account,
 						s = e.economics.subredditPremium[t];
 					if (n && s && s.status === l.a.Fetched) {
@@ -816,7 +816,7 @@
 						[i.a.Cosmetic]: void 0
 					}
 				},
-				w = (e, t, n) => {
+				v = (e, t, n) => {
 					if (!r.d.spBadges(e) && !r.d.spPremium(e)) return [];
 					const s = (e.users.appliedBadges[n] || {})[t] || [];
 					return Object(o.a)(s.map(t => e.badges.models[t]).filter(Boolean))
@@ -926,7 +926,7 @@
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
 			}(D || (D = {}));
 			const E = e => e.economics.paymentSystems.status === b.a.NotFetched ? D.NotFetched : e.economics.paymentSystems.status === b.a.Pending ? D.Fetching : D.Fetched,
-				M = {
+				L = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -935,7 +935,7 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				U = {
+				M = {
 					t5_vsb5g: {
 						points: "5000000000000000000000"
 					},
@@ -943,12 +943,12 @@
 						points: "5000000000000000000000"
 					}
 				},
-				L = (e, t) => Object.values(e.products.models).filter(e => e.type === m.a.Membership && t && e.subredditId === t),
+				U = (e, t) => Object.values(e.products.models).filter(e => e.type === m.a.Membership && t && e.subredditId === t),
 				T = (e, t) => {
 					if (!t) return {};
-					if (U[t]) return U[t];
-					const n = M.prices;
-					L(e, t).forEach(e => {
+					if (M[t]) return M[t];
+					const n = L.prices;
+					U(e, t).forEach(e => {
 						e.price && e.currency && (n[e.currency] = e.price)
 					});
 					const s = y(e, t);
@@ -956,15 +956,15 @@
 				},
 				q = (e, t) => {
 					const n = e.subreddits.gov.meta[t || ""],
-						s = n && n.extra && n.extra.nomenclature || M;
+						s = n && n.extra && n.extra.nomenclature || L;
 					return {
 						prices: T(e, t),
-						member: s.member || M.member,
-						memberPlural: s.memberPlural || M.memberPlural,
-						memberAlt: s.memberAlt || M.memberAlt,
-						memberAltPlural: s.memberAltPlural || M.memberAltPlural,
-						membership: s.membership || M.membership,
-						membershipAlt: s.membershipAlt || M.membershipAlt
+						member: s.member || L.member,
+						memberPlural: s.memberPlural || L.memberPlural,
+						memberAlt: s.memberAlt || L.memberAlt,
+						memberAltPlural: s.memberAltPlural || L.memberAltPlural,
+						membership: s.membership || L.membership,
+						membershipAlt: s.membershipAlt || L.membershipAlt
 					}
 				},
 				G = (e, t) => {
@@ -1048,7 +1048,10 @@
 				Q = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const n = (e.economics.me.data.claimPoints || {})[t.subredditId];
-					return n && n.length ? n.reduce((e, t) => e.plus(t.pointsToClaim), new s.BigNumber(0)).toString() : null
+					if (!n || !n.length) return null;
+					const r = (e.user.wallets[t.subredditId] || {}).latest,
+						o = r && r.publicAddress && r.publicAddress.toLowerCase();
+					return n.filter(e => !e.address || e.address.toLowerCase() === o).reduce((e, t) => e.plus(t.pointsToClaim), new s.BigNumber(0)).toString()
 				},
 				Y = (e, t) => {
 					if (!t || !t.subredditId) return null;
@@ -1091,4 +1094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.7d0dbe4ee19de5aee3d1.js.map
+//# sourceMappingURL=EconHelperActions.c10457906343ee455cb1.js.map

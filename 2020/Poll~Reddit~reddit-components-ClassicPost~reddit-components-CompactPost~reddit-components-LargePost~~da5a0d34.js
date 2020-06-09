@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.cb0636814e4a1de0c309.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.f6c93cc765099fa2b8f4.js
+// Retrieved at 6/9/2020, 4:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -3736,7 +3736,10 @@
 				J = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const s = (e.economics.me.data.claimPoints || {})[t.subredditId];
-					return s && s.length ? s.reduce((e, t) => e.plus(t.pointsToClaim), new n.BigNumber(0)).toString() : null
+					if (!s || !s.length) return null;
+					const r = (e.user.wallets[t.subredditId] || {}).latest,
+						i = r && r.publicAddress && r.publicAddress.toLowerCase();
+					return s.filter(e => !e.address || e.address.toLowerCase() === i).reduce((e, t) => e.plus(t.pointsToClaim), new n.BigNumber(0)).toString()
 				},
 				Y = (e, t) => {
 					if (!t || !t.subredditId) return null;
@@ -3803,4 +3806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.cb0636814e4a1de0c309.js.map
+//# sourceMappingURL=Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34.f6c93cc765099fa2b8f4.js.map

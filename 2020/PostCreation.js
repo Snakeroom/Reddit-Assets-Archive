@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.269299d88fca8fc83309.js
-// Retrieved at 6/8/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2909bb263ccbbb1f4479.js
+// Retrieved at 6/9/2020, 4:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -30394,7 +30394,10 @@
 				Z = (e, t) => {
 					if (!t || !t.subredditId) return null;
 					const n = (e.economics.me.data.claimPoints || {})[t.subredditId];
-					return n && n.length ? n.reduce((e, t) => e.plus(t.pointsToClaim), new o.BigNumber(0)).toString() : null
+					if (!n || !n.length) return null;
+					const s = (e.user.wallets[t.subredditId] || {}).latest,
+						r = s && s.publicAddress && s.publicAddress.toLowerCase();
+					return n.filter(e => !e.address || e.address.toLowerCase() === r).reduce((e, t) => e.plus(t.pointsToClaim), new o.BigNumber(0)).toString()
 				},
 				X = (e, t) => {
 					if (!t || !t.subredditId) return null;
@@ -30675,4 +30678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.269299d88fca8fc83309.js.map
+//# sourceMappingURL=PostCreation.2909bb263ccbbb1f4479.js.map
