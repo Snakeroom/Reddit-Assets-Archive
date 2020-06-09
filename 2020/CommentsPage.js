@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.fcb779c3e8b1c22369a9.js
-// Retrieved at 6/9/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c774e8fea8f1acab4de4.js
+// Retrieved at 6/9/2020, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3134,17 +3134,15 @@
 						toggleSendReplies: j,
 						trackClick: w
 					} = this.props, P = Object(Z.a)(b), I = !!s && s.displayText === e.author, S = !!s && s.isEmployee, T = !(E && E.userIsBanned) && (f || g || P && l || e.isLocked ? P && l : l || d), N = Object(xe.a)(e), M = P && !x && I && !e.bannedBy, L = I && S && !e.bannedBy, R = M || L, F = s && e.isGildable, D = [];
-					T && D.push({
-						breakpointGroup: B.LoggedInUser,
-						icon: i.a.createElement(Fe, null),
+					T && D.push(i.a.createElement(Ue, {
+						disabled: m,
 						key: "reply",
 						onClick: () => {
 							a(), G()(() => w("reply")())
-						},
-						text: () => k.fbt._("Reply", null, {
-							hk: "dq9W0"
-						})
-					}), s && !I && D.push(i.a.createElement(he, {
+						}
+					}, i.a.createElement(Fe, null), k.fbt._("Reply", null, {
+						hk: "dq9W0"
+					}))), s && !I && D.push(i.a.createElement(he, {
 						className: Re.a.supportButton,
 						contentId: e.id,
 						key: "support-cta",
@@ -16406,4 +16404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.fcb779c3e8b1c22369a9.js.map
+//# sourceMappingURL=CommentsPage.c774e8fea8f1acab4de4.js.map
