@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.dc7de7b14223c7a80039.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.9a319c760c851a94ef66.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -323,7 +323,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || s.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), r.a.createElement(a.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
@@ -1117,7 +1117,7 @@
 						v(Object(y.l)(n)), u()
 					},
 					displayText: _.fbt._("Edit", null, {
-						hk: "2ehqo8"
+						hk: "1nftDt"
 					})
 				}), i.a.createElement(k, {
 					onClick: () => {
@@ -2075,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.dc7de7b14223c7a80039.js.map
+//# sourceMappingURL=PostDraft.9a319c760c851a94ef66.js.map

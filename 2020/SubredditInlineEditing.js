@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.378a6572de6a5dc04dc7.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.753db2295edab83aa54f.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -227,7 +227,7 @@
 					}, i.a.createElement(l.a, {
 						readOnlyMode: this.props.readOnlyMode,
 						addText: n.fbt._("Add", null, {
-							hk: "3odml7"
+							hk: "2wi3d4"
 						}),
 						allowFreeTextEntry: !0,
 						availableOptions: this.props.availableGlobalOptions,
@@ -397,12 +397,12 @@
 				k = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				F = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
 				P = s("./src/reddit/selectors/activeModalId.ts"),
-				R = s("./src/reddit/selectors/tags.ts"),
-				w = s("./src/reddit/constants/colors.ts"),
+				w = s("./src/reddit/selectors/tags.ts"),
+				R = s("./src/reddit/constants/colors.ts"),
 				D = s("./src/reddit/selectors/tooltip.ts"),
 				L = s("./node_modules/uuid/v4.js"),
-				B = s.n(L),
-				M = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				M = s.n(L),
+				B = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				A = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				H = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
 				U = s.n(H);
@@ -416,8 +416,8 @@
 					tooltipId: t
 				}))
 			})), V = "inline-editing-topics-tooltip-", W = {
-				top: w.a.alienblue,
-				bottom: w.a.alienblue
+				top: R.a.alienblue,
+				bottom: R.a.alienblue
 			};
 			class X extends o.a.Component {
 				constructor(e) {
@@ -428,7 +428,7 @@
 					}
 				}
 				makeUniqueTooltipId() {
-					return "".concat(V).concat(B()())
+					return "".concat(V).concat(M()())
 				}
 				componentDidMount() {
 					this.setState({
@@ -447,7 +447,7 @@
 						className: Object(r.a)(U.a.infoIcon, {
 							[U.a.activeInfoIcon]: this.tooltipIsOpen()
 						})
-					}), o.a.createElement(M.a, {
+					}), o.a.createElement(B.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
 						caretColor: W
@@ -468,15 +468,15 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(R.n)(e, {
+					return Object(w.n)(e, {
 						itemId: s
 					})
 				},
-				hasPendingChanges: R.o,
-				hasSecondaryTags: R.p,
+				hasPendingChanges: w.o,
+				hasSecondaryTags: w.p,
 				unsavedChangesModalIsOpen: Object(P.b)(v.a),
-				isLoading: e => Object(R.E)(e),
-				selectedPrimaryTag: R.A
+				isLoading: e => Object(w.E)(e),
+				selectedPrimaryTag: w.A
 			}), ee = Object(i.b)($, (e, t) => {
 				let {
 					subredditId: s,
@@ -543,7 +543,7 @@
 						className: Q.a.cancel,
 						onClick: this.onCancel
 					}, Z._("Cancel", null, {
-						hk: "3OZmBh"
+						hk: "2TSLl5"
 					})), o.a.createElement("span", {
 						className: Q.a.save,
 						onClick: this.onSave
@@ -687,4 +687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditInlineEditing.378a6572de6a5dc04dc7.js.map
+//# sourceMappingURL=SubredditInlineEditing.753db2295edab83aa54f.js.map

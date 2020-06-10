@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.ae7e3bf4a8fa37b75cd5.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.88f7b9cf71bf7bb66f5e.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -1854,8 +1854,8 @@
 						isSelected: e.isSaved,
 						onClick: this.handleSave
 					}, e.isSaved ? o.a.createElement(Ee, null) : o.a.createElement(ye, null)), b && o.a.createElement(_e, {
-						displayText: y.fbt._("edit", null, {
-							hk: "t6YUy"
+						displayText: y.fbt._("Edit", null, {
+							hk: "1nftDt"
 						}),
 						onClick: this.handleEdit
 					}, o.a.createElement(ge, null)), b && o.a.createElement(_e, {
@@ -4469,7 +4469,7 @@
 				})), r.a.createElement(m.a, {
 					onClick: () => (f(!1), O("report", "click"), void g(Object(d.j)(n.id)))
 				}, s.fbt._("Report", null, {
-					hk: "3M0Eii"
+					hk: "4oVcnd"
 				})))
 			}
 		},
@@ -9892,4 +9892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.ae7e3bf4a8fa37b75cd5.js.map
+//# sourceMappingURL=ProfileComments.88f7b9cf71bf7bb66f5e.js.map

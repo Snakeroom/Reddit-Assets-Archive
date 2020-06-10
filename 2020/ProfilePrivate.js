@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.3bbeea678cd39b6a3a49.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.5a1c39484aefe4d04f0d.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -2091,8 +2091,8 @@
 						isSelected: e.isSaved,
 						onClick: this.handleSave
 					}, e.isSaved ? n.a.createElement(Ee, null) : n.a.createElement(ye, null)), b && n.a.createElement(Pe, {
-						displayText: y.fbt._("edit", null, {
-							hk: "t6YUy"
+						displayText: y.fbt._("Edit", null, {
+							hk: "1nftDt"
 						}),
 						onClick: this.handleEdit
 					}, n.a.createElement(ge, null)), b && n.a.createElement(Pe, {
@@ -3031,7 +3031,7 @@
 				})), r.a.createElement(m.a, {
 					onClick: () => (f(!1), O("report", "click"), void g(Object(c.j)(s.id)))
 				}, o.fbt._("Report", null, {
-					hk: "3M0Eii"
+					hk: "4oVcnd"
 				})))
 			}
 		},
@@ -7683,4 +7683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.3bbeea678cd39b6a3a49.js.map
+//# sourceMappingURL=ProfilePrivate.5a1c39484aefe4d04f0d.js.map

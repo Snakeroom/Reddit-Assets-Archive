@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f943df8b3c945dc1ba19.js
-// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0f8d4df0201b7bf94775.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2958,7 +2958,7 @@
 								});
 							case vt.Report:
 								return O.fbt._("Report", null, {
-									hk: "1PKCOJ"
+									hk: "4oVcnd"
 								});
 							case vt.Kick:
 								return O.fbt._("Kick", null, {
@@ -4548,7 +4548,7 @@
 						secondaryNoBorder: !0,
 						onClick: e
 					}, O.fbt._("Cancel", null, {
-						hk: "1f5Zk8"
+						hk: "2TSLl5"
 					})), r.a.createElement($c, {
 						primaryNoBorder: !0,
 						disabled: c < 0 || c >= pc.d,
@@ -4917,7 +4917,7 @@
 					primary: !!e.secondaryButtonOnly,
 					secondary: !e.secondaryButtonOnly
 				}, e.secondaryButtonText || O.fbt._("Cancel", null, {
-					hk: "370pdF"
+					hk: "2TSLl5"
 				}))), !e.secondaryButtonOnly && r.a.createElement(co, {
 					type: "submit",
 					primary: !0,
@@ -6946,7 +6946,7 @@
 							hk: "10O2jX"
 						}),
 						secondaryButtonText: O.fbt._("Cancel", null, {
-							hk: "4E3LKX"
+							hk: "2TSLl5"
 						})
 					}))
 				}
@@ -7277,9 +7277,9 @@
 						secondaryButtonOnly: this.isSingleButton(),
 						secondaryButtonCTLOptions: this.isCTLControls(),
 						secondaryButtonText: this.isSingleButton() ? O.fbt._("Close", null, {
-							hk: "1pTwDA"
+							hk: "4gbyAA"
 						}) : O.fbt._("Cancel", null, {
-							hk: "1SIXQb"
+							hk: "2TSLl5"
 						})
 					}))
 				}
@@ -14041,4 +14041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.f943df8b3c945dc1ba19.js.map
+//# sourceMappingURL=Chat~RedesignChat.0f8d4df0201b7bf94775.js.map

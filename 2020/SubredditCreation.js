@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.3068d8cc20ecbb595f2e.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.471c3c61dea0d42924e1.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -263,7 +263,7 @@
 						className: y.a.communityTopicsContainer
 					}, i.a.createElement(C.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && i.a.createElement(b.a, {
 						addText: s.fbt._("Add", null, {
-							hk: "3xwE3E"
+							hk: "2wi3d4"
 						}),
 						allowFreeTextEntry: !0,
 						availableOptions: this.props.availableGlobalOptions,
@@ -682,7 +682,7 @@
 							r(b.state[N.a.CloseLocation]), d(Object(A.a)())
 						}
 					}, s.fbt._("Cancel", null, {
-						hk: "1L11X7"
+						hk: "2TSLl5"
 					})), i.a.createElement(S.f, {
 						disabled: t,
 						className: G.a.createButton,
@@ -696,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.3068d8cc20ecbb595f2e.js.map
+//# sourceMappingURL=SubredditCreation.471c3c61dea0d42924e1.js.map

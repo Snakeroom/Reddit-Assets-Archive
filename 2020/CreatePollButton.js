@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.e4170c0b4be6cbb03dde.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.b0297c018c6f3b7dd278.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -37,7 +37,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || o.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), n.a.createElement(i.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
@@ -111,4 +111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CreatePollButton.e4170c0b4be6cbb03dde.js.map
+//# sourceMappingURL=CreatePollButton.b0297c018c6f3b7dd278.js.map

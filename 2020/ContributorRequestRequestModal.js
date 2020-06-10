@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.d9deea4a3695069ade41.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.8810a671fcd9d3a8c4e2.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -26,9 +26,9 @@
 			a.r(t), a.d(t, "ModalHeader", (function() {
 				return I
 			})), a.d(t, "ModalTitle", (function() {
-				return F
+				return S
 			})), a.d(t, "CloseIcon", (function() {
-				return w
+				return M
 			}));
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
@@ -57,10 +57,10 @@
 				O = a("./src/lib/lessComponent.tsx");
 			const k = O.a.wrapped(m.d, "ModalBody", j.a),
 				I = O.a.wrapped(m.h, "ModalHeader", j.a),
-				F = O.a.div("ModalTitle", j.a),
-				S = O.a.div("Title", j.a),
-				M = O.a.div("Description", j.a),
-				w = O.a.wrapped(m.b, "CloseIcon", j.a);
+				S = O.a.div("ModalTitle", j.a),
+				F = O.a.div("Title", j.a),
+				w = O.a.div("Description", j.a),
+				M = O.a.wrapped(m.b, "CloseIcon", j.a);
 			class N extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
@@ -82,13 +82,13 @@
 						a = this.props.theme ? Object(y.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
 					return o.a.createElement(k, {
 						className: j.a.requestModal
-					}, o.a.createElement(I, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(F, {
+					}, o.a.createElement(I, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(S, {
 						style: {
 							color: a
 						}
 					}, s.fbt._("Become an approved user of", null, {
 						hk: "u33RG"
-					})), o.a.createElement(S, {
+					})), o.a.createElement(F, {
 						style: {
 							color: a
 						}
@@ -98,9 +98,9 @@
 						primaryColor: this.props.subredditIcon.color
 					}), o.a.createElement("span", null, e))), o.a.createElement(x.a, {
 						onClick: this.onCancelRequest
-					}, o.a.createElement(w, null)))), o.a.createElement(m.k, null, t ? o.a.createElement(M, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
+					}, o.a.createElement(M, null)))), o.a.createElement(m.k, null, t ? o.a.createElement(w, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
-					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(M, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(w, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), o.a.createElement(p.c, {
 						className: j.a.textarea,
@@ -119,7 +119,7 @@
 						"data-redditstyle": !0,
 						onClick: this.onCancelRequest
 					}, s.fbt._("Cancel", null, {
-						hk: "3YzMhr"
+						hk: "2TSLl5"
 					})), o.a.createElement(m.q, {
 						onClick: () => {
 							this.props.sendEvent(Object(_.b)("request_approval")), this.props.makeContributorRequest(e, this.state.message, this.props.restrictions), this.props.toggleContributorRequestModal()
@@ -324,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ContributorRequestRequestModal.d9deea4a3695069ade41.js.map
+//# sourceMappingURL=ContributorRequestRequestModal.8810a671fcd9d3a8c4e2.js.map

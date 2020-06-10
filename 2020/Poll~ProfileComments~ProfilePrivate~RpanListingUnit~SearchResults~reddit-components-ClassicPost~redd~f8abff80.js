@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.b32b754142379ddfe346.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.0140eb9493d0742b518a.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -367,7 +367,7 @@
 				U = l.a.wrapped(w, "DistinguishShield", F.a),
 				V = Object(f.t)(),
 				H = e => "Distinguish--Dropdown--".concat(e),
-				X = Object(a.c)({
+				K = Object(a.c)({
 					currentUser: E.i,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
@@ -393,7 +393,7 @@
 					},
 					modModeEnabled: f.P
 				}),
-				K = Object(i.b)(X, (e, t) => {
+				X = Object(i.b)(K, (e, t) => {
 					let {
 						comment: s
 					} = t;
@@ -409,7 +409,7 @@
 						}))
 					}
 				});
-			t.c = V(K(l.a.wrapped(Object(x.c)(e => {
+			t.c = V(X(l.a.wrapped(Object(x.c)(e => {
 				var {
 					className: t,
 					comment: s,
@@ -1219,8 +1219,8 @@
 				U = s("./src/reddit/constants/postLayout.ts"),
 				V = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				H = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				X = s("./src/reddit/helpers/styles/smartTextColor.ts"),
-				K = s("./src/reddit/selectors/user.ts"),
+				K = s("./src/reddit/helpers/styles/smartTextColor.ts"),
+				X = s("./src/reddit/selectors/user.ts"),
 				J = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				q = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				z = s("./src/reddit/helpers/trackers/modTools.ts"),
@@ -1271,7 +1271,7 @@
 					return r.a.createElement(Y.a, he({}, s, {
 						className: Object(c.a)(ue.a.modActionsIcon, t),
 						style: {
-							color: Object(X.a)(Object(H.a)(s), se.a.actionIcon, se.b.actionIcon)
+							color: Object(K.a)(Object(H.a)(s), se.a.actionIcon, se.b.actionIcon)
 						}
 					}))
 				}),
@@ -1288,7 +1288,7 @@
 				Ee = Object(a.c)({
 					activeModalId: pe.a,
 					layout: V.N,
-					userIsOp: K.hb,
+					userIsOp: X.hb,
 					subreddit: V.q
 				}),
 				je = Object(i.b)(Ee, (e, t) => {
@@ -1399,7 +1399,7 @@
 						toggleEditStartTimeModal: W,
 						tooltipType: V,
 						userIsOp: H
-					} = this.props, X = !!i && Object(oe.e)(i) === y.author, K = Object(ae.a)("View--Reports", y.id, V), q = Object(ae.a)("View--GiveAward", y.id, V), Y = Object(M.c)(y), se = Pe("-mod-actions-menu", y.id, b, f), ce = Object(M.a)(y), pe = y.postId, me = v === U.g.Large, he = !u && me || l && _, be = !(b || u || m), fe = i && y.isGildable, _e = y.media && y.media.type === te.n.LIVEVIDEO;
+					} = this.props, K = !!i && Object(oe.e)(i) === y.author, X = Object(ae.a)("View--Reports", y.id, V), q = Object(ae.a)("View--GiveAward", y.id, V), Y = Object(M.c)(y), se = Pe("-mod-actions-menu", y.id, b, f), ce = Object(M.a)(y), pe = y.postId, me = v === U.g.Large, he = !u && me || l && _, be = !(b || u || m), fe = i && y.isGildable, _e = y.media && y.media.type === te.n.LIVEVIDEO;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(ue.a.flatlistContainer, s)
 					}, r.a.createElement(O.a, {
@@ -1483,7 +1483,7 @@
 						isUserOp: H,
 						onClick: this.onHideClick,
 						skipRoleAttr: !0
-					}, r.a.createElement(D.b, null)), !X && !y.isSponsored && !he && r.a.createElement(J.a, {
+					}, r.a.createElement(D.b, null)), !K && !y.isSponsored && !he && r.a.createElement(J.a, {
 						displayText: n.fbt._("report", null, {
 							hk: "1phfns"
 						}),
@@ -1506,22 +1506,22 @@
 						hasModFullPerms: d,
 						hasModPostPerms: l,
 						isOverlay: !!b,
-						isPostAuthor: X,
+						isPostAuthor: K,
 						modModeEnabled: _,
 						post: y,
 						tooltipId: se
 					})), l && Y && !_ && r.a.createElement(L.c, {
 						text: "".concat(ce),
 						onClick: () => {
-							k(K), w(Object(Q.f)(y.id, "post_report_menu"))
+							k(X), w(Object(Q.f)(y.id, "post_report_menu"))
 						},
-						id: K
+						id: X
 					}, r.a.createElement(G.a, {
 						model: y,
 						onIgnoreReports: () => {
 							E(), w(Object(z.j)(y.ignoreReports ? "restore_reports" : "ignore_reports", y.id))
 						},
-						tooltipId: K
+						tooltipId: X
 					}), y.ignoreReports ? r.a.createElement(Z.a, null) : r.a.createElement($.a, null)), (i || !y.isSponsored) && r.a.createElement(D.g, {
 						currentProfileName: o,
 						dropdownId: Pe("-overflow-menu", y.id, b, f),
@@ -1548,8 +1548,8 @@
 						titleText: n.fbt._("Add post to a collection", null, {
 							hk: "38vSyF"
 						}),
-						onItemHoverActionText: n.fbt._("add", null, {
-							hk: "1BZ1pE"
+						onItemHoverActionText: n.fbt._("Add", null, {
+							hk: "2wi3d4"
 						}),
 						isOverlay: b
 					}), e === Object(ne.s)(y.id, b, ne.j.POST_OVERFLOW_MENU) && xe && r.a.createElement(xe, {
@@ -1986,8 +1986,8 @@
 				U = s("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				V = s.n(U);
 			const H = "".concat(n.a.assetPath, "/img/snoo-drafts.png"),
-				X = T.a.div("TopRow", V.a),
-				K = T.a.div("TitleRow", V.a),
+				K = T.a.div("TopRow", V.a),
+				X = T.a.div("TitleRow", V.a),
 				J = T.a.div("DetailsContainer", V.a),
 				q = T.a.wrapped(O.a, "ButtonRow", V.a),
 				z = T.a.div("CloseWrapper", V.a),
@@ -2074,7 +2074,7 @@
 					return i.a.createElement("div", {
 						className: V.a.wrapper,
 						"data-redditstyle": !0
-					}, i.a.createElement(X, null, i.a.createElement(K, {
+					}, i.a.createElement(K, null, i.a.createElement(X, {
 						"data-redditstyle": !0
 					}, t || o.fbt._("My collections", null, {
 						hk: "3yKovS"
@@ -2235,7 +2235,7 @@
 					}))), r.a.createElement(w, null, r.a.createElement(O.a, null, r.a.createElement(I, {
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
-						hk: "1XxNnB"
+						hk: "2TSLl5"
 					})), r.a.createElement(R, {
 						onClick: this.onPrimaryButtonClick,
 						disabled: s || !i
@@ -2474,8 +2474,8 @@
 				U = s("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				V = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				H = s("./src/reddit/components/ReportFlow/index.tsx"),
-				X = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				K = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
+				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				X = s("./src/reddit/controls/CheckboxMenuItem/index.tsx"),
 				J = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				q = s("./src/reddit/components/Flatlist/constants.ts"),
 				z = s("./src/reddit/components/Flatlist/getFlatlistBreakpoints.ts"),
@@ -2523,7 +2523,7 @@
 				Ie = m.a.wrapped(E.a, "CalendarIcon", ue.a),
 				Se = m.a.wrapped(S.a, "LinkIcon", ue.a),
 				Te = m.a.wrapped(J.b, "DropdownRow", ue.a),
-				Ne = m.a.wrapped(K.a, "PostCheckboxMenuItem", ue.a),
+				Ne = m.a.wrapped(X.a, "PostCheckboxMenuItem", ue.a),
 				Me = e => {
 					let {
 						gild: t = !0,
@@ -2572,7 +2572,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(X.B)(e, n) && s && Object(re.hb)(e, n) && Object(re.fb)(e, {
+						return Object(K.B)(e, n) && s && Object(re.hb)(e, n) && Object(re.fb)(e, {
 							userName: Object(ne.O)(e, {
 								postId: n.postId
 							}).author
@@ -4053,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.b32b754142379ddfe346.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.0140eb9493d0742b518a.js.map

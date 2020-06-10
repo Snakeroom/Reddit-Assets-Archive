@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.bee7f2e32d3bf6058bc9.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.d2eb2e2fa659a78cca54.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, n) {
@@ -258,8 +258,8 @@
 				R = n("./src/reddit/components/Economics/SubredditPremium/UploadModal/Requirements/index.m.less"),
 				F = n.n(R);
 			const {
-				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 120, z = 150;
+				fbt: Z
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = 120, z = 150;
 
 			function K(e) {
 				const t = e.file.type;
@@ -267,7 +267,7 @@
 			}
 
 			function q(e) {
-				return e.height === Z && e.width === Z
+				return e.height === H && e.width === H
 			}
 
 			function G(e) {
@@ -293,27 +293,27 @@
 						className: F.a.container
 					}, o.a.createElement("div", {
 						className: F.a.label
-					}, H._("Requirements", null, {
+					}, Z._("Requirements", null, {
 						hk: "3zOmGP"
 					})), o.a.createElement("div", {
 						className: F.a.requirements
 					}, o.a.createElement("ul", null, o.a.createElement(V, {
 						isError: r
-					}, H._("PNG or GIF with transparency", null, {
+					}, Z._("PNG or GIF with transparency", null, {
 						hk: "4GzqFi"
 					})), o.a.createElement(V, {
 						isError: i
-					}, H._("Height and width exactly 120×120px", null, {
+					}, Z._("Height and width exactly 120×120px", null, {
 						hk: "3WlJuk"
 					})), o.a.createElement(V, {
 						isError: l
-					}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", z)], {
+					}, Z._("File size limited to {max-file-size} KB", [Z._param("max-file-size", z)], {
 						hk: "2i3L33"
-					})), o.a.createElement(V, null, H._("Add 4px black outline", null, {
+					})), o.a.createElement(V, null, Z._("Add 4px black outline", null, {
 						hk: "2mHGJn"
 					}))), o.a.createElement("br", null), n === x.b.Badge && t && a ? o.a.createElement("div", null, o.a.createElement("div", {
 						className: F.a.label
-					}, H._("Preview", null, {
+					}, Z._("Preview", null, {
 						hk: "cOBjy"
 					})), o.a.createElement("div", {
 						className: F.a.preview
@@ -327,16 +327,16 @@
 						style: {
 							color: a
 						}
-					}, s))) : o.a.createElement(o.a.Fragment, null, H._("Follow this", null, {
+					}, s))) : o.a.createElement(o.a.Fragment, null, Z._("Follow this", null, {
 						hk: "3w0v6n"
 					}), " ", o.a.createElement(A.a, {
 						className: F.a.link,
 						to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
-					}, H._("artistic guide", null, {
+					}, Z._("artistic guide", null, {
 						hk: "3giRwj"
-					})), " ", n === x.b.Badge ? H._("to design your badge to fit in with existing ones.", null, {
+					})), " ", n === x.b.Badge ? Z._("to design your badge to fit in with existing ones.", null, {
 						hk: "1k1Q99"
-					}) : H._("to design your emoji to fit in with existing ones.", null, {
+					}) : Z._("to design your emoji to fit in with existing ones.", null, {
 						hk: "4FDotU"
 					}))))
 				},
@@ -742,7 +742,7 @@
 						disabled: c,
 						onClick: this.closeModal
 					}, _e._("Cancel", null, {
-						hk: "3bJHCl"
+						hk: "2TSLl5"
 					})), o.a.createElement(g.f, {
 						className: Ee.a.submitButton,
 						disabled: !this.canSubmit(),
@@ -1252,4 +1252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumUploadModal.bee7f2e32d3bf6058bc9.js.map
+//# sourceMappingURL=SubredditPremiumUploadModal.d2eb2e2fa659a78cca54.js.map

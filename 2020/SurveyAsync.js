@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.1532e5c8f329bdc56968.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.160b6cbe328fde37af3c.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -63,7 +63,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || a.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), r.a.createElement(l.t, {
 				className: u.a.buttonWidth,
 				onMouseDown: d,
@@ -429,4 +429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SurveyAsync.1532e5c8f329bdc56968.js.map
+//# sourceMappingURL=SurveyAsync.160b6cbe328fde37af3c.js.map

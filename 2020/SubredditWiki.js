@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.e407793624932aa331fe.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.87322f250f5e62087f18.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1460,7 +1460,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || s.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), i.a.createElement(o.t, {
 				className: u.a.buttonWidth,
 				onMouseDown: m,
@@ -4186,7 +4186,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, st._("Cancel", null, {
-						hk: "D28iw"
+						hk: "2TSLl5"
 					})), o.a.createElement(et.q, {
 						onClick: e.onCloseModOnboarding,
 						"data-redditstyle": !0
@@ -6422,4 +6422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.e407793624932aa331fe.js.map
+//# sourceMappingURL=SubredditWiki.87322f250f5e62087f18.js.map

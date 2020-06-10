@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.7576fb113ca9793f3124.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.5a09d9fcda03cd16f435.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -218,8 +218,8 @@
 						className: P.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
-					}, A._("cancel", null, {
-						hk: "4gICW3"
+					}, A._("Cancel", null, {
+						hk: "2TSLl5"
 					})), i.a.createElement(S.f, {
 						className: Object(T.a)(P.a.button, P.a.save),
 						disabled: !e.submitEnabled,
@@ -232,23 +232,23 @@
 				H = a("./src/lib/currency/cleanNumber/index.ts"),
 				D = a("./src/reddit/controls/FormFields/index.tsx"),
 				U = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Price/index.m.less"),
-				V = a.n(U);
-			var L = function(e) {
+				L = a.n(U);
+			var V = function(e) {
 					return i.a.createElement("div", {
-						className: Object(T.a)(V.a.container, e.className)
+						className: Object(T.a)(L.a.container, e.className)
 					}, i.a.createElement("div", {
-						className: V.a.title
+						className: L.a.title
 					}, b.fbt._("Price and Hamburger Tax", null, {
 						hk: "IbFhe"
 					})), i.a.createElement("div", {
-						className: V.a.explanation
+						className: L.a.explanation
 					}, b.fbt._("You can protect your ownership by raising the price. This also increases the daily tax. If you're unable to pay the tax, the price goes to 0.", null, {
 						hk: "1FBx6x"
 					})), i.a.createElement("div", {
-						className: V.a.tax
+						className: L.a.tax
 					}, i.a.createElement(D.c, {
 						redditStyle: !0,
-						className: V.a.input,
+						className: L.a.input,
 						label: b.fbt._("banner price", null, {
 							hk: "4jFcDi"
 						}),
@@ -258,18 +258,18 @@
 						value: Object(k.a)(e.price),
 						onChange: t => e.onPriceChange(Object(H.a)(t.currentTarget.value))
 					}), i.a.createElement(M.a, {
-						className: V.a.token,
+						className: L.a.token,
 						subredditId: e.subredditId
 					}), i.a.createElement("div", {
-						className: V.a.equals
+						className: L.a.equals
 					}, "="), i.a.createElement("div", {
-						className: V.a.dailyTax
+						className: L.a.dailyTax
 					}, i.a.createElement("div", {
-						className: V.a.taxRate
+						className: L.a.taxRate
 					}, b.fbt._("1% daily tax", null, {
 						hk: "fkECk"
 					})), i.a.createElement("div", {
-						className: V.a.taxAmount
+						className: L.a.taxAmount
 					}, Object(k.a)((.01 * parseInt(e.price || "0")).toFixed(2))))))
 				},
 				G = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/index.m.less"),
@@ -277,7 +277,7 @@
 			const {
 				fbt: K
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			class W extends i.a.Component {
+			class z extends i.a.Component {
 				constructor(e) {
 					super(e), this.handlePriceChange = e => this.setState({
 						price: e
@@ -299,7 +299,7 @@
 				}
 				componentDidUpdate(e) {
 					if (!s()(e.mainHeaderAsset, this.props.mainHeaderAsset)) {
-						const t = z(e) === z(this.props) ? this.state.image ? this.state.image[O] : e.savedStyles.bannerBackgroundImage : void 0;
+						const t = W(e) === W(this.props) ? this.state.image ? this.state.image[O] : e.savedStyles.bannerBackgroundImage : void 0;
 						this.setState(Y(this.props, t)), this.originalState = Y(this.props, t)
 					}
 				}
@@ -313,7 +313,7 @@
 						className: q.a.title
 					}, K._("Manage Banner", null, {
 						hk: "NMRRK"
-					})), i.a.createElement(L, {
+					})), i.a.createElement(V, {
 						className: q.a.price,
 						price: this.state.price,
 						subredditId: e.id,
@@ -338,7 +338,7 @@
 				}
 			}
 
-			function z(e) {
+			function W(e) {
 				return e.mainHeaderAsset && e.mainHeaderAsset.content && e.mainHeaderAsset.content.bannerBackgroundImage || ""
 			}
 
@@ -383,7 +383,7 @@
 					onUpdateBanner: t => e(Object(c.c)(t))
 				})),
 				J = Object(u.t)();
-			t.default = Object(p.a)("spHarberger", Object(d.a)(J(X(W))))
+			t.default = Object(p.a)("spHarberger", Object(d.a)(J(X(z))))
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -761,4 +761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxManageModal.7576fb113ca9793f3124.js.map
+//# sourceMappingURL=HarbergerTaxManageModal.5a09d9fcda03cd16f435.js.map

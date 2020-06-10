@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1935ca666bdc2610ccbc.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.7831ac8692f267accf04.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -3303,7 +3303,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, n.fbt._("Cancel", null, {
-						hk: "49Ql7M"
+						hk: "2TSLl5"
 					})), a.a.createElement(g, {
 						onClick: this.onSubmit,
 						"data-redditstyle": !0,
@@ -3699,7 +3699,7 @@
 								onClick: () => this.handleBanUserToggled(t),
 								"data-redditstyle": !0
 							}, o.fbt._("Edit", null, {
-								hk: "42psMC"
+								hk: "1nftDt"
 							})),
 							subredditId: this.props.subredditId,
 							timeAgo: X(t),
@@ -5929,7 +5929,7 @@
 							hk: "4bgtZx"
 						}),
 						cancelText: n.fbt._("Cancel", null, {
-							hk: "370pdF"
+							hk: "2TSLl5"
 						}),
 						headerText: n.fbt._("Delete Award", null, {
 							hk: "7q2D7"
@@ -7187,7 +7187,7 @@
 					}, a.a.createElement(c.a, {
 						readOnlyMode: this.props.readOnlyMode,
 						addText: n.fbt._("Add", null, {
-							hk: "3odml7"
+							hk: "2wi3d4"
 						}),
 						allowFreeTextEntry: !0,
 						availableOptions: this.props.availableGlobalOptions,
@@ -9553,8 +9553,8 @@
 						titleText: n.fbt._("Add post to a collection", null, {
 							hk: "38vSyF"
 						}),
-						onItemHoverActionText: n.fbt._("add", null, {
-							hk: "1BZ1pE"
+						onItemHoverActionText: n.fbt._("Add", null, {
+							hk: "2wi3d4"
 						}),
 						isOverlay: h
 					}), e === Object(ne.s)(w.id, h, ne.j.POST_OVERFLOW_MENU) && ge && a.a.createElement(ge, {
@@ -11811,7 +11811,7 @@
 					className: e.isSnoomoji ? N.a.editSnoomoji : N.a.editEmoji,
 					onClick: () => e.onEdit(e.emoji, e.isSnoomoji)
 				}, o.fbt._("Edit", null, {
-					hk: "Ky5oi"
+					hk: "1nftDt"
 				})), !e.isSnoomoji && d.a.createElement("button", {
 					onClick: () => e.onRemove(e.emoji.name)
 				}, d.a.createElement(q, null)))),
@@ -11957,7 +11957,7 @@
 					}, n))), d.a.createElement(xe, null, d.a.createElement(ge, {
 						onClick: e.toggleModal
 					}, o.fbt._("Cancel", null, {
-						hk: "4d2Tim"
+						hk: "2TSLl5"
 					})), d.a.createElement(Ee, {
 						disabled: !this.canSave() || s,
 						onClick: this.onSave
@@ -12054,7 +12054,7 @@
 								}), d.a.createElement(st, {
 									onClick: this.handleRemove
 								}, o.fbt._("Cancel", null, {
-									hk: "3ZFXBG"
+									hk: "2TSLl5"
 								}))), d.a.createElement(je.b, null, o.fbt._("Uploading {fileName}", [o.fbt._param("fileName", s)], {
 									hk: "NIxvK"
 								})));
@@ -12446,14 +12446,14 @@
 					}, t.isReplacing ? o.fbt._("Don't replace", null, {
 						hk: "4d8hwM"
 					}) : o.fbt._("Cancel", null, {
-						hk: "jKFM2"
+						hk: "2TSLl5"
 					})), d.a.createElement(wt, {
 						disabled: t.isSavingImage || !this.canSave() || t.duplicateNames.length > 0,
 						onClick: t.isReplacing ? this.handleSaveAndReplace : this.onApply
 					}, t.isReplacing ? o.fbt._("Replace", null, {
 						hk: "45noqB"
 					}) : o.fbt._("Add", null, {
-						hk: "2VHLRz"
+						hk: "2wi3d4"
 					}))))
 				}
 			}
@@ -12740,14 +12740,14 @@
 						disabled: c,
 						onClick: this.closeModal
 					}, o.fbt._("Cancel", null, {
-						hk: "3XijuE"
+						hk: "2TSLl5"
 					})), d.a.createElement(ss, {
 						disabled: C,
 						onClick: this.saveEmoji
 					}, e ? o.fbt._("Save", null, {
 						hk: "1M9aqH"
 					}) : o.fbt._("Add", null, {
-						hk: "2lnnO2"
+						hk: "2wi3d4"
 					})))), i === bs.BulkUploadState && d.a.createElement(Dt, Kt({}, u, {
 						images: l,
 						returnToAddState: this.returnToAdd,
@@ -14932,7 +14932,7 @@
 				})), a.a.createElement(m.a, {
 					onClick: () => (f(!1), _("report", "click"), void E(Object(l.j)(s.id)))
 				}, n.fbt._("Report", null, {
-					hk: "3M0Eii"
+					hk: "4oVcnd"
 				})))
 			}
 		},
@@ -15266,7 +15266,7 @@
 						state: t
 					} = this, s = ["all", ...Object.keys(t.permissions).filter(e => "all" !== e)];
 					return r.a.createElement(W, null, r.a.createElement(P.h, null, r.a.createElement(L.a, null, r.a.createElement(P.p, null, e.isEditingPerms ? o.fbt._("Edit", null, {
-						hk: "1gZAgq"
+						hk: "1nftDt"
 					}) : o.fbt._("Invite Moderators", null, {
 						hk: "hkBh1"
 					}), e.username && o.fbt._(": u/{username}", [o.fbt._param("username", e.username)], {
@@ -15311,7 +15311,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, o.fbt._("Cancel", null, {
-						hk: "1Bk8Zk"
+						hk: "2TSLl5"
 					})), e.isEditingPerms && !e.isEditingSelf && r.a.createElement(P.r, {
 						onClick: this.onRemove,
 						"data-redditstyle": !0
@@ -15496,7 +15496,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, Se._("Cancel", null, {
-						hk: "4xrTqT"
+						hk: "2TSLl5"
 					})), r.a.createElement(Pe, {
 						onClick: this.onRemove,
 						"data-redditstyle": !0
@@ -16207,7 +16207,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, n.fbt._("Cancel", null, {
-						hk: "bWQrM"
+						hk: "2TSLl5"
 					})), a.a.createElement(C, {
 						onClick: this.onSubmit,
 						"data-redditstyle": !0,
@@ -17247,7 +17247,7 @@
 					}))), a.a.createElement(S, null, a.a.createElement(E.a, null, a.a.createElement(I, {
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
-						hk: "1XxNnB"
+						hk: "2TSLl5"
 					})), a.a.createElement(L, {
 						onClick: this.onPrimaryButtonClick,
 						disabled: s || !r
@@ -18814,7 +18814,7 @@
 						onClick: this.onCancel,
 						"data-redditstyle": !0
 					}, H._("Cancel", null, {
-						hk: "3vzRch"
+						hk: "2TSLl5"
 					})), o.a.createElement(Q, {
 						onClick: this.onSubmit,
 						disabled: !this.canSave(),
@@ -18965,7 +18965,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, o.fbt._("Cancel", null, {
-						hk: "3ZDJBt"
+						hk: "2TSLl5"
 					})), e.removalReason && r.a.createElement(T, {
 						onClick: e.onDeleteReason
 					}, o.fbt._("Delete", null, {
@@ -18984,7 +18984,7 @@
 					onClick: e.onEdit,
 					"data-redditstyle": !0
 				}, H._("Edit", null, {
-					hk: "47EJnl"
+					hk: "1nftDt"
 				}))),
 				z = s("./src/reddit/components/RemovalReasons/index.m.less"),
 				J = s.n(z);
@@ -19576,7 +19576,7 @@
 					}), a.a.createElement(K, {
 						icon: H.a,
 						text: n.fbt._("Edit", null, {
-							hk: "jXXcs"
+							hk: "1nftDt"
 						}),
 						onClick: this.props.onEditScheduledPost
 					}), a.a.createElement(K, {
@@ -22228,7 +22228,7 @@
 					})), c.a.createElement(Y.a, {
 						onClick: e.toggleModal
 					}, n.fbt._("Cancel", null, {
-						hk: "2tnehW"
+						hk: "2TSLl5"
 					})), e.rule && c.a.createElement(Y.r, {
 						className: G.a.modalRemoveButton,
 						onClick: e.onDelete
@@ -22283,7 +22283,7 @@
 					}, c.a.createElement(he.a, {
 						className: G.a.icon,
 						title: n.fbt._("Edit", null, {
-							hk: "3LK6p2"
+							hk: "1nftDt"
 						})
 					})), c.a.createElement("button", {
 						className: G.a.iconButton,
@@ -22490,7 +22490,7 @@
 					return c.a.createElement(c.a.Fragment, null, e && c.a.createElement(P.c, null, this.state.isReordering ? c.a.createElement(N.i, {
 						onClick: this.stopReorder
 					}, n.fbt._("Cancel", null, {
-						hk: "4p4fk7"
+						hk: "2TSLl5"
 					})) : c.a.createElement(N.n, {
 						onClick: this.startReorder,
 						disabled: d.length <= 1
@@ -27255,7 +27255,7 @@
 					}, t.partialPageName && s ? Pe(s) : null)), r.a.createElement(be.f, null, r.a.createElement(be.a, {
 						onClick: e.toggleModal
 					}, p.fbt._("Cancel", null, {
-						hk: "1f5Zk8"
+						hk: "2TSLl5"
 					})), r.a.createElement(fe.h, {
 						disabled: !t.partialPageName || !!s,
 						className: we.a.primaryButton,
@@ -28018,7 +28018,7 @@
 						className: C.a.communityTopicsContainer
 					}, a.a.createElement(h.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && a.a.createElement(g.a, {
 						addText: n.fbt._("Add", null, {
-							hk: "3xwE3E"
+							hk: "2wi3d4"
 						}),
 						allowFreeTextEntry: !0,
 						availableOptions: this.props.availableGlobalOptions,
@@ -28437,7 +28437,7 @@
 							r(g.state[S.a.CloseLocation]), c(Object(A.a)())
 						}
 					}, n.fbt._("Cancel", null, {
-						hk: "1L11X7"
+						hk: "2TSLl5"
 					})), a.a.createElement(P.f, {
 						disabled: t,
 						className: Y.a.createButton,
@@ -28865,4 +28865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.1935ca666bdc2610ccbc.js.map
+//# sourceMappingURL=ModerationPages.7831ac8692f267accf04.js.map

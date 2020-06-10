@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.4db19e87e94df9a0076a.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.f873288a84baef5d418d.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Banner/index.m.less": function(e, t, a) {
@@ -47,8 +47,8 @@
 				i = a.n(r),
 				o = a("./node_modules/react-redux/es/index.js"),
 				d = a("./node_modules/reselect/es/index.js"),
-				c = a("./src/higherOrderComponents/asModal/index.tsx"),
-				l = a("./src/reddit/actions/harbergerTax/thunkedActions.ts"),
+				l = a("./src/higherOrderComponents/asModal/index.tsx"),
+				c = a("./src/reddit/actions/harbergerTax/thunkedActions.ts"),
 				m = a("./src/reddit/components/Governance/ModalTitle/index.tsx"),
 				g = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				b = a("./src/reddit/controls/Button/index.tsx"),
@@ -66,7 +66,7 @@
 			const {
 				fbt: j
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), B = "bannerBackgroundImage";
-			class O extends i.a.Component {
+			class y extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						imageUploadInProgress: !1
@@ -155,10 +155,10 @@
 					})))
 				}
 			}
-			var y = Object(o.b)(null, e => ({
-					onImageUploadFailed: () => e(Object(l.a)())
-				}))(Object(v.b)(O)),
-				E = a("./src/lib/classNames/index.ts"),
+			var E = Object(o.b)(null, e => ({
+					onImageUploadFailed: () => e(Object(c.a)())
+				}))(Object(v.b)(y)),
+				O = a("./src/lib/classNames/index.ts"),
 				S = a("./src/lib/prettyPrintNumber/index.ts"),
 				T = a("./src/reddit/actions/modal.ts"),
 				M = a("./src/reddit/components/Governance/Token/index.tsx"),
@@ -176,7 +176,7 @@
 					onClose: () => e(Object(T.f)())
 				}))((function(e) {
 					return i.a.createElement("div", {
-						className: Object(E.a)(H.a.container, e.className)
+						className: Object(O.a)(H.a.container, e.className)
 					}, i.a.createElement("div", {
 						className: H.a.wallet
 					}, e.wallet && i.a.createElement(r.Fragment, null, D._("You have", null, {
@@ -191,10 +191,10 @@
 						className: H.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
-					}, D._("cancel", null, {
-						hk: "2OL6QC"
+					}, D._("Cancel", null, {
+						hk: "2TSLl5"
 					})), i.a.createElement(b.f, {
-						className: Object(E.a)(H.a.button, H.a.save),
+						className: Object(O.a)(H.a.button, H.a.save),
 						disabled: !e.submitEnabled,
 						tabIndex: e.tabIndex ? e.tabIndex + 1 : void 0,
 						onClick: e.onSubmit
@@ -224,12 +224,12 @@
 								bannerBackgroundImagePosition: this.state.tiled ? "tiled" : "cover"
 							}
 						})
-					}, this.state = q(e, e.savedStyles.bannerBackgroundImage), this.originalState = q(e, e.savedStyles.bannerBackgroundImage)
+					}, this.state = Q(e, e.savedStyles.bannerBackgroundImage), this.originalState = Q(e, e.savedStyles.bannerBackgroundImage)
 				}
 				componentDidUpdate(e) {
 					if (!s()(e.mainHeaderAsset, this.props.mainHeaderAsset)) {
-						const t = Q(e) === Q(this.props) ? this.state.image ? this.state.image[B] : e.savedStyles.bannerBackgroundImage : void 0;
-						this.setState(q(this.props, t)), this.originalState = q(this.props, t)
+						const t = q(e) === q(this.props) ? this.state.image ? this.state.image[B] : e.savedStyles.bannerBackgroundImage : void 0;
+						this.setState(Q(this.props, t)), this.originalState = Q(this.props, t)
 					}
 				}
 				render() {
@@ -257,7 +257,7 @@
 						target: "_blank"
 					}, G._("Open in Aragon", null, {
 						hk: "UMPAO"
-					}))), i.a.createElement(y, {
+					}))), i.a.createElement(E, {
 						className: L.a.banner,
 						image: this.state.image,
 						subredditId: e.id,
@@ -276,11 +276,11 @@
 				}
 			}
 
-			function Q(e) {
+			function q(e) {
 				return e.mainHeaderAsset && e.mainHeaderAsset.content && e.mainHeaderAsset.content.bannerBackgroundImage || ""
 			}
 
-			function q(e, t) {
+			function Q(e, t) {
 				const {
 					mainHeaderAsset: a
 				} = e;
@@ -316,10 +316,10 @@
 					subreddit: g.q
 				}),
 				V = Object(o.b)(z, e => ({
-					onUpdateBanner: t => e(Object(l.c)(t))
+					onUpdateBanner: t => e(Object(c.c)(t))
 				})),
 				Y = Object(g.t)();
-			t.default = Object(u.a)("spHarberger", Object(c.a)(Y(V(K))))
+			t.default = Object(u.a)("spHarberger", Object(l.a)(Y(V(K))))
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, a) {
 			"use strict";
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal.4db19e87e94df9a0076a.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal.f873288a84baef5d418d.js.map

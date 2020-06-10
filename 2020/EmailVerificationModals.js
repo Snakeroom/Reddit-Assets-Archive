@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.50ed582b59a40ed697ea.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.733dc740fb33a36a7595.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, a) {
@@ -279,7 +279,7 @@
 				})),
 				F = a("./src/reddit/helpers/styles/mixins/fonts.m.less"),
 				L = a.n(F);
-			var R = Object(u.a)(e => i.a.createElement(y.a, {
+			var T = Object(u.a)(e => i.a.createElement(y.a, {
 					className: Object(l.a)({
 						[k.a["m-responsive"]]: e.isResponsive
 					}),
@@ -303,7 +303,7 @@
 				}, s.fbt._("Got it", null, {
 					hk: "2LxUeS"
 				}))))),
-				T = a("./src/reddit/components/Settings/modalIds.ts");
+				R = a("./src/reddit/components/Settings/modalIds.ts");
 			const A = "#FFF";
 			var H = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				D = a("./src/reddit/actions/preferences.ts"),
@@ -403,12 +403,12 @@
 				te = a("./src/reddit/components/EmailVerificationModals/index.m.less"),
 				ae = a.n(te);
 			const se = Object(r.c)({
-					changeEmailModalOpen: Object($.b)(T.a),
-					checkEmailModalOpen: Object($.b)(T.c),
+					changeEmailModalOpen: Object($.b)(R.a),
+					checkEmailModalOpen: Object($.b)(R.c),
 					isEmailPermissionRequired: z.f,
 					isResponsiveSettingsEnabled: ee.a,
-					setEmailModalOpen: Object($.b)(T.g),
-					verifyEmailModalOpen: Object($.b)(T.n)
+					setEmailModalOpen: Object($.b)(R.g),
+					verifyEmailModalOpen: Object($.b)(R.n)
 				}),
 				ne = Object(o.b)(se, (e, t) => {
 					let {
@@ -416,11 +416,11 @@
 					} = t;
 					return {
 						closeChangeEmailModal: () => {
-							a && e(Object(d.b)()), e(Object(m.g)(T.a))
+							a && e(Object(d.b)()), e(Object(m.g)(R.a))
 						},
 						closeSetEmailModal: () => e(Object(c.b)()),
-						closeVerifyEmailModal: () => e(Object(m.g)(T.n)),
-						toggleCheckEmailModal: () => e(Object(m.i)(T.c))
+						closeVerifyEmailModal: () => e(Object(m.g)(R.n)),
+						toggleCheckEmailModal: () => e(Object(m.i)(R.c))
 					}
 				}),
 				ie = Object(Z.t)(),
@@ -472,7 +472,7 @@
 						hk: "27ZUuQ"
 					}),
 					withOverlay: !0
-				}), o && i.a.createElement(R, {
+				}), o && i.a.createElement(T, {
 					email: t,
 					isResponsive: u,
 					onConfirm: h,
@@ -637,8 +637,8 @@
 							hk: "1qMwOQ"
 						}))), i.a.createElement(v, null, i.a.createElement(x, {
 							onClick: e.exit
-						}, s.fbt._("cancel", null, {
-							hk: "2d8kYI"
+						}, s.fbt._("Cancel", null, {
+							hk: "2TSLl5"
 						})), i.a.createElement(g, {
 							onClick: this.showConfirm,
 							disabled: this.formIncomplete()
@@ -1032,4 +1032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmailVerificationModals.50ed582b59a40ed697ea.js.map
+//# sourceMappingURL=EmailVerificationModals.733dc740fb33a36a7595.js.map

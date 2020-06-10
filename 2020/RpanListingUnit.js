@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.ea836af19d6ed08f8abc.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.644d1ce648b848b968a7.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "cf1db44-production"
+					SENTRY_RELEASE_VERSION: "1f91f6a-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -410,7 +410,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || r.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), a.a.createElement(o.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
@@ -892,7 +892,7 @@
 			s.r(t), s.d(t, "RpanTitle", (function() {
 				return Q
 			})), s.d(t, "RpanDescription", (function() {
-				return q
+				return $
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var r = s("./node_modules/react/index.js"),
@@ -983,12 +983,12 @@
 				className: z.a.title
 			}, G._("Top broadcast right now", null, {
 				hk: "2hS1kb"
-			})), q = () => i.a.createElement("p", {
+			})), $ = () => i.a.createElement("p", {
 				className: z.a.description
 			}, G._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
-			class $ extends r.Component {
+			class q extends r.Component {
 				constructor(e) {
 					super(e), this._unsubscribeConfig = () => {}, this._unsubscribeStats = () => {}, this._unsubscribeStreams = () => {}, this.observableElement = i.a.createRef(), this.handleTimeUpdate = e => {
 						this.setState({
@@ -1146,7 +1146,7 @@
 						className: z.a.titleAndDescriptionContainer
 					}, i.a.createElement(V.a, {
 						to: this.props.location
-					}, i.a.createElement(Q, null), e && i.a.createElement(q, null)))
+					}, i.a.createElement(Q, null), e && i.a.createElement($, null)))
 				}
 				renderLargeContent() {
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
@@ -1393,7 +1393,7 @@
 						className: z.a.hideIcon
 					})))
 				};
-			t.default = J(Object(P.c)($))
+			t.default = J(Object(P.c)(q))
 		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1577,4 +1577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.ea836af19d6ed08f8abc.js.map
+//# sourceMappingURL=RpanListingUnit.644d1ce648b848b968a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.426162fd6ce6ea18dd84.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.1f4a09943bb7d730abbc.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -713,7 +713,7 @@
 						onClick: a,
 						disabled: n
 					}, p.fbt._("Cancel", null, {
-						hk: "38BQBa"
+						hk: "2TSLl5"
 					})), s.a.createElement(x.q, {
 						className: b.a.createBtn,
 						"data-redditstyle": !0,
@@ -1213,7 +1213,7 @@
 						onClick: t,
 						disabled: a
 					}, p.fbt._("Cancel", null, {
-						hk: "38BQBa"
+						hk: "2TSLl5"
 					})), s.a.createElement(x.q, {
 						className: Oe.a.createBtn,
 						"data-redditstyle": !0,
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.426162fd6ce6ea18dd84.js.map
+//# sourceMappingURL=AwardCreationModal.1f4a09943bb7d730abbc.js.map

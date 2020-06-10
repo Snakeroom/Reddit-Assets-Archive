@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.f90afec31dac80f53e34.js
-// Retrieved at 6/8/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.4d6f4d01e854250c7e6f.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -3263,7 +3263,7 @@
 						disabled: 100 === l,
 						onClick: n
 					}, s.fbt._("Cancel", null, {
-						hk: "5ozsi"
+						hk: "2TSLl5"
 					})))))
 				}, "Component", ee.a),
 				de = n("./node_modules/react-motion/lib/react-motion.js"),
@@ -6914,7 +6914,7 @@
 							hk: "3aoEeD"
 						}),
 						cancelActionText: s.fbt._("Cancel", null, {
-							hk: "D9N3b"
+							hk: "2TSLl5"
 						}),
 						headerText: s.fbt._("Switch to Markdown", null, {
 							hk: "3zGkKa"
@@ -7602,7 +7602,7 @@
 					}))), l.a.createElement(R, null, l.a.createElement(B, {
 						onClick: this.props.onToggleModal
 					}, o.fbt._("Cancel", null, {
-						hk: "1f5Zk8"
+						hk: "2TSLl5"
 					})), l.a.createElement(w, {
 						onClick: this.onSelectButton
 					}, o.fbt._("Select", null, {
@@ -7977,4 +7977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.f90afec31dac80f53e34.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.4d6f4d01e854250c7e6f.js.map

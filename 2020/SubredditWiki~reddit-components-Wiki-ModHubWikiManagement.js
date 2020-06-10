@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.76e2efcf8e32ceda6815.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e52a17d36249338283b0.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -1103,7 +1103,7 @@
 					}, a.a.createElement(U.a, {
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
-						hk: "1f5Zk8"
+						hk: "2TSLl5"
 					})), a.a.createElement(y.f, {
 						onClick: this.onSaveButtonClick,
 						disabled: e
@@ -1305,7 +1305,7 @@
 						onClick: this.onCancel,
 						disabled: d
 					}, n.fbt._("Cancel", null, {
-						hk: "4v5X3x"
+						hk: "2TSLl5"
 					})), a.a.createElement(y.f, {
 						disabled: !f,
 						onClick: this.showRevisionReasonModal
@@ -1602,7 +1602,7 @@
 							[p.a]: !0
 						})
 					}, n.fbt._("Edit", null, {
-						hk: "2xWxJA"
+						hk: "1nftDt"
 					})), l && o.a.createElement(W, {
 						className: M.a.overflowMenu,
 						dropdownId: "wikiPage-OverflowMenu-".concat(a, "-").concat(t),
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.76e2efcf8e32ceda6815.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e52a17d36249338283b0.js.map

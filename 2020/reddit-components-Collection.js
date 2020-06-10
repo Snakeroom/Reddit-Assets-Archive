@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.2d07b6e1e70fe5f85b84.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.c92803227a53c6db2193.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -124,8 +124,8 @@
 				x = o("./src/reddit/models/PostCollection/index.ts"),
 				g = o("./src/reddit/selectors/postCollection.ts"),
 				y = o("./src/reddit/selectors/posts.ts"),
-				S = (o("./node_modules/core-js/modules/web.dom.iterable.js"), o("./node_modules/react-router-dom/esm/react-router-dom.js")),
-				f = o("./src/lib/prettyPrintNumber/index.ts"),
+				f = (o("./node_modules/core-js/modules/web.dom.iterable.js"), o("./node_modules/react-router-dom/esm/react-router-dom.js")),
+				S = o("./src/lib/prettyPrintNumber/index.ts"),
 				T = o("./src/lib/timezone/index.ts"),
 				N = o("./src/reddit/actions/modal.ts"),
 				w = o("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
@@ -202,7 +202,7 @@
 					}, n.a.createElement("div", {
 						className: B.a.postBody,
 						"data-click-id": "body"
-					}, n.a.createElement(S.a, {
+					}, n.a.createElement(f.a, {
 						to: Object(M.b)(b.permalink),
 						className: B.a.postTitle,
 						style: {
@@ -293,7 +293,7 @@
 					}, W._({
 						"*": "{Post score} points",
 						_1: "1 point"
-					}, [W._plural(b.score, "Post score", Object(f.b)(b.score))], {
+					}, [W._plural(b.score, "Post score", Object(S.b)(b.score))], {
 						hk: "17XXwj"
 					})), P && n.a.createElement(k.a, {
 						onRemoveClick: p,
@@ -571,12 +571,12 @@
 				x = o.n(_),
 				g = o("./node_modules/fbt/lib/FbtPublic.js");
 			const y = c.a.wrapped(h.b, "DropdownRow", x.a);
-			let S;
-			const f = Object(E.b)("DELETE_COLLECTION_CONFM_MODAL_ID"),
+			let f;
+			const S = Object(E.b)("DELETE_COLLECTION_CONFM_MODAL_ID"),
 				T = Object(E.b)("EDIT_POST_COLLECTION_MODAL_ID"),
 				N = Object(O.c)({
 					createPostUrl: C.d,
-					isDeleteConfirmModalOpen: f,
+					isDeleteConfirmModalOpen: S,
 					isEditCollectionModalOpen: T,
 					shouldShowCollectionEditOptions: C.t
 				}),
@@ -588,7 +588,7 @@
 					onRemoveCollection: () => e(Object(p.c)(t.collectionId, t.isSubmitPage)),
 					onToggleDeleteConfirmModal: () => e(d.i("DELETE_COLLECTION_CONFM_MODAL_ID")),
 					onToggleEditModal: async () => {
-						S || (S = await Promise.all([o.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), o.e("editCollectionModal")]).then(o.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(d.i("EDIT_POST_COLLECTION_MODAL_ID"))
+						f || (f = await Promise.all([o.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), o.e("editCollectionModal")]).then(o.bind(null, "./src/reddit/components/EditCollectionModal/index.tsx")).then(e => e.EditCollectionModal)), e(d.i("EDIT_POST_COLLECTION_MODAL_ID"))
 					}
 				}));
 			t.a = w(Object(P.c)(e => {
@@ -625,7 +625,7 @@
 						O(Object(v.l)(o)), p()
 					},
 					displayText: g.fbt._("Edit", null, {
-						hk: "2ehqo8"
+						hk: "1nftDt"
 					})
 				}), i.a.createElement(y, {
 					onClick: () => {
@@ -641,7 +641,7 @@
 					displayText: g.fbt._("Create post", null, {
 						hk: "1v2jHl"
 					})
-				}))), r && S && i.a.createElement(S, {
+				}))), r && f && i.a.createElement(f, {
 					collectionId: o,
 					onClose: p,
 					onEditSuccess: p
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Collection.2d07b6e1e70fe5f85b84.js.map
+//# sourceMappingURL=reddit-components-Collection.c92803227a53c6db2193.js.map

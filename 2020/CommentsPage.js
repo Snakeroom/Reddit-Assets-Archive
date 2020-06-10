@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.06d6346b7b9760813b37.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a874572890460a1bdd93.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3181,7 +3181,7 @@
 						key: "report",
 						onClick: this.handleReportClick,
 						text: () => k.fbt._("Report", null, {
-							hk: "1J1xcJ"
+							hk: "4oVcnd"
 						})
 					}), D.push({
 						breakpointGroup: B.LoggedInUser,
@@ -3201,7 +3201,7 @@
 						key: "edit",
 						onClick: this.handleEdit,
 						text: () => k.fbt._("Edit", null, {
-							hk: "3wpnEW"
+							hk: "1nftDt"
 						})
 					});
 					const W = D.map(e => i.a.isValidElement(e) ? e : i.a.createElement(Ue, {
@@ -6210,8 +6210,8 @@
 						titleText: n.fbt._("Add post to a collection", null, {
 							hk: "38vSyF"
 						}),
-						onItemHoverActionText: n.fbt._("add", null, {
-							hk: "1BZ1pE"
+						onItemHoverActionText: n.fbt._("Add", null, {
+							hk: "2wi3d4"
 						}),
 						isOverlay: b
 					}), e === Object(ne.s)(w.id, b, ne.j.POST_OVERFLOW_MENU) && xe && r.a.createElement(xe, {
@@ -7273,7 +7273,7 @@
 				})), r.a.createElement(m.a, {
 					onClick: () => (g(!1), y("report", "click"), void v(Object(c.j)(s.id)))
 				}, n.fbt._("Report", null, {
-					hk: "3M0Eii"
+					hk: "4oVcnd"
 				})))
 			}
 		},
@@ -9029,7 +9029,7 @@
 					}))), r.a.createElement(P, null, r.a.createElement(v.a, null, r.a.createElement(I, {
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
-						hk: "1XxNnB"
+						hk: "2TSLl5"
 					})), r.a.createElement(R, {
 						onClick: this.onPrimaryButtonClick,
 						disabled: s || !i
@@ -16406,4 +16406,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.06d6346b7b9760813b37.js.map
+//# sourceMappingURL=CommentsPage.a874572890460a1bdd93.js.map

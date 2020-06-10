@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.ff5981f607414898109d.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.bfe7bfa7b1700285fb4c.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -196,9 +196,9 @@
 				y = n("./src/reddit/selectors/apiRequestState.ts"),
 				S = n("./src/reddit/selectors/subredditModeration.ts"),
 				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
-				M = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
-				L = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
-				v = n.n(L);
+				L = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
+				M = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
+				v = n.n(M);
 			const R = 300,
 				k = 1e3,
 				B = l.a.wrapped(g.a, "Unban", v.a),
@@ -338,7 +338,7 @@
 						value: t.username
 					})), a.a.createElement(p.g, null, a.a.createElement(p.j, null, s.fbt._("Reason for ban", null, {
 						hk: "dGjdF"
-					})), a.a.createElement(M.a, {
+					})), a.a.createElement(L.a, {
 						onDropdownApi: this.setDropdownApi,
 						onSelectReason: e => this.setState({
 							reason: e
@@ -386,7 +386,7 @@
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, s.fbt._("Cancel", null, {
-						hk: "26roVe"
+						hk: "2TSLl5"
 					})), a.a.createElement(I, {
 						onClick: this.onSubmit,
 						disabled: !this.canSave(),
@@ -777,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BannedUserModal.ff5981f607414898109d.js.map
+//# sourceMappingURL=BannedUserModal.bfe7bfa7b1700285fb4c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.338a20761aae8cc9d0d5.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.d9682b6197b7efb93460.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -208,16 +208,16 @@
 				},
 				G = n("./src/reddit/controls/ErrorText/index.tsx"),
 				V = n("./src/reddit/controls/FormFields/index.tsx"),
-				Q = n("./src/reddit/components/ModHub/PostRequirements/LabeledControl/index.m.less"),
-				Y = n.n(Q);
+				Y = n("./src/reddit/components/ModHub/PostRequirements/LabeledControl/index.m.less"),
+				Q = n.n(Y);
 			const J = e => e.preventDefault();
 			var X = e => d.a.createElement("div", {
-					className: Object(I.a)(e.className, Y.a.container)
+					className: Object(I.a)(e.className, Q.a.container)
 				}, d.a.createElement("label", {
-					className: Y.a.label,
+					className: Q.a.label,
 					onClick: J
 				}, d.a.createElement("div", {
-					className: Y.a.labelText
+					className: Q.a.labelText
 				}, e.label), e.children)),
 				Z = n("./src/lib/lessComponent.tsx"),
 				z = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
@@ -748,7 +748,7 @@
 					return d.a.createElement(d.a.Fragment, null, d.a.createElement(De.a, {
 						className: Ie.a.control,
 						addText: s.fbt._("Add", null, {
-							hk: "4e6qQJ"
+							hk: "2wi3d4"
 						}),
 						allowFreeTextEntry: !0,
 						input: this.state.pendingItemText,
@@ -972,7 +972,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Qe = [Oe, class extends d.a.Component {
+			const Ye = [Oe, class extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleTitleRequiredStrings = () => {
 						const {
@@ -1093,7 +1093,7 @@
 					})))
 				}
 			}, Ue, Pe, oe, ae];
-			var Ye = e => d.a.createElement(d.a.Fragment, null, Qe.map((t, n) => d.a.createElement(t, Ve({
+			var Qe = e => d.a.createElement(d.a.Fragment, null, Ye.map((t, n) => d.a.createElement(t, Ve({
 				key: n
 			}, e))));
 			const Je = {
@@ -1373,7 +1373,7 @@
 						className: ee.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, d.a.createElement(Ye, {
+					}, d.a.createElement(Qe, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-PostRequirements.338a20761aae8cc9d0d5.js.map
+//# sourceMappingURL=reddit-components-ModHub-PostRequirements.d9682b6197b7efb93460.js.map

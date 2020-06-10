@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.98423726e87e312394f0.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.fdf5a6a2751b911f624d.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -635,7 +635,7 @@
 						className: ge.a.addButton,
 						onClick: this.onSubmit
 					}, s.fbt._("Add", null, {
-						hk: "2fEPi9"
+						hk: "2wi3d4"
 					}))), l && d.a.createElement(fe, {
 						className: ge.a.dropdown,
 						focusedIndex: o,
@@ -733,8 +733,8 @@
 						sendEvent: te.a,
 						showTertiaryButtonOnHover: !0,
 						itemButtonDisabled: !!e,
-						tertiaryButtonText: s.fbt._("add", null, {
-							hk: "3h3fHe"
+						tertiaryButtonText: s.fbt._("Add", null, {
+							hk: "2wi3d4"
 						}),
 						title: s.fbt._("People also added", null, {
 							hk: "22fDdF"
@@ -1561,4 +1561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.98423726e87e312394f0.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.fdf5a6a2751b911f624d.js.map

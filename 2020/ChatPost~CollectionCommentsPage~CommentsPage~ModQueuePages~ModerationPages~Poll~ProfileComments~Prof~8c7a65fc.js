@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.26ee8602d4ff66d19fab.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.541fe6b4b42a6fd904dc.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -230,8 +230,8 @@
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				D = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				U = s.n(D);
+				U = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
+				D = s.n(U);
 			const F = 3500,
 				q = 500;
 			class Q extends r.a.PureComponent {
@@ -305,29 +305,29 @@
 						shouldAnimate: a
 					} = this.state, i = e.icon32 ? e.icon32.url : e.icon.url, d = e.icon128 ? e.icon128.url : e.icon.url, c = Object(L.a)(e.id, s.id);
 					return r.a.createElement("button", {
-						className: Object(_.a)(U.a.awardPill, {
-							[U.a.userGiven]: n
+						className: Object(_.a)(D.a.awardPill, {
+							[D.a.userGiven]: n
 						}),
 						id: o,
 						onClick: this.handleOnClick,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, r.a.createElement("span", {
-						className: U.a.imageContainer
+						className: D.a.imageContainer
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(_.a)(U.a.awardIcon, {
-							[U.a.hidden]: a
+						className: Object(_.a)(D.a.awardIcon, {
+							[D.a.hidden]: a
 						}),
 						id: c,
 						ref: this.imageRef,
 						src: i
 					}), a && r.a.createElement("img", {
 						alt: e.name,
-						className: U.a.animationIcon,
+						className: D.a.animationIcon,
 						src: d
 					})), r.a.createElement("span", {
-						className: U.a.count
+						className: D.a.count
 					}, t.toLocaleString()), r.a.createElement(R, {
 						award: e,
 						onHideAward: this.handleHideAward,
@@ -1031,7 +1031,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || o.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), r.a.createElement(i.t, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
@@ -1582,8 +1582,8 @@
 				B = (s("./src/reddit/icons/fonts/Premium/index.tsx"), s("./src/reddit/models/Flair/index.ts")),
 				H = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				R = s("./src/reddit/models/Post/index.ts"),
-				D = s("./src/reddit/models/Subreddit/index.ts"),
-				U = s("./src/reddit/selectors/authorFlair.ts"),
+				U = s("./src/reddit/models/Subreddit/index.ts"),
+				D = s("./src/reddit/selectors/authorFlair.ts"),
 				F = s("./src/reddit/selectors/userFlair.ts"),
 				q = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				Q = s("./src/reddit/components/PostTopMeta/index.m.less"),
@@ -1596,7 +1596,7 @@
 				z = m.a.span("text", W.a),
 				J = Object(q.t)(),
 				K = Object(r.b)(() => Object(a.c)({
-					authorFlair: U.a,
+					authorFlair: D.a,
 					createdTooltipId: (e, t) => {
 						let {
 							isOverlay: s,
@@ -1652,7 +1652,7 @@
 						showTimestamp: x = !0,
 						subredditOrProfile: P,
 						tooltipType: N
-					} = this.props, M = m && m.meta && m.meta.name === d.zb.COMMENTS, k = Object(p.a)(h), L = a === B.b.Left, H = h.authorIsContractor && !!P && P.type === D.d.EmployeesOnly, U = !s && !M, F = () => n.a.createElement(V, {
+					} = this.props, M = m && m.meta && m.meta.name === d.zb.COMMENTS, k = Object(p.a)(h), L = a === B.b.Left, H = h.authorIsContractor && !!P && P.type === U.d.EmployeesOnly, D = !s && !M, F = () => n.a.createElement(V, {
 						className: this.props.metaSeparatorClassName
 					}, "•"), q = n.a.createElement(n.a.Fragment, null, !k && n.a.createElement(z, {
 						style: {
@@ -1670,7 +1670,7 @@
 						disabled: !r,
 						flair: b,
 						forceSmallEmojis: !0,
-						usesCommunityStyles: U
+						usesCommunityStyles: D
 					})), Object(R.h)(h.author) ? n.a.createElement(Z, {
 						post: h,
 						isDeleted: !0,
@@ -1702,7 +1702,7 @@
 						disabled: !r,
 						flair: b,
 						forceSmallEmojis: !0,
-						usesCommunityStyles: U
+						usesCommunityStyles: D
 					})), h.belongsTo.type === I.a.SUBREDDIT && !Object(R.h)(h.author) && n.a.createElement(O.a, {
 						className: W.a.publicWallet,
 						contentId: h.id,
@@ -2150,4 +2150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.26ee8602d4ff66d19fab.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.541fe6b4b42a6fd904dc.js.map

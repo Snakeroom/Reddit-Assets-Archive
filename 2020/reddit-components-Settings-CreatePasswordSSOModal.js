@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.74ee440e9b05caaaefa0.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.b8160fedef4cd1654364.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -112,7 +112,7 @@
 					},
 					redditStyle: !0
 				}, c.fbt._("Cancel", null, {
-					hk: "Dz9bg"
+					hk: "2TSLl5"
 				})), n.a.createElement(b.f, {
 					className: Object(m.a)(C.a.commonBtn, C.a.primaryBtn),
 					onClick: () => {
@@ -262,7 +262,7 @@
 						return s && Object(S.e)(s) || ""
 					}
 				}),
-				B = Object(a.b)(D, e => ({
+				L = Object(a.b)(D, e => ({
 					closeResetPasswordForEmailModal: () => e(Object(r.g)(N.k)),
 					closeResetPasswordForAppleLinkModal: () => e(Object(r.g)(N.h)),
 					closeResetPasswordForAppleUnlinkModal: () => e(Object(r.g)(N.i)),
@@ -271,7 +271,7 @@
 					closeResetPasswordForGoogleUnlinkModal: () => e(Object(r.g)(N.m)),
 					sendResetEmail: s => e(Object(i.w)(s))
 				}));
-			s.default = B(e => e.userEmail && e.username ? n.a.createElement(R, e) : null)
+			s.default = L(e => e.userEmail && e.username ? n.a.createElement(R, e) : null)
 		},
 		"./src/reddit/components/Settings/ModalContainer/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -355,4 +355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Settings-CreatePasswordSSOModal.74ee440e9b05caaaefa0.js.map
+//# sourceMappingURL=reddit-components-Settings-CreatePasswordSSOModal.b8160fedef4cd1654364.js.map

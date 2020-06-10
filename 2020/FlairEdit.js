@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.99e475f26c49085bca2a.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.cdea20d852720bbfc92c.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/lodash/_baseInRange.js": function(e, t) {
@@ -173,7 +173,7 @@
 						className: _.a.cancelButton,
 						onClick: e.onCancelClick
 					}, u.fbt._("Cancel", null, {
-						hk: "1f5Zk8"
+						hk: "2TSLl5"
 					})))
 				},
 				N = (o("./node_modules/core-js/modules/es6.symbol.js"), o("./src/reddit/icons/svgs/Search/index.tsx")),
@@ -198,7 +198,7 @@
 					}
 					return o
 				},
-				A = e => {
+				L = e => {
 					const {
 						className: t,
 						inputRef: o
@@ -218,8 +218,8 @@
 						spellCheck: !1
 					}, s))))
 				},
-				L = o("./src/reddit/controls/EmojiPicker/index.m.less"),
-				K = o.n(L);
+				A = o("./src/reddit/controls/EmojiPicker/index.m.less"),
+				K = o.n(A);
 			const W = (e, t) => {
 					const o = t.toLowerCase();
 					return e.filter(e => {
@@ -289,7 +289,7 @@
 					} = this.state, s = t[o];
 					return a.a.createElement("div", {
 						className: Object(p.a)(K.a.container, e)
-					}, a.a.createElement(A, {
+					}, a.a.createElement(L, {
 						value: this.state.searchBarValue,
 						inputRef: this.setInputRef,
 						onChange: this.onSearchBarInputChange,
@@ -673,8 +673,8 @@
 			}
 			var Be = Fe,
 				Me = o("./src/reddit/helpers/flair.ts"),
-				Ae = o("./src/reddit/icons/svgs/Help/index.tsx"),
-				Le = o("./src/reddit/icons/svgs/Smile/index.tsx"),
+				Le = o("./src/reddit/icons/svgs/Help/index.tsx"),
+				Ae = o("./src/reddit/icons/svgs/Smile/index.tsx"),
 				Ke = o("./src/reddit/models/Flair/index.ts"),
 				We = o("./src/reddit/selectors/tooltip.ts"),
 				Ue = o("./src/reddit/components/FlairSearch/FlairEdit/index.m.less"),
@@ -905,7 +905,7 @@
 					return a.a.createElement("div", {
 						className: Object(p.a)(He.a.HelperText, this.props.helperTextClass, e ? He.a.hasError : null)
 					}, s ? a.a.createElement(a.a.Fragment, null, n, a.a.createElement(q.a, {
-						icon: a.a.createElement(Ae.a, {
+						icon: a.a.createElement(Le.a, {
 							className: He.a.helpIcon
 						}),
 						text: u.fbt._("The unicode for the emoji goes against the character count", null, {
@@ -949,7 +949,7 @@
 						className: Object(p.a)(He.a.EmojiPickerButton, l ? He.a.isActive : null),
 						id: o,
 						onClick: this.onToggleEmojiPicker
-					}, a.a.createElement(Le.a, {
+					}, a.a.createElement(Ae.a, {
 						className: Object(p.a)(He.a.SmileIcon, r ? He.a.isCompact : null)
 					}), a.a.createElement(Ze, Ge({
 						className: Object(p.a)({
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FlairEdit.99e475f26c49085bca2a.js.map
+//# sourceMappingURL=FlairEdit.cdea20d852720bbfc92c.js.map

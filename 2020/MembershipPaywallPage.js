@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.6a55aa823a5f0a76d1be.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.0dd23522fa4d3d7c0623.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -75,7 +75,7 @@
 				},
 				"data-redditstyle": !0
 			}, e.cancelActionText || s.fbt._("Cancel", null, {
-				hk: "3DgVq6"
+				hk: "2TSLl5"
 			})), r.a.createElement(n.t, {
 				className: l.a.buttonWidth,
 				onMouseDown: p,
@@ -1703,8 +1703,8 @@
 				W = a("./src/reddit/icons/svgs/FormattingTable/index.tsx"),
 				H = a("./src/reddit/icons/svgs/FormattingUnorderedList/index.tsx"),
 				Z = a("./src/reddit/icons/svgs/Gif/index.tsx"),
-				V = a("./src/reddit/icons/svgs/Smile/index.tsx"),
-				U = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/core-js/modules/es6.array.sort.js"), a("./src/higherOrderComponents/addOverlayEvents.tsx")),
+				U = a("./src/reddit/icons/svgs/Smile/index.tsx"),
+				V = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/core-js/modules/es6.array.sort.js"), a("./src/higherOrderComponents/addOverlayEvents.tsx")),
 				q = a("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				K = a("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				J = a("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -1969,7 +1969,7 @@
 					title: "Special Membership"
 				}
 			};
-			var $ = Object(q.a)(Y, [U.a.Click, U.a.Keydown]),
+			var $ = Object(q.a)(Y, [V.a.Click, V.a.Keydown]),
 				ee = a("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.tsx"),
 				te = a("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/GifTooltip/index.m.less"),
 				ae = a.n(te);
@@ -1991,7 +1991,7 @@
 					}), o.a.createElement("div", {
 						className: ae.a.triangle
 					}))
-				}), [U.a.Click, U.a.Keydown]),
+				}), [V.a.Click, V.a.Keydown]),
 				oe = a("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/index.m.less"),
 				re = a.n(oe);
 			class ie extends o.a.Component {
@@ -2017,7 +2017,7 @@
 						onClick: "emoji" === this.props.type ? () => this.setState(e => ({
 							emotesOpen: !e.emotesOpen
 						})) : void 0
-					}, o.a.createElement(V.a, {
+					}, o.a.createElement(U.a, {
 						className: Object(l.a)(re.a.emoteIcon)
 					})), o.a.createElement("div", {
 						className: Object(l.a)(re.a.iconWrapper, {
@@ -2622,8 +2622,8 @@
 			var We = Object(r.b)(De)(Ge),
 				He = a("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				Ze = a("./src/reddit/pages/meta/MembershipPaywallPage/FAQ/index.m.less"),
-				Ve = a.n(Ze);
-			class Ue extends o.a.Component {
+				Ue = a.n(Ze);
+			class Ve extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						open: {}
@@ -2681,9 +2681,9 @@
 						}), o
 					}(N(a.id), t);
 					return o.a.createElement("div", {
-						className: Object(l.a)(e, Ve.a.container)
+						className: Object(l.a)(e, Ue.a.container)
 					}, o.a.createElement("div", {
-						className: Ve.a.title
+						className: Ue.a.title
 					}, k.fbt._("{membershipAlt} FAQ", [k.fbt._param("membershipAlt", t.membershipAlt)], {
 						hk: "4tP0lw"
 					})), s.map(e => {
@@ -2692,19 +2692,19 @@
 							A: a
 						} = e;
 						return o.a.createElement("div", {
-							className: Ve.a.section,
+							className: Ue.a.section,
 							key: t,
 							onClick: () => this.toggleQuestion(t)
 						}, o.a.createElement("div", {
-							className: Ve.a.row
+							className: Ue.a.row
 						}, o.a.createElement("div", {
-							className: Ve.a.question
+							className: Ue.a.question
 						}, t), o.a.createElement(He.a, {
-							className: Object(l.a)(Ve.a.arrow, {
-								[Ve.a.arrowClose]: !this.state.open[t]
+							className: Object(l.a)(Ue.a.arrow, {
+								[Ue.a.arrowClose]: !this.state.open[t]
 							})
 						})), !!this.state.open[t] && o.a.createElement("div", {
-							className: Ve.a.answer
+							className: Ue.a.answer
 						}, a))
 					}))
 				}
@@ -2717,7 +2717,7 @@
 					return Object(P.x)(e, a.id)
 				}
 			});
-			var Ke = Object(r.b)(qe)(Ue),
+			var Ke = Object(r.b)(qe)(Ve),
 				Je = a("./src/reddit/pages/meta/MembershipPaywallPage/Footer/index.m.less"),
 				Xe = a.n(Je);
 			const Qe = [7900, 8240];
@@ -3060,8 +3060,8 @@
 				}),
 				Ht = Object(r.b)(Wt),
 				Zt = Object(it.t)(),
-				Vt = Object(b.c)(Dt);
-			var Ut = Object(nt.a)("spPremium", Object(ot.a)(Zt(Ht(Vt)))),
+				Ut = Object(b.c)(Dt);
+			var Vt = Object(nt.a)("spPremium", Object(ot.a)(Zt(Ht(Ut)))),
 				qt = a("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Products/index.m.less"),
 				Kt = a.n(qt);
 
@@ -3090,7 +3090,7 @@
 					tokenPrice: a,
 					trial: r
 				} = e, i = Xt(e, ["dollarPrice", "tokenPrice", "trial"]);
-				return o.a.createElement(Ut, Jt({}, i, {
+				return o.a.createElement(Vt, Jt({}, i, {
 					target: {
 						dollarPrice: t,
 						tokenPrice: a,
@@ -3794,4 +3794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.6a55aa823a5f0a76d1be.js.map
+//# sourceMappingURL=MembershipPaywallPage.0dd23522fa4d3d7c0623.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.2ee714a27fd255889ba6.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.4d493da37da5e0b4883f.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1179,7 +1179,7 @@
 						className: J.a.cancel,
 						onClick: this.onCancel
 					}, s.fbt._("Cancel", null, {
-						hk: "cWynd"
+						hk: "2TSLl5"
 					})), o.a.createElement("span", {
 						className: J.a.save,
 						onClick: this.onSave
@@ -2879,4 +2879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.2ee714a27fd255889ba6.js.map
+//# sourceMappingURL=IdCard.4d493da37da5e0b4883f.js.map

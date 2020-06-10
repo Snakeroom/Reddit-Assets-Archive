@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.abe3da40d17acf455d8c.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.60e7b1c0577a25a96de3.js
+// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "cf1db44-production"
+					SENTRY_RELEASE_VERSION: "1f91f6a-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -2436,7 +2436,7 @@
 					})), i.a.createElement(ht.b, {
 						className: es.a.overflowItem,
 						displayText: w.fbt._("Report", null, {
-							hk: "1TxhL9"
+							hk: "4oVcnd"
 						}),
 						iconWrapperClassName: es.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-report"),
@@ -2649,7 +2649,7 @@
 				})), i.a.createElement(ht.b, {
 					className: us.a.overflowItem,
 					displayText: ps._("Report", null, {
-						hk: "3ZxBjz"
+						hk: "4oVcnd"
 					}),
 					iconWrapperClassName: us.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-report"),
@@ -4358,4 +4358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.abe3da40d17acf455d8c.js.map
+//# sourceMappingURL=PublicAccessNetwork.60e7b1c0577a25a96de3.js.map
