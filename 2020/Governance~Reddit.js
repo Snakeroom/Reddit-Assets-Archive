@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7c900974dc1b9e24efe0.js
-// Retrieved at 6/10/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.815ac04e871a13557be1.js
+// Retrieved at 6/10/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -24718,9 +24718,14 @@
 							c: i,
 							d: c,
 							e: d,
-							f: u
+							f: u,
+							g: O ? 1 : 0,
+							i: t.timeImpressionViewed ? t.timeImpressionViewed : 0,
+							o: l ? 1 : 0,
+							q: g ? 1 : 0,
+							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					return t.timeImpressionViewed > 0 && (_.i = Date.now() - t.timeImpressionViewed), l && (_.o = 1), O && (_.g = 1), g && (_.q = 1), t.eventGlobalCount && (_.r = t.eventGlobalCount), t.videoData && t.videoData.isVideo && (_.va = 1, _.vh = f ? Math.floor(f.height) : 0, _.vw = f ? Math.floor(f.width) : 0, _.ve = t.videoData.videoVolume || 0, _.vc = t.videoData.videoDuration || 0, _.vd = t.videoData.cumulativeViewedTime || 0), _
+					return t.videoData && t.videoData.isVideo && (_.va = 1, _.vh = f ? Math.floor(f.height) : 0, _.vw = f ? Math.floor(f.width) : 0, _.ve = t.videoData.videoVolume || 0, _.vc = t.videoData.videoDuration || 0, _.vd = t.videoData.cumulativeViewedTime || 0), _
 				}
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, n) {
@@ -54264,4 +54269,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7c900974dc1b9e24efe0.js.map
+//# sourceMappingURL=Governance~Reddit.815ac04e871a13557be1.js.map
