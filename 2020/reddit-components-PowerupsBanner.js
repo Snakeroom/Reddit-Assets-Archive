@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.581388a777fb8dd831af.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.483958405badbd078b0d.js
+// Retrieved at 6/10/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less": function(e, s, t) {
@@ -30,7 +30,7 @@
 					count: i,
 					tiersInfo: u,
 					supportersCount: p
-				} = t, m = u[n], x = m && m.powerupsCost && m.powerupsCost > i ? m.powerupsCost - i : 0;
+				} = t, m = u[n] ? u[n].powerupsCost : 0, x = Math.max(m - i, 0);
 				return r.a.createElement("div", {
 					className: Object(o.a)(s, d.a.container)
 				}, x ? r.a.createElement(r.a.Fragment, null, r.a.createElement(c.a, {
@@ -274,4 +274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.581388a777fb8dd831af.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.483958405badbd078b0d.js.map
