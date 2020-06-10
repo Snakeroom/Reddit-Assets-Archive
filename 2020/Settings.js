@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8010079f1e9b93794015.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3a90db8d656f1799b0c8.js
+// Retrieved at 6/10/2020, 7:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -68,9 +68,9 @@
 			n.d(t, "g", (function() {
 				return I
 			})), n.d(t, "f", (function() {
-				return T
-			})), n.d(t, "e", (function() {
 				return M
+			})), n.d(t, "e", (function() {
+				return T
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "b", (function() {
@@ -195,7 +195,7 @@
 					} catch (k) {
 						u.c.captureException(k), p()
 					}
-				}, T = (e, t, n, s) => async (a, o, r) => {
+				}, M = (e, t, n, s) => async (a, o, r) => {
 					let {
 						gqlContext: l
 					} = r, m = "";
@@ -250,7 +250,7 @@
 						u.c.captureException(b)
 					}
 					return a(Object(h.paypalApiError)(j())), null
-				}, M = (e, t) => async (n, s, a) => {
+				}, T = (e, t) => async (n, s, a) => {
 					let {
 						gqlContext: o
 					} = a;
@@ -1857,18 +1857,18 @@
 						hk: "4kn8Go"
 					})))
 				})),
-				T = n("./src/reddit/components/Settings/Powerups/Header/index.m.less"),
-				M = n.n(T);
+				M = n("./src/reddit/components/Settings/Powerups/Header/index.m.less"),
+				T = n.n(M);
 
 			function A(e) {
 				return r.a.createElement("header", {
 					className: e.className
 				}, r.a.createElement("div", {
-					className: M.a.title
+					className: T.a.title
 				}, a.fbt._("Community Powerups", null, {
 					hk: "48PrUZ"
 				})), r.a.createElement("div", {
-					className: M.a.subtitle
+					className: T.a.subtitle
 				}, a.fbt._("View and manage your subscription for Powerups.", null, {
 					hk: "3qnDJW"
 				})))
@@ -3810,8 +3810,8 @@
 			const N = Object(c.a)(j.ib, e => !(!e || !e.length)),
 				P = Object(c.a)(N, j.w, (e, t) => e && !t),
 				I = Object(c.a)(j.ib, e => e && e.find(e => e === O.a.Apple)),
-				T = Object(c.a)(j.ib, e => e && e.find(e => e === O.a.Google));
-			var M = n("./src/lib/validateEmail/index.ts"),
+				M = Object(c.a)(j.ib, e => e && e.find(e => e === O.a.Google));
+			var T = n("./src/lib/validateEmail/index.ts"),
 				A = n("./src/reddit/actions/toaster.ts"),
 				R = n("./src/reddit/components/Settings/shared/FatInput.tsx"),
 				B = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
@@ -3881,7 +3881,7 @@
 							sendResetEmail: n
 						} = this.props, {
 							enteredEmail: a
-						} = this.state, o = Object(M.a)(a, !1), r = o ? "" : s.fbt._("Please fix your email to continue.", null, {
+						} = this.state, o = Object(T.a)(a, !1), r = o ? "" : s.fbt._("Please fix your email to continue.", null, {
 							hk: "f4LWI"
 						});
 						this.setState({
@@ -4145,8 +4145,8 @@
 					openCreatePasswordUnlinkModal: e.openSSOCreatePasswordForUnlinkAppleModal
 				})
 			});
-			const Te = Ce.a.wrapped(ee.c, "ConnectGoogle", ke.a),
-				Me = Ce.a.wrapped(w.f, "ConnectGoogleButton", ke.a),
+			const Me = Ce.a.wrapped(ee.c, "ConnectGoogle", ke.a),
+				Te = Ce.a.wrapped(w.f, "ConnectGoogleButton", ke.a),
 				Ae = Ce.a.div("ConnectionInfo", ke.a),
 				Re = Ce.a.wrapped(w.j, "DisconnectButton", ke.a),
 				Be = Ce.a.wrapped(e => o.a.createElement("svg", {
@@ -4191,7 +4191,7 @@
 					const t = Object(m.a)({
 						[ke.a["m-responsive"]]: e.isResponsiveSettingsEnabled
 					});
-					return o.a.createElement(Te, {
+					return o.a.createElement(Me, {
 						className: t,
 						label: s.fbt._("Connect to Google", null, {
 							hk: "7yvud"
@@ -4199,7 +4199,7 @@
 						subtext: s.fbt._("Connect account to log in to Reddit with Google", null, {
 							hk: "3EhJVs"
 						})
-					}, o.a.createElement(Me, {
+					}, o.a.createElement(Te, {
 						className: t,
 						onClick: e.onConnectClick
 					}, o.a.createElement(Le, null, o.a.createElement(Be, null), s.fbt._("Connect to Google", null, {
@@ -4208,7 +4208,7 @@
 				})()
 			};
 			const Ue = Object(c.c)({
-				issuerId: T,
+				issuerId: M,
 				shouldShowSSOCreatePasswordModal: P
 			});
 			var Fe = Object(r.b)(Ue, e => ({
@@ -4514,12 +4514,12 @@
 				Nt = n("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				Pt = n("./src/reddit/components/Hovercards/helpers.ts"),
 				It = n("./src/reddit/components/UserNameAndIcon/index.tsx"),
-				Tt = n("./src/reddit/components/Settings/shared/UserRow.m.less"),
-				Mt = n.n(Tt);
-			const At = Ce.a.p("Date", Mt.a),
-				Rt = Ce.a.wrapped(It.a, "UserNameAndIcon", Mt.a),
-				Bt = Ce.a.button("Button", Mt.a),
-				Lt = Ce.a.div("ButtonWrapper", Mt.a);
+				Mt = n("./src/reddit/components/Settings/shared/UserRow.m.less"),
+				Tt = n.n(Mt);
+			const At = Ce.a.p("Date", Tt.a),
+				Rt = Ce.a.wrapped(It.a, "UserNameAndIcon", Tt.a),
+				Bt = Ce.a.button("Button", Tt.a),
+				Lt = Ce.a.div("ButtonWrapper", Tt.a);
 			var Dt = Ce.a.wrapped(e => o.a.createElement("div", {
 					className: e.className
 				}, o.a.createElement(Rt, {
@@ -4534,7 +4534,7 @@
 				}), o.a.createElement(At, null, Object(jt.d)(e.date / 1e3)), o.a.createElement(Lt, null, o.a.createElement(Bt, {
 					disabled: !!e.disabled,
 					onClick: e.onClick
-				}, "Remove"))), "Component", Mt.a),
+				}, "Remove"))), "Component", Tt.a),
 				Ut = n("./src/reddit/models/WhitelistAndBlocked.ts"),
 				Ft = n("./src/reddit/components/Settings/shared/ListWidget.m.less"),
 				Ht = n.n(Ft);
@@ -4826,10 +4826,10 @@
 				Nn = n("./src/reddit/components/Settings/shared/Dropdown/index.m.less"),
 				Pn = n.n(Nn);
 			const In = Object(xn.a)(wn.a),
-				Tn = Object(c.c)({
+				Mn = Object(c.c)({
 					isDropdownOpen: (e, t) => Object(jn.b)(t.dropdownId)(e)
 				});
-			class Mn extends o.a.Component {
+			class Tn extends o.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onToggleDropdown = () => {
 						this.props.openDropdown()
@@ -4872,13 +4872,13 @@
 					}, t.map(e => s(e, a === e.key))))
 				}
 			}
-			var An = Object(r.b)(Tn, (e, t) => ({
+			var An = Object(r.b)(Mn, (e, t) => ({
 					openDropdown: () => {
 						e(Object(En.h)({
 							tooltipId: t.dropdownId
 						}))
 					}
-				}))(Mn),
+				}))(Tn),
 				Rn = n("./src/reddit/constants/listingSorts.ts");
 			const Bn = [u.N.HOT, u.N.NEW, u.N.TOP, u.N.RISING];
 			var Ln = e => {
@@ -5279,8 +5279,8 @@
 				}
 			}
 			var Is = Object(gs.a)(Ps),
-				Ts = n("./src/reddit/components/Settings/DesktopNotifications/index.m.less"),
-				Ms = n.n(Ts);
+				Ms = n("./src/reddit/components/Settings/DesktopNotifications/index.m.less"),
+				Ts = n.n(Ms);
 			const {
 				fbt: As
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Rs = Object(c.c)({
@@ -5485,7 +5485,7 @@
 						isResponsiveSettingsEnabled: s,
 						preferences: r
 					} = this.props, i = Object(m.a)({
-						[Ms.a.ResponsiveTooltip]: s
+						[Ts.a.ResponsiveTooltip]: s
 					});
 					return o.a.createElement(a.Fragment, null, o.a.createElement($.a, null, s ? As._("Browser notifications", null, {
 						hk: "YkSBM"
@@ -5659,7 +5659,7 @@
 						isResponsiveSettingsEnabled: s,
 						onClose: this.handleTurnOnDesktopNotificationsModalClose,
 						overlayClassName: Object(m.a)({
-							[Ms.a.ResponsiveOverlay]: s
+							[Ts.a.ResponsiveOverlay]: s
 						})
 					}))
 				}
@@ -6087,6 +6087,7 @@
 					isEmployee: e.isEmployee,
 					isGold: e.isGold,
 					over18: t.over18,
+					prefersReducedMotion: n.reduceAnimationsFromAwards,
 					profileBanner: i,
 					profileIcon: e.accountIcon,
 					publicDescription: t.publicDescription,
@@ -6094,7 +6095,7 @@
 					title: t.title,
 					isNSFWModalOpen: "ProfileForm_NSFWConfirmDialogID" === a
 				}
-			}), wa = Ce.a.div("ImageUploaderLayout", ya.a), Sa = Ce.a.wrapped(va.a, "IconImageUploader", ya.a), Oa = Ce.a.wrapped(ua.a, "ProfileIcon", ya.a), ja = Ce.a.wrapped(va.a, "BannerImageUploader", ya.a), Na = Ce.a.wrapped(ma.a, "ProfileBanner", ya.a), Pa = Ce.a.wrapped(ba, "PlusCircle", ya.a), Ia = Ce.a.span("LabelText", ya.a), Ta = Ce.a.span("ImageType", ya.a), Ma = Ce.a.a("Link", ya.a), Aa = Ce.a.img("DummyBanner", ya.a), Ra = Ce.a.wrapped(da.a, "Preview", ya.a);
+			}), wa = Ce.a.div("ImageUploaderLayout", ya.a), Sa = Ce.a.wrapped(va.a, "IconImageUploader", ya.a), Oa = Ce.a.wrapped(ua.a, "ProfileIcon", ya.a), ja = Ce.a.wrapped(va.a, "BannerImageUploader", ya.a), Na = Ce.a.wrapped(ma.a, "ProfileBanner", ya.a), Pa = Ce.a.wrapped(ba, "PlusCircle", ya.a), Ia = Ce.a.span("LabelText", ya.a), Ma = Ce.a.span("ImageType", ya.a), Ta = Ce.a.a("Link", ya.a), Aa = Ce.a.img("DummyBanner", ya.a), Ra = Ce.a.wrapped(da.a, "Preview", ya.a);
 			class Ba extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTitleChange = e => this.setState({
@@ -6167,38 +6168,40 @@
 						isNSFWModalOpen: c,
 						isResponsiveSettingsEnabled: l,
 						over18: d,
-						profileBanner: u,
-						profileIcon: p,
-						showActiveCommunities: b,
-						toggleNSFWModal: h
+						prefersReducedMotion: u,
+						profileBanner: p,
+						profileIcon: b,
+						showActiveCommunities: h,
+						toggleNSFWModal: g
 					} = this.props, {
-						isDeletingBanner: g,
-						isDeletingIcon: f,
-						profileBannerUploading: v,
-						profileIconUploading: _,
-						publicDescription: y,
-						title: k
-					} = this.state, x = Object(m.a)({
+						isDeletingBanner: f,
+						isDeletingIcon: v,
+						profileBannerUploading: _,
+						profileIconUploading: y,
+						publicDescription: k,
+						title: x
+					} = this.state, E = Object(m.a)({
 						[ya.a["m-responsive"]]: l
-					}), E = !!p && !Object(pa.b)(p);
+					}), w = !!b && !Object(pa.b)(b);
 					return o.a.createElement(me.a, {
 						sidebar: o.a.createElement(Ra, {
-							bannerBackgroundImage: u,
+							bannerBackgroundImage: p,
 							editMode: !0,
 							isEmployee: r,
-							isDefaultIcon: !p || p.indexOf("avatar_default") > -1,
-							isDeletingBanner: g,
-							isDeletingIcon: f,
+							isDefaultIcon: !b || b.indexOf("avatar_default") > -1,
+							isDeletingBanner: f,
+							isDeletingIcon: v,
 							isEditProfileImagesInlineEnabled: a,
 							isGold: i,
 							isNSFW: d,
 							isOverlay: !1,
 							onDeleteBanner: this.onDeleteBanner,
 							onDeleteIcon: this.onDeleteIcon,
-							profileIcon: p,
-							publicDescription: y,
+							prefersReducedMotion: u,
+							profileIcon: b,
+							publicDescription: k,
 							recentAwardings: e,
-							title: k,
+							title: x,
 							url: s,
 							username: n
 						})
@@ -6214,7 +6217,7 @@
 						}),
 						onChange: this.onTitleChange,
 						onBlur: () => {
-							k !== this.props.title && this.updateProfile(k, "title")
+							x !== this.props.title && this.updateProfile(x, "title")
 						},
 						placeholder: ka._("Display name (optional)", null, {
 							hk: "2BOHwt"
@@ -6223,14 +6226,14 @@
 						subtext: ka._("Set a display name. This does not change your username.", null, {
 							hk: "3xfh9M"
 						}),
-						value: k
+						value: x
 					}), o.a.createElement(ee.g, {
 						label: ka._("About (optional)", null, {
 							hk: "1W7xvB"
 						}),
 						onChange: this.onDescriptionChange,
 						onBlur: () => {
-							y !== this.props.publicDescription && this.updateProfile(y, "publicDescription")
+							k !== this.props.publicDescription && this.updateProfile(k, "publicDescription")
 						},
 						placeholder: ka._("About (optional)", null, {
 							hk: "3wFdhi"
@@ -6239,7 +6242,7 @@
 						subtext: ka._("A brief description of yourself shown on your profile.", null, {
 							hk: "3gGUDy"
 						}),
-						value: y
+						value: k
 					}), o.a.createElement($.a, null, ka._("Images", null, {
 						hk: "38DOkf"
 					})), o.a.createElement(ee.k, {
@@ -6251,35 +6254,35 @@
 						}),
 						direction: "column"
 					}, o.a.createElement(wa, {
-						className: Object(m.a)(x, {
+						className: Object(m.a)(E, {
 							[ya.a["m-inline"]]: a
 						})
-					}, E && a ? o.a.createElement(Oa, {
-						className: x,
-						iconUrl: p,
+					}, w && a ? o.a.createElement(Oa, {
+						className: E,
+						iconUrl: b,
 						isNSFW: !1,
 						userName: n
 					}) : o.a.createElement(Sa, {
-						className: x,
+						className: E,
 						controlName: "profileIcon",
 						icon: a ? o.a.createElement(Pa, null) : null,
-						isUploading: _,
-						label: o.a.createElement(Ia, null, ka._("Drag and Drop or Upload {imageType} Image", [ka._param("imageType", o.a.createElement(Ta, null, "avatar"))], {
+						isUploading: y,
+						label: o.a.createElement(Ia, null, ka._("Drag and Drop or Upload {imageType} Image", [ka._param("imageType", o.a.createElement(Ma, null, "avatar"))], {
 							hk: "27PRKI"
 						})),
 						labelClassName: ya.a.Label,
 						onChange: this.onIconChange
-					}), u && a ? o.a.createElement(Na, {
-						bannerUrl: u,
-						className: x,
+					}), p && a ? o.a.createElement(Na, {
+						bannerUrl: p,
+						className: E,
 						isNSFW: !1,
 						userName: n
 					}) : o.a.createElement(ja, {
-						className: x,
+						className: E,
 						controlName: "profileBanner",
 						icon: a ? o.a.createElement(Pa, null) : null,
-						isUploading: v,
-						label: o.a.createElement(Ia, null, ka._("Drag and Drop or Upload {imageType} Image", [ka._param("imageType", o.a.createElement(Ta, null, "Banner"))], {
+						isUploading: _,
+						label: o.a.createElement(Ia, null, ka._("Drag and Drop or Upload {imageType} Image", [ka._param("imageType", o.a.createElement(Ma, null, "Banner"))], {
 							hk: "1DrvdL"
 						})),
 						labelClassName: ya.a.Label,
@@ -6301,9 +6304,9 @@
 						label: ka._("Content visibility", null, {
 							hk: "3RQ2dW"
 						}),
-						subtext: ka._("Posts to this profile can appear in {profileForm: r/all link} and your profile can be discovered in {profileForm: /users link}", [ka._param("profileForm: r/all link", o.a.createElement(Ma, {
+						subtext: ka._("Posts to this profile can appear in {profileForm: r/all link} and your profile can be discovered in {profileForm: /users link}", [ka._param("profileForm: r/all link", o.a.createElement(Ta, {
 							href: "/r/all"
-						}, "r/all")), ka._param("profileForm: /users link", o.a.createElement(Ma, {
+						}, "r/all")), ka._param("profileForm: /users link", o.a.createElement(Ta, {
 							href: "/users"
 						}, "/users"))], {
 							hk: "16m9kL"
@@ -6317,11 +6320,11 @@
 						subtext: ka._("Show which communities I am active in on my profile.", null, {
 							hk: "3jFDfF"
 						}),
-						on: b,
+						on: h,
 						onClick: this.onShowActiveCommunitiesChange
 					}), o.a.createElement($.a, null, ka._("Profile moderation", null, {
 						hk: "3vDS8h"
-					})), ka._("For moderation tools please visit our {ProfileForm: mod page link}", [ka._param("ProfileForm: mod page link", o.a.createElement(Ma, {
+					})), ka._("For moderation tools please visit our {ProfileForm: mod page link}", [ka._param("ProfileForm: mod page link", o.a.createElement(Ta, {
 						href: "/user/".concat(n, "/about/edit/moderation")
 					}, "Profile Moderation page"))], {
 						hk: "3pih6f"
@@ -6329,7 +6332,7 @@
 						headerText: ka._("SWITCH ACCOUNT TO SFW", null, {
 							hk: "2rDUbc"
 						}),
-						message: ka._("If your account contains {NSFWConfirm: nsfw policy link} (contains nudity, pornography, profanity or inappropriate content for those under 18) and it’s not set to NSFW, this will result in actions up to and including suspension of your account.", [ka._param("NSFWConfirm: nsfw policy link", o.a.createElement(Ma, {
+						message: ka._("If your account contains {NSFWConfirm: nsfw policy link} (contains nudity, pornography, profanity or inappropriate content for those under 18) and it’s not set to NSFW, this will result in actions up to and including suspension of your account.", [ka._param("NSFWConfirm: nsfw policy link", o.a.createElement(Ta, {
 							href: "https://www.redditinc.com/policies/content-policy#text-content3"
 						}, "NSFW content"))], {
 							hk: "3u1P0O"
@@ -6341,14 +6344,14 @@
 							hk: "3wiM7r"
 						}),
 						onAccept: this.switchSFW,
-						onCancel: h,
-						onOverlayClick: h,
+						onCancel: g,
+						onOverlayClick: g,
 						overlayClassName: Object(m.a)({
 							[ya.a.ResponsiveOverlay]: l
 						}),
 						withOverlay: !0
 					}), o.a.createElement(Aa, {
-						src: u
+						src: p
 					}))
 				}
 			}
@@ -6707,7 +6710,7 @@
 				membershipsLoading: e => !e.economics.me.fetched,
 				memberships: e => e.economics.me.data.specialMemberships || {}
 			});
-			var To = Object(r.b)(Io)((function(e) {
+			var Mo = Object(r.b)(Io)((function(e) {
 					const {
 						className: t,
 						membershipsLoading: n,
@@ -6742,15 +6745,15 @@
 						hk: "738ir"
 					})))
 				})),
-				Mo = n("./src/reddit/components/Settings/SpecialMembership/index.m.less"),
-				Ao = n.n(Mo);
+				To = n("./src/reddit/components/Settings/SpecialMembership/index.m.less"),
+				Ao = n.n(To);
 
 			function Ro(e) {
 				return o.a.createElement(me.a, {
 					className: e.className
 				}, o.a.createElement(Ga, {
 					className: Ao.a.header
-				}), o.a.createElement(To, null))
+				}), o.a.createElement(Mo, null))
 			}
 			var Bo = n("./src/reddit/components/TabNav/index.tsx"),
 				Lo = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -7048,4 +7051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.8010079f1e9b93794015.js.map
+//# sourceMappingURL=Settings.3a90db8d656f1799b0c8.js.map

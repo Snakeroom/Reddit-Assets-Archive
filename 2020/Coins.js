@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.a85cd0d4578620143cb0.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.2261aa7310bf7366e488.js
+// Retrieved at 6/10/2020, 7:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -518,9 +518,9 @@
 				k = t("./src/telemetry/models/Timer.ts"),
 				E = t("./src/reddit/pages/CoinsPage/index.m.less"),
 				N = t.n(E),
-				C = t("./src/reddit/helpers/createEmojiText/index.tsx"),
-				v = t("./src/reddit/models/Gold/Award.ts"),
-				_ = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				v = t("./src/reddit/helpers/createEmojiText/index.tsx"),
+				_ = t("./src/reddit/models/Gold/Award.ts"),
+				C = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				x = t("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				w = t("./src/reddit/actions/login.ts"),
 				P = t("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -534,14 +534,14 @@
 				A = t("./src/lib/classNames/index.ts"),
 				S = t("./src/reddit/controls/Button/index.tsx"),
 				D = t("./src/reddit/icons/svgs/Coin/index.tsx"),
-				V = e => l.a.createElement("svg", {
+				B = e => l.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 96 96",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("path", {
 					d: "M45.31.614c1.411.984 3.72.984 5.13 0 1.412-.984 3.527-.761 4.703.494 1.175 1.256 3.434 1.736 5.018 1.067 1.584-.67 3.608-.012 4.495 1.461.89 1.472 2.998 2.412 4.687 2.087 1.69-.326 3.532.738 4.096 2.363.562 1.627 2.43 2.982 4.15 3.017 1.72.032 3.3 1.455 3.513 3.162.213 1.707 1.758 3.423 3.432 3.813 1.676.39 2.926 2.11 2.78 3.824-.147 1.715 1.007 3.714 2.565 4.444 1.558.729 2.423 2.672 1.923 4.319-.5 1.646.214 3.841 1.585 4.879 1.372 1.037 1.815 3.118.983 4.625-.83 1.506-.59 3.802.536 5.101 1.126 1.3 1.126 3.428 0 4.729-1.126 1.3-1.367 3.596-.536 5.102.832 1.506.39 3.586-.983 4.624-1.371 1.037-2.086 3.233-1.585 4.878.5 1.646-.365 3.591-1.923 4.32-1.558.73-2.712 2.729-2.565 4.443.146 1.714-1.104 3.435-2.78 3.825-1.674.39-3.22 2.106-3.432 3.812-.212 1.707-1.794 3.13-3.513 3.164-1.72.032-3.588 1.39-4.15 3.015-.564 1.626-2.406 2.69-4.096 2.365-1.689-.326-3.797.614-4.687 2.086-.887 1.473-2.911 2.13-4.495 1.461-1.584-.67-3.843-.19-5.018 1.066-1.176 1.257-3.291 1.48-4.703.495-1.41-.984-3.719-.984-5.13 0-1.41.985-3.526.762-4.702-.495-1.175-1.256-3.434-1.736-5.018-1.066-1.584.669-3.608.012-4.496-1.461-.889-1.472-2.997-2.412-4.687-2.086-1.689.325-3.531-.739-4.095-2.365-.562-1.625-2.43-2.983-4.15-3.015-1.72-.033-3.3-1.457-3.513-3.164-.213-1.706-1.758-3.422-3.432-3.812-1.676-.39-2.926-2.111-2.78-3.825.147-1.714-1.007-3.713-2.565-4.443-1.558-.729-2.423-2.674-1.923-4.32.5-1.645-.213-3.84-1.585-4.878-1.372-1.038-1.815-3.118-.983-4.624.83-1.506.59-3.802-.537-5.102-1.125-1.301-1.125-3.43 0-4.729 1.127-1.3 1.368-3.595.537-5.1-.832-1.508-.39-3.589.983-4.626 1.372-1.038 2.086-3.233 1.585-4.88-.5-1.646.365-3.59 1.923-4.318 1.558-.73 2.712-2.73 2.566-4.444-.147-1.714 1.103-3.434 2.779-3.824 1.674-.39 3.22-2.106 3.432-3.813.212-1.707 1.794-3.13 3.513-3.162 1.72-.035 3.588-1.39 4.15-3.017.564-1.625 2.406-2.69 4.095-2.363 1.69.325 3.798-.615 4.687-2.087.888-1.473 2.912-2.131 4.496-1.46 1.584.668 3.843.188 5.018-1.068C41.784-.147 43.9-.37 45.31.614"
 				}));
-			var B = e => {
+			var V = e => {
 					const {
 						className: a,
 						coinPackage: t,
@@ -558,7 +558,7 @@
 						pennies: h
 					} = t, g = "$".concat(h / 100), f = m.toLocaleString(), b = s ? u.marketing["4x"].url : u.marketing["2x"].url, k = o > 0 && "".concat(o.toLocaleString(), "%"), E = n.fbt._("bonus", null, {
 						hk: "L8mcp"
-					}), N = s ? L.a.large : "", C = r !== m, v = i !== h;
+					}), N = s ? L.a.large : "", v = r !== m, _ = i !== h;
 					return l.a.createElement("div", {
 						className: Object(A.a)(a, L.a.coinPurchasePackage, N)
 					}, l.a.createElement("div", {
@@ -569,7 +569,7 @@
 						className: L.a.badge
 					}, p), k && l.a.createElement("div", {
 						className: Object(A.a)(L.a.stamp, N)
-					}, l.a.createElement(V, {
+					}, l.a.createElement(B, {
 						className: L.a.stampIcon
 					}), l.a.createElement("div", {
 						className: Object(A.a)(L.a.stampValue, N)
@@ -583,7 +583,7 @@
 						className: L.a.priceCoinIcon
 					}), l.a.createElement("div", null, l.a.createElement("div", {
 						className: L.a.priceValue
-					}, f), C ? l.a.createElement("div", {
+					}, f), v ? l.a.createElement("div", {
 						className: Object(A.a)(L.a.priceCurrency, L.a.crossout)
 					}, n.fbt._("{Non-sale number of coins} Coins", [n.fbt._param("Non-sale number of coins", r.toLocaleString())], {
 						hk: "26szgy"
@@ -598,7 +598,7 @@
 					}, l.a.createElement(S.f, {
 						className: Object(A.a)(L.a.cta, N),
 						onClick: c
-					}, g), v && l.a.createElement("div", {
+					}, g), _ && l.a.createElement("div", {
 						className: L.a.priceCrossout
 					}, "$".concat(i / 100)))))
 				},
@@ -650,8 +650,8 @@
 					src: p
 				}), l.a.createElement("h2", {
 					className: X.a.premiumDescription
-				}, W._("Get {Number of monthly coins} Coins every month with Reddit Premium and browse ads-free", [W._param("Number of monthly coins", d)], {
-					hk: "33Zpqj"
+				}, W._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [W._param("Number of monthly coins", d)], {
+					hk: "42dB3q"
 				})), t ? l.a.createElement(S.f, {
 					className: X.a.premiumCTA,
 					onClick: c
@@ -763,10 +763,10 @@
 					onRouteToManagePremium: () => e(Object(m.b)("/settings/gold")),
 					onRouteToPremium: () => e(Object(m.b)("/premium")),
 					onOpenLoginModal: () => e(Object(w.g)()),
-					onOpenTargetedOfferModal: a => e(Object(_.h)({
+					onOpenTargetedOfferModal: a => e(Object(C.h)({
 						packageId: a.mobileId
 					})),
-					onPurchasePackage: a => e(Object(_.f)({
+					onPurchasePackage: a => e(Object(C.f)({
 						packageId: a.mobileId
 					})),
 					requestPurchaseCatalog: () => e(Object(x.a)())
@@ -838,12 +838,12 @@
 						ref: this.perksSection
 					}, l.a.createElement("h2", {
 						className: N.a.detailTitle
-					}, n.fbt._("Here’s what you can buy with Coins", null, {
-						hk: "Z8zeg"
+					}, n.fbt._("Here’s what you can buy with coins", null, {
+						hk: "4kIMr0"
 					})), l.a.createElement("p", {
 						className: N.a.detailDesription
-					}, n.fbt._("Spend your Coins on these Awards reserved exclusively for the finest Reddit contributors. Awarding a post or comment highlights it for all to see, and some Awards also grant the honoree special bonuses.", null, {
-						hk: "3x0HDR"
+					}, n.fbt._("Spend your coins on these Awards reserved exclusively for the finest Reddit contributors. Awarding a post or comment highlights it for all to see, and some Awards also grant the honoree special bonuses.", null, {
+						hk: "3eScNB"
 					})), l.a.createElement("div", {
 						className: N.a.gridContainer
 					}, l.a.createElement(H.a, {
@@ -854,12 +854,12 @@
 						title: n.fbt._("Silver Award", null, {
 							hk: "2h79np"
 						})
-					}, Object(C.a)(n.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [n.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(v.a)(n.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [n.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "zbXx9"
 					}), {
 						":coin_price:": l.a.createElement("span", {
 							className: N.a.nowrap
-						}, l.a.createElement(Z.a, null), v.o.coinPrice)
+						}, l.a.createElement(Z.a, null), _.o.coinPrice)
 					})), l.a.createElement(H.a, {
 						className: N.a.gridItem,
 						icon: l.a.createElement("img", {
@@ -868,15 +868,15 @@
 						title: n.fbt._("Gold Award", null, {
 							hk: "1oYdz0"
 						})
-					}, Object(C.a)(n.fbt._("Gives the recipient a week of Reddit Premium (including {Coin benefit placeholder} Coins) and shows a Gold Award on the post or comment. You’ll need {Coin price placeholder} Coins.", [n.fbt._param("Coin benefit placeholder", ":coin_benefit:"), n.fbt._param("Coin price placeholder", ":coin_price:")], {
-						hk: "2k3wSN"
+					}, Object(v.a)(n.fbt._("Gives the recipient a week of Reddit Premium (including {Coin benefit placeholder} coins) and shows a Gold Award on the post or comment. You’ll need {Coin price placeholder} coins.", [n.fbt._param("Coin benefit placeholder", ":coin_benefit:"), n.fbt._param("Coin price placeholder", ":coin_price:")], {
+						hk: "1cYDf2"
 					}), {
 						":coin_benefit:": l.a.createElement("span", {
 							className: N.a.nowrap
 						}, l.a.createElement(Z.a, null), "100"),
 						":coin_price:": l.a.createElement("span", {
 							className: N.a.nowrap
-						}, l.a.createElement(Z.a, null), v.m.coinPrice)
+						}, l.a.createElement(Z.a, null), _.m.coinPrice)
 					})), l.a.createElement(H.a, {
 						className: N.a.gridItem,
 						icon: l.a.createElement("img", {
@@ -885,15 +885,15 @@
 						title: n.fbt._("Platinum Award", null, {
 							hk: "3nCEqM"
 						})
-					}, Object(C.a)(n.fbt._("Gives the recipient a month of Reddit Premium, which includes {Coin benefit placeholder} Coins for that month, and shows a Platinum Award on the post or comment. You’ll need {Coin price placeholder} Coins.", [n.fbt._param("Coin benefit placeholder", ":coin_benefit:"), n.fbt._param("Coin price placeholder", ":coin_price:")], {
-						hk: "VZgLt"
+					}, Object(v.a)(n.fbt._("Gives the recipient a month of Reddit Premium, which includes {Coin benefit placeholder} coins for that month, and shows a Platinum Award on the post or comment. You’ll need {Coin price placeholder} coins.", [n.fbt._param("Coin benefit placeholder", ":coin_benefit:"), n.fbt._param("Coin price placeholder", ":coin_price:")], {
+						hk: "mHe8a"
 					}), {
 						":coin_benefit:": l.a.createElement("span", {
 							className: N.a.nowrap
 						}, l.a.createElement(Z.a, null), "700"),
 						":coin_price:": l.a.createElement("span", {
 							className: N.a.nowrap
-						}, l.a.createElement(Z.a, null), v.n.coinPrice)
+						}, l.a.createElement(Z.a, null), _.n.coinPrice)
 					}))))
 				}
 				renderPurchase() {
@@ -921,7 +921,7 @@
 						isLargeView: 0 === e,
 						isLoading: !0,
 						key: e
-					})) : e.map(e => l.a.createElement(B, {
+					})) : e.map(e => l.a.createElement(V, {
 						className: N.a.purchasePackage,
 						coinPackage: e,
 						isLargeView: e.featured,
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.a85cd0d4578620143cb0.js.map
+//# sourceMappingURL=Coins.2261aa7310bf7366e488.js.map

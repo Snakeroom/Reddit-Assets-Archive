@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.541fe6b4b42a6fd904dc.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.7a6ae3741beebb0cffe5.js
+// Retrieved at 6/10/2020, 7:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -206,35 +206,37 @@
 				y = s("./src/reddit/models/Gold/Award.ts"),
 				j = s("./src/reddit/selectors/activeModalId.ts"),
 				T = s("./src/reddit/selectors/user.ts"),
-				C = s("./node_modules/lodash/debounce.js"),
-				S = s.n(C),
-				_ = s("./src/lib/classNames/index.ts"),
-				I = s("./src/lib/fastdom/index.ts"),
-				P = s("./src/reddit/icons/fonts/Gift/index.tsx"),
-				N = s("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
-				M = s.n(N);
-			var k = r.a.memo(e => r.a.createElement("button", {
-					className: M.a.addAwardPill,
+				C = s("./src/reddit/selectors/userPrefs.ts"),
+				S = s("./node_modules/lodash/debounce.js"),
+				_ = s.n(S),
+				I = s("./src/lib/classNames/index.ts"),
+				P = s("./src/lib/fastdom/index.ts"),
+				N = s("./src/reddit/icons/fonts/Gift/index.tsx"),
+				M = s("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
+				k = s.n(M);
+			var L = r.a.memo(e => r.a.createElement("button", {
+					className: k.a.addAwardPill,
 					name: o.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
 					onClick: e.onAddAward
-				}, r.a.createElement(P.a, {
-					className: M.a.giftIcon
+				}, r.a.createElement(N.a, {
+					className: k.a.giftIcon
 				}))),
-				L = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				B = s("./src/higherOrderComponents/makeAsync.tsx"),
-				H = s("./src/lib/loadWithRetries/index.ts");
-			var R = Object(B.a)({
-					getComponent: () => Object(H.a)(() => s.e("AwardTooltip").then(s.bind(null, "./src/reddit/components/AwardTooltip/index.tsx"))).then(e => e.default),
+				B = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				H = s("./src/reddit/helpers/awards/getIconForSize.ts"),
+				R = s("./src/higherOrderComponents/makeAsync.tsx"),
+				U = s("./src/lib/loadWithRetries/index.ts");
+			var D = Object(R.a)({
+					getComponent: () => Object(U.a)(() => s.e("AwardTooltip").then(s.bind(null, "./src/reddit/components/AwardTooltip/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				U = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				D = s.n(U);
-			const F = 3500,
-				q = 500;
-			class Q extends r.a.PureComponent {
+				F = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
+				q = s.n(F);
+			const Q = 3500,
+				W = 500;
+			class G extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = r.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -250,7 +252,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, F)))
+						}, Q)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -266,7 +268,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, q)
+						}, W)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -299,48 +301,49 @@
 						award: e,
 						count: t,
 						post: s,
-						tooltipId: o
+						prefersReducedMotion: o,
+						tooltipId: n
 					} = this.props, {
-						userGiven: n,
-						shouldAnimate: a
-					} = this.state, i = e.icon32 ? e.icon32.url : e.icon.url, d = e.icon128 ? e.icon128.url : e.icon.url, c = Object(L.a)(e.id, s.id);
+						userGiven: a,
+						shouldAnimate: i
+					} = this.state, d = Object(H.a)(e, 32, o), c = Object(H.a)(e, 128, o), l = Object(B.a)(e.id, s.id);
 					return r.a.createElement("button", {
-						className: Object(_.a)(D.a.awardPill, {
-							[D.a.userGiven]: n
+						className: Object(I.a)(q.a.awardPill, {
+							[q.a.userGiven]: a
 						}),
-						id: o,
+						id: n,
 						onClick: this.handleOnClick,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, r.a.createElement("span", {
-						className: D.a.imageContainer
+						className: q.a.imageContainer
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(_.a)(D.a.awardIcon, {
-							[D.a.hidden]: a
+						className: Object(I.a)(q.a.awardIcon, {
+							[q.a.hidden]: i
 						}),
-						id: c,
+						id: l,
 						ref: this.imageRef,
-						src: i
-					}), a && r.a.createElement("img", {
-						alt: e.name,
-						className: D.a.animationIcon,
 						src: d
+					}), i && r.a.createElement("img", {
+						alt: e.name,
+						className: q.a.animationIcon,
+						src: c
 					})), r.a.createElement("span", {
-						className: D.a.count
-					}, t.toLocaleString()), r.a.createElement(R, {
+						className: q.a.count
+					}, t.toLocaleString()), r.a.createElement(D, {
 						award: e,
 						onHideAward: this.handleHideAward,
 						postOrComment: s,
-						tooltipId: o
+						tooltipId: n
 					}))
 				}
 			}
-			var W = Q,
-				G = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				V = s("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
-				z = s.n(V);
-			var J = r.a.memo(e => {
+			var V = G,
+				z = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				J = s("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
+				Z = s.n(J);
+			var K = r.a.memo(e => {
 				const {
 					className: t,
 					direction: s,
@@ -351,36 +354,36 @@
 					hk: "3xdEc5"
 				});
 				return r.a.createElement("div", {
-					className: Object(_.a)(z.a.buttonContainer, {
-						[z.a.right]: a
+					className: Object(I.a)(Z.a.buttonContainer, {
+						[Z.a.right]: a
 					}, t)
 				}, r.a.createElement("button", {
-					className: z.a.scrollButton,
+					className: Z.a.scrollButton,
 					name: a ? d : i,
 					onClick: n
-				}, r.a.createElement(G.a, {
-					className: z.a.chevronIcon
+				}, r.a.createElement(z.a, {
+					className: Z.a.chevronIcon
 				})))
 			});
-			const K = (e, t) => {
+			const Y = (e, t) => {
 				const s = Object(v.a)(e) ? "Post" : "Comment";
 				let o = "".concat(s, "AwardBadges--").concat(e);
 				return t && (o = "".concat(o, "--").concat(t)), o
 			};
-			var Z = s("./src/reddit/components/AwardBadges/AwardPlaqueBadges/index.m.less"),
-				Y = s.n(Z);
-			const X = 11,
-				$ = 100;
-			class ee extends r.a.Component {
+			var X = s("./src/reddit/components/AwardBadges/AwardPlaqueBadges/index.m.less"),
+				$ = s.n(X);
+			const ee = 11,
+				te = 100;
+			class se extends r.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = r.a.createRef(), this.handleResize = S()(() => {
+					super(e), this.plaqueRef = r.a.createRef(), this.handleResize = _()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
 							awards: e,
 							multiline: t
 						} = this.props;
-						if (e.length < X - 4) return;
+						if (e.length < ee - 4) return;
 						if (t) return;
 						const s = this.plaqueRef.current;
 						if (!s) return;
@@ -394,16 +397,16 @@
 						const e = this.plaqueRef.current;
 						if (!e) return;
 						const t = e.clientWidth,
-							s = e.scrollLeft - (t - $);
+							s = e.scrollLeft - (t - te);
 						this.scrollPlaqueTo(s)
 					}, this.handleScrollRight = () => {
 						const e = this.plaqueRef.current;
 						if (!e) return;
 						const t = e.clientWidth,
-							s = e.scrollLeft + (t - $);
+							s = e.scrollLeft + (t - te);
 						this.scrollPlaqueTo(s)
 					}, this.handleTriggerAnimation = e => {
-						this.props.triggerOverlayAnimation(), I.a.read(() => {
+						this.props.triggerOverlayAnimation(), P.a.read(() => {
 							const t = this.plaqueRef.current;
 							if (!t) return;
 							const s = document.getElementById(e);
@@ -411,12 +414,12 @@
 							const o = t.getBoundingClientRect(),
 								n = s.getBoundingClientRect();
 							if (n.left < o.left || n.right > o.right) {
-								const e = n.left + (t.scrollLeft - o.left) - $;
+								const e = n.left + (t.scrollLeft - o.left) - te;
 								this.scrollPlaqueTo(e)
 							}
 						})
 					};
-					const t = e.awards.length > X;
+					const t = e.awards.length > ee;
 					this.state = {
 						canScrollLeft: !1,
 						canScrollRight: t && !e.multiline
@@ -477,21 +480,21 @@
 					} = this.props, {
 						canScrollLeft: m,
 						canScrollRight: u
-					} = this.state, p = e.length > 0, h = K(o.id, l);
+					} = this.state, p = e.length > 0, h = Y(o.id, l);
 					return r.a.createElement("div", {
-						className: Object(_.a)(Y.a.awardBadges, {
-							[Y.a.noAwards]: !p,
-							[Y.a.multiline]: s
+						className: Object(I.a)($.a.awardBadges, {
+							[$.a.noAwards]: !p,
+							[$.a.multiline]: s
 						}),
 						ref: this.plaqueRef
-					}, m && r.a.createElement(J, {
+					}, m && r.a.createElement(K, {
 						direction: "left",
 						onClick: this.handleScrollLeft
 					}), e.map(e => {
 						const {
 							awardCountsById: t = {}
 						} = o, s = t[e.id];
-						return r.a.createElement(W, {
+						return r.a.createElement(V, {
 							award: e,
 							count: s,
 							key: e.id,
@@ -504,23 +507,23 @@
 							tooltipId: "".concat(h, "-").concat(e.id),
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
-					}), !t && r.a.createElement(k, {
+					}), !t && r.a.createElement(L, {
 						onAddAward: a
 					}), !s && r.a.createElement("div", {
-						className: Y.a.spacer
-					}), u && r.a.createElement(J, {
+						className: $.a.spacer
+					}), u && r.a.createElement(K, {
 						direction: "right",
 						onClick: this.handleScrollRight
 					}))
 				}
 			}
-			var te = ee,
-				se = s("./src/reddit/components/AwardBadges/ClassicAwardItem/index.m.less"),
-				oe = s.n(se);
+			var oe = se,
+				ne = s("./src/reddit/components/AwardBadges/ClassicAwardItem/index.m.less"),
+				re = s.n(ne);
 			const {
-				fbt: ne
+				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			class re extends r.a.PureComponent {
+			class ie extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = r.a.createRef(), this.handleAwardAddedEvent = () => {
 						this.setState({
@@ -551,7 +554,7 @@
 						award: e,
 						count: t
 					} = this.props;
-					return r.a.createElement(r.a.Fragment, null, t > 1 && " • ", ne._("{award-name} Award", [ne._param("award-name", e.name)], {
+					return r.a.createElement(r.a.Fragment, null, t > 1 && " • ", ae._("{award-name} Award", [ae._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					}))
 				}
@@ -564,48 +567,49 @@
 						onHideAward: n,
 						onHideTooltip: a,
 						postOrComment: i,
-						tooltipId: d,
-						tooltipLocation: c
+						prefersReducedMotion: d,
+						tooltipId: c,
+						tooltipLocation: l
 					} = this.props;
 					if (s <= 0) return null;
-					const l = e.icon32 ? e.icon32.url : e.icon.url,
-						m = e.awardType === y.f.Moderator,
-						u = Object(L.a)(e.id, i.id),
-						p = "container" === c;
+					const m = Object(H.a)(e, 32, d),
+						u = e.awardType === y.f.Moderator,
+						p = Object(B.a)(e.id, i.id),
+						h = "container" === l;
 					return r.a.createElement("span", {
-						className: Object(_.a)(oe.a.awardItem, t),
-						id: p ? d : "",
+						className: Object(I.a)(re.a.awardItem, t),
+						id: h ? c : "",
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: a
 					}, r.a.createElement("span", {
-						id: p ? "" : d
+						id: h ? "" : c
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(_.a)(oe.a.awardIcon, {
-							[oe.a.animate]: this.state.animate
+						className: Object(I.a)(re.a.awardIcon, {
+							[re.a.animate]: this.state.animate
 						}, o),
-						id: u,
+						id: p,
 						ref: this.imageRef,
-						src: l
-					})), r.a.createElement("span", null, s > 1 && s, m && this.renderModAwardName()), r.a.createElement(R, {
+						src: m
+					})), r.a.createElement("span", null, s > 1 && s, u && this.renderModAwardName()), r.a.createElement(D, {
 						award: e,
 						onHideAward: () => n(e),
 						postOrComment: i,
-						tooltipId: d
+						tooltipId: c
 					}))
 				}
 			}
-			var ae = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				ie = s("./src/reddit/icons/fonts/helpers.tsx");
-			var de = e => r.a.createElement("i", {
-				className: Object(_.a)(Object(ie.b)("addGild"), e.className)
+			var de = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				ce = s("./src/reddit/icons/fonts/helpers.tsx");
+			var le = e => r.a.createElement("i", {
+				className: Object(I.a)(Object(ce.b)("addGild"), e.className)
 			});
-			var ce = e => r.a.createElement("i", {
-					className: Object(_.a)(Object(ie.b)("addGildDashed"), e.className)
+			var me = e => r.a.createElement("i", {
+					className: Object(I.a)(Object(ce.b)("addGildDashed"), e.className)
 				}),
-				le = s("./src/reddit/components/AwardBadges/ClassicAwardBadges/index.m.less"),
-				me = s.n(le);
-			class ue extends r.a.PureComponent {
+				ue = s("./src/reddit/components/AwardBadges/ClassicAwardBadges/index.m.less"),
+				pe = s.n(ue);
+			class he extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						isHovered: !1
@@ -623,21 +627,21 @@
 					const {
 						className: e,
 						onClick: t
-					} = this.props, s = this.state.isHovered ? de : ce;
+					} = this.props, s = this.state.isHovered ? le : me;
 					return r.a.createElement("button", {
-						className: Object(_.a)(e, me.a.badgeButton, me.a.visibilityEffect),
+						className: Object(I.a)(e, pe.a.badgeButton, pe.a.visibilityEffect),
 						onClick: t,
 						onBlur: this.handleMouseLeave,
 						onFocus: this.handleMouseEnter,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, r.a.createElement(s, {
-						className: me.a.icon
+						className: pe.a.icon
 					}))
 				}
 			}
-			var pe = ue;
-			var he = e => {
+			var be = he;
+			var fe = e => {
 				const {
 					awards: t,
 					hideBadgeButton: s,
@@ -646,53 +650,56 @@
 					onHideTooltip: i,
 					onShowAllAwards: d,
 					onShowTooltip: c,
-					showAllAwards: l,
-					tooltipType: m,
-					thing: u
-				} = e, p = K(u.id, m), h = "".concat(p, "-view-all");
-				let b = [];
-				b = l ? t : t.length > 5 ? t.slice(0, 4) : t;
-				const f = !s && u.isGildable && t.length > 0,
-					g = t.length > b.length ? t.slice(b.length).reduce((e, t) => e + (u.awardCountsById && u.awardCountsById[t.id] || 0), 0) : 0,
-					x = o.fbt._("& {hidden award count} More", [o.fbt._param("hidden award count", g.toLocaleString())], {
+					prefersReducedMotion: l,
+					showAllAwards: m,
+					tooltipType: u,
+					thing: p
+				} = e, h = Y(p.id, u), b = "".concat(h, "-view-all");
+				let f = [];
+				f = m ? t : t.length > 5 ? t.slice(0, 4) : t;
+				const g = !s && p.isGildable && t.length > 0,
+					x = t.length > f.length ? t.slice(f.length).reduce((e, t) => e + (p.awardCountsById && p.awardCountsById[t.id] || 0), 0) : 0,
+					w = o.fbt._("& {hidden award count} More", [o.fbt._param("hidden award count", x.toLocaleString())], {
 						hk: "1OnmAi"
 					});
 				return r.a.createElement("div", {
-					className: me.a.awardBadges
-				}, b.map(e => {
-					const t = u.awardCountsById ? u.awardCountsById[e.id] : 0;
-					return r.a.createElement(re, {
+					className: pe.a.awardBadges
+				}, f.map(e => {
+					const t = p.awardCountsById ? p.awardCountsById[e.id] : 0;
+					return r.a.createElement(ie, {
 						award: e,
 						count: t,
 						key: e.id,
 						onHideAward: a,
 						onHideTooltip: i,
 						onShowTooltip: c,
-						postOrComment: u,
-						tooltipId: "".concat(p, "-").concat(e.id),
+						postOrComment: p,
+						prefersReducedMotion: l,
+						tooltipId: "".concat(h, "-").concat(e.id),
 						tooltipLocation: "icon"
 					})
-				}), g > 0 && r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
+				}), x > 0 && r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
 					"data-click-id": "awards",
-					id: h,
-					className: me.a.showAllButton,
+					id: b,
+					className: pe.a.showAllButton,
 					onClick: d,
-					onMouseEnter: () => c(h),
+					onMouseEnter: () => c(b),
 					onMouseLeave: i
-				}, x), r.a.createElement(ae.c, {
-					tooltipId: h,
+				}, w), r.a.createElement(de.c, {
+					tooltipId: b,
 					text: "View all Awards"
-				})), f && r.a.createElement(pe, {
+				})), g && r.a.createElement(be, {
 					onClick: n
 				}))
 			};
-			const be = Object(i.c)({
+			const ge = Object(i.c)({
 					allAwards: e => e.awards.models,
 					currentUser: T.i,
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(j.a)(e),
-					isLoggedIn: T.H
+					isLoggedIn: T.H,
+					prefersReducedAnimations: C.c
 				}),
-				fe = Object(a.b)(be, (e, t) => {
+				xe = Object(a.b)(ge, (e, t) => {
 					let {
 						isOverlay: s,
 						thing: o
@@ -718,7 +725,7 @@
 						triggerOverlayAnimation: () => e(Object(d.b)())
 					}
 				});
-			class ge extends r.a.Component {
+			class we extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async e => {
 						const {
@@ -796,46 +803,48 @@
 						onHideTooltip: l,
 						onShowTooltip: m,
 						onToggleHideAwardModal: u,
-						thing: p,
-						triggerOverlayAnimation: h
+						prefersReducedAnimations: p,
+						thing: h,
+						triggerOverlayAnimation: b
 					} = this.props, {
-						showAllAwards: b
-					} = this.state, f = "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, g = Object(y.p)(Object.keys(p.awardCountsById || {}).map(t => e[t]).filter(Boolean)), x = d ? O.c.Lightbox : void 0, w = s && s.id === p.authorId;
-					return r.a.createElement(r.a.Fragment, null, t ? r.a.createElement(te, {
-						awards: g,
-						hideAddAwardButton: !1 === p.isGildable || !0 === w,
+						showAllAwards: f
+					} = this.state, g = p || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, x = Object(y.p)(Object.keys(h.awardCountsById || {}).map(t => e[t]).filter(Boolean)), w = d ? O.c.Lightbox : void 0, E = s && s.id === h.authorId;
+					return r.a.createElement(r.a.Fragment, null, t ? r.a.createElement(oe, {
+						awards: x,
+						hideAddAwardButton: !1 === h.isGildable || !0 === E,
 						multiline: !!c,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
 						onHideTooltip: this.handleHideTooltip,
 						onShowTooltip: this.handleShowTooltip,
-						post: p,
-						prefersReducedMotion: f,
-						tooltipType: x,
-						triggerOverlayAnimation: h
-					}) : r.a.createElement(he, {
-						awards: g,
+						post: h,
+						prefersReducedMotion: g,
+						tooltipType: w,
+						triggerOverlayAnimation: b
+					}) : r.a.createElement(fe, {
+						awards: x,
 						hideBadgeButton: n || !i,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
 						onHideTooltip: l,
 						onShowAllAwards: this.handleShowAllAwards,
 						onShowTooltip: m,
-						showAllAwards: b || !!c,
-						thing: p,
-						tooltipType: x
+						prefersReducedMotion: g,
+						showAllAwards: f || !!c,
+						thing: h,
+						tooltipType: w
 					}), a && s && this.state.selectedAward && r.a.createElement(A.a, {
 						actionText: o.fbt._("Hide", null, {
 							hk: "4FKnfB"
 						}),
-						modalText: w ? Object(v.a)(p.id) ? o.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
+						modalText: E ? Object(v.a)(h.id) ? o.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "4a7Cbu"
 						}) : o.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
-						}) : Object(v.a)(p.id) ? o.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
+						}) : Object(v.a)(h.id) ? o.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "3LQVs7"
-						}) : o.fbt._("The award giver(s) and recipient will be notified that moderator u/{modName} has hidden the {awardName} award. Are you sure you want to hide this award from the comment?", [o.fbt._param("modName", s.displayText ? s.displayText : s.username || ""), o.fbt._param("awardName", this.state.selectedAward.name)], {
-							hk: "1aqKr5"
+						}) : o.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the comment?", [o.fbt._param("awardName", this.state.selectedAward.name)], {
+							hk: "qlfga"
 						}),
 						onConfirm: this.handleHideAwardConfirmed,
 						onCancel: this.handleHideAwardCanceled,
@@ -844,7 +853,7 @@
 					}))
 				}
 			}
-			t.a = fe(Object(E.c)(ge))
+			t.a = xe(Object(E.c)(we))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1529,7 +1538,7 @@
 			})), s.d(t, "a", (function() {
 				return V
 			})), s.d(t, "b", (function() {
-				return Z
+				return K
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -1595,7 +1604,7 @@
 				V = m.a.wrapped(N.b, "MetaSeparator", W.a),
 				z = m.a.span("text", W.a),
 				J = Object(q.t)(),
-				K = Object(r.b)(() => Object(a.c)({
+				Z = Object(r.b)(() => Object(a.c)({
 					authorFlair: D.a,
 					createdTooltipId: (e, t) => {
 						let {
@@ -1616,7 +1625,7 @@
 						tooltipId: t
 					}))
 				})),
-				Z = e => {
+				K = e => {
 					const t = !e.isDeleted && e.post.distinguishType === d.B.ADMIN;
 					return n.a.createElement(x.a, {
 						className: W.a.authorLink,
@@ -1671,7 +1680,7 @@
 						flair: b,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: D
-					})), Object(R.h)(h.author) ? n.a.createElement(Z, {
+					})), Object(R.h)(h.author) ? n.a.createElement(K, {
 						post: h,
 						isDeleted: !0,
 						renderContractorBadge: H,
@@ -1690,7 +1699,7 @@
 						ignore: Object(R.h)(h.author) || !!h.distinguishType && h.distinguishType !== d.B.NONE,
 						subredditId: h.belongsTo.id,
 						userId: h.authorId
-					}, n.a.createElement(Z, {
+					}, n.a.createElement(K, {
 						post: h,
 						renderContractorBadge: H,
 						style: {
@@ -1741,7 +1750,7 @@
 					})))
 				}
 			}
-			t.d = J(Object(P.b)(Object(c.a)(K(Y))))
+			t.d = J(Object(P.b)(Object(c.a)(Z(Y))))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2150,4 +2159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.541fe6b4b42a6fd904dc.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.7a6ae3741beebb0cffe5.js.map

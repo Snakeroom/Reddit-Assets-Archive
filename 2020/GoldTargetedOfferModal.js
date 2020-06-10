@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.ccfa36fc088503bae92a.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.1acb3041493a295dc763.js
+// Retrieved at 6/10/2020, 7:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/components/Gold/TargetedOfferModal/index.m.less": function(e, t, n) {
@@ -66,19 +66,19 @@
 					dealInfo: _,
 					pennies: y,
 					mobileId: k
-				} = m, O = g !== p, P = "".concat(Math.round(100 * (g / p - 1)), "%"), j = b - y, C = y !== b, {
-					title: I,
-					subtitle: w,
+				} = m, O = g - p, P = O > 0, j = b - y, I = y !== b, {
+					title: w,
+					subtitle: C,
 					type: M
-				} = _, v = I || ("low_coin_upsell" === M ? a.fbt._("You’re low on Coins", null, {
-					hk: "2rWB40"
+				} = _, v = w || ("low_coin_upsell" === M ? a.fbt._("You’re low on coins", null, {
+					hk: "2fHrPn"
 				}) : a.fbt._("Special Offer!", null, {
 					hk: "2wnTrq"
-				})), T = w || a.fbt._("Stock up and save with this limited-time offer", null, {
+				})), x = C || a.fbt._("Stock up and save with this limited-time offer", null, {
 					hk: "2eml5T"
-				}), x = O ? a.fbt._("Buy {coin amount} for {price} and get {bonus coins percentage} bonus Coins", [a.fbt._param("coin amount", p.toLocaleString()), a.fbt._param("price", "$".concat(m.pennies / 100)), a.fbt._param("bonus coins percentage", P)], {
-					hk: "2KNC96"
-				}) : C ? a.fbt._("Save {baseline price} off normal price!", [a.fbt._param("baseline price", "$".concat(j / 100))], {
+				}), T = P ? a.fbt._("Buy {coin amount} for {price} and get {bonus coins} bonus coins", [a.fbt._param("coin amount", p.toLocaleString()), a.fbt._param("price", "$".concat(m.pennies / 100)), a.fbt._param("bonus coins", O.toLocaleString())], {
+					hk: "2ZBhdF"
+				}) : I ? a.fbt._("Save {baseline price} off normal price!", [a.fbt._param("baseline price", "$".concat(j / 100))], {
 					hk: "CRTYf"
 				}) : m.description;
 				return s.a.createElement(f.d, {
@@ -95,11 +95,11 @@
 					className: h.a.dealTitle
 				}, v), s.a.createElement("p", {
 					className: h.a.dealDescription
-				}, T), s.a.createElement("h4", {
+				}, x), s.a.createElement("h4", {
 					className: h.a.deal
-				}, x), s.a.createElement("p", {
+				}, T), s.a.createElement("p", {
 					className: h.a.agreementLink
-				}, a.fbt._("By purchasing Coins, you agree to our {user agreement} and {privacy plicy}", [a.fbt._param("user agreement", s.a.createElement("a", {
+				}, a.fbt._("By purchasing coins, you agree to our {user agreement} and {privacy plicy}", [a.fbt._param("user agreement", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
 					target: "_blank",
 					rel: "noopener noreferrer"
@@ -112,7 +112,7 @@
 				}, a.fbt._("Privacy Policy", null, {
 					hk: "11oBec"
 				})))], {
-					hk: "3RTwKy"
+					hk: "1yjkQh"
 				})), s.a.createElement(f.q, {
 					className: h.a.button,
 					"data-redditstyle": !0,
@@ -165,7 +165,7 @@
 					k && (O = "low_coin_balance"), "new_purchaser" === y && (O = "new_user_targeted_offer"), "repeat_purchaser" === y && (O = "repeat_user_targeted_offer");
 					const P = h ? Math.round(1e4 * (h.baselinePennies - h.pennies) / h.baselinePennies) / 100 : 0,
 						j = h ? Math.round(1e4 * (h.coins - h.baselineCoins) / h.coins) / 100 : 0,
-						C = h ? h.baselinePennies !== h.pennies ? "".concat(P, "_percent_price") : h.baselineCoins !== h.coins ? "".concat(j, "_percent_bonus") : void 0 : void 0;
+						I = h ? h.baselinePennies !== h.pennies ? "".concat(P, "_percent_price") : h.baselineCoins !== h.coins ? "".concat(j, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, i.defaults(e), {
 						comment: n ? i.comment(e, n) : null,
 						correlationId: Object(m.c)(m.a.GoldPayment),
@@ -182,7 +182,7 @@
 							contentType: f,
 							numberCoins: h ? h.coins : void 0,
 							offerContext: O,
-							offerType: k ? h ? "".concat(h.bonusPct, "_percent_bonus") : void 0 : C
+							offerType: k ? h ? "".concat(h.bonusPct, "_percent_bonus") : void 0 : I
 						}),
 						payment: {
 							currency: "USD",
@@ -272,4 +272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GoldTargetedOfferModal.ccfa36fc088503bae92a.js.map
+//# sourceMappingURL=GoldTargetedOfferModal.1acb3041493a295dc763.js.map
