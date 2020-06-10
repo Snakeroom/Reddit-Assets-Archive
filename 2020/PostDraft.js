@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.1bd9ed749a0445a195bd.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.ed4ab5a0ed946a82d7cb.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -251,6 +251,11 @@
 					return !i(e, t, n)
 				}, n._detect = t, n.detect = t, n
 			}, e.exports ? e.exports = s() : n("./node_modules/webpack/buildin/amd-define.js")("bowser", s)
+		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, n) {
+				return e == e && (void 0 !== n && (e = e <= n ? e : n), void 0 !== t && (e = e >= t ? e : t)), e
+			}
 		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
 			e.exports = function(e, t, n, s, o) {
@@ -2070,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.1bd9ed749a0445a195bd.js.map
+//# sourceMappingURL=PostDraft.ed4ab5a0ed946a82d7cb.js.map

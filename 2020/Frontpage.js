@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5db41e67ea4f69c3441b.js
-// Retrieved at 6/10/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b6390484b51933c36100.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -217,6 +217,13 @@
 					return t && 11 == t.nodeType && t.host ? t.host : t
 				}
 			}(window, document)
+		},
+		"./node_modules/lodash/_baseRandom.js": function(e, t) {
+			var s = Math.floor,
+				n = Math.random;
+			e.exports = function(e, t) {
+				return e + s(n() * (t - e + 1))
+			}
 		},
 		"./node_modules/lodash/random.js": function(e, t, s) {
 			var n = s("./node_modules/lodash/_baseRandom.js"),
@@ -1312,11 +1319,6 @@
 					playback: d(s, e, t)
 				}, a(s, e))
 		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, s) {
-			"use strict";
-			var n = s("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = n.b
-		},
 		"./src/reddit/pages/Frontpage/index.m.less": function(e, t, s) {
 			e.exports = {
 				duHeader: "_1fauFKjg428h9E1m4B2Vr-",
@@ -1916,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.5db41e67ea4f69c3441b.js.map
+//# sourceMappingURL=Frontpage.b6390484b51933c36100.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.de076e05679bb4407935.js
-// Retrieved at 6/10/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c524341d456d88e9ec4d.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -252,6 +252,11 @@
 				}, s._detect = t, s.detect = t, s
 			}, e.exports ? e.exports = r() : s("./node_modules/webpack/buildin/amd-define.js")("bowser", r)
 		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, s) {
+				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== t && (e = e >= t ? e : t)), e
+			}
+		},
 		"./node_modules/lodash/clamp.js": function(e, t, s) {
 			var r = s("./node_modules/lodash/_baseClamp.js"),
 				a = s("./node_modules/lodash/toNumber.js");
@@ -279,16 +284,16 @@
 			const u = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Ab
+					experimentName: d.Cb
 				});
 				return Object(d.wc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Bb
+					experimentName: d.Db
 				});
 				return Object(d.wc)(t) ? void 0 : t
-			}, (e, t) => e === d.Cb.Enabled && t === d.Cb.Enabled);
+			}, (e, t) => e === d.Eb.Enabled && t === d.Eb.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -336,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "16c76bc-production"
+					SENTRY_RELEASE_VERSION: "89f44fa-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -4353,4 +4358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.de076e05679bb4407935.js.map
+//# sourceMappingURL=PublicAccessNetwork.c524341d456d88e9ec4d.js.map

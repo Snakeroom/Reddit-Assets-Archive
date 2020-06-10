@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9e5eacfe2c95146daf72.js
-// Retrieved at 6/8/2020, 2:20:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.784ab4ec0a3e29726c86.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -251,6 +251,11 @@
 					return !i(e, t, a)
 				}, a._detect = t, a.detect = t, a
 			}, e.exports ? e.exports = s() : a("./node_modules/webpack/buildin/amd-define.js")("bowser", s)
+		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, a) {
+				return e == e && (void 0 !== a && (e = e <= a ? e : a), void 0 !== t && (e = e >= t ? e : t)), e
+			}
 		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
 			e.exports = function(e, t, a, s, n) {
@@ -2399,4 +2404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.9e5eacfe2c95146daf72.js.map
+//# sourceMappingURL=FramedGild~GildModal.784ab4ec0a3e29726c86.js.map

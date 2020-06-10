@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.f7627da933b736db87d4.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.b7357197db848ee0e44e.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~SubredditWiki", "vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -152,31 +152,31 @@
 						m = (/SamsungBrowser/i.test(t), !f && /windows/i.test(t)),
 						v = !r && !l && /macintosh/i.test(t),
 						g = !s && !c && !h && !p && /linux/i.test(t),
-						y = n(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
-						b = o(/version\/(\d+(\.\d+)?)/i),
+						b = n(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
+						y = o(/version\/(\d+(\.\d+)?)/i),
 						_ = /tablet/i.test(t) && !/tablet pc/i.test(t),
 						w = !_ && /[^-]mobi/i.test(t),
 						x = /xbox/i.test(t);
 					/opera/i.test(t) ? i = {
 						name: "Opera",
 						opera: e,
-						version: b || o(/(?:opera|opr|opios)[\s\/](\d+(\.\d+)?)/i)
+						version: y || o(/(?:opera|opr|opios)[\s\/](\d+(\.\d+)?)/i)
 					} : /opr\/|opios/i.test(t) ? i = {
 						name: "Opera",
 						opera: e,
-						version: o(/(?:opr|opios)[\s\/](\d+(\.\d+)?)/i) || b
+						version: o(/(?:opr|opios)[\s\/](\d+(\.\d+)?)/i) || y
 					} : /SamsungBrowser/i.test(t) ? i = {
 						name: "Samsung Internet for Android",
 						samsungBrowser: e,
-						version: b || o(/(?:SamsungBrowser)[\s\/](\d+(\.\d+)?)/i)
+						version: y || o(/(?:SamsungBrowser)[\s\/](\d+(\.\d+)?)/i)
 					} : /coast/i.test(t) ? i = {
 						name: "Opera Coast",
 						coast: e,
-						version: b || o(/(?:coast)[\s\/](\d+(\.\d+)?)/i)
+						version: y || o(/(?:coast)[\s\/](\d+(\.\d+)?)/i)
 					} : /yabrowser/i.test(t) ? i = {
 						name: "Yandex Browser",
 						yandexbrowser: e,
-						version: b || o(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)
+						version: y || o(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)
 					} : /ucbrowser/i.test(t) ? i = {
 						name: "UC Browser",
 						ucbrowser: e,
@@ -205,7 +205,7 @@
 						name: "Windows Phone",
 						osname: "Windows Phone",
 						windowsphone: e
-					}, y ? (i.msedge = e, i.version = y) : (i.msie = e, i.version = o(/iemobile\/(\d+(\.\d+)?)/i))) : /msie|trident/i.test(t) ? i = {
+					}, b ? (i.msedge = e, i.version = b) : (i.msie = e, i.version = o(/iemobile\/(\d+(\.\d+)?)/i))) : /msie|trident/i.test(t) ? i = {
 						name: "Internet Explorer",
 						msie: e,
 						version: o(/(?:msie |rv:)(\d+(\.\d+)?)/i)
@@ -219,11 +219,11 @@
 					} : /edg([ea]|ios)/i.test(t) ? i = {
 						name: "Microsoft Edge",
 						msedge: e,
-						version: y
+						version: b
 					} : /vivaldi/i.test(t) ? i = {
 						name: "Vivaldi",
 						vivaldi: e,
-						version: o(/vivaldi\/(\d+(\.\d+)?)/i) || b
+						version: o(/vivaldi\/(\d+(\.\d+)?)/i) || y
 					} : c ? i = {
 						name: "Sailfish",
 						osname: "Sailfish OS",
@@ -253,12 +253,12 @@
 						name: "BlackBerry",
 						osname: "BlackBerry OS",
 						blackberry: e,
-						version: b || o(/blackberry[\d]+\/(\d+(\.\d+)?)/i)
+						version: y || o(/blackberry[\d]+\/(\d+(\.\d+)?)/i)
 					} : p ? (i = {
 						name: "WebOS",
 						osname: "WebOS",
 						webos: e,
-						version: b || o(/w(?:eb)?osbrowser\/(\d+(\.\d+)?)/i)
+						version: y || o(/w(?:eb)?osbrowser\/(\d+(\.\d+)?)/i)
 					}, /touchpad\//i.test(t) && (i.touchpad = e)) : /bada/i.test(t) ? i = {
 						name: "Bada",
 						osname: "Bada",
@@ -268,35 +268,35 @@
 						name: "Tizen",
 						osname: "Tizen",
 						tizen: e,
-						version: o(/(?:tizen\s?)?browser\/(\d+(\.\d+)?)/i) || b
+						version: o(/(?:tizen\s?)?browser\/(\d+(\.\d+)?)/i) || y
 					} : /qupzilla/i.test(t) ? i = {
 						name: "QupZilla",
 						qupzilla: e,
-						version: o(/(?:qupzilla)[\s\/](\d+(?:\.\d+)+)/i) || b
+						version: o(/(?:qupzilla)[\s\/](\d+(?:\.\d+)+)/i) || y
 					} : /chromium/i.test(t) ? i = {
 						name: "Chromium",
 						chromium: e,
-						version: o(/(?:chromium)[\s\/](\d+(?:\.\d+)?)/i) || b
+						version: o(/(?:chromium)[\s\/](\d+(?:\.\d+)?)/i) || y
 					} : /chrome|crios|crmo/i.test(t) ? i = {
 						name: "Chrome",
 						chrome: e,
 						version: o(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)
 					} : s ? i = {
 						name: "Android",
-						version: b
+						version: y
 					} : /safari|applewebkit/i.test(t) ? (i = {
 						name: "Safari",
 						safari: e
-					}, b && (i.version = b)) : r ? (i = {
+					}, y && (i.version = y)) : r ? (i = {
 						name: "iphone" == r ? "iPhone" : "ipad" == r ? "iPad" : "iPod"
-					}, b && (i.version = b)) : i = /googlebot/i.test(t) ? {
+					}, y && (i.version = y)) : i = /googlebot/i.test(t) ? {
 						name: "Googlebot",
 						googlebot: e,
-						version: o(/googlebot\/(\d+(\.\d+))/i) || b
+						version: o(/googlebot\/(\d+(\.\d+))/i) || y
 					} : {
 						name: o(/^(.*)\/(.*) /),
 						version: n(/^(.*)\/(.*) /)
-					}, !i.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (i.name = i.name || "Blink", i.blink = e) : (i.name = i.name || "Webkit", i.webkit = e), !i.version && b && (i.version = b)) : !i.opera && /gecko\//i.test(t) && (i.name = i.name || "Gecko", i.gecko = e, i.version = i.version || o(/gecko\/(\d+(\.\d+)?)/i)), i.windowsphone || !s && !i.silk ? !i.windowsphone && r ? (i[r] = e, i.ios = e, i.osname = "iOS") : v ? (i.mac = e, i.osname = "macOS") : x ? (i.xbox = e, i.osname = "Xbox") : m ? (i.windows = e, i.osname = "Windows") : g && (i.linux = e, i.osname = "Linux") : (i.android = e, i.osname = "Android");
+					}, !i.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (i.name = i.name || "Blink", i.blink = e) : (i.name = i.name || "Webkit", i.webkit = e), !i.version && y && (i.version = y)) : !i.opera && /gecko\//i.test(t) && (i.name = i.name || "Gecko", i.gecko = e, i.version = i.version || o(/gecko\/(\d+(\.\d+)?)/i)), i.windowsphone || !s && !i.silk ? !i.windowsphone && r ? (i[r] = e, i.ios = e, i.osname = "iOS") : v ? (i.mac = e, i.osname = "macOS") : x ? (i.xbox = e, i.osname = "Xbox") : m ? (i.windows = e, i.osname = "Windows") : g && (i.linux = e, i.osname = "Linux") : (i.android = e, i.osname = "Android");
 					var E = "";
 					i.windows ? E = function(e) {
 						switch (e) {
@@ -464,9 +464,9 @@
 						if ("none" != e.getComputedStyle(o).display) {
 							for (var i, r, s, d, l, c, h, p, f = a(o), m = u(o), v = !1; !v;) {
 								var g = null,
-									y = 1 == m.nodeType ? e.getComputedStyle(m) : {};
-								if ("none" == y.display) return;
-								if (m == this.root || m == t ? (v = !0, g = n) : m != t.body && m != t.documentElement && "visible" != y.overflow && (g = a(m)), g && (i = g, r = f, s = void 0, d = void 0, l = void 0, c = void 0, h = void 0, p = void 0, s = Math.max(i.top, r.top), d = Math.min(i.bottom, r.bottom), l = Math.max(i.left, r.left), c = Math.min(i.right, r.right), p = d - s, !(f = (h = c - l) >= 0 && p >= 0 && {
+									b = 1 == m.nodeType ? e.getComputedStyle(m) : {};
+								if ("none" == b.display) return;
+								if (m == this.root || m == t ? (v = !0, g = n) : m != t.body && m != t.documentElement && "visible" != b.overflow && (g = a(m)), g && (i = g, r = f, s = void 0, d = void 0, l = void 0, c = void 0, h = void 0, p = void 0, s = Math.max(i.top, r.top), d = Math.min(i.bottom, r.bottom), l = Math.max(i.left, r.left), c = Math.min(i.right, r.right), p = d - s, !(f = (h = c - l) >= 0 && p >= 0 && {
 										top: s,
 										bottom: d,
 										left: l,
@@ -616,6 +616,18 @@
 					d.appendChild(s), o = s.offsetHeight, d.removeChild(s)
 				}
 				return o
+			}
+		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, o) {
+				return e == e && (void 0 !== o && (e = e <= o ? e : o), void 0 !== t && (e = e >= t ? e : t)), e
+			}
+		},
+		"./node_modules/lodash/_baseRandom.js": function(e, t) {
+			var o = Math.floor,
+				n = Math.random;
+			e.exports = function(e, t) {
+				return e + o(n() * (t - e + 1))
 			}
 		},
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -918,4 +930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~SubredditWiki.f7627da933b736db87d4.js.map
+//# sourceMappingURL=vendors~SubredditWiki.b7357197db848ee0e44e.js.map

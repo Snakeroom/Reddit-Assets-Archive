@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ModQueuePages.0f73702bf47f2335174f.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ModQueuePages.edfc23674a3e717f95bf.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ModQueuePages", "vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
@@ -468,6 +468,11 @@
 				}
 			}(window, document)
 		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, o) {
+				return e == e && (void 0 !== o && (e = e <= o ? e : o), void 0 !== t && (e = e >= t ? e : t)), e
+			}
+		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
 			e.exports = function(e, t, o, i, n) {
 				return n(e, (function(e, n, r) {
@@ -530,4 +535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~ModQueuePages.0f73702bf47f2335174f.js.map
+//# sourceMappingURL=vendors~ModQueuePages.edfc23674a3e717f95bf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.815ac04e871a13557be1.js
-// Retrieved at 6/10/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3b2288d2b9a0bb40df2b.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -8449,7 +8449,7 @@
 				}, (e, t, n, s, r) => !!r && !e && !n && s && !Object(ue.f)(t)),
 				Te = Object(he.a)((e, t) => Object(ye.c)(e, {
 					experimentEligibilitySelector: e => ve(e, t),
-					experimentName: J.Vb
+					experimentName: J.Xb
 				}), je.a);
 			var we, De = n("./src/reddit/selectors/frontpage.ts"),
 				Ce = n("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -8575,10 +8575,10 @@
 					if (!n || !r) return "";
 					const o = e.posts.models[t].title,
 						a = function(e) {
-							return Object(d.a)(e, J.hc, J.jc)
+							return Object(d.a)(e, J.jc, J.lc)
 						};
 					let i;
-					switch (o.length >= J.gc ? i = Object(ge.h)(e) : o.length <= J.ic && (i = Object(ge.m)(e)), i) {
+					switch (o.length >= J.ic ? i = Object(ge.h)(e) : o.length <= J.kc && (i = Object(ge.m)(e)), i) {
 						case J.tb.TruncTitleSubBrand:
 							return "".concat(a(o), " - ").concat(n.name, " - Reddit");
 						case J.tb.TruncTitleReddit:
@@ -11434,7 +11434,7 @@
 							user: _
 						} = a(),
 						h = n && n.match && n.match.queryParams,
-						y = h && h["experiment_".concat(u.Eb)];
+						y = h && h["experiment_".concat(u.Gb)];
 					Object(p.j)(a()), e.pathname.split("/").some(e => "comments" === e), Object(f.h)(a());
 					if (o(S({
 							action: t,
@@ -15054,7 +15054,7 @@
 			const E = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				I = Object(h.e)(h.g, h.h, e => !!Object(y.c)(e, {
 					experimentEligibilitySelector: Object(h.d)(Object(h.b)(...o.b)),
-					experimentName: p.Rb
+					experimentName: p.Tb
 				})),
 				S = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				v = () => u(e => b()([E, I, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
@@ -52202,7 +52202,7 @@
 					})
 				},
 				_ = new Set(["nba", "nfl"]),
-				h = Object(o.a)((e, t) => t.categoriesOrder || i.zb, (e, t) => t.excludedCategories || _, e => e.categories.ids, e => e.categories.models, (e, t, n, s) => {
+				h = Object(o.a)((e, t) => t.categoriesOrder || i.Bb, (e, t) => t.excludedCategories || _, e => e.categories.ids, e => e.categories.models, (e, t, n, s) => {
 					const r = {};
 					let o = 1e3;
 					const a = [];
@@ -52764,21 +52764,21 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.Ub.Enabled === Object(r.c)(e, {
+			const o = e => s.Wb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Sb
+					experimentName: s.Ub
 				}),
-				a = e => s.Pb.Enabled === Object(r.c)(e, {
+				a = e => s.Rb.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Ib
+					experimentName: s.Kb
 				}),
-				i = e => s.cc.Enabled === Object(r.c)(e, {
+				i = e => s.ec.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Xb
+					experimentName: s.Zb
 				}),
-				c = e => s.dc.Enabled === Object(r.c)(e, {
+				c = e => s.fc.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Yb
+					experimentName: s.ac
 				}),
 				d = (e, t, n) => {
 					const o = n(e, t);
@@ -52819,9 +52819,9 @@
 					experimentName: r.Q,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				u = e => e === r.mc.NoCommunityWidgets,
-				l = e => e === r.mc.NoRulesModerators,
-				b = e => e === r.mc.RelatedPostsDu
+				u = e => e === r.oc.NoCommunityWidgets,
+				l = e => e === r.oc.NoRulesModerators,
+				b = e => e === r.oc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, n) {
 			"use strict";
@@ -54269,4 +54269,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.815ac04e871a13557be1.js.map
+//# sourceMappingURL=Governance~Reddit.3b2288d2b9a0bb40df2b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MembershipPaywallPage.17e3bf2fcfab9f5a0eaf.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MembershipPaywallPage.3139334c891bed4d28f3.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, o, s) {
@@ -32,8 +32,8 @@
 						p = !a && !m && !h && !c && /linux/i.test(o),
 						b = n(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
 						j = s(/version\/(\d+(\.\d+)?)/i),
-						w = /tablet/i.test(o) && !/tablet pc/i.test(o),
-						g = !w && /[^-]mobi/i.test(o),
+						g = /tablet/i.test(o) && !/tablet pc/i.test(o),
+						w = !g && /[^-]mobi/i.test(o),
 						x = /xbox/i.test(o);
 					/opera/i.test(o) ? r = {
 						name: "Opera",
@@ -203,7 +203,7 @@
 						}
 					}(s(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? y = s(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? y = (y = s(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : i ? y = (y = s(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : a ? y = s(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? y = s(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? y = s(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? y = s(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (y = s(/tizen[\/\s](\d+(\.\d+)*)/i)), y && (r.osversion = y);
 					var k = !r.windows && y.split(".")[0];
-					return w || t || "ipad" == i || a && (3 == k || k >= 4 && !g) || r.silk ? r.tablet = e : (g || "iphone" == i || "ipod" == i || a || d || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
+					return g || t || "ipad" == i || a && (3 == k || k >= 4 && !w) || r.silk ? r.tablet = e : (w || "iphone" == i || "ipod" == i || a || d || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var s = o("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -266,6 +266,11 @@
 				return r(n(e))
 			}
 		},
+		"./node_modules/lodash/_baseClamp.js": function(e, o) {
+			e.exports = function(e, o, s) {
+				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== o && (e = e >= o ? e : o)), e
+			}
+		},
 		"./node_modules/lodash/_baseEachRight.js": function(e, o, s) {
 			var n = s("./node_modules/lodash/_baseForOwnRight.js"),
 				r = s("./node_modules/lodash/_createBaseEach.js")(n, !0);
@@ -306,6 +311,13 @@
 		"./node_modules/lodash/_baseGt.js": function(e, o) {
 			e.exports = function(e, o) {
 				return e > o
+			}
+		},
+		"./node_modules/lodash/_baseRandom.js": function(e, o) {
+			var s = Math.floor,
+				n = Math.random;
+			e.exports = function(e, o) {
+				return e + s(n() * (o - e + 1))
 			}
 		},
 		"./node_modules/lodash/_baseRange.js": function(e, o) {
@@ -364,6 +376,20 @@
 				"'": "&#39;"
 			});
 			e.exports = n
+		},
+		"./node_modules/lodash/_shuffleSelf.js": function(e, o, s) {
+			var n = s("./node_modules/lodash/_baseRandom.js");
+			e.exports = function(e, o) {
+				var s = -1,
+					r = e.length,
+					i = r - 1;
+				for (o = void 0 === o ? r : o; ++s < o;) {
+					var a = n(s, i),
+						d = e[a];
+					e[a] = e[s], e[s] = d
+				}
+				return e.length = o, e
+			}
 		},
 		"./node_modules/lodash/chunk.js": function(e, o, s) {
 			var n = s("./node_modules/lodash/_baseSlice.js"),
@@ -519,4 +545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~MembershipPaywallPage.17e3bf2fcfab9f5a0eaf.js.map
+//# sourceMappingURL=vendors~MembershipPaywallPage.3139334c891bed4d28f3.js.map

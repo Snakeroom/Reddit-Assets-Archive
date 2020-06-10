@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5cbdff36081dc63bc15f.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5b66e05585db29c8c938.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -251,6 +251,11 @@
 					return !i(e, t, s)
 				}, s._detect = t, s.detect = t, s
 			}, e.exports ? e.exports = n() : s("./node_modules/webpack/buildin/amd-define.js")("bowser", n)
+		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, s) {
+				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== t && (e = e >= t ? e : t)), e
+			}
 		},
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
 			e.exports = function(e, t, s) {
@@ -1518,4 +1523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.5cbdff36081dc63bc15f.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.5b66e05585db29c8c938.js.map

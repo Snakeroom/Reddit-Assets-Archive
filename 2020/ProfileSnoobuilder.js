@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.bb91eb2aa1c513fcabda.js
-// Retrieved at 6/9/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.5643596dd9d07d6285e6.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -39,8 +39,8 @@
 						y = s(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
 						v = n(/version\/(\d+(\.\d+)?)/i),
 						x = /tablet/i.test(t) && !/tablet pc/i.test(t),
-						k = !x && /[^-]mobi/i.test(t),
-						_ = /xbox/i.test(t);
+						_ = !x && /[^-]mobi/i.test(t),
+						k = /xbox/i.test(t);
 					/opera/i.test(t) ? r = {
 						name: "Opera",
 						opera: e,
@@ -180,7 +180,7 @@
 					} : {
 						name: n(/^(.*)\/(.*) /),
 						version: s(/^(.*)\/(.*) /)
-					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && v && (r.version = v)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || n(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && o ? (r[o] = e, r.ios = e, r.osname = "iOS") : b ? (r.mac = e, r.osname = "macOS") : _ ? (r.xbox = e, r.osname = "Xbox") : f ? (r.windows = e, r.osname = "Windows") : g && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
+					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && v && (r.version = v)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || n(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && o ? (r[o] = e, r.ios = e, r.osname = "iOS") : b ? (r.mac = e, r.osname = "macOS") : k ? (r.xbox = e, r.osname = "Xbox") : f ? (r.windows = e, r.osname = "Windows") : g && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
 					var w = "";
 					r.windows ? w = function(e) {
 						switch (e) {
@@ -209,7 +209,7 @@
 						}
 					}(n(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? w = n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? w = (w = n(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : o ? w = (w = n(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? w = n(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? w = n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? w = n(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? w = n(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (w = n(/tizen[\/\s](\d+(\.\d+)*)/i)), w && (r.osversion = w);
 					var E = !r.windows && w.split(".")[0];
-					return x || d || "ipad" == o || i && (3 == E || E >= 4 && !k) || r.silk ? r.tablet = e : (k || "iphone" == o || "ipod" == o || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
+					return x || d || "ipad" == o || i && (3 == E || E >= 4 && !_) || r.silk ? r.tablet = e : (_ || "iphone" == o || "ipod" == o || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var n = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -257,6 +257,11 @@
 					return !i(e, t, n)
 				}, n._detect = t, n.detect = t, n
 			}, e.exports ? e.exports = s() : n("./node_modules/webpack/buildin/amd-define.js")("bowser", s)
+		},
+		"./node_modules/lodash/_baseClamp.js": function(e, t) {
+			e.exports = function(e, t, n) {
+				return e == e && (void 0 !== n && (e = e <= n ? e : n), void 0 !== t && (e = e >= t ? e : t)), e
+			}
 		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
 			e.exports = function(e, t, n, s, r) {
@@ -320,9 +325,9 @@
 			})), n.d(t, "c", (function() {
 				return x
 			})), n.d(t, "g", (function() {
-				return k
-			})), n.d(t, "h", (function() {
 				return _
+			})), n.d(t, "h", (function() {
+				return k
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var s = n("./node_modules/linkify-it/index.js"),
@@ -366,11 +371,11 @@
 				x = e => {
 					return [...b.match(e) || [], ...p.match(e) || []].map(e => !c(e.text) && e.text.replace(a.a, "")).filter(e => e)
 				},
-				k = (e, t) => {
+				_ = (e, t) => {
 					const n = e.match(t);
 					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === t.length) return n[0]
 				},
-				_ = e => {
+				k = e => {
 					const t = h.match(e);
 					if (t && 1 === t.length && 0 === t[0].index) {
 						const n = t[0];
@@ -481,7 +486,7 @@
 			const {
 				fbt: b
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), g = h.a.div("FooterContainer", f.a), y = h.a.div("UserAgreement", f.a), v = h.a.a("UserAgreementLink", f.a), x = h.a.a("PrivacyLink", f.a);
-			var k = () => o.a.createElement(g, null, o.a.createElement(y, null, b._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy} . ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [b._param("=User Agreement", o.a.createElement(v, {
+			var _ = () => o.a.createElement(g, null, o.a.createElement(y, null, b._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy} . ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [b._param("=User Agreement", o.a.createElement(v, {
 					href: "".concat(s.a.redditUrl, "/help/useragreement")
 				}, b._("User Agreement", null, {
 					hk: "2srkM2"
@@ -492,7 +497,7 @@
 				}))), b._param("year", (new Date).getFullYear())], {
 					hk: "335pdO"
 				}))),
-				_ = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
+				k = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				w = n("./src/reddit/components/RichTextJson/index.tsx"),
 				E = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./node_modules/lodash/flatMap.js")),
 				S = n.n(E),
@@ -577,7 +582,7 @@
 					subredditDescription: y,
 					subredditName: v,
 					user: x
-				} = e, k = () => {
+				} = e, _ = () => {
 					i ? g() : Object(c.k)(), window.location.reload()
 				};
 				switch (n) {
@@ -620,7 +625,7 @@
 						}, W._("No", null, {
 							hk: "3fMglW"
 						})), o.a.createElement(Z, {
-							onClick: k
+							onClick: _
 						}, W._("Yes", null, {
 							hk: "2hpRkN"
 						}))));
@@ -662,7 +667,7 @@
 							rtJsonElementProps: {
 								pageLayer: u
 							}
-						}) : f ? o.a.createElement(_.a, {
+						}) : f ? o.a.createElement(k.a, {
 							html: f
 						}) : p || W._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
 							hk: "3kRIzE"
@@ -787,7 +792,7 @@
 						}))))
 				}
 			};
-			t.default = de(le(Object(a.i)(e => o.a.createElement(H, null, o.a.createElement("div", null, o.a.createElement(oe, null, ce(e))), o.a.createElement(k, null)))))
+			t.default = de(le(Object(a.i)(e => o.a.createElement(H, null, o.a.createElement("div", null, o.a.createElement(oe, null, ce(e))), o.a.createElement(_, null)))))
 		},
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -817,11 +822,11 @@
 			const y = "create-community-button",
 				v = g.a.wrapped(u.i, "SecondaryButton", b.a),
 				x = g.a.wrapped(l.c, "StyledTooltip", b.a),
-				k = Object(a.c)({
+				_ = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.ab)(e),
 					userIsSuspended: p.M
 				});
-			t.a = Object(i.b)(k, (e, t) => {
+			t.a = Object(i.b)(_, (e, t) => {
 				let {
 					eventSource: n
 				} = t;
@@ -1101,7 +1106,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var k = function(e, t) {
+			var _ = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1110,14 +1115,14 @@
 				}
 				return n
 			};
-			const _ = d.e[1] + 24,
+			const k = d.e[1] + 24,
 				w = f.f + 8 + 152 + 32 + 16,
-				E = w + _ + 8,
+				E = w + k + 8,
 				S = v.a.div("Container", y.a),
 				j = v.a.wrapped(e => {
 					var {
 						className: t
-					} = e, n = k(e, ["className"]);
+					} = e, n = _(e, ["className"]);
 					return a.a.createElement(h, x({
 						className: t,
 						style: {
@@ -1281,8 +1286,8 @@
 				y = n.n(g),
 				v = n("./assets/snoobuilder/UnityLoader.js"),
 				x = n.n(v);
-			const k = Object(d.c)({}),
-				_ = Object(i.b)(k, (e, t) => ({}));
+			const _ = Object(d.c)({}),
+				k = Object(i.b)(_, (e, t) => ({}));
 			class w extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.unityContent = new h("".concat(a.a.assetPath).concat(y.a), "".concat(a.a.assetPath).concat(x.a))
@@ -1299,7 +1304,7 @@
 					}))
 				}
 			}
-			t.default = _(w)
+			t.default = k(w)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1343,14 +1348,14 @@
 				y = n("./src/reddit/selectors/user.ts"),
 				v = n("./src/reddit/models/Theme/index.ts"),
 				x = n("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const k = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				_ = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
+			const _ = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				k = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
 				w = e => {
-					const t = k(e);
+					const t = _(e);
 					return Object(v.f)(t)
 				},
 				E = e => {
-					const t = _(e);
+					const t = k(e);
 					return Object(v.f)(t)
 				};
 			var S = n("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
@@ -1393,11 +1398,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = k(this.props), e.borderColor = Object(f.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = w(this.props), e
+					return e.backgroundColor = _(this.props), e.borderColor = Object(f.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = w(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = _(this.props), e.color = e.fill = E(this.props), e
+					return e.backgroundColor = k(this.props), e.color = e.fill = E(this.props), e
 				}
 				render() {
 					const {
@@ -1654,4 +1659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileSnoobuilder.bb91eb2aa1c513fcabda.js.map
+//# sourceMappingURL=ProfileSnoobuilder.5643596dd9d07d6285e6.js.map

@@ -1,27 +1,27 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.0b6ae6cd1faacefd4ecd.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.30e875af1e0a7058203f.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
-		"./node_modules/@r/google-tag-manager/compiled.js": function(e, o, r) {
+		"./node_modules/@r/google-tag-manager/compiled.js": function(e, r, o) {
 			"use strict";
-			Object.defineProperty(o, "__esModule", {
+			Object.defineProperty(r, "__esModule", {
 				value: !0
-			}), o.setup = o.trigger = o.getLocation = void 0;
+			}), r.setup = r.trigger = r.getLocation = void 0;
 			var t = Object.assign || function(e) {
-					for (var o = 1; o < arguments.length; o++) {
-						var r = arguments[o];
-						for (var t in r) Object.prototype.hasOwnProperty.call(r, t) && (e[t] = r[t])
+					for (var r = 1; r < arguments.length; r++) {
+						var o = arguments[r];
+						for (var t in o) Object.prototype.hasOwnProperty.call(o, t) && (e[t] = o[t])
 					}
 					return e
 				},
-				n = r("./node_modules/@r/google-tag-manager/node_modules/uuid/index.js"),
+				n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/index.js"),
 				s = function(e) {
 					if (e && e.__esModule) return e;
-					var o = {};
+					var r = {};
 					if (null != e)
-						for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && (o[r] = e[r]);
-					return o.default = e, o
-				}(r("./node_modules/@r/frames/compiled.js"));
+						for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (r[o] = e[o]);
+					return r.default = e, r
+				}(o("./node_modules/@r/frames/compiled.js"));
 			var a = "gtm-" + (0, n.v4)(),
 				i = !1,
 				u = [],
@@ -29,7 +29,7 @@
 					var e = document.getElementById(a);
 					return e && e.contentWindow ? e : null
 				},
-				l = o.getLocation = function() {
+				c = r.getLocation = function() {
 					return {
 						href: location.href,
 						hostname: location.hostname,
@@ -39,255 +39,255 @@
 						hash: location.hash.replace(/^#/, "")
 					}
 				},
-				c = o.trigger = function(e, o) {
-					var r = d();
-					r && i ? (o && s.postMessage(r.contentWindow, "data.gtm", o), s.postMessage(r.contentWindow, "event.gtm", {
+				l = r.trigger = function(e, r) {
+					var o = d();
+					o && i ? (r && s.postMessage(o.contentWindow, "data.gtm", r), s.postMessage(o.contentWindow, "event.gtm", {
 						event: e
-					})) : function(e, o) {
+					})) : function(e, r) {
 						u.push({
 							eventName: e,
-							payload: o
+							payload: r
 						})
-					}(e, o)
+					}(e, r)
 				},
 				p = function() {
 					if (d() && i) {
 						var e = u.slice();
 						u = [], e.forEach((function(e) {
-							var o = e.eventName,
-								r = e.payload;
-							return c(o, r)
+							var r = e.eventName,
+								o = e.payload;
+							return l(r, o)
 						}))
 					}
 				};
-			o.setup = function(e) {
-				var o = e.containerId,
-					r = e.jailUrl,
+			r.setup = function(e) {
+				var r = e.containerId,
+					o = e.jailUrl,
 					n = e.payload;
-				if (o)
-					if (r) {
+				if (r)
+					if (o) {
 						s.listen("gtm"), s.receiveMessageOnce("loaded.gtm", (function() {
 							i = !0, s.stopListening("gtm")
 						}));
 						var u = document.createElement("iframe");
 						u.style.display = "none", u.id = a, u.name = JSON.stringify(t({
 							referrer: document.referrer
-						}, l(), n)), u.src = r + "?id=" + o, u.onload = p, document.body.appendChild(u)
+						}, c(), n)), u.src = o + "?id=" + r, u.onload = p, document.body.appendChild(u)
 					} else console.warn("GTM#setup: No `jailUrl` specified, skipping.");
 				else console.warn("GTM#setup: No `containerId` specified, skipping.")
 			}
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/index.js": function(e, o, r) {
-			var t = r("./node_modules/@r/google-tag-manager/node_modules/uuid/v1.js"),
-				n = r("./node_modules/@r/google-tag-manager/node_modules/uuid/v4.js"),
+		"./node_modules/@r/google-tag-manager/node_modules/uuid/index.js": function(e, r, o) {
+			var t = o("./node_modules/@r/google-tag-manager/node_modules/uuid/v1.js"),
+				n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/v4.js"),
 				s = n;
 			s.v1 = t, s.v4 = n, e.exports = s
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js": function(e, o) {
-			for (var r = [], t = 0; t < 256; ++t) r[t] = (t + 256).toString(16).substr(1);
-			e.exports = function(e, o) {
-				var t = o || 0,
-					n = r;
+		"./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js": function(e, r) {
+			for (var o = [], t = 0; t < 256; ++t) o[t] = (t + 256).toString(16).substr(1);
+			e.exports = function(e, r) {
+				var t = r || 0,
+					n = o;
 				return n[e[t++]] + n[e[t++]] + n[e[t++]] + n[e[t++]] + "-" + n[e[t++]] + n[e[t++]] + "-" + n[e[t++]] + n[e[t++]] + "-" + n[e[t++]] + n[e[t++]] + "-" + n[e[t++]] + n[e[t++]] + n[e[t++]] + n[e[t++]] + n[e[t++]] + n[e[t++]]
 			}
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js": function(e, o, r) {
-			(function(o) {
-				var r, t = o.crypto || o.msCrypto;
+		"./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js": function(e, r, o) {
+			(function(r) {
+				var o, t = r.crypto || r.msCrypto;
 				if (t && t.getRandomValues) {
 					var n = new Uint8Array(16);
-					r = function() {
+					o = function() {
 						return t.getRandomValues(n), n
 					}
 				}
-				if (!r) {
+				if (!o) {
 					var s = new Array(16);
-					r = function() {
-						for (var e, o = 0; o < 16; o++) 0 == (3 & o) && (e = 4294967296 * Math.random()), s[o] = e >>> ((3 & o) << 3) & 255;
+					o = function() {
+						for (var e, r = 0; r < 16; r++) 0 == (3 & r) && (e = 4294967296 * Math.random()), s[r] = e >>> ((3 & r) << 3) & 255;
 						return s
 					}
 				}
-				e.exports = r
-			}).call(this, r("./node_modules/webpack/buildin/global.js"))
+				e.exports = o
+			}).call(this, o("./node_modules/webpack/buildin/global.js"))
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/v1.js": function(e, o, r) {
-			var t = r("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
-				n = r("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js"),
+		"./node_modules/@r/google-tag-manager/node_modules/uuid/v1.js": function(e, r, o) {
+			var t = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
+				n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js"),
 				s = t(),
 				a = [1 | s[0], s[1], s[2], s[3], s[4], s[5]],
 				i = 16383 & (s[6] << 8 | s[7]),
 				u = 0,
 				d = 0;
-			e.exports = function(e, o, r) {
-				var t = o && r || 0,
-					s = o || [],
-					l = void 0 !== (e = e || {}).clockseq ? e.clockseq : i,
-					c = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+			e.exports = function(e, r, o) {
+				var t = r && o || 0,
+					s = r || [],
+					c = void 0 !== (e = e || {}).clockseq ? e.clockseq : i,
+					l = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
 					p = void 0 !== e.nsecs ? e.nsecs : d + 1,
-					f = c - u + (p - d) / 1e4;
-				if (f < 0 && void 0 === e.clockseq && (l = l + 1 & 16383), (f < 0 || c > u) && void 0 === e.nsecs && (p = 0), p >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				u = c, d = p, i = l;
-				var m = (1e4 * (268435455 & (c += 122192928e5)) + p) % 4294967296;
+					f = l - u + (p - d) / 1e4;
+				if (f < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (f < 0 || l > u) && void 0 === e.nsecs && (p = 0), p >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				u = l, d = p, i = c;
+				var m = (1e4 * (268435455 & (l += 122192928e5)) + p) % 4294967296;
 				s[t++] = m >>> 24 & 255, s[t++] = m >>> 16 & 255, s[t++] = m >>> 8 & 255, s[t++] = 255 & m;
-				var h = c / 4294967296 * 1e4 & 268435455;
-				s[t++] = h >>> 8 & 255, s[t++] = 255 & h, s[t++] = h >>> 24 & 15 | 16, s[t++] = h >>> 16 & 255, s[t++] = l >>> 8 | 128, s[t++] = 255 & l;
-				for (var v = e.node || a, g = 0; g < 6; ++g) s[t + g] = v[g];
-				return o || n(s)
+				var g = l / 4294967296 * 1e4 & 268435455;
+				s[t++] = g >>> 8 & 255, s[t++] = 255 & g, s[t++] = g >>> 24 & 15 | 16, s[t++] = g >>> 16 & 255, s[t++] = c >>> 8 | 128, s[t++] = 255 & c;
+				for (var h = e.node || a, v = 0; v < 6; ++v) s[t + v] = h[v];
+				return r || n(s)
 			}
 		},
-		"./node_modules/@r/google-tag-manager/node_modules/uuid/v4.js": function(e, o, r) {
-			var t = r("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
-				n = r("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js");
-			e.exports = function(e, o, r) {
-				var s = o && r || 0;
-				"string" == typeof e && (o = "binary" == e ? new Array(16) : null, e = null);
+		"./node_modules/@r/google-tag-manager/node_modules/uuid/v4.js": function(e, r, o) {
+			var t = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/rng-browser.js"),
+				n = o("./node_modules/@r/google-tag-manager/node_modules/uuid/lib/bytesToUuid.js");
+			e.exports = function(e, r, o) {
+				var s = r && o || 0;
+				"string" == typeof e && (r = "binary" == e ? new Array(16) : null, e = null);
 				var a = (e = e || {}).random || (e.rng || t)();
-				if (a[6] = 15 & a[6] | 64, a[8] = 63 & a[8] | 128, o)
-					for (var i = 0; i < 16; ++i) o[s + i] = a[i];
-				return o || n(a)
+				if (a[6] = 15 & a[6] | 64, a[8] = 63 & a[8] | 128, r)
+					for (var i = 0; i < 16; ++i) r[s + i] = a[i];
+				return r || n(a)
 			}
 		},
-		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, o, r) {
+		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, r, o) {
 			"use strict";
-			r.d(o, "a", (function() {
-				return T
+			o.d(r, "a", (function() {
+				return x
 			}));
-			var t = r("./node_modules/react/index.js"),
-				n = r.n(t),
-				s = r("./node_modules/react-dom/index.js"),
-				a = (r("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
+			var t = o("./node_modules/react/index.js"),
+				n = o.n(t),
+				s = o("./node_modules/react-dom/index.js"),
+				a = (o("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js"), /^-?\d*\.?\d+(px|%)$/);
 
-			function i(e, o) {
-				return Array.isArray(e) && Array.isArray(o) && e.length === o.length ? e.some((function(r, t) {
-					return i(e[t], o[t])
-				})) : e !== o
+			function i(e, r) {
+				return Array.isArray(e) && Array.isArray(r) && e.length === r.length ? e.some((function(o, t) {
+					return i(e[t], r[t])
+				})) : e !== r
 			}
 			var u = new Map;
 
 			function d(e) {
 				void 0 === e && (e = {});
-				for (var o, r = e.root || null, t = function(e) {
-						var o = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
+				for (var r, o = e.root || null, t = function(e) {
+						var r = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
 								if (!a.test(e)) throw new Error("rootMargin must be a string literal containing pixels and/or percent values");
 								return e
 							})),
-							r = o[0],
-							t = void 0 === r ? "0px" : r,
-							n = o[1],
+							o = r[0],
+							t = void 0 === o ? "0px" : o,
+							n = r[1],
 							s = void 0 === n ? t : n,
-							i = o[2],
+							i = r[2],
 							u = void 0 === i ? t : i,
-							d = o[3];
+							d = r[3];
 						return t + " " + s + " " + u + " " + (void 0 === d ? s : d)
-					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], s = u.keys(); o = s.next().value;) {
-					if (!(r !== o.root || t !== o.rootMargin || i(n, o.thresholds))) return o
+					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], s = u.keys(); r = s.next().value;) {
+					if (!(o !== r.root || t !== r.rootMargin || i(n, r.thresholds))) return r
 				}
 				return null
 			}
 
-			function l(e, o) {
-				var r = u.get(e);
-				if (r)
-					for (var t, n = r.values(); t = n.next().value;)
-						if (t.target === o.target) return t;
+			function c(e, r) {
+				var o = u.get(e);
+				if (o)
+					for (var t, n = o.values(); t = n.next().value;)
+						if (t.target === r.target) return t;
 				return null
 			}
 
-			function c(e, o) {
-				for (var r = 0; r < e.length; r++) {
-					var t = l(o, e[r]);
-					t && t.handleChange(e[r])
+			function l(e, r) {
+				for (var o = 0; o < e.length; o++) {
+					var t = c(r, e[o]);
+					t && t.handleChange(e[o])
 				}
 			}
 
 			function p(e) {
-				return d(e) || new IntersectionObserver(c, e)
+				return d(e) || new IntersectionObserver(l, e)
 			}
-			var f = r("./node_modules/invariant/browser.js"),
-				m = r.n(f),
-				h = {},
-				v = Object.create(null, {
+			var f = o("./node_modules/invariant/browser.js"),
+				m = o.n(f),
+				g = {},
+				h = Object.create(null, {
 					errorReporter: {
 						configurable: !1,
 						get: function() {
-							return h.errorReporter || function(e) {
+							return g.errorReporter || function(e) {
 								return m()(!1, e)
 							}
 						},
 						set: function(e) {
 							if ("function" != typeof e) throw new Error("ReactIntersectionObserver: `Config.errorReporter` must be a callable");
-							h.errorReporter = e
+							g.errorReporter = e
 						}
 					}
 				});
 
-			function g(e) {
+			function v(e) {
 				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return e
 			}
 
-			function _(e, o, r) {
-				return o in e ? Object.defineProperty(e, o, {
-					value: r,
+			function b(e, r, o) {
+				return r in e ? Object.defineProperty(e, r, {
+					value: o,
 					enumerable: !0,
 					configurable: !0,
 					writable: !0
-				}) : e[o] = r, e
+				}) : e[r] = o, e
 			}
-			var b = ["root", "rootMargin", "threshold"],
-				y = ["root", "rootMargin", "threshold", "disabled"],
+			var y = ["root", "rootMargin", "threshold"],
+				_ = ["root", "rootMargin", "threshold", "disabled"],
 				j = Object.prototype,
 				O = j.hasOwnProperty,
 				w = j.toString,
-				S = function(e) {
-					return b.reduce((function(o, r) {
-						if (O.call(e, r)) {
-							var t = "root" === r && "[object String]" === w.call(e[r]);
-							o[r] = t ? document.querySelector(e[r]) : e[r]
+				T = function(e) {
+					return y.reduce((function(r, o) {
+						if (O.call(e, o)) {
+							var t = "root" === o && "[object String]" === w.call(e[o]);
+							r[o] = t ? document.querySelector(e[o]) : e[o]
 						}
-						return o
+						return r
 					}), {})
 				},
-				T = function(e) {
-					var o, r;
+				x = function(e) {
+					var r, o;
 
 					function t() {
-						for (var o, r = arguments.length, t = new Array(r), n = 0; n < r; n++) t[n] = arguments[n];
-						return _(g(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
-							o.props.onChange(e, o.externalUnobserve)
-						})), _(g(o), "handleNode", (function(e) {
-							var r = o.props.children;
-							if (null != r) {
-								var t = r.ref;
+						for (var r, o = arguments.length, t = new Array(o), n = 0; n < o; n++) t[n] = arguments[n];
+						return b(v(r = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
+							r.props.onChange(e, r.externalUnobserve)
+						})), b(v(r), "handleNode", (function(e) {
+							var o = r.props.children;
+							if (null != o) {
+								var t = o.ref;
 								t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e))
 							}
-							o.targetNode = e && Object(s.findDOMNode)(e)
-						})), _(g(o), "observe", (function() {
-							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = p(S(o.props)), o.target = o.targetNode, e = g(o), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							r.targetNode = e && Object(s.findDOMNode)(e)
+						})), b(v(r), "observe", (function() {
+							return null != r.props.children && !r.props.disabled && (r.targetNode ? (r.observer = p(T(r.props)), r.target = r.targetNode, e = v(r), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (h.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), _(g(o), "unobserve", (function(e) {
-							! function(e, o) {
+						})), b(v(r), "unobserve", (function(e) {
+							! function(e, r) {
 								if (u.has(e.observer)) {
-									var r = u.get(e.observer);
-									r.delete(e) && (r.size > 0 ? e.observer.unobserve(o) : (e.observer.disconnect(), u.delete(e.observer)))
+									var o = u.get(e.observer);
+									o.delete(e) && (o.size > 0 ? e.observer.unobserve(r) : (e.observer.disconnect(), u.delete(e.observer)))
 								}
-							}(g(o), e)
-						})), _(g(o), "externalUnobserve", (function() {
-							o.unobserve(o.targetNode)
-						})), o
+							}(v(r), e)
+						})), b(v(r), "externalUnobserve", (function() {
+							r.unobserve(r.targetNode)
+						})), r
 					}
-					r = e, (o = t).prototype = Object.create(r.prototype), o.prototype.constructor = o, o.__proto__ = r;
+					o = e, (r = t).prototype = Object.create(o.prototype), r.prototype.constructor = r, r.__proto__ = o;
 					var a = t.prototype;
 					return a.getSnapshotBeforeUpdate = function(e) {
-						var o = this;
+						var r = this;
 						this.prevTargetNode = this.targetNode;
-						var r = y.some((function(r) {
-							return i(o.props[r], e[r])
+						var o = _.some((function(o) {
+							return i(r.props[o], e[o])
 						}));
-						return r && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), r
-					}, a.componentDidUpdate = function(e, o, r) {
+						return o && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), o
+					}, a.componentDidUpdate = function(e, r, o) {
 						var t = !1;
-						r || (t = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (r || t) && this.observe()
+						o || (t = this.prevTargetNode !== this.targetNode) && null != this.prevTargetNode && this.unobserve(this.prevTargetNode), (o || t) && this.observe()
 					}, a.componentDidMount = function() {
 						this.observe()
 					}, a.componentWillUnmount = function() {
@@ -299,28 +299,28 @@
 						}) : null
 					}, t
 				}(n.a.Component);
-			_(T, "displayName", "IntersectionObserver")
+			b(x, "displayName", "IntersectionObserver")
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, o, r) {
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, o) {
 			"use strict";
-			var t = r("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var t = o("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function n() {}
 
 			function s() {}
 			s.resetWarningCache = n, e.exports = function() {
-				function e(e, o, r, n, s, a) {
+				function e(e, r, o, n, s, a) {
 					if (a !== t) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw i.name = "Invariant Violation", i
 					}
 				}
 
-				function o() {
+				function r() {
 					return e
 				}
 				e.isRequired = e;
-				var r = {
+				var o = {
 					array: e,
 					bool: e,
 					func: e,
@@ -329,34 +329,34 @@
 					string: e,
 					symbol: e,
 					any: e,
-					arrayOf: o,
+					arrayOf: r,
 					element: e,
 					elementType: e,
-					instanceOf: o,
+					instanceOf: r,
 					node: e,
-					objectOf: o,
-					oneOf: o,
-					oneOfType: o,
-					shape: o,
-					exact: o,
+					objectOf: r,
+					oneOf: r,
+					oneOfType: r,
+					shape: r,
+					exact: r,
 					checkPropTypes: s,
 					resetWarningCache: n
 				};
-				return r.PropTypes = r, r
+				return o.PropTypes = o, o
 			}
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, o, r) {
-			e.exports = r("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/index.js": function(e, r, o) {
+			e.exports = o("./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js")()
 		},
-		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, o, r) {
+		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, o) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./node_modules/brcast/dist/brcast.es.js": function(e, o, r) {
+		"./node_modules/brcast/dist/brcast.es.js": function(e, r, o) {
 			"use strict";
-			o.a = function(e) {
-				var o = {},
-					r = 1,
+			r.a = function(e) {
+				var r = {},
+					o = 1,
 					t = e;
 				return {
 					getState: function() {
@@ -364,141 +364,88 @@
 					},
 					setState: function(e) {
 						t = e;
-						for (var r = Object.keys(o), n = 0, s = r.length; n < s; n++) o[r[n]] && o[r[n]](e)
+						for (var o = Object.keys(r), n = 0, s = o.length; n < s; n++) r[o[n]] && r[o[n]](e)
 					},
 					subscribe: function(e) {
 						if ("function" != typeof e) throw new Error("listener must be a function.");
-						var t = r;
-						return o[t] = e, r += 1, t
+						var t = o;
+						return r[t] = e, o += 1, t
 					},
 					unsubscribe: function(e) {
-						o[e] = void 0
+						r[e] = void 0
 					}
 				}
 			}
 		},
-		"./node_modules/lodash/_arraySampleSize.js": function(e, o, r) {
-			var t = r("./node_modules/lodash/_baseClamp.js"),
-				n = r("./node_modules/lodash/_copyArray.js"),
-				s = r("./node_modules/lodash/_shuffleSelf.js");
-			e.exports = function(e, o) {
-				return s(n(e), t(o, 0, e.length))
-			}
-		},
-		"./node_modules/lodash/_baseClamp.js": function(e, o) {
-			e.exports = function(e, o, r) {
-				return e == e && (void 0 !== r && (e = e <= r ? e : r), void 0 !== o && (e = e >= o ? e : o)), e
-			}
-		},
-		"./node_modules/lodash/_baseRandom.js": function(e, o) {
-			var r = Math.floor,
-				t = Math.random;
-			e.exports = function(e, o) {
-				return e + r(t() * (o - e + 1))
-			}
-		},
-		"./node_modules/lodash/_baseSampleSize.js": function(e, o, r) {
-			var t = r("./node_modules/lodash/_baseClamp.js"),
-				n = r("./node_modules/lodash/_shuffleSelf.js"),
-				s = r("./node_modules/lodash/values.js");
-			e.exports = function(e, o) {
-				var r = s(e);
-				return n(r, t(o, 0, r.length))
-			}
-		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, o, r) {
-			var t = r("./node_modules/lodash/_baseRandom.js");
-			e.exports = function(e, o) {
-				var r = -1,
-					n = e.length,
-					s = n - 1;
-				for (o = void 0 === o ? n : o; ++r < o;) {
-					var a = t(r, s),
-						i = e[a];
-					e[a] = e[r], e[r] = i
-				}
-				return e.length = o, e
-			}
-		},
-		"./node_modules/lodash/sampleSize.js": function(e, o, r) {
-			var t = r("./node_modules/lodash/_arraySampleSize.js"),
-				n = r("./node_modules/lodash/_baseSampleSize.js"),
-				s = r("./node_modules/lodash/isArray.js"),
-				a = r("./node_modules/lodash/_isIterateeCall.js"),
-				i = r("./node_modules/lodash/toInteger.js");
-			e.exports = function(e, o, r) {
-				return o = (r ? a(e, o, r) : void 0 === o) ? 1 : i(o), (s(e) ? t : n)(e, o)
-			}
-		},
-		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, o, r) {
+		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, r, o) {
 			"use strict";
-			r.d(o, "a", (function() {
-				return c
+			o.d(r, "a", (function() {
+				return l
 			}));
-			var t = r("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
-				n = r("./node_modules/react/index.js"),
-				s = r.n(n),
-				a = r("./node_modules/react-router/esm/react-router.js"),
-				i = r("./node_modules/history/esm/history.js"),
-				u = (r("./node_modules/react-router-dom/node_modules/prop-types/index.js"), r("./node_modules/@babel/runtime/helpers/esm/extends.js")),
-				d = r("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
-				l = r("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+			var t = o("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
+				n = o("./node_modules/react/index.js"),
+				s = o.n(n),
+				a = o("./node_modules/react-router/esm/react-router.js"),
+				i = o("./node_modules/history/esm/history.js"),
+				u = (o("./node_modules/react-router-dom/node_modules/prop-types/index.js"), o("./node_modules/@babel/runtime/helpers/esm/extends.js")),
+				d = o("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
+				c = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 			s.a.Component;
 			s.a.Component;
-			var c = function(e) {
-				function o() {
+			var l = function(e) {
+				function r() {
 					return e.apply(this, arguments) || this
 				}
-				Object(t.a)(o, e);
-				var r = o.prototype;
-				return r.handleClick = function(e, o) {
+				Object(t.a)(r, e);
+				var o = r.prototype;
+				return o.handleClick = function(e, r) {
 					try {
 						this.props.onClick && this.props.onClick(e)
-					} catch (r) {
-						throw e.preventDefault(), r
+					} catch (o) {
+						throw e.preventDefault(), o
 					}
 					e.defaultPrevented || 0 !== e.button || this.props.target && "_self" !== this.props.target || function(e) {
 						return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
-					}(e) || (e.preventDefault(), (this.props.replace ? o.replace : o.push)(this.props.to))
-				}, r.render = function() {
+					}(e) || (e.preventDefault(), (this.props.replace ? r.replace : r.push)(this.props.to))
+				}, o.render = function() {
 					var e = this,
-						o = this.props,
-						r = o.innerRef,
-						t = (o.replace, o.to),
-						n = Object(d.a)(o, ["innerRef", "replace", "to"]);
-					return s.a.createElement(a.g.Consumer, null, (function(o) {
-						o || Object(l.default)(!1);
-						var a = "string" == typeof t ? Object(i.c)(t, null, null, o.location) : t,
-							d = a ? o.history.createHref(a) : "";
+						r = this.props,
+						o = r.innerRef,
+						t = (r.replace, r.to),
+						n = Object(d.a)(r, ["innerRef", "replace", "to"]);
+					return s.a.createElement(a.g.Consumer, null, (function(r) {
+						r || Object(c.default)(!1);
+						var a = "string" == typeof t ? Object(i.c)(t, null, null, r.location) : t,
+							d = a ? r.history.createHref(a) : "";
 						return s.a.createElement("a", Object(u.a)({}, n, {
-							onClick: function(r) {
-								return e.handleClick(r, o.history)
+							onClick: function(o) {
+								return e.handleClick(o, r.history)
 							},
 							href: d,
-							ref: r
+							ref: o
 						}))
 					}))
-				}, o
+				}, r
 			}(s.a.Component)
 		},
-		"./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js": function(e, o, r) {
+		"./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, o) {
 			"use strict";
-			var t = r("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var t = o("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function n() {}
 			e.exports = function() {
-				function e(e, o, r, n, s, a) {
+				function e(e, r, o, n, s, a) {
 					if (a !== t) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw i.name = "Invariant Violation", i
 					}
 				}
 
-				function o() {
+				function r() {
 					return e
 				}
 				e.isRequired = e;
-				var r = {
+				var o = {
 					array: e,
 					bool: e,
 					func: e,
@@ -507,26 +454,26 @@
 					string: e,
 					symbol: e,
 					any: e,
-					arrayOf: o,
+					arrayOf: r,
 					element: e,
-					instanceOf: o,
+					instanceOf: r,
 					node: e,
-					objectOf: o,
-					oneOf: o,
-					oneOfType: o,
-					shape: o,
-					exact: o
+					objectOf: r,
+					oneOf: r,
+					oneOfType: r,
+					shape: r,
+					exact: r
 				};
-				return r.checkPropTypes = n, r.PropTypes = r, r
+				return o.checkPropTypes = n, o.PropTypes = o, o
 			}
 		},
-		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, o, r) {
-			e.exports = r("./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js")()
+		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, r, o) {
+			e.exports = o("./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js")()
 		},
-		"./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, o, r) {
+		"./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, r, o) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Reddit.0b6ae6cd1faacefd4ecd.js.map
+//# sourceMappingURL=vendors~Reddit.30e875af1e0a7058203f.js.map

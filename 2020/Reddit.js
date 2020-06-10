@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ccc978a76ff9f871b5bd.js
-// Retrieved at 6/10/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3128101dea8f72988403.js
+// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -18,8 +18,8 @@
 					if (t.preventDefault(), t.stopPropagation(), e && "function" == typeof e) return e(t)
 				}
 		},
-		"./src/graphql/operations/SubredditModels.json": function(e) {
-			e.exports = JSON.parse('{"id":"d98849822078"}')
+		"./src/graphql/operations/GetNearbySubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"c1e1ff9daa2c"}')
 		},
 		"./src/graphql/operations/TopSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"9e9ef4c82a00"}')
@@ -929,53 +929,49 @@
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return f
+				return b
 			})), s.d(t, "b", (function() {
-				return C
+				return g
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./node_modules/react-router-redux/es/index.js"),
-				a = s("./src/lib/pageTitle.ts"),
-				r = s("./src/reddit/actions/category.ts"),
-				o = s("./src/reddit/actions/modal.ts"),
-				i = s("./src/reddit/actions/platform.ts"),
-				c = s("./src/reddit/actions/subreddit/topSubreddits.ts"),
-				d = s("./src/reddit/actions/users.ts"),
-				l = s("./src/reddit/constants/listings.ts"),
-				m = s("./src/reddit/constants/subredditLeaderboard.ts"),
-				u = s("./src/reddit/helpers/categoryPickerWidget/index.ts"),
-				p = s("./src/reddit/selectors/category.ts"),
-				h = s("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts"),
-				b = s("./src/reddit/selectors/subredditLeaderboard.ts"),
-				g = s("./src/reddit/selectors/user.ts");
-			const f = (e, t) => t && e === m.h,
-				C = e => async (t, s) => {
-					t(Object(o.k)({
-						actionSource: o.a.SubredditLeaderboard,
-						redirectUrl: l.c[l.b.SubredditLeaderboard]
-					})), t(i.l({
-						title: Object(a.j)()
+			var n = s("./src/lib/pageTitle.ts"),
+				a = s("./src/reddit/actions/category.ts"),
+				r = s("./src/reddit/actions/modal.ts"),
+				o = s("./src/reddit/actions/platform.ts"),
+				i = s("./src/reddit/actions/subreddit/topSubreddits.ts"),
+				c = s("./src/reddit/actions/users.ts"),
+				d = s("./src/reddit/constants/listings.ts"),
+				l = s("./src/reddit/constants/subredditLeaderboard.ts"),
+				m = s("./src/reddit/helpers/categoryPickerWidget/index.ts"),
+				u = s("./src/reddit/selectors/category.ts"),
+				p = s("./src/reddit/selectors/subredditLeaderboard.ts"),
+				h = s("./src/reddit/selectors/user.ts");
+			const b = (e, t) => t && e === l.k,
+				g = e => async (t, s) => {
+					t(Object(r.k)({
+						actionSource: r.a.SubredditLeaderboard,
+						redirectUrl: d.c[d.b.SubredditLeaderboard]
+					})), t(o.l({
+						title: Object(n.j)()
 					}));
-					const r = e.params && e.params.categoryName,
-						c = r && Object(u.b)(r);
-					Object(h.b)(s()) || c !== m.m || t(Object(n.b)("/subreddits/leaderboard")), await t(v(c))
-				}, v = e => async (t, s) => {
-					await t(Object(r.h)());
+					const a = e.params && e.params.categoryName,
+						i = a && Object(m.b)(a);
+					await t(f(i))
+				}, f = e => async (t, s) => {
+					await t(Object(a.h)());
 					const n = s(),
-						a = Object(g.I)(n),
-						o = Object(h.b)(n) && e === m.m;
-					if (Object(b.a)(n, e)) return;
-					const i = e && Object(p.f)(n, {
+						r = Object(h.I)(n);
+					if (Object(p.a)(n, e)) return;
+					const o = e && Object(u.f)(n, {
 							categoryName: e
 						}),
-						l = i && i.id || m.d,
-						u = f(e, a),
-						C = ((e, t) => ({
+						d = e === l.i ? l.h : o && o.id || l.d,
+						m = ((e, t) => ({
 							categoryId: e,
 							isOnlyModIncluded: t
-						}))(l, u),
-						v = Object(b.d)(l, u, o);
-					await Promise.all([t(Object(c.a)(C, v)), t(Object(d.r)())])
+						}))(d, b(e, r)),
+						g = Object(p.d)(d, e);
+					await Promise.all([t(Object(i.a)(m, g)), t(Object(c.r)())])
 				}
 		},
 		"./src/reddit/actions/shortcuts/close.ts": function(e, t, s) {
@@ -1023,80 +1019,63 @@
 		"./src/reddit/actions/subreddit/topSubreddits.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return C
+				return b
 			}));
-			var n = s("./node_modules/lodash/sampleSize.js"),
-				a = s.n(n),
-				r = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/reddit/actions/subreddit/constants.ts"),
-				i = s("./src/reddit/constants/subredditLeaderboard.ts"),
-				c = s("./src/reddit/endpoints/subreddit/models.ts"),
-				d = s("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
-				l = s("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts"),
-				m = s("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
-			const u = Object(r.a)(o.k),
-				p = Object(r.a)(o.j),
-				h = Object(r.a)(o.i),
-				b = Object(r.a)(o.a),
-				g = Object(r.a)(o.b),
-				f = Object(r.a)(o.c),
-				C = (e, t) => async (s, n, a) => {
+			var n = s("./src/lib/makeActionCreator/index.ts"),
+				a = s("./src/reddit/actions/subreddit/constants.ts"),
+				r = s("./src/reddit/constants/subredditLeaderboard.ts"),
+				o = s("./src/reddit/endpoints/subreddit/local.ts"),
+				i = s("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
+				c = s("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
+			const d = Object(n.a)(a.k),
+				l = Object(n.a)(a.j),
+				m = Object(n.a)(a.i),
+				u = Object(n.a)(a.a),
+				p = Object(n.a)(a.b),
+				h = Object(n.a)(a.c),
+				b = (e, t) => async (s, n, a) => {
 					let {
-						gqlContext: r
+						gqlContext: b
 					} = a;
-					if (t === i.l) return void(Object(m.b)(n()) && s(v()));
-					s(u());
-					const o = await Object(d.a)(r(), e);
-					if (o.ok) {
-						const e = o.body,
-							n = e && e.data && e.data.subredditLeaderboard,
-							{
-								pageInfo: a,
-								rankings: r,
-								subreddits: i
-							} = Object(l.b)(n);
-						s(b({
-							subreddits: i
-						})), s(g({
-							categoryRankingsKey: t,
-							rankings: r
-						})), s(f({
-							categoryRankingsKey: t,
-							pageInfo: a
-						})), s(p())
-					} else {
-						const e = o.error;
-						s(h({
-							error: e
-						}))
-					}
-				}, v = () => async (e, t, s) => {
-					let {
-						gqlContext: n
-					} = s;
-					const r = a()(m.a, 25);
-					e(u());
-					const o = await Object(c.a)(n(), {
-						names: r
-					});
-					if (!o.ok) {
-						const t = o.error;
-						return void e(h({
-							error: t
-						}))
-					}
-					const d = o.body,
-						f = d && d.data && d.data.subredditsInfoByNames,
-						{
-							rankings: C,
-							subreddits: v
-						} = Object(l.a)(f);
-					e(b({
-						subreddits: v
-					})), e(g({
-						categoryRankingsKey: i.l,
-						rankings: C
-					})), e(p())
+					s(d());
+					const g = t === r.h ? async function() {
+						const t = await Object(o.a)(b(), e);
+						if (!t.ok) {
+							const e = t.error;
+							return s(m({
+								error: e
+							})), null
+						}
+						const n = t.body,
+							a = n && n.data && n.data.nearbySubreddits;
+						return Object(c.a)(a)
+					}: async function() {
+						const t = await Object(i.a)(b(), e);
+						if (!t.ok) {
+							const e = t.error;
+							return void s(m({
+								error: e
+							}))
+						}
+						const n = t.body,
+							a = n && n.data && n.data.subredditLeaderboard;
+						return Object(c.b)(a)
+					}, f = await g();
+					if (!f) return;
+					const {
+						pageInfo: C,
+						rankings: v,
+						subreddits: P
+					} = f;
+					s(u({
+						subreddits: P
+					})), s(p({
+						categoryRankingsKey: t,
+						rankings: v
+					})), s(h({
+						categoryRankingsKey: t,
+						pageInfo: C
+					})), s(l())
 				}
 		},
 		"./src/reddit/components/AccountManagerModal/IFrame/index.m.less": function(e, t, s) {
@@ -4541,9 +4520,9 @@
 				mo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				uo = s("./src/reddit/selectors/experiments/trending.ts"),
 				po = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const ho = e => Object(Vt.E)(e) || fs.oc.Treatment1 === Object(po.c)(e, {
+			const ho = e => Object(Vt.E)(e) || fs.qc.Treatment1 === Object(po.c)(e, {
 				experimentEligibilitySelector: po.a,
-				experimentName: fs.lc
+				experimentName: fs.nc
 			});
 			var bo = s("./src/reddit/selectors/searchResults.ts"),
 				go = s("./src/reddit/selectors/tooltip.ts"),
@@ -8529,26 +8508,24 @@
 				return r
 			})), s.d(t, "c", (function() {
 				return o
-			})), s.d(t, "g", (function() {
-				return i
-			})), s.d(t, "h", (function() {
-				return c
-			})), s.d(t, "l", (function() {
-				return d
-			})), s.d(t, "m", (function() {
-				return l
-			})), s.d(t, "n", (function() {
-				return m
-			})), s.d(t, "e", (function() {
-				return u
 			})), s.d(t, "j", (function() {
-				return p
+				return i
 			})), s.d(t, "k", (function() {
-				return h
+				return c
+			})), s.d(t, "h", (function() {
+				return d
 			})), s.d(t, "i", (function() {
-				return b
+				return l
+			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "m", (function() {
+				return u
+			})), s.d(t, "g", (function() {
+				return p
+			})), s.d(t, "l", (function() {
+				return h
 			})), s.d(t, "f", (function() {
-				return g
+				return b
 			}));
 			const n = "DEFAULT",
 				a = "",
@@ -8556,36 +8533,37 @@
 				o = "top",
 				i = "MOD",
 				c = "moderating",
-				d = "UPANDCOMING",
-				l = "up-and-coming",
-				m = "Around the World",
-				u = "/subreddits/leaderboard/",
-				p = {
+				d = "LOCAL_COMMUNITIES",
+				l = "near-you",
+				m = "/subreddits/leaderboard/",
+				u = {
 					id: a,
-					name: a
+					name: a,
+					path: "".concat(m)
 				},
-				h = {
+				p = {
 					id: d,
-					name: l
+					name: l,
+					path: "".concat(m).concat(l, "/")
 				},
-				b = [{
+				h = [{
 					name: "Sports",
 					id: "c1015",
-					path: "".concat(u, "sports/")
+					path: "".concat(m, "sports/")
 				}, {
 					name: "News",
 					id: "c1009",
-					path: "".concat(u, "news/")
+					path: "".concat(m, "news/")
 				}, {
 					name: "Gaming",
 					id: "c1005",
-					path: "".concat(u, "gaming/")
+					path: "".concat(m, "gaming/")
 				}, {
 					name: "Aww",
 					id: "c1000",
-					path: "".concat(u, "aww/")
+					path: "".concat(m, "aww/")
 				}],
-				g = ["Sports", "Gaming", "News", "TV", "Aww", "Memes", "Pics & Gifs", "Travel", "Tech", "Music"]
+				b = ["Sports", "Gaming", "News", "TV", "Aww", "Memes", "Pics & Gifs", "Travel", "Tech", "Music"]
 		},
 		"./src/reddit/contexts/AdminEvents.ts": function(e, t, s) {
 			"use strict";
@@ -9096,9 +9074,9 @@
 				method: "delete"
 			})
 		},
-		"./src/reddit/endpoints/subreddit/models.ts": function(e, t, s) {
+		"./src/reddit/endpoints/subreddit/local.ts": function(e, t, s) {
 			"use strict";
-			var n = s("./src/graphql/operations/SubredditModels.json"),
+			var n = s("./src/graphql/operations/GetNearbySubreddits.json"),
 				a = s("./src/lib/makeGqlRequest/index.ts");
 			t.a = (e, t) => Object(a.a)(e, Object.assign({}, n, {
 				variables: t
@@ -9161,17 +9139,15 @@
 		"./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return i
+				return r
 			})), s.d(t, "c", (function() {
-				return c
+				return o
 			})), s.d(t, "a", (function() {
-				return d
+				return i
 			}));
-			s("./node_modules/core-js/modules/es6.symbol.js");
-			var n = s("./node_modules/lodash/isEmpty.js"),
-				a = s.n(n),
-				r = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				o = function(e, t) {
+			s("./node_modules/core-js/modules/es6.symbol.js"), s("./node_modules/lodash/isEmpty.js");
+			var n = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				a = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -9180,61 +9156,67 @@
 					}
 					return s
 				};
-			const i = e => {
+			const r = e => {
 					let {
 						edges: t,
 						pageInfo: s
 					} = e;
-					const n = {},
-						a = [];
+					const r = {},
+						o = [];
 					for (let i of t) {
 						const {
 							node: e
-						} = i, t = o(i, ["node"]), s = Object(r.a)(e);
-						n[s.id] = s, a.push(t)
+						} = i, t = a(i, ["node"]), s = Object(n.a)(e);
+						r[s.id] = s, o.push(t)
 					}
 					return {
 						pageInfo: s,
-						rankings: a,
-						subreddits: n
+						rankings: o,
+						subreddits: r
 					}
 				},
-				c = e => {
+				o = e => {
 					let {
 						edges: t
 					} = e;
 					const s = {},
-						n = [];
-					for (let a of t) {
+						r = [];
+					for (let o of t) {
 						const {
 							node: e
-						} = a, t = o(a, ["node"]), i = Object(r.a)(e);
+						} = o, t = a(o, ["node"]), i = Object(n.a)(e);
 						s[i.id] = Object.assign({}, i, {
 							bannerBackgroundImage: e && e.styles && e.styles.bannerBackgroundImage
-						}), n.push(t)
+						}), r.push(t)
 					}
 					return {
-						rankings: n,
+						rankings: r,
 						subreddits: s
 					}
 				},
-				d = e => {
-					const t = {},
-						s = [];
-					for (let n = 0; n < e.length; n++) {
-						const o = e[n];
-						if (a()(o)) continue;
-						const i = Object(r.a)(o);
-						t[i.id] = i, s.push({
-							id: i.id,
-							rank: n,
-							rankDelta: 0,
-							cursor: ""
-						})
+				i = e => {
+					let {
+						edges: t,
+						pageInfo: s
+					} = e;
+					const a = {},
+						r = [];
+					let o = 0;
+					for (const {
+							node: i
+						} of t) {
+						const e = Object(n.a)(i);
+						a[e.id] = Object.assign({}, e, {
+							bannerBackgroundImage: i && i.styles && i.styles.bannerBackgroundImage
+						}), r.push({
+							id: e.id,
+							rank: o
+						}), o += 1
 					}
 					return {
-						rankings: s,
-						subreddits: t
+						rankings: r,
+						subreddits: a,
+						pageInfo: s
 					}
 				}
 		},
@@ -12573,25 +12555,10 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.nc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.pc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.kc
+				experimentName: n.mc
 			}))
-		},
-		"./src/reddit/selectors/experiments/upAndComingLeaderboard.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "b", (function() {
-				return r
-			})), s.d(t, "a", (function() {
-				return o
-			}));
-			var n = s("./src/reddit/constants/experiments.ts"),
-				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.qc.All === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: n.pc
-				}),
-				o = ["gwinnett", "broomfield", "bakersfield", "northampton", "newjersey", "mankato", "statenisland", "brampton", "gnv", "inlandempire", "lincoln", "alameda", "abbotsford", "montana", "juneau", "barrie", "newhampshire", "lascruces", "williamsport", "charlotte", "fortwayne", "collinsbeach", "desmoines", "minnesota", "metaquebec", "berkeley", "ohio", "joplinmo", "westchester", "pueblo", "virginia", "oregon", "fortworth", "houston", "washington", "cincinnati", "florenceal", "cedarrapids", "detroit", "bowlinggreen", "greeley", "ames", "newarkohio", "fortcollins", "kingstonontario", "santafe", "fargomoorhead", "daytonabeach", "wilmingtonde", "berkeleyca", "redmond", "panamacity", "maine", "texarkana", "hawaii", "idaho", "edmonton", "hillsboro", "timmins", "everett", "america", "boulder", "humboldt", "coachellavalley", "bayridge", "antelopevalley", "plano", "frisco", "stcharlesmo", "nwt", "rochester", "orlando", "triangle", "guelph", "lehighvalley", "daltonga", "escondido", "lancaster", "hollandmichigan", "peoriail", "asheville", "ventura", "eastside", "orangecounty", "nebraska", "stgeorge", "santabarbara", "kamloops", "algonquinpark", "tahoe", "marin", "tampa", "ozarks", "arlington", "chattanooga", "benicia", "fremont", "elkgrove", "kenosha", "milton", "longmont", "logan", "augusta", "clarksville", "pei", "grandcanyon", "airdrie", "sanjose", "southernillinois", "greenbay", "boston", "cary", "victoriabc", "tempe", "mississippi", "halifax", "destin", "lafayette", "delaware", "dtla", "twincitiessocial", "pflugerville", "harrisonburg", "durango", "cascadia", "albuquerque", "minneapolis", "macon", "corpus", "laredo", "kentwa", "redding", "arkansas", "anaheim", "mobileal", "newyork", "norfolk", "santamonica", "fresno", "somerville", "idahofalls", "indianapolis", "tallahassee", "renton", "lexington", "austin", "ontario", "nyc", "sudbury", "illinois", "puyallupwa", "evanston", "bend", "fairbanks", "westchesterpa", "denver", "readingpa", "venturacounty", "aspen", "keywest", "lakewood", "brownsville", "peterborough", "richmondhill", "staugustine", "moncton", "santaclarita", "huntingtonbeach", "pacifica", "greenville", "roseville", "albany", "southdakota", "waco", "salem", "nwi", "cleveland", "kzoo", "biloxi", "hudsonvalley", "scottsdale", "normanok", "longisland", "kitsap", "yakima", "reno", "beaverton", "medicinehat", "vancouverwa", "salemma", "westvirginia", "southbend", "wisconsin", "lawrence", "seattle", "columbiasc", "columbusga", "roanoke", "texas", "toledo", "brooklyn", "murfreesboro", "rockland", "atlanta", "corpuschristi", "delco", "yellowstone", "bloomington", "corvallis", "vermont", "joshuatree", "vancouver", "jacksonhole", "myrtlebeach", "modesto", "bentonville", "grandforks", "eau_claire", "toronto", "springfieldil", "memphis", "fargo", "siouxfalls", "denton", "stpetersburgfl", "nunavut", "johnstown", "springfieldmo", "quadcities", "durham", "pennsylvania", "southjersey", "spartanburg", "northdakota", "321", "asburypark", "california", "stlouis", "burlington", "seattlewa", "syracuse", "chicago", "fortlauderdale", "ithaca", "twinfalls", "moab", "bloomingtonnormal", "hiltonhead", "riverside", "saginaw", "fayettenam", "maui", "losangeles", "providence", "whistler", "corona", "reddeer", "glendale", "montgomerycountymd", "vancouverisland", "montco", "olympia", "nola", "littlerock", "bronx", "coloradosprings", "vegas", "niagara", "broward", "napa", "springfield", "santarosa", "newbrunswicknj", "columbus", "rhodeisland", "fortmcmurray", "san_angelo", "porttownsend", "yuma", "pasadena", "milwaukee", "ogden", "riograndevalley", "clemson", "tacoma", "camaswashington", "regina", "cypresstx", "novascotia", "plattsburgh", "bullcity", "omaha", "lakeland", "dayton", "auburn", "newhaven", "vaughan", "martinsburg", "maryland", "siliconvalley", "newmexico", "pickering", "hamptonroads", "collegestation", "rolla"]
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, s) {
 			"use strict";
@@ -12675,27 +12642,26 @@
 		"./src/reddit/selectors/subredditLeaderboard.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return o
+				return r
 			})), s.d(t, "b", (function() {
-				return i
+				return o
 			})), s.d(t, "d", (function() {
-				return c
+				return i
 			})), s.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var n = s("./src/reddit/constants/subredditLeaderboard.ts"),
-				a = s("./src/reddit/selectors/category.ts"),
-				r = s("./src/reddit/selectors/experiments/upAndComingLeaderboard.ts");
-			const o = (e, t) => e.subreddits.rankingsPageInfo && e.subreddits.rankingsPageInfo[t] && e.subreddits.rankingsPageInfo[t].hasPreviousPage,
-				i = (e, t) => e.subreddits.rankingsPageInfo && e.subreddits.rankingsPageInfo[t] && e.subreddits.rankingsPageInfo[t].hasNextPage,
-				c = (e, t, s) => t ? n.g : s ? n.l : e || n.a,
-				d = (e, t) => {
+				a = s("./src/reddit/selectors/category.ts");
+			const r = (e, t) => e.subreddits.rankingsPageInfo && e.subreddits.rankingsPageInfo[t] && e.subreddits.rankingsPageInfo[t].hasPreviousPage,
+				o = (e, t) => e.subreddits.rankingsPageInfo && e.subreddits.rankingsPageInfo[t] && e.subreddits.rankingsPageInfo[t].hasNextPage,
+				i = (e, t) => t === n.k ? n.j : t === n.i ? n.h : e || n.a,
+				c = (e, t) => {
 					const s = e.subreddits.rankings,
-						o = t && Object(a.f)(e, {
+						n = t && Object(a.f)(e, {
 							categoryName: t
 						}),
-						i = s[c(o && o.id || null, t === n.h, Object(r.b)(e) && t === n.m)];
-					return !(!i || !i.length)
+						r = s[i(n && n.id || null, t)];
+					return !(!r || !r.length)
 				}
 		},
 		"./src/reddit/selectors/trending.ts": function(e, t, s) {
@@ -12724,4 +12690,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "vendors~Reddit", "Poll~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~~da5a0d34", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.ccc978a76ff9f871b5bd.js.map
+//# sourceMappingURL=Reddit.3128101dea8f72988403.js.map
