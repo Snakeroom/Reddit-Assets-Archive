@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.8c5bdea4aa9ade39df5b.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e403a95bd4e20b7bc426.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -13220,11 +13220,6 @@
 				}, [t, s])
 			}
 		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, s) {
-			"use strict";
-			var n = s("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = n.b
-		},
 		"./src/reddit/icons/fonts/Archived/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -14670,7 +14665,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(lt.Y)(), this.setState({
+						Object(lt.cb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -14983,4 +14978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.8c5bdea4aa9ade39df5b.js.map
+//# sourceMappingURL=ProfileOverview.e403a95bd4e20b7bc426.js.map

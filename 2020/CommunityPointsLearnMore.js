@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9b68082f0af5e48b5586.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.d7479046724c5b8ceda5.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -201,11 +201,6 @@
 					subreddit: Object(n.subredditById)(t, e)
 				})
 		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, a) {
-			"use strict";
-			var n = a("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = n.b
-		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less": function(e, t, a) {
 			e.exports = {
 				carousel: "_3vQyUlP9YLzmdL2rsquLS-",
@@ -307,8 +302,8 @@
 					})
 				}))),
 				_ = a("./src/reddit/controls/Button/index.tsx"),
-				g = a("./src/reddit/helpers/trackers/communityPoints.ts"),
-				f = a("./src/reddit/hooks/useTracking.ts"),
+				f = a("./src/reddit/helpers/trackers/communityPoints.ts"),
+				g = a("./src/reddit/hooks/useTracking.ts"),
 				v = a("./src/reddit/selectors/economics.ts"),
 				E = a("./src/lib/classNames/index.ts"),
 				O = e => s.a.createElement("svg", {
@@ -375,28 +370,28 @@
 						className: C.a.arrowIcon
 					}))))
 				},
-				T = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				k = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/FAQ/index.m.less"),
-				y = a.n(k);
+				y = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				T = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/FAQ/index.m.less"),
+				k = a.n(T);
 
 			function L(e) {
-				const [t, a] = Object(n.useState)(!1), c = Object(f.a)();
+				const [t, a] = Object(n.useState)(!1), c = Object(g.a)();
 				return s.a.createElement("div", {
-					className: y.a.section
+					className: k.a.section
 				}, s.a.createElement("div", {
-					className: y.a.sectionTitle,
+					className: k.a.sectionTitle,
 					onClick: () => {
-						t || c(Object(g.h)(e.id)), a(!t)
+						t || c(Object(f.h)(e.id)), a(!t)
 					}
 				}, e.title, s.a.createElement("button", {
-					className: Object(E.a)(y.a.expando, {
-						[y.a.expanded]: t
+					className: Object(E.a)(k.a.expando, {
+						[k.a.expanded]: t
 					}),
 					"aria-label": "Expand"
-				}, s.a.createElement(T.a, {
-					className: y.a.chevron
+				}, s.a.createElement(y.a, {
+					className: k.a.chevron
 				}))), t && s.a.createElement("div", {
-					className: y.a.text
+					className: k.a.text
 				}, e.children))
 			}
 
@@ -409,15 +404,15 @@
 			}
 			var w = function() {
 					const e = Object(c.d)(v.r),
-						t = Object(f.a)();
+						t = Object(g.a)();
 					Object(n.useEffect)(() => {
-						t(Object(g.g)())
+						t(Object(f.g)())
 					}, [t]);
 					const a = e && e.faq || [];
 					return s.a.createElement("div", {
-						className: y.a.container
+						className: k.a.container
 					}, s.a.createElement("div", {
-						className: y.a.title
+						className: k.a.title
 					}, "Frequently Asked Questions"), a.map(e => e.pages.map(e => s.a.createElement(L, {
 						id: e.analyticsPageName,
 						title: e.title,
@@ -426,10 +421,10 @@
 						dangerouslySetInnerHTML: {
 							__html: e.text
 						},
-						className: y.a.subSection,
+						className: k.a.subSection,
 						key: t
 					}) : "image" in e ? s.a.createElement("div", {
-						className: y.a.imageSection,
+						className: k.a.imageSection,
 						key: t
 					}, s.a.createElement(P, {
 						id: e.image
@@ -441,9 +436,9 @@
 				fbt: S
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = function() {
-				const [e, t] = Object(n.useState)(!1), [a, i] = Object(n.useState)(!1), l = Object(c.d)(o.e), d = Object(c.d)(v.r), m = Object(f.a)();
+				const [e, t] = Object(n.useState)(!1), [a, i] = Object(n.useState)(!1), l = Object(c.d)(o.e), d = Object(c.d)(v.r), m = Object(g.a)();
 				Object(n.useEffect)(() => {
-					m(Object(g.i)())
+					m(Object(f.i)())
 				}, [m]);
 				const u = d && d.learnMore.title;
 				return s.a.createElement("div", {
@@ -455,7 +450,7 @@
 				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(_.f, {
 					className: U.a.createVaultButton,
 					onClick: () => {
-						m(Object(g.c)()), l ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : i(!0)
+						m(Object(f.c)()), l ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : i(!0)
 					}
 				}, S._("Create My Vault", null, {
 					hk: "3ZzMgD"
@@ -466,4 +461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.9b68082f0af5e48b5586.js.map
+//# sourceMappingURL=CommunityPointsLearnMore.d7479046724c5b8ceda5.js.map

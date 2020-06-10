@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.cabf78ec81d625be968a.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.a99ef354afe739ce32d5.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.cabf78ec81d625be968a.js.map
+//# sourceMappingURL=GovernanceVotingBanner.a99ef354afe739ce32d5.js.map

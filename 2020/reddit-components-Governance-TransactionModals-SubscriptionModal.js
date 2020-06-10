@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.dac50b70495a3ac8e935.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.2e58643f371b5ca86ba5.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, n) {
@@ -299,12 +299,7 @@
 					noun: "cancel_membership_with_points",
 					subreddit: Object(a.subredditById)(t, e)
 				})
-		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
-			"use strict";
-			var a = n("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = a.b
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.dac50b70495a3ac8e935.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.2e58643f371b5ca86ba5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b6390484b51933c36100.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2a3733eb39fb45a94086.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -577,13 +577,13 @@
 					const [s, n] = Object(r.useState)(!0), i = Object(l.a)(), u = Object(r.useCallback)(() => {
 						i(Object(a.a)("click", t))
 					}, [t, i]), m = Object(r.useCallback)(() => {
-						n(!0), i(Object(d.c)(t.id, t)), Object(c.Q)(t.id, t.maxImpressionsCount)
+						n(!0), i(Object(d.c)(t.id, t)), Object(c.U)(t.id, t.maxImpressionsCount)
 					}, [t, i]);
 					return Object(r.useEffect)(() => {
 						const {
 							id: e
 						} = t, s = Object(c.n)(e);
-						t && s < t.maxImpressionsCount && (n(!1), Object(c.Q)(e, s + 1))
+						t && s < t.maxImpressionsCount && (n(!1), Object(c.U)(e, s + 1))
 					}, []), s ? null : o.a.createElement(h, {
 						announcement: t,
 						onBtnClick: u,
@@ -1371,8 +1371,8 @@
 				K = s("./src/reddit/selectors/meta.ts"),
 				W = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				q = s("./src/reddit/selectors/user.ts"),
-				Q = s("./src/lib/constants/index.ts"),
-				G = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				G = s("./src/lib/constants/index.ts"),
+				Q = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				Z = s("./src/lib/objectSelector/index.ts"),
 				J = s("./src/reddit/constants/page.ts"),
 				z = s("./src/reddit/pages/Frontpage/index.m.less"),
@@ -1411,16 +1411,16 @@
 				isLoggedIn: q.H,
 				isPopular: U.C,
 				isRpanDuVisible: e => Object(W.a)(e, {
-					listingName: G.P
+					listingName: Q.P
 				}),
 				rpanInjectionIndex: e => Object(W.b)(e, {
-					listingName: G.P
+					listingName: Q.P
 				}),
 				layout: U.N
 			}), re = () => Object(b.a)(se, te, ne, e => Object(W.a)(e, {
-				listingName: G.P
+				listingName: Q.P
 			}), e => Object(W.b)(e, {
-				listingName: G.P
+				listingName: Q.P
 			}), e => e, (e, t, s, n, r, o) => {
 				let {
 					countryMeta: i,
@@ -1430,9 +1430,9 @@
 					sort: d
 				} = t;
 				const l = S.t in a && a[S.t].toUpperCase(),
-					u = "string" == typeof l && l in Q.Qb ? Q.Qb[l] : Q.Rb,
+					u = "string" == typeof l && l in G.Qb ? G.Qb[l] : G.Rb,
 					m = Object(v.a)(J.a, d, a),
-					p = i || Q.v.Everywhere,
+					p = i || G.v.Everywhere,
 					h = c || p,
 					b = S.g in a ? a[S.g].toUpperCase() : h,
 					g = [];
@@ -1527,7 +1527,7 @@
 							desiredIndex: c,
 							layout: o,
 							listingKey: i,
-							listingName: G.P,
+							listingName: Q.P,
 							sendEvent: a
 						});
 						u[t] = e
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.b6390484b51933c36100.js.map
+//# sourceMappingURL=Frontpage.2a3733eb39fb45a94086.js.map

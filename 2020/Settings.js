@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.aab3b8abd05929fd19b9.js
-// Retrieved at 6/9/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c8a7ed28de47dd2a5342.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -3482,11 +3482,6 @@
 					}
 				})
 		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = s.b
-		},
 		"./src/reddit/icons/svgs/Best/index.m.less": function(e, t, n) {
 			e.exports = {
 				best: "_3SejsWL-17KHAzDgcp66kT"
@@ -4359,7 +4354,7 @@
 					const [t, n] = Object(a.useState)(!1), s = e.hasLinkedIdentities || e.isInSSOSettingsVariant || t;
 					return Object(a.useEffect)(() => {
 						if (e.userId) {
-							const t = !!Object(ot.B)(e.userId);
+							const t = !!Object(ot.E)(e.userId);
 							n(t)
 						}
 					}, [e.userId]), o.a.createElement(at, it({
@@ -5310,7 +5305,7 @@
 							permission: n
 						} = e;
 						let s = !1;
-						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ot.J(t)), this.setState(e => ({
+						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ot.N(t)), this.setState(e => ({
 							desktopNotifications: s ? t : e.desktopNotifications,
 							notificationPermission: n
 						})), this.lastNotificationsState = e
@@ -5320,7 +5315,7 @@
 						this.setState({
 							desktopNotifications: e
 						}, () => {
-							this.trackPreferenceToggled("desktop_notification_permissions", e), ot.J(e)
+							this.trackPreferenceToggled("desktop_notification_permissions", e), ot.N(e)
 						})
 					}, this.handleBroadcastRecommendationsClick = () => {
 						const {
@@ -7051,4 +7046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.aab3b8abd05929fd19b9.js.map
+//# sourceMappingURL=Settings.c8a7ed28de47dd2a5342.js.map

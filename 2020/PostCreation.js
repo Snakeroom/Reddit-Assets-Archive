@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.10d0b83ce1eec787f43d.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.96e0541d5385dba7994f.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -26519,13 +26519,13 @@
 			const nn = [{
 					id: Bt.d,
 					getShowTimesLeft: $t.v,
-					setShowTimesLeft: $t.X,
+					setShowTimesLeft: $t.bb,
 					tooltipShown: en.n,
 					tooltipDismissed: en.m
 				}, {
 					id: Bt.c,
 					getShowTimesLeft: $t.u,
-					setShowTimesLeft: $t.W,
+					setShowTimesLeft: $t.ab,
 					tooltipShown: en.f,
 					tooltipDismissed: en.e
 				}],
@@ -26733,7 +26733,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object($t.K)(xn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object($t.O)(xn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -30760,4 +30760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.10d0b83ce1eec787f43d.js.map
+//# sourceMappingURL=PostCreation.96e0541d5385dba7994f.js.map

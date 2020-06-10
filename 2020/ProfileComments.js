@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.08fa1b9fb2e4e82c6331.js
-// Retrieved at 6/9/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ae7e3bf4a8fa37b75cd5.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -9115,11 +9115,6 @@
 				}, [t, n])
 			}
 		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = s.b
-		},
 		"./src/reddit/icons/fonts/Archived/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -9897,4 +9892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.08fa1b9fb2e4e82c6331.js.map
+//# sourceMappingURL=ProfileComments.ae7e3bf4a8fa37b75cd5.js.map

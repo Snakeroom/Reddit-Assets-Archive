@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a0fa4e5bb3ab8eab03ab.js
-// Retrieved at 6/10/2020, 5:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.67079930c415d85c5d21.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -43,7 +43,7 @@
 			e.exports = JSON.parse('{"id":"c03afa35c319"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"40e0d6101ae5"}')
+			e.exports = JSON.parse('{"id":"d02a27625b88"}')
 		},
 		"./src/graphql/operations/GetPostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"4231b7734ef9"}')
@@ -70,7 +70,7 @@
 			e.exports = JSON.parse('{"id":"3c148c0b5100"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"095999a356b9"}')
+			e.exports = JSON.parse('{"id":"3c366ec0d06c"}')
 		},
 		"./src/graphql/operations/OtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"717c239ddb6a"}')
@@ -118,7 +118,7 @@
 			e.exports = JSON.parse('{"id":"e74dba05ccd0"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"cecb82dfb088"}')
+			e.exports = JSON.parse('{"id":"89b9e0d1dcfa"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -148,7 +148,7 @@
 			e.exports = JSON.parse('{"id":"3b630128c0db"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"95bf7bda37f4"}')
+			e.exports = JSON.parse('{"id":"79dce724cd33"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -1266,7 +1266,7 @@
 					t(w({
 						categoryId: e,
 						rank: s + 1
-					})), Object(u.H)(Object(l.e)(n()))
+					})), Object(u.L)(Object(l.e)(n()))
 				}
 		},
 		"./src/reddit/actions/changeUsername.ts": function(e, t, n) {
@@ -7055,12 +7055,12 @@
 					return async (e, a) => {
 						if (!s) return;
 						if (!(t === p.f || t === p.b)) return;
-						0 === E(o.db).length && Object(f.V)(!1);
+						0 === E(o.db).length && Object(f.Z)(!1);
 						let l = a();
 						if (Object(g.d)(l, {
 								listingKey: n,
 								postId: s
-							}) || Object(g.a)(l).length >= b.a || Object(f.A)() || E(o.w).length >= b.a) return;
+							}) || Object(g.a)(l).length >= b.a || Object(f.D)() || E(o.w).length >= b.a) return;
 						const O = Object(_.C)(l, {
 							listingKey: n,
 							postId: s
@@ -7117,14 +7117,14 @@
 				v = (Object(a.a)(S), "FEED_CHAINING__CHAINING_TOGGLED"),
 				T = Object(a.a)(v),
 				w = () => async e => {
-					Object(f.V)(!0), e(T({
+					Object(f.Z)(!0), e(T({
 						isDismissed: !0
 					})), e(Object(l.e)(Object(l.d)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), O.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(f.V)(!1), e(T({
+						Object(f.Z)(!1), e(T({
 							isDismissed: !1
 						}))
 					})))
@@ -7467,7 +7467,7 @@
 						t(p(e))
 					}
 				}, h = () => async (e, t, n) => {
-					Object(c.U)(a.a.REDESIGN_MODAL, !0), Object(l.H)(t()) && Object(i.e)(n.apiContext())
+					Object(c.Y)(a.a.REDESIGN_MODAL, !0), Object(l.H)(t()) && Object(i.e)(n.apiContext())
 				}, y = "SET_ACCOUNT_MANAGER_MODAL_DATA";
 			var j;
 			! function(e) {
@@ -10693,7 +10693,7 @@
 					id: "createPostCta",
 					kind: R.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(C.S)(),
+					secondButtonAction: async () => Object(C.W)(),
 					secondButtonText: "Dismiss",
 					text: "There have been over ".concat(g, " visits to r/").concat(o, " in the past week. Create a new post and start the next conversation.")
 				}))
@@ -12550,7 +12550,7 @@
 						}),
 						kind: l.b.SuccessCommunity,
 						text: c
-					})), Object(i.L)(r + 1)
+					})), Object(i.P)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/general.ts": function(e, t, n) {
@@ -14997,7 +14997,7 @@
 					return Object(a.o)(o.y) || void 0
 				}, l = () => async (e, t) => {
 					const n = t().publicAccessNetwork.userSettings;
-					Object(a.R)(o.y, n)
+					Object(a.V)(o.y, n)
 				}
 		},
 		"./src/reddit/actions/reCaptchaEnterprise.ts": function(e, t, n) {
@@ -19972,7 +19972,7 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[v.c, v.d, v.h, v.i].forEach(T), Object(A.C)(null), Object(w.a)(j.a.JustLoggedOut, !0), window.location.reload()
+						[v.c, v.d, v.h, v.i].forEach(T), Object(A.F)(null), Object(w.a)(j.a.JustLoggedOut, !0), window.location.reload()
 					})
 				}, P = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), k = n("./src/reddit/helpers/trackers/emailCollection.ts"), x = n("./src/reddit/helpers/trackers/emailVerification.ts"), N = n("./src/reddit/models/Toast/index.ts"), L = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), F = n("./src/reddit/selectors/user.ts"), G = n("./src/telemetry/index.ts"), B = function(e, t) {
 					var n = {};
@@ -21352,7 +21352,7 @@
 				r = "showRpanDu",
 				o = "topContentDismissalTime",
 				a = "topContentTimesDismissed",
-				i = [...["openPostInNewTab", "rememberCommunitySort", "sort", "stylesEnabled", "useMarkdown", "layout", "rememberCommunityLayout", "hasSeenCustomizeFlyout", "reduceAnimationsFromAwards", s, r, o, a], "activityRelevantAds", "thirdPartyDataPersonalizedAds", "thirdPartySiteDataPersonalizedAds", "thirdPartySiteDataPersonalizedContent", "showLocationBasedRecommendations"]
+				i = [...["openPostInNewTab", "rememberCommunitySort", "sort", "stylesEnabled", "useMarkdown", "layout", "rememberCommunityLayout", "hasSeenCustomizeFlyout", "reduceAnimationsFromAwards", s, r, o, a, "surveyLastSeenTime"], "activityRelevantAds", "thirdPartyDataPersonalizedAds", "thirdPartySiteDataPersonalizedAds", "thirdPartySiteDataPersonalizedContent", "showLocationBasedRecommendations"]
 		},
 		"./src/reddit/constants/shortcuts.ts": function(e, t, n) {
 			"use strict";
@@ -24207,7 +24207,8 @@
 				thirdPartyDataPersonalizedAds: "third_party_data_personalized_ads",
 				thirdPartySiteDataPersonalizedAds: "third_party_site_data_personalized_ads",
 				thirdPartySiteDataPersonalizedContent: "third_party_site_data_personalized_content",
-				showLocationBasedRecommendations: "show_location_based_recommendations"
+				showLocationBasedRecommendations: "show_location_based_recommendations",
+				surveyLastSeenTime: "survey_last_seen_time"
 			};
 			var c = e => {
 				const t = {};
@@ -25701,7 +25702,8 @@
 					useMarkdown: e.isMarkdownDefaultEditorMode,
 					rememberCommunityLayout: e.isCommunityLayoutPreserved,
 					layout: e.postFeedLayout.toLowerCase(),
-					hasSeenCustomizeFlyout: t && t.isDefaultPostLayoutAware
+					hasSeenCustomizeFlyout: t && t.isDefaultPostLayoutAware,
+					surveyLastSeenTime: e.surveyLastSeenAt ? new Date(e.surveyLastSeenAt).getTime() : void 0
 				}
 			})
 		},
@@ -51652,6 +51654,7 @@
 					stylesEnabled: !0,
 					subreddit: {},
 					subscriptionsPinned: void 0,
+					surveyLastSeenTime: void 0,
 					thirdPartyDataPersonalizedAds: !0,
 					thirdPartySiteDataPersonalizedAds: !0,
 					thirdPartySiteDataPersonalizedContent: !0,
@@ -54269,4 +54272,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a0fa4e5bb3ab8eab03ab.js.map
+//# sourceMappingURL=Governance~Reddit.67079930c415d85c5d21.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.37e68417e4a6769acc17.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.bdb4b395bf4b73115e8f.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -928,7 +928,7 @@
 			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.G)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.K)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -4551,7 +4551,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(lt.T)(_t, !0, this.props.subredditId), this.props.sendEvent(Object(mt.d)("close"))
+						}), Object(lt.X)(_t, !0, this.props.subredditId), this.props.sendEvent(Object(mt.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(mt.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -7483,4 +7483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.37e68417e4a6769acc17.js.map
+//# sourceMappingURL=Subreddit.bdb4b395bf4b73115e8f.js.map

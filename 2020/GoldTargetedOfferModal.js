@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.20e44ae931b5dadabf8c.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.ccfa36fc088503bae92a.js
+// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/components/Gold/TargetedOfferModal/index.m.less": function(e, t, n) {
@@ -17,9 +17,9 @@
 		"./src/reddit/components/Gold/TargetedOfferModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				a = n("./node_modules/react/index.js"),
-				s = n.n(a),
+			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
 				c = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -56,7 +56,7 @@
 						purchasePackageId: i
 					} = e,
 					m = n.filter(e => e.mobileId === i)[0];
-				if (Object(a.useEffect)(() => {
+				if (Object(r.useEffect)(() => {
 						m && (Object(d.d)(d.a.GoldPayment), t(Object(l.h)(void 0, m.mobileId)))
 					}, []), !m) return c(), null;
 				const {
@@ -70,15 +70,15 @@
 					title: I,
 					subtitle: w,
 					type: M
-				} = _, v = I || ("low_coin_upsell" === M ? r.fbt._("You’re low on Coins", null, {
+				} = _, v = I || ("low_coin_upsell" === M ? a.fbt._("You’re low on Coins", null, {
 					hk: "2rWB40"
-				}) : r.fbt._("Special Offer!", null, {
+				}) : a.fbt._("Special Offer!", null, {
 					hk: "2wnTrq"
-				})), T = w || r.fbt._("Stock up and save with this limited-time offer", null, {
+				})), T = w || a.fbt._("Stock up and save with this limited-time offer", null, {
 					hk: "2eml5T"
-				}), x = O ? r.fbt._("Buy {coin amount} for {price} and get {bonus coins percentage} bonus Coins", [r.fbt._param("coin amount", p.toLocaleString()), r.fbt._param("price", "$".concat(m.pennies / 100)), r.fbt._param("bonus coins percentage", P)], {
+				}), x = O ? a.fbt._("Buy {coin amount} for {price} and get {bonus coins percentage} bonus Coins", [a.fbt._param("coin amount", p.toLocaleString()), a.fbt._param("price", "$".concat(m.pennies / 100)), a.fbt._param("bonus coins percentage", P)], {
 					hk: "2KNC96"
-				}) : C ? r.fbt._("Save {baseline price} off normal price!", [r.fbt._param("baseline price", "$".concat(j / 100))], {
+				}) : C ? a.fbt._("Save {baseline price} off normal price!", [a.fbt._param("baseline price", "$".concat(j / 100))], {
 					hk: "CRTYf"
 				}) : m.description;
 				return s.a.createElement(f.d, {
@@ -99,17 +99,17 @@
 					className: h.a.deal
 				}, x), s.a.createElement("p", {
 					className: h.a.agreementLink
-				}, r.fbt._("By purchasing Coins, you agree to our {user agreement} and {privacy plicy}", [r.fbt._param("user agreement", s.a.createElement("a", {
+				}, a.fbt._("By purchasing Coins, you agree to our {user agreement} and {privacy plicy}", [a.fbt._param("user agreement", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, r.fbt._("User Agreement", null, {
+				}, a.fbt._("User Agreement", null, {
 					hk: "n6txc"
-				}))), r.fbt._param("privacy plicy", s.a.createElement("a", {
+				}))), a.fbt._param("privacy plicy", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/privacy-policy",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, r.fbt._("Privacy Policy", null, {
+				}, a.fbt._("Privacy Policy", null, {
 					hk: "11oBec"
 				})))], {
 					hk: "3RTwKy"
@@ -119,7 +119,7 @@
 					onClick: () => {
 						t(Object(l.a)(k)), o(m)
 					}
-				}, r.fbt._("Purchase", null, {
+				}, a.fbt._("Purchase", null, {
 					hk: "l3q4W"
 				})))
 			})))
@@ -145,8 +145,8 @@
 			})), n.d(t, "i", (function() {
 				return j
 			}));
-			var r = n("./src/lib/constants/index.ts"),
-				a = n("./src/reddit/selectors/gold/giveAwards.ts"),
+			var a = n("./src/lib/constants/index.ts"),
+				r = n("./src/reddit/selectors/gold/giveAwards.ts"),
 				s = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				c = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				o = n("./src/reddit/selectors/platform.ts"),
@@ -160,7 +160,7 @@
 					const {
 						thingId: n,
 						packageId: o
-					} = t, l = a.a(e), b = l ? Object(u.getAwardTypeFromAward)(l) : null, g = n ? b : c.n(e) ? d.Premium : d.Coins, f = n ? Object(p.a)(n) ? "comment" : "post" : void 0, _ = o || c.q(e), h = [...Object(s.b)(e), ...Object(s.d)(e)].filter(e => e.mobileId === _)[0], y = h && h.dealInfo && h.dealInfo.type, k = "low_coin_upsell" === y;
+					} = t, l = r.a(e), b = l ? Object(u.getAwardTypeFromAward)(l) : null, g = n ? b : c.n(e) ? d.Premium : d.Coins, f = n ? Object(p.a)(n) ? "comment" : "post" : void 0, _ = o || c.q(e), h = [...Object(s.b)(e), ...Object(s.d)(e)].filter(e => e.mobileId === _)[0], y = h && h.dealInfo && h.dealInfo.type, k = "low_coin_upsell" === y;
 					let O;
 					k && (O = "low_coin_balance"), "new_purchaser" === y && (O = "new_user_targeted_offer"), "repeat_purchaser" === y && (O = "repeat_user_targeted_offer");
 					const P = h ? Math.round(1e4 * (h.baselinePennies - h.pennies) / h.baselinePennies) / 100 : 0,
@@ -186,7 +186,7 @@
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: g === d.Premium ? r.mb : h ? h.pennies : void 0
+							amountInSmallestDenom: g === d.Premium ? a.mb : h ? h.pennies : void 0
 						}
 					})
 				},
@@ -269,12 +269,7 @@
 						})
 					})
 				}
-		},
-		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
-			"use strict";
-			var r = n("./src/reddit/components/TrackingHelper/index.tsx");
-			t.a = r.b
 		}
 	}
 ]);
-//# sourceMappingURL=GoldTargetedOfferModal.20e44ae931b5dadabf8c.js.map
+//# sourceMappingURL=GoldTargetedOfferModal.ccfa36fc088503bae92a.js.map
