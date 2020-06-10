@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a5b702df63093b53725b.js
-// Retrieved at 6/8/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.75dc15fa27b3fa520645.js
+// Retrieved at 6/10/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -989,9 +989,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: s.V
 				});
-				return !(!t || Object(s.xc)(t))
+				return !(!t || Object(s.wc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.a5b702df63093b53725b.js.map
+//# sourceMappingURL=reddit-components-MediumPost.75dc15fa27b3fa520645.js.map
