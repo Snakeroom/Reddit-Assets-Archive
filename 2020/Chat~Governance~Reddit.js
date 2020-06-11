@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.55e89723da22825db791.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c29061a08767a7cacef0.js
+// Retrieved at 6/11/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1598,8 +1598,7 @@
 				},
 				stripe: {
 					apiKey: Object(n.b)() || Object(n.c)() ? "pk_live_sD8LeDtVnlJwAGf51jLygWpH" : "pk_test_Me5fd06PSuMkMF5YnwuMfFf4",
-					economyKey: Object(n.b)() ? "pk_live_tF9aUVWi0EYaLI2PlX64Bg2x" : "pk_test_JdtxSeAF4NWzMbtc7R7PshMT",
-					powerupsKey: "pk_test_EyWNxJN8RF8fgMXy1VvJbt7I"
+					economyKey: Object(n.b)() ? "pk_live_tF9aUVWi0EYaLI2PlX64Bg2x" : "pk_test_JdtxSeAF4NWzMbtc7R7PshMT"
 				},
 				paypal: {
 					apiKey: {}.PAYPAL_API_KEY || (Object(n.b)() || Object(n.c)() ? "AXHUGZNCrshqynIpOLkQjqlsrA26Knvf4EB5w1RKfsdxKdsA5WSNo9H_Gng6plKyc48qGhXtmwcYahRy" : "AXH6yPVeFV8sxT1zMvzr8NyPMXx_YkYui1XCy3btQ_s1Zz2R68JC57PqQ2mrj6la-G8y-7UmZyKVsDaR"),
@@ -3262,14 +3261,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("05f751b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("987efd6-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "05f751b-production",
+						release: "987efd6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3631,7 +3630,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "05f751b-production",
+							releaseClient: "987efd6-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -21447,4 +21446,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.55e89723da22825db791.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.c29061a08767a7cacef0.js.map
