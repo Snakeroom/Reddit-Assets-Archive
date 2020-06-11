@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0f8d4df0201b7bf94775.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8297cc29aa31f1e8a0c8.js
+// Retrieved at 6/10/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -5235,8 +5235,10 @@
 						hk: "4n0y9e"
 					}), this.primaryButtonText = () => this.isInviteMembersURLAction() ? this.getInviteMembersText() : O.fbt._("Start a chat", null, {
 						hk: "4BZNdM"
-					}), this.getBlockedContactText = e => e ? O.fbt._("blocked", null, {
+					}), this.getBlockedContactText = e => e.isBlocked ? O.fbt._("blocked", null, {
 						hk: "3BVDae"
+					}) : !1 === e.acceptChats ? O.fbt._("unable to message this account", null, {
+						hk: "SDEZ3"
 					}) : this.isSubredditChannel() ? O.fbt._("already in room", null, {
 						hk: "108K9z"
 					}) : O.fbt._("already in group", null, {
@@ -5390,9 +5392,9 @@
 						threshold: 0
 					}, Io()(p, e => e.name).map(e => r.a.createElement(ri, {
 						key: e.name
-					}, i(e.id) || e.isBlocked ? r.a.createElement(Xo, {
+					}, i(e.id) || e.isBlocked || !1 === e.acceptChats ? r.a.createElement(Xo, {
 						contact: e,
-						context: this.getBlockedContactText(!!e.isBlocked)
+						context: this.getBlockedContactText(e)
 					}) : r.a.createElement(Go, {
 						formName: ni,
 						contact: e,
@@ -5408,14 +5410,14 @@
 						onChange: u
 					}, r.a.createElement(li, null, a, C && r.a.createElement(di, null, O.fbt._("User doesn't exist", null, {
 						hk: "2nKv7P"
-					}))))), j && g && r.a.createElement(ri, null, I || !i(g.id) && !g.isBlocked ? r.a.createElement(Go, {
+					}))))), j && g && r.a.createElement(ri, null, !I && (i(g.id) || g.isBlocked) || !1 === g.acceptChats ? r.a.createElement(Xo, {
+						contact: g,
+						context: this.getBlockedContactText(g)
+					}) : r.a.createElement(Go, {
 						formName: ni,
 						contact: g,
 						onChange: u,
 						isChecked: o
-					}) : r.a.createElement(Xo, {
-						contact: g,
-						context: this.getBlockedContactText(!!g.isBlocked)
 					})))), r.a.createElement(lo, {
 						primaryButtonText: y,
 						primaryButtonDisabled: v,
@@ -9756,7 +9758,7 @@
 			function s(e) {
 				return e ? e.map(r).filter(e => !!e) : []
 			}
-			const c = 3;
+			const c = 4;
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
@@ -9767,7 +9769,8 @@
 					linkKarma: e.link_karma,
 					commentKarma: e.comment_karma,
 					profileImg: e.profile_img,
-					isNSFW: e.profile_over_18
+					isNSFW: e.profile_over_18,
+					acceptChats: e.accept_chats
 				}
 			}
 			const o = {
@@ -14041,4 +14044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.0f8d4df0201b7bf94775.js.map
+//# sourceMappingURL=Chat~RedesignChat.8297cc29aa31f1e8a0c8.js.map

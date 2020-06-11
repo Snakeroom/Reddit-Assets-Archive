@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3a90db8d656f1799b0c8.js
-// Retrieved at 6/10/2020, 7:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.82246b75833e57a003ab.js
+// Retrieved at 6/10/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4618,48 +4618,29 @@
 					saveChatSettings: t => e(Object(wt.c)(t))
 				}))(e => {
 					let {
-						addBlocked: t,
-						addWhitelisted: n,
-						blocked: a,
-						blockedApi: r,
-						chatSettings: i,
+						addWhitelisted: t,
+						chatSettings: n,
 						prefs: {
-							acceptPrivateMessages: c
+							acceptPrivateMessages: a
 						},
-						removeBlocked: l,
-						removeWhitelisted: d,
-						saveChatSettings: m,
-						update: u,
-						whitelist: p,
-						whitelistApi: b
+						removeWhitelisted: r,
+						saveChatSettings: i,
+						update: c,
+						whitelist: l,
+						whitelistApi: d
 					} = e;
 					return o.a.createElement(me.a, null, o.a.createElement(de.b, {
 						isResponsiveSettingsEnabled: !1
 					}, s.fbt._("Chat & Messaging", null, {
 						hk: "1hQy2z"
-					})), o.a.createElement(Zt, {
-						title: s.fbt._("People You’ve Blocked", null, {
-							hk: "gHecT"
-						}),
-						subtext: s.fbt._("Blocked people can’t send you chat requests or private messages.", null, {
-							hk: "1T35vT"
-						}),
-						label: s.fbt._("Block new user", null, {
-							hk: "2Nv3pc"
-						}),
-						add: t,
-						remove: l,
-						list: a,
-						api: r,
-						padBottom: !0
-					}), o.a.createElement(ee.d, {
+					})), o.a.createElement(ee.d, {
 						label: s.fbt._("Who can send you chat requests", null, {
 							hk: "4pTJIe"
 						}),
 						items: [Et.a.anybody, Et.a.account_age_30_days, Et.a.nobody],
-						selected: i.invitePolicy,
+						selected: n.invitePolicy,
 						onClick: e => {
-							m({
+							i({
 								invitePolicy: e
 							})
 						},
@@ -4672,23 +4653,23 @@
 							hk: "3fmM1O"
 						}),
 						items: [xt.a.Everyone, xt.a.Whitelisted],
-						selected: c,
-						onClick: e => u(e, "acceptPrivateMessages"),
+						selected: a,
+						onClick: e => c(e, "acceptPrivateMessages"),
 						id: "acceptPrivateMessages"
-					}), o.a.createElement(Kt, null, o.a.createElement(Zt, {
+					}), a === xt.a.Whitelisted && o.a.createElement(Kt, null, o.a.createElement(Zt, {
 						title: s.fbt._("People You’ve Whitelisted", null, {
-							hk: "22S3xn"
+							hk: "2dIqgE"
 						}),
 						subtext: s.fbt._("Whitelisted people can always send you private messages.", null, {
-							hk: "3MTRrt"
+							hk: "1UCnvc"
 						}),
-						label: s.fbt._("ADD NEW USER TO WHITELIST", null, {
-							hk: "1lqyIL"
+						label: s.fbt._("Add new user to whitelist", null, {
+							hk: "4pvEey"
 						}),
-						add: n,
-						remove: d,
-						list: p,
-						api: b
+						add: t,
+						remove: r,
+						list: l,
+						api: d
 					})))
 				}),
 				en = n("./src/reddit/components/Settings/Creator/Header/index.m.less"),
@@ -5894,37 +5875,30 @@
 				}))(e => {
 					let {
 						addBlocked: t,
-						addWhitelisted: n,
-						blocked: a,
-						blockedApi: r,
-						chatSettings: i,
+						blocked: n,
+						blockedApi: a,
 						prefs: {
-							acceptPrivateMessages: c,
-							allowClickTracking: l,
-							hideFromRobots: d,
-							activityRelevantAds: u,
-							loginOtpEnabled: p,
-							thirdPartyDataPersonalizedAds: b,
-							thirdPartySiteDataPersonalizedAds: h,
-							thirdPartySiteDataPersonalizedContent: g,
-							showLocationBasedRecommendations: f
+							allowClickTracking: r,
+							hideFromRobots: i,
+							activityRelevantAds: c,
+							loginOtpEnabled: l,
+							thirdPartyDataPersonalizedAds: d,
+							thirdPartySiteDataPersonalizedAds: u,
+							thirdPartySiteDataPersonalizedContent: p,
+							showLocationBasedRecommendations: b
 						},
-						enable2FA: v,
-						disable2FA: _,
-						generateBackupCodes: y,
-						isResponsiveSettingsEnabled: k,
-						removeBlocked: C,
-						removeWhitelisted: x,
-						saveChatSettings: E,
-						update: w,
-						whitelist: S,
-						whitelistApi: O,
-						shouldShowLocationBasedSetting: j
+						enable2FA: h,
+						disable2FA: g,
+						generateBackupCodes: f,
+						isResponsiveSettingsEnabled: v,
+						removeBlocked: _,
+						update: y,
+						shouldShowLocationBasedSetting: k
 					} = e;
 					return o.a.createElement(me.a, null, o.a.createElement(de.b, {
-						isResponsiveSettingsEnabled: k
-					}, s.fbt._("Privacy & Security", null, {
-						hk: "2az3xN"
+						isResponsiveSettingsEnabled: v
+					}, s.fbt._("Safety & Privacy", null, {
+						hk: "3hohgI"
 					})), o.a.createElement(de.a, null, s.fbt._("Manage how we use data to personalize your Reddit experience, and control how other redditors interact with you. To learn more, visit our {=Privacy & Security FAQs} .", [s.fbt._param("=Privacy & Security FAQs", o.a.createElement(na, null, s.fbt._("{=Privacy & Security FAQs}", [s.fbt._param("=Privacy & Security FAQs", o.a.createElement("a", {
 						href: fe.a.redditHelpUrl.privacyQuestions,
 						rel: "noopener noreferrer",
@@ -5935,11 +5909,28 @@
 						hk: "2rwJJE"
 					})))], {
 						hk: "3appHO"
-					})), o.a.createElement($.a, null, s.fbt._("Privacy", null, {
+					})), o.a.createElement($.a, null, s.fbt._("Safety", null, {
+						hk: "WyYmF"
+					})), o.a.createElement(Zt, {
+						title: s.fbt._("People You’ve Blocked", null, {
+							hk: "3DxcE1"
+						}),
+						subtext: s.fbt._("Blocked people can’t send you chat requests or private messages.", null, {
+							hk: "1m7s07"
+						}),
+						label: s.fbt._("Block new user", null, {
+							hk: "2OeU8N"
+						}),
+						add: t,
+						remove: _,
+						list: n,
+						api: a,
+						padBottom: !0
+					}), o.a.createElement($.a, null, s.fbt._("Privacy", null, {
 						hk: "30eaw9"
 					})), o.a.createElement(ee.o, {
-						on: !d,
-						onClick: () => w(!d, "hideFromRobots"),
+						on: !i,
+						onClick: () => y(!i, "hideFromRobots"),
 						label: s.fbt._("Show up in search results", null, {
 							hk: "3TWi4z"
 						}),
@@ -5947,8 +5938,8 @@
 							hk: "4tnz3n"
 						})
 					}), o.a.createElement(ee.o, {
-						on: l,
-						onClick: () => w(!l, "allowClickTracking"),
+						on: r,
+						onClick: () => y(!r, "allowClickTracking"),
 						label: s.fbt._("Personalize all of Reddit based on the outbound links you click on", null, {
 							hk: "21vbvn"
 						}),
@@ -5956,8 +5947,8 @@
 							hk: "DnCX0"
 						})
 					}), o.a.createElement(ee.o, {
-						on: u,
-						onClick: () => w(!u, "activityRelevantAds"),
+						on: c,
+						onClick: () => y(!c, "activityRelevantAds"),
 						label: s.fbt._("Personalize ads based on your Reddit activity", null, {
 							hk: "OqV13"
 						}),
@@ -5965,8 +5956,8 @@
 							hk: "4C7zO1"
 						})
 					}), o.a.createElement(ee.o, {
-						on: b,
-						onClick: () => w(!b, "thirdPartyDataPersonalizedAds"),
+						on: d,
+						onClick: () => y(!d, "thirdPartyDataPersonalizedAds"),
 						label: s.fbt._("Personalize ads based on information from our partners", null, {
 							hk: "4pLCAq"
 						}),
@@ -5974,17 +5965,17 @@
 							hk: "37eGRC"
 						})
 					}), o.a.createElement(ee.o, {
-						on: h,
-						onClick: () => w(!h, "thirdPartySiteDataPersonalizedAds"),
+						on: u,
+						onClick: () => y(!u, "thirdPartySiteDataPersonalizedAds"),
 						label: s.fbt._("Personalize ads based on your activity with our partners", null, {
 							hk: "3uQVuS"
 						}),
 						subtext: s.fbt._("Allow us to use your interactions with sites and apps we partner with to show you better ads.", null, {
 							hk: "2T8SXc"
 						})
-					}), j && o.a.createElement(ee.o, {
-						on: f,
-						onClick: () => w(!f, "showLocationBasedRecommendations"),
+					}), k && o.a.createElement(ee.o, {
+						on: b,
+						onClick: () => y(!b, "showLocationBasedRecommendations"),
 						label: s.fbt._("Personalize recommendations based on your general location", null, {
 							hk: "2ila4i"
 						}),
@@ -5992,8 +5983,8 @@
 							hk: "5IBGv"
 						})
 					}), o.a.createElement(ee.o, {
-						on: g,
-						onClick: () => w(!g, "thirdPartySiteDataPersonalizedContent"),
+						on: p,
+						onClick: () => y(!p, "thirdPartySiteDataPersonalizedContent"),
 						label: s.fbt._("Personalize recommendations based on your activity with our partners", null, {
 							hk: "2D9ITr"
 						}),
@@ -6004,24 +5995,24 @@
 					}), o.a.createElement($.a, null, s.fbt._("Advanced security", null, {
 						hk: "3H7FJN"
 					})), o.a.createElement(ee.o, {
-						on: p,
-						onClick: () => p ? _() : v(),
+						on: l,
+						onClick: () => l ? g() : h(),
 						label: s.fbt._("Use two-factor authentication", null, {
 							hk: "2OxNGe"
 						}),
 						subtext: o.a.createElement(o.a.Fragment, null, s.fbt._("Help protect your account (even if someone gets your password) by requiring a verification code and a password to log in.", null, {
 							hk: "1LLqPh"
-						}), p && o.a.createElement(o.a.Fragment, null, " ", s.fbt._("Lost access to your authenticator app?", null, {
+						}), l && o.a.createElement(o.a.Fragment, null, " ", s.fbt._("Lost access to your authenticator app?", null, {
 							hk: "2x6g0Y"
 						}), " ", o.a.createElement(sa, {
 							type: "button",
-							onClick: () => y()
+							onClick: () => f()
 						}, s.fbt._("Get your backup codes", null, {
 							hk: "4fp3Xg"
 						})), "."))
 					}), o.a.createElement(aa, {
 						className: Object(m.a)({
-							[Yt.a["m-responsive"]]: k
+							[Yt.a["m-responsive"]]: v
 						}),
 						label: s.fbt._("Manage third-party app authorization", null, {
 							hk: "3J65so"
@@ -6774,8 +6765,8 @@
 					})
 				}, {
 					key: u.Mb.Privacy,
-					title: s.fbt._("Privacy & Security", null, {
-						hk: "1ENMtm"
+					title: s.fbt._("Safety & Privacy", null, {
+						hk: "4hchEz"
 					})
 				}, {
 					key: u.Mb.Feed,
@@ -7051,4 +7042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.3a90db8d656f1799b0c8.js.map
+//# sourceMappingURL=Settings.82246b75833e57a003ab.js.map
