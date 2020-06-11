@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.512d4af461dfb6919f2f.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.a81792f92e9eaa230e6e.js
+// Retrieved at 6/11/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -602,7 +602,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
 			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				n = r("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = r("./node_modules/buffer/index.js").Buffer;
+				i = r("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
 
 			function a(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.512d4af461dfb6919f2f.js.map
+//# sourceMappingURL=vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33.a81792f92e9eaa230e6e.js.map

@@ -1,13 +1,10 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.0ab2f486a7b1a9665968.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.4a9e27bcd41a7d62e436.js
+// Retrieved at 6/11/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/agentkeepalive/browser.js": function(e, n) {
 			function t() {}
 			e.exports = t, e.exports.HttpsAgent = t
-		},
-		"./node_modules/form-data/lib/browser.js": function(e, n) {
-			e.exports = "object" == typeof self ? self.FormData : window.FormData
 		},
 		"./node_modules/lodash/_baseDelay.js": function(e, n) {
 			var t = "Expected a function";
@@ -261,7 +258,7 @@
 					})), n += "--" + e + "--"
 				}, o = e;
 				else if ("undefined" == typeof window && "undefined" == typeof FormData) try {
-					o = t("./node_modules/form-data/lib/browser.js")
+					o = t("./node_modules/sendbird/node_modules/form-data/lib/browser.js")
 				} catch (e) {}
 				var d = function(e, n, t) {
 						if (t && "function" == typeof t)
@@ -3863,6 +3860,9 @@
 				}().SendBird
 			}()
 		},
+		"./node_modules/sendbird/node_modules/form-data/lib/browser.js": function(e, n) {
+			e.exports = "object" == typeof self ? self.FormData : window.FormData
+		},
 		"./node_modules/websocket/lib/browser.js": function(e, n, t) {
 			var r = function() {
 					return this
@@ -3887,4 +3887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~RedesignChat.0ab2f486a7b1a9665968.js.map
+//# sourceMappingURL=vendors~Chat~RedesignChat.4a9e27bcd41a7d62e436.js.map
