@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ecd288e4d44ae5385bf6.js
-// Retrieved at 6/11/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.11683ec03394d8b9fdea.js
+// Retrieved at 6/11/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1117,8 +1117,9 @@
 			}(n || (n = {}));
 			const a = (e, t) => {
 					if (t) {
-						const s = c.media(e, t.post.id);
-						if (s) {
+						const s = c.media(e, t.post.id),
+							n = c.post(e, t.post.id);
+						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(i.h)(e, {
 								streamIdFromPath: t.post.id
@@ -1126,18 +1127,17 @@
 							n === i.a.LIVE ? s.type = "stream_live" : n === i.a.VOD ? s.type = "stream_vod" : n === i.a.UNAVAILABLE && (s.type = "stream_unavailable")
 						}
 						if (t.post.subreddit) {
-							const n = {
-								id: t.post.subreddit.id,
-								name: t.post.subreddit.name
-							};
 							return {
-								post: c.post(e, t.post.id),
+								post: n,
 								media: s,
-								subreddit: n
+								subreddit: {
+									id: t.post.subreddit.id,
+									name: t.post.subreddit.name
+								}
 							}
 						}
 						return {
-							post: c.post(e, t.post.id),
+							post: n,
 							media: s
 						}
 					}
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.ecd288e4d44ae5385bf6.js.map
+//# sourceMappingURL=Frontpage.11683ec03394d8b9fdea.js.map
