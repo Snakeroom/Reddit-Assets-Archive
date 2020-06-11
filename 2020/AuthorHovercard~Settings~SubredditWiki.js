@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.57252599ad8bfdc50015.js
-// Retrieved at 6/10/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Settings~SubredditWiki.c7550bacd04000abe3de.js
+// Retrieved at 6/11/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -315,7 +315,7 @@
 						className: t,
 						id: s,
 						style: p
-					}, a.a.createElement(Ne, {
+					}, N && a.a.createElement(Ne, {
 						style: {
 							backgroundImage: "url('".concat(N, "')")
 						}
@@ -1015,4 +1015,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.57252599ad8bfdc50015.js.map
+//# sourceMappingURL=AuthorHovercard~Settings~SubredditWiki.c7550bacd04000abe3de.js.map

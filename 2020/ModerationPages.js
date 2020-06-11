@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6af94df11176823a21a6.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a2fbd4150b99ae9ab0f3.js
+// Retrieved at 6/11/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -10538,7 +10538,7 @@
 						className: t,
 						id: a,
 						style: p
-					}, o.a.createElement(Pe, {
+					}, P && o.a.createElement(Pe, {
 						style: {
 							backgroundImage: "url('".concat(P, "')")
 						}
@@ -28890,4 +28890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.6af94df11176823a21a6.js.map
+//# sourceMappingURL=ModerationPages.a2fbd4150b99ae9ab0f3.js.map
