@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85.89d5b210bfc876cd6658.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85.aaad862b367893465412.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"], {
 		"./node_modules/asap/browser-asap.js": function(e, t, n) {
@@ -1304,7 +1304,7 @@
 				}, s
 			};
 			var r = a(n("./node_modules/lodash/isPlainObject.js")),
-				o = a(n("./node_modules/dnd-core/node_modules/symbol-observable/index.js"));
+				o = a(n("./node_modules/symbol-observable/es/index.js"));
 
 			function a(e) {
 				return e && e.__esModule ? e : {
@@ -1313,34 +1313,6 @@
 			}
 			var i = t.ActionTypes = {
 				INIT: "@@redux/INIT"
-			}
-		},
-		"./node_modules/dnd-core/node_modules/symbol-observable/index.js": function(e, t, n) {
-			e.exports = n("./node_modules/dnd-core/node_modules/symbol-observable/lib/index.js")
-		},
-		"./node_modules/dnd-core/node_modules/symbol-observable/lib/index.js": function(e, t, n) {
-			"use strict";
-			(function(e, r) {
-				Object.defineProperty(t, "__esModule", {
-					value: !0
-				});
-				var o, a, i = n("./node_modules/dnd-core/node_modules/symbol-observable/lib/ponyfill.js"),
-					s = (o = i) && o.__esModule ? o : {
-						default: o
-					};
-				a = "undefined" != typeof self ? self : "undefined" != typeof window ? window : void 0 !== e ? e : r;
-				var u = (0, s.default)(a);
-				t.default = u
-			}).call(this, n("./node_modules/webpack/buildin/global.js"), n("./node_modules/webpack/buildin/module.js")(e))
-		},
-		"./node_modules/dnd-core/node_modules/symbol-observable/lib/ponyfill.js": function(e, t, n) {
-			"use strict";
-			Object.defineProperty(t, "__esModule", {
-				value: !0
-			}), t.default = function(e) {
-				var t, n = e.Symbol;
-				"function" == typeof n ? n.observable ? t = n.observable : (t = n("observable"), n.observable = t) : t = "@@observable";
-				return t
 			}
 		},
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -3467,7 +3439,9 @@
 			var r = n("./node_modules/react-dnd/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function o() {}
-			e.exports = function() {
+
+			function a() {}
+			a.resetWarningCache = o, e.exports = function() {
 				function e(e, t, n, o, a, i) {
 					if (i !== r) {
 						var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -3490,15 +3464,18 @@
 					any: e,
 					arrayOf: t,
 					element: e,
+					elementType: e,
 					instanceOf: t,
 					node: e,
 					objectOf: t,
 					oneOf: t,
 					oneOfType: t,
 					shape: t,
-					exact: t
+					exact: t,
+					checkPropTypes: a,
+					resetWarningCache: o
 				};
-				return n.checkPropTypes = o, n.PropTypes = n, n
+				return n.PropTypes = n, n
 			}
 		},
 		"./node_modules/react-dnd/node_modules/prop-types/index.js": function(e, t, n) {
@@ -3510,4 +3487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85.89d5b210bfc876cd6658.js.map
+//# sourceMappingURL=vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85.aaad862b367893465412.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5a1f748076029845b6fa.js
-// Retrieved at 6/11/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cb1bf9f4357a8e07a0ff.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -258,24 +258,44 @@
 		},
 		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, t, n) {
 			"use strict";
+
+			function o(e, t) {
+				e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
+			}
 			n.d(t, "a", (function() {
 				return u
 			}));
-			var o = n("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
-				s = n("./node_modules/react/index.js"),
+			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				i = n("./node_modules/react-router/esm/react-router.js"),
-				a = n("./node_modules/history/esm/history.js"),
-				c = (n("./node_modules/react-router-dom/node_modules/prop-types/index.js"), n("./node_modules/@babel/runtime/helpers/esm/extends.js")),
-				l = n("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
-				d = n("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+				a = n("./node_modules/history/esm/history.js");
+			n("./node_modules/react-router-dom/node_modules/prop-types/index.js");
+
+			function c() {
+				return (c = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+
+			function l(e, t) {
+				if (null == e) return {};
+				var n, o, s = {},
+					r = Object.keys(e);
+				for (o = 0; o < r.length; o++) n = r[o], t.indexOf(n) >= 0 || (s[n] = e[n]);
+				return s
+			}
+			var d = n("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 			r.a.Component;
 			r.a.Component;
 			var u = function(e) {
 				function t() {
 					return e.apply(this, arguments) || this
 				}
-				Object(o.a)(t, e);
+				o(t, e);
 				var n = t.prototype;
 				return n.handleClick = function(e, t) {
 					try {
@@ -291,12 +311,12 @@
 						t = this.props,
 						n = t.innerRef,
 						o = (t.replace, t.to),
-						s = Object(l.a)(t, ["innerRef", "replace", "to"]);
+						s = l(t, ["innerRef", "replace", "to"]);
 					return r.a.createElement(i.g.Consumer, null, (function(t) {
 						t || Object(d.default)(!1);
 						var i = "string" == typeof o ? Object(a.c)(o, null, null, t.location) : o,
 							l = i ? t.history.createHref(i) : "";
-						return r.a.createElement("a", Object(c.a)({}, s, {
+						return r.a.createElement("a", c({}, s, {
 							onClick: function(n) {
 								return e.handleClick(n, t.history)
 							},
@@ -312,7 +332,9 @@
 			var o = n("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function s() {}
-			e.exports = function() {
+
+			function r() {}
+			r.resetWarningCache = s, e.exports = function() {
 				function e(e, t, n, s, r, i) {
 					if (i !== o) {
 						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -335,15 +357,18 @@
 					any: e,
 					arrayOf: t,
 					element: e,
+					elementType: e,
 					instanceOf: t,
 					node: e,
 					objectOf: t,
 					oneOf: t,
 					oneOfType: t,
 					shape: t,
-					exact: t
+					exact: t,
+					checkPropTypes: r,
+					resetWarningCache: s
 				};
-				return n.checkPropTypes = s, n.PropTypes = n, n
+				return n.PropTypes = n, n
 			}
 		},
 		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, t, n) {
@@ -30770,4 +30795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5a1f748076029845b6fa.js.map
+//# sourceMappingURL=PostCreation.cb1bf9f4357a8e07a0ff.js.map

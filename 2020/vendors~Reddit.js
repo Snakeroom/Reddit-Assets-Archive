@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.30e875af1e0a7058203f.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.0d64a6e40188c6b7a4e8.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/google-tag-manager/compiled.js": function(e, r, o) {
@@ -25,11 +25,11 @@
 			var a = "gtm-" + (0, n.v4)(),
 				i = !1,
 				u = [],
-				d = function() {
+				c = function() {
 					var e = document.getElementById(a);
 					return e && e.contentWindow ? e : null
 				},
-				c = r.getLocation = function() {
+				d = r.getLocation = function() {
 					return {
 						href: location.href,
 						hostname: location.hostname,
@@ -40,7 +40,7 @@
 					}
 				},
 				l = r.trigger = function(e, r) {
-					var o = d();
+					var o = c();
 					o && i ? (r && s.postMessage(o.contentWindow, "data.gtm", r), s.postMessage(o.contentWindow, "event.gtm", {
 						event: e
 					})) : function(e, r) {
@@ -51,7 +51,7 @@
 					}(e, r)
 				},
 				p = function() {
-					if (d() && i) {
+					if (c() && i) {
 						var e = u.slice();
 						u = [], e.forEach((function(e) {
 							var r = e.eventName,
@@ -72,7 +72,7 @@
 						var u = document.createElement("iframe");
 						u.style.display = "none", u.id = a, u.name = JSON.stringify(t({
 							referrer: document.referrer
-						}, c(), n)), u.src = o + "?id=" + r, u.onload = p, document.body.appendChild(u)
+						}, d(), n)), u.src = o + "?id=" + r, u.onload = p, document.body.appendChild(u)
 					} else console.warn("GTM#setup: No `jailUrl` specified, skipping.");
 				else console.warn("GTM#setup: No `containerId` specified, skipping.")
 			}
@@ -117,21 +117,21 @@
 				a = [1 | s[0], s[1], s[2], s[3], s[4], s[5]],
 				i = 16383 & (s[6] << 8 | s[7]),
 				u = 0,
-				d = 0;
+				c = 0;
 			e.exports = function(e, r, o) {
 				var t = r && o || 0,
 					s = r || [],
-					c = void 0 !== (e = e || {}).clockseq ? e.clockseq : i,
+					d = void 0 !== (e = e || {}).clockseq ? e.clockseq : i,
 					l = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
-					p = void 0 !== e.nsecs ? e.nsecs : d + 1,
-					f = l - u + (p - d) / 1e4;
-				if (f < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (f < 0 || l > u) && void 0 === e.nsecs && (p = 0), p >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				u = l, d = p, i = c;
+					p = void 0 !== e.nsecs ? e.nsecs : c + 1,
+					f = l - u + (p - c) / 1e4;
+				if (f < 0 && void 0 === e.clockseq && (d = d + 1 & 16383), (f < 0 || l > u) && void 0 === e.nsecs && (p = 0), p >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				u = l, c = p, i = d;
 				var m = (1e4 * (268435455 & (l += 122192928e5)) + p) % 4294967296;
 				s[t++] = m >>> 24 & 255, s[t++] = m >>> 16 & 255, s[t++] = m >>> 8 & 255, s[t++] = 255 & m;
 				var g = l / 4294967296 * 1e4 & 268435455;
-				s[t++] = g >>> 8 & 255, s[t++] = 255 & g, s[t++] = g >>> 24 & 15 | 16, s[t++] = g >>> 16 & 255, s[t++] = c >>> 8 | 128, s[t++] = 255 & c;
-				for (var h = e.node || a, v = 0; v < 6; ++v) s[t + v] = h[v];
+				s[t++] = g >>> 8 & 255, s[t++] = 255 & g, s[t++] = g >>> 24 & 15 | 16, s[t++] = g >>> 16 & 255, s[t++] = d >>> 8 | 128, s[t++] = 255 & d;
+				for (var v = e.node || a, h = 0; h < 6; ++h) s[t + h] = v[h];
 				return r || n(s)
 			}
 		},
@@ -164,7 +164,7 @@
 			}
 			var u = new Map;
 
-			function d(e) {
+			function c(e) {
 				void 0 === e && (e = {});
 				for (var r, o = e.root || null, t = function(e) {
 						var r = (e ? e.trim() : "0px").split(/\s+/).map((function(e) {
@@ -177,15 +177,15 @@
 							s = void 0 === n ? t : n,
 							i = r[2],
 							u = void 0 === i ? t : i,
-							d = r[3];
-						return t + " " + s + " " + u + " " + (void 0 === d ? s : d)
+							c = r[3];
+						return t + " " + s + " " + u + " " + (void 0 === c ? s : c)
 					}(e.rootMargin), n = Array.isArray(e.threshold) ? e.threshold : [null != e.threshold ? e.threshold : 0], s = u.keys(); r = s.next().value;) {
 					if (!(o !== r.root || t !== r.rootMargin || i(n, r.thresholds))) return r
 				}
 				return null
 			}
 
-			function c(e, r) {
+			function d(e, r) {
 				var o = u.get(e);
 				if (o)
 					for (var t, n = o.values(); t = n.next().value;)
@@ -195,18 +195,18 @@
 
 			function l(e, r) {
 				for (var o = 0; o < e.length; o++) {
-					var t = c(r, e[o]);
+					var t = d(r, e[o]);
 					t && t.handleChange(e[o])
 				}
 			}
 
 			function p(e) {
-				return d(e) || new IntersectionObserver(l, e)
+				return c(e) || new IntersectionObserver(l, e)
 			}
 			var f = o("./node_modules/invariant/browser.js"),
 				m = o.n(f),
 				g = {},
-				h = Object.create(null, {
+				v = Object.create(null, {
 					errorReporter: {
 						configurable: !1,
 						get: function() {
@@ -221,12 +221,12 @@
 					}
 				});
 
-			function v(e) {
+			function h(e) {
 				if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 				return e
 			}
 
-			function b(e, r, o) {
+			function y(e, r, o) {
 				return r in e ? Object.defineProperty(e, r, {
 					value: o,
 					enumerable: !0,
@@ -234,13 +234,13 @@
 					writable: !0
 				}) : e[r] = o, e
 			}
-			var y = ["root", "rootMargin", "threshold"],
+			var b = ["root", "rootMargin", "threshold"],
 				_ = ["root", "rootMargin", "threshold", "disabled"],
 				j = Object.prototype,
 				O = j.hasOwnProperty,
 				w = j.toString,
 				T = function(e) {
-					return y.reduce((function(r, o) {
+					return b.reduce((function(r, o) {
 						if (O.call(e, o)) {
 							var t = "root" === o && "[object String]" === w.call(e[o]);
 							r[o] = t ? document.querySelector(e[o]) : e[o]
@@ -253,26 +253,26 @@
 
 					function t() {
 						for (var r, o = arguments.length, t = new Array(o), n = 0; n < o; n++) t[n] = arguments[n];
-						return b(v(r = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
+						return y(h(r = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
 							r.props.onChange(e, r.externalUnobserve)
-						})), b(v(r), "handleNode", (function(e) {
+						})), y(h(r), "handleNode", (function(e) {
 							var o = r.props.children;
 							if (null != o) {
 								var t = o.ref;
 								t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e))
 							}
 							r.targetNode = e && Object(s.findDOMNode)(e)
-						})), b(v(r), "observe", (function() {
-							return null != r.props.children && !r.props.disabled && (r.targetNode ? (r.observer = p(T(r.props)), r.target = r.targetNode, e = v(r), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (h.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+						})), y(h(r), "observe", (function() {
+							return null != r.props.children && !r.props.disabled && (r.targetNode ? (r.observer = p(T(r.props)), r.target = r.targetNode, e = h(r), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), b(v(r), "unobserve", (function(e) {
+						})), y(h(r), "unobserve", (function(e) {
 							! function(e, r) {
 								if (u.has(e.observer)) {
 									var o = u.get(e.observer);
 									o.delete(e) && (o.size > 0 ? e.observer.unobserve(r) : (e.observer.disconnect(), u.delete(e.observer)))
 								}
-							}(v(r), e)
-						})), b(v(r), "externalUnobserve", (function() {
+							}(h(r), e)
+						})), y(h(r), "externalUnobserve", (function() {
 							r.unobserve(r.targetNode)
 						})), r
 					}
@@ -299,7 +299,7 @@
 						}) : null
 					}, t
 				}(n.a.Component);
-			b(x, "displayName", "IntersectionObserver")
+			y(x, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, r, o) {
 			"use strict";
@@ -379,24 +379,44 @@
 		},
 		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, r, o) {
 			"use strict";
+
+			function t(e, r) {
+				e.prototype = Object.create(r.prototype), e.prototype.constructor = e, e.__proto__ = r
+			}
 			o.d(r, "a", (function() {
 				return l
 			}));
-			var t = o("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
-				n = o("./node_modules/react/index.js"),
+			var n = o("./node_modules/react/index.js"),
 				s = o.n(n),
 				a = o("./node_modules/react-router/esm/react-router.js"),
-				i = o("./node_modules/history/esm/history.js"),
-				u = (o("./node_modules/react-router-dom/node_modules/prop-types/index.js"), o("./node_modules/@babel/runtime/helpers/esm/extends.js")),
-				d = o("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
-				c = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+				i = o("./node_modules/history/esm/history.js");
+			o("./node_modules/react-router-dom/node_modules/prop-types/index.js");
+
+			function u() {
+				return (u = Object.assign || function(e) {
+					for (var r = 1; r < arguments.length; r++) {
+						var o = arguments[r];
+						for (var t in o) Object.prototype.hasOwnProperty.call(o, t) && (e[t] = o[t])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+
+			function c(e, r) {
+				if (null == e) return {};
+				var o, t, n = {},
+					s = Object.keys(e);
+				for (t = 0; t < s.length; t++) o = s[t], r.indexOf(o) >= 0 || (n[o] = e[o]);
+				return n
+			}
+			var d = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 			s.a.Component;
 			s.a.Component;
 			var l = function(e) {
 				function r() {
 					return e.apply(this, arguments) || this
 				}
-				Object(t.a)(r, e);
+				t(r, e);
 				var o = r.prototype;
 				return o.handleClick = function(e, r) {
 					try {
@@ -412,16 +432,16 @@
 						r = this.props,
 						o = r.innerRef,
 						t = (r.replace, r.to),
-						n = Object(d.a)(r, ["innerRef", "replace", "to"]);
+						n = c(r, ["innerRef", "replace", "to"]);
 					return s.a.createElement(a.g.Consumer, null, (function(r) {
-						r || Object(c.default)(!1);
+						r || Object(d.default)(!1);
 						var a = "string" == typeof t ? Object(i.c)(t, null, null, r.location) : t,
-							d = a ? r.history.createHref(a) : "";
-						return s.a.createElement("a", Object(u.a)({}, n, {
+							c = a ? r.history.createHref(a) : "";
+						return s.a.createElement("a", u({}, n, {
 							onClick: function(o) {
 								return e.handleClick(o, r.history)
 							},
-							href: d,
+							href: c,
 							ref: o
 						}))
 					}))
@@ -433,7 +453,9 @@
 			var t = o("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function n() {}
-			e.exports = function() {
+
+			function s() {}
+			s.resetWarningCache = n, e.exports = function() {
 				function e(e, r, o, n, s, a) {
 					if (a !== t) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -456,15 +478,18 @@
 					any: e,
 					arrayOf: r,
 					element: e,
+					elementType: e,
 					instanceOf: r,
 					node: e,
 					objectOf: r,
 					oneOf: r,
 					oneOfType: r,
 					shape: r,
-					exact: r
+					exact: r,
+					checkPropTypes: s,
+					resetWarningCache: n
 				};
-				return o.checkPropTypes = n, o.PropTypes = o, o
+				return o.PropTypes = o, o
 			}
 		},
 		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, r, o) {
@@ -476,4 +501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Reddit.30e875af1e0a7058203f.js.map
+//# sourceMappingURL=vendors~Reddit.0d64a6e40188c6b7a4e8.js.map

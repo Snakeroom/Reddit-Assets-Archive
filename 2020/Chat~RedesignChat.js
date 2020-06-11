@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8297cc29aa31f1e8a0c8.js
-// Retrieved at 6/10/2020, 8:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f3521193104b75981587.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -14044,4 +14044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.8297cc29aa31f1e8a0c8.js.map
+//# sourceMappingURL=Chat~RedesignChat.f3521193104b75981587.js.map

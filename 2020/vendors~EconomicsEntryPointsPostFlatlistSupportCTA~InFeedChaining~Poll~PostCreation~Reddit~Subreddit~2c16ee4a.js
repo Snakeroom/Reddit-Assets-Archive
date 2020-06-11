@@ -1,26 +1,26 @@
-// https://www.redditstatic.com/desktop2x/vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a.375fa8e474afa92c8ccc.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a.9d925314bf52bf7e06f2.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"], {
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0;
-			var o = Object.assign || function(e) {
+			var r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				},
-				r = function() {
+				o = function() {
 					function e(e, t) {
 						for (var n = 0; n < t.length; n++) {
-							var o = t[n];
-							o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o)
+							var r = t[n];
+							r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
 						}
 					}
-					return function(t, n, o) {
-						return n && e(t.prototype, n), o && e(t, o), t
+					return function(t, n, r) {
+						return n && e(t.prototype, n), r && e(t, r), t
 					}
 				}();
 
@@ -33,19 +33,19 @@
 				i = a(n("./node_modules/react-motion/lib/stripStyle.js")),
 				s = a(n("./node_modules/react-motion/lib/stepper.js")),
 				u = a(n("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
-				c = a(n("./node_modules/react-motion/node_modules/raf/index.js")),
+				c = a(n("./node_modules/raf/index.js")),
 				d = a(n("./node_modules/react-motion/lib/shouldStopAnimation.js")),
 				f = a(n("./node_modules/react/index.js")),
 				p = a(n("./node_modules/react-motion/node_modules/prop-types/index.js")),
 				m = 1e3 / 60,
 				y = function(e) {
 					function t(n) {
-						var r = this;
+						var o = this;
 						! function(e, t) {
 							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 						}(this, t), e.call(this, n), this.wasAnimating = !1, this.animationID = null, this.prevTime = 0, this.accumulatedTime = 0, this.unreadPropStyle = null, this.clearUnreadPropStyle = function(e) {
 							var t = !1,
-								n = r.state,
+								n = o.state,
 								a = n.currentStyle,
 								l = n.currentVelocity,
 								i = n.lastIdealStyle,
@@ -53,23 +53,23 @@
 							for (var u in e)
 								if (Object.prototype.hasOwnProperty.call(e, u)) {
 									var c = e[u];
-									"number" == typeof c && (t || (t = !0, a = o({}, a), l = o({}, l), i = o({}, i), s = o({}, s)), a[u] = c, l[u] = 0, i[u] = c, s[u] = 0)
-								} t && r.setState({
+									"number" == typeof c && (t || (t = !0, a = r({}, a), l = r({}, l), i = r({}, i), s = r({}, s)), a[u] = c, l[u] = 0, i[u] = c, s[u] = 0)
+								} t && o.setState({
 								currentStyle: a,
 								currentVelocity: l,
 								lastIdealStyle: i,
 								lastIdealVelocity: s
 							})
 						}, this.startAnimationIfNecessary = function() {
-							r.animationID = c.default((function(e) {
-								var t = r.props.style;
-								if (d.default(r.state.currentStyle, t, r.state.currentVelocity)) return r.wasAnimating && r.props.onRest && r.props.onRest(), r.animationID = null, r.wasAnimating = !1, void(r.accumulatedTime = 0);
-								r.wasAnimating = !0;
+							o.animationID = c.default((function(e) {
+								var t = o.props.style;
+								if (d.default(o.state.currentStyle, t, o.state.currentVelocity)) return o.wasAnimating && o.props.onRest && o.props.onRest(), o.animationID = null, o.wasAnimating = !1, void(o.accumulatedTime = 0);
+								o.wasAnimating = !0;
 								var n = e || u.default(),
-									o = n - r.prevTime;
-								if (r.prevTime = n, r.accumulatedTime = r.accumulatedTime + o, r.accumulatedTime > 10 * m && (r.accumulatedTime = 0), 0 === r.accumulatedTime) return r.animationID = null, void r.startAnimationIfNecessary();
-								var a = (r.accumulatedTime - Math.floor(r.accumulatedTime / m) * m) / m,
-									l = Math.floor(r.accumulatedTime / m),
+									r = n - o.prevTime;
+								if (o.prevTime = n, o.accumulatedTime = o.accumulatedTime + r, o.accumulatedTime > 10 * m && (o.accumulatedTime = 0), 0 === o.accumulatedTime) return o.animationID = null, void o.startAnimationIfNecessary();
+								var a = (o.accumulatedTime - Math.floor(o.accumulatedTime / m) * m) / m,
+									l = Math.floor(o.accumulatedTime / m),
 									i = {},
 									c = {},
 									f = {},
@@ -79,21 +79,21 @@
 										var h = t[y];
 										if ("number" == typeof h) f[y] = h, p[y] = 0, i[y] = h, c[y] = 0;
 										else {
-											for (var v = r.state.lastIdealStyle[y], b = r.state.lastIdealVelocity[y], _ = 0; _ < l; _++) {
+											for (var v = o.state.lastIdealStyle[y], b = o.state.lastIdealVelocity[y], _ = 0; _ < l; _++) {
 												var S = s.default(m / 1e3, v, b, h.val, h.stiffness, h.damping, h.precision);
 												v = S[0], b = S[1]
 											}
 											var j = s.default(m / 1e3, v, b, h.val, h.stiffness, h.damping, h.precision),
 												g = j[0],
-												w = j[1];
-											f[y] = v + (g - v) * a, p[y] = b + (w - b) * a, i[y] = v, c[y] = b
+												T = j[1];
+											f[y] = v + (g - v) * a, p[y] = b + (T - b) * a, i[y] = v, c[y] = b
 										}
-									} r.animationID = null, r.accumulatedTime -= l * m, r.setState({
+									} o.animationID = null, o.accumulatedTime -= l * m, o.setState({
 									currentStyle: f,
 									currentVelocity: p,
 									lastIdealStyle: i,
 									lastIdealVelocity: c
-								}), r.unreadPropStyle = null, r.startAnimationIfNecessary()
+								}), o.unreadPropStyle = null, o.startAnimationIfNecessary()
 							}))
 						}, this.state = this.defaultState()
 					}
@@ -107,7 +107,7 @@
 								configurable: !0
 							}
 						}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-					}(t, e), r(t, null, [{
+					}(t, e), o(t, null, [{
 						key: "propTypes",
 						value: {
 							defaultStyle: p.default.objectOf(p.default.number),
@@ -120,13 +120,13 @@
 						var e = this.props,
 							t = e.defaultStyle,
 							n = e.style,
-							o = t || i.default(n),
-							r = l.default(o);
+							r = t || i.default(n),
+							o = l.default(r);
 						return {
-							currentStyle: o,
-							currentVelocity: r,
-							lastIdealStyle: o,
-							lastIdealVelocity: r
+							currentStyle: r,
+							currentVelocity: o,
+							lastIdealStyle: r,
+							lastIdealVelocity: o
 						}
 					}, t.prototype.componentDidMount = function() {
 						this.prevTime = u.default(), this.startAnimationIfNecessary()
@@ -144,22 +144,22 @@
 		"./node_modules/react-motion/lib/StaggeredMotion.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0;
-			var o = Object.assign || function(e) {
+			var r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				},
-				r = function() {
+				o = function() {
 					function e(e, t) {
 						for (var n = 0; n < t.length; n++) {
-							var o = t[n];
-							o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o)
+							var r = t[n];
+							r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
 						}
 					}
-					return function(t, n, o) {
-						return n && e(t.prototype, n), o && e(t, o), t
+					return function(t, n, r) {
+						return n && e(t.prototype, n), r && e(t, r), t
 					}
 				}();
 
@@ -172,44 +172,44 @@
 				i = a(n("./node_modules/react-motion/lib/stripStyle.js")),
 				s = a(n("./node_modules/react-motion/lib/stepper.js")),
 				u = a(n("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
-				c = a(n("./node_modules/react-motion/node_modules/raf/index.js")),
+				c = a(n("./node_modules/raf/index.js")),
 				d = a(n("./node_modules/react-motion/lib/shouldStopAnimation.js")),
 				f = a(n("./node_modules/react/index.js")),
 				p = a(n("./node_modules/react-motion/node_modules/prop-types/index.js")),
 				m = 1e3 / 60;
 			var y = function(e) {
 				function t(n) {
-					var r = this;
+					var o = this;
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					}(this, t), e.call(this, n), this.animationID = null, this.prevTime = 0, this.accumulatedTime = 0, this.unreadPropStyles = null, this.clearUnreadPropStyle = function(e) {
-						for (var t = r.state, n = t.currentStyles, a = t.currentVelocities, l = t.lastIdealStyles, i = t.lastIdealVelocities, s = !1, u = 0; u < e.length; u++) {
+						for (var t = o.state, n = t.currentStyles, a = t.currentVelocities, l = t.lastIdealStyles, i = t.lastIdealVelocities, s = !1, u = 0; u < e.length; u++) {
 							var c = e[u],
 								d = !1;
 							for (var f in c)
 								if (Object.prototype.hasOwnProperty.call(c, f)) {
 									var p = c[f];
-									"number" == typeof p && (d || (d = !0, s = !0, n[u] = o({}, n[u]), a[u] = o({}, a[u]), l[u] = o({}, l[u]), i[u] = o({}, i[u])), n[u][f] = p, a[u][f] = 0, l[u][f] = p, i[u][f] = 0)
+									"number" == typeof p && (d || (d = !0, s = !0, n[u] = r({}, n[u]), a[u] = r({}, a[u]), l[u] = r({}, l[u]), i[u] = r({}, i[u])), n[u][f] = p, a[u][f] = 0, l[u][f] = p, i[u][f] = 0)
 								}
 						}
-						s && r.setState({
+						s && o.setState({
 							currentStyles: n,
 							currentVelocities: a,
 							lastIdealStyles: l,
 							lastIdealVelocities: i
 						})
 					}, this.startAnimationIfNecessary = function() {
-						r.animationID = c.default((function(e) {
-							var t = r.props.styles(r.state.lastIdealStyles);
+						o.animationID = c.default((function(e) {
+							var t = o.props.styles(o.state.lastIdealStyles);
 							if (function(e, t, n) {
-									for (var o = 0; o < e.length; o++)
-										if (!d.default(e[o], t[o], n[o])) return !1;
+									for (var r = 0; r < e.length; r++)
+										if (!d.default(e[r], t[r], n[r])) return !1;
 									return !0
-								}(r.state.currentStyles, t, r.state.currentVelocities)) return r.animationID = null, void(r.accumulatedTime = 0);
+								}(o.state.currentStyles, t, o.state.currentVelocities)) return o.animationID = null, void(o.accumulatedTime = 0);
 							var n = e || u.default(),
-								o = n - r.prevTime;
-							if (r.prevTime = n, r.accumulatedTime = r.accumulatedTime + o, r.accumulatedTime > 10 * m && (r.accumulatedTime = 0), 0 === r.accumulatedTime) return r.animationID = null, void r.startAnimationIfNecessary();
-							for (var a = (r.accumulatedTime - Math.floor(r.accumulatedTime / m) * m) / m, l = Math.floor(r.accumulatedTime / m), i = [], c = [], f = [], p = [], y = 0; y < t.length; y++) {
+								r = n - o.prevTime;
+							if (o.prevTime = n, o.accumulatedTime = o.accumulatedTime + r, o.accumulatedTime > 10 * m && (o.accumulatedTime = 0), 0 === o.accumulatedTime) return o.animationID = null, void o.startAnimationIfNecessary();
+							for (var a = (o.accumulatedTime - Math.floor(o.accumulatedTime / m) * m) / m, l = Math.floor(o.accumulatedTime / m), i = [], c = [], f = [], p = [], y = 0; y < t.length; y++) {
 								var h = t[y],
 									v = {},
 									b = {},
@@ -220,23 +220,23 @@
 										var g = h[j];
 										if ("number" == typeof g) v[j] = g, b[j] = 0, _[j] = g, S[j] = 0;
 										else {
-											for (var w = r.state.lastIdealStyles[y][j], T = r.state.lastIdealVelocities[y][j], I = 0; I < l; I++) {
-												var O = s.default(m / 1e3, w, T, g.val, g.stiffness, g.damping, g.precision);
-												w = O[0], T = O[1]
+											for (var T = o.state.lastIdealStyles[y][j], I = o.state.lastIdealVelocities[y][j], O = 0; O < l; O++) {
+												var P = s.default(m / 1e3, T, I, g.val, g.stiffness, g.damping, g.precision);
+												T = P[0], I = P[1]
 											}
-											var P = s.default(m / 1e3, w, T, g.val, g.stiffness, g.damping, g.precision),
-												k = P[0],
-												D = P[1];
-											v[j] = w + (k - w) * a, b[j] = T + (D - T) * a, _[j] = w, S[j] = T
+											var w = s.default(m / 1e3, T, I, g.val, g.stiffness, g.damping, g.precision),
+												k = w[0],
+												D = w[1];
+											v[j] = T + (k - T) * a, b[j] = I + (D - I) * a, _[j] = T, S[j] = I
 										}
 									} f[y] = v, p[y] = b, i[y] = _, c[y] = S
 							}
-							r.animationID = null, r.accumulatedTime -= l * m, r.setState({
+							o.animationID = null, o.accumulatedTime -= l * m, o.setState({
 								currentStyles: f,
 								currentVelocities: p,
 								lastIdealStyles: i,
 								lastIdealVelocities: c
-							}), r.unreadPropStyles = null, r.startAnimationIfNecessary()
+							}), o.unreadPropStyles = null, o.startAnimationIfNecessary()
 						}))
 					}, this.state = this.defaultState()
 				}
@@ -250,7 +250,7 @@
 							configurable: !0
 						}
 					}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-				}(t, e), r(t, null, [{
+				}(t, e), o(t, null, [{
 					key: "propTypes",
 					value: {
 						defaultStyles: p.default.arrayOf(p.default.objectOf(p.default.number)),
@@ -262,15 +262,15 @@
 					var e = this.props,
 						t = e.defaultStyles,
 						n = e.styles,
-						o = t || n().map(i.default),
-						r = o.map((function(e) {
+						r = t || n().map(i.default),
+						o = r.map((function(e) {
 							return l.default(e)
 						}));
 					return {
-						currentStyles: o,
-						currentVelocities: r,
-						lastIdealStyles: o,
-						lastIdealVelocities: r
+						currentStyles: r,
+						currentVelocities: o,
+						lastIdealStyles: r,
+						lastIdealVelocities: o
 					}
 				}, t.prototype.componentDidMount = function() {
 					this.prevTime = u.default(), this.startAnimationIfNecessary()
@@ -288,22 +288,22 @@
 		"./node_modules/react-motion/lib/TransitionMotion.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0;
-			var o = Object.assign || function(e) {
+			var r = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				},
-				r = function() {
+				o = function() {
 					function e(e, t) {
 						for (var n = 0; n < t.length; n++) {
-							var o = t[n];
-							o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o)
+							var r = t[n];
+							r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
 						}
 					}
-					return function(t, n, o) {
-						return n && e(t.prototype, n), o && e(t, o), t
+					return function(t, n, r) {
+						return n && e(t.prototype, n), r && e(t, r), t
 					}
 				}();
 
@@ -317,25 +317,25 @@
 				s = a(n("./node_modules/react-motion/lib/stepper.js")),
 				u = a(n("./node_modules/react-motion/lib/mergeDiff.js")),
 				c = a(n("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
-				d = a(n("./node_modules/react-motion/node_modules/raf/index.js")),
+				d = a(n("./node_modules/raf/index.js")),
 				f = a(n("./node_modules/react-motion/lib/shouldStopAnimation.js")),
 				p = a(n("./node_modules/react/index.js")),
 				m = a(n("./node_modules/react-motion/node_modules/prop-types/index.js")),
 				y = 1e3 / 60;
 
 			function h(e, t, n) {
-				var o = t;
-				return null == o ? e.map((function(e, t) {
+				var r = t;
+				return null == r ? e.map((function(e, t) {
 					return {
 						key: e.key,
 						data: e.data,
 						style: n[t]
 					}
 				})) : e.map((function(e, t) {
-					for (var r = 0; r < o.length; r++)
-						if (o[r].key === e.key) return {
-							key: o[r].key,
-							data: o[r].data,
+					for (var o = 0; o < r.length; o++)
+						if (r[o].key === e.key) return {
+							key: r[o].key,
+							data: r[o].data,
 							style: n[t]
 						};
 					return {
@@ -346,23 +346,23 @@
 				}))
 			}
 
-			function v(e, t, n, o, r, a, i, s, c) {
-				for (var d = u.default(o, r, (function(e, o) {
-						var r = t(o);
-						return null == r ? (n({
-							key: o.key,
-							data: o.data
-						}), null) : f.default(a[e], r, i[e]) ? (n({
-							key: o.key,
-							data: o.data
+			function v(e, t, n, r, o, a, i, s, c) {
+				for (var d = u.default(r, o, (function(e, r) {
+						var o = t(r);
+						return null == o ? (n({
+							key: r.key,
+							data: r.data
+						}), null) : f.default(a[e], o, i[e]) ? (n({
+							key: r.key,
+							data: r.data
 						}), null) : {
-							key: o.key,
-							data: o.data,
-							style: r
+							key: r.key,
+							data: r.data,
+							style: o
 						}
 					})), p = [], m = [], y = [], h = [], v = 0; v < d.length; v++) {
-					for (var b = d[v], _ = null, S = 0; S < o.length; S++)
-						if (o[S].key === b.key) {
+					for (var b = d[v], _ = null, S = 0; S < r.length; S++)
+						if (r[S].key === b.key) {
 							_ = S;
 							break
 						} if (null == _) {
@@ -376,24 +376,24 @@
 			}
 			var b = function(e) {
 				function t(n) {
-					var r = this;
+					var o = this;
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					}(this, t), e.call(this, n), this.unmounting = !1, this.animationID = null, this.prevTime = 0, this.accumulatedTime = 0, this.unreadPropStyles = null, this.clearUnreadPropStyle = function(e) {
-						for (var t = v(r.props.willEnter, r.props.willLeave, r.props.didLeave, r.state.mergedPropsStyles, e, r.state.currentStyles, r.state.currentVelocities, r.state.lastIdealStyles, r.state.lastIdealVelocities), n = t[0], a = t[1], l = t[2], i = t[3], s = t[4], u = 0; u < e.length; u++) {
+						for (var t = v(o.props.willEnter, o.props.willLeave, o.props.didLeave, o.state.mergedPropsStyles, e, o.state.currentStyles, o.state.currentVelocities, o.state.lastIdealStyles, o.state.lastIdealVelocities), n = t[0], a = t[1], l = t[2], i = t[3], s = t[4], u = 0; u < e.length; u++) {
 							var c = e[u].style,
 								d = !1;
 							for (var f in c)
 								if (Object.prototype.hasOwnProperty.call(c, f)) {
 									var p = c[f];
-									"number" == typeof p && (d || (d = !0, a[u] = o({}, a[u]), l[u] = o({}, l[u]), i[u] = o({}, i[u]), s[u] = o({}, s[u]), n[u] = {
+									"number" == typeof p && (d || (d = !0, a[u] = r({}, a[u]), l[u] = r({}, l[u]), i[u] = r({}, i[u]), s[u] = r({}, s[u]), n[u] = {
 										key: n[u].key,
 										data: n[u].data,
-										style: o({}, n[u].style)
+										style: r({}, n[u].style)
 									}), a[u][f] = p, l[u][f] = 0, i[u][f] = p, s[u][f] = 0, n[u].style[f] = p)
 								}
 						}
-						r.setState({
+						o.setState({
 							currentStyles: a,
 							currentVelocities: l,
 							mergedPropsStyles: n,
@@ -401,50 +401,50 @@
 							lastIdealVelocities: s
 						})
 					}, this.startAnimationIfNecessary = function() {
-						r.unmounting || (r.animationID = d.default((function(e) {
-							if (!r.unmounting) {
-								var t = r.props.styles,
-									n = "function" == typeof t ? t(h(r.state.mergedPropsStyles, r.unreadPropStyles, r.state.lastIdealStyles)) : t;
-								if (function(e, t, n, o) {
-										if (o.length !== t.length) return !1;
-										for (var r = 0; r < o.length; r++)
-											if (o[r].key !== t[r].key) return !1;
-										for (r = 0; r < o.length; r++)
-											if (!f.default(e[r], t[r].style, n[r])) return !1;
+						o.unmounting || (o.animationID = d.default((function(e) {
+							if (!o.unmounting) {
+								var t = o.props.styles,
+									n = "function" == typeof t ? t(h(o.state.mergedPropsStyles, o.unreadPropStyles, o.state.lastIdealStyles)) : t;
+								if (function(e, t, n, r) {
+										if (r.length !== t.length) return !1;
+										for (var o = 0; o < r.length; o++)
+											if (r[o].key !== t[o].key) return !1;
+										for (o = 0; o < r.length; o++)
+											if (!f.default(e[o], t[o].style, n[o])) return !1;
 										return !0
-									}(r.state.currentStyles, n, r.state.currentVelocities, r.state.mergedPropsStyles)) return r.animationID = null, void(r.accumulatedTime = 0);
-								var o = e || c.default(),
-									a = o - r.prevTime;
-								if (r.prevTime = o, r.accumulatedTime = r.accumulatedTime + a, r.accumulatedTime > 10 * y && (r.accumulatedTime = 0), 0 === r.accumulatedTime) return r.animationID = null, void r.startAnimationIfNecessary();
-								for (var l = (r.accumulatedTime - Math.floor(r.accumulatedTime / y) * y) / y, i = Math.floor(r.accumulatedTime / y), u = v(r.props.willEnter, r.props.willLeave, r.props.didLeave, r.state.mergedPropsStyles, n, r.state.currentStyles, r.state.currentVelocities, r.state.lastIdealStyles, r.state.lastIdealVelocities), d = u[0], p = u[1], m = u[2], b = u[3], _ = u[4], S = 0; S < d.length; S++) {
+									}(o.state.currentStyles, n, o.state.currentVelocities, o.state.mergedPropsStyles)) return o.animationID = null, void(o.accumulatedTime = 0);
+								var r = e || c.default(),
+									a = r - o.prevTime;
+								if (o.prevTime = r, o.accumulatedTime = o.accumulatedTime + a, o.accumulatedTime > 10 * y && (o.accumulatedTime = 0), 0 === o.accumulatedTime) return o.animationID = null, void o.startAnimationIfNecessary();
+								for (var l = (o.accumulatedTime - Math.floor(o.accumulatedTime / y) * y) / y, i = Math.floor(o.accumulatedTime / y), u = v(o.props.willEnter, o.props.willLeave, o.props.didLeave, o.state.mergedPropsStyles, n, o.state.currentStyles, o.state.currentVelocities, o.state.lastIdealStyles, o.state.lastIdealVelocities), d = u[0], p = u[1], m = u[2], b = u[3], _ = u[4], S = 0; S < d.length; S++) {
 									var j = d[S].style,
 										g = {},
-										w = {},
 										T = {},
-										I = {};
-									for (var O in j)
-										if (Object.prototype.hasOwnProperty.call(j, O)) {
-											var P = j[O];
-											if ("number" == typeof P) g[O] = P, w[O] = 0, T[O] = P, I[O] = 0;
+										I = {},
+										O = {};
+									for (var P in j)
+										if (Object.prototype.hasOwnProperty.call(j, P)) {
+											var w = j[P];
+											if ("number" == typeof w) g[P] = w, T[P] = 0, I[P] = w, O[P] = 0;
 											else {
-												for (var k = b[S][O], D = _[S][O], x = 0; x < i; x++) {
-													var M = s.default(y / 1e3, k, D, P.val, P.stiffness, P.damping, P.precision);
-													k = M[0], D = M[1]
+												for (var k = b[S][P], D = _[S][P], M = 0; M < i; M++) {
+													var x = s.default(y / 1e3, k, D, w.val, w.stiffness, w.damping, w.precision);
+													k = x[0], D = x[1]
 												}
-												var A = s.default(y / 1e3, k, D, P.val, P.stiffness, P.damping, P.precision),
-													V = A[0],
-													R = A[1];
-												g[O] = k + (V - k) * l, w[O] = D + (R - D) * l, T[O] = k, I[O] = D
+												var V = s.default(y / 1e3, k, D, w.val, w.stiffness, w.damping, w.precision),
+													A = V[0],
+													R = V[1];
+												g[P] = k + (A - k) * l, T[P] = D + (R - D) * l, I[P] = k, O[P] = D
 											}
-										} b[S] = T, _[S] = I, p[S] = g, m[S] = w
+										} b[S] = I, _[S] = O, p[S] = g, m[S] = T
 								}
-								r.animationID = null, r.accumulatedTime -= i * y, r.setState({
+								o.animationID = null, o.accumulatedTime -= i * y, o.setState({
 									currentStyles: p,
 									currentVelocities: m,
 									lastIdealStyles: b,
 									lastIdealVelocities: _,
 									mergedPropsStyles: d
-								}), r.unreadPropStyles = null, r.startAnimationIfNecessary()
+								}), o.unreadPropStyles = null, o.startAnimationIfNecessary()
 							}
 						})))
 					}, this.state = this.defaultState()
@@ -459,7 +459,7 @@
 							configurable: !0
 						}
 					}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-				}(t, e), r(t, null, [{
+				}(t, e), o(t, null, [{
 					key: "propTypes",
 					value: {
 						defaultStyles: m.default.arrayOf(m.default.shape({
@@ -494,8 +494,8 @@
 					var e = this.props,
 						t = e.defaultStyles,
 						n = e.styles,
-						o = e.willEnter,
-						r = e.willLeave,
+						r = e.willEnter,
+						o = e.willLeave,
 						a = e.didLeave,
 						s = "function" == typeof n ? n(t) : n,
 						u = void 0;
@@ -514,7 +514,7 @@
 						})) : t.map((function(e) {
 							return l.default(e.style)
 						})),
-						f = v(o, r, a, u, s, c, d, c, d),
+						f = v(r, o, a, u, s, c, d, c, d),
 						p = f[0];
 					return {
 						currentStyles: f[1],
@@ -550,37 +550,37 @@
 		"./node_modules/react-motion/lib/mergeDiff.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0, t.default = function(e, t, n) {
-				for (var o = {}, r = 0; r < e.length; r++) o[e[r].key] = r;
+				for (var r = {}, o = 0; o < e.length; o++) r[e[o].key] = o;
 				var a = {};
-				for (r = 0; r < t.length; r++) a[t[r].key] = r;
+				for (o = 0; o < t.length; o++) a[t[o].key] = o;
 				var l = [];
-				for (r = 0; r < t.length; r++) l[r] = t[r];
-				for (r = 0; r < e.length; r++)
-					if (!Object.prototype.hasOwnProperty.call(a, e[r].key)) {
-						var i = n(r, e[r]);
+				for (o = 0; o < t.length; o++) l[o] = t[o];
+				for (o = 0; o < e.length; o++)
+					if (!Object.prototype.hasOwnProperty.call(a, e[o].key)) {
+						var i = n(o, e[o]);
 						null != i && l.push(i)
 					} return l.sort((function(e, n) {
-					var r = a[e.key],
+					var o = a[e.key],
 						l = a[n.key],
-						i = o[e.key],
-						s = o[n.key];
-					if (null != r && null != l) return a[e.key] - a[n.key];
-					if (null != i && null != s) return o[e.key] - o[n.key];
-					if (null != r) {
+						i = r[e.key],
+						s = r[n.key];
+					if (null != o && null != l) return a[e.key] - a[n.key];
+					if (null != i && null != s) return r[e.key] - r[n.key];
+					if (null != o) {
 						for (var u = 0; u < t.length; u++) {
 							var c = t[u].key;
-							if (Object.prototype.hasOwnProperty.call(o, c)) {
-								if (r < a[c] && s > o[c]) return -1;
-								if (r > a[c] && s < o[c]) return 1
+							if (Object.prototype.hasOwnProperty.call(r, c)) {
+								if (o < a[c] && s > r[c]) return -1;
+								if (o > a[c] && s < r[c]) return 1
 							}
 						}
 						return 1
 					}
 					for (u = 0; u < t.length; u++) {
 						c = t[u].key;
-						if (Object.prototype.hasOwnProperty.call(o, c)) {
-							if (l < a[c] && i > o[c]) return 1;
-							if (l > a[c] && i < o[c]) return -1
+						if (Object.prototype.hasOwnProperty.call(r, c)) {
+							if (l < a[c] && i > r[c]) return 1;
+							if (l > a[c] && i < r[c]) return -1
 						}
 					}
 					return -1
@@ -611,24 +611,24 @@
 		"./node_modules/react-motion/lib/react-motion.js": function(e, t, n) {
 			"use strict";
 
-			function o(e) {
+			function r(e) {
 				return e && e.__esModule ? e.default : e
 			}
 			t.__esModule = !0;
-			var r = n("./node_modules/react-motion/lib/Motion.js");
-			t.Motion = o(r);
+			var o = n("./node_modules/react-motion/lib/Motion.js");
+			t.Motion = r(o);
 			var a = n("./node_modules/react-motion/lib/StaggeredMotion.js");
-			t.StaggeredMotion = o(a);
+			t.StaggeredMotion = r(a);
 			var l = n("./node_modules/react-motion/lib/TransitionMotion.js");
-			t.TransitionMotion = o(l);
+			t.TransitionMotion = r(l);
 			var i = n("./node_modules/react-motion/lib/spring.js");
-			t.spring = o(i);
+			t.spring = r(i);
 			var s = n("./node_modules/react-motion/lib/presets.js");
-			t.presets = o(s);
+			t.presets = r(s);
 			var u = n("./node_modules/react-motion/lib/stripStyle.js");
-			t.stripStyle = o(u);
+			t.stripStyle = r(u);
 			var c = n("./node_modules/react-motion/lib/reorderKeys.js");
-			t.reorderKeys = o(c)
+			t.reorderKeys = r(c)
 		},
 		"./node_modules/react-motion/lib/reorderKeys.js": function(e, t, n) {
 			"use strict";
@@ -640,47 +640,47 @@
 		"./node_modules/react-motion/lib/shouldStopAnimation.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0, t.default = function(e, t, n) {
-				for (var o in t)
-					if (Object.prototype.hasOwnProperty.call(t, o)) {
-						if (0 !== n[o]) return !1;
-						var r = "number" == typeof t[o] ? t[o] : t[o].val;
-						if (e[o] !== r) return !1
+				for (var r in t)
+					if (Object.prototype.hasOwnProperty.call(t, r)) {
+						if (0 !== n[r]) return !1;
+						var o = "number" == typeof t[r] ? t[r] : t[r].val;
+						if (e[r] !== o) return !1
 					} return !0
 			}, e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/spring.js": function(e, t, n) {
 			"use strict";
 			t.__esModule = !0;
-			var o = Object.assign || function(e) {
+			var r = Object.assign || function(e) {
 				for (var t = 1; t < arguments.length; t++) {
 					var n = arguments[t];
-					for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
+					for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 				}
 				return e
 			};
 			t.default = function(e, t) {
-				return o({}, i, t, {
+				return r({}, i, t, {
 					val: e
 				})
 			};
-			var r, a = n("./node_modules/react-motion/lib/presets.js"),
-				l = (r = a) && r.__esModule ? r : {
-					default: r
+			var o, a = n("./node_modules/react-motion/lib/presets.js"),
+				l = (o = a) && o.__esModule ? o : {
+					default: o
 				},
-				i = o({}, l.default.noWobble, {
+				i = r({}, l.default.noWobble, {
 					precision: .01
 				});
 			e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/stepper.js": function(e, t, n) {
 			"use strict";
-			t.__esModule = !0, t.default = function(e, t, n, r, a, l, i) {
-				var s = n + (-a * (t - r) + -l * n) * e,
+			t.__esModule = !0, t.default = function(e, t, n, o, a, l, i) {
+				var s = n + (-a * (t - o) + -l * n) * e,
 					u = t + s * e;
-				if (Math.abs(s) < i && Math.abs(u - r) < i) return o[0] = r, o[1] = 0, o;
-				return o[0] = u, o[1] = s, o
+				if (Math.abs(s) < i && Math.abs(u - o) < i) return r[0] = o, r[1] = 0, r;
+				return r[0] = u, r[1] = s, r
 			};
-			var o = [0, 0];
+			var r = [0, 0];
 			e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/stripStyle.js": function(e, t, n) {
@@ -694,30 +694,32 @@
 		"./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js": function(e, t, n) {
 			(function(t) {
 				(function() {
-					var n, o, r;
+					var n, r, o;
 					"undefined" != typeof performance && null !== performance && performance.now ? e.exports = function() {
 						return performance.now()
 					} : null != t && t.hrtime ? (e.exports = function() {
-						return (n() - r) / 1e6
-					}, o = t.hrtime, r = (n = function() {
+						return (n() - o) / 1e6
+					}, r = t.hrtime, o = (n = function() {
 						var e;
-						return 1e9 * (e = o())[0] + e[1]
+						return 1e9 * (e = r())[0] + e[1]
 					})()) : Date.now ? (e.exports = function() {
-						return Date.now() - r
-					}, r = Date.now()) : (e.exports = function() {
-						return (new Date).getTime() - r
-					}, r = (new Date).getTime())
+						return Date.now() - o
+					}, o = Date.now()) : (e.exports = function() {
+						return (new Date).getTime() - o
+					}, o = (new Date).getTime())
 				}).call(this)
 			}).call(this, n("./node_modules/process/browser.js"))
 		},
 		"./node_modules/react-motion/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, n) {
 			"use strict";
-			var o = n("./node_modules/react-motion/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var r = n("./node_modules/react-motion/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
-			function r() {}
-			e.exports = function() {
-				function e(e, t, n, r, a, l) {
-					if (l !== o) {
+			function o() {}
+
+			function a() {}
+			a.resetWarningCache = o, e.exports = function() {
+				function e(e, t, n, o, a, l) {
+					if (l !== r) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw i.name = "Invariant Violation", i
 					}
@@ -738,15 +740,18 @@
 					any: e,
 					arrayOf: t,
 					element: e,
+					elementType: e,
 					instanceOf: t,
 					node: e,
 					objectOf: t,
 					oneOf: t,
 					oneOfType: t,
 					shape: t,
-					exact: t
+					exact: t,
+					checkPropTypes: a,
+					resetWarningCache: o
 				};
-				return n.checkPropTypes = r, n.PropTypes = n, n
+				return n.PropTypes = n, n
 			}
 		},
 		"./node_modules/react-motion/node_modules/prop-types/index.js": function(e, t, n) {
@@ -755,68 +760,7 @@
 		"./node_modules/react-motion/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, n) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
-		},
-		"./node_modules/react-motion/node_modules/raf/index.js": function(e, t, n) {
-			(function(t) {
-				for (var o = n("./node_modules/react-motion/node_modules/raf/node_modules/performance-now/lib/performance-now.js"), r = "undefined" == typeof window ? t : window, a = ["moz", "webkit"], l = "AnimationFrame", i = r["request" + l], s = r["cancel" + l] || r["cancelRequest" + l], u = 0; !i && u < a.length; u++) i = r[a[u] + "Request" + l], s = r[a[u] + "Cancel" + l] || r[a[u] + "CancelRequest" + l];
-				if (!i || !s) {
-					var c = 0,
-						d = 0,
-						f = [];
-					i = function(e) {
-						if (0 === f.length) {
-							var t = o(),
-								n = Math.max(0, 1e3 / 60 - (t - c));
-							c = n + t, setTimeout((function() {
-								var e = f.slice(0);
-								f.length = 0;
-								for (var t = 0; t < e.length; t++)
-									if (!e[t].cancelled) try {
-										e[t].callback(c)
-									} catch (n) {
-										setTimeout((function() {
-											throw n
-										}), 0)
-									}
-							}), Math.round(n))
-						}
-						return f.push({
-							handle: ++d,
-							callback: e,
-							cancelled: !1
-						}), d
-					}, s = function(e) {
-						for (var t = 0; t < f.length; t++) f[t].handle === e && (f[t].cancelled = !0)
-					}
-				}
-				e.exports = function(e) {
-					return i.call(r, e)
-				}, e.exports.cancel = function() {
-					s.apply(r, arguments)
-				}, e.exports.polyfill = function(e) {
-					e || (e = r), e.requestAnimationFrame = i, e.cancelAnimationFrame = s
-				}
-			}).call(this, n("./node_modules/webpack/buildin/global.js"))
-		},
-		"./node_modules/react-motion/node_modules/raf/node_modules/performance-now/lib/performance-now.js": function(e, t, n) {
-			(function(t) {
-				(function() {
-					var n, o, r, a, l, i;
-					"undefined" != typeof performance && null !== performance && performance.now ? e.exports = function() {
-						return performance.now()
-					} : null != t && t.hrtime ? (e.exports = function() {
-						return (n() - l) / 1e6
-					}, o = t.hrtime, a = (n = function() {
-						var e;
-						return 1e9 * (e = o())[0] + e[1]
-					})(), i = 1e9 * t.uptime(), l = a - i) : Date.now ? (e.exports = function() {
-						return Date.now() - r
-					}, r = Date.now()) : (e.exports = function() {
-						return (new Date).getTime() - r
-					}, r = (new Date).getTime())
-				}).call(this)
-			}).call(this, n("./node_modules/process/browser.js"))
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a.375fa8e474afa92c8ccc.js.map
+//# sourceMappingURL=vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a.9d925314bf52bf7e06f2.js.map

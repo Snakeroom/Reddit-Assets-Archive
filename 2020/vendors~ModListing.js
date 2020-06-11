@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ModListing.adcaa0ac8d5dc193132e.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ModListing.c3f87928276a47214bb2.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ModListing"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(t, e, o) {
@@ -261,24 +261,44 @@
 		},
 		"./node_modules/react-router-dom/esm/react-router-dom.js": function(t, e, o) {
 			"use strict";
+
+			function n(t, e) {
+				t.prototype = Object.create(e.prototype), t.prototype.constructor = t, t.__proto__ = e
+			}
 			o.d(e, "a", (function() {
 				return p
 			}));
-			var n = o("./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js"),
-				r = o("./node_modules/react/index.js"),
+			var r = o("./node_modules/react/index.js"),
 				i = o.n(r),
 				s = o("./node_modules/react-router/esm/react-router.js"),
-				c = o("./node_modules/history/esm/history.js"),
-				h = (o("./node_modules/react-router-dom/node_modules/prop-types/index.js"), o("./node_modules/@babel/runtime/helpers/esm/extends.js")),
-				u = o("./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js"),
-				a = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+				c = o("./node_modules/history/esm/history.js");
+			o("./node_modules/react-router-dom/node_modules/prop-types/index.js");
+
+			function h() {
+				return (h = Object.assign || function(t) {
+					for (var e = 1; e < arguments.length; e++) {
+						var o = arguments[e];
+						for (var n in o) Object.prototype.hasOwnProperty.call(o, n) && (t[n] = o[n])
+					}
+					return t
+				}).apply(this, arguments)
+			}
+
+			function u(t, e) {
+				if (null == t) return {};
+				var o, n, r = {},
+					i = Object.keys(t);
+				for (n = 0; n < i.length; n++) o = i[n], e.indexOf(o) >= 0 || (r[o] = t[o]);
+				return r
+			}
+			var a = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 			i.a.Component;
 			i.a.Component;
 			var p = function(t) {
 				function e() {
 					return t.apply(this, arguments) || this
 				}
-				Object(n.a)(e, t);
+				n(e, t);
 				var o = e.prototype;
 				return o.handleClick = function(t, e) {
 					try {
@@ -294,12 +314,12 @@
 						e = this.props,
 						o = e.innerRef,
 						n = (e.replace, e.to),
-						r = Object(u.a)(e, ["innerRef", "replace", "to"]);
+						r = u(e, ["innerRef", "replace", "to"]);
 					return i.a.createElement(s.g.Consumer, null, (function(e) {
 						e || Object(a.default)(!1);
 						var s = "string" == typeof n ? Object(c.c)(n, null, null, e.location) : n,
 							u = s ? e.history.createHref(s) : "";
-						return i.a.createElement("a", Object(h.a)({}, r, {
+						return i.a.createElement("a", h({}, r, {
 							onClick: function(o) {
 								return t.handleClick(o, e.history)
 							},
@@ -315,7 +335,9 @@
 			var n = o("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function r() {}
-			t.exports = function() {
+
+			function i() {}
+			i.resetWarningCache = r, t.exports = function() {
 				function t(t, e, o, r, i, s) {
 					if (s !== n) {
 						var c = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -338,15 +360,18 @@
 					any: t,
 					arrayOf: e,
 					element: t,
+					elementType: t,
 					instanceOf: e,
 					node: t,
 					objectOf: e,
 					oneOf: e,
 					oneOfType: e,
 					shape: e,
-					exact: e
+					exact: e,
+					checkPropTypes: i,
+					resetWarningCache: r
 				};
-				return o.checkPropTypes = r, o.PropTypes = o, o
+				return o.PropTypes = o, o
 			}
 		},
 		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(t, e, o) {
@@ -358,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~ModListing.adcaa0ac8d5dc193132e.js.map
+//# sourceMappingURL=vendors~ModListing.c3f87928276a47214bb2.js.map

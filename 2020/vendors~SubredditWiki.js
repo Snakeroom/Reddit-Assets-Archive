@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.b7357197db848ee0e44e.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.d524969d3ad9e7e38d8f.js
+// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~SubredditWiki", "vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -882,7 +882,9 @@
 			var n = o("./node_modules/react-autosize-textarea/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 			function i() {}
-			e.exports = function() {
+
+			function r() {}
+			r.resetWarningCache = i, e.exports = function() {
 				function e(e, t, o, i, r, s) {
 					if (s !== n) {
 						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -905,15 +907,18 @@
 					any: e,
 					arrayOf: t,
 					element: e,
+					elementType: e,
 					instanceOf: t,
 					node: e,
 					objectOf: t,
 					oneOf: t,
 					oneOfType: t,
 					shape: t,
-					exact: t
+					exact: t,
+					checkPropTypes: r,
+					resetWarningCache: i
 				};
-				return o.checkPropTypes = i, o.PropTypes = o, o
+				return o.PropTypes = o, o
 			}
 		},
 		"./node_modules/react-autosize-textarea/node_modules/prop-types/index.js": function(e, t, o) {
@@ -930,4 +935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~SubredditWiki.b7357197db848ee0e44e.js.map
+//# sourceMappingURL=vendors~SubredditWiki.d524969d3ad9e7e38d8f.js.map
