@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b2fff885877750c98654.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.579ccac65eaa0e78d183.js
+// Retrieved at 6/11/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -329,8 +329,6 @@
 		},
 		"./src/reddit/components/CommentCreation/MarkdownCommentForm/MarkdownModeButton.m.less": function(e, t, n) {
 			e.exports = {
-				LoadingIcon: "_2DZnviMjaD88Udr-5V3j38",
-				loadingIcon: "_2DZnviMjaD88Udr-5V3j38",
 				Wrapper: "_3oZ5XBWSc3x7cXsvdt3fJ",
 				wrapper: "_3oZ5XBWSc3x7cXsvdt3fJ",
 				MarkdownModeIcon: "_1EifMLRAKpii4eqciAhY4q",
@@ -476,8 +474,8 @@
 				q = n("./src/reddit/selectors/comments.ts"),
 				V = n("./src/reddit/selectors/editorContent.ts"),
 				K = n("./src/reddit/actions/modal.ts"),
-				Z = n("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
-				X = n("./src/reddit/models/PostCreationForm/index.ts"),
+				X = n("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
+				Z = n("./src/reddit/models/PostCreationForm/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
 				Q = n("./src/reddit/models/User/index.ts"),
 				J = n("./src/reddit/components/CommentCreation/MarkdownCommentForm/index.m.less"),
@@ -488,7 +486,7 @@
 				ne = k.a.span("FormHeaderText", Y.a),
 				oe = k.a.button("HelpButton", Y.a),
 				se = k.a.wrapped(g.a, "HelpIcon", Y.a),
-				re = k.a.wrapped(Z.a, "ResizableAutosizeTextarea", Y.a),
+				re = k.a.wrapped(X.a, "ResizableAutosizeTextarea", Y.a),
 				ie = k.a.wrapped(E.a, "FormFooter", Y.a),
 				ae = k.a.wrapped(b.a, "CurrentUserIcon", Y.a),
 				de = e => r.a.createElement(oe, {
@@ -554,7 +552,7 @@
 						(t || n) && o === H.a.Enter && this.onSubmit()
 					}, this.onSubmit = () => {
 						this.props.onSubmit({
-							commentMode: X.h.MARKDOWN,
+							commentMode: Z.h.MARKDOWN,
 							draftType: this.props.draftType,
 							editorState: null,
 							text: this.getCurrentText(),
@@ -705,11 +703,11 @@
 						canSubmit: this.userHasEnteredText()
 					}, r.a.createElement(T, null, e => "compact" === e ? r.a.createElement(D, {
 						buttonRef: e => this.switchModeBtn = e,
-						onClick: () => O(X.h.RICH_TEXT, S, b),
+						onClick: () => O(Z.h.RICH_TEXT, S, b),
 						isConverting: this.props.isConverting
 					}) : r.a.createElement("div", null, r.a.createElement($, {
 						innerRef: e => this.switchModeBtn = e,
-						onClick: () => O(X.h.RICH_TEXT, S, b)
+						onClick: () => O(Z.h.RICH_TEXT, S, b)
 					}, "Switch to Fancy Pants Editor", this.props.isConverting && r.a.createElement(ee, {
 						sizePx: 12
 					})))), r.a.createElement(de, {
@@ -1064,7 +1062,7 @@
 					return []
 				}
 			});
-			var Z = Object(a.b)(K)((function(e) {
+			var X = Object(a.b)(K)((function(e) {
 					const {
 						controlsState: t,
 						emotes: n,
@@ -1089,11 +1087,11 @@
 						src: e.emoji.path
 					}))))
 				})),
-				X = n("./src/reddit/icons/svgs/Gif/index.tsx"),
+				Z = n("./src/reddit/icons/svgs/Gif/index.tsx"),
 				G = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
 				Q = n("./src/reddit/components/RichTextEditor/Toolbar/GifButton/index.m.less"),
 				J = n.n(Q);
-			const Y = Object(G.f)(X.a);
+			const Y = Object(G.f)(Z.a);
 			var $ = function(e) {
 					const {
 						controlsState: t,
@@ -1142,7 +1140,7 @@
 						className: t,
 						oveflowMenuDropdownId: o,
 						onOverflowMenuClick: c
-					}, d && p && f, b && i.a.createElement(Z, {
+					}, d && p && f, b && i.a.createElement(X, {
 						controlsState: h,
 						subredditId: n && n.id,
 						onEmoteButtonClick: a
@@ -2801,4 +2799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.b2fff885877750c98654.js.map
+//# sourceMappingURL=RichTextEditor.579ccac65eaa0e78d183.js.map

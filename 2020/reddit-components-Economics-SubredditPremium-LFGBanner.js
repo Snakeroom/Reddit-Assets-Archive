@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.06410401d34918cb2f62.js
-// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.ff6b973e1429815fb9ef.js
+// Retrieved at 6/11/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -143,14 +143,10 @@
 		"./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.m.less": function(e, t, s) {
 			e.exports = {
 				claim: "_2h8JoT5ednzNOqKdVKCHlM",
-				close: "_308nelFEzZOnhnqbW5RpPv",
 				container: "_26wdyRSALASUyhdTxV6U4k",
 				content: "_3D6as82_3SjWTXYShWM5lz",
-				dismissedContainer: "_2EAX2PYbs1gAVQGLJ5XaB9",
-				dismissedText: "DBgaCJDh9aY3K_vHjS9Q3",
 				example: "_3jYACS0eVj0IZYGd02X11f",
-				header: "_12kLHf53On8M30LOB009-F",
-				successContainer: "_1wtFNjoeAGTIux27TBYRFN"
+				header: "_12kLHf53On8M30LOB009-F"
 			}
 		},
 		"./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.tsx": function(e, t, s) {
@@ -182,15 +178,15 @@
 					}),
 					src: "".concat(p.a.assetPath, "/img/memberships/banners/how_to_apply_badge.gif")
 				},
-				v = {
+				y = {
 					description: () => n.fbt._("Want to change your badge? Visit the Gallery in the Sidebar to view the latest styles.", null, {
 						hk: "71rqs"
 					}),
 					src: "".concat(p.a.assetPath, "/img/memberships/banners/how_to_apply_badge.gif")
 				};
 
-			function y(e) {
-				const t = (e.hideEmoji ? [] : [f]).concat(e.boughtBadge ? _ : v);
+			function v(e) {
+				const t = (e.hideEmoji ? [] : [f]).concat(e.boughtBadge ? _ : y);
 				return r.a.createElement("article", {
 					className: Object(d.a)(e.className, g.a.container)
 				}, r.a.createElement("header", {
@@ -323,27 +319,27 @@
 				}))
 			}
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var W = s("./node_modules/lodash/sample.js"),
-				M = s.n(W),
+			var M = s("./node_modules/lodash/sample.js"),
+				W = s.n(M),
 				H = s("./node_modules/react-motion/lib/react-motion.js"),
 				z = s("./src/reddit/icons/svgs/Replay/index.tsx"),
-				Y = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
-				Z = s.n(Y);
-			const q = {
+				Z = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
+				q = s.n(Z);
+			const K = {
 				stiffness: 210,
 				damping: 20
 			};
 
-			function K() {
+			function Y() {
 				return {
-					platform: M()(Object.keys(G.a)) || "pc",
-					playerType: M()(Object.keys(G.b)) || "casual",
-					region: M()(Object.keys(G.c)) || "nae"
+					platform: W()(Object.keys(G.a)) || "pc",
+					playerType: W()(Object.keys(G.b)) || "casual",
+					region: W()(Object.keys(G.c)) || "nae"
 				}
 			}
 			class Q extends r.a.Component {
 				constructor(e) {
-					super(e), this.state = K()
+					super(e), this.state = Y()
 				}
 				render() {
 					const {
@@ -352,11 +348,11 @@
 						region: s
 					} = this.state, a = G.a[e], i = G.b[t], o = G.c[s];
 					return r.a.createElement("article", {
-						className: Object(d.a)(Z.a.container, this.props.className)
+						className: Object(d.a)(q.a.container, this.props.className)
 					}, r.a.createElement("div", {
-						className: Z.a.cover
+						className: q.a.cover
 					}), r.a.createElement("header", {
-						className: Z.a.title
+						className: q.a.title
 					}, n.fbt._("Example", null, {
 						hk: "1siPoi"
 					})), r.a.createElement(H.TransitionMotion, {
@@ -373,35 +369,35 @@
 								style: "color"
 							})),
 							style: {
-								rotation: Object(H.spring)(0, q)
+								rotation: Object(H.spring)(0, K)
 							}
 						}],
 						willEnter: () => ({
 							rotation: -180
 						}),
 						willLeave: () => ({
-							rotation: Object(H.spring)(180, q)
+							rotation: Object(H.spring)(180, K)
 						})
 					}, e => r.a.createElement("div", {
-						className: Z.a.preview
+						className: q.a.preview
 					}, e.map(e => r.a.createElement("img", {
-						className: Z.a.image,
+						className: q.a.image,
 						key: e.key,
 						src: e.key,
 						style: {
 							transform: "rotateY(".concat(e.style.rotation, "deg)")
 						}
 					})))), r.a.createElement("footer", {
-						className: Z.a.description
+						className: q.a.description
 					}, "".concat(o, ", ").concat(a, ", ").concat(i)), r.a.createElement(z.a, {
-						className: Z.a.redo,
-						onClick: () => this.setState(K())
+						className: q.a.redo,
+						onClick: () => this.setState(Y())
 					}))
 				}
 			}
 			var J = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Header/index.m.less"),
-				X = s.n(J);
-			const V = Object(c.c)({
+				V = s.n(J);
+			const X = Object(c.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: s
@@ -415,27 +411,27 @@
 					return e.subreddits.models[s]
 				}
 			});
-			var $ = Object(i.b)(V)((function(e) {
+			var $ = Object(i.b)(X)((function(e) {
 					const t = e.subreddit ? e.subreddit.displayText : "the community";
 					return r.a.createElement("header", {
-						className: Object(d.a)(X.a.container, e.className)
+						className: Object(d.a)(V.a.container, e.className)
 					}, r.a.createElement("div", {
-						className: X.a.heading
+						className: V.a.heading
 					}, n.fbt._("looking for game badge", null, {
 						hk: "1fWc1w"
 					})), r.a.createElement("div", {
-						className: X.a.prompt
+						className: V.a.prompt
 					}, n.fbt._("Find New Gamers to Play Together", null, {
 						hk: "3voe2T"
 					}), r.a.createElement("div", {
-						className: X.a.sponsorship
+						className: V.a.sponsorship
 					}, r.a.createElement("img", {
-						className: X.a.crown,
+						className: V.a.crown,
 						src: "".concat(p.a.assetPath, "/img/memberships/paywall/fortnitebr/Crown.gif")
 					}), n.fbt._("Sponsored by {members}", [n.fbt._param("members", e.meta.memberAltPlural)], {
 						hk: "2QHfal"
 					}))), r.a.createElement("div", {
-						className: X.a.text
+						className: V.a.text
 					}, n.fbt._("Get a badge that lets you find new teammates in {community}.", [n.fbt._param("community", t)], {
 						hk: "2GYrVD"
 					}), n.fbt._("Specify your region, platform, and your play style for the best match.", null, {
@@ -608,7 +604,7 @@
 			! function(e) {
 				e.CanClaim = "canclaim", e.Claimed = "claimed", e.Dismissed = "dismissed", e.Generating = "generating", e.Hidden = "hidden", e.Select = "select"
 			}(ue || (ue = {}));
-			class ve extends r.a.Component {
+			class ye extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleClaim = async e => {
 						const {
@@ -733,7 +729,7 @@
 					}, r.a.createElement(S.a, {
 						className: _e.a.close,
 						onClick: this.handleDismiss
-					}), r.a.createElement(y, {
+					}), r.a.createElement(v, {
 						boughtBadge: !0,
 						hideEmoji: !0
 					})) : r.a.createElement("article", {
@@ -766,7 +762,7 @@
 					})) : null
 				}
 			}
-			const ye = Object(c.c)({
+			const ve = Object(c.c)({
 					isBannerDismissed: (e, t) => {
 						let {
 							subredditId: s
@@ -787,8 +783,8 @@
 					},
 					userIsLoggedIn: e => !!e.user.account
 				}),
-				Ee = Object(E.c)(ve);
-			t.default = Object(x.b)(Object(i.b)(ye, (e, t) => {
+				Ee = Object(E.c)(ye);
+			t.default = Object(x.b)(Object(i.b)(ve, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -975,4 +971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.06410401d34918cb2f62.js.map
+//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.ff6b973e1429815fb9ef.js.map
