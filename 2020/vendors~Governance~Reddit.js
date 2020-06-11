@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.552a2ba46af200a1774c.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~Reddit.4c211b0a3d96c936c2cb.js
+// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, n, r) {
@@ -1314,4 +1314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Governance~Reddit.552a2ba46af200a1774c.js.map
+//# sourceMappingURL=vendors~Governance~Reddit.4c211b0a3d96c936c2cb.js.map

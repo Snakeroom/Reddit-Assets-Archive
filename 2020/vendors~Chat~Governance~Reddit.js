@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.8f94520b79ed42658cba.js
-// Retrieved at 6/11/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.69a6462925cc1470f7e6.js
+// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -25764,7 +25764,7 @@
 				o = n.n(r),
 				i = n("./node_modules/react-router-redux/node_modules/prop-types/index.js"),
 				s = n.n(i),
-				a = n("./node_modules/warning/browser.js"),
+				a = n("./node_modules/react-router-redux/node_modules/warning/browser.js"),
 				u = n.n(a),
 				c = n("./node_modules/history/createMemoryHistory.js"),
 				l = n.n(c),
@@ -26509,6 +26509,10 @@
 		"./node_modules/react-router-redux/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, n) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+		},
+		"./node_modules/react-router-redux/node_modules/warning/browser.js": function(e, t, n) {
+			"use strict";
+			e.exports = function() {}
 		},
 		"./node_modules/react-router/esm/react-router.js": function(e, t, n) {
 			"use strict";
@@ -32661,10 +32665,6 @@
 				})), t
 			}
 		},
-		"./node_modules/warning/browser.js": function(e, t, n) {
-			"use strict";
-			e.exports = function() {}
-		},
 		"./node_modules/webpack/buildin/amd-options.js": function(e, t) {
 			(function(t) {
 				e.exports = t
@@ -34108,4 +34108,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.8f94520b79ed42658cba.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.69a6462925cc1470f7e6.js.map
