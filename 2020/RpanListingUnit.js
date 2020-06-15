@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.85f1893244ec886741e7.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.973fdf2aa9599144c3ee.js
+// Retrieved at 6/15/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -44,11 +44,11 @@
 						r = new Uint32Array(e);
 					return crypto.getRandomValues(r), Array.from(r).map(e => t.charAt(e % s)).join("")
 				},
-				f = function() {
+				v = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
 					return new Date(e).toISOString().replace(/^(\d{4})-(\d{2})-(\d{2}).*/, "$1$2$3")
 				},
-				v = function(e) {
+				f = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
@@ -59,7 +59,7 @@
 			const E = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					r = await crypto.subtle.digest(e, s);
-				return Array.from(new Uint8Array(r)).map(v).join("")
+				return Array.from(new Uint8Array(r)).map(f).join("")
 			})(S.SHA1, e);
 
 			function y() {
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "6edf03b-production"
+					SENTRY_RELEASE_VERSION: "d66777e-production"
 				}),
 				_ = {
 					anonymousUserId: "t2_anonymous",
@@ -104,7 +104,7 @@
 					disableCookies: l,
 					envKey: m,
 					localStorageSaltKey: h,
-					localStorageViewerUserIdKey: v,
+					localStorageViewerUserIdKey: f,
 					playerName: S,
 					playerVersion: O,
 					respectDoNotTrack: T,
@@ -188,7 +188,7 @@
 					async encryptViewerUserId() {
 						const e = this.props.redditUserId || I.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
-							s = f(),
+							s = v(),
 							r = "".concat(s).concat(e).concat(t);
 						return (await E(r)).substr(0, I.VIEWER_USER_ID_LENGTH)
 					}
@@ -252,7 +252,7 @@
 						}
 					}
 				}
-				I.displayName = x(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = T, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
+				I.displayName = x(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = T, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
 				const N = Object(r.forwardRef)((e, t) => i.a.createElement(I, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -658,17 +658,17 @@
 			}
 			var p = Object(a.b)(u, {})(h),
 				b = s("./src/reddit/selectors/comments.ts"),
-				f = s("./src/reddit/selectors/subreddit.ts");
-			const v = (e, t) => {
+				v = s("./src/reddit/selectors/subreddit.ts");
+			const f = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(f.H)(e, t);
+					r = Object(v.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
 					subredditOrProfile: r
 				}
 			};
-			var S = Object(a.b)(() => Object(n.a)(v, b.j, (e, t) => Object.assign({}, e, {
+			var S = Object(a.b)(() => Object(n.a)(f, b.j, (e, t) => Object.assign({}, e, {
 				depth: t
 			})))(e => i.a.createElement(p, {
 				type: "comment",
@@ -699,7 +699,7 @@
 			}));
 			const E = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(f.H)(e, t);
+					r = Object(v.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -725,7 +725,7 @@
 				}
 			}));
 			var g = Object(a.b)(() => Object(n.c)({
-					subreddit: f.Q
+					subreddit: v.Q
 				}))(e => i.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -837,7 +837,7 @@
 				}
 			}));
 			var C = Object(a.b)(() => Object(n.c)({
-				subreddit: f.Q
+				subreddit: v.Q
 			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -850,7 +850,7 @@
 				}
 			}));
 			var R = Object(a.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(f.K)(e, {
+				subredditOrProfile: (e, t) => Object(v.K)(e, {
 					identifier: t
 				})
 			}))(e => i.a.createElement(p, {
@@ -869,7 +869,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(f.Q)(e, {
+					return s ? Object(v.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -908,8 +908,8 @@
 				h = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				p = s("./src/reddit/constants/chat.ts"),
 				b = s("./src/reddit/constants/postLayout.ts"),
-				f = s("./src/reddit/helpers/overlay/index.ts"),
-				v = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				v = s("./src/reddit/helpers/overlay/index.ts"),
+				f = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				S = s("./src/reddit/helpers/trackers/rpan.ts"),
 				E = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				y = s("./src/reddit/models/Vote/index.ts"),
@@ -955,12 +955,12 @@
 					});
 					let i;
 					if (r) {
-						const e = Object(v.c)(r),
+						const e = Object(f.c)(r),
 							t = Object(h.c)(s);
 						i = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						i = e === m.P ? Object(v.d)() : Object(v.f)(e)
+						i = e === m.P ? Object(f.d)() : Object(f.f)(e)
 					}
 					return i
 				},
@@ -975,7 +975,7 @@
 				totalLiveWatchers: x.m
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(l.D)(t.listingName)),
-				openOverlay: t => e(Object(f.a)(t)),
+				openOverlay: t => e(Object(v.a)(t)),
 				subscribeConfig: () => e(u.a.subscribeConfig(t.listingName)),
 				subscribeStats: t => e(u.a.subscribeStats(t)),
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
@@ -1577,4 +1577,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.85f1893244ec886741e7.js.map
+//# sourceMappingURL=RpanListingUnit.973fdf2aa9599144c3ee.js.map
