@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.05198fba46a1e765e86d.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.5eb067842cd498ee2f28.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -316,7 +316,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = r()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.F), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -679,9 +679,9 @@
 				T = s("./src/reddit/actions/toaster.ts"),
 				P = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				I = s("./src/graphql/operations/SuggestSubredditGeoPlace.json"),
-				F = async (e, t) => Object(l.a)(e, Object.assign({}, I, {
+				B = async (e, t) => Object(l.a)(e, Object.assign({}, I, {
 					variables: t
-				})), B = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
+				})), F = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
 			const R = "crowdsource",
 				G = {
 					pageType: "crowdsource_feed_geo"
@@ -693,16 +693,16 @@
 					source: R,
 					noun: "skip",
 					action: "click",
-					subreddit: Object(B.a)(e),
-					userSubreddit: Object(B.f)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(F.a)(e),
+					userSubreddit: Object(F.f)(e.modPermissions, e.isSubscribed),
 					actionInfo: G
 				}),
 				A = e => () => ({
 					source: R,
 					noun: "location_field",
 					action: "click",
-					subreddit: Object(B.a)(e),
-					userSubreddit: Object(B.f)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(F.a)(e),
+					userSubreddit: Object(F.f)(e.modPermissions, e.isSubscribed),
 					actionInfo: L
 				}),
 				H = J("select_location"),
@@ -716,8 +716,8 @@
 					source: R,
 					noun: e,
 					action: "click",
-					subreddit: Object(B.a)(t),
-					userSubreddit: Object(B.f)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(F.a)(t),
+					userSubreddit: Object(F.f)(t.modPermissions, t.isSubscribed),
 					actionInfo: Object.assign({}, L, {
 						reason: s
 					})
@@ -729,8 +729,8 @@
 					source: R,
 					noun: e,
 					action: "click",
-					subreddit: Object(B.a)(t),
-					userSubreddit: Object(B.f)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(F.a)(t),
+					userSubreddit: Object(F.f)(t.modPermissions, t.isSubscribed),
 					actionInfo: Object.assign({}, G, {
 						reason: s
 					})
@@ -915,7 +915,7 @@
 					className: x.a.subredditTitle
 				}, a.a.createElement(P.b, {
 					className: x.a.icon,
-					subredditOrProfile: Object(B.a)(t),
+					subredditOrProfile: Object(F.a)(t),
 					linkTo: t.path
 				}), a.a.createElement(E.a, {
 					to: t.path
@@ -948,7 +948,7 @@
 						e.preventDefault(), b(!0);
 						try {
 							await async function(e, t, s, n) {
-								return F(e(), {
+								return B(e(), {
 									input: {
 										subredditId: s,
 										geoPlace: {
@@ -1076,4 +1076,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging.05198fba46a1e765e86d.js.map
+//# sourceMappingURL=Geotagging.5eb067842cd498ee2f28.js.map

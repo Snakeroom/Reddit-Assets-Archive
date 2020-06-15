@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.a09992e5c1729071d922.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.40046941d0823e3b27d4.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
@@ -224,7 +224,7 @@
 				function(e, t) {
 					return Object(m.a)(e, {
 						endpoint: "".concat(u.a.metaUrl, "/ratings/").concat(t.subredditId, "/points-monthly"),
-						method: l.bb.GET
+						method: l.cb.GET
 					}).then(e => {
 						if (e.ok) {
 							let t = 0;
@@ -728,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.a09992e5c1729071d922.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.40046941d0823e3b27d4.js.map

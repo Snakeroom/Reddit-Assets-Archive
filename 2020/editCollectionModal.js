@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.119e437df35f95335885.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.a66a0280e5988c94d317.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -517,7 +517,7 @@
 					let p, h;
 					if (this.state.mounted || m === o.a.Live) p = function(e, t, n) {
 						const s = Object(o.e)(e, t),
-							a = new Date(e * i.Db);
+							a = new Date(e * i.Eb);
 						let l;
 						if (s === o.a.Live || n) return r.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -1039,4 +1039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.119e437df35f95335885.js.map
+//# sourceMappingURL=editCollectionModal.a66a0280e5988c94d317.js.map

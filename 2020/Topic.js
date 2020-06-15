@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.3eb02f74e92aa410d64b.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9d2bc9011236311f6bc1.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(t, e) {
@@ -545,7 +545,7 @@
 				$ = s.n(Y);
 			const {
 				fbt: tt
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), et = Object(T.t)(), st = (t, e) => e.match.params.sort || c.O, it = t => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), et = Object(T.t)(), st = (t, e) => e.match.params.sort || c.P, it = t => {
 				const e = [];
 				return t ? (t.hasPosts && e.push(Q.Posts), t.hasSubreddits && e.push(Q.Communities), e) : e
 			}, nt = Object(r.b)(() => Object(o.a)((t, e) => Object(D.c)(t, e.match.params.topicSlug, !0), (t, e) => Object(D.a)(t, {
@@ -673,4 +673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.3eb02f74e92aa410d64b.js.map
+//# sourceMappingURL=Topic.9d2bc9011236311f6bc1.js.map

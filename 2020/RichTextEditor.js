@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.ebf11b6a0cee1abeaf6a.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2fcb6e6b230a72de737f.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -50,7 +50,7 @@
 						const t = "https://".concat(r.pointsDocsBaseUrl, "v1.json?web"),
 							n = await Object(s.b)({
 								endpoint: t,
-								method: o.bb.GET
+								method: o.cb.GET
 							});
 						n.ok && n.body && e(u(n.body))
 					}
@@ -2000,9 +2000,9 @@
 					})(r, s, n);
 				return i ? [i] : (e => {
 					const t = [];
-					return e.image > w.R && t.push(o.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > w.S && t.push(o.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > w.V && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > w.W && t.push(o.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(r)
@@ -2799,4 +2799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.ebf11b6a0cee1abeaf6a.js.map
+//# sourceMappingURL=RichTextEditor.2fcb6e6b230a72de737f.js.map

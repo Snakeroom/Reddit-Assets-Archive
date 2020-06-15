@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.c10457906343ee455cb1.js
-// Retrieved at 6/9/2020, 4:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.8896d57b26053608e6d0.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -129,7 +129,7 @@
 						const t = "https://".concat(o.pointsDocsBaseUrl, "v1.json?web"),
 							n = await Object(r.b)({
 								endpoint: t,
-								method: s.bb.GET
+								method: s.cb.GET
 							});
 						n.ok && n.body && e(b(n.body))
 					}
@@ -565,7 +565,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: r.bb.GET
+					method: r.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -586,7 +586,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: r.bb.POST,
+					method: r.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1094,4 +1094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.c10457906343ee455cb1.js.map
+//# sourceMappingURL=EconHelperActions.8896d57b26053608e6d0.js.map

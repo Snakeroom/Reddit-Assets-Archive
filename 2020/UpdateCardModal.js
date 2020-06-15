@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.ac39a70bc478996d5147.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.6adc6c8ff761afe177d2.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, a) {
@@ -207,20 +207,20 @@
 					Object(f.b)(x.a)(t()) && (e(Object(y.i)(x.a)), e(k()))
 				}, R = Object(b.a)(N.t), S = Object(b.a)(N.s), w = e => {
 					switch (e && e.error && e.error.type) {
-						case h.D.USER_DOESNT_EXIST:
-						case h.D.VALIDATION_ERROR:
+						case h.E.USER_DOESNT_EXIST:
+						case h.E.VALIDATION_ERROR:
 							return n.fbt._("Looks like you entered an invalid user.", null, {
 								hk: "Cv0iO"
 							});
-						case h.D.NO_STRIPE_SUBSCRIPTION:
+						case h.E.NO_STRIPE_SUBSCRIPTION:
 							return n.fbt._("Sorry, but there's no Stripe customer associated with this account.", null, {
 								hk: "2hv2Ey"
 							});
-						case h.D.CREDIT_CARD_FAILURE:
+						case h.E.CREDIT_CARD_FAILURE:
 							return e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg || n.fbt._("Something went wrong", null, {
 								hk: "ie9Ol"
 							});
-						case h.D.AUTHENTICATION_ERROR:
+						case h.E.AUTHENTICATION_ERROR:
 							return n.fbt._("There was an authentication error", null, {
 								hk: "12YR0w"
 							});
@@ -249,10 +249,10 @@
 				V = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				T = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				A = a("./src/reddit/controls/TextButton/index.tsx"),
-				D = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+				L = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var r in a) Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r])
@@ -334,7 +334,7 @@
 					} = this.props;
 					return d.a.createElement(V.d, {
 						className: Object(i.a)(e, u.a.updateCardModal)
-					}, d.a.createElement(V.h, null, d.a.createElement(D.a, null, d.a.createElement(V.p, null, n.fbt._("Update Payment Information", null, {
+					}, d.a.createElement(V.h, null, d.a.createElement(L.a, null, d.a.createElement(V.p, null, n.fbt._("Update Payment Information", null, {
 						hk: "1PrvDp"
 					})), d.a.createElement(A.a, {
 						onClick: t
@@ -374,11 +374,11 @@
 			const G = Object(l.injectStripe)(Object(p.a)(Y));
 			t.default = F(e => d.a.createElement(l.StripeProvider, {
 				apiKey: r.a.stripe.apiKey
-			}, d.a.createElement(l.Elements, null, d.a.createElement(G, L({}, e, {
+			}, d.a.createElement(l.Elements, null, d.a.createElement(G, D({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))))
 		}
 	}
 ]);
-//# sourceMappingURL=UpdateCardModal.ac39a70bc478996d5147.js.map
+//# sourceMappingURL=UpdateCardModal.6adc6c8ff761afe177d2.js.map

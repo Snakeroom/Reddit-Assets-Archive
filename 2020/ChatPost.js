@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.29a5a87eb1b8d0b567e2.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.0a655b8fb600701572dc.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -316,7 +316,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: n
-				} = s.a, o = (e => e.replace(c.wb.Account + "_", ""))(t), {
+				} = s.a, o = (e => e.replace(c.xb.Account + "_", ""))(t), {
 					avatar: r,
 					color: a
 				} = (e => {
@@ -611,11 +611,11 @@
 				T = e => {
 					switch (e) {
 						case f.c.Admin:
-							return i.B.ADMIN;
+							return i.C.ADMIN;
 						case f.c.Moderator:
-							return i.B.MODERATOR;
+							return i.C.MODERATOR;
 						case f.c.Alumni:
-							return i.B.ALUMNI_ADMIN;
+							return i.C.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
@@ -2195,25 +2195,25 @@
 					isLoggedOut: n
 				} = e;
 				switch (t.type) {
-					case o.D.AUTHORIZATION_ERROR:
+					case o.E.AUTHORIZATION_ERROR:
 						return n ? s.fbt._("You might need to be logged in to do that.", null, {
 							hk: "1313fG"
 						}) : s.fbt._("It looks like you aren't allowed to do that.", null, {
 							hk: "5tQod"
 						});
-					case o.D.VALIDATION_ERROR:
+					case o.E.VALIDATION_ERROR:
 						return s.fbt._("We weren't able to handle your request.", null, {
 							hk: "4umMwv"
 						});
-					case o.D.NOT_FOUND_ERROR:
+					case o.E.NOT_FOUND_ERROR:
 						return s.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 							hk: "2UmS4e"
 						});
-					case o.D.SERVER_ERROR:
+					case o.E.SERVER_ERROR:
 						return s.fbt._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "1Sxl7y"
 						});
-					case o.D.LIKELY_UBLOCK_ERROR:
+					case o.E.LIKELY_UBLOCK_ERROR:
 						return s.fbt._("It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use.", null, {
 							hk: "6Gh68"
 						});
@@ -2428,4 +2428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.29a5a87eb1b8d0b567e2.js.map
+//# sourceMappingURL=ChatPost.0a655b8fb600701572dc.js.map

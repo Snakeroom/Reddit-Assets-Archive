@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.855156fe6b3d0fc870aa.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.aae9c7f2e4c92c5a5e62.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -52,7 +52,7 @@
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return X
+				return Q
 			}));
 			var s = i("./node_modules/lodash/debounce.js"),
 				n = i.n(s),
@@ -125,7 +125,7 @@
 					},
 					p = g()(() => {
 						d(), o = window.setTimeout(a, s)
-					}, u.F);
+					}, u.G);
 				return {
 					cleanup: a,
 					eventHandler: e => {
@@ -135,24 +135,24 @@
 			}
 			var T = i("./src/lib/scheduler/index.ts"),
 				M = i("./src/lib/domUtils/index.ts"),
-				F = i("./src/lib/LinkedListMap/index.ts");
-			const O = (e, t) => e < 0 ? t + e : e % t;
-			class V {
+				O = i("./src/lib/LinkedListMap/index.ts");
+			const V = (e, t) => e < 0 ? t + e : e % t;
+			class F {
 				constructor(e) {
 					this.head = 0, this.size = 0, this.maxSize = e, this.items = new Array(e)
 				}
 				push(e) {
-					return this.items[this.head] = e, this.head = O(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
+					return this.items[this.head] = e, this.head = V(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
 				}
 				pop() {
 					if (this.size > 0) {
-						const e = O(this.head - 1, this.maxSize),
+						const e = V(this.head - 1, this.maxSize),
 							t = this.items[e];
 						return this.items[e] = void 0, this.head = e, this.size--, t
 					}
 				}
 				forEach(e) {
-					let t = this.size < this.maxSize ? O(this.head - this.size, this.maxSize) : this.head;
+					let t = this.size < this.maxSize ? V(this.head - this.size, this.maxSize) : this.head;
 					for (let i = 0; i < this.size; i++) e(this.items[t], i, this.size), t = (t + 1) % this.maxSize
 				}
 				map(e) {
@@ -229,41 +229,41 @@
 				A = i("./src/reddit/components/Scroller/Simple.m.less"),
 				N = i.n(A);
 			const U = z.g,
-				D = 5 * u.F,
+				D = 5 * u.G,
 				B = 3,
 				q = Object(p.c)({
 					isOverlayOpen: L.h
 				}),
 				K = Object(a.b)(q),
-				Q = {};
+				G = {};
 
-			function X(e) {
+			function Q(e) {
 				return e === document
 			}
 
-			function Y(e) {
+			function X(e) {
 				let t = 0;
 				do {
 					t += e.offsetTop || 0, e = e.offsetParent
 				} while (e);
 				return t
 			}
-			const Z = 10,
-				G = .9,
+			const Y = 10,
+				Z = .9,
 				J = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				ie = 2 * u.F,
+				ie = 2 * u.G,
 				se = 400,
 				ne = 8,
-				le = 5 * u.F,
+				le = 5 * u.G,
 				re = 30,
 				oe = "object" == typeof performance && "function" == typeof performance.now,
 				he = () => oe ? performance.now() : Date.now();
 
 			function de(e, t) {
-				return F.a.fromArray(e.children.map((e, i) => {
+				return O.a.fromArray(e.children.map((e, i) => {
 					const s = t && t.get(e.id);
 					return s ? (s.isFocusable = !!e.isFocusable, s.trackOnEnteredViewport = e.trackOnEnteredViewport, s.trackOnExitedViewport = e.trackOnExitedViewport, s) : {
 						el: null,
@@ -354,7 +354,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(c.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = n()(() => {
 						this.handleScroll()
-					}, u.F), this.pauseAllElements = () => {
+					}, u.G), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -367,7 +367,7 @@
 						})
 					}, this.elementIsVisible = e => !!this.viewport && this.viewport.intersects(e), this.getItemsInViewportWithFilter = e => {
 						this.updateViewportInfo();
-						const t = new F.a("id");
+						const t = new O.a("id");
 						return this.state.renderableChildren.forEach(i => {
 							const s = this.childMap.get(i.id);
 							s && e(s) && t.push(s)
@@ -376,7 +376,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(c.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, u.F))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(c.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, u.G))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -404,17 +404,17 @@
 						this.fpsMeter && this.fpsMeter.eventHandler(e);
 						for (const t in this.hiddenChildren) this.remeasureWhenShown[t] = !0;
 						this.measurementsInvalid = !0, this.callOnScrollForItemsChanged()
-					}, this.getTotalOffsetTop = () => this.containerRef ? Y(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
+					}, this.getTotalOffsetTop = () => this.containerRef ? X(this.containerRef) : 0, this.handleContentContainerResize = n()(() => {
 						this.pendingResizeHandlerRead || (this.pendingResizeHandlerRead = m.a.read(() => {
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, u.F), this.handleScroll = () => {
+					}, u.G), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = m.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(M.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < G,
+								t = e < Z,
 								i = e < J,
 								s = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
@@ -431,7 +431,7 @@
 								}
 							}
 							this.populateRenderableChildrenIfLastChildIsVisible();
-							const n = new F.a("id");
+							const n = new O.a("id");
 							let l, r;
 							const o = [];
 							this.state.renderableChildren.forEach(e => {
@@ -499,7 +499,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, u.F), this.hideChild = (e, t) => {
+					}, u.G), this.hideChild = (e, t) => {
 						const i = this.childMap.get(e);
 						if (!i || !i.el) return;
 						const s = i.el.firstChild;
@@ -525,7 +525,7 @@
 								const s = this.getScrollTop() + i.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(M.c)(this.scrollContainer, s), this.callOnScrollForItemsChanged())
-								}, u.F)
+								}, u.G)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -540,7 +540,7 @@
 							return n >= i + e && n < s
 						}
 						return !1
-					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new F.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new V(Z), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = le;
+					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new O.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new F(Y), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = le;
 					const i = this.getVisibleChildren();
 					i.length && (this.lastVisibleElId = i[i.length - 1].id), this.nextVisibleChildrenIndex = i.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: i
@@ -572,8 +572,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(M.c)(this.scrollContainer, 0), this.setupScrollHandler(), m.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = Q[e];
-							r()(t) || (Q[e] = void 0, this.scrollContainer && Object(M.c)(this.scrollContainer, t))
+								t = G[e];
+							r()(t) || (G[e] = void 0, this.scrollContainer && Object(M.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), m.a.read(() => {
@@ -602,9 +602,9 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						Q[e] = this.lastRenderPosition
+						G[e] = this.lastRenderPosition
 					}
-					this.childMap = new F.a("id"), this.itemsInViewport = new F.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(c.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
+					this.childMap = new O.a("id"), this.itemsInViewport = new O.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(c.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
 				didLayoutAloneChange(e, t) {
 					return "string" == typeof e.layoutKey && "string" == typeof t.layoutKey && e.layoutKey !== t.layoutKey && "string" == typeof e.dataKey && "string" == typeof t.layoutKey && e.dataKey === t.dataKey
@@ -641,7 +641,7 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? X(this.scrollContainer) ? Object(y.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? Q(this.scrollContainer) ? Object(y.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
@@ -721,7 +721,7 @@
 					if (!this.containerRef) return !1;
 					const {
 						viewportTopPadding: e = 0
-					} = this.props, t = Y(this.containerRef);
+					} = this.props, t = X(this.containerRef);
 					return this.getScrollTop() + e - t > 0
 				}
 				render() {
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.855156fe6b3d0fc870aa.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.aae9c7f2e4c92c5a5e62.js.map

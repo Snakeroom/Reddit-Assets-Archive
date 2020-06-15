@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.9b0352af4d66f5363579.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.41976a2ba60ff5b2ff8c.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -113,8 +113,8 @@
 				v = t("./src/higherOrderComponents/makeAsync.tsx"),
 				E = t("./src/reddit/helpers/loadThirdPartyScript.ts"),
 				x = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				_ = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
-				w = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
+				w = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				_ = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const f = Object(k.c)({
 				isGild: e => !!Object(x.p)(e)
 			});
@@ -158,12 +158,12 @@
 				}
 			}
 			const j = Object(y.b)(f, (e, a) => ({
-				createPayment: () => "coinPackage" in a ? e(Object(_.i)(a.coinPackage)) : "awardId" in a ? e(Object(w.g)(a.awardId, a.pennies, a.thingId)) : void 0,
+				createPayment: () => "coinPackage" in a ? e(Object(w.i)(a.coinPackage)) : "awardId" in a ? e(Object(_.g)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, s) => {
 					if ("coinPackage" in a) {
-						if (t) return void e(Object(_.k)(s, a.coinPackage));
-						e(Object(_.j)(s, a.coinPackage))
-					} else "awardId" in a && e(Object(w.f)(s))
+						if (t) return void e(Object(w.k)(s, a.coinPackage));
+						e(Object(w.j)(s, a.coinPackage))
+					} else "awardId" in a && e(Object(_.f)(s))
 				}
 			}))(N);
 			var M = Object(v.a)({
@@ -204,7 +204,7 @@
 					}, r.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: a
-					}), o === d.vb ? e && e.pennyPrice && t ? r.a.createElement(M, {
+					}), o === d.wb ? e && e.pennyPrice && t ? r.a.createElement(M, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -212,7 +212,7 @@
 					}) : s && r.a.createElement(M, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: s
-					}) : null, o === d.ub && r.a.createElement(g.f, {
+					}) : null, o === d.vb && r.a.createElement(g.f, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: c || n,
@@ -308,7 +308,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === d.ub && r.a.createElement(l.a, {
+			}), e.selectedPayment === d.vb && r.a.createElement(l.a, {
 				nightmode: e.nightmode
 			}), r.a.createElement("div", {
 				className: T.a.checkoutFooter
@@ -316,9 +316,9 @@
 				className: T.a.purchaseTotal
 			}, s.fbt._("Total: {totalAmount}", [s.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 				hk: "3dx6W8"
-			}))), e.selectedPayment === d.vb && e.paypalErrorMessage && r.a.createElement("div", {
+			}))), e.selectedPayment === d.wb && e.paypalErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === d.ub && e.stripeErrorMessage && r.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === d.vb && e.stripeErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
 			}, e.stripeErrorMessage), r.a.createElement("div", {
 				className: T.a.agreementLink
@@ -433,9 +433,9 @@
 				v = t("./src/reddit/selectors/platform.ts"),
 				E = t("./src/reddit/selectors/user.ts"),
 				x = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
-				_ = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
-				w = t("./src/reddit/components/PennyPurchaseModal/index.m.less"),
-				f = t.n(w);
+				w = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
+				_ = t("./src/reddit/components/PennyPurchaseModal/index.m.less"),
+				f = t.n(_);
 
 			function N() {
 				return (N = Object.assign || function(e) {
@@ -532,7 +532,7 @@
 					} = this.props;
 					return n.a.createElement("div", {
 						className: a
-					}, "selectPayment" === e && n.a.createElement(_.a, {
+					}, "selectPayment" === e && n.a.createElement(w.a, {
 						coinBalance: t,
 						gildThingId: s,
 						nightmode: o,
@@ -589,4 +589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.9b0352af4d66f5363579.js.map
+//# sourceMappingURL=PennyPurchaseModal.41976a2ba60ff5b2ff8c.js.map

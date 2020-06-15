@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b5218590e84bff3e38c1.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.6cef1948008df75dc1c7.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -435,7 +435,7 @@
 				T = _.a.div("ThumbnailContainer", g.a),
 				L = Object(d.c)({
 					isCurrentUserProfilePost: h.k,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.zb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== v.Ab.TOPIC),
 					post: h.O,
 					shouldOpenPostInNewTab: f.U,
 					subreddit: h.bb
@@ -677,7 +677,7 @@
 					te = F("Pinned", K.id, X);
 				return r.a.createElement("div", {
 					className: t
-				}, a && s && K.distinguishType === c.B.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
+				}, a && s && K.distinguishType === c.C.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
 					className: I.a.modIcon,
 					desc: B(s),
 					id: Z,
@@ -1152,7 +1152,7 @@
 						} = e.media;
 					if (!t || !s) return null;
 					switch (s) {
-						case w.eb.IMAGE:
+						case w.fb.IMAGE:
 							return r.a.createElement(L, {
 								src: t
 							});
@@ -1523,4 +1523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.b5218590e84bff3e38c1.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.6cef1948008df75dc1c7.js.map

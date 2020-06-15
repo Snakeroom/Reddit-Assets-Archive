@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.54f1c1bc770220e101c4.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.39e76fd79190777f0b4d.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -301,7 +301,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: s
-				} = n.a, a = (e => e.replace(c.wb.Account + "_", ""))(t), {
+				} = n.a, a = (e => e.replace(c.xb.Account + "_", ""))(t), {
 					avatar: r,
 					color: o
 				} = (e => {
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.54f1c1bc770220e101c4.js.map
+//# sourceMappingURL=ChatMessageInput.39e76fd79190777f0b4d.js.map

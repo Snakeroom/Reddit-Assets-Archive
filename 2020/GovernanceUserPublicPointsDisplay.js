@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.c7163d22c1d506db41c1.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.39edd294de68cc0e17c9.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -396,7 +396,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.bb.GET
+					method: s.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -417,7 +417,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.bb.POST,
+					method: s.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -654,4 +654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.c7163d22c1d506db41c1.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.39edd294de68cc0e17c9.js.map

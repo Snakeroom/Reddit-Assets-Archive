@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.b50109199610d3310e60.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a78a1011a5947d89ea50.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -165,7 +165,7 @@
 					const {
 						postIds: o,
 						range: r
-					} = s, i = "".concat(t).concat(p.N.TOP, "?t=").concat(r), d = c.a.createElement(x.a, {
+					} = s, i = "".concat(t).concat(p.O.TOP, "?t=").concat(r), d = c.a.createElement(x.a, {
 						className: j.a.widgetHeader
 					}, c.a.createElement("button", {
 						className: j.a.closeButton,
@@ -482,4 +482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.b50109199610d3310e60.js.map
+//# sourceMappingURL=SubredditTopContent.a78a1011a5947d89ea50.js.map

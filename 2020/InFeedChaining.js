@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.290c023f7bca87c2b70e.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.e74e86d79cebc557e376.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -773,13 +773,13 @@
 					}
 				}
 				componentDidMount() {
-					this.trackDiscoveryUnitViewed(), this.props.routeName !== l.zb.COMMENTS && this.setState({
+					this.trackDiscoveryUnitViewed(), this.props.routeName !== l.Ab.COMMENTS && this.setState({
 						isCarouselVisible: !0,
 						isDUVisible: !0
 					})
 				}
 				componentDidUpdate(e) {
-					this.state.isCarouselVisible || e.routeName !== l.zb.COMMENTS || this.props.routeName === l.zb.COMMENTS || this.showDU()
+					this.state.isCarouselVisible || e.routeName !== l.Ab.COMMENTS || this.props.routeName === l.Ab.COMMENTS || this.showDU()
 				}
 				componentWillUnmount() {
 					this.showCarouselTimer && clearTimeout(this.showCarouselTimer), this.showDUTimer && clearTimeout(this.showDUTimer)
@@ -1218,4 +1218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.290c023f7bca87c2b70e.js.map
+//# sourceMappingURL=InFeedChaining.e74e86d79cebc557e376.js.map

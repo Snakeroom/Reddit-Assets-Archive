@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.fd4f843dfbef641d70b0.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.6f1576b65be04ecc6ff7.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,27 +79,27 @@
 					correlation_id: c
 				};
 				return Object(f.a)(Object(O.a)(e, [k.a]), {
-					method: b.bb.POST,
+					method: b.cb.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
 				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign({}, e, {
 					error: Object(v.a)(e)
 				}))
-			}, C = n("./src/reddit/helpers/correlationIdTracker.ts"), w = n("./src/reddit/models/Toast/index.ts"), j = n("./src/reddit/selectors/premium.ts"), E = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(E.y), Object(x.a)(E.A), Object(x.a)(E.z), Object(x.a)(E.C);
-			const _ = Object(x.a)(E.x),
-				I = Object(x.a)(E.w),
+			}, C = n("./src/reddit/helpers/correlationIdTracker.ts"), w = n("./src/reddit/models/Toast/index.ts"), E = n("./src/reddit/selectors/premium.ts"), j = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(j.y), Object(x.a)(j.A), Object(x.a)(j.z), Object(x.a)(j.C);
+			const _ = Object(x.a)(j.x),
+				I = Object(x.a)(j.w),
 				N = e => async (t, n) => {
 					await t(I(e));
-					const o = Object(j.a)(n());
+					const o = Object(E.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === b.D.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.E.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === b.D.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.E.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -113,9 +113,9 @@
 							text: n
 						}))
 					}
-				}, S = Object(x.a)(E.B), M = e => async (t, n) => {
+				}, S = Object(x.a)(j.B), M = e => async (t, n) => {
 					const o = n(),
-						c = Object(j.d)(o);
+						c = Object(E.d)(o);
 					t(S(e));
 					const a = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", "u/".concat(c))], {
 						hk: "3cBrLk"
@@ -149,8 +149,8 @@
 				H = Object(i.c)({
 					coinBalance: F.d,
 					isEmployee: F.E,
-					isPending: j.b,
-					recipientName: j.d
+					isPending: E.b,
+					recipientName: E.d
 				}),
 				U = Object(a.b)(H, e => ({
 					closeModal: () => e(Object(D.b)()),
@@ -795,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.fd4f843dfbef641d70b0.js.map
+//# sourceMappingURL=GivePremiumModal.6f1576b65be04ecc6ff7.js.map

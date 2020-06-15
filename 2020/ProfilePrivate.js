@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.e27232342e14e606078b.js
-// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.82c1951fa532dd1ec07b.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
@@ -225,7 +225,7 @@
 					} = e, _ = "ADMIN" === i, k = "MODERATOR" === i, I = o ? Object(v.b)(o) : void 0, S = s && s.__typename === O.c.AvailableRedditor && s.isCakeDayNow || !1, T = s && s.__typename === O.c.AvailableRedditor && s.isPremiumMember || !1, M = Object.assign({
 						allAwardings: I,
 						associatedAward: t,
-						author: s && Object(E.b)(s) || f.z,
+						author: s && Object(E.b)(s) || f.A,
 						authorId: s && s.id || "",
 						body: n && n.html || "",
 						bodyMD: n && n.markdown || "",
@@ -1424,7 +1424,7 @@
 					postOrComment: u,
 					tooltipType: W ? T.c.Lightbox : void 0
 				}, r.a.createElement(f.b, {
-					ignore: Object(A.d)(u) || !!u.distinguishType && u.distinguishType !== l.B.NONE,
+					ignore: Object(A.d)(u) || !!u.distinguishType && u.distinguishType !== l.C.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, r.a.createElement(Fe, {
@@ -1550,7 +1550,7 @@
 						className: te.a.CommentAuthorLink,
 						author: e.comment.author,
 						isAdmin: e.comment.isAdmin,
-						isAdminEmeritus: e.comment.distinguishType === l.B.ALUMNI_ADMIN,
+						isAdminEmeritus: e.comment.distinguishType === l.C.ALUMNI_ADMIN,
 						isAuthorDeleted: e.isAuthorDeleted,
 						isLivestreaming: e.isLivestreaming,
 						isMod: e.comment.isMod,
@@ -1628,12 +1628,12 @@
 						id: s.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), t.isAdmin && Ue(s.adminTooltipId, _e()), t.distinguishType === l.B.ALUMNI_ADMIN && r.a.createElement(de, {
+					}), t.isAdmin && Ue(s.adminTooltipId, _e()), t.distinguishType === l.C.ALUMNI_ADMIN && r.a.createElement(de, {
 						"aria-label": Ie(),
 						id: s.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: s.onHideTooltip
-					}, "Δ"), t.distinguishType === l.B.ALUMNI_ADMIN && Ue(s.adminEmeritusTooltipId, Ie()), t.isMod && r.a.createElement(me, {
+					}, "Δ"), t.distinguishType === l.C.ALUMNI_ADMIN && Ue(s.adminEmeritusTooltipId, Ie()), t.isMod && r.a.createElement(me, {
 						desc: Se(s.subredditDisplayText),
 						id: s.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
@@ -1748,7 +1748,7 @@
 				b = s.n(u);
 			const {
 				fbt: h
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, f = 10 * d.F;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, f = 10 * d.G;
 			class v extends n.a.Component {
 				constructor(e) {
 					super(e), this.commentElement = null, this.handleResize = m()(() => {
@@ -2223,7 +2223,7 @@
 					flair: o,
 					renderedInOverlay: !1
 				}), n.a.createElement("div", null, !t.isDeleted && n.a.createElement(qe, null, i ? m() : n.a.createElement(g, {
-					height: d.Fb,
+					height: d.Gb,
 					isExpanded: i
 				}, m)), !t.isDeleted && c && n.a.createElement(Re, {
 					comment: t,
@@ -2297,7 +2297,7 @@
 				T = E.a.div("ThumbnailContainer", y.a),
 				M = Object(d.c)({
 					isCurrentUserProfilePost: f.k,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.zb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ab.TOPIC),
 					post: f.O,
 					shouldOpenPostInNewTab: v.U,
 					subreddit: f.bb
@@ -2466,11 +2466,11 @@
 				let {
 					className: t,
 					profileName: s,
-					timeSort: n = i.Qb.ALL
+					timeSort: n = i.Rb.ALL
 				} = e;
 				return r.a.createElement(h, {
 					className: t
-				}, n === i.Qb.ALL ? o.fbt._("hmm... {profileName} hasn't commented on anything", [o.fbt._param("profileName", "u/".concat(s))], {
+				}, n === i.Rb.ALL ? o.fbt._("hmm... {profileName} hasn't commented on anything", [o.fbt._param("profileName", "u/".concat(s))], {
 					hk: "1MHn3t"
 				}) : o.fbt._("hmm... {profileName} hasn't commented recently", [o.fbt._param("profileName", "u/".concat(s))], {
 					hk: "qN3uL"
@@ -2480,11 +2480,11 @@
 				let {
 					className: t,
 					profileName: s,
-					timeSort: n = i.Qb.ALL
+					timeSort: n = i.Rb.ALL
 				} = e;
 				return r.a.createElement(h, {
 					className: t
-				}, n === i.Qb.ALL ? o.fbt._("hmm... {profileName} hasn't posted anything", [o.fbt._param("profileName", "u/".concat(s))], {
+				}, n === i.Rb.ALL ? o.fbt._("hmm... {profileName} hasn't posted anything", [o.fbt._param("profileName", "u/".concat(s))], {
 					hk: "28vBEd"
 				}) : o.fbt._("hmm... {profileName} hasn't posted recently", [o.fbt._param("profileName", "u/".concat(s))], {
 					hk: "38GhqN"
@@ -2644,7 +2644,7 @@
 					let u, b;
 					if (this.state.mounted || p === r.a.Live) u = function(e, t, s) {
 						const o = Object(r.e)(e, t),
-							n = new Date(e * a.Db);
+							n = new Date(e * a.Eb);
 						let c;
 						if (o === r.a.Live || s) return i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -3670,7 +3670,7 @@
 					te = B("Pinned", G.id, U);
 				return r.a.createElement("div", {
 					className: t
-				}, a && s && G.distinguishType === c.B.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(k.a, {
+				}, a && s && G.distinguishType === c.C.MODERATOR && r.a.createElement(n.Fragment, null, r.a.createElement(k.a, {
 					className: S.a.modIcon,
 					desc: R(s),
 					id: X,
@@ -4654,7 +4654,7 @@
 					} = e;
 					const a = s ? [{
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Saved,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Saved,
 						key: "profile.mainmenu.saved",
 						text: o.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -4663,7 +4663,7 @@
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Hidden,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: o.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -4672,7 +4672,7 @@
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Upvoted,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: o.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -4681,7 +4681,7 @@
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Downvoted,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: o.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -4691,7 +4691,7 @@
 					s ? (a.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.ReceivedGildings,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: o.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -4700,7 +4700,7 @@
 					}), a.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.GivenGildings,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: o.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -4718,7 +4718,7 @@
 					});
 					const d = i ? [{
 						internal: !0,
-						isActive: n === p.zb.PROFILE_SNOOBUILDER,
+						isActive: n === p.Ab.PROFILE_SNOOBUILDER,
 						key: "profile.mainmenu.snoobuilder",
 						text: o.fbt._("Snoobuilder", null, {
 							hk: "3SSKff"
@@ -4727,7 +4727,7 @@
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: n === p.zb.PROFILE_OVERVIEW,
+						isActive: n === p.Ab.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: o.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -4735,7 +4735,7 @@
 						url: "/user/".concat(t, "/")
 					}, {
 						internal: !0,
-						isActive: n === p.zb.PROFILE_POSTS,
+						isActive: n === p.Ab.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: o.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -4743,7 +4743,7 @@
 						url: "/user/".concat(t, "/posts/")
 					}, {
 						internal: !0,
-						isActive: n === p.zb.PROFILE_COMMENTS,
+						isActive: n === p.Ab.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: o.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -4761,7 +4761,7 @@
 					const i = s ? [{
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Hidden,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Hidden,
 						key: "profile.dropdownmenu.hidden",
 						text: o.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -4770,7 +4770,7 @@
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Upvoted,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Upvoted,
 						key: "profile.dropdownmenu.upvoted",
 						text: o.fbt._("Upvoted", null, {
 							hk: "J0TzC"
@@ -4779,7 +4779,7 @@
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.Downvoted,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.Downvoted,
 						key: "profile.dropdownmenu.downvoted",
 						text: o.fbt._("Downvoted", null, {
 							hk: "2sxum6"
@@ -4789,7 +4789,7 @@
 					return s ? (i.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.ReceivedGildings,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.ReceivedGildings,
 						key: "profile.dropdownmenu.receiverGildings",
 						text: o.fbt._("Awards received", null, {
 							hk: "31obau"
@@ -4798,7 +4798,7 @@
 					}), i.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: n === p.zb.PROFILE_PRIVATE && r === y.a.GivenGildings,
+						isActive: n === p.Ab.PROFILE_PRIVATE && r === y.a.GivenGildings,
 						key: "profile.dropdownmenu.givenGildings",
 						text: o.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -5006,7 +5006,7 @@
 				}
 			}
 			g.defaultProps = {
-				minimizedLength: d.Eb
+				minimizedLength: d.Fb
 			}, t.a = g
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -5416,7 +5416,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = r()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.F), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -7683,4 +7683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.e27232342e14e606078b.js.map
+//# sourceMappingURL=ProfilePrivate.82c1951fa532dd1ec07b.js.map

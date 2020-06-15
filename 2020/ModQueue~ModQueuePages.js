@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.c8653576eca0e4e5f2b9.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.1e0377b1e0716d45dd22.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -52,8 +52,8 @@
 			const k = Object(a.a)(h.j),
 				v = Object(a.a)(h.i),
 				_ = Object(a.a)(h.h),
-				R = Object(a.a)(h.g),
-				g = Object(a.a)(h.f),
+				g = Object(a.a)(h.g),
+				R = Object(a.a)(h.f),
 				x = Object(a.a)(h.e),
 				y = Object(a.a)(h.n),
 				P = Object(a.a)(h.m),
@@ -69,19 +69,19 @@
 						apiContext: f
 					} = c;
 					switch (t) {
-						case s.fb.Edited:
-							m = R, u = x, p = g;
+						case s.gb.Edited:
+							m = g, u = x, p = R;
 							break;
-						case s.fb.Modqueue:
+						case s.gb.Modqueue:
 							m = k, u = _, p = v;
 							break;
-						case s.fb.Reports:
+						case s.gb.Reports:
 							m = y, u = S, p = P;
 							break;
-						case s.fb.Spam:
+						case s.gb.Spam:
 							m = A, u = C, p = I;
 							break;
-						case s.fb.Unmoderated:
+						case s.gb.Unmoderated:
 							m = w, u = E, p = N;
 							break;
 						default:
@@ -130,7 +130,7 @@
 					s(Object(r.c)());
 					const v = a(),
 						_ = Object(p.g)(v),
-						R = v.user.account && v.user.account.displayText;
+						g = v.user.account && v.user.account.displayText;
 					for (let t = 0; t < _.length; t++) {
 						const n = _[t];
 						let o = e;
@@ -150,16 +150,16 @@
 							subreddit: O.subredditByPostOrCommentId(v, n)
 						}))
 					}
-					const g = {
+					const R = {
 						ids: _
 					};
-					t && (g.text = Object(m.g)(t) || "", g.flairTemplateId = ""), n && (g.cssClass = n, g.flairTemplateId = n);
-					const x = await Object(i.a)(k(), e, g);
+					t && (R.text = Object(m.g)(t) || "", R.flairTemplateId = ""), n && (R.cssClass = n, R.flairTemplateId = n);
+					const x = await Object(i.a)(k(), e, R);
 					if (x.ok) {
 						s(Object(r.b)(Object.assign({}, x.body, {
 							operation: e,
 							ids: _,
-							username: R,
+							username: g,
 							options: {
 								flair: t
 							}
@@ -381,7 +381,7 @@
 				j = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const h = (e, t) => Object(p.a)(Object(f.a)(e, [O.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/modactions/removal_reasons/"),
-					method: s.bb.POST,
+					method: s.cb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -391,14 +391,14 @@
 				}),
 				k = (e, t, n) => Object(p.a)(Object(f.a)(e, [O.a]), {
 					endpoint: Object(j.a)("".concat(e.apiUrl, "/api/v1/modactions/removal_").concat(n, "_message/")),
-					method: s.bb.POST,
+					method: s.cb.POST,
 					type: "json",
 					data: t
 				});
 			var v = n("./src/reddit/helpers/isPost.ts"),
 				_ = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				R = n("./src/reddit/helpers/routeKey/index.ts"),
-				g = n("./src/reddit/models/ModQueue/index.ts"),
+				g = n("./src/reddit/helpers/routeKey/index.ts"),
+				R = n("./src/reddit/models/ModQueue/index.ts"),
 				x = n("./src/reddit/models/PostDraft/index.ts"),
 				y = n("./src/reddit/models/RemovalReason/index.ts"),
 				P = n("./src/reddit/models/Toast/index.ts"),
@@ -416,7 +416,7 @@
 					t(C());
 					const c = await ((e, t) => Object(p.a)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons.json"),
-						method: s.bb.GET
+						method: s.cb.GET
 					}))(a(), r);
 					c.ok ? t(w({
 						subredditId: e,
@@ -430,7 +430,7 @@
 					n(M());
 					const i = await ((e, t, n) => Object(p.a)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
-						method: s.bb.POST,
+						method: s.cb.POST,
 						data: n
 					}))(c(), d, t);
 					if (i.ok) {
@@ -457,7 +457,7 @@
 					n(B());
 					const i = await ((e, t, n) => Object(p.a)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(n.id),
-						method: s.bb.PUT,
+						method: s.cb.PUT,
 						data: {
 							message: n.message,
 							title: n.title
@@ -480,7 +480,7 @@
 					n(L());
 					const i = await ((e, t, n) => Object(p.a)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(n),
-						method: s.bb.DELETE
+						method: s.cb.DELETE
 					}))(c(), d, t);
 					i.ok ? (n(q({
 						subredditId: e,
@@ -508,9 +508,9 @@
 						f = p.user.account && p.user.account.displayText,
 						O = e[0],
 						j = Object(v.a)(O) ? y.e.Post : y.e.Comment,
-						g = j === y.e.Post ? p.posts.models[O] : p.comments.models[O],
+						R = j === y.e.Post ? p.posts.models[O] : p.comments.models[O],
 						P = j === y.e.Post ? u.T : i.R;
-					if (!g || !f) return;
+					if (!R || !f) return;
 					d(J()), d(P({
 						[O]: {
 							modNote: a,
@@ -544,7 +544,7 @@
 											},
 											n = Object(A.g)(p),
 											o = p.platform.currentPage && p.platform.currentPage.routeMatch;
-										let a = n && o && Object(R.a)(o, p, p.posts.models[e.postId]);
+										let a = n && o && Object(g.a)(o, p, p.posts.models[e.postId]);
 										if (a || (a = Object(r.a)(e.postId, null, {
 												sort: s.s,
 												hasSortParam: !0
@@ -568,7 +568,7 @@
 												}
 											}))
 										} else if (j === y.e.Comment) {
-											const e = Object(c.a)(x.c.replyToComment, g.id),
+											const e = Object(c.a)(x.c.replyToComment, R.id),
 												n = Object(S.j)(p, {
 													commentId: O,
 													commentsPageKey: a
@@ -586,9 +586,9 @@
 						}
 					} else d(Z(C.error)), d(P({
 						[O]: {
-							modNote: g.modNote,
-							modRemovalReason: g.modRemovalReason,
-							modReasonBy: g.modReasonBy
+							modNote: R.modNote,
+							modRemovalReason: R.modRemovalReason,
+							modReasonBy: R.modReasonBy
 						}
 					}))
 				}, ne = (e, t, n, s, a) => async (r, c, i) => {
@@ -617,7 +617,7 @@
 					if (O.ok) {
 						const o = {
 							ids: e,
-							operation: g.a.RemovalReason,
+							operation: R.a.RemovalReason,
 							username: l,
 							options: {
 								modNote: a,
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.c8653576eca0e4e5f2b9.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.1e0377b1e0716d45dd22.js.map

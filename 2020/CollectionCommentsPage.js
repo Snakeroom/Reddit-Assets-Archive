@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.23dec2b3641879262051.js
-// Retrieved at 6/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.0f1e8aadef2e82bb7c4b.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -352,7 +352,7 @@
 				p = s("./src/reddit/constants/headers.ts");
 			var u = (e, t, s, n, r) => Object(l.a)(Object(m.a)(e, [p.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/event_post_time.json"),
-				method: o.bb.POST,
+				method: o.cb.POST,
 				data: {
 					id: t,
 					event_start: s,
@@ -362,7 +362,7 @@
 			});
 			var h = (e, t) => Object(l.a)(Object(m.a)(e, [p.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/start_event_post.json"),
-					method: o.bb.POST,
+					method: o.cb.POST,
 					data: {
 						id: t
 					}
@@ -472,11 +472,11 @@
 					if (c.ok) {
 						const t = c.body,
 							i = 14400,
-							d = Math.round(t.event_start / o.Db);
+							d = Math.round(t.event_start / o.Eb);
 						let l = t.event_end;
 						const m = {
 							eventStart: d,
-							eventEnd: l = l && Math.round(l / o.Db) || d + i,
+							eventEnd: l = l && Math.round(l / o.Eb) || d + i,
 							eventIsLive: t.event_is_live
 						};
 						s(P({
@@ -537,7 +537,7 @@
 			}))(e));
 			var b = (e, t) => Object(d.a)(Object(c.a)(e, [l.a]), {
 					endpoint: Object(u.a)(Object(m.a)("".concat(e.apiUrl, "/api/editusertext"))),
-					method: a.bb.POST,
+					method: a.cb.POST,
 					data: h(t)
 				}).then(p.b),
 				x = s("./src/reddit/helpers/overlay/index.ts"),
@@ -1202,7 +1202,7 @@
 				} = r;
 				const a = await (async (e, t, s) => Object(x.a)(Object(g.a)(e, [f.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/set_suggested_sort/"),
-						method: c.bb.POST,
+						method: c.cb.POST,
 						data: {
 							api_type: "json",
 							id: t,
@@ -2220,7 +2220,7 @@
 					postOrComment: u,
 					tooltipType: H ? T.c.Lightbox : void 0
 				}, r.a.createElement(g.b, {
-					ignore: Object(F.d)(u) || !!u.distinguishType && u.distinguishType !== l.B.NONE,
+					ignore: Object(F.d)(u) || !!u.distinguishType && u.distinguishType !== l.C.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
 				}, r.a.createElement(Ae, {
@@ -2346,7 +2346,7 @@
 						className: te.a.CommentAuthorLink,
 						author: e.comment.author,
 						isAdmin: e.comment.isAdmin,
-						isAdminEmeritus: e.comment.distinguishType === l.B.ALUMNI_ADMIN,
+						isAdminEmeritus: e.comment.distinguishType === l.C.ALUMNI_ADMIN,
 						isAuthorDeleted: e.isAuthorDeleted,
 						isLivestreaming: e.isLivestreaming,
 						isMod: e.comment.isMod,
@@ -2424,12 +2424,12 @@
 						id: s.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: s.onHideTooltip
-					}), t.isAdmin && Ue(s.adminTooltipId, Pe()), t.distinguishType === l.B.ALUMNI_ADMIN && r.a.createElement(de, {
+					}), t.isAdmin && Ue(s.adminTooltipId, Pe()), t.distinguishType === l.C.ALUMNI_ADMIN && r.a.createElement(de, {
 						"aria-label": Ie(),
 						id: s.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: s.onHideTooltip
-					}, "Δ"), t.distinguishType === l.B.ALUMNI_ADMIN && Ue(s.adminEmeritusTooltipId, Ie()), t.isMod && r.a.createElement(me, {
+					}, "Δ"), t.distinguishType === l.C.ALUMNI_ADMIN && Ue(s.adminEmeritusTooltipId, Ie()), t.isMod && r.a.createElement(me, {
 						desc: Se(s.subredditDisplayText),
 						id: s.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
@@ -4960,7 +4960,7 @@
 				T = O.a.div("ThumbnailContainer", C.a),
 				N = Object(d.c)({
 					isCurrentUserProfilePost: g.k,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.zb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ab.TOPIC),
 					post: g.O,
 					shouldOpenPostInNewTab: f.U,
 					subreddit: g.bb
@@ -5098,31 +5098,31 @@
 						className: t,
 						style: s
 					}, o.a.createElement(f, {
-						onClick: () => p(r.B.NONE, null),
+						onClick: () => p(r.C.NONE, null),
 						selected: !c && !n,
 						text: i.fbt._("Undistinguish", null, {
 							hk: "1P0FyT"
 						})
 					}), d && o.a.createElement(f, {
-						onClick: () => p(r.B.MODERATOR, null),
+						onClick: () => p(r.C.MODERATOR, null),
 						selected: c && !l,
 						text: i.fbt._("Distinguish as Mod", null, {
 							hk: "KDx42"
 						})
 					}), m && d && o.a.createElement(f, {
-						onClick: () => p(r.B.MODERATOR, !0),
+						onClick: () => p(r.C.MODERATOR, !0),
 						selected: c && l,
 						text: i.fbt._("Distinguish as Mod and Sticky", null, {
 							hk: "1J1DBd"
 						})
 					}), a && o.a.createElement(f, {
-						onClick: () => p(r.B.ADMIN, null),
+						onClick: () => p(r.C.ADMIN, null),
 						selected: n && !l,
 						text: i.fbt._("Distinguish as Admin", null, {
 							hk: "1JsJOX"
 						})
 					}), a && d && m && o.a.createElement(f, {
-						onClick: () => p(r.B.ADMIN, !0),
+						onClick: () => p(r.C.ADMIN, !0),
 						selected: n && l,
 						text: i.fbt._("Distinguish as Admin and Sticky", null, {
 							hk: "3x8QWN"
@@ -5156,7 +5156,7 @@
 					isStickied: d,
 					isTopLevelComment: c,
 					onDistinguishComment: (e, t) => {
-						l(e, t), e === r.B.MODERATOR ? m(!d && t ? "distinguish_sticky" : "distinguish") : e === r.B.ADMIN ? m("admin_distinguish") : a && e !== r.B.MODERATOR ? m("undistinguish") : s && e !== r.B.ADMIN && m("admin_undistinguish"), d && !t && m("unsticky")
+						l(e, t), e === r.C.MODERATOR ? m(!d && t ? "distinguish_sticky" : "distinguish") : e === r.C.ADMIN ? m("admin_distinguish") : a && e !== r.C.MODERATOR ? m("undistinguish") : s && e !== r.C.ADMIN && m("admin_undistinguish"), d && !t && m("unsticky")
 					}
 				}))
 			}
@@ -5398,7 +5398,7 @@
 					let u, h;
 					if (this.state.mounted || p === r.a.Live) u = function(e, t, s) {
 						const n = Object(r.e)(e, t),
-							o = new Date(e * a.Db);
+							o = new Date(e * a.Eb);
 						let c;
 						if (n === r.a.Live || s) return i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -7586,7 +7586,7 @@
 					te = B("Pinned", V.id, U);
 				return r.a.createElement("div", {
 					className: t
-				}, a && s && V.distinguishType === c.B.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
+				}, a && s && V.distinguishType === c.C.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(w.a, {
 					className: S.a.modIcon,
 					desc: R(s),
 					id: Q,
@@ -9887,12 +9887,12 @@
 						}),
 						onClick: this.props.toggleConfirmDelete
 					}, i.a.createElement(je, null)), b && e.userIsOp && i.a.createElement(Te, {
-						displayText: e.post.distinguishType === o.B.ADMIN ? n.fbt._("undistinguish", null, {
+						displayText: e.post.distinguishType === o.C.ADMIN ? n.fbt._("undistinguish", null, {
 							hk: "2chGON"
 						}) : n.fbt._("Distinguish as admin", null, {
 							hk: "2xltiM"
 						}),
-						onClick: () => e.post.distinguishType === o.B.ADMIN ? e.onDistinguishPost(o.B.NONE) : e.onDistinguishPost(o.B.ADMIN)
+						onClick: () => e.post.distinguishType === o.C.ADMIN ? e.onDistinguishPost(o.C.NONE) : e.onDistinguishPost(o.C.ADMIN)
 					}, i.a.createElement(Oe, null)), h && g && !x && i.a.createElement(Ne, {
 						text: n.fbt._("Mark as OC", null, {
 							hk: "2vGyoC"
@@ -10269,13 +10269,13 @@
 				}),
 				D = Object(d.b)(B, e => ({
 					loadMorePosts: t => e(Object(p.r)({
-						sort: l.N.HOT,
+						sort: l.O.HOT,
 						subredditName: t
 					}))
 				}));
 			class W extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(b.d) : null, this.onViewed = (e, t) => Object(C.e)(this.listingKey(), l.N.TOP, t, e, l.Qb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(b.d) : null, this.onViewed = (e, t) => Object(C.e)(this.listingKey(), l.O.TOP, t, e, l.Rb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(v.c)("recommended_footer"))
 					}
 				}
@@ -10283,8 +10283,8 @@
 					const {
 						subredditOrProfile: e
 					} = this.props;
-					return Object(m.a)(e.name, l.N.TOP, {
-						t: l.Qb.WEEK
+					return Object(m.a)(e.name, l.O.TOP, {
+						t: l.Rb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -10638,7 +10638,7 @@
 						return e.sidebarPromotedPosts.models[Object(f.a)(s, o, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					isSubredditPage: e => Object(O.q)(e) === _.zb.SUBREDDIT
+					isSubredditPage: e => Object(O.q)(e) === _.Ab.SUBREDDIT
 				}),
 				w = Object(l.b)(P),
 				I = k.a.wrapped(u.a, "BannerAd", E.a),
@@ -11038,7 +11038,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = r()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.F), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -11321,7 +11321,7 @@
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const F = Object(d.t)(),
-				A = [L.zb.SUBREDDIT, L.zb.COMMENTS, L.zb.COLLECTION_COMMENTS],
+				A = [L.Ab.SUBREDDIT, L.Ab.COMMENTS, L.Ab.COLLECTION_COMMENTS],
 				B = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && A.indexOf(t.pageLayer.meta.name) > -1
@@ -11404,7 +11404,7 @@
 					homeUrl: t,
 					isTopBannerVariant: s,
 					pageLayer: n
-				} = e, r = !!n && !!n.meta && n.meta.name === L.zb.SUBREDDIT_WIKI, i = "wiki/".concat(Q.i), a = t.endsWith("/") ? t + i : "".concat(t, "/").concat(i);
+				} = e, r = !!n && !!n.meta && n.meta.name === L.Ab.SUBREDDIT_WIKI, i = "wiki/".concat(Q.i), a = t.endsWith("/") ? t + i : "".concat(t, "/").concat(i);
 				return o.a.createElement(O, {
 					isActive: r,
 					isTopBannerVariant: s,
@@ -12266,7 +12266,7 @@
 			};
 			const j = 129,
 				P = Object(b.t)({
-					filterName: e => Object(b.S)(e)[h.f],
+					filterName: e => Object(b.S)(e)[h.g],
 					url: e => Object(b.X)(e)
 				}),
 				w = Object(a.c)({
@@ -15715,8 +15715,8 @@
 								tooltipIdPrefix: D.a,
 								tooltipType: Le.c.StickyPost
 							}))
-						})), l && this.postScrollItemRef && (this.postPaused || !d && !this.didScrollPastPost ? this.postPaused && !this.didScrollPastPost && (d ? this.recheckScrollTimer = setTimeout(this.handleScroll, 4 * k.F) : (this.postPaused = !1, P.a.write(this.postScrollItemRef.focusContent))) : (this.postPaused = !0, P.a.write(this.postScrollItemRef.pauseContent)))
-					}, k.F), this.sendEventWithName = e => () => this.props.sendEvent(Object(He.b)(this.props.postId, e)), this.updateWindowHeight = () => {
+						})), l && this.postScrollItemRef && (this.postPaused || !d && !this.didScrollPastPost ? this.postPaused && !this.didScrollPastPost && (d ? this.recheckScrollTimer = setTimeout(this.handleScroll, 4 * k.G) : (this.postPaused = !1, P.a.write(this.postScrollItemRef.focusContent))) : (this.postPaused = !0, P.a.write(this.postScrollItemRef.pauseContent)))
+					}, k.G), this.sendEventWithName = e => () => this.props.sendEvent(Object(He.b)(this.props.postId, e)), this.updateWindowHeight = () => {
 						this.needsUpdatedMeasurements = !0, this.handleScroll()
 					}, this.updateCommentSortRef = e => {
 						this.commentSortRef = e, this.needsUpdatedMeasurements = !0
@@ -16479,4 +16479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.23dec2b3641879262051.js.map
+//# sourceMappingURL=CollectionCommentsPage.0f1e8aadef2e82bb7c4b.js.map

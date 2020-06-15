@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.b4ec34977c431be48b4d.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.a79ab347138d0e4a9700.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1316,7 +1316,7 @@
 			function o(e, t) {
 				return Object(r.a)(e, {
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: s.bb.GET
+					method: s.cb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1337,7 +1337,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: s.bb.POST,
+					method: s.cb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -1716,4 +1716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.b4ec34977c431be48b4d.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.a79ab347138d0e4a9700.js.map

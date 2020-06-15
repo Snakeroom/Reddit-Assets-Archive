@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.25bee096b87c3aef6a26.js
-// Retrieved at 6/4/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.9ea044ff50949a365efa.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -14,7 +14,7 @@
 			})), i.d(t, "isBrowserSubscribedForPushNotifications", (function() {
 				return q
 			})), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return P
+				return I
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return W
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -50,7 +50,7 @@
 				w = i("./src/reddit/models/Toast/index.ts"),
 				_ = i("./src/reddit/selectors/meta.ts"),
 				k = i("./src/reddit/selectors/user.ts");
-			const S = 4 * c.I,
+			const S = 4 * c.J,
 				y = () => {
 					const e = Object(u.a)() && "1" === localStorage.getItem("notification-permission-request-closed");
 					return "granted" === Notification.permission ? l.a.Granted : "denied" === Notification.permission ? l.a.Denied : e ? l.a.Closed : l.a.Default
@@ -70,11 +70,11 @@
 						v2EventBoilerPlate: v.a(e)
 					})
 				};
-			let I = !1;
-			const P = async (e, t) => {
+			let P = !1;
+			const I = async (e, t) => {
 				const i = Object(k.G)(e);
-				if (I) return;
-				if (I = !0, Object(g.a)(e) !== l.f.NotificationsSupported) return;
+				if (P) return;
+				if (P = !0, Object(g.a)(e) !== l.f.NotificationsSupported) return;
 				try {
 					await navigator.serviceWorker.register("/sw.js")
 				} catch (s) {
@@ -93,7 +93,7 @@
 				const r = s(),
 					o = Object(_.h)(r);
 				if (await Object(a.a)() || o) return;
-				if (await P(r, i), Object(u.a)()) {
+				if (await I(r, i), Object(u.a)()) {
 					const t = localStorage.getItem("push-token-last-refresh-ms"),
 						i = (new Date).getTime();
 					if (!e && t && parseInt(t) + S > i) return;
@@ -256,4 +256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PushNotifications.25bee096b87c3aef6a26.js.map
+//# sourceMappingURL=PushNotifications.9ea044ff50949a365efa.js.map

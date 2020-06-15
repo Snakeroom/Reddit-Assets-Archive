@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.a68cb8fdc71057441f86.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.76967886ca9b94a9bd11.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1703,7 +1703,7 @@
 					let {
 						match: n
 					} = t;
-					return n.params.sort || d.N.HOT
+					return n.params.sort || d.O.HOT
 				},
 				Xe = (e, t) => {
 					let {
@@ -1729,8 +1729,8 @@
 				},
 				Ve = Object(c.a)(Je, Xe, qe, (e, t, n) => Object(m.a)(n, e, t)),
 				Ze = Object(c.a)(Xe, e => {
-					const t = b.t in e && e[b.t].toUpperCase();
-					return "string" == typeof t && t in d.Qb ? d.Qb[t] : d.Rb
+					const t = b.u in e && e[b.u].toUpperCase();
+					return "string" == typeof t && t in d.Rb ? d.Rb[t] : d.Sb
 				}),
 				Ke = Object(c.c)({
 					listingKey: Ve,
@@ -1803,4 +1803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.a68cb8fdc71057441f86.js.map
+//# sourceMappingURL=Multireddit.76967886ca9b94a9bd11.js.map

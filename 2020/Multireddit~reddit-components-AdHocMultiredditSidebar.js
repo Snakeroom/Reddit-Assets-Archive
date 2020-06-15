@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.fdf5a6a2751b911f624d.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.4cd5b65f98e51a27ad8e.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -547,7 +547,7 @@
 								} = this.state;
 								if (e.length) {
 									const t = Object(ae.g)(e),
-										n = t.startsWith(ne.Sb) ? "profile" : "subreddit",
+										n = t.startsWith(ne.Tb) ? "profile" : "subreddit",
 										s = "profile" === n ? t.substring(2) : t;
 									this.props.addSubredditRequested({
 										name: s,
@@ -1076,7 +1076,7 @@
 				}
 			}
 			g.defaultProps = {
-				minimizedLength: a.Eb
+				minimizedLength: a.Fb
 			}, t.a = g
 		},
 		"./src/reddit/components/SidebarSectionHeader/index.m.less": function(e, t, n) {
@@ -1561,4 +1561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.fdf5a6a2751b911f624d.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.4cd5b65f98e51a27ad8e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.c8c1d2833f01ba3eca7e.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e634247f96d511288b54.js
+// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1408,7 +1408,7 @@
 						wikiSubRoute: u,
 						wikiPageName: h,
 						pageName: b
-					} = n, g = i[l.w], f = i[l.x], k = l.y in i;
+					} = n, g = i[l.x], f = i[l.y], k = l.z in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1434,10 +1434,10 @@
 							});
 							break;
 						default:
-							return b === r.Ob.WikiBanned ? o.a.createElement(oe, {
+							return b === r.Pb.WikiBanned ? o.a.createElement(oe, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : b === r.Ob.WikiContributors ? o.a.createElement(he, {
+							}) : b === r.Pb.WikiContributors ? o.a.createElement(he, {
 								subredditName: e.name
 							}) : h && g && f ? o.a.createElement(s.a, {
 								comparisonRevisionId: Object(m.a)(f),
@@ -1461,4 +1461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Wiki-ModHubWikiManagement.c8c1d2833f01ba3eca7e.js.map
+//# sourceMappingURL=reddit-components-Wiki-ModHubWikiManagement.e634247f96d511288b54.js.map
