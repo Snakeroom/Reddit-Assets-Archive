@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.be8c04408dd7922c4179.js
-// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7088561736e5ff5fa00c.js
+// Retrieved at 6/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -357,8 +357,7 @@
 				o = s("./src/lib/fastdom/index.ts");
 			const i = new Map,
 				c = (e, t, s) => {
-					if (t === a.zb.SUBREDDIT && e === n.a.dfpRefreshSlotTestSubreddit && s === a.c.BELOW_THE_FOLD) return n.a.dfpRefreshSlotId;
-					const o = [n.a.dfpSlotPrefix];
+					const o = t === a.zb.SUBREDDIT && n.a.dfpRefreshSlotTestSubreddits.includes(e) && s === a.c.BELOW_THE_FOLD ? [n.a.dfpRefreshSlotId] : [n.a.dfpSlotPrefix];
 					return t !== a.zb.PROFILE && (Object(r.a)(e) ? o.push("frontpage") : o.push("r.".concat(e))), t === a.zb.INDEX ? o.push(a.zb.LISTING) : t && o.push(t), o.join("/")
 				},
 				d = (e, t) => {
@@ -13241,4 +13240,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.be8c04408dd7922c4179.js.map
+//# sourceMappingURL=Reddit.7088561736e5ff5fa00c.js.map

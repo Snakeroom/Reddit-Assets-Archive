@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.425ef0e6df44293d0709.js
-// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.a1e53abeb0e0766f7a50.js
+// Retrieved at 6/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -308,7 +308,7 @@
 				w = C.a.wrapped(b.a, "BannerAd", _.a),
 				A = C.a.wrapped(y.a, "ThemedWidget", _.a),
 				k = C.a.div("SidebarAdPlaceholder", _.a),
-				I = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === u.a.dfpRefreshSlotTestSubreddit && e === E.c.BELOW_THE_FOLD),
+				I = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && u.a.dfpRefreshSlotTestSubreddits.includes(s) && e === E.c.BELOW_THE_FOLD),
 				P = (e, t, s) => {
 					let r = "";
 					return t && (r += "overlay-"), r += "sidebar-".concat(e), null != s && (r += "-".concat(s)), r
@@ -1072,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.425ef0e6df44293d0709.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.a1e53abeb0e0766f7a50.js.map

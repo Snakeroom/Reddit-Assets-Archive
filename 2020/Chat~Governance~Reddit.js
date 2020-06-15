@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cb345217910cced8c3d9.js
-// Retrieved at 6/15/2020, 1:00:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d136bb08b0001a0167a3.js
+// Retrieved at 6/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1516,7 +1516,7 @@
 				adsPath: {}.ADS_URL || "/api/request_promo.json",
 				dfpSlotPrefix: {}.DFP_SLOT_PREFIX || "/32173961/desktop",
 				dfpRefreshSlotId: "/32173961/Desktop-Refresh",
-				dfpRefreshSlotTestSubreddit: "askreddit",
+				dfpRefreshSlotTestSubreddits: ["ps4", "askreddit", "economics", "eyebleach", "funny", "games", "gaming", "jokes", "memes", "movies", "news", "pcgaming", "personalfinance", "pics", "prequelmemes", "programming", "stocks", "television", "todayilearned", "videos", "worldnews"],
 				dfpRefreshSlotInterval: 24e4,
 				apiHeaders: (e => e.split(";").reduce((e, t) => {
 					if (t && t.indexOf("=") > 0) {
@@ -3261,14 +3261,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("ee8ca89-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("4dcedb1-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ee8ca89-production",
+						release: "4dcedb1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3630,7 +3630,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "ee8ca89-production",
+							releaseClient: "4dcedb1-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -21446,4 +21446,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.cb345217910cced8c3d9.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d136bb08b0001a0167a3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bc352a5d3743db244da4.js
-// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.23dec2b3641879262051.js
+// Retrieved at 6/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10644,7 +10644,7 @@
 				I = k.a.wrapped(u.a, "BannerAd", E.a),
 				S = k.a.wrapped(g.a, "ThemedWidget", E.a),
 				T = k.a.div("SidebarAdPlaceholder", E.a),
-				N = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && s === p.a.dfpRefreshSlotTestSubreddit && e === _.c.BELOW_THE_FOLD),
+				N = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && p.a.dfpRefreshSlotTestSubreddits.includes(s) && e === _.c.BELOW_THE_FOLD),
 				M = (e, t, s) => {
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
@@ -16479,4 +16479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.bc352a5d3743db244da4.js.map
+//# sourceMappingURL=CollectionCommentsPage.23dec2b3641879262051.js.map
