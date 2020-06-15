@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.452abccebcfba212be9d.js
-// Retrieved at 6/15/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.caca5b7e8cfe7f0ab354.js
+// Retrieved at 6/15/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -44,11 +44,11 @@
 						r = new Uint32Array(e);
 					return crypto.getRandomValues(r), Array.from(r).map(e => t.charAt(e % s)).join("")
 				},
-				v = function() {
+				f = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
 					return new Date(e).toISOString().replace(/^(\d{4})-(\d{2})-(\d{2}).*/, "$1$2$3")
 				},
-				f = function(e) {
+				v = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
@@ -59,7 +59,7 @@
 			const E = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					r = await crypto.subtle.digest(e, s);
-				return Array.from(new Uint8Array(r)).map(f).join("")
+				return Array.from(new Uint8Array(r)).map(v).join("")
 			})(S.SHA1, e);
 
 			function y() {
@@ -82,9 +82,9 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "937a6c1-production"
+					SENTRY_RELEASE_VERSION: "821b39d-production"
 				}),
-				_ = {
+				T = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -104,14 +104,14 @@
 					disableCookies: l,
 					envKey: m,
 					localStorageSaltKey: h,
-					localStorageViewerUserIdKey: f,
+					localStorageViewerUserIdKey: v,
 					playerName: S,
 					playerVersion: O,
-					respectDoNotTrack: T,
+					respectDoNotTrack: _,
 					saltLength: C,
 					saltTimeToLive: R,
 					viewerUserIdLength: w
-				} = Object.assign({}, _, t);
+				} = Object.assign({}, T, t);
 				class I extends r.Component {
 					constructor() {
 						super(...arguments), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => {
@@ -188,7 +188,7 @@
 					async encryptViewerUserId() {
 						const e = this.props.redditUserId || I.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
-							s = v(),
+							s = f(),
 							r = "".concat(s).concat(e).concat(t);
 						return (await E(r)).substr(0, I.VIEWER_USER_ID_LENGTH)
 					}
@@ -252,7 +252,7 @@
 						}
 					}
 				}
-				I.displayName = x(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = T, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
+				I.displayName = x(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = _, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
 				const N = Object(r.forwardRef)((e, t) => i.a.createElement(I, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -595,9 +595,9 @@
 			})), s.d(t, "d", (function() {
 				return O
 			})), s.d(t, "e", (function() {
-				return _
-			})), s.d(t, "f", (function() {
 				return T
+			})), s.d(t, "f", (function() {
+				return _
 			})), s.d(t, "g", (function() {
 				return C
 			})), s.d(t, "h", (function() {
@@ -658,17 +658,17 @@
 			}
 			var p = Object(a.b)(u, {})(h),
 				b = s("./src/reddit/selectors/comments.ts"),
-				v = s("./src/reddit/selectors/subreddit.ts");
-			const f = (e, t) => {
+				f = s("./src/reddit/selectors/subreddit.ts");
+			const v = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(v.H)(e, t);
+					r = Object(f.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
 					subredditOrProfile: r
 				}
 			};
-			var S = Object(a.b)(() => Object(n.a)(f, b.j, (e, t) => Object.assign({}, e, {
+			var S = Object(a.b)(() => Object(n.a)(v, b.j, (e, t) => Object.assign({}, e, {
 				depth: t
 			})))(e => i.a.createElement(p, {
 				type: "comment",
@@ -699,7 +699,7 @@
 			}));
 			const E = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(v.H)(e, t);
+					r = Object(f.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -725,7 +725,7 @@
 				}
 			}));
 			var g = Object(a.b)(() => Object(n.c)({
-					subreddit: v.Q
+					subreddit: f.Q
 				}))(e => i.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -776,7 +776,7 @@
 					voteState: e.post.voteState
 				}
 			}));
-			var _ = Object(a.b)(() => Object(n.c)({
+			var T = Object(a.b)(() => Object(n.c)({
 				subredditOrProfile: (e, t) => Object(x.bb)(e, {
 					postId: t.post.id
 				}),
@@ -802,7 +802,7 @@
 					} : {}
 				}
 			}));
-			var T = Object(a.b)(() => Object(n.c)({
+			var _ = Object(a.b)(() => Object(n.c)({
 				post: x.O,
 				subredditOrProfile: x.bb,
 				isModerator: (e, t) => {
@@ -837,7 +837,7 @@
 				}
 			}));
 			var C = Object(a.b)(() => Object(n.c)({
-				subreddit: v.Q
+				subreddit: f.Q
 			}))(e => i.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -850,7 +850,7 @@
 				}
 			}));
 			var R = Object(a.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(v.K)(e, {
+				subredditOrProfile: (e, t) => Object(f.K)(e, {
 					identifier: t
 				})
 			}))(e => i.a.createElement(p, {
@@ -869,7 +869,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(v.Q)(e, {
+					return s ? Object(f.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -908,17 +908,17 @@
 				h = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				p = s("./src/reddit/constants/chat.ts"),
 				b = s("./src/reddit/constants/postLayout.ts"),
-				v = s("./src/reddit/helpers/overlay/index.ts"),
-				f = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				f = s("./src/reddit/helpers/overlay/index.ts"),
+				v = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				S = s("./src/reddit/helpers/trackers/rpan.ts"),
 				E = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				y = s("./src/reddit/models/Vote/index.ts"),
 				g = s("./src/reddit/selectors/platform.ts"),
 				x = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				O = s("./src/reddit/selectors/user.ts"),
-				_ = s("./src/telemetry/index.ts"),
-				T = s("./node_modules/uuid/v4.js"),
-				C = s.n(T),
+				T = s("./src/telemetry/index.ts"),
+				_ = s("./node_modules/uuid/v4.js"),
+				C = s.n(_),
 				R = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				w = s("./src/reddit/components/Flatlist/index.tsx"),
 				I = s("./src/reddit/components/Flatlist/constants.ts"),
@@ -955,12 +955,12 @@
 					});
 					let i;
 					if (r) {
-						const e = Object(f.c)(r),
+						const e = Object(v.c)(r),
 							t = Object(h.c)(s);
 						i = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						i = e === m.P ? Object(f.d)() : Object(f.f)(e)
+						i = e === m.P ? Object(v.d)() : Object(v.f)(e)
 					}
 					return i
 				},
@@ -975,7 +975,7 @@
 				totalLiveWatchers: x.m
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(l.D)(t.listingName)),
-				openOverlay: t => e(Object(v.a)(t)),
+				openOverlay: t => e(Object(f.a)(t)),
 				subscribeConfig: () => e(u.a.subscribeConfig(t.listingName)),
 				subscribeStats: t => e(u.a.subscribeStats(t)),
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
@@ -1027,19 +1027,9 @@
 					}, this.onEnded = () => {
 						this.subscribeStats()
 					}, this.onLoadedData = () => {
-						const e = C()();
 						this.setState({
-							isReady: !0,
-							startTime: Date.now(),
-							watchDuration: 0,
-							watchTimer: this.getWatchDurationTimer(e),
-							heartbeatDurationOffset: 0,
-							sessionDuration: 0,
-							sessionTimer: this.getSessionDurationTimer(e),
-							id: e
-						}, () => {
-							this.props.stream && (this.props.sendEvent(Object(S.u)(this.props.stream, this.getPlaybackStats())), this.startTimers())
-						})
+							isReady: !0
+						}), this.state.isVisible && this.startHeartbeats()
 					}, this.onHideUnitClicked = (e, t) => {
 						e.stopPropagation();
 						const {
@@ -1108,7 +1098,17 @@
 					} = this.props, {
 						isVisible: i
 					} = this.state, a = i && !s, n = t.isVisible, o = e.isOverlayOpen, c = i && !n, d = !i && n, l = s && !o, m = !s && o, u = (r && r.post.id) !== (e.stream && e.stream.post.id), h = (c || m) && a, p = d || l, b = u && a;
-					u && e.stream && (this.props.sendEvent(Object(S.r)(e.stream, this.getPlaybackStats())), this.endTimers()), h ? this.subscribeAll() : p ? (this.unsubscribeAll(), this.pauseWatch()) : b && (this.subscribeStats(), this.setState({
+					(u && e.stream || d) && (e.stream && this.props.sendEvent(Object(S.r)(e.stream, this.getPlaybackStats())), this.endTimers(), this.setState({
+						id: "",
+						sessionDuration: 0,
+						sessionTimer: "",
+						watchDuration: 0,
+						watchTimer: "",
+						heartbeatDurationOffset: 0,
+						startTime: 0,
+						duration: 0,
+						currentTime: 0
+					})), h ? this.subscribeAll() : p ? this.unsubscribeAll() : b && (this.subscribeStats(), this.setState({
 						isReady: !1
 					}))
 				}
@@ -1266,32 +1266,46 @@
 					})
 				}
 				startTimers() {
-					this.startWatch(), _.c.start(this.state.sessionTimer), this.fiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 5e3), this.fifteenSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 15e3), this.thirtySecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 3e4), this.fortyfiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 45e3), this.minuteSessionTimer = window.setInterval(this.onSendHeartbeat, 6e4)
+					this.startWatch(), T.c.start(this.state.sessionTimer), this.fiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 5e3), this.fifteenSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 15e3), this.thirtySecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 3e4), this.fortyfiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 45e3), this.minuteSessionTimer = window.setInterval(this.onSendHeartbeat, 6e4)
 				}
 				getSessionDuration() {
 					const e = this.state.sessionTimer;
-					return _.c.has(e) ? _.c.getTime(e) : 0
+					return T.c.has(e) ? T.c.getTime(e) : 0
 				}
 				endTimers() {
-					_.c.end(this.state.watchTimer), _.c.end(this.state.sessionTimer), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
+					T.c.end(this.state.watchTimer), T.c.end(this.state.sessionTimer), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
 				}
 				getWatchDuration() {
 					let e = 0;
 					const t = this.state.watchTimer;
-					return _.c.has(t) && (e = _.c.getTime(t)), e + this.state.watchDuration
+					return T.c.has(t) && (e = T.c.getTime(t)), e + this.state.watchDuration
 				}
 				pauseWatch() {
 					const e = this.getWatchDuration(),
 						t = this.state.watchTimer;
-					_.c.end(t), this.setState({
+					T.c.end(t), this.setState({
 						watchDuration: e
 					})
 				}
 				startWatch() {
-					_.c.start(this.state.watchTimer)
+					T.c.start(this.state.watchTimer)
 				}
 				convertToMs(e) {
 					return Math.round(1e3 * e)
+				}
+				startHeartbeats() {
+					const e = C()();
+					this.setState({
+						startTime: Date.now(),
+						watchDuration: 0,
+						watchTimer: this.getWatchDurationTimer(e),
+						heartbeatDurationOffset: 0,
+						sessionDuration: 0,
+						sessionTimer: this.getSessionDurationTimer(e),
+						id: e
+					}, () => {
+						this.props.stream && (this.props.sendEvent(Object(S.u)(this.props.stream, this.getPlaybackStats())), this.startTimers())
+					})
 				}
 				openOverlay() {
 					const {
@@ -1577,4 +1591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.452abccebcfba212be9d.js.map
+//# sourceMappingURL=RpanListingUnit.caca5b7e8cfe7f0ab354.js.map
