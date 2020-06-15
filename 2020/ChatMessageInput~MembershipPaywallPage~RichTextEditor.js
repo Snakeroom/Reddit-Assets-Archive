@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.c3a237f57b90f785bdd0.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.ed7d2a6c1487002dfd0e.js
+// Retrieved at 6/15/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -4973,10 +4973,8 @@
 			}
 			const Ws = t => {
 					if (!t) return null;
-					const e = document.createElement("div");
-					e.innerHTML = t;
-					const n = e.querySelector("[".concat("data-reddit-rtjson", "]"));
-					return n && n.getAttribute("data-reddit-rtjson")
+					const e = (new DOMParser).parseFromString(t, "text/html").querySelector("[".concat("data-reddit-rtjson", "]"));
+					return e && e.getAttribute("data-reddit-rtjson")
 				},
 				Vs = t => {
 					if (bt()) return {
@@ -7977,4 +7975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.c3a237f57b90f785bdd0.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.ed7d2a6c1487002dfd0e.js.map
