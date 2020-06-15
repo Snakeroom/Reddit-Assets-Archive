@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.89801ce3485272c7b44b.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.629caab6f67031fd1489.js
+// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4811,9 +4811,9 @@
 				uo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				mo = s("./src/reddit/selectors/experiments/trending.ts"),
 				po = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const ho = e => Object(Vt.E)(e) || fs.qc.Treatment1 === Object(po.c)(e, {
+			const ho = e => Object(Vt.E)(e) || fs.pc.Treatment1 === Object(po.c)(e, {
 				experimentEligibilitySelector: po.a,
-				experimentName: fs.nc
+				experimentName: fs.mc
 			});
 			var bo = s("./src/reddit/selectors/searchResults.ts"),
 				go = s("./src/reddit/selectors/tooltip.ts"),
@@ -13119,9 +13119,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.pc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.oc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.mc
+				experimentName: n.lc
 			}))
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, s) {
@@ -13240,4 +13240,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.89801ce3485272c7b44b.js.map
+//# sourceMappingURL=Reddit.629caab6f67031fd1489.js.map
