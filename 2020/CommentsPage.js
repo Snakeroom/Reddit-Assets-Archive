@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.26184eb46085b96475e7.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.525830311a41721cdc09.js
+// Retrieved at 6/16/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4682,7 +4682,8 @@
 				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = "500px", C = 3, O = Object(i.c)({
 				hasDismissedTruncation: u.b,
-				isLoggedIn: b.G,
+				isGQLLoggedIn: b.G,
+				isLoggedIn: b.H,
 				isPostSEOEligible: h.f,
 				postSEOV2TruncatedVariant: h.l
 			}), y = Object(r.b)(O);
@@ -4696,26 +4697,27 @@
 						hasDismissedTruncation: r,
 						innerRef: i,
 						isCommentsListTruncated: d,
-						isLoggedIn: u,
-						isOverlay: h,
-						numberOfComments: b,
-						onClick: x,
-						subredditOrProfile: O
-					} = this.props, y = !(!O || Object(m.f)(O)), E = d && y && (b >= C && !h || !r) && !u, _ = E && !e, k = E ? g.a.TruncatedComments : "";
+						isGQLLoggedIn: u,
+						isLoggedIn: h,
+						isOverlay: b,
+						numberOfComments: x,
+						onClick: O,
+						subredditOrProfile: y
+					} = this.props, E = !(!y || Object(m.f)(y)), _ = d && E && (x >= C && !b || !r) && (!u && !h), k = _ && !e, j = _ ? g.a.TruncatedComments : "";
 					return o.a.createElement("div", {
-						onClick: x,
+						onClick: O,
 						ref: i
 					}, o.a.createElement("div", {
-						className: Object(a.a)(g.a.ContentWrapper, s, k),
+						className: Object(a.a)(g.a.ContentWrapper, s, j),
 						style: {
 							"--commentswrapper-gradient-color": Object(p.a)(this.props).body,
-							maxHeight: E ? v : "unset"
+							maxHeight: _ ? v : "unset"
 						}
-					}, t), _ && o.a.createElement(l.f, {
+					}, t), k && o.a.createElement(l.f, {
 						className: g.a.MoreCommentsButton,
 						onClick: n,
 						"data-redditstyle": !0
-					}, f._("View entire discussion ( {number of comments} comments)", [f._param("number of comments", Object(c.b)(b))], {
+					}, f._("View entire discussion ( {number of comments} comments)", [f._param("number of comments", Object(c.b)(x))], {
 						hk: "OzcHJ"
 					})))
 				}
@@ -10264,7 +10266,8 @@
 				}, O.a, y.b, (e, t, s) => !((!t || s) && e)),
 				B = Object(c.c)({
 					isChatPost: E.d,
-					isLoggedIn: _.G,
+					isGQLLoggedIn: _.G,
+					isLoggedIn: _.H,
 					shouldShowSubredditUpsell: A
 				}),
 				D = Object(d.b)(B, e => ({
@@ -10315,12 +10318,13 @@
 					const {
 						contentContainerRef: e,
 						isChatPost: t,
-						isLoggedIn: s,
-						post: n,
-						shouldShowSubredditUpsell: o,
-						subredditOrProfile: i
-					} = this.props, d = n && Object(f.a)(n);
-					return s || t || d || !o ? null : a.a.createElement("div", {
+						isGQLLoggedIn: s,
+						isLoggedIn: n,
+						post: o,
+						shouldShowSubredditUpsell: i,
+						subredditOrProfile: d
+					} = this.props, c = o && Object(f.a)(o);
+					return s || n || t || c || !i ? null : a.a.createElement("div", {
 						className: F.a.container
 					}, this.renderSmallBanner(), a.a.createElement(u.a, {
 						className: F.a.postList,
@@ -10342,7 +10346,7 @@
 						className: F.a.footer,
 						onClick: this.onFooterClick,
 						shouldNavigateToHome: !1,
-						subredditOrProfile: i
+						subredditOrProfile: d
 					}))
 				}
 			}
@@ -16406,4 +16410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.26184eb46085b96475e7.js.map
+//# sourceMappingURL=CommentsPage.525830311a41721cdc09.js.map
