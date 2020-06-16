@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.1ff67928950c57d4e3c9.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.355941c3ad1e24dffef1.js
+// Retrieved at 6/16/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -89,21 +89,21 @@
 			})), t.d(n, "b", (function() {
 				return m
 			})), t.d(n, "h", (function() {
-				return _
-			})), t.d(n, "d", (function() {
 				return O
-			})), t.d(n, "g", (function() {
+			})), t.d(n, "d", (function() {
 				return C
-			})), t.d(n, "c", (function() {
+			})), t.d(n, "g", (function() {
 				return h
-			})), t.d(n, "i", (function() {
+			})), t.d(n, "c", (function() {
 				return b
+			})), t.d(n, "i", (function() {
+				return f
 			})), t.d(n, "e", (function() {
 				return U
 			})), t.d(n, "f", (function() {
 				return T
 			})), t.d(n, "j", (function() {
-				return f
+				return A
 			}));
 			var s, a, o = t("./src/reddit/actions/comment/index.ts"),
 				c = t("./src/reddit/actions/modal.ts"),
@@ -117,7 +117,7 @@
 				e.CHANGE_USERNAME_INITIAL = "change_username_initial", e.CHANGE_USERNAME_CONFIRMATION = "change_username_confirmation", e.CHANGE_USERNAME_INPUT = "change_username_input", e.CHANGE_USERNAME_SUCCESS = "change_username_success"
 			}(s || (s = {})),
 			function(e) {
-				e.COMMENT = "comment", e.CUSTOM_FEED = "custom_feed", e.POST = "post", e.UNKNOWN = "unknown"
+				e.COMMENT = "comment", e.CUSTOM_FEED = "custom_feed", e.POST = "post", e.PROFILE = "profile", e.UNKNOWN = "unknown"
 			}(a || (a = {}));
 			const E = "popup",
 				m = "tooltip",
@@ -130,12 +130,17 @@
 						case c.c:
 							if (e.payload === i.a.MULTIREDDIT_ADD_SUBREDDIT || e.payload === i.a.MULTIREDDIT_CREATE) return a.CUSTOM_FEED;
 							break;
-						case r.a:
-							if (e.payload.args && e.payload.args[0] && "string" == typeof e.payload.args[0] && e.payload.args[0].includes(u.b)) return a.POST
+						case r.a: {
+							const n = _(e);
+							if (n.startsWith("/user/")) return a.PROFILE;
+							if (n.includes(u.b)) return a.POST;
+							break
+						}
 					}
 					return a.UNKNOWN
 				},
-				_ = (e, n) => t => Object.assign({}, Object(p.defaults)(t), {
+				_ = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
+				O = (e, n) => t => Object.assign({}, Object(p.defaults)(t), {
 					action: d.c.VIEW,
 					actionInfo: Object(p.actionInfo)(t, {
 						reason: n ? N(Object(l.a)(t)) : void 0
@@ -143,7 +148,7 @@
 					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
 				}),
-				O = (e, n) => t => Object.assign({}, Object(p.defaults)(t), {
+				C = (e, n) => t => Object.assign({}, Object(p.defaults)(t), {
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -151,12 +156,12 @@
 					},
 					source: e
 				}),
-				C = () => e => Object.assign({}, Object(p.defaults)(e), {
+				h = () => e => Object.assign({}, Object(p.defaults)(e), {
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E
 				}),
-				h = e => n => Object.assign({}, Object(p.defaults)(n), {
+				b = e => n => Object.assign({}, Object(p.defaults)(n), {
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E,
@@ -164,7 +169,7 @@
 						buttonText: e
 					}
 				}),
-				b = () => e => Object.assign({}, Object(p.defaults)(e), {
+				f = () => e => Object.assign({}, Object(p.defaults)(e), {
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
@@ -182,7 +187,7 @@
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
 				}),
-				f = () => e => Object.assign({}, Object(p.defaults)(e), {
+				A = () => e => Object.assign({}, Object(p.defaults)(e), {
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -190,4 +195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChangeUsernameTooltip.1ff67928950c57d4e3c9.js.map
+//# sourceMappingURL=ChangeUsernameTooltip.355941c3ad1e24dffef1.js.map

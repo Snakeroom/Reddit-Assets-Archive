@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6f3e5f2e65f478d65123.js
-// Retrieved at 6/16/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.46460c7b3aa4f2857541.js
+// Retrieved at 6/16/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -10029,19 +10029,19 @@
 		"./src/reddit/actions/pages/profileOverview.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return T
-			})), n.d(t, "e", (function() {
-				return w
-			})), n.d(t, "d", (function() {
 				return A
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return C
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return D
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return R
+			})), n.d(t, "b", (function() {
+				return P
+			})), n.d(t, "a", (function() {
+				return k
 			})), n.d(t, "g", (function() {
-				return M
+				return G
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.array.sort.js");
 			var s = n("./node_modules/lodash/pick.js"),
@@ -10057,44 +10057,46 @@
 				p = n("./src/reddit/selectors/listings.ts"),
 				f = n("./src/reddit/selectors/profile.ts"),
 				m = n("./src/reddit/selectors/profileOverviewChronoItems.ts"),
-				O = n("./src/lib/makeActionCreator/index.ts"),
-				g = n("./src/reddit/actions/contentGate.ts"),
-				_ = n("./src/reddit/actions/externalAccount.ts"),
-				h = n("./src/reddit/actions/pinnedPost.ts"),
-				y = n("./src/reddit/actions/platform.ts"),
-				j = n("./src/reddit/actions/profile/index.ts"),
-				E = n("./src/reddit/actions/trophyCase.ts"),
-				I = n("./src/reddit/constants/errors.ts"),
-				v = n("./src/reddit/helpers/makeProfileListingKey/index.ts"),
-				S = n("./src/reddit/helpers/timeApiRoute/index.ts");
-			const T = "PAGE__PROFILE_OVERVIEW_CONVERSATIONS_PENDING",
-				w = "PAGE__PROFILE_OVERVIEW_CONVERSATIONS_LOADED",
-				A = "PAGE__PROFILE_OVERVIEW_CONVERSATIONS_FAILED",
-				C = "PAGE__PROFILE_OVERVIEW_CHRONO_PENDING",
-				D = "PAGE__PROFILE_OVERVIEW_CHRONO_LOADED",
-				R = "PAGE__PROFILE_OVERVIEW_CHRONO_FAILED",
-				P = Object(O.a)(T),
-				k = Object(O.a)(w),
-				x = Object(O.a)(A),
-				N = Object(O.a)(C),
-				L = Object(O.a)(D),
-				U = Object(O.a)(R),
-				M = e => async (t, n, s) => {
+				O = n("./src/reddit/selectors/user.ts"),
+				g = n("./src/lib/makeActionCreator/index.ts"),
+				_ = n("./src/reddit/actions/changeUsername.ts"),
+				h = n("./src/reddit/actions/contentGate.ts"),
+				y = n("./src/reddit/actions/externalAccount.ts"),
+				j = n("./src/reddit/actions/pinnedPost.ts"),
+				E = n("./src/reddit/actions/platform.ts"),
+				I = n("./src/reddit/actions/profile/index.ts"),
+				v = n("./src/reddit/actions/trophyCase.ts"),
+				S = n("./src/reddit/constants/errors.ts"),
+				T = n("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				w = n("./src/reddit/helpers/timeApiRoute/index.ts");
+			const A = "PAGE__PROFILE_OVERVIEW_CONVERSATIONS_PENDING",
+				C = "PAGE__PROFILE_OVERVIEW_CONVERSATIONS_LOADED",
+				D = "PAGE__PROFILE_OVERVIEW_CONVERSATIONS_FAILED",
+				R = "PAGE__PROFILE_OVERVIEW_CHRONO_PENDING",
+				P = "PAGE__PROFILE_OVERVIEW_CHRONO_LOADED",
+				k = "PAGE__PROFILE_OVERVIEW_CHRONO_FAILED",
+				x = Object(g.a)(A),
+				N = Object(g.a)(C),
+				L = Object(g.a)(D),
+				U = Object(g.a)(R),
+				M = Object(g.a)(P),
+				F = Object(g.a)(k),
+				G = e => async (t, n, s) => {
 					const {
-						queryParams: O,
-						params: T
+						queryParams: g,
+						params: A
 					} = e, {
-						sort: w,
-						t: A
-					} = Object(a.a)(n(), O), {
-						profileName: C
-					} = T, D = u.e[Object(b.N)(n(), {})], R = C.toLowerCase(), M = Object.assign({}, r()(e.queryParams, l.l), {
-						sort: w,
-						layout: D,
-						t: A
+						sort: C,
+						t: D
+					} = Object(a.a)(n(), g), {
+						profileName: R
+					} = A, P = u.e[Object(b.N)(n(), {})], k = R.toLowerCase(), G = Object.assign({}, r()(e.queryParams, l.l), {
+						sort: C,
+						layout: P,
+						t: D
 					});
-					if (await t(j.d(R)), D === u.e[u.g.Compact]) {
-						const s = Object(v.a)(R, d.jb, w, e.queryParams);
+					if (await t(I.d(k)), P === u.e[u.g.Compact]) {
+						const s = Object(T.a)(k, d.jb, C, e.queryParams);
 						if (n().profileOverviewPage.chrono.ids[s]) return;
 						await t(((e, t, n, s) => async (s, r, o) => {
 							const a = r(),
@@ -10107,36 +10109,36 @@
 							if (!!Object(m.b)(a, {
 									listingKey: e
 								}) || c && !d) return;
-							s(N({
+							s(U({
 								key: e
 							}));
-							const u = await Object(S.a)("profile", () => Object(i.a)(o.apiContext(), t, n)),
+							const u = await Object(w.a)("profile", () => Object(i.a)(o.apiContext(), t, n)),
 								l = u.body,
 								{
 									pinned: b
 								} = l;
 							if (u.ok) {
-								s(L(Object.assign({
+								s(M(Object.assign({
 									key: e,
 									meta: a.meta
 								}, l)));
 								const n = Object(f.m)(a, t);
-								s(Object(h.h)({
+								s(Object(j.h)({
 									profileId: n,
 									pinned: b
 								}))
-							} else s(U({
+							} else s(F({
 								account: u.body.data ? u.body.data.account : null,
 								error: u.body.reason ? {
 									type: u.body.reason
 								} : u.error,
 								key: e
-							})), u.body.reason === I.a.DeletedProfile && s(Object(g.p)({
+							})), u.body.reason === S.a.DeletedProfile && s(Object(h.p)({
 								profileName: t
-							})), s(Object(y.m)(u.status))
-						})(s, R, M))
+							})), s(Object(E.m)(u.status))
+						})(s, k, G))
 					} else {
-						const s = Object(v.a)(R, d.kb, w, e.queryParams);
+						const s = Object(T.a)(k, d.kb, C, e.queryParams);
 						if (n().listings.postOrder.ids[s] && !n().listings.postOrder.api.error[s]) return;
 						await t(((e, t, n, s) => async (s, r, o) => {
 							const a = r(),
@@ -10147,17 +10149,17 @@
 							if (!!Object(p.d)(a, {
 									listingKey: e
 								}) || c && !d) return;
-							s(P({
+							s(x({
 								key: e
 							}));
-							const u = await Object(S.a)("profile", () => Object(i.b)(o.apiContext(), t, n)),
+							const u = await Object(w.a)("profile", () => Object(i.b)(o.apiContext(), t, n)),
 								l = u.body,
 								{
 									pinned: b,
 									postIds: m
 								} = l;
 							if (u.ok) {
-								s(k(Object.assign({
+								s(N(Object.assign({
 									key: e,
 									meta: a.meta,
 									profileName: t
@@ -10165,32 +10167,32 @@
 									postIds: m
 								})));
 								const n = Object(f.m)(a, t);
-								s(Object(h.h)({
+								s(Object(j.h)({
 									profileId: n,
 									pinned: b
 								}))
-							} else s(x({
+							} else s(L({
 								account: u.body.data ? u.body.data.account : null,
 								error: u.body.reason ? {
 									type: u.body.reason
 								} : u.error,
 								key: e
-							})), u.body.reason === I.a.DeletedProfile && s(Object(g.p)({
+							})), u.body.reason === S.a.DeletedProfile && s(Object(h.p)({
 								profileName: t
-							})), s(Object(y.m)(u.status))
-						})(s, R, M))
+							})), s(Object(E.m)(u.status))
+						})(s, k, G))
 					}
 					await t(Object(c.q)()), await t(Object(o.b)());
-					const G = n();
-					if (!G.platform.currentPage) return;
-					if (200 !== G.platform.currentPage.status) return;
-					const B = Object(f.m)(n(), R);
-					await t(E.b(R, B)), t(y.l({
-						title: F(n(), C)
-					}));
-					const q = [t(j.b(R)), t(_.o(C)), t(j.f(C))];
-					await Promise.all(q)
-				}, F = (e, t) => Object(f.q)(e, {
+					const q = n();
+					if (!q.platform.currentPage) return;
+					if (200 !== q.platform.currentPage.status) return;
+					const V = Object(f.m)(n(), k);
+					await t(v.b(k, V)), t(E.l({
+						title: B(n(), R)
+					})), Object(O.J)(q) && Object(O.L)(q, R) && t(Object(_.f)());
+					const H = [t(I.b(k)), t(y.o(R)), t(I.f(R))];
+					await Promise.all(H)
+				}, B = (e, t) => Object(f.q)(e, {
 					profileName: t
 				})
 		},
@@ -54356,4 +54358,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.6f3e5f2e65f478d65123.js.map
+//# sourceMappingURL=Governance~Reddit.46460c7b3aa4f2857541.js.map
