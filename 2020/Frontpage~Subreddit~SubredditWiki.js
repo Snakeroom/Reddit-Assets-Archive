@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.04e3e0bc900b4d6c4866.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.be5413d64f7593ad522a.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -129,7 +129,7 @@
 					const s = e.platform.currentPage;
 					if (!s) return {};
 					const r = "".concat(e.meta.protocol, "://").concat(e.meta.domain);
-					return Object(b.b)(t.placement, e.user, Object(c.a)("".concat(r).concat(s.url), s.queryParams), Object(p.z)(e, {
+					return Object(b.b)(t.placement, e.user, Object(c.a)("".concat(r).concat(s.url), s.queryParams), Object(p.A)(e, {
 						subredditName: t.listingName
 					}), t.position)
 				}),
@@ -988,7 +988,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				userIsSubscriber: i.bb
+				userIsSubscriber: i.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1072,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.04e3e0bc900b4d6c4866.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.be5413d64f7593ad522a.js.map

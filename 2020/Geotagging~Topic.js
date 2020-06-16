@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.75acd3ccba42e67c3f1d.js
-// Retrieved at 6/4/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.e2ff2e6d4f6217bf1f49.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -497,8 +497,8 @@
 				j = s.n(O);
 			const C = Object(_.c)({
 				isLoggedIn: y.H,
-				subreddit: N.Q,
-				subredditAboutInfo: N.v
+				subreddit: N.R,
+				subredditAboutInfo: N.w
 			});
 			class L extends r.a.Component {
 				constructor() {
@@ -580,9 +580,9 @@
 				k = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
 				I = s.n(k);
 			const {
-				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = 8, A = Array.from({
-				length: w
+				fbt: w
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, A = Array.from({
+				length: F
 			}).map((e, t) => r.a.createElement(B, {
 				className: I.a.Subreddit,
 				key: t
@@ -606,14 +606,14 @@
 						className: e,
 						subredditIds: t,
 						topicSlug: s
-					} = this.props, n = t.slice(0, w);
+					} = this.props, n = t.slice(0, F);
 					return r.a.createElement(i.a, {
 						className: Object(o.a)(I.a.Container, e)
 					}, r.a.createElement("div", {
 						className: I.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, F._("Top Communities", null, {
+					}, w._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: I.a.SubredditList
@@ -622,12 +622,12 @@
 						discoveryUnit: J,
 						key: e,
 						subredditId: e
-					})) : A), t.length > w && r.a.createElement(a.a, {
+					})) : A), t.length > F && r.a.createElement(a.a, {
 						to: "/t/".concat(s)
 					}, r.a.createElement(d.n, {
 						className: I.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
-					}, F._("See more", null, {
+					}, w._("See more", null, {
 						hk: "2qkY6H"
 					}))))
 				}
@@ -667,7 +667,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: o.bb
+				userIsSubscriber: o.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -707,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.75acd3ccba42e67c3f1d.js.map
+//# sourceMappingURL=Geotagging~Topic.e2ff2e6d4f6217bf1f49.js.map

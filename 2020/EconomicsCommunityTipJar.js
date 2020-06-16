@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.7f71725cdc13e8821bd2.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsCommunityTipJar.f2e209e523e7ecd0655a.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsCommunityTipJar"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -140,7 +140,7 @@
 			const P = Object(i.c)({
 				communityTipJarAmount: y.k,
 				subredditAssets: E.l,
-				subreddit: O.Q,
+				subreddit: O.R,
 				tipsProportions: (e, t) => {
 					let {
 						subredditId: s
@@ -849,4 +849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsCommunityTipJar.7f71725cdc13e8821bd2.js.map
+//# sourceMappingURL=EconomicsCommunityTipJar.f2e209e523e7ecd0655a.js.map

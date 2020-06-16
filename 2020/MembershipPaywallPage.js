@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.0dd23522fa4d3d7c0623.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.89da169bcc52e5304d1c.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -3770,7 +3770,7 @@
 						match: a
 					} = t;
 					const s = a.params.subredditName;
-					if (s) return Object(_.z)(e, {
+					if (s) return Object(_.A)(e, {
 						subredditName: s
 					})
 				}
@@ -3794,4 +3794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.0dd23522fa4d3d7c0623.js.map
+//# sourceMappingURL=MembershipPaywallPage.89da169bcc52e5304d1c.js.map

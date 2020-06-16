@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.6f2fda4446cfef38dde7.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.1c7be48460ed89606093.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1941,7 +1941,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(y.Q)(e, {
+					return s ? Object(y.R)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -2288,7 +2288,7 @@
 				},
 				P = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.Q,
+					subreddit: v.R,
 					isMod: (e, t) => !!Object(g.j)(e, t)
 				});
 			class y extends i.a.Component {
@@ -4053,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.6f2fda4446cfef38dde7.js.map
+//# sourceMappingURL=Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80.1c7be48460ed89606093.js.map

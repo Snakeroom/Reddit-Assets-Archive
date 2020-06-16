@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.fb047eb08e031d5c6a68.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.371e7edfe636fcb494a8.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, o, t) {
@@ -143,8 +143,8 @@
 				L = t("./src/reddit/helpers/modTooltipTemplates/index.ts"),
 				N = t("./src/reddit/helpers/showReportIndicator/index.ts"),
 				R = t("./src/reddit/actions/comment/index.ts"),
-				H = t("./src/reddit/models/Comment/index.ts"),
-				D = t("./src/reddit/models/Flair/index.ts"),
+				D = t("./src/reddit/models/Comment/index.ts"),
+				H = t("./src/reddit/models/Flair/index.ts"),
 				P = t("./src/reddit/icons/fonts/Admin/index.tsx"),
 				B = t("./src/reddit/icons/fonts/Approve/index.tsx"),
 				F = t("./src/reddit/icons/fonts/Lock/index.tsx"),
@@ -256,7 +256,7 @@
 						return !!Object(x.w)(e, t.subredditId, t.authorId).length
 					},
 					subredditDisplayText: (e, o) => {
-						const t = Object(q.H)(e, {
+						const t = Object(q.I)(e, {
 							commentId: o.comment.id
 						});
 						return t ? t.displayText : ""
@@ -336,7 +336,7 @@
 						[oe.a.collapsed]: p
 					})
 				}));
-				const J = !_ && f === D.b.Left;
+				const J = !_ && f === H.b.Left;
 				return a.a.createElement("div", {
 					className: Object(c.a)(i, oe.a.container, {
 						[oe.a.collapsed]: p,
@@ -346,7 +346,7 @@
 				}, x && J && a.a.createElement(g.b, {
 					flair: x,
 					forceSmallEmojis: v
-				}), !Object(H.d)(u) && a.a.createElement(_e, {
+				}), !Object(D.d)(u) && a.a.createElement(_e, {
 					showAddCustom: !0,
 					subredditId: u.subredditId,
 					userId: u.authorId,
@@ -355,14 +355,14 @@
 					postOrComment: u,
 					tooltipType: U ? O.c.Lightbox : void 0
 				}, a.a.createElement(I.b, {
-					ignore: Object(H.d)(u) || !!u.distinguishType && u.distinguishType !== l.C.NONE,
+					ignore: Object(D.d)(u) || !!u.distinguishType && u.distinguishType !== l.C.NONE,
 					subredditId: u.subredditId,
 					userId: u.authorId
-				}, a.a.createElement(De, {
+				}, a.a.createElement(He, {
 					comment: u,
 					isLivestreaming: k,
 					isStrong: !!v,
-					isAuthorDeleted: Object(H.d)(u),
+					isAuthorDeleted: Object(D.d)(u),
 					topTippersEnabled: Q
 				}, d && d))), m && a.a.createElement(Ce, null, "Crowd Control"), m && a.a.createElement(Z.c, {
 					className: oe.a.metaText,
@@ -406,7 +406,7 @@
 					key: "scoreCreatedSeparator"
 				}), a.a.createElement(Pe, te({
 					key: "Created"
-				}, e)), u.isStickied && Ve(), u.editedAt && He(u.editedAt)), a.a.createElement(a.a.Fragment, null, a.a.createElement(Ue, {
+				}, e)), u.isStickied && Ve(), u.editedAt && De(u.editedAt)), a.a.createElement(a.a.Fragment, null, a.a.createElement(Ue, {
 					comment: u,
 					approveTooltipId: n,
 					automodTooltipId: r,
@@ -436,7 +436,7 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: r
-					}, a.a.createElement(xe, null, s.deletedBy === H.a.User ? n.fbt._("Comment deleted by user", null, {
+					}, a.a.createElement(xe, null, s.deletedBy === D.a.User ? n.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : n.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -454,9 +454,9 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: t
-					}, a.a.createElement("div", null, a.a.createElement(De, {
+					}, a.a.createElement("div", null, a.a.createElement(He, {
 						comment: o,
-						isAuthorDeleted: Object(H.d)(o),
+						isAuthorDeleted: Object(D.d)(o),
 						topTippersEnabled: !1
 					})), a.a.createElement(Z.b, {
 						className: oe.a.metaText,
@@ -471,12 +471,12 @@
 						childrenInfo: n
 					}))
 				},
-				He = e => a.a.createElement(r.Fragment, null, a.a.createElement(Z.c, {
+				De = e => a.a.createElement(r.Fragment, null, a.a.createElement(Z.c, {
 					className: oe.a.metaText
 				}), a.a.createElement(Ee, null, n.fbt._("edited {time}", [n.fbt._param("time", Object(u.d)(e))], {
 					hk: "1tiB0u"
 				}))),
-				De = e => {
+				He = e => {
 					const o = a.a.createElement(h.a, {
 						className: oe.a.CommentAuthorLink,
 						author: e.comment.author,
@@ -770,4 +770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~ModQueuePages.fb047eb08e031d5c6a68.js.map
+//# sourceMappingURL=ChatPost~ModQueuePages.371e7edfe636fcb494a8.js.map

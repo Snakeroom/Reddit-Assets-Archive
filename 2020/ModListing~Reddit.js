@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.db134fbd41cce8c2e9aa.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.31928dc6ffed15edf3bf.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2129,9 +2129,9 @@
 			})), n.d(t, "d", (function() {
 				return D
 			})), n.d(t, "c", (function() {
-				return R
-			})), n.d(t, "p", (function() {
 				return F
+			})), n.d(t, "p", (function() {
+				return R
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var r = n("./src/lib/constants/index.ts"),
@@ -2424,7 +2424,7 @@
 						actionInfo: y.actionInfo(e, {
 							success: t
 						}),
-						subreddit: y.subredditById(e, Object(m.E)(e, n)),
+						subreddit: y.subredditById(e, Object(m.F)(e, n)),
 						userSubreddit: y.userSubreddit(e),
 						adblock: y.adblock(e)
 					}))
@@ -2436,7 +2436,7 @@
 						noun: "screen"
 					}, y.defaults(e), {
 						profile: y.profileById(e, Object(u.m)(e, r)),
-						subreddit: y.subredditById(e, Object(m.E)(e, n)),
+						subreddit: y.subredditById(e, Object(m.F)(e, n)),
 						userSubreddit: y.userSubreddit(e),
 						adblock: y.adblock(e)
 					}))
@@ -2518,12 +2518,12 @@
 					userSubreddit: y.userSubreddit(n),
 					adblock: y.adblock(n)
 				}),
-				R = () => e => Object.assign({
+				F = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, y.defaults(e)),
-				F = (e, t, n, s, o) => a => {
+				R = (e, t, n, s, o) => a => {
 					let i = !0;
 					if (t.type.indexOf(r.Mb.Posts) > -1) {
 						const {
@@ -3279,4 +3279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.db134fbd41cce8c2e9aa.js.map
+//# sourceMappingURL=ModListing~Reddit.31928dc6ffed15edf3bf.js.map

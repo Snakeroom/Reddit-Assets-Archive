@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.2e58643f371b5ca86ba5.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.7c0f15598c220baaebb5.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, n) {
@@ -162,7 +162,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const a = Object(p.Q)(e, {
+					const a = Object(p.R)(e, {
 						subredditId: n
 					});
 					return a && a.name || ""
@@ -302,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.2e58643f371b5ca86ba5.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.7c0f15598c220baaebb5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5694811a632eef6d8109.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2493c3e4a0196d1beccd.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -132,7 +132,7 @@
 				x = Object(r.a)(a.s),
 				f = Object(r.a)(a.q),
 				y = (e, t, s) => async (n, r, o) => {
-					const a = Object(u.z)(r(), {
+					const a = Object(u.A)(r(), {
 						subredditName: e
 					});
 					if (a) return v(a, t, s)(n, r, o)
@@ -827,7 +827,7 @@
 						return !!Object(v.w)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Z.H)(e, {
+						const s = Object(Z.I)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -4765,9 +4765,9 @@
 				We = s.n(Ue);
 			const Ve = Object(a.c)({
 					hideNSFWPref: De.z,
-					subredditOrProfile: k.K,
-					subredditOrProfileAboutInfo: k.G,
-					userIsSubscriber: k.bb
+					subredditOrProfile: k.L,
+					subredditOrProfileAboutInfo: k.H,
+					userIsSubscriber: k.cb
 				}),
 				He = Object(o.b)(Ve),
 				qe = e => {
@@ -5418,7 +5418,7 @@
 					url: Te.X
 				}),
 				_s = Object(a.c)({
-					subreddit: k.z,
+					subreddit: k.A,
 					shouldSeeNSFW: De.V
 				}),
 				ks = Object(o.b)(_s),
@@ -5582,7 +5582,7 @@
 				qs = Object(a.c)({
 					fromSubreddit: (e, t) => {
 						const s = Re(e, t);
-						return s ? Object(k.z)(e, {
+						return s ? Object(k.A)(e, {
 							subredditName: s
 						}) : null
 					},
@@ -5759,7 +5759,7 @@
 			const _n = Object(a.c)({
 					comment: (e, t) => Object(Cn.n)(e, t),
 					flair: Cn.e,
-					subreddit: k.H
+					subreddit: k.I
 				}),
 				kn = Object(o.b)(_n),
 				Pn = Object(en.b)(e => ({
@@ -6102,7 +6102,7 @@
 					post: (e, t) => $n(e, t.searchDiscoveryUnit.postOrder),
 					subredditOrProfile: Object(en.a)((e, t) => {
 						const s = $n(e, t.searchDiscoveryUnit.postOrder);
-						if (s) return Object(k.K)(e, {
+						if (s) return Object(k.L)(e, {
 							identifier: s.belongsTo
 						})
 					})
@@ -6582,13 +6582,13 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(R.E)(e, s)
+					return Object(R.F)(e, s)
 				},
 				postFlairWidgets: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const n = Object(R.E)(e, s);
+					const n = Object(R.F)(e, s);
 					return Object(A.g)(e, {
 						subredditId: n
 					})
@@ -7863,7 +7863,7 @@
 					url: e => Object(h.X)(e)
 				}),
 				S = Object(i.c)({
-					subredditId: (e, t) => Object(O.E)(e, t.subredditName)
+					subredditId: (e, t) => Object(O.F)(e, t.subredditName)
 				}),
 				w = Object(a.b)(S),
 				I = l.a.div("WidgetContent", E.a),
@@ -8304,7 +8304,7 @@
 						} = t;
 						return Object(f.K)(e, s, n, r)
 					}),
-					subredditsById: y.X,
+					subredditsById: y.Y,
 					viewportDataLoaded: g.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => b.a
@@ -8350,7 +8350,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.bb
+				userIsSubscriber: a.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -9278,7 +9278,7 @@
 					headerContent: I.a,
 					isInFollowExperiment: S.a,
 					origin: w.l,
-					subreddit: (e, t) => Object(N.z)(e, {
+					subreddit: (e, t) => Object(N.A)(e, {
 						subredditName: t.match.params.subredditName
 					}),
 					viewTreatment: I.h
@@ -9396,4 +9396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.5694811a632eef6d8109.js.map
+//# sourceMappingURL=SearchResults.2493c3e4a0196d1beccd.js.map

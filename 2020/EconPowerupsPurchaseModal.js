@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.eaac8f43e1bc98223ab8.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f422c910ffcb6229d63a.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -259,17 +259,17 @@
 						className: R.a.title
 					}, e.children))
 				},
-				Q = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/index.m.less"),
-				G = a.n(Q);
+				G = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/index.m.less"),
+				H = a.n(G);
 			const {
-				fbt: H
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), J = Object(c.c)({
+				fbt: J
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(c.c)({
 				freeAllocationPending: p.b,
 				powerups: p.g,
-				subreddit: f.Q,
+				subreddit: f.R,
 				topSupporters: p.h,
 				userPowerupsData: p.j
-			}), Y = Object(s.b)(J), K = 10;
+			}), Y = Object(s.b)(Q), K = 10;
 			var V = Y((function(e) {
 					const {
 						freeAllocationPending: t,
@@ -284,50 +284,50 @@
 					if (!c || !i) return a(), null;
 					const p = !!d && !!d.freeCount;
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-						className: G.a.modalContent
+						className: H.a.modalContent
 					}, n.a.createElement(_, {
-						className: G.a.header,
+						className: H.a.header,
 						subreddit: l
 					}), n.a.createElement("h2", {
-						className: G.a.title
-					}, H._("Powerups unlock features for the whole community", null, {
+						className: H.a.title
+					}, J._("Powerups unlock features for the whole community", null, {
 						hk: "4fiJt4"
 					})), n.a.createElement("div", {
-						className: G.a.description
-					}, H._("Become a Powerup supporter and move your community to the next level.", null, {
+						className: H.a.description
+					}, J._("Become a Powerup supporter and move your community to the next level.", null, {
 						hk: "30sU1k"
 					})), n.a.createElement(U, {
-						className: G.a.powerupsBar,
+						className: H.a.powerupsBar,
 						powerups: c
 					}), n.a.createElement("div", {
-						className: G.a.topSupporters
+						className: H.a.topSupporters
 					}, n.a.createElement(N.a, {
 						supporters: i
 					}))), n.a.createElement("div", {
-						className: Object(u.a)(G.a.modalFooter, {
-							[G.a.modalFreePowerupFooter]: p
+						className: Object(u.a)(H.a.modalFooter, {
+							[H.a.modalFreePowerupFooter]: p
 						})
 					}, n.a.createElement(v.a, {
 						powerups: c,
-						className: G.a.unlockDescription
+						className: H.a.unlockDescription
 					}), p ? n.a.createElement(W, {
 						onClick: () => {
 							p && (m(Object(h.b)(1)), m(Object(h.c)(o, 1, !1)))
 						},
 						powerups: c
 					}, t ? n.a.createElement(k.a, {
-						className: G.a.loadingIcon,
+						className: H.a.loadingIcon,
 						sizePx: K
-					}) : H._("Use Your Free Powerup", null, {
+					}) : J._("Use Your Free Powerup", null, {
 						hk: "3qotFU"
 					})) : n.a.createElement(W, {
 						onClick: r,
 						powerups: c
-					}, H._("Powerup", null, {
+					}, J._("Powerup", null, {
 						hk: "3GscWz"
 					})), p && n.a.createElement("div", {
-						className: G.a.freePowerup
-					}, H._("Your premium subscription includes one free Powerup", null, {
+						className: H.a.freePowerup
+					}, J._("Your premium subscription includes one free Powerup", null, {
 						hk: "5Nz0D"
 					}))))
 				})),
@@ -475,7 +475,7 @@
 					return r && r[0]
 				},
 				stripeErrorMessage: ne.i,
-				subreddit: f.Q,
+				subreddit: f.R,
 				paypalErrorMessage: ne.c
 			}), Ne = Object(s.b)(ve), ke = 100;
 			var je = Ne((function(e) {
@@ -967,4 +967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.eaac8f43e1bc98223ab8.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.f422c910ffcb6229d63a.js.map

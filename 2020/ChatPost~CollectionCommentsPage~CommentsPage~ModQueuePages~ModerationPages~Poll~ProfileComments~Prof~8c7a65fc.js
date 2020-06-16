@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6567acf929601c236fec.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.413aeb82bad564faa9a5.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -234,9 +234,9 @@
 				}),
 				F = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
 				q = s.n(F);
-			const Q = 3500,
-				W = 500;
-			class G extends r.a.PureComponent {
+			const W = 3500,
+				G = 500;
+			class Q extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = r.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -252,7 +252,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, Q)))
+						}, W)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -268,7 +268,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, W)
+						}, G)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -339,7 +339,7 @@
 					}))
 				}
 			}
-			var V = G,
+			var V = Q,
 				z = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				J = s("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				Z = s.n(J);
@@ -1284,7 +1284,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const s = Object(b.n)(e, t),
-					n = Object(f.H)(e, t);
+					n = Object(f.I)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -1322,7 +1322,7 @@
 			}));
 			const w = (e, t) => {
 				const s = Object(b.n)(e, t),
-					n = Object(f.H)(e, t);
+					n = Object(f.I)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -1348,7 +1348,7 @@
 				}
 			}));
 			var A = Object(r.b)(() => Object(a.c)({
-					subreddit: f.Q
+					subreddit: f.R
 				}))(e => o.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -1460,7 +1460,7 @@
 				}
 			}));
 			var T = Object(r.b)(() => Object(a.c)({
-				subreddit: f.Q
+				subreddit: f.R
 			}))(e => o.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -1473,7 +1473,7 @@
 				}
 			}));
 			var C = Object(r.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.K)(e, {
+				subredditOrProfile: (e, t) => Object(f.L)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(h, {
@@ -1492,7 +1492,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(f.Q)(e, {
+					return s ? Object(f.R)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -1596,9 +1596,9 @@
 				U = s("./src/reddit/selectors/authorFlair.ts"),
 				F = s("./src/reddit/selectors/userFlair.ts"),
 				q = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				Q = s("./src/reddit/components/PostTopMeta/index.m.less"),
-				W = s.n(Q);
-			const G = {
+				W = s("./src/reddit/components/PostTopMeta/index.m.less"),
+				G = s.n(W);
+			const Q = {
 				placement: "top"
 			};
 			var V;
@@ -1606,13 +1606,13 @@
 				e.StickyPost = "sticky", e.Lightbox = "lightbox"
 			}(V || (V = {}));
 			const z = e => Object(k.a)(Object(M.a)(e), H.a.metaText, H.b.metaText),
-				J = l.a.wrapped(N.b, "MetaSeparator", W.a),
-				Z = l.a.span("text", W.a),
+				J = l.a.wrapped(N.b, "MetaSeparator", G.a),
+				Z = l.a.span("text", G.a),
 				K = Object(q.t)(),
 				Y = e => {
 					const t = !e.isDeleted && e.post.distinguishType === i.C.ADMIN;
 					return o.a.createElement(f.a, {
-						className: W.a.authorLink,
+						className: G.a.authorLink,
 						"data-click-id": "user",
 						author: e.post.author,
 						isAdmin: t,
@@ -1621,9 +1621,9 @@
 						isUnstyled: !0,
 						style: e.style
 					}, "u/".concat(e.post.author), t && o.a.createElement(L.a, {
-						className: W.a.adminIcon
+						className: G.a.adminIcon
 					}), e.renderContractorBadge && o.a.createElement(L.a, {
-						className: W.a.contractorIcon
+						className: G.a.contractorIcon
 					}), !1)
 				},
 				X = o.a.memo((function(e) {
@@ -1640,22 +1640,22 @@
 						post: l
 					}), [l]), L = Object(r.d)(k), H = Object(n.useCallback)(e => Object(F.a)(e, {
 						subredditId: M
-					}), [M]), q = Object(r.d)(H), Q = Object(n.useCallback)(e => Object(F.d)(e, {
+					}), [M]), q = Object(r.d)(H), W = Object(n.useCallback)(e => Object(F.d)(e, {
 						subredditId: M
-					}), [M]), V = Object(r.d)(Q), K = Object(p.a)(G), X = d && d.meta && d.meta.name === i.Ab.COMMENTS, $ = Object(u.a)(l), ee = V === B.b.Left, te = l.authorIsContractor && !!P && P.type === D.d.EmployeesOnly, se = !s && !X, ne = () => o.a.createElement(J, {
+					}), [M]), V = Object(r.d)(W), K = Object(p.a)(Q), X = d && d.meta && d.meta.name === i.Ab.COMMENTS, $ = Object(u.a)(l), ee = V === B.b.Left, te = l.authorIsContractor && !!P && P.type === D.d.EmployeesOnly, se = !s && !X, ne = () => o.a.createElement(J, {
 						className: e.metaSeparatorClassName
 					}, "•"), oe = o.a.createElement(o.a.Fragment, null, !$ && o.a.createElement(Z, {
 						style: {
 							color: z(e)
 						}
 					}, "Posted by"), $ && o.a.createElement(n.Fragment, null, o.a.createElement(b, {
-						className: W.a.crosspostIcon
+						className: G.a.crosspostIcon
 					}), o.a.createElement(Z, {
 						style: {
 							color: z(e)
 						}
 					}, "Crossposted by")), L && ee && o.a.createElement("div", {
-						className: W.a.flairContainer
+						className: G.a.flairContainer
 					}, o.a.createElement(w.b, {
 						disabled: !q,
 						flair: L,
@@ -1669,7 +1669,7 @@
 							color: z(e)
 						}
 					}) : o.a.createElement(n.Fragment, null, !Object(R.h)(l.author) && o.a.createElement(g.b, {
-						className: W.a.badge,
+						className: G.a.badge,
 						subredditId: M,
 						uniqueIdentifier: "".concat(l.id, "-").concat(s),
 						userId: l.authorId
@@ -1687,14 +1687,14 @@
 							color: z(e)
 						}
 					})))), L && !ee && o.a.createElement("div", {
-						className: W.a.flairContainer
+						className: G.a.flairContainer
 					}, o.a.createElement(w.b, {
 						disabled: !q,
 						flair: L,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: se
 					})), l.belongsTo.type === I.a.SUBREDDIT && !Object(R.h)(l.author) && o.a.createElement(v.a, {
-						className: W.a.publicWallet,
+						className: G.a.publicWallet,
 						contentId: l.id,
 						metaSeparator: o.a.createElement(ne, null),
 						subredditId: M,
@@ -1702,7 +1702,7 @@
 						username: l.author
 					}));
 					return o.a.createElement("div", {
-						className: Object(a.a)(W.a.container, t)
+						className: Object(a.a)(G.a.container, t)
 					}, h && P && o.a.createElement(O.a, {
 						postId: l.id,
 						subredditName: P.name,
@@ -1713,7 +1713,7 @@
 					}, P.displayText)), P && P.isQuarantined && o.a.createElement(T.a, null), h && !$ && o.a.createElement(ne, null), l.isSponsored && o.a.createElement(n.Fragment, null, o.a.createElement(C.a, null), o.a.createElement(ne, null)), oe, o.a.createElement(j.e, {
 						post: l
 					}), f && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
-						className: W.a.externalLink,
+						className: G.a.externalLink,
 						"data-click-id": "timestamp",
 						href: l.permalink,
 						onMouseEnter: K.show,
@@ -2141,4 +2141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.6567acf929601c236fec.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.413aeb82bad564faa9a5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a8c8ca8347290f7561ad.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.312ea5b41b0067f73dbf.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -286,7 +286,7 @@
 					isInLocalCommunitiesExperiment: ce.a,
 					localCommunitiesVariant: ce.b,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					trendingSubredditIds: $.Z,
+					trendingSubredditIds: $.ab,
 					currentUser: me.i,
 					frontpageLinks: le.b,
 					isOver18: me.V
@@ -399,7 +399,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.K)(e, {
+						subredditOrProfile: Object(g.L)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -1037,4 +1037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.a8c8ca8347290f7561ad.js.map
+//# sourceMappingURL=FrontpageSidebar.312ea5b41b0067f73dbf.js.map

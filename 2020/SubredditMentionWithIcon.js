@@ -1,9 +1,9 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.0cd32020c08f0bdf6a54.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.10262f15a8c78265278d.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
-			e.exports = JSON.parse('{"id":"f492118344c7"}')
+			e.exports = JSON.parse('{"id":"396e4f59072d"}')
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -216,8 +216,8 @@
 			const {
 				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(a.c)({
-				subreddit: x.Q,
-				subredditAboutInfo: x.w
+				subreddit: x.R,
+				subredditAboutInfo: x.x
 			}), S = Object(r.b)(g);
 			class C extends i.a.Component {
 				constructor() {
@@ -386,11 +386,11 @@
 						o = Object(E.c)(r, {
 							subredditName: e
 						}),
-						a = !!Object(j.z)(r, {
+						a = !!Object(j.A)(r, {
 							subredditName: e
-						}) && !!Object(j.w)(r, {
+						}) && !!Object(j.x)(r, {
 							subredditName: e
-						}) || !!Object(j.ab)(r, {
+						}) || !!Object(j.bb)(r, {
 							subredditName: e
 						}),
 						d = Object(E.d)(r, {
@@ -447,11 +447,11 @@
 					}))
 				};
 			var k = s("./src/reddit/actions/subredditTopContent.ts"),
-				w = s("./src/reddit/actions/tooltip.ts"),
-				P = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				P = s("./src/reddit/actions/tooltip.ts"),
+				w = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				T = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
-				I = s("./src/lib/classNames/index.ts"),
-				L = s("./src/lib/prettyPrintNumber/index.ts"),
+				L = s("./src/lib/classNames/index.ts"),
+				I = s("./src/lib/prettyPrintNumber/index.ts"),
 				M = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				B = s("./src/reddit/components/Thumbnail/index.tsx"),
 				A = s("./src/reddit/helpers/overlay/index.ts"),
@@ -464,7 +464,7 @@
 				return {
 					crosspost: s,
 					post: t,
-					subredditOrProfile: Object(j.K)(e, {
+					subredditOrProfile: Object(j.L)(e, {
 						identifier: t.belongsTo
 					})
 				}
@@ -499,7 +499,7 @@
 						subredditOrProfile: n
 					} = this.props;
 					return o.a.createElement("div", {
-						className: Object(I.a)(H.a.container, e),
+						className: Object(L.a)(H.a.container, e),
 						onClick: this.onClickContainer
 					}, o.a.createElement("div", {
 						className: H.a.postDetails
@@ -514,7 +514,7 @@
 					}, q._({
 						"*": "{number of comments} comments",
 						_1: "1 comment"
-					}, [q._plural(t.numComments, "number of comments", Object(L.b)(t.numComments))], {
+					}, [q._plural(t.numComments, "number of comments", Object(I.b)(t.numComments))], {
 						hk: "Wq9Sy"
 					})))), o.a.createElement("div", {
 						className: H.a.thumbnailContainer,
@@ -528,9 +528,9 @@
 					openLightbox: t => e(Object(A.a)(t.permalink))
 				}))(U),
 				Q = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
-				z = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				W = s.n(G),
+				G = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				W = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				z = s.n(W),
 				K = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
@@ -549,31 +549,31 @@
 						className: t,
 						showSubreddit: s
 					} = e, n = K(e, ["className", "showSubreddit"]);
-					const i = Object(z.a)(n);
+					const i = Object(G.a)(n);
 					return o.a.createElement("div", {
-						className: Object(I.a)(H.a.container, t)
+						className: Object(L.a)(H.a.container, t)
 					}, o.a.createElement("div", {
-						className: W.a.mainBody
+						className: z.a.mainBody
 					}, o.a.createElement("div", {
-						className: W.a.content
+						className: z.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(I.a)(W.a.title, i)
+						className: Object(L.a)(z.a.title, i)
 					}), s && o.a.createElement("div", {
-						className: Object(I.a)(W.a.meta, i)
+						className: Object(L.a)(z.a.meta, i)
 					})), o.a.createElement("div", {
-						className: W.a.flatlist
+						className: z.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(I.a)(W.a.flatlistExpando, i)
+						className: Object(L.a)(z.a.flatlistExpando, i)
 					}), o.a.createElement("div", {
-						className: W.a.flatlistSeparator
+						className: z.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(I.a)(W.a.flatlistItemOne, i)
+						className: Object(L.a)(z.a.flatlistItemOne, i)
 					}), o.a.createElement("div", {
-						className: Object(I.a)(W.a.flatlistItemTwo, i)
+						className: Object(L.a)(z.a.flatlistItemTwo, i)
 					}))), o.a.createElement("div", {
-						className: W.a.thumbnailContainer
+						className: z.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(I.a)(W.a.thumbnail, i)
+						className: Object(L.a)(z.a.thumbnail, i)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -592,7 +592,7 @@
 				isPending: E.c,
 				postIds: E.f,
 				subreddit: j.a,
-				subredditAboutInfo: j.w
+				subredditAboutInfo: j.x
 			}), de = Object(a.b)(ae, (e, t) => {
 				let {
 					subredditName: s,
@@ -601,11 +601,11 @@
 				return {
 					subredditDataRequested: t => e(N(t)),
 					showTooltip: t => {
-						e(Object(w.f)({
+						e(Object(P.f)({
 							tooltipId: t
 						})), e(Object(k.d)(s))
 					},
-					onHideTooltip: () => e(Object(w.i)())
+					onHideTooltip: () => e(Object(P.i)())
 				}
 			}), ce = 600;
 			class le extends o.a.Component {
@@ -695,7 +695,7 @@
 						className: ie.a.subredditIconContainer
 					}, o.a.createElement(X.b, {
 						subredditOrProfile: m ? void 0 : r
-					})), "r/".concat(d)), s && !p && o.a.createElement(P.a, {
+					})), "r/".concat(d)), s && !p && o.a.createElement(w.a, {
 						defaultTooltipPosition: "right",
 						tooltipId: oe(c),
 						tooltipSizeEstimate: {
@@ -957,7 +957,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				userIsSubscriber: o.bb
+				userIsSubscriber: o.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.0cd32020c08f0bdf6a54.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.10262f15a8c78265278d.js.map

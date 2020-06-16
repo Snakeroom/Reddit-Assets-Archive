@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6c704f721a27f2a12e06.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.877be7a5b671f5837bf0.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1255,8 +1255,8 @@
 				W = r("./src/reddit/selectors/subreddit.ts"),
 				B = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				R = r("./src/reddit/selectors/user.ts");
-			const D = 25,
-				M = .5,
+			const M = 25,
+				D = .5,
 				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
@@ -1275,9 +1275,9 @@
 						let {
 							categoryId: r
 						} = t;
-						return Object(W.L)(e, r)
+						return Object(W.M)(e, r)
 					},
-					subreddits: W.X
+					subreddits: W.Y
 				}),
 				H = Object(i.b)(A, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
@@ -1314,7 +1314,7 @@
 					return {
 						after: a,
 						categoryId: e === p.a ? p.d : e,
-						first: D,
+						first: M,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1346,7 +1346,7 @@
 						className: C.a.subredditRankingsList
 					}, s ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(v.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: M,
+						threshold: D,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(F.a, {
 						large: !0
@@ -1656,4 +1656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.6c704f721a27f2a12e06.js.map
+//# sourceMappingURL=SubredditLeaderboard.877be7a5b671f5837bf0.js.map

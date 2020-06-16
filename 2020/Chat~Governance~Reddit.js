@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3475d6d5ecbbd224924f.js
-// Retrieved at 6/16/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bf3281a75b8a2b217f29.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3277,14 +3277,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4777698-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("ad89ff3-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4777698-production",
+						release: "ad89ff3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3646,7 +3646,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4777698-production",
+							releaseClient: "ad89ff3-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7112,7 +7112,7 @@
 						match: n
 					} = i.routeMatch, r = n.params.subredditName;
 					if (!r) return null;
-					const s = Object(x.z)(e, {
+					const s = Object(x.A)(e, {
 						subredditName: r
 					});
 					return s ? s.name : r
@@ -7220,7 +7220,7 @@
 					const n = ne(e, {
 						pageLayer: i
 					});
-					return n ? Object(x.z)(e, {
+					return n ? Object(x.A)(e, {
 						subredditName: n
 					}) : null
 				},
@@ -7231,7 +7231,7 @@
 					const n = ne(e, {
 						pageLayer: i
 					});
-					return n ? Object(x.E)(e, n) : null
+					return n ? Object(x.F)(e, n) : null
 				},
 				oe = (e, t) => re(e, t) || ce(e, t),
 				de = (e, t) => {
@@ -7559,7 +7559,7 @@
 					scheduledPosts: Object(a.e)(a.g, e => {
 						const t = Object(_.e)(e),
 							i = !!t && Object(c.e)(e, {
-								subredditId: Object(m.E)(e, t)
+								subredditId: Object(m.F)(e, t)
 							});
 						return !!t && i && p.has(t.toLowerCase())
 					}),
@@ -7943,7 +7943,7 @@
 							listingName: t
 						});
 						if (!n) return;
-						const r = Object(p.Y)(e, {
+						const r = Object(p.Z)(e, {
 							subredditIds: n
 						}).map(e => e.name).sort().join("+");
 						i = "/r/".concat(r, "/")
@@ -12529,7 +12529,7 @@
 				K = e => e.comments.visitHighlightFilter,
 				Q = (e, t) => {
 					const i = F(e, t);
-					if (i) return Object(c.V)(e, i)
+					if (i) return Object(c.W)(e, i)
 				}
 		},
 		"./src/reddit/selectors/experiments/bestSortPopular.ts": function(e, t, i) {
@@ -13173,7 +13173,7 @@
 						listingName: i
 					} = t;
 					const r = (e => e.replace(/\++/g, "+").replace(/^\+/, "").replace(/\+$/, ""))(i.toLowerCase()).split("+"),
-						s = r.filter(e => !e.startsWith(o.Tb)).map(t => Object(_.E)(e, t)).filter(e => void 0 !== e),
+						s = r.filter(e => !e.startsWith(o.Tb)).map(t => Object(_.F)(e, t)).filter(e => void 0 !== e),
 						d = r.filter(e => e.startsWith(o.Tb)).map(t => Object(c.m)(e, t.slice(2))).filter(e => void 0 !== e),
 						l = [...s.map(t => e.subreddits.models[t].name), ...d.map(t => e.profiles.models[t].name)].join(", ");
 					return {
@@ -13258,7 +13258,7 @@
 					} = t;
 					const r = [];
 					let o = [...i && i.reduce((t, i) => {
-						const n = Object(_.Q)(e, {
+						const n = Object(_.R)(e, {
 							subredditId: i
 						});
 						return n ? [...t, n] : (r.push(i), t)
@@ -13266,7 +13266,7 @@
 						profileId: t
 					})) || []].filter(e => !!e).map(t => {
 						const i = Object(u.j)(t);
-						return i.isSubscribed = Object(_.bb)(e, {
+						return i.isSubscribed = Object(_.cb)(e, {
 							identifier: {
 								type: i.type,
 								name: i.name
@@ -13353,7 +13353,7 @@
 				f = e => e.platform && e.platform.currentPage && e.platform.currentPage.queryParams,
 				g = e => {
 					const t = b(e);
-					return t ? Object(s.E)(e, t) : null
+					return t ? Object(s.F)(e, t) : null
 				},
 				b = e => {
 					const t = e.platform.currentPage && e.platform.currentPage.urlParams;
@@ -13361,7 +13361,7 @@
 				},
 				w = e => {
 					const t = b(e);
-					return t ? Object(s.z)(e, {
+					return t ? Object(s.A)(e, {
 						subredditName: t
 					}) : null
 				},
@@ -13488,9 +13488,9 @@
 				y = (e, t, i) => {
 					if (i && !Object(o.a)(e)) return !1;
 					if (!(i ? Object(h.L)(e, t) : Object(c.g)(e, {
-							subredditId: Object(p.E)(e, t)
+							subredditId: Object(p.F)(e, t)
 						}))) return !1;
-					const n = i ? Object(p.p)(e, t) : Object(p.w)(e, {
+					const n = i ? Object(p.q)(e, t) : Object(p.x)(e, {
 						subredditName: t
 					});
 					return !(!n || !n.collectionsEnabled)
@@ -13503,7 +13503,7 @@
 						collectionId: i
 					});
 					if (!n) return !1;
-					const r = Object(p.Q)(e, {
+					const r = Object(p.R)(e, {
 						subredditId: n.subredditId
 					}) || Object(f.p)(e, {
 						profileId: n.subredditId
@@ -13856,7 +13856,7 @@
 					}
 				}, e => {
 					const t = Object(S.f)(e);
-					return t && Object(O.y)(e, {
+					return t && Object(O.z)(e, {
 						subredditName: t.name
 					})
 				}, e => e.platform.currentPage, (e, t, i, n, r) => {
@@ -13883,7 +13883,7 @@
 				}),
 				q = e => {
 					const t = U(e);
-					return t.name ? t.isProfile ? Object(_.a)(e) ? Object(O.p)(e, t.name) : null : Object(O.w)(e, {
+					return t.name ? t.isProfile ? Object(_.a)(e) ? Object(O.q)(e, t.name) : null : Object(O.x)(e, {
 						subredditName: t.name
 					}) : null
 				},
@@ -14235,7 +14235,7 @@
 				f = (e, t) => {
 					const i = h(e, t);
 					if (i && i.subredditId) {
-						const t = Object(_.Q)(e, {
+						const t = Object(_.R)(e, {
 							subredditId: i.subredditId
 						});
 						return t ? t.name : void 0
@@ -14837,7 +14837,7 @@
 					const n = P(e, {
 						postId: i
 					});
-					return n && n.belongsTo.type !== m.a.PROFILE ? Object(S.G)(e, {
+					return n && n.belongsTo.type !== m.a.PROFILE ? Object(S.H)(e, {
 						identifier: n.belongsTo
 					}) : null
 				},
@@ -14929,7 +14929,7 @@
 						listingKey: t
 					});
 					if (n) {
-						const t = Object(S.E)(e, i);
+						const t = Object(S.F)(e, i);
 						if (t) {
 							if (!!e.subreddits.appliedFilters.meta[t]) {
 								const t = e.posts.metaMap;
@@ -14950,7 +14950,7 @@
 					return i >= 0 ? t[i + 1] : void 0
 				}),
 				je = Object(a.a)(Oe, e => e.posts.models, (e, t) => e && t[e] || void 0),
-				Be = (Object(a.a)((e, t) => k(e, t), (e, t) => Object(S.r)(e, t), (e, t) => {
+				Be = (Object(a.a)((e, t) => k(e, t), (e, t) => Object(S.s)(e, t), (e, t) => {
 					const i = (e => {
 							const t = {};
 							return e.map(e => {
@@ -15005,7 +15005,7 @@
 					const i = P(e, {
 						postId: t
 					});
-					return Object(S.W)(e, i.belongsTo.id)
+					return Object(S.X)(e, i.belongsTo.id)
 				},
 				Pe = e => {
 					const t = ke(e);
@@ -15013,7 +15013,7 @@
 					const i = P(e, {
 							postId: t
 						}),
-						n = Object(S.S)(e, i.belongsTo.id);
+						n = Object(S.T)(e, i.belongsTo.id);
 					return n ? n.crowdControlLevel : void 0
 				}
 		},
@@ -15155,9 +15155,9 @@
 					if (!n) return c;
 					const r = [];
 					return n.forEach(t => {
-						Object(a.Q)(e, {
+						Object(a.R)(e, {
 							subredditId: t
-						}) ? r.push(Object(a.Q)(e, {
+						}) ? r.push(Object(a.R)(e, {
 							subredditId: t
 						})) : _(e, {
 							profileId: t
@@ -15332,7 +15332,7 @@
 				p = e => e.structuredStyles.draft,
 				h = {},
 				f = Object(o.a)((e, t) => {
-					const i = Object(a.Q)(e, t),
+					const i = Object(a.R)(e, t),
 						n = ((e, t) => {
 							const i = _(e, t);
 							if (i) return {
@@ -15349,7 +15349,7 @@
 					} : h)(i, n ? n.color : void 0)
 				}),
 				g = (e, t) => {
-					const i = Object(a.E)(e, t.subredditName);
+					const i = Object(a.F)(e, t.subredditName);
 					return i ? f(e, {
 						subredditId: i
 					}) : h
@@ -15402,7 +15402,7 @@
 				x = (e, t) => {
 					if (Object(u.cb)(e)) return !0;
 					if (t) {
-						const i = t.subredditId || t.subredditName && Object(a.E)(e, t.subredditName);
+						const i = t.subredditId || t.subredditName && Object(a.F)(e, t.subredditName);
 						if (i && Object(u.bb)(e, {
 								subredditId: i
 							})) return !0
@@ -15412,7 +15412,7 @@
 		},
 		"./src/reddit/selectors/subreddit.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "Y", (function() {
+			i.d(t, "Z", (function() {
 				return y
 			})), i.d(t, "b", (function() {
 				return v
@@ -15420,71 +15420,71 @@
 				return S
 			})), i.d(t, "c", (function() {
 				return E
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "H", (function() {
 				return F
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "L", (function() {
 				return I
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "K", (function() {
 				return O
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "Y", (function() {
 				return j
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "R", (function() {
 				return B
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "W", (function() {
 				return x
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "ab", (function() {
 				return R
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "cb", (function() {
 				return k
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return N
 			})), i.d(t, "h", (function() {
 				return P
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "r", (function() {
 				return A
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "bb", (function() {
 				return G
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "A", (function() {
 				return M
 			})), i.d(t, "a", (function() {
 				return U
-			})), i.d(t, "E", (function() {
-				return q
 			})), i.d(t, "F", (function() {
+				return q
+			})), i.d(t, "G", (function() {
 				return H
 			})), i.d(t, "j", (function() {
 				return W
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return z
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return K
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return Q
-			})), i.d(t, "H", (function() {
-				return J
 			})), i.d(t, "I", (function() {
+				return J
+			})), i.d(t, "J", (function() {
 				return Y
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "U", (function() {
 				return X
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "Q", (function() {
 				return Z
-			})), i.d(t, "M", (function() {
-				return $
 			})), i.d(t, "N", (function() {
-				return ee
+				return $
 			})), i.d(t, "O", (function() {
+				return ee
+			})), i.d(t, "P", (function() {
 				return te
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "E", (function() {
 				return ie
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "z", (function() {
 				return ne
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "C", (function() {
 				return re
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "B", (function() {
 				return se
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "s", (function() {
 				return oe
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "n", (function() {
 				return de
 			})), i.d(t, "e", (function() {
 				return le
@@ -15494,32 +15494,34 @@
 				return ue
 			})), i.d(t, "i", (function() {
 				return ce
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "o", (function() {
 				return _e
 			})), i.d(t, "k", (function() {
 				return me
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return pe
 			})), i.d(t, "f", (function() {
 				return he
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "X", (function() {
 				return fe
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "T", (function() {
 				return ge
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "S", (function() {
 				return be
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "D", (function() {
 				return we
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "V", (function() {
 				return ye
-			})), i.d(t, "t", (function() {
-				return ve
-			})), i.d(t, "s", (function() {
-				return Te
 			})), i.d(t, "u", (function() {
+				return ve
+			})), i.d(t, "t", (function() {
+				return Te
+			})), i.d(t, "v", (function() {
 				return Se
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "M", (function() {
 				return Ee
+			})), i.d(t, "m", (function() {
+				return Ie
 			}));
 			i("./node_modules/core-js/modules/es6.array.sort.js"), i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/reselect/es/index.js"),
@@ -15914,8 +15916,11 @@
 					})
 				},
 				Ee = (e, t) => e.subreddits.rankings[t],
-				Fe = Object(n.a)((e, t) => e.subreddits.onboarding[t.key] || w, e => e.subreddits.models, (e, t) => e.map(e => t[e]).filter(Boolean));
-			Object(n.a)(Fe, e => e.map(e => e.name))
+				Fe = Object(n.a)((e, t) => e.subreddits.onboarding[t.key] || w, e => e.subreddits.models, (e, t) => e.map(e => t[e]).filter(Boolean)),
+				Ie = (Object(n.a)(Fe, e => e.map(e => e.name)), (e, t) => {
+					const i = e.subreddits.models[t];
+					return !(!i || !i.liveStreamingIsEnabled)
+				})
 		},
 		"./src/reddit/selectors/subredditAutocomplete.ts": function(e, t, i) {
 			"use strict";
@@ -17239,8 +17244,8 @@
 						const t = e.platform.currentPage.urlParams.subredditName;
 						if (t) {
 							const i = t.toLowerCase(),
-								n = Object(he.E)(e, i),
-								r = Object(he.Q)(e, {
+								n = Object(he.F)(e, i),
+								r = Object(he.R)(e, {
 									subredditId: n
 								}),
 								s = e.subreddits.about[n];
@@ -17255,8 +17260,8 @@
 					if ("community" === t || "subreddit_settings" === t || "subreddit_wiki" === t || "special_membership_paywall" === t || t && t.includes("moderation_pages")) {
 						let i = e.platform.currentPage.urlParams.subredditName;
 						i || "subreddit_wiki" !== t || (i = M.e), i = i.toLowerCase();
-						const n = Object(he.E)(e, i),
-							r = Object(he.Q)(e, {
+						const n = Object(he.F)(e, i),
+							r = Object(he.R)(e, {
 								subredditId: n
 							}),
 							s = e.subreddits.about[n];
@@ -17269,8 +17274,8 @@
 					if ("post_detail" === t || "single_comment_thread" === t) {
 						if (e.platform.currentPage.urlParams.subredditName) {
 							const t = e.platform.currentPage.urlParams.subredditName.toLowerCase(),
-								i = Object(he.E)(e, t),
-								n = Object(he.Q)(e, {
+								i = Object(he.F)(e, t),
+								n = Object(he.R)(e, {
 									subredditId: i
 								}),
 								r = e.subreddits.about[i];
@@ -17303,8 +17308,8 @@
 					if ("search_results" === t) {
 						if ("string" != typeof e.platform.currentPage.urlParams.subredditName) return null;
 						const t = e.platform.currentPage.urlParams.subredditName.toLowerCase(),
-							i = Object(he.E)(e, t),
-							n = Object(he.Q)(e, {
+							i = Object(he.F)(e, t),
+							n = Object(he.R)(e, {
 								subredditId: i
 							}),
 							r = e.subreddits.about[i];
@@ -17317,8 +17322,8 @@
 					if ("stream_player" === t) {
 						const t = e.platform.currentPage.urlParams.subreddit;
 						if (!t) return null;
-						const i = Object(he.E)(e, t.toLowerCase()),
-							n = Object(he.Q)(e, {
+						const i = Object(he.F)(e, t.toLowerCase()),
+							n = Object(he.R)(e, {
 								subredditId: i
 							}),
 							r = e.subreddits.about[i];
@@ -17340,8 +17345,8 @@
 					}
 				},
 				st = (e, t) => {
-					const i = Object(he.E)(e, t),
-						n = Object(he.Q)(e, {
+					const i = Object(he.F)(e, t),
+						n = Object(he.R)(e, {
 							subredditId: i
 						}),
 						r = e.subreddits.about[n.id];
@@ -17682,7 +17687,7 @@
 					return r || ""
 				},
 				a = [],
-				u = Object(r.a)(d, s.X, (e, t) => e ? e.subredditIds.map(e => t[e]) : a),
+				u = Object(r.a)(d, s.Y, (e, t) => e ? e.subredditIds.map(e => t[e]) : a),
 				c = (Object(r.a)(u, e => e.map(e => e && e.name)), (e, t) => {
 					let {
 						topicSlug: i
@@ -21612,4 +21617,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.3475d6d5ecbbd224924f.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.bf3281a75b8a2b217f29.js.map

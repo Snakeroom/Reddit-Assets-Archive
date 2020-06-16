@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.9d2bc9011236311f6bc1.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.e8b2313cb8fc01695f1d.js
+// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(t, e) {
@@ -410,7 +410,7 @@
 				fbt: H
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = Object(o.c)({
 				isLoggedIn: R.H,
-				subreddit: k.Q,
+				subreddit: k.R,
 				subredditAboutInfo: (t, e) => {
 					let {
 						subredditId: s
@@ -493,11 +493,11 @@
 			const {
 				fbt: z
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var Q;
+			var K;
 			! function(t) {
 				t.Communities = "communities", t.Posts = "posts"
-			}(Q || (Q = {}));
-			class K extends n.a.Component {
+			}(K || (K = {}));
+			class Q extends n.a.Component {
 				render() {
 					const {
 						activeTab: t,
@@ -523,31 +523,31 @@
 						hk: "1HEhmv"
 					}))), n.a.createElement("div", {
 						className: U.a.Tabs
-					}, r.includes(Q.Posts) && n.a.createElement("div", {
+					}, r.includes(K.Posts) && n.a.createElement("div", {
 						className: Object(a.a)(U.a.Tab, {
-							[U.a.active]: t === Q.Posts
+							[U.a.active]: t === K.Posts
 						}),
-						onClick: () => i(Q.Posts)
+						onClick: () => i(K.Posts)
 					}, z._("Posts", null, {
 						hk: "3RLrle"
-					})), r.includes(Q.Communities) && n.a.createElement("div", {
+					})), r.includes(K.Communities) && n.a.createElement("div", {
 						className: Object(a.a)(U.a.Tab, {
-							[U.a.active]: t === Q.Communities
+							[U.a.active]: t === K.Communities
 						}),
-						onClick: () => i(Q.Communities)
+						onClick: () => i(K.Communities)
 					}, z._("Communities", null, {
 						hk: "KIwd1"
 					})))))
 				}
 			}
-			var X = K,
+			var X = Q,
 				Y = s("./src/reddit/pages/Topic/index.m.less"),
 				$ = s.n(Y);
 			const {
 				fbt: tt
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), et = Object(T.t)(), st = (t, e) => e.match.params.sort || c.P, it = t => {
 				const e = [];
-				return t ? (t.hasPosts && e.push(Q.Posts), t.hasSubreddits && e.push(Q.Communities), e) : e
+				return t ? (t.hasPosts && e.push(K.Posts), t.hasSubreddits && e.push(K.Communities), e) : e
 			}, nt = Object(r.b)(() => Object(o.a)((t, e) => Object(D.c)(t, e.match.params.topicSlug, !0), (t, e) => Object(D.a)(t, {
 				topicSlug: e.match.params.topicSlug
 			}), T.N, st, q.c, (t, e, s, i, n) => ({
@@ -560,7 +560,7 @@
 				topicName: t
 			})), (t, e) => ({
 				onLoadMorePosts: () => t(Object(l.h)(e.match.params))
-			})), rt = (t, e) => t === Q.Communities ? v.g.Large : e;
+			})), rt = (t, e) => t === K.Communities ? v.g.Large : e;
 			class ot extends n.a.Component {
 				constructor(t) {
 					super(t), this.openTab = t => {
@@ -569,7 +569,7 @@
 							activeLayout: rt(t, this.props.layout)
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
-						this.openTab(Q.Communities)
+						this.openTab(K.Communities)
 					}, this.onViewed = (t, e) => Object(E.e)(Object(d.a)(f.b.Topic, null, {
 						topicSlug: this.props.topic.slug
 					}), this.props.sort, e, t, this.props.timeSort), this.renderNoPosts = () => null, this.renderHeader = () => {
@@ -580,9 +580,9 @@
 							activeTab: s
 						} = this.state;
 						let i, r = !1;
-						return s === Q.Posts ? (i = tt._("Posts about {topic name}", [tt._param("topic name", t)], {
+						return s === K.Posts ? (i = tt._("Posts about {topic name}", [tt._param("topic name", t)], {
 							hk: "3AGfU"
-						}), r = !0) : s === Q.Communities && (i = tt._("Communities related to {topic name}", [tt._param("topic name", t)], {
+						}), r = !0) : s === K.Communities && (i = tt._("Communities related to {topic name}", [tt._param("topic name", t)], {
 							hk: "jKM0V"
 						})), n.a.createElement("div", {
 							className: $.a.TabHeader
@@ -627,16 +627,16 @@
 					if (404 === s) return n.a.createElement(x.b, null);
 					const T = n.a.createElement(n.a.Fragment, null, this.renderHeader(), n.a.createElement("div", {
 						className: Object(a.a)($.a.TopicTab, {
-							[$.a.active]: p === Q.Communities
+							[$.a.active]: p === K.Communities
 						})
 					}, n.a.createElement(Z, {
 						subredditIds: r.subredditIds,
 						topicSlug: c
 					})), n.a.createElement("div", {
 						className: Object(a.a)($.a.TopicTab, {
-							[$.a.active]: p === Q.Posts
+							[$.a.active]: p === K.Posts
 						})
-					}, p === Q.Posts && n.a.createElement(h.a, {
+					}, p === K.Posts && n.a.createElement(h.a, {
 						forcedLayout: u,
 						listingKey: l,
 						listingName: v,
@@ -645,7 +645,7 @@
 						onLoadMore: this.props.onLoadMorePosts
 					}), n.a.createElement(m.a, null)));
 					let E;
-					return p === Q.Posts && i.includes(Q.Communities) && (E = n.a.createElement(_.a, {
+					return p === K.Posts && i.includes(K.Communities) && (E = n.a.createElement(_.a, {
 						subredditIds: r.subredditIds,
 						onSeeMoreCommunities: this.openCommunitiesTab,
 						topicSlug: r.slug
@@ -673,4 +673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.9d2bc9011236311f6bc1.js.map
+//# sourceMappingURL=Topic.e8b2313cb8fc01695f1d.js.map
