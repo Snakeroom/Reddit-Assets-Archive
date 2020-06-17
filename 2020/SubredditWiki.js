@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.046640391000c3b6e572.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d2fee750d3593ff29719.js
+// Retrieved at 6/16/2020, 9:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -6266,12 +6266,13 @@
 		"./src/reddit/selectors/experiments/downToChat.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
+				return a
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.U.Enabled === Object(r.c)(e, {
-				experimentEligibilitySelector: r.a,
+				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				i = n("./src/reddit/selectors/user.ts");
+			const a = e => s.U.Enabled === Object(r.c)(e, {
+				experimentEligibilitySelector: i.H,
 				experimentName: s.S
 			})
 		},
@@ -6422,4 +6423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.046640391000c3b6e572.js.map
+//# sourceMappingURL=SubredditWiki.d2fee750d3593ff29719.js.map
