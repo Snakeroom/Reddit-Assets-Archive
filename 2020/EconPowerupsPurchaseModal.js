@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f422c910ffcb6229d63a.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e57485783184460ba07d.js
+// Retrieved at 6/17/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -73,12 +73,12 @@
 				modalFooter: "_144TUEKKlJtx56YQtlmSt",
 				header: "_32mU8Xz5q9vBJrfBxbr9PR",
 				title: "_3-k8bDQJmNBx0l6MvWsE6e",
-				renew: "_2BwbjLABkV6LFeZEBrhP72",
 				description: "_15VfCJ3U4VTAoMz6WeQ0tA",
 				paymentMethodSelector: "_1tMCauAeAmaz2UYiE2PJkW",
 				errorMessage: "KNcT3bdT4hreJdLs9rGpc",
 				stripeForm: "nHazS4LboBowEGAd7LpkR",
 				button: "_2CF12_C_LxX37-Z8QTzoKq",
+				renew: "_2BwbjLABkV6LFeZEBrhP72",
 				powerupsQuantity: "_2wbepDZ7oh8UX1cMR04TIW",
 				togglerContainer: "_1AxXosb3FYhBjdfWvnVuU5",
 				toggler: "_3pGBK4qIeNbuxDdyr99zJ1"
@@ -203,9 +203,9 @@
 					}))))
 				},
 				L = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/PowerupsBar/index.m.less"),
-				z = a.n(L);
+				D = a.n(L);
 			const {
-				fbt: D
+				fbt: z
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var U = e => {
 					const {
@@ -216,16 +216,16 @@
 						tiersInfo: c
 					} = a, l = s >= c.length ? s - 1 : s, [o, i] = Object(r.useState)(l), d = o > 0 ? c[o].benefits.filter(e => !c[o - 1].benefits.includes(e)) : c[o].benefits;
 					return n.a.createElement("div", {
-						className: Object(u.a)(t, z.a.container)
+						className: Object(u.a)(t, D.a.container)
 					}, n.a.createElement(A, {
-						className: z.a.tierTabs,
+						className: D.a.tierTabs,
 						displayedTierIndex: o,
 						onSetTierIndex: i,
 						tiersInfo: c,
 						unlockedTier: s
 					}), d && n.a.createElement(O, {
 						benefits: d,
-						className: z.a.benefits
+						className: D.a.benefits
 					}))
 				},
 				X = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/PowerupsButton/index.m.less"),
@@ -259,8 +259,8 @@
 						className: R.a.title
 					}, e.children))
 				},
-				G = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/index.m.less"),
-				H = a.n(G);
+				H = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/index.m.less"),
+				G = a.n(H);
 			const {
 				fbt: J
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(c.c)({
@@ -284,39 +284,39 @@
 					if (!c || !i) return a(), null;
 					const p = !!d && !!d.freeCount;
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-						className: H.a.modalContent
+						className: G.a.modalContent
 					}, n.a.createElement(_, {
-						className: H.a.header,
+						className: G.a.header,
 						subreddit: l
 					}), n.a.createElement("h2", {
-						className: H.a.title
+						className: G.a.title
 					}, J._("Powerups unlock features for the whole community", null, {
 						hk: "4fiJt4"
 					})), n.a.createElement("div", {
-						className: H.a.description
+						className: G.a.description
 					}, J._("Become a Powerup supporter and move your community to the next level.", null, {
 						hk: "30sU1k"
 					})), n.a.createElement(U, {
-						className: H.a.powerupsBar,
+						className: G.a.powerupsBar,
 						powerups: c
 					}), n.a.createElement("div", {
-						className: H.a.topSupporters
+						className: G.a.topSupporters
 					}, n.a.createElement(N.a, {
 						supporters: i
 					}))), n.a.createElement("div", {
-						className: Object(u.a)(H.a.modalFooter, {
-							[H.a.modalFreePowerupFooter]: p
+						className: Object(u.a)(G.a.modalFooter, {
+							[G.a.modalFreePowerupFooter]: p
 						})
 					}, n.a.createElement(v.a, {
 						powerups: c,
-						className: H.a.unlockDescription
+						className: G.a.unlockDescription
 					}), p ? n.a.createElement(W, {
 						onClick: () => {
 							p && (m(Object(h.b)(1)), m(Object(h.c)(o, 1, !1)))
 						},
 						powerups: c
 					}, t ? n.a.createElement(k.a, {
-						className: H.a.loadingIcon,
+						className: G.a.loadingIcon,
 						sizePx: K
 					}) : J._("Use Your Free Powerup", null, {
 						hk: "3qotFU"
@@ -326,7 +326,7 @@
 					}, J._("Powerup", null, {
 						hk: "3GscWz"
 					})), p && n.a.createElement("div", {
-						className: H.a.freePowerup
+						className: G.a.freePowerup
 					}, J._("Your premium subscription includes one free Powerup", null, {
 						hk: "5Nz0D"
 					}))))
@@ -508,10 +508,6 @@
 					}, _e._("${powerup price}/month", [_e._param("powerup price", w)], {
 						hk: "1Ydmhr"
 					})), n.a.createElement("p", {
-						className: Pe.a.renew
-					}, _e._("*Subscription auto-renews monthly", null, {
-						hk: "1tZCuz"
-					})), n.a.createElement("p", {
 						className: Pe.a.description
 					}, _e._("Heads up—This {subreddit name} Powerup Subscription auto-renews for {powerup price} a month. To cancel, visit your settings and turn off auto-renewal at least 24 hours before your subscription period ends. No partial refunds.", [_e._param("subreddit name", "r/".concat(d.name)), _e._param("powerup price", "$".concat(w.toLocaleString()))], {
 						hk: "2R4V5q"
@@ -570,7 +566,11 @@
 					}), b === $.vb && n.a.createElement(ge, {
 						className: Pe.a.button,
 						subredditId: m
-					})))))
+					}), n.a.createElement("p", {
+						className: Pe.a.renew
+					}, _e._("Subscription auto-renews monthly", null, {
+						hk: "HfDaj"
+					}))))))
 				})),
 				ye = (a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./src/reddit/models/User/index.ts")),
 				Me = a("./src/reddit/components/PowerupsBanner/Supporters/Supporter/index.tsx"),
@@ -690,7 +690,7 @@
 			}
 			const {
 				fbt: Le
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), ze = Object(i.t)(), De = Object(c.c)({
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), De = Object(i.t)(), ze = Object(c.c)({
 				currentSubredditId: i.m,
 				purchaseCompleted: p.a
 			});
@@ -698,7 +698,7 @@
 			! function(e) {
 				e.Marketing = "marketing", e.Purchase = "purchase", e.Receipt = "receipt"
 			}(Ue || (Ue = {}));
-			const Xe = Object(s.b)(De);
+			const Xe = Object(s.b)(ze);
 			const Re = Object(d.c)((function(e) {
 					const {
 						currentSubredditId: t,
@@ -726,7 +726,7 @@
 						onCloseModal: u
 					})) : (u(), null)
 				})),
-				We = Object(l.a)(ze(Xe(Re)));
+				We = Object(l.a)(De(Xe(Re)));
 			t.default = e => n.a.createElement(We, Ae({}, e, {
 				className: Object(u.a)(e.className, Be.a.modal)
 			}))
@@ -967,4 +967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.f422c910ffcb6229d63a.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.e57485783184460ba07d.js.map
