@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d2e51d526e8e68ca8e8b.js
-// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9a042b8a4b80bba67f50.js
+// Retrieved at 6/17/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "30a4f1f-production"
+					SENTRY_RELEASE_VERSION: "f69be0e-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -2725,7 +2725,7 @@
 				j = Object(d.a)(O);
 			class w extends r.Component {
 				constructor(e) {
-					super(e), this.viewabilityStats = x(), this.videoStats = y(), this.pageInFocus = !1, this.inView = [], this.outOfView = [], this.handleViewabilityChange = e => {
+					super(e), this.viewabilityStats = x(), this.videoStats = y(), this.pageInFocus = !0, this.inView = [], this.outOfView = [], this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e), this.props.trackDisplay && this.handleThresholds(e)
 					}, this.checkViewabilityByType = e => {
 						o()(this.state.event, e) || this.setState({
@@ -31759,4 +31759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.d2e51d526e8e68ca8e8b.js.map
+//# sourceMappingURL=PostCreation.9a042b8a4b80bba67f50.js.map
