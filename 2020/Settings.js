@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3796443623524ac6458c.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9f5152bc5857283b7467.js
+// Retrieved at 6/17/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4656,7 +4656,7 @@
 						selected: a,
 						onClick: e => c(e, "acceptPrivateMessages"),
 						id: "acceptPrivateMessages"
-					}), a === xt.a.Whitelisted && o.a.createElement(Kt, null, o.a.createElement(Zt, {
+					}), n.invitePolicy === Et.a.nobody || a === xt.a.Whitelisted && o.a.createElement(Kt, null, o.a.createElement(Zt, {
 						title: s.fbt._("People You’ve Whitelisted", null, {
 							hk: "2dIqgE"
 						}),
@@ -7042,4 +7042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.3796443623524ac6458c.js.map
+//# sourceMappingURL=Settings.9f5152bc5857283b7467.js.map
