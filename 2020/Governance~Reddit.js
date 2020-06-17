@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6366aaa1a8900dc4cccb.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.89d2ced27559dafc8f32.js
+// Retrieved at 6/17/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5509,130 +5509,132 @@
 		"./src/reddit/actions/gold/powerups.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return f
+				return m
 			})), n.d(t, "d", (function() {
-				return h
+				return y
 			})), n.d(t, "c", (function() {
-				return A
-			})), n.d(t, "a", (function() {
 				return C
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return D
+			})), n.d(t, "b", (function() {
+				return R
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/reddit/actions/toaster.ts"),
-				a = n("./src/reddit/models/Toast/index.ts"),
-				c = n("./src/graphql/operations/ReallocatePowerups.json"),
-				i = n("./src/graphql/operations/SubredditPowerups.json"),
-				d = n("./src/graphql/operations/UserPowerups.json"),
-				u = n("./src/lib/makeGqlRequest/index.ts");
-			var l = n("./src/reddit/selectors/gold/powerups.ts"),
-				b = n("./src/reddit/selectors/user.ts"),
-				p = n("./src/reddit/actions/gold/constants.ts");
-			const f = e => async (t, n, r) => {
+				o = n("./src/lib/sentry/index.ts"),
+				a = n("./src/reddit/actions/toaster.ts"),
+				c = n("./src/reddit/models/Toast/index.ts"),
+				i = n("./src/graphql/operations/ReallocatePowerups.json"),
+				d = n("./src/graphql/operations/SubredditPowerups.json"),
+				u = n("./src/graphql/operations/UserPowerups.json"),
+				l = n("./src/lib/makeGqlRequest/index.ts");
+			var b = n("./src/reddit/selectors/gold/powerups.ts"),
+				p = n("./src/reddit/selectors/user.ts"),
+				f = n("./src/reddit/actions/gold/constants.ts");
+			const m = e => async (t, n, r) => {
 				let {
-					gqlContext: o
+					gqlContext: a
 				} = r;
 				if (!!n().user.powerups.fetched && !e) return;
-				t(m());
-				const a = s.fbt._("Something went wrong", null, {
+				t(O());
+				const c = s.fbt._("Something went wrong", null, {
 					hk: "1IJNeH"
 				});
 				try {
-					const e = await (e => Object(u.a)(e, d))(o());
+					const e = await (e => Object(l.a)(e, u))(a());
 					if (e.ok) {
 						const n = e.body;
-						return n.errors && n.errors.length ? void(await t(_(a))) : void(await t(O({
+						if (n.errors && n.errors.length || !n.data.identity) return void(await t(h(c)));
+						await t(g({
 							powerups: n.data.identity.powerups
-						})))
+						}))
 					}
-				} catch (c) {
-					await t(_(a))
+				} catch (i) {
+					o.c.captureException(i), await t(h(c))
 				}
-			}, m = Object(r.a)(p.kb), O = Object(r.a)(p.jb), g = Object(r.a)(p.ib), _ = e => async (t, n) => {
-				await t(g(e)), t(Object(o.e)({
-					kind: a.b.Error,
-					duration: o.a,
+			}, O = Object(r.a)(f.kb), g = Object(r.a)(f.jb), _ = Object(r.a)(f.ib), h = e => async (t, n) => {
+				await t(_(e)), t(Object(a.e)({
+					kind: c.b.Error,
+					duration: a.a,
 					text: e
 				}))
-			}, h = e => async (t, n, r) => {
+			}, y = e => async (t, n, r) => {
 				let {
-					gqlContext: o
+					gqlContext: a
 				} = r;
-				const a = n();
-				if (!(Object(l.g)(a, {
+				const c = n();
+				if (!(Object(b.g)(c, {
 						subredditId: e
-					}) && Object(l.h)(a, {
+					}) && Object(b.h)(c, {
 						subredditId: e
 					}))) {
-					t(y());
+					t(j());
 					try {
-						const n = await ((e, t) => Object(u.a)(e, Object.assign({}, i, {
+						const n = await ((e, t) => Object(l.a)(e, Object.assign({}, d, {
 							variables: {
 								subredditId: t
 							}
-						})))(o(), e);
+						})))(a(), e);
 						if (n.ok) {
 							const s = n.body;
-							if (s.errors && s.errors.length) return void(await t(I(s.errors[0].message)));
+							if (s.errors && s.errors.length) return void(await t(v(s.errors[0].message)));
 							const {
 								powerups: r,
 								supporters: o
 							} = s.data.subredditInfoById;
-							await t(j({
+							await t(E({
 								powerups: r,
 								subredditId: e,
 								topSupporters: o ? o.topSupporters : []
 							}))
 						}
-					} catch (c) {
-						await t(I(s.fbt._("Something went wrong", null, {
+					} catch (i) {
+						o.c.captureException(i), await t(v(s.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						})))
 					}
 				}
-			}, y = Object(r.a)(p.eb), j = Object(r.a)(p.db), E = Object(r.a)(p.cb), I = e => async (t, n) => {
-				await t(E(e)), t(Object(o.e)({
-					kind: a.b.Error,
-					duration: o.a,
+			}, j = Object(r.a)(f.eb), E = Object(r.a)(f.db), I = Object(r.a)(f.cb), v = e => async (t, n) => {
+				await t(I(e)), t(Object(a.e)({
+					kind: c.b.Error,
+					duration: a.a,
 					text: e
 				}))
-			}, v = Object(r.a)(p.Q), S = Object(r.a)(p.R), T = Object(r.a)(p.S), w = e => async (t, n) => {
-				await t(v(e)), t(Object(o.e)({
-					kind: a.b.Error,
-					duration: o.a,
+			}, S = Object(r.a)(f.Q), T = Object(r.a)(f.R), w = Object(r.a)(f.S), A = e => async (t, n) => {
+				await t(S(e)), t(Object(a.e)({
+					kind: c.b.Error,
+					duration: a.a,
 					text: e
 				}))
-			}, A = (e, t, n, r) => async (o, a, i) => {
+			}, C = (e, t, n, r) => async (a, c, d) => {
 				let {
-					gqlContext: d
-				} = i;
-				o(S({
+					gqlContext: u
+				} = d;
+				a(T({
 					subredditId: e,
 					powerupsCount: t,
 					isAnonymous: n,
 					allocatedAt: r
 				}));
 				try {
-					const i = {
+					const o = {
 							subredditId: e,
 							powerupsCount: t,
 							isAnonymous: n
 						},
-						l = await ((e, t) => Object(u.a)(e, Object.assign({}, c, {
+						d = await ((e, t) => Object(l.a)(e, Object.assign({}, i, {
 							variables: t
-						})))(d(), {
-							input: i
+						})))(u(), {
+							input: o
 						});
-					let p = !1,
+					let b = !1,
 						f = null;
-					if (l.ok) {
-						const e = l.body;
-						p = e.data.reallocatePowerups.ok, f = e.data.reallocatePowerups.errors
+					if (d.ok) {
+						const e = d.body;
+						b = e.data.reallocatePowerups.ok, f = e.data.reallocatePowerups.errors
 					}
-					const m = Object(b.i)(a());
-					if (p && m) await o(T({
+					const m = Object(p.i)(c());
+					if (b && m) await a(w({
 						subredditId: e,
 						powerupsCount: t,
 						isAnonymous: n,
@@ -5643,16 +5645,17 @@
 						const e = f && f[0] && f[0].message || s.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-						await o(w(e))
+						await a(A(e))
 					}
-				} catch (l) {
-					const e = l,
+				} catch (b) {
+					o.c.captureException(b);
+					const e = b,
 						t = e && e.message || s.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-					await o(w(t))
+					await a(A(t))
 				}
-			}, C = Object(r.a)(p.E), D = Object(r.a)(p.O)
+			}, D = Object(r.a)(f.E), R = Object(r.a)(f.O)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -8628,10 +8631,12 @@
 						include_categories: !0
 					});
 					m && (_.sort = g), _.onOtherDiscussions = b, t(V.t(c)), await t(mt(c, i, _, g));
-					const h = n().posts.models[c];
+					const h = n().posts.models[c],
+						y = Object(Ae.H)(p);
 					if (h && Object(Oe.a)(p)) {
-						const e = h.belongsTo.id;
-						await Promise.all([t(Object(Ge.e)()), t(Object(Ge.d)(e)), t(Object(Be.a)(e, S.a.Powerups))])
+						const e = h.belongsTo.id,
+							n = [...y ? [t(Object(Ge.e)())] : [], t(Object(Ge.d)(e)), t(Object(Be.a)(e, S.a.Powerups))];
+						await Promise.all(n)
 					}
 					if (h) {
 						const s = pt(n(), c),
@@ -8693,9 +8698,9 @@
 						title: C.c()
 					}));
 					const {
-						routePrefix: y
+						routePrefix: j
 					} = e.params;
-					te.b[y] === te.a.PROFILE ? Object(Ne.d)(n(), t, e) : Object(Ne.b)(n(), t, e)
+					te.b[j] === te.a.PROFILE ? Object(Ne.d)(n(), t, e) : Object(Ne.b)(n(), t, e)
 				}, mt = (e, t, n, s) => async (r, o, a) => {
 					const c = o(),
 						i = Object(Re.a)(e, t, n),
@@ -10808,8 +10813,9 @@
 					k = Object(u.a)(t) || c()(D.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
 				if (w.ok && k) {
 					if (!Object(u.a)(t) && Object(oe.a)(l)) {
-						const e = Object.keys(D.subredditAboutInfo)[0];
-						await Promise.all([o(Object(y.e)()), o(Object(y.d)(e)), o(Object(j.a)(e, $.a.Powerups))])
+						const e = Object.keys(D.subredditAboutInfo)[0],
+							t = [...Object(L.H)(l) ? [o(Object(y.e)())] : [], o(Object(y.d)(e)), o(Object(j.a)(e, $.a.Powerups))];
+						await Promise.all(t)
 					}
 					let n;
 					const s = D.postIds.filter(e => !!D.posts[e].isMeta);
@@ -54362,4 +54368,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.6366aaa1a8900dc4cccb.js.map
+//# sourceMappingURL=Governance~Reddit.89d2ced27559dafc8f32.js.map
