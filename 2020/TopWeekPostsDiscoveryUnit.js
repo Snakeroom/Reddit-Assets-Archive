@@ -1,23 +1,7 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e7afd06ae21b70a23fd0.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2c6e679251e88839cea4.js
+// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
-		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
-			e.exports = function(e, t, s) {
-				var n;
-				return s(e, (function(e, s, r) {
-					if (t(e, s, r)) return n = s, !1
-				})), n
-			}
-		},
-		"./node_modules/lodash/findKey.js": function(e, t, s) {
-			var n = s("./node_modules/lodash/_baseFindKey.js"),
-				r = s("./node_modules/lodash/_baseForOwn.js"),
-				o = s("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return n(e, o(t, 3), r)
-			}
-		},
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
@@ -155,9 +139,9 @@
 				O = s("./src/reddit/helpers/postHasSelfText/index.ts"),
 				P = s("./src/reddit/models/Media/index.ts"),
 				v = s("./src/reddit/components/MiniCardPost/index.m.less"),
-				_ = s.n(v),
-				j = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less"),
-				E = s.n(j);
+				j = s.n(v),
+				_ = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less"),
+				E = s.n(_);
 			const T = "".concat(b.a.assetPath, "/img/link-placeholder.png");
 			var N = e => {
 					const {
@@ -175,11 +159,11 @@
 					} = o || d, u = p && r.a.createElement(x.a, {
 						autoplayPref: t,
 						availableWidth: s,
-						className: _.a.media,
+						className: j.a.media,
 						"data-redditstyle": !0,
 						forceAspectRatio: P.c,
-						imageBoxClassName: _.a.mediaImageBox,
-						imageBoxContentImageClassName: _.a.mediaImageBoxContentImage,
+						imageBoxClassName: j.a.mediaImageBox,
+						imageBoxContentImageClassName: j.a.mediaImageBoxContentImage,
 						isListing: !0,
 						isMiniCard: !0,
 						isMiniCardHQPreviews: !0,
@@ -192,8 +176,8 @@
 						showFull: !1
 					});
 					let b, v = !0;
-					const j = !!d.source && Object(h.a)(d.source.url) || !!d.thumbnail && Object(h.a)(d.thumbnail.url);
-					return !p && j ? (v = !1, b = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					const _ = !!d.source && Object(h.a)(d.source.url) || !!d.thumbnail && Object(h.a)(d.thumbnail.url);
+					return !p && _ ? (v = !1, b = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: E.a.flexSpacer
 					}), r.a.createElement("div", {
 						className: E.a.mediaWrapper
@@ -347,7 +331,7 @@
 							subscribedSubreddits: h
 						});
 					return r.a.createElement(l.a, {
-						className: Object(i.a)(Q.a.container, G.a.largeAndMediumActiveStyles, G.a.largeAndMediumPostStyles, G.a.mUseRedditTheme, _.a.postContainer, Object(p.a)(this.props), t),
+						className: Object(i.a)(Q.a.container, G.a.largeAndMediumActiveStyles, G.a.largeAndMediumPostStyles, G.a.mUseRedditTheme, j.a.postContainer, Object(p.a)(this.props), t),
 						eventFactory: n,
 						onClick: a,
 						post: m,
@@ -419,12 +403,12 @@
 			}
 			const {
 				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = [], O = () => {}, P = () => void 0, v = c.a.button("CloseButton", f.a), _ = Object(i.a)(u.H, e => e.filter(e => 9 === e.length)), j = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = [], O = () => {}, P = () => void 0, v = c.a.button("CloseButton", f.a), j = Object(i.a)(u.H, e => e.filter(e => 9 === e.length)), _ = Object(i.c)({
 				discoveryUnit: e => Object(p.c)(e, {
 					unitName: m.k
 				}),
-				postIds: _
-			}), E = Object(o.b)(j);
+				postIds: j
+			}), E = Object(o.b)(_);
 			class T extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -759,4 +743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.e7afd06ae21b70a23fd0.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.2c6e679251e88839cea4.js.map

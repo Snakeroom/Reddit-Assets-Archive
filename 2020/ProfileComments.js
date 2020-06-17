@@ -1,23 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.ffa090bcc1936c48e2e3.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.b895c661ac3f39b74edf.js
+// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
-		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
-			e.exports = function(e, t, n) {
-				var s;
-				return n(e, (function(e, n, o) {
-					if (t(e, n, o)) return s = n, !1
-				})), s
-			}
-		},
-		"./node_modules/lodash/findKey.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseFindKey.js"),
-				o = n("./node_modules/lodash/_baseForOwn.js"),
-				r = n("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return s(e, r(t, 3), o)
-			}
-		},
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
 			var s = n("./node_modules/lodash/_baseFlatten.js"),
 				o = n("./node_modules/lodash/map.js");
@@ -9892,4 +9876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.ffa090bcc1936c48e2e3.js.map
+//# sourceMappingURL=ProfileComments.b895c661ac3f39b74edf.js.map

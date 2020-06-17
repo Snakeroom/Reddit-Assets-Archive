@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~GovernanceReleaseNotesModal.6d10727de0066b6324ff.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~GovernanceReleaseNotesModal.05c9ca3db59f6a095016.js
+// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~GovernanceReleaseNotesModal", "vendors~CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostCreation~Subreddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
@@ -473,14 +473,6 @@
 				return e == e && (void 0 !== o && (e = e <= o ? e : o), void 0 !== t && (e = e >= t ? e : t)), e
 			}
 		},
-		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
-			e.exports = function(e, t, o) {
-				var i;
-				return o(e, (function(e, o, n) {
-					if (t(e, o, n)) return i = o, !1
-				})), i
-			}
-		},
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
 			e.exports = function(e, t, o, i, n) {
 				return n(e, (function(e, n, r) {
@@ -493,14 +485,6 @@
 				n = o("./node_modules/lodash/toNumber.js");
 			e.exports = function(e, t, o) {
 				return void 0 === o && (o = t, t = void 0), void 0 !== o && (o = (o = n(o)) == o ? o : 0), void 0 !== t && (t = (t = n(t)) == t ? t : 0), i(n(e), t, o)
-			}
-		},
-		"./node_modules/lodash/findKey.js": function(e, t, o) {
-			var i = o("./node_modules/lodash/_baseFindKey.js"),
-				n = o("./node_modules/lodash/_baseForOwn.js"),
-				r = o("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return i(e, r(t, 3), n)
 			}
 		},
 		"./node_modules/lodash/reduce.js": function(e, t, o) {
@@ -541,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~GovernanceReleaseNotesModal.6d10727de0066b6324ff.js.map
+//# sourceMappingURL=vendors~GovernanceReleaseNotesModal.05c9ca3db59f6a095016.js.map
