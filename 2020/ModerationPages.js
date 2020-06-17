@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d46e9b2de6d5097b1c30.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d5eead1684d0ea068425.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -178,14 +178,15 @@
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return m
-			})), s.d(t, "a", (function() {
 				return u
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return p
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return b
+			})), s.d(t, "d", (function() {
+				return h
 			}));
+			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/lodash/omit.js"),
 				o = s.n(n),
 				a = s("./node_modules/react/index.js"),
@@ -202,17 +203,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const c = (e, t, s) => (function() {
+			var c = function(e, t) {
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const a = b(o.target, o.currentTarget);
-					p(o.target, o.currentTarget, u.anchors) ? a && t && e(t(s, a)) : a && t && e(e => Object.assign({}, t(s, a)(e), {
-						actionInfo: Object(d.previousPageActionInfo)(e)
-					})), p(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
+					const a = h(o.target, o.currentTarget);
+					b(o.target, o.currentTarget, p.anchors) ? a && t && e(t(s, a)) : a && t && e(e => {
+						const n = t(s, a)(e);
+						let o;
+						if (n && n.actionInfo) {
+							const e = n.actionInfo,
+								{
+									pageType: t
+								} = e;
+							o = c(e, ["pageType"])
+						}
+						return Object.assign({}, n, {
+							actionInfo: Object(d.previousPageActionInfo)(e, o)
+						})
+					}), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
 			});
 
-			function m(e) {
+			function u(e) {
 				class t extends r.a.Component {
 					constructor() {
 						super(...arguments), this.cancelClick = !1
@@ -224,21 +245,21 @@
 							clickTrackingId: n
 						} = this.props;
 						return r.a.createElement(e, l({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: c(t, s, n)
+							afterClickTracking: m(t, s, n)
 						}))
 					}
 				}
 				return Object(i.c)(t)
 			}
-			const u = {
+			const p = {
 					anchorsAndButtons: ["A", "BUTTON"],
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				p = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && p(e.parentElement, t, s)),
-				b = (e, t) => {
+				b = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && b(e.parentElement, t, s)),
+				h = (e, t) => {
 					const s = e.dataset.clickId;
-					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
 				}
 		},
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -16839,6 +16860,7 @@
 						style: u,
 						ref: b
 					} = this.props, h = o.a.createElement("div", {
+						"data-click-id": "post-container",
 						style: u,
 						ref: b,
 						onMouseUp: e => {
@@ -28874,4 +28896,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.d46e9b2de6d5097b1c30.js.map
+//# sourceMappingURL=ModerationPages.d5eead1684d0ea068425.js.map

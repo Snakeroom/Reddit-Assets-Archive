@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6b120539a3494fcdaead.js
-// Retrieved at 6/17/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.499af9b772b706ba6ebd.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -442,52 +442,6 @@
 			n.d(t, "a", (function() {
 				return s
 			}))
-		},
-		"./src/lib/makeSearchKey/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "c", (function() {
-				return l
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/es6.array.sort.js");
-			var s, r = n("./src/lib/constants/index.ts"),
-				o = n("./src/reddit/constants/parameters.ts");
-			! function(e) {
-				e.Trending = "trending", e.PromotedTrend = "promoted_trend"
-			}(s || (s = {}));
-			const a = e => {
-					return c(e).join(",")
-				},
-				c = e => {
-					let t;
-					return "string" == typeof e ? t = decodeURIComponent(e).split(",").filter(r.bc).sort() : Array.isArray(e) && (t = e.filter(r.bc).sort()), t && 0 !== t.length || (t = [r.Mb.Posts, r.Mb.Subreddits, r.Mb.Users]), t
-				},
-				i = new Set(["f", "n", "0"]),
-				d = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
-					const t = e.toLowerCase();
-					return !(0 === t.length || "off" === t || i.has(t[0]))
-				},
-				u = e => e ? "1" : "",
-				l = e => {
-					const t = e.sort && Object(r.ac)(e.sort) ? e.sort : r.Cb,
-						n = e.t && r.Wb.has(e.t) ? e.t : r.Db,
-						s = c(e.type),
-						a = {
-							ad: e.ad,
-							q: e.q,
-							sort: t,
-							t: n,
-							type: s
-						};
-					return void 0 !== e.include_over_18 && (a.include_over_18 = u(d(e.include_over_18))), void 0 !== e.restrict_sr && (a.restrict_sr = u(d(e.restrict_sr))), e.is_multi && (a.is_multi = u(d(e.is_multi))), e.category && (a.category = e.category), e[o.c] && (a.category_name = e.category_name), e[o.t] && (a.source = e.source), a
-				};
-			t.b = function(e, t) {
-				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-					s = e || "!";
-				return t && (s = "".concat(s, "--[user:").concat(t, "]")), void 0 !== n.include_over_18 && (s = "".concat(s, "--[include_over_18:").concat(n.include_over_18, "]")), n.q && (s = "".concat(s, "--[q:").concat(n.q, "]")), n.restrict_sr && (s = "".concat(s, "--[restrict_sr:").concat(n.restrict_sr, "]")), n.sort && (s = "".concat(s, "--[sort:").concat(n.sort, "]")), n.t && (s = "".concat(s, "--[t:").concat(n.t, "]")), n.category && (s = "".concat(s, "--[c:").concat(n.category, "]")), n.type && (s = "".concat(s, "--[type:").concat(a(n.type), "]")), s.toLowerCase()
-			}
 		},
 		"./src/lib/omitKey/index.ts": function(e, t, n) {
 			"use strict";
@@ -28084,93 +28038,96 @@
 		"./src/reddit/helpers/trackers/discoveryUnit.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return _
-			})), n.d(t, "g", (function() {
 				return h
-			})), n.d(t, "G", (function() {
-				return I
+			})), n.d(t, "g", (function() {
+				return y
 			})), n.d(t, "H", (function() {
 				return v
-			})), n.d(t, "A", (function() {
-				return S
-			})), n.d(t, "B", (function() {
-				return T
-			})), n.d(t, "C", (function() {
-				return w
-			})), n.d(t, "h", (function() {
-				return A
-			})), n.d(t, "v", (function() {
-				return C
-			})), n.d(t, "w", (function() {
-				return D
-			})), n.d(t, "F", (function() {
-				return R
-			})), n.d(t, "u", (function() {
-				return P
-			})), n.d(t, "x", (function() {
-				return k
-			})), n.d(t, "y", (function() {
-				return x
-			})), n.d(t, "z", (function() {
-				return N
 			})), n.d(t, "I", (function() {
+				return S
+			})), n.d(t, "A", (function() {
+				return T
+			})), n.d(t, "B", (function() {
+				return w
+			})), n.d(t, "C", (function() {
+				return A
+			})), n.d(t, "h", (function() {
+				return C
+			})), n.d(t, "v", (function() {
+				return D
+			})), n.d(t, "w", (function() {
+				return R
+			})), n.d(t, "F", (function() {
+				return P
+			})), n.d(t, "G", (function() {
+				return k
+			})), n.d(t, "u", (function() {
+				return x
+			})), n.d(t, "x", (function() {
+				return N
+			})), n.d(t, "y", (function() {
 				return L
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "z", (function() {
 				return U
-			})), n.d(t, "E", (function() {
+			})), n.d(t, "J", (function() {
 				return M
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "s", (function() {
 				return F
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "E", (function() {
 				return G
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return B
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "b", (function() {
 				return q
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "a", (function() {
 				return V
+			})), n.d(t, "e", (function() {
+				return H
+			})), n.d(t, "d", (function() {
+				return K
 			})), n.d(t, "r", (function() {
-				return W
-			})), n.d(t, "l", (function() {
-				return Y
-			})), n.d(t, "q", (function() {
 				return z
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return J
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "q", (function() {
 				return Q
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "j", (function() {
 				return X
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "k", (function() {
 				return Z
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "m", (function() {
 				return $
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return ee
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "p", (function() {
 				return te
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "n", (function() {
 				return ne
-			})), n.d(t, "D", (function() {
+			})), n.d(t, "i", (function() {
 				return se
+			})), n.d(t, "t", (function() {
+				return re
+			})), n.d(t, "D", (function() {
+				return oe
 			}));
 			var s, r = n("./src/lib/stringInterpolate/index.ts"),
 				o = n("./src/reddit/actions/focusedVerticals/constants.ts"),
 				a = (n("./src/reddit/constants/categories.tsx"), n("./src/reddit/constants/tracking.ts")),
 				c = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				i = n("./src/reddit/models/DiscoveryUnit/index.ts"),
-				d = n("./src/reddit/models/Widgets/index.ts"),
-				u = n("./src/reddit/selectors/posts.ts"),
-				l = n("./src/reddit/selectors/telemetry.ts"),
-				b = n("./src/reddit/selectors/widgets.ts"),
-				p = n("./src/telemetry/index.ts");
+				i = n("./src/reddit/helpers/trackers/searchResults.ts"),
+				d = n("./src/reddit/models/DiscoveryUnit/index.ts"),
+				u = n("./src/reddit/models/Widgets/index.ts"),
+				l = n("./src/reddit/selectors/posts.ts"),
+				b = n("./src/reddit/selectors/telemetry.ts"),
+				p = n("./src/reddit/selectors/widgets.ts"),
+				f = n("./src/telemetry/index.ts");
 			! function(e) {
 				e.HEADER_SUBREDDIT = "header_subreddit", e.ITEM_POST = "item_post", e.ITEM_POST_SUBREDDIT = "item_post_subreddit", e.ITEM_SUBREDDIT = "item_subreddit", e.ITEM_SUBREDDIT_HIDE = "item_subreddit_hide", e.ITEM_SUBREDDIT_SUBSCRIBE = "item_subreddit_subscribe", e.ITEM_SUBREDDIT_UNSUBSCRIBE = "item_subreddit_unsubscribe"
 			}(s || (s = {}));
-			const f = "discovery_unit",
-				m = (e, t, n) => Object.assign({}, l.defaults(e), {
-					source: f,
-					screen: l.screen(e),
+			const m = "discovery_unit",
+				O = (e, t, n) => Object.assign({}, b.defaults(e), {
+					source: m,
+					screen: b.screen(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -28180,31 +28137,31 @@
 						name: t.unitName
 					}
 				}),
-				O = (e, t, n) => Object.assign({}, m(e, t, n), {
+				g = (e, t, n) => Object.assign({}, O(e, t, n), {
 					source: "global",
 					action: "view",
 					noun: "discovery_unit"
 				}),
-				g = (e, t) => Object.assign({}, l.defaults(e), {
+				_ = (e, t) => Object.assign({}, b.defaults(e), {
 					correlationId: Object(c.c)(c.a.SearchResults),
-					screen: l.screen(e),
+					screen: b.screen(e),
 					noun: "search_result_discovery_unit",
-					post: t ? l.post(e, t) : null,
+					post: t ? b.post(e, t) : null,
 					discoveryUnit: {
-						name: i.l,
+						name: d.l,
 						id: "xd_72",
 						type: "listing"
 					}
 				}),
-				_ = (e, t) => {
-					Object(p.a)(h(t)(e))
+				h = (e, t) => {
+					Object(f.a)(y(t)(e))
 				},
-				h = (e, t) => n => O(n, e, t),
-				y = (e, t, n, s) => "unitName" in t ? m(e, t, s) : ((e, t, n) => Object.assign({}, l.defaults(e), {
+				y = (e, t) => n => g(n, e, t),
+				j = (e, t, n, s) => "unitName" in t ? O(e, t, s) : ((e, t, n) => Object.assign({}, b.defaults(e), {
 					source: "search",
-					screen: l.screen(e),
-					search: n ? Object.assign({}, l.search(e, n), {
-						structureType: l.StructureType.Trending
+					screen: b.screen(e),
+					search: n ? Object.assign({}, b.search(e, n), {
+						structureType: b.StructureType.Trending
 					}) : null,
 					discoveryUnit: {
 						id: t.name,
@@ -28213,12 +28170,12 @@
 						name: t.name
 					}
 				}))(e, t, n),
-				j = (e, t, n, r, o) => Object.assign({}, y(e, t, r, o), {
+				E = (e, t, n, r, o) => Object.assign({}, j(e, t, r, o), {
 					action: "view",
 					noun: s.ITEM_POST,
-					post: l.post(e, n)
+					post: b.post(e, n)
 				}),
-				E = e => {
+				I = e => {
 					let {
 						post: t,
 						rawQuery: n,
@@ -28227,267 +28184,264 @@
 					return {
 						displayQuery: decodeURIComponent(s),
 						rawQuery: n ? decodeURIComponent(n) : void 0,
-						structureType: t && t.isSponsored ? l.StructureType.PromotedTrend : l.StructureType.Trending
+						structureType: t && t.isSponsored ? b.StructureType.PromotedTrend : b.StructureType.Trending
 					}
 				},
-				I = (e, t) => {
+				v = (e, t) => {
 					const n = t.post ? t.post.id : void 0;
-					Object(p.a)(Object.assign({}, g(e, n), {
-						metaSearch: E(t),
+					Object(f.a)(Object.assign({}, _(e, n), {
+						metaSearch: I(t),
 						source: "search",
 						action: "click"
 					}))
 				},
-				v = (e, t) => {
+				S = (e, t) => {
 					const n = t.post ? t.post.id : void 0;
-					Object(p.a)(Object.assign({}, g(e, n), {
-						metaSearch: E(t),
+					Object(f.a)(Object.assign({}, _(e, n), {
+						metaSearch: I(t),
 						source: "search",
 						action: "view"
 					}))
 				},
-				S = (e, t, n, s) => {
-					Object(p.a)(j(e, t, n, s))
+				T = (e, t, n, s) => {
+					Object(f.a)(E(e, t, n, s))
 				},
-				T = (e, t, n, s) => r => j(r, e, t, n, s),
-				w = (e, t, n, r) => {
-					const o = y(e, t, r);
-					Object(p.a)(Object.assign({}, o, Object(b.b)(e, n), {
+				w = (e, t, n, s) => r => E(r, e, t, n, s),
+				A = (e, t, n, r) => {
+					const o = j(e, t, r);
+					Object(f.a)(Object.assign({}, o, Object(p.b)(e, n), {
 						action: "view",
 						noun: s.ITEM_SUBREDDIT
 					}))
 				},
-				A = (e, t) => {
-					Object(p.a)(Object.assign({}, m(e, t), {
-						source: f,
+				C = (e, t) => {
+					Object(f.a)(Object.assign({}, O(e, t), {
+						source: m,
 						action: a.c.CLICK,
 						noun: "show_less_often"
 					}))
 				},
-				C = (e, t, n, s) => {
-					Object(p.a)(D(t, n, s)(e))
+				D = (e, t, n, s) => {
+					Object(f.a)(R(t, n, s)(e))
 				},
-				D = (e, t, n, r) => o => {
-					const c = y(o, e, n, r);
+				R = (e, t, n, r) => o => {
+					const c = j(o, e, n, r);
 					return Object.assign({}, c, {
-						source: f,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_POST,
-						post: l.post(o, t)
+						post: b.post(o, t)
 					})
 				},
-				R = () => e => t => ({
+				P = (e, t, n, s) => r => o => Object(i.d)(o, r, e, t, n, s),
+				k = () => () => e => ({
 					source: "search",
 					action: a.c.CLICK,
-					noun: s.ITEM_POST,
-					post: l.post(t, e),
-					search: {
-						structureType: l.StructureType.Trending
-					}
+					noun: "temp_subreddit"
 				}),
-				P = (e, t) => n => r => Object.assign({}, e ? m(r, e, t) : {}, {
-					source: f,
+				x = (e, t) => n => r => Object.assign({}, e ? O(r, e, t) : {}, {
+					source: m,
 					action: a.c.CLICK,
 					noun: s.ITEM_POST,
-					post: l.post(r, n)
+					post: b.post(r, n)
 				}),
-				k = (e, t, n, s) => {
-					Object(p.a)(x(t, n, s)(e))
+				N = (e, t, n, s) => {
+					Object(f.a)(L(t, n, s)(e))
 				},
-				x = (e, t, n, s) => r => {
-					const o = Object(u.c)(r, {
+				L = (e, t, n, s) => r => {
+					const o = Object(l.c)(r, {
 							postId: t
 						}),
-						c = o ? Object(b.b)(r, o) : void 0,
-						i = y(r, e, n, s);
+						c = o ? Object(p.b)(r, o) : void 0,
+						i = j(r, e, n, s);
 					return Object.assign({}, i, c, {
-						source: f,
+						source: m,
 						action: a.c.CLICK,
 						noun: "item_post_subreddit",
-						post: l.post(r, t)
+						post: b.post(r, t)
 					})
 				},
-				N = (e, t, n) => s => r => {
-					const o = Object(u.c)(r, {
+				U = (e, t, n) => s => r => {
+					const o = Object(l.c)(r, {
 							postId: t
 						}),
-						c = o ? Object(b.b)(r, o) : void 0,
-						i = y(r, e, void 0, n);
+						c = o ? Object(p.b)(r, o) : void 0,
+						i = j(r, e, void 0, n);
 					return Object.assign({}, i, c, {
-						source: f,
+						source: m,
 						action: a.c.CLICK,
 						noun: s ? "item_post_subreddit_unsubscribe" : "item_post_subreddit_subscribe",
-						post: l.post(r, t)
+						post: b.post(r, t)
 					})
 				},
-				L = (e, t, n) => {
-					const s = y(e, t);
-					Object(p.a)(Object.assign({}, s, Object(b.b)(e, n), {
+				M = (e, t, n) => {
+					const s = j(e, t);
+					Object(f.a)(Object.assign({}, s, Object(p.b)(e, n), {
 						source: "search",
 						action: a.c.CLICK,
 						noun: "search_result_discovery_unit_subreddit"
 					}))
 				},
-				U = (e, t, n) => {
-					const s = y(e, t);
-					Object(p.a)(Object.assign({}, s, Object(b.b)(e, n), {
-						source: f,
+				F = (e, t, n) => {
+					const s = j(e, t);
+					Object(f.a)(Object.assign({}, s, Object(p.b)(e, n), {
+						source: m,
 						action: a.c.CLICK,
 						noun: "footer_subreddit"
 					}))
 				},
-				M = (e, t) => n => {
-					const s = Object(d.j)(t);
-					return Object.assign({}, m(n, e, t), Object(b.b)(n, s), {
-						source: f,
+				G = (e, t) => n => {
+					const s = Object(u.j)(t);
+					return Object.assign({}, O(n, e, t), Object(p.b)(n, s), {
+						source: m,
 						action: a.c.CLICK,
 						noun: "title_subreddit"
 					})
 				},
-				F = (e, t) => n => Object.assign({}, m(n, e, t), {
+				B = (e, t) => n => Object.assign({}, O(n, e, t), {
 					action: "status",
-					actionInfo: l.actionInfo(n, {
+					actionInfo: b.actionInfo(n, {
 						success: !0
 					}),
 					noun: "loading"
 				}),
-				G = (e, t, n) => s => Object.assign({}, m(s, e, n), {
+				q = (e, t, n) => s => Object.assign({}, O(s, e, n), {
 					action: "status",
-					actionInfo: l.actionInfo(s, {
+					actionInfo: b.actionInfo(s, {
 						reason: t,
 						success: !1
 					}),
 					noun: "loading"
 				}),
-				B = (e, t) => n => Object.assign({}, m(n, e, t), {
+				V = (e, t) => n => Object.assign({}, O(n, e, t), {
 					action: "click",
 					noun: "close"
 				}),
-				q = (e, t, n) => s => Object.assign({}, y(s, e, t, n), {
+				H = (e, t, n) => s => Object.assign({}, j(s, e, t, n), {
 					action: "click",
 					noun: "scroll"
 				}),
-				V = (e, t) => n => Object.assign({}, m(n, e, t), {
+				K = (e, t) => n => Object.assign({}, O(n, e, t), {
 					action: "click",
 					noun: "overflow_menu"
 				}),
-				H = () => ({
+				W = () => ({
 					id: "xd_focus_verticals",
-					unitType: i.f.Listing,
+					unitType: d.f.Listing,
 					experiment: "",
 					title: o.a,
 					unitName: "focused_vertical_suggestion",
 					enabled: !1,
-					layout: i.d.Large,
-					surface: i.e.Frontpage,
+					layout: d.d.Large,
+					surface: d.e.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				K = (e, t, n) => l.actionInfo(e, {
+				Y = (e, t, n) => b.actionInfo(e, {
 					position: n
 				}),
-				W = (e, t, n) => {
-					const s = H();
-					return e => Object.assign({}, O(e, s), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t)
-					})
-				},
-				Y = (e, t, n) => {
-					const s = H();
-					return e => Object.assign({}, j(e, s, t), {
-						actionInfo: K(e, 0, n)
-					})
-				},
 				z = (e, t, n) => {
-					const r = H();
-					return e => Object.assign({}, m(e, r), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t) || null,
-						source: f,
+					const s = W();
+					return e => Object.assign({}, g(e, s), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t)
+					})
+				},
+				J = (e, t, n) => {
+					const s = W();
+					return e => Object.assign({}, E(e, s, t), {
+						actionInfo: Y(e, 0, n)
+					})
+				},
+				Q = (e, t, n) => {
+					const r = W();
+					return e => Object.assign({}, O(e, r), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t) || null,
+						source: m,
 						action: a.c.VIEW,
 						noun: s.ITEM_SUBREDDIT
 					})
 				},
-				J = (e, t, n) => {
-					const r = H();
-					return e => Object.assign({}, m(e, r), {
-						actionInfo: K(e, 0, n),
-						post: l.post(e, t) || null,
-						source: f,
+				X = (e, t, n) => {
+					const r = W();
+					return e => Object.assign({}, O(e, r), {
+						actionInfo: Y(e, 0, n),
+						post: b.post(e, t) || null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_POST
 					})
 				},
-				Q = (e, t, n, r) => {
-					const o = H();
-					return e => Object.assign({}, m(e, o), {
-						actionInfo: K(e, 0, r),
-						subreddit: l.subredditById(e, n) || null,
-						post: l.post(e, t) || null,
-						source: f,
+				Z = (e, t, n, r) => {
+					const o = W();
+					return e => Object.assign({}, O(e, o), {
+						actionInfo: Y(e, 0, r),
+						subreddit: b.subredditById(e, n) || null,
+						post: b.post(e, t) || null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_POST_SUBREDDIT
 					})
 				},
-				X = (e, t, n) => {
-					const r = H();
-					return e => Object.assign({}, m(e, r), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t) || null,
-						source: f,
+				$ = (e, t, n) => {
+					const r = W();
+					return e => Object.assign({}, O(e, r), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t) || null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_SUBREDDIT
 					})
 				},
-				Z = (e, t, n, r) => {
-					const o = H();
-					return e => Object.assign({}, m(e, o), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t) || null,
-						post: r ? l.post(e, r) : null,
-						source: f,
+				ee = (e, t, n, r) => {
+					const o = W();
+					return e => Object.assign({}, O(e, o), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t) || null,
+						post: r ? b.post(e, r) : null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
-				$ = (e, t, n, r) => {
-					const o = H();
-					return e => Object.assign({}, m(e, o), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t) || null,
-						post: r ? l.post(e, r) : null,
-						source: f,
+				te = (e, t, n, r) => {
+					const o = W();
+					return e => Object.assign({}, O(e, o), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t) || null,
+						post: r ? b.post(e, r) : null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_UNSUBSCRIBE
 					})
 				},
-				ee = (e, t, n) => {
-					const r = H();
-					return e => Object.assign({}, m(e, r), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t) || null,
-						source: f,
+				ne = (e, t, n) => {
+					const r = W();
+					return e => Object.assign({}, O(e, r), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t) || null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_HIDE
 					})
 				},
-				te = (e, t, n) => {
-					const r = H();
-					return e => Object.assign({}, m(e, r), {
-						actionInfo: K(e, 0, n),
-						subreddit: l.subredditById(e, t) || null,
-						source: f,
+				se = (e, t, n) => {
+					const r = W();
+					return e => Object.assign({}, O(e, r), {
+						actionInfo: Y(e, 0, n),
+						subreddit: b.subredditById(e, t) || null,
+						source: m,
 						action: a.c.CLICK,
 						noun: s.HEADER_SUBREDDIT
 					})
 				},
-				ne = (e, t) => n => Object.assign({}, m(n, e), t && Object(b.b)(n, t), {
-					source: f,
+				re = (e, t) => n => Object.assign({}, O(n, e), t && Object(p.b)(n, t), {
+					source: m,
 					action: a.c.CLICK,
 					noun: "item"
 				}),
-				se = e => t => Object.assign({}, m(t, e), {
-					source: f,
+				oe = e => t => Object.assign({}, O(t, e), {
+					source: m,
 					action: a.c.CLICK,
 					noun: "see_all"
 				})
@@ -29590,6 +29544,252 @@
 					profile: u(t, []),
 					action: e ? "select" : "deselect",
 					noun: "active_in_communities"
+				})
+		},
+		"./src/reddit/helpers/trackers/searchResults.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "c", (function() {
+				return d
+			})), n.d(t, "n", (function() {
+				return u
+			})), n.d(t, "m", (function() {
+				return l
+			})), n.d(t, "f", (function() {
+				return b
+			})), n.d(t, "p", (function() {
+				return p
+			})), n.d(t, "o", (function() {
+				return f
+			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "a", (function() {
+				return O
+			})), n.d(t, "g", (function() {
+				return g
+			})), n.d(t, "r", (function() {
+				return _
+			})), n.d(t, "q", (function() {
+				return h
+			})), n.d(t, "h", (function() {
+				return y
+			})), n.d(t, "i", (function() {
+				return j
+			})), n.d(t, "d", (function() {
+				return E
+			})), n.d(t, "l", (function() {
+				return I
+			})), n.d(t, "j", (function() {
+				return v
+			})), n.d(t, "k", (function() {
+				return S
+			})), n.d(t, "b", (function() {
+				return T
+			}));
+			var s = n("./src/lib/constants/index.ts"),
+				r = n("./src/reddit/constants/tracking.ts"),
+				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				a = n("./src/reddit/selectors/telemetry.ts");
+			const c = "search",
+				i = "search_results_best",
+				d = (e, t) => {
+					const n = a.subreddit(e);
+					return {
+						screen: a.screen(e),
+						subreddit: n && t && t.restrict_sr ? n : null
+					}
+				},
+				u = (e, t) => n => {
+					const s = t;
+					return s.structureType = "related", Object.assign({
+						action: e,
+						correlationId: Object(o.c)(o.a.SearchResults),
+						noun: "related_search",
+						source: c,
+						search: a.search(n, s)
+					}, d(n))
+				},
+				l = (e, t, n, s) => r => Object.assign({}, d(r, n), {
+					source: c,
+					action: "click",
+					noun: t,
+					actionInfo: a.actionInfo(r, s ? {
+						pageType: "search_results_best",
+						position: 0
+					} : void 0),
+					discoveryUnit: s ? a.discoveryUnit(s) : null,
+					search: a.search(r, n),
+					post: a.post(r, e),
+					media: a.media(r, e)
+				}),
+				b = (e, t, n) => r => {
+					let o = !0;
+					if (t.type.indexOf(s.Mb.Posts) > -1) {
+						const {
+							api: t
+						} = r.listings.listingOrder;
+						o = o && !t.error[e] && !t.pending[e]
+					}
+					if (t.type.indexOf(s.Mb.Subreddits) > -1 || t.type.indexOf(s.Mb.Users) > -1) {
+						const {
+							api: t
+						} = r.listings.postOrder;
+						o = o && !t.error[e] && !t.pending[e]
+					}
+					return Object.assign({}, d(r, t), {
+						source: c,
+						action: "view",
+						noun: "search_results_post",
+						actionInfo: a.actionInfo(r, {
+							success: o,
+							pageType: "search_results_best",
+							position: 0
+						}),
+						discoveryUnit: a.discoveryUnit(n),
+						search: a.search(r, t)
+					})
+				},
+				p = (e, t) => n => ({
+					action: "view",
+					actionInfo: a.actionInfo(n),
+					metaSearch: a.metaSearch(t),
+					noun: e,
+					screen: a.screen(n),
+					search: a.smartSearch(n, t),
+					source: c
+				}),
+				f = (e, t) => n => ({
+					action: "click",
+					actionInfo: a.actionInfo(n),
+					noun: e,
+					metaSearch: a.metaSearch(t),
+					screen: a.screen(n),
+					search: a.smartSearch(n, t),
+					source: c
+				}),
+				m = (e, t, n) => s => ({
+					action: t,
+					actionInfo: a.actionInfo(s),
+					noun: e,
+					screen: a.screen(s),
+					search: a.search(s, n),
+					source: i
+				});
+			var O;
+			! function(e) {
+				e.TopResults = "tab_top_results", e.Posts = "tab_posts", e.CommunitiesAndUsers = "tab_communities"
+			}(O || (O = {}));
+			const g = (e, t) => n => Object.assign({}, d(n, t), {
+					source: c,
+					action: "click",
+					noun: e,
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(n),
+					search: a.search(n, t)
+				}),
+				_ = (e, t) => n => Object.assign({}, d(n, t), {
+					source: c,
+					action: "click",
+					noun: e,
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(n),
+					search: a.search(n, t)
+				}),
+				h = (e, t) => n => ({
+					action: "click",
+					correlationId: Object(o.c)(o.a.SearchResults),
+					noun: e ? s.Lb.ToSubreddit : s.Lb.ToGlobal,
+					search: a.search(n, t),
+					source: c
+				}),
+				y = (e, t, n, s) => r => Object.assign({}, d(r, n), {
+					source: c,
+					action: "click",
+					noun: "search_result_post",
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(r, {
+						relativePosition: a.getRelativePostOrder(r, t, e)
+					}),
+					search: Object.assign({}, a.search(r, n), !!s && {
+						originElement: s
+					}),
+					post: a.post(r, t)
+				}),
+				j = (e, t, n, s, r) => o => E(o, e, t, n, s, r),
+				E = (e, t, n, s, i, d) => {
+					const u = a.paneName(e, s),
+						l = a.relativePosition(e, t, i, d),
+						b = a.amountOfElementsBefore(e, n, i, d, u),
+						p = null !== l ? b + l : null,
+						f = a.structureType(e, s),
+						m = Object.assign({}, a.search(e, n, !0, s || void 0), {
+							structureType: f,
+							queryId: Object(o.c)(o.a.SearchResults)
+						});
+					return {
+						source: c,
+						action: r.c.CLICK,
+						noun: "post",
+						actionInfo: s ? {
+							pageType: a.getPageTypeFromCurrentPage(s),
+							paneName: u,
+							position: p,
+							relativePosition: l
+						} : a.actionInfo(e, {
+							paneName: u,
+							position: p,
+							relativePosition: l
+						}),
+						search: m,
+						post: a.post(e, t),
+						userPreferences: {
+							hideNsfw: !e.user.prefs.over18
+						},
+						discoveryUnit: d ? a.discoveryUnit(d) : null
+					}
+				},
+				I = (e, t) => n => Object.assign({}, d(n, e), {
+					source: c,
+					action: "click",
+					noun: "search_result_subreddit",
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(n),
+					search: Object.assign({}, a.search(n, e), !!t && {
+						originElement: t
+					}),
+					subreddit: a.subreddit(n)
+				}),
+				v = (e, t, n, s) => r => Object.assign({}, d(r, n), {
+					source: c,
+					action: "view",
+					noun: "search_results_post",
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(r, {
+						relativePosition: a.getRelativePostOrder(r, t, e),
+						position: a.getAbsoluteOrder(r, t, e)
+					}),
+					search: Object.assign({}, a.search(r, n), !!s && {
+						originElement: s
+					}),
+					post: a.post(r, t)
+				}),
+				S = (e, t, n) => s => Object.assign({}, d(s), {
+					source: c,
+					action: "click",
+					noun: "search_result_".concat(e),
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(s),
+					search: Object.assign({}, a.search(s, t), !!n && {
+						originElement: n
+					}),
+					[e]: a[e](s)
+				}),
+				T = (e, t) => n => Object.assign({}, d(n, t), {
+					source: c,
+					action: e,
+					noun: "covid_banner",
+					correlationId: Object(o.c)(o.a.SearchResults),
+					actionInfo: a.actionInfo(n),
+					search: a.search(n, t)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, n) {
@@ -54368,4 +54568,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.6b120539a3494fcdaead.js.map
+//# sourceMappingURL=Governance~Reddit.499af9b772b706ba6ebd.js.map

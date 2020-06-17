@@ -1,18 +1,19 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.a6a939e9fd459c1885e9.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.fcca84d435551006f49e.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return u
-			})), s.d(t, "a", (function() {
 				return m
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return p
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return b
+			})), s.d(t, "d", (function() {
+				return x
 			}));
+			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/lodash/omit.js"),
 				o = s.n(n),
 				r = s("./node_modules/react/index.js"),
@@ -29,17 +30,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const l = (e, t, s) => (function() {
+			var l = function(e, t) {
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+			const u = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = b(o.target, o.currentTarget);
-					p(o.target, o.currentTarget, m.anchors) ? r && t && e(t(s, r)) : r && t && e(e => Object.assign({}, t(s, r)(e), {
-						actionInfo: Object(i.previousPageActionInfo)(e)
-					})), p(o.target, o.currentTarget, m.anchorsAndButtons) && n(o)
+					const r = x(o.target, o.currentTarget);
+					b(o.target, o.currentTarget, p.anchors) ? r && t && e(t(s, r)) : r && t && e(e => {
+						const n = t(s, r)(e);
+						let o;
+						if (n && n.actionInfo) {
+							const e = n.actionInfo,
+								{
+									pageType: t
+								} = e;
+							o = l(e, ["pageType"])
+						}
+						return Object.assign({}, n, {
+							actionInfo: Object(i.previousPageActionInfo)(e, o)
+						})
+					}), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
 			});
 
-			function u(e) {
+			function m(e) {
 				class t extends c.a.Component {
 					constructor() {
 						super(...arguments), this.cancelClick = !1
@@ -51,21 +72,21 @@
 							clickTrackingId: n
 						} = this.props;
 						return c.a.createElement(e, d({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: l(t, s, n)
+							afterClickTracking: u(t, s, n)
 						}))
 					}
 				}
 				return Object(a.c)(t)
 			}
-			const m = {
+			const p = {
 					anchorsAndButtons: ["A", "BUTTON"],
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				p = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && p(e.parentElement, t, s)),
-				b = (e, t) => {
+				b = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && b(e.parentElement, t, s)),
+				x = (e, t) => {
 					const s = e.dataset.clickId;
-					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return s || (e === t ? null : !!e.parentElement && x(e.parentElement, t))
 				}
 		},
 		"./src/reddit/components/EventPost/EventMetaHeader/index.m.less": function(e, t, s) {
@@ -849,6 +870,7 @@
 						style: m,
 						ref: b
 					} = this.props, x = o.a.createElement("div", {
+						"data-click-id": "post-container",
 						style: m,
 						ref: b,
 						onMouseUp: e => {
@@ -1407,4 +1429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.a6a939e9fd459c1885e9.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.fcca84d435551006f49e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.b895c661ac3f39b74edf.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.dba0c2f4814b97d0c56b.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -20,14 +20,15 @@
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return m
-			})), n.d(t, "a", (function() {
 				return p
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return u
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return b
+			})), n.d(t, "d", (function() {
+				return h
 			}));
+			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/omit.js"),
 				o = n.n(s),
 				r = n("./node_modules/react/index.js"),
@@ -44,17 +45,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const l = (e, t, n) => (function() {
+			var l = function(e, t) {
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (s = Object.getOwnPropertySymbols(e); o < s.length; o++) t.indexOf(s[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[o]) && (n[s[o]] = e[s[o]])
+				}
+				return n
+			};
+			const m = (e, t, n) => (function() {
 				let s = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = b(o.target, o.currentTarget);
-					u(o.target, o.currentTarget, p.anchors) ? r && t && e(t(n, r)) : r && t && e(e => Object.assign({}, t(n, r)(e), {
-						actionInfo: Object(c.previousPageActionInfo)(e)
-					})), u(o.target, o.currentTarget, p.anchorsAndButtons) && s(o)
+					const r = h(o.target, o.currentTarget);
+					b(o.target, o.currentTarget, u.anchors) ? r && t && e(t(n, r)) : r && t && e(e => {
+						const s = t(n, r)(e);
+						let o;
+						if (s && s.actionInfo) {
+							const e = s.actionInfo,
+								{
+									pageType: t
+								} = e;
+							o = l(e, ["pageType"])
+						}
+						return Object.assign({}, s, {
+							actionInfo: Object(c.previousPageActionInfo)(e, o)
+						})
+					}), b(o.target, o.currentTarget, u.anchorsAndButtons) && s(o)
 				}
 			});
 
-			function m(e) {
+			function p(e) {
 				class t extends a.a.Component {
 					constructor() {
 						super(...arguments), this.cancelClick = !1
@@ -66,21 +87,21 @@
 							clickTrackingId: s
 						} = this.props;
 						return a.a.createElement(e, d({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: l(t, n, s)
+							afterClickTracking: m(t, n, s)
 						}))
 					}
 				}
 				return Object(i.c)(t)
 			}
-			const p = {
+			const u = {
 					anchorsAndButtons: ["A", "BUTTON"],
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				u = (e, t, n) => !n.includes(e.tagName) && (e === t || !!e.parentElement && u(e.parentElement, t, n)),
-				b = (e, t) => {
+				b = (e, t, n) => !n.includes(e.tagName) && (e === t || !!e.parentElement && b(e.parentElement, t, n)),
+				h = (e, t) => {
 					const n = e.dataset.clickId;
-					return n || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return n || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
 				}
 		},
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -5434,6 +5455,7 @@
 						style: p,
 						ref: b
 					} = this.props, h = o.a.createElement("div", {
+						"data-click-id": "post-container",
 						style: p,
 						ref: b,
 						onMouseUp: e => {
@@ -9876,4 +9898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.b895c661ac3f39b74edf.js.map
+//# sourceMappingURL=ProfileComments.dba0c2f4814b97d0c56b.js.map

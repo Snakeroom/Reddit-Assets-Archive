@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c7c8a304b817bdac39e7.js
-// Retrieved at 6/17/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b2241c111d4ed74d56bd.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "3559016-production"
+					SENTRY_RELEASE_VERSION: "6469002-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -24889,214 +24889,6 @@
 					})
 				}
 		},
-		"./src/reddit/helpers/trackers/searchResults.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "c", (function() {
-				return c
-			})), n.d(t, "l", (function() {
-				return l
-			})), n.d(t, "k", (function() {
-				return d
-			})), n.d(t, "e", (function() {
-				return u
-			})), n.d(t, "n", (function() {
-				return p
-			})), n.d(t, "m", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return h
-			})), n.d(t, "a", (function() {
-				return b
-			})), n.d(t, "f", (function() {
-				return f
-			})), n.d(t, "p", (function() {
-				return g
-			})), n.d(t, "o", (function() {
-				return x
-			})), n.d(t, "g", (function() {
-				return y
-			})), n.d(t, "j", (function() {
-				return v
-			})), n.d(t, "h", (function() {
-				return C
-			})), n.d(t, "i", (function() {
-				return E
-			})), n.d(t, "b", (function() {
-				return O
-			}));
-			var s = n("./src/lib/constants/index.ts"),
-				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts");
-			const i = "search",
-				a = "search_results_best",
-				c = (e, t) => {
-					const n = r.subreddit(e);
-					return {
-						screen: r.screen(e),
-						subreddit: n && t && t.restrict_sr ? n : null
-					}
-				},
-				l = (e, t) => n => {
-					const s = t;
-					return s.structureType = "related", Object.assign({
-						action: e,
-						correlationId: Object(o.c)(o.a.SearchResults),
-						noun: "related_search",
-						source: i,
-						search: r.search(n, s)
-					}, c(n))
-				},
-				d = (e, t, n, s) => o => Object.assign({}, c(o, n), {
-					source: i,
-					action: "click",
-					noun: t,
-					actionInfo: r.actionInfo(o, s ? {
-						pageType: "search_results_best",
-						position: 0
-					} : void 0),
-					discoveryUnit: s ? r.discoveryUnit(s) : null,
-					search: r.search(o, n),
-					post: r.post(o, e),
-					media: r.media(o, e)
-				}),
-				u = (e, t, n) => o => {
-					let a = !0;
-					if (t.type.indexOf(s.Mb.Posts) > -1) {
-						const {
-							api: t
-						} = o.listings.listingOrder;
-						a = a && !t.error[e] && !t.pending[e]
-					}
-					if (t.type.indexOf(s.Mb.Subreddits) > -1 || t.type.indexOf(s.Mb.Users) > -1) {
-						const {
-							api: t
-						} = o.listings.postOrder;
-						a = a && !t.error[e] && !t.pending[e]
-					}
-					return Object.assign({}, c(o, t), {
-						source: i,
-						action: "view",
-						noun: "search_results_post",
-						actionInfo: r.actionInfo(o, {
-							success: a,
-							pageType: "search_results_best",
-							position: 0
-						}),
-						discoveryUnit: r.discoveryUnit(n),
-						search: r.search(o, t)
-					})
-				},
-				p = (e, t) => n => ({
-					action: "view",
-					actionInfo: r.actionInfo(n),
-					metaSearch: r.metaSearch(t),
-					noun: e,
-					screen: r.screen(n),
-					search: r.smartSearch(n, t),
-					source: i
-				}),
-				m = (e, t) => n => ({
-					action: "click",
-					actionInfo: r.actionInfo(n),
-					noun: e,
-					metaSearch: r.metaSearch(t),
-					screen: r.screen(n),
-					search: r.smartSearch(n, t),
-					source: i
-				}),
-				h = (e, t, n) => s => ({
-					action: t,
-					actionInfo: r.actionInfo(s),
-					noun: e,
-					screen: r.screen(s),
-					search: r.search(s, n),
-					source: a
-				});
-			var b;
-			! function(e) {
-				e.TopResults = "tab_top_results", e.Posts = "tab_posts", e.CommunitiesAndUsers = "tab_communities"
-			}(b || (b = {}));
-			const f = (e, t) => n => Object.assign({}, c(n, t), {
-					source: i,
-					action: "click",
-					noun: e,
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(n),
-					search: r.search(n, t)
-				}),
-				g = (e, t) => n => Object.assign({}, c(n, t), {
-					source: i,
-					action: "click",
-					noun: e,
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(n),
-					search: r.search(n, t)
-				}),
-				x = (e, t) => n => ({
-					action: "click",
-					correlationId: Object(o.c)(o.a.SearchResults),
-					noun: e ? s.Lb.ToSubreddit : s.Lb.ToGlobal,
-					search: r.search(n, t),
-					source: i
-				}),
-				y = (e, t, n, s) => a => Object.assign({}, c(a, n), {
-					source: i,
-					action: "click",
-					noun: "search_result_post",
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(a, {
-						relativePosition: r.getRelativePostOrder(a, t, e)
-					}),
-					search: Object.assign({}, r.search(a, n), !!s && {
-						originElement: s
-					}),
-					post: r.post(a, t)
-				}),
-				v = (e, t) => n => Object.assign({}, c(n, e), {
-					source: i,
-					action: "click",
-					noun: "search_result_subreddit",
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(n),
-					search: Object.assign({}, r.search(n, e), !!t && {
-						originElement: t
-					}),
-					subreddit: r.subreddit(n)
-				}),
-				C = (e, t, n, s) => a => Object.assign({}, c(a, n), {
-					source: i,
-					action: "view",
-					noun: "search_results_post",
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(a, {
-						relativePosition: r.getRelativePostOrder(a, t, e),
-						position: r.getAbsoluteOrder(a, t, e)
-					}),
-					search: Object.assign({}, r.search(a, n), !!s && {
-						originElement: s
-					}),
-					post: r.post(a, t)
-				}),
-				E = (e, t, n) => s => Object.assign({}, c(s), {
-					source: i,
-					action: "click",
-					noun: "search_result_".concat(e),
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(s),
-					search: Object.assign({}, r.search(s, t), !!n && {
-						originElement: n
-					}),
-					[e]: r[e](s)
-				}),
-				O = (e, t) => n => Object.assign({}, c(n, t), {
-					source: i,
-					action: e,
-					noun: "covid_banner",
-					correlationId: Object(o.c)(o.a.SearchResults),
-					actionInfo: r.actionInfo(n),
-					search: r.search(n, t)
-				})
-		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -31967,4 +31759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.c7c8a304b817bdac39e7.js.map
+//# sourceMappingURL=PostCreation.b2241c111d4ed74d56bd.js.map

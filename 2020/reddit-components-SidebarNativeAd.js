@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.223612c81798bb892924.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.cd75c83fb45362bed760.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -291,14 +291,15 @@
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return m
-			})), s.d(t, "a", (function() {
 				return u
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return p
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return b
+			})), s.d(t, "d", (function() {
+				return x
 			}));
+			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/lodash/omit.js"),
 				o = s.n(n),
 				r = s("./node_modules/react/index.js"),
@@ -315,17 +316,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const l = (e, t, s) => (function() {
+			var l = function(e, t) {
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = b(o.target, o.currentTarget);
-					p(o.target, o.currentTarget, u.anchors) ? r && t && e(t(s, r)) : r && t && e(e => Object.assign({}, t(s, r)(e), {
-						actionInfo: Object(d.previousPageActionInfo)(e)
-					})), p(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
+					const r = x(o.target, o.currentTarget);
+					b(o.target, o.currentTarget, p.anchors) ? r && t && e(t(s, r)) : r && t && e(e => {
+						const n = t(s, r)(e);
+						let o;
+						if (n && n.actionInfo) {
+							const e = n.actionInfo,
+								{
+									pageType: t
+								} = e;
+							o = l(e, ["pageType"])
+						}
+						return Object.assign({}, n, {
+							actionInfo: Object(d.previousPageActionInfo)(e, o)
+						})
+					}), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
 			});
 
-			function m(e) {
+			function u(e) {
 				class t extends i.a.Component {
 					constructor() {
 						super(...arguments), this.cancelClick = !1
@@ -337,21 +358,21 @@
 							clickTrackingId: n
 						} = this.props;
 						return i.a.createElement(e, c({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: l(t, s, n)
+							afterClickTracking: m(t, s, n)
 						}))
 					}
 				}
 				return Object(a.c)(t)
 			}
-			const u = {
+			const p = {
 					anchorsAndButtons: ["A", "BUTTON"],
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				p = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && p(e.parentElement, t, s)),
-				b = (e, t) => {
+				b = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && b(e.parentElement, t, s)),
+				x = (e, t) => {
 					const s = e.dataset.clickId;
-					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return s || (e === t ? null : !!e.parentElement && x(e.parentElement, t))
 				}
 		},
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
@@ -851,6 +872,7 @@
 						style: u,
 						ref: b
 					} = this.props, x = o.a.createElement("div", {
+						"data-click-id": "post-container",
 						style: u,
 						ref: b,
 						onMouseUp: e => {
@@ -1507,4 +1529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.223612c81798bb892924.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.cd75c83fb45362bed760.js.map

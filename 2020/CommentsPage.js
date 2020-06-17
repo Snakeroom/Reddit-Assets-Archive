@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3090bfbfb33d5cb48354.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.93682843e64fc8e44f4f.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -74,14 +74,15 @@
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return m
-			})), s.d(t, "a", (function() {
 				return p
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return u
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return h
+			})), s.d(t, "d", (function() {
+				return b
 			}));
+			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/lodash/omit.js"),
 				o = s.n(n),
 				r = s("./node_modules/react/index.js"),
@@ -98,17 +99,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const l = (e, t, s) => (function() {
+			var l = function(e, t) {
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = h(o.target, o.currentTarget);
-					u(o.target, o.currentTarget, p.anchors) ? r && t && e(t(s, r)) : r && t && e(e => Object.assign({}, t(s, r)(e), {
-						actionInfo: Object(d.previousPageActionInfo)(e)
-					})), u(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
+					const r = b(o.target, o.currentTarget);
+					h(o.target, o.currentTarget, u.anchors) ? r && t && e(t(s, r)) : r && t && e(e => {
+						const n = t(s, r)(e);
+						let o;
+						if (n && n.actionInfo) {
+							const e = n.actionInfo,
+								{
+									pageType: t
+								} = e;
+							o = l(e, ["pageType"])
+						}
+						return Object.assign({}, n, {
+							actionInfo: Object(d.previousPageActionInfo)(e, o)
+						})
+					}), h(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
 				}
 			});
 
-			function m(e) {
+			function p(e) {
 				class t extends i.a.Component {
 					constructor() {
 						super(...arguments), this.cancelClick = !1
@@ -120,21 +141,21 @@
 							clickTrackingId: n
 						} = this.props;
 						return i.a.createElement(e, c({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: l(t, s, n)
+							afterClickTracking: m(t, s, n)
 						}))
 					}
 				}
 				return Object(a.c)(t)
 			}
-			const p = {
+			const u = {
 					anchorsAndButtons: ["A", "BUTTON"],
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				u = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && u(e.parentElement, t, s)),
-				h = (e, t) => {
+				h = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && h(e.parentElement, t, s)),
+				b = (e, t) => {
 					const s = e.dataset.clickId;
-					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
+					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
 				}
 		},
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -7762,6 +7783,7 @@
 						style: p,
 						ref: h
 					} = this.props, b = o.a.createElement("div", {
+						"data-click-id": "post-container",
 						style: p,
 						ref: h,
 						onMouseUp: e => {
@@ -16394,4 +16416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.3090bfbfb33d5cb48354.js.map
+//# sourceMappingURL=CommentsPage.93682843e64fc8e44f4f.js.map

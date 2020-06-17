@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.f91fe0ba0f6dbb8cde78.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.e86c8d0f7a0dc3bf064c.js
+// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -31,14 +31,15 @@
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return m
-			})), s.d(t, "a", (function() {
 				return p
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return u
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return b
+			})), s.d(t, "d", (function() {
+				return h
 			}));
+			s("./node_modules/core-js/modules/es6.symbol.js");
 			var o = s("./node_modules/lodash/omit.js"),
 				n = s.n(o),
 				r = s("./node_modules/react/index.js"),
@@ -55,17 +56,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const l = (e, t, s) => (function() {
+			var l = function(e, t) {
+				var s = {};
+				for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (s[o] = e[o]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var n = 0;
+					for (o = Object.getOwnPropertySymbols(e); n < o.length; n++) t.indexOf(o[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[n]) && (s[o[n]] = e[o[n]])
+				}
+				return s
+			};
+			const m = (e, t, s) => (function() {
 				let o = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return n => {
-					const r = b(n.target, n.currentTarget);
-					u(n.target, n.currentTarget, p.anchors) ? r && t && e(t(s, r)) : r && t && e(e => Object.assign({}, t(s, r)(e), {
-						actionInfo: Object(d.previousPageActionInfo)(e)
-					})), u(n.target, n.currentTarget, p.anchorsAndButtons) && o(n)
+					const r = h(n.target, n.currentTarget);
+					b(n.target, n.currentTarget, u.anchors) ? r && t && e(t(s, r)) : r && t && e(e => {
+						const o = t(s, r)(e);
+						let n;
+						if (o && o.actionInfo) {
+							const e = o.actionInfo,
+								{
+									pageType: t
+								} = e;
+							n = l(e, ["pageType"])
+						}
+						return Object.assign({}, o, {
+							actionInfo: Object(d.previousPageActionInfo)(e, n)
+						})
+					}), b(n.target, n.currentTarget, u.anchorsAndButtons) && o(n)
 				}
 			});
 
-			function m(e) {
+			function p(e) {
 				class t extends i.a.Component {
 					constructor() {
 						super(...arguments), this.cancelClick = !1
@@ -77,21 +98,21 @@
 							clickTrackingId: o
 						} = this.props;
 						return i.a.createElement(e, c({}, n()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: l(t, s, o)
+							afterClickTracking: m(t, s, o)
 						}))
 					}
 				}
 				return Object(a.c)(t)
 			}
-			const p = {
+			const u = {
 					anchorsAndButtons: ["A", "BUTTON"],
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				u = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && u(e.parentElement, t, s)),
-				b = (e, t) => {
+				b = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && b(e.parentElement, t, s)),
+				h = (e, t) => {
 					const s = e.dataset.clickId;
-					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
 				}
 		},
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -3844,6 +3865,7 @@
 						style: p,
 						ref: b
 					} = this.props, h = n.a.createElement("div", {
+						"data-click-id": "post-container",
 						style: p,
 						ref: b,
 						onMouseUp: e => {
@@ -7667,4 +7689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.f91fe0ba0f6dbb8cde78.js.map
+//# sourceMappingURL=ProfilePrivate.e86c8d0f7a0dc3bf064c.js.map
