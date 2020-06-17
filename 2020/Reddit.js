@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3cbfd7c765c8fd1f2119.js
-// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.78d6e12f1be308c15a98.js
+// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5035,7 +5035,7 @@
 							structureType: s,
 							searchQuery: this.props.searchQuery
 						};
-						this.props.sendEvent(Object(go.o)(n, a))
+						this.props.sendEvent(Object(go.q)(n, a))
 					}, this.onSendDropdownViewEvent = (e, t, s, n) => {
 						const a = {
 							displayQuery: s,
@@ -5043,7 +5043,7 @@
 							searchQuery: this.props.searchQuery,
 							structureType: t
 						};
-						this.props.sendEvent(Object(go.p)(e, a))
+						this.props.sendEvent(Object(go.r)(e, a))
 					}, this.onKeyDown = e => {
 						if (e.key === Ya.b.Escape && this.close(), e.key === Ya.b.Tab && this.close(), e.key === Ya.b.ArrowDown) {
 							if (e.preventDefault(), 0 === this.state.itemList.length || !this.props.dropdownIsOpen) return;
@@ -13294,4 +13294,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.3cbfd7c765c8fd1f2119.js.map
+//# sourceMappingURL=Reddit.78d6e12f1be308c15a98.js.map

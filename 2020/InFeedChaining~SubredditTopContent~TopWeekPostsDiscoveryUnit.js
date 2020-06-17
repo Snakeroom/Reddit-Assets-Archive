@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.2f1d867a675bd8483278.js
-// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.f6dbeb37b492b256bea1.js
+// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -327,7 +327,7 @@
 		},
 		"./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.symbol.js");
+			s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var a = s("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
 				n = s("./node_modules/react/index.js"),
 				i = s.n(n),
@@ -347,15 +347,15 @@
 				f = s("./src/lib/timeAgo/index.ts"),
 				v = s("./src/reddit/constants/posts.ts"),
 				E = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				P = s("./src/reddit/layout/row/Inline/index.tsx"),
-				y = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
-				O = s.n(y);
+				y = s("./src/reddit/layout/row/Inline/index.tsx"),
+				P = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
+				O = s.n(P);
 			var N = e => {
 					const t = v.a.PROFILE,
 						s = Object(E.a)(e.author, t);
 					return i.a.createElement("div", {
 						className: Object(c.a)(O.a.container, e.className)
-					}, i.a.createElement(P.a, {
+					}, i.a.createElement(y.a, {
 						className: O.a.layout
 					}, i.a.createElement("div", {
 						className: O.a.textContainer
@@ -408,9 +408,9 @@
 				A = s("./src/reddit/components/PostContainer/index.tsx"),
 				T = s("./src/reddit/components/PostTitle/index.tsx"),
 				U = s("./src/reddit/connectors/miniCardPost.ts"),
-				V = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				B = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				R = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				B = s("./src/reddit/models/Media/index.ts"),
+				V = s("./src/reddit/models/Media/index.ts"),
 				F = s("./src/reddit/models/Subreddit/index.ts"),
 				H = s("./src/reddit/models/Widgets/index.ts"),
 				Q = s("./src/reddit/components/MiniCardPost/index.m.less"),
@@ -449,15 +449,15 @@
 						showAuthorBlock: f = !1,
 						showMetaLine: v = !0,
 						showSubscribeBlock: E = !1,
-						subredditOrProfile: P
+						subredditOrProfile: y
 					} = this.props, {
-						media: y
-					} = a || p, O = !y && !!p.source && Object(b.a)(p.source.url);
-					let k = y && i.a.createElement(S.a, {
+						media: P
+					} = a || p, O = !P && !!p.source && Object(b.a)(p.source.url);
+					let k = P && i.a.createElement(S.a, {
 							autoplayPref: e,
 							availableWidth: t,
 							className: G.a.media,
-							forceAspectRatio: B.c,
+							forceAspectRatio: V.c,
 							imageBoxClassName: G.a.mediaImageBox,
 							imageBoxContentImageClassName: G.a.mediaImageBoxContentImage,
 							isListing: !0,
@@ -471,14 +471,14 @@
 							showFull: !1
 						}),
 						_ = !1;
-					y && k && (y.type !== B.n.RTJSON && y.type !== B.n.TEXT ? (k = i.a.createElement("div", {
+					P && k && (P.type !== V.n.RTJSON && P.type !== V.n.TEXT ? (k = i.a.createElement("div", {
 						className: J.a.mediaWrapper
-					}, k), _ = !0) : y && y.content && Object(V.a)(p) && (k = i.a.createElement("div", {
+					}, k), _ = !0) : P && P.content && Object(B.a)(p) && (k = i.a.createElement("div", {
 						className: J.a.textWrapper
 					}, k)));
 					const j = !_ && !O;
 					let w;
-					return P && (w = Object(F.f)(P) ? Object(H.h)(P) : Object(H.i)(P)), i.a.createElement(A.a, {
+					return y && (w = Object(F.f)(y) ? Object(H.h)(y) : Object(H.i)(y)), i.a.createElement(A.a, {
 						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, G.a.postContainer, Object(R.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -489,9 +489,9 @@
 						flairStyleTemplate: o
 					}, i.a.createElement("div", {
 						className: Object(c.a)(J.a.innerContainer, G.a.innerContainer)
-					}, E && P && i.a.createElement(I, Y({
+					}, E && y && i.a.createElement(I, Y({
 						created: p.created
-					}, w)), f && P && i.a.createElement(N, Y({
+					}, w)), f && y && i.a.createElement(N, Y({
 						created: p.created,
 						author: p.author
 					}, w)), i.a.createElement(T.c, {
@@ -501,12 +501,12 @@
 						post: p,
 						size: T.b.Large,
 						titleColor: o && o.postTitleColor
-					}), v && P && i.a.createElement(M.a, {
+					}), v && y && i.a.createElement(M.a, {
 						className: J.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
 						post: p,
-						subredditOrProfile: P
+						subredditOrProfile: y
 					}), (_ || O) && i.a.createElement("div", {
 						className: J.a.flexSpacer
 					}), O && i.a.createElement("div", {
@@ -612,7 +612,7 @@
 						className: Object(c.a)(re.a.title, Object(ae.b)({
 							isLoading: s
 						}))
-					})), a && i.a.createElement(P.a, {
+					})), a && i.a.createElement(y.a, {
 						className: re.a.subreddit
 					}, i.a.createElement(te.a, oe({
 						className: Object(c.a)(Object(ae.b)({
@@ -622,7 +622,7 @@
 						className: Object(c.a)(re.a.subredditName, Object(ae.b)({
 							isLoading: s
 						}))
-					})), i.a.createElement(P.a, null, i.a.createElement(ue, oe({
+					})), i.a.createElement(y.a, null, i.a.createElement(ue, oe({
 						isLoading: s
 					}, n)), i.a.createElement("div", {
 						className: Object(c.a)(re.a.comments, Object(ae.b)({
@@ -670,11 +670,11 @@
 				};
 			const ve = 326,
 				Ee = 12,
-				Pe = {
+				ye = {
 					stiffness: 210,
 					damping: 30
 				},
-				ye = 100,
+				Pe = 100,
 				Oe = e => {
 					var {
 						root: t,
@@ -720,7 +720,7 @@
 							searchOptions: o
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t ? p.G() : r && o ? p.F(o, i, n, r) : p.u(s, a))(e)
+						return (c = "subreddit" === t ? p.H() : r && o ? p.G(o, i, n, r) : p.u(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -751,15 +751,15 @@
 					super.componentDidMount()
 				}
 				componentDidUpdate(e, t) {
-					super.componentDidUpdate(e, t), this.state !== t && this.trackPostsViewed(this.props)
+					if (super.componentDidUpdate(e, t), this.state !== t) {
+						const e = Object.keys(this.state.viewableItems).filter(e => !1 === t.viewableItems[e] && !0 === this.state.viewableItems[e]);
+						this.trackPostsViewed(this.props, e)
+					}
 				}
-				componentWillReceiveProps(e) {
-					this.props.items !== e.items && this.trackPostsViewed(e)
-				}
-				trackPostsViewed(e) {
-					if (e.isLoading || 0 === e.items.length) return;
-					const t = Math.min(this.state.scrollIndex + this.getVisibleItemsCount(), this.props.items.length);
-					e.items.slice(this.state.scrollIndex, t).forEach(t => this.props.searchDiscoveryUnit ? e.onPostView(this.props.searchDiscoveryUnit, t, e.searchOptions) : this.props.discoveryUnit ? e.onPostView(this.props.discoveryUnit, t) : null)
+				trackPostsViewed(e, t) {
+					e.isLoading || 0 === e.items.length || t.forEach(t => {
+						this.props.searchDiscoveryUnit ? e.onPostView(this.props.searchDiscoveryUnit, e.items[t], e.searchOptions, e.listingKey, e.pageLayer) : this.props.discoveryUnit && e.onPostView(this.props.discoveryUnit, e.items[t])
+					})
 				}
 				trackArrowClick() {
 					const {
@@ -771,10 +771,10 @@
 					n && t && t(n, a)
 				}
 				onClickNext() {
-					super.onClickNext(), this.trackArrowClick(), this.trackPostsViewed(this.props)
+					super.onClickNext(), this.trackArrowClick()
 				}
 				onClickPrev() {
-					super.onClickPrev(), this.trackArrowClick(), this.trackPostsViewed(this.props)
+					super.onClickPrev(), this.trackArrowClick()
 				}
 				render() {
 					const {
@@ -800,7 +800,7 @@
 						scrollIndex: m,
 						spacerWidth: Ee,
 						visibleItemsCount: u
-					}), b = e ? ye : this.getMarginLeft({
+					}), b = e ? Pe : this.getMarginLeft({
 						adjustment: h,
 						itemWidth: d,
 						scrollIndex: m,
@@ -812,10 +812,10 @@
 						ref: this.setContainerRef
 					}, i.a.createElement(r.Motion, {
 						defaultStyle: {
-							marginLeft: e || n ? ye : 0
+							marginLeft: e || n ? Pe : 0
 						},
 						style: {
-							marginLeft: Object(r.spring)(b, o || Pe)
+							marginLeft: Object(r.spring)(b, o || ye)
 						}
 					}, this.renderPosts), 0 !== m && i.a.createElement(l.a, {
 						className: Object(c.a)(ge.a.arrowLeft, t),
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.2f1d867a675bd8483278.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.f6dbeb37b492b256bea1.js.map
