@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1b79f99ade4e7b3aa337.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a614d9a4e8ed6b090baf.js
+// Retrieved at 6/17/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -314,7 +314,7 @@
 			e.exports = JSON.parse('{"id":"c1e1ff9daa2c"}')
 		},
 		"./src/graphql/operations/TopSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"9e9ef4c82a00"}')
+			e.exports = JSON.parse('{"id":"82e29e42c13f"}')
 		},
 		"./src/lib/browser/isIncognito.ts": function(e, t, s) {
 			"use strict";
@@ -1220,9 +1220,9 @@
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
-			})), s.d(t, "b", (function() {
 				return g
+			})), s.d(t, "b", (function() {
+				return f
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/lib/pageTitle.ts"),
@@ -1234,11 +1234,12 @@
 				d = s("./src/reddit/constants/listings.ts"),
 				l = s("./src/reddit/constants/subredditLeaderboard.ts"),
 				u = s("./src/reddit/helpers/categoryPickerWidget/index.ts"),
-				m = s("./src/reddit/selectors/category.ts"),
-				p = s("./src/reddit/selectors/subredditLeaderboard.ts"),
-				h = s("./src/reddit/selectors/user.ts");
-			const b = (e, t) => t && e === l.k,
-				g = e => async (t, s) => {
+				m = s("./src/reddit/models/GoodContent/index.ts"),
+				p = s("./src/reddit/selectors/category.ts"),
+				h = s("./src/reddit/selectors/subredditLeaderboard.ts"),
+				b = s("./src/reddit/selectors/user.ts");
+			const g = (e, t) => t && e === l.k,
+				f = e => async (t, s) => {
 					t(Object(r.k)({
 						actionSource: r.a.SubredditLeaderboard,
 						redirectUrl: d.c[d.b.SubredditLeaderboard]
@@ -1247,22 +1248,23 @@
 					}));
 					const a = e.params && e.params.categoryName,
 						i = a && Object(u.b)(a);
-					await t(f(i))
-				}, f = e => async (t, s) => {
+					await t(v(i))
+				}, v = e => async (t, s) => {
 					await t(Object(a.h)());
 					const n = s(),
-						r = Object(h.I)(n);
-					if (Object(p.a)(n, e)) return;
-					const o = e && Object(m.f)(n, {
+						r = Object(b.I)(n);
+					if (Object(h.a)(n, e)) return;
+					const o = e && Object(p.f)(n, {
 							categoryName: e
 						}),
 						d = e === l.i ? l.h : o && o.id || l.d,
 						u = ((e, t) => ({
 							categoryId: e,
+							filter: m.a,
 							isOnlyModIncluded: t
-						}))(d, b(e, r)),
-						g = Object(p.d)(d, e);
-					await Promise.all([t(Object(i.a)(u, g)), t(Object(c.r)())])
+						}))(d, g(e, r)),
+						f = Object(h.d)(d, e);
+					await Promise.all([t(Object(i.a)(u, f)), t(Object(c.r)())])
 				}
 		},
 		"./src/reddit/actions/shortcuts/close.ts": function(e, t, s) {
@@ -11397,6 +11399,17 @@
 					e.Success = "SUCCESS", e.AlreadyVerified = "EMAIL_ALREADY_VERIFIED", e.WrongUser = "EMAIL_VERIFY_WRONG_USER", e.Error = "EMAIL_VERIFY_ERROR"
 				}(n || (n = {}))
 		},
+		"./src/reddit/models/GoodContent/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			}));
+			const n = {
+				isBlacklistedSubredditsExcluded: !0,
+				isNsfwExcluded: !0,
+				maxRating: "NC17"
+			}
+		},
 		"./src/reddit/models/Sso/index.ts": function(e, t, s) {
 			"use strict";
 			var n;
@@ -13240,4 +13253,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.1b79f99ade4e7b3aa337.js.map
+//# sourceMappingURL=Reddit.a614d9a4e8ed6b090baf.js.map
