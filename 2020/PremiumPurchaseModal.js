@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.81b49ae96be0d4d0198d.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.0d23243dd144ad1a09b8.js
+// Retrieved at 6/17/2020, 8:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -509,8 +509,8 @@
 						"data-redditstyle": !0,
 						disabled: !e,
 						onSubmit: this.onPaypalSubmit,
-						title: _.fbt._("Continue to paypal", null, {
-							hk: "1iCLet"
+						title: _.fbt._("Continue to PayPal", null, {
+							hk: "2TCl83"
 						})
 					}), a === i.vb && s.a.createElement(T.f, {
 						className: O.a.premiumPurchaseButton,
@@ -886,4 +886,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.81b49ae96be0d4d0198d.js.map
+//# sourceMappingURL=PremiumPurchaseModal.0d23243dd144ad1a09b8.js.map

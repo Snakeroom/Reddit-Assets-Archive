@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9abe224fd48a289050ad.js
-// Retrieved at 6/17/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.29991b8691355d9515b8.js
+// Retrieved at 6/17/2020, 8:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5498,7 +5498,8 @@
 					const e = await (e => Object(l.a)(e, u))(a());
 					if (e.ok) {
 						const n = e.body;
-						if (n.errors && n.errors.length || !n.data.identity) return void(await t(h(c)));
+						if (n.errors && n.errors.length) return void(await t(h(c)));
+						if (!n.data.identity) return void(await t(_(c)));
 						await t(g({
 							powerups: n.data.identity.powerups
 						}))
@@ -8586,8 +8587,8 @@
 					});
 					O && (_.sort = g), _.onOtherDiscussions = b, t(V.t(c)), await t(Ot(c, i, _, g));
 					const h = n().posts.models[c],
-						y = Object(Ae.H)(p);
-					if (h && Object(me.a)(p)) {
+						y = Object(Ae.H)(n());
+					if (h && "subreddit" === h.belongsTo.type && Object(me.a)(p)) {
 						const e = h.belongsTo.id,
 							n = [...y ? [t(Object(Ge.e)())] : [], t(Object(Ge.d)(e)), t(Object(Be.a)(e, S.a.Powerups))];
 						await Promise.all(n)
@@ -10767,9 +10768,8 @@
 					k = Object(u.a)(t) || c()(D.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
 				if (w.ok && k) {
 					if (!Object(u.a)(t) && Object(oe.a)(l)) {
-						const e = Object.keys(D.subredditAboutInfo)[0],
-							t = [...Object(L.H)(l) ? [o(Object(y.e)())] : [], o(Object(y.d)(e)), o(Object(j.a)(e, $.a.Powerups))];
-						await Promise.all(t)
+						const e = Object.keys(D.subredditAboutInfo)[0];
+						await Promise.all([o(Object(y.e)()), o(Object(y.d)(e)), o(Object(j.a)(e, $.a.Powerups))])
 					}
 					let n;
 					const s = D.postIds.filter(e => !!D.posts[e].isMeta);
@@ -47753,6 +47753,19 @@
 							[s]: n
 						})
 					}
+					case ge.P:
+					case ge.S: {
+						const {
+							subredditId: n,
+							powerupsCount: s
+						} = t.payload;
+						return e[n] && s > 0 ? Object.assign({}, e, {
+							[n]: Object.assign({}, e[n], {
+								count: e[n].count + s,
+								supportersCount: e[n].supportersCount + 1
+							})
+						}) : e
+					}
 					default:
 						return e
 				}
@@ -54591,4 +54604,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9abe224fd48a289050ad.js.map
+//# sourceMappingURL=Governance~Reddit.29991b8691355d9515b8.js.map
