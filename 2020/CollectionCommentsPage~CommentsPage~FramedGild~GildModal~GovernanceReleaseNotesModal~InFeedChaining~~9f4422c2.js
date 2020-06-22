@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.d312adda11b6723f6067.js
-// Retrieved at 6/22/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.6f9aae974297f7dd8b80.js
+// Retrieved at 6/22/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1791,7 +1791,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("8212e37-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("92aa1af-production", " ").concat(t);
 									return a && (s += " [".concat(T.qc, ":").concat(a, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1856,10 +1856,11 @@
 						c = e.isOverlayOpen && !this.props.isOverlayOpen,
 						d = !e.isOverlayOpen && this.props.isOverlayOpen,
 						h = (r || s) && l && c,
-						p = r && l && d;
+						p = r && l && d,
+						u = e.isListing && e.isOverlayOpen;
 					if (a && (this.setState({
 							videoScrollPaused: !1
-						}), this.sendEvent("view", "autoplay")), (o || p) && (!this.state.videoManualPaused && t && t.currentTime < t.duration && (e.currentTime && (t.currentTime = e.currentTime), (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref || this.props.isOverlay) && this.playVideo()), p && this.sendEvent("change", "pagetype", !0)), (n || h) && (this.pauseVideo(), h && this.sendEvent("change", "pagetype", !0)), i && (this.setState({
+						}), this.sendEvent("view", "autoplay")), !o && !p || u || (!this.state.videoManualPaused && t && t.currentTime < t.duration && (e.currentTime && (t.currentTime = e.currentTime), (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref || this.props.isOverlay) && this.playVideo()), p && this.sendEvent("change", "pagetype", !0)), (n || h) && (this.pauseVideo(), h && this.sendEvent("change", "pagetype", !0)), i && (this.setState({
 							videoScrollPaused: !0
 						}), this.sendEvent("served", "video", !0), this.state.videoEnded || (this.sendEvent("scroll", "pause"), this.setVideoMute(!0))), e.mpegDashSource && this.props.mpegDashSource !== e.mpegDashSource) {
 						const {
@@ -1867,7 +1868,7 @@
 						} = this;
 						try {
 							t.setAutoPlay(e.autoPlay), t.attachSource(e.mpegDashSource)
-						} catch (u) {}
+						} catch (m) {}
 					}
 				}
 				updateUsingKeyStatus(e) {
@@ -2204,4 +2205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.d312adda11b6723f6067.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.6f9aae974297f7dd8b80.js.map
