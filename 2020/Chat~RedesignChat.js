@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.458d09159d63953cb0de.js
-// Retrieved at 6/22/2020, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dcde72f4f156c1a22dfb.js
+// Retrieved at 6/22/2020, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9162,8 +9162,7 @@
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return g.a;
-				s()(() => e.dispatch(Object(u.d)()));
-				let t = null;
+				let t;
 				const n = () => {
 					const {
 						session: n
@@ -9177,44 +9176,44 @@
 						}, c)
 					})(n) : s()(() => e.dispatch(Object(d.m)()))
 				};
+				let a;
 				Object(f.a)(e.getState()) === c.Ab.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.m)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.b)()))
 				}) : n();
-				let a = null;
-				return i => u => {
-					const g = e.getState(),
-						f = Object(O.b)(g) === p.b.Closed,
-						C = Object(O.e)(g);
-					switch (u.type) {
+				return i => g => {
+					const f = e.getState(),
+						C = Object(O.b)(f) === p.b.Closed,
+						_ = Object(O.e)(f);
+					switch (g.type) {
 						case o.SIZE_CHANGED: {
-							if (!u.payload) break;
-							const t = u.payload !== b.a.MINIMIZED && u.payload !== b.a.HIDDEN;
-							t && (a && clearTimeout(a), a = null), f && t && !C && n(), !C || u.payload !== b.a.HIDDEN && u.payload !== b.a.MINIMIZED || (a = setTimeout(() => {
+							if (!g.payload) break;
+							const t = g.payload !== b.a.MINIMIZED && g.payload !== b.a.HIDDEN;
+							t && (clearTimeout(a), a = null), C && t && !_ && n(), !_ || g.payload !== b.a.HIDDEN && g.payload !== b.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
 							}, 10 * c.db));
 							break
 						}
 						case l.a: {
-							const t = j(g, u);
-							f && t ? n() : t && e.dispatch(Object(r.P)());
+							const t = j(f, g);
+							C && t ? n() : t && e.dispatch(Object(r.P)());
 							break
 						}
-						case d.h: {
-							if (!u.payload) break;
-							if (!u.payload.active) break;
-							if (!u.payload.token) break;
-							const {
-								token: t
-							} = u.payload;
-							s()(() => {
-								e.dispatch(Object(h.e)(t))
+						case d.h:
+							if (!g.payload) break;
+							if (!g.payload.active) break;
+							s()(async () => {
+								if (await e.dispatch(Object(u.d)()), g.payload && g.payload.token) {
+									const {
+										token: t
+									} = g.payload;
+									await e.dispatch(Object(h.e)(t))
+								}
 							});
-							break
-						}
+							break;
 						case m.b:
-							e.dispatch(Object(h.f)()), t && (clearTimeout(t), t = null), a && (clearTimeout(a), a = null)
+							e.dispatch(Object(h.f)()), clearTimeout(t), clearTimeout(a), t = null, a = null
 					}
-					return i(u)
+					return i(g)
 				}
 			}
 		},
@@ -14047,4 +14046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.458d09159d63953cb0de.js.map
+//# sourceMappingURL=Chat~RedesignChat.dcde72f4f156c1a22dfb.js.map
