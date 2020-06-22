@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d5565bcc07c637b13106.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.50e5e8c7dfbc53168565.js
+// Retrieved at 6/22/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4629,6 +4629,7 @@
 						whitelist: l,
 						whitelistApi: d
 					} = e;
+					const m = Object.entries(xt.a).filter(e => e[1] === a)[0][0];
 					return o.a.createElement(me.a, null, o.a.createElement(de.b, {
 						isResponsiveSettingsEnabled: !1
 					}, s.fbt._("Chat & Messaging", null, {
@@ -4653,7 +4654,9 @@
 							hk: "3fmM1O"
 						}),
 						items: [xt.a.Everyone, xt.a.Whitelisted],
+						displayItems: [xt.b.Everyone, xt.b.Whitelisted],
 						selected: a,
+						displayTitle: xt.b[m],
 						onClick: e => c(e, "acceptPrivateMessages"),
 						id: "acceptPrivateMessages"
 					}), (n.invitePolicy !== Et.a.anybody || a === xt.a.Whitelisted) && o.a.createElement(Kt, null, o.a.createElement(Zt, {
@@ -7042,4 +7045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.d5565bcc07c637b13106.js.map
+//# sourceMappingURL=Settings.50e5e8c7dfbc53168565.js.map

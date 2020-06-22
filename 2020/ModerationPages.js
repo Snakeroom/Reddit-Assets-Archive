@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2789012abe8033158787.js
-// Retrieved at 6/22/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.cacf5e0096651bcbda0f.js
+// Retrieved at 6/22/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -20261,14 +20261,14 @@
 					onClick: e.openDropdown
 				}, o.a.createElement(ve, {
 					id: "".concat("SettingDropdown--").concat(e.id)
-				}, e.selected), o.a.createElement(Ce, null), o.a.createElement(W, {
+				}, e.displayTitle || e.selected), o.a.createElement(Ce, null), o.a.createElement(W, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
 					isOverlay: !1,
 					tooltipId: "".concat("SettingDropdown--").concat(e.id)
 				}, e.items.map((t, s) => o.a.createElement(Ee, {
-					displayText: t,
+					displayText: e.displayItems ? e.displayItems[s] : t,
 					isSelected: e.selected === t,
 					onClick: () => e.onClick(t),
 					key: s
@@ -28911,4 +28911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.2789012abe8033158787.js.map
+//# sourceMappingURL=ModerationPages.cacf5e0096651bcbda0f.js.map

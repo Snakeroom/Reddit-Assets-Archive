@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.6367da52a7e4d2c55911.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.7b8d0dd941dbac7441dc.js
+// Retrieved at 6/22/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal~ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -202,9 +202,9 @@
 			})), n.d(t, "a", (function() {
 				return fe
 			})), n.d(t, "d", (function() {
-				return Oe
-			})), n.d(t, "h", (function() {
 				return ye
+			})), n.d(t, "h", (function() {
+				return Oe
 			})), n.d(t, "c", (function() {
 				return ke
 			})), n.d(t, "e", (function() {
@@ -251,9 +251,9 @@
 			};
 			const _ = b.a.span("Wrapper", g.a),
 				w = b.a.select("Inner", g.a),
-				O = b.a.wrapped(f.b, "Caret", g.a);
+				y = b.a.wrapped(f.b, "Caret", g.a);
 
-			function y(e) {
+			function O(e) {
 				var {
 					className: t,
 					innerClassName: n
@@ -265,7 +265,7 @@
 					className: t
 				}, r.a.createElement(w, C({
 					className: n
-				}, a)), r.a.createElement(O, C({
+				}, a)), r.a.createElement(y, C({
 					isSubreddit: !0
 				}, s)))
 			}
@@ -458,7 +458,7 @@
 				we = Object(o.c)({
 					isOpen: (e, t) => Object(D.b)(t.id)(e)
 				}),
-				Oe = Object(s.b)(we, (e, t) => ({
+				ye = Object(s.b)(we, (e, t) => ({
 					openDropdown: () => {
 						e(Object(i.h)({
 							tooltipId: t.id
@@ -472,19 +472,19 @@
 					onClick: e.openDropdown
 				}, r.a.createElement(Ce, {
 					id: "".concat("SettingDropdown--").concat(e.id)
-				}, e.selected), r.a.createElement(Ee, null), r.a.createElement(A, {
+				}, e.displayTitle || e.selected), r.a.createElement(Ee, null), r.a.createElement(A, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
 					isOverlay: !1,
 					tooltipId: "".concat("SettingDropdown--").concat(e.id)
 				}, e.items.map((t, n) => r.a.createElement(ge, {
-					displayText: t,
+					displayText: e.displayItems ? e.displayItems[n] : t,
 					isSelected: e.selected === t,
 					onClick: () => e.onClick(t),
 					key: n
 				}))), e.descriptions && r.a.createElement(_e, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
-				ye = e => {
+				Oe = e => {
 					var {
 						disabled: t,
 						last: n,
@@ -499,7 +499,7 @@
 						last: n,
 						indent: !0,
 						disabled: t
-					}, r.a.createElement(y, {
+					}, r.a.createElement(O, {
 						className: "redditStyle",
 						disabled: t || o.inputDisabled,
 						onChange: l,
@@ -899,7 +899,7 @@
 			const w = Object(u.c)({
 				activeModalId: x.a
 			});
-			class O extends c.a.Component {
+			class y extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -954,9 +954,9 @@
 					}, r || e))
 				}
 			}
-			const y = Object(d.b)(w, e => ({
+			const O = Object(d.b)(w, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(O),
+				}))(y),
 				k = e => {
 					const {
 						className: t,
@@ -967,7 +967,7 @@
 					} = e, o = s.length ? s : r ? [r] : [];
 					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(y, {
+					}, o.map((e, t) => c.a.createElement(O, {
 						className: n,
 						errorModalTitle: a,
 						key: t
@@ -979,7 +979,7 @@
 					}),
 					messages: e
 				});
-			t.b = y
+			t.b = O
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1300,4 +1300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.6367da52a7e4d2c55911.js.map
+//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.7b8d0dd941dbac7441dc.js.map

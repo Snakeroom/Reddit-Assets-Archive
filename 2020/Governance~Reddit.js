@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ce26ae38af442afc0262.js
-// Retrieved at 6/22/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.13d09c871b664ce54ce7.js
+// Retrieved at 6/22/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -50755,7 +50755,7 @@
 					notificationPrefs: dC,
 					ownedBadges: lC,
 					powerups: gC,
-					prefs: _C.b,
+					prefs: _C.c,
 					reddaid: hC,
 					session: jC,
 					sessionRefreshFailed: EC,
@@ -51774,62 +51774,67 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
+			})), n.d(t, "b", (function() {
+				return r
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s, r = n("./node_modules/lodash/isEqual.js"),
-				o = n.n(r),
-				a = n("./node_modules/lodash/merge.js"),
-				c = n.n(a),
-				i = n("./node_modules/lodash/pick.js"),
-				d = n.n(i),
-				u = n("./src/lib/constants/index.ts"),
-				l = n("./src/reddit/actions/comment/index.ts"),
-				b = n("./src/reddit/actions/contentGate.ts"),
-				p = n("./src/reddit/actions/frontpage.ts"),
-				f = n("./src/reddit/actions/header.ts"),
-				O = n("./src/reddit/actions/modQueue/constants.ts"),
-				m = n("./src/reddit/actions/page.ts"),
-				g = n("./src/reddit/actions/pages/collectionCommentsPage.ts"),
-				_ = n("./src/reddit/actions/pages/modListing/constants.ts"),
-				h = n("./src/reddit/actions/pages/postCreation.ts"),
-				y = n("./src/reddit/actions/pages/postDraft.ts"),
-				j = n("./src/reddit/actions/pages/profileComments.ts"),
-				E = n("./src/reddit/actions/pages/profileOverview.ts"),
-				I = n("./src/reddit/actions/pages/profilePosts.ts"),
-				v = n("./src/reddit/actions/pages/search.ts"),
-				S = n("./src/reddit/actions/pages/subreddit.ts"),
-				T = n("./src/reddit/actions/pages/topic.ts"),
-				w = n("./src/reddit/actions/postCreation/constants.ts"),
-				A = n("./src/reddit/actions/postDraft.ts"),
-				D = n("./src/reddit/actions/preferences.ts"),
-				C = n("./src/reddit/actions/redditEmbed.ts"),
-				R = n("./src/reddit/actions/search.ts"),
-				P = n("./src/reddit/actions/structuredStyles/constants.ts"),
-				k = n("./src/reddit/actions/subreddit.ts"),
-				x = n("./src/reddit/actions/users.ts"),
-				N = n("./src/reddit/constants/postLayout.ts"),
-				L = n("./src/reddit/constants/preferences.ts"),
-				U = n("./src/reddit/constants/theme.ts"),
-				M = n("./src/reddit/models/PostCreationForm/index.ts"),
-				F = n("./src/reddit/models/PostDraft/index.ts"),
-				G = n("./src/reddit/models/User/index.ts");
+			var s, r, o = n("./node_modules/lodash/isEqual.js"),
+				a = n.n(o),
+				c = n("./node_modules/lodash/merge.js"),
+				i = n.n(c),
+				d = n("./node_modules/lodash/pick.js"),
+				u = n.n(d),
+				l = n("./src/lib/constants/index.ts"),
+				b = n("./src/reddit/actions/comment/index.ts"),
+				p = n("./src/reddit/actions/contentGate.ts"),
+				f = n("./src/reddit/actions/frontpage.ts"),
+				O = n("./src/reddit/actions/header.ts"),
+				m = n("./src/reddit/actions/modQueue/constants.ts"),
+				g = n("./src/reddit/actions/page.ts"),
+				_ = n("./src/reddit/actions/pages/collectionCommentsPage.ts"),
+				h = n("./src/reddit/actions/pages/modListing/constants.ts"),
+				y = n("./src/reddit/actions/pages/postCreation.ts"),
+				j = n("./src/reddit/actions/pages/postDraft.ts"),
+				E = n("./src/reddit/actions/pages/profileComments.ts"),
+				I = n("./src/reddit/actions/pages/profileOverview.ts"),
+				v = n("./src/reddit/actions/pages/profilePosts.ts"),
+				S = n("./src/reddit/actions/pages/search.ts"),
+				T = n("./src/reddit/actions/pages/subreddit.ts"),
+				w = n("./src/reddit/actions/pages/topic.ts"),
+				A = n("./src/reddit/actions/postCreation/constants.ts"),
+				D = n("./src/reddit/actions/postDraft.ts"),
+				C = n("./src/reddit/actions/preferences.ts"),
+				R = n("./src/reddit/actions/redditEmbed.ts"),
+				P = n("./src/reddit/actions/search.ts"),
+				k = n("./src/reddit/actions/structuredStyles/constants.ts"),
+				x = n("./src/reddit/actions/subreddit.ts"),
+				N = n("./src/reddit/actions/users.ts"),
+				L = n("./src/reddit/constants/postLayout.ts"),
+				U = n("./src/reddit/constants/preferences.ts"),
+				M = n("./src/reddit/constants/theme.ts"),
+				F = n("./src/reddit/models/PostCreationForm/index.ts"),
+				G = n("./src/reddit/models/PostDraft/index.ts"),
+				B = n("./src/reddit/models/User/index.ts");
 			! function(e) {
 				e.Whitelisted = "whitelisted", e.Everyone = "everyone"
-			}(s || (s = {}));
-			const B = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", ...L.a, "loginOtpEnabled"],
-				q = {
+			}(s || (s = {})),
+			function(e) {
+				e.Whitelisted = "nobody", e.Everyone = "everyone"
+			}(r || (r = {}));
+			const q = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", ...U.a, "loginOtpEnabled"],
+				V = {
 					acceptPrivateMessages: void 0,
 					activityRelevantAds: !0,
 					allowClickTracking: !1,
 					autoplayVideo: !0,
-					collapsedTraySections: G.a,
-					commentMode: M.h.RICH_TEXT,
-					layout: N.d.Card,
+					collapsedTraySections: B.a,
+					commentMode: F.h.RICH_TEXT,
+					layout: L.d.Card,
 					rememberCommunityLayout: !1,
-					defaultCommentSort: u.r.CONFIDENCE,
-					editorMode: M.h.RICH_TEXT,
+					defaultCommentSort: l.r.CONFIDENCE,
+					editorMode: F.h.RICH_TEXT,
 					geopopular: void 0,
-					globalTheme: U.a,
+					globalTheme: M.a,
 					hamburgerTray: void 0,
 					hasSeenCustomizeFlyout: !0,
 					hideNSFW: !0,
@@ -51846,7 +51851,7 @@
 					showActiveCommunities: !0,
 					showRpanDu: !0,
 					showTwitter: !1,
-					sort: u.Q.Hot,
+					sort: l.Q.Hot,
 					stylesEnabled: !0,
 					subreddit: {},
 					subscriptionsPinned: void 0,
@@ -51860,41 +51865,41 @@
 					rememberCommunitySort: !1,
 					useMarkdown: !1
 				},
-				V = {
+				H = {
 					rpanDuDismissalTime: 0,
 					isContributorRequestTimestamp: 0,
 					stylesEnabled: !0,
 					layout: void 0,
 					sort: void 0
 				},
-				H = (e, t) => {
+				K = (e, t) => {
 					if (!t) return e;
-					const n = d()(Object.assign({}, t.account, t), B),
+					const n = u()(Object.assign({}, t.account, t), q),
 						s = t.subreddit,
 						r = Object.assign({}, e.subreddit);
 					Object.keys(s || {}).forEach(e => {
-						r[e] = Object.assign({}, V, s && s[e])
+						r[e] = Object.assign({}, H, s && s[e])
 					});
-					const a = Object.assign({}, e, n, {
+					const o = Object.assign({}, e, n, {
 						subreddit: r
 					});
-					if (a.useMarkdown !== e.useMarkdown) {
-						const e = a.useMarkdown ? M.h.MARKDOWN : M.h.RICH_TEXT;
-						a.editorMode = e, a.commentMode = e
+					if (o.useMarkdown !== e.useMarkdown) {
+						const e = o.useMarkdown ? F.h.MARKDOWN : F.h.RICH_TEXT;
+						o.editorMode = e, o.commentMode = e
 					}
-					return o()(a, e) ? e : a
+					return a()(o, e) ? e : o
 				},
-				K = (e, t, n) => H(e, {
+				W = (e, t, n) => K(e, {
 					subreddit: {
-						[t]: Object.assign({}, V, e.subreddit[t], n)
+						[t]: Object.assign({}, H, e.subreddit[t], n)
 					}
 				});
-			t.b = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
+			t.c = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case l.l:
-					case l.s: {
+					case b.l:
+					case b.s: {
 						const {
 							editorMode: n
 						} = t.payload;
@@ -51902,8 +51907,8 @@
 							commentMode: n
 						})
 					}
-					case w.t:
-					case w.P: {
+					case A.t:
+					case A.P: {
 						const {
 							editorMode: n
 						} = t.payload;
@@ -51911,23 +51916,23 @@
 							editorMode: n
 						})
 					}
-					case f.d:
+					case O.d:
 						return Object.assign({}, e, {
 							subscriptionsPinned: !0
 						});
-					case f.e:
+					case O.e:
 						return Object.assign({}, e, {
 							subscriptionsPinned: !1
 						});
-					case A.g: {
+					case D.g: {
 						const {
 							kind: n
 						} = t.payload;
 						return Object.assign({}, e, {
-							editorMode: n === F.b.Markdown ? M.h.MARKDOWN : M.h.RICH_TEXT
+							editorMode: n === G.b.Markdown ? F.h.MARKDOWN : F.h.RICH_TEXT
 						})
 					}
-					case D.h: {
+					case C.h: {
 						const {
 							layout: n
 						} = t.payload;
@@ -51935,40 +51940,40 @@
 							layout: n
 						})
 					}
-					case D.o:
+					case C.o:
 						return void 0 !== t.payload ? Object.assign({}, e, {
 							rpanDuDismissalTime: t.payload
 						}) : e;
-					case D.p: {
+					case C.p: {
 						const {
 							layout: n,
 							subredditId: s
 						} = t.payload;
-						return K(e, s, {
+						return W(e, s, {
 							layout: n
 						})
 					}
-					case D.e:
+					case C.e:
 						return Object.assign({}, e, {
 							hasSeenCustomizeFlyout: !0
 						});
-					case D.m:
+					case C.m:
 						return e.profileLayout === t.payload.profileLayout ? e : Object.assign({}, e, {
 							profileLayout: t.payload.profileLayout
 						});
-					case b.g:
+					case p.g:
 						return Object.assign({}, e, {
 							over18: !0
 						});
-					case D.b:
+					case C.b:
 						return void 0 !== t.payload ? Object.assign({}, e, {
 							autoplayVideo: t.payload.autoplayVideo
 						}) : e;
-					case D.i:
+					case C.i:
 						return void 0 !== t.payload ? Object.assign({}, e, {
 							nightmode: t.payload.nightmode
 						}) : e;
-					case D.r:
+					case C.r:
 						if (void 0 !== t.payload) {
 							const {
 								topContentDismissalTime: n,
@@ -51980,71 +51985,71 @@
 							})
 						}
 						return e;
-					case P.d:
+					case k.d:
 						return t.payload.isNightmodeOn ? Object.assign({}, e, {
 							nightmode: !1,
 							nightmodeTempUpdated: !0
 						}) : e;
-					case P.e:
+					case k.e:
 						return t.payload.nightmodeTempUpdated ? Object.assign({}, e, {
 							nightmode: !0,
 							nightmodeTempUpdated: !1
 						}) : e;
-					case D.f:
+					case C.f:
 						return void 0 !== t.payload ? Object.assign({}, e, {
 							hamburgerTray: t.payload.set
 						}) : Object.assign({}, e, {
 							hamburgerTray: !e.hamburgerTray
 						});
-					case D.c:
+					case C.c:
 						return void 0 !== t.payload ? Object.assign({}, e, {
-							collapsedTraySections: c()({}, e.collapsedTraySections, t.payload)
+							collapsedTraySections: i()({}, e.collapsedTraySections, t.payload)
 						}) : e;
-					case b.a:
-					case b.b:
-					case b.h:
-					case b.i:
-					case b.f:
-					case b.j:
-					case _.e:
-					case _.h:
-					case g.a:
-					case m.a:
-					case g.b:
-					case m.b:
-					case g.d:
-					case m.d:
-					case m.g:
-					case S.c:
-					case m.k:
-					case m.j:
-					case j.e:
-					case E.e:
-					case E.b:
-					case I.e:
+					case p.a:
 					case p.b:
-					case k.i:
-					case R.c:
-					case C.b:
-					case h.b:
-					case y.a:
-					case D.j:
-					case v.c:
-					case D.a:
-					case x.c:
-					case T.e:
-						return t.payload && t.payload.preferences ? H(e, t.payload.preferences) : e;
-					case D.q: {
+					case p.h:
+					case p.i:
+					case p.f:
+					case p.j:
+					case h.e:
+					case h.h:
+					case _.a:
+					case g.a:
+					case _.b:
+					case g.b:
+					case _.d:
+					case g.d:
+					case g.g:
+					case T.c:
+					case g.k:
+					case g.j:
+					case E.e:
+					case I.e:
+					case I.b:
+					case v.e:
+					case f.b:
+					case x.i:
+					case P.c:
+					case R.b:
+					case y.b:
+					case j.a:
+					case C.j:
+					case S.c:
+					case C.a:
+					case N.c:
+					case w.e:
+						return t.payload && t.payload.preferences ? K(e, t.payload.preferences) : e;
+					case C.q: {
 						const {
 							subredditId: n,
 							prefs: s
 						} = t.payload;
-						return K(e, n, s)
+						return W(e, n, s)
 					}
-					case j.d:
 					case E.d:
-					case E.a:
 					case I.d:
+					case I.a:
+					case v.d:
 						if (t.payload && t.payload.account) {
 							const {
 								nightmode: n
@@ -52054,19 +52059,19 @@
 							})
 						}
 						return e;
-					case O.h:
-					case O.j:
-					case O.i:
-					case O.g:
-					case O.f:
-					case O.n:
-					case O.m:
-					case O.p:
-					case O.q:
-					case O.w:
-					case O.v:
-						return t.payload && t.payload.response && t.payload.response.preferences ? H(e, t.payload.preferences) : e;
-					case D.n: {
+					case m.h:
+					case m.j:
+					case m.i:
+					case m.g:
+					case m.f:
+					case m.n:
+					case m.m:
+					case m.p:
+					case m.q:
+					case m.w:
+					case m.v:
+						return t.payload && t.payload.response && t.payload.response.preferences ? K(e, t.payload.preferences) : e;
+					case C.n: {
 						const n = t.payload,
 							{
 								showActiveCommunities: s
@@ -54488,4 +54493,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.ce26ae38af442afc0262.js.map
+//# sourceMappingURL=Governance~Reddit.13d09c871b664ce54ce7.js.map
