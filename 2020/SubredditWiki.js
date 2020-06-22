@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.dfd3893265d7de7a1911.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.9061c456b825941ac7d4.js
+// Retrieved at 6/22/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -6423,4 +6423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.dfd3893265d7de7a1911.js.map
+//# sourceMappingURL=SubredditWiki.9061c456b825941ac7d4.js.map

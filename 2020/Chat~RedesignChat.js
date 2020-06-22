@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.be8cb1d25f111799b2a0.js
-// Retrieved at 6/22/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9dba1b07ffa94a905e66.js
+// Retrieved at 6/22/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9063,6 +9063,7 @@
 		},
 		"./src/chat/customMiddleware/iframeDispatcher.ts": function(e, t, n) {
 			"use strict";
+			n("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var a, s = n("./node_modules/lodash/once.js"),
 				c = n.n(s),
 				r = n("./node_modules/react-router-redux/es/index.js"),
@@ -9092,8 +9093,8 @@
 					})(t);
 					if (n) switch (n.type) {
 						case a.Navigate: {
-							const t = Object(o.parse)(n.data.href).pathname || f.rootUrl;
-							e.dispatch(Object(r.b)(t)), e.dispatch(Object(u.sizeChanged)(b.a.EMBED));
+							let t = Object(o.parse)(n.data.href).pathname || f.rootUrl;
+							t = t.replace(/sendbird_group_channel_/, ""), e.dispatch(Object(r.b)(t)), e.dispatch(Object(u.sizeChanged)(b.a.EMBED));
 							break
 						}
 						case a.Websocket:
@@ -14074,4 +14075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.be8cb1d25f111799b2a0.js.map
+//# sourceMappingURL=Chat~RedesignChat.9dba1b07ffa94a905e66.js.map
