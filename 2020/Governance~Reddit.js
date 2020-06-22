@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.de8e20e6c8993c96d0dd.js
-// Retrieved at 6/22/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3fa01b1cec6af80cb192.js
+// Retrieved at 6/22/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -23946,21 +23946,21 @@
 		"./src/reddit/endpoints/user/preferences.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return b
-			})), n.d(t, "c", (function() {
 				return p
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "c", (function() {
 				return f
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return O
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return m
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "g", (function() {
 				return g
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return _
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "b", (function() {
 				return h
+			})), n.d(t, "h", (function() {
+				return y
 			}));
 			var s = n("./src/config.ts"),
 				r = n("./src/lib/constants/index.ts"),
@@ -24015,26 +24015,27 @@
 				surveyLastSeenTime: "survey_last_seen_time"
 			};
 			var i = e => {
-				const t = {};
-				return Object.keys(e).map(n => {
-					c.hasOwnProperty(n) && (t[c[n]] = e[n])
-				}), t
-			};
-			const d = {
+					const t = {};
+					return Object.keys(e).map(n => {
+						c.hasOwnProperty(n) && (t[c[n]] = e[n])
+					}), t
+				},
+				d = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const u = {
 				rpanDuDismissalTime: "rpan_du_dismissal_time",
 				isContributorRequestTimestamp: "is_contributor_request_timestamp",
 				sort: "sort",
 				stylesEnabled: "styles_enabled",
 				layout: "layout"
 			};
-			var u = e => {
+			var l = e => {
 					const t = {};
 					return Object.keys(e).map(n => {
-						t[d[n]] = e[n]
+						t[u[n]] = e[n]
 					}), t
 				},
-				l = n("./src/reddit/constants/headers.ts");
-			const b = e => Object(o.a)(Object(a.a)(e, [l.a]), {
+				b = n("./src/reddit/constants/headers.ts");
+			const p = e => Object(o.a)(Object(a.a)(e, [b.a]), {
 					method: r.cb.PATCH,
 					endpoint: "".concat(e.apiUrl, "/api/v1/me/prefs"),
 					type: "json",
@@ -24042,7 +24043,7 @@
 						over_18: "true"
 					}
 				}),
-				p = (e, t) => Object(o.a)(Object(a.a)(t, [l.a]), {
+				f = (e, t) => Object(o.a)(Object(a.a)(t, [b.a]), {
 					method: r.cb.PATCH,
 					endpoint: "".concat(t.apiUrl, "/api/v1/me/prefs"),
 					type: "json",
@@ -24050,7 +24051,7 @@
 						video_autoplay: e
 					}
 				}),
-				f = (e, t) => Object(o.a)(Object(a.a)(t, [l.a]), {
+				O = (e, t) => Object(o.a)(Object(a.a)(t, [b.a]), {
 					method: r.cb.PATCH,
 					endpoint: "".concat(t.apiUrl, "/api/v1/me/prefs"),
 					type: "json",
@@ -24058,7 +24059,7 @@
 						nightmode: e
 					}
 				}),
-				O = (e, t) => Object(o.a)(Object(a.a)(t, [l.a]), {
+				m = (e, t) => Object(o.a)(Object(a.a)(t, [b.a]), {
 					method: r.cb.PATCH,
 					endpoint: "".concat(t.apiUrl, "/api/v1/me/prefs"),
 					type: "json",
@@ -24066,13 +24067,13 @@
 						geopopular: e
 					}
 				}),
-				m = (e, t) => Object(o.a)(Object(a.a)(t, [l.a]), {
+				g = (e, t) => Object(o.a)(Object(a.a)(t, [b.a]), {
 					method: r.cb.PATCH,
 					endpoint: "".concat(t.apiUrl, "/api/v1/me/prefs"),
 					type: "json",
 					data: i(e)
 				}),
-				g = (e, t) => Object(o.a)(Object(a.a)(t, [l.a]), {
+				_ = (e, t) => Object(o.a)(Object(a.a)(t, [b.a]), {
 					method: r.cb.POST,
 					endpoint: "".concat(t.apiUrl, "/api/quarantine_optin"),
 					data: {
@@ -24081,23 +24082,23 @@
 						accept: !0
 					}
 				}),
-				_ = (e, t) => Object(o.a)(t, {
+				h = (e, t) => Object(o.a)(t, {
 					method: r.cb.POST,
-					endpoint: "".concat(s.a.gatewayUrl, "/desktopapi/v1/set_preferences"),
+					endpoint: Object(d.a)("".concat(s.a.gatewayUrl, "/desktopapi/v1/set_preferences")),
 					type: "json",
 					data: {
 						type: "account",
 						preferences: i(e)
 					}
 				}),
-				h = (e, t, n) => Object(o.a)(n, {
+				y = (e, t, n) => Object(o.a)(n, {
 					method: r.cb.POST,
 					endpoint: "".concat(s.a.gatewayUrl, "/desktopapi/v1/set_preferences"),
 					type: "json",
 					data: {
 						type: "subreddit",
 						subreddit_id: e,
-						preferences: u(t)
+						preferences: l(t)
 					}
 				})
 		},
@@ -54498,4 +54499,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.de8e20e6c8993c96d0dd.js.map
+//# sourceMappingURL=Governance~Reddit.3fa01b1cec6af80cb192.js.map
