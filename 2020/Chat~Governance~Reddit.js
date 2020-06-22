@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c8a593943bc2af70e880.js
-// Retrieved at 6/22/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.836ca76e804fa2df2a3d.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3278,14 +3278,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("58f9f7b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("4243179-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "58f9f7b-production",
+						release: "4243179-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3647,7 +3647,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "58f9f7b-production",
+							releaseClient: "4243179-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -8217,7 +8217,11 @@
 			}(n || (n = {}));
 			const o = {},
 				d = e => o[e],
-				l = e => o[e] = s()(),
+				l = function(e) {
+					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+					const i = t || !o[e] ? s()() : o[e];
+					return o[e] = i, i
+				},
 				a = e => o[e] = void 0
 		},
 		"./src/reddit/helpers/dom/index.ts": function(e, t, i) {
@@ -21724,4 +21728,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.c8a593943bc2af70e880.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.836ca76e804fa2df2a3d.js.map

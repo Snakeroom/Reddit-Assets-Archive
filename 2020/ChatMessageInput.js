@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.1aa79357970523e056a3.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.7f64d8b0343e02cbee03.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -628,7 +628,8 @@
 								editorMode: i
 							})) : await e(Object(b.lb)(o, a, r, t, i, !0, c)), d && d()
 						},
-						handleGiveAward: () => e(Object(_.d)({
+						handleGiveAward: t => e(Object(_.d)({
+							correlationId: t,
 							thingId: o
 						})),
 						onCancelEdit: () => n && e(Object(b.U)({
@@ -664,7 +665,7 @@
 							postId: n,
 							sendEvent: a
 						} = this.props;
-						Object(O.d)(O.a.GildingFlow), e();
+						e(Object(O.d)(O.a.GildingFlow, !0));
 						const {
 							clickGildEvent: r,
 							clickRpanGiveAward: o
@@ -1752,4 +1753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.1aa79357970523e056a3.js.map
+//# sourceMappingURL=ChatMessageInput.7f64d8b0343e02cbee03.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.dba0c2f4814b97d0c56b.js
-// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.1f606ba642e79aeba50d.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -1734,11 +1734,12 @@
 					}, this.handleEdit = () => this.props.handleEdit(this.props.comment.permalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
-						Object(H.d)(H.a.GildingFlow), this.props.onGildClick();
+						const e = Object(H.d)(H.a.GildingFlow, !0);
+						this.props.onGildClick(e);
 						const {
-							clickGildEvent: e
+							clickGildEvent: t
 						} = await Promise.resolve().then(n.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						this.props.sendEvent(e(this.props.comment.id))
+						this.props.sendEvent(t(this.props.comment.id))
 					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(ne.a)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(ne.a)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.comment.permalink), this.handleRestrictedButtonClick = () => {
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
@@ -1902,7 +1903,8 @@
 						deleteComment: () => s && e(Object(k.db)(n.id, n.postId)),
 						onDistinguishComment: (t, s) => e(Object(k.S)(n.id, t, s)),
 						onIgnoreReports: () => e(Object(k.pb)(n.id)),
-						onGildClick: () => e(Object(j.d)({
+						onGildClick: t => e(Object(j.d)({
+							correlationId: t,
 							thingId: n.id
 						})),
 						onReportClick: () => e(Object(S.j)(n.id)),
@@ -1958,7 +1960,7 @@
 							commentId: n
 						} = t;
 						const s = Object(Be.b)(n);
-						return Object(We.c)(e, s)
+						return Object(We.d)(e, s)
 					},
 					flair: K.e
 				})),
@@ -5413,7 +5415,7 @@
 							post: s
 						} = t;
 						const o = Object(i.b)(s.postId, n);
-						return Object(m.c)(e, o)
+						return Object(m.d)(e, o)
 					},
 					playing: (e, t) => {
 						let {
@@ -9898,4 +9900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.dba0c2f4814b97d0c56b.js.map
+//# sourceMappingURL=ProfileComments.1f606ba642e79aeba50d.js.map

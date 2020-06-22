@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1db1ae38c426893f950c.js
-// Retrieved at 6/15/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5642dacd8bd8ce2aa917.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -236,7 +236,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						Object(F.d)(F.a.GiftPremiumFlow), e();
+						e(Object(F.d)(F.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await s.e("givePremiumTrackers").then(s.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -382,7 +382,10 @@
 						addToMultiClicked: () => {
 							e(Object(O.g)(!0, !0)), e(Object(E.h)(S.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
-						onClickGivePremium: () => e(Object(_.e)(s)),
+						onClickGivePremium: t => e(Object(_.e)({
+							correlationId: t,
+							profileName: s
+						})),
 						onModeratorsRequested: () => e(Object(y.b)(s))
 					}
 				})(V),
@@ -759,4 +762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.1db1ae38c426893f950c.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.5642dacd8bd8ce2aa917.js.map

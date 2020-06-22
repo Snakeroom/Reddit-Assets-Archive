@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.0d23243dd144ad1a09b8.js
-// Retrieved at 6/17/2020, 8:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.966672aabb89eee0d580.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -628,9 +628,9 @@
 					}
 				}),
 				Y = Object(r.b)(L, (e, t) => ({
-					closeModal: () => e(Object(p.d)()),
-					onCloseModalClick: () => e(Object(p.d)()),
-					onCompletePurchaseClick: t => e(Object(p.g)(t)),
+					closeModal: () => e(Object(p.b)()),
+					onCloseModalClick: () => e(Object(p.b)()),
+					onCompletePurchaseClick: t => e(Object(p.e)(t)),
 					onPaymentSelected: t => e(Object(m.selectPaymentMethod)(t))
 				}));
 			class H extends s.a.Component {
@@ -643,14 +643,14 @@
 					}
 				}
 				componentWillUnmount() {
-					Object(y.b)(y.a.GoldPayment), document.removeEventListener("keydown", this.handleEscapeKey)
+					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
 					const {
 						sendEvent: e
 					} = this.props;
-					Object(y.d)(y.a.GoldPayment), e(Object(g.h)())
+					Object(y.d)(y.a.GoldPayment, !1), e(Object(g.h)())
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -774,7 +774,7 @@
 					const {
 						thingId: a,
 						packageId: c
-					} = t, i = s.a(e), h = i ? Object(m.getAwardTypeFromAward)(i) : null, y = a ? h : o.n(e) ? d.Premium : d.Coins, g = a ? Object(u.a)(a) ? "comment" : "post" : void 0, b = c || o.q(e), C = [...Object(r.b)(e), ...Object(r.d)(e)].filter(e => e.mobileId === b)[0], P = C && C.dealInfo && C.dealInfo.type, E = "low_coin_upsell" === P;
+					} = t, i = s.a(e), h = i ? Object(m.getAwardTypeFromAward)(i) : null, y = a ? h : o.n(e) ? d.Premium : d.Coins, g = a ? Object(u.a)(a) ? "comment" : "post" : void 0, b = c || o.r(e), C = [...Object(r.b)(e), ...Object(r.d)(e)].filter(e => e.mobileId === b)[0], P = C && C.dealInfo && C.dealInfo.type, E = "low_coin_upsell" === P;
 					let _;
 					E && (_ = "low_coin_balance"), "new_purchaser" === P && (_ = "new_user_targeted_offer"), "repeat_purchaser" === P && (_ = "repeat_user_targeted_offer");
 					const f = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0,
@@ -782,7 +782,7 @@
 						k = C ? C.baselinePennies !== C.pennies ? "".concat(f, "_percent_price") : C.baselineCoins !== C.coins ? "".concat(v, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, l.defaults(e), {
 						comment: a ? l.comment(e, a) : null,
-						correlationId: Object(p.c)(p.a.GoldPayment),
+						correlationId: o.p(e) || Object(p.d)(p.a.GoldPayment, !1),
 						post: a ? l.post(e, a) : null,
 						screen: l.screen(e),
 						subreddit: a ? l.subreddit(e) : null,
@@ -886,4 +886,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.0d23243dd144ad1a09b8.js.map
+//# sourceMappingURL=PremiumPurchaseModal.966672aabb89eee0d580.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.d3015522e12251a7258a.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.8385be94f78bc2704f14.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -124,8 +124,8 @@
 						return p.c.captureException(x), void(x.message && o(Object(h.stripeApiError)(x.message)))
 					}
 					o(Object(h.stripeTokenPending)());
-					const j = Object(b.v)(m);
-					if (j || (g = await o(Object(h.validateAndCreateStripeToken)(e)), y = Object(b.s)(m), g)) try {
+					const j = Object(b.w)(m);
+					if (j || (g = await o(Object(h.validateAndCreateStripeToken)(e)), y = Object(b.t)(m), g)) try {
 						const e = c()(),
 							t = j || y ? g && y ? ((e, t, a, r) => Object(k.a)(e, Object.assign({}, O, {
 								variables: {
@@ -724,9 +724,9 @@
 				v = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				E = a("./src/reddit/selectors/goldPurchaseModals.ts");
 			const P = Object(o.c)({
-					rememberCard: E.s,
-					savedCard: e => Object(E.u)(e)[0],
-					stripeInfoLoading: E.t
+					rememberCard: E.t,
+					savedCard: e => Object(E.v)(e)[0],
+					stripeInfoLoading: E.u
 				}),
 				_ = Object(s.b)(P, (e, t) => ({
 					onClickDeleteCard: a => t.shouldDeleteCardWithGql ? e(Object(x.b)(a)) : e(Object(O.deleteSavedCard)(a)),
@@ -796,7 +796,7 @@
 					const {
 						thingId: a,
 						packageId: c
-					} = t, l = n.a(e), g = l ? Object(m.getAwardTypeFromAward)(l) : null, h = a ? g : o.n(e) ? i.Premium : i.Coins, b = a ? Object(u.a)(a) ? "comment" : "post" : void 0, C = c || o.q(e), y = [...Object(s.b)(e), ...Object(s.d)(e)].filter(e => e.mobileId === C)[0], f = y && y.dealInfo && y.dealInfo.type, j = "low_coin_upsell" === f;
+					} = t, l = n.a(e), g = l ? Object(m.getAwardTypeFromAward)(l) : null, h = a ? g : o.n(e) ? i.Premium : i.Coins, b = a ? Object(u.a)(a) ? "comment" : "post" : void 0, C = c || o.r(e), y = [...Object(s.b)(e), ...Object(s.d)(e)].filter(e => e.mobileId === C)[0], f = y && y.dealInfo && y.dealInfo.type, j = "low_coin_upsell" === f;
 					let x;
 					j && (x = "low_coin_balance"), "new_purchaser" === f && (x = "new_user_targeted_offer"), "repeat_purchaser" === f && (x = "repeat_user_targeted_offer");
 					const O = y ? Math.round(1e4 * (y.baselinePennies - y.pennies) / y.baselinePennies) / 100 : 0,
@@ -804,7 +804,7 @@
 						E = y ? y.baselinePennies !== y.pennies ? "".concat(O, "_percent_price") : y.baselineCoins !== y.coins ? "".concat(v, "_percent_bonus") : void 0 : void 0;
 					return Object.assign({}, d.defaults(e), {
 						comment: a ? d.comment(e, a) : null,
-						correlationId: Object(p.c)(p.a.GoldPayment),
+						correlationId: o.p(e) || Object(p.d)(p.a.GoldPayment, !1),
 						post: a ? d.post(e, a) : null,
 						screen: d.screen(e),
 						subreddit: a ? d.subreddit(e) : null,
@@ -935,4 +935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.d3015522e12251a7258a.js.map
+//# sourceMappingURL=CoinsPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.8385be94f78bc2704f14.js.map

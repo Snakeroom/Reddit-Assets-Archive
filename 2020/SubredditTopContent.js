@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.414908ea78c89584ff14.js
-// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.f8d46480ae955114147f.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -261,7 +261,7 @@
 							post: s
 						} = t;
 						const o = Object(c.b)(s.postId, n);
-						return Object(p.c)(e, o)
+						return Object(p.d)(e, o)
 					},
 					playing: (e, t) => {
 						let {
@@ -488,4 +488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.414908ea78c89584ff14.js.map
+//# sourceMappingURL=SubredditTopContent.f8d46480ae955114147f.js.map

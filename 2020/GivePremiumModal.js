@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.6f1576b65be04ecc6ff7.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.77e530939663bddb80db.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				g = n("./src/reddit/actions/toaster.ts"),
-				f = n("./src/lib/makeApiRequest/index.ts"),
-				O = n("./src/lib/omitHeaders/index.ts"),
+				O = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/lib/omitHeaders/index.ts"),
 				k = n("./src/reddit/constants/headers.ts"),
 				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var y = async (e, t, n, s, o, c) => {
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: c
 				};
-				return Object(f.a)(Object(O.a)(e, [k.a]), {
+				return Object(O.a)(Object(f.a)(e, [k.a]), {
 					method: b.cb.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
@@ -388,7 +388,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return O
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/throttle.js"),
@@ -423,7 +423,7 @@
 				}
 				return n
 			};
-			class f extends a.a.Component {
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = o()(() => {
 						const {
@@ -480,7 +480,7 @@
 					[b.a.mIsSelected]: n.isSelected,
 					[b.a.topics]: n.isTopicsStyle
 				});
-				return a.a.createElement(f, x({
+				return a.a.createElement(O, x({
 					className: s
 				}, n))
 			}
@@ -689,65 +689,66 @@
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "clickGivePremiumEvent", (function() {
-				return a
-			})), n.d(t, "viewGivePremiumModalEvent", (function() {
 				return i
-			})), n.d(t, "selectPremiumPackageEvent", (function() {
+			})), n.d(t, "viewGivePremiumModalEvent", (function() {
 				return r
-			})), n.d(t, "triggerAnonymousEvent", (function() {
+			})), n.d(t, "selectPremiumPackageEvent", (function() {
 				return l
-			})), n.d(t, "clickMessageInputEvent", (function() {
+			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return d
-			})), n.d(t, "typeMessageInputEvent", (function() {
+			})), n.d(t, "clickMessageInputEvent", (function() {
 				return m
-			})), n.d(t, "clickConfirmEvent", (function() {
+			})), n.d(t, "typeMessageInputEvent", (function() {
 				return u
-			})), n.d(t, "clickCloseModalEvent", (function() {
+			})), n.d(t, "clickConfirmEvent", (function() {
 				return p
+			})), n.d(t, "clickCloseModalEvent", (function() {
+				return h
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts"),
-				o = n("./src/reddit/helpers/correlationIdTracker.ts");
-			const c = e => Object.assign({}, s.defaults(e), {
-					correlationId: Object(o.c)(o.a.GiftPremiumFlow),
+				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				c = n("./src/reddit/selectors/gild.ts");
+			const a = e => Object.assign({}, s.defaults(e), {
+					correlationId: Object(c.b)(e) || Object(o.d)(o.a.GiftPremiumFlow, !1),
 					screen: s.screen(e),
 					subreddit: s.subreddit(e)
 				}),
-				a = () => e => Object.assign({}, c(e), {
+				i = () => e => Object.assign({}, a(e), {
 					source: "profile",
 					action: "click",
 					noun: "give_premium"
 				}),
-				i = () => e => Object.assign({}, c(e), {
+				r = () => e => Object.assign({}, a(e), {
 					source: "give_premium",
 					action: "view",
 					noun: "modal"
 				}),
-				r = e => t => Object.assign({}, c(t), {
+				l = e => t => Object.assign({}, a(t), {
 					source: "give_premium",
 					action: "select",
 					noun: "premium_".concat(e.monthsOfPremium)
 				}),
-				l = e => t => Object.assign({}, c(t), {
+				d = e => t => Object.assign({}, a(t), {
 					source: "give_premium",
 					action: e,
 					noun: "anonymous"
 				}),
-				d = () => e => Object.assign({}, c(e), {
+				m = () => e => Object.assign({}, a(e), {
 					source: "give_premium",
 					action: "click",
 					noun: "message_input"
 				}),
-				m = () => e => Object.assign({}, c(e), {
+				u = () => e => Object.assign({}, a(e), {
 					source: "give_premium",
 					action: "type",
 					noun: "message_input"
 				}),
-				u = () => e => Object.assign({}, c(e), {
+				p = () => e => Object.assign({}, a(e), {
 					source: "give_premium",
 					action: "click",
 					noun: "confirm"
 				}),
-				p = () => e => Object.assign({}, c(e), {
+				h = () => e => Object.assign({}, a(e), {
 					source: "give_premium",
 					action: "click",
 					noun: "close"
@@ -795,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.6f1576b65be04ecc6ff7.js.map
+//# sourceMappingURL=GivePremiumModal.77e530939663bddb80db.js.map

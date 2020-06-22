@@ -1,69 +1,70 @@
-// https://www.redditstatic.com/desktop2x/givePremiumTrackers.ca6ee6e2d5bc74565a70.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/givePremiumTrackers.3bbc0ac8cabfdd86cb95.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["givePremiumTrackers"], {
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, n, i) {
 			"use strict";
 			i.r(n), i.d(n, "clickGivePremiumEvent", (function() {
-				return s
-			})), i.d(n, "viewGivePremiumModalEvent", (function() {
 				return u
-			})), i.d(n, "selectPremiumPackageEvent", (function() {
+			})), i.d(n, "viewGivePremiumModalEvent", (function() {
 				return o
-			})), i.d(n, "triggerAnonymousEvent", (function() {
+			})), i.d(n, "selectPremiumPackageEvent", (function() {
 				return m
-			})), i.d(n, "clickMessageInputEvent", (function() {
+			})), i.d(n, "triggerAnonymousEvent", (function() {
 				return a
-			})), i.d(n, "typeMessageInputEvent", (function() {
+			})), i.d(n, "clickMessageInputEvent", (function() {
 				return d
-			})), i.d(n, "clickConfirmEvent", (function() {
+			})), i.d(n, "typeMessageInputEvent", (function() {
 				return g
-			})), i.d(n, "clickCloseModalEvent", (function() {
+			})), i.d(n, "clickConfirmEvent", (function() {
 				return l
+			})), i.d(n, "clickCloseModalEvent", (function() {
+				return v
 			}));
 			var t = i("./src/reddit/selectors/telemetry.ts"),
-				c = i("./src/reddit/helpers/correlationIdTracker.ts");
-			const r = e => Object.assign({}, t.defaults(e), {
-					correlationId: Object(c.c)(c.a.GiftPremiumFlow),
+				r = i("./src/reddit/helpers/correlationIdTracker.ts"),
+				c = i("./src/reddit/selectors/gild.ts");
+			const s = e => Object.assign({}, t.defaults(e), {
+					correlationId: Object(c.b)(e) || Object(r.d)(r.a.GiftPremiumFlow, !1),
 					screen: t.screen(e),
 					subreddit: t.subreddit(e)
 				}),
-				s = () => e => Object.assign({}, r(e), {
+				u = () => e => Object.assign({}, s(e), {
 					source: "profile",
 					action: "click",
 					noun: "give_premium"
 				}),
-				u = () => e => Object.assign({}, r(e), {
+				o = () => e => Object.assign({}, s(e), {
 					source: "give_premium",
 					action: "view",
 					noun: "modal"
 				}),
-				o = e => n => Object.assign({}, r(n), {
+				m = e => n => Object.assign({}, s(n), {
 					source: "give_premium",
 					action: "select",
 					noun: "premium_".concat(e.monthsOfPremium)
 				}),
-				m = e => n => Object.assign({}, r(n), {
+				a = e => n => Object.assign({}, s(n), {
 					source: "give_premium",
 					action: e,
 					noun: "anonymous"
 				}),
-				a = () => e => Object.assign({}, r(e), {
+				d = () => e => Object.assign({}, s(e), {
 					source: "give_premium",
 					action: "click",
 					noun: "message_input"
 				}),
-				d = () => e => Object.assign({}, r(e), {
+				g = () => e => Object.assign({}, s(e), {
 					source: "give_premium",
 					action: "type",
 					noun: "message_input"
 				}),
-				g = () => e => Object.assign({}, r(e), {
+				l = () => e => Object.assign({}, s(e), {
 					source: "give_premium",
 					action: "click",
 					noun: "confirm"
 				}),
-				l = () => e => Object.assign({}, r(e), {
+				v = () => e => Object.assign({}, s(e), {
 					source: "give_premium",
 					action: "click",
 					noun: "close"
@@ -71,4 +72,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=givePremiumTrackers.ca6ee6e2d5bc74565a70.js.map
+//# sourceMappingURL=givePremiumTrackers.3bbc0ac8cabfdd86cb95.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5c169d230f287d75fb16.js
-// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.3c9dd723366dedabd96a.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2230,11 +2230,12 @@
 					}, this.handleEdit = () => this.props.handleEdit(this.props.comment.permalink), this.handleIgnoreReports = () => {
 						this.props.onIgnoreReports(), this.sendCommentReportEvent(this.props.comment.ignoreReports ? "restore_reports" : "ignore_reports")
 					}, this.handleGild = async () => {
-						Object(W.d)(W.a.GildingFlow), this.props.onGildClick();
+						const e = Object(W.d)(W.a.GildingFlow, !0);
+						this.props.onGildClick(e);
 						const {
-							clickGildEvent: e
+							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						this.props.sendEvent(e(this.props.comment.id))
+						this.props.sendEvent(t(this.props.comment.id))
 					}, this.handleModActionsMenu = () => this.props.sendEvent(Object(se.a)("comment_mod_action_menu", this.props.comment.id)), this.handleOverflowMenuClick = () => this.props.sendEvent(Object(se.a)("comment_overflow_menu", this.props.comment.id)), this.handleDelete = () => this.props.handleDelete(), this.handleReply = () => this.props.handleReply(this.props.comment.permalink), this.handleRestrictedButtonClick = () => {
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
@@ -2398,7 +2399,8 @@
 						deleteComment: () => n && e(Object(k.db)(s.id, s.postId)),
 						onDistinguishComment: (t, n) => e(Object(k.S)(s.id, t, n)),
 						onIgnoreReports: () => e(Object(k.pb)(s.id)),
-						onGildClick: () => e(Object(P.d)({
+						onGildClick: t => e(Object(P.d)({
+							correlationId: t,
 							thingId: s.id
 						})),
 						onReportClick: () => e(Object(S.j)(s.id)),
@@ -2454,7 +2456,7 @@
 							commentId: s
 						} = t;
 						const n = Object(Ae.b)(s);
-						return Object(He.c)(e, n)
+						return Object(He.d)(e, n)
 					},
 					flair: K.e
 				})),
@@ -4380,9 +4382,10 @@
 							e(Object(h.a)(n.postId, t))
 						},
 						onFlairPost: () => e(Object(u.i)(Object(R.b)(n.postId, o))),
-						onGildClick: () => e(Object(p.d)({
-							thingId: n.postId,
-							isOverlay: o
+						onGildClick: t => e(Object(p.d)({
+							correlationId: t,
+							isOverlay: o,
+							thingId: n.postId
 						})),
 						onFlairChanged: t => {
 							let {
@@ -4411,7 +4414,7 @@
 							post: t,
 							sendEvent: n
 						} = this.props;
-						Object(q.d)(q.a.GildingFlow), e();
+						e(Object(q.d)(q.a.GildingFlow, !0));
 						const {
 							clickGildEvent: o
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
@@ -7668,7 +7671,7 @@
 							post: n
 						} = t;
 						const o = Object(i.b)(n.postId, s);
-						return Object(m.c)(e, o)
+						return Object(m.d)(e, o)
 					},
 					playing: (e, t) => {
 						let {
@@ -8769,9 +8772,10 @@
 						onCopyLink: () => e(Object(f.F)(s)),
 						onDelete: t => e(Object(f.O)(n, t, o)),
 						onDistinguishPost: t => e(Object(f.x)(n, t)),
-						onGildClick: () => e(Object(b.d)({
-							thingId: n,
-							isOverlay: o
+						onGildClick: t => e(Object(b.d)({
+							correlationId: t,
+							isOverlay: o,
+							thingId: n
 						})),
 						onToggleSave: () => e(Object(f.V)(n)),
 						onToggleNSFW: () => e(Object(f.K)(n)),
@@ -8814,11 +8818,12 @@
 					}, this.handleEdit = () => {
 						this.handlePostEvent("edit"), this.props.onEdit()
 					}, this.handleGild = async () => {
-						Object(Z.d)(Z.a.GildingFlow), this.props.onGildClick();
+						const e = Object(Z.d)(Z.a.GildingFlow, !0);
+						this.props.onGildClick(e);
 						const {
-							clickGildEvent: e
+							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						this.props.sendEvent(e(this.props.postId))
+						this.props.sendEvent(t(this.props.postId))
 					}, this.toggleHide = () => {
 						const e = this.props.isHidden ? "unhide" : "hide";
 						this.handlePostEvent(e), this.props.onHide(this.props.isHidden)
@@ -14984,4 +14989,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.5c169d230f287d75fb16.js.map
+//# sourceMappingURL=ProfileOverview.3c9dd723366dedabd96a.js.map

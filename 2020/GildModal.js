@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GildModal.8ab83ad819a145fd7059.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.13eb74f5b4d07ffbf0b6.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
 		"./src/reddit/components/CoinPurchaseModal/Loader.tsx": function(e, s, o) {
@@ -50,8 +50,8 @@
 				}).apply(this, arguments)
 			}
 			const p = Object(d.c)({
-					showPurchaseModal: i.r,
-					thingId: l.d
+					showPurchaseModal: i.s,
+					thingId: l.e
 				}),
 				C = Object(u.a)(e => {
 					const {
@@ -156,4 +156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GildModal.8ab83ad819a145fd7059.js.map
+//# sourceMappingURL=GildModal.13eb74f5b4d07ffbf0b6.js.map

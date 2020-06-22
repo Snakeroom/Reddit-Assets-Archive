@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.41976a2ba60ff5b2ff8c.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.71510f1f8fc4fb0bd5c9.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -116,7 +116,7 @@
 				w = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				_ = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const f = Object(k.c)({
-				isGild: e => !!Object(x.p)(e)
+				isGild: e => !!Object(x.q)(e)
 			});
 			class N extends r.a.Component {
 				constructor() {
@@ -157,17 +157,17 @@
 					}))
 				}
 			}
-			const j = Object(y.b)(f, (e, a) => ({
-				createPayment: () => "coinPackage" in a ? e(Object(w.i)(a.coinPackage)) : "awardId" in a ? e(Object(_.g)(a.awardId, a.pennies, a.thingId)) : void 0,
+			const M = Object(y.b)(f, (e, a) => ({
+				createPayment: () => "coinPackage" in a ? e(Object(w.e)(a.coinPackage)) : "awardId" in a ? e(Object(_.d)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, s) => {
 					if ("coinPackage" in a) {
-						if (t) return void e(Object(w.k)(s, a.coinPackage));
-						e(Object(w.j)(s, a.coinPackage))
-					} else "awardId" in a && e(Object(_.f)(s))
+						if (t) return void e(Object(w.g)(s, a.coinPackage));
+						e(Object(w.f)(s, a.coinPackage))
+					} else "awardId" in a && e(Object(_.c)(s))
 				}
 			}))(N);
-			var M = Object(v.a)({
-					getComponent: () => Object(E.c)().then(() => j),
+			var j = Object(v.a)({
+					getComponent: () => Object(E.c)().then(() => M),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -204,12 +204,12 @@
 					}, r.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: a
-					}), o === d.wb ? e && e.pennyPrice && t ? r.a.createElement(M, {
+					}), o === d.wb ? e && e.pennyPrice && t ? r.a.createElement(j, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
 						thingId: t
-					}) : s && r.a.createElement(M, {
+					}) : s && r.a.createElement(j, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: s
 					}) : null, o === d.vb && r.a.createElement(g.f, {
@@ -446,17 +446,17 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = Object(o.c)({
+			const M = Object(o.c)({
 					activePage: k.o,
 					allowNavigationCallback: e => {
 						const a = Object(v.a)(e);
 						return null === a ? void 0 : a
 					},
 					coinBalance: E.d,
-					gildThingId: k.p,
-					isIframed: b.h,
+					gildThingId: k.q,
+					isIframed: b.i,
 					nightmode: E.S,
-					savedCardsPending: k.t,
+					savedCardsPending: k.u,
 					selectedAward: y.a,
 					selectedPayment: k.b,
 					stripeErrorMessage: k.i,
@@ -467,14 +467,14 @@
 						return "u/".concat(Object(C.e)(a))
 					}
 				}),
-				M = Object(r.b)(j, (e, a) => ({
+				j = Object(r.b)(M, (e, a) => ({
 					closeModal: () => {
-						e(Object(p.d)()), e(Object(l.a)())
+						e(Object(p.a)()), e(Object(l.a)())
 					},
 					loadSavedCards: () => e(Object(m.loadSavedCards)()),
 					onPaymentSelected: a => e(Object(m.selectPaymentMethod)(a)),
 					dispatchCompletePurchase: (a, t) => {
-						e(Object(p.h)(a, t))
+						e(Object(p.e)(a, t))
 					}
 				}), (e, a, t) => Object.assign({}, e, a, t, {
 					onCompletePurchaseClick: t => a.dispatchCompletePurchase(t, e.isIframed)
@@ -488,19 +488,17 @@
 						if (27 === e.keyCode) return a()
 					}
 				}
-				componentWillMount() {
-					this.props.loadSavedCards()
-				}
 				componentWillUnmount() {
-					Object(g.b)(g.a.GoldPayment), document.removeEventListener("keydown", this.handleEscapeKey)
+					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
 					const {
 						gildThingId: e,
-						sendEvent: a
+						loadSavedCards: a,
+						sendEvent: t
 					} = this.props;
-					Object(g.d)(g.a.GoldPayment), a(Object(P.h)(e))
+					a(), Object(g.d)(g.a.GoldPayment, !1), t(Object(P.h)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -556,7 +554,7 @@
 				}
 			}
 			const T = Object(c.a)(O);
-			a.default = M(Object(u.c)(class extends n.a.PureComponent {
+			a.default = j(Object(u.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -589,4 +587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.41976a2ba60ff5b2ff8c.js.map
+//# sourceMappingURL=PennyPurchaseModal.71510f1f8fc4fb0bd5c9.js.map

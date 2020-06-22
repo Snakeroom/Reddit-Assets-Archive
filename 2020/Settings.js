@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e3d81501e9224d4a2ee7.js
-// Retrieved at 6/17/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d5565bcc07c637b13106.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -158,8 +158,8 @@
 						return u.c.captureException(k), void(k.message && r(Object(h.stripeApiError)(k.message)))
 					}
 					r(Object(h.stripeTokenPending)());
-					const _ = Object(g.v)(m);
-					if (_ || (b = await r(Object(h.validateAndCreateStripeToken)(e)), v = Object(g.s)(m), b)) try {
+					const _ = Object(g.w)(m);
+					if (_ || (b = await r(Object(h.validateAndCreateStripeToken)(e)), v = Object(g.t)(m), b)) try {
 						const e = i()(),
 							t = _ || v ? b && v ? ((e, t, n, s) => Object(O.a)(e, Object.assign({}, C, {
 								variables: {
@@ -7042,4 +7042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.e3d81501e9224d4a2ee7.js.map
+//# sourceMappingURL=Settings.d5565bcc07c637b13106.js.map

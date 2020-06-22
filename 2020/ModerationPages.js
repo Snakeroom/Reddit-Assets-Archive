@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d5eead1684d0ea068425.js
-// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0b9832b0ae8f57edf657.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -9319,9 +9319,10 @@
 							e(Object(h.a)(n.postId, t))
 						},
 						onFlairPost: () => e(Object(p.i)(Object(L.b)(n.postId, o))),
-						onGildClick: () => e(Object(u.d)({
-							thingId: n.postId,
-							isOverlay: o
+						onGildClick: t => e(Object(u.d)({
+							correlationId: t,
+							isOverlay: o,
+							thingId: n.postId
 						})),
 						onFlairChanged: t => {
 							let {
@@ -9350,7 +9351,7 @@
 							post: t,
 							sendEvent: n
 						} = this.props;
-						Object(Q.d)(Q.a.GildingFlow), e();
+						e(Object(Q.d)(Q.a.GildingFlow, !0));
 						const {
 							clickGildEvent: o
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
@@ -16818,7 +16819,7 @@
 							post: n
 						} = t;
 						const o = Object(i.b)(n.postId, s);
-						return Object(m.c)(e, o)
+						return Object(m.d)(e, o)
 					},
 					playing: (e, t) => {
 						let {
@@ -17919,9 +17920,10 @@
 						onCopyLink: () => e(Object(f.F)(s)),
 						onDelete: t => e(Object(f.O)(n, t, o)),
 						onDistinguishPost: t => e(Object(f.x)(n, t)),
-						onGildClick: () => e(Object(b.d)({
-							thingId: n,
-							isOverlay: o
+						onGildClick: t => e(Object(b.d)({
+							correlationId: t,
+							isOverlay: o,
+							thingId: n
 						})),
 						onToggleSave: () => e(Object(f.V)(n)),
 						onToggleNSFW: () => e(Object(f.K)(n)),
@@ -17964,11 +17966,12 @@
 					}, this.handleEdit = () => {
 						this.handlePostEvent("edit"), this.props.onEdit()
 					}, this.handleGild = async () => {
-						Object(Z.d)(Z.a.GildingFlow), this.props.onGildClick();
+						const e = Object(Z.d)(Z.a.GildingFlow, !0);
+						this.props.onGildClick(e);
 						const {
-							clickGildEvent: e
+							clickGildEvent: t
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						this.props.sendEvent(e(this.props.postId))
+						this.props.sendEvent(t(this.props.postId))
 					}, this.toggleHide = () => {
 						const e = this.props.isHidden ? "unhide" : "hide";
 						this.handlePostEvent(e), this.props.onHide(this.props.isHidden)
@@ -28896,4 +28899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.d5eead1684d0ea068425.js.map
+//# sourceMappingURL=ModerationPages.0b9832b0ae8f57edf657.js.map

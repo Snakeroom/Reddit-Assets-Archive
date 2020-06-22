@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.678308e0cfb199d5e92e.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.a4afb9aed4ab5441201b.js
+// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -150,7 +150,7 @@
 				r = a.n(i),
 				c = a("./src/lib/constants/index.ts"),
 				l = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				o = a("./src/reddit/helpers/trackers/coins.ts"),
+				o = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				d = a("./src/reddit/helpers/trackers/screenview.ts"),
 				m = a("./src/telemetry/index.ts"),
 				p = a("./src/telemetry/models/Timer.ts"),
@@ -164,7 +164,7 @@
 				E = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			class C extends r.a.Component {
 				componentDidMount() {
-					o.e() || o.f();
+					Object(o.d)(o.a.GoldPayment, !1);
 					const e = c.Ab.COINS;
 					m.c.has(e) && this.props.sendEvent(Object(d.a)(p.TimerType.InApp, m.c.end(e)))
 				}
@@ -256,11 +256,11 @@
 					}, e.answer()))))
 				}
 				componentWillUnmount() {
-					o.d()
+					Object(o.b)(o.a.GoldPayment)
 				}
 			}
 			t.default = Object(l.c)(C)
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsMobile.678308e0cfb199d5e92e.js.map
+//# sourceMappingURL=CoinsMobile.a4afb9aed4ab5441201b.js.map
