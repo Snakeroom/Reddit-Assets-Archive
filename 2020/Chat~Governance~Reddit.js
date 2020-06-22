@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0d6d58bf0c3fe184c372.js
-// Retrieved at 6/22/2020, 2:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.21c47fcd9cb573ec698e.js
+// Retrieved at 6/22/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3278,14 +3278,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("b69030b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("8212e37-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b69030b-production",
+						release: "8212e37-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3647,7 +3647,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "b69030b-production",
+							releaseClient: "8212e37-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -10534,13 +10534,13 @@
 			"use strict";
 			i.d(t, "m", (function() {
 				return r
-			})), i.d(t, "n", (function() {
-				return s
 			})), i.d(t, "e", (function() {
+				return s
+			})), i.d(t, "q", (function() {
 				return o
-			})), i.d(t, "r", (function() {
-				return d
 			})), i.d(t, "v", (function() {
+				return d
+			})), i.d(t, "u", (function() {
 				return a
 			})), i.d(t, "h", (function() {
 				return u
@@ -10550,9 +10550,9 @@
 				return _
 			})), i.d(t, "l", (function() {
 				return m
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "o", (function() {
 				return p
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return h
 			})), i.d(t, "j", (function() {
 				return f
@@ -10566,29 +10566,29 @@
 				return y
 			})), i.d(t, "f", (function() {
 				return v
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return T
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "r", (function() {
 				return S
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return E
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "t", (function() {
 				return F
 			})), i.d(t, "i", (function() {
 				return I
 			}));
 			var n = i("./src/reddit/models/Upload/index.ts");
-			const r = Object(n.e)(n.b.POST_CREATION_MEDIA),
-				s = Object(n.e)(n.b.POST_CREATION_VIDEO_POSTER),
-				o = {
+			const r = Object(n.d)("VIDEO_POSTER"),
+				s = {
 					isProfile: !1,
 					name: ""
 				};
-			var d;
+			var o;
 			! function(e) {
 				e[e.Post = 0] = "Post", e[e.Draft = 1] = "Draft", e[e.ScheduledPost = 2] = "ScheduledPost"
-			}(d || (d = {}));
-			const l = ["title", "body", "link", "flair"],
+			}(o || (o = {}));
+			const d = e => !(1 !== e.items.length || !e.items[0].video),
+				l = ["title", "body", "link", "flair"],
 				a = e => l.includes(e);
 			var u, c, _, m, p, h, f;
 			! function(e) {
@@ -10604,7 +10604,7 @@
 				e.TITLE = "title", e.BODY = "body", e.URL = "url"
 			}(m || (m = {})),
 			function(e) {
-				e.CROSSPOST = "crosspost", e.LINK = "link", e.RICH_TEXT = "richText", e.MARKDOWN = "markdown", e.MEDIA = "media", e.VIDEO_GIF = "videogif", e.SELF = "self", e.POLL = "poll"
+				e.CROSSPOST = "crosspost", e.GALLERY = "gallery", e.LINK = "link", e.RICH_TEXT = "richText", e.MARKDOWN = "markdown", e.MEDIA = "media", e.VIDEO_GIF = "videogif", e.SELF = "self", e.POLL = "poll"
 			}(p || (p = {})),
 			function(e) {
 				e.ImageWillBeRemoved = "SrChangePrompt_ImageWillBeRemoved", e.VideoWillBeRemovedMediaNotAllowed = "SrChangePrompt_VideoWillBeRemovedMediaNotAllowed", e.VideoWillBeRemovedTooLongForGif = "SrChangePrompt_VideoWillBeRemovedTooLongForGif"
@@ -11229,7 +11229,7 @@
 			function c(e) {
 				return !!e && (e.originalContentTagEnabled || !!e.contentCategory)
 			}! function(e) {
-				e.Image = "IMAGE", e.Link = "LINK", e.Spoiler = "SPOILER", e.Text = "TEXT", e.Video = "VIDEO", e.Poll = "POLL"
+				e.Image = "IMAGE", e.Link = "LINK", e.Spoiler = "SPOILER", e.Text = "TEXT", e.Video = "VIDEO", e.Poll = "POLL", e.Gallery = "GALLERY"
 			}(u || (u = {}))
 		},
 		"./src/reddit/models/Subreddit/mock.ts": function(e, t, i) {
@@ -11683,38 +11683,34 @@
 		},
 		"./src/reddit/models/Upload/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "d", (function() {
 				return r
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "b", (function() {
 				return s
-			})), i.d(t, "c", (function() {
-				return o
 			})), i.d(t, "a", (function() {
+				return o
+			})), i.d(t, "c", (function() {
 				return d
-			})), i.d(t, "d", (function() {
-				return l
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.split.js");
 			var n = i("./src/reddit/helpers/getS3KeyFromUrl/index.ts");
-			const r = {
-					POST_CREATION_MEDIA: "POST_CREATION_MEDIA",
-					POST_CREATION_VIDEO_POSTER: "POST_CREATION_VIDEO_POSTER",
-					RTE_MEDIA: "RTE_MEDIA"
+			const r = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+					return "".concat(e, "/").concat(t)
 				},
-				s = (e, t) => t ? "".concat(e).concat("/").concat(t) : e,
-				o = e => Object(n.a)(e).split("/").slice(-1)[0],
-				d = {
+				s = e => Object(n.a)(e).split("/").slice(-1)[0],
+				o = {
 					PENDING: "PENDING",
 					UPLOADING: "UPLOADING",
 					SUCCESS: "SUCCESS",
 					FAILED: "FAILED",
 					CANCELED: "CANCELED"
 				},
-				l = e => {
+				d = e => {
 					let {
 						status: t
 					} = e;
-					return t === d.PENDING || t === d.UPLOADING
+					return t === o.PENDING || t === o.UPLOADING
 				}
 		},
 		"./src/reddit/models/User/index.ts": function(e, t, i) {
@@ -13709,25 +13705,25 @@
 				return x
 			})), i.d(t, "s", (function() {
 				return R
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "H", (function() {
 				return k
 			})), i.d(t, "n", (function() {
 				return P
 			})), i.d(t, "B", (function() {
 				return A
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "R", (function() {
 				return L
-			})), i.d(t, "cb", (function() {
+			})), i.d(t, "db", (function() {
 				return D
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "M", (function() {
 				return G
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "O", (function() {
 				return M
 			})), i.d(t, "g", (function() {
 				return U
 			})), i.d(t, "f", (function() {
 				return q
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "bb", (function() {
 				return V
 			})), i.d(t, "d", (function() {
 				return H
@@ -13735,7 +13731,7 @@
 				return W
 			})), i.d(t, "C", (function() {
 				return z
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "Q", (function() {
 				return K
 			})), i.d(t, "j", (function() {
 				return Q
@@ -13749,45 +13745,45 @@
 				return Z
 			})), i.d(t, "A", (function() {
 				return $
-			})), i.d(t, "D", (function() {
-				return ee
-			})), i.d(t, "H", (function() {
-				return te
 			})), i.d(t, "E", (function() {
+				return ee
+			})), i.d(t, "I", (function() {
+				return te
+			})), i.d(t, "F", (function() {
 				return ie
 			})), i.d(t, "o", (function() {
 				return ne
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "T", (function() {
 				return re
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "Z", (function() {
 				return se
 			})), i.d(t, "q", (function() {
 				return oe
 			})), i.d(t, "m", (function() {
 				return de
-			})), i.d(t, "eb", (function() {
+			})), i.d(t, "fb", (function() {
 				return le
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "X", (function() {
 				return ae
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "G", (function() {
 				return ue
 			})), i.d(t, "z", (function() {
 				return ce
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "cb", (function() {
 				return _e
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "eb", (function() {
 				return me
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "Y", (function() {
 				return pe
-			})), i.d(t, "I", (function() {
-				return he
 			})), i.d(t, "J", (function() {
-				return fe
+				return he
 			})), i.d(t, "K", (function() {
+				return fe
+			})), i.d(t, "L", (function() {
 				return ge
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "W", (function() {
 				return be
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "P", (function() {
 				return we
 			})), i.d(t, "y", (function() {
 				return ye
@@ -13801,24 +13797,26 @@
 				return Ee
 			})), i.d(t, "w", (function() {
 				return Fe
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "N", (function() {
 				return Ie
 			})), i.d(t, "p", (function() {
 				return Oe
 			})), i.d(t, "b", (function() {
 				return je
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "U", (function() {
 				return Be
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "ab", (function() {
 				return xe
 			})), i.d(t, "e", (function() {
 				return Re
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "S", (function() {
 				return ke
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "V", (function() {
 				return Ce
 			})), i.d(t, "c", (function() {
 				return Ne
+			})), i.d(t, "D", (function() {
+				return Pe
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -14014,39 +14012,45 @@
 				pe = Object(r.a)(H, me, (e, t) => e || !t || t.bodyRestrictionPolicy !== b.a.NotAllowed),
 				he = e => e.creations.formData.body.link,
 				fe = e => e.creations.formData.body.markdown,
-				ge = Object(r.a)(e => e.creations.formData.body.media, e => e.uploads[g.m], U, (e, t, i) => {
-					if (!t) return;
-					const r = Object(p.f)(t.metadata.mimetype),
-						{
-							allowedPostTypes: s
+				ge = Object(r.a)(e => e.creations.formData.body.media, e => e.uploads, U, (e, t, i) => {
+					let {
+						items: r
+					} = e;
+					if (!r.length) return e;
+					const s = 1 === r.length,
+						o = r[0],
+						d = o && t[o.uploadKey];
+					if (s && d && Object(p.l)(d.metadata.mimetype || "")) {
+						const {
+							allowedPostTypes: e
 						} = i;
-					let o, {
-						isMakeGif: d = !1
-					} = e && e.video || {};
-					if (s) {
-						const e = i.name;
-						s.images ? s.videos || (o = "".concat(n.fbt._("Video auto converted to GIF because {subredditName} is an image only subreddit", [n.fbt._param("subredditName", "r/".concat(e))], {
-							hk: "4g01YI"
-						})), d = !0) : (o = "".concat(n.fbt._("Video cannot be converted to GIF because {subredditName} is a video only subreddit", [n.fbt._param("subredditName", "r/".concat(e))], {
-							hk: "2RVHSt"
-						})), d = !1)
-					}
-					return {
-						file: t.file,
-						status: t.status,
-						url: t.url,
-						mediaType: r || void 0,
-						video: "video" === r ? Object.assign({
+						let t, {
+							isMakeGif: s = !1
+						} = o.video || {};
+						if (e) {
+							const r = i.name;
+							e.images ? e.videos || (t = "".concat(n.fbt._("Video auto converted to GIF because {subredditName} is an image only subreddit", [n.fbt._param("subredditName", "r/".concat(r))], {
+								hk: "4g01YI"
+							})), s = !0) : (t = "".concat(n.fbt._("Video cannot be converted to GIF because {subredditName} is a video only subreddit", [n.fbt._param("subredditName", "r/".concat(r))], {
+								hk: "2RVHSt"
+							})), s = !1)
+						}
+						const l = Object.assign({
 							thumbnail: {
 								time: 0,
-								url: t.metadata.videoFirstFrameUrl
+								url: d.metadata.videoFirstFrameUrl
 							}
-						}, e && e.video || {}, {
-							duration: t.metadata.videoDuration || 0,
-							isMakeGif: d,
-							makeGifDisableReason: o
-						}) : void 0
+						}, o.video || {}, {
+							isMakeGif: s,
+							makeGifDisableReason: t
+						});
+						r = [Object.assign({}, o, {
+							video: l
+						})]
 					}
+					return Object.assign({}, e, {
+						items: r
+					})
 				}),
 				be = e => e.creations.formData.body.rte,
 				we = e => e.creations.formData.nextSubreddit,
@@ -14061,8 +14065,10 @@
 					return !!fe(e).trim()
 				},
 				Se = e => {
-					const t = ge(e);
-					return !!t && !!t.file && t.status !== y.a.FAILED
+					return ge(e).items.some(t => {
+						const i = e.uploads[t.uploadKey];
+						return i && i.status !== y.a.FAILED
+					})
 				},
 				Ee = e => {
 					return !!he(e).trim()
@@ -14153,37 +14159,56 @@
 						} = e,
 						{
 							sourcePostId: b
-						} = t;
+						} = t,
+						w = _.items;
 					if (h === s.Ib.LINK_ONLY && u) return Object.assign({}, l, {
 						url: u,
-						kind: g.p.LINK
+						kind: g.o.LINK
 					});
-					if (h === s.Ib.MEDIA && _) {
-						const {
-							mediaType: e = "image",
-							video: t
-						} = _, i = f[g.n], n = "video" === e ? i.url : null;
-						return Object.assign({}, l, {
-							mediaType: e,
-							videoThumbnailUrl: n,
-							kind: g.p.MEDIA,
-							url: _.url || "",
-							makeGif: !!t && t.isMakeGif
-						})
+					if (h === s.Ib.MEDIA && w.length) {
+						if (w.length > 1) {
+							const e = w.map(e => {
+								const t = f[e.uploadKey],
+									i = t && t.url || null;
+								if (!i) throw new Error("Asset is not uploaded");
+								return Object.assign({}, e, {
+									assetId: Object(y.b)(i)
+								})
+							});
+							return Object.assign({}, l, {
+								kind: g.o.GALLERY,
+								galleryItems: e
+							})
+						} {
+							const e = w[0],
+								{
+									video: t
+								} = e,
+								i = f[e.uploadKey],
+								n = f[g.m],
+								r = t && n ? n.url : null;
+							return Object.assign({}, l, {
+								mediaType: t ? "video" : "image",
+								videoThumbnailUrl: r,
+								kind: g.o.MEDIA,
+								url: i.url || "",
+								makeGif: !!t && t.isMakeGif
+							})
+						}
 					}
 					if ((h === s.Ib.POST || h === s.Ib.POLL) && a === g.h.MARKDOWN) return Object.assign({}, l, {
-						kind: g.p.MARKDOWN,
+						kind: g.o.MARKDOWN,
 						markdown: p ? c : ""
 					});
 					if ((h === s.Ib.POST || h === s.Ib.POLL) && a === g.h.RICH_TEXT) {
 						const e = p && d.a.hasContent(m) ? d.a.toRichTextJSON(m, f).document : [];
 						return Object.assign({}, l, {
-							kind: g.p.RICH_TEXT,
+							kind: g.o.RICH_TEXT,
 							document: e
 						})
 					}
 					return h === s.Ib.CROSSPOST && b ? Object.assign({}, l, {
-						kind: g.p.CROSSPOST,
+						kind: g.o.CROSSPOST,
 						sourcePostId: b
 					}) : void 0
 				},
@@ -14201,7 +14226,7 @@
 						case s.Ib.LINK_ONLY:
 							return "link";
 						case s.Ib.MEDIA:
-							return t && "image" !== t.mediaType && t.video ? t.video.isMakeGif ? "videogif" : "video" : "image";
+							return Object(g.v)(t) ? t.items[0].video.isMakeGif ? "videogif" : "video" : "image";
 						default:
 							return "self"
 					}
@@ -14234,6 +14259,17 @@
 						type: l.a.SUBREDDIT
 					};
 					return Object(E.b)(e, i, !0, !0)
+				},
+				Pe = e => {
+					const t = U(e),
+						{
+							images: i = !0,
+							galleries: n = !0
+						} = t.allowedPostTypes || {},
+						r = c.d.ImageGalleryCreationFlow(e),
+						s = i && n,
+						o = H(e);
+					return r && (s || o)
 				}
 		},
 		"./src/reddit/selectors/postDraft.ts": function(e, t, i) {
@@ -14311,10 +14347,10 @@
 					const i = Object(c.b)(e, t);
 					if (!i) return;
 					const n = Object(c.m)(e),
-						r = Object(c.I)(e),
-						s = Object(c.J)(e),
-						o = Object(c.V)(e),
-						_ = Object(c.X)(e),
+						r = Object(c.J)(e),
+						s = Object(c.K)(e),
+						o = Object(c.W)(e),
+						_ = Object(c.Y)(e),
 						m = Object(c.a)(e),
 						{
 							uploads: p
@@ -21728,4 +21764,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.0d6d58bf0c3fe184c372.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.21c47fcd9cb573ec698e.js.map
