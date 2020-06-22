@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.68cd654e9bbec589d548.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.11635dc7d355511e6dcf.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1300,11 +1300,11 @@
 						style: n
 					}))
 				}),
-				S = e => s.a.createElement(c.a, {
+				S = e => s.a.createElement(c.b, {
 					className: m(e),
 					compact: e.compact
 				}),
-				N = e => s.a.createElement(p.a, {
+				N = e => s.a.createElement(p.b, {
 					className: h(e),
 					compact: e.compact
 				})
@@ -2469,6 +2469,9 @@
 		},
 		"./src/reddit/icons/fonts/Downvote/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -2498,7 +2501,7 @@
 			const u = e => s.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("downvote"), c.a.downvote, e.className)
 			});
-			t.a = e => {
+			t.b = e => {
 				var {
 					compact: t
 				} = e, n = l(e, ["compact"]);
@@ -2521,6 +2524,9 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -2550,7 +2556,7 @@
 			const u = e => s.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("upvote"), c.a.upvote, e.className)
 			});
-			t.a = e => {
+			t.b = e => {
 				var {
 					compact: t
 				} = e, n = l(e, ["compact"]);
@@ -2977,4 +2983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.68cd654e9bbec589d548.js.map
+//# sourceMappingURL=ModListing~Reddit.11635dc7d355511e6dcf.js.map

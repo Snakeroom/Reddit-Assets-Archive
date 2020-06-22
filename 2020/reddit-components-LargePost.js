@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ed7cd694f7772a336994.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.814085c4c9a95a63f1d9.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -602,17 +602,17 @@
 				W = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				D = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				H = s("./src/reddit/components/PostPinnedHeader/index.m.less"),
-				V = s.n(H);
+				U = s.n(H);
 			const {
-				fbt: U
+				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var z = () => r.a.createElement("div", {
-					className: V.a.container
+					className: U.a.container
 				}, r.a.createElement(D.a, {
-					className: V.a.pinnedIcon
+					className: U.a.pinnedIcon
 				}), r.a.createElement("span", {
-					className: V.a.metaText
-				}, U._("pinned by moderators", null, {
+					className: U.a.metaText
+				}, V._("pinned by moderators", null, {
 					hk: "1qU8t4"
 				}))),
 				J = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
@@ -630,7 +630,7 @@
 			const oe = Object(i.a)(O.U, e => e.some(se.c)),
 				re = Object(i.a)(oe, e => e),
 				ne = (e, t) => Object(te.c)(e, {
-					experimentName: ee.P,
+					experimentName: ee.R,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -725,8 +725,8 @@
 						isOverlay: C,
 						isPostChainDismissed: D,
 						isPostChained: H,
-						isTopicPage: V,
-						listingKey: U,
+						isTopicPage: U,
+						listingKey: V,
 						listingName: Z,
 						moderatorPermissions: q,
 						modModeEnabled: te,
@@ -740,7 +740,7 @@
 						showEditFlair: me,
 						subredditOrProfile: pe,
 						userIsOp: ue
-					} = e, be = !!e.redditStyle || !!e["data-redditstyle"], xe = be ? void 0 : u, he = Object(l.a)(q), ve = te && he, fe = Object(d.a)(q), Pe = Object(c.a)(q), ye = Object(A.c)(ne), ge = !!ne.media && ne.media.type === x.n.RTJSON, Oe = ue && ge, Ce = s ? s - R.a : void 0, we = !(g && O || V), Se = (e => e === ee.Lb.OnlyTitles)(ie) && !Object(Y.a)(ne), ke = (e => e === ee.Lb.MediumHeight)(ie) && !Object(Y.a)(ne), je = (e => {
+					} = e, be = !!e.redditStyle || !!e["data-redditstyle"], xe = be ? void 0 : u, he = Object(l.a)(q), ve = te && he, fe = Object(d.a)(q), Pe = Object(c.a)(q), ye = Object(A.c)(ne), ge = !!ne.media && ne.media.type === x.n.RTJSON, Oe = ue && ge, Ce = s ? s - R.a : void 0, we = !(g && O || U), Se = (e => e === ee.Nb.OnlyTitles)(ie) && !Object(Y.a)(ne), ke = (e => e === ee.Nb.MediumHeight)(ie) && !Object(Y.a)(ne), je = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -797,7 +797,7 @@
 						isCompactPinnedPost: !!je,
 						isCurrentUserProfilePost: y,
 						isOverlay: !!C,
-						isTopicPage: !!V,
+						isTopicPage: !!U,
 						post: ne,
 						shouldShowSubscribeButton: we,
 						showSubreddit: !f && !ne.isSponsored,
@@ -879,7 +879,7 @@
 					}))));
 					return r.a.createElement(r.a.Fragment, null, _e, H && !D && r.a.createElement(T.a, {
 						className: le.a.chain,
-						listingKey: U,
+						listingKey: V,
 						listingName: Z,
 						postId: ne.id
 					}))
@@ -1316,11 +1316,11 @@
 			const n = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.V
+					experimentName: o.X
 				});
-				return !(!t || Object(o.vc)(t))
+				return !(!t || Object(o.xc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.ed7cd694f7772a336994.js.map
+//# sourceMappingURL=reddit-components-LargePost.814085c4c9a95a63f1d9.js.map

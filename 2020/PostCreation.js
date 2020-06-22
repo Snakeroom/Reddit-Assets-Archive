@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.59067bd680be461b7e6c.js
-// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.dfe9f8c4e92458e7cff8.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -670,16 +670,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.Cb
+					experimentName: d.Eb
 				});
-				return Object(d.vc)(t) ? void 0 : t
+				return Object(d.xc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.Db
+					experimentName: d.Fb
 				});
-				return Object(d.vc)(t) ? void 0 : t
-			}, (e, t) => e === d.Eb.Enabled && t === d.Eb.Enabled);
+				return Object(d.xc)(t) ? void 0 : t
+			}, (e, t) => e === d.Gb.Enabled && t === d.Gb.Enabled);
 			var m = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "5e114e5-production"
+					SENTRY_RELEASE_VERSION: "eb88b05-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -32152,4 +32152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.59067bd680be461b7e6c.js.map
+//# sourceMappingURL=PostCreation.dfe9f8c4e92458e7cff8.js.map

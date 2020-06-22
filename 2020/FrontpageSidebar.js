@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.15ec6e1587436e64bbf7.js
-// Retrieved at 6/17/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.de424cb2764557d82ffe.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -68,9 +68,9 @@
 				y = n("./src/lib/classNames/index.ts"),
 				N = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				f = n("./src/reddit/controls/InternalLink/index.tsx"),
-				S = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				C = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
-				j = n.n(C);
+				C = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				S = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
+				j = n.n(S);
 			const v = e => {
 					let {
 						to: t,
@@ -104,7 +104,7 @@
 						onClick: o
 					}, i.a.createElement("div", {
 						className: j.a.SectionTitle
-					}, t), i.a.createElement(S.a, {
+					}, t), i.a.createElement(C.a, {
 						className: j.a.SectionChevron
 					})), i.a.createElement("div", {
 						className: j.a.SectionBody
@@ -320,8 +320,8 @@
 						trendingSubredditIds: p
 					} = this.props, b = o && d, g = [...ne.l];
 					b && g.unshift(ne.g);
-					const h = c === te.Ab.Rotate,
-						x = c === te.Ab.RotateAll;
+					const h = c === te.Cb.Rotate,
+						x = c === te.Cb.RotateAll;
 					let _ = ne.m;
 					return b && (h ? _ = this.state.random > .5 ? ne.g : ne.m : x && (_ = g[this.state.randomIndex])), i.a.createElement(P.a, {
 						className: t
@@ -827,20 +827,20 @@
 				y = n("./src/reddit/helpers/name/index.ts"),
 				N = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
 				f = n("./src/reddit/hooks/useTracking.ts"),
-				S = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
-				C = n.n(S);
+				C = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
+				S = n.n(C);
 			const j = e => {
 					const t = !(!e.rankings || !e.rankings.length),
-						n = !t && C.a.communityBannerPlaceholder,
+						n = !t && S.a.communityBannerPlaceholder,
 						a = e.bannerBackgroundImage && e.shouldDisplayBannerImg ? {
 							backgroundImage: "url(".concat(e.bannerBackgroundImage, ")")
 						} : void 0,
 						r = e.categoryName === h.i ? h.g.path : h.e;
 					return c.a.createElement("div", {
-						className: Object(u.a)(e.className, C.a.communityBanner, n),
+						className: Object(u.a)(e.className, S.a.communityBanner, n),
 						style: a
 					}, t && c.a.createElement("h2", {
-						className: C.a.communityBannerText
+						className: S.a.communityBannerText
 					}, c.a.createElement(l.a, {
 						onMouseDown: () => e.onSendEventClick("banner", e.categoryName || h.c),
 						to: r
@@ -849,7 +849,7 @@
 					}) : c.a.createElement(c.a.Fragment, null, s.fbt._("Top", null, {
 						hk: "4bbkOp"
 					}), c.a.createElement("span", {
-						className: C.a.categoryName
+						className: S.a.categoryName
 					}, " ", s.fbt._("{categoryName}", [s.fbt._param("categoryName", e)], {
 						hk: "2cI9uN"
 					}), " "), s.fbt._("Communities", null, {
@@ -876,9 +876,9 @@
 				T = e => {
 					const t = e.isSecondaryButton ? x.k : x.h;
 					return c.a.createElement("div", {
-						className: C.a.footer
+						className: S.a.footer
 					}, c.a.createElement(t, {
-						className: C.a.linkButton,
+						className: S.a.linkButton,
 						onMouseDown: () => e.onSendEventClick("button_cta", e.categoryName || h.c),
 						to: e.to || ""
 					}, e.isSecondaryButton ? e.categoryName ? s.fbt._("See All {categoryName}", [s.fbt._param("categoryName", e.categoryName)], {
@@ -894,9 +894,9 @@
 				return "".concat(h.e).concat(Object(y.f)(e), "/")
 			}
 			const w = e => c.a.createElement("div", {
-				className: C.a.categoryPicker
+				className: S.a.categoryPicker
 			}, e.categories && e.categories.map(t => e.activeCategoryName === t.name ? null : c.a.createElement(E, {
-				className: C.a.chip,
+				className: S.a.chip,
 				key: t.name,
 				to: L(t.name)
 			}, t.name === h.i ? s.fbt._("Near You", null, {
@@ -1026,16 +1026,16 @@
 
 			function r(e) {
 				const t = o(e);
-				return t === s.Ab.Rotate || t === s.Ab.RotateAll
+				return t === s.Cb.Rotate || t === s.Cb.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.zb
+					experimentName: s.Bb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.15ec6e1587436e64bbf7.js.map
+//# sourceMappingURL=FrontpageSidebar.de424cb2764557d82ffe.js.map

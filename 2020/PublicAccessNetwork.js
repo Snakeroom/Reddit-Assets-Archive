@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0d54070220cd97ce9267.js
-// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.247d84905c21e04af2db.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const u = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Cb
+					experimentName: d.Eb
 				});
-				return Object(d.vc)(t) ? void 0 : t
+				return Object(d.xc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Db
+					experimentName: d.Fb
 				});
-				return Object(d.vc)(t) ? void 0 : t
-			}, (e, t) => e === d.Eb.Enabled && t === d.Eb.Enabled);
+				return Object(d.xc)(t) ? void 0 : t
+			}, (e, t) => e === d.Gb.Enabled && t === d.Gb.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "5e114e5-production"
+					SENTRY_RELEASE_VERSION: "eb88b05-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -2292,7 +2292,7 @@
 						"aria-label": w.fbt._("Upvote", null, {
 							hk: "4ijw7j"
 						})
-					}, i.a.createElement(Mt.a, {
+					}, i.a.createElement(Mt.b, {
 						className: Vt.a.voteIcon
 					})), i.a.createElement("p", {
 						className: Vt.a.votesCounter
@@ -2317,7 +2317,7 @@
 						"aria-label": w.fbt._("Dpvote", null, {
 							hk: "1PcDeu"
 						})
-					}, i.a.createElement(jt.a, {
+					}, i.a.createElement(jt.b, {
 						className: Vt.a.voteIcon
 					})), i.a.createElement("p", {
 						className: Vt.a.votesCounter
@@ -2761,7 +2761,7 @@
 					"aria-label": hs._("Upvote", null, {
 						hk: "Ufd6r"
 					})
-				}, i.a.createElement(Mt.a, {
+				}, i.a.createElement(Mt.b, {
 					className: ps.a.voteIcon
 				}))
 			}, Ls = e => {
@@ -2778,7 +2778,7 @@
 					"aria-label": hs._("Downvote", null, {
 						hk: "ZDRA3"
 					})
-				}, i.a.createElement(jt.a, {
+				}, i.a.createElement(jt.b, {
 					className: ps.a.voteIcon
 				}))
 			}, ks = e => {
@@ -4357,10 +4357,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.ib
-				}) === r.rb.Enabled
+					experimentName: r.kb
+				}) === r.tb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.0d54070220cd97ce9267.js.map
+//# sourceMappingURL=PublicAccessNetwork.247d84905c21e04af2db.js.map

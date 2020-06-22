@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.1e143f7eabe5bded1ef3.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsTopTippersPostLeaderboard.ce98698357caec379c09.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsTopTippersPostLeaderboard"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, s) {
@@ -151,9 +151,9 @@
 						className: Object(o.a)(N.a.container, e.className)
 					}, a.a.createElement("div", {
 						className: N.a.votes
-					}, a.a.createElement(v.a, {
+					}, a.a.createElement(v.b, {
 						className: N.a.voteIcon
-					}), a.a.createElement(T.a, {
+					}), a.a.createElement(T.b, {
 						className: N.a.voteIcon
 					})), a.a.createElement("div", {
 						className: N.a.content
@@ -627,4 +627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.1e143f7eabe5bded1ef3.js.map
+//# sourceMappingURL=EconomicsTopTippersPostLeaderboard.ce98698357caec379c09.js.map

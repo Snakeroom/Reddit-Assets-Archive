@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f1eabe42a0ffe7830ccd.js
-// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.54bf87ad4485fdd39285.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -25,16 +25,16 @@
 			const u = Object(n.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.Cb
+					experimentName: l.Eb
 				});
-				return Object(l.vc)(t) ? void 0 : t
+				return Object(l.xc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.Db
+					experimentName: l.Fb
 				});
-				return Object(l.vc)(t) ? void 0 : t
-			}, (e, t) => e === l.Eb.Enabled && t === l.Eb.Enabled);
+				return Object(l.xc)(t) ? void 0 : t
+			}, (e, t) => e === l.Gb.Enabled && t === l.Gb.Enabled);
 			var h = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -71,7 +71,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g = function(e, t) {
+			var x = function(e, t) {
 				var s = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -80,9 +80,9 @@
 				}
 				return s
 			};
-			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
+			const g = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "5e114e5-production"
+					SENTRY_RELEASE_VERSION: "eb88b05-production"
 				}),
 				T = {
 					anonymousUserId: "t2_anonymous",
@@ -141,7 +141,7 @@
 							{
 								forwardedRef: s
 							} = t,
-							r = g(t, ["forwardedRef"]);
+							r = x(t, ["forwardedRef"]);
 						return i.a.createElement(e, y({}, r, {
 							onDashCreate: this.handleDashCreate,
 							onDashDestroy: this.handleDashDestroy,
@@ -252,7 +252,7 @@
 						}
 					}
 				}
-				I.displayName = x(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = _, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
+				I.displayName = g(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = _, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
 				const N = Object(r.forwardRef)((e, t) => i.a.createElement(I, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -591,7 +591,7 @@
 			})), s.d(t, "b", (function() {
 				return y
 			})), s.d(t, "c", (function() {
-				return g
+				return x
 			})), s.d(t, "d", (function() {
 				return O
 			})), s.d(t, "e", (function() {
@@ -724,7 +724,7 @@
 					}
 				}
 			}));
-			var g = Object(a.b)(() => Object(n.c)({
+			var x = Object(a.b)(() => Object(n.c)({
 					subreddit: f.R
 				}))(e => i.a.createElement(p, {
 					className: e.className,
@@ -738,12 +738,12 @@
 						} : {}
 					}
 				})),
-				x = s("./src/reddit/selectors/posts.ts");
+				g = s("./src/reddit/selectors/posts.ts");
 			var O = Object(a.b)(() => Object(n.c)({
-				post: x.O,
-				subredditOrProfile: x.bb,
+				post: g.O,
+				subredditOrProfile: g.bb,
 				isModerator: (e, t) => {
-					const s = Object(x.bb)(e, t);
+					const s = Object(g.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => i.a.createElement(p, {
@@ -777,11 +777,11 @@
 				}
 			}));
 			var T = Object(a.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(x.bb)(e, {
+				subredditOrProfile: (e, t) => Object(g.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(x.bb)(e, {
+					const s = Object(g.bb)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -803,10 +803,10 @@
 				}
 			}));
 			var _ = Object(a.b)(() => Object(n.c)({
-				post: x.O,
-				subredditOrProfile: x.bb,
+				post: g.O,
+				subredditOrProfile: g.bb,
 				isModerator: (e, t) => {
-					const s = Object(x.bb)(e, t);
+					const s = Object(g.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => i.a.createElement(p, {
@@ -913,8 +913,8 @@
 				S = s("./src/reddit/helpers/trackers/rpan.ts"),
 				E = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				y = s("./src/reddit/models/Vote/index.ts"),
-				g = s("./src/reddit/selectors/platform.ts"),
-				x = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				x = s("./src/reddit/selectors/platform.ts"),
+				g = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				O = s("./src/reddit/selectors/user.ts"),
 				T = s("./src/telemetry/index.ts"),
 				_ = s("./node_modules/uuid/v4.js"),
@@ -937,20 +937,20 @@
 				F = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				B = s.n(F),
 				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				z = s.n(K);
+				G = s.n(K);
 			const {
-				fbt: G
+				fbt: z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(o.a)(j.a, {
 				playerName: "RPAN DU Video Player"
 			}), J = Object(a.b)(() => Object(n.c)({
 				autoplay: O.b,
 				isLoggedIn: O.H,
-				isOverlayOpen: g.h,
+				isOverlayOpen: x.h,
 				location: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const r = Object(x.l)(e, {
+					const r = Object(g.l)(e, {
 						listingName: s
 					});
 					let i;
@@ -968,11 +968,11 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(x.l)(e, {
+					return Object(g.l)(e, {
 						listingName: s
 					})
 				},
-				totalLiveWatchers: x.m
+				totalLiveWatchers: g.m
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(l.D)(t.listingName)),
 				openOverlay: t => e(Object(f.a)(t)),
@@ -980,12 +980,12 @@
 				subscribeStats: t => e(u.a.subscribeStats(t)),
 				subscribeStreams: () => e(u.a.subscribeStreams(t.listingName))
 			})), Q = () => i.a.createElement("h3", {
-				className: z.a.title
-			}, G._("Top broadcast right now", null, {
+				className: G.a.title
+			}, z._("Top broadcast right now", null, {
 				hk: "2hS1kb"
 			})), $ = () => i.a.createElement("p", {
-				className: z.a.description
-			}, G._("Live from the internet, this is RPAN", null, {
+				className: G.a.description
+			}, z._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class q extends r.Component {
@@ -1120,101 +1120,101 @@
 						layout: e
 					} = this.props, t = e === b.g.Classic ? this.renderClassicContent() : e === b.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return i.a.createElement("div", {
-						className: Object(c.a)(z.a.container, {
+						className: Object(c.a)(G.a.container, {
 							[B.a.largeAndMediumPostStyles]: e === b.g.Large || e === b.g.Medium,
 							[B.a.classicPostStyles]: e === b.g.Classic,
 							[B.a.compactPostStyles]: e === b.g.Compact,
-							[z.a.large]: e === b.g.Large || e === b.g.Medium,
-							[z.a.classic]: e === b.g.Classic,
-							[z.a.compact]: e === b.g.Compact
+							[G.a.large]: e === b.g.Large || e === b.g.Medium,
+							[G.a.classic]: e === b.g.Classic,
+							[G.a.compact]: e === b.g.Compact
 						}, this.props.className),
 						ref: this.observableElement
 					}, e !== b.g.Large && i.a.createElement(D.b, {
-						className: z.a.leftRail,
+						className: G.a.leftRail,
 						withoutComputedStyles: e === b.g.Compact
 					}, i.a.createElement(Z, {
 						isVertical: !0
 					}), e === b.g.Compact && i.a.createElement(Z, {
 						isVertical: !1
 					})), i.a.createElement(A.a, {
-						className: z.a.backgroundWrapper,
+						className: G.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
 				}
 				renderTitleAndDescription(e) {
 					return i.a.createElement("div", {
-						className: z.a.titleAndDescriptionContainer
+						className: G.a.titleAndDescriptionContainer
 					}, i.a.createElement(V.a, {
 						to: this.props.location
 					}, i.a.createElement(Q, null), e && i.a.createElement($, null)))
 				}
 				renderLargeContent() {
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-						className: z.a.header
+						className: G.a.header
 					}, this.renderTitleAndDescription(), i.a.createElement("div", {
-						className: z.a.flatListContainer
+						className: G.a.flatListContainer
 					}, i.a.createElement(te, {
 						onClick: this.onHideUnitClicked
 					}))), i.a.createElement("div", {
-						className: z.a.body
+						className: G.a.body
 					}, i.a.createElement(V.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
-						className: z.a.previewLink,
+						className: G.a.previewLink,
 						tabIndex: 0
 					}, i.a.createElement("div", {
-						className: z.a.previewContainer
+						className: G.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
 				}
 				renderClassicContent() {
 					return i.a.createElement("div", {
-						className: z.a.body
+						className: G.a.body
 					}, i.a.createElement(V.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, i.a.createElement("div", {
-						className: z.a.thumbnailContainer
+						className: G.a.thumbnailContainer
 					}, this.renderThumbnail())), i.a.createElement("div", {
-						className: z.a.main
+						className: G.a.main
 					}, this.renderTitleAndDescription(!0), i.a.createElement("div", {
-						className: z.a.flatListContainer
+						className: G.a.flatListContainer
 					}, i.a.createElement(X, {
 						onClick: this.onHeaderClicked
 					}), i.a.createElement(w.a, {
-						className: z.a.flatlistSeparator
+						className: G.a.flatlistSeparator
 					}), i.a.createElement("div", null, i.a.createElement(ee, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
 				renderCompactContent() {
 					return i.a.createElement("div", {
-						className: z.a.body
+						className: G.a.body
 					}, i.a.createElement("div", {
-						className: z.a.main
+						className: G.a.main
 					}, i.a.createElement(X, {
 						onClick: this.onHeaderClicked
 					}), this.renderTitleAndDescription(!0), i.a.createElement("div", {
-						className: z.a.flatListContainer
+						className: G.a.flatListContainer
 					}, i.a.createElement(te, {
 						onClick: this.onHideUnitClicked
 					}))))
 				}
 				renderInfo() {
 					if (this.props.stream && this.state.isReady) return i.a.createElement("div", {
-						className: z.a.infoContainer
+						className: G.a.infoContainer
 					}, this.renderExpandIcon(), this.renderLiveStatus(), this.renderWatcherCount())
 				}
 				renderExpandIcon() {
 					return i.a.createElement("div", {
-						className: z.a.bigExpando
+						className: G.a.bigExpando
 					}, i.a.createElement(U.a, {
-						className: z.a.bigExpandoIcon
+						className: G.a.bigExpandoIcon
 					}))
 				}
 				renderLiveStatus() {
 					return this.isLive ? i.a.createElement("span", {
-						className: z.a.liveStatus
-					}, G._("Live", null, {
+						className: G.a.liveStatus
+					}, z._("Live", null, {
 						hk: "TwJSs"
 					})) : null
 				}
@@ -1222,18 +1222,18 @@
 					if (!this.isLive) return null;
 					const e = Math.max(1, this.props.totalLiveWatchers);
 					return i.a.createElement("span", {
-						className: z.a.watchingCount
-					}, G._({
+						className: G.a.watchingCount
+					}, z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [G._plural(e, "number")], {
+					}, [z._plural(e, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
 				renderThumbnail() {
 					return i.a.createElement("div", {
-						className: Object(c.a)(z.a.thumbnail, {
-							[z.a.noise]: !this.state.isReady
+						className: Object(c.a)(G.a.thumbnail, {
+							[G.a.noise]: !this.state.isReady
 						})
 					}, this.renderVideo())
 				}
@@ -1351,11 +1351,11 @@
 			}
 			const Z = e => i.a.createElement(R.a, {
 					className: Object(c.a)({
-						[z.a.verticalVotes]: e.isVertical,
-						[z.a.horizontalVotes]: !e.isVertical
+						[G.a.verticalVotes]: e.isVertical,
+						[G.a.horizontalVotes]: !e.isVertical
 					})
 				}, i.a.createElement(H.a, {
-					className: z.a.score,
+					className: G.a.score,
 					isScoreHidden: !0,
 					score: 0,
 					voteState: y.a.notVoted
@@ -1365,10 +1365,10 @@
 						onClick: t
 					} = e;
 					return i.a.createElement("button", {
-						className: z.a.expandoButton,
+						className: G.a.expandoButton,
 						onClick: t
 					}, i.a.createElement(U.a, {
-						className: z.a.expandoIcon
+						className: G.a.expandoIcon
 					}))
 				},
 				ee = e => {
@@ -1377,7 +1377,7 @@
 						isLoggedIn: s
 					} = e;
 					return i.a.createElement(N.a, {
-						displayText: G._("Show me less of this", null, {
+						displayText: z._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: I.a.Hide,
@@ -1392,19 +1392,19 @@
 						onClick: t
 					} = e;
 					return i.a.createElement(M.b, {
-						className: z.a.overflowMenu,
-						dropdownClassName: z.a.overflowDropdown,
+						className: G.a.overflowMenu,
+						dropdownClassName: G.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
 					}, i.a.createElement(k.b, {
-						className: z.a.overflowItem,
-						displayText: G._("Show me less of this", null, {
+						className: G.a.overflowItem,
+						displayText: z._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
-						iconWrapperClassName: z.a.overflowItemIconWrapper,
-						textClassName: z.a.overflowItemText,
+						iconWrapperClassName: G.a.overflowItemIconWrapper,
+						textClassName: G.a.overflowItemText,
 						onClick: t
 					}, i.a.createElement(W.a, {
-						className: z.a.hideIcon
+						className: G.a.hideIcon
 					})))
 				};
 			t.default = J(Object(P.c)(q))
@@ -1591,4 +1591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.f1eabe42a0ffe7830ccd.js.map
+//# sourceMappingURL=RpanListingUnit.54bf87ad4485fdd39285.js.map

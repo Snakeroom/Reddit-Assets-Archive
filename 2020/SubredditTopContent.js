@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.f8d46480ae955114147f.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.1cd26f63ea2bc2421395.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -11,7 +11,7 @@
 			})), n.d(t, "b", (function() {
 				return h
 			})), n.d(t, "d", (function() {
-				return b
+				return x
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/lodash/omit.js"),
@@ -42,7 +42,7 @@
 			const p = (e, t, n) => (function() {
 				let s = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = b(o.target, o.currentTarget);
+					const r = x(o.target, o.currentTarget);
 					h(o.target, o.currentTarget, m.anchors) ? r && t && e(t(n, r)) : r && t && e(e => {
 						const s = t(n, r)(e);
 						let o;
@@ -84,9 +84,9 @@
 					anchors: ["A"]
 				},
 				h = (e, t, n) => !n.includes(e.tagName) && (e === t || !!e.parentElement && h(e.parentElement, t, n)),
-				b = (e, t) => {
+				x = (e, t) => {
 					const n = e.dataset.clickId;
-					return n || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return n || (e === t ? null : !!e.parentElement && x(e.parentElement, t))
 				}
 		},
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, n) {
@@ -117,14 +117,14 @@
 				u = n("./src/reddit/components/DiscoveryUnit/Layout/index.tsx"),
 				m = n("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
 				h = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				b = n("./src/reddit/components/Widgets/Base/index.tsx"),
-				g = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				x = n("./src/reddit/constants/experiments.ts"),
+				x = n("./src/reddit/components/Widgets/Base/index.tsx"),
+				b = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				g = n("./src/reddit/constants/experiments.ts"),
 				f = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = n("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.E)(e) || x.gc.ShowTopContent === Object(f.c)(e, {
+			const O = e => Object(y.E)(e) || g.ic.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: x.bc
+				experimentName: g.dc
 			});
 			var C = n("./src/reddit/selectors/subreddit.ts"),
 				v = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -133,9 +133,9 @@
 				inSubredditTopContentExperiment: O,
 				subredditUrl: C.d
 			}), e => ({
-				trackDiscoveryUnitView: t => e((e, n) => g.f(n(), t)),
-				trackDismissClick: t => e((e, n) => g.h(n(), t)),
-				trackPostView: r()((t, n, s) => e((e, o) => g.A(o(), t, n, s)), (e, t) => {
+				trackDiscoveryUnitView: t => e((e, n) => b.f(n(), t)),
+				trackDismissClick: t => e((e, n) => b.h(n(), t)),
+				trackPostView: r()((t, n, s) => e((e, o) => b.A(o(), t, n, s)), (e, t) => {
 					let {
 						id: n
 					} = e;
@@ -170,7 +170,7 @@
 					const {
 						postIds: o,
 						range: r
-					} = n, i = "".concat(t).concat(p.O.TOP, "?t=").concat(r), a = c.a.createElement(b.a, {
+					} = n, i = "".concat(t).concat(p.O.TOP, "?t=").concat(r), a = c.a.createElement(x.a, {
 						className: j.a.widgetHeader
 					}, c.a.createElement("button", {
 						className: j.a.closeButton,
@@ -238,9 +238,9 @@
 				u = n("./src/reddit/selectors/video.ts"),
 				m = n("./src/lib/classNames/index.ts"),
 				h = n("./src/higherOrderComponents/withClickTracking.tsx"),
-				b = n("./src/reddit/components/PostContainer/index.m.less"),
-				g = n.n(b);
-			const x = Object(r.c)({
+				x = n("./src/reddit/components/PostContainer/index.m.less"),
+				b = n.n(x);
+			const g = Object(r.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: n
@@ -280,7 +280,7 @@
 						})
 					}
 				}),
-				f = Object(d.a)(x),
+				f = Object(d.a)(g),
 				y = e => {
 					const t = Object(h.d)(e.target, e.currentTarget),
 						n = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
@@ -302,7 +302,7 @@
 						onPostContentClick: p,
 						style: u,
 						ref: h
-					} = this.props, b = o.a.createElement("div", {
+					} = this.props, x = o.a.createElement("div", {
 						"data-click-id": "post-container",
 						style: u,
 						ref: h,
@@ -314,16 +314,16 @@
 						onClick: t => {
 							!this.cancelClick && t.button < 2 && (e(() => d && d(t, c))(t), p && y(t) && p(t, c))
 						},
-						className: Object(m.a)(g.a.WrappedPost, n, "Post ".concat(c.id), {
+						className: Object(m.a)(b.a.WrappedPost, n, "Post ".concat(c.id), {
 							promotedlink: c.isSponsored
 						}),
 						id: r ? r(c.id) : c.id,
 						tabIndex: -1
-					}, t, s && o.a.createElement(a.a, null)), x = !!c.media && c.media.type === l.n.VIDEO;
-					return c.isSponsored || x ? o.a.createElement(i.a, {
+					}, t, s && o.a.createElement(a.a, null)), g = !!c.media && c.media.type === l.n.VIDEO;
+					return c.isSponsored || g ? o.a.createElement(i.a, {
 						post: c,
 						trackDisplay: !0
-					}, b) : b
+					}, x) : x
 				}
 			}
 			t.a = f(Object(h.c)(O))
@@ -349,9 +349,9 @@
 				u = n.n(p);
 			const m = ["center", "top"],
 				h = ["center", "bottom"],
-				b = c.a.div("Container", u.a),
-				g = Object(i.a)(a.b),
-				x = Object(d.t)({
+				x = c.a.div("Container", u.a),
+				b = Object(i.a)(a.b),
+				g = Object(d.t)({
 					isProfileListingPage: d.F
 				});
 			class f extends r.a.Component {
@@ -376,7 +376,7 @@
 					const {
 						showTooltip: t
 					} = this.state;
-					return r.a.createElement(b, {
+					return r.a.createElement(x, {
 						innerRef: this.setTooltipTargetRef,
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
@@ -384,7 +384,7 @@
 						className: u.a.quarantineIcon
 					}), s.fbt._("quarantined", null, {
 						hk: "3hfN4T"
-					}), r.a.createElement(g, {
+					}), r.a.createElement(b, {
 						text: s.fbt._("This post was submitted in a quarantined community", null, {
 							hk: "1Rebnc"
 						}),
@@ -395,7 +395,7 @@
 					}))
 				}
 			}
-			t.a = x(f)
+			t.a = g(f)
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -488,4 +488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.f8d46480ae955114147f.js.map
+//# sourceMappingURL=SubredditTopContent.1cd26f63ea2bc2421395.js.map

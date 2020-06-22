@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7e3af6b1f88985ba5de8.js
-// Retrieved at 6/17/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.40a46e83567df8a6baab.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1259,8 +1259,8 @@
 				R = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				M = r("./src/reddit/selectors/user.ts");
 			const D = 25,
-				A = .5,
-				H = Object(d.c)({
+				H = .5,
+				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
 							categoryId: r
@@ -1282,7 +1282,7 @@
 					},
 					subreddits: B.Y
 				}),
-				G = Object(i.b)(H, e => ({
+				G = Object(i.b)(A, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
 				}));
 			class Q extends o.a.Component {
@@ -1350,7 +1350,7 @@
 						className: C.a.subredditRankingsList
 					}, n ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(v.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: A,
+						threshold: H,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(F.a, {
 						large: !0
@@ -1362,8 +1362,8 @@
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				Y = r.n(K);
 
-			function z() {
-				return (z = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -1371,7 +1371,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = e => {
+			const z = e => {
 				const {
 					category: t,
 					children: r,
@@ -1379,7 +1379,7 @@
 					isActive: n,
 					tabIndex: a
 				} = e, i = Object(c.a)(Y.a.categoryLink, n && Y.a.active, s);
-				return o.a.createElement("li", null, o.a.createElement(V.a, z({}, t.anchorProps, {
+				return o.a.createElement("li", null, o.a.createElement(V.a, Z({}, t.anchorProps, {
 					className: i,
 					"data-active": n,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1439,7 +1439,7 @@
 						}
 					}, n, e && e.map((e, s) => {
 						const n = a + s * r;
-						return o.a.createElement(Z, {
+						return o.a.createElement(z, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1547,7 +1547,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.uc)(p.f),
+				xe = Object(u.wc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1648,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.Ab.Rotate || t === s.Ab.RotateAll
+				return t === s.Cb.Rotate || t === s.Cb.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.zb
+					experimentName: s.Bb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.7e3af6b1f88985ba5de8.js.map
+//# sourceMappingURL=SubredditLeaderboard.40a46e83567df8a6baab.js.map

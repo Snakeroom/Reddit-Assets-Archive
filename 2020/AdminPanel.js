@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.d6b99d56b1b556363679.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.1e33ac38962068b07c85.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -610,7 +610,7 @@
 			var Ze = e => {
 					const t = ["control_1", "control_2", ...Ue.e[e.experimentName]];
 					if (!t) return null;
-					const n = Ue.db.has(e.experimentName);
+					const n = Ue.fb.has(e.experimentName);
 					return a.a.createElement(J.a, {
 						className: e.className
 					}, a.a.createElement(We, null, "".concat(e.experimentName).concat(n ? "*" : "")), a.a.createElement(ze, {
@@ -1423,4 +1423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.d6b99d56b1b556363679.js.map
+//# sourceMappingURL=AdminPanel.1e33ac38962068b07c85.js.map

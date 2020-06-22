@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e202048b754a67745765.js
-// Retrieved at 6/22/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.5971a3d2bc8a16c48c52.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -1592,9 +1592,9 @@
 						className: yt.a.commentPreview
 					}, s.a.createElement("div", {
 						className: yt.a.voteContainer
-					}, s.a.createElement(We.a, {
+					}, s.a.createElement(We.b, {
 						className: yt.a.vote
-					}), s.a.createElement(Ue.a, {
+					}), s.a.createElement(Ue.b, {
 						className: yt.a.vote
 					})), n && s.a.createElement(s.a.Fragment, null, s.a.createElement(qe.a, {
 						className: yt.a.radialHighlightOuter,
@@ -2423,4 +2423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.e202048b754a67745765.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.5971a3d2bc8a16c48c52.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.bb02dc2897b023523748.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.3c56f3d84333d67db127.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1331,12 +1331,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.fc.SmIcon:
+						case N.hc.SmIcon:
 							return a.a.createElement(L, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case N.fc.SmIconHc:
+						case N.hc.SmIconHc:
 							return a.a.createElement(L, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1779,12 +1779,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ac
+						experimentName: n.cc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.fc.SmIcon || t === n.fc.SmIconHc
+					return t === n.hc.SmIcon || t === n.hc.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1810,4 +1810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.bb02dc2897b023523748.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.3c56f3d84333d67db127.js.map

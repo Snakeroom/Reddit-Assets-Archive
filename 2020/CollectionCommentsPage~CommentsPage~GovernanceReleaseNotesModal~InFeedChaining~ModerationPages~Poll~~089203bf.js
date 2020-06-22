@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.4f34c0997c83ccf12128.js
-// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.a74f49c2c141b1bda161.js
+// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Cb
+					experimentName: l.Eb
 				});
-				return Object(l.vc)(t) ? void 0 : t
+				return Object(l.xc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Db
+					experimentName: l.Fb
 				});
-				return Object(l.vc)(t) ? void 0 : t
-			}, (e, t) => e === l.Eb.Enabled && t === l.Eb.Enabled);
+				return Object(l.xc)(t) ? void 0 : t
+			}, (e, t) => e === l.Gb.Enabled && t === l.Gb.Enabled);
 			var u = s("./src/config.ts");
 			var m = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "5e114e5-production"
+					SENTRY_RELEASE_VERSION: "eb88b05-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -565,15 +565,15 @@
 				T = s("./src/reddit/components/PlayButton/index.tsx"),
 				N = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				j = s("./src/reddit/components/RichTextJson/index.tsx"),
-				D = s("./src/reddit/constants/componentSizes.ts"),
-				_ = s("./src/reddit/constants/screenWidths.ts"),
+				_ = s("./src/reddit/constants/componentSizes.ts"),
+				D = s("./src/reddit/constants/screenWidths.ts"),
 				P = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				R = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				V = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				A = s("./src/reddit/helpers/name/index.ts"),
 				W = s("./src/reddit/helpers/postHasSelfText/index.ts"),
-				H = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
-				F = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
+				F = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
+				H = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				B = s("./src/reddit/models/Media/index.ts"),
 				U = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				k = s("./src/reddit/selectors/postCreations.ts"),
@@ -619,7 +619,7 @@
 				X = 1200,
 				Z = 75,
 				$ = "player.js",
-				ee = D.r + D.q,
+				ee = _.r + _.q,
 				te = e => e.isVisible ? e.children : c.a.createElement("div", {
 					className: J.a.displayNone
 				}, e.children),
@@ -793,7 +793,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(B.i, this.state.viewportHeight),
 						s = Math.min(X, 16 * t / 9);
-					s === X && (t = 9 * X / 16), e = this.state.viewportWidth >= _.c ? this.state.viewportWidth < D.l ? this.state.viewportWidth - ee - 2 * Z : this.state.viewportWidth - ee - D.e - 2 * Z : this.state.viewportWidth - 2 * Z;
+					s === X && (t = 9 * X / 16), e = this.state.viewportWidth >= D.c ? this.state.viewportWidth < _.l ? this.state.viewportWidth - ee - 2 * Z : this.state.viewportWidth - ee - _.e - 2 * Z : this.state.viewportWidth - 2 * Z;
 					const i = this.state.viewportHeight - 2 * Z;
 					if (s > e) {
 						t *= e / s, s = e
@@ -892,13 +892,13 @@
 					} = this.props, {
 						canLoadContent: y,
 						forcePause: w,
-						shouldPause: D,
-						shouldStop: _,
+						shouldPause: _,
+						shouldStop: D,
 						viewportWidth: P
 					} = this.state;
 					if (!p.media) return null;
-					const A = w || D,
-						U = _,
+					const A = w || _,
+						U = D,
 						{
 							source: k,
 							obfuscated: G,
@@ -957,7 +957,7 @@
 								showFull: b
 							}, c.a.createElement(j.a, {
 								flairStyleTemplate: s,
-								content: p.isMeta ? Object(F.a)(i, p.id) : i,
+								content: p.isMeta ? Object(H.a)(i, p.id) : i,
 								mediaMetadata: p.media.mediaMetadata,
 								postId: p.id,
 								rtJsonElementProps: ce(this.props),
@@ -983,7 +983,7 @@
 									showFull: b
 								}, c.a.createElement(N.a, {
 									flairStyleTemplate: s,
-									html: p.isMeta ? Object(H.a)(p.media.content, p.id, J.a.hiddenLink) : p.media.content
+									html: p.isMeta ? Object(F.a)(p.media.content, p.id, J.a.hiddenLink) : p.media.content
 								}))
 							}
 							return null;
@@ -1080,7 +1080,7 @@
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), y && c.a.createElement(Q, {
-								autoPlay: "boolean" == typeof D ? !D : void 0,
+								autoPlay: "boolean" == typeof _ ? !_ : void 0,
 								isExpando: o,
 								shouldLoad: !0,
 								shouldPause: A,
@@ -1116,7 +1116,7 @@
 							}));
 						case B.n.IMAGE:
 							const w = this.state.viewportHeight - 2 * Z,
-								_ = this.state.viewportWidth - 2 * Z;
+								D = this.state.viewportWidth - 2 * Z;
 							let P, G = k;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(x.a)(p.thumbnail.url) ? G = p.thumbnail.url : p.preview && Object(x.a)(p.preview.url) && (G = p.preview.url)), l && (P = g ? "".concat(g, " - ").concat(p.title) : p.title), c.a.createElement(I.a, q({}, ee, {
 								blurSrc: X ? G : void 0,
@@ -1133,7 +1133,7 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								maxHeight: o ? w : void 0,
-								maxWidth: o ? _ : void 0,
+								maxWidth: o ? D : void 0,
 								postId: p.id,
 								shouldBlur: se,
 								source: G,
@@ -1250,4 +1250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.4f34c0997c83ccf12128.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.a74f49c2c141b1bda161.js.map
