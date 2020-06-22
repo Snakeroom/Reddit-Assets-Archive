@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.32fb2d10048d2b916180.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.26c69c872742654264d4.js
+// Retrieved at 6/22/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3522,6 +3522,7 @@
 					}))
 				} else t(Object(a.e)({
 					kind: g.b.Error,
+					duration: a.a,
 					text: y._("Failed to join a subreddit channel", null, {
 						hk: "mZam3"
 					})
@@ -54497,4 +54498,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.32fb2d10048d2b916180.js.map
+//# sourceMappingURL=Governance~Reddit.26c69c872742654264d4.js.map
