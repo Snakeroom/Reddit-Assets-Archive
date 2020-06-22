@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.49e93451257fd81305f2.js
-// Retrieved at 6/22/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c87f73d4a2c59c821046.js
+// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1507,18 +1507,20 @@
 		},
 		"./src/reddit/actions/chat/toggle.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "b", (function() {
 				return b
-			})), n.d(t, "a", (function() {
-				return p
-			})), n.d(t, "b", (function() {
-				return f
 			})), n.d(t, "e", (function() {
-				return O
+				return p
+			})), n.d(t, "a", (function() {
+				return f
 			})), n.d(t, "c", (function() {
+				return O
+			})), n.d(t, "f", (function() {
 				return m
+			})), n.d(t, "d", (function() {
+				return g
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react-router-redux/es/index.js"),
 				r = n("./src/lib/loadWithRetries/index.ts"),
 				o = n("./src/chat/constants/container.ts"),
@@ -1534,16 +1536,18 @@
 				}, b] = await Promise.all([Object(c.c)(e, t, n), u()]), p = t(), f = await d(), O = Object(i.h)(p, r);
 				a.dispatch(f(O)), a.getState().container.size !== o.a.EMBED && a.dispatch(b(o.a.EMBED)), !l && a.dispatch(Object(s.c)(n))
 			}
-			const b = () => async (e, t) => Promise.all([Object(c.c)(e, t), u()]).then(e => {
+			const b = (e, t) => async (n, s) => {
+				e = e.replace(/sendbird_group_channel_/, ""), await l(n, s, e, t)
+			}, p = () => async (e, t) => Promise.all([Object(c.c)(e, t), u()]).then(e => {
 				let [{
 					chatStore: t,
 					firstInit: n
 				}, s] = e;
 				t.getState().container.size !== o.a.EMBED || n ? t.dispatch(s(o.a.EMBED)) : t.dispatch(s(o.a.HIDDEN))
-			}), p = (e, t) => async (s, o) => {
+			}), f = (e, t) => async (s, o) => {
 				const a = (await (() => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/helpers/urls/index.ts"))).then(e => e.channelUserIdUrl))())(e);
 				await l(s, o, a, t)
-			}, f = e => {
+			}, O = e => {
 				let {
 					channelId: t,
 					subredditName: s,
@@ -1557,11 +1561,11 @@
 					if (!o) throw new Error("Please specify channelUrl or channelId (subredditName is optional)");
 					await l(e, a, o)
 				}
-			}, O = e => async (t, s) => {
+			}, m = e => async (t, s) => {
 				if (!c.b) return;
 				const o = await (() => Object(r.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), n.e("vendors~Chat~RedesignChat"), n.e("Chat~RedesignChat"), n.e("RedesignChat")]).then(n.bind(null, "./src/chat/actions/theme.ts"))).then(e => e.switchTheme))();
 				c.b.dispatch(o(e))
-			}, m = () => async (e, t) => {
+			}, g = () => async (e, t) => {
 				const n = t(),
 					s = n.user.account && n.user.account.id || "unknown";
 				Object(a.c)(s) && Object(c.c)(e, t)
@@ -3513,7 +3517,7 @@
 					const {
 						deeplink_url: e
 					} = j.body, n = Object(f.a)(e);
-					n && n.pathname && t(Object(r.b)({
+					n && n.pathname && t(Object(r.c)({
 						channelUrl: n.pathname
 					}))
 				} else t(Object(a.e)({
@@ -13571,7 +13575,7 @@
 						}
 						t(oe({
 							nightmode: e
-						})), t(Object(g.e)(e)), c.a.remove(y.d, {
+						})), t(Object(g.f)(e)), c.a.remove(y.d, {
 							domain: r.a.cookieDomain
 						})
 					}
@@ -54493,4 +54497,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.49e93451257fd81305f2.js.map
+//# sourceMappingURL=Governance~Reddit.c87f73d4a2c59c821046.js.map

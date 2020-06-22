@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.95dbaa71c69926be64c2.js
-// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.223f0e9b975cc6e38d4e.js
+// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -3352,7 +3352,7 @@
 						toggleCreateModal: () => e(Object(b.i)(f.a.CREATE_SUBREDDIT_CHAT)),
 						toggleEditModal: () => e(Object(b.i)(f.a.EDIT_SUBREDDIT_CHAT)),
 						fetchSubredditChannels: t => e(Object(u.l)(t)),
-						onChatLinkClick: (t, n) => e(Object(p.b)({
+						onChatLinkClick: (t, n) => e(Object(p.c)({
 							channelId: t,
 							subredditName: n
 						})),
@@ -7484,4 +7484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.95dbaa71c69926be64c2.js.map
+//# sourceMappingURL=Subreddit.223f0e9b975cc6e38d4e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.dcde72f4f156c1a22dfb.js
-// Retrieved at 6/22/2020, 11:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.925fcf5b2f9da6d6c055.js
+// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9055,11 +9055,10 @@
 			! function(e) {
 				e.Navigate = "navigate.chat", e.Websocket = "websocket.chat", e.Expand = "expand.chat", e.UnreadCount = "unreadCount.chat"
 			}(a || (a = {}));
-			const C = c()(e => {
-				window.addEventListener("message", t => {
+			const C = e => t => {
 					const n = (e => {
 						try {
-							return JSON.parse(e.data)
+							return "object" == typeof e.data ? e.data : JSON.parse(e.data)
 						} catch (t) {
 							return
 						}
@@ -9087,9 +9086,11 @@
 							break
 						}
 					}
-				})
-			});
-			t.a = e => "undefined" == typeof window ? p.a : (C(e), t => n => {
+				},
+				_ = c()(e => {
+					window.addEventListener("message", C(e)), window.navigator.serviceWorker.addEventListener("message", C(e))
+				});
+			t.a = e => "undefined" == typeof window ? p.a : (_(e), t => n => {
 				switch (n.type) {
 					case m.a:
 					case h.a: {
@@ -14046,4 +14047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.dcde72f4f156c1a22dfb.js.map
+//# sourceMappingURL=Chat~RedesignChat.925fcf5b2f9da6d6c055.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6deff76b3a376c94a3ec.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4c3ca5ad9e1905872e13.js
+// Retrieved at 6/22/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -6310,7 +6310,7 @@
 				ed = Object(m.b)($c, (e, t) => ({
 					closeChangeUsernameTooltip: () => e(Object(qo.d)()),
 					closeEmailVerificationTooltip: () => e(Object(Vo.b)()),
-					onChatClick: () => e(Object(Wo.d)()),
+					onChatClick: () => e(Object(Wo.e)()),
 					onDismissCustomizeFlyout: () => e(Object(T.t)()),
 					onOpenModerationDropdown: () => e(Object(xr.h)({
 						tooltipId: Bc.a
@@ -11387,7 +11387,7 @@
 							}
 							d.dispatch(Object(I.c)())
 						}
-						Object(ee.H)(d.getState()) && (d.dispatch(Object(M.d)()), d.dispatch(Object(k.c)())), Object(h.requestIdleCallback)(async () => {
+						Object(ee.H)(d.getState()) && (d.dispatch(Object(M.d)()), d.dispatch(Object(k.d)())), Object(h.requestIdleCallback)(async () => {
 							d.dispatch(Object(F.d)()), await Object(b.a)() && (e => Object(j.a)(Object.assign({}, Zt.defaults(e), {
 								source: "global",
 								action: "view",
@@ -13288,4 +13288,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.6deff76b3a376c94a3ec.js.map
+//# sourceMappingURL=Reddit.4c3ca5ad9e1905872e13.js.map
