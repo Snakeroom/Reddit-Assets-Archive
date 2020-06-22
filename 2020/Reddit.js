@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.78d6e12f1be308c15a98.js
-// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d0a814c2ac16eece86a5.js
+// Retrieved at 6/22/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -10945,17 +10945,13 @@
 						o = e.getState();
 					return o.user.session && r(o.user.session), window.addEventListener("focus", a), window.addEventListener("touchend", a), document.body.addEventListener("mouseenter", a), e => t => (t.type !== G.a && t.type !== G.b && t.type !== G.c && t.type !== G.e || r(t.payload), t.type === G.d && (clearTimeout(s), s = null), e(t))
 				},
-				jt = s("./src/reddit/actions/page.ts"),
-				wt = s("./src/reddit/singleton/tracing/index.ts");
-			var _t = e => e => t => {
+				jt = s("./src/reddit/singleton/tracing/index.ts");
+			var wt = e => e => t => {
 					const s = () => e(t);
-					switch (t.type) {
-						case jt.b:
-							return wt.b.recordLocalSpan(t.type, s)
-					}
-					return e(t)
+					return jt.b.isEnabled ? jt.b.recordLocalSpan(t.type, s) : e(t)
 				},
-				kt = s("./src/reddit/actions/frontpage.ts"),
+				_t = s("./src/reddit/actions/frontpage.ts"),
+				kt = s("./src/reddit/actions/page.ts"),
 				Mt = s("./src/reddit/actions/pages/profileComments.ts"),
 				It = s("./src/reddit/actions/pages/profileOverview.ts"),
 				Nt = s("./src/reddit/actions/pages/profilePosts.ts"),
@@ -11004,7 +11000,7 @@
 					}
 					const a = t(s);
 					switch (s.type) {
-						case jt.g:
+						case kt.g:
 						case It.b:
 						case It.e:
 						case Nt.e:
@@ -11025,7 +11021,7 @@
 							t.posts || n(e);
 							break
 						}
-						case kt.b:
+						case _t.b:
 						case Lt.i:
 						case Nt.b: {
 							const {
@@ -11226,7 +11222,7 @@
 					routes: rs.a,
 					apiContext: ps.apiContext,
 					gqlContext: hs.gqlContext
-				}), bs.middleware, dt, ps.middleware, hs.middleware, St, gt, _t, Qt, Pt, Ot],
+				}), bs.middleware, dt, ps.middleware, hs.middleware, St, gt, wt, Qt, Pt, Ot],
 				modifyInitialData: e => {
 					let {
 						initialData: t,
@@ -11283,9 +11279,9 @@
 							experimentEligibilitySelector: is.a,
 							experimentName: os.q
 						}) === os.x.Enabled)(n.getState())) {
-						wt.b.enableTracing(!0);
-						const e = wt.b.createTraceFromId(r);
-						wt.b.setParent(e)
+						jt.b.enableTracing(!0);
+						const e = jt.b.createTraceFromId(r);
+						jt.b.setParent(e)
 					}
 					n.dispatch(Object(D.h)(s));
 					t.listen((e, t) => {
@@ -11358,7 +11354,7 @@
 									type: "rum"
 								}), Object(C.c)(e.meta.userAgent) && window.innerWidth > Ze.b) {
 								const s = Object(a.f)(c);
-								x.a && x.a.timing && wt.b.isEnabled && (wt.b.recordPerformanceTimings("".concat(t, "_time_to_first_byte"), x.a.timing.fetchStart, x.a.timing.responseStart), wt.b.recordPerformanceTimings("".concat(t, "_time_to_interactive"), x.a.timing.fetchStart, x.a.timing.domInteractive));
+								x.a && x.a.timing && jt.b.isEnabled && (jt.b.recordPerformanceTimings("".concat(t, "_time_to_first_byte"), x.a.timing.fetchStart, x.a.timing.responseStart), jt.b.recordPerformanceTimings("".concat(t, "_time_to_interactive"), x.a.timing.fetchStart, x.a.timing.domInteractive));
 								const n = [],
 									r = {
 										isLoggedIn: Object(ee.H)(e),
@@ -13294,4 +13290,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.78d6e12f1be308c15a98.js.map
+//# sourceMappingURL=Reddit.d0a814c2ac16eece86a5.js.map
