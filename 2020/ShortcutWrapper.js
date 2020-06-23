@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.b5c8ffd5eb5f379838bc.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.d680b7b5d474095c3570.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./src/reddit/components/Comments/helpers/hiddenComments.ts": function(t, e, s) {
@@ -90,8 +90,8 @@
 				C = s("./src/reddit/actions/comment/index.ts"),
 				f = s("./src/reddit/actions/modal.ts"),
 				g = s("./src/reddit/actions/post.ts"),
-				y = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
-				P = s("./src/reddit/constants/elementIds.ts"),
+				P = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
+				y = s("./src/reddit/constants/elementIds.ts"),
 				I = s("./src/reddit/constants/modals.ts"),
 				w = s("./src/reddit/constants/postLayout.ts"),
 				T = s("./src/reddit/helpers/overlay/index.ts"),
@@ -132,7 +132,7 @@
 				const i = n.shortcuts.activeCommentId;
 				if (i && i !== n.commentsPage.keyToHeadCommentId[d]) {
 					const t = n.commentsPage.keyToCommentThreadLinkSets[d];
-					for (r = t[i].prev.id; y.b(r);) r = t[r].prev.id
+					for (r = t[i].prev.id; P.b(r);) r = t[r].prev.id
 				} else {
 					const t = n.commentsPage.keyToHeadCommentId[d];
 					if (!t || i === t) return;
@@ -141,7 +141,7 @@
 				e(Object(N.a)(r)), Object(S.a)(r), t(L.n(r))
 			}, D = (t, e) => {
 				Object(S.b)(u.b), t(Object(N.b)(e.id)), document.body.style.overflow = "", Object(S.a)(e.id), document.body.style.overflow = "hidden", t(Object(T.a)(e.permalink));
-				const s = document.getElementById(P.d);
+				const s = document.getElementById(y.d);
 				s && s.scrollTo(0, 0)
 			};
 			var H = s("./src/reddit/actions/shortcuts/close.ts");
@@ -178,7 +178,7 @@
 								activePostId: r
 							} = n.shortcuts,
 							i = Object(S.c)(n);
-						i && (d && !n.comments.collapsed[i][d] ? (e(C.T(d)), t(L.e(d))) : r && (e(g.y(r)), t(L.f(r))))
+						i && (d && !n.comments.collapsed[i][d] ? (e(C.T(d)), t(L.e(d))) : r && (e(g.z(r)), t(L.f(r))))
 					},
 					[u.c.Expando]: t => async (e, s, o) => {
 						let {
@@ -189,7 +189,7 @@
 							r = w.b[n.user.prefs.layout];
 						if (d && (r === w.g.Compact || r === w.g.Classic)) {
 							const s = n.posts.models[d].crosspostRootId;
-							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(g.z({
+							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(g.A({
 								postId: d
 							})), t(L.g(d)))
 						}
@@ -200,7 +200,7 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activePostId;
-						d && !n.posts.models[d].isSponsored && (e(g.Z(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
+						d && !n.posts.models[d].isSponsored && (e(g.ab(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
 					},
 					[u.c.NextComment]: t => async (e, s, o) => {
 						let {
@@ -218,7 +218,7 @@
 								do {
 									if (!e[r].next) return;
 									r = e[r].next.id
-								} while (y.b(r));
+								} while (P.b(r));
 							else r = e[r].next.id
 						} else {
 							const t = n.commentsPage.keyToHeadCommentId[d];
@@ -315,7 +315,7 @@
 								activePostId: r
 							} = n.shortcuts,
 							i = Object(S.c)(n);
-						i && (d && !n.comments.collapsed[i][d] ? (e(C.gb(d)), t(L.q(d))) : r && (e(g.V(r)), t(L.r(r))))
+						i && (d && !n.comments.collapsed[i][d] ? (e(C.gb(d)), t(L.q(d))) : r && (e(g.W(r)), t(L.r(r))))
 					},
 					[u.c.Upvote]: t => async (e, s, o) => {
 						let {
@@ -327,7 +327,7 @@
 								activePostId: r
 							} = n.shortcuts,
 							i = Object(S.c)(n);
-						i && (d && !n.comments.collapsed[i][d] ? (e(C.rb(d)), t(L.t(d))) : r && (e(g.cb(r)), t(L.u(r))))
+						i && (d && !n.comments.collapsed[i][d] ? (e(C.rb(d)), t(L.t(d))) : r && (e(g.db(r)), t(L.u(r))))
 					},
 					[u.c.Konami]: null
 				},
@@ -346,7 +346,7 @@
 				q = Object(a.b)(M, t => ({
 					dispatchAction: e => t(e)
 				}));
-			class z extends r.Component {
+			class W extends r.Component {
 				getChildContext() {
 					return {
 						shortcuts: U
@@ -375,11 +375,11 @@
 					})
 				}
 			}
-			z.childContextTypes = {
+			W.childContextTypes = {
 				shortcuts: d.a.object.isRequired
 			};
-			e.default = q(Object(p.c)(z))
+			e.default = q(Object(p.c)(W))
 		}
 	}
 ]);
-//# sourceMappingURL=ShortcutWrapper.b5c8ffd5eb5f379838bc.js.map
+//# sourceMappingURL=ShortcutWrapper.d680b7b5d474095c3570.js.map

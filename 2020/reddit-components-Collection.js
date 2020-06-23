@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.6171ee9ef69ccd61297f.js
-// Retrieved at 6/22/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.fc0dfeac3b57e3ffa950.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -154,7 +154,7 @@
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			let U, X;
 			const Y = e => "".concat(e, "--collectionItem"),
-				z = e => {
+				G = e => {
 					const {
 						activeModalId: t,
 						addEventStartTime: o,
@@ -230,7 +230,7 @@
 						shouldShowDeleteButton: !1
 					}))
 				},
-				G = w.a,
+				z = w.a,
 				J = e => {
 					const {
 						activeModalId: t,
@@ -273,7 +273,7 @@
 						style: {
 							backgroundImage: "url('".concat(v, "')")
 						}
-					}) : n.a.createElement(G, {
+					}) : n.a.createElement(z, {
 						className: B.a.galleryThumbnailPlaceholder,
 						thumbnailContainerClassName: B.a.thumbnailContainerClassName,
 						classNameInnerThumbnail: Object(a.a)(B.a.galleryPostPlaceholderThumbnailOverride, B.a.commonThumbnailOverride),
@@ -343,7 +343,7 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === x.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
+					return t ? e === x.a.TIMELINE ? n.a.createElement(G, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
@@ -581,7 +581,7 @@
 					shouldShowCollectionEditOptions: C.t
 				}),
 				w = Object(a.b)(N, (e, t) => ({
-					copyLink: () => e(Object(m.F)(t.permalink)),
+					copyLink: () => e(Object(m.G)(t.permalink)),
 					onCreatePost: o => {
 						t.shouldShowCreatePost && e(Object(r.b)(o))
 					},
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Collection.6171ee9ef69ccd61297f.js.map
+//# sourceMappingURL=reddit-components-Collection.fc0dfeac3b57e3ffa950.js.map

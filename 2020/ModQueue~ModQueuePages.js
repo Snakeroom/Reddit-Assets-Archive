@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.e1d898dd2e25d214d9fd.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.cb575e8e1be9722a6e3e.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 		"./src/reddit/actions/modQueue/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return T
+				return E
 			})), n.d(t, "d", (function() {
 				return U
 			})), n.d(t, "f", (function() {
@@ -64,7 +64,7 @@
 				w = Object(a.a)(h.w),
 				N = Object(a.a)(h.v),
 				M = Object(a.a)(h.u),
-				T = (e, t, n) => async (a, r, c) => {
+				E = (e, t, n) => async (a, r, c) => {
 					let m, u, p, {
 						apiContext: f
 					} = c;
@@ -101,7 +101,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, E = Object(a.a)(h.k), F = Object(a.a)(h.b), U = e => async (t, n, s) => {
+				}, T = Object(a.a)(h.k), F = Object(a.a)(h.b), U = e => async (t, n, s) => {
 					let {
 						apiContext: a
 					} = s;
@@ -117,7 +117,7 @@
 					const f = await Object(i.b)(a(), p, {
 						moderated_after: c
 					});
-					f.ok ? (t(E(f.body)), f.body.moderatedAfter ? t(U()) : t(F())) : t(Object(d.e)({
+					f.ok ? (t(T(f.body)), f.body.moderatedAfter ? t(U()) : t(F())) : t(Object(d.e)({
 						kind: l.b.Error,
 						text: o.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
@@ -318,9 +318,9 @@
 			})), n.d(t, "removalReasonsRequested", (function() {
 				return M
 			})), n.d(t, "removalReasonAddedPending", (function() {
-				return T
-			})), n.d(t, "removalReasonAddedSuccess", (function() {
 				return E
+			})), n.d(t, "removalReasonAddedSuccess", (function() {
+				return T
 			})), n.d(t, "removalReasonAddedFailed", (function() {
 				return F
 			})), n.d(t, "addRemovalReason", (function() {
@@ -422,12 +422,12 @@
 						subredditId: e,
 						response: c.body
 					})) : t(N(c.error))
-				}, T = Object(a.a)(I.b), E = Object(a.a)(I.c), F = Object(a.a)(I.a), U = (e, t) => async (n, a, r) => {
+				}, E = Object(a.a)(I.b), T = Object(a.a)(I.c), F = Object(a.a)(I.a), U = (e, t) => async (n, a, r) => {
 					let {
 						apiContext: c
 					} = r;
 					const d = a().subreddits.models[e].name;
-					n(T());
+					n(E());
 					const i = await ((e, t, n) => Object(p.a)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
 						method: s.cb.POST,
@@ -439,7 +439,7 @@
 						} = i.body, a = Object.assign({}, t, {
 							id: s
 						});
-						n(E({
+						n(T({
 							subredditId: e,
 							reason: a
 						})), n(Object(b.e)({
@@ -509,7 +509,7 @@
 						O = e[0],
 						j = Object(v.a)(O) ? y.e.Post : y.e.Comment,
 						R = j === y.e.Post ? p.posts.models[O] : p.comments.models[O],
-						P = j === y.e.Post ? u.T : i.R;
+						P = j === y.e.Post ? u.U : i.R;
 					if (!R || !f) return;
 					d(J()), d(P({
 						[O]: {
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.e1d898dd2e25d214d9fd.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.cb575e8e1be9722a6e3e.js.map

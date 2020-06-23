@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.814085c4c9a95a63f1d9.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.aa9f381d9c8f904fb87d.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -697,10 +697,10 @@
 							}))
 						},
 						handleVote: t => {
-							const s = t === v.a.upvoted ? Object(u.cb)(r) : Object(u.y)(r);
+							const s = t === v.a.upvoted ? Object(u.db)(r) : Object(u.z)(r);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(u.ab)(r)),
+						onIgnoreReports: () => e(Object(u.bb)(r)),
 						onOpenReportsDropdown: t => e(Object(b.h)({
 							tooltipId: t
 						}))
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.814085c4c9a95a63f1d9.js.map
+//# sourceMappingURL=reddit-components-LargePost.aa9f381d9c8f904fb87d.js.map

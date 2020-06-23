@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8db4e158ac94748a8888.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.01dab31c52662cd58dc3.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -600,7 +600,7 @@
 							})
 						})), t(T(d.id));
 						const e = Object(g.a)(l.body);
-						t(Object(r.T)({
+						t(Object(r.U)({
 							[d.id]: e
 						}))
 					} else t(w(l.error))
@@ -1217,7 +1217,7 @@
 					d = "error-block-".concat(t),
 					l = "success-block-".concat(t);
 				if (a.ok) {
-					s(Object(h.T)({
+					s(Object(h.U)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -1439,7 +1439,7 @@
 						},
 						onSetSuggestedSort: t => e(C(s, t)),
 						hideTooltip: () => e(Object(m.i)()),
-						setContestMode: t => e(Object(h.X)(t, s)),
+						setContestMode: t => e(Object(h.Y)(t, s)),
 						showTooltip: () => e(Object(m.h)({
 							tooltipId: te
 						})),
@@ -5552,7 +5552,7 @@
 				w = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				I = s.n(w);
 			const S = Object(i.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.z)({
+					toggle: () => e(Object(l.A)({
 						postId: t.post.id
 					}))
 				})),
@@ -6032,8 +6032,8 @@
 					return {
 						addPostToCollection: (t, s) => e(Object(de.a)(t, s)),
 						onToggleModal: t => e(Object(u.i)(t)),
-						onToggleSave: () => e(Object(h.V)(n.postId)),
-						onHide: t => e(Object(h.Z)(n.postId, !n.hidden, o, !0)),
+						onToggleSave: () => e(Object(h.W)(n.postId)),
+						onHide: t => e(Object(h.ab)(n.postId, !n.hidden, o, !0)),
 						onReportClick: () => e(Object(g.j)(n.postId, o)),
 						onEdit: () => {
 							const t = !o && !r;
@@ -7203,12 +7203,12 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(m.u)(s.id)),
+						onApprovePost: () => e(Object(m.v)(s.id)),
 						onOpenPostModModeDropdown: t => e(Object(p.h)({
 							tooltipId: t
 						})),
-						onRemovePost: () => e(Object(m.U)(s.id, !1)),
-						onSpamPost: () => e(Object(m.U)(s.id, !0)),
+						onRemovePost: () => e(Object(m.V)(s.id, !1)),
+						onSpamPost: () => e(Object(m.V)(s.id, !0)),
 						onFlairPost: t => () => e(Object(l.i)(t))
 					}
 				});
@@ -7319,14 +7319,14 @@
 					id: f,
 					title: E,
 					onClose: () => {
-						g(!1), y("close", "click"), v(Object(d.I)()), v(Object(d.T)({
+						g(!1), y("close", "click"), v(Object(d.J)()), v(Object(d.U)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						v(Object(d.I)())
+						v(Object(d.J)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -7386,10 +7386,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						f(n.Closed), E("close", "click"), C(Object(c.I)())
+						f(n.Closed), E("close", "click"), C(Object(c.J)())
 					},
 					onClickOutside: () => {
-						C(Object(c.I)())
+						C(Object(c.J)())
 					}
 				};
 				switch (g) {
@@ -8380,12 +8380,12 @@
 						postId: s
 					} = t;
 					return {
-						onIgnoreReports: () => e(Object(v.ab)(s)),
+						onIgnoreReports: () => e(Object(v.bb)(s)),
 						onOpenReportsDropdown: t => e(Object(C.h)({
 							tooltipId: t
 						})),
 						onVoteClick: t => {
-							const n = t === T.a.upvoted ? Object(v.cb)(s) : Object(v.y)(s);
+							const n = t === T.a.upvoted ? Object(v.db)(s) : Object(v.z)(s);
 							e(n)
 						}
 					}
@@ -9330,7 +9330,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.E)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.F)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(h))
 		},
@@ -9749,20 +9749,20 @@
 						isCommentsPage: r
 					} = t;
 					return {
-						onCopyLink: () => e(Object(g.F)(s)),
-						onDelete: t => e(Object(g.O)(n, t, o)),
-						onDistinguishPost: t => e(Object(g.x)(n, t)),
+						onCopyLink: () => e(Object(g.G)(s)),
+						onDelete: t => e(Object(g.P)(n, t, o)),
+						onDistinguishPost: t => e(Object(g.y)(n, t)),
 						onGildClick: t => e(Object(h.d)({
 							correlationId: t,
 							isOverlay: o,
 							thingId: n
 						})),
-						onToggleSave: () => e(Object(g.V)(n)),
-						onToggleNSFW: () => e(Object(g.K)(n)),
-						onToggleOC: () => e(Object(g.L)(n)),
+						onToggleSave: () => e(Object(g.W)(n)),
+						onToggleNSFW: () => e(Object(g.L)(n)),
+						onToggleOC: () => e(Object(g.M)(n)),
 						onTogglePinned: () => e(Object(x.i)(n)),
-						onToggleSpoiler: () => e(Object(g.Y)(n)),
-						onHide: t => e(Object(g.Z)(n, !t, o, !0)),
+						onToggleSpoiler: () => e(Object(g.Z)(n)),
+						onHide: t => e(Object(g.ab)(n, !t, o, !0)),
 						onReportClick: () => e(Object(v.j)(n, o)),
 						onStartEventNow: () => {
 							e((e, t) => Object(l.a)(Object(O.p)()(t()))), e(Object(u.startEventNowRequested)(n))
@@ -9772,7 +9772,7 @@
 							e(Object(f.a)(n, t))
 						},
 						onFlairPost: () => e(Object(b.i)(Object(ae.b)(n, o))),
-						onToggleSendReplies: () => e(Object(g.W)(n)),
+						onToggleSendReplies: () => e(Object(g.X)(n)),
 						showCollectionsList: (t, s) => {
 							e(Object(de.e)(t)).then(() => {
 								const t = Object(le.s)(s, o);
@@ -10599,7 +10599,7 @@
 								tooltipId: s
 							}))
 						},
-						copyLink: () => e(Object(p.F)(Object(m.a)(n, {
+						copyLink: () => e(Object(p.G)(Object(m.a)(n, {
 							utm_source: "share",
 							utm_medium: "web2x"
 						})))
@@ -13160,16 +13160,16 @@
 						openPost: t => {
 							s && e(Object(a.a)({
 								lastLoadedEnv: "server"
-							})), e(d.M(t))
+							})), e(d.N(t))
 						},
 						fireAdPixelsOfType: (t, s) => {
-							e(d.B(t, s))
+							e(d.C(t, s))
 						},
 						trackOnPostEnteredViewport: (t, s, n) => {
-							e(d.P(t, n))
+							e(d.Q(t, n))
 						},
 						trackOnPostExitedViewport: (t, s, n, o) => {
-							e(d.Q(t, n, o))
+							e(d.R(t, n, o))
 						}
 					}
 				},
@@ -16555,4 +16555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.8db4e158ac94748a8888.js.map
+//# sourceMappingURL=CollectionCommentsPage.01dab31c52662cd58dc3.js.map

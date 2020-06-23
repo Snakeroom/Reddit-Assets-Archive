@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1f606ba642e79aeba50d.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.a80eafb8110ea6c20d31.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -3058,7 +3058,7 @@
 				P = n("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = n.n(P);
 			const I = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.z)({
+					toggle: () => e(Object(l.A)({
 						postId: t.post.id
 					}))
 				})),
@@ -4451,14 +4451,14 @@
 					id: v,
 					title: w,
 					onClose: () => {
-						f(!1), E("close", "click"), g(Object(c.I)()), g(Object(c.T)({
+						f(!1), E("close", "click"), g(Object(c.J)()), g(Object(c.U)({
 							[n.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						g(Object(c.I)())
+						g(Object(c.J)())
 					}
 				}, r.a.createElement("p", null, s.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [s.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -4518,10 +4518,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						v(s.Closed), w("close", "click"), y(Object(d.I)())
+						v(s.Closed), w("close", "click"), y(Object(d.J)())
 					},
 					onClickOutside: () => {
-						y(Object(d.I)())
+						y(Object(d.J)())
 					}
 				};
 				switch (f) {
@@ -4641,7 +4641,7 @@
 				},
 				isNightmodeOn: v.S
 			}), e => ({
-				openPost: t => e(Object(m.M)(t))
+				openPost: t => e(Object(m.N)(t))
 			}));
 			var E = Object(l.a)(O(e => {
 					const {
@@ -4962,7 +4962,7 @@
 					},
 					isNightmodeOn: v.S
 				}), e => ({
-					openPost: t => e(Object(b.M)(t))
+					openPost: t => e(Object(b.N)(t))
 				}));
 			class k extends a.a.Component {
 				render() {
@@ -5567,7 +5567,7 @@
 					post: n
 				} = t;
 				return {
-					onFollow: () => e(Object(d.E)(n.isSponsored ? n.postId : n.id))
+					onFollow: () => e(Object(d.F)(n.isSponsored ? n.postId : n.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -8379,10 +8379,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const n = t === i.a.upvoted ? Object(r.cb)(o) : Object(r.y)(o);
+							const n = t === i.a.upvoted ? Object(r.db)(o) : Object(r.z)(o);
 							e(n)
 						},
-						onIgnoreReports: () => e(Object(r.ab)(o)),
+						onIgnoreReports: () => e(Object(r.bb)(o)),
 						onOpenReportsDropdown: t => e(Object(a.h)({
 							tooltipId: t
 						}))
@@ -9726,7 +9726,7 @@
 							isViewSafe: t
 						}))
 					},
-					openPost: t => e(Object(z.M)(t)),
+					openPost: t => e(Object(z.N)(t)),
 					fireAdPixelsOfType: U.a,
 					trackOnPostEnteredViewport: U.a
 				}), (e, t, n) => Object.assign({}, e, t, n, {
@@ -9900,4 +9900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.1f606ba642e79aeba50d.js.map
+//# sourceMappingURL=ProfileComments.a80eafb8110ea6c20d31.js.map

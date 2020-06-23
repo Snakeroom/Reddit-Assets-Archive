@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.e172f98663ea3a5a9bb0.js
-// Retrieved at 6/16/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.f14f33f50805a0f720b2.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -142,14 +142,14 @@
 				})))),
 				T = (s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./src/reddit/contexts/PageLayer/index.tsx")),
 				L = s("./src/reddit/controls/SearchBar/index.tsx"),
-				F = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				N = s("./src/reddit/components/ModQueueList/SubredditSelectorDropdown.m.less"),
-				B = s.n(N);
+				N = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				F = s("./src/reddit/components/ModQueueList/SubredditSelectorDropdown.m.less"),
+				B = s.n(F);
 			const D = Object(T.t)({
 					currentPageUrl: T.e
 				}),
 				M = Object(l.c)({
-					moderatingSubreddits: F.k,
+					moderatingSubreddits: N.k,
 					origin: _.l
 				}),
 				Q = Object(i.b)(M),
@@ -433,8 +433,8 @@
 			var w = s("./src/lib/logs/console.ts"),
 				T = s("./src/lib/objectSelector/index.ts"),
 				L = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
-				F = s("./src/reddit/components/Comments/UnthreadedComment/index.tsx"),
-				N = s("./src/reddit/components/Comments/UnthreadedCommentContainer/index.tsx"),
+				N = s("./src/reddit/components/Comments/UnthreadedComment/index.tsx"),
+				F = s("./src/reddit/components/Comments/UnthreadedCommentContainer/index.tsx"),
 				B = s("./src/reddit/components/Comments/UnthreadedCommentDashWrapper/index.tsx"),
 				D = s("./src/reddit/components/Comments/UnthreadedCommentMeta/index.tsx"),
 				M = s("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.tsx"),
@@ -448,7 +448,7 @@
 				q = s.n(X);
 			const Z = p.a.div("LeftRail", q.a),
 				H = p.a.wrapped(W.a, "BulkActionCheckbox", q.a),
-				J = p.a.wrapped(N.a, "UnthreadedCommentContainer", q.a),
+				J = p.a.wrapped(F.a, "UnthreadedCommentContainer", q.a),
 				z = p.a.div("CommentColumn", q.a),
 				K = p.a.div("VoteColumn", q.a),
 				G = p.a.wrapped(L.c, "ModToolsFlatlist", q.a),
@@ -461,7 +461,7 @@
 				ne = Object(T.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			var re = Object(F.b)(p.a.wrapped(e => {
+			var re = Object(N.b)(p.a.wrapped(e => {
 					const {
 						className: t,
 						comment: s,
@@ -523,7 +523,7 @@
 				he = Object(T.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			var ge = Object(F.b)(p.a.wrapped(e => {
+			var ge = Object(N.b)(p.a.wrapped(e => {
 					const {
 						className: t,
 						comment: s,
@@ -537,7 +537,7 @@
 						showBulkActionCheckbox: m,
 						toggleCheckbox: p
 					} = e;
-					return l.a.createElement(N.a, {
+					return l.a.createElement(F.a, {
 						className: t,
 						clickTrackingId: s.id,
 						permalink: s.permalink
@@ -551,7 +551,7 @@
 					}), l.a.createElement(de, null, l.a.createElement(ce, null, l.a.createElement(pe, null, s.postAuthor && l.a.createElement(M.a, {
 						comment: s,
 						subredditOrProfile: c
-					}), s.postTitle && l.a.createElement(F.a, null, s.postTitle)), l.a.createElement(B.a, {
+					}), s.postTitle && l.a.createElement(N.a, null, s.postTitle)), l.a.createElement(B.a, {
 						comment: s
 					}, l.a.createElement(ue, null, l.a.createElement(A.a, {
 						content: Object(U.a)(s),
@@ -569,8 +569,8 @@
 				xe = s("./src/reddit/constants/postLayout.ts");
 			const fe = {
 					[xe.g.Large]: ge,
-					[xe.g.Medium]: F.c,
-					[xe.g.Classic]: F.c,
+					[xe.g.Medium]: N.c,
+					[xe.g.Classic]: N.c,
 					[xe.g.Compact]: re
 				},
 				Ce = e => null;
@@ -585,14 +585,14 @@
 				Ie = s.n(ve);
 			const {
 				fbt: Pe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), we = "".concat(je.a.assetPath, "/img/snoomoji/cat_blep.png"), Te = p.a.div("Container", Ie.a), Le = p.a.div("Image", Ie.a), Fe = p.a.div("Title", Ie.a), Ne = p.a.div("Text", Ie.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), we = "".concat(je.a.assetPath, "/img/snoomoji/cat_blep.png"), Te = p.a.div("Container", Ie.a), Le = p.a.div("Image", Ie.a), Ne = p.a.div("Title", Ie.a), Fe = p.a.div("Text", Ie.a);
 			var Be = () => l.a.createElement(Te, null, l.a.createElement(Le, {
 					style: {
 						backgroundImage: "url(".concat(we, ")")
 					}
-				}), l.a.createElement(Fe, null, Pe._("The queue is clean!", null, {
+				}), l.a.createElement(Ne, null, Pe._("The queue is clean!", null, {
 					hk: "3d14fC"
-				})), l.a.createElement(Ne, null, Pe._("Kitteh is pleased", null, {
+				})), l.a.createElement(Fe, null, Pe._("Kitteh is pleased", null, {
 					hk: "3NSHqg"
 				}))),
 				De = s("./src/reddit/components/PostList/Placeholder.tsx");
@@ -744,7 +744,7 @@
 				}), "DropdownRow", St.a),
 				Tt = p.a.span("Bullet", St.a),
 				Lt = p.a.div("Text", St.a),
-				Ft = Object(c.c)({
+				Nt = Object(c.c)({
 					activeModalId: rt.a,
 					dropdownIsOpen: Object(dt.b)(Ot),
 					flairData: it.d,
@@ -753,7 +753,7 @@
 					posts: lt.R,
 					selectedItems: Oe.g
 				}),
-				Nt = Object(d.b)(Ft, e => ({
+				Ft = Object(d.b)(Nt, e => ({
 					onApprove: () => e(Object(u.f)(Ee.a.Approve)),
 					onFlair: (t, s) => e(Object(u.f)(Ee.a.Flair, t, s)),
 					onOpenDropdown: () => e(Object(Ue.h)({
@@ -782,7 +782,7 @@
 						})
 					}] : s
 				};
-			var Dt = Nt(p.a.wrapped(e => {
+			var Dt = Ft(p.a.wrapped(e => {
 					const {
 						activeModalId: t,
 						className: s,
@@ -932,8 +932,8 @@
 					bulkUnselectItems: t => e(Object(u.c)({
 						ids: t
 					})),
-					fireAdPixelsOfType: (t, s) => e(Object(b.B)(t, s)),
-					openPost: t => e(Object(b.M)(t))
+					fireAdPixelsOfType: (t, s) => e(Object(b.C)(t, s)),
+					openPost: t => e(Object(b.N)(t))
 				})),
 				qt = e => e.page ? parseInt(e.page, 10) : Ee.b,
 				Zt = e => qt(e) + 1,
@@ -1386,4 +1386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.e172f98663ea3a5a9bb0.js.map
+//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.f14f33f50805a0f720b2.js.map

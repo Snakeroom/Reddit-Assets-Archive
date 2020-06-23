@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9bde6ab49f360e11a2b6.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.d21b35a6acfd7e5a7667.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -377,7 +377,7 @@
 					onPostClick: t => {
 						e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(Object(g.M)({
+						})), e(Object(g.N)({
 							postOrComment: t
 						}))
 					}
@@ -402,8 +402,8 @@
 					} = t;
 					return Object(m.k)(e, s)
 				}
-			}), M = Object(r.b)(R);
-			class A extends o.a.PureComponent {
+			}), A = Object(r.b)(R);
+			class M extends o.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -450,7 +450,7 @@
 					})))
 				}
 			}
-			t.default = M(A)
+			t.default = A(M)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1268,4 +1268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9bde6ab49f360e11a2b6.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.d21b35a6acfd7e5a7667.js.map

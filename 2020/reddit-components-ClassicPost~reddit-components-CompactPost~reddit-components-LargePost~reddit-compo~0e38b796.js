@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.038029b5f6d138ecf800.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.7a150b9763fb9b51da3e.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -342,14 +342,14 @@
 					id: h,
 					title: O,
 					onClose: () => {
-						f(!1), j("close", "click"), E(Object(i.I)()), E(Object(i.T)({
+						f(!1), j("close", "click"), E(Object(i.J)()), E(Object(i.U)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						E(Object(i.I)())
+						E(Object(i.J)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -409,10 +409,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						h(n.Closed), O("close", "click"), k(Object(d.I)())
+						h(n.Closed), O("close", "click"), k(Object(d.J)())
 					},
 					onClickOutside: () => {
-						k(Object(d.I)())
+						k(Object(d.J)())
 					}
 				};
 				switch (f) {
@@ -668,9 +668,9 @@
 						caretOnTop: !1
 					},
 					W = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === p.a.SUBREDDIT,
-					X = A("Approve", z.id, V),
-					Z = A("Archived", z.id, V),
-					J = A("Automod", z.id, V),
+					J = A("Approve", z.id, V),
+					X = A("Archived", z.id, V),
+					Z = A("Automod", z.id, V),
 					K = A("Lock", z.id, V),
 					q = A("Mod", z.id, V),
 					Y = A("Remove", z.id, V),
@@ -692,11 +692,11 @@
 				}, U))), z.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					className: I.a.archivedIcon,
 					desc: N(),
-					id: Z,
-					onMouseEnter: D(Z),
+					id: X,
+					onMouseEnter: D(X),
 					onMouseLeave: H
 				}), r.a.createElement(u.c, w({
-					tooltipId: Z,
+					tooltipId: X,
 					text: N()
 				}, U))), z.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					className: I.a.lockIcon,
@@ -728,11 +728,11 @@
 				}, U))), (z.isApproved || z.approvedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
 					className: I.a.approveIcon,
 					desc: Object(v.a)(z),
-					id: X,
-					onMouseEnter: D(X),
+					id: J,
+					onMouseEnter: D(J),
 					onMouseLeave: H
 				}), r.a.createElement(u.c, w({
-					tooltipId: X,
+					tooltipId: J,
 					text: Object(v.a)(z)
 				}, U))), Object(x.a)(z) && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
 					className: I.a.removeIcon,
@@ -766,11 +766,11 @@
 				}, U))), ("AutoModerator" === z.approvedBy || "AutoModerator" === z.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
 					className: Object(i.a)(I.a.automoderator, !!z.bannedBy && I.a.isRemoved),
 					desc: v.b,
-					id: J,
-					onMouseEnter: D(J),
+					id: Z,
+					onMouseEnter: D(Z),
 					onMouseLeave: H
 				}), r.a.createElement(u.c, w({
-					tooltipId: J,
+					tooltipId: Z,
 					text: v.b
 				}, U))), Object(f.a)(z) && !M && r.a.createElement(o.Fragment, null, r.a.createElement(g.a, {
 					className: I.a.reportIcon,
@@ -980,7 +980,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.E)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.F)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -1429,4 +1429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.038029b5f6d138ecf800.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.7a150b9763fb9b51da3e.js.map

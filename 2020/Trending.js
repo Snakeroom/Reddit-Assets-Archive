@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.ceeb1448a8c4e41ee5c3.js
-// Retrieved at 6/17/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.a7b7587a8b5a68de9690.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -62,8 +62,8 @@
 				P = s("./src/reddit/models/Flair/index.ts"),
 				O = s("./src/reddit/models/Theme/index.ts"),
 				j = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				f = s("./src/reddit/components/MiniCardPost/index.m.less"),
-				C = s.n(f),
+				C = s("./src/reddit/components/MiniCardPost/index.m.less"),
+				f = s.n(C),
 				v = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
 				y = s.n(v);
 			const k = e => e.type === P.f.Spoiler,
@@ -76,7 +76,7 @@
 					onPostClick: u,
 					trendingPost: h,
 					trendingSearch: P,
-					shouldOpenPost: f,
+					shouldOpenPost: C,
 					showSubredditMeta: v = !0,
 					showSubredditName: N,
 					subredditOrProfile: T,
@@ -88,7 +88,7 @@
 				const S = h && h.preview && h.preview.url || void 0,
 					D = h && h.isSponsored ? "promoted_trend" : "trending",
 					I = h && Object(l.a)(h.permalink) || "",
-					U = f && I || P && Object(o.a)("/search", {
+					U = C && I || P && Object(o.a)("/search", {
 						q: P.rawQuery,
 						source: D
 					}) || I,
@@ -107,7 +107,7 @@
 					}, i.a.createElement(g.a, {
 						to: U
 					}, i.a.createElement("div", {
-						className: Object(d.a)(y.a.backgroundWrapper, C.a.backgroundWrapper, t),
+						className: Object(d.a)(y.a.backgroundWrapper, f.a.backgroundWrapper, t),
 						style: {
 							background: Object(O.g)(Object(j.a)(e).body, S || Object(j.a)(e).banner.backgroundImage, "cover"),
 							"--SearchDiscoveryUnits-TrendingPosts-Post-background": R
@@ -117,7 +117,7 @@
 					}, r.fbt._("promoted", null, {
 						hk: "1mLJfa"
 					})), i.a.createElement("div", {
-						className: Object(d.a)(y.a.innerContainer, C.a.innerContainer, c),
+						className: Object(d.a)(y.a.innerContainer, f.a.innerContainer, c),
 						onClick: u,
 						title: h ? h.title : ""
 					}, i.a.createElement("h2", {
@@ -220,7 +220,7 @@
 				}
 			}
 			var x = Object(a.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(l.B)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(l.C)(t, s)),
 					trackPostView: t => e((e, s) => p.J(s(), t)),
 					trackPostClick: t => e((e, s) => p.I(s(), t))
 				}))(g),
@@ -229,8 +229,8 @@
 				O = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
 				j = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx");
 			const {
-				fbt: f
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(a.b)(() => Object(i.c)({
+				fbt: C
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), f = Object(a.b)(() => Object(i.c)({
 				trendingItems: P.a
 			}), e => ({
 				fetchTrendingItems: () => e(Object(o.b)())
@@ -242,7 +242,7 @@
 				render() {
 					const e = n.a.createElement(n.a.Fragment, null, n.a.createElement(d.a, {
 						className: this.props.discoveryUnitHeaderClassName
-					}, f._("Trending today", null, {
+					}, C._("Trending today", null, {
 						hk: "3rOxuO"
 					})));
 					if (!this.props.trendingItems || 0 === this.props.trendingItems.length) return n.a.createElement(j.a, {
@@ -260,7 +260,7 @@
 					}))
 				}
 			}
-			t.default = Object(_.b)(C(v))
+			t.default = Object(_.b)(f(v))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -309,10 +309,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === d.a.upvoted ? Object(a.cb)(s) : Object(a.y)(s);
+						const r = t === d.a.upvoted ? Object(a.db)(s) : Object(a.z)(s);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.ab)(s)),
+					onIgnoreReports: () => e(Object(a.bb)(s)),
 					onOpenReportsDropdown: t => e(Object(o.h)({
 						tooltipId: t
 					}))
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.ceeb1448a8c4e41ee5c3.js.map
+//# sourceMappingURL=Trending.a7b7587a8b5a68de9690.js.map

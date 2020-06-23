@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.26b221c56a0ecb390ea3.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ff791b292fe0d906e172.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -249,8 +249,8 @@
 							postId: o
 						}))
 					},
-					handleVote: t => t === W.a.upvoted ? e(Object(l.cb)(o)) : e(Object(l.y)(o)),
-					onIgnoreReports: () => e(Object(l.ab)(o)),
+					handleVote: t => t === W.a.upvoted ? e(Object(l.db)(o)) : e(Object(l.z)(o)),
+					onIgnoreReports: () => e(Object(l.bb)(o)),
 					onOpenReportsDropdown: t => e(Object(m.h)({
 						tooltipId: t
 					}))
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.26b221c56a0ecb390ea3.js.map
+//# sourceMappingURL=reddit-components-MediumPost.ff791b292fe0d906e172.js.map

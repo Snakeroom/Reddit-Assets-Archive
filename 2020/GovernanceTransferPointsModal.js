@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.9b3b1449c8f5d0f1ce65.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.eebfec81040b30cfab88.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -102,7 +102,7 @@
 							const {
 								postId: e
 							} = l, t = r.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(i.cb)(e))
+							t && t.voteState === f.a.notVoted && n(Object(i.db)(e))
 						}
 					} else n(I({
 						pollId: e,
@@ -689,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal.9b3b1449c8f5d0f1ce65.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal.eebfec81040b30cfab88.js.map

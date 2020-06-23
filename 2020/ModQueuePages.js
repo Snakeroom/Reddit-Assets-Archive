@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ec6726551311cd123558.js
-// Retrieved at 6/17/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.e280568baa7e3bfdd78e.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -923,14 +923,14 @@
 					id: g,
 					title: y,
 					onClose: () => {
-						f(!1), P("close", "click"), C(Object(d.I)()), C(Object(d.T)({
+						f(!1), P("close", "click"), C(Object(d.J)()), C(Object(d.U)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						C(Object(d.I)())
+						C(Object(d.J)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -990,10 +990,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						g(n.Closed), y("close", "click"), v(Object(c.I)())
+						g(n.Closed), y("close", "click"), v(Object(c.J)())
 					},
 					onClickOutside: () => {
-						v(Object(c.I)())
+						v(Object(c.J)())
 					}
 				};
 				switch (f) {
@@ -2328,4 +2328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.ec6726551311cd123558.js.map
+//# sourceMappingURL=ModQueuePages.e280568baa7e3bfdd78e.js.map

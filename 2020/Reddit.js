@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.06b1343d19a0e234e948.js
-// Retrieved at 6/23/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6703ae789437e99ae869.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4892,7 +4892,7 @@
 					typeaheadSuggestions: vo.i
 				}), (e, t) => ({
 					fetchTrendingItems: () => e(Object(xr.b)()),
-					fireAdPixelsOfType: (t, s) => e(Object(yr.B)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(yr.C)(t, s)),
 					onChange: t => e(Object(Pr.j)({
 						searchQuery: t
 					})),
@@ -8322,7 +8322,7 @@
 						close: () => {
 							e(Object(u.a)(s, !0))
 						},
-						toggleVote: (t, s) => e(s === j.a.upvoted ? Object(l.cb)(t) : Object(l.y)(t))
+						toggleVote: (t, s) => e(s === j.a.upvoted ? Object(l.db)(t) : Object(l.z)(t))
 					}
 				}, (e, t, s) => Object.assign({}, e, t, s, {
 					onVoteClick: n => {
@@ -13290,4 +13290,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.06b1343d19a0e234e948.js.map
+//# sourceMappingURL=Reddit.6703ae789437e99ae869.js.map

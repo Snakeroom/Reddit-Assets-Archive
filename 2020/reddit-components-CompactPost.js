@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.cc0a832aa8f64f655d23.js
-// Retrieved at 6/17/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.12e540654037f5b6ebbb.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -536,10 +536,10 @@
 							}))
 						},
 						handleVote: t => {
-							const s = t === v.a.upvoted ? Object(O.cb)(n) : Object(O.y)(n);
+							const s = t === v.a.upvoted ? Object(O.db)(n) : Object(O.z)(n);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(O.ab)(n)),
+						onIgnoreReports: () => e(Object(O.bb)(n)),
 						onOpenReportsDropdown: t => e(Object(y.h)({
 							tooltipId: t
 						}))
@@ -1029,7 +1029,7 @@
 				C = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				T = s.n(C);
 			const S = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.z)({
+					toggle: () => e(Object(l.A)({
 						postId: t.post.id
 					}))
 				})),
@@ -1495,4 +1495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.cc0a832aa8f64f655d23.js.map
+//# sourceMappingURL=reddit-components-CompactPost.12e540654037f5b6ebbb.js.map

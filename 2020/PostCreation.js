@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8241042d6ac3dbaca8dd.js
-// Retrieved at 6/23/2020, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.443176cf489f173f1478.js
+// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "9f7caa8-production"
+					SENTRY_RELEASE_VERSION: "67fec42-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -1675,7 +1675,7 @@
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
-							t && t.voteState === b.a.notVoted && n(Object(a.cb)(e))
+							t && t.voteState === b.a.notVoted && n(Object(a.db)(e))
 						}
 					} else n(O({
 						pollId: e,
@@ -2615,8 +2615,8 @@
 				h = n("./src/reddit/selectors/video.ts");
 			const b = [{
 					event: p.a.Viewable,
-					threshold: u.j,
-					viewabilityMinimum: u.k
+					threshold: u.k,
+					viewabilityMinimum: u.l
 				}, {
 					event: p.a.Impression,
 					threshold: u.c,
@@ -2624,33 +2624,37 @@
 				}, {
 					event: p.a.VendorFullyViewable,
 					threshold: u.b,
-					viewabilityMinimum: u.g
+					viewabilityMinimum: u.h
 				}, {
 					event: p.a.GroupMViewable,
 					threshold: u.b,
-					viewabilityMinimum: u.k
+					viewabilityMinimum: u.l
 				}, {
 					event: p.a.VendorFullyViewableSeconds5,
-					threshold: u.j,
+					threshold: u.k,
+					viewabilityMinimum: u.g,
+					remainingTime: u.g,
+					timeViewingInterrupted: 0,
+					cumulative: !0,
+					cumulativeElapsedTime: 0
+				}, {
+					event: p.a.VendorFullyViewableSeconds15,
+					threshold: u.k,
 					viewabilityMinimum: u.f,
 					remainingTime: u.f,
 					timeViewingInterrupted: 0,
 					cumulative: !0,
 					cumulativeElapsedTime: 0
 				}, {
-					event: p.a.VendorFullyViewableSeconds15,
-					threshold: u.j,
-					viewabilityMinimum: u.e,
-					remainingTime: u.e,
-					timeViewingInterrupted: 0,
-					cumulative: !0,
-					cumulativeElapsedTime: 0
+					event: p.a.LargeAdFullyViewable,
+					threshold: void 0,
+					viewabilityMinimum: u.l
 				}],
 				f = [{
 					event: p.a.VideoViewable,
-					threshold: u.j,
-					viewabilityMinimum: u.i,
-					remainingTime: u.i,
+					threshold: u.k,
+					viewabilityMinimum: u.j,
+					remainingTime: u.j,
 					timeViewingInterrupted: 0
 				}, {
 					event: p.a.VideoFullyViewable,
@@ -2661,8 +2665,8 @@
 				}, {
 					event: p.a.VideoGroupMViewable,
 					threshold: void 0,
-					viewabilityMinimum: u.i,
-					remainingTime: u.i,
+					viewabilityMinimum: u.j,
+					remainingTime: u.j,
 					timeViewingInterrupted: 0,
 					cumulative: !0,
 					cumulativeElapsedTime: 0,
@@ -2703,10 +2707,12 @@
 				}),
 				x = () => g(b),
 				y = () => g(f),
-				v = [u.c, u.j, u.h, u.b],
-				C = [u.c, u.j, u.b],
-				E = e => "boolean" == typeof e.cumulative && e.cumulative,
-				O = Object(a.c)({
+				v = [u.c, u.e, u.k, u.i, u.b],
+				C = [u.k, u.i, u.b],
+				E = [u.c, u.e, u.k, u.b],
+				O = [u.c, u.k, u.b],
+				j = e => "boolean" == typeof e.cumulative && e.cumulative,
+				S = Object(a.c)({
 					continuousViewingStartedAt: (e, t) => {
 						let {
 							post: n
@@ -2734,8 +2740,8 @@
 						})
 					}
 				}),
-				j = Object(d.a)(O);
-			class S extends r.Component {
+				w = Object(d.a)(S);
+			class _ extends r.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = x(), this.videoStats = y(), this.pageInFocus = !0, this.inView = [], this.outOfView = [], this.handleViewabilityChange = e => {
 						this.checkViewabilityByType(e), this.props.trackDisplay && this.handleThresholds(e)
@@ -2791,31 +2797,31 @@
 						pixelPostHasEnteredView: t,
 						pixelPostHasExitedView: n,
 						post: s
-					} = this.props, r = C.filter(t => this.isAdequatelyInView(e, t));
+					} = this.props, r = O.filter(t => this.isAdequatelyInView(e, t));
 					o()(r, this.inView) || (r.length > 0 && t(s, r), this.inView = r);
-					const i = C.filter(t => !this.isAdequatelyInView(e, t));
+					const i = O.filter(t => !this.isAdequatelyInView(e, t));
 					o()(i, this.outOfView) || (i.length > 0 && n(s, i), this.outOfView = i)
 				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.isIntersecting && e.intersectionRatio >= t && this.pageInFocus
 				}
 				addDurationBasedViewabilityMinimum(e) {
-					this.props.videoDuration ? e.viewabilityMinimum = Math.min(.5 * this.props.videoDuration, u.e) : e.viewabilityMinimum = u.e, e.remainingTime = e.viewabilityMinimum
+					this.props.videoDuration ? e.viewabilityMinimum = Math.min(.5 * this.props.videoDuration, u.f) : e.viewabilityMinimum = u.f, e.remainingTime = e.viewabilityMinimum
 				}
-				adjustGroupMThreshold(e, t) {
+				adjustThreshold(e, t) {
 					const {
 						height: n,
 						width: s
 					} = e.boundingClientRect;
-					return !t.threshold && this.props.videoDuration && (t.threshold = s * n < 3e5 ? u.b : u.h, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === p.a.GroupMViewable && s * n > 242500 && (t.threshold = u.j), t
+					return !t.threshold && t.event === p.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = s * n < 3e5 ? u.b : u.i, t.viewabilityMinimum = .5 * this.props.videoDuration), t.threshold || t.event !== p.a.LargeAdFullyViewable || s * n >= 242500 && (t.threshold = u.e), t.event === p.a.GroupMViewable && s * n > 242500 && (t.threshold = u.k), t
 				}
 				checkViewability(e, t) {
-					if (E(t) && t.event === p.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustGroupMThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
+					if (j(t) && t.event === p.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
 						if (this.isAdequatelyInView(e, t.threshold) && !t.fired) {
 							const e = this.getLengthForTimer(t);
 							return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 						}
-						E(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
+						j(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t.timer)
 					}
 				}
 				clearTimer(e) {
@@ -2833,13 +2839,18 @@
 					}, t)
 				}
 				render() {
-					return i.a.createElement(c.a, {
-						threshold: this.props.trackVideo ? v : C,
+					const {
+						trackDisplay: e,
+						trackVideo: t
+					} = this.props;
+					let n = v;
+					return e && !t ? n = E : !e && t && (n = C), i.a.createElement(c.a, {
+						threshold: n,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
 			}
-			t.a = j(S)
+			t.a = w(_)
 		},
 		"./src/reddit/components/AuthorLink/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -6738,7 +6749,7 @@
 				}
 			}
 			var h = Object(c.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(l.A)(t))
+				onLoadRichTextContentIfNeeded: t => e(Object(l.B)(t))
 			}))(m);
 
 			function b() {
@@ -19881,7 +19892,7 @@
 					shouldShowCollectionEditOptions: x.t
 				}),
 				T = Object(a.b)(k, (e, t) => ({
-					copyLink: () => e(Object(u.F)(t.permalink)),
+					copyLink: () => e(Object(u.G)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -20463,9 +20474,9 @@
 			t.a = (e, t) => Object(s.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign({}, e, {
-					onPostViewable: o.R,
-					pixelPostHasEnteredView: o.C,
-					pixelPostHasExitedView: o.D
+					onPostViewable: o.S,
+					pixelPostHasEnteredView: o.D,
+					pixelPostHasExitedView: o.E
 				})
 			}(t))
 		},
@@ -29847,7 +29858,7 @@
 							o && O.g(s(), o, n)
 						})
 					},
-					copyLink: t => e(Object(Ra.F)(t)),
+					copyLink: t => e(Object(Ra.G)(t)),
 					trackConnectAccountsClick: () => e((e, t) => O.b(t()))
 				}), (e, t, n) => Object.assign({}, e, t, n, {
 					onTogglePostToTwitter: () => t.togglePostToTwitter(!e.postToTwitter),
@@ -32152,4 +32163,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.8241042d6ac3dbaca8dd.js.map
+//# sourceMappingURL=PostCreation.443176cf489f173f1478.js.map
