@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3eec0c47fc90c05b67a9.js
-// Retrieved at 6/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.8d735a90ef4fb30cdfe1.js
+// Retrieved at 6/23/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -1520,7 +1520,7 @@
 			})), n.d(t, "d", (function() {
 				return g
 			}));
-			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react-router-redux/es/index.js"),
 				r = n("./src/lib/loadWithRetries/index.ts"),
 				o = n("./src/chat/constants/container.ts"),
@@ -1537,7 +1537,7 @@
 				a.dispatch(f(O)), a.getState().container.size !== o.a.EMBED && a.dispatch(b(o.a.EMBED)), !l && a.dispatch(Object(s.c)(n))
 			}
 			const b = (e, t) => async (n, s) => {
-				e = e.replace(/sendbird_group_channel_/, ""), await l(n, s, e, t)
+				await l(n, s, e, t)
 			}, p = () => async (e, t) => Promise.all([Object(c.c)(e, t), u()]).then(e => {
 				let [{
 					chatStore: t,
@@ -54517,4 +54517,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.3eec0c47fc90c05b67a9.js.map
+//# sourceMappingURL=Governance~Reddit.8d735a90ef4fb30cdfe1.js.map
