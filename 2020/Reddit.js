@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6703ae789437e99ae869.js
-// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4a3d0205102048fde77c.js
+// Retrieved at 6/23/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4862,13 +4862,15 @@
 					searchQuery: vs.V,
 					pageLayer: e => e
 				}),
-				Eo = (e, t, s) => e(e => Object.assign({}, Object(ho.c)(e), {
+				Eo = (e, t, s, n) => e(e => Object.assign({}, Object(ho.c)(e), {
 					source: "search",
 					action: "click",
 					noun: t,
-					correlationId: Object(Ya.c)(Ya.a.SearchResults),
 					actionInfo: Y.actionInfo(e),
-					search: Y.search(e, s)
+					search: Object.assign({}, Y.search(e, s, !0, n || void 0), {
+						structureType: Y.structureType(e, n),
+						queryId: Object(Ya.c)(Ya.a.SearchResults)
+					})
 				})),
 				So = Object(m.b)(() => Object(b.c)({
 					currentPage: ns.b,
@@ -4934,8 +4936,10 @@
 					},
 					onFocusSearchBar: () => {
 						Object(Ya.c)(Ya.a.SearchResults) || Object(Ya.d)(Ya.a.SearchResults);
-						const e = s.searchOptions || Object(Cr.c)({});
-						Eo(s.sendEvent, Y.OriginElement.SearchBar, e)
+						const e = s.searchOptions || Object(Cr.c)({
+							q: s.searchQuery
+						});
+						Eo(s.sendEvent, Y.OriginElement.SearchBar, e, s.pageLayer ? s.pageLayer : void 0)
 					}
 				}));
 			class jo extends u.a.Component {
@@ -13290,4 +13294,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.6703ae789437e99ae869.js.map
+//# sourceMappingURL=Reddit.4a3d0205102048fde77c.js.map
