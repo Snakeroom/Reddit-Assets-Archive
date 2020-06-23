@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.43ed9e7f5412083dd60d.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.3226885e2883b122e2b4.js
+// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -580,7 +580,6 @@
 						style: p,
 						ref: b
 					} = this.props, h = r.a.createElement("div", {
-						"data-click-id": "post-container",
 						style: p,
 						ref: b,
 						onMouseUp: e => {
@@ -765,4 +764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.43ed9e7f5412083dd60d.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.3226885e2883b122e2b4.js.map

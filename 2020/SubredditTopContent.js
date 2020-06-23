@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.1cd26f63ea2bc2421395.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.9d8d1d6a71679e194420.js
+// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -303,7 +303,6 @@
 						style: u,
 						ref: h
 					} = this.props, x = o.a.createElement("div", {
-						"data-click-id": "post-container",
 						style: u,
 						ref: h,
 						onMouseUp: e => {
@@ -488,4 +487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.1cd26f63ea2bc2421395.js.map
+//# sourceMappingURL=SubredditTopContent.9d8d1d6a71679e194420.js.map

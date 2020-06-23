@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.a80eafb8110ea6c20d31.js
-// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.91a985325442d716910c.js
+// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -5457,7 +5457,6 @@
 						style: p,
 						ref: b
 					} = this.props, h = o.a.createElement("div", {
-						"data-click-id": "post-container",
 						style: p,
 						ref: b,
 						onMouseUp: e => {
@@ -9900,4 +9899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.a80eafb8110ea6c20d31.js.map
+//# sourceMappingURL=ProfileComments.91a985325442d716910c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.d21b35a6acfd7e5a7667.js
-// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c5dd5636dd4e2e960ba7.js
+// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -258,13 +258,13 @@
 				f = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				S = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				I = s("./src/reddit/constants/posts.ts"),
-				k = s("./src/reddit/selectors/posts.ts"),
-				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
-				N = s.n(P);
+				P = s("./src/reddit/selectors/posts.ts"),
+				k = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
+				N = s.n(k);
 			const T = e => "".concat(e, "--FocusedVerticalRecommendationItem"),
 				D = Object(i.c)({
-					post: k.O,
-					subreddit: k.bb
+					post: P.O,
+					subreddit: P.bb
 				});
 			class B extends o.a.Component {
 				constructor() {
@@ -846,7 +846,6 @@
 						style: b,
 						ref: m
 					} = this.props, h = o.a.createElement("div", {
-						"data-click-id": "post-container",
 						style: b,
 						ref: m,
 						onMouseUp: e => {
@@ -1268,4 +1267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.d21b35a6acfd7e5a7667.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c5dd5636dd4e2e960ba7.js.map

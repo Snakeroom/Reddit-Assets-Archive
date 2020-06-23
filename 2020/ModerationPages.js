@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b2ed0fd142d8e3ec85fa.js
-// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5cf4629f6d877f666347.js
+// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -16872,7 +16872,6 @@
 						style: u,
 						ref: b
 					} = this.props, h = o.a.createElement("div", {
-						"data-click-id": "post-container",
 						style: u,
 						ref: b,
 						onMouseUp: e => {
@@ -28911,4 +28910,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.b2ed0fd142d8e3ec85fa.js.map
+//# sourceMappingURL=ModerationPages.5cf4629f6d877f666347.js.map
