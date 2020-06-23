@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5329b7d56ff6a3fec20c.js
-// Retrieved at 6/22/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.06b1343d19a0e234e948.js
+// Retrieved at 6/23/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -961,6 +961,7 @@
 							trendingPosts: !!e.lifecycle_post_suggestions,
 							upvotedComments: !!e.upvote_comment,
 							upvotedPosts: !!e.upvote_post,
+							userFlairAdded: !!e.user_flair_added,
 							usernameMentions: !!e.username_mention,
 							userNewFollowers: !!e.user_new_follower
 						}))(p.body);
@@ -1000,7 +1001,8 @@
 								username_mention: t.usernameMentions,
 								upvote_comment: t.upvotedComments,
 								upvote_post: t.upvotedPosts,
-								user_new_follower: t.userNewFollowers
+								user_new_follower: t.userNewFollowers,
+								user_flair_added: t.userFlairAdded
 							})
 						}
 					}))(p(), e);
@@ -13288,4 +13290,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.5329b7d56ff6a3fec20c.js.map
+//# sourceMappingURL=Reddit.06b1343d19a0e234e948.js.map
