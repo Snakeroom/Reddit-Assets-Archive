@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.18b3f7cbde333cc5f8d8.js
-// Retrieved at 6/24/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6d48c978e6d76a0380cb.js
+// Retrieved at 6/24/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -48553,7 +48553,7 @@
 								itemTags: Object.assign({}, e.itemTags, {
 									[c]: Object.assign({}, o[c] || {})
 								}),
-								geoPlaces: Object(F.set)(e.geoPlaces, c, i),
+								geoPlaces: i ? Object(F.set)(e.geoPlaces, c, i) : e.geoPlaces,
 								suggestedItemTags: Object.assign({}, e.suggestedItemTags, {
 									[c]: Object.assign({}, a[c] || {})
 								}),
@@ -53841,4 +53841,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.18b3f7cbde333cc5f8d8.js.map
+//# sourceMappingURL=Governance~Reddit.6d48c978e6d76a0380cb.js.map
