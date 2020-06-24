@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.5a53dfd1719c112606ba.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.49606cbad9bb5220d5ab.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4354,7 +4354,7 @@
 					const [t, n] = Object(a.useState)(!1), s = e.hasLinkedIdentities || e.isInSSOSettingsVariant || t;
 					return Object(a.useEffect)(() => {
 						if (e.userId) {
-							const t = !!Object(ot.E)(e.userId);
+							const t = !!Object(ot.F)(e.userId);
 							n(t)
 						}
 					}, [e.userId]), o.a.createElement(at, it({
@@ -5291,7 +5291,7 @@
 							permission: n
 						} = e;
 						let s = !1;
-						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ot.N(t)), this.setState(e => ({
+						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ot.O(t)), this.setState(e => ({
 							desktopNotifications: s ? t : e.desktopNotifications,
 							notificationPermission: n
 						})), this.lastNotificationsState = e
@@ -5301,7 +5301,7 @@
 						this.setState({
 							desktopNotifications: e
 						}, () => {
-							this.trackPreferenceToggled("desktop_notification_permissions", e), ot.N(e)
+							this.trackPreferenceToggled("desktop_notification_permissions", e), ot.O(e)
 						})
 					}, this.handleBroadcastRecommendationsClick = () => {
 						const {
@@ -7061,4 +7061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.5a53dfd1719c112606ba.js.map
+//# sourceMappingURL=Settings.49606cbad9bb5220d5ab.js.map

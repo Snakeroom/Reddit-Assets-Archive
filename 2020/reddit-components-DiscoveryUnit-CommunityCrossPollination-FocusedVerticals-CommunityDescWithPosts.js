@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c5dd5636dd4e2e960ba7.js
-// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.de8285a9919029847d80.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -198,7 +198,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.i)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.A)(), this.setLocalStorageDisabled = Object(u.R)()
+					}, this.getLocalStorageDisabled = Object(u.B)(), this.setLocalStorageDisabled = Object(u.S)()
 				}
 				componentDidMount() {
 					const {
@@ -402,8 +402,8 @@
 					} = t;
 					return Object(m.k)(e, s)
 				}
-			}), A = Object(r.b)(R);
-			class M extends o.a.PureComponent {
+			}), M = Object(r.b)(R);
+			class A extends o.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -450,7 +450,7 @@
 					})))
 				}
 			}
-			t.default = A(M)
+			t.default = M(A)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1267,4 +1267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c5dd5636dd4e2e960ba7.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.de8285a9919029847d80.js.map

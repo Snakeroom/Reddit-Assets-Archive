@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.8f4c27b6ea487e66b09d.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e5c322f9165530f8ef40.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -577,13 +577,13 @@
 					const [s, n] = Object(r.useState)(!0), i = Object(l.a)(), u = Object(r.useCallback)(() => {
 						i(Object(a.a)("click", t))
 					}, [t, i]), m = Object(r.useCallback)(() => {
-						n(!0), i(Object(d.c)(t.id, t)), Object(c.U)(t.id, t.maxImpressionsCount)
+						n(!0), i(Object(d.c)(t.id, t)), Object(c.V)(t.id, t.maxImpressionsCount)
 					}, [t, i]);
 					return Object(r.useEffect)(() => {
 						const {
 							id: e
 						} = t, s = Object(c.n)(e);
-						t && s < t.maxImpressionsCount && (n(!1), Object(c.U)(e, s + 1))
+						t && s < t.maxImpressionsCount && (n(!1), Object(c.V)(e, s + 1))
 					}, []), s ? null : o.a.createElement(h, {
 						announcement: t,
 						onBtnClick: u,
@@ -1922,4 +1922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.8f4c27b6ea487e66b09d.js.map
+//# sourceMappingURL=Frontpage.e5c322f9165530f8ef40.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.96a2a63eafe8dcee59d9.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.996dc0f1d3e6e5431085.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3278,14 +3278,14 @@
 					}))
 				},
 				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d414c19-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("d63a4bd-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d414c19-production",
+						release: "d63a4bd-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
@@ -3356,7 +3356,7 @@
 							translations: e
 						})
 					}(), S = m.user && m.user.account ? m.user.account.id : null;
-				Object(C.F)(S);
+				Object(C.G)(S);
 				const {
 					routes: E
 				} = e;
@@ -3647,7 +3647,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d414c19-production",
+							releaseClient: "d63a4bd-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -6523,11 +6523,11 @@
 				return g
 			})), i.d(t, "p", (function() {
 				return b
-			})), i.d(t, "s", (function() {
-				return w
-			})), i.d(t, "r", (function() {
-				return y
 			})), i.d(t, "t", (function() {
+				return w
+			})), i.d(t, "s", (function() {
+				return y
+			})), i.d(t, "r", (function() {
 				return v
 			})), i.d(t, "u", (function() {
 				return T
@@ -6539,14 +6539,16 @@
 				return F
 			})), i.d(t, "y", (function() {
 				return I
-			})), i.d(t, "q", (function() {
-				return O
 			})), i.d(t, "z", (function() {
+				return O
+			})), i.d(t, "q", (function() {
 				return j
 			})), i.d(t, "A", (function() {
 				return B
 			})), i.d(t, "B", (function() {
 				return x
+			})), i.d(t, "C", (function() {
+				return R
 			}));
 			const n = "announcement-banner-seen-store",
 				r = "announcement-banner-seen-store-v2",
@@ -6565,17 +6567,18 @@
 				g = "inline-edit-edu-tooltip-store",
 				b = "local_persisted_experiments_store",
 				w = "mod-onboarding-store",
-				y = "modal_dismissed_store",
-				v = "post-chain-dismissal-store",
-				T = "post-chain-store",
-				S = "post-creation-edu-tooltip-store",
-				E = "profile-pinned-posts-store",
-				F = "recent_searches",
-				I = "rpan-user-settings-store",
-				O = "low-activity-call-to-action-store",
-				j = "sso_user_ids",
-				B = "survey-last-seen",
-				x = "survey-trigger-action-counts"
+				y = "modhub-setting-seen",
+				v = "modal_dismissed_store",
+				T = "post-chain-dismissal-store",
+				S = "post-chain-store",
+				E = "post-creation-edu-tooltip-store",
+				F = "profile-pinned-posts-store",
+				I = "recent_searches",
+				O = "rpan-user-settings-store",
+				j = "low-activity-call-to-action-store",
+				B = "sso_user_ids",
+				x = "survey-last-seen",
+				R = "survey-trigger-action-counts"
 		},
 		"./src/reddit/constants/page.ts": function(e, t, i) {
 			"use strict";
@@ -7543,40 +7546,22 @@
 					method: r.cb.GET
 				})
 		},
-		"./src/reddit/featureFlags/communityTopics.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "b", (function() {
-				return s
-			})), i.d(t, "a", (function() {
-				return d
-			}));
-			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = i("./src/reddit/models/User/index.ts"),
-				r = i("./src/reddit/selectors/user.ts");
-			const s = () => !0,
-				o = new Set(["0perspective", "coachzzz", "flash_55", "mikapp", "ggalex", "jdawg1000", "hidehidehidden", "ringrob"]),
-				d = e => {
-					if (!e.user.account) return !1;
-					const t = Object(n.e)(e.user.account).toLowerCase();
-					return Object(r.E)(e) && o.has(t)
-				}
-		},
 		"./src/reddit/featureFlags/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return v
-			})), i.d(t, "a", (function() {
-				return T
-			})), i.d(t, "f", (function() {
 				return S
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "a", (function() {
+				return E
+			})), i.d(t, "f", (function() {
 				return F
-			})), i.d(t, "b", (function() {
-				return I
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "g", (function() {
 				return O
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "b", (function() {
 				return j
+			})), i.d(t, "c", (function() {
+				return B
+			})), i.d(t, "e", (function() {
+				return x
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.match.js"), i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.split.js");
 			var n = i("./node_modules/lodash/isNil.js"),
@@ -7586,55 +7571,60 @@
 				d = i("./src/lib/constants/euCookiePolicy.ts"),
 				l = i("./src/lib/getParsedUserAgent/index.ts"),
 				a = i("./src/reddit/featureFlags/utils.ts"),
-				u = i("./src/reddit/featureFlags/communityTopics.ts"),
-				c = i("./src/reddit/selectors/moderatorPermissions.ts"),
-				_ = i("./src/reddit/selectors/platform.ts"),
-				m = i("./src/reddit/selectors/subreddit.ts");
-			const p = new Set(["ZombieSubreddits", "scheduled_posts_test", "gameofthrones", "LateShow", "WritingPrompts", "DCFU", "FlashTV", "supergirlTV", "TheOrville", "BuffaloBills", "rbny", "seahawks", "Mariners", "NASCAR", "BlackOps4", "CODZombies", "LabourUK", "StreetOutlaws", "pokemon", "pokemontrades", "SVExchange", "brakebills", "askhistorianspanel", "ClashRoyale", "Brawlstars", "CasualConversation", "tf2", "SCP", "DankMemesFromSite19", "TitansTV", "youngjustice", "DCDoomPatrol", "swampthingtv", "HarleyQuinnTV", "StargirlDCU", "Pigifs", "MovieDetails", "FruitsBasket", "Charleston", "TeraOnline", "indianapolis", "warhawk", "lounge", "GetMotivated", "Stormlight_Archive", "Cosmere", "brandonsanderson", "thelegendarium", "StarWarsBattlefront", "SandersForPresident", "cincinnati", "girlsfrontline", "Romania", "ClevelandIndians", "shortcuts", "HomePod", "Snooful", "slovenia", "TheGita", "TheMahabharata", "TheRamayana", "AnthemTheGame", "Games", "chile", "TheMandalorianTV", "LokiTV", "WANDAVISION", "CassianAndor", "OnePunchMan", "india", "xxketo4u2", "xxKetoOver50", "TheVoice", "nfl", "mac", "blackmirror", "appletv", "Psephology", "AppleArcade", "AppleTVPlus", "overwatch", "dankmemes", "arg", "slideforreddit", "TacoBell", "MonsterHunter", "shadownet", "shadownetwork", "TheFantasyInn", "GameDevs", "musicproduction", "PromoteYourMusic", "HipHopCollabs", "SpotifyPlaylists", "puppy101", "HauntingOfHillHouse", "SecularTarot", "StandardPoodles", "F1FeederSeries", "FormulaE", "TohokuJapan", "ketoscience", "TechnicalDeathMetal", "DebateAnAtheist", "KetoNews", "manatees", "BillHsomething", "chromatics", "cerner", "911FOX", "MarvelAvengersProject", "PantheonMMO", "Superman", "batman", "DCcomics", "discworld", "panelshow", "panelshows", "intothebadlands", "dndnext", "FireEmblemHeroes", "fireemblem", "streetwear", "svc518", "Mississauga", "rupaulsdragrace", "SpoiledDragRace", "RPDR_UK", "Jaguars", "alteredcarbon", "Letterkenny", "DarkSaint", "kotobukiya", "MegamiDevice", "FrameArms", "BoomBeach", "GolfClash", "WomensSoccer", "problemgambling", "gambling", "hamiltonmusical", "GoNets", "summonerswar", "eagles", "Arrow", "BlackLightning", "boardgames", "BoardGameExchange", "kosovo", "angelsbaseball", "orangecounty", "Socialism", "PaisosCatalans", "Amsterdam", "ElectricForest", "bassnectar", "nfrealmusic", "sillyrosster", "PS4Pro", "PSVR", "PS5", "comptia", "starwarscanon", "projectfi", "android_beta", "Sekiro", "Nioh", "denvernuggets", "giantbomb", "titanfolk", "attackontitan", "residentevil", "maryland", "traaaaaaannnnnnnnnns", "WeAreNotAsking", "redditvision_sc", "redditvision_nf", "urbanplanning", "valveindex", "HiTMAN", "Competitiveoverwatch", "ProjectRunway", "sitecore", "aem", "YangForPresidentHQ", "MaddenMobileForums", "InsiderMemeTrading", "CommentAwardsForum", "AsianBeautyAdvice", "NewOrleans", "malefashionadvice", "HBOGameofThrones", "AskBibleScholars", "EMS", "NewToEMS", "ItalyInformatica", "antiassholedesign", "BleachBraveSouls", "selectivemutism", "weddingplanning", "INDYCAR", "leagueoflegends", "Albania", "westcoasteagles", "CitiesSkylines", "Comcast_Xfinity", "AssassinsCreed", "iOSProgramming", "MarvelStudios", "cryptocurrency", "BostonUprising", "HarryPotterWU", "Gnomesinthings", "TheSilphRoad", "SpaceXLounge", "FinalFantasy", "the_revolupun", "pathfinder2e", "Drugs", "retrogaming", "FallenOrder", "TaylorSwift", "Dachschaden", "pathofexile", "BoneAppleTea", "MarioKartWii", "bostontrees", "MAMMJ", "NYCtrees", "chitrees", "Philippines", "boottoobig", "thedivision", "travisscott", "jitakyoei", "shieldbro", "islamabad", "CarletonU", "Charlotte", "BestDisney", "Arithmancy", "sysadmin", "progmetal", "discgolf", "adultswim", "greenday", "Rainbow6", "TibiaMMO", "gaybros", "bangtan", "Splatoon", "zerocarb", "Aleague", "phoenix", "xcxheads", "judocss", "Cloud9", "asoiaf", "alttpr", "spacex", "csgo", "ffxiv", "MMA", "Gwent", "NBA2k", "Colts", "MCPE", "Gunpla", "Muse", "disney", "eddit", "excel", "Bestbuy", "judo", "SubredditDrama", "TrollYChromosome", "stepschallenge", "survivor", "whatssnoo", "DotA2", "wtwave", "Paladins", "GreenBayPackers", "SAO_RisingSteel", "SwagBucks", "StarWars", "JustNotRight", "britisharmy", "RoleReversal", "DogsAndDesserts", "AjaxAmsterdam", "QTCinderella", "MissouriPolitics", "theworldofchertia", "FFBraveExvius", "algeria", "lodestone_testing", "crohnsdisease", "mildlybrokenvoice", "mensrestroom", "ScheduledPostBETA", "SanFranciscoAnalog", "vegansnacks", "snoobie101", "Coronavirus", "WomEng", "RedditModCouncil", "PS4", "Stadia", "amsterdam2", "Amsterdam3", "CoronavirusCA", "Yarn", "WuhanNews", "CalgaryFlames", "WitchesVsPatriarchy", "wvpmods", "BrawlStarsCompetitive", "Midlothian", "SiouxFalls", "Miscarriage", "PlayStationNow", "PS5", "PhotographyRU", "Coronavirus", "chile", "CallMeKevin", "churchofchrist", "Edinburgh", "HomeschoolRecovery", "AdultChildren", "dauntless", "nbl", "GalaxyA50", "NativePlantGardening", "croatia", "bih", "GRE", "GMAT", "askmath", "Open_Holes", "ultimate", "cambook", "OrangeredCorps"].map(e => e.toLowerCase()));
-			var h = i("./src/reddit/selectors/responsiveSettings.ts");
-			const f = new Set(["20plus", "3amjokes", "3DCGI", "5ToubunNoHanayome", "99percentinvisible", "actuallesbians", "addictingtunes", "ADHD", "Africa", "AgainstHateSubreddits", "ainbow", "AlternativeIdol", "AmazonforaPenny", "amitheasshole", "analog", "androidcirclejerk", "androiddev", "angelsbaseball", "anime_mods", "AnimeAnarchy", "animeevenwithcontext", "AnimeFunny", "AnimeLounging", "AnimeMeta", "animenocontext", "animenorules", "Animesuggest", "animeworldproblems", "AnnArbor", "AntiEvilPlayground", "apple", "appropriatzzycow", "aquarium", "arabs", "arizona", "Artifact", "asianpeople", "ask_transgender", "askaconservative", "askadmins", "askcarsales", "AskMen", "AskScienceFiction", "askwomen", "askwomenadvice", "asoiaf", "Astros", "Austin", "AwesomeDesktops", "awwnime2", "AzureLane", "BabyYoda", "badhistory", "Bahrain", "bangtan", "baseball", "bassnectar", "battlebots", "BattlefieldV", "bayarea", "beermoney", "Bestbuy", "bestoflegaladvice", "bestofmoderation", "bestoftalk", "BethesdaSoftworks", "BetteReddit", "BigBoobsGW", "Birmingham", "birthday", "bisexual", "blackfellas", "BlackLadiesFitness", "blackpeopletwitter", "blessedcomments", "Bloomberg2020", "BokuNoHeroAcademia", "boottoobig", "brasil", "Braves", "brisbane", "browns", "Browns", "buildapcsales", "bureaucracyporn", "butchlesbians", "canada", "CarletonU", "cars", "CarsFallingFromTheSky", "CasualConversation", "Catalunya", "CatsWithDogs", "Charleston", "Charlotte", "chattest", "ChemicalReactionVids", "chessporn", "chicago", "China", "Chonkers", "christianity", "CircleOfTrustInvite", "circumcision", "ClevelandIndians", "collapse", "CollegeStationJobs", "ColonisingReddit", "Colorado", "Columbus", "CombatFootage", "comics", "CommonMisconceptions", "Conservative", "conspiratorialskeptic", "ContraPoints", "controversialiama", "convopolis", "coversongs", "cowardicejerk", "cowboys", "coys", "CryptoCurrency", "cursedcomments", "cursedsubreddits", "Dallas", "dankchristianmemes", "dankmemes", "darknet", "DarlingInTheFranxx", "dauntless", "democrats", "Denver", "Detroit", "DigitalEconomy", "discordapp", "disney", "disneyvacation", "DividedWeSitandrelax", "DnD", "Dogfree", "dogmonching", "dogswithjobs", "DonaldTrump", "DontPostPI", "DoofusoftheWeek", "DotA2", "DuelLinks", "dystopianfuture", "Ebook", "edutainment", "ElectricForest", "ElPaso", "Enough_Sanders_Spam", "EnoughTrumpSpam", "Epstein", "ethfinance", "EthFinanceTesting", "europe", "exmormon", "ExMuslim", "FanMV", "Fantasy", "feemagers", "ffxiv", "fireemblem", "FireEmblemHeroes", "Fitness", "fivethirtyeight", "flightsim", "florida", "flying", "food", "ForEquity", "foreskin_restoration", "formula1", "FortniteCompetitive", "freemasonry", "fuckthesepeople", "FulfillmentByAmazon", "futurology", "GalaxyA50", "GamerGhazi", "games", "gaming", "gatesopencomeonin", "GenderCritical", "georgefloydriots", "gifs", "GiftIdeas", "Gifts", "GloriousSunRays", "GoldandBlack", "googlemapsshenanigans", "GooglePixel", "greece", "GreenAndPleasant", "GreenBayPackers", "Habs", "hackintosh", "harrypotter", "HaveWeMet", "heat", "held818", "helpingyouu", "helpus", "hinduism", "HinduVegans", "historymemes", "hockey", "hugthecameraman", "ImaginaryCharacters2", "ImaginaryLandscapes2", "ImaginaryMonsters2", "immigration", "inceptianime", "IndiaSpeaks", "insaneparents", "insanityWPC", "Iowa", "iphone", "iranian", "Ireland", "ItalyInformatica", "ItHadToBeBrazil", "jailbreak", "JARTEM", "JoeBiden", "JustBootThings", "JustMoeThings", "JUSTNOFAMILY", "Justnofil", "JUSTNOMIL", "kansaw", "Konosuba", "kpop", "leagueoflegends", "learnchinese", "lebanon", "legaladvice", "LegalAdviceXPosts", "LetterstoJNMIL", "lgbt", "libertarian", "lifeisstrange", "linux", "livepd", "london", "Loopover", "losangeles", "LosAngelesRams", "MadeMeSmile", "makeupaddiction", "malefashion", "mariners", "MarioKartWii", "markistest", "marvelstudios", "medicine", "Megumin", "melbourne", "meta", "metafirstworldanarchy", "metaIFTA", "Miami", "Military", "Minecraft", "minneapolis", "Mistakes", "MobileAL", "MobileAL", "Moderation", "modernwarfare", "modevaluation", "ModRants", "ModReviews", "Moescene", "MonsterHunterWorld", "MorbidReality", "motogp", "MtF", "MurderedByWords", "myneedstheground", "MysteryDungeon", "mysubs", "NASCAR", "NederlandseMemes", "Neverwinter", "NewOrleans", "nfl", "NintendoSwitch", "NotMyJob", "nottheonion", "notUS", "nova", "NoveltyHell", "noveltyhub", "NPR", "nra", "omad", "omaha", "ontario", "OpenWiki", "orangecounty", "OutsideBugReports", "overpricedprebuilt", "Palestine", "Panelshow", "pathofexile", "pcgaming", "pelotoncycle", "PennStateUniversity", "PeopleSellingMirrors", "personalfinance", "Pete_Buttigieg", "Pewdiepiesubmissions", "phoenix", "pittsburgh", "PlayMe", "plexshares", "PokeFics", "Policechases", "politicalhumor", "PoliticalMemes", "politics", "Polska", "polyamory", "popcornwatch", "Portland", "potholes", "prettygoodof", "ProductIAMA", "project_earth", "Pub05", "Pub08", "PuertoRico", "QATrustedUser", "Rabbits", "RADAL", "RadioLab", "rage", "Rainbow6", "RateSubreddits", "razer", "ReasonableFantasy", "RedditLeak", "redditmysteries", "redesign", "ReformedHumor", "RelationshipLeftovers", "relationships", "reportspamsubs", "Republic_Of_Anime", "republicanmemes", "researchpapers", "RocketLeagueEsports", "rockets", "rollerblading", "Romania", "runescape", "rupaulsdragrace", "rust", "Sacramento", "SaltLakeCity", "SandersForPresident", "sandiego", "saskatchewan", "saskatoon", "ScenesFromAHat", "science", "scifi", "SCP", "Scrubs", "Seattle", "SeattleWA", "selfie", "serendipitymairead", "sheffield", "shirtcolors", "ShittyEndings", "ShittyIFTA", "shittyinspiringquotes", "Silverbugs", "slc", "SmugIdeologyMan", "socialism", "softwaregore", "SonicTheHedgehog", "southafrica", "soymilkadventures", "Spokane", "SRmeta", "Stadia", "startrek", "Steam", "stlouisblues", "SubredditReviews", "SuggestBooks", "SwagBucks", "syriancivilwar", "Tallahassee", "technicallythetruth", "techsupportmcgyver", "teenagers", "teslamotors", "testqqqqqq", "Texans", "TheBukuProject", "TheSimpsons", "TheWalkingDeadGame", "thewallstreet", "theydidthemonstermath", "Threesome", "tifu", "titanfolk", "todayilearned", "toonmusic", "tormodsfanfiction", "Toronto", "Toyota", "traaaaaaannnnnnnnnns", "trans", "transsupport", "transtimelines", "TrollXChromosomes", "TrueCrimeDiscussion", "TrueSyncretic", "truetruebestof2012", "trump", "TrumpCriticizesTrump", "tuesday", "Turkey", "twice", "TwoXChromosomes", "ukpolitics", "unitedkingdom", "UnsolvedMysteries", "UpliftingComments", "USMC", "vaporents", "vedicastrology", "vegaslocals", "velvethippos", "vexillology", "Virginia", "Vive", "voodoo", "wallstreetbets", "washingtonDC", "weeklyreddit", "weightroom", "WorstOfModeration", "writingprompts", "z_r", "zelda"].map(e => e.toLowerCase())),
-				g = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
-			var b = i("./src/reddit/featureFlags/subredditPoints.ts");
-			const w = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]),
-				y = {
+				u = i("./src/reddit/models/User/index.ts"),
+				c = i("./src/reddit/selectors/user.ts");
+			const _ = new Set(["0perspective", "coachzzz", "flash_55", "mikapp", "ggalex", "jdawg1000"]);
+			var m = i("./src/reddit/selectors/moderatorPermissions.ts"),
+				p = i("./src/reddit/selectors/platform.ts"),
+				h = i("./src/reddit/selectors/subreddit.ts");
+			const f = new Set(["ZombieSubreddits", "scheduled_posts_test", "gameofthrones", "LateShow", "WritingPrompts", "DCFU", "FlashTV", "supergirlTV", "TheOrville", "BuffaloBills", "rbny", "seahawks", "Mariners", "NASCAR", "BlackOps4", "CODZombies", "LabourUK", "StreetOutlaws", "pokemon", "pokemontrades", "SVExchange", "brakebills", "askhistorianspanel", "ClashRoyale", "Brawlstars", "CasualConversation", "tf2", "SCP", "DankMemesFromSite19", "TitansTV", "youngjustice", "DCDoomPatrol", "swampthingtv", "HarleyQuinnTV", "StargirlDCU", "Pigifs", "MovieDetails", "FruitsBasket", "Charleston", "TeraOnline", "indianapolis", "warhawk", "lounge", "GetMotivated", "Stormlight_Archive", "Cosmere", "brandonsanderson", "thelegendarium", "StarWarsBattlefront", "SandersForPresident", "cincinnati", "girlsfrontline", "Romania", "ClevelandIndians", "shortcuts", "HomePod", "Snooful", "slovenia", "TheGita", "TheMahabharata", "TheRamayana", "AnthemTheGame", "Games", "chile", "TheMandalorianTV", "LokiTV", "WANDAVISION", "CassianAndor", "OnePunchMan", "india", "xxketo4u2", "xxKetoOver50", "TheVoice", "nfl", "mac", "blackmirror", "appletv", "Psephology", "AppleArcade", "AppleTVPlus", "overwatch", "dankmemes", "arg", "slideforreddit", "TacoBell", "MonsterHunter", "shadownet", "shadownetwork", "TheFantasyInn", "GameDevs", "musicproduction", "PromoteYourMusic", "HipHopCollabs", "SpotifyPlaylists", "puppy101", "HauntingOfHillHouse", "SecularTarot", "StandardPoodles", "F1FeederSeries", "FormulaE", "TohokuJapan", "ketoscience", "TechnicalDeathMetal", "DebateAnAtheist", "KetoNews", "manatees", "BillHsomething", "chromatics", "cerner", "911FOX", "MarvelAvengersProject", "PantheonMMO", "Superman", "batman", "DCcomics", "discworld", "panelshow", "panelshows", "intothebadlands", "dndnext", "FireEmblemHeroes", "fireemblem", "streetwear", "svc518", "Mississauga", "rupaulsdragrace", "SpoiledDragRace", "RPDR_UK", "Jaguars", "alteredcarbon", "Letterkenny", "DarkSaint", "kotobukiya", "MegamiDevice", "FrameArms", "BoomBeach", "GolfClash", "WomensSoccer", "problemgambling", "gambling", "hamiltonmusical", "GoNets", "summonerswar", "eagles", "Arrow", "BlackLightning", "boardgames", "BoardGameExchange", "kosovo", "angelsbaseball", "orangecounty", "Socialism", "PaisosCatalans", "Amsterdam", "ElectricForest", "bassnectar", "nfrealmusic", "sillyrosster", "PS4Pro", "PSVR", "PS5", "comptia", "starwarscanon", "projectfi", "android_beta", "Sekiro", "Nioh", "denvernuggets", "giantbomb", "titanfolk", "attackontitan", "residentevil", "maryland", "traaaaaaannnnnnnnnns", "WeAreNotAsking", "redditvision_sc", "redditvision_nf", "urbanplanning", "valveindex", "HiTMAN", "Competitiveoverwatch", "ProjectRunway", "sitecore", "aem", "YangForPresidentHQ", "MaddenMobileForums", "InsiderMemeTrading", "CommentAwardsForum", "AsianBeautyAdvice", "NewOrleans", "malefashionadvice", "HBOGameofThrones", "AskBibleScholars", "EMS", "NewToEMS", "ItalyInformatica", "antiassholedesign", "BleachBraveSouls", "selectivemutism", "weddingplanning", "INDYCAR", "leagueoflegends", "Albania", "westcoasteagles", "CitiesSkylines", "Comcast_Xfinity", "AssassinsCreed", "iOSProgramming", "MarvelStudios", "cryptocurrency", "BostonUprising", "HarryPotterWU", "Gnomesinthings", "TheSilphRoad", "SpaceXLounge", "FinalFantasy", "the_revolupun", "pathfinder2e", "Drugs", "retrogaming", "FallenOrder", "TaylorSwift", "Dachschaden", "pathofexile", "BoneAppleTea", "MarioKartWii", "bostontrees", "MAMMJ", "NYCtrees", "chitrees", "Philippines", "boottoobig", "thedivision", "travisscott", "jitakyoei", "shieldbro", "islamabad", "CarletonU", "Charlotte", "BestDisney", "Arithmancy", "sysadmin", "progmetal", "discgolf", "adultswim", "greenday", "Rainbow6", "TibiaMMO", "gaybros", "bangtan", "Splatoon", "zerocarb", "Aleague", "phoenix", "xcxheads", "judocss", "Cloud9", "asoiaf", "alttpr", "spacex", "csgo", "ffxiv", "MMA", "Gwent", "NBA2k", "Colts", "MCPE", "Gunpla", "Muse", "disney", "eddit", "excel", "Bestbuy", "judo", "SubredditDrama", "TrollYChromosome", "stepschallenge", "survivor", "whatssnoo", "DotA2", "wtwave", "Paladins", "GreenBayPackers", "SAO_RisingSteel", "SwagBucks", "StarWars", "JustNotRight", "britisharmy", "RoleReversal", "DogsAndDesserts", "AjaxAmsterdam", "QTCinderella", "MissouriPolitics", "theworldofchertia", "FFBraveExvius", "algeria", "lodestone_testing", "crohnsdisease", "mildlybrokenvoice", "mensrestroom", "ScheduledPostBETA", "SanFranciscoAnalog", "vegansnacks", "snoobie101", "Coronavirus", "WomEng", "RedditModCouncil", "PS4", "Stadia", "amsterdam2", "Amsterdam3", "CoronavirusCA", "Yarn", "WuhanNews", "CalgaryFlames", "WitchesVsPatriarchy", "wvpmods", "BrawlStarsCompetitive", "Midlothian", "SiouxFalls", "Miscarriage", "PlayStationNow", "PS5", "PhotographyRU", "Coronavirus", "chile", "CallMeKevin", "churchofchrist", "Edinburgh", "HomeschoolRecovery", "AdultChildren", "dauntless", "nbl", "GalaxyA50", "NativePlantGardening", "croatia", "bih", "GRE", "GMAT", "askmath", "Open_Holes", "ultimate", "cambook", "OrangeredCorps"].map(e => e.toLowerCase()));
+			var g = i("./src/reddit/selectors/responsiveSettings.ts");
+			const b = new Set(["20plus", "3amjokes", "3DCGI", "5ToubunNoHanayome", "99percentinvisible", "actuallesbians", "addictingtunes", "ADHD", "Africa", "AgainstHateSubreddits", "ainbow", "AlternativeIdol", "AmazonforaPenny", "amitheasshole", "analog", "androidcirclejerk", "androiddev", "angelsbaseball", "anime_mods", "AnimeAnarchy", "animeevenwithcontext", "AnimeFunny", "AnimeLounging", "AnimeMeta", "animenocontext", "animenorules", "Animesuggest", "animeworldproblems", "AnnArbor", "AntiEvilPlayground", "apple", "appropriatzzycow", "aquarium", "arabs", "arizona", "Artifact", "asianpeople", "ask_transgender", "askaconservative", "askadmins", "askcarsales", "AskMen", "AskScienceFiction", "askwomen", "askwomenadvice", "asoiaf", "Astros", "Austin", "AwesomeDesktops", "awwnime2", "AzureLane", "BabyYoda", "badhistory", "Bahrain", "bangtan", "baseball", "bassnectar", "battlebots", "BattlefieldV", "bayarea", "beermoney", "Bestbuy", "bestoflegaladvice", "bestofmoderation", "bestoftalk", "BethesdaSoftworks", "BetteReddit", "BigBoobsGW", "Birmingham", "birthday", "bisexual", "blackfellas", "BlackLadiesFitness", "blackpeopletwitter", "blessedcomments", "Bloomberg2020", "BokuNoHeroAcademia", "boottoobig", "brasil", "Braves", "brisbane", "browns", "Browns", "buildapcsales", "bureaucracyporn", "butchlesbians", "canada", "CarletonU", "cars", "CarsFallingFromTheSky", "CasualConversation", "Catalunya", "CatsWithDogs", "Charleston", "Charlotte", "chattest", "ChemicalReactionVids", "chessporn", "chicago", "China", "Chonkers", "christianity", "CircleOfTrustInvite", "circumcision", "ClevelandIndians", "collapse", "CollegeStationJobs", "ColonisingReddit", "Colorado", "Columbus", "CombatFootage", "comics", "CommonMisconceptions", "Conservative", "conspiratorialskeptic", "ContraPoints", "controversialiama", "convopolis", "coversongs", "cowardicejerk", "cowboys", "coys", "CryptoCurrency", "cursedcomments", "cursedsubreddits", "Dallas", "dankchristianmemes", "dankmemes", "darknet", "DarlingInTheFranxx", "dauntless", "democrats", "Denver", "Detroit", "DigitalEconomy", "discordapp", "disney", "disneyvacation", "DividedWeSitandrelax", "DnD", "Dogfree", "dogmonching", "dogswithjobs", "DonaldTrump", "DontPostPI", "DoofusoftheWeek", "DotA2", "DuelLinks", "dystopianfuture", "Ebook", "edutainment", "ElectricForest", "ElPaso", "Enough_Sanders_Spam", "EnoughTrumpSpam", "Epstein", "ethfinance", "EthFinanceTesting", "europe", "exmormon", "ExMuslim", "FanMV", "Fantasy", "feemagers", "ffxiv", "fireemblem", "FireEmblemHeroes", "Fitness", "fivethirtyeight", "flightsim", "florida", "flying", "food", "ForEquity", "foreskin_restoration", "formula1", "FortniteCompetitive", "freemasonry", "fuckthesepeople", "FulfillmentByAmazon", "futurology", "GalaxyA50", "GamerGhazi", "games", "gaming", "gatesopencomeonin", "GenderCritical", "georgefloydriots", "gifs", "GiftIdeas", "Gifts", "GloriousSunRays", "GoldandBlack", "googlemapsshenanigans", "GooglePixel", "greece", "GreenAndPleasant", "GreenBayPackers", "Habs", "hackintosh", "harrypotter", "HaveWeMet", "heat", "held818", "helpingyouu", "helpus", "hinduism", "HinduVegans", "historymemes", "hockey", "hugthecameraman", "ImaginaryCharacters2", "ImaginaryLandscapes2", "ImaginaryMonsters2", "immigration", "inceptianime", "IndiaSpeaks", "insaneparents", "insanityWPC", "Iowa", "iphone", "iranian", "Ireland", "ItalyInformatica", "ItHadToBeBrazil", "jailbreak", "JARTEM", "JoeBiden", "JustBootThings", "JustMoeThings", "JUSTNOFAMILY", "Justnofil", "JUSTNOMIL", "kansaw", "Konosuba", "kpop", "leagueoflegends", "learnchinese", "lebanon", "legaladvice", "LegalAdviceXPosts", "LetterstoJNMIL", "lgbt", "libertarian", "lifeisstrange", "linux", "livepd", "london", "Loopover", "losangeles", "LosAngelesRams", "MadeMeSmile", "makeupaddiction", "malefashion", "mariners", "MarioKartWii", "markistest", "marvelstudios", "medicine", "Megumin", "melbourne", "meta", "metafirstworldanarchy", "metaIFTA", "Miami", "Military", "Minecraft", "minneapolis", "Mistakes", "MobileAL", "MobileAL", "Moderation", "modernwarfare", "modevaluation", "ModRants", "ModReviews", "Moescene", "MonsterHunterWorld", "MorbidReality", "motogp", "MtF", "MurderedByWords", "myneedstheground", "MysteryDungeon", "mysubs", "NASCAR", "NederlandseMemes", "Neverwinter", "NewOrleans", "nfl", "NintendoSwitch", "NotMyJob", "nottheonion", "notUS", "nova", "NoveltyHell", "noveltyhub", "NPR", "nra", "omad", "omaha", "ontario", "OpenWiki", "orangecounty", "OutsideBugReports", "overpricedprebuilt", "Palestine", "Panelshow", "pathofexile", "pcgaming", "pelotoncycle", "PennStateUniversity", "PeopleSellingMirrors", "personalfinance", "Pete_Buttigieg", "Pewdiepiesubmissions", "phoenix", "pittsburgh", "PlayMe", "plexshares", "PokeFics", "Policechases", "politicalhumor", "PoliticalMemes", "politics", "Polska", "polyamory", "popcornwatch", "Portland", "potholes", "prettygoodof", "ProductIAMA", "project_earth", "Pub05", "Pub08", "PuertoRico", "QATrustedUser", "Rabbits", "RADAL", "RadioLab", "rage", "Rainbow6", "RateSubreddits", "razer", "ReasonableFantasy", "RedditLeak", "redditmysteries", "redesign", "ReformedHumor", "RelationshipLeftovers", "relationships", "reportspamsubs", "Republic_Of_Anime", "republicanmemes", "researchpapers", "RocketLeagueEsports", "rockets", "rollerblading", "Romania", "runescape", "rupaulsdragrace", "rust", "Sacramento", "SaltLakeCity", "SandersForPresident", "sandiego", "saskatchewan", "saskatoon", "ScenesFromAHat", "science", "scifi", "SCP", "Scrubs", "Seattle", "SeattleWA", "selfie", "serendipitymairead", "sheffield", "shirtcolors", "ShittyEndings", "ShittyIFTA", "shittyinspiringquotes", "Silverbugs", "slc", "SmugIdeologyMan", "socialism", "softwaregore", "SonicTheHedgehog", "southafrica", "soymilkadventures", "Spokane", "SRmeta", "Stadia", "startrek", "Steam", "stlouisblues", "SubredditReviews", "SuggestBooks", "SwagBucks", "syriancivilwar", "Tallahassee", "technicallythetruth", "techsupportmcgyver", "teenagers", "teslamotors", "testqqqqqq", "Texans", "TheBukuProject", "TheSimpsons", "TheWalkingDeadGame", "thewallstreet", "theydidthemonstermath", "Threesome", "tifu", "titanfolk", "todayilearned", "toonmusic", "tormodsfanfiction", "Toronto", "Toyota", "traaaaaaannnnnnnnnns", "trans", "transsupport", "transtimelines", "TrollXChromosomes", "TrueCrimeDiscussion", "TrueSyncretic", "truetruebestof2012", "trump", "TrumpCriticizesTrump", "tuesday", "Turkey", "twice", "TwoXChromosomes", "ukpolitics", "unitedkingdom", "UnsolvedMysteries", "UpliftingComments", "USMC", "vaporents", "vedicastrology", "vegaslocals", "velvethippos", "vexillology", "Virginia", "Vive", "voodoo", "wallstreetbets", "washingtonDC", "weeklyreddit", "weightroom", "WorstOfModeration", "writingprompts", "z_r", "zelda"].map(e => e.toLowerCase())),
+				w = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
+			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
+			const v = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]),
+				T = {
 					introModal: Object(a.d)(a.g),
 					markdownMode: a.g,
 					modQueue: Object(a.e)(a.g, a.h),
-					spBadges: b.c,
-					spClaimablePoints: b.d,
-					spCustomBadges: b.f,
-					spCustomCrypto: b.g,
-					spCommunityTipJar: b.e,
-					spEmotes: b.h,
-					spEmotesModTools: b.i,
-					spFavoriteCreators: b.j,
-					spGiphy: b.k,
-					spGovPolls: b.l,
-					spHarberger: b.m,
-					spKarmaPoints: b.n,
-					spLeaderboard: b.o,
-					spLoadtest: b.p,
-					spPoints: b.q,
-					spPolls: b.r,
-					spPremium: b.s,
-					spPremiumSubscriptions: b.t,
-					spPremiumUpsells: b.u,
-					spPublicPoints: b.v,
-					spSpinoffs: b.w,
-					spStellarWalletRegistration: b.x,
-					spSupport: b.y,
-					spTipping: b.z,
-					spTopTippers: b.A,
-					spWalletRegistrationBanner: b.B,
+					spBadges: y.c,
+					spClaimablePoints: y.d,
+					spCustomBadges: y.f,
+					spCustomCrypto: y.g,
+					spCommunityTipJar: y.e,
+					spEmotes: y.h,
+					spEmotesModTools: y.i,
+					spFavoriteCreators: y.j,
+					spGiphy: y.k,
+					spGovPolls: y.l,
+					spHarberger: y.m,
+					spKarmaPoints: y.n,
+					spLeaderboard: y.o,
+					spLoadtest: y.p,
+					spPoints: y.q,
+					spPolls: y.r,
+					spPremium: y.s,
+					spPremiumSubscriptions: y.t,
+					spPremiumUpsells: y.u,
+					spPublicPoints: y.v,
+					spSpinoffs: y.w,
+					spStellarWalletRegistration: y.x,
+					spSupport: y.y,
+					spTipping: y.z,
+					spTopTippers: y.A,
+					spWalletRegistrationBanner: y.B,
 					scheduledPosts: Object(a.e)(a.g, e => {
-						const t = Object(_.e)(e),
-							i = !!t && Object(c.e)(e, {
-								subredditId: Object(m.F)(e, t)
+						const t = Object(p.e)(e),
+							i = !!t && Object(m.e)(e, {
+								subredditId: Object(h.F)(e, t)
 							});
-						return !!t && i && p.has(t.toLowerCase())
+						return !!t && i && f.has(t.toLowerCase())
 					}),
-					communityTopics: u.b,
-					adminCommunityTopics: u.a,
+					adminCommunityTopics: e => {
+						if (!e.user.account) return !1;
+						const t = Object(u.e)(e.user.account).toLowerCase();
+						return Object(c.E)(e) && _.has(t)
+					},
 					rteVideoPoster: a.g,
 					devAndStagingWatermark: a.g,
 					fpsMeter: a.k,
@@ -7659,26 +7649,26 @@
 						} catch (r) {
 							return !1
 						}
-						return !(!Object(l.c)(t) && !Object(h.a)(e, {
-							pageLayer: Object(_.b)(e)
+						return !(!Object(l.c)(t) && !Object(g.a)(e, {
+							pageLayer: Object(p.b)(e)
 						})) && (!!(Object(l.b)(t) && parseInt(n) >= 50) || (!!(Object(l.d)(t) && parseInt(n) > 52) || !!(Object(l.f)(t) && parseInt(n) >= 27)))
 					},
 					enableCrowdControlMode: e => !1,
 					enableCrowdControlLevel: e => {
-						const t = Object(_.e)(e);
-						return !!t && f.has(t.toLowerCase())
+						const t = Object(p.e)(e);
+						return !!t && b.has(t.toLowerCase())
 					},
 					enableToxicityWarning: e => {
-						const t = Object(_.e)(e);
-						return !!t && w.has(t.toLowerCase())
+						const t = Object(p.e)(e);
+						return !!t && v.has(t.toLowerCase())
 					},
 					snoovatar30: a.g,
 					geoSubredditRecommendationDULoggedIn: a.l,
 					geoSubredditRecommendationDULoggedOut: a.l,
 					subredditInlineEditing: a.l,
 					modToMemberShare: e => {
-						const t = Object(_.e)(e);
-						return !!t && g.has(t.toLowerCase())
+						const t = Object(p.e)(e);
+						return !!t && w.has(t.toLowerCase())
 					},
 					subredditMentionD2xExperiment: a.l,
 					privacySettingLocationBasedRecommendations: a.l,
@@ -7687,32 +7677,32 @@
 					ImageGalleryCreationFlow: a.f,
 					__requiredDoNotRemove: a.k
 				},
-				v = o()(y, (e, t) => i => {
+				S = o()(T, (e, t) => i => {
 					const n = i.featureFlags.overrides[t];
 					return r()(n) ? e(i) : n
 				}),
-				T = Object.keys(y),
-				S = e => e.filter(e => "__requiredDoNotRemove" !== e),
-				E = /^feature_(.*)$/i,
-				F = e => {
-					const t = e.match(E);
+				E = Object.keys(T),
+				F = e => e.filter(e => "__requiredDoNotRemove" !== e),
+				I = /^feature_(.*)$/i,
+				O = e => {
+					const t = e.match(I);
 					if (null !== t) return t[1]
 				},
-				I = "FEATURES__FEATURE_SET",
-				O = "FEATURES__FEATURE_TOGGLED",
-				j = e => {
+				j = "FEATURES__FEATURE_SET",
+				B = "FEATURES__FEATURE_TOGGLED",
+				x = e => {
 					let {
 						featureName: t
 					} = e;
 					return (e, i) => {
-						const n = (0, v[t])(i());
+						const n = (0, S[t])(i());
 						e((e => {
 							let {
 								featureName: t,
 								currentValue: i
 							} = e;
 							return {
-								type: O,
+								type: B,
 								payload: {
 									featureName: t,
 									currentValue: i
@@ -8379,7 +8369,7 @@
 					}, this.unsubscribe = e => {
 						this.listeners.delete(e)
 					}, this.persistToLSAndNotify = e => {
-						Object(o.Q)(this.throttlingData), this.notifyAll(e)
+						Object(o.R)(this.throttlingData), this.notifyAll(e)
 					}, this.isFeatureThrottled = e => !!this.isReady && p(this.throttlingData, {
 						name: e,
 						sessionId: this.sessionId
@@ -8403,7 +8393,7 @@
 					let i = !1;
 					Object.keys(e).forEach(n => {
 						t.includes(n) || (delete e[n], i = !0)
-					}), i && Object(o.Q)(e), this.throttlingData = e, this.sessionId = r()(), this.isReady = !0, this.notifyAll()
+					}), i && Object(o.R)(e), this.throttlingData = e, this.sessionId = r()(), this.isReady = !0, this.notifyAll()
 				}
 				notifyAll(e) {
 					this.isReady && this.listeners.forEach(t => {
@@ -8886,122 +8876,126 @@
 		},
 		"./src/reddit/helpers/localStorage/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "V", (function() {
+			i.d(t, "W", (function() {
 				return g
 			})), i.d(t, "o", (function() {
 				return b
 			})), i.d(t, "p", (function() {
 				return w
-			})), i.d(t, "F", (function() {
-				return y
-			})), i.d(t, "Y", (function() {
-				return F
 			})), i.d(t, "G", (function() {
+				return y
+			})), i.d(t, "Z", (function() {
+				return F
+			})), i.d(t, "H", (function() {
 				return I
 			})), i.d(t, "s", (function() {
 				return O
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "L", (function() {
 				return j
 			})), i.d(t, "f", (function() {
 				return B
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return x
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "fb", (function() {
 				return R
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "I", (function() {
 				return k
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "P", (function() {
 				return C
 			})), i.d(t, "h", (function() {
 				return N
 			})), i.d(t, "l", (function() {
 				return L
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "T", (function() {
 				return D
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return U
-			})), i.d(t, "cb", (function() {
+			})), i.d(t, "eb", (function() {
 				return q
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "db", (function() {
 				return W
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return z
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "cb", (function() {
 				return K
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "v", (function() {
 				return Q
 			})), i.d(t, "e", (function() {
 				return J
 			})), i.d(t, "d", (function() {
 				return Y
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "K", (function() {
 				return X
 			})), i.d(t, "n", (function() {
 				return Z
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "V", (function() {
 				return $
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "D", (function() {
 				return ee
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "O", (function() {
 				return te
 			})), i.d(t, "i", (function() {
 				return ie
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "Q", (function() {
 				return ne
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "Y", (function() {
 				return re
 			})), i.d(t, "r", (function() {
 				return se
 			})), i.d(t, "t", (function() {
 				return oe
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "ab", (function() {
 				return de
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "u", (function() {
 				return le
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "a", (function() {
 				return ae
-			})), i.d(t, "j", (function() {
-				return ue
-			})), i.d(t, "b", (function() {
-				return ce
-			})), i.d(t, "c", (function() {
-				return _e
-			})), i.d(t, "A", (function() {
-				return me
-			})), i.d(t, "R", (function() {
-				return pe
-			})), i.d(t, "L", (function() {
-				return he
-			})), i.d(t, "m", (function() {
-				return ge
-			})), i.d(t, "T", (function() {
-				return be
-			})), i.d(t, "fb", (function() {
-				return we
-			})), i.d(t, "k", (function() {
-				return ye
-			})), i.d(t, "Q", (function() {
-				return ve
-			})), i.d(t, "g", (function() {
-				return Te
-			})), i.d(t, "M", (function() {
-				return Se
-			})), i.d(t, "q", (function() {
-				return Fe
-			})), i.d(t, "W", (function() {
-				return Ie
 			})), i.d(t, "E", (function() {
+				return ue
+			})), i.d(t, "bb", (function() {
+				return ce
+			})), i.d(t, "j", (function() {
+				return _e
+			})), i.d(t, "b", (function() {
+				return me
+			})), i.d(t, "c", (function() {
+				return pe
+			})), i.d(t, "B", (function() {
+				return he
+			})), i.d(t, "S", (function() {
+				return fe
+			})), i.d(t, "M", (function() {
+				return ge
+			})), i.d(t, "m", (function() {
+				return we
+			})), i.d(t, "U", (function() {
+				return ye
+			})), i.d(t, "hb", (function() {
+				return ve
+			})), i.d(t, "k", (function() {
+				return Te
+			})), i.d(t, "R", (function() {
+				return Se
+			})), i.d(t, "g", (function() {
+				return Ee
+			})), i.d(t, "N", (function() {
+				return Fe
+			})), i.d(t, "q", (function() {
 				return Oe
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "X", (function() {
 				return je
-			})), i.d(t, "eb", (function() {
+			})), i.d(t, "F", (function() {
 				return Be
 			})), i.d(t, "z", (function() {
 				return xe
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "gb", (function() {
 				return Re
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "A", (function() {
 				return ke
+			})), i.d(t, "C", (function() {
+				return Ce
+			})), i.d(t, "J", (function() {
+				return Ne
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/localStorageAvailable/index.ts"),
@@ -9085,7 +9079,7 @@
 						section: _.c.recent,
 						id: p()()
 					}))
-				})(localStorage, u.x, e),
+				})(localStorage, u.y, e),
 				R = (e, t) => ((e, t, i, n) => {
 					let r = (h(e, n) || {})[t] || [],
 						s = -1;
@@ -9097,22 +9091,22 @@
 						})
 					}), -1 !== s && r.splice(s, 1), r.length >= 5 && (r = r.slice(0, 4));
 					const o = {
-						[u.x]: r
+						[u.y]: r
 					};
 					return r.unshift(i), f(e, n, o), r
-				})(localStorage, u.x, e, t),
+				})(localStorage, u.y, e, t),
 				k = (e, t) => ((e, t, i, n) => {
 					const r = h(e, n);
 					let s = [];
 					if (r && r[t]) {
 						s = r[t].filter(e => !o()(e, i));
 						const d = {
-							[u.x]: s
+							[u.y]: s
 						};
 						f(e, n, d)
 					}
 					return s
-				})(localStorage, u.x, e, t),
+				})(localStorage, u.y, e, t),
 				C = (e, t) => ((e, t, i, n) => {
 					const r = h(e, t) || {};
 					return r[i] = n, f(e, t, r)
@@ -9138,11 +9132,11 @@
 				M = (e, t) => {
 					Object(n.a)() && localStorage.setItem(e, t)
 				},
-				U = () => P(u.w),
-				q = () => A(u.w),
-				V = e => g(u.v, e),
+				U = () => P(u.x),
+				q = () => A(u.x),
+				V = e => g(u.w, e),
 				H = () => {
-					const e = b(u.v);
+					const e = b(u.w);
 					if (e) return e;
 					const t = P("post-creation-event-tooltip-store");
 					t && localStorage.removeItem("post-creation-event-tooltip-store");
@@ -9198,101 +9192,108 @@
 				},
 				ie = () => parseInt(G(u.i)) || 0,
 				ne = e => M(u.i, String(e)),
-				re = (e, t, i) => T(localStorage, u.s, e, t, i),
-				se = (e, t) => E(localStorage, u.s, e, t),
-				oe = () => {
+				re = (e, t, i) => T(localStorage, u.t, e, t, i),
+				se = (e, t) => E(localStorage, u.t, e, t),
+				oe = e => {
+					return (b(u.s) || {})[e] || !1
+				},
+				de = e => {
+					const t = b(u.s) || {};
+					t[e] = !0, g(u.s, t)
+				},
+				le = () => {
 					try {
-						return b(u.u) || {}
+						return b(u.v) || {}
 					} catch (e) {
 						return {}
 					}
 				},
-				de = (e, t) => {
-					const i = Object.assign({}, oe(), {
+				ae = (e, t) => {
+					const i = Object.assign({}, le(), {
 						[e]: {
 							postId: e,
 							subredditId: t,
 							when: Date.now()
 						}
 					});
-					g(u.u, i)
+					g(u.v, i)
 				},
-				le = () => 1 === b(u.t),
-				ae = e => g(u.t, e ? 1 : 0),
-				ue = () => b(u.j) || 0,
-				ce = () => {
+				ue = () => 1 === b(u.u),
+				ce = e => g(u.u, e ? 1 : 0),
+				_e = () => b(u.j) || 0,
+				me = () => {
 					g(u.j, 3)
 				},
-				_e = () => {
-					const e = ue();
+				pe = () => {
+					const e = _e();
 					0 !== e && g(u.j, e - 1)
 				},
-				me = () => () => {
+				he = () => () => {
 					const e = Date.now(),
 						t = b("".concat(u.l, "_").concat(a.a));
 					return !!t && (t < e && e < t + 2592e6)
 				},
-				pe = () => () => {
+				fe = () => () => {
 					const e = Date.now();
 					g("".concat(u.l, "_").concat(a.a), e)
 				},
-				he = e => {
+				ge = e => {
 					g(u.e, e)
 				},
-				fe = {
+				be = {
 					dismissed: !1,
 					seen: 0
 				},
-				ge = () => {
+				we = () => {
 					if (!Object(n.a)()) return !1;
 					localStorage.removeItem(u.o);
 					const e = b(u.n);
 					return !!e && (e.dismissed || e.seen >= 5)
 				},
-				be = () => {
+				ye = () => {
 					Object(n.a)() && g(u.n, {
 						dismissed: !0,
 						seen: 0
 					})
 				},
-				we = () => {
-					const e = b(u.n) || fe;
+				ve = () => {
+					const e = b(u.n) || be;
 					g(u.n, Object.assign({}, e, {
 						seen: Math.min(e.seen + 1, 5)
 					}))
 				},
-				ye = () => b(u.k),
-				ve = e => {
+				Te = () => b(u.k),
+				Se = e => {
 					g(u.k, e)
 				},
-				Te = () => P(u.f),
-				Se = () => A(u.f),
-				Ee = () => {
+				Ee = () => P(u.f),
+				Fe = () => A(u.f),
+				Ie = () => {
 					try {
 						return b(u.q)
 					} catch (e) {
 						return
 					}
 				},
-				Fe = () => {
-					const e = Ee();
+				Oe = () => {
+					const e = Ie();
 					if (!e) return !1;
 					const t = Object(r.c)(Math.floor(new Date(e.dismissedAt).valueOf() / 1e3));
 					return 3 === e.dismissedTimes || 1 === e.dismissedTimes && t <= 3 || 2 === e.dismissedTimes && t <= 7
 				},
-				Ie = () => {
-					const e = Ee(),
+				je = () => {
+					const e = Ie(),
 						t = e ? e.dismissedTimes + 1 : 1;
 					g(u.q, {
 						dismissedTimes: t,
 						dismissedAt: (new Date).toISOString()
 					})
 				},
-				Oe = e => {
+				Be = e => {
 					if (Object(n.a)()) {
 						const t = (() => {
 							try {
-								return b(u.z)
+								return b(u.A)
 							} catch (e) {
 								return
 							}
@@ -9300,20 +9301,20 @@
 						return t && t.some(t => t === e)
 					}
 				},
-				je = () => b(u.A),
-				Be = e => {
-					g(u.A, e)
-				},
 				xe = () => b(u.B),
 				Re = e => {
-					const t = xe();
-					g(u.B, Object.assign({}, t, {
+					g(u.B, e)
+				},
+				ke = () => b(u.C),
+				Ce = e => {
+					const t = ke();
+					g(u.C, Object.assign({}, t, {
 						[e]: (t && t[e] || 0) + 1
 					}))
 				},
-				ke = e => {
-					const t = xe();
-					g(u.B, Object.assign({}, t, {
+				Ne = e => {
+					const t = ke();
+					g(u.C, Object.assign({}, t, {
 						[e]: 0
 					}))
 				}
@@ -21790,4 +21791,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.96a2a63eafe8dcee59d9.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.996dc0f1d3e6e5431085.js.map

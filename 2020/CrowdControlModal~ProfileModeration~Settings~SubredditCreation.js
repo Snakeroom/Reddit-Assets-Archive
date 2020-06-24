@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.7b8d0dd941dbac7441dc.js
-// Retrieved at 6/22/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.3017093b2039afec51f3.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal~ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -314,21 +314,22 @@
 					var {
 						className: t,
 						direction: n,
-						inModal: a,
-						isNightModeOn: s,
-						disabled: o,
-						indent: i,
-						last: c
-					} = e, d = W(e, ["className", "direction", "inModal", "isNightModeOn", "disabled", "indent", "last"]);
-					return r.a.createElement("div", G({}, d, {
+						isCreateCommunity: a,
+						inModal: s,
+						isNightModeOn: o,
+						disabled: i,
+						indent: c,
+						last: d
+					} = e, u = W(e, ["className", "direction", "isCreateCommunity", "inModal", "isNightModeOn", "disabled", "indent", "last"]);
+					return r.a.createElement("div", G({}, u, {
 						className: Object(l.a)(H.a.Wrapper, t, {
 							[H.a.mColumn]: "column" === n,
-							[H.a.mDisabled]: !!o,
-							[H.a.mIndent]: !!i,
-							[H.a.mLast]: !!c,
-							[H.a.isCreateCommunity]: d.isCreateCommunity,
-							[H.a.inModal]: !!a,
-							[H.a.isNightModeOn]: !!s
+							[H.a.mDisabled]: !!i,
+							[H.a.mIndent]: !!c,
+							[H.a.mLast]: !!d,
+							[H.a.isCreateCommunity]: !!a,
+							[H.a.inModal]: !!s,
+							[H.a.isNightModeOn]: !!o
 						})
 					}))
 				},
@@ -403,7 +404,7 @@
 					}
 				}, r.a.createElement(ce, null, r.a.createElement(ie, {
 					style: {
-						background: "linear-gradient(to right, " + R()(1, e.max + 1).map((t, n) => t <= e.value ? "".concat(e.ticks[e.value].color, " ").concat((t - 1) / e.max * 100, "%,\n                    ").concat(e.ticks[e.value].color, " ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : t !== e.max ? "#c5c5c5 ".concat((t - 1) / e.max * 100, "%, #c5c5c5 ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%, \n                    #fff ").concat(t / e.max * 100, "%") : "#c5c5c5 ".concat((t - 1) / e.max * 100, "%")) + ", #C5C5C5 100%)"
+						background: "linear-gradient(to right, " + R()(1, e.max + 1).map((t, n) => t <= e.value ? "".concat(e.ticks[e.value].color, " ").concat((t - 1) / e.max * 100, "%,\n                    ").concat(e.ticks[e.value].color, " ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100, "%") : t !== e.max ? "#c5c5c5 ".concat((t - 1) / e.max * 100, "%, #c5c5c5 ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100 - 1, "%,\n                    #fff ").concat(t / e.max * 100, "%") : "#c5c5c5 ".concat((t - 1) / e.max * 100, "%")) + ", #C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -1300,4 +1301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.7b8d0dd941dbac7441dc.js.map
+//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.3017093b2039afec51f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f89cd2c4e9aa03fceb38.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e0555924083cba54e9fe.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2192,13 +2192,13 @@
 							domain: M.a.cookieDomain
 						});
 						const t = Object(cs.s)(H.a.ALPHA_CONSUMER);
-						t && Object(cs.G)(H.a.ALPHA_CONSUMER), (e || t) && Object(cs.Y)(H.a.REDESIGN_MODAL, !0)
+						t && Object(cs.H)(H.a.ALPHA_CONSUMER), (e || t) && Object(cs.Z)(H.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
 					} = this.props, s = Object(cs.s)(H.a.REDESIGN_MODAL);
-					!e && s ? t() : e && !s && Object(cs.Y)(H.a.REDESIGN_MODAL, !0)
+					!e && s ? t() : e && !s && Object(cs.Z)(H.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -4976,7 +4976,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(cs.H)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(cs.I)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -4986,7 +4986,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(cs.db)(Object.assign({}, e, {
+							recentSearches: Object(cs.fb)(Object.assign({}, e, {
 								section: wr.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -5073,7 +5073,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(cs.x)(this.props.currentUser.id);
+							const e = Object(cs.y)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -9866,8 +9866,8 @@
 						actionType: t,
 						surveyExperimentVariants: s
 					} = e;
-					const n = Object(o.y)(),
-						a = Object(o.z)(),
+					const n = Object(o.z)(),
+						a = Object(o.A)(),
 						r = 864e5 * i.survey_cooldown_days;
 					if (!a || !a[t] || n && Date.now() - n <= r) return null;
 					const c = [],
@@ -9888,7 +9888,7 @@
 					const {
 						trigger_event: s
 					} = e;
-					Object(o.eb)(t), Object(o.I)(s)
+					Object(o.gb)(t), Object(o.J)(s)
 				},
 				m = () => i.active_surveys.map(e => e.trigger_event),
 				p = () => i.active_surveys.map(e => e.experiment_name),
@@ -10801,7 +10801,7 @@
 			const Ue = 1e3;
 			class Ge extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = De()(() => Object(H.V)(this.props.storageKey, this.props.value), Ue)
+					super(...arguments), this.flush = De()(() => Object(H.W)(this.props.storageKey, this.props.value), Ue)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -10922,7 +10922,7 @@
 					return n
 				} : () => e => t => e(t),
 				Ot = s("./src/reddit/helpers/survey/index.ts");
-			var xt = "undefined" != typeof document ? e => e => t => ((e => !!Object(Ot.f)().filter(t => t === e).length)(t.type) && (Object(H.B)(t.type), Object(Ot.b)().setState(t.type)), e(t)) : () => e => t => e(t);
+			var xt = "undefined" != typeof document ? e => e => t => ((e => !!Object(Ot.f)().filter(t => t === e).length)(t.type) && (Object(H.C)(t.type), Object(Ot.b)().setState(t.type)), e(t)) : () => e => t => e(t);
 			const Et = 5 * g.db;
 			var St = e => {
 					const t = De()(() => {
@@ -11386,7 +11386,7 @@
 									text: n.fbt._("Successfully logged in!", null, {
 										hk: "2POUVB"
 									})
-								})), i = !0, Object(Ut.c)(Ve.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [ze.o]))), Object(Ut.b)(Ve.a.JustLoggedOut) && (i = !0, Object(Ut.c)(Ve.a.JustLoggedOut)), Object(L.b)(e), !1 !== H.C() && Object(R.a)().then(e => e.requestNotificationsPermissions).then(e => d.dispatch(e(i, !1))), t === g.Ab.MULTIREDDIT && r.routeMatch) {
+								})), i = !0, Object(Ut.c)(Ve.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [ze.o]))), Object(Ut.b)(Ve.a.JustLoggedOut) && (i = !0, Object(Ut.c)(Ve.a.JustLoggedOut)), Object(L.b)(e), !1 !== H.D() && Object(R.a)().then(e => e.requestNotificationsPermissions).then(e => d.dispatch(e(i, !1))), t === g.Ab.MULTIREDDIT && r.routeMatch) {
 								const {
 									multiredditName: e,
 									username: t
@@ -11418,8 +11418,8 @@
 							"visible" !== document.visibilityState && Object(j.a)(Yt("tab_backgrounded")(d.getState()))
 						}), Object(de.j)(d.getState()) && $t(d.getState), d.dispatch((() => async (e, t) => {
 							const s = t().user.prefs.surveyLastSeenTime,
-								n = Object(H.y)();
-							s && (!n || n && s > n) ? Object(H.eb)(s) : n && e(Object(B.H)({
+								n = Object(H.z)();
+							s && (!n || n && s > n) ? Object(H.gb)(s) : n && e(Object(B.H)({
 								surveyLastSeenTime: n
 							}, !1))
 						})())
@@ -13299,4 +13299,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.f89cd2c4e9aa03fceb38.js.map
+//# sourceMappingURL=Reddit.e0555924083cba54e9fe.js.map

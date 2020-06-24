@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.22a67ba78adf95476766.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.2483b340f794609738bb.js
+// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -30,13 +30,13 @@
 			var u = s("./src/config.ts");
 			var m = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
-			const x = e => {
+			const b = e => {
 					const t = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						s = t.length,
 						i = new Uint32Array(e);
 					return crypto.getRandomValues(i), Array.from(i).map(e => t.charAt(e % s)).join("")
 				},
-				b = function() {
+				x = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
 					return new Date(e).toISOString().replace(/^(\d{4})-(\d{2})-(\d{2}).*/, "$1$2$3")
 				},
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "d414c19-production"
+					SENTRY_RELEASE_VERSION: "d63a4bd-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -180,7 +180,7 @@
 					async encryptViewerUserId() {
 						const e = this.props.redditUserId || T.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
-							s = b(),
+							s = x(),
 							i = "".concat(s).concat(e).concat(t);
 						return (await E(i)).substr(0, T.VIEWER_USER_ID_LENGTH)
 					}
@@ -224,7 +224,7 @@
 					getOrCreateSalt() {
 						const e = T.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(r.a)(e);
-						return t || (t = x(T.SALT_LENGTH), Object(r.b)(e, t, T.SALT_TIME_TO_LIVE)), t
+						return t || (t = b(T.SALT_LENGTH), Object(r.b)(e, t, T.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return Object.assign({}, this.getDashInstanceData(), this.getHlsInstanceData())
@@ -332,8 +332,8 @@
 				onLoadRichTextContentIfNeeded: t => e(Object(c.B)(t))
 			}))(u);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -341,7 +341,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var b = function(e, t) {
+			var x = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -362,7 +362,7 @@
 					isTitleOnly: u,
 					postId: g,
 					showFull: f
-				} = e, E = b(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
+				} = e, E = x(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
 				const v = {
 						[p.a.richTextContainerFull]: f,
 						[p.a.richTextContainerTitleOnly]: u && !f,
@@ -371,7 +371,7 @@
 					y = {};
 				f || (y.maxHeight = "".concat(u ? r.l : c ? r.k : r.j, "px")), d && (y.maxWidth = "".concat(a.d, "px"));
 				const w = l && f;
-				return n.a.createElement("div", x({
+				return n.a.createElement("div", b({
 					className: Object(o.a)(v, i),
 					style: y
 				}, E), s, w && n.a.createElement(m, {
@@ -408,8 +408,8 @@
 				u = s("./src/reddit/components/Media/TwitterEmbed/index.m.less"),
 				m = s.n(u);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -417,7 +417,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const b = 350,
+			const x = 350,
 				g = 100,
 				f = 300;
 			class E extends o.a.Component {
@@ -451,11 +451,11 @@
 					} = this.props, {
 						isFullyLoaded: u
 					} = this.state, E = s.height || (t.isDeleted ? g : f);
-					return o.a.createElement(l.a, x({}, s, {
+					return o.a.createElement(l.a, b({}, s, {
 						alwaysWrapMedia: !0,
 						height: E,
 						showFull: !s.isListing,
-						width: b
+						width: x
 					}), e && o.a.createElement(o.a.Fragment, null, (!s.height || !u) && (t.isDeleted ? o.a.createElement("p", {
 						className: m.a.tweetDeleted
 					}, i.fbt._("This Tweet has been deleted.", null, {
@@ -478,7 +478,7 @@
 						showFull: !0,
 						source: r,
 						title: d,
-						width: b
+						width: x
 					}), s.isListing && E > p.i && o.a.createElement("div", {
 						className: m.a.seeMore
 					}, i.fbt._("See full tweet", null, {
@@ -548,8 +548,8 @@
 				p = s("./src/higherOrderComponents/withMux/index.tsx"),
 				u = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				m = s("./src/lib/env/index.ts"),
-				x = s("./src/lib/isUrl/index.ts"),
-				b = s("./src/lib/objectSelector/index.ts"),
+				b = s("./src/lib/isUrl/index.ts"),
+				x = s("./src/lib/objectSelector/index.ts"),
 				g = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				f = s("./src/lib/sentry/index.ts"),
 				E = s("./src/reddit/components/AdViewability/index.tsx"),
@@ -660,7 +660,7 @@
 					}
 				}),
 				de = Object(l.b)(re),
-				ce = Object(b.b)(e => ({
+				ce = Object(x.b)(e => ({
 					renderingObjectInfo: e.post,
 					pageLayer: e.pageLayer
 				}));
@@ -887,7 +887,7 @@
 						isTitleOnly: h,
 						post: p,
 						showCentered: u,
-						showFull: b = !1,
+						showFull: x = !1,
 						subredditOrProfileDisplayText: g
 					} = this.props, {
 						canLoadContent: y,
@@ -909,7 +909,7 @@
 						$ = {
 							showCentered: u,
 							isListing: a,
-							showFull: b,
+							showFull: x,
 							height: Y,
 							width: K
 						},
@@ -944,7 +944,7 @@
 						case B.n.RTJSON:
 							const i = Object(V.a)(p, null);
 							if (null === i) return;
-							return b || Object(R.a)(p) ? c.a.createElement(c.a.Fragment, null, c.a.createElement(C.a, {
+							return x || Object(R.a)(p) ? c.a.createElement(c.a.Fragment, null, c.a.createElement(C.a, {
 								canLoadContent: y,
 								className: e,
 								"data-click-id": "text",
@@ -954,7 +954,7 @@
 								isRichTextTruncated: p.media.isRichtextPreview,
 								isTitleOnly: h,
 								postId: p.id,
-								showFull: b
+								showFull: x
 							}, c.a.createElement(j.a, {
 								flairStyleTemplate: s,
 								content: p.isMeta ? Object(F.a)(i, p.id) : i,
@@ -980,7 +980,7 @@
 									className: e,
 									"data-click-id": "text",
 									isCommentsPage: n,
-									showFull: b
+									showFull: x
 								}, c.a.createElement(N.a, {
 									flairStyleTemplate: s,
 									html: p.isMeta ? Object(H.a)(p.media.content, p.id, J.a.hiddenLink) : p.media.content
@@ -1025,7 +1025,7 @@
 								isResponsive: !0,
 								onLoad: this.onIframeLoaded,
 								showCentered: u,
-								showFull: b,
+								showFull: x,
 								source: k,
 								title: p.title
 							})) : c.a.createElement(I.a, q({}, ee, {
@@ -1118,7 +1118,7 @@
 							const w = this.state.viewportHeight - 2 * Z,
 								D = this.state.viewportWidth - 2 * Z;
 							let P, G = k;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(x.a)(p.thumbnail.url) ? G = p.thumbnail.url : p.preview && Object(x.a)(p.preview.url) && (G = p.preview.url)), l && (P = g ? "".concat(g, " - ").concat(p.title) : p.title), c.a.createElement(I.a, q({}, ee, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(b.a)(p.thumbnail.url) ? G = p.thumbnail.url : p.preview && Object(b.a)(p.preview.url) && (G = p.preview.url)), l && (P = g ? "".concat(g, " - ").concat(p.title) : p.title), c.a.createElement(I.a, q({}, ee, {
 								blurSrc: X ? G : void 0,
 								isExpando: !!o
 							}), c.a.createElement(te, {
@@ -1250,4 +1250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.22a67ba78adf95476766.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.2483b340f794609738bb.js.map
