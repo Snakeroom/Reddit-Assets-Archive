@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.996dc0f1d3e6e5431085.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c662b9e20b3378d7c18a.js
+// Retrieved at 6/24/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3156,7 +3156,7 @@
 		"./src/lib/initializeClient/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return V
+				return H
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.constructor.js"), i("./node_modules/core-js/modules/es6.regexp.match.js"), i("./node_modules/core-js/modules/es6.regexp.search.js"), i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -3228,32 +3228,33 @@
 				}),
 				O = i("./src/lib/CSSVariableProvider/index.tsx"),
 				j = i("./src/lib/DeprecatedBrowserProvider/index.tsx"),
-				B = i("./src/lib/logs/errors.ts"),
-				x = i("./src/lib/performanceTimings/index.tsx"),
-				R = i("./src/lib/sample/index.ts"),
-				k = i("./src/lib/sentry/index.ts"),
-				C = i("./src/reddit/helpers/localStorage/index.ts"),
-				N = i("./src/lib/logSafeJSONStringify/index.ts");
-			const P = e => setTimeout(() => {
+				B = i("./src/lib/initializeClient/installReducer.ts"),
+				x = i("./src/lib/logs/errors.ts"),
+				R = i("./src/lib/performanceTimings/index.tsx"),
+				k = i("./src/lib/sample/index.ts"),
+				C = i("./src/lib/sentry/index.ts"),
+				N = i("./src/reddit/helpers/localStorage/index.ts"),
+				P = i("./src/lib/logSafeJSONStringify/index.ts");
+			const A = e => setTimeout(() => {
 					throw e
 				}, 0),
-				A = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
-			var L = e => t => i => n => {
-				"object" == typeof n && k.c.addBreadcrumb({
+				L = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
+			var D = e => t => i => n => {
+				"object" == typeof n && C.c.addBreadcrumb({
 					message: n.type,
 					category: "redux-action"
 				});
 				const r = i(n),
 					s = t.getState();
-				return k.c.setExtra("pageInfo", JSON.parse(Object(N.a)(s.platform))), k.c.setUser(JSON.parse(Object(N.a)(s.user, A))), !e && r instanceof Promise && r.catch(P), r
+				return C.c.setExtra("pageInfo", JSON.parse(Object(P.a)(s.platform))), C.c.setUser(JSON.parse(Object(P.a)(s.user, L))), !e && r instanceof Promise && r.catch(A), r
 			};
-			const D = !1;
+			const G = !1;
 
-			function G(e) {
-				return "ChunkLoadError" !== e.type || Object(R.a)(1)
+			function M(e) {
+				return "ChunkLoadError" !== e.type || Object(k.a)(1)
 			}
 			_.a.polyfill();
-			const M = () => {
+			const U = () => {
 					if (!(() => {
 							try {
 								return window.history.state || {}
@@ -3268,7 +3269,7 @@
 						}, "", t)
 					}
 				},
-				U = () => {
+				q = () => {
 					(document.cookie.match(/loid=/g) || []).length > 1 && (u.a.set("loid", "", {
 						expires: 0,
 						path: "/"
@@ -3277,36 +3278,36 @@
 						path: "/"
 					}))
 				},
-				q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d63a4bd-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+				V = (e, t, i) => {
+					console.log("%cStarting Raven %crelease %c".concat("a5c6a5c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d63a4bd-production",
+						release: "a5c6a5c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
-						integrations: [...Object(k.d)(), new s.Integrations.Breadcrumbs({
+						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
 							console: !1
 						}), new s.Integrations.GlobalHandlers({
 							onerror: !0,
 							onunhandledrejection: !1
 						})],
-						beforeSend: e => (e = Object(k.b)(e)).exception && e.exception.values && (e.exception.values = e.exception.values.filter(G), 0 === e.exception.values.length) ? null : (Object(B.sendRavenError)(i(), e), Object(k.e)(e))
+						beforeSend: e => (e = Object(C.b)(e)).exception && e.exception.values && (e.exception.values = e.exception.values.filter(M), 0 === e.exception.values.length) ? null : (Object(x.sendRavenError)(i(), e), Object(C.e)(e))
 					}), t.tags && o.j(t.tags), o.i("app", e)
 				};
-			async function V(e) {
+			async function H(e) {
 				let t;
-				Object(x.e)(x.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
+				Object(R.e)(R.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
 				const r = Object(n.b)(() => {}, {
 					namespace: e.appName
 				});
-				U(), M();
+				q(), U();
 				const s = e.history || Object(l.a)();
 				let a = e => e.children;
-				e.raven && (q(e.appName, e.raven, e.apiContext), a = class extends p.a.Component {
+				e.raven && (V(e.appName, e.raven, e.apiContext), a = class extends p.a.Component {
 					componentDidCatch(e, t) {
 						o.l(i => {
 							i.setExtra("info", t), o.c(e)
@@ -3330,9 +3331,11 @@
 						})
 					}
 				};
-				const c = window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : e => e,
+				const c = window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__({
+						shouldHotReload: !1
+					}) : e => e,
 					_ = [!1, Object(b.d)(s), ...e.customMiddleware || []].filter(Boolean);
-				e.raven && _.unshift(L(u));
+				e.raven && _.unshift(D(u));
 				let m = window.___r || {};
 				delete window.___r;
 				const h = document.getElementById("data");
@@ -3340,57 +3343,109 @@
 					initialData: m,
 					browserHistory: s
 				}));
-				const y = Object(w.e)(e.reducers, m, Object(w.d)(Object(w.a)(..._), c, e.storeEnhancer || (e => e))),
-					T = async function() {
-						const e = {
-							"en-US": {}
-						};
-						let t = document.documentElement.getAttribute("lang") || "en-US";
-						if ("en-US" !== t) try {
-							const n = (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")("./".concat(t, ".json"))).default;
-							for (const t in n) e[t] = n[t]
-						} catch (n) {
-							t = "en-US"
-						}
-						e[t] || (t = "en-US"), d.IntlViewerContext.locale = t, Object(d.init)({
-							translations: e
-						})
-					}(), S = m.user && m.user.account ? m.user.account.id : null;
-				Object(C.G)(S);
+				const y = Object(w.c)(e.reducerMap),
+					T = Object(w.e)(y, m, Object(w.d)(Object(w.a)(..._), c, e.storeEnhancer || (e => e)));
+				Object(B.b)(e.appName, T, e.reducerMap);
+				const S = async function() {
+					const e = {
+						"en-US": {}
+					};
+					let t = document.documentElement.getAttribute("lang") || "en-US";
+					if ("en-US" !== t) try {
+						const n = (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")("./".concat(t, ".json"))).default;
+						for (const t in n) e[t] = n[t]
+					} catch (n) {
+						t = "en-US"
+					}
+					e[t] || (t = "en-US"), d.IntlViewerContext.locale = t, Object(d.init)({
+						translations: e
+					})
+				}(), E = m.user && m.user.account ? m.user.account.id : null;
+				Object(N.G)(E);
 				const {
-					routes: E
+					routes: x
 				} = e;
-				let B = {};
-				e.preRender && (B = e.preRender({
+				let k = {};
+				e.preRender && (k = e.preRender({
 					browserHistory: s,
-					routes: E,
-					store: y,
+					routes: x,
+					store: T,
 					flags: {
-						DEBUG: D,
+						DEBUG: G,
 						SUPPORTS_REJECTION_EVENTS: u
 					}
-				})), Object(x.e)(x.b.CreateRouteCompsStart);
-				const R = F({
-					routes: E,
+				})), Object(R.e)(R.b.CreateRouteCompsStart);
+				const C = F({
+					routes: x,
 					loadingPage: e.staticPages ? e.staticPages.loading : void 0
 				});
-				return await r, Object(x.e)(x.b.ReactHydrateStart), await T,
+				return await r, Object(R.e)(R.b.ReactHydrateStart), await S,
 					function(e) {
 						const t = Array.from(e.getElementsByClassName(v));
 						for (const i of t) document.head.appendChild(i), i.classList.remove(v)
 					}(e.target), await new Promise(t => (e.ssr ? f.a.hydrate : f.a.render)(p.a.createElement(a, null, p.a.createElement(g.a, {
-						store: y
+						store: T
 					}, p.a.createElement(O.a, null, p.a.createElement(j.b, {
 						userAgent: m.meta.userAgent
-					}, e.appFactory(I(s), R))))), e.target, t)), Object(x.e)(x.b.ReactHydrateEnd), e.postRender && e.postRender({
+					}, e.appFactory(I(s), C))))), e.target, t)), Object(R.e)(R.b.ReactHydrateEnd), e.postRender && e.postRender({
 						browserHistory: s,
-						routes: E,
+						routes: x,
 						serverDocumentLength: t,
-						store: y,
-						localStorageData: B.localStorageData
-					}), Object(x.e)(x.b.InitClientEnd), {
-						store: y
+						store: T,
+						localStorageData: k.localStorageData
+					}), Object(R.e)(R.b.InitClientEnd), {
+						store: T
 					}
+			}
+		},
+		"./src/lib/initializeClient/installReducer.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "b", (function() {
+				return a
+			})), i.d(t, "a", (function() {
+				return u
+			}));
+			i("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = i("./node_modules/icepick/icepick.js"),
+				r = i("./node_modules/lodash/mapValues.js"),
+				s = i.n(r),
+				o = i("./node_modules/redux/es/redux.js"),
+				d = i("./src/lib/constants/index.ts");
+			const l = {};
+
+			function a(e, t, i) {
+				l[e] ? l[e].store = t : l[e] = {
+					store: t,
+					staticReducer: i,
+					dynamicReducers: {}
+				}, _(e)
+			}
+
+			function u(e) {
+				let t, i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.l.Redesign;
+				const r = (t = l[i] ? l[i] : l[i] = {
+					dynamicReducers: {}
+				}).dynamicReducers;
+				t.dynamicReducers = Object(n.merge)(t.dynamicReducers, e), r !== t.dynamicReducers && _(i)
+			}
+
+			function c(e, t) {
+				const {
+					staticReducer: i = t,
+					dynamicReducers: r = {}
+				} = l[e] || {};
+				if (!i) throw new Error("no staticReducer available for ".concat(e));
+				return function e(t) {
+					return Object(o.c)(s()(t, t => "function" == typeof t ? t : e(t || {})))
+				}(Object(n.merge)(i, r))
+			}
+
+			function _(e) {
+				const {
+					store: t,
+					dynamicReducers: i
+				} = l[e];
+				t && 0 !== Object.keys(i).length && t.replaceReducer(c(e))
 			}
 		},
 		"./src/lib/isAdHocMultireddit/index.ts": function(e, t, i) {
@@ -3647,7 +3702,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d63a4bd-production",
+							releaseClient: "a5c6a5c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -21791,4 +21846,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.996dc0f1d3e6e5431085.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.c662b9e20b3378d7c18a.js.map

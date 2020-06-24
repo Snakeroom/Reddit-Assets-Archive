@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.69a6462925cc1470f7e6.js
-// Retrieved at 6/11/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.942804852a4353832dfa.js
+// Retrieved at 6/24/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -13740,6 +13740,112 @@
 					}
 				}
 				return t
+			}
+		},
+		"./node_modules/icepick/icepick.js": function(e, t, n) {
+			"use strict";
+			const r = t,
+				o = e => e,
+				i = e => null !== e && (Array.isArray(e) || s(e)),
+				s = e => !("object" != typeof e || e.constructor !== Object && null != e.constructor || Object.getPrototypeOf(e) !== Object.prototype && null !== Object.getPrototypeOf(e)),
+				a = (e, t) => {
+					let n, r;
+					if (Array.isArray(e))
+						for (n = e.length; n--;) t(n);
+					else
+						for (n = (r = Object.keys(e)).length; n--;) t(r[n])
+				},
+				u = e => Array.isArray(e) ? e.slice() : (e => {
+					const t = null == e.constructor ? Object.create(null) : {},
+						n = Object.keys(e);
+					let r, o = n.length;
+					for (; o--;) t[r = n[o]] = e[r];
+					return t
+				})(e),
+				c = o,
+				l = o;
+
+			function d(e, t) {
+				return (t || []).reduce((e, t) => {
+					if (e) return e[t]
+				}, e)
+			}
+
+			function f(e, t) {
+				return Object.keys(t).reduce((e, n) => r.assoc(e, n, t[n]), e)
+			}
+
+			function h(e, t, n) {
+				return e[t] === n ? e : r.assoc(e, t, n)
+			}
+			t.freeze = o, t.thaw = function e(t) {
+				if (!i(t) || !Object.isFrozen(t)) return t;
+				const n = Array.isArray(t) ? new Array(t.length) : {};
+				return a(t, r => {
+					n[r] = e(t[r])
+				}), n
+			}, t.assoc = function(e, t, n) {
+				if (e[t] === n) return l(e);
+				const r = u(e);
+				return r[t] = c(n), l(r)
+			}, t.set = t.assoc, t.dissoc = function(e, t) {
+				const n = u(e);
+				return delete n[t], l(n)
+			}, t.unset = t.dissoc, t.assocIn = function e(t, n, o) {
+				const i = n[0];
+				return 1 === n.length ? r.assoc(t, i, o) : r.assoc(t, i, e(t[i] || {}, n.slice(1), o))
+			}, t.setIn = t.assocIn, t.dissocIn = function e(t, n) {
+				const o = n[0];
+				return t.hasOwnProperty(o) ? 1 === n.length ? r.dissoc(t, o) : r.assoc(t, o, e(t[o], n.slice(1))) : t
+			}, t.unsetIn = t.dissocIn, t.getIn = d, t.updateIn = function(e, t, n) {
+				const o = d(e, t);
+				return r.assocIn(e, t, n(o))
+			}, ["push", "unshift", "pop", "shift", "reverse", "sort"].forEach(e => {
+				t[e] = function(t, n) {
+					const r = [...t];
+					return r[e](c(n)), l(r)
+				}, t[e].displayName = "icepick." + e
+			}), t.splice = function(e, ...t) {
+				const n = [...e],
+					r = t.map(c);
+				return n.splice.apply(n, r), l(n)
+			}, t.slice = function(e, t, n) {
+				const r = e.slice(t, n);
+				return l(r)
+			}, ["map", "filter"].forEach(e => {
+				t[e] = function(t, n) {
+					const r = n[e](t);
+					return l(r)
+				}, t[e].displayName = "icepick." + e
+			}), t.extend = t.assign = function(e, ...t) {
+				const n = t.reduce(f, e);
+				return l(n)
+			}, t.merge = function e(t, n, o) {
+				if (null == t || null == n) return t;
+				return Object.keys(n).reduce((t, s) => {
+					const a = n[s],
+						u = t[s],
+						c = o ? o(u, a, s) : a;
+					return i(a) && i(u) ? c === u ? t : Array.isArray(a) ? r.assoc(t, s, c) : h(t, s, e(u, c, o)) : h(t, s, c)
+				}, t)
+			};
+			const p = {
+				value: function() {
+					return this.val
+				},
+				thru: function(e) {
+					return this.val = c(e(this.val)), this
+				}
+			};
+			Object.keys(t).forEach(e => {
+				e.match(/^(map|filter)$/) ? p[e] = function(n) {
+					return this.val = t[e](n, this.val), this
+				} : p[e] = function(...n) {
+					return this.val = t[e](this.val, ...n), this
+				}
+			}), t.chain = function(e) {
+				const t = Object.create(p);
+				return t.val = e, t
 			}
 		},
 		"./node_modules/ieee754/index.js": function(e, t) {
@@ -34108,4 +34214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.69a6462925cc1470f7e6.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.942804852a4353832dfa.js.map

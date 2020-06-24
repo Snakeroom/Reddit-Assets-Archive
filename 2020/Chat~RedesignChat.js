@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.43e345bf4a9cd93d42e6.js
-// Retrieved at 6/24/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9847702cd34bce58d097.js
+// Retrieved at 6/24/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -10114,6 +10114,9 @@
 		},
 		"./src/chat/reducers/index.ts": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return zt
+			}));
 			var a = n("./node_modules/redux/es/redux.js"),
 				s = n("./src/chat/actions/channel.ts");
 			var c = function() {
@@ -11458,7 +11461,7 @@
 					session: Ft,
 					sessionTracker: Kt
 				});
-			t.a = Object(a.c)({
+			const zt = {
 				channels: z,
 				contacts: re,
 				container: de,
@@ -11478,7 +11481,7 @@
 				typingIndicator: It,
 				user: Gt,
 				lastAction: ut.a
-			})
+			}
 		},
 		"./src/chat/reducers/meta/index.ts": function(e, t, n) {
 			"use strict";
@@ -14074,4 +14077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.43e345bf4a9cd93d42e6.js.map
+//# sourceMappingURL=Chat~RedesignChat.9847702cd34bce58d097.js.map
