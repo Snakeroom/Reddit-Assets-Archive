@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.0beb3fa95b9a8053e59d.js
-// Retrieved at 6/24/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.115a9ca0f844e99d89c7.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -134,13 +134,13 @@
 					let s = Math.trunc(e % 60).toString();
 					return s = "0".concat(s).slice(-2), "".concat(t, ":").concat(s)
 				},
-				C = (e, t) => {
+				w = (e, t) => {
 					let s = Math.floor(e / 60).toString(),
 						i = Math.trunc(e % 60).toString();
 					const a = Math.floor(t / 60).toString();
 					return s.length < a.length && (s = "0".concat(s).slice(-2)), i = "0".concat(i).slice(-2), "".concat(s, ":").concat(i)
 				};
-			var w = s("./src/reddit/constants/keycodes.ts"),
+			var C = s("./src/reddit/constants/keycodes.ts"),
 				T = s("./src/reddit/components/HTML5StreamPlayer/SeekBar/index.m.less"),
 				V = s.n(T);
 			const M = r.a.div("Thumb", V.a),
@@ -172,11 +172,11 @@
 						this.setLookahead(0)
 					}, this.handleKeyDown = e => {
 						switch (e.key) {
-							case w.b.ArrowRight:
+							case C.b.ArrowRight:
 								return void this.jumpPlayback(5);
-							case w.b.ArrowLeft:
+							case C.b.ArrowLeft:
 								return void this.jumpPlayback(-5);
-							case w.b.Space:
+							case C.b.Space:
 								return this.props.playPauseVideo(), void e.preventDefault()
 						}
 					}, this.setProgressThumbRef = e => {
@@ -228,7 +228,7 @@
 						const {
 							totalTime: t
 						} = this.props, s = t * (e / 100);
-						isNaN(s) || (this.previewThumbnailVideo && (this.previewThumbnailVideo.currentTime = s), this.previewThumbnailTime.innerHTML = C(s, t));
+						isNaN(s) || (this.previewThumbnailVideo && (this.previewThumbnailVideo.currentTime = s), this.previewThumbnailTime.innerHTML = w(s, t));
 						const i = P.a.findDOMNode(this);
 						if (!i || !i.parentNode) return;
 						const a = i.parentNode;
@@ -518,7 +518,7 @@
 					}), {
 						currentTime: b
 					} = this.state, {
-						totalTime: w
+						totalTime: C
 					} = n ? this.state : this.props, T = this.props.isPaused ? y : x;
 					return o.a.createElement(o.a.Fragment, null, !t && o.a.createElement(v, null), s && a && o.a.createElement(q, {
 						tooltip: g
@@ -532,7 +532,7 @@
 						"aria-label": T,
 						className: Y.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? o.a.createElement(u, null) : o.a.createElement(p, null))), o.a.createElement(ee, null, C(b, w)), o.a.createElement(ie, null, o.a.createElement(N, {
+					}, this.props.isPaused ? o.a.createElement(u, null) : o.a.createElement(p, null))), o.a.createElement(ee, null, w(b, C)), o.a.createElement(ie, null, o.a.createElement(N, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -540,7 +540,7 @@
 						isLive: n,
 						ref: this.props.seekBarRef,
 						thumbSource: this.props.scrubberThumbSource,
-						totalTime: w,
+						totalTime: C,
 						playPauseVideo: this.props.playPauseVideo,
 						updatePosition: this.props.setVideoPosition,
 						updateContinuousStartTime: this.props.updateContinuousStartTime
@@ -548,10 +548,10 @@
 						"aria-label": i.fbt._("live", null, {
 							hk: "1rkHRc"
 						}),
-						onClick: () => this.props.setVideoPosition(w)
+						onClick: () => this.props.setVideoPosition(C)
 					}, i.fbt._("Live", null, {
 						hk: "3bCYlO"
-					})) : o.a.createElement(te, null, E(w)), f && r, !e && (this.props.isFullScreen ? o.a.createElement(ne, {
+					})) : o.a.createElement(te, null, E(C)), f && r, !e && (this.props.isFullScreen ? o.a.createElement(ne, {
 						tooltip: S
 					}, o.a.createElement("button", {
 						"aria-label": S,
@@ -845,8 +845,8 @@
 				P = s("./src/reddit/actions/preferences.ts"),
 				b = s("./src/reddit/actions/video.ts"),
 				E = s("./src/reddit/components/Media/LoadingIcon/index.tsx"),
-				C = s("./src/reddit/components/PlayButton/index.tsx"),
-				w = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				w = s("./src/reddit/components/PlayButton/index.tsx"),
+				C = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				T = s("./src/reddit/constants/experiments.ts"),
 				V = s("./src/reddit/constants/video.ts"),
 				M = s("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -854,16 +854,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
 			const F = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: T.sc,
+					experimentName: T.uc,
 					experimentEligibilitySelector: L.a
 				}), _.a),
 				k = Object(d.a)(F, (function(e) {
 					switch (e) {
-						case T.uc.BufferTwoSeconds:
+						case T.wc.BufferTwoSeconds:
 							return 2;
-						case T.uc.BufferFiveSeconds:
+						case T.wc.BufferFiveSeconds:
 							return 5;
-						case T.uc.BufferTenSeconds:
+						case T.wc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1141,10 +1141,10 @@
 					fill: "#fff",
 					d: "M32.2 20.3c-.3-.2-.7-.2-1 0l-2.4 1.4v-1.5c0-1.1-.9-1.9-1.9-1.9h-7.7c-1.1 0-1.9.9-1.9 1.9v7.7c0 1.1.9 1.9 1.9 1.9h7.7c1.1 0 1.9-.9 1.9-1.9v-1.6l2.4 1.4c.2.1.3.1.5.1s.3 0 .5-.1c.3-.2.5-.5.5-.8v-5.8c-.1-.3-.2-.6-.5-.8"
 				}))),
-				Ce = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
-				we = s.n(Ce);
+				we = s("./src/reddit/icons/svgs/VideoInstall/index.m.less"),
+				Ce = s.n(we);
 			var Te = e => l.a.createElement("svg", {
-					className: Object(u.a)(we.a.icon, e.className),
+					className: Object(u.a)(Ce.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("g", {
@@ -1311,7 +1311,7 @@
 				"View More": l.a.createElement(ze, null),
 				"Watch Now": l.a.createElement(Je, null)
 			};
-			var qe = Object(w.c)(e => {
+			var qe = Object(C.c)(e => {
 					const {
 						callToAction: t,
 						postId: s,
@@ -1412,7 +1412,7 @@
 					currentTime: j.d,
 					currentUser: H.i,
 					isMutedPreference: N.a,
-					isOverlayOpen: O.h,
+					isOverlayOpen: O.i,
 					loadTimes: j.g,
 					metadata: j.i,
 					postUrl: R.Q,
@@ -1794,8 +1794,8 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("2136ed6-production", " ").concat(t);
-									return i && (s += " [".concat(T.sc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("d414c19-production", " ").concat(t);
+									return i && (s += " [".concat(T.uc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1973,7 +1973,7 @@
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
-					}) : l.a.createElement(mt, null), this.state.videoWaiting ? v && l.a.createElement(E.a, null) : this.state.videoPaused && !x && l.a.createElement(C.a, {
+					}) : l.a.createElement(mt, null), this.state.videoWaiting ? v && l.a.createElement(E.a, null) : this.state.videoPaused && !x && l.a.createElement(w.a, {
 						onClick: s ? void 0 : this.playPauseVideo
 					}), i && l.a.createElement(W.a, {
 						clickSnoo: this.clickSnoo,
@@ -2006,7 +2006,7 @@
 					}))
 				}
 			}
-			t.b = St(Object(w.c)(Object(M.b)(Pt)))
+			t.b = St(Object(C.c)(Object(M.b)(Pt)))
 		},
 		"./src/reddit/components/Media/LoadingIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2208,4 +2208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.0beb3fa95b9a8053e59d.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2.115a9ca0f844e99d89c7.js.map

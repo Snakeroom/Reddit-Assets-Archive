@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.5cf4629f6d877f666347.js
-// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a0a3bc3e246ea821f16a.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1434,7 +1434,7 @@
 							o = !!(n && n[B] && n[B].length),
 							a = O.modQueue[V].api.error;
 						if (O.modQueue[V].api.pending || o && !a) return;
-						if (!Object(oe.o)(O)) {
+						if (!Object(oe.p)(O)) {
 							const n = Object(j.e)(e, V, Object.assign({}, D, {
 								subreddit: v
 							}));
@@ -28910,4 +28910,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.5cf4629f6d877f666347.js.map
+//# sourceMappingURL=ModerationPages.a0a3bc3e246ea821f16a.js.map

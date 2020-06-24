@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.d2f3eb9a146a38be1a56.js
-// Retrieved at 6/23/2020, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.c5c61bd21090d2f26e7f.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -335,7 +335,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return Y
+				return q
 			}));
 			t("./node_modules/core-js/modules/es6.symbol.js");
 			var r = t("./node_modules/react/index.js"),
@@ -573,10 +573,10 @@
 					}))
 				}
 			}
-			const q = Object(m.a)(Object(a.a)(Z));
-			class Y extends i.a.Component {
+			const Y = Object(m.a)(Object(a.a)(Z));
+			class q extends i.a.Component {
 				render() {
-					return i.a.createElement(q, this.props)
+					return i.a.createElement(Y, this.props)
 				}
 			}
 		},
@@ -652,7 +652,7 @@
 					discoveryUnit: g.b,
 					postChain: g.f,
 					postSubreddit: _.bb,
-					routeName: O.q,
+					routeName: O.r,
 					subscribedProfiles: j.c,
 					subscribedSubreddits: j.d
 				}),
@@ -1202,4 +1202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.d2f3eb9a146a38be1a56.js.map
+//# sourceMappingURL=InFeedChaining.c5c61bd21090d2f26e7f.js.map

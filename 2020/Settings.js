@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.5106257ea04b1884a4e3.js
-// Retrieved at 6/23/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5a53dfd1719c112606ba.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -7061,4 +7061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.5106257ea04b1884a4e3.js.map
+//# sourceMappingURL=Settings.5a53dfd1719c112606ba.js.map

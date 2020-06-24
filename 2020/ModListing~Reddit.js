@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.11635dc7d355511e6dcf.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.266181340ef41c922cbd.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -873,7 +873,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(f.m)(e, {
+					return n && Object(f.n)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -2983,4 +2983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.11635dc7d355511e6dcf.js.map
+//# sourceMappingURL=ModListing~Reddit.266181340ef41c922cbd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c287b002929c8888e225.js
-// Retrieved at 6/24/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c4f15a65acece32adbde.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const u = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Eb
+					experimentName: d.Gb
 				});
-				return Object(d.xc)(t) ? void 0 : t
+				return Object(d.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.Fb
+					experimentName: d.Hb
 				});
-				return Object(d.xc)(t) ? void 0 : t
-			}, (e, t) => e === d.Gb.Enabled && t === d.Gb.Enabled);
+				return Object(d.zc)(t) ? void 0 : t
+			}, (e, t) => e === d.Ib.Enabled && t === d.Ib.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "2136ed6-production"
+					SENTRY_RELEASE_VERSION: "d414c19-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -1680,8 +1680,8 @@
 				}, A = Object(P.a)(k.N), V = Object(P.a)(k.T);
 			var D, R = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				B = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
-				F = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
-				H = s("./src/reddit/actions/reportFlow.ts"),
+				H = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
+				F = s("./src/reddit/actions/reportFlow.ts"),
 				U = s("./src/reddit/components/HlsVideo/index.tsx"),
 				W = s("./src/reddit/components/ReportFlow/index.tsx"),
 				K = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -1810,8 +1810,8 @@
 					tier: n
 				}))
 			}
-			var Fe = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlay/index.m.less"),
-				He = s.n(Fe);
+			var He = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlay/index.m.less"),
+				Fe = s.n(He);
 			class Ue extends n.Component {
 				render() {
 					const {
@@ -1822,7 +1822,7 @@
 					} = this.props;
 					return e && r && s ? i.a.createElement("div", {
 						"aria-role": "presentation",
-						className: Object(d.a)(t, He.a.awardOverlay)
+						className: Object(d.a)(t, Fe.a.awardOverlay)
 					}, i.a.createElement(Be, {
 						award: e,
 						giverId: r,
@@ -2338,8 +2338,8 @@
 			var Bt = Object(o.b)(Dt, (e, t) => ({
 					vote: (t, s) => e(Nt(t, s))
 				}))(Rt),
-				Ft = s("./src/lib/lessComponent.tsx"),
-				Ht = s("./src/lib/opener/index.ts"),
+				Ht = s("./src/lib/lessComponent.tsx"),
+				Ft = s("./src/lib/opener/index.ts"),
 				Ut = s("./src/reddit/icons/fonts/Menu/index.tsx"),
 				Wt = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				Kt = s("./src/reddit/icons/svgs/Hide/index.tsx"),
@@ -2401,7 +2401,7 @@
 						className: ts.a.volumeIcon
 					}))
 				},
-				as = Ft.a.wrapped(Ut.a, "menuIcon", ts.a),
+				as = Ht.a.wrapped(Ut.a, "menuIcon", ts.a),
 				ns = e => {
 					let {
 						onClick: t,
@@ -2421,7 +2421,7 @@
 						}),
 						iconWrapperClassName: ts.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-rules"),
-						onClick: () => Object(Ht.d)(k.Q, Ht.c.BLANK)
+						onClick: () => Object(Ft.d)(k.Q, Ft.c.BLANK)
 					}, i.a.createElement(Xt.a, {
 						className: ts.a.overflowItemIcon
 					})), i.a.createElement(bt.b, {
@@ -2431,7 +2431,7 @@
 						}),
 						iconWrapperClassName: ts.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-community"),
-						onClick: () => Object(Ht.d)(k.O, Ht.c.BLANK)
+						onClick: () => Object(Ft.d)(k.O, Ft.c.BLANK)
 					}, i.a.createElement(Gt.a, {
 						className: ts.a.overflowItemIcon
 					})), i.a.createElement(bt.b, {
@@ -2615,7 +2615,7 @@
 				}, i.a.createElement(Wt.a, {
 					className: ps.a.shareIcon
 				}))
-			}, ys = Ft.a.wrapped(Ut.a, "menuIcon", ps.a), Os = e => {
+			}, ys = Ht.a.wrapped(Ut.a, "menuIcon", ps.a), Os = e => {
 				let {
 					onClick: t,
 					onHideClick: s,
@@ -2634,7 +2634,7 @@
 					}),
 					iconWrapperClassName: ps.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-rules"),
-					onClick: () => Object(Ht.d)(k.Q, Ht.c.BLANK)
+					onClick: () => Object(Ft.d)(k.Q, Ft.c.BLANK)
 				}, i.a.createElement(Xt.a, {
 					className: ps.a.overflowItemIcon
 				})), i.a.createElement(bt.b, {
@@ -2644,7 +2644,7 @@
 					}),
 					iconWrapperClassName: ps.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-community"),
-					onClick: () => Object(Ht.d)(k.O, Ht.c.BLANK)
+					onClick: () => Object(Ft.d)(k.O, Ft.c.BLANK)
 				}, i.a.createElement(Gt.a, {
 					className: ps.a.overflowItemIcon
 				})), i.a.createElement(bt.b, {
@@ -2850,7 +2850,7 @@
 					title: n
 				}, i.a.createElement(Bs, {
 					profile: t
-				}), i.a.createElement(Fs, {
+				}), i.a.createElement(Hs, {
 					isSubscribed: r
 				}))
 			}, Bs = e => {
@@ -2870,7 +2870,7 @@
 				}) : i.a.createElement(ls.a, {
 					userId: s
 				}) : null)
-			}, Fs = e => {
+			}, Hs = e => {
 				let {
 					isSubscribed: t
 				} = e;
@@ -2878,8 +2878,8 @@
 					className: Object(d.a)(ps.a.subscribeToProfileStatus, {
 						[ps.a.isSubscribed]: t
 					})
-				}, t ? i.a.createElement(Hs, null) : i.a.createElement(Us, null))
-			}, Hs = () => i.a.createElement("svg", {
+				}, t ? i.a.createElement(Fs, null) : i.a.createElement(Us, null))
+			}, Fs = () => i.a.createElement("svg", {
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, i.a.createElement("path", {
@@ -3672,8 +3672,8 @@
 					onClick: e.onNext,
 					stream: e.nextStream
 				})),
-				Fr = s("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
-				Hr = s.n(Fr);
+				Hr = s("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
+				Fr = s.n(Hr);
 			const Ur = Object(x.a)(U.a, {
 					playerName: "RPAN Video Player"
 				}),
@@ -3685,7 +3685,7 @@
 					inViewerFeedTheMeter: (e, t) => Object(Q.d)(e, t, se.c),
 					isIntroInProgress: re.b,
 					isMuted: e => e.publicAccessNetwork.userSettings.isMuted,
-					isOverlayOpen: ee.h,
+					isOverlayOpen: ee.i,
 					isReportFlowOpen: (e, t) => {
 						let {
 							streamIdFromPath: s
@@ -3707,7 +3707,7 @@
 					subscribeConfig: () => e(R.a.subscribeConfig(t.related || t.subreddit)),
 					subscribeStreams: () => e(R.a.subscribeStreams(t.related || t.subreddit)),
 					onRecommendedViewerSubredditsSubscribe: () => e(R.a.subscribeRecommendedViewerSubreddits()),
-					onReportModalRequested: t => e(Object(H.j)(t, void 0, !0)),
+					onReportModalRequested: t => e(Object(F.j)(t, void 0, !0)),
 					onStatsSubscribe: t => e(R.a.subscribeStats(t)),
 					onHeartbeatSubscribe: t => e(R.a.subscribeHeartbeat(t)),
 					receiveHlsStreamEnded: t => e(Object(p.a)(t)),
@@ -3717,7 +3717,7 @@
 					setIntroFinishedStatus: t => e(Object(B.c)({
 						isIntroFinished: t
 					})),
-					setMuteSettings: t => e(Object(F.b)({
+					setMuteSettings: t => e(Object(H.b)({
 						isMuted: t
 					})),
 					setVideoVolume: t => e(T.e(t)),
@@ -3814,7 +3814,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusRef.current;
-					e.classList.add(Hr.a.focusVisible), Object(O.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, y(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(z.o)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
+					e.classList.add(Fr.a.focusVisible), Object(O.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, y(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(z.o)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream()
 				}
 				componentDidUpdate(e) {
 					const {
@@ -3893,21 +3893,21 @@
 					e && _ ? (y = 1e3 * e.broadcast_time, O = f, T = x, I = e.post.title) : (y = void 0, O = void 0, T = !1, I = "RPAN Unavailable Video");
 					const L = e && e.meter && 10 * Math.round(e.estimated_remaining_time / 10),
 						k = r && e && e.estimated_remaining_time < ie && !a,
-						P = void 0 !== L && L >= 0 && k ? Hr.a["meterCritical".concat(L)] : void 0;
+						P = void 0 !== L && L >= 0 && k ? Fr.a["meterCritical".concat(L)] : void 0;
 					return i.a.createElement("div", {
-						className: Object(d.a)(Hr.a.theaterContainer, {
-							[Hr.a.overlay]: o
+						className: Object(d.a)(Fr.a.theaterContainer, {
+							[Fr.a.overlay]: o
 						}),
 						ref: this.focusRef,
 						tabIndex: -1
 					}, i.a.createElement("div", {
-						className: Object(d.a)(Hr.a.panesWrapper, {
-							[Hr.a.initialized]: !a
+						className: Object(d.a)(Fr.a.panesWrapper, {
+							[Fr.a.initialized]: !a
 						})
 					}, i.a.createElement("div", {
-						className: Object(d.a)(Hr.a.pane, Hr.a.leftPane)
+						className: Object(d.a)(Fr.a.pane, Fr.a.leftPane)
 					}, i.a.createElement("div", {
-						className: Hr.a.videoContainer
+						className: Fr.a.videoContainer
 					}, (this.state.isLoading || this.state.isError || k) && i.a.createElement(or, {
 						previousStream: p,
 						currentStream: e,
@@ -3964,7 +3964,7 @@
 						videoTotalTime: S,
 						volume: w
 					}))), !a && i.a.createElement("div", {
-						className: Object(d.a)(Hr.a.pane, Hr.a.rightPane)
+						className: Object(d.a)(Fr.a.pane, Fr.a.rightPane)
 					}, e && !E && i.a.createElement(jr, {
 						location: l,
 						onChatClick: this.onChatClick,
@@ -4241,13 +4241,13 @@
 						onClick: t
 					} = e;
 					return i.a.createElement("button", {
-						className: Hr.a.closeButton,
+						className: Fr.a.closeButton,
 						onClick: t,
 						"aria-label": w.fbt._("close button", null, {
 							hk: "2l5YIS"
 						})
 					}, i.a.createElement(Z.a, {
-						className: Hr.a.closeIcon
+						className: Fr.a.closeIcon
 					}))
 				},
 				Xr = (e, t) => (e && e.post.id) !== (t && t.post.id);
@@ -4357,10 +4357,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.kb
-				}) === r.tb.Enabled
+					experimentName: r.mb
+				}) === r.vb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.c287b002929c8888e225.js.map
+//# sourceMappingURL=PublicAccessNetwork.c4f15a65acece32adbde.js.map

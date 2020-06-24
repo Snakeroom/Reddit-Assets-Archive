@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.aae9c7f2e4c92c5a5e62.js
-// Retrieved at 6/15/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.ab684d2a7184d082bbab.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -232,7 +232,7 @@
 				D = 5 * u.G,
 				B = 3,
 				q = Object(p.c)({
-					isOverlayOpen: L.h
+					isOverlayOpen: L.i
 				}),
 				K = Object(a.b)(q),
 				G = {};
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.aae9c7f2e4c92c5a5e62.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.ab684d2a7184d082bbab.js.map

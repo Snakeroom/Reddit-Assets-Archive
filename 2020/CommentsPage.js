@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.37de3996be7269475a96.js
-// Retrieved at 6/23/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.21266b871dea081b7be1.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3463,7 +3463,7 @@
 					experimentEligibilitySelector: Mt.a,
 					experimentName: Nt.bb
 				});
-				return !(!t || Object(Nt.xc)(t))
+				return !(!t || Object(Nt.zc)(t))
 			};
 			var Rt = s("./src/reddit/selectors/gild.ts"),
 				Ft = s("./src/reddit/selectors/userPrefs.ts"),
@@ -3521,7 +3521,7 @@
 							experimentEligibilitySelector: Mt.a,
 							experimentName: Nt.ab
 						});
-						return !(!t || Object(Nt.xc)(t))
+						return !(!t || Object(Nt.zc)(t))
 					})(e) && !Object(Ft.c)(e),
 					highlightTagsEnabled: Lt,
 					isEditing: C.z,
@@ -10713,7 +10713,7 @@
 						return e.sidebarPromotedPosts.models[Object(f.a)(s, o, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					isSubredditPage: e => Object(O.q)(e) === _.Ab.SUBREDDIT
+					isSubredditPage: e => Object(O.r)(e) === _.Ab.SUBREDDIT
 				}),
 				w = Object(l.b)(P),
 				I = k.a.wrapped(u.a, "BannerAd", E.a),
@@ -16449,7 +16449,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.E
 				});
-				return !!t && !Object(n.xc)(t)
+				return !!t && !Object(n.zc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16464,7 +16464,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.X
 				});
-				return !(!t || Object(n.xc)(t))
+				return !(!t || Object(n.zc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16481,4 +16481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.37de3996be7269475a96.js.map
+//# sourceMappingURL=CommentsPage.21266b871dea081b7be1.js.map

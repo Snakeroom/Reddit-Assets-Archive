@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.62ee14d11ef80aac2df5.js
-// Retrieved at 6/24/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.22a67ba78adf95476766.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Eb
+					experimentName: l.Gb
 				});
-				return Object(l.xc)(t) ? void 0 : t
+				return Object(l.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Fb
+					experimentName: l.Hb
 				});
-				return Object(l.xc)(t) ? void 0 : t
-			}, (e, t) => e === l.Gb.Enabled && t === l.Gb.Enabled);
+				return Object(l.zc)(t) ? void 0 : t
+			}, (e, t) => e === l.Ib.Enabled && t === l.Ib.Enabled);
 			var u = s("./src/config.ts");
 			var m = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "2136ed6-production"
+					SENTRY_RELEASE_VERSION: "d414c19-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -572,8 +572,8 @@
 				V = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				A = s("./src/reddit/helpers/name/index.ts"),
 				W = s("./src/reddit/helpers/postHasSelfText/index.ts"),
-				F = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
-				H = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
+				H = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
+				F = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				B = s("./src/reddit/models/Media/index.ts"),
 				U = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				k = s("./src/reddit/selectors/postCreations.ts"),
@@ -957,7 +957,7 @@
 								showFull: b
 							}, c.a.createElement(j.a, {
 								flairStyleTemplate: s,
-								content: p.isMeta ? Object(H.a)(i, p.id) : i,
+								content: p.isMeta ? Object(F.a)(i, p.id) : i,
 								mediaMetadata: p.media.mediaMetadata,
 								postId: p.id,
 								rtJsonElementProps: ce(this.props),
@@ -983,7 +983,7 @@
 									showFull: b
 								}, c.a.createElement(N.a, {
 									flairStyleTemplate: s,
-									html: p.isMeta ? Object(F.a)(p.media.content, p.id, J.a.hiddenLink) : p.media.content
+									html: p.isMeta ? Object(H.a)(p.media.content, p.id, J.a.hiddenLink) : p.media.content
 								}))
 							}
 							return null;
@@ -1250,4 +1250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.62ee14d11ef80aac2df5.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.22a67ba78adf95476766.js.map

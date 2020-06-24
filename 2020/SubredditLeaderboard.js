@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.40a46e83567df8a6baab.js
-// Retrieved at 6/22/2020, 5:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0ac0b64b86cb18eb9caa.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1257,8 +1257,8 @@
 				W = r("./src/reddit/models/GoodContent/index.ts"),
 				B = r("./src/reddit/selectors/subreddit.ts"),
 				R = r("./src/reddit/selectors/subredditLeaderboard.ts"),
-				M = r("./src/reddit/selectors/user.ts");
-			const D = 25,
+				D = r("./src/reddit/selectors/user.ts");
+			const M = 25,
 				H = .5,
 				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
@@ -1273,7 +1273,7 @@
 						} = t;
 						return Object(R.b)(e, r)
 					},
-					isMod: M.I,
+					isMod: D.I,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -1318,7 +1318,7 @@
 						after: a,
 						categoryId: e === p.a ? p.d : e,
 						filter: W.a,
-						first: D,
+						first: M,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1547,7 +1547,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.wc)(p.f),
+				xe = Object(u.yc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1648,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.Cb.Rotate || t === s.Cb.RotateAll
+				return t === s.Eb.Rotate || t === s.Eb.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Bb
+					experimentName: s.Db
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.40a46e83567df8a6baab.js.map
+//# sourceMappingURL=SubredditLeaderboard.0ac0b64b86cb18eb9caa.js.map

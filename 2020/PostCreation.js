@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.21586722a5e27bb5d39f.js
-// Retrieved at 6/24/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7cc8c16d9724029e01cd.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -670,16 +670,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.Eb
+					experimentName: d.Gb
 				});
-				return Object(d.xc)(t) ? void 0 : t
+				return Object(d.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.Fb
+					experimentName: d.Hb
 				});
-				return Object(d.xc)(t) ? void 0 : t
-			}, (e, t) => e === d.Gb.Enabled && t === d.Gb.Enabled);
+				return Object(d.zc)(t) ? void 0 : t
+			}, (e, t) => e === d.Ib.Enabled && t === d.Ib.Enabled);
 			var m = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "2136ed6-production"
+					SENTRY_RELEASE_VERSION: "d414c19-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -18574,7 +18574,7 @@
 					let {
 						pageLayer: n
 					} = t;
-					return n && Object(h.m)(e, {
+					return n && Object(h.n)(e, {
 						page: n
 					})
 				}, (e, t) => {
@@ -23970,7 +23970,7 @@
 					noun: o.collectionCancel
 				}),
 				C = () => e => {
-					const t = Object(a.n)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return Object.assign({}, p(e, t), {
 						source: s.collectionComposer,
 						noun: o.collectionCreate
@@ -24001,7 +24001,7 @@
 					noun: o.startEvent
 				}),
 				w = () => e => {
-					const t = Object(a.n)(e) || void 0;
+					const t = Object(a.o)(e) || void 0;
 					return Object.assign({}, p(e, t), {
 						source: s.collectionComposer,
 						action: r.c.VIEW,
@@ -24066,16 +24066,16 @@
 					actionInfo: m(e),
 					postEvent: v(e)
 				}),
-				g = e => t => Object.assign({}, j(t, Object(l.n)(t)), {
+				g = e => t => Object.assign({}, j(t, Object(l.o)(t)), {
 					source: s.postComposer,
 					noun: "apply",
 					postComposer: E(e)
 				}),
-				x = () => e => Object.assign({}, j(e, Object(l.n)(e)), {
+				x = () => e => Object.assign({}, j(e, Object(l.o)(e)), {
 					noun: "cancel",
 					actionInfo: m(e)
 				}),
-				y = e => t => Object.assign({}, j(t, Object(l.n)(t)), {
+				y = e => t => Object.assign({}, j(t, Object(l.o)(t)), {
 					noun: "delete",
 					actionInfo: m(t),
 					postComposer: C(t),
@@ -32163,4 +32163,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.21586722a5e27bb5d39f.js.map
+//# sourceMappingURL=PostCreation.7cc8c16d9724029e01cd.js.map

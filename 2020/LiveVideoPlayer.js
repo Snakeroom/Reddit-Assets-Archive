@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.88a5ac3d8c5e5297ee53.js
-// Retrieved at 6/15/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.7c337043effd5b4ec576.js
+// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -66,7 +66,7 @@
 				playerName: "RPAN Listing Player"
 			}), I = 3e3, O = Object(h.c)({
 				autoplay: D.b,
-				isOverlayOpen: w.h,
+				isOverlayOpen: w.i,
 				unavailableVideoUrl: V.o,
 				currentStream: (e, t) => {
 					let {
@@ -443,4 +443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.88a5ac3d8c5e5297ee53.js.map
+//# sourceMappingURL=LiveVideoPlayer.7c337043effd5b4ec576.js.map
