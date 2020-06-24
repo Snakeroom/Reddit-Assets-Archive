@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d84586ce011b6b9da216.js
-// Retrieved at 6/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6fd1ed952dec2ca910db.js
+// Retrieved at 6/24/2020, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -15193,7 +15193,7 @@
 							}),
 							nextStepReasons: [e[0], e[1], e[2]]
 						};
-						t.push(n), t = t.concat(e.slice(3))
+						4 === e.length && n.nextStepReasons && n.nextStepReasons.push(e[3]), t.push(n), t = t.concat(e.slice(e.length - 1))
 					}
 					return t
 				}
@@ -54517,4 +54517,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.d84586ce011b6b9da216.js.map
+//# sourceMappingURL=Governance~Reddit.6fd1ed952dec2ca910db.js.map
