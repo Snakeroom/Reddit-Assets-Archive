@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.62c2ba45058bf6d006e2.js
-// Retrieved at 6/24/2020, 7:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.259c57e93b0ecd37be34.js
+// Retrieved at 6/25/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3279,14 +3279,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("004fb18-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("54f164b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "004fb18-production",
+						release: "54f164b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3702,7 +3702,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "004fb18-production",
+							releaseClient: "54f164b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17821,7 +17821,7 @@
 				},
 				Pt = e => {
 					const t = e.platform.currentPage && e.platform.currentPage.urlParams.topicSlug;
-					return t && Object(ve.a)(e, {
+					return t && Object(ve.c)(e, {
 						topicSlug: t
 					})
 				},
@@ -17872,14 +17872,18 @@
 		},
 		"./src/reddit/selectors/topic.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "c", (function() {
 				return d
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "e", (function() {
 				return l
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "a", (function() {
 				return _
 			})), i.d(t, "b", (function() {
 				return m
+			})), i.d(t, "f", (function() {
+				return f
+			})), i.d(t, "d", (function() {
+				return g
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -17907,19 +17911,33 @@
 					if (!n) return "";
 					const r = i ? n.name : n.namePlural;
 					return r || ""
-				},
-				a = [],
-				u = Object(r.a)(d, s.Y, (e, t) => e ? e.subredditIds.map(e => t[e]) : a),
-				c = (Object(r.a)(u, e => e.map(e => e && e.name)), (e, t) => {
+				};
+			var a;
+			! function(e) {
+				e.Child = "child", e.Parent = "parent", e.Sibling = "sibling"
+			}(a || (a = {}));
+			const u = [],
+				c = (e, t) => Object(r.a)(d, i => {
+					if (!i) return u;
+					return {
+						[a.Parent]: i.parentRelationships,
+						[a.Child]: i.childRelationships,
+						[a.Sibling]: i.siblingRelationships
+					} [e].reduce((e, t) => e.concat(t.relatedTopics), []).slice(0, t)
+				}),
+				_ = c(a.Parent, 3),
+				m = c(a.Sibling, 5),
+				p = Object(r.a)(d, s.Y, (e, t) => e ? e.subredditIds.map(e => t[e]) : u),
+				h = (Object(r.a)(p, e => e.map(e => e && e.name)), (e, t) => {
 					let {
 						topicSlug: i
 					} = t;
 					return l(e, i, !0)
 				}),
-				_ = Object(r.a)(c, e => e && n.fbt._("{topic name} on Reddit", [n.fbt._param("topic name", e)], {
+				f = Object(r.a)(h, e => e && n.fbt._("{topic name} on Reddit", [n.fbt._param("topic name", e)], {
 					hk: "1hchAs"
 				})),
-				m = Object(r.a)(c, e => e && n.fbt._("Find the best posts and communities about {topic name} on Reddit", [n.fbt._param("topic name", e)], {
+				g = Object(r.a)(h, e => e && n.fbt._("Find the best posts and communities about {topic name} on Reddit", [n.fbt._param("topic name", e)], {
 					hk: "DunIF"
 				}))
 		},
@@ -21846,4 +21864,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.62c2ba45058bf6d006e2.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.259c57e93b0ecd37be34.js.map

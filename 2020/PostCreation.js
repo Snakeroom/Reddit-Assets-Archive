@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5e3da139088678af9543.js
-// Retrieved at 6/24/2020, 7:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.eccef0c34d2b2d49d9d6.js
+// Retrieved at 6/25/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "004fb18-production"
+					SENTRY_RELEASE_VERSION: "54f164b-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -32163,4 +32163,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5e3da139088678af9543.js.map
+//# sourceMappingURL=PostCreation.eccef0c34d2b2d49d9d6.js.map

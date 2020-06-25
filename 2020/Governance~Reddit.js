@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ce7d32dd070dd32a125.js
-// Retrieved at 6/24/2020, 7:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.11bcaf2a78ec05e2bb94.js
+// Retrieved at 6/25/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -148,7 +148,7 @@
 			e.exports = JSON.parse('{"id":"034799712edb"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"bf04a2aedcec"}')
+			e.exports = JSON.parse('{"id":"87e18a5a3b28"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -10796,11 +10796,11 @@
 			})), n.d(t, "a", (function() {
 				return w
 			})), n.d(t, "g", (function() {
-				return R
-			})), n.d(t, "k", (function() {
 				return P
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "k", (function() {
 				return x
+			})), n.d(t, "h", (function() {
+				return k
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/lib/makeActionCreator/index.ts"),
@@ -10831,7 +10831,17 @@
 				A = Object(s.a)(v),
 				C = Object(s.a)(T),
 				D = Object(s.a)(w),
-				R = async (e, t, n) => {
+				R = e => {
+					const t = [];
+					if (e.relatedTopics && e.relatedTopics.edges)
+						for (const {
+								node: n
+							} of e.relatedTopics.edges) t.push(n);
+					return Object.assign({}, e, {
+						relatedTopics: t
+					})
+				},
+				P = async (e, t, n) => {
 					const s = await ((e, t) => Object(i.a)(e, Object.assign({}, c, {
 						variables: t
 					})))(e, Object.assign({
@@ -10839,6 +10849,7 @@
 						firstSubreddits: 30,
 						includeIdentity: !1,
 						includePosts: !0,
+						includeRelationships: !0,
 						includeSubreddits: !0,
 						includeTopic: !0,
 						topicSlug: t
@@ -10870,33 +10881,39 @@
 								t && (r[e.id] = t, a.push(e.id))
 							}
 						}
-						const i = {
+						const i = (e.topicBySlug.parentRelationships || []).map(R),
+							d = (e.topicBySlug.childRelationships || []).map(R),
+							O = (e.topicBySlug.siblingRelationships || []).map(R),
+							g = {
+								childRelationships: d,
 								hasPosts: !!Object.keys(t).length,
 								hasSubreddits: !!a.length,
 								id: e.topicBySlug.id,
 								name: e.topicBySlug.name,
 								namePlural: e.topicBySlug.namePlural,
+								parentRelationships: i,
+								siblingRelationships: O,
 								slug: e.topicBySlug.slug,
 								subredditIds: a
 							},
-							d = i.id ? {
-								[i.id]: i
+							_ = g.id ? {
+								[g.id]: g
 							} : void 0,
-							O = e.topicBySlug.posts && e.topicBySlug.posts.pageInfo,
-							g = O && O.hasNextPage ? O.endCursor : void 0;
-						let _, h;
-						return e.identity && (_ = Object(f.a)(e.identity), h = Object(l.a)(e.identity.preferences, e.identity.interactions)), {
-							account: _,
-							preferences: h,
+							h = e.topicBySlug.posts && e.topicBySlug.posts.pageInfo,
+							y = h && h.hasNextPage ? h.endCursor : void 0;
+						let j, E;
+						return e.identity && (j = Object(f.a)(e.identity), E = Object(l.a)(e.identity.preferences, e.identity.interactions)), {
+							account: j,
+							preferences: E,
 							postIds: n,
 							posts: t,
 							subredditAboutInfo: r,
 							subreddits: s,
-							token: g,
-							topics: d
+							token: y,
+							topics: _
 						}
 					})(s.body.data)
-				}, P = (e, t) => async (n, s, c) => {
+				}, x = (e, t) => async (n, s, c) => {
 					let {
 						gqlContext: i
 					} = c;
@@ -10915,7 +10932,7 @@
 						m = !!u.listings.postOrder.ids[b];
 					if (f || m && !p && !t) {
 						if (m) {
-							const e = Object(g.d)(s(), {
+							const e = Object(g.f)(s(), {
 								topicSlug: l
 							});
 							e && n(o.l({
@@ -10929,7 +10946,7 @@
 						key: b
 					}));
 					try {
-						h = await R(i(), l, {
+						h = await P(i(), l, {
 							includeIdentity: Object(_.O)(u) && !u.user.account
 						})
 					} catch (j) {
@@ -10944,13 +10961,13 @@
 						key: b,
 						meta: u.meta
 					})));
-					const y = Object(g.d)(s(), {
+					const y = Object(g.f)(s(), {
 						topicSlug: l
 					});
 					y && n(o.l({
 						title: y
 					}))
-				}, x = e => async (t, n, s) => {
+				}, k = e => async (t, n, s) => {
 					let {
 						gqlContext: o
 					} = s;
@@ -10974,8 +10991,9 @@
 						key: d
 					}));
 					try {
-						p = await R(o(), i, {
+						p = await P(o(), i, {
 							afterPosts: u.token,
+							includeRelationships: !1,
 							includeSubreddits: !1,
 							includeTopic: !1
 						})
@@ -53841,4 +53859,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7ce7d32dd070dd32a125.js.map
+//# sourceMappingURL=Governance~Reddit.11bcaf2a78ec05e2bb94.js.map

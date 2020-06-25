@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.99abfdb9a3b7b35f62e8.js
-// Retrieved at 6/24/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.407a5adf40b5875f76bc.js
+// Retrieved at 6/25/2020, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2912,7 +2912,7 @@
 							};
 						case "topic": {
 							const t = Object(vs.s)(s),
-								n = t && Object(la.c)(e, t, !0);
+								n = t && Object(la.e)(e, t, !0);
 							if (n) return {
 								type: Jn.Topic,
 								model: n
@@ -11882,14 +11882,15 @@
 							gqlContext: a
 						} = s; {
 							const e = t();
-							if (Object(o.a)(e, {
+							if (Object(o.c)(e, {
 									topicSlug: "coronavirus"
 								})) return
 						}
 						try {
 							n = await Object(r.g)(a(), "coronavirus", {
 								includeIdentity: !0,
-								includePosts: !1
+								includePosts: !1,
+								includeRelationships: !1
 							})
 						} catch (c) {
 							return void e(Object(r.i)())
@@ -13299,4 +13300,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.99abfdb9a3b7b35f62e8.js.map
+//# sourceMappingURL=Reddit.407a5adf40b5875f76bc.js.map
