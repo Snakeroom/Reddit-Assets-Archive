@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.6f8be53e8540071ba60d.js
-// Retrieved at 6/25/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.2bfac1f953be47c2109e.js
+// Retrieved at 6/25/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -52,9 +52,9 @@
 				g = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
 				y = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				P = s("./src/reddit/constants/chat.ts"),
-				M = s("./src/reddit/constants/keycodes.ts"),
-				f = s("./src/reddit/helpers/trackers/rpan.ts"),
-				w = s("./src/reddit/selectors/platform.ts"),
+				w = s("./src/reddit/constants/keycodes.ts"),
+				M = s("./src/reddit/helpers/trackers/rpan.ts"),
+				f = s("./src/reddit/selectors/platform.ts"),
 				V = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				C = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				D = s("./src/reddit/selectors/user.ts"),
@@ -62,11 +62,11 @@
 				k = s.n(L);
 			const {
 				fbt: E
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(c.a)(v.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = Object(c.a)(v.a, {
 				playerName: "RPAN Listing Player"
-			}), H = 3e3, I = Object(h.c)({
+			}), O = 3e3, H = Object(h.c)({
 				autoplay: D.b,
-				isOverlayOpen: w.i,
+				isOverlayOpen: f.i,
 				unavailableVideoUrl: V.o,
 				currentStream: (e, t) => {
 					let {
@@ -74,14 +74,14 @@
 					} = t;
 					return Object(C.k)(e, s)
 				}
-			}), R = Object(o.b)(I, (e, t) => ({
+			}), R = Object(o.b)(H, (e, t) => ({
 				onHeartbeatSubscribe: t => e(b.a.subscribeHeartbeat(t)),
 				onStreamByIdRequested: t => e(Object(S.d)(t))
 			}));
 			class x extends r.Component {
 				constructor(e) {
 					super(e), this.sleepTimeout = null, this.onSendHeartbeat = () => {
-						this.props.currentStream && this.props.sendEvent(Object(f.r)(this.props.currentStream, this.getPlaybackStats())), this.setState({
+						this.props.currentStream && this.props.sendEvent(Object(M.r)(this.props.currentStream, this.getPlaybackStats())), this.setState({
 							heartbeatDurationOffset: this.getWatchDuration()
 						})
 					}, this.getSessionDurationTimer = e => "session-duration-".concat(e), this.getWatchDurationTimer = e => "watch-duration-".concat(e), this.handleHlsRefChange = e => {
@@ -91,7 +91,7 @@
 							settingChange: void 0
 						}))
 					}, this.handleEnded = () => {
-						this.props.currentStream && this.props.sendEvent(Object(f.r)(this.props.currentStream, this.getPlaybackStats())), this.endTimers(), this.setState({
+						this.props.currentStream && this.props.sendEvent(Object(M.r)(this.props.currentStream, this.getPlaybackStats())), this.endTimers(), this.setState({
 							watchDuration: 0,
 							sessionDuration: 0,
 							heartbeatDurationOffset: 0,
@@ -103,7 +103,7 @@
 							hasError: !0
 						})
 					}, this.onKeyPress = e => {
-						e.key === M.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
+						e.key === w.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
 					}, this.handleLevelLoaded = e => {
 						const {
 							live: t,
@@ -132,7 +132,7 @@
 					}, this.handleMouseMove = () => {
 						this.state.isHovered || this.setState({
 							isHovered: !0
-						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, H)
+						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, O)
 					}, this.handleMouseMoveControls = e => {
 						const {
 							seekBar: t,
@@ -302,7 +302,7 @@
 					} = this.props;
 					return n.a.createElement("div", {
 						className: k.a.clip9x16
-					}, n.a.createElement(O, {
+					}, n.a.createElement(I, {
 						autoplay: e,
 						controls: !1,
 						isPaused: this.shouldPause,
@@ -328,7 +328,7 @@
 					return d.c.has(this.state.sessionTimerId) ? d.c.getTime(this.state.sessionTimerId) : 0
 				}
 				endTimers() {
-					d.c.end(this.state.watchTimerId), d.c.end(this.state.sessionTimerId), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
+					d.c.has(this.state.watchTimerId) && d.c.end(this.state.watchTimerId), d.c.has(this.state.sessionTimerId) && d.c.end(this.state.sessionTimerId), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
 				}
 				getWatchDuration() {
 					let e = 0;
@@ -336,7 +336,7 @@
 				}
 				pauseWatch() {
 					const e = this.getWatchDuration();
-					d.c.end(this.state.watchTimerId), this.setState({
+					d.c.has(this.state.watchTimerId) && d.c.end(this.state.watchTimerId), this.setState({
 						watchDuration: e
 					})
 				}
@@ -362,7 +362,7 @@
 						playheadOffsetMs: this.convertToMs(this.state.duration - this.state.currentTime),
 						heartbeatDurationMs: this.getWatchDuration() - this.state.heartbeatDurationOffset,
 						chatState: P.f.None,
-						playerType: f.a.Feed
+						playerType: M.a.Feed
 					}
 				}
 				startTimers() {
@@ -420,7 +420,7 @@
 						sessionTimerId: this.getSessionDurationTimer(e),
 						id: e
 					}, () => {
-						this.props.currentStream && (this.props.sendEvent(Object(f.u)(this.props.currentStream, this.getPlaybackStats())), this.startTimers())
+						this.props.currentStream && (this.props.sendEvent(Object(M.u)(this.props.currentStream, this.getPlaybackStats())), this.startTimers())
 					})
 				}
 				subscribeHeartbeat() {
@@ -447,4 +447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.6f8be53e8540071ba60d.js.map
+//# sourceMappingURL=LiveVideoPlayer.2bfac1f953be47c2109e.js.map

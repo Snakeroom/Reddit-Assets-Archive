@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ac3a890d4d8aeff7c7cb.js
-// Retrieved at 6/25/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c683a244d6f80421af76.js
+// Retrieved at 6/25/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "340bf87-production"
+					SENTRY_RELEASE_VERSION: "51b9486-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -4089,7 +4089,9 @@
 					return f.c.has(e) ? f.c.getTime(e) : 0
 				}
 				endTimers() {
-					f.c.end(this.getWatchDurationTimer(this.state.id)), f.c.end(this.getSessionDurationTimer(this.state.id)), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
+					const e = this.getWatchDurationTimer(this.state.id),
+						t = this.getSessionDurationTimer(this.state.id);
+					f.c.has(e) && f.c.end(e), f.c.has(t) && f.c.end(t), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
 				}
 				getWatchDuration() {
 					let e = 0;
@@ -4099,7 +4101,7 @@
 				pauseWatch() {
 					const e = this.getWatchDuration(),
 						t = this.getWatchDurationTimer(this.state.id);
-					return f.c.end(t), this.setState({
+					return f.c.has(t) && f.c.end(t), this.setState({
 						watchDuration: e
 					}), e
 				}
@@ -4367,4 +4369,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.ac3a890d4d8aeff7c7cb.js.map
+//# sourceMappingURL=PublicAccessNetwork.c683a244d6f80421af76.js.map

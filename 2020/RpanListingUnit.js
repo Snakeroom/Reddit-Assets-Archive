@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.58925c441f5e224750cc.js
-// Retrieved at 6/25/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.e9b3d09b2d3e1353aa1a.js
+// Retrieved at 6/25/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "340bf87-production"
+					SENTRY_RELEASE_VERSION: "51b9486-production"
 				}),
 				T = {
 					anonymousUserId: "t2_anonymous",
@@ -1273,7 +1273,7 @@
 					return T.c.has(e) ? T.c.getTime(e) : 0
 				}
 				endTimers() {
-					T.c.end(this.state.watchTimer), T.c.end(this.state.sessionTimer), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
+					T.c.has(this.state.watchTimer) && T.c.end(this.state.watchTimer), T.c.has(this.state.sessionTimer) && T.c.end(this.state.sessionTimer), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
 				}
 				getWatchDuration() {
 					let e = 0;
@@ -1283,7 +1283,7 @@
 				pauseWatch() {
 					const e = this.getWatchDuration(),
 						t = this.state.watchTimer;
-					T.c.end(t), this.setState({
+					T.c.has(t) && T.c.end(t), this.setState({
 						watchDuration: e
 					})
 				}
@@ -1591,4 +1591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.58925c441f5e224750cc.js.map
+//# sourceMappingURL=RpanListingUnit.e9b3d09b2d3e1353aa1a.js.map
