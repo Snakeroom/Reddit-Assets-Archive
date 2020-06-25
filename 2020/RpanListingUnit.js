@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.e9b3d09b2d3e1353aa1a.js
-// Retrieved at 6/25/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.743782732a9b7462cba2.js
+// Retrieved at 6/25/2020, 6:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "51b9486-production"
+					SENTRY_RELEASE_VERSION: "a2498f1-production"
 				}),
 				T = {
 					anonymousUserId: "t2_anonymous",
@@ -1001,6 +1001,18 @@
 						t !== this.state.duration && this.setState({
 							duration: t
 						})
+					}, this.endHeartbeats = () => {
+						this.endTimers(), this.setState({
+							id: "",
+							sessionDuration: 0,
+							sessionTimer: "",
+							watchDuration: 0,
+							watchTimer: "",
+							heartbeatDurationOffset: 0,
+							startTime: 0,
+							duration: 0,
+							currentTime: 0
+						})
 					}, this.onSendHeartbeat = () => {
 						this.props.stream && this.props.sendEvent(Object(S.r)(this.props.stream, this.getPlaybackStats())), this.setState({
 							heartbeatDurationOffset: this.getWatchDuration()
@@ -1097,18 +1109,8 @@
 						stream: r
 					} = this.props, {
 						isVisible: i
-					} = this.state, a = i && !s, n = t.isVisible, o = e.isOverlayOpen, c = i && !n, d = !i && n, l = s && !o, m = !s && o, u = (r && r.post.id) !== (e.stream && e.stream.post.id), h = (c || m) && a, p = d || l, b = u && a;
-					(u && e.stream || d) && (e.stream && this.props.sendEvent(Object(S.r)(e.stream, this.getPlaybackStats())), this.endTimers(), this.setState({
-						id: "",
-						sessionDuration: 0,
-						sessionTimer: "",
-						watchDuration: 0,
-						watchTimer: "",
-						heartbeatDurationOffset: 0,
-						startTime: 0,
-						duration: 0,
-						currentTime: 0
-					})), h ? this.subscribeAll() : p ? this.unsubscribeAll() : b && (this.subscribeStats(), this.setState({
+					} = this.state, a = i && !s, n = t.isVisible, o = e.isOverlayOpen, c = i && !n, d = !i && n, l = s && !o, m = !s && o, u = (r && r.post.id) !== (e.stream && e.stream.post.id), h = (c || m) && a, p = d || l, b = u && a, f = c || m;
+					(d || u && e.stream || l) && (e.stream && this.props.sendEvent(Object(S.r)(e.stream, this.getPlaybackStats())), this.endHeartbeats()), f && this.startHeartbeats(), h ? this.subscribeAll() : p ? this.unsubscribeAll() : b && (this.subscribeStats(), this.setState({
 						isReady: !1
 					}))
 				}
@@ -1266,7 +1268,7 @@
 					})
 				}
 				startTimers() {
-					this.startWatch(), T.c.start(this.state.sessionTimer), this.fiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 5e3), this.fifteenSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 15e3), this.thirtySecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 3e4), this.fortyfiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 45e3), this.minuteSessionTimer = window.setInterval(this.onSendHeartbeat, 6e4)
+					this.props.autoplay && T.c.start(this.state.watchTimer), T.c.start(this.state.sessionTimer), this.fiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 5e3), this.fifteenSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 15e3), this.thirtySecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 3e4), this.fortyfiveSecondSessionTimer = window.setTimeout(this.onSendHeartbeat, 45e3), this.minuteSessionTimer = window.setInterval(this.onSendHeartbeat, 6e4)
 				}
 				getSessionDuration() {
 					const e = this.state.sessionTimer;
@@ -1279,16 +1281,6 @@
 					let e = 0;
 					const t = this.state.watchTimer;
 					return T.c.has(t) && (e = T.c.getTime(t)), e + this.state.watchDuration
-				}
-				pauseWatch() {
-					const e = this.getWatchDuration(),
-						t = this.state.watchTimer;
-					T.c.has(t) && T.c.end(t), this.setState({
-						watchDuration: e
-					})
-				}
-				startWatch() {
-					T.c.start(this.state.watchTimer)
 				}
 				convertToMs(e) {
 					return Math.round(1e3 * e)
@@ -1591,4 +1583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.e9b3d09b2d3e1353aa1a.js.map
+//# sourceMappingURL=RpanListingUnit.743782732a9b7462cba2.js.map
