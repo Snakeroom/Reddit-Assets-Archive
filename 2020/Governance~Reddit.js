@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.921758f74cd03b1ac5bd.js
-// Retrieved at 6/25/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ea41a72eeb4866d9491a.js
+// Retrieved at 6/25/2020, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -28430,36 +28430,40 @@
 				return g
 			})), n.d(t, "clickSelectAwardEvent", (function() {
 				return _
-			})), n.d(t, "viewGiveAwardTooltipEvent", (function() {
+			})), n.d(t, "clickSelectAwardEventV2", (function() {
 				return h
-			})), n.d(t, "triggerAnonymousEvent", (function() {
+			})), n.d(t, "viewGiveAwardTooltipEvent", (function() {
 				return y
-			})), n.d(t, "clickMessageInputEvent", (function() {
+			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return j
-			})), n.d(t, "typeMessageInputEvent", (function() {
+			})), n.d(t, "clickMessageInputEvent", (function() {
 				return E
-			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
+			})), n.d(t, "typeMessageInputEvent", (function() {
 				return I
-			})), n.d(t, "clickQuestionMarkEvent", (function() {
+			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return S
-			})), n.d(t, "clickConfirmAwardEvent", (function() {
+			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return v
-			})), n.d(t, "clickGetPremiumEvent", (function() {
+			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return T
-			})), n.d(t, "clickNextButtonEvent", (function() {
+			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return w
-			})), n.d(t, "clickCloseGildModalEvent", (function() {
+			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return A
-			})), n.d(t, "viewSuccessAwardEvent", (function() {
+			})), n.d(t, "clickNextButtonEvent", (function() {
 				return C
-			})), n.d(t, "viewKarmaSuccessEvent", (function() {
+			})), n.d(t, "clickCloseGildModalEvent", (function() {
 				return D
-			})), n.d(t, "clickFilterEvent", (function() {
+			})), n.d(t, "viewSuccessAwardEvent", (function() {
 				return R
-			})), n.d(t, "clickNextFiltersEvent", (function() {
+			})), n.d(t, "viewKarmaSuccessEvent", (function() {
 				return P
-			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+			})), n.d(t, "clickFilterEvent", (function() {
 				return x
+			})), n.d(t, "clickNextFiltersEvent", (function() {
+				return k
+			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+				return N
 			}));
 			var s = n("./src/reddit/models/Gold/Award.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts"),
@@ -28523,43 +28527,49 @@
 						defaultAnonymous: t
 					}
 				}),
-				_ = (e, t, n) => s => Object.assign({}, u(s, t), {
+				_ = (e, t) => n => Object.assign({}, u(n, t), {
 					source: "give_gold",
 					action: "click",
 					noun: i(e),
+					goldPurchase: d(e)
+				}),
+				h = (e, t, n) => s => Object.assign({}, u(s, t), {
+					source: "give_gold",
+					action: "click",
+					noun: "award",
 					goldPurchase: d(e, n)
 				}),
-				h = e => t => Object.assign({}, u(t, e), {
+				y = e => t => Object.assign({}, u(t, e), {
 					source: "give_gold",
 					action: "view",
 					noun: "tooltip"
 				}),
-				y = (e, t) => n => Object.assign({}, u(n, t), {
+				j = (e, t) => n => Object.assign({}, u(n, t), {
 					source: "give_gold",
 					action: e,
 					noun: "anonymous"
 				}),
-				j = e => t => Object.assign({}, u(t, e), {
-					source: "give_gold",
-					action: "click",
-					noun: "message_input"
-				}),
 				E = e => t => Object.assign({}, u(t, e), {
 					source: "give_gold",
-					action: "type",
+					action: "click",
 					noun: "message_input"
 				}),
 				I = e => t => Object.assign({}, u(t, e), {
 					source: "give_gold",
-					action: "click",
-					noun: "learn_more"
+					action: "type",
+					noun: "message_input"
 				}),
 				S = e => t => Object.assign({}, u(t, e), {
 					source: "give_gold",
 					action: "click",
+					noun: "learn_more"
+				}),
+				v = e => t => Object.assign({}, u(t, e), {
+					source: "give_gold",
+					action: "click",
 					noun: "question"
 				}),
-				v = (e, t) => n => Object.assign({}, u(n, e), {
+				T = (e, t) => n => Object.assign({}, u(n, e), {
 					source: "give_gold",
 					action: "click",
 					noun: "confirm",
@@ -28567,7 +28577,7 @@
 						contentType: Object(a.a)(e) ? "comment" : "post"
 					}, d(t))
 				}),
-				T = (e, t) => n => Object.assign({}, u(n, e), {
+				w = (e, t) => n => Object.assign({}, u(n, e), {
 					source: "give_gold",
 					action: "click",
 					noun: "get_premium",
@@ -28575,17 +28585,22 @@
 						contentType: Object(a.a)(e) ? "comment" : "post"
 					}, d(t))
 				}),
-				w = e => t => Object.assign({}, u(t, e), {
+				A = e => t => Object.assign({}, u(t, e), {
+					source: "give_gold",
+					action: "click",
+					noun: "add_coins"
+				}),
+				C = e => t => Object.assign({}, u(t, e), {
 					source: "give_gold",
 					action: "click",
 					noun: "next"
 				}),
-				A = e => t => Object.assign({}, u(t, e), {
+				D = e => t => Object.assign({}, u(t, e), {
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				C = (e, t, n) => s => Object.assign({}, u(s, e), {
+				R = (e, t, n) => s => Object.assign({}, u(s, e), {
 					source: "give_gold",
 					action: "view",
 					noun: "success",
@@ -28594,7 +28609,7 @@
 						numberCoins: t
 					}, d(n))
 				}),
-				D = e => {
+				P = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -28614,7 +28629,7 @@
 						}, d(t))
 					})
 				},
-				R = e => t => Object.assign({}, u(t), {
+				x = e => t => Object.assign({}, u(t), {
 					source: "give_gold",
 					action: "click",
 					noun: "filter",
@@ -28623,12 +28638,12 @@
 						filterName: e.content.markdown
 					}
 				}),
-				P = () => e => Object.assign({}, u(e), {
+				k = () => e => Object.assign({}, u(e), {
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				x = () => e => Object.assign({}, u(e), {
+				N = () => e => Object.assign({}, u(e), {
 					source: "give_gold",
 					action: "click",
 					noun: "previous_filters"
@@ -53859,4 +53874,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.921758f74cd03b1ac5bd.js.map
+//# sourceMappingURL=Governance~Reddit.ea41a72eeb4866d9491a.js.map
