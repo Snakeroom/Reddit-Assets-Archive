@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6da72b3ecba15f5469f5.js
-// Retrieved at 6/25/2020, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8f2e875c76e18d714d48.js
+// Retrieved at 6/25/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "07e5f91-production"
+					SENTRY_RELEASE_VERSION: "61b2876-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -4191,7 +4191,7 @@
 					}), t(this.getStreamLocation(e))
 				}
 				handleOldStream() {
-					this.props.sendEvent(Object(q.r)(this.props.currentStream, this.getPlaybackStats())), this.endTimers()
+					this.state.id && (this.props.sendEvent(Object(q.r)(this.props.currentStream, this.getPlaybackStats())), this.endTimers())
 				}
 				async handleNewStream() {
 					const {
@@ -4203,7 +4203,11 @@
 					e && (this.setState({
 						videoCurrentTime: 0,
 						videoTotalTime: 0,
-						watchDuration: 0
+						watchDuration: 0,
+						heartbeatDurationOffset: 0,
+						id: "",
+						sessionDuration: 0,
+						startTime: 0
 					}), r(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), this.props.sendEvent(Object(q.w)(e)), this.setConsumePostTimeout(), this.showOverlayAfterStreamSwitching())
 				}
 				setConsumePostTimeout() {
@@ -4363,4 +4367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.6da72b3ecba15f5469f5.js.map
+//# sourceMappingURL=PublicAccessNetwork.8f2e875c76e18d714d48.js.map
