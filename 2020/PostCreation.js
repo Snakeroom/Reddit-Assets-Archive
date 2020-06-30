@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6246fbb4fc7368bf0d2f.js
-// Retrieved at 6/30/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ea5b7f0fb6c4307ae29b.js
+// Retrieved at 6/30/2020, 11:30:13 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "fd03c41-production"
+					SENTRY_RELEASE_VERSION: "e78ff86-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -2908,6 +2908,7 @@
 		},
 		"./src/reddit/components/AwardBadges/AwardPill/index.m.less": function(e, t, n) {
 			e.exports = {
+				awardPillContainer: "yW-ely1Ik8KTYTO9TSOSa",
 				awardPill: "q2KM5tcmhqOBd4ElRihZQ",
 				"focus-visible": "_3hSD8Pi71g2Q9c03wUYjLs",
 				focusVisible: "_3hSD8Pi71g2Q9c03wUYjLs",
@@ -3120,14 +3121,16 @@
 						userGiven: i,
 						shouldAnimate: a
 					} = this.state, c = Object(F.a)(e, 32, s), l = Object(F.a)(e, 128, s), d = Object(A.a)(e.id, n.id);
-					return r.a.createElement("button", {
+					return r.a.createElement("span", {
+						className: W.a.awardPillContainer,
+						id: o,
+						onMouseEnter: this.handleMouseEnter,
+						onMouseLeave: this.handleMouseLeave
+					}, r.a.createElement("button", {
 						className: Object(P.a)(W.a.awardPill, {
 							[W.a.userGiven]: i
 						}),
-						id: o,
-						onClick: this.handleOnClick,
-						onMouseEnter: this.handleMouseEnter,
-						onMouseLeave: this.handleMouseLeave
+						onClick: this.handleOnClick
 					}, r.a.createElement("span", {
 						className: W.a.imageContainer
 					}, r.a.createElement("img", {
@@ -3144,7 +3147,7 @@
 						src: l
 					})), r.a.createElement("span", {
 						className: W.a.count
-					}, t.toLocaleString()), r.a.createElement(K, {
+					}, t.toLocaleString())), r.a.createElement(K, {
 						award: e,
 						onHideAward: this.handleHideAward,
 						postOrComment: n,
@@ -32163,4 +32166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.6246fbb4fc7368bf0d2f.js.map
+//# sourceMappingURL=PostCreation.ea5b7f0fb6c4307ae29b.js.map

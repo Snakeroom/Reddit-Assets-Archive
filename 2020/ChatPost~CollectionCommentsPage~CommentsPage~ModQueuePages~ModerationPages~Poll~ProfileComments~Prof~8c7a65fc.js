@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.e525ecbdcbe763e8caff.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.b7efc4d8b3bba3f168fa.js
+// Retrieved at 6/30/2020, 11:30:13 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -96,6 +96,7 @@
 		},
 		"./src/reddit/components/AwardBadges/AwardPill/index.m.less": function(e, t, s) {
 			e.exports = {
+				awardPillContainer: "yW-ely1Ik8KTYTO9TSOSa",
 				awardPill: "q2KM5tcmhqOBd4ElRihZQ",
 				"focus-visible": "_3hSD8Pi71g2Q9c03wUYjLs",
 				focusVisible: "_3hSD8Pi71g2Q9c03wUYjLs",
@@ -234,8 +235,8 @@
 					LoadingComponent: () => null
 				}),
 				q = s("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				G = s.n(q);
-			const W = 3500,
+				W = s.n(q);
+			const G = 3500,
 				Q = 500;
 			class V extends r.a.PureComponent {
 				constructor(e) {
@@ -253,7 +254,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, W)))
+						}, G)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -308,31 +309,33 @@
 						userGiven: a,
 						shouldAnimate: i
 					} = this.state, d = Object(R.a)(e, 32, n), c = Object(R.a)(e, 128, n), l = Object(H.a)(e.id, s.id);
-					return r.a.createElement("button", {
-						className: Object(P.a)(G.a.awardPill, {
-							[G.a.userGiven]: a
-						}),
+					return r.a.createElement("span", {
+						className: W.a.awardPillContainer,
 						id: o,
-						onClick: this.handleOnClick,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
+					}, r.a.createElement("button", {
+						className: Object(P.a)(W.a.awardPill, {
+							[W.a.userGiven]: a
+						}),
+						onClick: this.handleOnClick
 					}, r.a.createElement("span", {
-						className: G.a.imageContainer
+						className: W.a.imageContainer
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(P.a)(G.a.awardIcon, {
-							[G.a.hidden]: i
+						className: Object(P.a)(W.a.awardIcon, {
+							[W.a.hidden]: i
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: d
 					}), i && r.a.createElement("img", {
 						alt: e.name,
-						className: G.a.animationIcon,
+						className: W.a.animationIcon,
 						src: c
 					})), r.a.createElement("span", {
-						className: G.a.count
-					}, t.toLocaleString()), r.a.createElement(F, {
+						className: W.a.count
+					}, t.toLocaleString())), r.a.createElement(F, {
 						award: e,
 						onHideAward: this.handleHideAward,
 						postOrComment: s,
@@ -1607,9 +1610,9 @@
 				U = s("./src/reddit/models/Subreddit/index.ts"),
 				F = s("./src/reddit/selectors/authorFlair.ts"),
 				q = s("./src/reddit/selectors/userFlair.ts"),
-				G = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				W = s("./src/reddit/components/PostTopMeta/index.m.less"),
-				Q = s.n(W);
+				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				G = s("./src/reddit/components/PostTopMeta/index.m.less"),
+				Q = s.n(G);
 			const V = {
 				placement: "top"
 			};
@@ -1620,7 +1623,7 @@
 			const J = e => Object(L.a)(Object(k.a)(e), R.a.metaText, R.b.metaText),
 				Z = l.a.wrapped(_.b, "MetaSeparator", Q.a),
 				K = l.a.span("text", Q.a),
-				Y = Object(G.t)(),
+				Y = Object(W.t)(),
 				X = e => {
 					const t = !e.isDeleted && e.post.distinguishType === i.C.ADMIN;
 					return o.a.createElement(f.a, {
@@ -1654,7 +1657,7 @@
 						subredditId: P
 					}), [P]), B = Object(r.d)(L), R = Object(n.useCallback)(e => Object(q.d)(e, {
 						subredditId: P
-					}), [P]), G = Object(r.d)(R), W = Object(p.a)(V), z = d && d.meta && d.meta.name === i.Ab.COMMENTS, Y = Object(u.a)(l), $ = G === H.b.Left, ee = l.authorIsContractor && !!I && I.type === U.d.EmployeesOnly, te = !s && !z, se = () => o.a.createElement(Z, {
+					}), [P]), W = Object(r.d)(R), G = Object(p.a)(V), z = d && d.meta && d.meta.name === i.Ab.COMMENTS, Y = Object(u.a)(l), $ = W === H.b.Left, ee = l.authorIsContractor && !!I && I.type === U.d.EmployeesOnly, te = !s && !z, se = () => o.a.createElement(Z, {
 						className: e.metaSeparatorClassName
 					}, "•"), ne = o.a.createElement(o.a.Fragment, null, !Y && o.a.createElement(K, {
 						style: {
@@ -1728,18 +1731,18 @@
 						className: Q.a.externalLink,
 						"data-click-id": "timestamp",
 						href: l.permalink,
-						onMouseEnter: W.show,
-						onMouseLeave: W.hide,
-						ref: W.target.ref,
+						onMouseEnter: G.show,
+						onMouseLeave: G.hide,
+						ref: G.target.ref,
 						style: {
 							color: J(e)
 						},
 						target: "_blank",
 						rel: "nofollow noopener"
 					}, Object(m.d)(l.created / 1e3)), o.a.createElement(M, null, o.a.createElement(E.a, {
-						arrowProps: W.arrowProps,
-						popperProps: W.popperProps,
-						visible: W.visible
+						arrowProps: G.arrowProps,
+						popperProps: G.popperProps,
+						visible: G.visible
 					}, Object(c.a)(l.created)))))
 				}));
 			t.d = Y(Object(I.b)(Object(d.a)($)))
@@ -2151,4 +2154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.e525ecbdcbe763e8caff.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc.b7efc4d8b3bba3f168fa.js.map
