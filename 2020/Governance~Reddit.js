@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c71e136e8b5fe0610732.js
-// Retrieved at 6/26/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.109e942bed80462f001a.js
+// Retrieved at 6/30/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -10796,11 +10796,11 @@
 			})), n.d(t, "a", (function() {
 				return w
 			})), n.d(t, "g", (function() {
-				return P
-			})), n.d(t, "k", (function() {
 				return x
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "k", (function() {
 				return k
+			})), n.d(t, "h", (function() {
+				return N
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/lib/makeActionCreator/index.ts"),
@@ -10836,12 +10836,27 @@
 					if (e.relatedTopics && e.relatedTopics.edges)
 						for (const {
 								node: n
-							} of e.relatedTopics.edges) t.push(n);
+							} of e.relatedTopics.edges) t.push(P(n));
 					return Object.assign({}, e, {
 						relatedTopics: t
 					})
 				},
-				P = async (e, t, n) => {
+				P = e => {
+					const {
+						id: t,
+						name: n,
+						namePlural: s,
+						slug: r
+					} = e;
+					return {
+						id: t,
+						name: n,
+						namePlural: s,
+						slug: r,
+						url: "/t/".concat(e.slug, "/")
+					}
+				},
+				x = async (e, t, n) => {
 					const s = await ((e, t) => Object(i.a)(e, Object.assign({}, c, {
 						variables: t
 					})))(e, Object.assign({
@@ -10884,18 +10899,14 @@
 						const i = (e.topicBySlug.parentRelationships || []).map(R),
 							d = (e.topicBySlug.childRelationships || []).map(R),
 							O = (e.topicBySlug.siblingRelationships || []).map(R),
-							g = {
+							g = Object.assign({
 								childRelationships: d,
 								hasPosts: !!Object.keys(t).length,
 								hasSubreddits: !!a.length,
-								id: e.topicBySlug.id,
-								name: e.topicBySlug.name,
-								namePlural: e.topicBySlug.namePlural,
 								parentRelationships: i,
 								siblingRelationships: O,
-								slug: e.topicBySlug.slug,
 								subredditIds: a
-							},
+							}, P(e.topicBySlug)),
 							_ = g.id ? {
 								[g.id]: g
 							} : void 0,
@@ -10913,7 +10924,7 @@
 							topics: _
 						}
 					})(s.body.data)
-				}, x = (e, t) => async (n, s, c) => {
+				}, k = (e, t) => async (n, s, c) => {
 					let {
 						gqlContext: i
 					} = c;
@@ -10946,7 +10957,7 @@
 						key: b
 					}));
 					try {
-						h = await P(i(), l, {
+						h = await x(i(), l, {
 							includeIdentity: Object(_.O)(u) && !u.user.account
 						})
 					} catch (j) {
@@ -10967,7 +10978,7 @@
 					y && n(o.l({
 						title: y
 					}))
-				}, k = e => async (t, n, s) => {
+				}, N = e => async (t, n, s) => {
 					let {
 						gqlContext: o
 					} = s;
@@ -10991,7 +11002,7 @@
 						key: d
 					}));
 					try {
-						p = await P(o(), i, {
+						p = await x(o(), i, {
 							afterPosts: u.token,
 							includeRelationships: !1,
 							includeSubreddits: !1,
@@ -53874,4 +53885,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.c71e136e8b5fe0610732.js.map
+//# sourceMappingURL=Governance~Reddit.109e942bed80462f001a.js.map

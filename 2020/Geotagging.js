@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.9af1f049dc3e3d508cdf.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.12eecf4c716a99e01570.js
+// Retrieved at 6/30/2020, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -85,7 +85,7 @@
 				j = s("./src/reddit/components/GeoForm/index.m.less"),
 				E = s.n(j);
 
-			function S(e) {
+			function _(e) {
 				const {
 					value: t,
 					setValue: s,
@@ -102,7 +102,7 @@
 						}).catch(() => o([]))
 					}, [e]), a
 				}(t, p, g(h, l)), {
-					highlightValue: S,
+					highlightValue: _,
 					selectedIndex: k,
 					onKeyDown: w,
 					isClosed: O,
@@ -137,7 +137,7 @@
 					name: v,
 					disabled: r,
 					onKeyDown: w,
-					value: S && S.name || t,
+					value: _ && _.name || t,
 					placeholder: d.fbt._("Add location", null, {
 						hk: "1BaqFd"
 					}),
@@ -148,7 +148,7 @@
 						y(!0), c()
 					},
 					onBlur: () => y(!1)
-				}), j.length && !O ? a.a.createElement(_, {
+				}), j.length && !O ? a.a.createElement(S, {
 					id: l,
 					items: j.map(e => e.name),
 					selectedIndex: k,
@@ -159,7 +159,7 @@
 				}) : null)
 			}
 
-			function _(e) {
+			function S(e) {
 				const {
 					id: t,
 					items: s,
@@ -205,7 +205,7 @@
 							sessionId: p
 						})
 					}
-				}, a.a.createElement(S, {
+				}, a.a.createElement(_, {
 					className: b,
 					value: g,
 					sessionId: p,
@@ -469,9 +469,9 @@
 				}
 				return s
 			};
-			const S = c.e[1] + 24,
-				_ = p.f + 8 + 152 + 32 + 16,
-				k = _ + S + 8,
+			const _ = c.e[1] + 24,
+				S = p.f + 8 + 152 + 32 + 16,
+				k = S + _ + 8,
 				w = x.a.div("Container", y.a),
 				O = x.a.wrapped(e => {
 					var {
@@ -502,7 +502,7 @@
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > k,
-						shouldFooterSticky: this.windowHeight > _
+						shouldFooterSticky: this.windowHeight > S
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -596,13 +596,13 @@
 				x = s("./src/reddit/models/Theme/index.ts"),
 				j = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			const E = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(j.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				S = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(j.a)(e).widgetColors.sidebarWidgetHeaderColor,
-				_ = e => {
+				_ = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(j.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				S = e => {
 					const t = E(e);
 					return Object(x.f)(t)
 				},
 				k = e => {
-					const t = S(e);
+					const t = _(e);
 					return Object(x.f)(t)
 				};
 			var w = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
@@ -645,11 +645,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = E(this.props), e.borderColor = Object(p.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = _(this.props), e
+					return e.backgroundColor = E(this.props), e.borderColor = Object(p.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = S(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = S(this.props), e.color = e.fill = k(this.props), e
+					return e.backgroundColor = _(this.props), e.color = e.fill = k(this.props), e
 				}
 				render() {
 					const {
@@ -833,19 +833,19 @@
 					})
 				}, b = s("./src/reddit/helpers/localStorage/index.ts"), h = s("./src/reddit/helpers/trackers/screenview.ts"), p = s("./src/reddit/hooks/useGqlContext.ts"), g = s("./src/reddit/hooks/useTracking.ts"), f = s("./src/reddit/layout/page/Listing/index.tsx"), y = s("./node_modules/react-router-dom/esm/react-router-dom.js"), x = s("./src/reddit/controls/Button/index.tsx"), j = s("./src/reddit/pages/Geotagging/index.m.less"), E = s.n(j);
 			const {
-				fbt: S
+				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function _() {
+			function S() {
 				return a.a.createElement("div", {
 					className: E.a.done
 				}, a.a.createElement("p", {
 					className: E.a.headerText1
-				}, S._("Done and done!", null, {
+				}, _._("Done and done!", null, {
 					hk: "1RzJEG"
 				})), a.a.createElement("p", {
 					className: E.a.headerText2
-				}, S._("Thanks for all your help. Your contributions have helped make Reddit a better place.", null, {
+				}, _._("Thanks for all your help. Your contributions have helped make Reddit a better place.", null, {
 					hk: "1xzgiX"
 				})), a.a.createElement(y.a, {
 					to: "/"
@@ -974,7 +974,7 @@
 					}
 				}(), j = Object(g.a)();
 
-				function S() {
+				function _() {
 					i(Object(C.e)({
 						kind: U.b.SuccessMod,
 						text: Z._("Nice work!", null, {
@@ -1013,7 +1013,7 @@
 				}, "No"), a.a.createElement(x.f, {
 					className: E.a.verifyButton,
 					onClick: function() {
-						z(t.id), j(D(t, t.geoPlace.id)), f(), s(t.id), S()
+						z(t.id), j(D(t, t.geoPlace.id)), f(), s(t.id), _()
 					}
 				}, "Yes")) : a.a.createElement(v.a, {
 					disabled: l,
@@ -1045,7 +1045,7 @@
 							}),
 							duration: 5e3
 						}));
-						j(H(t, n)), f(), s(t.id), S()
+						j(H(t, n)), f(), s(t.id), _()
 					}
 				}))
 			}
@@ -1101,7 +1101,7 @@
 				}), a.a.createElement(r.a, {
 					isLoading: !0,
 					className: E.a.subredditGeotag
-				})) : o >= s.length ? a.a.createElement(_, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(O, null), s.map(e => a.a.createElement(K, {
+				})) : o >= s.length ? a.a.createElement(S, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(O, null), s.map(e => a.a.createElement(K, {
 					key: e.id,
 					subreddit: e,
 					onClose: c
@@ -1128,11 +1128,11 @@
 					}, t && a.a.createElement(d.a, {
 						subredditIds: t.subredditIds,
 						onSeeMoreCommunities: () => {},
-						topicSlug: t.slug
+						topicUrl: t.url
 					}))]
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging.9af1f049dc3e3d508cdf.js.map
+//# sourceMappingURL=Geotagging.12eecf4c716a99e01570.js.map
