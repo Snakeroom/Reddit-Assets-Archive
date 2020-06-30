@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.e5bcfd32d16d6ec76892.js
-// Retrieved at 6/11/2020, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.30b717bae83716c005e9.js
+// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -538,7 +538,7 @@
 				}, c(t, e)),
 				I = e => e => {
 					const t = c(e);
-					return !Object(a.e)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(a.f)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -672,7 +672,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => m(t.listingName)(e, t), _, p, c.i, d.b, (e, t, s, r, i, c) => {
+				}, (e, t) => m(t.listingName)(e, t), _, p, c.i, d.c, (e, t, s, r, i, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -839,4 +839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.e5bcfd32d16d6ec76892.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.30b717bae83716c005e9.js.map

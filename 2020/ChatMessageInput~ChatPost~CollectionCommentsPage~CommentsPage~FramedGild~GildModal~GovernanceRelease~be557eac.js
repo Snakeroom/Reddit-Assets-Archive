@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.631decbfb7ee0f9131e2.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.820b9ef76bb4dc57e888.js
+// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -408,7 +408,7 @@
 					consumed: m.b,
 					loadTimes: m.g,
 					metadata: m.i,
-					started: m.k
+					started: m.l
 				}),
 				C = Object(a.b)(w, (e, t) => {
 					let {
@@ -416,24 +416,24 @@
 					} = t;
 					return {
 						onBufferingChanged: t => {
-							e(t ? l.z(s) : l.O(s))
+							e(t ? l.A(s) : l.P(s))
 						},
-						onLoadStarted: t => e(l.y(s, t)),
-						onMetadataReceived: t => e(l.N({
+						onLoadStarted: t => e(l.z(s, t)),
+						onMetadataReceived: t => e(l.O({
 							metadata: t,
 							postId: s
 						})),
-						onPaused: () => e(l.J({
+						onPaused: () => e(l.K({
 							postId: s
 						})),
-						onPlayable: t => e(l.K(s, t)),
-						onPlaying: () => e(l.M(s)),
-						onWatched: () => e(l.A(s)),
-						onViewableImpression: () => e(l.H(s)),
-						onFullyViewableImpression: () => e(l.E(s)),
-						onMRCViewableImpression: () => e(l.D(s)),
-						onPlayedWithSound: () => e(l.L(s)),
-						onWatchedPercent: t => e(l.U(t, s))
+						onPlayable: t => e(l.L(s, t)),
+						onPlaying: () => e(l.N(s)),
+						onWatched: () => e(l.B(s)),
+						onViewableImpression: () => e(l.I(s)),
+						onFullyViewableImpression: () => e(l.F(s)),
+						onMRCViewableImpression: () => e(l.E(s)),
+						onPlayedWithSound: () => e(l.M(s)),
+						onWatchedPercent: t => e(l.W(t, s))
 					}
 				});
 			class v extends i.a.Component {
@@ -1312,13 +1312,13 @@
 					}, "r/".concat(e))
 				}
 			}
-			const H = Object(u.c)(D),
-				R = Object(I.c)({
+			const R = Object(u.c)(D),
+				H = Object(I.c)({
 					isFeatureFlagEnabled: B.b,
 					isUserInTreatment: B.e,
 					userVariant: B.a
 				});
-			var U = Object(v.b)(R)(e => {
+			var U = Object(v.b)(H)(e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: s,
@@ -1326,24 +1326,24 @@
 						userVariant: r,
 						rtJsonElementProps: o
 					} = e;
-					if (!s || !t) return a.a.createElement(H, {
+					if (!s || !t) return a.a.createElement(R, {
 						subredditName: n,
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.jc.SmIcon:
+						case N.lc.SmIcon:
 							return a.a.createElement(L, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case N.jc.SmIconHc:
+						case N.lc.SmIconHc:
 							return a.a.createElement(L, {
 								subredditName: n,
 								isHoverable: !0,
 								rtJsonElementProps: o
 							});
 						default:
-							return a.a.createElement(H, {
+							return a.a.createElement(R, {
 								subredditName: n,
 								rtJsonElementProps: o
 							})
@@ -1779,12 +1779,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ec
+						experimentName: n.gc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.jc.SmIcon || t === n.jc.SmIconHc
+					return t === n.lc.SmIcon || t === n.lc.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1810,4 +1810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.631decbfb7ee0f9131e2.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.820b9ef76bb4dc57e888.js.map

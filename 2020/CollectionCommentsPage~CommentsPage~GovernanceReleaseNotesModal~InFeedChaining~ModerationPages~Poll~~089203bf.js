@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.06d008a0ebf09ba416b5.js
-// Retrieved at 6/30/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.27577292719008f3d159.js
+// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -19,13 +19,13 @@
 					experimentEligibilitySelector: h.a,
 					experimentName: l.Gb
 				});
-				return Object(l.zc)(t) ? void 0 : t
+				return Object(l.Dc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
 					experimentName: l.Hb
 				});
-				return Object(l.zc)(t) ? void 0 : t
+				return Object(l.Dc)(t) ? void 0 : t
 			}, (e, t) => e === l.Ib.Enabled && t === l.Ib.Enabled);
 			var u = s("./src/config.ts");
 			var m = s("./src/reddit/selectors/user.ts");
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "914836e-production"
+					SENTRY_RELEASE_VERSION: "4f4f41e-production"
 				}),
 				S = {
 					anonymousUserId: "t2_anonymous",
@@ -565,8 +565,8 @@
 				T = s("./src/reddit/components/PlayButton/index.tsx"),
 				N = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				j = s("./src/reddit/components/RichTextJson/index.tsx"),
-				_ = s("./src/reddit/constants/componentSizes.ts"),
-				D = s("./src/reddit/constants/screenWidths.ts"),
+				D = s("./src/reddit/constants/componentSizes.ts"),
+				_ = s("./src/reddit/constants/screenWidths.ts"),
 				P = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				R = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				V = s("./src/reddit/helpers/getRichTextContent/index.ts"),
@@ -619,7 +619,7 @@
 				X = 1200,
 				Z = 75,
 				$ = "player.js",
-				ee = _.r + _.q,
+				ee = D.r + D.q,
 				te = e => e.isVisible ? e.children : c.a.createElement("div", {
 					className: J.a.displayNone
 				}, e.children),
@@ -793,7 +793,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(B.i, this.state.viewportHeight),
 						s = Math.min(X, 16 * t / 9);
-					s === X && (t = 9 * X / 16), e = this.state.viewportWidth >= D.c ? this.state.viewportWidth < _.l ? this.state.viewportWidth - ee - 2 * Z : this.state.viewportWidth - ee - _.e - 2 * Z : this.state.viewportWidth - 2 * Z;
+					s === X && (t = 9 * X / 16), e = this.state.viewportWidth >= _.c ? this.state.viewportWidth < D.l ? this.state.viewportWidth - ee - 2 * Z : this.state.viewportWidth - ee - D.e - 2 * Z : this.state.viewportWidth - 2 * Z;
 					const i = this.state.viewportHeight - 2 * Z;
 					if (s > e) {
 						t *= e / s, s = e
@@ -892,13 +892,13 @@
 					} = this.props, {
 						canLoadContent: y,
 						forcePause: w,
-						shouldPause: _,
-						shouldStop: D,
+						shouldPause: D,
+						shouldStop: _,
 						viewportWidth: P
 					} = this.state;
 					if (!p.media) return null;
-					const A = w || _,
-						U = D,
+					const A = w || D,
+						U = _,
 						{
 							source: k,
 							obfuscated: G,
@@ -1080,7 +1080,7 @@
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), y && c.a.createElement(Q, {
-								autoPlay: "boolean" == typeof _ ? !_ : void 0,
+								autoPlay: "boolean" == typeof D ? !D : void 0,
 								isExpando: o,
 								shouldLoad: !0,
 								shouldPause: A,
@@ -1116,7 +1116,7 @@
 							}));
 						case B.n.IMAGE:
 							const w = this.state.viewportHeight - 2 * Z,
-								D = this.state.viewportWidth - 2 * Z;
+								_ = this.state.viewportWidth - 2 * Z;
 							let P, G = k;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(x.a)(p.thumbnail.url) ? G = p.thumbnail.url : p.preview && Object(x.a)(p.preview.url) && (G = p.preview.url)), l && (P = g ? "".concat(g, " - ").concat(p.title) : p.title), c.a.createElement(I.a, q({}, ee, {
 								blurSrc: X ? G : void 0,
@@ -1133,7 +1133,7 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								maxHeight: o ? w : void 0,
-								maxWidth: o ? D : void 0,
+								maxWidth: o ? _ : void 0,
 								postId: p.id,
 								shouldBlur: se,
 								source: G,
@@ -1250,4 +1250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.06d008a0ebf09ba416b5.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf.27577292719008f3d159.js.map

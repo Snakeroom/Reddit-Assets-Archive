@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.e5c322f9165530f8ef40.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.33b09fc622af1f3bd91f.js
+// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1274,7 +1274,7 @@
 				}, a(t, e)),
 				C = e => e => {
 					const t = a(e);
-					return !Object(o.e)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(o.f)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -1588,7 +1588,7 @@
 				c = s("./src/reddit/selectors/user.ts"),
 				a = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = Object(n.a)(a.a, a.b, (e, t) => {
+			const l = Object(n.a)(a.a, a.c, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -1624,7 +1624,7 @@
 					if (!i.global.viewer_enabled) return !1;
 					return [o.P, "r/popular"].indexOf(n) > -1
 				}),
-				u = Object(n.a)(a.b, (e, t) => {
+				u = Object(n.a)(a.c, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -1733,7 +1733,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => p(t.listingName)(e, t), x, b, a.i, d.b, (e, t, s, n, r, a) => {
+				}, (e, t) => p(t.listingName)(e, t), x, b, a.i, d.c, (e, t, s, n, r, a) => {
 					if (a) {
 						const o = [];
 						if (e) {
@@ -1922,4 +1922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.e5c322f9165530f8ef40.js.map
+//# sourceMappingURL=Frontpage.33b09fc622af1f3bd91f.js.map

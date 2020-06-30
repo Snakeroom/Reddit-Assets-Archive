@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.06e9be386833313f5d83.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d278c05db7e22d502c56.js
+// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -6147,7 +6147,7 @@
 				}, c(t, e)),
 				N = e => e => {
 					const t = c(e);
-					return !Object(a.e)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(a.f)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -7147,7 +7147,7 @@
 				o = n("./src/reddit/selectors/user.ts"),
 				c = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				d = n("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = Object(s.a)(c.a, c.b, (e, t) => {
+			const l = Object(s.a)(c.a, c.c, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -7183,7 +7183,7 @@
 					if (!i.global.viewer_enabled) return !1;
 					return [a.P, "r/popular"].indexOf(s) > -1
 				}),
-				m = Object(s.a)(c.b, (e, t) => {
+				m = Object(s.a)(c.c, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -7292,7 +7292,7 @@
 						streamIdFromPath: n
 					} = t;
 					return n
-				}, (e, t) => p(t.listingName)(e, t), _, h, c.i, d.b, (e, t, n, s, r, c) => {
+				}, (e, t) => p(t.listingName)(e, t), _, h, c.i, d.c, (e, t, n, s, r, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -7477,11 +7477,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.gc.Enabled === Object(r.c)(e, {
+			const a = e => s.ic.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.bc
+				experimentName: s.dc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.06e9be386833313f5d83.js.map
+//# sourceMappingURL=Subreddit.d278c05db7e22d502c56.js.map
