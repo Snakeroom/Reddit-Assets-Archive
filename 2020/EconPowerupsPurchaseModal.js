@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.bca465773a17925c48d9.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6ea3a5e89660ed9c61a4.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -138,8 +138,8 @@
 					subredditOrProfile: e.subreddit
 				}))),
 				v = a("./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.tsx"),
-				N = a("./src/reddit/components/PowerupsBanner/Supporters/index.tsx"),
-				k = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				k = a("./src/reddit/components/PowerupsBanner/Supporters/index.tsx"),
+				N = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				j = a("./src/reddit/models/Gold/Powerups/index.ts"),
 				y = a("./src/reddit/components/Econ/PowerupsPurchaseModal/MarketingStep/BenefitsGrid/index.m.less"),
 				M = a.n(y);
@@ -301,7 +301,7 @@
 						powerups: c
 					}), n.a.createElement("div", {
 						className: G.a.topSupporters
-					}, n.a.createElement(N.a, {
+					}, n.a.createElement(k.a, {
 						supporters: i
 					}))), n.a.createElement("div", {
 						className: Object(u.a)(G.a.modalFooter, {
@@ -315,7 +315,7 @@
 							p && (m(Object(h.b)(1)), m(Object(h.c)(o, 1, !1)))
 						},
 						powerups: c
-					}, t ? n.a.createElement(k.a, {
+					}, t ? n.a.createElement(N.a, {
 						className: G.a.loadingIcon,
 						sizePx: Y
 					}) : J._("Use Your Free Powerup", null, {
@@ -432,8 +432,8 @@
 				isAnonymous: p.c,
 				powerupsCount: p.d,
 				productOffer: re.a,
-				savedCardsPending: ne.u,
-				stripeTokenPending: ne.l
+				savedCardsPending: ne.t,
+				stripeTokenPending: ne.k
 			}), we = Object(s.b)(fe);
 			var ge = Object(Z.injectStripe)(we((function(e) {
 					const {
@@ -474,11 +474,11 @@
 					});
 					return r && r[0]
 				},
-				stripeErrorMessage: ne.i,
+				stripeErrorMessage: ne.h,
 				subreddit: f.R,
-				paypalErrorMessage: ne.c
-			}), Ne = Object(s.b)(ve), ke = 100;
-			var je = Ne((function(e) {
+				paypalErrorMessage: ne.b
+			}), ke = Object(s.b)(ve), Ne = 100;
+			var je = ke((function(e) {
 					const {
 						isAnonymous: t,
 						isNightmode: a,
@@ -548,7 +548,7 @@
 						onChange: e => p(Object(h.b)(e)),
 						value: o,
 						min: 1,
-						max: ke,
+						max: Ne,
 						className: Pe.a.powerupsQuantity
 					})), n.a.createElement("div", {
 						className: Pe.a.modalFooter
@@ -967,4 +967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.bca465773a17925c48d9.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.6ea3a5e89660ed9c61a4.js.map

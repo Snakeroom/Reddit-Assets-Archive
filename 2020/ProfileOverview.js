@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.dc905e750ba8129c3631.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1ed500dfd2604f2f4055.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2439,63 +2439,52 @@
 					}
 				})(Object(ee.c)(Object(B.b)(Le)))),
 				Fe = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
-				Ae = s("./src/reddit/components/GildModal/getGildModalId.ts"),
-				Be = s("./src/reddit/components/GildModal/Loader.tsx"),
-				De = s("./src/reddit/components/RichTextJson/index.tsx"),
-				We = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				He = s("./src/reddit/selectors/gild.ts"),
-				Ue = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
-				Ve = s.n(Ue);
-			const Ge = xe.a.wrapped(Fe.a, "TopMeta", Ve.a),
-				ze = xe.a.div("ProfileCommentWrapper", Ve.a),
-				Ke = xe.a.div("CommentBody", Ve.a),
-				Je = Object(r.b)(() => Object(a.c)({
+				Ae = s("./src/reddit/components/RichTextJson/index.tsx"),
+				Be = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				De = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
+				We = s.n(De);
+			const He = xe.a.wrapped(Fe.a, "TopMeta", We.a),
+				Ue = xe.a.div("ProfileCommentWrapper", We.a),
+				Ve = xe.a.div("CommentBody", We.a),
+				Ge = Object(r.b)(() => Object(a.c)({
 					comment: (e, t) => Object(K.n)(e, t),
-					gildModalIsOpen: (e, t) => {
-						let {
-							commentId: s
-						} = t;
-						const n = Object(Ae.b)(s);
-						return Object(He.d)(e, n)
-					},
 					flair: K.e
 				})),
-				qe = Object(d.b)(e => ({
+				ze = Object(d.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.a = Je(e => {
+			t.a = Ge(e => {
 				const {
 					comment: t,
 					commentsPageKey: s,
 					flair: n,
-					gildModalIsOpen: r,
-					isExpanded: a,
-					showFlatlist: d,
-					showModTools: l
-				} = e, m = s => o.a.createElement(De.a, {
+					isExpanded: r,
+					showFlatlist: a,
+					showModTools: d
+				} = e, l = s => o.a.createElement(Ae.a, {
 					className: s,
-					content: Object(We.a)(t),
-					rtJsonElementProps: qe(e)
+					content: Object(Be.a)(t),
+					rtJsonElementProps: ze(e)
 				});
-				return o.a.createElement(ze, {
+				return o.a.createElement(Ue, {
 					className: Object(i.a)({
-						[Ve.a.isRemoved]: !!t.bannedBy
+						[We.a.isRemoved]: !!t.bannedBy
 					})
-				}, o.a.createElement(Ge, {
+				}, o.a.createElement(He, {
 					collapsedBecauseCrowdControl: !1,
 					collapsed: !1,
 					comment: t,
 					commentsPageKey: s,
 					flair: n,
 					renderedInOverlay: !1
-				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(Ke, null, a ? m() : o.a.createElement(v, {
+				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(Ve, null, r ? l() : o.a.createElement(v, {
 					height: c.Gb,
-					isExpanded: a
-				}, m)), !t.isDeleted && d && o.a.createElement(Re, {
+					isExpanded: r
+				}, l)), !t.isDeleted && a && o.a.createElement(Re, {
 					comment: t,
 					commentsPageKey: s,
-					showModTools: l
-				})), r && o.a.createElement(Be.a, null))
+					showModTools: d
+				})))
 			})
 		},
 		"./src/reddit/components/CommentsChat/LiveIcon/index.m.less": function(e, t, s) {
@@ -4230,7 +4219,7 @@
 			const y = Object(O.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
-				getComponent: () => Promise.all([s.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), s.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"), s.e("EconomicsEntryPointsPostFlatlistSupportCTA")]).then(s.bind(null, "./src/reddit/components/Economics/EntryPoints/PostFlatlistSupportCTA/index.tsx")).then(e => e.default)
+				getComponent: () => Promise.all([s.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCom~c2417cdc"), s.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~d7fcad44"), s.e("EconomicsCommunityTipJar~EconomicsEntryPointsCommentFlatlistSupportCTA~EconomicsEntryPointsPostFlatl~ad34f221"), s.e("EconomicsEntryPointsPostFlatlistSupportCTA")]).then(s.bind(null, "./src/reddit/components/Economics/EntryPoints/PostFlatlistSupportCTA/index.tsx")).then(e => e.default)
 			});
 			var _ = Object(a.b)(() => Object(i.c)({
 					featureEnabled: C.d.spSupport,
@@ -4384,7 +4373,6 @@
 						onFlairPost: () => e(Object(u.i)(Object(R.b)(n.postId, o))),
 						onGildClick: t => e(Object(p.d)({
 							correlationId: t,
-							isOverlay: o,
 							thingId: n.postId
 						})),
 						onFlairChanged: t => {
@@ -5663,17 +5651,6 @@
 				}
 			}
 			t.a = Ve(Ge(Object(d.c)(ze)))
-		},
-		"./src/reddit/components/GildModal/Loader.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
-				o = s("./src/lib/loadWithRetries/index.ts");
-			const r = Object(n.a)({
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"), s.e("FramedGild~GildModal"), s.e("GildModal")]).then(s.bind(null, "./src/reddit/components/GildModal/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => null,
-				LoadingComponent: () => null
-			});
-			t.a = r
 		},
 		"./src/reddit/components/GiveAwardTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7640,17 +7617,14 @@
 				o = s.n(n),
 				r = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/reddit/components/AdViewability/index.tsx"),
-				i = s("./src/reddit/components/GildModal/getGildModalId.ts"),
-				c = s("./src/reddit/components/GildModal/Loader.tsx"),
-				d = s("./src/reddit/connectors/PostViewable/index.ts"),
-				l = s("./src/reddit/models/Media/index.ts"),
-				m = s("./src/reddit/selectors/gild.ts"),
-				p = s("./src/reddit/selectors/video.ts"),
-				u = s("./src/lib/classNames/index.ts"),
-				b = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				h = s("./src/reddit/components/PostContainer/index.m.less"),
-				x = s.n(h);
-			const f = Object(r.c)({
+				i = s("./src/reddit/connectors/PostViewable/index.ts"),
+				c = s("./src/reddit/models/Media/index.ts"),
+				d = s("./src/reddit/selectors/video.ts"),
+				l = s("./src/lib/classNames/index.ts"),
+				m = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				p = s("./src/reddit/components/PostContainer/index.m.less"),
+				u = s.n(p);
+			const b = Object(r.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -7661,23 +7635,15 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.a)(e, {
+						return Object(d.a)(e, {
 							postId: s.id
 						})
-					},
-					gildModalIsOpen: (e, t) => {
-						let {
-							isOverlay: s,
-							post: n
-						} = t;
-						const o = Object(i.b)(n.postId, s);
-						return Object(m.d)(e, o)
 					},
 					playing: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(p.f)(e, {
+						return Object(d.f)(e, {
 							postId: s.id
 						})
 					},
@@ -7685,18 +7651,18 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.c)(e, {
+						return Object(d.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				g = Object(d.a)(f),
-				v = e => {
-					const t = Object(b.d)(e.target, e.currentTarget),
-						s = Object(b.b)(e.target, e.currentTarget, b.a.buttons);
+				h = Object(i.a)(b),
+				x = e => {
+					const t = Object(m.d)(e.target, e.currentTarget),
+						s = Object(m.b)(e.target, e.currentTarget, m.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class O extends o.a.Component {
+			class f extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -7705,37 +7671,36 @@
 						afterClickTracking: e,
 						children: t,
 						className: s,
-						gildModalIsOpen: n,
-						makePostContainerId: r,
-						post: i,
-						onClick: d,
-						onPostContentClick: m,
-						style: p,
-						ref: b
-					} = this.props, h = o.a.createElement("div", {
-						style: p,
-						ref: b,
+						makePostContainerId: n,
+						post: r,
+						onClick: i,
+						onPostContentClick: d,
+						style: m,
+						ref: p
+					} = this.props, b = o.a.createElement("div", {
+						style: m,
+						ref: p,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => d && d(t, i))(t), m && v(t) && m(t, i))
+							!this.cancelClick && t.button < 2 && (e(() => i && i(t, r))(t), d && x(t) && d(t, r))
 						},
-						className: Object(u.a)(x.a.WrappedPost, s, "Post ".concat(i.id), {
-							promotedlink: i.isSponsored
+						className: Object(l.a)(u.a.WrappedPost, s, "Post ".concat(r.id), {
+							promotedlink: r.isSponsored
 						}),
-						id: r ? r(i.id) : i.id,
+						id: n ? n(r.id) : r.id,
 						tabIndex: -1
-					}, t, n && o.a.createElement(c.a, null)), f = !!i.media && i.media.type === l.n.VIDEO;
-					return i.isSponsored || f ? o.a.createElement(a.a, {
-						post: i,
+					}, t), h = !!r.media && r.media.type === c.n.VIDEO;
+					return r.isSponsored || h ? o.a.createElement(a.a, {
+						post: r,
 						trackDisplay: !0
-					}, h) : h
+					}, b) : b
 				}
 			}
-			t.a = g(Object(b.c)(O))
+			t.a = h(Object(m.c)(f))
 		},
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -8773,7 +8738,6 @@
 						onDistinguishPost: t => e(Object(f.y)(n, t)),
 						onGildClick: t => e(Object(b.d)({
 							correlationId: t,
-							isOverlay: o,
 							thingId: n
 						})),
 						onToggleSave: () => e(Object(f.W)(n)),
@@ -14988,4 +14952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.dc905e750ba8129c3631.js.map
+//# sourceMappingURL=ProfileOverview.1ed500dfd2604f2f4055.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5c5945e27c9a3c59deba.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7f585bb385b07704a4d1.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2796,17 +2796,6 @@
 				}))
 			})
 		},
-		"./src/reddit/components/GildModal/Loader.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
-				r = s("./src/lib/loadWithRetries/index.ts");
-			const o = Object(n.a)({
-				getComponent: () => Object(r.a)(() => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"), s.e("FramedGild~GildModal"), s.e("GildModal")]).then(s.bind(null, "./src/reddit/components/GildModal/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => null,
-				LoadingComponent: () => null
-			});
-			t.a = o
-		},
 		"./src/reddit/components/IdCard/Placeholder.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -3767,17 +3756,14 @@
 				r = s.n(n),
 				o = s("./node_modules/reselect/es/index.js"),
 				a = s("./src/reddit/components/AdViewability/index.tsx"),
-				i = s("./src/reddit/components/GildModal/getGildModalId.ts"),
-				c = s("./src/reddit/components/GildModal/Loader.tsx"),
-				d = s("./src/reddit/connectors/PostViewable/index.ts"),
-				l = s("./src/reddit/models/Media/index.ts"),
-				m = s("./src/reddit/selectors/gild.ts"),
-				p = s("./src/reddit/selectors/video.ts"),
-				u = s("./src/lib/classNames/index.ts"),
-				b = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				h = s("./src/reddit/components/PostContainer/index.m.less"),
-				x = s.n(h);
-			const f = Object(o.c)({
+				i = s("./src/reddit/connectors/PostViewable/index.ts"),
+				c = s("./src/reddit/models/Media/index.ts"),
+				d = s("./src/reddit/selectors/video.ts"),
+				l = s("./src/lib/classNames/index.ts"),
+				m = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				p = s("./src/reddit/components/PostContainer/index.m.less"),
+				u = s.n(p);
+			const b = Object(o.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -3788,23 +3774,15 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.a)(e, {
+						return Object(d.a)(e, {
 							postId: s.id
 						})
-					},
-					gildModalIsOpen: (e, t) => {
-						let {
-							isOverlay: s,
-							post: n
-						} = t;
-						const r = Object(i.b)(n.postId, s);
-						return Object(m.d)(e, r)
 					},
 					playing: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(p.f)(e, {
+						return Object(d.f)(e, {
 							postId: s.id
 						})
 					},
@@ -3812,18 +3790,18 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.c)(e, {
+						return Object(d.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				y = Object(d.a)(f),
-				g = e => {
-					const t = Object(b.d)(e.target, e.currentTarget),
-						s = Object(b.b)(e.target, e.currentTarget, b.a.buttons);
+				h = Object(i.a)(b),
+				x = e => {
+					const t = Object(m.d)(e.target, e.currentTarget),
+						s = Object(m.b)(e.target, e.currentTarget, m.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class v extends r.a.Component {
+			class f extends r.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -3832,37 +3810,36 @@
 						afterClickTracking: e,
 						children: t,
 						className: s,
-						gildModalIsOpen: n,
-						makePostContainerId: o,
-						post: i,
-						onClick: d,
-						onPostContentClick: m,
-						style: p,
-						ref: b
-					} = this.props, h = r.a.createElement("div", {
-						style: p,
-						ref: b,
+						makePostContainerId: n,
+						post: o,
+						onClick: i,
+						onPostContentClick: d,
+						style: m,
+						ref: p
+					} = this.props, b = r.a.createElement("div", {
+						style: m,
+						ref: p,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => d && d(t, i))(t), m && g(t) && m(t, i))
+							!this.cancelClick && t.button < 2 && (e(() => i && i(t, o))(t), d && x(t) && d(t, o))
 						},
-						className: Object(u.a)(x.a.WrappedPost, s, "Post ".concat(i.id), {
-							promotedlink: i.isSponsored
+						className: Object(l.a)(u.a.WrappedPost, s, "Post ".concat(o.id), {
+							promotedlink: o.isSponsored
 						}),
-						id: o ? o(i.id) : i.id,
+						id: n ? n(o.id) : o.id,
 						tabIndex: -1
-					}, t, n && r.a.createElement(c.a, null)), f = !!i.media && i.media.type === l.n.VIDEO;
-					return i.isSponsored || f ? r.a.createElement(a.a, {
-						post: i,
+					}, t), h = !!o.media && o.media.type === c.n.VIDEO;
+					return o.isSponsored || h ? r.a.createElement(a.a, {
+						post: o,
 						trackDisplay: !0
-					}, h) : h
+					}, b) : b
 				}
 			}
-			t.a = y(Object(b.c)(v))
+			t.a = h(Object(m.c)(f))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -8784,10 +8761,10 @@
 						value: e.value || ""
 					}
 				}
-				componentWillReceiveProps(e) {
-					this.setState(() => ({
-						value: e.value || ""
-					}))
+				static getDerivedStateFromProps(e, t) {
+					return {
+						value: t.value || e.value || ""
+					}
 				}
 				render() {
 					const {
@@ -9520,4 +9497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.5c5945e27c9a3c59deba.js.map
+//# sourceMappingURL=SearchResults.7f585bb385b07704a4d1.js.map

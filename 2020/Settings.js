@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.73ff48ce38070ed7929d.js
-// Retrieved at 6/30/2020, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5d49055afc4321bc95fb.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -158,8 +158,8 @@
 						return u.c.captureException(k), void(k.message && r(Object(h.stripeApiError)(k.message)))
 					}
 					r(Object(h.stripeTokenPending)());
-					const _ = Object(g.w)(m);
-					if (_ || (b = await r(Object(h.validateAndCreateStripeToken)(e)), v = Object(g.t)(m), b)) try {
+					const _ = Object(g.v)(m);
+					if (_ || (b = await r(Object(h.validateAndCreateStripeToken)(e)), v = Object(g.s)(m), b)) try {
 						const e = i()(),
 							t = _ || v ? b && v ? ((e, t, n, s) => Object(O.a)(e, Object.assign({}, C, {
 								variables: {
@@ -1882,7 +1882,7 @@
 				W = n("./src/lib/loadWithRetries/index.ts"),
 				H = n("./src/reddit/helpers/loadThirdPartyScript.ts");
 			var G = Object(F.a)({
-					getComponent: () => Object(W.a)(() => Promise.all([Promise.all([n.e("vendors~CoinsPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCo~264e7f7d"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(H.d)()])).then(e => e[0].default),
+					getComponent: () => Object(W.a)(() => Promise.all([Promise.all([n.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCom~c2417cdc"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(H.d)()])).then(e => e[0].default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -7062,4 +7062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.73ff48ce38070ed7929d.js.map
+//# sourceMappingURL=Settings.5d49055afc4321bc95fb.js.map

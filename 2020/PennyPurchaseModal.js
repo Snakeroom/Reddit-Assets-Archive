@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.3cba6b821d7b04534be3.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.6718e790c0adb5160f52.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -38,8 +38,8 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				n = t("./node_modules/react/index.js"),
 				r = t.n(n),
-				o = t("./src/config.ts"),
-				c = t("./src/lib/loadRedditAdsPixel.ts"),
+				c = t("./src/config.ts"),
+				o = t("./src/lib/loadRedditAdsPixel.ts"),
 				d = t("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
 				i = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				l = t("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -53,19 +53,17 @@
 						gildThingId: e,
 						sendEvent: a
 					} = this.props;
-					a(Object(m.i)(e)), Object(c.b)()
+					a(Object(m.j)(e)), Object(o.b)()
 				}
 				render() {
 					const e = this.props,
-						a = e.isGild && e.isCompletePaypal ? s.fbt._("Your transaction has been completed and details have been emailed to you. Navigate to the post or comment and refresh to see the Award.", null, {
-							hk: "1o3HIE"
-						}) : s.fbt._("The transaction is processing and we will let you know when it's done.", null, {
+						a = e.isGild && s.fbt._("The transaction is processing and we will let you know when it's done.", null, {
 							hk: "JMSWS"
 						});
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: h.a.paymentCompleteHeader,
 						style: {
-							backgroundImage: 'url("'.concat(o.a.assetPath, '/img/gold/coins-hero.jpg")')
+							backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/coins-hero.jpg")')
 						}
 					}, r.a.createElement(p.a, {
 						className: h.a.coinIcon
@@ -95,8 +93,8 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				n = t("./node_modules/react/index.js"),
 				r = t.n(n),
-				o = t("./node_modules/react-stripe-elements/es/index.js"),
-				c = t("./src/config.ts"),
+				c = t("./node_modules/react-stripe-elements/es/index.js"),
+				o = t("./src/config.ts"),
 				d = t("./src/lib/constants/index.ts"),
 				i = t("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				l = t("./src/reddit/components/StripePaymentForm/index.tsx"),
@@ -116,7 +114,7 @@
 				w = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				_ = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const f = Object(k.c)({
-				isGild: e => !!Object(x.q)(e)
+				isGild: e => !!Object(x.p)(e)
 			});
 			class N extends r.a.Component {
 				constructor() {
@@ -136,13 +134,13 @@
 						React: r.a,
 						ReactDOM: b.a
 					}), t = {
-						sandbox: c.a.paypal.apiKey,
-						production: c.a.paypal.apiKey
+						sandbox: o.a.paypal.apiKey,
+						production: o.a.paypal.apiKey
 					};
 					return r.a.createElement("div", {
 						className: e
 					}, r.a.createElement(a, {
-						env: c.a.paypal.env,
+						env: o.a.paypal.env,
 						client: t,
 						style: {
 							size: "responsive",
@@ -157,7 +155,7 @@
 					}))
 				}
 			}
-			const M = Object(y.b)(f, (e, a) => ({
+			const j = Object(y.b)(f, (e, a) => ({
 				createPayment: () => "coinPackage" in a ? e(Object(w.e)(a.coinPackage)) : "awardId" in a ? e(Object(_.d)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, s) => {
 					if ("coinPackage" in a) {
@@ -166,8 +164,8 @@
 					} else "awardId" in a && e(Object(_.c)(s))
 				}
 			}))(N);
-			var j = Object(v.a)({
-					getComponent: () => Object(E.c)().then(() => M),
+			var M = Object(v.a)({
+					getComponent: () => Object(E.c)().then(() => j),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -196,33 +194,33 @@
 						gildThingId: t,
 						purchasePackage: s,
 						savedCardsPending: n,
-						selectedPayment: o,
-						stripeTokenPending: c
+						selectedPayment: c,
+						stripeTokenPending: o
 					} = this.props;
 					return r.a.createElement("div", {
 						className: T.a.purchaseSelectPaymentFooter
 					}, r.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: a
-					}), o === d.wb ? e && e.pennyPrice && t ? r.a.createElement(j, {
+					}), c === d.wb ? e && e.pennyPrice && t ? r.a.createElement(M, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
 						thingId: t
-					}) : s && r.a.createElement(j, {
+					}) : s && r.a.createElement(M, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: s
-					}) : null, o === d.vb && r.a.createElement(g.f, {
+					}) : null, c === d.vb && r.a.createElement(g.f, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
-						disabled: c || n,
+						disabled: o || n,
 						onClick: this.onCompletePurchaseClick
 					}, I._("Complete purchase", null, {
 						hk: "3d1QJR"
 					})))
 				}
 			}
-			var S = Object(o.injectStripe)(Object(h.c)(B)),
+			var S = Object(c.injectStripe)(Object(h.c)(B)),
 				A = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				D = t("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
@@ -231,7 +229,7 @@
 			var F = e => r.a.createElement("div", {
 				className: T.a.purchaseHeader,
 				style: {
-					backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/coins-hero.jpg")')
+					backgroundImage: 'url("'.concat(o.a.assetPath, '/img/gold/coins-hero.jpg")')
 				}
 			}, r.a.createElement(D.a, {
 				className: T.a.coinIcon
@@ -287,9 +285,9 @@
 					"data-redditstyle": !0
 				})))
 			};
-			a.a = e => r.a.createElement(o.StripeProvider, {
-				apiKey: c.a.stripe.apiKey
-			}, r.a.createElement(o.Elements, null, r.a.createElement(r.a.Fragment, null, e.gildThingId ? r.a.createElement(G, {
+			a.a = e => r.a.createElement(c.StripeProvider, {
+				apiKey: o.a.stripe.apiKey
+			}, r.a.createElement(c.Elements, null, r.a.createElement(r.a.Fragment, null, e.gildThingId ? r.a.createElement(G, {
 				coinBalance: e.coinBalance,
 				award: e.selectedAward,
 				purchasePackage: e.purchasePackage,
@@ -389,15 +387,15 @@
 			var s = t("./node_modules/react/index.js"),
 				n = t.n(s),
 				r = t("./src/reddit/controls/Button/index.tsx"),
-				o = t("./src/reddit/components/Gold/PaymentCompletePageFooter/index.m.less"),
-				c = t.n(o);
+				c = t("./src/reddit/components/Gold/PaymentCompletePageFooter/index.m.less"),
+				o = t.n(c);
 			const {
 				fbt: d
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.a = e => n.a.createElement("div", {
-				className: c.a.purchaseFooter
+				className: o.a.purchaseFooter
 			}, n.a.createElement(r.f, {
-				className: c.a.purchaseButton,
+				className: o.a.purchaseButton,
 				"data-redditstyle": !0,
 				onClick: e.onCloseClick
 			}, d._("Done", null, {
@@ -415,8 +413,8 @@
 			var s = t("./node_modules/react/index.js"),
 				n = t.n(s),
 				r = t("./node_modules/react-redux/es/index.js"),
-				o = t("./node_modules/reselect/es/index.js"),
-				c = t("./src/higherOrderComponents/asModal/index.tsx"),
+				c = t("./node_modules/reselect/es/index.js"),
+				o = t("./src/higherOrderComponents/asModal/index.tsx"),
 				d = t("./src/reddit/constants/zIndex.ts"),
 				i = t("./src/lib/classNames/index.ts"),
 				l = t("./src/reddit/actions/gold/modals.ts"),
@@ -446,28 +444,28 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = Object(o.c)({
-					activePage: k.o,
+			const j = Object(c.c)({
+					activePage: k.n,
 					allowNavigationCallback: e => {
 						const a = Object(v.a)(e);
 						return null === a ? void 0 : a
 					},
 					coinBalance: E.d,
-					gildThingId: k.q,
-					isIframed: b.i,
+					gildThingId: k.p,
+					isIframed: b.h,
 					nightmode: E.S,
-					savedCardsPending: k.u,
+					savedCardsPending: k.t,
 					selectedAward: y.a,
-					selectedPayment: k.b,
-					stripeErrorMessage: k.i,
-					stripeTokenPending: k.l,
-					paypalErrorMessage: k.c,
+					selectedPayment: k.a,
+					stripeErrorMessage: k.h,
+					stripeTokenPending: k.k,
+					paypalErrorMessage: k.b,
 					userName: e => {
 						const a = Object(E.i)(e);
 						return "u/".concat(Object(C.e)(a))
 					}
 				}),
-				j = Object(r.b)(M, (e, a) => ({
+				M = Object(r.b)(j, (e, a) => ({
 					closeModal: () => {
 						e(Object(p.a)()), e(Object(l.a)())
 					},
@@ -498,7 +496,7 @@
 						loadSavedCards: a,
 						sendEvent: t
 					} = this.props;
-					a(), Object(g.d)(g.a.GoldPayment, !1), t(Object(P.h)(e))
+					a(), Object(g.d)(g.a.GoldPayment, !1), t(Object(P.i)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -515,46 +513,44 @@
 						className: a,
 						coinBalance: t,
 						gildThingId: s,
-						isCompletePaypal: r,
-						nightmode: o,
+						nightmode: r,
 						selectedPayment: c,
-						onCompletePurchaseClick: d,
-						onPaymentSelected: i,
-						onTryCloseModal: l,
-						savedCardsPending: m,
-						selectedAward: p,
-						stripeErrorMessage: u,
-						stripeTokenPending: h,
-						paypalErrorMessage: g,
-						userName: P
+						onCompletePurchaseClick: o,
+						onPaymentSelected: d,
+						onTryCloseModal: i,
+						savedCardsPending: l,
+						selectedAward: m,
+						stripeErrorMessage: p,
+						stripeTokenPending: u,
+						paypalErrorMessage: h,
+						userName: g
 					} = this.props;
 					return n.a.createElement("div", {
 						className: a
 					}, "selectPayment" === e && n.a.createElement(w.a, {
 						coinBalance: t,
 						gildThingId: s,
-						nightmode: o,
-						onCloseModal: l,
-						onCompletePurchaseClick: d,
-						onPaymentSelected: i,
-						paypalErrorMessage: g,
-						savedCardsPending: m,
-						selectedAward: p,
+						nightmode: r,
+						onCloseModal: i,
+						onCompletePurchaseClick: o,
+						onPaymentSelected: d,
+						paypalErrorMessage: h,
+						savedCardsPending: l,
+						selectedAward: m,
 						selectedPayment: c,
-						stripeErrorMessage: u,
-						stripeTokenPending: h,
-						userName: P
+						stripeErrorMessage: p,
+						stripeTokenPending: u,
+						userName: g
 					}), "paymentCompleted" === e && n.a.createElement(x.a, {
 						gildThingId: s,
 						isGild: !0,
-						isCompletePaypal: r,
-						onCloseClick: l,
-						userName: P
+						onCloseClick: i,
+						userName: g
 					}))
 				}
 			}
-			const T = Object(c.a)(O);
-			a.default = j(Object(u.c)(class extends n.a.PureComponent {
+			const T = Object(o.a)(O);
+			a.default = M(Object(u.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -587,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.3cba6b821d7b04534be3.js.map
+//# sourceMappingURL=PennyPurchaseModal.6718e790c0adb5160f52.js.map

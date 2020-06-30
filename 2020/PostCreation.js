@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.17458ebb4ed9bb594a42.js
-// Retrieved at 6/30/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2075cd63451fcf95335e.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "311a794-production"
+					SENTRY_RELEASE_VERSION: "d66b3c0-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -2901,8 +2901,6 @@
 		"./src/reddit/components/AwardBadges/AddAwardPill/index.m.less": function(e, t, n) {
 			e.exports = {
 				addAwardPill: "_3Wf5TsmUR8Qf8nr0fDHjur",
-				"focus-visible": "Vid7Flh9w2Ipi5lLiXtJQ",
-				focusVisible: "Vid7Flh9w2Ipi5lLiXtJQ",
 				giftIcon: "eQZZIJf9NTq5MBV2285S2"
 			}
 		},
@@ -2910,8 +2908,6 @@
 			e.exports = {
 				awardPillContainer: "yW-ely1Ik8KTYTO9TSOSa",
 				awardPill: "q2KM5tcmhqOBd4ElRihZQ",
-				"focus-visible": "_3hSD8Pi71g2Q9c03wUYjLs",
-				focusVisible: "_3hSD8Pi71g2Q9c03wUYjLs",
 				userGiven: "_1HqRbG571qt3Nk2zj_W3TS",
 				imageContainer: "_1rwi4ljDNaPtYUiOiXomov",
 				count: "_1YpK2GgjHXEnSEetPdXV17",
@@ -2927,7 +2923,10 @@
 				awardBadges: "_1wgnb6w6OJogtEV2N4B3lD",
 				noAwards: "_1pZRAWakamwUD9Urx217oC",
 				multiline: "_3c1kr0TjcknQSAP9naDKGv",
-				spacer: "_1FZ8jCjLuxoHLtbgJDekEU"
+				spacer: "_1FZ8jCjLuxoHLtbgJDekEU",
+				clickablePlaqueItem: "_2PVXBodfFt50jjk5ydPpWY",
+				"focus-visible": "_3JCIceLNhOdJUR_ABw_M2V",
+				focusVisible: "_3JCIceLNhOdJUR_ABw_M2V"
 			}
 		},
 		"./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less": function(e, t, n) {
@@ -3029,7 +3028,7 @@
 				R = n("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
 				L = n.n(R);
 			var D = r.a.memo(e => r.a.createElement("button", {
-					className: L.a.addAwardPill,
+					className: Object(P.a)(e.className, L.a.addAwardPill),
 					name: s.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
@@ -3113,22 +3112,23 @@
 				render() {
 					const {
 						award: e,
-						count: t,
-						post: n,
-						prefersReducedMotion: s,
-						tooltipId: o
+						className: t,
+						count: n,
+						post: s,
+						prefersReducedMotion: o,
+						tooltipId: i
 					} = this.props, {
-						userGiven: i,
-						shouldAnimate: a
-					} = this.state, c = Object(F.a)(e, 32, s), l = Object(F.a)(e, 128, s), d = Object(A.a)(e.id, n.id);
+						userGiven: a,
+						shouldAnimate: c
+					} = this.state, l = Object(F.a)(e, 32, o), d = Object(F.a)(e, 128, o), u = Object(A.a)(e.id, s.id);
 					return r.a.createElement("span", {
 						className: W.a.awardPillContainer,
-						id: o,
+						id: i,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, r.a.createElement("button", {
-						className: Object(P.a)(W.a.awardPill, {
-							[W.a.userGiven]: i
+						className: Object(P.a)(t, W.a.awardPill, {
+							[W.a.userGiven]: a
 						}),
 						onClick: this.handleOnClick
 					}, r.a.createElement("span", {
@@ -3136,22 +3136,22 @@
 					}, r.a.createElement("img", {
 						alt: e.name,
 						className: Object(P.a)(W.a.awardIcon, {
-							[W.a.hidden]: a
+							[W.a.hidden]: c
 						}),
-						id: d,
+						id: u,
 						ref: this.imageRef,
-						src: c
-					}), a && r.a.createElement("img", {
+						src: l
+					}), c && r.a.createElement("img", {
 						alt: e.name,
 						className: W.a.animationIcon,
-						src: l
+						src: d
 					})), r.a.createElement("span", {
 						className: W.a.count
-					}, t.toLocaleString())), r.a.createElement(K, {
+					}, n.toLocaleString())), r.a.createElement(K, {
 						award: e,
 						onHideAward: this.handleHideAward,
-						postOrComment: n,
-						tooltipId: o
+						postOrComment: s,
+						tooltipId: i
 					}))
 				}
 			}
@@ -3312,6 +3312,7 @@
 						} = s, n = t[e.id];
 						return r.a.createElement(G, {
 							award: e,
+							className: ee.a.clickablePlaqueItem,
 							count: n,
 							key: e.id,
 							onAddAward: i,
@@ -3324,6 +3325,7 @@
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
 					}), !t && r.a.createElement(D, {
+						className: ee.a.clickablePlaqueItem,
 						onAddAward: i
 					}), !n && r.a.createElement("div", {
 						className: ee.a.spacer
@@ -3525,13 +3527,12 @@
 							awardId: t,
 							thingId: Object(C.a)(s.id) ? s.postId : s.id
 						})),
-						onAddAward: (t, o) => {
-							const r = Object(C.a)(s.id) ? s.postId : s.id;
+						onAddAward: (t, n) => {
+							const o = Object(C.a)(s.id) ? s.postId : s.id;
 							return e(Object(g.d)({
-								awardId: o,
+								awardId: n,
 								correlationId: t,
-								isOverlay: n,
-								thingId: r
+								thingId: o
 							}))
 						},
 						onHideTooltip: () => e(Object(y.i)()),
@@ -15515,7 +15516,7 @@
 					} = this.props;
 					document.removeEventListener("selectionchange", this.onNativeSelectionChange), document.removeEventListener("click", this.onDocumentClick), window.removeEventListener("resize", this.onResize), e && e(null)
 				}
-				componentWillReceiveProps(e) {
+				UNSAFE_componentWillReceiveProps(e) {
 					const t = e.editorState.getSelection(),
 						n = this.props.editorState.getSelection();
 					t.getHasFocus() && Object(S.v)(s.RichUtils.getCurrentBlockType(e.editorState)) ? t !== n && this.hideToolbar() : this.hideActionButton()
@@ -32166,4 +32167,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.17458ebb4ed9bb594a42.js.map
+//# sourceMappingURL=PostCreation.2075cd63451fcf95335e.js.map

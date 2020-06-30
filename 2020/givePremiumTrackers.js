@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/givePremiumTrackers.3bbc0ac8cabfdd86cb95.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/givePremiumTrackers.629c04e6f537c074415e.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["givePremiumTrackers"], {
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, n, i) {
@@ -72,4 +72,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=givePremiumTrackers.3bbc0ac8cabfdd86cb95.js.map
+//# sourceMappingURL=givePremiumTrackers.629c04e6f537c074415e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.ab684d2a7184d082bbab.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.8e3f7a7d469c196d9d64.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -201,7 +201,7 @@
 					return e.bottom < this.top
 				}
 			}
-			const H = function() {
+			const E = function() {
 				let {
 					buffer: e,
 					container: t
@@ -219,7 +219,7 @@
 					height: i
 				})
 			};
-			var E = i("./src/reddit/components/ResizeSensor/index.tsx"),
+			var H = i("./src/reddit/components/ResizeSensor/index.tsx"),
 				z = i("./src/reddit/constants/componentSizes.ts"),
 				k = i("./src/reddit/constants/elementClassNames.ts"),
 				W = i("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -593,7 +593,7 @@
 				shouldComponentUpdate(e) {
 					return e.isOverlayOpen === this.props.isOverlayOpen
 				}
-				componentWillReceiveProps(e) {
+				UNSAFE_componentWillReceiveProps(e) {
 					this.validateScrollPreservationProps(e) && this.validateLoadMoreProps(e) && this.didLayoutAloneChange(this.props, e) && this.hasBeenScrolled() && this.handleScroll(), e.loadMoreToken !== this.props.loadMoreToken && (this.loadMoreFired = !1, this.loadMoreEl = null), e.isOverlayOpen !== this.props.isOverlayOpen && e.isOverlayOpen && !this.props.isOverlay && m.a.read(this.pauseAllElements), e.isOverlayOpen === this.props.isOverlayOpen || e.isOverlayOpen || this.props.isOverlay || this.resetScrollFramerateAndFocus(), this.childMap = de(e, this.childMap);
 					const t = e.children.length < this.props.children.length,
 						i = e.children.length === this.props.children.length && e.children.some((e, t) => e.id !== this.props.children[t].id);
@@ -645,7 +645,7 @@
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
-						this.viewport = H({
+						this.viewport = E({
 							buffer: 0,
 							container: this.scrollContainer
 						});
@@ -746,7 +746,7 @@
 						setScrollerChildRef: this.getChildRefFn(e.id),
 						shouldLoadInitially: t < ee,
 						width: U
-					})))), !!e && h.a.createElement(E.a, {
+					})))), !!e && h.a.createElement(H.a, {
 						containerRef: e,
 						onResize: this.handleContentContainerResize
 					}))
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.ab684d2a7184d082bbab.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~cabdb502.8e3f7a7d469c196d9d64.js.map

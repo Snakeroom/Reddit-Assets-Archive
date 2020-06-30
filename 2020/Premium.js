@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.6562f5144c1020771746.js
-// Retrieved at 6/22/2020, 1:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.88bb9ca8291736dc2c63.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -654,7 +654,7 @@
 					isLoggedIn: z.H,
 					premiumPackages: R.e,
 					purchaseCatalogPending: R.g,
-					shouldShowPremiumPurchaseModal: T.n,
+					shouldShowPremiumPurchaseModal: T.m,
 					shouldShowClaimGoldModal: y.b
 				}),
 				K = Object(l.b)(Y, (e, t) => ({
@@ -667,7 +667,7 @@
 					onPurchasePremium: t => e(Object(j.d)({
 						correlationId: t
 					})),
-					requestPurchaseCatalog: () => e(Object(O.a)()),
+					requestPurchaseCatalog: t => e(Object(O.a)(t)),
 					toggleClaimGoldModal: () => e(Object(M.i)())
 				}));
 			class X extends i.a.Component {
@@ -685,7 +685,7 @@
 						requestPurchaseCatalog: a,
 						sendEvent: n
 					} = this.props;
-					e.length || t || a();
+					e.length || t || a(this.correlationId);
 					const s = m.Ab.PREMIUM;
 					_.c.has(s) && n(Object(E.j)(w.TimerType.InApp, _.c.end(s))), Object(u.a)()
 				}
@@ -799,4 +799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.6562f5144c1020771746.js.map
+//# sourceMappingURL=Premium.88bb9ca8291736dc2c63.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.753db2295edab83aa54f.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.9760be03c7e33f125069.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -396,10 +396,10 @@
 				N = s("./src/reddit/helpers/trackers/communityTopics.ts"),
 				k = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				F = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				P = s("./src/reddit/selectors/activeModalId.ts"),
-				w = s("./src/reddit/selectors/tags.ts"),
-				R = s("./src/reddit/constants/colors.ts"),
-				D = s("./src/reddit/selectors/tooltip.ts"),
+				w = s("./src/reddit/selectors/activeModalId.ts"),
+				D = s("./src/reddit/selectors/tags.ts"),
+				P = s("./src/reddit/constants/colors.ts"),
+				R = s("./src/reddit/selectors/tooltip.ts"),
 				L = s("./node_modules/uuid/v4.js"),
 				M = s.n(L),
 				B = s("./src/reddit/components/ContentTooltip/index.tsx"),
@@ -409,15 +409,15 @@
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(d.c)({
-				activeTooltipId: D.a
+				activeTooltipId: R.a
 			}), q = Object(i.b)(K, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
 			})), V = "inline-editing-topics-tooltip-", W = {
-				top: R.a.alienblue,
-				bottom: R.a.alienblue
+				top: P.a.alienblue,
+				bottom: P.a.alienblue
 			};
 			class X extends o.a.Component {
 				constructor(e) {
@@ -468,15 +468,15 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(w.n)(e, {
+					return Object(D.n)(e, {
 						itemId: s
 					})
 				},
-				hasPendingChanges: w.o,
-				hasSecondaryTags: w.p,
-				unsavedChangesModalIsOpen: Object(P.b)(v.a),
-				isLoading: e => Object(w.E)(e),
-				selectedPrimaryTag: w.A
+				hasPendingChanges: D.o,
+				hasSecondaryTags: D.p,
+				unsavedChangesModalIsOpen: Object(w.b)(v.a),
+				isLoading: e => Object(D.E)(e),
+				selectedPrimaryTag: D.A
 			}), ee = Object(i.b)($, (e, t) => {
 				let {
 					subredditId: s,
@@ -523,8 +523,8 @@
 				componentDidMount() {
 					this.props.haveData || this.props.onTopicsRequested()
 				}
-				componentWillReceiveProps(e) {
-					this.props.isLoading && !e.isLoading && this.isSaving && (this.isSaving = !1)
+				componentDidUpdate(e) {
+					e.isLoading && !this.props.isLoading && this.isSaving && (this.isSaving = !1)
 				}
 				isBlurringToChildOrContainer(e) {
 					return e.relatedTarget === this.topicsEditorContainer.current || this.topicsEditorContainer.current && this.topicsEditorContainer.current.contains(e.relatedTarget)
@@ -687,4 +687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditInlineEditing.753db2295edab83aa54f.js.map
+//# sourceMappingURL=SubredditInlineEditing.9760be03c7e33f125069.js.map

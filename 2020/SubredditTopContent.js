@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.a44fc9b04d916bbb588e.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.544320fdad5bb8cb5dc8.js
+// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -127,9 +127,9 @@
 				experimentName: g.fc
 			});
 			var C = n("./src/reddit/selectors/subreddit.ts"),
-				v = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
-				j = n.n(v);
-			const _ = Object(a.b)(() => Object(l.c)({
+				_ = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
+				v = n.n(_);
+			const j = Object(a.b)(() => Object(l.c)({
 				inSubredditTopContentExperiment: O,
 				subredditUrl: C.d
 			}), e => ({
@@ -171,15 +171,15 @@
 						postIds: o,
 						range: r
 					} = n, i = "".concat(t).concat(p.O.TOP, "?t=").concat(r), a = c.a.createElement(x.a, {
-						className: j.a.widgetHeader
+						className: v.a.widgetHeader
 					}, c.a.createElement("button", {
-						className: j.a.closeButton,
+						className: v.a.closeButton,
 						onClick: this.onCloseClick
 					}, c.a.createElement(h.b, {
-						className: j.a.closeIcon,
+						className: v.a.closeIcon,
 						"data-redditstyle": !0
 					})), c.a.createElement(d.a, {
-						className: j.a.headerLink,
+						className: v.a.headerLink,
 						to: i
 					}, s.fbt._("Top posts from the past {range}", [s.fbt._param("range", r)], {
 						hk: "xhJKf"
@@ -187,7 +187,7 @@
 					return c.a.createElement("div", {
 						className: this.props.className
 					}, c.a.createElement(u.a, {
-						className: j.a.layout,
+						className: v.a.layout,
 						header: a,
 						hidePadding: !0
 					}, c.a.createElement(m.a, {
@@ -204,18 +204,7 @@
 					})))
 				}
 			}
-			t.default = _(k)
-		},
-		"./src/reddit/components/GildModal/Loader.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./src/higherOrderComponents/makeAsync.tsx"),
-				o = n("./src/lib/loadWithRetries/index.ts");
-			const r = Object(s.a)({
-				getComponent: () => Object(o.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~9f4422c2"), n.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"), n.e("FramedGild~GildModal"), n.e("GildModal")]).then(n.bind(null, "./src/reddit/components/GildModal/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => null,
-				LoadingComponent: () => null
-			});
-			t.a = r
+			t.default = j(k)
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -230,17 +219,14 @@
 				o = n.n(s),
 				r = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/components/AdViewability/index.tsx"),
-				c = n("./src/reddit/components/GildModal/getGildModalId.ts"),
-				a = n("./src/reddit/components/GildModal/Loader.tsx"),
-				d = n("./src/reddit/connectors/PostViewable/index.ts"),
-				l = n("./src/reddit/models/Media/index.ts"),
-				p = n("./src/reddit/selectors/gild.ts"),
-				u = n("./src/reddit/selectors/video.ts"),
-				m = n("./src/lib/classNames/index.ts"),
-				h = n("./src/higherOrderComponents/withClickTracking.tsx"),
-				x = n("./src/reddit/components/PostContainer/index.m.less"),
-				b = n.n(x);
-			const g = Object(r.c)({
+				c = n("./src/reddit/connectors/PostViewable/index.ts"),
+				a = n("./src/reddit/models/Media/index.ts"),
+				d = n("./src/reddit/selectors/video.ts"),
+				l = n("./src/lib/classNames/index.ts"),
+				p = n("./src/higherOrderComponents/withClickTracking.tsx"),
+				u = n("./src/reddit/components/PostContainer/index.m.less"),
+				m = n.n(u);
+			const h = Object(r.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: n
@@ -251,23 +237,15 @@
 						let {
 							post: n
 						} = t;
-						return Object(u.a)(e, {
+						return Object(d.a)(e, {
 							postId: n.id
 						})
-					},
-					gildModalIsOpen: (e, t) => {
-						let {
-							isOverlay: n,
-							post: s
-						} = t;
-						const o = Object(c.b)(s.postId, n);
-						return Object(p.d)(e, o)
 					},
 					playing: (e, t) => {
 						let {
 							post: n
 						} = t;
-						return Object(u.f)(e, {
+						return Object(d.f)(e, {
 							postId: n.id
 						})
 					},
@@ -275,18 +253,18 @@
 						let {
 							post: n
 						} = t;
-						return Object(u.c)(e, {
+						return Object(d.c)(e, {
 							postId: n.id
 						})
 					}
 				}),
-				f = Object(d.a)(g),
-				y = e => {
-					const t = Object(h.d)(e.target, e.currentTarget),
-						n = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
+				x = Object(c.a)(h),
+				b = e => {
+					const t = Object(p.d)(e.target, e.currentTarget),
+						n = Object(p.b)(e.target, e.currentTarget, p.a.buttons);
 					return "subreddit" !== t && n
 				};
-			class O extends o.a.Component {
+			class g extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -295,37 +273,36 @@
 						afterClickTracking: e,
 						children: t,
 						className: n,
-						gildModalIsOpen: s,
-						makePostContainerId: r,
-						post: c,
-						onClick: d,
-						onPostContentClick: p,
-						style: u,
-						ref: h
-					} = this.props, x = o.a.createElement("div", {
-						style: u,
-						ref: h,
+						makePostContainerId: s,
+						post: r,
+						onClick: c,
+						onPostContentClick: d,
+						style: p,
+						ref: u
+					} = this.props, h = o.a.createElement("div", {
+						style: p,
+						ref: u,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => d && d(t, c))(t), p && y(t) && p(t, c))
+							!this.cancelClick && t.button < 2 && (e(() => c && c(t, r))(t), d && b(t) && d(t, r))
 						},
-						className: Object(m.a)(b.a.WrappedPost, n, "Post ".concat(c.id), {
-							promotedlink: c.isSponsored
+						className: Object(l.a)(m.a.WrappedPost, n, "Post ".concat(r.id), {
+							promotedlink: r.isSponsored
 						}),
-						id: r ? r(c.id) : c.id,
+						id: s ? s(r.id) : r.id,
 						tabIndex: -1
-					}, t, s && o.a.createElement(a.a, null)), g = !!c.media && c.media.type === l.n.VIDEO;
-					return c.isSponsored || g ? o.a.createElement(i.a, {
-						post: c,
+					}, t), x = !!r.media && r.media.type === a.n.VIDEO;
+					return r.isSponsored || x ? o.a.createElement(i.a, {
+						post: r,
 						trackDisplay: !0
-					}, x) : x
+					}, h) : h
 				}
 			}
-			t.a = f(Object(h.c)(O))
+			t.a = x(Object(p.c)(g))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -487,4 +464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.a44fc9b04d916bbb588e.js.map
+//# sourceMappingURL=SubredditTopContent.544320fdad5bb8cb5dc8.js.map
