@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.33b09fc622af1f3bd91f.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.12792d738c09e5f06e86.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1592,7 +1592,7 @@
 					let {
 						listingName: s
 					} = t;
-					const n = Object(c.kb)(e);
+					const n = Object(c.lb)(e);
 					if (!n) return !1;
 					let a;
 					if (-1 === [o.P, "r/popular"].indexOf(s)) {
@@ -1922,4 +1922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.33b09fc622af1f3bd91f.js.map
+//# sourceMappingURL=Frontpage.12792d738c09e5f06e86.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.488f816572355ac57096.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b3d65605cfe2b25ea6dc.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5740,13 +5740,13 @@
 								experimentEligibilitySelector: j.a,
 								experimentName: h.db
 							});
-							return !(!t || Object(h.Dc)(t))
+							return !(!t || Object(h.Fc)(t))
 						})(r)) && ("repeat_purchaser" !== o.dealInfo.type || (e => {
 							const t = Object(j.c)(e, {
 								experimentEligibilitySelector: j.a,
 								experimentName: h.cb
 							});
-							return !(!t || Object(h.Dc)(t))
+							return !(!t || Object(h.Fc)(t))
 						})(r)) && (e(C({
 							correlationId: t,
 							packageId: n
@@ -8437,10 +8437,10 @@
 					if (!n || !r) return "";
 					const o = e.posts.models[t].title,
 						a = function(e) {
-							return Object(d.a)(e, J.oc, J.qc)
+							return Object(d.a)(e, J.qc, J.sc)
 						};
 					let c;
-					switch (o.length >= J.nc ? c = Object(ge.h)(e) : o.length <= J.pc && (c = Object(ge.m)(e)), c) {
+					switch (o.length >= J.pc ? c = Object(ge.h)(e) : o.length <= J.rc && (c = Object(ge.m)(e)), c) {
 						case J.xb.TruncTitleSubBrand:
 							return "".concat(a(o), " - ").concat(n.name, " - Reddit");
 						case J.xb.TruncTitleReddit:
@@ -11329,7 +11329,7 @@
 							user: _
 						} = a(),
 						h = n && n.match && n.match.queryParams,
-						j = h && h["experiment_".concat(u.Kb)];
+						j = h && h["experiment_".concat(u.Mb)];
 					Object(p.j)(a()), e.pathname.split("/").some(e => "comments" === e), Object(f.i)(a());
 					if (o(S({
 							action: t,
@@ -14956,7 +14956,7 @@
 			const E = e => _.d.reCaptchaEnterprise(e) && !Object(y.d)(e),
 				I = Object(h.e)(h.g, h.h, e => !!Object(j.c)(e, {
 					experimentEligibilitySelector: Object(h.d)(Object(h.b)(...o.b)),
-					experimentName: p.Xb
+					experimentName: p.Zb
 				})),
 				S = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				v = () => u(e => b()([E, I, e => e.tracking.reCaptchaEnterprise.load === s.a.New], t => t(e)))(async e => {
@@ -20466,7 +20466,7 @@
 								experimentEligibilitySelector: e => Object(R.H)(e),
 								experimentName: O.lb
 							});
-							return Object(O.Dc)(t) ? void 0 : t
+							return Object(O.Fc)(t) ? void 0 : t
 						})(V) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: i
@@ -24305,7 +24305,7 @@
 								experimentName: o.r,
 								expEventOverride: t
 							});
-							return !!(Object(o.Dc)(n) ? void 0 : n)
+							return !!(Object(o.Fc)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -28791,7 +28791,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: r.experiment(o, s.wc),
+					experiment: r.experiment(o, s.yc),
 					post: r.post(o, e),
 					media: r.media(o, e),
 					profile: r.profile(o),
@@ -28803,7 +28803,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: r.experiment(t, s.wc),
+					experiment: r.experiment(t, s.yc),
 					post: r.post(t, e),
 					profile: r.profile(t),
 					subreddit: r.subreddit(t),
@@ -52384,7 +52384,7 @@
 					experimentEligibilitySelector: o.H,
 					experimentName: s.Y
 				});
-				return !(!t || Object(s.Dc)(t))
+				return !(!t || Object(s.Fc)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardSheetV2.ts": function(e, t, n) {
@@ -52508,33 +52508,33 @@
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.cc.Enabled === Object(o.c)(e, {
+			const a = e => r.ec.Enabled === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.Zb
+					experimentName: r.bc
 				}),
-				c = e => r.Vb.Enabled === Object(o.c)(e, {
+				c = e => r.Xb.Enabled === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.Ob
+					experimentName: r.Qb
 				}),
-				i = e => r.jc.Enabled === Object(o.c)(e, {
+				i = e => r.lc.Enabled === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.ec
+					experimentName: r.gc
 				}),
-				d = e => r.kc.Enabled === Object(o.c)(e, {
+				d = e => r.mc.Enabled === Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.fc
+					experimentName: r.hc
 				}),
 				u = (e, t, n) => {
 					const s = n(e, t);
-					return !(!s || !s.meter) && (s.meter.enabled && d(e) && r.Bc.Enabled === Object(o.c)(e, {
+					return !(!s || !s.meter) && (s.meter.enabled && d(e) && r.Dc.Enabled === Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.yc
+						experimentName: r.Ac
 					}))
 				},
 				l = Object(s.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.Yb
-				}), e => e === r.bc.Enabled)
+					experimentName: r.ac
+				}), e => e === r.dc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
 			"use strict";
@@ -52567,9 +52567,9 @@
 					experimentName: r.S,
 					experimentEligibilitySelector: e => i(e, t)
 				}), e => e),
-				u = e => e === r.tc.NoCommunityWidgets,
-				l = e => e === r.tc.NoRulesModerators,
-				b = e => e === r.tc.RelatedPostsDu
+				u = e => e === r.vc.NoCommunityWidgets,
+				l = e => e === r.vc.NoRulesModerators,
+				b = e => e === r.vc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, n) {
 			"use strict";
@@ -52578,7 +52578,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts");
 			const r = e => {
-				if (!Object(s.Dc)(e)) return e || void 0
+				if (!Object(s.Fc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, n) {
@@ -54043,4 +54043,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.488f816572355ac57096.js.map
+//# sourceMappingURL=Governance~Reddit.b3d65605cfe2b25ea6dc.js.map

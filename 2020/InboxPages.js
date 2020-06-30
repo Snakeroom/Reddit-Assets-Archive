@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.7e28ed2688122490d92e.js
-// Retrieved at 6/1/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.9f4e15e3bf9772057a21.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -164,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InboxPages.7e28ed2688122490d92e.js.map
+//# sourceMappingURL=InboxPages.9f4e15e3bf9772057a21.js.map

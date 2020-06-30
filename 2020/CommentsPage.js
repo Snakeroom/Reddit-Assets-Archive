@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c05649a1875cd3adc278.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d625217a789bc4706740.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3461,7 +3461,7 @@
 					experimentEligibilitySelector: Tt.a,
 					experimentName: St.bb
 				});
-				return !(!t || Object(St.Dc)(t))
+				return !(!t || Object(St.Fc)(t))
 			};
 			var Mt = s("./src/reddit/selectors/userPrefs.ts"),
 				Lt = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -3511,7 +3511,7 @@
 							experimentEligibilitySelector: Tt.a,
 							experimentName: St.ab
 						});
-						return !(!t || Object(St.Dc)(t))
+						return !(!t || Object(St.Fc)(t))
 					})(e) && !Object(Mt.c)(e),
 					highlightTagsEnabled: Nt,
 					isEditing: C.z,
@@ -13052,11 +13052,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return C
+				return E
 			})), s.d(t, "d", (function() {
-				return y
+				return k
 			})), s.d(t, "b", (function() {
-				return _
+				return P
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				o = s("./node_modules/reselect/es/index.js"),
@@ -13065,51 +13065,58 @@
 				a = s("./src/reddit/actions/focusedVerticals/index.ts"),
 				d = s("./src/reddit/actions/post.ts"),
 				c = s("./src/reddit/actions/postList.ts"),
-				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				p = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				u = s("./src/reddit/helpers/trackers/post.ts"),
-				h = s("./src/reddit/components/PostList/Placeholder.tsx"),
-				b = s("./src/reddit/featureFlags/index.ts"),
-				x = s("./src/reddit/selectors/listings.ts"),
-				g = s("./src/reddit/selectors/posts.ts"),
-				f = s("./src/reddit/selectors/subreddit.ts"),
-				v = s("./src/reddit/selectors/tracking.ts");
+				l = s("./src/reddit/actions/survey/index.ts"),
+				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				h = s("./src/reddit/helpers/trackers/post.ts"),
+				b = s("./src/reddit/components/PostList/Placeholder.tsx"),
+				x = s("./src/reddit/featureFlags/index.ts"),
+				g = s("./src/reddit/constants/experiments.ts"),
+				f = s("./src/reddit/helpers/chooseVariant/index.ts");
+			var v = s("./src/reddit/selectors/listings.ts"),
+				C = s("./src/reddit/selectors/posts.ts"),
+				O = s("./src/reddit/selectors/subreddit.ts"),
+				y = s("./src/reddit/selectors/tracking.ts");
 
-			function C() {
-				return Object(m.t)({
-					currentProfileName: m.h,
-					isCommentPermalink: m.v,
-					isCommentsPage: m.w,
-					isFrontpage: m.y,
-					isProfilePostListing: m.I,
-					isTopicPage: m.M,
+			function E() {
+				return Object(p.t)({
+					currentProfileName: p.h,
+					isCommentPermalink: p.v,
+					isCommentsPage: p.w,
+					isFrontpage: p.y,
+					isProfilePostListing: p.I,
+					isTopicPage: p.M,
 					pageLayer: e => e
 				})
 			}
-			const O = C(),
-				y = {
-					apiError: x.c,
-					apiPending: x.d,
-					measureScrollFPS: b.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
-					loadMore: x.g,
-					postsById: g.Z,
+			const _ = E(),
+				k = {
+					apiError: v.c,
+					apiPending: v.d,
+					measureScrollFPS: x.d.measureScrollFPS,
+					layout: (e, t) => t.forcedLayout || Object(p.N)(e, t),
+					loadMore: v.g,
+					postsById: C.Z,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: o
 						} = t;
-						return Object(g.K)(e, s, n, o)
+						return Object(C.K)(e, s, n, o)
 					}),
-					subredditsById: f.Y,
-					viewportDataLoaded: v.a,
-					pageReferrer: m.Q,
-					postListPlaceholderComponent: () => h.a
+					subredditsById: O.Y,
+					viewportDataLoaded: y.a,
+					pageReferrer: p.Q,
+					postListPlaceholderComponent: () => b.a,
+					isNpsScrollSurveyEnabled: e => Object(f.c)(e, {
+						experimentEligibilitySelector: f.a,
+						experimentName: g.Jb
+					}) === g.Kb.Enabled
 				},
-				E = Object(o.c)(y),
-				_ = (e, t) => {
+				j = Object(o.c)(k),
+				P = (e, t) => {
 					let {
 						isFrontpage: s
 					} = t;
@@ -13133,14 +13140,15 @@
 						},
 						trackOnPostExitedViewport: (t, s, n, o) => {
 							e(d.R(t, n, o))
-						}
+						},
+						surveyTriggerScrollCounted: () => e(Object(l.a)())
 					}
 				},
-				k = Object(n.b)(E, _, (e, t, s) => Object.assign({}, e, t, s, {
-					postClickEvent: u.f,
-					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
+				w = Object(n.b)(j, P, (e, t, s) => Object.assign({}, e, t, s, {
+					postClickEvent: h.f,
+					postComponentForLayout: e => Object(u.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(l.c)(O(k(e)))
+			t.a = e => Object(m.c)(_(w(e)))
 		},
 		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, s) {
 			"use strict";
@@ -15626,7 +15634,7 @@
 						tooltipIdPrefix: D.a,
 						tooltipType: Le.c.StickyPost
 					}))(e),
-					userPrefs: ue.kb,
+					userPrefs: ue.lb,
 					isInCommentsPageAdExperiment: ie.a
 				}),
 				mt = (e, t) => ({
@@ -16413,7 +16421,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.E
 				});
-				return !!t && !Object(n.Dc)(t)
+				return !!t && !Object(n.Fc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16428,7 +16436,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.X
 				});
-				return !(!t || Object(n.Dc)(t))
+				return !(!t || Object(n.Fc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16445,4 +16453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.c05649a1875cd3adc278.js.map
+//# sourceMappingURL=CommentsPage.d625217a789bc4706740.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.e15b673f6eb57acf9b77.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.46d415d42e66cf227aa3.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -166,7 +166,7 @@
 				fbt: d
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement(l.b, {
-				className: Object(s.a)(e.className, o.a.container, e.text.length > e.maxChars ? o.a.mOverflow : null)
+				className: Object(s.a)(e.className, o.a.container, e.text.length >= e.maxChars ? o.a.mOverflow : null)
 			}, d._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
@@ -8311,4 +8311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.e15b673f6eb57acf9b77.js.map
+//# sourceMappingURL=StructuredStyles.46d415d42e66cf227aa3.js.map

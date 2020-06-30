@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8cad5c15386560d4c45b.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0523b2e170efc18820d0.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -672,13 +672,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: d.Gb
 				});
-				return Object(d.Dc)(t) ? void 0 : t
+				return Object(d.Fc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: d.Hb
 				});
-				return Object(d.Dc)(t) ? void 0 : t
+				return Object(d.Fc)(t) ? void 0 : t
 			}, (e, t) => e === d.Ib.Enabled && t === d.Ib.Enabled);
 			var m = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "4f4f41e-production"
+					SENTRY_RELEASE_VERSION: "6c573e8-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -32226,4 +32226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.8cad5c15386560d4c45b.js.map
+//# sourceMappingURL=PostCreation.0523b2e170efc18820d0.js.map

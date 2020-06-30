@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.b451e664b2a20418c93e.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.573acc8f5e7373331e07.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -122,14 +122,14 @@
 				g = n("./src/reddit/constants/experiments.ts"),
 				f = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = n("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.E)(e) || g.mc.ShowTopContent === Object(f.c)(e, {
+			const O = e => Object(y.E)(e) || g.oc.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.hc
+				experimentName: g.jc
 			});
 			var C = n("./src/reddit/selectors/subreddit.ts"),
 				_ = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
-				v = n.n(_);
-			const j = Object(a.b)(() => Object(l.c)({
+				j = n.n(_);
+			const v = Object(a.b)(() => Object(l.c)({
 				inSubredditTopContentExperiment: O,
 				subredditUrl: C.d
 			}), e => ({
@@ -171,15 +171,15 @@
 						postIds: o,
 						range: r
 					} = n, i = "".concat(t).concat(p.O.TOP, "?t=").concat(r), a = c.a.createElement(x.a, {
-						className: v.a.widgetHeader
+						className: j.a.widgetHeader
 					}, c.a.createElement("button", {
-						className: v.a.closeButton,
+						className: j.a.closeButton,
 						onClick: this.onCloseClick
 					}, c.a.createElement(h.b, {
-						className: v.a.closeIcon,
+						className: j.a.closeIcon,
 						"data-redditstyle": !0
 					})), c.a.createElement(d.a, {
-						className: v.a.headerLink,
+						className: j.a.headerLink,
 						to: i
 					}, s.fbt._("Top posts from the past {range}", [s.fbt._param("range", r)], {
 						hk: "xhJKf"
@@ -187,7 +187,7 @@
 					return c.a.createElement("div", {
 						className: this.props.className
 					}, c.a.createElement(u.a, {
-						className: v.a.layout,
+						className: j.a.layout,
 						header: a,
 						hidePadding: !0
 					}, c.a.createElement(m.a, {
@@ -204,7 +204,7 @@
 					})))
 				}
 			}
-			t.default = j(k)
+			t.default = v(k)
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -464,4 +464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.b451e664b2a20418c93e.js.map
+//# sourceMappingURL=SubredditTopContent.573acc8f5e7373331e07.js.map

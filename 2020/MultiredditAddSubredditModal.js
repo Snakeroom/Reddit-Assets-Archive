@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.be5783221d5642f59f1f.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.88b828abd3acf1ded260.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -29,7 +29,7 @@
 				fbt: l
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => s.a.createElement(i.b, {
-				className: Object(n.a)(e.className, d.a.container, e.text.length > e.maxChars ? d.a.mOverflow : null)
+				className: Object(n.a)(e.className, d.a.container, e.text.length >= e.maxChars ? d.a.mOverflow : null)
 			}, l._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
@@ -703,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.be5783221d5642f59f1f.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.88b828abd3acf1ded260.js.map

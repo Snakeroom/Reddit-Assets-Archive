@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f018366590d0086f20ac.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8342d28849ccaf794481.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -8354,11 +8354,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return v
+				return E
 			})), s.d(t, "d", (function() {
-				return C
+				return _
 			})), s.d(t, "b", (function() {
-				return j
+				return P
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -8367,51 +8367,58 @@
 				i = s("./src/reddit/actions/focusedVerticals/index.ts"),
 				c = s("./src/reddit/actions/post.ts"),
 				d = s("./src/reddit/actions/postList.ts"),
-				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				p = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				u = s("./src/reddit/helpers/trackers/post.ts"),
-				b = s("./src/reddit/components/PostList/Placeholder.tsx"),
-				h = s("./src/reddit/featureFlags/index.ts"),
-				x = s("./src/reddit/selectors/listings.ts"),
-				f = s("./src/reddit/selectors/posts.ts"),
-				y = s("./src/reddit/selectors/subreddit.ts"),
-				g = s("./src/reddit/selectors/tracking.ts");
+				l = s("./src/reddit/actions/survey/index.ts"),
+				m = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				b = s("./src/reddit/helpers/trackers/post.ts"),
+				h = s("./src/reddit/components/PostList/Placeholder.tsx"),
+				x = s("./src/reddit/featureFlags/index.ts"),
+				f = s("./src/reddit/constants/experiments.ts"),
+				y = s("./src/reddit/helpers/chooseVariant/index.ts");
+			var g = s("./src/reddit/selectors/listings.ts"),
+				v = s("./src/reddit/selectors/posts.ts"),
+				O = s("./src/reddit/selectors/subreddit.ts"),
+				C = s("./src/reddit/selectors/tracking.ts");
 
-			function v() {
-				return Object(m.t)({
-					currentProfileName: m.h,
-					isCommentPermalink: m.v,
-					isCommentsPage: m.w,
-					isFrontpage: m.y,
-					isProfilePostListing: m.I,
-					isTopicPage: m.M,
+			function E() {
+				return Object(p.t)({
+					currentProfileName: p.h,
+					isCommentPermalink: p.v,
+					isCommentsPage: p.w,
+					isFrontpage: p.y,
+					isProfilePostListing: p.I,
+					isTopicPage: p.M,
 					pageLayer: e => e
 				})
 			}
-			const O = v(),
-				C = {
-					apiError: x.c,
-					apiPending: x.d,
-					measureScrollFPS: h.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
-					loadMore: x.g,
-					postsById: f.Z,
+			const j = E(),
+				_ = {
+					apiError: g.c,
+					apiPending: g.d,
+					measureScrollFPS: x.d.measureScrollFPS,
+					layout: (e, t) => t.forcedLayout || Object(p.N)(e, t),
+					loadMore: g.g,
+					postsById: v.Z,
 					postIds: Object(o.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: r
 						} = t;
-						return Object(f.K)(e, s, n, r)
+						return Object(v.K)(e, s, n, r)
 					}),
-					subredditsById: y.Y,
-					viewportDataLoaded: g.a,
-					pageReferrer: m.Q,
-					postListPlaceholderComponent: () => b.a
+					subredditsById: O.Y,
+					viewportDataLoaded: C.a,
+					pageReferrer: p.Q,
+					postListPlaceholderComponent: () => h.a,
+					isNpsScrollSurveyEnabled: e => Object(y.c)(e, {
+						experimentEligibilitySelector: y.a,
+						experimentName: f.Jb
+					}) === f.Kb.Enabled
 				},
-				E = Object(r.c)(C),
-				j = (e, t) => {
+				k = Object(r.c)(_),
+				P = (e, t) => {
 					let {
 						isFrontpage: s
 					} = t;
@@ -8435,14 +8442,15 @@
 						},
 						trackOnPostExitedViewport: (t, s, n, r) => {
 							e(c.R(t, n, r))
-						}
+						},
+						surveyTriggerScrollCounted: () => e(Object(l.a)())
 					}
 				},
-				_ = Object(n.b)(E, j, (e, t, s) => Object.assign({}, e, t, s, {
-					postClickEvent: u.f,
-					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
+				S = Object(n.b)(k, P, (e, t, s) => Object.assign({}, e, t, s, {
+					postClickEvent: b.f,
+					postComponentForLayout: e => Object(u.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(l.c)(O(_(e)))
+			t.a = e => Object(m.c)(j(S(e)))
 		},
 		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, s) {
 			"use strict";
@@ -9478,9 +9486,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.ac.Treatment1 === Object(r.c)(e, {
+			const o = e => n.cc.Treatment1 === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Wb
+				experimentName: n.Yb
 			})
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -9497,4 +9505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.f018366590d0086f20ac.js.map
+//# sourceMappingURL=SearchResults.8342d28849ccaf794481.js.map

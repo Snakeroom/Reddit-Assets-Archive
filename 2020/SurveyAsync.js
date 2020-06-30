@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.160b6cbe328fde37af3c.js
-// Retrieved at 6/10/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.705b37076ac2e4435ff0.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -20,7 +20,7 @@
 				fbt: i
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => o.a.createElement(s.b, {
-				className: Object(r.a)(e.className, c.a.container, e.text.length > e.maxChars ? c.a.mOverflow : null)
+				className: Object(r.a)(e.className, c.a.container, e.text.length >= e.maxChars ? c.a.mOverflow : null)
 			}, i._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
@@ -130,9 +130,9 @@
 			})), n.d(t, "a", (function() {
 				return f
 			})), n.d(t, "g", (function() {
-				return b
-			})), n.d(t, "i", (function() {
 				return h
+			})), n.d(t, "i", (function() {
+				return b
 			})), n.d(t, "e", (function() {
 				return C
 			})), n.d(t, "b", (function() {
@@ -142,7 +142,7 @@
 			})), n.d(t, "d", (function() {
 				return E
 			})), n.d(t, "j", (function() {
-				return g
+				return y
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				o = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -156,13 +156,13 @@
 				d = a.a.div("FormGroup", r.a),
 				p = a.a.h2("FormGroupTitle", r.a),
 				f = a.a.div("FormElement", r.a),
-				b = a.a.div("FormGroupDescription", r.a),
-				h = a.a.div("FormItem", r.a),
+				h = a.a.div("FormGroupDescription", r.a),
+				b = a.a.div("FormItem", r.a),
 				C = a.a.h3("FormElementTitle", r.a),
 				_ = a.a.div("FormElementDescription", r.a),
 				x = a.a.div("FormElementError", r.a),
 				E = a.a.div("FormElementSubGroup", r.a),
-				g = a.a.li("FormListItem", r.a)
+				y = a.a.li("FormListItem", r.a)
 		},
 		"./src/reddit/components/Survey/Async.tsx": function(e, t, n) {
 			"use strict";
@@ -177,59 +177,58 @@
 				m = n("./src/reddit/components/Survey/hooks.ts"),
 				u = n("./src/config.ts"),
 				d = n("./node_modules/react-redux/es/index.js"),
-				p = n("./src/lib/timeAgo/index.ts"),
-				f = n("./src/reddit/components/CharacterCountdown/index.tsx"),
-				b = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				p = n("./src/reddit/components/CharacterCountdown/index.tsx"),
+				f = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				h = n("./src/reddit/controls/Button/index.tsx"),
-				C = n("./src/reddit/selectors/user.ts"),
-				_ = n("./src/reddit/components/Survey/index.m.less"),
-				x = n.n(_);
-			const E = e => {
+				b = n("./src/reddit/selectors/user.ts"),
+				C = n("./src/reddit/components/Survey/index.m.less"),
+				_ = n.n(C);
+			const x = e => {
 					let {
 						type: t,
 						selectedOption: n,
 						onNumberSelected: a
 					} = e;
 					return r.a.createElement("div", {
-						className: x.a.optionsWrapper
+						className: _.a.optionsWrapper
 					}, Array.from({
 						length: t === c.a.NPS ? 11 : 7
 					}).map((e, o) => r.a.createElement(h.i, {
-						className: Object(i.a)(x.a.option, {
-							[x.a.isSelected]: n === o
+						className: Object(i.a)(_.a.option, {
+							[_.a.isSelected]: n === o
 						}),
 						key: "survey-option-".concat(t, "-").concat(o),
 						onClick: () => a(o)
 					}, o + (t === c.a.NPS ? 0 : 1))))
 				},
-				g = e => {
+				E = e => {
 					let {
 						onClick: t
 					} = e;
-					const n = Object(d.d)(C.i, (e, t) => e && t && e.id === t.id || !1);
+					const n = Object(d.d)(b.i, (e, t) => e && t && e.id === t.id || !1);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: x.a.snooIcon,
+						className: _.a.snooIcon,
 						style: {
 							backgroundImage: 'url("'.concat(u.a.assetPath, '/img/snoovatar-notepad.png")')
 						}
 					}), r.a.createElement("h3", {
-						className: x.a.title
+						className: _.a.title
 					}, a.fbt._("Help improve Reddit!", null, {
 						hk: "4e4dcC"
 					})), r.a.createElement("p", {
-						className: x.a.introText
-					}, n ? a.fbt._("Hi {username}! Thanks for being a redditor for {time ago}. Please take this one minute survey and let us know how you feel.", [a.fbt._param("username", n.displayText || "there"), a.fbt._param("time ago", Object(p.d)(n.created))], {
-						hk: "3rkZoB"
-					}) : a.fbt._("Hi there! Please take this one minute survey and let us know how you feel.", null, {
-						hk: "3t6qAK"
+						className: _.a.introText
+					}, n ? a.fbt._("Hi {username}! Now that you’ve been a redditor for a while, take this one minute survey and let us know what you think.", [a.fbt._param("username", n.displayText || "there")], {
+						hk: "1XuOwr"
+					}) : a.fbt._("Hi! Now that you’ve been a redditor for a while, take this one minute survey and let us know what you think.", null, {
+						hk: "1PnKyn"
 					})), r.a.createElement(h.f, {
-						className: x.a.submitBtn,
+						className: _.a.submitBtn,
 						onClick: t
-					}, a.fbt._("Begin survey", null, {
-						hk: "ZEbo8"
+					}, a.fbt._("Begin Survey", null, {
+						hk: "3P5Rk5"
 					})))
 				},
-				S = e => {
+				y = e => {
 					let {
 						onNumberSelected: t,
 						onStepComplete: n,
@@ -237,22 +236,22 @@
 						step: s
 					} = e;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("h3", {
-						className: x.a.title
-					}, s.question.en), r.a.createElement(E, {
+						className: _.a.title
+					}, s.question), r.a.createElement(x, {
 						type: s.type,
 						selectedOption: o,
 						onNumberSelected: t
-					}), r.a.createElement(v, {
+					}), r.a.createElement(S, {
 						type: s.type
 					}), r.a.createElement(h.f, {
-						className: x.a.submitBtn,
+						className: _.a.submitBtn,
 						onClick: n,
 						disabled: void 0 === o
-					}, a.fbt._("Submit", null, {
-						hk: "2hZhxL"
+					}, a.fbt._("Next", null, {
+						hk: "35vbtd"
 					})))
 				},
-				y = e => {
+				g = e => {
 					let {
 						step: t,
 						onStepComplete: n,
@@ -260,26 +259,27 @@
 						text: s
 					} = e;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("h3", {
-						className: x.a.title
-					}, t.follow_up_question.en), r.a.createElement(b.s, {
+						className: _.a.title
+					}, t.follow_up_question), r.a.createElement(f.s, {
+						className: _.a.textArea,
 						value: s,
 						placeholder: a.fbt._("Share your thoughts", null, {
 							hk: "LkEws"
 						}),
 						maxLength: 240,
 						onChange: o
-					}), r.a.createElement(f.a, {
-						className: x.a.characterCountdown,
+					}), r.a.createElement(p.a, {
+						className: _.a.characterCountdown,
 						text: s,
-						maxChars: 239
+						maxChars: 240
 					}), r.a.createElement(h.f, {
-						className: x.a.submitBtn,
+						className: _.a.submitBtn,
 						onClick: n
-					}, a.fbt._("Submit", null, {
-						hk: "2hZhxL"
+					}, a.fbt._("Done", null, {
+						hk: "2NjHWz"
 					})))
 				},
-				v = e => {
+				S = e => {
 					let {
 						type: t
 					} = e;
@@ -306,21 +306,21 @@
 						}
 					})(t);
 					return r.a.createElement("div", {
-						className: x.a.labelRow
+						className: _.a.labelRow
 					}, r.a.createElement("span", {
-						className: x.a.lowLabel
+						className: _.a.lowLabel
 					}, n), r.a.createElement("span", {
-						className: x.a.highLabel
+						className: _.a.highLabel
 					}, o))
 				};
 			t.default = e => {
 				let {
 					activeSurvey: t
 				} = e;
-				const [n, u] = Object(o.useState)(!1), [d, p] = Object(o.useState)(void 0), [f, b] = Object(o.useState)(""), {
-					className: h,
+				const [n, u] = Object(o.useState)(!1), [d, p] = Object(o.useState)(void 0), [f, h] = Object(o.useState)(""), {
+					className: b,
 					shouldMount: C,
-					onTransitionEnd: _
+					onTransitionEnd: x
 				} = (e => {
 					let {
 						defaultClass: t,
@@ -338,73 +338,73 @@
 						}, [a])
 					}
 				})({
-					defaultClass: x.a.surveyContainer,
-					addedClass: x.a.isOpen,
+					defaultClass: _.a.surveyContainer,
+					addedClass: _.a.isOpen,
 					unMountCondition: n
-				}), E = Object(o.useCallback)(e => b(e.target.value), []), {
+				}), S = Object(o.useCallback)(e => h(e.target.value), []), {
 					activeStepNum: v,
-					isFollowUp: k,
-					onStepComplete: N,
+					isFollowUp: N,
+					onStepComplete: k,
 					uiStep: F
 				} = Object(m.b)({
 					activeSurvey: t,
 					selectedNumber: d,
 					setIsSurveyDismissed: u,
 					setSelectedNumber: p,
-					setTextResponse: b,
+					setTextResponse: h,
 					textResponse: f
 				}), {
 					isLeavingModalShowing: O,
-					onClose: T,
-					onLeaveCancel: w,
+					onClose: w,
+					onLeaveCancel: T,
 					onLeaveConfirm: L
 				} = Object(m.a)({
 					activeSurvey: t,
 					activeStepNum: v,
-					isFollowUp: k,
+					isFollowUp: N,
 					textResponse: f,
-					setTextResponse: b,
+					setTextResponse: h,
 					setIsSurveyDismissed: u
 				});
 				return Object(m.c)(C, F), C ? r.a.createElement(r.a.Fragment, null, O && r.a.createElement(s.a, {
-					actionText: a.fbt._("finish survey", null, {
-						hk: "30c9G5"
+					actionText: a.fbt._("Finish Survey", null, {
+						hk: "18Lvjs"
 					}),
-					cancelActionText: a.fbt._("discard feedback", null, {
-						hk: "2p8MKL"
+					cancelActionText: a.fbt._("Leave", null, {
+						hk: "2kry5M"
 					}),
 					headerText: a.fbt._("Are you sure you want to leave?", null, {
 						hk: "2iBBCg"
 					}),
-					modalText: a.fbt._("If you leave your feedback won't be submitted", null, {
-						hk: "3Awt1U"
+					modalText: a.fbt._("If you don't finish the survey, your feedback won't be submitted.", null, {
+						hk: "377HNX"
 					}),
-					onConfirm: w,
+					onConfirm: T,
 					onCancel: L,
-					onClose: w
+					onClose: T
 				}), r.a.createElement("div", {
-					className: h,
-					onTransitionEnd: _
+					className: b,
+					onTransitionEnd: x
 				}, r.a.createElement(l.a, {
-					className: x.a.closeBtn,
-					onClick: T
+					className: _.a.closeBtn,
+					onClick: w
 				}), r.a.createElement("div", {
-					className: x.a.surveyContent
-				}, -1 === v ? r.a.createElement(g, {
-					onClick: N
+					className: _.a.surveyContent
+				}, -1 === v ? r.a.createElement(E, {
+					onClick: k
 				}) : r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-					className: x.a.stepNumber
-				}, a.fbt._("Question {step number} of {total steps}", [a.fbt._param("step number", String(F)), a.fbt._param("total steps", String(Object(c.c)(t)))], {
+					className: _.a.stepNumber
+				}, a.fbt._("Question {step number} of {total steps}", [a.fbt._param("step number", String(F)), a.fbt._param("total steps", String(Object(c.d)(t)))], {
 					hk: "4g6rjR"
-				})), k ? r.a.createElement(y, {
-					onStepComplete: N,
-					onTextChange: E,
+				})), N ? r.a.createElement(g, {
+					onStepComplete: k,
+					onTextChange: S,
 					step: t.steps[v],
 					text: f
-				}) : r.a.createElement(S, {
+				}) : r.a.createElement(y, {
 					step: t.steps[v],
 					selectedNumber: d,
-					onStepComplete: N,
+					onStepComplete: k,
 					onNumberSelected: p
 				}))))) : null
 			}
@@ -423,10 +423,11 @@
 				option: "_1lY7AdZ9uz5QSableC_5gZ",
 				isSelected: "_2EmX2Qy2X30daqiILp-Pid",
 				labelRow: "_12elwub6eZguOVwH7x1OV6",
+				textArea: "_3JRtPy8d3ty_d3eEj4oo5X",
 				characterCountdown: "P9I1yL4VXkyFXfaunV9WB",
 				submitBtn: "_2UjQ34ciczTaPh6tSLPvnx"
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SurveyAsync.160b6cbe328fde37af3c.js.map
+//# sourceMappingURL=SurveyAsync.705b37076ac2e4435ff0.js.map

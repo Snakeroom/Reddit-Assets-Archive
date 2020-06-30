@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8dd9295a616b71e4f4f6.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.da173bacb5ea69adc142.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -27,13 +27,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: l.Gb
 				});
-				return Object(l.Dc)(t) ? void 0 : t
+				return Object(l.Fc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: l.Hb
 				});
-				return Object(l.Dc)(t) ? void 0 : t
+				return Object(l.Fc)(t) ? void 0 : t
 			}, (e, t) => e === l.Ib.Enabled && t === l.Ib.Enabled);
 			var h = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
@@ -82,7 +82,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "4f4f41e-production"
+					SENTRY_RELEASE_VERSION: "6c573e8-production"
 				}),
 				T = {
 					anonymousUserId: "t2_anonymous",
@@ -933,9 +933,9 @@
 				V = s("./src/reddit/controls/InternalLink/index.tsx"),
 				H = s("./src/reddit/controls/Score/index.tsx"),
 				U = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
-				W = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				F = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				B = s.n(F),
+				F = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				W = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				B = s.n(W),
 				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				G = s.n(K);
 			const {
@@ -1395,7 +1395,7 @@
 						iconWrapperClassName: G.a.overflowItemIconWrapper,
 						textClassName: G.a.overflowItemText,
 						onClick: t
-					}, i.a.createElement(W.a, {
+					}, i.a.createElement(F.a, {
 						className: G.a.hideIcon
 					})))
 				};
@@ -1583,4 +1583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.8dd9295a616b71e4f4f6.js.map
+//# sourceMappingURL=RpanListingUnit.da173bacb5ea69adc142.js.map

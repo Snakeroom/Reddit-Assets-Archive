@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d278c05db7e22d502c56.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b6dbc5cdb5c0701c7274.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -7151,7 +7151,7 @@
 					let {
 						listingName: n
 					} = t;
-					const s = Object(o.kb)(e);
+					const s = Object(o.lb)(e);
 					if (!s) return !1;
 					let c;
 					if (-1 === [a.P, "r/popular"].indexOf(n)) {
@@ -7477,11 +7477,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.ic.Enabled === Object(r.c)(e, {
+			const a = e => s.kc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.dc
+				experimentName: s.fc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.d278c05db7e22d502c56.js.map
+//# sourceMappingURL=Subreddit.b6dbc5cdb5c0701c7274.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.d7479046724c5b8ceda5.js
-// Retrieved at 6/10/2020, 5:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.107602fbbe360baca656.js
+// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -461,4 +461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.d7479046724c5b8ceda5.js.map
+//# sourceMappingURL=CommunityPointsLearnMore.107602fbbe360baca656.js.map
